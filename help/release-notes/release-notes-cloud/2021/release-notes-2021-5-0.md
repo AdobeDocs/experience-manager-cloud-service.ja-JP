@@ -2,7 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 リリースのリリースノート。'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 93%
@@ -44,7 +46,7 @@ ht-degree: 93%
 
 ### [!DNL Assets] の新機能  {#what-is-new-assets}
 
-* リンク共有機能を使用して、共有アセットをダウンロードできます。このダウンロードでは、非同期サービスを使用するようになりました。非常に大きなダウンロードでも、高速で中断のないダウンロードを提供します。 詳しくは、「[アセットのダウンロード](/help/assets/download-assets-from-aem.md#link-share-download)」を参照してください。
+* リンク共有機能を使用して、共有アセットをダウンロードできます。このダウンロードには、非同期サービスが採用されており、大容量のダウンロードであっても、高速で中断のないダウンロードが可能になっています。 詳しくは、「[アセットのダウンロード](/help/assets/download-assets-from-aem.md#link-share-download)」を参照してください。
 
   ![インボックスをダウンロード](/help/assets/assets/download-inbox.png)
 
@@ -108,7 +110,7 @@ AEM as a Cloud Service 2021.5.0 Cloud Manager のリリース日は 2021 年 5 �
 
 * パブリック API のリポジトリエンドポイントに Git の URL が含まれるようになりました。
 
-* Cloud Manager ユーザーがダウンロードしたデプロイメントログは、より洞察力に富み、エラーと成功シナリオに関する詳細が含まれています。
+* Cloud Manager ユーザーがダウンロードしたデプロイメントログは、よりインサイトに富み、失敗と成功シナリオに関する詳細が含まれています。
 
 * コードを Adobe Git にプッシュ中に発生していた断続的なエラーが解決されました。
 
@@ -144,9 +146,9 @@ AEM as a Cloud Service 2021.5.0 Cloud Manager のリリース日は 2021 年 5 �
 
 ### 新機能 {#what-is-new-ctt-latest}
 
-* ユーザーが Java 実行可能ファイルに対する実行権限を持っていない場合、新しいログ文がクイックスタートのエラーログに追加されました。
+* ユーザーに Java 実行可能ファイルの実行権限がない場合、新しいログ文がクイックスタートのエラーログに追加されました。
 
-* 抽出が実行された CTT ユーザーインターフェイスから移行セットを削除した場合、 `tmp` その移行セットに関連付けられているフォルダが削除され、容量が節約されます。
+* 抽出を実行した CTT ユーザーインターフェイスから移行セットを削除すると、 `tmp` その移行セットに関連付けられているフォルダーは、領域を節約するために削除されます。
 
 ### バグ修正 {#bug-fixes-ctt-latest}
 

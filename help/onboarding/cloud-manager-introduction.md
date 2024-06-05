@@ -2,10 +2,12 @@
 title: Cloud Manager の概要
 description: プログラム、環境、パイプラインを通じて、Cloud Manager がどのように AEM プロジェクトをサポートするかについて説明します。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 6181b066742357169b67f605ac3970685537bb5e
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '864'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +63,7 @@ Cloud Manager は、AEM as a Cloud Service に不可欠なコンポーネント�
 
 >[!TIP]
 >
->設定可能な権限を持つカスタム権限プロファイルも使用できます。 ドキュメントを参照してください [カスタム権限](/help/implementing/cloud-manager/custom-permissions.md) を参照してください。
+>設定可能な権限を持つカスタム権限プロファイルも使用できます。詳しくは、[カスタム権限](/help/implementing/cloud-manager/custom-permissions.md)のドキュメントを参照してください。
 
 ## Cloud Manager プログラム {#cloud-manager-programs}
 

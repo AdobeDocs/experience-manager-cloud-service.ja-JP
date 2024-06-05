@@ -1,16 +1,19 @@
 ---
 title: コンテンツフラグメントコンソールとエディターの両方のカスタマイズと拡張
-description: コンテンツフラグメントコンソールとエディターの両方をカスタマイズする方法を説明します。
-source-git-commit: 7eeb4fc7f6d5c74a0d3352f1b16f98617945cd88
+description: コンテンツフラグメントコンソールとエディターの両方をカスタマイズする方法を説明します
+exl-id: a837f09f-9d07-4430-839a-7cf0f200d2df
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 32%
+source-wordcount: '87'
+ht-degree: 31%
 
 ---
 
 # コンテンツフラグメントコンソールおよびエディターのカスタマイズ {#customizing-content-fragment-console-and-editor}
 
-コンテンツフラグメントコンソールとエディターはどちらも拡張可能で、AdobeApp Builder を使用してニーズに合わせてカスタマイズできます。
+コンテンツフラグメントコンソールとエディターは両方とも拡張可能で、Adobeの App Builder を使用してニーズに合わせてカスタマイズできます。
 
 詳細については、次を参照してください。
 
@@ -26,4 +29,4 @@ ht-degree: 32%
 
 * コンテンツフラグメントエディター
 
-   * [AEM Content Fragments Editor 拡張ポイント](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/)
+   * [AEM コンテンツフラグメントエディターの拡張ポイント](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/)

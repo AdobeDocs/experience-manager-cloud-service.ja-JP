@@ -2,9 +2,11 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 リリースのリリースノート。'
 description: "[!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 のリリースノート."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1012'
 ht-degree: 93%
 
 ---
@@ -39,7 +41,7 @@ Experience Manager as a Cloud Service 2020.7.0 の一般的なリリースノー
 
 * [!DNL Dynamic Media] へのアセットの発行は、アセットマイクロサービスを使用するアセット処理パイプライン全体で不可欠な要素とし、バッチ発行バックエンドを改善することで、簡単になり、より堅牢になっています。
 
-* [!UICONTROL ワークフローモデル]エディターで、Cloud Service の展開と互換性のないワークフローステップに警告のマークがつくようになりました。また、ワークフロー環境で既存のワークフローをCloud Serviceする場合、互換性のないワークフロー手順はスキップされます。
+* [!UICONTROL ワークフローモデル]エディターで、Cloud Service の展開と互換性のないワークフローステップに警告のマークがつくようになりました。また、Cloud Service環境で既存のワークフローを実行すると、互換性のないワークフローステップはスキップされます。
 
 * [!DNL Cloud Manager] の環境に関連付けられた Git プロジェクトの `/conf/global` にデプロイされた、顧客が作成したワークフローモデルは、`/var` に自動的にデプロイされ、[!DNL Experience Manager] で使用できます。顧客が変更した、`/libs` にある製品ワークフローモデルは、自動的には `/var` にデプロイされません。
 
@@ -55,7 +57,7 @@ Experience Manager as a Cloud Service 2020.7.0 の一般的なリリースノー
 
 AEM Commerce が Cloud Service で利用できるようになりました。
 
-詳しくは、 [AEM Commerce を使い始めるas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=ja) を参照してください。
+参照： [AEM Commerceas a Cloud Serviceの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=ja) を参照してください。
 
 ## コアコンポーネント {#core-components}
 
@@ -67,7 +69,7 @@ AEM Commerce が Cloud Service で利用できるようになりました。
 
 * コアコンポーネントの Accelerated Mobile Pages（AMP）
 サポートが利用できるようになりました。Google のモバイル検索結果からサイトに入るときにページトランジションを瞬時に入れるので、より迅速な顧客体験を作成でき、ユーザーエンゲージメントと SEO が向上します。
-詳しくは、 [コアコンポーネントの AMP サポート](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ja) を参照してください。
+参照： [コアコンポーネントの AMP サポート](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ja) を参照してください。
 
 * [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ja) のバージョン 1.0.2 との互換性。
 
@@ -121,7 +123,7 @@ AEM Commerce が Cloud Service で利用できるようになりました。
 
 ### 新機能 {#what-is-new-foundations}
 
-* [ログは Splunk アカウントに転送できます](/help/implementing/developing/introduction/logging.md#splunk-logs)：組織が Splunk への投資を使用できるようにします。
+* [ログは Splunk アカウントに転送できます](/help/implementing/developing/introduction/logging.md#splunk-logs)を使用すると、組織は Splunk 投資を使用できます。
 
 * [静的な専用 egress IP アドレス](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address)は、Java コードでプログラムされたアウトバウンドトラフィックに割り当てることができます。これは、一部の統合で役立つ場合があります。
 
@@ -137,7 +139,7 @@ Cloud Readiness Analyzer リリース v1.0.2 の新機能と更新点につい�
 
 * 以前のバージョンの CRA を Adobe Experience Manager（AEM）6.1 で実行できませんでした。管理者グループのユーザーに対する明示的なサポートが追加されました。
 
-  詳しくは、 [AEM 6.1 への CRA のインストール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=ja#installing-on-aem61) を参照してください。
+  参照： [AEM 6.1 への CRA のインストール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=ja#installing-on-aem61) を参照してください。
 
 * 概要レポートに表示される有効期限のタイムスタンプが正しくありませんでした。
 

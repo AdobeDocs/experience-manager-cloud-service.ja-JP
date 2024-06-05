@@ -2,9 +2,11 @@
 title: リリースノート（2020.3.0）
 description: 「[!DNL Adobe Experience Manager] as a Cloud Service 2020.3.0 のリリースノート」
 exl-id: 0393c789-3999-4e51-be83-269d6eabd3f3
-source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '260'
 ht-degree: 100%
 
 ---

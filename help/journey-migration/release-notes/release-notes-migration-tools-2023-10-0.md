@@ -2,10 +2,12 @@
 title: AEM as a Cloud Service リリース 2023.10.0 の移行ツールのリリースノート
 description: AEM as a Cloud Service リリース 2022.10.0 の移行ツールのリリースノート
 feature: Release Information
-source-git-commit: 219eb2544dbac8ac5104be4ef8eb1bae996d95f0
+exl-id: e5250b5b-a56c-4bf0-8510-2334a12e36b6
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 42%
+source-wordcount: '143'
+ht-degree: 46%
 
 ---
 
@@ -17,9 +19,9 @@ ht-degree: 42%
 
 ### リリース日 {#release-date-ctt}
 
-コンテンツ転送ツール v3.0.4 のリリース日は 2023 年 10 月 6 日です。
+コンテンツ転送ツール v3.0.4 のリリース日は 2023 年 10 月 6 日（PT）です。
 
 ### 新機能 {#what-is-new-ctt}
 
-* コンテンツの取り込みプロセスが変更されました。宛先環境でAEMバージョンの更新を無効にするために、カスタマーケア/サポートチケットを送信する必要がなくなりました。 このプロセスは自動化されました。 詳しくは、 [AEMバージョンの更新と取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#aem-version-updates-and-ingestions)
-* 動的同時実行は、 [プリコピー](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 抽出段階と取り込み段階の両方の手順に従い、コンテンツ移行時間を大幅に短縮します。
+* コンテンツ取得プロセスが変更されました。カスタマーケア/サポートチケットを送信して、宛先環境でAEM バージョン更新を無効にする必要がなくなりました。 このプロセスは自動化されています。 詳しくは、こちらを参照してください。 [AEM バージョンのアップデートと取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#aem-version-updates-and-ingestions)
+* 動的同時実行性は、次の場合に使用されます [事前コピー](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 抽出フェーズと取り込みフェーズの両方でステップを実行し、コンテンツの移行時間を大幅に短縮する。

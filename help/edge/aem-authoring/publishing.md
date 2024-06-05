@@ -3,8 +3,9 @@ title: Edge 配信サービス向けのコンテンツの公開
 description: コンテンツの公開が Edge 配信サービスと連携する仕組みと、AEM コンテンツを Edge 配信サービスと共に公開する方法について説明します。
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
-source-git-commit: c85a82161a7594588290793c89ecbe1f0f60a56d
-workflow-type: ht
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 100%
 

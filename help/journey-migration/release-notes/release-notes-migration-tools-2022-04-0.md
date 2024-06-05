@@ -3,10 +3,11 @@ title: AEM as a Cloud Service Release 2022.4.0 の移行ツールのリリース
 description: AEM as a Cloud Service Release 2022.4.0 の移行ツールのリリースノート
 feature: Release Information
 exl-id: 4941736b-82cd-4050-b3e9-aef250d5c4c7
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 94%
+source-wordcount: '240'
+ht-degree: 100%
 
 ---
 
@@ -34,4 +35,4 @@ ht-degree: 94%
 
 ### バグの修正 {#bug-fixes-bpa}
 
-* BPA は、お客様のコンポーネントに関してのみレポートするのではなく、コアコンポーネントについての分析結果もレポートしていました。この問題が修正されました。
+* BPA は、お客様のコンポーネントに関してのみレポートするのではなく、コアコンポーネントについての分析結果もレポートしていました。この問題は修正されました。

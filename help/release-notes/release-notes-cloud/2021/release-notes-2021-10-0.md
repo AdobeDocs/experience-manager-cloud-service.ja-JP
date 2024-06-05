@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 リリースのリリースノート。'
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -44,7 +46,7 @@ ht-degree: 92%
 
 ### [!DNL Assets] プレリリースチャネルの新機能 {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] 画像のスマート切り抜きとスウォッチが最新の Sensei サービスによって強化され、改善された切り抜きとスウォッチが生成されるようになりました。また、同じ縦横比で解像度が異なる様々な切り抜きコンテンツを生成する機能が強化されました。また、イメージプロファイルの幅と高さに変更がない場合、手動の編集は再処理時に保持されます。
+* [!DNL Dynamic Media] 画像のスマート切り抜きとスウォッチが最新の Sensei サービスによって強化され、改善された切り抜きとスウォッチが生成されるようになりました。また、同じ縦横比で解像度が異なる様々な切り抜きコンテンツを生成する機能が強化されました。さらに、画像プロファイルの幅と高さに変更がない場合、手動編集は再処理時に保持されます。
 
 * スマートタグは、スマートコンテンツサービスの代わりに、アセットマイクロサービスを使用して、アセットに自動的に適用されます。タグ付けの結果を改善し、バイアスを減らすために、基になるモデルが更新されます。<!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -58,7 +60,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms**:Adobe Analyticsを使用して Adaptive Formsにログインしている（匿名）ユーザーとログインしていない（匿名）ユーザーの両方の動作を取得および追跡し、ユーザーのインサイトを収集できるようになりました。 データに基づく情報に基づく意思決定をおこない、ユーザーエクスペリエンスを向上させるのに役立ちます。
+* **Analytics for Adaptive Forms**:Adobe Analytics for Adaptive Formsを使用して、ログイン済みの場合と未ログイン（匿名）の場合の行動をキャプチャおよび追跡し、ユーザーインサイトを収集できるようになりました。 十分な情報に基づいて決定を行い、ユーザーエクスペリエンスを向上させることができます。
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms-oct-2021}
 
@@ -66,7 +68,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### [!DNL Forms] のベータ版機能 {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ja) では、テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードとバッチモードでドキュメントを生成できます。 API により、以下のような機能を備えたアプリケーションを作成することができます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ja) では、テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期および一括モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
 
    * テンプレートファイル（PDF および XDP）に XML データを格納することで、最終形式のドキュメントを生成します。
    * 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
@@ -79,7 +81,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 * CIF アドオンでは、新しい GraphQL API とスキーマを備えた最新の Commerce v2.4.3 をサポートしています
 
-* 作成者は、リッチテキストエディター（RTE）を使用して、製品ページやカタログページへのリンクをテキストフィールドに追加できます。RTE ツールバーにCIFアイコンが追加され、選択者がすばやく検索して製品やカテゴリを選択できるようになりました。このアイコンは、コンテキスト内に表示されることなく、選択できます。
+* 作成者は、リッチテキストエディター（RTE）を使用して、製品ページやカタログページへのリンクをテキストフィールドに追加できます。RTE ツールバーに追加されたCIF アイコンをクリックすると、ピッカーが開き、コンテキストを離れることなく商品やカテゴリをすばやく検索および選択できるようになりました。
 
 * 既存のポップアップ買い物かごとチェックアウトは、AEM 専用の買い物かごとチェックアウトページに置き換えられました。これらのページ上のコンポーネントは、Adobe Commerce の拡張可能な Peregrine コンポーネントを使用して構築されています
 

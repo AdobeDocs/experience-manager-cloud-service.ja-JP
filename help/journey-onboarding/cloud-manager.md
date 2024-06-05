@@ -3,8 +3,9 @@ title: Cloud Manager へのアクセス
 description: プロジェクトリソースを設定するための Cloud Manager へのアクセス方法について説明します。
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: 0e0337f6e14aa2f5b616ebc0a4b3c95089637369
-workflow-type: ht
+feature: Onboarding
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 100%
 

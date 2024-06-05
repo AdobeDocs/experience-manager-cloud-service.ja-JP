@@ -2,26 +2,28 @@
 title: ユニバーサルエディターのカスタマイズと拡張
 description: コンテンツ作成者のニーズに合わせてユニバーサルエディターの UI をカスタマイズできる、様々な拡張ポイントやその他の機能について説明します。
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: bdd67fb383bf20399eacaf9b9c086ea8468ea742
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
 
 # ユニバーサルエディターのカスタマイズと拡張 {#customizing-extending}
 
-コンテンツ作成者のニーズに合わせてユニバーサルエディターのオーサリングエクスペリエンスをカスタマイズできる様々な拡張ポイントおよびその他の機能について説明します。
+コンテンツ作成者のニーズに合わせてユニバーサルエディターのオーサリングエクスペリエンスをカスタマイズできる様々な拡張ポイントとその他の機能について説明します。
 
 ## 概要 {#overview}
 
-ユニバーサルエディターでは、プロジェクトのニーズに合わせて 2 種類の適応が可能です。
+ユニバーサルエディターでは、プロジェクトのニーズに合わせて 2 つのタイプの適応が可能です。
 
-* [ユニバーサルエディターのカスタマイズ](#customizing) - ユニバーサルエディターの標準機能は、複数のカスタマイズ設定を使用して適応させることができます。
+* [ユニバーサルエディターのカスタマイズ](#customizing) - ユニバーサルエディターの標準機能は、複数のカスタマイズ設定を通じて適応させることができます。
 * [ユニバーサルエディター UI の拡張](#extending) - ユニバーサルエディターの UI は、プロジェクトのニーズに合わせて、App Builder を使用して拡張することもできます。
 
-両方のタイプについて、以降の節で詳しく説明します。
+次の節では、両方のタイプについて説明します。
 
 ## ユニバーサルエディターのカスタマイズ {#customizing}
 
@@ -116,18 +118,18 @@ data-aue-filter="container-filter"
 
 ## ユニバーサルエディター UI の拡張 {#extending}
 
-Adobe Experience Cloud サービスとして、ユニバーサルエディターの UI は、App Builder とExperience Managerを使用して拡張できます。
+Adobe Experience Cloud サービスとして、ユニバーサルエディターの UI は、App Builder とExperience Manager を使用して拡張できます。
 
-UI 拡張機能は、Adobeの App Builder で構築された JavaScript アプリケーションで、ユニバーサルエディターなどのAdobe Experience Cloud統合シェルで実行される UI アプリケーションに埋め込むことができます。 ヘッダーメニューとプロパティパネルに独自のボタンとアクションを追加したり、ユニバーサルエディター用に独自のイベントを作成したりできます。
+UI 拡張機能は、Adobe App Builder で作成された JavaScript アプリケーションで、ユニバーサルエディターなどの Adobe Experience Cloud 統合シェルで実行される UI アプリケーションに埋め込むことができます。ヘッダーメニューとプロパティパネルに独自のボタンとアクションを追加したり、ユニバーサルエディター用に独自のイベントを作成したりできます。
 
 これらの可能性を調べるには、次のリソースを参照してください。
 
-1. [UI 拡張機能](https://developer.adobe.com/uix/docs/)  – これは、UI 拡張機能の開発者向けドキュメントです。
-1. [UI 拡張ガイド](https://developer.adobe.com/uix/docs/guides/)  – 独自の拡張機能を開発する手順
-1. [ユニバーサルエディターの拡張ポイント](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) - ユニバーサルエディター固有の拡張ポイントドキュメント
+1. [UI 拡張機能](https://developer.adobe.com/uix/docs/) - UI 拡張機能の開発者向けドキュメント。
+1. [UI 拡張機能ガイド](https://developer.adobe.com/uix/docs/guides/) - 独自の拡張機能を開発する方法に関する手順説明
+1. [ユニバーサルエディターの拡張ポイント](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) - ユニバーサルエディター固有の拡張ポイントについてのドキュメント
 
 >[!TIP]
 >
->手本で学びたい場合は、こちらを参照してください [AEM UI 拡張チュートリアル。](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) コンテンツフラグメントコンソールの拡張に重点を置いていますが、ユニバーサルエディターで UI 拡張機能を実装する場合の概念は同じです。
+>例について詳しくは、[AEM UI 拡張チュートリアルを参照してください。](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) コンテンツフラグメントコンソールの拡張に重点を置いていますが、ユニバーサルエディターで UI 拡張機能を実装する場合の概念は同じです。
 
-[AEM SitesでのExtension Managerの使用](https://developer.adobe.com/uix/docs/extension-manager/) 拡張機能は、インスタンスごとに有効または無効にしたり、ユニバーサルエディターを含むAdobeのファーストパーティ拡張機能にアクセスしたりできます。
+[AEM Sites での Extension Manager の使用](https://developer.adobe.com/uix/docs/extension-manager/) 拡張機能をインスタンスごとに有効または無効にしたり、ユニバーサルエディターを含むアドビのファーストパーティ拡張機能にアクセスしたりできます。

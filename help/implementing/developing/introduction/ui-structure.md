@@ -2,10 +2,12 @@
 title: AEM UI の構造
 description: AEM UI には、基盤となる原則があり、いくつかの主要な要素で構成されています。
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 97%
+source-wordcount: '887'
+ht-degree: 100%
 
 ---
 
@@ -150,7 +152,7 @@ AEM には、編集、プレビュー、注釈など、ページオーサリン�
 
 ### レイヤースイッチャー {#layer-switcher}
 
-レイヤースイッチャーを使用すると、使用するレイヤーを選択できます。 閉じた場合は、現在使用中の画層を示します。
+レイヤースイッチャーを使用して、使用するレイヤーを選択できます。閉じた場合は、現在使用中のレイヤーを示します。
 
 レイヤースイッチャーは、ツールバー（ウィンドウ上部、エディターフレーム内）からドロップダウンとして使用できます。
 

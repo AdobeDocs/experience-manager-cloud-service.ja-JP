@@ -2,10 +2,12 @@
 title: サイトのクイック作成とフロントエンドのカスタマイズ
 description: クイックサイト作成ツールでサイトテンプレート、テーマ、フロントエンドパイプラインを使用して、新しいサイトの迅速なデプロイを可能にし、フロントエンド開発を切り離す方法を説明します。
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +21,7 @@ ht-degree: 92%
 
 これを行うには、クイックサイト作成ツールで、次の強力な AEM as a Cloud Service 機能を使用します。
 
-1. **AEM Site Templates** は、ベースサイトコンテンツ、構造、サイトスタイル設定を定義するために使用され、サイトの作成時に管理者が選択します。
+1. **AEM サイトテンプレート**&#x200B;は、ベースサイトのコンテンツと構造およびサイトのスタイル設定を定義するために使用され、サイトを作成する際に管理者によって選択されます。
 1. **AEM Site テーマ** はテンプレートに含まれ、サイトのスタイルを定義する CSS、JavaScript および静的リソースを含みます。
 1. **フロントエンドパイプライン** を使用すると、バックエンド開発とは無関係に、サイトテーマのカスタマイズをデプロイできます。
 

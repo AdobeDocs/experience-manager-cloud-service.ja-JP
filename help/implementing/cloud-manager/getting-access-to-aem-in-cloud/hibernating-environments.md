@@ -2,8 +2,11 @@
 title: サンドボックス環境の休止と休止解除
 description: サンドボックスプログラムの環境が自動的に休止モードに入る仕組みと、休止状態が解除される仕組みについて説明します。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 100%
 

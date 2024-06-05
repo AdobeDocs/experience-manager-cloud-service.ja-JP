@@ -2,8 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 description: Adobe Experience Manager as a Cloud Service の Image Management System のサポート。
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
-workflow-type: ht
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1922'
 ht-degree: 100%
 

@@ -2,8 +2,11 @@
 title: ローンチの昇格
 description: コンテンツを公開する前にソース（実稼動）に戻すには、ローンチページを昇格させる必要があります。
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 100%
 

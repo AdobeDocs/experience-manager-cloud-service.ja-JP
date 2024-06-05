@@ -2,16 +2,18 @@
 title: AEM 向け SPA の開発
 description: この記事では、フロントエンド開発者が AEM 向け SPA を開発する際に考慮すべき重要な質問について説明します。また、開発済みの SPA を AEM にデプロイする際に留意すべき、SPA に関する AEM のアーキテクチャの概要も示します。
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '2035'
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '2028'
 ht-degree: 100%
 
 ---
 
 # AEM 向け SPA の開発 {#developing-spas-for-aem}
 
-単一ページアプリケーション（SPA）により、Web サイトのユーザーに魅力的なエクスペリエンスを提供することができます。開発者は SPA フレームワークを使用してサイトを構築したいと考え、作成者はそうして構築されたサイトのコンテンツを AEM 内でシームレスに編集したいと考えています。
+単一ページアプリケーション（SPA）により、web サイトのユーザーに魅力的なエクスペリエンスを提供することができます。開発者は SPA フレームワークを使用してサイトを構築したいと考え、作成者はそうして構築されたサイトのコンテンツを AEM 内でシームレスに編集したいと考えています。
 
 この記事では、フロントエンド開発者が AEM 向けの SPA を開発する際に考慮すべき重要な問題を紹介し、SPA を AEM にデプロイする際に関する AEM のアーキテクチャの概要を説明します。
 

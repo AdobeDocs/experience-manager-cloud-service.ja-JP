@@ -2,8 +2,11 @@
 title: Sites コンソールのサイドパネル
 description: AEM Sites コンソールのサイドパネルを使用して、コンテンツをより深く理解し、移動する方法について説明します。
 exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 100%
 

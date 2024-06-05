@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.11.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.11.0 リリースのリリースノート。'
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 93%
+source-wordcount: '1058'
+ht-degree: 96%
 
 ---
 
@@ -34,7 +36,7 @@ ht-degree: 93%
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-* Dynamic Media 画像のスマート切り抜きとスウォッチに、最新の Sensei サービスが適用され、改善された切り抜きとスウォッチが生成されるようになりました。また、同じ縦横比で解像度が異なる様々な切り抜きコンテンツを生成する機能が強化されました。また、イメージプロファイルの幅と高さに変更がない場合、手動の編集は再処理時に保持されます。
+* Dynamic Media 画像のスマート切り抜きとスウォッチに、最新の Sensei サービスが適用され、改善された切り抜きとスウォッチが生成されるようになりました。また、同じ縦横比で解像度が異なる様々な切り抜きコンテンツを生成する機能が強化されました。さらに、画像プロファイルの幅と高さに変更がない場合、手動編集は再処理時に保持されます。
 
 ### [!DNL Assets] プレリリースチャネルの新機能 {#assets-prerelease-features}
 
@@ -52,7 +54,7 @@ ht-degree: 93%
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ja) では、テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードとバッチモードでドキュメントを生成できます。 API により、以下のような機能を備えたアプリケーションを作成することができます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ja) では、テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期および一括モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
 
    * テンプレートファイル（PDF および XDP）に XML データを格納することで、最終形式のドキュメントを生成します。
    * 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
@@ -84,10 +86,10 @@ AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021年
 
 ### 新機能 {#what-is-new-cm-nov}
 
-* ユーザーは、新しいフロントエンドパイプラインを使用して、フロントエンドコードを迅速に排他的にデプロイできるようになりました。 詳しくは、[Cloud Manager フロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)を参照してください。
+* ユーザーは、新しいフロントエンドパイプラインを活用して、フロントエンドコードを迅速かつ排他的にデプロイできるようになりました。詳しくは、[Cloud Manager フロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)を参照してください。
 
   >[!IMPORTANT]
-  >AEM版である必要があります `2021.10.5933.20211012T154732Z` またはそれ以降を使用して、新しいフロントエンドパイプラインを使用する必要があります。
+  >AEM バージョンである必要があります `2021.10.5933.20211012T154732Z` 新しいフロントエンドパイプラインを使用する場合は、またはそれ以上。
 
 * AEM 画像全体を作成する必要がなく、より効率的にコード分析を実行することで、コード品質パイプラインの期間を大幅に短縮できます。この変更は、リリース後の数週間で徐々に適用される予定です。
 

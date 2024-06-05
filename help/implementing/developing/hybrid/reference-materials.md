@@ -2,9 +2,11 @@
 title: SPA 参照資料
 description: 単一ページアプリケーション API リファレンスとソースコードリポジトリーの概要
 exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '107'
 ht-degree: 100%
 
 ---

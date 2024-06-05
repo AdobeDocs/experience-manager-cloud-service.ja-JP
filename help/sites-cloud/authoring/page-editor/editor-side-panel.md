@@ -2,8 +2,11 @@
 title: ページエディターのサイドパネル
 description: AEM サイトエディターのサイドパネルを使用して、ページにコンポーネントやアセットを追加する方法を説明します。
 exl-id: 5f025828-f2ca-4cbb-9cdf-a199e9e90cc7
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 100%
 

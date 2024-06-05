@@ -4,8 +4,10 @@ description: AEM as a Cloud Service を使用する際のセキュリティに�
 hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
-source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
-workflow-type: ht
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 100%
 

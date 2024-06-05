@@ -3,8 +3,9 @@ description: 次のスクリーンショットでは、Akamai Property Manager �
 title: Akamai の設定
 feature: Edge Delivery Services
 exl-id: c65206dc-3fbe-4d3e-bc48-5fca9a5899c9
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '30'
 ht-degree: 100%
 

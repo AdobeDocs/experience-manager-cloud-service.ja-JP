@@ -2,10 +2,13 @@
 title: すべてをまとめる方法 - AEM ヘッドレスのアプリとコンテンツ
 description: AEM ヘッドレスデベロッパージャーニーのこの部分では、コンテンツフラグメント、GraphQL 呼び出し、REST API 呼び出し、アプリケーションを含む AEM プロジェクトを実行し、運用開始に備える方法を説明します。
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 99%
+source-wordcount: '1061'
+ht-degree: 100%
 
 ---
 
@@ -98,7 +101,7 @@ AEM ヘッドレスプロジェクトのローンチの準備をするには、�
 
 <!-- THIS TOPIC IS 404. IT DOES NOT APPEAR IN THE TOC OR ANYWHERE ELSE To get a more in-depth look at setting up a local development environment and all dependencies needed for content preview, see [Production Deployment documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/headless-tutorial/graphql/multi-step/production-deployment.html). -->
 
-## 次のステップ {#whats-next}
+## 次の手順 {#whats-next}
 
 これで、ここでの AEM ヘッドレスデベロッパージャーニーは完了です。次ができるようになったはずです。
 
@@ -114,6 +117,6 @@ AEM ヘッドレスプロジェクトのローンチの準備をするには、�
 * [クライアントサイドブラウザー用 AEM ヘッドレス SDK（JavaScript）](https://github.com/adobe/aem-headless-client-js)
 * [サーバーサイド／Node.js（JavaScript）用 AEM ヘッドレス SDK](https://github.com/adobe/aem-headless-client-nodejs)
 * [Java™ 用 AEM ヘッドレス SDK](https://github.com/adobe/aem-headless-client-java)
-* [AEM as a Headless CMS の概要](/help/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
+* [ヘッドレス CMS としての AEM の概要](/help/headless/introduction.md)
+* [AEM 開発者ポータル](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
 * [AEM のヘッドレスに関するチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)

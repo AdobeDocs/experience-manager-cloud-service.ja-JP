@@ -2,10 +2,13 @@
 title: AEM as a Headless CMS 用のオーサリング - はじめに
 description: Adobe Experience Manager as a Cloud Service の機能をヘッドレス CMS として使用し、プロジェクトのコンテンツをオーサリングする方法を紹介します。
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 95%
+source-wordcount: '680'
+ht-degree: 100%
 
 ---
 
@@ -61,7 +64,7 @@ ht-degree: 95%
 
 もう 1 つの技術用語は、コンテンツモデリングです（データモデリングとも呼ばれます）。なぜ、これが作成者の関心事になるのでしょうか。
 
-ヘッドレスアプリケーションがコンテンツにアクセスし、それを使用して何らかの処理をおこなうには、コンテンツの構造が事前に定義されている必要があります。 コンテンツを自由形式にすることも可能ですが、その場合は、アプリケーション側の処理が&#x200B;*非常に*&#x200B;複雑になります。
+ヘッドレスアプリケーションがコンテンツにアクセスして何らかの処理を行えるようにするには、事前に定義された構造がコンテンツに必要です。コンテンツを自由形式にすることも可能ですが、その場合は、アプリケーション側の処理が&#x200B;*非常に*&#x200B;複雑になります。
 
 基本的に、コンテンツが従うべき構造を定義するプロセスには、モデルの設計が不可欠です。これをデータモデリングと呼びます。
 
@@ -77,7 +80,7 @@ AEM の場合は、コンテンツアーキテクトの役割（多くの場合�
 
 ## その他のリソース {#additional-resources}
 
-* [AEM as a Headless CMS の概要](/help/headless/introduction.md)
+* [ヘッドレス CMS としての AEM の概要](/help/headless/introduction.md)
 
 * [AEM のヘッドレスに関するチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)
 
@@ -85,7 +88,7 @@ AEM の場合は、コンテンツアーキテクトの役割（多くの場合�
    * [CMS ヘッドレス開発について](/help/journey-headless/developer/learn-about.md)
    * [コンテンツをモデル化する方法](/help/journey-headless/developer/model-your-content.md)
 
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
+* [AEM 開発者ポータル](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
 
 * [AEM ヘッドレスコンテンツアーキテクトジャーニー](/help/journey-headless/architect/overview.md)
 

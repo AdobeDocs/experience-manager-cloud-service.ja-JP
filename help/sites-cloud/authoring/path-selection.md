@@ -2,8 +2,11 @@
 title: パスブラウザーを使用したパスの選択
 description: パスブラウザーを使用して AEM でリソースを選択する方法について説明します。
 exl-id: 8eb52793-b709-4e66-832d-533ef06bc0e1
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 100%
 

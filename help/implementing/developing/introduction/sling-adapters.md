@@ -1,17 +1,19 @@
 ---
 title: Sling アダプターの使用
-description: Sling には、Adaptable インターフェイスを実装するオブジェクトを簡単に翻訳するためのアダプターパターンが用意されています
+description: Sling には、Adaptable インターフェイスを実装するオブジェクトを便利に変換できるアダプターパターンが用意されています
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2213'
-ht-degree: 99%
+source-wordcount: '1324'
+ht-degree: 100%
 
 ---
 
 # Sling アダプターの使用 {#using-sling-adapters}
 
-[Sling](https://sling.apache.org) は、[Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) インターフェイスを実装するオブジェクトを適切に変換する[アダプターパターン](https://sling.apache.org/documentation/the-sling-engine/adapters.html)が用意されています。このインターフェイスは、オブジェクトを引数として渡されるクラスタイプに変換する汎用の [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) メソッドを提供します。
+[Sling](https://sling.apache.org) には、[Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) インターフェイスを実装するオブジェクトを便利に変換できる[アダプターパターン](https://sling.apache.org/documentation/the-sling-engine/adapters.html)が用意されています。このインターフェイスは、オブジェクトを引数として渡されるクラスタイプに変換する汎用の [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) メソッドを提供します。
 
 例えば、リソースオブジェクトを対応するノードオブジェクトに変換するには、次の操作を実行します。
 
@@ -25,7 +27,7 @@ Node node = resource.adaptTo(Node.class);
 
 * 実装用のオブジェクトの取得
 
-  例えば、汎用の [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) インターフェイスの JCR ベース実装では、基盤の JCR [`Node`](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) にアクセスできます。
+  例えば、汎用の [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) インターフェイスの JCR ベース実装では、基盤の JCR [`Node`](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) にアクセスできます。
 
 * 内部的なコンテキストオブジェクトを渡す必要があるオブジェクトのショートカット作成。
 
@@ -80,7 +82,7 @@ null ケースを適切に処理することが重要です。JSP レンダリ�
 <table>
  <tbody>
   <tr>
-   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">ノード</a></td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">ノード</a></td>
    <td>JCR ノードベースのリソースまたはノードを参照する JCR プロパティの場合</td>
   </tr>
   <tr>
@@ -105,7 +107,7 @@ null ケースを適切に処理することが重要です。JSP レンダリ�
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">ModifiableValueMap</a></td>
-   <td>の拡張 <a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>（そのノードのプロパティを変更できます）</td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a> の拡張機能。そのノードのプロパティを変更できるようにします</td>
   </tr>
   <tr>
    <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td>
@@ -253,7 +255,7 @@ null ケースを適切に処理することが重要です。JSP レンダリ�
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html">Externalizer</a></td>
-   <td>リクエストオブジェクトがない場合でも、絶対 URL を外部化するためのもの<br /> </td>
+   <td>リクエストオブジェクトがない場合でも、絶対 URL を外部化する場合<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -288,7 +290,7 @@ null ケースを適切に処理することが重要です。JSP レンダリ�
    <td>ラベル付きリソース（== this）。</td>
   </tr>
   <tr>
-   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">ノード</a></td>
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Node</a></td>
    <td>ページのノード。</td>
   </tr>
   <tr>
@@ -300,11 +302,11 @@ null ケースを適切に処理することが重要です。JSP レンダリ�
 
 **[Component](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/components/Component.html)** は次の項目に適応します。
 
-| [Resource](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | コンポーネントのリソース。 |
+| [Resource](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | コンポーネントのリソース |
 |---|---|
 | [LabeledResource](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/LabeledResource.html) | ラベル付きリソース（== this）。 |
-| [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | コンポーネントのノード。 |
-| ... | コンポーネントのリソースが適応できるすべての項目。 |
+| [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | コンポーネントのノード |
+| ... | コンポーネントのリソースが適応できるすべての項目 |
 
 **[Template](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Template.html)** は次の項目に適応します。
 
@@ -319,12 +321,12 @@ null ケースを適切に処理することが重要です。JSP レンダリ�
    <td>ラベル付きリソース（== this）。</td>
   </tr>
   <tr>
-   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">ノード</a></td>
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Node</a></td>
    <td>このテンプレートのノード。</td>
   </tr>
   <tr>
    <td>...</td>
-   <td>テンプレートのリソースが適応できるすべての項目。</td>
+   <td>テンプレートのリソースが適応可能なすべての項目。</td>
   </tr>
  </tbody>
 </table>
@@ -335,7 +337,7 @@ null ケースを適切に処理することが重要です。JSP レンダリ�
 
 | [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | ユーザーまたはグループのホームノードを返します。 |
 |---|---|
-| [ReplicationStatus](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/ReplicationStatus.html) | ユーザーまたはグループのホームノードのレプリケーションステータスを返します。 |
+| [ReplicationStatus](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/ReplicationStatus.html) | ユーザーまたはホームノードのレプリケーションステータスを返します。 |
 
 #### DAM {#dam}
 
@@ -344,7 +346,7 @@ null ケースを適切に処理することが重要です。JSP レンダリ�
 | [Resource](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | アセットのリソース。 |
 |---|---|
 | [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | アセットのノード。 |
-| ... | アセットのリソースが適応できるすべての項目。 |
+| ... | アセットのリソースが適応可能なすべての項目。 |
 
 #### タグ付け {#tagging}
 
@@ -353,8 +355,8 @@ null ケースを適切に処理することが重要です。JSP レンダリ�
 | [Resource](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | タグのリソース。 |
 |---|---|
 | [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | タグのノード。 |
-| ... | タグのリソースが適応できるすべての項目。 |
+| ... | タグのリソースが適応可能なすべての項目。 |
 
 #### その他 {#other}
 
-さらに、Sling、JCR、OCM では、カスタム OCM（[`AdapterFactory`](https://sling.apache.org/documentation/the-sling-engine/adapters.html)Object Content Mapping）オブジェクト用の [&#128279;](https://jackrabbit.apache.org/jcr/object-content-mapping.html) も提供しています。
+さらに、Sling、JCR、OCM では、カスタム OCM（[`AdapterFactory`](https://sling.apache.org/documentation/the-sling-engine/adapters.html)Object Content Mapping）オブジェクト用の [](https://jackrabbit.apache.org/jcr/object-content-mapping.html) も提供しています。

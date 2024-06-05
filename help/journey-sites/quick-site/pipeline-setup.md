@@ -2,10 +2,13 @@
 title: パイプラインの設定
 description: フロントエンドパイプラインを作成して、サイトのテーマのカスタマイズを管理します。
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 94%
+source-wordcount: '949'
+ht-degree: 100%
 
 ---
 
@@ -18,7 +21,7 @@ ht-degree: 94%
 AEM クイックサイト作成ジャーニーの前のドキュメントである [テンプレートからサイトを作成](create-site.md) では、サイトテンプレートを使用して AEM サイトをすばやく作成する方法を学び、フロントエンドツールを使用してさらにカスタマイズできるようになりました。ここまでの学習内容を以下にまとめます。
 
 * AEM Site テンプレートの取得方法を理解する。
-* テンプレートを使用してサイトを作成する方法を説明します。
+* テンプレートを使用して新しいサイトを作成する方法を学ぶ。
 * 新しいサイトからテンプレートをダウンロードして、フロントエンド開発者に提供する方法を確認する。
 
 この記事では、これらの基本事項にもとづいて、フロントエンドパイプラインを設定できます。このパイプラインは、フロントエンド開発者がこのジャーニーの後半でフロントエンドのカスタマイズをデプロイするために使用します。
@@ -57,7 +60,7 @@ AEM クイックサイト作成ジャーニーの前のドキュメントであ�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) にある Adobe Cloud Manager にログインします。
 
-1. Cloud Manager に、使用可能な様々なプログラムのリストが表示されます。管理するものを選択します。 AEM as a Cloud Service を使い始めたばかりの場合、1 つのプログラムしか使用できない可能性があります。
+1. Cloud Manager に、使用可能な様々なプログラムのリストが表示されます。管理するものを選択します。AEM as a Cloud Service を使い始めたばかりの場合、1 つのプログラムしか使用できない可能性があります。
 
    ![Cloud Manager でのプログラムの選択](assets/cloud-manager-select-program.png)
 
@@ -71,7 +74,7 @@ URL にアクセスまたはコピーしたプログラムの名前をメモし�
 
 これで Cloud Manager にアクセスし、フロントエンドデプロイメント用のパイプラインを作成できます。
 
-1. Adobe Analytics の **パイプライン** 」セクションで、 **追加** 」ボタンをクリックします。
+1. Cloud Manager ページの「**パイプライン**」セクションで、「**追加**」ボタンを選択します。
 
    ![パイプライン](assets/pipelines-add.png)
 

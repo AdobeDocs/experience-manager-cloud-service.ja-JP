@@ -3,10 +3,11 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.5.0 �
 description: AEM as a Cloud Service の Cloud Manager 2024.5.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 3bab3e77dcc8ffbc3e8891557cbe09de707d64c5
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '627'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -21,11 +22,11 @@ ht-degree: 90%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Serviceの Cloud Manager リリース 2024.5.0 のリリース日は 2024 年 5 月 9 日（PT）です。 次回のリリースは 2024 年 6 月 6 日（PT）に予定されています。
+AEM as a Cloud Service の Cloud Manager リリース 2024.5.0 のリリース日は 2024年5月9日（PT）です。次回のリリースは 2024年6月6日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* この [ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md) は、左側の異なるエントリポイントからアクセスできるようになりました [ナビゲーション。](/help/implementing/cloud-manager/navigation.md)
+* [ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md)には、左側の[ナビゲーション](/help/implementing/cloud-manager/navigation.md)の個別のエントリポイントからアクセスできるようになりました。
 * 開発環境のプロビジョニングに失敗した場合、Cloud Manager UI がフィードバックを提供するようになりました。
 
 ## 早期導入プログラム {#early-adoption}

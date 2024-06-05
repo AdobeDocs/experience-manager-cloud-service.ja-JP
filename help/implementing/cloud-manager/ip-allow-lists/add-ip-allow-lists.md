@@ -2,8 +2,11 @@
 title: IP 許可リストの追加
 description: Cloud Manager を使用して独自の IP許可リストを追加する方法を説明します。
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
-source-git-commit: fa6d0670a011276facc561f62f52c6e69147a49e
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 100%
 

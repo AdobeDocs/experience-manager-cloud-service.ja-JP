@@ -2,8 +2,11 @@
 title: サンドボックスプログラムの作成
 description: Cloud Manager を使用して、トレーニング、デモ、POC などの実稼動以外の用途に使用する独自のサンドボックスプログラムを作成する方法を説明します。
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 558b46f58491dbd6845003827dcf2a0ae1b1d074
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 100%
 

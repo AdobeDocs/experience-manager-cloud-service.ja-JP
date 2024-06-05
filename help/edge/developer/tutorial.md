@@ -3,8 +3,9 @@ description: このチュートリアルでは、新しい Adobe Experience Mana
 title: はじめに - 開発者向けチュートリアル
 feature: Edge Delivery Services
 exl-id: f84a9584-0962-4d70-aedc-f7a130fd489b
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 100%
 

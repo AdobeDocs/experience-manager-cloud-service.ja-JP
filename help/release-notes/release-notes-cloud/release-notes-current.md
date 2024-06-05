@@ -3,7 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: fae92c9a41d866fd89ffb6fa10191fae4033037c
+feature: Release Information
+role: Admin
+source-git-commit: b7e8fd902bb2fe98e183b7d987b87fee69e48337
 workflow-type: tm+mt
 source-wordcount: '1865'
 ht-degree: 24%
@@ -116,7 +118,7 @@ AEM Formsは、2 つの一般的な CAPTCHA ソリューション（Cloudflare T
 
 AEM Formsでは、複数の CAPTCHA オプションを提供することで、特定のニーズに最適なソリューションを選択できるようになりました。
 
-これらの CAPTCHA ソリューションをアダプティブFormsに統合する準備はできていますか？ アドビのドキュメントでは、次の各項目に関する詳細な手順を提供します。 [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [Captcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components)、および [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+これらの CAPTCHA ソリューションをアダプティブFormsに統合する準備はできていますか？ アドビのドキュメントでは、次の各項目に関する詳細な手順を提供します。 [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [Captcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components)、および [Google reCAPTCHA](https://experienceleague.adobe.com//docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 
 ### Forms サービス

@@ -2,8 +2,11 @@
 title: ページ注釈の追加
 description: コンテンツレビュープロセスを支援するために、付箋と同様に、注釈モードを使用して注釈やスケッチをページに残します
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 100%
 

@@ -2,8 +2,11 @@
 title: レイアウトコンテナおよびレイアウトモードの設定
 description: コンテンツ作成者がレスポンシブレイアウトを使用できるように、レイアウトコンテナとレイアウトモードを設定する方法について説明します。
 exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Administering
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 100%
 

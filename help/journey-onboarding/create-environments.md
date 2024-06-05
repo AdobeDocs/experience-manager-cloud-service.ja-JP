@@ -3,9 +3,10 @@ title: 環境の作成
 description: Cloud Manager を使用して最初の環境を作成する方法を説明します。
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
-workflow-type: ht
-source-wordcount: '732'
+feature: Onboarding
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
+source-wordcount: '725'
 ht-degree: 100%
 
 ---
@@ -50,7 +51,7 @@ ht-degree: 100%
 
    * 「**環境を追加**」オプションは「**環境**」タブでも使用できます。
 
-      ![「環境」タブ](/help/implementing/cloud-manager/assets/environments-tab.png)
+     ![「環境」タブ](/help/implementing/cloud-manager/assets/environments-tab.png)
 
    * 「**環境を追加**」オプションは、権限がない場合やライセンスされているリソースによっては、無効になっている場合があります。
 
@@ -87,6 +88,5 @@ ht-degree: 100%
 * [環境の管理](/help/implementing/cloud-manager/manage-environments.md) - 作成できる環境のタイプと、Cloud Manager プロジェクト用に環境を作成する方法について説明します。
 * [Adobe Cloud Manager の使用 - 環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=ja) - Cloud Manager 環境は、AEM オーサリング、パブリッシング、および Dispatcher の各サービスで構成されています。様々な環境がどのように役割をサポートし、様々な CI／CD パイプラインを使用して関与できるかについて説明します。
 * [迅速な開発環境](/help/implementing/developing/introduction/rapid-development-environments.md) - RDE の使用方法の詳細については、このドキュメントを参照してください。
-
 <!-- ERROR: Not Found (HTTP error 404) * [AEM Champion Tips and Tricks - Cloud Manager Environment Types](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - Watch this video for an overview of Cloud Manager environment types from an AEM champion. -->
 

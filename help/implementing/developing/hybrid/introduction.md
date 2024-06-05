@@ -2,8 +2,10 @@
 title: SPA の概要およびガイド
 description: この記事では、SPA の概念を説明し、基本的な SPA アプリケーションを使用したオーサリング方法を紹介し、基礎となる AEM SPA エディターとの関連を示します。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 100%
 
@@ -253,5 +255,5 @@ AEM での SPA の編集エクスペリエンスと、SPA と SPA エディタ�
 
 * [React を使用した AEM での SPA の概要](getting-started-react.md)では、SPA エディターで動作する基本的な SPA の構築方法を示しています
 * [Angular を使用した AEM での SPA の概要](getting-started-angular.md)では、Angular を使用して SPA エディターで動作する基本的な SPA の構築方法を示しています
-* 「[SPA エディターの概要](editor-overview.md)」では、AEM と SPA 間の通信モデルをより深く分析しています。
+* [SPA エディターの概要](editor-overview.md)では、AEM と SPA 間の通信モデルをより深く分析しています。
 * [AEM 向け SPA の開発](developing.md)では、フロントエンド開発者を AEM 向け SPA の開発に関与させる方法、および SPA と AEM アーキテクチャとのやり取りについて説明しています。

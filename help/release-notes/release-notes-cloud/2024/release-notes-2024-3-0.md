@@ -1,7 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.3.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.3.0 リリースのリリースノート。'
-source-git-commit: b0d8bddd5450d2186ba9646fe61c8face464b981
+exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2292'
 ht-degree: 100%

@@ -2,8 +2,11 @@
 title: 環境の管理
 description: 作成できる環境のタイプと、Cloud Manager プロジェクト用に環境を作成する方法について説明します。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '2365'
 ht-degree: 100%
 

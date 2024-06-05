@@ -1,13 +1,15 @@
 ---
 title: Sling サービスユーザーマッピングとサービスユーザー定義のベストプラクティス
 description: Sling サービスユーザーマッピングとサービスユーザー定義のベストプラクティスについて説明します
-source-git-commit: b6f7b6996b377ecfa372742ce1ad22139547ebdd
-workflow-type: ht
+exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 100%
 
 ---
-
 
 # Sling サービスユーザーマッピングとサービスユーザー定義のベストプラクティス {#best-practices-for-sling-service-user-mapping-and-service-user-definition}
 
@@ -274,8 +276,3 @@ delete service my-feature-service
 サービスユーザーとその権限設定のサーバーサイドテストを作成することが重要です。これは、設定が実際に機能することを検証するだけでなく、アクセス制御コンテンツやサービスユーザーを変更する際の回帰や意図しない間違いを特定するのにも役立ちます。
 
 `com.adobe.granite.testing.clients` ライブラリには、サービスユーザー向けの SST の記述を簡単にする多くのユーティリティが用意されています。
-
-
-
-
-

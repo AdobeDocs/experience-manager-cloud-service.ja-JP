@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 リリースのリリースノート。'
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 77%
+ht-degree: 82%
 
 ---
 
@@ -64,9 +66,9 @@ Edge Delivery Servicesについて詳しくは、記事を参照してくださ�
 
 ### [!DNL Experience Manager Assets] で利用できるプレリリース機能 {#prerelease-features-assets}
 
-* **Dynamic Media**: [Dynamic Mediaでのビデオのマルチキャプションおよびマルチオーディオトラックのサポート](/help/assets/dynamic-media/video.md#about-msma)—1 つのプライマリビデオに複数のキャプションと複数のオーディオトラックを簡単に追加できるようになりました。 この機能により、グローバルなオーディエンスがビデオにアクセスできるようになります。1 つの公開済みプライマリビデオを複数の言語でグローバルオーディエンスに向けてカスタマイズし、様々な地理的地域のアクセシビリティガイドラインに従うことができます。また、作成者はユーザーインターフェイスの 1 つのタブからキャプションとオーディオトラックを管理することもできます。
+* **Dynamic Media**：[Dynamic Media のビデオに対するマルチキャプションとマルチオーディオトラックのサポート](/help/assets/dynamic-media/video.md#about-msma) - プライマリビデオに複数のキャプションと複数のオーディオトラックを簡単に追加できるようになりました。この機能により、グローバルなオーディエンスがビデオにアクセスできるようになります。1 つの公開済みプライマリビデオを複数の言語でグローバルオーディエンスに向けてカスタマイズし、様々な地理的地域のアクセシビリティガイドラインに従うことができます。また、作成者は、ユーザーインターフェイスの 1 つのタブからキャプションとオーディオトラックを管理することもできます。
 
-  ![選択したビデオアセットのプロパティ ページの「キャプションとオーディオトラック」タブ&#x200B;](/help/release-notes/assets/msma-aem-cs.png)*選択したビデオアセットのプロパティ ページの「キャプションとオーディオトラック」タブ*
+  ![選択したビデオアセットのプロパティページの「キャプションとオーディオトラック」タブ。](/help/release-notes/assets/msma-aem-cs.png)*選択したビデオアセットのプロパティページの「キャプションとオーディオトラック」タブ。*
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

@@ -4,8 +4,10 @@ description: ユーザーマッピングツールの概要（従来）
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: true
 hidefromtoc: true
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: ht
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 100%
 

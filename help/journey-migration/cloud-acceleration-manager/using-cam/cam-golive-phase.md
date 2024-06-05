@@ -2,8 +2,10 @@
 title: Cloud Acceleration Manager での運用開始フェーズ
 description: このページでは、Cloud Acceleration Manager での運用開始フェーズの概要について説明します。
 exl-id: 2ec31445-899d-40b8-b3eb-073cb07aff12
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: ht
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 100%
 

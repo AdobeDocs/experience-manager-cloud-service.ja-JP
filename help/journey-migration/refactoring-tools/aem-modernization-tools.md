@@ -1,11 +1,13 @@
 ---
 title: AEM Modernization Tools
-description: 従来のAEM機能をAEM as a Cloud Serviceの最新のサポート対象機能に変換するために使用できるユーティリティスイートについて説明します。
+description: 従来のAEM機能を、サポートされている最新のAEM as a Cloud Service機能に変換するために使用できるユーティリティスイートについて説明します。
 exl-id: d541fae0-6386-403f-99c9-373dc978ad13
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 82%
+source-wordcount: '148'
+ht-degree: 81%
 
 ---
 

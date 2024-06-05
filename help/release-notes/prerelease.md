@@ -2,10 +2,12 @@
 title: Adobe Experience Manager as a Cloud Service プレリリースチャネル
 description: プレリリースチャネルを使用して、AEM as a Cloud Service の今後の機能のプレビューを取得する方法について説明します。
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 100%
+source-wordcount: '1264'
+ht-degree: 99%
 
 ---
 
@@ -177,7 +179,7 @@ Javadoc は Maven Central に公開されます。
 
    通常どおり、個々のプロジェクトでこの依存関係を使用できます。
 
-1. ローカルサーバーにデプロイします。。
+1. ローカルサーバーにデプロイします。
 
 1. ローカルで想定どおりに動作することを確認したら、コードを開発ブランチにコミットし、Cloud Manager の実稼動以外のパイプラインを使用して、プレリリースチャネルをサブスクライブする環境にデプロイします。
 

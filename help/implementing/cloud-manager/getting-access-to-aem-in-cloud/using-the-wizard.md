@@ -2,10 +2,13 @@
 title: プロジェクト作成ウィザード
 description: 実稼動プログラムを作成した後、プロジェクトをすばやく設定するのに役立つプロジェクト作成ウィザードについて説明します。
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 96%
+source-wordcount: '304'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +28,7 @@ Cloud Manager でウィザードを使用して AEM アプリケーションプ�
 
    ![分岐とプロジェクトを作成](assets/create-wizard2.png)
 
-1. 必要に応じて、ディバイダをクリックして、プロジェクトの追加のパラメータを表示します。 デフォルト値は AEM プロジェクトアーキタイプによって指定され、通常は変更する必要はありません。
+1. オプションで、分割部分をクリックしてプロジェクトのその他のパラメーターを表示します。デフォルト値は AEM プロジェクトアーキタイプによって指定され、通常は変更する必要はありません。
 
    ![追加のプロジェクトパラメーター](assets/create-wizard5.png)
 

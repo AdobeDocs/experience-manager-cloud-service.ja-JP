@@ -2,7 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 リリースのリリースノート。'
 description: 「[!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 のリリースノート」
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 87%
@@ -54,14 +56,14 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 * PDF レンディションには、InDesign テンプレートの最後のページのみが含まれます。（CQ-4317305）
 * ピッカーが複雑なメタデータスキーマに含まれている場合、タグピッカーが開くのに時間がかかります。（CQ-4316426）
 * 既存のファイル名と同じファイル名を持つアセットをアップロードする場合、名前の競合ダイアログが表示されず、バージョンを作成するように求められます。（CQ-4315424）
-* フォルダーメタデータプロパティは、フォルダーのプロパティページのポップアップメニューで設定および保存できます。 選択内容はリポジトリに保存されている間、フォルダーメタデータプロパティを再度開いても表示されません。（CQ-4314429）
+* フォルダーメタデータのプロパティは、フォルダーのプロパティページのポップアップメニューから設定および保存できます。 選択内容はリポジトリに保存されている間、フォルダーメタデータプロパティを再度開いても表示されません。（CQ-4314429）
 * スペースや特殊文字を含むファイル名を持つアセットは、ブラウザーを使用してアップロードされます。（CQ-4318381）
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 AEM Forms は、長年にわたって、優れたオンボーディングと登録のエクスペリエンスの提供で、多くの組織を支援してきました。これらのエクスペリエンスは、組織がリードを売上にコンバージョンしたり、取得した顧客データを処理したり、オーディエンスプロファイルに基づいてレスポンシブなエクスペリエンスを提供するのに役立っています。現在、AEM Forms はクラウドサービスとして提供されています。
 
-[AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html?lang=ja) を使用して、デジタルフォームを作成したり、フォームを既存のデータソースに接続したり、フォームを Adobe Sign と統合して電子サインをフォームに追加したり、送信されたフォームを PDF ファイルとしてアーカイブするためにレコードのドキュメント（DoR）を生成したりできます。また、既存の PDF フォームをデジタルフォームに変換することもできます。このサービスは、AEM Formsの標準的な機能に加えて、自動スケーリング、アップグレードのダウンタイムなし、クラウドネイティブ開発環境など、いくつかのクラウドネイティブ機能を提供します。
+[AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html?lang=ja) を使用して、デジタルフォームを作成したり、フォームを既存のデータソースに接続したり、フォームを Adobe Sign と統合して電子サインをフォームに追加したり、送信されたフォームを PDF ファイルとしてアーカイブするためにレコードのドキュメント（DoR）を生成したりできます。また、既存の PDF フォームをデジタルフォームに変換することもできます。このサービスは、AEM Formsの標準的な機能に加えて、自動スケーリング、アップグレードのダウンタイムゼロ、クラウドネイティブ開発環境など、いくつかのクラウドネイティブ機能を提供します。
 
 デモが必要な場合は、アドビ担当者に問い合わせるか、サービスに登録してください。
 
@@ -73,9 +75,9 @@ AEM Forms は、長年にわたって、優れたオンボーディングと登�
 
 * 製品の詳細コンポーネントを任意のコンテンツページで使用および設定できるようになりました。
 
-* 最新のCIFコアコンポーネントバージョン v1.9.0 を含むCIF Venia リファレンスサイト2021.03.25をリリースしました。詳しくは、 [CIF Venia リファレンスサイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) を参照してください。
+* 最新のCIF コアコンポーネント v1.9.0 を含んだCIF Venia 参照サイト 2021.03.25 をリリースしました。参照： [CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) を参照してください。
 
-* CIF Core Components v1.9.0 がリリースされました。詳しくは、 [CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) を参照してください。
+* CIF コアコンポーネント v1.9.0 をリリースしました。参照： [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) を参照してください。
 
 
 ## Cloud Manager {#cloud-manager}
@@ -89,11 +91,11 @@ AEM as a Cloud Service 2021.3.0 の Cloud Manager のリリース日は 2021 年
 
 ### 新機能 {#what-is-new-march}
 
-* の既存のカスタムドメイン名設定を使用する環境のお客様 [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL 証明書](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) および [カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 以前の既存の設定に関するメッセージが表示され、ユーザーインターフェイスを介してセルフサービスできます。
+* 次のカスタムドメイン名が既に存在する環境のお客様： [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL 証明書](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) および [カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 以前の既存設定に関するメッセージを確認し、ユーザーインターフェイスを介してセルフサービス方式で操作できます。
 
 * 必要な権限を持つユーザーがプログラムを編集して、セルフサービス方式で以下を行えるようになりました。
 
-   * Assets または反対に、Sites ソリューションを Assets を使用する既存のプログラムに追加します。
+   * Assets を使用している既存のプログラムに Sites サイトソリューションを追加する（またはその逆の場合）。
    * Sites と Assets の両方を使用している既存のプログラムから Sites または Assets を削除する。
    * 使用されていない 2 つ目のソリューション使用権限を既存のプログラムに追加するか、新しいプログラムとして追加する。
 
@@ -160,19 +162,19 @@ AEM as a Cloud Service 2021.3.0 の Cloud Manager のリリース日は 2021 年
 
 ### ベストプラクティスアナライザーの新機能 {#what-is-new-bpa}
 
-* ユーザーインターフェイスの BPA レポートと CSV ファイルとして書き出されたレポートから、ACS Commons の結果を除外する機能。
+* ユーザーインターフェイスの BPA レポートと、CSV ファイルとして書き出されたレポートから、ACS Commons の結果を除外する機能。
 
 ## コードリファクタリングツール {#code-refactoring-tools}
 
 ### コードリファクタリングツールの新機能 {#what-is-new-crt}
 
-* Repository Modernizer の新機能と機能強化は次のとおりです。詳しくは、 [GitHub リソース：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。
+* Repository Modernizer の新機能と機能強化は次のとおりです。参照： [GitHub リソース：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。
    * OSGi 設定（repoinit 設定を除く）を、推奨の .cfg.json 形式に正規化します。
    * OSGi 設定フォルダーの名前を指定の形式に変更します。
    * ui.apps.structure プロジェクトを生成します。
    * 分析モジュールを作成します。
 
-* Dispatcher コンバーターの新機能と機能強化は次のとおりです。詳しくは、 [GitHub リソース：Dispatcher コンバーター](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
+* Dispatcher コンバーターの新機能と機能強化は次のとおりです。参照： [GitHub リソース：Dispatcher コンバーター](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
    * 異なるインクルージョンに対して、コンテンツをインライン化するのではなく別個のファイルを作成します。
    * vhosts のフォルダーパスと vhost ファイルのパスを両方とも処理できます。
    * 600 件以上の大規模な顧客設定を持つファームファイルを生成できます。

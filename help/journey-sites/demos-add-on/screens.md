@@ -2,10 +2,12 @@
 title: デモサイトで AEM Screens を有効にする
 description: デモサイトで AEM Screens as a Cloud Service の完全なエクスペリエンスを有効にする手順を説明します。
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 93%
+source-wordcount: '2654'
+ht-degree: 100%
 
 ---
 
@@ -100,9 +102,9 @@ We.Cafe デモサイトをまだ作成していない場合は、[デモサイ�
 
 ![We.Cafe コンテンツ](assets/wecafe-content.png)
 
-We.Cafe デモコンテンツが用意されたので、AEM Screensのテスト方法を選択できます。
+We.Cafe デモコンテンツが用意できたので、AEM Screens のテスト方法を選択します。
 
-* AEM Sitesコンソール内のコンテンツのみを参照したい場合は、次の URL から詳細を参照および確認します。 [その他のリソース](#additional-resources) セクション！ これ以上のアクションは必要ありません。
+* AEM Sites コンソール内のコンテンツのみを参照する場合は、「[その他のリソース](#additional-resources)」セクションで詳細を参照および確認します。これ以上のアクションは必要ありません。
 * AEM Screens のすべての動的機能を体験したい場合は、次の節 [Screens コンテンツの動的な変更](#dynamically-change)に進みます。
 
 ## Screens コンテンツの動的な変更 {#dynamically-change}
@@ -145,7 +147,7 @@ AEM Sites と同様に、AEM Screens もコンテキストに基づいて動的�
 
 API キーを使用して Google Sheets のデータを交換できるようにするには、Google Sheets API を有効にする必要があります。
 
-1. Google Cloud Console( ) に戻ります。 `https://console.cloud.google.com` プロジェクトの次にハンバーガーメニューを使用して **API とサービス/ライブラリ**.
+1. Google Cloud Console（`https://console.cloud.google.com`）のプロジェクトに戻り、ハンバーガーメニューを使用して、**API とサービス／ライブラリ**&#x200B;を選択します。
 
    ![API ライブラリ](assets/api-library.png)
 
@@ -221,9 +223,9 @@ AEM Screens は、コンテキストに基づいて動的にコンテンツを�
 
 デモ用に、シートの値を変更できます。ContextHub はこの事実を認識し、更新された温度に応じてチャネル内でコンテンツを調整します。
 
-1. AEMaaCS オーサーインスタンスで、に移動します。 **グローバルナビゲーション/ツール/サイト/ ContextHub**.
+1. AEMaaCS オーサーインスタンスで、**グローバルナビゲーション／ツール／Sites／ContextHub** に移動します。
 1. **We.Cafe web サイトテンプレート**&#x200B;から Screens プロジェクトを作成した際に付けた名前と同じ名前の設定コンテナを選択します。
-1. 選択 **設定/ ContextHub 設定/Googleシート** 次に、「 **次へ** 右上に
+1. **設定／ContextHub 設定／Google Sheets** を選択し、右上の「**次へ**」をクリックします。
 1. 設定には、既に JSON データが設定されている必要があります。次の 2 つの値を変更する必要があります。
    1. `[your Google Sheets id]` と、[以前に保存した](#create-spreadsheet)シート ID を置き換えます。
    1. `[your Google API Key]` と、[以前に保存した](#create-api-key) API キーを置き換えます。
@@ -236,7 +238,7 @@ AEM Screens は、コンテキストに基づいて動的にコンテンツを�
 AEM Screens と ContextHub が天気予報サービスに接続されたので、Screens がコンテンツを動的に更新する方法をテストして確認できます。
 
 1. サンドボックスオーサーインスタンスにアクセスします。
-1. 経由でサイトコンソールに移動します。 **グローバルナビゲーション/サイト** をクリックし、次のページを選択します。 **スクリーン > &lt;project-name> /チャネル/入口の朝（縦長）**.
+1. **グローバルナビゲーション／Sites** からサイトコンソールに移動し、以下のページ **Screens／&lt;project-name>／チャネル／エントランス朝（縦）**&#x200B;を選択します。
 
    ![デモプロジェクトのコンテンツを選択](assets/project-content.png)
 
@@ -325,7 +327,7 @@ AEMaaCS のチャネルエディターで簡単にデモをプレビューでき
 
    ![Screens 組織を確認する](assets/screens-org.png)
 
-1. 左側のパネルで、 **プレーヤー管理/登録コード** 次に、「 **コードの作成** をクリックします。
+1. 左側のパネルで、**プレーヤー管理／登録コード**&#x200B;をクリックし、次に、画面右上の「**コードを作成**」をクリックします。
 
 ![登録コード](assets/registration-codes.png)
 
@@ -360,7 +362,7 @@ AEMaaCS のチャネルエディターで簡単にデモをプレビューでき
 
    ![Screens 組織を確認する](assets/screens-org.png)
 
-1. 左側のパネルで、 **プレーヤー管理/プレーヤー** 以前にインストールして登録したプレーヤーが表示されます。
+1. 左側のパネルで、**プレーヤー管理／プレーヤー**&#x200B;をクリックすると、以前にインストールして登録したプレーヤーが表示されます。
 
    ![プレーヤー](assets/players.png)
 
@@ -388,7 +390,7 @@ Player にディスプレイを割り当てると、AEM Screens as a Cloud Servi
 * We.Cafe デモコンテンツの理解。
 * We.Cafe 用の AEM Screens の設定方法。
 
-これで、独自のデモサイトを使用して AEM Screens の機能を試す準備が整いました。ジャーニーの次の節に進みます。 [デモサイトの管理、](manage.md) ここでは、デモサイトの管理と削除方法に役立つツールについて説明します。
+これで、独自のデモサイトを使用して AEM Screens の機能を試す準備が整いました。続いてジャーニーの次の節、[デモサイトの管理](manage.md)に進んで、デモサイトの管理に役立つツールと、デモサイトを削除する方法を学びます。
 
 また、このジャーニーで説明した機能について詳しくは、[その他のリソース](#additional-resources)の節で紹介しているその他のリソースを参照してください。
 

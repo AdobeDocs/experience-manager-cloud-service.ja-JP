@@ -2,10 +2,13 @@
 title: サイトテーマのカスタマイズ
 description: サイトテーマの作成方法、カスタマイズ方法、および AEM のライブコンテンツを使用したテスト方法を説明します。
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 94%
+source-wordcount: '954'
+ht-degree: 100%
 
 ---
 
@@ -64,7 +67,7 @@ AEM 管理者が提供するテーマを編集場所に抽出し、目的のエ�
 
    ![npm run live](assets/npm-run-live.png)
 
-1. プロキシサーバーが起動すると、`http://localhost:7001/` へのブラウザーが自動的に開きます。選択 **ローカルでログイン（管理者タスクのみ）** をクリックし、AEM管理者から提供されたプロキシユーザーの資格情報を使用してサインオンします。
+1. プロキシサーバーが起動すると、`http://localhost:7001/` へのブラウザーが自動的に開きます。「**ローカルでログイン（管理者タスクのみ）**」を選択し、AEM 管理者から提供されたプロキシユーザーの資格情報を使用してサインオンします。
 
    ![ローカルでログイン](assets/sign-in-locally.png)
 
@@ -135,7 +138,7 @@ AEM 管理者から提供された要件に基づいて、テーマのカスタ�
 * ローカルプロキシを介して実際の AEM コンテンツを使用してテーマのカスタマイズをテストする方法を参照する。
 * 変更を AEM Git リポジトリにコミットする方法を理解する。
 
-この知識に基づいてドキュメントを次に確認し、AEMクイックサイト作成のジャーニーを続行します。 [カスタマイズしたテーマをデプロイする](deploy-theme.md) フロントエンドパイプラインを使用したテーマのデプロイ方法を学ぶ場所です。
+この知識に基づき、次は[カスタマイズしたテーマのデプロイ](deploy-theme.md)のドキュメントを確認して、AEM クイックサイト作成ジャーニーを続行してください。そこでは、フロントエンドパイプラインを使用したテーマのデプロイ方法について説明します。
 
 ## その他のリソース {#additional-resources}
 

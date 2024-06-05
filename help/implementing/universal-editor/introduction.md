@@ -2,10 +2,12 @@
 title: ユニバーサルエディターの概要
 description: ユニバーサルエディターを使用して、ヘッドレスおよびヘッドフルエクスペリエンスを見たとおりに編集できる（WYSIWYG）仕組みを説明します。コンテンツ作成者がどのように優れたエクスペリエンスを提供し、コンテンツベロシティを向上し、最新のデベロッパーエクスペリエンスを提供できるのかを理解します。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '973'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -92,4 +94,4 @@ ht-degree: 96%
 
 ## 次の手順 {#next-steps}
 
-ドキュメントを参照してください [ユニバーサルエディターのユースケースと学習パス](/help/implementing/universal-editor/use-cases.md) ユニバーサルエディターの一般的なユースケースの詳細と、プロジェクトをサポートする適切なドキュメントリソースの確認。
+ユニバーサルエディターの一般的なユースケースの詳細と、プロジェクトをサポートする適切なドキュメントリソースを見つけるには、[ユニバーサルエディターのユースケースと学習パス](/help/implementing/universal-editor/use-cases.md)のドキュメントを参照してください。

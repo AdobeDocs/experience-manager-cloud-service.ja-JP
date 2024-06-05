@@ -2,7 +2,9 @@
 title: バリエーションを生成するためのリリースノート
 description: AEMas a Cloud Serviceからアクセスできる、Generate Variations のリリースノートとEdge Delivery ServicesのSidekick
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
-source-git-commit: 92b11666a0e5a52f633416090b2bb51bf059c70b
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 11%

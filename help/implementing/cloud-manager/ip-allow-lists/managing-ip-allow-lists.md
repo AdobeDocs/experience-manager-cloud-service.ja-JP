@@ -2,8 +2,11 @@
 title: IP 許可リストの管理
 description: Cloud Manager で IP 許可リストのステータスを表示、編集、削除および確認する方法について説明します。
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
-source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 100%
 

@@ -2,10 +2,12 @@
 title: コンテンツ転送の検証
 description: コンテンツ転送ツールを使用してコンテンツ転送を検証します
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 89%
+source-wordcount: '1074'
+ht-degree: 100%
 
 ---
 
@@ -13,7 +15,7 @@ ht-degree: 89%
 
 ## はじめに {#getting-started}
 
-ユーザーは、コンテンツ転送ツールで抽出されたすべてのコンテンツがターゲットインスタンスに正常に取り込まれたかどうかを確実に判断できます。 この検証機能は、抽出中に関与したすべてのノードのパスのダイジェストと、取り込み中に関与したすべてのノードのパスのダイジェストを比較することによって機能します。抽出ダイジェストに含まれているノードパスが取り込みダイジェストにない場合、検証は失敗したと見なされ、追加の手動検証が必要になる可能性があります。
+コンテンツ転送ツールで抽出されたすべてのコンテンツが、ターゲットインスタンスに正常に取り込まれたかどうかをユーザーが確実に判断できます。この検証機能は、抽出中に関与したすべてのノードのパスのダイジェストと、取り込み中に関与したすべてのノードのパスのダイジェストを比較することによって機能します。抽出ダイジェストに含まれているノードパスが取り込みダイジェストにない場合、検証は失敗したと見なされ、追加の手動検証が必要になる可能性があります。
 
 >[!INFO]
 >
@@ -101,7 +103,7 @@ Migration validation took 33 minutes
 
 抽出ダイジェストに存在していて取り込みダイジェストに見つからないエントリはないので、これは成功した検証の例になります。
 
-比較すると、検証が失敗した（または追加移行が実行された）場合に、検証レポートは次のように表示されます。
+比較すると、検証が失敗した（または追加移行が実行された）場合の検証レポートは次のように表示されます。
 
 ```
 Beginning publish migration validation. Migration job id=[ac217e5a-a08d-4e81-cbd6-f39f88b174ce]
@@ -127,7 +129,7 @@ Migration validation took 0 minutes
 
 上記の失敗例は、取り込みを実行したあと、取り込み時にノードが関係しないように、ワイプを無効にして同じ取り込みを再度実行することで得られたものです。すべてのノードが既にターゲット上に存在していたケースです。
 
-検証レポートは、取り込みログに含まれるだけでなく、Cloud Acceleration Manager の&#x200B;**取り込みジョブ**&#x200B;ユーザーインターフェイスからアクセスすることも可能です。それには、「**...**) をクリックし、 **検証レポート** をクリックして、検証レポートを表示します。
+検証レポートは、取り込みログに含まれるだけでなく、Cloud Acceleration Manager の&#x200B;**取り込みジョブ**&#x200B;ユーザーインターフェイスからアクセスすることも可能です。これを行うには、3 つのドット（**...**）をクリックし、ドロップダウンで「**検証レポート**」をクリックして検証レポートを表示します。
 
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
@@ -138,11 +140,11 @@ Migration validation took 0 minutes
 
 抽出と取り込みが正常に完了すると、プリンシパルの移行の概要とレポートが使用可能になります。この情報を使用して、どのユーザーとグループが正常に移行されたかを検証し、一部のユーザーとグループが正常に移行されなかった理由を判断することもできます。
 
-この情報を表示するには、Cloud Acceleration Manager に移動します。プロジェクトカードをクリックし、コンテンツ転送カードをクリックします。**取り込みジョブ**&#x200B;に移動し、検証する取り込みを見つけます。3 つのドット (**...**) をクリックし、 **プリンシパルの概要を表示** 」と入力します。
+この情報を表示するには、Cloud Acceleration Manager に移動します。プロジェクトカードをクリックし、コンテンツ転送カードをクリックします。**取り込みジョブ**&#x200B;に移動し、検証する取り込みを見つけます。その取り込みの 3 つのドット（**...**）をクリックし、ドロップダウンで「**プリンシパルの概要を表示**」をクリックします。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-概要情報を含むダイアログが表示されます。 ヘルプアイコンを使用して、詳細な説明を参照します。「**レポートをダウンロード**」ボタンをクリックして、完全なコンマ区切り（CSV）レポートをダウンロードします。
+概要情報を含むダイアログが表示されます。ヘルプアイコンを使用して、詳細な説明を参照します。「**レポートをダウンロード**」ボタンをクリックして、完全なコンマ区切り（CSV）レポートをダウンロードします。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
@@ -164,6 +166,6 @@ Migration validation took 0 minutes
 
 現在ダイジェストから除外されているパスには、`cqdam.text.txt` レンディション、`/home` 内のノード、`/jcr:system` 内のノードなどがあります。
 
-### 閉じられたユーザーグループが機能していません {#validating-cugs}
+### クローズドユーザーグループが機能していない {#validating-cugs}
 
-詳しくは、 [閉じられたユーザーグループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) を参照してください。
+クローズドユーザーグループ（CUG）ポリシーを使用する際のその他の考慮事項について詳しくは、[クローズドユーザーグループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)を参照してください。

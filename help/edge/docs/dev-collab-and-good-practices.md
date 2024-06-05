@@ -3,8 +3,9 @@ description: 多くのプロジェクトや組織で多数の開発チームと�
 title: 開発のコラボレーションとベストプラクティス
 feature: Edge Delivery Services
 exl-id: e7f9b0f7-d22f-44ec-b8b7-85daa34de2a0
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 100%
 

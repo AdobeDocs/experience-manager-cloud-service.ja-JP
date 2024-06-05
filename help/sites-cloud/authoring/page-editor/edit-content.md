@@ -2,8 +2,11 @@
 title: AEM ページエディターを使用したページコンテンツの編集
 description: AEM ページエディターは、コンテンツをオーサリングするための強力なツールです。
 exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1612'
 ht-degree: 100%
 

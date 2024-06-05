@@ -2,10 +2,13 @@
 title: DNS レコードのステータスの確認
 description: Cloud Manager を使用して、DNS 設定が正しく解決されているかどうかを判断する方法について説明します。
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 96%
+source-wordcount: '248'
+ht-degree: 100%
 
 ---
 
@@ -15,9 +18,9 @@ Cloud Manager 内では、お使いのドメイン名が AEM as a Cloud Service 
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. **概要**&#x200B;ページの&#x200B;**環境**&#x200B;画面に移動します。
+1. **概要**&#x200B;ページから&#x200B;**環境**&#x200B;画面に移動します。
 
-1. クリック **ドメイン設定** （左側のナビゲーションパネル）
+1. 左側のナビゲーションパネルで「**ドメイン設定**」をクリックします。
 
 1. ドメイン名の「**ステータス**」アイコンをクリックします。
 

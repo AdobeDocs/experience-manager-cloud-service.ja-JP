@@ -2,9 +2,11 @@
 title: コンテンツ変換サービスの概要
 description: コンテンツ変換サービスを使用して BPA で報告される、コンテンツ関連の問題を検出および修正する方法について説明します。
 exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
-workflow-type: ht
-source-wordcount: '388'
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
+source-wordcount: '383'
 ht-degree: 100%
 
 ---

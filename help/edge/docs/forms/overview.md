@@ -3,10 +3,11 @@ title: AEM Forms Edge Delivery Services の概要
 description: AEM Forms Edge Delivery Services は、ピーク時のパフォーマンスを実現するように作成されており、効率化されたデータ収集とユーザーエンゲージメントの今後を思い描くことができます。
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1018'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +74,7 @@ AEM オーサリングには、フォームを作成する WYSIWYG インター�
 * 電子署名を行う Adobe Sign との統合。
 * フォーム送信時に Adobe Workfront Fusion シナリオをトリガーする Adobe Workfront Fusion との統合。
 * フォームの事前入力とデータの送信の様々なデータソースとの統合。
-* データ構造と様々なデータソースとのインタラクションを定義するためのフォームデータモデル（FDM）です。
+* 様々なデータソースとのインタラクションとデータ構造を定義するフォームデータモデル（FDM）。
 * Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics、その他多くのデータソースへのデータ送信を含む、フォーム送信を処理する複数の送信アクションから選択する機能。
 
 基本的に、[AEM オーサリング](/help/forms/creating-adaptive-form-core-components.md)は、[ドキュメントベースのオーサリング](/help/edge/docs/forms/create-forms.md)の基盤の上に作成されており、複雑なフォームの作成および管理を行うより高度なツールキットを提供します。
@@ -98,7 +99,7 @@ AEM オーサリングには、フォームを作成する WYSIWYG インター�
 * [データの受け入れを開始するための Google Sheets または Microsoft Excel ファイルの設定](/help/edge/docs/forms/submit-forms.md)
 * [フォームを公開してデータの収集を開始](/help/edge/docs/forms/publish-forms.md)
 * [フォームの外観のカスタマイズ](/help/edge/docs/forms/style-theme-forms.md)
-* [フォームへの繰り返し可能なセクションの追加](/help/edge/docs/forms/repeatable-forms.md)
+* [繰り返し可能なセクションをフォームに追加する](/help/edge/docs/forms/repeatable-forms.md)
 * [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
 * [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
 * [リアルタイムユーザーモニタリング](https://www.aem.live/developer/rum#authentication)

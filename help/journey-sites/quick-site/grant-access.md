@@ -2,10 +2,13 @@
 title: フロントエンド開発者へのアクセス権の付与
 description: フロントエンド開発者を Cloud Manager にオンボーディングして、AEM サイトの Git リポジトリとパイプラインにアクセスできるようにします。
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 91%
+source-wordcount: '776'
+ht-degree: 100%
 
 ---
 
@@ -65,7 +68,7 @@ Cloud Manager へのアクセス権を付与し、ユーザーにユーザーの
 
    ![製品プロファイル](assets/product-profiles.png)
 
-1. 正しいプロファイルにフロントエンド開発者を割り当てるには、 **ユーザー** タブ、 **ユーザーを追加** 」ボタンをクリックします。
+1. フロントエンド開発者を正しいプロファイルに割り当てるには、「**ユーザー**」タブ、「**ユーザーを追加**」ボタンを選択します。
 
    ![ユーザーを追加](assets/add-user.png)
 
@@ -73,11 +76,11 @@ Cloud Manager へのアクセス権を付与し、ユーザーにユーザーの
 
    ![チームにユーザーを追加](assets/add-to-team.png)
 
-1. Adobe Analytics の **製品** 「 」を選択し、プラス記号を選択して、「 」を選択します。 **Adobe Experience Manager as a Cloud Service** をクリックし、 **デプロイメントマネージャー** および **開発者** 製品プロファイルをユーザーに割り当てます。
+1. 「**製品**」の選択で、「+」記号を選択し、**Adobe Experience Manager as a Cloud Service** を選択して、**デプロイメントマネージャー**&#x200B;と&#x200B;**開発者**&#x200B;の製品プロファイルをユーザーに割り当てます。
 
-   ![チームプロファイルの割り当て](assets/assign-team.png)
+   ![チームプロファイルを割り当て](assets/assign-team.png)
 
-1. 選択 **保存** お知らせメールが、ユーザーとして追加したフロントエンド開発者に送信されます。
+1. 「**保存**」を選択すると、「ようこそ」メールが、ユーザーとして追加したフロントエンド開発者に送信されます。
 
 招待されたフロンドエンド開発者は、ウェルカムメールに記載されているリンクをクリックし、Adobe ID を使用してログインすることで、Cloud Manager にアクセスできます。
 

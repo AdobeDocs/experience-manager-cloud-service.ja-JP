@@ -1,11 +1,13 @@
 ---
 title: Repository Modernizer
-description: 既存のプロジェクトパッケージを再構築し、Adobe Experience Manager as a Cloud Service用に定義されたプロジェクト構造と互換性を持たせる方法を説明します。
+description: 既存のプロジェクトパッケージを再構築し、Adobe Experience Manager as a Cloud Service 用に定義されたプロジェクト構造と互換性を持たせる方法を説明します。
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 83%
+source-wordcount: '304'
+ht-degree: 100%
 
 ---
 
@@ -32,7 +34,7 @@ Repository Modenizer は、次のデプロイメント構造を作成するこ�
 
 >[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
-* Adobe I/Oによる CLI :Adobeでは、 `aio-cli-plugin-aem-cloud-service-migration` (Adobe I/OCLI 用のAEMas a Cloud Serviceコードリファクタリングプラグイン )。
+* Adobe I/O CLI 経由：`aio-cli-plugin-aem-cloud-service-migration`（AEM as a Cloud Service の Adobe I/O CLI 用のコードリファクタリングプラグイン）を介して Repository Modenizer を使用することをお勧めします。
 
   プラグインをインストールして使用する方法について詳しくは、**[Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** を参照してください。
 

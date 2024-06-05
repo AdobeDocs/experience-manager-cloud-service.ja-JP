@@ -2,16 +2,18 @@
 title: AEM as a Cloud Service の用語
 description: AEMaaCS にログインする前に、システムの用語と基本構造を理解しておくと役に立ちます。
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 # AEM as a Cloud Service の用語 {#terminology}
 
-この部分では、 [オンボーディングジャーニー](overview.md) AEM as a Cloud Serviceの用語とその基本的な構造について学びます。
+[オンボーディングジャーニー](overview.md)のこの部分では、AEM as a Cloud Service の用語と基本構造を説明します。
 
 ## 目的 {#objective}
 
@@ -19,7 +21,7 @@ ht-degree: 81%
 
 AEM as a Cloud Service は強力かつ柔軟なツールです。どのようなツールであれ、使用するには、ツールの構成とツールの説明に使用される用語および言語を理解しておく必要があります。このドキュメントでは、システムの使用を開始する前に理解しておく必要がある主な用語をまとめています。
 
-このドキュメントを読んだ後、
+このドキュメントを読むと、次の点を理解できるようになります。
 
 * AEMaaCS を構成する様々なレイヤー
 * 各レイヤーの基本的機能
@@ -44,7 +46,7 @@ AEM as a Cloud Service は強力かつ柔軟なツールです。どのような
    * WKND Media 部門用の 1 つの Assets プログラム
 * WKND Magazine プログラムにも WKND Media プログラムにも、開発、ステージングおよび実稼動の各&#x200B;**環境**&#x200B;があります。
 * **リポジトリ** は、WKND Magazine と WKND Media のカスタムコードおよびアプリケーションを維持管理するために使用されます。
-* 様々 **ツールとワークフロー** リポジトリをまたいで、CI/CD パイプライン、アクセスログ、AEMなどを使用してコードをデプロイします。
+* 様々な&#x200B;**ツールとワークフロー**&#x200B;がリポジトリ全体で機能して、CI／CD パイプラインを使用したコードのデプロイ、ログへのアクセス、AEM へのアクセスなどを行います。
 
 ## 次の手順 {#what-is-next}
 
@@ -53,4 +55,4 @@ AEM as a Cloud Service は強力かつ柔軟なツールです。どのような
 * AEMaaCS を構成する様々なレイヤー
 * 各レイヤーの基本的機能
 
-この知識に基づいて構築し、次のドキュメントを読んで、AEMオンボーディングジャーニーを継続します。 [Admin Consoleへのアクセス](admin-console.md)コンソールにアクセスする方法、およびシステム管理者としてのステータスを確認する方法を説明します。
+この知識を踏まえて、[Admin Console へのアクセス](admin-console.md)のドキュメントを次に参照しながら、AEM オンボーディングジャーニーを続けてください。このドキュメントでは、コンソールにアクセスしてシステム管理者としてのステータスを確認する方法について説明します。

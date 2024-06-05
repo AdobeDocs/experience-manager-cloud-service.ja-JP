@@ -2,10 +2,13 @@
 title: エンタープライズ開発チームのセットアップ
 description: エンタープライズ開発チームをセットアップして拡張する方法と、AEM as a Cloud Service が開発プロセスをサポートする方法について説明します。
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1437'
-ht-degree: 95%
+source-wordcount: '1423'
+ht-degree: 100%
 
 ---
 
@@ -41,7 +44,7 @@ Cloud Manager は、企業のニーズに合わせて調整できる、柔軟な
 
 各企業には、チームの設定、プロセス、開発ワークフローなどで、異なる設定や要件があります。以下で説明する設定は、アドビが AEM as a Cloud Service をベースにエクスペリエンスを提供するいくつかのプロジェクトで使用されています。
 
-例えば、Adobe Photoshop や Adobe Illustrator などの Adobe Creative Cloud アプリケーションには、エンドユーザーが使用できるチュートリアル、例、ガイドなどのコンテンツリソースが含まれています。このコンテンツは、AEM Cloud のパブリッシュ層に対して API 呼び出しを実行して構造化コンテンツを JSON ストリームとして取得し、 [AEM as a Cloud Serviceのコンテンツ配信ネットワーク (CDN)](/help/implementing/dispatcher/cdn.md#content-delivery) 構造化コンテンツと非構造化コンテンツの両方を最適なパフォーマンスで提供する。
+例えば、Adobe Photoshop や Adobe Illustrator などの Adobe Creative Cloud アプリケーションには、エンドユーザーが使用できるチュートリアル、例、ガイドなどのコンテンツリソースが含まれています。こうしたコンテンツは、AEM as a Cloud Service を使用するクライアントアプリケーションによってヘッドレスで消費されます。AEM Cloud のパブリッシュ層に API 呼び出しを実行して構造化されたコンテンツを JSON ストリームとして取得し、AEM as a Cloud Service の[コンテンツ配信ネットワーク（CDN）](/help/implementing/dispatcher/cdn.md#content-delivery)を使用することで、構造化コンテンツと非構造化コンテンツの両方を最適なパフォーマンスで提供します。
 
 このプロジェクトに貢献するチームは、次のプロセスに従います。
 

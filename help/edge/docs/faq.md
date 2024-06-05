@@ -3,8 +3,9 @@ description: '[image0]: https://www.aem.live/media_1eae7d48a2a73903d8c880cb8cf2d
 title: よくある質問
 feature: Edge Delivery Services
 exl-id: 1fd0f7a2-dcc8-4600-8353-7750ed6a2937
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '8'
 ht-degree: 100%
 

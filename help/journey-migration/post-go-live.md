@@ -2,7 +2,9 @@
 title: 運用開始後
 description: 問題を監視し、パフォーマンスを向上させる方法を説明します
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 100%

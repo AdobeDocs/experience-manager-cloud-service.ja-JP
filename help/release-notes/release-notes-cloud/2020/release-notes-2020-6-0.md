@@ -2,9 +2,11 @@
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 のリリースノート
 description: 「[!DNL Adobe Experience Manager] as a Cloud Service 2020.6.0 のリリースノート」
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1939'
 ht-degree: 95%
 
 ---
@@ -48,9 +50,9 @@ AEM as a Cloud Service リリース 2020.6.0 の AEM Sites の新機能と更新
 
 ## AEM as a Cloud Service の基盤における新機能 {#foundations}
 
-AEMプロジェクトの pom.xml 内のリモートリポジトリへの参照をすべて削除することで、AEMプロジェクトのビルド時間が短縮されます。 `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+AEM プロジェクトの pom.xml 内のリモートリポジトリへの参照をすべて削除することで、AEM プロジェクトのビルド時間が短縮されます `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
-以前はこの場所でホストされていたAEMas a Cloud ServiceSDK API Jar は、Maven のデフォルトのアーティファクトリポジトリである Maven Central に配置されています。
+以前その場所でホストされていたAEMas a Cloud ServiceSDK API Jar は、Maven のデフォルトのアーティファクトリポジトリである Maven Central に配置されています。
 
 ## Cloud Manager の新機能 {#cloud-manager}
 
@@ -84,11 +86,11 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 * ビルドログに、スキップされたコンテンツパッケージを含む、検出されたアーティファクトのリストが含まれるようになりました。
 
-* ビルド手順で、生成されるすべてのコンテンツパッケージに、名前、グループ、バージョンのすべての必須プロパティが含まれているかを検証できるようになりました。
+* ビルド手順で、生成されたすべてのコンテンツパッケージに、名前、グループ、バージョンなどのすべての必須プロパティが含まれていることを検証するようになりました。
 
 * ビルド手順で、ビルドで少なくとも 1 つのコンテンツパッケージが生成されたかどうかを検証できるようになりました。
 
-### バグ修正 {#bug-fixes-cm}
+### バグの修正 {#bug-fixes-cm}
 
 * 特定の状況で、**プログラムを作成**&#x200B;ダイアログボックスのアイコンの表示がずれていました。
 
@@ -176,7 +178,7 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 * アセット処理プロファイルを使用してアセットを再処理し、プロセスをフルコントロールできる機能（フルアセット処理を実行し、特定の処理プロファイルのみを適用して後処理ワークフローを実行するかどうかを決定できる）。
 * 基になるクラスターインスタンスがバックグラウンドで再起動された場合に、検索クエリがより高速に結果を返すようになりました（以前は、初期検索の実行が長時間続くことがありました）。
 * Assets インターフェイスのリスト表示および検索結果で表示されるアセットを「名前」で並べ替えました。[アセットの検索](/help/assets/search-assets.md#sort)を参照してください。
-* Assets インターフェイスのリスト表示および検索結果で表示されるアセットを「作成日」（日付）で並べ替えました。 [アセットの検索](/help/assets/search-assets.md#sort)を参照してください。
+* Assets インターフェイスのリスト表示および検索結果でアセットを表示する際に、「作成日」で並べ替えます。 [アセットの検索](/help/assets/search-assets.md#sort)を参照してください。
 * アセットマイクロサービスを使用した EPS ファイルの画像への変換をサポート。
 
 ### バグ修正 {#assets-bug-fixes}

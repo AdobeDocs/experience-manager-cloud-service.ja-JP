@@ -2,8 +2,11 @@
 title: 取り消しとやり直しの制限事項
 description: AEM ページエディターの取り消しとやり直しオプションの制限事項について説明します。
 exl-id: 87773f47-5116-4966-9ba4-5deedb7c4fa6
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 100%
 

@@ -2,8 +2,11 @@
 title: ローンチの編集
 description: ページ（またはページのセット）のローンチを作成した後で、ページのローンチコピーのコンテンツを編集できます。
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 100%
 

@@ -2,7 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 リリースのリリースノート。'
 description: 「[!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 のリリースノート」
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 92%
@@ -56,7 +58,7 @@ ht-degree: 92%
 
 * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] には、事前設定済みの [!DNL Brand Portal] インスタンスが用意されています。[!DNL Cloud Manager] ユーザーは、[!DNL Experience Manager Assets] as a [!DNL Cloud Service] 上で [!DNL Brand Portal] をアクティブ化できます。[Brand Portal のライセンス認証](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ja)を参照してください。
 
-* 企業が [!DNL Brand Portal] を使用してアセットソーシングを行えるようになりました。アセットソーシング機能では、 [!DNL Brand Portal] を使用すれば、代理店ユーザーとの関わり合いを助け、新しいマーケティングキャンペーン、撮影、プロジェクト用にアセットをソースすることができます。 詳しくは、[ [!DNL Brand Portal] でのアセットソーシング](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja)を参照してください。
+* 企業が [!DNL Brand Portal] を使用してアセットソーシングを行えるようになりました。アセットソーシング機能での使用 [!DNL Brand Portal] を使用して顧客とエージェンシーユーザーの連携を支援し、顧客が新しいマーケティングキャンペーン、撮影、プロジェクトのためのアセットソーシングをおこなえるようにします。 詳しくは、[ [!DNL Brand Portal] でのアセットソーシング](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja)を参照してください。
 
 * [!DNL Brand Portal] 使用状況レポートには、アクティブユーザーのみ表示されるようになりました。非アクティブユーザーは表示されなくなりました。アクティブユーザーとは、[!DNL Admin Console] で製品プロファイルにアカウントが割り当てられているユーザーのことです。詳しくは、[[!DNL Brand Portal] レポート](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html?lang=ja)を参照してください。
 
@@ -77,9 +79,9 @@ ht-degree: 92%
 
 * 製品コンソールプロパティを拡張して、関連するコンテンツにすばやく移動するためのアクションなど、アセットやエクスペリエンスフラグメントのリンクを表示するようになりました。
 
-* 最新のCIFコアコンポーネントバージョン v1.8.0 を含むCIF Venia リファレンスサイト2021.02.24をリリースしました。詳しくは、 [CIF Venia リファレンスサイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) を参照してください。
+* 最新のCIF コアコンポーネント v1.8.0 を含んだCIF Venia 参照サイト 2021.02.24 をリリースしました。参照： [CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) を参照してください。
 
-* CIF Core Components v1.8.0 がリリースされました。詳しくは、 [CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) を参照してください。
+* CIF コアコンポーネント v1.8.0 をリリースしました。参照： [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -126,7 +128,7 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 
 ### バグの修正 {#bug-fixes-ctt}
 
-* 複数のユーザーをマッピングする際に、一部のユーザーの IMS ID が正しくマッピングされなかった問題を修正しました。 この問題が修正されました。
+* 複数のユーザーをマッピングする際に、一部のユーザーの IMS ID が正しくマッピングされていませんでした。 この問題が修正されました。
 
 ### リリース日 {#release-date-ctt-feb}
 
@@ -157,9 +159,9 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 ### コードリファクタリングツールの新機能 {#what-is-new-crt}
 
 * AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンでは、Repository Modernizer のいくつかのバグが修正されています。
-詳しくは、 [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) このプラグインの詳細を確認するには、を参照してください。
+参照： [統合エクスペリエンス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) を参照してください。
 
 ### バグの修正 {#bug-fixes-crt}
 
 * Repository Modernizer で行われたいくつかのバグ修正。
-詳しくは、 [GitHub リソース：aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。
+参照： [GitHub リソース：aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。

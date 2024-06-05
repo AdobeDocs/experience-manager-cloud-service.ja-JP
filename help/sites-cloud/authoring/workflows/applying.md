@@ -2,8 +2,11 @@
 title: ページへのワークフローの適用
 description: オーサリングでは、ワークフローを呼び出して、ページで実行できます。複数のワークフローを適用することもできます。
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 100%
 

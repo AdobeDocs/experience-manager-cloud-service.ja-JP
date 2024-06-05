@@ -3,8 +3,9 @@ title: スプレッドシートを使用した表形式データの管理
 description: スプレッドシートを使用して、Edge Delivery Services を使用した AEM のサイトのメタデータやリダイレクトなど、様々な値の表形式データを管理する方法を説明します。
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 100%
 

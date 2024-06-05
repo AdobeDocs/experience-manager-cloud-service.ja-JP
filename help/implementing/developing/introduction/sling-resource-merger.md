@@ -2,10 +2,12 @@
 title: Adobe Experience Manager as a Cloud Service での Sling Resource Merger の使用
 description: Sling Resource Merger は、リソースのアクセスとマージのためのサービスを提供します
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 95%
+source-wordcount: '1158'
+ht-degree: 100%
 
 ---
 
@@ -129,7 +131,7 @@ AEM で Sling Resource Merger を使用する目的は、次のとおりです�
   `/libs` 定義に存在しないプロパティが `/apps` オーバーレイ／オーバーライドで必要になった場合に、プロパティを追加できます。
 
    1. `/apps` 内に、対応するノードを作成します。
-   1. このノード&grave;&grave;で新しいプロパティを作成します。
+   1. このノード``で新しいプロパティを作成します。
 
 * **プロパティの再定義（自動作成されたプロパティ以外）**
 
@@ -189,7 +191,7 @@ AEM で Sling Resource Merger を使用する目的は、次のとおりです�
 
 * **ノードの子の非表示（そのノードのプロパティは維持）**
 
-  ノード、そのプロパティおよびその子が `/libs` に定義されていて、ノードとそのプロパティは、 `/apps` オーバーレイ/オーバーライドしますが、一部またはすべての子ノードが `/apps` overlay/override を選択します。
+  ノード、そのプロパティおよびその子が `/libs` に定義されていて、ノードとそのプロパティは `/apps` オーバーレイ／オーバーライドで必要ですが、一部またはすべての子ノードは `/apps` オーバーレイ／オーバーライドで必要ないものもあります。
 
    1. `/apps` 以下に、対応するノードを作成します。
    1. `sling:hideChildren` プロパティを作成します。
@@ -221,7 +223,7 @@ Sling Resource Merger には 2 つのカスタムリソースプロバイダー�
 >
 >リソースにアクセスする場合は、適切なマウントポイントを使用することをお勧めします。
 >
->これにより、Sling Resource Merger が確実に呼び出され、完全にマージされたリソースが確実に返されます（からレプリケートする必要がある構造が削減されます）。 `/libs`) をクリックします。
+>そうすることで、Sling Resource Merger が確実に呼び出され、完全にマージされたリソースが返されます（`/libs` からレプリケートする必要がある構造が削減されます）。
 
 * オーバーレイ：
 

@@ -2,8 +2,11 @@
 title: パイプライン変数の設定
 description: Cloud Manager でパイプライン変数を使用して、お使いのビルドに特有の設定変数を管理する方法について説明します。
 exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 100%
 

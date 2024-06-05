@@ -2,7 +2,10 @@
 title: Cloud Manager テストの概要
 description: カスタムコードの品質を確保するために Cloud Manager が自動的に実行する 3 種類のテストの概要を説明します。
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 91%
@@ -26,7 +29,7 @@ Cloud Manager の Cloud Services パイプラインでサポートされるテ�
 
 1. [エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   * エクスペリエンス監査テストは、すべての Cloud Manager 実稼動パイプラインで有効になっているので、スキップできません。
+   * エクスペリエンスの監査テストは、すべての Cloud Manager 実稼動パイプラインで有効になっており、スキップできません。
 
 以下のテストがあります。
 

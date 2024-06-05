@@ -2,8 +2,11 @@
 title: タスクの操作
 description: タスクは、コンテンツで実行するべき作業項目を表し、プロジェクトで現在のタスクの完了レベルを判断するために使用されます。
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 100%
 

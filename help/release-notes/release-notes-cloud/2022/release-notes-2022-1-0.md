@@ -2,16 +2,18 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 リリースのリリースノート。'
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1065'
-ht-degree: 87%
+ht-degree: 93%
 
 ---
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の 2022.1.0 リリースノート {#release-notes}
 
-以下の節では、の 2022.1.0 バージョンの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
+以下の節では、2022.1.0 バージョンのの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -66,7 +68,7 @@ ht-degree: 87%
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ja) では、テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードとバッチモードでドキュメントを生成できます。 API により、以下のような機能を備えたアプリケーションを作成することができます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ja) では、テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期および一括モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
 
    * テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成します。
    * 非インタラクティブ PDF 印刷ストリームを含む様々な形式のフォームを生成する
@@ -87,9 +89,9 @@ ht-degree: 87%
 * myAccount コンポーネントの強化機能
 * 「製品のレコメンデーション」コンポーネントで追加のページタイプ（ホームページ、買い物かご、注文確認）がサポートされるようになりました
 * **ウィッシュリスト**
-   * ログインした訪問者は、wantlist に製品を追加できます
-   * ウォントリストとその製品の管理は、myAccount を通じて可能です
-   * 「Add to wantlist」ボタンは、ポリシー（製品ティーザー、製品の詳細など）を介して、コンポーネントレベルで有効/無効にできます
+   * ログインした訪問者は、リストに製品を追加できます
+   * ワントリストとその製品の管理は、myAccount を介して可能です
+   * ポリシー（製品ティーザー、製品の詳細など）を通じて、「リストに追加」ボタンをコンポーネントレベルで有効/無効にできます
    * コアコンポーネントおよび AEM Venia ストアフロントで使用できます。
 
 <!-- Image was not found during PR validation despite correct path ![Wishlist](/help/assets/CIF/wantlist.png) -->
@@ -103,9 +105,9 @@ AEM as a Cloud Service 2022.01.0 における Cloud Manager のリリース日�
 ### 新機能 {#what-is-new-cm}
 
 * Cloud Manager は、複数のフルスタックパイプライン実行で [同じ git コミットが使用されていることを検出した場合、コードベースの再ビルドを避けます](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)。
-* AEM 環境ログにアクセスするには、**Deployment Manager** 製品プロファイルが必要になりました。このプロファイルを持たないユーザーのユーザーインターフェイスには、無効なボタンが表示されます。
+* AEM 環境ログにアクセスするには、**Deployment Manager** 製品プロファイルが必要になりました。このプロファイルを持たないユーザーには、ユーザーインターフェイスに無効なボタンが表示されます。
 * UI は、Sites がソリューションとして有効化されていないプログラムのフロントエンドパイプライン設定を許可しません。
-* Git パスワードを生成する際に、有効期限が表示されます。
+* Git パスワードの生成時に、有効期限が表示されます。
 
 ### バグの修正 {#bug-fixes-cm}
 
@@ -122,11 +124,11 @@ AEM as a Cloud Service 2022.01.0 における Cloud Manager のリリース日�
 
 ### 新機能 {#what-is-new-ctt}
 
-* コンテンツの検証 — コンテンツ転送ツールで抽出されたすべてのコンテンツがターゲットインスタンスに正常に取り込まれたかどうかを確実に判断できます。 この機能を使用するには、 `System Console` ソースAEM環境の 詳しくは、[コンテンツ転送の検証 - はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started)を参照してください。
+* コンテンツの検証 - コンテンツ転送ツールで抽出されたすべてのコンテンツがターゲットインスタンスに正常に取り込まれたかどうかを確実に判断できます。この機能を使用するには、ソース AEM 環境の `System Console` で有効にする必要があります。詳しくは、[コンテンツ転送の検証 - はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=ja#getting-started)を参照してください。
 
 ### バグの修正 {#bug-fixes-ctt}
 
-* ユーザーマッピングでは大文字と小文字が区別されるので、一部のユーザーがマッピングされませんでした。この問題が修正されました。ユーザーマッピングでは、大文字と小文字が区別されなくなりました。
+* ユーザーマッピングでは大文字と小文字が区別されるので、一部のユーザーがマッピングされませんでした。この問題は修正されました。ユーザーマッピングでは、大文字と小文字が区別されなくなりました。
 
 ## ベストプラクティスアナライザー {#bpa-release}
 
@@ -143,4 +145,4 @@ AEM as a Cloud Service 2022.01.0 における Cloud Manager のリリース日�
 ### バグの修正 {#bug-fixes-bpa}
 
 * BPA のサイズ決定ロジックがより高速かつ効率的になりました。
-* 一部のシナリオで、BPA が実行時に分析済みのカウントを増分しないことがありました。この問題が修正されました。
+* 一部のシナリオで、BPA が実行時に分析済みのカウントを増分しないことがありました。この問題は修正されました。

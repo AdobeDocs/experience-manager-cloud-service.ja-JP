@@ -2,7 +2,9 @@
 title: コンテンツ転送ツールにおける移行セットのログの表示
 description: コンテンツ転送ツールにおける移行セットのログの表示
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 100%

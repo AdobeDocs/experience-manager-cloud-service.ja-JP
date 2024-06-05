@@ -2,8 +2,10 @@
 title: サーバーサイド API 用のアクセストークンの生成
 description: セキュアな JWT トークンを生成してサードパーティサーバーおよび AEM as a Cloud Service の間の通信を容易にする方法について説明します。
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '2089'
 ht-degree: 100%
 

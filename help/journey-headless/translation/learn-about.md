@@ -2,10 +2,13 @@
 title: ヘッドレスコンテンツの概要と AEM での翻訳について
 description: ヘッドレスの概念、AEM へのマッピング方法、AEM 翻訳の基本概念について説明します。
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 90%
+source-wordcount: '737'
+ht-degree: 100%
 
 ---
 
@@ -26,7 +29,7 @@ ht-degree: 90%
 
 ![従来のフルスタック CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-フルスタック CMS では、コンテンツを操作する機能は CMS 内にあります。 システムの機能は、CMS スタックの異なるコンポーネントを構成します。フルスタックソリューションには多くの利点があります。
+フルスタック CMS では、コンテンツを操作する機能はすべて CMS 内にあります。システムの機能は、CMS スタックの異なるコンポーネントを構成します。フルスタックソリューションには多くの利点があります。
 
 * 維持管理するシステムは 1 つである。
 * コンテンツを一元的に管理できる。
@@ -47,7 +50,7 @@ ht-degree: 90%
 
 ![ヘッドレス CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-消費サービスは、AR エクスペリエンス、Web ショップ、モバイルエクスペリエンス、プログレッシブ Web アプリ (PWA) などであれ、ヘッドレス CMS からコンテンツを取り込み、独自のレンダリングを提供します。 ヘッドレス CMS は、コンテンツに合わせて独自のヘッドを提供します。
+消費サービス（AR エクスペリエンス、web ショップ、モバイルエクスペリエンス、プログレッシブ web アプリ（PWA）など）では、ヘッドレス CMS からコンテンツを取り込み、独自にレンダリングを提供します。ヘッドレス CMS は、コンテンツに合わせて独自のヘッドを提供します。
 
 ヘッドを省略することで、複雑さが減り、CMS をシンプルになります。また、コンテンツのレンダリングの責任は、実際にコンテンツを必要とするサービスに移ります。多くの場合、サービスのほうがレンダリングに適しています。
 
@@ -57,7 +60,7 @@ ht-degree: 90%
 
 AEM の機能により、コンテンツをヘッドレスとフルスタックのどちらか一方で配信するか、両方のモデルで同時に配信することができます。翻訳担当者にとっては、両方のタイプのコンテンツに同じ翻訳ツールセットを適用でき、コンテンツを翻訳するための統一されたアプローチが提供されます。
 
-さらに、ジャーニーではAEMによるコンテンツの翻訳方法の詳細を学びますが、概念はシンプルです。
+AEM によるコンテンツの翻訳方法について詳しくは、このジャーニーで後ほど詳しく説明しますが、概念はシンプルです。
 
 1. 翻訳統合フレームワークを設定して、翻訳サービスへの接続を定義します。
 1. 翻訳するコンテンツを、翻訳ルールを使用して定義します。
@@ -78,5 +81,5 @@ AEM ヘッドレス翻訳ジャーニーを開始していただきありがと�
 [AEM ヘッドレス翻訳の基本を学ぶ](getting-started.md)のドキュメントを確認して、ヘッドレス翻訳ジャーニーの次のステップに進むことをお勧めします。ヘッドレスジャーニーの続行に必須ではありませんが、この記事で取り上げたいくつかの概念について詳しく説明している追加のオプションリソースを以下に挙げておきます。
 
 * [MSM と翻訳](/help/sites-cloud/administering/msm-and-translation.md) - AEM のマルチサイトマネージャーの詳細と翻訳ツールとの連携方法について説明します。
-* [AEM as a Headless CMS の概要](/help/headless/introduction.md)
+* [ヘッドレス CMS としての AEM の概要](/help/headless/introduction.md)
 * [AEM のヘッドレスに関するチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)

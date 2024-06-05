@@ -3,8 +3,11 @@ title: 実稼動パイプラインの設定
 description: 実稼動パイプラインを設定し、コードをビルドして実稼働環境にデプロイする方法について説明します。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1338'
 ht-degree: 100%
 

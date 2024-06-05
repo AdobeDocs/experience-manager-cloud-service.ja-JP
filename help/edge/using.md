@@ -3,8 +3,9 @@ title: AEM での Edge Delivery Services の使用
 description: AEM as a Cloud Service を Edge Delivery Services と併用する方法について説明します。
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
-source-git-commit: e98ddd8169ffbd407fdd4ff713bda57f693abaf9
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 100%
 

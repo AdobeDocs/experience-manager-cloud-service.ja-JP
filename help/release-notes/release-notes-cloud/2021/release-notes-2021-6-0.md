@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 リリースのリリースノート。'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1432'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -86,7 +88,7 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 
 ### の新機能[!DNL Assets] {#ga-features-assets}
 
-* コンテンツ自動化機能により、 [!DNL Experience Manager Assets] を使用します。 [!DNL Adobe Creative Cloud] 大規模なアセット作成を自動化する API。 同じアセットのバリエーションを作成するのに必要な時間と繰り返しを大幅に減らし、コンテンツの速度を向上させます。機能はコードは必要とせず、DAM 内から機能します。
+* コンテンツ自動処理機能により、 [!DNL Experience Manager Assets] を使用する [!DNL Adobe Creative Cloud] 大規模なアセット作成を自動化するための API。 同じアセットのバリエーションを作成するのに必要な時間と繰り返しを大幅に減らし、コンテンツの速度を向上させます。機能はコードは必要とせず、DAM 内から機能します。
 * [!DNL Adobe Asset Link] v3.0（[!DNL Adobe Photoshop]、[!DNL Adobe Illustrator]、[!DNL Adobe InDesign]、[!DNL Adobe Asset Link] v2.0（[!DNL Adobe XD]）がリリースされました。これには次の機能があります。
 
    * [!DNL Assets Essentials] のサポート。
@@ -100,7 +102,7 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 * ビュー設定が強化され、デフォルトのビューとデフォルトの並べ替えパラメーターを選択できるようになりました。
 * Linkshare のダウンロード機能は、非同期ダウンロードを使用してダウンロード速度を向上させます。
 * プロパティの述語に基づいて、フォルダーを検索およびフィルタリングできます。
-* [!DNL Experience Manager Assets] を使用してPDFビューアを埋め込みます。 [!DNL Adobe Document Cloud] をクリックして、サポートされているドキュメントをプレビューします。 この機能を使用すると、複雑な処理を行わずに、PDF ファイルやその他の複数ページファイルをプレビューできます。これにより、[!DNL Experience Manager] 6.5 との機能の等価性が向上します。
+* [!DNL Experience Manager Assets] PDFビューア powered by が埋め込まれます [!DNL Adobe Document Cloud] ：サポートされているドキュメントをプレビューします。 この機能を使用すると、複雑な処理を行わずに、PDF ファイルやその他の複数ページファイルをプレビューできます。これにより、[!DNL Experience Manager] 6.5 との機能の等価性が向上します。
 
 ### [!DNL Assets] で修正されたバグ  {#bugs-fixed-assets}
 
@@ -126,7 +128,7 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 
 ### [!DNL Forms] のベータ版機能 {#what-is-new-forms-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：通信 API を使用すると、XDP テンプレートと XML データを組み合わせて様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。 API により、以下のような機能を備えたアプリケーションを作成することができます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：通信 API を使用すると、XDP テンプレートと XML データを組み合わせて様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
    * テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成する。
    * 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
    * XFA フォーム PDF および Adobe Acrobat フォーム（AcroForms）から印刷用 PDF を生成する。
@@ -180,7 +182,7 @@ AEM Screens as a Cloud Service のリリース日は 2021 年 6 月 24 日です
 
 ### 新機能 {#what-is-new-ctt-latest}
 
-* CTT で使用するためのオプションの[コピー前](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)手順のサポートが追加されました。コピー前手順を使用すると、ソース AEM インスタンスが Amazon S3 または Azure Blob Storage データストアを使用するように設定されている場合に、コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に高速化できます。
+* CTT で使用するためのオプションの[コピー前](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja)手順のサポートが追加されました。コピー前手順を使用すると、ソース AEM インスタンスが Amazon S3 または Azure Blob Storage データストアを使用するように設定されている場合に、コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に高速化できます。
 
 * CTT に追加されたガードレールは、取得の停止を防ぎ、取得段階で重要なポイントに到達したデータが破損する可能性を防ぎます。
 

@@ -2,8 +2,11 @@
 title: ローンチの作成
 description: 今後のアクティベーションのために既存の web ページの新しいバージョンを更新できるように、ローンチを作成できます。
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1042'
 ht-degree: 100%
 

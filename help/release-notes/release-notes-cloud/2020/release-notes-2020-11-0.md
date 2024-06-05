@@ -2,7 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 リリースのリリースノート。'
 description: "[!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 のリリースノート。"
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1223'
 ht-degree: 91%
@@ -31,7 +33,7 @@ ht-degree: 91%
 
 ### [!DNL Assets] と [!DNL Dynamic Media] の新機能  {#what-is-new-assets}
 
-* **アセットの一括取り込み**：を使用する、スケーラブルでクラウドネイティブな取り込みサービスを提供します。 [!DNL Experience Manager] as a Cloud Serviceアーキテクチャ（アセットマイクロサービスを含む）。 主な使用例としては、監視、レポート、スケジュール機能を備えた大規模な取り込みや、クラウドデータストアへの初回のアセット転送を一般的なクラウドアップロードツールで行えることなどが挙げられます。詳しくは、[アセット一括取り込みツール](/help/assets/add-assets.md#asset-bulk-ingestor)の説明を参照してください。
+* **一括アセット取り込み**：を使用する、スケーラブルでクラウドネイティブな取り込みサービスを顧客に提供します [!DNL Experience Manager] アセットマイクロサービスを含むas a Cloud Serviceアーキテクチャ。 主な使用例としては、監視、レポート、スケジュール機能を備えた大規模な取り込みや、クラウドデータストアへの初回のアセット転送を一般的なクラウドアップロードツールで行えることなどが挙げられます。詳しくは、[アセット一括取り込みツール](/help/assets/add-assets.md#asset-bulk-ingestor)の説明を参照してください。
 
 
   このツールは、システム管理者、コンサルタント、実装パートナーのいずれかのペルソナを対象としています。この機能により、大規模な取り込みが可能になります。これは、初回の取り込み時や大量の取り込みを行うときに使用するのが理想的です。より小規模な取り込みジョブの場合は、[Assets ユーザーインターフェイスを使用したアップロード](/help/assets/add-assets.md#upload-assets)または[[!DNL Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を使用します。
@@ -62,7 +64,7 @@ ht-degree: 91%
    * ユーザーは `Tab` キーを使用してメールリンクダイアログ内を移動できます。
    * スクリーンリーダーの機能が強化されたので、ビデオエンコーディングプロファイルを作成するワークフローが、より使いやすくなりました。
    * インタラクティブビデオを作成するワークフローで `Tab` キーを使用してナビゲートする場合、フォーカスは適切なユーザーインターフェイス要素に移動します。
-   * 公開、アセットを編集、スマート切り抜きを編集、画像セットエディターの各ページが、Web 標準に準拠するように改善されました。支援テクノロジー (AT) を使用すると、これらのページを簡単にナビゲートし、画像の切り抜きなどの操作をおこなうことができるようになりました。
+   * 公開、アセットを編集、スマート切り抜きを編集、画像セットエディターの各ページが、Web 標準に準拠するように改善されました。支援テクノロジー（AT）を使用すると、これらのページを簡単に移動し、画像の切り抜きなどの操作を行えるようになりました。
    * ビューアが改善され、ユーザーがキーボードを使用してナビゲートできるようになりました。
    * キーボードおよびスクリーンリーダーのユーザーは切り抜き機能を使用できます。
    * キーボードユーザーによるホットスポットの管理が向上しました。
@@ -73,9 +75,9 @@ ht-degree: 91%
 
 ### 新機能 {#what-is-new-commerce}
 
-* 最新のCIFコアコンポーネントバージョン v1.5.0 を含む、CIF Venia リファレンスサイト2020.11.05をリリースしました。詳しくは、 [CIF Venia リファレンスサイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) を参照してください。
+* 最新のCIF コアコンポーネント v1.5.0 を含んだCIF Venia 参照サイト 2020.11.05 をリリースしました。参照： [CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) を参照してください。
 
-* CIF Core Components v1.5.0 がリリースされました。詳しくは、 [CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) を参照してください。
+* CIF コアコンポーネント v1.5.0 をリリースしました。参照： [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) を参照してください。
 
 ### バグの修正 {#bug-fixes-commerce}
 
@@ -116,7 +118,7 @@ AEM as a Cloud Service の SDK ビルドアナライザー Maven プラグイン
 
 ### その他 {#others-foundation}
 
-新規 [&quot;httpd -t&quot;構文](/help/implementing/dispatcher/disp-overview.md#local-validation) Cloud Manager のビルド中に実行される Apache および Dispatcher 設定を確認します。これは、AEMas a Cloud ServiceSDK の Dispatcher ツールを使用して実行することもできます。
+新規 [「httpd -t」構文](/help/implementing/dispatcher/disp-overview.md#local-validation) cloud Manager によるビルド時には Apache および Dispatcher 設定が実行されますが、これをAEMas a Cloud ServiceSDK の Dispatcher ツールを使用して実行することもできます。
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 

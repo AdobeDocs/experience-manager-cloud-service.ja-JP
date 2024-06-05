@@ -2,9 +2,12 @@
 title: オプション - Adobe Experience Manager（AEM）を使用して単一ページアプリケーション（SPA）を作成する方法
 description: AEM ヘッドレス開発者ジャーニーの続編であるこのオプションパートでは、AEM でヘッドレス配信と従来のフルスタック CMS 機能を組み合わせる方法について説明します。また、AEM の SPA Editor フレームワークを使用して編集可能な SPA を作成する方法についても説明します。
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1259'
 ht-degree: 100%
 
 ---

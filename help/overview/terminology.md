@@ -2,10 +2,12 @@
 title: Adobe Experience Manager as a Cloud Service の概要 - 用語
 description: Adobe Experience Manager as a Cloud Service の概要 - 用語。
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +19,7 @@ Adobe Experience Manager (AEM) as a Cloud Service に関連して、次の用語
 
 | 製品 | 説明 |
 |---|---|
-| AEM as a Cloud Service | AEMアプリケーションのクラウドネイティブな使用方法 |
+| AEM as a Cloud Service | AEM アプリケーションを使用するクラウドネイティブな方法 |
 | AEM Assets as a Cloud Service | クラウドネイティブかつ拡張可能なソリューションとしてのデジタルアセット管理（DAM）機能。デジタルアセットの取り込み、処理、管理をおこなうと同時に、より広範な Adobe Experience Cloud および Adobe Creative Cloud エコシステムとも統合されています。 |
 | AEM Sites as a Cloud Service | AEM Sites アプリケーションを備えた AEM as a Cloud Service インスタンスです。 |
 

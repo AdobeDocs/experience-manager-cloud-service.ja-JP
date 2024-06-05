@@ -1,39 +1,41 @@
 ---
 title: ユニバーサルエディターイベント
-description: リモートアプリ内のコンテンツや UI の変更に応じて使用できる、ユニバーサルエディターが送信する様々なイベントについて説明します。
+description: リモートアプリのコンテンツや UI の変更に反応するために使用できる、ユニバーサルエディターが送信する様々なイベントについて説明します。
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # ユニバーサルエディターイベント {#events}
 
-リモートアプリ内のコンテンツや UI の変更に応じて使用できる、ユニバーサルエディターが送信する様々なイベントについて説明します。
+リモートアプリのコンテンツや UI の変更に反応するために使用できる、ユニバーサルエディターが送信する様々なイベントについて説明します。
 
 ## はじめに {#introduction}
 
-アプリケーションは、ページやコンポーネントの更新に対して異なる要件を持つ場合があります。 したがって、ユニバーサルエディターは定義されたイベントをリモートアプリケーションに送信します。 リモートアプリケーションに送信されたイベントのカスタムイベントリスナーがない場合、 [フォールバックイベントリスナー](#fallback-listeners) 提供元： `universal-editor-cors` パッケージが実行されます。
+アプリケーションには、ページまたはコンポーネントのアップデートに関する様々な要件があります。 そのため、ユニバーサルエディターは、定義済みのイベントをリモートアプリケーションに送信します。 リモートアプリケーションに送信されたイベントのカスタムイベントリスナーがない場合、 [フォールバックイベントリスナー](#fallback-listeners) によって提供 `universal-editor-cors` パッケージが実行されます。
 
-すべてのイベントは、リモートページの影響を受ける DOM 要素で呼び出されます。 イベントが `BODY` デフォルトのイベントリスナーが `universal-editor-cors` パッケージが登録されています。 UI にはコンテンツ用のイベントとイベントがあります。
+すべてのイベントは、リモートページの影響を受ける DOM 要素で呼び出されます。 イベントはまでバブルアップ `BODY` によって提供されるデフォルトのイベントリスナーが存在する要素 `universal-editor-cors` パッケージが登録されました。 コンテンツ用のイベントと UI 用のイベントがあります。
 
-すべてのイベントは、命名規則に従います。
+すべてのイベントは命名規則に従います。
 
 * `aue:<content-or-ui>-<event-name>`
 
 例： `aue:content-update` および `aue:ui-select`
 
-イベントには、リクエストのペイロードと応答のペイロードが含まれ、対応する呼び出しが成功するとトリガーされます。 呼び出しとそのペイロードの例について詳しくは、ドキュメントを参照してください。 [ユニバーサルエディターの呼び出し。](/help/implementing/universal-editor/calls.md)
+イベントには、リクエストのと応答のペイロードが含まれ、対応する呼び出しが成功するとトリガーされます。 呼び出しとそのペイロードの例について詳しくは、ドキュメントを参照してください [ユニバーサルエディター呼び出し。](/help/implementing/universal-editor/calls.md)
 
 ## コンテンツ更新イベント {#content-events}
 
 ### aue:content-add {#content-add}
 
-The `aue:content-add` イベントは、新しいコンポーネントがコンテナに追加されたときにトリガーされます。
+この `aue:content-add` 新しいコンポーネントがコンテナに追加されると、イベントがトリガーされます。
 
-ペイロードは、コンポーネント定義からのフォールバックコンテンツと共に、Universal Editor サービスからのコンテンツです。
+ペイロードは、ユニバーサルエディターサービスのコンテンツと、コンポーネント定義のフォールバックコンテンツです。
 
 ```json
 {
@@ -51,11 +53,11 @@ The `aue:content-add` イベントは、新しいコンポーネントがコン�
 }
 ```
 
-### ause:content-details {#content-details}
+### aue:content-details {#content-details}
 
-The `aue:content-details` イベントは、コンポーネントがプロパティパネルに読み込まれるとトリガーされます。
+この `aue:content-details` プロパティ パネルにコンポーネントが読み込まれると、イベントがトリガーされます。
 
-ペイロードは、コンポーネントのコンテンツで、オプションでそのスキーマです。
+ペイロードは、コンポーネントのコンテンツであり、オプションでスキーマでもあります。
 
 ```json
 {
@@ -70,7 +72,7 @@ The `aue:content-details` イベントは、コンポーネントがプロパテ
 
 ### aue:content-move {#content-move}
 
-The `aue:content-move` イベントは、コンポーネントの移動時にトリガーされます。
+この `aue:content-move` コンポーネントが移動されると、イベントがトリガーされます。
 
 ペイロードは、コンポーネント、ソースコンテナ、ターゲットコンテナです。
 
@@ -89,7 +91,7 @@ The `aue:content-move` イベントは、コンポーネントの移動時にト
 
 ### aue:content-patch {#content-patch}
 
-The `aue:content-patch` イベントは、コンポーネントのデータがプロパティパネルで更新されるとトリガーされます。
+この `aue:content-patch` コンポーネントのデータがプロパティパネルで更新されると、イベントがトリガーされます。
 
 ペイロードは、更新されたプロパティの JSON パッチです。
 
@@ -108,7 +110,7 @@ The `aue:content-patch` イベントは、コンポーネントのデータが�
 
 ### aue:content-remove {#content-remove}
 
-The `aue:content-remove` イベントは、コンポーネントがコンテナから削除されたときにトリガーされます。
+この `aue:content-remove` コンポーネントがコンテナから削除されると、イベントがトリガーされます。
 
 ペイロードは、削除されたコンポーネントの項目 ID です。
 
@@ -124,7 +126,7 @@ The `aue:content-remove` イベントは、コンポーネントがコンテナ�
 
 ### aue:content-update {#content-update}
 
-The `aue:content-update` イベントは、コンポーネントのプロパティがコンテキスト内で更新されたときにトリガーされます。
+この `aue:content-update` コンポーネントのプロパティがコンテキスト内で更新されると、イベントがトリガーされます。
 
 ペイロードは更新された値です。
 
@@ -138,11 +140,11 @@ The `aue:content-update` イベントは、コンポーネントのプロパテ�
 }
 ```
 
-### ペイロードを渡す {#passing-payloads}
+### ペイロードの受け渡し {#passing-payloads}
 
 すべてのコンテンツ更新イベントについて、リクエストされたペイロードと応答ペイロードがイベントに渡されます。 例：更新呼び出しの場合：
 
-リクエストペイロード：
+リクエストペイロード :
 
 ```json
 {
@@ -178,15 +180,15 @@ The `aue:content-update` イベントは、コンポーネントのプロパテ�
 
 ## UI イベント {#ui-events}
 
-### aute:ui-publish {#ui-publish}
+### aue:ui-publish {#ui-publish}
 
-The `aue:ui-publish` イベントは、コンテンツが公開されたときに ( 呼び出し時に `BODY` レベル ) で使用できます。
+この `aue:ui-publish` コンテンツの公開時にイベントがトリガーされます（での呼び出しを使用） `BODY` レベル）。
 
 ペイロードは、項目 ID とその公開ステータスのリストです。
 
 ### aue:ui-select {#ui-select}
 
-The `aue:ui-select` イベントが発生した場合は、コンポーネントが選択されたときにトリガーされます。
+この `aue:ui-select` コンポーネントが選択されると、イベントがトリガーされます。
 
 ペイロードは、選択したコンポーネントの項目 ID、項目プロパティおよび項目タイプです。
 
@@ -203,9 +205,9 @@ The `aue:ui-select` イベントが発生した場合は、コンポーネント
 
 ### aue:ui-preview {#ui-preview}
 
-The `aue:ui-preview` イベントは、ページの編集モードが **プレビュー**.
+この `aue:ui-preview` ページの編集モードがに変更されると、イベントがトリガーされます。 **プレビュー**.
 
-このイベントのペイロードは空です。
+このイベントのペイロードが空です。
 
 ```json
 {
@@ -215,9 +217,9 @@ The `aue:ui-preview` イベントは、ページの編集モードが **プレ�
 
 ### aue:ui-edit {#ui-edit}
 
-The `aue:ui-edit` イベントは、ページの編集モードが **編集**.
+この `aue:ui-edit` ページの編集モードがに変更されると、イベントがトリガーされます。 **編集**.
 
-このイベントのペイロードは空です。
+このイベントのペイロードが空です。
 
 ```json
 {
@@ -227,9 +229,9 @@ The `aue:ui-edit` イベントは、ページの編集モードが **編集**.
 
 ### aue:ui-viewport-change {#ui-viewport-change}
 
-The `aue:ui-viewport-change` イベントは、ビューポートのサイズが変更されたときにトリガーされます。
+この `aue:ui-viewport-change` ビューポートのサイズが変更されると、イベントがトリガーされます。
 
-ペイロードは、ビューポートの寸法です。
+ペイロードはビューポートのサイズです。
 
 ```json
 {
@@ -240,11 +242,11 @@ The `aue:ui-viewport-change` イベントは、ビューポートのサイズが
 }
 ```
 
-### aute:initialized {#initialized}
+### aue:initialized {#initialized}
 
-The `aue:initialized` イベントがトリガーされ、リモートページがユニバーサルエディターに正常に読み込まれたことが通知されます。
+この `aue:initialized` イベントがトリガーされ、ユニバーサルエディターに正常に読み込まれたことがリモートページに通知されます。
 
-このイベントのペイロードは空です。
+このイベントのペイロードが空です。
 
 ```json
 {
@@ -260,19 +262,19 @@ The `aue:initialized` イベントがトリガーされ、リモートページ�
 |---|---|
 | `aue:content-add` | ページの再読み込み |
 | `aue:content-details` | 何もしない |
-| `aue:content-move` | コンポーネントのコンテンツ/構造をターゲット領域に移動する |
+| `aue:content-move` | コンポーネントのコンテンツ/構造をターゲット領域に移動します |
 | `aue:content-patch` | ページの再読み込み |
-| `aue:content-remove` | DOM 要素を削除する |
-| `aue:content-update` | を更新します。 `innerHTML` ペイロードを使用 |
+| `aue:content-remove` | DOM 要素を削除します |
+| `aue:content-update` | を更新 `innerHTML` （ペイロードを使用） |
 
 ### UI イベント {#ui-event-fallbacks}
 
 | イベント | 動作 |
 |---|---|
 | `aue:ui-publish` | 何もしない |
-| `aue:ui-select` | 選択した要素までスクロールします。 |
-| `aue:ui-preview` | 追加 `class="adobe-ue-preview"` HTMLタグ |
-| `aue:ui-edit` | 追加 `class=adobe-ue-edit"` HTMLタグ |
+| `aue:ui-select` | 選択した要素までスクロールします |
+| `aue:ui-preview` | 追加 `class="adobe-ue-preview"` HTMLタグへ |
+| `aue:ui-edit` | 追加 `class=adobe-ue-edit"` HTMLタグへ |
 | `aue:ui-viewport-change` | 何もしない |
 | `aue:initialized` | 何もしない |
 

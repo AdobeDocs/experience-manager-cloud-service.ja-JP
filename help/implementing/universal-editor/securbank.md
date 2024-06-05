@@ -1,13 +1,15 @@
 ---
 title: ユニバーサルエディター用 SecurBank サンプルアプリ
 description: SecurBank アプリを使用して実践的なエクスペリエンスを持つユニバーサルエディターについて説明します。このアプリは、ユニバーサルエディターの機能、柔軟性、使いやすさを紹介して、コンテンツの作成を高速化するように設計されています。
-source-git-commit: 4b7612f423e4e728911920793e9e0a03757c7c9d
+exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
 
 ---
-
 
 # ユニバーサルエディター用 SecurBank サンプルアプリ {#securbank}
 

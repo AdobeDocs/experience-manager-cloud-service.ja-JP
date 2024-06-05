@@ -2,8 +2,10 @@
 title: WKND SPA プロジェクト
 description: 複数のパートで構成されているこのチュートリアルを実行すると、プロジェクトの設定、コンポーネントのマッピング、フロントエンド開発ツール、アプリケーションのルーティングなどを理解して、React と Angular の両方で独自の SPA を実装できるようになります。このチュートリアルを活用して SPA 開発に習熟 してください。
 exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 100%
 

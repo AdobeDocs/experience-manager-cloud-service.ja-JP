@@ -2,8 +2,11 @@
 title: エクスペリエンス監査テスト
 description: エクスペリエンス監査でデプロイメントプロセスを検証し、デプロイされた変更がパフォーマンス、アクセシビリティ、ベストプラクティス、SEO のベースライン標準を満たしていることを確認する方法について説明します。
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 100%
 
@@ -55,17 +58,17 @@ Cloud Manager のエクスペリエンス監査を使用すると、サイト上
 1. 設定するパイプラインのタイプに応じて、次の手順に従います。
 
    * 監査で評価されるパスを定義する場合は、新しい[実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)を追加します。
-   * フロントエンドまたは開発のフルスタックパイプラインで監査を有効にする場合は、新しい[実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)を追加します。
-   * または、[既存のパイプラインを編集](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)して、既存のオプションを更新できます。
+   * フロントエンドまたは開発フルスタックパイプラインで監査を有効にする場合は、新しい[実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)を追加します。
+   * または、[既存のパイプラインを編集](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)し、既存のオプションを更新することもできます。
 
-1. エクスペリエンス監査を使用する実稼動以外のパイプラインを追加または編集する場合は、「**ソースコード**」タブの「**エクスペリエンス監査**」チェックボックスをオンにする必要があります。
+1. エクスペリエンス監査を使用する実稼動以外のパイプラインを追加または編集している場合は、「**ソースコード**」タブの「**エクスペリエンス監査**」チェックボックスをオンにする必要があります。
 
    ![エクスペリエンス監査の有効化](assets/experience-audit-enable.jpg)
 
    * これは、実稼動以外のパイプラインの場合にのみ必要です。
    * 「**エクスペリエンス監査**」タブは、チェックボックスが選択されていると表示されます。
 
-1. 実稼動と実稼動以外の両方のパイプラインで、「**エクスペリエンス監査**」タブでエクスペリエンス監査に含めるパスを定義します。
+1. 実稼動および実稼動以外の両方のパイプラインでは、「**エクスペリエンス監査**」タブでエクスペリエンス監査に含めるパスを定義します。
 
    * ページのパスは `/` で始める必要があり、サイトに対する相対パスです。
    * 例えば、サイトが `wknd.site` で、エクスペリエンス監査に `https://wknd.site/us/en/about-us.html` を含める場合は、`/us/en/about-us.html` というパスを入力します。

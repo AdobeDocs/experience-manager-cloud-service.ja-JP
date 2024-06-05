@@ -3,10 +3,11 @@ title: AEM as a Cloud Service Release 2022.7.0 の移行ツールのリリース
 description: AEM as a Cloud Service Release 2022.7.0 の移行ツールのリリースノート
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 93%
+source-wordcount: '435'
+ht-degree: 100%
 
 ---
 
@@ -23,12 +24,12 @@ ht-degree: 93%
 ### 新機能 {#what-is-new-bpa}
 
 * BPA は、`/oak:index/lucene` および `/oak:index/damAssetLucene` を除く合計 Lucene インデックスである、移行可能な Lucene インデックスの合計サイズを検出して報告できるようになりました。
-* カスタム i18n 辞書の使用を検出してレポートするための新しいパターンが BPA に追加されました。AEMas a Cloud Serviceでは Translator.html を使用できません。また、Cloud Manager CI/CD パイプラインを通じて、カスタム i18n 辞書を Git からデプロイする必要があります。
+* カスタム i18n 辞書の使用を検出してレポートするための新しいパターンが BPA に追加されました。Translator.html は AEM as a Cloud Service では使用できません。Cloud Manager CI/CD パイプラインを介して、Git からカスタム i18n 辞書をデプロイする必要があります。
 
 ### バグの修正 {#bug-fixes-bpa}
 
 * BPA は、コンテンツフラグメントの元のレンディションが見つからないことをレポートしていました。コンテンツフラグメントにはレンディションがないので、コンテンツフラグメントではこのチェックがスキップされるようになりました。
-* ACS Commons の調査結果をフィルタリングするオプションが BPA UI にありませんでした。この問題が修正されました。
+* ACS Commons の調査結果をフィルタリングするオプションが BPA UI にありませんでした。この問題は修正されました。
 
 ## コンテンツ転送ツール {#ctt-release}
 
@@ -46,9 +47,9 @@ ht-degree: 93%
 
 ### バグの修正 {#bug-fixes-ctt}
 
-* 移行セットを削除して再作成すると、以前の抽出ログが表示されていました。この問題が修正されました。
-* 「進行状況の表示」アクションボタンが、停止ステータスの移行セットで使用できませんでした。この問題が修正されました。
-* 「削除」アクションボタンが、期限切れの抽出キーの移行セットで使用できませんでした。 この問題が修正されました。
+* 移行セットを削除して再作成すると、以前の抽出ログが表示されていました。この問題は修正されました。
+* 「進行状況の表示」アクションボタンが、停止ステータスの移行セットで使用できませんでした。この問題は修正されました。
+* 「削除」アクションボタンが、期限切れの抽出キーの移行セットで使用できませんでした。 この問題は修正されました。
 * 複数の UI のバグを修正しました。
 
 ## Cloud Acceleration Manager {#cam-release}

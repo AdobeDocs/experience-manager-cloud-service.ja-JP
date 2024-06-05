@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の 2020.9.0 リリースのリリースノート。'
 description: "[!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 のリリースノート。"
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 92%
+source-wordcount: '711'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +23,7 @@ ht-degree: 92%
 
 ### [!DNL Sites] の新機能 {#what-is-new-sites}
 
-* シングルページアプリケーション (SPA) エディター JavaScript SDK [は現在オープンソースです](/help/implementing/developing/hybrid/reference-materials.md).
+* シングルページアプリケーション（SPA）エディター JavaScript SDK [がオープンソースになりました](/help/implementing/developing/hybrid/reference-materials.md).
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
@@ -50,7 +52,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### 新機能 {#what-is-new-commerce}
 
-* CIF コアコンポーネント v1.3.0 がリリースされました。詳しくは、 [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) を参照してください。
+* CIF コアコンポーネント v1.3.0 をリリースしました。参照： [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) を参照してください。
 
 * 製品／カテゴリテンプレート用の製品／カテゴリプレビュー機能が利用できるようになりました。これにより、AEM のビジネスユーザーやマーケターは、製品／カテゴリのテンプレートに実際のデータを表示できます。
 
@@ -74,7 +76,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * 「コンテンツ監査」の名称が「エクスペリエンス監査」に変更されました。
 * ビルドプロセスは、3 つの Maven コマンドに分けられました。
-* Git リポジトリを複製できない場合は、最大 3 回再試行されます。
+* Git リポジトリのクローンに失敗した場合は、最大 3 回再試行されます。
 
 ### バグの修正 {#bug-fixes-cm}
 
@@ -118,8 +120,8 @@ Cloud Readiness Analyzer リリース v1.1.0 の新機能と更新点につい�
 
 * AIO-CLI プラグインは、Repository Modenizer をサポートしており、ユーザーはこのプラグインを使用してツールを実行できます。
 
-  詳しくは、 [Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) を参照してください。
+  参照： [Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) を参照してください。
 
 * Repository Modenizer ユーティリティを使用すると、既存のプロジェクトパッケージを、AEM as a Cloud Service 用に定義されたプロジェクト構造と互換性のあるパッケージに再構築できます。
 
-  詳しくは、 [Git リソース：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。
+  参照： [Git リソース：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。

@@ -2,8 +2,10 @@
 title: デモサイトを管理
 description: デモサイトの管理に役立つツールと、デモサイトを削除する方法について説明します。
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 100%
 
@@ -90,7 +92,7 @@ Self-Service Demo Utilities には、いくつかのツールが用意されて�
 
 ## ジャーニーの終了 {#end-of-journey}
 
-おめでとうございます。AEM Reference Demos Add-On のジャーニーが完了しました。その結果、以下を習得しました。
+これで完了です。AEM Reference Demos Add-On のジャーニーが完了しました。その結果、以下を習得しました。
 
 * Cloud Manager の基本を理解し、パイプラインがコンテンツと設定を AEM に配信する方法を理解します。
 * Cloud Manager を使用してプログラムを作成する方法を理解します。

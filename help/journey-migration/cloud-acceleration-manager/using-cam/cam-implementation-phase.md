@@ -2,10 +2,12 @@
 title: Cloud Acceleration Manager での実装フェーズ
 description: このページでは、Cloud Acceleration Manager における実装フェーズの概要について説明します。
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 96%
+source-wordcount: '620'
+ht-degree: 100%
 
 ---
 
@@ -89,7 +91,7 @@ AEM as a Cloud Service デプロイメントカードには、コードを AEM a
 
 ## コンテンツ転送カードの使用 {#content-transfer}
 
-「コンテンツ転送」カードを使用すると、現在のAEMインスタンスからAEM as a Cloud Serviceへのコンテンツ転送を開始および管理できます。
+コンテンツ転送カードを使用すると、現在の AEM インスタンスから AEM as a Cloud Service へのコンテンツ転送を開始および管理できます。
 
 この節では、「コンテンツ転送」アクティビティカードについて説明します。
 

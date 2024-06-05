@@ -2,10 +2,13 @@
 title: AEM ヘッドレス翻訳ジャーニー
 description: AEM の強力な翻訳ツールを使用してヘッドレスコンテンツを翻訳する方法を順を追って説明するガイド付きジャーニーは、ここから始めてください。
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 87%
+source-wordcount: '1024'
+ht-degree: 100%
 
 ---
 
@@ -32,7 +35,7 @@ AEM、ヘッドレスおよび翻訳に精通している方は、このジャ�
 
 ## AEM ドキュメントジャーニー {#documentation-journeys}
 
-[ドキュメントジャーニー](/help/journey-documentation/documentation-journeys.md) AEMを初めて使用する読者が、最初から最後までビジネス上の問題を理解し、解決するのに役立つナレーションを提供し、前のトピックやAEMの知識を最小限に抑えながら、様々な複雑なトピックや機能を結び付けます。
+[ドキュメントジャーニー](/help/journey-documentation/documentation-journeys.md)は、前提となる事前のトピックや AEM の知識を最小限に抑えながら、AEM を初めて使用することもある読者がビジネス上の問題全体を把握し解決するのに役立つ説明を提供して、異なる複雑なトピックや機能をひとまとめに扱っています。
 
 ドキュメントジャーニーは、アドビの最新の調査、アドビのコンサルタントによる実装実績、顧客プロジェクトからのフィードバックなどに基づいて、ベストプラクティス原則を軸に設計されています。
 
@@ -53,13 +56,13 @@ AEM を使用してヘッドレスビジネスケースを解決する方法を�
 | 管理者 | AEM の基本セットアップと設定を管理します。 | 翻訳担当者は管理者と協力して、翻訳コネクタのインストールなど、翻訳に必要な設定変更を行います。 |
 | コンテンツアーキテクト | ヘッドレスで配信する必要があるデータの要件を分析し、そのデータの構造を定義します。 | 翻訳担当者はコンテンツアーキテクトと協力して、翻訳しやすいようにコンテンツの構成を定義します。 |
 
-このジャーニーの情報は、すべてのペルソナに役立ちますが、一部の情報は特定の役割で余分なものになる場合があります。 [その他の役割に対応するジャーニーが今後公開](/help/journey-documentation/documentation-journeys.md#journeys)され次第、随時お知らせします。
+このジャーニーの情報は、すべてのペルソナにとって役に立ちますが、特定の役割には必要ない情報も一部あります。[その他の役割に対応するジャーニーが今後公開](/help/journey-documentation/documentation-journeys.md#journeys)され次第、随時お知らせします。
 
 ## ヘッドレス翻訳者ジャーニー {#the-journey}
 
 このジャーニーでは、多くのトピックを参照します。以下の記事では、AEM でのヘッドレスコンテンツの翻訳に関する基本的な知識と、詳細な技術ドキュメントへのリンクを示します。
 
-ジャーニーの特定の部分に直接移動することもできますが、多くの概念は、それまでの記事で紹介された概念に基づいています。したがって、AEMでヘッドレス翻訳を初めて使用する場合は、最初から順に進めることをお勧めします。
+ジャーニーの特定の部分に直接移動することもできますが、多くの概念は、それまでの記事で紹介された概念に基づいています。そのため、AEM でヘッドレス翻訳に初めて取り組む場合は、最初から順に進めていくことをお勧めします。
 
 | # | 記事 | 説明 |
 |---|---|---|
@@ -67,7 +70,7 @@ AEM を使用してヘッドレスビジネスケースを解決する方法を�
 | 1 | [ヘッドレスコンテンツの概要と AEM での翻訳方法について](learn-about.md) | ヘッドレスの概念、AEM へのマッピング方法、AEM 翻訳の基本概念について説明します。 |
 | 2 | [AEM ヘッドレス翻訳の基本を学ぶ](getting-started.md) | ヘッドレスコンテンツを整理する方法と AEM の翻訳ツールの仕組みについて説明します。 |
 | 3 | [翻訳統合の設定](configure-connector.md) | AEM を翻訳サービスに接続する方法を説明します。 |
-| 4 | [コンテンツを翻訳](translate-content.md) | 翻訳の統合とルールを使用して、ヘッドレスコンテンツを翻訳します。 |
+| 4 | [コンテンツを翻訳](translate-content.md) | 翻訳統合およびルールを使用して、ヘッドレスコンテンツを翻訳します。 |
 | 5 | [翻訳済みコンテンツの公開](publish-content.md) | 翻訳済みコンテンツを公開し、基になるコンテンツの更新時に翻訳を更新する方法を説明します。 |
 
 ## 次の手順 {#what-is-next}
@@ -78,12 +81,12 @@ AEM を使用してヘッドレスビジネスケースを解決する方法を�
 
 ドキュメントジャーニーでは、相互に関連する複雑なプロセスや機能をストーリーに従って読者に説明しながら、ビジネス上の問題を AEM で解決する方法を示します。1 つのジャーニーでは、複数の機能が連携して 1 つのビジネスニーズを満たす方法を示しています。
 
-そのため、ジャーニーは、それぞれが独立して設計されています。ただし、そのうちのいくつかは相互に関連付けることができます。 AEM の強力な機能の連携の仕組みについて詳しくは、次に示すその他のジャーニーを参照してください。
+そのため、ジャーニーは、それぞれが独立して設計されています。ただし、そのいくつかは互いに関連付けられています。AEM の強力な機能の連携の仕組みについて詳しくは、次に示すその他のジャーニーを参照してください。
 
 * [ヘッドレスオーサリングジャーニー](/help/journey-headless/author/overview.md) - AEM の強力で柔軟なヘッドレス機能とその能力および初めてのヘッドレスプロジェクトでコンテンツをモデル化する方法を説明するガイド付きジャーニーは、ここから始めてください。
 * [ヘッドレスアーキテクトジャーニー](/help/journey-headless/architect/overview.md) - Adobe Experience Manager as a Cloud Service の強力で柔軟なヘッドレス機能と、プロジェクトのコンテンツをモデル化する方法の入門的解説が必要であれば、ここから始めてください。
 * [AEM ヘッドレス開発者ジャーニー](/help/journey-headless/developer/overview.md) - AEM の強力で柔軟なヘッドレス機能とその能力および初めての開発プロジェクトでの活用方法を説明するガイド付きジャーニーは、ここから始めてください。
 * [AEM as a Cloud Service 技術ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ja) - AEM およびヘッドレステクノロジーを既にしっかり理解している場合は、アドビの詳細な技術ドキュメントを直接参照することをお勧めします。
-   * [AEM as a Headless CMS の概要](/help/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
+   * [ヘッドレス CMS としての AEM の概要](/help/headless/introduction.md)
+* [AEM 開発者ポータル](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
 * [AEM ヘッドレスチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja) - 技術指向の方が実践による学習を希望する場合は、API とフレームワーク別に整理された実践チュートリアルを利用してください。このチュートリアルでは、AEM ヘッドレスに基づくアプリケーションの作成と使用の詳細を紹介しています。

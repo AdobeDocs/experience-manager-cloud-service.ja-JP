@@ -2,7 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 リリースのリリースノート。'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 84%
@@ -11,7 +13,7 @@ ht-degree: 84%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の 2022.3.0 リリースノート {#release-notes}
 
-以下の節では、の 2022.3.0 バージョンの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
+以下の節では、2022.3.0 バージョンのの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -33,7 +35,7 @@ ht-degree: 84%
 
 ### [!DNL Sites] プレリリースチャネルで利用できる新機能 {#prerelease-features-sites}
 
-* コンテンツモデルのデータ型が、コンテンツモデルエディターで簡単なチェックボックスを使用して翻訳可能として定義できるようになりました。また、AEM翻訳ルールと設定は自動的に更新されます。
+* コンテンツモデルのデータ型が、コンテンツモデルエディターで簡単なチェックボックスを使用して翻訳可能として定義できるようになりました。また、AEMの翻訳ルールと設定は自動的に更新されます。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -59,7 +61,7 @@ ht-degree: 84%
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms}
 
-* **[!DNL Communications - Document Generation APIs]**：[ドキュメント生成 API](/help/forms/aem-forms-cloud-service-communications.md) は、PDF ドキュメントの結合、並べ替えおよび検証に役立ちます。このサービスを使用すると、同期モードでドキュメントを生成できます。 API により、以下のような機能を備えたアプリケーションを作成することができます。
+* **[!DNL Communications - Document Generation APIs]**：[ドキュメント生成 API](/help/forms/aem-forms-cloud-service-communications.md) は、PDF ドキュメントの結合、並べ替えおよび検証に役立ちます。このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
 
    * PDF ドキュメントのアセンブリ.
    * PDF ドキュメントのディスアセンブリ.
@@ -78,7 +80,7 @@ ht-degree: 84%
 ### 新機能 {#what-is-new-cif}
 
 * マルチストアシナリオでの SEO の向上：PDP／PLP の URL 形式を、CIF Cloud Config プロパティを介してストアレベルで設定できるようになりました。
-* 製品ピッカーは、UI の新しいフィルターオプションを使用して、ステージングされた製品をサポートします。  これにより、コンテンツ担当者は、今後の製品の発売に備えて製品コンテンツ管理を準備できます
+* 製品ピッカーは、UI の新しいフィルターオプションを介して、ステージングされた製品をサポートします。  これにより、コンテンツ担当者は、今後の製品の発売に備えて製品コンテンツ管理を準備できます
 * 設定プロキシ URL の代わりに CIF Cloud Config 名を使用して、CIF 設定の管理とエラー処理を簡略化しました。
 * 製品リストおよびカルーセルコンポーネントの手動カテゴリ選択。これにより、コンテンツ担当者は、カタログエクスペリエンス以外で、コンテンツページ上でこれらのコンポーネントを使用できます
 
@@ -90,13 +92,13 @@ ht-degree: 84%
 
 ### 新機能 {#what-is-new-foundation}
 
-* クラウド環境のカスタム機能のトラブルシューティングをより効率的かつ効果的におこなうために、新しい開発者ツールがリリースされました。 [リポジトリブラウザ](/help/implementing/developing/tools/repository-browser.md). 開発者コンソールから起動できる、軽量で読み取り専用のHTMLブラウザーです。 パブリッシュ、オーサー、プレビューの各層および実稼動、ステージ、開発を含むすべての環境で、コンテンツリポジトリーを表示できます。コンテンツ構造を参照し、プロパティを表示し、バイナリをプレビューおよびダウンロードします。
+* クラウド環境のカスタム機能のトラブルシューティングをより効率的かつ効果的に行うために、新しい開発者ツール、 [リポジトリブラウザー](/help/implementing/developing/tools/repository-browser.md). 軽量な読み取り専用のHTMLブラウザーで、Developer Console から起動できます。 パブリッシュ、オーサー、プレビューの各層および実稼動、ステージ、開発を含むすべての環境で、コンテンツリポジトリーを表示できます。コンテンツ構造を参照し、プロパティを表示し、バイナリをプレビューおよびダウンロードします。
 
   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* サーバー間 API 呼び出しの認証に使用される資格情報 ( 例えば、GraphQL API リクエストの場合 ) は、開発者コンソールからセルフサービス方式で有効期限が切れる前に更新できるようになりました。 詳しくは、[ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)を参照してください。
+* サーバー間 API 呼び出しの認証に使用される資格情報（例えば、GraphQL API リクエストの場合）は、有効期限切れになる前に Developer Console からセルフサービスで更新できるようになりました。 詳しくは、[ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)を参照してください。
 
-* 以前に有効にしていなかったバージョンのパージと監査ログのパージのメンテナンスタスクが、新しい環境で有効になりました。 関連する値を、[メンテナンスタスク](/help/operations/maintenance.md)記事で参照してください。
+* 以前は有効になっていなかったバージョンパージと監査ログパージのメンテナンスタスクが、新しい環境で有効になりました。 関連する値を、[メンテナンスタスク](/help/operations/maintenance.md)記事で参照してください。
 
 * AEM as a Cloud Service SDK Dispatcher ツールで、M1 チップを搭載した Mac コンピューターがサポートされるようになりました。
 
@@ -112,7 +114,7 @@ Cloud Manager の月次リリースの完全なリストは、[こちら](/help/
 
 ### 新機能 {#what-is-new-ctt}
 
-* サイズ確認ガードレール - コンテンツ転送ツールのサイズ確認機能は、コンテンツ転送の失敗を減らすうえで役に立ちます。[ サイズの確認 ] 機能を使用すると、1) に十分なディスク容量があるかどうかを `crx-quickstart` 抽出前のサブディレクトリ、2) 移行セットのサイズを推定し、サポートされているかどうかを確認します。 これらのチェックの一方または両方に違反した場合、CTT UI に警告が表示されます。 このガードレールを使用すると、コンテンツ転送の失敗を回避し、アドビのカスタマーケアと一緒に移行オプションについて事前に検討することができます。詳しくは、[移行セットのサイズとディスク空き容量の決定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja#migration-set-size)を参照してください。
+* サイズ確認ガードレール - コンテンツ転送ツールのサイズ確認機能は、コンテンツ転送の失敗を減らすうえで役に立ちます。サイズ確認機能を使用すると、1）に十分なディスク容量があるかどうかを確認できます。 `crx-quickstart` 抽出前のサブディレクトリ、および 2）移行セットのサイズを推定し、サポートされているかどうかを確認します。 これらのチェックのどちらか一方または両方に違反した場合、CTT UI に警告が表示されます。 このガードレールを使用すると、コンテンツ転送の失敗を回避し、アドビのカスタマーケアと一緒に移行オプションについて事前に検討することができます。詳しくは、[移行セットのサイズとディスク空き容量の決定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja#migration-set-size)を参照してください。
 
 ## ベストプラクティスアナライザー {#bpa-release}
 

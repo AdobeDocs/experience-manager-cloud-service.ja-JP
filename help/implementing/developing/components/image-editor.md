@@ -2,8 +2,10 @@
 title: 画像エディター
 description: 画像エディターは AEM の中核となる要素です。コンテンツ作成者は画像エディターを使用することで、画像を容易に操作できます。
 exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 100%
 

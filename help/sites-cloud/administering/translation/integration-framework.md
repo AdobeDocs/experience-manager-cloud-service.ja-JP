@@ -4,8 +4,9 @@ description: サードパーティの翻訳サービスと統合するための 
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: ea1e8e3f1ea943397b3fcb5863daa66addf88a50
-workflow-type: ht
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1462'
 ht-degree: 100%
 

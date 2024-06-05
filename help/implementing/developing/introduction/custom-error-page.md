@@ -2,10 +2,12 @@
 title: カスタムエラーページ
 description: AEM には、HTTP エラーを処理するための標準的なエラーハンドラーが付属しており、これはカスタマイズできます。
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 90%
+source-wordcount: '569'
+ht-degree: 100%
 
 ---
 
@@ -36,7 +38,7 @@ AEM には、HTTP エラーを処理するための標準的なエラーハン�
    * コピー元：`/libs/sling/servlet/errorhandler/`
    * コピー先：`/apps/sling/servlet/errorhandler/`
 
-   デフォルトでは宛先パスは存在しないので、初めてこの処理を行う際に作成する必要があります。
+   コピー先のパスはデフォルトでは存在しないので、この操作を初めて行う際は作成する必要があります。
 
 1. `/apps/sling/servlet/errorhandler` に移動します。次のどちらかを実行します。
 
@@ -77,6 +79,6 @@ HTTP [500 内部サーバーエラー](https://www.w3.org/Protocols/rfc2616/rfc2
 >
 >オーサーインスタンスで、[CQ WCM Debug Filter](/help/implementing/deploying/configuring-osgi.md) はデフォルトで有効になっています。これにより、常に応答コード 200 を返します。デフォルトのエラーハンドラーは、応答に対してフルスタックトレースを書き込むことで応答します。
 >
->カスタムのエラーハンドラーの場合、コード 500 を含む応答が必要なので、 [CQ WCM Debug Filter を無効にする必要があります](/help/implementing/deploying/configuring-osgi.md). これにより、応答コード 500 が返され、その結果、正しい Sling error-handler がトリガーされます。
+>カスタムエラーハンドラーの場合、コード 500 を含む応答が必要です。そのため、[CQ WCM Debug Filter を無効にする必要があります](/help/implementing/deploying/configuring-osgi.md)。そうすることで、応答コード 500 が返され、それによって正しい Sling エラーハンドラーがトリガーされます。
 >
 >パブリッシュインスタンスでは、CQ WCM Debug Filter は、有効として設定されている場合も含めて&#x200B;**常に**&#x200B;無効になります。

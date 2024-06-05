@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 リリースのリリースノート。'
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1292'
-ht-degree: 59%
+ht-degree: 60%
 
 ---
 
@@ -15,7 +17,7 @@ ht-degree: 59%
 
 >[!NOTE]
 >
->ここから、以前のバージョンのリリースノート（2020 年と 2021 年のバージョンなど）に移動できます。
+>ここから、以前のバージョン（例えば、2020 年と 2021 年のバージョン）のリリースノートに移動できます。
 
 >[!NOTE]
 >
@@ -34,21 +36,21 @@ ht-degree: 59%
 
 ### 新機能 {#what-is-new-foundation}
 
-* より柔軟な Dispatcher 設定：プロジェクトをより簡単に整理できます。 例えば、サイト構造を反映した複数の書き換えルールファイルを含めることができるようになりました。[詳細](/help/implementing/dispatcher/disp-overview.md#validation-debug) この柔軟なモードには、Dispatcher 設定を構築して活用する方法などがあります。
-* レプリケーションエージェントの「配布」タブのツリーレプリケーション UI は、廃止済みと見なされ、2021 年 9 月 30 日以降に削除されました。 代替レプリケーション戦略について[ご確認](/help/operations/replication.md#tree-activation)ください。
+* より柔軟な Dispatcher 設定：プロジェクトをより簡単に編成できます。 例えば、サイト構造を反映した複数の書き換えルールファイルを含めることができるようになりました。[について](/help/implementing/dispatcher/disp-overview.md#validation-debug) この柔軟なモードには、この機能を活用できるように Dispatcher 設定を構築する方法が含まれています。
+* レプリケーションエージェントの「配布」タブにあるツリーレプリケーション UI は、非推奨（廃止予定）と見なされ、2021 年 9 月 30 日（PT）以降に削除されました。 代替レプリケーション戦略について[ご確認](/help/operations/replication.md#tree-activation)ください。
 * Sling 用 `org.apache.sling.datasource-1.0.4.jar` データソースサポート用バンドルは、機能が古く、顧客に使用されていないので、削除されました。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-* コンテンツ自動化機能により、 [!DNL Experience Manager Assets] を使用します。 [!DNL Adobe Creative Cloud] 大規模なアセット作成を自動化する API。 同じアセットのバリエーションを作成するのに必要な時間と繰り返しを大幅に減らし、コンテンツベロシティを向上させます。この機能はプログラミングを必要とせず、DAM 内で動作します。[アセットの統合を使用して Creative Cloud のバリエーションを生成する](/help/assets/cc-api-integration.md)を参照してください。
+* コンテンツ自動処理機能により、 [!DNL Experience Manager Assets] を使用する [!DNL Adobe Creative Cloud] 大規模なアセット作成を自動化するための API。 同じアセットのバリエーションを作成するのに必要な時間と繰り返しを大幅に減らし、コンテンツベロシティを向上させます。この機能はプログラミングを必要とせず、DAM 内で動作します。[アセットの統合を使用して Creative Cloud のバリエーションを生成する](/help/assets/cc-api-integration.md)を参照してください。
 
-* [!DNL Experience Manager Assets] には [!DNL Document Cloud] PDF ビューアが含まれており、PDF ドキュメントをネイティブにプレビューできます。この機能を使用すると、ファイルの処理や変換をおこなわずに、複数ページの PDF ファイルをプレビューできます。この機能により、[!DNL Experience Manager] 6.5 と同等の機能が使用できるようになりました。ビューアで使用できるコントロールには、ズーム、ページへ移動、ドッキング解除、全画面表示などがあります。また、プレビューしたり、ページやブックマークにジャンプしたりすることもできます。 ファイル自体に対するコメントがサポートされます。 PDFファイル内のコンテンツに対するコメントと注釈は、今後のリリースで提供される予定です。
+* [!DNL Experience Manager Assets] には [!DNL Document Cloud] PDF ビューアが含まれており、PDF ドキュメントをネイティブにプレビューできます。この機能を使用すると、ファイルの処理や変換をおこなわずに、複数ページの PDF ファイルをプレビューできます。この機能により、[!DNL Experience Manager] 6.5 と同等の機能が使用できるようになりました。ビューアで使用できるコントロールには、ズーム、ページへ移動、ドッキング解除、全画面表示などがあります。また、プレビューして、ページやブックマークにジャンプすることもできます。 ファイル自体へのコメントはサポートされています。 PDFファイル内のコンテンツに対するコメントと注釈は、今後のリリースで追加される予定です。
 
   ![PDF ビューアを使用した [!DNL Experience Manager] での PDF ファイルのプレビュー](/help/assets/assets/preview-pdf-file-viewer.png)
 
-* リンク共有のダウンロード機能では、非同期ダウンロードを使用してダウンロード速度を上げます。 詳しくは、 [リンク共有を使用して共有されたアセットをダウンロードする](/help/assets/download-assets-from-aem.md#link-share-download).
+* リンク共有のダウンロード機能は、非同期ダウンロードを使用してダウンロード速度を上げます。 詳しくは、を参照してください [リンク共有を使用して共有されたアセットのダウンロード](/help/assets/download-assets-from-aem.md#link-share-download).
 
   ![ダウンロードインボックス](/help/assets/assets/download-inbox.png)
 
@@ -83,12 +85,12 @@ API `com.day.cq.dam.api.collection.SmartCollection` は、[!DNL Experience Manag
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms}
 
-* これで、Automated forms conversionサービスを [PDF formsをフランス語、ドイツ語、スペイン語で変換する](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=ja#language-specific-meta-model) をアダプティブフォームに追加します。
-* アダプティブフォームのコンポーネントに関連するエラーを表示するためのパネルをテンプレートエディターに別に追加しました。 これにより、すべてのアダプティブフォームのエラーが 1 か所に集約されるので、解決に要する時間を短縮できます。
+* これで、Automated forms conversionサービスを使用して以下を行えるようになりました [フランス語、ドイツ語、スペイン語でのPDF formsの変換](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=ja#language-specific-meta-model) をアダプティブフォームに追加します。
+* テンプレートエディターに、アダプティブフォームのコンポーネントに関連するエラーを表示するためのパネルを別途追加しました。 これにより、すべてのアダプティブフォームのエラーが 1 か所に集約されるので、解決に要する時間を短縮できます。
 
 ### [!DNL Forms]プレリリースチャネルで利用できる新機能 {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) では、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。 API により、以下のような機能を備えたアプリケーションを作成することができます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) では、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
    * テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成します。
    * 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
    * XFA フォーム PDF および Adobe Acrobat フォームから印刷用 PDF ファイルを生成します。
@@ -97,7 +99,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` は、[!DNL Experience Manag
 
 * **Acroform べースのレコードのドキュメント**：XFA ベースのフォームテンプレート以外にも、[Adobe Acrobat Form PDF（Acroform PDF）](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja) を、レコードドキュメントのテンプレートとして使用することもできます。
 
-* **Microsoft® Azure データストアコネクタ**：次が可能です。 [フォームデータモデルをMicrosoft® Azure ストレージに接続する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). これにより、アダプティブフォームのデータを取得し、BLOB としてMicrosoft® Azure Storage に保存することができます。
+* **Microsoft® Azure データストアコネクタ**：以下が可能になりました [Microsoft® Azure Storage へのフォームデータモデルの接続](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). アダプティブフォームデータを取得して、BLOB としてMicrosoft® Azure ストレージに保存できます。
 
 ## CIF アドオン {#cloud-services-cif}
 
@@ -116,7 +118,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` は、[!DNL Experience Manag
 
 * コンテンツプロバイダーの設定は、作成または更新時に検証されるようになりました。
 
-* すべての表示ビューにはフォルダ列があります。
+* すべての表示ビューにはフォルダー列があります。
 
 * Screens コンテンツ構造を展開できます。
 
@@ -124,21 +126,21 @@ API `com.day.cq.dam.api.collection.SmartCollection` は、[!DNL Experience Manag
 
 * ヘルプリンクが更新され、新しい Screens クラウドドキュメントと一致するようになりました。
 
-* プレイリストの割り当てを解除し、プレーヤーが割り当てられたプレイリストの削除を許可しなくなりました。
+* プレイリストの割り当てを解除し、プレーヤーを割り当てたプレイリストの削除を許可しない機能が追加されました。
 
-* 「すべて」のキャッシュがクリアされると、プレーヤーがアセットを再ダウンロードするようになりました。
+* 「すべて」のキャッシュがクリアされた場合、プレーヤーがアセットを再ダウンロードするようになりました。
 
-* スケジュール設定を今すぐ繰り返す ( *終了時刻* が翌日に設定されます。
+* 繰り返しスケジュールが機能するようになりました（次の場合） *終了時刻* は次の日に設定されています。
 
 * `Back&Forward` が、Screens as a Cloud Service UI で機能するようになりました。
 
-* 同じ名前で異なる名前空間を持つタグを以前に作成することはできませんでした。
+* 以前は、名前が同じで異なる名前空間を持つタグを作成することができませんでした。
 
 ## Experience Manager as a Cloud Service の XML ドキュメント {#xml-documentation}
 
 ### 新機能 {#what-is-new-xml-documentation}
 
-Experience Manager as a Cloud Service の XML ドキュメントが一般利用可能になりました。これにより、as a Cloud ServiceのExperience Managerのお客様がXML Documentationアドオンを調達して、Experience Manager Sitesを含む複数のチャネルにわたって技術コンテンツを読み込み、作成、管理および配信できます。
+Experience Manager as a Cloud Service の XML ドキュメントが一般利用可能になりました。as a Cloud ServiceExperience Managerを持つお客様は、Experience Manager Sitesを含む複数のチャネルでテクニカルコンテンツをインポート、作成、管理、配信するためのXML Documentation アドオンを入手できます。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -150,27 +152,27 @@ AEM as a Cloud Service 2021.7.0 の Cloud Manager のリリース日は 2021 年
 
 ### 新機能 {#what-is-new-cm-july}
 
-* お客様は、Cloud Manager のビルドプロセスに Azul 8 および 11 JDK を使用できるようになり、ツールチェーン互換の Maven プラグインにこれらの JDK の 1 つを使用するように選択できます。 *または* Maven プロセスの実行全体。
+* お客様は、Cloud Manager のビルドプロセスに Azul 8 および 11 JDK を使用できるようになりました。ツールチェーン対応の Maven プラグインには、これらの JDK のいずれかを使用するように選択できます *または* maven プロセスの実行全体。
 
-* 送信エグレス IP がビルドステップのログファイルに記録されます。
+* アウトバウンドの出口の IP がビルドステップのログファイルに記録されるようになりました。
 
-* 古いバージョンのAEMを実行するステージ環境と実稼動環境で、「 **更新可能**.
+* 古いバージョンのAEMを実行しているステージ環境と実稼動環境で、次のステータスがレポートされるようになりました **更新可**.
 
 * サポートされる SSL 証明書の最大数が、プログラムあたり 20 に増えました。
 
 * 設定できるドメインの最大数が、環境あたり 500 に増えました。
 
-* The **Git を管理** ボタンのタイトルが次の値に変更されました： **Git 情報にアクセス** ダイアログボックスが視覚的に更新されました。
+* この **Git を管理** ボタンのタイトルがに変更されました **Git 情報へのアクセス** ダイアログ ボックスが視覚的に更新されました。
 
 * Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 28 に更新されました。
 
 ### バグ修正 {#bug-fixes-cm-july}
 
-* IP 環境を環境にバインドする際に、プレビューを使用できない許可リストに加える場合がありました。
+* IP 許可リストを環境にバインドする際に、「プレビュー」オプションが使用できないことがありました。
 
 * 存在しない実行の実行詳細ページに手動で移動しても、エラーが表示されず、読み込みが無限に繰り返される画面が表示されるだけでした。
 
-* SSL 証明書の最大数に達した場合に表示されるエラーメッセージが役に立ちませんでした。
+* SSL 証明書の最大数に達した場合に表示されるエラーメッセージが参考になりませんでした。
 
 * 状況によっては、**概要**&#x200B;ページのパイプラインカードに表示されるリリースバージョンが矛盾していることがありました。
 
@@ -178,7 +180,7 @@ AEM as a Cloud Service 2021.7.0 の Cloud Manager のリリース日は 2021 年
 
 ### 既知の問題 {#known-issues-cm-july}
 
-Azul JDK を使用するように切り替えるお客様は、Azul JDK でエラーなしにコンパイルされない既存のアプリケーションがあることを知っている必要があります。 Adobeでは、切り替える前にローカルでテストすることをお勧めします。
+Azul JDK の使用に切り替えるお客様は、すべての既存アプリケーションが Azul JDK でエラーなしにコンパイルされるとは限らないことに注意してください。 Adobeでは、切り替える前にローカルでテストすることをお勧めします。
 
 ## Cloud Acceleration Manager {#cam}
 
@@ -188,8 +190,8 @@ Cloud Acceleration Manager のリリース日は 2021 年 7 月 15 日です。
 
 ### 新機能 {#what-is-new-cam}
 
-Cloud Acceleration Manager は、Cloud Service の計画から運用開始まで、移行プロセス全体を通じて IT チームをガイドするために設計されたクラウドベースのアプリケーションです。Adobeが推奨するベストプラクティス、ヒント、ドキュメント、ツールを使用して、AEMへのCloud Serviceとしてのジャーニーのあらゆる段階で役立つように、チームを設定して移行を成功させます。 詳細は[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=ja)をご覧ください。
+Cloud Acceleration Manager は、Cloud Service の計画から運用開始まで、移行プロセス全体を通じて IT チームをガイドするために設計されたクラウドベースのアプリケーションです。Cloud ServiceとしてのAEMへの移行プロセスの各段階で役立つ、Adobeが推奨するベストプラクティス、ヒント、ドキュメント、ツールを使用して、移行を成功させるためのチームを設定します。 詳細は[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=ja)をご覧ください。
 
 >[!NOTE]
 >
-> ご確認ください [Cloud Acceleration Manager のデモビデオ](https://video.tv.adobe.com/v/335547).
+> こちらをご覧ください [Cloud Acceleration Manager のデモビデオ](https://video.tv.adobe.com/v/335547).

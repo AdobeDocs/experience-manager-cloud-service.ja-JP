@@ -2,10 +2,13 @@
 title: プログラムとプログラムタイプについて
 description: Cloud Manager の階層、その構造に様々な種類のプログラムが収まる仕組み、それらのプログラムの違いなどについて説明します。
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +36,7 @@ Cloud Manager は、エンティティ階層を軸に構築されています。
 
 Cloud Manager プログラムには、独自の Git リポジトリが自動的にプロビジョニングされます。
 
-Cloud Manager の Git リポジトリにアクセスするには、コマンドラインツール、スタンドアロンの Visual Git クライアント、または Eclipse、IntelliJ、NetBeans などのユーザーの IDE を使用して Git クライアントを使用する必要があります。
+Cloud Manager の Git リポジトリにアクセスするには、ユーザーは、コマンドラインツールを持つ Git クライアント、スタンドアロンのビジュアル Git クライアント、またはユーザーが選択した IDE（Eclipse、IntelliJ、NetBeans など）を使用する必要があります。
 
 Git クライアントをセットアップすると、Cloud Manager ユーザーインターフェイスから Git リポジトリを管理できます。Cloud Manager ユーザーインターフェイスを使用して Git を管理する方法については、[Git へのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)を参照してください。
 
@@ -53,7 +56,7 @@ $ git clone {URL}
 
 ## プログラムの種類 {#program-types}
 
-ユーザーは、 **実稼動** プログラムまたは **sandbox** プログラム。
+ユーザーは、**実稼動**&#x200B;プログラムまたは&#x200B;**サンドボックス**&#x200B;プログラムを作成できます。
 
 * **実稼動プログラム**&#x200B;は、サイトのライブトラフィックを有効にするために作成されます。
    * 詳しくは、[実稼動プログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)を参照してください。

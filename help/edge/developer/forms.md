@@ -3,8 +3,9 @@ description: AEM では、送信されたデータを Microsoft Excel または 
 title: Forms
 feature: Edge Delivery Services
 exl-id: 80568e24-3ce1-46a9-a13c-99e07d99b50a
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '19'
 ht-degree: 100%
 

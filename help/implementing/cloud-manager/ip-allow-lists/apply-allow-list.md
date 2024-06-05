@@ -2,8 +2,11 @@
 title: IP 許可リストの適用と適用解除
 description: IP 許可リストを環境に適用および適用解除する方法を説明します。
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
-source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 100%
 

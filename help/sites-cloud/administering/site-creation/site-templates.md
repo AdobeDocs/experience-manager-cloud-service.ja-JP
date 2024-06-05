@@ -4,8 +4,9 @@ description: AEM サイトテンプレートを使用して、サイト構造と
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: ht
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 100%
 

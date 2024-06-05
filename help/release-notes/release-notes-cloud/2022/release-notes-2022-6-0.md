@@ -2,16 +2,18 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 リリースのリリースノート。'
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 86%
+source-wordcount: '633'
+ht-degree: 81%
 
 ---
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の 2022.6.0 リリースノート {#release-notes}
 
-以下の節では、の 2022.6.0 バージョンの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
+以下の節では、2022.6.0 バージョンのの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -37,7 +39,7 @@ ht-degree: 86%
 
 ### の新機能[!DNL Sites] {#sites-features}
 
-* 新しい [ユーザーインターフェイス](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) は、コンテンツ管理者やコンテンツ作成者が、公開、非公開、コピー、移動などの管理、検索/フィルタリング、ヘッドレスユースケース向けのコンテンツフラグメントの作成を効率的におこなえるようになりました。
+* 新品 [ユーザーインターフェイス](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) コンテンツ管理者やコンテンツ作成者が、ヘッドレスのユースケースでのコンテンツフラグメントの管理（公開、非公開、コピー、移動など）、検索/フィルタリング、作成を効率的に行えるようになりました。
 
   ![コンテンツフラグメントコンソール](/help/release-notes/assets/cf-ui.png)
 
@@ -47,7 +49,7 @@ ht-degree: 86%
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-Experience Manager Assets は Adobe Sensei AI 機能を使用して、[画像内の色を区別し、取り込み時に自動的にタグとして適用するようになりました](/help/assets/color-tag-images.md)。 これらのタグを使用すると、画像の色の構成に基づいて、検索エクスペリエンスを強化できます。 画像にタグ付けされるカラーの数を 1～40 の範囲内で設定し、後でそれらのカラーに基づいて画像を検索できます。
+Experience Manager Assets は Adobe Sensei AI 機能を使用して、[画像内の色を区別し、取り込み時に自動的にタグとして適用するようになりました](/help/assets/color-tag-images.md)。 これらのタグを使用すると、画像の色の構成に基づいて、検索エクスペリエンスを強化できます。 画像にタグ付けされるカラーの数を 1 ～ 40 の範囲で設定し、後でそれらのカラーに基づいて画像を検索できます。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -69,7 +71,7 @@ Experience Manager Assets は Adobe Sensei AI 機能を使用して、[画像内
 
 * I/O Runtime 上のサードパーティのコネクタの互換性と堅牢性の向上
 
-* GQL クライアント設定の上書きのサポートを改善しました（例えば、カスタムキャッシュ動作を設定する）。
+* GQL クライアント設定の上書きのサポートを改善しました（例：カスタムキャッシュ動作の設定）
 
 * 複数のコマースエンドポイントが標準でサポートされるようになり、Cloud Manager を介して設定できるようになりました。 詳細については、[こちら](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554)の CIF ブログを参照してください。
 
@@ -94,7 +96,7 @@ Experience Manager Assets は Adobe Sensei AI 機能を使用して、[画像内
 
 ### 新機能 {#what-is-new-foundation}
 
-* (2022.5.0)5 月のリリースノートで述べたように、レプリケーションエージェント管理画面の「ツリーを追加」オプション **分布** 」タブが削除されました。 代わりに、コンテンツのツリー階層を持つパッケージは、[公開を管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーを公開](/help/operations/replication.md#manage-publication#publish-content-tree-workflow)ワークフローを使用して複製する必要があります。
+* 5 月（2022.5.0）のリリースノートに記載されているように、レプリケーションエージェント管理画面の下の「ツリーを追加」オプション **配分** タブが削除されました。 代わりに、コンテンツのツリー階層を持つパッケージは、[公開を管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーを公開](/help/operations/replication.md#manage-publication#publish-content-tree-workflow)ワークフローを使用して複製する必要があります。
 
 ## Cloud Manager {#cloud-manager}
 

@@ -2,7 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の 2020.8.0 リリースのリリースノート。'
 description: "[!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 のリリースノート。"
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 92%
@@ -20,7 +22,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * [ページとサブページ（ページツリー）を以前のバージョンに戻す](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions)機能。
 
-* 次の機能を持つ [ローンチを作成](/help/sites-cloud/authoring/launches/overview.md) AEM内 [SPA Editor](/help/implementing/developing/hybrid/introduction.md).
+* ～する能力 [ローンチを作成](/help/sites-cloud/authoring/launches/overview.md) （AEM内） [SPA Editor](/help/implementing/developing/hybrid/introduction.md).
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
@@ -33,7 +35,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * 新しい[アセットダウンロードエクスペリエンス](/help/assets/download-assets-from-aem.md)には以下の特長があります。
 
-   * 大規模なダウンロードの場合は非同期的にダウンロードするので、ユーザーが待つ必要がなくなります。
+   * 大量のダウンロードに対して非同期ダウンロードを使用するので、ユーザーは待つ必要がありません。
    * 新しいモジュラー API を使用して開発者が機能を拡張できる。
 
 * アセットマイクロサービスのメタデータ抽出のパフォーマンスが向上しました。アセット取り込みの全体的なスループットが向上しました。
@@ -76,7 +78,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 ### 新機能 {#what-is-new-cloud-manager}
 
-* コンテンツ監査は、Cloud Manager Sites 実稼動パイプラインで有効な機能です。Sites を使用するプログラムの実稼働パイプライン設定に、**コンテンツ監査**&#x200B;という名前の 3 番目のタブが含まれるようになりました。実稼動パイプラインが実行されるたびに、カスタム機能テストの後に新しいコンテンツ監査手順がパイプラインに含まれます。この手順は、パフォーマンス、SEO（検索エンジン最適化）、アクセシビリティ、ベストプラクティス、PWA（プログレッシブ Web アプリ）などの複数のディメンションに対してサイトを評価します。
+* コンテンツ監査は、Cloud Manager Sites 実稼動パイプラインで有効な機能です。Sites を使用するプログラムの実稼働パイプライン設定に、**コンテンツ監査**&#x200B;という名前の 3 番目のタブが含まれるようになりました。実稼動パイプラインが実行されるたびに、パフォーマンス、SEO （検索エンジンの最適化）、アクセシビリティ、ベストプラクティス、PWA（プログレッシブ web アプリ）などの複数のディメンションに対してサイトを評価するカスタム機能テストの後、新しいコンテンツ監査手順が実行されます。
 
 
   >[!NOTE]
@@ -138,8 +140,8 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 ### 新機能 {#what-is-new-refactoring}
 
-* コードリファクタリングツールを統合するための AIO-CLI プラグインがリリースされ、開発者がコードリファクタリングツールを一元的に呼び出して実行できるようになりました。詳しくは、 [Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) を参照してください。
+* コードリファクタリングツールを統合するための AIO-CLI プラグインがリリースされ、開発者がコードリファクタリングツールを一元的に呼び出して実行できるようになりました。参照： [Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) を参照してください。
 
-* AEM Dispatcher コンバーターが拡張されて、オンプレミス設定と Adobe Managed Services Dispatcher 設定を、AEM as a Cloud Service と互換性のある Dispatcher 設定に変換できるようになりました。詳しくは、 [Git リソース：AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) を参照してください。
+* AEM Dispatcher コンバーターが拡張されて、オンプレミス設定と Adobe Managed Services Dispatcher 設定を、AEM as a Cloud Service と互換性のある Dispatcher 設定に変換できるようになりました。参照： [Git リソース：AEM Cloud Service Dispatcher コンバーター](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) を参照してください。
 
 * AEM Dispatcher コンバーターが ` node.js ` で書き換えられ、AIO-CLI プラグインと統合されました。

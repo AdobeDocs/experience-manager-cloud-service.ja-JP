@@ -2,10 +2,12 @@
 title: AEM 内での外部 SPA の編集
 description: このドキュメントでは、スタンドアロン SPA を AEM インスタンスにアップロードし、編集可能なコンテンツのセクションを追加し、オーサリングを有効にするための推奨手順について説明します。
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2418'
-ht-degree: 97%
+source-wordcount: '2374'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +27,7 @@ ht-degree: 97%
 * [AEM プロジェクトのアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja?#available-properties)を使用して、基本 AEM SPA プロジェクトを作成します。
    * Forms は AEM プロジェクトの基盤を更新し、外部 SPA を含めます。
    * このドキュメントの例では、[WKND SPA プロジェクト](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ja#spa-editor)の開始点を使用しています。
-* 手元に統合する外部 React SPAが機能している。
+* 統合したい外部の React SPA を用意します。
 
 ## SPA を AEM プロジェクトにアップロードする {#upload-spa-to-aem-project}
 
@@ -111,7 +113,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
    ![テキストコンポーネントのプロパティ](assets/external-spa-text-properties.png)
 
-   これらの値は、プロパティとして作成されたに渡されます。 `AEMText` React コンポーネントを使用し、コンテンツのレンダリングに使用できます。
+   これらの値は、作成された `AEMText` React コンポーネントにプロパティとして渡され、コンテンツのレンダリングに使用できます。
 
    ```javascript
    import React from 'react';
@@ -343,7 +345,7 @@ mvn clean install -PautoInstallSinglePackage
 
 1. SPA ルーティング内のヘルパーを追加します。
 
-   * 作成されたページは、AEMで期待されたコンテンツをまだレンダリングできません。 これは、ルーターが `/test` のパスを想定しているのに対し、AEM のアクティブパスは `/wknd-spa-react/us/en/test` であるからです。AEM 固有の URL 部分を受け入れるには、SPA 側にヘルパーを追加する必要があります。
+   * 作成されたページでは、AEM で期待されたコンテンツをまだレンダリングできません。これは、ルーターが `/test` のパスを想定しているのに対し、AEM のアクティブパスは `/wknd-spa-react/us/en/test` であるからです。AEM 固有の URL 部分を受け入れるには、SPA 側にヘルパーを追加する必要があります。
 
    ![ルーティングヘルパー](assets/external-spa-router-helper.png)
 
@@ -356,7 +358,7 @@ mvn clean install -PautoInstallSinglePackage
 
 1. AEM でのページの編集を確認します。
 
-   * プロジェクトをAEMにデプロイし、作成した `test` ページに貼り付けます。 これで、ページコンテンツがレンダリングされ、AEM コンポーネントが編集可能になります。
+   * プロジェクトを AEM にデプロイし、作成した `test` ページに移動します。これで、ページコンテンツがレンダリングされ、AEM コンポーネントが編集可能になります。
 
 ## フレームワークの制限 {#framework-limitations}
 

@@ -2,16 +2,18 @@
 title: Admin Console へのアクセス
 description: オンボーディングに必要な準備と AEMaaCS 構造の基本事項を理解したら、Admin Console に初めてログインする準備が整います。
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 84%
+source-wordcount: '1071'
+ht-degree: 100%
 
 ---
 
 # Admin Console へのアクセス {#accessing-admin-console}
 
-この部分では、 [オンボーディングジャーニー](overview.md) システムに初めてログインする前に必要な準備について学習します。
+[オンボーディングジャーニー](overview.md)のこの部分では、システムに初めてログインする前に必要な準備を説明します。
 
 ## 目的 {#objective}
 
@@ -26,11 +28,11 @@ ht-degree: 84%
 
 ## Admin Console {#admin-console}
 
-Adobe Admin Console では、アドビ製品のライセンスとユーザーを一元管理します。Admin Consoleを使用すると、様々なソリューション内ではなく、1 か所でユーザーを作成および管理できます。
+Adobe Admin Console では、アドビ製品のライセンスとユーザーを一元管理します。Admin Console を使用すると、別々なソリューション内ではなく、1 か所でユーザーを作成および管理できます。
 
 ## Adobe ID {#adobe-id}
 
-Admin Consoleにサインインするには、Adobe IDが必要です。 また、Adobe ID は、AEM as a Cloud Service や任意のアドビソリューションにログインしてアクセスするために必要な、特定のメールアドレスに関連付けられたアカウントです。Adobe ID を使用すると、アドビのすべてのプランと製品を 1 つのアカウントに関連付けることができます。
+Admin Console にログインするには、Adobe ID が必要です。また、Adobe ID は、AEM as a Cloud Service や任意のアドビソリューションにログインしてアクセスするために必要な、特定のメールアドレスに関連付けられたアカウントです。Adobe ID を使用すると、アドビのすべてのプランと製品を 1 つのアカウントに関連付けることができます。
 
 システム管理者が Admin Console でチームをセットアップする際に、Adobe ID として使用するメールアドレスを指定します。
 
@@ -40,7 +42,7 @@ Adobe ID には次の 3 種類があります。
 
 * **Enterprise ID**：組織は、ユーザーのアカウントに対する管理を強化したいと考えるのが普通です。Enterprise ID を作成できるのはシステム管理者のみであり、これらのアカウントを所有するのはお客様組織です（アドビはホストとしてのみ機能します）。
 
-* **Federated ID**：Federated ID を使用すると、組織はアカウントを完全に所有して管理できます。これをおこなうには、組織でAdobe Experience Cloudを SAML2 シングルサインオン (SSO) システムと統合する必要があります。 これにより、ユーザーはアドビがホストするアカウントではなく、組織の SSO システムに対して認証できます。
+* **Federated ID**：Federated ID を使用すると、組織はアカウントを完全に所有して管理できます。これを行うには、組織は Adobe Experience Cloud を SAML2 シングルサインオン（SSO）システムと統合する必要があります。これにより、ユーザーはアドビがホストするアカウントではなく、組織の SSO システムに対して認証できます。
 
 システム管理者は、Enterprise ID または Federated ID を設定する前に、個人 ID を使用して自分自身とチームを AEM as a Cloud Service にオンボードすることを決定できます。Enterprise ID または Federated ID を設定したら、それらの ID を使用するようにメンバーを移行できます。
 
@@ -50,11 +52,11 @@ Admin Console を使用してチーム内のユーザーを管理する前に、
 
 1. システム管理者は、オンボーディングプロセスの一環としてアドビから複数のメールを受信します。アクセス権が付与された組織名に関する情報を記載したウェルカムメールを探します。
 
-1. 次をクリック： **基本を学ぶ** 「Admin Console」に移動するには、「ようこそ」の電子メールにリンクを含めてください。 電子メールが見つからない場合は、ブラウザーを直接開いて、次の場所にAdmin Consoleを作成します。 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
+1. ウェルカムメールの&#x200B;**使用開始**&#x200B;リンクをクリックして、Admin Console に移動します。メールが見つからない場合は、ブラウザーを開いて [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) の Admin Console に直接アクセスします。
 
    ![ウェルカムメール](/help/journey-onboarding/assets/get-started-email.png)
 
-1. Adobe ID でのログインします。ログインに成功すると、 **概要** Adobe Admin Consoleの
+1. Adobe ID でのログインします。ログインに成功すると、Adobe Admin Console の&#x200B;**概要**&#x200B;ページが表示されます。
 
    ![Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
@@ -66,7 +68,7 @@ Admin Console を使用してチーム内のユーザーを管理する前に、
 
    ![管理者の確認](/help/journey-onboarding/assets/get-started2.png)
 
-1. 次をクリックした後： **管理者** から **ユーザー** カードを使用する場合、Adobe IDの E メール、ユーザー名、名または姓を入力して検索できます。
+1. **ユーザー**&#x200B;カードで「**管理者**」をクリックすると、Adobe ID のメールアドレス、ユーザー名、名、姓を入力して検索できます。
 
    ![ユーザーを検索](/help/journey-onboarding/assets/get-started3.png)
 
@@ -82,7 +84,7 @@ AEM as a Cloud Service には、認証用に Adobe Identity Management System（
 
 AEM as a Cloud Service は IMS を使用することで、AEM と Adobe Experience Cloud のその他の部分との間のログインエクスペリエンスを統合することができます。特に複数のアドビ製品を利用している組織では、Admin Console で役割に基づくグループを作成し、IMS で AEM as a Cloud Service を含む複数の製品へのアクセス権を割り当てることでメリットが得られます。
 
-製品プロファイルの詳細とユーザーの割り当てについては、このオンボーディングジャーニーの次のパートで説明します。
+製品プロファイルとユーザーの割り当てについて詳しくは、このオンボーディングジャーニーの次の部分を参照してください。
 
 ## アドビサポートへのお問い合わせ {#support}
 
@@ -90,7 +92,7 @@ AEM as a Cloud Service は IMS を使用することで、AEM と Adobe Experien
 
 ![「サポート」タブ](/help/journey-onboarding/assets/support-menu.png)
 
-「 」タブでは、ケースの作成と管理、Adobeカスタマーサポート担当者との直接のチャット、エキスパートとのセッションのスケジュール設定をおこなうことができます。 サポートケースとエキスパートセッションのオプションにアクセスするには、 システム管理者とサポート管理者としてログインする必要があります。
+このタブを使用すると、ケースの作成や管理、アドビカスタマーサポートの担当者との直接のチャット、エキスパートとのセッションの予約などを行うことができます。サポートケースとエキスパートセッションのオプションにアクセスするには、 システム管理者とサポート管理者としてログインする必要があります。
 
 ## 次の手順 {#whats-next}
 

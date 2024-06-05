@@ -2,8 +2,10 @@
 title: コンポーネントの JSON 書き出しの有効化
 description: モデラーフレームワークに基づいてコンテンツの JSON 書き出しを生成するように、コンポーネントを適応させることができます。
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 100%
 
@@ -24,7 +26,7 @@ JSON 書き出しは、[Sling Model](https://sling.apache.org/documentation/bund
 
 ## コンポーネントに Sling Model を定義する {#define-a-sling-model-for-the-component}
 
-まず、コンポーネントに Sling Model を定義する必要があります。
+まず、コンポーネントに Sling モデルを定義する必要があります。
 
 >[!NOTE]
 >

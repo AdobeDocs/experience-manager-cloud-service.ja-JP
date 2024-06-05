@@ -1,13 +1,15 @@
 ---
 title: Sling Model Exporter による ResourceResolvers のシリアル化を許可しない
 description: Sling Model Exporter による ResourceResolvers のシリアル化を許可しない
-source-git-commit: 4543a4646719f8433df7589b21344433c43ab432
-workflow-type: ht
+exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 100%
 
 ---
-
 
 # Sling Model Exporter による ResourceResolvers のシリアル化を許可しない {#disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter}
 
@@ -50,6 +52,3 @@ WARN メッセージは、AEM as a Cloud Service とローカル AEM SDK の両�
 ほとんどの場合、これらの必要な変更はわかりやすく、JSON 出力では `ResourceResolver` オブジェクトはまったく必要ありません。含まれる情報は、通常、フロントエンドアプリケーションでは必要ありません。つまり、ほとんどの場合、Jackson によって考慮されないように `ResourceResolver` オブジェクト（[ルール](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)を参照）を除外するだけで十分です。
 
 Sling モデルがこの問題の影響を受けても変更はされない場合、`ResourceResolver` オブジェクトのシリアル化を明示的に無効にする（2 番目の手順としてアドビが実行する）ことで、JSON 出力が強制的に変更されます。
-
-
-

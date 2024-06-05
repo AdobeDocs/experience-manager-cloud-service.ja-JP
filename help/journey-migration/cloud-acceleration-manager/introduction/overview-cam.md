@@ -2,7 +2,9 @@
 title: Cloud Acceleration Manager の概要
 description: ここでは、Cloud Acceleration Manager の概要を説明します。
 exl-id: 0b851eac-fdce-470c-9a14-15b41106086b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 100%

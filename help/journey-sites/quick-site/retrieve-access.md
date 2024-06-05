@@ -2,10 +2,13 @@
 title: Git リポジトリのアクセス情報の取得
 description: フロントエンド開発者が Cloud Manager を使用して Git リポジトリ情報にアクセスする方法について説明します。
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 83%
+source-wordcount: '874'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +27,7 @@ ht-degree: 83%
 
 この記事では、次の手順で、フロントエンド開発者が Cloud Manager へのアクセス権を使用して、AEM Git リポジトリにアクセスするための資格情報を取得する方法を説明します。
 
-テンプレートに基づいて作成されたサイトがあるので、パイプラインが設定され、フロントエンド開発者がオンボーディングされ、必要な情報がすべて含まれているので、この記事の全体像を管理者から離れ、フロントエンド開発者の役割のみに変更します。
+テンプレートに基づいたサイトが作成され、パイプラインが設定され、フロントエンド開発者がオンボーディングされ、必要な情報がすべて揃ったので、この記事では、管理者から離れ、フロントエンド開発者の役割のみに視点を移します。
 
 ## 目的 {#objective}
 
@@ -76,9 +79,9 @@ Cloud Manager 管理者から、Cloud Manager ユーザーとしてオンボー�
 
 ## Cloud Manager へのアクセス {#access-cloud-manager}
 
-1. Adobe Experience Cloud( ) にログインします。 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) または「ようこそ」の電子メールに記載されているリンクをクリックします。
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) の Adobe Experience Cloud にログインするか、ウェルカムメールに記載されているリンクをクリックします。
 
-1. Cloud Manager に、使用可能な様々なプログラムのリストが表示されます。Cloud Manager 管理者の指示に従って、アクセスする必要があるものを選択します。 これが最初の AEMaaCS のフロントエンドプロジェクトの場合は、提供されるプログラムは 1 つだけでしょう。
+1. Cloud Manager に、使用可能な様々なプログラムのリストが表示されます。Cloud Manager 管理者から提供されたものの中から、アクセスする必要があるものを選択します。これが最初の AEMaaCS のフロントエンドプロジェクトの場合は、提供されるプログラムは 1 つだけでしょう。
 
    ![Cloud Manager でのプログラムの選択](assets/cloud-manager-select-program.png)
 
@@ -88,7 +91,7 @@ Cloud Manager 管理者から、Cloud Manager ユーザーとしてオンボー�
 
 ## リポジトリのアクセス情報の取得 {#repo-access}
 
-1. Adobe Analytics の **パイプライン** 」セクションで、 **リポジトリ情報にアクセス** 」ボタンをクリックします。
+1. Cloud Manager ページの「**パイプライン**」セクションで、「**リポジトリー情報へアクセス**」ボタンを選択します。
 
    ![パイプライン](assets/pipelines-repo-info.png)
 
@@ -96,13 +99,13 @@ Cloud Manager 管理者から、Cloud Manager ユーザーとしてオンボー�
 
    ![リポジトリ情報](assets/repo-info.png)
 
-1. を選択します。 **パスワードを生成** 」ボタンをクリックして、自分用のパスワードを作成します。
+1. 「**パスワードを生成**」ボタンを選択して、自分用のパスワードを作成します。
 
 1. 生成したパスワードを安全なパスワードマネージャーに保存します。パスワードが再び表示されることはありません。
 
 1. 「**ユーザー名**」フィールドと「**Git コマンドライン**」フィールドもコピーします。後でこの情報を使用して、リポジトリにアクセスします。
 
-1. 選択 **閉じる**.
+1. 「**閉じる**」を選択します。
 
 ## 次の手順 {#what-is-next}
 
@@ -111,7 +114,7 @@ Cloud Manager 管理者から、Cloud Manager ユーザーとしてオンボー�
 * Cloud Manager とは何かをハイレベルで理解します。
 * カスタマイズをコミットできるよう、AEM Git にアクセスするための資格情報を取得しました。
 
-この知識に基づいてドキュメントを次に確認し、AEMクイックサイト作成のジャーニーを続行します。 [サイトテーマのカスタマイズ](customize-theme.md) ここでは、サイトテーマの構築方法、カスタマイズ方法、およびAEMのライブコンテンツを使用したテスト方法について学びます。
+この知識に基づいて、次は[サイトテーマのカスタマイズ](customize-theme.md)のドキュメントを確認して、AEM クイックサイト作成ジャーニーを続行してください。そこでは、サイトテーマの作成方法、カスタマイズ方法および AEM のライブコンテンツを使用したテスト方法を習得します。
 
 ## その他のリソース {#additional-resources}
 

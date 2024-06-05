@@ -2,14 +2,14 @@
 title: App Builder アプリケーションの作成
 description: 新しい App Builder アプリケーションを作成し、ブートストラップする方法を説明します。
 version: Cloud Service
-feature: App Builder
+feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
 level: Beginner
 kt: 9455, 9471, 9472, 9473
 thumbnail: 339168.jpg
 exl-id: 6e080945-8789-4dfa-b093-9df10c278e11
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 100%

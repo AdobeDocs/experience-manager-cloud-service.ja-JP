@@ -2,8 +2,11 @@
 title: ページの管理
 description: AEM で web サイトのページを管理する方法（移動、コピー、削除など）について説明します。
 exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 100%
 

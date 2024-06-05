@@ -2,10 +2,13 @@
 title: TXT レコードの追加
 description: TXT レコードを追加して、Cloud Manager でカスタムドメイン名を追加する方法を説明します。
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 91%
+source-wordcount: '323'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +18,7 @@ DNS TXT レコードは、ドメインを CDN サービスでホストするこ�
 
 TXT レコードを追加する前に、お客様は次の要件を満たす必要があります。
 
-* 組織のドメインの DNS レコードを編集できるか、可能な担当者に問い合わせる必要があります。
+* 組織のドメインの DNS レコードを編集できる、またはそれが可能な適切な担当者に連絡できなければなりません。
 * ドメインホストまたは登録機関がわからない場合は、確認する必要があります。
 
 ドメインの検証を開始すると、Cloud Manager で検証に使用する名前と TXT 値が提供されます。指定した名前と値を使用して、ドメインの DNS サーバーに TXT レコードを送信します。
@@ -46,4 +49,4 @@ dig TXT _aemverification.example.com -t txt
 
 >[!TIP]
 >
->次の項目があります。 [DNS ルックアップツール](https://www.ultratools.com/tools/dnsLookup) 使用可能 Google DoH を使用して、TXT レコードエントリを検索し、TXT レコードが見つからないか、間違っているかを識別できます。
+>使用可能な [DNS ルックアップツール](https://www.ultratools.com/tools/dnsLookup)がいくつかあります。Google DoH を使用して、TXT レコードエントリを検索し、TXT レコードが見つからないか、間違っているかを識別できます。

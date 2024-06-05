@@ -1,8 +1,10 @@
 ---
 title: Sling チートシート
-description: 簡単な Sling リファレンスは、SlingPostServlet を使用する際に役立ちます。これは、POST要求のデフォルトハンドラーです。
+description: POSTリクエストのデフォルトハンドラーである SlingPostServlet の使用時に役立つ、簡単な Sling リファレンスです。
 exl-id: 6ca374f4-5dc4-4322-bc36-5010bc2c7768
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 59%

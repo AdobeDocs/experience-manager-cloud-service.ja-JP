@@ -2,14 +2,14 @@
 title: App Builder SDK および CLI
 description: App Builder アプリケーションの開発に使用する SDK および CLI について説明します。
 version: Cloud Service
-feature: App Builder
+feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
 level: Beginner
 kt: 9454, 9470
 thumbnail: 339166.jpg
 exl-id: 4aabd84b-0ccb-482b-85e7-09bacbce85c1
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 100%

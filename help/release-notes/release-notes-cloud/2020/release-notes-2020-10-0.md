@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 リリースのリリースノート。'
 description: "[!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 のリリースノート。"
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 93%
+source-wordcount: '1103'
+ht-degree: 92%
 
 ---
 
@@ -46,7 +48,7 @@ ht-degree: 93%
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms**:Adobe Analyticsを使用して Adaptive Formsにログインしている（匿名）ユーザーとログインしていない（匿名の）ユーザーの行動を取得および追跡し、ユーザーのインサイトを収集できるようになりました。 これにより、ビジネスユーザーは、収集されたインサイトに基づいて、アダプティブフォームのコンテンツ、レイアウトおよびスタイルについて、情報に基づいた意思決定を行えます。
+* **Analytics for Adaptive Forms**:Adobe Analytics for Adaptive Formsを使用して、ログイン済みの場合と未ログイン（匿名）の場合の行動をキャプチャおよび追跡し、ユーザーインサイトを収集できるようになりました。 これにより、ビジネスユーザーは、収集されたインサイトに基づいて、アダプティブフォームのコンテンツ、レイアウトおよびスタイルについて、情報に基づいた意思決定を行えます。
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms-oct-2021}
 
@@ -54,7 +56,7 @@ ht-degree: 93%
 
 ### [!DNL Forms] のベータ版機能 {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) を使用すると、テンプレートと XML データを組み合わせて、様々な形式のドキュメントを生成できます。このサービスを使用すると、同期モードとバッチモードでドキュメントを生成できます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) を使用すると、テンプレートと XML データを組み合わせて、様々な形式のドキュメントを生成できます。このサービスを使用すると、同期および一括モードでドキュメントを生成できます。
 
 ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てにメールを送信します。
 
@@ -62,9 +64,9 @@ ht-degree: 93%
 
 ### 新機能 {#what-is-new-commerce}
 
-* 最新のCIFコアコンポーネントバージョン v1.4.0 を含むCIF Venia リファレンスサイト2020.10.2をリリースしました。詳しくは、 [CIF Venia リファレンスサイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) を参照してください。
+* 最新のCIF コアコンポーネントのバージョン v1.4.0 を含んだCIF Venia 参照サイト 2020.10.2 をリリースしました。参照： [CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) を参照してください。
 
-* CIF Core Components v1.4.0 がリリースされました。詳しくは、 [CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) を参照してください。
+* CIF コアコンポーネント v1.4.0 をリリースしました。参照： [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) を参照してください。
 
 ### バグの修正 {#bug-fixes-commerce}
 

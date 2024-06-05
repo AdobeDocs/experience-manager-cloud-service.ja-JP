@@ -2,8 +2,11 @@
 title: AEM Cloud Service の AEM Sites の主な変更点
 description: AEM Sites as a Cloud Service を使用して作成および管理する方法と、AEM Cloud Service の AEM Sites に対する重要な変更点について説明します。
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 100%
 

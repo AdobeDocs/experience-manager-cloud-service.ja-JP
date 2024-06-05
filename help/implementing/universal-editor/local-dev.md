@@ -2,8 +2,10 @@
 title: ユニバーサルエディターを使用したローカル AEM 開発
 description: ユニバーサルエディターが開発目的でローカルの AEM インスタンスでの編集に対応する方法を説明します。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
-workflow-type: ht
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 100%
 

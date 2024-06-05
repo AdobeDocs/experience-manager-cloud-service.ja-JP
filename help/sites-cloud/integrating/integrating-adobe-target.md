@@ -1,11 +1,12 @@
 ---
 title: Adobe Target との統合
 description: タッチ UI と Adobe Launch を使用して、Adobe Target を AEM as a Cloud Service と統合する方法について説明します。
-feature: Administering
+feature: Integration
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 3ac17f1a67f4d952a0206b124d70762b65e1f354
-workflow-type: ht
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 100%
 

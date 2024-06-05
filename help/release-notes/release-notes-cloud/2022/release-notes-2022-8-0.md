@@ -2,16 +2,18 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0 リリースのリリースノート。'
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 55%
+source-wordcount: '604'
+ht-degree: 62%
 
 ---
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の 2022.8.0 リリースノート {#release-notes}
 
-以下の節では、の 2022.8.0 バージョンの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
+以下の節では、2022.8.0 バージョンのの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -23,12 +25,12 @@ ht-degree: 55%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在のリリース (2022.8.0) は 2022 年 9 月 1 日です。
-次回のリリース (2022.10.0) は 2022 年 11 月 10 日に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新リリース（2022.8.0）のリリース日は 2022年9月1日です。
+次回のリリース（2022.10.0）は 2022 年 11 月 10 日（PT）に予定されています。
 
 ## リリースビデオ {#release-video}
 
-2022.8.0 リリースに追加された機能の概要については、 2022 年 8 月リリースの概要ビデオをご覧ください。
+2022.8.0 リリースで追加された機能の概要については、2022年8月リリースの概要ビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/346608/?quality=12)
 
@@ -36,16 +38,16 @@ ht-degree: 55%
 
 ### の新機能[!DNL Sites] {#sites-features}
 
-* 電子メールコンポーネントを使用すると、AEMでコンテンツを作成し、Campaign Classic経由で電子メールとして配信できます。 コア電子メールコンポーネント：
-   * は、 [コア WCM コンポーネント](https://github.com/adobe/aem-core-wcm-components) は、編集可能テンプレートとスタイルシステムをサポートしています。
-   * では、電子メールで最適化された 10 個の実稼動用コンポーネント（ページ、コンテナ、タイトル、テキスト、画像、ボタン、ティーザー、エクスペリエンスフラグメント、コンテンツフラグメント、セグメント化）を提供しています。
-   * は、 [キャンペーン変数の挿入](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) ほとんどのダイアログフィールドで、また柔軟な [セグメント化コンポーネント](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
-   * は、 [CSS スタイルインライナー](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)、 [HTML属性インライナー](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)、および [HTML消毒剤](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
-   * どこでも E メールを作成できます。
+* メール コンポーネントを使用すると、AEMでコンテンツを作成し、そのコンテンツをCampaign Classic経由でメールとして配信できます。 コアメールコンポーネント：
+   * は、に基づいています [コア WCM コンポーネント](https://github.com/adobe/aem-core-wcm-components) 編集可能テンプレートとスタイルシステムをサポートします。
+   * メール用に最適化され、実稼動ですぐに使える 10 個のコンポーネント（ページ、コンテナ、タイトル、テキスト、画像、ボタン、ティーザー、エクスペリエンスフラグメント、コンテンツフラグメント、セグメント化）を提供します。
+   * により、高度なパーソナライゼーションとセグメント化を提供します。 [campaign 変数の挿入](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) ほとんどのダイアログフィールドと、柔軟な [セグメント化コンポーネント](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
+   * により、電子メールに最適なHTML出力を提供 [CSS スタイルインライナー](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), [HTMLアトリビュート インライナー](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)、および [HTML消毒剤](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
+   * どこでもメールを作成できます。
 
 ### [!DNL Sites] プレリリースチャネルで利用できる新機能 {#prerelease-features-sites}
 
-* The [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) には、コンテンツフラグメントに関連付けられている言語コピーの合計数を表示するオプションが用意されています。 すべての言語コピーを表示するための 1 回のクリックアクセスが提供されています。 また、ユーザーは、関心があるロケールに基づいてテーブル表示をフィルタリングすることもできます。
+* この [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) コンテンツフラグメントに関連付けられている言語コピーの合計数を表示するオプションが用意されています。 すべての言語コピーを表示するための 1 回のクリックアクセスが提供されています。 また、ユーザーは、関心があるロケールに基づいてテーブル表示をフィルタリングすることもできます。
 
 ![コンテンツフラグメントの言語](/help/release-notes/assets/cfconsole-languages.png)
 
@@ -53,7 +55,7 @@ ht-degree: 55%
 
 ### の新機能[!DNL Assets] {#features-assets}
 
-* これで、Adobe Experience Manager Assetsを [MIME タイプに基づいてユーザーがアップロードできるアセットのタイプを制限します](/help/assets/configure-asset-upload-restrictions.md).
+* これで、に対してAdobe Experience Manager Assetsを設定できます [ユーザーがアップロードできるアセットのタイプを MIME タイプに基づいて制限する](/help/assets/configure-asset-upload-restrictions.md).
 
   ![アセットアップロードの制限](/help/assets/assets/asset-upload-restrictions.png)
 
@@ -63,11 +65,11 @@ ht-degree: 55%
 
 * [アダプティブフォームウィザード](/help/forms/creating-adaptive-form.md)：AEM Forms は、ビジネスユーザー向けの使いやすいウィザードで、アダプティブフォームをすばやく作成することができます。このウィザードはクイックタブナビゲーション機能を備えており、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択することができます。このリリースでは、ウィザードが次のように改善されました：
 
-   * フィールドの選択または選択解除：ウィザードを使用して、JSON およびフォームデータモデルスキーマに基づくアダプティブフォームを作成できます。 スキーマ内のフィールドのサブセットを選択して、アダプティブフォームに含めることができるようになりました。 選択したフィールドは、対応するアダプティブフォームのデータキャプチャコンポーネントに変換され、目的のアダプティブフォームをすばやく作成することができます。
+   * フィールドの選択または選択解除：ウィザードでは、JSON およびフォームデータモデルスキーマに基づくアダプティブフォームを作成できます。 スキーマ内のフィールドのサブセットを選択して、アダプティブフォームに含めることができるようになりました。 選択したフィールドは、対応するアダプティブフォームのデータキャプチャコンポーネントに変換され、目的のアダプティブフォームをすばやく作成することができます。
 
    * 静的テンプレートを使用：従来の静的テンプレートにすでに投資している顧客は、ウィザードで静的テンプレートを使用してアダプティブ フォームを作成することにより、クラウド導入のジャーナリストを続けることができます。これにより、顧客にとっての、古い静的テンプレートを最新の編集可能なテンプレートに移行する時間が増加します。
 
-* [サーバーサイドの処理中にレコードのドキュメント（DoR）から非表示のフィールドを削除する](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)：データキャプチャエクスペリエンス中にエンドユーザーに表示されたフィールドのみを含む、エンド ユーザー用のレコード PDF ドキュメントを生成することができます。フォームの送信時に、サーバーは、送信されたデータに基づいてユーザーに対して非表示にされたフィールドを検証し、レコードのドキュメントとの一貫性を保つために除外します。
+* [サーバーサイドの処理中にレコードのドキュメント（DoR）から非表示のフィールドを削除する](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)：データキャプチャエクスペリエンス中にエンドユーザーに表示されたフィールドのみを含む、エンド ユーザー用のレコード PDF ドキュメントを生成することができます。フォームの送信時に、サーバーは送信されたデータに基づいて、ユーザーに対して非表示にされたフィールドを検証し、一貫性を保つためにレコードのドキュメントから除外します。
 
 ## CIF アドオン {#cloud-services-cif}
 

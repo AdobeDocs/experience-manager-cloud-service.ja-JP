@@ -2,10 +2,12 @@
 title: SPA およびサーバーサイドレンダリング
 description: SPA でサーバーサイドレンダリング（SSR）を使用すると、ページの初期読み込みが高速化し、その後、クライアントにさらにレンダリングを渡すことができます。
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1517'
-ht-degree: 97%
+source-wordcount: '1492'
+ht-degree: 100%
 
 ---
 
@@ -51,7 +53,7 @@ Adobe I/O Runtime について詳しくは、以下を参照してください�
 
 >[!NOTE]
 >
->Cloud Manager は、Adobe I/O Runtimeへのデプロイメントをサポートしていません。 その結果、SSR コードをAdobe I/O Runtimeにデプロイするには、独自のインフラストラクチャを設定する必要があります。
+>Cloud Manager は、Adobe I/O Runtime へのデプロイメントをサポートしていません。その結果、SSR コードを Adobe I/O Runtime にデプロイするには、独自のインフラストラクチャを設定する必要があります。
 
 ## リモートレンダラーの設定 {#remote-content-renderer-configuration}
 

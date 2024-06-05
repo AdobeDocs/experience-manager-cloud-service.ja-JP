@@ -2,8 +2,11 @@
 title: SLA レポート
 description: 契約されたサービスレベル契約（SLA）に対する AEM の実稼動環境のパフォーマンスを確認する方法について説明します。
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
-workflow-type: ht
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 100%
 
