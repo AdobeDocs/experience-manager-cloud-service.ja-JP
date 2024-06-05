@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2193'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 98%
 | [!DNL Foundation] | JST スクリプティングテンプレートのサポート（OSGi バンドル org.apache.sling.scripting.jst） | 該当なし | 削除済み |
 | [!DNL Foundation] | Apache Felix Http Whiteboard のサポート | OSGi Http Whiteboard | 2022年3月 |
 | [!DNL Foundation] | com.adobe.granite.oauth.server のサポート | Adobe IMS 統合 | 2023年3月 |
-| [!DNL Foundation] | への org.apache.sling.serviceusermapping 機能のサポート [サービスユーザー id の取得](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | 該当なし | 8/30/24 |
+| [!DNL Foundation] | [サービスユーザー ID を取得](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-)するための org.apache.sling.serviceusermapping 機能のサポート | 該当なし | 2024年8月30日（PT） |
 
 
 ## AEM API {#aem-apis}
@@ -274,14 +274,14 @@ ht-degree: 98%
   </tr>
   <tr>
     <td>org.slf4j.event	</td>
-    <td>この内部 slf4j API は、AEM as a Cloud Serviceではサポートされていません</td>
-    <td>4/11/2022</td>
-    <td>8/30/2024</td>
+    <td>この内部 slf4j API は、AEM as a Cloud Service ではサポートされていません。</td>
+    <td>2022/4/11</td>
+    <td>2024/08/30</td>
   </tr>
     <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
     <td>この API の使用は、AEM as a Cloud Service ではサポートされていません。</td>
-    <td>5/17/2024</td>
-    <td>6/30/2024</td>
+    <td>2024/05/17</td>
+    <td>2024/06/30</td>
   </tr>  
 </tbody>
 </table>
