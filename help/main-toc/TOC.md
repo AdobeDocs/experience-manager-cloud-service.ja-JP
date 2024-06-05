@@ -665,8 +665,8 @@ ht-degree: 99%
             + [アダプティブフォームの JSON スキーマのデザイン（コアコンポーネント）](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [アダプティブフォームへのバージョン管理、コメント、注釈の追加](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [アダプティブフォームの比較](/help/forms/compare-forms.md)
-            + [移行ユーティリティツールを使用して、基盤コンポーネントに基づくアダプティブFormsをコアコンポーネントベースのフォームに変換する](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [アダプティブフォームをドラフトとして保存](/help/forms/save-core-component-based-form-as-draft.md)
+            + [移行ユーティリティツールを使用した基盤コンポーネントベースのアダプティブフォームからコアコンポーネントベースのフォームへの変換](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [アダプティブフォームのドラフトとしての保存](/help/forms/save-core-component-based-form-as-draft.md)
       + 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
          + PDF フォームのアダプティブフォームへの変換 {#afcs}
             + [自動フォーム変換サービスの概要](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja)
@@ -1185,7 +1185,7 @@ ht-degree: 99%
       + [AEM as a Cloud Service での CDN](/help/implementing/dispatcher/cdn.md)
       + [CDN でのトラフィックの設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)
       + [エッジサイドインクルード](/help/implementing/dispatcher/edge-side-includes.md)
-      + [CDN 資格情報と認証の設定](/help/implementing/dispatcher/cdn-credentials-authentication.md)
+      + [CDN 資格情報および認証の設定](/help/implementing/dispatcher/cdn-credentials-authentication.md)
       + [CDN エラーページの設定](/help/implementing/dispatcher/cdn-error-pages.md)
       + [CDN キャッシュのパージ](/help/implementing/dispatcher/cdn-cache-purge.md)
       + [AEM as a Cloud Service でのキャッシュ](/help/implementing/dispatcher/caching.md)

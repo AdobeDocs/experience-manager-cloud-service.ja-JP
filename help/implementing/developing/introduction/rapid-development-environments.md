@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '4294'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ RDE を使用すると、デベロッパーは、ローカル開発環境での�
 変更を RDE でテストしたら、Cloud Manager パイプラインを通じて通常のクラウド開発環境にデプロイできます。
 
 >[!NOTE]
-> RDE 開発者に連絡してください [不調チャネル](https://discord.com/channels/1131492224371277874/1245304281184079872). RDE のトピックに関して質問したり、フィードバックを提供したりしてください。
+> [ディスコードチャネル](https://discord.com/channels/1131492224371277874/1245304281184079872)で RDE 開発者に連絡できます。RDE のトピックに関して、自由に質問したり、フィードバックを提供したりしてください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
@@ -146,11 +146,11 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
 
 詳細とデモンストレーションについては、[RDE の設定方法（06:24）](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html?lang=ja)のビデオチュートリアルを参照してください。
 
-## RDE コマンドラインツールのインストール（インタラクティブモード） {#installing-the-rde-command-line-tools-interactive}
+## （インタラクティブモードでの）RDE コマンドラインツールのインストール {#installing-the-rde-command-line-tools-interactive}
 
 >[!NOTE]
 >
-> この設定プロセスは、まだ使用できません。 以前のプロセスは 6 月のある時点で置き換えられます。
+> このセットアップ手順はまだ使用できません。6 月のある時点で以前のプロセスに置き換わります。
 > 
 
 Cloud Manager を使用してプログラムに RDE を追加したら、次の手順に従ってコマンドラインツールを設定して、RDE を操作できます。
@@ -160,58 +160,58 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
 >Adobe I/O CLI と関連プラグインが正しく動作するように、最新バージョンの[ノードと NPM がインストールされている](https://nodejs.org/en/download/)ことを確認してください。
 
 
-1. これに従って、Adobe I/OCLI ツールをインストールします。 [手順](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
-1. Adobe I/O CLI ツールのAEM RDE プラグインをインストールします。
+1. こちらの[手順](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/)に従って、Adobe I/O CLI ツールをインストールします。
+1. Adobe I/O CLI ツールの AEM RDE プラグインのインストール
 
    ```
    aio plugins:install @adobe/aio-cli-plugin-aem-rde
    aio plugins:update
    ```
 
-1. 組織、プログラム、環境を使用するように RDE プラグインを設定します。 以下の setup コマンドを使用すると、組織内のプログラムのリストをインタラクティブにユーザーに提供し、そのプログラム内の RDE 環境を表示して選択できます。
+1. ご自分の組織、プログラムおよび環境を使用するように RDE プラグインを設定します。以下の setup コマンドでは、組織内のプログラムのリストをインタラクティブにユーザーに提示し、そのプログラム内の選択可能な RDE 環境を表示します。
 
    ```
    aio login
    aio aem:rde:setup
    ```
 
-   スクリプト環境を使用する場合は、設定手順をスキップできます。その場合、組織、プログラム、環境の値を各コマンドに含めることができます。 [詳しくは、以下の rde コマンドを参照してください](#rde-cli-commands).
+   スクリプト環境を使用する場合は、このセットアップ手順をスキップしても構いません。その場合は、組織、プログラムおよび環境の値を各コマンドに含めることができます。[詳しくは、以下の RDE コマンドを参照してください。](#rde-cli-commands)
 
-### インタラクティブ設定
+### インタラクティブセットアップ
 
-setup コマンドは、指定された設定をローカルに保存するか、グローバルに保存するかを尋ねます。
+setup コマンドは、指定された設定をローカルに保存するかグローバルに保存するかを尋ねます。
 
 ```
 Setup the CLI configuration necessary to use the RDE commands.
 ? Do you want to store the information you enter in this setup procedure locally? (y/N)
 ```
 
-を選択 `no` 対象：
-* 組織、プログラム、環境を aio 設定にグローバルに保存します。
-* 単一の RDE でのみ動作します。
+`no` を選択すると、
+* お使いの aio 設定に組織、プログラムおよび環境がグローバルに保存されます。
+* 単一の RDE のみを操作できます。
 
-を選択 `yes` 対象：
-* 組織、プログラム、環境を現在のディレクトリ内の `.aio` ファイル。 これは、ファイルをバージョン管理にコミットし、Git リポジトリをクローンする他のユーザーが使用できるようにする場合に便利です。
-* 多くの RDE で動作するので、別のディレクトリに切り替えると、その設定が代わりに使用されます。
-* 設定は、スクリプトのようなプログラム的なコンテキストで使用し、スクリプトを参照できます。
+`yes` を選択すると、
+* 現在のディレクトリ内の `.aio` ファイルに組織、プログラムおよび環境がローカルに保存されます。これは、ファイルをバージョン管理にコミットして、Git リポジトリをクローンする他のユーザーが使用できるようにする場合に便利です。
+* 多数の RDE を操作できるので、別のディレクトリに切り替えると、その設定が代わりに使用されます。
+* スクリプトのようなプログラムのコンテキストで設定を使用し、参照できます。
 
 
-ローカル設定またはグローバル設定を選択すると、setup コマンドは現在のログインから組織 ID を読み取り、組織のプログラムを読み取ろうとします。 組織が見つからない場合は、ガイダンスに従って手動で入力できます。
+ローカル設定またはグローバル設定を選択すると、setup コマンドは現在のログインから組織 ID を読み取り、次に組織のプログラムを読み取ります。組織が見つからない場合は、ガイダンスに従って手動で入力できます。
 
 ```
  Selected only organization: XYXYXYXYXYXYXYXXYY
  retrieving programs of your organization ...
 ```
 
-プログラムを取得したら、ユーザーはリストから選択でき、フィルターを適用するように入力することもできます。
+プログラムを取得後、ユーザーはリストから選択したり、入力してフィルタリングしたりできます。
 プログラムを選択すると、選択可能な RDE 環境のリストが表示されます。
 使用可能なプログラムや RDE 環境が 1 つしかない場合は、そのプログラムが自動的に選択されます。
 
-現在の環境コンテキストを確認するには、次を実行します。
+現在の環境コンテキストを確認するには、次のコマンドを実行します。
 
 ```aio aem rde setup --show```
 
-そのコマンドは、次のような結果を返します。
+コマンドは、次のような結果を返します。
 
 ```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)```
 
@@ -269,26 +269,26 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 
 >[!NOTE]
 >
-> これらのグローバルフラグはまだ使用できません。 6 月に順次展開する予定です。
+> これらのグローバルフラグはまだ使用できません。これらは、6 月中にロールアウトする予定です。
 > 
 
 * 詳細度の低い出力には、quiet フラグを使用します。
 
   `aio aem rde <command> --quiet`
 
-  これにより、スピナーやプログレスバーなどの特定の要素が削除され、ユーザー入力の必要性が制限されます。
+  この場合は、スピナーやプログレスバーなどの特定の要素が削除され、ユーザー入力の必要性が制限されます。
 
-* JSON に対しては、コンソールログ出力の代わりに、JSON フラグを使用します。
+* JSON に対しては、コンソールログ出力の代わりに、json フラグを使用します。
 
   `aio aem rde <command> --json`
 
-  コンソール出力を抑制しながら、有効な JSON を返します。 後述の JSON の例を参照してください。
+  この場合は、コンソール出力を抑制しながら、有効な JSON を返します。詳しくは、以下の JSON の例を参照してください。
 
 * setup コマンドを使用した RDE 接続情報の設定や aio 設定の作成を避けるには、組織、プログラム、環境の 3 つのフラグを使用します。
 
   `aio aem rde <command> --organizationId=<value> --programId=<value> --environmentId=<value>`
 
-  これには、引き続き ```aio login``` を実行します。
+  この場合もやはり、```aio login``` を実行する必要があります。
 
 ### RDE へのデプロイ {#deploying-to-rde}
 
@@ -414,7 +414,7 @@ The analyser found the following errors for publish :
 
 >[!NOTE]
 >
-> この機能はまだ使用できません。 6 月には順次展開する予定です。
+> この機能はまだ使用できません。6 月中にロールアウトする予定です。
 >
 
 RDE は、[サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)および[サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)に基づいてフロントエンドコードをサポートします。RDE を使用する場合、これは、他の環境タイプに使用される Cloud Manager [フロントエンドパイプライン](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)ではなく、コマンドラインのディレクティブを使用してフロンエンドパッケージをデプロイします。
@@ -518,27 +518,27 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 >[!NOTE]
 >
-> この機能はまだ使用できません。 6 月には順次展開する予定です。
+> この機能はまだ使用できません。6 月中にロールアウトする予定です。
 > 
 
-他の環境タイプと同様に、ログレベルは OSGi 設定を変更することで設定できます。ただし、上述のように、RDE のデプロイメントモデルには、Cloud Manager のデプロイメントではなくコマンドラインが含まれます。 を確認します [ログドキュメント](/help/implementing/developing/introduction/logging.md) ログの表示、ダウンロード、解釈方法について詳しくは、こちらを参照してください。
+他の環境タイプと同様に、ログレベルは OSGi 設定を変更することで設定できますが、上記のように、RDE のデプロイメントモデルには Cloud Manager のデプロイメントではなくコマンドラインが含まれます。ログの表示、ダウンロード、解釈の方法について詳しくは、[ログに関するドキュメント](/help/implementing/developing/introduction/logging.md)を確認してください。
 
-また、RDE CLI には、ログに記録するクラスとパッケージ、およびログレベルをすばやく設定するために使用できる独自のログコマンドもあります。 これらの設定は、バージョン管理で OSGi プロパティを変更しないので、一時的なものとして見なすことができます。 この機能は、遠い過去のログを参照するのではなく、リアルタイムでログを追跡することに焦点を当てています。
+また、RDE CLI には独自の log コマンドもあり、これを使用して、クラスとパッケージをログレベルでログに記録する方法をすばやく設定できます。これらの設定は、バージョン管理の OSGI プロパティを変更しないので、一時的なものと見なすことができます。この機能は、遠い過去のログを検索するのではなく、リアルタイムでログを追跡することに焦点を当てています。
 
-次の例では、1 つのパッケージをデバッグログレベルに設定し、2 つのパッケージ（スペースで区切る）を情報デバッグレベルに設定して、オーサー層の末尾を付ける方法を示します。 を含む出力 **認証** パッケージがハイライト表示されています。
+次の例では、1 つのパッケージをデバッグログレベルに設定し、2 つのパッケージ（スペースで区切る）を情報デバッグレベルに設定して、オーサー層を末尾まで追跡する方法を示します。**認証**&#x200B;パッケージを含む出力がハイライト表示されます。
 
 `aio aem:rde:logs --target=author --debug=org.apache.sling --info=org.apache.sling.commons.threads.impl org.apache.sling.jcr.resource.internal.helper.jcr -H .auth.`
 
-参照： `aio aem:rde:logs --help` コマンド ライン オプションの完全なセットを使用する場合。
+コマンドラインオプションの完全なセットについては、`aio aem:rde:logs --help` を参照してください。
 
 次のような機能があります。
 
 * パッケージまたはクラスレベルごとのログレベルの宣言
 * ログ出力形式のカスタマイズ
-* 最大 4 つの現在のログ設定を追跡し、それぞれが独自のターミナル内にあります。
-* 特定のログのハイライト表示
+* 独自のターミナルにおいてそれぞれ最大 4 つの現在のログ設定を追跡
+* 特定のログをハイライト表示
 
-ログは RDE のメモリに保存され、これらのログはリサイクルされるので、テールされていない場合やネットワークが遅すぎる場合は破棄されます。
+ログは RDE のメモリに保存され、これらのログはリサイクルされるので、末尾が追跡されない場合やネットワークが遅すぎる場合は破棄されます。
 
 
 ## リセット {#reset-rde}
@@ -609,17 +609,17 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 
 >[!NOTE]
 >
-> これらのコマンドはまだ使用できません。 6 月に順次展開する予定です。
+> これらのコマンドはまだ使用できません。これらは、6 月中にロールアウトする予定です。
 > 
 
-ほとんどのコマンドは、グローバル ```--json``` コンソール出力を抑制し、スクリプトで処理される有効な json を返すフラグ。 次に、サポートされているコマンドと、json 出力の例を示します。
+ほとんどのコマンドでは、コンソール出力を抑制し、スクリプトで処理される有効な JSON を返すグローバル ```--json``` フラグをサポートします。サポートされるコマンドと、JSON 出力の例を以下に示します。
 
 ### ステータス
 
 <details>
-  <summary>展開して状態の例を表示する</summary>
+  <summary>展開してステータスの例を表示</summary>
 
-#### クリーン RDE
+#### クリーンな RDE
 
 ```$ aio aem rde status --json```
 
@@ -708,10 +708,10 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 ```
 </details>
 
-### 次をインストールします：
+### インストール
 
 <details>
-  <summary>展開してインストール例を表示</summary>
+  <summary>展開してインストールの例を表示</summary>
 
 ```$ aio aem rde install ~/Downloads/hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip --json```
 
@@ -830,7 +830,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 
 </details>
 
-### History
+### 履歴
 
 <details>
   <summary>展開して履歴の例を表示</summary>
@@ -931,7 +931,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 <details>
   <summary>展開してリセットの例を表示</summary>
 
-#### 火と忘れて、待ちません
+#### ファイアアンドフォーゲット、待機不要
 
 ```$ aio aem rde reset --no-wait --json```
 
@@ -943,7 +943,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 }
 ```
 
-#### 完了まで待つ
+#### 完了まで待機
 
 ```$ aio aem rde reset --json```
 
@@ -959,7 +959,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 ### やり直し
 
 <details>
-  <summary>展開すると、再起動の例が表示されます。</summary>
+  <summary>展開して再起動の例を表示</summary>
 
 ```$ aio aem rde restart --json```
 
@@ -1050,7 +1050,7 @@ AEM as a Cloud Service での RDE について詳しくは、[設定方法、使
 
 ### 不十分な権限に関するエラー
 
-RDE プラグインを使用するには、Cloud Manager のメンバーである必要があります **開発者 – Cloud Service** 製品プロファイル。 詳しくは、[このページ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)を参照してください。
+RDE プラグインを使用するには、Cloud Manager **デベロッパー - Cloud Service** 製品プロファイルのメンバーである必要があります。詳しくは、[このページ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)を参照してください。
 
 また、このデベロッパーの役割を持っていることを、以下のコマンドを実行して Developer Console にログインすることでも確認できます。
 
@@ -1068,4 +1068,4 @@ RDE プラグインを使用するには、Cloud Manager のメンバーであ�
 
 `aio cloudmanager:list-programs`
 
-設定した組織の下のすべてのプログラムが一覧表示され、正しい役割が割り当てられていることを確認する必要があります。
+これにより、設定した組織の下にあるすべてのプログラムがリストされ、正しい役割が割り当てられていることを確認できます。
