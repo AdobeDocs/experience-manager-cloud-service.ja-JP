@@ -5,11 +5,10 @@ keywords: ルールエディターでカスタム関数を使用して、カス�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 6f50bdf2a826654e0d5b35de5bd50e66981fb56a
+source-git-commit: d42728bb3eb81c032723db8467957d2e01c5cbed
 workflow-type: tm+mt
-source-wordcount: '3513'
+source-wordcount: '4351'
 ht-degree: 4%
 
 ---
@@ -98,7 +97,7 @@ JavaScript アノテーションは、JavaScript コードのメタデータを�
 上記のコード行では、 `Input1` は、デフォルト値を持たないオプションのパラメーターです。 デフォルト値を使用してオプションのパラメーターを宣言するには：
 `@param {array} [input1=<value>]`
 `input1` は、デフォルト値がに設定された配列型のオプションのパラメーターです `value`.
-パラメータータイプが中括弧で囲まれていることを確認します {} また、パラメーター名は角括弧で囲まれています [].
+パラメータータイプが中括弧で囲まれていることを確認します {} また、パラメーター名は角括弧で囲まれています。
 
 次のコードスニペットについて考えてみます。input2 はオプションのパラメーターとして定義されています。
 
@@ -225,33 +224,124 @@ JSDocs でオプションのパラメータを定義する方法の詳細につ�
 1. [クライアントライブラリの作成](#create-client-library)
 1. [アダプティブフォームへのクライアントライブラリの追加](#use-custom-function)
 
+
+### カスタム関数を作成するための前提条件
+
+アダプティブFormsへのカスタム関数の追加を開始する前に、次のことを確認してください。
+
+**ソフトウェア：**
+
+* **プレーンテキストエディター（IDE）**：任意のプレーンテキストエディターを使用できますが、Microsoft Visual Studio Code などの統合開発環境（IDE）は、編集を容易にする高度な機能を提供します。
+
+* **Git:** このバージョン管理システムは、コード変更を管理するために必要である。 インストールされていない場合は、https://git-scm.comからダウンロードします。
+
 ### クライアントライブラリの作成 {#create-client-library}
 
 クライアントライブラリを追加することで、カスタム関数を追加できます。 クライアントライブラリを作成するには、次の手順を実行します。
 
-1. [AEM Forms as a Cloud Service リポジトリを複製](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=jp#accessing-git).
-1. `[AEM Forms as a Cloud Service repository folder]/apps/` フォルダーの下にフォルダーを作成します。例えば、`experience-league` という名前のフォルダーを作成します。
-1. に移動します。 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` およびを作成 `ClientLibraryFolder`. 例えば、次のようにクライアントライブラリフォルダーを作成します `customclientlibs`.
-1. プロパティを追加 `categories` 文字列タイプの値を使用。 例えば、の値を `customfunctionscategory` に `categories` のプロパティ `customclientlibs` フォルダー。
+**リポジトリのクローン**
+
+のクローン [AEM Formsas a Cloud Serviceリポジトリ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=jp#accessing-git):
+
+1. コマンドラインまたはターミナルウィンドウを開きます。
+
+1. リポジトリを保存するマシン上の目的の場所に移動します。
+
+1. 次のコマンドを実行して、リポジトリのクローンを作成します。
+
+   `git clone [Git Repository URL]`
+
+このコマンドは、リポジトリをダウンロードし、複製されたリポジトリのローカルフォルダーをコンピューターに作成します。 このガイド全体では、このフォルダーをと呼びます。 [AEMaaCS プロジェクトディレクトリ].
+
+**クライアントライブラリフォルダーの追加**
+
+に新しいクライアントライブラリフォルダーを追加するには [AEMaaCS プロジェクトディレクトリ]は、次の手順に従います。
+
+1. を開きます [AEMaaCS プロジェクトディレクトリ] エディターで。
+
+   ![カスタム関数のフォルダー構造](/help/forms/assets/custom-library-folder-structure.png)
+
+1. を見つける `ui.apps`.
+1. 新規フォルダーを追加します。 例えば、というフォルダーを追加します。 `experience-league`.
+1. に移動します。 `/experience-league/` フォルダーを作成して、 `ClientLibraryFolder`. 例えば、という名前のクライアントライブラリフォルダーを作成します `customclientlibs`.
+
+   `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/`
+
+**クライアントライブラリフォルダーへのファイルとフォルダーの追加**
+
+追加したクライアントライブラリフォルダーに次の内容を追加します。
+
+* .content.xml ファイル
+* js.txt ファイル
+* js フォルダー
+
+`Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/`
+
+1. が含まれる `.content.xml` 次のコード行を追加します。
+
+   ```javascript
+   <?xml version="1.0" encoding="UTF-8"?>
+   <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+   jcr:primaryType="cq:ClientLibraryFolder"
+   categories="[customfunctionscategory]"/>
+   ```
 
    >[!NOTE]
    >
    > には任意の名前を付けることができます `client library folder` および `categories` プロパティ。
 
-1. `js` という名前のフォルダーを作成します。
-1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` フォルダーに移動します。
-1. JavaScript ファイル（例：`function.js`）を追加します。ファイルは、カスタム関数のコードを含みます。
-1. `function.js` ファイルを保存します。
-1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` フォルダーに移動します。
-1. `js.txt` というテキストファイルを追加します。ファイルには次が含まれます。
+1. が含まれる `js.txt` 次のコード行を追加します。
 
    ```javascript
-       #base=js
-       functions.js
+         #base=js
+       function.js
    ```
+1. が含まれる `js` フォルダーに、javascript ファイルをとして追加します `function.js` これには、カスタム関数が含まれます。
 
-1. `js.txt` ファイルを保存します。
-1. 次のコマンドを使用して、リポジトリに変更を追加、コミット、プッシュします。
+   ```javascript
+    /**
+        * Calculates Age
+        * @name calculateAge
+        * @param {object} field
+        * @return {string} 
+    */
+   
+    function calculateAge(field) {
+    var dob = new Date(field);
+    var now = new Date();
+   
+    var age = now.getFullYear() - dob.getFullYear();
+    var monthDiff = now.getMonth() - dob.getMonth();
+   
+    if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < dob.getDate())) {
+    age--;
+    }
+   
+    return age;
+    }
+   ```
+1. ファイルを保存します。
+
+![カスタム関数のフォルダー構造](/help/forms/assets/custom-function-added-files.png)
+
+**新しいフォルダーを filter.xml に含める**:
+
+1. [AEMaaCS プロジェクトディレクトリ]内の `/ui.apps/src/main/content/META-INF/vault/filter.xml` ファイルに移動します。
+
+1. ファイルを開き、最後に次の行を追加します。
+
+   `<filter root="/apps/experience-league" />`
+1. ファイルを保存します。
+
+![カスタム関数フィルター xml](/help/forms/assets/custom-function-filterxml.png)
+
+**新しく作成したクライアントライブラリフォルダーをAEM環境にデプロイします。**
+
+AEM as a Cloud Service の [AEMaaCS プロジェクトディレクトリ]を Cloud Service 環境にデプロイします。Cloud Service 環境にデプロイするには：
+
+1. 変更をコミットする
+
+   1. 次のコマンドを使用して、リポジトリに変更を追加、コミット、プッシュします。
 
    ```javascript
        git add .
@@ -259,7 +349,11 @@ JSDocs でオプションのパラメータを定義する方法の詳細につ�
        git push
    ```
 
-1. [パイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline) をクリックして、カスタム関数をデプロイします。
+1. 更新されたコードをデプロイします。
+
+   1. 既存のフルスタックパイプラインを使用してコードのデプロイメントをトリガーします。 これにより、更新されたコードが自動的にビルドおよびデプロイされます。
+
+パイプラインをまだ設定していない場合は、[AEM Forms as a Cloud Service のパイプラインの設定方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)のガイドを参照してください。
 
 パイプラインが正常に実行されると、クライアントライブラリに追加されたカスタム関数を [アダプティブフォームのルールエディター](/help/forms/rule-editor-core-components.md).
 
@@ -443,7 +537,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![お問い合わせフォーム](/help/forms/assets/contact-us-form.png)
 
-#### SetProperty ルールを使用したパネルの表示
++++ **ユースケース**：を使用したパネルの表示 `SetProperty` ルール
 
 の説明に従って、カスタム関数に次のコードを追加します。 [create-custom-function](#create-custom-function) セクションで、フォームフィールドをに設定します `Required`.
 
@@ -485,8 +579,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![プロパティのフォームプレビューを設定](/help/forms/assets/set-property-panel.png)
 
++++
 
-#### フィールドを検証します。
++++ **ユースケース**：フィールドを検証します。
 
 の説明に従って、カスタム関数に次のコードを追加します。 [create-custom-function](#create-custom-function) セクションに移動し、フィールドを検証します。
 
@@ -525,9 +620,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![メールアドレスの検証パターン](/help/forms/assets/validate-form-preview-form.png)
 
++++
 
-
-#### パネルのリセット
++++ **ユースケース**: パネルをリセット
 
 の説明に従って、カスタム関数に次のコードを追加します。 [create-custom-function](#create-custom-function) セクションで、パネルをリセットします。
 
@@ -559,9 +654,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![フォームをリセット](/help/forms/assets/custom-function-reset-form.png)
 
++++
 
-
-#### フィールドレベルでカスタムメッセージを表示し、フィールドを無効としてマークするには
++++ **ユースケース**：フィールドレベルでカスタムメッセージを表示し、フィールドを無効としてマークします
 
 を使用できます `markFieldAsInvalid()` フィールドを無効として定義し、フィールドレベルでカスタムエラーメッセージを設定する関数。 この `fieldIdentifier` 値は `fieldId`、または `field qualifiedName`、または `field dataRef`. という名前のオブジェクトの値 `option` 次になることができます `{useId: true}`, `{useQualifiedName: true}`、または `{useDataRef: true}`.
 フィールドを無効としてマークし、カスタムメッセージを設定するために使用される構文は次のとおりです。
@@ -602,9 +697,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![フィールドを有効なプレビューフォームとしてマーク](/help/forms/assets/custom-function-validfield-form.png)
 
++++
 
-
-#### 送信前に取得したデータの変更
++++ **ユースケース**：変更されたデータのサーバーへの送信
 
 次のコード行：
 `globals.functions.submitForm(globals.functions.exportData(), false);` を使用して、操作後にフォームデータを送信します。
@@ -647,9 +742,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![コンソールウィンドウでのInspect データ](/help/forms/assets/custom-function-submit-data-console-data.png)
 
++++
 
-
-#### アダプティブフォームの送信成功およびエラーメッセージの上書き
++++ **ユースケース**：フォーム送信の成功およびエラーハンドラーの上書き
 
 で説明されているように、次のコード行を追加します。 [create-custom-function](#create-custom-function) セクションを使用して、フォーム送信の送信メッセージまたは失敗メッセージをカスタマイズし、フォーム送信メッセージをモーダルボックスに表示するには：
 
@@ -758,19 +853,19 @@ function showModal(type, message) {
 
 既存のAEM プロジェクトまたはフォームでカスタム送信ハンドラーが期待どおりに動作しない場合は、を参照してください。 [トラブルシューティング](#troubleshooting) セクション。
 
-<!--
++++
 
++++ **ユースケース**：繰り返し可能なパネルの特定のインスタンスでアクションを実行する
 
-#### Use Case:  Perform actions in a specific instance of the repeatable panel 
+繰り返し可能なパネル上でビジュアルルールエディターを使用して作成されたルールは、繰り返し可能なパネルの最後のインスタンスに適用されます。 繰り返し可能なパネルの特定のインスタンスに対するルールを作成するには、カスタム関数を使用します。
 
-Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
+宛先に向かう旅行者に関する情報を収集する別のフォームを作成しましょう。 旅行者パネルは、繰り返し可能なパネルとして追加され、ユーザーは次を使用して 5 人の旅行者の詳細を追加できます `Add Traveler` ボタン。
 
-Let's create a form to collect information about travelers heading to a destination. A traveler panel is added as a repeatable panel, where the user can add details for 5 travelers using the Add button.
+![旅行者情報](/help/forms/assets/traveler-info-form.png)
 
-Add the following line of code as explained in the [create-custom-function](#create-custom-function) section, to perform actions in a specific instance of the repeatable panel, other than the last one:
+で説明されているように、次のコード行を追加します。 [create-custom-function](#create-custom-function) 最後のアクション以外に、繰り返し可能なパネルの特定のインスタンスでアクションを実行する場合は、次の手順に従います。
 
 ```javascript
-
 /**
 * @name hidePanelInRepeatablePanel
 * @param {scope} globals
@@ -781,126 +876,126 @@ function hidePanelInRepeatablePanel(globals)
     // hides a panel inside second instance of repeatable panel
     globals.functions.setProperty(repeatablePanel[1].traveler, {visible : false});
 }  
-
-```
- 
-In this example, the `hidePanelInRepeatablePanel` custom function performs action in a specific instance of the repeatable panel. In the above code, `travelerinfo` represents the repeatable panel. The `repeatablePanel[1].traveler, {visible: false}` code hides the panel in the second instance of the repeatable panel. 
-Let us add a button labeled `Hide` to add a rule to hide a specific panel.
-
-![Hide Panel rule](/help/forms/assets/custom-function-hidepanel-rule.png)
-
-Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
-
-
-
-
-#### **Usecase**: Pre-fill the field with a value when the form loads
-
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
-
-```javascript
-/**
- * @name importData
- * @param {scope} globals
- */
-function importData(globals)
-{
-    globals.functions.importData(Object.fromEntries([['amount',200000]]));
-} 
 ```
 
-In the aforementioned code, the `importData` function updates the value in the `amount` textbox field when the form loads.
+この例では、 `hidePanelInRepeatablePanel` カスタム関数は、繰り返し可能なパネルの特定のインスタンスでアクションを実行します。 上記のコードでは、 `travelerinfo` 繰り返し可能なパネルを表します。 この `repeatablePanel[1].traveler, {visible: false}` コードを記述すると、繰り返し可能なパネルの 2 番目のインスタンス内でそのパネルが非表示になります。
 
-Let us create a rule for the `Submit` button, where the value in the `amount` textbox field changes to specified value when the form loads:
+というラベルのボタンを追加します `Hide` さらに、繰り返し可能なパネルの 2 つ目のインスタンスを非表示にするルールを追加します。
 
-![Import Data Rule](/help/forms/assets/custom-function-import-data.png)
+![パネルルールを非表示](/help/forms/assets/custom-function-hidepanel-rule.png)
 
-Refer to the screenshot below, which demonstrates that when the form loads, the value in the amount textbox is pre-filled with a specified value:
+以下のビデオを参照して、 `Hide` をクリックすると、2 番目の繰り返し可能インスタンス内のパネルが非表示になります。
 
-![Import Data Rule](/help/forms/assets/cg)
-
-
-
-#### **Usecase**: Set focus on the specific field
-
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
-
-```javascript
-/**
- * @name setFocus
- * @param {object} field
- * @param {scope} globals
- */
-function setFocus(field, globals)
-{
-    globals.functions.setFocus(field);
-}
-```
-
-Let us add a rule to the `Submit` button to set focus on the `email` field when it is clicked:
-
-![Set Focus Rule](/help/forms/assets/custom-function-set-focus.png)
-
-Refer to the screenshot below, which demonstrates that when the `Submit` button is clicked, the focus is set on the `email` field:
-
-![Set Focus Rule](/help/forms/assets/custom-function-set-focus-form.png)
-
->[!NOTE]
->
-> You can use the optional `$focusOption` parameter, if you want to focus on the next or previous field relative to the `email` field.
+>[!VIDEO](https://video.tv.adobe.com/v/3429554?quality=12&learn=on)
 
 +++
 
-+++ **Usecase**: Add or delete repeatable panel using the `dispatchEvent` property
++++ **ユースケース**：フォームの読み込み時に値をフィールドに事前入力
 
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to add a panel when the `Add Traveler` button is clicked using the `dispatchEvent` property:
+で説明されているように、次のコード行を追加します。 [create-custom-function](#create-custom-function) セクションを使用して、フォームの初期化時にフィールドに事前入力された値を読み込む
 
 ```javascript
 /**
- 
- * @name addInstance
+ * Tests import data
+ * @name testImportData
  * @param {scope} globals
  */
-function addInstance(globals)
+function testImportData(globals)
 {
-    var repeatablePanel = globals.form.traveler;
-    globals.functions.dispatchEvent(repeatablePanel, 'addInstance');
+    globals.functions.importData(Object.fromEntries([['amount','10000']]));
 } 
-
 ```
 
-Let us add a rule to the `Add Traveler` button to add the repeatable panel when it is clicked:
+この場合、上記のコードでは、 `testImportData` 関数はを事前に設定する `Booking Amount` フォーム読み込み時のテキストフィールド。 予約フォームで、最小予約金額がである必要があるとします `10,000`.
 
-![Add Panel Rule](/help/forms/assets/custom-function-add-panel.png)
+フォームの初期化時に、値がのルールを作成します `Booking Amount` フォームの読み込み時に、テキストボックスのフィールドに指定した値が事前入力される。
 
-Refer to the screenshot below, which demonstrates that when the `Add Traveler` button is clicked, the traveler panel is added using the `dispatchEvent` property:
+![データルールを読み込み](/help/forms/assets/custom-function-import-data.png)
 
-![Add Panel](/help/forms/assets/customg)
+以下のスクリーンショットを参照してください。これは、フォームが読み込まれると、内の値がであることを示しています。 `Booking Amount` textbox には、次の指定した値が事前に入力されています。
 
-Similarly, add a button labeled `Delete Traveler` to delete a panel. Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to delete a panel when the `Delete Traveler` button is clicked using the `dispatchEvent` property:
+![データルールフォームの読み込み](/help/forms/assets/custom-function-prefill-form.png)
+
++++
+
++++ **ユースケース**：特定のフィールドにフォーカスを設定します
+
+で説明されているように、次のコード行を追加します。 [create-custom-function](#create-custom-function) セクション：次の場合に指定したフィールドにフォーカスを設定 `Submit` ボタンをクリックします。
 
 ```javascript
-
 /**
- 
- * @name removeInstance
+ * @name testSetFocus
+ * @param {object} emailField
  * @param {scope} globals
  */
-function removeInstance(globals)
+    function testSetFocus(field, globals)
+    {
+        globals.functions.setFocus(field);
+    }
+```
+
+にルールを追加しましょう `Submit` にフォーカスを設定するボタン `Email ID` textbox フィールドをクリックした場合：
+
+![フォーカスルールを設定](/help/forms/assets/custom-function-set-focus.png)
+
+以下のスクリーンショットを参照してください。これは、 `Submit` ボタンをクリックすると、フォーカスは `Email ID` フィールド :
+
+![フォーカスルールを設定](/help/forms/assets/custom-function-set-focus-form.png)
+
+>[!NOTE]
+>
+> オプションのを使用できます `$focusOption` パラメーター（を基準に、次または前のフィールドにフォーカスする場合） `email` フィールド。
+
++++
+
++++ **ユースケース**：を使用した繰り返し可能なパネルの追加または削除 `dispatchEvent` プロパティ
+
+で説明されているように、次のコード行を追加します。 [create-custom-function](#create-custom-function) セクションに追加して、 `Add Traveler` ボタンは、 `dispatchEvent` プロパティ：
+
+```javascript
+/**
+ * Tests add instance with dispatchEvent
+ * @name testAddInstance
+ * @param {scope} globals
+ */
+function testAddInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel,'addInstance');
+}
+```
+
+にルールを追加しましょう `Add Traveler` 繰り返し可能なパネルをクリックして追加するボタン：
+
+![パネルルールを追加](/help/forms/assets/custom-function-add-panel.png)
+
+以下の gif を参照してください。これは、 `Add Traveler` ボタンをクリックすると、 `dispatchEvent` プロパティ：
+
+![パネルを追加](/help/forms/assets/custom-function-add-panel.gif)
+
+同様に、で説明されているように、次のコード行を追加します。 [create-custom-function](#create-custom-function) セクション（削除する場合） `Delete Traveler` ボタンは、 `dispatchEvent` プロパティ：
+
+```javascript
+/**
+ 
+ * @name testRemoveInstance
+ * @param {scope} globals
+ */
+function testRemoveInstance(globals)
 {
     var repeatablePanel = globals.form.traveler;
     globals.functions.dispatchEvent(repeatablePanel, 'removeInstance');
 } 
-
 ```
-Let us add a rule to the `Delete Traveler` button to delete the repeatable panel when it is clicked:
 
-![Delete Panel Rule](/help/forms/assets/custom-function-delete-panel.png)
+にルールを追加しましょう `Delete Traveler` 繰り返し可能なパネルをクリックして削除するボタン：
 
-Refer to the screenshot below, which demonstrates that when the `Delete Traveler` button is clicked, the traveler panel is deleted using the `dispatchEvent` property:
+![パネルルールを削除](/help/forms/assets/custom-function-delete-panel.png)
 
-![Delete Panel](/help/forms/assets/customg)
--->
+以下の gif を参照してください。これは、 `Delete Traveler` ボタンをクリックすると、トラベラーパネルが `dispatchEvent` プロパティ：
+
+![パネルを削除](/help/forms/assets/custom-function-delete-panel.gif)
+
 
 ## カスタム関数のキャッシュサポート
 
