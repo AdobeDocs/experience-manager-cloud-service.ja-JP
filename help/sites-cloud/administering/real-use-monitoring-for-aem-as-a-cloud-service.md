@@ -1,7 +1,7 @@
 ---
 title: AEMの実際の使用状況のモニタリングas a Cloud Service
 description: Real Use Monitoring （RUM）を使用して、web サイトやアプリケーションのデジタルユーザーエクスペリエンスをリアルタイムでキャプチャおよび分析する方法を説明します。
-source-git-commit: a15f973c21044e16751401bd0ffb256a4d0fb17d
+source-git-commit: d2997213d47d398efdb7ce3810fa0959ece072c6
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 22%
@@ -10,6 +10,7 @@ ht-degree: 22%
 
 
 >[!NOTE]
+>
 >このたびはお知らせいたします [GA ロールアウト](/help/release-notes/release-notes-cloud/release-notes-current.md#real-use-monitoring) real Use Monitoring サービスの場合、クライアント側でデータを収集します。 これは自動サービスで、お客様による設定は必要ありません。
 
 # AEMas a Cloud Service向け Real Use Monitoring Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
@@ -113,6 +114,6 @@ RUM データを分析する際は、ページビュー数やその他のパフ�
 
 1. **オプトアウトするにはどうすればよいですか？**
 
-RUM （Real Use Monitoring）を使用することを強くお勧めします。これは、その大きなメリットと、デジタルエクスペリエンスを最適化できるという点です。 Web サイトのパフォーマンスの向上に役立つ貴重なインサイトを提供できます。このサービスはシームレスに動作するように設計されており、Web サイトのパフォーマンスには影響しません。
+   RUM （Real Use Monitoring）を使用することを強くお勧めします。これは、その大きなメリットと、デジタルエクスペリエンスを最適化できるという点です。 Web サイトのパフォーマンスの向上に役立つ貴重なインサイトを提供できます。このサービスはシームレスに動作するように設計されており、Web サイトのパフォーマンスには影響しません。
 
-オプトアウトは、これらのインサイトを欠落させることを意味します。 ただし、問題が発生した場合は、Adobeサポートにお問い合わせください。
+   オプトアウトは、これらのインサイトを欠落させることを意味します。 ただし、問題が発生した場合は、Adobeサポートにお問い合わせください。
