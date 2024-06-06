@@ -4,7 +4,7 @@ description: アダプティブフォームに新しいロケールを追加す�
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+source-git-commit: 6238d059ff44586ab1b0d24895a8b73d74b1f913
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 98%
@@ -369,7 +369,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 ## 新しいローカライゼーションをサポートする上でのベストプラクティス {#best-practices}
 
 * アドビでは、アダプティブフォームの作成後に翻訳プロジェクトを作成することをお勧めします。これにより、ローカライゼーションプロセスが効率化されます。
-* 数値ボックスと日付選択コンポーネントが特定のロケールに変換されると、フォーマットの問題が発生する場合があります。 これを軽減するには、 **言語** の設定ダイアログにオプションが組み込まれました。 [日付選択コンポーネント](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/number-input#formats-configure-tab) および [数値ボックスコンポーネント](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
+* 数値ボックスと日付選択コンポーネントが特定のロケールに変換されると、フォーマットの問題が発生する場合があります。 これを軽減するには、 **言語** の設定ダイアログにオプションが組み込まれました。 [日付選択コンポーネント](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) および [数値ボックスコンポーネント](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * 新しいフィールドの処理：

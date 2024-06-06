@@ -4,10 +4,10 @@ description: アダプティブフォームで繰り返し可能なセクショ�
 role: Architect, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
-workflow-type: ht
-source-wordcount: '1256'
-ht-degree: 100%
+source-git-commit: d3c5adf0b5b2155308e0bf9f4459682f11b67780
+workflow-type: tm+mt
+source-wordcount: '1258'
+ht-degree: 95%
 
 ---
 
@@ -31,10 +31,10 @@ ht-degree: 100%
 * アダプティブフォームコンポーネントの繰り返し回数の最小数または最大数を設定する
 * 繰り返し可能なセクションに対して追加または削除のアクションを設定するために、ルールエディターを使用する
 
-[パネル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=ja)、[アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=ja)、[水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=ja)、または[ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=ja)コンポーネントを使用して、アダプティブフォームのセクションを繰り返し可能にすることができます。パネル、アコーディオン、水平タブ、またはウィザードコンポーネントに子コンポーネントを追加して、フォーム内に繰り返し可能なセクションを作成できます。
+を使用できます [パネル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=ja), [アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=ja), [水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=ja), [垂直タブ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)  または [ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=ja) アダプティブフォームのセクションを繰り返し可能にするためのコンポーネント。 これらのコンポーネントに子コンポーネントを追加して、フォーム内に繰り返し可能なセクションを作成できます。
 
 
-このドキュメントの例は、[パネル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=ja)コンポーネントに基づいています。同じ手順を実行して、[アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=ja)、[水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=ja)、および[ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=ja)コンポーネントを繰り返すことができます。
+このドキュメントの例は、[パネル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=ja)コンポーネントに基づいています。同じ手順を実行して、 [パネル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=ja), [アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=ja), [水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=ja), [垂直タブ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) または [ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=ja) 繰り返し可能なコンポーネント。
 
 ## フォーム内の繰り返し可能なセクションの追加または削除 {#add-or-delete-repeatable-section-in-panel-container}
 
