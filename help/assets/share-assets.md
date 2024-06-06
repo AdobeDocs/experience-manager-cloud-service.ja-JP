@@ -1,14 +1,13 @@
 ---
 title: アセット、フォルダー、コレクションを配布して共有する
 description: リンクとして共有、ダウンロード、 [!DNL Brand Portal]、 [!DNL desktop app]、 [!DNL Asset Link] 経由などのメソッドを使用して、デジタルアセットを配布します。
-contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: ht
-source-wordcount: '1647'
-ht-degree: 100%
+source-git-commit: 1b4c5d985c71a84449a13b79fc00adea0443a631
+workflow-type: tm+mt
+source-wordcount: '1847'
+ht-degree: 85%
 
 ---
 
@@ -86,7 +85,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 1. **[!UICONTROL リンク共有]** ダイアログが表示され、 **[!UICONTROL 共有リンク]** フィールドに自動生成されたアセットリンクが含まれます。
 1. 必要に応じて、共有リンクの有効期限を設定します。
 1. **[!UICONTROL リンク設定]**&#x200B;で、`Include Originals` または `Include Renditions` をチェックまたはチェック解除して、2 つのいずれかを含めるか除外します。少なくともオプションの選択は必須です。
-1. 選択したアセットの名前は [!DNL Share Link] ダイアログボックスの右行に表示されます。
+1. 選択したアセットの名前がの右列に表示されます [!DNL Share Link] ダイアログが表示されます。
 1. アセットリンクをコピーしてユーザーと共有します。
 
 ### メール通知によるアセットリンクの共有 {#share-assets-link-through-email}
@@ -101,13 +100,49 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
    * **[!UICONTROL 件名]** ボックスに、共有するアセットの目的を指定する件名を入力します。
    * 「**[!UICONTROL メッセージ]**」ボックスに、必要に応じてメッセージを入力します。
    * 「**[!UICONTROL 有効期限]**」フィールドに、日付選択を使用して、リンクの有効期限を指定します。
-   * 「**[!UICONTROL 元のファイルのダウンロードを許可]**」チェックボックスをオンにして、受信者が元のレンディションをダウンロードできるようにします。
+   * を有効にする **[!UICONTROL 元のファイルのダウンロードを許可]** チェックボックスをオンにして、受信者が元のレンディションをダウンロードできるようにします。
 
 1. 「**[!UICONTROL 共有]**」をクリックします。リンクをユーザーと共有することを確認するメッセージが表示されます。共有リンクを含むメールがユーザーに届きます。
 
    ![リンク共有メール](assets/link-sharing-email-notification.png)
 
-### アセットリンクを使用したアセットのダウンロード
+### メールテンプレートをカスタマイズ {#customize-email-template}
+
+適切に設計されたテンプレートは、プロ意識と能力を伝え、メッセージと組織の信頼性を高めます。 この [!DNL Adobe Experience Manager] 共有リンクを含んだメールを受信する受信者に送信されるメールテンプレートをカスタマイズできます。 さらに、カスタマイズされたメールテンプレートを使用すると、名前を指定して受信者にアドレスを指定し、受信者に関連する特定の詳細を参照することで、メールコンテンツをパーソナライズできます。 このような個人的なタッチは、受信者に価値があると感じさせ、エンゲージメントを高めることができます。 それだけでなく、カスタマイズされたテンプレートにより、ロゴ、色、フォントなど、メールがブランドアイデンティティと一貫したものになります。 一貫性を保つことで、受信者間のブランドの認識と信頼が強化されます。
+
+#### カスタマイズされたメールテンプレートの形式 {#format-of-custom-email-template}
+
+メールテンプレートは、プレーンテキストまたはHTMLを使用してカスタマイズできます。 デフォルトの編集可能テンプレートリンクは次の場所にあります。 `/libs/settings/dam/adhocassetshare/en.txt`. テンプレートを上書きするには、ファイルを作成します `/apps/settings/dam/adhocassetshare/en.txt`. メールテンプレートは、必要な回数だけ変更できます。
+
+| プレースホルダー | 説明 |
+|---|-----|
+| ${emailSubject} | メールの件名 |
+| ${emailInitiator} | 電子メールを作成したユーザーの電子メール ID |
+| ${emailMessage} | メール本文 |
+| ${pagePath} | 共有リンクの URL |
+| ${linkExpiry} | 共有リンクの有効期限 |
+| ${host.prefix} | の起源 [!DNL Experience Manager] 例： `http://www.adobe.com"` |
+
+#### カスタマイズされたメールテンプレートの例 {#custom-email-template-example}
+
+```
+subject: ${emailSubject}
+
+<!DOCTYPE html>
+<html><body>
+<p><strong>${emailInitiator}</strong> invited you to review assets.</p>
+<p>${emailMessage}</p>
+<p>The shared link will be available until ${linkExpiry}.
+<p>
+    <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
+</p>
+
+Sent from instance: ${host.prefix}
+
+</body></html>
+```
+
+### アセットリンクを使用したアセットのダウンロード {#download-assets-using-asset-link}
 
 共有アセットリンクへのアクセス権を持つユーザーは誰でも、zip フォルダーにバンドルされたアセットをダウンロードできます。 コピーしたアセットリンクにアクセスしても、メールで共有されたアセットリンクを使用しても、ダウンロードプロセスは同じです。
 
@@ -211,7 +246,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 マーケターや事業部門のユーザーは、次のいずれかを使用して、承認済みアセットをクリエイティブプロフェッショナルと容易に共有できます。
 
-* **Adobe Experience Manager デスクトップアプリケーション**：このアプリケーションは Windows と Mac で動作します。[AEM デスクトップアプリケーションの概要](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を参照してください。承認済みのデスクトップユーザーが共有アセットに容易にアクセスできる方法については、[アセットの参照、検索、プレビュー](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#browse-search-preview-assets)を参照してください。デスクトップユーザーは、アセットを作成し、新しい画像をアップロードするなどして、Experience Manager ユーザーである相手とアセットを共有することができます。詳しくは、[デスクトップアプリケーションを使用したアセットのアップロード方法](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#upload-and-add-new-assets-to-aem)を参照してください。
+* **Adobe Experience Manager デスクトップアプリケーション**：このアプリケーションは Windows と Mac で動作します。[AEM デスクトップアプリケーションの概要](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を参照してください。承認済みのデスクトップユーザーが共有アセットに容易にアクセスできる方法については、[アセットの参照、検索、プレビュー](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#browse-search-preview-assets)を参照してください。デスクトップユーザーは、アセットを作成し、新しい画像をアップロードするなどして、Experience Manager ユーザーである相手とアセットを共有することができます。参照： [デスクトップアプリケーションを使用したアセットのアップロード](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#upload-and-add-new-assets-to-aem).
 
 * **Adobe Asset Link**：クリエイティブプロフェッショナルは、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe Photoshop] 内から直接アセットを検索および使用できます。
 
@@ -223,7 +258,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-ユーザーと共有するアセットの URL を生成するには、リンク共有ダイアログを使用します。`/var/dam/share` の場所への管理者特権または読み取り権限を持つユーザーが、共有されたリンクを表示することができます。リンクによるアセットの共有は、外部の関係者が [!DNL Assets] にログインすることなくリソースを利用するための便利な方法です。
+ユーザーと共有するアセットの URL を生成するには、リンク共有ダイアログを使用します。`/var/dam/share` の場所への管理者特権または読み取り権限を持つユーザーが、共有されたリンクを表示することができます。リンクによるアセットの共有は、外部の関係者が [!DNL Assets] にログインせずにリソースを利用できる便利な方法です。
 
 >[!NOTE]
 >
@@ -266,7 +301,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### [!DNL Adobe Asset Link] の使用設定  {#configure-asset-link}
 
-Adobe Asset Link を使用すると、コンテンツ作成プロセスでのクリエイターとマーケターのコラボレーションを効率化できます。[!DNL Adobe Experience Manager Assets] を [!DNL Creative Cloud] デスクトップアプリケーションである [!DNL Adobe InDesign]、[!DNL Adobe Photoshop]、[!DNL Adobe Illustrator] と接続します。[!DNL Adobe Asset Link] パネルを使用すると、[!DNL Assets] に保存されているコンテンツに対して、クリエイターが最もなじみのあるクリエイティブアプリケーションからアクセスして変更を加えることができます。
+Adobe Asset Link を使用すると、コンテンツ作成プロセスでのクリエイターとマーケターのコラボレーションを効率化できます。接続する [!DNL Adobe Experience Manager Assets] （を使用） [!DNL Creative Cloud] デスクトップアプリケーション、 [!DNL Adobe InDesign], [!DNL Adobe Photoshop]、および [!DNL Adobe Illustrator]. [!DNL Adobe Asset Link] パネルを使用すると、[!DNL Assets] に保存されているコンテンツに対して、クリエイターが最もなじみのあるクリエイティブアプリケーションからアクセスして変更を加えることができます。
 
 [ [!DNL Adobe Asset Link] と併用できるように [!DNL Assets] を設定する方法](https://helpx.adobe.com/jp/enterprise/using/configure-aem-assets-for-asset-link.html)を参照してください。
 
@@ -300,3 +335,4 @@ Adobe Asset Link を使用すると、コンテンツ作成プロセスでのク
 * [コレクションを管理](manage-collections.md)
 * [メタデータの一括読み込み](metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+
