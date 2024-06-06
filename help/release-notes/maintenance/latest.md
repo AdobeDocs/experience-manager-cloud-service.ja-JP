@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: b7e8fd902bb2fe98e183b7d987b87fee69e48337
+source-git-commit: f52b5f763277c9288d5dd30b01cfb7a4afeddda7
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 46%
+source-wordcount: '384'
+ht-degree: 43%
 
 ---
 
@@ -44,6 +44,10 @@ Experience Managerガイドで修正された新機能や機能強化および�
 ### 既知の問題 {#known-issues-16544}
 
 なし。
+
+### 変更通知 {#change-notice-16544}
+
+2024 年 9 月以降、AEM as a Cloud Serviceは Sling Model エクスポーターフレームワークを介してリソースリゾルバーのシリアル化を無効にします。 参照： [ドキュメント](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter) を参照してください。
 
 ### 非推奨（廃止予定）機能と API {#deprecated-16544}
 
