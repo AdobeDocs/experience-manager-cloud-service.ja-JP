@@ -1,13 +1,13 @@
 ---
-title: コアコンポーネントに基づくアダプティブフォームに新しいロケールのサポートを追加するにはどうすればよいですか？
+title: コアコンポーネントに基づいてアダプティブフォームに新しいロケールのサポートを追加するには、どうすればよいですか？
 description: アダプティブフォームに新しいロケールを追加する方法を説明します。
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 9cb3b52d0cf172c16777eadbc4d78b267c3db513
+source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
 workflow-type: tm+mt
-source-wordcount: '2028'
-ht-degree: 12%
+source-wordcount: '2068'
+ht-degree: 98%
 
 ---
 
@@ -18,85 +18,85 @@ ht-degree: 12%
 | 基盤コンポーネント | [ここをクリックしてください](supporting-new-language-localization.md) |
 | コアコンポーネント | この記事 |
 
-<span class="preview"> 右から左に筆記する言語のサポート機能は、早期導入プログラムで利用できます。 早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID で aem-forms-ea@adobe.com までメールを送信してください。</span>
+<span class="preview"> 右から左へ記述する言語サポート機能は、早期導入プログラムで利用できます。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID で aem-forms-ea@adobe.com までメールを送信してください。</span>
 
 AEM Forms が標準でサポートしているロケールは、英語（en）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ドイツ語（de）、日本語（ja）、ブラジルポルトガル語（pt-br）、中国語（zh-tn）、台湾中国語（zh-tw）、韓国語（ko-kr）です。その他のロケール（ヒンディー語（hi_IN）など）のサポートを追加することもできます。また、これらのロケールを追加すると、右横書き（RTL）言語（アラビア語、ペルシア語、ウルドゥー語など）でアダプティブフォームを表示することもできます。
 
-## AEM Formsはアダプティブフォームのロケールをどのように決定しますか？
+## AEM Forms では、アダプティブフォームのロケールをどのように判断しますか？
 
-アダプティブフォームのレンダリング用のロケールをAEM Formsがどのように選択するかを理解することは、適切なローカライゼーションにとって重要です。 選択プロセスの分類を次に示します。
+AEM Forms でアダプティブフォームのレンダリング用にロケールを選択する方法を理解することは、適切にローカライゼーションを行うために重要です。選択プロセスの分類を以下に示します。
 
 ### 優先度ベースのロケールの選択
 
-AEM Formsは、アダプティブフォームのロケールを決定するために、次のメソッドを優先します。
+AEM Forms では、アダプティブフォームのロケールを判断するために、次のメソッドを優先します。
 
-1. **URL ロケールセレクター（[locale]）**:
+1. **URL ロケールセレクター（[ロケール]）**：
 
-   システムは次を使用して、URL 内で指定されたロケールに優先順位を付けます [locale] セレクター。 この形式を使用すると、キャッシュのパフォーマンスが向上します。
+   システムでは、[ロケール]セレクターを使用して URL 内で指定したロケールが優先されます。この形式を使用すると、キャッシュを使用してパフォーマンスを向上させることができます。
 
-   形式：URL は次の形式になります。http:/[AEM Forms Server の URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled.
+   形式：URL は、http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled の形式に従います。
 
-   例：https://[サーバー]/content/forms/af/contact-us.hi.html は、フォームをヒンディー語でレンダリングします。
+   例：https://[server]/content/forms/af/contact-us.hi.html では、フォームをヒンディー語でレンダリングします。
 
 
-1. **afAcceptLang リクエストパラメーター**:
+1. **afAcceptLang リクエストパラメーター**：
 
-   ユーザーのブラウザーロケールを上書きするには、 `afAcceptLang` URL のパラメーター。
+   ユーザーのブラウザーロケールを上書きするには、URL で `afAcceptLang` パラメーターを使用します。
 
-   例：https://[サーバー]/forms/af/survey.ca-fr.html?afAcceptLang=ca-fr は、カナダのフランス語でフォームを強制的にレンダリングします。
+   例：https://[server]/forms/af/survey.ca-fr.html?afAcceptLang=ca-fr では、フォームをカナダのフランス語で強制的にレンダリングします。
 
-1. **ユーザーのブラウザーロケール （Accept-Language ヘッダー）**:
+1. **ユーザーのブラウザーロケール（使用可能言語ヘッダー）**：
 
-   他のロケールが指定されていない場合、AEM Formsは、 `Accept-Language` ヘッダー。
+   他のロケールを指定していない場合、AEM Forms では `Accept-Language` ヘッダーを使用して送信されたユーザーのブラウザーロケールを考慮します。
 
 
 ### フォールバックメカニズム：
 
 
-* 要求されたロケールのクライアントライブラリ（新しいロケールを追加するプロセス。このドキュメントで後述）が使用できない場合、AEM Formsはロケール内の言語コードに基づいてライブラリをチェックします。
+* リクエスト済みのロケールのクライアントライブラリ（新しいロケールを追加するプロセス。このドキュメントで後述）が使用できない場合、AEM Forms ではロケール内の言語コードに基づいてライブラリを確認します。
 
-  例：en_ZA （南アフリカ英語）が要求され、en_ZA ライブラリがない場合、利用可能であれば en （英語）が使用されます。
+  例：en_ZA（南アフリカ英語）をリクエスト済みで、en_ZA ライブラリがない場合は、使用可能であれば en（英語）が使用されます。
 
-  適切なクライアントライブラリが見つからない場合は、デフォルトの辞書（ほとんどの場合） `en`）が使用されます。
+  適切なクライアントライブラリが見つからない場合は、フォームのオーサリング言語のデフォルトの辞書（ほとんどの場合 `en`）が使用されます。
 
   ロケール情報がない場合、アダプティブフォームは開発時に使用された元の言語で表示されます。
 
 
 ## ロケール追加の前提条件
 
-アダプティブFormsの新しいロケールの追加を開始する前に、次のものが揃っていることを確認します。
+アダプティブフォームに新しいロケールを追加する前に、次の点を確認してください。
 
 **ソフトウェア：**
 
-* プレーンテキストエディター（IDE）：任意のプレーンテキストエディターも使用できますが、次のような統合開発環境（IDE）も使用できます [Microsoft Visual Studio Code](https://code.visualstudio.com/download) は、編集を容易にする高度な機能を提供します。
+* プレーンテキストエディター（IDE）：どのプレーンテキストエディターでも機能しますが、[Microsoft Visual Studio Code](https://code.visualstudio.com/download) などの統合開発環境（IDE）では、編集を簡単にする高度な機能が提供されます。
 
-* Git：このバージョン管理システムは、コードの変更を管理するために必要です。 インストールされていない場合は、からダウンロードします。 [https://git-scm.com](https://git-scm.com).
+* Git：コードの変更を管理するには、このバージョン管理システムが必須です。インストール済みでない場合は、[https://git-scm.com](https://git-scm.com) からダウンロードしてください。
 
 
-**コードリポジトリー：**
+**コードリポジトリ：**
 
-アダプティブ Forms コアコンポーネントリポジトリを複製する：ロケールを追加するには、このリポジトリのクライアントライブラリが必要です。 リポジトリのクローンを作成するには、以下を行います。
+アダプティブフォームコアコンポーネントリポジトリのクローンを作成：ロケールを追加するには、このリポジトリのクライアントライブラリが必要です。リポジトリのクローンを作成するには、以下を行います。
 
 1. コマンドラインまたはターミナルウィンドウを開きます。
 
-1. リポジトリを保存するマシン上の目的の場所に移動します（例えば、/adaptive-forms-core-components）。
+1. 保存したいマシン上の目的の場所（例：/adaptive-forms-core-components）にリポジトリを移動します。
 
-1. 次のコマンドを実行して、リポジトリをクローンします。
+1. 次のコマンドを実行して、リポジトリのクローンを作成します。
 
    ```
    git clone https://github.com/adobe/aem-core-forms-components.git
    ```
 
-   このコマンドは、リポジトリをダウンロードし、という名前のフォルダーを作成します。 `aem-core-forms-components` お使いのマシン上。 このガイド全体では、このフォルダーをと呼びます。 `[Adaptive Forms Core Components repository]`
+   このコマンドでリポジトリをダウンロードし、マシン上に `aem-core-forms-components` という名前のフォルダーを作成します。このガイドでは、このフォルダーを `[Adaptive Forms Core Components repository]` と呼びます。
 
 
 ## ロケールの追加 {#add-localization-support-for-non-supported-locales}
 
 コアコンポーネントに基づいてアダプティブフォームに新しいロケールのサポートを追加するには、次の手順に従います。
 
-### AEMas a Cloud ServiceGit リポジトリのクローン
+### AEM as a Cloud Service Git リポジトリのクローンを作成
 
-1. コマンドラインを開き、AEMas a Cloud Serviceリポジトリを格納するディレクトリ（など）を選択します。 `/cloud-service-repository/`.
+1. コマンドラインを開き、AEM as a Cloud Service リポジトリを保存するディレクトリ（例：`/cloud-service-repository/`）を選択します。
 
 1. 次のコマンドを実行して、リポジトリのクローンを作成します。
 
@@ -104,46 +104,46 @@ AEM Formsは、アダプティブフォームのロケールを決定するた�
    git clone https://git.cloudmanager.adobe.com/<organization-name>/<program id>/
    ```
 
-   Git リポジトリを複製するには、次の情報が必要です。
+   Git リポジトリのクローンを作成するには、次の情報が必要です。
 
-   * **組織名**：これにより、Adobe Experience Manager as a Cloud Service内のチームまたはプロジェクトが識別されます（AEMas a Cloud Service）。
+   * **組織名**：Adobe Experience Manager as a Cloud Service（AEM as a Cloud Service）内のチームまたはプロジェクトが識別されます。
 
-   * **プログラム ID**：リポジトリに関連付けられたプログラムを指定します。
+   * **プログラム ID**：リポジトリに関連付けられたプログラムが指定されます。
 
-   * **資格情報**：リポジトリに安全にアクセスするには、ユーザー名とパスワード（または個人用アクセストークン）が必要です。
+   * **資格情報**：リポジトリに安全にアクセスするには、ユーザー名とパスワード（または個人アクセストークン）が必要です。
 
    **この情報はどこにありますか？**
 
-   これらの詳細を見つける手順については、Adobe Experience Leagueの記事「」を参照してください[Git へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#accessing-git)」と入力します。
+   これらの詳細を見つける手順について詳しくは、Adobe Experience League の記事「[Git へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#accessing-git)」を参照してください。
 
    **プロジェクトの準備が整いました。**
 
-   コマンドが正常に完了すると、ローカルディレクトリに新しいフォルダーが作成されます。 このフォルダーには、プログラムの名前を付けます（例：program-id）。 このフォルダーには、AEMas a Cloud ServiceGit リポジトリーからダウンロードされたすべてのファイルとコードが含まれています。
+   コマンドが正常に完了すると、ローカルディレクトリに新しいフォルダーが作成されます。このフォルダーには、プログラムにちなんだ名前（例：program-id）が付けられます。このフォルダーには、AEM as a Cloud Service Git リポジトリからダウンロードしたすべてのファイルとコードが含まれます。
 
-   このガイド全体では、このフォルダーをと呼びます。 `[AEMaaCS project directory]`.
+   このガイドでは、このフォルダーを `[AEMaaCS project directory]` と呼びます。
 
 
-### 新しいロケールを Guide Localization Service に追加する
+### Guide Localization Service に新しいロケールを追加
 
-1. リポジトリフォルダーをエディターで開きます。
+1. エディターでリポジトリフォルダーを開きます。
 
-   ![エディターのリポジトリーフォルダー](/help/forms/assets/repository-folder-in-an-editor.png)
+   ![エディターでのリポジトリフォルダー](/help/forms/assets/repository-folder-in-an-editor.png)
 
-1. を見つけます。 `Guide Localization Service.cfg.json` ファイル。 このファイルは、AEM Forms アプリケーションでサポートされているロケールを制御します。 このファイルを編集して新しいロケールを追加できます。
+1. `Guide Localization Service.cfg.json` ファイルを見つけます。このファイルは、AEM Forms アプリケーションでサポートされているロケールを制御します。このファイルを編集すると、新しいロケールを追加できます。
 
-   * **既存のファイル**：ファイルが既に存在する場合は、AEM Forms プロジェクトディレクトリ内で見つけます。 典型的な場所は次のとおりです。
+   * **既存のファイル**：ファイルが既に存在する場合は、AEM Forms プロジェクトディレクトリ内で見つけます。標準の場所は次のとおりです。
 
      ```Shell
      [AEMaaCS project directory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config`. 
      ```
 
-     置換 `<appid>` プロジェクト固有のアプリ ID を使用します。 次を見つけることができます `<appid>` におけるAEM プロジェクトの場合 `archetype.properties` ファイル。
+     `<appid>` をプロジェクト固有のアプリ ID に置き換えます。AEM プロジェクトの `<appid>` は `archetype.properties` ファイルにあります。
 
      ![アーキタイププロパティ](/help/forms/assets/archetype-properties.png)
 
-   * **新規ファイル**：ファイルが存在しない場合は、上記と同じ場所にファイルを作成する必要があります。 このドキュメントからファイル名を手動で入力するのではなく、コピーして貼り付けてください。 ファイル名 `Guide Localization Service.cfg.json` スペースを含みます。 これは意図的なもので、ドキュメントの誤字ではありません。
+   * **新規ファイル**：ファイルが存在しない場合は、上記と同じ場所に作成する必要があります。このドキュメントからファイル名をコピー＆ペーストするのではなく、手動で名前を入力します。ファイル名 `Guide Localization Service.cfg.json` には、スペースが含まれます。これは意図的なもので、ドキュメント内の誤字ではありません。
 
-     OOTB でサポートされているロケールのリストを含むファイルのサンプルは次のとおりです。
+     OOTB でサポートされているロケールのリストを含むサンプルファイルは次のとおりです。
 
      ```
          {
@@ -163,136 +163,136 @@ AEM Formsは、アダプティブフォームのロケールを決定するた�
      ```
 
 1. 目的の言語のロケールコードをファイルに追加します。
-   1. の使用 [ISO 639-1 コードの一覧](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) をクリックして、目的の言語を表す 2 文字のコードを検索します。
+   1. [ISO 639-1コードリスト](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes)を使用して、目的の言語を表す 2 文字のコードを見つけます。
 
-   1. ロケールコードをに含めます。 `Guide Localization Service.cfg.json` ファイル。 次に例を示します。
+   1. `Guide Localization Service.cfg.json` ファイルにロケールコードを含めます。以下に例を示します。
 
-      * 左から右の言語：
-         * 英語（米国）:en-US
-         * スペイン語（スペイン）: es-ES
-         * フランス語（フランス）: fr-FR
-      * 右から左に筆記する言語：
-         * アラビア語（アラブ首長国連邦）:ar-ae
-         * ヘブライ語：he （または歴史的参考のための iw）
+      * 左から右に記述する言語：
+         * 英語（米国）：en-US
+         * スペイン語（スペイン）：es-ES
+         * フランス語（フランス）：fr-FR
+      * 右から左に記述する言語：
+         * アラビア語（アラブ首長国連邦）：ar-ae
+         * ヘブライ語：he（または歴史的参照用の iw）
          * ペルシア語：fa
 
-1. 変更を行った後、必ず `Guide Localization Service.cfg.json` ファイルは有効な JSON ファイルとして正しくフォーマットされています。 JSON 形式のエラーにより、正しく機能しない場合があります。 ファイルを保存します。
+1. 変更を行った後、`Guide Localization Service.cfg.json` ファイルが有効な JSON ファイルとして正しく書式設定されていることを確認します。JSON の書式設定にエラーがあると、正しく機能しない場合があります。ファイルを保存します。
 
 
 
-### サンプルクライアントライブラリを利用すると、ロケールを簡単に追加できます
+### サンプルクライアントライブラリを活用してロケールを簡単に追加
 
-AEM Formsは、便利なサンプルクライアントライブラリを提供します。 `clientlib-it-custom-locale`新しいロケールの追加を簡素化する。 このライブラリは、 [アダプティブ Forms コアコンポーネントリポジトリ](https://github.com/adobe/aem-core-forms-components)、GitHub で入手可能。
+AEM Forms には、新しいロケールの追加を簡素化する便利なサンプルクライアントライブラリ `clientlib-it-custom-locale` が用意されています。このライブラリは、GitHub で入手できる[アダプティブフォームコアコンポーネントリポジトリ](https://github.com/adobe/aem-core-forms-components)の一部です。
 
 
-開始する前に、のローカルコピーを用意します [アダプティブ Forms コアコンポーネントリポジトリ]. そうでない場合は、次のコマンドを使用して、Git を使用して簡単にクローンを作成できます。
+開始する前に、[アダプティブフォームコアコンポーネントリポジトリ]のローカルコピーがあることを確認します。ない場合は、次のコマンドで Git を使用して簡単にクローンを作成できます。
 
 ```SHELL
 git clone https://github.com/adobe/aem-core-forms-components.git
 ```
 
-このコマンドは、clientlib-it-custom-locale ライブラリを含むリポジトリ全体を、マシン上の aem-core-forms-components という名前のディレクトリにダウンロードします。
+このコマンドで、マシン上の aem-core-forms-components というディレクトリに、clientlib-it-custom-locale ライブラリを含むリポジトリ全体をダウンロードします。
 
-![ローカルマシン上のアダプティブ Forms コアコンポーネントのリポジトリーディレクトリ](/help/forms/assets/core-forms-components-repo-on-local-machine.png)
+![ローカルマシン上のアダプティブフォームコアコンポーネントリポジトリのディレクトリ](/help/forms/assets/core-forms-components-repo-on-local-machine.png)
 
-### サンプルクライアントライブラリの統合
+### サンプルクライアントライブラリを統合
 
-次に、を組み込みます `clientlib-it-custom-locale` AEMas a Cloud Serviceにライブラリを追加する。 [AEMaaCS プロジェクトディレクトリ]:
+次に、AEM as a Cloud Service、[AEMaaCS プロジェクトディレクトリ]に `clientlib-it-custom-locale` ライブラリを組み込みます。
 
 1. サンプルクライアントライブラリを見つけます。
 
-   ローカルコピー内 [アダプティブ Forms コアコンポーネントリポジトリ]に移動し、次のパスに移動します。
+   [アダプティブフォームコアコンポーネントリポジトリ]のローカルコピー内で、次のパスに移動します。
 
    ```
        /aem-core-forms-components/it/apps/src/main/content/jcr_root/apps/forms-core-components-it/clientlibs
    ```
 
-1. ライブラリをコピーして貼り付けます。
+1. 次の手順に従って、ライブラリをコピー＆ペーストします。
 
-   1. をコピーします `clientlib-it-custom-locale` フォルダー。
+   1. `clientlib-it-custom-locale` フォルダーをコピーします。
 
       ![clientlib-it-custom-locale のコピー](/help/forms/assets/clientlib-it-custom-locale-copy.png)
 
-   1. 内の次のディレクトリに移動します。 [AEMaaCS プロジェクトディレクトリ]:
+   1. [AEMaaCS プロジェクトディレクトリ]内の次のディレクトリに移動します。
 
       ```
       /ui.apps/src/main/content/jcr_root/apps/<app-id>/clientlib
       ```
 
-      **重要**:Replace `<app-id>` とアプリケーションの実際の ID。
+      **重要**：`<app-id>` をアプリケーションの実際の ID に置き換えます。
 
-   1. コピーしたを貼り付けます `clientlib-it-custom-locale` フォルダーをこのディレクトリに追加します。
+   1. コピーした `clientlib-it-custom-locale` フォルダーをこのディレクトリにペーストします。
 
-      ![clientlib-it-custom-locale の貼り付け](/help/forms/assets/clientlib-it-custom-locale-paste.png)
+      ![clientlib-it-custom-locale のペースト](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
 
-### 新しいロケール用のファイルを作成します。
+### 次の手順に従って、新しいロケールのファイルを作成します。
 
 1. ロケールディレクトリに移動します。
 
-   内で `[AEMaaCS project directory]`に移動し、次のパスに移動します。
+   `[AEMaaCS project directory]` 内で、次のパスに移動します。
 
    ```
        /ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/
    ```
 
-   **重要**:Replace `<program-id>` 実際のアプリケーション ID を使用します。
+   **重要**：`<program-id>` を実際のアプリケーション ID に置き換えます。
 
 1. サンプルの英語ファイルを見つけます。
 
-   AEM Formsはを提供します。 [github のサンプルの英語ロケールファイル（.json）](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json).
+   AEM Forms では、[GitHub 上にサンプルの英語ロケールファイル（.json）](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json)が用意されています。
 
-   英語の言語ファイルには、参照用のデフォルトの文字列セットが含まれています。 ロケール固有のファイルは、英語のファイルの構造に類似している必要があります。
+   英語の言語ファイルには、参照用のデフォルトの文字列セットが含まれます。ロケール固有のファイルは、英語の言語ファイルの構造を模倣する必要があります。
 
-   アラビア語、ヘブライ語、ペルシア語などの言語では、テキストは英語のように左から右（LTR）ではなく、右から左（RTL）に読み上げられます。 これらの言語でフォームを正しく表示するには、サンプルのロケールファイルを参考にすることをお勧めします。 これらのファイルは、RTL 言語のテキスト、日付およびその他の要素のフォーマット方法のリファレンスを提供します。 次のサンプルのロケールファイルを確認できます。
+   アラビア語、ヘブライ語、ペルシア語などの言語では、テキストは英語のように左から右（LTR）ではなく、右から左（RTL）に読み取られます。これらの言語でフォームを正しく表示するには、サンプルロケールファイルをガイドとして使用することをお勧めします。これらのファイルは、RTL 言語のテキスト、日付およびその他の要素を書式設定する方法に関する参照を提供します。次のサンプルロケールファイルを確認できます。
 
    * [アラビア語](/help/forms/assets/ar-ae.json)
    * [ヘブライ語](/help/forms/assets/he.json)
-   * [ペルシ](/help/forms/assets/fa.json)
+   * [ペルシア語](/help/forms/assets/fa.json)
 
    これらのサンプルファイルを活用することで、RTL 言語で作業するユーザーにシームレスなエクスペリエンスをフォームで提供できます。
 
 
-1. ロケールファイルの作成：
+1. ロケールファイルを作成します。
 
-   1. 内に新しい.json ファイルを作成 `i18n` ディレクトリ。
-   1. 目的の言語に適したロケールコードを使用してファイルに名前を付けます（例えば、フランス語の場合は fr-FR.json、アラビア語の場合は ar-ae.json など）。 このファイルの構造は、英語ロケールファイルを反映している必要があります。
+   1. `i18n` ディレクトリ内に新しい .json ファイルを作成します。
+   1. 目的の言語の適切なロケールコードを使用してファイルに名前を付けます（例：フランス語の場合は fr-FR.json、アラビア語の場合は ar-ae.json）。このファイルの構造は、英語ロケールファイルと同じである必要があります。
 
 
 1. 構造と翻訳：
 
    1. 新しく作成したファイルをテキストエディターで開きます。
 
-   1. 英語の値をターゲット言語の対応する翻訳に置き換えます。
+   1. 英語の値を、ターゲット言語の対応する翻訳に置き換えます。
 
    1. 文字列の翻訳が完了したら、ファイルを保存します。
 
 
 
 
-### 辞書へのロケールサポートの追加
+### 辞書にロケールサポートを追加
 
-この手順は、英語（en）、ドイツ語（de）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ポルトガル語（pt-br）、中国語（簡体字 – zh_cn）、中国語（繁体字 – zh_tw）、日本語（ja）、韓国語（ko_kr）の一般的にサポートされているロケール以外にのみ適用されます。
+この手順は、英語（en）、ドイツ語（de）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ポルトガル語（ブラジル）（pt-br）、中国語（簡体字 - zh_cn）、中国語（繁体字 - zh_tw）、日本語（ja）および韓国語（ko_kr）の一般的にサポートされているロケール以外のロケールにのみ適用されます。
 
 1. 設定フォルダーを見つけます。
 
-   次のディレクトリに移動します。 [AEMaaCS プロジェクトディレクトリ]:
+   [AEMaaCS プロジェクトディレクトリ]内の次のディレクトリに移動します。
 
    ```
    /ui.content/src/main/content/jcr_root/etc
    ```
 
-1. 必要なフォルダー（ない場合）を作成します。
+1. 必要なフォルダーを作成します（ない場合）。
 
-   次の場合 `etc` 内にフォルダーが存在しません `jcr_root` フォルダーを作成します。 内側 `etc`という名前の別のフォルダーを作成します。 `languages` 見つからない場合。
+   `jcr_root` フォルダー内に `etc` フォルダーが存在しない場合は作成します。`etc` 内に `languages` という名前の別のフォルダーがない場合は作成します。
 
 1. ロケール設定ファイルを作成します。
 
-   内 `languages` フォルダーに、という名前の新しいファイルを作成します。 `.content.xml`. このドキュメントからファイル名を手動で入力するのではなく、コピーして貼り付けてください。
+   `languages` フォルダー内に、`.content.xml` という名前の新しいファイルを作成します。このドキュメントからファイル名をコピー＆ペーストするのではなく、手動で名前を入力します。
 
-   ![という名前の新しいファイルを作成します。 `.content.xml`](etc-content-xml.png)
+   ![`.content.xml`](etc-content-xml.png) という名前の新しいファイルを作成
 
-   このファイルを開き、次の内容を貼り付けます。を置き換えます。 [LOCALE_CODE] 実際のロケールコードを使用します（例：アラビア語の場合は ar-ae）。
+   このファイルを開き、次の内容をペーストします。[LOCALE_CODE] を実際のロケールコード（例：アラビア語の場合は ar-ae）に置き換えます。
 
 
    ```XML
@@ -302,17 +302,17 @@ git clone https://github.com/adobe/aem-core-forms-components.git
          languages="[de,es,fr,it,pt-br,zh-cn,zh-tw,ja,ko-kr,hi]"/>
    ```
 
-   警告：既存のリストを置き換えません。 代わりに、次のようにコンマで区切って、新しいロケールコードを角括弧で囲んで追加します（例として ar-ae を使用）。
+   警告：既存のリストを置き換えないでください。代わりに、次のように（例として ar-ae を使用）新しいロケールコードを角括弧で囲み、コンマで区切って追加します。
 
    ```XML
    languages="[de,es,fr,it,pt-br,zh-cn,zh-tw,ja,ko-kr,hi,ar-ae]"
    ```
 
-1. 新規フォルダーを filter.xml に含めます。
+1. 新しいフォルダーを filter.xml に含めます。
 
-   に移動します。 `/ui.content/src/main/content/meta-inf/vault/filter.xml` 内のファイル [AEMaaCS プロジェクトディレクトリ].
+   [AEMaaCS プロジェクトディレクトリ]内の `/ui.content/src/main/content/meta-inf/vault/filter.xml` ファイルに移動します。
 
-   ファイルを開き、末尾に次の行を追加します。
+   ファイルを開き、最後に次の行を追加します。
 
    ```
    <filter root="/etc/languages"/>
@@ -322,17 +322,17 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 1. ファイルを保存します。
 
-### 新しく作成したロケールをAEM環境にデプロイします。
+### 新しく作成したロケールを AEM 環境にデプロイ
 
-これで、アダプティブFormsで新しいロケールを使用する設定がすべて完了しました。 次のことができます
+これで、アダプティブフォームで新しいロケールを使用するすべての設定が完了しました。次の操作を実行できます。
 
-* AEMas a Cloud Service環境をデプロイします。 [AEMaaCS プロジェクトディレクトリ]をローカル開発環境に送信して、ローカルマシンで新しいロケール設定を試します。 ローカル開発環境にデプロイする手順は次のとおりです。
+* AEM as a Cloud Service の [AEMaaCS プロジェクトディレクトリ]をローカル開発環境にデプロイし、ローカルマシンで新しいロケール設定を試します。ローカル開発環境にデプロイするには：
 
-   1. ローカル開発環境が稼働していることを確認します。 ローカル開発環境をまだ設定していない場合は、のガイドを参照してください。 [AEM Formsのローカル開発環境の設定](/help/forms/setup-local-development-environment.md).
+   1. ローカル開発環境が起動および実行されていることを確認します。ローカル開発環境をまだ設定していない場合は、[AEM Forms のローカル開発環境の設定](/help/forms/setup-local-development-environment.md)のガイドを参照してください。
 
    1. ターミナルウィンドウまたはコマンドプロンプトを開きます。
 
-   1. に移動します。 [AEMaaCS プロジェクトディレクトリ]
+   1. [AEMaaCS プロジェクトディレクトリ]に移動します。
 
    1. 次のコマンドを実行します。
 
@@ -340,22 +340,22 @@ git clone https://github.com/adobe/aem-core-forms-components.git
       mvn -PautoInstallPackage clean install
       ```
 
-* AEMas a Cloud Service環境をデプロイします。 [AEMaaCS プロジェクトディレクトリ]をCloud Service環境に追加します。 Cloud Service環境にデプロイする手順は次のとおりです。
+* AEM as a Cloud Service の [AEMaaCS プロジェクトディレクトリ]を Cloud Service 環境にデプロイします。Cloud Service 環境にデプロイするには：
 
-   1. 変更内容をコミットします。
+   1. 次の手順に従って、変更内容をコミットします。
 
-      新しいロケール設定を追加した後、ロケールの追加を説明する明確な Git メッセージ（例：「のサポートの追加」）を使用して変更をコミットします [ロケール名]``）に含まれます。
+      新しいロケール設定を追加したら、ロケールの追加を説明する明確な Git メッセージ（例：「[ロケール名のサポートが追加されました]」）を付けて変更内容をコミットします。
 
-   1. 更新されたコードをデプロイします。
+   1. 次の手順に従って、更新済みコードをデプロイします。
 
-      を使用したコードのデプロイメントのトリガー [既存のフルスタックパイプライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline). これにより、新しいロケールサポートを含む更新されたコードが自動的にビルドおよびデプロイされます。
+      [既存のフルスタックパイプライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)を通じてコードのデプロイメントをトリガーします。これにより、新しいロケールサポートを含む更新済みコードが自動的に作成およびデプロイされます。
 
-      まだパイプラインを設定していない場合は、でガイドを参照してください [AEM Formsas a Cloud Service用のパイプラインの設定方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline).
+      パイプラインをまだ設定していない場合は、[AEM Forms as a Cloud Service のパイプラインの設定方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)のガイドを参照してください。
 
 
 ## 新しく追加されたロケールでのアダプティブフォームのプレビュー
 
-次の手順では、新しく追加されたロケールでアダプティブフォームをプレビューする手順を説明します。
+次の手順では、新しく追加したロケールでアダプティブフォームをプレビューする方法について説明します。
 
 1. AEM Forms as a Cloud Service インスタンスにログインします。
 1. **Forms**／**フォームとドキュメント**&#x200B;に移動します。
@@ -363,19 +363,20 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 1. **プロジェクトタイトル**&#x200B;を指定し、**辞書を翻訳プロジェクトに追加**&#x200B;ウィザードのドロップダウンメニューから「**ターゲット言語**」を選択します。
 1. 「**完了**」をクリックし、作成した翻訳プロジェクトを実行します。
 1. **Forms**／**フォームとドキュメント**&#x200B;に移動します。
-1. アダプティブフォームを選択し、 **HTMLとしてプレビュー** オプション。
-1. Append `&afAcceptLang=<locale-name>` をプレビュー URL に移動し、Return キーを押します。 置換 `<locale-name>` 実際のロケールコードを使用します。 アダプティブフォームは指定したロケールで表示されます。
+1. アダプティブフォームを選択し、「**HTML としてプレビュー**」オプションを選択します。
+1. プレビュー URL に `&afAcceptLang=<locale-name>` を追加し、Return キーを押します。`<locale-name>` を実際のロケールコードに置き換えます。アダプティブフォームが指定したロケールで表示されます。
 
 ## 新しいローカライゼーションをサポートする上でのベストプラクティス {#best-practices}
 
-* Adobeでは、アダプティブフォームの作成後に翻訳プロジェクトを作成することをお勧めします。 これにより、ローカライゼーションプロセスが合理化されます。
+* アドビでは、アダプティブフォームの作成後に翻訳プロジェクトを作成することをお勧めします。これにより、ローカライゼーションプロセスが効率化されます。
+* 数値ボックスと日付選択コンポーネントが特定のロケールに変換されると、フォーマットの問題が発生する場合があります。 これを軽減するには、 **言語** の設定ダイアログにオプションが組み込まれました。 [日付選択コンポーネント](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/number-input#formats-configure-tab) および [数値ボックスコンポーネント](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * 新しいフィールドの処理：
 
-   * **機械翻訳**：機械翻訳を使用する場合は、辞書を再作成して再作成する必要があります。[翻訳プロジェクトの実行](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) 新しいフィールドを既存のアダプティブフォームに追加した後、 初回翻訳プロジェクトの後に追加された新しいフィールドは、未翻訳のままになります。
+   * **機械翻訳**：機械翻訳を使用する場合は、既存のアダプティブフォームに新しいフィールドを追加した後、辞書を再作成し、再び[翻訳プロジェクトを実行](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)する必要があります。最初の翻訳プロジェクト後に追加した新しいフィールドは、未翻訳のままになります。
 
-   * **人間による翻訳**：人間による翻訳のワークフローの場合、の UI を使用して辞書を書き出します。 `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. 新しいフィールド用の辞書を更新し、改訂されたバージョンをアップロードします。
+   * **人間翻訳**：人間翻訳ワークフローの場合は、`[AEM Forms Server]/libs/cq/i18n/gui/translator.html` の UI を使用して辞書を書き出します。新しいフィールドの辞書を更新し、改訂バージョンをアップロードします。
 
 
 ## 関連トピック {#see-also}

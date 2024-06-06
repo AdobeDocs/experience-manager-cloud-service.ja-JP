@@ -1,17 +1,17 @@
 ---
-title: URL からのドロップダウンリストオプションの読み込み
+title: AEM Formsas a Cloud Service用Edge Delivery Servicesの URL または別のシートからドロップダウン リスト オプションを読み込む
 description: ドロップダウンリストオプションは別個のスプレッドシートに含まれており、指定された URL を介してプライマリスプレッドシートに読み込まれます。
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
-source-git-commit: 4a534f4335376673c362ef91a877e67a523be560
+source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 100%
+source-wordcount: '469'
+ht-degree: 91%
 
 ---
 
 
-# URL からのドロップダウンリストオプションの読み込み
+# AEM Formsas a Cloud Service用Edge Delivery Servicesの URL または別のシートからのオプション
 
 多くの場合、フォームには、ユーザーが定義済みのオプションから選択するドロップダウンメニューが含まれます。これらのオプションは通常、フォーム自体内で定義されますが、長いリストの管理は面倒な場合があります。このガイドでは、URL を使用して別のスプレッドシートからドロップダウンオプションを読み込んでフォームのオーサリングを改善する方法について概要を説明します。
 
