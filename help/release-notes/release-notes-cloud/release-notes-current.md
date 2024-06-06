@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3e63cfc65ea28a481b50f431483a13c2fd80853c
+source-git-commit: 05144cc11c3a3e99e4e76aa6c8720592e9ca7a9f
 workflow-type: tm+mt
-source-wordcount: '1903'
-ht-degree: 87%
+source-wordcount: '1900'
+ht-degree: 86%
 
 ---
 
@@ -44,7 +44,12 @@ ht-degree: 87%
 
 ### Sites の新機能 {#sites-new-features}
 
-**Edge Delivery Services 用の AEM オーサリング**
+#### RUM （Real Use Monitoring）データ・サービス {#real-use-monitoring}
+
+* **[RUM （Real Use Monitoring）データ・サービスが GA になりました](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEMas a Cloud Service用のクライアントサイドのデータ収集を有効にする。
+クライアントサイドコレクションである Real Use Monitoring サービスは、インタラクションをより正確に反映し、web サイトのエンゲージメントを信頼性の高い方法で測定できるようにします。 これにより、ページトラフィックとパフォーマンスに関する高度なインサイトを持つ顧客が可能になります。 ページのパフォーマンスについて詳しく知り、改善するためのインサイトを得る絶好の機会です。
+
+### Edge Delivery Services向けのAEM オーサリング
 
 安定性の向上と様々な機能強化により、オーサリングエクスペリエンスが向上しました。
 
@@ -212,11 +217,6 @@ AEM 6.5 と同様に、Apache／Dispatcher は、web 階層パイプラインの
 #### 動的コンテンツを読み込むためのエッジサイドインクルード（ESI）（早期導入プログラム） {#esi-early-adopter}
 
 アドビが管理する CDN で、エッジレベルの動的 web コンテンツアセンブリ用のマークアップ言語である[エッジサイドインクルード（ESI）](/help/implementing/dispatcher/edge-side-includes.md)がサポートされるようになりました。ESI スニペットを含め、より大きい TTL で HTML ページ全体を CDN にキャッシュしながら、より頻繁なアップデート（小さい TTL）を必要とする小さなセクションを、接触チャネルから頻繁に取得できます。<!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
-
-#### リアルユーザーモニタリング（RUM）データサービス（早期導入プログラム）
-
-* **[RUM （Real Use Monitoring）データ・サービスが GA になりました](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEMas a Cloud Service用のクライアントサイドのデータ収集を有効にする。
-クライアントサイドコレクションである Real Use Monitoring サービスは、インタラクションをより正確に反映し、web サイトのエンゲージメントを信頼性の高い方法で測定できるようにします。 これにより、ページトラフィックとパフォーマンスに関する高度なインサイトを持つ顧客が可能になります。 ページのパフォーマンスについて詳しく知り、改善するためのインサイトを得る絶好の機会です。
 
 ## [!DNL Experience Manager] ガイド {#guides}
 

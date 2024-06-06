@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8123d5c9e3343361baab651d2c1eb72779b952ab
+source-git-commit: d4ada5f15a587d54f46a475ca574134988b463d8
 workflow-type: tm+mt
-source-wordcount: '5001'
+source-wordcount: '5010'
 ht-degree: 99%
 
 ---
@@ -424,6 +424,7 @@ ht-degree: 99%
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し ](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
+   + [AEMの実際の使用状況のモニタリングas a Cloud Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
 + アセット {#assets}
    + [概要と新機能](/help/assets/overview.md)
    + [ [!DNL Assets] as a [!DNL Cloud Service] の主な変更点](/help/assets/assets-cloud-changes.md)
