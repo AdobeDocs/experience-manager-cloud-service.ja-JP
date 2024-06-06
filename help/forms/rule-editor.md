@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
-workflow-type: ht
+source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+workflow-type: tm+mt
 source-wordcount: '6492'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -18,14 +18,9 @@ ht-degree: 100%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
+| AEMas a Cloud Service（基盤コンポーネント） | この記事 |
+| AEMas a Cloud Service（コアコンポーネント） | [ここをクリックしてください](/help/forms/rule-editor-core-components.md) |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=ja) |
-| AEM as a Cloud Service | この記事 |
-
-
-| バージョン | 記事リンク |
-| -------- | ---------------------------- |
-| コアコンポーネント | [ここをクリックしてください](/help/forms/rule-editor-core-components.md) |
-| 基盤コンポーネント | この記事 |
 
 ## 概要 {#overview}
 

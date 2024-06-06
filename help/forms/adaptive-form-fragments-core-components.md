@@ -5,10 +5,10 @@ topic-tags: author
 keywords: アダプティブフォームフラグメントを追加、アダプティブフォームフラグメント、フォームフラグメントを作成、アダプティブフォームにフラグメントを追加、フラグメントを管理
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: c8172320a8c0372ea6947415a9c1c1be326f3828
+source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
 workflow-type: tm+mt
-source-wordcount: '1344'
-ht-degree: 89%
+source-wordcount: '1355'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,8 @@ ht-degree: 89%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | この記事 |
+| AEMas a Cloud Service（コアコンポーネント） | この記事 |
+| AEMas a Cloud Service（基盤コンポーネント） | [ここをクリックしてください](/help/forms/adaptive-form-fragments.md) |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=ja) |
 
 すべてのフォームは特定の目的のために設計されますが、ほとんどのフォームにはいくつかの共通するセグメントがあります（例：名前と住所、家族の詳細、収入の詳細などの個人情報を入力するためのセグメント）。フォーム開発者は、新しいフォームを作成するたびに、これらの共通セグメントを作成する必要があります。

@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
 workflow-type: tm+mt
-source-wordcount: '5612'
+source-wordcount: '5627'
 ht-degree: 86%
 
 ---
@@ -15,8 +15,9 @@ ht-degree: 86%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| 基盤コンポーネント | [ここをクリックしてください](/help/forms/rule-editor.md) |
-| コアコンポーネント | この記事 |
+| AEMas a Cloud Service（コアコンポーネント） | この記事 |
+| AEMas a Cloud Service（基盤コンポーネント） | [ここをクリックしてください](/help/forms/rule-editor.md) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=ja) |
 
 # アダプティブフォーム（コアコンポーネント）へのルールの追加 {#adaptive-forms-rule-editor}
 
