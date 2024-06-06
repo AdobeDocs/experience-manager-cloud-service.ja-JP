@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: de06178f66c95baef15de19296a654f1ed4a0387
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '383'
+ht-degree: 92%
 
 ---
 
@@ -23,23 +23,23 @@ ht-degree: 0%
 
 ### 機能強化 {#enhancements-16544}
 
-* GRANITE-41133:Jakarta Servlet API 5 および OSGi Servlet Whiteboard API をサポートします。
-* GRANITE-51355:org.slf4j.event を非推奨（廃止予定）にします。
-* GRANITE-51565：ローカルグループがAEMから公開されると、AEMは外部グループとのローカルグループ関係を失います。
-* GRANITE-51707：認証のために http リダイレクト中に cookie saml_request_path を設定する。
-* GRANITE-52010:Jackrabbit バージョンを 2.20.16 に更新します。
-* GRANITE-52057:JCRVLT-745 を修正して Filevault を 3.7.3-T20240514105118-694f6aea に更新。
-* SKYOPS-35998:「Sling RepoInit」依存関係を更新する：Repoinit パーサー 1.9.0、Repoinit JCR 1.1.46。
+* GRANITE-41133：Jakarta Servlet API 5 と OSGi Servlet Whiteboard API をサポートします。
+* GRANITE-51355：org.slf4j.event を非推奨にします。
+* GRANITE-51565：ローカルグループが AEM から公開されると、AEM は外部グループとのローカルグループ関係を失います。
+* GRANITE-51707：認証のための http リダイレクト中に cookie saml_request_path を設定します。
+* GRANITE-50957：Jackrabbit バージョンを 2.20.16 に更新します。
+* GRANITE-52057：Filevault を 3.7.3-T20240514105118-694f6aea に更新して、JCRVLT-745 を修正します。
+* SKYOPS-35998：「Sling RepoInit」の依存関係（Repoinit パーサー 1.9.0、Repoinit JCR 1.1.46）を更新します。
 
 ### 修正された問題 {#fixed-issues-16544}
 
-* GRANITE-51375：中間パスが指定されていない場合、idp-sync は NPE をスローします。
-* GUIDES-17171:15 KB を超えるトピックのコピーと貼り付け操作が、予期しないエラーで失敗します。
-* ガイド–17088：からドキュメントの状態を変更する機能 **ファイルのプロパティ** パネルが正しく動作しておらず、 *ドラフト* 都道府県。
-* GUIDES-16931：トピックのリンク画像が、バージョンの作成後にベースラインに表示されない。
-* ガイド–16896：再利用可能なコンテンツパネルで、 **ユーザー環境設定** は、次の方法でファイルを表示するように設定されています **ファイル名**.
+* GRANITE-51375：中間パスを指定しない場合、idp-sync が NPE をスローする。
+* GUIDES-17171：15 KB を超えるトピックのコピー＆ペースト操作が、予期しないエラーで失敗する。
+* GUIDES-17088：**ファイルプロパティ**&#x200B;パネルからドキュメントの状態を変更する機能が正しく動作せず、*下書き*&#x200B;状態に変わります。
+* GUIDES-16931：バージョン作成後、トピックからリンクされた画像がベースラインに表示されない。
+* GUIDES-16896：**ファイル名**&#x200B;でファイルを表示するように&#x200B;**ユーザーの環境設定**&#x200B;を設定する際、再利用可能なコンテンツパネルに要素がリストされない。
 
-Experience Managerガイドで修正された新機能や機能強化および問題について詳しくは、を参照してください [Experience Managerガイドのリリースロードマップ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Experience Manager Guides の新機能や機能強化および修正された問題について詳しくは、[Experience Manager Guides リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)を参照してください。
 
 ### 既知の問題 {#known-issues-16544}
 

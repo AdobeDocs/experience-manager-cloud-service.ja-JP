@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
 workflow-type: tm+mt
 source-wordcount: '1942'
-ht-degree: 82%
+ht-degree: 92%
 
 ---
 
@@ -62,8 +62,8 @@ ht-degree: 82%
 
 #### RUM （Real Use Monitoring）データ・サービス {#real-use-monitoring}
 
-* **[RUM （Real Use Monitoring）データ・サービスが GA になりました](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEMas a Cloud Service用のクライアントサイドのデータ収集を有効にする。
-クライアントサイドのコレクションである Real Use Monitoring サービスは、インタラクションをより正確に反映し、web サイトのエンゲージメントを確実に測定します。 これにより、ページトラフィックとパフォーマンスに関する高度なインサイトを持つ顧客が可能になります。 ページのパフォーマンスについて詳しく知り、改善するためのインサイトを得る絶好の機会です。
+* **[実際の使用のモニタリング（RUM）データサービスが GA になり](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**、AEM as a Cloud Service のクライアントサイドのデータコレクションを有効にすることができます。
+クライアントサイドのコレクションである Real Use Monitoring サービスは、インタラクションをより正確に反映し、web サイトのエンゲージメントを確実に測定します。 これにより、お客様はページのトラフィックとパフォーマンスに関する高度なインサイトを取得できます。ページのパフォーマンスについて詳しく知り、改善するためのインサイトを得る絶好の機会です。
 
 #### Edge Delivery Services向けのAEM オーサリング {#edge-enhancements}
 
@@ -112,7 +112,7 @@ Experience Manager Assets では、管理ビューに切り替えなくても、
 
 このリリースでは、コアコンポーネントに基づいたアダプティブフォームのビジュアルルールエディターが、大幅にアップグレードされました。次の操作が可能になっています。
 
-* ビジュアルルールエディターでルールを作成して [デフォルトのフォーム送信成功/失敗メッセージを上書き](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
+* ビジュアルルールエディターでルールを作成して、[デフォルトのフォーム送信の成功／失敗メッセージを上書き](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers)します。
 
 * アダプティブフォームのルールエディターに、[WHEN 操作に対して様々なタイプのフィールドを選択](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when)する機能を追加しました。
 
@@ -237,11 +237,11 @@ AEM 6.5 と同様に、Apache／Dispatcher は、web 階層パイプラインの
 ## [!DNL Experience Manager] ガイド {#guides}
 
 * **エクスペリエンスフラグメントへのトピックまたはその要素の公開**
-現在は、Experience Managerガイドを使用して、トピックまたはその要素をエクスペリエンスフラグメントに公開できます。 エクスペリエンスフラグメントは、コンテンツとレイアウトの両方を統合するモジュール型コンテンツユニットです。  エクスペリエンスフラグメントは道具であり、一貫性のある魅力的なエクスペリエンスを作成するのに役立ちます。
-* **トピックのアセットメタデータをネイティブPDF出力に渡す機能**
-ネイティブPDF出力の生成時に、トピックのアセットメタデータを追加できます。 この機能を使用すると、トピックのタイトルや作成者など、様々なトピックの特定のメタデータを、トピックページのヘッダーとフッターに追加できます。
+Experience Manager Guiedes を使用すると、トピックまたはその要素をエクスペリエンスフラグメントに公開できるようになりました。エクスペリエンスフラグメントは、コンテンツとレイアウトの両方を統合するモジュール型コンテンツユニットです。エクスペリエンスフラグメントは便利で、一貫性のある魅力的なエクスペリエンスを作成するのに役立ちます。
+* **トピックのアセットメタデータをネイティブ PDF 出力に渡す機能**
+ネイティブ PDF 出力の生成時に、トピックのアセットメタデータを追加できます。この機能を使用すると、トピックのタイトルや作成者など、様々なトピックの特定のメタデータを、トピックページのヘッダーとフッターに追加できます。
 
-このリリースで修正された新機能および機能強化と問題について詳しくは、 [Experience Managerガイドのリリースロードマップ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+このリリースの新機能および機能強化と修正された問題について詳しくは、[Experience Manager Guides リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)をご覧ください。
 
 ## Cloud Manager {#cloud-manager}
 
