@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: f2701b35c2bc64e7bb049dc49632b7127923970d
+source-git-commit: 7820492f462d2b5824e408429332b5adf2e67aab
 workflow-type: tm+mt
 source-wordcount: '1648'
 ht-degree: 72%
@@ -25,9 +25,9 @@ Adobe Experience Manager には、画像をチューニングおよび最適化�
 **スマートイメージング：**
 
 * Dynamic Mediaでスマートイメージングを有効にすると、クライアントのブラウザーの機能に基づいて、画像の形式、サイズ、画質を自動的に最適化できます。
-詳細情報 に移動 [スマートイメージング](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)
+詳細情報 に移動 [スマートイメージング](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
 * これらのパラメーターを動的に調整することで、画像配信のパフォーマンスを向上させます。
-* 自己評価ツールを使用して、スマートイメージングを評価できます [スナップショット](https://snapshot.scene7.com/)
+* 自己評価ツールを使用して、スマートイメージングを評価できます [スナップショット](https://snapshot.scene7.com/).
 
 **画像形式：**
 
