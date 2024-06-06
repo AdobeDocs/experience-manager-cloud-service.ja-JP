@@ -4,10 +4,10 @@ description: リンクとして共有、ダウンロード、 [!DNL Brand Portal
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 1b4c5d985c71a84449a13b79fc00adea0443a631
+source-git-commit: 90da6851240add93de73dd6da46e54ffbf80a1d3
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 85%
+source-wordcount: '1835'
+ht-degree: 86%
 
 ---
 
@@ -116,12 +116,12 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 | プレースホルダー | 説明 |
 |---|-----|
-| ${emailSubject} | メールの件名 |
-| ${emailInitiator} | 電子メールを作成したユーザーの電子メール ID |
-| ${emailMessage} | メール本文 |
-| ${pagePath} | 共有リンクの URL |
-| ${linkExpiry} | 共有リンクの有効期限 |
-| ${host.prefix} | の起源 [!DNL Experience Manager] 例： `http://www.adobe.com"` |
+| `${emailSubject}` | メールの件名 |
+| `${emailInitiator}` | 電子メールを作成したユーザーの電子メール ID |
+| `${emailMessage}` | メール本文 |
+| `${pagePath}` | 共有リンクの URL |
+| `${linkExpiry}` | 共有リンクの有効期限 |
+| `${host.prefix}` | の起源 [!DNL Experience Manager] 例： `http://www.adobe.com"` |
 
 #### カスタマイズされたメールテンプレートの例 {#custom-email-template-example}
 
