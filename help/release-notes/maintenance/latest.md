@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: de06178f66c95baef15de19296a654f1ed4a0387
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '383'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Experience Manager Guides の新機能や機能強化および修正された問
 
 ### 変更通知 {#change-notice-16544}
 
-2024 年 9 月以降、AEM as a Cloud Serviceは Sling Model エクスポーターフレームワークを介してリソースリゾルバーのシリアル化を無効にします。 参照： [ドキュメント](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) を参照してください。
+2024年9月以降、AEM as a Cloud Service では、Sling Model Exporter フレームワークを介したリソースリゾルバーのシリアル化が無効になります。詳しくは、[ドキュメント](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)を参照してください。
 
 ### 非推奨（廃止予定）機能と API {#deprecated-16544}
 

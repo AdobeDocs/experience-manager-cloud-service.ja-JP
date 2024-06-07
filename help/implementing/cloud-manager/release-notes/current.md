@@ -5,9 +5,9 @@ feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
 source-git-commit: 5644e6f433b18408780e13057ba469e7c4926f78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '702'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
@@ -22,37 +22,37 @@ ht-degree: 52%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Serviceの Cloud Manager リリース 2024.6.0 のリリース日は 2024 年 6 月 6 日（PT）です。 次回のリリースは 2024 年 7 月 11 日（PT）に予定されています。
+AEM as a Cloud Service の Cloud Manager 2024.6.0 のリリース日は 2024年6月6日（PT）です。次回のリリースは 2024年7月11日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* これで、 [独自の GitHub リポジトリの使用](/help/implementing/cloud-manager/managing-code/private-repositories.md) フルスタックパイプラインとフロントエンドパイプラインの両方のソースとして。
-   * さらに、で GitHub リポジトリを利用できます [git サブモジュール](/help/implementing/cloud-manager/managing-code/git-submodules.md) プルリクエストの検証に使用される自動生成パイプラインの制御を強化し、コードスキャン段階で重要な指標の動作を定義できるようになりました。
-   * [また、次の選択肢があります](/help/implementing/cloud-manager/managing-code/github-check-config.md) github のレポート履歴を保持するには、パイプラインに名前を付け、必要に応じてパイプライン変数を設定します。
-* [セルフサービスコンテンツ復元](/help/operations/restore.md) 最大 7 日間のバックアップ復元と機能を提供：
+* フルスタックパイプラインとフロントエンドパイプラインの両方のソースとして、[独自の GitHub リポジトリを使用](/help/implementing/cloud-manager/managing-code/private-repositories.md)できるようになりました。
+   * さらに、[Git サブモジュール](/help/implementing/cloud-manager/managing-code/git-submodules.md)を備えた GitHub リポジトリを活用すると、プルリクエストの検証に使用される自動生成パイプラインのコントロールが強化され、コードスキャンフェーズ中に重要な指標の動作を定義できます。
+   * [また](/help/implementing/cloud-manager/managing-code/github-check-config.md)、ニーズに合わせて、GitHub にレポート履歴を保存し、パイプラインに名前を付け、パイプライン変数を設定することもできます。
+* [セルフサービスコンテンツ復元](/help/operations/restore.md)では、最大 7 日間のバックアップ復元が可能で、次の機能があります。
    * 過去 24 時間のポイントインタイムバックアップの復元
    * 最長 7 日間の固定時間の復元
-* [新しい OakPal ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package) が Cloud Manager のコード品質スキャンに追加されました。
-   * 2024 年 6 月の時点で追加されたすべての新しいルールは、改行のない変更です。
-   * これらの新しいルールは、Cloud Manager の 2024 年 8 月のリリース以降にパイプラインでエラーが発生する可能性があるので、できるだけ早くこれらの問題に対処することをお勧めします。
+* [新しい OakPal ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package)が、Cloud Manager コード品質スキャンに追加されました。
+   * 2024年6月の時点で追加されたすべての新しいルールは、重大な変更ではありません。
+   * Cloud Manager 2024年8月リリース以降、これらの新しいルールによりパイプラインでエラーが発生する可能性があるので、できるだけ早くこれらに対処することをお勧めします。
 
 ## 早期導入プログラム {#early-adoption}
 
 将来の機能をテストする機会を得るには、Adobe の早期導入プログラムに参加してください。
 
-### Cloud Manager でのEdge Delivery Servicesのサポート {#edge-delivery-services}
+### Cloud Manager での Edge Delivery Services のサポート {#edge-delivery-services}
 
-Adobe Experience Manager Sitesの一部としてEdge Delivery Servicesのライセンスを取得している場合、 [cloud Manager で直接Edge Delivery Servicesを使用してサイトをオンボーディングできるようになりました](/help/implementing/cloud-manager/edge-delivery-services.md) ガイド付きのセルフサービスエクスペリエンスを使用して運用を開始できます。
+Adobe Experience Manager Sites の一部として Edge Delivery Services のライセンスを取得している場合は、[Cloud Manager で Edge Delivery Services を使用してサイトを直接オンボード](/help/implementing/cloud-manager/edge-delivery-services.md)し、ガイド付きのセルフサービスエクスペリエンスを使用して運用開始できるようになりました。
 
-これにより、すべてのAEM プロパティでエクスペリエンスが統合され、ドメイン名の管理、SSL 証明書の管理、CDN マッピングなど、すべての重要なワークフローとの一貫性が確保されます。
+これにより、すべての AEM プロパティに対して統一されたエクスペリエンスが実現し、ドメイン名管理、SSL 証明書管理、CDN マッピングなどのすべての重要なワークフローとの一貫性が確保されます。
 
-この新機能のテストやフィードバックの共有に関心がある場合は、にメールを送信してください。 `aemcs-cmedgedelsvs-program-adopter@adobe.com` Adobe IDに関連付けられたメールアドレスから。
+この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから `aemcs-cmedgedelsvs-program-adopter@adobe.com` にメールを送信してください。
 
 ### ドメイン検証済み（DV）証明書
 
-Cloud Manager で以下ができるようになりました。 [セルフサービスは、ドメイン検証（DV） SSL 証明書を生成および管理します。](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) これにより、オンラインビジネスに安全な Web サイトを作成するための、最も迅速で簡単でコスト効率に優れたソリューションを提供します。
+Cloud Manager では、[ドメイン検証（DV）SSL 証明書をセルフサービスで生成および管理できるようになりました。](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)これにより、オンラインビジネス用の安全な web サイトを作成するための、最も高速かつ簡単でコスト効率に優れたソリューションが実現します。
 
-この新機能のテストやフィードバックの共有に関心がある場合は、にメールを送信してください。 `Grp-aemcs-dv-dert-adopter@adobe.com` Adobe IDに関連付けられたメールアドレスから。
+この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから `Grp-aemcs-dv-dert-adopter@adobe.com` にメールを送信してください。
 
 ### 実ユーザーモニタリング（RUM）によるクライアントサイドのコレクション {#rum}
 
