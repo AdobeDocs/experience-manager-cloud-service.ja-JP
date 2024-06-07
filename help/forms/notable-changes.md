@@ -1,18 +1,18 @@
 ---
 title: AEM 6.5 Forms と AEM クラウドサービスの違いは何ですか？
-description: AEM 6.5 Forms と AEM Cloud Services を比較し、アップグレードまたは Cloud Service への移行前に、最も重要な変更点を確認します。
+description: AEM 6.5 Forms と AEM クラウドサービスを比較し、アップグレードまたは Cloud Service への移行前に、最も重要な変更点を確認します。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 role: Admin, Developer, User
 feature: Adaptive Forms
 contentOwner: khsingh
-source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '1325'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# AEM 6.5 Forms（AMS およびオンプレミス）とAEM Forms as a Cloud Service（AEM CS Forms）の違い {#notable-changes-for-existing-AEM-Forms-users}
+# AEM 6.5 Forms（AMS およびオンプレミス）と AEM Forms as a Cloud Service（AEM CS Forms）の違い {#notable-changes-for-existing-AEM-Forms-users}
 
 Adobe Experience Manager Forms as a Cloud Service では、Adobe Experience Manager Forms オンプレミスおよび [!DNL Adobe-Managed Service] 環境と比較して、既存の機能にいくつかの注目すべき変更点があります。主な違いを以下に示します。
 
@@ -37,7 +37,7 @@ Adobe Experience Manager Forms as a Cloud Service では、Adobe Experience Mana
 
 * Forms as a Cloud Service でカスタマーバンドルを使用する前に、最新バージョンの adobe-aemfd-docmanager でカスタムコードを再コンパイルします。
 
-* [AEM Forms as a Cloud Service 移行ユーティリティ](/help/forms/migrate-to-forms-as-a-cloud-service.md)を使用して、<!-- AEM 6.3 Forms-->OSGi 上の AEM 6.4 Forms および OSGi 上の AEM 6.5 Forms から [!DNL AEM] as a Cloud Serviceにアダプティブフォーム、テーマ、テンプレート、クラウド設定を準備し移行します。[プログラムの Git リポジトリ](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)を使用して、既存のアダプティブフォームテンプレートを読み込みます。
+* [AEM Forms as a Cloud Service 移行ユーティリティ](/help/forms/migrate-to-forms-as-a-cloud-service.md)を使用して、<!-- AEM 6.3 Forms-->OSGi 上の AEM 6.4 Forms および OSGi 上の AEM 6.5 Forms から [!DNL AEM] as a Cloud Serviceにアダプティブフォーム、テーマ、テンプレート、クラウド設定を準備し移行します。[プログラムの Git リポジトリ](/help/implementing/cloud-manager/managing-code/managing-repositories.md)を使用して、既存のアダプティブフォームテンプレートを読み込みます。
 
 * メールは、デフォルトで HTTP と HTTPs プロトコルのみをサポートしています。[サポートチームに問い合わせて](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja#sending-email)、メール送信用のポートと、環境用の SMTP プロトコルを有効にします。
 

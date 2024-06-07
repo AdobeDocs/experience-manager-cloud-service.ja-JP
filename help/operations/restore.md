@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service でのコンテンツの復元
 description: Cloud Manager を使用して、AEM as a Cloud Service のコンテンツをバックアップから復元する方法を説明します。
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
-source-wordcount: '1157'
-ht-degree: 100%
+source-git-commit: 5baeb4012e5aa82a8cd8710b18d9164583ede0bd
+workflow-type: tm+mt
+source-wordcount: '1339'
+ht-degree: 80%
 
 ---
 
@@ -13,15 +13,6 @@ ht-degree: 100%
 # AEM as a Cloud Service でのコンテンツの復元 {#content-restore}
 
 Cloud Manager を使用して、AEM as a Cloud Service のコンテンツをバックアップから復元する方法を説明します。
-
->[!NOTE]
->
->この機能は、[早期採用プログラム](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)にのみ使用できます。また、この記事に記載されているもの以外に、一定の制限があります。初期の導入フェーズでは、次のようになります。
->
->* この機能は、開発環境でのみ使用できます。
->* コンテンツの復元は、1 プログラムあたり 1 か月に 2 回に制限されます。
->
->AEM as a Cloud Service の既存のバックアップおよび復元システムについて詳しくは、[AEM as a Cloud Service でのバックアップと復元](/help/operations/backup.md)を参照してください。
 
 ## 概要 {#overview}
 
@@ -40,13 +31,41 @@ Cloud Manager には、コンテンツを復元できる 2 種類のバックア
 >
 >[パブリック API を使用](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)してバックアップを復元することもできます。
 
+>[!WARNING]
+>
+>* この機能は、コードまたはコンテンツに重大な問題が発生した場合にのみ使用してください。
+>* バックアップを復元すると、バックアップの時点から現在までの最新のデータが失われます。 ステージングも古いバージョンに復元されます。
+>* コンテンツの復元を開始する前に、他の選択コンテンツ復元オプションを検討してください。
+
+## コンテンツの選択的な復元オプション {#selective-options}
+
+コンテンツ全体の復元に復元する前に、コンテンツをより簡単に復元するためにこれらのオプションを検討してください。
+
+* 削除したパスのパッケージが使用可能な場合は、を使用してパッケージを再度インストールします [パッケージマネージャー。](/help/implementing/developing/tools/package-manager.md)
+* 削除したパスが Sites のページの場合は、を使用します [ツリー機能を復元します。](/help/sites-cloud/authoring/sites-console/page-versions.md)
+* 削除されたパスがアセットフォルダーで、元のファイルが使用可能な場合は、を使用してファイルを再度アップロードします [Assets コンソール](/help/assets/add-assets.md)
+* 削除コンテンツがアセットの場合は、 [アセットの以前のバージョンを復元する。](/help/assets/manage-digital-assets.md)
+
+上記のオプションがいずれも機能せず、削除されたパスのコンテンツが重要な場合は、以降の節の説明に従って、コンテンツの復元を実行します。
+
+## ユーザーロールの作成 {#user-role}
+
+デフォルトでは、開発環境、実稼動環境またはステージング環境でコンテンツの復元を実行する権限を持つユーザーはいません。 次の一般的な手順に従って、特定のユーザーまたはグループにこの権限を委任します。
+
+1. コンテンツの復元を参照する表現力のある名前で製品プロファイルを作成します。
+1. を指定します **プログラムアクセス** 必要なプログラムに対する権限。
+1. を指定します **コンテンツの復元** ユースケースに応じて、必要な環境またはプログラムのすべての環境に対する権限。
+1. そのプロファイルにユーザーを割り当てます。
+
+権限の管理について詳しくは、 [カスタム権限](/help/implementing/cloud-manager/custom-permissions.md) ドキュメント。
+
 ## コンテンツの復元 {#restoring-content}
 
 まず、復元するコンテンツの期間枠を決定します。次に、バックアップから環境のコンテンツを復元するには、次の手順を実行します。
 
 >[!NOTE]
 >
->復元操作を開始するには、**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持つユーザーでログインする必要があります。
+>ユーザーの条件 [適切な権限](#user-role) リストア・オペレーションを開始する場合。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 

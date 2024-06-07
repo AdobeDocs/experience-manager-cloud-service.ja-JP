@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d4ada5f15a587d54f46a475ca574134988b463d8
+source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
 workflow-type: tm+mt
-source-wordcount: '5010'
+source-wordcount: '5030'
 ht-degree: 99%
 
 ---
@@ -99,6 +99,7 @@ ht-degree: 99%
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024年度 {#2024}
+         + [2024.5.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
          + [リリースノート（2024.4.0）](/help/implementing/cloud-manager/release-notes/2024/2024-4-0.md)
          + [2024.3.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-3-0.md)
          + [リリースノート（2024.2.0）](/help/implementing/cloud-manager/release-notes/2024/2024-2-0.md)
@@ -976,6 +977,7 @@ ht-degree: 99%
          + [サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [環境の休止](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
+         + [Edge Delivery Servicesサポート](/help/implementing/cloud-manager/edge-delivery-services.md)
       + AEM アプリケーションプロジェクトの作成 {#create-application-project}
          + [プロジェクト作成ウィザード](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [プロジェクトのセットアップ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -983,12 +985,16 @@ ht-degree: 99%
       + [環境の管理](/help/implementing/cloud-manager/manage-environments.md)
       + コードの管理 {#managing-code}
          + [Maven プロジェクトバージョンの処理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-         + [Cloud Manager のリポジトリー](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
-         + [リポジトリーへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+         + [Cloud Manager でのリポジトリの管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
+         + [Adobeリポジトリーの追加](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [プライベートリポジトリーの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [リポジトリへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+         + [Git サブモジュールのサポート](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Cloud Manager での git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [複数のリポジトリーの使用](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [エンタープライズ開発チームのセットアップ](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [独自の GitHub リポジトリの操作](/help/implementing/cloud-manager/managing-code/byo-github.md)
+         + [GitHub チェック設定](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+         + [GitHub チェック注釈](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [環境変数](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI／CD パイプライン {#cicd-pipelines}
          + [はじめに](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
@@ -1026,6 +1032,7 @@ ht-degree: 99%
          + [DNS 設定の指定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [DNS レコードのステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+         + [ドメイン検証済み（DV）証明書](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
       + IP 許可リスト {#ip-allow-lists}
          + [はじめに](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [IP 許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -1202,7 +1209,6 @@ ht-degree: 99%
    + [追加の公開地域](/help/operations/additional-publish-regions.md)
    + [AEM as a Cloud Service のインフラストラクチャとサービスモニタリング](/help/operations/monitoring.md)
    + [メンテナンスタスク](/help/operations/maintenance.md)
-   + [バックアップと復元](/help/operations/backup.md)
    + [セルフサービスの復元](/help/operations/restore.md)
    + [非同期ジョブ](/help/operations/asynchronous-jobs.md)
    + [汎用 Lucene インデックスの削除](/help/operations/removal-generic-lucene-index.md)

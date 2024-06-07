@@ -5,7 +5,7 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 91%
@@ -198,7 +198,7 @@ Cloud Manager ヘッダーには、自動的に開くハンバーガーメニュ
 * 概要 - 現在のドキュメントに記載されているプログラムの概要
 * [アクティビティ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - プログラムのパイプライン実行の履歴
 * [パイプライン](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - プログラムに対して設定されたすべてのパイプライン
-* [リポジトリ](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - プログラムに対して設定されたすべてのリポジトリ
+* [リポジトリ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - プログラムに対して設定されたすべてのリポジトリ
 * [レポート](/help/implementing/cloud-manager/sla-reporting.md) - SLA データなどの指標
 * [環境](/help/implementing/cloud-manager/manage-environments.md) - プログラムに対して設定されたすべての環境
 * [コンテンツセット](/help/implementing/developing/tools/content-copy.md) - コピー目的に対して作成されたコンテンツのセット

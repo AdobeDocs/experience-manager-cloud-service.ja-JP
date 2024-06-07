@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 100%
+source-wordcount: '1367'
+ht-degree: 97%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 100%
 
    >[!TIP]
    > 
-   >Cloud Manager でリポジトリーを追加および管理する方法については、[リポジトリーの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)のドキュメントを参照してください。
+   >Cloud Manager でリポジトリーを追加および管理する方法については、[リポジトリーの追加と管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)のドキュメントを参照してください。
 
    * **Git ブランチ** - このオプションでは、選択したパイプラインのどのブランチからコードを取得するかを定義します。
       * ブランチ名の最初の数文字を入力すると、このフィールドのオートコンプリート機能により、一致するブランチが検索され、選択の助けになります。
@@ -126,6 +126,10 @@ ht-degree: 100%
    * 選択した環境に web 階層コードパイプラインが存在する場合、この選択は無効になります。
    * 環境に既にフルスタックパイプラインがデプロイされている場合、同じ環境に web 階層設定パイプラインを作成すると、フルスタックパイプライン内の既存の web 階層設定は無視されます。
 
+>[!NOTE]
+>
+>Web 層および設定パイプラインは、プライベートリポジトリではサポートされていません。 ドキュメントを参照してください [Cloud Manager でのプライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md) 制限の詳細と完全なリストについて説明します。
+
 実稼動環境の作成を完了する手順では、デプロイメントタイプを選択したら、ターゲットとするデプロイメントパイプラインは同じです。
 
 1. 必要なデプロイメントのタイプを選択します。
@@ -142,7 +146,7 @@ ht-degree: 100%
 
    >[!TIP]
    > 
-   >Cloud Manager でリポジトリを追加および管理する方法については、[リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)を参照してください。
+   >Cloud Manager でリポジトリを追加および管理する方法については、[リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)を参照してください。
 
    * **Git ブランチ** - このオプションは、選択したパイプラインのどのブランチからコードを取得するかを定義します。
       * ブランチ名の最初の数文字と、このフィールドのオートコンプリート機能を入力します。これにより、選択可能な一致するブランチが検索されます。

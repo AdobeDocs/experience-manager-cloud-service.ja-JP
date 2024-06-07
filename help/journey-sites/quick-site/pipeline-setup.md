@@ -5,7 +5,7 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 100%
@@ -121,5 +121,5 @@ URL にアクセスまたはコピーしたプログラムの名前をメモし�
 [サイトテーマのカスタマイズ](customize-theme.md) のドキュメントを確認して、クイックサイト作成ジャーニーの次のステップに進むことをお勧めします。ジャーニーに必須ではありませんが、このドキュメントで取り上げたいくつかの概念について詳しく説明している追加のオプションリソースを以下に挙げます。
 
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=ja) - Cloud Manager の機能について詳しくは、詳細な技術ドキュメントを直接参照してください。
-* [Cloud Manager リポジトリ](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - AEMaaCS プロジェクトの Git リポジトリの設定および管理方法について詳しくは、このドキュメントを参照してください。
+* [Cloud Manager リポジトリ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - AEMaaCS プロジェクトの Git リポジトリの設定および管理方法について詳しくは、このドキュメントを参照してください。
 * [CI／CD パイプラインの設定 - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - フルスタックとフロントエンドの両方のパイプラインのセットアップについて詳しくは、このドキュメントを参照してください。
