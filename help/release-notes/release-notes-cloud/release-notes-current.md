@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
+source-git-commit: 68e2f6867a2cbcaf52fa6de259fe118e31ee7573
 workflow-type: tm+mt
 source-wordcount: '1942'
 ht-degree: 92%
@@ -62,7 +62,7 @@ ht-degree: 92%
 
 #### RUM （Real Use Monitoring）データ・サービス {#real-use-monitoring}
 
-* **[実際の使用のモニタリング（RUM）データサービスが GA になり](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**、AEM as a Cloud Service のクライアントサイドのデータコレクションを有効にすることができます。
+* **[実際の使用のモニタリング（RUM）データサービスが GA になり](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)**、AEM as a Cloud Service のクライアントサイドのデータコレクションを有効にすることができます。
 クライアントサイドのコレクションである Real Use Monitoring サービスは、インタラクションをより正確に反映し、web サイトのエンゲージメントを確実に測定します。 これにより、お客様はページのトラフィックとパフォーマンスに関する高度なインサイトを取得できます。ページのパフォーマンスについて詳しく知り、改善するためのインサイトを得る絶好の機会です。
 
 #### Edge Delivery Services向けのAEM オーサリング {#edge-enhancements}
