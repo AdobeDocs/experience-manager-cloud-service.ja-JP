@@ -743,7 +743,7 @@ ht-degree: 99%
       + [インストールと設定](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher と CDN のキャッシュ](/help/forms/troubleshooting-caching-performance.md)
       + [AEM SDK の再起動](/help/forms/restart-aem-sdk.md)
-      + [Formsの作成エラーの解決](/help/forms/form-creation-failing.md)
+      + [フォーム作成エラーの解決](/help/forms/form-creation-failing.md)
 + スクリーン {#screens-as-cloud-service}
    + Screens as a Cloud Service の概要 {#overview}
       + [はじめに](/help/screens-cloud/introduction/introduction.md)
