@@ -6,9 +6,9 @@ feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 source-git-commit: 5fd488a6d5272ac71208e5645facc04b3d9ac51a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1766'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -191,8 +191,8 @@ Experience Manager Assets as a [!DNL Cloud Service] で Brand Portal をアク�
 
 >[!NOTE]
 >
-> 2024 年 6 月以降は、新しい JWT 資格情報を作成できません。 今後は、OAuth 認証情報のみが作成されます。
-> さらに表示 [oauth 設定の作成](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
+> 2024年6月以降は、新しい JWT 資格情報を作成できません。今後は、OAuth 資格情報のみが作成されます。
+> 詳しくは、[OAuth 設定の作成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a)を参照してください。
 
 次の節では、Adobe Developer Console を使用して Experience Manager Assets as a [!DNL Cloud Service] と Brand Portal の連携を手動で設定する方法について説明します。
 
@@ -222,8 +222,8 @@ Experience Manager Assets と Brand Portal の連携を設定するには、以�
 
 指定した順序で次の手順を実行して、Brand Portal で Experience Manager Assets を設定します。
 
-1. [Adobe Developer コンソールで OAuth 資格情報を設定します。](#config-oauth)
-1. [OAuth を使用した新しいAdobe IMS統合の作成](#create-ims-account-configuration)
+1. [Adobe Developer Console で OAuth 資格情報を設定](#config-oauth)
+1. [OAuth を使用して新しい Adobe IMS 統合を作成](#create-ims-account-configuration)
 1. [Cloud Service の設定](#configure-cloud-service)
    <!--1. [Obtain public certificate](#public-certificate)-->
 <!--1. [Create service account (JWT) connection](#createnewintegration) 
@@ -357,13 +357,13 @@ You can now use the client ID (API key), client secret, and JWT payload to [conf
 
 -->
 
-### Adobe Developer コンソールで OAuth 資格情報を設定します。 {#config-oauth}
+### Adobe Developer Console で OAuth 資格情報を設定 {#config-oauth}
 
-[Adobe Developer コンソールで OAuth 資格情報を設定します。](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console) 「Brand Portal API」を選択します。
+[Adobe Developer Console で OAuth 資格情報を設定](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console)し、「Brand Portal API」を選択します。
 
-### OAuth を使用した新しいAdobe IMS統合の作成 {#create-ims-account-configuration}
+### OAuth を使用して新しい Adobe IMS 統合を作成 {#create-ims-account-configuration}
 
-[OAuth を使用した新しいAdobe IMS統合の作成](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration) 「クラウドソリューション」の下のドロップダウンから「Brand Portal」を選択します。
+[OAuth を使用して新しい Adobe IMS 統合を作成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration)し、クラウドソリューションの下のドロップダウンから「Brand Portal」を選択します。
 
 <!--
 Ensure that you have performed the following steps:
@@ -426,8 +426,8 @@ Brand Portal Cloud Service を設定するには、次の手順を実行しま�
 
 これで、配信エージェントを確認し、Brand Portal にアセットを公開することで、設定をテストできます。
 
-**セキュアプレビューが有効な場合は、SPS でエグレス IP を許可リストに加える**
-Dynamic MediaScene7をと併用する場合 [セキュアプレビューが有効](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) 会社の場合は、Scene7の会社管理者にお勧めします [公開エグレス IP の許可リスト](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) sps （Scene7 Publishing System）フラッシュ UI を使用して、それぞれのリージョンに対応します。
+**セキュアプレビューが有効な場合は、SPS でエグレス IP を許可リストに登録する**
+ （会社に対して[セキュアプレビューが有効](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en)な状態で）Dynamic Media - Scene7 を使用する場合は、Scene7 会社管理者が SPS（Scene7 Publishing System）Flash UI を使用して、それぞれの地域の[公開エグレス IP を許可リストに登録する](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service)ことをお勧めします。
 エグレス IP は次のとおりです。
 
 | **地域** | **エグレス IP** |

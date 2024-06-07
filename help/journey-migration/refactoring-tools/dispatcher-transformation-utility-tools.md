@@ -1,13 +1,13 @@
 ---
 title: AEM Dispatcher コンバーターツール
-description: AEM Dispatcher の既存の設定をAEM as a Cloud Serviceディスパッチャーの設定に変換する方法を説明します。
+description: AEM Dispatcher の既存の設定を AEM as a Cloud Service Dispatcher の設定に変換する方法を説明します。
 exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
 feature: Migration
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '330'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 

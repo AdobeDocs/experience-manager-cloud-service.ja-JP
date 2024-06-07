@@ -1,13 +1,13 @@
 ---
 title: コンテンツ転送ツールのトラブルシューティング
-description: コンテンツ転送ツールのトラブルシューティング方法を学ぶ
+description: コンテンツ転送ツールのトラブルシューティングについて説明します
 exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
 feature: Migration
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '179'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 

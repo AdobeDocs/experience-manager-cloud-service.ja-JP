@@ -6,9 +6,9 @@ role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
 solution: Experience Manager Sites
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '409'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Experience Manager に組み込まれているマルチサイトマネー�
 
 * マルチサイトマネージャ（MSM）とそのライブコピー機能を使用すると、同じサイトコンテンツを複数の場所で使用できると同時に、バリエーションを作成することもできます。
    * [コンテンツの再利用：マルチサイトマネージャとライブコピー](msm/overview.md)
-* 翻訳を使用すると、ページコンテンツの翻訳を自動化して、多言語の Web サイトを作成および管理できます。
+* 翻訳を使用すると、ページコンテンツの翻訳を自動化して、多言語の web サイトを作成および管理できます。
    * [多言語サイトのコンテンツの翻訳](translation/overview.md)
 
 これらの 2 つの機能を組み合わせることで、Web サイトを[多国籍化かつ多言語化](#multinational-and-multilingual-sites)することができます。

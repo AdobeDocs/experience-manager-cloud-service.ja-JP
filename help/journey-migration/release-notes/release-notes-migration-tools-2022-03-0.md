@@ -5,7 +5,7 @@ feature: Release Information
 exl-id: ab43605d-d46e-43de-b71f-fab610609550
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '349'
 ht-degree: 100%
 

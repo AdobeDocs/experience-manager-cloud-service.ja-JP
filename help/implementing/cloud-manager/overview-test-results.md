@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '162'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Cloud Manager の Cloud Services パイプラインでサポートされるテ�
 
 1. [エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   * エクスペリエンスの監査テストは、すべての Cloud Manager 実稼動パイプラインで有効になっており、スキップできません。
+   * エクスペリエンス監査テストは、すべての Cloud Manager 実稼動パイプラインで有効になっており、スキップできません。
 
 以下のテストがあります。
 

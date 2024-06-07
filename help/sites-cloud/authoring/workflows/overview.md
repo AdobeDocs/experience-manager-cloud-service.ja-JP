@@ -6,15 +6,15 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '177'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # ワークフローの操作  {#working-with-workflows}
 
-AEM Workflows を使用すると、（1 つ以上の）ページまたはアセットで実行される一連の手順を自動化できます。
+AEM のワークフローでは、（1 つ以上の）ページまたはアセットで実行される一連の手順を自動化できます。
 
 例えば、パブリッシュ時にエディターは、サイトの管理者がページをアクティベートする前にコンテンツをレビューする必要があります。この例を自動化するワークフローでは、必要な作業を実行するときが来たことが各参加者に通知されます。
 

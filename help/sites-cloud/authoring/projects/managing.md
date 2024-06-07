@@ -6,7 +6,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '875'
 ht-degree: 100%
 
@@ -138,7 +138,7 @@ AEM には次のテンプレートが始めから用意されていて、プロ�
 
    >[!NOTE]
    >
-   >このタイルがプロジェクトにまだない場合は、追加する必要があります。[タイルの追加](#adding-items-to-a-tile)を参照してください。
+   このタイルがプロジェクトにまだない場合は、追加する必要があります。[タイルの追加](#adding-items-to-a-tile)を参照してください。
 
 1. 「**編集**」を選択します。
 1. セレクターを「**アクティブ**」から「**非アクティブ**」（またはその逆）に変更します。

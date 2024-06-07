@@ -6,9 +6,9 @@ feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 source-git-commit: e40ca26e39bea146f69a82fb583467707537d4ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1423'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -282,5 +282,5 @@ ht-degree: 99%
 
 >[!MORELIKETHIS]
 >
->* [アセットマイクロサービスを使用したアセット処理](asset-microservices-overview.md).
+>* [アセットマイクロサービスを使用したアセット処理](asset-microservices-overview.md)。
 >* [テキストベースのアセットのスマートタグ付けに対応しているファイル形式](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
