@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: de06178f66c95baef15de19296a654f1ed4a0387
-workflow-type: ht
-source-wordcount: '383'
-ht-degree: 100%
+source-git-commit: 8f7c2fc175a542df5725693cfc332802d54e1e88
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 95%
 
 ---
 
@@ -20,6 +20,11 @@ ht-degree: 100%
 2024年6月4日（PT）に公開された、メンテナンスリリース 16544 の継続的な改善点を以下にまとめます。以前のメンテナンスリリースは、リリース 16461 でした。
 
 2024.6.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
+
+>[!CAUTION]
+>
+>以前の SDK でのリグレッションが確認されているので、で参照されている SDK を使用してください。
+>`AEM SDK v2024.06.16647.20240607T103723Z-240500`
 
 ### 機能強化 {#enhancements-16544}
 
