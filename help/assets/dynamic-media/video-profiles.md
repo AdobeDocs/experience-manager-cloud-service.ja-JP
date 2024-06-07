@@ -2,12 +2,12 @@
 title: Dynamic Media ビデオプロファイル
 description: Dynamic Media には、事前定義済みのアダプティブビデオエンコーディングプロファイルが最初から付属しています。この標準提供プロファイルの設定は、ユーザーができる限り最高の閲覧エクスペリエンスを得られるように最適化されています。また、ビデオにスマート切り抜きを追加することもできます。
 contentOwner: Rick Brough
-feature: Asset Management,Video Profiles,Renditions
+feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 2009e549eadd97d4d2bfcccd728ece17ecfeede5
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
 workflow-type: tm+mt
-source-wordcount: '3716'
+source-wordcount: '3744'
 ht-degree: 100%
 
 ---
@@ -20,11 +20,11 @@ Dynamic Media には、事前定義済みのアダプティブビデオエンコ
 
 * **アップロードされたプライマリソースビデオの解像度**
 
-   MP4 ビデオが 240p、360p などの低い解像度で録画された場合、高画質でストリーミングすることはできません。
+  MP4 ビデオが 240p、360p などの低い解像度で録画された場合、高画質でストリーミングすることはできません。
 
 * **ビデオプレーヤーのサイズ**
 
-   デフォルトでは、アダプティブビデオエンコーディングプロファイルの「幅」は「自動」に設定されています。再生中は、プレーヤーのサイズに応じた最適な品質が使用されます。
+  デフォルトでは、アダプティブビデオエンコーディングプロファイルの「幅」は「自動」に設定されています。再生中は、プレーヤーのサイズに応じた最適な品質が使用されます。
 
 [ビデオエンコーディングのベストプラクティス](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos)を参照してください。
 
@@ -395,7 +395,7 @@ Experience Manager でビデオプロファイルを作成または編集する�
 
 * CRXDE Lite で、`/content/dam/jcr:content` ノードに移動します。プロパティ `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` を追加し、「**[!UICONTROL すべて保存]**」を選択します。
 
-   ![chlimage_1-519](assets/chlimage_1-519.png)
+  ![chlimage_1-519](assets/chlimage_1-519.png)
 * [ビデオプロファイル処理ジョブの進行状況を監視](#monitoring-the-progress-of-an-encoding-job)できます。
 
 ## ビデオプロファイル処理ジョブの進行状況の監視 {#monitoring-the-progress-of-an-encoding-job}

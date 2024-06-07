@@ -2,11 +2,11 @@
 title: デジタルアセットの整理
 description: Experience Manager を使用して、デジタルアセット、画像、ファイル、フォルダーなどを整理します。
 contentOwner: AG
-feature: Asset Management, Search
+feature: Asset Management,Search,Best Practices
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: ht
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 100%
 

@@ -5,14 +5,14 @@ contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
 content-type: reference
-feature: Image Profiles
+feature: Image Profiles,Best Practices
 role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+workflow-type: tm+mt
 source-wordcount: '2677'
 ht-degree: 100%
 
