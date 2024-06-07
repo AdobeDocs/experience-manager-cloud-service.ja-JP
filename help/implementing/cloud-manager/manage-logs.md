@@ -3,10 +3,10 @@ title: ログへのアクセスと管理
 description: AEM as a Cloud Service での開発プロセスを支援するために、ログにアクセスして管理する方法について説明します。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
-feature: Cloud Manager, Developing
+feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 100%
 

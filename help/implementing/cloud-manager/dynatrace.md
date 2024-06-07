@@ -3,10 +3,10 @@ title: Dynatrace
 description: Dynatrace を AEM as a Cloud Service で使用する方法を説明します。
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
-feature: Cloud Manager, Developing
+feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 100%
 

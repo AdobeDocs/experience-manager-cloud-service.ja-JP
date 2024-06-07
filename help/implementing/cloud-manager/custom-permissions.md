@@ -3,10 +3,10 @@ title: カスタム権限
 description: カスタム権限を使用して、Cloud Manager ユーザーのプログラム、パイプライン、環境へのアクセスを制限するための設定可能な権限を持つカスタム権限プロファイルを作成する方法について説明します。
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
-feature: Cloud Manager, Developing
+feature: Security, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+workflow-type: tm+mt
 source-wordcount: '1515'
 ht-degree: 100%
 
