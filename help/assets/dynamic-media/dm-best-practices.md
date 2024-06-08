@@ -5,14 +5,14 @@ contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
 content-type: reference
-feature: Video,Renditions,Configuration,Asset Management,Best Practices
+feature: Video,Renditions, Configuration, Asset Management, Best Practices
 role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: a92d55a4b9368d92d41d0156d8aa2b24f619fc54
+source-git-commit: 62af768370ee0affa4003a7ae0c520ad1a065e8c
 workflow-type: tm+mt
-source-wordcount: '3614'
+source-wordcount: '3619'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,9 @@ Dynamic Mediaと同期するアセットを選択できるプロアクティブ�
 * **選択的公開：**
 アセットを同期した後に、選択的公開を使用すると、顧客に表示するアセットを制御できます。 つまり、どの承認済みアセットがチャネルを通じて実際に配信されるかを管理できるので、顧客に最適で関連性の高いコンテンツのみを表示できます。
 
-これらの 2 つのベストプラクティスは、リッチメディアコンテンツに対するコントロール、ガバナンス、生産性の向上を実現するのに役立ちます。 詳細情報 に移動 [Dynamic Mediaのフォルダーレベルでの選択的公開の設定](/help/assets/dynamic-media/selective-publishing.md).
+これらの 2 つのベストプラクティスは、リッチメディアコンテンツに対するコントロール、ガバナンス、生産性の向上を実現するのに役立ちます。
+
+詳細情報 に移動 [Dynamic Mediaのフォルダーレベルでの選択的公開の設定](/help/assets/dynamic-media/selective-publishing.md).
 
 
 ## 配信するアセットの準備
@@ -135,15 +137,15 @@ Dynamic Mediaで画像プリセットを定期的に使用すると、画像の�
    * `myCompany-Silver-Wrist-Watch` を使用します
    * *回避する* `myCompany_Silver_Wrist_Watch` または `myCompanySilverWristWatch`
 
-  これにより、検索エンジンが画像のコンテキストを理解し、SEO を向上させることができます。 また、Googleでは、単語の区切り文字としてアンダースコアや連結語よりもハイフンが優先されることに注意してください。
-* **カスタム ドメイン：**
+  これにより、検索エンジンが画像のコンテキストを理解し、SEO を向上させることができます。 Googleでは、ファイル名でアンダースコアやスペースよりもハイフンが優先されます。 また、ファイル名では単語を連結しないでください。
+* **カスタムドメイン :**
 会社またはブランド名を含むカスタムドメインを実装して、ブランドの認識と信頼を強化します。 次に例を示します。
 
    * `http://images.mycompany.com/is/image/companyname/` を使用します
    * *回避する* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
 * **SEO 対応のフォルダー構造：**
 以下のようなインデックス作成を強化するために、会社名やブランドを含んだフォルダー構造で画像を整理します `http://images.mycompany.com/is/image/companyname/`.
-* **Dynamic Mediaのルールセット：**
+* **Dynamic Media ルールセット：**
 様々な要因に基づいて URL を条件付きで変換し、SEO とユーザーエクスペリエンスを強化する方法を説明します。
 詳細情報 に移動 [ルールセットを使用した URL の変換](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md).
 * **スマートイメージングとスマート切り抜き：**
@@ -167,7 +169,7 @@ Dynamic Mediaには、画像を拡張し、視覚的な効果を動的に作成�
 | --- | --- |
 | **元の画像をアップロードして公開する** | ・まず、元の画像をDynamic Mediaにアップロードします。<br>・ コンテンツが公開され、URL からアクセスできることを確認します。<br>・この例では、背景が白い時計のストック画像（「画像 X」と呼びましょう）がDynamic Mediaにアップロードされています。<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage) |
 | **マスクの作成** | ・件名（効果を適用する領域）と背景（変更する領域）を定義するマスクを作成します。<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps)<br>・通常、マスクはグレースケール画像です。白は被写体、黒は背景を表します。 Adobe Photoshopなどのツールを使用してマスクを作成できます。<br>詳細情報 に移動 [Photoshopでのクイックマスクの作成と編集](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>・「画像 X」には、強調したい被写体を的確に輪郭を描いたマスクを作成。 例えば、人物、オブジェクトなど。 |
-| **Dynamic Mediaの URL コマンドをエフェクトに適用する** | マスクを設定したら、URL コマンドを使用して、ドロップシャドウなどの効果を適用したり、背景色を「画像 X」に変更したりします。 次の 2 つの例があります。<br><br> ・ **ドロップシャドウ効果：**<br>&#x200B;件名の境界線に沿ってドロップシャドウ効果を追加するには、次のように URL を編集します。<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>この URL では、 `$shadow$` パラメーターはシャドウ効果を作成し、 `color=0,0,0` 影の色を黒に設定します。<br>・ **背景色の変更：**<br>&#x200B;背景色を変更するには、次のように異なる背景色の値を指定して URL を使用します。<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> この例では、 `color=255,255,255` 背景色を白に設定します。 視覚的な効果を得るために、背景を特定の色に編集します。 |
+| **Dynamic Media URL コマンドを効果に適用する** | マスクを設定したら、URL コマンドを使用して、ドロップシャドウなどの効果を適用したり、背景色を「画像 X」に変更したりします。 次の 2 つの例があります。<br><br> ・ **ドロップシャドウ効果：**<br>&#x200B;件名の境界線に沿ってドロップシャドウ効果を追加するには、次のように URL を編集します。<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>この URL では、 `$shadow$` パラメーターはシャドウ効果を作成し、 `color=0,0,0` 影の色を黒に設定します。<br>・ **背景色の変更：**<br>&#x200B;背景色を変更するには、次のように異なる背景色の値を指定して URL を使用します。<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> この例では、 `color=255,255,0` 背景色を黄色に設定します。 視覚的な効果を得るために、背景を特定の色に編集します。 |
 
 #### 画像の境界線の追加
 
@@ -188,10 +190,10 @@ Dynamic Mediaでは、URL を使用して画像を直接操作できるので、
 | 手順 | 対処方法 |
 | --- | --- |
 | **ベース画像をアップロードして公開する** | まず、ロゴまたはアイコンを重ね合わせるベース画像をアップロードして公開します。 任意の画像をベースとして使用できます。<br>例えば、次にベース画像を示します。<br>[https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage). |
-| **ロゴまたはアイコン画像のアップロードと公開** | 次に、ベース画像にスーパーインポーズする画像をアップロードして公開します。 この画像は、オーバーレイするロゴまたはアイコンを含む透明 PNG である必要があります。<br>次に、重ね合わせる透明効果を持つ星オブジェクトの透明 PNG 画像を示します。<br>https://s7g10.scene7.com/is/image/genaibeta/starxp |
+| **ロゴまたはアイコン画像をアップロードして公開する** | 次に、ベース画像にスーパーインポーズする画像をアップロードして公開します。 この画像は、オーバーレイするロゴまたはアイコンを含む透明 PNG である必要があります。<br>次に、重ね合わせる透明効果を持つ星オブジェクトの透明 PNG 画像を示します。<br>https://s7g10.scene7.com/is/image/genaibeta/starxp |
 | **Dynamic Media URL を適用** | 次に、ベース画像とロゴまたはアイコン画像を組み合わせたDynamic Media URL を作成します。 URL コマンドを使用すると、この効果を実現できます。<br>URL 構造は次のようになります。<br>[https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&amp;src=starxp&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&amp;src=starxp&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>ここで、<br>・ `hotspotRetailBaseImage` はベース画像です。<br>・ `starxp` はロゴ / アイコンの画像です。<br>・ `layer=1` ロゴまたはアイコンを基本画像の上に重ねて表示するように指定します。<br>・ `scale=1.25` ロゴ/アイコンのサイズを調整します。<br>・ `posN=0.33,-.25` ロゴ/アイコンの基本画像を基準とした位置を決定します。<br>・ `fmt=png` 出力が PNG 形式であることを確認します。 |
 
-詳細情報 に移動 [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) の詳細 `src` コマンドおよびその他のDynamic Media コマンド。
+詳細情報 に移動 [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) の詳細 `src` コマンドおよびその他のDynamic Media URL コマンド。
 
 
 #### プロモーションテキストのオーバーレイ
@@ -205,7 +207,7 @@ HTMLと CSS を使用してプロモーションテキストメッセージを�
 
 #### 様々なユースケースでのサイズ変更と切り抜き
 
-##### 画像のサイズ変更の基本
+##### 画像のサイズ変更の基本事項
 
 画像のサイズ変更には、画像のサイズ、解像度およびファイルサイズの変更が含まれます。 考慮すべき重要なポイントを次に示します。
 
@@ -218,7 +220,7 @@ HTMLと CSS を使用してプロモーションテキストメッセージを�
 
 ##### 切り抜きとサイズ変更
 
-Dynamic Mediaでは、サムネールやバナー、商品ディスプレイ画像などを作成する場合でも、様々なユースケースに合わせて画像を変形させるテクニックに、サイズ変更と切り抜きを使用します。
+切り抜きとサイズ変更は、Dynamic Mediaのテクニックで、サムネール、商品ディスプレイ画像、バナーなどを作成する場合でも、様々なユースケースに合わせて画像を変換できます。
 
 * **切り抜き：**
 画像の一部を削除して、構成とフレームを変更します。 全体の寸法は変更されませんが、特定の領域に焦点を当てます。
@@ -272,7 +274,7 @@ URL 内で使用できるコマンドについて詳しくは、 に移動 [コ�
 
 ビデオの品質とエンゲージメントを最適なものにするには、次のベストプラクティス戦略を組み合わせて実装することを検討してください。
 
-* **組み込みのHTML5 ビデオビューアの使用：**
+* **組み込みのHTML5 ビデオビューアを使用します。**
 Dynamic Media HTML5 ビデオビューアプリセットは、堅牢なビデオプレーヤーです。 これらを使用すると、HTML5 ビデオの再生とモバイルデバイスに関連するよくある問題を回避できます。
 これらのプリセットは、アダプティブビットレートストリーミング配信やデスクトップブラウザーの限られたリーチなどの課題に対処します。
 詳細情報 に移動 [ベストプラクティス：HTML 5 ビデオビューアの使用](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
@@ -307,7 +309,7 @@ DASH を有効にするには、環境のサポートチケットを作成しま
    * これらのフォルダーにプライマリソースビデオをアップロードします。 Dynamic Mediaは、割り当てられたビデオ処理プロファイルに基づいてそれらをエンコードします。
    * Dynamic Mediaは主に、最小解像度が 25 × 25 を超える短時間（最大 30 分）のビデオをサポートします。 15GB までの動画ファイルをアップロードできます 1.
 
-* **ビデオの管理：**
+* **ビデオを管理：**
    * AEM内のビデオアセットを整理、参照および検索します。
    * ビデオアセットのプレビューと公開。
    * ソースビデオとそのエンコードされたレンディションを、関連するサムネールと共に表示します。
@@ -346,5 +348,5 @@ Web に最適な形式を保証するには、コマンドを手動で使用す�
 
 スマートイメージングを利用すると、各ユーザーの閲覧環境に合わせて、可能な限り効率的に画像を配信できます。 このアプローチにより、プロセスが簡素化され、画像の読み込み時間と全体的なユーザーエクスペリエンスの観点からパフォーマンスが向上します。
 
-詳細情報 に移動 [スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)
+詳細情報 に移動 [スマートイメージング](/help/assets/dynamic-media/imaging-faq.md).
 
