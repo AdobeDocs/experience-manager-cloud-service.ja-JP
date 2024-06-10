@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 8f7c2fc175a542df5725693cfc332802d54e1e88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '400'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 95%
 
 >[!CAUTION]
 >
->以前の SDK でのリグレッションが確認されているので、で参照されている SDK を使用してください。
+>以前の SDK では回帰が確認されているので、以下で参照されている SDK を使用してください。
 >`AEM SDK v2024.06.16647.20240607T103723Z-240500`
 
 ### 機能強化 {#enhancements-16544}
