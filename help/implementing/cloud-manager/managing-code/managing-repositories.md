@@ -2,10 +2,10 @@
 title: Cloud Manager でのリポジトリの管理
 description: Cloud Manager で Git リポジトリを作成、表示および削除する方法について説明します。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: 395179c078d87a393adbc4072a9f4e5b5ca3de51
+source-git-commit: e467c8058531441524fedd37e14b82b7fb255c69
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 33%
+source-wordcount: '624'
+ht-degree: 30%
 
 ---
 
@@ -38,7 +38,7 @@ Cloud Manager で作成されたリポジトリは、パイプラインの追加
 
 * リポジトリのタイプ
    * **Adobe** Adobeが管理するリポジトリを示します
-   * **非公開** 管理する GitHub リポジトリを示します
+   * **GitHub** 管理するプライベート GitHub リポジトリを示します
 * 作成時
 * リポジトリに関連付けられているパイプライン
 
@@ -75,7 +75,14 @@ Cloud Manager は、Adobe（**Adobeリポジトリ**）と、独自に管理さ�
 
 この **リポジトリ情報** ウィンドウが開き、詳細が表示されます。 リポジトリ情報へのアクセスについて詳しくは、ドキュメントを参照してください [リポジトリ情報へのアクセス。](accessing-repos.md)
 
-## ブランチを確認 {#check-branches}
+## 分岐を確認 / プロジェクトを作成 {#check-branches}
+
+この **ブランチを確認/ プロジェクトを作成** アクションは、リポジトリの状態に応じて 2 つの機能を実行します。
+
+* リポジトリーを新しく作成する場合、このアクションにより基づいてサンプルプロジェクトが作成されます [AEM プロジェクトアーキタイプ。](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/overview)
+* サンプルプロジェクトがリポジトリで既に作成されている場合は、リポジトリとそのブランチの状態を確認し、サンプルプロジェクトが既に存在するかどうかを報告します。
+
+![ブランチの確認アクション](assets/check-branches.png)
 
 ## リポジトリ URL を作成 {#copy-url}
 

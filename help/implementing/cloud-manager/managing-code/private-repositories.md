@@ -1,10 +1,10 @@
 ---
 title: Cloud Manager でのプライベートリポジトリの追加
 description: 独自のプライベート GitHub リポジトリと連携するように Cloud Manager を設定する方法について説明します。
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 7f598a623c3003b20a074c31749382df7f5f5ca6
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 68%
+source-wordcount: '836'
+ht-degree: 69%
 
 ---
 
@@ -118,7 +118,6 @@ Cloud Manager で GitHub リポジトリを検証すると統合が完了し、C
 
 Cloud Manager でプライベートリポジトリを使用する場合は、特定の制限が適用されます。
 
-* 管理するパイプラインの直接リポジトリソースとしてプライベートリポジトリを使用することはできません。
 * Cloud Manager から GitHub チェックを使用してプルリクエストの検証を一時停止することはできません。
    * Cloud Manager で GitHub リポジトリの検証が行われた場合、Cloud Manager は常に、そのリポジトリ用に作成されたプルリクエストの検証を試みます。
 * Adobe GitHub アプリを GitHb 組織から削除すると、すべてのリポジトリのプルリクエスト検証機能が削除されます。
