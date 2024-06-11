@@ -4,10 +4,10 @@ description: クラウド環境で迅速な開発反復処理を行うために�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
-source-wordcount: '4294'
-ht-degree: 100%
+source-git-commit: 1c157af3f7ed4ab3ae4a67d7db200e772cf8b565
+workflow-type: tm+mt
+source-wordcount: '4312'
+ht-degree: 99%
 
 ---
 
@@ -412,11 +412,6 @@ The analyser found the following errors for publish :
 
 ### サイトテーマとサイトテンプレートに基づくフロントエンドコードのデプロイ {#deploying-themes-to-rde}
 
->[!NOTE]
->
-> この機能はまだ使用できません。6 月中にロールアウトする予定です。
->
-
 RDE は、[サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)および[サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)に基づいてフロントエンドコードをサポートします。RDE を使用する場合、これは、他の環境タイプに使用される Cloud Manager [フロントエンドパイプライン](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)ではなく、コマンドラインのディレクティブを使用してフロンエンドパッケージをデプロイします。
 
 通常どおり、npm を使用してフロントエンドパッケージを構築します。
@@ -460,6 +455,10 @@ Logs:
 >フロントエンドパッケージのファイルの命名は、次の命名規則に従う必要があります。
 > * npm ビルド出力パッケージフォルダー用の「dist」フォルダー
 > * npm 依存関係パッケージ用の「package.json」ファイル
+
+>[!TIP]
+>
+> 2023 年 4 月より前に RDE を作成し、フロントエンド機能を初めて試したときに「UNEXPECTED_API_ERROR」というエラーが発生した場合は、環境を削除して再度作成してみてください。
 
 ### RDE のステータス確認 {#checking-rde-status}
 
