@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: c969b78f5e93e15d1f8f57dd409e58a6275069ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '422'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Experience Manager Guides の新機能や機能強化および修正された問
 
 ### 既知の問題 {#known-issues-16544}
 
-* GRANITE-52573：二重スラッシュを含むリクエスト `//` が拒否され、ステータスコード 400 が表示されます。 この動作は、今後のメンテナンスリリースで元に戻されます。
+* GRANITE-52573：二重スラッシュ `//` を含むリクエストはステータスコード 400 で拒否されます。この動作は、今後のメンテナンスリリースで元に戻される予定です。
 
 ### 変更通知 {#change-notice-16544}
 
