@@ -1,15 +1,15 @@
 ---
-title: Cloud Manager でのEdge Delivery Servicesのサポート
+title: Cloud Manager での Edge Delivery Services のサポート
 description: Edge Delivery Servicesを使用して Cloud Manager プロジェクトを配信する方法について説明します。
-source-git-commit: 73bd693d47f37b453209208816dfed15d65e9e09
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 15%
+ht-degree: 30%
 
 ---
 
 
-# Cloud Manager でのEdge Delivery Servicesのサポート {#edge-delivery-services}
+# Cloud Manager での Edge Delivery Services のサポート {#edge-delivery-services}
 
 Edge Delivery Servicesを使用して Cloud Manager プロジェクトを配信する方法について説明します。
 
@@ -21,7 +21,7 @@ Edge Delivery Servicesを使用して Cloud Manager プロジェクトを配信�
 
 Edge Delivery Services は、web サイト上のコンテンツの柔軟なオーサリングを実現する、構成可能なサービスセットです。これにより、以下のことが可能になります。
 
-* 完璧な Lighthouse スコアで高速サイトを作成し、リアルタイムユーザーモニタリング（RUM）を通じてパフォーマンスを継続的に監視します。
+* 完璧な Lighthouse スコアで高速サイトを作成し、リアルタイムモニタリング（RUM）を通じてパフォーマンスを継続的に監視します。
 * コンテンツソースを分離することでオーサリング効率を向上させます。
 
 ユニバーサルエディターを使用したAEM コンテンツ管理とAEM ベースのオーサリング、およびドキュメントベースのオーサリングの両方を使用できます。
@@ -36,7 +36,7 @@ AEMas a Cloud Serviceの Cloud Manager を使用すると、プロジェクト�
 
 Adobe Experience Manager Sitesの一部としてライセンスをEdge Delivery Servicesしている場合は、Cloud Manager で直接Edge Delivery Servicesを使用してサイトをオンボーディングし、運用を開始できます [ガイド付きのセルフサービスエクスペリエンスを使用する。](/help/implementing/cloud-manager/managing-code/private-repositories.md)
 
-これにより、すべてのAEM プロパティでエクスペリエンスが統合され、ドメイン名の管理、SSL 証明書の管理、CDN マッピングなど、すべての重要なワークフローとの一貫性が確保されます。
+これにより、すべての AEM プロパティに対して統一されたエクスペリエンスが実現し、ドメイン名管理、SSL 証明書管理、CDN マッピングなどのすべての重要なワークフローとの一貫性が確保されます。
 
 Edge Delivery Servicesは、次の両方で使用できます [実稼動およびサンドボックスプログラム。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 

@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.12.0 リ
 exl-id: b36add58-a2ba-4299-94be-e0026e9c553c
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '835'
-ht-degree: 76%
+ht-degree: 72%
 
 ---
 
@@ -47,11 +47,11 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### 早期導入プログラム {#sites-early-adopter}
 
-**を利用できます [RUM （Real User Monitoring）データ・サービス](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEMas a Cloud Service用のクライアントサイド収集を有効にします。
+**を利用できます [RUM （Real Use Monitoring）データ・サービス](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEMas a Cloud Service用のクライアントサイド収集を有効にします。
 
-実ユーザーモニタリング（RUM）データサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントの信頼性の高い測定を保証します。 ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
+Real Use Monitoring （RUM）データサービスは、ユーザーのインタラクションをより正確に反映し、web サイトエンゲージメントの信頼性の高い測定を保証します。 ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
 
-この新機能のテストやフィードバックの共有に関心がある場合は、にメールを送信してください。 `aemcs-rum-adopter@adobe.com`に加え、Adobe IDに関連付けられたメールアドレスから取得した実稼動、ステージ、開発環境のドメイン名を使用します。 その後、アドビの製品チームが、リアルユーザーモニタリング（RUM）データサービスを有効にします。
+この新機能のテストやフィードバックの共有に関心がある場合は、にメールを送信してください。 `aemcs-rum-adopter@adobe.com`に加え、Adobe IDに関連付けられたメールアドレスから取得した実稼動、ステージ、開発環境のドメイン名を使用します。 Adobeのプロダクトチームが、Real Use Monitoring （RUM）データサービスを有効にします。
 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}

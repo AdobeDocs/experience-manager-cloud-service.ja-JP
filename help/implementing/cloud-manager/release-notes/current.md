@@ -4,10 +4,10 @@ description: AEM as a Cloud Service の Cloud Manager 2024.6.0 のリリース�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 5644e6f433b18408780e13057ba469e7c4926f78
-workflow-type: ht
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -34,7 +34,7 @@ AEM as a Cloud Service の Cloud Manager 2024.6.0 のリリース日は 2024年6
    * 最長 7 日間の固定時間の復元
 * [新しい OakPal ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package)が、Cloud Manager コード品質スキャンに追加されました。
    * 2024年6月の時点で追加されたすべての新しいルールは、重大な変更ではありません。
-   * Cloud Manager 2024年8月リリース以降、これらの新しいルールによりパイプラインでエラーが発生する可能性があるので、できるだけ早くこれらに対処することをお勧めします。
+   * Cloud Manager 2024年8月リリース以降、これらの新しいルールによりパイプラインでエラーが発生する可能性があるので、できるだけ早くこれらのルールに対処することをお勧めします。
 
 ## 早期導入プログラム {#early-adoption}
 
@@ -54,11 +54,11 @@ Cloud Manager では、[ドメイン検証（DV）SSL 証明書をセルフサ�
 
 この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから `Grp-aemcs-dv-dert-adopter@adobe.com` にメールを送信してください。
 
-### 実ユーザーモニタリング（RUM）によるクライアントサイドのコレクション {#rum}
+### RUM （Real Use Monitoring）によるクライアントサイドの収集 {#rum}
 
-[実ユーザーモニタリング（RUM）データサービス](/help/implementing/cloud-manager/content-requests.md#cliendside-collection)を活用して、AEM as a Cloud Service のクライアントサイドのコレクションを有効にすることができます。
+を利用できます [RUM （Real Use Monitoring）データ・サービス](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) AEMas a Cloud Service用のクライアントサイド収集を有効にします。
 
-実ユーザーモニタリング（RUM）データサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントの信頼性の高い測定を保証します。 ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。 アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、トラフィックレポートをアドビと共有する必要がなくなります。
+Real Use Monitoring （RUM）データサービスは、ユーザーのインタラクションをより正確に反映し、web サイトエンゲージメントの信頼性の高い測定を保証します。 ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。 アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、トラフィックレポートをアドビと共有する必要がなくなります。
 
 この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから `aemcs-rum-adopter@adobe.com` にメールを送信してください。 メールには実稼動環境、ステージ環境、開発環境のドメイン名を含めてください。  この機能の早期導入プログラムの使用は制限されています。
 

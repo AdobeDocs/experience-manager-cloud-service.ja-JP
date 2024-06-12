@@ -4,10 +4,10 @@ description: AEM as a Cloud Service を使用して、Edge Delivery Services で
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+workflow-type: tm+mt
 source-wordcount: '862'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ Edge Delivery により、AEM はエンゲージメントとコンバージョ�
 
 Edge 配信サービスを使用すると、次の操作を実行できます。
 
-* 申し分ない Lighthouse スコアの高速サイトを作成し、実ユーザーモニタリング（RUM）を通じてサイトのパフォーマンスを継続的に監視します。
+* 完璧な Lighthouse Score で高速サイトを作成し、リアルタイムモニタリング（RUM）を通じてサイトのパフォーマンスを継続的に監視します。
 * コンテンツソースを分離することでオーサリング効率を向上させます。標準では、AEM オーサリングとドキュメントベースのオーサリングの両方を使用できます。したがって、同じ web サイト上で複数のコンテンツソースを操作できます。
 * 迅速なテスト作成、パフォーマンスに影響を与えない実行およびテスト勝者の実稼動環境への迅速なリリースが可能になる組み込みの実験フレームワークを使用します。
 
@@ -46,7 +46,7 @@ Edge Delivery Services は Adobe Experience Manager の構成要素なので、E
 
 AEM と Edge Delivery Services を使用してオーサリングする独自のプロジェクトを開始する方法について詳しくは、[Edge Delivery Services を使用した AEM オーサリングの開発者向け入門ガイド](/help/edge/aem-authoring/edge-dev-getting-started.md)を参照してください。
 
-Edge Delivery Services は [Adobe Target](https://www.aem.live/developer/target-integration)、[リアルユーザーモニタリング（RUM）](https://www.aem.live/developer/rum)とともに使用して Sites の使用状況とパフォーマンスを診断したり、[Adobe Experience Platform Launch](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/home) で使用することもできます。
+でEdge Delivery Servicesを使用することもできます [Adobe Target](https://www.aem.live/developer/target-integration) [実使用監視（RUM）](https://www.aem.live/developer/rum) サイトの使用状況およびパフォーマンスを診断するには、以下を行います。 [ローンチ。](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/home)
 
 ## Edge Delivery の概要 {#getting-started}
 

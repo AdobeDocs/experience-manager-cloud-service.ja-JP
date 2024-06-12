@@ -4,10 +4,10 @@ description: AEM Forms Edge Delivery Services は、ピーク時のパフォー�
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+workflow-type: tm+mt
 source-wordcount: '1018'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ AEM Forms Edge Delivery Services は、作成者が新しいフォームを迅�
 
 * **選択したツールを使用して登録エクスペリエンスを作成：**&#x200B;コンテンツソースを分離することでオーサリングの効率を高めます。標準では、ドキュメントベースのオーサリング（Microsoft SharePoint または Google Drive）と AEM オーサリング（アダプティブフォームエディター）の両方を使用できます。同じフォームサイト上で複数のコンテンツソースを操作し、Microsoft Excel、Google Sheets、アダプティブフォームエディターなどの推奨オーサリングツールを使用できます。
 
-* **優れたデジタル登録エクスペリエンスを提供：**&#x200B;迅速な読み込みとレンダリングを行うデジタル登録エクスペリエンスを提供し、リアルユーザーモニタリング（RUM）を通じてフォームのパフォーマンスを継続的に監視します。読み込み時間の短縮とユーザーエクスペリエンスの最適化により、フォームの完成率とコンバージョン率が向上します。
+* **優れたデジタル登録エクスペリエンスを提供：** RUM （Real Use Monitoring）を通じて、フォームのパフォーマンスを迅速かつ継続的に読み込み、レンダリングするデジタル登録エクスペリエンスを提供します。 読み込み時間の短縮とユーザーエクスペリエンスの最適化により、フォームの完成率とコンバージョン率が向上します。
 
 * **開発者にわかりやすいツールセットを使用：** AEM Forms Edge Delivery Services は、プレーン HTML、最新の CSS、Vanilla JavaScript を使用して優れたエクスペリエンスを作成し、特定のフレームワークの急な学習曲線を回避します。基本的な web 開発スキルを持つ開発者は、フォームコンポーネントとエクスペリエンスをカスタマイズして簡単に作成できます。パイプラインの実行を待機する必要はありません。コードを GitHub にチェックインするだけで、変更が公開されます。
 
@@ -61,7 +61,7 @@ AEM Forms Edge Delivery Services では GitHub を使用するので、お客様
 * スパム保護を実現する Google reCAPTCHA 統合。
 * 特定のニーズに合わせてカスタムフォームコンポーネントを作成する機能。
 * フォームデータを Microsoft Excel、Google Sheets、メールアドレスに直接送信します。
-* リアルユーザーモニタリング（RUM）を通じたフォームのパフォーマンスの監視
+* RUM （Real Use Monitoring）を使用したフォームのパフォーマンスの監視
 
 #### AEM オーサリング機能
 
