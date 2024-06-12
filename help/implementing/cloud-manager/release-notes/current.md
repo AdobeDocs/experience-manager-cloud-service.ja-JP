@@ -4,10 +4,10 @@ description: AEM as a Cloud Service の Cloud Manager 2024.6.0 のリリース�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 958d8fb3526bafeb5a3be9828bddfa3330c05fec
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 93%
+source-wordcount: '548'
+ht-degree: 100%
 
 ---
 
@@ -54,13 +54,13 @@ Cloud Manager では、[ドメイン検証（DV）SSL 証明書をセルフサ�
 
 この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから `Grp-aemcs-dv-dert-adopter@adobe.com` にメールを送信してください。
 
-### RUM （Real Use Monitoring）によるクライアントサイドの収集 {#rum}
+<!-- RICK: REMOVED THIS SECTION AS PER EMAIL REQUEST TO DL-AEM-DOCS FROM SHWETA DUA, WEDNESDAY, JUNE 12, 2024 ### Client-Side Collection via Real Use Monitoring (RUM) {#rum}
 
-を利用できます [RUM （Real Use Monitoring）データ・サービス](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) AEMas a Cloud Service用のクライアントサイド収集を有効にします。
+You can leverage the [Real Use Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) to enable client-side collection for AEM as a Cloud Service.
 
-Real Use Monitoring （RUM）データサービスは、ユーザーのインタラクションをより正確に反映し、web サイトエンゲージメントの信頼性の高い測定を保証します。 ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。 アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、トラフィックレポートをアドビと共有する必要がなくなります。
+Real Use Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. This is beneficial for customers who use either Adobe-managed CDN or non-Adobe managed CDN. For customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
 
-この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから `aemcs-rum-adopter@adobe.com` にメールを送信してください。 メールには実稼動環境、ステージ環境、開発環境のドメイン名を含めてください。  この機能の早期導入プログラムの使用は制限されています。
+If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com` from the email address associated with your Adobe ID. Please include the domain name for production, stage, and dev environments in your email.  Availability of the early adopter program of this feature is limited. -->
 
 ### エクスペリエンス監査ダッシュボード {#experience-audit-dashboard}
 
