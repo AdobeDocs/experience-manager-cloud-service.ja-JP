@@ -4,10 +4,10 @@ description: クラウド環境で迅速な開発反復処理を行うために�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1c157af3f7ed4ab3ae4a67d7db200e772cf8b565
+source-git-commit: c3d16e82702efd73accd1fffdfc4957ceb4509ec
 workflow-type: tm+mt
-source-wordcount: '4312'
-ht-degree: 99%
+source-wordcount: '4220'
+ht-degree: 94%
 
 ---
 
@@ -83,81 +83,7 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
 
 >[!IMPORTANT]
 >
->Adobe I/O CLI と関連プラグインが正しく動作するように、最新バージョンの[ノードと NPM がインストールされている](https://nodejs.org/en/download/)ことを確認してください。
-
-
-1. [こちら](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/)の手順に従って、Adobe I/O CLI ツールをインストールします。
-1. Adobe I/O CLI ツールの Cloud Manager プラグインをインストールし、[こちら](https://github.com/adobe/aio-cli-plugin-cloudmanager)の説明に従って設定します。
-1. 次のコマンドを実行して、Adobe I/O CLI ツールの AEM RDE プラグインをインストールします。
-
-   ```
-   aio plugins:install @adobe/aio-cli-plugin-aem-rde
-   aio plugins:update
-   ```
-
-1. 以下の組織 ID に対して Cloud Manager プラグインを設定します。
-
-   `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
-
-   さらに、英数字の文字列を独自の組織 ID に置き換えます。これは、[こちら](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=ja#concept_EA8AEE5B02CF46ACBDAD6A8508646255)の戦略を使用して検索できます。
-
-1. 次に、以下のプログラム ID を設定します。
-
-   `aio config:set cloudmanager_programid 12345`
-
-1. 次に、RDE がアタッチされる以下の環境 ID を設定します。
-
-   `aio config:set cloudmanager_environmentid 123456`
-
-1. プラグインの設定が完了したら、次の操作を実行してログインします。
-
-   `aio login`
-
-   ログイン成功時の応答は以下の出力のようになりますが、表示される値は無視できます。
-
-   ```
-   ...
-   You are currently in:
-   1. Org: <no org selected>
-   2. Project: <no project selected>
-   3. Workspace: <no workspace selected>
-   ```
-
-   この手順では、Cloud Manager **デベロッパー - Cloud Service** 製品プロファイルのメンバーである必要があります。詳しくは、[このページ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)を参照してください。
-
-   また、このデベロッパーの役割を持っていることを、以下のコマンドを実行して Developer Console にログインすることでも確認できます。
-
-   `aio cloudmanager:environment:open-developer-console`
-
-   >[!TIP]
-   >
-   >`Warning: cloudmanager:list-programs is not a aio command.` エラーが表示された場合は、以下のコマンドを実行して [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) をインストールする必要があります。
-   >
-   >```
-   >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
-   >```
-
-1. 以下を実行して、ログインが正常に完了したことを確認します
-
-   `aio cloudmanager:list-programs`
-
-   設定した組織の下にあるすべてのプログラムがリストされます。
-
-
-詳細とデモンストレーションについては、[RDE の設定方法（06:24）](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html?lang=ja)のビデオチュートリアルを参照してください。
-
-## （インタラクティブモードでの）RDE コマンドラインツールのインストール {#installing-the-rde-command-line-tools-interactive}
-
->[!NOTE]
->
-> このセットアップ手順はまだ使用できません。6 月のある時点で以前のプロセスに置き換わります。
-> 
-
-Cloud Manager を使用してプログラムに RDE を追加したら、次の手順に従ってコマンドラインツールを設定して、RDE を操作できます。
-
->[!IMPORTANT]
->
->Adobe I/O CLI と関連プラグインが正しく動作するように、最新バージョンの[ノードと NPM がインストールされている](https://nodejs.org/en/download/)ことを確認してください。
+>のバージョン 20 があることを確認します。 [ノードと NPM がインストールされている](https://nodejs.org/en/download/) Adobe I/OCLI と関連プラグインが正しく動作するように設定できます。
 
 
 1. こちらの[手順](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/)に従って、Adobe I/O CLI ツールをインストールします。
@@ -177,7 +103,7 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
 
    スクリプト環境を使用する場合は、このセットアップ手順をスキップしても構いません。その場合は、組織、プログラムおよび環境の値を各コマンドに含めることができます。[詳しくは、以下の RDE コマンドを参照してください。](#rde-cli-commands)
 
-### インタラクティブセットアップ
+### インタラクティブセットアップ {#installing-the-rde-command-line-tools-interactive}
 
 setup コマンドは、指定された設定をローカルに保存するかグローバルに保存するかを尋ねます。
 
@@ -214,6 +140,37 @@ Setup the CLI configuration necessary to use the RDE commands.
 コマンドは、次のような結果を返します。
 
 ```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)```
+
+### 非インタラクティブ環境での手動セットアップ手順 {#manual-setup}
+
+前述のように、ユーザーが設定コマンドをインタラクティブに実行できない環境（CI/CD やスクリプトなど）の場合、組織、プログラム、環境の 3 つのパラメーターは、次の手順に従って手動で設定できます。
+
+
+<details>
+  <summary>を展開すると、手動での設定方法の詳細が表示されます</summary>
+
+1. 組織 ID を設定し、英数字の文字列を独自の組織 ID に置き換えます。
+
+   `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
+
+   * 独自の組織 ID は、メソッドを使用して検索できます [こちらのドキュメントを参照してください。](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=ja#concept_EA8AEE5B02CF46ACBDAD6A8508646255)
+
+1. 次に、以下のプログラム ID を設定します。
+
+   `aio config:set cloudmanager_programid 12345`
+
+1. 次に、RDE がアタッチされる以下の環境 ID を設定します。
+
+   `aio config:set cloudmanager_environmentid 123456`
+
+1. プラグインの設定が完了したら、次の操作を実行してログインします。
+
+   `aio login`
+
+   これらの手順では、Cloud Manager のメンバーである必要があります **開発者 – Cloud Service** 製品プロファイル。 詳しくは、[このページ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)を参照してください。
+
+詳細とデモンストレーションについては、[RDE の設定方法（06:24）](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html?lang=ja)のビデオチュートリアルを参照してください。
+</details>
 
 ## 新機能の開発時の RDE の使用 {#using-rde-while-developing-a-new-feature}
 
@@ -613,12 +570,12 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 
 ほとんどのコマンドでは、コンソール出力を抑制し、スクリプトで処理される有効な JSON を返すグローバル ```--json``` フラグをサポートします。サポートされるコマンドと、JSON 出力の例を以下に示します。
 
-### ステータス
+### ステータス {#status}
 
 <details>
   <summary>展開してステータスの例を表示</summary>
 
-#### クリーンな RDE
+#### クリーンな RDE {#clean-rde}
 
 ```$ aio aem rde status --json```
 
@@ -638,7 +595,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 }
 ```
 
-#### いくつかのバンドルがインストールされた RDE
+#### いくつかのバンドルがインストールされた RDE {#rde-installed-bundles}
 
 ```$ aio aem rde status --json```
 
@@ -707,7 +664,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 ```
 </details>
 
-### インストール
+### インストール {#install}
 
 <details>
   <summary>展開してインストールの例を表示</summary>
@@ -747,7 +704,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 ```
 </details>
 
-### 削除
+### 削除 {#delete}
 
 <details>
   <summary>展開して削除の例を表示</summary>
@@ -829,7 +786,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 
 </details>
 
-### 履歴
+### 履歴 {#history}
 
 <details>
   <summary>展開して履歴の例を表示</summary>
@@ -925,12 +882,12 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 ```
 </details>
 
-### リセット
+### リセット {#reset}
 
 <details>
   <summary>展開してリセットの例を表示</summary>
 
-#### ファイアアンドフォーゲット、待機不要
+#### ファイアアンドフォーゲット、待機不要 {#fire-no-wait}
 
 ```$ aio aem rde reset --no-wait --json```
 
@@ -942,7 +899,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 }
 ```
 
-#### 完了まで待機
+#### 完了まで待機 {#wait}
 
 ```$ aio aem rde reset --json```
 
@@ -955,7 +912,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 ```
 </details>
 
-### やり直し
+### やり直し {#restart}
 
 <details>
   <summary>展開して再起動の例を表示</summary>
@@ -1043,11 +1000,17 @@ Forms のデベロッパーは、AEM FormsCloud Service の迅速な開発環境
 
 AEM as a Cloud Service での RDE について詳しくは、[設定方法、使用方法、開発ライフサイクル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html?lang=ja)に関するビデオチュートリアル（01:25）を参照してください。
 
-# トラブルシューティング
+# トラブルシューティング {#troubleshooting}
 
-## aio RDE プラグイン {#aio-rde-plugin}
+## RDE のトラブルシューティング（#rde-troublehooting）
 
-### 不十分な権限に関するエラー
+### 既存の RDE の最新バージョンのAEMを取得する方法 {#get-latest-aem-version}
+
+作成時に、RDE は使用可能な最新の Adobe Experience Manager（AEM） バージョンに設定されます。An [RDE のリセット](#reset-rde) Cloud Manager または `aio aem:rde:reset` コマンドは、RDE を循環させ、使用可能な最新のAEM バージョンに設定します。
+
+## aio RDE プラグインのトラブルシューティング {#aio-rde-plugin-troubleshooting}
+
+### 不十分な権限に関するエラー {#insufficient-permissions}
 
 RDE プラグインを使用するには、Cloud Manager **デベロッパー - Cloud Service** 製品プロファイルのメンバーである必要があります。詳しくは、[このページ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)を参照してください。
 
