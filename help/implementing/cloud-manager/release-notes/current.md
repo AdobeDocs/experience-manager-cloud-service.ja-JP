@@ -4,7 +4,7 @@ description: AEM as a Cloud Service の Cloud Manager 2024.6.0 のリリース�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 958d8fb3526bafeb5a3be9828bddfa3330c05fec
+source-git-commit: 8eaf2b70734cec1fedace64d74059ee161785b39
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 100%
@@ -60,7 +60,7 @@ You can leverage the [Real Use Monitoring (RUM) Data Service](/help/implementing
 
 Real Use Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. This is beneficial for customers who use either Adobe-managed CDN or non-Adobe managed CDN. For customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
 
-If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com` from the email address associated with your Adobe ID. Please include the domain name for production, stage, and dev environments in your email.  Availability of the early adopter program of this feature is limited. -->
+If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com` from the email address associated with your Adobe ID. Please include the domain name for production, stage, and dev environments in your email.  Availability of the early adopter program of this feature is limited.-->
 
 ### エクスペリエンス監査ダッシュボード {#experience-audit-dashboard}
 
