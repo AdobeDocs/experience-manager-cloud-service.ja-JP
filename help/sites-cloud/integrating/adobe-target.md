@@ -2,9 +2,9 @@
 title: Adobe Target との統合
 description: Adobe Target との統合
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
-source-wordcount: '615'
+source-git-commit: 876de632163c4a0952e238ac89577fa9f064b900
+workflow-type: tm+mt
+source-wordcount: '606'
 ht-degree: 100%
 
 ---
@@ -31,10 +31,13 @@ Target に統合するには、次のタスクを実行します。
 
 * Experience Platform Launch は、Target 機能（JS ライブラリ）を備えた AEM サイトを実装するための事実上の標準ツールになっています。したがって、AEM as a Cloud Service を Launch や Adobe Target と統合すると、連携が強化されます（以下のリンクを参照）。
 
-   * [Adobe I/O を使用した Adobe Target との統合](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html?lang=ja)
-   * [Experience Platform Launch の統合](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=ja)
-   * [Adobe I/O を通じて AEM と AdobeLaunch を統合する](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=ja)
-   * [AEM と Experience Platform Launch、Analytics、Target の統合について](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=ja)
+<!--   
+  * [Integration with Adobe Target using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html)
+-->
+
+* [Experience Platform Launch の統合](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=ja)
+* [Adobe I/O を通じて AEM と AdobeLaunch を統合する](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=ja)
+* [AEM と Experience Platform Launch、Analytics、Target の統合について](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=ja)
 
 >[!NOTE]
 >
