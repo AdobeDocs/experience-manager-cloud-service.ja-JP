@@ -2,10 +2,11 @@
 title: CDN 資格情報および認証の設定
 description: 設定ファイルでルールを宣言し、Cloud Manager 設定パイプラインを使用してデプロイして、CDN 資格情報と認証を設定する方法について説明します。
 feature: Dispatcher
-source-git-commit: ee993798739232da794dbf7ff0a643ca93effa7d
-workflow-type: ht
+exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
+source-git-commit: 7a53f936aacfb3e5aa431f26e5346c1809f9c76f
+workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -71,7 +72,7 @@ data:
 
 ## API トークンのパージ {#purge-API-token}
 
-お客様は、宣言されたパージ API トークンを使用して CDN キャッシュをパージできます。トークンは、以下の構文で宣言します。デプロイ方法については、[共通設定](#common-setup)の節を参照してください。
+顧客は次のことができます [cdn キャッシュのパージ](/help/implementing/dispatcher/cdn-cache-purge.md) 宣言されたパージ API トークンを使用する。 トークンは、以下の構文で宣言します。デプロイ方法については、[共通設定](#common-setup)の節を参照してください。
 
 ```
 kind: "CDN"
