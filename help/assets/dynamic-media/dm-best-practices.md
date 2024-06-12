@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: e2d9823575f75e4cd38a61a35569cbbe14b30fc6
+source-git-commit: c24b017e60363b3b6d79105122bdbaab138c701d
 workflow-type: tm+mt
 source-wordcount: '3574'
 ht-degree: 0%
@@ -91,6 +91,8 @@ Dynamic MediaをExperience Manager Assetsと併用すると、アセットコレ
 * **プロファイルを使用したアセットの整理：**
 処理プロファイルは、指定フォルダーでのアセット処理を自動化し、組織を効率化します。 メタデータ、ファイル名およびフォルダー構造を標準化すると、デジタルアセットコレクションの拡大に合わせて、これらのプロファイルを一貫した正確に適用できます。
 詳細情報 に移動 [プロファイルを使用したアセットの整理](/help/assets/organize-assets.md#organize-to-use-profiles).
+
+
 
 ### 画像の画質の最適化
 
