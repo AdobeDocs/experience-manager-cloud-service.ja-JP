@@ -4,10 +4,10 @@ description: Edge Delivery Services プロジェクトを使用した AEM オー
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: ff4a8caf1f4d32bae4e8c776bfcad21a665936d4
+workflow-type: tm+mt
 source-wordcount: '2233'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -345,7 +345,7 @@ Edge Delivery Services を使用した AEM オーサリングでは、リッチ�
 * **画像** - AEM のリソースへの参照が `image/` で始まる MIME タイプのアセットである場合、その参照は `<picture><img src="${reference}"></picture>` としてレンダリングされます。
 * **リンク** - AEM 内に存在している参照が画像ではない場合、または値が `https?://` または `#` で始まる場合、参照は `<a href="${reference}">${reference}</a>` としてレンダリングされます。
 * **リッチテキスト** - トリミングされた値が段落（`p`、`ul`、`ol`、`h1` - `h6` など）で始まる場合、値はリッチテキストとしてレンダリングされます。
-* **クラス名** - `classes` プロパティはブロックオプションとして扱われ、[単純なブロックではテーブルヘッダーにレンダリングされ、](#simple)または[コンテナブロック内にある項目の値リストとしてレンダリングされます。](#container)
+* **クラス名**  – が `classes` プロパティは次のように処理されます [ブロックオプション](/help/edge/developer/markup-sections-blocks.md#block-options) のテーブルヘッダーでレンダリングされます [単純ブロック、](#simple) またはを、の項目の値リストとして設定します。 [コンテナブロック。](#container)
 * **値リスト** - 値が複数値プロパティで、最初の値が以前の値でない場合、すべての値がコンマ区切りリストとして連結されます。
 
 それ以外の部分はすべてプレーンテキストとしてレンダリングされます。

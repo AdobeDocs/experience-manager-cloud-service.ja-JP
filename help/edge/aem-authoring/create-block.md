@@ -4,10 +4,10 @@ description: Edge Delivery Services プロジェクトを使用した AEM オー
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
-source-wordcount: '1297'
-ht-degree: 100%
+source-git-commit: 72949b36e7e7f8689365e7cb76a8c491edf23825
+workflow-type: tm+mt
+source-wordcount: '1375'
+ht-degree: 94%
 
 ---
 
@@ -53,75 +53,99 @@ Edge Delivery Services プロジェクトを使用した AEM オーサリング�
 
 1. プロジェクトのルートにある `component-definition.json` ファイルを編集し、新しい引用ブロックに次の定義を追加して、ファイルを保存します。
 
-   ```json
-   {
-     "title": "Quote",
-     "id": "quote",
-     "plugins": {
-       "xwalk": {
-         "page": {
-           "resourceType": "core/franklin/components/block/v1/block",
-           "template": {
-             "name": "Quote",
-             "model": "quote",
-             "quote": "<p>Think, McFly! Think!</p>",
-             "author": "Biff Tannen"
-           }
-         }
-       }
-     }
-   }
-   ```
+>[!BEGINTABS]
 
-   ![component-definitions.json ファイルを編集して引用ブロックを定義](assets/create-block/component-definitions.png)
+>[!TAB JSON の例]
+
+```json
+{
+  "title": "Quote",
+  "id": "quote",
+  "plugins": {
+    "xwalk": {
+      "page": {
+        "resourceType": "core/franklin/components/block/v1/block",
+        "template": {
+          "name": "Quote",
+          "model": "quote",
+          "quote": "<p>Think, McFly! Think!</p>",
+          "author": "Biff Tannen"
+        }
+      }
+    }
+  }
+}
+```
+
+>[!TAB スクリーンショット]
+
+![component-definitions.json ファイルを編集して引用ブロックを定義](assets/create-block/component-definitions.png)
+
+>[!ENDTABS]
 
 1. プロジェクトのルートにある `component-models.json` ファイルを編集し、新しい引用ブロックに次の[モデル定義](/help/implementing/universal-editor/field-types.md#model-structure)を追加して、ファイルを保存します。
 
    * コンテンツモデルを作成する際に考慮すべき重要事項について詳しくは、[Edge Delivery Services プロジェクトを使用した AEM オーサリング用のコンテンツモデリング](/help/edge/aem-authoring/content-modeling.md)ドキュメントを参照してください。
 
-   ```json
-   {
-     "id": "quote",
-     "fields": [
-        {
-          "component": "text-area",
-          "name": "quote",
-          "value": "",
-          "label": "Quote",
-          "valueType": "string"
-        },
-        {
-          "component": "text-input",
-          "valueType": "string",
-          "name": "author",
-          "label": "Author",
-          "value": ""
-        }
-      ]
-   }
-   ```
+>[!BEGINTABS]
 
-   ![component-models.json ファイルを編集して、引用ブロックのモデルを定義](assets/create-block/component-models.png)
+>[!TAB JSON の例]
+
+```json
+{
+  "id": "quote",
+  "fields": [
+     {
+       "component": "text-area",
+       "name": "quote",
+       "value": "",
+       "label": "Quote",
+       "valueType": "string"
+     },
+     {
+       "component": "text-input",
+       "valueType": "string",
+       "name": "author",
+       "label": "Author",
+       "value": ""
+     }
+   ]
+}
+```
+
+>[!TAB スクリーンショット]
+
+![component-models.json ファイルを編集して、引用ブロックのモデルを定義](assets/create-block/component-models.png)
+
+>[!ENDTABS]
 
 1. プロジェクトのルートにある `component-filters.json` ファイルを編集し、[フィルター定義](/help/implementing/universal-editor/customizing.md#filtering-components)に引用ブロックを追加して、ブロックを任意のセクションに追加してファイルを保存できるようにします。
 
-   ```json
-   {
-     "id": "section",
-     "components": [
-       "text",
-       "image",
-       "button",
-       "title",
-       "hero",
-       "cards",
-       "columns",
-       "quote"
-      ]
-   }
-   ```
+>[!BEGINTABS]
 
-   ![component-filters.json ファイルを編集して、引用ブロックのフィルターを定義](assets/create-block/component-filters.png)
+>[!TAB JSON の例]
+
+```json
+{
+  "id": "section",
+  "components": [
+    "text",
+    "image",
+    "button",
+    "title",
+    "hero",
+    "cards",
+    "columns",
+    "quote"
+   ]
+}
+```
+
+>[!TAB スクリーンショット]
+
+![component-filters.json ファイルを編集して、引用ブロックのフィルターを定義](assets/create-block/component-filters.png)
+
+>[!ENDTABS]
 
 1. git を使用して、これらの変更を `main` ブランチにコミットします。
 
@@ -174,55 +198,70 @@ Edge Delivery Services プロジェクトを使用した AEM オーサリング�
 
 1. 新しい `quote` フォルダーに、次の JavaScript を追加してブロック装飾を実装する `quote.js` ファイルを追加し、ファイルを保存します。
 
-   ```javascript
-   export default function decorate(block) {
-     const [quoteWrapper] = block.children;
-   
-     const blockquote = document.createElement('blockquote');
-     blockquote.textContent = quoteWrapper.textContent.trim();
-     quoteWrapper.replaceChildren(blockquote);
-   }
-   ```
+>[!BEGINTABS]
 
-   ![ブロックを装飾する JavaScript の追加](assets/create-block/quote-js.png)
+>[!TAB JavaScript の例]
 
+```javascript
+export default function decorate(block) {
+  const [quoteWrapper] = block.children;
+
+  const blockquote = document.createElement('blockquote');
+  blockquote.textContent = quoteWrapper.textContent.trim();
+  quoteWrapper.replaceChildren(blockquote);
+}
+```
+
+>[!TAB スクリーンショット]
+
+![ブロックを装飾する JavaScript の追加](assets/create-block/quote-js.png)
+
+>[!ENDTABS]
 
 1. `quote` フォルダーに `quote.css` ファイルを追加し、次の CSS コードを追加してブロックのスタイル設定を定義し、ファイルを保存します。
 
-   ```css
-   .block.quote {
-       background-color: #ccc;
-       padding: 0 0 24px;
-       display: flex;
-       flex-direction: column;
-       margin: 1rem 0;
-   }
-   
-   .block.quote blockquote {
-       margin: 16px;
-       text-indent: 0;
-   }
-   
-   .block.quote > div:last-child > div {
-       margin: 0 16px;
-       font-size: small;
-       font-style: italic;
-       position: relative;
-   }
-   
-   .block.quote > div:last-child > div::after {
-       content: "";
-       display: block;
-       position: absolute;
-       left: 0;
-       bottom: -8px;
-       height: 5px;
-       width: 30px;
-       background-color: darkgray;
-   }
-   ```
+>[!BEGINTABS]
 
-   ![ブロックのスタイル設定を定義する CSS の追加](assets/create-block/quote-css.png)
+>[!TAB CSS 例]
+
+```css
+.block.quote {
+    background-color: #ccc;
+    padding: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.block.quote blockquote {
+    margin: 16px;
+    text-indent: 0;
+}
+
+.block.quote > div:last-child > div {
+    margin: 0 16px;
+    font-size: small;
+    font-style: italic;
+    position: relative;
+}
+
+.block.quote > div:last-child > div::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 5px;
+    width: 30px;
+    background-color: darkgray;
+}
+```
+
+>[!TAB スクリーンショット]
+
+![ブロックのスタイル設定を定義する CSS の追加](assets/create-block/quote-css.png)
+
+>[!ENDTABS]
 
 1. git を使用して、これらの変更を `main` ブランチにコミットします。
 
@@ -239,6 +278,50 @@ Edge Delivery Services プロジェクトを使用した AEM オーサリング�
    ![公開およびスタイル設定された引用ブロック](assets/create-block/quote-styled-published.png)
 
 これで完了です。完全に機能し、スタイル設定された引用ブロックが作成されました。この例を基礎として、独自のプロジェクト固有のブロックを設計できます。
+
+### ブロックオプション {#block-options}
+
+特定の状況に応じてブロックの外観や動作をわずかに異なるものの、それ自体が新しいブロックになるほど異なっていない場合は、作成者がから選択できます [ブロックオプション。](content-modeling.md#type-inference)
+
+を追加する `classes` ブロックのプロパティ。単純ブロックの場合はテーブルヘッダーに、コンテナブロックの場合は値リストにレンダリングされるプロパティ。
+
+```json
+{
+  "id": "simpleMarquee",
+  "fields": [
+    {
+      "component": "text",
+      "valueType": "string",
+      "name": "marqueeText",
+      "value": "",
+      "label": "Marquee text",
+      "description": "The text you want shown in your marquee"
+    },
+    {
+      "component": "select",
+      "name": "classes",
+      "value": "",
+      "label": "Background Color",
+      "description": "The marquee background color",
+      "valueType": "string",
+      "options": [
+        {
+          "name": "Red",
+          "value": "bg-red"
+        },
+        {
+          "name": "Green",
+          "value": "bg-green"
+        },
+        {
+          "name": "Blue",
+          "value": "bg-blue"
+        }
+      ]
+    }
+  ]
+}
+```
 
 ## 他の作業用ブランチの使用 {#other-branches}
 
