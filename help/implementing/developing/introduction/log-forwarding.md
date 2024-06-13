@@ -4,9 +4,9 @@ description: AEM as a Cloud Serviceでの Splunk およびその他のログベ�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0e166e8549febcf5939e4e6025519d8387231880
+source-git-commit: e007f2e3713d334787446305872020367169e6a2
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1209'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 >
 >この機能はまだリリースされておらず、一部のログ宛先はリリース時には使用できない場合があります。 それまでの間、サポートチケットを開いて、にログを転送できます **Splunk**（を参照） [ログ記事](/help/implementing/developing/introduction/logging.md).
 
-ログベンダーのライセンスまたはログ製品のホストを持つお客様は、AEM、Apache/Dispatcher および CDN ログを、関連するログ出力先に転送できます。 AEM as a Cloud Serviceは、次のログ出力先をサポートしています。
+ログベンダーのライセンスまたはログ製品のホストのライセンスを持つお客様は、AEM ログ（Apache/Dispatcher を含む）および CDN ログを、関連するログ出力先に転送できます。 AEM as a Cloud Serviceは、次のログ出力先をサポートしています。
 
 * Azure Blob ストレージ
 * DataDog
@@ -71,7 +71,7 @@ AEMおよび Apache/Dispatcher ログを、専用のエグレス IP などのAEM
 
    設定のトークン（など） `${{SPLUNK_TOKEN}}`）はシークレットを表すもので、Git に保存しないでください。 代わりに、Cloud Manager として宣言します  [環境変数](/help/implementing/cloud-manager/environment-variables.md) タイプの **秘密**. 必ずを選択してください。 **すべて** 「適用されるサービス」フィールドのドロップダウン値として使用することで、ログを、オーサー層、パブリッシュ層およびプレビュー層に転送できます。
 
-   追加の値を含めることで、cdn ログとその他すべて（AEM ログと Apache ログ）の間で異なる値を設定することが可能です **cdn** および/または **aem** 次の後にブロック **default** プロパティが内で定義されたプロパティを上書きするブロック **default** ブロック。必要なのは enabled プロパティのみです。 以下の例に示すように、CDN ログに別の Splunk インデックスを使用する使用例が考えられます。
+   追加のを含めることで、CDN ログとAEM ログ（Apache/Dispatcher を含む）間で異なる値を設定できます **cdn** および/または **aem** 次の後にブロック **default** プロパティが内で定義されたプロパティを上書きするブロック **default** ブロック。必要なのは enabled プロパティのみです。 以下の例に示すように、CDN ログに別の Splunk インデックスを使用する使用例が考えられます。
 
    ```
       kind: "LogForwarding"
@@ -91,7 +91,7 @@ AEMおよび Apache/Dispatcher ログを、専用のエグレス IP などのAEM
             index: "AEMaaCS_CDN"   
    ```
 
-   別のシナリオとして、CDN ログまたはその他すべて（AEM ログと apache ログ）の転送を無効にする場合もあります。 例えば、CDN ログのみを転送するには、次を設定します。
+   別のシナリオとして、CDN ログまたはAEM ログ（Apache/Dispatcher を含む）の転送を無効にする場合もあります。 例えば、CDN ログのみを転送するには、次を設定します。
 
    ```
       kind: "LogForwarding"
@@ -171,9 +171,9 @@ aemcdn/
 
 各ファイルには、それぞれ別の行に記述された複数の JSON ログエントリが含まれます。 ログエントリの形式については、こちらを参照してください [ログ記事](/help/implementing/developing/introduction/logging.md)また、各ログエントリには、で説明されている追加のプロパティも含まれます。 [ログエントリの形式](#log-format) セクションを下にします。
 
-#### その他の Azure Blob ストレージログ {#azureblob-other}
+#### Azure Blob Storage AEM ログ {#azureblob-aem}
 
-CDN ログ以外のログは、次の命名規則でフォルダーの下に表示されます。
+AEM ログ（Apache/Dispatcher を含む）は、次の命名規則でフォルダーの下に表示されます。
 
 * aemaccess
 * aemerror
@@ -250,9 +250,14 @@ Web リクエスト（POST）は、ログエントリの配列である json ペ
 
 という名前のプロパティもあります `sourcetype`。値に設定されます。 `aemcdn`.
 
-#### その他の HTTPS ログ {#https-other}
+>[!NOTE]
+>
+> 最初の CDN ログエントリが送信される前に、HTTP サーバーは 1 回限りのチャレンジ（パスに送信されるリクエスト）を正常に完了する必要があります ``wellknownpath`` 応答する必要がある相手 ``*``.
 
-ログエントリごとに個別の web リクエスト（POST）が送信されます。ログエントリの形式については、 [ログ記事](/help/implementing/developing/introduction/logging.md). その他のプロパティについては、を参照してください [ログエントリの形式](#log-format) セクションを下にします。
+
+#### HTTPS AEM ログ {#https-aem}
+
+AEM ログ（apache/dispatcher を含む）の場合、web リクエスト（POST）は、に記載されているように、様々なログエントリ形式でログエントリの配列である json ペイロードで継続的に送信されます。 [ログ記事](/help/implementing/developing/introduction/logging.md). その他のプロパティについては、を参照してください [ログエントリの形式](#log-format) セクションを下にします。
 
 という名前のプロパティもあります `sourcetype`。この値は、次のいずれかの値に設定されます。
 
@@ -299,7 +304,7 @@ data:
 
 ## ログエントリの形式 {#log-formats}
 
-一般を参照してください [ログ記事](/help/implementing/developing/introduction/logging.md) 各ログタイプ（Dispatcher ログ、CDN ログなど）の形式については、
+一般を参照してください [ログ記事](/help/implementing/developing/introduction/logging.md) 各ログタイプ（CDN ログおよび Apache/Dispatcher を含むAEM ログ）の形式については、を参照してください。
 
 複数のプログラムおよび環境からのログは、ログ記事で説明されている出力に加えて、同じログ宛先に転送される場合があるので、次のプロパティが各ログエントリに含まれます。
 
@@ -328,7 +333,7 @@ aem_tier: author
 
 CDN ログの場合は、の説明に従って、IP アドレスを許可リストに登録できます。 [この記事](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). その共有 IP アドレスのリストが大きすぎる場合は、（Adobe以外の） Azure Blob Store にトラフィックを送信することを検討してください。このストアでは、専用の IP アドレスのログを最終的な送信先に送信するロジックを書き込むことができます。
 
-その他のログの場合は、通過するようにログ転送を設定できます [高度なネットワーク](/help/security/configuring-advanced-networking.md). オプションのを利用した、以下の 3 つの高度なネットワークタイプのパターンを参照してください。 `port` パラメーター、 `host` パラメーター。
+AEM ログ（Apache/Dispatcher を含む）の場合は、通過するようにログ転送を設定できます [高度なネットワーク](/help/security/configuring-advanced-networking.md). オプションのを利用した、以下の 3 つの高度なネットワークタイプのパターンを参照してください。 `port` パラメーター、 `host` パラメーター。
 
 ### フレキシブルポートエグレス {#flex-port}
 
