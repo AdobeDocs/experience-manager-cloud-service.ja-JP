@@ -4,10 +4,10 @@ description: クラウド環境で迅速な開発反復処理を行うために�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c3d16e82702efd73accd1fffdfc4957ceb4509ec
+source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
 workflow-type: tm+mt
-source-wordcount: '4220'
-ht-degree: 94%
+source-wordcount: '4244'
+ht-degree: 93%
 
 ---
 
@@ -472,11 +472,6 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 ## ログ {#rde-logging}
 
->[!NOTE]
->
-> この機能はまだ使用できません。6 月中にロールアウトする予定です。
-> 
-
 他の環境タイプと同様に、ログレベルは OSGi 設定を変更することで設定できますが、上記のように、RDE のデプロイメントモデルには Cloud Manager のデプロイメントではなくコマンドラインが含まれます。ログの表示、ダウンロード、解釈の方法について詳しくは、[ログに関するドキュメント](/help/implementing/developing/introduction/logging.md)を確認してください。
 
 また、RDE CLI には独自の log コマンドもあり、これを使用して、クラスとパッケージをログレベルでログに記録する方法をすばやく設定できます。これらの設定は、バージョン管理の OSGI プロパティを変更しないので、一時的なものと見なすことができます。この機能は、遠い過去のログを検索するのではなく、リアルタイムでログを追跡することに焦点を当てています。
@@ -484,6 +479,14 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 次の例では、1 つのパッケージをデバッグログレベルに設定し、2 つのパッケージ（スペースで区切る）を情報デバッグレベルに設定して、オーサー層を末尾まで追跡する方法を示します。**認証**&#x200B;パッケージを含む出力がハイライト表示されます。
 
 `aio aem:rde:logs --target=author --debug=org.apache.sling --info=org.apache.sling.commons.threads.impl org.apache.sling.jcr.resource.internal.helper.jcr -H .auth.`
+
+>[!TIP]
+>
+>次のエラーが表示される場合： `RDECLI:UNEXPECTED_API_ERROR` オーサーサービスのログコマンドを再生する場合は、環境をリセットして再試行してください。 最新のリセット操作が 2024 年 5 月末以前であった場合、このエラーがスローされます。
+>
+```
+>aio aem:rde:reset
+>```
 
 コマンドラインオプションの完全なセットについては、`aio aem:rde:logs --help` を参照してください。
 
