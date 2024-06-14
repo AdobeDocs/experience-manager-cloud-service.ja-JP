@@ -9,9 +9,9 @@ discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
 source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2150'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 99%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEMas a Cloud Service（基盤コンポーネント） | この記事 |
-| AEMas a Cloud Service（コアコンポーネント） | [ここをクリックしてください](/help/forms/adaptive-form-fragments-core-components.md) |
+| AEM as a Cloud Service（基盤コンポーネント） | この記事 |
+| AEM as a Cloud Service（コアコンポーネント） | [ここをクリックしてください](/help/forms/adaptive-form-fragments-core-components.md) |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=ja) |
 
 すべてのフォームは特定の目的用に設計されますが、ほとんどのフォームには、いくつかの共通するセグメントがあります（例：名前と住所、家族の詳細、収入の詳細などの個人情報などを入力するためのセグメント）。フォームのデベロッパーは、新しいフォームを作成するたびに、こうした共通セグメントを作成する必要があります。アダプティブフォームには、パネルやフィールドグループなどのフォームセグメントを 1 回だけ作成するための便利な機能が用意されています。作成したフォームセグメントは、アダプティブフォームで再利用することができます。この再利用可能なスタンドアロンのセグメントは、アダプティブフォームフラグメントといいます。

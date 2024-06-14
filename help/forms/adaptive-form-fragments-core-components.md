@@ -6,9 +6,9 @@ keywords: アダプティブフォームフラグメントを追加、アダプ�
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1355'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 88%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEMas a Cloud Service（コアコンポーネント） | この記事 |
-| AEMas a Cloud Service（基盤コンポーネント） | [ここをクリックしてください](/help/forms/adaptive-form-fragments.md) |
+| AEM as a Cloud Service（コアコンポーネント） | この記事 |
+| AEM as a Cloud Service（基盤コンポーネント） | [ここをクリックしてください](/help/forms/adaptive-form-fragments.md) |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=ja) |
 
 すべてのフォームは特定の目的のために設計されますが、ほとんどのフォームにはいくつかの共通するセグメントがあります（例：名前と住所、家族の詳細、収入の詳細などの個人情報を入力するためのセグメント）。フォーム開発者は、新しいフォームを作成するたびに、これらの共通セグメントを作成する必要があります。
@@ -31,19 +31,19 @@ ht-degree: 88%
 
 >[!NOTE]
 >
-> [フォームフラグメントコンポーネントの設定ダイアログとデザインダイアログ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment)を使用して、ユーザーのフラグメントエクスペリエンスを簡単にカスタマイズできます。
+> [フォームフラグメントコンポーネントの設定ダイアログとデザインダイアログ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment)を使用して、ユーザーのフラグメントエクスペリエンスを簡単にカスタマイズできます。
 
 ## アダプティブフォームフラグメントの作成 {#create-a-fragment}
 
-アダプティブフォームフラグメントは、最初から作成することも、パネルを既存のアダプティブフォーム内にフラグメントとして保存することもできます。 フォームフラグメントを作成するには、次の手順を行います。
+アダプティブフォームフラグメントは、最初から作成することも、既存のアダプティブフォーム内にパネルをフラグメントとして保存することもできます。フォームフラグメントを作成するには、次の手順を行います。
 
 1. AEM Forms オーサーインスタンス（https://[*hostname*]:[*port*]/aem/forms.html）にログインします。
 1. **作成／アダプティブフォームセグメント**&#x200B;をクリックします。
 
-   ![アダプティブフォームフラグメントの作成](/help/forms/assets/adaptive-form-fragment.png)
+   ![アダプティブフォームフラグメントを作成](/help/forms/assets/adaptive-form-fragment.png)
 
 1. フラグメントのタイトル、名前、説明、タグを指定します。フラグメントには一意の名前を指定してください。同じ名前を持つ別のフラグメントが存在する場合、フラグメントの作成は失敗します。
-1. フォームテンプレートを選択します。コアコンポーネントベースのアダプティブFormsまたは基盤コンポーネントベースのアダプティブForms用のフォームフラグメントを作成できます。 コアコンポーネントベースのフォームフォームフラグメントを作成するには、コアコンポーネントベースのテンプレートを選択します。
+1. フォームテンプレートを選択します。コアコンポーネントベースのアダプティブフォーム、または基盤コンポーネントベースのアダプティブフォーム用のフォームフラグメントを作成できます。コアコンポーネントベースのフォームフォームフラグメントを作成するには、コアコンポーネントベースのテンプレートを選択します。
 
    コアコンポーネントベースのフォーム用のフォームフラグメントを作成する場合は、「フォームテーマを選択」オプションを使用して、コアコンポーネントベースのテーマを選択します。
 
@@ -64,7 +64,7 @@ ht-degree: 88%
 
 1. 「**作成**」をクリックし、次に「**開く**」をクリックして、編集モードでデフォルトのテンプレートを使ってフラグメントを開きます。編集モードでは、任意のアダプティブフォームコンポーネントをフラグメントに追加できます。
 
-<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> さらに、フラグメントのフォームモデルとして XML スキーマを選択すると、フォームモデル階層を表示する新しいタブがコンテンツファインダーに表示されます。 フォームモデルの要素をフラグメントにドラッグアンドドロップできます。 <!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
+<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> また、フラグメントのフォームモデルとして XML スキーマを選択した場合は、フォームモデル階層を示す新しいタブがコンテンツファインダーに表示されます。これにより、フォームモデルの要素をフラグメントにドラッグ＆ドロップできます。<!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
 スキーマまたはフォームデータモデル（FDM）に基づいてアダプティブフォームフラグメントを作成すると、アダプティブフォームエディターでコンテンツブラウザーの「データソース」タブに、フォームデータモデル（FDM）またはスキーマ要素が表示されます。フォームモデルの要素をフラグメントにドラッグ＆ドロップできます。追加されたフォームモデルの要素はフォームコンポーネントに変換されますが、関連したスキーマからの元のプロパティは保持されます。
 
@@ -75,10 +75,10 @@ ht-degree: 88%
 
 1. アダプティブフォームを編集モードで開きます。
 1. **アダプティブフォームフラグメント**&#x200B;コンポーネントをフォームに追加します。
-1. の設定ダイアログを開きます。 **アダプティブフォームフラグメント** コンポーネント。
-1. 「」を選択します **フラグメント参照** が含まれる **基本** タブ。 フォームのモデルに応じて、フォームで使用可能なすべてのアダプティブフォームフラグメントが表示されます。
+1. **アダプティブフォームフラグメント**&#x200B;コンポーネントの設定ダイアログを開きます。
+1. 「**基本**」タブで「**フラグメント参照**」を選択します。フォームのモデルに応じて、フォームで使用可能なすべてのアダプティブフォームフラグメントが表示されます。
 
-1. アダプティブフォームフラグメントを **アダプティブフォームフラグメント** コンポーネントをアダプティブフォームに追加します。
+1. アダプティブフォームの&#x200B;**アダプティブフォームフラグメント**&#x200B;コンポーネントでアダプティブフォームフラグメントを選択します。
 
    ![「アダプティブフォームフラグメント」オプションを選択](/help/forms/assets/adaptive-form-fragment-basic.png)
 
@@ -110,7 +110,7 @@ Perform the following steps to show complete fragments in forms:
 
 ### フラグメント内でのフラグメントの使用 {#using-fragments-within-fragments}
 
-入れ子のアダプティブフォームフラグメントを作成できます。このことはフラグメント内に別のフラグメントを追加し、入れ子のフラグメント構造を構築できることを意味します。
+ネストされたアダプティブフォームフラグメントを作成できます。つまり、フラグメントを別のフラグメントに追加し、ネストされたフラグメント構造を持つことができます。
 
 ### アダプティブフォーム内でのフォームフラグメントの複数回の使用 {#using-form-fragment-mutiple-times-in-af}
 

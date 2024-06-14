@@ -7,9 +7,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1119'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -112,7 +112,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 >[!NOTE]
 >
->Web 層および設定パイプラインは、プライベートリポジトリではサポートされていません。 ドキュメントを参照してください [Cloud Manager でのプライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md) 制限の詳細と完全なリストについて説明します。
+>Web 階層設定パイプラインは、プライベートリポジトリではサポートされていません。制限の詳細と完全なリストについては、[Cloud Manager でのプライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)ドキュメントを参照してください。
 
 ## パイプラインの削除 {#deleting-pipelines}
 
@@ -148,13 +148,13 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 ![期間](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
 
-パイプラインにが含まれている場合 **コードスキャン** 問題が発生したステップ。をタップまたはクリックします **詳細をダウンロード** のリストを表示するボタン [コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md) それは通らなかった。
+パイプラインに問題が発生した&#x200B;**コードスキャン**&#x200B;ステップが含まれていた場合は、「**詳細をダウンロード**」ボタンをタップまたはクリックして、合格しなかった[コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)のリストを表示できます。
 
 ![コード品質の問題](assets/managing-pipelines-code-quality-issues.png)
 
-A **プロジェクト ファイルの場所** csv ファイル内の列を使用して、問題のあるコードの場所を示すことができます。 この列はプロジェクトに関連するパスであるのに対して、 **ファイルの場所** 列は Maven で生成されます。
+CSV ファイルには、問題のあるコードの場所を示す&#x200B;**プロジェクトファイルの場所**&#x200B;列があります。この列はプロジェクト相対パスですが、**ファイルの場所**&#x200B;列は Maven によって生成されます。
 
-![プロジェクト コード スキャン問題の詳細](assets/managing-pipelines-code-quality-details.png)
+![プロジェクトコードスキャン問題の詳細](assets/managing-pipelines-code-quality-details.png)
 
 >[!NOTE]
 >
