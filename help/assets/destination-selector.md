@@ -2,11 +2,12 @@
 title: AEM as a Cloud Service の宛先セレクター
 description: AEM の宛先セレクターを使用して、元のアセットのコピーとして使用できるアセットを表示および選択します。
 contentOwner: Adobe
-role: Admin,User
+role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
-workflow-type: ht
-source-wordcount: '1904'
+feature: Selectors
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
+source-wordcount: '1887'
 ht-degree: 100%
 
 ---
@@ -125,7 +126,7 @@ interface SelectedDestination {
 
 次の表に、選択された宛先の重要なプロパティの一部を示します。
 
-| プロパティ | タイプ | 説明 |
+| Property | タイプ | 説明 |
 |---|---|---|
 | *repo:repositoryId* | 文字列 | アセットが保存されるリポジトリの一意の ID。 |
 | *repo:id* | 文字列 | アセットの一意の ID。 |
@@ -187,7 +188,7 @@ interface SelectedDestination {
 
 宛先セレクターのプロパティを使用して、宛先セレクターのレンダリング方法をカスタマイズできます。次の表に、宛先セレクターをカスタマイズして使用するために利用できるプロパティを示します。
 
-| プロパティ | タイプ | 必須 | デフォルト | 説明 |
+| Property | タイプ | 必須 | デフォルト | 説明 |
 |---|---|---|---|---|
 | *imsOrg* | 文字列 | はい | | [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] を組織にプロビジョニングする場合に割り当てられる Adobe Identity Management System（IMS）の ID です。`imsOrg` キーは、アクセスしようとしている組織が Adobe IMS 内にあるかどうかを認証するために必要です。 |
 | *imsToken* | 文字列 | いいえ | | 認証に使用される IMS ベアラートークンです。SUSI フローを使用している場合、`imsToken` は必須ではありません。ただし、非 SUSI フローを使用している場合は必須です。 |

@@ -2,8 +2,10 @@
 title: MSM およびライブコピーを使用したコンテンツフラグメントの再利用
 description: MSM のライブコピー機能を使用して、ソースコンテンツと同期しながら、同じまたは類似のコンテンツフラグメントコンテンツを複数の場所で使用する方法について説明します。
 exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
+feature: Content Fragments
+role: User
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 100%
 

@@ -3,8 +3,10 @@ title: AEM のアセットビューにはどのようなメリットがありま
 description: AEM のアセットビューの主なメリットについて詳しくは、こちらを参照してください。アドビは、マーケティングやクリエイティブのプロフェッショナルを支援する専門知識を活用して、革新的な新しいユーザーエクスペリエンスを導入します。
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
-source-git-commit: 408a691de8a6fe2801a9907308db43f2050528c3
-workflow-type: ht
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '972'
 ht-degree: 100%
 

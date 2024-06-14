@@ -2,11 +2,11 @@
 title: アセットマイクロサービスの設定と使用
 description: クラウドネイティブなアセットマイクロサービスを設定および使用して大規模なアセットを処理します。
 contentOwner: AG
-feature: Asset Compute Microservices,Workflow,Asset Processing
-role: Architect,Admin
+feature: Asset Compute Microservices, Asset Processing, Asset Management
+role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: ht
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '2866'
 ht-degree: 100%
 

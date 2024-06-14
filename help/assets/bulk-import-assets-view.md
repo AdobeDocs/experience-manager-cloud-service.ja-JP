@@ -2,8 +2,10 @@
 title: Assets ビューを使用したアセットの一括読み込み
 description: 新しい Assets UI（Assets ビュー）を使用してアセットを一括で読み込む方法について説明します。これにより、管理者はデータソースから AEM Assets に大量のアセットを読み込むことができます。
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
-source-git-commit: cd4435247505e5067d09631b29a29e26d60eb09a
-workflow-type: ht
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '1761'
 ht-degree: 100%
 

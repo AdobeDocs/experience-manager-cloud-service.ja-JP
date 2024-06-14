@@ -2,11 +2,11 @@
 title: Creative Cloud 統合のコンテンツ自動処理
 description: Creative Cloud 統合を使用したアセットバリエーションの生成
 contentOwner: AG
-feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
-role: User,Admin
+feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
+role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: ht
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 100%
 

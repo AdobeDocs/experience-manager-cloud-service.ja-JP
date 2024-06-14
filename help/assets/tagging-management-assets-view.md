@@ -2,8 +2,10 @@
 title: アセットビューでタグを管理する方法？
 description: アセットビューでタグを管理する方法を説明します。タグを使用すると、アセットを分類して参照や検索をより効率的に行えるようになります。
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
-source-git-commit: cadf0e383608a39200d716cc698ad1979f24fd1d
-workflow-type: ht
+feature: Smart Tags
+role: User, Admin, Developer
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 100%
 

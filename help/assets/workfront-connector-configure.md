@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] の設定'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] の設定'
 role: Admin
-feature: Integrations
+feature: Workfront Integrations and Apps
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 4bda798113d85b800cb088d150f8c9d453c9ec3e
-workflow-type: ht
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+workflow-type: tm+mt
 source-wordcount: '1767'
 ht-degree: 100%
 
@@ -82,7 +82,7 @@ Workfront プロジェクトと AEM フォルダー間のメタデータマッ�
 
 マッピングを設定するには、次の手順に従います。
 
-1. `wf-workfront-users` グループに対して `jcr:read` 権限を `/conf/global/settings/dam/adminui-extension/foldermetadataschema` に追加します。
+1. `wf-workfront-users` グループについて、`jcr:read` 権限を `/conf/global/settings/dam/adminui-extension/foldermetadataschema` に追加します。
 1. **[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL フォルダーメタデータスキーマ]**&#x200B;に移動します。
 1. 編集するフォルダーメタデータスキーマフォームを選択し、「編集」をクリックします。
 1. 編集するフォルダーメタデータスキーマフォームフィールドを選択し、右側のパネルの「設定」タブを選択します。

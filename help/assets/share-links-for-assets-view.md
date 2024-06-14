@@ -2,8 +2,10 @@
 title: アセットへのリンクの共有方法
 description: リンクを生成し、 [!DNL Assets view]  アプリケーションへのアクセス権を持たない他のユーザーとアセットを共有します。
 exl-id: 7d7d488b-410b-4e90-bd10-4ffbb5fcec49
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
+feature: Adobe Asset Link, Link Sharing
+role: Admin
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 100%
 

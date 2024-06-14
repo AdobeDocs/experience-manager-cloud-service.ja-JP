@@ -3,11 +3,11 @@ title: デジタルアセットの管理
 description: 様々なアセット管理および編集方法について
 contentOwner: AG
 mini-toc-levels: 3
-feature: Asset Management,Publishing,Collaboration,Asset Processing
-role: User,Architect,Admin
+feature: Asset Management, Publishing,Collaboration, Asset Processing
+role: User, Architect, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: ht
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '4277'
 ht-degree: 100%
 

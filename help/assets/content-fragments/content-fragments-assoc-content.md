@@ -2,8 +2,10 @@
 title: 関連コンテンツ（アセット - コンテンツフラグメント）
 description: オプションとしてアセットをフラグメントと共に使用できるよう、AEM コンテンツフラグメントの関連コンテンツ機能で接続を提供する方法を説明します。
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
-workflow-type: ht
+feature: Content Fragments
+role: User
+source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
+workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 100%
 
@@ -25,7 +27,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 >
 >[ビジュアルアセット（画像など）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)をフラグメントやページに追加するための様々な方法があります。
 
-関連付けを作成するには、最初に[メディアアセットをコレクションに追加](/help/assets/manage-collections.md)する必要があります。それが完了した後で以下を実行できます。
+関連付けを行うには、最初に[メディアアセットをコレクションに追加する](/help/assets/manage-collections.md)必要があります。それが完了した後で以下を実行できます。
 
 1. フラグメントを開き、サイドパネルから「**関連コンテンツ**」を選択します。
 

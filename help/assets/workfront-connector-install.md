@@ -2,11 +2,11 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] のインストール'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のインストール'
 role: Admin
-feature: Integrations
+feature: Workfront Integrations and Apps
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 393ec79e820632e879a377e697ecd09f4571c0b7
-workflow-type: ht
-source-wordcount: '854'
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+workflow-type: tm+mt
+source-wordcount: '765'
 ht-degree: 100%
 
 ---

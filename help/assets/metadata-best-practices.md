@@ -3,8 +3,9 @@ title: メタデータの管理とベストプラクティス
 description: デジタルアセットを効果的に管理するためのメタデータのベストプラクティスについて説明します。
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
-source-git-commit: 2526bc491f079d0dfafaa7aad0d240ff64109591
-workflow-type: ht
+feature: Metadata, Best Practices
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 100%
 

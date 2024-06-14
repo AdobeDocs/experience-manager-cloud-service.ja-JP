@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] で PDF ドキュメントを管理します。'
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] で PDF ドキュメントを管理します。'
 feature: Asset Management
-role: User,Admin
+role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: ht
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 100%
 

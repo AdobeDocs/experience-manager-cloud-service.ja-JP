@@ -2,8 +2,10 @@
 title: コンテンツフラグメントの管理（Assets - コンテンツフラグメント）
 description: ヘッドレスコンテンツの基礎として、またはページオーサリング用として AEM コンテンツフラグメントを Assets コンソールを使用して管理する方法について説明します。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
+feature: Content Fragments
+role: User, Admin
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 100%
 

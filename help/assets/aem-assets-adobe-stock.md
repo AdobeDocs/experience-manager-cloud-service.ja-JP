@@ -2,11 +2,11 @@
 title: ' [!DNL Assets] での [!DNL Adobe Stock] アセットの管理。'
 description: ' [!DNL Adobe Experience Manager] 内から [!DNL Adobe Stock] アセットを、検索、取得、ライセンス、管理します。ライセンスされたアセットをその他のデジタルアセットとして使用します。'
 contentOwner: Vishabh Gupta
-feature: Search,Adobe Stock
-role: Admin,User
+feature: Adobe Stock
+role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: ht
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '2460'
 ht-degree: 100%
 

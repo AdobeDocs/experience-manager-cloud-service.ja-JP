@@ -2,8 +2,10 @@
 title: バリエーション - フラグメントコンテンツのオーサリング（アセット - コンテンツフラグメント）
 description: コンテンツフラグメントのバリエーションを理解すると、そのフラグメントにコンテンツをオーサリングし、目的に応じてそのコンテンツのバリエーションを作成できるようになり、柔軟性が向上します。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
-workflow-type: ht
+feature: Content Fragments
+role: User
+source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
+workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 100%
 

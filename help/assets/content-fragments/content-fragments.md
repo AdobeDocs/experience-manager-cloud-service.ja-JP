@@ -2,8 +2,10 @@
 title: コンテンツフラグメントの操作（Assets - コンテンツフラグメント）
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントで、ページオーサリングやヘッドレス配信に最適な、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。また、MSM と共に使用する方法も説明します。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 930eca968807eaa9b322010d582973d431b9fa01
-workflow-type: ht
+feature: Content Fragments
+role: User
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+workflow-type: tm+mt
 source-wordcount: '2230'
 ht-degree: 100%
 

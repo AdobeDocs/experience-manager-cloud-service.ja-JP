@@ -2,8 +2,10 @@
 title: アセットビューでのレポートの管理
 description: アセットビューの「レポート」セクションのデータにアクセスして、製品と機能の使用状況を評価し、主要な成功指標に関するインサイトを導き出します。
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
-source-git-commit: 7e8d4487ec545b5625d6401513df00d5c6240ee2
-workflow-type: ht
+feature: Asset Insights, Asset Reports
+role: User, Admin, Developer
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 100%
 

@@ -2,11 +2,11 @@
 title: アセットインサイト
 description: サードパーティの web サイト、マーケティングキャンペーン、アドビのクリエイティブソリューションで使用される画像のユーザー評価と使用状況統計を追跡します。
 contentOwner: AG
-feature: Asset Insights,Asset Reports
-role: User,Leader
+feature: Asset Insights, Asset Reports
+role: User, Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: ht
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 100%
 

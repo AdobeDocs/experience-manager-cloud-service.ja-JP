@@ -2,8 +2,10 @@
 title: コレクションを管理
 description: コレクションとは、Experience Manager Assets ビュー内の一連のアセットのことです。コレクションを使用して、ユーザー間でアセットを共有します。
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
-source-git-commit: b2144820ad549332e8a921744717a77824f9e099
-workflow-type: ht
+feature: Collections, Asset Management
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 100%
 

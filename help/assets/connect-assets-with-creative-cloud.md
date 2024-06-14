@@ -2,8 +2,10 @@
 title: AEM Assets を Creative Cloud に接続
 description: AEM Assets を設定し、Creative Cloud に接続する方法を説明します。別の IMS 組織にプロビジョニングされた Creative Cloud 権限に接続して、Express ライブラリや Creative Cloud ライブラリなどの最新の Creative Cloud 統合を AEM Assets で簡単に使用できます。
 exl-id: 880200fe-94b3-49de-802c-34283f7c71bc
-source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
-workflow-type: ht
+feature: Collaboration
+role: User
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 100%
 

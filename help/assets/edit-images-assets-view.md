@@ -3,10 +3,11 @@ title: 画像の編集
 description: ' [!DNL Adobe Express]  を利用したオプションを使用して画像を編集し、更新した画像をバージョンとして保存します。'
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
-source-git-commit: 42d3751a4a29149f3b31dbc28555b81aa7ed43cc
+feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -84,9 +85,9 @@ Adobe Express を使用すると、JPEG 画像を PNG 形式にすばやく変�
 
 ### 制限事項 {#limitations-adobe-express}
 
-* サポートされる画像解像度：ディメンションあたり最小 – 50 ピクセル、最大 – 6000 ピクセル。
+* サポートされる画像解像度：最小 - 50 ピクセル、最大 - ディメンションあたり 6000 ピクセル。
 
-* サポートされる最大ファイルサイズ : 17 MB。
+* サポートされるファイルの最大サイズ：17 MB。
 
 ## Adobe Express 埋め込みエディターを使用した画像の編集 {#edit-using-embedded-editor}
 

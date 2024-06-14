@@ -1,12 +1,13 @@
 ---
-title: GraphQL のコンテンツフラグメントを使用したヘッドレスコンテンツ配信（アセット - コンテンツフラグメント）
+title: GraphQLのコンテンツフラグメントを使用したヘッドレスコンテンツ配信（Assets - コンテンツフラグメント）
 description: ヘッドレスコンテンツ配信にコンテンツフラグメントと GraphQL を使用して AEM ヘッドレス CMS を実現するための基本的な概念について説明します。
-feature: Content Fragments, GraphQL API
+feature: Content Fragments
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '730'
-ht-degree: 100%
+role: User
+source-git-commit: 1e206a33ef03edfa1af3c0d95f3665b5604f22f3
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 98%
 
 ---
 
@@ -49,7 +50,7 @@ GraphQL とは次のことを意味します。
 
   [GraphQL.org](https://graphql.org) を参照
 
-[AEM GraphQL API](#aem-graphql-api) を使用すると、[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)で複雑なクエリを実行できます。各クエリは特定のモデルタイプに合致します。返されたコンテンツは、アプリケーションで使用できます。
+[AEM GraphQL API](#aem-graphql-api) を使用すると、[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)で（複雑な）クエリを実行できます。各クエリは、特定のモデルタイプに従っています。返されたコンテンツは、アプリケーションで使用できます。
 
 ## AEM GraphQL API {#aem-graphql-api}
 
