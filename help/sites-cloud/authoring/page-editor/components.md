@@ -5,10 +5,10 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -44,7 +44,7 @@ AEM には、すぐに使用できる様々なコンポーネントが付属し�
 
 [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)は柔軟かつ機能豊富なオーサリング機能を提供します。ページを作成するうえで不可欠なコンテンツタイプが用意されています。
 
-これらは AEM のベストプラクティスに従って構築され、AEM オーサリングエクスペリエンスの基盤となります。コアコンポーネントは、特定のプロジェクトニーズに合わせて開発者が容易に拡張できます。
+これらは、AEMのベストプラクティスを使用して構築されており、AEM オーサリングエクスペリエンスの基盤となります。 コアコンポーネントは、特定のプロジェクトニーズに合わせて開発者が容易に拡張できます。
 
 WCM コアコンポーネントと共に、[アダプティブフォームコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja#features)も使用できます。これらのコアコンポーネントは標準的で簡単な方法で、[AEM Sites ページにフォームを作成または追加します](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。
 

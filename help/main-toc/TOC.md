@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5b3bc9a8ef1cf1769afcd31935d321ef13bb77cd
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '5034'
 ht-degree: 99%
@@ -823,14 +823,14 @@ ht-degree: 99%
 + Edge 配信サービス {#edge-delivery}
    + [Edge 配信サービスの概要](/help/edge/overview.md)
    + [AEM での Edge Delivery の使用](/help/edge/using.md)
-   + AEM ベースのオーサリング {#aem-authoring}
-      + [Edge 配信向けのコンテンツのオーサリング](/help/edge/aem-authoring/authoring.md)
-      + [Edge 配信向けのコンテンツの公開](/help/edge/aem-authoring/publishing.md)
-      + [開発者用入門ガイド](/help/edge/aem-authoring/edge-dev-getting-started.md)
-      + [ブロックの作成](/help/edge/aem-authoring/create-block.md)
-      + [コンテンツモデリング](/help/edge/aem-authoring/content-modeling.md)
-      + [表形式のデータとスプレッドシート](/help/edge/aem-authoring/tabular-data.md)
-      + [既存のプロジェクトと Edge 配信](/help/edge/aem-authoring/existing-projects.md)
+   + WYSIWYG オーサリング {#wysiwyg-authoring}
+      + [Edge 配信向けのコンテンツのオーサリング](/help/edge/wysiwyg-authoring/authoring.md)
+      + [Edge 配信向けのコンテンツの公開](/help/edge/wysiwyg-authoring/publishing.md)
+      + [開発者用入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+      + [ブロックの作成](/help/edge/wysiwyg-authoring/create-block.md)
+      + [コンテンツモデリング](/help/edge/wysiwyg-authoring/content-modeling.md)
+      + [表形式のデータとスプレッドシート](/help/edge/wysiwyg-authoring/tabular-data.md)
+      + [既存のプロジェクトと Edge 配信](/help/edge/wysiwyg-authoring/existing-projects.md)
    + ドキュメントベースのオーサリング {#document-authoring}
       + [オーサリング](/help/edge/docs/authoring.md)
       + [一括メタデータ](/help/edge/docs/bulk-metadata.md)

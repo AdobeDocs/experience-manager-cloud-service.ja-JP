@@ -5,10 +5,10 @@ feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -20,8 +20,8 @@ AEM でコンテンツを作成する様々な方法、その違い、どのよ�
 
 AEM as a Cloud Service には、各種コンテンツを編集するための様々なエディターが用意されており、様々なオーサリングの使用例もサポートしています。
 
-* [ページエディターを使用した AEM ベースのオーサリング](#page-editor)：ページエディターは、AEM でのコンテンツのオーサリングに使用されている従来のエディターであり、何千もの web サイトで実証され、信頼されています。
-* [ユニバーサルエディターを使用した AEM ベースのオーサリング](#universal-editor)：ユニバーサルエディターは、コンテンツに依存しない方法で AEM コンテンツを作成できる最新の UI であり、Edge Delivery Services を活用した AEM プロジェクトで使用できます。
+* [ページエディターを使用した WYSIWYG オーサリング](#page-editor) - ページエディターは、何千もの web サイトで試され、信頼されているAEMのコンテンツをオーサリングするための従来のエディターです。
+* [ユニバーサルエディターを使用した WYSIWYG オーサリング](#universal-editor) - ユニバーサルエディターは、コンテンツに依存しない方法でAEM コンテンツを作成できる最新の UI で、Edge Delivery Servicesを活用するAEM プロジェクトで使用できます。
 * [ドキュメントベースのオーサリング](#document-based)：Edge Delivery Services を使用する場合、AEM コンソールの完全な外部で、Microsoft Word ドキュメントや Google ドキュメントなどの従来のドキュメントとしてコンテンツを作成することもできます。
 * [AEM コンテンツフラグメントエディタ ](#cf-editor)：ヘッドレスコンテンツを作成する場合に最適なエディターです。
 
@@ -29,7 +29,7 @@ AEM の統合された拡張性のある特性により、プロジェクトの�
 
 使用可能なオーサリングオプションが不明な場合や、コンテンツのオーサリング用の新しいオプションを検討したい場合は、システム管理者またはプロジェクトマネージャーにお問い合わせください。
 
-## ページエディターを使用した AEM ベースのオーサリング {#page-editor}
+## ページエディターを使用した WYSIWYG オーサリング {#page-editor}
 
 これは、AEM でコンテンツをオーサリングするための従来のエディターです。何千もの web サイトで実証され、信頼されています。
 
@@ -39,7 +39,7 @@ AEM ページエディターは、WYSIWYG（見た通りの）インターフェ
 
 AEM ページエディターについて詳しくは、[AEM ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)のドキュメントを参照してください。
 
-## ユニバーサルエディターを使用した AEM ベースのオーサリング {#universal-editor}
+## ユニバーサルエディターを使用した WYSIWYG オーサリング {#universal-editor}
 
 ユニバーサルエディターは、コンテンツに依存しない方法で AEM コンテンツを作成できる最新の UI です。Edge Delivery Services を活用する AEM プロジェクトの最初の選択肢になります。
 

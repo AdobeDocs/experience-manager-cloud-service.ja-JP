@@ -1,7 +1,7 @@
 ---
 title: Cloud Manager での Edge Delivery Services のサポート
 description: Edge Delivery Servicesを使用して Cloud Manager プロジェクトを配信する方法について説明します。
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 30%
@@ -24,7 +24,7 @@ Edge Delivery Services は、web サイト上のコンテンツの柔軟なオ�
 * 完璧な Lighthouse スコアで高速サイトを作成し、リアルタイムモニタリング（RUM）を通じてパフォーマンスを継続的に監視します。
 * コンテンツソースを分離することでオーサリング効率を向上させます。
 
-ユニバーサルエディターを使用したAEM コンテンツ管理とAEM ベースのオーサリング、およびドキュメントベースのオーサリングの両方を使用できます。
+ユニバーサルエディターを使用したAEM コンテンツ管理と WYSIWYG オーサリングの両方、およびドキュメントベースのオーサリングを使用できます。
 
 AEMas a Cloud Serviceの Cloud Manager を使用すると、プロジェクトのエッジ配信サービスを有効にできます。
 
