@@ -3,10 +3,10 @@ title: ビデオの編集
 description: を使用したビデオの編集 [!DNL Adobe Express] を利用したオプションと、更新したビデオをバージョンとして保存します。
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: ff201051a70862e7597cf36f70a0e7225178f1fa
+source-git-commit: afdab9a7b449673ecf15bc9ab31307388da7b64e
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 18%
+ht-degree: 17%
 
 ---
 
@@ -83,7 +83,7 @@ Adobe Expressを使用して、MP4 ビデオをGIF形式にすばやく変換で
 
 * 編集には MP4 形式のビデオのみがサポートされます。
 
-* サポートされるソースファイルの最大サイズは 200 MB です。
+* サポートされるソースファイルの最大サイズは 1 GB です。
 
 * サポートされるビデオは、どの側も 46 ピクセルを超え、3840 ピクセル未満です。
 
@@ -93,9 +93,9 @@ Adobe Expressを使用して、MP4 ビデオをGIF形式にすばやく変換で
 
 ### 次の手順 {#next-steps}
 
-* アセットビューユーザーインターフェイスの「[!UICONTROL フィードバック]」オプションを使用して、製品に関するフィードバックを提供する
+* を使用して製品に関するフィードバックを提供する [!UICONTROL Feedback] アセットビューのユーザーインターフェイスで使用できるオプションです。
 
-* 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
+* 右側のサイドバーにある「[!UICONTROL このページを編集]」 ![ページを編集](assets/do-not-localize/edit-page.png) または「[!UICONTROL イシューを記録]」 ![GitHub イシューを作成](assets/do-not-localize/github-issue.png) を使用してドキュメントのフィードバックを提供する
 
 * [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General#support)に問い合わせる
 
