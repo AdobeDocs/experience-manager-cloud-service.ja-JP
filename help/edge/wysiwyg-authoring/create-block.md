@@ -4,10 +4,10 @@ description: Edge Delivery Services プロジェクトでの WYSIWYG オーサ�
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: c6013984e1c47766964e6f8ece76e7793b59308f
+source-git-commit: 364acc6a76261a725a46fe3e1ef173bc03b5a289
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 75%
+source-wordcount: '1401'
+ht-degree: 59%
 
 ---
 
@@ -45,13 +45,13 @@ Edge Delivery Services プロジェクトでの WYSIWYG オーサリングのユ
 
 ### ブロック定義とモデルの作成 {#create-block-model}
 
-1. で作成した GitHub プロジェクトをローカルに複製します [Edge Delivery Servicesを使用した WYSIWYG オーサリングの開発者向け入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) ガイドを参照し、任意のエディターで開きます。
+1&amp;period。で作成した GitHub プロジェクトをローカルにクローンします。 [Edge Delivery Servicesを使用した WYSIWYG オーサリングの開発者向け入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) ガイドを参照し、任意のエディターで開きます。
 
-   * ここでは、説明のために Microsoft のコードを使用しています。
+* ここでは、説明のために Microsoft のコードを使用しています。
 
-   ![プロジェクトのクローン](assets/create-block/clone.png)
+![プロジェクトのクローン](assets/create-block/clone.png)
 
-1. プロジェクトのルートにある `component-definition.json` ファイルを編集し、新しい引用ブロックに次の定義を追加して、ファイルを保存します。
+2&amp;period; ファイルを編集 `component-definition.json` をプロジェクトのルートに置き、新しい引用ブロックに次の定義を追加して、ファイルを保存します。
 
 >[!BEGINTABS]
 
@@ -83,9 +83,9 @@ Edge Delivery Services プロジェクトでの WYSIWYG オーサリングのユ
 
 >[!ENDTABS]
 
-1. プロジェクトのルートにある `component-models.json` ファイルを編集し、新しい引用ブロックに次の[モデル定義](/help/implementing/universal-editor/field-types.md#model-structure)を追加して、ファイルを保存します。
+3&amp;period; ファイルを編集 `component-models.json` プロジェクトのルートにあるファイルで、次の内容を追加します。 [モデル定義](/help/implementing/universal-editor/field-types.md#model-structure) 新しい引用ブロックの場合は、ファイルを保存します。
 
-   * ドキュメントを参照してください [Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリングのコンテンツモデリング](/help/edge/wysiwyg-authoring/content-modeling.md) コンテンツモデルの作成時に考慮すべき重要な事項について詳しくは、こちらを参照してください。
+* ドキュメントを参照してください [Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリングのコンテンツモデリング](/help/edge/wysiwyg-authoring/content-modeling.md) コンテンツモデルの作成時に考慮すべき重要な事項について詳しくは、こちらを参照してください。
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ Edge Delivery Services プロジェクトでの WYSIWYG オーサリングのユ
 
 >[!ENDTABS]
 
-1. プロジェクトのルートにある `component-filters.json` ファイルを編集し、[フィルター定義](/help/implementing/universal-editor/customizing.md#filtering-components)に引用ブロックを追加して、ブロックを任意のセクションに追加してファイルを保存できるようにします。
+4&amp;period; ファイルを編集 `component-filters.json` プロジェクトのルートにあるファイルで、引用ブロックをに追加します。 [フィルター定義](/help/implementing/universal-editor/customizing.md#filtering-components) を使用して、ブロックを任意のセクションに追加し、ファイルを保存します。
 
 >[!BEGINTABS]
 
@@ -147,9 +147,9 @@ Edge Delivery Services プロジェクトでの WYSIWYG オーサリングのユ
 
 >[!ENDTABS]
 
-1. git を使用して、これらの変更を `main` ブランチにコミットします。
+5&amp;period; Git を使用して、これらの変更を `main` 分岐。
 
-   * `main` へのコミットは、説明のみを目的としています。[ベストプラクティスに従って](https://www.aem.live/docs/dev-collab-and-good-practices)、実際のプロジェクト作業にはプルリクエストを使用します。
+* `main` へのコミットは、説明のみを目的としています。[ベストプラクティスに従って](https://www.aem.live/docs/dev-collab-and-good-practices)、実際のプロジェクト作業にはプルリクエストを使用します。
 
 ### ブロックを使用したコンテンツの作成 {#create-content}
 
@@ -190,13 +190,13 @@ Edge Delivery Services プロジェクトでの WYSIWYG オーサリングのユ
 
 作業用の引用ブロックを作成したので、スタイル設定を適用できます。
 
-1. プロジェクトのエディターに戻ります。
+1&amp;period; プロジェクトのエディターに戻ります。
 
-1. `blocks` フォルダーの下に `quote` フォルダーを作成します。
+期間（&amp;P）；作成 `quote` フォルダーの下 `blocks` フォルダー。
 
-   ![引用フォルダーの作成](assets/create-block/new-folder.png)
+![引用フォルダーの作成](assets/create-block/new-folder.png)
 
-1. 新しい `quote` フォルダーに、次の JavaScript を追加してブロック装飾を実装する `quote.js` ファイルを追加し、ファイルを保存します。
+3&amp;period；新規 `quote` フォルダー、追加 `quote.js` 以下の JavaScript を追加してブロックデコレーションを実装するファイルを作成し、そのファイルを保存してください。
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-1. `quote` フォルダーに `quote.css` ファイルを追加し、次の CSS コードを追加してブロックのスタイル設定を定義し、ファイルを保存します。
+期間（&amp;P） `quote` フォルダー、追加 `quote.css` ファイル：以下の CSS コードを追加してブロックのスタイル設定を定義し、ファイルを保存します。
 
 >[!BEGINTABS]
 
@@ -263,19 +263,19 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-1. git を使用して、これらの変更を `main` ブランチにコミットします。
+5&amp;period; Git を使用して、これらの変更を `main` 分岐。
 
-   * `main` へのコミットは、説明のみを目的としています。[ベストプラクティスに従って](https://www.aem.live/docs/dev-collab-and-good-practices)、実際のプロジェクト作業にプルリクエストを使用します。
+* `main` へのコミットは、説明のみを目的としています。[ベストプラクティスに従って](https://www.aem.live/docs/dev-collab-and-good-practices)、実際のプロジェクト作業にプルリクエストを使用します。
 
-1. プロジェクトのページを編集していたユニバーサルエディターの「ブラウザー」タブに戻り、ページをリロードしてスタイル設定されたブロックを表示します。
+6&amp;period; プロジェクトのページを編集していたユニバーサルエディターのブラウザータブに戻り、ページをリロードして、スタイル設定されたブロックを表示します。
 
-1. ページ上でスタイル設定された引用ブロックを参照します。
+7&amp;period; ページにスタイル設定された引用ブロックが表示されます。
 
-   ![ユニバーサルエディターのスタイル設定された引用ブロック](assets/create-block/quote-styled.png)
+![ユニバーサルエディターのスタイル設定された引用ブロック](assets/create-block/quote-styled.png)
 
-1. 公開済みページに移動して、変更が実稼動環境にプッシュされたことを確認します。リンクは、`https://<branch>--<repo>--<owner>.hlx.page` のようになります。
+8&amp;period；公開済みページに移動して、変更が実稼動環境にプッシュされたことを確認します。 リンクは、`https://<branch>--<repo>--<owner>.hlx.page` のようになります。
 
-   ![公開およびスタイル設定された引用ブロック](assets/create-block/quote-styled-published.png)
+![公開およびスタイル設定された引用ブロック](assets/create-block/quote-styled-published.png)
 
 これで完了です。完全に機能し、スタイル設定された引用ブロックが作成されました。この例を基礎として、独自のプロジェクト固有のブロックを設計できます。
 
