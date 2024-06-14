@@ -4,7 +4,7 @@ description: Edge Delivery Services プロジェクトを使用した AEM オー
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 72949b36e7e7f8689365e7cb76a8c491edf23825
+source-git-commit: e0b4eafaa9fdc496362f90e6da14b4b198b4ea3e
 workflow-type: tm+mt
 source-wordcount: '1375'
 ht-degree: 94%
@@ -22,7 +22,7 @@ Edge Delivery Services プロジェクトを使用した AEM オーサリング�
 
 このガイドでは、Edge Delivery Services プロジェクトおよびユニバーサルエディターを使用した AEM オーサリングに関する既存の知識が必ず必要になります。このガイドを始める前に、Edge Delivery Services へのアクセス権を持ち、次の項目について基本事項を理解しておく必要があります。
 
-[Edge Delivery Service のチュートリアル](/help/edge/developer/tutorial.md)を完了していること。
+* [Edge Delivery Service のチュートリアル](/help/edge/developer/tutorial.md)を完了していること。
 * [AEM Cloud Service サンドボックス](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)にアクセスできること。
 * [同じサンドボックス環境でユニバーサルエディターが有効になっている](/help/implementing/universal-editor/getting-started.md)こと。
 * [Edge Delivery Services を使用した AEM オーサリングの開発者向け入門ガイド](/help/edge/aem-authoring/edge-dev-getting-started.md)を完了していること。
@@ -205,7 +205,7 @@ Edge Delivery Services プロジェクトを使用した AEM オーサリング�
 ```javascript
 export default function decorate(block) {
   const [quoteWrapper] = block.children;
-
+ 
   const blockquote = document.createElement('blockquote');
   blockquote.textContent = quoteWrapper.textContent.trim();
   quoteWrapper.replaceChildren(blockquote);
@@ -232,19 +232,19 @@ export default function decorate(block) {
     flex-direction: column;
     margin: 1rem 0;
 }
-
+ 
 .block.quote blockquote {
     margin: 16px;
     text-indent: 0;
 }
-
+ 
 .block.quote > div:last-child > div {
     margin: 0 16px;
     font-size: small;
     font-style: italic;
     position: relative;
 }
-
+ 
 .block.quote > div:last-child > div::after {
     content: "";
     display: block;
@@ -340,4 +340,3 @@ Edge Delivery プロジェクトでの AEM オーサリングにコンテンツ�
 >[!TIP]
 >
 >AEM as a Cloud Service をコンテンツソースとする AEM オーサリングに有効な新しい Edge Delivery プロジェクトの作成に関するエンドツーエンドのチュートリアルについては、[この AEM GEM ウェビナー](https://experienceleague.adobe.com/ja/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)をご覧ください。
-
