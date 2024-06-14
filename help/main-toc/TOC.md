@@ -425,7 +425,7 @@ ht-degree: 99%
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し ](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
-   + [AEMの実際の使用状況のモニタリングas a Cloud Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
+   + [AEM as a Cloud Service の実際の使用のモニタリング](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
 + アセット {#assets}
    + [概要と新機能](/help/assets/overview.md)
    + [ [!DNL Assets] as a [!DNL Cloud Service] の主な変更点](/help/assets/assets-cloud-changes.md)
@@ -978,7 +978,7 @@ ht-degree: 99%
          + [サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [環境の休止](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-         + [Edge Delivery Servicesサポート](/help/implementing/cloud-manager/edge-delivery-services.md)
+         + [Edge Delivery Services のサポート](/help/implementing/cloud-manager/edge-delivery-services.md)
       + AEM アプリケーションプロジェクトの作成 {#create-application-project}
          + [プロジェクト作成ウィザード](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [プロジェクトのセットアップ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -987,8 +987,8 @@ ht-degree: 99%
       + コードの管理 {#managing-code}
          + [Maven プロジェクトバージョンの処理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Cloud Manager でのリポジトリの管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [Adobeリポジトリーの追加](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-         + [プライベートリポジトリーの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [Adobe リポジトリの追加](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [プライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [リポジトリへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git サブモジュールのサポート](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Cloud Manager での git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
