@@ -3,9 +3,9 @@ title: CDN 資格情報および認証の設定
 description: 設定ファイルでルールを宣言し、Cloud Manager 設定パイプラインを使用してデプロイして、CDN 資格情報と認証を設定する方法について説明します。
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
-source-git-commit: 7a53f936aacfb3e5aa431f26e5346c1809f9c76f
+source-git-commit: e6059a1109ca93452f80440744338b809279db9b
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1065'
 ht-degree: 98%
 
 ---
@@ -42,7 +42,6 @@ data:
         type: edge
         edgeKey1: ${{CDN_EDGEKEY_052824}}
         edgeKey2: ${{CDN_EDGEKEY_041425}}
-        onFailure: log # optional, default: log, enum: log/block
     rules:
       - name: edge-auth-rule
         when: { reqProperty: tier, equals: "publish" }
@@ -61,7 +60,7 @@ data:
    * type - エッジにする必要があります。
    * edgeKey1 - この値は秘密鍵トークンを参照する必要がありますが、これは git に保存するのではなく、タイプが秘密鍵の [Cloud Manager 環境変数](/help/implementing/cloud-manager/environment-variables.md)として宣言する必要があります。「適用されたサービス」フィールドで、「すべて」を選択します。値（例：`${{CDN_EDGEKEY_052824}}`）は、追加した日を反映することをお勧めします。
    * edgeKey2 - 以下の[秘密鍵のローテーション](#rotating-secrets)の節で説明する、秘密鍵のローテーションに使用します。`edgeKey1` と `edgeKey2` の 1 つ以上を宣言する必要があります。
-   * OnFailure - リクエストが `edgeKey1` または `edgeKey2` のどちらにも一致しない場合のアクション（`log` または `block`）を定義します。`log` の場合、リクエストの処理は続行されますが、`block` では 403 エラーが返されます。`log` 値は、`block` モードに変更する前に、まず CDN が新しいトークンを正しく受け入れていることを確認できるので、ライブサイトで新しいトークンをテストする際に役立ちます。また、正しくない設定の結果として、顧客 CDN と Adobe CDN 間の接続が失われる可能性も減ります。
+<!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * ルール：使用するオーセンティケーターと、パブリッシュ層とプレビュー層のどちらに使用するかを宣言できます。これには以下が含まれます。
    * name - わかりやすい文字列。
    * when - [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)の記事の構文に従って、ルールを評価するタイミングを決定する条件。通常、現在の層（例：パブリッシュ）の比較が含まれるので、すべてのライブトラフィックは顧客 CDN を経由するルーティングとして検証されます。
