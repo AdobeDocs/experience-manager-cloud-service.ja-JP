@@ -1,11 +1,13 @@
 ---
-title: AEMの実際の使用状況のモニタリングas a Cloud Service
+title: AEM as a Cloud Service の実際の使用のモニタリング
 description: Real Use Monitoring （RUM）を使用して、web サイトやアプリケーションのデジタルユーザーエクスペリエンスをリアルタイムでキャプチャおよび分析する方法を説明します。
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
-source-git-commit: 0514d56fb65245b1919969a60f6d4c2b719deaa6
+feature: Administering
+role: Admin
+source-git-commit: 12e37d6d0a8674dd4329200322e2f959cc6dd787
 workflow-type: tm+mt
 source-wordcount: '1395'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
