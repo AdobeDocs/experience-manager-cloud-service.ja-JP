@@ -3,10 +3,10 @@ title: 永続化された GraphQL クエリをトラブルシューティング�
 description: Adobe Experience Manager as a Cloud Service での永続的な GraphQL クエリの問題をトラブルシューティングする方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 220e86f18e4a61304764753d8daecb68503e9fd0
-workflow-type: ht
-source-wordcount: '351'
-ht-degree: 100%
+source-git-commit: 09ef5fb49ba638f888c9c101760ffa3c7d258fda
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 61%
 
 ---
 
@@ -14,23 +14,22 @@ ht-degree: 100%
 
 [アクションセンター](/help/operations/actions-center.md)には、**GraphQL 永続クエリエラー**&#x200B;のアラートが含まれています。これは、GraphQL 永続化クエリのいずれかがエラーをスローするたびに通知されることを意味します。
 
-このような問題のトラブルシューティングと解決に役立つよう、*最も一般的*&#x200B;な失敗の原因と、その修正方法に関する手順について説明します。
+このような問題のトラブルシューティングと解決に役立つように、このページでは、を説明します *最もよくある* エラーの原因と修正手順。
 
 ## コンテンツフラグメントモデルの変更 {#changes-to-content-fragment-model}
 
-GraphQL で永続化されたクエリは、古い GraphQL タイプに基づいている場合に失敗する可能性があります。多くの場合、参照元のコンテンツフラグメントモデルの変更が原因です。
+GraphQL永続クエリは、古くなったGraphQL タイプに基づいている場合は失敗する場合があり、多くの場合、基になるコンテンツフラグメントモデルの変更が原因です。
 
-これは、様々な理由で発生する可能性があります。例えば、コンテンツモデルの作成者は：
+このようなエラーは、様々な理由で発生する可能性があります。 例えば、コンテンツフラグメントモデルの作成者（リストがすべてではない）の場合は、次のようになります。
 
 * フィールドを削除したり、名前を変更します
-* フラグメント参照用に定義された許可されたモデルを更新します
+* を更新 **モデルタイプ** フラグメント参照に使用できるモデルを定義します。
 * 他のモデルが参照しているモデルを非公開にします
-* その他のアクションと理由
 
-これに対処するには：
+このようなエラーに対処するには、次のいずれかを実行する必要があります。
 
-* 失敗している永続化されたクエリは、コンテンツフラグメントモデルの変更に合わせて更新する必要があります
-* または、問題が発生したモデルに対する変更を元に戻す必要があります
+* コンテンツフラグメントモデルに加えられた変更に対応できない永続クエリを更新します
+* 問題の原因となったモデルの変更を元に戻す
 
 ## GraphQL エンドポイントが設定されていません {#graphql-endpoint-not-configured}
 
@@ -48,7 +47,7 @@ GraphQL で永続化されたクエリは、古い GraphQL タイプに基づい
 
 この場合、クエリは `405` エラーコードを返します。
 
-これは GraphQL に固有のものではありません。ナレッジベース記事 [405 エラー許可されていません](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-20824.html)を参照してください。
+このようなエラーは、GraphQLに固有のものではありません。 ナレッジベース記事 [405 エラー許可されていません](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-20824)を参照してください。
 
 ## Dispatcher によりブロックされました {#blocked-dispatcher}
 
