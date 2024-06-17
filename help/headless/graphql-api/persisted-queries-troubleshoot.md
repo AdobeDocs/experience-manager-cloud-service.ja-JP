@@ -3,7 +3,7 @@ title: 永続化された GraphQL クエリをトラブルシューティング�
 description: Adobe Experience Manager as a Cloud Service での永続的な GraphQL クエリの問題をトラブルシューティングする方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 09ef5fb49ba638f888c9c101760ffa3c7d258fda
+source-git-commit: 736fbc28c800c1c181721df7e0d7feed143642d9
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 61%
@@ -20,7 +20,7 @@ ht-degree: 61%
 
 GraphQL永続クエリは、古くなったGraphQL タイプに基づいている場合は失敗する場合があり、多くの場合、基になるコンテンツフラグメントモデルの変更が原因です。
 
-このようなエラーは、様々な理由で発生する可能性があります。 例えば、コンテンツフラグメントモデルの作成者（リストがすべてではない）の場合は、次のようになります。
+このようなエラーは、様々な理由で発生する可能性があります。 例えば、コンテンツフラグメントモデルの作成者が次のような場合があります（リストがすべてではありません）。
 
 * フィールドを削除したり、名前を変更します
 * を更新 **モデルタイプ** フラグメント参照に使用できるモデルを定義します。
