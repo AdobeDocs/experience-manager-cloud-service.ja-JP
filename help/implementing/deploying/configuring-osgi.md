@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の OSGi の設定
 description: シークレット値と環境固有の値を使用する OSGi 設定
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
-workflow-type: ht
-source-wordcount: '3269'
-ht-degree: 100%
+source-git-commit: b4c87b79c714c408daea08e81fbe719bc9f5adf0
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ AEM コードプロジェクトに含まれる設定ファイルを使用して�
 
 ## OSGi の設定ファイル {#osgi-configuration-files}
 
-設定の変更は、 AEM プロジェクトのコードパッケージ（`ui.apps`）で、実行モード固有の config フォルダーの下に設定ファイル（`.cfg.json`）として定義されます。
+設定の変更は、 AEM プロジェクトのコードパッケージ（`ui.config`）で、実行モード固有の config フォルダーの下に設定ファイル（`.cfg.json`）として定義されます。
 
 `/apps/example/config.<runmode>`
 
@@ -44,6 +44,10 @@ OSGi 設定ファイルは次の場所で定義されます。
 >[!NOTE]
 >
 >以前のバージョンの AEM では、`.cfg`、`.config` などの様々なファイル形式を使用し、XML `sling:OsgiConfig` リソース定義として OSGi 設定ファイルをサポートしていました。これらの形式は、`.cfg.json` OSGi 設定形式に置き換えられています。
+
+>[!NOTE]
+>
+>OSGi 設定は、Cloud の一般的なAEM インスタンスのように/apps 下には格納されず、外部の場所に格納されます。 Cloud Manager のチェックイン [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) osgi 設定を表示します。
 
 ## 実行モードの解決 {#runmode-resolution}
 
