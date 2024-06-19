@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service の Maven プロジェ�
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: 520ab0229b4f00a1de981209bf26059b0d00c3da
+workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -164,7 +164,7 @@ JCR リポジトリの同じ領域にインストールされる複数のコー�
 + コードパッケージ A が `/apps/a` にデプロイされる
 + コードパッケージ B が `/apps/a/b` にデプロイされる
 
-コードパッケージ A 上のコードパッケージ B からパッケージレベルの依存関係が確立されない場合、コードパッケージ B が先に `/apps/a` にデプロイされる場合があります。続いて、コードパッケージ B が `/apps/a` にデプロイされます。その結果、前にインストールした `/apps/a/b` が削除されます。
+コードパッケージ A 上のコードパッケージ B からパッケージレベルの依存関係が確立されない場合、コードパッケージ B が先に `/apps/a` にデプロイされる場合があります。次に、コードパッケージ A が続き、次の場所にデプロイされます `/apps/a`を削除すると、以前にインストールされたが削除されます `/apps/a/b`.
 
 この場合の解決策は、次のとおりです。
 

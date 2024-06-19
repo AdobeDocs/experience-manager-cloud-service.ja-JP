@@ -6,10 +6,10 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
-source-wordcount: '854'
-ht-degree: 100%
+source-git-commit: 9d1b51b465a148551de93f8180b056b8e7752db5
+workflow-type: tm+mt
+source-wordcount: '871'
+ht-degree: 85%
 
 ---
 
@@ -33,15 +33,13 @@ ht-degree: 100%
 
 AEM as a Cloud Service Developer Console またはリポジトリブラウザーにアクセスするには、次の条件を満たす必要があります。
 
-AEM as a Cloud Service Developer Console にアクセスするには：
+AEMas a Cloud Service開発者コンソールにアクセスするには、次を参照してください [Developer Console へのアクセス](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
-* 実稼動プログラムの場合、ユーザーは Adobe Admin Console で **Cloud Manager - 開発者の役割**&#x200B;に割り当てられている必要があります。
-* サンドボックスプログラムの場合、AEM as a Cloud Service へのアクセス権を付与する製品プロファイルを持つユーザーであれば誰でもユーザーが使用できます。
+リポジトリーブラウザーにアクセスするための前提条件は、（上記の）AEMas a Cloud Service開発者コンソールの場合と同じです。 特定のインスタンスのリポジトリブラウザーのコンテンツを表示するには：
 
-リポジトリブラウザーにアクセスするには、次の操作を実行します。
+* オーサーインスタンス：の「AEM ユーザー」製品プロファイルを持つユーザー **オーサーインスタンス** 最小限の読み取りアクセス権でリポジトリブラウザーを表示できます。ユーザーの権限は、リポジトリを参照する際に考慮されます。 「AEM 管理者」製品プロファイルを持つユーザーは、完全な読み取りアクセス権でリポジトリーブラウザーを表示できます。
 
-* オーサーインスタンスとパブリッシュインスタンスを表示するには、ユーザーは Admin Console で **Cloud Manager - 開発者の役割**&#x200B;に割り当てられている必要があります。
-* さらに、オーサー層の場合、「AEM ユーザー」製品プロファイルを持つユーザーは最小限の読み取りアクセス権でリポジトリーブラウザーを表示できます。ユーザーの権限は、リポジトリーを参照する際に考慮されます。「AEM 管理者」製品プロファイルを持つユーザーは、完全な読み取りアクセス権でリポジトリーブラウザーを表示できます。
+* パブリッシュインスタンス：の「AEM ユーザー」製品プロファイルを持つユーザー **パブリッシュインスタンス** 最小限の読み取りアクセス権でリポジトリブラウザーを表示できます。 その製品プロファイルセットがないと、ユーザーは匿名ユーザーとして移動し、権限が制限されるので、一部のパスは表示されません。
 
 ユーザー権限の設定について詳しくは、[Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=ja)を参照してください。
 
