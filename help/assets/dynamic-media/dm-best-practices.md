@@ -10,10 +10,11 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: c24b017e60363b3b6d79105122bdbaab138c701d
+exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
+source-git-commit: 3375ffbb18c312e5df0050050ae16d75a12243e6
 workflow-type: tm+mt
 source-wordcount: '3574'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -68,7 +69,7 @@ Dynamic Mediaと同期するアセットを選択できるプロアクティブ�
 
 これらの 2 つのベストプラクティスは、リッチメディアコンテンツに対するコントロール、ガバナンス、生産性の向上を実現するのに役立ちます。
 
-詳細情報 に移動 [Dynamic Mediaのフォルダーレベルでの選択的公開の設定](/help/assets/dynamic-media/selective-publishing.md).
+詳しくは、に移動 [Dynamic Mediaのフォルダーレベルでの選択的公開の設定](/help/assets/dynamic-media/selective-publishing.md).
 
 
 ## 配信するアセットの準備
@@ -81,16 +82,16 @@ Dynamic Mediaと同期するアセットを選択できるプロアクティブ�
 
 * **アセットをフォルダーに整理します。**
 アセットを整理するには、コンピューター上のファイル編成と同様に、アセットをフォルダーに分類する必要があります。 これらのフォルダー内での適切な命名、サブフォルダーの構造化、ファイル管理は、アセット処理を効率的に行うために重要です。 体系的な命名規則とメタデータ手法を実装することで、デジタルアセットリポジトリのユーティリティを最大限に活用できます。
-詳細情報 に移動 [フォルダー内のアセットの整理](/help/assets/organize-assets.md#organize-using-folders).
+詳しくは、に移動 [フォルダー内のアセットの整理](/help/assets/organize-assets.md#organize-using-folders).
 * **タグを使用したアセットの整理：**
 アセットにタグを付けると、検索性、コレクションの作成および検索ランキングが向上します。 Adobe Senseiの AI は、正確なタグ付けのために自己学習アルゴリズムを採用しており、迅速なアセット取得を可能にします。 また、Adobe Senseiは、カスタムタグを含む関連するタグを認識してアセットに割り当てるため、説明を備えた自動タグ付けでアセット管理をシンプル化できます。
-詳細情報 に移動 [タグを使用したアセットの整理](/help/assets/organize-assets.md#use-tags-to-organize-assets).
+詳しくは、に移動 [タグを使用したアセットの整理](/help/assets/organize-assets.md#use-tags-to-organize-assets).
 * **アセットをコレクションとして整理する：**
 Dynamic MediaをExperience Manager Assetsと併用すると、アセットコレクションを効率的に作成、編集およびユーザー間で共有できます。 静的なリストや動的な検索ベースのコンパイルなど、様々なコレクションタイプを設定できます。 これらのコレクションタイプは、カスタマイズ可能なアクセス権と編集権を使用して、様々な場所で共有できます。
-詳細情報 に移動 [アセットをコレクションとして整理する](/help/assets/manage-collections.md).
+詳しくは、に移動 [アセットをコレクションとして整理する](/help/assets/manage-collections.md).
 * **プロファイルを使用したアセットの整理：**
 処理プロファイルは、指定フォルダーでのアセット処理を自動化し、組織を効率化します。 メタデータ、ファイル名およびフォルダー構造を標準化すると、デジタルアセットコレクションの拡大に合わせて、これらのプロファイルを一貫した正確に適用できます。
-詳細情報 に移動 [プロファイルを使用したアセットの整理](/help/assets/organize-assets.md#organize-to-use-profiles).
+詳しくは、に移動 [プロファイルを使用したアセットの整理](/help/assets/organize-assets.md#organize-to-use-profiles).
 
 
 
@@ -100,11 +101,11 @@ Dynamic MediaをExperience Manager Assetsと併用すると、アセットコレ
 
 画質の向上には、さまざまな要素への配慮が必要です。 時間がかかるプロセスになる場合があります。 ただし、望ましい結果を得るのに役立つ、実証済みのプラクティスがいくつかあります。 これらのベストプラクティスには、最適な画像サイズ設定、画像のシャープニング、使用に最適な画像形式を取得する方法が含まれています。
 
-詳細情報 に移動 [画像品質の最適化のベストプラクティス](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md).
+詳しくは、に移動 [画像品質の最適化のベストプラクティス](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md).
 
 画質に対する考え方は人によって異なるため、ときには望ましい結果を得るために、実験に対する体系的なアプローチが必要となります。 Adobe Experience Managerは、100 を超えるDynamic Media コマンドでこのプロセスを支援し、画像を強化します。
 
-詳細情報 ウォッチ [Dynamic Media Snapshot](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) （3 分、17 秒）。
+詳しくは、ウォッチ [Dynamic Media Snapshot](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) （3 分、17 秒）。
 
 これらの様々なコマンドが画質に与える影響を評価するには、画像をDynamic Mediaにアップロードし、指定された URL でツールのインターフェイスを使用して、試したいコマンドを適用します。
 
@@ -126,7 +127,7 @@ Dynamic Mediaで画像プリセットを定期的に使用すると、画像の�
 
 ベストプラクティスは、スマート切り抜きを使用して画像プロファイルを作成することです。 プロファイルでは、様々な画面サイズを定義し、残りの作業はAdobe Senseiに任せることで、画像やビデオを常にビューアのデバイスに最適化することができます。
 
-詳細情報 ウォッチ [AEM Assets Dynamic Mediaでのスマート切り抜きの使用](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) （6 分 35 秒）および [ビデオに対するDynamic Media スマート切り抜きの使用](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) （6 分、22 秒）。
+詳しくは、ウォッチ [AEM Assets Dynamic Mediaでのスマート切り抜きの使用](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) （6 分 35 秒）および [ビデオに対するDynamic Media スマート切り抜きの使用](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) （6 分、22 秒）。
 
 ### SEO ランキングの向上
 
@@ -142,21 +143,20 @@ Dynamic Mediaで画像プリセットを定期的に使用すると、画像の�
   これにより、検索エンジンが画像のコンテキストを理解し、SEO を向上させることができます。 Googleでは、ファイル名でアンダースコアやスペースよりもハイフンが優先されます。 また、ファイル名では単語を連結しないでください。
 * **カスタムドメイン :**
 会社またはブランド名を含むカスタムドメインを実装して、ブランドの認識と信頼を強化します。 次に例を示します。
-
    * `http://images.mycompany.com/is/image/companyname/` を使用します
    * *回避する* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
 * **SEO 対応のフォルダー構造：**
 以下のようなインデックス作成を強化するために、会社名やブランドを含んだフォルダー構造で画像を整理します `http://images.mycompany.com/is/image/companyname/`.
 * **Dynamic Media ルールセット：**
 様々な要因に基づいて URL を条件付きで変換し、SEO とユーザーエクスペリエンスを強化する方法を説明します。
-詳細情報 に移動 [ルールセットを使用した URL の変換](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md).
+詳しくは、に移動 [ルールセットを使用した URL の変換](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md).
 * **スマートイメージングとスマート切り抜き：**
 Dynamic Mediaのスマートイメージング機能とスマート切り抜き機能を使用して、最適化されたレスポンシブな画像を提供します。 これにより、ページの読み込み時間が改善されるだけでなく、SEO ランキングにもプラスに貢献します。
-詳細情報 に移動 [スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)、またはウォッチ [AEM Assets Dynamic Mediaでのスマート切り抜きの使用](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) （6 分、35 秒）。
+詳しくは、に移動 [スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)、またはウォッチ [AEM Assets Dynamic Mediaでのスマート切り抜きの使用](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) （6 分、35 秒）。
 
 これらのベストプラクティスは、Googleの画像 SEO のベストプラクティスとうまく一致していることを覚えておいてください。 このようなプラクティスでは、適切な命名規則、構造化データ、最適化された画像配信を通じて、コンテキストと明確さを検索エンジンに提供する重要性が強調されます。
 
-詳細情報 に移動 [Googleの URL 構造のベストプラクティス](https://developers.google.com/search/docs/crawling-indexing/url-structure) および [Google画像 SEO のベストプラクティス](https://developers.google.com/search/docs/appearance/google-images)
+詳しくは、に移動 [Googleの URL 構造のベストプラクティス](https://developers.google.com/search/docs/crawling-indexing/url-structure) および [Google画像 SEO のベストプラクティス](https://developers.google.com/search/docs/appearance/google-images)
 
 
 ### コマンドを使用してイメージをダイナミックに拡張し、視覚効果を作成する
@@ -268,7 +268,7 @@ URL 内で使用できるコマンドについて詳しくは、 に移動 [コ�
    * **ビデオを埋め込みます。**
 提供された埋め込みコードをコピーして、Web ページのビデオを表示するHTMLーに貼り付けます。 これにより、ビデオをサイトで直接再生できます。
 
-詳細情報 に移動 [ビデオ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
+詳しくは、に移動 [ビデオ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
 
 ### 最適な品質とエンゲージメントのためのビデオの設定
 
@@ -279,15 +279,15 @@ URL 内で使用できるコマンドについて詳しくは、 に移動 [コ�
 * **組み込みのHTML5 ビデオビューアを使用します。**
 Dynamic Media HTML5 ビデオビューアプリセットは、堅牢なビデオプレーヤーです。 これらを使用すると、HTML5 ビデオの再生とモバイルデバイスに関連するよくある問題を回避できます。
 これらのプリセットは、アダプティブビットレートストリーミング配信やデスクトップブラウザーの限られたリーチなどの課題に対処します。
-詳細情報 に移動 [ベストプラクティス：HTML 5 ビデオビューアの使用](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
+詳しくは、に移動 [ベストプラクティス：HTML 5 ビデオビューアの使用](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
 
 * **Dynamic Media ビデオプロファイルを使用します。**
 Dynamic Mediaのビデオプロファイルは、効率的なビデオ管理、一貫した画質およびアダプティブストリーミングに役立ちます。
-詳細情報 に移動 [Dynamic Media ビデオプロファイル](/help/assets/dynamic-media/video-profiles.md).
+詳しくは、に移動 [Dynamic Media ビデオプロファイル](/help/assets/dynamic-media/video-profiles.md).
 
 * **ビデオエンコーディングのベストプラクティスに従います。**
 エンコード時に過度のダウンスケーリングを行わずに元のビデオ品質を維持するビデオエンコーディングプロファイルを適用します。
-詳細情報 に移動 [ビデオエンコーディングのベストプラクティス](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
+詳しくは、に移動 [ビデオエンコーディングのベストプラクティス](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
 * **プログレッシブストリーミングの代わりにアダプティブストリーミングを採用する：**
 アダプティブストリーミングは、ビューアのインターネット接続速度とデバイス機能に基づいてビデオ品質を調整します。
@@ -297,7 +297,7 @@ HLS （HTTP ライブストリーミング）や DASH （`Dynamic Adaptive Strea
 * **アカウントで DASH を有効にする（HTTP でのデジタルアダプティブストリーミング）:**
 DASH は、アダプティブストリーミングを使用してビデオコンテンツを動的に提供します。
 DASH を有効にするには、環境のサポートチケットを作成します。
-詳細情報 に移動 [Dynamic Media アカウントで DASH を有効にする](/help/assets/dynamic-media/video.md#enable-dash).
+詳しくは、に移動 [Dynamic Media アカウントで DASH を有効にする](/help/assets/dynamic-media/video.md#enable-dash).
 
 ### 多言語消費のためのビデオの国際化
 
@@ -326,7 +326,7 @@ DASH を有効にするには、環境のサポートチケットを作成しま
    * AEMを Web コンテンツ管理（WCM）システムとして使用している場合は、web ページにビデオを直接追加できます。
    * サードパーティの WCM システムを使用している場合は、URL または埋め込みコードを使用して、web ページにビデオをリンクまたは埋め込むことができます。
 
-詳細情報 に移動 [Dynamic Mediaでのビデオの複数キャプションおよびオーディオトラックのサポートについて](/help/assets/dynamic-media/video.md#about-msma) または時計 [ビデオへの複数のキャプションとオーディオトラックの追加](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) （1 分、41 秒）。
+詳しくは、に移動 [Dynamic Mediaでのビデオの複数キャプションおよびオーディオトラックのサポートについて](/help/assets/dynamic-media/video.md#about-msma) または時計 [ビデオへの複数のキャプションとオーディオトラックの追加](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) （1 分、41 秒）。
 
 
 ## 顧客へのアセットの配信
@@ -350,5 +350,4 @@ Web に最適な形式を保証するには、コマンドを手動で使用す�
 
 スマートイメージングを利用すると、各ユーザーの閲覧環境に合わせて、可能な限り効率的に画像を配信できます。 このアプローチにより、プロセスが簡素化され、画像の読み込み時間と全体的なユーザーエクスペリエンスの観点からパフォーマンスが向上します。
 
-詳細情報 に移動 [スマートイメージング](/help/assets/dynamic-media/imaging-faq.md).
-
+詳しくは、[スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)を参照してください。
