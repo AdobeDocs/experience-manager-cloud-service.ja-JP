@@ -4,10 +4,10 @@ description: AEM Forms Edge Delivery Services は、ピーク時のパフォー�
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: f69336073addb106cde01d72c921f3b98ff6337a
 workflow-type: tm+mt
 source-wordcount: '1018'
-ht-degree: 96%
+ht-degree: 74%
 
 ---
 
@@ -17,7 +17,7 @@ AEM Forms Edge Delivery Services は、作成者が新しいフォームを迅�
 
 これらのサービスにより、次のことが可能になります。
 
-* **選択したツールを使用して登録エクスペリエンスを作成：**&#x200B;コンテンツソースを分離することでオーサリングの効率を高めます。標準では、ドキュメントベースのオーサリング（Microsoft SharePoint または Google Drive）と AEM オーサリング（アダプティブフォームエディター）の両方を使用できます。同じフォームサイト上で複数のコンテンツソースを操作し、Microsoft Excel、Google Sheets、アダプティブフォームエディターなどの推奨オーサリングツールを使用できます。
+* **選択したツールを使用して登録エクスペリエンスを作成：**&#x200B;コンテンツソースを分離することでオーサリングの効率を高めます。標準で、ドキュメントベースのオーサリング（Microsoft SharePointまたはGoogle ドライブ）と WYSIWYG オーサリング（アダプティブ Forms エディター）の両方を使用できます。 同じフォームサイト上で複数のコンテンツソースを操作し、Microsoft Excel、Google Sheets、アダプティブフォームエディターなどの推奨オーサリングツールを使用できます。
 
 * **優れたデジタル登録エクスペリエンスを提供：** RUM （Real Use Monitoring）を通じて、フォームのパフォーマンスを迅速かつ継続的に読み込み、レンダリングするデジタル登録エクスペリエンスを提供します。 読み込み時間の短縮とユーザーエクスペリエンスの最適化により、フォームの完成率とコンバージョン率が向上します。
 
@@ -25,13 +25,13 @@ AEM Forms Edge Delivery Services は、作成者が新しいフォームを迅�
 
 ## AEM Forms Edge Delivery Services の概要 {#edge-overview}
 
-AEM Forms Edge Delivery Services を使用すると、web サイト上でフォームを作成する際の柔軟性を高めることができます。[AEM オーサリング](/help/forms/creating-adaptive-form-core-components.md)と[ドキュメントベースのオーサリング](/help/edge/docs/forms/create-forms.md)を使用すると、コンテンツとフォームを作成できます。AEM Forms Edge Delivery Services は、[アダプティブフォームブロック](/help/edge/docs/forms/create-forms.md)と呼ばれるフォームブロックを提供し、Edge Delivery Services サイトにフォームを追加します。
+AEM Forms Edge Delivery Services を使用すると、web サイト上でフォームを作成する際の柔軟性を高めることができます。を使用してコンテンツやフォームを作成することができます [WYSIWYG オーサリング](/help/forms/creating-adaptive-form-core-components.md) も [ドキュメントベースのオーサリング](/help/edge/docs/forms/create-forms.md). AEM Forms Edge Delivery Services は、[アダプティブフォームブロック](/help/edge/docs/forms/create-forms.md)と呼ばれるフォームブロックを提供し、Edge Delivery Services サイトにフォームを追加します。
 
 例えば、Microsoft Excel または Google Sheets で直接フォームを作成すると、これらのスプレッドシートが web サイト用のフォームに変換されます。新しいフォームやフォームコンテンツ（新しいフォームフィールドなど）は、再作成プロセスを必要とせずに web サイト上で即座に使用できます。
 
-Microsoft Excel または Google Sheets（ドキュメントベースのオーサリング）でフォームを編集し、Edge Delivery Services に公開する方法を次の図に示します。また、アダプティブフォームエディター（AEM オーサリング）を使用した AEM パブリッシング方法も示します。
+Microsoft Excel または Google Sheets（ドキュメントベースのオーサリング）でフォームを編集し、Edge Delivery Services に公開する方法を次の図に示します。また、アダプティブFormsエディター（WYSIWYG オーサリング）を使用したAEMの公開方法も示します。
 
-![Edge Delivery Services と AEM に公開](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
+![Edge Delivery Services と AEM に公開](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
 AEM Forms Edge Delivery Services では GitHub を使用するので、お客様は GitHub リポジトリから直接コードを管理およびデプロイできます。例えば、[Google Sheets](/help/edge/docs/forms/create-forms.md) または [Microsoft Excel](/help/edge/docs/forms/create-forms.md) でフォームを作成でき、GitHub リポジトリで CSS と JavaScript を使用してフォームのコンポーネントを開発できます。
 
@@ -39,16 +39,16 @@ AEM Forms Edge Delivery Services では GitHub を使用するので、お客様
 
 ![AEM Sidekick のインストール](/help/edge/assets/aem-sidekick-preview-publish-forms.png)
 
-[ドキュメントベースのオーサリング](#document-based-authoring-features)と [AEM オーサリング](#aem-authoring-features)のどちらを選択するかは、特定の要件によって異なります。
+次のどちらかを選択します [ドキュメントベースのオーサリング](#document-based-authoring-features) および [WYSIWYG オーサリング](#wysiwyg-authoring-features) 具体的な要件に応じて異なります。
 
 * いくつかのフィールドで基本的な情報を収集するだけのシンプルなフォーム（お問い合わせフォーム、リードジェネレーションフォーム、サービスリクエストフォームなど）や、スプレッドシートを使用して迅速なデータ接続が必要な場合は、[ドキュメントベースのオーサリング](#document-based-authoring-features)が適しています。これらのフォームは、Google Sheet や Microsoft Excel でドキュメントを作成する場合と同様に作成できます。
 
-* 複数のパネル、複雑なルールとビジネスロジック、データ操作、外部システムとの統合、AEM 機能を使用した効率化されたワークフローを必要とするフォームなど、複雑なフォームの場合は、[AEM オーサリング](#aem-authoring-features)の方が適しています。
+* 複雑なフォーム（複数のパネルが必要なフォームや、複雑なルールおよびビジネスロジック、データ操作、外部システムとの統合、AEM機能を使用した効率的なワークフローなど）の場合は、 [WYSIWYG オーサリング](#wysiwyg-authoring-features) という方が良い選択肢です。
 
 
-### ドキュメントベースのオーサリングと AEM オーサリングの主な機能
+### ドキュメントベースのオーサリングと WYSIWYG オーサリングの主な機能
 
-ドキュメントベースのオーサリングには、基本的な機能セットが用意されています。AEM オーサリングでは、ドキュメントベースのオーサリングを超える追加機能をロック解除し、より複雑でインタラクティブなフォームを作成できます。ドキュメントベースのオーサリングと AEM オーサリングの両方の主な機能は次のとおりです。
+ドキュメントベースのオーサリングには基本的な機能セットが用意されており、WYSIWYG オーサリングにより、ドキュメントベースのオーサリング以外の追加機能が利用できるようになり、より複雑でインタラクティブなフォームを作成できます。 ドキュメントベースのオーサリングと WYSIWYG オーサリングの主な機能は次のとおりです。
 
 #### ドキュメントベースのオーサリング機能
 
@@ -63,9 +63,9 @@ AEM Forms Edge Delivery Services では GitHub を使用するので、お客様
 * フォームデータを Microsoft Excel、Google Sheets、メールアドレスに直接送信します。
 * RUM （Real Use Monitoring）を使用したフォームのパフォーマンスの監視
 
-#### AEM オーサリング機能
+#### WYSIWYG オーサリング機能
 
-AEM オーサリングには、フォームを作成する WYSIWYG インターフェイス（アダプティブフォームエディター）が用意されており、ドキュメントベースのオーサリングのすべての機能に加えて、次の幅広い追加機能を提供します。
+WYSIWYG オーサリングは、フォーム作成用の WYSIWYG インターフェイス（アダプティブFormsエディター）を提供し、ドキュメントベースのオーサリングのすべての機能に加えて、次のような様々な追加機能を提供します。
 
 * 複雑なロジックを作成する高度なルールエディター。
 * カスタム機能を実現するサーバーサイド拡張機能。
@@ -77,20 +77,20 @@ AEM オーサリングには、フォームを作成する WYSIWYG インター�
 * 様々なデータソースとのインタラクションとデータ構造を定義するフォームデータモデル（FDM）。
 * Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics、その他多くのデータソースへのデータ送信を含む、フォーム送信を処理する複数の送信アクションから選択する機能。
 
-基本的に、[AEM オーサリング](/help/forms/creating-adaptive-form-core-components.md)は、[ドキュメントベースのオーサリング](/help/edge/docs/forms/create-forms.md)の基盤の上に作成されており、複雑なフォームの作成および管理を行うより高度なツールキットを提供します。
+基本的に、 [WYSIWYG オーサリング](/help/forms/creating-adaptive-form-core-components.md) ～の基盤に基づく [ドキュメントベースのオーサリング](/help/edge/docs/forms/create-forms.md)複雑なフォームを作成および管理するための、より高度なツールキットを提供します。
 
 >[!NOTE]
 >
 >
-> AEM オーサリング機能は、早期導入プログラムで利用できます。詳しくは、作業用アドレスから aem-forms-ea@adobe.com にメールを送信して、機能へのアクセスをリクエストしてください。
+> WYSIWYG オーサリング機能は、早期導入プログラムで利用できます。 詳しくは、作業用アドレスから aem-forms-ea@adobe.com にメールを送信して、機能へのアクセスをリクエストしてください。
 
 ### AEM Forms Edge Delivery Services：フォームのオーサリング、公開、送信
 
-ドキュメントベースのオーサリングと AEM オーサリングを使用してフォームを作成、公開、送信するプロセスを次の図に示します。
+次の図に、ドキュメントベースのオーサリングと WYSIWYG オーサリングを使用したフォームの作成、公開、送信プロセスを示します。
 
 ![ドキュメントベースのオーサリング](/help/edge/assets/document-based-authoring-workflow.png)
 
-![AEM オーサリング](/help/edge/assets/aem-authoring-workflow.png)
+![WYSIWYG オーサリング](/help/edge/assets/wysiwyg-authoring-workflow.png)
 
 ## フォームの作成を開始
 

@@ -3,10 +3,10 @@ title: AEM Forms Edge Delivery Service の概要。フォームを作成しま�
 description: 完璧なフォームを素早く作成しましょう。⚡ AEM Forms Edge Delivery ドキュメントベースのオーサリング = 超高速かつ SEO に対応したフォームで、高い顧客満足度と検索エンジンを実現。
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
-workflow-type: ht
+source-git-commit: f69336073addb106cde01d72c921f3b98ff6337a
+workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ AEM Forms Edge Delivery には、アダプティブフォームブロックと�
 
 これらのフォームは、Microsoft Excel または Google Sheets ファイルに直接データを送信します。これにより、Google Sheets、Microsoft Excel、Microsoft SharePoint の活発なエコシステムと堅牢な API を使用して、送信されたデータを簡単に処理したり、既存のビジネスワークフローを開始したりできます。
 
-![ドキュメントベースのオーサリングエコシステム](/help/edge/assets/document-based-authoring-workflow-create-form.png)
+![ドキュメントベースのオーサーエコシステム](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 
 ## 前提条件
