@@ -4,8 +4,8 @@ description: ユニバーサルエディターがプロパティパネルで編�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: 6886d3e669b06b63d2225348e95e00806db1b8f5
+workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 100%
 
@@ -103,7 +103,7 @@ ht-degree: 100%
 | [数値](#number) | `number` |
 | [ラジオグループ](#radio-group) | `radio-group` |
 | [参照](#reference) | `reference` |
-| [リッチテキスト](#rich-text) | `rich-text` |
+| [リッチテキスト](#rich-text) | `richtext` |
 | [選択](#select) | `select` |
 | [タブ](#tab) | `tab` |
 | [テキスト](#text) | `text` |

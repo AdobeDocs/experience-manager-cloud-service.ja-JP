@@ -4,10 +4,10 @@ description: AEM には、デジタルエクスペリエンスプロジェクト
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: b3405279393be51b805c1129c171bb2249fd5726
+workflow-type: tm+mt
 source-wordcount: '608'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -73,7 +73,7 @@ AEM では、カスタマイズ可能なコンポーネントとコンテンツ�
 | [Assets API](/help/assets/mac-api-assets.md) | バイナリ、メタデータ、レンディション、コメントなどのアセットに対して作成、読み出し、更新、削除（CRUD）操作を実行できるようになります。AEM Assets HTTP API を参照してください |
 | [コンテンツフラグメント HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | CRUD 操作を使用して HTTP API でコンテンツフラグメントのコンテンツに直接アクセスします |
 | [コンテンツフラグメント GraphQL API](/help/headless/graphql-api/content-fragments.md) | ヘッドレス CMS 実装の JavaScript クライアントにコンテンツフラグメントを効率的に配信できるようになります |
-| [コンテンツフラグメントアセット HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ja) | サポートされている HTTP アセットリクエストの厳密な形式 |
+| [コンテンツフラグメントアセット HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ja) | サポートされている HTTP アセットリクエストの正確な形式 |
 | [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) | コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI |
 
 ## SPA 固有の API {#spa-apis}
