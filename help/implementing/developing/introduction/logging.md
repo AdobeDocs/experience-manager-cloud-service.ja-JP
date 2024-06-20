@@ -5,7 +5,7 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
 source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2797'
 ht-degree: 100%
 

@@ -5,9 +5,9 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4244'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ RDE は、コード、コンテンツ、Apache または Dispatcher の設定に
 
 すべてのプログラムには RDE がプロビジョニングされます。サンドボックスアカウントの場合、数時間使用されなかった後に休止状態になります。
 
-作成時に、RDE は使用可能な最新の Adobe Experience Manager（AEM） バージョンに設定されます。Cloud Manager を使用して実行できる RDE のリセットは、RDE を循環させ、使用可能な最新の AEM バージョンに設定します。
+作成時に、RDE は使用可能な最新の Adobe Experience Manager（AEM）バージョンに設定されます。Cloud Manager を使用して実行できる RDE のリセットは、RDE を循環させ、使用可能な最新の AEM バージョンに設定します。
 
 通常、特定の機能のテストとデバッグには、1 人のデベロッパーが任意の時点で RDE を使用します。開発セッションが完了すると、RDE は次の使用時にデフォルトの状態にリセットできます。
 
@@ -83,7 +83,7 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
 
 >[!IMPORTANT]
 >
->のバージョン 20 があることを確認します。 [ノードと NPM がインストールされている](https://nodejs.org/en/download/) Adobe I/OCLI と関連プラグインが正しく動作するように設定できます。
+>Adobe I/O CLI と関連プラグインが正しく動作するように、バージョン 20 の[ノードと NPM がインストールされている](https://nodejs.org/en/download/)ことを確認してください。
 
 
 1. こちらの[手順](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/)に従って、Adobe I/O CLI ツールをインストールします。
@@ -141,19 +141,19 @@ Setup the CLI configuration necessary to use the RDE commands.
 
 ```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)```
 
-### 非インタラクティブ環境での手動セットアップ手順 {#manual-setup}
+### 非インタラクティブ環境での手動設定手順 {#manual-setup}
 
-前述のように、ユーザーが設定コマンドをインタラクティブに実行できない環境（CI/CD やスクリプトなど）の場合、組織、プログラム、環境の 3 つのパラメーターは、次の手順に従って手動で設定できます。
+上記のように、ユーザーがインタラクティブに setup コマンドを実行できない環境（CI/CD やスクリプトなど）では、組織、プログラム、環境の 3 つのパラメーターを次の手順に従って手動で設定できます。
 
 
 <details>
-  <summary>を展開すると、手動での設定方法の詳細が表示されます</summary>
+  <summary>展開すると、手動での設定方法の詳細が表示されます</summary>
 
 1. 組織 ID を設定し、英数字の文字列を独自の組織 ID に置き換えます。
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * 独自の組織 ID は、メソッドを使用して検索できます [こちらのドキュメントを参照してください。](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=ja#concept_EA8AEE5B02CF46ACBDAD6A8508646255)
+   * 独自の組織 ID は、[こちらのドキュメントに記載されている](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=ja#concept_EA8AEE5B02CF46ACBDAD6A8508646255)方法を使用して検索できます。
 
 1. 次に、以下のプログラム ID を設定します。
 
@@ -167,7 +167,7 @@ Setup the CLI configuration necessary to use the RDE commands.
 
    `aio login`
 
-   これらの手順では、Cloud Manager のメンバーである必要があります **開発者 – Cloud Service** 製品プロファイル。 詳しくは、[このページ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)を参照してください。
+   この手順では、Cloud Manager **デベロッパー - Cloud Service** 製品プロファイルのメンバーである必要があります。詳しくは、[このページ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)を参照してください。
 
 詳細とデモンストレーションについては、[RDE の設定方法（06:24）](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html?lang=ja)のビデオチュートリアルを参照してください。
 </details>
@@ -415,7 +415,7 @@ Logs:
 
 >[!TIP]
 >
-> 2023 年 4 月より前に RDE を作成し、フロントエンド機能を初めて試したときに「UNEXPECTED_API_ERROR」というエラーが発生した場合は、環境を削除して再度作成してみてください。
+> 2023年4月以前に RDE を作成し、フロントエンド機能を初めて試した際に「UNEXPECTED_API_ERROR」エラーが発生した場合は、環境を削除して再度作成してください。
 
 ### RDE のステータス確認 {#checking-rde-status}
 
@@ -482,7 +482,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 >[!TIP]
 >
->次のエラーが表示される場合： `RDECLI:UNEXPECTED_API_ERROR` オーサーサービスのログコマンドを再生する場合は、環境をリセットして再試行してください。 最新のリセット操作が 2024 年 5 月末以前であった場合、このエラーがスローされます。
+>オーサーサービスのログコマンドの実行中にエラー `RDECLI:UNEXPECTED_API_ERROR` が表示される場合は、環境をリセットして再試行してください。最新のリセット操作が 2024年5月末より前であった場合、このエラーがスローされます。
 >
 ```
 >aio aem:rde:reset
@@ -1005,11 +1005,11 @@ AEM as a Cloud Service での RDE について詳しくは、[設定方法、使
 
 # トラブルシューティング {#troubleshooting}
 
-## RDE のトラブルシューティング（#rde-troublehooting）
+## RDE のトラブルシューティング（#rde-troubleshooting）
 
-### 既存の RDE の最新バージョンのAEMを取得する方法 {#get-latest-aem-version}
+### 既存の RDE に対する最新の AEM バージョンを取得する方法 {#get-latest-aem-version}
 
-作成時に、RDE は使用可能な最新の Adobe Experience Manager（AEM） バージョンに設定されます。An [RDE のリセット](#reset-rde) Cloud Manager または `aio aem:rde:reset` コマンドは、RDE を循環させ、使用可能な最新のAEM バージョンに設定します。
+作成時に、RDE は使用可能な最新の Adobe Experience Manager（AEM）バージョンに設定されます。Cloud Manager または `aio aem:rde:reset` コマンドを使用して実行できる [RDE のリセット](#reset-rde)は、RDE を循環させ、使用可能な最新の AEM バージョンに設定します。
 
 ## aio RDE プラグインのトラブルシューティング {#aio-rde-plugin-troubleshooting}
 

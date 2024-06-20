@@ -4,9 +4,9 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 07670a532294a4ae8afb9636a206d2a8cbdce2b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5400'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -745,7 +745,7 @@ GraphQL のソリューションでは、次のことが可能です。
 >* `_dynamicUrl`：DAM アセット
 >* `_dmS7Url`：Dynamic Media アセット
 > 
->参照されるアセットが DAM アセットの場合、の値 `_dmS7Url` はになります `null`. [GraphQL クエリでの URL による Dynamic Media アセット配信](#dynamic-media-asset-delivery-by-url)を参照してください。
+>参照されるアセットが DAM アセットの場合、`_dmS7Url` の値は `null` になります。[GraphQL クエリでの URL による Dynamic Media アセット配信](#dynamic-media-asset-delivery-by-url)を参照してください。
 
 ### 変換リクエストの構造 {#structure-transformation-request}
 
@@ -942,12 +942,12 @@ GraphQL のソリューションでは、次のことが可能です。
 >* `_dmS7Url`：Dynamic Media アセット
 >* `_dynamicUrl`：DAM アセット
 > 
->参照されるアセットがDynamic Media アセットの場合、の値 `_dynamicURL` はになります `null`. [GraphQL クエリでの web に最適化された画像配信](#web-optimized-image-delivery-in-graphql-queries)を参照してください。
+>参照されるアセットが Dynamic Media アセットの場合、`_dynamicURL` の値は `null` になります。[GraphQL クエリでの web に最適化された画像配信](#web-optimized-image-delivery-in-graphql-queries)を参照してください。
 
-### URL によるDynamic Media アセット配信のサンプルクエリ – 画像リファレンス{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
+### URL による Dynamic Media アセット配信のサンプルクエリ - 画像参照{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 サンプルクエリを以下に示します。
-* タイプの複数のコンテンツフラグメントの場合 `team` および `person`、を返します `ImageRef`
+* `team` と `person` タイプの複数のコンテンツフラグメントの場合、`ImageRef` を返します
 
 ```graphql
 query allTeams {
@@ -971,10 +971,10 @@ query allTeams {
 } 
 ```
 
-### URL によるDynamic Media アセット配信のサンプルクエリ – 複数リファレンス{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
+### URL による Dynamic Media アセット配信のサンプルクエリ - 複数の参照{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
 
 サンプルクエリを以下に示します。
-* タイプの複数のコンテンツフラグメントの場合 `team` および `person`、を返します `ImageRef`, `MultimediaRef` および `DocumentRef`:
+* `team` と `person` タイプの複数のコンテンツフラグメントの場合、`ImageRef`、`MultimediaRef`、`DocumentRef` を返します。
 
 ```graphql
 query allTeams {
@@ -1107,9 +1107,9 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
       * `_dmS7Url`：[Dynamic Media アセット](#dynamic-media-asset-delivery-by-url)への URL 配信に関する `ImageRef` 参照について
 
-         * 参照： [URL によるDynamic Media アセット配信のサンプルクエリ - ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+         * [URL による Dynamic Media アセット配信のサンプルクエリ - 画像参照](#sample-query-dynamic-media-asset-delivery-by-url-imageref)を参照してください
 
-         * 参照： [URL によるDynamic Media アセット配信のサンプルクエリ – 複数リファレンス](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+         * [URL による Dynamic Media アセット配信のサンプルクエリ - 複数の参照](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)を参照してください
 
    * `_tags`：タグを含むコンテンツフラグメントまたはバリエーションの ID を表示する `cq:tags` 識別子の配列です。
 

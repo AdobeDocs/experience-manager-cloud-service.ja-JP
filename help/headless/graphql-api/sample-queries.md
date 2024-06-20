@@ -4,9 +4,9 @@ description: GraphQL を AEM と共に使用し、サンプルコンテンツと
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 07670a532294a4ae8afb9636a206d2a8cbdce2b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1826'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -1795,19 +1795,19 @@ query {
 } 
 ```
 
-## DAM およびDynamic Media アセットの配信のサンプルクエリ {#sample-queries-delivery-DAM-DM}
+## DAM および Dynamic Media アセット配信のサンプルクエリ {#sample-queries-delivery-DAM-DM}
 
-Web に最適化された画像配信の場合（DAM アセットの場合）:
+Web に最適化された画像配信（DAM アセット）の場合：
 
 * [すべてのパラメーターを使用した web に最適化された画像配信用サンプルクエリ](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-full-parameters)
 
 * [単一の指定パラメーターを使用した web に最適化された画像配信用サンプルクエリ](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
 
-Dynamic Media アセットに URL を配信する場合
+Dynamic Media アセットへの URL 配信の場合
 
-* 参照： [URL によるDynamic Media アセット配信のサンプルクエリ – 画像リファレンス](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* [URL による Dynamic Media アセット配信のサンプルクエリ - 画像参照](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)を参照してください
 
-* 参照： [URL によるDynamic Media アセット配信のサンプルクエリ – 複数リファレンス](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+* [URL による Dynamic Media アセット配信のサンプルクエリ - 複数の参照](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)を参照してください
 
 ## GraphQL で使用するコンテンツフラグメント構造のサンプル {#content-fragment-structure-graphql}
 
