@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 639f1a35369bfe20931e2bbf08009a72696964d6
 workflow-type: tm+mt
-source-wordcount: '5034'
+source-wordcount: '5040'
 ht-degree: 99%
 
 ---
@@ -82,6 +82,7 @@ ht-degree: 99%
    + AEMaaCS メンテナンスリリースノート {#maintenance}
       + [最新のメンテナンスリリースノート](/help/release-notes/maintenance/latest.md)
       + 2024年度 {#2024}
+         + [メンテナンスリリースノート（2024.6.0）](/help/release-notes/maintenance/2024/2024-6-0.md)
          + [メンテナンスリリースノート（2024.5.0）](/help/release-notes/maintenance/2024/2024-5-0.md)
          + [メンテナンスリリースノート（2024.4.0）](/help/release-notes/maintenance/2024/2024-4-0.md)
          + [メンテナンスリリースノート（2024.3.0）](/help/release-notes/maintenance/2024/2024-3-0.md)
@@ -507,7 +508,7 @@ ht-degree: 99%
       + Dynamic Media ジャーニー：基本知識 {#dm-journey}
          + [第 1 部：Dynamic Media とは - ユースケース - システム内でのアセットのフロー](/help/assets/dynamic-media/dm-journey-part1.md)
          + [第 2 部：Dynamic Media URL の分解 - 画像プリセットの基本 - 画像セット、スピンセットおよび混在メディアセットについて](/help/assets/dynamic-media/dm-journey-part2.md)
-         + [Dynamic Media ベストプラクティス](/help/assets/dynamic-media/dm-best-practices.md)
+         + [Dynamic Media のベストプラクティス](/help/assets/dynamic-media/dm-best-practices.md)
       + [Experience League 提供の Dynamic Media ニュースレターアーカイブ](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Dynamic Media をセットアップする](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Dynamic Media を使用する](/help/assets/dynamic-media/dynamic-media.md)

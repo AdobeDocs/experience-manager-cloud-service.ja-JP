@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1065'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ data:
 
 ## API トークンのパージ {#purge-API-token}
 
-顧客は次のことができます [cdn キャッシュのパージ](/help/implementing/dispatcher/cdn-cache-purge.md) 宣言されたパージ API トークンを使用する。 トークンは、以下の構文で宣言します。デプロイ方法については、[共通設定](#common-setup)の節を参照してください。
+お客様は、宣言されたパージ API トークンを使用して [CDN キャッシュをパージ](/help/implementing/dispatcher/cdn-cache-purge.md)できます。トークンは、以下の構文で宣言します。デプロイ方法については、[共通設定](#common-setup)の節を参照してください。
 
 ```
 kind: "CDN"

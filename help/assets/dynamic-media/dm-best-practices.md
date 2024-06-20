@@ -1,6 +1,6 @@
 ---
-title: Dynamic Mediaのベストプラクティス
-description: 画像とビデオの操作に関しては、Dynamic Mediaのベストプラクティスについて説明します。
+title: Dynamic Media のベストプラクティス
+description: 画像やビデオを操作する際の Dynamic Media のベストプラクティスについて説明します。
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -14,11 +14,11 @@ exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
 source-git-commit: 3375ffbb18c312e5df0050050ae16d75a12243e6
 workflow-type: tm+mt
 source-wordcount: '3574'
-ht-degree: 2%
+ht-degree: 99%
 
 ---
 
-# Dynamic Mediaのベストプラクティスについて{#about-dm-best-practices}
+# Dynamic Media のベストプラクティスについて{#about-dm-best-practices}
 
 <!--**Organizations today must connect with their customers through an ever-growing array of channels and devices.** The customer experience spans physical stores, websites, mobile apps, social media, email, and e-commerce platforms. This diversity requires organizations to create many more versions of each piece of content. Personalization adds complexity by increasing the number of variations needed for each item. Despite budget constraints for content creation, there's still a need to produce more campaigns in the same timeframe, on a global scale. AEM Dynamic Media offers a comprehensive set of tools to meet these challenges, providing consistent, personalized, high-performance, and optimized brand experiences across all channels and devices. 
 
@@ -35,319 +35,319 @@ In the accompanying guide, you'll find a comprehensive list of best practices fo
 
 Stage Business Problem Best Practice Recommendation: This section will outline specific business challenges and provide targeted best practices and recommendations to address them effectively. -->
 
-組織は、ユーザーとのエンゲージメントのためのチャネルとデバイスの急拡大に直面しています。 カスタマージャーニーは、物理的な店舗、web、モバイル、ソーシャルメディア、電子メール、コマースにわたります。 この需要を満たすために、Dynamic Media on Adobe Experience Manager（AEM）は包括的なソリューションを提供します。 アセット配信を最適化し、パーソナライゼーションを処理し、チャネルやデバイスをまたいで、一貫性があり、パフォーマンスが高く、ブランドに合わせたエクスペリエンスを保証します。
+組織は、ユーザーと接点を持つためのチャネルやデバイスの急激な増加に直面しています。カスタマージャーニーは、実店舗、web、モバイル、ソーシャルメディア、メール、コマースに広がります。この需要を満たすために、Adobe Experience Manager（AEM）の Dynamic Media では、包括的なソリューションを提供します。このソリューションはアセット配信を最適化し、パーソナライゼーションを処理します。また、チャネルやデバイスをまたいで、高パフォーマンス、かつブランドに合わせた一貫性のあるエクスペリエンスを保証します。
 
-Dynamic Mediaの主要な教義の一部を次に示します。
+Dynamic Media の主要な考え方の一部を次に示します。
 
-* **単一ファイル・アプローチ：** Dynamic Mediaでは、1 つのプライマリソースファイルを保存すると、すべてのサイズのバリエーションと視覚効果が配信時に動的に作成および最適化されます。 このアプローチにより、ストレージコストが削減され、ワークフローの複雑さが解消されます。
-* **真にグローバル：** コンテンツ配信時に適用されるスマートイメージングは、画質を損なうことなく、画像サイズとページの重さを大幅に削減します。 ネットワーク帯域幅とデバイスのピクセル比に最適化されています。
-* **AI を活用：** AI 駆動機能の 1 つであるスマート切り抜きは、画像およびビデオの POI 切り抜きを自動化します。 手作業をなくし、企業での使用に合わせて効率的に拡張できます。
-* **簡単なビデオ：** プライマリソースビデオをDynamic Mediaにアップロードし、説明的なオーディオを使用して、複数の言語に適応的にストリーミングします。
-* **Experience viewer ライブラリ：** 画像およびビデオのブランドエクスペリエンスビューアをでカスタマイズします。 これらのビューアは、デジタルエクスペリエンスにシームレスに統合されます。
-* **新しい形式のサポート：** Dynamic Mediaでは、3D およびパノラマエクスペリエンスを配信できます。
+* **単一ファイルアプローチ：** Dynamic Media では、1 つのプライマリソースファイルを保存し、すべてのサイズのバリエーションと視覚効果は配信時に動的に作成され、最適化されます。このアプローチにより、ストレージコストを節約し、ワークフローの複雑さを解消します。
+* **真にグローバル：**&#x200B;コンテンツ配信時に適用されるスマートイメージングでは、画質を損なうことなく、画像サイズとページの重さを大幅に削減します。ネットワーク帯域幅とデバイスのピクセル比に合わせて最適化されます。
+* **AI を活用：** AI 駆動機能のスマート切り抜きでは、画像とビデオの目的の箇所を自動で切り抜きます。手作業をなくし、企業での使用に合わせて効率的に拡張できます。
+* **簡単なビデオ：**&#x200B;プライマリソースビデオを Dynamic Media にアップロードし、説明的なオーディオと共に複数の言語にアダプティブにストリーミングします。
+* **エクスペリエンスビューアライブラリ：**&#x200B;画像やビデオのエクスペリエンスビューアをカスタマイズしてブランド化します。これらのビューアは、デジタルエクスペリエンスにシームレスに統合されます。
+* **新しい形式のサポート：** Dynamic Media では、3D およびパノラマエクスペリエンスを配信できます。
 
-を参照する際 [Dynamic Mediaジャーニー](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1)の機能を最大限に活用するには、以下のベストプラクティスの一覧を確認してください。 チャネルやデバイスをまたいでエクスペリエンスを最適化できるように、Dynamic Mediaのこれらのベストプラクティスを具体的なコンテキストやプロジェクト要件に合わせて調整します。
+[Dynamic Media ジャーニー](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1)を検討する際に、以下のベストプラクティスの統合リストを確認すると、その機能を最大限に活用するのに役立ちます。チャネルやデバイスをまたいでエクスペリエンスを最適化できるように、Dynamic Media のこれらのベストプラクティスを、具体的なコンテキストやプロジェクト要件に合わせて調整します。
 
 <!-- In Dynamic Media on AEM, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content. -->
 
 >[!IMPORTANT]
 >
->この記事のDynamic Mediaのベストプラクティスは、Dynamic Mediaの新しいテクノロジーが登場するにつれて、時間の経過と共に進化する可能性があります。 以下の情報は、Dynamic Mediaの最新バージョンに関するものです。
+>この記事における Dynamic Media のベストプラクティスは、Dynamic Media の新しいテクノロジーが登場するにつれて、時間の経過と共に進化する可能性があります。以下の情報は、Dynamic Media の最新バージョンに関するものです。
 
 
-## Dynamic Mediaへのアセットの取り込み
+## Dynamic Media へのアセットの取り込み
 
-**ビジネス ケース：** *大量のアセットを効率的に管理し、関連性が高く承認されたコンテンツのみをエンドユーザーに配信します。*
+**ビジネスケース：** *大量のアセットを効率的に管理し、関連性が高い承認済みのコンテンツのみをエンドユーザーに配信します。*
 
-大量のアセットの管理を効率的に効率化します。 Dynamic Mediaを使用して、適切で承認済みのコンテンツのみがエンドユーザーに届くようにします。 **選択的同期** および **選択的公開** 機能。
+大量のアセットの管理を効率的に合理化します。Dynamic Media の&#x200B;**選択的同期**&#x200B;および&#x200B;**選択的公開**&#x200B;機能を使用して、承認済みの適切なコンテンツのみがエンドユーザーに届くようにします。
 
 * **選択的同期：**
-Dynamic Mediaと同期するアセットを選択できるプロアクティブな機能。 例えば、最終承認を受けたアセットを含むフォルダーのみを同期するように指定できます。 このワークフローは、顧客への配信の準備をするアセットを管理するのに役立ちます。
+Dynamic Mediaと同期するアセットを選択できるプロアクティブな機能。 例えば、最終承認を受けたアセットを含むフォルダーのみを同期するように指定できます。このワークフローは、顧客への配信の準備が行われているアセットを管理するのに役立ちます。
 
 * **選択的公開：**
-アセットを同期した後に、選択的公開を使用すると、顧客に表示するアセットを制御できます。 つまり、どの承認済みアセットがチャネルを通じて実際に配信されるかを管理できるので、顧客に最適で関連性の高いコンテンツのみを表示できます。
+アセットを同期した後に、選択的公開を使用すると、顧客に表示するアセットを制御できます。 つまり、どの承認済みアセットがチャネルを通じて実際に配信されるかを管理できるので、顧客に関連性の高い最適なコンテンツのみを表示できます。
 
-これらの 2 つのベストプラクティスは、リッチメディアコンテンツに対するコントロール、ガバナンス、生産性の向上を実現するのに役立ちます。
+これらの 2 つのベストプラクティスは、リッチメディアコンテンツに対するコントロール、ガバナンス、生産性を向上させるのに役立ちます。
 
-詳しくは、に移動 [Dynamic Mediaのフォルダーレベルでの選択的公開の設定](/help/assets/dynamic-media/selective-publishing.md).
+詳しくは、[Dynamic Media のフォルダーレベルでの選択的公開の設定](/help/assets/dynamic-media/selective-publishing.md)を参照してください。
 
 
-## 配信するアセットの準備
+## 配信用アセットの準備
 
 ### アセットの整理
 
-**ビジネス ケース：** *アセットを効率的に整理してワークフローを効率化します。*
+**ビジネスケース：***アセットを効率的に整理してワークフローを合理化します。*
 
-ワークフローを効率化する効率的なアセット編成のために、次の 1 つ以上のベストプラクティスを使用します。
+ワークフローを合理化してアセットを効率的に整理するには、次のベストプラクティスから 1 つ以上を使用してください。
 
-* **アセットをフォルダーに整理します。**
-アセットを整理するには、コンピューター上のファイル編成と同様に、アセットをフォルダーに分類する必要があります。 これらのフォルダー内での適切な命名、サブフォルダーの構造化、ファイル管理は、アセット処理を効率的に行うために重要です。 体系的な命名規則とメタデータ手法を実装することで、デジタルアセットリポジトリのユーティリティを最大限に活用できます。
-詳しくは、に移動 [フォルダー内のアセットの整理](/help/assets/organize-assets.md#organize-using-folders).
+* **アセットをフォルダーに整理：**
+アセットを効率的に整理するには、コンピューター上でファイルを整理する際と同様に、アセットをフォルダーに分類する必要があります。これらのフォルダー内での適切な命名、サブフォルダーの構造化、ファイル管理は、アセット処理を効率的に行う上で重要です。体系的な命名規則とメタデータ手法を実装すると、デジタルアセットリポジトリのユーティリティを最大限に活用できます。
+詳しくは、[フォルダー内のアセットの整理](/help/assets/organize-assets.md#organize-using-folders)を参照してください。
 * **タグを使用したアセットの整理：**
-アセットにタグを付けると、検索性、コレクションの作成および検索ランキングが向上します。 Adobe Senseiの AI は、正確なタグ付けのために自己学習アルゴリズムを採用しており、迅速なアセット取得を可能にします。 また、Adobe Senseiは、カスタムタグを含む関連するタグを認識してアセットに割り当てるため、説明を備えた自動タグ付けでアセット管理をシンプル化できます。
-詳しくは、に移動 [タグを使用したアセットの整理](/help/assets/organize-assets.md#use-tags-to-organize-assets).
-* **アセットをコレクションとして整理する：**
-Dynamic MediaをExperience Manager Assetsと併用すると、アセットコレクションを効率的に作成、編集およびユーザー間で共有できます。 静的なリストや動的な検索ベースのコンパイルなど、様々なコレクションタイプを設定できます。 これらのコレクションタイプは、カスタマイズ可能なアクセス権と編集権を使用して、様々な場所で共有できます。
-詳しくは、に移動 [アセットをコレクションとして整理する](/help/assets/manage-collections.md).
+アセットにタグを付けると、検索性、コレクションの作成、検索ランキングが向上します。Adobe Sensei の AI は、正確なタグ付けを行うために自己学習アルゴリズムを採用しており、迅速なアセット取得を可能にします。また、Adobe Sensei は、説明的な自動タグ付けを使用してアセット管理を簡素化し、カスタムタグを含む関連タグを認識してアセットに割り当てます。
+詳しくは、[タグを使用したアセットの整理](/help/assets/organize-assets.md#use-tags-to-organize-assets)を参照してください。
+* **アセットをコレクションとして整理：**
+Dynamic Media を Experience Manager Assets と併用すると、ユーザー間でアセットコレクションを効率的に作成、編集、共有できます。静的なリストや動的な検索ベースのコンパイルなど、様々なコレクションタイプを設定できます。これらのコレクションタイプは、カスタマイズ可能なアクセス権と編集権を使用して、様々な場所で共有できます。
+詳しくは、[アセットをコレクションとして整理](/help/assets/manage-collections.md)を参照してください。
 * **プロファイルを使用したアセットの整理：**
-処理プロファイルは、指定フォルダーでのアセット処理を自動化し、組織を効率化します。 メタデータ、ファイル名およびフォルダー構造を標準化すると、デジタルアセットコレクションの拡大に合わせて、これらのプロファイルを一貫した正確に適用できます。
-詳しくは、に移動 [プロファイルを使用したアセットの整理](/help/assets/organize-assets.md#organize-to-use-profiles).
+処理プロファイルは、指定フォルダーでのアセット処理を自動化し、組織を効率化します。メタデータ、ファイル名およびフォルダー構造を標準化すると、デジタルアセットコレクションが拡大するにつれて、これらのプロファイルを一貫して正確に適用できます。
+詳しくは、[プロファイルを使用したアセットの整理](/help/assets/organize-assets.md#organize-to-use-profiles)を参照してください。
 
 
 
-### 画像の画質の最適化
+### 画質の最適化
 
-**ビジネス ケース：** *Dynamic Mediaから高品質の画像を取得します。*
+**ビジネスケース：***Dynamic Media から高品質の画像を取得します。*
 
-画質の向上には、さまざまな要素への配慮が必要です。 時間がかかるプロセスになる場合があります。 ただし、望ましい結果を得るのに役立つ、実証済みのプラクティスがいくつかあります。 これらのベストプラクティスには、最適な画像サイズ設定、画像のシャープニング、使用に最適な画像形式を取得する方法が含まれています。
+画質を向上させるには、様々な要素を慎重に考慮する必要があります。このプロセスには時間がかかる場合があります。ただし、望ましい結果を得るのに役立つ、実証済みのプラクティスがいくつかあります。これらのベストプラクティスには、最適な画像サイズ設定、画像のシャープニング、使用に最適な画像形式を取得する方法が含まれています。
 
-詳しくは、に移動 [画像品質の最適化のベストプラクティス](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md).
+詳しくは、[画質最適化のベストプラクティス](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)を参照してください。
 
-画質に対する考え方は人によって異なるため、ときには望ましい結果を得るために、実験に対する体系的なアプローチが必要となります。 Adobe Experience Managerは、100 を超えるDynamic Media コマンドでこのプロセスを支援し、画像を強化します。
+画質に対する考え方は人によって異なるため、ときには望ましい結果を得るために、実験に対する体系的なアプローチが必要となる場合があります。Adobe Experience Manager は、100 を超える Dynamic Media コマンドでこのプロセスを支援し、画像を強化します。
 
-詳しくは、ウォッチ [Dynamic Media Snapshot](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) （3 分、17 秒）。
+詳しくは、[Dynamic Media スナップショット](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)をご覧ください（3 分 17 秒）。
 
-これらの様々なコマンドが画質に与える影響を評価するには、画像をDynamic Mediaにアップロードし、指定された URL でツールのインターフェイスを使用して、試したいコマンドを適用します。
+これらの様々なコマンドが画質に与える影響を評価するには、Dynamic Media に画像をアップロードし、指定した URL でツールのインターフェイスを使用して、試してみるコマンドを適用します。
 
-試してみる？ ローンチ [Dynamic Media Snapshot](https://snapshot.scene7.com/)
+試してみるには、[Dynamic Media Snapshot](https://snapshot.scene7.com/) を起動してください
 
-### 画像に適用されるスタイルを標準化
+### 画像に適用されるスタイルの標準化
 
-**ビジネス ケース：** *画像アセットに適用するスタイルと変換を効率的に標準化します。*
+**ビジネスケース：***画像アセットに適用されるスタイルと変換を効率的に標準化します。*
 
-Dynamic Mediaで画像プリセットを定期的に使用すると、画像のサイズ、形式、プロパティを一貫性のある動的な方法で調整できます。 画像プリセットは、マクロと考えることができます。サイズ変更と書式設定を行う名前付きのコマンドセットです。 例えば、デスクトップとモバイル用に特定の圧縮を使用して、様々なサイズと形式の製品画像がサイトで必要な場合は、画像プリセットによってこのプロセスが効率的に自動化されます。
+Dynamic Media で画像プリセットを定期的に使用すると、画像のサイズ、形式、プロパティを一貫して動的に調整できます。画像プリセットは、マクロと考えることができます。サイズ設定と書式設定のためのコマンドの名前付きセットです。例えば、サイトで様々なサイズと形式の製品画像が必要で、デスクトップとモバイルに特定の圧縮が必要な場合は、画像プリセットによってこのプロセスが効率的に自動化されます。
 
-試してみる？ に移動 [アセットをレンダリングするための画像プリセットの作成の基本](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-e)
+試してみるには、[アセットをレンダリングするための画像プリセットの作成の基本](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-e)を参照してください
 
 ### 画像やビデオのフォーカスとフレーミングの調整
 
-**ビジネス ケース：** *画像やビデオの主要な目標点が、デバイス間で確実にフォーカスされるようにします。*
+**ビジネスケース：***画像やビデオの主な POI が、デバイス間でフォーカスされたままであることを確認します。*
 
-スマート切り抜きは、Dynamic Mediaの機能で、Adobeの AI および機械学習フレームワークであるAdobe Senseiを使用して、画像やビデオの切り抜きを自動化します。 画像やビデオの主要な被写体や注目点をインテリジェントに検出し、フォーカスします。 このインテリジェンスにより、デスクトップコンピューターやモバイルデバイスの様々な画面サイズで焦点が維持されます。
+スマート切り抜きは、アドビの AI および機械学習フレームワークである Adobe Sensei を使用して画像やビデオの切り抜きを自動化する Dynamic Media の機能です。画像やビデオ内の主なサブジェクトや POI をインテリジェントに検出し、フォーカスします。このインテリジェンスにより、デスクトップコンピューターやモバイルデバイスの様々な画面サイズ間で焦点位置が維持されます。
 
-ベストプラクティスは、スマート切り抜きを使用して画像プロファイルを作成することです。 プロファイルでは、様々な画面サイズを定義し、残りの作業はAdobe Senseiに任せることで、画像やビデオを常にビューアのデバイスに最適化することができます。
+ベストプラクティスとしては、スマート切り抜きを使用して画像プロファイルを作成することをお勧めします。プロファイルでは、様々な画面サイズを定義し、Adobe Sensei に残りの処理を任せることで、画像やビデオが常に閲覧者のデバイスに合わせて最適化されるようにすることができます。
 
-詳しくは、ウォッチ [AEM Assets Dynamic Mediaでのスマート切り抜きの使用](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) （6 分 35 秒）および [ビデオに対するDynamic Media スマート切り抜きの使用](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) （6 分、22 秒）。
+詳しくは、[AEM Assets Dynamic Media でのスマート切り抜きの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)（6 分 35 秒）と[ビデオに対する Dynamic Media スマート切り抜きの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video)（6 分 22 秒）をご覧ください。
 
 ### SEO ランキングの向上
 
-**ビジネス ケース：** *Dynamic Mediaを設定して、SEO ランキングを向上させます。*
+**ビジネスケース：***Dynamic Media を設定して、SEO ランキングを向上させます。*
 
-画像が SEO 戦略全体に効果的に貢献するように、次の推奨事項を定期的に使用します。
+画像が全体的な SEO 戦略に効果的に貢献するように、次のレコメンデーションを定期的に使用します。
 
 * **意味のある画像ファイル名：**
-画像の内容を反映したわかりやすいファイル名を使用します。 次に例を示します。
+画像コンテンツを反映したわかりやすいファイル名を使用します。例：
    * `myCompany-Silver-Wrist-Watch` を使用します
-   * *回避する* `myCompany_Silver_Wrist_Watch` または `myCompanySilverWristWatch`
+   * `myCompany_Silver_Wrist_Watch` または `myCompanySilverWristWatch` を&#x200B;*回避*&#x200B;します
 
-  これにより、検索エンジンが画像のコンテキストを理解し、SEO を向上させることができます。 Googleでは、ファイル名でアンダースコアやスペースよりもハイフンが優先されます。 また、ファイル名では単語を連結しないでください。
-* **カスタムドメイン :**
-会社またはブランド名を含むカスタムドメインを実装して、ブランドの認識と信頼を強化します。 次に例を示します。
+  これにより、検索エンジンが画像のコンテキストを理解し、SEO を向上させることができます。Google では、ファイル名でアンダースコアやスペースよりもハイフンが優先されます。また、ファイル名では単語の連結を回避します。
+* **カスタムドメイン：**
+会社名やブランド名を含むカスタムドメインを実装して、ブランドの認識と信頼を強化します。例：
    * `http://images.mycompany.com/is/image/companyname/` を使用します
-   * *回避する* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
-* **SEO 対応のフォルダー構造：**
-以下のようなインデックス作成を強化するために、会社名やブランドを含んだフォルダー構造で画像を整理します `http://images.mycompany.com/is/image/companyname/`.
+   * `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982` を&#x200B;*回避*&#x200B;します
+* **SEO に対応したフォルダー構造：**
+インデックス作成を強化するには、`http://images.mycompany.com/is/image/companyname/` のように、会社名やブランドを含むフォルダー構造で画像を整理します。
 * **Dynamic Media ルールセット：**
-様々な要因に基づいて URL を条件付きで変換し、SEO とユーザーエクスペリエンスを強化する方法を説明します。
-詳しくは、に移動 [ルールセットを使用した URL の変換](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md).
+様々な要因に基づいて URL を条件付きで変換し、SEO とユーザーエクスペリエンスを強化する方法を学びます。
+詳しくは、[ルールセットを使用した URL の変換](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)を参照してください。
 * **スマートイメージングとスマート切り抜き：**
-Dynamic Mediaのスマートイメージング機能とスマート切り抜き機能を使用して、最適化されたレスポンシブな画像を提供します。 これにより、ページの読み込み時間が改善されるだけでなく、SEO ランキングにもプラスに貢献します。
-詳しくは、に移動 [スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)、またはウォッチ [AEM Assets Dynamic Mediaでのスマート切り抜きの使用](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) （6 分、35 秒）。
+Dynamic Media のスマートイメージング機能とスマート切り抜き機能を使用して、最適化されたレスポンシブな画像を提供します。これにより、ページの読み込み時間が改善されるだけでなく、SEO ランキングにもプラスに貢献します。
+詳しくは、[スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)を参照するか、[AEM Assets Dynamic Media でのスマート切り抜きの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)（6 分 35 秒）をご覧ください。
 
-これらのベストプラクティスは、Googleの画像 SEO のベストプラクティスとうまく一致していることを覚えておいてください。 このようなプラクティスでは、適切な命名規則、構造化データ、最適化された画像配信を通じて、コンテキストと明確さを検索エンジンに提供する重要性が強調されます。
+これらのベストプラクティスは、Google の画像 SEO のベストプラクティスとうまく一致しています。このようなプラクティスでは、適切な命名規則、構造化データ、最適化された画像配信を通じて、検索エンジンにコンテキストと明確さを提供する重要性が強調されます。
 
-詳しくは、に移動 [Googleの URL 構造のベストプラクティス](https://developers.google.com/search/docs/crawling-indexing/url-structure) および [Google画像 SEO のベストプラクティス](https://developers.google.com/search/docs/appearance/google-images)
+詳しくは、[Google の URL 構造のベストプラクティス](https://developers.google.com/search/docs/crawling-indexing/url-structure)と [Google 画像 SEO のベストプラクティス](https://developers.google.com/search/docs/appearance/google-images)を参照してください
 
 
-### コマンドを使用してイメージをダイナミックに拡張し、視覚効果を作成する
+### コマンドを使用した画像の動的な強化と視覚効果の作成
 
-**ビジネス ケース：** *画像にリッチな視覚効果を適用します。*
+**ビジネスケース：***画像にリッチな視覚効果を適用します。*
 
-Dynamic Mediaには、画像を拡張し、視覚的な効果を動的に作成するための一連のコマンドが用意されています。静的なアセットを複数用意する必要はありません。 これらのプロセスの一部を簡単に説明し、例を示します。
+Dynamic Media では、複数の静的アセットを必要とせずに、画像を強化し、視覚効果を動的に作成するための一連のコマンドを提供します。これらのプロセスの一部についての簡単な説明と、ガイドとなる例の一部を以下に示します。
 
-#### ソース画像内のエフェクト
+#### ソース画像内の効果
 
-| タスク | 対処方法 |
+| タスク | 実行内容 |
 | --- | --- |
-| **元の画像をアップロードして公開する** | ・まず、元の画像をDynamic Mediaにアップロードします。<br>・ コンテンツが公開され、URL からアクセスできることを確認します。<br>・この例では、背景が白い時計のストック画像（「画像 X」と呼びましょう）がDynamic Mediaにアップロードされています。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer) |
-| **マスクの作成** | ・件名（効果を適用する領域）と背景（変更する領域）を定義するマスクを作成します。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)<br>・通常、マスクはグレースケール画像です。白は被写体、黒は背景を表します。 Adobe Photoshopなどのツールを使用してマスクを作成できます。<br>詳細情報 に移動 [Photoshopでのクイックマスクの作成と編集](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>・「画像 X」には、強調したい被写体を的確に輪郭を描いたマスクを作成。 例えば、人物、オブジェクトなど。 |
-| **Dynamic Media URL コマンドを効果に適用する** | マスクを設定したら、URL コマンドを使用して、ドロップシャドウなどの効果を適用したり、背景色を「画像 X」に変更したりします。 次の 2 つの例があります。<br><br> ・ **ドロップシャドウ効果：**<br>&#x200B;件名の境界線に沿ってドロップシャドウ効果を追加するには、次のように URL を編集します。<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>この URL では、 `$shadow$` パラメーターはシャドウ効果を作成し、 `color=0,0,0` 影の色を黒に設定します。<br>・ **背景色の変更：**<br>&#x200B;背景色を変更するには、次のように異なる背景色の値を指定して URL を使用します。<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> この例では、 `color=255,255,0` 背景色を黄色に設定します。 視覚的な効果を得るために、背景を特定の色に編集します。 |
+| **元の画像をアップロードして公開** | • まず、元の画像を Dynamic Media にアップロードします。<br>• 公開されており、URL を通じてアクセスできることを確認します。<br>• この例では、白い背景の時計のストック画像（「画像 X」と呼びます）が Dynamic Media にアップロードされます。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer) |
+| **マスクを作成** | • サブジェクト（効果を適用する領域）と背景（変更する領域）を定義するマスクを作成します。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)<br>• マスクは通常、グレースケール画像で、白はサブジェクトを表し、黒は背景を表します。Adobe Photoshop などのツールを使用してマスクを作成できます。<br>詳しくは、[Photoshop でのクイックマスクの作成と編集](https://helpx.adobe.com/jp/photoshop/using/create-temporary-quick-mask.html)を参照してください。<br>• 「画像 X」では、強調するサブジェクトの輪郭を正確に描くマスクを作成します。例えば、ユーザー、オブジェクトなどです。 |
+| **Dynamic Media URL コマンドを効果に適用** | マスクを作成したら、URL コマンドを使用してドロップシャドウなどの効果を適用したり、背景色を「画像 X」に変更したりします。次の 2 つの例があります。<br><br> • **ドロップシャドウ効果：**<br>&#x200B;サブジェクトの境界に沿ってドロップシャドウ効果を追加するには、URL を次のように編集します。<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>この URL では、`$shadow$` パラメーターによってシャドウ効果が作成され、`color=0,0,0` によってシャドウの色が黒に設定されます。<br>• **背景色の変更：**<br>&#x200B;背景色を変更するには、異なる背景色の値を持つ次の URL を使用します。<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br>この例では、`color=255,255,0` によって背景色が黄色に設定されます。視覚効果を得るために、背景を特定の色に編集します。 |
 
 #### 画像の境界線の追加
 
-Dynamic Mediaでは、URL を使用して画像を直接操作できるので、動的なデジタルエクスペリエンスを作成するための強力なツールになります。 以下に例を示します。 まず、次の元の画像 URL から見てみましょう。 [https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel).
+Dynamic Media を使用すると、URL を通じて画像を直接操作できるので、動的なデジタルエクスペリエンスを作成するための強力なツールになります。一部の例を以下に示します。まず、次の元の画像の URL から始めましょう。[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel)。
 
-| タスク | 対処方法 |
+| タスク | 実行内容 |
 | --- | --- |
-| **白い境界線** | 白い境界線を追加するには、次の URL を使用します。<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10)<br>この URL では、 `extend=10,10,10,10` パラメーターは、すべての辺の境界線のサイズを 10 ピクセルに指定します。 |
-| **白い境界線に沿ってぼかします** | 白い境界線に沿ってブラー効果を追加するには、次のように URL を編集します。<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0)<br>この URL では、 `effect=-1` パラメータはブラー効果を適用し、 `op_blur=60` ブラーの強度を制御します。 |
-| **外側の境界に沿ったドロップシャドウ効果** | 外側の境界に沿ってドロップシャドウ効果を追加するには、次の URL を使用します。<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;$shadow$&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;$shadow$&amp;color=0,0,0)<br>この `$shadow$` パラメーターはシャドウ効果を作成し、 `color=0,0,0` 影の色を黒に設定します。 |
+| **白い境界線** | 白い境界線を追加するには、次の URL を使用します。<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10)<br>この URL では、`extend=10,10,10,10` パラメーターによって、すべての辺の境界サイズが 10 ピクセルに指定されます。 |
+| **白い境界線に沿ってぼかす** | 白い境界線に沿ってブラーエフェクトを追加するには、次のように URL を編集します。<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0)<br>この URL では、`effect=-1` パラメーターによって、ブラーエフェクトが適用され、`op_blur=60` によってぼかしの強度が制御されます。 |
+| **外側の境界に沿ったドロップシャドウ効果** | 外側の境界に沿ってドロップシャドウ効果を追加するには、次の URL を使用します。<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;$shadow$&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;$shadow$&amp;color=0,0,0)<br>`$shadow$` パラメーターによってシャドウ効果が作成され、`color=0,0,0` によってシャドウの色が黒に設定されます。 |
 
-これらの URL を自由に試して、目的の視覚効果を実現してください。
+目的の視覚効果を得るには、これらの URL を自由に試してください。
 
 #### 画像オーバーレイの作成
 
-既存の画像にロゴやアイコンを重ねたい場合は、Dynamic Mediaの URL コマンドを使用すると簡単に行うことができます。 手順を分解しましょう。
+既存の画像にロゴやアイコンを重ねて表示する場合は、Dynamic Media では URL コマンドを使用すると簡単に行うことができます。手順を詳しく見てみましょう。
 
-| 手順 | 対処方法 |
+| 手順 | 実行内容 |
 | --- | --- |
-| **ベース画像をアップロードして公開する** | まず、ロゴまたはアイコンを重ね合わせるベース画像をアップロードして公開します。 任意の画像をベースとして使用できます。<br>例えば、次にベース画像を示します。<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa). |
-| **ロゴまたはアイコン画像をアップロードして公開する** | 次に、ベース画像にスーパーインポーズする画像をアップロードして公開します。 この画像は、オーバーレイするロゴまたはアイコンを含む透明 PNG である必要があります。<br>次に、重ね合わせる透明効果を持つ星オブジェクトの透明 PNG 画像を示します。<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **Dynamic Media URL を適用** | 次に、ベース画像とロゴまたはアイコン画像を組み合わせたDynamic Media URL を作成します。 URL コマンドを使用すると、この効果を実現できます。<br>URL 構造は次のようになります。<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>ここで、<br>・ `hotspotRetailBaseImage` はベース画像です。<br>・ `starxp` はロゴ / アイコンの画像です。<br>・ `layer=1` ロゴまたはアイコンを基本画像の上に重ねて表示するように指定します。<br>・ `scale=1.25` ロゴ/アイコンのサイズを調整します。<br>・ `posN=0.33,-.25` ロゴ/アイコンの基本画像を基準とした位置を決定します。<br>・ `fmt=png` 出力が PNG 形式であることを確認します。 |
+| **ベース画像をアップロードして公開** | まず、ロゴやアイコンを重ねて表示するベース画像をアップロードして公開します。任意の画像をベースとして使用できます。<br>例えば、次にベース画像を示します。<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa)。 |
+| **ロゴやアイコン画像をアップロードして公開** | 次に、ベース画像の上に重ねて表示する画像をアップロードして公開します。この画像は、オーバーレイするロゴやアイコンを含む透明な PNG にする必要があります。<br>次に、重ねて表示する透明効果のある星形オブジェクトの透明な PNG 画像を示します。<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
+| **Dynamic Media URL を適用** | 次に、ベース画像とロゴやアイコン画像を組み合わせた Dynamic Media URL を作成します。URL コマンドを使用すると、この効果を得ることができます。<br>URL 構造は次のようになります。<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>ここで、<br>• `hotspotRetailBaseImage` は、ベース画像です。<br>• `starxp` は、ロゴ／アイコンの画像です。<br>• `layer=1` は、ロゴやアイコンをベース画像の上に重ねることを指定します。<br>• `scale=1.25` は、ロゴ／アイコンのサイズを調整します。<br>• `posN=0.33,-.25` は、ベース画像に対するロゴ／アイコンの位置を決定します。<br>• `fmt=png` は、出力が PNG 形式になることを保証します。 |
 
-詳細情報 に移動 [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) の詳細 `src` コマンドおよびその他のDynamic Media URL コマンド。
+詳しくは、[src](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) を参照して、`src` コマンドおよびその他の Dynamic Media URL コマンドの詳細を確認してください。
 
 
 #### プロモーションテキストのオーバーレイ
 
-HTMLと CSS を使用してプロモーションテキストメッセージを画像にオーバーレイする手順を以下に示します。
+HTML と CSS を使用して画像にプロモーションテキストメッセージをオーバーレイする手順を以下に示します。
 
-| 手順 | 対処方法 |
+| 手順 | 実行内容 |
 | --- | --- |
-| **ベース画像をアップロードして公開する** | まず、テキストを重ね合わせるベース画像をアップロードして公開します。 任意の画像を使用できます。 例えば、ベース画像のサンプルを次に示します。<br>[https://s7g2.scene7.com/is/image/genaibeta/leather-sofa](https://s7g2.scene7.com/is/image/genaibeta/leather-sofa)<br> |
-| **Dynamic Mediaのテキスト演算子の適用** | Dynamic Mediaを使用すると、テキスト演算子を適用して、画像に直接ダイナミックテキストをオーバーレイできます。 次のサンプル URL は、この機能を示しています。<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fontbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fontbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF333&amp;wid=600&amp;hei=600) |
+| **ベース画像をアップロードして公開** | まず、テキストを重ねて表示するベース画像をアップロードして公開します。任意の画像を使用できます。例えば、ベース画像のサンプルを次に示します。<br>[https://s7g2.scene7.com/is/image/genaibeta/leather-sofa](https://s7g2.scene7.com/is/image/genaibeta/leather-sofa)<br> |
+| **Dynamic Media のテキスト演算子を適用** | Dynamic Media を使用すると、テキスト演算子を適用して、動的なテキストを画像に直接オーバーレイできます。次のサンプル URL は、この機能を示します。<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600) |
 
-#### 様々なユースケースでのサイズ変更と切り抜き
+#### 様々なユースケースに対応したサイズ変更と切り抜き
 
-##### 画像のサイズ変更の基本事項
+##### 画像のサイズ変更の基本
 
-画像のサイズ変更には、画像のサイズ、解像度およびファイルサイズの変更が含まれます。 考慮すべき重要なポイントを次に示します。
+画像のサイズ変更には、画像のサイズ、解像度、ファイルサイズの変更が含まれます。考慮すべき重要なポイントは次のとおりです。
 
 * **ピクセル構成：**
-デジタル画像は、ピクセルと呼ばれる小さな点で構成されています。 画像を作成すると、特定のピクセル数になります。 サイズを変更するには、ピクセルを追加または減算して、画像のサイズ、解像度およびファイルサイズを変更します。
+デジタル画像は、ピクセルと呼ばれる小さな点で構成されます。画像を作成する際には、特定の数のピクセルが含まれます。サイズ変更では、ピクセルを追加または削除して、画像のサイズ、解像度、ファイルサイズを変更します。
 * **縦横比：**
-歪みを防ぐには、縦横比（幅と高さの関係）を維持することが重要です。 画像を拡大する場合（アップスケーリング）でも縮小する場合（ダウンスケーリング）でも、縦横比を維持することで視覚的な一貫性を確保できます。
-* **品質に関する考慮事項**
-サイズ変更は、画質に影響を与える場合があります。 ピクセル化につながる可能性があるので、大幅なアップスケーリングは避けます。 代わりに、より大きなサイズと解像度で画像を再現することを検討してください。 画像が小さい場合は、適切なツールを使用して解像度を維持します。
+歪みを防ぐには、縦横比（幅と高さの関係）を維持することが重要です。画像を拡大（アップスケーリング）する場合でも、縮小（ダウンスケーリング）する場合でも、縦横比を維持することで視覚的な一貫性が確保されます。
+* **品質に関する考慮事項：**
+サイズ変更は、画質に影響を与える場合があります。ピクセル化につながる可能性があるので、大幅なアップスケーリングは回避します。代わりに、より大きなサイズと解像度で画像を再現することを検討してください。画像が小さい場合は、適切なツールを使用して解像度を維持します。
 
 ##### 切り抜きとサイズ変更
 
-切り抜きとサイズ変更は、Dynamic Mediaのテクニックで、サムネール、商品ディスプレイ画像、バナーなどを作成する場合でも、様々なユースケースに合わせて画像を変換できます。
+切り抜きとサイズ変更は、サムネール、製品表示画像、バナーの作成など、様々なユースケースに合わせて画像を変換できる Dynamic Media の手法です。
 
 * **切り抜き：**
-画像の一部を削除して、構成とフレームを変更します。 全体の寸法は変更されませんが、特定の領域に焦点を当てます。
+画像の一部を削除して、構成とフレーミングを変更します。全体の寸法は変更しませんが、特定の領域に焦点を当てます。
 * **サイズ変更：**
 縦横比を維持しながら、画像全体の寸法、解像度、ファイルサイズを調整します。
 
 次のリビングルームの画像を含むユースケースを見てみましょう。
 
-* **リビングのオリジナル画像：**
+* **元のリビングルームの画像：**
   [https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa)
-* **サムネール （200 ピクセル x 200 ピクセル）:**
-すばやく読み込んだり表示したりするのに適した小さいバージョン。
+* **サムネール（200 ピクセル x 200 ピクセル）：**
+すばやく読み込んだり表示したりするのに適した小さいバージョンです。
   [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&amp;hei=200&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&amp;hei=200&amp;fit=crop)
-* **切り抜き付きサムネール（200 ピクセル x 200 ピクセル）:**
-ソファエリアに焦点を当てるために切り抜きました。
+* **切り抜き付きサムネール（200 ピクセル x 200 ピクセル）：**
+ソファ領域にフォーカスするために切り抜きました。
   [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&amp;hei=200&amp;cropN=.24,.24,.6,.72&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&amp;hei=200&amp;cropN=.24,.24,.6,.72&amp;fit=crop)
-* **製品表示画像（800 ピクセル x 600 ピクセル）:**
+* **製品表示画像（800 ピクセル x 600 ピクセル）：**
 ソファを表示するために切り抜いてサイズ変更しました。
   [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&amp;hei=600&amp;cropN=.24,.24,.6,.72&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&amp;hei=600&amp;cropN=.24,.24,.6,.72&amp;fit=crop)
-* **バナー（1720 ピクセル x 820 ピクセル）:**
-元の画像から派生し、部屋を強調します。
+* **バナー（1720 ピクセル x 820 ピクセル）：**
+元の画像から派生し、部屋を強調しました。
   [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&amp;hei=820&amp;cropN=0,.1,1,1&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&amp;hei=820&amp;cropN=0,.1,1,1&amp;fit=crop)
 
-具体的なニーズに合わせて、これらのバリエーションを自由に調べることができます。
-URL 内で使用できるコマンドについて詳しくは、 に移動 [コマンドリファレンス](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
+特定のニーズに合わせて、これらのバリエーションを自由に検討してください。
+URL 内で使用できるコマンドについて詳しくは、[コマンドリファレンス](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)を参照してください。
 
-### Web サイトのビデオを公開する
+### Web サイトにビデオを公開する
 
-**ビジネス ケース：** *マーケティングサイトのビデオをすばやく公開します。*
+**ビジネスケース：** *マーケティングサイトのビデオをすばやく公開します。*
 
-* **ビデオプロファイルを選択します。**
-まず、Dynamic Mediaで適切なビデオプロファイルを選択する必要があります。 を選択できます *アダプティブビデオエンコーディング* プロファイルは、AEM Assetsの「ビデオプロファイル」で使用できます。 これらの事前定義されたエンコーディング設定により、様々なデバイスや帯域幅の条件で再生できるようにビデオが最適化されます。 または、独自のアダプティブビデオプロファイルを作成することもできます。
-* **プロファイルを割り当てます。**
-選択したビデオプロファイルを、ビデオのアップロード先フォルダーに割り当てます。 この手順により、アップロードプロセス中に正しいエンコーディング設定が適用されるようになります。
-* **オリジナルビデオをアップロードします。**
-元のビデオファイルをアップロードします。 高画質のビデオであることを確認してください。 ソースビデオが良いほど、最終結果も良くなります。
+* **ビデオプロファイルの選択：**
+まず、Dynamic Media で適切なビデオプロファイルを選択する必要があります。AEM Assets のビデオプロファイルで利用可能な*アダプティブビデオエンコーディング*&#x200B;プロファイルを選択できます。これらの事前定義されたエンコーディング設定により、様々なデバイスや帯域幅の条件で再生できるようにビデオが最適化されます。または、独自のアダプティブビデオプロファイルを作成することもできます。
+* **プロファイルの割り当て：**
+選択したビデオプロファイルを、ビデオのアップロード先フォルダーに割り当てます。この手順により、アップロードプロセス中に正しいエンコーディング設定が適用されるようになります。
+* **オリジナルビデオのアップロード：**
+オリジナルビデオファイルをアップロードします。高画質のビデオであることを確認してください。ソースビデオが優れているほど、最終結果も良くなります。
 * **プレビューと公開：**
-ビデオをプレビューして、すべてが期待どおりに表示されることを確認します。 満足したら、公開します。 この手順により、オーディエンスがビデオにアクセスできるようになります。
+ビデオをプレビューして、すべてが期待どおりに表示されることを確認します。満足な結果であれば、公開します。この手順により、オーディエンスがビデオにアクセスできるようになります。
 * **リンクまたは埋め込み：**
 公開後、次の 2 つのオプションがあります。
    * **直接リンク：**
-指定された URL を使用して、ビデオに直接リンクします。 マーケティングサイトで適切にハイパーリンクを設定します。
-   * **ビデオを埋め込みます。**
-提供された埋め込みコードをコピーして、Web ページのビデオを表示するHTMLーに貼り付けます。 これにより、ビデオをサイトで直接再生できます。
+指定された URL を使用して、ビデオに直接リンクします。マーケティングサイトで適切にハイパーリンクを設定します。
+   * **ビデオの埋め込み：**
+提供された埋め込みコードをコピーして、ビデオを表示する web ページの HTML に貼り付けます。これにより、ビデオをサイトで直接再生できます。
 
-詳しくは、に移動 [ビデオ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
+詳しくは、「[ビデオ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video)」に移動します。
 
-### 最適な品質とエンゲージメントのためのビデオの設定
+### 最適な品質とエンゲージメントのためのビデオ設定
 
-**ビジネス ケース：** *最高の品質とエンゲージメントを得るために、ビデオを設定します。*
+**ビジネスケース：** *最高の品質とエンゲージメントを得るために、ビデオを設定します。*
 
 ビデオの品質とエンゲージメントを最適なものにするには、次のベストプラクティス戦略を組み合わせて実装することを検討してください。
 
-* **組み込みのHTML5 ビデオビューアを使用します。**
-Dynamic Media HTML5 ビデオビューアプリセットは、堅牢なビデオプレーヤーです。 これらを使用すると、HTML5 ビデオの再生とモバイルデバイスに関連するよくある問題を回避できます。
-これらのプリセットは、アダプティブビットレートストリーミング配信やデスクトップブラウザーの限られたリーチなどの課題に対処します。
-詳しくは、に移動 [ベストプラクティス：HTML 5 ビデオビューアの使用](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
+* **組み込みの HTML5 ビデオビューアの使用：**
+Dynamic Media HTML5 ビデオビューアプリセットは、堅牢なビデオプレーヤーです。これらを使用すると、HTML5 ビデオの再生とモバイルデバイスに関連するよくある問題を回避できます。
+これらのプリセットは、アダプティブビットレートストリーミング配信やデスクトップブラウザーの範囲制限などの課題に対処します。
+詳しくは、[ベストプラクティス：HTML 5 ビデオビューアの使用](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer)を参照してください。
 
-* **Dynamic Media ビデオプロファイルを使用します。**
-Dynamic Mediaのビデオプロファイルは、効率的なビデオ管理、一貫した画質およびアダプティブストリーミングに役立ちます。
-詳しくは、に移動 [Dynamic Media ビデオプロファイル](/help/assets/dynamic-media/video-profiles.md).
+* **Dynamic Media ビデオプロファイルの使用：**
+Dynamic Media のビデオプロファイルは、効率的なビデオ管理、一貫した画質およびアダプティブストリーミングに役立ちます。
+詳しくは、[Dynamic Media ビデオプロファイル](/help/assets/dynamic-media/video-profiles.md)を参照してください。
 
-* **ビデオエンコーディングのベストプラクティスに従います。**
-エンコード時に過度のダウンスケーリングを行わずに元のビデオ品質を維持するビデオエンコーディングプロファイルを適用します。
-詳しくは、に移動 [ビデオエンコーディングのベストプラクティス](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
+* **ビデオエンコーディングのベストプラクティスに従う：**
+エンコード時に過度のダウンスケーリングを行わずに、元のビデオ品質を維持するビデオエンコーディングプロファイルを適用します。
+詳しくは、[ビデオエンコーディングのベストプラクティス](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos)を参照してください。
 
-* **プログレッシブストリーミングの代わりにアダプティブストリーミングを採用する：**
+* **プログレッシブストリーミングの代わりにアダプティブストリーミングを採用：**
 アダプティブストリーミングは、ビューアのインターネット接続速度とデバイス機能に基づいてビデオ品質を調整します。
-HLS （HTTP ライブストリーミング）や DASH （`Dynamic Adaptive Streaming over HTTP`）を選択して、最適な再生品質を確保します。
+HLS（HTTP ライブストリーミング）や DASH（`Dynamic Adaptive Streaming over HTTP`）などのプロトコルを使用して、最適な再生品質を実現します。
 ビデオを線形に配信するプログレッシブストリーミングとは異なり、アダプティブストリーミングはバッファリングを最小限に抑え、シームレスな視聴エクスペリエンスを提供します。
 
-* **アカウントで DASH を有効にする（HTTP でのデジタルアダプティブストリーミング）:**
+* **アカウントで DASH を有効にする（HTTP でのデジタルアダプティブストリーミング）：**
 DASH は、アダプティブストリーミングを使用してビデオコンテンツを動的に提供します。
 DASH を有効にするには、環境のサポートチケットを作成します。
-詳しくは、に移動 [Dynamic Media アカウントで DASH を有効にする](/help/assets/dynamic-media/video.md#enable-dash).
+詳しくは、[Dynamic Media アカウントで DASH を有効にする](/help/assets/dynamic-media/video.md#enable-dash)を参照してください。
 
-### 多言語消費のためのビデオの国際化
+### 多言語で利用できるようにビデオを国際化する
 
-**ビジネス ケース：** *ビデオを多言語消費に対応させます。*
+**ビジネスケース：***ビデオを多言語で利用できるように準備します。*
 
-多言語消費のためのビデオの国際化は、グローバルオーディエンスにリーチするために不可欠です。 Dynamic Mediaには、この目標を達成するのに役立つ機能が用意されています。
+グローバルオーディエンスにリーチするには、多言語で利用できるようにビデオを国際化することが不可欠です。Dynamic Media には、この目標を達成するのに役立つ機能が用意されています。
 
-* **ビデオをアップロードします。**
-   * まず、ビデオエンコーディングプロファイルを作成します。 Dynamic Mediaに付属している事前定義済みのアダプティブビデオエンコーディングプロファイルを使用するか、独自のカスタムプロファイルを作成できます。
-   * プライマリソースビデオをアップロードする 1 つ以上のフォルダーにビデオ処理プロファイルを関連付けます。
-   * これらのフォルダーにプライマリソースビデオをアップロードします。 Dynamic Mediaは、割り当てられたビデオ処理プロファイルに基づいてそれらをエンコードします。
-   * Dynamic Mediaは主に、最小解像度が 25 × 25 を超える短時間（最大 30 分）のビデオをサポートします。 15GB までの動画ファイルをアップロードできます 1.
+* **ビデオのアップロード**
+   * まず、ビデオエンコーディングプロファイルを作成します。Dynamic Media に付属している事前定義済みのアダプティブビデオエンコーディングプロファイルを使用することも、独自のカスタムプロファイルを作成することもできます。
+   * ビデオ処理プロファイルを、プライマリソースビデオのアップロード先となる 1 つ以上のフォルダーに関連付けます。
+   * プライマリソースビデオをこれらのフォルダーにアップロードします。Dynamic Media では、割り当てたビデオ処理プロファイルに基づいてエンコードします。
+   * Dynamic Media では、最小解像度が 25 × 25 を超える短い形式のビデオ（最大長 30 分）が主にサポートされています。最大 15 GB のビデオファイルをアップロードできます。1
 
 * **ビデオを管理：**
-   * AEM内のビデオアセットを整理、参照および検索します。
-   * ビデオアセットのプレビューと公開。
+   * AEM 内でビデオアセットを整理、参照、検索します。
+   * ビデオアセットをプレビューして公開します。
    * ソースビデオとそのエンコードされたレンディションを、関連するサムネールと共に表示します。
-   * タイトル、説明、タグ 2 など、ビデオのプロパティを編集します。
+   * タイトル、説明、タグなどのビデオプロパティを編集します。2
 
 * **ローカライゼーション：**
-   * ターゲットの地域/言語ごとに、オーディオトラックとサブタイトルを作成します。
+   * ターゲットとなる地域／言語ごとに、オーディオトラックとサブタイトルを作成します。
    * AEM インターフェイスからこれらのオーディオトラックとサブタイトルトラックをビデオに追加します。
-   * ユーザーがビデオを再生する際に、オーディオとサブタイトルで優先言語を選択できます。
+   * ユーザーはビデオを再生する際に、オーディオとサブタイトルの優先言語を選択できます。
 
-* **公開中：**
-   * AEMを Web コンテンツ管理（WCM）システムとして使用している場合は、web ページにビデオを直接追加できます。
+* **公開：**
+   * Web コンテンツ管理（WCM）システムとして AEM を使用している場合は、web ページにビデオを直接追加できます。
    * サードパーティの WCM システムを使用している場合は、URL または埋め込みコードを使用して、web ページにビデオをリンクまたは埋め込むことができます。
 
-詳しくは、に移動 [Dynamic Mediaでのビデオの複数キャプションおよびオーディオトラックのサポートについて](/help/assets/dynamic-media/video.md#about-msma) または時計 [ビデオへの複数のキャプションとオーディオトラックの追加](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) （1 分、41 秒）。
+詳しくは、[Dynamic Media におけるビデオの複数のキャプションとオーディオトラックのサポートについて](/help/assets/dynamic-media/video.md#about-msma)を参照するか、[ビデオに複数のキャプションおよびオーディオトラックを追加](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play)（1 分 41 秒）をご覧ください。
 
 
-## 顧客へのアセットの配信
+## 顧客へのアセットの送信
 
-### 画像サイズを最適化し、ページの読み込み時間を最小限に抑える
+### 画像サイズの最適化とページの読み込み時間の最小化
 
-**ビジネス ケース：** *ブラウザーまたは画面の画像のサイズを最適化し、ページの読み込み時間を短縮します。*
+**ビジネスケース：***任意のブラウザーまたは画面に合わせて画像のサイズを最適化し、ページの読み込み時間を短縮します。*
 
-Dynamic Media スマートイメージングは、クライアントのブラウザーの機能に応じて画像の形式、サイズ、画質を自動的に最適化することで、画像配信のパフォーマンスを向上させる強力なツールです。
+Dynamic Media スマートイメージングは、クライアントのブラウザー機能に基づいて画像の形式、サイズ、品質を自動的に最適化することで、画像配信のパフォーマンスを向上させる強力なツールです。
 
-Adobeでは、画像フォーマットを手動でに設定するのではなく、スマートイメージングの機能を使用することをお勧めします。 `webp` または `avif`. 理由は次のとおりです。
+アドビでは、画像形式を手動で `webp` または `avif` に設定するのではなく、スマートイメージングの機能を使用することをお勧めします。理由は次のとおりです。
 
 * **ブラウザーの互換性：**
 スマートイメージングは、配信される画像形式がユーザーのブラウザーと互換性があることを保証します。
 * **最適な圧縮：**
-特定のブラウザー、ネットワーク条件、画面の解像度に基づいて、圧縮に最適な形式を選択します。
+特定のブラウザー、ネットワーク条件、画面解像度に基づいて、圧縮に最適な形式を選択します。
 * **最新の形式：**
-While `avif` は、より高い圧縮を提供する新しい形式です。まだ、すべてのブラウザーで広くサポートされているわけではありません。
+`avif` はより優れた圧縮を提供する新しい形式ですが、まだすべてのブラウザーで一般的に広くサポートされているわけではありません。
 * **ベストプラクティス：**
-Web に最適な形式を保証するには、コマンドを手動で使用するのではなく、スマートイメージングを信頼して形式を選択します `fmt=webp` または `fmt=avif`.
+最適な web 最適化形式を保証するには、コマンド `fmt=webp` または `fmt=avif` を手動で使用するのではなく、スマートイメージングを信頼して形式を選択できます。
 
-スマートイメージングを利用すると、各ユーザーの閲覧環境に合わせて、可能な限り効率的に画像を配信できます。 このアプローチにより、プロセスが簡素化され、画像の読み込み時間と全体的なユーザーエクスペリエンスの観点からパフォーマンスが向上します。
+スマートイメージングを利用することで、各ユーザーのブラウジング環境に合わせて、画像を可能な限り効率的に配信できます。このアプローチにより、プロセスが簡素化され、画像の読み込み時間と全体的なユーザーエクスペリエンスの観点からパフォーマンスが向上します。
 
 詳しくは、[スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)を参照してください。
