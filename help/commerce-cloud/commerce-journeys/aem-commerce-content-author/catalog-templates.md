@@ -2,8 +2,10 @@
 title: 製品カタログのページとテンプレートを管理
 description: 製品カタログのページとテンプレートの管理方法を説明します
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 100%
 

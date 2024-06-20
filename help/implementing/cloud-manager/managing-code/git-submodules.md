@@ -1,13 +1,15 @@
 ---
 title: Git サブモジュールのサポート
 description: Git サブモジュールを使用して、ビルド時に Git リポジトリ間で複数のブランチのコンテンツを結合する方法について説明します。
-source-git-commit: 34c96940f91d42d622d50e85e9a9d6f75f3fb483
-workflow-type: ht
+exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 100%
 
 ---
-
 
 # Adobe リポジトリに対する Git サブモジュールのサポート {#git-submodule-support}
 

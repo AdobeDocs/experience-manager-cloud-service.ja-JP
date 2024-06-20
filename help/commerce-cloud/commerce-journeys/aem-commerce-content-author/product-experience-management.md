@@ -2,9 +2,11 @@
 title: 製品エクスペリエンスの構築
 description: 様々なチャネルで使用して、臨場感のあるショッピングエクスペリエンスを作成できる製品コンテンツの構築方法を説明します。
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
-workflow-type: ht
-source-wordcount: '1165'
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
+source-wordcount: '1157'
 ht-degree: 100%
 
 ---
@@ -103,7 +105,7 @@ AEM では、様々なタイプのコンテンツを作成し、それらを製�
 
 ## ジャーニーの終了 {#end-of-journey}
 
-おめでとうございます。AEM Content and Commerce Developer ジャーニーが完了しました。その結果、以下を達成できました。
+これで完了です。AEM Content and Commerce Developer ジャーニーが完了しました。その結果、以下を達成できました。
 
 * 任意の AEM コンテンツを製品カタログオブジェクトに関連付ける方法を理解する
 * 製品ページとカテゴリページを個別に拡張するためのプレースホルダーを使用する

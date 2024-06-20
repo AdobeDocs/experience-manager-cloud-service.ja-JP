@@ -3,7 +3,8 @@ title: CDN 資格情報および認証の設定
 description: 設定ファイルでルールを宣言し、Cloud Manager 設定パイプラインを使用してデプロイして、CDN 資格情報と認証を設定する方法について説明します。
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
-source-git-commit: e6059a1109ca93452f80440744338b809279db9b
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 98%

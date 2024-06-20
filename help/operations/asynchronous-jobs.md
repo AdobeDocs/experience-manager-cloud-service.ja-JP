@@ -2,8 +2,10 @@
 title: 非同期ジョブ
 description: Adobe Experience Manager では、リソースを集中的に消費する一部のタスクをバックグラウンド操作として非同期に処理することでパフォーマンスを最適化します。
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: ht
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 100%
 

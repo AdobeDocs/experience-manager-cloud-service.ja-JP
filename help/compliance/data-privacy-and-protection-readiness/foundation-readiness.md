@@ -2,9 +2,11 @@
 title: データ保護とデータプライバシーに関する規制 - Adobe Experience Manager as a Data Foundation の対応
 description: 様々なデータ保護およびデータプライバシー規制に対する Adobe Experience Manager as a Cloud Service Foundation のサポートについて説明します。この記事には、EU 一般データ保護規則（GDPR）、カリフォルニア州消費者プライバシー法および新規 AEM as a Cloud Service プロジェクトを実装する際に準拠する方法が含まれています。
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
-workflow-type: ht
-source-wordcount: '503'
+feature: Compliance
+role: Admin, Architect, Developer, Leader
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
+source-wordcount: '501'
 ht-degree: 100%
 
 ---
@@ -110,7 +112,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 **ユーザーの無効化:**
 
-上記のコマンドから返された JSON ペイロードの home プロパティに含まれているノードパスを使用：
+上記のコマンドで返された JSON ペイロードの home プロパティに含まれているノードパスの使用
 
 ```shell
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (Data Privacy in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'

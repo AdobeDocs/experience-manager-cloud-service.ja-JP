@@ -1,13 +1,15 @@
 ---
 title: Cloud Manager でのプライベートリポジトリの追加
 description: 独自のプライベート GitHub リポジトリを操作するために Cloud Manager を設定する方法について説明します。
-source-git-commit: 7f598a623c3003b20a074c31749382df7f5f5ca6
+exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 100%
 
 ---
-
 
 # Cloud Manager でのプライベートリポジトリの追加 {#private-repositories}
 

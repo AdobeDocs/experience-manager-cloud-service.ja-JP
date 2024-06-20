@@ -8,8 +8,9 @@ activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
-workflow-type: ht
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 100%
 

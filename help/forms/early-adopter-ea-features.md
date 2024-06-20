@@ -2,11 +2,14 @@
 title: の現在の早期導入者機能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
 description: の現在の早期導入者機能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
 Feature: Introduction
-Role: developer, user
-source-git-commit: e6ceb53ee821a1fde5e79c687a4445d6c18faf54
+Role: developer, user, author
+exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
+feature: Adaptive Forms
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '1731'
-ht-degree: 9%
+ht-degree: 25%
 
 ---
 
@@ -20,7 +23,7 @@ AEM Forms早期導入プログラムは、誰よりも先に最先端の機能�
 
 ## 早期導入プログラムへの参加方法
 
-早期導入プログラムに参加して早期導入イノベーションを得たい場合は、公式アドレスからにメールを送信するだけです。 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  アクセスをリクエストします。 すべてまたは特定のイノベーションへのアクセスをリクエストできます。
+早期導入プログラムに参加して早期導入イノベーションを得たい場合は、公式アドレスからにメールを送信するだけです。 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  アクセスをリクエストします。 すべてのイノベーションまたは特定のイノベーションに対して利用申請できます。
 
 ## 早期導入イノベーション
 
@@ -123,15 +126,15 @@ AEM アダプティブFormsで作成された web サイト上のフォームが
 
 ### ボット保護方法の強化
 
-AEM Formsは、2 つの一般的な CAPTCHA ソリューション（Cloudflare Turnstile および hCaptcha）のサポートを追加することにより、セキュリティ機能を強化しました。 これにより、既に利用可能なGoogle reCAPTCHA が追加され、ボットやスパムの送信からフォームを保護するためのより多くの選択肢と柔軟性が提供されます。
+AEM Forms では、Cloudflare Turnstile と hCaptcha という 2 つの一般的な Captcha ソリューションのサポートを追加して、セキュリティ機能を強化しました。これにより、既に利用可能な Google reCAPTCHA が追加され、ボットやスパムの送信からフォームを保護するためのより多くの選択肢と柔軟性がユーザーに提供されます。
 
-* **Cloudflare Turnstile**：この摩擦のない CAPTCHA は、明示的なインタラクションを必要としないシンプルなチャレンジを通じてユーザーを検証します。 フォームにシームレスに統合し、ユーザーエクスペリエンスを向上させます。
-* **Captcha**：プライバシーに焦点を当てたこの CAPTCHA は、データプライバシーに焦点を当てた、ユーザーフレンドリーな代替手段を提供します。 セキュリティとユーザーエクスペリエンスのバランスを取ることを目的としています。
-* **Google reCAPTCHA**: AEM Formsは、信頼性が高く確立されたソリューションを提供することで、reCAPTCHA v2 と reCAPTCHA Enterprise の両方を引き続きサポートします。
+* **Cloudflare Turnstile**：このスムーズな Captcha は、明示的なインタラクションを必要としないシンプルなテストを通じてユーザーを検証します。フォームにシームレスに統合し、ユーザーエクスペリエンスを向上させます。
+* **hCaptcha**：プライバシーに焦点を当てたこの Captcha は、データプライバシーに焦点を当てた、ユーザーフレンドリーな代替手段を提供します。セキュリティとユーザーエクスペリエンスのバランスを取ることを目的としています。
+* **Google reCAPTCHA**：AEM Forms では、引き続き reCAPTCHA v2 と reCAPTCHA Enterprise の両方をサポートし、信頼性が高く確立されたソリューションを提供します。
 
-AEM Formsでは、複数の CAPTCHA オプションを提供することで、特定のニーズに最適なソリューションを選択できるようになりました。
+AEM Forms では、複数の CAPTCHA オプションを提供して、特定のニーズに最適なソリューションを選択できるようになりました。
 
-これらの CAPTCHA ソリューションをアダプティブFormsに統合する準備はできていますか？ アドビのドキュメントでは、次の各項目に関する詳細な手順を提供します。 [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [Captcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components)、および [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+これらの Captcha ソリューションをアダプティブフォームに統合する準備はできていますか？アドビのドキュメントでは、[Cloudflare Turnstile](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components)、[hCaptcha](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components)、[Google reCAPTCHA](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components) の各項目について詳しい手順を示しています。
 
 ### Doc Assurance API
 
@@ -155,13 +158,13 @@ Doc Assurance API で実行できる操作の分類を次に示します。
 
 ### Forms サービス API
 
-Forms サービスは、データキャプチャ用のインタラクティブPDF formsを生成します。 また、既存のインタラクティブPDFフォームとの間でデータのインポートやエクスポートを行い、送信されたデータを検証することもできます。 機能の分類を次に示します。
+Forms サービスでは、データキャプチャ用のインタラクティブな PDF フォームを生成します。また、既存のインタラクティブPDFフォームとの間でデータのインポートやエクスポートを行い、送信されたデータを検証することもできます。 機能の分類を以下に示します。
 
-* **Formsのレンダリング**:AEM Forms Designer とオプションで XML データを使用して作成されたテンプレートからインタラクティブPDFフォームを生成します。 これは基本的に、オプションでデータが事前入力された入力可能なPDFフォームを生成します。
+* **Forms のレンダリング**：AEM Forms Designer を使用して作成したテンプレートからと、オプションで XML データから、インタラクティブな PDF フォームを生成します。これにより、基本的に、入力可能な PDF フォーム（オプションでデータを事前入力することもできます）が生成されます。
 
-* **データの抽出と読み込み**：既存のPDFフォームにデータを読み込むだけでなく、入力済みのPDFフォームからデータを抽出します。 XDP と XML データ形式の両方がサポートされており、非 XFAPDF forms（AcroForms とも呼ばれます）への読み込みには、FDF および XFDF データもサポートされています。
+* **データの抽出と読み込み**： 既存の PDF フォームにデータを読み込んだり、入力済みの PDF フォームからデータを抽出したりします。XDP と XML の両方のデータ形式がサポートされ、XFA 以外の PDF フォーム（AcroForms とも呼ばれます）への読み込みでは、さらに FDF および XFDF データもサポートされます。
 
-* **データの検証**: AEM Forms Designer を使用して作成されたテンプレートに対して、送信されたデータを XDP 形式または XML 形式で検証します。
+* **データの検証**：XDP または XML 形式で送信されたデータを、AEM Forms Designer を使用して作成されたテンプレートに対して検証します。
 
 ## 関連トピック
 

@@ -1,14 +1,14 @@
 ---
 product: adobe experience manager
-description: Adobe Experience Manager as a Cloud Serviceドキュメント。
+description: Adobe Experience Manager as a Cloud Serviceのドキュメント。
 git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.ja-JP
 index: y
 type: Documentation
 solution: Experience Manager, Experience Manager as a Cloud Service
-feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
+feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager, Experience Manager Screens
 cloud: Experience Cloud
 recommendations: noDisplay
-source-git-commit: 2b2469382fa8adfbf8a0625a90f92e27cdf53d63
+source-git-commit: 79cf47e8500bcd942264ee54b60ec67f59447020
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 51%
@@ -18,7 +18,7 @@ ht-degree: 51%
 
 # 内部使用メタデータ
 
-GitHub オーサリングシステムのメタデータは階層的で、次に示すように前例のレベルが高くなっていきます。
+GitHub オーサリングシステムのメタデータは階層的で、次に示す上位段階まで定義されています。
 
 1. metadata.md
 1. 目次
@@ -49,4 +49,4 @@ metadata.md
 
 * `title`
 * `description`
-* `contentOwner` （以下のコアアセットコンテンツのみ） `/help/assets`)
+* `contentOwner` （の下のコアアセットコンテンツのみ `/help/assets`）

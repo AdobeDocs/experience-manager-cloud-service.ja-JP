@@ -3,8 +3,10 @@ title: Screens as a Cloud Service の Screens 通知サービス
 description: このページでは、Screens as a Cloud Service で通知サービスを設定する方法について説明します。
 index: true
 exl-id: 74215a70-45c8-4b7f-ba30-60c332de07e9
-source-git-commit: 69798b1ac3758d37c4e2f480ccc23bae24d6a814
-workflow-type: ht
+feature: Developing Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 100%
 

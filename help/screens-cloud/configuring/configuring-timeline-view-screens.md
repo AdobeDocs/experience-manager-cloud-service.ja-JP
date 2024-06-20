@@ -2,8 +2,10 @@
 title: AEM Screens のタイムライン表示の設定
 description: このページでは、Screens as a Cloud Service でタイムライン表示を設定する方法について説明します。
 exl-id: 53afe1f5-8f0b-4cca-a819-d3e9375cbe37
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
+feature: Administering Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 100%
 

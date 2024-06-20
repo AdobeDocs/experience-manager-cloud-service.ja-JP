@@ -2,9 +2,11 @@
 title: 製品コックピット
 description: 製品コックピットの操作方法を学びます。製品コクピットでは、リンクされた製品カタログと関連コンテンツの概要を統一して提供します。
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
-workflow-type: ht
-source-wordcount: '448'
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
+source-wordcount: '433'
 ht-degree: 100%
 
 ---
@@ -29,7 +31,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->ステージングされたカタログ機能は、Adobe Commerce およびトークンベースの認証をサポートするサードパーティ製のコネクタでのみ使用できます。
+>ステージングされたカタログ機能は、Adobe Commerce と、トークンベースの認証をサポートするサードパーティ製のコネクタでのみ使用できます。
 
 ## 製品コックピットを開く {#opening-product-cockpit}
 
@@ -47,13 +49,13 @@ ht-degree: 100%
 
 ![カテゴリの子](../assets/catalog-category-children.png)
 
-製品をクリックすると、製品のバリエーションが（使用可能な場合）読み込まれます。
+製品をクリックすると、製品のバリエーションが読み込まれます（使用可能な場合）。
 
 ![製品のバリエーション](../assets/catalog-product-variation.png)
 
 >[!NOTE]
 >
->AEM の製品カタログデータは、設定されたコマースエンドポイントを介してリアルタイムに取得されるデータです。製品カタログデータは AEM に保存されません。
+>AEM の製品カタログデータは、設定されたコマースエンドポイントを介してリアルタイムに取得されるデータです。製品カタログデータは AEM に保存されていません。
 
 ## 製品カタログの検索 {#searching-product-catalog}
 

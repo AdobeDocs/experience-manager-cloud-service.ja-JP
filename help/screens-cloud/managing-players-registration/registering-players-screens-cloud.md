@@ -2,10 +2,12 @@
 title: Screens as a Cloud Service へのプレーヤーの登録
 description: ここでは、Screens as a Cloud Service にプレーヤーを登録する方法について説明します。
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+feature: Developing Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 80%
+source-wordcount: '500'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +30,7 @@ Screens as a Cloud Service にプレーヤーをインストールして設定�
 
 1. Screens サービスプロバイダーにログインします。
 
-1. に移動します。 **登録コード** under **プレーヤーの管理** 左側のナビゲーションパネルから、 **コードの作成**.
+1. 左側のナビゲーションパネルから「**プレーヤー管理**」の下の「**登録コード**」に移動し、「**コードを作成**」をクリックします。
 
    >[!NOTE]
    >有効なコードまたは期限切れでないコードが存在しない場合は、「コードを作成」をクリックし、コードの名前を入力し、必要に応じて有効期限の設定を選択します。
@@ -44,18 +46,18 @@ Screens as a Cloud Service にプレーヤーをインストールして設定�
    1. **使用制限**：登録コードの使用制限をオフにするには、ボタンで切り替えます。デフォルトでは、「使用制限」オプションはオフになっています。
    1. **使用制限**：使用制限の値を選択します
 
-1. クリック **作成** をクリックして、登録コードを作成します。 登録コードがリストに表示されているプレーヤーを確認できます。
+1. 「**作成**」をクリックして、登録コードを作成します。プレーヤーと登録コードがリストに表示されます。
 
    ![画像](/help/screens-cloud/assets/player/register-player3.png)
 
-1. 列の下の値をクリックします。 **登録コード**  をクリックして、値をクリップボードにコピーします。
+1. 「**登録コード**」列の下の値をクリックしてクリップボードにコピーします。
 
-1. この値を **コードを入力** フィールド **プレーヤーの登録** AEM Screens Player の Admin UI から「 」タブをクリックし、 **登録**.
+1. この値を、AEM Screens プレーヤーの管理 UI の「**プレーヤーの登録**」タブの「**コードの入力**」フィールドにペーストし、「**登録**」をクリックします。
 
    ![画像](/help/screens-cloud/assets/player/register-player4.png)
 
 
-1. コードを追加すると、プレーヤーがプレーヤーの Admin UI から登録されたことを確認できます。
+1. コードを追加すると、プレーヤーの管理 UI からプレーヤーが登録されたことを確認できます。
 
    ![画像](/help/screens-cloud/assets/player/register-player5.png)
 

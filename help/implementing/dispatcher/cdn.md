@@ -3,8 +3,9 @@ title: AEM as a Cloud Service での CDN
 description: AEM の管理による CDN を使用する方法と、独自の CDN を AEM の管理による CDN にポイントする方法について説明します。
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 43fdf17ab09fd7a974c32cfd716f65072b678726
-workflow-type: ht
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 100%
 

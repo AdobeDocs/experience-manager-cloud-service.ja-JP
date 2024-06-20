@@ -2,10 +2,12 @@
 title: アクションセンター
 description: アクションセンターを活用して、インシデントやその他の重要な情報への処理を効果的に行います。
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: ae8c5e832134caf4ff6799c601810e9a735f4195
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -74,6 +76,6 @@ AEM as a Cloud Service の通知には複数のタイプがありますが、次
 | ブロックされたレプリケーションキュー | インシデント | キューのブロックを解除するには、[レプリケーションドキュメント](/help/operations/replication.md#troubleshooting)の手順に従ってください。 |
 | 無効な永続 GraphQL クエリ | インシデント | [永続 GraphQL クエリのトラブルシューティングドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=ja)を参照して、無効な GraphQL クエリを修正する |
 | オリジンでのトラフィックスパイク | インシデント | オリジンアラートでのデフォルトのトラフィックスパイクよりも低いしきい値でトリガーされるレート制限トラフィックフィルタールールを設定して、オリジンを保護します。チュートリアルを参照しているトラフィックフィルタールールのドキュメントの[トラフィックルールを使用した DoS および DDoS 攻撃のブロック](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules)の節を参照してください。 |
-| S2S 証明書の有効期限が切れます | 事前対応 | [サーバーサイド API のアクセストークンの生成ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)で資格情報を更新する方法を説明します。 | 接続数の多さ | 事前対応 | での接続プーリングについて説明します [高度なネットワークドキュメントと共に接続プールを使用](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
-| 非推奨のサービスユーザーマッピング | 事前対応 | で示されているように、新しい Sling Service ユーザーマッピング形式を使用する方法について説明します。 [Sling サービスユーザーマッピングおよびサービスユーザー定義のベストプラクティス](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
-| 接続数の多さ | 事前対応 | での接続プーリングについて説明します [高度なネットワークドキュメント](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
+| S2S 証明書の有効期限が切れます | 事前対応 | [サーバーサイド API のアクセストークンの生成ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)で資格情報を更新する方法を説明します。 | 高い接続数 | 事前対応 | 接続プーリングについて詳しくは、[高度なネットワークとの接続プーリングに関するドキュメント](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking)を参照してください |
+| 非推奨（廃止予定）のサービスユーザーマッピング | 事前対応 | 新しい Sling サービスユーザーマッピング形式の使用方法について詳しくは、[Sling サービスユーザーマッピングとサービスユーザー定義のベストプラクティス](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition)を参照してください |
+| 高い接続数 | 事前対応 | 接続プーリングについて詳しくは、[高度なネットワークに関するドキュメント](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking)を参照してください |

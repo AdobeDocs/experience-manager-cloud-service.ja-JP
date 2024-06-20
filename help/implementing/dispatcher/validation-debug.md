@@ -3,8 +3,9 @@ title: Dispatcher ツールを使用した検証とデバッグ
 description: ローカル検証、デバッグ、柔軟なモードのファイル構造、およびレガシーモードから柔軟なモードに移行する方法について説明します。
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 2cb57347856568da979b34832ce12cce295841dd
-workflow-type: ht
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
 source-wordcount: '3028'
 ht-degree: 100%
 

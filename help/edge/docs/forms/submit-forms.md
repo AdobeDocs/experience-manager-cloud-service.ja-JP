@@ -3,8 +3,9 @@ title: データを受け入れるスプレッドシートの準備
 description: スプレッドシートとアダプティブフォームブロックフィールドを使用して、強力なフォームをより迅速に作成します。
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 100%
 

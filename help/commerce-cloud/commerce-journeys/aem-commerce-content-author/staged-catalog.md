@@ -2,9 +2,11 @@
 title: ステージングされた製品カタログエクスペリエンスを管理
 description: ステージングされた製品カタログエクスペリエンスを管理する方法を説明します。
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '493'
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
+source-wordcount: '487'
 ht-degree: 100%
 
 ---

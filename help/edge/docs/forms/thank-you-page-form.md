@@ -3,8 +3,9 @@ title: フォーム送信後にカスタムのお礼のメッセージを表示
 description: フォームブロックのお礼のページとリダイレクトを設定して、ユーザーエクスペリエンスを最適化し、ユーザージャーニーを効率化する方法について説明します。
 feature: Edge Delivery Services
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 100%
 

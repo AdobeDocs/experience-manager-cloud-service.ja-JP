@@ -1,13 +1,15 @@
 ---
 title: プライベートリポジトリの GitHub チェック設定
 description: プライベートリポジトリへの各プルリクエストを検証するために自動的に作成されるパイプラインの制御方法について説明します。
-source-git-commit: 73bd693d47f37b453209208816dfed15d65e9e09
-workflow-type: ht
+exl-id: 3ae3c19e-2621-4073-ae17-32663ccf9e7b
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 100%
 
 ---
-
 
 # プライベートリポジトリの GitHub チェック設定 {#github-check-config}
 

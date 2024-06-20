@@ -2,8 +2,10 @@
 title: '[!DNL Live Search] ポップオーバー CIF コンポーネント'
 description: CIF コンポーネントを使用して AEM サイトで  [!DNL Live Search]  ポップオーバーコンポーネントを有効にする
 exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: ht
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 100%
 

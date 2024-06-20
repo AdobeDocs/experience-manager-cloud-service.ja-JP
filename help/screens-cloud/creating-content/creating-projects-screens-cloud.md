@@ -2,8 +2,10 @@
 title: Screens as a Cloud Service でのプロジェクトの作成
 description: Screens as a Cloud Service でプロジェクトを作成する方法について説明します。
 exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
+feature: Authoring Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 100%
 

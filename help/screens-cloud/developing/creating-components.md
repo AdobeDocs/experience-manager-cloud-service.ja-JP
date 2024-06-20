@@ -2,10 +2,12 @@
 title: コンポーネントの作成
 description: AEM コンポーネントを使用して、Web ページ上で使用できるコンテンツを保持、書式設定およびレンダリングします。このページでは、チャネルのオーサリングとコンポーネントのレンダリングについて説明します。
 exl-id: a81e812e-29ed-45de-b2d0-1fb0a8c5ce1a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing Screens
+role: Admin, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 90%
+source-wordcount: '284'
+ht-degree: 100%
 
 ---
 
@@ -21,7 +23,7 @@ AEM コンポーネントを使用して、web ページ上で使用できるコ
 
 例：`http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html](http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html`
 
-ユーザーは、編集時に URL にセレクターを追加する必要はありません。クライアント側のロジックがレイヤースイッチイベントをリッスンしており、チャネルに専用のリソースタイプがある場合はセレクターを追加します *screens/core/components/channel に設定します。*
+ユーザーは、編集時に URL にセレクターを追加する必要はありません。クライアント側のロジックがレイヤースイッチイベントをリッスンしており、チャネルに専用のリソースタイプ *screens/core/components/channel* がある場合にセレクターを追加します。
 
 ## コンポーネントのレンダリング {#rendering-components}
 

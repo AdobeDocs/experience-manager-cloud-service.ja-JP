@@ -9,8 +9,9 @@ docset: aem65
 role: Admin, Developer
 level: Intermediate
 exl-id: e22242ce-e5ce-4486-bba4-e6a89ac4fb5e
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
+feature: Screens Deployments
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 100%
 

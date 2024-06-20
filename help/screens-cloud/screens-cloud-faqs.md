@@ -2,10 +2,12 @@
 title: Screens as a Cloud Service の FAQ
 description: このページでは、Screens as a Cloud Service のよくある質問について説明します。
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Administering Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 94%
+source-wordcount: '450'
+ht-degree: 100%
 
 ---
 
@@ -38,7 +40,7 @@ scripts=[
 
 ## AEM Screens as a Cloud Service チャネルで、画像のシームレスなレンディションを実現するには、どのような画像形式がお勧めですか？{#screens-cloud-image-format}
 
-Adobeでは、画像をの形式で使用することをお勧めします `.png` および `.jpeg` AEM Screensas a Cloud Serviceチャネルでの、最高のデジタルサイネージエクスペリエンスを実現します。
+アドビでは、最適なデジタルサイネージエクスペリエンスを実現するために、AEM Screens as a Cloud Service チャネルで `.png` および `.jpeg` 形式の画像を使用することをお勧めします。
 `*.tif` 形式の画像（Tag Image File 形式）は、AEM Screens as a Cloud Service ではサポートされていません。チャネルにこの形式の画像が含まれる場合、その画像はプレーヤー側ではレンダリングされません。
 
 ## 開発者モード（オンライン）のチャネルが AEM Screens Player でレンダリングされない場合、どうすればよいですか？{#screens-cloud-online-channel-blank-iframe}

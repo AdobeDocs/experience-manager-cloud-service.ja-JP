@@ -2,8 +2,10 @@
 title: Cloud Manager での新しいプログラムへの Screens アドオンの追加
 description: Cloud Manager for Screens as a Cloud Service の新しいプログラムに Screens アドオンを追加する方法について説明します。
 exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 100%
 

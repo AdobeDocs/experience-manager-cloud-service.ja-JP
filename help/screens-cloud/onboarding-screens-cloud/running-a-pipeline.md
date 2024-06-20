@@ -2,8 +2,10 @@
 title: パイプラインの実行
 description: ここでは、Cloud Manager で Screens as Cloud Service プロジェクトのパイプラインを実行する方法について説明します。
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 100%
 

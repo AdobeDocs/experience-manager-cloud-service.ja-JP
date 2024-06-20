@@ -1,13 +1,15 @@
 ---
 title: ドメイン検証済み（DV）証明書
 description: Cloud Manager でドメイン検証済み（DV）証明書を管理する方法について説明します。
-source-git-commit: 5baeb4012e5aa82a8cd8710b18d9164583ede0bd
-workflow-type: ht
+exl-id: 7f2c71b6-15c3-4919-9f51-a3e26d0d48d4
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 100%
 
 ---
-
 
 # ドメイン検証済み（DV）証明書 {#domain-validated-certificates}
 

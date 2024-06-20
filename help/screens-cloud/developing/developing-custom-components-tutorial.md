@@ -2,8 +2,10 @@
 title: Screens as a Cloud Service 用カスタムコンポーネントの開発
 description: 以下のチュートリアルでは、AEM Screens 用のカスタムコンポーネントを作成する手順について説明します。AEM Screens では、他の AEM 製品の様々な既存のデザインパターンやテクノロジーを再利用しています。このチュートリアルでは、AEM Screens 用に開発する際の相違点と特別な考慮事項について重点的に説明します。
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: ht
+feature: Developing Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 100%
 
@@ -37,7 +39,7 @@ Screens プロジェクトのソースコードは、通常、マルチモジュ
 
 1. [CRX パッケージマネージャー](http://localhost:4502/crx/packmgr/index.jsp)を使用して、次のパッケージをダウンロードしてインストールします。
 
-[ファイルを入手](/help/screens-cloud/developing/assets/base-screens-weretail-runuiapps-001-snapshot.zip)
+[ファイルの取得](/help/screens-cloud/developing/assets/base-screens-weretail-runuiapps-001-snapshot.zip)
 
    [ファイルを入手](/help/screens-cloud/developing/assets/base-screens-weretail-runuiapps-001-snapshot.zip)
    **（オプション）** Eclipse などの IDE を使用して作業する場合は、以下のソースパッケージをダウンロードします。次の Maven コマンドを使用して、プロジェクトをローカルの AEM インスタンスにデプロイします。
@@ -46,7 +48,7 @@ Screens プロジェクトのソースコードは、通常、マルチモジュ
 
    Start HelloWorld SRC Screens We.Retail Run Project
 
-[ファイルを入手](/help/screens-cloud/developing/assets/src-screens-weretail-run.zip)
+[ファイルの取得](/help/screens-cloud/developing/assets/src-screens-weretail-run.zip)
 
 1. [CRX パッケージマネージャー](http://localhost:4502/crx/packmgr/index.jsp)で、次の 2 つのパッケージがインストールされていることを確認します。
 
@@ -548,8 +550,8 @@ public class MyCustomHandler extends AbstractResourceHandler {
 
 チュートリアルで完成したコードは以下のとおりです。**screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** と **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip** は、コンパイル済みの AEM パッケージです。SRC-screens-wertail-run-0.0.1.zip は、Maven を使用してデプロイできる未コンパイルのソースコードです。
 
-[ファイルを入手](/help/screens-cloud/developing/assets/screens-weretail-runuiapps-001-snapshot.zip)
+[ファイルの取得](/help/screens-cloud/developing/assets/screens-weretail-runuiapps-001-snapshot.zip)
 
-[ファイルを入手](/help/screens-cloud/developing/assets/screens-weretail-runuicontent-001-snapshot.zip)
+[ファイルの取得](/help/screens-cloud/developing/assets/screens-weretail-runuicontent-001-snapshot.zip)
 
-[ファイルを入手](/help/screens-cloud/developing/assets/screens-weretail-run.zip)
+[ファイルの取得](/help/screens-cloud/developing/assets/screens-weretail-run.zip)

@@ -5,8 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 16e1d42a-42d0-4335-ba81-feedea7ed7d7
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 100%
 

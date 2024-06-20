@@ -10,9 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
-workflow-type: ht
-source-wordcount: '2172'
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
+source-wordcount: '2059'
 ht-degree: 100%
 
 ---
@@ -53,11 +54,11 @@ SEO の要件とニーズに応じて `UrlProvider` サービスを設定する�
 * `{{sku}}` は製品の SKU（例：`VP09`）に置き換えられます
 * `{{url_key}}` は製品の `url_key` プロパティ（例：`lenora-crochet-shorts`）に置き換えられます
 * `{{url_path}}` は製品の `url_path`（例：`venia-bottoms/venia-pants/lenora-crochet-shorts`）に置き換えられます
-* `{{variant_sku}}` は、現在選択されているバリアント（例：`VP09-KH-S`）に置き換えられます
+* `{{variant_sku}}` は現在選択されているバリアント（例：`VP09-KH-S`）に置き換えられます
 
-`url_path` が非推奨になったため、あらかじめ定義された製品 URL 形式は製品の `url_rewrites` を使用し、`url_path` が利用できない場合は最もパスセグメントが多いものを代わりに選択します。
+`url_path` が非推奨になったため、事前定義された製品 URL 形式は製品の `url_rewrites` を使用し、`url_path` が利用できない場合は、最もパスセグメントが多いものを代わりに選択します。
 
-上記のサンプルデータでは、デフォルトの URL 形式を使用して設定された製品バリアント URL は `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S` のようになります。
+上記のサンプルデータでは、デフォルトの URL 形式を使用して形式設定された製品バリアント URL は `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S` のようになります。
 
 ### カテゴリページの URL 形式 {#product-list}
 

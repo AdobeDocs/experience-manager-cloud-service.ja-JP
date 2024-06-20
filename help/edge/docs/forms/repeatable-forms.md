@@ -3,8 +3,9 @@ title: フォームへの繰り返し可能なセクションの追加
 description: EDS フォームへの繰り返し可能なセクションの追加
 feature: Edge Delivery Services
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 100%
 
