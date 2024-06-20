@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1733'
 ht-degree: 25%
 
 ---
@@ -75,9 +75,9 @@ Formsの対話型コンテンツは次のとおりです。
 会話型Formsは、単なる新しい外観ではなく、ユーザーエクスペリエンスを大きく変える要素です。  エンゲージメントを高め、フォームの放棄を減らし、web サイトとのやり取りを全員にとってより楽しいエクスペリエンスにします。
 
 
-### Edge Delivery Services向けのAEM ベースのオーサリング
+### Edge Delivery Services向け WYSIWYG オーサリング
 
-AEM ベースのオーサリング機能では、これらのフォームを作成してEdge Delivery Servicesに公開するための WYSIWYG インターフェイス（アダプティブ Forms エディター）を提供します。 AEM ベースのオーサリングは、次のすべての機能を提供します [ドキュメントベースのオーサリング](/help/edge/docs/forms/overview.md#document-based-authoring-features)に加えて、次のような様々な追加機能があります。
+WYSIWYG オーサリングは、アダプティブフォームを作成してEdge Delivery Servicesに公開するための WYSIWYG インターフェイス（ユニバーサルエディターとアダプティブFormsエディター）を提供します。 WYSIWYG オーサリングには、次のすべての機能があります [ドキュメントベースのオーサリング](/help/edge/docs/forms/overview.md#document-based-authoring-features)に加えて、次のような様々な追加機能があります。
 
 * 複雑なロジックを作成する高度なルールエディター。
 * カスタム機能を実現するサーバーサイド拡張機能。
