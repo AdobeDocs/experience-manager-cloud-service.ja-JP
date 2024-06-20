@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 role: Admin, Architect, Developer
 source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '389'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Edge Delivery Services を使用すると、作成者がコンテンツをすば
 
 ## オーサリング {#authoring-edge}
 
-Edge 配信サービスを使用すると、オーサリングが簡単、迅速、柔軟に行えます。ドキュメントベースのオーサリングを使用してオーサリングすることも、ユニバーサルエディターを使用した WYSIWYG オーサリングを使用してオーサリングすることもできます。
+Edge 配信サービスを使用すると、オーサリングが簡単、迅速、柔軟に行えます。ドキュメントベースのオーサリングを使用してオーサリングを行うか、ユニバーサルエディターを使用して AWYSIWYG のオーサリングを行うかを選択できます。
 
 詳しくは、[Edge 配信サービス向けのコンテンツのオーサリング](/help/edge/wysiwyg-authoring/authoring.md)を参照してください。
 
@@ -44,7 +44,7 @@ Edge 配信サービスを使用すると、コンテンツソースに関係な
 
 Edge 配信サービスは、ブロックの概念に基づいています。AEM には、プロジェクトのニーズに合わせて拡張できる事前定義済みのブロックの包括的なライブラリが付属しています。Edge 配信サービスプロジェクトのコードは、GitHub で管理されます。
 
-ドキュメントを参照してください [Edge Delivery Servicesを使用した WYSIWYG オーサリングの開発者向けスタートガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) を参照してください。
+詳しくは、[Edge Delivery Services を使用した WYSIWYG オーサリングの開発者向け入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)ドキュメントを参照してください。
 
 ## 既存の AEM プロジェクト {#existing-projects}
 
