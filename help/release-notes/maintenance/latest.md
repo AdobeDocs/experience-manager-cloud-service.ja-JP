@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: d2f92869204dc0157dcc1f41d9fe88cdf5875965
+source-git-commit: 53b692b9f668387c889c28498bb20c67149e36be
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 33%
+source-wordcount: '647'
+ht-degree: 30%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 33%
 
 * ASSETS-31977：アセットの移動、コピー、削除の操作が強化されました。
 * ASSETS-33618:Dynamic Mediaにおけるビデオの自動トランスクリプションと翻訳機能。
-* ASSETS-33618:ContentHub および DM の承認アクションを実行して、プロパティを damAssetLucene プロパティに追加。
+* ASSETS-35185:ContentHub および DM の承認アクションを実行して、プロパティを damAssetLucene プロパティに追加。
 * ASSETS-35533:DRM プロパティと CAI プロパティを damAssetLucene インデックスに追加します。
 * ASSETS-37280：ソースサブタイトル（vtt）がまだ処理中の場合の翻訳の順次ジョブ処理。
 * ASSETS-37559：アセット削除イベントを改善しました。
@@ -59,6 +59,13 @@ ht-degree: 33%
 > AEM エンジニアリングにより、16461 以降の現在のAEM リリースに影響するローンチ機能のリグレッションが特定されました。 このリグレッションのため、ディープページが含まれていない新しいローンチ（新しいリリースが適用された後に作成）は、設定が見つからないため、適切に昇格されません。
 > 環境が影響を受ける場合は、不足している設定を識別および更新するシェルスクリプトをカスタマーサポートを通じて利用できます（内部参照 SITES-22457）。
 > すべての適切な設定で新しいローンチが確実に作成されるように、より長期の修正が可能になります。 それまでは、内部パッチリリースもオンデマンドで利用できます。
+
+#### Forms
+
+1. ユーザーが最新のAEM Forms SDK （`AEM Forms add-on v2024.05.04.00-240400`）、バッチファイルで Docker サービスを開始できません。 この問題を解決するには：
+   1. をダウンロード [フォルダー](/help/forms/assets/sdk_hotfix.zip).
+   1. ダウンロードしたフォルダーからコンテンツを抽出し、 `sdk.sh` および `sdk.bat` ファイル。
+   1. 既存のを `sdk.sh` および `sdk.bat` 新しいファイルを含むAEM Forms SDK 内のファイル。
 
 ### 変更通知 {#change-notice-16799}
 
