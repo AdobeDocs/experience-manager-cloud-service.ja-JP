@@ -4,10 +4,10 @@ description: 設定ファイルでルールとフィルターを宣言し、Clou
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1b4297c36995be7a4d305c3eddbabfef24e91559
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 100%
+source-wordcount: '1310'
+ht-degree: 91%
 
 ---
 
@@ -307,6 +307,42 @@ data:
 | **forwardCookie**（オプション、デフォルトは false） | true に設定した場合、クライアントリクエストの「cookie」ヘッダーがバックエンドに渡されます。それ以外の場合は、cookie ヘッダーが削除されます。 |
 | **forwardAuthorization**（オプション、デフォルトは false） | true に設定した場合、クライアントリクエストの「Authorization」ヘッダーがバックエンドに渡されます。それ以外の場合は、Authorization ヘッダーが削除されます。 |
 | **timeout**（オプション、秒単位、デフォルトは 60） | バックエンドサーバーが HTTP 応答本文の最初のバイトを配信することを CDN が待機する秒数。また、この値は、バックエンドサーバーに対するバイトのタイムアウト間隔としても使用されます。 |
+
+### Edge Delivery Servicesへのプロキシ化 {#proxying-to-edge-delivery}
+
+オリジンセレクターを使用して、AEM Publishを通じてAEM Edge Delivery Servicesにトラフィックをルーティングする必要がある場合があります。
+
+* 一部のコンテンツはAEM Publishが管理するドメインによって配信され、他のコンテンツは同じドメインからEdge Delivery Servicesによって配信されます
+* Edge Delivery Servicesで提供されるコンテンツでは、トラフィックフィルタールールやリクエスト/応答の変換など、設定パイプラインを介してデプロイされるルールのメリットが得られます
+
+これを実行できるオリジンセレクタールールの例を次に示します。
+
+```
+kind: CDN
+version: '1'
+data:
+  originSelectors:
+    rules:
+      - name: select-edge-delivery-services-origin
+        when:
+          allOf:
+            - reqProperty: tier
+              equals: publish
+            - reqProperty: domain
+              equals: <Production Host>
+            - reqProperty: path
+              matches: "^^(/scripts/.*|/styles/.*|/fonts/.*|/blocks/.*|/icons/.*|.*/media_.*|/favicon.ico)"
+        action:
+          type: selectOrigin
+          originName: aem-live
+    origins:
+      - name: aem-live
+        domain: main--repo--owner.aem.live
+```
+
+>[!NOTE]
+> Adobe管理による CDN が使用されるので、でプッシュ無効化を必ず設定してください。 **managed** モード（Edge Delivery Servicesに従う） [プッシュ無効化ドキュメントの設定](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+
 
 ## クライアントサイドのリダイレクト {#client-side-redirectors}
 
