@@ -4,8 +4,8 @@ description: Sling サービスユーザーマッピングとサービスユー�
 exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 100%
 
@@ -189,7 +189,7 @@ AEM セキュリティチームは、新しいサービスユーザーに一貫�
 * 範囲を減らします
 
    * 機能固有のサブツリーにアクセス制御ポリシーを配置します
-   * 配布済み項目の場合：制限を使用して範囲を制限します（組み込みの制限のリストについては、[ドキュメント](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html)を参照してください）。
+   * 配布済み項目の場合：制限を使用して範囲を制限します（組み込みの制限のリストについては、[ドキュメント](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html)を参照してください）。
 
 * 一貫性を確保します
 
