@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 639f1a35369bfe20931e2bbf08009a72696964d6
+source-git-commit: bd0d35c57e333d861072e189d0bef0ba14700664
 workflow-type: tm+mt
 source-wordcount: '5040'
 ht-degree: 99%
@@ -600,7 +600,7 @@ ht-degree: 99%
    + 概要 {#forms-overview}
       + [はじめに](/help/forms/home.md)
       + [トップ Adobe Experience Manager Forms イノベーション](/help/forms/latest-innovations.md)
-      + [早期導入（EA）機能](/help/forms/early-adopter-ea-features.md)
+      + [アーリーアクセス（EA）機能](/help/forms/early-access-ea-features.md)
       + [主要な変更点](/help/forms/notable-changes.md)
       + [アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
       + [よくある質問](/help/forms/faq.md)
