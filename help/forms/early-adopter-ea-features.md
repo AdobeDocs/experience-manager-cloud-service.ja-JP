@@ -1,31 +1,31 @@
 ---
-title: の現在の早期導入者機能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
-description: の現在の早期導入者機能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
+title: の現在のアーリーアクセス機能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
+description: の現在のアーリーアクセス機能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
+source-git-commit: 0c49e0ba5deb3659418cb0d057151863beac5340
 workflow-type: tm+mt
 source-wordcount: '1733'
 ht-degree: 25%
 
 ---
 
-# AEM Forms早期導入プログラム
+# AEM Forms アーリーアクセスプログラム
 
-AEM Forms早期導入プログラムは、誰よりも先に最先端の機能に排他的にアクセスし、機能の開発を形成するのに役立つユニークな機会を提供します。 プログラムでは、次の操作が可能です。
+AEM Forms早期アクセスプログラム プログラムは、誰よりも先に最先端の機能に排他的にアクセスし、機能の開発を形作るユニークな機会を提供します。 プログラムでは、次の操作が可能です。
 
 * 最先端のテクノロジーが主流になる前に、そのテクノロジーにアクセスできるようにしましょう。
 * 製品チームと共にイノベーションを起こし、製品の未来を共に形作る。 ユースケースを使用して開発をガイドし、イノベーションが成熟し、実際の課題に対処できるようにします。
 * ローンチ前にフィードバックを提供して問題の解決に役立ててください。これにより、完全リリース時のユーザーエクスペリエンスがスムーズになります。
 
-## 早期導入プログラムへの参加方法
+## Early Access プログラムへの参加方法
 
-早期導入プログラムに参加して早期導入イノベーションを得たい場合は、公式アドレスからにメールを送信するだけです。 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  アクセスをリクエストします。 すべてのイノベーションまたは特定のイノベーションに対して利用申請できます。
+アーリーアクセスの革新のためにアーリーアクセスプログラムに参加することに興味がある場合は、公式アドレスからにメールを送信するだけです [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  アクセスをリクエストします。 すべてのイノベーションまたは特定のイノベーションに対して利用申請できます。
 
-## 早期導入イノベーション
+## 早期アクセスイノベーション
 
 ### AEM Forms生成 AI （Gen AI）
 
@@ -102,7 +102,7 @@ AEM アダプティブFormsで作成された web サイト上のフォームが
 基本的に、AEM Forms/Marketo コネクタは、両方のプラットフォームの強みを活用して、より効率的で効果的なマーケティングファネルを作成するのに役立ちます。
 
 
-## その他の早期導入イノベーション
+## その他の早期アクセス・イノベーション
 
 ### 右から左（RTL）言語のサポート
 
