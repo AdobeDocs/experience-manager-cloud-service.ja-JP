@@ -8,17 +8,15 @@ content-type: reference
 feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rulesets, Viewers, Smart Crop, SEO Optimization, Publishing, Video, Renditions, Asset Management
 role: User, Admin
 mini-toc-levels: 4
-hide: false
-hidefromtoc: false
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 3375ffbb18c312e5df0050050ae16d75a12243e6
+source-git-commit: de1116ee39024d30e14838f8b36f9ab087a45f85
 workflow-type: tm+mt
-source-wordcount: '3574'
+source-wordcount: '3571'
 ht-degree: 99%
 
 ---
 
-# Dynamic Media のベストプラクティスについて{#about-dm-best-practices}
+# Dynamic Media のベストプラクティス{#about-dm-best-practices}
 
 <!--**Organizations today must connect with their customers through an ever-growing array of channels and devices.** The customer experience spans physical stores, websites, mobile apps, social media, email, and e-commerce platforms. This diversity requires organizations to create many more versions of each piece of content. Personalization adds complexity by increasing the number of variations needed for each item. Despite budget constraints for content creation, there's still a need to produce more campaigns in the same timeframe, on a global scale. AEM Dynamic Media offers a comprehensive set of tools to meet these challenges, providing consistent, personalized, high-performance, and optimized brand experiences across all channels and devices. 
 
