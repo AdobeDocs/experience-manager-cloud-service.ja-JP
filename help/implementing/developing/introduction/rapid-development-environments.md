@@ -4,9 +4,9 @@ description: クラウド環境で迅速な開発反復処理を行うために�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
-workflow-type: ht
-source-wordcount: '4244'
+source-git-commit: 85dc92e1adc11a2ee513b7a43e0945b18b2f4790
+workflow-type: tm+mt
+source-wordcount: '4215'
 ht-degree: 100%
 
 ---
@@ -223,11 +223,6 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 
 
 ### グローバルフラグ {#global-flags}
-
->[!NOTE]
->
-> これらのグローバルフラグはまだ使用できません。これらは、6 月中にロールアウトする予定です。
-> 
 
 * 詳細度の低い出力には、quiet フラグを使用します。
 
@@ -565,11 +560,6 @@ RDE のリセットプロセスが開始されると、通常、プロセスが�
 Cloud Manager を使用した環境の管理方法について詳しくは、[Cloud Manager のドキュメント](/help/implementing/cloud-manager/manage-environments.md)を参照してください。
 
 ## JSON 出力をサポートするコマンド {#json-commands}
-
->[!NOTE]
->
-> これらのコマンドはまだ使用できません。これらは、6 月中にロールアウトする予定です。
-> 
 
 ほとんどのコマンドでは、コンソール出力を抑制し、スクリプトで処理される有効な JSON を返すグローバル ```--json``` フラグをサポートします。サポートされるコマンドと、JSON 出力の例を以下に示します。
 
