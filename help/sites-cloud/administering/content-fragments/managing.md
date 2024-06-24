@@ -4,10 +4,11 @@ description: コンソールやエディターから AEM コンテンツフラ�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '2628'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -307,7 +308,7 @@ ht-degree: 99%
 
   >[!NOTE]
   >
-  >プレビュー環境について詳しくは、を参照してください。 [環境の管理](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+  >プレビュー環境について詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)を参照してください。
 
 >[!CAUTION]
 >

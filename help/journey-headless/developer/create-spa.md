@@ -3,10 +3,10 @@ title: オプション - Adobe Experience Manager（AEM）を使用して単一�
 description: AEM ヘッドレス開発者ジャーニーの続編であるこのオプションパートでは、AEM でヘッドレス配信と従来のフルスタック CMS 機能を組み合わせる方法について説明します。また、AEM の SPA Editor フレームワークを使用して編集可能な SPA を作成する方法についても説明します。
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 100%
 

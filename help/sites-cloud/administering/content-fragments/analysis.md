@@ -4,8 +4,9 @@ description: コンテンツフラグメントの構造を理解します。ヘ�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
-workflow-type: ht
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 100%
 

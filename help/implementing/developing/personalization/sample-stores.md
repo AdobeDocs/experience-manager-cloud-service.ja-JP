@@ -2,10 +2,10 @@
 title: ContextHub ストア候補のサンプル
 description: ContextHub には、ソリューションで利用できるサンプルストア候補がいくつか用意されています
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
-feature: Developing
+feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 100%
 

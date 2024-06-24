@@ -3,10 +3,10 @@ title: マルチサイトでのターゲットコンテンツの操作
 description: アクティビティ、エクスペリエンス、オファーなどのターゲットコンテンツを複数のサイト全体で管理する必要がある場合は、AEM に組み込まれているターゲットコンテンツ用マルチサイト管理機能を利用できます。
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Personalization
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '2844'
 ht-degree: 100%
 

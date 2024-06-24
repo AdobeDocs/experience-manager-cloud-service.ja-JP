@@ -3,10 +3,10 @@ title: 翻訳済みヘッドレスコンテンツの公開
 description: 翻訳済みコンテンツを公開し、コンテンツの更新に合わせて翻訳を更新する方法を説明します。
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 100%
 

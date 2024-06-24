@@ -4,7 +4,8 @@ description: ヘッドレスコンテンツ配信にコンテンツフラグメ�
 feature: Content Fragments
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 role: User
-source-git-commit: 1e206a33ef03edfa1af3c0d95f3665b5604f22f3
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 98%

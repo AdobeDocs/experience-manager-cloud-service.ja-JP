@@ -3,10 +3,10 @@ title: ローンチでのページの管理
 description: ローンチ内に新しいページを作成できます。また、不要なページを削除することもできます。
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Launches
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 100%
 

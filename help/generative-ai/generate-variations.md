@@ -2,7 +2,9 @@
 title: バリエーションの生成
 description: AEMas a Cloud Serviceからアクセスできる Generate Variations と、Edge Delivery ServicesのSidekickについて説明します
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 207778a59e18407831292be9bd00ee7973ade78c
+feature: Generate Variations
+role: Admin, Architect, Developer
+source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
 workflow-type: tm+mt
 source-wordcount: '3262'
 ht-degree: 1%
@@ -380,7 +382,7 @@ Adobeでは、使用するオーディエンスの数を用意しています。
 1. Google Drive で、次の 2 つの列を持つスプレッドシートファイルを作成します。
    1. 最初の列がドロップダウンに表示されます。
    1. 2 番目の列はオーディエンスの説明です。
-1. ファイルを公開します。
+1. ファイルをPublishします。
    1. ファイル/共有/web に公開/CSV
 1. 公開されたファイルに URL をコピーします。
 1. バリエーションを生成に移動します。

@@ -3,10 +3,10 @@ title: AEM ヘッドレス機能を使用した初めてのエクスペリエン
 description: AEM ヘッドレスデベロッパージャーニーのこの部分では、計画に関する考慮事項なども含め、AEM で初めてのヘッドレスエクスペリエンスを実装するための手順を示し、できるだけスムーズに作業を進めるためのベストプラクティスについても説明します。
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '1956'
 ht-degree: 100%
 

@@ -1,10 +1,11 @@
 ---
 title: ヘッドレスコンテンツの権限に関する考慮事項
 description: Adobe Experience Manager を使用したヘッドレス実装の権限や ACL に関する様々な考慮事項について説明します。オーサー環境とパブリッシュ環境の両方で必要となる様々なペルソナや考えられる権限レベルを理解します。
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 100%
 

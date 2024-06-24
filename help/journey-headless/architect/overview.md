@@ -3,10 +3,10 @@ title: AEM ヘッドレスコンテンツアーキテクトジャーニー
 description: AEM の強力で柔軟なヘッドレス機能とその能力および初めてのヘッドレスプロジェクトでコンテンツをモデル化する方法を説明するガイド付きジャーニーは、ここから始めてください。
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 100%
 

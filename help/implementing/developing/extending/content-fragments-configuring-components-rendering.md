@@ -2,10 +2,10 @@
 title: レンダリングコンポーネントのコンテンツフラグメントの設定
 description: レンダリングコンポーネントのコンテンツフラグメントの設定
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-feature: Developing
+feature: Developing, Content Fragments
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 100%
 

@@ -3,8 +3,10 @@ title: AEM のヘッドレスの概要
 description: 詳細なドキュメントとヘッドレスジャーニーを組み合わせた Adobe Experience Manager（AEM）のヘッドレスについて説明します。 コンテンツフラグメントモデル、コンテンツフラグメント、GraphQL API などの機能を使用してヘッドレスエクスペリエンスを強化する方法について説明します。
 landing-page-description: Adobe Experience Manager as a Cloud Service でヘッドレスを使用および管理する方法を説明します。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
-workflow-type: ht
+feature: Headless
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 100%
 

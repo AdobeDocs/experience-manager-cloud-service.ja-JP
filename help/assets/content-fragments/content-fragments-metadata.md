@@ -4,7 +4,8 @@ description: コンテンツフラグメントのメタデータプロパティ�
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
 feature: Content Fragments
 role: User
-source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 100%

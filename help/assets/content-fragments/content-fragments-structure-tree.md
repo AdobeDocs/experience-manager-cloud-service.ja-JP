@@ -4,7 +4,8 @@ description: AEM のコンテンツフラグメントエディターの構造ツ
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
 feature: Content Fragments
 role: User
-source-git-commit: 1e206a33ef03edfa1af3c0d95f3665b5604f22f3
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 100%

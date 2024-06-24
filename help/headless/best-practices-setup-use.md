@@ -2,9 +2,11 @@
 title: コンテンツフラグメントを使用した AEM GraphQL の設定と使用のベストプラクティス
 description: コンテンツフラグメントでの AEM GraphQL の設定と使用に関して推奨されるベストプラクティスについて説明します。
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '739'
+feature: Headless
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
+source-wordcount: '702'
 ht-degree: 100%
 
 ---

@@ -6,10 +6,11 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+role: Admin
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 97%
+source-wordcount: '526'
+ht-degree: 100%
 
 ---
 
@@ -26,11 +27,11 @@ HTTP マッピングの一例として、`localhost:4503` に対するすべて�
 
 `localhost:4503/content/we-retail/en/products.html`
 
-以下を使用してアクセスできます。
+以下を使用してアクセスします。
 
 `localhost:4503/we-retail/en/products.html`
 
-マッピングによって、`/content` という接頭辞が `/we-retail/en/products.html` に自動的に追加されるからです。
+マッピングによって、`/we-retail/en/products.html` に `/content` という接頭辞が自動的に追加されます。
 
 >[!CAUTION]
 >
@@ -40,16 +41,17 @@ HTTP マッピングの一例として、`localhost:4503` に対するすべて�
 >
 >詳しくは、Sling のドキュメントと「[Mappings for Resource Resolution](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)」と「[Resources](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)」を参照してください。
 
-## マッピング定義の表示 {#viewing-mapping-definitions}
+## マッピングの定義の表示 {#viewing-mapping-definitions}
 
-マッピングでは 2 つのリストが作成されます。JCR リソースリゾルバーは、これらのリストを（トップダウン）評価して一致項目を探します。
+このマッピングは 2 つのリストを形成し、JCR リソースリゾルバーは一致を見つけるために（トップダウンで）評価します。
 
 これらのリストは、Felix コンソールの **JCR ResourceResolver** オプション（例：`https://<*host*>:<*port*>/system/console/jcrresolver`）で（設定情報と一緒に）確認できます。
 
 * Configuration
 （[Apache Sling Resource Resolver](/help/overview/seo-and-url-management.md#etc-map) 用に定義された）現在の設定を表示します。
 
-* 設定テスト： URL またはリソースパスを入力できます。 「**解決**」または「**マップ**」をクリックして、システムによるエントリの変換方法を確認します。
+* 設定テスト
+URL またはリソースパスを入力できます。「**解決**」または「**マップ**」をクリックして、システムによるエントリの変換方法を確認します。
 
 * **Resolver Map Entries**
 URL をリソースにマップするために ResourceResolver.resolve メソッドが使用するエントリのリストです。
@@ -61,7 +63,7 @@ URL をリソースにマップするために ResourceResolver.resolve メソ�
 
 リストでは、**パターン**（リクエストに適合する正規表現）と&#x200B;**リプレースメント**（適用するリダイレクトを定義）がペアになっています。
 
-例えば、次のようになります。
+例えば、次のパターン
 
 **パターン** `^[^/]+/[^/]+/welcome$`
 
@@ -69,11 +71,11 @@ URL をリソースにマップするために ResourceResolver.resolve メソ�
 
 **リプレースメント** `/libs/cq/core/content/welcome.html`.
 
-以下のリクエストをリダイレクトします。
+次のリクエストをリダイレクトするには、
 
-`https://localhost:4503/welcome` &grave;&grave;
+`https://localhost:4503/welcome` ``
 
-次のようになります。
+次に対して
 
 `https://localhost:4503/libs/cq/core/content/welcome.html`
 
@@ -81,7 +83,7 @@ URL をリソースにマップするために ResourceResolver.resolve メソ�
 
 >[!NOTE]
 >
->正規表現の定義方法について説明したリソースは多数あります（例：[https://www.regular-expressions.info/](https://www.regular-expressions.info/)）。
+>正規表現の定義方法について説明したリソースが多数あります。例えば、[https://www.regular-expressions.info/](https://www.regular-expressions.info/) です。
 
 ### AEM でのマッピング定義の作成 {#creating-mapping-definitions-in-aem}
 

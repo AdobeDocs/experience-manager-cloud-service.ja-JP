@@ -3,10 +3,10 @@ title: コンテンツモデリングの基本について
 description: コンテンツフラグメントを使用したヘッドレス CMS のコンテンツモデリングの基本について説明します。
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 100%
 

@@ -4,7 +4,8 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '2230'
 ht-degree: 100%

@@ -2,8 +2,10 @@
 title: API リクエストの作成 - ヘッドレス設定
 description: コンテンツフラグメントコンテンツと AEM Assets REST API のヘッドレス配信に GraphQL API を使用して、コンテンツフラグメントを管理する方法を説明します。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
-workflow-type: ht
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 100%
 

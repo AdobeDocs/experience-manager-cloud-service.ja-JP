@@ -4,10 +4,10 @@ description: コンテンツ フラグメントと GraphQL API をヘッドレ�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-feature: Onboarding
+feature: Headless
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 100%
 

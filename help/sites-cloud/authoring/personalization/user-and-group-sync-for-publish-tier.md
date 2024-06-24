@@ -3,10 +3,10 @@ title: 登録、ログイン、ユーザープロファイル
 description: AEM as a Cloud Service の登録、ログイン、ユーザーデータおよびグループ同期について説明します
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Personalization
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 100%
 

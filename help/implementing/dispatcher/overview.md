@@ -1,10 +1,12 @@
 ---
 title: コンテンツ配信フローの概要
-description: コンテンツ配信データフローとコンテンツの公開方法の詳細を説明します
+description: コンテンツ配信のデータフローとコンテンツの公開方法について説明します
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+feature: Dispatcher
+role: Admin
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '219'
 ht-degree: 93%
 
 ---

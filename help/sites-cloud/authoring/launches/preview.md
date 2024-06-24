@@ -3,10 +3,10 @@ title: ローンチを使用した未来のプレビュー
 description: タイムワープを使用すると、ローンチに基づいてコンテンツを表示できます。
 exl-id: 3e19f11c-53cc-491b-8d9b-1e82745caebc
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Launches
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 100%
 

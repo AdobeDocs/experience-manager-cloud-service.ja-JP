@@ -4,7 +4,8 @@ description: MSM のライブコピー機能を使用して、ソースコンテ
 exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
 feature: Content Fragments
 role: User
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 100%

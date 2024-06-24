@@ -2,10 +2,10 @@
 title: ページへの ContextHub の追加とストアへのアクセス
 description: ContextHub 機能を有効にし、ContextHub JavaScript ライブラリにリンクするには、ContextHub をページに追加します。
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-feature: Developing
+feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 100%
 

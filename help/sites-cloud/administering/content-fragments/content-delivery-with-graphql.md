@@ -3,13 +3,14 @@ title: GraphQL のコンテンツフラグメントを使用したヘッドレ�
 description: ヘッドレスコンテンツ配信にコンテンツフラグメントと GraphQL を使用して AEM ヘッドレス CMS を実現するための基本的な概念について説明します。
 feature: Content Fragments, GraphQL API
 role: Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 95%
+source-wordcount: '737'
+ht-degree: 96%
 
 ---
-
 
 # GraphQL のコンテンツフラグメントを使用したヘッドレスコンテンツ配信 {#headless-content-delivery-using-content-fragments-with-graphQL}
 
@@ -102,9 +103,9 @@ AEM GraphQL API の実装は、[GraphQL Java ライブラリ](https://graphql.or
 
 ## コンテンツフラグメント構造の分析 {#analyzing-content-fragments-structure}
 
-AEMでは、分析に役立つように、 [コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md).
+AEMでは、分析に役立つように、フラグメントの構造を表示する方法をいくつか用意しています。 [コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md).
 
-詳しくは、 [コンテンツフラグメント構造の分析](/help/sites-cloud/administering/content-fragments/analysis.md) 詳しくは、以下を参照してください。
+参照： [コンテンツフラグメント構造の分析](/help/sites-cloud/administering/content-fragments/analysis.md) 詳しくは、以下を参照してください。
 
 * [構造ツリー](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree)
 

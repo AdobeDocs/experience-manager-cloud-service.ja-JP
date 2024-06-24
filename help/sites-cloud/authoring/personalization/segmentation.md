@@ -3,10 +3,10 @@ title: セグメント化について
 description: セグメント化は、キャンペーンを作成するときの主要な考慮事項です。
 exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Personalization
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 100%
 

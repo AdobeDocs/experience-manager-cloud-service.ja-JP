@@ -3,10 +3,10 @@ title: ヘッドレスコンテンツの翻訳
 description: 翻訳コネクタを使用してヘッドレスコンテンツを翻訳する方法を説明します。
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '2120'
 ht-degree: 100%
 

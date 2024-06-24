@@ -2,8 +2,10 @@
 title: 最適化された GraphQL フィルタリング用コンテンツフラグメントの更新
 description: ヘッドレスコンテンツ配信のために、Adobe Experience Manager as a Cloud Service で最適化された GraphQL フィルタリング用にコンテンツフラグメントを更新する方法について説明します。
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: ht
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 100%
 
@@ -15,7 +17,7 @@ GraphQL フィルターのパフォーマンスを最適化するには、コン
 
 >[!NOTE]
 >
->コンテンツフラグメントを更新した後、[GraphQL クエリの最適化](/help/headless/graphql-api/graphql-optimization.md)についてのレコメンデーションに従うことができます。
+>コンテンツフラグメントを更新した後、[GraphQL クエリの最適化](/help/headless/graphql-api/graphql-optimization.md)についての推奨事項に従うことができます。
 
 
 ## 前提条件 {#prerequisites}

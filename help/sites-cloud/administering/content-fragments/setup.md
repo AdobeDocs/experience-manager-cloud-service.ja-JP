@@ -4,8 +4,9 @@ description: コンテンツフラグメントと GraphQL、AEM ヘッドレス�
 feature: Content Fragments
 role: Developer, Architect
 exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
-workflow-type: ht
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 100%
 

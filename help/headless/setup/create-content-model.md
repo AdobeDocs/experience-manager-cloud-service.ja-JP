@@ -2,8 +2,10 @@
 title: コンテンツフラグメントモデルの作成 - ヘッドレスセットアップ
 description: コンテンツフラグメントモデルを使用して、AEM のヘッドレス機能を利用して作成および提供するコンテンツの構造を定義します。
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Architect, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 100%
 

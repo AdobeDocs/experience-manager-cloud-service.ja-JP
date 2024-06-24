@@ -3,10 +3,10 @@ title: ヘッドレスコンテンツの翻訳ルールの設定
 description: 翻訳するコンテンツを特定するための翻訳ルールを定義する方法を説明します。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 100%
 
