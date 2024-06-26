@@ -2,8 +2,10 @@
 title: DocuSign をアダプティブフォームに統合する方法
 description: アダプティブフォームで DocuSign を使用して電子サインを収集する方法を説明します。
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+feature: Adaptive Forms, Acrobat Sign
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 100%
 

@@ -3,8 +3,9 @@ title: アダプティブフォームテンプレートの作成方法
 description: テンプレートエディターを使用して、基本構造と初期コンテンツを定義するアダプティブフォームテンプレートを作成します。
 feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 100%
 
@@ -72,7 +73,7 @@ Experience Manager には、テンプレートを整理するためのグロー�
 * 構造
 * 初期コンテンツ
 
-画面の右上隅の「プレビュー」オプションの横にある「レイヤーセレクター」を使用します。
+画面の右上隅の「プレビュー」オプションの横にあるレイヤーセレクターを使用します。
 
 ### 構造 {#structure}
 
@@ -133,7 +134,7 @@ Experience Manager には、テンプレートを整理するためのグロー�
 * パネルコンポーネントは、サイドバーのコンポーネントブラウザーからドラッグ＆ドロップできます。
 * コンポーネントツールバーから `guideRootPanel` の子パネルを追加できます。
 
-「一般情報」および「職業情報」タブを作成するには、2 つのパネルを `guideRootPanel` の子パネルに追加します。パネルを選択して ![cmppr](assets/configure-icon.svg) を選択し、サイドバーでプロパティを開きます。要素名を `general-info` および `professional-info` に変更し、タイトルを「一般情報」および「職業情報」にそれぞれ変更します。サイドバーでコンテンツを選択し、コンテンツブラウザーを開きます。「フォームオブジェクト」タブで、`guideRootPanel` を選択します。エディターで guideRootPanel が選択されます。コンポーネントツールバーで ![cmppr](assets/configure-icon.svg) を選択し、プロパティを開きます。「パネルレイアウト」フィールドで、「**[!UICONTROL 上部のタブ]**」を選択し、「**[!UICONTROL 完了]**」をクリックします。タブ付きのテンプレート構造が適用されます。
+「一般情報」および「職業情報」タブを作成するには、2 つのパネルを `guideRootPanel` の子パネルに追加します。パネルを選択して ![cmppr](assets/configure-icon.svg) を選択し、サイドバーでプロパティを開きます。要素名を `general-info` および `professional-info` に変更し、タイトルを「一般情報」および「職業情報」にそれぞれ変更します。サイドバーでコンテンツを選択し、コンテンツブラウザーを開きます。「フォームオブジェクト」タブで、`guideRootPanel` を選択します。エディターで guideRootPanel が選択されます。コンポーネントツールバーで ![cmppr](assets/configure-icon.svg) を選択し、プロパティを開きます。パネルレイアウトフィールドで、「**[!UICONTROL 上部のタブ]**」を選択し、「**[!UICONTROL 完了]**」を選択します。タブ付きのテンプレート構造が適用されます。
 
 #### タブへのコンテンツの追加 {#adding-content-in-tabs}
 

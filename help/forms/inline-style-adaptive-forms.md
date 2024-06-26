@@ -2,11 +2,11 @@
 title: アダプティブフォームのコンポーネントにインラインスタイルを適用する方法
 description: アダプティブフォームではカスタムのスタイルを適用できますが、それぞれのコンポーネントにインライン CSS プロパティを適用することも可能です。
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 100%
 
@@ -27,8 +27,8 @@ ht-degree: 100%
 
 コンポーネントにインラインスタイルを追加するには、次の手順を実行します。
 
-1. フォームエディターでフォームを開き、モードを「スタイル設定」に変更します。モードをスタイルモードに変更するには、ページツールバーで ![canvas-drop-down](assets/Smock_ChevronDown.svg)／**[!UICONTROL スタイル]**&#x200B;を選択します。
-1. ページ内のコンポーネントを選択し、編集ボタン ![edit-button](assets/edit.svg) をクリックします。サイドバーでスタイル設定プロパティが開きます。
+1. フォームエディターからフォームを開き、モードをスタイルモードに変更します。モードをスタイルモードに変更するには、ページツールバーで ![canvas-drop-down](assets/Smock_ChevronDown.svg)／**[!UICONTROL スタイル]**&#x200B;を選択します。
+1. ページ内のコンポーネントを選択し、編集ボタン ![edit-button](assets/edit.svg) を選択します。サイドバーにスタイルのプロパティが開きます。
 
    サイドバーのフォーム階層ツリーからコンポーネントを選択することもできます。フォーム階層ツリーは、サイドバーでフォームオブジェクトとして使用できます。
 
@@ -56,7 +56,7 @@ ht-degree: 100%
 
 インラインスタイルプロパティを適用する前のテキストボックスコンポーネント
 
-下の画像に示されるように、次の CSS プロパティを適用した後のテキストボックスのスタイルの変更に注目してください。
+次の図に示すように、以下の CSS プロパティを適用した後のテキストボックススタイルの変化に注目してください。
 
 <table>
  <tbody>
@@ -82,7 +82,7 @@ ht-degree: 100%
    <td><p>ラベル</p> </td>
    <td><p>寸法と位置／幅</p> </td>
    <td><p>100 px</p> </td>
-   <td><p>ラベルの幅を 100 px に固定します</p> </td>
+   <td><p>ラベルの幅を 100px に固定</p> </td>
   </tr>
   <tr>
    <td>フィールドヘルプアイコン</td>

@@ -4,10 +4,11 @@ description: テンプレートエディターを使用して、コアコンポ�
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1962'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -164,7 +165,7 @@ Header and footer are added in the Initial Content layer.
 1. 左側にある&#x200B;**[!UICONTROL コンテンツブラウザー]**&#x200B;を選択します。
 1. フォームコンテナの「**[!UICONTROL 設定]**」に移動します。
 1. **[!UICONTROL データモデル]**&#x200B;を選択します。
-1. からフォームデータモデル（FDM）を選択する **[!UICONTROL フォームデータモデルを選択]** 設定を保存します。
+1. **[!UICONTROL フォームデータモデルを選択]**&#x200B;からフォームデータモデル（FDM）を選択し、設定を保存します。
 
 ![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img-core-component.png)
 
@@ -201,7 +202,7 @@ After you have added fields, you can add buttons such as Submit and Reset.
 
 ### テンプレートポリシーを使用してアダプティブフォームコンポーネントにカスタムプロパティを追加
 
-カスタムプロパティを使用すると、フォームテンプレートを使用してカスタム属性（キーと値のペア）をアダプティブフォームのコアコンポーネントに関連付けることができます。カスタムプロパティは、コンポーネントのヘッドレスレンディションの「**[!UICONTROL プロパティ]**」セクションに反映されます。これにより、カスタム属性値に基づいて適応する動的なフォーム動作を作成できます。例えば、開発者は、モバイル、デスクトップ、web プラットフォーム上にヘッドレスフォームコンポーネントの様々なレンディションをデザインできるので、幅広いデバイスでのユーザーエクスペリエンスが大幅に向上します。
+カスタムプロパティを使用すると、フォームテンプレートを使用してカスタム属性（キーと値のペア）をアダプティブフォームのコアコンポーネントに関連付けることができます。カスタムプロパティは、コンポーネントのヘッドレスレンディションの「**[!UICONTROL プロパティ]**」セクションに反映されます。これにより、カスタム属性値に基づいて適応する動的なフォーム動作を作成できます。 例えば、開発者は、モバイル、デスクトップ、web プラットフォーム上にヘッドレスフォームコンポーネントの様々なレンディションをデザインできるので、幅広いデバイスでのユーザーエクスペリエンスが大幅に向上します。
 
 アダプティブフォームのコアコンポーネントフィールドにカスタムプロパティを追加する手順は次のとおりです。
 

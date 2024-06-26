@@ -4,8 +4,9 @@ description: アダプティブフォームに新しいロケールを追加す�
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 7d49be6d4f58078270fb15b10ef34e81dfa790cb
-workflow-type: ht
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 100%
 

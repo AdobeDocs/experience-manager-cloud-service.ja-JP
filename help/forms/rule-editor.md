@@ -2,11 +2,11 @@
 title: ルールエディターを使用してルールをフォームフィールドに追加し、動的な動作を追加し、アダプティブフォームに複雑なロジックを構築する方法を教えてください。
 description: アダプティブフォームルールエディターを使用すると、コーディングやスクリプトの作成を行わずに、動的な動作を追加し、複雑なロジックをフォームに組み込むことができます。
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
-workflow-type: ht
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '6492'
 ht-degree: 100%
 

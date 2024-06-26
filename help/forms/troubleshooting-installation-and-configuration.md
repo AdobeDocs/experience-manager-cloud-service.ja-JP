@@ -2,13 +2,13 @@
 title: AEM Forms as a Cloud Service 環境のインストールと設定に関する問題のトラブルシューティング方法？
 description: AEM Forms as a Cloud Service 環境のインストールと設定のトラブルシューティング。
 contentOwner: khsingh
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: a19a3d81652cb17fcd6b11e6047d2ea697bf3041
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -55,11 +55,11 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 この問題を解決するには、Cloud Manager を開き、ご使用の環境の「**[!UICONTROL 更新]**」オプションを選択して、パイプラインを実行します。
 
 
-## バンドルがアクティブ状態ではありません {#bundles-inactive-state}
+## バンドルがアクティブな状態ではない {#bundles-inactive-state}
 
 問題を解決するには、次の手順に従います。
 
-1. AEMを起動し、すべてのバンドルが起動するまで完全に起動するのを待ちます。
-1. AEMを停止します（Ctrl + C）。
-1. Formsの配置 `.far` ファイルをインストールフォルダーに保存します。
+1. AEM を起動し、すべてのバンドルが起動するまで完全に起動するのを待ちます。
+1. AEM を停止します（Ctrl + C キー）。
+1. Forms `.far` ファイルをインストールフォルダーに配置します。
 1. AEM サーバーを再起動します。

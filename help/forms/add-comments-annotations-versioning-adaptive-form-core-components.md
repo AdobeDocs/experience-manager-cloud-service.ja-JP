@@ -3,7 +3,9 @@ title: バージョン、コメント、注釈をフォームに追加します�
 description: アダプティブフォームのコアコンポーネントを使用して、アダプティブフォームにコメント、注釈、バージョンを追加します。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
-source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
+exl-id: 84b95a19-c804-41ad-8f4b-5868c8444cc0
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 2%
@@ -17,7 +19,7 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 
 <!--Adaptive Form Core Components facilitates to add versionings, comments, and annotations to a form. These features helps form authors and users to enhance the form development process where they can create multiple versions of a form, collaborate and add their comments to a form, and add annotations to form components.-->
 
-<span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja?cloud-environments). </span>
+<span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features). </span>
 
 
 アダプティブフォームのコアコンポーネントは、フォーム作成者がバージョン管理、コメント、注釈をフォームに組み込むための機能を提供します。 これらの機能を使用すると、ユーザーはフォームの複数のバージョンを作成および管理したり、コメントを通じて共同ディスカッションを行ったり、特定のフォームコンポーネントに注釈を添付したりできるので、フォーム作成プロセスが合理化され、フォーム作成全体のエクスペリエンスが向上します。

@@ -3,13 +3,15 @@ Title: How to send an email on submission of an Adaptive Form?
 Description: Explore the process to set up email notifications when submitting an Adaptive Form.
 keywords: アダプティブフォーム用のメールの送信方法、メール送信アクション、アダプティブフォームメール、フォーム送信メール、メールの送信ガイド
 feature: Adaptive Forms, Core Components
-source-git-commit: f1db04e6cd1f78c1530aefd29f5f036ca5e70873
-workflow-type: ht
-source-wordcount: '437'
-ht-degree: 100%
+exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
+title: 「アダプティブフォームの送信アクションの設定方法」
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
+source-wordcount: '447'
+ht-degree: 97%
 
 ---
-
 
 # アダプティブフォームのメール送信アクションの送信を設定する
 
@@ -69,5 +71,3 @@ ht-degree: 100%
 ## 関連記事
 
 {{af-submit-action}}
-
-

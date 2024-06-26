@@ -3,13 +3,15 @@ Title: How to integrate AEM workflow with an Adaptive Form?
 Description: Explore the process of automated workflow initiation with AEM Forms Submit Action.
 keywords: AEM ワークフロー、アダプティブフォームと AEM ワークフローの統合、「AEM ワークフローの起動」送信アクション
 feature: Adaptive Forms, Core Components
-source-git-commit: 95af49839d206f67ac02116730229f5b0531c5bb
-workflow-type: ht
-source-wordcount: '647'
-ht-degree: 100%
+exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
+title: 「アダプティブフォームの送信アクションの設定方法」
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
+source-wordcount: '657'
+ht-degree: 98%
 
 ---
-
 
 # AEM アダプティブフォームと AEM ワークフローの統合：ビジネスプロセスの合理化
 
@@ -19,7 +21,7 @@ ht-degree: 100%
 >
 >  ユーザーがワークフローを開始したときに実行される一連のステップを定義する[ワークフローモデルを作成する](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem)方法について説明します。ワークフローを一時的なものにするか、複数のリソースを使用するかなど、モデルのプロパティを定義することもできます。
 
-AEM as a Cloud Service では、フォーム送信を処理するための様々な送信アクションが標準で提供されます。これらのオプションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)の記事を参照してください。
+AEM as a Cloud Service では、フォーム送信を処理するための様々な送信アクションが標準で提供されます。これらのオプションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)の記事をご覧ください。
 
 ## メリット
 

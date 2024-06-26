@@ -4,10 +4,12 @@ Description: Learn how to send data from your Adaptive Form to a SharePoint stor
 keywords: アダプティブフォームの SharePoint リストの接続方法？、アダプティブフォームの SharePoint ドキュメントライブラリの接続方法、SharePoint への送信、SharePoint ドキュメントライブラリ設定の作成、アダプティブフォームでの SharePoint への送信アクションの使用、Microsoft® SharePoint リストへのアダプティブフォームの接続。
 feature: Adaptive Forms, Core Components
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+title: 「アダプティブフォームの送信アクションの設定方法」
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 94%
+source-wordcount: '1052'
+ht-degree: 99%
 
 ---
 
@@ -93,7 +95,7 @@ AEM Forms を Microsoft® Sharepoint ドキュメントライブラリストレ�
 アダプティブフォームで「[!UICONTROL SharePoint リストに送信]」送信アクションを使用するには、次の手順に従います。
 
 1. [SharePoint リスト設定を作成](#create-sharepoint-list-configuration)：AEM Forms を Microsoft® Sharepoint リストストレージに接続します。
-1. [アダプティブフォームでフォームデータモデル（FDM）を使用して送信を使用する](#use-submit-using-fdm)：アダプティブフォームを設定済みのMicrosoft®SharePointに接続します。
+1. [アダプティブフォームで「フォームデータモデル（FDM）を使用して送信」を使用](#use-submit-using-fdm)：アダプティブフォームを設定済みの Microsoft® SharePoint に接続します。
 
 ### SharePoint リスト設定を作成 {#create-sharepoint-list-configuration}
 
@@ -117,13 +119,13 @@ AEM Forms を Microsoft® Sharepoint リストに接続するには、次の手�
 1. 「**[!UICONTROL 作成]**」を選択して、Microsoft® SharePointList 用のクラウド設定を作成します。
 
 
-### アダプティブフォームでフォームデータモデル（FDM）を使用して送信を使用する {#use-submit-using-fdm}
+### アダプティブフォームで「フォームデータモデル（FDM）を使用して送信」を使用 {#use-submit-using-fdm}
 
 作成した SharePoint リスト設定をアダプティブフォーム内で使用すると、データや生成済みのレコードのドキュメントを SharePoint リストに保存できます。アダプティブフォームで SharePoint リストを使用するには、次の手順を実行します。
 
-1. [Microsoftを使用してフォームデータモデル（FDM）を作成する](/help/forms/create-form-data-models.md)
-1. [データを取得して送信するためのフォームデータモデル（FDM）の設定](/help/forms/work-with-form-data-model.md#configure-services)
-1. [アダプティブフォームを作成](/help/forms/creating-adaptive-form-core-components.md)
+1. [Microsoft を使用してフォームデータモデル（FDM）を作成する](/help/forms/create-form-data-models.md)
+1. [データを取得して送信するためのフォームデータモデル（FDM）を設定する](/help/forms/work-with-form-data-model.md#configure-services)
+1. [アダプティブフォームを作成します](/help/forms/creating-adaptive-form-core-components.md)
 1. [フォームデータモデル（FDM）を使用して送信アクションを設定する](/help/forms/using-form-data-model.md)
 
 フォームを送信すると、データは指定した Microsoft® Sharepoint リストストレージに保存されます。

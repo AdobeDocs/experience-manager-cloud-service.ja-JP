@@ -2,13 +2,14 @@
 title: コアコンポーネントベースのアダプティブフォームをドラフトとして保存する方法
 description: コアコンポーネントベースのアダプティブフォームをドラフトとして保存し、Forms ポータルを作成して、標準のコアコンポーネントをAEM Sites ページで使用する方法を説明します。
 feature: Adaptive Forms, Core Components
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1072'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
-
 
 <span class="preview"> この記事には、プレリリース機能のコンテンツが含まれています。 プレリリース機能には、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features).
 
@@ -23,7 +24,7 @@ ht-degree: 14%
 * 必ずを [コアコンポーネントはバージョン 3.0.24 以降に設定されています](https://github.com/adobe/aem-core-forms-components) この機能を使用するには、をクリックします。
 * 以下が揃っていることを確認します。 [Azure ストレージアカウントとアクセスキー](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) Azure ストレージアカウントへのアクセスを認証します。
 
-## アダプティブフォームをドラフトとして保存
+## アダプティブフォームのドラフトとしての保存
 
 [!DNL Experience Manager Forms] データ統合（data-integration.md）は、 [!DNL Azure] フォームをと統合するためのストレージ設定 [!DNL Azure] ストレージサービス。 Forms フォームデータモデル（FDM）を使用して、 [!DNL Azure] サーバーでビジネスワークフローを有効にします。
 
@@ -71,7 +72,7 @@ Azure ストレージ設定が正常に作成されたら、次の手順を使�
 
    ![統合コネクタストレージ設定](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
-1. を選択 **[!UICONTROL 保存]** を選択してから、 **[!UICONTROL 公開]** をクリックして、設定を公開します。
+1. を選択 **[!UICONTROL 保存]** を選択してから、 **[!UICONTROL Publish]** をクリックして、設定を公開します。
 
 ### 3. アダプティブフォームをドラフトとして保存するためのルールを作成する {#rule-to-save-adaptive-form-as-draft}
 

@@ -5,26 +5,28 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '950'
-ht-degree: 24%
+ht-degree: 26%
 
 ---
 
-<span class="preview"> この機能は早期導入プログラムの対象です。 早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID で aem-forms-ea@adobe.com までメールを送信してください。</span>
+<span class="preview"> この機能は早期導入プログラムの対象です。 早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
 
 CAPTCHA（コンピュータと人間を区別する完全に自動化された公開チューリングテスト）は、人間と自動化されたプログラム／ボットを区別するために、オンライントランザクションで一般的に使用されるプログラムです。テストを行ってユーザーの反応を評価し、サイトを使用しているのが人間かボットかを判断します。テストが失敗した場合の続行を防ぎ、ボットによるスパムの投稿や悪意のある目的を防止することで、オンライントランザクションの安全性を高めます。
 
-AEM Forms as a Cloud Serviceは、次の CAPTCHA ソリューションをサポートしています。
+AEM Forms as a Cloud Service は、次の CAPTCHA ソリューションをサポートしています。
 
 * [Cloudflare Turnstile](#integrate-aem-forms-environment-with-turnstile-captcha)
 * [Google reCAPTCHA](/help/forms/captcha-adaptive-forms.md)
-* [Captcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+* [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
 
 ## AEM Forms環境と Turnstile Captcha の統合
 
-Cloudflare の Turnstile Captcha は、自動ボット、悪意のある攻撃、スパム、不要な自動トラフィックからフォームとサイトを保護することを目的としたセキュリティ対策です。 フォームの送信を許可する前に、人間であることを確認するためのチェックボックスがフォーム送信時に表示されます。 AEM Formsas a Cloud Serviceは、アダプティブ Forms コアコンポーネントでの Turnstile Captcha をサポートします。
+Cloudflare の Turnstile Captcha は、自動ボット、悪意のある攻撃、スパム、不要な自動トラフィックからフォームとサイトを保護することを目的としたセキュリティ対策です。 フォームの送信を許可する前に、人間であることを確認するためのチェックボックスがフォーム送信時に表示されます。 AEM Formsas a Cloud Serviceは、アダプティブ Forms コアコンポーネントでの Turnstile Captcha をサポートしています。
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
@@ -58,11 +60,11 @@ AEM Forms コアコンポーネント用の Turnstile を設定するには、 [
       ![AEM FormsCloud Serviceと Turnstile を連携させる環境の設定](assets/config-turntstile.png)
 
 >[!NOTE]
-> 自動スタイル検証用に既にクライアントサイドの JavaScript 検証 URL とサーバーサイドの検証 URL が入力されているので、ユーザーは変更する必要はありません。
+> 自動スタイル検証用に既にクライアントサイドのJavaScript検証 URL とサーバーサイドの検証 URL が入力されているので、変更する必要はありません。
 
 Turnstile Captcha サービスを設定すると、アダプティブフォームで使用できるようになります。
 
-## アダプティブフォームでのターンスタイルの使用{#using-turnstile-foundation-components}
+## アダプティブフォームでの Turnstile の使用{#using-turnstile-foundation-components}
 
 1. AEM Forms as a Cloud Service インスタンスを開きます。
 1. **[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;に移動します。

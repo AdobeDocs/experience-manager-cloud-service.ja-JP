@@ -1,9 +1,10 @@
 ---
 title: フォーム作成の失敗のトラブルシューティング方法
 description: AEM Formsas a Cloud Service環境でのフォーム作成の失敗のトラブルシューティング。
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms
 role: User
-source-git-commit: 23491130b44147753c5b98f316be5a9e5937afea
+exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 5%
@@ -12,7 +13,7 @@ ht-degree: 5%
 
 # フォームの公開中の問題{#form-creation-fails}
 
-ユーザーがAEM Formsas a Cloud Service版に更新した後 `2024.5.16461`:
+ユーザーがAEM Formsのas a Cloud Service版に更新した後 `2024.5.16461`:
 
 **一部のユーザー** フォームの作成中に問題が発生する場合がある問題は、ユーザーがフォームを作成すると、作成ダイアログボックスに次のエラーメッセージがポップアップ表示されるというものです。
 
@@ -27,9 +28,9 @@ ht-degree: 5%
 問題を解決するには、次の手順に従います。
 
 1. フォームで使用するテンプレートに、が含まれていないことを確認します `jcr:uuid` およびその他のシステム生成パスの保護されたプロパティ `<template-path>/initial/jcr:content node`.
-1. テンプレートコンソールを使用して、テンプレートを明示的に公開します。
+1. テンプレートコンソールを使用して、テンプレートを明示的にPublishします。
 1. 次に、テンプレートが公開されたら、テンプレートを使用して新しいフォームを作成してみてください。
-1. 使用したテンプレートが今後のリリースで更新される場合は、（手順 2 で指定したように）テンプレートを再度公開して、フォーム作成の失敗の問題を防ぎます。
+1. 使用したテンプレートが今後のリリースで更新される場合は、（手順 2 で指定したように）テンプレートを再度Publishして、フォーム作成の失敗の問題を防ぎます。
 
 
 <!--
@@ -55,13 +56,3 @@ To resolve the issue, perform the following workaround steps:
 1. If the template is changed in the future, publish it again as mentioned in the step 1.
 
 -->
-
-
-
-
-
-
-
-
-
-

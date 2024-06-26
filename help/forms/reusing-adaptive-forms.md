@@ -4,8 +4,9 @@ description: 既存のアダプティブフォームを効率的に再利用し�
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
-workflow-type: ht
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 100%
 
@@ -71,7 +72,7 @@ ht-degree: 100%
 
 1. **再公開：**
 
-   貼り付けたアセットはコピー元のアセットとは別のものになります。エンドユーザーが使用できるように、新しいアセットとして公開することができます。アセットの公開方法を理解するには、<!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) -->
+   ペーストしたアセットはコピー元のアセットとは別のものになります。エンドユーザーが使用できるように、新しいアセットとして公開することができます。アセットの公開方法を理解するには、<!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) -->
 
 
 ## 関連トピック {#see-also}

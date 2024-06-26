@@ -4,8 +4,10 @@ description: AEM Forms には、アクセシビリティ標準に準拠できる
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 100%
 
@@ -100,7 +102,7 @@ Ultramarine-Accessible テーマを既存のアダプティブフォームに適
 「アクセシビリティ」オプションを使用するには、次の手順に従います。
 
 1. コンポーネントを選択して、![cmppr](assets/cmppr.png) を選択します。
-1. サイドバーの&#x200B;**[!UICONTROL アクセシビリティ]**&#x200B;をクリックして、必要なアクセシビリティオプションを選択します。
+1. サイドバーの「**[!UICONTROL アクセシビリティ]**」をクリックして、必要なアクセシビリティオプションを選択します。
 
 ### フォームコンポーネントのアクセシビリティオプション {#accessibility-options-in-form-components}
 

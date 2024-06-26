@@ -4,8 +4,9 @@ description: 既存のデータを使用してアダプティブフォームの�
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
-workflow-type: ht
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '2007'
 ht-degree: 100%
 

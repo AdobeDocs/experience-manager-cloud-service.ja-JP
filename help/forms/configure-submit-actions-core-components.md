@@ -1,13 +1,14 @@
 ---
 title: アダプティブフォームの送信アクションの設定方法
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自のアクションを作成できます。
-keywords: アダプティブフォームの送信アクションを選択する方法、アダプティブフォームを sharepoint リストに接続する方法、アダプティブフォームを sharepoint ドキュメントライブラリに接続する方法、アダプティブフォームをフォームデータモデル（FDM）に接続する方法
+keywords: アダプティブフォームの送信アクションの選択、アダプティブフォームの SharePoint リストへの接続、アダプティブフォームの SharePoint ドキュメントライブラリへの接続、アダプティブフォームのフォームデータモデル（FDM）への接続の方法
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 520d07cbb4566f9d39a95ac890a9cd572114d710
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '678'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +28,7 @@ ht-degree: 83%
 * フォームデータを E メールで簡単に送信できます。
 * データの送信中に、Microsoft® Power Automate のフローまたは AEM ワークフローを開始します。
 * フォームデータを Microsoft® SharePoint Server、Microsoft® Azure Blob Storage、または Microsoft® OneDrive に直接送信します。
-* フォームデータモデル（FDM）を使用して、設定済みデータソースにシームレスにデータを送信します。
+* フォームデータモデル（FDM）を使用して、設定済みのデータソースにデータをシームレスに送信します。
 * データを REST エンドポイントに送信すると便利です。
 
 [デフォルトの送信アクションを拡張](custom-submit-action-form.md)することができます。また、組織固有の要件に合わせて送信アクションをカスタマイズすることもできます。
@@ -212,7 +213,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 AEM セキュリティおよび堅牢化ガイドラインの一環として、400.jsp、404.jsp、500.jsp などのカスタムエラーページを設定します。これらのハンドラーは、フォーム送信時に 400、404 または 500 エラーが表示される場合に呼び出されます。また、これらのハンドラーは、公開ノードでこれらのエラーコードがトリガーされる場合にも呼び出されます。他の HTTP エラーコード用の JSP ページを作成することもできます。
 
-フォームデータモデル（FDM）やスキーマベースのアダプティブフォームに、データに含まれないスキーマに対する XML または JSON データの苦情を事前入力する場合 `<afData>`, `<afBoundData>`、および `</afUnboundData>` タグが追加されると、アダプティブフォームの境界なしのフィールドのデータは失われます。 このスキーマは、XML スキーマ、JSON スキーマまたはフォームデータモデル（FDM）にすることができます。 境界なしのフィールドは、`bindref` プロパティを持たないアダプティブフォームフィールドです。
+フォームデータモデル（FDM）またはスキーマベースのアダプティブフォームを、スキーマに準拠した XML データや JSON データを使用して事前入力する、つまりデータが `<afData>`、`<afBoundData>`、`</afUnboundData>` のタグを含まない場合、アダプティブフォームの連結されていないフィールドのデータは失われます。スキーマには、XML スキーマ、JSON スキーマ、フォームデータモデル（FDM）を使用できます。境界なしのフィールドは、`bindref` プロパティを持たないアダプティブフォームフィールドです。
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

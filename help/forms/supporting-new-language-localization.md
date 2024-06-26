@@ -3,8 +3,9 @@ title: 基盤コンポーネントに基づいてアダプティブフォーム�
 description: アダプティブフォームでは、追加設定なしで提供されるロケールとは別に、他の言語用のロケールを追加できます。
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
-workflow-type: ht
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 100%
 

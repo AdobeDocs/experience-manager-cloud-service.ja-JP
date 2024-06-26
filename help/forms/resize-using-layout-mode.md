@@ -1,12 +1,12 @@
 ---
 title: レイアウトモードを使用したアダプティブフォームのコンポーネントのサイズ変更方法
 description: AEM Forms コンポーネントの位置の定義、レイアウトモードへのアクセス、コンポーネントのサイズ変更、パネルのサイズ変更およびパネルの複数列レイアウトの定義について説明します。
-role: User
+role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 100%
 
@@ -68,13 +68,13 @@ ht-degree: 100%
 
    ![レイアウトモードでのテーブルと画像の並行表示](assets/table_image_parallel_new.png)
 
-   画像コンポーネントを選択し、ツールバーにある「**[!UICONTROL 新しい行にフロート]**」オプションを選択して、画像コンポーネントを次の行に移動できます。
+   画像コンポーネントを選択し、ツールバーにある「**[!UICONTROL 新しい行にフローティングする]**」オプションを選択すると、画像コンポーネントを次の行に移動できます。
 
 ## パネルのサイズ変更 {#resize-panels-layout-mode}
 
 個々のコンポーネントではなくパネル全体のサイズを変更する場合は、以下の手順を実行します。
 
-1. パネル内でサイズを変更するコンポーネントのいずれかを選択し、「![親を選択](assets/select_parent_icon.svg)」を選択して、ドロップダウンリストの最初のオプションを選択します（パネルがコンポーネントの直接の親である場合）。
+1. サイズ変更するパネル内のコンポーネントを選択し、「![親を選択](assets/select_parent_icon.svg)」を選択し、パネルがコンポーネントの直接の親である場合は、ドロップダウンリストの最初のオプションを選択します。
 
    レスポンシブグリッドの開始と終了に青い点が表示されます。
 
@@ -84,13 +84,13 @@ ht-degree: 100%
 
 以下の手順を実行して、パネルの列数を定義します。
 
-1. **[!UICONTROL 編集]**&#x200B;モードで、パネル、「![設定](assets/configure-icon.svg)」の順にクリックします。次に、**[!UICONTROL パネルレイアウト]**&#x200B;ドロップダウンリストから「**[!UICONTROL レスポンシブ - ナビゲーションなしですべてを 1 ページに]**」をクリックします。
+1. **[!UICONTROL 編集]**&#x200B;モードで、パネルを選択して、「![設定](assets/configure-icon.svg)」を選択し、**[!UICONTROL パネルレイアウト]**&#x200B;ドロップダウンリストから「**[!UICONTROL レスポンシブ - ナビゲーションなしですべてページに配置]**」オプションを選択します。
 
 1. 「![保存](assets/save_icon.svg)」を選択して、プロパティを保存します。
 
-1. **[!UICONTROL レイアウト]**&#x200B;モードで、パネル内の任意のコンポーネントを選択し、「![親を選択](assets/select_parent_icon.svg)」を選択して、パネルをクリックします。
+1. **[!UICONTROL レイアウト]**&#x200B;モードで、パネル内のいずれかのコンポーネントを選択して、「![親を選択](assets/select_parent_icon.svg)」を選択し、パネルを選択します。
 
-1. 「![複数列](assets/multi-column.svg)」を選択し、ドロップダウンリストから列数をクリックします。列数の範囲は 1 ～ 12 です。パネルが複数列のレイアウトに分割されます。
+1. 「![複数列](assets/multi-column.svg)」を選択し、ドロップダウンリストから列数を選択します。列数の範囲は 1～12 です。パネルが複数列のレイアウトに分割されます。
 
 ![レイアウトモードでの複数列](assets/multi-column-layout.png)
 
@@ -128,7 +128,7 @@ ht-degree: 100%
 
    ![レイアウトモードを無効にする](assets/policy_disable_layout_mode.png)
 
-1. 「**[!UICONTROL レイアウト設定]**」タブを選択し、「**[!UICONTROL レイアウトモードを無効にする]**」をクリックします。
+1. 「**[!UICONTROL レイアウト設定]**」タブを選択し、「**[!UICONTROL レイアウトモードを無効にする]**」を選択します。
 1. 「![変更を保存](assets/save_icon.svg)」を選択して、テンプレートプロパティを保存します。
 
 ## 関連トピック {#see-also}

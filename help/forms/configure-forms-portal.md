@@ -3,10 +3,11 @@ title: Experience Manager Sites ページでフォームポータルを作成す
 description: フォームポータルを作成し、標準搭載のコアコンポーネントを AEM Sites ページで使用する方法について説明します。
 feature: Adaptive Forms, Foundation Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1786'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +84,7 @@ AEM プロジェクトアーキタイプから [標準搭載のフォームポ�
 
 ## アダプティブフォーム用の Azure ストレージの設定 {#configure-azure-storage-adaptive-forms}
 
-[[!DNL Experience Manager Forms] データ統合](data-integration.md) は、フォームを [!DNL Azure] ストレージサービスと統合するための [!DNL Azure] ストレージ設定を提供します。フォームデータモデル（FDM）を使用して、と連携するアダプティブFormsを作成できます [!DNL Azure] サーバーでビジネスワークフローを有効にします。
+[[!DNL Experience Manager Forms] データ統合](data-integration.md) は、フォームを [!DNL Azure] ストレージサービスと統合するための [!DNL Azure] ストレージ設定を提供します。フォームデータモデル（FDM）を使用して、[!DNL Azure] サーバーと連動するアダプティブフォームを作成することにより、ビジネスワークフローを使用できるようになります。
 
 ### Azure ストレージ設定の作成 {#create-azure-storage-configuration}
 

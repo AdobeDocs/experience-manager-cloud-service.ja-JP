@@ -2,11 +2,11 @@
 title: アダプティブフォームの予約済みのキーワードとは
 description: アダプティブフォームで識別子として使用できない予約済みのキーワードです。
 topic-tags: author
-role: Admin, Developer, User
+role: User, Developer
 feature: Adaptive Forms
 exl-id: 2cd3c322-9c38-42be-9877-a03c9ffc02ae
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 100%
 

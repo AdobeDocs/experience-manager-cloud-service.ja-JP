@@ -6,13 +6,14 @@ role: User, Developer, Admin
 features: core components
 hide: true
 hidefromtoc: true
-source-git-commit: cc1f3e2f0ddaed67de541c730c0b97f68c1e0d02
+exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
+feature: Adaptive Forms, Core Components
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 4%
 
 ---
-
 
 # はじめに
 
@@ -117,9 +118,9 @@ AEM環境でAEM Modernize Tools を有効にして使用するには、基盤コ
    * **なし** ：フォームの変換を開始する前に基盤コンポーネントベースのフォームのコピーを作成しない場合は、このオプションを選択します。
    * **復元** ：フォームをフォーム変換を開始する前の状態に復元するオプションを選択します。
    * **ターゲットにコピー**：フォームの変換を開始する前に基盤コンポーネントベースのフォームのコピーを作成する場合は、このオプションを選択します。
-ここでは、 **ターゲットにコピー** オプションが選択されています。 次の場合 **ターゲットにコピー** オプションを選択すると、 **[!UICONTROL ソースパス]** および **[!UICONTROL ターゲットパス]** オプションが表示されます。
+ここでは、 **ターゲットにコピー** オプションが選択されています。 次の場合 **ターゲットにコピー** オプションを選択すると、 **[!UICONTROL Sourceのパス]** および **[!UICONTROL ターゲットパス]** オプションが表示されます。
 
-1. を指定 `source folder` の名前 **[!UICONTROL ソースパス]**.
+1. を指定 `source folder` の名前 **[!UICONTROL Sourceのパス]**.
 1. を指定 `target folder` の名前 **[!UICONTROL ターゲットパス]**.
 1. 「**[!UICONTROL 次へ]**」を選択します。
 1. クリックする **[!UICONTROL Formsを追加]**. 内のすべてのフォーム `source folder` 画面に表示されます。
@@ -149,6 +150,3 @@ AEM環境でAEM Modernize Tools を有効にして使用するには、基盤コ
 
 * 基盤コンポーネントベースのフォームで、同等の機能を持つコンポーネントのみを使用するようにします [コアコンポーネント](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) 使用可能。 同等のコアコンポーネントを持たない基盤コンポーネントを使用する場合、基盤コンポーネントは変換されません。 その結果、フォームのオーサリング中に正しく機能しません
 * 基盤コンポーネントをコアコンポーネントに変換するルールは、XML 形式で指定してください。
-
-
-

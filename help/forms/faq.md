@@ -3,13 +3,13 @@ title: AEM Forms as a Cloud Service に関するよくある質問
 description: Forms as a Cloud Service のよくある質問
 contentOwner: khsingh
 role: User
-feature: Adaptive Forms, FAQ
+feature: Adaptive Forms
 index: false
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '992'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -77,14 +77,14 @@ Custom parameters are planned for an upcoming release. -->
 はい。アダプティブフォームにグラフを追加できます。アダプティブフォームには、グラフコンポーネントが用意されています。これを使用して、アダプティブフォームにグラフを追加できます。
 
 * **フォームデータモデル（FDM）をリレーショナルデータベースモデルに接続できますか？**
-フォームデータモデル（FDM）を次に接続できます [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services]、およびデータソースとして使用するExperience Managerユーザープロファイル。 フォームデータモデル（FDM）とリレーショナルデータベースの接続はサポートされていません。
+フォームデータモデル（FDM）は、[!DNL RESTful web services]、[!DNL SOAP-based web services]、[!DNL OData services] および Experience Manager ユーザープロファイルにデータソースとして接続できます。フォームデータモデル（FDM）とリレーショナルデータベースの接続はサポートされていません。
 
-* **フォームデータモデル（FDM）で認証にカスタム証明書を使用できますか？**
-フォームデータモデル（FDM）には、認証にカスタム証明書を使用する方法はありません。 そのため、x509 や 2way SSL などのカスタム証明書はサポートされていません。
+* **フォームデータモデル（FDM）で認証用にカスタム証明書を使用できますか？**
+フォームデータモデル（FDM）は、認証用にカスタム証明書を使用する方法を提供していません。そのため、x509 や 2way SSL などのカスタム証明書はサポートされていません。
 
 * **フォームポータル送信アクションアダプティブフォームを使用できますか？**
 
-  既存のアダプティブFormsを変更して、を使用できます [REST エンドポイントへの送信](configuring-submit-actions.md#submit-to-rest-endpoint), [メールを送信](configuring-submit-actions.md#send-email), [フォームデータモデル（FDM）を使用して送信](configuring-submit-actions.md#submit-using-form-data-model)、および [AEM ワークフローを起動](configuring-submit-actions.md#invoke-an-aem-workflow) 送信アクション。 フォームポータルおよびフォームポータル送信アクションは、まだ使用できません。機能の可用性については、毎月のリリースノートに注目してください。
+  既存のアダプティブフォームを変更して、[REST エンドポイントへ送信](configuring-submit-actions.md#submit-to-rest-endpoint)、[メールを送信](configuring-submit-actions.md#send-email)、[フォームデータモデル（FDM）を使用して送信](configuring-submit-actions.md#submit-using-form-data-model)および [AEM ワークフローを起動](configuring-submit-actions.md#invoke-an-aem-workflow)送信アクションを使用できます。フォームポータルおよびフォームポータル送信アクションは、まだ使用できません。機能の可用性については、毎月のリリースノートに注目してください。
 
 * **[!DNL AEM Forms] アプリを [!DNL AEM Forms] as a Cloud Service** で使用できますか？
 

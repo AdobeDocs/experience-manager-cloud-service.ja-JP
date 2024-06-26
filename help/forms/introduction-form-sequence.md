@@ -1,12 +1,12 @@
 ---
 title: 複数ステップのフォームシーケンスの作成方法
 description: ' [!DNL Experience Manager Forms] を使用すると、アダプティブフォームのナビゲーションや記入を行う一連のフォームパネルを定義できます。'
-role: User
+role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: 0eac90a8f120a9c7655e68533d4b0a32292621e1
-workflow-type: ht
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 100%
 

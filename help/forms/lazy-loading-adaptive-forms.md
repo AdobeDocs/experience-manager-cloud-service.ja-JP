@@ -2,11 +2,11 @@
 title: 遅延読み込みによる大きなフォームのパフォーマンスの向上させる方法
 description: 遅延読み込みを使用して大きなフォームのパフォーマンスを向上させる方法について説明します。遅延読み込みを使用すると、フォームのフラグメントが表示されるまでそれらの初期化と読み込みを延期することにより、大きく複雑なアダプティブフォームのパフォーマンスを向上できます。
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: ht
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 100%
 

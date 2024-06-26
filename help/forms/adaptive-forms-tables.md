@@ -4,8 +4,9 @@ description: アダプティブフォームに表を追加するには、表コ�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '2476'
 ht-degree: 100%
 
@@ -89,7 +90,7 @@ AEM Forms では、サイドバーのコンポーネントブラウザーにテ�
 
 情報がどのように整理されているか、スクリーンリーダーが解釈し、読み出すことのできる説明を、テーブルに追加できます。説明を追加するには、以下の手順を実行します。
 
-1. テーブルを選択して ![cmppr](assets/cmppr.png) をクリックし、プロパティをサイドバーに表示します。
+1. テーブルを選択して ![cmppr](assets/cmppr.png) を選択し、プロパティをサイドバーに表示します。
 1. 「アクセシビリティ」タブで概要を指定します。
 1. 「**完了**」をクリックします。
 
@@ -107,9 +108,9 @@ AEM Forms では、サイドバーのコンポーネントブラウザーにテ�
 
 並べ替えを有効にするには、以下の手順を実行します。
 
-1. テーブルを選択し、![configure_icon](assets/configure_icon.png)（設定）をクリックします。インタラクティブ通信のサイドキックにある&#x200B;**コンテンツ**&#x200B;ブラウザーを使用して、テーブルを選択することもできます。
+1. テーブルを選択し、![configure_icon](assets/configure_icon.png)（設定）を選択します。インタラクティブ通信のサイドキックにある&#x200B;**コンテンツ**&#x200B;ブラウザーを使用して、テーブルを選択することもできます。
 1. 「**並べ替えを有効にする**」を選択します。
-1. ![done_icon](assets/done_icon.png) を選択して、テーブルのプロパティを保存します。列ヘッダー内の並べ替えアイコンの上向き矢印と下向き矢印は、並べ替えが有効になっていることを表します。
+1. ![done_icon](assets/done_icon.png) を選択して、テーブルプロパティを保存します。列ヘッダー内の並べ替えアイコンの上向き矢印と下向き矢印は、並べ替えが有効になっていることを表します。
 
    ![並べ替えを有効にする](assets/enable_sorting_new.png)
 
@@ -138,7 +139,7 @@ AEM Forms では、サイドバーのコンポーネントブラウザーにテ�
 
 1. ページのツールバーで、プレビューを実行する前に、![canvas-drop-down](assets/canvas-drop-down.png)／**スタイル**&#x200B;を選択します。
 
-1. サイドバーでテーブルを選択し、「編集」ボタン ![edit-button](assets/edit-button.png) をクリックします。
+1. サイドバーでテーブルを選択し、「編集」ボタン ![edit-button](assets/edit-button.png) を選択します。
 サイドバーにスタイルプロパティが表示されます。
 
 ![テーブルのスタイルプロパティ](assets/style-table.png)
@@ -151,7 +152,7 @@ AEM Forms では、サイドバーのコンポーネントブラウザーにテ�
 
 テーブルには、実行時の動的な行の追加および削除のサポートがあらかじめ含まれています。
 
-1. テーブルの行を選択し、![cmppr](assets/cmppr.png) をクリックします。
+1. テーブルの行を選択し、![cmppr](assets/cmppr.png) を選択します。
 1. 「設定を繰り返し」タブで、テーブルの行の数を制限する最大値と最小値を指定します。
 1. 「**完了**」をクリックします。
 
