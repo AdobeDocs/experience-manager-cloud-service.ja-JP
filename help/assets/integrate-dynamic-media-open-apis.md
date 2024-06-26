@@ -2,16 +2,16 @@
 title: AEM Assetsとダウンストリームアプリケーションの統合
 description: AEM Assetsとダウンストリームアプリケーションの統合
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%
 
 ---
 
-# AEM Assetsとダウンストリームアプリケーションの統合 {#integrate-new-dynamic-media-apis}
+# AEM Assetsとダウンストリームアプリケーションの統合 {#integrate-dynamic-media-open-apis}
 
-すべて [承認済みアセット](approved-assets.md) Experience Managerのアセットリポジトリで使用可能ダウンストリームアプリケーションへの配信に使用できます。
+すべて [承認済みアセット](approve-assets.md) Experience Managerのアセットリポジトリで使用可能ダウンストリームアプリケーションへの配信に使用できます。
 
 検索および配信 API を使用して独自のカスタムユーザーインターフェイスをExperience Manager Assets リポジトリと統合するか、Adobeのマイクロフロントエンドアセットセレクターを使用できます。
 

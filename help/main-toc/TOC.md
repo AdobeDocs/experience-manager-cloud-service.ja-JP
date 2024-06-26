@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bd0d35c57e333d861072e189d0bef0ba14700664
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
-source-wordcount: '5040'
+source-wordcount: '5073'
 ht-degree: 99%
 
 ---
@@ -559,6 +559,16 @@ ht-degree: 99%
       + [コンテンツの HTTP/2 配信の FAQ](/help/assets/dynamic-media/http2faq.md)
       + [Flash ビューアの提供終了](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML ビューアの提供終了](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
+      + OpenAPI 機能を備えたDynamic Media {#dynamic-media-open-apis}
+         + [概要](/help/assets/dynamic-media-open-apis-overview.md)
+         + [アセットの承認](/help/assets/approve-assets.md)
+         + [ダウンストリームアプリケーションとの統合](/help/assets/integrate-dynamic-media-open-apis.md)
+         + [アセット検索 API](/help/assets/search-assets-api.md)
+         + [配信 API](/help/assets/deliver-assets-apis.md)
+         + [アセット配信の制限](/help/assets/restrict-assets-delivery.md)
+         + [リモート AEM AssetsとAEM Sitesの統合](/help/assets/integrate-remote-approved-assets-with-sites.md)
+         + [よくある質問](/help/assets/dynamic-media-open-apis-faqs.md)
+         + [カスタムドメインの設定](/help/assets/configure-custom-domain.md)
    + アセットビューの操作 {#assets-view}
       + [はじめに](/help/assets/assets-view-introduction.md)
       + [概要](/help/assets/get-started-assets-view.md)

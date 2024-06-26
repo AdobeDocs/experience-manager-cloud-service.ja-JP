@@ -1,23 +1,23 @@
 ---
-title: Assets API を検索
+title: Assets検索 API
 description: Search Assets API の使用方法について説明します。
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 1%
 
 ---
 
-# Assets API を検索 {#search-assets-api}
+# Assets検索 API {#search-assets-api}
 
-すべて [承認済みアセット](approved-assets.md) Experience Managerのアセットリポジトリーで使用可能で、検索した後、配信 URL を使用して統合ダウンストリームアプリケーションに配信できます。
+すべて [承認済みアセット](approve-assets.md) Experience Managerのアセットリポジトリーで使用可能で、検索した後、配信 URL を使用して統合ダウンストリームアプリケーションに配信できます。
 
 Experience Managerリポジトリから適切な承認済みアセットを検索することは、配信 URL を使用してアセットを配信するための最初のステップです。 検索リクエストへの応答は、検索条件を満たすアセットに対応する JSON ドキュメントの配列で構成されます。 各 JSON ドキュメントは、 `id` アセット配信リクエストを作成するために使用されるフィールド。
 
 ![直接バイナリアップロードプロトコルの概要](assets/search-assets-api-overview.png)
 
-Search Assets API リクエスト内でプロパティを定義して、次の機能を有効にできます。
+検索Assets API リクエスト内でプロパティを定義すると、次の機能を有効にできます。
 
 * **フルテキスト検索**：を使用します `match` 検索するテキストを定義するクエリ。  内で演算子を使用することもできます `match` 結果をフィルターするクエリ。
 
@@ -55,7 +55,7 @@ headers: {
     },
 ```
 
-検索 API を呼び出すには、で定義するために IMS トークンが必要です `Authorization` の詳細。 IMS トークンはテクニカルアカウントから取得されます。 参照： [AEMas a Cloud Service資格情報の取得](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) 新しいテクニカルアカウントを作成します。 参照： [アクセストークンの生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) ims トークンを生成して、Search Assets API リクエストヘッダーで適切に使用する。
+検索 API を呼び出すには、で定義するために IMS トークンが必要です `Authorization` の詳細。 IMS トークンはテクニカルアカウントから取得されます。 参照： [AEM as a Cloud Service資格情報の取得](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) 新しいテクニカルアカウントを作成します。 参照： [アクセストークンの生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) ims トークンを生成して、Search Assets API リクエストヘッダーで適切に使用する。
 
-要求サンプル、応答サンプルおよび応答コードを表示するには、次を参照してください [Assets API を検索](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
+要求サンプル、応答サンプルおよび応答コードを表示するには、次を参照してください [Assets検索 API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
 
