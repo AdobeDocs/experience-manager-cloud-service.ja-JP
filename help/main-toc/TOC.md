@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: c7c881bb1c235007ba14684959494f08ed27aa67
 workflow-type: tm+mt
-source-wordcount: '5073'
-ht-degree: 99%
+source-wordcount: '5128'
+ht-degree: 98%
 
 ---
 
@@ -589,6 +589,19 @@ ht-degree: 99%
       + [レポートの管理](/help/assets/manage-reports-assets-view.md)
       + [タグを管理](/help/assets/tagging-management-assets-view.md)
       + [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+
+   + Content Hubの管理 {#content-hub}
+      + [概要](/help/assets/product-overview.md)
+      + [Content Hubのデプロイ](/help/assets/deploy-content-hub.md)
+      + [Content Hub ユーザーインターフェイスの設定](/help/assets/configure-content-hub-ui-options.md)
+      + [Content Hubへのブランド承認済みアセットのアップロードまたは読み込み](/help/assets/upload-brand-approved-assets.md)
+      + [Content Hubでのアセットの検索](/help/assets/search-assets-content-hub.md)
+      + [アセットのプロパティ](/help/assets/asset-properties-content-hub.md)
+      + [Content Hubでのアセットの共有](/help/assets/share-assets-content-hub.md)
+      + [Content Hubを使用したアセットのダウンロード](/help/assets/download-assets-content-hub.md)
+      + [Content Hubでのコレクションの管理](/help/assets/collections-content-hub.md)
+      + [Content HubのAdobe Expressを使用した画像の編集](/help/assets/edit-images-content-hub.md)
+      + [Content Hubのアセットインサイト](/help/assets/insights-content-hub.md)
    + ベストプラクティス{#best-practices}
       + [検索のベストプラクティス](/help/assets/search-best-practices.md)
       + [メタデータの管理とベストプラクティス](/help/assets/metadata-best-practices.md)
