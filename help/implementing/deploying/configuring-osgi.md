@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '3302'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ OSGi 設定ファイルは次の場所で定義されます。
 
 >[!NOTE]
 >
->OSGi 設定は、Cloud の一般的なAEM インスタンスのように/apps 下には格納されず、外部の場所に格納されます。 Cloud Manager のチェックイン [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) osgi 設定を表示します。
+>OSGi 設定は、クラウドの一般的な AEM インスタンスのように /apps 下ではなく、外部の場所に格納されます。Cloud Manager [Developer Console](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) にチェックインして、OSGi 設定を表示します。
 
 ## 実行モードの解決 {#runmode-resolution}
 

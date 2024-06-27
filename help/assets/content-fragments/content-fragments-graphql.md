@@ -1,5 +1,5 @@
 ---
-title: GraphQLのコンテンツフラグメントを使用したヘッドレスコンテンツ配信（Assets - コンテンツフラグメント）
+title: GraphQL のコンテンツフラグメントを使用したヘッドレスコンテンツ配信（Assets - コンテンツフラグメント）
 description: ヘッドレスコンテンツ配信にコンテンツフラグメントと GraphQL を使用して AEM ヘッドレス CMS を実現するための基本的な概念について説明します。
 feature: Content Fragments
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
