@@ -1,9 +1,9 @@
 ---
 title: Content Hubの概要
 description: Content Hubの詳細、主なメリット、アクセス方法、Content Hubで使用できるオプションに関するフィードバックの提供方法について説明します。
-source-git-commit: 1aea6c6095aebd38f4c7c078701b29eebd3329b4
+source-git-commit: ad6d213b6ecf902ec80c323a686231f21ee13811
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,11 @@ Content Hubでは、（Adobe Expressの使用権限がある場合は）Adobe Ex
 
 ## 前提条件 {#prerequisites-content-hub}
 
-Experience Manager 6 月リリースas a Cloud Service
+Content Hubには、Experience Manageras a Cloud Serviceの 2024.6 リリース以降（最小バージョンは 2024.6.16799）の実稼動オーサー環境が必要です。
 
 ## Content Hubへのアクセス方法 {#access-content-hub}
 
-ユーザーをに追加した後 [Content Hub製品プロファイル](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)の場合、Content Hubには次の方法でアクセスできます。
+[Content Hubの設定後](#deploy-content-hub) およびユーザーの「」への追加 [Content Hub製品プロファイル](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)の場合、Content Hubには次の方法でアクセスできます。
 
 * 次のリンクを使用してContent Hubにアクセスします。
 
