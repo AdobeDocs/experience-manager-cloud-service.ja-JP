@@ -2,7 +2,7 @@
 title: 配信 API
 description: 配信 API の使用方法を説明します。
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: 3e2fe458460fe8ec4c1dd12152c1134bfb9ca62b
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 0%
@@ -62,4 +62,3 @@ headers: {
 配信 API を呼び出すには、に IMS トークンが必要です。 `Authorization` 制限されたアセットを配信するための詳細。 IMS トークンはテクニカルアカウントから取得されます。 参照： [AEM as a Cloud Service資格情報の取得](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) 新しいテクニカルアカウントを作成します。 参照： [アクセストークンの生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) ims トークンを生成して、配信 API リクエストヘッダーで適切に使用する。
 
 要求サンプル、応答サンプルおよび応答コードを表示するには、次を参照してください [配信 API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetSeoFormat).
-
