@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: ed166aa753d4fb5c6fb1573032186e3e14f375df
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '986'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 98%
 1. 変数の詳細を入力します。
    * **名前**
    * **値**
-   * **適用されるサービス**  – 変数をどのサービス（オーサー/Publish/プレビュー）に適用するか、またはすべてのサービスに適用するかを定義します
+   * **適用されるサービス** - 変数をどのサービス（作成／公開／プレビュー）に適用するか、またはすべてのサービスに適用するかを定義します
    * **種類** - 変数が通常の変数かシークレットかを定義します
 
    ![変数の追加](assets/add-variable.png)

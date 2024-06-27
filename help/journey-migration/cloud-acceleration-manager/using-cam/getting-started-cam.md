@@ -5,9 +5,9 @@ exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
 feature: Migration
 role: Admin
 source-git-commit: d840e0beb8036ed8e543ac85850290e778371bbe
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '555'
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ Cloud Acceleration Manager（CAM）のランディングページを使用する
 1. 「**削除**」をクリックして、手順を確定します。
 
    >[!NOTE]
-   >プロジェクトは、移行が実行されなくなってから 1 年が経過すると、自動的に期限切れになり、削除されます。 プロジェクトは、プロジェクト名や説明の編集、BPA レポートのアップロード、移行セットの作成や編集、抽出の実行、取り込みの実行を行うことで、アクティブなままになります。
+   >プロジェクトは、移行が行われない状態が 1 年間続くと、自動的に期限切れになり、削除されます。プロジェクトは、プロジェクト名や説明の編集、BPA レポートのアップロード、移行セットの作成や編集、抽出の実行、取り込みの実行を行うことで、アクティブな状態を維持します。
 
 
 ## 次の手順 {#whats-next}

@@ -5,7 +5,7 @@ exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
 feature: Administering Screens
 role: Admin, Developer, User
 source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
 ht-degree: 100%
 

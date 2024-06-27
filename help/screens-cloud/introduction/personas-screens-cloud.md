@@ -5,7 +5,7 @@ exl-id: f57a1aaf-8139-4141-90c5-c70ec7a9630c
 feature: Screens Deployments
 role: Admin, Developer, User
 source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '214'
 ht-degree: 100%
 

@@ -7,7 +7,7 @@ feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3842'
 ht-degree: 100%
 

@@ -6,7 +6,7 @@ exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
 role: User, Leader, Developer
 source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '685'
 ht-degree: 100%
 

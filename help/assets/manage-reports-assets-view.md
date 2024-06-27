@@ -5,7 +5,7 @@ exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
 source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '817'
 ht-degree: 100%
 

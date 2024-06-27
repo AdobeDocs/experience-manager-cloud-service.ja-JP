@@ -6,7 +6,7 @@ feature: Asset Management, Translation
 role: Admin, User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
 source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2615'
 ht-degree: 100%
 

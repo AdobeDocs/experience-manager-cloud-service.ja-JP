@@ -6,7 +6,7 @@ feature: Asset Management, Publishing, Collaboration, Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
 source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4983'
 ht-degree: 100%
 

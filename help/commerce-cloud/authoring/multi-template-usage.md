@@ -12,7 +12,7 @@ thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
 role: Admin
 source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '178'
 ht-degree: 100%
 

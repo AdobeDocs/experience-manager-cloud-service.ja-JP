@@ -5,7 +5,7 @@ feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
 role: Admin
 source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1499'
 ht-degree: 100%
 

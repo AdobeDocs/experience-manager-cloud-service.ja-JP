@@ -13,7 +13,7 @@ thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
 role: Admin
 source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2298'
 ht-degree: 100%
 

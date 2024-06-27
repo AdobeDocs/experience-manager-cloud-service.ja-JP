@@ -6,7 +6,7 @@ feature: Brand Portal, Asset Distribution, Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
 source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1287'
 ht-degree: 100%
 

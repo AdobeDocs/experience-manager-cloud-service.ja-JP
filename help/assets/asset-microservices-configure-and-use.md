@@ -6,7 +6,7 @@ feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2866'
 ht-degree: 100%
 

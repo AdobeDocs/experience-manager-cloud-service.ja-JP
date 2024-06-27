@@ -7,7 +7,7 @@ feature: Collaboration, Adobe Asset Link, Desktop App
 role: User, Architect, Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3438'
 ht-degree: 100%
 

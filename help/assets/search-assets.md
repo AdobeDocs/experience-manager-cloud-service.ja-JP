@@ -7,7 +7,7 @@ feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Pro
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
 source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5503'
 ht-degree: 100%
 

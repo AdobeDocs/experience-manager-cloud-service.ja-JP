@@ -6,7 +6,7 @@ feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1938'
 ht-degree: 100%
 

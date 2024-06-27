@@ -5,7 +5,7 @@ role: User, Leader
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '334'
 ht-degree: 100%
 
