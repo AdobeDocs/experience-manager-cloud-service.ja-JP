@@ -1,9 +1,9 @@
 ---
 title: Content Hubの概要
-description: Content Hubの詳細、主なメリット、アクセス方法、Content Hubで使用できるオプションに関するフィードバックの提供方法について説明します。
-source-git-commit: ad6d213b6ecf902ec80c323a686231f21ee13811
+description: Content Hubの詳細、主なメリット、アクセス方法、Content Hubで利用できるオプションに関するフィードバックの提供方法について説明します。
+source-git-commit: b29641286919b5becc3982400ea160836531fdc5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
