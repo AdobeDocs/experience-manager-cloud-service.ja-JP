@@ -7,15 +7,13 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 52b87073cad84705b5dc0c6530aff44d1e686609
 workflow-type: tm+mt
-source-wordcount: '4351'
+source-wordcount: '4333'
 ht-degree: 4%
 
 ---
 
-
-<span class="preview"> この記事には次が含まれます `Override form submission success and error handlers` をプレリリース機能として使用できます。 プレリリース機能には、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features).
 
 # アダプティブForms（コアコンポーネント）のカスタム関数
 

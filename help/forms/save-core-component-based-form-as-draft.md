@@ -4,14 +4,13 @@ description: コアコンポーネントベースのアダプティブフォー�
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 52b87073cad84705b5dc0c6530aff44d1e686609
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1053'
 ht-degree: 15%
 
 ---
 
-<span class="preview"> この記事には、プレリリース機能のコンテンツが含まれています。 プレリリース機能には、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features).
 
 # コアコンポーネントベースのアダプティブフォームをドラフトとして保存 {#save-af-form}
 

@@ -3,12 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-feature: Release Information
-role: Admin
-source-git-commit: bd0d35c57e333d861072e189d0bef0ba14700664
+source-git-commit: 50698fd78cf9ebfd1d92fdb29d53988410ac2970
 workflow-type: tm+mt
-source-wordcount: '1942'
-ht-degree: 95%
+source-wordcount: '1970'
+ht-degree: 63%
 
 ---
 
@@ -18,7 +16,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->ここから、以前のバージョン（例えば、2021年、2022年）のリリースノートに移動できます。
+>ここから、以前のバージョン（例えば、2022年、2023年）のリリースノートに移動できます。
 >
 >[!DNL Experience Manager] as a Cloud Service の今後の機能のアクティベーションについての詳細は、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)をご覧ください。
 
@@ -28,46 +26,21 @@ ht-degree: 95%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2024.5.0）のリリース日は、2024年5月30日（PT）です。次回の機能リリース（2024.6.0）は 2024年6月27日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2024.6.0）のリリース日は 2024年6月25日です。次回の機能リリース（2024.7.0）は 2024年7月27日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
 最新のメンテナンスリリースノートについては、[こちら](/help/release-notes/maintenance/latest.md)をご覧ください。
 
-## リリースビデオ {#release-video}
+<!--  ## Release Video {#release-video}
 
-2024.5.0 リリースで追加された機能の概要については、2024年5月リリースの概要ビデオをご覧ください。
+Have a look at the June 2024 Release Overview video for a summary of the features added in the 2024.6.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
 
+-->
+
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### Sites の新機能 {#sites-new-features}
-
-#### AEM 翻訳統合 {#translation-integration}
-
-コンテンツ翻訳アクションとワークフローはイベントをトリガーし、外部アプリケーションから関連するプロセスステップと状態を追跡できるようになりました。次のイベントが生成されています。ユーザーは、Adobe Developer Console を使用してイベントを購読できます。
-
-* `TRANSLATION_JOB_CREATED`
-* `TRANSLATION_JOB_CONTENT_ADDITION_STARTED`
-* `TRANSLATION_JOB_CONTENT_ADDITION_COMPLETED`
-* `TRANSLATION_JOB_CONTENT_DELETION_STARTED`
-* `TRANSLATION_JOB_CONTENT_DELETION_COMPLETED`
-* `TRANSLATION_JOB_COMMITTED_FOR_TRANSLATION`
-* `TRANSLATION_JOB_READY_FOR_REVIEW`
-* `TRANSLATION_JOB_APPROVED`
-* `TRANSLATION_JOB_COMPLETED`
-* `TRANSLATION_JOB_CANCELLED`
-* `TRANSLATION_JOB_ERROR`
-
-#### 実際の使用のモニタリング（RUM）データサービス {#real-use-monitoring}
-
-* **[実際の使用のモニタリング（RUM）データサービスが GA になり](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)**、AEM as a Cloud Service のクライアントサイドのデータコレクションを有効にすることができます。
-クライアントサイドのコレクションである実際の使用のモニタリングサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントを信頼性の高い方法で測定できるようにします。これにより、お客様はページのトラフィックとパフォーマンスに関する高度なインサイトを取得できます。ページのパフォーマンスについて詳しく知り、改善するためのインサイトを得る絶好の機会です。
-
-#### Edge Delivery Services 用の AEM オーサリング {#edge-enhancements}
-
-安定性の向上と様々な機能強化により、オーサリングエクスペリエンスが向上しました。
 
 ### 早期導入プログラム {#sites-early-adopter}
 
@@ -85,18 +58,39 @@ AEM の新機能を通じて GenAI を活用し、[バリエーションを生�
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### 管理ビューの新機能 {#admin-view-new-features}
+### Experience Manager Assetsの新機能 {#new-features-assets}
 
-* WebM は、ビデオの処理プロファイルでサポートされる出力ファイルになりました。
-* MP4 は、Express の AEM のネイティブ統合（読み込みと書き出し）でサポートされるようになりました。
+**Content Hub**
+
+Content Hubは、組織やビジネスパートナーがオンブランドのコンテンツにアクセスしやすくするために、Experience Manager Assetsas a Cloud Serviceの一部として利用できます。 Content Hubを使用すると、アセットを簡単に見つけて配布したり、ブランド上の新しいバリエーションを再利用および作成したり、大規模にアクティベーションを高速化したりできます。
+
+![Content Hub ユーザーインターフェイス](/help/release-notes/assets/content-hub-ui.png)
+
+**OpenAPI 機能を備えたDynamic Media**
+
+OpenAPI 機能を備えたDynamic Mediaは、DAM をAdobeアプリケーションおよびサードパーティアプリケーション全体に拡張し、アセットセレクターまたは OpenAPI スタックを介して、あらゆるチャネルでブランド承認済みデジタルアセットにへのアクセスを可能にします。 主要な概念 – バイナリコピーがなく、アセットは高速パフォーマンスのためにエッジで最適化および変換され、アセットをパブリックまたはセキュアで配信します。
+
+![新しいDynamic Mediaのデータフロー図](/help/assets/assets/dm-openapi-dfd.png)
+
 
 ### アセットビューの新機能 {#assets-view-new-features}
 
-**AEM および Dynamic Media へのアセットの公開**
+**Assets Insights ダッシュボードで利用できるその他のオプション**
 
-Experience Manager Assets では、管理ビューに切り替えなくても、アセットビューを使用して [Experience Manager および Dynamic Media にアセットをすばやく公開](/help/assets/publish-assets-to-aem-and-dm.md)できるようになりました。アセットのアップロード、参照および検索時に、アセットを公開できます。
+アセットタイプおよびサイズ別のアセット数がAssets Insights ダッシュボードで使用できるようになりました。 これらのオプションは、Assets ビュー環境で、サイズ範囲とアセットタイプ別のアセットの数と割合に関するリアルタイムデータを提供します。
 
-![公開ステータス 1 の確認](/help/assets/assets/check-publish-status1.png)
+<!--
+
+
+**Content Credentials**
+
+Content Credentials feature in Assets view now provides detailed asset provenance data adhered to an asset. This helps to trace the enroute edits along the asset's lifecycle to prevent users from deception through deliberately tempered assets. This ensures content authenticity among users and fosters trust through transparency.
+
+When looking at the asset details, any image with content credentials added, such as those created with GenAI, displays the manifest details in a dedicated panel. If the asset is downloaded, published, or shared, the credentials remain intact with the asset.
+
+![check publish status1](/help/release-notes/assets/content-credentials.png)
+
+-->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -106,13 +100,13 @@ Experience Manager Assets では、管理ビューに切り替えなくても、
 
 -->
 
-### AEM Forms の新しいプレリリース機能 {#forms-new-prerelease-features}
+### AEM Forms の新機能 {#forms-new-prerelease-features}
 
 #### コアコンポーネントベースのアダプティブフォーム用のビジュアルルールエディターの強化
 
 このリリースでは、コアコンポーネントに基づいたアダプティブフォームのビジュアルルールエディターが、大幅にアップグレードされました。次の操作が可能になっています。
 
-* ビジュアルルールエディターでルールを作成して、[デフォルトのフォーム送信の成功／失敗メッセージを上書き](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers)します。
+* ビジュアルルールエディターでルールを作成して [デフォルトのフォーム送信成功/失敗メッセージの上書き](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
 
 * アダプティブフォームのルールエディターに、[WHEN 操作に対して様々なタイプのフィールドを選択](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when)する機能を追加しました。
 
@@ -120,14 +114,11 @@ Experience Manager Assets では、管理ビューに切り替えなくても、
 
 * [**ドラフトとして保存**](/help/forms/save-core-component-based-form-as-draft.md)&#x200B;機能を使用すると、部分的に入力したフォームを後で送信するために保存できます。これは、ユーザーがフォームへの入力を中断し、後で戻る必要があるシナリオで役立ちます。
 
+### AEM Formsの早期アクセス機能 {#forms-new-early-access-features}
 
+AEM Forms早期アクセスプログラムは、誰よりも先に最先端のイノベーションに排他的にアクセスし、その発展を形作るユニークな機会を提供します。 プログラムを利用すると、複数のイノベーションにアクセスできます。
 
-### AEM Formsの早期アクセス機能 {#forms-new-access-adopter-features}
-
-AEM Forms早期アクセスプログラムは、誰よりも先に最先端のイノベーションに排他的にアクセスし、その発展を形作るユニークな機会を提供します。
-プログラムを利用すると、複数のイノベーションにアクセスできます。
-
-このリリースノートでは、現在のリリースで提供されるイノベーションのリストを示します。早期アクセス プログラムで利用可能なイノベーションの完全なリストについては、次を参照してください。 [AEM Forms アーリーアクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md).
+このリリースノートでは、現在のリリースで提供されているイノベーションの一覧を示します。 早期アクセス プログラムで利用可能なイノベーションの完全なリストについては、次を参照してください。 [AEM Forms アーリーアクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md).
 
 #### ボット保護方法の強化
 
@@ -144,7 +135,7 @@ AEM Forms では、複数の CAPTCHA オプションを提供して、特定の�
 
 ### Forms サービス
 
-Forms サービスでは、データキャプチャ用のインタラクティブな PDF フォームを生成します。また、これを使用して、既存のインタラクティブ PDF フォームとの間でデータを読み込みまたは書き出したり、送信済みデータを検証したりすることもできます。機能の分類を以下に示します。
+Forms サービスでは、データキャプチャ用のインタラクティブな PDF フォームを生成します。また、既存のインタラクティブPDFフォームとの間でデータをインポートまたはエクスポートしたり、送信されたデータを検証したりすることもできます。 機能の分類を以下に示します。
 
 * **Forms のレンダリング**：AEM Forms Designer を使用して作成したテンプレートからと、オプションで XML データから、インタラクティブな PDF フォームを生成します。これにより、基本的に、入力可能な PDF フォーム（オプションでデータを事前入力することもできます）が生成されます。
 * **データの抽出と読み込み**： 既存の PDF フォームにデータを読み込んだり、入力済みの PDF フォームからデータを抽出したりします。XDP と XML の両方のデータ形式がサポートされ、XFA 以外の PDF フォーム（AcroForms とも呼ばれます）への読み込みでは、さらに FDF および XFDF データもサポートされます。
@@ -152,65 +143,54 @@ Forms サービスでは、データキャプチャ用のインタラクティ�
 
 >[!IMPORTANT]
 >
-> アーリーアクセスの革新のためにアーリーアクセスプログラムに参加することに興味がある場合は、公式アドレスから次のアドレスにメールを送信するだけです [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) アクセスをリクエストします。 すべてのイノベーションまたは特定のイノベーションに対して利用申請できます。
+> アーリーアクセスプログラムに参加してアーリーアクセスのイノベーションを実現したい場合は、公式アドレスから次のアドレスにメールを送信するだけです [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) アクセスをリクエストします。 すべてのイノベーションまたは特定のイノベーションに対して利用申請できます。
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
-### AEM と他のアドビソリューションとの統合のための OAuth サーバー間資格情報のサポート {#S2S-OAuth-credentials}
+### コンテンツヘルス関連アクションセンター通知早期導入プログラム {#actions-center-notifications}
 
-Adobe Developer Console は、様々な API にアクセスするための資格情報を生成するために使用されます。これらの資格情報のタイプの 1 つであるサービスアカウント（JWT）資格情報は非推奨（廃止予定）となり、代わりに OAuth サーバー間資格情報が採用されました。AEM Cloud Service では、Adobe Analytics や Adobe Target などの他のアドビソリューションとの統合で OAuth サーバー間資格情報がサポートされるようになりました。
+[アクションセンター](/help/operations/actions-center.md)は、重要なインシデントが発生した場合や、コードや設定に関してプロアクティブなアクションを実行する必要がある場合にメール通知を送信します。コンテンツの正常性に関連するいくつかの新しいタイプの通知が導入されました。 これは、早期導入プログラムを通じて利用できます。 Adobeカスタマーケアにお問い合わせください。
 
-[非推奨（廃止予定）については、こちら](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)を参照し、[AEM オーサー UI の使用方法については、こちら](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)を参照してから、他のアドビソリューションとの統合を設定してください。
+#### ページに多数のノードが含まれる {#page-nodes}
 
-### 接触チャネルアラートでのトラフィックスパイク {#traffic-spike-origin}
+ノードの数が多いと、レンダリングのパフォーマンスが低下し、ページの読み込み時間が短縮される可能性があります。 ページで大量のノードが検出されると、アクションセンターを通じてプロアクティブ通知が届きます。これにより、ページ内のノードの合計数を減らすために必要な手順を実行できます。
 
-接触チャネルのトラフィックパターンが DDoS 攻撃を示している場合は、アクションセンターを通じて[プロアクティブな通知を受信](/help/security/traffic-filter-rules-including-waf.md#traffic-spike-at-origin-alert)し、トラフィックフィルタールールを調査して設定できます。
+#### 実行中のワークフローインスタンスの数が多い {#running-workflows}
 
-### RDE の新機能 {#RDE-new-features}
+オーサー環境で実行中のワークフローが多数ある場合は、ワークフローエンジンのパフォーマンスが影響を受けます。 実行中のワークフローインスタンスが大量に検出されると、アクションセンターから事前通知が届きます。これにより、不要な実行中のワークフローを終了するパージジョブを設定できます。
 
-[迅速な開発環境（RDE）](/help/implementing/developing/introduction/rapid-development-environments.md)を使用すると、開発者はクラウドで変更を迅速にデプロイ、レビュー、テストできます。6 月中にいくつかの新機能がロールアウトされる予定です。また、[RDE ディスコードチャネル](https://discord.com/channels/1131492224371277874/1245304281184079872)では、アドビのエンジニアリングと直接やり取りすることもできます。
+#### ユーザーがカスタムグループに直接追加されました {#users-customgroups}
 
+IMS のベストプラクティスに従って関連する IMS グループにユーザーを追加した後、IMS グループをAEM グループのメンバーとして追加できるので、ユーザーがカスタムグループに直接追加されると、アクションセンターから事前通知が届きます。
 
-#### サイトテーマとサイトテンプレートを使用したフロントエンドコードの RDE サポート {#rde-frontend}
+#### JCR コンテンツが欠落しています {#jcr-content}
 
-[RDE でフロントエンドコードがサポートされるようになりました](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) 基準： [サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md) および [サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)（早期導入者向け） RDE では、[フロントエンドパイプライン](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)ではなくコマンドラインディレクティブを使用して行われます。
+欠落している JCR コンテンツが検出されると、アクションセンターから事前通知が届きます。これにより、欠落している JCR コンテンツを追加し、特定のAEM Assets機能の不具合を回避できます。
 
-#### RDE ロギングの強化 {#rde-logging}
+#### 完了したワークフローがパージされない {#workflows}
 
-RDE でコードをデバッグする際、バージョン管理で OSGI プロパティを変更することなく、コマンドラインを使用して、開発者が[より生産的にログを設定し、ストリーミング](/help/implementing/developing/introduction/rapid-development-environments.md#rde-logging)できるようになりました。次のような機能があります。
+完了したワークフローが 90 日を超えてパージされていない場合は、アクションセンターから事前通知が届き、ワークフローインスタンスの数を最小限に抑えることでワークフローエンジンのパフォーマンスを向上させることができます。
 
-* パッケージまたはクラスレベルごとのログレベルの宣言
-* ログ出力形式のカスタマイズ
-* 複数のログを並行してストリーミング
+#### Sling リソースがありません {#sling-resource}
 
-#### RDE CLI の機能強化 {#rde-cli-enhancements}
+欠落している Sling リソースが検出されると、アクションセンターを通じてプロアクティブ通知が届きます。これにより、欠落している Sling リソースを追加し、特定のAEM Assets機能でエラーが発生するのを回避できます。
 
-RDE コマンドラインインターフェイスには、開発者エクスペリエンスを向上させる新機能がいくつか備わっています。
-
-* [setup コマンドはインタラクティブ](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools-interactive)なので、組織、プログラム、環境を簡単に選択できます。また、コマンドラインでこれらの値を上書きできるようになりました。
-* [静止モード](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags)では、冗長性の低い出力を実現します。
-* [jJSON モード](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags)では、プログラムで呼び出すと有用な出力が得られます。
-
-### 新しいアクションセンターの通知 {#actions-center-notifications}
-
-[アクションセンター](/help/operations/actions-center.md)は、重要なインシデントが発生した場合や、コードや設定に関してプロアクティブなアクションを実行する必要がある場合にメール通知を送信します。通知には、次の 3 つの新しいタイプがあります。
-
-* 高度なネットワークインフラストラクチャを介した送信接続が多すぎる
-* 非推奨のサービスユーザーマッピング形式の使用
-* 潜在的な DDoS 攻撃が進行中
-
-### 早期導入プログラム {#foundation-early-adopter}
+### コンテンツ配信関連の早期導入プログラム {#foundation-early-adopter}
 
 以下の早期導入プログラムのどれに興味があるかを明記して、**<aemcs-cdn-config-adopter@adobe.com>** にメールを送信してください。
 
-#### セルフサービス API キーを使用して CDN のコンテンツをパージ（早期導入プログラム） {#purge-cdn}
+#### CDN での基本認証（早期導入プログラム） {#basicauth-cdn}
+
+ユーザー名とパスワードを必要とする基本認証ダイアログをポップアップすることで、特定のコンテンツリソースをProtectします。 この機能は、エンドユーザーのアクセス権限に対する本格的なソリューションとしてではなく、主に、ビジネスの関係者によるコンテンツのレビューなどの軽い認証ユースケースを目的としています。 秘密鍵タイプのCloud Manager環境変数への参照を使用して、設定パイプラインを介してデプロイされた Git の設定ファイルを通じて管理されるのユーザー名とパスワードのリスト。 [詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth)。
+
+#### セルフサービス API キーを使用して CDN でコンテンツをパージする（早期導入プログラム） {#purge-cdn}
 
 CDN パージ API キーをセルフサービス方式で登録し、これを使用して CDN のコンテンツをグローバルに、または 1 つ以上のリソースに対して無効にします。[詳細情報](/help/implementing/dispatcher/cdn-cache-purge.md)。
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### 顧客管理 CDN（BYOCDN）用の X-AEM-Edge-Key のセルフサービス作成（早期導入プログラム） {#byocdn-keys}
+#### 顧客管理 CDN （BYOCDN）用 X-AEM-Edge キーのセルフサービス作成（早期導入プログラム） {#byocdn-keys}
 
 以前は、顧客管理 CDN の設定に必要な X-AEM-Edge-Key を生成するには、サポートチケットが必要でした。これにより、設定パイプラインを使用してデプロイされる設定ファイルを通じてセルフサービス方式で実行できるようになり、新しい環境のオンボーディングの遅延がなくなりました。[詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)。
 
@@ -226,7 +206,7 @@ CDN パージ API キーをセルフサービス方式で登録し、これを�
 
 早期導入プログラムに参加すると、トラフィックフィルタールールがトリガーされるたびにアラートを受け取ることができます。特定のトラフィック状況が発生するとアクションセンターのメール通知が送信されるので、適切な対策を講じることができます。
 
-#### ビジネスユーザーが Git 外部でリダイレクトを宣言できる（早期導入プログラム） {#apache-rewritemaps-early-adopter}
+#### ビジネスユーザーは Git 外でリダイレクトを宣言できる（早期導入プログラム） {#apache-rewritemaps-early-adopter}
 
 AEM 6.5 と同様に、Apache／Dispatcher は、web 階層パイプラインの実行を必要とせずに、公開リポジトリ内の特定の場所に配置された書き換えマップを取り込んで読み込みます。これにより、ビジネスユーザーが、ACS Commons リダイレクトマップマネージャーが提供するようなスプレッドシートまたは UI や顧客アプリケーションの一部として作成するようなスプレッドシートまたは UI を使用して、リダイレクトを宣言できるようになります。<!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
 
@@ -234,14 +214,16 @@ AEM 6.5 と同様に、Apache／Dispatcher は、web 階層パイプラインの
 
 アドビが管理する CDN で、エッジレベルの動的 web コンテンツアセンブリ用のマークアップ言語である[エッジサイドインクルード（ESI）](/help/implementing/dispatcher/edge-side-includes.md)がサポートされるようになりました。ESI スニペットを含め、より大きい TTL で HTML ページ全体を CDN にキャッシュしながら、より頻繁なアップデート（小さい TTL）を必要とする小さなセクションを、接触チャネルから頻繁に取得できます。<!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
+#### リアルユーザーモニタリング（RUM）データサービス（早期導入プログラム）
+
+* **[リアルユーザーモニタリング（RUM）データサービスを活用](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**して、AEM as a Cloud Service のクライアントサイドのコレクションを有効にすることができます。
+実ユーザーモニタリング（RUM）データサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントの信頼性の高い測定を保証します。 ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
+
+  この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから、RUM を有効にする各環境のドメイン名を添付して、`aemcs-rum-adopter@adobe.com` にメールを送信してください。その後、アドビの製品チームが、リアルユーザーモニタリング（RUM）データサービスを有効にします。
+
 ## [!DNL Experience Manager] ガイド {#guides}
 
-* **エクスペリエンスフラグメントへのトピックまたはその要素の公開**
-Experience Manager Guiedes を使用すると、トピックまたはその要素をエクスペリエンスフラグメントに公開できるようになりました。エクスペリエンスフラグメントは、コンテンツとレイアウトの両方を統合するモジュール型コンテンツユニットです。エクスペリエンスフラグメントは便利で、一貫性のある魅力的なエクスペリエンスを作成するのに役立ちます。
-* **トピックのアセットメタデータをネイティブ PDF 出力に渡す機能**
-ネイティブ PDF 出力の生成時に、トピックのアセットメタデータを追加できます。この機能を使用すると、トピックのタイトルや作成者など、様々なトピックの特定のメタデータを、トピックページのヘッダーとフッターに追加できます。
-
-このリリースの新機能および機能強化と修正された問題について詳しくは、[Experience Manager Guides リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)をご覧ください。
+Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0)を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 
