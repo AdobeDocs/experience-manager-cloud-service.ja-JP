@@ -4,7 +4,7 @@ description: AEM as a Cloud Serviceのメンテナンスタスクと、その設
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 4113bb47dee5f3a2c7743f9a79c60654e58cb6bd
+source-git-commit: f8ef7e36ad602af96c3a6055db31ac328da808e6
 workflow-type: tm+mt
 source-wordcount: '2106'
 ht-degree: 43%
@@ -46,14 +46,14 @@ ht-degree: 43%
   <tr>
     <td>バージョンのパージ</td>
     <td>顧客</td>
-    <td>バージョンのパージは現在、デフォルトで無効になっていますが、ポリシーは次の説明に従って設定できます <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">バージョンのパージと監査ログのパージのメンテナンスタスク</a> セクション。<br/><br/>間もなくデフォルトでパージが有効になり、これらの値は上書き可能になります。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>バージョンのパージは現在、デフォルトで無効になっていますが、ポリシーは次の説明に従って設定できます <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">バージョンのパージと監査ログのパージのメンテナンスタスク</a> セクション。<br/><br/>間もなくデフォルトでパージが有効になり、これらの値は上書き可能になります。<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>監査ログの削除</td>
     <td>顧客</td>
-    <td>監査ログのパージは、現在デフォルトでは無効になっていますが、ポリシーは次のセクションで説明するように設定できます <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">バージョンのパージと監査ログのパージのメンテナンスタスク</a> セクション。<br/><br/>間もなくデフォルトでパージが有効になり、これらの値は上書き可能になります。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>監査ログのパージは、現在デフォルトでは無効になっていますが、ポリシーは次のセクションで説明するように設定できます <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">バージョンのパージと監査ログのパージのメンテナンスタスク</a> セクション。<br/><br/>間もなくデフォルトでパージが有効になり、これらの値は上書き可能になります。<br>
    </td>
    </td>
   </tr>
@@ -197,7 +197,7 @@ ht-degree: 43%
 
 >[!NOTE]
 >
->Adobeでは、バージョンのパージを設定しないことをお勧めします。
+>AEM Guidesのお客様は、バージョンのパージを設定しないでください。
 
 ### デフォルト {#defaults}
 
@@ -283,7 +283,7 @@ data:
 
 >[!NOTE]
 >
->Adobeでは、バージョンのパージを設定しないことをお勧めします。
+>AEM Guidesのお客様は、バージョンのパージを設定しないでください。
 
 #### バージョンの消去の既定値 {#version-purge-defaults}
 
