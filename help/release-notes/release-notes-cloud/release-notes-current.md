@@ -1,16 +1,16 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
+description: の最新のリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 19b52f733a592c7e84ba2e9d83d37e5e181f21ab
+source-git-commit: 1e5a32625377cb564c859a6fdaf1ecef6ebebe9e
 workflow-type: tm+mt
-source-wordcount: '1805'
-ht-degree: 60%
+source-wordcount: '1865'
+ht-degree: 45%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート  {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
 
 以下のセクションでは、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンの機能リリースノートの概要について説明します。
 
@@ -42,6 +42,12 @@ Have a look at the June 2024 Release Overview video for a summary of the feature
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
+### Experience Manager Sitesの新機能 {#new-feature-sites}
+
+**RUM （Real Use Monitoring）データ・サービス** {#real-use-monitoring}
+
+この [RUM （Real Use Monitoring）データ・サービス](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/shwetad-patch-1/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service) が一般入手可能になり、AEM as a Cloud Serviceのクライアントサイドのデータ収集が可能になりました。 このサービスは、ユーザーのインタラクションをより正確に反映し、web サイトエンゲージメントの信頼性の高い尺度を確保します。 ページトラフィックとパフォーマンスに関する高度なインサイトを顧客に提供し、ページのパフォーマンスを理解して強化する貴重な機会を提供します。
+
 ### 早期導入プログラム {#sites-early-adopter}
 
 **バリエーションを生成**
@@ -60,6 +66,8 @@ AEM の新機能を通じて GenAI を活用し、[バリエーションを生�
 
 ### Experience Manager Assetsの新機能 {#new-features-assets}
 
+
+
 **Content Hub**
 
 Content Hubは、組織やビジネスパートナーがオンブランドのコンテンツにアクセスしやすくするために、Experience Manager Assetsas a Cloud Serviceの一部として利用できます。 Content Hubを使用すると、アセットを簡単に見つけて配布したり、ブランド上の新しいバリエーションを再利用および作成したり、大規模にアクティベーションを高速化したりできます。
@@ -68,16 +76,16 @@ Content Hubは、組織やビジネスパートナーがオンブランドのコ
 
 **OpenAPI 機能を備えたDynamic Media**
 
-OpenAPI 機能を備えたDynamic Mediaは、DAM をAdobeアプリケーションおよびサードパーティアプリケーション全体に拡張し、アセットセレクターまたは OpenAPI スタックを介して、あらゆるチャネルでブランド承認済みデジタルアセットにへのアクセスを可能にします。 主要な概念 – バイナリコピーがなく、アセットは高速パフォーマンスのためにエッジで最適化および変換され、アセットをパブリックまたはセキュアで配信します。
+OpenAPI 機能を備えたDynamic Mediaは、Adobeおよびサードパーティアプリケーション全体で DAM を拡張し、アセットセレクターまたは OpenAPI スタックを使用して、あらゆるチャネルでブランド承認済みデジタルアセットにへのアクセスを可能にします。 主要な概念 – バイナリコピーがなく、アセットは高速パフォーマンスのためにエッジで最適化および変換され、アセットをパブリックまたはセキュアで配信します。
 
 ![新しいDynamic Mediaのデータフロー図](/help/assets/assets/dm-openapi-dfd.png)
 
 
 ### アセットビューの新機能 {#assets-view-new-features}
 
-**Assets Insights ダッシュボードで利用できるその他のオプション**
+**Assets Insights ダッシュボードでは、その他のオプションを利用できます**
 
-アセットタイプおよびサイズ別のアセット数がAssets Insights ダッシュボードで使用できるようになりました。 これらのオプションは、Assets ビュー環境で、サイズ範囲とアセットタイプ別のアセットの数と割合に関するリアルタイムデータを提供します。
+アセットタイプおよびサイズ別のアセット数がAssets Insights ダッシュボードで使用できるようになりました。 これらのオプションにより、Assets ビュー環境でリアルタイムデータが提供されます。 サイズ範囲とアセットタイプによって、アセットの数と割合が詳しく示されます。
 
 <!--
 
@@ -104,15 +112,15 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### コアコンポーネントベースのアダプティブフォーム用のビジュアルルールエディターの強化
 
-このリリースでは、コアコンポーネントに基づいたアダプティブフォームのビジュアルルールエディターが、大幅にアップグレードされました。次の操作が可能になっています。
+このリリースでは、コアコンポーネントをベースとするアダプティブフォームのビジュアルルールエディターが大幅にアップグレードされました。 次の操作が可能になっています。
 
-* ビジュアルルールエディターでルールを作成して [デフォルトのフォーム送信成功/失敗メッセージの上書き](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
+* ビジュアルルールエディターでルールを作成して、 [デフォルトのフォーム送信成功/失敗メッセージの上書き](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
 
 * アダプティブフォームのルールエディターに、[WHEN 操作に対して様々なタイプのフィールドを選択](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when)する機能を追加しました。
 
 * フォーム作成者は、[送信前にデータを前処理](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server)するカスタム関数を適用できるようになりました。
 
-* [**ドラフトとして保存**](/help/forms/save-core-component-based-form-as-draft.md)&#x200B;機能を使用すると、部分的に入力したフォームを後で送信するために保存できます。これは、ユーザーがフォームへの入力を中断し、後で戻る必要があるシナリオで役立ちます。
+* [**ドラフトとして保存**](/help/forms/save-core-component-based-form-as-draft.md)&#x200B;機能を使用すると、部分的に入力したフォームを後で送信するために保存できます。この機能は、ユーザーがフォームの入力を中断して後で戻る必要がある場合に役立ちます。
 
 ### AEM Formsの早期アクセス機能 {#forms-new-early-access-features}
 
@@ -122,59 +130,59 @@ AEM Forms早期アクセスプログラムは、誰よりも先に最先端の�
 
 #### ボット保護方法の強化
 
-AEM Forms では、Cloudflare Turnstile と hCaptcha という 2 つの一般的な Captcha ソリューションのサポートを追加して、セキュリティ機能を強化しました。これにより、既に利用可能な Google reCAPTCHA が追加され、ボットやスパムの送信からフォームを保護するためのより多くの選択肢と柔軟性がユーザーに提供されます。
+AEM Forms では、Cloudflare Turnstile と hCaptcha という 2 つの一般的な Captcha ソリューションのサポートを追加して、セキュリティ機能を強化しました。この機能は、既存のGoogle reCAPTCHA を補完し、ユーザーに追加のオプションを提供します。 これにより、ボットやスパム送信からフォームを保護する柔軟性が向上します。
 
-* **Cloudflare Turnstile**：このスムーズな Captcha は、明示的なインタラクションを必要としないシンプルなテストを通じてユーザーを検証します。フォームにシームレスに統合し、ユーザーエクスペリエンスを向上させます。
+* **Cloudflare Turnstile**：この摩擦のない CAPTCHA は、明示的なインタラクションを必要としないシンプルなチャレンジを通じてユーザーを検証します。 フォームにシームレスに統合し、ユーザーエクスペリエンスを向上させます。
 * **hCaptcha**：プライバシーに焦点を当てたこの Captcha は、データプライバシーに焦点を当てた、ユーザーフレンドリーな代替手段を提供します。セキュリティとユーザーエクスペリエンスのバランスを取ることを目的としています。
 * **Google reCAPTCHA**：AEM Forms では、引き続き reCAPTCHA v2 と reCAPTCHA Enterprise の両方をサポートし、信頼性が高く確立されたソリューションを提供します。
 
 AEM Forms では、複数の CAPTCHA オプションを提供して、特定のニーズに最適なソリューションを選択できるようになりました。
 
-これらの Captcha ソリューションをアダプティブフォームに統合する準備はできていますか？アドビのドキュメントでは、[Cloudflare Turnstile](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components)、[hCaptcha](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components)、[Google reCAPTCHA](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components) の各項目について詳しい手順を示しています。
+アダプティブFormsにこれらの CAPTCHA ソリューションを統合する準備はできていますか？ Adobeのドキュメントでは、次の各項目について詳しい手順を説明しています。 [Cloudflare Turnstile](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [Captcha](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components)、および [Google reCAPTCHA](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 
 ### Forms サービス
 
-Forms サービスでは、データキャプチャ用のインタラクティブな PDF フォームを生成します。また、既存のインタラクティブPDFフォームとの間でデータをインポートまたはエクスポートしたり、送信されたデータを検証したりすることもできます。 機能の分類を以下に示します。
+Forms サービスでは、データキャプチャ用のインタラクティブな PDF フォームを生成します。また、これを使用して、既存のインタラクティブ PDF フォームとの間でデータを読み込みまたは書き出したり、送信済みデータを検証したりすることもできます。機能の分類を以下に示します。
 
-* **Forms のレンダリング**：AEM Forms Designer を使用して作成したテンプレートからと、オプションで XML データから、インタラクティブな PDF フォームを生成します。これにより、基本的に、入力可能な PDF フォーム（オプションでデータを事前入力することもできます）が生成されます。
+* **Forms のレンダリング**：AEM Forms Designer を使用して作成したテンプレートからと、オプションで XML データから、インタラクティブな PDF フォームを生成します。この機能は、オプションでデータが事前入力された入力可能なPDFフォームを生成します。
 * **データの抽出と読み込み**： 既存の PDF フォームにデータを読み込んだり、入力済みの PDF フォームからデータを抽出したりします。XDP と XML の両方のデータ形式がサポートされ、XFA 以外の PDF フォーム（AcroForms とも呼ばれます）への読み込みでは、さらに FDF および XFDF データもサポートされます。
 * **データの検証**：XDP または XML 形式で送信されたデータを、AEM Forms Designer を使用して作成されたテンプレートに対して検証します。
 
 >[!IMPORTANT]
 >
-> アーリーアクセスプログラムに参加してアーリーアクセスのイノベーションを実現したい場合は、公式アドレスから次のアドレスにメールを送信するだけです [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) アクセスをリクエストします。 すべてのイノベーションまたは特定のイノベーションに対して利用申請できます。
+> Adobeの早期アクセスプログラムに参加して早期アクセスのイノベーションを実現することに関心がある場合は、公式アドレスからにメールを送信するだけです。 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) アクセスをリクエストします。 すべてのイノベーションまたは特定のイノベーションに対して利用申請できます。
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
 ### コンテンツヘルス関連アクションセンター通知早期導入プログラム {#actions-center-notifications}
 
-[アクションセンター](/help/operations/actions-center.md)は、重要なインシデントが発生した場合や、コードや設定に関してプロアクティブなアクションを実行する必要がある場合にメール通知を送信します。コンテンツの正常性に関連するいくつかの新しいタイプの通知が導入されました。 これは、早期導入プログラムを通じて利用できます。 Adobeカスタマーケアにお問い合わせください。
+[アクション センター](/help/operations/actions-center.md) は、重要なインシデントが発生した場合や、プロアクティブなアクションを実行する必要があるコードや設定に関して何かが検出された場合に、メール通知を送信します。 Adobeでは、コンテンツの正常性に関連するいくつかの新しいタイプの通知が導入されました。 この機能は、早期導入プログラムを通じて利用できます。 Adobeカスタマーケアにお問い合わせください。
 
 #### ページに多数のノードが含まれる {#page-nodes}
 
-ノードの数が多いと、レンダリングのパフォーマンスが低下し、ページの読み込み時間が短縮される可能性があります。 ページで大量のノードが検出されると、アクションセンターを通じてプロアクティブ通知が届きます。これにより、ページ内のノードの合計数を減らすために必要な手順を実行できます。
+ノードの数が多いと、レンダリングのパフォーマンスが低下し、ページの読み込み時間が短縮される可能性があります。 ページで大量のノードが検出されると、アクションセンターを通じて事前通知が届きます。これにより、ページ内のノードの合計数を減らすために必要な手順を実行できます。
 
 #### 実行中のワークフローインスタンスの数が多い {#running-workflows}
 
-オーサー環境で実行中のワークフローが多数ある場合は、ワークフローエンジンのパフォーマンスが影響を受けます。 実行中のワークフローインスタンスが大量に検出されると、アクションセンターから事前通知が届きます。これにより、不要な実行中のワークフローを終了するパージジョブを設定できます。
+オーサー環境で実行中のワークフローが多数ある場合は、ワークフローエンジンのパフォーマンスが影響を受けます。 実行中のワークフローインスタンスが多数検出された場合は、アクションセンターから事前通知が届きます。 このプロセスでは、パージジョブを設定して、不要な実行中のワークフローを終了できます。
 
 #### ユーザーがカスタムグループに直接追加されました {#users-customgroups}
 
-IMS のベストプラクティスに従って関連する IMS グループにユーザーを追加した後、IMS グループをAEM グループのメンバーとして追加できるので、ユーザーがカスタムグループに直接追加されると、アクションセンターから事前通知が届きます。
+ユーザーがカスタムグループに直接追加されると、アクションセンターを通じて事前通知が届きます。 このプロセスを使用すると、関連する IMS グループにユーザーを追加し、それらの IMS グループをAEM グループのメンバーとして含めることで、IMS のベストプラクティスに従うことができます。
 
 #### JCR コンテンツが欠落しています {#jcr-content}
 
-欠落している JCR コンテンツが検出されると、アクションセンターから事前通知が届きます。これにより、欠落している JCR コンテンツを追加し、特定のAEM Assets機能の不具合を回避できます。
+欠落している JCR コンテンツが検出されると、アクションセンターは事前に通知します。 このアプローチにより、欠落しているコンテンツを追加し、特定のAEM Assets機能のエラーを防ぐことができます。
 
 #### 完了したワークフローがパージされない {#workflows}
 
-完了したワークフローが 90 日を超えてパージされていない場合は、アクションセンターから事前通知が届き、ワークフローインスタンスの数を最小限に抑えることでワークフローエンジンのパフォーマンスを向上させることができます。
+完了したワークフローが 90 日以上経過してもパージされていないことが、事前にアクションセンターから通知されます。 このアプローチは、ワークフローインスタンスの数を減らすことで、ワークフローエンジンのパフォーマンスを向上させるのに役立ちます。
 
 #### Sling リソースがありません {#sling-resource}
 
-欠落している Sling リソースが検出されると、アクションセンターを通じてプロアクティブ通知が届きます。これにより、欠落している Sling リソースを追加し、特定のAEM Assets機能でエラーが発生するのを回避できます。
+欠落している Sling リソースが検出されると、アクションセンターは事前に通知します。 このアプローチにより、不足しているリソースを追加し、特定のAEM Assets機能のエラーを防ぐことができます。
 
 ### コンテンツ配信関連の早期導入プログラム {#foundation-early-adopter}
 
@@ -182,7 +190,7 @@ IMS のベストプラクティスに従って関連する IMS グループに�
 
 #### CDN での基本認証（早期導入プログラム） {#basicauth-cdn}
 
-ユーザー名とパスワードを必要とする基本認証ダイアログをポップアップすることで、特定のコンテンツリソースをProtectします。 この機能は、エンドユーザーのアクセス権限に対する本格的なソリューションとしてではなく、主に、ビジネスの関係者によるコンテンツのレビューなどの軽い認証ユースケースを目的としています。 秘密鍵タイプのCloud Manager環境変数への参照を使用して、設定パイプラインを介してデプロイされた Git の設定ファイルを通じて管理されるのユーザー名とパスワードのリスト。 [詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth)。
+ユーザー名とパスワードを必要とする基本認証ダイアログをポップアップすることで、特定のコンテンツリソースをProtectします。 この機能は、エンドユーザーのアクセス権に対する包括的なソリューションとしてではなく、主にビジネス関係者がコンテンツをレビューするような、認証の軽いユースケースを対象としています。 秘密鍵タイプのCloud Manager環境変数への参照を使用して、設定パイプラインを介してデプロイされた Git の設定ファイルを通じて管理されるのユーザー名とパスワードのリスト。 [詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth)。
 
 #### セルフサービス API キーを使用して CDN でコンテンツをパージする（早期導入プログラム） {#purge-cdn}
 
@@ -192,7 +200,7 @@ CDN パージ API キーをセルフサービス方式で登録し、これを�
 
 #### 顧客管理 CDN （BYOCDN）用 X-AEM-Edge キーのセルフサービス作成（早期導入プログラム） {#byocdn-keys}
 
-以前は、顧客管理 CDN の設定に必要な X-AEM-Edge-Key を生成するには、サポートチケットが必要でした。これにより、設定パイプラインを使用してデプロイされる設定ファイルを通じてセルフサービス方式で実行できるようになり、新しい環境のオンボーディングの遅延がなくなりました。[詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)。
+以前は、顧客管理 CDN の設定に必要な X-AEM-Edge-Key を生成するには、サポートチケットが必要でした。この結果は、設定パイプラインを使用してデプロイされた設定ファイルを介してセルフサービス方式で実行できるようになり、新しい環境のオンボーディングの遅延をなくすことができます。 [詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)。
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
@@ -204,11 +212,11 @@ CDN パージ API キーをセルフサービス方式で登録し、これを�
 
 最近リリースされた[トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)には、オプションでライセンス可能な web アプリケーションファイアウォール（WAF）ルールが含まれており、許可または拒否するトラフィックを設定できます。
 
-早期導入プログラムに参加すると、トラフィックフィルタールールがトリガーされるたびにアラートを受け取ることができます。特定のトラフィック状況が発生するとアクションセンターのメール通知が送信されるので、適切な対策を講じることができます。
+早期導入プログラムに参加すると、トラフィックフィルタールールがトリガーされるたびにアラートを受け取ることができます。アクションセンターメール通知では、特定のトラフィック条件が発生した場合に情報が保持されるので、適切な対策を講じることができます。
 
 #### ビジネスユーザーは Git 外でリダイレクトを宣言できる（早期導入プログラム） {#apache-rewritemaps-early-adopter}
 
-AEM 6.5 と同様に、Apache／Dispatcher は、web 階層パイプラインの実行を必要とせずに、公開リポジトリ内の特定の場所に配置された書き換えマップを取り込んで読み込みます。これにより、ビジネスユーザーが、ACS Commons リダイレクトマップマネージャーが提供するようなスプレッドシートまたは UI や顧客アプリケーションの一部として作成するようなスプレッドシートまたは UI を使用して、リダイレクトを宣言できるようになります。<!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
+AEM 6.5 と同様に、Apache/Dispatcher は、パブリッシュリポジトリーの特定の場所に配置された書き換えマップを取り込んで読み込みます。web 層パイプラインを実行する必要はありません。 このアプローチを使用すると、ビジネスユーザーはスプレッドシートや UI （ACS Commons リダイレクトマップマネージャーやカスタムアプリケーションなど）を使用してリダイレクトを宣言できます。 <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
 
 #### 動的コンテンツを読み込むためのエッジサイドインクルード（ESI）（早期導入プログラム） {#esi-early-adopter}
 
