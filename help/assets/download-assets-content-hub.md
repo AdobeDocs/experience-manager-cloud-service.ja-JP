@@ -2,9 +2,9 @@
 title: Content Hubからのアセットのダウンロード
 description: Content Hub ポータルからアセットをダウンロードする方法を学ぶ
 role: User
-source-git-commit: e590c34c177e6b45b6a52370caa88da54b61ebc0
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '114'
+source-wordcount: '125'
 ht-degree: 5%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 5%
 Content Hubでは、アセットをダウンロードして共有できます。 これらのアセットには、画像、ビデオ、またはその他のデジタルコンテンツが含まれる場合があります。 Content Hubは、効果的なアセット配布のためにアクセシビリティと適応性を強化します。
 
 Content Hubでは、1 つまたは複数のアセットをダウンロードできます。 アセットの元のバージョンがダウンロードされます。
+
+## 前提条件 {#prerequisites}
+
+[Content Hub ユーザー](deploy-content-hub.md#onboard-content-hub-users) この記事で取り上げるアクションを実行できます。
 
 ## アセットをダウンロード {#download-single-asset}
 

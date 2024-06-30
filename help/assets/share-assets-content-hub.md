@@ -2,9 +2,9 @@
 title: でのAssetsの共有 [!DNL the Content Hub]
 description: でのAssetsの共有 [!DNL the Content Hub]
 role: User
-source-git-commit: e20556531a82e42354b642955488bf14b83dab5e
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '454'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 1%
 ![アセットバナー画像の共有](assets/share-assets-banner.png)
 
 リンクによるアセットの共有は、リソースを利用できるようにする便利な方法です [!DNL the Content Hub] ユーザー。 この機能を使用すると、権限のあるユーザーは、共有されているアセットにアクセスしてダウンロードできます。 共有リンクからのアセットのダウンロード時、 [!DNL the Content Hub] では、より高速で中断のないダウンロードを提供する非同期サービスを使用しています。
+
+## 前提条件 {#prerequisites}
+
+[Content Hub ユーザー](deploy-content-hub.md#onboard-content-hub-users) この記事で取り上げるアクションを実行できます。
 
 ## 単一アセットの共有 {#share-a-single-asset}
 

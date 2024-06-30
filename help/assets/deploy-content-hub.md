@@ -2,9 +2,9 @@
 title: デプロイ [!DNL Content Hub]
 description: Content Hubをデプロイしてアクティブ化し、様々なタイプの権限（アセットのアップロード、ユーザーのAdobe Express）を持つユーザーにアクセスを提供する方法と、ユーザーに管理者権限を提供する方法について説明します。
 role: Admin
-source-git-commit: 56af07a198e1350282f5d3f771c1c29db318b90e
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1229'
 ht-degree: 3%
 
 ---
@@ -22,13 +22,15 @@ Experience Manager Assetsのas a Cloud Serviceで承認済みとマークされ�
 
 Content Hubに対する権限には、次のような種類があります。
 
-* [アセットコンシューマー](#onboard-content-hub-consumer-users):Content Hub ポータルでブランド承認済みアセットにアクセスします。
+* [Content Hub ユーザー](#onboard-content-hub-users):Content Hub ポータルでブランド承認済みアセットにアクセスします。
 
-* [管理者](#onboard-content-hub-administrator)：へのアクセス [設定ユーザーインターフェイス](/help/assets/configure-content-hub-ui-options.md) 送信権限を持つ Asset Consumer に加えて、Content Hubでも可能です。
+* [Content Hub管理者](#onboard-content-hub-administrator)：へのアクセス [設定ユーザーインターフェイス](/help/assets/configure-content-hub-ui-options.md) Content Hubでは、ブランド承認済みアセットへのアクセス、Content Hubへのアセットのアップロードに加え、画像を編集するためのAdobe Express統合も利用できます（Adobe Expressの使用権限がある場合）。
 
-* [送信権限を持つアセットコンシューマー](#onboard-content-hub-consumer-users-submission-rights)：次の機能 [Content Hubへのアセットのアップロード](/help/assets/upload-brand-approved-assets.md) および [Adobe Expressの統合](/help/assets/edit-images-content-hub.md) Content Hub ポータルでブランド承認済みアセットにアクセスするほか、
+* [アセットを追加する権限を持つContent Hub ユーザー](#onboard-content-hub-users-add-assets)：次の機能 [Content Hubへのアセットのアップロード](/help/assets/upload-brand-approved-assets.md) Content Hub ポータルでブランド承認済みアセットにアクセスするほか、
 
-* [アセットディストリビューター](#content-hub-asset-distributors):Experience Manager Assetsas a Cloud Service上のアセットを承認して、それらのアセットをContent Hubで使用できるようにする機能。
+* [アセットを新しいバリエーションにリミックスする権限を持つContent Hub ユーザー](#onboard-content-hub-users-remix-assets): [Adobe Expressの統合](/help/assets/edit-images-content-hub.md) Content Hub ポータルで brand approved assets にアクセスする以外に、（Adobe Expressの使用権限がある場合）。
+
+* [Experience Manager Assets ユーザー](#experience-manager-assets-users):Experience Manager Assetsas a Cloud Service上のアセットを承認して、それらのアセットをContent Hubで使用できるようにする機能。
 
 ## 手順 1:Cloud Managerを使用してContent Hub for Experience Manager Assetsを有効にする {#enable-content-hub}
 
@@ -65,7 +67,7 @@ Experience Manager Assetsを初めて使用する場合は、 **[!UICONTROL プ�
 
 ## 手順 2:Content Hub管理者をオンボーディングする {#onboard-content-hub-administrator}
 
-Content Hub管理者は、Content Hubにアセットを追加できるほか、 [設定オプション](/help/assets/configure-content-hub-ui-options.md) （組織内の他のユーザー用）。
+Content Hub管理者は、 [設定ユーザーインターフェイス](/help/assets/configure-content-hub-ui-options.md) Content Hubでは、ブランド承認済みアセットへのアクセス、Content Hubへのアセットのアップロードに加え、画像を編集するためのAdobe Express統合も利用できます（Adobe Expressの使用権限がある場合）。
 
 Content Hub管理者をオンボーディングするには：
 
@@ -86,11 +88,11 @@ Content Hub管理者をオンボーディングするには：
 
 1. 「**[!UICONTROL 保存]**」をクリックして、変更を保存します。
 
-## 手順 3:Content Hub asset consumer ユーザーをオンボーディングする {#onboard-content-hub-consumer-users}
+## 手順 3:Content Hub ユーザーのオンボーディング {#onboard-content-hub-users}
 
-Content Hub コンシューマーユーザーは、ポータルで利用可能なアセットにアクセスできますが、新しいアセットを追加したり、既存のアセットを変更したりすることはできません。
+Content Hub ユーザーは、ポータルで使用可能なアセットにアクセスできますが、新しいアセットを追加したり、既存のアセットを変更したりすることはできません。
 
-コンシューマーユーザーをContent Hubにオンボーディングするには：
+Content Hub ユーザーをオンボーディングするには：
 
 1. [Content Hub ユーザー製品プロファイルにアクセスしてクリックします。](#content-hub-instance-product-profile).
 
@@ -117,17 +119,13 @@ Admin Consoleを使用して適切なユーザーを追加した後、次のリ�
 ![メール通知を無効にする](assets/disable-email-notifications.png)
 
 
-## 手順 4：送信権限を持つContent Hub asset consumer ユーザーのオンボーディング（オプション） {#onboard-content-hub-consumer-users-submission-rights}
+## 手順 4：アセットを追加する権限を持つContent Hub ユーザーをオンボーディングする（オプション） {#onboard-content-hub-users-add-assets}
 
-送信権限を持つContent Hub asset consumer ユーザーは、次のことができます。
+アセットを追加する権限を持つContent Hub ユーザーは、次のことができます [ブランドが承認した新しいアセットのContent Hubへのアップロード](/help/assets/upload-brand-approved-assets.md).
 
-* [ブランドが承認した新しいアセットのContent Hubへのアップロード](/help/assets/upload-brand-approved-assets.md).
+ユーザーを追加する権限でContent Hub ユーザーをオンボーディングするには：
 
-* [Adobe Expressを使用して既存のアセットを変更し、アセットをリポジトリに保存します](/help/assets/edit-images-content-hub.md). Adobe Expressを使用したアセットの編集は、ユーザーがAdobe Express権限を持っている場合にのみ使用できます。
-
-送信権限を使用してContent Hub コンシューマーユーザーをオンボードするには：
-
-1. [Content Hub製品プロファイルにユーザーを追加した後](#onboard-content-hub-consumer-users)で、Admin Console時の製品のリストでAEM as a Cloud Service製品名をクリックして、Experience Manager Assets製品プロファイルにアクセスします。
+1. [Content Hub製品プロファイルにユーザーを追加した後](#onboard-content-hub-users)で、Admin Console時の製品のリストでAEM as a Cloud Service製品名をクリックして、Experience Manager Assets製品プロファイルにアクセスします。
 
 1. AEM as a Cloud Service用の実稼動オーサーインスタンスをクリックします。
    ![AEM as a Cloud Serviceの製品プロファイル](assets/aem-cloud-service-instances.png)
@@ -138,11 +136,28 @@ Admin Consoleを使用して適切なユーザーを追加した後、次のリ�
 
 1. 「**[!UICONTROL 保存]**」をクリックして、変更を保存します。
 
-## Content Hub アセットディストリビューター {#content-hub-asset-distributors}
+## 手順 4：アセットを新しいバリエーションに混在させる権限を持つContent Hub ユーザーをオンボーディングする（オプション） {#onboard-content-hub-users-remix-assets}
 
-アセットディストリビューターは、AEM as a Cloud Service上のアセットを承認して、Content Hub上で使用できるようにします。
+アセットを新しいバリエーションにリミックスする権限を持つContent Hub ユーザーは、次のことができます [Adobe Expressを使用して既存のアセットを変更し、アセットをリポジトリに保存します](/help/assets/edit-images-content-hub.md). Adobe Expressを使用したアセットの編集は、ユーザーがAdobe Express権限を持っている場合にのみ使用できます。
 
-アセット配布者の役割を設定するには：
+アセットを新しいバリエーションに混在させる権限を持つContent Hub ユーザーをオンボーディングするには：
+
+1. [Content Hub製品プロファイルにユーザーを追加した後](#onboard-content-hub-users)で、Admin Console時の製品のリストでAEM as a Cloud Service製品名をクリックして、Experience Manager Assets製品プロファイルにアクセスします。
+
+1. AEM as a Cloud Service用の実稼動オーサーインスタンスをクリックします。
+   ![AEM as a Cloud Serviceの製品プロファイル](assets/aem-cloud-service-instances.png)
+
+   Admin Consoleには、AEM as a Cloud Service用の 2 つの製品プロファイル（Administrators と Users）が表示されます。
+1. ユーザー製品プロファイルをクリックし、 **[!UICONTROL ユーザーを追加]** 製品プロファイルにユーザーを追加する場合
+   ![ユーザー製品プロファイル](assets/aem-cs-user-product-profile.png)
+
+1. 「**[!UICONTROL 保存]**」をクリックして、変更を保存します。
+
+## Experience Manager Assets ユーザー {#experience-manager-assets-users}
+
+Experience Manager Assets ユーザーは、Content Hubで使用できるように、AEM as a Cloud Service上のアセットを承認できます。
+
+Experience Manager Assets ユーザーを設定するには：
 
 1. Admin Console時の製品のリストでExperience Manager Assets製品名をクリックして、AEM as a Cloud Service製品プロファイルにアクセスします。
 
@@ -157,7 +172,7 @@ Admin Consoleを使用して適切なユーザーを追加した後、次のリ�
 
    >[!NOTE]
    >
-   > に追加する必要はありません [Content Hub製品プロファイル](#onboard-content-hub-consumer-users) （アセット配布の役割）。
+   > に追加する必要はありません [Content Hub製品プロファイル](#onboard-content-hub-users) Experience Manager Assets ユーザーの場合。
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: Content Hub ユーザーインターフェイスの設定
 description: Content Hub ユーザーインターフェイスの設定
-source-git-commit: 85ccd23df4ac320d6da37c54b72f0f93916e65a1
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1096'
 ht-degree: 6%
 
 ---
@@ -29,7 +29,7 @@ Experience Manager Assetsを使用すると、管理者は、Content Hub ユー�
 
 ## 前提条件 {#prerequisites-configuration-ui}
 
-[Content Hub管理者](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) では、Content Hubにアセットを追加できます。また、組織内の他のユーザーのために設定オプションを指定することもできます。
+[Content Hub管理者](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) 組織内の他のユーザーに対して設定オプションを設定できます。
 
 ## Content Hubの設定オプションへのアクセス {#access-configuration-options-content-hub}
 

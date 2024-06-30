@@ -2,9 +2,9 @@
 title: Content Hubでのアセットの検索
 description: でアセットを検索する方法を説明します [!DNL Content Hub]
 role: User
-source-git-commit: 15a266ccb6e4117c769d775a5f579fba943389bf
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 ![アセットバナー画像の共有](assets/search.png)
 
 リポジトリに多数のアセットがある場合、適切なアセットの検索には時間がかかります。 [!DNL The Content Hub] 検索を使用すると、承認済みアセットを検索できるので、アセットに対して追加のアクション（ダウンロード、共有、コレクションの作成など）を実行できます。 様々な機能を利用して検索結果を絞り込むことができます。例えば、テキストベースの検索、フィルターの使用、タグまたはスマートタグ固有の検索の実行、特定のファイル形式の検索などを行うことができます。
+
+## 前提条件 {#prerequisites}
+
+[Content Hub ユーザー](deploy-content-hub.md#onboard-content-hub-users) この記事で取り上げるアクションを実行できます。
 
 ## 検索対象  {#what-you-can-search}
 

@@ -2,7 +2,7 @@
 title: ブランド承認済みアセットのへのアップロード [!DNL Content Hub]
 description: ブランド承認済みアセットをContent Hubにアップロードする方法を学ぶ
 role: User
-source-git-commit: 92c4cd64503653c5d9248c2c3f6952100b03ff86
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## 前提条件 {#prerequisites-add-assets}
 
-[送信権限を持つContent Hub asset consumer ユーザー](/help/assets/deploy-content-hub.md#onboard-content-hub-consumer-users-submission-rights) は、Content Hubにアセットをアップロードできます。
+[アセットを追加する権限を持つContent Hub ユーザー](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) は、Content Hubにアセットをアップロードできます。
 
 ## ローカルファイルシステムからContent Hubへのアセットの追加 {#add-assets-local-file-system}
 

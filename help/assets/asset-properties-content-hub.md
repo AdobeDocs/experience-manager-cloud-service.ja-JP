@@ -2,9 +2,9 @@
 title: のアセットプロパティ [!DNL the Content Hub]
 description: でアセットプロパティを表示および管理する方法を説明します [!DNL Content Hub]
 role: User
-source-git-commit: e590c34c177e6b45b6a52370caa88da54b61ebc0
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '599'
 ht-degree: 12%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 12%
 * アクセスが容易になる - システムやユーザーが簡単に見つけることができます。
 * 管理が容易 – 同じプロパティのセットを持つアセットを簡単に見つけて、変更を適用できます。
 * 完了 – アセットには、より多くの情報とコンテキストが含まれます。
+
+## 前提条件 {#prerequisites}
+
+[Content Hub ユーザー](deploy-content-hub.md#onboard-content-hub-users) この記事で取り上げるアクションを実行できます。
 
 ## アセットのプロパティの表示 {#properties-ui}
 

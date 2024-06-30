@@ -2,9 +2,9 @@
 title: Content Hubでのアセットインサイトの表示
 description: でアセットインサイトを表示する方法を説明します [!DNL Content Hub]
 role: User
-source-git-commit: 788ed1189b21392bd399f7bdee888a3b5e1da117
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 ![Assets insights](assets/asset-insights-banner.jpg)
 
 [!DNL Content Hub] は、マーケティングキャンペーン、チャネル、様々な地域で使用されるアセットの使用状況の統計など、マーケティング関係者が頻繁に遭遇する一般的な課題に対処して、アセットに関する貴重なインサイトを提供します。 アセットのパフォーマンスと人気を明確に理解することで、ユーザーエクスペリエンスの向上に不可欠な実用的なインサイトを提供します。
+
+## 前提条件 {#prerequisites}
+
+[Content Hub ユーザー](deploy-content-hub.md#onboard-content-hub-users) この記事で取り上げるアクションを実行できます。
 
 ## アップロードしたアセットの統計の表示{#view-statistics-for-uploaded-assets}
 
