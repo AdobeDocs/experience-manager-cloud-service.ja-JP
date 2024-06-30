@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: の最新のリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1e5a32625377cb564c859a6fdaf1ecef6ebebe9e
+source-git-commit: 9d0ef963dfe2d81da09a7195540de87245e71a67
 workflow-type: tm+mt
-source-wordcount: '1865'
-ht-degree: 45%
+source-wordcount: '1932'
+ht-degree: 43%
 
 ---
 
@@ -86,6 +86,14 @@ OpenAPI 機能を備えたDynamic Mediaは、Adobeおよびサードパーティ
 **Assets Insights ダッシュボードでは、その他のオプションを利用できます**
 
 アセットタイプおよびサイズ別のアセット数がAssets Insights ダッシュボードで使用できるようになりました。 これらのオプションにより、Assets ビュー環境でリアルタイムデータが提供されます。 サイズ範囲とアセットタイプによって、アセットの数と割合が詳しく示されます。
+
+**埋め込みAdobe Expressエディターの更新**
+
+* 新しいアセットとして保存する場合と新しいバージョンとして保存する場合のユーザーエクスペリエンスが向上しました。
+
+* 複数ページの Express 文書を複数ページのPDFと画像形式の両方でエクスポートすることができます。 画像形式を選択すると、ダウンストリーム配信用に DAM で各ページが個別のアセットとして保存されます。
+
+* アセットの保存中に保存ダイアログでメタデータを追加する機能がサポートされました。
 
 <!--
 

@@ -2,9 +2,9 @@
 title: ブランド承認済みアセットのへのアップロード [!DNL Content Hub]
 description: ブランド承認済みアセットをContent Hubにアップロードする方法を学ぶ
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: c85b4e1c828ed1fb7f4063f965fe116215ca0244
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # ブランド承認済みアセットのContent Hubへのアップロード {#upload-brand-approved-assets-content-hub}
 
-管理者は、ローカルファイルシステムからContent Hubにアセットを追加するか、OneDrive またはDropboxのデータソースからアセットを読み込むことができます。 ローカルファイルシステムで使用可能なフォルダー構造や、検索機能を強化するための OneDrive およびDropboxデータソースに関係なく、すべてのアセットがContent Hubの最上位に表示されます。
+[アセットを追加する権限を持つContent Hub ユーザー](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) は、ローカルファイルシステムからContent Hubにアセットを追加するか、OneDrive またはDropboxのデータソースからアセットを読み込むことができます。 ローカルファイルシステムで使用可能なフォルダー構造や、検索機能を強化するための OneDrive およびDropboxデータソースに関係なく、すべてのアセットがContent Hubの最上位に表示されます。
 
 アセット検索をさらに強化するために、Content Hubでは次の操作を実行できます。
 
