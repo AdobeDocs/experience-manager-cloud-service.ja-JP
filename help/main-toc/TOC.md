@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1989b546c495307440690f7e3510619112bdcc29
+source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
-source-wordcount: '5132'
-ht-degree: 98%
+source-wordcount: '5143'
+ht-degree: 97%
 
 ---
 
@@ -182,7 +182,9 @@ ht-degree: 98%
    + Workfront for Experience Manager 拡張コネクタのリリースノート{#workfront}
       + [Workfront for Experience Manager 拡張コネクタの最新リリースノート](/help/assets/release-notes-enhanced-connector-workfront.md)
    + 「バリエーションを生成」のリリースノート {#generate-variations}
-      + [「バリエーションを生成」の最新リリースノート](/help/generative-ai/release-notes-generate-variations.md)
+      + [バリエーションを生成するための最新のリリースノート](/help/generative-ai/release-notes-generate-variations.md)
+   + ユニバーサルエディターのリリースノート {#univeral-editor}
+      + [ユニバーサルエディターの最新のリリースノート](/help/release-notes/universal-editor/current.md)
    + [新機能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service の主要な変更点](/help/release-notes/aem-cloud-changes.md)
    + [非推奨（廃止予定）および削除された機能と API](/help/release-notes/deprecated-removed-features.md)

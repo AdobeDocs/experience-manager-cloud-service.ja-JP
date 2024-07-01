@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: の最新のリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 9d0ef963dfe2d81da09a7195540de87245e71a67
+source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1958'
 ht-degree: 43%
 
 ---
@@ -241,6 +241,14 @@ Cloud Manager の月次リリースの完全なリストは、[こちら](/help/
 ## 移行ツール {#migration-tools}
 
 移行ツールのリリースの完全なリストは、[こちら](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)で確認できます
+
+## ユニバーサルエディター {#universal-editor}
+
+ユニバーサルエディターのリリースの完全なリストを確認できます [こちら](/help/release-notes/universal-editor/current.md).
+
+## バリエーションの生成 {#generate-variations}
+
+バリエーションを生成リリースの完全なリストを見つけることができます [こちら](/help/generative-ai/release-notes-generate-variations.md).
 
 ## Experience Cloud のリリースノート {#experience-cloud}
 
