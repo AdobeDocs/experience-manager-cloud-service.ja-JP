@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 90b4cf269fc8be36d90f398d1696fc40f89f5142
+source-git-commit: 3a4dd9f1d769a9c9da12fdd8febfef481112d18c
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 87%
+source-wordcount: '753'
+ht-degree: 79%
 
 ---
 
@@ -71,10 +71,10 @@ ht-degree: 87%
 
 #### Forms
 
-1. ユーザーが `AEM Forms add-on v2024.05.04.00-240400` より大きいバージョンの AEM Forms SDK をダウンロードすると、バッチファイルは Docker サービスを開始できません。この問題を解決するには：
-   1. [フォルダー](/help/forms/assets/sdk_hotfix.zip)をダウンロードします。
-   1. ダウンロードしたフォルダーからコンテンツを抽出し、`sdk.sh` ファイルと `sdk.bat` ファイルをコピーします。
-   1. AEM Forms SDK 内の既存の `sdk.sh` ファイルと `sdk.bat` ファイルを、新しいファイルに置き換えます。
+* AEM SDK をインストールして以下を追加する場合： `AEM Forms add-on v2024.05.04.00-240400`の場合、Docker サービスは開始できません。 Docker サービスは、ローカル開発環境でレコードのドキュメントを生成するために必要です。 問題を修正するには：
+   1. をダウンロード [ホットフィックス](/help/forms/assets/sdk_hotfix.zip). ホットフィックスをダウンロードすると、 `.zip` フォルダーがダウンロードされます。
+   1. ダウンロードしたホットフィックスをフォルダーに抽出します。
+   1. 古いバージョンを交換 `sdk.sh` および `sdk.bat` 手順 2 で抽出したフォルダー内に、新しいファイルがあるファイル。
 
 ### 変更通知 {#change-notice-16799}
 
