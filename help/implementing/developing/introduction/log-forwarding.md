@@ -1,13 +1,13 @@
 ---
-title: AEMas a Cloud Serviceのログ転送
+title: AEM as a Cloud Serviceのログ転送
 description: AEM as a Cloud Serviceでの Splunk およびその他のログベンダーへのログの転送について説明します
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e007f2e3713d334787446305872020367169e6a2
+source-git-commit: 29d2a759f5b3fdbccfa6a219eebebe2b0443d02e
 workflow-type: tm+mt
-source-wordcount: '1209'
-ht-degree: 2%
+source-wordcount: '1278'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 >
 >この機能はまだリリースされておらず、一部のログ宛先はリリース時には使用できない場合があります。 それまでの間、サポートチケットを開いて、にログを転送できます **Splunk**（を参照） [ログ記事](/help/implementing/developing/introduction/logging.md).
 
-ログベンダーのライセンスまたはログ製品のホストのライセンスを持つお客様は、AEM ログ（Apache/Dispatcher を含む）および CDN ログを、関連するログ出力先に転送できます。 AEM as a Cloud Serviceは、次のログ出力先をサポートしています。
+ログベンダーのライセンスまたはログ製品のホストのライセンスを持つお客様は、AEM ログ（Apache/Dispatcherを含む）および CDN ログを、関連するログ出力先に転送できます。 AEM as a Cloud Serviceは、次のログ出力先をサポートしています。
 
 * Azure Blob ストレージ
 * DataDog
@@ -25,9 +25,9 @@ ht-degree: 2%
 * HTTPS
 * Splunk
 
-ログ転送は、Git で設定を宣言し、Cloud Manager 設定パイプラインを介して実稼動（サンドボックス以外）プログラムの開発、ステージング、実稼動環境の各タイプにデプロイすることで、セルフサービス方式で設定されます。
+ログ転送は、Git で設定を宣言し、Cloud Manager設定パイプラインを介して実稼動（サンドボックス以外）プログラムの開発、ステージング、実稼動環境タイプにデプロイすることで、セルフサービス方式で設定されます。
 
-AEMおよび Apache/Dispatcher ログを、専用のエグレス IP などのAEMの高度なネットワークインフラストラクチャ経由でルーティングするオプションがあります。
+AEMと Apache/Dispatcherのログを、専用のエグレス IP などのAEMの高度なネットワークインフラストラクチャ経由でルーティングするオプションがあります。
 
 ログの宛先に送信されたログに関連付けられているネットワーク帯域幅は、組織のネットワーク I/O 使用の一部と見なされることに注意してください。
 
@@ -69,9 +69,9 @@ AEMおよび Apache/Dispatcher ログを、専用のエグレス IP などのAEM
 
    この **種類** パラメーターをに設定する必要があります `LogForwarding` バージョンは、スキーマのバージョン（1）に設定する必要があります。
 
-   設定のトークン（など） `${{SPLUNK_TOKEN}}`）はシークレットを表すもので、Git に保存しないでください。 代わりに、Cloud Manager として宣言します  [環境変数](/help/implementing/cloud-manager/environment-variables.md) タイプの **秘密**. 必ずを選択してください。 **すべて** 「適用されるサービス」フィールドのドロップダウン値として使用することで、ログを、オーサー層、パブリッシュ層およびプレビュー層に転送できます。
+   設定のトークン（など） `${{SPLUNK_TOKEN}}`）はシークレットを表すもので、Git に保存しないでください。 代わりに、Cloud Managerとして宣言します  [環境変数](/help/implementing/cloud-manager/environment-variables.md) タイプの **秘密**. 必ずを選択してください。 **すべて** 「適用されるサービス」フィールドのドロップダウン値として使用することで、ログを、オーサー層、パブリッシュ層およびプレビュー層に転送できます。
 
-   追加のを含めることで、CDN ログとAEM ログ（Apache/Dispatcher を含む）間で異なる値を設定できます **cdn** および/または **aem** 次の後にブロック **default** プロパティが内で定義されたプロパティを上書きするブロック **default** ブロック。必要なのは enabled プロパティのみです。 以下の例に示すように、CDN ログに別の Splunk インデックスを使用する使用例が考えられます。
+   以下を追加することで、CDN ログとAEM ログ（Apache/Dispatcherを含む）の間で異なる値を設定できます **cdn** および/または **aem** 次の後にブロック **default** プロパティが内で定義されたプロパティを上書きするブロック **default** ブロック。必要なのは enabled プロパティのみです。 以下の例に示すように、CDN ログに別の Splunk インデックスを使用する使用例が考えられます。
 
    ```
       kind: "LogForwarding"
@@ -91,7 +91,7 @@ AEMおよび Apache/Dispatcher ログを、専用のエグレス IP などのAEM
             index: "AEMaaCS_CDN"   
    ```
 
-   別のシナリオとして、CDN ログまたはAEM ログ（Apache/Dispatcher を含む）の転送を無効にする場合もあります。 例えば、CDN ログのみを転送するには、次を設定します。
+   別のシナリオとして、CDN ログまたはAEM ログ（Apache/Dispatcherを含む）の転送を無効にする場合もあります。 例えば、CDN ログのみを転送するには、次を設定します。
 
    ```
       kind: "LogForwarding"
@@ -109,7 +109,7 @@ AEMおよび Apache/Dispatcher ログを、専用のエグレス IP などのAEM
             enabled: false
    ```
 
-1. RDE 以外の環境タイプ（現在サポートされていない）の場合は、Cloud Manager でターゲットのデプロイメント設定パイプラインを作成します。
+1. RDE 以外の環境タイプ（現在サポートされていない）の場合は、Cloud Managerでターゲット設定のデプロイメント設定パイプラインを作成します。
 
    * [実稼動パイプラインの設定を参照してください](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)。
    * [実稼動以外のパイプラインの設定を参照してください](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
@@ -173,7 +173,7 @@ aemcdn/
 
 #### Azure Blob Storage AEM ログ {#azureblob-aem}
 
-AEM ログ（Apache/Dispatcher を含む）は、次の命名規則でフォルダーの下に表示されます。
+AEM ログ（Apache/Dispatcherを含む）は、次の命名規則でフォルダーの下に表示されます。
 
 * aemaccess
 * aemerror
@@ -199,12 +199,16 @@ data:
       enabled: true       
       host: "http-intake.logs.datadoghq.eu"
       token: "${{DATADOG_API_KEY}}"
+      tags:
+         tag1: value1
+         tag2: value2
       
 ```
 
 考慮事項：
 
 * 特定のクラウドプロバイダーとの統合を行わずに、API キーを作成します。
+* tags プロパティはオプションです
 
 
 ### Elasticsearchと OpenSearch {#elastic}
@@ -221,6 +225,7 @@ data:
       host: "example.com"
       user: "${{ELASTICSEARCH_USER}}"
       password: "${{ELASTICSEARCH_PASSWORD}}"
+      pipeline: "ingest pipeline name"
 ```
 
 考慮事項：
@@ -228,6 +233,15 @@ data:
 * 資格情報には、アカウントの資格情報ではなく、必ずデプロイメントの資格情報を使用します。 これらは、次の画像に似た画面で生成される資格情報です。
 
 ![Elastic デプロイメント資格情報](/help/implementing/developing/introduction/assets/ec-creds.png)
+
+* オプションのパイプラインプロパティは、Elasticsearchまたは OpenSearch 取り込みパイプラインの名前に設定する必要があります。この名前は、ログエントリを適切なインデックスにルーティングするように設定できます。 パイプラインのプロセッサタイプはに設定する必要があります。 *script* スクリプト言語はに設定する必要があります。 *無痛*. 次に、ログエントリを aemaccess_dev_26_06_2024 などのインデックスにルーティングするスクリプトスニペットの例を示します。
+
+```
+def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
+def sourceType = ctx._index;
+def date = new SimpleDateFormat('dd_MM_yyyy').format(new Date());
+ctx._index = sourceType + "_" + envType + "_" + date;
+```
 
 ### HTTPS {#https}
 
@@ -304,7 +318,7 @@ data:
 
 ## ログエントリの形式 {#log-formats}
 
-一般を参照してください [ログ記事](/help/implementing/developing/introduction/logging.md) 各ログタイプ（CDN ログおよび Apache/Dispatcher を含むAEM ログ）の形式については、を参照してください。
+一般を参照してください [ログ記事](/help/implementing/developing/introduction/logging.md) 各ログタイプ（CDN ログおよびAEM ログ（Apache/Dispatcherを含む））の形式については、を参照してください。
 
 複数のプログラムおよび環境からのログは、ログ記事で説明されている出力に加えて、同じログ宛先に転送される場合があるので、次のプロパティが各ログエントリに含まれます。
 
@@ -333,7 +347,7 @@ aem_tier: author
 
 CDN ログの場合は、の説明に従って、IP アドレスを許可リストに登録できます。 [この記事](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). その共有 IP アドレスのリストが大きすぎる場合は、（Adobe以外の） Azure Blob Store にトラフィックを送信することを検討してください。このストアでは、専用の IP アドレスのログを最終的な送信先に送信するロジックを書き込むことができます。
 
-AEM ログ（Apache/Dispatcher を含む）の場合は、通過するようにログ転送を設定できます [高度なネットワーク](/help/security/configuring-advanced-networking.md). オプションのを利用した、以下の 3 つの高度なネットワークタイプのパターンを参照してください。 `port` パラメーター、 `host` パラメーター。
+AEM ログ（Apache/Dispatcherを含む）の場合は、通過するログ転送を設定できます [高度なネットワーク](/help/security/configuring-advanced-networking.md). オプションのを利用した、以下の 3 つの高度なネットワークタイプのパターンを参照してください。 `port` パラメーター、 `host` パラメーター。
 
 ### フレキシブルポートエグレス {#flex-port}
 
