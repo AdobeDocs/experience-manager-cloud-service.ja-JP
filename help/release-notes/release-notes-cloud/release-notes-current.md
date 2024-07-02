@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
 source-wordcount: '1958'
-ht-degree: 43%
+ht-degree: 44%
 
 ---
 
@@ -130,11 +130,11 @@ When looking at the asset details, any image with content credentials added, suc
 
 * [**ドラフトとして保存**](/help/forms/save-core-component-based-form-as-draft.md)&#x200B;機能を使用すると、部分的に入力したフォームを後で送信するために保存できます。この機能は、ユーザーがフォームの入力を中断して後で戻る必要がある場合に役立ちます。
 
-### AEM Formsの早期アクセス機能 {#forms-new-early-access-features}
+### AEM Forms の早期アクセス機能 {#forms-new-early-access-features}
 
 AEM Forms早期アクセスプログラムは、誰よりも先に最先端のイノベーションに排他的にアクセスし、その発展を形作るユニークな機会を提供します。 プログラムを利用すると、複数のイノベーションにアクセスできます。
 
-このリリースノートでは、現在のリリースで提供されているイノベーションの一覧を示します。 早期アクセス プログラムで利用可能なイノベーションの完全なリストについては、次を参照してください。 [AEM Forms アーリーアクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md).
+このリリースノートでは、現在のリリースで提供されているイノベーションの一覧を示します。 早期アクセスプログラムで利用可能なイノベーションの完全なリストについては、[AEM Forms 早期アクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
 
 #### ボット保護方法の強化
 
