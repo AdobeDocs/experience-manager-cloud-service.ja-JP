@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: fd687498a8c72bf5d47b7b97aadf22d7d1e8dd2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '649'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -62,10 +62,10 @@ ht-degree: 91%
 
 #### Forms
 
-1. ユーザーがAEM Forms SDK のバージョンよりも大きいバージョンをダウンロードする場合 `AEM Forms add-on v2024.05.04.00-240400`を指定すると、バッチファイルで Docker サービスを開始できなくなります。 この問題を解決するには：
-   1. をダウンロード [フォルダー](/help/forms/assets/sdk_hotfix.zip).
-   1. ダウンロードしたフォルダーからコンテンツを抽出し、 `sdk.sh` および `sdk.bat` ファイル。
-   1. 既存のを `sdk.sh` および `sdk.bat` 新しいファイルを含むAEM Forms SDK 内のファイル。
+1. ユーザーが `AEM Forms add-on v2024.05.04.00-240400` より大きいバージョンの AEM Forms SDK をダウンロードすると、バッチファイルは Docker サービスを開始できません。この問題を解決するには：
+   1. [フォルダー](/help/forms/assets/sdk_hotfix.zip)をダウンロードします。
+   1. ダウンロードしたフォルダーからコンテンツを抽出し、`sdk.sh` ファイルと `sdk.bat` ファイルをコピーします。
+   1. AEM Forms SDK 内の既存の `sdk.sh` ファイルと `sdk.bat` ファイルを、新しいファイルに置き換えます。
 
 ### 変更通知 {#change-notice-16799}
 
