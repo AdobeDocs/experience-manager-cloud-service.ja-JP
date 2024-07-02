@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: fd687498a8c72bf5d47b7b97aadf22d7d1e8dd2b
-workflow-type: ht
-source-wordcount: '649'
-ht-degree: 100%
+source-git-commit: 90b4cf269fc8be36d90f398d1696fc40f89f5142
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 87%
 
 ---
 
@@ -52,6 +52,15 @@ ht-degree: 100%
 * SCRNS-4194：Google Guava API への依存関係の削除。
 * SCRNS-4360：チャネルのコンテンツプロバイダーで、管理者以外のユーザーに対して「公開を管理」および「クイック公開」ボタンが表示されない。
 * SCRNS-4323：screens.html からのローンチの表示／非表示。
+
+#### Forms
+
+* FORMS-14844:reCAPTCHA の検証に失敗しても、アダプティブFormsでフォーム送信が可能になります。
+* FORMS-14984：送信されたデータに「submitMetaData」がない場合、CAPTCHA を使用したFormsが検証をスキップする。
+* FORMS-14477：日付選択の検証で、ルールエディターの「次の後」および「次の前」オプションが正しく機能しません。
+* FORMS-14019：ルールエディターの「サービスの呼び出し」機能がユニバーサルエディターで機能しない。
+* FORMS-14336：フォームフィールドが選択されていない場合、エディターはフォーム要素全体にフォーカスを置いて開く必要があります。
+* FORMS-15061：ルールエディターで「サービスを呼び出し」オプションを使用すると、ローダーの円が無期限に保持される。
 
 ### 既知の問題 {#known-issues-16799}
 
