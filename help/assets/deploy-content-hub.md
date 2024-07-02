@@ -2,9 +2,9 @@
 title: デプロイ [!DNL Content Hub]
 description: Content Hubをデプロイしてアクティブ化し、様々なタイプの権限（アセットのアップロード、ユーザーのAdobe Express）を持つユーザーにアクセスを提供する方法と、ユーザーに管理者権限を提供する方法について説明します。
 role: Admin
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: 0d340508823be6a2c6c2beb28c17ddfb2bf6b790
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1253'
 ht-degree: 3%
 
 ---
@@ -50,6 +50,11 @@ Content Hub ポータルにアクセスするには、管理者はまずCloud Ma
 1. 「**[!UICONTROL 更新]**」をクリックします。
 
 Content HubがExperience Manager Assetsas a Cloud Serviceに対して有効になりました。
+
+>[!NOTE]
+>
+>最大 250 人のContent Hub ユーザーがContent Hubにアクセスして使用できます。 その他の質問がある場合は、Adobeの担当者にお問い合わせください。
+
 
 Experience Manager Assetsを初めて使用する場合は、 **[!UICONTROL プログラムを追加]** 次に、プログラムの詳細（プログラム名、実稼動用に設定）を入力し、をクリックします **[!UICONTROL 続行]**. 次に、以下を選択できます **[!UICONTROL Assets]** および **[!UICONTROL Content Hub]** が含まれる **[!UICONTROL ソリューションとアドオン]** タブ。
 
