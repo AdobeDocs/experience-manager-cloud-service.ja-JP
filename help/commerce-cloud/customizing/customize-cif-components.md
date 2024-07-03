@@ -1,19 +1,11 @@
 ---
 title: CIF コアコンポーネントをカスタマイズ
 description: AEM CIF コアコンポーネントをカスタマイズする方法を説明します。このチュートリアルでは、ビジネス固有の要件を満たすために、CIF コアコンポーネントを安全に拡張する方法について説明します。GraphQL クエリを拡張してカスタム属性を返し、新しい属性を CIF コアコンポーネントに表示する方法を説明します。
-sub-product: Commerce
-topics: Development
-version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
 feature: Commerce Integration Framework
-kt: 4279
-thumbnail: customize-aem-cif-core-component.jpg
-exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
-workflow-type: ht
+exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
+source-git-commit: ef58cf5b216ef308cc65436f2eed2e500fb2bd96
+workflow-type: tm+mt
 source-wordcount: '2298'
 ht-degree: 100%
 
