@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
 source-wordcount: '5143'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -562,14 +562,14 @@ ht-degree: 97%
       + [コンテンツの HTTP/2 配信の FAQ](/help/assets/dynamic-media/http2faq.md)
       + [Flash ビューアの提供終了](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML ビューアの提供終了](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-      + OpenAPI 機能を備えたDynamic Media {#dynamic-media-open-apis}
+      + OpenAPI 機能を備えた Dynamic Media {#dynamic-media-open-apis}
          + [概要](/help/assets/dynamic-media-open-apis-overview.md)
          + [アセットの承認](/help/assets/approve-assets.md)
          + [ダウンストリームアプリケーションとの統合](/help/assets/integrate-dynamic-media-open-apis.md)
-         + [アセット検索 API](/help/assets/search-assets-api.md)
+         + [アセット API の検索](/help/assets/search-assets-api.md)
          + [配信 API](/help/assets/deliver-assets-apis.md)
          + [アセット配信の制限](/help/assets/restrict-assets-delivery.md)
-         + [リモート AEM AssetsとAEM Sitesの統合](/help/assets/integrate-remote-approved-assets-with-sites.md)
+         + [リモート AEM Assets と AEM Sites の統合](/help/assets/integrate-remote-approved-assets-with-sites.md)
          + [よくある質問](/help/assets/dynamic-media-open-apis-faqs.md)
          + [カスタムドメインの設定](/help/assets/configure-custom-domain.md)
    + アセットビューの操作 {#assets-view}
@@ -595,16 +595,16 @@ ht-degree: 97%
 
    + Content Hub {#content-hub}
       + [概要](/help/assets/product-overview.md)
-      + [Content Hubのデプロイ](/help/assets/deploy-content-hub.md)
-      + [Content Hub ユーザーインターフェイスの設定](/help/assets/configure-content-hub-ui-options.md)
-      + [Content Hubへのブランド承認済みアセットのアップロードまたは読み込み](/help/assets/upload-brand-approved-assets.md)
-      + [Content Hubでのアセットの検索](/help/assets/search-assets-content-hub.md)
+      + [コンテンツハブのデプロイ](/help/assets/deploy-content-hub.md)
+      + [コンテンツハブユーザーインターフェイスの設定](/help/assets/configure-content-hub-ui-options.md)
+      + [コンテンツハブへのブランド承認済みアセットのアップロードまたは読み込み](/help/assets/upload-brand-approved-assets.md)
+      + [コンテンツハブでのアセットの検索](/help/assets/search-assets-content-hub.md)
       + [アセットのプロパティ](/help/assets/asset-properties-content-hub.md)
-      + [Content Hubでのアセットの共有](/help/assets/share-assets-content-hub.md)
-      + [Content Hubを使用したアセットのダウンロード](/help/assets/download-assets-content-hub.md)
-      + [Content Hubでのコレクションの管理](/help/assets/collections-content-hub.md)
-      + [Content HubのAdobe Expressを使用した画像の編集](/help/assets/edit-images-content-hub.md)
-      + [Content Hubのアセットインサイト](/help/assets/insights-content-hub.md)
+      + [コンテンツハブでのアセットの共有](/help/assets/share-assets-content-hub.md)
+      + [コンテンツハブを使用したアセットのダウンロード](/help/assets/download-assets-content-hub.md)
+      + [コンテンツハブでのコレクションの管理](/help/assets/collections-content-hub.md)
+      + [Adobe Express を使用したコンテンツハブの画像の編集](/help/assets/edit-images-content-hub.md)
+      + [コンテンツハブのアセットインサイト](/help/assets/insights-content-hub.md)
    + ベストプラクティス{#best-practices}
       + [検索のベストプラクティス](/help/assets/search-best-practices.md)
       + [メタデータの管理とベストプラクティス](/help/assets/metadata-best-practices.md)
@@ -626,7 +626,7 @@ ht-degree: 97%
    + 概要 {#forms-overview}
       + [はじめに](/help/forms/home.md)
       + [トップ Adobe Experience Manager Forms イノベーション](/help/forms/latest-innovations.md)
-      + [アーリーアクセス（EA）機能](/help/forms/early-access-ea-features.md)
+      + [早期アクセス（EA）機能](/help/forms/early-access-ea-features.md)
       + [主要な変更点](/help/forms/notable-changes.md)
       + [アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
       + [よくある質問](/help/forms/faq.md)
