@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
-source-wordcount: '2365'
-ht-degree: 100%
+source-git-commit: 9defb49b2639aa8945d1fed0332400b8ab5ced8c
+workflow-type: tm+mt
+source-wordcount: '2377'
+ht-degree: 99%
 
 ---
 
@@ -61,6 +61,7 @@ ht-degree: 100%
    * 「[**環境タイプ**」を選択します。](#environment-types)
       * 使用可能な環境または使用中の環境の数は、環境タイプ名の後ろの括弧内に表示されます。
    * 「**環境名**」を入力します。
+      * 環境の作成後に環境名を変更することはできません。
    * 「**環境の説明**」を入力します。
    * **実稼動環境とステージング環境**&#x200B;を一緒に追加する場合は、実稼動環境とステージング環境の両方の名前と説明を入力する必要があります。
    * ドロップダウンから「**メイン地域**」を選択します。
