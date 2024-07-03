@@ -6,7 +6,7 @@ Keywords: create adaptive form template, create adaptive form template based on 
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1962'
 ht-degree: 100%
 

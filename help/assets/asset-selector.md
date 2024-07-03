@@ -5,9 +5,9 @@ contentOwner: KK
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
 source-git-commit: 3f2fbdc1fd4087ea4c90b9bbe11aa37a11237ae5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4725'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 80%
 次の通信方法を確保する必要があります。
 
 * アプリケーションは HTTPS で実行されている。
-* IMS クライアントのリダイレクト URL の許可リスト内のアプリケーションの URL。
+* アプリケーションの URL は、IMS クライアントのリダイレクト URL の許可リストにある。
 * IMS ログインフローは、web ブラウザーのポップアップを使用して設定およびレンダリングされる。そのため、ターゲットブラウザーでポップアップを有効または許可する必要があります。
 
 アセットセレクターの IMS 認証ワークフローが必要な場合は、上記の前提条件を使用します。または、IMS ワークフローで既に認証されている場合は、代わりに IMS 情報を追加できます。
@@ -57,7 +57,7 @@ ht-degree: 80%
 > このリポジトリは、アセットセレクターを統合するために使用可能な API と使用例について説明した補足ドキュメントとして機能することを目的としています。アセットセレクターをインストールまたは使用する前に、Experience Manager Assets as a Cloud Service プロファイルの一部としてアセットセレクターへのアクセスがプロビジョニングされていることを確認します。プロビジョニングされていない場合、これらのコンポーネントを統合または使用することはできません。プロビジョニングをリクエストするには、プログラム管理者が Admin Console から P2 としてマークされたサポートチケットを発行し、次の情報を含める必要があります。
 >
 >* 統合アプリケーションがホストされるドメイン名。
->* プロビジョニング後、組織には次の情報が提供されます `imsClientId`, `imsScope`、および `redirectUrl` アセットセレクターの設定に不可欠な、ユーザーがリクエストする環境に対応します。 これらの有効なプロパティがないと、インストール手順を実行できません。
+>* プロビジョニング後、アセットセレクターの設定に不可欠な、リクエストした環境に対応する `imsClientId`、`imsScope` および `redirectUrl` が組織に提供されます。これらの有効なプロパティがないと、インストール手順を実行できません。
 
 ## インストール {#installation}
 
@@ -108,7 +108,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 * [アセットセレクターと  [!DNL Adobe]  アプリケーションの統合](#adobe-app-integration-vanilla)
 * [アセットセレクターとアドビ以外のアプリケーションの統合](#adobe-non-app-integration)
-* [Dynamic Mediaと OpenAPI の機能との統合](#adobe-app-integration-polaris)
+* [OpenAPI 機能を備えた Dynamic Media の統合](#adobe-app-integration-polaris)
 
 >[!BEGINTABS]
 
@@ -276,7 +276,7 @@ console.log("onErrorReceived", type, msg);
 
 ### アセットセレクターとアドビ以外のアプリケーションの統合 {#adobe-non-app-integration}
 
-アセットセレクターをAdobe以外のアプリケーションと統合するには、サポートチケットの記録や統合など、様々な検証を実行する必要があります。
+アセットセレクターをアドビ以外のアプリケーションと統合するには、サポートチケットの記録、統合など、様々な検証を実行する必要があります。
 
 +++**アドビ以外のアプリケーションに対するアセットセレクターの設定**
 アドビ以外のアプリケーションに対してアセットセレクターを設定するには、まずプロビジョニングのサポートチケットを記録してから、統合手順を実行する必要があります。
@@ -396,37 +396,37 @@ Admin Console を使用してサポートチケットを記録する手順は次
 
 <!--Integration with Polaris application content starts here-->
 
->[!TAB Dynamic Mediaと OpenAPI の機能との統合]
+>[!TAB OpenAPI 機能を備えた Dynamic Media の統合]
 
 ### 前提条件 {#prereqs-polaris}
 
-アセットセレクターとDynamic Mediaを OpenAPI 機能と統合する場合は、次の前提条件を使用してください。
+アセットセレクターと、OpenAPI 機能を備えた Dynamic Media の統合には、次の前提条件を使用します。
 
 * [通信方法](#prereqs)
-* OpenAPI 機能を使用してDynamic Mediaにアクセスするには、次のライセンスが必要です。
-   * Assets リポジトリ（例：Experience Manager Assetsas a Cloud Service）。
+* OpenAPI 機能を備えた Dynamic Media にアクセスするには、次のライセンスが必要です。
+   * アセットリポジトリ（例：Experience Manager Assets as a Cloud Service）。
    * AEM Dynamic Media。
-* のみ [承認済みアセット](#approved-assets.md) ブランドの一貫性を確保するために使用できます。
+* ブランドの一貫性を確保するために、[承認済みアセット](#approved-assets.md)のみを使用できます。
 
-### Dynamic Mediaと OpenAPI の機能との統合{#adobe-app-integration-polaris}
+### OpenAPI 機能を備えた Dynamic Media の統合{#adobe-app-integration-polaris}
 
-アセットセレクターとDynamic Media OpenAPI プロセスの統合には、カスタマイズされた Dynamic Media URL の作成や Dynamic Media URL を選択する準備の完了など、様々な手順が含まれます。
+アセットセレクターと Dynamic Media OpenAPI プロセスの統合には、カスタマイズされた Dynamic Media URL の作成や、Dynamic Media URL を選択する準備など、様々な手順が含まれます。
 
-+++**Dynamic Media用アセットセレクターと OpenAPI 機能の統合**
++++**OpenAPI 機能を備えた Dynamic Media のアセットセレクターの統合**
 
-この `rootPath` および `path` プロパティは、OpenAPI 機能を持つDynamic Mediaに含めないでください。 代わりに、を設定できます `aemTierType` プロパティ。 次に、設定の構文を示します。
+OpenAPI 機能を備えた Dynamic Media では、`rootPath` プロパティと `path` プロパティを使用しないでください。代わりに、`aemTierType` プロパティを設定できます。設定の構文を以下に示します。
 
 ```
 aemTierType:[1: "delivery"]
 ```
 
-この設定を使用すると、承認済みアセットをすべてフォルダーなしで表示したり、フラット構造として表示したりできます。 詳しくは、次を参照してください： `aemTierType` 下のプロパティ [アセットセレクターのプロパティ](#asset-selector-properties)
+この設定により、すべての承認済みアセットをフォルダーなしで表示したり、フラットな構造として表示したりできます。詳しくは、[アセットセレクターのプロパティ](#asset-selector-properties)の `aemTierType` プロパティを参照してください。
 
 +++
 
 +++**承認済みアセットからの動的配信 URL の作成**
 アセットセレクターを設定すると、オブジェクトのスキーマを使用して、選択したアセットから動的配信 URL が作成されます。
-例えば、アセットの選択時に受け取るオブジェクトの配列から 1 つのオブジェクトのスキーマを指定します。
+例えば、アセットの選択時に受信されるオブジェクトの配列からの 1 つのオブジェクトのスキーマは次のようになります。
 
 ```
 {
@@ -438,62 +438,63 @@ aemTierType:[1: "delivery"]
 }
 ```
 
-選択したすべてのアセットは、次のユーザーによって実行されます `handleSelection` json オブジェクトとして機能する関数。 例えば、`JsonObj` のようになります。動的配信 URL は、以下のキャリアを組み合わせて作成されます。
+すべての選択済みアセットは、JSON オブジェクトとして機能する `handleSelection` 関数によって実行されます。例えば、`JsonObj` のようになります。動的配信 URL は、以下のキャリアを組み合わせて作成されます。
 
 | オブジェクト | JSON |
 |---|---|
-| Host | `assetJsonObj["repo:repositoryId"]` |
+| ホスト | `assetJsonObj["repo:repositoryId"]` |
 | API ルート | `/adobe/dynamicmedia/deliver` |
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
 | format | `.jpg` |
 
-**承認済みのアセット配信 API 仕様**
+**承認済みアセット配信 API 仕様**
 
 URL 形式：
 `https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
 
 ここで、
 
-* ホスト `https://delivery-pxxxxx-exxxxxx.adobe.com`
-* API ルートはです `"/adobe/dynamicmedia/deliver"`
-* `<asset-id>` アセット識別子
-* `<seo-name>` アセットの名前です
-* `<format>` ：出力形式
-* `<image modification query parameters>` 承認されたアセットの配信 API 仕様のサポートとして
+* ホストは `https://delivery-pxxxxx-exxxxxx.adobe.com` です
+* API ルートは `"/adobe/dynamicmedia/deliver"` です
+* `<asset-id>` はアセット識別子です
+* `<seo-name>` はアセットの名前です
+* `<format>` は出力形式です
+* `<image modification query parameters>` は、承認済みアセットの配信 API 仕様でサポートされています
 
-**承認されたアセット配信 API**
+**承認済みアセット配信 API**
 
 動的配信 URL の構文は次のとおりです。
 `https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`、ここで、
 
-* ホスト `https://delivery-pxxxxx-exxxxxx.adobe.com`
-* オリジナルレンディション配信用 API ルートは `"/adobe/assets/deliver"`
-* `<asset-id>` アセット識別子
-* `<seo-name>`は、拡張子を持つ場合とない場合があるアセットの名前です
+* ホストは `https://delivery-pxxxxx-exxxxxx.adobe.com` です
+* 元のレンディション配信の API ルートは `"/adobe/assets/deliver"` です。
+* `<asset-id>` はアセット識別子です
+* `<seo-name>` は、拡張子がある場合とない場合があるアセットの名前です。
 
 +++
 
-+++**動的配信 URL を選択する準備ができました**
-選択したすべてのアセットは、次のユーザーによって実行されます `handleSelection` json オブジェクトとして機能する関数。 例えば、`JsonObj` のようになります。動的配信 URL は、以下のキャリアを組み合わせて作成されます。
++++**動的配信 URL を選択する準備**
+すべての選択済みアセットは、JSON オブジェクトとして機能する `handleSelection` 関数によって実行されます。例えば、`JsonObj` のようになります。動的配信 URL は、以下のキャリアを組み合わせて作成されます。
 
 | オブジェクト | JSON |
 |---|---|
-| Host | `assetJsonObj["repo:repositoryId"]` |
+| ホスト | `assetJsonObj["repo:repositoryId"]` |
 | API ルート | `/adobe/assets/deliver` |
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"]` |
 
 JSON オブジェクトをトラバースする 2 つの方法を以下に示します。
 
-![動的配信 url](assets/dynamic-delivery-url.png)
+![動的配信 URL](assets/dynamic-delivery-url.png)
 
-* **サムネール：** サムネールには画像を使用でき、アセットにはPDF、ビデオ、画像などがあります。 ただし、アセットのサムネールの height 属性と width 属性を動的配信レンディションとして使用できます。
-PDFタイプのアセットには、次のレンディションのセットを使用できます。サイドキックで PDF を選択すると、選択コンテキストに以下の情報が表示されます。 次に、JSON オブジェクトをトラバースする方法を示します。
+* **サムネール：**サムネールは画像にすることができ、アセットは PDF、ビデオ、画像などです。ただし、アセットのサムネールの高さと幅の属性を動的配信レンディションとして使用できます。
+PDF タイプのアセットには、次のレンディションセットを使用できます。
+サイドキックで PDF を選択すると、選択コンテキストに以下の情報が表示されます。JSON オブジェクトをトラバースする方法を以下に示します。
 
   <!--![Thumbnail dynamic delivery url](image-1.png)-->
 
-  以下を参照してください。 `selection[0].....selection[4]` 上記のスクリーンショットからのレンディションリンクの配列の場合。 例えば、いずれかのサムネールレンディションの主要なプロパティには、次のものが含まれます。
+  上記のスクリーンショットから、レンディションリンクの配列については `selection[0].....selection[4]` を参照できます。例えば、サムネールレンディションの 1 つに含まれる主要なプロパティは次のとおりです。
 
   ```
   { 
@@ -504,9 +505,9 @@ PDFタイプのアセットには、次のレンディションのセットを�
   } 
   ```
 
-上記のスクリーンショットでは、サムネールではなくレンディションが必要な場合、PDFのオリジナルPDFの配信 URL をターゲットエクスペリエンスに組み込む必要があります。 例えば、`https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1` のように指定します。
+上記のスクリーンショットでは、PDF が必要でサムネールは不要な場合は、PDF の元のレンディションの配信 URL をターゲットエクスペリエンスに組み込む必要があります。例えば、`https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1` のように指定します。
 
-* **ビデオ：** 埋め込み iFrame を使用するビデオタイプアセットには、ビデオプレーヤーの URL を使用できます。 Target エクスペリエンスでは、次の配列レンディションを使用できます。
+* **ビデオ：**埋め込み iFrame を使用するビデオタイプのアセットには、ビデオプレーヤーの URL を使用できます。ターゲットエクスペリエンスでは、次の配列レンディションを使用できます。
   <!--![Video dynamic delivery url](image.png)-->
 
   ```
@@ -518,41 +519,41 @@ PDFタイプのアセットには、次のレンディションのセットを�
   } 
   ```
 
-  以下を参照してください。 `selection[0].....selection[4]` 上記のスクリーンショットからのレンディションリンクの配列の場合。 例えば、いずれかのサムネールレンディションの主要なプロパティには、次のものが含まれます。
+  上記のスクリーンショットから、レンディションリンクの配列については `selection[0].....selection[4]` を参照できます。例えば、サムネールレンディションの 1 つに含まれる主要なプロパティは次のとおりです。
 
-  上記のスクリーンショットのコードスニペットは、ビデオアセットの例です。 レンディションリンク配列が含まれます。 この `selection[5]` 抜粋に、ターゲットエクスペリエンスでビデオサムネールのプレースホルダーとして使用できる画像サムネールの例を示します。 この `selection[5]` レンディションの配列のは、ビデオプレーヤー用です。 これはHTMLとなり、次のように設定できます `src` （iframe の）。 ビデオの web に最適化された配信であるアダプティブビットレートストリーミングをサポートしています。
+  上記のスクリーンショットのコードスニペットは、ビデオアセットの例です。これには、レンディションリンク配列が含まれます。抜粋の `selection[5]` は、ターゲットエクスペリエンス内のビデオサムネールのプレースホルダーとして使用できる画像サムネールの例です。レンディション配列の `selection[5]` は、ビデオプレーヤー用です。これは、HTML を提供し、iframe の `src` として設定できます。ビデオの web に最適化された配信であるアダプティブビットレートストリーミングをサポートします。
 
-  上記の例では、ビデオプレーヤーの URL はです。 `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
+  上記の例では、ビデオ プレーヤーの URL は、`https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1` です。
 
-+++**OpenAPI 機能を備えたDynamic Mediaのアセットセレクターのユーザーインターフェイス**
++++**OpenAPI 機能を備えた Dynamic Media のアセットセレクターのユーザーインターフェイス**
 
-Adobeのマイクロフロントエンドアセットセレクターと統合すると、Experience Managerアセットリポジトリで使用可能なすべての承認済みアセットのアセットのみ構造を表示できます。
+アドビのマイクロフロントエンドアセットセレクターと統合すると、Experience Manager アセットリポジトリで使用可能なすべての承認済みアセットの、アセットのみの構造を表示できます。
 
-![OpenAPI 機能 UI を使用したDynamic Media](assets/polaris-ui.png)
+![OpenAPI 機能を備えた Dynamic Media の UI](assets/polaris-ui.png)
 
 * **A**：[パネルの非表示／表示](#hide-show-panel)
-* **B**: [Assets](#repository)
-* **C**: [並べ替え](#sorting)
+* **B**：[アセット](#repository)
+* **C**：[並べ替え](#sorting)
 * **D**：[フィルター](#filters)
 * **E**：[検索バー](#search-bar)
-* **金**: [昇順または降順での並べ替え](#sorting)
+* **F**：[昇順または降順での並べ替え](#sorting)
 * **G**：選択をキャンセル
-* **H**:1 つまたは複数のアセットを選択します
+* **H**：1 つまたは複数のアセットを選択
 
 +++
 
 +++**カスタムフィルターの設定**
-OpenAPI 機能を備えたDynamic Mediaのアセットセレクターを使用すると、カスタムプロパティとそれに基づくフィルターを設定できます。 この `filterSchema` プロパティは、このようなプロパティの設定に使用されます。 カスタマイズは、次の方法で公開できます `metadata.<metadata bucket>.<property name>.` フィルターを設定できる対象。次の条件を満たす場合。
+OpenAPI 機能を備えた Dynamic Media のアセットセレクターを使用すると、カスタムプロパティとそれに基づくフィルターを設定できます。このようなプロパティを設定するには、`filterSchema` プロパティを使用します。カスタマイズは、`metadata.<metadata bucket>.<property name>.` として公開され、それに対してフィルターを設定できます。ここで、
 
 * `metadata` はアセットの情報です
-* `embedded` は、設定に使用される静的パラメーターです。
+* `embedded` は、設定に使用される静的パラメーターです
 * `<propertyname>` は、設定しているフィルター名です
 
-設定の場合、で定義されるプロパティです。 `jcr:content/metadata/` レベルの公開先： `metadata.<metadata bucket>.<property name>.` （設定するフィルター用）。
+設定では、`jcr:content/metadata/` レベルで定義されているプロパティが、設定するフィルターの `metadata.<metadata bucket>.<property name>.` として公開されます。
 
-例えば、OpenAPI 機能を備えたDynamic Mediaのアセットセレクターで、のプロパティを `asset jcr:content/metadata/client_name:market` はに変換されます `metadata.embedded.client_name:market` （フィルター設定用）。
+例えば、OpenAPI 機能を備えた Dynamic Media のアセットセレクターでは、フィルター設定のために `asset jcr:content/metadata/client_name:market` のプロパティが `metadata.embedded.client_name:market` に変換されます。
 
-名前を取得するには、1 回限りのアクティビティを行う必要があります。 アセットに対して検索 API 呼び出しを実行し、プロパティ名（バケット、基本的には）を取得します。
+名前を取得するには、1 回限りのアクティビティを実行する必要があります。アセットの検索 API 呼び出しを行って、プロパティ名（基本的にはバケット）を取得します。
 
 +++
 
@@ -564,7 +565,7 @@ OpenAPI 機能を備えたDynamic Mediaのアセットセレクターを使用�
 
 | Property | タイプ | 必須 | デフォルト | 説明 |
 |---|---|---|---|---|
-| *rail* | ブーリアン | いいえ | false | `true` とマークされている場合、アセットセレクターは左側のパネルビューにレンダリングされます。`false` とマークされている場合、アセットセレクターはモーダルビューにレンダリングされます。 |
+| *rail* | ブール値 | いいえ | false | `true` とマークされている場合、アセットセレクターは左側のパネルビューにレンダリングされます。`false` とマークされている場合、アセットセレクターはモーダルビューにレンダリングされます。 |
 | *imsOrg* | 文字列 | はい | | [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] を組織にプロビジョニングする場合に割り当てられる Adobe Identity Management System（IMS）の ID です。`imsOrg` キーは、アクセスしようとしている組織が Adobe IMS 内にあるかどうかを認証するために必要です。 |
 | *imsToken* | 文字列 | いいえ | | 認証に使用される IMS ベアラートークンです。統合に [!DNL Adobe] アプリケーションを使用している場合、`imsToken` は必須です。 |
 | *apiKey* | 文字列 | いいえ | | AEM Discovery サービスへのアクセスに使用する API キーです。[!DNL Adobe] アプリケーション統合を使用している場合、`apiKey` は必須です。 |
@@ -576,7 +577,7 @@ OpenAPI 機能を備えたDynamic Mediaのアセットセレクターを使用�
 | *intl* | オブジェクト | いいえ | | アセットセレクターはデフォルトの OOTB 翻訳を提供します。`intl.locale` プロップを介して有効なロケール文字列を指定することで、翻訳言語を選択できます。（例：`intl={{ locale: "es-es" }}` </br></br>）サポートされているロケール文字列は、言語名の標準規格を表す [ISO 639 - コード](https://www.iso.org/iso-639-language-codes.html)に従います。</br></br> サポートされているロケールの一覧：英語 - &#39;en-us&#39;（デフォルト）スペイン語 - &#39;es-es&#39; ドイツ語 - &#39;de-de&#39; フランス語 - &#39;fr-fr&#39; イタリア語 - &#39;it-it&#39; 日本語 - &#39;ja-jp&#39; 韓国語 - &#39;ko-kr&#39; ポルトガル語 - &#39;pt-br&#39; 中国語（簡体字） - &#39;zh-cn&#39; 中国語（繁体字） - &#39;zh-tw&#39; |
 | *repositoryId* | 文字列 | いいえ | &#39;&#39; | アセットセレクターがコンテンツを読み込む元のリポジトリです。 |
 | *additionalAemSolutions* | `Array<string>` | いいえ | [ ] | 追加の AEM リポジトリのリストを追加できます。このプロパティで情報が指定されない場合、メディアライブラリまたは AEM Assets リポジトリのみが考慮されます。 |
-| *hideTreeNav* | ブーリアン | いいえ |  | アセットツリーのナビゲーションサイドバーを表示するか非表示にするかを指定します。このプロパティはモーダルビューでのみ使用されるので、パネルビューではこのプロパティの影響はありません。 |
+| *hideTreeNav* | ブール値 | いいえ |  | アセットツリーのナビゲーションサイドバーを表示するか非表示にするかを指定します。このプロパティはモーダルビューでのみ使用されるので、パネルビューではこのプロパティの影響はありません。 |
 | *onDrop* | 関数 | いいえ | | このプロパティで、アセットのドロップ機能を許可することができます。 |
 | *dropOptions* | `{allowList?: Object}` | いいえ | | 「allowList」を使用してドロップオプションを設定します。 |
 | *colorScheme* | 文字列 | いいえ | | アセットセレクターのテーマ（`light` または `dark`）を設定します。 |
@@ -585,11 +586,11 @@ OpenAPI 機能を備えたDynamic Mediaのアセットセレクターを使用�
 | *onClose* | 関数 | いいえ | | モーダルビューで `Close` ボタンが押された際に呼び出されます。これは、`modal` ビューでのみ呼び出され、`rail` ビューでは無視されます。 |
 | *onFilterSubmit* | 関数 | いいえ | | ユーザーが別のフィルター条件を変更したときに、フィルター項目と一緒に呼び出されます。 |
 | *selectionType* | 文字列 | いいえ | single | 一度にアセットを `single` 選択または `multiple` 選択するための設定です。 |
-| *dragOptions.allowList* | ブーリアン | いいえ | | プロパティは、選択できないアセットのドラッグを許可または拒否するために使用されます。 |
-| *aemTierType* | 文字列 | いいえ | | 配信層、オーサー層またはその両方のアセットを表示するかを選択できます。<br><br> 構文： `aemTierType:[0: "author" 1: "delivery"` <br><br> 例えば、次の両方の場合： `["author","delivery"]` を使用すると、リポジトリスイッチャーに作成者と配信の両方のオプションが表示されます。 <br> さらに、を使用します `["delivery"]` （OpenAPI 機能を備えたDynamic Mediaの配信関連アセット用） |
+| *dragOptions.allowList* | ブール値 | いいえ | | プロパティは、選択できないアセットのドラッグを許可または拒否するために使用されます。 |
+| *aemTierType* | 文字列 | いいえ | | 配信層、オーサー層またはその両方のアセットを表示するかを選択できます。<br><br>構文：`aemTierType:[0: "author" 1: "delivery"` <br><br>例えば、`["author","delivery"]` の両方を使用する場合、リポジトリスイッチャーにはオーサーと配信の両方のオプションが表示されます。<br>また、OpenAPI 機能を備えた Dynamic Media の配信関連アセットには `["delivery"]` を使用します。 |
 | *handleNavigateToAsset* | 関数 | いいえ | | アセットの選択を処理するコールバック関数です。 |
-| *noWrap* | ブーリアン | いいえ | | *noWrap* プロパティは、サイドパネルでのアセットセレクターのレンダリングに役立ちます。このプロパティを指定しない場合、デフォルトで&#x200B;*ダイアログビュー*&#x200B;がレンダリングされます。 |
-| *dialogSize* | 小、中、大、フルスクリーン、またはフルスクリーンのテイクオーバー | String | オプション | 指定されたオプションを使用してサイズを指定することで、レイアウトを制御できます。 |
+| *noWrap* | ブール値 | いいえ | | *noWrap* プロパティは、サイドパネルでのアセットセレクターのレンダリングに役立ちます。このプロパティを指定しない場合、デフォルトで&#x200B;*ダイアログビュー*&#x200B;がレンダリングされます。 |
+| *dialogSize* | 小、中、大、フルスクリーン、またはフルスクリーンのテイクオーバー | 文字列 | オプション | 指定されたオプションを使用してサイズを指定することで、レイアウトを制御できます。 |
 | *colorScheme* | ライトまたはダーク | いいえ | | このプロパティは、アセットセレクターアプリケーションのテーマを設定するために使用されます。テーマは、ライトテーマとダークテーマから選択できます。 |
 | *filterRepoList* | 関数 | いいえ |  | Experience Manager リポジトリを呼び出し、フィルタリングされたリポジトリのリストを返す `filterRepoList` コールバック関数を使用できます。 |
 
@@ -604,7 +605,7 @@ OpenAPI 機能を備えたDynamic Mediaのアセットセレクターを使用�
 
 ![rail-view-example](assets/rail-view-example-vanilla.png)
 
-アセットセレクターの `rail` の値が `false` に設定されている、またはプロパティで示されていない場合、アセットセレクターはデフォルトでモーダルビューに表示されます。この `acvConfig` プロパティは、アセットビューアのパネルビューを有効にするために使用されます。 `acvConfig` プロパティの使用法については、[ドラッグ＆ドロップを有効または無効にする](#enable-disable-drag-and-drop)を参照してください。
+アセットセレクターの `rail` の値が `false` に設定されている、またはプロパティで示されていない場合、アセットセレクターはデフォルトでモーダルビューに表示されます。`acvConfig` プロパティは、アセット ビューアーのパネルビューを有効にするために使用されます。`acvConfig` プロパティの使用法については、[ドラッグ＆ドロップを有効または無効にする](#enable-disable-drag-and-drop)を参照してください。
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property

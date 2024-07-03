@@ -6,9 +6,9 @@ role: Developer, Architect
 exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
 solution: Experience Manager Sites
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '737'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -103,9 +103,9 @@ AEM GraphQL API の実装は、[GraphQL Java ライブラリ](https://graphql.or
 
 ## コンテンツフラグメント構造の分析 {#analyzing-content-fragments-structure}
 
-AEMでは、分析に役立つように、フラグメントの構造を表示する方法をいくつか用意しています。 [コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md).
+分析に役立つために、AEM では[コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md)からフラグメントの構造を表示する方法がいくつか用意されています。
 
-参照： [コンテンツフラグメント構造の分析](/help/sites-cloud/administering/content-fragments/analysis.md) 詳しくは、以下を参照してください。
+詳しくは、[コンテンツフラグメント構造の分析](/help/sites-cloud/administering/content-fragments/analysis.md)を参照してください。
 
 * [構造ツリー](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree)
 

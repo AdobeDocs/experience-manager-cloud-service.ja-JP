@@ -5,9 +5,9 @@ feature: Administering, Developing
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
 source-git-commit: 7fdb4e3da7172e3a94f105c8b2a46ef77a565532
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3772'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -177,7 +177,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 フィルターは、パッケージに含めるリポジトリノードを識別します。**フィルター定義**&#x200B;によって、以下の情報が指定されます。
 
-* この **ルートパス** 含めるコンテンツの
+* 含めるコンテンツの&#x200B;**ルートパス**
 * ルートパスの下で特定のノードを含める、または除外する&#x200B;**ルール**。
 
 「**+** 」ボタンを使用して、ルールを追加します。「**-** 」ボタンを使用してルールを削除します。
@@ -190,12 +190,12 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 ![「フィルター」タブ](assets/edit-filter.png)
 
-ルールを作成する際は、正規表現（正規表現、正規表現、有理式とも呼ばれます）を定義して、含めたり除外したりするすべてのノードを指定します。
+フィルターを作成する際、パスを定義するか、正規表現（regex、regexp、または有理式とも呼ばれる）を使用することにより、含めたり除外したりするすべてのノードを指定できます。
 
 | ルールタイプ | 説明 |
 |---|---|
-| include | 「含める」を選択すると、指定したディレクトリ内で、正規表現に一致するすべてのファイルとフォルダーが含まれます。 次を含める **実行しない** 指定したルートパスの下にある他のファイルまたはフォルダーを含めます。 |
-| 除外 | 除外では、正規表現に一致するすべてのファイルとフォルダーが除外されます。 |
+| include | 「include」には、指定したディレクトリ内で、正規表現に一致するすべてのファイルとフォルダーが含まれます。「include」には、指定したルートパスの下のその他のファイルやフォルダーは含まれ&#x200B;**ません**。 |
+| 除外 | 「exclude」では、正規表現に一致するすべてのファイルとフォルダーが除外されます。 |
 
 パッケージフィルターが定義されるのは、ほとんどの場合、最初に[パッケージを作成するときです。](#creating-a-new-package) ただし、後で編集することもできますが、後でパッケージを再作成して、新しいフィルター定義に基づいてその内容を更新する必要があります。
 
@@ -205,7 +205,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 >[!TIP]
 >
->背景の情報については、 [Apache Jackrabbit - ワークスペースフィルター](https://jackrabbit.apache.org/filevault/filter.html) ドキュメント。
+>背景の情報については、[Apache Jackrabbit - Workspace Filter](https://jackrabbit.apache.org/filevault/filter.html) のドキュメントを参照してください。
 
 ### 依存関係 {#dependencies}
 

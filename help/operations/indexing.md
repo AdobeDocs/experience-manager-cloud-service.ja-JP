@@ -5,9 +5,9 @@ exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
 source-git-commit: 65e67225a6a91d871218c12c4696dd281787cd58
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2449'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->インデックス定義を含んだコンテンツパッケージには、に次のプロパティを設定する必要があります。 `properties.xml` コンテンツパッケージのファイル。 `properties.xml` は、デフォルトで新しいパッケージに作成され、次の場所にあります。 `<package_name>/META-INF/vault/properties.xml`:
+>インデックス定義を含んだコンテンツパッケージには、コンテンツパッケージの `properties.xml` ファイルで次のプロパティを設定する必要があります。`properties.xml` はデフォルトで新しいパッケージに作成され、`<package_name>/META-INF/vault/properties.xml` にあります。
 >
 > * `noIntermediateSaves=true`
 >

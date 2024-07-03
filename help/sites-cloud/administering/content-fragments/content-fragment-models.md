@@ -6,7 +6,7 @@ role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3209'
 ht-degree: 100%
 
@@ -126,9 +126,9 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
         >[!CAUTION]
         >
-        >データタイプのプロパティの「**プロパティ名**」を手動で更新する場合、名前には、A～Z、a～z、0～9 および特殊文字のアンダースコア「_」*のみ*&#x200B;を使用することができます。
+        データタイプのプロパティの「**プロパティ名**」を手動で更新する場合、名前には、A～Z、a～z、0～9 および特殊文字のアンダースコア「_」*のみ*&#x200B;を使用することができます。
         >
-        >以前のバージョンの AEM で作成されたモデルに不正な文字が含まれている場合は、それらの文字を削除または更新します。
+        以前のバージョンの AEM で作成されたモデルに不正な文字が含まれている場合は、それらの文字を削除または更新します。
 
      次に例を示します。
 
@@ -157,9 +157,9 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
   >[!NOTE]
   >
-  >テキストエリアがリッチテキスト、プレーンテキストまたはマークダウンのどれであるかは、モデル内で、プロパティの&#x200B;**デフォルトのタイプ**&#x200B;によって定義されます。
+  テキストエリアがリッチテキスト、プレーンテキストまたはマークダウンのどれであるかは、モデル内で、プロパティの&#x200B;**デフォルトのタイプ**&#x200B;によって定義されます。
   >
-  >この形式は、[コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md)から変更はできませんが、モデルからのみ変更できます。
+  この形式は、[コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md)から変更はできませんが、モデルからのみ変更できます。
 
 * **数値**
    * 1 つ以上の数値フィールドを追加
@@ -191,7 +191,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
      >[!NOTE]
      >
-     >このデータタイプは書式設定にのみ使用され、AEM GraphQL スキーマでは無視されます。
+     このデータタイプは書式設定にのみ使用され、AEM GraphQL スキーマでは無視されます。
 
 ## プロパティ {#properties}
 
@@ -203,7 +203,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
   >[!CAUTION]
   >
-  >以前のバージョンの AEM で作成されたモデルに不正な文字が含まれている場合は、それらの文字を削除または更新します。
+  以前のバージョンの AEM で作成されたモデルに不正な文字が含まれている場合は、それらの文字を削除または更新します。
 
 * **レンダリング形式**
 
@@ -234,11 +234,11 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
   >[!NOTE]
   >
-  >言語ルートごとに一意性が確保されます。
+  言語ルートごとに一意性が確保されます。
 
   >[!NOTE]
   >
-  >バリエーションは、同じフラグメントのバリエーションと同じ&#x200B;*一意の*&#x200B;値を持つことができますが、他のフラグメントのバリエーションで使用されている値とは異なります。
+  バリエーションは、同じフラグメントのバリエーションと同じ&#x200B;*一意の*&#x200B;値を持つことができますが、他のフラグメントのバリエーションで使用されている値とは異なります。
 
 * 特定のデータタイプとそのプロパティについて詳しくは、**[コンテンツ参照](#content-reference)**&#x200B;を参照してください。
 
@@ -285,27 +285,26 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 * **[フラグメント参照](#fragment-reference-nested-fragments)**（ネストされたフラグメント）
    * 指定した特定のモデルに応じて、他のフラグメントを参照します。
    * 構造化データを包含／取得できます。
-
      >[!NOTE]
      >
-     >このメソッドは、[GraphQL でコンテンツフラグメントを使用したヘッドレスコンテンツ配信](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)を使用する場合、特に重要になります。
+     このメソッドは、[GraphQL でコンテンツフラグメントを使用したヘッドレスコンテンツ配信](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)を使用する場合、特に重要になります。
    * （結果のフラグメント内で）1 つまたは複数の参照に対して設定できます。
 
 >[!NOTE]
 >
->AEM では次の繰り返しを防止できます。
+AEM では次の繰り返しを防止できます。
 >
->* コンテンツ参照
->これにより、ユーザーは現在のフラグメントに参照を追加できなくなり、フラグメント参照ピッカーダイアログが空になる場合があります。
+* コンテンツ参照
+これにより、ユーザーは現在のフラグメントに参照を追加できなくなり、フラグメント参照ピッカーダイアログが空になる場合があります。
 >
->* GraphQL のフラグメント参照
->相互に参照される複数のコンテンツフラグメントを返すディープクエリを作成する場合、最初に null が返されます。
+* GraphQL のフラグメント参照
+相互に参照される複数のコンテンツフラグメントを返すディープクエリを作成する場合、最初に null が返されます。
 
 >[!CAUTION]
 >
->複数の参照されたフラグメントに対してクエリを実行する場合は、様々なフラグメントモデルに同じ名前でタイプが異なるフィールド名を付けることはお勧めしません。
+複数の参照されたフラグメントに対してクエリを実行する場合は、様々なフラグメントモデルに同じ名前でタイプが異なるフィールド名を付けることはお勧めしません。
 >
->詳しくは、[コンテンツフラグメントと共に使用する AEM GraphQL API - 制限事項](/help/headless/graphql-api/content-fragments.md#limitations)を参照してください。
+詳しくは、[コンテンツフラグメントと共に使用する AEM GraphQL API - 制限事項](/help/headless/graphql-api/content-fragments.md#limitations)を参照してください。
 
 ### コンテンツ参照 {#content-reference}
 
@@ -316,16 +315,16 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 * 参照コンテンツを保存する場所を指定する&#x200B;**ルートパス**
   >[!NOTE]
   >
-  >これは、コンテンツフラグメントエディターの使用時に、このフィールドで画像を直接アップロードして参照する場合に必須です。
+  これは、コンテンツフラグメントエディターの使用時に、このフィールドで画像を直接アップロードして参照する場合に必須です。
   >
-  >詳しくは、[参照画像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)を参照してください。
+  詳しくは、[参照画像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)を参照してください。
 
 * 参照可能なコンテンツタイプ
   >[!NOTE]
   >
-  >コンテンツフラグメントエディターの使用時に、このフィールドで画像を直接アップロードして参照する場合は、**画像**&#x200B;を含める必要があります。
+  コンテンツフラグメントエディターの使用時に、このフィールドで画像を直接アップロードして参照する場合は、**画像**&#x200B;を含める必要があります。
   >
-  >詳しくは、[参照画像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)を参照してください。
+  詳しくは、[参照画像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)を参照してください。
 
 * ファイルサイズの制限
 * 画像が参照されている場合：
@@ -359,7 +358,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->フラグメント参照は、[GraphQL でコンテンツフラグメントを使用したヘッドレスコンテンツ配信](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)で特に重要になります。
+フラグメント参照は、[GraphQL でコンテンツフラグメントを使用したヘッドレスコンテンツ配信](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)で特に重要になります。
 
 標準プロパティに加えて、次のものを定義できます。
 
@@ -385,9 +384,9 @@ type CompanyModel {
 
 >[!NOTE]
 >
->繰り返し防止メカニズムが設定されます。これにより、ユーザーがフラグメント参照で現在のコンテンツフラグメントを選択できなくなり、フラグメント参照ピッカーダイアログが空になる場合があります。
+繰り返し防止メカニズムが設定されます。これにより、ユーザーがフラグメント参照で現在のコンテンツフラグメントを選択できなくなり、フラグメント参照ピッカーダイアログが空になる場合があります。
 >
->GraphQL にも、フラグメント参照の繰り返しを防止する機能があります。相互に参照する 2 つのコンテンツフラグメントにわたるディープクエリを作成すると、null が返されます。
+GraphQL にも、フラグメント参照の繰り返しを防止する機能があります。相互に参照する 2 つのコンテンツフラグメントにわたるディープクエリを作成すると、null が返されます。
 
 ## コンテンツフラグメントモデルの有効化または無効化 {#enabling-disabling-a-content-fragment-model}
 
@@ -436,7 +435,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->このメカニズムは、ページの高度なプロパティでページとその子に対して[ページテンプレートを許可する](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author)ことに似ています。
+このメカニズムは、ページの高度なプロパティでページとその子に対して[ページテンプレートを許可する](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author)ことに似ています。
 
 **許可されているコンテンツフラグメントモデル**&#x200B;に&#x200B;**ポリシー**&#x200B;を設定するには：
 
@@ -470,7 +469,7 @@ type CompanyModel {
 
 >[!CAUTION]
 >
->コンテンツフラグメントモデルを削除すると、依存するフラグメントに影響を与える場合があります。
+コンテンツフラグメントモデルを削除すると、依存するフラグメントに影響を与える場合があります。
 
 コンテンツフラグメントモデルを削除するには、次の操作を実行します。
 
@@ -481,7 +480,7 @@ type CompanyModel {
 
    >[!NOTE]
    >
-   >モデルが参照されている場合は、適切なアクションを実行できるように警告が表示されます。
+   モデルが参照されている場合は、適切なアクションを実行できるように警告が表示されます。
 
 ## コンテンツフラグメントモデルの公開 {#publishing-a-content-fragment-model}
 
@@ -497,7 +496,7 @@ type CompanyModel {
 
    >[!NOTE]
    >
-   >まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
+   まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
 
 ## コンテンツフラグメントモデルを非公開にする {#unpublishing-a-content-fragment-model}
 
@@ -585,6 +584,6 @@ type CompanyModel {
 
      >[!NOTE]
      >
-     >まだ上部に警告が表示される場合がありますが、その場合は、モデルが既存のコンテンツフラグメントで既に使用されています。
+     まだ上部に警告が表示される場合がありますが、その場合は、モデルが既存のコンテンツフラグメントで既に使用されています。
 
    * 「**キャンセル**」を選択すると、コンソールに戻ります。

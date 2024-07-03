@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
 source-git-commit: 73d0a4a73a3e97a91b2276c86d3ed1324de8c361
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1400'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 73%
 
 * 顧客管理 CDN からのリクエストを検証するために Adobe CDN で使用される HTTP ヘッダー値。
 * CDN キャッシュ内のリソースをパージするために使用される API トークン。
-* 基本認証フォームを送信して、制限されたコンテンツにアクセスできるユーザー名とパスワードの組み合わせのリスト。
+* 基本認証フォームを送信することで、制限されたコンテンツにアクセスできるユーザー名／パスワードの組み合わせのリスト。
 
 
 上記のそれぞれについては、設定の構文を含めて、以下の該当する節で説明します。[共通設定](#common-setup)の節では、両方に共通する設定とデプロイメントについて説明します。最後に、優れたセキュリティ対策と見なされている[キーのローテーション](#rotating-secrets)の方法に関する節があります。
@@ -31,7 +31,7 @@ ht-degree: 73%
 
 設定の一部として、Adobe CDN と顧客 CDN は、`X-AEM-Edge-Key` HTTP ヘッダーの値について合意する必要があります。この値は、リクエストが Adobe CDN にルーティングされる前に、顧客 CDN で各リクエストに対して設定され、Adobe CDN では値が期待どおりであることを検証するので、リクエストを適切な AEM 接触チャネルにルーティングするのに役立つ HTTP ヘッダーを含む他の HTTP ヘッダーを信頼できます。
 
-この `X-AEM-Edge-Key` 値は以下の構文で宣言され、実際の値は edgeKey1 プロパティと edgeKey2 プロパティによって参照されます。 を参照してください。 [共通設定](#common-setup) 設定のデプロイ方法については、を参照してください。
+`X-AEM-Edge-Key` 値は以下の構文で宣言され、実際の値は edgeKey1 プロパティと edgeKey2 プロパティによって参照されます。設定のデプロイ方法については、[共通設定](#common-setup)の節を参照してください。
 
 ```
 kind: "CDN"
@@ -57,12 +57,12 @@ data:
 
 * 種類、バージョン、メタデータ。
 * 子 `experimental_authentication` ノードを含むデータノード（機能がリリースされると、実験的なプレフィックスは削除されます）。
-* 次の下 `experimental_authentication`、1 `authenticators` ノードと 1 `rules` ノード（両方とも配列）。
+* `experimental_authentication` の下には、1 つの `authenticators` ノードと 1 つの `rules` ノードがあり、どちらも配列をなしています。
 * オーセンティケーター：トークンまたは資格情報のタイプ（この場合はエッジキー）を宣言できます。次のプロパティが含まれます。
    * name - わかりやすい文字列。
-   * タイプ – でなければなりません `edge`.
-   * edgeKey1 – の値 *X-AEM – エッジキー*：シークレットトークンを参照する必要があります。これは git に保存してはならず、として宣言する必要があります。 [Cloud Manager 環境変数](/help/implementing/cloud-manager/environment-variables.md) タイプが秘密鍵です。 「適用されたサービス」フィールドで、「すべて」を選択します。値（例：`${{CDN_EDGEKEY_052824}}`）は、追加した日を反映することをお勧めします。
-   * edgeKey2 - 以下の[秘密鍵のローテーション](#rotating-secrets)の節で説明する、秘密鍵のローテーションに使用します。edgeKey1 と同様に定義します。 `edgeKey1` と `edgeKey2` の 1 つ以上を宣言する必要があります。
+   * type - `edge` にする必要があります。
+   * edgeKey1 - *X-AEM-Edge-Key* の値は秘密鍵トークンを参照する必要がありますが、これは git に保存するのではなく、タイプが秘密鍵の [Cloud Manager 環境変数](/help/implementing/cloud-manager/environment-variables.md)として宣言する必要があります。「適用されたサービス」フィールドで、「すべて」を選択します。値（例：`${{CDN_EDGEKEY_052824}}`）は、追加した日を反映することをお勧めします。
+   * edgeKey2 - 以下の[秘密鍵のローテーション](#rotating-secrets)の節で説明する、秘密鍵のローテーションに使用します。edgeKey1 と同様に定義します。`edgeKey1` と `edgeKey2` の 1 つ以上を宣言する必要があります。
 <!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * ルール：使用するオーセンティケーターと、パブリッシュ層とプレビュー層のどちらに使用するかを宣言できます。これには以下が含まれます。
    * name - わかりやすい文字列。
@@ -70,7 +70,7 @@ data:
    * action - 対象のオーセンティケーターを参照して、「authenticate」を指定する必要があります。
 
 >[!NOTE]
->エッジキーはとして設定する必要があります [Cloud Manager 環境変数](/help/implementing/cloud-manager/environment-variables.md) タイプの変数 `secret` （を使用） *すべて* サービスを適用する場合に選択）を適用してから、そのサービスを参照する設定をデプロイします。
+>エッジキーは、参照する設定をデプロイする前に、タイプが `secret`（適用されたサービスで「*すべて*」を選択した場合）の [Cloud Manager 環境変数](/help/implementing/cloud-manager/environment-variables.md)として設定する必要があります。
 
 ## API トークンのパージ {#purge-API-token}
 
@@ -100,7 +100,7 @@ data:
 
 * 種類、バージョン、メタデータ。
 * 子 `experimental_authentication` ノードを含むデータノード（機能がリリースされると、実験的なプレフィックスは削除されます）。
-* 次の下 `experimental_authentication`、1 `authenticators` ノードと 1 `rules` ノード（両方とも配列）。
+* `experimental_authentication` の下には、1 つの `authenticators` ノードと 1 つの `rules` ノードがあり、どちらも配列をなしています。
 * オーセンティケーター：トークンまたは資格情報のタイプ（この場合はパージキー）を宣言できます。次のプロパティが含まれます。
    * name - わかりやすい文字列。
    * type - パージする必要があります。
@@ -117,14 +117,14 @@ data:
 
 ## 基本認証 {#basic-auth}
 
-ユーザー名とパスワードを必要とする基本認証ダイアログをポップアップすることで、特定のコンテンツリソースをProtectします。 この機能は、エンドユーザーのアクセス権限に対する本格的なソリューションとしてではなく、主に、ビジネスの関係者によるコンテンツのレビューなどの軽い認証ユースケースを目的としています。
+ユーザー名とパスワードの入力を求める基本認証ダイアログを表示して、特定のコンテンツリソースを保護します。この機能は、エンドユーザーのアクセス権に対する本格的なソリューションではなく、主にビジネス関係者によるコンテンツのレビューなどの軽い認証ユースケースを対象としています。
 
 エンドユーザーには、次のような基本認証ダイアログがポップアップ表示されます。
 
-![basicauth-dialog](/help/implementing/dispatcher/assets/basic-auth-dialog.png)
+![基本認証ダイアログ](/help/implementing/dispatcher/assets/basic-auth-dialog.png)
 
 
-構文は、以下のように宣言されます。 を参照してください。 [共通設定](#common-setup) デプロイ方法については、以下の節を参照してください。
+宣言の構文は次のようになります。デプロイ方法については、以下の[共通設定](#common-setup)の節を参照してください。
 
 ```
 kind: "CDN"
@@ -152,18 +152,18 @@ data:
 構文の内容は次のとおりです。
 
 * 種類、バージョン、メタデータ。
-* を含むデータノード `experimental_authentication` ノード（実験的プレフィックスは機能がリリースされると削除されます）。
-* 次の下 `experimental_authentication`、1 `authenticators` ノードと 1 `rules` ノード（両方とも配列）。
-* 認証：このシナリオでは、次の構造を持つ基本認証が宣言されます。
+* `experimental_authentication` ノードを含むデータノード（機能がリリースされると、実験的なプレフィックスは削除されます）。
+* `experimental_authentication` の下には、1 つの `authenticators` ノードと 1 つの `rules` ノードがあり、どちらも配列をなしています。
+* オーセンティケーター：このシナリオでは、次の構造を持つ基本オーセンティケーターの宣言を行います。
    * name - わかりやすい文字列
-   * タイプ – でなければなりません `basic`
+   * type - `basic` にする必要があります
    * 資格情報の配列。各資格情報には、次の名前と値のペアが含まれ、エンドユーザーは基本認証ダイアログで入力できます。
       * user - ユーザーの名前
-      * パスワード – その値は、秘密鍵トークンを参照する必要があります。これは Git に保存するのではなく、秘密鍵タイプの Cloud Manager 環境変数として（で宣言する必要があります） **すべて** （サービスフィールドとして選択）
-* ルール：使用する認証システムと保護するリソースを宣言できます。 各ルールには以下が含まれます。
+      * password - この値は秘密鍵トークンを参照する必要がありますが、これは git に保存するのではなく、タイプが秘密鍵（サービスフィールドとして「**すべて**」を選択した場合）の Cloud Manager 環境変数として宣言する必要があります。
+* ルール：使用するオーセンティケーターと、保護するリソースのどちらに使用するかを宣言できます。各ルールには、以下が含まれます。
    * name - わかりやすい文字列
-   * when - [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)の記事の構文に従って、ルールを評価するタイミングを決定する条件。通常は、パブリッシュ層または特定のパスの比較が含まれます。
-   * アクション – 「authenticate」を指定し、対象の認証システムを参照する必要があります。これは、このシナリオの basic-auth です
+   * when - [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)の記事の構文に従って、ルールを評価するタイミングを決定する条件。通常、パブリッシュ層または特定のパスの比較が含まれます。
+   * action - 対象のオーセンティケーター（このシナリオでは basic-auth）を参照して、「authenticate」を指定する必要があります。
 
 >[!NOTE]
 >参照する設定をデプロイする前に、エッジキーを、`secret` タイプの [Cloud Manager 環境変数](/help/implementing/cloud-manager/environment-variables.md)として設定する必要があります。

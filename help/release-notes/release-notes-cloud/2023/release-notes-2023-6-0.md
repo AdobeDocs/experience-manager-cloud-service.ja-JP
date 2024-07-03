@@ -5,9 +5,9 @@ exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
 feature: Release Information
 role: Admin
 source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1322'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -128,7 +128,7 @@ Experience Manager Assets では、検索結果のユーザーインターフェ
 
 * [フォームデータモデルの強化された認証方法](/help/forms/configure-data-sources.md)：互換性のあるデータソースと AEM Forms に接続するためのクライアント資格情報ベースの認証が導入され、セキュリティが強化されました。この機能強化により、データの保護を強化し、偽装やユーザーログインを必要としなくなりました。
 
-* [繰り返し可能なセクションを持つアダプティブフォーム](/help/forms/create-forms-repeatable-sections.md)：コアコンポーネントベースのアダプティブフォームで[アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=ja)、[ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=ja)、[パネル](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)、および[水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=ja)コンポーネントを作成し、繰り返し可能なセクションを作成できるようになりました。
+* [繰り返し可能なセクションを持つアダプティブフォーム](/help/forms/create-forms-repeatable-sections.md)：コアコンポーネントベースのアダプティブフォームで[アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=ja)、[ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=ja)、[パネル](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)、および[水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=ja)コンポーネントを作成し、繰り返し可能なセクションを作成できるようになりました。
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 

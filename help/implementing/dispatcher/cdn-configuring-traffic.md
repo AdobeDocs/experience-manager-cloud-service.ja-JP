@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
 source-git-commit: 1b4297c36995be7a4d305c3eddbabfef24e91559
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1310'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -308,14 +308,14 @@ data:
 | **forwardAuthorization**（オプション、デフォルトは false） | true に設定した場合、クライアントリクエストの「Authorization」ヘッダーがバックエンドに渡されます。それ以外の場合は、Authorization ヘッダーが削除されます。 |
 | **timeout**（オプション、秒単位、デフォルトは 60） | バックエンドサーバーが HTTP 応答本文の最初のバイトを配信することを CDN が待機する秒数。また、この値は、バックエンドサーバーに対するバイトのタイムアウト間隔としても使用されます。 |
 
-### Edge Delivery Servicesへのプロキシ化 {#proxying-to-edge-delivery}
+### Edge Delivery Service に対するプロキシ処理 {#proxying-to-edge-delivery}
 
-オリジンセレクターを使用して、AEM Publishを通じてAEM Edge Delivery Servicesにトラフィックをルーティングする必要がある場合があります。
+AEM パブリッシュから AEM Edge Delivery Service にトラフィックをルーティングするために、オリジンセレクターの使用が必要になることがあります。
 
-* 一部のコンテンツはAEM Publishが管理するドメインによって配信され、他のコンテンツは同じドメインからEdge Delivery Servicesによって配信されます
-* Edge Delivery Servicesで提供されるコンテンツでは、トラフィックフィルタールールやリクエスト/応答の変換など、設定パイプラインを介してデプロイされるルールのメリットが得られます
+* 一部のコンテンツは AEM パブリッシュで管理するドメインによって配信され、同じドメインの他のコンテンツは Edge Delivery Service によって配信されます
+* Edge Delivery Service で配信されるコンテンツでは、トラフィックフィルタールールやリクエスト／応答の変換など、設定パイプラインを通じてデプロイされるルールのメリットを得ることができます。
 
-これを実行できるオリジンセレクタールールの例を次に示します。
+これを実現できるオリジンセレクタールールの例を以下に示します。
 
 ```
 kind: CDN
@@ -341,7 +341,7 @@ data:
 ```
 
 >[!NOTE]
-> Adobe管理による CDN が使用されるので、でプッシュ無効化を必ず設定してください。 **managed** モード（Edge Delivery Servicesに従う） [プッシュ無効化ドキュメントの設定](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+> アドビが管理する CDN が使用されているので、Edge Delivery Service の[プッシュ無効化の設定ドキュメント](https://www.aem.live/docs/byo-dns#setup-push-invalidation)に従って、**管理対象**&#x200B;モードでプッシュ無効化を設定する必要があります。
 
 
 ## クライアントサイドのリダイレクト {#client-side-redirectors}

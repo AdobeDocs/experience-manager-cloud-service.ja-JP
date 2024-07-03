@@ -7,9 +7,9 @@ exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 title: 「アダプティブフォームの送信アクションの設定方法」
 role: User, Developer
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '597'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
