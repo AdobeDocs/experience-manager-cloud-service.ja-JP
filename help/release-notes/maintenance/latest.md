@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3a4dd9f1d769a9c9da12fdd8febfef481112d18c
+source-git-commit: f4b2ea5dac880738e6412541f06b85a6a83ccf40
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '752'
 ht-degree: 79%
 
 ---
@@ -52,9 +52,6 @@ ht-degree: 79%
 * SCRNS-4194：Google Guava API への依存関係の削除。
 * SCRNS-4360：チャネルのコンテンツプロバイダーで、管理者以外のユーザーに対して「公開を管理」および「クイック公開」ボタンが表示されない。
 * SCRNS-4323：screens.html からのローンチの表示／非表示。
-
-#### Forms
-
 * FORMS-14844:reCAPTCHA の検証に失敗しても、アダプティブFormsでフォーム送信が可能になります。
 * FORMS-14984：送信されたデータに「submitMetaData」がない場合、CAPTCHA を使用したFormsが検証をスキップする。
 * FORMS-14477：日付選択の検証で、ルールエディターの「次の後」および「次の前」オプションが正しく機能しません。
