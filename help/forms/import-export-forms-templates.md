@@ -5,47 +5,58 @@ topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 6f547bd743932d45e45e0a3c47ff5eb2129cb664
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 94%
+source-wordcount: '1073'
+ht-degree: 53%
 
 ---
 
+
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM as a Cloud Service | この記事 |
+
 # アダプティブフォームおよび AEM Forms アセットの読み込みと書き出し {#importing-and-exporting-assets-to-aem-forms}
 
-アダプティブFormsと関連アセット（アダプティブフォームテーマ、フォームデータモデル（FDM）、アダプティブフォームテンプレート、ドキュメントフラグメント、PDF formsなど）を、 [!DNL AEM Forms] インスタンス。 CRX パッケージまたはバイナリファイル形式のアセットの読み込みと書き出しを行うことができます。
+アダプティブFormsと関連アセット（アダプティブフォームテーマ、フォームデータモデル（FDM）、アダプティブフォームテンプレート、フラグメント、PDF formsなど）を、 [!DNL AEM Forms] インスタンス。
 
-アダプティブフォームを書き出しても、コンテンツポリシーとテンプレートは書き出されません。このようなアセットを書き出すには、[パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#how-rolling-deployments-work)を使用します。
-
-## アダプティブフォーム、PDF forms または関連アセットのダウンロード {#download-forms-amp-documents-assets}
+## アダプティブForms、PDF formsまたは関連アセットのダウンロード {#download-forms-amp-documents-assets}
 
 フォームや関連アセットをダウンロードするには、以下の手順を実行します。
 
-1. [!DNL AEM Forms] インスタンスにログインします。
-1. 「**[!UICONTROL Adobe Experience Manager]**」![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン／「**[!UICONTROL ナビゲーション]**」![コンパス](assets/Smock_Compass_18_N.svg) アイコン／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
-1. アセットを選択し、「**[!UICONTROL ダウンロード]**」アイコンを選択します。
-1. 「アセットをダウンロード」で、以下のいずれかのオプションを選択し、「**[!UICONTROL ダウンロード]**」を選択します。
+1. [!DNL Experience Manager Forms] インスタンスにログインします。
+1. **[!UICONTROL フォーム]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
 
-   * 「**CRX パッケージとしてダウンロード**」：選択したすべてのアセットおよび関連する依存関係を [!DNL AEM Forms] インスタンスからダウンロードして、別のインスタンスに移動するオプションを使用します。AEM（アダプティブ Formsおよびアダプティブフォームフラグメント）、フォームセット、フォームデータモデル（FDM）、フォームテンプレート、PDFドキュメント、参照リソース（XSD および画像）で作成されたフォームを含む、すべてのアセットとフォルダーを CRX パッケージとしてダウンロードします。
-アセットをパッケージとしてダウンロードすることのメリットは、選択したアセットから参照されるアセットもダウンロードできる点です。例えば、フォームテンプレート、XSD および画像を使用するアダプティブフォームがあるとします。このアダプティブフォームを選択してパッケージとしてダウンロードする場合、ダウンロードされたパッケージには、フォームテンプレート、XSD および画像も含まれています。そのアセットに関連付けられているすべてのメタデータプロパティ（カスタムプロパティを含む）も同様にダウンロードされます。
+   ![Formsを選択](/help/forms/assets/select-forms.png)
 
-   * 「**アセットをバイナリファイルとしてダウンロード**」：フォームテンプレート（XDP）、PDF フォーム（PDF）、ドキュメント（PDF）、リソース（画像、スキーマ、スタイルシート）のみをダウンロードするオプションを使用します。これらのアセットは、外部アプリケーションで編集できます。バイナリ（画像、PDF、その他のサポートされている形式など）を持つアセットを .zip ファイルとしてダウンロードします。
-「**[!UICONTROL アセットをバイナリファイルとしてダウンロード]**」オプションを使用して、アダプティブフォーム、アダプティブフォームフラグメント、テーマおよびフォームセットをダウンロードすることはできません。これらのアセットをダウンロードするには、「**[!UICONTROL CRX パッケージとしてダウンロード]**」オプションを使用する必要があります。
+1. アセットを選択し、 **[!UICONTROL Download]** 上部パネルのアイコン
 
-   選択したアセットはアーカイブ（.zip ファイル）としてダウンロードされます。
+   ![Formsのダウンロード](/help/forms/assets/download-form.png)
 
-   >[!NOTE]
-   >
-   >AEM パッケージとバイナリファイルはどちらもアーカイブ（.zip ファイル）としてダウンロードされます。アセットと一緒にアセット用のテンプレートがダウンロードされることはありません。アセット用のテンプレートは、個別に書き出す必要があります。
+   フォームをダウンロードすると、 **[!UICONTROL アセットをダウンロード]** ダイアログボックスが表示されます。
 
-## アダプティブフォーム、PDF forms または関連アセットのアップロード {#upload-forms-amp-documents-assets}
+   ![フォームアセットのダウンロード](/help/forms/assets/download-form-assets.png)
+
+1. 「**[!UICONTROL ダウンロード]**」をクリックします。
+
+選択したアセットはアーカイブ（.zip ファイル）としてダウンロードされます。
+
+## アダプティブForms、PDF formsまたは関連アセットのアップロード {#upload-forms-amp-documents-assets}
 
 サポートされているアセットタイプを個別にまたは ZIP アーカイブとしてアップロードできます。ZIP ファイルの場合は、サポートされているすべてのアセットの相対パスが表示されます。ZIP 内の未サポートアセットは無視され、一覧には表示されません。ただし、ZIP アーカイブに未サポートアセットのみが含まれている場合は、エラーメッセージが表示され、ポップアップダイアログは表示されません。フォームや関連アセットをアップロードするには、以下の手順を実行します。
 
-1. [!DNL AEM Forms] インスタンスにログインします。
-1. 「**[!UICONTROL Adobe Experience Manager]**」![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン／「**[!UICONTROL ナビゲーション]**」![コンパス](assets/Smock_Compass_18_N.svg) アイコン／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
+1. [!DNL Experience Manager Forms] インスタンスにログインします。
+1. **[!UICONTROL フォーム]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
+
+   ![Formsを選択](/help/forms/assets/select-forms.png)
+
 1. **[!UICONTROL 作成]**／**[!UICONTROL ファイルのアップロード]**&#x200B;を選択します。ダイアログボックスが表示されます。
+
+   ![Formsのアップロード](/help/forms/assets/form-upload.png)
+
 1. ダイアログボックスで、読み込むパッケージまたはアーカイブを参照し、選択します。サポートされる他のファイルタイプを選択することもできます。「**[!UICONTROL 開く]**」を選択します。選択するフォルダーまたはファイル名に特殊文字を含めないでください。
 
    ダイアログボックスで、アップロードするアセットの詳細を確認し、「**[!UICONTROL アップロード]**」を選択します。
@@ -54,29 +65,185 @@ ht-degree: 94%
 
    >[!NOTE]
    >
-   > * 異なるリソースタイプと名前が競合する場合、パッケージをアップロードしても既存のフォルダー階層は置き換えられません。例えば、あるサーバーの /content/dam/formsanddocuments という場所に「Training」という名前のアダプティブフォームがあるとします。ユーザーがそのアダプティブフォームをダウンロードし、他のサーバー上にアップロードします。このアップロード先のサーバーにも、同じ /content/dam/formsanddocuments に「Training」という名前のフォルダーがありました。アップロードは失敗します。
-   > * `form-power-user` グループのメンバーのみが XDP ファイルをアップロードできます。
+   > 異なるリソースタイプと名前が競合する場合、パッケージをアップロードしても既存のフォルダー階層は置き換えられません。例えば、の場所に「Training」という名前のアダプティブフォームがあるとします `/content/dam/formsanddocuments` 1 台のサーバー上。 アダプティブフォームをダウンロードして、別のサーバーにアップロードできます。 2 台目のサーバーにも、同じ場所に「Training」という名前のフォルダーがあります `/content/dam/formsanddocuments`. アップロードは失敗します。
 
+## テーマのダウンロード
 
-## テーマのダウンロード {#downloading-a-theme}
-
-他のプロジェクトやインスタンスで使用する [!DNL AEM Forms] のテーマを書き出すことができます。AEM では、テーマを zip ファイルとしてダウンロードし、それをインスタンスにアップロードできます。
-
+他のプロジェクトやインスタンスで使用する [!DNL AEM Forms] のテーマを書き出すことができます。AEMでは、テーマを zip ファイルとしてダウンロードし、それをインスタンスにアップロードできます。
 テーマをダウンロードするには、以下の手順を実行します。
 
-1. [!DNL AEM Forms] インスタンスにログインします。
-1. 「**[!UICONTROL Adobe Experience Manager]**」![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン／「**[!UICONTROL ナビゲーション]**」![コンパス](assets/Smock_Compass_18_N.svg) アイコン／**[!UICONTROL Forms]**／**[!UICONTROL テーマ]**&#x200B;を選択します。
-1. テーマを選択し、「**[!UICONTROL ダウンロード]**」を選択します。テーマはアーカイブ（.zip ファイル）としてダウンロードされます。
+1. にログイン [!DNL Experience Manager Forms] オーサーインスタンス。
+1. を選択 **[!UICONTROL Forms]** > **[!UICONTROL テーマ]**.
+
+   ![テーマを選択](/help/forms/assets/select-theme.png)
+
+1. テーマページでテーマを選択し、 **[!UICONTROL Download]** 上部パネルのアイコン
+
+   ![テーマのダウンロード](/help/forms/assets/download-theme.png)
+
+   テーマをダウンロードすると、以下が行われます **[!UICONTROL アセットをダウンロード]** ダイアログボックスが表示されます。
+
+   ![テーマアセットのダウンロード](/help/forms/assets/download-theme-asset.png)
+
+1. 「**[!UICONTROL ダウンロード]**」をクリックします。
+
+選択したアセットはアーカイブ（.zip ファイル）としてダウンロードされます。
 
 ## テーマのアップロード {#uploading-a-theme}
 
-他のユーザーがフォームで作成したテーマをアップロードして使用できます。テーマをアップロードするには、以下の手順を実行します。
+他のユーザーがフォームで作成したテーマをアップロードして使用できます。
+テーマをアップロードするには、以下の手順を実行します。
 
+1. [!DNL Experience Manager Forms] インスタンスにログインします。
 1. Experience Manager で、**[!UICONTROL フォーム]**／**[!UICONTROL テーマ]**&#x200B;に移動します。
-1. テーマページで、**[!UICONTROL 作成]**／**[!UICONTROL ファイルのアップロード]**&#x200B;をクリックします。
-1. ファイルのアップロードプロンプトで、コンピューター上のテーマパッケージを参照して選択し、「**[!UICONTROL アップロード]**」をクリックします。アップロードされたテーマは、テーマページで使用できます。
 
-<!-- ## Import and export assets in Correspondence Management {#import-and-export-assets-in-correspondence-management}
+   ![テーマを選択](/help/forms/assets/select-theme.png)
+
+1. テーマページで、**[!UICONTROL 作成]**／**[!UICONTROL ファイルのアップロード]**&#x200B;をクリックします。
+
+   ![テーマをアップロード](/help/forms/assets/theme-upload.png)
+
+1. コンピューター上のテーマパッケージを参照して選択し、 **[!UICONTROL Upload]**. アップロードされたテーマは、テーマページで使用できるようになります。
+
+## フォルダーを使用した、アダプティブフォーム、PDF forms および関連アセットの整理  {#folders-and-organizing-assets}
+
+フォルダーを使用して、アセットのアレンジや整理を行うことができます。フォルダー内でドキュメントおよびアセットを整理すると、ファイルをグループ化して容易に管理できます。フォルダーを選択し、ダウンロードするか削除するかを選択します。
+
+### フォルダーを作成する {#create-a-folder}
+
+フォルダーを作成するには：
+
+1. [!DNL Experience Manager Forms] インスタンスにログインします。
+1. **[!UICONTROL フォーム]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
+
+   ![フォームを選択](/help/forms/assets/select-forms.png)
+
+1. **[!UICONTROL 作成]**／**[!UICONTROL フォルダー]**&#x200B;を選択します。
+
+   ![フォルダーを作成](/help/forms/assets/create-folder.png)
+
+   この **[!UICONTROL フォルダーを追加]** ダイアログボックスが表示されます。
+1. を入力 **[!UICONTROL タイトル]**. この **[!UICONTROL 名前]** を入力すると、が自動的に設定されます **[!UICONTROL タイトル]**.
+
+   ![フォルダーを追加](/help/forms/assets/add-folder.png)
+
+1. 「**[!UICONTROL 作成]**」をクリックします。
+
+   >[!NOTE]
+   >
+   >デフォルトでは、名前フィールドの値は、タイトルから自動入力されます。名前には、英数字、ハイフン（-）、下線（_）のみを含めることができます。タイトルにその他の特殊文字を入力すると、それらは自動的にハイフンに置換され、この新しい名前を確認するよう指示されます。提示された名前をそのまま使用するか、またはそれを編集できます。
+
+定義したタイトルを持つ新しいフォルダーは、アセットリスト内の現在の場所に表示されます。
+
+指定した名前を持つフォルダーが既に存在する場合は、送信はエラーになり失敗します。名前フィールドの横に表示されるエラー ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) アイコンの上にマウスポインターを置くと、エラーメッセージを見ることができます。
+
+作成されたフォルダーを選択してフォルダー内に移動し、フォルダー内でアセットまたはフォルダーを作成できます。さらに、フォルダーを選択し、ダウンロードのキューに入れるか、削除するか、名前を編集するかを選択できます。
+
+### 1 つ以上のアセットのコピーを作成 {#create-copies-of-one-or-more-assets-or-letters}
+
+既存のアセットを使用して、類似のプロパティ、コンテンツおよび継承されたアセットを持つアセットをすばやく作成できます。
+
+アセットのコピーを作成するには：
+
+1. [!DNL Experience Manager Forms] インスタンスにログインします。
+1. 関連するアセット ページで、1 つ以上のアセットを選択します。 UI に「」と表示されます **[!UICONTROL コピー]** アイコン。
+1. を選択 **[!UICONTROL コピー]**. UI に「」と表示されます ![貼り付けアイコン](/help/forms/assets/Smock_Paste_18_N.svg) アイコン。
+
+   ![アセットをコピー](/help/forms/assets/copy-asset.png)
+
+   レターを貼り付ける前に、フォルダー内に移動することもできます。複数のフォルダーに同じ名前のアセットを保管することができます。 フォルダーについて詳しくは、[フォルダーとアセットの整理](#folders-and-organizing-assets)を参照してください。
+1. を選択 **[!UICONTROL ペースト]**.
+
+   ![アセットをペースト](/help/forms/assets/paste-asset.png)
+
+1. この **[!UICONTROL ペースト]** ダイアログが表示されます。 アセットの新しいコピーに自動的に名前とタイトルが生成されますが、アセットのタイトルと名前は編集できます。
+
+   同じ場所にアセットをコピーして貼り付けると、の既存の名前に「– CopyXX」というサフィックスが追加されます `asset`. コピーしたアセットにタイトルが存在しない場合、自動生成されたタイトル フィールドは空白のままになります。
+
+   ![新しい場所にアセットを貼り付け](/help/forms/assets/paste-click-asset.png)
+
+   必要に応じて、 **[!UICONTROL タイトル]** を選択して、アセットのコピーを保存します。 この **[!UICONTROL 名前]** を入力すると、が自動的に設定されます **[!UICONTROL タイトル]**.
+1. を選択 **[!UICONTROL ペースト]**. コピーされたアセットの新しいコピーが作成されます。
+
+## 検索 {#search-forms}
+
+アセットが多数ある場合、適切なアセットの検索には時間がかかります。 アセットページ上で特定のアセットのテキストベースの検索を実行できます。
+
+アセットを検索するには：
+
+1. [!DNL Experience Manager Forms] インスタンスにログインします。
+1. 「」をクリックします ![検索アイコン](assets/folder-search-icon.svg) 検索アイコン。
+
+   ![検索フォーム](/help/forms/assets/search-form.png)
+
+1. 検索バーで、検索するアセットの名前を入力します。
+
+1. 関連アセットのリストが表示されます。 表示されたアセット リストから目的のアセットを選択します。
+
+   ![アセット検索](/help/forms/assets/search-bar.png)
+
+検索の使用の詳細と手順については、を参照してください。 [検索](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja).
+
+<!--
+## Export or create a package {#export-a-workflow-application}
+
+You can use packages to install new content, install new functionality, transfer content between instances, and back up content.
+To export or create a package:
+
+1. Log in to your [!DNL Experience Manager Forms] instance.
+1. Navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Packages]**.
+
+   ![Package Manager](/help/forms/assets/package-manager.png)
+
+1. Click **[!UICONTROL Create Package]**.
+
+   ![Create package](/help/forms/assets/create-package.png)   
+   
+   When **[!UICONTROL Create Package]** is clicked, the **[!UICONTROL New Package]** dialog box appears.
+1. Specify the package name, version, and group for the package. 
+   
+   ![New package](/help/forms/assets/new-package.png)  
+
+   * **Package Name** - Select a descriptive name to help you identify the contents of the package.
+
+   * **Version** - It is a textual field to indicate a version. This is appended to the package name to form the name of the zip file.
+
+   * **Group** - This is the target group (or folder) name. Groups help you organize your packages. A folder is created for the group if it does not already exist. If you leave the group name blank, it creates the package in the main package list.
+
+1. Click **[!UICONTROL OK]**.
+
+   Once the package is created, it appears at the top of the list of packages.
+
+1. Click **[!UICONTROL Edit]**.
+   
+   ![Edit Package](/help/forms/assets/edit-package.png)
+    
+1. Open the **[!UICONTROL Filters]** tab.
+   
+   ![Open filter tab](/help/forms/assets/add-filter-package.png)
+   
+1.  Click **[!UICONTROL Add Filter]**. 
+   
+      ![Add filter](/help/forms/assets/add-filter.png)
+
+      You can specify the path of the package. You can also add rules and other validations for the package.
+
+      ![Add path](/help/forms/assets/add-path.png)
+
+1. Click **[!UICONTROL Save]** after you are finished editing the settings.
+1. Click **[!UICONTROL Build]** to create the package.
+    
+     ![Build path](/help/forms/assets/build-package.png)
+
+   After the package is built, you can download the package and import it to the other server. The workflow application appears on the server where the package is uploaded.
+
+   >[!NOTE]
+   >
+   >For the workflow application to work properly, also export the corresponding Adaptive Form and workflow model with the work application.
+
+   Once a package is uploaded to AEM, you can modify its settings. You can also download or delete the package.
+
+## Import and export assets in Correspondence Management {#import-and-export-assets-in-correspondence-management}
 
 To share assets, such as data dictionaries, letters, and document fragments, between two different implementations of Correspondence Management, you can create and share .cmp files. A .cmp file can include one or more data dictionaries, letters, document fragments, and forms.
 
@@ -146,86 +313,6 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
    >
    >For you to be able to upload XDPs (as part of the cmp file or otherwise), you need to be a part of forms-power-users group. For access rights, contact the administrator. -->
 
-## ワークフローアプリケーションの書き出し {#export-a-workflow-application}
+## 関連トピック {#see-also}
 
-パッケージマネージャーを使用して、ワークフローアプリケーションを書き出すことができます。手順を以下に示します。
-
-1. [!DNL AEM Forms] パッケージマネージャーを開きます。パッケージマネージャーの URL は `https://[server]:[port]/crx/packmgr` です。
-1. 「**[!UICONTROL パッケージを作成]**」をクリックします。**[!UICONTROL 新規パッケージ]**&#x200B;ダイアログボックスが表示されます。
-1. パッケージの名前、バージョン、グループを指定します。「**[!UICONTROL OK]**」をクリックします。
-1. 「**[!UICONTROL 編集]**」をクリックし、「**[!UICONTROL フィルター]**」タブを開きます。「**[!UICONTROL フィルターを追加]**」をクリックします。ワークフローアプリケーションのパスを指定します。例えば、/etc/fd/dashboard/startpoints/homemortgage などです。「**[!UICONTROL ルールを追加]**」をクリックします。
-
-1. 「**[!UICONTROL 詳細]**」タブを開きます。ACL Handling フィールドで、「**[!UICONTROL 結合]**」または「**[!UICONTROL 上書き]**」を選択します。「**[!UICONTROL 保存]**」をクリックします。
-1. 「**[!UICONTROL ビルド]**」をクリックし、パッケージを作成します。
-
-   パッケージが作成されたら、パッケージをダウンロードして別のサーバーに読み込むことができます。パッケージがアップロードされるサーバーにワークフローアプリケーションが表示されます。
-
-   >[!NOTE]
-   >
-   >ワークフローアプリケーションを正しく動作させるために、作業アプリケーションを使用して対応するアダプティブフォームとワークフローモデルも書き出します。
-
-## フォルダーを使用した、アダプティブフォーム、PDF forms および関連アセットの整理  {#folders-and-organizing-assets}
-
-フォルダーを使用して、アセットのアレンジや整理を行うことができます。フォルダー内でドキュメントおよびアセットを整理すると、ファイルをグループ化して容易に管理できます。フォルダーを選択し、ダウンロードするか削除するかを選択します。フォルダーを作成するには、以下の手順を実行します。
-
-### フォルダーの作成 {#create-a-folder}
-
-1. [!DNL AEM Forms] インスタンスにログインします。
-1. 「Experience Manager」![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン／「ナビゲーション」![コンパス](assets/Smock_Compass_18_N.svg) アイコン／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
-1. **[!UICONTROL 作成]**／**[!UICONTROL フォルダー]**&#x200B;を選択します。
-1. 以下の詳細を入力します。
-
-   * **[!UICONTROL タイトル]**：フォルダーの表示名
-   * **[!UICONTROL 名前]**：*（必須）*&#x200B;リポジトリー内のフォルダーを保存するノード名
-
-   >[!NOTE]
-   >
-   >デフォルトでは、名前フィールドの値は、タイトルから自動入力されます。名前には、英数字、ハイフン（-）、下線（_）のみを含めることができます。タイトルにその他の特殊文字を入力すると、それらは自動的にハイフンに置換され、この新しい名前を確認するよう指示されます。提示された名前をそのまま使用するか、またはそれを編集できます。
-
-1. 定義したタイトルを持つ新しいフォルダーは、アセットリスト内の現在の場所に表示されます。
-
-   指定した名前を持つフォルダーが既に存在する場合は、送信はエラーになり失敗します。名前フィールドの横に表示されるエラー ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) アイコンの上にマウスポインターを置くと、エラーメッセージを見ることができます。
-
-   作成されたフォルダーを選択してフォルダー内に移動し、フォルダー内でアセットまたはフォルダーを作成できます。さらに、フォルダーを選択し、ダウンロード、削除、名前の編集用にそのフォルダーをキューに入れることができます。
-
-
-<!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
-
-You can use an existing assets to quickly create an asset with similar properties, content, and inherited assets.
-
-Complete the following steps to create copies of assets and letters:
-
-1. On the relevant assets page, select one or more assets. The UI displays the Copy icon.
-1. Select **[!UICONTROL Copy]**. The UI displays the **[!UICONTROL Paste]** icon. You can also choose to go/navigate inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](#folders-and-organizing-assets).
-1. Select **[!UICONTROL Paste]**. The **[!UICONTROL Paste]** dialog appears. The system auto generates names and titles to the new copies of assets/letters, but you can edit the titles and names of the assets/letters.
-
-   If you are copying and pasting the assets/letters at the same place, a suffix "-CopyXX" gets added to the existing name of the asset/letter. If no title existed for the copied asset/letter, the auto generated title field remains blank.
-
-1. If necessary, edit the Title and Name with which you want to save the copy of the asset/letter.
-1. Select **[!UICONTROL Paste]**. New copies of the copied assets are created.
-
-## Search {#search-forms}
-
-You ca use the top bar **[A]** to search your content. When you search for assets, a side panel is displayed. You can also select ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
-
-![search_topbar](assets/search_topbar.png)
-
-**A.** Search **B.** Filter
-
-![Side panel - Filters](assets/search_sidepanel.png)
-
-Side panel - Filters
-
-On the side panel, you can use the following to narrow down your search results:
-
-* Search Directory
-* Tags
-* Search Criteria; for example, Modified Dates, Publish Status, LiveCopy Status.
-
-The side panel also lets you save your search settings with names of your choice.
-
-For more information and instructions on using search, filters, saved search, and side panel, see [Search](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html). -->
-
->[!MORELIKETHIS]
->
->* [アダプティブフォームのコアコンポーネントでのテーマの使用](/help/forms/using-themes-in-core-components.md)
+{{see-also}}
