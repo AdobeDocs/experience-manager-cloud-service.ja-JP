@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: の最新のリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 29da5119403d47502fe4dc1d2a5c728aa0828b0e
+source-git-commit: 8581ff75a68c045ccfbb6a525c1e08a6ee253d52
 workflow-type: tm+mt
-source-wordcount: '1958'
-ht-degree: 44%
+source-wordcount: '1957'
+ht-degree: 45%
 
 ---
 
@@ -46,7 +46,7 @@ Have a look at the June 2024 Release Overview video for a summary of the feature
 
 **RUM （Real Use Monitoring）データ・サービス** {#real-use-monitoring}
 
-この [RUM （Real Use Monitoring）データ・サービス](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/shwetad-patch-1/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service) が一般入手可能になり、AEM as a Cloud Serviceのクライアントサイドのデータ収集が可能になりました。 このサービスは、ユーザーのインタラクションをより正確に反映し、web サイトエンゲージメントの信頼性の高い尺度を確保します。 ページトラフィックとパフォーマンスに関する高度なインサイトを顧客に提供し、ページのパフォーマンスを理解して強化する貴重な機会を提供します。
+Real Use Monitoring （RUM）データサービスが一般入手可能になり、AEM as a Cloud Serviceのクライアントサイドのデータ収集が可能になりました。 このサービスは、ユーザーのインタラクションをより正確に反映し、web サイトエンゲージメントの信頼性の高い尺度を確保します。 ページトラフィックとパフォーマンスに関する高度なインサイトを顧客に提供し、ページのパフォーマンスを理解して強化する貴重な機会を提供します。
 
 ### 早期導入プログラム {#sites-early-adopter}
 
@@ -198,7 +198,7 @@ Forms サービスでは、データキャプチャ用のインタラクティ�
 
 #### CDN での基本認証（早期導入プログラム） {#basicauth-cdn}
 
-ユーザー名とパスワードを必要とする基本認証ダイアログをポップアップすることで、特定のコンテンツリソースをProtectします。 この機能は、エンドユーザーのアクセス権に対する包括的なソリューションとしてではなく、主にビジネス関係者がコンテンツをレビューするような、認証の軽いユースケースを対象としています。 秘密鍵タイプのCloud Manager環境変数への参照を使用して、設定パイプラインを介してデプロイされた Git の設定ファイルを通じて管理されるのユーザー名とパスワードのリスト。 [詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth)。
+ユーザー名とパスワードの入力を求める基本認証ダイアログを表示して、特定のコンテンツリソースを保護します。この機能は、エンドユーザーのアクセス権に対する包括的なソリューションとしてではなく、主にビジネス関係者がコンテンツをレビューするような、認証の軽いユースケースを対象としています。 秘密鍵タイプのCloud Manager環境変数への参照を使用して、設定パイプラインを介してデプロイされた Git の設定ファイルを通じて管理されるのユーザー名とパスワードのリスト。 [詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth)。
 
 #### セルフサービス API キーを使用して CDN でコンテンツをパージする（早期導入プログラム） {#purge-cdn}
 
