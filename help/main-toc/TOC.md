@@ -182,9 +182,9 @@ ht-degree: 99%
    + Workfront for Experience Manager 拡張コネクタのリリースノート{#workfront}
       + [Workfront for Experience Manager 拡張コネクタの最新リリースノート](/help/assets/release-notes-enhanced-connector-workfront.md)
    + 「バリエーションを生成」のリリースノート {#generate-variations}
-      + [バリエーションを生成するための最新のリリースノート](/help/generative-ai/release-notes-generate-variations.md)
+      + [バリエーションを生成の最新リリースノート](/help/generative-ai/release-notes-generate-variations.md)
    + ユニバーサルエディターのリリースノート {#univeral-editor}
-      + [ユニバーサルエディターの最新のリリースノート](/help/release-notes/universal-editor/current.md)
+      + [ユニバーサルエディターの最新リリースノート](/help/release-notes/universal-editor/current.md)
    + [新機能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service の主要な変更点](/help/release-notes/aem-cloud-changes.md)
    + [非推奨（廃止予定）および削除された機能と API](/help/release-notes/deprecated-removed-features.md)
@@ -292,7 +292,7 @@ ht-degree: 99%
       + [オーサリングとパブリッシング](/help/sites-cloud/authoring/author-publish.md)
       + [オーサリング方法](/help/sites-cloud/authoring/authoring-methods.md)
       + [検索](/help/sites-cloud/authoring/search.md)
-      + [アカウント環境の設定 ](/help/sites-cloud/authoring/account-environment.md)
+      + [アカウント環境の設定](/help/sites-cloud/authoring/account-environment.md)
       + [インボックス](/help/sites-cloud/authoring/inbox.md)
       + [コンポーネントコンソール](/help/sites-cloud/authoring/components-console.md)
       + [パスの選択](/help/sites-cloud/authoring/path-selection.md)
@@ -343,12 +343,12 @@ ht-degree: 99%
          + [ローンチの操作](/help/sites-cloud/authoring/launches/overview.md)
          + [ローンチの作成](/help/sites-cloud/authoring/launches/creating.md)
          + [ローンチでのページの管理](/help/sites-cloud/authoring/launches/managing-pages.md)
-         + [ローンチの編集 ](/help/sites-cloud/authoring/launches/editing.md)
+         + [ローンチの編集](/help/sites-cloud/authoring/launches/editing.md)
          + [タイムワープでのローンチのプレビュー](/help/sites-cloud/authoring/launches/preview.md)
          + [ローンチの昇格](/help/sites-cloud/authoring/launches/promoting.md)
       + ワークフロー {#workflows}
          + [ワークフローの操作](/help/sites-cloud/authoring/workflows/overview.md)
-         + [ページへのワークフローの適用 ](/help/sites-cloud/authoring/workflows/applying.md)
+         + [ページへのワークフローの適用](/help/sites-cloud/authoring/workflows/applying.md)
          + [ワークフローへの参加](/help/sites-cloud/authoring/workflows/participating.md)
       + パーソナライズ機能 {#personalization}
          + [パーソナライズ機能の概要](/help/sites-cloud/authoring/personalization/overview.md)
@@ -427,7 +427,7 @@ ht-degree: 99%
       + [Adobe Learning Manager との統合](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
-      + [Adobe Target へのエクスペリエンスフラグメントの書き出し ](/help/sites-cloud/integrating/experience-fragments-target.md)
+      + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
    + [AEM as a Cloud Service の実際の使用のモニタリング](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
 + アセット {#assets}
@@ -453,7 +453,7 @@ ht-degree: 99%
       + [ビデオアセットのスマートタグ](/help/assets/smart-tags-video-assets.md)
       + [アセットの整理方法](/help/assets/organize-assets.md)
       + [ [!DNL Adobe Stock] アセットを使用する](/help/assets/aem-assets-adobe-stock.md)
-      + [コレクションを管理](/help/assets/manage-collections.md)
+      + [コレクションの管理](/help/assets/manage-collections.md)
       + [メタデータの概要](/help/assets/manage-metadata.md)
       + [ [!DNL Adobe Creative Cloud] との統合](/help/assets/aem-cc-integration-best-practices.md)
       + [メタデータの追加と編集](/help/assets/meta-edit.md)
@@ -574,7 +574,7 @@ ht-degree: 99%
          + [カスタムドメインの設定](/help/assets/configure-custom-domain.md)
    + アセットビューの操作 {#assets-view}
       + [はじめに](/help/assets/assets-view-introduction.md)
-      + [概要](/help/assets/get-started-assets-view.md)
+      + [はじめに](/help/assets/get-started-assets-view.md)
       + [マイワークスペース](/help/assets/my-workspace-assets-view.md)
       + [サポートされているファイルタイプとユースケース](/help/assets/supported-file-formats-assets-view.md)
       + [アセットの表示](/help/assets/navigate-assets-view.md)
@@ -593,7 +593,7 @@ ht-degree: 99%
       + [タグを管理](/help/assets/tagging-management-assets-view.md)
       + [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
 
-   + Content Hub {#content-hub}
+   + コンテンツハブ {#content-hub}
       + [概要](/help/assets/product-overview.md)
       + [コンテンツハブのデプロイ](/help/assets/deploy-content-hub.md)
       + [コンテンツハブユーザーインターフェイスの設定](/help/assets/configure-content-hub-ui-options.md)
@@ -844,7 +844,7 @@ ht-degree: 99%
          + [CIF コンポーネントのスタイル設定](/help/commerce-cloud/customizing/style-cif-component.md)
          + [CIF コンポーネントのカスタマイズ](/help/commerce-cloud/customizing/customize-cif-components.md)
          + [CIF カタログピッカーの使用](/help/commerce-cloud/customizing/use-cif-pickers.md)
-         + [CIF Product Carousel のカスタム属性](/help/commerce-cloud/customizing/product-carousel.md)
+         + [特例文字 属性から CIF への製品カルーセル](/help/commerce-cloud/customizing/product-carousel.md)
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [移行](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
