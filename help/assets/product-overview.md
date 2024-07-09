@@ -1,10 +1,10 @@
 ---
 title: Content Hubの概要
 description: Content Hubの詳細、主なメリット、アクセス方法、Content Hubで利用できるオプションに関するフィードバックの提供方法について説明します。
-source-git-commit: b29641286919b5becc3982400ea160836531fdc5
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
 source-wordcount: '660'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ![Content Hubの概要](assets/content-hub-overview.png)
 
-Content Hubは、組織やビジネスパートナーがオンブランドのコンテンツにアクセスしやすくするために、Experience Manager Assetsas a Cloud Serviceの一部として利用できます。 大規模なアクティベーション用のアセットの配布と、マーケティングの俊敏性を向上させるためのオンブランドコンテンツバリアントの作成に重点を置いています。
+コンテンツハブは、Experience Manager Assets as a Cloud Service の一部として使用でき、組織とそのビジネスパートナーがオンブランドのコンテンツに簡単にアクセスできます。大規模なアクティベーション用のアセットの配布と、マーケティングの俊敏性を向上させるためのオンブランドコンテンツバリアントの作成に重点を置いています。
 
 ## Content Hubを選ぶ理由
 
@@ -41,7 +41,7 @@ Content Hubには、Experience Manageras a Cloud Serviceの 2024.6 リリース�
 
 ## Content Hubへのアクセス方法 {#access-content-hub}
 
-[Content Hubの設定後](#deploy-content-hub) およびユーザーの「」への追加 [Content Hub製品プロファイル](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)の場合、Content Hubには次の方法でアクセスできます。
+[Content Hubの設定後](/help/assets/deploy-content-hub.md) およびユーザーの「」への追加 [Content Hub製品プロファイル](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)の場合、Content Hubには次の方法でアクセスできます。
 
 * 次のリンクを使用してContent Hubにアクセスします。
 
@@ -89,7 +89,7 @@ Content Hubには、Experience Manageras a Cloud Serviceの 2024.6 リリース�
 <table>
 <td>
    <a href="/help/assets/configure-content-hub-ui-options.md">
-   <img alt="Content Hubのデプロイ" src="./assets/configure-assets.png" />
+   <img alt="コンテンツハブのデプロイ" src="./assets/configure-assets.png" />
    </a>
    <div>
       <a href="/help/assets/configure-content-hub-ui-options.md">
@@ -145,7 +145,7 @@ Content Hubには、Experience Manageras a Cloud Serviceの 2024.6 リリース�
 </td>
 <td>
    <a href="/help/assets/collections-content-hub.md">
-   <img alt="Content Hubでのコレクションの管理" src="./assets/manage-collection.png" />
+   <img alt="コンテンツハブでのコレクションの管理" src="./assets/manage-collection.png" />
    </a>
    <div>
       <a href="/help/assets/collections-content-hub.md">

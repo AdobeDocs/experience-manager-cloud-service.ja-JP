@@ -2,15 +2,15 @@
 title: デプロイ [!DNL Content Hub]
 description: Content Hubをデプロイしてアクティブ化し、様々なタイプの権限（アセットのアップロード、ユーザーのAdobe Express）を持つユーザーにアクセスを提供する方法と、ユーザーに管理者権限を提供する方法について説明します。
 role: Admin
-source-git-commit: 0d340508823be6a2c6c2beb28c17ddfb2bf6b790
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1316'
 ht-degree: 3%
 
 ---
 
 
-# Content Hubのデプロイ {#deploy-content-hub}
+# コンテンツハブのデプロイ {#deploy-content-hub}
 
 ![Content Hubのデプロイ](assets/deploy-content-hub.png)
 
@@ -46,6 +46,10 @@ Content Hub ポータルにアクセスするには、管理者はまずCloud Ma
 
 1. を展開 **[!UICONTROL Assets]** を選択して、 **[!UICONTROL Content Hub]**.
    ![Cloud ManagerでContent Hubを選択します。](assets/edit-program-cloud-manager-content-hub.png)
+
+   >[!NOTE]
+   >
+   >次の場合 **[!UICONTROL 更新]** は有効になっていません。Content Hubを選択した後、プログラムの運用開始設定を指定したことを確認してください。
 
 1. 「**[!UICONTROL 更新]**」をクリックします。
 
@@ -111,9 +115,19 @@ Content Hub ユーザーをオンボーディングするには：
 >
 >外部 ID プロバイダーとの同期など、高度なエンタープライズ機能をすべて使用できます。
 
-Admin Consoleを使用して適切なユーザーを追加した後、次のリンクを使用してContent Hubにアクセスできます。
+### Content Hubへのアクセス方法 {#access-content-hub}
 
-`https://experience.adobe.com/#/assets/contenthub`
+Content Hubには、次の方法でアクセスできます。
+
+* 次のリンクを使用してContent Hubにアクセスします。
+
+  `https://experience.adobe.com/#/assets/contenthub`
+
+* へのログオン `experience.adobe com` をクリックして、 **[!UICONTROL Experience Manager AssetsContent Hub]** で利用可能 **[!UICONTROL クイックアクセス]** セクション：
+  ![Content Hubへのアクセス](assets/access-content-hub.png)
+
+* へのログオン `experience.adobe com` をクリックして、 **[!UICONTROL Experience Manager AssetsContent Hub]** 製品スイッチャーで使用できます。
+  ![Content Hub アクセス方法 3](assets/access-content-hub-alternate.png)
 
 ### ユーザーへのメール通知を無効にする {#disable-email-notifications}
 

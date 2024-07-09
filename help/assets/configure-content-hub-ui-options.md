@@ -1,14 +1,14 @@
 ---
-title: Content Hub ユーザーインターフェイスの設定
-description: Content Hub ユーザーインターフェイスの設定
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+title: コンテンツハブユーザーインターフェイスの設定
+description: コンテンツハブユーザーインターフェイスの設定
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 6%
+source-wordcount: '1119'
+ht-degree: 7%
 
 ---
 
-# Content Hub ユーザーインターフェイスの設定 {#configure-content-hub-user-interface}
+# コンテンツハブユーザーインターフェイスの設定 {#configure-content-hub-user-interface}
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Content Hubでのアセットの設定](assets/configure-assets.png)
@@ -97,6 +97,10 @@ Content Hubでは、管理者がアセットの検索時に表示するフィル
 1. クリック **[!UICONTROL 確認]**. 新しいフィルターが既存のフィルターのリストに表示されます。
 
 1. クリック **[!UICONTROL 保存]** アセットのフィルタリング時に新しいフィルターが検索ページに表示されるように変更を適用します。
+
+   >[!NOTE]
+   >
+   >新しいフィルターは、フィルター条件に一致するアセットがリポジトリー内に最後に 1 つ存在する場合にのみ、検索ページに表示されます。
 
 同様に、 ![編集アイコン](assets/do-not-localize/edit_icon.svg)使用可能な各フィルターの横にあるを使用して、ラベルを編集するか、削除アイコンをクリックして既存のフィルターを削除できます。 クリック **[!UICONTROL 保存]** すべての変更を加えて変更を適用した後。
 
