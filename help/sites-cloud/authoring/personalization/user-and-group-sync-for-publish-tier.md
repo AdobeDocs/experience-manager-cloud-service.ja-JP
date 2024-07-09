@@ -5,10 +5,10 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
-source-wordcount: '1132'
-ht-degree: 100%
+source-git-commit: 54159c25b60277268ade16b437891f268873fecf
+workflow-type: tm+mt
+source-wordcount: '1340'
+ht-degree: 74%
 
 ---
 
@@ -23,10 +23,6 @@ Web アプリケーションは、多くの場合、Web サイトへの登録用
 * ユーザープロファイルデータの保存
 * グループメンバーシップ
 * データ同期
-
->[!IMPORTANT]
->
->この記事で説明する機能を動作させるには、ユーザーデータ同期機能を有効にする必要があります。これには、現時点では、適切なプログラムと環境を示してカスタマーサポートにリクエストする必要があります。有効でない場合、ユーザー情報は短期間（1 ～ 24 時間）のみ保持されてから消去されます。
 
 ## 登録 {#registration}
 
@@ -44,6 +40,10 @@ Web アプリケーションは、多くの場合、Web サイトへの登録用
    1. UserManager API の `createUser()` メソッドの 1 つを使用して、ユーザーレコードを作成します。
    1. Authorizable インターフェイスの `setProperty()` メソッドを使用して、キャプチャされたプロファイルデータを永続化します。
 1. ユーザーにメールの検証を求めるなどの、オプションのフロー。
+
+**前提条件：**
+
+上記のロジックを正しく機能させるには、以下を有効にしてください： [データ同期](#data-synchronization-data-synchronization) 適切なプログラムと環境を示すリクエストをカスタマーサポートに送信する。
 
 ### 外部 web アプリケーション {#external-managed-registration}
 
@@ -63,6 +63,10 @@ Web アプリケーションは、多くの場合、Web サイトへの登録用
 
 * [Sling 認証フレームワーク](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)
 * あるいは、[AEM コミュニティエキスパートセッション](https://bit.ly/ATACEFeb15)にログインについて質問してみてください。
+
+**前提条件：**
+
+上記のロジックを正しく機能させるには、以下を有効にしてください： [データ同期](#data-synchronization-data-synchronization) 適切なプログラムと環境を示すリクエストをカスタマーサポートに送信する。
 
 ### ID プロバイダーとの統合 {#integration-with-an-idp}
 
@@ -84,9 +88,15 @@ AEM SSO 認証ハンドラーサービスの使用について詳しくは、[�
 
 `com.adobe.granite.auth.oauth.provider` インターフェイスは、任意の Oauth プロバイダーを使用して実装できます。
 
+**前提条件：**
+
+ベストプラクティスとして、ユーザー固有のデータを保存する際は、常に idP （ID プロバイダー）を唯一の信頼ポイントとして利用します。 追加のユーザー情報が、idP の一部ではないローカルリポジトリに格納されている場合は、を有効にしてください [データ同期](#data-synchronization-data-synchronization) 適切なプログラムと環境を示すリクエストをカスタマーサポートに送信する。 に加えて [データ同期](#data-synchronization-data-synchronization)SAML 認証プロバイダーの場合、次のことを確認します [動的グループメンバーシップ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) が有効になっています。
+
 ### スティッキーセッションとカプセル化されたトークン {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service では cookie ベースのスティッキーセッションが有効になっており、エンドユーザーはリクエストのたびに同じ公開ノードにルーティングされます。パフォーマンスを向上させるために、カプセル化されたトークンの機能がデフォルトで有効になっているので、リポジトリ内のユーザーレコードを各リクエストで参照する必要はありません。エンドユーザーに親和性のある公開ノードが置き換えられた場合、以下のデータ同期のセクションで説明するように、ユーザー ID レコードは新しい公開ノードで使用できます。
+AEM as a Cloud Serviceでは cookie ベースのスティッキーセッションが可能なので、エンドユーザーはリクエストごとに同じパブリッシュノードにルーティングされます。 ユーザートラフィックのスパイクなど、特定のケースでは、カプセル化トークン機能によってパフォーマンスが向上する可能性があるので、リポジトリ内のユーザーレコードを各リクエストで参照する必要はありません。 エンドユーザーがアフィニティを持つパブリッシュノードを置き換えると、の説明に従って、そのユーザー ID レコードを新しいパブリッシュノードで使用できます。 [データ同期](#data-synchronization-data-synchronization) セクションを下にします。
+
+カプセル化されたトークン機能を活用するには、適切なプログラムと環境を示すリクエストをカスタマーサポートに送信してください。 さらに重要なのは、カプセル化されたトークンは、次の条件を満たさないと有効にできないということです。 [データ同期](#data-synchronization-data-synchronization) とを同時に有効にする必要があります。 したがって、有効にする前にユースケースを慎重に確認し、機能が不可欠であることを確認してください。
 
 ## ユーザープロファイル {#user-profile}
 
@@ -99,11 +109,19 @@ AEM as a Cloud Service では cookie ベースのスティッキーセッショ�
 * サーバーサイドで `com.adobe.granite.security.user` インターフェイスを使用。UserPropertiesManager インターフェイスにより、`/home/users` のユーザーのノードの下にデータが配置されます。ユーザーごとに一意のページが、キャッシュされていないことを確認します。
 * [ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=ja#personalization)に説明されているように、クライアントサイドで ContextHub を使用。
 
+**前提条件：**
+
+サーバーサイドのユーザープロファイルの永続性ロジックが正しく機能するには、を有効にしてください。 [データ同期](#data-synchronization-data-synchronization) 適切なプログラムと環境を示すリクエストをカスタマーサポートに送信する。
+
 ### サードパーティのデータストア {#third-party-data-stores}
 
 エンドユーザーデータは、CRM などのサードパーティベンダーに送信し、ユーザーが AEM にログインする時に API を介して取得できます。また、AEM ユーザーのプロファイルノードで保持（または更新）され、必要に応じて AEM で使用できます。
 
 サードパーティのサービスにリアルタイムでアクセスしてプロファイル属性を取得することはできますが、これが実質的に AEM のリクエスト処理に影響を与えないようにすることが重要です。
+
+**前提条件：**
+
+上記のロジックを正しく機能させるには、以下を有効にしてください： [データ同期](#data-synchronization-data-synchronization) 適切なプログラムと環境を示すリクエストをカスタマーサポートに送信する。
 
 ## 権限（クローズドユーザーグループ） {#permissions-closed-user-groups}
 
@@ -123,6 +141,10 @@ Web サイトのエンドユーザーは、別のブラウザーを使用して�
 >[!NOTE]
 >
 >デフォルトでは、ユーザープロファイルとグループメンバーシップの同期は有効になっていないので、データはパブリッシュ層に同期されず、永続的に保持されることもありません。この機能を有効にするには、適切なプログラムと環境を示してカスタマーサポートにリクエストする必要があります。
+
+>[!IMPORTANT]
+>
+>実稼動環境でデータ同期を有効にする前に、実装を大規模にテストします。 ユースケースと永続化されたデータによっては、一貫性と待ち時間に関する問題が発生する可能性があります。
 
 ## キャッシュに関する考慮事項 {#cache-considerations}
 
