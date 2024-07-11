@@ -7,9 +7,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service の仕組み
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 4e272fe63ccdc920c58ada780a2087bba1bfcb1f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5149'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -844,7 +844,7 @@ ht-degree: 99%
          + [CIF コンポーネントのスタイル設定](/help/commerce-cloud/customizing/style-cif-component.md)
          + [CIF コンポーネントのカスタマイズ](/help/commerce-cloud/customizing/customize-cif-components.md)
          + [CIF カタログピッカーの使用](/help/commerce-cloud/customizing/use-cif-pickers.md)
-         + [特例文字 属性から CIF への製品カルーセル](/help/commerce-cloud/customizing/product-carousel.md)
+         + [CIF 製品カルーセルに対するカスタム属性](/help/commerce-cloud/customizing/product-carousel.md)
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [移行](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)

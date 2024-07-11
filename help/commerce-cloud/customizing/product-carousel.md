@@ -1,36 +1,36 @@
 ---
-title: CIF Product Carousel のカスタム属性
-description: Sling モデルを更新し、マークアップをカスタマイズして、AEM CIF Product Carousel コンポーネントを拡張する方法を説明します。
+title: CIF 製品カルーセルに対するカスタム属性
+description: Sling モデルを更新し、マークアップをカスタマイズして、AEM CIF 製品カルーセルコンポーネントを拡張する方法について説明します。
 feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 594f0e6ec88851c86134be8d5d7f1719f74ddf4f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '316'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# CIF Product Carousel のカスタム属性 {#product-carousel}
+# CIF 製品カルーセルに対するカスタム属性 {#product-carousel}
 
 ## はじめに {#intro}
 
-製品カルーセルコンポーネントは、このチュートリアル全体を通して拡張されています。 最初の手順として、製品カルーセルのインスタンスをホームページに追加して、ベースライン機能を理解します。
+このチュートリアルでは、全体を通じて、製品カルーセルコンポーネントの拡張を行います。最初の手順として、製品カルーセルのインスタンスをホームページに追加し、ベースライン機能を理解します。
 
-1. サイトのホームページ（例：）に移動します。 [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
-1. 新しい製品カルーセルコンポーネントをページのメインのレイアウトコンテナに挿入します。
+1. サイトのホームページ（例：[http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)）に移動します。
+1. ページのメインレイアウトコンテナに新しい製品カルーセルコンポーネントを挿入します。
    ![製品カルーセルコンポーネント](/help/commerce-cloud/assets/product-carousel-component.png)
-1. サイドパネルを展開し（まだ切り替えていない場合）、アセットファインダードロップダウンをに切り替えます。 **製品**.
-     ![カルーセル製品](/help/commerce-cloud/assets/carousel-products.png)    
-1. 接続されたAdobe Commerce インスタンスから使用可能な製品のリストが表示されます。
-   ![接続されたインスタンス](/help/commerce-cloud/assets/connected-instance.png)
-1. 製品は、デフォルトのプロパティを使用して以下のように表示されます。
-   ![プロパティと共に表示される製品](/help/commerce-cloud/assets/discount.png)
+1. サイドパネルを展開し（まだ切り替えていない場合）、アセットファインダードロップダウンを&#x200B;**製品**に切り替えます。
+     ![カルーセル製品](/help/commerce-cloud/assets/carousel-products.png)    
+1. 接続された Adobe Commerce インスタンスから使用可能な製品のリストが表示されます。
+   ![接続済みインスタンス](/help/commerce-cloud/assets/connected-instance.png)
+1. 製品は、以下のようにデフォルトのプロパティで表示されます。
+   ![プロパティで表示される製品](/help/commerce-cloud/assets/discount.png)
 
-## Sling モデルを更新する {#update-sling-model}
+## Sling モデルの更新 {#update-sling-model}
 
 Sling モデルを実装して、製品カルーセルのビジネスロジックを拡張できます。
 
-1. IDE で、コア モジュールの下に移動して、次の操作を行います。 `core/src/main/java/com/venia/core/models/commerce` さらに、CIF ProductCarousel インターフェイスを拡張する CustomCarousel インターフェイスを作成します。
+1. IDE で、コアモジュールの下にある `core/src/main/java/com/venia/core/models/commerce` に移動し、CIF ProductCarousel インターフェイスを拡張する CustomCarousel インターフェイスを作成します。
 
    ```
    package com.venia.core.models.commerce;
@@ -38,8 +38,8 @@ Sling モデルを実装して、製品カルーセルのビジネスロジッ�
    public interface CustomCarousel extends ProductCarousel {
    }
    ```
-1. 次に、実装クラスを作成します `CustomCarouselImpl.java` 時刻 `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`.
-Sling モデルの委任パターンでは、次のことが可能です `CustomCarouselImpl` 参照 `ProductCarousel` を使用したモデル `sling:resourceSuperType` プロパティ：
+1. 次に、`core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java` に実装クラス `CustomCarouselImpl.java` を作成します。
+Sling モデルのデリゲーションパターンを使用すると、`CustomCarouselImpl` は `sling:resourceSuperType` プロパティを介して `ProductCarousel` モデルを参照できます。
 
    ```
    @Self
@@ -47,7 +47,7 @@ Sling モデルの委任パターンでは、次のことが可能です `Custom
    private ProductCarousel productCarousel;
    ```
 
-1. @PostConstruct 注釈により、Sling モデルの初期化時にこのメソッドが確実に呼び出されます。 製品GraphQL クエリは、属性を取得するために extendProductQueryWith メソッドを使用して既に拡張されています。 GraphQL クエリを更新して、部分的なクエリに属性を含めます。
+1. @PostConstruct 注釈により、Sling モデルが初期化されるとこのメソッドが呼び出されます。製品の GraphQL クエリは、属性を取得するために extendProductQueryWith メソッドを使用して既に拡張されています。GraphQL クエリを更新して、属性を部分クエリに含めます。
 
    ```
    @PostConstruct
@@ -62,15 +62,15 @@ Sling モデルの委任パターンでは、次のことが可能です `Custom
    }
    ```
 
-   上記のコードでは、 `addCustomSimpleField` は、を取得するために使用されます。 `accessory_gemstone_addon` 属性。
+   上記のコードでは、`accessory_gemstone_addon` 属性を取得するために `addCustomSimpleField` が使用されます。
 
-## マークアップのカスタマイズ {#customize-markup}
+## マークアップのカスタマイズ{#customize-markup}
 
 マークアップをさらにカスタマイズするには：
 
-1. のコピーを作成 `productcard.html` から `/apps/core/cif/components/commerce/productcarousel/v1/productcarousel` （コアコンポーネントの crxde パス） ui.apps モジュールへ `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productcarousel/productcard.html`.
+1. `/apps/core/cif/components/commerce/productcarousel/v1/productcarousel`（コアコンポーネントの crxde パス）から ui.apps モジュール `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productcarousel/productcard.html` に `productcard.html` のコピーを作成します。
 
-1. 編集 `productcard.html` 実装クラスに記載されているカスタム属性を呼び出すには、次の手順を実行します。
+1. `productcard.html` を編集して、実装クラスに記載されているカスタム属性を呼び出します。
 
    ```xml
    ..
@@ -86,4 +86,4 @@ Sling モデルの委任パターンでは、次のことが可能です `Custom
    ..
    ```
 
-1. コマンドラインターミナルから Maven コマンドを使用して、変更を保存し、更新をAEMにデプロイします。 カスタム属性を確認できます `accessory_gemstone_addon` ページで選択した製品の値。
+1. 変更を保存し、コマンドラインターミナルから Maven コマンドを使用して、AEM にアップデートをデプロイします。ページで選択した製品のカスタム属性 `accessory_gemstone_addon` 値を確認できます。

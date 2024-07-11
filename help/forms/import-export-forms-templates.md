@@ -6,9 +6,9 @@ role: Admin, User
 feature: Adaptive Forms
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
 source-git-commit: 6f547bd743932d45e45e0a3c47ff5eb2129cb664
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1073'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -16,46 +16,46 @@ ht-degree: 53%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service | この記事 |
 
 # アダプティブフォームおよび AEM Forms アセットの読み込みと書き出し {#importing-and-exporting-assets-to-aem-forms}
 
-アダプティブFormsと関連アセット（アダプティブフォームテーマ、フォームデータモデル（FDM）、アダプティブフォームテンプレート、フラグメント、PDF formsなど）を、 [!DNL AEM Forms] インスタンス。
+アダプティブフォームと関連アセット（アダプティブフォームテーマ、フォームデータモデル（FDM）、アダプティブフォームテンプレート、フラグメント、PDF forms など）を、[!DNL AEM Forms] インスタンス間で移動できます。
 
-## アダプティブForms、PDF formsまたは関連アセットのダウンロード {#download-forms-amp-documents-assets}
+## アダプティブフォーム、PDF forms または関連アセットのダウンロード {#download-forms-amp-documents-assets}
 
 フォームや関連アセットをダウンロードするには、以下の手順を実行します。
 
 1. [!DNL Experience Manager Forms] インスタンスにログインします。
 1. **[!UICONTROL フォーム]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
 
-   ![Formsを選択](/help/forms/assets/select-forms.png)
+   ![Forms を選択](/help/forms/assets/select-forms.png)
 
-1. アセットを選択し、 **[!UICONTROL Download]** 上部パネルのアイコン
+1. アセットを選択し、上部パネルの&#x200B;**[!UICONTROL ダウンロード]**&#x200B;アイコンをクリックします。
 
-   ![Formsのダウンロード](/help/forms/assets/download-form.png)
+   ![Forms をダウンロード](/help/forms/assets/download-form.png)
 
-   フォームをダウンロードすると、 **[!UICONTROL アセットをダウンロード]** ダイアログボックスが表示されます。
+   フォームをダウンロードすると、**[!UICONTROL アセットをダウンロード]**&#x200B;ダイアログボックスが表示されます。
 
-   ![フォームアセットのダウンロード](/help/forms/assets/download-form-assets.png)
+   ![Forms アセットをダウンロード](/help/forms/assets/download-form-assets.png)
 
 1. 「**[!UICONTROL ダウンロード]**」をクリックします。
 
 選択したアセットはアーカイブ（.zip ファイル）としてダウンロードされます。
 
-## アダプティブForms、PDF formsまたは関連アセットのアップロード {#upload-forms-amp-documents-assets}
+## アダプティブフォーム、PDF forms または関連アセットのアップロード {#upload-forms-amp-documents-assets}
 
 サポートされているアセットタイプを個別にまたは ZIP アーカイブとしてアップロードできます。ZIP ファイルの場合は、サポートされているすべてのアセットの相対パスが表示されます。ZIP 内の未サポートアセットは無視され、一覧には表示されません。ただし、ZIP アーカイブに未サポートアセットのみが含まれている場合は、エラーメッセージが表示され、ポップアップダイアログは表示されません。フォームや関連アセットをアップロードするには、以下の手順を実行します。
 
 1. [!DNL Experience Manager Forms] インスタンスにログインします。
 1. **[!UICONTROL フォーム]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
 
-   ![Formsを選択](/help/forms/assets/select-forms.png)
+   ![Forms を選択](/help/forms/assets/select-forms.png)
 
 1. **[!UICONTROL 作成]**／**[!UICONTROL ファイルのアップロード]**&#x200B;を選択します。ダイアログボックスが表示されます。
 
-   ![Formsのアップロード](/help/forms/assets/form-upload.png)
+   ![Forms をアップロード](/help/forms/assets/form-upload.png)
 
 1. ダイアログボックスで、読み込むパッケージまたはアーカイブを参照し、選択します。サポートされる他のファイルタイプを選択することもできます。「**[!UICONTROL 開く]**」を選択します。選択するフォルダーまたはファイル名に特殊文字を含めないでください。
 
@@ -65,31 +65,31 @@ ht-degree: 53%
 
    >[!NOTE]
    >
-   > 異なるリソースタイプと名前が競合する場合、パッケージをアップロードしても既存のフォルダー階層は置き換えられません。例えば、の場所に「Training」という名前のアダプティブフォームがあるとします `/content/dam/formsanddocuments` 1 台のサーバー上。 アダプティブフォームをダウンロードして、別のサーバーにアップロードできます。 2 台目のサーバーにも、同じ場所に「Training」という名前のフォルダーがあります `/content/dam/formsanddocuments`. アップロードは失敗します。
+   > 異なるリソースタイプと名前が競合する場合、パッケージをアップロードしても既存のフォルダー階層は置き換えられません。例えば、あるサーバーの `/content/dam/formsanddocuments` という場所に「Training」という名前のアダプティブフォームがあるとします。アダプティブフォームをダウンロードして、別のサーバーにフォームをアップロードできます。このアップロード先のサーバーにも、同じ `/content/dam/formsanddocuments` という場所に「Training」という名前のフォルダーがありました。アップロードは失敗します。
 
 ## テーマのダウンロード
 
-他のプロジェクトやインスタンスで使用する [!DNL AEM Forms] のテーマを書き出すことができます。AEMでは、テーマを zip ファイルとしてダウンロードし、それをインスタンスにアップロードできます。
+他のプロジェクトやインスタンスで使用する [!DNL AEM Forms] のテーマを書き出すことができます。AEM では、テーマを zip ファイルとしてダウンロードし、それをインスタンスにアップロードできます。
 テーマをダウンロードするには、以下の手順を実行します。
 
-1. にログイン [!DNL Experience Manager Forms] オーサーインスタンス。
-1. を選択 **[!UICONTROL Forms]** > **[!UICONTROL テーマ]**.
+1. [!DNL Experience Manager Forms] オーサーインスタンスにログインします。
+1. **[!UICONTROL フォーム]**／**[!UICONTROL テーマ]**&#x200B;を選択します。
 
    ![テーマを選択](/help/forms/assets/select-theme.png)
 
-1. テーマページでテーマを選択し、 **[!UICONTROL Download]** 上部パネルのアイコン
+1. テーマページでテーマを選択し、上部パネルの&#x200B;**[!UICONTROL ダウンロード]**&#x200B;アイコンをクリックします。
 
-   ![テーマのダウンロード](/help/forms/assets/download-theme.png)
+   ![テーマをダウンロード](/help/forms/assets/download-theme.png)
 
-   テーマをダウンロードすると、以下が行われます **[!UICONTROL アセットをダウンロード]** ダイアログボックスが表示されます。
+   テーマをダウンロードすると、**[!UICONTROL アセットをダウンロード]**&#x200B;ダイアログボックスが表示されます。
 
-   ![テーマアセットのダウンロード](/help/forms/assets/download-theme-asset.png)
+   ![テーマアセットをダウンロード](/help/forms/assets/download-theme-asset.png)
 
 1. 「**[!UICONTROL ダウンロード]**」をクリックします。
 
 選択したアセットはアーカイブ（.zip ファイル）としてダウンロードされます。
 
-## テーマのアップロード {#uploading-a-theme}
+## テーマをアップロード {#uploading-a-theme}
 
 他のユーザーがフォームで作成したテーマをアップロードして使用できます。
 テーマをアップロードするには、以下の手順を実行します。
@@ -99,19 +99,19 @@ ht-degree: 53%
 
    ![テーマを選択](/help/forms/assets/select-theme.png)
 
-1. テーマページで、**[!UICONTROL 作成]**／**[!UICONTROL ファイルのアップロード]**&#x200B;をクリックします。
+1. テーマページで、**[!UICONTROL 作成]**／**[!UICONTROL ファイルをアップロード]**&#x200B;をクリックします。
 
    ![テーマをアップロード](/help/forms/assets/theme-upload.png)
 
-1. コンピューター上のテーマパッケージを参照して選択し、 **[!UICONTROL Upload]**. アップロードされたテーマは、テーマページで使用できるようになります。
+1. コンピューター上のテーマパッケージを参照して選択し、「**[!UICONTROL アップロード]**」をクリックします。アップロードされたテーマは、テーマページで使用できるようになります。
 
 ## フォルダーを使用した、アダプティブフォーム、PDF forms および関連アセットの整理  {#folders-and-organizing-assets}
 
-フォルダーを使用して、アセットのアレンジや整理を行うことができます。フォルダー内でドキュメントおよびアセットを整理すると、ファイルをグループ化して容易に管理できます。フォルダーを選択し、ダウンロードするか削除するかを選択します。
+フォルダーを使用して、アセットのアレンジや整理を行うことができます。フォルダー内でドキュメントおよびアセットを整理すると、ファイルをグループ化して容易に管理できます。フォルダーを選択し、ダウンロードするか削除するかを選択できます。
 
-### フォルダーを作成する {#create-a-folder}
+### フォルダーを作成 {#create-a-folder}
 
-フォルダーを作成するには：
+フォルダーを作成するには、以下の手順を実行します。
 
 1. [!DNL Experience Manager Forms] インスタンスにログインします。
 1. **[!UICONTROL フォーム]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
@@ -122,8 +122,8 @@ ht-degree: 53%
 
    ![フォルダーを作成](/help/forms/assets/create-folder.png)
 
-   この **[!UICONTROL フォルダーを追加]** ダイアログボックスが表示されます。
-1. を入力 **[!UICONTROL タイトル]**. この **[!UICONTROL 名前]** を入力すると、が自動的に設定されます **[!UICONTROL タイトル]**.
+   **[!UICONTROL フォルダーを追加]**&#x200B;ダイアログボックスが表示されます。
+1. **[!UICONTROL タイトル]**&#x200B;を入力します。**[!UICONTROL タイトル]**&#x200B;を入力すると、**[!UICONTROL 名前]**&#x200B;が自動的に入力されます。
 
    ![フォルダーを追加](/help/forms/assets/add-folder.png)
 
@@ -139,50 +139,50 @@ ht-degree: 53%
 
 作成されたフォルダーを選択してフォルダー内に移動し、フォルダー内でアセットまたはフォルダーを作成できます。さらに、フォルダーを選択し、ダウンロードのキューに入れるか、削除するか、名前を編集するかを選択できます。
 
-### 1 つ以上のアセットのコピーを作成 {#create-copies-of-one-or-more-assets-or-letters}
+### 1 つまたは複数のアセットのコピーを作成 {#create-copies-of-one-or-more-assets-or-letters}
 
-既存のアセットを使用して、類似のプロパティ、コンテンツおよび継承されたアセットを持つアセットをすばやく作成できます。
+既存のアセットを使用して、類似のプロパティ、コンテンツ、継承されたアセットを持つアセットをすばやく作成できます。
 
-アセットのコピーを作成するには：
+アセットのコピーを作成するには、以下の手順を実行します。
 
 1. [!DNL Experience Manager Forms] インスタンスにログインします。
-1. 関連するアセット ページで、1 つ以上のアセットを選択します。 UI に「」と表示されます **[!UICONTROL コピー]** アイコン。
-1. を選択 **[!UICONTROL コピー]**. UI に「」と表示されます ![貼り付けアイコン](/help/forms/assets/Smock_Paste_18_N.svg) アイコン。
+1. 関連するアセットページで、1 つまたは複数のアセットを選択します。UI に&#x200B;**[!UICONTROL コピー]**&#x200B;アイコンが表示されます。
+1. 「**[!UICONTROL コピー]**」を選択します。UI に![ペースト](/help/forms/assets/Smock_Paste_18_N.svg)アイコンが表示されます。
 
    ![アセットをコピー](/help/forms/assets/copy-asset.png)
 
-   レターを貼り付ける前に、フォルダー内に移動することもできます。複数のフォルダーに同じ名前のアセットを保管することができます。 フォルダーについて詳しくは、[フォルダーとアセットの整理](#folders-and-organizing-assets)を参照してください。
-1. を選択 **[!UICONTROL ペースト]**.
+   貼り付ける前に、フォルダー内に移動することもできます。複数のフォルダーに同じ名前のアセットを保管できます。フォルダーについて詳しくは、[フォルダーとアセットの整理](#folders-and-organizing-assets)を参照してください。
+1. 「**[!UICONTROL ペースト]**」を選択します。
 
    ![アセットをペースト](/help/forms/assets/paste-asset.png)
 
-1. この **[!UICONTROL ペースト]** ダイアログが表示されます。 アセットの新しいコピーに自動的に名前とタイトルが生成されますが、アセットのタイトルと名前は編集できます。
+1. **[!UICONTROL ペースト]**&#x200B;ダイアログが表示されます。アセットの新しいコピーに自動的に名前とタイトルが生成されますが、アセットのタイトルと名前は編集できます。
 
-   同じ場所にアセットをコピーして貼り付けると、の既存の名前に「– CopyXX」というサフィックスが追加されます `asset`. コピーしたアセットにタイトルが存在しない場合、自動生成されたタイトル フィールドは空白のままになります。
+   同じ場所にアセットをコピー＆ペーストする場合、`asset` の既存の名前の末尾に「-CopyXX」のサフィックスが追加されます。コピーされたアセットにタイトルが存在しない場合、自動生成されたタイトルフィールドは空白のままです。
 
-   ![新しい場所にアセットを貼り付け](/help/forms/assets/paste-click-asset.png)
+   ![新しい場所でアセットをペースト](/help/forms/assets/paste-click-asset.png)
 
-   必要に応じて、 **[!UICONTROL タイトル]** を選択して、アセットのコピーを保存します。 この **[!UICONTROL 名前]** を入力すると、が自動的に設定されます **[!UICONTROL タイトル]**.
-1. を選択 **[!UICONTROL ペースト]**. コピーされたアセットの新しいコピーが作成されます。
+   必要に応じて、アセットのコピーを保存する際の&#x200B;**[!UICONTROL タイトル]**&#x200B;を編集します。**[!UICONTROL タイトル]**&#x200B;を入力すると、**[!UICONTROL 名前]**&#x200B;が自動的に入力されます。
+1. 「**[!UICONTROL ペースト]**」を選択します。コピーされたアセットの新しいコピーが作成されます。
 
 ## 検索 {#search-forms}
 
-アセットが多数ある場合、適切なアセットの検索には時間がかかります。 アセットページ上で特定のアセットのテキストベースの検索を実行できます。
+アセットの数が多い場合、適切なアセットの検索には時間がかかります。アセットページで特定のアセットに対してテキストベースの検索を実行できます。
 
-アセットを検索するには：
+アセットを検索するには、以下の手順を実行します。
 
 1. [!DNL Experience Manager Forms] インスタンスにログインします。
-1. 「」をクリックします ![検索アイコン](assets/folder-search-icon.svg) 検索アイコン。
+1. ![検索アイコン ](assets/folder-search-icon.svg) 検索アイコンをクリックします。
 
    ![検索フォーム](/help/forms/assets/search-form.png)
 
-1. 検索バーで、検索するアセットの名前を入力します。
+1. 検索バーに検索するアセットの名前を入力します。
 
-1. 関連アセットのリストが表示されます。 表示されたアセット リストから目的のアセットを選択します。
+1. 関連するアセットのリストが表示されます。表示されたアセットリストから目的のアセットを選択します。
 
-   ![アセット検索](/help/forms/assets/search-bar.png)
+   ![アセットの検索](/help/forms/assets/search-bar.png)
 
-検索の使用の詳細と手順については、を参照してください。 [検索](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja).
+検索の使用に関する詳細および手順について詳しくは、[検索](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja)を参照してください。
 
 <!--
 ## Export or create a package {#export-a-workflow-application}
