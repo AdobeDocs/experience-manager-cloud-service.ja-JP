@@ -2,7 +2,7 @@
 title: 役割と責務
 description: 役割と責務
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 100%
 

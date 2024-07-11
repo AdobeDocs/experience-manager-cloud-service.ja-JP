@@ -5,7 +5,7 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
 source-git-commit: f8ef7e36ad602af96c3a6055db31ac328da808e6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2106'
 ht-degree: 100%
 
@@ -378,7 +378,7 @@ minimumVersions = 1
 
 許可されるプロパティを以下に示します。
 
-*default* と表示されている列は、デフォルトが適用された場合の今後のデフォルト値を示します。*TBD* は、まだ決定されていない環境 ID を反映します。
+*デフォルト*&#x200B;を示す列は、デフォルトが適用される今後のデフォルト値を示します。*未定*&#x200B;は、まだ決定されていない環境 ID を反映します。
 
 
 | プロパティ | TBD 以降の環境の今後のデフォルト | TBD 以前の環境の今後のデフォルト | 必須 | タイプ | 値 |

@@ -5,7 +5,7 @@ feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3429'
 ht-degree: 100%
 

@@ -7,7 +7,7 @@ exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="サンプル CodePen アプリの起動"
->abstract="このガイドでは、体験版環境から基本的な JavaScript web アプリへの JSON データのクエリについて説明します。前の学習モジュールでモデル化して作成したコンテンツフラグメントを使用します。必要に応じて、まずこれらのガイドを参照してから、このガイドに進んでください。"
+>abstract="このガイドでは、体験版環境から基本的な JavaScript web アプリへの JSON データのクエリについて説明します。 前の学習モジュールでモデル化して作成したコンテンツフラグメントを使用します。必要に応じて、まずこれらのガイドを参照してから、このガイドに進んでください。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"

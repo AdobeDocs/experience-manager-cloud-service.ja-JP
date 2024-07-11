@@ -5,7 +5,7 @@ exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
 source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 100%
 

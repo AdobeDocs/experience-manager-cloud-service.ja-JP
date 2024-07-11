@@ -5,7 +5,7 @@ exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 feature: Migration
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 100%
 
@@ -86,7 +86,7 @@ Azure portal の既存のコンテナープロパティページから、「**�
   `du -sh [path to datastore on the instance]`。例えば、データストアが `/mnt/author/crx-quickstart/repository/datastore` にある場合は、次のコマンドでそのサイズを取得できます。`du -sh /mnt/author/crx-quickstart/repository/datastore`
 
 * Windows の場合は、データストアディレクトリで dir コマンドを使用してサイズを取得します。
-  `dir /a/s [location of datastore]`
+  `dir /a/s [location of datastore]`。
 
 ### 1. AzCopy をインストールする {#install-azcopy}
 

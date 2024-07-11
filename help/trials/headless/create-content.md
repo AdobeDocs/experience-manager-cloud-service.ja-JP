@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="お疲れ様でした。このモジュールでは、前に作成したモデルに基づいてコンテンツフラグメントをコンテンツ ラグメントとして作成する方法を学びました。これで、開発サイクルに関係なく、コンテンツチームがアプリや web サイトのコンテンツを作成および管理する方法を理解できました。"
+>title="お疲れ様でした。このモジュールでは、前に作成したモデルに基づいてコンテンツフラグメントをコンテンツ ラグメントとして作成する方法を学びました。 これで、開発サイクルに関係なく、コンテンツチームがアプリや web サイトのコンテンツを作成および管理する方法を理解できました。"
 >abstract=""
 
 ## コンテンツフラグメントの作成 {#create-fragment}

@@ -5,7 +5,7 @@ role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
 source-git-commit: 23b43f22b62451c9d0a5460999fcd43479438d7e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 100%
 

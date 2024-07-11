@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2905'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="コンテンツの取り込み"
->abstract="取得とは、移行セットから宛先の Cloud Service インスタンスにコンテンツを取得することを指します。コンテンツ転送ツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。"
+>abstract="取得とは、移行セットから宛先の Cloud Service インスタンスにコンテンツを取得することを指します。 コンテンツ転送ツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=ja#top-up-extraction-process" text="追加抽出"
 
 Cloud Acceleration Manager を使用して移行セットを取り込むには、次の手順に従います。
@@ -93,7 +93,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="追加取り込み"
->abstract="前回のコンテンツ転送アクティビティ以降に変更されたコンテンツを移動するには、追加取り込み機能を使用します。取り込みが完了したら、エラーや警告がないかログを確認します。エラーが発生した場合は、報告された問題を解決するかアドビカスタマーケアに連絡して、すぐに対処してください。"
+>abstract="前回のコンテンツ転送アクティビティ以降に変更されたコンテンツを移動するには、追加取り込み機能を使用します。 取り込みが完了したら、エラーや警告がないかログを確認します。 エラーが発生した場合は、報告された問題を解決するかアドビカスタマーケアに連絡して、すぐに対処してください。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ja" text="ログの表示"
 
 コンテンツ転送ツールには、移行セットの&#x200B;*追加*&#x200B;を実行することで、差分コンテンツを抽出できる機能が備わっています。これにより、再度すべてのコンテンツを抽出するのではなく、前回の抽出以降に変更されたコンテンツのみを含めるように移行セットを変更できます。
@@ -112,7 +112,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="コンテンツ取り込みのトラブルシューティング"
->abstract="取り込みログとドキュメントを参照して、取り込みが失敗する一般的な原因に関する解決策を見つけ、問題を修正します。修正したら、取り込みを再実行できます。"
+>abstract="取り込みログとドキュメントを参照して、取り込みが失敗する一般的な原因に関する解決策を見つけ、問題を修正します。 修正したら、取り込みを再実行できます。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=ja" text="コンテンツ転送の検証"
 
 ### CAM が移行トークンを取得できない {#cam-unable-to-retrieve-the-migration-token}
@@ -173,7 +173,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="一意性制約違反"
->abstract="非ワイプ取り込みエラーの一般的な原因は、ノード ID の競合です。競合するノードは 1 つのみ存在できます。"
+>abstract="非ワイプ取り込みエラーの一般的な原因は、ノード ID の競合です。 競合するノードは 1 つのみ存在できます。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=ja#top-up-ingestion-process" text="追加取り込み"
 
 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)エラーの一般的な原因は、ノード ID の競合です。このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
@@ -193,7 +193,7 @@ AEM の各ノードには、一意の UUID が必要です。このエラーは�
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="参照されているノードを削除できません"
->abstract="非ワイプ取り込みエラーの一般的な原因は、移行先インスタンスの特定のノードに対するバージョンの競合です。ノードのバージョンを修正する必要があります。"
+>abstract="非ワイプ取り込みエラーの一般的な原因は、移行先インスタンスの特定のノードに対するバージョンの競合です。 ノードのバージョンを修正する必要があります。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=ja#top-up-ingestion-process" text="追加取り込み"
 
 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)が失敗するもう一つの一般的な原因は、移行先インスタンスの特定のノードに対するバージョンの競合です。このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
@@ -211,7 +211,7 @@ AEM の各ノードには、一意の UUID が必要です。このエラーは�
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="大きなノードプロパティ"
->abstract="取り込みエラーの一般的な原因は、ノードプロパティの値の最大サイズを超えていることです。この状況を修正するには、ドキュメント（BPA レポートに関連するものを含む）に従います。"
+>abstract="取り込みエラーの一般的な原因は、ノードプロパティの値の最大サイズを超えていることです。 この状況を修正するには、ドキュメント（BPA レポートに関連するものを含む）に従います。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=ja" text="移行の前提条件"
 
 MongoDB に保存されるノードプロパティの値は 16 MB を超えることはできません。ノード値がサポートされているサイズを超えると、取り込みに失敗し、ログには `BSONObjectTooLarge` エラーが含まれ、最大値を超えたノードが指定されます。これは MongoDB の制限です。
@@ -225,7 +225,7 @@ MongoDB に保存されるノードプロパティの値は 16 MB を超える�
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_rescinded"
 >title="取り込みの取り消し"
->abstract="取り込みを待機していた抽出が正常に終了しませんでした。実行できなかったので、取り込みが取り消されました。"
+>abstract="取り込みを待機していた抽出が正常に終了しませんでした。 実行できなかったので、取り込みが取り消されました。"
 
 ソース移行セットとして、実行中の抽出で作成された取り込みは、その取り込みが成功するまで待機し、その時点で正常に開始されます。抽出が失敗または停止した場合、取り込みおよびそのインデックス作成ジョブは開始されず、取り消されます。この場合は、抽出をチェックして失敗した理由を判断し、問題を修正して、再度抽出を開始します。固定抽出を実行した後で、新しい取り込みをスケジュールできます。
 
