@@ -4,10 +4,10 @@ description: 設定ファイルでルールとフィルターを宣言し、Clou
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 1b4297c36995be7a4d305c3eddbabfef24e91559
-workflow-type: ht
-source-wordcount: '1310'
-ht-degree: 100%
+source-git-commit: c34aa4ad34d3d22e1e09e9026e471244ca36e260
+workflow-type: tm+mt
+source-wordcount: '1326'
+ht-degree: 97%
 
 ---
 
@@ -274,7 +274,7 @@ data:
         action:
           type: selectOrigin
           originName: example-com
-          # useCache: false
+          # skpCache: true
     origins:
       - name: example-com
         domain: www.example.com
@@ -292,7 +292,7 @@ data:
 | 名前 | プロパティ | 意味 |
 |-----------|--------------------------|-------------|
 | **selectOrigin** | originName | 定義された接触チャネルの 1 つの名前。 |
-|     | useCache（オプション、デフォルトは true） | このルールに一致するリクエストにキャッシュを使用するかどうかを示すフラグ。 |
+|     | skipCache （オプション。デフォルトは false） | このルールに一致する要求に対してキャッシュを使用するかどうかを示します。 デフォルトでは、応答は応答キャッシュヘッダー（例：Cache-Control または Expires）に従ってキャッシュされます |
 
 **接触チャネル**
 
