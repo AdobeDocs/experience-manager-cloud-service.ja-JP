@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: ht
-source-wordcount: '2668'
-ht-degree: 100%
+source-git-commit: f81ea2b58cfa68542df957b54b1c0233b6096810
+workflow-type: tm+mt
+source-wordcount: '2687'
+ht-degree: 98%
 
 ---
 
@@ -354,13 +354,20 @@ ht-degree: 100%
 
 #### 参照ページ {#reference-pages}
 
-AEM ページ、エクスペリエンスフラグメントまたはその他のコンテンツタイプへの参照を追加するには、次の手順を実行します。
+AEM ページ、エクスペリエンスフラグメント、またはその他のコンテンツタイプへの参照を追加するには：
 
 1. 「**コンテンツのパスを追加**」を選択します。
 
 1. 入力フィールドに必要なパスを追加します。
 
 1. 「**追加**」で確定します。
+
+>[!NOTE]
+>
+>次への参照には使用しないでください。
+>
+>* コンテンツフラグメント – 使用 [フラグメント参照](#fragment-references)
+>* 画像 – 使用 [参照画像](#reference-images)
 
 ### 親参照の表示 {#view-parent-references}
 
