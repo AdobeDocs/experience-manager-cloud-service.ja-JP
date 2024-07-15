@@ -5,7 +5,7 @@ exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 feature: Smart Imaging, Interactive Images, Asset Management
 role: User, Admin
 source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1244'
 ht-degree: 100%
 

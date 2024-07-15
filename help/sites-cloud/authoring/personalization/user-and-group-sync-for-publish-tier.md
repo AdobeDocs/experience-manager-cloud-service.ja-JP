@@ -43,7 +43,8 @@ Web アプリケーションは、多くの場合、Web サイトへの登録用
 
 **前提条件：**
 
-上記のロジックを正しく機能させるには、以下を有効にしてください： [データ同期](#data-synchronization-data-synchronization) 適切なプログラムと環境を示すリクエストをカスタマーサポートに送信する。
+上記のロジックを正しく機能させるには、以下を送信して [ データ同期 ](#data-synchronization-data-synchronization) を有効にしてください：
+適切なプログラムと環境を示すカスタマーサポートへのリクエスト。
 
 ### 外部 web アプリケーション {#external-managed-registration}
 
@@ -66,7 +67,8 @@ Web アプリケーションは、多くの場合、Web サイトへの登録用
 
 **前提条件：**
 
-上記のロジックを正しく機能させるには、以下を有効にしてください： [データ同期](#data-synchronization-data-synchronization) 適切なプログラムと環境を示すリクエストをカスタマーサポートに送信する。
+上記のロジックを正しく機能させるには、以下を送信して [ データ同期 ](#data-synchronization-data-synchronization) を有効にしてください：
+適切なプログラムと環境を示すカスタマーサポートへのリクエスト。
 
 ### ID プロバイダーとの統合 {#integration-with-an-idp}
 
@@ -90,13 +92,13 @@ AEM SSO 認証ハンドラーサービスの使用について詳しくは、[�
 
 **前提条件：**
 
-ベストプラクティスとして、ユーザー固有のデータを保存する際は、常に idP （ID プロバイダー）を唯一の信頼ポイントとして利用します。 追加のユーザー情報が、idP の一部ではないローカルリポジトリに格納されている場合は、を有効にしてください [データ同期](#data-synchronization-data-synchronization) 適切なプログラムと環境を示すリクエストをカスタマーサポートに送信する。 に加えて [データ同期](#data-synchronization-data-synchronization)SAML 認証プロバイダーの場合、次のことを確認します [動的グループメンバーシップ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) が有効になっています。
+ベストプラクティスとして、ユーザー固有のデータを保存する際は、常に idP （ID プロバイダー）を唯一の信頼ポイントとして利用します。 追加のユーザー情報が、idP の一部ではないローカルリポジトリに格納されている場合は、適切なプログラムと環境を示すリクエストをカスタマーサポートに送信して、[ データ同期 ](#data-synchronization-data-synchronization) を有効にしてください。 [ データ同期 ](#data-synchronization-data-synchronization) に加えて、SAML 認証プロバイダーの場合、[ 動的グループメンバーシップ ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) が有効になっていることを確認します。
 
 ### スティッキーセッションとカプセル化されたトークン {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Serviceでは cookie ベースのスティッキーセッションが可能なので、エンドユーザーはリクエストごとに同じパブリッシュノードにルーティングされます。 ユーザートラフィックのスパイクなど、特定のケースでは、カプセル化トークン機能によってパフォーマンスが向上する可能性があるので、リポジトリ内のユーザーレコードを各リクエストで参照する必要はありません。 エンドユーザーがアフィニティを持つパブリッシュノードを置き換えると、の説明に従って、そのユーザー ID レコードを新しいパブリッシュノードで使用できます。 [データ同期](#data-synchronization-data-synchronization) セクションを下にします。
+AEM as a Cloud Serviceでは cookie ベースのスティッキーセッションが可能なので、エンドユーザーはリクエストごとに同じパブリッシュノードにルーティングされます。 ユーザートラフィックのスパイクなど、特定のケースでは、カプセル化トークン機能によってパフォーマンスが向上する可能性があるので、リポジトリ内のユーザーレコードを各リクエストで参照する必要はありません。 エンドユーザーがアフィニティを持つパブリッシュノードを置き換えた場合、ユーザー ID レコードは、以下の [ データ同期 ](#data-synchronization-data-synchronization) の節で説明するように、新しいパブリッシュノードで使用できます。
 
-カプセル化されたトークン機能を活用するには、適切なプログラムと環境を示すリクエストをカスタマーサポートに送信してください。 さらに重要なのは、カプセル化されたトークンは、次の条件を満たさないと有効にできないということです。 [データ同期](#data-synchronization-data-synchronization) とを同時に有効にする必要があります。 したがって、有効にする前にユースケースを慎重に確認し、機能が不可欠であることを確認してください。
+カプセル化されたトークン機能を活用するには、適切なプログラムと環境を示すリクエストをカスタマーサポートに送信してください。 さらに重要なのは、カプセル化されたトークンは [ データ同期 ](#data-synchronization-data-synchronization) なしでは有効にできず、同時に有効にする必要があることです。 したがって、有効にする前にユースケースを慎重に確認し、機能が不可欠であることを確認してください。
 
 ## ユーザープロファイル {#user-profile}
 
@@ -111,7 +113,8 @@ AEM as a Cloud Serviceでは cookie ベースのスティッキーセッショ�
 
 **前提条件：**
 
-サーバーサイドのユーザープロファイルの永続性ロジックが正しく機能するには、を有効にしてください。 [データ同期](#data-synchronization-data-synchronization) 適切なプログラムと環境を示すリクエストをカスタマーサポートに送信する。
+サーバーサイドのユーザープロファイルの永続性ロジックが正しく機能するには、次を送信して [ データ同期 ](#data-synchronization-data-synchronization) を有効にしてください：
+適切なプログラムと環境を示すカスタマーサポートへのリクエスト。
 
 ### サードパーティのデータストア {#third-party-data-stores}
 
@@ -121,7 +124,8 @@ AEM as a Cloud Serviceでは cookie ベースのスティッキーセッショ�
 
 **前提条件：**
 
-上記のロジックを正しく機能させるには、以下を有効にしてください： [データ同期](#data-synchronization-data-synchronization) 適切なプログラムと環境を示すリクエストをカスタマーサポートに送信する。
+上記のロジックを正しく機能させるには、以下を送信して [ データ同期 ](#data-synchronization-data-synchronization) を有効にしてください：
+適切なプログラムと環境を示すカスタマーサポートへのリクエスト。
 
 ## 権限（クローズドユーザーグループ） {#permissions-closed-user-groups}
 

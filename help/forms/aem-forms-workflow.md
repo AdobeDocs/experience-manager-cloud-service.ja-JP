@@ -5,7 +5,7 @@ description: AEM Forms Workflow を使用して、ビジネスプロセスワー
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 100%
 

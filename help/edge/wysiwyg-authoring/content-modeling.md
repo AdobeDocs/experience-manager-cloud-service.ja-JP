@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 8d9ae4c7512198bd3e01a881665621d3ecbcd98d
 workflow-type: tm+mt
 source-wordcount: '2253'
-ht-degree: 83%
+ht-degree: 85%
 
 ---
 
@@ -18,7 +18,7 @@ Edge Delivery Servicesプロジェクトでの WYSIWYG オーサリング向け�
 
 ## 前提条件 {#prerequisites}
 
-Edge Delivery ServicesEdge Delivery Servicesを使用した WYSIWYG オーサリングで作成されたプロジェクトは、コンテンツソースや [オーサリングメソッド。](/help/edge/wysiwyg-authoring/authoring.md)
+Edge Delivery Servicesで WYSIWYG オーサリングを使用するプロジェクトは、コンテンツソースや [ オーサリング方法 ](/help/edge/wysiwyg-authoring/authoring.md) に関係なく、他のEdge Delivery Servicesプロジェクトの仕組みの大部分を継承します。
 
 プロジェクトのコンテンツをモデル化する前に、まず、次のドキュメントをお読みください。
 
@@ -39,7 +39,7 @@ AEM では、このコンテンツは非常にシンプルで、事前定義済�
 * **画像**：ソース、説明
 * **ボタン**：テキスト、タイトル、URL、タイプ（デフォルト、プライマリ、セカンダリ）
 
-これらのコンポーネントのモデルは、 [Edge Delivery Servicesによる WYSIWYG オーサリング用のボイラープレート。](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
+これらのコンポーネントのモデルは、[Edge Delivery Servicesを使用した WYSIWYG オーサリング用ボイラープレート ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112) の一部です。
 
 ## ブロック {#blocks}
 
@@ -345,7 +345,7 @@ Edge Delivery Servicesを使用した WYSIWYG オーサリングでは、リッ�
 * **画像** - AEM のリソースへの参照が `image/` で始まる MIME タイプのアセットである場合、その参照は `<picture><img src="${reference}"></picture>` としてレンダリングされます。
 * **リンク** - AEM 内に存在している参照が画像ではない場合、または値が `https?://` または `#` で始まる場合、参照は `<a href="${reference}">${reference}</a>` としてレンダリングされます。
 * **リッチテキスト** - トリミングされた値が段落（`p`、`ul`、`ol`、`h1` - `h6` など）で始まる場合、値はリッチテキストとしてレンダリングされます。
-* **クラス名**  – が `classes` プロパティは次のように処理されます [ブロックオプション](/help/edge/developer/markup-sections-blocks.md#block-options) のテーブルヘッダーでレンダリングされます [単純ブロック、](#simple) またはを、の項目の値リストとして設定します。 [コンテナブロック。](#container) 以下を行う場合に役立ちます。 [ブロックのスタイルを変更する。](/help/edge/wysiwyg-authoring/create-block.md#block-options) ただし、まったく新しいブロックを作成する必要はありません。
+* **クラス名** - `classes` プロパティは[ブロックオプション](/help/edge/developer/markup-sections-blocks.md#block-options)として扱われ、[単純なブロック](#simple)ではテーブルヘッダーにレンダリングされ、または[コンテナブロック内にある項目の値リストとしてレンダリングされます。](#container)[ブロックを別のスタイルに設定](/help/edge/wysiwyg-authoring/create-block.md#block-options)する際、完全に新しいブロックを作成する必要はない場合に役立ちます。
 * **値リスト** - 値が複数値プロパティで、最初の値が以前の値でない場合、すべての値がコンマ区切りリストとして連結されます。
 
 それ以外の部分はすべてプレーンテキストとしてレンダリングされます。
@@ -652,11 +652,11 @@ AEM で使用できるデフォルトのページプロパティの多くは、�
 
 これで、コンテンツのモデル化方法を理解できたので、WYSIWYG オーサリングプロジェクトを使用して独自のEdge Delivery Services用のブロックを作成できます。
 
-ドキュメントを参照 [ユニバーサルエディターで使用するために実装されたブロックの作成](/help/edge/wysiwyg-authoring/create-block.md) Edge Delivery Services プロジェクトで WYSIWYG オーサリングのユニバーサルエディターで使用するために実装されたブロックを作成する方法について説明します。
+Edge Delivery Servicesプロジェクトで WYSIWYG オーサリングを使用して、ユニバーサルエディターで使用するために実装されたブロックを作成する方法については ](/help/edge/wysiwyg-authoring/create-block.md) ユニバーサルエディターで使用するために実装されたブロックの作成 [ ドキュメントを参照してください。
 
-ブロックの作成に精通している場合は、ドキュメントを参照してください [Edge Delivery Servicesを使用した WYSIWYG オーサリングの開発者向け入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) Edge Delivery Servicesとコンテンツオーサリング用のユニバーサルエディターを使用して、新しいAdobe Experience Manager サイトを使い始めます。
+Edge Delivery Servicesとコンテンツオーサリング用ユニバーサルエディターを使用した新しいAdobe Experience Manager サイトの導入については、ドキュメント [Edge Delivery Servicesを使用した WYSIWYG オーサリングの開発者向けガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) を参照してください。
 
 >[!TIP]
 >
->AEM as a Cloud Serviceをコンテンツソースとする WYSIWYG オーサリングが可能な新しいEdge Delivery Servicesプロジェクトの作成に関するエンドツーエンドのチュートリアルについては、次を参照してください。 [このAEM GEMs ウェビナー](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
+>AEM as a Cloud Serviceをコンテンツソースとする WYSIWYG オーサリングが可能な新しいEdge Delivery Servicesプロジェクトの作成に関するエンドツーエンドのチュートリアルについては、[ このAEM GEMs ウェビナー ](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery) を参照してください。
 

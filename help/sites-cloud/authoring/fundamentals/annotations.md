@@ -3,7 +3,7 @@ title: ページ注釈の追加
 description: コンテンツレビュープロセスを支援するために、付箋と同様に、注釈モードを使用して注釈やスケッチをページに残します
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 100%
 

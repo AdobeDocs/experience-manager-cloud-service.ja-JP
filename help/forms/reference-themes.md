@@ -1,18 +1,18 @@
 ---
-title: 基盤コンポーネントに基づくアダプティブフォームのリファレンステーマを取得する方法
-description: すぐに使い始めるには、用意されている参照用のアダプティブフォームテーマ、テンプレート、フォームデータモデルを使用します。
+title: 基盤コンポーネントに基づくアダプティブフォームに対して参照テーマを取得する方法
+description: 用意されている参照用のアダプティブフォームテーマ、テンプレート、フォームデータモデルを使用して、すぐに開始します。
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # Forms as a Cloud Service の参照アセット {#reference-themes}
 
-参照テーマ、テンプレート、およびフォームデータモデル（FDM）は、 [参照アセットパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). これにより、アダプティブフォームの開発にすばやく着手し、迅速に進めることができます。 [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=ja)を使用して、このパッケージを AEM Forms as a Cloud Service 環境にデプロイできます。
+[参照アセットパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip)をインストールすると、参照テーマ、テンプレート、およびフォームデータモデル（FDM）を取得できます。これにより、アダプティブフォームの開発にすばやく着手し、迅速に進めることができます。 [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=ja)を使用して、このパッケージを AEM Forms as a Cloud Service 環境にデプロイできます。
 
 パッケージに含まれる参照アセットは次のとおりです。
 

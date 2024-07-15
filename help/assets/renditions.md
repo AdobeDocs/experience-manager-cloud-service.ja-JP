@@ -22,43 +22,43 @@ Dynamic Media画像プリセットおよびスマート切り抜きレンディ�
 ## 静的レンディション {#static-renditions}
 
 静的レンディションは、デジタルアセットの事前生成バージョンで、通常はアセットの取り込みまたは変更時に作成されます。 これらのレンディションは、web サムネール、レスポンシブデザイン用のモバイルに対応した形式、印刷用の高解像度バージョンなど、特定の目的とプラットフォーム用に最適化され、効率的で一貫したエクスペリエンスを確保します。
-学ぶ [表示とダウンロード方法](#view-dynamic-renditions) での静的レンディション [!DNL Experience Manager Assets].
+[!DNL Experience Manager Assets] の静的レンディション [ 表示およびダウンロード方法 ](#view-dynamic-renditions) について説明します。
 
 ## 動的レンディション {#dynamic-renditions}
 
 動的レンディションは、特定のニーズを満たすためにリアルタイムで作成されるアセットのカスタマイズバージョンです。例えば、デバイスの解像度に基づく画像のサイズ変更や、様々な縦横比に合わせた切り抜きなどです。
-これらのレンディションにより、組織は、パーソナライズされ最適化されたエクスペリエンスを、様々なオーディエンスのニーズに提供できます。 で動的レンディションの表示とダウンロードを行うことができます [!DNL Experience Manager Assets].
+これらのレンディションにより、組織は、パーソナライズされ最適化されたエクスペリエンスを、様々なオーディエンスのニーズに提供できます。 [!DNL Experience Manager Assets] で動的レンディションを表示およびダウンロードできます。
 
 ### 事前準備
 
 * ライセンスを取得したAEM Dynamic Media ユーザーである必要があります。
 
-* 使用方法 [!UICONTROL 管理ビュー] 次の手順で設定します。
-   * [スマート切り抜きイメージプロファイル](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)
+* [!UICONTROL  管理者表示 ] を使用して次の設定を行います。
+   * [ スマート切り抜き画像プロファイル ](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)
    * [画像プリセット](/help/assets/dynamic-media/managing-image-presets.md)
 
-  次のことができます [ビューの切り替え](/help/assets/assets-view-introduction.md#how-to-access-assets-view) 後でアセットビューで動的レンディションをプレビューできます。
+  後で [ ビューを切り替えて ](/help/assets/assets-view-introduction.md#how-to-access-assets-view)Assets ビューで動的レンディションをプレビューできます。
 
 ### 動的レンディションの表示とダウンロード {#view-renditions}
 
-で画像の動的レンディションを表示またはダウンロードするには [!DNL Experience Manager Assets]は、次の手順に従います。
+[!DNL Experience Manager Assets] で画像の動的レンディションを表示またはダウンロードするには、次の手順に従います。
 
-1. に移動 **[!UICONTROL アセット管理]** > **[!UICONTROL アセット]**.
+1. **[!UICONTROL Assets Management]** / **[!UICONTROL Assets]** に移動します。
 
 1. 該当するアセットフォルダーに移動します。
 
-1. 表示する画像をクリックし、 **[!UICONTROL 詳細]**.
+1. 表示する画像をクリックし、「**[!UICONTROL 詳細]**」をクリックします。
 
-1. 右側のメニューで、 **[!UICONTROL レンディション]**. <br> この **[!UICONTROL レンディション]** パネルが使用可能な状態で開きます **[!UICONTROL 動的]** および **[!UICONTROL スマート切り抜き]** レンディション。
+1. 右側のメニューで、「**[!UICONTROL レンディション]**」をクリックします。 **[!UICONTROL レンディション]** パネル <br>、使用可能な **[!UICONTROL 動的]** レンディションと **[!UICONTROL スマート切り抜き]** レンディションで開きます。
 
-   ![動的レンディション](assets/preset_smart_crop.png)
+   ![ 動的レンディション ](assets/preset_smart_crop.png)
    <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
 
 1. 表示またはダウンロードする必要があるレンディションをクリックします。
 
-1. 「」をクリックします ![ダウンロードアイコン](assets/do-not-localize/download-icon.png) ダウンロードする必要がある動的レンディションの横にあるアイコン。 <br> または、画像レンディションを選択して、 **[!UICONTROL レンディションをダウンロード]** 下部にあるオプション。
+1. ダウンロードする必要がある動的レンディションの横にある ![ ダウンロードアイコン ](assets/do-not-localize/download-icon.png) アイコンをクリックします。 <br> または、画像レンディションを選択して、下部にある「**[!UICONTROL レンディションをダウンロード]**」オプションをクリックすることもできます。
 
-   「」をクリックすると、 ![ダウンロードアイコン](assets/do-not-localize/download-icon.png) アイコンは上部にあります **[!UICONTROL スマート切り抜き]** 「レンディション」セクションで、そのアセットで使用可能なすべてのスマート切り抜きレンディションをダウンロードします。
+   「![ スマート切り抜き ](assets/do-not-localize/download-icon.png) レンディション」セクションの上部にある「**[!UICONTROL ダウンロードアイコン]** アイコンをクリックすると、そのアセットで使用可能なすべてのスマート切り抜きレンディションをダウンロードできます。
 
 >[!NOTE]
 >

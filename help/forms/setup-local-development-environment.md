@@ -7,7 +7,7 @@ exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 source-git-commit: a070e945f23641cfdfd71511366e5b2c16ec22e8
 workflow-type: tm+mt
 source-wordcount: '2762'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ You can use the [development tools](https://experienceleague.adobe.com/docs/expe
 
    >[!NOTE]
    >
-   > Adobe Experience Manager as a Cloud Service SDK とシームレスに互換性を持たせるには、最新バージョンのExperience Manager Forms機能アーカイブ（AEM Forms アドオン）、Forms 参照アセット、Forms Designer をダウンロードすることをお勧めします。
+   > Adobe Experience Manager as a Cloud Service SDK とシームレスに互換性を持たせるには、最新バージョンの Experience Manager Forms 機能アーカイブ（AEM Forms アドオン）、フォーム参照アセット、Forms Designer をダウンロードすることをお勧めします。
 
 1. ソフトウェア利用許諾契約を確認し、同意します。「**[!UICONTROL ダウンロード]**」ボタンを選択します。
 
@@ -271,7 +271,7 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
 
 >[!NOTE]
 >
-> Microsoft® Dynamics 365 および Salesforce フォームデータモデル（FDM）をAEM Forms as a Cloud Serviceと連携して取得および使用するには、AEM アーキタイプバージョン 30 以降に基づくプロジェクトをセットアップします。
+> AEM Forms as a Cloud Service で Microsoft® Dynamics 365 および Salesforce フォームデータモデル（FDM）を取得して使用するには、AEM アーキタイプバージョン 30 以降に基づくプロジェクトを設定します。
 > Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
 
 プロジェクトを設定するには、以下を実行します。
@@ -411,7 +411,7 @@ For information about troubleshooting, stopping local AEM environment, run modes
 
 ### 既存のコンテンツのバックアップの作成 {#create-backup-of-your-existing-content}
 
-アダプティブForms、テンプレート、フォームデータモデル（FDM）、テーマ、設定およびカスタムコードをバックアップします。 以下の操作を実行して、バックアップを作成できます。
+アダプティブフォーム、テンプレート、フォームデータモデル（FDM）、テーマ、設定およびカスタムコードをバックアップします。以下の操作を実行して、バックアップを作成できます。
 
 1. アダプティブフォーム、テーマ、PDF forms を[ダウンロード](import-export-forms-templates.md#manage-forms-and-related-assets)します。
 1. アダプティブフォームテンプレートの書き出します。

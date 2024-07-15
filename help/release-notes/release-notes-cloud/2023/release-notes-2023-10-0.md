@@ -43,7 +43,7 @@ ht-degree: 98%
 
 ### 新機能 {#assets-features}
 
-**Adobe Express用AEM Assets アドオン**:Experience Manager Assetsには、Adobe Express用のアドオンが用意されるようになりました。 アドオンを使用すると、Adobe Express ユーザーインターフェイス内から Experience Manager Assets に保存されているアセットに直接アクセスできます。AEM Assets で管理されているコンテンツを Express キャンバスに配置し、新しいコンテンツや編集したコンテンツを AEM Assets リポジトリに保存できます。アドオンには、次のような主なメリットがあります。
+Adobe Express用の **AEM Assets アドオン**: Experience Manager Assetsには、Adobe Express用のアドオンが用意されるようになりました。 アドオンを使用すると、Adobe Express ユーザーインターフェイス内から Experience Manager Assets に保存されているアセットに直接アクセスできます。AEM Assets で管理されているコンテンツを Express キャンバスに配置し、新しいコンテンツや編集したコンテンツを AEM Assets リポジトリに保存できます。アドオンには、次のような主なメリットがあります。
 
 * AEM での新しいアセットの編集と保存による、コンテンツ再利用の増加
 

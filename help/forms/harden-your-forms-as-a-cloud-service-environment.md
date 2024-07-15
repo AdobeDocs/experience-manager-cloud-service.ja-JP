@@ -1,6 +1,6 @@
 ---
-title: AEM Formsのas a Cloud Service環境を保護または強化する方法は？
-description: セキュリティで保護 [!DNL AEM Forms] as a Cloud Service環境。
+title: AEM Formsas a Cloud Serviceの環境を保護または強化する方法
+description: ' [!DNL AEM Forms] as a Cloud Serviceを保護します。'
 contentOwner: khsingh
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt

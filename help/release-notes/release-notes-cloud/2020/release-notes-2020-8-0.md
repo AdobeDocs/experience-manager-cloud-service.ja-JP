@@ -22,7 +22,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * [ページとサブページ（ページツリー）を以前のバージョンに戻す](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions)機能。
 
-* ～する能力 [ローンチを作成](/help/sites-cloud/authoring/launches/overview.md) （AEM内） [SPA Editor](/help/implementing/developing/hybrid/introduction.md).
+* AEM [2}SPA Editor} で ](/help/sites-cloud/authoring/launches/overview.md) ローンチを作成 ](/help/implementing/developing/hybrid/introduction.md) する機能。[
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
@@ -140,8 +140,8 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 ### 新機能 {#what-is-new-refactoring}
 
-* コードリファクタリングツールを統合するための AIO-CLI プラグインがリリースされ、開発者がコードリファクタリングツールを一元的に呼び出して実行できるようになりました。参照： [Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) を参照してください。
+* コードリファクタリングツールを統合するための AIO-CLI プラグインがリリースされ、開発者がコードリファクタリングツールを一元的に呼び出して実行できるようになりました。詳しくは、[Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) を参照してください。
 
-* AEM Dispatcher コンバーターが拡張されて、オンプレミス設定と Adobe Managed Services Dispatcher 設定を、AEM as a Cloud Service と互換性のある Dispatcher 設定に変換できるようになりました。参照： [Git リソース：AEM Cloud Service Dispatcher コンバーター](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) を参照してください。
+* AEM Dispatcher コンバーターが拡張されて、オンプレミス設定と Adobe Managed Services Dispatcher 設定を、AEM as a Cloud Service と互換性のある Dispatcher 設定に変換できるようになりました。詳しくは、[Git リソース：AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) を参照してください。
 
 * AEM Dispatcher コンバーターが ` node.js ` で書き換えられ、AIO-CLI プラグインと統合されました。

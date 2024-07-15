@@ -23,7 +23,7 @@ ht-degree: 94%
 
 ### [!DNL Sites] の新機能 {#what-is-new-sites}
 
-* シングルページアプリケーション（SPA）エディター JavaScript SDK [がオープンソースになりました](/help/implementing/developing/hybrid/reference-materials.md).
+* シングルページアプリケーション（SPA）エディターJavaScript SDK[ オープンソースになりました ](/help/implementing/developing/hybrid/reference-materials.md)。
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
@@ -52,7 +52,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### 新機能 {#what-is-new-commerce}
 
-* CIF コアコンポーネント v1.3.0 をリリースしました。参照： [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) を参照してください。
+* CIF コアコンポーネント v1.3.0 をリリースしました。詳しくは、[CIF コアコンポーネント ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) を参照してください。
 
 * 製品／カテゴリテンプレート用の製品／カテゴリプレビュー機能が利用できるようになりました。これにより、AEM のビジネスユーザーやマーケターは、製品／カテゴリのテンプレートに実際のデータを表示できます。
 
@@ -120,8 +120,8 @@ Cloud Readiness Analyzer リリース v1.1.0 の新機能と更新点につい�
 
 * AIO-CLI プラグインは、Repository Modenizer をサポートしており、ユーザーはこのプラグインを使用してツールを実行できます。
 
-  参照： [Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) を参照してください。
+  詳しくは、[Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) を参照してください。
 
 * Repository Modenizer ユーティリティを使用すると、既存のプロジェクトパッケージを、AEM as a Cloud Service 用に定義されたプロジェクト構造と互換性のあるパッケージに再構築できます。
 
-  参照： [Git リソース：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。
+  詳しくは、[Git リソース：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。

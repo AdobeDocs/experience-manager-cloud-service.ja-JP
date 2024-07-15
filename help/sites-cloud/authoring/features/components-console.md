@@ -3,7 +3,7 @@ title: コンポーネントコンソール
 description: コンポーネントコンソールを使用すると、インスタンスに定義されたすべてのコンポーネントを参照できます。
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 100%
 

@@ -48,7 +48,7 @@ ht-degree: 92%
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms**:Adobe Analytics for Adaptive Formsを使用して、ログイン済みの場合と未ログイン（匿名）の場合の行動をキャプチャおよび追跡し、ユーザーインサイトを収集できるようになりました。 これにより、ビジネスユーザーは、収集されたインサイトに基づいて、アダプティブフォームのコンテンツ、レイアウトおよびスタイルについて、情報に基づいた意思決定を行えます。
+* **Analytics for Adaptive Forms**：ログイン済み状態と未ログイン（匿名）状態の両方の動作をAdobe Analytics for Adaptive Formsでキャプチャおよび追跡して、ユーザーインサイトを収集できるようになりました。 これにより、ビジネスユーザーは、収集されたインサイトに基づいて、アダプティブフォームのコンテンツ、レイアウトおよびスタイルについて、情報に基づいた意思決定を行えます。
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms-oct-2021}
 
@@ -64,9 +64,9 @@ ht-degree: 92%
 
 ### 新機能 {#what-is-new-commerce}
 
-* 最新のCIF コアコンポーネントのバージョン v1.4.0 を含んだCIF Venia 参照サイト 2020.10.2 をリリースしました。参照： [CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) を参照してください。
+* 最新のCIF コアコンポーネントのバージョン v1.4.0 を含んだCIF Venia 参照サイト 2020.10.2 をリリースしました。詳しくは、[CIF Venia 参照サイト ](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) を参照してください。
 
-* CIF コアコンポーネント v1.4.0 をリリースしました。参照： [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) を参照してください。
+* CIF コアコンポーネント v1.4.0 をリリースしました。詳しくは、[CIF コアコンポーネント ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) を参照してください。
 
 ### バグの修正 {#bug-fixes-commerce}
 

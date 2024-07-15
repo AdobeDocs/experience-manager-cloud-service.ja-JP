@@ -3,7 +3,7 @@ title: オーサリングに関する概念
 description: オーサー環境、プレビュー環境、パブリッシュ環境を使用した AEM でのオーサリングに関する概念について説明します。
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 100%
 

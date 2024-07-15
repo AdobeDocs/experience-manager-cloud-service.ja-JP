@@ -50,9 +50,9 @@ AEM as a Cloud Service リリース 2020.6.0 の AEM Sites の新機能と更新
 
 ## AEM as a Cloud Service の基盤における新機能 {#foundations}
 
-AEM プロジェクトの pom.xml 内のリモートリポジトリへの参照をすべて削除することで、AEM プロジェクトのビルド時間が短縮されます `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+AEM プロジェクトの pom.xml 内のリモートリポジトリリク `https://downloads.experiencecloud.adobe.com/content/maven/public` ストへの参照をすべて削除することで、AEM プロジェクトのビルド時間が短縮されます。
 
-以前その場所でホストされていたAEMas a Cloud ServiceSDK API Jar は、Maven のデフォルトのアーティファクトリポジトリである Maven Central に配置されています。
+以前その場所でホストされていたAEM as a Cloud Service SDK API Jar は、Maven のデフォルトのアーティファクトリポジトリーである Maven Central に配置されています。
 
 ## Cloud Manager の新機能 {#cloud-manager}
 

@@ -28,7 +28,7 @@ ht-degree: 82%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.9.0）のリリース日は、2023年9月28日（PT）です。次回の機能リリース（2023.10.0）は 2023年10月26日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.9.0）のリリース日は 2023年9月28日です。次回の機能リリース（2023.10.0）は 2023年10月26日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -42,9 +42,9 @@ ht-degree: 82%
 
 ## AEM Edge Delivery Services {#edge-delivery}
 
-エッジ配信は、コンテンツの影響を最大化し、顧客インタラクションの時点で測定可能なビジネス成果を促進することに重点を置いた、構成可能な新しいサービスセットです。
+Edge Deliveryは、コンテンツの影響を最大化し、お客様とのやり取りの時点で測定可能なビジネス成果を促進することに重点を置いた、構成可能な新しいサービスセットです。
 
-Edge Delivery Servicesについて詳しくは、記事を参照してください [こちら](/help/edge/overview.md).
+Edge Delivery Servicesについて詳しくは、記事 [ こちら ](/help/edge/overview.md) を参照してください。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -58,9 +58,9 @@ Edge Delivery Servicesについて詳しくは、記事を参照してくださ�
 
 ### 管理ビューの新機能 {#admin-view-features}
 
-* **AEM Assetsas a Cloud ServiceとEdge Delivery Services向けのドキュメントベースのオーサリングの統合**:AEM AssetsをEdge Delivery Services向けのドキュメントベースのオーサリングと統合して、web サイト作成者が以下を行えるようにします [AEM Assets Word またはGoogle ドキュメントでドキュメントをオーサリングする際に、Microsoft リポジトリで使用できる画像を使用します](/help/edge/using.md#integrate-assets-edge).
+* **AEM Assetsのas a Cloud ServiceとEdge Delivery Services向けのドキュメントベースのオーサリングの統合**:AEM AssetsとEdge Delivery Services向けのドキュメントベースのオーサリングを統合して、web サイト作成者が [AEM Assets リポジトリで使用できる画像を使用しながら、Microsoft Word またはGoogle ドキュメントでドキュメントをオーサリング ](/help/edge/using.md#integrate-assets-edge) できるようにします。
 
-* **ZIP アーカイブの抽出**:Experience Managerで管理される ZIP アーカイブを選択する機能。 [ファイルのExperience Managerへの直接抽出](/help/assets/manage-digital-assets.md#extract-zip-archives) ダウンロードせずに。
+* **ZIP アーカイブを解凍**:Experience Managerで管理されている ZIP アーカイブを選択し、ファイルをダウンロードせずに [Experience Managerに直接抽出 ](/help/assets/manage-digital-assets.md#extract-zip-archives) する機能。
 
   ![グループ用の項目をピン留め](/help/release-notes/assets/extract-archive.png)
 
@@ -97,7 +97,7 @@ Edge Delivery Servicesについて詳しくは、記事を参照してくださ�
 
 * **[ルールエディターでのカスタムエラーハンドラーによるエラー処理](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**：外部サービスから返されたエラーに応じて、カスタム関数を呼び出し、エンドユーザーに対してカスタマイズされた応答を提供できるようになりました。例えば、特定のエラーコードに対してバックエンドでカスタムワークフローを呼び出したり、サービスが停止していることを顧客に通知したりできます。
 
-* **[64 ビット版のAEM Forms Designer](/help/forms/installing-configuring-designer.md)**:64 ビットバージョンのAEM Forms Designer では、パフォーマンス、スケーラビリティ、メモリ管理が強化され、フォーム作成のエクスペリエンスが強化されます。 64 ビットアーキテクチャを使用すると、さらに大規模で複雑なプロジェクトに簡単に取り組むことができ、シームレスな設計ワークフローと最適化された効率が保証されます。この最先端のリリースでフォームデザイン機能を強化し、AEM Forms Designer の未来を体現します。
+* **[64 ビット版のAEM Forms Designer](/help/forms/installing-configuring-designer.md)**: 64 ビット版のAEM Forms Designerでは、パフォーマンス、スケーラビリティ、メモリ管理が向上し、フォーム作成エクスペリエンスが強化されます。 64 ビットアーキテクチャを使用すると、さらに大規模で複雑なプロジェクトに簡単に取り組むことができ、シームレスな設計ワークフローと最適化された効率が保証されます。この最先端のリリースでフォームデザイン機能を強化し、AEM Forms Designer の未来を体現します。
 
 ### 早期導入プログラム {#forms-early-adopter}
 
@@ -105,7 +105,7 @@ Edge Delivery Servicesについて詳しくは、記事を参照してくださ�
 
   公式メール ID から `aem-forms-ea@adobe.com` に送信して早期導入プログラムに参加し、機能へのアクセスをリクエストできます。
 
-* **[ヘッドレスアダプティブForms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=ja)**：ヘッドレスアダプティブ Formsを使用すると、開発者は、従来のグラフィカルユーザーインターフェイスではなく、API を介してアクセスおよび操作できるインタラクティブなフォームを作成、公開、管理できます。 ヘッドレスアダプティブフォームは以下の場合に役立ちます。
+* **[ヘッドレスアダプティブForms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=ja)**：ヘッドレスアダプティブFormsを使用すると、デベロッパーは、従来のグラフィカルユーザーインターフェイスではなく、API を介してアクセスおよび操作できるインタラクティブフォームを作成、公開、管理できます。 ヘッドレスアダプティブフォームは以下の場合に役立ちます。
 
    * 高品質のマルチチャネルフォームを好みのプログラミング言語で作成
    * デスクトップおよびモバイルアプリ、web サイト、チャットアプリケーションにフォームをネイティブに統合

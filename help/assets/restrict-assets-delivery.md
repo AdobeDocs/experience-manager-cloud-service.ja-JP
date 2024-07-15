@@ -1,6 +1,6 @@
 ---
 title: Experience Managerでのアセットの配信を制限
-description: でのアセット配信を制限する方法を説明します [!DNL Experience Manager].
+description: ' [!DNL Experience Manager] でアセット配信を制限する方法を説明します。'
 role: User
 source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
@@ -9,13 +9,13 @@ ht-degree: 1%
 
 ---
 
-# でのアセットへのアクセス制限 [!DNL Experience Manager] {#restrict-access-to-assets}
+# [!DNL Experience Manager] のアセットへのアクセス制限 {#restrict-access-to-assets}
 
 Experience Managerの中央アセットガバナンスを使用すると、DAM 管理者またはブランド管理者がアセットへのアクセスを管理できます。 オーサリング側、特にAEM as a Cloud Service オーサーインスタンスで承認済みアセットの役割を設定することで、アクセスを制限できます。
 
-ユーザー [検索](search-assets-api.md) または利用する [配信 URL](deliver-assets-apis.md) は、認証プロセスを正常に渡した際に、制限付きアセットにアクセスできます。
+ユーザー [ 検索 ](search-assets-api.md) または [ 配信 URL](deliver-assets-apis.md) の利用は、認証プロセスを正常に渡すと、制限付きアセットにアクセスできます。
 
-![アセットへの制限付きアクセス](/help/assets/assets/restricted-access.png)
+![ アセットへの制限付きアクセス ](/help/assets/assets/restricted-access.png)
 
 ## IMS トークンを使用した制限付き配信 {#restrict-delivery-ims-token}
 
@@ -26,33 +26,33 @@ Experience Managerとして、IMS による配信制限には、次の 2 つの�
 
 ### オーサリング {#authoring}
 
-内でのアセットの配信を制限できます [!DNL Experience Manager] の役割に基づいています。 役割を設定するには、次の手順を実行します。
+[!DNL Experience Manager] 内のアセットの配信を役割に基づいて制限できます。 役割を設定するには、次の手順を実行します。
 
-1. に移動します [!DNL Experience Manager] dam 管理者です。
+1. DAM 管理者として [!DNL Experience Manager] に移動します。
 1. 役割を設定する必要があるアセットを選択します。
-1. に移動します。 **[!UICONTROL プロパティ]** > **[!UICONTROL 詳細]**&#x200B;を選択し、以下を行います **[!UICONTROL 役割]** フィールドがに存在する [!UICONTROL 詳細メタデータ] タブ。
+1. **[!UICONTROL プロパティ]**/**[!UICONTROL 詳細]** に移動し、「**[!UICONTROL 詳細メタデータ]**」タブに [!UICONTROL  役割 ] フィールドが存在することを確認します。
 
-   ![役割メタデータ](/help/assets/assets/roles_metadata.jpg)
+   ![ 役割メタデータ ](/help/assets/assets/roles_metadata.jpg)
 フィールドが使用できない場合は、次の手順を使用してフィールドを追加します。
 
    1. **[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL メタデータスキーマ]**&#x200B;に移動します。
-   1. メタデータスキーマを選択し、 **[!UICONTROL 編集 _ホ_]**.
-   1. を追加 **[!UICONTROL 複数値テキスト]** からのフィールド **[!UICONTROL フォームを作成]** フォームの「メタデータ」セクションの右側のセクションです。
-   1. 新しく追加されたフィールドをクリックし、で次の更新を行います  **[!UICONTROL 設定]** パネル：
-      1. 変更： **[!UICONTROL フィールドラベル]** 対象： _役割_.
-      1. を更新 **[!UICONTROL プロパティにマッピング]** 対象： _./jcr:content/metadata/dam:roles_.
+   1. メタデータスキーマを選択し、「**[!UICONTROL 編集 _（e）_]**」をクリックします。
+   1. フォームのメタデータセクションの右側にある **[!UICONTROL フォームを作成]** セクションから **[!UICONTROL 複数値テキスト]** フィールドを追加します。
+   1. 新しく追加されたフィールドをクリックし、**[!UICONTROL 設定]** パネルで次の更新を行います。
+      1. **[!UICONTROL フィールドラベル]** を _役割_ に変更します。
+      1. **[!UICONTROL プロパティにマッピング]** を _に更新します。/jcr:content/metadata/dam:roles_ です。
 
 1. アセットの役割メタデータに追加する IMS グループを取得します。 IMS グループを取得するには、次の手順に従います。
    1. https://adminconsole.adobe.com/でログインします。
-   1. 各組織に移動して、次に移動します **[!UICONTROL ユーザーグループ]**.
-   1. 「」を選択します **[!UICONTROL ユーザーグループ]** を追加し、抽出する必要があります **[!UICONTROL orgID]** および **[!UICONTROL userGroupID]** url から、または次のような組織 ID を使用します `{orgID}@AdobeOrg:{usergroupID}`.
+   1. それぞれの組織に移動し、**[!UICONTROL ユーザーグループ]** に移動します。
+   1. 追加する **[!UICONTROL ユーザーグループ]** を選択し、URL から **[!UICONTROL orgID]** と **[!UICONTROL userGroupID]** を抽出するか、`{orgID}@AdobeOrg:{usergroupID}` などの組織 ID を使用します。
 
-1. グループ ID をに追加します **[!UICONTROL 役割]** アセットプロパティのフィールド。 <br>
-で定義されたグループ ID **[!UICONTROL 役割]** フィールドは、アセットにアクセスできる唯一のユーザーです。 では、IMS クライアント ID および IMS プロファイル ID も追加できます。 **[!UICONTROL 役割]** フィールド。 例えば、`{orgId}@AdobeOrg:{profileId}` のように指定します。
+1. グループ ID をアセットプロパティの **[!UICONTROL 役割]** フィールドに追加します。 <br>
+「**[!UICONTROL 役割]**」フィールドで定義されたグループ ID は、アセットにアクセスできる唯一のユーザーです。 **[!UICONTROL 役割]** フィールドに IMS クライアント ID および IMS プロファイル ID を追加することもできます。 例えば、`{orgId}@AdobeOrg:{profileId}` のように指定します。
 
    >[!NOTE]
    >
-   >新しいAssets ビューでは、個々のユーザーではなく、フォルダーレベルまで、そしてグループにのみアクセス権を付与できます。 の詳細情報 [Experience Manager Assets内での権限の管理](https://experienceleague.adobe.com/ja/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+   >新しいAssets ビューでは、個々のユーザーではなく、フォルダーレベルまで、そしてグループにのみアクセス権を付与できます。 詳しくは、[Experience Manager Assets内での権限の管理 ](https://experienceleague.adobe.com/ja/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) を参照してください。
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427429)
 
@@ -64,29 +64,29 @@ DAM 作成者は、アセットプロパティで使用できるアクティベ�
 
 次の手順を実行して、アセットのオンタイムとオフタイムを設定します。
 
-1. アセットを選択し、 **[!UICONTROL プロパティ]**.
+1. アセットを選択し、「**[!UICONTROL プロパティ]**」をクリックします。
 
-1. が含まれる **[!UICONTROL スケジュールされた（非）アクティブ化]** の節 **[!UICONTROL 基本]** タブで、要件に基づいて「オンタイム」または「オフタイム」を定義します。
+1. 「**[!UICONTROL 基本]**」タブの「**[!UICONTROL 予定（非スケジュール）アクティベーション]**」セクションで、要件に基づいて「オンタイム」または「オフタイム」を定義します。
 
-同様に、Assets ビューで、アセットを選択し、 **[!UICONTROL 詳細]** アセットのプロパティを表示し、オンタイムとオフタイムを定義します。
+同様に、Assets ビューでも、アセットを選択して **[!UICONTROL 詳細]** をクリックすると、アセットのプロパティが表示され、「オンタイム」と「オフタイム」を定義できます。
 
 このフィールドは、デフォルトのメタデータフォームで使用できます。 アセットがデフォルトのメタデータスキーマに基づいておらず、アセットプロパティで「オンタイム」フィールドと「オフタイム」フィールドを使用できない場合は、管理表示で次の手順を実行します。
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL メタデータスキーマ]**&#x200B;に移動します。
-1. メタデータスキーマを選択し、 **[!UICONTROL 編集]**.
-1. を追加 **[!UICONTROL 日付]** からのフィールド **[!UICONTROL フォームを作成]** フォームの「メタデータ」セクションの右側のセクションです。
-1. 新しく追加されたフィールドをクリックし、で次の更新を行います  **[!UICONTROL 設定]** パネル：
-   1. 変更： **[!UICONTROL フィールドラベル]** 対象： **オンタイム** または **オフタイム**.
-   1. を更新 **[!UICONTROL プロパティにマッピング]** 対象： _./jcr:content/onTime_ （用） **オンタイム** フィールドと _./jcr:content/offTime_ （用） **オフタイム** フィールド。
+1. メタデータスキーマを選択し、「**[!UICONTROL 編集]**」をクリックします。
+1. フォームのメタデータセクションの右側にある **[!UICONTROL フォームを作成]** セクションから **[!UICONTROL 日付]** フィールドを追加します。
+1. 新しく追加されたフィールドをクリックし、**[!UICONTROL 設定]** パネルで次の更新を行います。
+   1. **[!UICONTROL フィールドラベル]** を **オンタイム** または **オフタイム** に変更します。
+   1. **[!UICONTROL プロパティにマッピング]** を _に更新します。「/On Time_」フィールドと _の&#x200B;**jcr:content/onTime**。「オフタイム_ フィールドの場合は **jcr:content/offTime** です。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
 同様に、Assets ビューで、アセットがデフォルトのメタデータスキーマに基づいておらず、アセットのプロパティで「オンタイム」フィールドと「オフタイム」フィールドを使用できない場合は、次の手順を実行します。
 
-1. クリック **[!UICONTROL メタデータForms]** が含まれる **[!UICONTROL 設定]** セクション。
-1. メタデータフォームを選択し、 **[!UICONTROL 編集]**.
-1. を追加 **[!UICONTROL 日付]** からのフィールド **[!UICONTROL Components]** 左側のウィンドウのセクションからフォームへ。
-1. 新しく追加されたフィールドをクリックし、 **[!UICONTROL ラベル]** 対象： **オンタイム** または **オフタイム**.
-1. を更新 **[!UICONTROL メタデータプロパティ]** 対象： _./jcr:content/onTime_ （用） **オンタイム** フィールドと _./jcr:content/offTime_ （用） **オフタイム** フィールド。
+1. **[!UICONTROL 設定]** セクションの **[!UICONTROL メタデータForms]** をクリックします。
+1. メタデータフォームを選択し、「**[!UICONTROL 編集]**」をクリックします。
+1. 左側のペインの **[!UICONTROL コンポーネント]** セクションから **[!UICONTROL 日付]** フィールドをフォームに追加します。
+1. 新しく追加されたフィールドをクリックし、**[!UICONTROL ラベル]** を **オンタイム** または **オフタイム** に変更します。
+1. **[!UICONTROL メタデータプロパティ]** を _に更新します。「/On Time_」フィールドと _の&#x200B;**jcr:content/onTime**。「オフタイム_ フィールドの場合は **jcr:content/offTime** です。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
 
@@ -99,21 +99,21 @@ DAM 作成者は、アセットプロパティで使用できるアクティベ�
 
 AEM オーサーインスタンスやアセットセレクターからリクエストが送信された場合に制限付きアセットの配信を有効にするには、有効な IMS トークンが必要です。 次の手順に従います。
 
-1. [アクセストークンの生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token).
+1. [ アクセストークンの生成 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)。
    * AEM as a Cloud Service環境の開発コンソールにログインします。
 
-   * に移動します。 **[!UICONTROL 0.5511122]** > **[!UICONTROL 統合]** > **[!UICONTROL ローカルトークン]** > **[!UICONTROL ローカル開発トークンを取得]** > **[!UICONTROL accessToken 値をコピー]**. の詳細情報 [トークンと関連する側面へのアクセス方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)
+   * **[!UICONTROL Environment]**/**[!UICONTROL Integrations]**/**[!UICONTROL ローカルトークン]**/**[!UICONTROL ローカル開発トークンの取得]**/**[!UICONTROL accessToken 値をコピー]** に移動します。 [ トークンへのアクセス方法と関連する側面 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) について説明します。
 
-1. 取得したアクセストークンをに統合 **[!UICONTROL 認証]** ヘッダー、その値の先頭にが付いていることを確認する **[!UICONTROL ベアラー]**.
+1. 取得したアクセストークンを **[!UICONTROL Authorization]** ヘッダーに統合し、その値に **[!UICONTROL Bearer]** というプレフィックスが付いていることを確認します。
 
 1. リクエストを開始して、アクセストークンの機能を検証します。 IMS アクセストークンがない場合や、提供されたアクセストークンにアセットのメタデータに追加されたものと同じプリンシパルまたはグループがない場合は、404 エラーが発生します。
 
 #### Publish インスタンスのカスタム ID プロバイダーの配信 {#delivery-custom-identity-provider}
 
-Publishまたはプレビューインスタンスで設定されたカスタム ID プロバイダーの場合、セキュリティで保護されたアセットにアクセスできる必要があるグループを指定できます `groupMembership` セットアッププロセス中の属性。 次を経由してカスタム ID プロバイダーにログオンしたとき [SAML 統合](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), `groupMembership` 属性は読み取られて cookie を作成するために使用されます。これは、AEM オーサーまたはアセットセレクターからのリクエストの場合に IMS トークンと同様に、認証のすべてのリクエストで送信されます。
+Publishまたはプレビューインスタンスで設定されたカスタム ID プロバイダーの場合、セットアッププロセス中に、属性内の保護されたアセットへのアクセス権を持つ必要があ `groupMembership` グループを指定できます。 [SAML 統合 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) を介してカスタム ID プロバイダーにログオンすると、`groupMembership` 属性が読み取られ、Cookie が作成するために使用されます。この Cookie は、認証用のすべてのリクエストで送信されます。AEM オーサーまたはアセットセレクターからのリクエストの場合は IMS トークンと同様です。
 
-セキュリティで保護されたアセットがページで使用可能で、アセットをレンダリングするためのリクエストが配信 URL に対して行われると、AEMは cookie または IMS トークンに存在するロールを確認し、それに対して照合します `dam:roles property` アセットのオーサリング中に適用されます。 一致する場合は、アセットが表示されます。
+セキュリティで保護されたアセットがページで使用可能で、アセットをレンダリングするためのリクエストが配信 URL に対して行われると、AEMは cookie または IMS トークンに存在するロールを確認し、アセットのオーサリング中に適用される `dam:roles property` と照合します。 一致する場合は、アセットが表示されます。
 
 >[!NOTE]
 >
-> が含まれる [openapi 機能を使用してDynamic Mediaをアクティブ化するためのサポートチケット](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities)ユースケースでは、制限付き配信に言及してください。 Adobeエンジニアリングは、必要な説明や、制限付き配信のプロセスの設定を支援します。
+> [OpenAPI 機能を使用してDynamic Mediaをアクティブ化するためのサポートチケット ](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) で、ユースケースに制限付き配信を指定します。 Adobeエンジニアリングは、必要な説明や、制限付き配信のプロセスの設定を支援します。

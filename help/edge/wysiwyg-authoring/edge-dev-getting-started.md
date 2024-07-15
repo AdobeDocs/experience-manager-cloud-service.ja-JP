@@ -131,7 +131,7 @@ GitHub プロジェクトが完成したら、プロジェクトで使用でき�
 >
 >ユニバーサルエディターを使用してサイトを編集するには、Chromium ベースのブラウザーを使用する必要があります。
 
-1. Edge Delivery Servicesサイトテンプレートを使用した最新の WYSIWYG オーサリングを GitHub からダウンロードします。 [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+1. Edge Delivery Servicesサイトテンプレートを使用した最新の WYSIWYG オーサリングを GitHub （[`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)）からダウンロードします。
 
 1. AEM as a Cloud Service オーサリングインスタンスにログインし、サイトコンソールに移動して、**作成**／**テンプレートからサイト**&#x200B;をタップまたはクリックします。
 
@@ -199,4 +199,4 @@ GitHub プロジェクトが完成したら、プロジェクトで使用でき�
 
 >[!TIP]
 >
->AEM as a Cloud Serviceをコンテンツソースとする WYSIWYG オーサリングが可能な新しいEdge Delivery Servicesプロジェクトの作成に関するエンドツーエンドのチュートリアルについては、次を参照してください。 [このAEM GEMs ウェビナー](https://experienceleague.adobe.com/ja/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>AEM as a Cloud Serviceをコンテンツソースとする WYSIWYG オーサリングが可能な新しいEdge Delivery Servicesプロジェクトの作成に関するエンドツーエンドのチュートリアルについては、[ このAEM GEMs ウェビナー ](https://experienceleague.adobe.com/ja/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery) を参照してください。

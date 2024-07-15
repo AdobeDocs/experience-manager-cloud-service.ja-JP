@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: ed166aa753d4fb5c6fb1573032186e3e14f375df
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 100%
 

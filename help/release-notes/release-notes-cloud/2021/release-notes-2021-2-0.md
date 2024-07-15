@@ -58,7 +58,7 @@ ht-degree: 92%
 
 * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] には、事前設定済みの [!DNL Brand Portal] インスタンスが用意されています。[!DNL Cloud Manager] ユーザーは、[!DNL Experience Manager Assets] as a [!DNL Cloud Service] 上で [!DNL Brand Portal] をアクティブ化できます。[Brand Portal のライセンス認証](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ja)を参照してください。
 
-* 企業が [!DNL Brand Portal] を使用してアセットソーシングを行えるようになりました。アセットソーシング機能での使用 [!DNL Brand Portal] を使用して顧客とエージェンシーユーザーの連携を支援し、顧客が新しいマーケティングキャンペーン、撮影、プロジェクトのためのアセットソーシングをおこなえるようにします。 詳しくは、[ [!DNL Brand Portal] でのアセットソーシング](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja)を参照してください。
+* 企業が [!DNL Brand Portal] を使用してアセットソーシングを行えるようになりました。アセットソーシング機能では、[!DNL Brand Portal] を使用して顧客とエージェンシーユーザーの連携を支援し、顧客が新しいマーケティングキャンペーン、撮影、プロジェクトのためのアセットソーシングをおこなえるようにします。 詳しくは、[ [!DNL Brand Portal] でのアセットソーシング](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja)を参照してください。
 
 * [!DNL Brand Portal] 使用状況レポートには、アクティブユーザーのみ表示されるようになりました。非アクティブユーザーは表示されなくなりました。アクティブユーザーとは、[!DNL Admin Console] で製品プロファイルにアカウントが割り当てられているユーザーのことです。詳しくは、[[!DNL Brand Portal] レポート](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html?lang=ja)を参照してください。
 
@@ -79,9 +79,9 @@ ht-degree: 92%
 
 * 製品コンソールプロパティを拡張して、関連するコンテンツにすばやく移動するためのアクションなど、アセットやエクスペリエンスフラグメントのリンクを表示するようになりました。
 
-* 最新のCIF コアコンポーネント v1.8.0 を含んだCIF Venia 参照サイト 2021.02.24 をリリースしました。参照： [CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) を参照してください。
+* 最新のCIF コアコンポーネント v1.8.0 を含んだCIF Venia 参照サイト 2021.02.24 をリリースしました。詳しくは、[CIF Venia 参照サイト ](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) を参照してください。
 
-* CIF コアコンポーネント v1.8.0 をリリースしました。参照： [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) を参照してください。
+* CIF コアコンポーネント v1.8.0 をリリースしました。詳しくは、[CIF コアコンポーネント ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -106,7 +106,7 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 
 * 現在デプロイ中のドメイン名で使用されている SSL 証明書を一時的に選択できない可能性がある場合は、Cloud Manager UI からユーザーに通知されるようになりました。
 
-* Cloud Service の互換性の問題に対応するため、コード品質ルールが追加されました。
+* Cloud Service の互換性の問題をカバーするため、コード品質ルールが追加されました。
 
 ### バグの修正 {#bug-fixes-cloud-manager}
 
@@ -159,9 +159,9 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 ### コードリファクタリングツールの新機能 {#what-is-new-crt}
 
 * AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンでは、Repository Modernizer のいくつかのバグが修正されています。
-参照： [統合エクスペリエンス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) を参照してください。
+このプラグインについて詳しくは、[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) を参照してください。
 
 ### バグの修正 {#bug-fixes-crt}
 
 * Repository Modernizer で行われたいくつかのバグ修正。
-参照： [GitHub リソース：aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。
+詳しくは、[GitHub リソース：aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。

@@ -7,8 +7,8 @@ role: User
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '3442'
-ht-degree: 99%
+source-wordcount: '3434'
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 99%
 
 ### シーケンスの順序付けについて
 
-画像セットまたはスピンセットを [!DNL Dynamic Media] でまとめた後の画像の表示順序を、必要に応じて定義できます。デフォルトでは、アセットは英数字で並べられています。 ただし、カンマ区切りの正規表現リストを使用して、順序を定義することができます。
+画像セットまたはスピンセットを [!DNL Dynamic Media] でまとめた後の画像の表示順序を、必要に応じて定義できます。デフォルトでは、アセットはアルファベット順に並んでいます。ただし、コンマ区切りの正規表現リストを使用して順序を定義できます。
 
 シーケンスの順序付けの自動化に関しては、アセットを特定の方法で強制的に並べ替えるためのルールを、必要に応じて指定します。例えば、最初のアセットの名前が常に `_main` で、その後に `_alt1`、`_alt2`、`_alt3` などが続くようにするとします。このような場合は、次の構文を使用してシーケンスの順序付けルールを作成できます。
 
@@ -266,4 +266,3 @@ ht-degree: 99%
 >* [スピンセット](/help/assets/dynamic-media/spin-sets.md)
 >* [Dynamic Media のフォルダーレベルでの選択的公開を設定する](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) - 1 つのフォルダーの [!DNL Dynamic Media] への同期について詳しくは、トピックの「同期モード」を参照してください。
 >* [Cloud Services で Dynamic Media 設定を作成する](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) - すべてのフォルダーの [!DNL Dynamic Media] への同期について詳しくは、トピックの「Dynamic Media 同期モード」を参照してください。
-

@@ -8,11 +8,11 @@ exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
 source-git-commit: 9eb15dda5f56938d686d0b863cb1ffa841f8228b
 workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 76%
+ht-degree: 79%
 
 ---
 
-# アダプティブフォームと Salesforce の統合 {#configure-salesforce-with-ouath-2.0-client-credential}
+# アダプティブフォームと Salesforce {#configure-salesforce-with-ouath-2.0-client-credential} の統合
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -74,9 +74,9 @@ OAuth 2.0 クライアント資格情報認証設定を使用してアダプテ�
 1. 接続に成功した場合は、「**[!UICONTROL 作成]**」ボタンをクリックします。
 
 
-Salesforce アプリケーションを設定したら、フォームデータモデル（FDM）の作成時にこの設定を使用できます。 詳しくは、を参照してください [フォームデータモデル（FDM）の作成](create-form-data-models.md). アダプティブフォームの[フォームデータモデルの送信アクションを設定](/help/forms/using-form-data-model.md)を行って、Salesforce アプリケーションにデータを送信します。
+Salesforce アプリケーションを設定したら、フォームデータモデル（FDM）の作成時にこの設定を使用できます。 詳しくは、[ フォームデータモデル（FDM）の作成 ](create-form-data-models.md) を参照してください。 アダプティブフォームの[フォームデータモデルの送信アクションを設定](/help/forms/using-form-data-model.md)を行って、Salesforce アプリケーションにデータを送信します。
 
-ビジネスワークフローでのフォームデータモデル（FDM）の作成および使用について詳しくは、以下を参照してください [データ統合](data-integration.md).
+ビジネスワークフローでのフォームデータモデル（FDM）の作成および使用について詳しくは、[データ統合](data-integration.md)を参照してください。
 
 ## 関連記事
 

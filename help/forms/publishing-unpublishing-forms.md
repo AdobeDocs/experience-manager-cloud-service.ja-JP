@@ -8,7 +8,7 @@ docset: aem65s
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '1328'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 99%
 アダプティブフォームには、自動的に公開されない構成、設定、カスタマイズが含まれる場合があります。アダプティブフォームを公開する前に、以下のリソースを公開またはアクティブ化することをお勧めします。
 
 * 編集可能なアダプティブフォームテンプレート
-* Adobe Sign、Typekit、reCAPTCHA、フォームデータモデル（FDM）のCloud Service設定
+* Adobe Sign、Typekit、reCAPTCHA、フォームデータモデル（FDM）のクラウドサービスの設定
 * その他のクラウドサービスの設定は、ユーザーが管理者権限を保有している場合にのみアクティブ化されます。
 * カスタマイズ。以下のようなものが含まれます。
 

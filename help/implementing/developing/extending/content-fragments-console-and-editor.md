@@ -5,7 +5,7 @@ exl-id: a837f09f-9d07-4430-839a-7cf0f200d2df
 feature: Developing, Content Fragments
 role: Admin, Architect, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 100%
 

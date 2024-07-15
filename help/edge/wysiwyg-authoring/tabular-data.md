@@ -44,7 +44,7 @@ Edge Delivery Services を使用した AEM のサイトでは、キーと値の�
 
 Edge Delivery Services を使用した AEM プロジェクトでスプレッドシートを使ってマッピングを作成するには、最新のサイトテンプレートを使用してサイトを作成しておく必要があります。
 
-ドキュメントを参照してください [Edge Delivery Servicesを使用した WYSIWYG オーサリングの開発者向け入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) を参照してください。
+詳しくは、[Edge Delivery Servicesを使用した WYSIWYG オーサリングの開発者向け入門ガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) を参照してください。
 
 ## スプレッドシートの作成 {#spreadsheet}
 

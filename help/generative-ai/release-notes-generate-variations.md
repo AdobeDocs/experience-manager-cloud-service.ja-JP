@@ -1,6 +1,6 @@
 ---
 title: バリエーションを生成するためのリリースノート
-description: AEMas a Cloud Serviceからアクセスできる、Generate Variations のリリースノートとEdge Delivery ServicesのSidekick
+description: AEM as a Cloud ServiceおよびEdge Delivery ServicesのSidekickからアクセスできる、バリエーションを生成するためのリリースノート
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 # バリエーションを生成するためのリリースノート {#release-notes-generate-variations}
 
-このページでは、AEMas a Cloud Serviceからアクセスできる Generate Variations のリリースノートとEdge Delivery ServicesのSidekickについて説明します。
+このページでは、AEM as a Cloud Serviceからアクセスできるバリエーションを生成のリリースノートとEdge Delivery ServicesのSidekickについて説明します。
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ ht-degree: 11%
 
 ## 既知の問題 {#known-issues}
 
-* 以前のバージョンから移行する際のカスタムプロンプトの問題については、を参照してください。 [v2.0.0 のカスタムプロンプト](/help/generative-ai/generate-variations.md#custom-prompts-v200)
+* 以前のバージョンから移行する際のカスタムプロンプトの問題については、[v2.0.0 のカスタムプロンプト ](/help/generative-ai/generate-variations.md#custom-prompts-v200) を参照してください。
 
 ## 以前のリリース {#previous-releases}
 

@@ -3,7 +3,7 @@ title: AEM Forms as a Cloud Service リリースノート
 description: AEM Forms as a Cloud Service の新機能、ベータ版リリース、プレリリース情報などについて説明します。
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2003'
 ht-degree: 100%
 

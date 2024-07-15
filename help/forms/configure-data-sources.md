@@ -1,6 +1,6 @@
 ---
 title: データソースの設定方法
-description: RESTful Web サービス、SOAP ベースの Web サービスおよび OData サービスを、フォームデータモデル（FDM）のデータソースとして設定する方法について説明します。
+description: RESTful web サービス、SOAP ベースの web サービスおよび OData サービスをフォームデータモデル（FDM）のデータソースとして設定する方法について説明します。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
 source-wordcount: '2129'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -178,14 +178,14 @@ RESTful サービス Open API 仕様バージョン 3.0 でサポートされて
 
 詳しくは、[OpenAPI 3.0 仕様](https://swagger.io/specification/v3/)を参照してください。
 
-### パフォーマンスを最適化するためのフォームデータモデル（FDM） HTTP クライアント設定 {#fdm-http-client-configuration}
+### パフォーマンスを最適化するためのフォームデータモデル（FDM）HTTP クライアント設定 {#fdm-http-client-configuration}
 
 データソースとして RESTful web サービスと統合する場合の [!DNL Experience Manager Forms] フォームデータモデルには、パフォーマンス最適化のための HTTP クライアント設定が含まれています。
 
 
 **[!UICONTROL REST データソース設定のフォームデータモデル HTTP クライアント設定]**&#x200B;の次のプロパティを設定し、正規表現を指定します。
 
-* の使用 `http.connection.max.per.route` フォームデータモデル（FDM）と RESTful web サービス間で許可される最大接続数を設定するプロパティ。 デフォルト値は 20 接続です。
+* `http.connection.max.per.route` プロパティを使用して、フォームデータモデル（FDM）と RESTful web サービス間で許可される最大接続数を設定します。デフォルト値は 20 接続です。
 
 * `http.connection.max` プロパティを使用して、各ルートに許可される最大接続数を指定します。デフォルト値は 40 接続です。
 
@@ -213,7 +213,7 @@ RESTful サービス Open API 仕様バージョン 3.0 でサポートされて
 
 1. [!UICONTROL REST データソース用フォームデータモデル HTTP クライアント設定]ダイアログで、
 
-   * でのフォームデータモデル（FDM）と RESTful web サービス間の最大接続数の指定 **[!UICONTROL 接続制限（合計）]** フィールド。 デフォルト値は 20 接続です。
+   * 「**[!UICONTROL 接続制限（合計）]**」フィールドに、フォームデータモデル（FDM）と RESTful web サービスの間で許可される最大接続数を指定します。デフォルト値は 20 接続です。
 
    * **[!UICONTROL ルートごとの接続制限]**&#x200B;フィールドで、各ルートに許可される最大接続数を指定します。デフォルト値は 2 つの接続です。
 
@@ -267,7 +267,7 @@ OData サービスは、そのサービスのルート URL によって識別さ
 
 >[!NOTE]
 >
-> フォームデータモデル（FDM）のサポート [OData バージョン 4](https://www.odata.org/documentation/).
+> フォームデータモデル（FDM）は [OData バージョン 4](https://www.odata.org/documentation/) をサポートします。
 >オンライン環境またはオンプレミス環境で [!DNL Microsoft®® Dynamics 365] を設定する詳しい手順については、[[!DNL Microsoft® Dynamics] OData 設定](ms-dynamics-odata-configuration.md)を参照してください。
 
 1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーを選択します。
@@ -329,7 +329,7 @@ When you enable mutual authentication for form data model (FDM), both the data s
 
 ## 次の手順 {#next-steps}
 
-上記の手順により、データソースが設定されました。次に、フォームデータモデル（FDM）を作成できます。データソースが設定されていないフォームデータモデル（FDM）が既に作成されている場合は、設定したデータソースに関連付けることができます。 詳しくは、[フォームデータモデルの作成](create-form-data-models.md)を参照してください。
+上記の手順により、データソースが設定されました。次に、フォームデータモデル（FDM）を作成できます。データソースのないフォームデータモデル（FDM）が既に作成されている場合は、設定したデータソースにそのフォームデータモデル（FDM）を関連付けることができます。詳しくは、[フォームデータモデルの作成](create-form-data-models.md)を参照してください。
 
 
 <!--

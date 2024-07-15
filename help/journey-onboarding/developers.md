@@ -6,15 +6,15 @@ role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1411'
-ht-degree: 90%
+source-wordcount: '1397'
+ht-degree: 100%
 
 ---
 
 
 # 開発者およびデプロイメントマネージャーのタスク {#developer-deployment-manager}
 
-このオプションの部分は、 [オンボーディングジャーニー](overview.md) 開発者やデプロイメントマネージャーが git にアクセスしてアプリケーションを開発し、パイプラインを使用してデプロイする方法を学びます。
+[オンボーディングジャーニー](overview.md)のこのオプションのパートでは、開発者とデプロイメントマネージャーが Git にアクセスしてアプリケーションを開発し、パイプラインを使用してデプロイする方法を説明します。
 
 ## これまでの説明内容 {#story-so-far}
 
@@ -64,7 +64,7 @@ Cloud Manager でセルフサービスの Git アカウント管理を使用す�
 
    ![環境カードの「リポジトリ情報にアクセス」ボタン](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. 次をクリック： **リポジトリ情報を表示** ボタンをクリックして、表示するダイアログを開きます。
+1. 「**リポジトリ情報を表示**」ボタンをクリックして、以下を表示するダイアログを開きます。
 
    * Cloud Manager Git リポジトリへの URL。
    * Git ユーザー名。
@@ -119,7 +119,7 @@ Cloud Manager でセルフサービスの Git アカウント管理を使用す�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. 次に移動： **パイプライン** カード **プログラムの概要** 」ページに移動し、前のセクションで作成したパイプラインの横の省略記号ボタンをクリックして、「 」を選択します。 **実行** を選択します。
+1. 「**プログラムの概要**」ページから&#x200B;**パイプライン**&#x200B;カードに移動し、前のセクションで作成したパイプラインの横にある省略記号ボタンをクリックして、メニューで「**実行**」を選択します。
 
 1. パイプラインの実行が開始され、「**ステータス**」列に示されます。
 
@@ -150,6 +150,6 @@ Cloud Manager でセルフサービスの Git アカウント管理を使用す�
 * [Cloud Manager での Git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Cloud Manager の Git リポジトリを使用する方法と、オンプレミスで顧客管理された独自の Git リポジトリを Cloud Manager と統合する方法について説明します。
 * [ローカル開発環境の設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ja) - このチュートリアルでは、AEM as a Cloud Service SDK を使用して Adobe Experience Manager（AEM）用のローカル開発環境を設定する手順について説明します。
 * [AEM Sites の概要 - WKND チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja) - 複数パートから成るこのチュートリアルは、Adobe Experience Manager（AEM）を初めて使用する開発者向けに設計されています。このチュートリアルでは、架空のライフスタイルブランド WKND の AEM Sites の実装について説明します。このチュートリアルでは、Adobe Experience Manager Sites を使用したプロジェクトの設定、コアコンポーネント、編集可能なテンプレート、クライアントサイドライブラリ、コンポーネント開発などの基本的なトピックについて説明します。
-* [React を使用したAEMでのSPAの概要](/help/implementing/developing/hybrid/getting-started-react.md)  — この記事では、サンプルのSPAアプリケーションを紹介し、その設定方法を説明し、React フレームワークを使用して独自のSPAをすぐに使い始めるための方法について説明します。
-* [AEMのSPA使用の手引きAngular](/help/implementing/developing/hybrid/getting-started-angular.md)  — この記事では、サンプルのSPAアプリケーションを紹介し、その設定方法を説明し、Angularフレームワークを使用して独自のSPAをすぐに使い始める方法を説明します。
+* [React を使用した AEM での SPA の概要](/help/implementing/developing/hybrid/getting-started-react.md) - この記事では、サンプルの SPA アプリケーションとその組み立てについて紹介します。また、React フレームワークを使用して独自の SPA の運用を速やかに開始する方法についても説明します。
+* [Angular を使用した AEM での SPA の概要](/help/implementing/developing/hybrid/getting-started-angular.md) - この記事では、サンプルの SPA アプリケーションとその組み立てについて紹介します。また、Angular フレームワークを使用して独自の SPA の運用を速やかに開始する方法についても説明します。
 * [ヘッドレス開発者ジャーニー](/help/journey-headless/developer/overview.md) - AEMでヘッドレスアプリケーションを開発する際のガイド付きコースについては、ここから始めてください。

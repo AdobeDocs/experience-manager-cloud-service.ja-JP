@@ -6,7 +6,7 @@ feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3744'
 ht-degree: 100%
 

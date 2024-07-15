@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->この機能はまだリリースされておらず、一部のログ宛先はリリース時には使用できない場合があります。 それまでの間、サポートチケットを開いて、にログを転送できます **Splunk**（を参照） [ログ記事](/help/implementing/developing/introduction/logging.md).
+>この機能はまだリリースされておらず、一部のログ宛先はリリース時には使用できない場合があります。 それまでの間、サポートチケットを開いて、**ログ記事 [ で説明しているように、ログを** Splunk](/help/implementing/developing/introduction/logging.md) に転送できます。
 
 ログベンダーのライセンスまたはログ製品のホストのライセンスを持つお客様は、AEM ログ（Apache/Dispatcherを含む）および CDN ログを、関連するログ出力先に転送できます。 AEM as a Cloud Serviceは、次のログ出力先をサポートしています。
 
@@ -51,7 +51,7 @@ AEMと Apache/Dispatcherのログを、専用のエグレス IP などのAEMの�
         logForwarding.yaml
    ```
 
-1. `logForwarding.yaml` メタデータと、次の形式に類似した設定を含める必要があります（例として Splunk を使用）。
+1. メタデータと、次の形式に類似した設定を含める必要が `logForwarding.yaml` ります（例として Splunk を使用）。
 
    ```
    kind: "LogForwarding"
@@ -67,11 +67,11 @@ AEMと Apache/Dispatcherのログを、専用のエグレス IP などのAEMの�
          index: "AEMaaCS"
    ```
 
-   この **種類** パラメーターをに設定する必要があります `LogForwarding` バージョンは、スキーマのバージョン（1）に設定する必要があります。
+   **kind** パラメーターはに設定する必要があります。また `LogForwarding` バージョンはスキーマバージョン（1）に設定する必要があります。
 
-   設定のトークン（など） `${{SPLUNK_TOKEN}}`）はシークレットを表すもので、Git に保存しないでください。 代わりに、Cloud Managerとして宣言します  [環境変数](/help/implementing/cloud-manager/environment-variables.md) タイプの **秘密**. 必ずを選択してください。 **すべて** 「適用されるサービス」フィールドのドロップダウン値として使用することで、ログを、オーサー層、パブリッシュ層およびプレビュー層に転送できます。
+   設定内のトークン（`${{SPLUNK_TOKEN}}` など）は秘密鍵を表しているので、Git に保存しないでください。 代わりに、**secret** 型のCloud Manager[ 環境変数 ](/help/implementing/cloud-manager/environment-variables.md) として宣言します。 ログをオーサー層、パブリッシュ層およびプレビュー層に転送できるように、「適用されるサービス」フィールドのドロップダウン値として **すべて** を必ず選択してください。
 
-   以下を追加することで、CDN ログとAEM ログ（Apache/Dispatcherを含む）の間で異なる値を設定できます **cdn** および/または **aem** 次の後にブロック **default** プロパティが内で定義されたプロパティを上書きするブロック **default** ブロック。必要なのは enabled プロパティのみです。 以下の例に示すように、CDN ログに別の Splunk インデックスを使用する使用例が考えられます。
+   **default** ブロックの後に追加の **cdn** ブロックや **aem** ブロックを含めることで、CDN ログとAEM ログ（Apache/Dispatcherを含む）に異なる値を設定できます。このブロックでは、プロパティを **default** ブロックで定義されたプロパティを上書きできます。必要なのは、有効なプロパティのみです。 以下の例に示すように、CDN ログに別の Splunk インデックスを使用する使用例が考えられます。
 
    ```
       kind: "LogForwarding"
@@ -144,11 +144,11 @@ data:
 
 サンプルの SAS トークン設定のスクリーンショットを次に示します。
 
-![Azure Blob SAS トークン設定](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+![Azure Blob SAS トークン設定 ](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
 
 #### Azure Blob Storage CDN ログ {#azureblob-cdn}
 
-グローバルに分散された各ログサーバーは、数秒ごとに、の下に新しいファイルを生成します。 `aemcdn` フォルダー。 作成したファイルは、に追加されなくなります。 ファイル名形式は YYYY-MM-DDThh です。:mm:ss.sss-uniqueid.log. 例：2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log。
+グローバルに分散された各ログサーバーは、`aemcdn` フォルダーの下で、数秒ごとに新しいファイルを生成します。 作成したファイルは、に追加されなくなります。 ファイル名の形式は YYYY-MM-DDThh:mm:ss.sss-uniqueid.log です。 例：2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log
 
 例えば、ある時点で次のようになります。
 
@@ -169,7 +169,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-各ファイルには、それぞれ別の行に記述された複数の JSON ログエントリが含まれます。 ログエントリの形式については、こちらを参照してください [ログ記事](/help/implementing/developing/introduction/logging.md)また、各ログエントリには、で説明されている追加のプロパティも含まれます。 [ログエントリの形式](#log-format) セクションを下にします。
+各ファイルには、それぞれ別の行に記述された複数の JSON ログエントリが含まれます。 ログエントリの形式については [ ログに関する記事 ](/help/implementing/developing/introduction/logging.md) を参照してください。また、各ログエントリには、以下の [ ログエントリの形式 ](#log-format) の節で説明する追加のプロパティも含まれます。
 
 #### Azure Blob Storage AEM ログ {#azureblob-aem}
 
@@ -183,7 +183,7 @@ AEM ログ（Apache/Dispatcherを含む）は、次の命名規則でフォル�
 
 各フォルダーに 1 つのファイルが作成され、に追加されます。 お客様は、このファイルが大きくなりすぎないよう、ファイルの処理と管理を行います。
 
-のログエントリ形式を参照してください。 [ログ記事](/help/implementing/developing/introduction/logging.md). ログエントリには、で説明されている追加のプロパティも含まれます。 [ログエントリの形式](#log-formats) セクションを下にします。
+[ ログに関する記事 ](/help/implementing/developing/introduction/logging.md) のログエントリ形式を参照してください。 ログエントリには、以下の [ ログエントリの形式 ](#log-formats) の節で説明する追加のプロパティも含まれます。
 
 
 ### Datadog {#datadog}
@@ -232,9 +232,9 @@ data:
 
 * 資格情報には、アカウントの資格情報ではなく、必ずデプロイメントの資格情報を使用します。 これらは、次の画像に似た画面で生成される資格情報です。
 
-![Elastic デプロイメント資格情報](/help/implementing/developing/introduction/assets/ec-creds.png)
+![Elastic デプロイメント資格情報 ](/help/implementing/developing/introduction/assets/ec-creds.png)
 
-* オプションのパイプラインプロパティは、Elasticsearchまたは OpenSearch 取り込みパイプラインの名前に設定する必要があります。この名前は、ログエントリを適切なインデックスにルーティングするように設定できます。 パイプラインのプロセッサタイプはに設定する必要があります。 *script* スクリプト言語はに設定する必要があります。 *無痛*. 次に、ログエントリを aemaccess_dev_26_06_2024 などのインデックスにルーティングするスクリプトスニペットの例を示します。
+* オプションのパイプラインプロパティは、Elasticsearchまたは OpenSearch 取り込みパイプラインの名前に設定する必要があります。この名前は、ログエントリを適切なインデックスにルーティングするように設定できます。 パイプラインのプロセッサタイプは *スクリプト* に設定し、スクリプト言語は *痛みなし* に設定する必要があります。 次に、ログエントリを aemaccess_dev_26_06_2024 などのインデックスにルーティングするスクリプトスニペットの例を示します。
 
 ```
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
@@ -260,20 +260,20 @@ data:
 
 #### HTTPS CDN ログ {#https-cdn}
 
-Web リクエスト（POST）は、ログエントリの配列である json ペイロードを使用して継続的に送信されます。ログエントリの形式については、で説明しています。 [ログ記事](/help/implementing/developing/introduction/logging.md#cdn-log). その他のプロパティについては、を参照してください [ログエントリの形式](#log-formats) セクションを下にします。
+Web リクエスト（POST）は、[ ログ記事 ](/help/implementing/developing/introduction/logging.md#cdn-log) で説明されているログエントリ形式で、ログエントリの配列である json ペイロードを使用して継続的に送信されます。 その他のプロパティについては、以下の「[ ログエントリの形式 ](#log-formats) の節で説明します。
 
-という名前のプロパティもあります `sourcetype`。値に設定されます。 `aemcdn`.
+また、`sourcetype` という名前のプロパティもあり、`aemcdn` という値に設定されています。
 
 >[!NOTE]
 >
-> 最初の CDN ログエントリが送信される前に、HTTP サーバーは 1 回限りのチャレンジ（パスに送信されるリクエスト）を正常に完了する必要があります ``wellknownpath`` 応答する必要がある相手 ``*``.
+> 最初の CDN ログエントリが送信される前に、HTTP サーバーは、1 回限りのチャレンジ（パス ``wellknownpath`` に送信されるリクエストで ``*`` を返す必要がある）を正常に完了する必要があります。
 
 
 #### HTTPS AEM ログ {#https-aem}
 
-AEM ログ（apache/dispatcher を含む）の場合、web リクエスト（POST）は、に記載されているように、様々なログエントリ形式でログエントリの配列である json ペイロードで継続的に送信されます。 [ログ記事](/help/implementing/developing/introduction/logging.md). その他のプロパティについては、を参照してください [ログエントリの形式](#log-format) セクションを下にします。
+AEM ログ（apache/dispatcher を含む）の場合、web リクエスト（POST）は、[ ログ記事 ](/help/implementing/developing/introduction/logging.md) で説明されているように、様々なログエントリ形式で、ログエントリの配列である json ペイロードを使用して継続的に送信されます。 その他のプロパティについては、以下の「[ ログエントリの形式 ](#log-format) の節で説明します。
 
-という名前のプロパティもあります `sourcetype`。この値は、次のいずれかの値に設定されます。
+`sourcetype` という名前のプロパティもあり、次のいずれかの値に設定されます。
 
 * aemaccess
 * aemerror
@@ -318,7 +318,7 @@ data:
 
 ## ログエントリの形式 {#log-formats}
 
-一般を参照してください [ログ記事](/help/implementing/developing/introduction/logging.md) 各ログタイプ（CDN ログおよびAEM ログ（Apache/Dispatcherを含む））の形式については、を参照してください。
+各ログタイプ（CDN ログおよび Apache/Dispatcherを含むAEM ログ）の形式については、一般的な [ ログに関する記事 ](/help/implementing/developing/introduction/logging.md) を参照してください。
 
 複数のプログラムおよび環境からのログは、ログ記事で説明されている出力に加えて、同じログ宛先に転送される場合があるので、次のプロパティが各ログエントリに含まれます。
 
@@ -345,9 +345,9 @@ aem_tier: author
 
 一部の組織は、ログの宛先で受信できるトラフィックを制限します。
 
-CDN ログの場合は、の説明に従って、IP アドレスを許可リストに登録できます。 [この記事](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). その共有 IP アドレスのリストが大きすぎる場合は、（Adobe以外の） Azure Blob Store にトラフィックを送信することを検討してください。このストアでは、専用の IP アドレスのログを最終的な送信先に送信するロジックを書き込むことができます。
+CDN ログの場合は、[ この記事 ](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) で説明しているように、IP アドレスを許可リストに登録できます。 その共有 IP アドレスのリストが大きすぎる場合は、（Adobe以外の） Azure Blob Store にトラフィックを送信することを検討してください。このストアでは、専用の IP アドレスのログを最終的な送信先に送信するロジックを書き込むことができます。
 
-AEM ログ（Apache/Dispatcherを含む）の場合は、通過するログ転送を設定できます [高度なネットワーク](/help/security/configuring-advanced-networking.md). オプションのを利用した、以下の 3 つの高度なネットワークタイプのパターンを参照してください。 `port` パラメーター、 `host` パラメーター。
+AEM ログ（Apache/Dispatcherを含む）の場合は、ログ転送を設定して [ 高度なネットワーク機能 ](/help/security/configuring-advanced-networking.md) を実行できます。 オプションの `port` パラメーターと `host` パラメーターを利用する、以下の 3 つの高度なネットワークタイプのパターンを参照してください。
 
 ### フレキシブルポートエグレス {#flex-port}
 

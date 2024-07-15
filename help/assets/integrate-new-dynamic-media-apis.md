@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # AEM Assetsとダウンストリームアプリケーションの統合 {#integrate-new-dynamic-media-apis}
 
-すべて [承認済みアセット](approved-assets.md) Experience Managerのアセットリポジトリで使用可能ダウンストリームアプリケーションへの配信に使用できます。
+Experience Managerアセットリポジトリで使用可能なすべての [ 承認済みアセット ](approved-assets.md) を、ダウンストリームアプリケーションに配信できます。
 
 検索および配信 API を使用して独自のカスタムユーザーインターフェイスをExperience Manager Assets リポジトリと統合するか、Adobeのマイクロフロントエンドアセットセレクターを使用できます。
 
-![AEM Assets リポジトリとの統合](assets/asset-selector-integration.png)
+![AEM Assets リポジトリとの統合 ](assets/asset-selector-integration.png)
 
-API を使用すると、AEM Assets リポジトリから承認済みアセットを検索し、配信 URL を使用してダウンストリームアプリケーションにそのアセットを配信できます。 詳しくは、を参照してください [検索](/help/assets/search-assets-api.md) および [配信](/help/assets/deliver-assets-apis.md) API です。
+API を使用すると、AEM Assets リポジトリから承認済みアセットを検索し、配信 URL を使用してダウンストリームアプリケーションにそのアセットを配信できます。 詳しくは、[ 検索 ](/help/assets/search-assets-api.md) および [ 配信 ](/help/assets/deliver-assets-apis.md) API を参照してください。
 
-Adobeのマイクロフロントエンドアセットセレクターは、と簡単に統合できるユーザーインターフェイスを提供します [!DNL Experience Manager Assets as a Cloud Service] これにより、リポジトリで使用可能な承認済みデジタルアセットを参照または検索し、アプリケーションのオーサリングエクスペリエンスで使用できるようになります。 詳しくは、を参照してください [マイクロフロントエンドアセットセレクター](/help/assets/asset-selector.md).
+Adobeのマイクロフロントエンドアセットセレクターは、[!DNL Experience Manager Assets as a Cloud Service] リポジトリと簡単に統合できるユーザーインターフェイスを提供します。ユーザーはこれにより、リポジトリで使用可能な承認済みデジタルアセットを参照または検索し、アプリケーションのオーサリングエクスペリエンスで使用できるようになります。 詳しくは、[ マイクロフロントエンドアセットセレクター ](/help/assets/asset-selector.md) を参照してください。
 

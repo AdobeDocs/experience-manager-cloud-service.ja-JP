@@ -7,7 +7,7 @@ hidefromtoc: true
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '2071'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -110,12 +110,12 @@ AEM Sites ページでアダプティブフォームコンポーネントを使�
    * **事前入力サービス**：事前入力サービスを使用すると、既存のデータを使用してアダプティブフォームのフィールドに自動で入力することができます。ユーザーがフォームを開くと、これらのフィールドの値は事前入力されています。事前入力サービスについて詳しくは、[アダプティブフォームフィールドの事前入力](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html?lang=ja#configuring-prefill-service-using-configuration-manager)を参照してください。
    * **クライアントライブラリカテゴリ**：式で使用され、アダプティブフォームでサポートされている [JavaScript 関数](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=ja#custom-functions)を指定します。
 * **データモデル**：データモデルを使用すると、異なるデータソースのエンティティやサービスをアダプティブフォームに統合することができます。作成するアダプティブフォームで、複数のデータソースに対するデータの取得と書き込みが必要になる場合は、**[!UICONTROL フォームデータモデル]**&#x200B;を選択します。
-   * **フォームデータモデル**：フォームデータモデル（FDM）を使用すると、アダプティブフォームが異なるデータソースと通信できます。 データソースの設定について詳しくは、[データソースの設定](/help/forms/configure-data-sources.md)を参照してください。
+   * **フォームデータモデル**：フォームデータモデル（FDM）を使用すると、アダプティブフォームが異なるデータソースと通信できます。データソースの設定について詳しくは、[データソースの設定](/help/forms/configure-data-sources.md)を参照してください。
    * **スキーマ**：スキーマは、組織内のバックエンドシステムによってデータが作成または使用される構造を表しています。[アダプティブフォームにスキーマを関連付け](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html?lang=ja)て、そのスキーマの要素を使用することにより、アダプティブフォームに動的コンテンツを追加できます。
 
      >[!NOTE]
      >
-     > フォームデータモデル（FDM）を設定した後は、関連するフォームモデルを変更できません。 ただし、フォームデータモデル（FDM）に関連付けられたスキーマは変更できます。
+     > フォームデータモデル（FDM）を設定した後は、関連するフォームモデルを変更できません。ただし、フォームデータモデル（FDM）に関連付けられたスキーマは変更できます。
 
 * **「送信」タブ**
 

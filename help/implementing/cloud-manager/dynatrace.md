@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Architect, Developer
 source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 100%
 

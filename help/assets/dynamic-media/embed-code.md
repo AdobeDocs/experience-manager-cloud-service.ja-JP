@@ -7,8 +7,8 @@ role: User
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 96%
+source-wordcount: '378'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager を WCM として使用&#x200B;_していない_&#x200B
 
 >[!NOTE]
 >
->埋め込みコードは、選択したアセットを公開するまでコピーできません。 また、ビューアプリセットまたは画像プリセットを公開する必要もあります。
+>埋め込みコードは、選択したアセットを公開するまではコピーできません。また、ビューアプリセットまたは画像プリセットを公開する必要もあります。
 >
 >[アセットを公開する](publishing-dynamicmedia-assets.md)を参照してください。
 >

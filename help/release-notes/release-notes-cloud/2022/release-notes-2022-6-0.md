@@ -13,7 +13,7 @@ ht-degree: 81%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の 2022.6.0 リリースノート {#release-notes}
 
-以下の節では、2022.6.0 バージョンのの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
+次の節では、[!DNL Experience Manager]as a Cloud Serviceの 2022.6.0 バージョンの機能リリースノートの概要を説明します。
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ ht-degree: 81%
 
 ### の新機能[!DNL Sites] {#sites-features}
 
-* 新品 [ユーザーインターフェイス](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) コンテンツ管理者やコンテンツ作成者が、ヘッドレスのユースケースでのコンテンツフラグメントの管理（公開、非公開、コピー、移動など）、検索/フィルタリング、作成を効率的に行えるようになりました。
+* コンテンツ管理者やコンテンツ作成者が、ヘッドレスのユースケースでのコンテンツフラグメントの管理（公開、非公開、コピー、移動など）、検索/フィルタリング、作成を効率的に行うための新しい [ ユーザーインターフェイス ](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) を使用できるようになりました。
 
   ![コンテンツフラグメントコンソール](/help/release-notes/assets/cf-ui.png)
 
@@ -96,7 +96,7 @@ Experience Manager Assets は Adobe Sensei AI 機能を使用して、[画像内
 
 ### 新機能 {#what-is-new-foundation}
 
-* 5 月（2022.5.0）のリリースノートに記載されているように、レプリケーションエージェント管理画面の下の「ツリーを追加」オプション **配分** タブが削除されました。 代わりに、コンテンツのツリー階層を持つパッケージは、[公開を管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーを公開](/help/operations/replication.md#manage-publication#publish-content-tree-workflow)ワークフローを使用して複製する必要があります。
+* 5 月（2022.5.0）のリリースノートに記載されているように、レプリケーションエージェント管理画面の「**配布**」タブにある「ツリーを追加」オプションが削除されました。 代わりに、コンテンツのツリー階層を持つパッケージは、[公開を管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーを公開](/help/operations/replication.md#manage-publication#publish-content-tree-workflow)ワークフローを使用して複製する必要があります。
 
 ## Cloud Manager {#cloud-manager}
 

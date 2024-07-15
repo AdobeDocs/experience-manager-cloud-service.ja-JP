@@ -5,7 +5,7 @@ feature: Adaptive Forms, Forms Designer
 role: Admin, Developer, User
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
 source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 100%
 

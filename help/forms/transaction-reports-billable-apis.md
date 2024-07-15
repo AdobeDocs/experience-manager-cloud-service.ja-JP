@@ -461,7 +461,7 @@ AEM Forms には、フォームの送信、ドキュメントの処理、ドキ�
 
 次の操作を 1 つ以上実行すると、呼び出し API の使用がトランザクションとしてカウントされます。
 
-1. 非PDF形式からPDF形式への変換。 <!--For instance, the conversion from XDP format to PDF format, catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
+1. 非PDF形式からPDF形式への変換。<!--For instance, the conversion from XDP format to PDF format, catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
 1. PDF 形式から PDF/A 形式への変換。
 1. PDF 形式から非 PDF 形式への変換。例としては、PDF 形式から画像形式への変換、または PDF 形式からテキスト形式への変換があります。
 

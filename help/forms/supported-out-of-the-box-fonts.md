@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Formsas a Cloud ServiceでのPDF生成でサポートされる、標準（OOTB）フォント  {#ootb-supported-fonts-overview}
 
-AEM Formsas a Cloud Serviceでは、OOTB でサポートされている様々なビルトインフォントを提供しており、内でシームレスに使用できます [通信 API](/help/forms/aem-forms-cloud-service-communications-introduction.md), [コアコンポーネントのレコードのドキュメント](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record)、および [基盤コンポーネント用のレコードのドキュメント](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
+AEM Formsas a Cloud Serviceは、[ 通信 API](/help/forms/aem-forms-cloud-service-communications-introduction.md)、[ コアコンポーネントのレコードのドキュメント ](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record)、および [ 基盤コンポーネントのレコードのドキュメント ](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record) 内でシームレスに使用できる、OOTB でサポートされる様々な組み込みフォントを提供します。
 
 <!--
 
@@ -52,5 +52,5 @@ OOTB でサポートされているフォントのリストを以下に示しま
 * eurosign.ttf
 
 
-上記のフォントに加えて、カスタムフォントを使用して、PDFに具体的なルックアンドフィールを提供できます。 カスタムフォントを有効にするには、次の手順を実行します [Formsのas a Cloud Service環境へのカスタムフォントの追加](/help/forms/use-custom-fonts.md) 有効なライセンスが必要です。
+上記のフォントに加えて、カスタムフォントを使用して、PDFに具体的なルックアンドフィールを提供できます。 カスタムフォントを有効にするには、有効なライセンスを持つ [ カスタムフォントをFormsas a Cloud Serviceに追加する ](/help/forms/use-custom-fonts.md) 必要があります。
 

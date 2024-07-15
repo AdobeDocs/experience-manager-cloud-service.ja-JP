@@ -6,7 +6,7 @@ feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 100%
 

@@ -6,7 +6,7 @@ feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
 source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 100%
 

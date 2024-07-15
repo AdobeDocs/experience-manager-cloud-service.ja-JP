@@ -9,7 +9,7 @@ feature: Publishing,Dynamic Media
 role: User
 exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
 source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2946'
 ht-degree: 100%
 

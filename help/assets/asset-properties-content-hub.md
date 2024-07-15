@@ -1,6 +1,6 @@
 ---
-title: のアセットプロパティ [!DNL the Content Hub]
-description: でアセットプロパティを表示および管理する方法を説明します [!DNL Content Hub]
+title: ' [!DNL the Content Hub] のアセットプロパティ'
+description: ' [!DNL Content Hub] でアセットプロパティを表示および管理する方法を説明します。'
 role: User
 source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
@@ -12,9 +12,9 @@ ht-degree: 12%
 
 # Content Hubでのアセットプロパティの管理 {#asset-properties}
 
-![メタデータバナー画像](assets/metadata-banner-image.png)
+![ メタデータバナー画像 ](assets/metadata-banner-image.png)
 
-[!DNL The Content Hub] では、効率的なアセット配布にとって重要なアセットに関する情報を表示できます。 アセットに使用可能なすべてのデータのコレクションです。
+[!DNL The Content Hub] を使用すると、効率的なアセット配布にとって重要なアセットに関する情報を表示できます。 アセットに使用可能なすべてのデータのコレクションです。
 
 アセットプロパティを表示すると、アセットをより詳細に分類するのに役立ち、デジタル情報量が多くなるにつれてさらに役に立ちます。 数百個のファイルをファイル名、サムネールおよびメモリだけに基づいて管理することは可能です。ただし、関与する人数が多く、管理されるアセットの数が増える場合、このアプローチは拡張性に欠けます。 さらに、デジタルアセットの価値は、アセットが次のように増大します。
 
@@ -24,30 +24,30 @@ ht-degree: 12%
 
 ## 前提条件 {#prerequisites}
 
-[Content Hub ユーザー](deploy-content-hub.md#onboard-content-hub-users) この記事で取り上げるアクションを実行できます。
+[Content Hub ユーザー ](deploy-content-hub.md#onboard-content-hub-users) は、この記事で説明されるアクションを実行できます。
 
 ## アセットのプロパティの表示 {#properties-ui}
 
-アセットを使用、共有またはダウンロードする前に、より詳細に表示できます。プレビュー機能を使用すると、画像だけでなく、サポートされているその他のアセットタイプも表示できます。 アセットを表示できるだけでなく、詳細情報を表示したり、その他のアクションを実行したりできます。 アセットの情報を表示するには、アセットに移動するか、 [検索](search-assets.md) アセットをクリックしてプロパティを開きます。 次の図は、アセットのプロパティページで使用できるフィールドを示しています。
+アセットを使用、共有またはダウンロードする前に、より詳細に表示できます。プレビュー機能を使用すると、画像だけでなく、サポートされているその他のアセットタイプも表示できます。 アセットを表示できるだけでなく、詳細情報を表示したり、その他のアクションを実行したりできます。 アセットの情報を表示するには、アセットに移動するか、アセットを [ 検索 ](search-assets.md) してから、アセットをクリックしてプロパティを開きます。 次の図は、アセットのプロパティページで使用できるフィールドを示しています。
 
-![アセット UI のプロパティ](assets/properties-ui.png)
+![ アセット UI のプロパティ ](assets/properties-ui.png)
 
-* **回答：** アセットのタイトル
-* **B:** ズームインまたはズームアウトして、アセットをより近くにズームまたはプレビューする割合
-* **C:** 前に選択したパーセンテージへのズームを取り消す
-* **D:** 前または次のアセットに進む
+* **A:** アセットのタイトル
+* **B:** ズームインまたはズームアウトによって、アセットのズームまたはプレビューがより近い割合
+* **C:** 前に選択した割合でズームを元に戻す
+* **D:** 前または次のアセットに進みます
 * **E:** Assets数
 * **F:** アセットのダウンロード
-* **G:** を使用したアセットの編集 [!DNL Adobe Express]
+* **G:** [!DNL Adobe Express] を使用したアセットの編集
 * **H:** アセットの情報の折りたたみまたはプレビュー
-* **I:** アセットの共有
-* **J:** アセットを追加： [!DNL Collection]
+* **I:** アセットを共有します
+* **J:** [!DNL Collection] へのアセットの追加
 * **K:** プレビュー画面を閉じる
-* **L:** タイトル、形式、サイズ、解像度、タグ、カラータグ、スマートタグを含む、アセットの情報。
+* **L:** タイトル、形式、サイズ、解像度、タグ、カラータグ、スマートタグを含むアセットの情報。
 
 ## サポートされるファイル形式 {#supported-formats}
 
-次の表に、でサポートされるファイル形式を示します [!DNL the Content Hub]:
+次の表に、[!DNL the Content Hub] でサポートされるファイル形式を示します。
 
 <table> 
     <tbody>
@@ -99,13 +99,13 @@ ht-degree: 12%
 
 アセットをアップロードすると、Content Hubによって、自動生成されるプロパティがいくつか派生します。 その一部を次に示します。
 
-* **サイズ：** サイズは、アセットの論理値をディメンションごとに示します。 これにより、アセットがリポジトリ内で取得しているスペースが明確になります。 [!DNL The Content Hub] は最大 2GB のアセットをサポートします。
+* **サイズ：** サイズは、アセットのディメンションに従ってアセットの論理値を示します。 これにより、アセットがリポジトリ内で取得しているスペースが明確になります。 [!DNL The Content Hub] は最大 2GB のアセットをサポートします。
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **スマートタグ：** [!DNL The Content Hub] は、Adobe Senseiのスマートコンテンツサービスを使用して、タグベースの構造上の認識アルゴリズムを使用してアセットのトレーニングを行います。 その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。スマートタグを使用すると、関連するアセットをすばやく見つけることができるので、プロジェクトのコンテンツベロシティ（コンテンツ創出の速度）が向上します。 スマートタグは、画像に含まれないアセット情報の例です。 [!DNL The Content Hub] は、デフォルトでスマートタグをアセットに自動的に適用します。
+* **スマートタグ：** [!DNL The Content Hub] は、Adobe Senseiのスマートコンテンツサービスを使用して、タグベースの構造の認識アルゴリズムを使用してアセットのトレーニングを行います。 その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。スマートタグを使用すると、関連するアセットをすばやく見つけることができるので、プロジェクトのコンテンツベロシティ（コンテンツ創出の速度）が向上します。 スマートタグは、画像に含まれないアセット情報の例です。 デフォルト [!DNL The Content Hub]、スマートタグはアセットに自動的に適用されます。
 
-* **カラータグ：** [カラータグ](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) は、AdobeのSensei AI 機能を使用してアセット内で自動的に識別されるカラーを使用して、アセットを認識するのに役立ちます。
+* **カラータグ：**[ カラータグ ](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) は、AdobeのSensei AI 機能を使用してアセット内で自動的に識別されるカラーを使用して、アセットを認識するのに役立ちます。
 
 * アップロード日
 
@@ -115,9 +115,9 @@ ht-degree: 12%
 
 * 最終変更者
 
-Content Hubにアセットを追加する際に指定するプロパティもあります。 詳しくは、を参照してください [ブランド承認済みアセットのContent Hubへの追加](upload-brand-approved-assets.md). これらのプロパティは、アセットプロパティページにも表示されます。
+Content Hubにアセットを追加する際に指定するプロパティもあります。 詳しくは、[Content Hubへのブランド承認済みアセットの追加 ](upload-brand-approved-assets.md) を参照してください。 これらのプロパティは、アセットプロパティページにも表示されます。
 
-管理者は、各アセットに表示されるプロパティを設定することもできます。 詳しくは、を参照してください [Content Hub ユーザーインターフェイスの設定](configure-content-hub-ui-options.md#configure-asset-details-content-hub).
+管理者は、各アセットに表示されるプロパティを設定することもできます。 詳しくは、[Content Hub ユーザーインターフェイスの設定 ](configure-content-hub-ui-options.md#configure-asset-details-content-hub) を参照してください。
 
 <!--
 

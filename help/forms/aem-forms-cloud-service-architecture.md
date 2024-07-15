@@ -7,7 +7,7 @@ exl-id: 9d677bee-50ca-460e-b503-6b7799900735
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Adobe’s PDF Services API lets create, combine, export, and extract data from P
 
 Forms as a Cloud Service には、BLOB ストア、データベース、ストレージサービスなどの外部ストレージシステムにコンテンツを保存するオプションが用意されています。また、機密性の高い個人データ（SPD）要素を含んだ処理中のワークフローデータ（AEM ワークフロー変数データ）を、顧客側で管理されるリポジトリーに保存して安全に処理することもできます。アドビでは、お客様が管理するストレージにのみ機密データを保存することをお勧めします。
 
-を使用できます **統合ストレージコネクタ** blob ストレージに接続するには、および **フォームデータモデル（FDM）** データベースまたはバックエンドサービス（RESTful、SOAP、Azure Blob Storage など）に接続します。
+**統合ストレージコネクタ**&#x200B;を使用して BLOB ストレージに接続したり、**フォームデータモデル（FDM）**&#x200B;を使用してデータベースまたはバックエンドサービス（RESTful、SOAP、Azure Blob Storage など）に接続したりすることができます。
 
 ### ドキュメントサービス
 

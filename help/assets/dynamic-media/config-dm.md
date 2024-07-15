@@ -6,7 +6,7 @@ feature: Configuration,Dynamic Media
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3811'
 ht-degree: 100%
 

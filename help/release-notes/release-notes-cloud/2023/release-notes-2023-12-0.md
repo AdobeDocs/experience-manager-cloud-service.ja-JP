@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '835'
-ht-degree: 72%
+ht-degree: 74%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 72%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.12.0）のリリース日は、2023年12月14日（PT）です。次回の機能リリース（2024.1.0）は 2023年1月25日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.12.0）のリリース日は 2023年12月14日です。次回の機能リリース（2024.1.0）は 2023年1月25日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -47,16 +47,16 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### 早期導入プログラム {#sites-early-adopter}
 
-**を利用できます [RUM （Real Use Monitoring）データ・サービス](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEMas a Cloud Service用のクライアントサイド収集を有効にします。
+**[Real Use Monitoring （RUM） Data Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** を利用すると、AEM as a Cloud Serviceのクライアントサイド収集を有効にできます。
 
-Real Use Monitoring （RUM）データサービスは、ユーザーのインタラクションをより正確に反映し、web サイトエンゲージメントの信頼性の高い測定を保証します。 ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
+実際の使用のモニタリング（RUM）データサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントの信頼性の高い測定を保証します。ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
 
-この新機能のテストやフィードバックの共有に関心がある場合は、にメールを送信してください。 `aemcs-rum-adopter@adobe.com`に加え、Adobe IDに関連付けられたメールアドレスから取得した実稼動、ステージ、開発環境のドメイン名を使用します。 Adobeのプロダクトチームが、Real Use Monitoring （RUM）データサービスを有効にします。
+この新機能のテストやフィードバックの送信に関心がある場合は、Adobe IDに関連付けられたメールアドレスから、実稼動、ステージ、開発環境のドメイン名と共に `aemcs-rum-adopter@adobe.com` にメールを送信してください。 Adobeのプロダクトチームが、Real Use Monitoring （RUM）データサービスを有効にします。
 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### アセットビューの新機能 {#assets-view-features}
+### Assets ビューの新機能 {#assets-view-features}
 
 **Adobe Firefly を使用した生成 AI 画像の作成**
 
@@ -81,9 +81,9 @@ Adobe Firefly のテキストから画像生成機能を統合して、検索ク
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### の新機能 [!DNL Experience Manager Forms] {#forms-features}
+### [!DNL Experience Manager Forms] の新機能 {#forms-features}
 
-* **[アダプティブFormsとMicrosoft® SharePoint リストの接続](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**:AEM Formsでは、フォームデータをSharePoint リストに直接送信する OOTB 統合が提供され、SharePoint リストの機能を使用できるようになります。 Microsoft SharePoint リストをフォームデータモデルのデータソースとして設定し、を使用できます **フォームデータモデルを使用して送信** アダプティブフォームをSharePoint リストに接続するための送信アクション。
+* **[アダプティブFormsとMicrosoftの接続® SharePoint リスト](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**:AEM Formsでは、SharePointのリスト機能を使用できるフォームデータをSharePoint リストに直接送信する OOTB 統合が提供されます。 Microsoft SharePoint リストをフォームデータモデルのデータソースとして設定し、**フォームデータモデルを使用して送信** 送信アクションを使用して、アダプティブフォームをSharePoint リストに接続できます。
 
 <!-- 
 
@@ -107,7 +107,7 @@ Adobe Firefly のテキストから画像生成機能を統合して、検索ク
 
 ### CDN 設定の早期導入プログラム {#cdn-config-early-adopter}
 
-最近リリースされたに加えて [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)（オプションでライセンス可能な Web アプリケーションファイアウォール（WAF）ルールが含まれる）場合は、設定パイプラインを使用して、他のタイプの CDN 設定を宣言およびデプロイできます。 次のようなユースケースについてお聞かせください。
+オプションでライセンス利用可能な Web アプリケーションファイアウォール（WAF）ルールを含む、最近リリースされた [ トラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md) に加えて、設定パイプラインを使用して、他のタイプの CDN 設定を宣言およびデプロイすることもできます。 次のようなユースケースについてお聞かせください。
 * 301/302 クライアントサイドのリダイレクト
 * 任意の接触チャネルに対するエッジでのリクエストのプロキシ処理
 * URL 変換
@@ -116,7 +116,7 @@ Adobe Firefly のテキストから画像生成機能を統合して、検索ク
 * ユーザー名/パスワードによる認証
 * その他の便利な CDN 設定
 
-メールの送信先 **aemcs-cdn-config-adopter@adobe.com** フィードバックを含む公式メール ID から。
+公式メール ID からフィードバックを記載したメールを **0}aemcs-cdn-config-adopter@adobe.com} に送信します。**
 
 ## Cloud Manager {#cloud-manager}
 

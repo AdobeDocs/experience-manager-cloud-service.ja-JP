@@ -2,7 +2,7 @@
 title: アダプティブフォームの式とは
 description: アダプティブフォームの式を使用して、自動検証や演算を追加したり、セクションの表示のオン／オフを切り替えたりします。
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2686'
 ht-degree: 100%
 

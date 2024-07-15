@@ -4,7 +4,7 @@ description: Sling モデルを更新し、マークアップをカスタマイ�
 feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 594f0e6ec88851c86134be8d5d7f1719f74ddf4f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 100%
 

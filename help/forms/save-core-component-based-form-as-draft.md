@@ -14,20 +14,20 @@ ht-degree: 15%
 
 # コアコンポーネントベースのアダプティブフォームをドラフトとして保存 {#save-af-form}
 
-アダプティブフォームをドラフトとして保存することは、ユーザーの効率と精度を高める上で不可欠な機能です。 この機能を使用すると、ユーザーは進行状況を保存し、入力した情報を失わずに後でタスクを完了するために戻ることができます。 次を提供：  `save-as-draft` オプションにより、時間の管理に関する柔軟性が確保され、データ消失のリスクが軽減され、送信の精度が維持されます。 フォームをドラフトとして保存して、後で完成させることができます。
+アダプティブフォームをドラフトとして保存することは、ユーザーの効率と精度を高める上で不可欠な機能です。 この機能を使用すると、ユーザーは進行状況を保存し、入力した情報を失わずに後でタスクを完了するために戻ることができます。 `save-as-draft` オプションを提供することで、時間の管理における柔軟性の確保、データ消失のリスクの軽減、送信精度の維持が可能になります。 フォームをドラフトとして保存して、後で完成させることができます。
 
 ## 考慮事項
 
 * [お使いの環境でアダプティブ Forms コアコンポーネントを有効にします。](/help/forms/enable-adaptive-forms-core-components.md)
 
-* 必ずを [コアコンポーネントはバージョン 3.0.24 以降に設定されています](https://github.com/adobe/aem-core-forms-components) この機能を使用するには、をクリックします。
-* 以下が揃っていることを確認します。 [Azure ストレージアカウントとアクセスキー](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) Azure ストレージアカウントへのアクセスを認証します。
+* この機能を使用するには、[ コアコンポーネントがバージョン 3.0.24 以降に設定されている ](https://github.com/adobe/aem-core-forms-components) とを確認します。
+* Azure ストレージアカウントへのアクセスを許可するための [Azure ストレージアカウントとアクセスキー ](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) があることを確認します。
 
 ## アダプティブフォームのドラフトとしての保存
 
-[!DNL Experience Manager Forms] データ統合（data-integration.md）は、 [!DNL Azure] フォームをと統合するためのストレージ設定 [!DNL Azure] ストレージサービス。 Forms フォームデータモデル（FDM）を使用して、 [!DNL Azure] サーバーでビジネスワークフローを有効にします。
+[!DNL Experience Manager Forms] Data Integration （data-integration.md）は、フォームを [!DNL Azure] ストレージサービス [!DNL Azure] 統合するためのストレージ設定を提供します。 フォームデータモデル（FDM）を使用して、[!DNL Azure] サーバーと連携するアダプティブFormsを作成すると、ビジネスワークフローを使用できるようになります。
 
-フォームをドラフトとして保存するには、Azure ストレージアカウントと、へのアクセスを許可するためのアクセスキーがあることを確認します [!DNL Azure] ストレージアカウント。 フォームをドラフトとして保存するには、次の手順を実行します。
+フォームをドラフトとして保存するには、Azure ストレージアカウントと、[!DNL Azure] ストレージアカウントへのアクセスを許可するためのアクセスキーがあることを確認します。 フォームをドラフトとして保存するには、次の手順を実行します。
 
 1. [Azure ストレージ設定の作成](#create-azure-storage-configuration)
 1. [フォームポータル用統合ストレージコネクタの設定](#configure-usc-forms-portal)
@@ -36,18 +36,18 @@ ht-degree: 15%
 
 ### 1. Azure ストレージ設定の作成 {#create-azure-storage-configuration}
 
-一度、Azure ストレージアカウントと、へのアクセスを許可するためのアクセスキーを持つことができます [!DNL Azure] ストレージアカウントを作成するには、次の手順を実行して Azure ストレージ設定を作成します。
+Azure ストレージアカウントと、[!DNL Azure] ストレージアカウントへのアクセスを許可するためのアクセスキーを取得したら、次の手順を実行して Azure ストレージ設定を作成します。
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Azure ストレージ]**&#x200B;に移動します。
 
-   ![Azure ストレージカードの選択](/help/forms/assets/save-form-as-draft-azure-card.png)
+   ![Azure ストレージカードの選択 ](/help/forms/assets/save-form-as-draft-azure-card.png)
 
-1. 設定フォルダーを選択して設定を作成し、を選択します **[!UICONTROL 作成]**.
+1. 設定フォルダーを選択して設定を作成し、「**[!UICONTROL 作成]**」を選択します。
 
-   ![Azure ストレージ設定フォルダーを選択します](/help/forms/assets/save-form-as-draft-select-config-folder.png)
+   ![Azure ストレージ設定フォルダーを選択 ](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
 1. 「**[!UICONTROL タイトル]**」フィールドで設定のタイトルを指定します。
-1. の名前を指定 [!DNL Azure] のストレージアカウント **[!UICONTROL Azure ストレージアカウント]** および **[!UICONTROL Azure アクセスキー]** フィールド。
+1. 「**[!UICONTROL Azure ストレージアカウント]**」フィールドと「**[!UICONTROL Azure アクセスキー]**」フィールドで [!DNL Azure] ストレージアカウントの名前を指定します。
 
    ![Azure ストレージ設定](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
@@ -55,7 +55,7 @@ ht-degree: 15%
 
 >[!NOTE]
 >
-> を取得できます **[!UICONTROL Azure ストレージアカウント]** および **[!UICONTROL Azure アクセスキー]** から [Microsoft Azure Portal](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+> **[!UICONTROL Azure ストレージアカウント]** と **[!UICONTROL Azure アクセスキー]** は、[Microsoft Azure Portal](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) から取得できます。
 
 
 ### 2. Forms ポータル用の統合ストレージコネクタの設定 {#configure-usc-forms-portal}
@@ -64,36 +64,36 @@ Azure ストレージ設定が正常に作成されたら、次の手順を使�
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL Forms]**／**[!UICONTROL 統合ストレージコネクタ]**&#x200B;に移動します。
 
-   ![統合コネクタストレージ](/help/forms/assets/save-form-as-draft-unified-connector.png)
+   ![ 統合コネクタストレージ ](/help/forms/assets/save-form-as-draft-unified-connector.png)
 
 1. 「**[!UICONTROL フォームポータル]**」セクションで、「**[!UICONTROL ストレージ]**」ドロップダウンリストから「**[!UICONTROL Azure]**」を選択します。
 1. 「**[!UICONTROL ストレージ設定パス]**」フィールドで、[Azure ストレージ設定の設定パス](#create-azure-storage-configuration)を指定します。
 
-   ![統合コネクタストレージ設定](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
+   ![ 統合コネクタストレージ設定 ](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
-1. を選択 **[!UICONTROL 保存]** を選択してから、 **[!UICONTROL Publish]** をクリックして、設定を公開します。
+1. **[!UICONTROL 保存]** を選択してから **[!UICONTROL Publish]** を選択して、設定を公開します。
 
 ### 3. アダプティブフォームをドラフトとして保存するためのルールを作成する {#rule-to-save-adaptive-form-as-draft}
 
-フォームをドラフトとして保存するには、 **フォームを保存** ボタンなどのフォームコンポーネントに関するルール。 ボタンをクリックすると、ルールがトリガーされ、フォームがドラフトとして保存されます。 以下の手順を実行してを作成します **フォームを保存** ボタンコンポーネントに関するルール：
+フォームをドラフトとして保存するには、ボタンなどのフォームコンポーネントに **フォームを保存** ルールを作成します。 ボタンをクリックすると、ルールがトリガーされ、フォームがドラフトとして保存されます。 ボタンコンポーネントに **フォームを保存** ルールを作成するには、次の手順を実行します。
 
 1. オーサーインスタンスで、アダプティブフォームを編集モードで開きます。
 1. 左側のパネルで、 ![コンポーネントアイコン](assets/components_icon.png) を選択し、「**[!UICONTROL ボタン]**」コンポーネントをフォームにドラッグします。
 1. 「**[!UICONTROL ボタン]**」コンポーネントを選択してから、![設定アイコン](assets/configure_icon.png) をクリックします。
 1. 「**[!UICONTROL ルールを編集]**」アイコンを選択して、ルールエディターを開きます。
 1. 「**[!UICONTROL 作成]**」を選択し、ルールを設定および作成します。
-1. が含まれる **[!UICONTROL 条件]** セクションで選択 **クリックされた** および **[!UICONTROL その後]** セクションで、 **フォームを保存** オプション。
+1. 「**[!UICONTROL 条件]**」セクションで「**クリック済み** を選択し、「**[!UICONTROL 次に]**」セクションで「**フォームを保存**」オプションを選択します。
 1. 「**[!UICONTROL 完了]**」を選択し、ルールを保存します。
 
-![ボタンのルールを作成](/help/forms/assets/save-form-as-drfat-create-rule.png)
+![ ボタンのルールを作成 ](/help/forms/assets/save-form-as-drfat-create-rule.png)
 
-アダプティブフォームをプレビューするには、アダプティブフォームに入力し、 **フォームを保存** ボタンをクリックすると、フォームは後で使用するためにドラフトとして保存されます。
+アダプティブフォームをプレビューして入力し、「**フォームを保存**」ボタンをクリックすると、フォームは後で使用するためにドラフトとして保存されます。
 
 ## ドラフト&amp;送信コンポーネントでAEM Sitesページにドラフトを一覧表示
 
-AEM Formsは、次のものを提供します **ドラフトと送信** 保存済みフォームをAEM Sites ページに表示するためのポータルコンポーネントの標準搭載 この **ドラフトと送信** コンポーネントは、後で完了するためにドラフトとして保存されたフォームと、送信済みのフォームを表示します。 このコンポーネントは、ユーザーが作成したアダプティブFormsに関連するドラフトや送信を一覧表示することにより、ログインしているユーザーにパーソナライズされたエクスペリエンスを提供します。
+AEM Formsでは、**ドラフトと送信** ポータルコンポーネントを標準で提供しており、保存済みのフォームをAEM Sites ページに表示できます。 **ドラフトと送信** コンポーネントは、後で完了するためにドラフトとして保存されたフォームと、送信済みのフォームを表示します。 このコンポーネントは、ユーザーが作成したアダプティブFormsに関連するドラフトや送信を一覧表示することにより、ログインしているユーザーにパーソナライズされたエクスペリエンスを提供します。
 
-標準のForms ポータルコンポーネントを使用して、AEM Sites ページにフォームドラフトを一覧表示できます。 を使用するには、次の手順を実行します **ドラフトと送信** ポータルコンポーネント：
+標準のForms ポータルコンポーネントを使用して、AEM Sites ページにフォームドラフトを一覧表示できます。 **ドラフトと送信** ポータルコンポーネントを使用するには、次の手順を実行します。
 
 1. [Forms ポータルコンポーネントのドラフトと送信を有効にする](#enable-component)
 2. [ドラフト&amp;送信コンポーネントをAEM Sitesページに追加](#Add-drafts-submissions-component)
@@ -101,15 +101,15 @@ AEM Formsは、次のものを提供します **ドラフトと送信** 保存�
 
 ### 1. Forms ポータルコンポーネントのドラフトと送信を有効にする{#enable-component}
 
-を有効にするには **[!UICONTROL ドラフトと送信]** コンポーネントをテンプレートポリシーに追加するには、次の手順を実行します。
+テンプレートポリシーで **[!UICONTROL ドラフトと送信]** コンポーネントを有効にするには、次の手順を実行します。
 
-1. でAEM Sitesページを開きます。 **編集** モード。
+1. AEM Sitesページを **編集** モードで開きます。
 1. **[!UICONTROL ページ情報]**／**[!UICONTROL テンプレートを編集]**に移動します。
-   ![テンプレートポリシーを編集](/help/forms/assets/save-form-as-draft-edit-template.png)
+   ![ テンプレートポリシーを編集 ](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-1. 「」をクリックします **[!UICONTROL ポリシー]** を選択し、 **[!UICONTROL ドラフトと送信]**  の下にあるチェックボックス **[AEM アーキタイププロジェクト名] - Formsとコミュニケーションポータル**.
+1. **[!UICONTROL ポリシー]** をクリックし、**[AEM アーキタイププロジェクト名 ] - Formsとコミュニケーションポータル** の下にある **[!UICONTROL ドラフトと送信]** チェックボックスを選択します。
 
-   ![ポリシーの選択](/help/forms/assets/save-form-as-draft-enable-policy.png)
+   ![ ポリシーの選択 ](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
@@ -117,30 +117,30 @@ AEM Formsは、次のものを提供します **ドラフトと送信** 保存�
 
 ### 2. AEM Sitesページでのドラフト&amp;送信コンポーネントの追加{#Add-drafts-submissions-component}
 
-ポータルコンポーネントを追加して設定すると、AEM を使用して作成した web サイトでフォームポータルを作成してカスタマイズできます。必ずを [ドラフト&amp;送信コンポーネント：](#enable-component) AEM Sitesページで使用する前に以下を行います。
+ポータルコンポーネントを追加して設定すると、AEM を使用して作成した web サイトでフォームポータルを作成してカスタマイズできます。AEM Sites ページで使用する前に、[ ドラフトと送信コンポーネント ](#enable-component) が有効になっていることを確認します。
 
-コンポーネントを追加するには、 **ドラフトと送信** コンポーネントペインをページ上のレイアウトコンテナに追加するか、レイアウトコンテナ上の追加アイコンを選択して、 **[!UICONTROL 新規コンポーネントを挿入]** ダイアログ。
+コンポーネントを追加するには、コンポーネントパネルの **ドラフトと送信** からページのレイアウトコンテナにコンポーネントをドラッグ&amp;ドロップするか、レイアウトコンテナの追加アイコンを選択して **[!UICONTROL 新規コンポーネントの挿入]** ダイアログからコンポーネントを追加します。
 
-![ドラフトと送信コンポーネントの追加](/help/forms/assets/save-form-as-draft-add-dns.png)
+![ ドラフトと送信コンポーネントの追加 ](/help/forms/assets/save-form-as-draft-add-dns.png)
 
 ### 3. ドラフト&amp;送信コンポーネントの設定 {#configure-drafts-submissions-component}
 
-この **ドラフトと送信** コンポーネントには、後で完成させるためにドラフトとして保存されたフォームと送信済みのフォームが表示されます。 を設定 **ドラフトと送信**&#x200B;は、次の手順を実行します。
-1. 「」を選択します **ドラフトと送信** コンポーネント。
-1. 「」をクリックします ![設定アイコン](assets/configure_icon.png) ダイアログボックスが表示されます。
-1. が含まれる **[!UICONTROL ドラフトと送信]** ダイアログで、次の設定を行います。
-   * **タイトル** Sites ページでコンポーネントを識別するために、デフォルトではコンポーネントの上にタイトルが表示されます。
-   * **タイプ**：フォームを下書きまたは送信済みのフォームとして表示します。
-   * **レイアウト**：ドラフトフォームまたは送信済みフォームをカード形式またはリスト形式で表示します。
+**ドラフトと送信** コンポーネントには、後で完成させるためにドラフトとして保存されたフォームと送信されたフォームが表示されます。 **ドラフトと送信** を設定するには、次の手順を実行します。
+1. **ドラフトと送信** コンポーネントを選択します。
+1. ![ 設定アイコン ](assets/configure_icon.png) をクリックすると、ダイアログボックスが表示されます。
+1. **[!UICONTROL ドラフトと送信]** ダイアログで、以下を指定します。
+   * **タイトル** Sites ページ内のコンポーネントを識別するために、デフォルトではコンポーネントの上にタイトルが表示されます。
+   * **タイプ**：フォームを下書きまたは送信済みのフォームとして一覧表示することを示します。
+   * **レイアウト**：リストのドラフトフォームまたは送信済みのフォームをカード形式またはリスト形式で表示します。
 
-   ![ドラフトおよび送信コンポーネントのプロパティ](/help/forms/assets/save-form-as-draft-dns-properties.png)
+   ![ ドラフトおよび送信コンポーネントのプロパティ ](/help/forms/assets/save-form-as-draft-dns-properties.png)
 
 1. 「**完了**」をクリックします。
 
-条件 **[!UICONTROL タイプを選択]** 次として選択 **ドラフトForms**を選択すると、ドラフトとして保存されたフォームが表示されます。
-![下書きアイコン](assets/drafts-component.png)
+**[!UICONTROL タイプを選択]** が **ドラフトForms** として選択されている場合、ドラフトとして保存されたフォームが表示されます。
+![ 下書きアイコン ](assets/drafts-component.png)
 
-条件 **[!UICONTROL タイプを選択]** 次として選択 **送信済みForms**&#x200B;送信されたフォームが表示されます。
+**[!UICONTROL タイプを選択]** として **送信済みForms** を選択すると、送信済みフォームが表示されます。
 
 ![送信アイコン](assets/submission-listing.png)
 

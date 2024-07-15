@@ -66,21 +66,21 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms-sep-2021}
 
-* **アダプティブフォームでのAdobe Signの役割の使用** - ビジネスおよびエンタープライズサービスレベル版Adobe Signでは、必要に応じて、署名者のみでなく、契約書受信者の役割を拡張し、ワークフロー要件に合わせることができます。 これで、 [契約書の受信者ごとに、アダプティブフォームでの自分の役割を設定できるようにする](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform)、署名者はデフォルトの役割です。
+* **アダプティブフォームでのAdobe Signの役割の使用** - Adobe Sign for business および enterprise サービスレベルでは、ワークフロー要件に適切に合致するように、契約書受信者の役割を署名者以外にも拡大できます。 [ 契約書の受信者ごとに、アダプティブフォームでの自分の役割を設定できる ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform) ようになりました。デフォルトの役割は署名者です。
 
-* **Analytics for Adaptive Forms** - Adobe Analytics for Adaptive Formsを介してエンドユーザーの行動をキャプチャおよび追跡し、エンドユーザーのインサイトを収集できるようになりました。 十分な情報に基づいて決定を行い、エンドユーザーエクスペリエンスを向上させるのに役立ちます。
+* **Analytics for Adaptive Forms** - Adobe Analytics for Adaptive Formsを使用してエンドユーザーの行動をキャプチャおよび追跡し、エンドユーザーに関するインサイトを収集できるようになりました。 十分な情報に基づいて決定を行い、エンドユーザーエクスペリエンスを向上させるのに役立ちます。
 
-* **Adobe Experience Manager（AEM）FormsをMicrosoft® Dynamics および Salesforce と簡単に接続**  – このサービスは、Microsoft® Dynamics および Salesforce 用の標準のデータソース設定とデータモデルを提供します。 これで決まりだ [開発者は、アダプティブフォームのデータソースとしてMicrosoft® Dynamics および Salesforce をすばやく簡単に設定できます](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html).
+* **Adobe Experience Manager（AEM）FormsをMicrosoft® Dynamics および Salesforce に簡単に接続** – このサービスは、Microsoft® Dynamics および Salesforce 用の標準のデータソース設定とデータモデルを提供します。 これにより [ 開発者は、アダプティブフォームのデータソースとしてMicrosoft® Dynamics および Salesforce をすばやく簡単に設定 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html) できます。
 
-* **DocuSign によるアダプティブフォームの電子サイン** - DocuSign を使用してアダプティブフォームに電子サインすることができます。 このサービスでは、アダプティブフォームで DocuSign を使用するためのカスタム送信アクションを提供します。ソフトウェア配布ポータルで入手可能なパッケージをインストールして、送信アクションをインポートすることができます。
+* **DocuSign を使用したアダプティブフォームへの電子サイン** - DocuSign を使用してアダプティブフォームに電子サインすることができます。 このサービスでは、アダプティブフォームで DocuSign を使用するためのカスタム送信アクションを提供します。ソフトウェア配布ポータルで入手可能なパッケージをインストールして、送信アクションをインポートすることができます。
 
 ### [!DNL Forms] のベータ版機能 {#sep-what-is-new-forms-prerelease}
 
-* **統合ストレージコネクタ**  – 統合ストレージコネクタを使用して、顧客が管理するリポジトリ内にある処理中のデータを外部化する。 例えば、
+* **統合ストレージコネクタ** – 統合ストレージコネクタを使用すると、顧客側で管理されるリポジトリ内の処理中のデータを外部化できます。 例えば、
    * フォームポータルの保存および再開機能を有効にし、顧客が管理するデータリポジトリにアダプティブフォームのドラフトを格納する
    * 個人の機密情報（SPD）を含んだ処理中の AEM ワークフローデータ（AEM ワークフロー変数データ）を、顧客側で管理されるリポジトリに格納する
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]** - [通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) は、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成するのに役立ちます。 このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]** - [ 通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) を使用すると、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。 このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
    * テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成します。
    * 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
    * XFA フォーム PDF および Adobe Acrobat フォームから印刷用 PDF ファイルを生成します。
@@ -143,11 +143,11 @@ CQ-4328183 was not reported on CS so not documented here.
 * AEM as a Cloud Service で一意の IP アドレスからトラフィックを出力するための専用エグレス IP アドレスが、すべてのポートをサポートするようになりました。
 * お使いのインフラストラクチャと AEM as a Cloud Service の間でやり取りされるトラフィックのセキュリティを確保する VPN。
 
-を読み取る [詳細を見る](/help/security/configuring-advanced-networking.md) cloud Manager API を使用して高度なネットワーク機能をセルフサービス方式でプロビジョニングする方法など、詳細については、こちらを参照してください。
+Cloud Manager API を使用して高度なネットワーク機能をセルフサービス方式でプロビジョニングする方法など、詳細については、[ ドキュメント ](/help/security/configuring-advanced-networking.md) を参照してください。
 
 **インデックスの最適化**
 
-検索クエリとインデックス作成のパフォーマンスを向上させるために、このリリース以降、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、フルテキストインデックス lucene-2 は標準では使用されなくなりました。AEMのお客様の要件に従ってAEM環境でこのフルテキストインデックスを削除するために、Adobeエンジニアリングは、問題が発生する前にお客様と個別に協力して、Lucene フルテキストインデックスの正常かつ持続可能な削除に対応しています。 にアクセスします [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [詳細を見る](/help/operations/indexing.md#index-optimizations) 詳しくは、Adobeのサポートに直接お問い合わせください。
+検索クエリとインデックス作成のパフォーマンスを向上させるために、このリリース以降、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、フルテキストインデックス lucene-2 は標準では使用されなくなりました。AEMのお客様の要件に従ってAEM環境でこのフルテキストインデックスを削除するために、Adobeエンジニアリングは、問題が発生する前にお客様と個別に協力して、Lucene フルテキストインデックスの正常かつ持続可能な削除に対応しています。 詳しくは、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [ ドキュメント ](/help/operations/indexing.md#index-optimizations) を参照してください。また、ご質問がある場合は、Adobeのサポートにお問い合わせください。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -168,7 +168,7 @@ AEM as a Cloud Service 2021.9.0 の Cloud Manager のリリース日は 2021年9
 
 * アクティビティページのメニューオプションに、完了したコードジェネレーター実行に適用できる「**ログをダウンロード**」オプションが含まれるようになりました。これを選択すると、ビルド手順のログがダウンロードされます。
 
-* 「プログラム」カードを直接クリックすると、Cloud Manager の概要ページに移動するようになりました。
+* 「プログラム」カードを直接クリックすると、Cloud Managerの概要ページに移動するようになりました。
 
 ### バグ修正 {#bug-fixes-sept}
 
@@ -184,7 +184,7 @@ Cloud Acceleration Manager のリリース日は 2021年10月4日です。
 
 ### 新機能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager では、BPA レポートを印刷可能なプレビューで表示できるようになり、印刷や PDF へのエクスポートが簡単になりました。これにより、共有が容易になりました。の手順 6 および 7 を参照してください。 [ベストプラクティス分析カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja#best-practices-analysis).
+* Cloud Acceleration Manager では、BPA レポートを印刷可能なプレビューで表示できるようになり、印刷や PDF へのエクスポートが簡単になりました。これにより、共有が容易になりました。[ ベストプラクティス分析カードの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja#best-practices-analysis) の手順 6 および 7 を参照してください。
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 

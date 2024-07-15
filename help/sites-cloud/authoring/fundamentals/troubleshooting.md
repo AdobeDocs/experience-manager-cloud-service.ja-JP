@@ -3,7 +3,7 @@ title: オーサリング時の AEM のトラブルシューティング
 description: AEM の使用時に発生する可能性のある問題をいくつか紹介します。
 exl-id: b9c0584d-255e-486d-b829-09e07499ecd2
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 100%
 

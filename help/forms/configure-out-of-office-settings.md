@@ -5,7 +5,7 @@ exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
 feature: Adaptive Forms, Workflow
 role: Admin, User
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 100%
 
@@ -39,8 +39,8 @@ ht-degree: 100%
 
 アカウントの不在設定を有効にして、インボックス項目を別のユーザーに委任するには、以下の手順を実行します。
 
-1. AEM インスタンスにログインします。![インボックス](assets/bell.svg) アイコンをクリックし、「**[!UICONTROL すべて表示]**」を選択します。インボックス項目のリストが表示されます。
-1. 「**[!UICONTROL 作成]**」ボタンの横にある![ビューセレクター](assets/viewlist.svg)または ![ビューセレクター](assets/calendar.svg) アイコン、「**[!UICONTROL 設定]**」の順に選択します。設定ダイアログが表示されます。
+1. AEM インスタンスにログインします。![インボックス](assets/bell.svg)アイコンを選択し、「**[!UICONTROL すべて表示]**」を選択します。インボックス項目のリストが表示されます。
+1. 「**[!UICONTROL 作成]**」ボタンの横にある![表示セレクター](assets/viewlist.svg)または ![表示セレクター](assets/calendar.svg)アイコンを選択し、「**[!UICONTROL 設定]**」を選択します。設定ダイアログが表示されます。
 1. 設定ダイアログの「**[!UICONTROL 不在]**」タブを開きます。
 1. 「**[!UICONTROL 有効にする／無効にする]**」ボタンを選択して、不在設定を有効にします。
 1. 設定の&#x200B;**[!UICONTROL 開始時刻]**&#x200B;と&#x200B;**[!UICONTROL 終了時刻]**&#x200B;を指定します。項目は、指定した期間にのみ委任されます。項目を無期限に委任するには、「**[!UICONTROL 終了時刻]**」フィールドを空のままにします。

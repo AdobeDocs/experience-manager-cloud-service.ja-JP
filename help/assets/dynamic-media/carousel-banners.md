@@ -6,7 +6,7 @@ feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4492'
 ht-degree: 100%
 

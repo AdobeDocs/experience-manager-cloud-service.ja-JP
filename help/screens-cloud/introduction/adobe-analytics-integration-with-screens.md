@@ -11,7 +11,7 @@ level: Intermediate
 exl-id: e22242ce-e5ce-4486-bba4-e6a89ac4fb5e
 feature: Screens Deployments
 source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 100%
 

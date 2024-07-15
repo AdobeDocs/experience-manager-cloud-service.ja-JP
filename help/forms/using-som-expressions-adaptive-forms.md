@@ -8,17 +8,17 @@ discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
 docset: aem65
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 75%
+source-wordcount: '344'
+ht-degree: 93%
 
 ---
 
 
 # アダプティブフォームでの SOM 式の使用 {#using-som-expressions-in-adaptive-forms}
 
-アダプティブフォームは AEM ページとしてモデル化され、AEM リポジトリーで JCR コンテンツ構造で表示されます。コンテンツ構造のキー要素は guideContainer ノードです。 guideContainer の下に、ネストされたパネルとフィールドを含む rootPanel があります。
+アダプティブフォームは AEM ページとしてモデル化され、AEM リポジトリーで JCR コンテンツ構造で表示されます。コンテンツ構造のキー要素は guideContainer ノードです。guideContainer の下にある rootPanel にはネストされたパネルやフィールドが含まれる場合があります。
 
-スクリプティングオブジェクトモデル (SOM) を使用して、特定のドキュメントオブジェクトモデル (DOM) 内の値、プロパティ、およびメソッドを参照できます。 DOM は、メモリオブジェクトとプロパティをツリー階層で整理します。 SOM 式は、フィールド/描画要素とパネルを参照します。
+スクリプトオブジェクトモデル（SOM）を使用すると、特定のドキュメントオブジェクトモデル（DOM）内の値、プロパティ、メソッドを参照できます。DOM はメモリのオブジェクトとプロパティをツリー階層で編成します。SOM 式はフィールド／描画の要素とパネルを参照します。
 
 以下の画像は、コンポーネントをフォームに追加する際にアダプティブフォームが変換するノード構造を示しています。例えば、パネルをルートパネルに追加し、実行時に DOM に変換されるパネルにラジオボタンを追加できます。アダプティブフォームのラジオボタンフィールドには、`guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]` のように SOM 式を指定します。
 

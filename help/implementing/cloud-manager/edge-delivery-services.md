@@ -1,6 +1,6 @@
 ---
 title: Cloud Manager での Edge Delivery Services のサポート
-description: Edge Delivery Servicesを使用して Cloud Manager プロジェクトを配信する方法について説明します。
+description: Edge Delivery Servicesを使用してCloud Manager プロジェクトを配信する方法を説明します。
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
@@ -13,7 +13,7 @@ ht-degree: 30%
 
 # Cloud Manager での Edge Delivery Services のサポート {#edge-delivery-services}
 
-Edge Delivery Servicesを使用して Cloud Manager プロジェクトを配信する方法について説明します。
+Edge Delivery Servicesを使用してCloud Manager プロジェクトを配信する方法を説明します。
 
 >[!NOTE]
 >
@@ -28,25 +28,25 @@ Edge Delivery Services は、web サイト上のコンテンツの柔軟なオ�
 
 ユニバーサルエディターを使用したAEM コンテンツ管理と WYSIWYG オーサリングの両方、およびドキュメントベースのオーサリングを使用できます。
 
-AEMas a Cloud Serviceの Cloud Manager を使用すると、プロジェクトのエッジ配信サービスを有効にできます。
+AEM as a Cloud ServiceのCloud Managerを使用すると、プロジェクトのEdge Delivery サービスを有効にできます。
 
 >[!TIP]
 >
->Edge Delivery Servicesの詳細とAEMでの使用方法については、ドキュメントを参照してください。 [Edge Delivery Servicesの概要。](/help/edge/overview.md)
+>Edge Delivery Servicesの詳細とAEMでの使用方法については、[Edge Delivery Servicesの概要のドキュメントを参照してください。](/help/edge/overview.md)
 
-## Cloud Manager のEdge Delivery Services {#edge-in-cloud-manager}
+## Cloud ManagerのEdge Delivery Services {#edge-in-cloud-manager}
 
-Adobe Experience Manager Sitesの一部としてライセンスをEdge Delivery Servicesしている場合は、Cloud Manager で直接Edge Delivery Servicesを使用してサイトをオンボーディングし、運用を開始できます [ガイド付きのセルフサービスエクスペリエンスを使用する。](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+Adobe Experience Manager Sitesの一部としてライセンスをEdge Delivery Servicesしている場合は、Cloud Managerで直接Edge Delivery Servicesを使用してサイトをオンボーディングし、[ ガイド付きのセルフサービスエクスペリエンスを使用して ](/help/implementing/cloud-manager/managing-code/private-repositories.md) 運用を開始できます。
 
 これにより、すべての AEM プロパティに対して統一されたエクスペリエンスが実現し、ドメイン名管理、SSL 証明書管理、CDN マッピングなどのすべての重要なワークフローとの一貫性が確保されます。
 
-Edge Delivery Servicesは、次の両方で使用できます [実稼動およびサンドボックスプログラム。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+Edge Delivery Servicesは、[ 実稼動プログラムとサンドボックスプログラム ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) の両方で使用できます。
 
 ## Edge Delivery Servicesの有効化 {#enabling}
 
 新しいプログラムを追加する際に、Edge Delivery Servicesを有効にできます。
 
-![Edge Delivery Servicesを使用した実稼動プログラムの追加](assets/add-production-program-with-edge.png)
+![ 実稼動プログラムをEdge Delivery Servicesで追加 ](assets/add-production-program-with-edge.png)
 
 プログラムの追加について詳しくは、次のドキュメントを参照してください。
 

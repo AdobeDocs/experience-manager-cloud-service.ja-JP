@@ -16,16 +16,16 @@ ht-degree: 85%
 
 Edge Delivery Services を使用すると、オーサリングが簡単、迅速、柔軟に行えます。Edge Delivery Services のコンテンツを作成する方法は 2 つあります。
 
-* [ユニバーサルエディター](#universal-editor) - AEM内のコンテンツをオーサリングするための最新の WYSIWYG （What-You-See-Is-What-You-Get） UI
+* [ ユニバーサルエディター ](#universal-editor) - AEM内でコンテンツをオーサリングするための最新の WYSIWYG （What-You-See-Is-What-You-Get） UI
 * [ドキュメントベースのオーサリング](#document-based)：Microsoft Word や Google Docs など
 
 ## ユニバーサルエディターのオーサリング {#universal-editor}
 
 AEM as a Cloud Service で Edge Delivery Services を使用する場合、作成したコンテンツが AEM as a Cloud Service に保持されるという最も基本的なことを必ず理解しておいてください。
 
-![Edge Delivery Servicesでの WYSIWYG オーサリングの仕組み](assets/how-aem-edge-works.png)
+![Edge Delivery Servicesでの WYSIWYG オーサリングの仕組み ](assets/how-aem-edge-works.png)
 
-1. [WYSIWYG オーサリング環境](/help/sites-cloud/authoring/quick-start.md) は、新しいページ、エクスペリエンスフラグメント、コンテンツフラグメントなどのコンテンツ管理に使用されます。
+1. [WYSIWYG オーサリング環境 ](/help/sites-cloud/authoring/quick-start.md) は、新しいページ、エクスペリエンスフラグメント、コンテンツフラグメントなどのコンテンツ管理に使用されます。
    * AEM のすべての機能（ワークフロー、MSM、翻訳、起動など）を使用できます。
 1. [ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md)は、AEM で管理されるコンテンツの作成に使用されます。
    * ユニバーサルエディターには、コンテンツオーサリング用の最新の UI が用意されています。
@@ -50,7 +50,7 @@ AEM as a Cloud Service で Edge Delivery Services を使用する場合、作成
 
 ユニバーサルエディターを使用したオーサリング方法について詳しくは、[ユニバーサルエディターを使用したコンテンツのオーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md)ドキュメントを参照してください。
 
-詳しくは、 [Edge Delivery Servicesを使用した WYSIWYG オーサリングの開発者向けスタートガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) AEMとEdge Delivery Servicesを使用して独自のプロジェクトを作成する方法を説明します。
+AEMとEdge Delivery Servicesでオーサリングを行う独自のプロジェクトを開始する方法については、[Edge Delivery Services版 WYSIWYG オーサリングの開発者向けガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) を参照してください。
 
 ## ドキュメントベースのオーサリング  {#document-based}
 

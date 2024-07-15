@@ -1,19 +1,19 @@
 ---
-title: AEM SDK を再起動する方法は？
+title: AEM SDK を再起動するにはどうすればよいですか？
 description: AEM SDK を再起動するためのベストプラクティス
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: a0e2c0e3020d48b171645818b8e02dc33b50c2d5
+exl-id: 5fec2a93-1dda-4240-8690-24a6afae5c2b
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 14%
+ht-degree: 27%
 
 ---
 
-
 # AEM SDK の再起動
 
-Java™プロセスを停止してAEM SDK を再起動した場合、AEM開発環境で不整合が生じる可能性があり、エラーは次のように発生します。
+Java™ プロセスを停止してAEM SDK を再起動すると、AEM開発環境で不整合が発生する場合があります。次のようなエラーが発生します。
 
 `javax.jcr.RepositoryException: Applying repoinit operation failed despite retry; set loglevel to DEBUG to see all exceptions. Last exception message was: Failed to set ACL (javax.jcr.ValueFormatException: Invalid type: 0) AclLine ALLOW {principals=[forms-xfa-writers], privileges=[jcr:modifyProperties]} restrictions=[rep:glob=[*/jcr:content/*], rep:itemNames=[xfaForm], fd:condition=[xfaForm, 1]]`
 
@@ -21,9 +21,9 @@ Java™プロセスを停止してAEM SDK を再起動した場合、AEM開発�
 
 ## 解決策
 
-AEM SDK を再起動するには、アクティブなコマンドウィンドウに移動して、 `Ctrl + C` コマンドを使用して SDK を再起動します。
+AEM SDK を再起動するには、アクティブなコマンドウィンドウに移動し、コマンド `Ctrl + C` 押して SDK を再起動します。
 
-「Ctrl + C」コマンドを使用して SDK を再起動することをお勧めします。 別の方法 (Java™プロセスの停止など ) を使用してAEM SDK を再起動すると、AEM開発環境で不整合が生じる場合があります。
+「Ctrl + C」コマンドを使用して SDK を再起動することをお勧めします。 Java™ プロセスの停止などの別の方法を使用してAEM SDK を再起動すると、AEM開発環境で不一致が発生する場合があります。
 
 ## 関連トピック
 

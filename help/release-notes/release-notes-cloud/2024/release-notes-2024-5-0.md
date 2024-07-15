@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.5.0 リ�
 source-git-commit: 076d2a6aa6e02a7ef6f9347f2dc36ca02103c130
 workflow-type: tm+mt
 source-wordcount: '1949'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -118,11 +118,11 @@ Experience Manager Assets では、管理ビューに切り替えなくても、
 
 
 
-### AEM Formsの早期アクセス機能 {#forms-new-early-access-features}
+### AEM Forms の早期アクセス機能 {#forms-new-early-access-features}
 
-AEM Forms早期アクセスプログラムは、誰よりも先に最先端のイノベーションに排他的にアクセスし、その発展を形作るユニークな機会を提供します。 プログラムを利用すると、複数のイノベーションにアクセスできます。
+AEM Forms 早期アクセスプログラムでは、他のユーザーよりも先に最先端のイノベーションに独占的にアクセスし、その開発に貢献できるユニークな機会を提供します。プログラムを利用すると、複数のイノベーションにアクセスできます。
 
-このリリースノートでは、現在のリリースで提供されるイノベーションのリストを示します。早期アクセス プログラムで利用可能なイノベーションの完全なリストについては、次を参照してください。 [AEM Forms アーリーアクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md).
+このリリースノートでは、現在のリリースで提供されるイノベーションのリストを示します。早期アクセスプログラムで利用可能なイノベーションの完全なリストについては、[AEM Forms 早期アクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
 
 #### ボット保護方法の強化
 
@@ -147,7 +147,7 @@ Forms サービスでは、データキャプチャ用のインタラクティ�
 
 >[!IMPORTANT]
 >
-> アーリーアクセスの革新のためにアーリーアクセスプログラムに参加することに興味がある場合は、公式アドレスから次のアドレスにメールを送信するだけです [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) アクセスをリクエストします。 すべてのイノベーションまたは特定のイノベーションに対して利用申請できます。
+> 早期アクセスイノベーションの早期アクセスプログラムへの参加に興味がある方は、公式アドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールを送信して利用申請してください。すべてのイノベーションまたは特定のイノベーションに対して利用申請できます。
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}

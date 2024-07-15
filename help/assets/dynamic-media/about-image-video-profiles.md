@@ -6,7 +6,7 @@ feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
 source-git-commit: 34038d954802b7f8e31441d5c5e4ea90380e7a20
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 100%
 

@@ -7,8 +7,8 @@ role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 97%
+source-wordcount: '1536'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 97%
 
 ## 「クイック公開」を使用したアセットの公開 {#quick-publish}
 
-「クイック公開」を使用すると、選択した宛先にコンテンツを直ちに公開できます。[!DNL Experience Manager Assets] コンソールで、親フォルダーに移動し、公開するアセットまたはフォルダーをすべて選択します。クリック **[!UICONTROL クイック公開]** オプションを選択し、ドロップダウンリストからアセットを公開する宛先を選択します。
+「クイック公開」を使用すると、選択した宛先にコンテンツを直ちに公開できます。[!DNL Experience Manager Assets] コンソールで、親フォルダーに移動し、公開するアセットまたはフォルダーをすべて選択します。ツールバーの「**[!UICONTROL クイック公開]**」オプションをクリックし、アセットの公開先をドロップダウンリストから選択します。
 
 ![クイック公開](assets/quick-publish-to-aem.png)
 
@@ -178,7 +178,7 @@ Only the selected folder content and references are published.
 
 ## 公開をリクエスト {#request-publication}
 
-`Request Publication` オプションは、[!DNL AEM] Assets 環境で公開する前に、アセットのワークフローを認証する際に役立ちます。[!DNL AEM] は、様々なユーザーに異なるレベルの権限を提供します。アセットをアップロードする&#x200B;*投稿者*&#x200B;になることもできますが、アップロードが確認されるまでアセットを公開できません。また、 *管理者* アセットの読み取りワークフローと書き込みワークフローを管理できます。
+`Request Publication` オプションは、[!DNL AEM] Assets 環境で公開する前に、アセットのワークフローを認証する際に役立ちます。[!DNL AEM] は、様々なユーザーに異なるレベルの権限を提供します。アセットをアップロードする&#x200B;*投稿者*&#x200B;になることもできますが、アップロードが確認されるまでアセットを公開できません。また、*管理者*&#x200B;であれば、アセットの読み取りワークフローと書き込みワークフローを管理できます。
 
 「公開をリクエスト」オプションは、次のユーザーが使用できます。
 

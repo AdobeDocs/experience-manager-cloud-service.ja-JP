@@ -12,7 +12,7 @@ exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '1433'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -128,14 +128,14 @@ AEM Forms 6.5 から AEM as a Cloud Service 環境へのスムーズな移行を
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. [コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja#cloud-migration)を実行します。でパラメーターを指定する際 **[!UICONTROL 移行セットを作成]** 画面で、アダプティブForms、テーマ、テンプレート、フォームデータモデル（FDM）、Cloud Service、カスタムコンポーネント、その他のAEM Forms固有のアセットのへのパスを指定します **[!UICONTROL 含めるパス]** オプション。 指定した [!DNL AEM Forms] アセットを移行セットに追加します。
+1. [コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja#cloud-migration)を実行します。**[!UICONTROL 移行セットを作成]**&#x200B;画面でパラメーターを指定する際、アダプティブフォーム、テーマ、テンプレート、フォームデータモデル（FDM）、クラウドサービス、カスタムコンポーネント、その他の AEM Forms 固有のアセットのパスを「**[!UICONTROL 含めるパス]**」オプションに指定します。指定した [!DNL AEM Forms] アセットを移行セットに追加します。
 
 ## 様々な AEM Forms 固有のアセットのパス
 
 AEM Forms 6.5 から Cloud Service に移行する場合、AEM Forms 固有のアセットは次の場所にあります。
 
 * **アダプティブフォーム**：アダプティブフォームは、`/content/dam/formsanddocuments/` および `/content/forms/af` にあります。例えば、WKND 登録という名前のアダプティブフォームの場合、`/content/dam/formsanddocuments/wknd-registration` と `/content/forms/af/wknd-registration` のパスを追加します。
-* **フォームデータモデル**：すべてのフォームデータモデル（FDM）は、 `/content/dam/formsanddocuments-fdm`. 例：`/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
+* **フォームデータモデル**：すべてのフォームデータモデル（FDM）は、`/content/dam/formsanddocuments-fdm` にあります。例：`/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
 
 * **クライアントライブラリ**：クライアントライブラリのデフォルトパスは `/etc/clientlibs/fd/theme` です。
 
@@ -143,7 +143,7 @@ AEM Forms 6.5 から Cloud Service に移行する場合、AEM Forms 固有の�
 
 * **アダプティブフォームテーマとクライアントライブラリ**：テーマのデフォルトパスは` /content/dam/formsanddocuments-themes/`で、クライアントライブラリのデフォルトパスは`/etc/clientlibs/fd/theme`です。例えば、WKND テーマという名前のテンプレートの場合、パス` /content/dam/formsanddocuments-themes/wkndtheme`とテーマのクライアントライブラリを`/etc/clientlibs/reference-themes/wkndtheme-3-0`に追加します。他のカスタムパスにテーマとクライアントライブラリを配置することもできます。
 
-* **クラウドの設定情報**：クラウドの設定情報は、`/conf/`で確認できます。例えば、フォームデータモデル（FDM）クラウド設定は次の場所にあります。 `/conf/global/settings/cloudconfigs/fdm`.
+* **クラウドの設定情報**：クラウドの設定情報は、`/conf/`で確認できます。例えば、フォームデータモデル（FDM）のクラウドの設定情報は `/conf/global/settings/cloudconfigs/fdm` にあります。
 
 * **ワークフローモデル**：AEM ワークフローモデルは、`/conf/global/settings/workflow/models/`で参照できます。例えば、WKND 登録という名前のワークフローモデルの場合、パス`/conf/global/settings/workflow/models/wknd-registration`を追加します
 

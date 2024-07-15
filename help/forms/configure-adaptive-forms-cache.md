@@ -8,7 +8,7 @@ topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 source-git-commit: 5e02cf36112ce29cd3ebfd772623654328598bf2
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '944'
 ht-degree: 100%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 ### 前提条件 {#pre-requisites}
 
-* [クライアントでのデータの結合または事前入力](prepopulate-adaptive-form-fields.md#prefill-at-client)オプションを有効にします。これは、事前入力されたフォームの各インスタンスの一意のデータを結合するのに役立ちます。
+* 「[クライアントでのデータの結合または事前入力](prepopulate-adaptive-form-fields.md#prefill-at-client)」オプションを有効にします。これは、事前入力されたフォームの各インスタンスの一意のデータを結合するのに役立ちます。
 * [すべてのパブリッシュインスタンスに対してフラッシュエージェントを有効にします](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ja#invalidating-dispatcher-cache-from-a-publishing-instance)。これにより、アダプティブフォームのキャッシュパフォーマンスが向上します。フラッシュエージェントのデフォルト URL は `http://[server]:[port]]/etc/replication/agents.publish/flush.html` です。
 
 ### Dispatcher 上でアダプティブフォームをキャッシュする際の考慮事項 {#considerations}
@@ -90,7 +90,7 @@ Dispatcher 上のアダプティブフォームのキャッシュを有効にし
 
    * アダプティブフォームは、更新されたバージョンのフォームが公開されなくなるまで、キャッシュ内に残ります。
 
-   * アダプティブフォームで参照されているリソースの新しいバージョンが公開されると、影響を受けたアダプティブフォームは自動的に無効になります。参照されるリソースの自動無効化には、いくつかの例外があります。例外の回避策については、 [トラブルシューティング](#troubleshooting) の節を参照してください。
+   * アダプティブフォームで参照されているリソースの新しいバージョンが公開されると、影響を受けたアダプティブフォームは自動的に無効になります。参照されるリソースの自動無効化には、いくつかの例外があります。例外の回避策については、[トラブルシューティング](#troubleshooting)の節を参照してください。
 1. [以下のルール dispatcher.any またはカスタムルールファイルを追加します](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#specifying-the-documents-to-cache)。キャッシュをサポートしない URL は除外されます。例えば、インタラクティブ通信などです。
 
    ```JSON

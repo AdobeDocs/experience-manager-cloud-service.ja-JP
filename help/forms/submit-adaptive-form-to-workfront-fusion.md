@@ -7,7 +7,7 @@ feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1255'
 ht-degree: 100%
 

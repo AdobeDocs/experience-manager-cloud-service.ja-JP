@@ -13,7 +13,7 @@ ht-degree: 93%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の 2022.1.0 リリースノート {#release-notes}
 
-以下の節では、2022.1.0 バージョンのの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
+次の節では、[!DNL Experience Manager]as a Cloud Serviceの 2022.1.0 バージョンの機能リリースノートの概要を説明します。
 
 >[!NOTE]
 >

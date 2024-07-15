@@ -1,5 +1,5 @@
 ---
-title: アダプティブフォームのフォームデータモデル（FDM）を作成するにはどうすればよいですか？
+title: アダプティブフォームのフォームデータモデル（FDM）を作成する方法
 description: フォームデータモデル（FDM）に基づいたアダプティブフォームおよびフラグメントの作成方法を説明します。FDM でデータモデルオブジェクトのサンプルデータを生成し、編集します。
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
@@ -8,7 +8,7 @@ exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
 source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -22,14 +22,14 @@ ht-degree: 59%
 
 ![data-integration](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] のデータ統合機能により、各種のバックエンドデータソースを使用してフォームデータモデル（FDM）を作成できます。FDM は、様々なアダプティブFormsで、スキーマとして使用できます <!--and interactive communications--> ワークフロー。 そのためには、データソースの設定を行い、そのデータソース内の有効なデータモデルオブジェクトとデータモデルサービスに基づいて、フォームデータモデル（FDM）を作成する必要があります。 詳しくは、以下のトピックを参照してください。
+[!DNL Experience Manager Forms] のデータ統合機能により、各種のバックエンドデータソースを使用してフォームデータモデル（FDM）を作成できます。作成したデータフォーム（FDM）は、様々なアダプティブフォームの <!--and interactive communications--> ワークフローで、スキーマとして使用できます。そのためには、データソースの設定を行い、データソース内の有効なデータモデルオブジェクトとサービスに基づいて、フォームデータモデル（FDM）を作成する必要があります。詳しくは、以下のトピックを参照してください。
 
 * [[!DNL Experience Manager Forms] データ統合](data-integration.md)
 * [データソースの設定](configure-data-sources.md)
 * [フォームデータモデル（FDM）の作成](create-form-data-models.md)
 * [フォームデータモデル（FDM）の操作](work-with-form-data-model.md)
 
-フォームデータモデル（FDM）は、JSON スキーマの拡張機能で、次の用途に使用できます。
+JSON スキーマの拡張機能であるフォームデータモデル（FDM）を使用して、以下を行うことができます。
 
 * [アダプティブフォームとアダプティブフォームフラグメントの作成](#create-af)
   <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
@@ -40,23 +40,23 @@ ht-degree: 59%
 
 ## アダプティブフォームとアダプティブフォームフラグメントの作成 {#create-af}
 
-次を作成できます [アダプティブForms](creating-adaptive-form.md) とアダプティブフォームフラグメント <!-- [Adaptive Form Fragments](adaptive-form-fragments.md) --> フォームデータモデル（FDM）に基づく。 フォームデータモデル（FDM）を使用してアダプティブフォームまたはアダプティブフォームフラグメントを作成するには、以下の手順を実行します。
+フォームデータモデル（FDM）に基づいて、[アダプティブフォーム](creating-adaptive-form.md)とアダプティブフォームフラグメント <!-- [Adaptive Form Fragments](adaptive-form-fragments.md) --> を作成できます。アダプティブフォームまたはアダプティブフォームフラグメントを作成する際にフォームデータモデル（FDM）を使用するには、以下の手順を実行します。
 
 1. プロパティを追加画面の「フォームモデル」タブで、 **[!UICONTROL 次から選択]** ドロップダウンリストから「**[!UICONTROL フォームデータモデル]**」を選択します。
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-2. 「**[!UICONTROL フォームデータモデルを選択]**」を選択して展開します。使用可能なすべてのフォームデータモデル（FDM）が一覧表示されます。
+2. 「**[!UICONTROL フォームデータモデルを選択]**」を選択して展開します。使用可能なすべてのフォームデータモデル（FDM）がリスト表示されます。
 
    フォームデータモデルを選択します。
 
    ![create-af-2-1](assets/create-af-2-1.png)
 
-3. （**アダプティブフォームフラグメントのみ**）を参照してください。フォームデータモデル（FDM）内の 1 つのデータモデルオブジェクトのみに基づいて、アダプティブフォームフラグメントを作成できます。 **[!UICONTROL フォームデータモデル定義]**&#x200B;ドロップダウンを展開します。指定したフォームデータモデル（FDM）のすべてのデータモデルオブジェクトが一覧表示されます。 リストからデータモデルオブジェクトを選択します。
+3. （**アダプティブフォームフラグメントのみ**）フォームデータモデル（FDM）内の 1 つのデータモデルオブジェクトのみに基づいて、アダプティブフォームフラグメントを作成できます。**[!UICONTROL フォームデータモデル定義]**&#x200B;ドロップダウンを展開します。指定したフォームデータモデル（FDM）内のすべてのデータモデルオブジェクトがリスト表示されます。リストからデータモデルオブジェクトを選択します。
 
    ![create-af-3](assets/create-af-3.png)
 
-   フォームデータモデル（FDM）に基づいてアダプティブフォームまたはアダプティブフォームフラグメントを作成すると、フォームデータモデルオブジェクトがに表示されます **[!UICONTROL データソース]** アダプティブフォームエディターのコンテンツブラウザーのタブ
+   フォームデータモデル（FDM）に基づいてアダプティブフォームまたはアダプティブフォームフラグメントを作成すると、アダプティブフォームエディター内コンテンツブラウザーの「**[!UICONTROL データソース]**」タブにフォームデータモデルオブジェクトが表示されます。
 
    >[!NOTE]
    >
@@ -88,7 +88,7 @@ For more information, see:
 
 ## サンプルデータを使用したプレビュー {#preview-ic}
 
-フォームデータモデルエディターを使用して、フォームデータモデル（FDM）内のデータモデルオブジェクト用のサンプルデータを生成および編集できます。 このデータを使用して、<!--interactive communications and-->アダプティブフォームをプレビューおよびテストできます。プレビュー表示を行う前に、「[フォームデータモデルの操作](work-with-form-data-model.md#sample)」の説明に従って、サンプルデータを生成する必要があります。
+フォームデータモデルエディターでは、フォームデータモデル（FDM）内のデータモデルオブジェクト用のサンプルデータを生成して編集できます。このデータを使用して、<!--interactive communications and-->アダプティブフォームをプレビューおよびテストできます。プレビュー表示を行う前に、「[フォームデータモデルの操作](work-with-form-data-model.md#sample)」の説明に従って、サンプルデータを生成する必要があります。
 
 <!--To preview an interactive communication with sample Form Data Model data:
 
@@ -104,7 +104,7 @@ The interactive communication opens with prefilled sample data.
 
 ## フォームデータモデルサービスを使用したデータの事前入力 {#prefill}
 
-[!DNL Experience Manager Forms] には、アダプティブForms用に有効にできる標準のフォームデータモデル事前入力サービスが用意されています <!--and interactive communications--> フォームデータモデル（FDM）に基づく。 この事前入力サービスは、アダプティブフォーム<!--and interactive communication-->内のデータモデルオブジェクトに対してデータソースのクエリを実行し、フォームまたは通信のレンダリング時にデータを事前入力します。
+[!DNL Experience Manager Forms] には、標準のフォームデータモデル事前入力サービスが用意されています。フォームデータモデル（FDM）に基づいて、このサービスをアダプティブフォーム<!--and interactive communications-->で使用することができます。この事前入力サービスは、アダプティブフォーム<!--and interactive communication-->内のデータモデルオブジェクトに対してデータソースのクエリを実行し、フォームまたは通信のレンダリング時にデータを事前入力します。
 
 アダプティブフォームに対してフォームデータモデル事前入力サービスを有効にするには、アダプティブフォームコンテナのプロパティを開き、基本アコーディオンの **[!UICONTROL 事前入力サービス]** ドロップダウンで「**[!UICONTROL フォームデータモデル事前入力サービス]**」を選択します。次に、各プロパティを保存します。
 
@@ -118,7 +118,7 @@ Edit Properties dialog for an interactive communication-->
 
 ## 送信されたアダプティブフォームデータのデータソースへの書き込み {#write-af}
 
-ユーザーがフォームデータモデル（FDM）に基づいてフォームを送信するとき、データモデルオブジェクトに対して送信されたデータがそのデータソースに書き込まれるようにフォームを設定することができます。 このユースケースを実現するには、 [!DNL Experience Manager Forms] 提供する [フォームデータモデル送信アクション](configuring-submit-actions.md)は、フォームデータモデル（FDM）に基づくアダプティブFormsでのみ標準で使用できます。 これにより、データモデルオブジェクトに送信されたデータが、そのデータソースに書き込まれます。
+ユーザーがフォームデータモデル（FDM）に基づいてフォームを送信する際には、データモデルオブジェクトの送信データがそのデータソースに書き込まれるようにフォームを設定することができます。この設定を行うために、[!DNL Experience Manager Forms] には、すぐに使用できる[フォームデータモデル送信アクション](configuring-submit-actions.md)が用意されています。これは、フォームデータモデル（FDM）をベースとするアダプティブフォーム専用のアクションです。これにより、データモデルオブジェクトに送信されたデータが、そのデータソースに書き込まれます。
 
 フォームデータモデル送信アクションを設定するには：
 
@@ -132,7 +132,7 @@ Edit Properties dialog for an interactive communication-->
 1. **[!UICONTROL 送信するデータモデル]**&#x200B;を指定します。
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
-フォームを送信すると、設定されているデータモデルオブジェクトのデータが、各データソースに書き込まれます。さらに、フォームデータモデル（FDM）とレコードのドキュメント（DoR）を使用して、フォームの添付ファイルをデータソースに送信できます。 フォームデータモデル（FDM）について詳しくは、を参照してください。 [[!DNL AEM Forms] データ統合](data-integration.md).
+フォームを送信すると、設定されているデータモデルオブジェクトのデータが、各データソースに書き込まれます。さらに、フォームデータモデル（FDM）とレコードのドキュメント（DoR）を使用して、フォームの添付ファイルをデータソースに送信できます。フォームデータモデル（FDM）について詳しくは、[[!DNL AEM Forms]  のデータ統合機能](data-integration.md)を参照してください。
 
 <!--![data-submission](assets/data-submission.png)-->
 
@@ -145,15 +145,15 @@ Edit Properties dialog for an interactive communication-->
 1. バイナリプロパティを含むデータモデルオブジェクトをフォームデータモデル（FDM）に追加します。
 1. コンポーネントブラウザーの「**[!UICONTROL 添付ファイル]**」コンポーネントを、アダプティブフォームにドラッグ＆ドロップします。
 1. 追加されたコンポーネント、![settings_icon](assets/configure-icon.svg) の順に選択して、そのコンポーネントのプロパティブラウザーを開きます。
-1. 「バインド参照」フィールドで、 ![foldersearch_18](assets/folder-search-icon.svg) フォームデータモデル（FDM）に追加したバイナリプロパティに移動してそのプロパティを選択します。 必要に応じて、他のプロパティを設定します。
+1. 「バインド参照」フィールドで ![foldersearch_18](assets/folder-search-icon.svg) を選択し、フォームデータモデル（FDM）に追加したバイナリプロパティに移動してそのプロパティを選択します。必要に応じて、他のプロパティを設定します。
 
-   ![check-button](assets/save_icon.svg) を選択して、プロパティを保存します。これで、添付ファイルフィールドがフォームデータモデル（FDM）のバイナリプロパティにバインドされました。
+   ![check-button](assets/save_icon.svg) を選択して、プロパティを保存します。これで、添付ファイルフィールドがフォームデータモデル（FDM）のバイナリプロパティに連結されます。
 
 1. アダプティブフォームコンテナプロパティの「送信」セクションで、「**[!UICONTROL フォームの添付ファイルを送信]**」を有効にします。これで、フォーム送信時に、バイナリプロパティフィールド内の添付ファイルがデータソースに送信されます。
 
 ## ルールを使用したアダプティブフォーム内のサービスの呼び出し {#invoke-services}
 
-フォームデータモデル（FDM）に基づくアダプティブフォームでは、次の操作を実行できます [ルールの作成](rule-editor.md) フォームデータモデル（FDM）で設定されたサービスを呼び出すには、次の手順を実行します。 この **[!UICONTROL サービスの呼び出し]** ルール内の操作では、フォームデータモデル（FDM）内の使用可能なすべてのサービスが一覧表示され、サービスの入力フィールドと出力フィールドを選択できます。 「**[!UICONTROL 指定値]**」というルールタイプを使用してフォームデータモデルサービスを呼び出し、そのサービスから返された出力に対するフィールドの値を設定することもできます。
+フォームデータモデル（FDM）に基づくアダプティブフォームの場合、[ルールを作成](rule-editor.md)して、フォームデータモデル（FDM）内で設定されているサービスを呼び出すことができます。ルール内の「**[!UICONTROL サービスを起動]**」操作を実行すると、フォームデータモデル（FDM）内のすべての有効なサービスが一覧表示され、サービスの入力フィールドと出力フィールドを選択できます。「**[!UICONTROL 指定値]**」というルールタイプを使用してフォームデータモデルサービスを呼び出し、そのサービスから返された出力に対するフィールドの値を設定することもできます。
 
 例えば以下のルールの場合、従業員 ID を入力として使用する Get サービスが呼び出され、このサービスから返された値が、フォーム内の対応する扶養家族 ID フィールド、姓フィールド、名フィールド、性別フィールドに設定されます。
 
@@ -163,13 +163,13 @@ Edit Properties dialog for an interactive communication-->
 
 ### カスタム関数を使用したフォームデータモデル（FDM）の呼び出し {#invoke-form-data-model-using-custom-functions}
 
-[カスタム関数を使用してルールエディターからフォームデータモデルを呼び出す](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions)ことができます。フォームデータモデル（FDM）を呼び出すには、フォームデータモデルを許可リストに追加します。 許可リストにフォームデータモデルを追加するには、次の手順を実行します。
+[カスタム関数を使用してルールエディターからフォームデータモデルを呼び出す](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions)ことができます。フォームデータモデル（FDM）を呼び出すには、許可リストにフォームデータモデルを追加します。許可リストにフォームデータモデルを追加するには、次の手順を実行します。
 
 1. `https://server:host/system/console/configMgr` で Experience Manager web コンソールに移動します。
 1. 「**[!UICONTROL サービス呼び出し用のフォームデータモデルのアダプティブフォームレベルの許可リスト登録 - 設定ファクトリ]**」を見つけます。
 1. ![プラスアイコン ](/help/forms/assets/Smock_Add_18_N.svg) をクリックして設定を追加します。
 1. **[!UICONTROL コンテンツパスパターン]**&#x200B;を追加して、アダプティブフォームの場所を指定します。デフォルトでは、値は `/content/forms/af/(.*)` で、すべてのアダプティブフォームが含まれています。特定のアダプティブフォームのパスを指定することもできます。
-1. 追加 **[!UICONTROL フォームデータモデルのパスパターン]** フォームデータモデル（FDM）の場所を指定します。 デフォルト値はです `/content/dams/formsanddocuments-fdm/(.*)` すべてのフォームデータモデル（FDM）が含まれます。 また、特定のフォームデータモデル（FDM）のパスを指定することもできます。
+1. **[!UICONTROL フォームデータモデルのパスパターン]**&#x200B;を追加して、フォームデータモデル（FDM）の場所を指定します。デフォルトでは、値は `/content/dams/formsanddocuments-fdm/(.*)` で、すべてのフォームデータモデル（FDM）が含まれています。また、特定のフォームデータモデル（FDM）のパスを指定することもできます。
 1. 設定を保存します。
 
 追加した設定は、「**[!UICONTROL サービス呼び出し用のフォームデータモデルのアダプティブフォームレベルの許可リスト登録 - 設定ファクトリ]**」オプションに保存されます。
@@ -178,7 +178,7 @@ Edit Properties dialog for an interactive communication-->
 
 >[!NOTE]
 >
-> AEM アーキタイププロジェクトを通じてカスタム関数を使用して、ルールエディターからフォームデータモデル（FDM）を呼び出すには、次の手順を実行します。
+> AEM アーキタイププロジェクト経由でカスタム関数を使用してルールエディターからフォームデータモデル（FDM）を呼び出すには：
 >
 >1. [設定ファイルを作成](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json)します。
 >1. getContentPathPattern および getFormDataModelPathPattern のプロパティを設定します。

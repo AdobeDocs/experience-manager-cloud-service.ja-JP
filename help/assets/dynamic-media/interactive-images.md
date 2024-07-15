@@ -6,7 +6,7 @@ feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4072'
 ht-degree: 100%
 

@@ -5,8 +5,8 @@ role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: bc44e98d-446e-41ff-b5b4-9dc324834630
 source-git-commit: b4b397a09960f507df1daa0cf6f5dc49d6b286c6
-workflow-type: ht
-source-wordcount: '363'
+workflow-type: tm+mt
+source-wordcount: '515'
 ht-degree: 100%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 100%
 | アセットタイプ | [参照](/help/assets/navigate-view.md) | コピー | [アップロード](/help/assets/add-delete.md) | 作成 | [削除](/help/assets/add-delete.md#delete-assets) | 詳細 | 画像のズーム | [最近表示された項目](/help/assets/navigate-view.md) |
 |-------------------|----------|----------|----------|----------|----------|-------------------|------------|-----------------|
 | ラスター画像 | ✓ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
-| RAWファイル | ✓ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
+| RAW ファイル | ✓ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | フォルダー | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | − |
 | MP4 ビデオ | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | PDF | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
@@ -57,7 +57,7 @@ ht-degree: 100%
 | アセットタイプ | [ダウンロード](/help/assets/manage-organize.md#download) | ドラッグ＆ドロップ | [画像エディター](/help/assets/edit-images.md) | [検索](/help/assets/search.md) | [スマートタグ](/help/assets/metadata.md#tags) | [名前の変更](/help/assets/manage-organize.md) | [バージョン](/help/assets/manage-organize.md#versions-of-assets) |
 |---------------|----------|---------------|--------------|----------|------------|----------|----------|
 | ラスター画像 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAWファイル | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RAW ファイル | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | ✓ |
 | フォルダー | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 | ビデオ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | CC ライブラリ | − | − | − | − | − | ✓ | ✓ |
@@ -72,7 +72,7 @@ ht-degree: 100%
 | アセットタイプ | 注釈 | コメント | タスクの作成と確認 |
 |---------------|----------|----------|-------------------------|
 | ラスター画像 | ✓ | ✓ | ✓ |
-| RAWファイル | ✓ | ✓ | ✓ |
+| RAW ファイル | ✓ | ✓ | ✓ |
 | フォルダー | − | − | − |
 | ビデオ | − | ✓ | ✓ |
 | CC ライブラリ | − | − | − |
@@ -93,7 +93,7 @@ ht-degree: 100%
 | アセットタイプ | [メタデータ](/help/assets/metadata.md) | [レンディション](/help/assets/add-delete.md#renditions) | [ごみ箱](/help/assets/add-delete.md#delete-assets) | コピー | 移動 |
 |---------------|-------------------|------------|----------|----------|----------|
 | ラスター画像 | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAWファイル | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RAW ファイル | ✓ | ✓ | ✓ | ✓ | ✓ |
 | フォルダー | ✓ | − | ✓ | ✓ | ✓ |
 | ビデオ | ✓ | − | ✓ | ✓ | ✓ |
 | CC ライブラリ | ✓ | − | − | − | − |
@@ -126,4 +126,4 @@ ht-degree: 100%
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
-* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&amp;lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General#support)に問い合わせる

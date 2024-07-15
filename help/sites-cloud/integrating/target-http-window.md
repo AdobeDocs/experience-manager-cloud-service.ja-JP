@@ -2,8 +2,8 @@
 title: Adobe AEM Target HTTP ウィンドウ
 description: Adobe AEM Target HTTP ウィンドウ
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '194'
+workflow-type: tm+mt
+source-wordcount: '197'
 ht-degree: 100%
 
 ---

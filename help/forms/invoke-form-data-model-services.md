@@ -1,22 +1,22 @@
 ---
-title: API を使用してアダプティブFormsからフォームデータモデル（FDM）サービスを呼び出す方法
-description: アダプティブフォームフィールド内から WSDL で記述された、Web サービスを呼び出す API について説明します。
+title: API を使用してアダプティブフォームからフォームデータモデル（FDM）サービスを呼び出す方法
+description: アダプティブフォームフィールド内から WSDL で記述された、invokeWebServices API について説明します。
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '488'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 
-# アダプティブFormsからフォームデータモデル（FDM）サービスを呼び出すための API {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+# アダプティブフォームからフォームデータモデル（FDM）サービスを呼び出すための API {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 ## 概要 {#overview}
 
-[!DNL AEM Forms] を使用すると、アダプティブフォームフィールド内からフォームデータモデル（FDM）で構成されたサービスを呼び出すことで、フォーム作成者はフォームへの記入作業を簡略化および強化できます。 データモデルサービスを呼び出すには、ビジュアルエディターでルールを作成するか、[ルールエディター](rule-editor.md)のコードエディターの `guidelib.dataIntegrationUtils.executeOperation` API を使用して JavaScript を指定します。
+[!DNL AEM Forms] を使用すると、フォーム作成者は、アダプティブフォームフィールド内からフォームデータモデル（FDM）で設定されたサービスを呼び出すことで、フォームへの記入作業を簡略化および強化することができます。データモデルサービスを呼び出すには、ビジュアルエディターでルールを作成するか、[ルールエディター](rule-editor.md)のコードエディターの `guidelib.dataIntegrationUtils.executeOperation` API を使用して JavaScript を指定します。
 
 このドキュメントでは、`guidelib.dataIntegrationUtils.executeOperation` API を使用して JavaScript を記述してサービスを呼び出す方法に焦点を当てています。
 
@@ -60,7 +60,7 @@ API 構造は、サービス操作の以下の詳細を指定します。
   </tr>
   <tr>
    <td><code>formDataModelId</code></td>
-   <td>フォームデータモデル（FDM）の名前を含むリポジトリーパスを指定します</td>
+   <td>フォームデータモデル（FDM）へのリポジトリパスをその名前も含めて指定します</td>
   </tr>
   <tr>
    <td><code>operationName</code></td>
@@ -87,7 +87,7 @@ API 構造は、サービス操作の以下の詳細を指定します。
 
 ## サービスを呼び出すスクリプトのサンプル {#sample-script-to-invoke-a-service}
 
-次のサンプルスクリプトでは、 `guidelib.dataIntegrationUtils.executeOperation` を呼び出すための API `getAccountById` で設定されたサービス操作 `employeeAccount` フォームデータモデル（FDM）。
+以下のサンプルスクリプトでは、`guidelib.dataIntegrationUtils.executeOperation` API を使用して、`employeeAccount` フォームデータモデル（FDM）で設定された `getAccountById` サービス操作を呼び出します。
 
 `getAccountById` 操作は、`empId` 引数の入力値として `employeeID` フォームフィールドにある値を使用し、該当する従業員の名前、口座番号、口座残高を戻します。この出力値は指定されたフォームフィールドに入力されます。例えば、`name` 引数の値は `fullName` フォーム要素に入力され、`accountNumber` 引数の値は `account` フォーム要素に入力されます。
 
@@ -119,7 +119,7 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, c
 
 ### success コールバック関数と failure コールバック関数を持つサンプルスクリプト {#callback-function-success-failure}
 
-次のサンプルスクリプトでは、 `guidelib.dataIntegrationUtils.executeOperation` を呼び出すための API `GETOrder` で設定されたサービス操作 `employeeOrder` フォームデータモデル（FDM）。
+以下のサンプルスクリプトでは、`guidelib.dataIntegrationUtils.executeOperation` API を使用して、`employeeOrder` フォームデータモデル（FDM）で設定された `GETOrder` サービス操作を呼び出します。
 
 `GETOrder` 操作は、`Order ID` フォームフィールドの値を `orderId` 引数の入力として受け取り、`success` コールバック関数に注文数量の値を返します。`success` コールバック関数が注文数を返さない場合、`failure` コールバック関数は `Error occured` メッセージを表示します。
 

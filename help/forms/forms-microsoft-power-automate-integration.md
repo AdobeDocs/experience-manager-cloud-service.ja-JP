@@ -6,7 +6,7 @@ keywords: AEM forms を Power Automate に接続、Power Automate による AEM 
 feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 100%
 

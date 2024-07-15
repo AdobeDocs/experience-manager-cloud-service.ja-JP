@@ -5,7 +5,7 @@ feature: Workfront Integrations and Apps
 exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
 role: Admin
 source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 100%
 

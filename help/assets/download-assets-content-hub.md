@@ -20,11 +20,11 @@ Content Hubでは、1 つまたは複数のアセットをダウンロードで�
 
 ## 前提条件 {#prerequisites}
 
-[Content Hub ユーザー](deploy-content-hub.md#onboard-content-hub-users) この記事で取り上げるアクションを実行できます。
+[Content Hub ユーザー ](deploy-content-hub.md#onboard-content-hub-users) は、この記事で説明されるアクションを実行できます。
 
 ## アセットをダウンロード {#download-single-asset}
 
 1. ダウンロードするアセットを選択します。
-   ![単一アセットのダウンロード](assets/download-assets-new.jpg)
+   ![ 単一アセットのダウンロード ](assets/download-assets-new.jpg)
 1. 「**[!UICONTROL ダウンロード]**」をクリックします。<br> または、アセットカードにある「ダウンロード」アイコンをクリックして、アセットをダウンロードすることもできます。
 すべてのアセットが元のレンディションでダウンロードされます。

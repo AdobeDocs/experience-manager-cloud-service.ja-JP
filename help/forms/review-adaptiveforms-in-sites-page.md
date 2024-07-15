@@ -5,7 +5,7 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 100%
 

@@ -6,7 +6,7 @@ feature: Asset Management, Best Practices
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
 source-git-commit: 62af768370ee0affa4003a7ae0c520ad1a065e8c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1648'
 ht-degree: 100%
 

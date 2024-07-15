@@ -17,44 +17,44 @@ SecurBank アプリを使用して実践的なエクスペリエンスを持つ�
 
 ## 前提条件 {#prerequisites}
 
-* に割り当てられている必要があります **AEM管理者** [製品プロファイル](/help/journey-onboarding/assign-profiles-aem.md) :SecurBank アプリをインストールします。
-* 以下が必要です [Node.js](https://nodejs.org) ローカル開発のためにバージョン 20 以降がインストールされています。
+* SecurBank アプリをインストールするには、**AEM管理者** [ 製品プロファイル ](/help/journey-onboarding/assign-profiles-aem.md) に割り当てられている必要があります。
+* ローカル開発するには、[Node.js](https://nodejs.org) バージョン 20 以降がインストールされている必要があります。
 
 ## SecurBank のインストール {#installation}
 
-SecurBank アプリのインストールは簡単ですが、AEMas a Cloud Serviceの多くの領域に影響を与えるので、いくつかの手順が関係します。 主な手順の概要を次に示します。
+SecurBank アプリのインストールは簡単ですが、AEM as a Cloud Serviceの多くの領域に影響を与えるため、いくつかの手順が必要になります。 主な手順の概要を次に示します。
 
-1. [Cloud Manager でサンドボックスプログラムを作成します。](#create-sandbox-program)
+1. [Cloud Managerでサンドボックスプログラムを作成します。](#create-sandbox-program)
 1. [プログラムの Git リポジトリを複製し、SecurBank AEM プロジェクトのコンテンツを使用して更新します。](#clone-and-update)
 1. [パイプラインを実行して SecurBank AEM プロジェクトをデプロイします。](#run-pipeline)
-1. [ローカル web アプリ開発用の Cloud Manager 資格情報を取得します。](#retrieve-credentials)
+1. [ローカル web アプリ開発用のCloud Manager資格情報を取得します。](#retrieve-credentials)
 1. [SecurBank Web アプリをダウンロードして構成します。](#download-web-app)
 1. [SecurBank Web アプリを実行します。](#run-web-app)
 
 次のセクションでは、必要な個々のタスクについて詳しく説明します。
 
-### Cloud Manager でサンドボックスプログラムを作成します。 {#create-sandbox-program}
+### Cloud Managerでサンドボックスプログラムを作成します。 {#create-sandbox-program}
 
-SecurBank をインストールできる新しい Cloud Manager プログラムが必要になります。
+SecurBank をインストールできる新しいCloud Managerプログラムが必要になります。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
 1. SecurBank アプリ用の新しいサンドボックスプログラムを作成します。
 
-   * 選択時にデフォルトのオプションを使用 **ソリューションとアドオン**.
-   * サンドボックスプログラムの作成方法について詳しくは、ドキュメントを参照してください。 [サンドボックスプログラムの作成。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+   * **ソリューションとアドオン** を選択する場合は、デフォルトのオプションを使用します。
+   * サンドボックスプログラムの作成方法について詳しくは、ドキュメント [ サンドボックスプログラムの作成 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) を参照してください。
 
 ### プログラムの Git リポジトリを複製し、SecurBank AEM プロジェクトのコンテンツを使用して更新します。 {#clone-and-update}
 
-1. プログラムを作成したら、プログラムを開いて **リポジトリ** タブで、 **リポジトリ情報にアクセス** を開くためのボタン **リポジトリ情報** ダイアログを開いて、サンドボックス環境用の git リポジトリへのアクセスに必要な資格情報を表示します。
+1. プログラムを作成したら開き、「**リポジトリ**」タブで「**リポジトリ情報にアクセス**」ボタンをタップまたはクリックして **リポジトリ情報** ダイアログを開き、サンドボックス環境の Git リポジトリへのアクセスに必要な資格情報を表示します。
 
-   * リポジトリ情報へのアクセス方法について詳しくは、ドキュメントを参照してください [リポジトリへのアクセス。](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+   * リポジトリ情報へのアクセス方法について詳しくは、[ リポジトリへのアクセス ](/help/implementing/cloud-manager/managing-code/accessing-repos.md) のドキュメントを参照してください。
 
-1. の資格情報の使用 **リポジトリ情報** ローカルマシン上にリポジトリのクローンを作成します。
+1. **リポジトリ情報** ダイアログの資格情報を使用して、ローカルマシンにリポジトリのクローンを作成します。
 
 1. ローカルクローンのフォルダーを探して開き、hidden/dot ファイルを除くすべてのコンテンツを削除します。
 
-1. で GitHub から最新の SecurBank AEM プロジェクトコードを取得します。 [`https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank`](https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank) クリックして **コード** その後 **ZIP をダウンロード** ドロップダウンで選択します。
+1. [`https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank`](https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank) の GitHub から、最新の SecurBank AEM プロジェクトコードを取得します。**コード** をクリックし、ドロップダウンで **ZIP をダウンロード** します。
 
 1. ローカルファイルシステム上の zip ファイルの内容を解凍し、サンドボックスプログラムのローカルクローンの空になったフォルダーに移動します。
 
@@ -68,47 +68,47 @@ SecurBank をインストールできる新しい Cloud Manager プログラム�
 
 SecurBank のAEM プロジェクトをサンドボックスリポジトリにコミットした状態で、パイプラインを使用してデプロイできます。
 
-1. に戻る **概要** cloud Manager でサンドボックスプログラムの「」タブをクリックし、フルスタックの実稼動以外のパイプラインを実行します。
+1. Cloud Managerのサンドボックスプログラムの「**概要**」タブに戻り、フルスタックの実稼動以外のパイプラインを実行します。
 
    * パイプライン実行のすべてのオプションをオフにします。
-   * パイプラインの実行について詳しくは、ドキュメントを参照してください [パイプラインの管理](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
+   * パイプラインの実行について詳しくは、[ パイプラインの管理 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) のドキュメントを参照してください。
 
-### ローカル web アプリ開発用の Cloud Manager 資格情報を取得します。 {#retrieve-credentials}
+### ローカル web アプリ開発用のCloud Manager資格情報を取得します。 {#retrieve-credentials}
 
-SecurBank アプリを実行する前に、アプリを Cloud Manager に接続するために Cloud Manager 資格情報が必要です。
+SecurBank アプリを実行する前に、アプリをCloud Managerに接続するためにCloud Manager資格情報が必要です。
 
-1. パイプラインを実行している間に、 **概要** cloud Manager でタブをクリックし、環境名の横にある省略記号ボタンをタップまたはクリックして、を選択します。 **Developer Console**.
+1. パイプラインを実行中に、Cloud Managerの「**概要**」タブに戻り、環境名の横にある省略記号ボタンをタップまたはクリックして、「**Developer Console**」を選択します。
 
-1. 開発者コンソールで、 **統合** tab キーを押して、 **ローカルトークン** tab キーを押しながらタップまたはクリック **ローカル開発トークンを取得**.
+1. Developer Consoleで、「**統合**」タブを選択し、「**ローカルトークン**」タブを選択して、「**ローカル開発トークンの取得**」をタップまたはクリックします。
 
-1. アクセストークンを使用して JSON ファイルが生成されます。 開発者コンソールを閉じて Cloud Manager に戻る前に、トークン自体（残りの JSON は不要）のみを、今後の手順で使用するために安全な場所にコピーします。
+1. アクセストークンを使用して JSON ファイルが生成されます。 Developer Consoleを閉じてCloud Managerに戻る前に、トークン自体（残りの JSON は不要）のみを、今後の手順で使用するために安全な場所にコピーします。
 
-1. Cloud Manager に戻り、次の操作を行います **概要** タブをクリックし、環境の URL を右クリックしてコピーし、今後の手順で使用するために安全な場所に保存します。
+1. Cloud Managerに戻り、「**概要**」タブで環境の URL を右クリックしてコピーし、今後の手順で使用するために安全な場所に保存します。
 
 ### SecurBank Web アプリをダウンロードして構成します。 {#download-web-app}
 
 これで、SecurBank の Web アプリケーションをダウンロードして構成できます。
 
-1. で GitHub から最新の SecurBank アプリコードを取得します。 [`https://github.com/Adobe-Marketing-Cloud/summit-2024-l425/tree/ue-z-final-with-events`](https://github.com/Adobe-Marketing-Cloud/summit-2024-l425/tree/ue-z-final-with-events) クリックして **コード** その後 **ZIP をダウンロード** ドロップダウンで選択します。
+1. [`https://github.com/Adobe-Marketing-Cloud/summit-2024-l425/tree/ue-z-final-with-events`](https://github.com/Adobe-Marketing-Cloud/summit-2024-l425/tree/ue-z-final-with-events) の GitHub から最新の SecurBank アプリコードを取得するには、ドロップダウンで「**コード**」をクリックし、「**ZIP をダウンロード**」をクリックします。
 
 1. ローカルファイルシステム上の zip ファイルの内容を解凍します。
 
-1. 任意のコードエディターを起動し、SecurBank アプリプロジェクトの非表示環境ファイル（）を開きます。 `summit-2024-l425-ue-z-final-with-events/react-app/.env`.
+1. 任意のコードエディターを起動し、SecurBank アプリプロジェクト内の非表示の環境ファイル（`summit-2024-l425-ue-z-final-with-events/react-app/.env`）を開きます。
 
-1. に次の変更を加えます。 `.env` ファイルを作成して変更を保存します。
+1. `.env` ファイルに次の変更を加え、変更内容を保存します。
 
-   * の場合 `REACT_APP_HOST_URI` 以前にコピーした環境の URL の値を貼り付けます。
-   * の場合 `REACT_APP_DEV_TOKEN` 以前にコピーしたローカル開発トークンの値を貼り付けます。
+   * `REACT_APP_HOST_URI`：以前にコピーした環境の URL の値を貼り付けます。
+   * `REACT_APP_DEV_TOKEN`：以前にコピーしたローカル開発トークンの値をペーストします。
 
 ### SecurBank Web アプリを実行します。 {#run-web-app}
 
-すべてが Cloud Manager とローカルの両方で設定されているので、SecurBank web アプリを実行できます。
+すべてがCloud Managerとローカルの両方で設定されているので、SecurBank web アプリを実行できます。
 
-1. ローカルマシンのコマンドラインで、に移動します。 `react-app` ダウンロードして解凍した SecurBank アプリプロジェクトのフォルダー。
+1. ローカルマシンのコマンドラインで、ダウンロードして解凍した SecurBank アプリプロジェクトの `react-app` フォルダーに移動します。
 
-1. あなたの `react-app` フォルダーと SecurBank アプリをインストールします `node -i` コマンド。
+1. `react-app` フォルダーに、`node -i` コマンドを使用して SecurBank アプリをインストールします。
 
-1. インストールが完了したら、次のコマンドを使用して SecurBank アプリを起動します `npm start` コマンド。
+1. インストールが完了したら、`npm start` のコマンドを使用して SecurBank アプリを起動します。
 
 1. インストールと開始が成功した場合は、次のように表示されます。
 
@@ -128,12 +128,12 @@ SecurBank アプリを実行する前に、アプリを Cloud Manager に接続�
   webpack compiled successfully
   ```
 
-   * URL へのブラウザーウィンドウが開きます `https://localhost:3000`.
+   * ブラウザーウィンドウが開き、URL `https://localhost:3000` が表示されます。
 
       * これは開発目的なので、有効な証明書は提供されません。 そのため、ページにアクセスできるようにブラウザーに通知する必要がある場合があります。
 
 これで完了です。これで、ブラウザで SecurBank アプリが正常に実行されていることがわかります。
 
-コンテンツがまだ表示されない場合は、 **開発環境にデプロイ** 実行したパイプラインは正常に完了しました。
+コンテンツがまだ表示されない場合は、実行した **開発にデプロイ** パイプラインが正常に完了したことを確認します。
 
-![ブラウザーでの SecurBank アプリ](assets/securbank.png)
+![ ブラウザーの SecurBank アプリ ](assets/securbank.png)

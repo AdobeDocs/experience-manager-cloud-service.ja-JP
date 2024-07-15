@@ -27,7 +27,7 @@ ht-degree: 56%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.11.0）のリリース日は、2023年11月30日（PT）です。次回の機能リリース（2023.12.0）は 2023年12月14日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.11.0）のリリース日は 2023年11月30日です。次回の機能リリース（2023.12.0）は 2023年12月14日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -43,17 +43,17 @@ ht-degree: 56%
 
 ### 早期導入プログラム {#sites-early-adopter}
 
-**[コンテンツフラグメント内の文字列の検索と置換](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**：コンテンツフラグメントコンソールを使用すると、複数のコンテンツフラグメントに表示される文字列を一度に置き換えて、コンテンツベロシティを向上させるための、簡単で直感的な方法がユーザーに提供されます。
+**[コンテンツフラグメント内の文字列の検索と置換](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**：コンテンツフラグメントコンソールを使用すると、複数のコンテンツフラグメントに一度に表示される文字列を置換して、コンテンツベロシティを向上させるための簡単で直感的な方法がユーザーに提供されます。
 
 ![検索と置換](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
 
-この機能を試してフィードバックを共有いただける場合メールの送信先 **aemcs-headless-adopter@adobe.com** 公式メール ID から早期導入プログラムの詳細を確認します。
+この機能を試してフィードバックを共有いただける場合公式メール ID から **aemcs-headless-adopter@adobe.com** にメールを送信して、早期導入プログラムの詳細を確認してください。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### アセットビューの新機能 {#assets-view-features}
+### Assets ビューの新機能 {#assets-view-features}
 
-* **AEM Assetsの埋め込みAdobe Expressエディター**: Express にアクセスできるユーザーは、Adobe ExpressやAdobe Fireflyの統合画像編集および作成ツールをAEM Assets内で直接使用できるようになり、コンテンツの再利用が促進され、コンテンツベロシティが向上しました。
+* **AEM Assetsの組み込みAdobe Expressエディター**:Express にアクセスできるユーザーは、AEM Assets内で直接、Adobe ExpressとAdobe Fireflyの統合画像編集ツールと作成ツールを使用して、コンテンツの再利用を促進し、コンテンツベロシティを向上させることができます。
 
   ![フォルダーにメタデータフォームの割り当て](/help/assets/assets/adobe-express-aem-assets.png)
 
@@ -66,35 +66,35 @@ ht-degree: 56%
 -->
 
 
-* **インサイトのストレージ使用状況レポート**：管理者は、インサイトの一部として利用できるストレージ使用状況レポートを表示できるようになりました。
+* **インサイトのストレージ使用状況レポート**：管理者は、インサイトの一部として使用できるストレージ使用状況レポートを表示できるようになりました。
 
   ![ストレージ使用状況インサイト](/help/assets/assets/storage-usage-insights.png)
 
-* **最初のホームページ設定を検索**:Experience Manager Assetsで、組織のホームページ機能を設定できるようになりました。 ホームページとして検索ファーストを選択した場合は、組織の検索バーの位置、背景画像、ロゴを設定できます。
+* **最初のホームページ設定を検索**:Experience Manager Assetsで、組織のホームページエクスペリエンスを設定できるようになりました。 ホームページとして検索ファーストを選択した場合は、組織の検索バーの位置、背景画像、ロゴを設定できます。
 
   ![検索ファーストの設定](/help/assets/assets/search-first-configuration.png)
 
 ### 管理者向けプレリリースの新機能 {#admin-view-features-prerelease}
 
-**ビデオのプレビュー**:AEM Assetsは、処理プロファイルを設定する必要なく、サポートされるすべてのビデオ形式のプレビューレンディションをデフォルトで生成するようになりました。
+**ビデオプレビュー**:AEM Assetsは、処理プロファイルを設定する必要なく、サポートされるすべてのビデオ形式のプレビューレンディションをデフォルトで生成するようになりました。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### の新機能 [!DNL Experience Manager Forms] {#forms-features}
+### [!DNL Experience Manager Forms] の新機能 {#forms-features}
 
 * **[チェックボックスコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html?lang=ja)**：コアコンポーネントに基づくアダプティブフォームにチェックボックスコンポーネントを含めることができるようになりました。これにより、ユーザーは特定のオプションを選択または選択解除する二者択一の選択を行うことができます。通常、小さなボックスとして表示され、クリックまたはタップすると、オンとオフの 2 つの状態を切り替えることができます。チェックボックスは、はい／いいえ、または真／偽の選択肢を提示するために使用される一般的なフォーム要素です。
 
 * **[利用条件コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=ja)**：コアコンポーネントに基づくアダプティブフォームに利用条件コンポーネントを含めることができるようになりました。これにより、フォーム作成者は、サービス、製品、プラットフォームの使用に関連する利用条件または法的合意をユーザーに提示するフォーム内に特定のセクションを導入できます。このコンポーネントは、フォームを送信することで同意するルール、規制、義務についてユーザーに通知するように設計されています。
 
-  ![チェックボックス、利用条件、垂直タブコンポーネント](/help/forms/assets/forms-components.png)
+  ![ チェックボックス、利用条件、垂直タブコンポーネント ](/help/forms/assets/forms-components.png)
 
 * **[垂直タブコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html?lang=ja)**：コアコンポーネントに基づくアダプティブフォームでは、フォームのコンテンツをタブの垂直リストに整理し、構造化されたナビゲートしやすいレイアウトを提供できるようになりました。フォームで垂直タブを使用すると、特にフォームに複数のセクションや複雑な情報が含まれている場合、ナビゲーションが簡素化され、フォームコンテンツの整理が改善され、全体的なユーザーエクスペリエンスが向上します。
 
 
 
-### の新機能 [!DNL Forms] プレリリース {#prerelease-features-forms}
+### [!DNL Forms] プレリリースの新機能 {#prerelease-features-forms}
 
-* **[アダプティブFormsとMicrosoft® SharePoint リストの接続](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**:AEM Formsでは、フォームデータをSharePoint リストに直接送信する OOTB 統合が提供されており、SharePoint リストの機能を活用できます。 Microsoft SharePoint リストをフォームデータモデルのデータソースとして設定し、を使用できます **フォームデータモデルを使用して送信** アダプティブフォームをSharePoint リストに接続するための送信アクション。
+* **[アダプティブFormsとMicrosoftの接続® SharePoint リスト](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**:AEM Formsは、SharePointのリスト機能を活用できるように、フォームデータをSharePoint リストに直接送信する OOTB 統合を提供します。 Microsoft SharePoint リストをフォームデータモデルのデータソースとして設定し、**フォームデータモデルを使用して送信** 送信アクションを使用して、アダプティブフォームをSharePoint リストに接続できます。
 
 <!-- 
 
@@ -120,13 +120,13 @@ ht-degree: 56%
 
 トラフィックフィルタールールは 10 月にリリースされ、Sites とFormsのお客様が既に利用できるルールを補完するために、今年後半に web Application Firewall （WAF）の特別なカテゴリのルールが利用可能になるという注記が含まれています。 更新として、WAF-DDoS 保護製品のライセンスを取得できるようになりました。
 
-ライセンスを取得したら、Cloud Manager 設定パイプラインを使用してこれらの高度な WAF ルールを CDN にデプロイし、web 攻撃に対する保護のレイヤーを追加できます。
+ライセンスが取得されると、これらの高度な WAF ルールをCloud Manager設定パイプラインを使用して CDN にデプロイし、web 攻撃に対する保護をさらに強化できます。
 
-詳細を読む [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)（WAF を含む） WAF-DDoS Protection または Enhanced Security のライセンスについては、AEM アカウントチームにお問い合わせください。
+WAF を含む [ トラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md) を参照してください。 WAF-DDoS Protection または Enhanced Security のライセンスについては、AEM アカウントチームにお問い合わせください。
 
 ### CDN 設定の早期導入プログラム {#cdn-config-early-adopter}
 
-最近リリースされたに加えて [トラフィックフィルタールール（WAF を含む）](/help/security/traffic-filter-rules-including-waf.md)の場合は、設定パイプラインを使用して、他のタイプの CDN 設定を宣言およびデプロイできます。 次のようなユースケースについてお聞かせください。
+最近リリースされた [ トラフィックフィルタールール（WAF を含む） ](/help/security/traffic-filter-rules-including-waf.md) に加えて、設定パイプラインを使用して、他のタイプの CDN 設定を宣言およびデプロイすることもできます。 次のようなユースケースについてお聞かせください。
 * 301/302 クライアントサイドのリダイレクト
 * 任意の接触チャネルに対するエッジでのリクエストのプロキシ処理
 * URL 変換
@@ -135,7 +135,7 @@ ht-degree: 56%
 * ユーザー名/パスワードによる認証
 * その他の便利な CDN 設定
 
-メールの送信先 **aemcs-cdn-config-adopter@adobe.com** フィードバックを含む公式メール ID から。
+公式メール ID からフィードバックを記載したメールを **0}aemcs-cdn-config-adopter@adobe.com} に送信します。**
 
 ## Cloud Manager {#cloud-manager}
 
@@ -149,4 +149,4 @@ Cloud Manager の月次リリースの完全なリストは、[こちら](/help/
 
 * コアコンポーネントに基づくアダプティブ Formsを送信できない。 この問題は、コアコンポーネントバージョン 2.0.38～2.0.60 を使用して作成されたアダプティブFormsで発生します。
 
-  問題を解決する方法は次のとおりです。 アダプティブフォームのコアコンポーネントバージョン 2.0.62 以降に移行できます。 お使いの環境に合わせてアダプティブ Forms コアコンポーネントのバージョンを設定するには、 [core.forms.components.version、core.forms.components.af.version、core.wcm.components.version コンポーネントのバージョンを設定します](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) Formsas a Cloud ServiceリポジトリまたはAEM アーキタイプベースのプロジェクトの依存関係。 [Formsas a Cloud Service環境への変更内容のデプロイ](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). アダプティブ Forms コアコンポーネントの依存関係の最新バージョンは、次の URL で確認できます [アダプティブ Forms コアコンポーネント Git リポジトリ](https://github.com/adobe/aem-core-forms-components#system-requirements).
+  問題を解決する方法は次のとおりです。 アダプティブフォームのコアコンポーネントバージョン 2.0.62 以降に移行できます。 お使いの環境でアダプティブ Formsのコアコンポーネントのバージョンを設定するには、[core.forms.components.version、core.forms.components.af.version、core.wcm.components.version コンポーネントのバージョンを設定 ](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository)Formsas a Cloud ServiceリポジトリーまたはAEM アーキタイプベースのプロジェクトで依存関係を設定し、[ 変更内容をFormsas a Cloud Service環境にデプロイします ](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment)。 アダプティブForms コアコンポーネントの依存関係の最新バージョンは、[ アダプティブForms コアコンポーネント Git リポジトリ ](https://github.com/adobe/aem-core-forms-components#system-requirements) で確認できます。

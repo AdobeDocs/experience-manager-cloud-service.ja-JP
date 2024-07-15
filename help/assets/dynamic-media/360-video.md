@@ -1,14 +1,14 @@
 ---
 title: 360/VR ビデオ
-description: Dynamic Mediaで 360 と Virtual Reality(VR) ビデオを操作する方法を説明します。
+description: Dynamic Media で 360 ビデオとバーチャルリアリティ（VR）ビデオを操作する方法について説明します。
 contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 95%
+source-wordcount: '1007'
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ Dynamic Media には、360 ビデオアセット配信のネイティブサポ�
 
 詳しくは、[AEM Assets での Dynamic Media 360 ビデオとカスタムビデオサムネールの使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html?lang=ja#dynamic-media)を参照してください。
 
-関連トピック [ビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md).
+詳しくは、[ビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md)を参照してください。
 
-## 360 ビデオの動作 {#video-in-action}
+## 360 ビデオの再生 {#video-in-action}
 
 「[Space Station 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)」を選択して、ブラウザーウィンドウを開き、360 度ビデオを視聴します。ビデオ再生中にポインターを新しい位置にドラッグすると、表示角度が変更されます。
 
@@ -35,7 +35,7 @@ Dynamic Media には、360 ビデオアセット配信のネイティブサポ�
 
 ## 360/VR ビデオと Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
-AdobePremier Pro を使用して、360/VR フッテージを表示および編集できます。 例えば、シーン内にロゴやテキストを適切に配置したり、エクイレクタングラー形式のメディアに特化して設計されたエフェクトやトランジションを適用したりできます。
+Adobe Premier Pro を使用して、360/VR フッテージを表示および編集できます。例えば、シーン内にロゴやテキストを適切に配置したり、エクイレクタングラー形式のメディアに特化して設計されたエフェクトやトランジションを適用したりできます。
 
 [360/VR ビデオの編集](https://helpx.adobe.com/jp/premiere-pro/how-to/edit-360-vr-video.html)を参照してください。
 
@@ -68,7 +68,7 @@ AdobePremier Pro を使用して、360/VR フッテージを表示および編�
 
    * 360 ビデオアセット専用のフォルダー内の 360 ビデオコンテンツを処理します。
 
-   このアプローチにより、ユーザーのネットワークと CPU に対する要求が増えます。
+   このアプローチを使用する場合は、ユーザーのネットワークや CPU の要件も高くなります。
 
 1. [フォルダーにビデオをアップロードします](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
 

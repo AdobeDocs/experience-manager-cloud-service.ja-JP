@@ -6,7 +6,7 @@ feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1956'
 ht-degree: 100%
 

@@ -1,6 +1,6 @@
 ---
 title: 参照アダプティブフォームフラグメントとは
-description: AEM Formsにはアダプティブフォームフラグメントが用意されており、これをアセットとして使用すると、すばやくフォームを作成することができます。
+description: AEM Formsには、フォームをすばやく作成するためにアセットとして使用できるアダプティブフォームフラグメントが用意されています。
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -8,17 +8,17 @@ discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
 source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 65%
+source-wordcount: '396'
+ht-degree: 83%
 
 ---
 
 
 # 参照用のアダプティブフォームフラグメント {#reference-adaptive-form-fragments}
 
-アダプティブフォームフラグメントは、フォームの作成時に使用できるフィールドのグループまたはフィールドのグループを含むパネルです。これを使用してフォームを簡単にすばやく作成できます。サイドバーのアセットブラウザーを使用してアダプティブフォームフラグメントをフォームにドラッグ&amp;ドロップし、フォームエディターで編集することができます。
+アダプティブフォームフラグメントは、フォームの作成時に使用できるフィールドのグループまたはフィールドのグループを含むパネルです。これを使用してフォームを簡単にすばやく作成できます。サイドバーのアセットブラウザーを使用してアダプティブフォームフラグメントをフォームにドラッグアンドドロップし、それをフォームエディターで編集できます。
 
-アダプティブフォームの作成者に向けて、[!DNL AEM Forms] パッケージ [[!DNL AEM FORMS] REFERENCE FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS) で参照用のフラグメントが提供されています。これには、次のフラグメントが含まれます。
+アダプティブフォームの作成者に向けて、[!DNL AEM Forms] パッケージ [[!DNL AEM FORMS] REFERENCE FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS) で参照用のフラグメントが提供されています。次のフラグメントが含まれています。
 
 * アドレス
 * 連絡先情報
@@ -31,13 +31,13 @@ ht-degree: 65%
 * 利用条件
 * 署名付き利用条件
 
-このパッケージをインストールすると、参照フラグメントを含む参照フラグメントフォルダーが「Forms &amp; Documents」の下に作成されます。 パッケージのインストールについては、[クラウドマネージャーとパッケージマネージャーを介したコンテンツパッケージのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#deploying-content-packages-via-cloud-manager-and-package-manager)および[パッケージの使用方法](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ja)を参照してください。
+パッケージをインストールすると、フォームとドキュメントの下に参照用フラグメントを含む参照用フラグメントフォルダーが作成されます。パッケージのインストールについては、[クラウドマネージャーとパッケージマネージャーを介したコンテンツパッケージのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#deploying-content-packages-via-cloud-manager-and-package-manager)および[パッケージの使用方法](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ja)を参照してください。
 
 ![すべてのフラグメントが表示されている](assets/ootb-frags.png)
 
 ## アドレス {#address}
 
-郵送先住所を指定するフィールドが含まれます。 使用可能なフィールドは、住所、郵便番号、市区町村、都道府県、国です。 また、指定した米国の郵便番号の市区町村と州を入力する事前設定済み Web サービスも含まれています。
+郵送先住所を指定するフィールドが含まれます。 使用できるフィールドは、アドレス、郵便番号、市、州および国です。指定された米国の郵便番号に対応する市と州を入力する事前設定済みの web サービスも含まれています。
 
 ![住所フラグメント](assets/address.png)
 
@@ -47,7 +47,7 @@ ht-degree: 65%
 
 ## 連絡先情報 {#contact-information}
 
-電話番号と電子メールアドレスを取り込むためのフィールドが含まれます。
+電話番号とメールアドレスを取得するためのフィールドが含まれています。
 
 ![連絡先情報フラグメント](assets/contact-info.png)
 
@@ -57,7 +57,8 @@ ht-degree: 65%
 
 ## クレジットカード情報 {#credit-card-information}
 
-支払い処理に使用できるクレジットカード情報を取得するためのフィールドが含まれています。[![クレジットカード情報フラグメント](assets/cc-info.png)](assets/cc-info-1.png)
+支払い処理に使用できるクレジットカード情報を取得するためのフィールドが含まれています。
+[![クレジットカード情報フラグメント](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## 現在の職業 {#current-employment}
 
@@ -81,7 +82,7 @@ ht-degree: 65%
 
 ## 職歴 {#employment-history}
 
-雇用履歴をキャプチャするためのフィールドが含まれます。 複数の組織を追加できます。
+職歴を取得するためのフィールドが含まれています。複数の会社を追加できます。
 
 ![職歴フラグメント](assets/emp-history.png)
 
@@ -91,7 +92,7 @@ ht-degree: 65%
 
 ## 収入と支出 {#income-expenditure}
 
-1 か月のキャッシュフローと支出を取得するためのフィールドが含まれています。ユーザーに財務の詳細を入力するよう求めるFormsは、このフラグメントを使用して収入と支出をキャプチャできます。
+1 か月のキャッシュフローと支出を取得するためのフィールドが含まれています。ユーザーに詳しい財務情報を提供するように求めるフォームでは、このフラグメントを使用して収入と支出を取得できます。
 
 ![収入と支出フラグメント](assets/income.png)
 

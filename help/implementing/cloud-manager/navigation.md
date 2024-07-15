@@ -23,7 +23,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 >[!TIP]
 >
->以下も確認してください。 [オンボーディングドキュメントジャーニー](/help/journey-onboarding/overview.md) cloud Manager を使用してAEM as a Cloud Serviceをインストールおよび導入する方法の概要について説明します。
+>また、Cloud Managerを使用してAEM as a Cloud Serviceを導入する方法の概要については、[ オンボーディングドキュメントジャーニー ](/help/journey-onboarding/overview.md) も参照してください。
 
 ## マイプログラムコンソール {#my-programs}
 
@@ -106,7 +106,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 * プログラム画像（設定されている場合）
 * プログラム名
-* サービスタイプ： **Experience Manager雲** AEM as a *Cloud Serviceプログラムの場合 [**Experience Manager** AMS プログラムの場合](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+* サービスの種類：AEM as a *Cloud Serviceプログラムの場合は **Experience Managerクラウド**、AMS プログラムの場合は [**Experience Manager**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [プログラムタイプ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)：サンドボックスまたは実稼動
 * ステータス
 * 設定済みのソリューション
@@ -116,15 +116,15 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 * [HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-  ![HIPAA バッジ](assets/hipaa.png)
+  ![HIPAA バッジ ](assets/hipaa.png)
 
 * [WAF-DDOS 保護](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-  ![WAF-DDOS バッジ](assets/waf-ddos-protection.png)
+  ![WAF-DDOS バッジ ](assets/waf-ddos-protection.png)
 
 * [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
 
-  ![99.99% SLA バッジ](assets/9999-sla.png)
+  ![99.99% SLA バッジ ](assets/9999-sla.png)
 
 また、情報アイコンを使用すると、プログラムに関する追加情報にすばやくアクセスできます（リスト表示で役立ちます）。
 
@@ -143,9 +143,9 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 >
 >プログラムの詳細およびプログラムの作成と管理については、次のドキュメントを参照してください。
 >
->* [プログラムとプログラムタイプ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
->* [サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
->* [実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+>* [ プログラムとプログラムの種類 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+>* [ サンドボックスプログラムの作成 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+>* [ 実稼動プログラムの作成 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
 #### 「ライセンス」タブ {#license-tab}
 
@@ -168,7 +168,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 1. [コールトゥアクション](#cta)：プログラムの最後のアクションに基づきます。
 1. [環境の概要](#environments)：プログラムの環境について。
 1. [パイプラインの概要](#pipelines)：プログラムのパイプラインについて。
-1. An [パフォーマンスの概要](#performance) プログラムの
+1. プログラムの [ パフォーマンスの概要 ](#performance)
 1. [役立つリソース](#useful-resources)：リンク先が含まれます。
 
 ### ツールバー {#program-overview-toolbar}

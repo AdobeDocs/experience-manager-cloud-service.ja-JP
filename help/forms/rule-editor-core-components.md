@@ -8,15 +8,15 @@ exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
 source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
 workflow-type: tm+mt
 source-wordcount: '5627'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEMas a Cloud Service（コアコンポーネント） | この記事 |
-| AEMas a Cloud Service（基盤コンポーネント） | [ここをクリックしてください](/help/forms/rule-editor.md) |
+| AEM as a Cloud Service（コアコンポーネント） | この記事 |
+| AEM as a Cloud Service（基盤コンポーネント） | [ここをクリックしてください](/help/forms/rule-editor.md) |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=ja) |
 
 # アダプティブフォーム（コアコンポーネント）へのルールの追加 {#adaptive-forms-rule-editor}
@@ -43,7 +43,7 @@ forms-power-users グループに追加されたユーザーは、スクリプ�
 
 >[!NOTE]
 >
-> カスタム関数の作成方法と使用方法の詳細については、次を参照してください [アダプティブForms（コアコンポーネント）のカスタム関数](/help/forms/create-and-use-custom-functions.md) 記事。
+> カスタム関数の作成および使用方法について詳しくは、[ アダプティブForms（コアコンポーネント）のカスタム関数 ](/help/forms/create-and-use-custom-functions.md) を参照してください。
 
 ## ルールを理解する {#understanding-a-rule}
 
@@ -148,9 +148,9 @@ _
 >
 > ルールタイプが単一レベルの then-else ステートメントのみをサポートする場合。
 
-#### で複数のフィールドを使用できるようになりました [!UICONTROL 条件] {#allowed-multiple-fields}
+#### [!UICONTROL When] に複数のフィールドを使用できる {#allowed-multiple-fields}
 
-が含まれる **条件** 条件には、ルールが適用されるフィールド以外のフィールドを追加するオプションがあります。
+**When** 条件には、ルールが適用されるフィールド以外のフィールドを追加するオプションがあります。
 
 例えば、「When」のルールタイプを使用すると、様々なフォームオブジェクトの条件を評価し、アクションを実行することができます。
 
@@ -168,11 +168,11 @@ AND/OR
 
 _
 
-![When で複数のフィールドを許可](/help/forms/assets/allowed-multiple-field-when.png)
+![When で複数のフィールドを許可 ](/help/forms/assets/allowed-multiple-field-when.png)
 
 ##### When 条件機能で許可された複数フィールドを使用する際の考慮事項
 
-* 必ずを [コアコンポーネントはバージョン 3.0.14 以降に設定されています](https://github.com/adobe/aem-core-forms-components) をクリックして、ルールエディターでこの機能を使用します。
+* ルールエディターでこの機能を使用するには ](https://github.com/adobe/aem-core-forms-components)[ コアコンポーネントがバージョン 3.0.14 以降に設定されていることを確認します。
 * When 条件内の異なるフィールドにルールが適用されている場合、そのフィールドの 1 つのみが変更されても、ルールはトリガーします。
 
 
@@ -196,7 +196,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 「When」条件機能で許可されている複数のフィールドに問題が発生した場合は、次のようにトラブルシューティング手順に従います。
 
 1. フォームを編集モードで開きます。
-1. コンテンツブラウザーを開き、 **[!UICONTROL ガイドコンテナ]** アダプティブフォームのコンポーネント。
+1. コンテンツブラウザーを開き、アダプティブフォームの **[!UICONTROL ガイドコンテナ]** コンポーネントを選択します。
 1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。アダプティブフォームコンテナダイアログボックスが開きます。
 1. 「完了」をクリックして、ダイアログを再度保存します。
 
@@ -230,7 +230,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 * valid（ブーリアン）
 * errorMessage（文字列）
 * デフォルト（数値、文字列、日付）
-* enumNames （文字列[]）
+* enumNames （String[]）
 * chartType（文字列）
 
 例えば、ボタンがクリックされたときにテキストボックスを表示するルールを定義できます。 カスタム関数、フォームオブジェクト、オブジェクトプロパティ、またはサービス出力を使用して、ルールを定義できます。
@@ -251,7 +251,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 **[!UICONTROL Set Focus （フォーカスの設定）]**：指定したオブジェクトにフォーカスを設定します。
 
-**[!UICONTROL 送信フォーム]** フォームを送信します。
+**[!UICONTROL フォームを送信]** フォームを送信します。
 
 **[!UICONTROL Reset]** フォームまたは指定したオブジェクトをリセットします。
 
@@ -265,7 +265,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 **[!UICONTROL Navigate to （移動先）]** ：他の<!--Interactive Communications,-->アダプティブフォーム、画像やドキュメントフラグメントなどの他のアセット、または外部 URL に移動します。<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-**[!UICONTROL イベントのディスパッチ]** 定義済みの条件またはイベントに基づいて、特定のアクションまたはビヘイビアーをトリガー設定します。
+**[!UICONTROL イベントのディスパッチ]** 事前に定義された条件またはイベントに基づいて、特定のアクションまたはビヘイビアーをトリガーします。
 
 
 ### [!UICONTROL Set Value of] {#set-value-of}
@@ -276,13 +276,17 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 Set value of Object A to:
 
-（文字列 ABC） OR （オブジェクト C のオブジェクトプロパティ X） OR （関数からの値） OR （数式表現からの値） OR （データモデルサービスの出力値）:
+（文字列 ABC）または
+（オブジェクト C のオブジェクト プロパティ X）または
+（関数からの値）または
+（数式からの値）または
+（データモデルサービスの出力値）
 
 When （オプション）：
 
 (Condition 1 AND Condition 2 AND Condition 3) is TRUE;
 
-次の例では、の値を選択します `Question2` as `True` およびは、次の値を設定します `Result` as `correct`.
+次の使用例は、`Question2` の値を `True` に設定し、`Result` の値を `correct` に設定します。
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
@@ -464,7 +468,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ## ルールを記述 {#write-rules}
 
-ビジュアルルールエディターを使用してルールを記述できます <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
+ルールを記述するには、ビジュアルルールエディターの <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. --> を使用します
 
 最初に、ビジュアルエディターを使用してルールを作成する方法を説明します。
 
@@ -499,7 +503,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![Radio button values from rule editor](assets/radio-button-values.png)-->
 
-1. が含まれる **[!UICONTROL 文字列を入力]** ルールのフィールドで、 **既婚** ドロップダウンメニューから。
+1. ルールの **[!UICONTROL 文字列を入力]** フィールドで、ドロップダウンメニューから **既婚** を選択します。
 
    ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4-cc.png)
 
@@ -514,12 +518,12 @@ Users in the forms-power-users group can access code editor. For other users, co
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
 
    次に、この条件が False の場合に実行するアクションを定義します。
-1. クリック **[!UICONTROL Else セクションの追加]** に別の条件を追加するには **[!UICONTROL 配偶者の給与]** 「配偶者の有無」を「独身」として選択した場合のフィールド。
+1. 「Marital Status （配偶者の有無）」を「Single （独身） ]**として選択した場合に、「**[!UICONTROL  Spouse Salary （配偶者の給与） **[!UICONTROL 」フィールドに別の条件を追加するには、「Add Else Section （その他のセクションを追加）」をクリックします]**。
 
    ![when-else](assets/when-else.png)
 
 
-1. Else ステートメントで、 **[!UICONTROL Hide]** から **[!UICONTROL アクションを選択]** ドロップダウン。
+1. Else ステートメントで、「**[!UICONTROL アクションを選択]**」ドロップダウンから **[!UICONTROL 非表示]** を選択します。
    ![when-else](assets/when-else-1.png)
 
 1. 「**[!UICONTROL オブジェクトをドロップするか、または次から選択]**」フィールドの「フォームオブジェクト」タブから「**[!UICONTROL Spouse Salary （配偶者の給与）]**」フィールドをドラッグ・ドロップします。目的のフォームオブジェクトから再度起動します。あるいは、「**[!UICONTROL オブジェクトをドロップするか、または次から選択]**」フィールドを選択し、ポップアップメニューから「**[!UICONTROL 配偶者の給与]**」フィールドを選択します。この中には、フォーム内のすべてのフォームオブジェクトが一覧表示されます。
@@ -632,7 +636,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### ルールエディターでのカスタム関数 {#custom-functions}
 
-のような標準搭載の機能とは別に、 *合計* の下にリストされているもの **関数の出力**&#x200B;また、ルールエディターでカスタム関数を使用することもできます。 ルールエディターでは、スクリプトおよびカスタム関数の JavaScript ECMAScript 2019 構文がサポートされています。 カスタム関数の作成手順について詳しくは、[アダプティブフォームのカスタム関数](/help/forms/create-and-use-custom-functions.md)の記事を参照してください。
+**関数出力** の下にリストされている *合計* のような既存の関数に加え、ルールエディターでカスタム関数を使用することもできます。 ルールエディターでは、スクリプトおよびカスタム関数のJavaScript ECMAScript 2019 構文がサポートされています。 カスタム関数の作成手順について詳しくは、[アダプティブフォームのカスタム関数](/help/forms/create-and-use-custom-functions.md)の記事を参照してください。
 
 <!--
 

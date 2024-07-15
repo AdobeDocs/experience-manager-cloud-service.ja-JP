@@ -6,15 +6,15 @@ role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 92%
+source-wordcount: '1520'
+ht-degree: 100%
 
 ---
 
 
 # Cloud Manager 製品プロファイルへのチームメンバーの割り当て {#assign-team-members}
 
-この部分では、 [オンボーディングジャーニー](overview.md) チームメンバーを Cloud Manager 製品プロファイルに割り当てる方法を学びます。
+[オンボーディングジャーニー](overview.md)のこの部分では、チームメンバーを Cloud Manager 製品プロファイルに割り当てる方法を説明します。
 
 ## 目的 {#objective}
 
@@ -33,7 +33,7 @@ ht-degree: 92%
 
 ## 前提条件 {#prerequisites}
 
-チームメンバーを製品プロファイルに割り当てるには、チームメンバーに関する詳細が必要です。チームメンバーは、次の情報を含め、AEMas a Cloud Serviceにアクセスする必要があります。
+チームメンバーを製品プロファイルに割り当てるには、AEM as a Cloud Service にアクセスする必要があるチームメンバーについて、次のような詳細が必要です。
 
 * 氏名
 * メールアドレス
@@ -177,11 +177,11 @@ Cloud Manager は、AEM as a Cloud Service の不可欠な部分であり、コ�
 * **ビジネスオーナー**、**デプロイメントマネージャー**、**開発者**&#x200B;という 3 種類の重要な Cloud Manager 製品プロファイルを理解する。
 * Cloud Manager 製品プロファイルにチームメンバーを割り当てることができる。
 
-これで、次にドキュメントを確認して、オンボーディングジャーニーを続行する準備が整いました [Cloud Manager にアクセスする](cloud-manager.md) ここでは、 Cloud Manager にアクセスしてプロジェクトリソースを作成する方法について説明します。
+次に [Cloud Manager へのアクセス](cloud-manager.md)のドキュメントを確認して、オンボーディングジャーニーを続ける準備が整いました。このドキュメントでは、Cloud Manager にアクセスしてプロジェクトリソースを作成する方法を説明します。
 
 ## その他のリソース {#additional-resources}
 
-前述のように、オンボーディングジャーニーを続行することをお勧めします。 このジャーニーの特定のトピックについて詳しく調べたい場合は、これらのリソースを追加します。
+前述のように、オンボーディングジャーニーを続行することをお勧めします。このジャーニーの特定のトピックの詳細を調べる場合に参考になる追加のリソースです。
 
 * [Cloud Manager の概要](/help/onboarding/cloud-manager-introduction.md) - Cloud Manager、Cloud Manager プログラム、環境について説明します。
 * [Cloud Manager 製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md) - AEM as a Cloud Service のチームおよび製品プロファイルについて説明します。

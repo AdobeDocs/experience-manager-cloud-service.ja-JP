@@ -60,7 +60,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms**:Adobe Analytics for Adaptive Formsを使用して、ログイン済みの場合と未ログイン（匿名）の場合の行動をキャプチャおよび追跡し、ユーザーインサイトを収集できるようになりました。 十分な情報に基づいて決定を行い、ユーザーエクスペリエンスを向上させることができます。
+* **Analytics for Adaptive Forms**：ログイン済みの場合と未ログイン（匿名）の場合の行動をAdobe Analytics for Adaptive Formsで捉え追跡して、ユーザーインサイトを収集できるようになりました。 十分な情報に基づいて決定を行い、ユーザーエクスペリエンスを向上させることができます。
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms-oct-2021}
 

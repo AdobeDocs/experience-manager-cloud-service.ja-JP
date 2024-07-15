@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1271'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -75,9 +75,9 @@ AEM Forms は、長年にわたって、優れたオンボーディングと登�
 
 * 製品の詳細コンポーネントを任意のコンテンツページで使用および設定できるようになりました。
 
-* 最新のCIF コアコンポーネント v1.9.0 を含んだCIF Venia 参照サイト 2021.03.25 をリリースしました。参照： [CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) を参照してください。
+* 最新のCIF コアコンポーネント v1.9.0 を含んだCIF Venia 参照サイト 2021.03.25 をリリースしました。詳しくは、[CIF Venia 参照サイト ](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) を参照してください。
 
-* CIF コアコンポーネント v1.9.0 をリリースしました。参照： [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) を参照してください。
+* CIF コアコンポーネント v1.9.0 をリリースしました。詳しくは、[CIF コアコンポーネント ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) を参照してください。
 
 
 ## Cloud Manager {#cloud-manager}
@@ -91,11 +91,11 @@ AEM as a Cloud Service 2021.3.0 の Cloud Manager のリリース日は 2021 年
 
 ### 新機能 {#what-is-new-march}
 
-* 次のカスタムドメイン名が既に存在する環境のお客様： [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL 証明書](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) および [カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 以前の既存設定に関するメッセージを確認し、ユーザーインターフェイスを介してセルフサービス方式で操作できます。
+* [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)、[SSL 証明書 ](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn)、[ カスタムドメイン名 ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) に既存のカスタムドメイン名がある環境のユーザーは、既存の設定に関するメッセージを確認し、ユーザーインターフェイスを介してセルフサービス方式で操作できます。
 
 * 必要な権限を持つユーザーがプログラムを編集して、セルフサービス方式で以下を行えるようになりました。
 
-   * Assets を使用している既存のプログラムに Sites サイトソリューションを追加する（またはその逆の場合）。
+   * Assets を使用している既存のプログラムに Sites ソリューションを追加する（およびその逆の動作）。
    * Sites と Assets の両方を使用している既存のプログラムから Sites または Assets を削除する。
    * 使用されていない 2 つ目のソリューション使用権限を既存のプログラムに追加するか、新しいプログラムとして追加する。
 
@@ -168,13 +168,13 @@ AEM as a Cloud Service 2021.3.0 の Cloud Manager のリリース日は 2021 年
 
 ### コードリファクタリングツールの新機能 {#what-is-new-crt}
 
-* Repository Modernizer の新機能と機能強化は次のとおりです。参照： [GitHub リソース：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。
+* Repository Modernizer の新機能と機能強化は次のとおりです。最新バージョンについては、[GitHub リソース：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。
    * OSGi 設定（repoinit 設定を除く）を、推奨の .cfg.json 形式に正規化します。
    * OSGi 設定フォルダーの名前を指定の形式に変更します。
    * ui.apps.structure プロジェクトを生成します。
    * 分析モジュールを作成します。
 
-* Dispatcher コンバーターの新機能と機能強化は次のとおりです。参照： [GitHub リソース：Dispatcher コンバーター](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
+* Dispatcher コンバーターの新機能と機能強化は次のとおりです。詳しくは、「[GitHub リソース：Dispatcher コンバーター ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)」を参照してください。
    * 異なるインクルージョンに対して、コンテンツをインライン化するのではなく別個のファイルを作成します。
    * vhosts のフォルダーパスと vhost ファイルのパスを両方とも処理できます。
    * 600 件以上の大規模な顧客設定を持つファームファイルを生成できます。

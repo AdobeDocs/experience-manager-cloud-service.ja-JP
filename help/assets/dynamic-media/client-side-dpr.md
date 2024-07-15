@@ -6,7 +6,7 @@ feature: Device Pixel Ratio,Smart Imaging
 role: Admin,User
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
 source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 100%
 

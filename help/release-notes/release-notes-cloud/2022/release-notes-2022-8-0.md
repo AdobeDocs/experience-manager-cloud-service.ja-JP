@@ -13,7 +13,7 @@ ht-degree: 62%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の 2022.8.0 リリースノート {#release-notes}
 
-以下の節では、2022.8.0 バージョンのの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
+以下の節では、[!DNL Experience Manager]as a Cloud Serviceの 2022.8.0 バージョンの機能リリースノートの概要を説明します。
 
 >[!NOTE]
 >
@@ -39,15 +39,15 @@ ht-degree: 62%
 ### の新機能[!DNL Sites] {#sites-features}
 
 * メール コンポーネントを使用すると、AEMでコンテンツを作成し、そのコンテンツをCampaign Classic経由でメールとして配信できます。 コアメールコンポーネント：
-   * は、に基づいています [コア WCM コンポーネント](https://github.com/adobe/aem-core-wcm-components) 編集可能テンプレートとスタイルシステムをサポートします。
+   * 編集可能テンプレートとスタイルシステムをサポートする ](https://github.com/adobe/aem-core-wcm-components) コア WCM コンポーネント [ をベースにしています。
    * メール用に最適化され、実稼動ですぐに使える 10 個のコンポーネント（ページ、コンテナ、タイトル、テキスト、画像、ボタン、ティーザー、エクスペリエンスフラグメント、コンテンツフラグメント、セグメント化）を提供します。
-   * により、高度なパーソナライゼーションとセグメント化を提供します。 [campaign 変数の挿入](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) ほとんどのダイアログフィールドと、柔軟な [セグメント化コンポーネント](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
-   * により、電子メールに最適なHTML出力を提供 [CSS スタイルインライナー](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), [HTMLアトリビュート インライナー](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)、および [HTML消毒剤](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
+   * ほとんどのダイアログフィールドに [Campaign 変数の挿入 ](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) と、柔軟な [ セグメント化コンポーネント ](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)) により、高度なパーソナライゼーションとセグメント化を提供します。
+   * [CSS スタイルインライナー ](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)、[HTML属性インライナー ](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)、[HTMLサニタイザー ](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation) により、メールに最適なHTML出力を提供します。
    * どこでもメールを作成できます。
 
 ### [!DNL Sites] プレリリースチャネルで利用できる新機能 {#prerelease-features-sites}
 
-* この [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) コンテンツフラグメントに関連付けられている言語コピーの合計数を表示するオプションが用意されています。 すべての言語コピーを表示するための 1 回のクリックアクセスが提供されています。 また、ユーザーは、関心があるロケールに基づいてテーブル表示をフィルタリングすることもできます。
+* [ コンテンツフラグメントコンソール ](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) には、コンテンツフラグメントに関連付けられている言語コピーの合計数を表示するオプションが用意されています。 すべての言語コピーを表示するための 1 回のクリックアクセスが提供されています。 また、ユーザーは、関心があるロケールに基づいてテーブル表示をフィルタリングすることもできます。
 
 ![コンテンツフラグメントの言語](/help/release-notes/assets/cfconsole-languages.png)
 
@@ -55,7 +55,7 @@ ht-degree: 62%
 
 ### の新機能[!DNL Assets] {#features-assets}
 
-* これで、に対してAdobe Experience Manager Assetsを設定できます [ユーザーがアップロードできるアセットのタイプを MIME タイプに基づいて制限する](/help/assets/configure-asset-upload-restrictions.md).
+* Adobe Experience Manager Assetsを設定して [ ユーザーがアップロードできるアセットのタイプを MIME タイプに基づいて制限 ](/help/assets/configure-asset-upload-restrictions.md) できるようになりました。
 
   ![アセットアップロードの制限](/help/assets/assets/asset-upload-restrictions.png)
 

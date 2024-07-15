@@ -2,7 +2,7 @@
 title: プロビジョニングプロセス - 概要
 description: プロビジョニングプロセス - 概要
 source-git-commit: eec64a5dc211dc72712989bf6dc81de8004e2a85
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 100%
 

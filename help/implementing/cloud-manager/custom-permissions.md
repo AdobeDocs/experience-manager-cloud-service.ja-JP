@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Security, Developing
 role: Admin, Architect, Developer
 source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1515'
 ht-degree: 100%
 

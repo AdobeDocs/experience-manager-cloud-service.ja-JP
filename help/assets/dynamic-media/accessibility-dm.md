@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media のアクセシビリティ
-description: ビデオのエンコーディング、YouTube へのビデオの公開、ビデオレポートの表示に関するベストプラクティスなど、Dynamic Media でビデオを操作する方法を説明します。ビデオにクローズドキャプション、キャプション、チャプターマーカーを追加する方法についても説明します。
+description: ビデオのエンコーディング、YouTube へのビデオの公開、ビデオレポートの表示に関するベストプラクティスなど、Dynamic Media でビデオを操作する方法を説明します。また、ビデオにクローズドキャプション、キャプション、チャプターマーカーを追加する方法についても説明します。
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
@@ -10,7 +10,7 @@ exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
 source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Dynamic Media のユーザーインターフェイス要素は、スクリーン
 
 Dynamic Media では、クローズドキャプションを使用したビデオとアダプティブビデオセットの配信がサポートされています。キャプションは、ビデオコンテンツの上に表示する必要があります。
 
-参照： [Dynamic Mediaのビデオ – ビデオへのクローズドキャプションの追加](/help/assets/dynamic-media/video.md#adding-captions-to-video).
+[Dynamic Media のビデオ - ビデオへのクローズドキャプションの追加](/help/assets/dynamic-media/video.md#adding-captions-to-video)を参照してください。
 
 
 >[!MORELIKETHIS]

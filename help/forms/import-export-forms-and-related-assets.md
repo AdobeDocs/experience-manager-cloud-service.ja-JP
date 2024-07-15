@@ -2,7 +2,7 @@
 title: ' [!DNL AEM Forms] へのアセットの読み込みおよび書き出し方法'
 description: アダプティブフォームで DocuSign を使用して電子サインを収集する方法を説明します。
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 100%
 
@@ -199,7 +199,7 @@ AEM パッケージマネージャーを使用して、ワークフローアプ�
 
    指定した名前を持つフォルダーが既に存在する場合は、送信はエラーになり失敗します。名前フィールドの横に表示されるエラー ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) アイコンの上にマウスポインターを置くと、エラーメッセージを見ることができます。
 
-   作成されたフォルダーを選択してフォルダー内に移動し、フォルダー内でアセットまたはフォルダーを作成できます。さらに、フォルダーを選択し、ダウンロード、削除、名前の編集用にそのフォルダーをキューに入れることができます。
+   作成されたフォルダーを選択してフォルダー内に移動し、フォルダー内でアセットまたはフォルダーを作成できます。さらに、フォルダーを選択し、ダウンロードのキューに入れるか、削除するか、名前を編集するかを選択できます。
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
 

@@ -55,8 +55,8 @@ ht-degree: 58%
 
 ### [!DNL Assets] で修正されたバグ  {#assets-bugs-fixed}
 
-* contributor グループのメンバーがに移動した場合 [!DNL Assets] コンソール、追加 `POST` コレクションを作成するためのリクエストが生成されます。 このリクエストは必須ではありません。権限の問題が原因で失敗し、ログに多くのエラーが記録されます。 （CQ-4328856）
-* ユーザーがアセットを表示して [!UICONTROL タイムライン] 左パネルのポップアップメニューに、エラーが表示されます。 ログには、無効なクエリが原因で多数の警告が記録されます。（CQ-4328919）
+* 投稿者グループのメンバーが [!DNL Assets] Console に移動すると、追加の `POST` リクエストが生成されて、コレクションが作成されます。 このリクエストは必須ではありません。権限の問題が原因で失敗し、ログに多くのエラーが記録されます。 （CQ-4328856）
+* ユーザーがアセットを表示し、左パネルのポップアップメニューから [!UICONTROL  タイムライン ] を選択すると、エラーが表示されます。 ログには、無効なクエリが原因で多数の警告が記録されます。（CQ-4328919）
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -66,15 +66,15 @@ ht-degree: 58%
 
 * **AcroForm ベースのレコードのドキュメント**：AEM Forms as a Cloud Service では、XFA ベースのフォームテンプレート以外に、[Adobe Acrobat フォーム PDF（AcroForm PDF）](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja)をレコードのドキュメントのテンプレートとして使用できます。
 
-* **Microsoft® Azure データストアコネクタ**：以下が可能になりました [Microsoft® Azure Storage へのフォームデータモデルの接続](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). アダプティブフォームデータを取得して、BLOB としてMicrosoft® Azure ストレージに保存できます。
+* **Microsoft® Azure データストアコネクタ**: [ フォームデータモデルをMicrosoft® Azure ストレージに接続 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html) できるようになりました。 アダプティブフォームデータを取得して、BLOB としてMicrosoft® Azure ストレージに保存できます。
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms}
 
-* **アダプティブフォームでのAdobe Signの役割の使用** - ビジネスおよびエンタープライズサービスレベル版Adobe Signでは、必要に応じて、署名者のみでなく、契約書受信者の役割を拡張し、ワークフロー要件に合わせることができます。 契約書の受信者ごとに、アダプティブフォームでの自分の役割を設定できるようになりました。デフォルトの役割は署名者です。
+* **アダプティブフォームでのAdobe Signの役割の使用** - ビジネスおよびエンタープライズサービスレベルのAdobe Signでは、ワークフロー要件に適切に合致するように、契約書受信者の役割を署名者以外にも拡大できます。 契約書の受信者ごとに、アダプティブフォームでの自分の役割を設定できるようになりました。デフォルトの役割は署名者です。
 
 * **Analytics for Adaptive Forms** - Adobe Analytics for Adaptive Formsでエンドユーザーの行動を捉え追跡して、エンドユーザーに関するインサイトを収集できるようになりました。 十分な情報に基づいて決定を行い、エンドユーザーエクスペリエンスを向上させるのに役立ちます。
 
-* **AEM FormsをMicrosoft® Dynamics およびSalesforce.comと簡単に接続できます**  – このサービスは、Microsoft® Dynamics およびSalesforce.comに対して、標準のデータソース設定とデータモデルを提供します。 これにより、開発者はアダプティブフォームのデータソースとしてMicrosoft® Dynamics およびSalesforce.comをすばやく簡単に設定できます。
+* **AEM FormsをMicrosoft® Dynamics および Salesforce.com と簡単に接続** – このサービスは、Microsoft® Dynamics およびSalesforce.com用のデータソース設定とデータモデルを標準で提供します。 これにより、開発者はアダプティブフォームのデータソースとしてMicrosoft® Dynamics およびSalesforce.comをすばやく簡単に設定できます。
 
 ## CIF アドオン {#cloud-services-cif}
 
@@ -100,13 +100,13 @@ AEM as a Cloud Service 2021.8.0 の Cloud Manager のリリース日は 2021年8
 * Cloud Service ユーザーは、Cloud Manager でサービスレベル契約（SLA）レポートを表示できるようになりました。これは、今後数か月で段階的に利用可能になる予定です。
 詳しくは、[SLA レポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html?lang=ja)を参照してください。
 
-* IndexType および `IndexDamAssetLucene` 品質ルールのタイプと重大度が変更されました。これらはどちらも、ブロッカーのバグになりました *重要度*.
+* IndexType および `IndexDamAssetLucene` 品質ルールのタイプと重大度が変更されました。これらはどちらも、ブロッカーのバグ *重大度* になりました。
 
 * 新しい Oak インデックス品質ルールが導入されて、非同期設定と Tika 設定に対応するようになりました。
 
 * プログラムごとの SSL 証明書の最大数が 50 に増えました。
 
-* ユーザーが Cloud Manager UI を使用して複数のリポジトリを作成および管理できるセルフサービス機能。
+* Cloud Manager UI を介して複数のリポジトリを作成および管理できるセルフサービス機能。
 
 * SonarQube が Git 履歴データを不必要に読み取っていました。大規模なコードベースでは、これにより、ビルドパフォーマンスが不必要に低下することがありました。
 
@@ -120,7 +120,7 @@ AEM as a Cloud Service 2021.8.0 の Cloud Manager のリリース日は 2021年8
 
 * 名前が長い新しい組織では、初回のオンボーディングが失敗していました。
 
-* 何らかの理由でパイプラインが 2 回トリガーされた場合、いずれかの実行がで失敗します。 *`cannot update pipeline execution status`* エラー。
+* 何らかの理由でパイプラインが 2 回トリガーされた場合、いずれかの実行が *`cannot update pipeline execution status`* エラーで失敗します。
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 
@@ -130,7 +130,7 @@ AEM as a Cloud Service 2021.8.0 の Cloud Manager のリリース日は 2021年8
 
 ### バグ修正 {#bug-fixes-ctt}
 
-* 一部のユーザーがターゲットインスタンスに移行されない場合がありました。 この修正を行うには、ターゲット AEMas a Cloud Serviceインスタンスに CTT v1.5.6 と aem-ethos-tools 1.2.354 以降のバージョンが必要です。
+* 一部のユーザーがターゲットインスタンスに移行されない場合がありました。 この修正を行うには、ターゲット AEM as a Cloud Service インスタンスに CTT v1.5.6 と aem-ethos-tools 1.2.354 以降のバージョンが必要です。
 
 * パブリッシュインスタンスへの取り込み時に、「**取り込みを停止**」ボタンが無効になっていました。パブリッシュへの取り込み時には Mongo の復元ステップがないので、これは必要ありません。
 

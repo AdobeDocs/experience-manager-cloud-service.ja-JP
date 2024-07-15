@@ -13,7 +13,7 @@ ht-degree: 67%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の 2022.5.0 リリースノート {#release-notes}
 
-以下の節では、2022.5.0 バージョンのの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
+次の節では、[!DNL Experience Manager]as a Cloud Serviceの 2022.5.0 バージョンの機能リリースノートの概要を説明します。
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ ht-degree: 67%
 
 * [Dynamic Media スマートイメージング](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f)が AVIF ファイル形式をサポートするようになりました。Google Core Web Vital（Largest Contentful Paint）をさらに改善し、AVIF は WebP よりも 20%余分なサイズ削減を実現します。合計すると、AVIF は JPEG に比べて最大 41%の平均サイズ削減を実現します（一部の画像では 76% にもなります）。
 
-* [!UICONTROL Experience Manager AssetsBrand Portal] では、12 時間ごとに自動ジョブを実行して、AEMに公開されているすべてのBrand Portal アセットを削除するようになりました。 その結果、投稿フォルダー内のアセットを手動で削除して、フォルダーサイズをしきい値の制限以下に保つ必要がなくなりました。 [Experience Manager Assets Brand Portal の新機能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=ja)を参照してください。
+* [!UICONTROL Experience Manager Assets Brand Portal] では、AEMに公開されているすべてのBrand Portal アセットを削除する自動ジョブを 12 時間ごとに実行するようになりました。 その結果、投稿フォルダー内のアセットを手動で削除して、フォルダーサイズをしきい値の制限以下に保つ必要がなくなりました。 [Experience Manager Assets Brand Portal の新機能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=ja)を参照してください。
 
 ### [!DNL Assets] プレリリースチャネルで利用できる新機能 {#prerelease-features-assets}
 
@@ -81,13 +81,13 @@ Experience Manager Assets は、Adobe Sensei AI 機能を使用して、[画像�
 
 ### 新機能 {#what-is-new-foundation}
 
-* レプリケーションエージェント管理画面の「ツリーを追加」オプション **「配布」タブ**&#x200B;は、以前に非推奨（廃止予定）として発表されていましたが、2022 年 6 月 20 日（PT）またはその後まもなく削除されました。 代わりに、コンテンツのツリー階層を持つパッケージは、[公開を管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow)を使用してレプリケートする必要があります。
+* レプリケーションエージェント管理画面の **「配布」タブ** にある「ツリーを追加」オプションは、以前に非推奨として発表されていましたが、2022 年 6 月 20 日（PT）を以てまたはその後まもなく削除されました。 代わりに、コンテンツのツリー階層を持つパッケージは、[公開を管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow)を使用してレプリケートする必要があります。
 
-* 10 MB （プロパティを持つノード、バイナリを除く）を超えるコンテンツパッケージの配布でのレプリケーションエージェント管理画面またはレプリケーション API の使用は非推奨となり、2022 年 9 月 12 日（PT）以降に適用されます。 代わりに、[公開を管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow)を使用して、これらの大規模なコンテンツパッケージをレプリケートする必要があります。 7 月に、レプリケーションエージェントの管理画面に警告メッセージが表示されます。 **「配布」タブ** これらの大きなコンテンツパッケージをレプリケートしようとして、レプリケーション API を使用してこれらの大きなコンテンツパッケージをレプリケートするたびに、AEM エラーログに記録される場合。 9 月には、警告はエラーに置き換えられました。 プロセスを適宜調整します。
+* 10 MB （プロパティを持つノード、バイナリを除く）を超えるコンテンツパッケージの配布でのレプリケーションエージェント管理画面またはレプリケーション API の使用は非推奨となり、2022 年 9 月 12 日（PT）以降に適用されます。 代わりに、[公開を管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow)を使用して、これらの大規模なコンテンツパッケージをレプリケートする必要があります。 7 月に、これらの大規模なコンテンツパッケージをレプリケートしようとすると、レプリケーションエージェント管理画面の **「配布** タブに警告メッセージが表示されます。また、レプリケーション API を使用してこれらの大規模なコンテンツパッケージをレプリケートしようとすると、AEM エラーログに警告メッセージが表示されます。 9 月には、警告はエラーに置き換えられました。 プロセスを適宜調整します。
 
 ### [!DNL Experience Manager] プレリリースチャネルで利用できる新機能 {#prerelease-features-foundation}
 
-* AEM as a Cloud Service が統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべての Experience Cloud アプリケーションと統合されました。参照： [統合シェルでのAEMas a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
+* AEM as a Cloud Service が統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべての Experience Cloud アプリケーションと統合されました。詳しくは、統合シェルでの [AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] 基盤セキュリティ {#foundation-security}
 

@@ -3,8 +3,8 @@ title: AMS を Adobe Experience Manager as a Cloud Service Dispatcher 設定に�
 description: AMS を Adobe Experience Manager as a Cloud Service Dispatcher 設定に変換する方法
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 97%
+source-wordcount: '1262'
+ht-degree: 99%
 
 ---
 
@@ -202,7 +202,7 @@ ht-degree: 97%
 
 Dispatcher SDK の `docker_run.sh` スクリプトを使用して、デプロイのみに表れる他のエラーが設定に含まれていないことをテストできます。
 
-1. バリデーターを使用してデプロイメント情報を生成する。
+1. バリデーターを使用してデプロイメント情報を生成します。
 
    `validator full -d out`
 設定を完全に検証し、out にデプロイメント情報が生成されます。

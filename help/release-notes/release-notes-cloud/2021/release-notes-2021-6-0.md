@@ -64,7 +64,7 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 
 * 混乱を避けるために、環境の詳細ページのパブリッシュ AEM とパブリッシュ Dispatcher のセグメント行が統合されました。
 
-  ![Dispatcher 環境](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
+  ![Dispatcher環境 ](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
 * `damAssetLucene` インデックスの構造を検証するための新しいコード品質ルールが追加されました。詳しくは、[カスタム DAM Asset Lucene Oak インデックス](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)を参照してください。
 
@@ -88,7 +88,7 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 
 ### の新機能[!DNL Assets] {#ga-features-assets}
 
-* コンテンツ自動処理機能により、 [!DNL Experience Manager Assets] を使用する [!DNL Adobe Creative Cloud] 大規模なアセット作成を自動化するための API。 同じアセットのバリエーションを作成するのに必要な時間と繰り返しを大幅に減らし、コンテンツの速度を向上させます。機能はコードは必要とせず、DAM 内から機能します。
+* コンテンツ自動化機能を使用 [!DNL Experience Manager Assets] ると、[!DNL Adobe Creative Cloud] API を使用して、アセットの大規模な生成を自動化できます。 同じアセットのバリエーションを作成するのに必要な時間と繰り返しを大幅に減らし、コンテンツの速度を向上させます。機能はコードは必要とせず、DAM 内から機能します。
 * [!DNL Adobe Asset Link] v3.0（[!DNL Adobe Photoshop]、[!DNL Adobe Illustrator]、[!DNL Adobe InDesign]、[!DNL Adobe Asset Link] v2.0（[!DNL Adobe XD]）がリリースされました。これには次の機能があります。
 
    * [!DNL Assets Essentials] のサポート。
@@ -102,7 +102,7 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 * ビュー設定が強化され、デフォルトのビューとデフォルトの並べ替えパラメーターを選択できるようになりました。
 * Linkshare のダウンロード機能は、非同期ダウンロードを使用してダウンロード速度を向上させます。
 * プロパティの述語に基づいて、フォルダーを検索およびフィルタリングできます。
-* [!DNL Experience Manager Assets] PDFビューア powered by が埋め込まれます [!DNL Adobe Document Cloud] ：サポートされているドキュメントをプレビューします。 この機能を使用すると、複雑な処理を行わずに、PDF ファイルやその他の複数ページファイルをプレビューできます。これにより、[!DNL Experience Manager] 6.5 との機能の等価性が向上します。
+* [!DNL Experience Manager Assets] に [!DNL Adobe Document Cloud] を使用したPDFビューアが埋め込まれ、サポートされているドキュメントをプレビューできます。 この機能を使用すると、複雑な処理を行わずに、PDF ファイルやその他の複数ページファイルをプレビューできます。これにより、[!DNL Experience Manager] 6.5 との機能の等価性が向上します。
 
 ### [!DNL Assets] で修正されたバグ  {#bugs-fixed-assets}
 

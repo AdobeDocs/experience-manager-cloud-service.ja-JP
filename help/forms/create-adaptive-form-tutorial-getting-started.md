@@ -7,13 +7,13 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: e6c58c835798b16158ab4aca26e381ab8f36afd3
+exl-id: b59cb56c-9629-48e4-b5c9-a861013a1360
+source-git-commit: af58a784f24f212962ad73f11015fb788493d8b5
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 6%
 
 ---
-
 
 # アダプティブフォーム（コアコンポーネント）の作成 – チュートリアル
 
@@ -32,14 +32,14 @@ ht-degree: 6%
 * アダプティブフォームを様々な言語用にローカライズする
 * 構造化データを生成するためのフォームの設定
 * REST エンドポイントにデータを送信するためのフォームの設定
-* アダプティブフォームを公開する
+* アダプティブフォームのPublish
 
 
 ## コアコンポーネントベースのフォームを作成する理由
 
-AEM Formsは、フォームエクスペリエンスを作成するための基盤コンポーネントとコアコンポーネントを提供します。 コアコンポーネントは、新しいフォームエクスペリエンスを作成するための最新の推奨アプローチです。 コアコンポーネントを使用する理由 これらのコンポーネントは軽量なオープンソース（github で利用可能）で、優れたGoogle Lighthouse と web バイタルスコアを提供し、アクセシビリティに準拠し、AEM Sitesの使い慣れた機能（バージョン管理やローカリゼーションなど）をすべて備えています。 さらに、これらのコンポーネントはスタイル設定が容易で、組織のブランディングガイドラインに従って外観を簡単にカスタマイズできます。 これらはサードパーティの依存関係がなく、JavaScript と CSS の知識がある開発者は、これらのコンポーネントを簡単にカスタマイズできます。
+AEM Formsは、フォームエクスペリエンスを作成するための基盤コンポーネントとコアコンポーネントを提供します。 コアコンポーネントは、新しいフォームエクスペリエンスを作成するための最新の推奨アプローチです。 コアコンポーネントを使用する理由 これらのコンポーネントは軽量なオープンソース（github で利用可能）で、優れたGoogle Lighthouse と web バイタルスコアを提供し、アクセシビリティに準拠し、AEM Sitesの使い慣れた機能（バージョン管理やローカリゼーションなど）をすべて備えています。 さらに、これらのコンポーネントはスタイル設定が容易で、組織のブランディングガイドラインに従って外観を簡単にカスタマイズできます。 これらはサードパーティの依存関係がなく、JavaScriptと CSS に関する知識があれば、これらのコンポーネントを簡単にカスタマイズできます。
 
-![コアコンポーネントベースのアダプティブFormsを作成する理由 これらのコンポーネントは軽量で、スタイル設定が容易で、高い Lighthouse スコアを提供し、アクセシビリティ標準に対応し、簡単にカスタマイズ可能で、オープンソースであり、github で利用でき、サードパーティのライブラリに依存せず、AEM開発者やAEM作成者の学習曲線はほとんどありません。さらに、AEM Forms コアコンポーネントは、AEM WCM コアコンポーネントのすべての機能を備えています。](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
+![ コアコンポーネントベースのアダプティブFormsを作成する理由 これらのコンポーネントは軽量で、スタイル設定が容易で、高い Lighthouse スコアを提供し、アクセシビリティ標準に対応し、簡単にカスタマイズ可能で、オープンソースであり、github で利用でき、サードパーティのライブラリに依存せず、AEM開発者やAEM作成者が短期間で学習できるAEM Forms コアコンポーネントは、AEM WCM コアコンポーネントのすべての機能を備えています。](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
 
 ## ユースケース：Adaptive Formsを使用した合理化されたホームローンの事前選定
 
@@ -53,7 +53,7 @@ AEM Formsは、フォームエクスペリエンスを作成するための基�
 
 チュートリアルが完了すると、フォームは次のフォームのようになります。
 
-![作業用フォームをここに追加](/help/forms/assets/cc-tutorial-final-form.png)
+![ 作業用フォームをここに追加 ](/help/forms/assets/cc-tutorial-final-form.png)
 
 ## 開発環境のセットアップ
 
@@ -68,15 +68,15 @@ AEM SDK とローカル開発することで、時間が節約され、開発プ
 
 **開始する準備はできていますか？**
 
-1. [AEM プロジェクト用の開発ツールの設定](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects)：の最新リリースをダウンロードしてインストールします [Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ja#local-development-environment-set-up), [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ja#install-git), [Node.js （npm）](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ja#node-js)、および [Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ja#install-maven). また、プレーンテキストエディターもインストールします。このチュートリアルの例は Visual Studio Code に基づいています。
+1. [AEM プロジェクト用の開発ツールの設定 ](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects)：最新リリースの [Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ja#local-development-environment-set-up)、[Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ja#install-git)、[Node.js （npm） ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ja#node-js)、[Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ja#install-maven) をダウンロードしてインストールします。 また、プレーンテキストエディターもインストールします。このチュートリアルの例は Visual Studio Code に基づいています。
 
-1. [AEM SDK のインストール](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development)：最新バージョンのAEM SDK をダウンロードしてインストールします。 これは、AEM開発に不可欠なツールとなります。 AEM SDK のバージョンを書き留めます。
+1. [AEM SDK のインストール ](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development):AEM SDK の最新バージョンをダウンロードしてインストールします。 これは、AEM開発に不可欠なツールとなります。 AEM SDK のバージョンを書き留めます。
 
-   ![ソフトウェア配布](/help/forms/assets/software-distribution.png)
+   ![ ソフトウェア配布 ](/help/forms/assets/software-distribution.png)
 
-   ![AEM SDK のインストール](/help/forms/assets/start-aem-sdk.png)
+   ![AEM SDK のインストール ](/help/forms/assets/start-aem-sdk.png)
 
-1. [AEM Forms アドオンを追加](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users):AEM SDK のバージョンに一致するAEM Forms アドオンを以下からダウンロードしてインストールします。 [ソフトウェア配布](https://experience.adobe.com/#/downloads) ポータル。
+1. [AEM Forms アドオンを追加 ](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users): [ ソフトウェア配布 ](https://experience.adobe.com/#/downloads) ポータルから、お使いのAEM SDK のバージョンに一致するAEM Forms アドオンをダウンロードしてインストールしてください。
    ![install-aem-forms-add-on](/help/forms/assets/install-aem-forms-add-on.png)
 
    +++AEM Forms アドオンをインストールします。
@@ -84,17 +84,17 @@ AEM SDK とローカル開発することで、時間が節約され、開発プ
    AEM Forms アドオンをインストールするには：
 
    1. AEM SDK を停止します。
-   1. AEM Forms アドオン（.far）ファイルをに追加 `AEM SDK/crx-quickstart/install` フォルダー、
+   1. AEM Forms アドオン（.far）ファイルを `AEM SDK/crx-quickstart/install` フォルダーに追加します。
    1. AEM SDK を再起動します。
 
 +++
 
-1. [ユーザー権限の設定](/help/forms/setup-local-development-environment.md#configure-users-and-permissions)：開発、オーサリング、その他の権限を持つユーザーを作成し、これらのユーザーを事前定義済みのフォームグループに追加します。
+1. [ ユーザー権限の設定 ](/help/forms/setup-local-development-environment.md#configure-users-and-permissions)：開発、オーサリングなどの権限を持つユーザーを作成し、これらのユーザーを事前定義済みのフォームグループに追加します。
 
 
-1. [アダプティブ Forms テンプレートを追加する](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype):AEM アーキタイプ 48 以降を使用して、新しいAEM プロジェクトを作成し、AEM SDK にデプロイします。 このプロジェクトにより、AEM SDK にアダプティブFormsテンプレートが追加されます。
+1. [ アダプティブ Forms テンプレートの追加 ](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype):AEM アーキタイプ 48 以降を使用して、新しいAEM プロジェクトを作成し、AEM SDK にデプロイします。 このプロジェクトにより、AEM SDK にアダプティブFormsテンプレートが追加されます。
 
-   ![アダプティブフォームテンプレート](/help/forms/assets/adaptive-forms-templates.png)
+   ![ アダプティブフォームテンプレート ](/help/forms/assets/adaptive-forms-templates.png)
 
    +++AEM SDK にアダプティブ Forms テンプレートを追加するには、次の手順を実行します。
 
@@ -119,7 +119,7 @@ AEM SDK とローカル開発することで、時間が節約され、開発プ
 +++
 
 
-ローカル AEM Forms開発環境のセットアップに関する詳細な手順と手順のガイドについては、 [AEM Formsのローカル開発環境の設定](/help/forms/setup-local-development-environment.md) 記事。
+AEM Formsのローカル開発環境を設定する手順とガイドについて詳しくは、「AEM Formsのローカル開発環境の設定 [ を参照してください ](/help/forms/setup-local-development-environment.md)。
 
 
 
