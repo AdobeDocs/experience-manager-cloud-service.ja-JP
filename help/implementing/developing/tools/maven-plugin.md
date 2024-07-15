@@ -4,10 +4,10 @@ description: Content Package Maven Plugin を使用した AEM アプリケーシ
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
-source-wordcount: '1802'
-ht-degree: 100%
+source-git-commit: d757c94475f257ee4b05092671ae5e6384b8342e
+workflow-type: tm+mt
+source-wordcount: '1235'
+ht-degree: 97%
 
 ---
 
@@ -27,10 +27,13 @@ ht-degree: 100%
 
 >[!NOTE]
 >
+>これらのプラグインの最新バージョンを常に使用してください。
+
+>[!NOTE]
+>
 >パッケージの&#x200B;**作成**&#x200B;は、[Apache Jackrabbit FileVault Package Maven プラグイン](https://jackrabbit.apache.org/filevault-package-maven-plugin/)で管理されるようになりました。
 >
->* `content-package-maven-plugin` は、リリース 1.0.2 以降、パッケージ化をサポートしなくなりました。
->* この記事では、構築済みパッケージの AEM への&#x200B;**デプロイメント**&#x200B;を、Adobe Content Package Maven プラグインで実行する方法について説明します。
+>この記事では、Adobeコンテンツパッケージ Maven プラグインで実行される、構築済みパッケージのAEMへの **デプロイ** について説明します。
 
 ## パッケージと AEM プロジェクト構造 {#aem-project-structure}
 
@@ -160,64 +163,6 @@ rm ゴールのすべてのパラメーターについては、[共通パラメ�
 
 uninstall ゴールのすべてのパラメーターについては、[共通パラメーター](#common-parameters)を参照してください。
 
-### package {#package}
-
-コンテンツパッケージを作成します。package ゴールのデフォルト設定には、コンパイルしたファイルを保存するディレクトリの内容が含まれます。package ゴールを実行するには、compile build フェーズを完了しておく必要があります。package ゴールは Maven のビルドライフサイクルの package フェーズにバインドされます。
-
-#### パラメーター {#parameters-5}
-
-以下のパラメーターに加えて、 [共通パラメーター](#common-parameters) の `name` パラメーターの説明も参照してください。
-
-| 名前 | 型 | 必須 | デフォルト値 | 説明 |
-|---|---|---|---|---|
-| `archive` | `org.apache.maven.archiver.MavenArchiveConfiguration` | いいえ | なし | 使用するアーカイブ設定 |
-| `builtContentDirectory` | `java.io.File` | はい | Maven ビルドの出力ディレクトリの値 | パッケージに含める内容を格納するディレクトリ |
-| `dependencies` | `java.util.List` | いいえ | なし |  |
-| `embeddedTarget` | `java.lang.String` | いいえ | なし |  |
-| `embeddeds` | `java.util.List` | いいえ | なし |  |
-| `failOnMissingEmbed` | `boolean` | はい | `false` | 値 `true` を指定すると、埋め込みアーティファクトがプロジェクトの依存関係に見つからない場合にビルドが失敗します。値 `false` を指定すると、ビルドの際にこのエラーが無視されます。 |
-| `filterSource` | `java.io.File` | いいえ | なし | パラメーターワークスペースフィルターのソースを指定するファイルを定義します。設定で指定され、embeddeds または subpackages を使用して挿入されるフィルターはファイル内容と結合されます。 |
-| `filters` | `com.day.jcr.vault.maven.pack.impl.DefaultWorkspaceFilter` | いいえ | なし | パッケージ内容を定義するフィルター要素を格納します。実行すると、`filter.xml` ファイルにフィルターが追加されます。以下の [フィルターの使用](#using-filters) の節を参照してください。 |
-| `finalName` | `java.lang.String` | はい | Maven プロジェクト（build フェーズ）で定義される `finalName` | 生成されるパッケージの ZIP ファイルの名前（ファイル拡張子 `.zip` を除く） |
-| `group` | `java.lang.String` | はい | Maven プロジェクトで定義される `groupID` | 生成されるコンテンツパッケージの `groupId`（コンテンツパッケージのターゲットインストールパスに含まれます） |
-| `outputDirectory` | `java.io.File` | はい | Maven プロジェクトで定義されるビルドディレクトリ | コンテンツパッケージが保存されるローカルディレクトリ |
-| `prefix` | `java.lang.String` | いいえ | なし |  |
-| `project` | `org.apache.maven.project.MavenProject` | はい | なし | Maven プロジェクト |
-| `properties` | `java.util.Map` | いいえ | なし | これらのパラメーターは、`properties.xml` ファイルに設定できる追加のプロパティを定義します。これらのプロパティで次の定義済みプロパティを上書きすることはできません。`group`（`group` パラメーターを使用して設定）、`name`（`name` パラメーターを使用して設定）、`version`（`version` パラメーターを使用して設定）、`description`（プロジェクトの説明から設定）、`groupId`（Maven プロジェクト記述子の `groupId`）、`artifactId`（Maven プロジェクト記述子の `artifactId`）、`dependencies`（`dependencies` パラメーターを使用して設定）、`createdBy`（システムプロパティ `user.name` の値）、`created`（現在のシステム時刻）、`requiresRoot`（`requiresRoot` パラメーターを使用して設定）、`packagePath`（グループ名とパッケージ名から自動的に生成） |
-| `requiresRoot` | `boolean` | はい | false | パッケージにルートが必要かどうかを定義します。`properties.xml` ファイルの `requiresRoot` プロパティになります。 |
-| `subPackages` | `java.util.List` | いいえ | なし |  |
-| `version` | `java.lang.String` | はい | Maven プロジェクトで定義されるバージョン | コンテンツパッケージのバージョン |
-| `workDirectory` | `java.io.File` | はい | Maven プロジェクト（build フェーズ）で定義されるディレクトリ | パッケージに含める内容を格納するディレクトリ |
-
-#### フィルターの使用 {#using-filters}
-
-パッケージ内容を定義するには、フィルター要素を使用します。フィルターはパッケージの `META-INF/vault/filter.xml` ファイルの `workspaceFilter` 要素に追加されます。
-
-次に示すフィルターの例は、使用する XML 構造を示しています。
-
-```xml
-<filter>
-   <root>/apps/myapp</root>
-   <mode>merge</mode>
-       <includes>
-              <include>/apps/myapp/install/</include>
-              <include>/apps/myapp/components</include>
-       </includes>
-       <excludes>
-              <exclude>/apps/myapp/config/*</exclude>
-       </excludes>
-</filter>
-```
-
-##### インポートモード {#import-mode}
-
-`mode` 要素は、パッケージが読み込まれる際にリポジトリー内の内容がどのような影響を受けるかを定義します。使用できる値は次のとおりです。
-
-* **merge：**&#x200B;まだリポジトリーに含まれていないパッケージ内容が追加されます。パッケージとリポジトリーの両方に含まれている内容は変更されません。リポジトリーの内容が削除されることはありません。
-* **replace：**&#x200B;リポジトリーに含まれていないパッケージ内容がリポジトリーに追加されます。リポジトリー内の内容が、パッケージ内の一致する内容に置き換えられます。パッケージ内に存在しない内容はリポジトリーから削除されます。
-* **update：**&#x200B;リポジトリーに含まれていないパッケージ内容がリポジトリーに追加されます。リポジトリー内の内容が、パッケージ内の一致する内容に置き換えられます。
-
-フィルターに `mode` 要素が含まれていない場合は、デフォルト値 `replace` が使用されます。
 
 ### help {#help}
 
