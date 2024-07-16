@@ -4,7 +4,7 @@ description: AEM as a Cloud Serviceでの Splunk およびその他のログベ�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 29d2a759f5b3fdbccfa6a219eebebe2b0443d02e
+source-git-commit: 4116f63c4a19b90849e4b55f0c10409530be7d3e
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 1%
@@ -194,7 +194,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  dataDog:
+  datadog:
     default:
       enabled: true       
       host: "http-intake.logs.datadoghq.eu"
@@ -253,6 +253,7 @@ metadata:
 data:
   https:
     default:
+      enabled: true
       url: "https://example.com/aem_logs/aem"
       authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
