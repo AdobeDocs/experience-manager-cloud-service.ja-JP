@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1566963898fb7f6999e3fad796b938128521bcce
+source-git-commit: 445d15c1449b968325c77becce8b0a547ba151d6
 workflow-type: tm+mt
-source-wordcount: '1957'
-ht-degree: 100%
+source-wordcount: '1941'
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->リリースに直接関連しないドキュメント更新の詳細については、[最近のドキュメントの更新](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates)を参照してください。
+>Experience Cloud リリースノートの更新に関するメール通知を毎月受信するには、[アドビ製品アップデートの優先通知](https://www.adobe.com/subscription/priority-product-update.html)を購読してください。
 
 ## リリース日 {#release-date}
 
@@ -252,5 +252,4 @@ Cloud Manager の月次リリースの完全なリストは、[こちら](/help/
 
 ## Experience Cloud のリリースノート {#experience-cloud}
 
-他の Experience Cloud アプリケーションのリリースについて詳しくは、[こちら](https://experienceleague.adobe.com/ja/docs/release-notes/experience-cloud/current)を参照してください。
-Experience Cloud リリースノートの更新に関するメール通知を毎月受信するには、[アドビ製品アップデートの優先通知](https://www.adobe.com/subscription/priority-product-update.html)を購読してください。
+他のExperience Cloudアプリケーションのリリースについては、[ こちら ](https://experienceleague.adobe.com/ja/docs/release-notes/experience-cloud/current) を参照してください。
