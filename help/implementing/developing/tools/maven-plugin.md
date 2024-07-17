@@ -5,9 +5,9 @@ exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: d757c94475f257ee4b05092671ae5e6384b8342e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1235'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,13 +27,13 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->これらのプラグインの最新バージョンを常に使用してください。
+>これらのプラグインの利用可能な最新バージョンを常に使用してください。
 
 >[!NOTE]
 >
 >パッケージの&#x200B;**作成**&#x200B;は、[Apache Jackrabbit FileVault Package Maven プラグイン](https://jackrabbit.apache.org/filevault-package-maven-plugin/)で管理されるようになりました。
 >
->この記事では、Adobeコンテンツパッケージ Maven プラグインで実行される、構築済みパッケージのAEMへの **デプロイ** について説明します。
+>この記事では、構築済みパッケージの AEM への&#x200B;**デプロイメント**&#x200B;を、Adobe Content Package Maven プラグインで実行する方法について説明します。
 
 ## パッケージと AEM プロジェクト構造 {#aem-project-structure}
 

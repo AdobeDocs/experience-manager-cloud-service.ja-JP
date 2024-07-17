@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
 source-git-commit: c34aa4ad34d3d22e1e09e9026e471244ca36e260
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1326'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -292,7 +292,7 @@ data:
 | 名前 | プロパティ | 意味 |
 |-----------|--------------------------|-------------|
 | **selectOrigin** | originName | 定義された接触チャネルの 1 つの名前。 |
-|     | skipCache （オプション。デフォルトは false） | このルールに一致する要求に対してキャッシュを使用するかどうかを示します。 デフォルトでは、応答は応答キャッシュヘッダー（例：Cache-Control または Expires）に従ってキャッシュされます |
+|     | skipCache（オプション、デフォルトは false） | このルールに一致するリクエストにキャッシュを使用するかどうかを示すフラグ。デフォルトでは、応答は応答キャッシュヘッダー（例：Cache-Control または Expires）に従ってキャッシュされます |
 
 **接触チャネル**
 
