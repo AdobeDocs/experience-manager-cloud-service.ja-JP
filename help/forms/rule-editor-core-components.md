@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+source-git-commit: cf69db380097992ba8adfe1ac07b3ffa26217a07
 workflow-type: tm+mt
-source-wordcount: '5627'
-ht-degree: 87%
+source-wordcount: '5735'
+ht-degree: 85%
 
 ---
 
@@ -899,6 +899,15 @@ In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.
 Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
 
 ## ルールの例 {#example}
+
+### 組み込み関数を使用した繰り返し可能なパネルでの複雑な計算の効率化
+
+ルールエディターでは、繰り返し可能なパネル内のフィールドに対して直接関数（合計、最小、最大、結合など）を使用できます。 これにより、強力な自動処理が可能になり、カスタムコードを使用しなくても複雑なビジネスロジックを実装できます。
+繰り返し可能なパネルを持つフォームを想像してみてください。 各パネルインスタンスは、製品数などのデータを収集する場合があります。 Sum 関数を使用すると、すべてのパネルの合計数量を自動的に計算し、手動での計算や発生する可能性のあるエラーを排除できます。
+
+![OOTB 関数での繰り返し可能なパネルフィールドのサポート ](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+
+これは一例に過ぎません。 使用可能な [ 関数 ](#b-form-objects-and-functions-br) を探索して、ワークフローを簡素化し、フォーム内のデータの精度を高めます。
 
 ### フォームデータモデルサービスを起動 {#invoke}
 
