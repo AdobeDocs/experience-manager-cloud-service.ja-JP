@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: cf69db380097992ba8adfe1ac07b3ffa26217a07
+source-git-commit: 46a6f413be2ba41df8ca72bd7751ec453ae438ec
 workflow-type: tm+mt
 source-wordcount: '5735'
 ht-degree: 85%
@@ -13,13 +13,13 @@ ht-degree: 85%
 ---
 
 
+# アダプティブフォーム（コアコンポーネント）へのルールの追加 {#adaptive-forms-rule-editor}
+
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service（コアコンポーネント） | この記事 |
 | AEM as a Cloud Service（基盤コンポーネント） | [ここをクリックしてください](/help/forms/rule-editor.md) |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=ja) |
-
-# アダプティブフォーム（コアコンポーネント）へのルールの追加 {#adaptive-forms-rule-editor}
 
 ルール編集機能により、フォームのビジネスユーザーや開発者がアダプティブフォームオブジェクトにルールを追加できるようになります。これらのルールは、フォームオブジェクト上でトリガーできるアクションを定義します。それらのアクションは、プリセットされた条件、ユーザー入力、およびフォーム上のユーザーアクションに基づいてトリガーされます。これにより、フォームへの入力を正確かつ迅速に行うことができます。
 
