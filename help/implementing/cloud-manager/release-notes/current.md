@@ -1,20 +1,20 @@
 ---
-title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.6.0 のリリースノート
-description: AEM as a Cloud Service の Cloud Manager 2024.6.0 のリリースノートです。
+title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.7.0 のリリースノート
+description: AEM as a Cloud Service の Cloud Manager 2024.7.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 6ca376bda8055d62e35e13053ff21f861c12b292
+source-git-commit: a5cd55bcdc6044dd8db26f009b955216cda5daee
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 100%
+source-wordcount: '621'
+ht-degree: 58%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.6.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.7.0 のリリースノート {#release-notes}
 
-このページは、AEM as a Cloud Service の Cloud Manager リリース 2024.6.0 のリリースノートです。
+このページは、AEM as a Cloud Service の Cloud Manager リリース 2024.7.0 のリリースノートです。
 
 >[!NOTE]
 >
@@ -22,19 +22,23 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service の Cloud Manager 2024.6.0 のリリース日は 2024年6月6日（PT）です。次回のリリースは 2024年7月18日（PT）に予定されています。
+AEM as a Cloud ServiceのCloud Manager リリース 2024.7.0 のリリース日は 2024 年 7 月 18 日（PT）です。 次回のリリースは 2024 年 8 月 8 日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* フルスタックパイプラインとフロントエンドパイプラインの両方のソースとして、[独自の GitHub リポジトリを使用](/help/implementing/cloud-manager/managing-code/private-repositories.md)できるようになりました。
-   * さらに、[Git サブモジュール](/help/implementing/cloud-manager/managing-code/git-submodules.md)を備えた GitHub リポジトリを活用すると、プルリクエストの検証に使用される自動生成パイプラインのコントロールが強化され、コードスキャンフェーズ中に重要な指標の動作を定義できます。
-   * [また](/help/implementing/cloud-manager/managing-code/github-check-config.md)、ニーズに合わせて、GitHub にレポート履歴を保存し、パイプラインに名前を付け、パイプライン変数を設定することもできます。
-* [セルフサービスコンテンツ復元](/help/operations/restore.md)では、最大 7 日間のバックアップ復元が可能で、次の機能があります。
-   * 過去 24 時間のポイントインタイムバックアップの復元
-   * 最長 7 日間の固定時間の復元
-* [新しい OakPal ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package)が、Cloud Manager コード品質スキャンに追加されました。
-   * 2024年6月の時点で追加されたすべての新しいルールは、重大な変更ではありません。
-   * Cloud Manager 2024年8月リリース以降、これらの新しいルールによりパイプラインでエラーが発生する可能性があるので、できるだけ早くこれらのルールに対処することをお勧めします。
+* コミット時にパイプラインを開始するための [ 実稼動パイプライン ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) および [ 実稼動以外のパイプライン ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)トリガー&#x200B;**Git の変更時** が [ プライベートリポジトリ ](/help/implementing/cloud-manager/managing-code/private-repositories.md) で使用できるようになりました。
+   * これは、8 月中旬までに完了し、段階的にロールアウトされます。
+* [Adobeが管理する DV 証明書を追加する場合 ](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) ドメインごとに証明書を作成する代わりに、複数のドメインに対応する 1 つの証明書を追加できるようになりました。
+* [ 追加の公開地域 ](/help/operations/additional-publish-regions.md) を持たないソリューションも、プログラムに Sites またはForms ソリューションが少なくとも 1 つ適用されている限り、プログラムに追加できるようになりました。
+* [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) を持たないソリューションでも、プログラムに少なくとも Sites またはForms ソリューションが適用されている限り、プログラムに追加できるようになりました。
+* [ エクスペリエンス監査ダッシュボード ](/help/implementing/cloud-manager/experience-audit-dashboard.md) が様々な方法で強化されました。
+   * 以前の `.net` アプローチに代わって、CDN を介して `.com` エンドポイントに対して監査が実行されるようになりました。
+      * この変更により、実際のユーザーエクスペリエンスをより正確にシミュレートでき、web サイトの管理と最適化に関して、より十分な情報に基づいた意思決定を支援します。
+   * エクスペリエンス監査 UI に対して、次のような複数の機能強化が行われました。
+      * パフォーマンス、ベストプラクティス、SEO およびアクセシビリティのトレンド表示が追加されました。
+      * Lighthouse の生のレポートリンクが、スキャンスナップショットの詳細パネルで直接、より直感的に表示されるようになりました。
+      * Lighthouse のレコメンデーションセクションが強化されました。
+   * Lighthouse バージョン 12.0.0 に従ってPWA指標が削除され、この指標が削除されました。
 
 ## 早期導入プログラム {#early-adoption}
 
@@ -53,14 +57,6 @@ Adobe Experience Manager Sites の一部として Edge Delivery Services のラ�
 Cloud Manager では、[ドメイン検証（DV）SSL 証明書をセルフサービスで生成および管理できるようになりました。](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)これにより、オンラインビジネス用の安全な web サイトを作成するための、最も高速かつ簡単でコスト効率に優れたソリューションが実現します。
 
 この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから `Grp-aemcs-dv-dert-adopter@adobe.com` にメールを送信してください。
-
-<!-- RICK: REMOVED THIS SECTION AS PER EMAIL REQUEST TO DL-AEM-DOCS FROM SHWETA DUA, WEDNESDAY, JUNE 12, 2024 ### Client-Side Collection via Real Use Monitoring (RUM) {#rum}
-
-You can leverage the [Real Use Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) to enable client-side collection for AEM as a Cloud Service.
-
-Real Use Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. This is beneficial for customers who use either Adobe-managed CDN or non-Adobe managed CDN. For customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
-
-If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com` from the email address associated with your Adobe ID. Please include the domain name for production, stage, and dev environments in your email.  Availability of the early adopter program of this feature is limited.-->
 
 ### エクスペリエンス監査ダッシュボード {#experience-audit-dashboard}
 

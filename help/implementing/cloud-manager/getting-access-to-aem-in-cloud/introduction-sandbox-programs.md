@@ -5,10 +5,10 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 100%
+source-wordcount: '488'
+ht-degree: 92%
 
 ---
 
@@ -48,7 +48,15 @@ ht-degree: 100%
 
 ### カスタムドメインまたは IP許可リストなし {#ip-allow}
 
-カスタムドメインと IP 許可リストは、サンドボックスプログラムでは使用できません。
+[ カスタムドメイン ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) および [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) は、サンドボックスプログラムでは使用できません。
+
+### その他のPublish リージョンはありません {#additional-publish-regions}
+
+[ 追加の公開地域 ](/help/operations/additional-publish-regions.md) は、サンドボックスプログラムでは使用できません。
+
+### 99.99% SLA なし {#999-sla}
+
+[99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) は、サンドボックスプログラムには適用されません。
 
 ### 高度なネットワークなし {#advanced-networking}
 

@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ceaa3b075953e9bdbcc0ae8c47106150be9a52d7
+source-git-commit: 51fa6e0fe56b1d5f0d8ada6bd2335175d603bc8c
 workflow-type: tm+mt
-source-wordcount: '4482'
-ht-degree: 100%
+source-wordcount: '4513'
+ht-degree: 99%
 
 ---
 
@@ -1267,3 +1267,12 @@ AEM Cloud Service では、アナライザーで誤った名前のトークナ�
 >[!WARNING]
 >
 >[Cloud Manager 2024年8月リリース](/help/implementing/cloud-manager/release-notes/current.md)以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします
+
+### インデックス定義の設定にスペースを含めることはできません {#oakpal-indexing-definitions-spaces}
+
+* **キー**:PathSpacesCheck
+* **タイプ**：改善点
+* **深刻度**：軽度
+* **最初の対象バージョン**：バージョン 2024.7.0
+
+AEM Cloud Serviceでは、スペースを含んだプロパティを含むインデックス作成定義を作成できません。
