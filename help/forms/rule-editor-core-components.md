@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 46a6f413be2ba41df8ca72bd7751ec453ae438ec
+source-git-commit: a9596774326d5756477c0a44c2715fc5c3561e2a
 workflow-type: tm+mt
-source-wordcount: '5735'
-ht-degree: 85%
+source-wordcount: '5787'
+ht-degree: 84%
 
 ---
 
@@ -903,9 +903,17 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 ### 組み込み関数を使用した繰り返し可能なパネルでの複雑な計算の効率化
 
 ルールエディターでは、繰り返し可能なパネル内のフィールドに対して直接関数（合計、最小、最大、結合など）を使用できます。 これにより、強力な自動処理が可能になり、カスタムコードを使用しなくても複雑なビジネスロジックを実装できます。
-繰り返し可能なパネルを持つフォームを想像してみてください。 各パネルインスタンスは、製品数などのデータを収集する場合があります。 Sum 関数を使用すると、すべてのパネルの合計数量を自動的に計算し、手動での計算や発生する可能性のあるエラーを排除できます。
+繰り返し可能なパネルを持つフォームについて考えてみます。このパネルでは、各パネルインスタンスが、アセットの宣言済み値に関する情報を収集します。
+
+![ 繰り返し可能なフォーム ](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
+
+`Sum` 関数を使用して、すべてのパネルの合計アセット値を自動的に計算できるので、手動での計算が不要になり、エラーの可能性を減らすことができます。
 
 ![OOTB 関数での繰り返し可能なパネルフィールドのサポート ](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+
+アセット値を宣言するインスタンスを追加してフォームに入力すると、「`Calculate Asset Value`」ボタンは、宣言されたすべてのアセット値の合計を計算し、その結果をテキストボックスに表示 `assetvalue` ます。
+
+![OOTB 関数での繰り返し可能なパネルフィールドのサポート ](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
 
 これは一例に過ぎません。 使用可能な [ 関数 ](#b-form-objects-and-functions-br) を探索して、ワークフローを簡素化し、フォーム内のデータの精度を高めます。
 
