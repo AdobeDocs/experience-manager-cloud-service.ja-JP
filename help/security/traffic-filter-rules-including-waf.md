@@ -4,10 +4,10 @@ description: Web アプリケーションファイアウォール（WAF）ルー
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 23d532f70e031608855bb9fc768aae5398c81e0f
-workflow-type: ht
+source-git-commit: b8fc132e7871a488cad99440d320e72cd8c31972
+workflow-type: tm+mt
 source-wordcount: '3938'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -531,7 +531,7 @@ data:
 
 このしきい値に達すると、アドビはその IP アドレスからのトラフィックをブロックしますが、接触チャネルを保護するための追加の対策を講じることをお勧めします。例えば、低いしきい値でトラフィックスパイクをブロックするようにレート制限トラフィックフィルタールールを設定することができます。ガイド付きのウォークスルーについては、[トラフィックルールを使用した DoS および DDoS 攻撃のブロック（チュートリアル）](#tutorial-blocking-DDoS-with-rules)を参照してください。
 
-このアラートはデフォルトで有効になっていますが、*enable_ddos_alerts* プロパティを false に設定し、無効化することもできます。アラートがトリガーされると、翌日（UTC）まで再度アラートはトリガーされません。
+このアラートはデフォルトで有効になっていますが、*defaultTrafficAlerts* プロパティを使用して無効にすることができます。このプロパティは false に設定されています。 アラートがトリガーされると、翌日（UTC）まで再度アラートはトリガーされません。
 
 ```
 kind: "CDN"
@@ -540,7 +540,7 @@ metadata:
   envTypes: ["dev"]
 data:
   trafficFilters:
-    enable_ddos_alerts: false
+   defaultTrafficAlerts: false
 ```
 
 ## CDN ログ {#cdn-logs}
