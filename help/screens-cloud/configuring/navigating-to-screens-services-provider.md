@@ -4,10 +4,10 @@ description: ここでは、Screens サービスプロバイダーへの移動�
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: f91166ca0349636386aa8721ded5b3bbda1cdb51
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 100%
+source-wordcount: '430'
+ht-degree: 63%
 
 ---
 
@@ -33,11 +33,11 @@ Screens サービスプロバイダーを設定するには、次の手順に従
    >[!CAUTION]
    >複数の組織にアクセスできる場合は、正しい組織にログインしていることを確認してください。組織を変更するには、画面の右上隅にある組織名をクリックし、アクセスする必要がある組織を選択します。
 
-2. 「プロジェクト」（左上隅）の横にある歯車アイコンをクリックします。
+1. 「プロジェクト」（左上隅）の横にある歯車アイコンをクリックします。
 
    ![画像](/help/screens-cloud/assets/configure/configure-screens0.png)
 
-3. 設定を編集ダイアログボックスに、次の詳細を入力します。
+1. 設定を編集ダイアログボックスに、次の詳細を入力します。
    * **公開 URL** - AEM の公開 URL（例：`https://publish-p12345-e12345.adobeaemcloud.com`）
    * **オーサー URL** - AEM のオーサー URL（例：`https://author-p12345-e12345.adobeaemcloud.com`）
 
@@ -46,13 +46,49 @@ Screens サービスプロバイダーを設定するには、次の手順に従
 
    ![画像](/help/screens-cloud/assets/configure/configure-screens4.png)
 
-4. Screens コンテンツプロバイダーに接続するには、「**保存**」をクリックします。
+1. 「**保存**」をクリックして、Screens コンテンツプロバイダーに接続します。
 
-5. 左側のナビゲーションバーから「**チャネル**」を選択し、「**コンテンツプロバイダーで開く**」をクリックします。
+1. Cloud Managerの IPAEM機能により信頼できる IP アドレスのみにアクセスを許可するように許可リストに加える パブリッシュインスタンスを設定した場合、次に示すように、設定ダイアログでキー値を持つヘッダーを設定する必要があります。
+許可リストへの登録が必要な IP は、設定ファイルに移動し、Cloud Manager設定から [ 適用解除 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) する必要もあります。
+
+   ![画像](/help/screens-cloud/assets/configure/configure-screens20.png)
+
+AEM CDN 設定でも同じキーを設定する必要があります。  ヘッダー値を直接 GITHub に配置せず、[ 秘密参照 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets) を使用することをお勧めします。
+[CDN 設定 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf) のサンプルを以下に示します。
+
+    kind: &quot;CDN&quot;
+    version: &quot;1&quot;
+    metadata:
+    envTypes: [&quot;dev&quot;, &quot;stage&quot;, &quot;prod&quot;]
+    data:
+    trafficFilters:
+    rules:
+    - name: &quot;block-request-from-not-allowed-ips&quot;
+    when:
+    allOf:
+    - reqProperty: clientIp
+    notIn: [&quot;101.41.112.0/24&quot;]
+    - reqProperty: tier
+    equals: publish
+    action: block
+     name: &quot;allow-requests-with-header &quot;
+    when:
+    allOf:
+    - reqProperty: tier
+    
+     
+     
+     
+     
+    {CDN_HEADER_KEY}
+     
+     
+ equals: publishProperty- reqProperty: pathEquals: /screens/channels.jsonWhen- reqHeader: x-screens-許可リスト – キーの組み合わせ
+1. 左側のナビゲーションバーから「**チャネル**」を選択し、「**コンテンツプロバイダーで開く**」をクリックします。
 
    ![画像](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-6. Screens コンテンツプロバイダーが別のタブで開き、コンテンツを作成できるようになります。
+1. Screens コンテンツプロバイダーが別のタブで開き、コンテンツを作成できるようになります。
 
    ![画像](/help/screens-cloud/assets/configure/configure-screens2.png)
 
