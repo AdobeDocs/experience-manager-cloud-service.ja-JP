@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: d76f27e2b85cefe5e83f790a91466e94a619a077
 workflow-type: tm+mt
 source-wordcount: '1965'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -252,4 +252,4 @@ Cloud Manager の月次リリースの完全なリストは、[こちら](/help/
 
 ## Experience Cloud のリリースノート {#experience-cloud}
 
-他のExperience Cloudアプリケーションのリリースについては、[ こちら ](https://experienceleague.adobe.com/ja/docs/release-notes/experience-cloud/current) を参照してください。
+他の Experience Cloud アプリケーションのリリースについて詳しくは、[こちら](https://experienceleague.adobe.com/ja/docs/release-notes/experience-cloud/current)を参照してください。
