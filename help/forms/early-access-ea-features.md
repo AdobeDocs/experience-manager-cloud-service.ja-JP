@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 29da5119403d47502fe4dc1d2a5c728aa0828b0e
+source-git-commit: 681121c98f61f045702a7d9c2ffad1473d7f5b2a
 workflow-type: tm+mt
-source-wordcount: '2784'
-ht-degree: 29%
+source-wordcount: '1735'
+ht-degree: 25%
 
 ---
 
@@ -173,105 +173,3 @@ Forms サービスでは、データキャプチャ用のインタラクティ�
 
 * [AEM 6.5 Forms（AMS およびオンプレミス）とAEM Forms as a Cloud Service（AEM CS Forms）の違い](/help/forms/notable-changes.md)
 
-
-会話型Formsは、単なる新しい外観ではなく、ユーザーエクスペリエンスを大きく変える要素です。  エンゲージメントを高め、フォームの放棄を減らし、web サイトとのやり取りを全員にとってより楽しいエクスペリエンスにします。
-
-
-### Edge Delivery Services向け WYSIWYG オーサリング
-
-WYSIWYG オーサリングは、アダプティブフォームを作成してEdge Delivery Servicesに公開するための WYSIWYG インターフェイス（ユニバーサルエディターとアダプティブFormsエディター）を提供します。 WYSIWYG オーサリングは、[ ドキュメントベースのオーサリング ](/help/edge/docs/forms/overview.md#document-based-authoring-features) のすべての機能に加えて、次のような様々な追加機能を提供します。
-
-* 複雑なロジックを作成する高度なルールエディター。
-* カスタム機能を実現するサーバーサイド拡張機能。
-* 簡単なフォームを作成し視覚化する WYSIWYG 編集エクスペリエンス。
-* 送信されたデータの改ざん防止アーカイブを作成するレコードのドキュメント機能。
-* 電子署名を行う Adobe Sign との統合。
-* フォームの事前入力とデータの送信の様々なデータソースとの統合。
-* 様々なデータソースとのインタラクションとデータ構造を定義するフォームデータモデル（FDM）。
-* Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics、その他多くのデータソースへのデータの送信を含む、フォーム送信を処理するための複数の送信アクションから選択する機能。
-
-
-### AEM FormsからMarketoへのコネクタ
-
-AEM Forms/Marketo コネクタは、Adobe Experience Manager（AEM）で作成された web フォーム（アダプティブForms）とマーケティング自動処理プラットフォームのMarketoとの間のギャップを埋めます。
-
-AEM アダプティブFormsで作成された web サイト上のフォームが誰かに送信されると、コネクタは、送信されたデータがMarketoに自動的に送信されるようにします。 これにより、手動でのデータ入力が不要になり、エラーのリスクが軽減されます。
-
-![AEM Form - Marketo コネクタ ](/help/forms/assets/aem-forms-marketo-connector.jpeg)
-
-データ転送プロセスを合理化することで、コネクタは web サイトのコンバージョン率の向上に役立ちます。 リードデータをMarketoに自動送信することで、適格なリードを育成プログラムにすばやく入力できます。
-
-基本的に、AEM Forms/Marketo コネクタは、両方のプラットフォームの強みを活用して、より効率的で効果的なマーケティングファネルを作成するのに役立ちます。
-
-
-## その他の早期アクセス・イノベーション
-
-### 右から左（RTL）言語のサポート
-
-アダプティブFormsを右から左（RTL）言語で表示できるようになり、より包括的なユーザーエクスペリエンスと使いやすさが実現しました。
-
-この機能は、アラビア語、ヘブライ語、ウルドゥ語などの言語に対応し、RTL （Right-to-Left）で書かれたり読まれたりするので、フォームの理解度と完了率が向上します。
-
-![ 右から左（RTL）言語のサポート ](mobile-responsive.png)
-
-アダプティブFormsでの右から左（RTL）言語のサポートは、次のような場合に役立ちます。
-
-* **ユーザーベースの拡大**：企業は、現在、RTL 言語により慣れている世界中の 20 億人以上の人々にリーチできます。
-
-* **ユーザーエクスペリエンスの向上**:Formsでは、右から左への自然なテキストのフロー、適切な UI 要素の配置、ユーザーの読み取り習慣を反映した直感的なレイアウトにより、完璧にレンダリングされます。 これにより、混乱が軽減され、フォームの完了率が向上します。
-
-* **モバイルレスポンシブエクスペリエンスの提供**：固有のモバイル応答性により、Formsはどのデバイスでもアクセス可能で、デスクトップ、タブレット、スマートフォン全体でスムーズなエクスペリエンスを確保します。
-
-全体として、アダプティブFormsの RTL 言語のサポートにより、企業は真にグローバルなフォームを設計し、リーチ、エンゲージメントおよびインクルーシブ性を高めることができます。
-
-開始する準備はできていますか？ [ アダプティブForms RTL ドキュメント ](/help/forms/supporting-new-language-localization-core-components.md) では、RTL の技術革新を使用するためのステップバイステップのガイドを提供します。
-
-### ボット保護方法の強化
-
-AEM Forms では、Cloudflare Turnstile と hCaptcha という 2 つの一般的な Captcha ソリューションのサポートを追加して、セキュリティ機能を強化しました。これにより、既に利用可能な Google reCAPTCHA が追加され、ボットやスパムの送信からフォームを保護するためのより多くの選択肢と柔軟性がユーザーに提供されます。
-
-* **Cloudflare Turnstile**：このスムーズな Captcha は、明示的なインタラクションを必要としないシンプルなテストを通じてユーザーを検証します。フォームにシームレスに統合し、ユーザーエクスペリエンスを向上させます。
-* **hCaptcha**：プライバシーに焦点を当てたこの Captcha は、データプライバシーに焦点を当てた、ユーザーフレンドリーな代替手段を提供します。セキュリティとユーザーエクスペリエンスのバランスを取ることを目的としています。
-* **Google reCAPTCHA**：AEM Forms では、引き続き reCAPTCHA v2 と reCAPTCHA Enterprise の両方をサポートし、信頼性が高く確立されたソリューションを提供します。
-
-AEM Forms では、複数の CAPTCHA オプションを提供して、特定のニーズに最適なソリューションを選択できるようになりました。
-
-これらの Captcha ソリューションをアダプティブフォームに統合する準備はできていますか？アドビのドキュメントでは、[Cloudflare Turnstile](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components)、[hCaptcha](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components)、[Google reCAPTCHA](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components) の各項目について詳しい手順を示しています。
-
-### Doc Assurance API
-
-
-AEM Forms Doc Assurance API は、PDFドキュメントのセキュリティとユーザーインタラクションを管理できる、AEM Forms Cloud Service通信 API 内のツールセットです。
-
-Doc Assurance API で実行できる操作の分類を次に示します。
-
-* **ドキュメントの暗号化と復号化**：暗号化を使用してコンテンツを判読できないようにして、ドキュメントをProtectします。 ドキュメント全体、特定のコンテンツ、メタデータ、添付ファイルなど、PDFのどの部分を暗号化するかを制御できます。
-
-* **ドキュメントのデジタル署名**：ドキュメントにデジタル署名を追加して、検証と改ざん防止の検証を行います。 これは、認証目的またはドキュメントの整合性を確保するために使用できます
-
-* **Readerドキュメントを拡張する（PDFドキュメントの使用権限を適用または編集する）**：使用権限を追加してAdobe Readerの機能を拡張することで、組織内でインタラクティブPDFドキュメントを簡単に共有できるようにします。
-
-  Reader拡張（使用権限） API は、PDFドキュメントに使用権限を追加します。 これにより、PDF ドキュメントを Adobe Reader で開いた場合には通常使用できない機能（ドキュメントへのコメントの追加、フォームへの入力、ドキュメントの保存など）がアクティブになります。サードパーティユーザーは、使用権限を付与されたドキュメントを扱うためにソフトウェアまたはプラグインを追加する必要はありません。
-
-  PDFドキュメントに適切な使用権限が追加されている場合、受信者はAdobe Reader内から有効なアクティビティを実行できます。
-
-全体として、[Doc Assurance API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) は、制御レイヤーを追加することで、ドキュメントのセキュリティとコンプライアンスを向上させるのに役立ちます。
-
-
-### Forms サービス API
-
-Forms サービスでは、データキャプチャ用のインタラクティブな PDF フォームを生成します。また、既存のインタラクティブPDFフォームとの間でデータのインポートやエクスポートを行い、送信されたデータを検証することもできます。 機能の分類を以下に示します。
-
-* **Forms のレンダリング**：AEM Forms Designer を使用して作成したテンプレートからと、オプションで XML データから、インタラクティブな PDF フォームを生成します。これにより、基本的に、入力可能な PDF フォーム（オプションでデータを事前入力することもできます）が生成されます。
-
-* **データの抽出と読み込み**： 既存の PDF フォームにデータを読み込んだり、入力済みの PDF フォームからデータを抽出したりします。XDP と XML の両方のデータ形式がサポートされ、XFA 以外の PDF フォーム（AcroForms とも呼ばれます）への読み込みでは、さらに FDF および XFDF データもサポートされます。
-
-* **データの検証**：XDP または XML 形式で送信されたデータを、AEM Forms Designer を使用して作成されたテンプレートに対して検証します。
-
-## 関連トピック
-
-* [AEM Formsの最新イノベーション](/help/forms/latest-innovations.md)
-
-* [AEM Forms as a Cloud Serviceの機能](/help/forms/home.md)
-
-* [AEM 6.5 Forms（AMS およびオンプレミス）とAEM Forms as a Cloud Service（AEM CS Forms）の違い](/help/forms/notable-changes.md)
