@@ -4,10 +4,10 @@ description: AEM as a Cloud Serviceのメンテナンスタスクと、その設
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: f8ef7e36ad602af96c3a6055db31ac328da808e6
+source-git-commit: b8bed4acf895f1cf04ea92ae27b87c7bfb38863d
 workflow-type: tm+mt
-source-wordcount: '2106'
-ht-degree: 100%
+source-wordcount: '2110'
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 100%
     <td>顧客</td>
     <td>
     <p>Git で行う必要があります。フォルダー <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code> または <code>granite_monthly</code> の下でプロパティを作成することで、<code>/libs</code> の下にある標準のメンテナンスウィンドウ設定ノードを上書きします。詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。</p>
-    <p>上記のノードの下に別のノードを追加し（<code>granite_ProjectPurgeTask</code> という名前を付けて）、適切なプロパティを追加して、メンテナンスタスクを有効にします。「アドビプロジェクトのパージ設定」の OSGI プロパティの一覧を参照してください。</p>
+    <p>上記のノードの下に別のノードを追加し（<code>granite_ProjectPurgeTask</code> という名前を付けて）、適切なプロパティを追加して、メンテナンスタスクを有効にします。詳しくは、**設定プロジェクトのパージAdobe**にある [OSGI プロパティ ] （/help/implementing/deploying/configuring-osgi.md）のリストを参照してください。</p>
   </td>
   </tr>
   </tbody>
