@@ -2,7 +2,7 @@
 title: 配信 API
 description: 配信 API の使用方法を説明します。
 role: User
-source-git-commit: 6fdc44b93e11a20b6859419813fd7eadbefd95c1
+source-git-commit: deae260ce34a0801ee534ddadfb14823ef461a87
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Experience Managerアセットリポジトリで使用可能なすべての [ �
 
 | 配信 API | 説明 |
 |---|---|
-| [ リクエストされた出力形式でのアセットの web に最適化されたバイナリ表現 ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | リクエストで送信されたアセット ID に基づいて、リクエストされた出力形式でのアセットの web に最適化されたバイナリ表現を返します。 さらに、幅、高さ、回転、反転、画質、切り抜き、形式、[ スマート切り抜き ](/help/assets/dynamic-media/image-profiles.md) など、様々な画像修飾子を定義できます。 サポートされる形式と画像修飾子について詳しくは、[API の詳細 ](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetSeoFormat) を参照してください。<br>Adobeでは、すべての画像形式タイプに対してこの API を使用することをお勧めします。 |
+| [ リクエストされた出力形式でのアセットの web に最適化されたバイナリ表現 ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | リクエストで送信されたアセット ID に基づいて、リクエストされた出力形式でのアセットの web に最適化されたバイナリ表現を返します。 さらに、幅、高さ、回転、反転、画質、切り抜き、形式、[ スマート切り抜き ](/help/assets/dynamic-media/image-profiles.md) など、様々な画像修飾子を定義できます。 サポートされる形式と画像修飾子について詳しくは、[API の詳細 ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) を参照してください。<br>Adobeでは、すべての画像形式タイプに対してこの API を使用することをお勧めします。 |
 | [Web に最適化されたアセットのバイナリ表現 ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAsset) | 応答で返されるアセットの web に最適化されたバイナリ表現にデフォルトで適用される便利な API。 デフォルトには、標準のJPEG/WEBP 形式、画質=> 65、幅=> 1024 が含まれます。 |
 | [ アセットのオリジナルのアップロード済みバイナリ ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetOriginal) | アセットに最初にアップロードされたバイナリを返します。 Adobeでは、ドキュメント形式タイプとSVG画像に、この API を使用することをお勧めします。 |
 | [AEM Assets オーサリング環境で使用できる、アセットの事前生成済みレンディション ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetRendition) | リクエストで送信されたアセット ID とレンディション名に基づいて、AEM Assets オーサリング環境で使用可能なアセットレンディションのビットストリームを返します。 |
