@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 35ac4cfb18e348281d2b126bdc3b292c84590f3a
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 100%
+source-wordcount: '649'
+ht-degree: 98%
 
 ---
 
@@ -39,7 +39,9 @@ SSL 証明書のステータスは、SSL 証明書ページから一目で確認
 1. **環境**&#x200B;画面から **SSL 証明書**&#x200B;画面に移動します。
 1. プログラムに正常にインストールされた各 SSL 証明書の行が記載された表が表示されます。更新する証明書の行の右端にある省略記号ボタンをクリックし、「**表示と更新**」を選択します。
 1. 証明書の詳細が表示され、更新することができます。
-1. パイプラインを実行して、更新された証明書をデプロイします。
+1. 変更を保存します。
+
+変更を保存すると、その変更が自動的に適用されます。
 
 >[!NOTE]
 >
