@@ -4,7 +4,7 @@ description: ここでは、Screens サービスプロバイダーへの移動�
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f91166ca0349636386aa8721ded5b3bbda1cdb51
+source-git-commit: ea374f6e521d3b94d1d38af5c8f6780275ae2cb4
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 63%
@@ -51,39 +51,37 @@ Screens サービスプロバイダーを設定するには、次の手順に従
 1. Cloud Managerの IPAEM機能により信頼できる IP アドレスのみにアクセスを許可するように許可リストに加える パブリッシュインスタンスを設定した場合、次に示すように、設定ダイアログでキー値を持つヘッダーを設定する必要があります。
 許可リストへの登録が必要な IP は、設定ファイルに移動し、Cloud Manager設定から [ 適用解除 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) する必要もあります。
 
-   ![画像](/help/screens-cloud/assets/configure/configure-screens20.png)
-
+   ![ 画像 ](/help/screens-cloud/assets/configure/configure-screens20.png)
 AEM CDN 設定でも同じキーを設定する必要があります。  ヘッダー値を直接 GITHub に配置せず、[ 秘密参照 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets) を使用することをお勧めします。
 [CDN 設定 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf) のサンプルを以下に示します。
+kind: &quot;CDN&quot;
+バージョン : &quot;1&quot;
+メタデータ：
+envTypes:[&quot;dev&quot;、&quot;stage&quot;、&quot;prod&quot;]
+データ：
+trafficFilter:
+ルール：
+ – 名前：&quot;block-request-from-not-allowed-ips&quot;
+日時：
+allOf:
+- reqProperty: clientIp
+notIn: [&quot;101.41.112.0/24&quot;]
+- reqProperty：層
+次に等しい：公開
+アクション : ブロック
+ – 名前：「allow-requests-with-header」
+日時：
+allOf:
+- reqProperty：層
+次に等しい：公開
+- reqProperty: path
+次に等しい：/screens/channels.json
+許可リストに加える - reqHeader: x-screens-key
+次に等しい：${\
+   {CDN_HEADER_KEY}
+アクション :
+タイプ：許可
 
-    kind: &quot;CDN&quot;
-    version: &quot;1&quot;
-    metadata:
-    envTypes: [&quot;dev&quot;, &quot;stage&quot;, &quot;prod&quot;]
-    data:
-    trafficFilters:
-    rules:
-    - name: &quot;block-request-from-not-allowed-ips&quot;
-    when:
-    allOf:
-    - reqProperty: clientIp
-    notIn: [&quot;101.41.112.0/24&quot;]
-    - reqProperty: tier
-    equals: publish
-    action: block
-     name: &quot;allow-requests-with-header &quot;
-    when:
-    allOf:
-    - reqProperty: tier
-    
-     
-     
-     
-     
-    {CDN_HEADER_KEY}
-     
-     
- equals: publishProperty- reqProperty: pathEquals: /screens/channels.jsonWhen- reqHeader: x-screens-許可リスト – キーの組み合わせ
 1. 左側のナビゲーションバーから「**チャネル**」を選択し、「**コンテンツプロバイダーで開く**」をクリックします。
 
    ![画像](/help/screens-cloud/assets/configure/configure-screens1.png)
@@ -91,6 +89,10 @@ AEM CDN 設定でも同じキーを設定する必要があります。  ヘッ�
 1. Screens コンテンツプロバイダーが別のタブで開き、コンテンツを作成できるようになります。
 
    ![画像](/help/screens-cloud/assets/configure/configure-screens2.png)
+
+
+
+
 
 ## 次の手順 {#whats-next}
 
