@@ -5,10 +5,10 @@ contentOwner: KK
 role: Admin,User
 feature: Selectors
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: d12aba19a8f166afcaa071478c1cb6d995010cd8
+source-git-commit: 61647c0f190c7c71462f034a131f5a7c13fd7162
 workflow-type: tm+mt
-source-wordcount: '4725'
-ht-degree: 100%
+source-wordcount: '4871'
+ht-degree: 97%
 
 ---
 
@@ -812,6 +812,60 @@ interface SelectedAsset {
 | *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | 数値 | レンディションの高さ。 |
 
 プロパティの完全なリストと詳細な例については、[アセットセレクターのコード例](https://github.com/adobe/aem-assets-selectors-mfe-examples)を参照してください。
+
+### コンテキスト呼び出しフィルター{#contextual-invocation-filter}
+
+アセットセレクターを使用すると、タグピッカーフィルターを追加できます。 特定のタグ付けグループに関連するすべてのタグを組み合わせるタググループをサポートします。 さらに、検索するアセットに対応する追加のタグを選択できます。 さらに、コンテキスト呼び出しフィルターの下で、主にによって使用されるデフォルトのタググループを設定して、外出先でもアクセスできるようにすることもできます。
+
+> 
+>
+> * 検索でタグ付けフィルターを有効にするには、コンテキスト呼び出しコードスニペットを追加する必要があります。
+> * タググループタイプ `(property=xcm:keywords.id=)` に対応する名前プロパティを使用する必要があります。
+
+構文：
+
+```
+const filterSchema=useMemo(() => {
+    return: [
+        {
+            element: 'taggroup',
+            name: 'property=xcm:keywords.id='
+        },
+    ];
+}, []);
+```
+
+フィルターパネルにタググループを追加するには、少なくとも 1 つのタググループをデフォルトとして追加する必要があります。 さらに、以下のコードスニペットを使用して、タググループから事前に選択されたデフォルトのタグを追加します。
+
+```
+export const WithAssetTags = (props) = {
+const [selectedTags, setSelectedTags] = useState (
+new Set(['orientation', 'color', 'facebook', 'experience-fragments:', 'dam', 'monochrome'])
+const handleSelectTags = (selected) => {
+setSelectedTags (new Set (selected)) ;
+};
+const filterSchema = useMemo ((); => {
+    return {
+        schema: [
+            ｛
+                fields: [
+                    {
+                    element: 'checkbox', 
+                    name: 'property=xcm:keywords=', 
+                    defaultValue: Array. from(selectedTags), 
+                    options: assetTags, 
+                    orientation: 'vertical',
+                    },
+                ],
+    header: 'Asset Tags', 
+    groupkey: 'AssetTagsGroup',
+        ],
+    },
+｝；
+}, [selectedTags]);
+```
+
+![ タググループフィルター ](assets/tag-group.gif)
 
 ## オブジェクトスキーマを使用したアセット選択の処理 {#handling-selection}
 
