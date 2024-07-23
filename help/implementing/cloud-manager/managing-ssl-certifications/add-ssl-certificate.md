@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 07696086644d52199bada102e9aee163d868c9c0
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
+source-wordcount: '665'
+ht-degree: 86%
 
 ---
 
@@ -43,7 +43,6 @@ Cloud Manager を使用して証明書を追加するには、次の手順に従
    * 「**証明書名**」に証明書の名前を入力します。
       * これは情報提供だけを目的とし、証明書を簡単に参照するのに役立つ任意の名前を指定できます。
    * **証明書**、**秘密鍵**、**証明書チェーン**&#x200B;の値をそれぞれのフィールドに貼り付けます。3 つのフィールドはすべて必須です。
-   * エンドユーザー証明書がチェーンに含まれていることがありますが、その場合はチェーンをフィールドに貼り付ける前に削除する必要があります。
 
    ![SSL 証明書を追加ダイアログ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -61,13 +60,27 @@ Cloud Manager を使用して証明書を追加するには、次の手順に従
 >
 >Cloud Manager で SSL 証明書をインストールするには、ユーザーが&#x200B;**ビジネスオーナー**&#x200B;のメンバーまたは&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持っている必要があります。
 
->[!NOTE]
->
->`The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.` のようなエラーが表示された場合は、クライアント証明書を証明書チェーンに含めた可能性があります。チェーンにクライアント証明書が含まれていないことを確認し、もう一度お試しください。
-
 ## 証明書エラー {#certificate-errors}
 
 証明書が正しくインストールされていないか、Cloud Manager の要件を満たしていない場合は、特定のエラーが発生する場合があります。
+
+### 適切な行フォーマットの確保 {#line-formatting}
+
+**Certificate**、**Private key**、および **Certificate chain** の値を貼り付ける場合、新しい行は BEGIN CERTIFICATE の後、および END CERTIFICATE の前にする必要があります。 つまり、貼り付けた値は、次のように構築する必要があります。
+
+* `-----BEGIN CERTIFICATE-----` は独自の行に表示する必要があります。
+* `-----END CERTIFICATE-----` は独自の行に表示する必要があります。
+* 証明書のコンテンツは、`-----BEGIN CERTIFICATE-----` から `-----END CERTIFICATE-----` の間に、1 つの長い文字列 **改行なし** として独立して表示する必要があります。
+
+### クライアント証明書の削除 {#client-certificates}
+
+証明書を追加する際に、次のようなエラーが表示される場合：
+
+```text
+The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
+```
+
+クライアント証明書を証明書チェーンに含めた可能性があります。 チェーンにクライアント証明書が含まれていないことを確認し、もう一度お試しください。
 
 ### 証明書ポリシー {#certificate-policy}
 
