@@ -4,10 +4,10 @@ description: AEM as a Cloud Service の Cloud Manager 2024.7.0 のリリース�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: a5cd55bcdc6044dd8db26f009b955216cda5daee
+source-git-commit: 12e19fe771c0b70ec471949944141f4d6858cbfd
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 58%
+source-wordcount: '633'
+ht-degree: 62%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 58%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud ServiceのCloud Manager リリース 2024.7.0 のリリース日は 2024 年 7 月 18 日（PT）です。 次回のリリースは 2024 年 8 月 8 日（PT）に予定されています。
+AEM as a Cloud ServiceのCloud Manager リリース 2024.7.0 のリリース日は 2024 年 7 月 18 日（PT）です。 次回のリリースは 2024年8月8日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* コミット時にパイプラインを開始するための [ 実稼動パイプライン ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) および [ 実稼動以外のパイプライン ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)トリガー&#x200B;**Git の変更時** が [ プライベートリポジトリ ](/help/implementing/cloud-manager/managing-code/private-repositories.md) で使用できるようになりました。
+* コミット時に[実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)と[実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)がパイプラインを開始するための **Git の変更時**&#x200B;をトリガーし、[プライベートリポジトリ](/help/implementing/cloud-manager/managing-code/private-repositories.md)で使用できるようになりました。
    * これは、8 月中旬までに完了し、段階的にロールアウトされます。
 * [Adobeが管理する DV 証明書を追加する場合 ](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) ドメインごとに証明書を作成する代わりに、複数のドメインに対応する 1 つの証明書を追加できるようになりました。
 * [ 追加の公開地域 ](/help/operations/additional-publish-regions.md) を持たないソリューションも、プログラムに Sites またはForms ソリューションが少なくとも 1 つ適用されている限り、プログラムに追加できるようになりました。
@@ -39,6 +39,7 @@ AEM as a Cloud ServiceのCloud Manager リリース 2024.7.0 のリリース日�
       * Lighthouse の生のレポートリンクが、スキャンスナップショットの詳細パネルで直接、より直感的に表示されるようになりました。
       * Lighthouse のレコメンデーションセクションが強化されました。
    * Lighthouse バージョン 12.0.0 に従ってPWA指標が削除され、この指標が削除されました。
+* [AEM プロジェクトアーキタイプ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) が [ バージョン 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49) に更新されました。
 
 ## 早期導入プログラム {#early-adoption}
 
