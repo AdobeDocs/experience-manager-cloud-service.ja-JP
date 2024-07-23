@@ -5,9 +5,9 @@ exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 feature: Operations
 role: Admin
 source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '663'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ AEM Sites で設定されたプログラムでは、追加の公開地域のラ�
 
 >[!NOTE]
 >
->* この機能は、Sites ソリューションとForms ソリューションで使用できます。
->* この機能は [ サンドボックスプログラム ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) には適用できません。
->* この機能を使用するには、プログラムをAEM リリースバージョン 12142 以降に更新する必要があります。
+>* この機能は、Sites ソリューションと Forms ソリューションで使用できます。
+>* この機能は、[サンドボックスプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)には適用できません。
+>* この機能では、プログラムを AEM リリースバージョン 12142 以降に更新する必要があります。
 
 ## ユースケース {#use-cases}
 
@@ -60,9 +60,9 @@ AEM Sites で設定されたプログラムでは、追加の公開地域のラ�
 
 追加の公開地域の使用を検討する場合は、次の制限事項に注意してください。
 
-* 追加の公開地域は、AEM SitesまたはAEM Formsにのみ追加できます。
-   * 追加の公開地域は、他のAEM ソリューションや、同じプログラムにデプロイされた関連機能（AEM AssetsやAdobe Learning Managerなど）には広がりません。
-   * ただし、これらのソリューションは、少なくとも 1 つの Sites ソリューションまたはForms ソリューションが適用されている限り、プログラムに追加できます。
+* 追加の公開地域は、AEM Sites または AEM Forms にのみ追加できます。
+   * 追加の公開地域は、同じプログラムでデプロイされる他の AEM ソリューションまたは関連機能（AEM Assets や Adobe Learning Manager など）には拡張されません。
+   * ただし、これらのソリューションは、1 つ以上の Sites ソリューションまたは Forms ソリューションが適用されている限り、プログラムに追加できます。
 * 追加の地域は、関連する使用資格がテナントで使用可能かつ未使用の場合にのみ追加できます。
 * 個々の環境には、最大で 3 つの追加の公開地域を追加できます。
 * 追加の地域は、実稼動プログラムでのみ利用できます。この機能は、サンドボックスプログラムでは使用できません。

@@ -5,9 +5,9 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
 source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2797'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -561,9 +561,9 @@ Cloud Services の AEM as a Cloud Service のログにアクセスするには�
 
 ### 追加の公開地域のログ {#logs-for-additional-publish-regions}
 
-特定の環境で追加の公開リージョンが有効になっている場合、前述のように、各リージョンのログはCloud Managerからダウンロードできます。
+特定の環境で追加の公開地域が有効になっている場合、前述のように、各地域のログを Cloud Manager からダウンロードできます。
 
-追加の公開地域のAEM ログと Dispatcher ログは、環境 ID の後の最初の 3 文字で地域を示します。例えば、以下のサンプルでは **nld2** となります。これは、オランダにある追加のAEM パブリッシュインスタンスを参照します。
+追加の公開地域の AEM ログと Dispatcher ログは、次に示すように、環境 ID の後の最初の 3 文字で地域を指定します。以下のサンプルの **nld2** では、オランダにある追加の AEM パブリッシュインスタンスを参照しています。
 
 ```
 cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"

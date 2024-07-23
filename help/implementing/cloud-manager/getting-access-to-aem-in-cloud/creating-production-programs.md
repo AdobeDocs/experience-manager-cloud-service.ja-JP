@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1040'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 93%
 
 必要な権限がある場合は、「**SLA**」タブは、**実稼動用に設定**&#x200B;ダイアログで 2 番目か 3 番目のタブとして表示されます。
 
-AEM SitesとFormsは、標準の 99.9% のサービスレベル契約（SLA）を提供します。 **99.99% の SLA** オプションにより、Sites やFormsの実稼動環境の最小稼動率は 99.99% になります。
+AEM Sites および Forms は、標準の 99.9％のサービスレベル契約（SLA）を提供しています。「**99.99％のサービスレベル契約**」オプションを使用すると、Sites や Forms の実稼動環境で 99.99％の最小稼動時間の割合が有効になります。
 
 99.99％の SLA には、可用性の向上や待ち時間の短縮を含むメリットがあり、プログラムの実稼動環境に[追加の公開地域](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)を適用する必要があります。
 
@@ -105,8 +105,8 @@ AEM SitesとFormsは、標準の 99.9% のサービスレベル契約（SLA）�
 * 99.99％の SLA とレポートをアクティベートするには、[実稼動環境／ステージ環境](/help/implementing/cloud-manager/manage-environments.md#adding-environments)が作成され、1 つ以上の追加の公開地域が実稼動環境／ステージ環境に適用されている必要があります。
    * [高度なネットワーク](/help/security/configuring-advanced-networking.md)を使用している場合は、地域に障害が発生した場合でも接続を維持するために、[新しい環境への複数の公開地域の追加](/help/implementing/cloud-manager/manage-environments.md#adding-regions)ドキュメントで推奨事項を必ず確認してください。
 * 99.99％の SLA プログラムに 1 つ以上の追加の公開地域が維持する必要があります。ユーザーは、99.99％の SLA プログラムから最後の追加の公開地域を削除することは許可されていません。
-* 99.99% SLA は、Sites またはForms ソリューションが有効になっている実稼動プログラムでサポートされています。
-* 99.99% の SLA をアクティベート（またはプログラム編集時にアクティベートを解除 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) するには、[ フルスタックパイプライン）を実行する必要があります。
+* Sites または Forms ソリューションが有効になっている実稼動プログラムでは、99.99％の SLA がサポートされます。
+* 99.99％の SLA をアクティベートする（または、プログラム編集時にアクティベート解除する）には、[フルスタックパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)を実行する必要があります。
 
 ## プログラムにアクセスする {#accessing}
 

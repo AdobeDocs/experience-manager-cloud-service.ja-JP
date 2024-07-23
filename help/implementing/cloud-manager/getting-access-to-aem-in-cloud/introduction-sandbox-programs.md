@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '488'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -48,15 +48,15 @@ ht-degree: 92%
 
 ### カスタムドメインまたは IP許可リストなし {#ip-allow}
 
-[ カスタムドメイン ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) および [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) は、サンドボックスプログラムでは使用できません。
+[カスタムドメイン](/help/implementing/cloud-manager/custom-domain-names/introduction.md)と [IP 許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)は、サンドボックスプログラムでは使用できません。
 
-### その他のPublish リージョンはありません {#additional-publish-regions}
+### 追加の公開地域なし {#additional-publish-regions}
 
-[ 追加の公開地域 ](/help/operations/additional-publish-regions.md) は、サンドボックスプログラムでは使用できません。
+[追加の公開地域](/help/operations/additional-publish-regions.md)は、サンドボックスプログラムでは使用できません。
 
-### 99.99% SLA なし {#999-sla}
+### 99.99％ SLA なし {#999-sla}
 
-[99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) は、サンドボックスプログラムには適用されません。
+[99.99％ SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) は、サンドボックスプログラムには適用されません。
 
 ### 高度なネットワークなし {#advanced-networking}
 
