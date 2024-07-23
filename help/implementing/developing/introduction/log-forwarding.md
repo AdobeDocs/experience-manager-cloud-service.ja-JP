@@ -4,9 +4,9 @@ description: AEM as a Cloud Serviceでの Splunk およびその他のログベ�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4116f63c4a19b90849e4b55f0c10409530be7d3e
+source-git-commit: cb4299be4681b24852a7e991c123814d31f83cad
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1349'
 ht-degree: 1%
 
 ---
@@ -109,7 +109,7 @@ AEMと Apache/Dispatcherのログを、専用のエグレス IP などのAEMの�
             enabled: false
    ```
 
-1. RDE 以外の環境タイプ（現在サポートされていない）の場合は、Cloud Managerでターゲット設定のデプロイメント設定パイプラインを作成します。
+1. RDE 以外の環境タイプ（現在サポートされていない環境）の場合は、ターゲット設定パイプラインをCloud Managerで作成します。フルスタックパイプラインと web 階層設定パイプラインでは、設定ファイルをデプロイしません。
 
    * [実稼動パイプラインの設定を参照してください](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)。
    * [実稼動以外のパイプラインの設定を参照してください](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
@@ -254,10 +254,15 @@ data:
   https:
     default:
       enabled: true
-      url: "https://example.com/aem_logs/aem"
+      url: "https://example.com:8443/aem_logs/aem"
       authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
+
+考慮事項：
+
+* URL 文字列には **https://** を含める必要があります。含めない場合、検証が失敗します。 URL 文字列にポートが含まれていない場合、ポート 443 （デフォルトの HTTPS ポート）が想定されます。
+* 443 以外のポートを使用したい場合は、URL の一部として指定してください。
 
 #### HTTPS CDN ログ {#https-cdn}
 
@@ -267,8 +272,7 @@ Web リクエスト（POST）は、[ ログ記事 ](/help/implementing/developin
 
 >[!NOTE]
 >
-> 最初の CDN ログエントリが送信される前に、HTTP サーバーは、1 回限りのチャレンジ（パス ``wellknownpath`` に送信されるリクエストで ``*`` を返す必要がある）を正常に完了する必要があります。
-
+> 最初の CDN ログエントリが送信される前に、HTTP サーバーは、1 回限りのチャレンジを正常に完了する必要があります。つまり、パスに送信され ``/.well-known/fastly/logging/challenge`` リクエストは、本文にアスタリスクの ``*`` と 200 個のステータスコードで応答する必要があります。
 
 #### HTTPS AEM ログ {#https-aem}
 
