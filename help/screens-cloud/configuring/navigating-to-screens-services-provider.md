@@ -4,10 +4,10 @@ description: ここでは、Screens サービスプロバイダーへの移動�
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: 093cd62f282bd9842ad74124bb9bd4d5a33ef1c5
+source-git-commit: 5452a02ed20d70c09728b3e34f248c7d37fc4668
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 63%
+source-wordcount: '383'
+ht-degree: 71%
 
 ---
 
@@ -48,39 +48,41 @@ Screens サービスプロバイダーを設定するには、次の手順に従
 
 1. 「**保存**」をクリックして、Screens コンテンツプロバイダーに接続します。
 
-1. Cloud Managerの IPAEM機能により信頼できる IP アドレスのみにアクセスを許可するように許可リストに加える パブリッシュインスタンスを設定した場合、次に示すように、設定ダイアログでキー値を持つヘッダーを設定する必要があります。
+1. Cloud Managerの IPAEM機能により信頼できる IP アドレスのみにアクセスを許可するように許可リストに加える パブリッシュインスタンスを設定している場合、次に示すように、設定ダイアログでキー値を持つヘッダーを設定する必要があります。
 許可リストへの登録が必要な IP は、設定ファイルに移動し、Cloud Manager設定から [ 適用解除 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) する必要もあります。
 
-   ![ 画像 ](/help/screens-cloud/assets/configure/configure-screens20.png)
+   ![ 画像 ](/help/screens-cloud/assets/configure/configure-screens20b.png)
 AEM CDN 設定でも同じキーを設定する必要があります。  ヘッダー値を直接 GITHub に配置せず、[ 秘密参照 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets) を使用することをお勧めします。
 [CDN 設定 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf) のサンプルを以下に示します。
-kind: &quot;CDN&quot;
-バージョン : &quot;1&quot;
-メタデータ：
-envTypes:[&quot;dev&quot;、&quot;stage&quot;、&quot;prod&quot;]
-データ：
-trafficFilter:
-ルール：
- – 名前：&quot;block-request-from-not-allowed-ips&quot;
-日時：
-allOf:
-- reqProperty: clientIp
-notIn: [&quot;101.41.112.0/24&quot;]
-reqProperty：層
-次に等しい：公開
-アクション : ブロック
- – 名前：「allow-requests-with-header」
-日時：
-allOf:
-- reqProperty：層
-次に等しい：公開
-- reqProperty: path
-次に等しい：/screens/channels.json
-許可リストに加える - reqHeader: x-screens-key
-次に等しい：$\
-   {CDN_HEADER_KEY}
-アクション :
-タイプ：許可
+
+   ```kind: "CDN"
+       version: "1"
+       metadata:
+         envTypes: ["dev", "stage", "prod"]
+       data:
+         trafficFilters:
+           rules:
+             - name: "block-request-from-not-allowed-ips"
+               when:
+                 allOf:
+                   - reqProperty: clientIp
+                     notIn: ["101.41.112.0/24"]
+                    reqProperty: tier
+                     equals: publish
+               action: block
+             - name: "allow-requests-with-header"
+               when:
+                 allOf:
+                   - reqProperty: tier
+                     equals: publish
+                   - reqProperty: path
+                     equals: /screens/channels.json
+                   - reqHeader: x-screens-allowlist-key
+                     equals: $\
+       {CDN_HEADER_KEY}
+               action:
+                 type: allow
+   ```
 
 1. 左側のナビゲーションバーから「**チャネル**」を選択し、「**コンテンツプロバイダーで開く**」をクリックします。
 
