@@ -1,18 +1,18 @@
 ---
-title: Edge Delivery Services 向けのコンテンツのオーサリング
+title: Edge Delivery Services向け WYSIWYG コンテンツオーサリング
 description: コンテンツのオーサリングと Edge Delivery Services を連携する方法、および Edge Delivery Services で AEM コンテンツをオーサリングする方法について説明します。
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: f0cb108c620a31c4f8a48f1d2530860ca01b06c3
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 85%
+source-wordcount: '448'
+ht-degree: 69%
 
 ---
 
 
-# Edge Delivery Services 向けのコンテンツのオーサリング {#authoring-edge}
+# Edge Delivery Services向け WYSIWYG コンテンツオーサリング {#authoring-edge}
 
 Edge Delivery Services を使用すると、オーサリングが簡単、迅速、柔軟に行えます。Edge Delivery Services のコンテンツを作成する方法は 2 つあります。
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service で Edge Delivery Services を使用する場合、作成
 
 ![Edge Delivery Servicesでの WYSIWYG オーサリングの仕組み ](assets/how-aem-edge-works.png)
 
-1. [WYSIWYG オーサリング環境 ](/help/sites-cloud/authoring/quick-start.md) は、新しいページ、エクスペリエンスフラグメント、コンテンツフラグメントなどのコンテンツ管理に使用されます。
+1. [AEM Sites環境 ](/help/sites-cloud/authoring/quick-start.md) は、新しいページ、エクスペリエンスフラグメント、コンテンツフラグメントなどのコンテンツ管理に使用します。
    * AEM のすべての機能（ワークフロー、MSM、翻訳、起動など）を使用できます。
 1. [ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md)は、AEM で管理されるコンテンツの作成に使用されます。
    * ユニバーサルエディターには、コンテンツオーサリング用の最新の UI が用意されています。
@@ -52,9 +52,8 @@ AEM as a Cloud Service で Edge Delivery Services を使用する場合、作成
 
 AEMとEdge Delivery Servicesでオーサリングを行う独自のプロジェクトを開始する方法については、[Edge Delivery Services版 WYSIWYG オーサリングの開発者向けガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) を参照してください。
 
-## ドキュメントベースのオーサリング  {#document-based}
+## その他のオーサリング方法  {#authoring-methods}
 
-ドキュメントベースのオーサリングを使用する場合、Microsoft Word のドキュメントや Google Docs のドキュメントなどの様々なソースを扱うことができます。これらのソースからのドキュメントは、web サイト上のページになります。見出し、リスト、画像、フォント要素、ビデオはすべて、初期ソースから web サイトに転送できます。SEO 用にメタデータを追加したり、ブロックを使用して構造化コンテンツを操作したり、機能を追加したりできます。
+WYSIWYG オーサリングは、コンテンツ作成者向けの強力で直感的なツールです。 ただし、オーサリングには様々なユースケースがあるので、AEMには追加のオーサリングソリューションが用意されています。
 
-ドキュメントベースのオーサリングについて詳しくは、[Edge Delivery Services ドキュメントに記載されているこのドキュメント](/help/edge/docs/authoring.md)を参照してください。
-
+ドキュメントベースのオーサリングやヘッドレスなど、AEMが提供するオーサリングソリューションについて詳しくは、[ オーサリング方法の選択 ](/help/edge/authoring-methods.md) を参照してください。
