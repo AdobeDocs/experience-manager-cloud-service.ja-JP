@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2814a61976d1815e0f0deff2e35ccad4731cfb09
+source-git-commit: 11624bc35020247494e3ae66c9601c1da505c8bf
 workflow-type: tm+mt
-source-wordcount: '5160'
-ht-degree: 100%
+source-wordcount: '5265'
+ht-degree: 97%
 
 ---
 
@@ -692,13 +692,21 @@ ht-degree: 100%
             + [アダプティブフォームでの Turnstile の使用](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [アダプティブフォームにカスタムエラーハンドラーの追加](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [コアコンポーネントに基づくアダプティブフォームのロケールの追加](/help/forms/supporting-new-language-localization-core-components.md)
-            + [カスタム関数の作成と使用](/help/forms/create-and-use-custom-functions.md)
-            + [コアコンポーネントに基づくアダプティブフォームへのルールの追加](/help/forms/rule-editor-core-components.md)
             + [アダプティブフォームの JSON スキーマのデザイン（コアコンポーネント）](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [アダプティブフォームへのバージョン管理、コメント、注釈の追加](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [アダプティブフォームの比較](/help/forms/compare-forms.md)
             + [移行ユーティリティツールを使用した基盤コンポーネントベースのアダプティブフォームからコアコンポーネントベースのフォームへの変換](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [アダプティブフォームのドラフトとしての保存](/help/forms/save-core-component-based-form-as-draft.md)
+            + コアコンポーネントに基づくアダプティブFormsのルールエディターの概要 {#rule-editor-core-components}
+               + [コアコンポーネントに基づくアダプティブFormsのルールエディターの概要](/help/forms/rule-editor-core-components.md)
+               + [コアコンポーネントに基づくアダプティブFormsのルールエディターユーザーインターフェイス](/help/forms/rule-editor-core-components-user-interface.md)
+               + [基盤ルールエディターとコアコンポーネントルールエディターの違い](/help/forms/rule-editor-core-components-difference-tables.md)
+               + [コアコンポーネントに基づくアダプティブフォームのルールエディターで使用できる演算子とイベントのタイプ](/help/forms/rule-editor-core-components-events-operators.md)
+               + [コアコンポーネントに基づくアダプティブフォームのルールエディターの例](/help/forms/rule-editor-core-components-usecases.md)
+            + コアコンポーネントに基づくアダプティブFormsのカスタム関数の概要 {#create-and-use-custom-function-core-component}
+               + [コアコンポーネントに基づくアダプティブFormsのカスタム関数の概要](/help/forms/create-and-use-custom-functions.md)
+               + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成と使用](/help/forms/custom-function-core-component-create-function.md)
+               + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の例](/help/forms/custom-function-core-components-use-cases.md)
       + 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
          + PDF フォームのアダプティブフォームへの変換 {#afcs}
             + [自動フォーム変換サービスの概要](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja)
