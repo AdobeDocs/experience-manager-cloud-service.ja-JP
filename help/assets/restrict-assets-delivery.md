@@ -2,10 +2,11 @@
 title: Experience Managerでのアセットの配信を制限
 description: ' [!DNL Experience Manager] でアセット配信を制限する方法を説明します。'
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
+source-git-commit: 16b313a4fb79f915613044d12d29e618209113ec
 workflow-type: tm+mt
 source-wordcount: '1125'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -19,7 +20,7 @@ Experience Managerの中央アセットガバナンスを使用すると、DAM �
 
 ## IMS トークンを使用した制限付き配信 {#restrict-delivery-ims-token}
 
-Experience Managerとして、IMS による配信制限には、次の 2 つの重要な段階が含まれます。
+Experience Manager Assetsでは、IMS を介した配信制限には、次の 2 つの重要な段階が含まれます。
 
 * オーサリング
 * 配信
@@ -43,7 +44,7 @@ Experience Managerとして、IMS による配信制限には、次の 2 つの�
       1. **[!UICONTROL プロパティにマッピング]** を _に更新します。/jcr:content/metadata/dam:roles_ です。
 
 1. アセットの役割メタデータに追加する IMS グループを取得します。 IMS グループを取得するには、次の手順に従います。
-   1. https://adminconsole.adobe.com/でログインします。
+   1. `https://adminconsole.adobe.com/.` でログイン
    1. それぞれの組織に移動し、**[!UICONTROL ユーザーグループ]** に移動します。
    1. 追加する **[!UICONTROL ユーザーグループ]** を選択し、URL から **[!UICONTROL orgID]** と **[!UICONTROL userGroupID]** を抽出するか、`{orgID}@AdobeOrg:{usergroupID}` などの組織 ID を使用します。
 
@@ -110,7 +111,7 @@ AEM オーサーインスタンスやアセットセレクターからリクエ�
 
 #### Publish インスタンスのカスタム ID プロバイダーの配信 {#delivery-custom-identity-provider}
 
-Publishまたはプレビューインスタンスで設定されたカスタム ID プロバイダーの場合、セットアッププロセス中に、属性内の保護されたアセットへのアクセス権を持つ必要があ `groupMembership` グループを指定できます。 [SAML 統合 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) を介してカスタム ID プロバイダーにログオンすると、`groupMembership` 属性が読み取られ、Cookie が作成するために使用されます。この Cookie は、認証用のすべてのリクエストで送信されます。AEM オーサーまたはアセットセレクターからのリクエストの場合は IMS トークンと同様です。
+Publishまたはプレビューインスタンスで設定されたカスタム ID プロバイダーの場合、セットアッププロセス中に、属性内の保護されたアセットへのアクセス権を持つ必要があ `groupMembership` グループを指定できます。 [SAML 統合 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) を介してカスタム ID プロバイダーにログオンすると、`groupMembership` 属性が読み取られ、Cookie が作成するために使用されます。この Cookie は、認証用のすべてのリクエストで送信されます。AEM オーサーまたはアセットセレクターからのリクエストの場合は IMS トークンと同様です。
 
 セキュリティで保護されたアセットがページで使用可能で、アセットをレンダリングするためのリクエストが配信 URL に対して行われると、AEMは cookie または IMS トークンに存在するロールを確認し、アセットのオーサリング中に適用される `dam:roles property` と照合します。 一致する場合は、アセットが表示されます。
 
