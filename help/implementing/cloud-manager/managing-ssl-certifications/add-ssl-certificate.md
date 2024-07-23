@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 07696086644d52199bada102e9aee163d868c9c0
+source-git-commit: 83c9c6a974b427317aa2f83a3092d0775aac1d53
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 86%
+source-wordcount: '598'
+ht-degree: 95%
 
 ---
 
@@ -63,14 +63,6 @@ Cloud Manager を使用して証明書を追加するには、次の手順に従
 ## 証明書エラー {#certificate-errors}
 
 証明書が正しくインストールされていないか、Cloud Manager の要件を満たしていない場合は、特定のエラーが発生する場合があります。
-
-### 適切な行フォーマットの確保 {#line-formatting}
-
-**Certificate**、**Private key**、および **Certificate chain** の値を貼り付ける場合、新しい行は BEGIN CERTIFICATE の後、および END CERTIFICATE の前にする必要があります。 つまり、貼り付けた値は、次のように構築する必要があります。
-
-* `-----BEGIN CERTIFICATE-----` は独自の行に表示する必要があります。
-* `-----END CERTIFICATE-----` は独自の行に表示する必要があります。
-* 証明書のコンテンツは、`-----BEGIN CERTIFICATE-----` から `-----END CERTIFICATE-----` の間に、1 つの長い文字列 **改行なし** として独立して表示する必要があります。
 
 ### クライアント証明書の削除 {#client-certificates}
 
