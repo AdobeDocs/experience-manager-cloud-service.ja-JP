@@ -5,12 +5,13 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 83c9c6a974b427317aa2f83a3092d0775aac1d53
+source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 95%
+source-wordcount: '664'
+ht-degree: 84%
 
 ---
+
 
 # SSL 証明書の追加 {#adding-an-ssl-certificate}
 
@@ -18,7 +19,7 @@ Cloud Manager のセルフサービスツールを使用して独自の SSL 証�
 
 >[!TIP]
 >
->証明書のプロビジョニングには数日かかる場合があります。アドビでは、証明書を事前に適切にプロビジョニングすることをお勧めします。
+>証明書のプロビジョニングには数日かかる場合があります。そのためAdobeでは、期限や運用開始日に先立って証明書を適切にプロビジョニングすることをお勧めします。
 
 ## 証明書の要件 {#certificate-requirements}
 
@@ -42,7 +43,8 @@ Cloud Manager を使用して証明書を追加するには、次の手順に従
 
    * 「**証明書名**」に証明書の名前を入力します。
       * これは情報提供だけを目的とし、証明書を簡単に参照するのに役立つ任意の名前を指定できます。
-   * **証明書**、**秘密鍵**、**証明書チェーン**&#x200B;の値をそれぞれのフィールドに貼り付けます。3 つのフィールドはすべて必須です。
+   * **証明書**、**秘密鍵**、**証明書チェーン**&#x200B;の値をそれぞれのフィールドに貼り付けます。
+      * 3 つのフィールドはすべて必須です。
 
    ![SSL 証明書を追加ダイアログ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -63,6 +65,32 @@ Cloud Manager を使用して証明書を追加するには、次の手順に従
 ## 証明書エラー {#certificate-errors}
 
 証明書が正しくインストールされていないか、Cloud Manager の要件を満たしていない場合は、特定のエラーが発生する場合があります。
+
+### 正しい証明書の順序 {#correct-certificate-order}
+
+証明書のデプロイに失敗する原因として最もよくあるのは、中間証明書またはチェーン証明書の順序が正しくないことです。
+
+中間証明書ファイルの末尾は、ルート証明書またはルートに最も近い証明書である必要があります。これらは、`main/server` 証明書からルートへ降順である必要があります。
+
+中間ファイルの順序は、次のコマンドを使用して決定できます。
+
+```shell
+openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
+```
+
+秘密鍵と `main/server` 証明書が一致することは、次のコマンドを使用して確認できます。
+
+```shell
+openssl x509 -noout -modulus -in certificate.pem | openssl md5
+```
+
+```shell
+openssl rsa -noout -modulus -in ssl.key | openssl md5
+```
+
+>[!NOTE]
+>
+>これらの 2 つのコマンドの出力は、完全に同じである必要があります。`main/server` 証明書と一致する秘密鍵が見つからない場合は、新しい CSR を生成するか、更新された証明書を SSL ベンダーに要求して、証明書を再入力する必要があります。
 
 ### クライアント証明書の削除 {#client-certificates}
 
@@ -124,32 +152,13 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
 
-### 正しい証明書の順序 {#correct-certificate-order}
-
-証明書のデプロイに失敗する原因として最もよくあるのは、中間証明書またはチェーン証明書の順序が正しくないことです。
-
-中間証明書ファイルの末尾は、ルート証明書またはルートに最も近い証明書である必要があります。これらは、`main/server` 証明書からルートへ降順である必要があります。
-
-中間ファイルの順序は、次のコマンドを使用して決定できます。
-
-```shell
-openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
-```
-
-秘密鍵と `main/server` 証明書が一致することは、次のコマンドを使用して確認できます。
-
-```shell
-openssl x509 -noout -modulus -in certificate.pem | openssl md5
-```
-
-```shell
-openssl rsa -noout -modulus -in ssl.key | openssl md5
-```
-
->[!NOTE]
->
->これらの 2 つのコマンドの出力は、完全に同じである必要があります。`main/server` 証明書と一致する秘密鍵が見つからない場合は、新しい CSR を生成するか、更新された証明書を SSL ベンダーに要求して、証明書を再入力する必要があります。
-
 ### 証明書の有効期限 {#certificate-validity-dates}
 
 Cloud Manager で想定している SSL 証明書の有効期間は現在の日付から少なくとも 90 日間です。証明書チェーンの有効期限を確認します。
+
+## 次の手順 {#next-steps}
+
+これで完了です。これで、プロジェクトの SSL 証明書が機能するようになりました。 これは、多くの場合、カスタムドメイン名を設定するための最初の手順です。
+
+* カスタムドメイン名の設定を続行するには、[ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) ドキュメントを参照してください。
+* Cloud Managerでの SSL 証明書の更新と管理について詳しくは、[SSL 証明書の管理 ](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) のドキュメントを参照してください。

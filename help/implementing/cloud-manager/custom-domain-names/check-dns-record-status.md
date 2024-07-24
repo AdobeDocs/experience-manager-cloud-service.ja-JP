@@ -5,16 +5,29 @@ exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 100%
+source-wordcount: '373'
+ht-degree: 62%
 
 ---
 
+
 # DNS レコードのステータスの確認 {#check-dns-record-status}
 
-Cloud Manager 内では、お使いのドメイン名が AEM as a Cloud Service の web サイトに正しく解決されているかどうかを判断できます。
+Cloud Manager を使用して、DNS 設定が正しく解決されているかどうかを判断する方法について説明します。
+
+## DNS レコードのステータス {#status}
+
+カスタムドメイン名は、DNS が正しく解決されるまで、ライブトラフィックを提供できません。 Cloud Manager 内では、お使いのドメイン名が AEM as a Cloud Service の web サイトに正しく解決されているかどうかを判断できます。
+
+## 要件 {#requirements}
+
+Cloud Managerを使用して DNS レコードのステータスを確認する前に、これらの要件を満たす必要があります。
+
+* [DNS 設定の指定 ](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) のドキュメントに従って、カスタムドメイン名の DNS 設定を既に設定している必要があります。
+
+## DNS レコードのステータスの確認方法 {#how-to}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
@@ -24,7 +37,13 @@ Cloud Manager 内では、お使いのドメイン名が AEM as a Cloud Service 
 
 1. ドメイン名の「**ステータス**」アイコンをクリックします。
 
-Cloud Manager は、ドメイン名に対して DNS 検索を実行し、次のいずれかのステータスメッセージを表示します。
+Cloud Managerはドメイン名に対して DNS 検索を実行し、それを表示します [ 現在のステータス ](#statuses)。
+
+カスタムドメイン名の初期の検証と展開が正常に完了すると、Cloud Manager は自動的に DNS 検索をトリガーします。それ以降の試行では、ステータスの横にある「**もう一度解決する**」アイコンをアクティブに選択する必要があります。
+
+## Cloud Managerの DNS ステータス {#statuses}
+
+カスタムドメインは、Cloud Managerで次のいずれかのステータスを持つことができます。
 
 * **DNS ステータスが検出されませんでした** - カスタムドメイン名が正常に検証およびデプロイされるまで、DNS ステータスは検出されません。
 
@@ -43,4 +62,6 @@ Cloud Manager は、ドメイン名に対して DNS 検索を実行し、次の�
 
    * サイトは訪問者にサービスを提供しています。
 
-カスタムドメイン名の初期の検証と展開が正常に完了すると、Cloud Manager は自動的に DNS 検索をトリガーします。それ以降の試行では、ステータスの横にある「**もう一度解決する**」アイコンをアクティブに選択する必要があります。
+## 次の手順 {#next-steps}
+
+これで完了です。Cloud Managerで使用するカスタムドメインが正常に設定されました。 Cloud Managerを使用してカスタムドメイン名を管理する方法について詳しくは、[ カスタムドメイン名の管理 ](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) のドキュメントを参照してください。

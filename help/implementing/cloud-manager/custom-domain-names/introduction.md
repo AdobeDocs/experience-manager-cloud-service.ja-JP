@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1c9924b4477d53d86bb72eda8597a02304450195
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 100%
+source-wordcount: '722'
+ht-degree: 67%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="カスタムドメイン名の追加"
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="カスタムドメイン名の表示と更新"
 
-Cloud Manager の UI では、セルフサービス方式でカスタムドメインを追加して、サイトを独自のブランド名で識別することができます。Adobe Experience Manager as a Cloud Service には、`*.adobeaemcloud.com` で終わるデフォルトのドメイン名がプロビジョニングされます。このデフォルトのドメイン名は、web サイトにカスタムドメイン名を関連付けた後でも、そのまま残ります。
+Adobe Experience Manager as a Cloud Service には、`*.adobeaemcloud.com` で終わるデフォルトのドメイン名がプロビジョニングされます。Cloud Managerの UI を使用すると、セルフサービス方式でカスタムドメインを追加して、サイトを独自のブランド名で識別することができます。 カスタムドメイン名を web サイトに関連付けた後も、デフォルトの `*.adobeaemcloud.com` ドメイン名は残ります。
 
 ## カスタムドメイン名とは {#what-are-custom-domain-names}
 
@@ -43,38 +43,41 @@ AEM as a Cloud Service にはビルトインのコンテンツ配信ネットワ
 * AEM が管理する CDN にインストールされるカスタムドメイン名（および証明書）は、Cloud Manager で管理されます。
 * 独自の CDN にインストールされているカスタムドメイン名（および証明書）は、その特定の CDN で管理されます。
 
-独自の CDN で管理するドメインは、Cloud Manager を通じてインストールする必要はありません。X-Forwarded-Host を介してAEMで使用可能になり、Dispatcher で定義された vhosts と一致します。詳しくは、[CDN ドキュメント](/help/implementing/dispatcher/cdn.md)を参照してください。
+**独自の CDN で管理するドメインは、Cloud Managerを介してインストールする必要はありません。** X-Forwarded-Host を介してAEMで使用可能になり、Dispatcherで定義された vhost と一致します。 [CDN ドキュメント ](/help/implementing/dispatcher/cdn.md) を参照してください。
 
 1 つの環境で、AEM が管理する CDN にインストールされたドメインと、独自の CDN にインストールされたドメインの両方を持つことができます。
 
 ## ワークフロー {#workflow}
 
-カスタムドメイン名を追加するには、DNS サービスと Cloud Manager 間のやり取りが必要です。このため、カスタムドメイン名のインストール、設定、および検証には、いくつかの手順が必要です。次の表に、一般的なエラーが発生した場合の対処方法など、必要な手順の概要を示します。
+カスタムドメイン名を追加するには、DNS サービスと Cloud Manager 間のやり取りが必要です。このため、カスタムドメイン名のインストール、設定および検証には、いくつかの手順が必要です。 次の表に、必要な手順の概要を示します。これには、これらの手順を完了するためのドキュメントリソースへのリンクも含まれます。
 
-| 手順 | 説明 | 担当 | 詳細情報 |
-|--- |--- |--- |---|
-| 1 | Cloud Manager への SSL 証明書の追加 | 顧客 | [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
-| 2 | TXT レコードを追加してドメインを検証 | 顧客 | [TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
-| 3 | ドメイン検証ステータスを確認 | 顧客 | [ドメイン名ステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 3a | ドメインの検証が「`Domain Verification Failure`」ステータスで失敗した場合 | 顧客 | [ドメイン名ステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 3b | ドメインの検証が「`Verified, Deployment Failed`」ステータスで失敗した場合、アドビにお問い合わせください | アドビカスタマーケア | [ドメイン名ステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 4 | AEM as a Cloud Service を指す DNS CNAME または APEX レコードを追加して、DNS 設定を構成します | 顧客 | [DNS 設定の指定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
-| 5 | DNS レコードのステータスを確認 | 顧客 | [DNS レコードのステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
-| 5a | DNS レコードのステータスが次の条件で失敗した場合：`DNS status not detected` | 顧客 | [DNS レコードのステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
-| 5b | DNS レコードのステータスが次の条件で失敗した場合：`DNS resolves incorrectly` | 顧客 | [DNS レコードのステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+| 手順 | 説明 | ドキュメント化 |
+|---|---|---|
+| 1 | Cloud Manager への SSL 証明書の追加 | [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 2 | Cloud Managerへのカスタムドメインの追加 | [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
+| 3 | TXT レコードを追加してドメインを検証 | [TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
+| 4 | ドメイン検証ステータスを確認 | [ドメイン名ステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 5 | AEM as a Cloud Service を指す DNS CNAME または APEX レコードを追加して、DNS 設定を構成します | [DNS 設定の指定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
+| 6 | DNS レコードのステータスを確認 | [DNS レコードのステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >
->通常、AEM as a Cloud Service でのカスタムドメイン名の設定手順は簡単です。 ただし、ドメインのデリゲーションに関する問題が発生することがあり、その場合は解決に 1～2 営業日かかる可能性があります。そのため、運用開始日の前にドメインを適切にインストールしておくことを強くお勧めします。 詳しくは、[ドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)のドキュメントを参照してください。
+>通常、AEM as a Cloud Service でのカスタムドメイン名の設定手順は簡単です。 ただし、ドメインのデリゲーションに関する問題が発生することがあり、その場合は解決に 1～2 営業日かかる可能性があります。 そのため、運用開始日の前にドメインを適切にインストールしておくことを強くお勧めします。 詳しくは、[ドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)のドキュメントを参照してください。
 
 ## 制限事項 {#limitations}
 
 AEMaaCS でカスタムドメイン名を使用する場合は、いくつかの制限があります。
 
-* Cloud Manager では、Sites プログラムの公開サービスおよびプレビューサービスの両方でカスタムドメイン名がサポートされています。オーサーサービスでは、カスタムドメインがサポートされていません。
+* Cloud Managerでは、Sites プログラムの公開サービスおよびプレビューサービスでのみカスタムドメイン名がサポートされています。
+   * オーサーサービスでは、カスタムドメインがサポートされていません。
 * 各 Cloud Manager 環境は、1 つの環境につき最大 500 個のカスタムドメインをホストできます。
 * 現在実行中のパイプラインが環境に接続されている間は、その環境にドメイン名を追加することはできません。
 * 同じドメイン名を複数の環境で使用することはできません。
 * 一度に追加できるドメイン名は 1 つだけです。
 * AEM as a Cloud Service では、`*.example.com` のようなワイルドカードドメインをサポートしていません。
-* カスタムドメイン名を追加する前に、カスタムドメイン名を含んだ有効な SSL 証明書（ワイルドカード証明書が有効）をプログラムにインストールする必要があります。詳しくは、[SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)を参照してください。
+* カスタムドメイン名を追加する前に、カスタムドメイン名を含んだ有効な SSL 証明書（ワイルドカード証明書が有効）をプログラムにインストールする必要があります。
+
+## 始めましょう。 {#get-started}
+
+* [SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を行って、プロジェクトの新しいカスタムドメイン名の設定を開始します。
+* [ カスタムドメイン名の管理 ](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) ドキュメントを確認して、既存のドメイン名を管理します。

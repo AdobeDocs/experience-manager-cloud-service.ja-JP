@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a95da7f8cc0f16445970f13c1acad28b14daae44
+source-git-commit: 7a0e40f53eb3bb84c973ec3e28c7edcd8c847e25
 workflow-type: tm+mt
 source-wordcount: '5270'
 ht-degree: 97%
@@ -861,7 +861,7 @@ ht-degree: 97%
 + Edge 配信サービス {#edge-delivery}
    + [Edge 配信サービスの概要](/help/edge/overview.md)
    + [AEM での Edge Delivery の使用](/help/edge/using.md)
-   + [選択とオーサリングの方法](/help/edge/authoring-methods.md)
+   + [オーサリング方法の選択](/help/edge/authoring-methods.md)
    + WYSIWYG オーサリング {#wysiwyg-authoring}
       + [Edge Delivery用の WYSIWYG コンテンツオーサリング](/help/edge/wysiwyg-authoring/authoring.md)
       + [Edge 配信向けのコンテンツの公開](/help/edge/wysiwyg-authoring/publishing.md)

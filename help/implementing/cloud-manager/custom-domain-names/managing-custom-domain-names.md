@@ -5,12 +5,13 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 100%
 
 ---
+
 
 # カスタムドメイン名の管理 {#managing-custom-domain-names}
 
