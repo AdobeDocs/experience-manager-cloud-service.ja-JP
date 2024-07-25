@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 83cf953853c88c1f4b7149bc63c7f07b1e73faf3
+source-git-commit: f6b4ca55d69de3bb20e2232dbc29d1aadae2cd10
 workflow-type: tm+mt
-source-wordcount: '5283'
+source-wordcount: '5297'
 ht-degree: 99%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 99%
    + AEMaaCS 機能のリリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024年度 {#2024}
+         + [2024.6.0 のリリースノート](/help/release-notes/release-notes-cloud/2024/release-notes-2024-6-0.md)
          + [2024.5.0 のリリースノート](/help/release-notes/release-notes-cloud/2024/release-notes-2024-5-0.md)
          + [リリースノート（2024.4.0）](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
          + [2024.3.0 のリリースノート](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
@@ -686,6 +687,7 @@ ht-degree: 99%
             + [Azure Blob Storage にアダプティブフォームを送信する](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Microsoft へのアダプティブフォームの送信](/help/forms/configure-submit-action-onedrive.md)
             + [Microsoft へのアダプティブフォームの接続](/help/forms/configure-submit-action-sharepoint.md)
+            + [認証範囲を使用して、制限付きアクセスでSharePoint サイトを構成する](/help/forms/configure-sharepoint-site-limited-access.md)
             + [AEM アダプティブフォームと AEM ワークフローを統合する](/help/forms/configure-submit-action-workflow.md)
             + [アダプティブフォームの REST エンドポイント送信アクションへの送信を設定する](/help/forms/configure-submit-action-restpoint.md)
             + [アダプティブフォームのメール送信アクションの送信を設定する](/help/forms/configure-submit-action-send-email.md)

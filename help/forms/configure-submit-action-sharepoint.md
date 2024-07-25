@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 title: 「アダプティブフォームの送信アクションの設定方法」
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 5e1d08e82cafc3a8a715653727f42ce0048f2b1f
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 100%
+source-wordcount: '1117'
+ht-degree: 93%
 
 ---
 
@@ -51,7 +51,12 @@ AEM Forms を Microsoft® Sharepoint ドキュメントライブラリストレ�
 1. 「**[!UICONTROL タイトル]**」、「**[!UICONTROL クライアント ID]**」、「**[!UICONTROL クライアント秘密鍵]**」および「**[!UICONTROL OAuth URL]**」を指定します。OAuth URL のクライアント ID、クライアントの秘密鍵、テナント ID を取得する方法について詳しくは、[Microsoft® のドキュメント](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)を参照してください。
    * アプリの `Client ID` と `Client Secret` は Microsoft® Azure Portal から取得できます。
    * Microsoft® Azure Portal で、リダイレクト URI を `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html` として追加します。`[author-instance]` をオーサーインスタンスの URL に置き換えます。
-   * API 権限 `offline_access` および `Sites.Manage.All` を追加して、読み取り／書き込み権限を付与します。
+   * 読み取り/書き込み権限を付与する API 権限 `offline_access` および `Sites.Manage.All` を追加します。`Sites.Manage.All` は、Microsoft Graph API の権限範囲で、Sites の削除や変更など、SharePoint Sites のあらゆる側面を管理する機能をアプリケーションに付与します。
+
+     >[!NOTE]
+     >
+     > また、Microsoft Graph API の `Sites.Selected` 権限範囲を使用して [ 制限付きアクセスでSharePoint Sites を設定 ](/help/forms/configure-sharepoint-site-limited-access.md) することもできます。 `Sites.Selected` は、Microsoft Graph API の権限範囲で、SharePoint サイトへのさらに詳細な制限されたアクセスを可能にします。
+
    * OAuth URL `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize` を使用します。`<tenant-id>` を Microsoft® Azure Portal のアプリの `tenant-id` に置き換えます。
 
    >[!NOTE]

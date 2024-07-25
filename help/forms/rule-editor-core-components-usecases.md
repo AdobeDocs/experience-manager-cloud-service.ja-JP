@@ -4,13 +4,13 @@ description: この記事では、コアコンポーネントに基づくアダ�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: c600af3f2e866483cda2426e188dbc104b07688e
+exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
+source-git-commit: 34be2ca89433e36a68e7d8eae42c6bd9ad6e623f
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 61%
+source-wordcount: '1125'
+ht-degree: 58%
 
 ---
-
 
 # ルールエディターの様々なユースケース
 
@@ -18,9 +18,10 @@ ht-degree: 61%
 次に、ルールエディターの様々な実装について説明します。
 
 
-## 組み込み関数を使用した繰り返し可能なパネルでの複雑な計算の効率化
+## 関数を使用した繰り返し可能なパネルでの複雑な計算の合理化
 
-ルールエディターでは、繰り返し可能なパネル内のフィールドに対して直接関数（合計、最小、最大、結合など）を使用できます。 これにより、強力な自動処理が可能になり、カスタムコードを使用しなくても複雑なビジネスロジックを実装できます。
+ルールエディターでは、繰り返し可能なパネル内のフィールドに対して直接関数（合計、最小、最大、結合など）を使用できます。 また、数値配列、文字列配列、ブール配列などを受け入れる関数に、繰り返し可能なパネルフィールド値を渡すこともできます。 これにより、強力な自動処理が可能になり、カスタムコードを使用しなくても複雑なビジネスロジックを実装できます。
+
 繰り返し可能なパネルを持つフォームについて考えてみます。このパネルでは、各パネルインスタンスが、アセットの宣言済み値に関する情報を収集します。
 
 ![ 繰り返し可能なフォーム ](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
@@ -32,6 +33,10 @@ ht-degree: 61%
 アセット値を宣言するインスタンスを追加してフォームに入力すると、「`Calculate Asset Value`」ボタンは、宣言されたすべてのアセット値の合計を計算し、その結果をテキストボックスに表示 `assetvalue` ます。
 
 ![OOTB 関数での繰り返し可能なパネルフィールドのサポート ](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
+
+>[!NOTE]
+>
+> 繰り返し可能なパネルフィールドの値が配列を受け入れない関数に渡された場合、繰り返し可能なパネルの最後のインスタンスのフィールド値が関数に渡されます。
 
 これは一例に過ぎません。 使用可能な [ 関数 ](#b-form-objects-and-functions-br) を探索して、ワークフローを簡素化し、フォーム内のデータの精度を高めます。
 

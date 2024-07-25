@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+source-git-commit: 8585ec309b04e04b9a8dcaa43063369d1c9d5d24
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1174'
 ht-degree: 65%
 
 ---
@@ -91,8 +91,6 @@ ht-degree: 65%
 * ルールによって条件がチェックされ、フィールドに値を入力したときやフィールドを終了したときに直ちにアクションが実行される場合は、条件が評価されるフィールドに「条件 – アクション」構文または「When」ルールタイプのルールを記述することをお勧めします。
 * 「When」のルール内に記述した条件は、その条件が適用されるオブジェクトの値をユーザーが変更した際に評価されます。しかし、値が変更された場合にサーバーサイドでアクションをトリガーする場合（値を事前入力する場合など）は、フィールドの初期化時にアクションをトリガーする「When」ルールを記述することが推奨されます。
 * ドロップダウン、ラジオボタン、チェックボックスの各オブジェクトに対してルールを記述する場合、フォーム内のこれらのフォームオブジェクトのオプションや値はルールエディターで事前入力されます。
-
-## 次の手順
 
 ルールエディターでルールの作成および管理にユーザーインターフェイスを使用する方法については、[ コアコンポーネントに基づくアダプティブFormsのルールエディターユーザーインターフェイス ](/help/forms/rule-editor-core-components-user-interface.md) を参照してください。
 
