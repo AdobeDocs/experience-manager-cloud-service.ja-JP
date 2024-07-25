@@ -7,7 +7,7 @@ role: Admin, Developer, User
 source-git-commit: 5452a02ed20d70c09728b3e34f248c7d37fc4668
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 71%
+ht-degree: 87%
 
 ---
 
@@ -49,10 +49,10 @@ Screens サービスプロバイダーを設定するには、次の手順に従
 1. 「**保存**」をクリックして、Screens コンテンツプロバイダーに接続します。
 
 1. Cloud Managerの IPAEM機能により信頼できる IP アドレスのみにアクセスを許可するように許可リストに加える パブリッシュインスタンスを設定している場合、次に示すように、設定ダイアログでキー値を持つヘッダーを設定する必要があります。
-許可リストへの登録が必要な IP は、設定ファイルに移動し、Cloud Manager設定から [ 適用解除 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) する必要もあります。
+また、許可リストに登録する必要がある IP も設定ファイルに移動する必要があり、Cloud Manager 設定から[適用解除](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list)する必要があります。
 
-   ![ 画像 ](/help/screens-cloud/assets/configure/configure-screens20b.png)
-AEM CDN 設定でも同じキーを設定する必要があります。  ヘッダー値を直接 GITHub に配置せず、[ 秘密参照 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets) を使用することをお勧めします。
+   ![画像](/help/screens-cloud/assets/configure/configure-screens20b.png)
+AEM CDN 設定で同じキーを設定する必要があります。ヘッダー値を GitHub に直接入れず、[秘密鍵参照](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets)を使用することをお勧めします。
 [CDN 設定 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf) のサンプルを以下に示します。
 
    ```kind: "CDN"

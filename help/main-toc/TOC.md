@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 7a0e40f53eb3bb84c973ec3e28c7edcd8c847e25
 workflow-type: tm+mt
 source-wordcount: '5270'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -697,14 +697,14 @@ ht-degree: 97%
             + [アダプティブフォームの比較](/help/forms/compare-forms.md)
             + [移行ユーティリティツールを使用した基盤コンポーネントベースのアダプティブフォームからコアコンポーネントベースのフォームへの変換](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [アダプティブフォームのドラフトとしての保存](/help/forms/save-core-component-based-form-as-draft.md)
-            + コアコンポーネントに基づくアダプティブFormsのルールエディターの概要 {#rule-editor-core-components}
-               + [コアコンポーネントに基づくアダプティブFormsのルールエディターの概要](/help/forms/rule-editor-core-components.md)
-               + [コアコンポーネントに基づくアダプティブFormsのルールエディターユーザーインターフェイス](/help/forms/rule-editor-core-components-user-interface.md)
-               + [基盤ルールエディターとコアコンポーネントルールエディターの違い](/help/forms/rule-editor-core-components-difference-tables.md)
+            + コアコンポーネントに基づくアダプティブフォームのルールエディターの概要{#rule-editor-core-components}
+               + [コアコンポーネントに基づくアダプティブフォームのルールエディターの概要](/help/forms/rule-editor-core-components.md)
+               + [コアコンポーネントに基づくアダプティブフォームのルールエディターのユーザーインターフェイス](/help/forms/rule-editor-core-components-user-interface.md)
+               + [基盤ルールエディターとコアコンポーネントのルールエディターの違い](/help/forms/rule-editor-core-components-difference-tables.md)
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターで使用できる演算子とイベントのタイプ](/help/forms/rule-editor-core-components-events-operators.md)
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターの例](/help/forms/rule-editor-core-components-usecases.md)
-            + コアコンポーネントに基づくアダプティブFormsのカスタム関数の概要 {#create-and-use-custom-function-core-component}
-               + [コアコンポーネントに基づくアダプティブFormsのカスタム関数の概要](/help/forms/create-and-use-custom-functions.md)
+            + コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要{#create-and-use-custom-function-core-component}
+               + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要](/help/forms/create-and-use-custom-functions.md)
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成と使用](/help/forms/custom-function-core-component-create-function.md)
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の例](/help/forms/custom-function-core-components-use-cases.md)
       + 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}

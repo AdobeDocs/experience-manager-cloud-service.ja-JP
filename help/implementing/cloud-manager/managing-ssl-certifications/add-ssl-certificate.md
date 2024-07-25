@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 84%
+ht-degree: 88%
 
 ---
 
@@ -94,13 +94,13 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 ### クライアント証明書の削除 {#client-certificates}
 
-証明書を追加する際に、次のようなエラーが表示される場合：
+証明書を追加する際に、次のようなエラーが表示される場合があります。
 
 ```text
 The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
 ```
 
-クライアント証明書を証明書チェーンに含めた可能性があります。 チェーンにクライアント証明書が含まれていないことを確認し、もう一度お試しください。
+クライアント証明書が証明書チェーンに含まれた可能性があります。チェーンにクライアント証明書が含まれていないことを確認し、もう一度お試しください。
 
 ### 証明書ポリシー {#certificate-policy}
 

@@ -7,7 +7,7 @@ exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
 source-git-commit: a2646fa72788cb887066751efb171e92b597f4f5
 workflow-type: tm+mt
 source-wordcount: '4550'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -394,21 +394,21 @@ Admin Console を使用してサポートチケットを記録する手順は次
 
 | Property | タイプ | 必須 | デフォルト | 説明 |
 |---|---|---|---|---|
-| *rail* | ブーリアン | いいえ | False | `true` とマークされている場合、アセットセレクターは左側のパネルビューにレンダリングされます。`false` とマークされている場合、アセットセレクターはモーダルビューにレンダリングされます。 |
+| *rail* | ブール値 | いいえ | False | `true` とマークされている場合、アセットセレクターは左側のパネルビューにレンダリングされます。`false` とマークされている場合、アセットセレクターはモーダルビューにレンダリングされます。 |
 | *imsOrg* | 文字列 | はい | | [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] を組織にプロビジョニングする場合に割り当てられる Adobe Identity Management System（IMS）の ID です。`imsOrg` キーは、アクセスしようとしている組織が Adobe IMS 内にあるかどうかを認証するために必要です。 |
 | *imsToken* | 文字列 | いいえ | | 認証に使用される IMS ベアラートークンです。統合に [!DNL Adobe] アプリケーションを使用している場合、`imsToken` は必須です。 |
 | *apiKey* | 文字列 | いいえ | | AEM Discovery サービスへのアクセスに使用する API キーです。[!DNL Adobe] アプリケーション統合を使用している場合、`apiKey` は必須です。 |
 | *rootPath* | 文字列 | いいえ | /content/dam/ | アセットセレクターがアセットを表示する元のフォルダーパスです。`rootPath` はカプセル化の形式でも使用できます。例えば、次のパス `/content/dam/marketing/subfolder/` を指定すると、アセットセレクターでは親フォルダーをトラバースできず、子フォルダーのみが表示されます。 |
 | *path* | 文字列 | いいえ | | アセットセレクターがレンダリングされる際に、アセットの特定のディレクトリに移動するために使用されるパスです。 |
 | *filterSchema* | 配列 | いいえ | | フィルタープロパティの設定に使用するモデルです。これは、アセットセレクターで特定のフィルターオプションを制限する場合に便利です。 |
-| *filterFormProps* | オブジェクト | いいえ | | 検索を絞り込むために使用する必要があるフィルタープロパティを指定します。用です！ 例えば、MIME タイプがJPG、PNG、GIFなどです。 |
+| *filterFormProps* | オブジェクト | いいえ | | 検索を絞り込むために使用する必要があるフィルタープロパティを指定します。（例：MIME タイプの JPG、PNG、GIF） |
 | *selectedAssets* | 配列 `<Object>` | いいえ |                 | アセットセレクターがレンダリングされる際に、選択したアセットを指定します。アセットの ID プロパティを含むオブジェクトの配列が必要です。（例：`[{id: 'urn:234}, {id: 'urn:555'}]`）アセットは、現在のディレクトリで使用できる必要があります。別のディレクトリを使用する必要がある場合は、`path` プロパティの値も指定します。 |
 | *acvConfig* | オブジェクト | いいえ | | デフォルトを上書きするカスタム設定が含まれているオブジェクトを含む、アセットコレクション表示プロパティです。また、このプロパティは、アセットビューアのパネルビューを有効にするために `rail` プロパティと共にに使用されます。 |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | いいえ |                 | OOTB 翻訳がアプリケーションのニーズを満たさない場合は、独自のローカライズされたカスタム値を `i18nSymbols` プロップ経由で渡すことができるインターフェイスを表示できます。このインターフェイスを介して値を渡すと、提供されたデフォルトの翻訳が上書きされ、代わりに独自の翻訳が使用されます。上書きを実行するには、上書きしたい `i18nSymbols` のキーに有効な[メッセージ記述子](https://formatjs.io/docs/react-intl/api/#message-descriptor)オブジェクトを渡す必要があります。 |
 | *intl* | オブジェクト | いいえ | | アセットセレクターはデフォルトの OOTB 翻訳を提供します。`intl.locale` プロップを介して有効なロケール文字列を指定することで、翻訳言語を選択できます。（例：`intl={{ locale: "es-es" }}` </br></br>）サポートされているロケール文字列は、言語名の標準規格を表す [ISO 639 - コード](https://www.iso.org/iso-639-language-codes.html)に従います。</br></br> サポートされているロケールの一覧：英語 - &#39;en-us&#39;（デフォルト）スペイン語 - &#39;es-es&#39; ドイツ語 - &#39;de-de&#39; フランス語 - &#39;fr-fr&#39; イタリア語 - &#39;it-it&#39; 日本語 - &#39;ja-jp&#39; 韓国語 - &#39;ko-kr&#39; ポルトガル語 - &#39;pt-br&#39; 中国語（簡体字） - &#39;zh-cn&#39; 中国語（繁体字） - &#39;zh-tw&#39; |
 | *repositoryId* | 文字列 | いいえ | &#39;&#39; | アセットセレクターがコンテンツを読み込む元のリポジトリです。 |
 | *additionalAemSolutions* | `Array<string>` | いいえ | [ ] | 追加の AEM リポジトリのリストを追加できます。このプロパティで情報が指定されない場合、メディアライブラリまたは AEM Assets リポジトリのみが考慮されます。 |
-| *hideTreeNav* | ブーリアン | いいえ |  | アセットツリーのナビゲーションサイドバーを表示するか非表示にするかを指定します。このプロパティはモーダルビューでのみ使用されるので、パネルビューではこのプロパティの影響はありません。 |
+| *hideTreeNav* | ブール値 | いいえ |  | アセットツリーのナビゲーションサイドバーを表示するか非表示にするかを指定します。このプロパティはモーダルビューでのみ使用されるので、パネルビューではこのプロパティの影響はありません。 |
 | *onDrop* | 関数 | いいえ | | このプロパティで、アセットのドロップ機能を許可することができます。 |
 | *dropOptions* | `{allowList?: Object}` | いいえ | | 「allowList」を使用してドロップオプションを設定します。 |
 | *colorScheme* | 文字列 | いいえ | | アセットセレクターのテーマ（`light` または `dark`）を設定します。 |
@@ -416,17 +416,17 @@ Admin Console を使用してサポートチケットを記録する手順は次
 | *handleAssetSelection* | 関数 | いいえ | | アセットが選択または選択解除されたときに、項目の配列と一緒に呼び出されます。これは、ユーザーがアセットの選択時にアセットをリッスンする場合に役立ちます。例： <pre>handleSelection=(assets: Asset[])=> {...}</pre> 詳しくは、[選択されたアセットタイプ](#selected-asset-type)を参照してください。 |
 | *onClose* | 関数 | いいえ | | モーダルビューで `Close` ボタンが押された際に呼び出されます。これは、`modal` ビューでのみ呼び出され、`rail` ビューでは無視されます。 |
 | *onFilterSubmit* | 関数 | いいえ | | ユーザーが別のフィルター条件を変更したときに、フィルター項目と一緒に呼び出されます。 |
-| *selectionType* | 文字列 | いいえ | 独身 | 一度にアセットを `single` 選択または `multiple` 選択するための設定です。 |
+| *selectionType* | 文字列 | いいえ | シングル | 一度にアセットを `single` 選択または `multiple` 選択するための設定です。 |
 | *dragOptions.allowList* | ブール値 | いいえ | | プロパティは、選択できないアセットのドラッグを許可または拒否するために使用されます。 |
 | *aemTierType* | 文字列 | いいえ |  | 配信層、オーサー層またはその両方のアセットを表示するかを選択できます。<br><br>構文：`aemTierType:[0]: "author" 1: "delivery"` <br><br>例えば、`["author","delivery"]` の両方を使用する場合、リポジトリスイッチャーにはオーサーと配信の両方のオプションが表示されます。 |
 | *handleNavigateToAsset* | 関数 | いいえ | | アセットの選択を処理するコールバック関数です。 |
-| *noWrap* | ブーリアン | いいえ | | *noWrap* プロパティは、サイドパネルでのアセットセレクターのレンダリングに役立ちます。このプロパティを指定しない場合、デフォルトで&#x200B;*ダイアログビュー*&#x200B;がレンダリングされます。 |
+| *noWrap* | ブール値 | いいえ | | *noWrap* プロパティは、サイドパネルでのアセットセレクターのレンダリングに役立ちます。このプロパティを指定しない場合、デフォルトで&#x200B;*ダイアログビュー*&#x200B;がレンダリングされます。 |
 | *dialogSize* | 小、中、大、フルスクリーン、またはフルスクリーンのテイクオーバー | 文字列 | オプション | 指定されたオプションを使用してサイズを指定することで、レイアウトを制御できます。 |
-| *colorScheme* | 明るい、または暗い | いいえ | | このプロパティは、アセットセレクターアプリケーションのテーマを設定するために使用されます。テーマは、ライトテーマとダークテーマから選択できます。 |
+| *colorScheme* | ライトまたはダーク | いいえ | | このプロパティは、アセットセレクターアプリケーションのテーマを設定するために使用されます。テーマは、ライトテーマとダークテーマから選択できます。 |
 | *filterRepoList* | 関数 | いいえ |  | Experience Manager リポジトリを呼び出し、フィルタリングされたリポジトリのリストを返す `filterRepoList` コールバック関数を使用できます。 |
-| *getExpiryStatus* | 関数 | いいえ | | 有効期限切れのアセットのステータスが表示されます。 この関数は、指定したアセットの有効期限に基づいて `EXPIRED`、`EXPIRING_SOON` または `NOT_EXPIRED` を返します。 [ 期限切れアセットのカスタマイズ ](#customize-expired-assets) を参照してください。 |
-| *allowSelectionAndDrag* | ブーリアン | いいえ | False | 関数の値は、`true` または `false` のいずれかです。 値が `false` に設定されている場合、期限切れのアセットを選択したりキャンバスにドラッグしたりすることはできません。 |
-| *showToast* | | いいえ | | これにより、アセットセレクターで、有効期限切れのアセットに関するカスタマイズされたトーストメッセージを表示できます。 |
+| *getExpiryStatus* | 関数 | いいえ | | 有効期限切れのアセットのステータスが表示されます。関数は、指定したアセットの有効期限に基づいて、`EXPIRED`、`EXPIRING_SOON` または `NOT_EXPIRED` を返します。[有効期限切れのアセットのカスタマイズ](#customize-expired-assets)を参照してください。 |
+| *allowSelectionAndDrag* | ブール値 | いいえ | False | 関数の値は `true` または `false` のいずれかになります。値が `false` に設定されている場合、有効期限切れのアセットはキャンバス上で選択またはドラッグできません。 |
+| *showToast* | | いいえ | | これにより、アセットセレクターで、有効期限切れのアセットに対してカスタマイズされたトーストメッセージを表示できます。 |
 <!--
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
 | *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](#customize-expired-assets). |
@@ -647,9 +647,9 @@ interface SelectedAsset {
 
 <!--For a complete list of properties and detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).-->
 
-### 期限切れアセットのカスタマイズ {#customize-expired-assets}
+### 有効期限切れのアセットのカスタマイズ {#customize-expired-assets}
 
-アセットセレクターを使用すると、有効期限切れのアセットの使用を制御できます。 有効期限切れのアセットを **まもなく期限切れになる** バッジでカスタマイズできます。このバッジを使用すると、現在の日付から 30 日以内に期限切れになるアセットについて事前に知ることができます。 さらに、要件に応じてカスタマイズできます。 また、キャンバス上で期限切れのアセットの選択を許可することも、その逆も可能です。 期限切れアセットのカスタマイズは、コードスニペットを使用して様々な方法で実行できます。
+アセットセレクターを使用すると、有効期限切れのアセットの使用状況を制御できます。有効期限切れのアセットを&#x200B;**間もなく期限切れ**&#x200B;バッジでカスタマイズすると、現在の日付から 30 日以内に有効期限切れになるアセットを事前に把握するのに役立ちます。さらに、要件に応じてカスタマイズできます。また、キャンバス上で有効期限切れのアセットを選択することや、その逆を行うこともできます。有効期限切れのアセットのカスタマイズは、いくつかのコードスニペットを使用して様々な方法で実行できます。
 
 <!--{
     getExpiryStatus: function, // to control Expired/Expiring soon badges of the asset
@@ -662,9 +662,9 @@ expiryOptions: {
 }
 ```
 
-#### 期限切れアセットの選択 {#selection-of-expired-asset}
+#### 有効期限切れのアセットの選択 {#selection-of-expired-asset}
 
-期限切れのアセットの使用状況をカスタマイズして、選択可能または選択不可にすることができます。 アセットセレクターキャンバス上で期限切れのアセットをドラッグ&amp;ドロップできるようにするかどうかをカスタマイズできます。 これを行うには、以下のパラメーターを使用して、キャンバス上でアセットを選択不可にします。
+有効期限切れのアセットの使用状況をカスタマイズして、選択可能または選択不可にすることができます。アセットセレクターのキャンバス上で有効期限切れのアセットをドラッグ＆ドロップできるようにするかどうかをカスタマイズできます。これを行うには、次のパラメーターを使用して、キャンバス上でアセットを選択不可にします。
 
 ```
 expiryOptions:{
@@ -676,9 +676,9 @@ Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behav
 
 ![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)-->
 
-#### 有効期限切れアセットの期間の設定 {#set-duration-of-expired-asset}
+#### 有効期限切れのアセットの期間の設定 {#set-duration-of-expired-asset}
 
-次のコードスニペットは、今後 5 日以内に有効期限が切れるアセットの **まもなく有効期限切れ** バッジを設定するのに役立ちます。<!--The `expirationDate` property is used to set the expiration duration of an asset. Refer to the code snippet below:-->
+次のコードスニペットは、今後 5 日以内に有効期限が切れるアセットに&#x200B;**間もなく期限切れ**&#x200B;バッジを設定するのに役立ちます。<!--The `expirationDate` property is used to set the expiration duration of an asset. Refer to the code snippet below:-->
 
 ```
 /**
@@ -702,18 +702,18 @@ Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behav
 
 <!--In the above code snippet, the `getExpiryStatus` function is used to show the **Expiring soon** badge that have expiration date stored in `customExpirationDate`. Additionally, it sets the expiration date of an asset to five days from the current date. The `millisecondsInDay` helps you set expiry of an asset by specifying the time range in milliseconds. You can replace milliseconds with hours directly or customize function as per the requirement. Whereas, the `getTime()` function returns the number of milliseconds for the mentioned date. See [properties](#asset-selector-properties) to know about `expirationDate` property.-->
 
-プロパティが現在の日時を取得するためにどのように機能するかを理解するには、次の例を参照してください。
+現在の日付と時刻を取得するプロパティの動作を理解するには、次の例を参照してください。
 
 ```
 const currentData = new Date();
 currentData.getTime(),
 ```
 
-は、日付形式 2024-06-19T06:36:53.959Z に従った `1718779013959` を返します。
+日付形式 2024-06-19T06:36:53.959Z に従って `1718779013959` が返されます。
 
-#### 期限切れアセットのトーストメッセージのカスタマイズ {#customize-toast-message}
+#### 有効期限切れのアセットのトーストメッセージのカスタマイズ {#customize-toast-message}
 
-`showToast` プロパティは、期限切れのアセットで表示するトーストメッセージをカスタマイズするために使用します。
+`showToast` プロパティは、有効期限切れのアセットに表示するトーストメッセージのカスタマイズに使用します。
 
 構文：
 
@@ -725,9 +725,9 @@ currentData.getTime(),
 }
 ```
 
-デフォルトタイムアウトは 500 ミリ秒です。 一方、要件に応じて変更することもできます。 さらに、値 `timeout: 0` を渡すと、クロスボタンをクリックするまでトーストが開いたままになります。
+デフォルトのタイムアウトは 500 ミリ秒です。一方、要件に応じて変更することもできます。さらに、値 `timeout: 0` を渡すと、クロスボタンをクリックするまでトーストが開いたままになります。
 
-フォルダーの選択を許可せず、対応するメッセージを表示する必要がある場合に、トーストメッセージを表示する例を次に示します。
+フォルダーの選択を許可せず、対応するメッセージを表示する必要がある場合に、トーストメッセージを表示する例を以下に示します。
 
 ```
 const showToast = {
@@ -737,18 +737,18 @@ const showToast = {
 }
 ```
 
-次のコードスニペットを使用して、期限切れのアセットを使用するためのトーストメッセージを表示します。
+有効期限切れのアセットの使用に関するトーストメッセージを表示するには、次のコードスニペットを使用します。
 
-![ トーストメッセージ ](assets/toast-message.png)
+![トーストメッセージ](assets/toast-message.png)
 
 ### コンテキスト呼び出しフィルター{#contextual-invocation-filter}
 
-アセットセレクターを使用すると、タグピッカーフィルターを追加できます。 特定のタグ付けグループに関連するすべてのタグを組み合わせるタググループをサポートします。 さらに、検索するアセットに対応する追加のタグを選択できます。 さらに、コンテキスト呼び出しフィルターの下で、主にによって使用されるデフォルトのタググループを設定して、外出先でもアクセスできるようにすることもできます。
+アセットセレクターを使用すると、タグピッカーフィルターを追加できます。特定のタグ付けグループに関連するすべてのタグを組み合わせるタググループをサポートします。また、検索するアセットに対応する追加のタグを選択できます。さらに、最もよく使用するコンテキスト呼び出しフィルターの下にデフォルトのタググループを設定して、外出先でもアクセスできるようにすることもできます。
 
 >
 >
 > * 検索でタグ付けフィルターを有効にするには、コンテキスト呼び出しコードスニペットを追加する必要があります。
-> * タググループタイプ `(property=xcm:keywords.id=)` に対応する名前プロパティを使用する必要があります。
+> * タググループタイプに対応する名前プロパティ `(property=xcm:keywords.id=)` を使用することは必須です。
 
 構文：
 
@@ -763,7 +763,7 @@ const filterSchema=useMemo(() => {
 }, []);
 ```
 
-フィルターパネルにタググループを追加するには、少なくとも 1 つのタググループをデフォルトとして追加する必要があります。 さらに、以下のコードスニペットを使用して、タググループから事前に選択されたデフォルトのタグを追加します。
+フィルターパネルにタググループを追加するには、1 つ以上のタググループをデフォルトとして追加する必要があります。さらに、以下のコードスニペットを使用して、タググループから事前に選択されたデフォルトのタグを追加します。
 
 ```
 export const WithAssetTags = (props) = {
@@ -793,7 +793,7 @@ const filterSchema = useMemo ((); => {
 }, [selectedTags]);
 ```
 
-![ タググループフィルター ](assets/tag-group.gif)
+![タググループフィルター](assets/tag-group.gif)
 
 ## オブジェクトスキーマを使用したアセット選択の処理 {#handling-selection}
 
@@ -861,16 +861,16 @@ const filterSchema = useMemo ((); => {
 
 アセットセレクターには、検索結果を絞り込むための標準のフィルターオプションも用意されています。次のフィルターを使用できます。
 
-* **[!UICONTROL ステータス ]:** アセットの現在の状態（`all`、`approved`、`rejected`、`no status` など）が含まれます。
-* **[!UICONTROL ファイルタイプ ]:** には、`folder`、`file`、`images`、`documents` または `video` が含まれます。
-* **[!UICONTROL 有効期限ステータス ]:** 有効期限に基づいてアセットに言及します。 「`[!UICONTROL Expired]`」チェックボックスをオンにして期限切れのアセットをフィルタリングするか、アセットの `[!UICONTROL Expiration Duration]` を設定して有効期限に基づいてアセットを表示します。 アセットの有効期限が既に切れているか、まもなく切れる場合、その旨を示すバッジが表示されます。 さらに、期限切れのアセットの使用（またはドラッグ&amp;ドロップ）を許可するかどうかを制御できます。 詳しくは、[ 期限切れアセットのカスタマイズ ](#customize-expired-assets) を参照してください。 デフォルトでは、今後 30 日以内に有効期限が切れるアセットに **まもなく有効期限が切れる** バッジが表示されます。 ただし、プロパティを使用して有効期限 `expirationDate` 設定できます。
+* **[!UICONTROL ステータス]：**&#x200B;アセットの現在の状態（`all`、`approved`、`rejected`、`no status`）が含まれます。
+* **[!UICONTROL ファイルタイプ]：**`folder`、`file`、`images`、`documents`、`video` が含まれます。
+* **[!UICONTROL 有効期限ステータス]：**&#x200B;有効期限に基づいてアセットに言及します。`[!UICONTROL Expired]`チェックボックスをオンにして有効期限切れのアセットをフィルタリングするか、アセットの `[!UICONTROL Expiration Duration]` を設定し、有効期限に基づいてアセットを表示できます。アセットの有効期限が既に切れている場合や、有効期限切れが近い場合は、その旨を示すバッジが表示されます。さらに、有効期限切れのアセットの使用状況（またはドラッグ＆ドロップ）を許可するかどうかを制御できます。詳しくは、[有効期限切れのアセットのカスタマイズ](#customize-expired-assets)を参照してください。デフォルトでは、今後 30 日以内に有効期限が切れるアセットに対して&#x200B;**間もなく期限切れ**&#x200B;バッジが表示されます。ただし、`expirationDate` プロパティを使用して有効期限を設定できます。
 
   >[!TIP]
   >
-  > 将来の有効期限に基づいてアセットを表示またはフィルタリングする場合は、「`[!UICONTROL Expiration Duration]`」フィールドに将来の日付範囲を指定します。 アセットに **まもなく期限切れ** バッジが付いて表示されます。
+  > 将来の有効期限に基づいてアセットを表示またはフィルタリングする場合は、「`[!UICONTROL Expiration Duration]`」フィールドに将来の日付範囲を指定します。これにより、**間もなく期限切れ**&#x200B;バッジが付いたアセットが表示されます。
 
-* **[!UICONTROL MIME タイプ ]:** には、`JPG`、`GIF`、`PPTX`、`PNG`、`MP4`、`DOCX`、`TIFF`、`PDF`、`XLSX` が含まれます。
-* **[!UICONTROL 画像サイズ ]:** 画像の最小//最大の幅、最小/最大の高さが含まれます。
+* **[!UICONTROL MIME タイプ]：**`JPG`、`GIF`、`PPTX`、`PNG`、`MP4`、`DOCX`、`TIFF`、`PDF`、`XLSX` が含まれます。
+* **[!UICONTROL 画像サイズ]：**&#x200B;画像の最小／/最大の幅、最小／最大の高さが含まれます。
 
   ![rail-view-example](assets/filters-asset-selector.png)
 
@@ -894,10 +894,10 @@ const filterSchema = useMemo ((); => {
 
 アセットセレクターを使用すると、次の 4 つの異なるビューでアセットを表示できます。
 
-* **![リスト表示 ](assets/do-not-localize/list-view.png)[!UICONTROL  リスト表示]** リスト表示では、スクロール可能なファイルとフォルダーが 1 列に表示されます。
-* **![グリッド表示 ](assets/do-not-localize/grid-view.png) [!UICONTROL  グリッド表示]** グリッド表示では、スクロール可能なファイルとフォルダーが行と列のグリッドに表示されます。
-* **![ギャラリー表示 ](assets/do-not-localize/gallery-view.png) [!UICONTROL  ギャラリー表示]** ギャラリー表示では、ファイルやフォルダが中央に固定された水平リストに表示されます。
-* **![ウォーターフォール表示 ](assets/do-not-localize/waterfall-view.png)[!UICONTROL  ウォーターフォール表示]** ウォーターフォール表示では、ファイルやフォルダーがBridgeの形式で表示されます。
+* **![リスト表示](assets/do-not-localize/list-view.png) [!UICONTROL リスト表示]**：リスト表示では、スクロール可能なファイルとフォルダーが 1 列に表示されます。
+* **![グリッド表示](assets/do-not-localize/grid-view.png) [!UICONTROL グリッド表示]**：グリッド表示では、スクロール可能なファイルとフォルダーは、行と列のグリッド形式で表示されます。
+* **![ギャラリー表示](assets/do-not-localize/gallery-view.png) [!UICONTROL ギャラリー表示]**：ギャラリー表示では、ファイルやフォルダーは、中央に固定された水平リストに表示されます。
+* **![ウォーターフォール表示](assets/do-not-localize/waterfall-view.png) [!UICONTROL ウォーターフォール表示]**：ウォーターフォール表示では、ファイルやフォルダーがブリッジ図形式で表示されます。
 
 <!--
 ### Modes to view Asset Selector
