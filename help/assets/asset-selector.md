@@ -4,10 +4,10 @@ description: アセットセレクターを使用して、アプリケーショ�
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: a2646fa72788cb887066751efb171e92b597f4f5
+source-git-commit: 04560cd5b15ceb79b6a480c60e78e061276a39eb
 workflow-type: tm+mt
-source-wordcount: '4550'
-ht-degree: 100%
+source-wordcount: '4561'
+ht-degree: 99%
 
 ---
 
@@ -424,8 +424,7 @@ Admin Console を使用してサポートチケットを記録する手順は次
 | *dialogSize* | 小、中、大、フルスクリーン、またはフルスクリーンのテイクオーバー | 文字列 | オプション | 指定されたオプションを使用してサイズを指定することで、レイアウトを制御できます。 |
 | *colorScheme* | ライトまたはダーク | いいえ | | このプロパティは、アセットセレクターアプリケーションのテーマを設定するために使用されます。テーマは、ライトテーマとダークテーマから選択できます。 |
 | *filterRepoList* | 関数 | いいえ |  | Experience Manager リポジトリを呼び出し、フィルタリングされたリポジトリのリストを返す `filterRepoList` コールバック関数を使用できます。 |
-| *getExpiryStatus* | 関数 | いいえ | | 有効期限切れのアセットのステータスが表示されます。関数は、指定したアセットの有効期限に基づいて、`EXPIRED`、`EXPIRING_SOON` または `NOT_EXPIRED` を返します。[有効期限切れのアセットのカスタマイズ](#customize-expired-assets)を参照してください。 |
-| *allowSelectionAndDrag* | ブール値 | いいえ | False | 関数の値は `true` または `false` のいずれかになります。値が `false` に設定されている場合、有効期限切れのアセットはキャンバス上で選択またはドラッグできません。 |
+| *expiryOptions* | 関数 | | | 次の 2 つのプロパティの間で使用できます。**getExpiryStatus** 期限切れアセットのステータスを提供します。 関数は、指定したアセットの有効期限に基づいて、`EXPIRED`、`EXPIRING_SOON` または `NOT_EXPIRED` を返します。[ 期限切れアセットのカスタマイズ ](#customize-expired-assets) を参照してください。 さらに、**allowSelectionAndDrag** を使用できます。この場合、関数の値は `true` または `false` のいずれかになります。 値が `false` に設定されている場合、有効期限切れのアセットはキャンバス上で選択またはドラッグできません。 |
 | *showToast* | | いいえ | | これにより、アセットセレクターで、有効期限切れのアセットに対してカスタマイズされたトーストメッセージを表示できます。 |
 <!--
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
