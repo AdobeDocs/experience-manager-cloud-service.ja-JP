@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 3922375b52ae64d08cdc64d475a95e8bd240a587
 workflow-type: tm+mt
-source-wordcount: '2313'
-ht-degree: 100%
+source-wordcount: '1177'
+ht-degree: 80%
 
 ---
 
@@ -23,263 +23,13 @@ ht-degree: 100%
 
 これを行うために、ユニバーサルエディターはコンテンツ作成者に、最小限のトレーニングで簡単にコンテンツの編集を開始できる直感的な UI を提供します。このドキュメントでは、ユニバーサルエディターのオーサリングエクスペリエンスについて説明します。
 
+>[!NOTE]
+>
+>このドキュメントは、ユニバーサルエディターへのアクセスと操作の方法を既に熟知していることを前提としています。 そうでない場合は、ドキュメント [ ユニバーサルエディターへのアクセスとナビゲート ](/help/sites-cloud/authoring/universal-editor/navigation.md) を参照してください。
+
 >[!TIP]
 >
 >ユニバーサルエディターについて詳しくは、[ユニバーサルエディターの概要](/help/implementing/universal-editor/introduction.md)ドキュメントを参照してください。
-
-## アプリを準備する {#prepare-app}
-
-ユニバーサルエディターを使用してアプリのコンテンツを作成するには、エディターをサポートするために、デベロッパーがアプリを実装する必要があります。
-
->[!TIP]
->
->ユニバーサルエディターと連携する AEM アプリの設定方法の例は、[AEM でのユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md)ドキュメントを参照してください。
-
-## ユニバーサルエディターへのアクセス {#accessing}
-
-アプリをユニバーサルエディターと連携するように実装すると、ユニバーサルエディターでは、AEM as a Cloud Service 内からアクセスすることも、AEM にアクセスせずに直接アクセスすることもできます。
-
-### AEM as a Cloud Service 内でのアクセス {#accessing-aem}
-
-1. AEM as a Cloud Service オーサリングインスタンスにログインします。
-1. [**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)を使用して、ユニバーサルエディターで使用するために作成された、編集対象のページに移動します。
-1. ページを編集します。
-1. ユニバーサルエディターが開き、選択したページを編集します。
-
->[!NOTE]
->
->[**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)でページを編集する際、コンソールはページの[テンプレート](/help/sites-cloud/authoring/sites-console/templates.md)に適したエディター（このドキュメントで説明するユニバーサルエディターや[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)）を開きます。
-
-### 直接アクセス {#accessing-directly}
-
-1. ユニバーサルエディターにログインします。ログインして[ユニバーサルエディターにアクセスする](/help/implementing/universal-editor/getting-started.md#request-access)には、Adobe ID が必要です。
-
-1. ログインしたら、編集するページの URL を[ロケーションバーに入力します。](#location-bar)次のようなコンテンツの編集を開始できます。[テキストコンテンツ](#text-mode)または[メディアコンテンツ。](#media-mode)
-
-## UI について {#ui}
-
-UI は以下の主なエリアに分かれています。
-
-* [Experience Cloud ヘッダー](#experience-cloud-header)
-* [ユニバーサルエディターのツールバー](#universal-editor-toolbar)
-* [エディター](#editor)
-* [プロパティパネル](#properties-rail)
-
-![ユニバーサルエディター UI](assets/ui.png)
-
-### Experience Cloud ヘッダー {#experience-cloud-header}
-
-Experience Cloud ヘッダーは、常に画面の上部に表示されます。Experience Cloud 内の位置を示し、他の Experience Cloud アプリへの移動に役立つアンカーです。
-
-![Experience Cloud ヘッダー](assets/experience-cloud-header.png)
-
-#### Experience Manager {#experience-manager}
-
-ヘッダーの左側にある Adobe Experience Cloud リンクを選択して Experience Manager ソリューションのルートに移動し、[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) および[ソフトウェア配布](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ja)といったツールにアクセスします。
-
-![グローバルナビゲーションボタン](assets/global-navigation.png)
-
-#### 組織 {#organization}
-
-現在ログインしている組織が表示されます。Adobe ID が複数の組織に関連付けられている場合、別の組織に切り替えるには、選択します。
-
-![組織インジケーター](assets/organization.png)
-
-#### ソリューション {#solutions}
-
-ソリューション切り替えボタンをタップまたはクリックすると、他の Experience Cloud ソリューションに素早くジャンプすることができます。
-
-![ソリューションスイッチャー](assets/solutions.png)
-
-#### ヘルプ {#help}
-
-ヘルプアイコンを使用すると、学習リソースやサポートリソースに素早くアクセスできます。
-
-![ヘルプ](assets/help.png)
-
-#### 通知 {#notifications}
-
-このアイコンには、現在割り当てられている未完了の[通知](/help/implementing/cloud-manager/notifications.md)の数を示すバッジが付きます。
-
-![通知](assets/notifications.png)
-
-#### ユーザープロパティ {#user-properties}
-
-ユーザー設定にアクセスするには、ユーザーを表すアイコンを選択します。ユーザー画像が設定されていない場合、アイコンがランダムに割り当てられます。
-
-![ユーザープロパティ](assets/user-properties.png)
-
-### ユニバーサルエディターのツールバー {#universal-editor-toolbar}
-
-ユニバーサルエディターのツールバーは、常に画面の上部、[Experience Cloud ヘッダーのすぐ下に表示されます。](#experience-cloud-header)このツールを使用すると、別のページに素早くアクセスして編集したり、現在のページを公開したりできます。
-
-![ユニバーサルエディターのツールバー](assets/universal-editor-toolbar.png)
-
-#### 「ホーム」ボタン {#home-button}
-
-「ホーム」ボタンをクリックすると、ユニバーサルエディターの開始ページに戻ります。
-
-![ハンバーガーメニュー](assets/home-button.png)
-
-開始ページで、ユニバーサルエディターで編集するサイトの URL を入力できます。
-
-![開始ページ](assets/start-page.png)
-
->[!NOTE]
->
->ユニバーサルエディターで編集するページは、[ユニバーサルエディターをサポートするためにインストルメントを行う](/help/implementing/universal-editor/getting-started.md)必要があります。
-
-#### ロケーションバー {#location-bar}
-
-ロケーションバーに、編集中のページのアドレスが表示されます。別のページを編集するには、選択してアドレスを入力します。
-
-![ロケーションバー](assets/location-bar.png)
-
->[!TIP]
->
->ホットキー `L` を使用して、アドレスバーを開きます。
-
->[!NOTE]
->
->ユニバーサルエディターで編集するページは、[ユニバーサルエディターをサポートするためにインストルメントを行う](/help/implementing/universal-editor/getting-started.md)必要があります。
-
-#### 認証ヘッダーの設定 {#authentication-settings}
-
-[ローカル開発目的でカスタム認証ヘッダーを設定](/help/implementing/universal-editor/developer-overview.md#auth-header)する必要がある場合は、認証ヘッダー設定アイコンを選択します。
-
-![認証ヘッダー設定ボタン](assets/authentication-header-settings.png)
-
-#### エミュレーターの設定 {#emulator}
-
-エミュレーションアイコンを選択して、ユニバーサルエディターによるページのレンダリング方法を定義します。
-
-![エミュレーターアイコン](assets/emulator.png)
-
-エミュレーションアイコンをタップまたはクリックすると、オプションが表示されます。
-
-![エミュレーションオプション](assets/emulation-options.png)
-
-デフォルトでは、エディターはデスクトップレイアウトで開き、高さと幅はブラウザーで自動的に定義されます。
-
-また、ユニバーサルエディター内でモバイルデバイスをエミュレートすることもできます。
-
-* 向きを定義する
-* 幅と高さを定義する
-* 向きを変更する
-
-#### プレビューモード {#preview-mode}
-
-プレビューモードでは、ページは、公開されたサービスで表示されるとおりに、エディターでレンダリングされます。これにより、コンテンツ作成者は、リンクをクリックするなどしてコンテンツ内を移動できます。
-
-![プレビューモード](assets/preview-mode.png)
-
->[!TIP]
->
->ホットキー `P` を使用してプレビューモードを切り替えます。
-
-#### アプリのプレビューを開く {#open-app-preview}
-
-「アプリのプレビューを開く」アイコンを選択すると、現在編集中のページをエディターなしで独自のブラウザーで開いて、内容をプレビューできます。
-
-![アプリのプレビューを開く](assets/open-app-preview.png)
-
->[!TIP]
->
->ホットキー `O` （文字 O）を使用して、アプリのプレビューを開きます。
-
-#### 公開 {#publish}
-
-「公開」ボタンを選択すると、コンテンツへの変更がライブで公開され、読者が使用できるようにになります。
-
-![「公開」ボタン](assets/publish.png)
-
->[!TIP]
->
->ユニバーサルエディターを使用した公開について詳しくは、[ユニバーサルエディターを使用したコンテンツの公開](publishing.md)のドキュメントを参照してください。
-
-### エディター {#editor}
-
-エディターはウィンドウのほとんどを占め、そこに[ロケーションバー](#location-bar)で指定したページがレンダリングされます。
-
-![エディター](assets/editor.png)
-
-エディターが[プレビューモード](#preview-mode)の場合、コンテンツに移動し、リンクをたどることはできますが、コンテンツを編集することはできません。
-
-### プロパティパネル {#properties-rail}
-
-プロパティパネルは、エディターの右側に常に表示されます。モードに応じて、コンテンツ内で選択されたコンポーネントの詳細またはページコンテンツの階層を表示できます。
-
-![プロパティパネル](assets/component-rail.png)
-
-#### プロパティモード {#properties-mode}
-
-プロパティモードでは、パネルには、エディターで現在選択されているコンポーネントのプロパティが表示されます。これは、ページが読み込まれたときのプロパティパネルのデフォルトのモードです。
-
-![プロパティモード](assets/properties-mode.png)
-
-選択するコンポーネントのタイプに応じて、プロパティパネルに詳細を表示して変更できます。
-
-![コンポーネントの詳細](assets/component-details.png)
-
-表示や編集が可能な詳細が含まれていないコンポーネントもあります。
-
->[!TIP]
->
->ホットキー `D` を使用してプロパティモードに切り替えます。
-
-#### コンテンツツリーモード {#content-tree-mode}
-
-コンテンツツリーモードでは、パネルにページコンテンツの階層が表示されます。
-
-![コンテンツツリーモード](assets/content-tree-mode.png)
-
-コンテンツツリー内の項目を選択する場合、エディターはそのコンテンツまでスクロールして選択します。
-
-![コンテンツツリー](assets/content-tree.png)
-
->[!TIP]
->
->ホットキー `F` を使用してコンテンツツリーモードに切り替えます。
-
-##### 編集 {#edit}
-
-編集時に、選択したコンポーネントのオプションがプロパティパネルに表示され、選択したコンポーネントを編集できます。選択したコンポーネントがコンテンツフラグメントの場合は、「編集」ボタンを選択することもできます。
-
-![編集アイコン](assets/edit.png)
-
-「編集」ボタンをタップまたはクリックすると、新しいタブで[コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)が開きます。これにより、コンテンツフラグメントエディターを最大限に活用して、関連するコンテンツフラグメントを編集できます。
-
-ワークフローのニーズに応じて、コンテンツフラグメントをユニバーサルエディターで編集することも、コンテンツフラグメントエディターで直接編集することもできます。
-
->[!TIP]
->
->ホットキー `E` を使用して選択したコンポーネントを編集します。
-
-##### 追加 {#add}
-
-コンテンツツリーまたはエディターでコンテナコンポーネントを選択した場合は、プロパティパネルに「追加」オプションが表示されます。
-
-![追加アイコン](assets/ue-add-component-icon.png)
-
-「追加」ボタンをタップまたはクリックすると、使用できるコンポーネントのドロップダウンメニューが開き、選択したコンテナに [ を追加します。](#adding-components)
-
-![コンテキストメニューを追加](assets/add-context-menu.png)
-
->[!TIP]
->
->ホットキー `A` を使用して、選択したコンテナコンポーネントにコンポーネントを追加します。
-
-##### 削除 {#delete}
-
-コンテンツツリーまたはエディターでコンテナコンポーネント内のコンポーネントを選択すると、プロパティパネルに削除オプションが表示されます。
-
-![削除アイコン](assets/ue-delete-component-icon.png)
-
-「削除」ボタンをタップまたはクリックすると [ はコンポーネントを削除します。](#deleting-components)
-
->[!TIP]
->
->ホットキー `Shift+Backspace` を使用して、選択したコンポーネントをコンテナから削除します。
 
 ## コンテンツの編集 {#editing-content}
 
@@ -289,9 +39,9 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 >[!TIP]
 >
->デフォルトでは、コンテンツをタップまたはクリックすると、そのコンテンツが編集用に選択されます。リンクをたどってコンテンツを移動する場合は、[プレビューモード](#preview-mode)に切り替えます。
+>デフォルトでは、コンテンツをタップまたはクリックすると、そのコンテンツが編集用に選択されます。リンクをたどってコンテンツを移動する場合は、[プレビューモード](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)に切り替えます。
 
-選択したコンテンツに応じて、異なるインプレース編集オプションが設定されている場合や、[プロパティパネル](#properties-rail)にコンテンツの追加情報やオプションが表示される場合があります。
+選択したコンテンツに応じて、異なるインプレース編集オプションが設定されている場合や、[プロパティパネル](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)にコンテンツの追加情報やオプションが表示される場合があります。
 
 ### プレーンテキストの編集 {#edit-plain-text}
 
@@ -301,7 +51,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 Enter キーまたは Return キーを押すか、テキストボックスの外側を選択して、変更を保存します。
 
-テキストコンポーネントを選択すると、その詳細がプロパティパネルに表示されます。パネル内のテキストを編集することもできます。
+テキストコンポーネントを選択すると、その詳細が [ プロパティパネルに表示されます。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) パネル内のテキストを編集することもできます。
 
 ![プロパティパネルでのテキストの編集](assets/ue-editing-text-component-rail.png)
 
@@ -316,13 +66,13 @@ Enter キーまたは Return キーを押すか、テキストボックスの外
 利便性のために、テキストの書式設定オプションと詳細は、2 か所で利用できます。
 
 * **コンテキストメニュー**&#x200B;は、リッチテキストブロック上で開き、コンテキスト内の基本的な書式設定オプションを提供します。スペースの都合上、一部のオプションが省略記号ボタンの後ろに隠れている場合があります。
-* **プロパティパネル**&#x200B;には、使用可能なすべての書式設定オプションがテキストと共に表示されます。
+* **[プロパティパネル](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)**&#x200B;には、使用可能なすべての書式設定オプションがテキストと共に表示されます。
 
 フォーカスが編集されたフィールドを離れると、変更は自動的に保存されます。
 
 ### メディアの編集 {#edit-media}
 
-詳細は、プロパティパネルで確認できます。
+その詳細は、[ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) で確認できます。
 
 ![メディアの編集](assets/ue-edit-media.png)
 
@@ -335,7 +85,7 @@ Enter キーまたは Return キーを押すか、テキストボックスの外
 
 ### コンテンツフラグメントの編集 {#edit-content-fragment}
 
-[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)を選択した場合、詳細は、プロパティパネルで編集できます。
+[ コンテンツフラグメント ](/help/sites-cloud/administering/content-fragments/overview.md) を選択すると、その詳細を [ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) で編集できます。
 
 ![コンテンツフラグメントの編集](assets/ue-edit-cf.png)
 
@@ -345,13 +95,13 @@ Enter キーまたは Return キーを押すか、テキストボックスの外
 
 フォーカスがプロパティパネルの編集されたフィールドを離れると、変更は自動的に保存されます。
 
-代わりにコンテンツフラグメントを[コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md)で編集する場合、モードパネルの「[編集ボタン](#edit)」をクリックします。
+[ コンテンツフラグメントエディター ](/help/sites-cloud/administering/content-fragments/authoring.md) でコンテンツフラグメントを編集する場合は、代わりに、プロパティパネルの [ 編集 ](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) ボタンをクリックします。
 
 ワークフローのニーズに応じて、コンテンツフラグメントをユニバーサルエディターで編集することも、コンテンツフラグメントエディターで直接編集することもできます。
 
 ### コンテナへのコンポーネントの追加 {#adding-components}
 
-1. コンテンツツリーまたはエディターでコンテナコンポーネントを選択します。
+1. [ コンテンツツリー ](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) またはエディターでコンテナコンポーネントを選択します。
 1. 次に、プロパティパネルで追加アイコンを選択します。
 
    ![コンテナに追加するコンポーネントの選択](assets/ue-add-component.png)
@@ -364,7 +114,7 @@ Enter キーまたは Return キーを押すか、テキストボックスの外
 
 ### コンテナからのコンポーネントの削除 {#deleting-components}
 
-1. コンテンツツリーまたはエディターでコンテナコンポーネントを選択します。
+1. [ コンテンツツリー ](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) またはエディターでコンテナコンポーネントを選択します。
 1. コンテナの山形アイコンを選択して、コンテンツツリーでコンテンツを展開します。
 1. 次に、コンテンツツリーで、コンテナ内のコンポーネントを選択します。
 1. プロパティパネルで削除アイコンを選択します。
@@ -379,22 +129,22 @@ Enter キーまたは Return キーを押すか、テキストボックスの外
 
 ### コンテナ内のコンポーネントの並べ替え {#reordering-components}
 
+1. [コンテンツツリーモード](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)でない場合はそれに切り替えます。
 1. コンテンツツリーまたはエディターでコンテナコンポーネントを選択します。
-1. [コンテンツツリーモード](#content-tree-mode)でない場合はそれに切り替えます。
 1. コンテナの山形アイコンを選択して、コンテンツツリーでコンテンツを展開します。
 1. コンテナ内のコンポーネントの横にあるハンドルアイコンをドラッグすると、それらを並べ替えることができます。コンポーネントをドラッグして、コンテナ内で並べ替えます。
 
    ![コンポーネントの並べ替え](assets/ue-reordering-components.png)
 
-1. ドラッグしたコンポーネントがコンポーネントツリー内で灰色に変わり、挿入ポイントは青い線で表されます。コンポーネントをリリースして、新しい場所に配置します。
+1. ドラッグしたコンポーネントはコンテンツツリーでグレーに変わり、挿入ポイントは青い線で表されます。 コンポーネントをリリースして、新しい場所に配置します。
 
 コンポーネントは、コンテンツツリーおよびエディターの両方で並べ替えられます
 
 ## コンテンツのプレビュー {#previewing-content}
 
-コンテンツの編集が完了したら、他のページのコンテンツでコンテンツがどのように表示されるかを確認するためにコンテンツ内を移動したい場合がよくあります。[プレビューモード](#preview-mode)でリンクをクリックして、読者と同じようにコンテンツ内を移動できます。コンテンツは、公開されるときと同じように、エディターでレンダリングされます。
+コンテンツの編集が完了したら、他のページのコンテンツでコンテンツがどのように表示されるかを確認するためにコンテンツ内を移動したい場合がよくあります。[プレビューモード](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)でリンクをクリックして、読者と同じようにコンテンツ内を移動できます。コンテンツは、公開されるときと同じように、エディターでレンダリングされます。
 
-プレビューモードでは、コンテンツをタップまたはクリックすると、コンテンツの読者に対するように反応します。編集するコンテンツを選択する場合は、[プレビューモード](#preview-mode)から切り替えます。
+プレビューモードでは、コンテンツをタップまたはクリックすると、コンテンツの読者に対するように反応します。編集するコンテンツを選択する場合は、[プレビューモード](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)から切り替えます。
 
 ## その他のリソース {#additional-resources}
 
@@ -410,3 +160,10 @@ Enter キーまたは Return キーを押すか、テキストボックスの外
 * [属性とタイプ](/help/implementing/universal-editor/attributes-types.md) - ユニバーサルエディターで必要なデータ属性とデータ型について説明します。
 * [ユニバーサルエディターの認証](/help/implementing/universal-editor/authentication.md) - ユニバーサルエディターの認証方法について説明します。
 
+## コンポーネントの継承の編集 {#inheritance}
+
+継承とは、コンテンツをリンクして、一方を変更すると他方が自動的に変更されるようなメカニズムです。
+
+ユニバーサルエディターを使用すると、コンテンツを更新するだけで、コンテンツの継承をキャンセルできます。 エディターは、そのページの作成者によって行われたすべての変更の継承を自動的に無効にし、ブループリントから更新が同期されたときに変更されたコンテンツが保持されるようにします。
+
+ユニバーサルエディターを使用した継承の仕組みについて詳しくは、ドキュメント [ ユニバーサルエディターでのコンテンツの継承 ](/help/sites-cloud/authoring/universal-editor/inheritance.md) を参照してください。

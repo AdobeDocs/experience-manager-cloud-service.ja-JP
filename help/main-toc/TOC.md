@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 83cf953853c88c1f4b7149bc63c7f07b1e73faf3
 workflow-type: tm+mt
-source-wordcount: '5273'
+source-wordcount: '5283'
 ht-degree: 99%
 
 ---
@@ -330,8 +330,10 @@ ht-degree: 99%
          + [スタイルシステム](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [取り消し／やり直しの制限事項](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + ユニバーサルエディター {#universal-editor}
+         + [ユニバーサルエディターのナビゲート](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [ユニバーサルエディターを使用したコンテンツのオーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [ユニバーサルエディターを使用したコンテンツの公開](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [ユニバーサルエディターでのコンテンツの継承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
       + フラグメント {#fragments}
          + [コンテンツフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [エクスペリエンスフラグメント](/help/sites-cloud/authoring/fragments/experience-fragments.md)
