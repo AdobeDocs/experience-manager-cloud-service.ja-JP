@@ -1,8 +1,8 @@
 ---
 source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '656'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 # スニペット {#snippets}
@@ -119,11 +119,11 @@ ht-degree: 85%
 
 ## ルールエディター関連項目 {#see-also-rule-editor}
 
-* [コアコンポーネントに基づくアダプティブFormsのルールエディターの概要](/help/forms/rule-editor-core-components.md)
+* [コアコンポーネントに基づくアダプティブフォームのルールエディターの概要](/help/forms/rule-editor-core-components.md)
 * [コアコンポーネントに基づくアダプティブフォームのルールエディターでの演算子のタイプとイベント](/help/forms/rule-editor-core-components-events-operators.md)
-* [コアコンポーネントに基づくアダプティブFormsのルールエディターユーザーインターフェイス](/help/forms/rule-editor-core-components-user-interface.md)
+* [コアコンポーネントに基づくアダプティブフォームのルールエディターのユーザーインターフェイス](/help/forms/rule-editor-core-components-user-interface.md)
 * [コアコンポーネントに基づくアダプティブフォームの様々なユースケース](/help/forms/rule-editor-core-components-user-interface.md)
 * [ルールエディターの様々なエディションの違い](/help/forms/rule-editor-core-components-difference-tables.md)
-* [コアコンポーネントに基づくアダプティブFormsのカスタム関数の概要](/help/forms/create-and-use-custom-functions.md)
+* [コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要](/help/forms/create-and-use-custom-functions.md)
 * [コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成](/help/forms/custom-function-core-component-create-function.md)
 * [カスタム関数の開発と使用の例](/help/forms/custom-function-core-components-use-cases.md)

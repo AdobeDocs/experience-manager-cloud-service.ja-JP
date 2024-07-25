@@ -5,9 +5,9 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
 source-git-commit: d9565e86c4b7e513cb1a95ecbe7a30c9586d9fb1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '655'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 96%
 
 移行セットには次の特性があります。
 
-* 新しいバージョンでは、Cloud Acceleration Managerで作成したプロジェクト内に最大 10 個の移行セットを作成できます。
+* 新しいバージョンでは、Cloud Acceleration Manager で作成したプロジェクト内に最大 10 の移行セットを作成できます。
 * 各移行セットには、一意の名前を付ける必要があります。
 
 コンテンツ転送ツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。

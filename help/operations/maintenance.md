@@ -5,9 +5,9 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
 source-git-commit: b0e72f0eee0f20b19b0d9c4317a061855ffd4f62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2107'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 99%
     <td>顧客</td>
     <td>
     <p>Git で行う必要があります。フォルダー <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code> または <code>granite_monthly</code> の下でプロパティを作成することで、<code>/libs</code> の下にある標準のメンテナンスウィンドウ設定ノードを上書きします。詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。</p>
-    <p>上記のノードの下に別のノードを追加し（<code>granite_ProjectPurgeTask</code> という名前を付けて）、適切なプロパティを追加して、メンテナンスタスクを有効にします。<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">2}Adobeプロジェクトのパージ設定 </a> については、{OSGi プロパティ </b> の一覧を参照してください。<b></p>
+    <p>上記のノードの下に別のノードを追加し（<code>granite_ProjectPurgeTask</code> という名前を付けて）、適切なプロパティを追加して、メンテナンスタスクを有効にします。<b>アドビプロジェクトのパージ設定</b>の <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">OSGi プロパティ</a>のリストを参照してください。</p>
   </td>
   </tr>
   </tbody>
