@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 100%
+source-wordcount: '1405'
+ht-degree: 95%
 
 ---
 
@@ -115,9 +115,9 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
 
 ターゲットデプロイメントは、AEM アプリケーションの選択した部分のコードのみをデプロイします。このようなデプロイメントでは、次のいずれかのタイプのコードを&#x200B;**含む**&#x200B;よう選択できます。
 
-* **設定** - AEM 環境のトラフィックフィルタールールの設定を行います。
-   * リポジトリでフィックフィルタールールを管理し、適切にデプロイする方法については、[WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)を参照してください。
-   * ターゲットのデプロイメントパイプラインを実行している場合、[WAF 設定などの](/help/security/traffic-filter-rules-including-waf.md)設定は、パイプラインで定義した環境、リポジトリ、ブランチに保存されていればデプロイされます。
+* **Config** - AEM環境の様々な機能に関する設定を行います。
+   * サポートされている設定（ログ転送、パージ関連のメンテナンスタスク、様々な CDN 設定など）のリストと、それらが適切にデプロイされるようにリポジトリで管理する方法については、[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md) を参照してください。
+   * ターゲットデプロイメントパイプラインを実行する場合、設定が、パイプラインで定義した環境、リポジトリおよびブランチに保存されている限り、デプロイされます。
    * 設定パイプラインは、常に 1 つの環境に 1 つしか存在できません。
 * **フロントエンドコード** - AEM アプリケーションのフロントエンド用に JavaScript と CSS を設定します。
    * フロントエンドパイプラインを使用すると、フロントエンド開発者の作業の独立性が高まるほか、開発プロセスを速めることができます。

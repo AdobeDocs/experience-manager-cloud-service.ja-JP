@@ -4,12 +4,13 @@ description: AEM as a Cloud Serviceのメンテナンスタスクと、その設
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: b0e72f0eee0f20b19b0d9c4317a061855ffd4f62
-workflow-type: ht
-source-wordcount: '2107'
-ht-degree: 100%
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+workflow-type: tm+mt
+source-wordcount: '2055'
+ht-degree: 95%
 
 ---
+
 
 # AEM as a Cloud Service のメンテナンスタスク {#maintenance-tasks-in-aem-as-a-cloud-service}
 
@@ -220,23 +221,19 @@ ht-degree: 100%
 > 
 >同様に、設定ファイルに監査ログのパージノードをデプロイしたら、それを削除せずに宣言したままにする必要があります。
 
-**1** - Git のプロジェクトの最上位フォルダーに次のフォルダーとファイル構造を作成します。
+**1** `mt.yaml` などの名前のファイルを作成します。
 
-```
-config/
-     mt.yaml
-```
+**2** [config パイプラインの記事で説明されているように、ファイルを `config` または類似の名前の最上位フォルダーの下のどこかに配置します。](/help/operations/config-pipeline.md#folder-structure)
 
-**2** - 設定ファイルで次のプロパティを宣言します。
+**3** - 設定ファイルで次のプロパティを宣言します。
 
-* 値が「MaintenanceTasks」の「kind」プロパティ。
-* 「version」プロパティ（現在バージョン 1）。
-* プロパティ `envTypes` を含むオプションの「metadata」オブジェクトと、この設定が有効な環境タイプ（開発、ステージ、実稼動）のコンマ区切りリスト。メタデータオブジェクトが宣言されていない場合、設定はすべての環境タイプに対して有効です。
+* データノードの上のいくつかのプロパティ – 説明については、[config パイプライン ](/help/operations/config-pipeline.md#common-syntax) の記事を参照してください。 `kind` プロパティの値は *MaintenanceTasks* にし、バージョンは *1* に設定する必要があります。
+
 * `versionPurge` と `auditLogPurge` オブジェクトの両方を含むデータオブジェクト。
 
 以下の `versionPurge` と `auditLogPurge` オブジェクトの定義と構文を参照してください。
 
-次の例のように設定を構築する必要があります。
+次の例のように設定を構築します。
 
 ```
 kind: "MaintenanceTasks"
@@ -271,14 +268,7 @@ data:
 * すべてのプロパティを定義する必要があります。デフォルトは継承されません。
 * 以下のプロパティテーブルのタイプ（整数、文字列、ブール値など）を考慮する必要があります。
 
->[!NOTE]
->`yq` を使用すると、設定ファイル（例：`yq mt.yaml`）の YAML 形式をローカルで検証できます。
-
-**3** - 実稼動以外の設定パイプラインと実稼動設定パイプラインを設定します。
-
-迅速な開発環境（RDE）では、パージはサポートされていません。実稼動（非サンドボックス）プログラムの他の環境タイプの場合は、Cloud Manager でターゲットデプロイメント設定パイプラインを作成します。
-
-詳しくは、[実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)および[実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)を参照してください。
+**4** - [config パイプラインの記事に記載されているように、Cloud Managerで config パイプラインを作成します。](/help/operations/config-pipeline.md#managing-in-cloud-manager) サンドボックスと迅速な開発環境（RDE）では、パージをサポートしていません。
 
 ### バージョンのパージ {#version-purge}
 

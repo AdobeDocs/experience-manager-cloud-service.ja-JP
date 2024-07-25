@@ -1,41 +1,34 @@
 ---
 title: CDN エラーページの設定
-description: Amazon S3 や Azure Blob Storage などの自己ホスト型ストレージで静的ファイルをホストし、Cloud Manager 設定パイプラインを使用してデプロイされた設定ファイルで静的ファイルを参照することで、デフォルトのエラーページを上書きする方法について説明します。
+description: Amazon S3 や Azure Blob Storage などの自己ホスト型ストレージで静的ファイルをホストし、Cloud Manager設定パイプラインを使用してデプロイされた設定ファイルで参照することで、デフォルトのエラーページをオーバーライドする方法を説明します。
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 100%
+source-wordcount: '365'
+ht-degree: 57%
 
 ---
 
+
 # CDN エラーページの設定 {#cdn-error-pages}
 
-万が一、[アドビが管理する CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) が AEM の接触チャネルに到達できない場合、CDN はデフォルトで、サーバーに到達できないことを示す、ブランド化されていない汎用のエラーページを表示します。Amazon S3 や Azure Blob Storage などの自己ホスト型ストレージで静的ファイルをホストし、[Cloud Manager 設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)を使用してデプロイされた設定ファイルで静的ファイルを参照することで、デフォルトのエラーページを上書きできます。
+万が一、[アドビが管理する CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) が AEM の接触チャネルに到達できない場合、CDN はデフォルトで、サーバーに到達できないことを示す、ブランド化されていない汎用のエラーページを表示します。デフォルトのエラーページを上書きするには、Amazon S3 や Azure Blob Storage などの自己ホスト型ストレージで静的ファイルをホストし、Cloud Manager [config パイプライン ](/help/operations/config-pipeline.md#managing-in-cloud-manager) を使用してデプロイされた設定ファイルで参照します。
 
 ## 設定 {#setup}
 
 デフォルトのエラーページを上書きする前に、次の作業を行う必要があります。
 
-* Git プロジェクトの最上位フォルダーに次のフォルダーとファイル構造を作成します。
+1. 以下の構文の節を参照して、`cdn.yaml` または類似の名前のファイルを作成します。
 
-```
-config/
-     cdn.yaml
-```
+1. [config パイプラインの記事 ](/help/operations/config-pipeline.md#folder-structure) で説明されているように、ファイルを *config* などの名前の最上位フォルダーの下のどこかに配置します。
 
-* `cdn.yaml` 設定ファイルには、メタデータと以下の例で説明するルールの両方を含める必要があります。`kind` パラメーターは `CDN` に設定し、バージョンはスキーマバージョン（現在 `1`）に設定する必要があります。
+1. [config パイプラインの記事 ](/help/operations/config-pipeline.md#managing-in-cloud-manager) で説明されているように、Cloud Managerで設定パイプラインを作成します。
 
-* Cloud Manager でターゲットデプロイメント設定パイプラインを作成します。[実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)および[実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)を参照してください。
+1. 設定をデプロイします。
 
-**備考**
-
-* RDE は現在、設定パイプラインをサポートしていません。
-* `yq` を使用すると、設定ファイル（例：`yq cdn.yaml`）の YAML 形式をローカルで検証できます。
-
-### 設定 {#configuration}
+### 構文 {#syntax}
 
 エラー ページはシングルページ アプリケーション（SPA）として実装され、以下の例に示すように、いくつかのプロパティを参照します。URL によって参照される静的ファイルは、Amazon S3 や Azure Blob Storage などのインターネットにアクセスできるサービス上でホストする必要があります。
 
@@ -54,6 +47,8 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
+データノードの上のプロパティの説明については、[config パイプラインの記事 ](/help/operations/config-pipeline.md#common-syntax) を参照してください。 kind プロパティの値は *CDN* に、`version` プロパティは *1* に設定する必要があります。
+
 
 | 名前 | 許可されたプロパティ | 意味 |
 |-----------|--------------------------|-------------|

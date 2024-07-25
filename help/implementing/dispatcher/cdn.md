@@ -4,12 +4,13 @@ description: AEM の管理による CDN を使用する方法と、独自の CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 100%
+source-wordcount: '1128'
+ht-degree: 93%
 
 ---
+
 
 # AEM as a Cloud Service での CDN {#cdn}
 
@@ -43,7 +44,7 @@ Cloud Manager セルフサービス UI を使用して、AEM の標準搭載 CDN
 
 ### CDN でのトラフィックの設定 {#cdn-configuring-cloud}
 
-CDN トラフィックとフィルターを設定するルールは、設定ファイルで宣言し、[Cloud Manager の設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)を使用して CDN にデプロイできます。詳しくは、[CDN でのトラフィックの設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)および [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)を参照してください。
+[Cloud Managerの設定パイプラインを使用すると、CDN のトラフィックおよびフィルターを設定するルールを設定ファイルで宣言し、CDN にデプロイできます。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) 詳しくは、[CDN でのトラフィックの設定 ](/help/implementing/dispatcher/cdn-configuring-traffic.md) および [WAF ルールを含むトラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md) を参照してください。
 
 ### CDN エラーページの設定 {#cdn-error-pages}
 
@@ -70,7 +71,7 @@ CDN エラーページは、まれに AEM に到達できない場合にブラ�
 1. SNI をAdobe CDN の入力に設定する。
 1. ホストヘッダーを接触チャネルドメインに設定します（例：`Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`）。
 1. AEM がホストヘッダーを決定できるように、`X-Forwarded-Host` ヘッダーにドメイン名を設定します（例：`X-Forwarded-Host:example.com`）。
-1. `X-AEM-Edge-Key` を設定します。この値はアドビから取得されます。
+1. `X-AEM-Edge-Key` を設定します。この値は、（この記事 [ で説明しているように、Cloud Manager設定パイプラインを使用して設定する必要 ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) あります。
 
    * これは、Adobe CDN でリクエストのソースを検証し、`X-Forwarded-*` ヘッダーを AEM アプリケーションに渡すために必要です。例えば、`X-Forwarded-For` を使用してクライアント IP を決定します。したがって、`X-Forwarded-*` ヘッダーが正しいことを確認するのは、信頼できる呼び出し元（顧客が管理する CDN）の責任となります（以下のメモを参照）。
    * 必要に応じて、`X-AEM-Edge-Key` が存在しない場合に Adobe CDN の入口へのアクセスをブロックできます。Adobe CDN の入力に直接アクセスする必要がある場合（ブロックする場合）は、アドビにお知らせください。
@@ -79,7 +80,7 @@ CDN エラーページは、まれに AEM に到達できない場合にブラ�
 
 ライブトラフィックを受け入れる前に、アドビカスタマーサポートに問い合わせて、エンドツーエンドのトラフィックルーティングが正しく機能していることを検証してください。
 
-`X-AEM-Edge-Key` を取得後、リクエストが正しくルーティングされているかどうかを、次のようにテストできます。
+`X-AEM-Edge-Key` を設定したら、リクエストが正しくルーティングされているかどうかを、次のようにテストできます。
 
 Linux® の場合：
 
