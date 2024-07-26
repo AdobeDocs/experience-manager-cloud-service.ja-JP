@@ -4,10 +4,10 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 4492536120989423b639bbb75105568a9c328507
 workflow-type: tm+mt
-source-wordcount: '5400'
-ht-degree: 100%
+source-wordcount: '5469'
+ht-degree: 98%
 
 ---
 
@@ -1154,6 +1154,14 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 ## 認証 {#authentication}
 
 [コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証](/help/headless/security/authentication.md)を参照してください。
+
+## 自動テスト {#automated-testing}
+
+AEM Cloud Managerでデプロイメントパイプラインを実行する場合、パイプラインの実行中に自動テストが実行されます。
+
+正確な結果を得るには、AEM as a Cloud Service **ステージング** 環境で **実稼動** 環境をできるだけ正確にミラーリングする必要があります。 これは、コンテンツにとって特に重要です。
+
+それには、AEM as a Cloud Service[ コンテンツコピーツール ](/help/implementing/developing/tools/content-copy.md) を使用して、実稼動コンテンツをステージング環境にコピーします。
 
 ## 制限事項 {#limitations}
 
