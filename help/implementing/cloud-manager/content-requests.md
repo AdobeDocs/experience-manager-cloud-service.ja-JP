@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a1b0d37b2f2f4e58b491651cb8e6504a6909393e
+source-git-commit: af2985f29cb867162061bbac465b19637aa0ecad
 workflow-type: tm+mt
-source-wordcount: '1381'
-ht-degree: 100%
+source-wordcount: '1405'
+ht-degree: 95%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 100%
 | --- | --- | --- |
 | HTTP コード 100-299 | 次のものが含まれます。 | これらは、すべてのコンテンツまたはコンテンツの一部を配信する通常のリクエストです。 |
 | 自動化用の HTTP ライブラリ | 次のものが含まれます。 | 例：<br>・Amazon CloudFront<br>・Apache Http Client<br>・非同期 Http クライアント<br>・Axios<br>・アズレウス<br>・Curl<br>・GitHub ノードフェッチ<br>・Guzzle<br>・Go-http-client<br>・ヘッドレスクロム<br>・ Java™ Client<br>・ジャージー<br>・Node Oembed<br>・okhttp<br>・Python リクエスト<br>・Reactor Netty<br>・Wget<br>・WinHTTP |
-| 監視ツールおよびヘルスチェックツール | 次のものが含まれます。 | これらは、サイトの特定の側面を監視するために顧客が設定します。例えば、可用性や実際のユーザーパフォーマンスなどです。サイトからの実際の HTML ページではなく、`/system/probes/health` エンドポイントを使用します。<br>例：<br>・Amazon-Route53-Health-Check-Service<br>・EyeMonIT_bot_version_0.1_[（https://www.eyemon.it/）](https://www.eyemon.it/)<br>・Runvison-Site24 x 7<br>・Mozilla/5.0 以降（互換；UptimeRobot/2.0；[https://uptimerobot.com/](https://uptimerobot.com/)）<br>・SoundEyes-Dragonfly-x1<br>・OmtrBot/1.0<br>・WebMon/2.0.0 |
+| 監視ツールおよびヘルスチェックツール | 次のものが含まれます。 | これらは、サイトの特定の側面を監視するために顧客が設定します。例えば、可用性や実際のユーザーパフォーマンスなどです。これらが/system/probes/health for health checks などの特定のエンドポイントをターゲットにしている場合は、サイトの実際のHTMLページではなく、`/system/probes/health` エンドポイントを使用することをお勧めします。[ 以下を参照 ](#excluded-content-request)<br> 例：<br>・ Amazon-Route53-Health-Check-Service<br>・ EyeMonIT_bot_version_0.1_[ （https://www.eyemon.it/） ](https://www.eyemon.it/)<br>・ Investis-Site24x7<br>・ Mozilla/5.0+（compatible; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/)） <br>・ ThousandsEyes-Dragonfly-x1<br>・ OmtrBot/2.0.0<br> |
 | `<link rel="prefetch">` リクエスト | 次のものが含まれます。 | 次のページの読み込み速度を上げるには、ユーザーがリンクをクリックする前にブラウザーで一連のページを読み込むように設定し、既にキャッシュに存在している必要があります。*注意：これにより、取得されるこれらのページの数に応じて、トラフィックが大幅に増加します*。 |
 | Adobe Analytics または Google Analytics レポートをブロックするトラフィック | 次のものが含まれます。 | サイトの訪問者が、Google Analytics や Adobe Analytic sの正確性に影響を与えるプライバシーソフトウェア（広告ブロッカーなど）をインストールしていることがよくあります。AEM as a Cloud Service は、クライアントサイドではなく、アドビが運用するインフラストラクチャへの最初のエントリポイントに対するリクエストをカウントします。 |
 
@@ -73,7 +73,7 @@ ht-degree: 100%
 | /libs/* に移動するリクエスト | 除外済み | AEM の内部 JSON リクエスト（課金対象でない CSRF トークンなど）。 |
 | DDoS 攻撃からのトラフィック | 除外済み | DDoS 保護。AEM は一部の DDoS 攻撃を自動検出しブロックします。DDoS 攻撃は、検出された場合、課金対象ではありません。 |
 | AEM as a Cloud Service NewRelic 監視 | 除外済み | AEM as a Cloud Service グローバル監視。 |
-| 顧客が Cloud Service プログラムを監視するための URL | 除外済み | 可用性を外部で監視するための推奨 URL。<br><br>`/system/probes/health` |
+| 顧客が Cloud Service プログラムを監視するための URL | 除外済み | 可用性またはヘルスチェックを外部で監視するには、URL を使用することをお勧めします。<br><br>`/system/probes/health` |
 | AEM as a Cloud Service ポッドウォームアップサービス | 除外済み |
 | エージェント：skyline-service-warmup/1。* |
 | よく知られている検索エンジン、ソーシャルネットワーク、HTTP ライブラリ（Fastly によってタグ付け） | 除外済み | サイトを定期的に訪問し、検索インデックスやサービスを更新するよく知られたサービス：<br><br>例：<br>・ AddSearchBot<br>・ AhrefsBot<br>・ Applebot<br>・ Ask Jeeves Corporate Spider<br>・ Bingbot<br>・ BingPreview<br>・ BLEXBot<br>・ BuiltWith<br>・ Bytespider<br>・ CrawlerKengo<br>・ Facebookexternalhit<br>・ Google AdsBot<br>・ Google AdsBot Mobile<br>・ Googlebot<br>・ Googlebot Mobile<br>・ lmspider<br>・ LucidWorks<br>・ MJ12bot<br>・ Pingdom<br>・ Pinterest<br>・ SemrushBot<br>・ SiteImprove<br>・ StashBot<br>・ StatusCakes<br>・ YandexBot |
