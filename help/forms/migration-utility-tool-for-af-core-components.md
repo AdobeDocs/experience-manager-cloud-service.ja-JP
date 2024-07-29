@@ -8,14 +8,16 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 5d8f4d5d628b090b8bf54de0f2d9d62c02544522
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 4%
+source-wordcount: '991'
+ht-degree: 7%
 
 ---
 
 # はじめに
+
+<span class="preview">機能は、早期導入プログラムで利用できます。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID で aem-forms-ea@adobe.com までメールを送信してください。</span>
 
 [AEM Modernize Tool](https://opensource.adobe.com/aem-modernize-Tools/) スイートの一部であるForms変換ユーティリティを使用すると、従来の基盤コンポーネントで構築されたアダプティブFormsを、サポートされている最新のコアコンポーネント機能を利用するフォームに簡単に変換できます。
 
