@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: af2985f29cb867162061bbac465b19637aa0ecad
+source-git-commit: 5296d46658f591d7736587c98b112006d947321d
 workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 95%
+source-wordcount: '1288'
+ht-degree: 94%
 
 ---
 
@@ -21,11 +21,6 @@ ht-degree: 95%
 ## Cloud Service コンテンツリクエストについて {#understanding-cloud-service-content-requests}
 
 標準の CDN を使用しているお客様の場合、Cloud Service コンテンツリクエストは、サーバーサイドのデータ収集を通じて測定されます。コレクションは、CDN ログ分析を通じて有効になります。コンテンツリクエストは、AEM as a Cloud Service CDN からのログファイルを自動分析することで、Adobe Experience Manager as a Cloud Service のエッジにあるサーバーサイドで自動的に収集されます。この処理は、HTML `(text/html)` または JSON `(application/json)` コンテンツを返すリクエストを CDN から分離し、以下で説明するいくつかの包含ルールと除外ルールに基づいて行われます。コンテンツリクエストは、返されたコンテンツ（CDN キャッシュから提供）または CDN（AEM の Dispatcher）のオリジンに戻されるコンテンツとは独立して行われます。
-
-独自の CDN を採用しているお客様の場合、クライアントサイドのコレクションはユーザーインタラクションをより正確に反映し、[実際の使用のモニタリング](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)サービスを通じて web サイトのエンゲージメントを信頼性の高い方法で測定します。これにより、お客様はページのトラフィックとパフォーマンスに関する高度なインサイトを取得できます。すべてのお客様にとって有益であるだけでなく、ユーザーインタラクションの代表的な反映を提供し、クライアントサイドからページビュー数を取得することで、web サイトのエンゲージメントを確実に測定できます。
-
-独自の CDN を AEM as a Cloud Service 上に導入しているお客様の場合、サーバーサイドのレポートでは、ライセンス済みのコンテンツリクエストとの比較に使用できない数値が生じます。アドビでは、[実際の使用のモニタリング](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)を用いて、web サイトのエンゲージメントに関する信頼性の高い測定結果を反映させることができます。
-
 
 ### Cloud Service コンテンツリクエストの相違 {#content-requests-variances}
 
