@@ -4,7 +4,7 @@ description: リンクとして共有、ダウンロード、 [!DNL Brand Portal
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 100%
@@ -121,6 +121,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 | `${emailMessage}` | メール本文 |
 | `${pagePath}` | 共有リンクの URL |
 | `${linkExpiry}` | 共有リンクの有効期限 |
+
 <!--| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |-->
 
 #### カスタマイズされたメールテンプレートの例 {#custom-email-template-example}

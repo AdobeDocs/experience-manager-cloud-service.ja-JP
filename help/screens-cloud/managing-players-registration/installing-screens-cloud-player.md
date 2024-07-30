@@ -4,7 +4,7 @@ description: ここでは、Screens as a Cloud Service でプレーヤーをイ�
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 100%
@@ -71,10 +71,12 @@ AEM Screens Player での基本的な再生モニタリングにより、以下�
 | lastContentChange {string} | 最後にコンテンツが変更されたときのタイムスタンプ |
 
 >[!NOTE]
+>
 >オプションで、プレーヤーの環境設定から、より高度なプロパティを有効にできます（再生モニタリングを有効にする）。
->|プロパティ|説明|
+>
+>| プロパティ | 説明 |
 >|---|---|
->|isContentRendering {boolean}|GPU が実際のコンテンツを再生していることを（ピクセル分析に基づいて）確認できる場合は true|
+>| isContentRendering {boolean} | GPU が実際のコンテンツを再生していることを（ピクセル分析に基づいて）確認できる場合は true |
 
 ### 制限事項 {#limitations}
 
