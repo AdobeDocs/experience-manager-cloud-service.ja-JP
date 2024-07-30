@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 573de431328650778b3ef0979a24190477382310
-workflow-type: ht
-source-wordcount: '332'
-ht-degree: 100%
+source-git-commit: dc7150c6ce971aa6f89fa24f7ca387cbb28db1f2
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 63%
 
 ---
 
@@ -16,42 +16,41 @@ ht-degree: 100%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 17098 {#release-17098}
+## リリース 17258 {#release-17258}
 
-2024年7月16日（PT）に公開された、メンテナンスリリース 17098 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 16971 でした。
+2024年7月30日（PT）に公開された、メンテナンスリリース 17258 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 17098 でした。
 
-2024.7.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
+2024.8.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
 
-### 機能強化 {#enhancements-17098}
+### 機能強化 {#enhancements-17258}
 
-- SKYOPS-79817：サービスユーザーマッピング用の Sling 機能アナライザータスクを有効にする
+* ASSETS-31445 - Dynamic Mediaの初期テンプレート機能
+* ASSETS-40399 - DM 自動トランスクリプトキューの設定を更新しました
+* ASSETS-40873 - OSGI 設定を使用してメタデータのエクスポートの最大行数を設定できるようにします
 
-### 修正された問題 {#fixed-issues-17098}
+### 修正された問題 {#fixed-issues-17258}
 
-- ASSETS-39665：6.5 から AEMCS への移行後、スマート切り抜き同期が機能しない
-- FORMS-14993：以前機能していた販促物に対して、Forms API が 500 を返す
-- GRANITE-52120：アクセス制御データを表示する際に、CRXDE が 500 を返す
-- GRANITE-52573：書き換えられた URL で // を使用する際に、リクエストが 400 を返す
-- GRANITE-52746：ノードを作成ダイアログに、すべてのノードタイプが読み込まれない
-- GRANITE-52777：リクエストをラップする際に、404 の処理が破損する
-- GRANITE-52871：publish-worker が golden-publish と同期され、コンパクション前に完了する
-- SKYOPS-79173：レプリケーターが、特定の AgentIdFilter に一致する複数のエージェントにレプリケートしない
-- SKYOPS-80075：アセット名のウムラウトの問題により、公開キューがブロックされる（Mac）
-- SKYOPS-81032：拡張ロギングを使用する際に、ログを取得するリクエストで生成したログが除外される
+* ASSETS-30613 – 「アセットを置換」で、新しい配信層のアセットが削除されたり追加されたりしない
+* ASSETS-31882 - オーサーのストリーミングマニフェストファイルへのアクセスは禁止されています
+* ASSETS-39598 – 名前に特殊文字が含まれるアセットを S3 バックエンドから一括読み込みで削除できない
+* CNTBF-209 - バックフロージョブキャンセルの改善
+* SCRNS-3762 - ブラウザーでチャネルをプレビューする際にコンソールにログを配置するように、シーケンスチャネルの playerLogger を改善しました
+* SCRNS-4455 - チャネル用コンテンツプロバイダーで、管理者以外のユーザーに対して「公開を管理」および「クイックPublish」ボタンが表示されない
+* SITES-22940 - コンテンツフラグメントをワークフローペイロードとして表示できない
 
-### 既知の問題 {#known-issues-17098}
+### 既知の問題 {#known-issues-17258}
 
 なし
 
-### 変更通知 {#change-notice-17098}
+### 変更通知 {#change-notice-17258}
 
-- 2024年9月以降、AEM as a Cloud Service では、Sling Model Exporter フレームワークを介したリソースリゾルバーのシリアル化が無効になります。 詳しくは、[ドキュメント](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)を参照してください。
+* 2024年9月以降、AEM as a Cloud Service では、Sling Model Exporter フレームワークを介したリソースリゾルバーのシリアル化が無効になります。 詳しくは、[ドキュメント](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)を参照してください。
 
-### 廃止された機能と API {#deprecated-17098}
+### 廃止された機能と API {#deprecated-17258}
 
 AEM as a Cloud Service で廃止および削除された機能と API について詳しくは、[廃止および削除された機能と API](/help/release-notes/deprecated-removed-features.md) ドキュメントを参照してください。
 
-### 組み込みテクノロジー {#embedded-tech-17098}
+### 組み込みテクノロジー {#embedded-tech-17258}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
