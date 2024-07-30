@@ -4,10 +4,10 @@ description: AEM の管理による CDN を使用する方法と、独自の CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 4c145559d1ad18d31947c0437d6d1d31fb3af1bb
+source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 84%
+source-wordcount: '1552'
+ht-degree: 67%
 
 ---
 
@@ -44,7 +44,8 @@ Cloud Manager セルフサービス UI を使用して、AEM の標準搭載 CDN
 
 ### CDN でのトラフィックの設定 {#cdn-configuring-cloud}
 
-次のような様々な方法で、CDN でのトラフィックを設定します。
+CDN でのトラフィックは、次のような様々な方法で設定できます。
+
 * [ トラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md) （オプションでライセンス可能な高度なWAF ルールを含む）を使用した悪意のあるトラフィックのブロック
 * [ リクエストと応答 ](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) の特性の変更
 * 301/302 の適用 [ クライアントサイドのリダイレクト ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
@@ -64,7 +65,7 @@ HTTP キャッシュ制御ヘッダーを使用した TTL の設定は、コン�
 
 ### CDN での基本認証 {#basic-auth}
 
-ビジネス関係者によるコンテンツのレビューなど、認証に関する小規模なユースケースの場合は、ユーザー名とパスワードを必要とする基本認証ダイアログを表示してコンテンツを保護します。 [ 詳細情報 ](/help/implementing/dispatcher/cdn-credentials-authentication.md) を参照し、早期導入プログラムに参加してください。
+コンテンツのレビューを行うビジネスステークホルダーなど、認証に関する小規模なユースケースの場合は、ユーザー名とパスワードを必要とする基本認証ダイアログを表示して、コンテンツを保護します。 [ 詳細情報 ](/help/implementing/dispatcher/cdn-credentials-authentication.md) を参照し、早期導入プログラムに参加してください。
 
 ## 顧客 CDN でAEMの管理による CDN を参照する {#point-to-point-CDN}
 
@@ -145,6 +146,26 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
+
+### 一般的なエラー {#common-errors}
+
+提供されるサンプル設定は必要な基本設定を示していますが、お客様の設定には、AEM as a Cloud Serviceがトラフィックに対応するために必要なヘッダーを削除、変更、再配置する、その他の影響を及ぼすルールが含まれている場合があります。 顧客が管理する CDN をAEM as a Cloud Serviceを指すように設定する際に発生する一般的なエラーを以下に示します。
+
+**Publish サービスエンドポイントへのリダイレクト**
+
+リクエストが 403 forbidden 応答を受け取った場合は、リクエストに必要なヘッダーのいくつかが欠落していることを意味します。 この一般的な原因は、CDN が apex と `www` ドメインの両方のトラフィックを管理しているものの、`www` ドメインに適したヘッダーを追加していないことです。 この問題は、AEM as a Cloud Service CDN ログを確認し、必要なリクエストヘッダーを確認することで、トリアージすることができます。
+
+**リダイレクト ループが多すぎます**
+
+ページが「リダイレクトが多すぎます」ループを取得する場合、リダイレクトに一致する一部のリクエストヘッダーが CDN に追加され、リダイレクトが強制的に自身に戻されます。 次に例を示します。
+
+* CDN ルールは、apex ドメインまたは www ドメインのいずれかに一致するように作成され、apex ドメインのみの X-Forwarded-Host ヘッダーを追加します。
+* apex ドメインのリクエストはこの CDN ルールに一致し、apex ドメインを X-Forwarded-Host ヘッダーとして追加します。
+* リダイレクトが apex ドメインのホストヘッダーと明示的に一致するオリジンにリクエストが送信されます（例：^example.com）。
+* 書き換えルールがトリガーされ、apex ドメインのリクエストが www サブドメインを使用して https に書き換えられます。
+* その後、このリダイレクトは顧客のエッジに送信され、CDN ルールが再トリガーされて、www サブドメインではなく apex ドメインの X-Forwarded-Host ヘッダーが追加されます。 その後、リクエストが失敗するまでプロセスをやり直します。
+
+この問題を解決するには、SSL リダイレクト戦略、CDN ルール、リダイレクトおよび書き換えルールの組み合わせを評価します。
 
 ## 位置情報ヘッダー {#geo-headers}
 
