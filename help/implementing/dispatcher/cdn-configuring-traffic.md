@@ -4,7 +4,7 @@ description: 設定ファイルでルールとフィルターを宣言し、Clou
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 3c546a05cf91dd8dcba39e42cd0f19857713f130
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 87%
@@ -276,7 +276,7 @@ data:
         action:
           type: selectOrigin
           originName: example-com
-          # skpCache: true
+          # skipCache: true
     origins:
       - name: example-com
         domain: www.example.com

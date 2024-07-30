@@ -4,10 +4,10 @@ description: AEM の管理による CDN を使用する方法と、独自の CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 4c145559d1ad18d31947c0437d6d1d31fb3af1bb
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 93%
+source-wordcount: '1250'
+ht-degree: 84%
 
 ---
 
@@ -44,13 +44,29 @@ Cloud Manager セルフサービス UI を使用して、AEM の標準搭載 CDN
 
 ### CDN でのトラフィックの設定 {#cdn-configuring-cloud}
 
-[Cloud Managerの設定パイプラインを使用すると、CDN のトラフィックおよびフィルターを設定するルールを設定ファイルで宣言し、CDN にデプロイできます。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) 詳しくは、[CDN でのトラフィックの設定 ](/help/implementing/dispatcher/cdn-configuring-traffic.md) および [WAF ルールを含むトラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md) を参照してください。
+次のような様々な方法で、CDN でのトラフィックを設定します。
+* [ トラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md) （オプションでライセンス可能な高度なWAF ルールを含む）を使用した悪意のあるトラフィックのブロック
+* [ リクエストと応答 ](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) の特性の変更
+* 301/302 の適用 [ クライアントサイドのリダイレクト ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
+* 非AEM バックエンドにリクエストをリバースプロキシするための [ オリジンセレクター ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) の宣言
+
+Git で YAML ファイルを使用して、Cloud Manager [Config パイプライン ](/help/implementing/dispatcher/cdn-configuring-traffic.md) を使用してデプロイすることにより、これらの機能を設定する方法を説明します。
 
 ### CDN エラーページの設定 {#cdn-error-pages}
 
 CDN エラーページは、まれに AEM に到達できない場合にブラウザーに提供されるデフォルトのブランド化されていないページを上書きするように設定できます。詳しくは、[CDN エラーページの設定](/help/implementing/dispatcher/cdn-error-pages.md)を参照してください。
 
-## 顧客 CDN で AEM の管理による CDN を参照する {#point-to-point-CDN}
+### CDN でのキャッシュされたコンテンツのパージ {#purge-cdn}
+
+HTTP キャッシュ制御ヘッダーを使用した TTL の設定は、コンテンツ配信のパフォーマンスとコンテンツの鮮度のバランスを取る効果的なアプローチです。 ただし、更新されたコンテンツを直ちに提供することが重要なシナリオでは、CDN キャッシュを直接パージすると便利な場合があります。
+
+[ パージ API トークンの設定 ](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) および [ キャッシュされた CDN コンテンツのパージ ](/help/implementing/dispatcher/cdn-cache-purge.md) を参照してください。
+
+### CDN での基本認証 {#basic-auth}
+
+ビジネス関係者によるコンテンツのレビューなど、認証に関する小規模なユースケースの場合は、ユーザー名とパスワードを必要とする基本認証ダイアログを表示してコンテンツを保護します。 [ 詳細情報 ](/help/implementing/dispatcher/cdn-credentials-authentication.md) を参照し、早期導入プログラムに参加してください。
+
+## 顧客 CDN でAEMの管理による CDN を参照する {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -71,7 +87,7 @@ CDN エラーページは、まれに AEM に到達できない場合にブラ�
 1. SNI をAdobe CDN の入力に設定する。
 1. ホストヘッダーを接触チャネルドメインに設定します（例：`Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`）。
 1. AEM がホストヘッダーを決定できるように、`X-Forwarded-Host` ヘッダーにドメイン名を設定します（例：`X-Forwarded-Host:example.com`）。
-1. `X-AEM-Edge-Key` を設定します。この値は、（この記事 [ で説明しているように、Cloud Manager設定パイプラインを使用して設定する必要 ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) あります。
+1. `X-AEM-Edge-Key` を設定します。この値は、（この記事 [ で説明しているように、Cloud Manager設定パイプラインを使用して設定する必要 ](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value) あります。
 
    * これは、Adobe CDN でリクエストのソースを検証し、`X-Forwarded-*` ヘッダーを AEM アプリケーションに渡すために必要です。例えば、`X-Forwarded-For` を使用してクライアント IP を決定します。したがって、`X-Forwarded-*` ヘッダーが正しいことを確認するのは、信頼できる呼び出し元（顧客が管理する CDN）の責任となります（以下のメモを参照）。
    * 必要に応じて、`X-AEM-Edge-Key` が存在しない場合に Adobe CDN の入口へのアクセスをブロックできます。Adobe CDN の入力に直接アクセスする必要がある場合（ブロックする場合）は、アドビにお知らせください。

@@ -4,20 +4,17 @@ description: API 呼び出しで使用できるパージ API トークンを設�
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3b55f3094b7154b7723ef7ae2230d7ae01eb4abc
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 100%
+source-wordcount: '437'
+ht-degree: 89%
 
 ---
 
 # CDN キャッシュのパージ {#cdn-purge-cache}
 
->[!NOTE]
->この機能はまだ一般提供されていません。早期導入プログラムに参加するには、`aemcs-cdn-config-adopter@adobe.com` にメールを送信します。
-
 パージでは、Adobe CDN キャッシュからオブジェクトが削除されるので、その後のリクエストはキャッシュから提供されるのではなく、キャッシュミスとしてオリジンに向かいます。
-AEM as a Cloud Service を使用すると、API 呼び出しで使用できるパージ API トークンを設定できます。Cloud Manager 設定パイプライン認証ディレクティブを使用してこのトークンを設定する方法については、[CDN 資格情報と認証の設定](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)の記事を参照してください。
+AEM as a Cloud Serviceでは、Purge API Token を設定して、Purge API 呼び出しで使用できます。 Cloud Manager Config Pipeline Authentication ディレクティブを使用してこのトークンを設定する方法については、[CDN 資格情報と認証の設定 ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) を参照してください。
 
 サポートされているパージには、次の 3 つのバリエーションがあります。
 
