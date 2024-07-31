@@ -870,7 +870,7 @@ ht-degree: 99%
    + [AEM での Edge Delivery の使用](/help/edge/using.md)
    + [オーサリング方法の選択](/help/edge/authoring-methods.md)
    + WYSIWYG オーサリング {#wysiwyg-authoring}
-      + [Edge Delivery用の WYSIWYG コンテンツオーサリング](/help/edge/wysiwyg-authoring/authoring.md)
+      + [Edge Delivery 向けの WYSIWYG コンテンツのオーサリング](/help/edge/wysiwyg-authoring/authoring.md)
       + [Edge 配信向けのコンテンツの公開](/help/edge/wysiwyg-authoring/publishing.md)
       + [開発者用入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
       + [ブロックの作成](/help/edge/wysiwyg-authoring/create-block.md)
