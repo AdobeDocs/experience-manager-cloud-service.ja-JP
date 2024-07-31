@@ -4,10 +4,10 @@ description: Web アプリケーションファイアウォール（WAF）ルー
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 7ce397b2564373a006d7f413409d29265c74d768
 workflow-type: tm+mt
-source-wordcount: '3939'
-ht-degree: 92%
+source-wordcount: '3932'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 92%
 
 トラフィックフィルター規則のサブカテゴリには、拡張セキュリティライセンスまたは WAF-DDoS 保護ライセンスが必要です。これらの強力なルールは、WAF（web アプリケーションファイアウォール）トラフィックフィルタールール（または WAF ルール）と呼ばれ、この記事で後述される [WAF フラグ](#waf-flags-list)にアクセスできます。
 
-トラフィックフィルタールールは、Cloud Manager設定パイプラインを使用して、実稼動（サンドボックス以外）プログラムの開発環境、ステージング環境および実稼動環境タイプにデプロイできます。 RDE のサポートは今後提供される予定です。
+トラフィックフィルタールールは、Cloud Manager 設定パイプラインを通じて、実稼動（サンドボックス以外の）プログラムで、開発環境、ステージ環境および実稼動環境のタイプにデプロイできます。RDE のサポートは今後提供される予定です。
 
 [チュートリアルに従って](#tutorial)、この機能に関する具体的な専門知識をすばやく構築します。
 
@@ -64,13 +64,13 @@ ht-degree: 92%
 
 例えば、Apache レイヤーでは、お客様が [Dispatcher モジュール](https://experienceleague.adobe.com/ja/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)または [ModSecurity](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) を設定して、特定のコンテンツへのアクセスを制限できます。
 
-この記事で説明しているように、Cloud Managerの [config パイプラインを使用して、トラフィックフィルタールールをAdobe管理 CDN にデプロイできます。](/help/operations/config-pipeline.md) IP アドレス、パス、ヘッダーなどのプロパティに基づくトラフィックフィルタールールや、レート制限の設定に基づくルールに加えて、WAF ルールと呼ばれる強力なサブカテゴリのトラフィックフィルタールールのライセンスも取得できます。
+この記事で説明するように、トラフィックフィルタールールは、Cloud Manager の設定パイプラインを使用して、アドビが管理する CDN にデプロイできます。[](/help/operations/config-pipeline.md)IP アドレス、パス、ヘッダーなどのプロパティに基づくトラフィックフィルタールールおよびレート制限の設定に基づくルールに加えて、お客様は、WAF ルールと呼ばれる強力なトラフィックフィルタールールのサブカテゴリをライセンスできます。
 
 ## 推奨プロセス {#suggested-process}
 
 適切なトラフィックフィルタールールを検討するための、エンドツーエンドで推奨される概要プロセスを次に示します。
 
-1. [ 設定 ](#setup) の節の説明に従って、実稼動以外の設定パイプラインと実稼動設定パイプラインを設定します。
+1. 実稼動環境以外および実稼動環境の設定パイプラインの指定について詳しくは、[設定](#setup)の節を参照してください。
 1. WAF トラフィックフィルタールールのサブカテゴリに対するライセンスを持つお客様は、Cloud Manager でそのサブカテゴリを有効にする必要があります。
 1. このチュートリアルを読んで、ライセンスを取得している場合は WAF ルールを含むトラフィックフィルタールールの使用方法を具体的に学びます。このチュートリアルでは、開発環境にルールのデプロイ、悪意のあるトラフィックのシミュレート、[CDN ログ](#cdn-logs)のダウンロード、[ダッシュボードツール](#dashboard-tooling)での分析を行う方法を説明します。
 1. 推奨されるスタータールールを `cdn.yaml` にコピーして、ログモードで実稼動環境に設定をデプロイします。
@@ -80,7 +80,7 @@ ht-degree: 92%
 
 ## 設定 {#setup}
 
-1. WAF ルールを含む一連のトラフィックフィルタールールを含んだファイル `cdn.yaml` を作成します。
+1. WAF ルールなどトラフィックフィルタールールのセットを含むファイル `cdn.yaml` を作成します。
 
    ```
    kind: "CDN"
@@ -101,22 +101,22 @@ ht-degree: 92%
          action: block
    ```
 
-   `data` ノードの上のプロパティの説明については、[config パイプライン ](/help/operations/config-pipeline.md#common-syntax) の記事を参照してください。 `kind` プロパティの値は *CDN* に設定し、バージョンは `1` に設定する必要があります。
+   `data` ノード上のプロパティの説明については、[設定パイプラインの記事](/help/operations/config-pipeline.md#common-syntax)を参照してください。`kind` プロパティの値は *CDN* に設定し、バージョンは `1` に設定する必要があります。
 
 
 1. WAF ルールにライセンスが付与されている場合は、新規および既存のプログラムシナリオの両方について、以下で説明するように、Cloud Manager で機能を有効にする必要があります。
 
    1. 新しいプログラムで WAF を設定するには、[実稼動プログラムを追加](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)する際に「**セキュリティ**」タブの「**WAF-DDOS 保護**」チェックボックスをオンにします。
 
-   1. 既存のプログラムにWAFを設定するには、[ プログラムを編集 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) し、「**セキュリティ** タブで、「**WAF-DDOS**」オプションのチェックを随時オフまたはオンにします。
+   1. 既存のプログラムで WAF を設定するには、[プログラムを編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)し、任意の時点で「**セキュリティ**」タブで「**WAF-DDOS**」オプションをオフまたはオンにします。
 
-1. [config パイプラインの記事に記載されているように、Cloud Managerで config パイプラインを作成します。](/help/operations/config-pipeline.md#managing-in-cloud-manager) パイプラインは、（ここで説明されているように [ 下の場所に配置された `cdn.yaml` ファイルを含む最上位の `config` フォルダーを参照し ](/help/operations/config-pipeline.md#folder-structure) す。
+1. 設定パイプラインの記事の説明に従って、Cloud Manager で設定パイプラインを作成します。[](/help/operations/config-pipeline.md#managing-in-cloud-manager)[こちらで説明](/help/operations/config-pipeline.md#folder-structure)するように、パイプラインは、`cdn.yaml` ファイルが下の任意の場所に配置された最上位レベルの `config` フォルダーを参照します。
 
 ## トラフィックフィルタールールの構文 {#rules-syntax}
 
-IP、ユーザーエージェント、リクエストヘッダー、ホスト名、地域、URL などのパターンに一致するように、*トラフィックフィルタールール* を設定できます。
+*トラフィックフィルタールール* を設定して、IP、ユーザーエージェント、リクエストヘッダー、ホスト名、地域、url などのパターンを照合できます。
 
-Enhanced Security またはWAF-DDoS Protection Security 製品のライセンスを取得しているお客様は、*WAF トラフィックフィルタールール* （または略してWAF ルール）と呼ばれる、1 つ以上の [WAF フラグ ](#waf-flags-list) を参照する特別なカテゴリのトラフィックフィルタールールを設定することもできます。
+また、拡張セキュリティや WAF-DDoS 保護セキュリティの機能のライセンスが付与されているお客様は、1 つ以上の [WAF フラグ](#waf-flags-list)を参照する *WAF トラフィックフィルタールール*（略称：WAF ルール）と呼ばれる特別なカテゴリのトラフィックフィルタールールを設定することもできます。
 
 WAF ルールも含む一連のトラフィックフィルタールールの例を以下に示します。
 
@@ -262,7 +262,7 @@ when:
 | スキャナー | スキャナー | 一般に使用されるスキャンサービスおよびツールを指定します。 |
 | RESPONSESPLIT | HTTP 応答分割 | HTTP 応答にヘッダーを挿入するために CRLF 文字をアプリケーションへの入力として送信するタイミングを指定します。 |
 | XML-ERROR | XML エンコーディングエラー | 「Content-Type」リクエストヘッダー内に XML を含むように指定されているが、XML 解析エラーが含まれている POST、PUT または PATCH リクエスト本文です。これは、多くの場合、プログラミングエラー、自動リクエストまたは悪意のあるリクエストに関係しています。 |
-| データセンター | データセンター | リクエストの発信元が既知のホスティングプロバイダーであることを識別します。 このタイプのトラフィックは、通常、実際のエンドユーザーには関連付けられません。 |
+| DATACENTER | データセンター | リクエストの発信元が既知のホスティングプロバイダーであることを識別します。このタイプのトラフィックは、通常、実際のエンドユーザーに関連付けられません。 |
 
 
 ## 考慮事項 {#considerations}
@@ -507,10 +507,6 @@ data:
 
 ## 接触チャネルでのトラフィックスパイクを示すデフォルトアラート {#traffic-spike-at-origin-alert}
 
->[!NOTE]
->
->この機能は段階的にロールアウトされています。
-
 [アクションセンター](/help/operations/actions-center.md)メール通知は、接触チャネルに大量のトラフィックが送信された際に送信されます。この場合、同じ IP アドレスから高しきい値のリクエストが送信されているため、DDoS 攻撃が示唆されています。
 
 このしきい値に達すると、アドビはその IP アドレスからのトラフィックをブロックしますが、接触チャネルを保護するための追加の対策を講じることをお勧めします。例えば、低いしきい値でトラフィックスパイクをブロックするようにレート制限トラフィックフィルタールールを設定することができます。ガイド付きのウォークスルーについては、[トラフィックルールを使用した DoS および DDoS 攻撃のブロック（チュートリアル）](#tutorial-blocking-DDoS-with-rules)を参照してください。
@@ -736,7 +732,7 @@ WAF ルールを含むトラフィックフィルタールールに関する一�
 
 チュートリアルでは、次の方法について説明します。
 
-* Cloud Manager設定パイプラインの設定
+* Cloud Manager 設定パイプラインの設定
 * ツールを使用した悪意のあるトラフィックのシミュレート
 * WAF ルールを含むトラフィックフィルタールールの宣言
 * ダッシュボードツールを使用した結果の分析
