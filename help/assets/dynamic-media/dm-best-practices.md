@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: fca8b4b34718bd7d22186740fac383b87e968cdb
+source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
 workflow-type: tm+mt
 source-wordcount: '4105'
 ht-degree: 86%
@@ -76,15 +76,23 @@ Dynamic Media ビューアのベストプラクティスは、AEM上のDynamic M
 
 これらのベストプラクティスに従うと、シームレスな統合、効率的なアセット管理、強化されたビューアのインタラクションを実現できます。 アセットの同期、スマート切り抜きの使用、JavaScript ファイルの包含ガイドラインへの準拠はすべて重要なプラクティスです。 これらの推奨事項は、様々なプラットフォームやデバイスにわたってメディア配信の整合性と信頼性を維持するのに役立ちます。
 
-* **ビューアAssetsを同期**:Player を使用する前に、すべてのビューアアセットがDynamic Mediaと同期されていることを確認してください。 ビューアのトラブルシューティングについては、[Dynamic Media ビューアのトラブルシューティング ](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) を参照してください。
-* **サンプルマネージャーページ：** `/libs/dam/gui/content/s7dam/samplemanager/samplemanager` のサンプルマネージャーページにアクセスします。
-* **Publish Assets:** 配信ビューアで表示する前に、アセットが公開されていることを確認してください。
-* **ビデオの自動再生をミュート：** ビデオの自動再生機能を使用する場合は、ブラウザーがボリュームのあるビデオの再生を制限するので、ミュートされたビデオ設定を使用します。
-* **スマート切り抜き：** 画像アセットのプレゼンテーションを強化するスマート切り抜きには、画像 v3 コンポーネントを使用します。
-* **JavaScript ファイルの組み込み：** ページにプライマリビューアのJavaScript ファイルのみを含めます。 ビューアのランタイムロジックがダウンロードする可能性のある追加のJavaScript ファイルは参照しないでください。 特に、`/s7viewers` コンテキストパス（Consolidated SDK include と呼ばれます）からHTML5 SDK `Utils.js` ライブラリに直接リンクしないでください。 ビューアのロジックは、`Utils.js` または類似のランタイムビューアライブラリの場所を管理します。ランタイムビューアライブラリは、リリース間で変更される場合があります。 Adobeは、サーバー上のセカンダリビューアインクルードの古いバージョンを保持しないので、それらを直接参照すると、今後の更新でビューア機能が破損する可能性があります。
-* **埋め込みガイドライン：** 各ビューアに固有の埋め込みガイドラインについては、ドキュメントを参照してください。
+* **ビューアのAssetsの同期：**
+プレーヤーを使用する前に、すべてのビューアアセットがDynamic Mediaと同期されていることを確認してください。 ビューアのトラブルシューティングについては、[Dynamic Media ビューアのトラブルシューティング ](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) を参照してください。
+* **サンプルマネージャーページ：**
+`/libs/dam/gui/content/s7dam/samplemanager/samplemanager` のサンプルマネージャーページにアクセスします。
+* **PublishAssets:**
+配信ビューアで表示する前に、アセットが公開されていることを確認してください。
+* **ビデオの自動再生をミュートにする：**
+ビデオの自動再生機能については、ブラウザーがボリュームのあるビデオの再生を制限するので、ミュートされたビデオ設定を使用します。
+* **スマート切り抜き：**
+画像アセットのプレゼンテーションを強調するためのスマート切り抜きでの画像 v3 コンポーネントの使用。
+* **JavaScript ファイルの組み込み：**
+ページにプライマリビューアのJavaScript ファイルのみを含めます。 ビューアのランタイムロジックがダウンロードする可能性のある追加のJavaScript ファイルは参照しないでください。 特に、`/s7viewers` コンテキストパス（Consolidated SDK include と呼ばれます）からHTML5 SDK `Utils.js` ライブラリに直接リンクしないでください。 ビューアのロジックは、`Utils.js` または類似のランタイムビューアライブラリの場所を管理します。ランタイムビューアライブラリは、リリース間で変更される場合があります。 Adobeは、サーバー上のセカンダリビューアインクルードの古いバージョンを保持しないので、それらを直接参照すると、今後の更新でビューア機能が破損する可能性があります。
+* **埋め込みのガイドライン：**
+各ビューアに固有の埋め込みガイドラインについては、ドキュメントを参照してください。
 詳しくは、[AEM Assetsのビューア ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers) に移動します。
-* **SDK チュートリアルと例：** SDK コンポーネント API について詳しくは、[Viewer SDK チュートリアル ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) および [HTML5 SDK アプリケーションの例 ](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) を参照してください。
+* **SDK チュートリアルと例：**
+SDK コンポーネント API について詳しくは、[Viewer SDK Tutorial](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) および [Application5 SDK HTMLの例 ](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) を参照してください。
 
 
 ## 配信用アセットの準備
