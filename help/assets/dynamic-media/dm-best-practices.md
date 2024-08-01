@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
+source-git-commit: ce5f9fc101c86ffdfb685ff493e8f5e508f45e37
 workflow-type: tm+mt
-source-wordcount: '4105'
+source-wordcount: '4118'
 ht-degree: 86%
 
 ---
@@ -77,9 +77,11 @@ Dynamic Media ビューアのベストプラクティスは、AEM上のDynamic M
 これらのベストプラクティスに従うと、シームレスな統合、効率的なアセット管理、強化されたビューアのインタラクションを実現できます。 アセットの同期、スマート切り抜きの使用、JavaScript ファイルの包含ガイドラインへの準拠はすべて重要なプラクティスです。 これらの推奨事項は、様々なプラットフォームやデバイスにわたってメディア配信の整合性と信頼性を維持するのに役立ちます。
 
 * **ビューアのAssetsの同期：**
-プレーヤーを使用する前に、すべてのビューアアセットがDynamic Mediaと同期されていることを確認してください。 ビューアのトラブルシューティングについては、[Dynamic Media ビューアのトラブルシューティング ](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) を参照してください。
-* **サンプルマネージャーページ：**
-`/libs/dam/gui/content/s7dam/samplemanager/samplemanager` のサンプルマネージャーページにアクセスします。
+プレーヤーを使用する前に、すべてのビューアアセットがDynamic Mediaと同期されていることを確認してください。
+
+   * `/libs/dam/gui/content/s7dam/samplemanager/samplemanager` のサンプルマネージャーページにアクセスします。 このページでは、標準提供のアイコン、CSS ファイル、プリセットなどのビューアのアセットを再同期できます。
+   * ビューアに関する問題が発生した場合は、Dynamic Media ビューアのトラブルシューティング ](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) の記事に移動してください [
+
 * **PublishAssets:**
 配信ビューアで表示する前に、アセットが公開されていることを確認してください。
 * **ビデオの自動再生をミュートにする：**
@@ -400,6 +402,7 @@ Dynamic Media スマートイメージングは、クライアントのブラウ
 
 **ビジネスケース：***新しいコンテンツを公開したり、既存のコンテンツを上書きしたりした後に、変更が CDN にすぐに表示されるようにするには、どうすればよいですか？*
 
-CDN （コンテンツ配信ネットワーク）は、顧客に迅速に配信できるようにDynamic Media アセットをキャッシュします。 これらのアセットを更新する場合は、変更を web サイトに直ちに反映することが重要です。 CDN キャッシュを削除または無効にすることで、Dynamic Mediaによって配信されるアセットをすばやく更新できます。 このアプローチにより、通常は 10 時間に設定される TTL （有効期間）の値に基づいてキャッシュの有効期限が切れるのを待つ必要がなくなります。 代わりに、Dynamic Media ユーザーインターフェイス内からリクエストを送信して、キャッシュを数分以内に期限切れにすることができます。
+CDN （コンテンツ配信ネットワーク）は、顧客に迅速に配信できるようにDynamic Media アセットをキャッシュします。 これらのアセットを更新する場合は、変更を web サイトに直ちに反映することが重要です。 CDN キャッシュを削除または無効にすることで、Dynamic Mediaによって配信されるアセットをすばやく更新できます。 このアプローチにより、通常は 10 時間に設定される TTL （有効期間）の値に基づいてキャッシュの有効期限が切れるのを待つ必要がなくなります。
+特定の使用例に応じて、CDN TTL （有効期間）設定を適切に更新できます。
 
 詳しくは、[Dynamic Mediaを使用して CDN キャッシュを無効にする ](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md) に移動します。
