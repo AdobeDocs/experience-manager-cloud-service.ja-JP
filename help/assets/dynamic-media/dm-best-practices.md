@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 5e028e99b472dc10ecd739ee5e5c70ea4daa2078
+source-git-commit: 220a8d8aecde76c7d77ebab16fda2158316c08dd
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 86%
@@ -406,7 +406,6 @@ Dynamic Media スマートイメージングは、クライアントのブラウ
 
 **ビジネスケース：***新しいコンテンツを公開したり、既存のコンテンツを上書きしたりした後に、変更が CDN にすぐに表示されるようにするには、どうすればよいですか？*
 
-CDN （コンテンツ配信ネットワーク）は、顧客に迅速に配信できるようにDynamic Media アセットをキャッシュします。 これらのアセットを更新する場合は、変更を web サイトに直ちに反映することが重要です。 CDN キャッシュを削除または無効にすることで、Dynamic Mediaによって配信されるアセットをすばやく更新できます。 このアプローチにより、通常は 10 時間に設定される TTL （有効期間）の値に基づいてキャッシュの有効期限が切れるのを待つ必要がなくなります。
-特定の使用例に応じて、CDN TTL （有効期間）設定を適切に更新できます。
+CDN （コンテンツ配信ネットワーク）は、顧客に迅速に配信できるようにDynamic Media アセットをキャッシュします。 これらのアセットを更新する場合は、変更を web サイトに直ちに反映することが重要です。 CDN キャッシュを削除または無効にすることで、Dynamic Mediaによって配信されるアセットをすばやく更新できます。 このアプローチにより、通常は 10 時間に設定される TTL （有効期間）の値に基づいてキャッシュの有効期限が切れるのを待つ必要がなくなります。 特定の使用例に応じて、CDN TTL （有効期間）設定を適切に更新できます。
 
 詳しくは、[Dynamic Mediaを使用して CDN キャッシュを無効にする ](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md) に移動します。
