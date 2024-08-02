@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: ce5f9fc101c86ffdfb685ff493e8f5e508f45e37
+source-git-commit: 5e028e99b472dc10ecd739ee5e5c70ea4daa2078
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 86%
@@ -162,14 +162,17 @@ Dynamic Media で画像プリセットを定期的に使用すると、画像の
 
 * **意味のある画像ファイル名：**
 画像コンテンツを反映したわかりやすいファイル名を使用します。例：
+
    * `myCompany-Silver-Wrist-Watch` を使用します
    * `myCompany_Silver_Wrist_Watch` または `myCompanySilverWristWatch` を&#x200B;*回避*&#x200B;します
 
   これにより、検索エンジンが画像のコンテキストを理解し、SEO を向上させることができます。Google では、ファイル名でアンダースコアやスペースよりもハイフンが優先されます。また、ファイル名では単語の連結を回避します。
 * **カスタムドメイン：**
 会社名やブランド名を含むカスタムドメインを実装して、ブランドの認識と信頼を強化します。例：
+
    * `http://images.mycompany.com/is/image/companyname/` を使用します
    * `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982` を&#x200B;*回避*&#x200B;します
+
 * **SEO に対応したフォルダー構造：**
 インデックス作成を強化するには、`http://images.mycompany.com/is/image/companyname/` のように、会社名やブランドを含むフォルダー構造で画像を整理します。
 * **Dynamic Media ルールセット：**
@@ -309,6 +312,7 @@ Dynamic Mediaを通じてGIFをアップロードおよび配信できます。 
 ビデオをプレビューして、すべてが期待どおりに表示されることを確認します。満足な結果であれば、公開します。この手順により、オーディエンスがビデオにアクセスできるようになります。
 * **リンクまたは埋め込み：**
 公開後、次の 2 つのオプションがあります。
+
    * **直接リンク：**
 指定された URL を使用して、ビデオに直接リンクします。マーケティングサイトで適切にハイパーリンクを設定します。
    * **ビデオの埋め込み：**
