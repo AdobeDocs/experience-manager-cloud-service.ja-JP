@@ -3,9 +3,9 @@ title: Experience Managerでのアセットの配信を制限
 description: ' [!DNL Experience Manager] でアセット配信を制限する方法を説明します。'
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 16b313a4fb79f915613044d12d29e618209113ec
+source-git-commit: 65f0018a25c57189229fc56332ad874ebd0deef4
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1130'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ Experience Manager Assetsでは、IMS を介した配信制限には、次の 2 
    1. 追加する **[!UICONTROL ユーザーグループ]** を選択し、URL から **[!UICONTROL orgID]** と **[!UICONTROL userGroupID]** を抽出するか、`{orgID}@AdobeOrg:{usergroupID}` などの組織 ID を使用します。
 
 1. グループ ID をアセットプロパティの **[!UICONTROL 役割]** フィールドに追加します。 <br>
-「**[!UICONTROL 役割]**」フィールドで定義されたグループ ID は、アセットにアクセスできる唯一のユーザーです。 **[!UICONTROL 役割]** フィールドに IMS クライアント ID および IMS プロファイル ID を追加することもできます。 例えば、`{orgId}@AdobeOrg:{profileId}` のように指定します。
+「**[!UICONTROL 役割]**」フィールドで定義されたグループ ID は、アセットにアクセスできる唯一のユーザーです。 IMS グループ ID 以外にも、「**[!UICONTROL 役割]**」フィールドに IMS ユーザー ID と IMS プロファイル ID を追加できます。 例えば、`{orgId}@AdobeOrg:{profileId}` のように指定します。
 
    >[!NOTE]
    >
