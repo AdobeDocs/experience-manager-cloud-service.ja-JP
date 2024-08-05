@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ae2805097007d3d056e30b9c8420b47027a3af0e
+source-git-commit: 4f01ca0076248442fe93161bbc8b98bffb64551b
 workflow-type: tm+mt
-source-wordcount: '5304'
+source-wordcount: '5315'
 ht-degree: 99%
 
 ---
@@ -162,6 +162,9 @@ ht-degree: 99%
          + [リリースノート（2020.2.0）](/help/implementing/cloud-manager/release-notes/2020/2020-2-0.md)
    + 移行ツールのリリースノート {#migration-tools}
       + [最新のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + 2024年度 {#2024}
+         + [2024.01.0 のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-2024-01-0.md)
+         + [2024.05.0 のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-2024-05-0.md)
       + 2023年度 {#2023}
          + [2023.10.0 のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-2023-10-0.md)
          + [リリースノート（2023.9.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2023-09-0.md)
