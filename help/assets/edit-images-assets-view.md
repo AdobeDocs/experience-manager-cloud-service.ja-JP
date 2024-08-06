@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Express]  を利用したオプションを使用し�
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 610da7c1e8f20156b165d819a4bb91ec5ffcad80
+source-git-commit: af5ca9c436dce1929f310d40369abf05e60836f8
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 73%
@@ -86,6 +86,7 @@ Adobe Express を使用すると、JPEG 画像形式と PNG 画像形式間で�
 ### Adobe Express 埋め込みエディターでの画像編集 {#edit-images-in-adobe-express-embedded-editor}
 
 Express の使用権限を持つユーザーは、アセットビュー内の Express 埋め込みエディターを使用して、コンテンツを簡単に編集し、Adobe Firefly から GenAI を使用して新しいコンテンツを作成できます。 この機能により、コンテンツの再利用が向上し、コンテンツベロシティ（コンテンツ創出速度）が向上します。 また、定義済みの要素を使用して、アセットの見栄えを良くしたり、数回クリックするだけで画像を編集するクイックアクションを実行したりすることもできます。
+
 ![Essentials UI で表現](/help/assets/assets/express-in-essentials-ui.jpg)
 [!DNL Adobe Express] 埋め込みエディターを使用して画像を編集するには、次の手順に従います。
 
