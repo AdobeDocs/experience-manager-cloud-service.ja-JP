@@ -4,16 +4,18 @@ description: ' [!DNL Adobe Express]  を利用したオプションを使用し�
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 23b43f22b62451c9d0a5460999fcd43479438d7e
+source-git-commit: 610da7c1e8f20156b165d819a4bb91ec5ffcad80
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 100%
+source-wordcount: '1127'
+ht-degree: 73%
 
 ---
 
 # [!DNL Assets view] での画像の編集 {#edit-images-in-assets-view}
 
-アセットビューを使用すると、サイズ変更、背景の削除、切り抜き、JPEG 形式と PNG 形式間の変換など、基本的な画像編集を行うことができます。 また、Adobe Express との統合により高度な編集を行うこともできます。 画像の編集後、新しい画像を新しいバージョンとして保存できます。 バージョン管理により、必要に応じて後で元のアセットに戻すことができます。 画像を編集するには、[プレビューを開き](https://experienceleague.adobe.com/ja/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets)、「**画像を編集**」をクリックします。
+Assets ビュー UI を使用すると、Adobe Expressを活用した基本的な画像編集が可能になり、UI に統合されました。 この編集には、サイズ変更、背景の削除、切り抜き、JPEG形式と PNG 形式の変換が含まれます。 さらに、Assets ビュー UI に埋め込まれたAdobe Expressインターフェイスを使用して高度な編集をおこなうことができます。
+
+画像の編集後、新しい画像を新しいバージョンとして保存できます。 バージョン管理により、必要に応じて後で元のアセットに戻すことができます。 画像を編集するには、[プレビューを開き](https://experienceleague.adobe.com/ja/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets)、「**画像を編集**」をクリックします。
 
 >[!NOTE]
 >
@@ -23,7 +25,7 @@ ht-degree: 100%
 
 ## 画像の編集 {#edit-image}
 
-[アセットビュー](https://experience.adobe.com/#/assets)のリンクを使用し、適切なリポジトリを選択し、アセットビューにアクセスします。 アクセス権を取得するには、組織の管理者にお問い合わせください。
+Assets ビュー UI に移動し、リンク - [Assets ビュー ](https://experience.adobe.com/#/assets) を使用して、適切なリポジトリを選択します。 アクセス権を取得するには、組織の管理者にお問い合わせください。
 その他の参照情報については、[Adobe Experience Manager Assets ビューの基本を学ぶ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view)、[アセットビューのユーザーインターフェイスについて](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation)、および [アセットビューのユースケース](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases)を参照してください。
 <!--
 >[!CONTEXTUALHELP]
@@ -33,13 +35,13 @@ ht-degree: 100%
 
 ### Adobe Express を使用したアセットビューでの画像編集 {#edit-image-on-assets-view-using-adobe-express}
 
-アセットビューにアクセスしたら、「**アセット**」をクリックし、画像を選択して、上部のパネルから「**編集**」をクリックします。 新しい画面には、サイズ変更、背景の削除、切り抜き、JPEG 形式と PNG 形式間の変換など、使用可能な編集オプションが表示されます。
+Assets ビューに移動した後、**Assets** をクリックし、画像を選択して、上部レールから **編集** をクリックします。 新しい画面には、サイズ変更、背景の削除、切り抜き、JPEG形式と PNG 形式の変換など、Adobe Expressを利用した使用可能な編集オプションが表示されます。
 
 #### 画像のサイズ変更 {#resize-image-using-express}
 
 画像を特定のサイズに変更するのが一般的なユースケースです。 アセットビューでは、特定の写真サイズに対応する新しい解像度を事前に計算し、一般的な写真サイズに合わせて画像サイズをすばやく変更できます。 アセットビューを使用して画像サイズを変更するには、次の手順に従います。
 
-1. 左側のパネルから「**画像サイズを変更**」をクリックします。
+1. 左側のペインから **画像のサイズ変更** をクリックします。 ダイアログボックスに、Adobe Expressを利用した画像のサイズ変更機能が表示されます。
 1. サイズ変更ドロップダウンリストから適切なソーシャルメディアプラットフォームを選択し、表示されるオプションから画像サイズを選択します。
 1. 必要に応じて、「**画像の拡大・縮小**」フィールドを使用して画像を拡大・縮小します。
 1. 「**[!UICONTROL 適用]**」をクリックし、変更を適用します。
@@ -68,7 +70,7 @@ ht-degree: 100%
    ![Adobe Express を使用した画像の保存](assets/adobe-express-crop-image.png)
 切り抜いた画像はダウンロードできます。 編集したアセットを同じアセットの新しいバージョンとして保存するか、新しいアセットとして保存することができます。
 
-#### 画像ファイルタイプ間の変換 {#convert-image-types-using-express}
+#### JPEG を PNG に変換 {#convert-image-types-using-express}
 
 Adobe Express を使用すると、JPEG 画像形式と PNG 画像形式間ですばやく変換できます。 以下の手順を実行します。
 
@@ -79,33 +81,27 @@ Adobe Express を使用すると、JPEG 画像形式と PNG 画像形式間で�
 #### 制限事項 {#limitations-adobe-express}
 
 * サポートされる画像解像度：最小 - 50 ピクセル、最大 - ディメンションあたり 6000 ピクセル。
-
 * サポートされるファイルの最大サイズ：17 MB。
 
 ### Adobe Express 埋め込みエディターでの画像編集 {#edit-images-in-adobe-express-embedded-editor}
 
-Express の使用権限を持つユーザーは、アセットビュー内の Express 埋め込みエディターを使用して、コンテンツを簡単に編集し、Adobe Firefly から GenAI を使用して新しいコンテンツを作成できます。 これにより、コンテンツの再利用が高まり、コンテンツベロシティが加速されます。 また、定義済みの要素を使用して、アセットの見栄えを良くしたり、数回クリックするだけで画像を編集するクイックアクションを実行したりすることもできます。
+Express の使用権限を持つユーザーは、アセットビュー内の Express 埋め込みエディターを使用して、コンテンツを簡単に編集し、Adobe Firefly から GenAI を使用して新しいコンテンツを作成できます。 この機能により、コンテンツの再利用が向上し、コンテンツベロシティ（コンテンツ創出速度）が向上します。 また、定義済みの要素を使用して、アセットの見栄えを良くしたり、数回クリックするだけで画像を編集するクイックアクションを実行したりすることもできます。
 ![Essentials UI で表現](/help/assets/assets/express-in-essentials-ui.jpg)
 [!DNL Adobe Express] 埋め込みエディターを使用して画像を編集するには、次の手順に従います。
 
-1. [AEM Assets ビュー](https://experience.adobe.com/#/assets)のリンクを使用し、適切なリポジトリを選択し、AEM Assets ビューにアクセスします。
+1. リンク [AEM Assets ビューを使用してAEM Assets ビューに移動し ](https://experience.adobe.com/#/assets) 適切なリポジトリーを選択します。
 1. 「**Assets**」をクリックし、フォルダーを入力して画像を選択します。
 1. 「**Adobe Express で開く**」をクリックします。 画像が Express キャンバスで開きます。
 1. 画像に必要な編集を行います。
 1. プロジェクトでさらにページを追加する必要がある場合は、「**追加**」をクリックし、アセットを選択します。次に、フォルダーを入力し、キャンバスページに取り込む画像を選択して、画像に必要な編集を行います。
-1. 画像を保存するには、「**保存**」をクリックします。 保存ダイアログボックスが表示されます。
+1. 1 つ以上のアセットを保存するには、「**保存**」をクリックします。 保存ダイアログボックスに、保存オプションが表示されます。 保存オプションを選択するには、要件に合わせて、次のいずれかの手順に従います。
+   1. 1 つのページを保存するには、「**バージョンとして保存**」をクリックして、画像を新しいバージョン（元の形式を保持）として書き出し、同じフォルダーに保存します。
 
-   >[!NOTE]
-   >
-   > **1. 単一ページの場合**
-   >
-   > **バージョンとして保存：**この機能は、単一のアセットの保存のみをサポートします。 このオプションを選択すると、画像を新しいバージョンとして（元の形式を保持して）書き出し、同じフォルダーに保存できます。
-   > **新しいアセットとして保存：このオプションを選択し、**&#x200B;元のアセットとは異なる形式でアセットを書き出し、新しいアセットとして任意のフォルダーに保存します。
-   >  
-   > **2. 複数ページの場合**
-   >
-   > **バージョンとして保存：**&#x200B;この機能は、単一のアセットの保存のみをサポートします。 複数のページから 1 つのページを保存する場合、このオプションを選択して、元の形式で元の場所にアセットを保存します。\
-   > **新しいアセットとして保存：**&#x200B;このオプションを使用すると、複数のアセットまたは単一のアセットを任意のフォルダーに書き出し、それらを元のファイル形式または別のファイル形式で新しいアセットとして保存できます。
+   1. 1 つのページを保存するには、「**新しいアセットとして保存**」をクリックして、アセットを別の形式に書き出し、新しいアセットとして任意のフォルダーに保存します。
+
+   1. 複数のページから 1 つのページを保存するには、「**バージョンとして保存**」をクリックして、アセットを元の形式と場所に保存します。
+
+   1. 複数のページまたは複数のページのうちの 1 つのページを保存するには、「**新しいアセットとして保存**」をクリックします。 このアクションにより、1 つまたは複数のアセットが任意のフォルダーに書き出され、元の形式または別の形式で新しいアセットまたはアセットとして保存されます。
 
 1. 保存ダイアログボックスで、次の手順を実行します。
    1. 「**名前を付けて保存**」フィールドにファイルの名前を入力します。
