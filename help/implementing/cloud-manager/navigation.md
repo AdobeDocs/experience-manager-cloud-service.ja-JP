@@ -5,12 +5,13 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: b2950c62c55942614e23d08b3bb96864d4112e8c
 workflow-type: tm+mt
-source-wordcount: '1381'
-ht-degree: 91%
+source-wordcount: '1500'
+ht-degree: 81%
 
 ---
+
 
 # Cloud Manager UI の操作 {#navigation}
 
@@ -18,14 +19,14 @@ Cloud Manager UI の整理方法と、プログラムと環境を管理する操
 
 Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェイスで構成されます。
 
-* [マイプログラムコンソール](#my-programs)：すべてのプログラムを表示および管理できます。
+* [マイプログラムコンソール](#my-programs-console)：すべてのプログラムを表示および管理できます。
 * [プログラムの概要ウィンドウ](#program-overview)：個々のプログラムの詳細を確認して管理できます。
 
 >[!TIP]
 >
 >また、Cloud Managerを使用してAEM as a Cloud Serviceを導入する方法の概要については、[ オンボーディングドキュメントジャーニー ](/help/journey-onboarding/overview.md) も参照してください。
 
-## マイプログラムコンソール {#my-programs}
+## マイプログラムコンソール {#my-programs-console}
 
 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択すると、**マイプログラム**&#x200B;コンソールが表示されます。
 
@@ -34,9 +35,13 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 マイプログラムコンソールには、選択した組織でアクセス権を持つすべてのプログラムの概要が表示されます。複数のパーツで構成されます。
 
 1. [ツールバー](#toolbars-my-programs-toolbars)：組織の選択、アラート、アカウント設定を行います。
+1. プログラムの現在のビューを切り替えることができるタブ。
+   * **ホーム**&#x200B;ビュー（デフォルト）：すべてのプログラムの概要を表示する&#x200B;**マイプログラム**&#x200B;ビューを選択します
+   * **License**[License ダッシュボードにアクセスする ](/help/implementing/cloud-manager/license-dashboard.md)License」
+   * タブはデフォルトでは閉じられていますが、[Cloud Manager ヘッダー](#cloud-manager-header)のハンバーガーメニューを使用して表示できます。
 1. [統計とコールトゥアクション](#statistics)：最近のアクティビティの概要を確認します。
-1. [プログラムとライセンス](#programs-license)：現在のライセンスステータスを把握し、プログラムを管理します。
-1. [クイックリンク](#quick-links)：関連するリソースに簡単にアクセスします。
+1. [**「マイプログラム」**&#x200B;セクション](#my-programs-section)：すべてのプログラムの概要を表示します
+1. [クイックリンク](#quick-links-section)：関連するリソースに簡単にアクセスします。
 
 >[!TIP]
 >
@@ -52,6 +57,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 ![Experience Cloud ヘッダー](assets/experience-cloud-header.png)
 
+1. ハンバーガーメニューからタブにアクセスできるため、状況に応じて、個々のプログラム内の特定の部分に移動したり、[ ライセンスダッシュボード ](/help/implementing/cloud-manager/license-dashboard.md) と **[マイプログラム](#my-programs-console)** コンソールを切り替えたりできます。
 1. Cloud Manager ボタンをクリックすると、Cloud Manager のどこにいても、Cloud Manager のマイプログラムコンソールコンソールに戻ります。
 1. 「フィードバック」ボタンをタップまたはクリック、Cloud Manager に関するフィードバックをアドビに送信します。
 1. 組織セレクターには、現在ログインしている組織（この例では、Foundation 内部）が表示されます。Adobe ID が複数の組織に関連付けられている場合、別の組織に切り替えるには、タップまたはクリックします。
@@ -70,9 +76,9 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 1. 「はじめに」リンクから、[オンボーディングドキュメントジャーニー](/help/journey-onboarding/overview.md)にアクセスして、Cloud Manager を使い始めることができます。
 1. アクションボタンを使用すると、新しいプログラムの作成など、コンテキストに適したアクションを実行できます。
 
-### 統計 {#statistics}
+### 統計とコールトゥアクション {#statistics}
 
-統計セクションでは、組織の集計データが提供されます。例えば、プログラムを正常に設定した場合、過去 90 日間のアクティビティの統計には、次の内容が表示されることがあります。
+「統計とコールトゥアクション」セクションには、組織の集計データが表示されます。例えば、プログラムを正常に設定した場合、過去 90 日間のアクティビティの統計に次のような情報が表示されます。
 
 * [デプロイ](/help/implementing/cloud-manager/deploy-code.md)数
 * 特定された[コード品質の問題](/help/implementing/cloud-manager/code-quality-testing.md)の数
@@ -80,13 +86,15 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 組織の設定を開始したばかりの場合は、次の手順やドキュメントのリソースに関するヒントが表示される場合があります。
 
-### プログラムとライセンス {#programs-license}
+### 「マイプログラム」セクション {#my-programs-section}
 
-マイプログラムコンソールの主なコンテンツは、プログラムのリストとライセンスのステータスです。
+**マイプログラム** コンソールのメインコンテンツは、「マイプログラム **セクション内のプログラムのリスト** す。
 
-#### 「プログラム」タブ {#programs}
+**マイプログラム** セクションには、各プログラムを表すカードが一覧表示されます。 カードをタップまたはクリックすると、**プログラムの概要**&#x200B;ページにアクセスしてプログラムの詳細を確認できます。
 
-「**プログラム**」タブには、アクセス権のある各プログラムを表すカードが一覧表示されます。カードをタップまたはクリックすると、**プログラムの概要**&#x200B;ページにアクセスしてプログラムの詳細を確認できます。
+>[!NOTE]
+>
+>権限によっては、特定のプログラムを選択できない場合があります。
 
 並べ替えオプションを使用すると、必要なプログラムを見つけやすくなります。
 
@@ -100,14 +108,20 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 * グリッド表示（デフォルト）
 * リスト表示
 
+#### プログラムカード {#program-cards}
+
 すべてのプログラムはカード（またはテーブルの行）で表され、プログラムの概要と、アクションを実行するためのクイックリンクを提供します。
 
 ![プログラムカード](assets/program-card.png)
 
 * プログラム画像（設定されている場合）
 * プログラム名
-* サービスの種類：AEM as a *Cloud Serviceプログラムの場合は **Experience Managerクラウド**、AMS プログラムの場合は [**Experience Manager**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
-* [プログラムタイプ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)：サンドボックスまたは実稼動
+* サービスタイプ：
+   * AEM as a Cloud Service プログラム用 **Experience Managerクラウド**
+   * [AMS プログラム **の** Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+* [ プログラムの種類 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
+   * サンドボックス
+   * 実稼動
 * ステータス
 * 設定済みのソリューション
 * 作成日
@@ -118,13 +132,13 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
   ![HIPAA バッジ ](assets/hipaa.png)
 
-* [WAF-DDOS 保護](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
+* [WAF-DDOS 対策](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
   ![WAF-DDOS バッジ ](assets/waf-ddos-protection.png)
 
 * [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
 
-  ![99.99% SLA バッジ ](assets/9999-sla.png)
+  ![99.99%SLAバッジ ](assets/9999-sla.png)
 
 また、情報アイコンを使用すると、プログラムに関する追加情報にすばやくアクセスできます（リスト表示で役立ちます）。
 
@@ -147,21 +161,17 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 >* [ サンドボックスプログラムの作成 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
 >* [ 実稼動プログラムの作成 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
-#### 「ライセンス」タブ {#license-tab}
-
-「**ライセンス**」タブから[ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md)にすばやくアクセスできます。
-
-### クイックリンク {#quick-links}
+### クイック リンク セクション {#quick-links-section}
 
 「クイックリンク」セクションでは、一般的に使用される関連リソースにアクセスできます。
 
 ## プログラムの概要ウィンドウ {#program-overview}
 
-マイプログラムコンソールでプログラムを選択すると、プログラムの概要に移動できます。
+**[マイプログラム](#my-programs-console)** コンソールでプログラムを選択すると、**プログラムの概要** ウィンドウが表示されます。
 
 ![プログラムの概要](assets/program-overview.png)
 
-プログラムの概要では、Cloud Manager プログラムのすべての詳細にアクセスできます。マイプログラムコンソールと同様に、複数のパーツで構成されます。
+プログラムの概要では、Cloud Manager プログラムのすべての詳細にアクセスできます。**マイプログラム** コンソールと同様に、いくつかの部分で構成されています。
 
 1. [ツールバー](#program-overview-toolbar)：マイプログラムコンソールにすばやく戻ったり、プログラム内を移動したりできます。
 1. [タブ](#program-tabs)：プログラムの様々な側面を切り替えることができます。
@@ -201,8 +211,12 @@ Cloud Manager ヘッダーには、自動的に開くハンバーガーメニュ
 * [リポジトリ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - プログラムに対して設定されたすべてのリポジトリ
 * [レポート](/help/implementing/cloud-manager/sla-reporting.md) - SLA データなどの指標
 * [環境](/help/implementing/cloud-manager/manage-environments.md) - プログラムに対して設定されたすべての環境
+* [ ドメイン設定 ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - プログラムのカスタムドメイン名を管理します
+* [SSL 証明書 ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) - プログラムの SSL 証明書を管理します
+* [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) – 特定の IP アドレスの許可リストを定義します
 * [コンテンツセット](/help/implementing/developing/tools/content-copy.md) - コピー目的に対して作成されたコンテンツのセット
 * [コンテンツをコピーアクティビティ](/help/implementing/developing/tools/content-copy.md) - コンテンツをコピーするアクティビティ
+* [ ネットワークインフラストラクチャ ](/help/security/configuring-advanced-networking.md) - プログラムの高度なネットワークオプションを管理します
 * 学習パス - Cloud Manager に関するその他の学習リソース
 
 デフォルトでは、プログラムを開くと、「**概要**」タブが表示されます。現在のタブがハイライト表示されます。別のタブを選択すると、その詳細が表示されます。
