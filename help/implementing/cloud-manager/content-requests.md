@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 96bf1d56d24da851ad4713e3cb0728fd7a18da18
+source-git-commit: f8b058549162b7ae3d57b1a7dd3461f738b75320
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 94%
+source-wordcount: '1269'
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ### Cloud Service コンテンツリクエストの相違 {#content-requests-variances}
 
-コンテンツリクエストには、次の表にまとめられているように、組織の分析レポートツールとは違いがあります。一般に、クライアントサイドの計測機能を使用してデータを収集し、特定のサイトに対するコンテンツリクエストの数をレポートする分析ツールは使用&#x200B;*しないでください*。なぜなら、多くの場合、分析ツールはユーザーの同意に応じてトリガーされるため、トラフィックの大部分が欠落しているからです。AEM as a Cloud Service の上に独自の CDN を追加するお客様向けに、ログファイルのサーバーサイドでデータを収集する Analytics ツール、または CDN レポートを使用すると、精度が向上します。ページビューおよび関連するパフォーマンスのレポートでは、[Adobe RUM データサービス](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)がアドビ推奨のオプションです。
+コンテンツリクエストには、次の表にまとめられているように、組織の分析レポートツールとは違いがあります。一般に、クライアントサイドの計測機能を使用してデータを収集し、特定のサイトに対するコンテンツリクエストの数をレポートする分析ツールは使用&#x200B;*しないでください*。なぜなら、多くの場合、分析ツールはユーザーの同意に応じてトリガーされるため、トラフィックの大部分が欠落しているからです。ログファイルや、AEM as a Cloud Serviceに独自の CDN を追加するお客様向けの CDN レポートでサーバーサイドでデータを収集する Analytics ツールでは、カウントが向上します。
 
 | 差異の理由 | 説明 |
 |---|---|
@@ -56,7 +56,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 | --- | --- | --- |
 | HTTP コード 100-299 | 次のものが含まれます。 | これらは、すべてのコンテンツまたはコンテンツの一部を配信する通常のリクエストです。 |
 | 自動化用の HTTP ライブラリ | 次のものが含まれます。 | 例：<br>・Amazon CloudFront<br>・Apache Http Client<br>・非同期 Http クライアント<br>・Axios<br>・アズレウス<br>・Curl<br>・GitHub ノードフェッチ<br>・Guzzle<br>・Go-http-client<br>・ヘッドレスクロム<br>・ Java™ Client<br>・ジャージー<br>・Node Oembed<br>・okhttp<br>・Python リクエスト<br>・Reactor Netty<br>・Wget<br>・WinHTTP |
-| 監視ツールおよびヘルスチェックツール | 次のものが含まれます。 | これらは、サイトの特定の側面を監視するために顧客が設定します。例えば、可用性や実際のユーザーパフォーマンスなどです。これらが/system/probes/health for health checks などの特定のエンドポイントをターゲットにしている場合は、サイトの実際のHTMLページではなく、`/system/probes/health` エンドポイントを使用することをお勧めします。[ 以下を参照 ](#excluded-content-request)<br> 例：<br>・ Amazon-Route53-Health-Check-Service<br>・ EyeMonIT_bot_version_0.1_[ （https://www.eyemon.it/） ](https://www.eyemon.it/)<br>・ Investis-Site24x7<br>・ Mozilla/5.0+（compatible; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/)） <br>・ ThousandsEyes-Dragonfly-x1<br>・ OmtrBot/2.0.0<br> |
+| 監視ツールおよびヘルスチェックツール | 次のものが含まれます。 | これらは、サイトの特定の側面を監視するために顧客が設定します。例えば、可用性や実際のユーザーパフォーマンスなどです。これらがヘルスチェックの /system/probes/health などの特定のエンドポイントをターゲットにしている場合は、サイトの実際の HTML ページではなく、`/system/probes/health` エンドポイントを使用することをお勧めします。[以下を参照してください](#excluded-content-request)<br>例：<br>・Amazon-Route53-Health-Check-Service<br>・EyeMonIT_bot_version_0.1_[（https://www.eyemon.it/）](https://www.eyemon.it/)<br>・Investis-Site24x7<br>・Mozilla/5.0 以降（互換；UptimeRobot/2.0；[https://uptimerobot.com/](https://uptimerobot.com/)）<br>・ThousandEyes-Dragonfly-x1<br>・OmtrBot/1.0<br>・WebMon/2.0.0 |
 | `<link rel="prefetch">` リクエスト | 次のものが含まれます。 | 次のページの読み込み速度を上げるには、ユーザーがリンクをクリックする前にブラウザーで一連のページを読み込むように設定し、既にキャッシュに存在している必要があります。*注意：これにより、取得されるこれらのページの数に応じて、トラフィックが大幅に増加します*。 |
 | Adobe Analytics または Google Analytics レポートをブロックするトラフィック | 次のものが含まれます。 | サイトの訪問者が、Google Analytics や Adobe Analytic sの正確性に影響を与えるプライバシーソフトウェア（広告ブロッカーなど）をインストールしていることがよくあります。AEM as a Cloud Service は、クライアントサイドではなく、アドビが運用するインフラストラクチャへの最初のエントリポイントに対するリクエストをカウントします。 |
 
@@ -72,7 +72,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 | /libs/* に移動するリクエスト | 除外済み | AEM の内部 JSON リクエスト（課金対象でない CSRF トークンなど）。 |
 | DDoS 攻撃からのトラフィック | 除外済み | DDoS 保護。AEM は一部の DDoS 攻撃を自動検出しブロックします。DDoS 攻撃は、検出された場合、課金対象ではありません。 |
 | AEM as a Cloud Service NewRelic 監視 | 除外済み | AEM as a Cloud Service グローバル監視。 |
-| 顧客が Cloud Service プログラムを監視するための URL | 除外済み | 可用性またはヘルスチェックを外部で監視するには、URL を使用することをお勧めします。<br><br>`/system/probes/health` |
+| 顧客が Cloud Service プログラムを監視するための URL | 除外済み | 可用性やヘルスチェックを外部で監視するには、URL を使用することをお勧めします。<br><br>`/system/probes/health` |
 | AEM as a Cloud Service ポッドウォームアップサービス | 除外済み |
 | エージェント：skyline-service-warmup/1。* |
 | よく知られている検索エンジン、ソーシャルネットワーク、HTTP ライブラリ（Fastly によってタグ付け） | 除外済み | サイトを定期的に訪問し、検索インデックスやサービスを更新するよく知られたサービス：<br><br>例：<br>・ AddSearchBot<br>・ AhrefsBot<br>・ Applebot<br>・ Ask Jeeves Corporate Spider<br>・ Bingbot<br>・ BingPreview<br>・ BLEXBot<br>・ BuiltWith<br>・ Bytespider<br>・ CrawlerKengo<br>・ Facebookexternalhit<br>・ Google AdsBot<br>・ Google AdsBot Mobile<br>・ Googlebot<br>・ Googlebot Mobile<br>・ lmspider<br>・ LucidWorks<br>・ MJ12bot<br>・ Pingdom<br>・ Pinterest<br>・ SemrushBot<br>・ SiteImprove<br>・ StashBot<br>・ StatusCakes<br>・ YandexBot |
