@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
 workflow-type: tm+mt
 source-wordcount: '1552'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -46,12 +46,12 @@ Cloud Manager セルフサービス UI を使用して、AEM の標準搭載 CDN
 
 CDN でのトラフィックは、次のような様々な方法で設定できます。
 
-* [ トラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md) （オプションでライセンス可能な高度なWAF ルールを含む）を使用した悪意のあるトラフィックのブロック
-* [ リクエストと応答 ](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) の特性の変更
-* 301/302 の適用 [ クライアントサイドのリダイレクト ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
-* 非AEM バックエンドにリクエストをリバースプロキシするための [ オリジンセレクター ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) の宣言
+* [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)（オプションでライセンス可能な高度な WAF ルールを含む）による悪意のあるトラフィックのブロック
+* [リクエストと応答](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)の特性の変更
+* 301/302 [クライアントサイドのリダイレクト](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)の適用
+* AEM 以外のバックエンドへのリクエストをリバースプロキシするための[接触チャネルセレクター](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)の宣言
 
-Git で YAML ファイルを使用して、Cloud Manager [Config パイプライン ](/help/implementing/dispatcher/cdn-configuring-traffic.md) を使用してデプロイすることにより、これらの機能を設定する方法を説明します。
+Git で YAML ファイルを使用してこれらの機能を設定し、Cloud Manager [設定パイプライン](/help/implementing/dispatcher/cdn-configuring-traffic.md)を使用してデプロイする方法について説明します。
 
 ### CDN エラーページの設定 {#cdn-error-pages}
 
@@ -59,15 +59,15 @@ CDN エラーページは、まれに AEM に到達できない場合にブラ�
 
 ### CDN でのキャッシュされたコンテンツのパージ {#purge-cdn}
 
-HTTP キャッシュ制御ヘッダーを使用した TTL の設定は、コンテンツ配信のパフォーマンスとコンテンツの鮮度のバランスを取る効果的なアプローチです。 ただし、更新されたコンテンツを直ちに提供することが重要なシナリオでは、CDN キャッシュを直接パージすると便利な場合があります。
+HTTP キャッシュ制御ヘッダーを使用した TTL の設定は、コンテンツ配信のパフォーマンスとコンテンツの鮮度のバランスを取る効果的なアプローチです。ただし、更新されたコンテンツを直ちに提供することが重要なシナリオでは、CDN キャッシュを直接パージすると有益な場合があります。
 
-[ パージ API トークンの設定 ](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) および [ キャッシュされた CDN コンテンツのパージ ](/help/implementing/dispatcher/cdn-cache-purge.md) を参照してください。
+[パージ API トークンの設定](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token)と[キャッシュされた CDN コンテンツのパージ](/help/implementing/dispatcher/cdn-cache-purge.md)を参照してください。
 
 ### CDN での基本認証 {#basic-auth}
 
-コンテンツのレビューを行うビジネスステークホルダーなど、認証に関する小規模なユースケースの場合は、ユーザー名とパスワードを必要とする基本認証ダイアログを表示して、コンテンツを保護します。 [ 詳細情報 ](/help/implementing/dispatcher/cdn-credentials-authentication.md) を参照し、早期導入プログラムに参加してください。
+ビジネス関係者がコンテンツのレビューを行うなどの簡単な認証ユースケースの場合は、ユーザー名とパスワードを必要とする基本認証ダイアログを表示して、コンテンツを保護します。[詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md)を確認し、早期導入プログラムに参加してください。
 
-## 顧客 CDN でAEMの管理による CDN を参照する {#point-to-point-CDN}
+## 顧客 CDN の AEM の管理による CDN への参照 {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -88,7 +88,7 @@ HTTP キャッシュ制御ヘッダーを使用した TTL の設定は、コン�
 1. SNI をAdobe CDN の入力に設定する。
 1. ホストヘッダーを接触チャネルドメインに設定します（例：`Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`）。
 1. AEM がホストヘッダーを決定できるように、`X-Forwarded-Host` ヘッダーにドメイン名を設定します（例：`X-Forwarded-Host:example.com`）。
-1. `X-AEM-Edge-Key` を設定します。この値は、（この記事 [ で説明しているように、Cloud Manager設定パイプラインを使用して設定する必要 ](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value) あります。
+1. `X-AEM-Edge-Key` を設定します。この値は、[この記事](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)の説明に従って、Cloud Manager 設定パイプラインを使用して設定する必要があります。
 
    * これは、Adobe CDN でリクエストのソースを検証し、`X-Forwarded-*` ヘッダーを AEM アプリケーションに渡すために必要です。例えば、`X-Forwarded-For` を使用してクライアント IP を決定します。したがって、`X-Forwarded-*` ヘッダーが正しいことを確認するのは、信頼できる呼び出し元（顧客が管理する CDN）の責任となります（以下のメモを参照）。
    * 必要に応じて、`X-AEM-Edge-Key` が存在しない場合に Adobe CDN の入口へのアクセスをブロックできます。Adobe CDN の入力に直接アクセスする必要がある場合（ブロックする場合）は、アドビにお知らせください。
@@ -97,7 +97,7 @@ HTTP キャッシュ制御ヘッダーを使用した TTL の設定は、コン�
 
 ライブトラフィックを受け入れる前に、アドビカスタマーサポートに問い合わせて、エンドツーエンドのトラフィックルーティングが正しく機能していることを検証してください。
 
-`X-AEM-Edge-Key` を設定したら、リクエストが正しくルーティングされているかどうかを、次のようにテストできます。
+`X-AEM-Edge-Key` を設定後、リクエストが正しくルーティングされているかどうかを、次のようにテストできます。
 
 Linux® の場合：
 
@@ -149,21 +149,21 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ### 一般的なエラー {#common-errors}
 
-提供されるサンプル設定は必要な基本設定を示していますが、お客様の設定には、AEM as a Cloud Serviceがトラフィックに対応するために必要なヘッダーを削除、変更、再配置する、その他の影響を及ぼすルールが含まれている場合があります。 顧客が管理する CDN をAEM as a Cloud Serviceを指すように設定する際に発生する一般的なエラーを以下に示します。
+提供されるサンプル設定は必要な基本設定を示していますが、顧客設定には、AEM as a Cloud Service がトラフィックに対応するために必要なヘッダーを削除、変更、再配置する、その他の影響を及ぼすルールが含まれている場合があります。顧客管理 CDN を AEM as a Cloud Service を指すように設定する際に発生する一般的なエラーを以下に示します。
 
-**Publish サービスエンドポイントへのリダイレクト**
+**パブリッシュサービスエンドポイントへのリダイレクト**
 
-リクエストが 403 forbidden 応答を受け取った場合は、リクエストに必要なヘッダーのいくつかが欠落していることを意味します。 この一般的な原因は、CDN が apex と `www` ドメインの両方のトラフィックを管理しているものの、`www` ドメインに適したヘッダーを追加していないことです。 この問題は、AEM as a Cloud Service CDN ログを確認し、必要なリクエストヘッダーを確認することで、トリアージすることができます。
+リクエストが 403 forbidden 応答を受け取った場合、リクエストに必要なヘッダーの一部が欠落していることを意味します。よくある原因は、CDN が apex と `www` ドメインの両方のトラフィックを管理しているものの、`www` ドメインに適したヘッダーを追加していないことです。この問題は、AEM as a Cloud Service CDN ログを確認し、必要なリクエストヘッダーを確認することで、トリアージすることができます。
 
-**リダイレクト ループが多すぎます**
+**リダイレクトループが多すぎます**
 
-ページが「リダイレクトが多すぎます」ループを取得する場合、リダイレクトに一致する一部のリクエストヘッダーが CDN に追加され、リダイレクトが強制的に自身に戻されます。 次に例を示します。
+ページで「リダイレクトが多すぎます」ループが発生すると、ページを強制的にページ自体に戻すリダイレクトに一致する一部のリクエストヘッダーが CDN に追加されます。次に例を示します。
 
-* CDN ルールは、apex ドメインまたは www ドメインのいずれかに一致するように作成され、apex ドメインのみの X-Forwarded-Host ヘッダーを追加します。
+* CDN ルールは、apex ドメインまたは www ドメインのいずれかに一致するように作成され、apex ドメインの X-Forwarded-Host ヘッダーのみが追加されます。
 * apex ドメインのリクエストはこの CDN ルールに一致し、apex ドメインを X-Forwarded-Host ヘッダーとして追加します。
-* リダイレクトが apex ドメインのホストヘッダーと明示的に一致するオリジンにリクエストが送信されます（例：^example.com）。
-* 書き換えルールがトリガーされ、apex ドメインのリクエストが www サブドメインを使用して https に書き換えられます。
-* その後、このリダイレクトは顧客のエッジに送信され、CDN ルールが再トリガーされて、www サブドメインではなく apex ドメインの X-Forwarded-Host ヘッダーが追加されます。 その後、リクエストが失敗するまでプロセスをやり直します。
+* リダイレクトが apex ドメイン（例：^example.com）のホストヘッダーと明示的に一致する接触チャネルにリクエストが送信されます。
+* 書き換えルールがトリガーされ、apex ドメインのリクエストが www サブドメインを含む https に書き換えられます。
+* その後、このリダイレクトは顧客のエッジに送信され、CDN ルールが再度トリガーされ、www サブドメインではなく apex ドメインの X-Forwarded-Host ヘッダーが再度追加されます。その後、リクエストが失敗するまでプロセスが再度開始されます。
 
 この問題を解決するには、SSL リダイレクト戦略、CDN ルール、リダイレクトおよび書き換えルールの組み合わせを評価します。
 
