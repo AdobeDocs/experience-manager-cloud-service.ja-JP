@@ -4,10 +4,10 @@ description: AEM as a Cloud Service のログを使用して一元的なログ�
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
-workflow-type: ht
-source-wordcount: '2797'
-ht-degree: 100%
+source-git-commit: 6cb2665f2a2e61216608dfe9c3444adeb472395f
+workflow-type: tm+mt
+source-wordcount: '2829'
+ht-degree: 98%
 
 ---
 
@@ -614,6 +614,12 @@ Splunk アカウントを持っている顧客は、カスタマーサポート�
 Splunk に送信されるログに関連付けられるネットワーク帯域幅は、お客様のネットワーク I/O 使用の一部と見なされます。
 
 CDN ログは、新しいサポートチケットリクエストの Splunk に転送されます。Splunk 転送を既に有効にしているお客様は、将来 CDN ログを追加できます。
+
+>[!NOTE]
+>
+>特定のログと特定のユーザーログは、Splunk に転送できません。
+>
+>すべてのログは Splunk に転送され、お客様の要件に基づいて、さらにフィルタリングを行うことができます。
 
 ### Splunk 転送の有効化 {#enabling-splunk-forwarding}
 
