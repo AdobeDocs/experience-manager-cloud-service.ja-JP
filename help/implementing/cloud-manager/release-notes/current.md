@@ -4,10 +4,10 @@ description: AEM as a Cloud Service の Cloud Manager 2024.7.0 のリリース�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 12e19fe771c0b70ec471949944141f4d6858cbfd
-workflow-type: ht
+source-git-commit: 8d9f5296a2e79ee5560d1ede967b3eb2155cd151
+workflow-type: tm+mt
 source-wordcount: '633'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service の Cloud Manager 2024.7.0 のリリース日は 2024年7月18日（PT）です。次回のリリースは 2024年8月8日（PT）に予定されています。
+AEM as a Cloud Service の Cloud Manager 2024.7.0 のリリース日は 2024年7月18日（PT）です。次回のリリースは 2024 年 8 月 12 日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
