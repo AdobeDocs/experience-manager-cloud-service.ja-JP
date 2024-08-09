@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 7c8f54d7c1139485717cc42dafbc87be74fd5883
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 100%
+source-wordcount: '527'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 [!DNL Assets view] では幅広いファイル形式をサポートしており、各機能は各種ファイルタイプに対応しています。
 
 * ![画像ファイルタイプのアイコン](assets/image-icon.svg) 画像：JPG、PNG、GIF、TIFF およびその他
-* ![Creative Cloud タイプのアイコン](assets/creative-cloud-files.svg) Creative Cloud ファイル：PSD、AI および INDD
+* ![creative cloudtype アイコン ](assets/creative-cloud-files.svg)Creative Cloudファイル：PSD、PSB、AI および INDD
 * ![カメラタイプのアイコン](assets/camera-icon.svg) Camera Raw ファイル：CR2/CR3、NEF、SRW/SRF およびその他
 * ![ドキュメントファイルタタイプのアイコン](assets/document-icon.svg) ドキュメント：DOCX、PDF、PPTX および XLSX
 * ![ビデオファイルタイプのアイコン](assets/video-icon.svg) ビデオ：MP4
@@ -46,7 +46,7 @@ ht-degree: 100%
 | フォルダー | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | − |
 | MP4 ビデオ | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | PDF | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
-| PSD、AI、INDD | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
+| PSD、PSB、AI および INDD | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | その他のバイナリファイル | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
 
 <!-- Hiding CC Libraries (considered beta) as per PM feedback.
@@ -63,7 +63,7 @@ ht-degree: 100%
 | ビデオ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | CC ライブラリ | − | − | − | − | − | ✓ | ✓ |
 | PDF | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
-| PSD | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
+| PSDと PSB | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | AI と INDD | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 | その他のバイナリファイル | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 
@@ -78,7 +78,7 @@ ht-degree: 100%
 | ビデオ | − | ✓ | ✓ |
 | CC ライブラリ | − | − | − |
 | PDF | − | ✓ | ✓ |
-| PSD、AI、INDD | − | ✓ | ✓ |
+| PSD、PSB、AI および INDD | − | ✓ | ✓ |
 | その他のバイナリファイル | − | ✓ | ✓ |
 | DOC | − | ✓ | ✓ |
 | DOCX | − | ✓ | ✓ |
@@ -99,7 +99,8 @@ ht-degree: 100%
 | ビデオ | ✓ | − | ✓ | ✓ | ✓ |
 | CC ライブラリ | ✓ | − | − | − | − |
 | PDF | ✓ | − | ✓ | ✓ | ✓ |
-| PSD、AI、INDD | ✓ | − | ✓ | ✓ | ✓ |
+| AI と INDD | ✓ | − | ✓ | ✓ | ✓ |
+| PSDと PSB | ✓ | ✓ | ✓ | ✓ | ✓ |
 | その他のバイナリファイル | ✓ | − | ✓ | ✓ | ✓ |
 
 [!DNL Adobe Asset Link] のユーザーは、サポート対象の [!DNL Adobe Creative Cloud] デスクトップアプリケーションから [!DNL Assets view] リポジトリにファイルをアップロードしてチェックイン（新しいバージョンをアップロード）できます。
@@ -112,7 +113,7 @@ ht-degree: 100%
 | Videos        |          |
 | CC Libraries  |          |
 | PDF files     |          |
-| PSD           |          |
+| PSD, PSB           |          |
 | AI            |          |
 | INDD          |          |
 
