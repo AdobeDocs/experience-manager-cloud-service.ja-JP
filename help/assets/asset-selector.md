@@ -7,7 +7,7 @@ exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
 source-git-commit: c9cdbf85b5ebdda0ccd1a7858943f65f9175bde9
 workflow-type: tm+mt
 source-wordcount: '5339'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -588,7 +588,7 @@ OpenAPI 機能を備えた Dynamic Media のアセットセレクターを使用
 | *dialogSize* | 小、中、大、フルスクリーン、またはフルスクリーンのテイクオーバー | 文字列 | オプション | 指定されたオプションを使用してサイズを指定することで、レイアウトを制御できます。 |
 | *colorScheme* | ライトまたはダーク | いいえ | | このプロパティは、アセットセレクターアプリケーションのテーマを設定するために使用されます。テーマは、ライトテーマとダークテーマから選択できます。 |
 | *filterRepoList* | 関数 | いいえ |  | Experience Manager リポジトリを呼び出し、フィルタリングされたリポジトリのリストを返す `filterRepoList` コールバック関数を使用できます。 |
-| *expiryOptions* | 関数 | | | 次の 2 つのプロパティの間で使用できます。**getExpiryStatus** 期限切れアセットのステータスを提供します。 関数は、指定したアセットの有効期限に基づいて、`EXPIRED`、`EXPIRING_SOON` または `NOT_EXPIRED` を返します。[ 期限切れアセットのカスタマイズ ](#customize-expired-assets) を参照してください。 さらに、**allowSelectionAndDrag** を使用できます。この場合、関数の値は `true` または `false` のいずれかになります。 値が `false` に設定されている場合、有効期限切れのアセットはキャンバス上で選択またはドラッグできません。 |
+| *expiryOptions* | 関数 | | | 次の 2 つのプロパティ間で使用できます。**getExpiryStatus** では、有効期限切れのアセットのステータスが表示されます。関数は、指定したアセットの有効期限に基づいて、`EXPIRED`、`EXPIRING_SOON` または `NOT_EXPIRED` を返します。[有効期限切れのアセットのカスタマイズ](#customize-expired-assets)を参照してください。さらに、**allowSelectionAndDrag** を使用できます。この場合、関数の値は `true` または `false` のいずれかになります。値が `false` に設定されている場合、有効期限切れのアセットはキャンバス上で選択またはドラッグできません。 |
 | *showToast* | | いいえ | | これにより、アセットセレクターで、有効期限切れのアセットに対してカスタマイズされたトーストメッセージを表示できます。 |
 
 <!--
@@ -785,7 +785,7 @@ interface SelectedAsset {
 
 次の表に、選択されたアセットのオブジェクトの重要なプロパティの一部を示します。
 
-| Property | 型 | 説明 |
+| Property | タイプ | 説明 |
 |---|---|---|
 | *repo:repositoryId* | 文字列 | アセットが保存されるリポジトリの一意の ID。 |
 | *repo:id* | 文字列 | アセットの一意の ID。 |

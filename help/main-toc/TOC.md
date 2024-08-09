@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 4f01ca0076248442fe93161bbc8b98bffb64551b
 workflow-type: tm+mt
 source-wordcount: '5315'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -292,7 +292,7 @@ ht-degree: 99%
       + [AEM Modernization Tools](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
    + [AEM Cloud Service の AEM Sites の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
-   + [サイトとEdge Delivery Services](/help/sites-cloud/sites-and-edge.md)
+   + [Sites と Edge Delivery Service](/help/sites-cloud/sites-and-edge.md)
    + オーサリング {#authoring}
       + [ページのオーサリングのクイックスタートガイド](/help/sites-cloud/authoring/quick-start.md)
       + [基本操作](/help/sites-cloud/authoring/basic-handling.md)
@@ -335,7 +335,7 @@ ht-degree: 99%
          + [スタイルシステム](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [取り消し／やり直しの制限事項](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + ユニバーサルエディター {#universal-editor}
-         + [ユニバーサルエディターのナビゲート](/help/sites-cloud/authoring/universal-editor/navigation.md)
+         + [ユニバーサルエディターの操作](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [ユニバーサルエディターを使用したコンテンツのオーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [ユニバーサルエディターを使用したコンテンツの公開](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [ユニバーサルエディターでのコンテンツの継承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
@@ -693,7 +693,7 @@ ht-degree: 99%
             + [Azure Blob Storage にアダプティブフォームを送信する](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Microsoft へのアダプティブフォームの送信](/help/forms/configure-submit-action-onedrive.md)
             + [Microsoft へのアダプティブフォームの接続](/help/forms/configure-submit-action-sharepoint.md)
-            + [認証範囲を使用して、制限付きアクセスでSharePoint サイトを構成する](/help/forms/configure-sharepoint-site-limited-access.md)
+            + [認証範囲を使用した制限付きアクセスでの SharePoint サイトの設定](/help/forms/configure-sharepoint-site-limited-access.md)
             + [AEM アダプティブフォームと AEM ワークフローを統合する](/help/forms/configure-submit-action-workflow.md)
             + [アダプティブフォームの REST エンドポイント送信アクションへの送信を設定する](/help/forms/configure-submit-action-restpoint.md)
             + [アダプティブフォームのメール送信アクションの送信を設定する](/help/forms/configure-submit-action-send-email.md)
