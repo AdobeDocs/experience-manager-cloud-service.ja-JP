@@ -7,7 +7,7 @@ user-guide-description: Adobe Experience Manager as a Cloud Service の仕組み
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 source-git-commit: a1baa7f29c6e15af11347debdd341f9972c06e83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5315'
 ht-degree: 100%
 
