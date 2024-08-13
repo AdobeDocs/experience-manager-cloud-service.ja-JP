@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: dc7150c6ce971aa6f89fa24f7ca387cbb28db1f2
+source-git-commit: f12e60cdfce24dd2f6c1400157180d16b1b98653
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 63%
+source-wordcount: '998'
+ht-degree: 20%
 
 ---
 
@@ -16,41 +16,95 @@ ht-degree: 63%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 17258 {#release-17258}
+## リリース 17393 {#release-17393}
 
-2024年7月30日（PT）に公開された、メンテナンスリリース 17258 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 17098 でした。
+2024年8月13日（PT）に公開されたメンテナンスリリース 17393 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 17258 でした。
 
 2024.8.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
 
-### 機能強化 {#enhancements-17258}
+### 機能強化 {#enhancements-17393}
 
-* ASSETS-31445 - Dynamic Mediaの初期テンプレート機能
-* ASSETS-40399 - DM 自動トランスクリプトキューの設定を更新しました
-* ASSETS-40873 - OSGI 設定を使用してメタデータのエクスポートの最大行数を設定できるようにします
+* FORMS-15436 - Adobe Sign ステータススケジューラーの例外を適切に処理します。
+* FORMS-15362 - aemds に forms-foundation の設定を追加して、ログインを有効にします。
+* FORMS-15261 - SPAがForms エディターでレンダリングされない。
+* FORMS-15138 - sling commons json のアップグレードによる Double Data の後方互換性の処理。
+* FORMS-15113 - RUM トラッキング用にキー名を vistorId から sid に変更しています。
+* FORMS-15103 - フォームに添付されたAssetsがエッジ配信で公開されない。
+* FORMS-15082 - カスタムアダプティブフォームコンポーネントにマッピングする JSON スキーマ。
+* FORMS-15002 - v1 フラグメントのテンプレートタイプ登録。
+* FORMS-14845 - Forms Manager を介したコアコンポーネントベースフォームでの xdpRef のサポート。
+* FORMS-14840 - Forms事前入力サービスエラー。
+* FORMS-14836 - Forms Manager UI を改善して、AF1 フラグメントテンプレートを一覧表示します。
+* FORMS-14834 - AF1 におけるフラグメントのテンプレートサポート。
+* FORMS-14275 – 埋め込みコンテナでの「ありがとうございます」ページと「ありがとうございます」メッセージの上書き。
+* FORMS-13623 - V2 の自動保存時間ベースの機能を有効にします。
+* FORMS-8651 - フォームプロパティページのデータモデル設定の変更に関する警告ダイアログ。
+* SITES-23310 - コンテンツフラグメント REST API：コンテンツフラグメントのネストされた参照における循環依存関係を防ぎます。
+* SITES-23285 - コンテンツフラグメント REST API：エンドポイントを作成して、使用可能なすべての言語をリストします。
+* SITES-22857 - コンテンツフラグメント REST API：チェックボックス列挙フィールドで、複数のプロパティを false に設定することはできません。
+* SITES-22813 - コンテンツフラグメント REST API：列挙フィールドの min/max プロパティを定義します。
+* SITES-22031 - コンテンツフラグメント REST API：フラグメントのフォルダーに許可されたコンテンツフラグメントモデルを取得します。
+* SITES-17640 - コンテンツフラグメント REST API：コンテンツフラグメント Publish操作の検証。
+* SITES-22677 - コンテンツフラグメント REST API：子孫参照のフラットリストを取得
+* SITES-22207 - コンテンツフラグメントの作成時にモデルが複製される。
+* SITES-23093 - イベント：コンテンツフラグメントモデルイベントのペイロードにタグを追加する。
+* SITES-23092 - イベント：コンテンツフラグメントイベントのペイロードにタグを追加する。
+* SITES-22447 – 基本の「プロパティ」タブに、エクスペリエンスフラグメントのプロパティ継承のサポートを追加。
+* SITES-12209 - cq:policy をインデックスに追加して、ポリシーエディターのパフォーマンスを向上しました。
 
-### 修正された問題 {#fixed-issues-17258}
+### 修正された問題 {#fixed-issues-17393}
 
-* ASSETS-30613 – 「アセットを置換」で、新しい配信層のアセットが削除されたり追加されたりしない
-* ASSETS-31882 - オーサーのストリーミングマニフェストファイルへのアクセスは禁止されています
-* ASSETS-39598 – 名前に特殊文字が含まれるアセットを S3 バックエンドから一括読み込みで削除できない
-* CNTBF-209 - バックフロージョブキャンセルの改善
-* SCRNS-3762 - ブラウザーでチャネルをプレビューする際にコンソールにログを配置するように、シーケンスチャネルの playerLogger を改善しました
-* SCRNS-4455 - チャネル用コンテンツプロバイダーで、管理者以外のユーザーに対して「公開を管理」および「クイックPublish」ボタンが表示されない
-* SITES-22940 - コンテンツフラグメントをワークフローペイロードとして表示できない
+* CQ-4358028 - サムネールがアップロードされている場合に、プロジェクトを作成できなかった。
+* CQ-4357891 - エクスポートされた XLIFF のシーケンスの問題。
+* CQ-4357059 – 翻訳ジョブが完了するまでに時間がかかり、AEMaaCS で 503 タイムアウトが発生します。
+* FORMS-15320 - メールの送信が、コアコンポーネントベースのフォームで機能しない。
+* FORMS-15272 - AEM Forms - チェックボックスグループで 1 つの値のみが送信される。
+* FORMS-15269 - メンテナンスリリース 16461 ート後に製品関連の問題に直面する。
+* FORMS-15174 - JsonSchemaParser が有効な問題。
+* FORMS-15095 – 複数行のテキストボックスが、AEM Forms内に含まれるパネルを超えて拡大できる。
+* FORMS-15057 - FDM SharePoint リストで送信 > 999 の場合に添付ファイルエラーがスローされる。
+* FORMS-15011 - コアエディターで、エディターでフォームを開く際にコンソールエラーが発生する。
+* FORMS-14809 – 共有された一時ディレクトリ内で SDK フォルダーが自動的に作成されません。
+* FORMS-14327 - Forms サービス API：データを抽出：– 非インタラクティブ PDF を入力で指定すると 500 応答コードが返されます。
+* FORMS-7475 - アダプティブフォームの作成ページで並べ替えが機能しない。
+* FORMS-3309 - フォームの送信時に複数のオプションが選択されている場合、生成された DoR では 1 つのオプションのみが表示されます。
+* SITES-23646 - フィールドに一意のが含まれている場合、OpenAPI で作成されたモデルのGraphQL モデルエンドポイントが失敗する。
+* SITES-23637 - コンテンツフラグメント REST API:OpenAPI で列挙に正しい値タイプが使用されない。
+* SITES-23573 - コンテンツフラグメント REST API：ライブの関係は、uuid によってGETコンテンツフラグメントでは考慮されません。
+* SITES-23535 - コンテンツフラグメント REST API：コンテンツフラグメントモデルの列挙の複数フィールドに空の値があります。
+* SITES-23534 - コンテンツフラグメント REST API：コンテンツフラグメント検証 ClassCastException。
+* SITES-23524 – 複数フィールドの列挙フィールドをサポートするようにGraphQL BFF モデルエンドポイントを適応させます。
+* SITES-23467 - コンテンツフラグメント REST API：カーソルの問題が原因で検索モデルが失敗する。
+* SITES-23327 - タイムラインイベント処理の説明中に AuditLogTimelineEventProvider で ArrayIndexOutOfBoundsException が発生しました。
+* SITES-23277 - コンテンツフラグメント REST API：コンテンツフラグメントフィールドのライブ関係チェックは、ライブコピーに対してのみ行う必要があります。
+* SITES-23232 – 新しい CF エディター UI でカスタム検証が機能しない。
+* SITES-23090 - コンテンツフラグメント REST API：ロックされたコンテンツフラグメントのタイトルを更新できない。
+* SITES-22981 - ディープでないネストされたローンチの昇格が公開されない。
+* SITES-22870 - PathAttributesHandler.processSrcAttr ArrayIndexOutOfBoundsException。
+* SITES-22814 - コンテンツフラグメント REST API: チェックボックス列挙フラグメントフィールドの値は、モデルで定義されたキーで並べ替える必要があります。
+* SITES-22716 - OOTB コンポーネントのライブ使用状況リストに関する問題。
+* SITES-22457 – 深くないローンチの昇格でソースコンテンツが更新されない。
+* SITES-22449 - AEM P20 のアップグレード後に、コンテンツフラグメントで変更を保存できない。
+* SITES-22279 - コンテンツフラグメント REST API：コンテンツフラグメントに列挙タイプの一意の属性がありません。
+* SITES-22203 - コンテンツフラグメント REST API：同じ状況に対して同じ応答を返すように、Align Management API を設定します。
+* SITES-21973 - コンテンツフラグメント REST API：モデルに列挙タイプの一意の属性がありません。
+* SITES-20364 - URL のセレクターで 302 リダイレクトが機能しない。
+* SITES-21198 - VersionPreviewServlet：クリーンアップがすべてのクラスターノードで同時に実行され、結合の競合とブロックコミットが発生する
+* GRANITE-53094 - リポジトリベースの JS 使用オブジェクトが、相対パスを使用する際に見つからない。
 
-### 既知の問題 {#known-issues-17258}
+### 既知の問題 {#known-issues-17393}
 
-なし
+なし。
 
-### 変更通知 {#change-notice-17258}
+### 変更通知 {#change-notice-17393}
 
 * 2024年9月以降、AEM as a Cloud Service では、Sling Model Exporter フレームワークを介したリソースリゾルバーのシリアル化が無効になります。 詳しくは、[ドキュメント](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)を参照してください。
 
-### 廃止された機能と API {#deprecated-17258}
+### 廃止された機能と API {#deprecated-17393}
 
 AEM as a Cloud Service で廃止および削除された機能と API について詳しくは、[廃止および削除された機能と API](/help/release-notes/deprecated-removed-features.md) ドキュメントを参照してください。
 
-### 組み込みテクノロジー {#embedded-tech-17258}
+### 組み込みテクノロジー {#embedded-tech-17393}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
