@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media のベストプラクティス
-description: 画像やビデオの操作に関するDynamic Mediaのベストプラクティスと、Dynamic Media ビューアのベストプラクティスについて説明します。
+description: 画像やビデオを操作する際の Dynamic Media のベストプラクティスと、Dynamic Media ビューアのベストプラクティスについて説明します。
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
 source-git-commit: 220a8d8aecde76c7d77ebab16fda2158316c08dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4118'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -72,29 +72,29 @@ Dynamic Media と同期するアセットを選択できるプロアクティブ
 
 ## Dynamic Media ビューア
 
-Dynamic Media ビューアのベストプラクティスは、AEM上のDynamic Media Assets のパフォーマンス、機能、ユーザーエクスペリエンスを最適化するために設計された重要なガイドラインです。 これらのプラクティスにより、Dynamic Mediaのすべての機能を使用するようにアセットが適切に同期、公開および設定されます。
+Dynamic Media ビューアのベストプラクティスは、AEM 上の Dynamic Media アセットのパフォーマンス、機能、ユーザーエクスペリエンスを最適化するために設計された重要なガイドラインです。これらのプラクティスにより、Dynamic Media のすべての機能を使用するように、アセットが適切に同期、公開、設定されます。
 
-これらのベストプラクティスに従うと、シームレスな統合、効率的なアセット管理、強化されたビューアのインタラクションを実現できます。 アセットの同期、スマート切り抜きの使用、JavaScript ファイルの包含ガイドラインへの準拠はすべて重要なプラクティスです。 これらの推奨事項は、様々なプラットフォームやデバイスにわたってメディア配信の整合性と信頼性を維持するのに役立ちます。
+これらのベストプラクティスに従うことで、シームレスな統合、効率的なアセット管理、強化されたビューアのインタラクションを実現できます。アセットの同期、スマート切り抜きの使用、JavaScript ファイルの包含ガイドラインへの準拠はすべて重要なプラクティスです。これらのレコメンデーションは、様々なプラットフォームやデバイス間でのメディア配信の整合性と信頼性を維持するのに役立ちます。
 
-* **ビューアのAssetsの同期：**
-プレーヤーを使用する前に、すべてのビューアアセットがDynamic Mediaと同期されていることを確認してください。
+* **ビューアアセットの同期：**
+プレーヤーを使用する前に、すべてのビューアアセットが Dynamic Media と同期されます。
 
-   * `/libs/dam/gui/content/s7dam/samplemanager/samplemanager` のサンプルマネージャーページにアクセスします。 このページでは、標準提供のアイコン、CSS ファイル、プリセットなどのビューアのアセットを再同期できます。
-   * ビューアに関する問題が発生した場合は、Dynamic Media ビューアのトラブルシューティング ](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) の記事に移動してください [
+   * `/libs/dam/gui/content/s7dam/samplemanager/samplemanager` にあるサンプルマネージャーページにアクセスします。このページでは、標準のアイコン、CSS ファイル、プリセットなど、ビューアのアセットを再同期できます。
+   * ビューアの問題が発生した場合は、[Dynamic Media ビューアのトラブルシューティング](/help/assets/dynamic-media/troubleshoot-dm.md#viewers)の記事を参照してください。
 
-* **PublishAssets:**
-配信ビューアで表示する前に、アセットが公開されていることを確認してください。
-* **ビデオの自動再生をミュートにする：**
-ビデオの自動再生機能については、ブラウザーがボリュームのあるビデオの再生を制限するので、ミュートされたビデオ設定を使用します。
+* **アセットの公開：**
+配信ビューアでアセットを表示する前に、アセットが公開されます。
+* **自動再生ビデオのミュート：**
+ビデオの自動再生機能については、ブラウザーがボリュームによるビデオの再生を制限するので、ミュートされたビデオ設定を使用します。
 * **スマート切り抜き：**
-画像アセットのプレゼンテーションを強調するためのスマート切り抜きでの画像 v3 コンポーネントの使用。
+スマート切り抜き用の Image v3 コンポーネントを使用して、画像アセットのプレゼンテーションを強化します。
 * **JavaScript ファイルの組み込み：**
-ページにプライマリビューアのJavaScript ファイルのみを含めます。 ビューアのランタイムロジックがダウンロードする可能性のある追加のJavaScript ファイルは参照しないでください。 特に、`/s7viewers` コンテキストパス（Consolidated SDK include と呼ばれます）からHTML5 SDK `Utils.js` ライブラリに直接リンクしないでください。 ビューアのロジックは、`Utils.js` または類似のランタイムビューアライブラリの場所を管理します。ランタイムビューアライブラリは、リリース間で変更される場合があります。 Adobeは、サーバー上のセカンダリビューアインクルードの古いバージョンを保持しないので、それらを直接参照すると、今後の更新でビューア機能が破損する可能性があります。
-* **埋め込みのガイドライン：**
+ページには、プライマリビューアの JavaScript ファイルのみを組み込みます。ビューアのランタイムロジックによってダウンロードされる可能性のある追加の JavaScript ファイルを参照しないでください。具体的には、`/s7viewers` コンテキストパス（統合 SDK インクルードと呼ばれる）から HTML5 SDK `Utils.js` ライブラリに直接リンクしないでください。ビューアのロジックは、リリース間で変更される可能性がある `Utils.js` または類似のランタイムビューアライブラリの場所を管理します。アドビでは古いバージョンのセカンダリビューアをサーバー上に保持しないので、これらを直接参照すると、今後の更新でビューアの機能が損なわれる可能性があります。
+* **埋め込みガイドライン：**
 各ビューアに固有の埋め込みガイドラインについては、ドキュメントを参照してください。
-詳しくは、[AEM Assetsのビューア ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers) に移動します。
+詳しくは、[AEM Assets のビューア](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)を参照してください。
 * **SDK チュートリアルと例：**
-SDK コンポーネント API について詳しくは、[Viewer SDK Tutorial](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) および [Application5 SDK HTMLの例 ](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) を参照してください。
+SDK コンポーネント API について詳しくは、[ビューア SDK チュートリアル](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/library/c-tutorial)と [HTML5 SDK アプリケーションの例](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)を参照してください。
 
 
 ## 配信用アセットの準備
@@ -220,7 +220,7 @@ Dynamic Media を使用すると、URL を通じて画像を直接操作でき�
 | --- | --- |
 | **ベース画像をアップロードして公開** | まず、ロゴやアイコンを重ねて表示するベース画像をアップロードして公開します。任意の画像をベースとして使用できます。<br>例えば、次にベース画像を示します。<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa)。 |
 | **ロゴやアイコン画像をアップロードして公開** | 次に、ベース画像の上に重ねて表示する画像をアップロードして公開します。この画像は、オーバーレイするロゴやアイコンを含む透明な PNG にする必要があります。<br>次に、重ねて表示する透明効果のある星形オブジェクトの透明な PNG 画像を示します。<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **Dynamic Media URL を適用** | 次に、ベース画像とロゴやアイコン画像を組み合わせた Dynamic Media URL を作成します。URL コマンドを使用すると、この効果を得ることができます。<br>URL 構造は次のようになります。<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br> ここで、アセット <br>・ `hotspotRetailBaseImage` はベース画像です。<br>• `starxp` は、ロゴ／アイコンの画像です。<br>• `layer=1` は、ロゴやアイコンをベース画像の上に重ねることを指定します。<br>• `scale=1.25` は、ロゴ／アイコンのサイズを調整します。<br>• `posN=0.33,-.25` は、ベース画像に対するロゴ／アイコンの位置を決定します。<br>• `fmt=png` は、出力が PNG 形式になることを保証します。 |
+| **Dynamic Media URL を適用** | 次に、ベース画像とロゴやアイコン画像を組み合わせた Dynamic Media URL を作成します。URL コマンドを使用すると、この効果を得ることができます。<br>URL 構造は次のようになります。<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>ここで、アセット<br>• `hotspotRetailBaseImage` は、ベース画像です。<br>• `starxp` は、ロゴ／アイコンの画像です。<br>• `layer=1` は、ロゴやアイコンをベース画像の上に重ねることを指定します。<br>• `scale=1.25` は、ロゴ／アイコンのサイズを調整します。<br>• `posN=0.33,-.25` は、ベース画像に対するロゴ／アイコンの位置を決定します。<br>• `fmt=png` は、出力が PNG 形式になることを保証します。 |
 
 詳しくは、[src](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) を参照して、`src` コマンドおよびその他の Dynamic Media URL コマンドの詳細を確認してください。
 
@@ -276,19 +276,19 @@ HTML と CSS を使用して画像にプロモーションテキストメッセ�
 特定のニーズに合わせて、これらのバリエーションを自由に検討してください。
 URL 内で使用できるコマンドについて詳しくは、[コマンドリファレンス](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)を参照してください。
 
-### GIF画像の配信
+### GIF 画像の配信
 
-**ビジネスケース：***Dynamic Mediaを使用してGIFをストリーミング*
+**ビジネスケース：***Dynamic Media を使用して GIF をストリーミングする*
 
-Dynamic Mediaを通じてGIFをアップロードおよび配信できます。 アニメーション化されたGIFをレンダリングするには、`is/image` を URL の `is/content` に置き換えます。 例えば、`abc.gif` をアップロードした場合は、次を使用します。
+Dynamic Media を通じて GIF をアップロードおよび配信できます。アニメーション GIF をレンダリングするには、URL で `is/image` を `is/content` に置き換えます。例えば、`abc.gif` をアップロードした場合は、次を使用します。
 
-* この URL パスは、GIFの静的ビューをレンダリングします。
+* この URL パスは、GIF の静的ビューをレンダリングします。
 
   ```
   https://your.domain.com/is/image/yourfolder/abc
   ```
 
-* この URL パスは、GIFのアニメーションビューをレンダリングします。
+* この URL パスは、GIF のアニメーションビューをレンダリングします。
 
   ```
   https://your.domain.com/is/content/yourfolder/abc
@@ -296,7 +296,7 @@ Dynamic Mediaを通じてGIFをアップロードおよび配信できます。 
 
 >[!NOTE]
 >
->URL パスで `is/content` を使用する場合、画像変換コマンドがアセットに適用されません。
+>URL パスで `is/content` を使用する際、画像変換コマンドはアセットに適用されません。
 
 ### Web サイトにビデオを公開する
 
@@ -404,8 +404,8 @@ Dynamic Media スマートイメージングは、クライアントのブラウ
 
 ### 顧客へのアセットの配信後
 
-**ビジネスケース：***新しいコンテンツを公開したり、既存のコンテンツを上書きしたりした後に、変更が CDN にすぐに表示されるようにするには、どうすればよいですか？*
+**ビジネスケース：***新しいコンテンツを公開した後や、既存のコンテンツを上書きした後、CDN に変更をすぐに反映するにはどうすればよいですか？*
 
-CDN （コンテンツ配信ネットワーク）は、顧客に迅速に配信できるようにDynamic Media アセットをキャッシュします。 これらのアセットを更新する場合は、変更を web サイトに直ちに反映することが重要です。 CDN キャッシュを削除または無効にすることで、Dynamic Mediaによって配信されるアセットをすばやく更新できます。 このアプローチにより、通常は 10 時間に設定される TTL （有効期間）の値に基づいてキャッシュの有効期限が切れるのを待つ必要がなくなります。 特定の使用例に応じて、CDN TTL （有効期間）設定を適切に更新できます。
+CDN （コンテンツ配信ネットワーク）は、Dynamic Media アセットをキャッシュして、顧客にすばやく配信します。これらのアセットに更新を行った際は、変更を web サイトにすぐに反映することが重要です。CDN キャッシュをパージまたは無効にすることで、Dynamic Media によって配信されるアセットをすばやく更新できます。このアプローチにより、通常 10 時間に設定されている TTL（有効期間）の値に基づいてキャッシュの有効期限が切れるのを待つ必要がなくなります。特定のユースケースに応じて、CDN TTL（有効期間）設定を適宜更新できます。
 
-詳しくは、[Dynamic Mediaを使用して CDN キャッシュを無効にする ](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md) に移動します。
+詳しくは、[Dynamic Media を使用した CDN キャッシュの無効化](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)を参照してください。

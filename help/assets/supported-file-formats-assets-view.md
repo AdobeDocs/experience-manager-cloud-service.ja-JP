@@ -6,9 +6,9 @@ contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: 7c8f54d7c1139485717cc42dafbc87be74fd5883
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 94%
 [!DNL Assets view] では幅広いファイル形式をサポートしており、各機能は各種ファイルタイプに対応しています。
 
 * ![画像ファイルタイプのアイコン](assets/image-icon.svg) 画像：JPG、PNG、GIF、TIFF およびその他
-* ![creative cloudtype アイコン ](assets/creative-cloud-files.svg)Creative Cloudファイル：PSD、PSB、AI および INDD
+* ![Creative Cloud タイプのアイコン](assets/creative-cloud-files.svg) Creative Cloud ファイル：PSD、PSB、AI および INDD
 * ![カメラタイプのアイコン](assets/camera-icon.svg) Camera Raw ファイル：CR2/CR3、NEF、SRW/SRF およびその他
 * ![ドキュメントファイルタタイプのアイコン](assets/document-icon.svg) ドキュメント：DOCX、PDF、PPTX および XLSX
 * ![ビデオファイルタイプのアイコン](assets/video-icon.svg) ビデオ：MP4
@@ -63,7 +63,7 @@ ht-degree: 94%
 | ビデオ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | CC ライブラリ | − | − | − | − | − | ✓ | ✓ |
 | PDF | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
-| PSDと PSB | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
+| PSD および PSB | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | AI と INDD | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 | その他のバイナリファイル | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 
@@ -100,7 +100,7 @@ ht-degree: 94%
 | CC ライブラリ | ✓ | − | − | − | − |
 | PDF | ✓ | − | ✓ | ✓ | ✓ |
 | AI と INDD | ✓ | − | ✓ | ✓ | ✓ |
-| PSDと PSB | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PSD および PSB | ✓ | ✓ | ✓ | ✓ | ✓ |
 | その他のバイナリファイル | ✓ | − | ✓ | ✓ | ✓ |
 
 [!DNL Adobe Asset Link] のユーザーは、サポート対象の [!DNL Adobe Creative Cloud] デスクトップアプリケーションから [!DNL Assets view] リポジトリにファイルをアップロードしてチェックイン（新しいバージョンをアップロード）できます。

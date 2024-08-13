@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: f8b058549162b7ae3d57b1a7dd3461f738b75320
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1269'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ### Cloud Service コンテンツリクエストの相違 {#content-requests-variances}
 
-コンテンツリクエストには、次の表にまとめられているように、組織の分析レポートツールとは違いがあります。一般に、クライアントサイドの計測機能を使用してデータを収集し、特定のサイトに対するコンテンツリクエストの数をレポートする分析ツールは使用&#x200B;*しないでください*。なぜなら、多くの場合、分析ツールはユーザーの同意に応じてトリガーされるため、トラフィックの大部分が欠落しているからです。ログファイルや、AEM as a Cloud Serviceに独自の CDN を追加するお客様向けの CDN レポートでサーバーサイドでデータを収集する Analytics ツールでは、カウントが向上します。
+コンテンツリクエストには、次の表にまとめられているように、組織の分析レポートツールとは違いがあります。一般に、クライアントサイドの計測機能を使用してデータを収集し、特定のサイトに対するコンテンツリクエストの数をレポートする分析ツールは使用&#x200B;*しないでください*。なぜなら、多くの場合、分析ツールはユーザーの同意に応じてトリガーされるため、トラフィックの大部分が欠落しているからです。AEM as a Cloud Service の上に独自の CDN を追加するお客様向けに、ログファイルのサーバーサイドでデータを収集する Analytics ツール、または CDN レポートを使用すると、精度が向上します。
 
 | 差異の理由 | 説明 |
 |---|---|

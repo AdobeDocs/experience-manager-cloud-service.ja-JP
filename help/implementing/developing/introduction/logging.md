@@ -5,9 +5,9 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
 source-git-commit: 6f658c5e991c89ff4129352444ba9960d83c8884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2829'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -617,9 +617,9 @@ CDN ログは、新しいサポートチケットリクエストの Splunk に�
 
 >[!NOTE]
 >
->*特定* ログと *特定* ユーザーログは、Splunk に転送できません。
+>*特定*&#x200B;のログや&#x200B;*特定*&#x200B;のユーザーログを Splunk に転送することはできません。
 >
->**すべて** ログは Splunk に転送され、お客様の要件に基づいて、さらにフィルタリングを行うことができます。
+>**すべて**&#x200B;のログは Splunk に転送され、お客様は要件に基づいてさらに絞り込むことができます。
 
 ### Splunk 転送の有効化 {#enabling-splunk-forwarding}
 
