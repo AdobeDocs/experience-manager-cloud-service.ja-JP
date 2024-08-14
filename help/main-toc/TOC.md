@@ -7,9 +7,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service の仕組み
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 06a4bbb3ae2c5e7f3da5d4410b1fd09083574d84
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5329'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -192,8 +192,8 @@ ht-degree: 99%
    + ユニバーサルエディターのリリースノート {#univeral-editor}
       + [ユニバーサルエディターの最新リリースノート](/help/release-notes/universal-editor/current.md)
       + 2024年度 {#2024}
-         + [2024.07.28 リリースノート](/help/release-notes/universal-editor/2024/2024-07-28.md)
-         + [2024.06.28 リリースノート](/help/release-notes/universal-editor/2024/2024-06-28.md)
+         + [リリースノート（2024.07.28)](/help/release-notes/universal-editor/2024/2024-07-28.md)
+         + [リリースノート（2024.06.28)](/help/release-notes/universal-editor/2024/2024-06-28.md)
    + [新機能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service の主要な変更点](/help/release-notes/aem-cloud-changes.md)
    + [非推奨（廃止予定）および削除された機能と API](/help/release-notes/deprecated-removed-features.md)
