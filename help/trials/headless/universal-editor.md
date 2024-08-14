@@ -7,7 +7,7 @@ exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '886'
 ht-degree: 100%
 
