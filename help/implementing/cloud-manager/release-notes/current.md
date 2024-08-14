@@ -1,20 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.7.0 のリリースノート
-description: AEM as a Cloud Service の Cloud Manager 2024.7.0 のリリースノートです。
+title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.8.0 のリリースノート
+description: AEM as a Cloud ServiceのCloud Manager 2024.8.0 のリリースノートについて説明します。
 feature: Release Information
-exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 8d9f5296a2e79ee5560d1ede967b3eb2155cd151
-workflow-type: ht
-source-wordcount: '633'
-ht-degree: 100%
+source-git-commit: bf8bab5a195dde6cf15a2fd52e51d58c0215fdf3
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 31%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.7.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud ServiceのCloud Manager 2024.8.0 のリリースノート {#release-notes}
 
-このページは、AEM as a Cloud Service の Cloud Manager リリース 2024.7.0 のリリースノートです。
+このページは、AEM as a Cloud Service の Cloud Manager リリース 2024.8.0 のリリースノートです。
 
 >[!NOTE]
 >
@@ -22,47 +21,40 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service の Cloud Manager 2024.7.0 のリリース日は 2024年7月18日（PT）です。次回のリリースは 2024年8月10日（PT）に予定されています。
+AEM as a Cloud Service の Cloud Manager 2024.8.0 のリリース日は 2024年8月12日です。次回のリリースは 2024年9月14日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* コミット時に[実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)と[実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)がパイプラインを開始するための **Git の変更時**&#x200B;をトリガーし、[プライベートリポジトリ](/help/implementing/cloud-manager/managing-code/private-repositories.md)で使用できるようになりました。
-   * これは、8 月中旬までに完了し、段階的にロールアウトされます。
-* [アドビが管理する DV 証明書](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)を追加する際に、ドメインごとに証明書を作成するのではなく、複数のドメインに対応する 1 つの証明書を追加できるようになりました。
-* [追加の公開領域](/help/operations/additional-publish-regions.md)を持たないソリューションでも、プログラムに少なくとも Sites または Forms ソリューションが適用されていれば、プログラムに追加できるようになりました。
-* [99.99％ SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) でないソリューションでも、プログラムに少なくとも Sites または Forms ソリューションが適用されていれば、プログラムに追加できるようになりました。
-* [エクスペリエンス監査ダッシュボード](/help/implementing/cloud-manager/experience-audit-dashboard.md)は、様々な方法で強化されました。
-   * 監査は、以前の `.net` アプローチに代わって、CDN 経由で `.com` エンドポイントに対して実行されるようになりました。
-      * この変更により、実際のユーザーエクスペリエンスをより正確にシミュレートし、web サイトの管理と最適化に関して、十分な情報に基づいた意思決定を行うことができます。
-   * エクスペリエンス監査 UI に対して、次のような複数の機能強化が行われました。
-      * パフォーマンス、ベストプラクティス、SEO、アクセシビリティのトレンド表示が追加されました。
-      * Lighthouse の生のレポートリンクが、スキャンスナップショットの詳細パネルに直接、より直感的に表示されるようになりました。
-      * Lighthouse のレコメンデーションセクションが強化されました。
-   * PWA 指標は、Lighthouse バージョン 12.0.0 に従って削除され、この指標は廃止されました。
-* [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)は、[バージョン 49](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49) に更新されました。
+* [ その他の公開地域 ](/help/operations/additional-publish-regions.md) および [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) （サービスレベル契約）がAEM Formsのas a Cloud Service版で利用できるようになりました。
+   * この機能強化により、稼働時間の増加および遅延の減少を伴う高い SLA を達成でき、世界中に分散しているユーザーに対してクラス最高のエクスペリエンスを提供できます。
 
 ## 早期導入プログラム {#early-adoption}
 
 将来の機能をテストする機会を得るには、Adobe の早期導入プログラムに参加してください。
 
-### Cloud Manager での Edge Delivery Services のサポート {#edge-delivery-services}
+### Cloud ManagerでのEdge Delivery Servicesのサポート {#edge-delivery-services}
 
-Adobe Experience Manager Sites の一部として Edge Delivery Services のライセンスを取得している場合は、[Cloud Manager で Edge Delivery Services を使用してサイトを直接オンボード](/help/implementing/cloud-manager/edge-delivery-services.md)し、ガイド付きのセルフサービスエクスペリエンスを使用して運用開始できるようになりました。
+AEM Sitesの一部としてEdge Delivery Servicesのライセンスを取得している場合は、[Cloud Managerで直接Edge Delivery Servicesを使用してサイトをオンボーディングできるようになり ](/help/implementing/cloud-manager/edge-delivery-services.md)、ガイド付きのセルフサービスエクスペリエンスを使用して運用を開始できます。
 
-これにより、すべての AEM プロパティに対して統一されたエクスペリエンスが実現し、ドメイン名管理、SSL 証明書管理、CDN マッピングなどのすべての重要なワークフローとの一貫性が確保されます。
+この機能により、すべてのAEM プロパティで統一されたエクスペリエンスが提供されます。 ドメイン名の管理、SSL 証明書の管理、CDN マッピングなどの重要なワークフロー間で一貫性を確保できます。
 
-この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから `aemcs-cmedgedelsvs-program-adopter@adobe.com` にメールを送信してください。
+この新機能をテストし、フィードバックを共有することに関心がある場合は、Adobe IDに関連付けられたメールアドレスから `aemcs-cmedgedelsvs-program-adopter@adobe.com` にメールを送信します。
 
 ### ドメイン検証済み（DV）証明書
 
-Cloud Manager では、[ドメイン検証（DV）SSL 証明書をセルフサービスで生成および管理できるようになりました。](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)これにより、オンラインビジネス用の安全な web サイトを作成するための、最も高速かつ簡単でコスト効率に優れたソリューションが実現します。
+Cloud Managerを使用すると、[ セルフサービス方式でドメイン検証済み（DV） SSL 証明書を生成および管理 ](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) できるようになります。 この機能により、オンライン・ビジネス向けに安全な Web サイトを作成するための、最も迅速かつ容易でコスト・パフォーマンスに優れたソリューションが提供されます。
 
-この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから `Grp-aemcs-dv-dert-adopter@adobe.com` にメールを送信してください。
+この新機能をテストし、フィードバックを提供したい場合は、Adobe IDにリンクされたメールアドレスを使用して `Grp-aemcs-dv-dert-adopter@adobe.com` にメールを送信します。
 
 ### エクスペリエンス監査ダッシュボード {#experience-audit-dashboard}
 
 [Cloud Manager エクスペリエンス監査ダッシュボード](/help/implementing/cloud-manager/experience-audit-dashboard.md)には、ページのパフォーマンススコアのトレンド表示と、スコアの改善に役立つインサイトとレコメンデーションが含まれています。 エクスペリエンス監査は、Cloud Manager 実稼動パイプラインのステップとして含まれます。
 
-このダッシュボードは、Web アプリの品質を向上させるためのオープンソースの自動ツールである Google Lighthouse を使用しています。 公開されている web ページや認証が必要な web ページに対して実行できます。 パフォーマンス、アクセシビリティ、プログレッシブ web アプリ、SEO などの監査が行われます。
+このダッシュボードは、Web アプリの品質を向上させるためのオープンソースの自動ツールである Google Lighthouse を使用しています。 これを使用すると、公開か認証を必要とするかにかかわらず、任意の web ページを監査できます。 パフォーマンス、アクセシビリティ、プログレッシブ web アプリ、SEO などの評価を提供します。
 
-新しいダッシュボードのテストに興味がありますか？ 開始するには、Adobe ID に関連付けられたメールアドレスから `aem-lighthouse-pilot@adobe.com` にメールを送信します。
+新しいダッシュボードを試してみませんか？ まず、Adobe IDにリンクされたメールを使用して、`aem-lighthouse-pilot@adobe.com` にメールを送信します。
+
+## バグ修正
+
+* パイプラインが削除された後、パイプラインステップが実行中であることが判明するまれな問題を修正しました。
+* 設定パイプラインで `FAILED` ステータスが誤って表示される問題が、まれに修正されました。
