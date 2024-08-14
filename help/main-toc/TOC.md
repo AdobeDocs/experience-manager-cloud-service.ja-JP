@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a1baa7f29c6e15af11347debdd341f9972c06e83
-workflow-type: ht
-source-wordcount: '5315'
+source-git-commit: bd5f77e8e27b55c538bbe50d28ae56f6e983f541
+workflow-type: tm+mt
+source-wordcount: '5320'
 ht-degree: 100%
 
 ---
@@ -859,6 +859,7 @@ ht-degree: 100%
          + [SEO 用の URL の設定](/help/commerce-cloud/configuring/advanced-url-configuration.md)
          + [キャッシュオプション](/help/commerce-cloud/configuring/caching.md)
          + [カスタム HTTP ヘッダー](/help/commerce-cloud/configuring/custom-http-headers.md)
+         + [買い物かごおよび Dispatcher の設定](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
       + 開発 {#developing}
          + [AEM Cloud Service SDK を使用した開発](/help/commerce-cloud/develop.md)
          + [CIF コンポーネントのスタイル設定](/help/commerce-cloud/customizing/style-cif-component.md)
