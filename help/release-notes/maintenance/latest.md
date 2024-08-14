@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 8c1bad70a82775c1c99b0c35f07e0d1cae602230
+source-git-commit: 80edd0255b38beee93b3f9c779ae0f364500b4a5
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1176'
 ht-degree: 17%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 17%
 
 ### 既知の問題 {#known-issues-17465}
 
-* ASSETS-40875 - AssetDeleteHandler および Handler がページに対してトリガーされる際に、NullPointerException が発生する。
+* ASSETS-40875 - AssetDeleteHandler クラスは、アセット削除DELETEをリッスンし、削除DELETE（PRE_event または Asset_event）のタイプに基づいて特定のPOSTを実行します。 状況によっては、event_event 型のPOSTDELETEが NullPointerException を引き起こします。
 * FORMS-14340 - FormsAndDocumentOmniSearchHandler および CloudStorageSubmitActionInserter のインスタンス化でエラーが発生しました。 これらは無害なログステートメントです。
 * FORMS-15818 - コンポーネント記述子エントリ「OSGI-INF/com.adobe.aemfd.docmanager.impl。*.xml&#39;がサーバーログに見つかりません。 これらは無害なログステートメントです。
 * 
