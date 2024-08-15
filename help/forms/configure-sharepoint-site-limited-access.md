@@ -4,17 +4,17 @@ Description: Learn how to configure SharePoint Site with limited access using th
 keywords: 制限付きアクセスを使用するSharePoint サイトの設定方法、制限付きアクセスを使用するSharePointの設定方法、SharePoint サイトのアクセスを制限する認証範囲の使用方法を説明します。
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 4962c058e2cc2135dd3626655ba7b21dbdcbd455
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 24%
+source-wordcount: '817'
+ht-degree: 25%
 
 ---
 
 
 <span class="preview"> この機能は、早期導入プログラムで利用できます。 早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
 
-# 認証範囲を使用して、制限付きアクセスでSharePoint サイトを構成する
+# 認証範囲を使用した制限付きアクセスでの SharePoint サイトの設定
 
 制限付きまたは制限付きアクセスの目的は、管理者が特定のSharePoint サイトまたはSharePoint サイトのグループへのユーザーアクセスを制御できるようにして、セキュリティ管理を強化することです。 権限レベルは、ユーザーまたはグループに許可されていない他のSharePoint サイトの表示を許可せずに、特定のサイトへのアクセス権を付与する必要がある場合に役立ちます。
 
@@ -52,7 +52,7 @@ Microsoft Graph API の `Sites.Selected` 権限範囲を使用して ](https://p
 
 `Sites.Selected` API 権限を使用するには、SharePoint Online Sites に適切な権限が設定された Azure portal に登録されているアプリケーションが必要です。 このセットアップにより、定義されたスコープ内でSharePoint サイトを操作するために必要な権限がアプリケーションに付与され、必要な制限付きアクセスが提供されます。
 
-SharePoint Online Sites の権限を使用するアプリケーションの開発手順については、[ 記事 ](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) を参照し `Sites.Selected` ください。
+SharePoint Online Sites の権限を使用するアプリケーションの開発手順については、[ ブログ記事 – Develop Applications that use Sites.Selected permissions for SPO sites](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) を参照し `Sites.Selected` ください。
 
 ### AEM インスタンスでの認証範囲の設定
 

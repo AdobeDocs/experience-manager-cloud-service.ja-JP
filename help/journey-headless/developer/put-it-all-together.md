@@ -5,10 +5,10 @@ exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1061'
-ht-degree: 100%
+source-wordcount: '1056'
+ht-degree: 99%
 
 ---
 
@@ -43,7 +43,7 @@ AEM SDK は、カスタムコードのビルドとデプロイに使用されま
 
 AEM SDK とは異なり、AEM **ヘッドレス SDK** は、クライアントが HTTP 経由で AEM ヘッドレス API を素早く簡単に操作するために使用できるライブラリのセットです。
 
-AEM ヘッドレス SDK について詳しくは、[こちらのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=ja)を参照してください。
+詳しくは、[AEM ヘッドレス SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=ja) を参照してください。
 
 ## その他の開発ツール {#additional-development-tools}
 

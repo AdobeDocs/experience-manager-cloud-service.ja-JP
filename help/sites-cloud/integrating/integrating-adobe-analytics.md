@@ -5,10 +5,10 @@ feature: Integration
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 100%
+source-wordcount: '593'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 Adobe Analytics と AEM as a Cloud Service の統合により、web ページのアクティビティを追跡できます。統合には次の要件があります。
 
 * AEM as a Cloud Service で Analytics 設定を作成するためのタッチ UI を使用できることAdobe Analytics を AEM as a Cloud Service と統合するには、IMS 認証が必要です。
-* [Adobe Launch](#analytics-launch) の拡張機能として Adobe Analytics を追加し、設定できることAdobe Launch について詳しくは、[このページ](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=ja)を参照してください。
+* [Adobe Launch](#analytics-launch) の拡張機能として Adobe Analytics を追加し、設定できることAdobeのローンチについて詳しくは、[ クイックスタートガイド ](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=ja) を参照してください。
 
 旧バージョンの AEM と比較して、フレームワークのサポートは、AEM as a Cloud Service の Analytics 設定では提供されません。代わりに、AEM サイトに Analytics 機能（JS ライブラリ）を実装するデファクトツールである Adobe Launch によって実行されます。Adobe Launch では、Adobe Analytics の拡張を設定できるプロパティが作成され、Adobe Analytics にデータを送信するルールが作成されます。Adobe Launch は、SiteCatalyst が提供する解析のタスクに代わるものです。
 
@@ -43,7 +43,7 @@ Adobe Analytics と AEM as a Cloud Service の統合により、web ページの
 |---|---|
 | タイトル | 設定名 |
 | IMS 設定 | IMS 設定を選択します（以下の章を参照）。 |
-| セグメント | 現在のレポートスイートで定義されている Analytics セグメントを使用するオプション。Analytics レポートは、セグメントに基づいてフィルタリングされます。詳しくは、[こちらのページ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=ja)を参照してください。 |
+| セグメント | 現在のレポートスイートで定義されている Analytics セグメントを使用するオプション。Analytics レポートは、セグメントに基づいてフィルタリングされます。詳しくは、[ セグメントについて ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=ja) を参照してください。 |
 | レポートスイート | データを送信し、レポートを取り込むリポジトリー。レポートスイートでは、選択した Web サイト、Web サイト群、または Web サイトページのサブセットに関する完全な独立したレポートが定義されます。単一のレポートスイートから取得したレポートを表示し、必要に応じて、いつでも設定でこのフィールドを編集できます。 |
 
 ### Adobe Analytics と IMS 認証 {#configuration-parameters-ims}
@@ -68,7 +68,7 @@ Adobe Analytics は、Launch プロパティで拡張機能として追加でき
 
 * 基本的なサイトに対して Analytics の拡張機能を Launch で設定する方法については、[このビデオ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html?lang=ja)をご覧ください。
 
-* ルールを作成して Adobe Analytics にデータを送信する方法の詳細については、[このページ](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=ja)を参照してください。
+* ルールを作成し、Adobe Analyticsにデータを送信する方法について詳しくは、[Adobe Analyticsの追加 ](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=ja) を参照してください。
 
 >[!NOTE]
 >

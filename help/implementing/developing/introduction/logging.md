@@ -4,10 +4,10 @@ description: AEM as a Cloud Service のログを使用して一元的なログ�
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6f658c5e991c89ff4129352444ba9960d83c8884
-workflow-type: ht
-source-wordcount: '2829'
-ht-degree: 100%
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+workflow-type: tm+mt
+source-wordcount: '2831'
+ht-degree: 99%
 
 ---
 
@@ -628,7 +628,7 @@ CDN ログは、新しいサポートチケットリクエストの Splunk に�
 * Splunk HEC エンドポイントアドレス。このエンドポイントには有効な SSL 証明書が存在し、公にアクセス可能である必要があります。
 * Splunk のインデックス
 * Splunk のポート
-* Splunk の HEC トークン。詳しくは、[こちらのページ](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples)を参照してください。
+* Splunk の HEC トークン。詳しくは、[HTTP イベントコレクターの例 ](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) を参照してください。
 
 上記のプロパティは、関連するプログラム／環境タイプの組み合わせごとに指定する必要があります。例えば、開発、ステージング、実稼動の各環境を希望する場合は、次に示す 3 組の情報を提供する必要があります。
 

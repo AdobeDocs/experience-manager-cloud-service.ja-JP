@@ -4,10 +4,10 @@ description: AEM CIF コアコンポーネントをカスタマイズする方�
 feature: Commerce Integration Framework
 role: Admin
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: ef58cf5b216ef308cc65436f2eed2e500fb2bd96
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '2298'
-ht-degree: 100%
+source-wordcount: '2300'
+ht-degree: 98%
 
 ---
 
@@ -175,7 +175,7 @@ AEM コードに立ち入る前に、GraphQL IDE を使用して [GraphQL の概
 
    >[!TIP]
    >
-   > [Adobe Commerce GraphQL についての詳細なドキュメントは、こちら](https://devdocs.magento.com/guides/v2.4/graphql/index.html)で参照してください。
+   > 詳しくは、[Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html) を参照してください。
 
 ## 製品ティーザーの Sling モデルのアップデート {#updating-sling-model-product-teaser}
 
@@ -385,7 +385,7 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
 
    Sling モデルメソッドを HTL で呼び出すと、メソッドの `get` および `is` 部分が削除され、最初の文字が小文字に変換されます。`isShowBadge()` は `.showBadge` となり、`isEcoFriendly` は `.ecoFriendly` となります。`.isEcoFriendly()` から返されるブール値に基づいて、`<span>Eco Friendly</span>` が表示されるかどうかを決定します。
 
-   `data-sly-test` などの HTL ブロック文の詳細については、[こちら](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=ja)を参照してください。
+   `data-sly-test` およびその他の HTL ブロックステートメントについて詳しくは、[HTL の仕様 ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=ja) を参照してください。
 
 1. 変更を保存し、コマンドラインターミナルから Maven スキルを使用して、AEM にアップデートをデプロイします。
 
@@ -479,7 +479,7 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
 
 ## これで完了です {#congratulations}
 
-最初の AEM CIF コンポーネントをカスタマイズしました。完成したソリューションファイルを[こちら](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip)からダウンロードしてください。
+最初の AEM CIF コンポーネントをカスタマイズしました。[ ソリューションファイルをここからダウンロード ](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip) できます。
 
 ## ボーナスチャレンジ {#bonus-challenge}
 

@@ -4,10 +4,10 @@ description: コンテンツフラグメントコンテンツと AEM Assets REST
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 100%
+source-wordcount: '677'
+ht-degree: 98%
 
 ---
 
@@ -45,7 +45,7 @@ GraphQL API を使用する前に、GraphQL エンドポイントを作成する
    /content/cq:graphql/<configuration-name>/endpoint
    ```
 
-[GraphQL エンドポイントの有効化について詳しくは、こちらを参照してください](/help/headless/graphql-api/graphql-endpoint.md)。
+GraphQL エンドポイントの有効化について詳しくは、[AEMのGraphQL エンドポイントの管理 ](/help/headless/graphql-api/graphql-endpoint.md) を参照してください。
 
 ## GraphQL と GraphiQL を使用したクエリコンテンツ
 

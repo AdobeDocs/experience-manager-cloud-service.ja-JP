@@ -4,10 +4,10 @@ description: シークレット値と環境固有の値を使用する OSGi 設�
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '3302'
-ht-degree: 100%
+source-wordcount: '3321'
+ht-degree: 96%
 
 ---
 
@@ -322,7 +322,7 @@ OSGi プロパティで、オーサーとパブリッシュで異なる値が必
 * [実行モードの解決](#runmode-resolution)のセクションで説明したように、`config.author` と `config.publish` の別個の OSGi フォルダーを使用する必要があります。
 * 独立した変数名を作成する場合、次の 2 つのオプションを使用できます。
    * 最初のオプション（推奨）：異なる値を定義するように宣言されたすべての OSGI フォルダー（`config.author` と `config.publish` など）で、同じ変数名を使用します。例：
-     `$[env:ENV_VAR_NAME;default=<value>]`：デフォルトは、その層（オーサーまたはパブリッシュ）のデフォルト値です。環境変数を [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) またはクライアントを使用して設定する場合は、この [API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/)で説明されているように、「service」パラメーターを使用して層を区別します。「service」パラメーターは、変数の値を適切な OSGI 層にバインドします。「author」、「publish」、「preview」のいずれかです。
+     `$[env:ENV_VAR_NAME;default=<value>]`：デフォルトは、その層（オーサーまたはパブリッシュ）のデフォルト値です。環境変数を [Cloud Manager API またはクライアントを使用して設定する場合は ](#cloud-manager-api-format-for-setting-properties)[Cloud Manager API リファレンスドキュメント ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) で説明されているように、「service」パラメーターを使用して層を区別します。 「service」パラメーターは、変数の値を適切な OSGI 層にバインドします。「author」、「publish」、「preview」のいずれかです。
    * 2 つ目のオプション：`author_<samevariablename>` や `publish_<samevariablename>` などのプレフィックスを使用して個別の変数を宣言します。
 
 ### 設定例 {#configuration-examples}
@@ -515,14 +515,15 @@ config.dev
 
 ## プロパティ設定用の Cloud Manager API 形式 {#cloud-manager-api-format-for-setting-properties}
 
-API の設定方法については、[こちらのページ](https://developer.adobe.com/experience-cloud/cloud-manager/docs/)を参照してください。
+Cloud Manager API とその設定方法について詳しくは ](https://developer.adobe.com/experience-cloud/cloud-manager/docs/)Adobe Developer Web サイトの [Adobe Cloud Manager} を参照してください。
+
 >[!NOTE]
 >
 >使用している Cloud Manager API に「デプロイメントマネージャー - Cloud Service」というロールが割り当てられていることを確認します。その他のロールでは、必ずしも以下のすべてのコマンドを実行できるわけではありません。
 
 >[!TIP]
 >
->また、Cloud Manager を使用して環境変数を設定できます。詳しくは、[こちら](/help/implementing/cloud-manager/environment-variables.md)のドキュメントを参照してください。
+>また、Cloud Manager を使用して環境変数を設定できます。詳しくは、[Cloud Manager環境変数 ](/help/implementing/cloud-manager/environment-variables.md) を参照してください。
 
 ### API を使用した値の設定 {#setting-values-via-api}
 
@@ -550,7 +551,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 >[!NOTE]
 >デフォルトの変数は API 経由ではなく、OSGi プロパティ自体に設定されます。
 >
->詳しくは、[こちらのページ](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/)を参照してください。
+>詳しくは、[Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) を参照してください。
 
 ### API を使用した値の取得 {#getting-values-via-api}
 
@@ -558,7 +559,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 GET /program/{programId}/environment/{environmentId}/variables
 ```
 
-詳しくは、[こちらのページ](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/)を参照してください。
+詳しくは、[Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) を参照してください。
 
 ### API を使用した値の削除 {#deleting-values-via-api}
 
@@ -568,7 +569,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 変数を削除するには、空の値を含めます。
 
-詳しくは、[こちらのページ](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/)を参照してください。
+詳しくは、[Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) を参照してください。
 
 ### コマンドラインを使用した値の取得 {#getting-values-via-cli}
 
@@ -594,7 +595,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 >[!NOTE]
 >
->Adobe I/O CLI 用の Cloud Manager プラグインを使用した値の設定方法の詳細については、[こちらのページ](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)を参照してください。
+>Adobe I/O CLI 用のCloud Manager プラグインを使用した値の設定方法について詳しくは、[GitHub の aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) を参照してください。
 
 ### 変数の数 {#number-of-variables}
 

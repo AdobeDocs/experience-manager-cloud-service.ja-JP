@@ -1,13 +1,13 @@
 ---
 title: CDN でのトラフィックの設定
-description: 設定ファイルでルールとフィルターを宣言し、Cloud Manager設定パイプラインを使用して CDN にデプロイすることで、CDN トラフィックを設定する方法を説明します。
+description: 設定ファイルでルールとフィルターを宣言し、Cloud Manager 設定パイプラインを使用して CDN にデプロイすることで、CDN トラフィックを設定する方法について説明します。
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 3c546a05cf91dd8dcba39e42cd0f19857713f130
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 87%
+source-wordcount: '1314'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service では、受信リクエストまたは送信応答の特
 
 さらに、CDN でその接触チャネルに接続できない場合は、自己ホスト型のカスタムエラーページ（その後レンダリングされる）を参照するルールを書き込むことができます。詳しくは、[CDN エラーページの設定](/help/implementing/dispatcher/cdn-error-pages.md)の記事を参照してください。
 
-これらのすべてのルールは、ソース管理の設定ファイルで宣言され、Cloud Manager [config パイプラインを使用してデプロイされます。](/help/operations/config-pipeline.md) トラフィックフィルタールールを含む設定ファイルの累積サイズは、100 KB を超えることはできないことに注意してください。
+すべてのルールは、ソース管理の設定ファイルで宣言され、Cloud Manager の設定パイプラインを使用してデプロイされます。[](/help/operations/config-pipeline.md)トラフィックフィルタールールを含む設定ファイルの累積サイズが 100KB を超えることはできません。
 
 ## 評価の順序 {#order-of-evaluation}
 
@@ -37,9 +37,9 @@ AEM as a Cloud Service では、受信リクエストまたは送信応答の特
 
 CDN でトラフィックを設定する前に、次のことを行う必要があります。
 
-1. 以下の節で説明する様々な設定スニペットを参照して、`cdn.yaml` または類似の名前のファイルを作成します。
+1. 以下の節の様々な設定スニペットを参照して、`cdn.yaml` または類似の名前のファイルを作成します。
 
-   すべてのスニペットには共通のプロパティがあり、[ 設定パイプラインの記事 ](/help/operations/config-pipeline.md#common-syntax) で説明されています。 `kind` プロパティの値は *CDN* に、`version` プロパティは *1* に設定する必要があります。
+   すべてのスニペットには共通のプロパティがあり、[ 設定パイプライン ](/help/operations/config-pipeline.md#common-syntax) で説明されています。 `kind` プロパティの値は *CDN* に設定し、`version` プロパティは *1* に設定する必要があります。
 
    ```
    kind: "CDN"
@@ -48,9 +48,9 @@ CDN でトラフィックを設定する前に、次のことを行う必要が�
      envTypes: ["dev"]
    ```
 
-1. [Config パイプラインの記事 ](/help/operations/config-pipeline.md#folder-structure) で説明されているように、ファイルを *config* などの名前の最上位フォルダーの下のどこかに配置します。
+1. [Config パイプライン ](/help/operations/config-pipeline.md#folder-structure) で説明されているように、ファイルを *config* という最上位フォルダーの下の任意の場所に配置します。
 
-1. [Config パイプラインの記事 ](/help/operations/config-pipeline.md#managing-in-cloud-manager) の説明に従って、Cloud Managerで Config パイプラインを作成します。
+1. [Config パイプライン ](/help/operations/config-pipeline.md#managing-in-cloud-manager) に記載されているように、Cloud Managerで設定パイプラインを作成します。
 
 1. 設定をデプロイします。
 
@@ -154,7 +154,7 @@ data:
 | **transform** | op:replace、（reqProperty、reqHeader、queryParam、reqCookie のいずれか）、match、replacement | リクエストパラメーターの一部（「path」プロパティのみサポートされています）、またはリクエストヘッダー、クエリパラメーター、Cookie のいずれかを新しい値に置き換えます。 |
 |              | op:tolower、（reqProperty、reqHeader、queryParam、reqCookie のいずれか） | リクエストパラメーター（「path」プロパティのみサポートされています）またはリクエストヘッダー、クエリパラメーター、Cookie のいずれかを小文字の値に設定します。 |
 
-アクションは連結できます。次に例を示します。
+アクションは連結できます。例：
 
 ```
 actions:
@@ -315,7 +315,7 @@ data:
 AEM パブリッシュから AEM Edge Delivery Service にトラフィックをルーティングするために、オリジンセレクターの使用が必要になることがあります。
 
 * 一部のコンテンツは AEM パブリッシュで管理するドメインによって配信され、同じドメインの他のコンテンツは Edge Delivery Service によって配信されます
-* Edge Delivery Servicesで提供されるコンテンツでは、トラフィックフィルタールールやリクエスト/応答の変換など、設定パイプラインを通じてデプロイされるルールのメリットが得られます
+* Edge Delivery Service で配信されるコンテンツでは、トラフィックフィルタールールやリクエスト／応答の変換など、設定パイプラインを通じてデプロイされるルールのメリットを得ることができます。
 
 これを実現できるオリジンセレクタールールの例を以下に示します。
 

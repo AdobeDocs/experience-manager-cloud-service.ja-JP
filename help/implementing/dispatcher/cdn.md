@@ -4,10 +4,10 @@ description: AEM の管理による CDN を使用する方法と、独自の CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 100%
+source-wordcount: '1555'
+ht-degree: 98%
 
 ---
 
@@ -178,7 +178,7 @@ AEM の管理による CDN は、次のヘッダーを各リクエストに追�
 >
 >顧客の管理による CDN がある場合、これらのヘッダーは、実際のクライアントではなく、顧客の CDN プロキシサーバーの場所を反映します。したがって、顧客の管理による CDN の場合、位置情報ヘッダーは顧客の CDN で管理する必要があります。
 
-国コードの値は、Alpha-2 コード（[ここ](https://ja.wikipedia.org/wiki/ISO_3166-1)で説明）です。
+国コードの値は、「[ISO 3166-1](https://ja.wikipedia.org/wiki/ISO_3166-1)」で説明されているAlpha2 コードです。
 
 大陸コードの値は次のとおりです。
 

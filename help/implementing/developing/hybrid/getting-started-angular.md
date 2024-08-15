@@ -4,10 +4,10 @@ description: この記事では、SPA アプリケーションの例とその設
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 100%
+source-wordcount: '978'
+ht-degree: 99%
 
 ---
 
@@ -59,7 +59,7 @@ AEM での SPA の動作について詳しくは、次のドキュメントを�
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-詳しくは、[GitHub のこちらのページ](https://github.com/wcm-io-frontend/aem-clientlib-generator)を参照してください。
+詳しくは、GitHub の [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) を参照してください。
 
 `aem-clientlib-generator` は、`clientlib.config.js` ファイルで次のように設定されています。
 

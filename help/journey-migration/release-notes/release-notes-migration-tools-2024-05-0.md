@@ -3,10 +3,10 @@ title: AEM as a Cloud Service リリース 2024.05.0 の移行ツールのリリ
 description: AEM as a Cloud Service リリース 2024.05.0 の移行ツールのリリースノート
 feature: Release Information
 role: Admin
-source-git-commit: 4f01ca0076248442fe93161bbc8b98bffb64551b
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 100%
+source-wordcount: '185'
+ht-degree: 83%
 
 ---
 
@@ -22,13 +22,12 @@ ht-degree: 100%
 
 ### 新機能 {#what-is-new-bpa}
 
-* ベストプラクティスアナライザー（BPA）では、BPA で生成されたレポートを Cloud Acceleration Manager（CAM）に直接自動アップロードできるようになりました。ユーザーはレポートを手動でダウンロードして CAM にアップロードする必要がなくなります。詳しくは[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer)を参照してください
+* ベストプラクティスアナライザー（BPA）では、BPA で生成されたレポートを Cloud Acceleration Manager（CAM）に直接自動アップロードできるようになりました。ユーザーはレポートを手動でダウンロードして CAM にアップロードする必要がなくなります。詳しくは、[ ベストプラクティスアナライザーの使用 ](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) を参照してください
 
 ## Cloud Acceleration Manager {#cam-release}
 
 ### 新機能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager（CAM）では、BPA で生成されたレポートを CAM に直接自動アップロードできるようになりました。詳しくは[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase#best-practices-analysis)を参照してください
+* Cloud Acceleration Manager（CAM）では、BPA で生成されたレポートを CAM に直接自動アップロードできるようになりました。詳しくは、[Cloud Acceleration Managerの準備フェーズ – ベストプラクティス分析カードの使用 ](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) を参照してください。
 
-* Cloud Acceleration Manager では、ノード数、データストアのサイズなどの要素に基づいて、取り込み時間の推定が提供されるようになりました。詳しくは[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content)を参照してください
-
+* Cloud Acceleration Manager では、ノード数、データストアのサイズなどの要素に基づいて、取り込み時間の推定が提供されるようになりました。[Cloud Serviceへのコンテンツの取り込み ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) の詳細情報

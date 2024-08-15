@@ -4,10 +4,10 @@ description: アクションセンターを活用して、インシデントや�
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 22d5975a0c4ee180bbcda906b035d306a352b752
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -30,7 +30,7 @@ AEM as Cloud Service では、即時対応を求められる重大なインシ�
 
 ## 設定 {#configuration}
 
-受信するアクションセンターの電子メール通知を設定するには、[こちらの記事](/help/journey-onboarding/notification-profiles.md)の説明に従って、「インシデント通知 - Cloud Service」製品プロファイルおよび「事前通知 - Cloud Service」製品プロファイルを作成します。 また、組織の適切な Adobe ID をこれらのプロファイルに割り当てます。 これにより、管理者は、これらの電子メール通知を受信する対象ユーザーを決定できます。
+アクションセンターのメールCloud Serviceを受信するには、[ 通知プロファイル ](/help/journey-onboarding/notification-profiles.md) の説明に従って、製品プロファイル（「インシデント通知 – 通知」および「プロアクティブCloud Service – 通知」）を作成します。 また、組織の適切な Adobe ID をこれらのプロファイルに割り当てます。 これにより、管理者は、これらの電子メール通知を受信する対象ユーザーを決定できます。
 
 >[!NOTE]
 >アクションセンターの電子メール通知は組織レベルで機能するので、サブスクライバーは、すべてのプログラムとプログラム内の環境に関する通知を受信します。
@@ -65,7 +65,7 @@ AEM as a Cloud Service の通知には複数のタイプがありますが、次
 |---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | 運用上のインシデント | 即時対応を求められる重大なインシデント | 「インシデント通知 - Cloud Service」製品プロファイルに割り当てられたユーザー | X |
 | プロアクティブなレコメンデーション | 予定しておくべき最適化 | 「事前通知 - Cloud Service」製品プロファイルに割り当てられたユーザー | X |
-| Cloud Manager のパイプラインステータス | パイプラインのステータスに関する情報 | [ここで説明](/help/implementing/cloud-manager/notifications.md)するように、ビジネスオーナー、プログラムマネージャーまたはデプロイメントマネージャーの役割を持ち、[Experience Cloud の環境設定](https://experience.adobe.com/preferences)で「その他」チェックボックスがオンになっているユーザー。 |                           |
+| Cloud Manager のパイプラインステータス | パイプラインのステータスに関する情報 | ビジネスオーナー、プログラムマネージャーまたはデプロイメントマネージャーの役割を持ち、[Experience Cloudの環境設定で「その他」チェックボックスが選択されているユーザー ](https://experience.adobe.com/preferences)[ 通知 ](/help/implementing/cloud-manager/notifications.md) を参照してください。 |                           |
 
 ## サポートされている通知タイプ {#supported-notification-types}
 
@@ -76,7 +76,7 @@ AEM as a Cloud Service の通知には複数のタイプがありますが、次
 | ブロックされたレプリケーションキュー | インシデント | キューのブロックを解除するには、[レプリケーションドキュメント](/help/operations/replication.md#troubleshooting)の手順に従ってください。 |
 | 無効な永続 GraphQL クエリ | インシデント | [永続 GraphQL クエリのトラブルシューティングドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=ja)を参照して、無効な GraphQL クエリを修正する |
 | オリジンでのトラフィックスパイク | インシデント | オリジンアラートでのデフォルトのトラフィックスパイクよりも低いしきい値でトリガーされるレート制限トラフィックフィルタールールを設定して、オリジンを保護します。  チュートリアルを参照しているトラフィックフィルタールールのドキュメントの[トラフィックルールを使用した DoS および DDoS 攻撃のブロック](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules)の節を参照してください。 |
-| トリガーされた CDN トラフィックフィルタールール | インシデント | 一致したトラフィックフィルタールールが攻撃を反映していて、サイトがそのトラフィックをブロックしていない場合は、トラフィックフィルタールールをブロッキングモードで設定してサイトを保護します。 チュートリアルを参照しているトラフィックフィルタールールに関するドキュメントの [ トラフィックフィルタールール（WAF ルールを含む）を使用した web サイトの保護 ](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites) の節を参照してください。 |
+| トリガーされた CDN トラフィックフィルタールール | インシデント | 一致するトラフィックフィルタールールが攻撃を反映し、サイトがそのトラフィックをブロックしていない場合は、トラフィックフィルタールールをブロックモードで設定してサイトを保護します。チュートリアルを参照しているトラフィックフィルタールールのドキュメントの[トラフィックフィルタールール（WAF ルールを含む）による web サイトの保護](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites)の節を参照してください。 |
 | ページに多数のノードが含まれる | 事前対応 | ページ内のノードの合計数を減らします。 [ページの複雑さのドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/pcx)を参照してください | |
 | 実行中のワークフローインスタンスの数が多い | 事前対応 | 不要になった実行中のワークフローを終了します。 詳しくは、[パージジョブの設定](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/operations/maintenance)方法を参照してください |               |
 | S2S 証明書の有効期限が切れます | 事前対応 | [サーバーサイド API のアクセストークンの生成ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)で資格情報を更新する方法を説明します。 | 高い接続数 | 事前対応 | 接続プーリングについて詳しくは、[高度なネットワークとの接続プーリングに関するドキュメント](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking)を参照してください |

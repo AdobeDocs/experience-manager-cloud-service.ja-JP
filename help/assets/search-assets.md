@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '5503'
-ht-degree: 100%
+source-wordcount: '5506'
+ht-degree: 99%
 
 ---
 
@@ -87,7 +87,7 @@ Experience Manager Assets には、デフォルトで 2 つのプロパティの
 
 以前の動作（`statistical` モード）に切り替える必要がある場合は、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=ja)を参照し、`damAssetLucene-9` インデックスのカスタムバージョンを作成します。結果セットの数が多いと検索応答に長い時間がかかるため、`secure` モードに切り替えることはお勧めしません。
 
-これらのモードの詳細な説明を含む、Oak のファセット機能の詳細については、[こちらの記事](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets)を参照してください。
+これらのモードの詳細な説明など、Oakのファセット機能について詳しくは、[ ファセット - Oak ドキュメント - Lucene Index](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets) を参照してください。
 
 ## 入力に応じた検索候補 {#searchsuggestions}
 

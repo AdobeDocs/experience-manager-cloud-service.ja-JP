@@ -4,10 +4,10 @@ description: セキュアな JWT トークンを生成してサードパーテ�
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2089'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ## サーバー間フロー {#the-server-to-server-flow}
 
-IMS 組織管理者の役割を持つユーザーおよび AEM オーサー上の AEM ユーザーまたは AEM 管理者製品プロファイルのメンバーであるユーザーは、AEM as a Cloud Service から一連の資格情報を生成できます。各資格情報は、証明書（公開鍵）、秘密鍵および `clientId` と `clientSecret` で構成されるテクニカルアカウントを含む JSON ペイロードです。これらの資格情報は後で、AEM as a Cloud Service 環境管理者の役割を持つユーザーによって取得され、AEM 以外のサーバーにインストールされることになるので、秘密鍵として慎重に取り扱う必要があります。この JSON 形式のファイルには、AEM as a Cloud Service API との統合に必要なすべてのデータが含まれています。このデータを使用して、署名済み JWT トークンを作成します。このトークンは、Adobe IMS（Identity Management Services）との間で IMS アクセストークンと交換されます。その後、このアクセストークンをベアラー認証トークンとして使用して、AEM as a Cloud Service にリクエストを行うことができます。資格情報の証明書はデフォルトで 1 年後に期限切れになりますが、必要に応じて更新できます。詳しくは、[こちら](#refresh-credentials)を参照してください。
+IMS 組織管理者の役割を持つユーザーおよび AEM オーサー上の AEM ユーザーまたは AEM 管理者製品プロファイルのメンバーであるユーザーは、AEM as a Cloud Service から一連の資格情報を生成できます。各資格情報は、証明書（公開鍵）、秘密鍵および `clientId` と `clientSecret` で構成されるテクニカルアカウントを含む JSON ペイロードです。これらの資格情報は後で、AEM as a Cloud Service 環境管理者の役割を持つユーザーによって取得され、AEM 以外のサーバーにインストールされることになるので、秘密鍵として慎重に取り扱う必要があります。この JSON 形式のファイルには、AEM as a Cloud Service API との統合に必要なすべてのデータが含まれています。このデータを使用して、署名済み JWT トークンを作成します。このトークンは、Adobe IMS（Identity Management Services）との間で IMS アクセストークンと交換されます。その後、このアクセストークンをベアラー認証トークンとして使用して、AEM as a Cloud Service にリクエストを行うことができます。資格情報の証明書は、デフォルトで 1 年後に期限切れになりますが、必要に応じて更新できます。[ 資格情報の更新 ](#refresh-credentials) を参照してください。
 
 サーバー間フローは次の手順で構成されます。
 

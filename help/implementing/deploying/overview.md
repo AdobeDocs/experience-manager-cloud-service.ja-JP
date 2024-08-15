@@ -4,10 +4,10 @@ description: AEM as a Cloud Service へのデプロイの基本とベストプ�
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '3429'
-ht-degree: 100%
+source-wordcount: '3441'
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Ma
 >[!NOTE]
 >ローカルマシン上と Adobe Cloud 上のアプリケーションの動作には、運用上のわずかな違いがあります。これらのアーキテクチャの違いは、ローカル開発時に考慮される必要があり、結果的に、クラウドインフラストラクチャにデプロイしたときに動作が異なることになる可能性があります。こうした違いがあるので、実稼動環境で新しいカスタムコードをロールアウトする前に、開発環境とステージ環境で徹底的なテストを実行することが重要です。
 
-内部リリースのカスタムコードを開発するには、[AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) の関連バージョンをダウンロードし、インストールする必要があります。AEM as a Cloud Service Dispatcher ツールを使用する方法について詳しくは、[このページ](/help/implementing/dispatcher/disp-overview.md)を参照してください。
+内部リリースのカスタムコードを開発するには、[AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) の関連バージョンをダウンロードし、インストールする必要があります。AEM as a Cloud Service Dispatcher Tools の使用について詳しくは、[Cloud のDispatcher](/help/implementing/dispatcher/disp-overview.md) を参照してください。
 
 次のビデオでは、AEM as a Cloud Service にコードをデプロイする方法の概要を説明します。
 
@@ -56,7 +56,8 @@ AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Ma
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-お客様は、Cloud Manager を使用してカスタムコードをクラウド環境にデプロイします。Cloud Manager は、ローカルでアセンブルされたコンテンツパッケージを Sling Feature Model に準拠したアーティファクトに変換します（このモデルは、クラウド環境で動作する際の AEM as a Cloud Service 上のアプリケーションを記述するものです）。その結果、クラウド環境の[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)でパッケージを調べると、名前に「cp2fm」が含まれており、変換後のパッケージではすべてのメタデータが削除されています。これらを操作することはできません。つまり、ダウンロードしたり、複製したり、開いたりすることはできません。コンバーターについて詳しくは、[こちら](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)を参照してください。
+お客様は、Cloud Manager を使用してカスタムコードをクラウド環境にデプロイします。Cloud Manager は、ローカルでアセンブルされたコンテンツパッケージを Sling Feature Model に準拠したアーティファクトに変換します（このモデルは、クラウド環境で動作する際の AEM as a Cloud Service 上のアプリケーションを記述するものです）。その結果、クラウド環境の[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)でパッケージを調べると、名前に「cp2fm」が含まれており、変換後のパッケージではすべてのメタデータが削除されています。これらを操作することはできません。つまり、ダウンロードしたり、複製したり、開いたりすることはできません。コンバーターに関する詳細なドキュメントについては、[ を参照してください
+github](https://github.com/apache/sling-org-apache-sling-feature-cpconverter) の sling-org-apache-sling-feature-cpconverter。
 
 AEM as a Cloud Service 上のアプリケーション用に作成されたコンテンツパッケージでは、不変コンテンツと可変コンテンツを明確に分離する必要があります。Cloud Manager は可変コンテンツのみインストールし、次のようなメッセージも出力します。
 
@@ -252,7 +253,7 @@ AEM のアップデートと同様に、お客様向けリリースも、適切�
 
 ## インデックス {#indexes}
 
-新しいまたは変更されたインデックスがあると、インデックスの追加作成または再作成の手順が行われてから、新しいバージョンでトラフィックを引き受けることができるようになります。AEM as a Cloud Service でのインデックス管理について詳しくは、[この記事](/help/operations/indexing.md)を参照してください。Cloud Manager でビルドページのインデックス作成ステータスを確認し、新しいバージョンでトラフィックを引き受ける準備ができたら通知を受け取ることができます。
+新しいまたは変更されたインデックスがあると、インデックスの追加作成または再作成の手順が行われてから、新しいバージョンでトラフィックを引き受けることができるようになります。AEM as a Cloud Serviceのインデックス管理について詳しくは、[ コンテンツの検索とインデックス作成 ](/help/operations/indexing.md) を参照してください。 Cloud Manager でビルドページのインデックス作成ステータスを確認し、新しいバージョンでトラフィックを引き受ける準備ができたら通知を受け取ることができます。
 
 >[!NOTE]
 >
@@ -278,7 +279,7 @@ AEM のアップデートと同様に、お客様向けリリースも、適切�
 
 ### インデックスの変更 {#index-changes}
 
-インデックスに変更を加えた場合、新しいバージョンは終了するまで現在のインデックスを引き続き使用するのに対して、古いバージョンは自分自身の変更済みのインデックスセットを使用します。開発者は、 [この記事](/help/operations/indexing.md) で説明しているインデックス管理手法に従う必要があります。
+インデックスに変更を加えた場合、新しいバージョンは終了するまで現在のインデックスを引き続き使用するのに対して、古いバージョンは自分自身の変更済みのインデックスセットを使用します。開発者は、「コンテンツの検索とインデックス作成 [ で説明しているインデックス管理手法に従う必要があ ](/help/operations/indexing.md) ます。
 
 ### ロールバックに備えた保守的なコーディング {#conservative-coding-for-rollbacks}
 
@@ -333,4 +334,4 @@ Developers want to ensure that their custom code is performing well. For Cloud e
 
 ## ソース管理下のメンテナンスタスク設定 {#maintenance-tasks-configuration-in-source-control}
 
-**ツール／操作**&#x200B;画面はクラウド環境では使用できないので、メンテナンスタスク設定をソース管理下に置く必要があります。このメリットにより、変更が事後対応的に適用され忘れられるのではなく、意図的に保存されるようになります。詳しくは、[メンテナンスタスクの記事](/help/operations/maintenance.md)を参照してください。
+**ツール／操作**&#x200B;画面はクラウド環境では使用できないので、メンテナンスタスク設定をソース管理下に置く必要があります。このメリットにより、変更が事後対応的に適用され忘れられるのではなく、意図的に保存されるようになります。詳しくは、[AEM as a Cloud Serviceのメンテナンスタスク ](/help/operations/maintenance.md) を参照してください。

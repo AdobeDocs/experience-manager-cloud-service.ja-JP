@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: f81ea2b58cfa68542df957b54b1c0233b6096810
-workflow-type: ht
-source-wordcount: '2687'
-ht-degree: 100%
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+workflow-type: tm+mt
+source-wordcount: '2685'
+ht-degree: 99%
 
 ---
 
@@ -197,7 +197,7 @@ ht-degree: 100%
 
    ![コンテンツフラグメントの「バリエーションを生成」の表示](assets/cfm-generate-variations5.png)
 
-「バリエーションを生成」について詳しくは、[こちら](/help/generative-ai/generate-variations.md)を参照してください。
+詳しくは、[ バリエーションの生成 ](/help/generative-ai/generate-variations.md) を参照してください。
 
 ### バリエーションを削除 {#delete-variation}
 

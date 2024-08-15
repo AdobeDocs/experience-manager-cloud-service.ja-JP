@@ -4,10 +4,10 @@ description: AEM as a Cloud Service でのキャッシュの基本について
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '2894'
-ht-degree: 100%
+source-wordcount: '2897'
+ht-degree: 99%
 
 ---
 
@@ -245,7 +245,7 @@ Web サイトの URL には、キャンペーンの成功をトラックする�
 
 この動作を無効にしたい場合は、サポートチケットを送信します。
 
-2023年10月より前に作成された環境の場合は、Dispatcher 設定の `ignoreUrlParams` プロパティを[ここに記載されている](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#ignoring-url-parameters)ように設定することをお勧めします。
+2023 年 10 月より前に作成した環境の場合は、Dispatcher設定の `ignoreUrlParams` プロパティを設定することをお勧めします。[Dispatcherの設定 – URL パラメーターの無視 ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#ignoring-url-parameters) を参照してください。
 
 マーケティングパラメーターを無視する方法は 2 つあります。（最初のクエリは、クエリパラメーターを使用してキャッシュバスティングを無視する場合に推奨されます）。
 

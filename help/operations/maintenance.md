@@ -4,10 +4,10 @@ description: AEM as a Cloud Serviceのメンテナンスタスクと、その設
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 95%
+source-wordcount: '2053'
+ht-degree: 98%
 
 ---
 
@@ -217,23 +217,23 @@ ht-degree: 95%
 次の手順に従って、設定ファイルを宣言し、デプロイします。
 
 >[!NOTE]
->設定ファイルにバージョンのパージノードをデプロイしたら、それを削除せずに宣言したままにしておく必要があります。設定パイプラインを実行しようとすると、失敗します。
+>設定ファイルにバージョンのパージノードをデプロイしたら、それを削除せずに宣言したままにしておく必要があります。実行しようとすると、設定パイプラインが失敗します。
 > 
 >同様に、設定ファイルに監査ログのパージノードをデプロイしたら、それを削除せずに宣言したままにする必要があります。
 
 **1** `mt.yaml` などの名前のファイルを作成します。
 
-**2** [config パイプラインの記事で説明されているように、ファイルを `config` または類似の名前の最上位フォルダーの下のどこかに配置します。](/help/operations/config-pipeline.md#folder-structure)
+**2** `config` または類似の名前の最上位フォルダーの下の任意の場所にファイルを配置します。詳しくは、[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md#folder-structure) を参照してください。
 
 **3** - 設定ファイルで次のプロパティを宣言します。
 
-* データノードの上のいくつかのプロパティ – 説明については、[config パイプライン ](/help/operations/config-pipeline.md#common-syntax) の記事を参照してください。 `kind` プロパティの値は *MaintenanceTasks* にし、バージョンは *1* に設定する必要があります。
+* データノードの上のいくつかのプロパティ – 説明については、[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md#common-syntax) を参照してください。 `kind`プロパティの値は *MaintenanceTasks* に、バージョンは *1* に設定する必要があります。
 
 * `versionPurge` と `auditLogPurge` オブジェクトの両方を含むデータオブジェクト。
 
 以下の `versionPurge` と `auditLogPurge` オブジェクトの定義と構文を参照してください。
 
-次の例のように設定を構築します。
+次の例のように設定を構築する必要があります。
 
 ```
 kind: "MaintenanceTasks"
@@ -268,7 +268,7 @@ data:
 * すべてのプロパティを定義する必要があります。デフォルトは継承されません。
 * 以下のプロパティテーブルのタイプ（整数、文字列、ブール値など）を考慮する必要があります。
 
-**4** - [config パイプラインの記事に記載されているように、Cloud Managerで config パイプラインを作成します。](/help/operations/config-pipeline.md#managing-in-cloud-manager) サンドボックスと迅速な開発環境（RDE）では、パージをサポートしていません。
+**4** - [設定パイプラインの記事の説明に従って、Cloud Manager で設定パイプラインを作成します。](/help/operations/config-pipeline.md#managing-in-cloud-manager) サンドボックスおよび迅速な開発環境（RDE）では、パージはサポートされていません。
 
 ### バージョンのパージ {#version-purge}
 

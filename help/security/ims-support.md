@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service の Image Management Sy
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1922'
-ht-degree: 100%
+source-wordcount: '1941'
+ht-degree: 93%
 
 ---
 
@@ -60,9 +60,9 @@ AEM のお客様は、既に組織がプロビジョニングされています�
 1. システム管理者は、シングルサインオンを設定するために Admin Console で IDP 設定を行います。
 1. AEM 管理者が、通常どおりローカルグループと権限および特権を管理します。
 
-IDP 設定など、アドビの ID 管理の基本については、[こちら](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html)を参照してください。
+IDP 設定を含むIdentity Managementの基本Adobeについては、「[ID の設定とシングルサインオン ](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html) を参照してください。
 
-Enterprise Administration と Admin Console の使用方法については、[こちら](https://helpx.adobe.com/jp/enterprise/admin-guide.html)を参照してください。
+エンタープライズ版の管理とAdmin Console版の使用については、[ エンタープライズ版およびチーム版の管理ガイドへようこそ ](https://helpx.adobe.com/jp/enterprise/admin-guide.html) を参照してください。
 
 ### Admin Console でのユーザーのオンボーディング {#onboarding-users-in-admin-console}
 
@@ -96,27 +96,29 @@ Enterprise Administration と Admin Console の使用方法については、[�
 
 >[!NOTE]
 >
->プレリリースバージョンの **2.4RC1** は動的グループ作成サポートで利用でき、[この場所](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)にあります。
+>プレリリースバージョン **2.4RC1** は、[GitHub のユーザー同期ツール v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1) で動的グループの作成をサポートしています。
 
 このリリースの主な機能は、Admin Console でユーザーのメンバーシップに合わせて新しい LDAP グループを動的にマッピングする機能と、動的なユーザーグループ作成です。
 
-新しいグループ機能の詳細については、[こちら](https://adobe-apiplatform.github.io/user-sync.py/jp/user-manual/advanced_configuration.html#additional-group-options)を参照してください。
+新しいグループ機能の詳細については、[Adobe ユーザー同期ツール – 追加のグループ オプション ](https://adobe-apiplatform.github.io/user-sync.py/jp/user-manual/advanced_configuration.html#additional-group-options) を参照してください。
 
 **ユーザー同期に関するドキュメント**
 
-詳しくは、[UST のドキュメント](https://adobe-apiplatform.github.io/user-sync.py/jp/)を参照してください。
+以下を参照してください。
 
-ユーザー同期ツールは、[こちら](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)で説明されている手順に従って、Adobe Developer クライアント UMAPI として登録する必要があります。
+* [UST のドキュメント ](https://adobe-apiplatform.github.io/user-sync.py/jp/)
 
-Adobe Developer Console のドキュメントについては、[こちら](https://developer.adobe.com/developer-console/)を参照してください。
+* ユーザー同期ツールでは、[API アクセスの認証 ](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html) の手順を使用して、Adobe Developer クライアント UMAPI として登録する必要があります。
 
-ユーザー同期ツールで使用される User Management API については、[こちら](https://adobe-apiplatform.github.io/user-sync.py/jp/)を参照してください。
+* [Adobe Developer Consoleのドキュメント ](https://developer.adobe.com/developer-console/)
+
+* [ ユーザー同期ツールで使用される User Management API](https://adobe-apiplatform.github.io/user-sync.py/jp/)
 
 ## Adobe Experience Manager as a Cloud Service の設定 {#aem-configuration}
 
 >[!NOTE]
 >
->必要な AEM IMS 設定は、AEM の環境とインスタンスがプロビジョニングされる際に自動的に行われます。ただし、管理者は、[こちら](/help/implementing/deploying/overview.md)で説明している方法を使用して、自らの要件に従って設定を変更できます。
+>必要な AEM IMS 設定は、AEM の環境とインスタンスがプロビジョニングされる際に自動的に行われます。ただし、管理者は必要に応じて変更できます。詳しくは、[AEM as a Cloud Serviceへのデプロイ ](/help/implementing/deploying/overview.md) を参照してください。
 
 必要な AEM IMS 設定は、AEM の環境とインスタンスがプロビジョニングされる際に自動的に行われます。顧客側の管理者は、自らの要件に応じて設定の一部を変更できます。
 

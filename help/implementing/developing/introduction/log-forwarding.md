@@ -4,9 +4,9 @@ description: AEM as a Cloud Serviceでの Splunk およびその他のログベ�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cb4299be4681b24852a7e991c123814d31f83cad
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1375'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->この機能はまだリリースされておらず、一部のログ宛先はリリース時には使用できない場合があります。 それまでの間、サポートチケットを開いて、**ログ記事 [ で説明しているように、ログを** Splunk](/help/implementing/developing/introduction/logging.md) に転送できます。
+>この機能はまだリリースされておらず、一部のログ宛先はリリース時には使用できない場合があります。 それまでの間、サポートチケットを開いて、**AEM as a Cloud Serviceのログ** に記載されているように、[Splunk](/help/implementing/developing/introduction/logging.md) にログを転送できます。
 
 ログベンダーのライセンスまたはログ製品のホストのライセンスを持つお客様は、AEM ログ（Apache/Dispatcherを含む）および CDN ログを、関連するログ出力先に転送できます。 AEM as a Cloud Serviceは、次のログ出力先をサポートしています。
 
@@ -169,7 +169,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-各ファイルには、それぞれ別の行に記述された複数の JSON ログエントリが含まれます。 ログエントリの形式については [ ログに関する記事 ](/help/implementing/developing/introduction/logging.md) を参照してください。また、各ログエントリには、以下の [ ログエントリの形式 ](#log-format) の節で説明する追加のプロパティも含まれます。
+各ファイルには、それぞれ別の行に記述された複数の JSON ログエントリが含まれます。 ログエントリの形式については、[AEM as a Cloud Serviceのログ ](/help/implementing/developing/introduction/logging.md) を参照してください。各ログエントリには、以下の [ ログエントリの形式 ](#log-format) の節で説明しているその他のプロパティも含まれています。
 
 #### Azure Blob Storage AEM ログ {#azureblob-aem}
 
@@ -183,7 +183,7 @@ AEM ログ（Apache/Dispatcherを含む）は、次の命名規則でフォル�
 
 各フォルダーに 1 つのファイルが作成され、に追加されます。 お客様は、このファイルが大きくなりすぎないよう、ファイルの処理と管理を行います。
 
-[ ログに関する記事 ](/help/implementing/developing/introduction/logging.md) のログエントリ形式を参照してください。 ログエントリには、以下の [ ログエントリの形式 ](#log-formats) の節で説明する追加のプロパティも含まれます。
+[AEM as a Cloud Serviceのログ ](/help/implementing/developing/introduction/logging.md) のログエントリフォーマットを参照してください。 ログエントリには、以下の [ ログエントリの形式 ](#log-formats) の節で説明する追加のプロパティも含まれます。
 
 
 ### Datadog {#datadog}
@@ -266,7 +266,7 @@ data:
 
 #### HTTPS CDN ログ {#https-cdn}
 
-Web リクエスト（POST）は、[ ログ記事 ](/help/implementing/developing/introduction/logging.md#cdn-log) で説明されているログエントリ形式で、ログエントリの配列である json ペイロードを使用して継続的に送信されます。 その他のプロパティについては、以下の「[ ログエントリの形式 ](#log-formats) の節で説明します。
+Web リクエスト（POST）は、ログエントリの配列である json ペイロードを使用して継続的に送信されます。ログエントリの形式については、「[AEM as a Cloud Serviceのログ ](/help/implementing/developing/introduction/logging.md#cdn-log) を参照してください。 その他のプロパティについては、以下の「[ ログエントリの形式 ](#log-formats) の節で説明します。
 
 また、`sourcetype` という名前のプロパティもあり、`aemcdn` という値に設定されています。
 
@@ -276,7 +276,7 @@ Web リクエスト（POST）は、[ ログ記事 ](/help/implementing/developin
 
 #### HTTPS AEM ログ {#https-aem}
 
-AEM ログ（apache/dispatcher を含む）の場合、web リクエスト（POST）は、[ ログ記事 ](/help/implementing/developing/introduction/logging.md) で説明されているように、様々なログエントリ形式で、ログエントリの配列である json ペイロードを使用して継続的に送信されます。 その他のプロパティについては、以下の「[ ログエントリの形式 ](#log-format) の節で説明します。
+AEM ログ（apache/dispatcher を含む）の場合、web リクエスト（POST）は、[AEM as a Cloud Serviceのログ ](/help/implementing/developing/introduction/logging.md) で説明されているように、様々なログエントリ形式でログエントリの配列である json ペイロードで継続的に送信されます。 その他のプロパティについては、以下の「[ ログエントリの形式 ](#log-format) の節で説明します。
 
 `sourcetype` という名前のプロパティもあり、次のいずれかの値に設定されます。
 
@@ -323,7 +323,7 @@ data:
 
 ## ログエントリの形式 {#log-formats}
 
-各ログタイプ（CDN ログおよび Apache/Dispatcherを含むAEM ログ）の形式については、一般的な [ ログに関する記事 ](/help/implementing/developing/introduction/logging.md) を参照してください。
+各ログタイプ（CDN ログおよび Apache/Dispatcherを含むAEM ログ）の形式については、[AEM as a Cloud Serviceのログ ](/help/implementing/developing/introduction/logging.md) を参照してください。
 
 複数のプログラムおよび環境からのログは、ログ記事で説明されている出力に加えて、同じログ宛先に転送される場合があるので、次のプロパティが各ログエントリに含まれます。
 
@@ -350,7 +350,7 @@ aem_tier: author
 
 一部の組織は、ログの宛先で受信できるトラフィックを制限します。
 
-CDN ログの場合は、[ この記事 ](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) で説明しているように、IP アドレスを許可リストに登録できます。 その共有 IP アドレスのリストが大きすぎる場合は、（Adobe以外の） Azure Blob Store にトラフィックを送信することを検討してください。このストアでは、専用の IP アドレスのログを最終的な送信先に送信するロジックを書き込むことができます。
+CDN ログの場合は、[fastly ドキュメント – 公開 IP リスト ](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) で説明しているように、IP アドレスを許可リストに登録できます。 その共有 IP アドレスのリストが大きすぎる場合は、（Adobe以外の） Azure Blob Store にトラフィックを送信することを検討してください。このストアでは、専用の IP アドレスのログを最終的な送信先に送信するロジックを書き込むことができます。
 
 AEM ログ（Apache/Dispatcherを含む）の場合は、ログ転送を設定して [ 高度なネットワーク機能 ](/help/security/configuring-advanced-networking.md) を実行できます。 オプションの `port` パラメーターと `host` パラメーターを利用する、以下の 3 つの高度なネットワークタイプのパターンを参照してください。
 

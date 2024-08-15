@@ -1,20 +1,20 @@
 ---
 title: CDN エラーページの設定
-description: Amazon S3 や Azure Blob Storage などの自己ホスト型ストレージで静的ファイルをホストし、Cloud Manager設定パイプラインを使用してデプロイされた設定ファイルで参照することで、デフォルトのエラーページをオーバーライドする方法を説明します。
+description: Amazon S3 や Azure Blob Storage などの自己ホスト型ストレージで静的ファイルをホストし、Cloud Manager 設定パイプラインを使用してデプロイされた設定ファイルで静的ファイルを参照することで、デフォルトのエラーページを上書きする方法について説明します。
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 57%
+source-wordcount: '364'
+ht-degree: 87%
 
 ---
 
 
 # CDN エラーページの設定 {#cdn-error-pages}
 
-万が一、[アドビが管理する CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) が AEM の接触チャネルに到達できない場合、CDN はデフォルトで、サーバーに到達できないことを示す、ブランド化されていない汎用のエラーページを表示します。デフォルトのエラーページを上書きするには、Amazon S3 や Azure Blob Storage などの自己ホスト型ストレージで静的ファイルをホストし、Cloud Manager [config パイプライン ](/help/operations/config-pipeline.md#managing-in-cloud-manager) を使用してデプロイされた設定ファイルで参照します。
+万が一、[アドビが管理する CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) が AEM の接触チャネルに到達できない場合、CDN はデフォルトで、サーバーに到達できないことを示す、ブランド化されていない汎用のエラーページを表示します。Amazon S3 や Azure Blob Storage などの自己ホスト型ストレージで静的ファイルをホストし、Cloud Manager [設定パイプライン](/help/operations/config-pipeline.md#managing-in-cloud-manager)を使用してデプロイされた設定ファイルで静的ファイルを参照することで、デフォルトのエラーページを上書きできます。
 
 ## 設定 {#setup}
 
@@ -22,9 +22,9 @@ ht-degree: 57%
 
 1. 以下の構文の節を参照して、`cdn.yaml` または類似の名前のファイルを作成します。
 
-1. [config パイプラインの記事 ](/help/operations/config-pipeline.md#folder-structure) で説明されているように、ファイルを *config* などの名前の最上位フォルダーの下のどこかに配置します。
+1. [ 設定パイプラインの使用 ](/help/operations/config-pipeline.md#folder-structure) で説明されているように、ファイルを *config* などの名前の最上位フォルダーの下のどこかに配置します。
 
-1. [config パイプラインの記事 ](/help/operations/config-pipeline.md#managing-in-cloud-manager) で説明されているように、Cloud Managerで設定パイプラインを作成します。
+1. [ 設定パイプラインの使用 ](/help/operations/config-pipeline.md#managing-in-cloud-manager) の説明に従って、Cloud Managerで設定パイプラインを作成します。
 
 1. 設定をデプロイします。
 
@@ -47,7 +47,7 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
-データノードの上のプロパティの説明については、[config パイプラインの記事 ](/help/operations/config-pipeline.md#common-syntax) を参照してください。 kind プロパティの値は *CDN* に、`version` プロパティは *1* に設定する必要があります。
+データノードの上のプロパティについての説明は、[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md#common-syntax) を参照してください。 kind プロパティの値は *CDN* に設定し、`version` プロパティは *1* に設定する必要があります。
 
 
 | 名前 | 許可されたプロパティ | 意味 |

@@ -5,10 +5,10 @@ exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 100%
+source-wordcount: '876'
+ht-degree: 99%
 
 ---
 
@@ -92,7 +92,7 @@ AEM には次のテンプレートが始めから用意されていて、プロ�
 
    ![タイルへの項目の追加](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. タイルの作成時と同様にして、タイルに項目を追加します。プロジェクトタイルについては、[こちら](/help/sites-cloud/authoring/projects/overview.md#project-tiles)で説明しています。この例では、別のワークフローが 1 つ追加されました。
+1. タイルの作成時と同様にして、タイルに項目を追加します。詳しくは、[ プロジェクトタイル ](/help/sites-cloud/authoring/projects/overview.md#project-tiles) を参照してください。 この例では、別のワークフローが 1 つ追加されました。
 
 ### タイルを開く {#opening-a-tile}
 
@@ -138,7 +138,7 @@ AEM には次のテンプレートが始めから用意されていて、プロ�
 
    >[!NOTE]
    >
-   >このタイルがプロジェクトにまだない場合は、追加する必要があります。[タイルの追加](#adding-items-to-a-tile)を参照してください。
+   このタイルがプロジェクトにまだない場合は、追加する必要があります。[タイルの追加](#adding-items-to-a-tile)を参照してください。
 
 1. 「**編集**」を選択します。
 1. セレクターを「**アクティブ**」から「**非アクティブ**」（またはその逆）に変更します。

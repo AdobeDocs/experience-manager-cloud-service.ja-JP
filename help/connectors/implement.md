@@ -4,10 +4,10 @@ description: コネクタとその機能、および Experience Manager にコ�
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 100%
+source-wordcount: '936'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ Adobe Experience Manager as a Cloud Service の[ドキュメント](../overview/
 * `/apps`
 * `/content` および `/conf`
 
-コネクタは、パッケージ化に関するこれらのガイドラインに従う必要があります。ガイドラインについては、[こちらの記事](/help/implementing/developing/introduction/aem-project-content-package-structure.md)を参照してください。既存のコネクタは、ガイドラインに準拠するためにリファクタリングも必要になります。
+コネクタは、[AEM プロジェクト構造 ](/help/implementing/developing/introduction/aem-project-content-package-structure.md) で説明されているこれらのパッケージガイドラインに従う必要があります。 既存のコネクタは、ガイドラインに準拠するためにリファクタリングも必要になります。
 
 さらに、`/libs` にコードを書き込むのはアドビだけで、ユーザーとパートナーは `/apps` にコードを書き込みます。
 

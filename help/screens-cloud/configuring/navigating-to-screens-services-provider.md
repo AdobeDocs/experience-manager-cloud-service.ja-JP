@@ -4,10 +4,10 @@ description: ここでは、Screens サービスプロバイダーへの移動�
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: 5452a02ed20d70c09728b3e34f248c7d37fc4668
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 87%
+source-wordcount: '382'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 87%
 
 Screens サービスプロバイダーを設定するには、次の手順に従います。
 
-1. [ここ](https://experience.adobe.com/screens)から Screens サービスプロバイダーに移動します。
+1. [Screens サービスプロバイダー ](https://experience.adobe.com/screens) に移動します。
 
    >[!CAUTION]
    >複数の組織にアクセスできる場合は、正しい組織にログインしていることを確認してください。組織を変更するには、画面の右上隅にある組織名をクリックし、アクセスする必要がある組織を選択します。
@@ -48,12 +48,12 @@ Screens サービスプロバイダーを設定するには、次の手順に従
 
 1. 「**保存**」をクリックして、Screens コンテンツプロバイダーに接続します。
 
-1. Cloud Managerの IPAEM機能により信頼できる IP アドレスのみにアクセスを許可するように許可リストに加える パブリッシュインスタンスを設定している場合、次に示すように、設定ダイアログでキー値を持つヘッダーを設定する必要があります。
+1. Cloud Manager の IP 許可リスト機能によって、信頼できる IP アドレスのみにアクセスを許可するように AEM パブリッシュインスタンスを設定している場合は、以下に示すように、設定ダイアログでキー値を含むヘッダーを設定する必要があります。
 また、許可リストに登録する必要がある IP も設定ファイルに移動する必要があり、Cloud Manager 設定から[適用解除](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list)する必要があります。
 
    ![画像](/help/screens-cloud/assets/configure/configure-screens20b.png)
 AEM CDN 設定で同じキーを設定する必要があります。ヘッダー値を GitHub に直接入れず、[秘密鍵参照](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets)を使用することをお勧めします。
-[CDN 設定 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf) のサンプルを以下に示します。
+サンプルの [CDN 設定](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)を以下に示します。
 
    ```kind: "CDN"
        version: "1"

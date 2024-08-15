@@ -4,10 +4,10 @@ description: AEM as a Cloud Service リリース 2021.12.0 における移行ツ
 feature: Release Information
 exl-id: 4155e1c0-cd40-4cbc-9d6c-b106d68a2db5
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '251'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -16,7 +16,8 @@ ht-degree: 100%
 このページでは、AEM as a Cloud Service 2021.12.0 の移行ツールのリリースノートの概要を説明しています。
 
 >[!NOTE]
->Adobe Experience Manager as a Cloud Service の最新のリリースノートを参照するには、 [こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja) をクリックしてください。
+>
+>最新のリリースノートについては、[Adobe Experience Manager as a Cloud Serviceの最新のリリースノート ](/help/release-notes/release-notes-cloud/release-notes-current.md) を参照してください。
 
 ## ベストプラクティスアナライザー {#bpa-release}
 

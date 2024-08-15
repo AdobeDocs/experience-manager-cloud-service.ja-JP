@@ -4,10 +4,10 @@ description: AEM as a Cloud Service での開発に関するガイドライン�
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2745'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -184,7 +184,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ユーザーはオーサー層の開発環境では CRXDE Lite にアクセスできますが、ステージ環境や実稼動環境ではアクセスできません。不変リポジトリー（`/libs`、`/apps`）に実行時に書き込むことはできないので、書き込もうとするとエラーが発生します。
 
-代わりに、AEM as a Cloud Service Developer Console からリポジトリブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対してリポジトリへの読み取り専用ビューを提供できます。リポジトリブラウザーについて詳しくは、[こちら](/help/implementing/developing/tools/repository-browser.md)を参照してください。
+代わりに、AEM as a Cloud Service Developer Console からリポジトリブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対してリポジトリへの読み取り専用ビューを提供できます。詳しくは、[ リポジトリブラウザー ](/help/implementing/developing/tools/repository-browser.md) を参照してください。
 
 AEM as a Cloud Service 開発者環境をデバッグするための一連のツールは、RDE 環境、開発環境、ステージ環境、実稼動環境の AEM as a Cloud Service Developer Console で利用できます。URL は、次のようにオーサーサービス URL またはパブリッシュサービス URL を調整して決定できます。
 
@@ -194,7 +194,7 @@ AEM as a Cloud Service 開発者環境をデバッグするための一連のツ
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
-詳しくは、[こちらのページ](/help/release-notes/home.md)を参照してください。
+詳しくは、[ リリース情報 ](/help/release-notes/home.md) を参照してください。
 
 開発者は、ステータス情報を生成し、様々なリソースを解決できます。
 

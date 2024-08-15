@@ -5,10 +5,10 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 100%
+source-wordcount: '1292'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ AEM as a Cloud Service を選択していただき、ありがとうございま
 
 ## はじめに {#introduction}
 
-Adobe Experience Manager は、あらゆるチャネルにわたって非常にインパクトのあるパーソナライズされたエクスペリエンスを迅速に提供し、すべてのチャネルにコンテンツを解放する、構成可能なコンテンツサービスの強力なスイートです。**Edge 配信サービス**&#x200B;は、Adobe Experience Manager の最新のイノベーションで、優れたコンテンツベロシティを実現し、卓越したエクスペリエンスを提供します。Edge Delivery Services の基本を学ぶ方法については、[このページ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=ja)を参照してください。Edge 配信サービスの使用方法については、[開発者向けチュートリアル](https://www.hlx.live/developer/tutorial)ページを参照してください。
+Adobe Experience Manager は、あらゆるチャネルにわたって非常にインパクトのあるパーソナライズされたエクスペリエンスを迅速に提供し、すべてのチャネルにコンテンツを解放する、構成可能なコンテンツサービスの強力なスイートです。**Edge 配信サービス**&#x200B;は、Adobe Experience Manager の最新のイノベーションで、優れたコンテンツベロシティを実現し、卓越したエクスペリエンスを提供します。Edge Delivery Servicesの使用を開始する方法については、[Edge Delivery Servicesの概要 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=ja) を参照してください。 Edge 配信サービスの使用方法については、[開発者向けチュートリアル](https://www.hlx.live/developer/tutorial)ページを参照してください。
 
 オンボーディングとは、指定されたシステム管理者が AEM as a Cloud Service を組織用に設定するプロセスです。このプロセスには、クラウドリソースの初期プロビジョニングや、ユーザーを職務に基づいて役割に割り当てる作業が含まれます。これにより、各メンバーが AEM as a Cloud Service にログオンしてリソースにアクセスできるようになります。
 
