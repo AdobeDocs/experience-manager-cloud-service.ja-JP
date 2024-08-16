@@ -18,17 +18,17 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
->title="ヘッドレスコンテンツを作成"
+>title="ヘッドレスコンテンツの作成"
 >abstract="前のモジュールで作成したモデルを使用して、ページオーサリングにもヘッドレスコンテンツの基礎としても使用できるコンテンツの作成方法について説明します。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
->title="コンテンツフラグメントコンソールの起動"
+>title="コンテンツフラグメントコンソールを起動"
 >abstract="アプリや web サイトをまたいでシームレスに機能する、一貫性のある高品質のコンテンツを作成することで、優れた顧客体験を実現します。このモジュールでは、コンテンツフラグメントコンソールを使用して最初のヘッドレスコンテンツを作成する手順を説明します。<br><br>下をクリックして、新しいタブでこのモジュールを起動し、このガイドに従ってください。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="お疲れ様でした。このモジュールでは、前に作成したモデルに基づいてコンテンツフラグメントをコンテンツ ラグメントとして作成する方法を学びました。 これで、開発サイクルに関係なく、コンテンツチームがアプリや web サイトのコンテンツを作成および管理する方法を理解できました。"
+>title="お疲れ様でした。このモジュールでは、前に作成したモデルに基づいてヘッドレスコンテンツをコンテンツフラグメントとして作成する方法を学びました。これで、開発サイクルに関係なく、コンテンツチームがアプリや web サイトのコンテンツを作成および管理する方法を理解できました。"
 >abstract=""
 
 ## コンテンツフラグメントの作成 {#create-fragment}
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 1. **新しいコンテンツフラグメント**&#x200B;ダイアログボックスが開き、コンテンツフラグメントの作成を開始できます。**場所**&#x200B;には、新しいコンテンツが保存される場所が自動的に入力されます。
 
-1. 「**コンテンツフラグメントモデル**」ドロップダウンで、前に作成した&#x200B;**アドベンチャー**&#x200B;コンテンツフラグメントモデルを選択します。
+1. 「**コンテンツフラグメントモデル**」ドロップダウンで、前に作成した **Adventure** コンテンツフラグメントモデルを選択します。
 
 1. コンテンツフラグメントを説明する&#x200B;**タイトル**&#x200B;として、`Tuscany` を追加します。これは、コンソールでフラグメントを識別するために行います。
 
@@ -63,7 +63,7 @@ ht-degree: 100%
 
 1. `Tuscan Adventure` と入力して、フラグメントの&#x200B;**タイトル**&#x200B;を指定します。
 
-1. 次をのテキストを貼り付けて、フラグメントの&#x200B;**説明**&#x200B;を指定します。
+1. 次のテキストを貼り付けて、フラグメントの&#x200B;**説明**&#x200B;を指定します。
 
    ```text
    Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour are rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality. Tuscany's natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
