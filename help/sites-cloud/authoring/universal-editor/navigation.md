@@ -1,18 +1,18 @@
 ---
-title: ユニバーサルエディターへのアクセスとナビゲート
+title: ユニバーサルエディターへのアクセスと操作
 description: ユニバーサルエディターへのアクセスと操作の基本について説明します。
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 58c58243dc98a21161afe0976da4dcdc235da0d3
+source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 87%
+source-wordcount: '1576'
+ht-degree: 91%
 
 ---
 
 
-# ユニバーサルエディターへのアクセスとナビゲート {#navigating}
+# ユニバーサルエディターへのアクセスと操作 {#navigating}
 
 ユニバーサルエディターへのアクセスと操作の基本について説明します。
 
@@ -20,11 +20,11 @@ ht-degree: 87%
 
 ユニバーサルエディターを使用すると、あらゆる実装、あらゆるコンテンツ、あらゆる側面を編集できるため、優れたエクスペリエンスを提供し、コンテンツベロシティを向上させ、最新のデベロッパーエクスペリエンスを提供できます。
 
-これを行うために、ユニバーサルエディターはコンテンツ作成者に、最小限のトレーニングで簡単にコンテンツの編集を開始できる直感的な UI を提供します。このドキュメントでは、ユニバーサルエディターの操作方法を説明します。
+これを行うために、ユニバーサルエディターはコンテンツ作成者に、最小限のトレーニングで簡単にコンテンツの編集を開始できる直感的な UI を提供します。このドキュメントでは、ユニバーサルエディターの操作方法について説明します。
 
 >[!TIP]
 >
->* ユニバーサルエディターを使用したオーサリングについて詳しくは、ドキュメント [ ユニバーサルエディターを使用したコンテンツのオーサリング ](/help/sites-cloud/authoring/universal-editor/authoring.md) を参照してください。
+>* ユニバーサルエディターを使用したオーサリングについて詳しくは、[ユニバーサルエディターを使用したコンテンツのオーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md)ドキュメントを参照してください。
 >* ユニバーサルエディターについて詳しくは、[ユニバーサルエディターの概要](/help/implementing/universal-editor/introduction.md)ドキュメントを参照してください。
 
 ## アプリを準備する {#prepare-app}
@@ -137,7 +137,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 >[!TIP]
 >
->ホットキー `L` を使用して、アドレスバーを開きます。
+>ホットキー `l` （文字 l）を使用して、アドレスバーを開きます。
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 >[!TIP]
 >
->ホットキー `P` を使用してプレビューモードを切り替えます。
+>ホットキー `p` を使用してプレビューモードを切り替えます。
 
 #### アプリのプレビューを開く {#open-app-preview}
 
@@ -185,7 +185,11 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 >[!TIP]
 >
->ホットキー `O` （文字 O）を使用して、アプリのプレビューを開きます。
+>ホットキー `o` （文字 o）を使用して、アプリのプレビューを開きます。
+
+>[!TIP]
+>
+>アプリのプレビュー URL [ カスタマイズ可能 ](/help/implementing/universal-editor/customizing.md#custom-preview-urls)。
 
 #### 公開 {#publish}
 
@@ -197,12 +201,20 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 >
 >ユニバーサルエディターを使用した公開について詳しくは、[ユニバーサルエディターを使用したコンテンツの公開](publishing.md)のドキュメントを参照してください。
 
+#### 省略記号 {#ellipsis}
+
+その他の標準オプションには、「。..」ボタンからアクセスできます。
+
+![省略記号ボタン](assets/ellipsis.png)
+
+例えば、ページを非公開にする機能（[**Publish** button](#publish) のアクションを逆にする）には、「。..」ボタンからアクセスできます。
+
 #### その他のボタン {#additional-toolbar-buttons}
 
-ユニバーサルエディターは、カスタマイズ可能で拡張性の高いオーサリングエクスペリエンスを提供します。 ツールバーに追加のボタンが表示される場合は、ユニバーサルエディターが拡張されています。
+ユニバーサルエディターには、カスタマイズ可能で拡張性の高いオーサリングエクスペリエンスが用意されています。ツールバーにその他のボタンを表示する場合は、ユニバーサルエディターが拡張されています。
 
-* 拡張機能の設定について詳しくは、[ ユニバーサルエディターのカスタマイズと拡張 ](/help/implementing/universal-editor/customizing.md) を参照してください。
-* 個々の拡張機能の動作の詳細については、[Extension Managerのドキュメントを参照してください。](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* 拡張機能について詳しくは、[ユニバーサルエディターのカスタマイズと拡張](/help/implementing/universal-editor/customizing.md)を参照してください。
+* 個別の拡張機能の動作について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)を参照してください。
 
 ### エディター {#editor}
 
@@ -216,7 +228,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 プロパティパネルは、エディターの右側に常に表示されます。モードに応じて、コンテンツ内で選択されたコンポーネントの詳細またはページコンテンツの階層を表示できます。
 
-![プロパティパネル](assets/component-rail.png)
+![プロパティパネル](assets/properties-rail.png)
 
 #### プロパティモード {#properties-mode}
 
@@ -232,7 +244,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 >[!TIP]
 >
->ホットキー `D` を使用してプロパティモードに切り替えます。
+>ホットキー `d` を使用してプロパティモードに切り替えます。
 
 #### コンテンツツリーモード {#content-tree-mode}
 
@@ -246,21 +258,21 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 >[!TIP]
 >
->ホットキー `F` を使用してコンテンツツリーモードに切り替えます。
+>ホットキー `f` を使用してコンテンツツリーモードに切り替えます。
 
-##### 編集 {#edit}
+##### CF エディターで開く {#edit}
 
-編集時に、選択したコンポーネントのオプションがプロパティパネルに表示され、選択したコンポーネントを編集できます。選択したコンポーネントがコンテンツフラグメントの場合は、「編集」ボタンを選択することもできます。
+編集時に、選択したコンポーネントのオプションがプロパティパネルに表示され、選択したコンポーネントを編集できます。選択したコンポーネントがコンテンツフラグメントの場合は、「**CF エディターで開く** ボタンを選択することもできます。
 
-![編集アイコン](assets/edit.png)
+![CF エディターで開くアイコン ](assets/open-in-cf-editor.png)
 
-「編集」ボタンをタップまたはクリックすると、新しいタブで[コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)が開きます。これにより、コンテンツフラグメントエディターを最大限に活用して、関連するコンテンツフラグメントを編集できます。
+**CF エディターで開く** ボタンをタップまたはクリックすると、[ コンテンツフラグメントエディター ](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) が新しいタブで開きます。 これにより、コンテンツフラグメントエディターのすべての機能にアクセスして、関連するコンテンツフラグメントを編集できます。
 
 ワークフローのニーズに応じて、コンテンツフラグメントをユニバーサルエディターで編集することも、コンテンツフラグメントエディターで直接編集することもできます。
 
 >[!TIP]
 >
->ホットキー `E` を使用して選択したコンポーネントを編集します。
+>ホットキー `e` を使用して、選択したコンテンツフラグメントをコンテンツフラグメントエディターで開きます。
 
 ##### 追加 {#add}
 
@@ -274,7 +286,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 >[!TIP]
 >
->ホットキー `A` を使用して、選択したコンテナコンポーネントにコンポーネントを追加します。
+>ホットキー `a` を使用して、選択したコンテナコンポーネントにコンポーネントを追加します。
 
 ##### 削除 {#delete}
 
@@ -290,11 +302,11 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 #### その他のボタン {#additional-properties-rail-buttons}
 
-ユニバーサルエディターは、カスタマイズ可能で拡張性の高いオーサリングエクスペリエンスを提供します。 プロパティパネルに追加のボタンが表示される場合は、ユニバーサルエディターが拡張されています。
+ユニバーサルエディターには、カスタマイズ可能で拡張性の高いオーサリングエクスペリエンスが用意されています。プロパティパネルにその他のボタンを表示する場合は、ユニバーサルエディターが拡張されています。
 
-* 拡張機能の設定について詳しくは、[ ユニバーサルエディターのカスタマイズと拡張 ](/help/implementing/universal-editor/customizing.md) を参照してください。
-* 個々の拡張機能の動作の詳細については、[Extension Managerのドキュメントを参照してください。](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* 拡張機能について詳しくは、[ユニバーサルエディターのカスタマイズと拡張](/help/implementing/universal-editor/customizing.md)を参照してください。
+* 個別の拡張機能の動作について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)を参照してください。
 
 ## 次の手順 {#next-steps}
 
-ユニバーサルエディターへのアクセスと操作の方法がわかったので、次は [ ユニバーサルエディターを使用してコンテンツを作成する ](/help/sites-cloud/authoring/universal-editor/authoring.md) 準備が整いました。
+ユニバーサルエディターにアクセスして操作する方法について理解したので、[これを使用してコンテンツを作成](/help/sites-cloud/authoring/universal-editor/authoring.md)する準備が整いました。

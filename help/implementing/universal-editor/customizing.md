@@ -4,10 +4,10 @@ description: コンテンツ作成者のニーズに合わせてユニバーサ�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 34ae1d57e77e209e179aca5c556954dbfb170498
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 100%
+source-wordcount: '647'
+ht-degree: 89%
 
 ---
 
@@ -115,6 +115,18 @@ data-aue-filter="container-filter"
 ![表示されたテキストフィールド](assets/shown.png)
 
 >[!ENDTABS]
+
+### カスタムプレビュー URL {#custom-preview-urls}
+
+カスタムプレビュー URL は、`urn:adobe:aue:config:preview` のメタ設定を使用して指定できます。この設定は、[ エディターの右上のツールバーにある「**ページを開く** ボタンをクリックすると開きます。](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+
+これは、[WYSIWYG オーサリングでEdge Delivery Servicesを使用する ](/help/edge/wysiwyg-authoring/authoring.md) など、特定のプレビュー要件を持つアプリケーションで特に役立ちます。
+
+それには、次の例のように、実装されたアプリのメタタグに目的のプレビュー URL を含めます。
+
+```html
+<meta name="urn:adobe:aue:config:preview" content="https://wknd.site"/>
+```
 
 ## ユニバーサルエディター UI の拡張 {#extending}
 

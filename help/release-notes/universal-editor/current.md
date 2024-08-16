@@ -4,9 +4,9 @@ description: ユニバーサルエディターの 2024.08.13 リリースのリ�
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: d71d3481004f2429c018c536b3e12784cf597f85
+source-git-commit: aad4d0353fb5e2eacb518b72e935def931d0798a
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -24,12 +24,12 @@ ht-degree: 0%
 
 * **カスタムデータタイプ**：プロパティパネル内にカスタムフィールドを作成できるので、データのニーズに合わせてエディターをカスタマイズできます。
    * コマースのユースケース用にカスタム製品ピッカーを開発する場合でも、ドロップダウンリストにバックエンドの値を入力する場合でも、この機能を使用すると、作成者がコンテンツの作成に使用するデータを制御できます。
-* **クロスコンテナのドラッグ&amp;ドロップ**:[ コンテンツツリーパネル内でドラッグ&amp;ドロップすることで、様々なコンテナ間でコンポーネントを移動でき、レイアウト構成の柔軟性が向上します。](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* **クロスコンテナのドラッグ&amp;ドロップ**:[ コンテンツツリーパネル内で [ ドラッグ&amp;ドロップを使用して異なるコンテナ間でコンポーネントを移動 ](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) でき、レイアウト構成の柔軟性が向上します。](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
 * **最適化された GitHub 統合**:GitHub 応答のキャッシュが導入され、タグと `universal-editor-cors-library` の取得が大幅に高速化され、ユーザーエクスペリエンスが高速でスムーズになりました。
 * **Managed Services RPM パッケージ**: Adobeで、ユニバーサルエディターサービスのデプロイメントと管理を効率化するための RPM パッケージが提供されるようになりました。これにより、メンテナンスがシンプル化され、管理サービスの運用オーバーヘッドが削減されます。
 * **設定可能な IMS トークン検証**：トークン管理の柔軟性を高めるために、IMS トークン検証がオプションになりました。
    * この設定オプションを使用すると、必要に応じて検証を無効にして、クラウドゲートウェイの設定を簡素化できます。
-* **Splunk 統合**:Splunk ログは Universal Editor Service Express に統合され、監視と診断が強化されました。
+* **Splunk 統合**:Splunk ログは、モニタリングと診断を強化し、ローカル開発のために [ ユニバーサルエディターサービスに統合され ](/help/implementing/universal-editor/local-dev.md) した。
    * この統合により、効率的なログトラッキング、よりスムーズな操作、迅速なトラブルシューティングが保証されます。
 
 ## バグ修正 {#bug-fixes}

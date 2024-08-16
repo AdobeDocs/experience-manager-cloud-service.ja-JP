@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3922375b52ae64d08cdc64d475a95e8bd240a587
+source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 80%
+source-wordcount: '1297'
+ht-degree: 84%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->このドキュメントは、ユニバーサルエディターへのアクセスと操作の方法を既に熟知していることを前提としています。 そうでない場合は、ドキュメント [ ユニバーサルエディターへのアクセスとナビゲート ](/help/sites-cloud/authoring/universal-editor/navigation.md) を参照してください。
+>このドキュメントは、ユニバーサルエディターへのアクセスと操作の方法を、ユーザーが既に理解していることを前提としています。そうでない場合は、[ユニバーサルエディターへのアクセスと操作](/help/sites-cloud/authoring/universal-editor/navigation.md)ドキュメントを参照してください。
 
 >[!TIP]
 >
@@ -33,7 +33,7 @@ ht-degree: 80%
 
 ## コンテンツの編集 {#editing-content}
 
-コンテンツの編集はシンプルで直感的です。エディターでコンテンツにマウスカーソルを重ねると、編集可能なコンテンツが青いボックスでハイライト表示されます。
+コンテンツの編集はシンプルで直感的です。エディターでコンテンツにマウスを移動すると、編集可能なコンテンツが薄い青いアウトラインでハイライト表示されます。
 
 ![編集可能コンテンツが青いボックスでハイライト表示される](assets/editable-content.png)
 
@@ -49,9 +49,9 @@ ht-degree: 80%
 
 ![コンテンツを編集](assets/editing-content.png)
 
-Enter キーまたは Return キーを押すか、テキストボックスの外側を選択して、変更を保存します。
+薄い青色のアウトラインは、選択を示す濃い青色のアウトラインに変わり、カーソルが表示されます。 変更を加え、Enter キーまたは Return キーを押すか、テキストボックスの外側を選択して変更を保存します。
 
-テキストコンポーネントを選択すると、その詳細が [ プロパティパネルに表示されます。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) パネル内のテキストを編集することもできます。
+テキストコンポーネントを選択すると、その詳細がプロパティパネルに表示されます。[](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)パネル内のテキストを編集することもできます。
 
 ![プロパティパネルでのテキストの編集](assets/ue-editing-text-component-rail.png)
 
@@ -65,14 +65,25 @@ Enter キーまたは Return キーを押すか、テキストボックスの外
 
 利便性のために、テキストの書式設定オプションと詳細は、2 か所で利用できます。
 
-* **コンテキストメニュー**&#x200B;は、リッチテキストブロック上で開き、コンテキスト内の基本的な書式設定オプションを提供します。スペースの都合上、一部のオプションが省略記号ボタンの後ろに隠れている場合があります。
-* **[プロパティパネル](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)**&#x200B;には、使用可能なすべての書式設定オプションがテキストと共に表示されます。
+#### コンテキストメニュー {#context-menu}
+
+リッチテキストブロックの上にコンテキストメニューが開き、コンテキストの基本的な書式設定オプションが表示されます。 スペースの都合上、一部のオプションが省略記号ボタンの後ろに隠れている場合があります。
+
+![ リッチテキストのコンテキストメニュー ](assets/rich-text-context-menu.png)
 
 フォーカスが編集されたフィールドを離れると、変更は自動的に保存されます。
 
+#### プロパティパネル {#properties-rail}
+
+[ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) には、選択したテキストの項目が表示されます。 エントリをタップすると、テキストを編集するための大きいキャンバスが表示されるダイアログが開きます。
+
+![ リッチテキスト編集ダイアログ ](assets/rich-text-canvas.png)
+
+変更を破棄または保存するには、それぞれ **キャンセル** または **完了** をタップまたはクリックします。
+
 ### メディアの編集 {#edit-media}
 
-その詳細は、[ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) で確認できます。
+詳細は、[プロパティパネル](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)で確認できます。
 
 ![メディアの編集](assets/ue-edit-media.png)
 
@@ -85,7 +96,7 @@ Enter キーまたは Return キーを押すか、テキストボックスの外
 
 ### コンテンツフラグメントの編集 {#edit-content-fragment}
 
-[ コンテンツフラグメント ](/help/sites-cloud/administering/content-fragments/overview.md) を選択すると、その詳細を [ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) で編集できます。
+[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)を選択した場合、詳細は、[プロパティパネル](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)で編集できます。
 
 ![コンテンツフラグメントの編集](assets/ue-edit-cf.png)
 
@@ -95,13 +106,23 @@ Enter キーまたは Return キーを押すか、テキストボックスの外
 
 フォーカスがプロパティパネルの編集されたフィールドを離れると、変更は自動的に保存されます。
 
-[ コンテンツフラグメントエディター ](/help/sites-cloud/administering/content-fragments/authoring.md) でコンテンツフラグメントを編集する場合は、代わりに、プロパティパネルの [ 編集 ](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) ボタンをクリックします。
+[ コンテンツフラグメントエディター ](/help/sites-cloud/administering/content-fragments/authoring.md) でコンテンツフラグメントを編集する場合は、代わりに、プロパティパネルの [**CF エディターで開く** ボタン ](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) をタップまたはクリックします。
+
+>[!TIP]
+>
+>ホットキー `e` を使用して、コンテンツフラグメントエディターで選択したコンテンツフラグメントを編集します。
 
 ワークフローのニーズに応じて、コンテンツフラグメントをユニバーサルエディターで編集することも、コンテンツフラグメントエディターで直接編集することもできます。
 
+>[!NOTE]
+>
+>ユニバーサルエディターは [ モデルに基づいてコンテンツフラグメントフィールドを検証 ](/help/assets/content-fragments/content-fragments-models.md#validation) し、正規表現パターンや一意性制約などのデータ整合性ルールを適用できます。
+>
+>これにより、コンテンツが公開される前に、特定のビジネス要件を満たすことが保証されます。
+
 ### コンテナへのコンポーネントの追加 {#adding-components}
 
-1. [ コンテンツツリー ](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) またはエディターでコンテナコンポーネントを選択します。
+1. [コンテンツツリー](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)またはエディターでコンテナコンポーネントを選択します。
 1. 次に、プロパティパネルで追加アイコンを選択します。
 
    ![コンテナに追加するコンポーネントの選択](assets/ue-add-component.png)
@@ -110,11 +131,11 @@ Enter キーまたは Return キーを押すか、テキストボックスの外
 
 >[!TIP]
 >
->ホットキー `A` を使用して、選択したコンテナにコンポーネントを追加します。
+>ホットキー `a` を使用して、選択したコンテナにコンポーネントを追加します。
 
 ### コンテナからのコンポーネントの削除 {#deleting-components}
 
-1. [ コンテンツツリー ](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) またはエディターでコンテナコンポーネントを選択します。
+1. [コンテンツツリー](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)またはエディターでコンテナコンポーネントを選択します。
 1. コンテナの山形アイコンを選択して、コンテンツツリーでコンテンツを展開します。
 1. 次に、コンテンツツリーで、コンテナ内のコンポーネントを選択します。
 1. プロパティパネルで削除アイコンを選択します。
@@ -136,7 +157,7 @@ Enter キーまたは Return キーを押すか、テキストボックスの外
 
    ![コンポーネントの並べ替え](assets/ue-reordering-components.png)
 
-1. ドラッグしたコンポーネントはコンテンツツリーでグレーに変わり、挿入ポイントは青い線で表されます。 コンポーネントをリリースして、新しい場所に配置します。
+1. ドラッグしたコンポーネントがコンテンツツリー内で灰色に変わり、挿入ポイントは青い線で表されます。コンポーネントをリリースして、新しい場所に配置します。
 
 コンポーネントは、コンテンツツリーおよびエディターの両方で並べ替えられます
 
@@ -162,8 +183,8 @@ Enter キーまたは Return キーを押すか、テキストボックスの外
 
 ## コンポーネントの継承の編集 {#inheritance}
 
-継承とは、コンテンツをリンクして、一方を変更すると他方が自動的に変更されるようなメカニズムです。
+継承とは、一方を変更するともう一方も自動的に変更されるようにコンテンツをリンクできるメカニズムです。
 
-ユニバーサルエディターを使用すると、コンテンツを更新するだけで、コンテンツの継承をキャンセルできます。 エディターは、そのページの作成者によって行われたすべての変更の継承を自動的に無効にし、ブループリントから更新が同期されたときに変更されたコンテンツが保持されるようにします。
+ユニバーサルエディターを使用すると、コンテンツを更新するだけで、コンテンツの継承をキャンセルできます。エディターでは、そのページの作成者が行ったすべての変更の継承を自動的に無効にし、ブループリントから更新を同期した際に変更済みのコンテンツが保持されるようにします。
 
-ユニバーサルエディターを使用した継承の仕組みについて詳しくは、ドキュメント [ ユニバーサルエディターでのコンテンツの継承 ](/help/sites-cloud/authoring/universal-editor/inheritance.md) を参照してください。
+ユニバーサルエディターを使用した継承の仕組みについて詳しくは、[ユニバーサルエディターでのコンテンツの継承](/help/sites-cloud/authoring/universal-editor/inheritance.md)ドキュメントを参照してください。
