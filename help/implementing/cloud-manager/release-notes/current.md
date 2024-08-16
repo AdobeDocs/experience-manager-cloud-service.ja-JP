@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.8.0 �
 description: AEM as a Cloud ServiceのCloud Manager 2024.8.0 のリリースノートについて説明します。
 feature: Release Information
 role: Admin
-source-git-commit: bf8bab5a195dde6cf15a2fd52e51d58c0215fdf3
+source-git-commit: a823bcd1461b847983d0243cd9abd59efd8d7b6f
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 31%
@@ -21,7 +21,7 @@ ht-degree: 31%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service の Cloud Manager 2024.8.0 のリリース日は 2024年8月12日です。次回のリリースは 2024年9月14日（PT）に予定されています。
+AEM as a Cloud Service の Cloud Manager 2024.8.0 のリリース日は 2024年8月14日です。次回のリリースは 2024年9月14日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
