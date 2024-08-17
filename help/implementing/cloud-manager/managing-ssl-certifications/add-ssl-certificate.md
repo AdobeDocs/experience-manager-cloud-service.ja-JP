@@ -5,29 +5,27 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 64aa010c3d840adad9e1ab6040a6d80c07cd8455
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 88%
+source-wordcount: '659'
+ht-degree: 57%
 
 ---
 
 
-# SSL 証明書の追加 {#adding-an-ssl-certificate}
+# SSL 証明書を追加 {#adding-an-ssl-certificate}
 
 Cloud Manager のセルフサービスツールを使用して独自の SSL 証明書を追加する方法を説明します。
 
 >[!TIP]
 >
->証明書のプロビジョニングには数日かかる場合があります。そのためAdobeでは、期限や運用開始日に先立って証明書を適切にプロビジョニングすることをお勧めします。
+>証明書のプロビジョニングには数日かかる場合があります。Adobeでは、期限や運用開始日に先立って証明書を適切にプロビジョニングすることをお勧めします。
 
 ## 証明書の要件 {#certificate-requirements}
 
-[SSL 証明書管理の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements)ドキュメントの&#x200B;**証明書の要件**&#x200B;の節を確認して、追加する証明書が AEM as a Cloud Service でサポートされていることを確認します。
+[SSL 証明書の管理の概要 **の** 証明書要件 ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) を確認し、追加する証明書がAEM as a Cloud Serviceでサポートされていることを確認します。
 
-## 証明書の追加 {#adding-a-cert}
-
-Cloud Manager を使用して証明書を追加するには、次の手順に従います。
+## 証明書を追加 {#adding-a-cert}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
@@ -35,28 +33,23 @@ Cloud Manager を使用して証明書を追加するには、次の手順に従
 
 1. **概要**&#x200B;ページから&#x200B;**環境**&#x200B;画面に移動します。
 
-1. 画面左側のナビゲーションパネルで「**SSL 証明書**」をクリックします。既存の SSL 証明書の詳細を示す表がメイン画面に表示されます。
+1. 左側のナビゲーションパネルの **サービス** で、「**SSL 証明書**」をクリックします。 （ナビゲーションパネルが必要な場合は、左上隅のハンバーガーアイコンをクリックする必要がある場合があります。 既存の SSL 証明書の詳細を示す表が表示されます。
 
-   ![SSL 証明書の追加](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
+   ![SSL 証明書の追加 ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. 「**SSL 証明書を追加**」をクリックすると、**SSL 証明書を追加**&#x200B;ダイアログボックスが開きます。
+1. **SSL 証明書を追加** をクリックして **SSL 証明書を追加** ダイアログボックスを開きます。
 
-   * 「**証明書名**」に証明書の名前を入力します。
-      * これは情報提供だけを目的とし、証明書を簡単に参照するのに役立つ任意の名前を指定できます。
-   * **証明書**、**秘密鍵**、**証明書チェーン**&#x200B;の値をそれぞれのフィールドに貼り付けます。
-      * 3 つのフィールドはすべて必須です。
+   * 「**証明書名**」に証明書の名前を入力します。このフィールドは情報提供のみを目的とし、証明書を簡単に参照するのに役立つ任意の名前を指定できます。
+   * **証明書**、**秘密鍵**、**証明書チェーン**&#x200B;の値をそれぞれのフィールドに貼り付けます。3 つのフィールドはすべて必須です。
 
-   ![SSL 証明書を追加ダイアログ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+   ![SSL 証明書を追加ダイアログボックス ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
-   * 検出されたエラーが表示されます。
-      * 証明書を保存する前に、すべてのエラーを解決する必要があります。
-      * 一般的なエラーの対処方法について詳しくは、[証明書エラー](#certificate-errors)の節を参照してください。
+   * 値で検出されたエラーが表示されます。 証明書を保存する前に、すべてのエラーを解決する必要があります。
+一般的なエラーの対処方法の詳細については、[ 証明書エラー ](#certificate-errors) を参照してください。
 
-1. 「**保存**」をクリックして証明書を保存します。
+1. 「**保存**」をクリックします。
 
-保存すると、証明書が表の新しい行として表示されます。
-
-![保存された SSL 証明書](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
+![ 保存された SSL 証明書 ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png) 前述の画像と同様に、証明書が表に新しい行として表示されます。
 
 >[!NOTE]
 >
@@ -100,7 +93,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
 ```
 
-クライアント証明書が証明書チェーンに含まれた可能性があります。チェーンにクライアント証明書が含まれていないことを確認し、もう一度お試しください。
+クライアント証明書が証明書チェーンに含まれた可能性があります。チェーンにクライアント証明書が含まれていないことを確認して、もう一度試してください。
 
 ### 証明書ポリシー {#certificate-policy}
 
@@ -110,7 +103,7 @@ The Subject of an intermediate certificate must match the issuer in the previous
 Certificate policy must conform with EV or OV, and not DV policy.
 ```
 
-通常、証明書ポリシーは埋め込み OID 値で識別されます。テキストに証明書を出力し、OID を検索すると、証明書のポリシーが表示されます。
+埋め込み OID 値は、通常、証明書ポリシーを識別します。 テキストに証明書を出力し、OID を検索すると、証明書のポリシーが表示されます。
 
 次の例を参考にして、証明書の詳細をテキストとして出力できます。
 
@@ -158,7 +151,7 @@ Cloud Manager で想定している SSL 証明書の有効期間は現在の日�
 
 ## 次の手順 {#next-steps}
 
-これで完了です。これで、プロジェクトの SSL 証明書が機能するようになりました。 これは、多くの場合、カスタムドメイン名を設定するための最初の手順です。
+これで完了です。これで、プロジェクトの SSL 証明書が機能するようになりました。多くの場合、この手順がカスタムドメイン名を設定する最初のステップです。
 
-* カスタムドメイン名の設定を続行するには、[ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) ドキュメントを参照してください。
-* Cloud Managerでの SSL 証明書の更新と管理について詳しくは、[SSL 証明書の管理 ](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) のドキュメントを参照してください。
+* カスタムドメイン名を設定するには、[ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。
+* Cloud Managerでの SSL 証明書の更新と管理については、[SSL 証明書の管理 ](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) を参照してください。

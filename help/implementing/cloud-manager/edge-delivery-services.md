@@ -4,10 +4,10 @@ description: Edge Delivery Servicesを使用してCloud Manager プロジェク�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 64aa010c3d840adad9e1ab6040a6d80c07cd8455
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 30%
+ht-degree: 17%
 
 ---
 
@@ -21,12 +21,13 @@ Edge Delivery Servicesを使用してCloud Manager プロジェクトを配信�
 
 ## Brief のEdge Delivery Services {#edge-overview}
 
-Edge Delivery Services は、web サイト上のコンテンツの柔軟なオーサリングを実現する、構成可能なサービスセットです。これにより、以下のことが可能になります。
+Edge Delivery Services は、web サイト上のコンテンツの柔軟なオーサリングを実現する、構成可能なサービスセットです。この機能を使用すると、次のことが可能です。
 
-* 完璧な Lighthouse スコアで高速サイトを作成し、リアルタイムモニタリング（RUM）を通じてパフォーマンスを継続的に監視します。
+* 完璧な Lighthouse スコアで高速サイトを作成します。
+* RUM （Real Use Monitoring）を通じてパフォーマンスを継続的に監視します。
 * コンテンツソースを分離することでオーサリング効率を向上させます。
 
-ユニバーサルエディターを使用したAEM コンテンツ管理と WYSIWYG オーサリングの両方、およびドキュメントベースのオーサリングを使用できます。
+ユニバーサルエディターとドキュメントベースのオーサリングを使用して、AEM コンテンツ管理と WYSIWYG オーサリングの両方を使用できます。
 
 AEM as a Cloud ServiceのCloud Managerを使用すると、プロジェクトのEdge Delivery サービスを有効にできます。
 
@@ -38,17 +39,17 @@ AEM as a Cloud ServiceのCloud Managerを使用すると、プロジェクトの
 
 Adobe Experience Manager Sitesの一部としてライセンスをEdge Delivery Servicesしている場合は、Cloud Managerで直接Edge Delivery Servicesを使用してサイトをオンボーディングし、[ ガイド付きのセルフサービスエクスペリエンスを使用して ](/help/implementing/cloud-manager/managing-code/private-repositories.md) 運用を開始できます。
 
-これにより、すべての AEM プロパティに対して統一されたエクスペリエンスが実現し、ドメイン名管理、SSL 証明書管理、CDN マッピングなどのすべての重要なワークフローとの一貫性が確保されます。
+この機能により、すべてのAEM プロパティを統一されたエクスペリエンスで管理できます。 主要なワークフロー間の一貫性を確保します。 これには、ドメイン名の管理、SSL 証明書の管理、CDN マッピングが含まれます。
 
 Edge Delivery Servicesは、[ 実稼動プログラムとサンドボックスプログラム ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) の両方で使用できます。
 
-## Edge Delivery Servicesの有効化 {#enabling}
+## Edge Delivery Servicesを有効にする {#enabling}
 
 新しいプログラムを追加する際に、Edge Delivery Servicesを有効にできます。
 
 ![ 実稼動プログラムをEdge Delivery Servicesで追加 ](assets/add-production-program-with-edge.png)
 
-プログラムの追加について詳しくは、次のドキュメントを参照してください。
+プログラムの追加について詳しくは、次を参照してください。
 
-* [実稼働プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+* [実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 * [サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
