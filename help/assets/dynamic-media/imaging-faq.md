@@ -6,10 +6,10 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 22de8ac77af27114099de2f6b4349232524cb94f
+source-git-commit: 1b985a83fd58522ee485c02b96bfb6a697da6ce0
 workflow-type: tm+mt
-source-wordcount: '3454'
-ht-degree: 99%
+source-wordcount: '3455'
+ht-degree: 98%
 
 ---
 
@@ -63,7 +63,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 **スマートイメージングのメリット**
 
-スマートイメージングは、使用しているクライアントブラウザー、デバイスのディスプレイおよびネットワーク状況に応じて画像ファイルサイズを自動的に最適化することで、より優れた画像配信パフォーマンスを実現します。画像はページの読み込み時間のほとんどを占めるので、こうしたパフォーマンス向上はビジネス KPI（より高いコンバージョン率、より長いサイト滞在時間、より低いサイトバウンス率など）に大きな影響を及ぼす可能性があります。
+スマートイメージングは、使用しているクライアントブラウザー、デバイスのディスプレイ、ネットワーク条件に応じて画像ファイルサイズを自動的に最適化することで、より優れた画像配信パフォーマンスを提供します。 画像はページの読み込み時間のほとんどを占めるので、こうしたパフォーマンス向上はビジネス KPI（より高いコンバージョン率、より長いサイト滞在時間、より低いサイトバウンス率など）に大きな影響を及ぼす可能性があります。
 
 最新のスマートイメージングの主要なメリットには、次のものがあります。
 
