@@ -1,8 +1,8 @@
 ---
-source-git-commit: 964d4a04c6c645a5cdab29218f93431649d41588
+source-git-commit: 4eee52c28a57b466cfba52a99b832108b936a5d3
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 98%
+source-wordcount: '673'
+ht-degree: 95%
 
 ---
 # スニペット {#snippets}
@@ -80,7 +80,7 @@ ht-degree: 98%
   </tr>
   <tr>
     <td>ドロップダウンリストのオプションを設定 </td>
-    <td>ドロップダウンリストのオプションは、ルールエディターのプロパティの<b>オプションを設定</b>を使用して設定します。</td>
+    <td>ドロップダウンリストのオプションは、ルールエディターの <b> オプションの設定 </b> プロパティを使用して設定します。</td>
     <td>ドロップダウンのオプションは、カスタム関数を使用して設定します。 
    </td>
    </tr>
@@ -92,7 +92,7 @@ ht-degree: 98%
    </td>
    </tr>
       <tr>
-    <td>「Then」でフィールド／パネルフォームのルールを検証／リセット </td>
+    <td>「Then」のフィールド/パネル/フォームルールを検証/リセット </td>
     <td>検証およびリセット関数は、ルールエディターのフォームオブジェクトのみをサポートします。 
    </td>
     <td>検証およびリセット関数は、ルールエディターのフォーム／パネル／フィールドオブジェクトをサポートします。 
@@ -100,7 +100,7 @@ ht-degree: 98%
    </tr>
    <tr>
     <td>ES10 サポート </td>
-    <td>ES10 はまだサポートされていません。 ES5 JavaScript機能のみをサポートします。 </td>
+    <td>ES10 はまだサポートされていません。ES5 JavaScript 機能のみをサポートします。 </td>
     <td>カスタム関数内の let 関数や arrow 関数（ES10 サポート）などの最新の JavaScript 機能をサポートします。 
    </td>
    </tr>
@@ -127,3 +127,10 @@ ht-degree: 98%
 * [コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要](/help/forms/create-and-use-custom-functions.md)
 * [コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成](/help/forms/custom-function-core-component-create-function.md)
 * [カスタム関数の開発と使用の例](/help/forms/custom-function-core-components-use-cases.md)
+
+
+## IP許可リストとフロントエンドパイプライン {#allowlist-frontend-pipeline}
+
+>[!IMPORTANT]
+>
+>重要なメモをここに追加します。
