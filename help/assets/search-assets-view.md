@@ -4,7 +4,7 @@ description: 詳しくは、AEM Assets ビューでアセットを検索およ�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 940e62432b8234f90c84d6c7a09dd60e643a3ae5
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 100%
@@ -239,7 +239,7 @@ Experience Manager Assets を使用すると、組織のデフォルトのラン
 1. **[!UICONTROL 最初に検索するホームページをカスタマイズ]**&#x200B;に移動し、「**[!UICONTROL プレビュー]**」をクリックします。「**[!UICONTROL ダークテーマ]**」ボタンを切り替えて、ダークテーマまたはライトテーマでホームページをプレビューします。
 1. 「**[!UICONTROL 閉じる]**」をクリックし、プレビュー画面を閉じます。
 
-   ![最初に検索するホームページのプレビュー](assets/search-first-preview.gif)
+   ![最初に検索するホームページのプレビュー](/help/assets/assets/search-first-preview.gif)
 
 ## コンテキスト検索 {#contextual-search}
 
@@ -255,7 +255,7 @@ Experience Manager Assets でコンテキスト検索にアクセスするには
 
 1. 検索テキストボックスでテキストプロンプトを定義し、「**[!UICONTROL コンテキスト検索]**」をクリックします。
 
-   ![コンテキスト検索のテキストプロンプト](assets/contextual-search-text-prompt.png)
+   ![コンテキスト検索のテキストプロンプト](/help/assets/assets/wknd-contextual-search.png)
 
    [!DNL Experience Manager Assets] に検索結果が表示されます。
 
