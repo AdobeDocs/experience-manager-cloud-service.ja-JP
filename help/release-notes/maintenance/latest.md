@@ -96,7 +96,7 @@ ht-degree: 100%
 * ASSETS-40875 - AssetDeleteHandler クラスが、アセット削除イベントをリッスンし、削除イベントのタイプ（PRE_DELETE または POST_DELETE）に基づいて特定のアクションを実行する。特定のシナリオでは、POST_DELETE タイプのイベントによって NullPointerException が発生します。
 * FORMS-14340 - FormsAndDocumentOmniSearchHandler および CloudStorageSubmitActionInserter のインスタンス化中にエラーが発生する。これらは無害なログステートメントです。
 * FORMS-15818 - コンポーネント記述子エントリ「OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml」のステートメントがサーバーログで見つからない。これらは無害なログステートメントです。
-* 
+* &#x200B;
    * SITES-23662 - 公開をトリガーするユーザーがサーバーログの JCR ログステートメントから抽出できない。これは開発中の機能で、断続的で無害な「OSGi イベントのバッチで有効なユーザー ID が見つかりません」というエラーがログに記録される可能性があります。
 
 ### 変更通知 {#change-notice-17465}
