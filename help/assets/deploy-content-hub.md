@@ -2,13 +2,13 @@
 title: デプロイ [!DNL Content Hub]
 description: Content Hubをデプロイしてアクティブ化し、様々なタイプの権限（アセットのアップロード、ユーザーのAdobe Express）を持つユーザーにアクセスを提供する方法と、ユーザーに管理者権限を提供する方法について説明します。
 role: Admin
-source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
+exl-id: 58194858-6e1c-460b-bab3-3496176b2851
+source-git-commit: 1cc17d10a687ede6b3b091578ed20a39414bb235
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1351'
 ht-degree: 3%
 
 ---
-
 
 # コンテンツハブのデプロイ {#deploy-content-hub}
 
@@ -64,15 +64,23 @@ Experience Manager Assetsを初めて使用する場合は、「**[!UICONTROL �
 
 ### Admin Console時のContent Hub インスタンスと製品プロファイル{#content-hub-instance-product-profile}
 
-[Cloud Managerを使用してAssetsas a Cloud Service用にContent Hubを有効にする ](#enable-content-hub) を行うと、Admin Console時にAEM Assetsas a Cloud Service内に新しいインスタンスが作成され、サフィックスに `contenthub` が付きます。
+[Cloud Managerを使用してAssetsas a Cloud Service用にContent Hubを有効にする ](#enable-content-hub) を行うと、Admin Console時にAEM Assetsas a Cloud Service内に新しいインスタンスが作成され、サフィックスに `delivery` が付きます。
 
 ![Content Hubの新しいインスタンス ](assets/new-instance-content-hub.png)
+
+>[!NOTE]
+>
+>2024 年 8 月 14 日（PT）より前にContent Hubをプロビジョニングしている場合、新しいインスタンスは `contenthub` をサフィックスとして使用して作成されます。
 
 Content Hubのインスタンス名には `author` や `publish` はありません。
 
 インスタンス名をクリックして、Content Hub製品プロファイルを表示します。
 
 ![Content Hub製品プロファイル ](assets/content-hub-product-profile.png)
+
+>[!NOTE]
+>
+>2024 年 8 月 14 日（PT）より前にContent Hubをプロビジョニングしている場合、Content Hub製品プロファイルには `delivery` ではなく `Limited Users` の後に記載さ `contenthub` ています。
 
 ## 手順 2:Content Hub管理者をオンボーディングする {#onboard-content-hub-administrator}
 
@@ -192,6 +200,3 @@ Experience Manager Assets ユーザーを設定するには：
    >[!NOTE]
    >
    > Experience Manager Assets ユーザーの場合、[Content Hub製品プロファイル ](#onboard-content-hub-users) に追加される必要はありません。
-
-
-
