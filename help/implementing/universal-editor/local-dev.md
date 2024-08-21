@@ -4,10 +4,10 @@ description: ユニバーサルエディターが開発目的でローカルの 
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5a6795056090908652a72730939024e974a9a697
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 100%
+source-wordcount: '819'
+ht-degree: 83%
 
 ---
 
@@ -38,7 +38,7 @@ HTTPS で保護された外側のフレーム内で、保護されていない H
 
 ユニバーサルエディターサービスは、ユニバーサルエディターの完全なコピーではなく、ローカル AEM 環境からの呼び出しがインターネット経由ではなく、制御する定義済みのエンドポイントからルーティングされることを保証する機能のサブセットにすぎません。
 
-ユニバーサルエディターサービスのローカルコピーを実行するには、[NodeJS バージョン 16](https://nodejs.org/en/download/releases) が必要です。
+ユニバーサルエディターサービスのローカルコピーを実行するには、[NodeJS バージョン 20](https://nodejs.org/en/download/releases) が必要です。
 
 ユニバーサルエディターサービスは、ソフトウェア配布から使用できます。アクセス方法について詳しくは、[ソフトウェア配布のドキュメント](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ja)を参照してください。
 
@@ -63,18 +63,36 @@ $ openssl req -newkey rsa:2048 -nodes -keyout key.pem -x509 -days 365 -out certi
 `universal-editor-service.cjs`、`key.pem` および `certificate.pem` ファイルと同じパス上に、次のコンテンツが含まれる `.env` ファイルを作成します。
 
 ```text
-EXPRESS_PORT=8000
-EXPRESS_PRIVATE_KEY=./key.pem
-EXPRESS_CERT=./certificate.pem
-NODE_TLS_REJECT_UNAUTHORIZED=0
+UES_PORT=8000
+UES_PRIVATE_KEY=./key.pem
+UES_CERT=./certificate.pem
+UES_TLS_REJECT_UNAUTHORIZED=false
 ```
 
-変数の意味は次のとおりです。
+この例でのローカル開発に必要な最小値です。 次の表に、これらと使用可能なその他の値の詳細を示します。
 
-* `EXPRESS_PORT`：ユニバーサルエディターサービスがリッスンするポートを定義します
-* `EXPRESS_PRIVATE`：[以前に作成した秘密鍵](#ue-https) `key.pem` を指し示します。
-* `EXPRESS_CERT`：[以前に作成した証明書](#ue-https) `certificate.pem` を指し示します。
-* `NODE_TLS_REJECT_UNAUTHORIZED=0`：自己署名付き証明書を受け取ります
+| 値 | オプション | デフォルト | 説明 |
+|---|---|---|---|
+| `UES_PORT` | はい | `8080` | サーバーが実行されているポート |
+| `UES_PRIVATE_KEY` | はい | なし | HTTPS サーバーの秘密鍵へのパス |
+| `UES_CERT` | はい | なし | HTTPS サーバーの認証ファイルのパス |
+| `UES_TLS_REJECT_UNAUTHORIZED` | はい | `true` | 許可されていない TLS 接続を拒否する |
+| `UES_DISABLE_IMS_VALIDATION` | はい | `false` | IMS 検証を無効にする |
+| `UES_ENDPOINT_MAPPING` | はい | 空白 | 内部書き換えのエンドポイントのマッピング <br> 例：`UES_ENDPOINT_MAPPING='[{"https://your-public-facing-author-domain.net": "http://10.0.0.1:4502"}]'`<br> 結果：ユニバーサルエディターサービスは、指定された接続 `https://your-public-facing-author-domain.net` の代わりに `http://10.0.0.1:4502` に接続します |
+| `UES_LOG_LEVEL` | はい | `info` | サーバーのログレベル。使用可能な値は、`silly`、`trace`、`debug`、`verbose`、`info`、`log`、`warn`、`error` および `fatal` です |
+| `UES_SPLUNK_HEC_URL` | はい | なし | Splunk エンドポイントへの HEC URL |
+| `UES_SPLUNK_TOKEN` | はい | なし | Splunk トークン |
+| `UES_SPLUNK_INDEX` | はい | なし | ログを書き込むインデックス |
+| `UES_SPLUNK_SOURCE` | はい | `universal-editor-service` | Splunk ログのソースの名前 |
+
+>[!NOTE]
+>
+>[2024.08.13 リリース ](/help/release-notes/universal-editor/current.md) より前のユニバーサルエディターでは、`.env` ファイルに次の変数が必要でした。 後方互換性のために、これらの値は 2024 年 10 月 1 日（PT）までサポートされます。
+>
+>`EXPRESS_PORT=8000`
+>`EXPRESS_PRIVATE_KEY=./key.pem`
+>`EXPRESS_CERT=./certificate.pem`
+>`NODE_TLS_REJECT_UNAUTHORIZED=0`
 
 ## ユニバーサルエディターサービスの実行 {#running-ue}
 
