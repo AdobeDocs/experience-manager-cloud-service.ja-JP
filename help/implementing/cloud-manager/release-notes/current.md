@@ -1,23 +1,23 @@
 ---
 title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.8.0 のリリースノート
-description: AEM as a Cloud ServiceのCloud Manager 2024.8.0 のリリースノートについて説明します。
+description: AEM as a Cloud Service の Cloud Manager 2024.8.0 のリリースノートについて説明します。
 feature: Release Information
 role: Admin
 source-git-commit: a823bcd1461b847983d0243cd9abd59efd8d7b6f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '465'
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud ServiceのCloud Manager 2024.8.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.8.0 のリリースノート {#release-notes}
 
 このページは、AEM as a Cloud Service の Cloud Manager リリース 2024.8.0 のリリースノートです。
 
 >[!NOTE]
 >
->Adobe Experience Manager as a Cloud Service の最新のリリースノートについては、[こちらのページ](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
+>Adobe Experience Manager as a Cloud Service の最新のリリースノートについて詳しくは、[こちらのページ](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
 ## リリース日 {#release-date}
 
@@ -25,36 +25,36 @@ AEM as a Cloud Service の Cloud Manager 2024.8.0 のリリース日は 2024年8
 
 ## 新機能 {#what-is-new}
 
-* [ その他の公開地域 ](/help/operations/additional-publish-regions.md) および [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) （サービスレベル契約）がAEM Formsのas a Cloud Service版で利用できるようになりました。
-   * この機能強化により、稼働時間の増加および遅延の減少を伴う高い SLA を達成でき、世界中に分散しているユーザーに対してクラス最高のエクスペリエンスを提供できます。
+* AEM Forms as a Cloud Service では、[追加の公開地域](/help/operations/additional-publish-regions.md)と [99.99％の SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)（サービスレベル契約）が利用できるようになりました。
+   * この機能強化により、稼動時間の増加と待ち時間の減少により、より高い SLA を実現し、世界中に分散したユーザーに対してクラス最高のエクスペリエンスを提供できます。
 
 ## 早期導入プログラム {#early-adoption}
 
-将来の機能をテストする機会を得るには、Adobe の早期導入プログラムに参加してください。
+将来の機能をテストする機会を得るには、アドビの早期導入プログラムに参加してください。
 
-### Cloud ManagerでのEdge Delivery Servicesのサポート {#edge-delivery-services}
+### Cloud Manager での Edge Delivery Services のサポート {#edge-delivery-services}
 
-AEM Sitesの一部としてEdge Delivery Servicesのライセンスを取得している場合は、[Cloud Managerで直接Edge Delivery Servicesを使用してサイトをオンボーディングできるようになり ](/help/implementing/cloud-manager/edge-delivery-services.md)、ガイド付きのセルフサービスエクスペリエンスを使用して運用を開始できます。
+AEM Sites の一部として Edge Delivery Services のライセンスを取得している場合は、[Cloud Manager で Edge Delivery Services を使用してサイトを直接オンボード](/help/implementing/cloud-manager/edge-delivery-services.md)し、ガイド付きのセルフサービスエクスペリエンスを使用して運用開始できるようになりました。
 
-この機能により、すべてのAEM プロパティで統一されたエクスペリエンスが提供されます。 ドメイン名の管理、SSL 証明書の管理、CDN マッピングなどの重要なワークフロー間で一貫性を確保できます。
+この機能により、すべての AEM プロパティに対して統一されたエクスペリエンスが実現します。これにより、ドメイン名管理、SSL 証明書管理、CDN マッピングなどの重要なワークフロー間で一貫性が確保されます。
 
-この新機能をテストし、フィードバックを共有することに関心がある場合は、Adobe IDに関連付けられたメールアドレスから `aemcs-cmedgedelsvs-program-adopter@adobe.com` にメールを送信します。
+この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから `aemcs-cmedgedelsvs-program-adopter@adobe.com` にメールを送信します。
 
 ### ドメイン検証済み（DV）証明書
 
-Cloud Managerを使用すると、[ セルフサービス方式でドメイン検証済み（DV） SSL 証明書を生成および管理 ](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) できるようになります。 この機能により、オンライン・ビジネス向けに安全な Web サイトを作成するための、最も迅速かつ容易でコスト・パフォーマンスに優れたソリューションが提供されます。
+Cloud Manager では、[ドメイン検証（DV）SSL 証明書をセルフサービスで生成および管理](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)できるようになりました。この機能により、オンラインビジネス用の安全な web サイトを作成するのに最も高速かつ簡単でコスト効率に優れたソリューションが実現します。
 
-この新機能をテストし、フィードバックを提供したい場合は、Adobe IDにリンクされたメールアドレスを使用して `Grp-aemcs-dv-dert-adopter@adobe.com` にメールを送信します。
+この新機能をテストしてフィードバックを提供する場合は、Adobe ID にリンクされたメールアドレスを使用して `Grp-aemcs-dv-dert-adopter@adobe.com` にメールを送信します。
 
 ### エクスペリエンス監査ダッシュボード {#experience-audit-dashboard}
 
 [Cloud Manager エクスペリエンス監査ダッシュボード](/help/implementing/cloud-manager/experience-audit-dashboard.md)には、ページのパフォーマンススコアのトレンド表示と、スコアの改善に役立つインサイトとレコメンデーションが含まれています。 エクスペリエンス監査は、Cloud Manager 実稼動パイプラインのステップとして含まれます。
 
-このダッシュボードは、Web アプリの品質を向上させるためのオープンソースの自動ツールである Google Lighthouse を使用しています。 これを使用すると、公開か認証を必要とするかにかかわらず、任意の web ページを監査できます。 パフォーマンス、アクセシビリティ、プログレッシブ web アプリ、SEO などの評価を提供します。
+このダッシュボードは、Web アプリの品質を向上させるためのオープンソースの自動ツールである Google Lighthouse を使用しています。 公開されている web ページや認証が必要な web ページを監査することに使用できます。パフォーマンス、アクセシビリティ、プログレッシブ web アプリ、SEO などの評価を提供します。
 
-新しいダッシュボードを試してみませんか？ まず、Adobe IDにリンクされたメールを使用して、`aem-lighthouse-pilot@adobe.com` にメールを送信します。
+新しいダッシュボードを試してみることに興味がありますか？まず、Adobe ID にリンクされているメールアドレスを使用して、`aem-lighthouse-pilot@adobe.com` にメールを送信します。
 
 ## バグ修正
 
-* パイプラインが削除された後、パイプラインステップが実行中であることが判明するまれな問題を修正しました。
-* 設定パイプラインで `FAILED` ステータスが誤って表示される問題が、まれに修正されました。
+* パイプラインの削除後にパイプライン手順が実行中であることが検出されるというまれな問題を修正しました。
+* まれに設定パイプラインで `FAILED` ステータスが誤って表示される問題を修正しました。

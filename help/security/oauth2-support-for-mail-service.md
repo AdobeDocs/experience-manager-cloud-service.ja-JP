@@ -5,9 +5,9 @@ exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 feature: Security
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '675'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -115,7 +115,7 @@ AEM 側で Oauth を設定する前に、次の手順で accessToken と refresh
 >
 > [この場所](https://learn.microsoft.com/ja-jp/entra/identity-platform/v2-oauth2-auth-code-flow)から Postman API コレクションを取得できます。
 >
-> 詳しくは、[MSFT OAuth のドキュメント ](https://learn.microsoft.com/ja-jp/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) を参照してください。
+> 詳しくは、[MSFT OAuth のドキュメント](https://learn.microsoft.com/ja-jp/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth)を参照してください。
 
 ### AEM as a Cloud Service との統合 {#integration-with-aem-as-a-cloud-service}
 
@@ -168,7 +168,7 @@ AEM 側で Oauth を設定する前に、次の手順で accessToken と refresh
    ```
 
 1. Outlook の場合、`smtp.host` 設定値は `smtp.office365.com` です
-1. 実行時に、[Cloud Manager変数 API を使用するか、[Cloud Managerを使用して変数を追加 ](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) て、`refreshToken values` および `clientSecret` シークレットを渡し ](/help/implementing/cloud-manager/environment-variables.md) す。 変数 `SECRET_SMTP_OAUTH_REFRESH_TOKEN` と `SECRET_SMTP_OAUTH_CLIENT_SECRET` の値を定義する必要があります。
+1. 実行時に、`refreshToken values` および `clientSecret` 秘密鍵を渡すには、[Cloud Manager 変数 API](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) を使用するか、[Cloud Manager を使用して変数を追加](/help/implementing/cloud-manager/environment-variables.md)します。変数 `SECRET_SMTP_OAUTH_REFRESH_TOKEN` と `SECRET_SMTP_OAUTH_CLIENT_SECRET` の値を定義する必要があります。
 
 ### トラブルシューティング {#troubleshooting}
 

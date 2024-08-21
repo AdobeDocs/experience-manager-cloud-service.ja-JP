@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3937'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ ht-degree: 98%
          action: block
    ```
 
-   `data` ノードの上のプロパティについての説明は、[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md#common-syntax) を参照してください。 `kind` プロパティの値は *CDN* に設定し、バージョンは `1` に設定する必要があります。
+   `data` ノード上のプロパティの説明について詳しくは、[設定パイプラインの使用](/help/operations/config-pipeline.md#common-syntax)を参照してください。`kind` プロパティの値は *CDN* に設定し、バージョンは `1` に設定する必要があります。
 
 
 1. WAF ルールにライセンスが付与されている場合は、新規および既存のプログラムシナリオの両方について、以下で説明するように、Cloud Manager で機能を有効にする必要があります。
@@ -110,7 +110,7 @@ ht-degree: 98%
 
    1. 既存のプログラムで WAF を設定するには、[プログラムを編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)し、任意の時点で「**セキュリティ**」タブで「**WAF-DDOS**」オプションをオフまたはオンにします。
 
-1. 設定パイプラインの記事の説明に従って、Cloud Manager で設定パイプラインを作成します。[](/help/operations/config-pipeline.md#managing-in-cloud-manager) パイプラインは、`cdn.yaml` ファイルが下のどこかに配置された最上位 `config` フォルダーを参照します。詳しくは、[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md#folder-structure) を参照してください。
+1. 設定パイプラインの記事の説明に従って、Cloud Manager で設定パイプラインを作成します。[](/help/operations/config-pipeline.md#managing-in-cloud-manager)パイプラインは、`cdn.yaml` ファイルが下の任意の場所に配置された最上位レベルの `config` フォルダーを参照します。[設定パイプラインの使用](/help/operations/config-pipeline.md#folder-structure)を参照してください。
 
 ## トラフィックフィルタールールの構文 {#rules-syntax}
 
@@ -215,7 +215,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* 正規表現を使用する際は、[regex101](https://regex101.com/) および [Fastly Fidle](https://fiddle.fastly.dev/) の使用をお勧めします。また、Fastly での正規表現の処理方法について詳しくは、[fastly ドキュメント - Fastly VCL の正規表現 ](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes) を参照してください。
+* 正規表現を使用する際は、[regex101](https://regex101.com/) および [Fastly Fidle](https://fiddle.fastly.dev/) の使用をお勧めします。また、Fastly による正規表現の処理方法について詳しくは、[fastly ドキュメント - Fastly VCL の正規表現](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes)を参照してください。
 
 
 ### アクション構造 {#action-structure}

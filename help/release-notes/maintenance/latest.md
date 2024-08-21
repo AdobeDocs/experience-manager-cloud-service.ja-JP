@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 80edd0255b38beee93b3f9c779ae0f364500b4a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1176'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 81%
 
 ## リリース 17465 {#release-17465}
 
-2024年8月14日（PT）に公開されたメンテナンスリリース 17465 の継続的な改善点を以下にまとめます。 前回のメンテナンスリリースは、リリース 17258 でした。
+2024年8月14日（PT）に公開されたメンテナンスリリース 17465 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 17258 でした。
 
 2024.8.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。 詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
 
@@ -45,7 +45,7 @@ ht-degree: 81%
 * SITES-22813 - コンテンツフラグメント REST API：列挙フィールドの min/max プロパティを定義する。
 * SITES-22031 - コンテンツフラグメント REST API：フラグメントのフォルダーに許可されたコンテンツフラグメントモデルを取得する。
 * SITES-17640 - コンテンツフラグメント REST API：コンテンツフラグメント公開操作の検証。
-* SITES-22677 - コンテンツフラグメント REST API：子孫参照のフラットリストを取得する
+* SITES-22677 - コンテンツフラグメント REST API：子孫参照のフラットリストを取得する。
 * SITES-22207 - コンテンツフラグメントの作成時にモデルが複製される。
 * SITES-23093 - イベント：コンテンツフラグメントモデルイベントのペイロードにタグを追加する。
 * SITES-23092 - イベント：コンテンツフラグメントイベントのペイロードにタグを追加する。
@@ -89,15 +89,15 @@ ht-degree: 81%
 * SITES-22203 - コンテンツフラグメント REST API：同じ状況に対して同じ応答を返すように、管理 API を調整する。
 * SITES-21973 - コンテンツフラグメント REST API：モデルに列挙タイプの一意の属性がない。
 * SITES-20364 - 302 リダイレクトが URL のセレクターでは機能しない。
-* SITES-21198 - VersionPreviewServlet：クリーンアップがすべてのクラスターノードで同時に実行され、結合の競合とブロックのコミットが発生する。
+* SITES-21198 - VersionPreviewServlet：クリーンアップがすべてのクラスターノードで同時に実行され、結合の競合が発生し、コミットがブロックされる。
 
 ### 既知の問題 {#known-issues-17465}
 
-* ASSETS-40875 - AssetDeleteHandler クラスは、アセット削除DELETEをリッスンし、削除DELETE（PRE_event または Asset_event）のタイプに基づいて特定のPOSTを実行します。 状況によっては、event_event 型のPOSTDELETEが NullPointerException を引き起こします。
-* FORMS-14340 - FormsAndDocumentOmniSearchHandler および CloudStorageSubmitActionInserter のインスタンス化でエラーが発生しました。 これらは無害なログステートメントです。
-* FORMS-15818 - コンポーネント記述子エントリ「OSGI-INF/com.adobe.aemfd.docmanager.impl。*.xml&#39;がサーバーログに見つかりません。 これらは無害なログステートメントです。
+* ASSETS-40875 - AssetDeleteHandler クラスが、アセット削除イベントをリッスンし、削除イベントのタイプ（PRE_DELETE または POST_DELETE）に基づいて特定のアクションを実行する。特定のシナリオでは、POST_DELETE タイプのイベントによって NullPointerException が発生します。
+* FORMS-14340 - FormsAndDocumentOmniSearchHandler および CloudStorageSubmitActionInserter のインスタンス化中にエラーが発生する。これらは無害なログステートメントです。
+* FORMS-15818 - コンポーネント記述子エントリ「OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml」のステートメントがサーバーログで見つからない。これらは無害なログステートメントです。
 * 
-   * SITES-23662 - サーバーログの JCR ログステートメントからパブリッシュをトリガーするユーザーを抽出できない。 これは、開発中の機能で、断続的で無害な「OSGI イベントのバッチで有効なユーザー ID が見つかりません」エラーがログに発生する可能性があります。
+   * SITES-23662 - 公開をトリガーするユーザーがサーバーログの JCR ログステートメントから抽出できない。これは開発中の機能で、断続的で無害な「OSGi イベントのバッチで有効なユーザー ID が見つかりません」というエラーがログに記録される可能性があります。
 
 ### 変更通知 {#change-notice-17465}
 
@@ -105,13 +105,13 @@ ht-degree: 81%
 
 ### 廃止された機能と API {#deprecated-17465}
 
-アドビは現在 `com.day.cq.wcm.api` を更新中で、現在のリリースでは、いくつかのメソッドとクラスを `@Deprecated` としてマークしています。 これらは今後のリリースで削除される予定です。使用している場合は、推奨される代替手段に切り替えることを検討してください。
+現在 `com.day.cq.wcm.api` を更新中で、現在のリリースでは、いくつかのメソッドとクラスを `@Deprecated` としてマークしています。これらは今後のリリースでは削除される予定なので、いずれかを使用している場合は、推奨される代替手段に切り替えます。
 
 AEM as a Cloud Service で廃止および削除された機能と API について詳しくは、[廃止および削除された機能と API](/help/release-notes/deprecated-removed-features.md) ドキュメントを参照してください。
 
-### セキュリティの修正 {#security-17465}
+### セキュリティ修正 {#security-17465}
 
-AEM as a Cloud Serviceは、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。 このメンテナンスリリースは、特定された 7 つの脆弱性に対処し、堅牢なシステム保護への取り組みを強化しています。
+AEM as a Cloud Service では、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。このメンテナンスリリースでは、特定された 7 つの脆弱性に対処し、堅牢なシステム保護に対する取り組みを強化しています。
 
 ### 組み込みテクノロジー {#embedded-tech-17465}
 
