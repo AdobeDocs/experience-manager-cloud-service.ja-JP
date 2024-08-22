@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1555'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
 >title="AEM as a Cloud Service での CDN"
->abstract="AEM as Cloud Service には、ビルトイン CDN が出荷時に搭載されています。その主な目的は、ブラウザーの近くの CDN エッジノードからキャッシュ可能なコンテンツを配信することで、待ち時間を減らすことです。AEM アプリケーションの最適なパフォーマンスを得るために、完全に管理および設定されています。"
+>abstract="AEM as Cloud Service の出荷時には、組み込みの CDN が搭載されています。その主な目的は、ブラウザーの近くの CDN エッジノードからキャッシュ可能なコンテンツを配信することで、待ち時間を減らすことです。AEM アプリケーションの最適なパフォーマンスを得るために、完全に管理および設定されています。"
 
 AEM as Cloud Service の出荷時には、組み込みの CDN が搭載されています。その主な目的は、ブラウザーの近くの CDN エッジノードからキャッシュ可能なコンテンツを配信することで、待ち時間を減らすことです。AEM アプリケーションの最適なパフォーマンスを得るために、完全に管理および設定されています。
 
@@ -157,7 +157,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 **リダイレクトループが多すぎます**
 
-ページで「リダイレクトが多すぎます」ループが発生すると、ページを強制的にページ自体に戻すリダイレクトに一致する一部のリクエストヘッダーが CDN に追加されます。次に例を示します。
+ページで「リダイレクトが多すぎます」ループが発生すると、ページを強制的にページ自体に戻すリダイレクトに一致する一部のリクエストヘッダーが CDN に追加されます。例：
 
 * CDN ルールは、apex ドメインまたは www ドメインのいずれかに一致するように作成され、apex ドメインの X-Forwarded-Host ヘッダーのみが追加されます。
 * apex ドメインのリクエストはこの CDN ルールに一致し、apex ドメインを X-Forwarded-Host ヘッダーとして追加します。
@@ -178,7 +178,7 @@ AEM の管理による CDN は、次のヘッダーを各リクエストに追�
 >
 >顧客の管理による CDN がある場合、これらのヘッダーは、実際のクライアントではなく、顧客の CDN プロキシサーバーの場所を反映します。したがって、顧客の管理による CDN の場合、位置情報ヘッダーは顧客の CDN で管理する必要があります。
 
-国コードの値は、「[ISO 3166-1](https://ja.wikipedia.org/wiki/ISO_3166-1)」で説明されているAlpha2 コードです。
+国コードの値は、[ISO 3166-1](https://ja.wikipedia.org/wiki/ISO_3166-1) で説明されている Alpha-2 コードです。
 
 大陸コードの値は次のとおりです。
 

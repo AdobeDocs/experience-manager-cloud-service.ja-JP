@@ -5,9 +5,9 @@ exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 34ae1d57e77e209e179aca5c556954dbfb170498
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '647'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -118,11 +118,11 @@ data-aue-filter="container-filter"
 
 ### カスタムプレビュー URL {#custom-preview-urls}
 
-カスタムプレビュー URL は、`urn:adobe:aue:config:preview` のメタ設定を使用して指定できます。この設定は、[ エディターの右上のツールバーにある「**ページを開く** ボタンをクリックすると開きます。](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+カスタムプレビュー URL は、`urn:adobe:aue:config:preview` メタ設定を使用して指定できます。この URL は、[エディターの右上のツールバー](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)にある「**ページを開く**」ボタンをクリックすると開きます。
 
-これは、[WYSIWYG オーサリングでEdge Delivery Servicesを使用する ](/help/edge/wysiwyg-authoring/authoring.md) など、特定のプレビュー要件を持つアプリケーションで特に役立ちます。
+これは、[WYSIWYG オーサリングを備えた Edge Delivery Services を使用](/help/edge/wysiwyg-authoring/authoring.md)するアプリケーションなど、特定のプレビュー要件を持つアプリケーションに特に役立ちます。
 
-それには、次の例のように、実装されたアプリのメタタグに目的のプレビュー URL を含めます。
+これを行うには、次の例のように、実装されたアプリのメタタグに目的のプレビュー URL を含めるのみです。
 
 ```html
 <meta name="urn:adobe:aue:config:preview" content="https://wknd.site"/>

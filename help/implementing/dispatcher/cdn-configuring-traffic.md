@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
 source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1314'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ CDN でトラフィックを設定する前に、次のことを行う必要が�
 
 1. 以下の節の様々な設定スニペットを参照して、`cdn.yaml` または類似の名前のファイルを作成します。
 
-   すべてのスニペットには共通のプロパティがあり、[ 設定パイプライン ](/help/operations/config-pipeline.md#common-syntax) で説明されています。 `kind` プロパティの値は *CDN* に設定し、`version` プロパティは *1* に設定する必要があります。
+   すべてのスニペットには、[設定パイプライン](/help/operations/config-pipeline.md#common-syntax)で説明されているこれらの共通プロパティがあります。`kind` プロパティの値は *CDN* に設定し、`version` プロパティは *1* に設定する必要があります。
 
    ```
    kind: "CDN"
@@ -48,9 +48,9 @@ CDN でトラフィックを設定する前に、次のことを行う必要が�
      envTypes: ["dev"]
    ```
 
-1. [Config パイプライン ](/help/operations/config-pipeline.md#folder-structure) で説明されているように、ファイルを *config* という最上位フォルダーの下の任意の場所に配置します。
+1. [設定パイプライン](/help/operations/config-pipeline.md#folder-structure)で説明されているように、*config* または類似の名前の最上位フォルダーの下のどこかにファイルを配置します。
 
-1. [Config パイプライン ](/help/operations/config-pipeline.md#managing-in-cloud-manager) に記載されているように、Cloud Managerで設定パイプラインを作成します。
+1. [設定パイプライン](/help/operations/config-pipeline.md#managing-in-cloud-manager)の説明に従って、Cloud Manager で設定パイプラインを作成します。
 
 1. 設定をデプロイします。
 

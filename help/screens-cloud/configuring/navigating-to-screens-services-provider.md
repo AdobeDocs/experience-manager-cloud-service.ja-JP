@@ -5,9 +5,9 @@ exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '382'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 98%
 
 Screens サービスプロバイダーを設定するには、次の手順に従います。
 
-1. [Screens サービスプロバイダー ](https://experience.adobe.com/screens) に移動します。
+1. [Screens サービスプロバイダー](https://experience.adobe.com/screens)に移動します。
 
    >[!CAUTION]
    >複数の組織にアクセスできる場合は、正しい組織にログインしていることを確認してください。組織を変更するには、画面の右上隅にある組織名をクリックし、アクセスする必要がある組織を選択します。

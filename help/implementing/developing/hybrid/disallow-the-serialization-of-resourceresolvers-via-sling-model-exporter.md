@@ -5,9 +5,9 @@ exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '529'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 96%
 
 Sling Model Exporter 機能を使用すると、Sling Models オブジェクトを JSON 形式にシリアル化できます。この機能は、SPA（単一ページアプリケーション）が AEM からのデータに容易にアクセスできるようにするので、広く使用されています。実装では、Jacson Databind ライブラリを使用してこれらのオブジェクトをシリアル化します。
 
-シリアル化は再帰的な操作です。「root object」から始まり、すべての対象オブジェクトを再帰的に反復し、それらとその子をシリアル化します。シリアル化されるフィールドの説明については、[Jackson - Decide What Fields Get Serialized/Deserialized](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not) を参照してください。
+シリアル化は再帰的な操作です。「root object」から始まり、すべての対象オブジェクトを再帰的に反復し、それらとその子をシリアル化します。シリアル化されるフィールドの説明については、[Jackson - シリアル化／逆シリアル化するフィールドの決定](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)を参照してください。
 
-このアプローチは、すべてのタイプのオブジェクトを JSON にシリアル化し、当然ながら、シリアル化のルールの対象となる場合は、Sling `ResourceResolver` オブジェクトもシリアル化できます。`ResourceResolver` サービス（つまり、それを表すサービスオブジェクト）には、開示してはいけない、潜在的な機密情報が含まれているため、これは問題になります。次に例を示します。
+このアプローチは、すべてのタイプのオブジェクトを JSON にシリアル化し、当然ながら、シリアル化のルールの対象となる場合は、Sling `ResourceResolver` オブジェクトもシリアル化できます。`ResourceResolver` サービス（つまり、それを表すサービスオブジェクト）には、開示してはいけない、潜在的な機密情報が含まれているため、これは問題になります。例：
 
 * ユーザーID
 * 相対パスを解決する検索パス

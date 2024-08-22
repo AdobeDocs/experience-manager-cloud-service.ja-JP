@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2300'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -218,7 +218,7 @@ Sling モデルは Java として実装され、生成されたプロジェク�
    private ProductTeaser productTeaser;
    ```
 
-   上書きまたは変更したくないメソッドについては、`ProductTeaser` が返す値を返すことができます。次に例を示します。
+   上書きまたは変更したくないメソッドについては、`ProductTeaser` が返す値を返すことができます。例：
 
    ```java
    @Override
@@ -385,7 +385,7 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
 
    Sling モデルメソッドを HTL で呼び出すと、メソッドの `get` および `is` 部分が削除され、最初の文字が小文字に変換されます。`isShowBadge()` は `.showBadge` となり、`isEcoFriendly` は `.ecoFriendly` となります。`.isEcoFriendly()` から返されるブール値に基づいて、`<span>Eco Friendly</span>` が表示されるかどうかを決定します。
 
-   `data-sly-test` およびその他の HTL ブロックステートメントについて詳しくは、[HTL の仕様 ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=ja) を参照してください。
+   `data-sly-test` およびその他の HTL ブロックステートメントについて詳しくは、[HTL の仕様](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=ja)を参照してください。
 
 1. 変更を保存し、コマンドラインターミナルから Maven スキルを使用して、AEM にアップデートをデプロイします。
 
@@ -479,7 +479,7 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
 
 ## これで完了です {#congratulations}
 
-最初の AEM CIF コンポーネントをカスタマイズしました。[ ソリューションファイルをここからダウンロード ](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip) できます。
+最初の AEM CIF コンポーネントをカスタマイズしました。[ソリューションファイルは、こちらからダウンロード](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip)できます。
 
 ## ボーナスチャレンジ {#bonus-challenge}
 

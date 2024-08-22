@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
 source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1266'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 94%
 
 設定の一部として、Adobe CDN と顧客 CDN は、`X-AEM-Edge-Key` HTTP ヘッダーの値について合意する必要があります。この値は、リクエストが Adobe CDN にルーティングされる前に、顧客 CDN で各リクエストに対して設定され、Adobe CDN では値が期待どおりであることを検証するので、リクエストを適切な AEM 接触チャネルにルーティングするのに役立つ HTTP ヘッダーを含む他の HTTP ヘッダーを信頼できます。
 
-*X-AEM-Edge-Key* 値は、最上位レベルの `config` フォルダーの下にある `cdn.yaml` または類似の名前のファイル内の `edgeKey1` プロパティと `edgeKey2` プロパティによって参照されます。フォルダー構造と設定のデプロイ方法について詳しくは、[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md#folder-structure) を参照してください。
+*X-AEM-Edge-Key* 値は、最上位レベルの `config` フォルダーの下にある `cdn.yaml` または類似の名前のファイル内の `edgeKey1` プロパティと `edgeKey2` プロパティによって参照されます。フォルダー構造と設定のデプロイ方法について詳しくは、[設定パイプラインの使用](/help/operations/config-pipeline.md#folder-structure)を参照してください。
 
 構文は次のとおりです。
 
@@ -54,7 +54,7 @@ data:
           authenticator: edge-auth
 ```
 
-`data` ノードの上のプロパティについての説明は、[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md#common-syntax) を参照してください。 `kind` プロパティの値は *CDN* に設定し、`version` プロパティは `1` に設定する必要があります。
+`data` ノード上のプロパティの説明について詳しくは、[設定パイプラインの使用](/help/operations/config-pipeline.md#common-syntax)を参照してください。`kind` プロパティの値は *CDN* に設定し、`version` プロパティは `1` に設定する必要があります。
 
 その他のプロパティには次が含まれます。
 
@@ -76,7 +76,7 @@ data:
 
 ## API トークンのパージ {#purge-API-token}
 
-お客様は、宣言されたパージ API トークンを使用して [CDN キャッシュをパージ](/help/implementing/dispatcher/cdn-cache-purge.md)できます。トークンは、最上位レベルの `config` フォルダーの下にある `cdn.yaml` または類似の名前のファイルで宣言されます。フォルダー構造と設定のデプロイ方法について詳しくは、[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md#folder-structure) を参照してください。
+お客様は、宣言されたパージ API トークンを使用して [CDN キャッシュをパージ](/help/implementing/dispatcher/cdn-cache-purge.md)できます。トークンは、最上位レベルの `config` フォルダーの下にある `cdn.yaml` または類似の名前のファイルで宣言されます。フォルダー構造と設定のデプロイ方法について詳しくは、[設定パイプラインの使用](/help/operations/config-pipeline.md#folder-structure)を参照してください。
 
 構文は次のとおりです。
 
@@ -100,7 +100,7 @@ data:
            authenticator: purge-auth
 ```
 
-`data` ノードの上のプロパティについての説明は、[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md#common-syntax) を参照してください。 `kind` プロパティの値は *CDN* に設定し、`version` プロパティは `1` に設定する必要があります。
+`data` ノード上のプロパティの説明について詳しくは、[設定パイプラインの使用](/help/operations/config-pipeline.md#common-syntax)を参照してください。`kind` プロパティの値は *CDN* に設定し、`version` プロパティは `1` に設定する必要があります。
 
 その他のプロパティには次が含まれます。
 
@@ -156,7 +156,7 @@ data:
            authenticator: my-basic-authenticator
 ```
 
-`data` ノードの上のプロパティについての説明は、[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md#common-syntax) を参照してください。 `kind` プロパティの値は *CDN* に、`version` プロパティは `1` に設定する必要があります。
+`data` ノード上のプロパティの説明について詳しくは、[設定パイプラインの使用](/help/operations/config-pipeline.md#common-syntax)を参照してください。`kind` プロパティの値は *CDN* に、`version` プロパティは `1` に設定する必要があります。
 
 さらに、構文には次のものが含まれます。
 

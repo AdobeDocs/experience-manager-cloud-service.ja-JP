@@ -6,9 +6,9 @@ exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1359'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 98%
 
 ## サーバー間フロー {#the-server-to-server-flow}
 
-IMS 組織管理者の役割を持ち、AEM オーサー上の「AEM ユーザー」または「AEM 管理者」製品プロファイルのメンバーでもあるユーザーは、AEM as a Cloud Service 資格情報を生成できます。その資格情報は後で、AEM as a Cloud Service 環境管理者の役割を持つユーザーに取得され、サーバーにインストールされることになるので、秘密鍵として慎重に取り扱う必要があります。この JSON 形式のファイルには、AEM as a Cloud Service API との統合に必要なすべてのデータが含まれています。このデータを使用して署名済み JWT トークンが作成され、IMS との間で IMS アクセストークンと交換されます。その後、このアクセストークンをベアラー認証トークンとして使用して、AEM as a Cloud Service にリクエストを行うことができます。資格情報はデフォルトで 1 年後に期限切れになりますが、必要に応じて更新できます。[ 資格情報の更新 ](#refresh-credentials) を参照してください。
+IMS 組織管理者の役割を持ち、AEM オーサー上の「AEM ユーザー」または「AEM 管理者」製品プロファイルのメンバーでもあるユーザーは、AEM as a Cloud Service 資格情報を生成できます。その資格情報は後で、AEM as a Cloud Service 環境管理者の役割を持つユーザーに取得され、サーバーにインストールされることになるので、秘密鍵として慎重に取り扱う必要があります。この JSON 形式のファイルには、AEM as a Cloud Service API との統合に必要なすべてのデータが含まれています。このデータを使用して署名済み JWT トークンが作成され、IMS との間で IMS アクセストークンと交換されます。その後、このアクセストークンをベアラー認証トークンとして使用して、AEM as a Cloud Service にリクエストを行うことができます。資格情報はデフォルトで 1 年後に期限切れになりますが、必要に応じて更新できます。[資格情報の更新](#refresh-credentials)を参照してください。
 
 サーバー間フローは次のステップで構成されます。
 
@@ -69,11 +69,11 @@ AEM as a Cloud Service の Developer Console にアクセスできるユーザ�
 >
 >IMS 組織管理者（通常は Cloud Manager 経由で環境をプロビジョニングしたユーザー）は、AEM オーサーの AEM ユーザーまたは AEM 管理者の製品プロファイルのメンバーでもある必要があり、Developer Console にアクセスします。次に、「**サービス資格情報を生成**」ボタンをクリックする必要があります。これにより、資格情報が生成され、後で AEM as a Cloud Service 環境への管理者権限を持つユーザーによって取得されます。IMS 組織管理者がこのタスクを実行していない場合は、IMS 組織管理者の役割が必要であることを通知するメッセージが表示されます。
 
-### AEM 以外のサーバーへの AEM サービス資格情報のインストール {#install-the-aem-service-credentials-on-a-non-aem-server}
+### AEM サーバー以外での AEM サービス資格情報のインストール {#install-the-aem-service-credentials-on-a-non-aem-server}
 
 AEM に対して呼び出しを行う AEM 以外のアプリケーションは、AEM as a Cloud Service 資格情報にアクセスしてそれをシークレットとして扱える必要があります。
 
-### JWT トークンの生成とアクセストークンとの交換  {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
+### JWT トークンを生成してアクセストークンと交換する {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
 資格情報を使用して、Adobe IMS サービスへの呼び出しで JWT トークンを作成し、24 時間有効なアクセストークンを取得します。
 
@@ -119,7 +119,7 @@ AEM のこのテクニカルアカウントユーザーには、通常の方法�
 
 ## 開発者フロー {#developer-flow}
 
-開発者は、AEM as a Cloud Service 開発環境に対してリクエストを行う AEM 以外のアプリケーションの開発インスタンス（ラップトップ上で動作するか他でホストされている）を使用してテストを行う必要があります。ただし、開発者は必ずしも IMS 管理者の役割の権限を持ってはいないので、通常のサーバー間フローで説明されている JWT ベアラーを開発者が生成できるとは想定できません。したがって、アドビは、開発者がアクセスできる AEM as a Cloud Service 環境へのリクエストで使用できるアクセストークンを直接生成するメカニズムを提供します。
+開発者は、AEM as a Cloud Service 開発環境に対してリクエストを行う AEM 以外のアプリケーションの開発インスタンス（ラップトップ上で動作するか他でホストされている）を使用してテストを行う必要があります。ただし、開発者は必ずしも IMS 管理者役割の権限を持ってはいないので、アドビは通常のサーバー間フローで説明されている JWT ベアラーを開発者が生成できるとは想定できません。したがって、アドビは、開発者がアクセスできる AEM as a Cloud Service 環境へのリクエストで使用できるアクセストークンを直接生成するメカニズムを提供します。
 
 AEM as a Cloud Service 開発者コンソールの使用に必要な権限については、[開発者ガイドラインドキュメント](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)を参照してください。
 

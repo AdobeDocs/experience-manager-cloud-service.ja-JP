@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1576'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -137,7 +137,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 >[!TIP]
 >
->ホットキー `l` （文字 l）を使用して、アドレスバーを開きます。
+>ホットキー `l`（文字 l）を使用して、アドレスバーを開きます。
 
 >[!NOTE]
 >
@@ -185,11 +185,11 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 >[!TIP]
 >
->ホットキー `o` （文字 o）を使用して、アプリのプレビューを開きます。
+>ホットキー `o`（文字 o）を使用して、アプリのプレビューを開きます。
 
 >[!TIP]
 >
->アプリのプレビュー URL [ カスタマイズ可能 ](/help/implementing/universal-editor/customizing.md#custom-preview-urls)。
+>アプリのプレビュー URL は[カスタマイズできます。](/help/implementing/universal-editor/customizing.md#custom-preview-urls)
 
 #### 公開 {#publish}
 
@@ -203,11 +203,11 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 #### 省略記号 {#ellipsis}
 
-その他の標準オプションには、「。..」ボタンからアクセスできます。
+省略記号ボタンを使用すると、その他の標準オプションにアクセスできます。
 
 ![省略記号ボタン](assets/ellipsis.png)
 
-例えば、ページを非公開にする機能（[**Publish** button](#publish) のアクションを逆にする）には、「。..」ボタンからアクセスできます。
+例えば、ページを非公開にする機能（つまり、「[**公開**」ボタン](#publish)のアクションを元に戻す）には、省略記号ボタンからアクセスできます。
 
 #### その他のボタン {#additional-toolbar-buttons}
 
@@ -262,17 +262,17 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ##### CF エディターで開く {#edit}
 
-編集時に、選択したコンポーネントのオプションがプロパティパネルに表示され、選択したコンポーネントを編集できます。選択したコンポーネントがコンテンツフラグメントの場合は、「**CF エディターで開く** ボタンを選択することもできます。
+編集時に、選択したコンポーネントのオプションがプロパティパネルに表示され、選択したコンポーネントを編集できます。選択したコンポーネントがコンテンツフラグメントの場合は、「**CF エディターで開く**」ボタンを選択することもできます。
 
-![CF エディターで開くアイコン ](assets/open-in-cf-editor.png)
+![CF エディターで開くアイコン](assets/open-in-cf-editor.png)
 
-**CF エディターで開く** ボタンをタップまたはクリックすると、[ コンテンツフラグメントエディター ](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) が新しいタブで開きます。 これにより、コンテンツフラグメントエディターのすべての機能にアクセスして、関連するコンテンツフラグメントを編集できます。
+「**CF エディターで開く**」ボタンをタップまたはクリックすると、[コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)が新しいタブで開きます。これにより、コンテンツフラグメントエディターを最大限に活用して、関連するコンテンツフラグメントを編集できます。
 
 ワークフローのニーズに応じて、コンテンツフラグメントをユニバーサルエディターで編集することも、コンテンツフラグメントエディターで直接編集することもできます。
 
 >[!TIP]
 >
->ホットキー `e` を使用して、選択したコンテンツフラグメントをコンテンツフラグメントエディターで開きます。
+>コンテンツフラグメントエディターで選択したコンテンツフラグメントを開くには、ホットキー `e` を使用します。
 
 ##### 追加 {#add}
 

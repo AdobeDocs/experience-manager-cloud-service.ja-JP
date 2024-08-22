@@ -5,9 +5,9 @@ exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 feature: Developing, Personalization
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '898'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -111,7 +111,7 @@ ContextHub には、JavaScript オブジェクトを操作するための [`Cont
 >
 >ContextHub は、デフォルトでは、パブリッシュサーバーを使用した現在のログインを認識しません。そうしたユーザーは ContextHub では「匿名」と見なされます。
 >
->プロファイルストアを読み込むことで、ContextHub にログインユーザーを認識させることができます。GitHub のサンプルコード [aem-sample-we-retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js) を参照してください。
+>プロファイルストアを読み込むことで、ContextHub にログインユーザーを認識させることができます。[GitHub の aem-sample-we-retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js) のサンプルコードを参照してください。
 
 ### ContextHub のイベンティング {#contexthub-eventing}
 

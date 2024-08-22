@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
 role: Admin, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '552'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 98%
 
 * **ディスパッチャー**&#x200B;は、AEM Dispatcher モジュールで拡張された静的 Web サーバーです。キャッシュ機能と別のセキュリティレイヤーを提供します。**Dispatcher**&#x200B;は、**パブリッシュ**&#x200B;サービスと&#x200B;**プレビュー**&#x200B;サービスの前面に配置されています。
 
-AEM as a Cloud Service プログラム内に、複数の環境つまり、開発、ステージングおよび実稼動環境を持つことができます。環境ごとに固有の&#x200B;**オーサー**&#x200B;サービス、**パブリッシュ**&#x200B;サービスおよび&#x200B;**プレビュー**&#x200B;サービスが用意されることになります。詳しくは、[ 環境の管理 ](/help/implementing/cloud-manager/manage-environments.md) を参照してください。
+AEM as a Cloud Service プログラム内に、複数の環境つまり、開発、ステージングおよび実稼動環境を持つことができます。環境ごとに固有の&#x200B;**オーサー**&#x200B;サービス、**パブリッシュ**&#x200B;サービスおよび&#x200B;**プレビュー**&#x200B;サービスが用意されることになります。詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md)を参照してください。
 
 ## オーサー／パブリッシュ型モデル
 

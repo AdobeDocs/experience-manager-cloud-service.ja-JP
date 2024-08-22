@@ -1,13 +1,13 @@
 ---
 title: サーバーサイド API 用のアクセストークンの生成
-description: セキュアな JWT トークンを生成してサードパーティサーバーおよび AEM as a Cloud Service の間の通信を容易にする方法について説明します。
+description: セキュアな JWT トークンを生成してサードパーティサーバーと AEM as a Cloud Service の間の通信を容易にする方法について説明します。
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2089'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,12 +25,12 @@ ht-degree: 98%
 
 ## サーバー間フロー {#the-server-to-server-flow}
 
-IMS 組織管理者の役割を持つユーザーおよび AEM オーサー上の AEM ユーザーまたは AEM 管理者製品プロファイルのメンバーであるユーザーは、AEM as a Cloud Service から一連の資格情報を生成できます。各資格情報は、証明書（公開鍵）、秘密鍵および `clientId` と `clientSecret` で構成されるテクニカルアカウントを含む JSON ペイロードです。これらの資格情報は後で、AEM as a Cloud Service 環境管理者の役割を持つユーザーによって取得され、AEM 以外のサーバーにインストールされることになるので、秘密鍵として慎重に取り扱う必要があります。この JSON 形式のファイルには、AEM as a Cloud Service API との統合に必要なすべてのデータが含まれています。このデータを使用して、署名済み JWT トークンを作成します。このトークンは、Adobe IMS（Identity Management Services）との間で IMS アクセストークンと交換されます。その後、このアクセストークンをベアラー認証トークンとして使用して、AEM as a Cloud Service にリクエストを行うことができます。資格情報の証明書は、デフォルトで 1 年後に期限切れになりますが、必要に応じて更新できます。[ 資格情報の更新 ](#refresh-credentials) を参照してください。
+IMS 組織管理者の役割を持つユーザーおよび AEM オーサー上の AEM ユーザーまたは AEM 管理者製品プロファイルのメンバーであるユーザーは、AEM as a Cloud Service から一連の資格情報を生成できます。各資格情報は、証明書（公開鍵）、秘密鍵および `clientId` と `clientSecret` で構成されるテクニカルアカウントを含む JSON ペイロードです。これらの資格情報は後で、AEM as a Cloud Service 環境管理者の役割を持つユーザーによって取得され、AEM 以外のサーバーにインストールされることになるので、秘密鍵として慎重に取り扱う必要があります。この JSON 形式のファイルには、AEM as a Cloud Service API との統合に必要なすべてのデータが含まれています。このデータを使用して、署名済み JWT トークンを作成します。このトークンは、Adobe IMS（Identity Management Services）との間で IMS アクセストークンと交換されます。その後、このアクセストークンをベアラー認証トークンとして使用して、AEM as a Cloud Service にリクエストを行うことができます。資格情報の証明書はデフォルトで 1 年後に期限切れになりますが、必要に応じて更新できます。[資格情報の更新](#refresh-credentials)を参照してください。
 
-サーバー間フローは次の手順で構成されます。
+サーバー間フローは次のステップで構成されます。
 
 * Developer Console から AEM as a Cloud Service の資格情報を取得する
-* AEM を呼び出す AEM 以外のサーバーに、AEM as a Cloud Service の資格情報をインストールする
+* AEM を呼び出す AEM 以外のサーバーに AEM as a Cloud Service の資格情報をインストールする
 * JWT トークンを生成し、そのトークンをアドビの IMS API を使用してアクセストークンと交換する
 * アクセストークンをベアラー認証トークンに使用して AEM API を呼び出す
 * AEM 環境のテクニカルアカウントユーザーに適切な権限を設定する

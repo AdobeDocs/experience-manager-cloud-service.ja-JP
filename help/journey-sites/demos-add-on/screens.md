@@ -5,9 +5,9 @@ exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2666'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->AEM Screens デモを Cloud Manager プログラムに追加するには、Screens アドオンが必要です。 [Cloud Managerの新しいプログラムへのScreensのアドオンとしての追加 ](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) を行う方法を説明します。
+>AEM Screens デモを Cloud Manager プログラムに追加するには、Screens アドオンが必要です。 追加方法について詳しくは、[Cloud Manager での新しいプログラムに対する Screens のアドオンとしての追加](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md)を参照してください。
 
 ## これまでの説明内容 {#story-so-far}
 
@@ -176,7 +176,7 @@ API キーを使用して Google Sheets のデータを交換できるように�
 1. シート ID を探します。
 
    * シート ID は、コピーしたシートリンクの `d/` の後、`/edit`.より前のランダムな文字列です。
-   * 次に例を示します。
+   * 例：
       * URL が `https://docs.google.com/spreadsheets/d/1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30/edit#gid=0` の場合
       * シート ID は `1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30`.です。
 

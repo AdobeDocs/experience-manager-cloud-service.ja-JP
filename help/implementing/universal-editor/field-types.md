@@ -5,9 +5,9 @@ exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 9e808f2d4b57d6b1043f2e3e6300a1e37f3cbb35
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1183'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -165,7 +165,7 @@ AEM コンテンツコンポーネントタイプでは、AEM コンテンツピ
 
 >[!ENDTABS]
 
-#### ブーリアン {#boolean}
+#### ブール値 {#boolean}
 
 ブーリアンのコンポーネントタイプは、切り替えスイッチとしてレンダリングされた単純な true／false 値を格納します。追加の検証タイプを提供します。
 
@@ -305,9 +305,9 @@ AEM コンテンツコンポーネントタイプでは、AEM コンテンツピ
 
 >[!NOTE]
 >
->ユニバーサルエディターは [ モデルに基づいてコンテンツフラグメントフィールドを検証 ](/help/assets/content-fragments/content-fragments-models.md#validation) し、正規表現パターンや一意性制約などのデータ整合性ルールを適用できます。
+>ユニバーサルエディターでは、[モデルに基づいてコンテンツフラグメントフィールドを検証](/help/assets/content-fragments/content-fragments-models.md#validation)し、正規表現パターンや一意性制約などのデータ整合性ルールを適用できます。
 >
->これにより、コンテンツが公開される前に、特定のビジネス要件を満たすことが保証されます。
+>これにより、コンテンツを公開する前に、特定のビジネス要件が満たされます。
 
 >[!BEGINTABS]
 

@@ -5,9 +5,9 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4241'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -153,7 +153,7 @@ Setup the CLI configuration necessary to use the RDE commands.
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * 独自の組織 ID は、「組織 ID を表示 [ に記載されている方法を使用して検索でき ](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=ja#concept_EA8AEE5B02CF46ACBDAD6A8508646255) す。
+   * 独自の組織 ID は、[組織 ID の表示](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=ja#concept_EA8AEE5B02CF46ACBDAD6A8508646255)に記載されている方法を使用して検索できます。
 
 1. 次に、以下のプログラム ID を設定します。
 
@@ -167,7 +167,7 @@ Setup the CLI configuration necessary to use the RDE commands.
 
    `aio login`
 
-   この手順では、Cloud Manager **デベロッパー - Cloud Service** 製品プロファイルのメンバーである必要があります。詳しくは、[Cloud Manager製品プロファイルへのチームメンバーの割り当て – 開発者製品プロファイルの割り当て ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) を参照してください。
+   この手順では、Cloud Manager **デベロッパー - Cloud Service** 製品プロファイルのメンバーである必要があります。詳しくは、[Cloud Manager 製品プロファイルへのチームメンバーの割り当て - 開発者製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)を参照してください。
 
 詳細とデモンストレーションについては、[RDE の設定方法（06:24）](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html?lang=ja)のビデオチュートリアルを参照してください。
 </details>
@@ -1005,7 +1005,7 @@ AEM as a Cloud Service での RDE について詳しくは、[設定方法、使
 
 ### 不十分な権限に関するエラー {#insufficient-permissions}
 
-RDE プラグインを使用するには、Cloud Manager **デベロッパー - Cloud Service** 製品プロファイルのメンバーである必要があります。詳しくは、[Cloud Manager製品プロファイルへのチームメンバーの割り当て – 開発者製品プロファイルの割り当て ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) を参照してください。
+RDE プラグインを使用するには、Cloud Manager **開発者 - Cloud Service** 製品プロファイルのメンバーである必要があります。詳しくは、[Cloud Manager 製品プロファイルへのチームメンバーの割り当て - 開発者製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)を参照してください。
 
 また、このデベロッパーの役割を持っていることを、以下のコマンドを実行して Developer Console にログインすることでも確認できます。
 

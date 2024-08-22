@@ -5,9 +5,9 @@ exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2374'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -247,7 +247,7 @@ mvn clean install -PautoInstallSinglePackage
 
 ![text20 ノード](assets/external-spa-text20-node.png)
 
-#### 要件と制限 {#limitations}
+#### 要件と制限事項 {#limitations}
 
 仮想リーフコンポーネントを追加するには、いくつかの要件と制限があります。
 
@@ -362,7 +362,7 @@ mvn clean install -PautoInstallSinglePackage
 
 ## フレームワークの制限 {#framework-limitations}
 
-RemotePage コンポーネントでは、実装が GitHub の [webpack-manifest-plugin](https://github.com/shellscape/webpack-manifest-plugin) のようなアセットマニフェストを提供することを想定しています。 ただし、RemotePage コンポーネントは React フレームワーク（および remote-page-next コンポーネントを介した Next.js）で動作するようにのみテストされているので、Angular など他のフレームワークからのアプリケーションのリモート読み込みはサポートされていません。
+RemotePage コンポーネントでは、実装でアセットマニフェストが指定されることを想定しています。アセットマニフェストの例については、[GitHub の webpack-manifest-plugin](https://github.com/shellscape/webpack-manifest-plugin) を参照してください。ただし、RemotePage コンポーネントは React フレームワーク（および remote-page-next コンポーネントを介した Next.js）で動作するようにのみテストされているので、Angular など他のフレームワークからのアプリケーションのリモート読み込みはサポートされていません。
 
 ## その他のリソース {#additional-resources}
 

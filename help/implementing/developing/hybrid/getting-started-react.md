@@ -5,9 +5,9 @@ exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1127'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ AEM での SPA の動作について詳しくは、次のドキュメントを�
 >
 >SPA 内のコンテンツを作成するには、コンテンツを AEM に格納し、コンテンツモデルによって公開する必要があります。
 >
->AEM 外で開発された SPA については、コンテンツモデルの契約に準拠していない場合、オーサリングをおこなうことはできません。
+>AEM 外で開発された SPA については、コンテンツモデルの契約に準拠していない場合、オーサリングを行うことはできません。
 
 このドキュメントでは、React フレームワークを使用して作成されたシンプルな SPA の構造を順を追って解説し、その仕組みを理解した上で独自の SPA に適用する方法を説明します。
 
@@ -66,7 +66,7 @@ AEM での SPA の動作について詳しくは、次のドキュメントを�
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-詳しくは、GitHub の [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) を参照してください。
+詳しくは、[GitHub の aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) を参照してください。
 
 `aem-clientlib-generator` は、`clientlib.config.js` ファイルで次のように設定されています。
 

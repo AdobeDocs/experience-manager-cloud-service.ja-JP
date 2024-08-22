@@ -5,16 +5,16 @@ feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
 source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '433'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # CDN キャッシュのパージ {#cdn-purge-cache}
 
 パージでは、Adobe CDN キャッシュからオブジェクトが削除されるので、その後のリクエストはキャッシュから提供されるのではなく、キャッシュミスとして接触チャネルに向かいます。
-AEM as a Cloud Service を使用すると、API 呼び出しのパージで使用できる API トークンのパージを設定できます。Cloud Manager Config Pipeline Authentication ディレクティブを使用してこのトークンを設定する方法については、[CDN 資格情報と認証の設定 ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) を参照してください。
+AEM as a Cloud Service を使用すると、API 呼び出しのパージで使用できる API トークンのパージを設定できます。Cloud Manager 設定パイプライン認証ディレクティブを使用してこのトークンを設定する方法については、[CDN 資格情報および認証の設定](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)を参照してください。
 
 サポートされているパージには、次の 3 つのバリエーションがあります。
 
@@ -75,4 +75,4 @@ curl
 
 ## Apache／Dispatcher レイヤーとのインタラクション {#apache-layer}
 
-[ コンテンツ配信フロー ](/help/implementing/dispatcher/overview.md) で説明しているように、キャッシュの有効期限が切れている場合、CDN は Apache/Dispatcher レイヤーからコンテンツを取得します。 つまり、CDN でリソースをパージする前に、コンテンツの新しいバージョンを Dispatcher でも確実に入手できるようにする必要があります。詳しくは、[Dispatcher キャッシュの無効化](/help/implementing/dispatcher/caching.md#disp)も参照してください。
+[コンテンツ配信フロー](/help/implementing/dispatcher/overview.md)で説明されているように、キャッシュの有効期限が切れている場合、CDN は Apache／Dispatcher レイヤーからコンテンツを取得します。つまり、CDN でリソースをパージする前に、コンテンツの新しいバージョンを Dispatcher でも確実に入手できるようにする必要があります。詳しくは、[Dispatcher キャッシュの無効化](/help/implementing/dispatcher/caching.md#disp)も参照してください。

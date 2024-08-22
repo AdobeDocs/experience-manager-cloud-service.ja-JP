@@ -6,9 +6,9 @@ role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2685'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -197,7 +197,7 @@ ht-degree: 99%
 
    ![コンテンツフラグメントの「バリエーションを生成」の表示](assets/cfm-generate-variations5.png)
 
-詳しくは、[ バリエーションの生成 ](/help/generative-ai/generate-variations.md) を参照してください。
+詳しくは、[バリエーションを生成](/help/generative-ai/generate-variations.md)を参照してください。
 
 ### バリエーションを削除 {#delete-variation}
 
@@ -249,7 +249,7 @@ ht-degree: 99%
 * [統計](#statistics-rich-text)
 * [比較と同期](#compare-and-synchronize-rich-text)
 
-次に例を示します。
+例：
 
 ![コンテンツフラグメントエディター - 複数行テキスト - 全画面表示切り替え](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
 
@@ -261,7 +261,7 @@ ht-degree: 99%
 
 全画面表示エディターでは、インフロー時と同じ編集オプションを提供しますが、テキスト用のスペースがより広くなります。
 
-次に例を示します。
+例：
 
 ![コンテンツフラグメントエディター - 複数行テキスト - 全画面表示](assets/cf-authoring-multilinetext-fullscreen.png)
 
@@ -269,7 +269,7 @@ ht-degree: 99%
 
 アクション&#x200B;**統計**&#x200B;は、「複数行」フィールドに、テキストに関する様々な情報を表示します。
 
-次に例を示します。
+例：
 
 ![コンテンツフラグメントエディター - 統計](assets/cf-authoring-multilinetext-statistics.png)
 
@@ -281,7 +281,7 @@ ht-degree: 99%
 
 * **メイン**&#x200B;と現在の&#x200B;**バリエーション**&#x200B;の両方のコンテンツを横に並べ、違いをハイライト表示する
 
-* 次の色で違いを示す：
+* 違いは色で示されます。
 
    * 緑は（バリエーションに）追加されたコンテンツを示します
    * 赤は削除されたコンテンツを示します（バリエーションからの削除）
@@ -373,13 +373,13 @@ AEM ページ、エクスペリエンスフラグメントまたはその他の�
 
 上部のツールバーでリンクアイコンを選択すると、すべての親参照のリストが開きます。
 
-次に例を示します。
+例：
 
 ![コンテンツフラグメントエディター - 参照の表示](assets/cf-authoring-show-references-link.png)
 
 ウィンドウが開き、関連するすべての参照が表示されます。参照を開くには、名前、タイトルまたはリンクアイコンを選択します。
 
-次に例を示します。
+例：
 
 ![コンテンツフラグメントエディター - 参照の表示](assets/cf-authoring-show-references.png)
 
@@ -406,7 +406,7 @@ AEM ページ、エクスペリエンスフラグメントまたはその他の�
 
 「**メイン**」を選択した場合、基になるコンテンツフラグメントモデルの名前が「プロパティ」セクションに表示されます。リンクアイコンを選択すると、モデルが別のタブで開きます。
 
-次に例を示します。
+例：
 
 ![コンテンツフラグメントエディター - コンテンツフラグメントモデルを開く](assets/cf-authoring-open-model.png)
 
@@ -457,7 +457,7 @@ AEM ページ、エクスペリエンスフラグメントまたはその他の�
 
 関連する言語コピーの「**言語プロパティ**」タブの詳細が表示されます。リンクアイコンを選択すると、そのコピーが別のタブで開きます。
 
-次に例を示します。
+例：
 
 ![コンテンツフラグメントエディター - 言語コピーを開く](assets/cf-authoring-open-language-copies.png)
 

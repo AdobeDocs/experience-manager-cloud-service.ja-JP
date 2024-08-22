@@ -5,9 +5,9 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2745'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -142,7 +142,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 この結果、多くのエントリが生成されるので、ログを不必要に長くデバッグログレベルのままにしないでください。
 
-開発時に常に `DEBUG` レベルでログを記録するのが望ましい場合は、実行モードベースの OSGi 設定ターゲティングを使用して、AEM 環境ごとに個別にログレベルを設定できます。次に例を示します。
+開発時に常に `DEBUG` レベルでログを記録するのが望ましい場合は、実行モードベースの OSGi 設定ターゲティングを使用して、AEM 環境ごとに個別にログレベルを設定できます。例：
 
 | 環境 | 実行モード別の OSGi 設定の場所 | `org.apache.sling.commons.log.level` プロパティ値 |
 | - | - | - |
@@ -150,7 +150,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 | ステージ | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN |
 | 実稼動 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERROR |
 
-デバッグファイルの行は、通常は DEBUG で始まり、その後にログレベル、インストーラーのアクション、ログメッセージが示されます。次に例を示します。
+デバッグファイルの行は、通常は DEBUG で始まり、その後にログレベル、インストーラーのアクション、ログメッセージが示されます。例：
 
 ```text
 DEBUG 3 WebApp Panel: WebApp successfully deployed
@@ -184,7 +184,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ユーザーはオーサー層の開発環境では CRXDE Lite にアクセスできますが、ステージ環境や実稼動環境ではアクセスできません。不変リポジトリー（`/libs`、`/apps`）に実行時に書き込むことはできないので、書き込もうとするとエラーが発生します。
 
-代わりに、AEM as a Cloud Service Developer Console からリポジトリブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対してリポジトリへの読み取り専用ビューを提供できます。詳しくは、[ リポジトリブラウザー ](/help/implementing/developing/tools/repository-browser.md) を参照してください。
+代わりに、AEM as a Cloud Service Developer Console からリポジトリブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対してリポジトリへの読み取り専用ビューを提供できます。詳しくは、[リポジトリブラウザー](/help/implementing/developing/tools/repository-browser.md)を参照してください。
 
 AEM as a Cloud Service 開発者環境をデバッグするための一連のツールは、RDE 環境、開発環境、ステージ環境、実稼動環境の AEM as a Cloud Service Developer Console で利用できます。URL は、次のようにオーサーサービス URL またはパブリッシュサービス URL を調整して決定できます。
 
@@ -194,7 +194,7 @@ AEM as a Cloud Service 開発者環境をデバッグするための一連のツ
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
-詳しくは、[ リリース情報 ](/help/release-notes/home.md) を参照してください。
+詳しくは、[リリース情報](/help/release-notes/home.md)を参照してください。
 
 開発者は、ステータス情報を生成し、様々なリソースを解決できます。
 

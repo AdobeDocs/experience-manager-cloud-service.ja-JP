@@ -7,7 +7,7 @@ user-guide-description: Adobe Experience Manager as a Cloud Service の仕組み
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 source-git-commit: a9b7e2fbafcfc4b5592cc95e6bbd1e8e0f631757
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5340'
 ht-degree: 100%
 
@@ -467,7 +467,7 @@ ht-degree: 100%
       + [ビデオアセットのスマートタグ](/help/assets/smart-tags-video-assets.md)
       + [アセットの整理方法](/help/assets/organize-assets.md)
       + [ [!DNL Adobe Stock] アセットを使用する](/help/assets/aem-assets-adobe-stock.md)
-      + [コレクションの管理](/help/assets/manage-collections.md)
+      + [コレクションを管理](/help/assets/manage-collections.md)
       + [メタデータの概要](/help/assets/manage-metadata.md)
       + [ [!DNL Adobe Creative Cloud] との統合](/help/assets/aem-cc-integration-best-practices.md)
       + [メタデータの追加と編集](/help/assets/meta-edit.md)
@@ -495,7 +495,7 @@ ht-degree: 100%
       + [検索ファセット](/help/assets/search-facets.md)
       + [Assets HTTP API](/help/assets/mac-api-assets.md)
       + [Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)
-      + [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+      + [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
       + [プレースメント専用レンディションの生成](/help/assets/configure-fpo-renditions.md)
       + [アセットレポート](/help/assets/asset-reports.md)
       + [カスケードメタデータ](/help/assets/cascading-metadata.md)
@@ -601,7 +601,7 @@ ht-degree: 100%
       + [レンディションの表示と管理](/help/assets/renditions.md)
       + [アセットメタデータの管理](/help/assets/metadata-assets-view.md)
       + [アセットを共有する](/help/assets/share-links-for-assets-view.md)
-      + [コレクションの管理](/help/assets/manage-collections-assets-view.md)
+      + [コレクションを管理](/help/assets/manage-collections-assets-view.md)
       + [アセット、フォルダー、コレクションの監視](/help/assets/manage-notifications-assets-view.md)
       + [レポートの管理](/help/assets/manage-reports-assets-view.md)
       + [タグを管理](/help/assets/tagging-management-assets-view.md)

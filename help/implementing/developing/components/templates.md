@@ -5,9 +5,9 @@ exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3268'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -322,7 +322,7 @@ ht-degree: 99%
 
 * `/apps/settings/wcm/template-types`
 
-カスタマイズしたテンプレートタイプの定義は、ユーザー定義フォルダー（推奨）または `global` フォルダーに保存してください。次に例を示します。
+カスタマイズしたテンプレートタイプの定義は、ユーザー定義フォルダー（推奨）または `global` フォルダーに保存してください。例：
 
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/template-types`
 * `/conf/<my-folder>/settings/wcm/template-types`
@@ -357,7 +357,7 @@ When creating an editable template, the value is copied from the template type t
 
 他のテンプレートの基盤となるテンプレートを作成した場合、このテンプレートをテンプレートタイプとしてコピーできます。
 
-1. 他のページテンプレートと同様にテンプレートを作成します。 [ ページテンプレートの作成 ](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author) を参照してください。 これは、テンプレートタイプの基盤となります。
+1. ページテンプレートの場合と同様にテンプレートを作成します。[ページテンプレートの作成](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author)を参照してください。これは、テンプレートタイプの基盤となります。
 1. CRXDE Lite を使用して、[テンプレートフォルダー](#template-folders)の `templates` ノードから `template-types` ノードに、作成したテンプレートをコピーします。
 1. このテンプレートを[テンプレートフォルダー](#template-folders)の下の `templates` ノードから削除します。
 1. `template-types` ノードの下にあるテンプレートのコピーで、すべての `jcr:content` ノードから `cq:template` および `cq:templateType` プロパティをすべて削除します。
@@ -373,7 +373,7 @@ GitHub のコード
 
 ## テンプレート定義 {#template-definitions}
 
-編集可能テンプレートの定義は、[ユーザー定義フォルダー](#template-folders)（推奨）または `global` フォルダーに格納されます。次に例を示します。
+編集可能テンプレートの定義は、[ユーザー定義フォルダー](#template-folders)（推奨）または `global` フォルダーに格納されます。例：
 
 * `/conf/<my-folder>/settings/wcm/templates`
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/templates`

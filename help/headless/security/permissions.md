@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 role: Admin, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '817'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 97%
 
 >[!TIP]
 >
->IMS およびAEM ユーザー/グループの管理に関する詳細なビデオチュートリアルについては、[AEM as a Cloud Serviceへのアクセスの設定 ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=ja) を参照してください。
+>IMS および AEM のユーザーとグループの管理に関するビデオチュートリアルについて詳しくは、[AEM as a Cloud Service へのアクセスの設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=ja)を参照してください。
 
 AEM で&#x200B;**グループ**&#x200B;を管理するには、**ツール**／**セキュリティ**／**グループ**&#x200B;に移動します。
 

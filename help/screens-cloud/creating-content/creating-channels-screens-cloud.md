@@ -5,9 +5,9 @@ exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 feature: Authoring Screens
 role: Admin, Developer, User
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1102'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 
 この機能を使用すると、チャネルのデフォルトのアクティブ化スケジュールを定義し、ディスプレイのすべての割り当てにデフォルトとして使用できるようになります。これにより、煩雑なスケジュール定義を繰り返す必要がなくなります。
 
-1. [Screens サービスプロバイダー ](https://experience.adobe.com/screens) に移動します。
+1. [Screens サービスプロバイダー](https://experience.adobe.com/screens)に移動します。
 
 ### チャネルのデフォルトの割り当ての詳細を作成 {#create-default}
 

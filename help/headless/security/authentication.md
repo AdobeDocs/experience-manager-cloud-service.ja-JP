@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 role: Admin, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '231'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -41,4 +41,4 @@ Authorization: Bearer <access_token>
 
 つまり、このユーザーアカウントは、そのアカウントに GraphQL クエリの実行に必要な権限があることを確認する必要があります。
 
-これらの権限は、ローカルインスタンスで GraphiQL を使用して確認できます。詳しくは、[ ヘッドレスコンテンツの権限に関する考慮事項 ](/help/headless/security/permissions.md) を参照してください。
+これらの権限は、ローカルインスタンスで GraphiQL を使用して確認できます。詳しくは、[ヘッドレスコンテンツの権限に関する考慮事項](/help/headless/security/permissions.md)を参照してください。

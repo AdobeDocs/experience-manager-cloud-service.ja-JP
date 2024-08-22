@@ -13,9 +13,9 @@ thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2342'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -436,7 +436,7 @@ IDE と生成されたプロジェクトに戻ります。
 
    ![Webpack Dev Server ティーザーの変更](../assets/style-cif-component/webpack-dev-server-teaser-changes.png)
 
-   ただし、変更は AEM にまだデプロイされていません。[ ソリューションファイルをここからダウンロード ](../assets/style-cif-component/_productteaser.scss) できます。
+   ただし、変更は AEM にまだデプロイされていません。[ソリューションファイルは、こちらからダウンロード](../assets/style-cif-component/_productteaser.scss)できます。
 
 1. コマンドラインターミナルから、Maven スキルを使用して AEM にアップデートをデプロイします。
 

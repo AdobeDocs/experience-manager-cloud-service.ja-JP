@@ -5,9 +5,9 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
 source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2831'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -592,7 +592,7 @@ Dispatcher を含む Apache レイヤーログは、Dispatcher を保持する D
    * Apache HTTPD Web サーバーエラーログ - `httpd_error.log`
    * Dispatcher ログ - `dispatcher.log`
 
-ログは端末の出力にも直接表示できます。ほとんどの場合、これらのログは DEBUG で出力されるもので、Docker の実行時に Debug レベルをパラメーターとして渡すことで実現できます。次に例を示します。
+ログは端末の出力にも直接表示できます。ほとんどの場合、これらのログは DEBUG で出力されるもので、Docker の実行時に Debug レベルをパラメーターとして渡すことで実現できます。例：
 
 `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 
@@ -628,7 +628,7 @@ CDN ログは、新しいサポートチケットリクエストの Splunk に�
 * Splunk HEC エンドポイントアドレス。このエンドポイントには有効な SSL 証明書が存在し、公にアクセス可能である必要があります。
 * Splunk のインデックス
 * Splunk のポート
-* Splunk の HEC トークン。詳しくは、[HTTP イベントコレクターの例 ](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) を参照してください。
+* Splunk の HEC トークン。詳しくは、[HTTP イベントコレクターの例 ](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples)を参照してください。
 
 上記のプロパティは、関連するプログラム／環境タイプの組み合わせごとに指定する必要があります。例えば、開発、ステージング、実稼動の各環境を希望する場合は、次に示す 3 組の情報を提供する必要があります。
 

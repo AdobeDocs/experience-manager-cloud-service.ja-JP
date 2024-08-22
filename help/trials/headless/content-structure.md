@@ -7,9 +7,9 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1003'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ Adventure のタイトルを入力するフィールドは既に存在します�
 
 >[!TIP]
 >
->**Adventure**&#x200B;モデルは、AEM の WKND サンプルサイトをベースにしています。[ アドベンチャー **モデルを使用しているコンテンツを確認するには ](https://wknd.site/us/en/adventures/yosemite-backpacking.html) こちら** WKND サイトにアクセスします。
+>**Adventure**&#x200B;モデルは、AEM の WKND サンプルサイトをベースにしています。[こちらの WKND サイトにアクセス](https://wknd.site/us/en/adventures/yosemite-backpacking.html)して、**アドベンチャー**&#x200B;モデルを使用するコンテンツを確認できます。
 
 上記と同じ手順に従って、これらのフィールドを追加します。設定する必要があるプロパティだけが異なります。
 

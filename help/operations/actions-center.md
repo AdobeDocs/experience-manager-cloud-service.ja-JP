@@ -5,9 +5,9 @@ exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1045'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ AEM as Cloud Service では、即時対応を求められる重大なインシ�
 
 ## 設定 {#configuration}
 
-アクションセンターのメールCloud Serviceを受信するには、[ 通知プロファイル ](/help/journey-onboarding/notification-profiles.md) の説明に従って、製品プロファイル（「インシデント通知 – 通知」および「プロアクティブCloud Service – 通知」）を作成します。 また、組織の適切な Adobe ID をこれらのプロファイルに割り当てます。 これにより、管理者は、これらの電子メール通知を受信する対象ユーザーを決定できます。
+受信するアクションセンターのメール通知を設定するには、[通知プロファイル](/help/journey-onboarding/notification-profiles.md)の説明に従って、「インシデント通知 - Cloud Service」製品プロファイルおよび「事前通知 - Cloud Service」製品プロファイルを作成します。また、組織の適切な Adobe ID をこれらのプロファイルに割り当てます。 これにより、管理者は、これらの電子メール通知を受信する対象ユーザーを決定できます。
 
 >[!NOTE]
 >アクションセンターの電子メール通知は組織レベルで機能するので、サブスクライバーは、すべてのプログラムとプログラム内の環境に関する通知を受信します。
@@ -65,7 +65,7 @@ AEM as a Cloud Service の通知には複数のタイプがありますが、次
 |---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | 運用上のインシデント | 即時対応を求められる重大なインシデント | 「インシデント通知 - Cloud Service」製品プロファイルに割り当てられたユーザー | X |
 | プロアクティブなレコメンデーション | 予定しておくべき最適化 | 「事前通知 - Cloud Service」製品プロファイルに割り当てられたユーザー | X |
-| Cloud Manager のパイプラインステータス | パイプラインのステータスに関する情報 | ビジネスオーナー、プログラムマネージャーまたはデプロイメントマネージャーの役割を持ち、[Experience Cloudの環境設定で「その他」チェックボックスが選択されているユーザー ](https://experience.adobe.com/preferences)[ 通知 ](/help/implementing/cloud-manager/notifications.md) を参照してください。 |                           |
+| Cloud Manager のパイプラインステータス | パイプラインのステータスに関する情報 | ビジネスオーナー、プログラムマネージャーまたはデプロイメントマネージャーの役割を持ち、[Experience Cloud の環境設定](https://experience.adobe.com/preferences)で「その他」チェックボックスがオンになっているユーザー。[通知](/help/implementing/cloud-manager/notifications.md)を参照してください。 |                           |
 
 ## サポートされている通知タイプ {#supported-notification-types}
 

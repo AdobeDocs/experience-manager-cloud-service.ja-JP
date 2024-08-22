@@ -5,9 +5,9 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
 source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2053'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -223,11 +223,11 @@ ht-degree: 98%
 
 **1** `mt.yaml` などの名前のファイルを作成します。
 
-**2** `config` または類似の名前の最上位フォルダーの下の任意の場所にファイルを配置します。詳しくは、[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md#folder-structure) を参照してください。
+**2** [設定パイプラインの使用](/help/operations/config-pipeline.md#folder-structure)で説明されているように、`config` または類似の名前の最上位フォルダーの下のどこかにファイルを配置します。
 
 **3** - 設定ファイルで次のプロパティを宣言します。
 
-* データノードの上のいくつかのプロパティ – 説明については、[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md#common-syntax) を参照してください。 `kind`プロパティの値は *MaintenanceTasks* に、バージョンは *1* に設定する必要があります。
+* データノードの上のいくつかのプロパティ -- 説明については、[設定パイプラインの使用](/help/operations/config-pipeline.md#common-syntax)を参照してください。`kind`プロパティの値は *MaintenanceTasks* に、バージョンは *1* に設定する必要があります。
 
 * `versionPurge` と `auditLogPurge` オブジェクトの両方を含むデータオブジェクト。
 

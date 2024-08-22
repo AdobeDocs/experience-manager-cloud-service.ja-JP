@@ -7,9 +7,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1403'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
 ターゲットデプロイメントは、AEM アプリケーションの選択した部分のコードのみをデプロイします。このようなデプロイメントでは、次のいずれかのタイプのコードを&#x200B;**含む**&#x200B;よう選択できます。
 
 * **設定** - AEM 環境の様々な機能の設定を行います。
-   * ログ転送、パージ関連のメンテナンスタスク、様々な CDN 設定など、サポートされる設定のリストと、それらが適切にデプロイされるようにリポジトリで管理するには、[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md) を参照してください。
+   * ログ転送、パージ関連のメンテナンスタスク、様々な CDN 設定を含むサポートされている設定のリストと、これらが適切にデプロイされるようにリポジトリで管理する方法について詳しくは、[設定パイプラインの使用](/help/operations/config-pipeline.md)を参照してください。
    * ターゲットのデプロイメントパイプラインを実行している場合、設定は、パイプラインで定義した環境、リポジトリ、分岐に保存されていれば、デプロイされます。
    * 設定パイプラインは、常に 1 つの環境に 1 つしか存在できません。
 * **フロントエンドコード** - AEM アプリケーションのフロントエンド用に JavaScript と CSS を設定します。

@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
 source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 87%
 
 1. 以下の構文の節を参照して、`cdn.yaml` または類似の名前のファイルを作成します。
 
-1. [ 設定パイプラインの使用 ](/help/operations/config-pipeline.md#folder-structure) で説明されているように、ファイルを *config* などの名前の最上位フォルダーの下のどこかに配置します。
+1. [設定パイプラインの使用](/help/operations/config-pipeline.md#folder-structure)で説明されているように、*config* または類似の名前の最上位フォルダーの下のどこかにファイルを配置します。
 
-1. [ 設定パイプラインの使用 ](/help/operations/config-pipeline.md#managing-in-cloud-manager) の説明に従って、Cloud Managerで設定パイプラインを作成します。
+1. [設定パイプラインの使用](/help/operations/config-pipeline.md#managing-in-cloud-manager)の説明に従って、Cloud Manager で設定パイプラインを作成します。
 
 1. 設定をデプロイします。
 
@@ -47,7 +47,7 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
-データノードの上のプロパティについての説明は、[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md#common-syntax) を参照してください。 kind プロパティの値は *CDN* に設定し、`version` プロパティは *1* に設定する必要があります。
+データノード上のプロパティの説明について詳しくは、[設定パイプラインの使用](/help/operations/config-pipeline.md#common-syntax)を参照してください。kind プロパティの値は *CDN* に設定し、`version` プロパティは *1* に設定する必要があります。
 
 
 | 名前 | 許可されたプロパティ | 意味 |

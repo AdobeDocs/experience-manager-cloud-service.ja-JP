@@ -5,9 +5,9 @@ exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '978'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ AEM での SPA の動作について詳しくは、次のドキュメントを�
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-詳しくは、GitHub の [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) を参照してください。
+詳しくは、[GitHub の aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) を参照してください。
 
 `aem-clientlib-generator` は、`clientlib.config.js` ファイルで次のように設定されています。
 

@@ -6,9 +6,9 @@ role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 solution: Experience Manager Sites
 source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '762'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 96%
 MSM で誤った動作やエラーと思われる問題が発生している場合は、トラブルシューティングを開始し、詳細なトラブルシューティングをおこなう前に、以下を確認してください。
 
 * 問題や質問が既に解決されている可能性があるので、[MSM に関する FAQ](#faq) を確認してください。
-* いくつかのヒントと、特定の誤解を明確にするために、[MSM のベストプラクティス ](best-practices.md) を確認してください。
+* いくつかのヒントと、特定の誤解を解く説明については、[MSM のベストプラクティス](best-practices.md)を参照してください。
 
 ## ブループリントとライブコピーに関する詳細な情報を見つける {#advanced-info}
 
@@ -68,7 +68,7 @@ MSM とライブコピーに関するよくある質問を以下に示します�
 
 MSM 同期アクションは詳細に設定できます。ロールアウト中に変更されるプロパティまたはコンポーネントは、それらの設定のプロパティに直接依存します。
 
-このトピックについて詳しくは、[MSM のベストプラクティス ](best-practices.md) を参照してください。
+このトピックについて詳しくは、[MSM のベストプラクティス](best-practices.md)を参照してください。
 
 ### 作成者グループのロールアウト権限を削除する方法を教えてください。 {#remove-rollout-permissions}
 

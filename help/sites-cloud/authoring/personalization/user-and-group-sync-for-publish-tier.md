@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1343'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -129,7 +129,7 @@ AEM as a Cloud Service では cookie ベースのスティッキーセッショ�
 
 ## 権限（クローズドユーザーグループ） {#permissions-closed-user-groups}
 
-Publish層のアクセスポリシー（クローズドユーザーグループ（CUG）とも呼ばれます）は、AEM オーサーで定義されます。[ クローズドユーザーグループの作成 ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=ja#applying-your-closed-user-group-to-content-pages) を参照してください。 一部のユーザーから web サイトの特定のセクションまたはページを制限するには、ここで説明されているように AEM オーサーを使用して、必要に応じて CUG を適用し、パブリッシュ層に複製します。
+パブリッシュ層アクセスポリシー（クローズドユーザーグループ（CUG）とも呼ばれる）は、AEM オーサーで定義されます。[クローズドユーザーグループの作成](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=ja#applying-your-closed-user-group-to-content-pages)を参照してください。一部のユーザーから web サイトの特定のセクションまたはページを制限するには、ここで説明されているように AEM オーサーを使用して、必要に応じて CUG を適用し、パブリッシュ層に複製します。
 
 * ユーザーが SAML を使用して ID プロバイダー（IdP）の認証でログインすると、認証ハンドラーはユーザーのグループメンバーシップ（パブリッシュ層の CUG と一致する必要がある）を識別し、リポジトリーレコードを介してユーザーとグループの関連付けを保持します。
 * IdP 統合を使用せずにログインを完了した場合、カスタムコードは同じリポジトリー構造の関係を適用できます。

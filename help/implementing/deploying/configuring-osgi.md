@@ -5,9 +5,9 @@ feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 role: Admin
 source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3321'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -104,7 +104,7 @@ AEM as a Cloud Service の実行モードは、環境のタイプとサービス
 
 Adobe Experience Manager as a Cloud Service で使用できる OSGi 設定値は 3 種類あります。
 
-1. **インライン値**：OSGi 設定にハードコーディングされ、Git に保存される値です。次に例を示します。
+1. **インライン値**：OSGi 設定にハードコーディングされ、Git に保存される値です。例：
 
    ```json
    {
@@ -112,7 +112,7 @@ Adobe Experience Manager as a Cloud Service で使用できる OSGi 設定値は
    }
    ```
 
-1. **シークレット値**：セキュリティ上の理由から Git に保存してはいけない値です。次に例を示します。
+1. **シークレット値**：セキュリティ上の理由から Git に保存してはいけない値です。例：
 
    ```json
    {
@@ -120,7 +120,7 @@ Adobe Experience Manager as a Cloud Service で使用できる OSGi 設定値は
    } 
    ```
 
-1. **環境固有値**：開発環境間で変化する値なので、実行モードで正確にターゲットを設定できません（Adobe Experience Manager as a Cloud Service には 1 つの `dev` 実行モードのみ存在するため）。次に例を示します。
+1. **環境固有値**：開発環境間で変化する値なので、実行モードで正確にターゲットを設定できません（Adobe Experience Manager as a Cloud Service には 1 つの `dev` 実行モードのみ存在するため）。例：
 
    ```json
    {
@@ -128,7 +128,7 @@ Adobe Experience Manager as a Cloud Service で使用できる OSGi 設定値は
    }
    ```
 
-   1 つの OSGi 設定ファイルで、これらの設定値タイプを任意に組み合わせて使用できます。次に例を示します。
+   1 つの OSGi 設定ファイルで、これらの設定値タイプを任意に組み合わせて使用できます。例：
 
    ```json
    {
@@ -180,7 +180,7 @@ Adobe Experience Manager as a Cloud Service では、セキュリティ上の理
 JSON 形式の OSGi 設定ファイルは、AEM プロジェクト内から直接手動で書き込むことができます。これは、よく知られている OSGi コンポーネント、特に、設定を定義した同じ開発者により設計および開発されたカスタム OSGi コンポーネントに対して、OSGi 設定をすばやく作成する方法です。この方法は、同じ OSGi コンポーネントの設定を様々な実行モードフォルダーにコピー／貼り付け、更新する場合にも使用できます。
 
 1. IDE で `ui.apps` プロジェクトを開き、新しい OSGi 設定が有効となる実行モードをターゲットに設定する config フォルダー（`/apps/.../config.<runmode>`）を探すか作成します。
-1. この config フォルダーで、`<PID>.cfg.json` ファイルを作成します。PID は OSGi コンポーネントの永続 ID です。通常は、OSGi コンポーネント実装の完全なクラス名になります。次に例を示します。
+1. この config フォルダーで、`<PID>.cfg.json` ファイルを作成します。PID は OSGi コンポーネントの永続 ID です。通常は、OSGi コンポーネント実装の完全なクラス名になります。例：
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 OSGi 設定ファクトリのファイル名には `<factoryPID>-<name>.cfg.json` 命名規則を使用します。
 1. 新しい `.cfg.json` ファイルを開き、[JSON OSGi 設定形式](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)に従って、OSGi プロパティと値のペアのキー／値の組み合わせを定義します。
@@ -218,7 +218,7 @@ AEM SDK Quickstart Jar の AEM Web コンソールは、OSGi コンポーネン�
 
 ### インライン値 {#inline-values}
 
-インライン値は、標準の JSON 構文に従って、標準の名前と値のペアとして形式設定されます。次に例を示します。
+インライン値は、標準の JSON 構文に従って、標準の名前と値のペアとして形式設定されます。例：
 
 ```json
 {
@@ -322,7 +322,7 @@ OSGi プロパティで、オーサーとパブリッシュで異なる値が必
 * [実行モードの解決](#runmode-resolution)のセクションで説明したように、`config.author` と `config.publish` の別個の OSGi フォルダーを使用する必要があります。
 * 独立した変数名を作成する場合、次の 2 つのオプションを使用できます。
    * 最初のオプション（推奨）：異なる値を定義するように宣言されたすべての OSGI フォルダー（`config.author` と `config.publish` など）で、同じ変数名を使用します。例：
-     `$[env:ENV_VAR_NAME;default=<value>]`：デフォルトは、その層（オーサーまたはパブリッシュ）のデフォルト値です。環境変数を [Cloud Manager API またはクライアントを使用して設定する場合は ](#cloud-manager-api-format-for-setting-properties)[Cloud Manager API リファレンスドキュメント ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) で説明されているように、「service」パラメーターを使用して層を区別します。 「service」パラメーターは、変数の値を適切な OSGI 層にバインドします。「author」、「publish」、「preview」のいずれかです。
+     `$[env:ENV_VAR_NAME;default=<value>]`：デフォルトは、その層（オーサーまたはパブリッシュ）のデフォルト値です。環境変数を [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) またはクライアントを使用して設定する場合は、[Cloud Manager API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)で説明されているように、「service」パラメーターを使用して層を区別します。「service」パラメーターは、変数の値を適切な OSGI 層にバインドします。「author」、「publish」、「preview」のいずれかです。
    * 2 つ目のオプション：`author_<samevariablename>` や `publish_<samevariablename>` などのプレフィックスを使用して個別の変数を宣言します。
 
 ### 設定例 {#configuration-examples}
@@ -515,7 +515,7 @@ config.dev
 
 ## プロパティ設定用の Cloud Manager API 形式 {#cloud-manager-api-format-for-setting-properties}
 
-Cloud Manager API とその設定方法について詳しくは ](https://developer.adobe.com/experience-cloud/cloud-manager/docs/)Adobe Developer Web サイトの [Adobe Cloud Manager} を参照してください。
+Cloud Manager API とその設定方法について詳しくは、[Adobe Developer web サイトの Adobe Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/docs/) を参照してください。
 
 >[!NOTE]
 >
@@ -523,7 +523,7 @@ Cloud Manager API とその設定方法について詳しくは ](https://develo
 
 >[!TIP]
 >
->また、Cloud Manager を使用して環境変数を設定できます。詳しくは、[Cloud Manager環境変数 ](/help/implementing/cloud-manager/environment-variables.md) を参照してください。
+>また、Cloud Manager を使用して環境変数を設定できます。詳しくは、[Cloud Manager 環境変数](/help/implementing/cloud-manager/environment-variables.md)を参照してください。
 
 ### API を使用した値の設定 {#setting-values-via-api}
 
@@ -595,7 +595,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 >[!NOTE]
 >
->Adobe I/O CLI 用のCloud Manager プラグインを使用した値の設定方法について詳しくは、[GitHub の aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) を参照してください。
+>Adobe I/O CLI の Cloud Manager プラグインを使用して値を設定する方法について詳しくは、[GitHub の aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) を参照してください。
 
 ### 変数の数 {#number-of-variables}
 

@@ -5,9 +5,9 @@ exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1907'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 
 これらの改善に伴い、AEM as a Cloud Service と比較して、AEM のオンプレミスインストールと Adobe Managed Services の間にいくつかの違いが導入されました。
 
-次の表の項目リストは、AEM as a Cloud Service への移行に大きく関わる変更点を集めたものです。[Adobe Experience Manager as a Cloud Serviceの主な変更点 ](/help/release-notes/aem-cloud-changes.md) の完全なリストを参照してください。
+次の表の項目リストは、AEM as a Cloud Service への移行に大きく関わる変更点を集めたものです。[Adobe Experience Manager as a Cloud Service の主な変更点](/help/release-notes/aem-cloud-changes.md)の完全なリストを参照してください。
 
 <table>
 <thead>

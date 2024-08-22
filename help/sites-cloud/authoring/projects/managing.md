@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '876'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -92,7 +92,7 @@ AEM には次のテンプレートが始めから用意されていて、プロ�
 
    ![タイルへの項目の追加](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. タイルの作成時と同様にして、タイルに項目を追加します。詳しくは、[ プロジェクトタイル ](/help/sites-cloud/authoring/projects/overview.md#project-tiles) を参照してください。 この例では、別のワークフローが 1 つ追加されました。
+1. タイルの作成時と同様にして、タイルに項目を追加します。詳しくは、[プロジェクトタイル](/help/sites-cloud/authoring/projects/overview.md#project-tiles)を参照してください。この例では、別のワークフローが 1 つ追加されました。
 
 ### タイルを開く {#opening-a-tile}
 

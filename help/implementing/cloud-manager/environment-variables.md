@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '988'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -132,4 +132,4 @@ ht-degree: 99%
 
 ### パイプライン変数 {#pipeline}
 
-環境変数に加えて、ビルドフェーズで公開されるパイプライン変数もあります。パイプライン変数について詳しくは、「ビルド環境 [ を参照し ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables) ください。
+環境変数に加えて、ビルドフェーズで公開されるパイプライン変数もあります。パイプライン変数について詳しくは、[ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)を参照してください。

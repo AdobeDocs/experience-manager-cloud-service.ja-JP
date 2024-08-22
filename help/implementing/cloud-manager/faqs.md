@@ -1,19 +1,19 @@
 ---
-title: Cloud Manager FAQ
+title: Cloud Manager に関する FAQ
 description: AEM as a Cloud Service の Cloud Manager に関するよくある質問への回答を確認できます。
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '974'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# Cloud Manager FAQ {#cloud-manager-faqs}
+# Cloud Manager に関する FAQ {#cloud-manager-faqs}
 
 このドキュメントでは、AEM as a Cloud Service の Cloud Manager に関するよくある質問とその回答を示します。
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 はい。Java™ 11 向けに適切に設定された `maven-toolchains-plugin` を追加します。
 
-プロセスはドキュメント化されています。[ プロジェクト作成ウィザード ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started) を参照してください。
+プロセスはドキュメント化されています。[プロジェクト作成ウィザード](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)を参照してください。
 
 例えば、[wknd プロジェクトサンプルプロジェクトコード](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)を参照してください。
 
@@ -33,7 +33,7 @@ ht-degree: 94%
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 > [Help 1]
 ```
 
-このプラグインを削除する手順については、[SCR 注釈から OSGI 注釈へ ](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/) を参照してください。
+このプラグインを削除する手順については、[SCR 注釈から OSGi 注釈へ](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/)を参照してください。
 
 ## Java™ 8 から Java™ 11 に切り替えた後、RequireJavaVersion に関するエラーでビルドが失敗します。どうしたらいいでしょうか。 {#build-fails-requirejavaversion}
 
@@ -61,11 +61,11 @@ Cloud Manager ビルドの場合、`maven-enforcer-plugin` がこのエラーで
 
 また、ステージおよび実稼働ビルドまたはデプロイメントのバージョンを `-SNAPSHOT` に設定することもできます。Cloud Manager では、適切なバージョン番号を自動的に設定し、Git にタグを作成します。このタグは、必要に応じて後で参照できます。
 
-バージョン処理について詳しくは、[Maven プロジェクトのバージョン処理 ](/help/implementing/cloud-manager/managing-code/project-version-handling.md) を参照してください。
+バージョン処理について詳しくは、[Maven プロジェクトのバージョン処理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)を参照してください。
 
 ## パッケージとバンドルのバージョン管理は、ステージングと実稼動のデプロイメントでどのように機能しますか？ {#snapshot-version}
 
-ステージング環境および実稼動環境でのデプロイメントでは、自動バージョンが生成されます。[Maven プロジェクトのバージョン処理 ](/help/implementing/cloud-manager/managing-code/project-version-handling.md) を参照してください。
+ステージングと実稼動のデプロイメントでは、自動バージョンが生成されます。[Maven プロジェクトのバージョン処理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)を参照してください。
 
 ステージングと実稼働のデプロイメントでカスタムバージョン管理を行うには、`1.0.0` のように、3 つの部分から成る適切な Maven バージョンを設定します。実稼動にデプロイするたびに、バージョンを増やします。
 

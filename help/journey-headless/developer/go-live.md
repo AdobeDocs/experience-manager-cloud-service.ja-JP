@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1071'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ AEM ヘッドレスアプリケーションのローンチに備えるには、�
 
 アップデートが Cloud Manager にアップロードされたら、[Cloud Manager の CI／CD パイプライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja#how-to-use)を使用して、アップデートを AEM as a Cloud Service にデプロイできます。
 
-コードのデプロイを開始するには、Cloud Manager CI/CD パイプラインを使用します。このパイプラインについて詳しくは、[Cloud Managerおよびパッケージマネージャーを使用したコンテンツパッケージのデプロイ ](/help/implementing/deploying/overview.md) を参照してください。
+コードのデプロイを開始するには、Cloud Manager CI/CD パイプラインを使用します。このパイプラインについて詳しくは、[Cloud Manager およびパッケージマネージャーを使用したコンテンツパッケージのデプロイ](/help/implementing/deploying/overview.md)を参照してください。
 
 ## パフォーマンスの監視 {#performance-monitoring}
 

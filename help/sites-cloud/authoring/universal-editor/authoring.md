@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1297'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 84%
 
 ## コンテンツの編集 {#editing-content}
 
-コンテンツの編集はシンプルで直感的です。エディターでコンテンツにマウスを移動すると、編集可能なコンテンツが薄い青いアウトラインでハイライト表示されます。
+コンテンツの編集はシンプルで直感的です。エディターでコンテンツにマウスカーソルを重ねると、編集可能なコンテンツが薄い青色のアウトラインでハイライト表示されます。
 
 ![編集可能コンテンツが青いボックスでハイライト表示される](assets/editable-content.png)
 
@@ -49,7 +49,7 @@ ht-degree: 84%
 
 ![コンテンツを編集](assets/editing-content.png)
 
-薄い青色のアウトラインは、選択を示す濃い青色のアウトラインに変わり、カーソルが表示されます。 変更を加え、Enter キーまたは Return キーを押すか、テキストボックスの外側を選択して変更を保存します。
+薄い青色のアウトラインは、選択を示す濃い青色のアウトラインに変わり、カーソルが表示されます。変更を行ったら、Enter キーまたは Return キーを押すか、テキストボックスの外側を選択して、変更を保存します。
 
 テキストコンポーネントを選択すると、その詳細がプロパティパネルに表示されます。[](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)パネル内のテキストを編集することもできます。
 
@@ -67,19 +67,19 @@ ht-degree: 84%
 
 #### コンテキストメニュー {#context-menu}
 
-リッチテキストブロックの上にコンテキストメニューが開き、コンテキストの基本的な書式設定オプションが表示されます。 スペースの都合上、一部のオプションが省略記号ボタンの後ろに隠れている場合があります。
+コンテキストメニューは、リッチテキストブロック上で開き、コンテキスト内の基本的な書式設定オプションを提供します。スペースの都合上、一部のオプションが省略記号ボタンの後ろに隠れている場合があります。
 
-![ リッチテキストのコンテキストメニュー ](assets/rich-text-context-menu.png)
+![リッチテキストコンテキストメニュー](assets/rich-text-context-menu.png)
 
-フォーカスが編集されたフィールドを離れると、変更は自動的に保存されます。
+編集されたフィールドからフォーカスが離れると、変更は自動的に保存されます。
 
 #### プロパティパネル {#properties-rail}
 
-[ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) には、選択したテキストの項目が表示されます。 エントリをタップすると、テキストを編集するための大きいキャンバスが表示されるダイアログが開きます。
+[プロパティパネル](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)には、選択したテキストの項目が表示されます。エントリをタップすると、テキストを編集するための大きいキャンバスを表示するダイアログが開きます。
 
-![ リッチテキスト編集ダイアログ ](assets/rich-text-canvas.png)
+![リッチテキスト編集ダイアログ](assets/rich-text-canvas.png)
 
-変更を破棄または保存するには、それぞれ **キャンセル** または **完了** をタップまたはクリックします。
+変更を破棄または保存するには、それぞれ「**キャンセル**」または「**完了**」をタップまたはクリックします。
 
 ### メディアの編集 {#edit-media}
 
@@ -106,19 +106,19 @@ ht-degree: 84%
 
 フォーカスがプロパティパネルの編集されたフィールドを離れると、変更は自動的に保存されます。
 
-[ コンテンツフラグメントエディター ](/help/sites-cloud/administering/content-fragments/authoring.md) でコンテンツフラグメントを編集する場合は、代わりに、プロパティパネルの [**CF エディターで開く** ボタン ](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) をタップまたはクリックします。
+代わりにコンテンツフラグメントを[コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md)で編集する場合は、プロパティパネルの [**CF エディターで開く**&#x200B;ボタン](/help/sites-cloud/authoring/universal-editor/navigation.md#edit)をタップまたはクリックします。
 
 >[!TIP]
 >
->ホットキー `e` を使用して、コンテンツフラグメントエディターで選択したコンテンツフラグメントを編集します。
+>コンテンツフラグメントエディターで選択したコンテンツフラグメントを編集するには、ホットキー `e` を使用します。
 
 ワークフローのニーズに応じて、コンテンツフラグメントをユニバーサルエディターで編集することも、コンテンツフラグメントエディターで直接編集することもできます。
 
 >[!NOTE]
 >
->ユニバーサルエディターは [ モデルに基づいてコンテンツフラグメントフィールドを検証 ](/help/assets/content-fragments/content-fragments-models.md#validation) し、正規表現パターンや一意性制約などのデータ整合性ルールを適用できます。
+>ユニバーサルエディターでは、[モデルに基づいてコンテンツフラグメントフィールドを検証](/help/assets/content-fragments/content-fragments-models.md#validation)し、正規表現パターンや一意性制約などのデータ整合性ルールを適用できます。
 >
->これにより、コンテンツが公開される前に、特定のビジネス要件を満たすことが保証されます。
+>これにより、コンテンツを公開する前に、特定のビジネス要件が満たされます。
 
 ### コンテナへのコンポーネントの追加 {#adding-components}
 

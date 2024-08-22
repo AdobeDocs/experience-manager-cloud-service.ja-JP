@@ -5,9 +5,9 @@ exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '677'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ GraphQL API を使用する前に、GraphQL エンドポイントを作成する
    /content/cq:graphql/<configuration-name>/endpoint
    ```
 
-GraphQL エンドポイントの有効化について詳しくは、[AEMのGraphQL エンドポイントの管理 ](/help/headless/graphql-api/graphql-endpoint.md) を参照してください。
+GraphQL エンドポイントを有効にする方法について詳しくは、[AEM の GraphQL エンドポイントを管理](/help/headless/graphql-api/graphql-endpoint.md)を参照してください。
 
 ## GraphQL と GraphiQL を使用したクエリコンテンツ
 

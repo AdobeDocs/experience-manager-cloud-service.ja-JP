@@ -5,9 +5,9 @@ exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
 source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1080'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 >[!INFO]
 >
->この機能は、コンテンツ転送ツール（CTT）バージョン 1.8.x リリース以降で使用できるようになります。AEM Cloud Service のターゲット環境は、バージョン 6158 以降を実行している必要があります。また、[事前コピー](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step)を実行するようにソース環境をセットアップする必要があります。検証機能は、ソース上の azcopy.config ファイルを探します。このファイルが見つからない場合、検証は実行されません。azcopy.config ファイルの設定方法について詳しくは、[ 大規模なコンテンツリポジトリーの処理 – azcopy.config ファイルの設定 ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file) を参照してください。
+>この機能は、コンテンツ転送ツール（CTT）バージョン 1.8.x リリース以降で使用できるようになります。AEM Cloud Service のターゲット環境は、バージョン 6158 以降を実行している必要があります。また、[事前コピー](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step)を実行するようにソース環境をセットアップする必要があります。検証機能は、ソース上の azcopy.config ファイルを探します。このファイルが見つからない場合、検証は実行されません。azcopy.config ファイルを設定する方法について詳しくは、[大規模なコンテンツリポジトリの処理 - azcopy.config ファイルの設定](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file)を参照してください。
 
 コンテンツ転送の検証はオプション機能です。この機能を有効にすると、抽出にかかる時間と取り込みにかかる時間の両方が長くなります。この機能を使用するには、次の手順に従って、ソース AEM 環境のシステムコンソールで有効にします。
 

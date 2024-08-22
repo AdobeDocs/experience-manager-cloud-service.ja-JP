@@ -5,9 +5,9 @@ exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 feature: Commerce Integration Framework
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '284'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ HTTP ヘッダーの値は、プロジェクトのクラウドサービス設定
 
 ## 制限 {#restrictions}
 
-このサービスでは、標準のヘッダー名を含め、任意のヘッダー名を定義することができますが、設定することはできません。つまり、この機能を使用して標準の HTTP ヘッダーを上書きすることはできません。制限付きヘッダー名のリストは、[mdn web docs - HTTP headers](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers) にあります。 これらに加えて、使用できないヘッダーが 2 つあります。
+このサービスでは、標準のヘッダー名を含め、任意のヘッダー名を定義することができますが、設定することはできません。つまり、この機能を使用して標準の HTTP ヘッダーを上書きすることはできません。制限付きヘッダー名のリストは、[mdn web docs - HTTP ヘッダー](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers)にあります。これらに加えて、使用できないヘッダーが 2 つあります。
 
 * 「Store」 - CIF で Adobe Commerce ストアを識別するために使用
 * 「Preview-Version」 - CIF がステージングされた製品を取得するために使用
