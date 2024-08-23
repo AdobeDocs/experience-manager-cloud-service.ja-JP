@@ -4,8 +4,8 @@ description: ユニバーサルエディターへのアクセスと操作の基�
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
-workflow-type: ht
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 100%
 
@@ -48,7 +48,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->[**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)でページを編集する際、コンソールはページの[テンプレート](/help/sites-cloud/authoring/sites-console/templates.md)に適したエディター（このドキュメントで説明するユニバーサルエディターや[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)）を開きます。
+>[**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)でページを編集する際、コンソールはページの[テンプレート](/help/sites-cloud/authoring/page-editor/templates.md)に適したエディター（このドキュメントで説明するユニバーサルエディターや[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)）を開きます。
 
 ### 直接アクセス {#accessing-directly}
 

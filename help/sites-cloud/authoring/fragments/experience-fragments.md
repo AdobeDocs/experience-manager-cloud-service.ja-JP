@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '2099'
 ht-degree: 100%
@@ -95,7 +95,7 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
 
   >[!NOTE]
   >
-  >[テンプレートエディター](/help/sites-cloud/authoring/sites-console/templates.md)を使用すると、独自のテンプレートを作成できます。
+  >[テンプレートエディター](/help/sites-cloud/authoring/page-editor/templates.md)を使用すると、独自のテンプレートを作成できます。
 
 WKND プロジェクトでは、`Contributors` に従って一部のエクスペリエンスフラグメントを構造化します。また、使用される構造は、マルチサイト管理（言語コピーを含む）などの他の機能の使用方法の例も示します。
 

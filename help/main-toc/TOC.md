@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a9b7e2fbafcfc4b5592cc95e6bbd1e8e0f631757
-workflow-type: ht
-source-wordcount: '5340'
-ht-degree: 100%
+source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
+workflow-type: tm+mt
+source-wordcount: '5348'
+ht-degree: 99%
 
 ---
 
@@ -319,7 +319,6 @@ ht-degree: 100%
          + [ページプロパティ](/help/sites-cloud/authoring/sites-console/page-properties.md)
          + [ページのプレビュー](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [ページの公開](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
-         + [ページテンプレート](/help/sites-cloud/authoring/sites-console/templates.md)
          + [ページのバージョン](/help/sites-cloud/authoring/sites-console/page-versions.md)
          + [ページの差分](/help/sites-cloud/authoring/sites-console/page-diff.md)
          + [タグの使用](/help/sites-cloud/authoring/sites-console/tags.md)
@@ -330,6 +329,7 @@ ht-degree: 100%
          + [ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)
          + [エディターサイドパネル](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
          + [ページの編集](/help/sites-cloud/authoring/page-editor/edit-content.md)
+         + [ページテンプレート](/help/sites-cloud/authoring/page-editor/templates.md)
          + [ページ注釈の追加](/help/sites-cloud/authoring/page-editor/annotations.md)
          + [リッチテキストエディター](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
          + [レスポンシブレイアウト](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
@@ -344,6 +344,7 @@ ht-degree: 100%
          + [ユニバーサルエディターを使用したコンテンツのオーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [ユニバーサルエディターを使用したコンテンツの公開](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [ユニバーサルエディターでのコンテンツの継承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+         + [ページテンプレート](/help/edge/wysiwyg-authoring/templates.md)
       + フラグメント {#fragments}
          + [コンテンツフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [エクスペリエンスフラグメント](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -886,6 +887,8 @@ ht-degree: 100%
       + [コンテンツモデリング](/help/edge/wysiwyg-authoring/content-modeling.md)
       + [表形式のデータとスプレッドシート](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [既存のプロジェクトと Edge 配信](/help/edge/wysiwyg-authoring/existing-projects.md)
+      + [分類データの管理](/help/edge/wysiwyg-authoring/taxonomy.md)
+      + [WIP サイト機能](/help/edge/wysiwyg-authoring/wip-features.md)
    + ドキュメントベースのオーサリング {#document-authoring}
       + [オーサリング](/help/edge/docs/authoring.md)
       + [一括メタデータ](/help/edge/docs/bulk-metadata.md)

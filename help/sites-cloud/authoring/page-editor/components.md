@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 100%
@@ -50,4 +50,4 @@ WCM コアコンポーネントと共に、[アダプティブフォームコア
 
 ### テンプレートの設定 {#configuring-templates}
 
-ページが最新の編集可能な推奨テンプレートに基づいている場合は、[テンプレートを編集](/help/sites-cloud/authoring/sites-console/templates.md)して、コンポーネントを有効／無効にしたり、特定のコンポーネントのパラメーターを編集したりできます。
+ページが最新の編集可能な推奨テンプレートに基づいている場合は、[テンプレートを編集](/help/sites-cloud/authoring/page-editor/templates.md)して、コンポーネントを有効／無効にしたり、特定のコンポーネントのパラメーターを編集したりできます。

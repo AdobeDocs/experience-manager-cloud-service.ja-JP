@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 100%
@@ -118,7 +118,7 @@ Web サイトの構造は、コンテンツページを保持するツリーと�
 
 ## テンプレート {#templates}
 
-AEM では、[テンプレート](/help/sites-cloud/authoring/sites-console/templates.md)は、作成中のあらゆる新規ページの基礎として使用される特殊なタイプのページです。
+AEM では、[テンプレート](/help/sites-cloud/authoring/page-editor/templates.md)は、作成中のあらゆる新規ページの基礎として使用される特殊なタイプのページです。
 
 テンプレートによって、サムネール画像やその他のプロパティなど、ページの構造が定義されます。例えば、商品ページ、サイトマップおよび問い合わせ先に、それぞれ別のテンプレートを使用することができます。テンプレートは、[コンポーネント](#components)で構成されています。
 

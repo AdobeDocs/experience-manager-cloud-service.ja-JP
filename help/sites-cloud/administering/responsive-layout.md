@@ -5,7 +5,7 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 100%
@@ -223,9 +223,9 @@ AEM では、必要な CSS の一部の生成に LESS を使用するため、�
 
 作成者がさらに多くのレスポンシブグリッドをコンテンツページに追加できるようにするには、ページのレイアウトコンテナコンポーネントを有効にする必要があります。これは、次のいずれかを使用して行います。
 
-* **オーサー環境経由** - [ページテンプレートを編集](/help/sites-cloud/authoring/sites-console/templates.md)して、ページのレイアウトコンテナを有効にします。
+* **オーサー環境経由** - [ページテンプレートを編集](/help/sites-cloud/authoring/page-editor/templates.md)して、ページのレイアウトコンテナを有効にします。
 * **コンポーネント定義** - コンポーネントを定義するときに、`allowedComponent` または静的インクルードを使用します。
 
 ### レイアウトコンテナのグリッドを設定する {#configure-the-grid-of-the-layout-container}
 
-[ページテンプレートを編集することで](/help/sites-cloud/authoring/sites-console/templates.md)、レイアウトコンテナの特定のインスタンスごとに、使用可能な列の数を設定できます。
+[ページテンプレートを編集することで](/help/sites-cloud/authoring/page-editor/templates.md)、レイアウトコンテナの特定のインスタンスごとに、使用可能な列の数を設定できます。

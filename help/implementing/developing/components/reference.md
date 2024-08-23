@@ -4,7 +4,7 @@ description: コンポーネントとその構造の詳細に関するデベロ�
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '3481'
 ht-degree: 100%
@@ -223,9 +223,9 @@ AEM コンポーネントのダイアログ：
 
 ### デザインダイアログ {#design-dialogs}
 
-デザインダイアログは、コンテンツの編集と構成に使用されるダイアログに似ていますが、テンプレート作成者がページテンプレート上のそのコンポーネントのデザインの詳細をプロ構成および提供するためのインターフェイスを提供します。次に、コンテンツ作成者がページテンプレートを使用してコンテンツページを作成します。テンプレートの作成方法の詳細については、[テンプレートドキュメント](/help/sites-cloud/authoring/sites-console/templates.md)を参照してください。
+デザインダイアログは、コンテンツの編集と構成に使用されるダイアログに似ていますが、テンプレート作成者がページテンプレート上のそのコンポーネントのデザインの詳細をプロ構成および提供するためのインターフェイスを提供します。次に、コンテンツ作成者がページテンプレートを使用してコンテンツページを作成します。テンプレートの作成方法の詳細については、[テンプレートドキュメント](/help/sites-cloud/authoring/page-editor/templates.md)を参照してください。
 
-[ページテンプレートの編集時にはデザインダイアログが使用されます](/help/sites-cloud/authoring/sites-console/templates.md)。ただし、すべてのコンポーネントで必要とされるわけではありません。例えば、**タイトル**&#x200B;と&#x200B;**画像コンポーネント**&#x200B;の両方にデザインのダイアログがありますが、**ソーシャルメディア共有コンポーネント**&#x200B;はありません。
+[ページテンプレートの編集時にはデザインダイアログが使用されます](/help/sites-cloud/authoring/page-editor/templates.md)。ただし、すべてのコンポーネントで必要とされるわけではありません。例えば、**タイトル**&#x200B;と&#x200B;**画像コンポーネント**&#x200B;の両方にデザインのダイアログがありますが、**ソーシャルメディア共有コンポーネント**&#x200B;はありません。
 
 ### Coral UI と Granite UI {#coral-and-granite}
 
@@ -280,7 +280,7 @@ Content not found
 
 コンポーネントを定義した上で、使用可能にする必要があります。コンポーネントをテンプレートで使用できるようにするには、テンプレートのレイアウトコンテナのポリシーでそのコンポーネントを有効にする必要があります。
 
-テンプレートの作成方法の詳細については、[テンプレートドキュメント](/help/sites-cloud/authoring/sites-console/templates.md)を参照してください。
+テンプレートの作成方法の詳細については、[テンプレートドキュメント](/help/sites-cloud/authoring/page-editor/templates.md)を参照してください。
 
 ### コンポーネントおよびコンポーネントによって作成されるコンテンツ {#components-and-the-content-they-create}
 

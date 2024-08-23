@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 100%
@@ -26,7 +26,7 @@ AEM サイトテンプレートを使用して、サイト構造と初期コン�
 
 >[!NOTE]
 >
->AEM サイトテンプレートを[ページテンプレート](/help/sites-cloud/authoring/sites-console/templates.md)と混同しないでください。サイトテンプレートは、サイトの全体的な構造を定義します。ページテンプレートは、個々のページの構造と初期コンテンツを定義します。
+>AEM サイトテンプレートを[ページテンプレート](/help/sites-cloud/authoring/page-editor/templates.md)と混同しないでください。サイトテンプレートは、サイトの全体的な構造を定義します。ページテンプレートは、個々のページの構造と初期コンテンツを定義します。
 >
 >AEM サイトテンプレートを [AEM サイトテーマ](site-themes.md)と混同しないでください。AEM サイトテーマには、AEM サイトのスタイル設定情報のみが含まれています。AEM サイトテンプレートは、サイト構造と初期コンテンツを定義し、[クイックサイト作成](create-site.md)を可能にする AEM サイトテーマを含んでいます。
 

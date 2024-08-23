@@ -2,10 +2,13 @@
 title: ページテンプレートの作成
 description: テンプレートは、作成されるページの構造を定義します。テンプレートエディターを使用すると、テンプレートの作成および維持は、もはや開発者だけのタスクではなくなります。
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: c79aeaab9d33f1c2a15f93d58847798c6caff31c
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
-source-wordcount: '4522'
-ht-degree: 99%
+source-wordcount: '4524'
+ht-degree: 100%
 
 ---
 
@@ -13,7 +16,7 @@ ht-degree: 99%
 
 ページを作成する際には、新しいページを作成するためのベースとして使用されるテンプレートを選択する必要があります。テンプレートは、作成されるページの構造、初期コンテンツ、および使用できるコンポーネントを定義します。
 
-**テンプレートエディター** では、テンプレートの作成と管理は開発者だけが行うタスクではありません。 ある種のパワーユーザーも、**テンプレート作成者**&#x200B;と呼ばれ、関与することができます。環境の設定、クライアントライブラリの作成、使用されるコンポーネントの作成は今でも開発者が行う必要がありますが、これら基本となる部分が一度配置されると、**テンプレート作成者**&#x200B;が開発プロジェクトなしにテンプレートを作成して構成できるようになります。
+**テンプレートエディター**&#x200B;により、テンプレートを作成して管理することは、開発者のみのタスクではなくなりました。ある種のパワーユーザーも、**テンプレート作成者**&#x200B;と呼ばれ、関与することができます。環境の設定、クライアントライブラリの作成、使用されるコンポーネントの作成は今でも開発者が行う必要がありますが、これら基本となる部分が一度配置されると、**テンプレート作成者**&#x200B;が開発プロジェクトなしにテンプレートを作成して構成できるようになります。
 
 **テンプレートコンソール**&#x200B;により、テンプレート作成者は次の操作を実行できます。
 
@@ -78,7 +81,7 @@ ht-degree: 99%
    * [構造](#editing-a-template-structure-template-author) - テンプレートで作成されたページでは変更できない定義済みのコンテンツ。
    * [初期コンテンツ](#editing-a-template-initial-content-author) - テンプレートで作成されたページで変更可能な定義済みのコンテンツ。
    * [レイアウト](#editing-a-template-layout-template-author) - 広範なデバイスに対応させるために使用します。
-   * [スタイル](/help/sites-cloud/authoring/features/style-system.md) - テンプレートおよびそのコンポーネントで使用されるスタイルを定義します。
+   * [スタイル](/help/sites-cloud/authoring/page-editor/style-system.md) - テンプレートおよびそのコンポーネントで使用されるスタイルを定義します。
 * ページ作成時に使用するために[テンプレートを有効にします](#enabling-a-template-template-author)。
 * Web サイトの必要なページまたはブランチのために[テンプレートを許可します。](#allowing-a-template-author)
 * パブリッシュ環境で利用できるようにするために[テンプレートを公開](#publishing-a-template-template-author)します。
@@ -184,7 +187,7 @@ ht-degree: 99%
 
 1. **テンプレートコンソール**&#x200B;で、テンプレートを選択します。
 1. ツールバーから「**有効**」または「**無効**」を選択して、確認ダイアログで再び選択します。
-1. これで[新しいページを作成](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)する際にテンプレートを使用できます。ただし、ほとんどの場合は要件に従って[テンプレートを編集](#editing-templates-template-authors)する必要があります。
+1. これで[新しいページを作成](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)する際にテンプレートを使用できます。ただし、ほとんどの場合は要件に従って[テンプレートを編集](#editing-templates-template-authors)する必要があります。
 
 >[!NOTE]
 >
@@ -194,7 +197,7 @@ ht-degree: 99%
 
 テンプレートは、特定のページブランチに対して使用可能または使用不可にすることができます。
 
-1. テンプレートを使用できるようにするブランチのルートページの[ページプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)を開きます。
+1. テンプレートを使用できるようにするブランチのルートページの[ページプロパティ](/help/sites-cloud/authoring/sites-console/page-properties.md)を開きます。
 1. 「**詳細**」タブを開きます。
 1. **テンプレート設定**&#x200B;で「**フィールドを追加**」を使用してテンプレートへのパスを指定します。
 
@@ -270,7 +273,7 @@ ht-degree: 99%
 
 #### レイアウト {#template-layout}
 
-[レイアウト](#editing-a-template-layout-template-author)では、必要なデバイスの形式に合わせたテンプレートのレイアウトを事前定義できます。テンプレートオーサリングの&#x200B;**レイアウト**&#x200B;モードには、ページオーサリングの&#x200B;[**レイアウト**&#x200B;モードと同じ機能があります](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)。
+[レイアウト](#editing-a-template-layout-template-author)では、必要なデバイスの形式に合わせたテンプレートのレイアウトを事前定義できます。テンプレートオーサリングの&#x200B;**レイアウト**&#x200B;モードには、ページオーサリングの&#x200B;[**レイアウト**&#x200B;モードと同じ機能があります](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)。
 
 #### ページポリシー {#template-page-policies}
 
@@ -278,9 +281,9 @@ ht-degree: 99%
 
 #### スタイル {#template-styles}
 
-[スタイルシステム](/help/sites-cloud/authoring/features/style-system.md)を使用すると、テンプレート作成者がコンポーネントのコンテンツポリシーのスタイルクラスを定義し、コンテンツ作成者がページでのコンポーネントの編集時にそのスタイルクラスを選択できます。これらのスタイルは、1 つのコンポーネントの別の視覚的バリエーションとして使用することができるので、コンポーネントがより柔軟で扱いやすいものになります。
+スタイルシステムを使用すると、テンプレート作成者がコンポーネントのコンテンツポリシーのスタイルクラスを定義し、コンテンツ作成者がページでのコンポーネントの編集時にそのスタイルクラスを選択できます。これらのスタイルは、1 つのコンポーネントの別の視覚的バリエーションとして使用することができるので、コンポーネントがより柔軟で扱いやすいものになります。
 
-詳しくは、[スタイルシステムのドキュメント](/help/sites-cloud/authoring/features/style-system.md)を参照してください。
+詳しくは、[スタイルシステムのドキュメント](/help/sites-cloud/authoring/page-editor/style-system.md)を参照してください。
 
 ### テンプレートの編集 - 構造 - テンプレート作成者 {#editing-a-template-structure-template-author}
 
@@ -319,7 +322,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->まったく同じではありませんが、テンプレートにコンポーネントやアセットを追加する操作は、[ページをオーサリングする](/help/sites-cloud/authoring/fundamentals/editing-content.md)ときのアクションと数多くの類似点があります。
+>まったく同じではありませんが、テンプレートにコンポーネントやアセットを追加する操作は、[ページをオーサリングする](/help/sites-cloud/authoring/page-editor/edit-content.md)ときのアクションと数多くの類似点があります。
 
 #### コンポーネントのアクション {#component-actions}
 
@@ -536,7 +539,7 @@ ht-degree: 99%
 
 ### テンプレートの編集 - レイアウト - テンプレート作成者 {#editing-a-template-layout-template-author}
 
-デバイスの形式に合わせてテンプレートのレイアウトを定義できます。[テンプレートがページオーサリングと同じように動作するには、レスポンシブレイアウトを使用します。](/help/sites-cloud/authoring/features/responsive-layout.md)
+デバイスの形式に合わせてテンプレートのレイアウトを定義できます。[テンプレートがページオーサリングと同じように動作するには、レスポンシブレイアウトを使用します。](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 
 >[!NOTE]
 >
@@ -611,7 +614,7 @@ ht-degree: 99%
 
 ### テンプレートの編集 - 最初のページのプロパティ - 作成者 {#editing-a-template-initial-page-properties-author}
 
-「**最初のページのプロパティ**」オプションを使用して、結果ページの作成時に使用される最初の[ページプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)を定義できます。
+「**最初のページのプロパティ**」オプションを使用して、結果ページの作成時に使用される最初の[ページプロパティ](/help/sites-cloud/authoring/sites-console/page-properties.md)を定義できます。
 
 1. テンプレートエディターのツールバーで、**ページ情報**／**最初のページのプロパティ**&#x200B;と選択してダイアログを開きます。
 

@@ -4,7 +4,7 @@ description: AEM 単一ページアプリケーション（SPA）エディター
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 100%
@@ -158,7 +158,7 @@ function Home() {
     itemPath='root/responsivegrid' />
    ```
 
-1. 作成した `wknd-spa/components/imagecard` コンポーネントを、[ページテンプレート](/help/sites-cloud/authoring/sites-console/templates.md)内のコンテナコンポーネントに使用できるコンポーネントに追加します。
+1. 作成した `wknd-spa/components/imagecard` コンポーネントを、[ページテンプレート](/help/sites-cloud/authoring/page-editor/templates.md)内のコンテナコンポーネントに使用できるコンポーネントに追加します。
 
 これで、`imagecard` コンポーネントを AEM エディターでコンテナに直接追加できます。
 

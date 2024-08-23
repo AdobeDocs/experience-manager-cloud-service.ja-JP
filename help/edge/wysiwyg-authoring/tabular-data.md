@@ -4,10 +4,10 @@ description: スプレッドシートを使用して、Edge Delivery Services �
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: f8e305f636c7a7247d2a41f6ed25b1715bd8837c
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 98%
+source-wordcount: '970'
+ht-degree: 97%
 
 ---
 
@@ -130,6 +130,7 @@ AEM でスプレッドシートのデータを公開するには、さらにプ�
 * メタデータ
 * ヘッダー
 * 設定
+* [分類](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 「[スプレッドシートを作成](#spreadsheet)」および「[paths.json を更新](#paths-json)」セクションと同じ手順に従い、適切なテンプレートを選択して、`paths.json` ファイルを適切に更新します。
 
@@ -138,6 +139,7 @@ AEM でスプレッドシートのデータを公開するには、さらにプ�
 * 設定：`/.helix/config.json`
 * ヘッダー：`/.helix/headers.json`
 * メタデータ：`/metadata.json`
+* 分類：詳しくは、分類データの管理 [ ドキュメントを参照し ](/help/edge/wysiwyg-authoring/taxonomy.md) ください。
 
 また、任意の列を含む[独自のスプレッドシートを作成](#own-spreadsheet)して、独自に使用することもできます。
 

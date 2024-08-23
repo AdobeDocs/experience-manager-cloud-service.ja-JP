@@ -5,7 +5,7 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 100%
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->[**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)でページを編集すると、コンソールはページの[テンプレート](/help/sites-cloud/authoring/sites-console/templates.md)に適したエディター（このドキュメントで説明するページエディターや、[ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md)）を開きます。
+>[**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)でページを編集すると、コンソールはページの[テンプレート](/help/sites-cloud/authoring/page-editor/templates.md)に適したエディター（このドキュメントで説明するページエディターや、[ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md)）を開きます。
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ AEM ページエディターは、主に次の 3 つのセクションで構成�
 * [ページをロック](/help/sites-cloud/authoring/page-editor/introduction.md#locking-unlocking)
 * [ページを公開](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-pages-1)
 * [ページを非公開](/help/sites-cloud/authoring/sites-console/publishing-pages.md#unpublishing-pages)
-* [テンプレートを編集](/help/sites-cloud/authoring/sites-console/templates.md)
+* [テンプレートを編集](/help/sites-cloud/authoring/page-editor/templates.md)
 * [公開済みとして表示](/help/sites-cloud/authoring/page-editor/introduction.md#view-as-published)
 * [管理画面で表示](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 * [ヘルプ](/help/sites-cloud/authoring/basic-handling.md#accessing-help)
