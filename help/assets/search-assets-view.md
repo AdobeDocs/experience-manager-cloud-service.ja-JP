@@ -4,10 +4,10 @@ description: 詳しくは、AEM Assets ビューでアセットを検索およ�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 940e62432b8234f90c84d6c7a09dd60e643a3ae5
+source-git-commit: f30d9d43de926e3d0d62dba351c75a0c9641c53e
 workflow-type: tm+mt
-source-wordcount: '1908'
-ht-degree: 100%
+source-wordcount: '2002'
+ht-degree: 79%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 100%
 >abstract="検索バーでキーワードを指定するか、ステータス、ファイルタイプ、MIME タイプ、サイズ、作成日、変更日および有効期限に基づいてアセットをフィルタリングして、アセットを検索します。標準フィルターに加えて、カスタムフィルターを適用することもできます。フィルタリングした結果は、保存した検索条件またはスマートコレクションとして保存できます。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=ja#manage-smart-collection" text="スマートコレクションを作成"
 
-[!DNL Assets view] では効果的な検索が可能です。この検索はデフォルトで機能します。フルテキスト検索なので、網羅的に検索できます。この強力な検索機能を使用すると、適切なアセットをすばやく発見できるので、コンテンツベロシティ（コンテンツ創出の速度）の向上に役立ちます。[!DNL Assets view] では、フルテキスト検索を行えるほか、スマートタグ、タイトル、作成日、著作権などのメタデータを検索することもできます。
+[!DNL Assets view] では効果的な検索が可能です。この検索はデフォルトで機能します。 フルテキスト検索なので、網羅的に検索できます。 この強力な検索機能を使用すると、適切なアセットをすばやく発見できるので、コンテンツベロシティ（コンテンツ創出の速度）の向上に役立ちます。[!DNL Assets view] では、フルテキスト検索を行えるほか、スマートタグ、タイトル、作成日、著作権などのメタデータを検索することもできます。
 
-アセットを検索するには：
+アセットを検索するには、
 
 * ページ上部の検索ボックスをクリックします。デフォルトでは、現在参照しているフォルダー内を検索します。次のいずれかの操作を行います。
 
   ![検索ボックス](assets/search-box.png)
 
-   * キーワードを使用して検索します。オプションで、フォルダーを変更することもできます。Return キーを押します。
+   * キーワードを使用して検索します。オプションで、フォルダーを変更することもできます。 Return キーを押します。
 
    * 最近表示されたアセットを直接検索して、操作を開始します。検索ボックス内をクリックし、最近表示されたアセットを候補から選択します。
 
@@ -42,22 +42,22 @@ ht-degree: 100%
 * アセットステータス：`Approved`、`Rejected`、または `No Status` アセットステータスを使用した検索結果のフィルタリング。
 
 * ファイルタイプ：サポートされているファイルタイプ（`Images`、`Documents`、`Videos`）で検索結果をフィルタリングします。
-* MIME タイプ：サポートされている 1 つ以上のファイル形式でフィルタリングします。<!-- TBD:  [supported file formats](/help/assets/supported-file-formats-assets-view.md). -->
+* MIME タイプ：サポートされている 1 つ以上のファイル形式でフィルタリングします。<!-- TBD:  [supported file formats](/help/using/supported-file-formats.md). -->
 * 画像サイズ：画像をフィルタリングするための最小サイズと最大サイズのどちらか一方または両方を指定します。サイズはピクセル単位で指定され、画像のファイルサイズではありません。
 * 作成日：アセットの作成日（メタデータで指定されたもの）。標準の日付形式は `yyyy-mm-dd` です。
 * 変更日：アセットの最終変更日。標準の日付形式は `yyyy-mm-dd` です。
 
 * 有効期限：アセットの `Expired` ステータスに基づいて検索結果をフィルタリングできます。また、アセットの有効期限の日付範囲を指定して、検索結果をさらにフィルタリングすることもできます。
 
-* カスタムフィルター：アセットビューのユーザーインターフェイスに[カスタムフィルターを追加](#custom-filters)できます。標準フィルターに加えて、カスタムフィルターを適用し、検索結果を絞り込むことができます。
+* カスタムフィルター：Assets ビューのユーザーインターフェイスに [ カスタムフィルターを追加 ](#custom-filters) できます。 標準フィルターに加えて、カスタムフィルターを適用し、検索結果を絞り込むことができます。
 
-検索したアセットを、`Name`、`Relevancy`、`Size`、`Modified` および `Created` の昇順または降順に並べ替えることができます。
+検索したアセットを、`Name`、`Relevance`、`Size`、`Modified` および `Created` の昇順または降順に並べ替えることができます。デフォルトでは、検索したアセットは `Relevance` に基づいて並べ替えられます。
 
 ## カスタムフィルターの管理 {#custom-filters}
 
 **必要な権限：** `Can Edit`、`Owner` または管理者。
 
-また、アセットビューで、ユーザーインターフェイスにカスタムフィルターを追加できます。[標準フィルター](#refine-search-results)に加えて、カスタムフィルターを適用し、検索結果を絞り込むことができます。
+また、Assets ビューでは、ユーザーインターフェイスにカスタムフィルターを追加できます。 [標準フィルター](#refine-search-results)に加えて、カスタムフィルターを適用し、検索結果を絞り込むことができます。
 
 アセットビューが提供するカスタムフィルターは次のとおりです。
 
@@ -125,41 +125,51 @@ ht-degree: 100%
 
 [!DNL Experience Manager Assets] 内の [!DNL Adobe Firefly] アセット検索機能を利用して、どのアセットフォルダーにもないアセットを検索できます。これにより、アセットフォルダーに保存されていないアセットをリアルタイムで効率的に生成できます。
 
-### 事前準備
+### 事前準備 {#search-assets-firefly-prereqs}
 
 アクティブな [!DNL Adobe Express] サブスクリプションが必要です。
 
-### アセットの生成
+### アセットの生成 {#generate-assets-firefly}
 
 [!DNL Adobe Firefly] を使用して新しいアセットを生成するには、次の手順に従います。
 
 1. [!DNL AEM Assets] ワークスペースに移動します。
-1. ページ上部の検索バーにアセット名を入力します。<br>
-例えば、キーワード `Bugatti Type 57` を使用してアセットを検索できます。アセットを検索する際に、どのアセットフォルダーにもアセットが存在しないので、結果は見つかりません。
-1. ページ中央の検索バーにアセット名を入力し、「**[!UICONTROL 生成]**」をクリックします。
-   ![Firefly の統合](assets/firefly-integration.jpg)
-   *図：アセットフォルダー内に Bugatti Type 57 に関する結果が見つかりませんでした。* <br>
-新しいアセットが正常に生成されました。
-   ![Firefly の統合](assets/bugatti-type-57.jpg)
-   *図：[!DNL Adobe Firefly] アセット検索機能を使用して、参照アセットが検索されました。* <br>
-これらのアセットを適切なフォルダーにアップロードすると、簡単にアクセスできます。
 
-### アセットのアップロード
+1. 検索バーにアセット名を入力します。 例えば、キーワード `Bugatti Type 57` を使用してアセットを検索できます。 アセットの検索時に、アセットがどのアセットフォルダーにも存在しないので、結果は見つかりません。 AI を使用してアセットを生成するには、「**[!UICONTROL Fireflyを使用して生成]**」をクリックします。 [!DNL Adobe Firefly] 画面が表示されます。
+
+   ![Firefly の統合](assets/firefly-integration.png)
+
+   新しいアセットが正常に生成されます。 さらに、「説明」ボックスに新しいテキストプロンプトを入力して、画像の説明を変更できます。 [ 優れた AI プロンプトを記述して、特別で関連性の高いコンテンツを生成する方法を説明します。](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html) または、[ スタイルの変更や画像のサイズの変更など、他の様々な機能を使用して画像を編集 ](https://helpx.adobe.com/in/firefly/using/text-to-image.html) できます。
+
+   ![Firefly の統合](assets/bugatti-type-57.png)
+
+1. 保存する画像を選択します。 **[!UICONTROL 保存]** をクリックして、アクセスしやすいようにアセットを目的のフォルダーに保存します。
+
+1. アセットを保存フォームが表示されます。 次のフィールドを指定します。
+
+   * 「**名前を付けて保存**」フィールドにファイルの名前を入力します。
+   * 宛先フォルダーを選択します。
+   * プロジェクトまたはキャンペーンの名前、キーワード、チャネル、期間、地域などの詳細を指定します。
+
+   ![Firefly の統合](assets/save-generated-asset.png)
+
+1. **新しいアセットとして保存** をクリックして、アセットを保存します。
+
+### アセットのアップロード {#upload-assets-firefly}
 
 生成したアセットをアセットリポジトリにアップロードするには、次の手順に従います。
 
 1. 「**[!UICONTROL アップロード]**」をクリックします。
 1. アセットをアップロードする必要があるアセットフォルダーを選択し、「**[!UICONTROL フォルダーを選択]**」をクリックします。
    ![アセットをアップロード](assets/upload-asset-firefly.jpg)
-   *図：アセットのアップロード先となるフォルダーを選択します。*
 
 ## 保存済みの検索 {#saved-search}
 
-[!DNL Assets view] の検索機能は非常に使いやすくなっています。検索ボックス内に、キーワードを入力し、Return キーを押せば結果を表示できるます。あるいは、最近検索したキーワードを 1 回クリックするだけですばやく再検索することができます。
+[!DNL Assets view] の検索機能は非常に使いやすくなっています。検索ボックス内では、キーワードを入力して Return キーを押すと結果を表示できるだけでなく、最近検索したキーワードを 1 回クリックするだけですばやく再検索することもできます。
 
 また、アセットのメタデータやタイプに関する特定の条件に基づいて検索結果をフィルタリングすることもできます。特定のフィルターを頻繁に使用する場合、[!DNL Assets view] では、検索性を向上させるために、検索パラメーターを保存できます。その場合、保存済みの検索を選択し、1 回クリックするだけで検索してフィルターを適用することができます。
 
-保存した検索条件を作成するには、アセットを検索し、1 つ以上のフィルターを適用して、[!UICONTROL フィルター]パネルの&#x200B;**[!UICONTROL 別名で保存]**／**[!UICONTROL 保存した検索条件]**&#x200B;をクリックします。また、「**[!UICONTROL 別名で保存]**」をクリックし、「**[!UICONTROL スマートコレクション]**」を選択して、結果をスマートコレクションとして保存することもできます。詳しくは、[スマートコレクションの作成](manage-collections-assets-view.md#create-a-smart-collection)を参照してください。
+保存した検索条件を作成するには、アセットを検索し、1 つ以上のフィルターを適用して、[!UICONTROL フィルター]パネルの&#x200B;**[!UICONTROL 別名で保存]**／**[!UICONTROL 保存した検索条件]**&#x200B;をクリックします。また、「**[!UICONTROL 別名で保存]**」をクリックし、「**[!UICONTROL スマートコレクション]**」を選択して、結果をスマートコレクションとして保存することもできます。詳しくは、[スマートコレクションの作成](manage-collections.md#create-a-smart-collection)を参照してください。
 
 ![スマートコレクションの作成](assets/create-smart-collection.png)
 
@@ -178,7 +188,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 検索結果に表示するアセットを選択し、次の操作を実行できます。
 
-* **類似検索画像**：Assets UI で、メタデータとスマートタグに基づいて類似の画像アセットを検索します。
+* **類似画像を検索**：メタデータとスマートタグに基づいて、Assets UI で類似画像アセットを検索します。
 
 * **詳細**：アセットのプロパティを表示および編集します。
 
@@ -206,29 +216,29 @@ When userA is searching and userB add an asset that matches search results, will
 
 * **タスクを割り当て**：アセットのユーザーにタスクを割り当てます。
 
-* **監視**：アセットに対して実行される[操作を監視](manage-notifications-assets-view.md)します。
+* **監視**：アセットに対して実行される[操作を監視](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/search-assets)します。
 
 ## 最初に検索するホームページの設定 {#configuring-search-first-homepage}
 
-Experience Manager Assets を使用すると、組織のデフォルトのランディングページを選択できます。最初に検索をホームページとして使用する場合、ブランドに合わせて背景画像とロゴ画像を設定し、ページのブランディングを調整するオプションもあります。
+Assets表示を使用すると、組織のデフォルトのランディングページを選択できます。 最初に検索をホームページとして使用する場合、ブランドに合わせて背景画像とロゴ画像を設定し、ページのブランディングを調整するオプションもあります。
 
 最初に検索するホームページを設定するには、次の手順を実行します。
 
 1. **[!UICONTROL 設定]**／**[!UICONTROL 一般設定]**&#x200B;に移動します。
-1. 「**[!UICONTROL 最初に検索]**」を選択します。これにより、最初の検索に関連する設定が開きます。ホームページの[位置](#setting-alignment-search-bar)または[背景画像とロゴ画像の設定](#setting-background-image-and-logo)を設定できます。
+1. 「**[!UICONTROL 最初に検索]**」を選択します。さらに、最初に関連する設定を検索します。 ホームページの [ 配置 ](#setting-alignment-search-bar) または [ 背景とロゴの画像を設定 ](#setting-background-image-and-logo) できます。
 
 ### 検索バーの位置の設定 {#setting-alignment-search-bar}
 
-[!DNL Assets view] を使用すると、検索バーの位置を変更できます。検索バーは中央または上部に表示できます。適切な位置を選択し、「**[!UICONTROL 保存]**」をクリックします。
+検索バ [!DNL Assets view] の配置を変更できます。 検索バーは、中央または上部に表示することができます。 適切な位置を選択し、「**[!UICONTROL 保存]**」をクリックします。
 
 ![最初に検索するホームページの位置](assets/search-first-alignment.png)
 
 ### ホームページの背景画像とロゴ画像の設定 {#setting-background-image-and-logo}
 
-最初に検索するホームページにブランドのロゴ画像と背景画像を追加できます。以下の手順を実行します。
+ブランドのロゴや背景画像を検索用の最初のホームページに追加できます。 以下の手順を実行します。
 
-1. **[!UICONTROL ホームページ]**&#x200B;の「**[!UICONTROL 背景画像とロゴ画像]**」セクションに移動します。
-1. 「**[!UICONTROL 置換]**」をクリックして、既存のアセットリポジトリから画像を参照します。
+1. **[!UICONTROL ホームページ]** の下の **[!UICONTROL 背景とロゴの画像]** セクションに移動します。
+1. **[!UICONTROL 置換]** をクリックして、既存のアセットリポジトリから画像を参照します。
 1. 「**[!UICONTROL 保存]**」をクリックします。変更を[プレビュー](#preview-configured-homepage)して、変更内容を確認します。
 
 ### 設定済みのホームページのプレビュー {#preview-configured-homepage}
@@ -236,7 +246,7 @@ Experience Manager Assets を使用すると、組織のデフォルトのラン
 最初に検索するホームページのレイアウトと書式設定をプレビューして確認できます。**[!UICONTROL プレビュー]**&#x200B;を使用すると、レイアウトを修正したり、要件に応じて変更を加えたりできます。設定済みのホームページをプレビューするには、次の手順を実行します。
 
 1. 「**[!UICONTROL 一般設定]**」をクリックし、「**[!UICONTROL 最初に検索]**」を選択します。
-1. **[!UICONTROL 最初に検索するホームページをカスタマイズ]**&#x200B;に移動し、「**[!UICONTROL プレビュー]**」をクリックします。「**[!UICONTROL ダークテーマ]**」ボタンを切り替えて、ダークテーマまたはライトテーマでホームページをプレビューします。
+1. **[!UICONTROL 最初に検索するホームページをカスタマイズ]**&#x200B;に移動し、「**[!UICONTROL プレビュー]**」をクリックします。**[!UICONTROL ダークテーマ]** ボタンを切り替えて、ホームページを暗いテーマまたは明るいテーマでプレビューします。
 1. 「**[!UICONTROL 閉じる]**」をクリックし、プレビュー画面を閉じます。
 
    ![最初に検索するホームページのプレビュー](/help/assets/assets/search-first-preview.gif)
@@ -258,7 +268,6 @@ Experience Manager Assets でコンテキスト検索にアクセスするには
    ![コンテキスト検索のテキストプロンプト](/help/assets/assets/wknd-contextual-search.png)
 
    [!DNL Experience Manager Assets] に検索結果が表示されます。
-
 
 ### サポートされるフィルター {#supported-filters}
 
@@ -302,7 +311,7 @@ Experience Manager Assets でコンテキスト検索にアクセスするには
 
 **例 3**
 
-**テキストプロンプト**：高さが 1500 および 2500 ピクセルで、過去 1 か月以内に作成された、有効期限が切れておらず、承認された青空の画像が必要です。
+**テキストプロンプト**：高さが 1500 ピクセルと 2500 ピクセルで、過去 1 か月に作成され、有効期限が切れていない青空の画像が必要です。
 
 [!DNL Experience Manager Assets] は、次のフィルターを自動的に適用し、検索結果を表示します。
 
@@ -335,3 +344,5 @@ Experience Manager Assets でコンテキスト検索にアクセスするには
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」 ![ページを編集](assets/do-not-localize/edit-page.png) または「[!UICONTROL イシューを記録]」 ![GitHub イシューを作成](assets/do-not-localize/github-issue.png) を使用してドキュメントのフィードバックを提供する。
 
 * [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&amp;lang=ja#support)に問い合わせる
+
+
