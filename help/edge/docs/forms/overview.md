@@ -4,10 +4,10 @@ description: AEM Forms Edge Delivery Services は、ピーク時のパフォー�
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
+source-git-commit: 5670e0ab7e6cb47bcc2dd7608aa3f01dc4ec0704
 workflow-type: tm+mt
 source-wordcount: '1043'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -104,7 +104,7 @@ WYSIWYG オーサリングには、フォームを作成する WYSIWYG インタ
 * [繰り返し可能なセクションをフォームに追加する](/help/edge/docs/forms/repeatable-forms.md)
 * [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
 * [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
-* [リアルタイムユーザーモニタリング](https://www.aem.live/developer/rum#authentication)
+* [ 実際の使用状況の監視 ](https://www.aem.live/developer/rum#authentication)
 
 <!-- 
 
