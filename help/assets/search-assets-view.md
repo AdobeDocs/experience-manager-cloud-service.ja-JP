@@ -4,7 +4,7 @@ description: 詳しくは、AEM Assets ビューでアセットを検索およ�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: f30d9d43de926e3d0d62dba351c75a0c9641c53e
+source-git-commit: de5aaead0955f997cf5304c3cd1d540b2eded16b
 workflow-type: tm+mt
 source-wordcount: '2002'
 ht-degree: 79%
@@ -149,7 +149,7 @@ ht-degree: 79%
 
    * 「**名前を付けて保存**」フィールドにファイルの名前を入力します。
    * 宛先フォルダーを選択します。
-   * プロジェクトまたはキャンペーンの名前、キーワード、チャネル、期間、地域などの詳細を指定します。
+   * プロジェクトまたはキャンペーンの名前、キーワード、チャネル、期間、地域などの詳細を入力します。
 
    ![Firefly の統合](assets/save-generated-asset.png)
 
