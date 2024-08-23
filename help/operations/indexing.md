@@ -4,10 +4,10 @@ description: AEM as a Cloud Service でのコンテンツの検索とインデ�
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: 65e67225a6a91d871218c12c4696dd281787cd58
+source-git-commit: 4de04b0a2c74406544757f9a92c061abfde5b615
 workflow-type: tm+mt
-source-wordcount: '2449'
-ht-degree: 100%
+source-wordcount: '2531'
+ht-degree: 87%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 100%
 
 ## AEM as a Cloud Service の変更点 {#changes-in-aem-as-a-cloud-service}
 
-AEM as a Cloud Service によって、アドビは AEM インスタンス中心モデルから、Cloud Manager の CI/CD パイプラインによって駆動される、n-x AEM コンテナを持つサービスベースの表示に移行します。単一の AEM インスタンスでインデックスを設定および保守する代わりに、デプロイメントの前にインデックス設定を指定する必要があります。本番環境での設定変更は、CI/CD のポリシーを明らかに破るものです。インデックスの変更についても同じことが言えます。実稼働環境に移行する前にテストおよび再インデックスを指定しない場合、システムの安定性とパフォーマンスに影響を及ぼす可能性があるからです。
+AEM as a Cloud Service によって、アドビは AEM インスタンス中心モデルから、Cloud Manager の CI/CD パイプラインによって駆動される、n-x AEM コンテナを持つサービスベースの表示に移行します。単一の AEM インスタンスでインデックスを設定および保守する代わりに、デプロイメントの前にインデックス設定を指定する必要があります。本番環境での設定変更は、CI/CD のポリシーを明らかに破るものです。インデックスの変更についても同じことが言えます。実稼動環境に移行する前にインデックスの指定、テスト、再作成を行わないと、システムの安定性とパフォーマンスに影響を与える可能性があるからです。
 
 AEM 6.5 以前のバージョンと比較した主な変更点のリストを以下に示します。
 
 1. ユーザーは、単一の AEM インスタンスのインデックスマネージャーにアクセスできなくなり、インデックスのデバッグ、設定または維持ができなくなります。ローカルデプロイメントおよびオンプレミスデプロイメントにのみ使用されます。
 1. ユーザーは、単一の AEM インスタンスのインデックスを変更したり、整合性チェックやインデックス再作成について心配する必要はありません。
 1. 一般に、Cloud Manager の CI／CD パイプラインの品質の高いゲートウェイを回避せず、実稼動環境のビジネス KPI に影響を与えないように、インデックスの変更は実稼動環境に移行する前に開始されます。
-1. 実稼動環境での検索パフォーマンスを含むすべての関連指標は、検索とインデックスのトピックの全体的な表示を提供するために、実行時に顧客が利用できます。
+1. 実稼動環境での検索パフォーマンスを含む、関連するすべての指標は、実行時に、検索とインデックス作成に関するトピックの全体像を提供するために使用できます。
 1. 顧客は、必要に応じてアラートを設定できます。
 1. SRE はシステムの正常性を常に監視し、可能な限り早期にアクションを実行します。
 1. インデックスの設定は、デプロイメントを介して変更されます。インデックス定義の変更は、他のコンテンツの変更と同様に設定されます。
@@ -71,11 +71,11 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 >
 >標準提供のインデックスをカスタマイズする場合（例：`damAssetLucene-8`）、CRX DE パッケージマネージャー（`/crx/packmgr/`）を使用して、最新の標準のインデックス定義を *Cloud Service 環境*&#x200B;にコピーしてください。`damAssetLucene-8-custom-1`（またはそれ以上）に名前を変更し、XML ファイル内にカスタマイズを追加します。これにより、必要な設定が誤って削除されるのを防ぐことができます。例えば、`/oak:index/damAssetLucene-8/tika` の下の `tika` ノードは、AEM Cloud Service 環境にデプロイされたカスタマイズ済みのインデックスで必要ですが、ローカルの AEM SDK には存在しません。
 
-OOTB インデックスをカスタマイズするには、次の命名パターンに従う実際のインデックス定義を含む新しいパッケージを準備します。
+OOTB インデックスをカスタマイズする場合は、次の命名パターンに従った実際のインデックス定義を含む、新しいパッケージを準備します。
 
 `<indexName>-<productVersion>-custom-<customVersion>`
 
-完全にカスタマイズされたインデックスに対して、次の命名パターンに従うインデックス定義を含む新しいインデックス定義パッケージを準備します。
+完全にカスタマイズされたインデックスの場合は、次の命名パターンに従ったインデックス定義を含む、新しいインデックス定義パッケージを準備します。
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
@@ -165,7 +165,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ## プロジェクト設定
 
-Jackrabbit `filevault-package-maven-plugin` のバージョン >= `1.3.2` を使用することを強くお勧めします。プロジェクトに組み込む手順は次のとおりです。
+Jackrabbit `filevault-package-maven-plugin` のバージョン >= `1.3.2` を使用することを強くお勧めします。 プロジェクトに組み込む手順は次のとおりです。
 
 1. トップレベル `pom.xml` のバージョンを更新します。
 
@@ -212,7 +212,7 @@ Jackrabbit `filevault-package-maven-plugin` のバージョン >= `1.3.2` を使
    </plugin>
    ```
 
-3. `ui.apps/pom.xml` および `ui.apps.structure/pom.xml` で `filevault-package-maven-plugin` の `allowIndexDefinitions` および `noIntermediateSaves` オプションを有効にする必要があります。`allowIndexDefinitions` を有効にするとカスタムインデックス定義を使用でき、`noIntermediateSaves` では設定がアトミックに追加されます。
+3. `ui.apps/pom.xml` と `ui.apps.structure/pom.xml` では、`filevault-package-maven-plugin` で `allowIndexDefinitions` オプションと `noIntermediateSaves` オプションを有効にする必要があります。 `allowIndexDefinitions` を有効にするとカスタムインデックス定義を使用でき、`noIntermediateSaves` では設定がアトミックに追加されます。
 
    ファイル名：`ui.apps/pom.xml` および `ui.apps.structure/pom.xml`
 
@@ -308,11 +308,22 @@ Jackrabbit `filevault-package-maven-plugin` のバージョン >= `1.3.2` を使
 | /oak:index/cqPageLucene | はい | はい | いいえ |
 | /oak:index/cqPageLucene-2 | はい | いいえ | はい |
 
+環境は異なるAEM バージョン上にある可能性があることに注意してください。 例：環境 `dev` リリース `X+1` にあり、ステージング環境と実稼動環境はまだリリース `X` にあり、`dev` で必要なテストが実行された後にリリース `X+1` にアップグレードされるのを待っています。 リリース `X+1` に、カスタマイズされた新しいバージョンの product index が付属しており、そのインデックスの新しいカスタマイズが必要な場合は、AEM リリースに基づく環境で設定する必要があるバージョンを次の表に示します。
+
+| 環境（AEM リリースバージョン） | 製品インデックスバージョン | 既存のカスタムインデックスバージョン | 新しいカスタムインデックスバージョン |
+|-----------------------------------|-----------------------|-------------------------------|----------------------------|
+| 開発（X+1） | damAssetLucene-11 | damAssetLucene-11-custom-1 | damAssetLucene-11-custom-2 |
+| ステージ（X） | damAssetLucene-10 | damAssetLucene-10-custom-1 | damAssetLucene-10-custom-2 |
+| 製品（X） | damAssetLucene-10 | damAssetLucene-10-custom-1 | damAssetLucene-10-custom-2 |
+
+
 ### 現在の制限事項 {#current-limitations}
 
 インデックス管理は、`compatVersion` が `2` に設定された `lucene` 型のインデックスに対してのみサポートされています。内部的には、例えば Elasticsearch インデックスなどの他のインデックスが設定され、クエリに使用される場合があります。`damAssetLucene` インデックスに対して書き込まれるクエリは、AEM as a Cloud Serviceでは実際に、このインデックスの Elasticsearch バージョンに対して実行される場合があります。この違いはアプリケーションユーザーには見えませんが、`explain` 機能などの特定のツールでは異なるインデックスがレポートされます。Lucene インデックスと Elasticsearch インデックスの違いについては、[Apache Jackrabbit Oak の Elasticsearch ドキュメント](https://jackrabbit.apache.org/oak/docs/query/elastic.html)を参照してください。顧客が Elasticsearch インデックスを直接設定することはできず、またその必要もありません。
 
 ビルトインアナライザー（製品に付属しているアナライザー）のみがサポートされています。カスタムアナライザーはサポートされていません。
+
+現在、`/oak:index` のコンテンツのインデックス作成はサポートされていません。
 
 最高のオペレーショナルパフォーマンスを得るには、インデックスを過度に大きくしないようにします。 すべてのインデックスの合計サイズを目安にすることができます。開発環境でカスタムインデックスを追加し、標準インデックスを調整した後に、このサイズが 100％を超えて増加する場合は、カスタムインデックスの定義を調整する必要があります。AEM as a Cloud Service を使用すると、システムの安定性とパフォーマンスに悪影響を与える可能性のあるインデックスのデプロイメントを防ぐことができます。
 
@@ -350,30 +361,7 @@ Jackrabbit `filevault-package-maven-plugin` のバージョン >= `1.3.2` を使
 
 次の操作は、カスタムインデックスにのみ適用されます。製品インデックスは AEM で使用されるので、削除できません。
 
-新しいバージョンのアプリケーションでインデックスを削除する場合は、新しい名前で空のインデックス（使用されることがなく、データを含まない空のインデックス）を定義できます。この例では、`/oak:index/acme.product-custom-3` という名前を付けることができます。この名前により、`/oak:index/acme.product-custom-2` インデックスが置き換えられます。システムによって `/oak:index/acme.product-custom-2` が削除された後は、空のインデックス `/oak:index/acme.product-custom-3` を削除できます。このような空のインデックスの例を次に示します。
-
-```xml
-<acme.product-custom-3
-        jcr:primaryType="oak:QueryIndexDefinition"
-        async="async"
-        compatVersion="2"
-        includedPaths="/dummy"
-        queryPaths="/dummy"
-        type="lucene">
-        <indexRules jcr:primaryType="nt:unstructured">
-            <rep:root jcr:primaryType="nt:unstructured">
-                <properties jcr:primaryType="nt:unstructured">
-                    <dummy
-                        jcr:primaryType="nt:unstructured"
-                        name="dummy"
-                        propertyIndex="{Boolean}true"/>
-                </properties>
-            </rep:root>
-        </indexRules>
-</acme.product-custom-3>
-```
-
-標準提供のインデックスをカスタマイズする必要がなくなった場合は、標準提供のインデックス定義をコピーする必要があります。例えば、既に `damAssetLucene-8-custom-3` をデプロイしていて、カスタマイズが不要になり、デフォルトの `damAssetLucene-8` インデックスに戻す場合は、`damAssetLucene-8` のインデックス定義を含んだインデックス `damAssetLucene-8-custom-4` を追加する必要があります。
+カスタマイズされたインデックスは、顧客アプリケーションの新しいバージョンで、顧客リポジトリから削除することで削除できます。 リポジトリから削除されたインデックスは、AEMのクエリには使用されませんが、インスタンスにまだ存在する可能性があります。 定期的に実行されるクリーンアップメカニズムがあり、インスタンスから古いバージョンのインデックスがクリーンアップされます。
 
 ## インデックスとクエリの最適化 {#index-query-optimizations}
 
