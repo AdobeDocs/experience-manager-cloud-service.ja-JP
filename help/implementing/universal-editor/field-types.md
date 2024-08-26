@@ -4,9 +4,9 @@ description: ユニバーサルエディターがプロパティパネルで編�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9e808f2d4b57d6b1043f2e3e6300a1e37f3cbb35
-workflow-type: ht
-source-wordcount: '1183'
+source-git-commit: 8516cf6e9ec080824848a2b84fd669eddfaa3165
+workflow-type: tm+mt
+source-wordcount: '1185'
 ht-degree: 100%
 
 ---
@@ -99,6 +99,7 @@ ht-degree: 100%
 | [コンテナ](#container) | `container` |
 | [コンテンツフラグメント](#content-fragment) | `aem-content-fragment` |
 | [日時](#date-time) | `date-time` |
+| [エクスペリエンスフラグメント](#experience-fragment) | `aem-experience-fragment` |
 | [複数選択](#multiselect) | `multiselect` |
 | [数値](#number) | `number` |
 | [ラジオグループ](#radio-group) | `radio-group` |
