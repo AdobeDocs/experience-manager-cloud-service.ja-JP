@@ -1,13 +1,13 @@
 ---
 title: リモート AEM Assets と AEM Sites の統合
-description: Creative CloudでAEM サイトを設定し、承認済みAEM Assetsに接続する方法を説明します。
-source-git-commit: f6c0e8e5c1d7391011ccad5aa2bad4a6ab7d10c3
+description: AEM Sites を設定して承認済みAEM Assetsに接続する方法を説明します。
+exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
+source-git-commit: e2c0c848c886dc770846d064e45dcc52523ed8e3
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 2%
+source-wordcount: '977'
+ht-degree: 14%
 
 ---
-
 
 # リモート AEM Assets と AEM Sites の統合  {#integrate-approved-assets}
 
@@ -23,7 +23,13 @@ OpenAPI 機能を備えたDynamic Mediaを使用すると、サイト作成者�
 
 OpenAPI 機能を備えたDynamic Mediaには、コンテンツフラグメントでのリモートアセットへのアクセスと使用、リモートアセットのメタデータの取得など、他のいくつかの利点があります。 他の [Connected Assetsと比較した OpenAPI 機能を備えたDynamic Mediaのメリット ](/help/assets/dynamic-media-open-apis-faqs.md) についての詳細をご覧ください。
 
-## 事前準備 {#pre-requisits-sites-integration}
+## 事前準備 {#pre-requisites-sites-integration}
+
+Dynamic Mediaを OpenAPI 機能と共に使用してリモートアセットをサポートするには、次が必要です。
+
+* AEM 6.5 SP 18 以降または AEM as a Cloud Service
+
+* コアコンポーネントリリース 2.23.2 以降
 
 * AEM as a Cloud Service用に次の [ 環境変数 ](/help/implementing/cloud-manager/environment-variables.md#add-variables) を設定します。
 
@@ -31,21 +37,47 @@ OpenAPI 機能を備えたDynamic Mediaには、コンテンツフラグメン�
      `pXXXX` はプログラム ID <br> を参照します
      `eYYYY` は環境 ID を指します
 
-   * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId]
+  これらの変数は、ローカル Sites インスタンスとして機能するAEM as a Cloud Service環境のCloud Manager ユーザーインターフェイスを使用して設定されます。
 
-  または、次の手順に従って、AEM Sites インスタンスでAEM 6.5 の [OSGi 設定 ](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) を指定します。
+   * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId]:IMS クライアント ID を取得するには、Adobeサポートチケットを送信する必要があります。
+
+     または、次の手順に従って、AEM Sites インスタンスでAEM 6.5 の [OSGi 設定 ](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) を指定します。
 
    1. コンソールにログインし、**[!UICONTROL OSGi]/** をクリックするか
-ダイレクト URL を使用する例：`http://localhost:4502/system/console/configMgr`
+ダイレクト URL を使用する例：`https://localhost:4502/system/console/configMgr`
 
-   1. **[!UICONTROL repositoryID]**=&quot;delivery-pxxxxx-eyyyyy.adobeaemcloud.com&quot;と **[!UICONTROL imsClient]**= [IMSClientId] を追加します
-[IMS 認証 ](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html) の詳細情報。
+   1. **Next Generation Dynamic Media Config** （`NextGenDynamicMediaConfigImpl`）の OSGi 設定を次のように行い、値をリモートアセット環境の値に置き換えます。
 
-* リモート DAM AEM as a Cloud Service インスタンスにログインするための IMS アクセス。
+      ```text
+        imsClient="<ims-client-ID>"
+        enabled=B"true"
+        imsOrg="<ims-org>@AdobeOrg"
+        repositoryId="<repo-id>.adobeaemcloud.com"
+      ```
 
-* リモート DAM で「OpenAPI 機能を使用したDynamic Media」トグルをオンにします。
+      `imsOrg` は必須入力ではありません。
+      `repositoryId` = &quot;delivery-pxxxxx-eyyyy.adobeaemcloud.com&quot;
+ここで、`pXXXX` はプログラム ID を表します
+      `eYYYY` は環境 ID を指します
+
+      ![次世代の Dynamic Media 設定 OSGi の設定ウィンドウ](/help/assets/assets/remote-assets-osgi.png)
+
+  [IMS 認証 ](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html) の詳細情報。
+
+  OSGi の設定方法について詳しくは、次のドキュメントを参照してください。
+
+   * AEM as a Cloud Service 用の [Adobe Experience Manager as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ja)
+   * AEM 6.5 用の [OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=ja)
+
+* リモート DAM AEM as a Cloud Service インスタンスにログインするための IMS アクセス。 リモート DAM 環境への IMS アクセス権を持つ Sites オーサーを指します。
 
 * AEM Sites インスタンスに Image v3 コンポーネントを設定します。 コンポーネントが存在しない場合は、[ コンテンツパッケージ ](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.0) をダウンロードしてインストールします。
+
+## HTTPS を設定 {#https}
+
+通常は、HTTP を使用して、すべての実稼動 AEM インスタンスを実行することをお勧めします。ただし、ローカル開発環境がこのように設定されていない場合があります。しかし、OpenAPI 搭載 Dynamic Media を使用するリモートアセットを機能させるには HTTPS が必要です。
+
+[このガイドを使用](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=ja)して、開発環境を含むリモートアセットを使用する場所で HTTPS を設定します。
 
 ## リモート DAM からのアセットへのアクセス {#fetch-assets}
 
@@ -58,7 +90,6 @@ OpenAPI 機能を備えたDynamic Mediaを使用すると、ローカルのAEM S
 AEM Sites インスタンスのAEM ページエディターでリモートアセットを使用するには、次の手順に従います。 統合はAEM as a Cloud ServiceとAEM 6.5 で行えます。
 
 1. **[!UICONTROL Sites]**/_自分の web サイト_ に移動します。ここにAEM **[!UICONTROL Page]** があり、リモートアセットを追加する必要があります。
-1. Web サイトの **[!UICONTROL Sites]** セクションの下にある、リモートアセットを追加する特定の **[!UICONTROL AEM]** ページ）に移動します。
 1. ページを選択し、「**[!UICONTROL 編集（_e_）]**」をクリックします。 AEM **[!UICONTROL ページエディター]** が開きます。
 1. レイアウトコンテナをクリックし、**[!UICONTROL 画像]** コンポーネントを追加します。
 1. **[!UICONTROL 画像]** コンポーネントをクリックし、![ 設定アイコン ](/help/assets/assets/do-not-localize/settings-icon.svg) アイコンをクリックします。
