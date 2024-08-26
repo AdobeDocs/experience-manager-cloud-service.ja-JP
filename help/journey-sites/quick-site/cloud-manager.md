@@ -5,7 +5,7 @@ exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1415d07235641262814e81362c806572bcf582ba
 workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 100%
@@ -112,6 +112,8 @@ Cloud Manager は、AEM as a Cloud Service の必須コンポーネントであ�
 ![クイックサイト作成フロー](assets/qsc-flow.png)
 
 クイックサイト作成ツールを使用する主な利点は、純粋なフロントエンド開発者が実際のカスタマイズのみを担当することです。フロントエンド開発者は、AEM とのやり取りがなく、AEM の知識は必要ありません。
+
+{{add-cm-allowlist-frontend-pipeline}}
 
 ## 次の手順 {#what-is-next}
 

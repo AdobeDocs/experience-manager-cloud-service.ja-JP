@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
-workflow-type: ht
-source-wordcount: '314'
-ht-degree: 100%
+source-git-commit: 1415d07235641262814e81362c806572bcf582ba
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 69%
 
 ---
 
@@ -24,13 +24,53 @@ ht-degree: 100%
 
 AEM as a Cloud Service は、デフォルトでは、インターネット経由でアクセスできます。セキュリティはユーザーの認証および認可によって処理されますが、信頼できる IP アドレスにのみアクセスを制限する方法は IP 許可リストです。
 
-Cloud Manager の IP 許可リストを使用すると、そのような信頼できる IP アドレスのみにアクセスを制限および制御できます。適切な権限を持つ Cloud Manager ユーザーは、信頼できる IP アドレスの [IP 許可リストを作成](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)し、自分のサイトのユーザーがそのアドレスからのみ AEM ドメインにアクセスできるようにすることができます。
+Cloud Manager の IP 許可リストを使用すると、そのような信頼できる IP アドレスのみにアクセスを制限および制御できます。適切な権限を持つCloud Manager ユーザーは、信頼できる IP アドレスを [ 作成して IP 許可リストを追加 ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) し、そのアドレスからのみ、サイトのユーザーがAEM ドメインにアクセスできるようにすることができます。
 
 IP 許可リストを追加すれば、環境内のオーサーサービスとパブリッシュサービスのいずれか一方または両方に対して、ユニットまたはエンティティとして何度でも [IP 許可リストを適用または適用解除](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)することができます。
 
 >[!NOTE]
 >
 >IP 許可リストが適用されない場合、デフォルトでは、すべての IP アドレスが許可されます。IP 許可リストが適用されると、IP 許可リストに記載されている IP アドレス以外は禁止されます。
+
+## フロントエンドパイプラインでのCloud Manager IP許可リストの使用 {#allowlists-frontend-pipeline}
+
+[ フロントエンドパイプライン ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) を使用してサイトを開発する、または使用する場合は、事前に次のCloud Manager IP許可リストを追加する必要があります。
+
+[IP 許可リストを追加 ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist) する際に、*`Cloud Manager`* という名前を付け、以下のアドレスのリストをコピーして IP許可リストダイアログボックスに貼り付けます。
+
+**Cloud Manager の IP 許可リスト**
+
+```text
+52.254.106.192/28
+20.186.185.181
+52.254.106.240/28
+52.254.107.128/28
+52.254.105.192/28
+52.254.106.176/28
+20.186.185.227
+52.254.106.144/28
+52.254.107.64/28
+20.186.185.239
+20.22.83.112
+52.254.107.80/28
+52.254.107.144/28
+52.254.106.224/28
+20.14.241.153
+52.254.107.0/28
+52.254.107.32/28
+52.254.106.208/28
+40.70.154.136/29
+52.254.106.160/28
+52.254.107.16/28
+52.254.106.0/28
+4.152.211.251
+```
+
+フロントエンドパイプラインの実行が中断されないようにするには、このCloud Manager IP 許可リストが追加されていることを確認してください。 次に、オーサー環境にリストを適用します *その前に* パイプラインを有効にします。
+
+[IP許可リストの適用 ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) を参照してください。
+[ フロントエンドパイプラインの有効化 ](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) を参照してください。
+
 
 ## 制限事項 {#limitations}
 

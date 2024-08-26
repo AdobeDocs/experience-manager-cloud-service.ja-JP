@@ -5,10 +5,10 @@ exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
-workflow-type: ht
+source-git-commit: 1415d07235641262814e81362c806572bcf582ba
+workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -16,6 +16,8 @@ ht-degree: 100%
 # IP 許可リストの適用と適用解除 {#apply-allow-list}
 
 IP 許可リストを適用すると、リストの定義に含まれているすべての IP 範囲が環境内のオーサーサービスまたはパブリッシュサービスに関連付けられます。リストの適用を解除すると、この処理の逆になります。
+
+{{add-cm-allowlist-frontend-pipeline}}
 
 ## IP 許可リストの適用 {#applying}
 
@@ -26,10 +28,10 @@ IP 許可リストを適用すると、リストの定義に含まれている�
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインします。
 1. 適切な組織を選択します。
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
-1. **概要**&#x200B;ページから&#x200B;**環境**&#x200B;画面に移動します。
-1. **環境**&#x200B;画面で特定の環境の詳細ページに移動します。
+1. **概要**&#x200B;ページから、**環境**&#x200B;画面に移動します。
+1. **環境** 画面で、特定の環境詳細ページに移動します。
 1. **IP 許可リスト**&#x200B;テーブルに移動します。
-1. テーブルの上部にある入力フィールドを使用すると、IP 許可リストと、その適用先となるオーサーサービスまたはパブリッシュサービスを選択できます。
+1. このテーブルの上部にある入力フィールドを使用すると、IP 許可リストと、その適用先となるオーサーサービスまたはパブリッシュサービスを選択できます。
 IP 許可リストを適用するには、その IP 許可リストが既に Cloud Manager に存在する必要があります。詳しくは、[IP 許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)を参照してください。
 1. 「**適用**」をクリックし、送信を確認します。
 
