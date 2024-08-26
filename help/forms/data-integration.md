@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
 source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '542'
 ht-degree: 100%
 

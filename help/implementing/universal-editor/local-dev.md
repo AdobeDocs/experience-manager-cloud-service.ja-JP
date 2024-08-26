@@ -5,9 +5,9 @@ exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 5a6795056090908652a72730939024e974a9a697
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '819'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -69,25 +69,25 @@ UES_CERT=./certificate.pem
 UES_TLS_REJECT_UNAUTHORIZED=false
 ```
 
-この例でのローカル開発に必要な最小値です。 次の表に、これらと使用可能なその他の値の詳細を示します。
+これらは、この例でのローカル開発に必要な最小値です。これらと使用可能なその他の値の詳細を次の表に示します。
 
 | 値 | オプション | デフォルト | 説明 |
 |---|---|---|---|
-| `UES_PORT` | はい | `8080` | サーバーが実行されているポート |
-| `UES_PRIVATE_KEY` | はい | なし | HTTPS サーバーの秘密鍵へのパス |
-| `UES_CERT` | はい | なし | HTTPS サーバーの認証ファイルのパス |
-| `UES_TLS_REJECT_UNAUTHORIZED` | はい | `true` | 許可されていない TLS 接続を拒否する |
-| `UES_DISABLE_IMS_VALIDATION` | はい | `false` | IMS 検証を無効にする |
-| `UES_ENDPOINT_MAPPING` | はい | 空白 | 内部書き換えのエンドポイントのマッピング <br> 例：`UES_ENDPOINT_MAPPING='[{"https://your-public-facing-author-domain.net": "http://10.0.0.1:4502"}]'`<br> 結果：ユニバーサルエディターサービスは、指定された接続 `https://your-public-facing-author-domain.net` の代わりに `http://10.0.0.1:4502` に接続します |
-| `UES_LOG_LEVEL` | はい | `info` | サーバーのログレベル。使用可能な値は、`silly`、`trace`、`debug`、`verbose`、`info`、`log`、`warn`、`error` および `fatal` です |
+| `UES_PORT` | はい | `8080` | サーバーが動作しているポート |
+| `UES_PRIVATE_KEY` | はい | なし | HTTPS サーバーの秘密鍵のパス |
+| `UES_CERT` | はい | なし | HTTPS サーバーの証明書ファイルのパス |
+| `UES_TLS_REJECT_UNAUTHORIZED` | はい | `true` | 許可されていない TLS 接続を拒否します |
+| `UES_DISABLE_IMS_VALIDATION` | はい | `false` | IMS 検証を無効にします |
+| `UES_ENDPOINT_MAPPING` | はい | 空白 | 内部書き換え用のエンドポイントのマッピング<br>例：`UES_ENDPOINT_MAPPING='[{"https://your-public-facing-author-domain.net": "http://10.0.0.1:4502"}]'`<br>結果：ユニバーサルエディターサービスは、指定された接続 `https://your-public-facing-author-domain.net` ではなく `http://10.0.0.1:4502` に接続します |
+| `UES_LOG_LEVEL` | はい | `info` | サーバーのログレベル。指定可能な値は、`silly`、`trace`、`debug`、`verbose`、`info`、`log`、`warn`、`error` および `fatal` です |
 | `UES_SPLUNK_HEC_URL` | はい | なし | Splunk エンドポイントへの HEC URL |
 | `UES_SPLUNK_TOKEN` | はい | なし | Splunk トークン |
 | `UES_SPLUNK_INDEX` | はい | なし | ログを書き込むインデックス |
-| `UES_SPLUNK_SOURCE` | はい | `universal-editor-service` | Splunk ログのソースの名前 |
+| `UES_SPLUNK_SOURCE` | はい | `universal-editor-service` | Splunk ログでのソースの名前 |
 
 >[!NOTE]
 >
->[2024.08.13 リリース ](/help/release-notes/universal-editor/current.md) より前のユニバーサルエディターでは、`.env` ファイルに次の変数が必要でした。 後方互換性のために、これらの値は 2024 年 10 月 1 日（PT）までサポートされます。
+>[2024.08.13 リリース](/help/release-notes/universal-editor/current.md)より前のユニバーサルエディターでは、`.env` ファイルに次の変数が必要でした。後方互換性を保つために、これらの値は 2024年10月1日（PT）までサポートされます。
 >
 >`EXPRESS_PORT=8000`
 >`EXPRESS_PRIVATE_KEY=./key.pem`
