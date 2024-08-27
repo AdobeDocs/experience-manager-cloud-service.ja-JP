@@ -5,7 +5,7 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1415d07235641262814e81362c806572bcf582ba
+source-git-commit: 96179c5f88e8546c12674e34afd0269c1f196d65
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 69%
@@ -34,7 +34,7 @@ IP 許可リストを追加すれば、環境内のオーサーサービスと�
 
 ## フロントエンドパイプラインでのCloud Manager IP許可リストの使用 {#allowlists-frontend-pipeline}
 
-[ フロントエンドパイプライン ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) を使用してサイトを開発する、または使用する場合は、事前に次のCloud Manager IP許可リストを追加する必要があります。
+[ フロントエンドパイプラインを使用してサイトを開発する ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 場合、または使用する予定の場合は、事前に次のCloud Manager IP許可リストを追加する必要があります。
 
 [IP 許可リストを追加 ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist) する際に、*`Cloud Manager`* という名前を付け、以下のアドレスのリストをコピーして IP許可リストダイアログボックスに貼り付けます。
 

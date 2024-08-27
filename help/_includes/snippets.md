@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8728af7d9baee0c9324c1e9be1ae66d105396c40
+source-git-commit: 7a1181a372928602b8fd0eb4699789217473a94c
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 75%
@@ -133,5 +133,5 @@ ht-degree: 75%
 
 >[!IMPORTANT]
 >
->フロントエンドパイプラインを使用してサイトを開発する場合、または使用する予定の場合は、事前にCloud Manager IP 許可リストを追加する必要があります。
+>フロントエンドパイプラインを使用してサイトを開発する、または使用する場合は、事前にCloud Manager IP 許可リストを追加する必要があります。
 >[ フロントエンドパイプラインでのCloud Manager IP許可リストの使用 ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline) を参照してください。
