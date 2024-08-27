@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 1415d07235641262814e81362c806572bcf582ba
+source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
 workflow-type: tm+mt
 source-wordcount: '544'
-ht-degree: 49%
+ht-degree: 47%
 
 ---
 
@@ -50,7 +50,7 @@ AEM では、フロントエンドパイプラインを使用するように既�
 
 {{add-cm-allowlist-frontend-pipeline}}
 
-サイトのフロントエンドパイプラインを有効にするには、Sites コンソールで[サイトパネル](site-rail.md)を使用します。
+サイトのフロントエンドパイプラインを有効にするには、Sites コンソールで [ サイトパネル ](site-rail.md) を使用します。
 
 1. AEM にログインし、**グローバルナビゲーション**／**サイト**&#x200B;を使用して Sites コンソールに移動します。
 1. サイトをコンソールで選択します。サイトの子ページではなくルートを選択します。
