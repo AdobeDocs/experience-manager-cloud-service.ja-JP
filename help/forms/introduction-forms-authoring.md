@@ -5,10 +5,9 @@ content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
-docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: bcd3a2a813833d7c1705e45829bcf769645cd154
 workflow-type: tm+mt
 source-wordcount: '2468'
 ht-degree: 100%

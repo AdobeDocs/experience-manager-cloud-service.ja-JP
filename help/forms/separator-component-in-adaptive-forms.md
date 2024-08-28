@@ -1,11 +1,9 @@
 ---
 title: アダプティブフォームの区切り記号コンポーネントとは？
 description: アダプティブフォームの区切り記号コンポーネントを使用すると、フォームのセクションを視覚的に区別できます。
-uuid: f8d2aed3-52aa-437f-bfe3-0c8779e7986c
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: author
-docset: aem65
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, Foundation Components
+role: User
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 100%

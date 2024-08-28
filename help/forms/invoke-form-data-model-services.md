@@ -4,7 +4,11 @@ description: アダプティブフォームフィールド内から WSDL で記�
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+feature: Adaptive Forms, Form Data Model
+role: User
+hide: true
+hidefromtoc: true
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 100%

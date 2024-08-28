@@ -5,8 +5,11 @@ uuid: 58c8c8fb-9262-4c37-b9b2-e46fe21b77d9
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
-docset: aem65
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+feature: Adaptive Forms
+role: User, Developer
+hide: true
+hidefromtoc: true
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 100%

@@ -5,8 +5,11 @@ uuid: 92818132-1ae0-4576-84f2-ece485a34457
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
-docset: aem65
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+feature: Adaptive Forms
+role: User
+hide: true
+hidefromtoc: true
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 93%

@@ -1,12 +1,9 @@
 ---
 title: アダプティブFormsで SOM 式を使用するにはどうすればよいですか？
 description: アダプティブFormsでパネルの SOM 式を抽出する方法を説明します。
-uuid: c5d55aff-fb69-4a1c-96ea-fb3f9322cbb0
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: develop
-discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
-docset: aem65
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+feature: Adaptive Forms, Foundation Components
+role: User
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 93%

@@ -3,10 +3,13 @@ title: AEMアダプティブフォームフィールドのヘルプテキスト�
 description: AEM Forms では、文脈依存ヘルプをテキストまたはビデオなどのリッチメディアの形でアダプティブフォームフィールドやパネルに追加することができます。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-docset: aem65
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+feature: Adaptive Forms, Foundation Components
+role: User
+hide: true
+hidefromtoc: true
+source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '369'
 ht-degree: 100%
 
 ---
@@ -64,8 +67,3 @@ ht-degree: 100%
 パネルにヘルプを追加すると、**が表示されますか？** アイコンがパネルの説明の隣に表示されます。アイコンをクリックすると、パネル編集ダイアログの「ヘルプコンテンツ」セクションに追加されたコンテンツが表示されます。
 
 ![フォームパネルレベルでの文脈依存ヘルプの例](assets/photoshop-1.png)
-
->[!MORELIKETHIS]
->
->* [フォームフィールドへのプレースホルダーテキストの追加](/help/forms/placeholder-text-in-aem-forms.md)
->* [リッチテキスト用のアダプティブフォームへの脚注の追加](/help/forms/footnotes-richtextsupport.md)

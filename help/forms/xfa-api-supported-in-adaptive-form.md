@@ -4,7 +4,11 @@ description: アダプティブフォームでサポートされる XFA イベ�
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+feature: Adaptive Forms
+role: User
+hide: true
+hidefromtoc: true
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 100%

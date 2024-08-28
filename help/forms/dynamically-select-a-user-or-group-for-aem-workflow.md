@@ -3,7 +3,11 @@ title: AEM Workflow でユーザーを選択する方法は？
 description: 実行時に  [!DNL AEM Forms]  ワークフローのユーザーまたはグループを選択する方法について説明します。
 content-type: troubleshooting
 topic-tags: publish
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Adaptive Forms
+role: User
+hide: true
+hidefromtoc: true
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 100%

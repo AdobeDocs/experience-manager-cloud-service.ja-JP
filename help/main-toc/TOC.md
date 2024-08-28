@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
-source-wordcount: '5348'
+source-wordcount: '5478'
 ht-degree: 99%
 
 ---
@@ -681,6 +681,7 @@ ht-degree: 99%
          + [フォームデータモデルの作成](/help/forms/create-form-data-models.md)
          + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
          + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
+         + [アダプティブフォームの XML スキーマのデザイン](/help/forms/adaptive-form-xml-schema-form-model.md)
    + アダプティブフォーム {#adaptive-forms-authoring}
       + [アダプティブフォームを作成します](/help/forms/create-an-adaptive-form.md)
       + [アダプティブフォームフラグメントの作成](/help/forms/adaptive-form-fragments.md)
@@ -730,12 +731,17 @@ ht-degree: 99%
             + [変換後のフォームのレビューと修正](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=ja#welcome-to-review-and-correct-editor)
          + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
             + [アダプティブフォームのオーサリングの概要](/help/forms/introduction-forms-authoring.md)
+            + [フォームのフィールドのための文脈依存ヘルプの作成](/help/forms/authoring-in-field-help.md)
             + [アダプティブフォームを作成します](/help/forms/creating-adaptive-form.md)
             + [参照テーマ、テンプレート、データモデル](/help/forms/reference-themes-templates-data-models.md)
             + [テンプレートの作成](/help/forms/template-editor.md)
             + [テーマの作成](/help/forms/themes.md)
+            + [参照用のアダプティブフォームフラグメント](/help/forms/reference-adaptive-form-fragments.md)
+            + [アダプティブフォームと XFA フォームテンプレートとの同期](/help/forms/synchronizing-adaptive-forms-xfa.md)
+            + [XDP ベースのアダプティブフォームにおける XFA のサポート](/help/forms/xfa-api-supported-in-adaptive-form.md)
             + [アダプティブフォームの JSON スキーマのデザイン](/help/forms/adaptive-form-json-schema-form-model.md)
             + [遅延読み込みによる大きなフォームのパフォーマンスの向上](/help/forms/lazy-loading-adaptive-forms.md)
+            + [フォームとドキュメントの公開と非公開](/help/forms/publishing-unpublishing-forms.md)
          + アダプティブフォームへのコンポーネントの追加 {#add-components-to-an-adaptive-form}
             + [アダプティブフォームでの CAPTCHA の使用](/help/forms/captcha-adaptive-forms.md)
             + [アダプティブフォームでの hCaptcha の使用](/help/forms/integrate-adaptive-forms-hcaptcha.md)
@@ -748,10 +754,15 @@ ht-degree: 99%
             + [アダプティブフォームのレイアウト設定](/help/forms/layout-capabilities-adaptive-forms.md)
             + [レイアウトモードを使用したコンポーネントのサイズ変更](/help/forms/resize-using-layout-mode.md)
             + [複数手順のデータキャプチャエクスペリエンスの作成](/help/forms/introduction-form-sequence.md)
+            + [アダプティブフォームのスタイル構成](/help/forms/styling-constructs-adaptive-forms.md)
             + [インライン CSS スタイルのアダプティブフォームの個々のコンポーネントへの適用](/help/forms/inline-style-adaptive-forms.md)
+            + [アダプティブFormsでセパレーターコンポーネントを使用する方法](/help/forms/separator-component-in-adaptive-forms.md)
          + アダプティブフォームでのルール追加と式の使用 {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [アダプティブフォームへのルールの追加](/help/forms/rule-editor.md)
             + [ルールエディターの呼び出しサービスを使用したカスタムエラーハンドラーの追加](/help/forms/add-custom-error-handler-adaptive-forms.md)
+            + [選択したユーザーグループにルールエディターへのアクセスを許可](/help/forms/rule-editor-access-user-groups.md)
+            + [アダプティブフォームでの SOM 式の使用 ](/help/forms/using-som-expressions-adaptive-forms.md)
+            + [アダプティブフォームの式](/help/forms/adaptive-form-expressions.md)
          + [!DNL Adobe Sign] の使用 {#use-adobe-sign}
             + [Adobe Sign を使用したアダプティブフォームの電子サイン](/help/forms/working-with-adobe-sign.md)
          + 送信アクションとメタデータ送信の設定 {#configure-submit-actions-and-metadata-submission}
@@ -759,6 +770,8 @@ ht-degree: 99%
             + [リダイレクトページの設定](/help/forms/configuring-redirect-page.md)
             + [アダプティブフォームの非同期送信を設定](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [カスタム送信アクションの作成](/help/forms/custom-submit-action-form.md)
+            + [ユーザーデータからフォーム送信メタデータへの情報の追加](/help/forms/form-submission-metadata.md)
+            + [アダプティブフォームからフォームデータモデル（FDM）サービスを呼び出すための API](/help/forms/invoke-form-data-model-services.md)
          + [アダプティブフォームフィールドに事前入力](/help/forms/prepopulate-adaptive-form-fields.md)
          + [レコードのドキュメントを生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [アダプティブフォームへの新しいロケールのサポートの追加](/help/forms/supporting-new-language-localization.md)
@@ -769,11 +782,16 @@ ht-degree: 99%
             + [アクセシブルなアダプティブフォームの作成](/help/forms/creating-accessible-adaptive-forms.md)
          + [フォームポータルの設定](/help/forms/configure-forms-portal.md)
          + [レビューの作成と管理](/help/forms/create-reviews-forms.md)
+         + [送信レビュー担当者のフォームへの関連付け](/help/forms/adding-reviewers-form.md)
+         + [アダプティブフォームのレビューの作成と管理](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [アダプティブフォームのキーワード](/help/forms/adaptive-forms-keywords.md)
       + [フォームのプレビュー](/help/forms/previewing-forms.md)
    + Forms 中心のワークフロー {#create-form-centric-workflows}
+      + [Forms中心のワークフローの導入](/help/forms/aem-forms-workflow.md)
       + [ワークフローでの Forms 中心のステップの使用 + ステップリファレンス](/help/forms/aem-forms-workflow-step-reference.md)
       + [Forms 中心のワークフローでの変数の使用](/help/forms/variable-in-aem-workflows.md)
+      + [AEM Workflow での動的なユーザーまたはグループの選択](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
+      + [AEM インボックスでの Forms アプリケーションとタスクの管理](/help/forms/manage-applications-inbox.md)
       + [「不在」オプションの使用](/help/forms/configure-out-of-office-settings.md)
    + 通信 API {#using-communications}
       + [通信 API の概要](/help/forms/aem-forms-cloud-service-communications-introduction.md)
@@ -781,6 +799,7 @@ ht-degree: 99%
       + [通信 API - バッチ処理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Forms Designer のインストールと設定](/help/forms/installing-configuring-designer.md)
       + [Forms Designer を使用したテンプレートの作成](/help/forms/use-forms-designer.md)
+      + [Designer での Page Zero コンテンツの変更](/help/forms/changing-page-zero-content-designer.md)
       + [PDF ドキュメントでのカスタムフォントの使用](/help/forms/use-custom-fonts.md)
       + [PDF ドキュメントでサポートされるフォントのリスト](/help/forms/supported-out-of-the-box-fonts.md)
       + [既知の問題、ベストプラクティス、よくある質問](/help/forms/communications-known-issues-limitations.md)
@@ -926,6 +945,7 @@ ht-degree: 99%
          + [URL からフォームへのオプションの読み込み](/help/edge/docs/forms/load-options-from-url.md)
          + [フォームの外観のカスタマイズ](/help/edge/docs/forms/style-theme-forms.md)
          + [ルールを使用してフォームに動的な動作を追加](/help/edge/docs/forms/rules-forms.md)
+         + [検証用の正規表現](/help/edge/docs/forms/regex-forms.md)
          + [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
       + 機能 {#advanced-features-edge-delivery-services-forms}
          + [フォームフラグメントの使用](/help/edge/docs/forms/form-fragments.md)

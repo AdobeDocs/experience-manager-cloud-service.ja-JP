@@ -4,7 +4,9 @@ description: ユーザーが提供したデータを使用して、送信済み�
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+hide: true
+hidefromtoc: true
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 100%
