@@ -4,14 +4,14 @@ description: Real Use Monitoring （RUM）を使用して、web サイトやア�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: ae9951fa89edeab5f34ae3506cf8a4864201c93e
+source-git-commit: 2515bc51fd54b014ffb701a8aef38cd08d6725b3
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 14%
+source-wordcount: '1274'
+ht-degree: 13%
 
 ---
 
-# AEM as a Cloud Serviceの Real-Use Monitoring Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
+# AEM as a Cloud Serviceの Real-Use モニタリングサービス {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!NOTE]
 >
@@ -31,22 +31,22 @@ RUM を使用すると、URL の開始からリクエストがブラウザーに
 >
 >「実際のユーザー監視」は、サービスの真の本質をより適切に反映するため、「実際の使用監視」にブランド変更されました。
 
-## 実際の使用状況を監視するサービスのメリットは誰にあるのか。 {#who-can-benefit-from-rum-service}
+## 実際の使用状況の監視サービスのメリットを享受できるのは誰か {#who-can-benefit-from-rum-service}
 
 AEMは、お客様やAdobeがAEM サイトとのやり取りを理解するのに役立つ RUM を開発しました。 RUM を使用すると、パフォーマンスの問題を診断し、実験の有効性を測定できます。 RUM は、サンプリングを通じて訪問者のプライバシーを保持します。つまり、すべてのページビューのごく一部のみが監視され、個人を特定できる情報（PII）は収集されません。
 
 
-## 実使用監視サービスの仕組みについて {#understand-how-the-rum-service-works}
+## Real Use Monitoring サービスの仕組みを理解する {#understand-how-the-rum-service-works}
 
-Adobe Experience Manager（AEM）では、Real Use Monitoring （RUM）を使用して、お客様やAdobeがAEM サイトとどのようにやり取りしているかを理解できるようにします。 パフォーマンスの問題を診断し、実験の有効性を測定するのに役立ちます。 RUM は、サンプリングを通じて訪問者のプライバシーを保持します。つまり、すべてのページビューのごく一部のみが監視され、個人を特定できる情報（PII）は収集されません。
+AEMでは、RUM を使用して、顧客やAdobeがAEM サイトとのやり取りを理解できるようにします。 パフォーマンスの問題を診断し、実験の有効性を測定するのに役立ちます。 RUM は、サンプリングを通じて訪問者のプライバシーを保持します。つまり、すべてのページビューのごく一部のみが監視され、個人を特定できる情報（PII）は収集されません。
 
-## Real Use 監視サービスとプライバシー {#rum-service-and-privacy}
+## Real Use Monitoring サービスとプライバシー {#rum-service-and-privacy}
 
 AEMの Real Use Monitoring サービスは、訪問者のプライバシーを保護し、データ収集を最小限に抑えるように設計されています。 訪問者として、それはあなたが訪問しているサイトまたはAdobeに利用可能になったサイトが個人情報を収集しないことを意味します。
 
 サイトオペレーターは、この機能を通じた監視を有効にするために追加のオプトインは必要ありません。 RUM を有効にするためにエンドユーザーが受け入れるための追加のポップアップまたは同意フォームはありません。
 
-## Real-Use モニタリングサービスのデータサンプリング {#rum-service-data-sampling}
+## Real Use Monitoring サービスのデータ・サンプリング {#rum-service-data-sampling}
 
 従来の web 分析ソリューションでは、すべての訪問者に関するデータを収集しようとします。AEM RUM サービスは、ほんの一部のページビューから情報を取得するだけです。 このサービスは、分析の代わりではなく、サンプリングおよび匿名化されることを目的としています。 デフォルトでは、ページのサンプリング比は 1:100 です。 現時点では、サイト演算子はサンプリングレートを増減できません。 合計トラフィックを正確に推定するために、100 回のページビューごとに 1 からデータが収集され、全体的なトラフィックの信頼性の高い概算が得られます。
 
@@ -84,7 +84,7 @@ RUM データは、次の目的で有益です。
 * ページビューを含む自動トラフィック検索を効率化する。
 * 互換性を向上させるために、AEMが同じページ上の他のスクリプト（分析、ターゲティング、外部ライブラリなど）とどのようにやり取りするかを理解する。
 
-## ページビューおよびパフォーマンス指標の制限事項と差異について {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
+## ページビュー数とパフォーマンス指標の制限事項と相違について {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
 
 RUM データを分析する際、ページビューやその他のパフォーマンス指標に違いが生じる場合があります。 これらの差異は、リアルタイムのクライアントサイドのモニタリングに固有のいくつかの要因に起因する可能性があります。お客様が RUM データを解釈する際に留意すべき重要な考慮事項を以下に示します。
 
