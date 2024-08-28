@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 82be9b2b328343e827b90bd8266d93127757f477
+source-git-commit: eb01b6982578ad1300163c2fd536e844afc815fa
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 40%
+source-wordcount: '736'
+ht-degree: 52%
 
 ---
 
@@ -27,22 +27,16 @@ ht-degree: 40%
 * CQ-4353778：翻訳プロセスイベント。
 * CQ-4354583:Adobeパイプラインを使用して翻訳プロセスイベントを送信します。
 * CQ-4356479:Adobeコードでのみ/adobe サーブレットコンテキストの使用を許可します。
-* CQ-4358133:Jenkins ワーカーの使用を最適化します。
 * CQ-4358226：翻訳キーワードを保存機能が、特定の文字列形式で機能しない。
 * CQ-4358270:AEM翻訳キット：8 月 8 日（PT）。
 * CQ-4358310:oak-compat-query-spi-1.2 をクイックスタートに追加します。
-* GRANITE-36205:QS の内部 Oak リリースの自動アップデート。
 * GRANITE-49833：イベント送信者とプロキシのバッチ処理のサポート。
 * GRANITE-52053:Commons コレクションの使用を削除 3:Platform その他。
 * GRANITE-52492:PIT リストアの場合の弾性非同期のキャッチアップ。
-* GRANITE-53086:AEMaaCS で jacoco プラグインのバージョンを 0.8.12 に更新しました。
 * GRANITE-53099:Apache Felix Http Jetty 5.1.24 を更新します。
 * GRANITE-53125:CloudEvent に分類を追加する。
 * GRANITE-53328：スタッシングログの改善を含めて、Filevault を 3.8.0-T20240726111512-3cc11d50 に更新します。
-* GRANITE-53340:AEM660:660 CQ/Platform の適切なバージョン管理とブランチ。
-* GRANITE-53341:ACS Commons 6 の使用について警告しない。
 * GRANITE-53453: commons-lang を 3.15.0 に更新します。
-* GRANITE-53473:Sling 設定を非推奨（廃止予定）にしない。
 * GRANITE-53478:Filevault をバージョン 3.8.0 に更新します。
 * GRANITE-53505:QS を commons-collections-3.2.2-adobe-2 に更新します。
 * GRANITE-53528:Platform アーティファクトのバージョンを更新します。
@@ -71,7 +65,10 @@ ht-degree: 40%
 
 ### 既知の問題 {#known-issues-17569}
 
-なし。
+* ASSETS-40875 - AssetDeleteHandler クラスが、アセット削除イベントをリッスンし、削除イベントのタイプ（PRE_DELETE または POST_DELETE）に基づいて特定のアクションを実行する。特定のシナリオでは、POST_DELETE タイプのイベントによって NullPointerException が発生します。
+* FORMS-14340 - FormsAndDocumentOmniSearchHandler および CloudStorageSubmitActionInserter のインスタンス化中にエラーが発生する。これらは無害なログステートメントです。
+* FORMS-15818 - コンポーネント記述子エントリ「OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml」のステートメントがサーバーログで見つからない。これらは無害なログステートメントです。
+* SITES-23662 - 公開をトリガーするユーザーがサーバーログの JCR ログステートメントから抽出できない。これは開発中の機能で、断続的で無害な「OSGi イベントのバッチで有効なユーザー ID が見つかりません」というエラーがログに記録される可能性があります。
 
 ### 変更通知 {#change-notice-17569}
 
