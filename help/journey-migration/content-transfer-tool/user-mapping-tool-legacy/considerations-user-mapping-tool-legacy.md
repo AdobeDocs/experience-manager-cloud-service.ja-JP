@@ -6,10 +6,10 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 100%
+source-wordcount: '590'
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 >[!INFO]
 >
->このドキュメントでは、ツールの非推奨（廃止予定）バージョンについて説明します。最新バージョンについて詳しくは、[ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)を参照してください。
+>このドキュメントでは、ツールの非推奨（廃止予定）バージョンについて説明します。最新バージョンについて詳しくは、[ グループの移行 ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) を参照してください。
 
 ## 例外的な状況 {#exceptional-cases}
 

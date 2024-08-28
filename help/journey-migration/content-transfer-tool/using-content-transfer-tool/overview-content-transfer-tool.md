@@ -1,27 +1,28 @@
 ---
 title: コンテンツ転送ツールの概要
-description: コンテンツ転送ツールを使用して、オンプレミスの AEM インスタンスから AEM as a Cloud Service にコンテンツを転送する方法について説明します。
+description: コンテンツ転送ツールを使用して、オンプレミスのAEM インスタンスからAEM as a Cloud Serviceにコンテンツを転送する方法を説明します
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: d9565e86c4b7e513cb1a95ecbe7a30c9586d9fb1
-workflow-type: ht
-source-wordcount: '655'
-ht-degree: 100%
+source-git-commit: e73933acc3ff23d1456f03b288f2f842a6289ace
+workflow-type: tm+mt
+source-wordcount: '612'
+ht-degree: 93%
 
 ---
+
 
 # 概要 {#overview-content-transfer-tool}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="概要"
->abstract="コンテンツ転送ツールは、アドビが開発したツールで、ソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM Cloud Service インスタンスへの既存のコンテンツの移行を開始するために使用できます。 プリンシパル（ユーザーやグループ）も自動的に転送されます。"
+>abstract="コンテンツ転送ツールは、アドビが開発したツールで、ソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM Cloud Service インスタンスへの既存のコンテンツの移行を開始するために使用できます。 また、このツールは自動的にグループを転送します。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja" text="ガイドラインとベストプラクティス"
 
 コンテンツ転送ツールは、アドビが開発したツールで、ソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM Cloud Service インスタンスへの既存のコンテンツの移行を開始するために使用できます。
 
-プリンシパル（ユーザーやグループ）も自動的に転送されます。詳しくは、[ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)を参照してください。
+また、このツールは自動的にグループを転送します。  詳しくは、[ グループの移行 ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) を参照してください。
 
 コンテンツ転送ツールは、コンテンツ転送プロセスを Cloud Acceleration Manager と統合します。これにより、ユーザーは次の利点をすべて活用できます。
 
@@ -37,9 +38,6 @@ ht-degree: 100%
 1. **抽出**：抽出とは、ソース AEM インスタンスから、*移行セット*&#x200B;と呼ばれる一時領域にコンテンツを抽出することです。*移行セット*&#x200B;は、アドビが提供するクラウドストレージ領域で、ソース AEM インスタンスと AEM as a Cloud Service インスタンスの間で転送されるコンテンツを一時的に保存するためのものです。
 
    詳しくは、[コンテンツ転送の抽出プロセス](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)を参照してください。
-
-   >[!NOTE]
-   >ユーザーマッピングは、オーサー環境の抽出段階の一環として自動的に実行されるようになりました（ただし、オプションとしてオーサー環境で無効にしたり、パブリッシュ環境で有効にしたりできます）。詳しくは、[ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)を参照してください。
 
 1. **インジェスト**：インジェストとは、*移行セット*&#x200B;からターゲット Cloud Service インスタンスにコンテンツを取り込むことです。
 
@@ -78,7 +76,6 @@ ht-degree: 100%
 移行セット行で移行セットの有効期限を監視できます。移行セットの有効期限が近づいていることを示す便利な視覚的インジケーターが、プロジェクトのカードにも追加されました。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
-
 
 ## 次の手順 {#whats-next}
 

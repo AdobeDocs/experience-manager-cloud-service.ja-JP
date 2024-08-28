@@ -4,7 +4,7 @@ description: ソースの Adobe Experience Manager (AEM) インスタンスか�
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 100%
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 1. 抽出ダイアログが表示されます。「**抽出**」をクリックして、抽出段階を開始します。
 
-   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
+   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14c.png)
 
    >[!NOTE]
    >オプションで、抽出段階でステージングコンテナを上書きできます。「**ステージングコンテナを上書き**」が無効になっている場合、コンテンツパスやインクルードバージョンの設定が変更されていない後続の移行については、抽出を高速化できます。ただし、コンテンツパスやインクルードバージョンの設定が変更されている場合は、「**ステージングコンテナを上書き**」を有効にしてください。

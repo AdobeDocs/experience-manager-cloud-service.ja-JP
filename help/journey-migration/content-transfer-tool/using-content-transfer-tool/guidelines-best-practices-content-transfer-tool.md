@@ -4,12 +4,13 @@ description: コンテンツ転送ツール使用のガイドラインとベス�
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 100%
+source-wordcount: '1368'
+ht-degree: 86%
 
 ---
+
 
 # コンテンツ転送ツール使用のガイドラインとベストプラクティス {#guidelines}
 
@@ -22,32 +23,32 @@ ht-degree: 100%
 >title="Guidelines and Best Practices"
 >abstract="Review guidelines and best practices to use the Content Transfer tool including revision cleanup tasks, Disk space considerations and more."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html" text="Important Considerations for using Content Transfer Tool"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.md#important-considerations" text="Important Considerations when Mapping and Migrating Users" 
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/group-migration.md#important-considerations" text="Important Considerations when Migrating Groups" 
 
 -->
 
-コンテンツ転送ツールの新しいバージョンが利用可能です。新バージョンでは、コンテンツ転送プロセスと Cloud Acceleration Manager が統合されています。次の利点をすべて活用するには、この新しいバージョンに切り替えることを強くお勧めします。
+コンテンツ転送ツールは、コンテンツ転送プロセスを Cloud Acceleration Manager と統合します。このバージョン（2.0 以降ですが、バージョン 3.0 をお勧めします）を使用して、次のすべての利点を得ることができます。
 
 * セルフサービス方式で、移行セットを 1 回抽出し、同時に複数の環境に取り込めます。
 * 読み込み状態、ガードレール、エラー処理の改善により、ユーザーエクスペリエンスが向上しました。
 * 取り込みログは永続化され、常にトラブルシューティングに使用することができます。
 
-新しいバージョンの使用を開始するには、コンテンツ転送ツールの古いバージョンをアンインストールします。新しいバージョンはアーキテクチャが大きく変更されているので、古いバージョンをアンインストールする必要があります。バージョン 2.x では、移行セットを作成し、そのセットで抽出と取り込みを再実行します。
+最新バージョンの使用を開始するには、コンテンツ転送ツールの古いバージョンをアンインストールします。 バージョン 2.0 以降では、移行セットを作成し、そのセットで抽出と取り込みを再実行します。
 2.0.0 より前のバージョンはサポートされていません。最新バージョンを使用することをお勧めします。
 
 コンテンツ転送ツールの新しいバージョンには、次のガイドラインとベストプラクティスが適用されます。
 
 * **ソース**&#x200B;リポジトリに対して[リビジョンのクリーンアップ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=ja)と[データストア整合性チェック](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=ja)を実行し、潜在的な問題を特定してリポジトリのサイズを小さくします。
 
-* 取り込み段階では、*ワイプ*&#x200B;モードを有効にして取り込みを実行することをお勧めします。このモードでは、ターゲットとなる Adobe Experience Manager（AEM）Cloud Service 環境内の既存のリポジトリ（オーサーまたはパブリッシュ）を削除します。次に、移行セットデータで更新します。このモードは、現在のコンテンツの上に移行セットが適用される非ワイプモードより高速です。
+* インジェスト段階では、Adobeでは、ターゲット Adobe Experience Manager（AEM）Cloud Service環境内の既存のリポジトリ（オーサーまたはPublish）が削除される *ワイプ* モードを有効にしてインジェストを実行することをお勧めします。 次に、移行セットデータで更新します。このモードは、現在のコンテンツの上に移行セットが適用される非ワイプモードより高速です。
 
 * コンテンツ転送アクティビティが完了したら、Cloud Service 環境でコンテンツが正常にレンダリングされるように、Cloud Service 環境で正しいプロジェクト構造を使用する必要があります。
 
 * コンテンツ転送ツールを実行する前に、ソース AEM インスタンスの `crx-quickstart` サブディレクトリに十分なディスク領域があることを確認する必要があります。これは、コンテンツ転送ツールによってリポジトリーのローカルコピーが作成され、後で移行セットにアップロードされるためです。必要な空きディスク容量を計算する一般的な式は次のとおりです。
   `data store size + node store size * 1.5`
 
-   * *data store size*：実際のデータストアのサイズが大きい場合でも、コンテンツ転送ツールは 64 GB を使用します。
-   * *node store size*：セグメントストアディレクトリのサイズまたは MongoDB データベースのサイズ。
+* *data store size*：実際のデータストアのサイズが大きい場合でも、コンテンツ転送ツールは 64 GB を使用します。
+* *node store size*：セグメントストアディレクトリのサイズまたは MongoDB データベースのサイズ。
 したがって、セグメントストアのサイズが 20 GB の場合、必要な空きディスク容量は 94 GB になります。
 
 * コンテンツの追加をサポートするには、コンテンツ転送アクティビティ全体を通して移行セットを維持管理する必要があります。Cloud Acceleration Manager では、コンテンツ転送アクティビティ中に、プロジェクトあたり一度に最大 20 個の移行セットを作成および維持管理できます。移行セットが 21 個以上必要な場合は、Cloud Acceleration Manager で 2 つ目のプロジェクトを作成します。ただし、複数のユーザーがターゲット上のコンテンツを上書きしないようにするために、追加のプロジェクト管理と製品外のガバナンスが必要になります。
@@ -74,13 +75,13 @@ ht-degree: 100%
 
 * 抽出キーは、作成または更新時点から 14 日間有効です。抽出キーはいつでも更新できます。抽出キーの有効期限が切れている場合は、抽出を実行できません。
 
-* コンテンツ転送ツール（CTT）は、ソースインスタンスからターゲットインスタンスにコンテンツを転送する前に、どのような種類のコンテンツ分析も実行しません。例えば、CTT では、コンテンツをパブリッシュ環境に取り込む際に、公開済みコンテンツと非公開コンテンツを区別しません。移行セットで指定されているコンテンツはすべて、選択したターゲットインスタンスに取り込まれます。ユーザーは、オーサーインスタンスとパブリッシュインスタンスのどちらか一方または両方に移行セットを取り込むことができます。コンテンツを実稼動インスタンスに移動する際に、ソースオーサーインスタンスに CTT をインストールして、コンテンツをターゲットオーサーインスタンスに移動することをお勧めします。同様に、ソースパブリッシュインスタンスに CTT をインストールして、コンテンツをターゲットパブリッシュインスタンスに移動します。詳しくは、[パブリッシュインスタンスでのコンテンツ転送ツールの実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja#running-tool)を参照してください。
+* コンテンツ転送ツール（CTT）は、ソースインスタンスからターゲットインスタンスにコンテンツを転送する前に、どのような種類のコンテンツ分析も実行しません。例えば、CTT では、コンテンツをパブリッシュ環境に取り込む際に、公開済みコンテンツと非公開コンテンツを区別しません。移行セットで指定されているコンテンツはすべて、選択したターゲットインスタンスに取り込まれます。ユーザーは、オーサーインスタンスとPublish インスタンスのどちらか一方または両方に移行セットを取り込むことができます。 コンテンツを実稼動インスタンスに移動する際に、ソースオーサーインスタンスに CTT をインストールして、コンテンツをターゲットオーサーインスタンスに移動することをお勧めします。同様に、ソースパブリッシュインスタンスに CTT をインストールして、コンテンツをターゲットパブリッシュインスタンスに移動します。詳しくは、[パブリッシュインスタンスでのコンテンツ転送ツールの実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja#running-tool)を参照してください。
 
-* コンテンツ転送ツールによって転送されるユーザーとグループは、権限を満たすためにコンテンツで必要なものに限られます。_抽出_&#x200B;プロセスは、`/home` 全体を移行セットにコピーし、各ユーザーのメールアドレスから作成されたフィールドを追加して、ユーザーマッピングを実行します。詳しくは、[ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)を参照してください。_取り込み_&#x200B;プロセスは、移行されたコンテンツ ACL で参照されているすべてのユーザーとグループをコピーします。クローズドユーザーグループ（CUG）ポリシーで使用されるグループに関するその他の考慮事項について詳しくは、[クローズドユーザーグループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)を参照してください。
+* コンテンツ転送ツールによって転送されるグループは、権限を満たすためにコンテンツで必要なグループのみです。 _抽出_ プロセスは、`/home/groups` ータ全体を移行セットにコピーします。 詳しくは、[ グループの移行 ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) を参照してください。 _取り込み_ プロセスは、移行されたコンテンツ ACL で参照されているすべてのグループをコピーします。 クローズドユーザーグループ（CUG）ポリシーで使用されるグループに関するその他の考慮事項について詳しくは、[クローズドユーザーグループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)を参照してください。
 
 * 抽出段階では、コンテンツ転送ツールはアクティブな AEM ソースインスタンスで実行されます。
 
-* オーサーの&#x200B;*取得段階*&#x200B;では、オーサーのデプロイメント全体がスケールダウンされます。つまり、オーサー AEM インスタンスが取り込みプロセス全体で使用できなくなります。また、*取り込み*&#x200B;段階の実行中に Cloud Manager パイプラインが実行されないようにする必要があります。
+* オーサーの *取り込み段階* では、オーサーのデプロイメント全体がスケールダウンされます。 つまり、オーサーAEMは、取り込みプロセス全体で使用できなくなります。 また、*取り込み*&#x200B;段階の実行中に Cloud Manager パイプラインが実行されないようにする必要があります。
 
 * ソース AEM システム上のデータストアとして `Amazon S3` または `Azure` を使用する場合は、保存された BLOB を削除（ガベージコレクション）できないように、データストアを設定する必要があります。これにより、インデックスデータの整合性が確保されます。このように設定しないと、このインデックスデータの整合性が欠落しているために抽出が失敗する可能性があります。
 

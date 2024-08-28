@@ -4,9 +4,9 @@ description: コードとコンテンツがクラウドに対応した後に移�
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1223'
 ht-degree: 100%
 
 ---
@@ -101,7 +101,6 @@ ht-degree: 100%
 
 * 名前が 150 文字を超える JCR ノード
 * 16 MB を超える JCR ノード
-* AEM as a Cloud Service に既に存在する、取り込み中の `rep:AuthorizableID` を持つすべてのユーザー／グループ
 * 抽出されて取り込まれたアセットが、次の移行処理の前に、ソースまたは宛先で別のパスに移動する場合
 
 ## アセットの正常性 {#asset-health}

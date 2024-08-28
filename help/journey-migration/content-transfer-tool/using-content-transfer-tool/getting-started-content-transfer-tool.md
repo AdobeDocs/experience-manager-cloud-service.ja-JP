@@ -4,12 +4,13 @@ description: コンテンツ転送ツールの基本を学ぶ
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: 67bc538fe174034c05808d4a62c51c404dfaf38c
-workflow-type: ht
+source-git-commit: d8730109f5cd7dab44f535b1de008ae09811f221
+workflow-type: tm+mt
 source-wordcount: '1362'
 ht-degree: 100%
 
 ---
+
 
 # コンテンツ転送ツールの基本を学ぶ {#getting-started-content-transfer-tool}
 

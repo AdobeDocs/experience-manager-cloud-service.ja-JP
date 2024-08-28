@@ -4,12 +4,13 @@ description: コンテンツ転送ツールを使用してコンテンツ転送�
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
-workflow-type: ht
-source-wordcount: '1080'
-ht-degree: 100%
+source-git-commit: b7e485e3b7ce6f2d2fa7fe9b2953d2296186871d
+workflow-type: tm+mt
+source-wordcount: '1189'
+ht-degree: 83%
 
 ---
+
 
 # コンテンツ転送の検証 {#validating-content-transfers}
 
@@ -134,23 +135,28 @@ Migration validation took 0 minutes
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
-## プリンシパルの移行を検証する方法 {#how-to-validate-principal-migration}
+## プリンシパルの移行を検証する方法 {#how-to-validate-group-migration}
 
-プリンシパルの移行の詳細とその必要性については、[ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)を参照してください。
+プリンシパルの移行の詳細と必要な理由については、[ グループの移行 ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) を参照してください。
 
-抽出と取り込みが正常に完了すると、プリンシパルの移行の概要とレポートが使用可能になります。この情報を使用して、どのユーザーとグループが正常に移行されたかを検証し、一部のユーザーとグループが正常に移行されなかった理由を判断することもできます。
+抽出と取り込みが正常に完了すると、プリンシパルの移行の概要とレポートが使用可能になります。この情報は、正常に移行されたグループを検証したり、一部のグループが正常に移行されなかった理由を特定したりするために使用できます。
 
 この情報を表示するには、Cloud Acceleration Manager に移動します。プロジェクトカードをクリックし、コンテンツ転送カードをクリックします。**取り込みジョブ**&#x200B;に移動し、検証する取り込みを見つけます。その取り込みの 3 つのドット（**...**）をクリックし、ドロップダウンで「**プリンシパルの概要を表示**」をクリックします。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-概要情報を含むダイアログが表示されます。ヘルプアイコンを使用して、詳細な説明を参照します。「**レポートをダウンロード**」ボタンをクリックして、完全なコンマ区切り（CSV）レポートをダウンロードします。
+概要情報を含むダイアログが表示されます。ヘルプアイコンを使用して、詳細な説明を参照します。**レポートをダウンロード** ボタンをクリックして、完全なコンマ区切り（CSV）レポートをダウンロードします。  また、このレポートの末尾には、移行後のユーザー管理に使用できるユーザーレポートもあります。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
->[!NOTE]
->
->ユーザーマッピングが無効になっている場合は、このダイアログボックスの別のバリアントが表示されます。これは、ユーザーマッピングが無効になったことを示します。ユーザーマッピング値を示す 3 つのフィールドは表示されません。
+プリンシパルの移行レポートには、次の情報が表示されます。
+
+* 移行された各グループと、そのグループの移行をトリガーした最初のコンテンツパス。グループが他のパス上にある場合もありますが、特定のグループで最初に見つかったグループのみがレポートされます。 また、ACL または CUG ポリシー内で検出されたかどうかもレポートされます。
+* 各グループが移行されなかった場合と、移行されなかった理由。  通常、次のいずれかの理由になります。
+   * ビルトイングループです
+   * 既にターゲットシステム上にあります
+   * 移行されるコンテンツの ACL ポリシーまたは CUG ポリシーではありません
+   * 一意のフィールドが重複しています（rep:principalName、rep:authorizableId、jcr:uuid、rep:externalId のいずれかが既に宛先に存在しますが、これらはすべて一意である必要があります）
 
 ## トラブルシューティング {#troubleshooting}
 
@@ -166,6 +172,6 @@ Migration validation took 0 minutes
 
 現在ダイジェストから除外されているパスには、`cqdam.text.txt` レンディション、`/home` 内のノード、`/jcr:system` 内のノードなどがあります。
 
-### クローズドユーザーグループが機能していない {#validating-cugs}
+### クローズドユーザーグループ {#validating-cugs}
 
 クローズドユーザーグループ（CUG）ポリシーを使用する際のその他の考慮事項について詳しくは、[クローズドユーザーグループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)を参照してください。

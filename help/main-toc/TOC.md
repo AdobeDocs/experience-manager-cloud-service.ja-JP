@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+source-git-commit: 260761e6380846f44756adf4aa4c5410a40ce446
 workflow-type: tm+mt
-source-wordcount: '5478'
+source-wordcount: '5481'
 ht-degree: 99%
 
 ---
@@ -224,6 +224,7 @@ ht-degree: 99%
       + [環境の作成](/help/journey-onboarding/create-environments.md)
       + [AEM 製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-aem.md)
       + [開発者およびデプロイメントマネージャーのタスク](/help/journey-onboarding/developers.md)
+      + [プリンシパルの管理](/help/journey-migration/managing-principals.md)
       + [AEM ユーザータスク](/help/journey-onboarding/aem-users.md)
       + [公開チェックリスト](/help/journey-onboarding/go-live-checklist.md)
    + AEM 参照デモのアドオンジャーニー {#demo-add-on}
@@ -276,13 +277,14 @@ ht-degree: 99%
          + [コンテンツ転送の検証](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [クローズドユーザーグループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
          + [大規模なコンテンツリポジトリの処理](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
+         + [グループ移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)
          + [ソースからのコンテンツの抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [コンテンツの Cloud Service への取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [コンテンツ移行後のインデックス作成](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
          + [移行セットのログの表示](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [移行セットの削除](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [パブリッシュインスタンスでのコンテンツ転送ツールの実行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
+         + [移行後のプリンシパルの管理](/help/journey-migration/managing-principals-after-migration.md)
          + [コンテンツ転送ツールのトラブルシューティング](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + 従来のユーザーマッピングツール（従来）{#legacy-user-mapping-tool}
             + [概要](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
