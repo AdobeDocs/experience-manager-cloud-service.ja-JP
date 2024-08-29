@@ -3,8 +3,8 @@ title: コアコンポーネントベースのアダプティブフォームを�
 description: コアコンポーネントベースのアダプティブフォームをドラフトとして保存する方法を説明します。 また、ドラフトと送信コンポーネントを使用して、ログインしているユーザーのドラフトと送信をリストする方法も理解します。
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
-role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+role: User, Developer
+source-git-commit: 2561145c37fe2ba6a38482fb2d1be614a971b418
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 8%
@@ -83,7 +83,7 @@ ht-degree: 8%
    ![ ポリシーの選択 ](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. 「**[!UICONTROL 完了]**」をクリックします。
-1. オーサリングモードでAEM Sitesページを再度開きます。
+1. 次に、オーサリングモードでAEM Sitesページを再度開きます。
 1. ページエディターでForms ポータルコンポーネントを追加できるセクションを見つけます。
 1. **追加** アイコンをクリックします。 アイコンは、新しいコンポーネントを追加するオプションを示すプラス記号（+）です。
 
