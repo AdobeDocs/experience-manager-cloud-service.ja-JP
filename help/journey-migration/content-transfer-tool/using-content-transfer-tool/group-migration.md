@@ -28,7 +28,7 @@ ht-degree: 10%
 >abstract="コンテンツ転送ツールでユーザーが移行されなくなりました。 ユーザーは、Admin Consoleで管理する必要があります。"
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="AEMAdmin Consoleドキュメント"
 >additional-url="https://adminconsole.adobe.com/" text="AEM Admin Console"
->
+
 Adobe Experience Manager（AEM as a Cloud Service）への移行ジャーニーの一環として、グループを既存のAEM システムからAEM as a Cloud Serviceに移行する必要があります。 このタスクは、コンテンツ転送ツールによって実行されます。
 
 AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用したオーサー層へのアクセスが完全に統合されていることです。このプロセスでは、ユーザーとユーザーグループを管理するために [Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) を使用する必要があります。ユーザープロファイル情報が Adobe Identity Management System（IMS）に一元化され、すべての Adobe クラウドアプリケーションでシングルサインオンを利用できます。詳しくは、[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=ja#identity-management) を参照してください。この変更により、ユーザーは IMS を使用してAEMに最初にログインしたときに自動的に作成されます。  したがって、CTT はユーザーをクラウドシステムに移行しません。  IMS ユーザーは IMS グループに配置する必要があります。IMS グループは移行されるグループ、または移行されるAEM コンテンツへのアクセス権が付与されたAEM グループに配置される新しいグループにすることができます。  これにより、クラウドシステム上のユーザーは、ソース AEM システム上と同じアクセス権を持つようになります。
