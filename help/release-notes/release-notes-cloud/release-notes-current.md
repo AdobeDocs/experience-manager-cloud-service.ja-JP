@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e11c869c2f8cc8847869ad67a2c752e7239bd44c
+source-git-commit: 9cc49bf83d278d4064faa1d0157201226a067cb1
 workflow-type: tm+mt
-source-wordcount: '1511'
-ht-degree: 75%
+source-wordcount: '1142'
+ht-degree: 53%
 
 ---
 
@@ -28,21 +28,35 @@ ht-degree: 75%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の現在の機能リリース（2024.7.0）は、2024年7月25日（PT）に提供開始となりました。次回の機能リリース（2024.8.0）は、2024年8月29日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2024.8.0）の公開日は 2024年8月29日（PT）です。次回の機能リリース（2024.9.0）は、2024年9月26日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
 最新のメンテナンスリリースノートについては、[こちら](/help/release-notes/maintenance/latest.md)をご覧ください。
 
-## リリースビデオ {#release-video}
+<!-- ## Release Video {#release-video}
 
-2024.7.0 リリースで追加された機能の概要については、2024年7月リリースの概要ビデオをご覧ください。
+Have a look at the August 2024 Release Overview video for a summary of the features added in the 2024.8.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3431707?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Experience Manager Sites の新機能 {#new-feature-sites}
+
+**Edge Delivery Services 用の AEM オーサリング**
+
+次のような既存の Sites [ 継承 ](/help/sites-cloud/authoring/universal-editor/inheritance.md) 機能がサポートされるようになりました。
+
+* [AEM ローンチ](/help/sites-cloud/authoring/launches/overview.md)
+* ページレベルでの [MSM](/help/sites-cloud/administering/msm/overview.md)
+
+さらに、次のページ管理機能がサポートされるようになりました。
+
+* [AEM タグ ](/help/sites-cloud/authoring/sites-console/tags.md) は、Edge Delivery Servicesに [ 分類 ](/help/edge/wysiwyg-authoring/taxonomy.md) として書き出すことができます。
+* Edge Delivery Services用 [ テンプレート ](/help/edge/wysiwyg-authoring/templates.md) は、近日中に提供されます。
 
 ### 早期導入プログラム {#sites-early-adopter}
 
@@ -50,87 +64,70 @@ ht-degree: 75%
 
 AEM の新機能を通じて GenAI を活用し、[バリエーションを生成](/help/generative-ai/generate-variations.md)し、クラウドサービスでアクセスできるようになりました。バリエーションを生成は、生成 AI を使用してコンテンツの作成を生成し拡張するのに役立ちます。プログラムでの検討については、アドビのアカウントチームにお問い合わせください。
 
-**コンテンツフラグメントコンソールでのアセットのブラウジング**
-
-コンテンツ作成者は、コンテンツフラグメントコンソールを離れることなく、画像やその他のアセットを参照、表示およびアクションを実行できるようになりました。
-
-![アセットブラウジング](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
-
-この機能を試してフィードバックを共有いただける場合早期導入プログラムの詳細をご案内いたしますので、ご自身の正式なメール ID から aemcs-headless-adopter@adobe.com までご連絡ください。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**アセットセレクターを使用したアセットのアップロード**
-
-アセットセレクターで、コンテンツ作成者がローカルファイルシステムからドラッグまたは参照して、セレクターから直接最終アセットをアップロードできるようになりました。 これにより、選択したアプリケーションから最終的なアセットを DAM にアップロードできます。
-
 ### アセットビューの新機能 {#assets-view-new-features}
 
-**Content credentialsの統合**
+**更新されたAdobe Firefly画像の生成**
 
-Experience Manager Assetsで、サポートされる画像形式のcontent credentialsがサポートされるようになりました。 これにより、アセットの系列と作成方法（GenAI を使用して変更されたかどうかなど）に関する情報が提供されます。
+Assetsのas a Cloud Serviceでは、Fireflyの最新ウィジェットを使用するようになりました。このウィジェットを使用すると、Adobe Fireflyを使用して様々なスタイルの画像を生成できます。 組み込みのアセットエディターを使用してスタイル、構成、寸法などを定義することで、必要なFireflyをすばやく作成してAEM Assets リポジトリー内に直接保存し、すぐに使用できます。
 
-![Content credentials](/help/assets/assets/content-credentials.png)
+![Adobe Firefly画像の生成 ](/help/assets/assets/bugatti-type-57.png)
 
-**フォルダーコンテンツの視覚的プレビュー**
+**PSB ファイルのサポート**
 
-Experience Manager Assetsでは、コンテンツの参照時や検索時に、フォルダーのサムネールにフォルダーコンテンツの視覚的なプレビューが表示されるようになりました。これにより、AEM Assets リポジトリー内で使用可能なアセットを見つけやすくなります。
+Assetsのas a Cloud Serviceでは、既存のPSDファイルのサポートに加えて、Photoshopの大きなドキュメント（PSB ファイル）をサポートするようになりました。
 
-<!--
+### Content Hubの新しい機能強化 {#content-hub-new-enhancements}
 
+* 長いファイル名の処理が改善され、ツールヒントを使用して完全な名前を簡単に拡張できます。
+* コンテンツの縦横比に合わせて、より広い領域のコンテンツをカバーするようにサムネールを改善しました。
+* コンテンツハブでサポートされる、AEMのカスタムサムネールエクスペリエンス。
+* カラー検索の改善。
+* 設定の改善により、操作性が向上します。
+* コレクションの情報ページが改善され、作成者の名前が反映されるようになりました。
 
-**Content Credentials**
-
-Content Credentials feature in Assets view now provides detailed asset provenance data adhered to an asset. This helps to trace the enroute edits along the asset's lifecycle to prevent users from deception through deliberately tempered assets. This ensures content authenticity among users and fosters trust through transparency.
-
-When looking at the asset details, any image with content credentials added, such as those created with GenAI, displays the manifest details in a dedicated panel. If the asset is downloaded, published, or shared, the credentials remain intact with the asset.
-
-![check publish status1](/help/release-notes/assets/content-credentials.png)
-
--->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### AEM Forms の新機能 {#forms-new-prerelease-features}
+### AEM Formsの新しいプレリリース機能 {#forms-new-prerelease-features}
 
-#### コアコンポーネントベースのアダプティブフォーム用のビジュアルルールエディターの強化
+#### コアコンポーネントベースのアダプティブFormsのドラフトを自動保存
 
-アダプティブフォームの作成者は、コアコンポーネントのビジュアルルールエディターで利用可能な標準搭載の関数で繰り返し可能なフォームフィールドを使用して、フォーム内で複雑なビジネスロジックを構築できます。カスタマイズや開発チームの支援は必要ありません。
+部分的に完了したフォームを自動的にドラフトとして保存する自動保存機能を利用できるようになりました。 後で戻って、同じデバイスまたは他のデバイスで充填を完了することができます。 この機能により、ユーザーはフォームへの入力を最初からやり直す必要がなくなるので、フォームの放棄が減り、組織のコンバージョン率が向上します。
+
 
 ### AEM Forms の早期アクセス機能 {#forms-new-early-access-features}
 
-AEM Forms 早期アクセスプログラムでは、他のユーザーよりも先に最先端のイノベーションに独占的にアクセスし、その開発に貢献できるユニークな機会を提供します。プログラムを利用すると、複数のイノベーションにアクセスできます。
+AEM Forms早期アクセスプログラム プログラムは、最先端のイノベーションに独占的にアクセスし、その発展を形作るユニークな機会を提供します。
 
 このリリースノートでは、現在のリリースで提供されるイノベーションのリストを示します。早期アクセスプログラムで利用可能なイノベーションの完全なリストについては、[AEM Forms 早期アクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
 
-#### ユニバーサルエディターを使用したアダプティブフォームの作成
+#### AEM Forms AI アシスタント
 
-Adobe Experience Manager[ ユニバーサルエディター ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) を活用して、Edge Delivery サービスを介して提供されるヘッドレスとヘッドフルの両方の登録エクスペリエンスに対して、WYSIWYG ドラッグドロップオーサリングを使用したアダプティブフォームを作成します。 アダプティブフォームの作成者は、web ページ内のフォームのバリエーションに対する実験を簡単に作成して開始し、エンドユーザーにとって最もパフォーマンスの高いエクスペリエンスを決定できます。
+アダプティブForms用のジェネレーティブ AI は、まったく新しいレベルの機能を提供し、フォーム開発プロセスを簡単にします。 これにより、以前よりも迅速に、より優れたフォームを作成できます。
+
+![ ジェネレーティブ AI アシスタント、アダプティブForms](/help/forms/assets/generative-ai-assistant.png)
+
+提供されるジェネレーティブ AI 機能は次のとおりです。
+
+* **製品クエリ用 AI アシスタント**:AEM フォームに関する質問にすぐに回答できます。 AI アシスタントは、独自の個人のナレッジベースとして機能し、プラットフォーム内で直接洞察に満ちたガイダンスと推奨事項を提供します。
+
+* **アダプティブフォームの生成**：生成 AI プロンプトを使用して、本格的なフォームを簡単に作成します。 ジェネレーティブ AI は、ドロップオフを減らし、エクスペリエンスをパーソナライズする、使いやすいフォームを自動的に生成します。
+
+* **Formsのパネル生成**：特定のデータ収集ニーズに合わせてカスタマイズされたフォームセクションを生成します。 例えば、支払い情報、顧客の環境設定、旅行の詳細を収集するためのセクションを生成します。
+
+* **フォームレイアウトの変更**：生成 AI プロンプトを使用して、様々なレイアウトやデザインを試します。 フォームに最適なレイアウトをウィザードやタブ付きビューで試すことができます。 ジェネレーティブ AI プロンプトを使用すると、モバイルの応答性に合わせてフォームを最適化し、ユーザーの好みに合わせて視覚的に魅力的なフォームを作成できます。
+
+* **送信アクションの設定**：生成 AI プロンプトを使用すると、フォームの送信アクションを簡単に設定できます。 事前定義済みの送信アクションのライブラリから、または独自の開発チームが作成およびデプロイしたカスタム送信アクションのリストから選択します。
 
 >[!IMPORTANT]
 >
-> 早期アクセスイノベーションの早期アクセスプログラムへの参加に興味がある方は、公式アドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールを送信して利用申請してください。すべてのイノベーションまたは特定のイノベーションに対して利用申請できます。
+> 任意のイノベーションのために早期アクセスプログラムへの参加に興味がある場合は、興味のある機能のリストを記載したメールを公式アドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) に送信するだけです。
+
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
-
-### セルフサービス API キーを使用した CDN でのコンテンツのパージ {#purge-cdn}
-
-HTTP キャッシュ制御ヘッダーを使用した TTL の設定は、コンテンツ配信のパフォーマンスとコンテンツの鮮度のバランスを取る効果的なアプローチです。 ただし、更新されたコンテンツを直ちに提供することが重要なシナリオでは、CDN キャッシュを直接パージすると便利な場合があります。
-
-Cloud Manager設定パイプラインを使用してパージ API トークンをセルフサービスで設定し、次のバリエーションのいずれかを使用して [ パージ API を呼び出す ](/help/implementing/dispatcher/cdn-cache-purge.md) ことができるようにする [ 方法を説明します ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)。
-* 単一の URL
-* タグを使用した複数の URL
-* CDN キャッシュフルのパージ
-
-### 顧客管理 CDN 用 X-AEM-Edge-Key のセルフサービス設定 {#customermanaged-keys}
-
-以前は、顧客管理 CDN の設定に必要な X-AEM-Edge-Key を生成するには、サポートチケットが必要でした。これは、設定パイプラインを使用してデプロイされた設定ファイルでキー値を宣言することで、新しい環境のオンボーディングの遅延を取り除き、セルフサービスになりました。 [詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)。
-
-### トラフィックフィルタールールアラート {#traffic-filter-rules-alerts}
-
-トラフィックフィルタールール（オプションでライセンス可能な web アプリケーションファイアウォール（WAF）ルールを含む）を使用すると、ブロックするトラフィックを設定できます。
-
-トラフィックフィルタールールがトリガーされるたびに、[ アラートを登録 ](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) できるようになりました。 特定のトラフィック状況が発生するとアクションセンターのメール通知が送信されるので、適切な対策を講じることができます。
 
 ### コンテンツ配信関連の早期導入プログラム {#foundation-early-adopter}
 
@@ -152,33 +149,6 @@ AEM 6.5 と同様に、Apache／Dispatcher は、web 階層パイプラインの
 
 アドビが管理する CDN で、エッジレベルの動的 web コンテンツアセンブリ用のマークアップ言語である[エッジサイドインクルード（ESI）](/help/implementing/dispatcher/edge-side-includes.md)がサポートされるようになりました。ESI スニペットを含め、より大きい TTL で HTML ページ全体を CDN にキャッシュしながら、より頻繁なアップデート（小さい TTL）を必要とする小さなセクションを、接触チャネルから頻繁に取得できます。<!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-### コンテンツヘルス関連アクションセンター通知早期導入プログラム {#actions-center-notifications}
-
-[アクションセンター](/help/operations/actions-center.md)は、重要なインシデントが発生した場合や、コードや設定に関してプロアクティブなアクションを実行する必要がある場合にメール通知を送信します。アドビでは、コンテンツヘルスに関連するいくつかの新しいタイプの通知を導入しました。この機能は、早期導入プログラムを通じて利用できます。参加するには、アドビカスタマーケアにお問い合わせください。
-
-#### ページに多数のノードが含まれる {#page-nodes}
-
-ノードの数が多いと、レンダリングのパフォーマンスが低下し、ページの読み込み時間が短縮される可能性があります。あるページ上で大量のノードが検出されると、アクションセンターを通じて事前通知が届きます。これを受けて、ユーザーは、ページ内のノードの合計数を減らすために必要な手順を実行できます。
-
-#### 実行中のワークフローインスタンスの数が多い {#running-workflows}
-
-オーサー環境で多数のワークフローの数を実行している場合は、ワークフローエンジンのパフォーマンスが影響を受けます。実行中のワークフローインスタンスの数が多く検出された場合は、アクションセンターを通じて事前通知が届きます。このプロセスにより、不要な実行中のワークフローを終了するためのパージジョブを設定できます。
-
-#### ユーザーがカスタムグループに直接追加される {#users-customgroups}
-
-ユーザーがカスタムグループに直接追加されると、アクションセンターを通じて事前通知が届きます。このプロセスでは、関連する IMS グループにユーザーを追加し、これらの IMS グループを AEM グループのメンバーとして含めることで、IMS のベストプラクティスに従うことができます。
-
-#### JCR コンテンツが欠落しています {#jcr-content}
-
-JCR コンテンツが欠落していることが検出されると、アクションセンターは事前に通知します。このアプローチでは、欠落しているコンテンツを追加し、特定の AEM Assets 機能のエラーを防ぐことができます。
-
-#### 完了したワークフローがパージされない {#workflows}
-
-完了したワークフローが 90 日以上経過してもパージされていないと、アクションセンターは事前に通知します。このアプローチは、ワークフローインスタンスの数を減らすことで、ワークフローエンジンのパフォーマンスを向上させるのに役立ちます。
-
-#### Sling リソースが欠落している {#sling-resource}
-
-Sling リソースが欠落していることが検出されると、アクションセンターは事前に通知します。このアプローチでは、欠落しているリソースを追加し、特定の AEM Assets 機能のエラーを防ぐことができます。
 
 ## [!DNL Experience Manager] ガイド {#guides}
 
