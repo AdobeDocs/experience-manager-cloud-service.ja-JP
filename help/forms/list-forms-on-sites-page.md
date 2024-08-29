@@ -3,7 +3,7 @@ title: Forms ポータルコンポーネントを使用してAdobe Experience Ma
 description: AEM Sites ページ上でフォームを一覧表示する方法を説明します。
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 14%
@@ -17,7 +17,7 @@ ht-degree: 14%
 
 Forms ポータルの **検索とリスター** コンポーネントを使用すると、Sites ページにフォームを表示して一覧表示できます。 ユーザーは、組織の要件を満たすために、特定の条件に基づいてフォームの包括的なリストを設定および表示できます。 匿名ユーザーは、Sites ページにアクセスして、使用可能なフォームを表示および参照できます。 画面の右上隅にある **並べ替え** ドロップダウンオプションを使用して、リストされたフォームを昇順または降順で並べ替えることができます。
 
-![検索とリスターアイコン](assets/search-and-lister-component.png){width="250" align="center"}
+![検索とリスターアイコン](assets/search-and-lister-component.png)
 
 ## 前提条件
 
@@ -58,11 +58,11 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
 1. AEM Sitesページを **編集** モードで開きます。
 1. **[!UICONTROL ページ情報]**／**[!UICONTROL テンプレートを編集]**に移動します。
-   ![ テンプレートポリシーを編集 ](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
+   ![ テンプレートポリシーを編集 ](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. **[!UICONTROL ポリシー]** をクリックし、**[AEM アーキタイププロジェクト名 ] - Formsとコミュニケーションポータル** の下にある **[!UICONTROL 検索とリスター]** チェックボックスを選択します。
 
-   ![ ポリシーの選択 ](/help/forms/assets/search-lister-enable-policy.png){width="250" align="center"}
+   ![ ポリシーの選択 ](/help/forms/assets/search-lister-enable-policy.png)
 
 1. 「**[!UICONTROL 完了]**」をクリックします。
 1. オーサリングモードでAEM Sitesページを再度開きます。
@@ -78,7 +78,7 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
 1. ダイアログボックスで使用可能なコンポーネントを参照し、リストから目的のコンポーネントを選択します。 例えば、**Search &amp; Lister** コンポーネントをリストから選択して、**Search &amp; Lister** Formsポータルコンポーネントを追加します。
 
-   ![Search &amp; Lister コンポーネント ](/help/forms/assets/add-search-lister.png){width="250" align="center"}
+   ![Search &amp; Lister コンポーネント ](/help/forms/assets/add-search-lister.png)
 
 次に、**検索とリスター** コンポーネントのプロパティを設定します。
 
@@ -88,7 +88,7 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
 ### 「表示」タブ
 
-![ 「表示」タブ ](/help/forms/assets/search-and-lister-display-tab.png){width="250" align="center"}
+![ 「表示」タブ ](/help/forms/assets/search-and-lister-display-tab.png)
 
 1. **[!UICONTROL タイトル]** で、検索とリスターコンポーネントのタイトルを指定します。特徴的なタイトルを使用すると、ユーザーはフォームのリスト全体をすばやく検索できます。
 1. **[!UICONTROL レイアウト]** リストで、フォームをカード形式またはリスト形式で表すレイアウトを選択します。
@@ -97,14 +97,14 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
 ### 「アセット」タブ
 
-![ 「アセット」タブ ](/help/forms/assets/search-and-lister-asset-tab.png){width="250" align="center"}
+![ 「アセット」タブ ](/help/forms/assets/search-and-lister-asset-tab.png)
 
 1. 「**[!UICONTROL アセットフォルダー]**」タブで、フォームを取得してページに一覧表示する場所を指定します。
 1. **[!UICONTROL 別の場所を追加]** を使用すると、複数のフォルダーの場所を設定できます。
 
 ### 「結果」タブ
 
-![ 「表示」タブ ](/help/forms/assets/search-and-lister-result-tab.png){width="250" align="center"}
+![ 「表示」タブ ](/help/forms/assets/search-and-lister-result-tab.png)
 
 「**[!UICONTROL 結果]**」タブで、1 ページに表示するフォームの最大数を設定します。デフォルトでは、1 ページに 8 つのフォームです。
 
@@ -112,7 +112,7 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
 フォームのリストを表示するには、**検索とリスター** Forms ポータルコンポーネントを使用します。 AEM Sites ページをプレビューして、画面に表示される **Assets** フォルダーのフォームのリストを確認します。 検索バーを使用して特定のフォームを検索することもできます。
 
-![検索とリスターアイコン](assets/search-and-lister-component.png){width="250" align="center"}
+![検索とリスターアイコン](assets/search-and-lister-component.png)
 
 <!--
 ## Configure Azure Storage for Adaptive Forms {#configure-azure-storage-adaptive-forms}

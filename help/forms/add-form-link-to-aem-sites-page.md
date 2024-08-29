@@ -3,7 +3,7 @@ title: リンクFormsポータルコンポーネントを使用してAEM Sites�
 description: AEM Sitesページにフォームリンクを追加する方法を説明します。
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 16%
@@ -15,7 +15,7 @@ ht-degree: 16%
 
 銀行 Web サイトのシナリオでは、**リンク** Forms ポータルコンポーネントを使用すると、サイトの様々なセクションにわたって特定のフォームにユーザーを誘導することで、ナビゲーションを強化できます。 ローン申し込み、口座開設フォーム、フィードバック調査などのフォームを、web サイト全体に戦略的に配置して直接参照できます。 **リンク** コンポーネントは、Sites ページ内の特定のアダプティブFormsに移動するためのリンクを挿入します。 例えば、銀行の web サイトでは、匿名ユーザーは一般的な問い合わせフォームにアクセスできますが、ログインユーザーは、ローン申し込みや取引認証フォームなど、より安全なフォームに直接アクセスできます。
 
-![リンクアイコン](/help/forms/assets/link-forms.png){width="250" align="center"}
+![リンクアイコン](/help/forms/assets/link-forms.png)
 
 ## 前提条件
 
@@ -29,11 +29,11 @@ Forms ポータルコンポーネントの様々な機能を調べる前に、�
 
 1. AEM Sitesページを **編集** モードで開きます。
 1. **[!UICONTROL ページ情報]**／**[!UICONTROL テンプレートを編集]**に移動します。
-   ![ テンプレートポリシーを編集 ](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
+   ![ テンプレートポリシーを編集 ](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. **[!UICONTROL ポリシー]** をクリックし、**[AEM アーキタイププロジェクト名 ] - Formsとコミュニケーションポータル** の下にある **[!UICONTROL リンク]** チェックボックスを選択します。
 
-   ![ ポリシーの選択 ](/help/forms/assets/add-link.png){width="250" align="center"}
+   ![ ポリシーの選択 ](/help/forms/assets/add-link.png)
 
 1. 「**[!UICONTROL 完了]**」をクリックします。
 1. オーサリングモードでAEM Sitesページを再度開きます。
@@ -49,7 +49,7 @@ Forms ポータルコンポーネントの様々な機能を調べる前に、�
 
 1. ダイアログボックスで使用可能なコンポーネントを参照し、リストから目的のコンポーネントを選択します。 例えば、リストから **リンク** コンポーネントを選択して、**リンク** Formsポータルコンポーネントを追加します。
 
-   ![ リンクコンポーネント ](/help/forms/assets/add-link-in-sites.png){width="250" align="center"}
+   ![ リンクコンポーネント ](/help/forms/assets/add-link-in-sites.png)
 
 次に、**リンク** コンポーネントのプロパティを設定します。
 
@@ -59,19 +59,19 @@ Forms ポータルコンポーネントの様々な機能を調べる前に、�
 
 ### 「表示」タブ
 
-![ 「表示」タブ ](/help/forms/assets/link-asset-tab.png){width="250" align="center"}
+![ 「表示」タブ ](/help/forms/assets/link-asset-tab.png)
 
 リンクで表されたフォームを容易に識別できるように、「**[!UICONTROL 表示]**」タブでリンクのキャプションとツールヒントを指定します。
 
 ### 「アセット情報」タブ
 
-![ 「Assets情報」タブ ](/help/forms/assets/link-asset-info.png){width="250" align="center"}
+![ 「Assets情報」タブ ](/help/forms/assets/link-asset-info.png)
 
 「**[!UICONTROL アセット情報]**」タブで、アセットが保存されているリポジトリパスを指定します。
 
 ### 「クエリパラメーター」タブ
 
-![ 「クエリパラメーター」タブ ](/help/forms/assets/link-query-tab.png){width="250" align="center"}
+![ 「クエリパラメーター」タブ ](/help/forms/assets/link-query-tab.png)
 
  「**[!UICONTROL クエリパラメーター]**」タブで、追加のパラメーターをキーと値のペアの形式で指定します。リンクをクリックすると、これらのその他のパラメーターはフォームと共に渡されます。
 
@@ -79,7 +79,7 @@ Forms ポータルコンポーネントの様々な機能を調べる前に、�
 
 Sites ページをプレビューして、{Link **コンポーネントの「** Assets情報 **プロパティ」タブで指定された、アダプティブフォームへのリンクを表示し** す。 リンクをクリックすると、ユーザー用のフォームが画面に表示され、ユーザーは権限に基づいてフォームにアクセスできます。
 
-![ 「クエリパラメーター」タブ ](/help/forms/assets/link-forms.png){width="250" align="center"}
+![ 「クエリパラメーター」タブ ](/help/forms/assets/link-forms.png)
 
 ## 関連記事
 

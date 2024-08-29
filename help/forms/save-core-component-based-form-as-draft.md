@@ -4,19 +4,21 @@ description: コアコンポーネントベースのアダプティブフォー�
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
-source-git-commit: 72e8223c91e5722e27ebd6853b8b75a7415f3e4d
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1376'
 ht-degree: 8%
 
 ---
 
 
-# Sites ページでのフォームの下書きとしての保存とリスト
+# フォームをドラフトとして保存し、Sites ページに一覧表示する
+
+<span class="preview"> この記事には、プレリリース機能である **自動保存** 機能に関するコンテンツが含まれています。 プレリリース機能には、[プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)を通じてのみアクセスできます。</span>
 
 フォームへの入力を開始しても、一時停止してから後で戻る必要があるユーザーを考えてみましょう。 AEMには、今後の完成に備えてフォームをドラフトとして保存できる `save-as-draft` オプションが用意されています。 これを容易にするために、AEMには、標準で **ドラフトと送信** フォームポータルコンポーネントが用意されています。このコンポーネントは、AEM Sites ページにドラフトと送信を表示します。 このコンポーネントには、後で完了するためにドラフトとして保存されたフォームと、送信済みのフォームが一覧表示されます。 ログインしているユーザーのみが、自分の下書きを編集したり、送信されたフォームを表示したりできます。 ただし、匿名ユーザーが **検索とリスター** コンポーネントを使用してフォームのリストを移動し、フォームをドラフトとして保存した場合、そのドラフトは **ドラフトと送信** コンポーネントに表示されません。 ドラフトと送信を表示するには、フォームの送信時にユーザーがログインしている必要があります。
 
-![下書きアイコン](assets/drafts-component.png){width="250" align="center"}
+![下書きアイコン](assets/drafts-component.png)
 
 ## 前提条件
 
@@ -32,16 +34,16 @@ ht-degree: 8%
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Azure ストレージ]**&#x200B;に移動します。
 
-   ![Azure ストレージカードの選択 ](/help/forms/assets/save-form-as-draft-azure-card.png){width="250" align="center"}
+   ![Azure ストレージカードの選択 ](/help/forms/assets/save-form-as-draft-azure-card.png)
 
 1. 設定フォルダーを選択して設定を作成し、「**[!UICONTROL 作成]**」を選択します。
 
-   ![Azure ストレージ設定フォルダーを選択 ](/help/forms/assets/save-form-as-draft-select-config-folder.png){width="250" align="center"}
+   ![Azure ストレージ設定フォルダーを選択 ](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
 1. 「**[!UICONTROL タイトル]**」フィールドで設定のタイトルを指定します。
 1. 「**[!UICONTROL Azure ストレージアカウント]**」フィールドと「**[!UICONTROL Azure アクセスキー]**」フィールドで [!DNL Azure] ストレージアカウントの名前を指定します。
 
-   ![Azure ストレージ設定](/help/forms/assets/save-form-as-draft-azure-storage.png){width="250" align="center"}
+   ![Azure ストレージ設定](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
 1. 「**保存**」をクリックします。
 
@@ -53,12 +55,12 @@ ht-degree: 8%
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL Forms]**／**[!UICONTROL 統合ストレージコネクタ]**&#x200B;に移動します。
 
-   ![ 統合コネクタストレージ ](/help/forms/assets/save-form-as-draft-unified-connector.png){width="250" align="center"}
+   ![ 統合コネクタストレージ ](/help/forms/assets/save-form-as-draft-unified-connector.png)
 
 1. 「**[!UICONTROL フォームポータル]**」セクションで、「**[!UICONTROL ストレージ]**」ドロップダウンリストから「**[!UICONTROL Azure]**」を選択します。
 1. Azure ストレージ設定の設定パスを「**[!UICONTROL ストレージ設定パス]**」フィールドで指定します。
 
-   ![ 統合コネクタストレージ設定 ](/help/forms/assets/save-form-as-draft-unified-connector-storage.png){width="250" align="center"}
+   ![ 統合コネクタストレージ設定 ](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
@@ -74,11 +76,11 @@ ht-degree: 8%
 
 1. AEM Sitesページを **編集** モードで開きます。
 1. **[!UICONTROL ページ情報]**／**[!UICONTROL テンプレートを編集]**に移動します。
-   ![ テンプレートポリシーを編集 ](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
+   ![ テンプレートポリシーを編集 ](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. **[!UICONTROL ポリシー]** をクリックし、**[AEM アーキタイププロジェクト名 ] - Formsとコミュニケーションポータル** の下にある **[!UICONTROL ドラフトと送信]** チェックボックスを選択します。
 
-   ![ ポリシーの選択 ](/help/forms/assets/save-form-as-draft-enable-policy.png){width="250" align="center"}
+   ![ ポリシーの選択 ](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. 「**[!UICONTROL 完了]**」をクリックします。
 1. オーサリングモードでAEM Sitesページを再度開きます。
@@ -93,7 +95,7 @@ ht-degree: 8%
 
 1. ダイアログボックスで使用可能なコンポーネントを参照し、リストから目的のコンポーネントを選択します。 例えば、リストから **ドラフトと送信** コンポーネントを選択して、**ドラフトと送信** Formsポータルコンポーネントを追加します。
 
-   ![ ドラフトと送信コンポーネントの追加 ](/help/forms/assets/save-form-as-draft-add-dns.png){width="250" align="center"}
+   ![ ドラフトと送信コンポーネントの追加 ](/help/forms/assets/save-form-as-draft-add-dns.png)
 
 次に、要件に従って、**ドラフトと送信** コンポーネントのプロパティを設定します。
 
@@ -107,7 +109,7 @@ ht-degree: 8%
    * **タイプを選択**：フォームを下書きまたは送信済みのフォームとして表示します。 **ドラフトForms** を選択した場合は、ドラフトとして保存されたフォームが表示されます。 または、「**送信済みForms**」を選択すると、ログインユーザーによって送信されたフォームが表示されます。
    * **レイアウト**：下書きのフォームまたは送信済みのフォームをカード形式またはリスト形式で表示します。
 
-   ![ ドラフトおよび送信コンポーネントのプロパティ ](/help/forms/assets/save-form-as-draft-dns-properties.png){width="250" align="center"}
+   ![ ドラフトおよび送信コンポーネントのプロパティ ](/help/forms/assets/save-form-as-draft-dns-properties.png)
 
 ## ドラフトとして保存するフォームの設定
 
@@ -129,13 +131,11 @@ ht-degree: 8%
 1. 「**[!UICONTROL 条件]**」セクションで「**クリック済み** を選択し、「**[!UICONTROL 次に]**」セクションで「**フォームを保存**」オプションを選択します。
 1. 「**[!UICONTROL 完了]**」を選択し、ルールを保存します。
 
-   ![ ボタンのルールを作成 ](/help/forms/assets/save-form-as-drfat-create-rule.png){width="250" align="center"}
+   ![ ボタンのルールを作成 ](/help/forms/assets/save-form-as-drfat-create-rule.png)
 
 アダプティブフォームをプレビューして入力し、「**フォームを保存**」ボタンをクリックすると、フォームはドラフトとして保存されます。
 
 ### 自動保存
-
-<span class="preview"> この記事には、プレリリース機能である **自動保存** 機能に関するコンテンツが含まれています。 プレリリース機能には、[プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)を通じてのみアクセスできます。</span>
 
 >[!NOTE]
 >
@@ -147,7 +147,7 @@ ht-degree: 8%
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
 1. ガイドコンテナのプロパティ ![ ガイドプロパティ ](/help/forms/assets/configure-icon.svg) アイコンをクリックし、「**[!UICONTROL 自動保存]**」タブを開きます。
 
-   ![ 自動保存 ](/help/forms/assets/auto-save.png){width="250" align="center"}
+   ![ 自動保存 ](/help/forms/assets/auto-save.png)
 
 1. 「**[!UICONTROL 有効]**」チェックボックスを選択して、フォームの自動保存を有効にします。
 1. **[!UICONTROL トリガー]** を **時間ベース** として設定し、指定した時間間隔の経過後にフォーム <!--based on the occurrence of an event or--> を自動保存します。
@@ -159,11 +159,11 @@ ht-degree: 8%
 保存されたドラフトまたは送信されたフォームを表示するには、**ドラフトと送信**Forms ポータルコンポーネントを使用します。
 [ ドラフトと送信コンポーネントの設定ダイアログ **で**[!UICONTROL  タイプを選択 ]**が** ドラフトForms](#configure-properties-of-the-drafts--submissions-component) として選択されている場合、ドラフトとして保存されたフォームは Sites ページに表示されます。 ドラフトを開くには、省略記号（...）をクリックしてフォームを完成させます。
 
-![下書きアイコン](assets/drafts-component.png){width="250" align="center"}
+![下書きアイコン](assets/drafts-component.png)
 
 [ ドラフト&amp;送信コンポーネントの設定ダイアログ **で**[!UICONTROL  タイプを選択 ]**が** 送信済みForms](#configure-properties-of-the-drafts--submissions-component) として選択されている場合、送信済みフォームが表示されます。 送信されたフォームは表示できますが、編集することはできません。
 
-![送信アイコン](assets/submission-listing.png){width="250" align="center"}
+![送信アイコン](assets/submission-listing.png)
 
 フォームの右下隅に表示される省略記号（...）をクリックして、フォームを破棄することもできます。
 

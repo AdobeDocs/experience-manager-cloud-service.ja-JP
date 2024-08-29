@@ -4,7 +4,7 @@ description: 各種デバイスごとのアダプティブフォームのレイ�
 feature: Adaptive Forms, Core Components
 keywords: コアコンポーネントに基づくアダプティブフォームのレイアウト、フォームの様々なレイアウト、動的フォームレイアウト AEM、AEM Cloud Service フォームレイアウト、AEM コアコンポーネントのフォームレイアウトタイプ、アダプティブフォームのレイアウト
 role: User, Developer, Admin
-source-git-commit: b06d86ffc620327a744f53733e3bf84fe8c03f2f
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 4%
@@ -44,7 +44,7 @@ ht-degree: 4%
 
 パネルレイアウトは、関連するフィールドを整理して、対応するコンテンツを簡単に移動および検索するのに役立ちます。 パネルレイアウトを使用すると、アダプティブフォーム内の個別のパネル、セクションまたはパネル内にフォームコンポーネントを配置できます。
 
-![ パネルレイアウト ](/help/forms/assets/panel-layout.png){width="250" align="center"}
+![ パネルレイアウト ](/help/forms/assets/panel-layout.png)
 
 パネルレイアウト
 
@@ -54,7 +54,7 @@ ht-degree: 4%
 
 ウィザードレイアウトは、複雑なフォームを明確な手順に分割してシンプル化するのに役立ちます。 各手順はプロセスの異なる部分を表し、ユーザーは多くの場合、「次へ **ボタンと** 前へ **ボタンを使用して手順を順番に移動し** す。 ウィザードレイアウトを使用すると、複数のセクションや手順を含むフォームを作成できます。
 
-![ ウィザードのレイアウト ](/help/forms/assets/wizard-layout-compare.gif){width="250" align="center"}
+![ ウィザードのレイアウト ](/help/forms/assets/wizard-layout-compare.gif)
 
 ウィザード レイアウト
 
@@ -64,7 +64,7 @@ ht-degree: 4%
 
 垂直タブレイアウトは、左側のレイアウトのタブとも呼ばれます。 垂直タブレイアウトでは、フォームの左側に沿ってパネルまたはセクションが整理されます。 パネルやセクションが縦に積み重ねられたフォームのレイアウトは一般的で、読みやすさやナビゲーションが容易になります。
 
-![ 垂直方向のレイアウト ](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+![ 垂直方向のレイアウト ](/help/forms/assets/vertical-tab.gif)
 
 垂直タブレイアウト
 
@@ -76,7 +76,7 @@ ht-degree: 4%
 水平タブレイアウトは、上部レイアウトのタブとも呼ばれます。 水平タブレイアウトでは、パネルまたはセクションを並べて配置します。 このレイアウトでは、フォームまたはパネルの幅に対して直線的にフォームセクションが表示されます。
 
 
-![ 水平レイアウト ](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+![ 水平レイアウト ](/help/forms/assets/horizontal-layout.gif)
 
 水平タブレイアウト
 
@@ -87,7 +87,7 @@ ht-degree: 4%
 
 アコーディオンレイアウトでは、アダプティブフォーム内の折りたたみ可能なセクションまたはパネルにコンテンツが表示されます。 セクションを展開すると、内にコンテンツが表示されますが、その他のセクションは折りたたまれたままです。 大量の情報をコンパクトに表示する場合に最適です。
 
-![ アコーディオンレイアウト ](/help/forms/assets/accordion-layout-compare.gif){width="250" align="center"}
+![ アコーディオンレイアウト ](/help/forms/assets/accordion-layout-compare.gif)
 
 アコーディオンレイアウト
 
@@ -132,7 +132,7 @@ ht-degree: 4%
 1. 左上隅の「**[!UICONTROL Adobe Experience Manager]**」/「**[!UICONTROL Forms]**」/「**[!UICONTROL Formsとドキュメント]** を選択します。
 1. 既存のアダプティブフォームを編集モードで開きます（作成済みの場合）。
 
-   ![ アダプティブフォームを開く ](/help/forms/assets/insert-layout.png){width="250" align="center"}
+   ![ アダプティブフォームを開く ](/help/forms/assets/insert-layout.png)
 
    または、[ 新しいアダプティブフォームを作成する ](/help/forms/creating-adaptive-form-core-components.md) こともできます。
 
@@ -176,13 +176,13 @@ ht-degree: 4%
 
    ![ 水平タブの「項目」タブ ](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
 
-2. **追加** アイコンをクリックして、新しいパネルを追加します。
+1. **追加** アイコンをクリックして、新しいパネルを追加します。
 
    ![ 新しいパネルを追加 ](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"}
 
    **追加** アイコンをクリックすると、**新規コンポーネントを挿入** ダイアログボックスが表示されます。
 
-3. パネルコンポーネントを選択します。
+1. パネルコンポーネントを選択します。
 
    ![ 新しいパネルを追加 ](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"}
 
@@ -192,11 +192,11 @@ ht-degree: 4%
 
    新しいパネルの名前を指定します。指定しない場合、水平タブコンポーネントのプロパティを保存できません。
 
-4. 次の図に示すように、パネルの名前を指定します。
+1. 次の図に示すように、パネルの名前を指定します。
 
    ![ パネル名 ](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
 
-5. 「**完了**」をクリックします。
+1. 「**完了**」をクリックします。
 
    「**完了**」をクリックすると、3 つのパネルが並んで表示されます。 パネル名は、各パネルの見出しとして表示され、各パネルにフォームコンポーネントを追加できます。
 
@@ -204,15 +204,15 @@ ht-degree: 4%
 
    パネルコンポーネントのプロパティを設定できます。 例えば、IT リクエストフォームにパネルタイトルが含まれていない場合は、パネルコンポーネントのプロパティを設定する手順を以下に示します。
 
-6. 最初のパネルのプロパティを開きます。
+1. 最初のパネルのプロパティを開きます。
 
    ![ パネル 1 のプロパティ ](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
 
-7. 「**基本**」タブから「**タイトルを非表示**」チェックボックスを選択します。
+1. 「**基本**」タブから「**タイトルを非表示**」チェックボックスを選択します。
 
    ![タイトルを非表示にする](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
 
-8. 「**完了**」をクリックします。
+1. 「**完了**」をクリックします。
 
 同様に、他の 2 つのパネルのタイトルを非表示にすることもできます。 完了したら、フォームコンポーネントを各パネルに追加できます。
 
@@ -262,7 +262,7 @@ ht-degree: 4%
 
 1. オーサリング環境の右上隅にある「**[!UICONTROL プレビュー]**」をクリックします。
 
-   ![ 水平レイアウト ](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+   ![ 水平レイアウト ](/help/forms/assets/horizontal-layout.gif)
 
 また、[ コンポーネントをドラッグ&amp;ドロップ ](#extra-bytes) して、フォームコンポーネントを各パネルに追加することもできます。
 
@@ -341,7 +341,7 @@ ht-degree: 4%
 
    レイアウトを選択すると、それに応じてレイアウト内のコンポーネントの配置が変わります。 例えば、**[!UICONTROL コンポーネントを置換]** ダイアログボックスで垂直タブコンポーネントを選択すると、パネルの配置が左側のタブに変わります。
 
-   ![ 垂直方向のレイアウト ](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+   ![ 垂直方向のレイアウト ](/help/forms/assets/vertical-tab.gif)
 
 ## 追加バイト
 
