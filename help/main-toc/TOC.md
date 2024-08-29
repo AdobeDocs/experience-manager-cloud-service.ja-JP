@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 260761e6380846f44756adf4aa4c5410a40ce446
+source-git-commit: 9c6cf85ccc4e15671669b2fc59b01e7c0cef10e2
 workflow-type: tm+mt
-source-wordcount: '5481'
-ht-degree: 99%
+source-wordcount: '5528'
+ht-degree: 98%
 
 ---
 
@@ -691,6 +691,7 @@ ht-degree: 99%
       + コアコンポーネント {#authoring-adaptive-forms-core-components}
          + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
             + [アダプティブフォームを作成します](/help/forms/creating-adaptive-form-core-components.md)
+            + [コアコンポーネントに基づくアダプティブフォームのレイアウト設定](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [アダプティブフォームフラグメントの作成](/help/forms/adaptive-form-fragments-core-components.md)
             + [アダプティブフォームのテーマの作成 - コアコンポーネント](/help/forms/using-themes-in-core-components.md)
             + [コアコンポーネントに基づくアダプティブフォームテンプレートの作成](/help/forms/template-editor-core-components.md)
@@ -715,7 +716,6 @@ ht-degree: 99%
             + [アダプティブフォームへのバージョン管理、コメント、注釈の追加](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [アダプティブフォームの比較](/help/forms/compare-forms.md)
             + [移行ユーティリティツールを使用した基盤コンポーネントベースのアダプティブフォームからコアコンポーネントベースのフォームへの変換](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [アダプティブフォームのドラフトとしての保存](/help/forms/save-core-component-based-form-as-draft.md)
             + コアコンポーネントに基づくアダプティブフォームのルールエディターの概要{#rule-editor-core-components}
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターの概要](/help/forms/rule-editor-core-components.md)
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターのユーザーインターフェイス](/help/forms/rule-editor-core-components-user-interface.md)
@@ -726,6 +726,11 @@ ht-degree: 99%
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要](/help/forms/create-and-use-custom-functions.md)
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成と使用](/help/forms/custom-function-core-component-create-function.md)
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の例](/help/forms/custom-function-core-components-use-cases.md)
+            + Forms ポータルとそのコンポーネントの概要 {#introduction-to-forms-portal}
+               + [Forms ポータルコンポーネントの概要](/help/forms/configure-forms-portal.md)
+               + [検索とリスターコンポーネントを使用して、Sites ページ上でフォームを一覧表示する](/help/forms/list-forms-on-sites-page.md)
+               + [ドラフトと送信コンポーネントを使用した、Sites ページ上でのフォームのドラフトとしての保存とリスト](/help/forms/save-core-component-based-form-as-draft.md)
+               + [リンクコンポーネントを使用したサイトページへのフォームリンクの追加](/help/forms/add-form-link-to-aem-sites-page.md)
       + 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
          + PDF フォームのアダプティブフォームへの変換 {#afcs}
             + [自動フォーム変換サービスの概要](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja)
@@ -782,7 +787,6 @@ ht-degree: 99%
             + [アダプティブフォームのメタデータプロパティの再利用](/help/forms/reusing-adaptive-forms.md)
          + アダプティブフォームのアクセシビリティの向上 {#accessible-adaptive-forms}
             + [アクセシブルなアダプティブフォームの作成](/help/forms/creating-accessible-adaptive-forms.md)
-         + [フォームポータルの設定](/help/forms/configure-forms-portal.md)
          + [レビューの作成と管理](/help/forms/create-reviews-forms.md)
          + [送信レビュー担当者のフォームへの関連付け](/help/forms/adding-reviewers-form.md)
          + [アダプティブフォームのレビューの作成と管理](/help/forms/review-adaptiveforms-in-sites-page.md)

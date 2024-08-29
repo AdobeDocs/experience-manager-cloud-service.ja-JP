@@ -4,9 +4,9 @@ description: 各種デバイスごとのアダプティブフォームのレイ�
 feature: Adaptive Forms, Foundation Components
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: ba98b4e17a1245a5a5d208b4bf8698b4da4e9f6b
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '858'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,8 @@ ht-degree: 100%
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=ja#) |
-| AEM as a Cloud Service | この記事 |
+| AEM as a Cloud Service（コアコンポーネント） | [ここをクリックしてください](/help/forms/layout-capabilities-adaptive-forms-core-components.md) |
+| AEM as a Cloud Service（基盤コンポーネント） | この記事 |
 
 [!DNL Adobe Experience Manager]では、簡単に使用できるアダプティブフォームを作成でき、エンドユーザーに動的なエクスペリエンスを提供します。フォームのレイアウトは、アダプティブフォームでの各項目やコンポーネントの表示方法をコントロールします。
 

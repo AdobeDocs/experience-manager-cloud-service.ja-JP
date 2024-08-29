@@ -1,228 +1,180 @@
 ---
-title: コアコンポーネントベースのアダプティブフォームをドラフトとして保存する方法
-description: コアコンポーネントベースのアダプティブフォームをドラフトとして保存し、Forms ポータルを作成して、標準のコアコンポーネントをAEM Sites ページで使用する方法を説明します。
+title: コアコンポーネントベースのアダプティブフォームをドラフトとして保存し、ドラフトと送信コンポーネントを使用してドラフトと送信をリストする方法を教えてください。
+description: コアコンポーネントベースのアダプティブフォームをドラフトとして保存する方法を説明します。 また、ドラフトと送信コンポーネントを使用して、ログインしているユーザーのドラフトと送信をリストする方法も理解します。
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
-source-git-commit: 52b87073cad84705b5dc0c6530aff44d1e686609
+source-git-commit: 72e8223c91e5722e27ebd6853b8b75a7415f3e4d
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 15%
+source-wordcount: '1375'
+ht-degree: 8%
 
 ---
 
 
-# コアコンポーネントベースのアダプティブフォームをドラフトとして保存 {#save-af-form}
+# Sites ページでのフォームの下書きとしての保存とリスト
 
-アダプティブフォームをドラフトとして保存することは、ユーザーの効率と精度を高める上で不可欠な機能です。 この機能を使用すると、ユーザーは進行状況を保存し、入力した情報を失わずに後でタスクを完了するために戻ることができます。 `save-as-draft` オプションを提供することで、時間の管理における柔軟性の確保、データ消失のリスクの軽減、送信精度の維持が可能になります。 フォームをドラフトとして保存して、後で完成させることができます。
+フォームへの入力を開始しても、一時停止してから後で戻る必要があるユーザーを考えてみましょう。 AEMには、今後の完成に備えてフォームをドラフトとして保存できる `save-as-draft` オプションが用意されています。 これを容易にするために、AEMには、標準で **ドラフトと送信** フォームポータルコンポーネントが用意されています。このコンポーネントは、AEM Sites ページにドラフトと送信を表示します。 このコンポーネントには、後で完了するためにドラフトとして保存されたフォームと、送信済みのフォームが一覧表示されます。 ログインしているユーザーのみが、自分の下書きを編集したり、送信されたフォームを表示したりできます。 ただし、匿名ユーザーが **検索とリスター** コンポーネントを使用してフォームのリストを移動し、フォームをドラフトとして保存した場合、そのドラフトは **ドラフトと送信** コンポーネントに表示されません。 ドラフトと送信を表示するには、フォームの送信時にユーザーがログインしている必要があります。
 
-## 考慮事項
+![下書きアイコン](assets/drafts-component.png){width="250" align="center"}
+
+## 前提条件
 
 * [お使いの環境でアダプティブ Forms コアコンポーネントを有効にします。](/help/forms/enable-adaptive-forms-core-components.md)
 
-* この機能を使用するには、[ コアコンポーネントがバージョン 3.0.24 以降に設定されている ](https://github.com/adobe/aem-core-forms-components) とを確認します。
-* Azure ストレージアカウントへのアクセスを許可するための [Azure ストレージアカウントとアクセスキー ](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) があることを確認します。
+  最新のコアコンポーネントを環境にデプロイすると、オーサリング環境でForms ポータルコンポーネントにアクセスできるようになります。
 
-## アダプティブフォームのドラフトとしての保存
+* [ ドラフトと送信Forms ポータルコンポーネント用の Azure ストレージコネクタと統合ストレージコネクタの設定 ](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
 
-[!DNL Experience Manager Forms] Data Integration （data-integration.md）は、フォームを [!DNL Azure] ストレージサービス [!DNL Azure] 統合するためのストレージ設定を提供します。 フォームデータモデル（FDM）を使用して、[!DNL Azure] サーバーと連携するアダプティブFormsを作成すると、ビジネスワークフローを使用できるようになります。
+### ドラフトと送信Forms ポータルコンポーネント用の Azure ストレージコネクタと統合ストレージコネクタの設定
 
-フォームをドラフトとして保存するには、Azure ストレージアカウントと、[!DNL Azure] ストレージアカウントへのアクセスを許可するためのアクセスキーがあることを確認します。 フォームをドラフトとして保存するには、次の手順を実行します。
-
-1. [Azure ストレージ設定の作成](#create-azure-storage-configuration)
-1. [フォームポータル用統合ストレージコネクタの設定](#configure-usc-forms-portal)
-1. [アダプティブフォームをドラフトとして保存するためのルールの作成](#rule-to-save-adaptive-form-as-draft)
-
-
-### 1. Azure ストレージ設定の作成 {#create-azure-storage-configuration}
-
-Azure ストレージアカウントと、[!DNL Azure] ストレージアカウントへのアクセスを許可するためのアクセスキーを取得したら、次の手順を実行して Azure ストレージ設定を作成します。
+**ドラフトと送信** コンポーネントには、AEM Sitesページにドラフトを保存して一覧表示するためのストレージを設定する必要があります。 統合ストレージコネクタは、AEMを外部ストレージとリンクするためのフレームワークを提供します。 フォームをドラフトとして保存するには、Azure ストレージアカウントと、[!DNL Azure] ストレージアカウントへのアクセスを許可するためのアクセスキーがあることを確認します。 Azure ストレージアカウントとアクセスキーを取得したら、次の手順を実行して Azure ストレージ設定を作成します。
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Azure ストレージ]**&#x200B;に移動します。
 
-   ![Azure ストレージカードの選択 ](/help/forms/assets/save-form-as-draft-azure-card.png)
+   ![Azure ストレージカードの選択 ](/help/forms/assets/save-form-as-draft-azure-card.png){width="250" align="center"}
 
 1. 設定フォルダーを選択して設定を作成し、「**[!UICONTROL 作成]**」を選択します。
 
-   ![Azure ストレージ設定フォルダーを選択 ](/help/forms/assets/save-form-as-draft-select-config-folder.png)
+   ![Azure ストレージ設定フォルダーを選択 ](/help/forms/assets/save-form-as-draft-select-config-folder.png){width="250" align="center"}
 
 1. 「**[!UICONTROL タイトル]**」フィールドで設定のタイトルを指定します。
 1. 「**[!UICONTROL Azure ストレージアカウント]**」フィールドと「**[!UICONTROL Azure アクセスキー]**」フィールドで [!DNL Azure] ストレージアカウントの名前を指定します。
 
-   ![Azure ストレージ設定](/help/forms/assets/save-form-as-draft-azure-storage.png)
+   ![Azure ストレージ設定](/help/forms/assets/save-form-as-draft-azure-storage.png){width="250" align="center"}
 
 1. 「**保存**」をクリックします。
 
->[!NOTE]
->
-> **[!UICONTROL Azure ストレージアカウント]** と **[!UICONTROL Azure アクセスキー]** は、[Microsoft Azure Portal](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) から取得できます。
+   >[!NOTE]
+   >
+   > **[!UICONTROL Azure ストレージアカウント]** と **[!UICONTROL Azure アクセスキー]** は、[Microsoft Azure Portal](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) から取得できます。
 
-
-### 2. Forms ポータル用の統合ストレージコネクタの設定 {#configure-usc-forms-portal}
-
-Azure ストレージ設定が正常に作成されたら、次の手順を使用してForms Portal 用の統合ストレージコネクタを設定します。
+   Azure ストレージ設定が正常に作成されたら、次の手順に従って、Forms Portal 用の統合ストレージコネクタを設定します。
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL Forms]**／**[!UICONTROL 統合ストレージコネクタ]**&#x200B;に移動します。
 
-   ![ 統合コネクタストレージ ](/help/forms/assets/save-form-as-draft-unified-connector.png)
+   ![ 統合コネクタストレージ ](/help/forms/assets/save-form-as-draft-unified-connector.png){width="250" align="center"}
 
 1. 「**[!UICONTROL フォームポータル]**」セクションで、「**[!UICONTROL ストレージ]**」ドロップダウンリストから「**[!UICONTROL Azure]**」を選択します。
-1. 「**[!UICONTROL ストレージ設定パス]**」フィールドで、[Azure ストレージ設定の設定パス](#create-azure-storage-configuration)を指定します。
+1. Azure ストレージ設定の設定パスを「**[!UICONTROL ストレージ設定パス]**」フィールドで指定します。
 
-   ![ 統合コネクタストレージ設定 ](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
+   ![ 統合コネクタストレージ設定 ](/help/forms/assets/save-form-as-draft-unified-connector-storage.png){width="250" align="center"}
 
-1. **[!UICONTROL 保存]** を選択してから **[!UICONTROL Publish]** を選択して、設定を公開します。
+1. 「**[!UICONTROL 保存]**」を選択します。
 
-### 3. アダプティブフォームをドラフトとして保存するためのルールを作成する {#rule-to-save-adaptive-form-as-draft}
+>[!NOTE]
+>
+> Azure 以外のストレージオプションを設定する必要がある場合は、公式メールアドレスからaem-forms-ea@adobe.comに詳細な要件を書き込みます。
 
-フォームをドラフトとして保存するには、ボタンなどのフォームコンポーネントに **フォームを保存** ルールを作成します。 ボタンをクリックすると、ルールがトリガーされ、フォームがドラフトとして保存されます。 ボタンコンポーネントに **フォームを保存** ルールを作成するには、次の手順を実行します。
+ドラフトと送信済みフォームを格納するための Azure ストレージコネクタと統合ストレージコネクタの設定が完了したら、AEM Sites ページに **ドラフトと送信** コンポーネントを追加します。
 
-1. オーサーインスタンスで、アダプティブフォームを編集モードで開きます。
-1. 左側のパネルで、 ![コンポーネントアイコン](assets/components_icon.png) を選択し、「**[!UICONTROL ボタン]**」コンポーネントをフォームにドラッグします。
-1. 「**[!UICONTROL ボタン]**」コンポーネントを選択してから、![設定アイコン](assets/configure_icon.png) をクリックします。
-1. 「**[!UICONTROL ルールを編集]**」アイコンを選択して、ルールエディターを開きます。
-1. 「**[!UICONTROL 作成]**」を選択し、ルールを設定および作成します。
-1. 「**[!UICONTROL 条件]**」セクションで「**クリック済み** を選択し、「**[!UICONTROL 次に]**」セクションで「**フォームを保存**」オプションを選択します。
-1. 「**[!UICONTROL 完了]**」を選択し、ルールを保存します。
+## ドラフト&amp;送信コンポーネントをAEM Sites ページに追加する方法
 
-![ ボタンのルールを作成 ](/help/forms/assets/save-form-as-drfat-create-rule.png)
-
-アダプティブフォームをプレビューして入力し、「**フォームを保存**」ボタンをクリックすると、フォームは後で使用するためにドラフトとして保存されます。
-
-## ドラフト&amp;送信コンポーネントでAEM Sitesページにドラフトを一覧表示
-
-AEM Formsでは、**ドラフトと送信** ポータルコンポーネントを標準で提供しており、保存済みのフォームをAEM Sites ページに表示できます。 **ドラフトと送信** コンポーネントは、後で完了するためにドラフトとして保存されたフォームと、送信済みのフォームを表示します。 このコンポーネントは、ユーザーが作成したアダプティブFormsに関連するドラフトや送信を一覧表示することにより、ログインしているユーザーにパーソナライズされたエクスペリエンスを提供します。
-
-標準のForms ポータルコンポーネントを使用して、AEM Sites ページにフォームドラフトを一覧表示できます。 **ドラフトと送信** ポータルコンポーネントを使用するには、次の手順を実行します。
-
-1. [Forms ポータルコンポーネントのドラフトと送信を有効にする](#enable-component)
-2. [ドラフト&amp;送信コンポーネントをAEM Sitesページに追加](#Add-drafts-submissions-component)
-3. [下書きと送信コンポーネントの設定](#configure-drafts-submissions-component)
-
-### 1. Forms ポータルコンポーネントのドラフトと送信を有効にする{#enable-component}
-
-テンプレートポリシーで **[!UICONTROL ドラフトと送信]** コンポーネントを有効にするには、次の手順を実行します。
+標準のForms ポータルコンポーネントを使用して、Sites ページ上のドラフトおよび送信を一覧表示できます。 次の手順を実行して、**ドラフトと送信** ポータルコンポーネントを追加します。
 
 1. AEM Sitesページを **編集** モードで開きます。
 1. **[!UICONTROL ページ情報]**／**[!UICONTROL テンプレートを編集]**に移動します。
-   ![ テンプレートポリシーを編集 ](/help/forms/assets/save-form-as-draft-edit-template.png)
+   ![ テンプレートポリシーを編集 ](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
 
 1. **[!UICONTROL ポリシー]** をクリックし、**[AEM アーキタイププロジェクト名 ] - Formsとコミュニケーションポータル** の下にある **[!UICONTROL ドラフトと送信]** チェックボックスを選択します。
 
-   ![ ポリシーの選択 ](/help/forms/assets/save-form-as-draft-enable-policy.png)
+   ![ ポリシーの選択 ](/help/forms/assets/save-form-as-draft-enable-policy.png){width="250" align="center"}
 
 1. 「**[!UICONTROL 完了]**」をクリックします。
+1. オーサリングモードでAEM Sitesページを再度開きます。
+1. ページエディターでForms ポータルコンポーネントを追加できるセクションを見つけます。
+1. **追加** アイコンをクリックします。 アイコンは、新しいコンポーネントを追加するオプションを示すプラス記号（+）です。
 
-ポータルコンポーネントを有効にすると、AEM Sitesページのオーサーインスタンスで使用できるようになります。
+   **追加** アイコンをクリックすると、**新規コンポーネントの挿入** ダイアログボックスが表示され、挿入する様々なコンポーネントが表示されます。
 
-### 2. AEM Sitesページでのドラフト&amp;送信コンポーネントの追加{#Add-drafts-submissions-component}
+   >[!NOTE]
+   >
+   > または、コンポーネントをドラッグ&amp;ドロップすることもできます。
 
-ポータルコンポーネントを追加して設定すると、AEM を使用して作成した web サイトでフォームポータルを作成してカスタマイズできます。AEM Sites ページで使用する前に、[ ドラフトと送信コンポーネント ](#enable-component) が有効になっていることを確認します。
+1. ダイアログボックスで使用可能なコンポーネントを参照し、リストから目的のコンポーネントを選択します。 例えば、リストから **ドラフトと送信** コンポーネントを選択して、**ドラフトと送信** Formsポータルコンポーネントを追加します。
 
-コンポーネントを追加するには、コンポーネントパネルの **ドラフトと送信** からページのレイアウトコンテナにコンポーネントをドラッグ&amp;ドロップするか、レイアウトコンテナの追加アイコンを選択して **[!UICONTROL 新規コンポーネントの挿入]** ダイアログからコンポーネントを追加します。
+   ![ ドラフトと送信コンポーネントの追加 ](/help/forms/assets/save-form-as-draft-add-dns.png){width="250" align="center"}
 
-![ ドラフトと送信コンポーネントの追加 ](/help/forms/assets/save-form-as-draft-add-dns.png)
+次に、要件に従って、**ドラフトと送信** コンポーネントのプロパティを設定します。
 
-### 3. ドラフト&amp;送信コンポーネントの設定 {#configure-drafts-submissions-component}
+## ドラフト&amp;送信コンポーネントのプロパティの設定
 
-**ドラフトと送信** コンポーネントには、後で完成させるためにドラフトとして保存されたフォームと送信されたフォームが表示されます。 **ドラフトと送信** を設定するには、次の手順を実行します。
+以下のように **ドラフトと送信** のプロパティを設定できます。
 1. **ドラフトと送信** コンポーネントを選択します。
 1. ![ 設定アイコン ](assets/configure_icon.png) をクリックすると、ダイアログボックスが表示されます。
 1. **[!UICONTROL ドラフトと送信]** ダイアログで、以下を指定します。
    * **タイトル** Sites ページ内のコンポーネントを識別するために、デフォルトではコンポーネントの上にタイトルが表示されます。
-   * **タイプ**：フォームを下書きまたは送信済みのフォームとして一覧表示することを示します。
-   * **レイアウト**：リストのドラフトフォームまたは送信済みのフォームをカード形式またはリスト形式で表示します。
+   * **タイプを選択**：フォームを下書きまたは送信済みのフォームとして表示します。 **ドラフトForms** を選択した場合は、ドラフトとして保存されたフォームが表示されます。 または、「**送信済みForms**」を選択すると、ログインユーザーによって送信されたフォームが表示されます。
+   * **レイアウト**：下書きのフォームまたは送信済みのフォームをカード形式またはリスト形式で表示します。
 
-   ![ ドラフトおよび送信コンポーネントのプロパティ ](/help/forms/assets/save-form-as-draft-dns-properties.png)
+   ![ ドラフトおよび送信コンポーネントのプロパティ ](/help/forms/assets/save-form-as-draft-dns-properties.png){width="250" align="center"}
 
-1. 「**完了**」をクリックします。
+## ドラフトとして保存するフォームの設定
 
-**[!UICONTROL タイプを選択]** が **ドラフトForms** として選択されている場合、ドラフトとして保存されたフォームが表示されます。
-![ 下書きアイコン ](assets/drafts-component.png)
+アダプティブFormsは、後で使用するためにドラフトとして保存する次の 2 つの方法で設定できます。
+* [ユーザーアクション](#user-action)
+* [自動保存](#auto-save)
 
-**[!UICONTROL タイプを選択]** として **送信済みForms** を選択すると、送信済みフォームが表示されます。
+### ユーザーアクション
 
-![送信アイコン](assets/submission-listing.png)
+>[!NOTE]
+>
+> **フォームを保存** ルールを使用してフォームをドラフトとして保存するには ](https://github.com/adobe/aem-core-forms-components)[ コアコンポーネントのバージョンが 3.0.24 以降に設定されていることを確認します。
 
-それぞれのフォームをクリックしてフォームを開くことができます。
+フォームをドラフトとして保存するには、ボタンなどのフォームコンポーネントに **フォームを保存** ルールを作成します。 ボタンをクリックすると、ルールがトリガーされ、フォームがドラフトとして保存されます。 ボタンコンポーネントに **フォームを保存** ルールを作成するには、次の手順を実行します。
 
-<!--
+1. アダプティブフォームを編集モードで開きます。
+1. 「**[!UICONTROL ルールを編集]**」アイコンを選択して、「**ボタン** コンポーネントのルールエディターを開きます。
+1. 「**[!UICONTROL 作成]**」を選択して、ボタンのルールを設定および作成します。
+1. 「**[!UICONTROL 条件]**」セクションで「**クリック済み** を選択し、「**[!UICONTROL 次に]**」セクションで「**フォームを保存**」オプションを選択します。
+1. 「**[!UICONTROL 完了]**」を選択し、ルールを保存します。
 
-### Configure Search & Lister Component {#configure-search-lister-component}
+   ![ ボタンのルールを作成 ](/help/forms/assets/save-form-as-drfat-create-rule.png){width="250" align="center"}
 
-The Search & Lister component is used to list adaptive forms on a page and to implement search on the listed forms. 
+アダプティブフォームをプレビューして入力し、「**フォームを保存**」ボタンをクリックすると、フォームはドラフトとして保存されます。
 
-![Search and Lister icon](assets/search-and-lister-component.png)
+### 自動保存
 
-To configure, select the component and then select the ![Configure icon](assets/configure_icon.png). The [!UICONTROL Search and Lister] dialog opens.
+<span class="preview"> この記事には、プレリリース機能である **自動保存** 機能に関するコンテンツが含まれています。 プレリリース機能には、[プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)を通じてのみアクセスできます。</span>
 
-1. In the [!UICONTROL Display] tab, configure the following:
-    * In **[!UICONTROL Title]**, specify the title for the Search & Lister component. An indicative title enables the users perform quick search across the list of forms.
-    * From the **[!UICONTROL Layout]** list, select the layout to represent the forms in card or list format.
-    * Select **[!UICONTROL Hide Search]** and **[!UICONTROL Hide Sorting]** to hide the search and sort by features.
-    * In **[!UICONTROL Tooltip]**, provide the tooltip that appears when you hover over the component. 
-1. In the [!UICONTROL Asset Folder] tab, specify the location from where the forms are pulled and listed on the page. You can configure multiple folder locations.
-1. In the [!UICONTROL Results] tab, configure the maximum number of forms to display per page. The default is eight forms per page.
+>[!NOTE]
+>
+> 自動保存機能を使用してフォームをドラフトとして保存するには、[ コアコンポーネントのバージョンが 3.0.52 以降 ](https://github.com/adobe/aem-core-forms-components) に設定されていることを確認します。
 
-### Configure Link Component {#configure-link-component}
+アダプティブフォームを、時間ベースのイベントに基づいて自動的に保存するように設定して、指定された期間の後にフォームが保存されるようにすることもできます。 [ ご利用の環境のForms ポータルコンポーネントを有効にする ](/help/forms/list-forms-on-sites-page.md#enable-forms-portal-components-for-your-existing-environment) と、Forms コンテナのプロパティに **自動保存** タブが表示されます。 アダプティブフォームの自動保存機能を設定できます。
 
-The link component enables you to provide links to an adaptive form on the page. To configure, select the component and then select the ![Configure icon](assets/configure_icon.png). The [!UICONTROL Edit Link Component] dialog opens.
+1. オーサーインスタンスで、アダプティブフォームを編集モードで開きます。
+1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
+1. ガイドコンテナのプロパティ ![ ガイドプロパティ ](/help/forms/assets/configure-icon.svg) アイコンをクリックし、「**[!UICONTROL 自動保存]**」タブを開きます。
 
-1. In the [!UICONTROL Display] tab, provide the link caption and tooltip to ease identification of the forms represented by the link.
-1. In the [!UICONTROL Asset Info] tab, specify the repository path where the asset is stored. 
-1. In the [!UICONTROL Query Params] tab, specify the additional parameters in the key-value pair format. When the link is clicked, these additional parameters and passed along with the form.
+   ![ 自動保存 ](/help/forms/assets/auto-save.png){width="250" align="center"}
 
-## Configure Asynchronous Form Submission Using Adobe Sign {#configure-asynchronous-form-submission-using-adobe-sign}
+1. 「**[!UICONTROL 有効]**」チェックボックスを選択して、フォームの自動保存を有効にします。
+1. **[!UICONTROL トリガー]** を **時間ベース** として設定し、指定した時間間隔の経過後にフォーム <!--based on the occurrence of an event or--> を自動保存します。
+1. **[!UICONTROL この間隔で自動保存（秒）]** の時間間隔を指定して、定義された間隔でフォームの自動保存をトリガーにする期間を設定します。
+1. 「**[!UICONTROL 完了]**」をクリックします。
 
-You can configure to submit an adaptive form only when all the recipients have completed the signing ceremony. Follow the steps below to configure the setting using Adobe Sign.
+## ドラフト&amp;送信コンポーネントを使用して、Sites ページでドラフト/送信済みフォームを表示する
 
-1. In the author instance, open an Adaptive Form in the edit mode.
-1. From the left pane, select the Properties icon and expand the **[!UICONTROL ELECTRONIC SIGNTATURE]** option.
-1. Select **[!UICONTROL Enable Adobe Sign]**. Various configuration options display. 
-1. In the [!UICONTROL Submit the form] section, select the **[!UICONTROL after every recipient completes signing ceremony]** option to configure the Submit Form action, where the form is first sent to all the recipients for signing. Once all the recipients have signed the form, only then the form is submitted. 
+保存されたドラフトまたは送信されたフォームを表示するには、**ドラフトと送信**Forms ポータルコンポーネントを使用します。
+[ ドラフトと送信コンポーネントの設定ダイアログ **で**[!UICONTROL  タイプを選択 ]**が** ドラフトForms](#configure-properties-of-the-drafts--submissions-component) として選択されている場合、ドラフトとして保存されたフォームは Sites ページに表示されます。 ドラフトを開くには、省略記号（...）をクリックしてフォームを完成させます。
 
-## Save Adaptive Forms As Drafts {#save-adaptive-forms-as-drafts}
+![下書きアイコン](assets/drafts-component.png){width="250" align="center"}
 
-You can save forms as Drafts for completing them later. There are two ways in which a form is saved as a draft:
+[ ドラフト&amp;送信コンポーネントの設定ダイアログ **で**[!UICONTROL  タイプを選択 ]**が** 送信済みForms](#configure-properties-of-the-drafts--submissions-component) として選択されている場合、送信済みフォームが表示されます。 送信されたフォームは表示できますが、編集することはできません。
 
-* Create a "Save Form" rule on a form component, for example, a button. On clicking the button, the rule triggers and the form are saved a draft.
-* Enable Auto-Save feature, which saves the form as per the specified event or after a configured interval of time.
+![送信アイコン](assets/submission-listing.png){width="250" align="center"}
 
-### Create Rules to Save an Adaptive Form as Draft {#rule-to-save-adaptive-form-as-draft}
+フォームの右下隅に表示される省略記号（...）をクリックして、フォームを破棄することもできます。
 
-To create a "Save Form" rule on a form component, for example, a button, follow the steps below:
+## 次の手順
 
-1. In the author instance, open an Adaptive Form in edit mode.
-1. From the left pane, select ![Components icon](assets/components_icon.png) and drag the [!UICONTROL Button] component to the form.
-1. Select the [!UICONTROL Button] component and then select the ![Configure icon](assets/configure_icon.png). 
-1. Select the [!UICONTROL Edit Rules] icon to open the Rule Editor. 
-1. Select **[!UICONTROL Create]** to configure and create the rule.
-1. In the [!UICONTROL When] section, select "is clicked" and in the [!UICONTROL Then] section, select the "Save Form" options.
-1. Select **[!UICONTROL Done]** to save the rule.
+次の記事では、[Formsポータルのリンクコンポーネントを使用してサイトページ上のフォームに参照を追加する方法 ](/help/forms/add-form-link-to-aem-sites-page.md) について説明します。
 
-### Enable Auto-save {#enable-auto-save}
+## 関連記事
 
-You can configure the auto-save feature for an adaptive form as follows:
-
-1. In the author instance, open an Adaptive Form in edit mode.
-1. From the left pane, select the ![Properties icon](assets/configure_icon.png) and expand the [!UICONTROL AUTO-SAVE] option.
-1. Select the **[!UICONTROL Enable]** check box to enable auto-save of the form. You can configure the following:
-* By default, the [!UICONTROL Adaptive Form Event] is set to "true", which implies that the form is auto-saved after every event.
-* In [!UICONTROL Trigger], configure to trigger auto-save based on the occurrence of an event or after a specific interval of time.
--->
+{{forms-portal-see-also}}
 
 ## 関連トピック {#see-also}
 
 {{see-also}}
-
-
-
-<!--
-
->[!MORELIKETHIS]
->
->* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
->* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
->* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
-
--->

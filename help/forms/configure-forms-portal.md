@@ -1,203 +1,53 @@
 ---
 title: Experience Manager Sites ページでフォームポータルを作成する方法？
-description: フォームポータルを作成し、標準搭載のコアコンポーネントを AEM Sites ページで使用する方法について説明します。
-feature: Adaptive Forms, Foundation Components
+description: Forms ポータルを作成し、標準搭載のコアコンポーネントをAEM Sites ページで使用する方法を説明します。
+feature: Adaptive Forms, Core Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
 workflow-type: tm+mt
-source-wordcount: '1786'
-ht-degree: 100%
+source-wordcount: '359'
+ht-degree: 16%
 
 ---
 
-# AEM Sites ページへのフォームポータルの追加 {#publish-forms-on-portal}
 
-[新しいアダプティブフォームを作成する](/help/forms/creating-adaptive-form-core-components.md)、または [AEM Sites ページにアダプティブフォームを追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)際には、<span class="preview"> 最新の拡張可能なデータキャプチャである[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
+# Forms ポータルの概要
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
-| AEM as a Cloud Service | この記事 |
+| AEM as a Cloud Service（コアコンポーネント） | この記事 |
 
-一般的なフォーム中心のポータルのデプロイメントシナリオでは、フォームの開発とポータルの開発が別々に行われます。フォームデザイナーがフォームを設計してリポジトリに保存する一方、web 開発者は web アプリケーションを作成してフォームを一覧表示し、フォームの送信を処理します。フォームリポジトリと web アプリケーション間では通信が行われないため、フォームは web 層にコピーされます。
+Forms ポータルは、AEM Sites ページにアダプティブFormsを効率的に表示および一覧表示する方法を提供します。 これは、様々なフォームを体系的にユーザーに提示するプラットフォームを必要とする組織で役立ちます。
 
-このようなシナリオでは、管理問題が発生したり生産が遅延したりすることがよくあります。例えば、リポジトリで新しいバージョンのフォームを利用できる場合、web 層でフォームを置換し、web アプリケーションを変更し、公共サイトでフォームを再展開する必要があります。Web アプリケーションの再展開によって、サーバーのダウンタイムが発生する可能性があります。通常、サーバーのダウンタイムは計画的に行われるため、変更を瞬時に公開サイトにプッシュすることはできません。
+例えば、銀行が web サイトに様々なフォームを表示する必要がある場合を考えてみましょう。 同行では、ローン申し込みフォーム、口座開設フォーム、フィードバックサーベイフォームなどのフォームを web サイト上で整理し、Forms ポータルを使用して動的に一覧表示します。 Forms ポータルを使用すると、ユーザーは銀行の web サイト上のフォームを一覧表示して検索できます。 匿名ユーザーは、使用可能なフォームのリストを表示して参照できますが、ドラフトバージョンにアクセスしたり完了したフォームを送信したりするには、ログインする必要があります。 また、Forms ポータルは、AEM Sites ページ上のフォームへの参照リンクを追加するためにも使用されます
 
-AEM Forms は管理のオーバーヘッドと実稼働の遅延を低減するポータルコンポーネントを提供します。コンポーネントにより、web 開発者は Adobe Experience Manager（AEM）を使用して作成された web サイト上にフォームポータルを作成してカスタマイズできます。
+フォームポータルコンポーネントは、次の機能を提供します。
 
-フォームポータルコンポーネントにより、次の機能が追加されます。
-
-* カスタマイズしたレイアウトでフォームを一覧表示します。標準搭載で、リスト表示およびカード表示が提供されます。独自のカスタムレイアウトを作成できます。
-* カスタムメタデータとカスタムアクションをリストにしながら表示できます。
-* フォームポータルコンポーネントを使用しているパブリッシュインスタンス上の AEM Forms UI が発行したフォームを一覧表示します。
-* エンドユーザーが HTML 形式および PDF 形式でフォームをレンダリングできるようにします。
+* カスタマイズしたレイアウトでフォームを一覧表示します。標準搭載で、リスト表示およびカード表示が提供されます。
 * タイトルと説明に基づいてフォームを検索できるようにします。
-* カスタム CSS を使用してポータルのルックアンドフィールをカスタマイズします。
-* フォームへのリンクを作成します。
-* ユーザーが作成したアダプティブフォームに関連するドラフトおよび送信を一覧表示します。
+* フォームへのリンクを作成して、アクセスと共有を容易にします。
+* ユーザーが作成したドラフトと送信をリスト表示します。
 
-## フォームポータルページのコンポーネント {#forms-portal-components}
+## Forms ポータルのコンポーネント
+
+![Forms ポータルのコンポーネント ](/help/forms/assets/forms-portal.png)
 
 AEM Forms は、次のポータルコンポーネントを標準搭載しています。
 
-* 検索とリスター：このコンポーネントを使用すると、フォームリポジトリ内のフォームをポータルページに一覧表示できます。また、指定した基準に基づいてフォームを一覧表示するための設定オプションが提供されます。
+* **検索とリスター**:Sites ページ上のフォームを一覧表示し、指定した基準に基づいてフォームをフィルタリングするための設定オプションを提供します。
+* **ドラフトと送信**：後で完成させるためにドラフトとして保存されたフォームと送信されたフォームが表示されます。 後で完了するためにドラフトとして保存されたフォームと、送信済みのフォームの両方が表示されます。 ログインしたユーザーに対してパーソナライズされたエクスペリエンスを提供します。
+* **リンク**: ページの任意の場所にフォームへのリンクを作成します。
 
-* ドラフトと送信：「検索とリスター」コンポーネントはフォーム作成者が発行しれたフォームを表示するのに対し、「ドラフトと送信」コンポーネントはドラフトとして保存され、後で完了して送信されるフォームを表示します。このコンポーネントは、ログインしたユーザーに対してパーソナライズされたエクスペリエンスを提供します。
+## 次の手順
 
-* リンク：このコンポーネントを使用すると、ページの任意の場所にフォームへのリンクを作成できます。
+次の記事では、[Forms検索とリスターポータルコンポーネントを使用して Sites ページにフォームを一覧表示する方法 ](/help/forms/list-forms-on-sites-page.md) について説明します。
 
-AEM プロジェクトアーキタイプから [標準搭載のフォームポータルコンポーネントを読み込む](#import-forms-portal-components-aem-archetype) ことができます。 読み込んだ後、次の設定を実行します。
+## 関連記事
 
-* [外部ストレージの設定](#configure-azure-storage-adaptive-forms)
-
-* [フォームポータルコンポーネントを有効にする](#enable-forms-portal-components)
-
-* [フォームポータルコンポーネントの設定](#configure-forms-portal-components)
-
-## フォームポータルコンポーネントの読み込み {#import-forms-portal-components-aem-archetype}
-
-標準搭載のフォームポータルコンポーネントを AEM Forms as a Cloud Service に読み込むには、次の手順を実行します。
-
-1. **ローカル開発インスタンス上に Cloud Manager Git リポジトリーを複製する：** Cloud Manager Git リポジトリーには、デフォルトの AEM プロジェクトが含まれています。[AEM アーキタイプ](https://github.com/adobe/aem-project-archetype/)に基づいています。Cloud Manager UI のセルフサービス Git アカウント管理を使用して Cloud Manager Git リポジトリーを複製し、プロジェクトをローカル開発環境に移行します。リポジトリへのアクセスについて詳しくは、 [リポジトリへのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html?lang=ja) を参照してください。
-
-1. **[!DNL Experience Manager Forms] as a [Cloud Service] プロジェクトの作成：** [AEM アーキタイプ 27](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-27) 以降に基づいて [!DNL Experience Manager Forms] as a [Cloud Service] プロジェクトを作成します。このアーキタイプは、開発者が [!DNL AEM Forms] as a Cloud Service の開発を容易に開始するのに役立ちます。また、すぐに使い始めるのに役立つテーマとテンプレートのサンプルも含まれています。
-
-   [!DNL Experience Manager Forms] as a Cloud Service プロジェクトを作成するには、コマンドプロンプトを開き、以下のコマンドを実行します。[!DNL Forms] に特有の設定、テーマおよびテンプレートを含めるには、`includeForms=y` を設定します。
-
-   ```shell
-   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=30 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeForms="y"
-   ```
-
-   また、上記のコマンドで `appTitle`、`appId`、`groupId` を変更し、環境に反映します。
-
-   プロジェクトが準備完了したら、アーキタイププロジェクトの`<core.forms.components.version>x.y.z</core.forms.components.version>`最高レベルのプロパティ`pom.xml`をアップデートし、`AEM Archetype`プロジェクトの最新バージョンの [core-forms-components](https://github.com/adobe/aem-core-forms-components) を反映させます。
-
-1. **プロジェクトをローカル開発環境にデプロイ：** 次のコマンドを使用して、ローカル開発環境にデプロイできます
-
-   `mvn -PautoInstallPackage clean install`
-
-   コマンドの完全なリストについては、 [構築とインストール](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#building-and-installing) を参照してください
-
-1. [ [!DNL AEM Forms]  as a Cloud Service 環境にコードをデプロイします](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=ja#embeddeds)。
-
-
-## アダプティブフォーム用の Azure ストレージの設定 {#configure-azure-storage-adaptive-forms}
-
-[[!DNL Experience Manager Forms] データ統合](data-integration.md) は、フォームを [!DNL Azure] ストレージサービスと統合するための [!DNL Azure] ストレージ設定を提供します。フォームデータモデル（FDM）を使用して、[!DNL Azure] サーバーと連動するアダプティブフォームを作成することにより、ビジネスワークフローを使用できるようになります。
-
-### Azure ストレージ設定の作成 {#create-azure-storage-configuration}
-
-これらの手順を実行する前に、Azure ストレージアカウントと、[!DNL Azure] ストレージアカウントへのアクセスを許可するためのアクセスキーがあることを確認してください。
-
-1. **[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Azure ストレージ]**&#x200B;に移動します。
-1. 設定を作成するフォルダーを選択して、「**[!UICONTROL 作成]**」を選択します。
-1. 「**[!UICONTROL タイトル]**」フィールドで設定のタイトルを指定します。
-1. 「**[!UICONTROL Azure ストレージアカウント]**」フィールドで [!DNL Azure] ストレージアカウントの名前を指定します。
-
-### フォームポータル用統合ストレージコネクタの設定 {#configure-usc-forms-portal}
-
-AEM ワークフロー用の統合ストレージコネクタを設定するには、次の手順を実行します。
-
-1. **[!UICONTROL ツール]**／**[!UICONTROL Forms]**／**[!UICONTROL 統合ストレージコネクタ]**&#x200B;に移動します。
-1. 「**[!UICONTROL フォームポータル]**」セクションで、「**[!UICONTROL ストレージ]**」ドロップダウンリストから「**[!UICONTROL Azure]**」を選択します。
-1. 「**[!UICONTROL ストレージ設定パス]**」フィールドで、[Azure ストレージ設定の設定パス](#create-azure-storage-configuration)を指定します。
-1. 「**[!UICONTROL 公開]**」を選択してから、「**[!UICONTROL 保存]**」をクリックして設定を保存します。
-
-## フォームポータルコンポーネントの有効化 {#enable-forms-portal-components}
-
-Adobe Experience Manager（AEM）サイトで任意のコアコンポーネント（標準のポータルコンポーネントを含む）を使用するには、プロキシコンポーネントを作成して、サイトに対してそれを有効にする必要があります。プロキシコンポーネントの作成とポータルコンポーネントの有効化については、 [コアコンポーネントの使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=ja#create-proxy-components) を参照してください。
-
-ポータルコンポーネントを有効にすると、サイトページのオーサーインスタンスで使用できるようになります。
-
-## フォームポータルコンポーネントの追加と設定 {#configure-forms-portal-components}
-
-ポータルコンポーネントを追加して設定すると、AEM を使用して作成した web サイトでフォームポータルを作成してカスタマイズできます。フォームポータルで使用する前に、 [コンポーネントが有効になっていること](#enable-forms-portal-components) を確認してください。
-
-コンポーネントを追加するには、コンポーネントパネルからページのレイアウトコンテナにコンポーネントをドラッグ＆ドロップするか、レイアウトコンテナ上の追加アイコンを選択して、[!UICONTROL 新規コンポーネントを挿入]ダイアログからコンポーネントを追加します。
-
-### 下書きと送信コンポーネントの設定 {#configure-drafts-submissions-component}
-
-下書きと送信コンポーネントには、後で完成させるために下書きとして保存されているフォームと送信済みのフォームが表示されます。設定するには、コンポーネントを選択してから ![設定アイコン](assets/configure_icon.png) を選択します。[!UICONTROL 下書きと送信] ダイアログで、フォームを下書きまたは送信済みのフォームとして示すタイトルを指定します。また、下書きのフォームまたは送信済みのフォームを、カード形式またはリスト形式でコンポーネントが一覧表示するかどうかを選択します。
-
-![下書きアイコン](assets/drafts-component.png)
-
-![送信アイコン](assets/submission-listing.png)
-
-### 検索とリスターコンポーネントの設定 {#configure-search-lister-component}
-
-検索とリスターコンポーネントは、ページ上のアダプティブフォームをリスト表示し、リストに表示されたフォームに検索を実装するために使用します。
-
-![検索とリスターアイコン](assets/search-and-lister-component.png)
-
-設定するには、コンポーネントを選択してから ![設定アイコン](assets/configure_icon.png) をクリックします。[!UICONTROL 検索とリスター] ダイアログが開きます。
-
-1. 「[!UICONTROL 表示]」タブで以下を設定します。
-   * **[!UICONTROL タイトル]** で、検索とリスターコンポーネントのタイトルを指定します。特徴的なタイトルを使用すると、ユーザーはフォームのリスト全体ですばやく検索を実行できます。
-   * **[!UICONTROL レイアウト]** リストで、フォームをカード形式またはリスト形式で表すレイアウトを選択します。
-   * 「**[!UICONTROL 検索を非表示]**」および「**[!UICONTROL 並べ替えを非表示]**」を選択し、検索機能と並べ替え機能を非表示にします。
-   * **[!UICONTROL ツールヒント]** で、コンポーネントにカーソルを合わせたときに表示されるツールヒントを指定します。
-1. 「[!UICONTROL アセットフォルダー]」タブで、フォームを取得してページに一覧表示する場所を指定します。複数のフォルダーの場所を設定できます。
-1. 「[!UICONTROL 結果]」タブで、1 ページに表示するフォームの最大数を設定します。デフォルトでは、1 ページに 8 つのフォームです。
-
-### リンクコンポーネントを設定 {#configure-link-component}
-
-リンクコンポーネントを使用すると、ページ上のアダプティブフォームへのリンクを提供できます。設定するには、コンポーネントを選択してから ![設定アイコン](assets/configure_icon.png) をクリックします。[!UICONTROL リンクコンポーネントを編集] ダイアログが開きます。
-
-1. リンクで表されたフォームを容易に識別できるように、「[!UICONTROL 表示]」タブでリンクのキャプションとツールヒントを指定します。
-1. 「[!UICONTROL アセット情報]」タブで、アセットが保存されているリポジトリパスを指定します。
-1.  「[!UICONTROL クエリパラメーター]」タブで、追加のパラメーターをキーと値のペアの形式で指定します。リンクをクリックすると、これらのその他のパラメーターはフォームと共に渡されます。
-
-## Adobe Sign を使用した非同期フォーム送信の設定 {#configure-asynchronous-form-submission-using-adobe-sign}
-
-アダプティブフォームを送信する設定は、すべての受信者が署名行為を完了した場合にのみ行うことができます。Adobe Sign を使用して設定を指定するには、次の手順に従います。
-
-1. オーサーインスタンスで、アダプティブフォームを編集モードで開きます。
-1. 左側のパネルで「プロパティ」アイコンを選択し、「**[!UICONTROL 電子署名]**」オプションを展開します。
-1. 「**[!UICONTROL Adobe Sign を有効にする]**」を選択します。様々な設定オプションが表示されます。
-1. 「[!UICONTROL フォームを送信]」セクションで、「**[!UICONTROL すべての受信者が署名行為を完了した後]**」オプションを選択して、「フォームを送信」アクションを設定します。このアクションでは、最初にすべての受信者にフォームが送信されて署名されます。すべての受信者がフォームに署名したときにのみ、そのフォームが送信されます。
-
-## アダプティブフォームを下書きとして保存 {#save-adaptive-forms-as-drafts}
-
-フォームを下書きとして保存し、後で完成させることができます。フォームを下書きとして保存する方法は 2 つあります。
-
-* フォームコンポーネント（ボタンなど）に「フォームを保存」ルールを作成します。このボタンをクリックすると、ルールトリガーとフォームがドラフトとして保存されます。
-* 自動保存機能を有効にします。これにより、指定されたイベントごとに、または設定された時間間隔の後にフォームが保存されます。
-
-### アダプティブフォームをドラフトとして保存するためのルールの作成 {#rule-to-save-adaptive-form-as-draft}
-
-フォームコンポーネント（ボタンなど）に「フォームを保存」ルールを作成するには、次の手順に従います。
-
-1. オーサーインスタンスで、アダプティブフォームを編集モードで開きます。
-1. 左側のパネルで、 ![コンポーネントアイコン](assets/components_icon.png) を選択し、「[!UICONTROL ボタン]」コンポーネントをフォームにドラッグします。
-1. 「[!UICONTROL ボタン]」コンポーネントを選択してから、![設定アイコン](assets/configure_icon.png) をクリックします。
-1. 「[!UICONTROL ルールを編集]」アイコンを選択して、ルールエディターを開きます。
-1. 「**[!UICONTROL 作成]**」を選択し、ルールを設定および作成します。
-1. 「[!UICONTROL 条件]」セクションで、「クリック済み」を選択し、「[!UICONTROL 次に]」セクションで「フォームを保存」オプションをクリックします。
-1. 「**[!UICONTROL 完了]**」を選択して、ルールを保存します。
-
-### 自動保存を有効にする {#enable-auto-save}
-
-アダプティブフォームの自動保存機能は、次のように設定することができます。
-
-1. オーサーインスタンスで、アダプティブフォームを編集モードで開きます。
-1. 左側のパネルで、![プロパティアイコン](assets/configure_icon.png) を選択し、「[!UICONTROL 自動保存]」オプションを展開します。
-1. 「**[!UICONTROL 有効]**」 チェックボックスをオンにし、フォームの自動保存を有効にします。次の項目を設定できます。
-* デフォルトでは、[!UICONTROL アダプティブフォームイベント] が「true」に設定されている場合は、イベントのたびにフォームが自動保存されます。
-* [!UICONTROL トリガー] で、イベントの発生に基づいて、または特定の時間間隔の経過後に自動保存をトリガーするように設定します。
+{{forms-portal-see-also}}
 
 ## 関連トピック {#see-also}
 
 {{see-also}}
-
-
-
-<!--
-
->[!MORELIKETHIS]
->
->* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
->* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
->* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
-
--->

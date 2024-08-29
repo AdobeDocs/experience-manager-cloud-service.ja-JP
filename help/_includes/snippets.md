@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7a1181a372928602b8fd0eb4699789217473a94c
+source-git-commit: c7b78b5c4e4851d57314a437b3b7fa06c1f167d5
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 75%
+source-wordcount: '892'
+ht-degree: 77%
 
 ---
 # スニペット {#snippets}
@@ -128,6 +128,26 @@ ht-degree: 75%
 * [コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成](/help/forms/custom-function-core-component-create-function.md)
 * [カスタム関数の開発と使用の例](/help/forms/custom-function-core-components-use-cases.md)
 
+
+## フォームポータル{#forms-portal-see-also}
+
+* [Forms ポータルコンポーネントの概要](/help/forms/configure-forms-portal.md)
+* [Sites ページでのフォームの一覧表示](/help/forms/list-forms-on-sites-page.md)
+* [フォームをドラフトとして保存する](/help/forms/save-core-component-based-form-as-draft.md)
+* [Sites ページへのフォームリンクの追加](/help/forms/add-form-link-to-aem-sites-page.md)
+
+
+## Cloud Manager の IP 許可リストとフロントエンドパイプライン {#allowlist-frontend-pipeline}
+
+>[!IMPORTANT]
+>
+>フロントエンドパイプラインでは、以下の IP 許可リストを事前に Cloud Manager に追加する必要があります。
+>必要に応じて、以下のアドレスのブロックをコピーして ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)IP 許可リストを追加[します。各アドレスはコンマで区切ります。このブロックを **IP 許可リストを追加**&#x200B;ダイアログボックスの「**IP アドレス / CIDR**」フィールドにペーストします。アドレスリストの最初のコンマの直後にカーソルを置き、**Enter** キーを押します。リストを保存します。
+>フロントエンドパイプラインの実行が中断されないようにするには、パイプラインを有効にする&#x200B;*前に*、この IP 許可リストを Cloud Manager に確実に追加します。
+>
+>**Cloud Manager の IP 許可リスト**
+>52.254.106.192/28、20.186.185.181、52.254.106.240/28、52.254.107.128/28、52.254.105.192/28、52.254.106.176/28、20.186.185.227、52.254.106.144/28、52.254.107.64/28、20.186.185.239、20.22.83.112、52.254.107.80/28、52.254.107.144/28、52.254.106.224/28、20.14.241.153、52.254.107.0/28、52.254.107.32/28、52.254.106.208/28、40.70.154.136/29、52.254.106.160/28、52.254.107.16/28、52.254.106.0/28、4.152.211.251
+>   
 
 ## Cloud Manager IP 許可リストとフロントエンドパイプラインの追加 {#add-cm-allowlist-frontend-pipeline}
 
