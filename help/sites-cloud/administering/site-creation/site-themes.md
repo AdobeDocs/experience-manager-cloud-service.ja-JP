@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 92c0e556eb1f92dadd396a479a8bf933715935a7
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 100%
+source-wordcount: '364'
+ht-degree: 91%
 
 ---
 
@@ -39,12 +39,14 @@ AEM サイトテンプレートを使用して作成されたサイトでは、�
 
 ## サイトテーマの構造 {#structure}
 
-サイトテーマは、パッケージのコンテンツの目的を明確に反映した論理構造を持つ単純なパッケージです。サイトテーマは、フロントエンドプロジェクトの典型的な次の構造を持ちます。
+サイトテーマは、パッケージのコンテンツの目的を明確に反映した論理構造を持つ単純なパッケージです。一般的なフロントエンドプロジェクトの場合、Adobeではサイトテーマに次の構造を使用することをお勧めします。
 
-* `src/main.ts`：JS および CSS テーマの主なエントリポイント
+* `src/theme.ts`：JS および CSS テーマのメインエントリポイント
 * `src/site`：サイト全体に適用される JS および CSS ファイル
 * `src/components`：AEM コンポーネント固有の JS および CSS ファイル
 * `src/resources`：アイコン、ロゴ、フォントなどの静的ファイル
+
+メインのエントリポイント `src/theme.ts` が保持されている限り、特定のプロジェクトのニーズに応じて、テーマの構造は異なる場合があります。
 
 ## 標準のサイトテーマ {#standard-site-theme}
 
