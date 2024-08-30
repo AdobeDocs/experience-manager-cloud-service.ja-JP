@@ -4,10 +4,10 @@ description: ' [!DNL Assets View] のアクセス方法、ログイン操作、�
 role: User, Leader
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: d71107be2831bf00bff3856d7cd0e10818ec6be5
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 100%
+source-wordcount: '358'
+ht-degree: 93%
 
 ---
 
@@ -39,6 +39,10 @@ ht-degree: 100%
 [!UICONTROL Experience Cloud の環境設定]を変更するには、「[!UICONTROL 環境設定]」をクリックします。
 
 ![暗いテーマと明るいテーマを切り替えるための環境設定](assets/theme-change.png)
+
+>[!NOTE]
+>
+>Assets ビューに移動して `Network Error` メッセージが表示された場合は、[ クロスオリジンリソース共有（CORS）設定 ](/help/headless/deployment/cross-origin-resource-sharing.md) の記事に記載されている手順を実行していることを確認してください。
 
 ## [!DNL Assets View] のユースケース {#use-cases}
 

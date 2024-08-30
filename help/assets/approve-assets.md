@@ -2,9 +2,10 @@
 title: Experience Managerでのアセットの承認
 description: ' [!DNL Experience Manager] でアセットを承認する方法について説明します。'
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
+source-git-commit: 9b3b93100c45c7053549c3f9899a344ca7db104d
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '676'
 ht-degree: 2%
 
 ---
@@ -36,7 +37,7 @@ AEM Assetsでアセットを承認してアセット管理を効率化し、ア�
 
 ## アセットの承認 {#approve-assets}
 
-[!DNL Experience Manager] と [!DNL Experience Manager Assets] の両方でアセットを承認できます。 [!DNL Experience Manager] でアセットを承認するには、次の手順に従います。
+[!DNL Experience Manager Admin view] でアセットを承認するには、次の手順に従います。
 
 1. アセットを選択し、上部のペインで **[!UICONTROL プロパティ]** をクリックします。
 1. 「**[!UICONTROL 基本]**」タブで、下にスクロールして **[!UICONTROL レビューステータス]** を表示します。
@@ -51,7 +52,7 @@ AEM Assetsでアセットを承認してアセット管理を効率化し、ア�
 ## アセットの一括承認 {#bulk-approve-assets}
 
 複数のアセットを一度にすばやく承認することで、ワークフローを効率化します。 アセットを一括承認して、承認プロセスを迅速化し、時間を節約し、生産性を向上させることができます。
-<br>[!DNL Experience Manager] で一括アセットを承認するには、次の手順に従います。
+<br>[!DNL Experience Manager Admin view] で一括アセットを承認するには、次の手順に従います。
 
 1. オーサー環境でフォルダーを作成します（https://author-pXXX-eYYY.adobeaemcloud.com）。 _XXX_ をプログラム ID に、_YYY_ をExperience Managerの環境 ID に置き換えます。
 1. **[!UICONTROL ツール]** / **[!UICONTROL Assets]** / **[!UICONTROL メタデータプロファイル]** に移動します。
@@ -102,4 +103,3 @@ AEM Assetsでアセットを承認してアセット管理を効率化し、ア�
    >[!NOTE]
    >
    >承認済みアセットの配信 URL をコピーするオプションは、Assets ビューでのみ使用できます。
-
