@@ -2,17 +2,19 @@
 title: ブランド承認済みアセットのアップロード先  [!DNL Content Hub]
 description: ブランド承認済みアセットをContent Hubにアップロードする方法を学ぶ
 role: User
-source-git-commit: c85b4e1c828ed1fb7f4063f965fe116215ca0244
+exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
+source-git-commit: 85fbbcf77bd5b2ef1a68454e2cf1d2202c8f90c4
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
 
-
 # ブランド承認済みアセットのContent Hubへのアップロード {#upload-brand-approved-assets-content-hub}
 
 [ アセットを追加する権限を持つContent Hub ユーザー ](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)、ローカルファイルシステムからContent Hubにアセットを追加したり、OneDrive またはDropboxのデータソースからアセットを読み込んだりできます。 ローカルファイルシステムで使用可能なフォルダー構造や、検索機能を強化するための OneDrive およびDropboxデータソースに関係なく、すべてのアセットがContent Hubの最上位に表示されます。
+
+Assetsのas a Cloud Serviceで `Approved` とマークされたアセットは、Content Hubで自動的に使用できるようになります。 詳しくは、[Content Hubのアセットを承認 ](/help/assets/approve-assets-content-hub.md) を参照してください。
 
 アセット検索をさらに強化するために、Content Hubでは次の操作を実行できます。
 
@@ -72,3 +74,14 @@ OneDrive またはDropboxのデータソースからContent Hubにアセット�
 
 また、管理者は、アセットのアップロード時に表示される必須フィールドとオプションフィールド（キャンペーン名、キーワード、チャネルなど）を設定することもできます。 詳しくは、[Content Hub ユーザーインターフェイスの設定 ](configure-content-hub-ui-options.md#configure-upload-options-content-hub) を参照してください。
 
+## Content Hubを使用してアップロードされたアセットの管理 {#manage-assets-uploaded-using-content-hub}
+
+[ アセットを追加する権限を持つContent Hub ユーザー ](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)、ローカルファイルシステムから [Content Hubにアセットを追加 ](/help/assets/upload-brand-approved-assets.md) するか、OneDrive またはDropboxのデータソースからアセットを読み込むことができます。 ローカルファイルシステムで使用可能なフォルダー構造や、検索機能を強化するための OneDrive およびDropboxデータソースに関係なく、すべてのアセットがContent Hubの最上位に表示されます。
+
+Content Hubを使用してアップロードされたアセットの表示は、[ 自動承認切り替えを有効 ](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub) にしたかどうかによって異なります。
+
+* **[!UICONTROL 自動承認]** 切替スイッチが有効になっている場合は、Content Hubを使用してアップロードしたアセットを自動的に利用できます。
+
+* **[!UICONTROL 自動承認]** の切り替えが無効になっている場合、Content Hubを使用してアップロードしたアセットは自動的には表示されません。 アセットは、Assetsas a Cloud Serviceの `hydrated-assets` フォルダーで使用できます。 フォルダーに移動して、Content Hubに表示するアセットのステータスを `Approved` 定する [ 一括編集 ](#bulk-approve-assets-content-hub) を行います。
+
+![Content Hub承認プロセス ](/help/assets/assets/content-hub-approval.png)
