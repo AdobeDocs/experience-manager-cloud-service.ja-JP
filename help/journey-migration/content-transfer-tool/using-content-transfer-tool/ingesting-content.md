@@ -4,10 +4,10 @@ description: Cloud Acceleration Manager を使用して、移行セットから�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
 workflow-type: tm+mt
-source-wordcount: '2905'
-ht-degree: 100%
+source-wordcount: '2982'
+ht-degree: 96%
 
 ---
 
@@ -214,11 +214,20 @@ AEM の各ノードには、一意の UUID が必要です。このエラーは�
 >abstract="取り込みエラーの一般的な原因は、ノードプロパティの値の最大サイズを超えていることです。 この状況を修正するには、ドキュメント（BPA レポートに関連するものを含む）に従います。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=ja" text="移行の前提条件"
 
-MongoDB に保存されるノードプロパティの値は 16 MB を超えることはできません。ノード値がサポートされているサイズを超えると、取り込みに失敗し、ログには `BSONObjectTooLarge` エラーが含まれ、最大値を超えたノードが指定されます。これは MongoDB の制限です。
+MongoDB に保存されるノードプロパティの値は 16 MB を超えることはできません。ノード値がサポートされているサイズを超えると、取り込みは失敗し、ログには次のいずれかが含まれます。
+
+* `BSONObjectTooLarge` エラーが発生し、最大値を超えたノードを指定した場合
+* `BsonMaximumSizeExceededException` エラー。unicode 文字を含んでいる可能性があるノードが、最大サイズ**を超えていることを示します
+
+これは MongoDB の制限です。
 
 大きなノードすべてを見つけるのに役立つ Oak ツールへのリンクと詳細情報については、[コンテンツ転送ツールの前提条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)の `Node property value in MongoDB` メモを参照してください。サイズの大きいすべてのノードを修正したら、抽出と取り込みを再度実行します。
 
 この制限を回避するには、ソース AEM インスタンスで[ベストプラクティスアナライザー](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)を実行し、表示される結果、特に[「サポートされていないリポジトリ構造」（URS）](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/urs)パターンを確認します。
+
+>[!NOTE]
+>
+>[ ベストプラクティスアナライザー ](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) バージョン 2.1.50 以降では、最大サイズを超える Unicode 文字を含む大きなノードについてレポートします。 最新バージョンを使用していることを確認してください。 2.1.50 より前の BPA バージョンでは、これらの大規模なノードを識別してレポートすることはなく、上記の前提条件のOak ツールを使用して個別に検出する必要があります。
 
 ### 取り込みの取り消し {#ingestion-rescinded}
 
