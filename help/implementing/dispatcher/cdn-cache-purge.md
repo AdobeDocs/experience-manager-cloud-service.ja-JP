@@ -4,10 +4,10 @@ description: API 呼び出しで使用できるパージ API トークンを設�
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: ht
-source-wordcount: '433'
-ht-degree: 100%
+source-git-commit: 5b777171cb9246c2a0174985e060d7d1b6ed8591
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 96%
 
 ---
 
@@ -30,6 +30,8 @@ AEM as a Cloud Service を使用すると、API 呼び出しのパージで使�
 
 >[!CAUTION]
 >（特にハードフラグで）CDN キャッシュをパージすると、オリジンでのトラフィックが増加し、適切に実行しないと機能停止につながる場合があります。
+
+パージキーの設定と CDN キャッシュパージの実行に焦点を当てた [ チュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) を参照してください。
 
 ## 単一 URL パージ {#single-purge}
 

@@ -4,10 +4,10 @@ description: 設定ファイルでルールを宣言し、Cloud Manager 設定�
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: ht
-source-wordcount: '1266'
-ht-degree: 100%
+source-git-commit: e8c40d6205bfa2de18374e5161fe0fea42c8ce32
+workflow-type: tm+mt
+source-wordcount: '1283'
+ht-degree: 98%
 
 ---
 
@@ -118,6 +118,8 @@ data:
 
 >[!NOTE]
 >参照する設定をデプロイする前に、パージキーを、[秘密鍵タイプの Cloud Manager 環境変数](/help/operations/config-pipeline.md#secret-env-vars)として設定する必要があります。
+
+パージキーの設定と CDN キャッシュパージの実行に焦点を当てた [ チュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) を参照してください。
 
 ## 基本認証 {#basic-auth}
 
