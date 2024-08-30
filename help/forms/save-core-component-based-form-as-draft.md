@@ -4,9 +4,9 @@ description: コアコンポーネントベースのアダプティブフォー�
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2561145c37fe2ba6a38482fb2d1be614a971b418
+source-git-commit: 2933b3be569724800a77b4ea93e91441046746f6
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1384'
 ht-degree: 8%
 
 ---
@@ -44,6 +44,8 @@ ht-degree: 8%
 1. 「**[!UICONTROL Azure ストレージアカウント]**」フィールドと「**[!UICONTROL Azure アクセスキー]**」フィールドで [!DNL Azure] ストレージアカウントの名前を指定します。
 
    ![Azure ストレージ設定](/help/forms/assets/save-form-as-draft-azure-storage.png)
+
+   `Azure Storage Account` のテキストボックスに `Connection String` と入力し、`Azure Access key` のテキストボックスに `Azure Key` と入力します。
 
 1. 「**保存**」をクリックします。
 
