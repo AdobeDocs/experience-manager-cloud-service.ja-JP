@@ -4,10 +4,10 @@ description: 設定ファイルでルールを宣言し、Cloud Manager 設定�
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: e8c40d6205bfa2de18374e5161fe0fea42c8ce32
+source-git-commit: c8059260ab0ff13ed85f55eda2e09ca5cb678fa9
 workflow-type: tm+mt
-source-wordcount: '1283'
-ht-degree: 98%
+source-wordcount: '1379'
+ht-degree: 91%
 
 ---
 
@@ -73,6 +73,29 @@ data:
 
 >[!NOTE]
 >参照する設定をデプロイする前に、Edge Key を、[秘密鍵タイプの Cloud Manager 環境変数](/help/operations/config-pipeline.md#secret-env-vars)として設定する必要があります。
+
+### 安全に移行してトラフィックのブロックのリスクを軽減 {#migrating-safely}
+
+サイトがすでに実稼働している場合、設定の誤りが公開トラフィックをブロックする可能性があるので、顧客が管理する CDN への移行には注意が必要です。これは、想定される X-AEM-Edge-Key ヘッダー値を持つリクエストのみがAdobe CDN で受け入れられるからです。 テストヘッダーが含まれる場合にのみリクエストを評価する原因となる、追加の条件が認証ルールに一時的に含まれる場合は、このアプローチをお勧めします。
+
+```
+    - name: edge-auth-rule
+        when:
+          allOf:  
+            - { reqProperty: tier, equals: "publish" }
+            - { reqHeader: x-edge-test, equals: "test" }
+        action:
+          type: authenticate
+          authenticator: edge-auth
+```
+
+次の `curl` リクエストパターンを使用できます。
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <CONFIGURED_EDGE_KEY>" -H "x-edge-test: test"
+```
+
+正常にテストされたら、追加の条件を削除して、設定を再デプロイできます。
 
 ## API トークンのパージ {#purge-API-token}
 
