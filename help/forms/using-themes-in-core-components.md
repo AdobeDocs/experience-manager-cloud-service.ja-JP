@@ -3,11 +3,10 @@ title: アダプティブフォームでテーマを作成して使用するに�
 description: テーマとコアコンポーネントを使用して、アダプティブフォームのスタイルを設定し、視覚的に表現できます。任意の数のアダプティブフォームで、テーマを共有できます。
 keywords: アダプティブフォームのスタイル設定コアコンポーネント。コアコンポーネントでのテーマの使用、アダプティブフォームのスタイル設定、テーマのカスタマイズ
 feature: Adaptive Forms, Core Components
-exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 076ee3616ad56b4d463d93e407a9e7e67e54b4ac
 workflow-type: tm+mt
-source-wordcount: '2879'
+source-wordcount: '2816'
 ht-degree: 100%
 
 ---
@@ -428,11 +427,6 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 * **コンテナパネルのレイアウト幅の変更**
 
   コンテナパネルのレイアウト幅の変更はお勧めしません。コンテナパネルの幅を指定すると、幅が静的になり、様々なディスプレイに合わせて調整されません。
-
-* **ヘッダーとフッターを操作する際のフォームエディターまたはテーマエディターの使用**
-
-  テーマエディターは、フォントスタイル、背景、透明度などのスタイル設定オプションを使用してヘッダーとフッターをスタイル設定する場合に使用します。
-ヘッダーにロゴイメージや企業名などの情報を表示し、フッターに著作権情報を表示する場合は、フォームエディターのオプションを使用します。
 
 ## よくある質問 {#faq}
 
