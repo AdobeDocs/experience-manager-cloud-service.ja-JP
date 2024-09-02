@@ -4,10 +4,10 @@ description: Real Use Monitoring （RUM）を使用して、web サイトやア�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 2515bc51fd54b014ffb701a8aef38cd08d6725b3
+source-git-commit: 1bb463fe59e89e6360dceefdaaec395084fc80c5
 workflow-type: tm+mt
-source-wordcount: '1274'
-ht-degree: 13%
+source-wordcount: '1213'
+ht-degree: 14%
 
 ---
 
@@ -34,11 +34,6 @@ RUM を使用すると、URL の開始からリクエストがブラウザーに
 ## 実際の使用状況の監視サービスのメリットを享受できるのは誰か {#who-can-benefit-from-rum-service}
 
 AEMは、お客様やAdobeがAEM サイトとのやり取りを理解するのに役立つ RUM を開発しました。 RUM を使用すると、パフォーマンスの問題を診断し、実験の有効性を測定できます。 RUM は、サンプリングを通じて訪問者のプライバシーを保持します。つまり、すべてのページビューのごく一部のみが監視され、個人を特定できる情報（PII）は収集されません。
-
-
-## Real Use Monitoring サービスの仕組みを理解する {#understand-how-the-rum-service-works}
-
-AEMでは、RUM を使用して、顧客やAdobeがAEM サイトとのやり取りを理解できるようにします。 パフォーマンスの問題を診断し、実験の有効性を測定するのに役立ちます。 RUM は、サンプリングを通じて訪問者のプライバシーを保持します。つまり、すべてのページビューのごく一部のみが監視され、個人を特定できる情報（PII）は収集されません。
 
 ## Real Use Monitoring サービスとプライバシー {#rum-service-and-privacy}
 
