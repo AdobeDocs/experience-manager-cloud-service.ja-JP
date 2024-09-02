@@ -4,10 +4,10 @@ description: AEM as a Cloud Service のログを使用して一元的なログ�
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
-workflow-type: ht
-source-wordcount: '2831'
-ht-degree: 100%
+source-git-commit: bc103cfe43f2c492b20ee692c742189d6e454856
+workflow-type: tm+mt
+source-wordcount: '2834'
+ht-degree: 99%
 
 ---
 
@@ -144,12 +144,13 @@ AEM ログレベルは、OSGi 設定を介して環境の種類ごとに設定�
 
 AEM Java ログは OSGi 設定として定義されるので、ターゲット固有の AEM as a Cloud Service 環境は実行モードのフォルダーを使用します。
 
-Sling LogManager ファクトリの OSGi 設定を使用して、カスタム Java パッケージの Java ログを設定します。次の 2 つの設定プロパティがサポートされています。
+Sling LogManager ファクトリの OSGi 設定を使用して、カスタム Java パッケージの Java ログを設定します。サポートされている設定プロパティは次の 3 つです。
 
 | OSGi 設定プロパティ | 説明 |
 |---|---|
-| org.apache.sling.commons.log.names | ログステートメントを収集する Java パッケージです。 |
-| org.apache.sling.commons.log.level | Java パッケージをログに記録するログレベルです（org.apache.sling.commons.log.names で指定）。 |
+| `org.apache.sling.commons.log.names` | ログステートメントを収集する Java パッケージです。 |
+| `org.apache.sling.commons.log.level` | `org.apache.sling.commons.log.names` で指定された、Java パッケージをログに記録するログレベル |
+| `org.apache.sling.commons.log.file` | 出力のターゲットを指定：`logs/error.log` |
 
 その他の LogManager OSGi 設定プロパティを変更すると、AEM as a Cloud Service での可用性の問題が発生する場合があります。
 
@@ -163,6 +164,7 @@ Sling LogManager ファクトリの OSGi 設定を使用して、カスタム Ja
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "debug"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -174,6 +176,7 @@ Sling LogManager ファクトリの OSGi 設定を使用して、カスタム Ja
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "warn"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -185,6 +188,7 @@ Sling LogManager ファクトリの OSGi 設定を使用して、カスタム Ja
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "error"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
