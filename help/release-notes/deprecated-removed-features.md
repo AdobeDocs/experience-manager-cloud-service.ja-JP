@@ -4,10 +4,10 @@ description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d80872b1df4d31d784745dabeb0e1680fc921cb8
 workflow-type: tm+mt
-source-wordcount: '2193'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -95,12 +95,6 @@ ht-degree: 100%
     <td>Sling の Discovery API を代わりに使用してください。</td>
     <td>2015</td>
     <td>削除済み</td>
-  </tr>
-  <tr>
-    <td>org.apache.sling.settings</td>
-    <td>AEM as a Cloud Service では、実行モードつまり実行時のファイルシステムアクセスをサポートしていません。 </td>
-    <td>2020/10/5</td>
-    <td>2021 年末</td>
   </tr>
   <tr>
     <td>org.apache.fop.apps</td>
