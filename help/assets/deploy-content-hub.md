@@ -3,10 +3,10 @@ title: デプロイ [!DNL Content Hub]
 description: Content Hubをデプロイしてアクティブ化し、様々なタイプの権限（アセットのアップロード、ユーザーのAdobe Express）を持つユーザーにアクセスを提供する方法と、ユーザーに管理者権限を提供する方法について説明します。
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 1cc17d10a687ede6b3b091578ed20a39414bb235
+source-git-commit: ea5ce2f443f1502a690b34cbf1b951ecf6aae9b2
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 3%
+source-wordcount: '1524'
+ht-degree: 4%
 
 ---
 
@@ -32,9 +32,25 @@ Content Hubに対する権限には、次のような種類があります。
 
 * [Experience Manager Assets ユーザー ](#experience-manager-assets-users): Experience Manager Assetsでアセットを承認して、それらのアセットをContent Hubで利用できるようにする機能のas a Cloud Service。
 
+次の表に、使用可能なContent Hub ユーザータイプ、ユーザーの権限およびこれらの権限を取得するために必要な製品プロファイルの概要を示します。
+
+| ユーザーの役割 | Content Hub ユーザー | アセットを追加する権限を持つContent Hub ユーザー | アセットを混在させる権限を持つContent Hub ユーザー | Content Hub管理者 |
+|---------------|----------|----------|-------------------------|---|
+| **機能** |
+| Content Hub ポータルでブランド承認済みアセットにアクセスする | ✓ | ✓ | ✓ | ✓ |
+| Content Hub ポータルからのアセットのアップロード | − | ✓ | ✓ | ✓ |
+| Adobe Express統合を使用した画像の編集 | − | − | ✓ | − |
+| Content Hub設定 UI へのアクセス | − | − | − | ✓ |
+| **ユーザーはこれらの製品プロファイル （Admin Console）に存在する必要があります** |
+| AEM /配信インスタンス / AEM Assetsの限定ユーザー | ✓ | ✓ | ✓ | ✓ |
+| AEM/実稼動オーサーインスタンス/AEM ユーザー | − | ✓ | ✓ | − |
+| AEM /実稼動オーサーインスタンス / AEM管理者 | − | − | − | ✓ |
+| Adobe Express | − | − | ✓ | − |
+| **詳細情報** | [Content Hub ユーザー ](#onboard-content-hub-users) を表示 | アセットを追加する権限を持つ [Content Hub ユーザーを参照してください ](#onboard-content-hub-users-add-assets) | アセットを新しいバリエーションに混在させる権限を持つ [Content Hub ユーザーを参照してください ](#onboard-content-hub-users-remix-assets) | [Content Hub管理者 ](#onboard-content-hub-administrator) を参照してください |
+
 ## 手順 1:Cloud Managerを使用してContent Hub for Experience Manager Assetsを有効にする {#enable-content-hub}
 
-Content Hub ポータルにアクセスするには、管理者はまずCloud Managerを使用してContent Hub for Experience Manager Assetsas a Cloud Serviceを有効にする必要があります。 以下の手順を実行します。
+Content Hub ポータルにアクセスするには、管理者はまずCloud Managerを使用してContent Hub for Experience Manager Assetsas a Cloud Serviceを有効にする必要があります。 次の手順を実行します。
 
 1. Cloud Managerにログオンします。 ログイン時に適切な組織を選択していることを確認します。 Cloud Managerにすべてのプログラムが一覧表示されます。
 
@@ -53,7 +69,7 @@ Content Hub ポータルにアクセスするには、管理者はまずCloud Ma
 
 1. 「**[!UICONTROL 更新]**」をクリックします。
 
-Content HubがExperience Manager Assetsas a Cloud Serviceに対して有効になりました。
+Content HubがExperience Manager Assetsas a Cloud Serviceに対して有効になりました。 実稼動環境でContent Hubを有効にした後は、セルフサービス方式で無効にすることはできません。
 
 >[!NOTE]
 >
