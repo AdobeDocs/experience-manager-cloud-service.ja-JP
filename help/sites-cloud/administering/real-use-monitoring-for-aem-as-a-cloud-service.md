@@ -4,9 +4,9 @@ description: Real Use Monitoring （RUM）を使用して、web サイトやア�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 1bb463fe59e89e6360dceefdaaec395084fc80c5
+source-git-commit: 917e9496dcbb8c6fe72b7a718211ee5bbecb3323
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1200'
 ht-degree: 14%
 
 ---
@@ -93,10 +93,11 @@ RUM データを分析する際、ページビューやその他のパフォー�
 
 ## FAQ {#faq}
 
+<!-- REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
+1. **Can customers integrate the RUM service scripts with third-party systems like Dynatrace?**
 
-1. **RUM サービススクリプトを、Dynatraceなどのサードパーティシステムと統合することはできますか？**
-
-   はい。
+   Yes.
+-->
 
 1. **「次のペイントへのインタラクション」、「最初のバイトまでの時間」、「最初の内容を含むペイント」の web バイタルメトリクスは収集されていますか？**
 
