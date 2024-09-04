@@ -3,9 +3,9 @@ title: デプロイ [!DNL Content Hub]
 description: Content Hubをデプロイしてアクティブ化し、様々なタイプの権限（アセットのアップロード、ユーザーのAdobe Express）を持つユーザーにアクセスを提供する方法と、ユーザーに管理者権限を提供する方法について説明します。
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: ea5ce2f443f1502a690b34cbf1b951ecf6aae9b2
+source-git-commit: 9ac22ebcca619d91a38111bd706986b8d4a4d189
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1567'
 ht-degree: 4%
 
 ---
@@ -47,6 +47,10 @@ Content Hubに対する権限には、次のような種類があります。
 | AEM /実稼動オーサーインスタンス / AEM管理者 | − | − | − | ✓ |
 | Adobe Express | − | − | ✓ | − |
 | **詳細情報** | [Content Hub ユーザー ](#onboard-content-hub-users) を表示 | アセットを追加する権限を持つ [Content Hub ユーザーを参照してください ](#onboard-content-hub-users-add-assets) | アセットを新しいバリエーションに混在させる権限を持つ [Content Hub ユーザーを参照してください ](#onboard-content-hub-users-remix-assets) | [Content Hub管理者 ](#onboard-content-hub-administrator) を参照してください |
+
+>[!NOTE]
+>
+>[Experience Manager Assets ユーザー ](#experience-manager-assets-users)Experience Manager Assetsのas a Cloud Serviceのアセットを承認して、それらのアセットをContent Hubで利用できるようにする機能があります。 これらのユーザーは、Admin Consoleを使用して、AEM/実稼動オーサーインスタンス/AEM ユーザー製品プロファイルに追加する必要があります。
 
 ## 手順 1:Cloud Managerを使用してContent Hub for Experience Manager Assetsを有効にする {#enable-content-hub}
 
