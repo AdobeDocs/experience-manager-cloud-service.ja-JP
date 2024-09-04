@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: eb01b6982578ad1300163c2fd536e844afc815fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '736'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
@@ -25,43 +25,43 @@ ht-degree: 52%
 ### 機能強化 {#enhancements-17569}
 
 * CQ-4353778：翻訳プロセスイベント。
-* CQ-4354583:Adobeパイプラインを使用して翻訳プロセスイベントを送信します。
-* CQ-4356479:Adobeコードでのみ/adobe サーブレットコンテキストの使用を許可します。
-* CQ-4358226：翻訳キーワードを保存機能が、特定の文字列形式で機能しない。
-* CQ-4358270:AEM翻訳キット：8 月 8 日（PT）。
-* CQ-4358310:oak-compat-query-spi-1.2 をクイックスタートに追加します。
+* CQ-4354583：Adobe パイプラインを使用して翻訳プロセスイベントを送信します。
+* CQ-4356479：アドビコードでのみ /adobe サーブレットコンテキストを使用できるようにします。
+* CQ-4358226：翻訳キーワード保存機能が特定の文字列形式で機能しません。
+* CQ-4358270：AEM 翻訳キット：8月8日（PT）。
+* CQ-4358310：oak-compat-query-spi-1.2 をクイックスタートに追加します。
 * GRANITE-49833：イベント送信者とプロキシのバッチ処理のサポート。
-* GRANITE-52053:Commons コレクションの使用を削除 3:Platform その他。
-* GRANITE-52492:PIT リストアの場合の弾性非同期のキャッチアップ。
-* GRANITE-53099:Apache Felix Http Jetty 5.1.24 を更新します。
-* GRANITE-53125:CloudEvent に分類を追加する。
-* GRANITE-53328：スタッシングログの改善を含めて、Filevault を 3.8.0-T20240726111512-3cc11d50 に更新します。
-* GRANITE-53453: commons-lang を 3.15.0 に更新します。
-* GRANITE-53478:Filevault をバージョン 3.8.0 に更新します。
-* GRANITE-53505:QS を commons-collections-3.2.2-adobe-2 に更新します。
-* GRANITE-53528:Platform アーティファクトのバージョンを更新します。
-* GRANITE-53547:Apache Commons Lang 2 の使用を避ける代替 API を提供する。
-* GRANITE-53575:CS で BSAFE 6.2.5 を使用します。
-* GRANITE-53608:Oakを最新の公開リリース（1.68.0）に更新します。
-* SITES-23583:Sites エバーグリーンテストが Java 17 で失敗する。
-* SKYOPS-79535: rum スクリプト v2 に更新します。
-* SKYOPS-79816:FACT ツールでのサービスユーザーマッピング用の Sling 機能アナライザータスクを有効にします。
-* SKYOPS-81179:AEMは、バンドルの切り替えのテストをビルドします。
-* SKYOPS-81866:Java 21 と互換性がないことがわかっているバンドルの警告を報告します。
-* SKYOPS-82660:Sling API を 2.27.6 に更新します。
-* SKYOPS-82961:Sling ResourceResolver 1.12.0-T20240723153354-a0270a0 を更新しました。
-* SKYOPS-83356:AEMのデプロイメントで使用される JVM バージョンを追跡するためのグローバルダッシュボードを作成します。
-* SKYOPS-83436:Java Runtime 21 ロールアウトで、アダプティブフォームAEM Formsの作成が中断される。
-* SKYOPS-84272: AEM ランチャーの起動時に使用される Java バージョンを記録します。
+* GRANITE-52053：Commons コレクション 3 の使用を削除します：Platform 他。
+* GRANITE-52492：PIT 復元の場合の Elastic 非同期キャッチアップ。
+* GRANITE-53099：Apache Felix Http Jetty 5.1.24 を更新します。
+* GRANITE-53125：CloudEvent に分類を追加します。
+* GRANITE-53328：FileVault を、スタッシュログの改善を含んだ 3.8.0-T20240726111512-3cc11d50 に更新します。
+* GRANITE-53453：commons-lang を 3.15.0 に更新します。
+* GRANITE-53478：FileVault をバージョン 3.8.0 に更新します。
+* GRANITE-53505：QS を commons-collections-3.2.2-adobe-2 に更新します。
+* GRANITE-53528：プラットフォームアーティファクトのバージョンを更新します。
+* GRANITE-53547：代替 API を提供して Apache Commons Lang 2 の使用を避けます。
+* GRANITE-53575：CS で BSAFE 6.2.5 を使用します。
+* GRANITE-53608：Oak を最新のパブリックリリース（1.68.0）に更新します。
+* SITES-23583：Sites エバーグリーンのテストが Java 17 で失敗します。
+* SKYOPS-79535：rum スクリプト v2 に更新します。
+* SKYOPS-79816：FACT ツールでのサービスユーザーマッピング用の Sling 機能アナライザータスクを有効にします。
+* SKYOPS-81179：AEM でバンドル切り替えのテストをビルドします。
+* SKYOPS-81866：Java 21 と互換性がないことがわかっているバンドルの警告を報告します。
+* SKYOPS-82660：Sling API を 2.27.6 に更新します。
+* SKYOPS-82961：Sling ResourceResolver 1.12.0-T20240723153354-a0270a0 に更新します。
+* SKYOPS-83356：AEM デプロイメントで使用される JVM のバージョンを追跡するためのグローバルダッシュボードを作成します。
+* SKYOPS-83436：Java Runtime 21 のロールアウトで、AEM Forms でアダプティブフォームを作成できなくなります。
+* SKYOPS-84272：AEM ランチャーの起動時に使用される Java バージョンのログを記録します。
 
 ### 修正された問題 {#fixed-issues-17569}
 
-* CMGR-60225:AEM リリース 17486 へのアップデートの検証中に、AEM Sites CS のお客様でパイプライン実行エラーが検出されました。
-* GRANITE-45919:「ユーザー設定の編集」の「国/地域」リストに禁輸対象の国が表示される。
-* GRANITE-51715：ピッカーで、テキストフィールドに選択範囲が入力されない場合がある。
-* GRANITE-53290:XSS チェックで URL を解析する際に、プロトコルを正しく確認してください。
-* GRANITE-53576:OSGi 設定のサービスランキングの定義が正しくありません。
-* SKYOPS-82129:Sling モデルでの Memoryleak。
+* CMGR-60225：AEM リリース 17486 への更新を検証中に、AEM Sites CS のお客様でパイプライン実行エラーが検出されました。
+* GRANITE-45919：「ユーザー設定を編集」の「国 / 地域」リストに禁輸対象国が表示されます。
+* GRANITE-51715：ピッカーで選択した範囲がテキストフィールドに入力されない場合があります。
+* GRANITE-53290：XSS チェックで URL を解析する際に、プロトコルを正しく確認します。
+* GRANITE-53576：OSGi 設定のサービスランキングの定義が間違っています。
+* SKYOPS-82129：Sling モデルでのメモリリーク。
 
 ### 既知の問題 {#known-issues-17569}
 
