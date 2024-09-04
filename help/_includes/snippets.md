@@ -1,8 +1,8 @@
 ---
-source-git-commit: c7b78b5c4e4851d57314a437b3b7fa06c1f167d5
+source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 97%
+source-wordcount: '914'
+ht-degree: 95%
 
 ---
 # スニペット {#snippets}
@@ -155,3 +155,9 @@ ht-degree: 97%
 >
 >フロントエンドパイプラインを使用してサイトを開発する場合や、使用する予定がある場合は、事前に Cloud Manager IP 許可リストを追加する必要があります。
 >詳しくは、[フロントエンドパイプラインでの Cloud Manager IP 許可リストの使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)を参照してください。
+
+## Dynamic Media を操作する  {#work-with-dynamic-media}
+
+>[!TIP]
+>
+>Dynamic Mediaを初めてお使いですか？ Dynamic Mediaの概要については、[Dynamic Mediaの操作 ](/help/assets/dynamic-media/dynamic-media.md) を参照してください。

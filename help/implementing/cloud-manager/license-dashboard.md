@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eae5c75e1bf4f7201fe2c01d08737d36489ca3e4
-workflow-type: ht
-source-wordcount: '1101'
-ht-degree: 100%
+source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
+workflow-type: tm+mt
+source-wordcount: '925'
+ht-degree: 93%
 
 ---
 
@@ -65,7 +65,10 @@ Cloud Manager ライセンスダッシュボードを使用すると、次の情
 
 ## 使用状況の詳細を表示 {#view-usage-details}
 
-「**使用状況の詳細を表示**」ボタンをクリックすると、選択したソリューションの&#x200B;**使用状況の詳細**&#x200B;ウィンドウにアクセスできます。このウィンドウには、ソリューションの使用状況を示すグラフなど、詳細な分類が表示されます。使用状況の測定方法は、選択したソリューションによって異なります。
+<!--
+The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
+
+Cloud Managerのライセンス領域の **使用状況の詳細を表示** ボタンには、現在のリソース使用状況の詳細な分類が表示されます。 クリックすると、ライセンスに関連する重要な指標を表示するレポートまたはダッシュボードが開きます。 <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> この機能は、監視を支援して契約の範囲内に収まるようにすると同時に、リソースの計画と最適化を改善するためのインサイトを提供します。
 
 ### Sites の使用状況の詳細 {#sites-usage-details}
 
@@ -77,27 +80,28 @@ Cloud Manager ライセンスダッシュボードを使用すると、次の情
 
 ウィンドウの右側には、選択した契約年についてプログラムごとに時間の経過と共に分類された使用状況を示す面グラフが表示されます。カーソルを合わせると、選択した時点のプログラムごとの詳細を示すポップアップが表示されます。
 
-### Assets の使用状況の詳細 {#assets-usage-details}
+<!-- REMOVED AS PER CQDOC-21983
+### Assets usage details {#assets-usage-details}
 
-**Assets の使用状況の詳細**&#x200B;ウィンドウには、[ストレージ](#storage)と[標準ユーザーに基づいて Assets ライセンスの使用状況の概要を示すグラフが表示されます。](#standard-users)適切なタブを選択して、ビュー間を切り替えます。
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
 
-ストレージビューと標準ユーザービューの両方で、**環境タイプ**&#x200B;ドロップダウンを使用して、実稼動環境、ステージ環境、開発環境間でビューを切り替えることができます。
+For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
 
-#### ストレージ {#storage}
+#### Storage {#storage}
 
-![ストレージの Assets の使用状況の詳細ウィンドウ](assets/assets-usage-details-storage.png)
+![Assets usage details window for storage](assets/assets-usage-details-storage.png)
 
-ウィンドウの左側には、**契約年を表示**&#x200B;ドロップダウンで選択した契約年の契約の分類を示す円グラフが表示されます。
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-ウィンドウの右側には、選択した契約年についてプログラムごとに時間の経過と共に分類された使用状況を示す面グラフが表示されます。カーソルを合わせると、選択した時点のプログラムごとの詳細を示すポップアップが表示されます。
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
 
-#### 標準ユーザー {#standard-users}
+#### Standard Users {#standard-users}
 
-![標準ユーザーの Assets の使用状況の詳細ウィンドウ](assets/assets-usage-details-standard-users.png)
+![Assets usage details window for standard-users](assets/assets-usage-details-standard-users.png)
 
-ウィンドウの左側には、**契約年を表示**&#x200B;ドロップダウンで選択した契約年の契約の分類を示す円グラフが表示されます。
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-ウィンドウの右側には、選択した契約年についてプログラムごとに時間の経過と共に分類された使用状況を示す面グラフが表示されます。カーソルを合わせると、選択した時点のプログラムごとの詳細を示すポップアップが表示されます。
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time. -->
 
 ## よくある質問 {#faq}
 
