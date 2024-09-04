@@ -2,7 +2,7 @@
 source-git-commit: c7b78b5c4e4851d57314a437b3b7fa06c1f167d5
 workflow-type: tm+mt
 source-wordcount: '892'
-ht-degree: 77%
+ht-degree: 97%
 
 ---
 # スニペット {#snippets}
@@ -18,11 +18,11 @@ ht-degree: 77%
 ## 関連トピック {#see-also}
 
 * [AEM アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
-* [AEM SitesページへのAEM アダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [AEM Sites ページへの AEM アダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [AEM アダプティブフォームへテーマを適用](/help/forms/using-themes-in-core-components.md)
-* [AEM アダプティブフォームへコンポーネントを追加](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
+* [AEM アダプティブフォームへコンポーネントを追加](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
 * [AEM アダプティブフォームでの Captcha の使用](/help/forms/captcha-adaptive-forms-core-components.md)
-* [AEM アダプティブフォームのPDFバージョン（DoR）を生成する](/help/forms/generate-document-of-record-core-components.md)
+* [AEM アダプティブフォームの PDF バージョン（DoR）の生成](/help/forms/generate-document-of-record-core-components.md)
 * [AEM アダプティブフォームを翻訳](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [フォームの使用状況を追跡するアダプティブフォームの Adobe Analytics を有効にする](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
 * [Microsoft SharePoint へアダプティブフォームを接続](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
@@ -32,7 +32,7 @@ ht-degree: 77%
 * [Salesforce へアダプティブフォームを接続](/help/forms/aem-forms-salesforce-integration.md)
 * [AEM アダプティブフォームで Adobe Sign を使用](/help/forms/working-with-adobe-sign.md)
 * [アダプティブフォームの新しいロケールを追加](/help/forms/supporting-new-language-localization-core-components.md)
-* [データベースへアダプティブフォームデータを送信](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
+* [データベースへアダプティブフォームデータを送信](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
 * [REST エンドポイントへアダプティブフォームデータを送信](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [AEM ワークフローへアダプティブフォームデータを送信](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [フォームポータルを使用して AEM web サイト上の AEM アダプティブフォームを一覧表示](/help/forms/configure-forms-portal.md)
@@ -74,28 +74,28 @@ ht-degree: 77%
   <tbody>
   <tr>
     <td><strong>機能</strong></td>
-    <td><strong>アダプティブフォームの基盤コンポーネント</strong></td>
-    <td><strong>アダプティブフォームのコアコンポーネント</strong></td>   
+    <td><strong>アダプティブフォーム基盤コンポーネント</strong></td>
+    <td><strong>アダプティブフォームコアコンポーネント</strong></td>   
     </tr>
   </tr>
   <tr>
-    <td>オプションのドロップダウンリストを設定します </td>
-    <td>オプションのドロップダウンリストは、ルールエディターの <b> オプションの設定 </b> プロパティを使用して設定します。</td>
+    <td>オプションのドロップダウンリストを設定 </td>
+    <td>オプションのドロップダウンリストは、ルールエディターの「<b>オプションを設定</b>」プロパティを使用して設定します。</td>
     <td>ドロップダウンのオプションは、カスタム関数を使用して設定します。 
    </td>
    </tr>
      </tr>
    <tr>
     <td>繰り返し可能なパネルフィールドで数学演算を実行 </td>
-    <td>繰り返し可能なパネルフィールドに OOTB 数学関数を適用すると、合計や平均などの関数をルールエディターで実行できます。 2 つの引数を指定する必要があります。1 つ目はフィールドを含む繰り返し可能なパネルを指定し、2 つ目は対応する繰り返し可能なパネル内のフィールドを指定します。 </td>
-    <td>繰り返し可能なパネルフィールドでの数学演算は、カスタム関数を使用して実行できます。また、数学関数を、ルールエディターの繰り返し可能なパネルのフィールドに直接適用することもできます。
+    <td>繰り返し可能なパネルフィールドに OOTB 数学関数を適用し、ルールエディターを使用して sum、average などの関数を実行できます。2 つの引数を指定する必要があります。1 つ目はフィールドを含む繰り返し可能なパネルを指定し、2 つ目は対応する繰り返し可能なパネル内のフィールドを指定します。 </td>
+    <td>繰り返し可能なパネルフィールドでの数学演算は、カスタム関数を使用して実行できます。また、ルールエディターを使用して、繰り返し可能なパネルのフィールドに数学関数を直接適用することもできます。
    </td>
    </tr>
       <tr>
-    <td>「Then」でフィールド／パネルフォームのルールを検証／リセット </td>
-    <td>Validate 関数と Reset 関数は、ルールエディターのフォームオブジェクトのみをサポートします。 
+    <td>「Then」でフィールド、パネル、フォームのルールを検証／リセット </td>
+    <td>検証およびリセット関数は、ルールエディターのフォームオブジェクトのみをサポートします。 
    </td>
-    <td>検証/リセット関数は、ルールエディターのフォーム/パネル/フィールドオブジェクトをサポートします。 
+    <td>検証およびリセット関数は、ルールエディターのフォーム／パネル／フィールドオブジェクトをサポートします。 
    </td>
    </tr>
    <tr>
@@ -149,9 +149,9 @@ ht-degree: 77%
 >52.254.106.192/28、20.186.185.181、52.254.106.240/28、52.254.107.128/28、52.254.105.192/28、52.254.106.176/28、20.186.185.227、52.254.106.144/28、52.254.107.64/28、20.186.185.239、20.22.83.112、52.254.107.80/28、52.254.107.144/28、52.254.106.224/28、20.14.241.153、52.254.107.0/28、52.254.107.32/28、52.254.106.208/28、40.70.154.136/29、52.254.106.160/28、52.254.107.16/28、52.254.106.0/28、4.152.211.251
 >   
 
-## Cloud Manager IP 許可リストとフロントエンドパイプラインの追加 {#add-cm-allowlist-frontend-pipeline}
+## Cloud Manager の IP 許可リストとフロントエンドパイプラインの追加 {#add-cm-allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
->フロントエンドパイプラインを使用してサイトを開発する、または使用する場合は、事前にCloud Manager IP 許可リストを追加する必要があります。
->[ フロントエンドパイプラインでのCloud Manager IP許可リストの使用 ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline) を参照してください。
+>フロントエンドパイプラインを使用してサイトを開発する場合や、使用する予定がある場合は、事前に Cloud Manager IP 許可リストを追加する必要があります。
+>詳しくは、[フロントエンドパイプラインでの Cloud Manager IP 許可リストの使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)を参照してください。
