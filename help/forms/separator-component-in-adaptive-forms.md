@@ -3,13 +3,13 @@ title: アダプティブフォームの区切り記号コンポーネントと�
 description: アダプティブフォームの区切り記号コンポーネントを使用すると、フォームのセクションを視覚的に区別できます。
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 1b7857f9-b201-43ca-870d-42a09c441d9a
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '313'
 ht-degree: 100%
 
 ---
-
 
 # アダプティブフォームにおけるセパレーターコンポーネント {#separator-component-in-adaptive-forms}
 
@@ -35,4 +35,3 @@ ht-degree: 100%
 1. 次のいずれかの操作を行います。
    * 「**OK**」をクリックして変更を確定します
    * 変更を加えずにダイアログボックスを閉じるには、「**キャンセル**」をクリックします。
-

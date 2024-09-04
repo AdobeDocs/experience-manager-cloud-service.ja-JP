@@ -5,13 +5,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 feature: Adaptive Forms
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 726ba8a8-bfa4-44ac-8e74-e86a32505f36
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '246'
 ht-degree: 100%
 
 ---
-
 
 # Designer での Page Zero コンテンツの変更 {#changing-page-zero-content-in-designer}
 

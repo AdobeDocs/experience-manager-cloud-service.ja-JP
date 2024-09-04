@@ -8,13 +8,13 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '1328'
 ht-degree: 100%
 
 ---
-
 
 # フォームとドキュメントの公開と非公開{#publishing-and-unpublishing-forms-and-documents}
 

@@ -7,9 +7,9 @@ exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
 feature: Migration
 role: Admin
 source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '287'
-ht-degree: 32%
+ht-degree: 100%
 
 ---
 
@@ -26,13 +26,13 @@ ht-degree: 32%
 
 ## クローズドユーザーグループ（CUG）の移行
 
-グループは、移行後のコンテンツに、そのコンテンツの ACL または CUG ポリシーノードを介して関連付けられている場合、Adobe Experience Manager as a Cloud Serviceへの CTT/CAM 移行に自動的に含まれます。 運用開始前に、グループおよびそのメンバーが存在することを確認する必要があります。 CUG ポリシーで参照されるグループは、ここでは「CUG グループ」と呼ばれます。
+そのコンテンツの ACL または CUG ポリシーノードを使用して移行されたコンテンツに関連付けられている場合、グループは Adobe Experience Manager as a Cloud Service への CTT/CAM 移行に自動的に含まれます。グループとそのメンバーが存在することを、運用開始前に確認する必要があります。CUG ポリシーで参照されるグループを、ここでは「CUG グループ」と呼びます。
 
-AEM as a Cloud Serviceで CUG を使用するには、ユーザーがオーサーインスタンスに存在し、関連する CUG グループのメンバーである必要があります。  これは、パッケージを使用して実行できます。または、CUG ユーザーが IMS ユーザーの場合は、既に存在している可能性があります。  CUG ユーザーは、AEM CUG グループのメンバーにする必要があります。
+AEM as a Cloud Service で CUG を使用するには、ユーザーがオーサーインスタンスに存在し、関連する CUG グループのメンバーである必要があります。これは、パッケージを使用して実行できます。または、CUG ユーザーが IMS ユーザーの場合は、既に存在している可能性があります。CUG ユーザーを、AEM CUG グループのメンバーにする必要があります。
 
-Publish インスタンスで CUG の動作を有効にする手順は次のとおりです。
-1. CUG グループをアクティベートし（グループとそのメンバーをPublish インスタンスにレプリケートする）、
-1. CUG ポリシーで保護されたページは公開する必要があります（これにより、Publish インスタンスがポリシーを追跡できます）。
+パブリッシュインスタンスで CUG の動作を有効にする手順は次のとおりです。
+1. CUG グループをアクティベートする必要があります（CUG グループとそのメンバーがパブリッシュインスタンスにレプリケートされます）。
+1. CUG ポリシーで保護されたページを公開する必要があります（これにより、パブリッシュインスタンスが有効になり、ポリシーを追跡できます）。
 1. すべてのページが公開されたら、CUG で保護された各ページの機能を確認します。
 
-詳しくは、[ クローズドユーザーグループ ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html?lang=ja) を参照してください。
+詳しくは、[クローズドユーザーグループ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html?lang=ja)を参照してください。

@@ -3,13 +3,13 @@ title: アダプティブフォームの外観をカスタマイズする方法
 description: アダプティブフォーム向けのの LESS フレームワークを使用して、アダプティブフォームの外観をカスタマイズします。
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: efe59f3c-ca69-4bb5-a3ab-e7d8ea3c768e
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '2307'
 ht-degree: 100%
 
 ---
-
 
 # アダプティブフォームのスタイル構成{#styling-constructs-for-adaptive-forms}
 
@@ -1124,4 +1124,3 @@ guideNavIcon クラスには、タブナビゲーター（左側と上部の両�
   </tr>
  </tbody>
 </table>
-

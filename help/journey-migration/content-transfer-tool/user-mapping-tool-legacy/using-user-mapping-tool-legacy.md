@@ -7,9 +7,9 @@ hidefromtoc: true
 feature: Migration
 role: Admin
 source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '803'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 
 >[!INFO]
 >
->このドキュメントでは、ツールの非推奨（廃止予定）バージョンについて説明します。最新バージョンについて詳しくは、[ グループの移行 ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) を参照してください。
+>このドキュメントでは、ツールの非推奨（廃止予定）バージョンについて説明します。最新バージョンについて詳しくは、[グループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)を参照してください。
 
 ユーザーマッピングツールで使用される API は、Adobe Identity Management System（IMS）ユーザーをメールアドレスで検索して、各ユーザーの IMS ID を返すことができます。この API では、ユーザーが自分の組織のクライアント ID、クライアントシークレット、アクセスまたはベアラートークンを作成する必要があります。
 

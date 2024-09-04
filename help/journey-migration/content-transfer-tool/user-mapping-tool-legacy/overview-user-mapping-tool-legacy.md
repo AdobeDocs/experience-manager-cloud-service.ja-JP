@@ -7,9 +7,9 @@ hidefromtoc: true
 feature: Migration
 role: Admin
 source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '289'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 96%
 
 >[!INFO]
 >
->このドキュメントでは、ツールの非推奨（廃止予定）バージョンについて説明します。最新バージョンについて詳しくは、[ グループの移行 ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) を参照してください。
+>このドキュメントでは、ツールの非推奨（廃止予定）バージョンについて説明します。最新バージョンについて詳しくは、[グループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)を参照してください。
 
 <!-- Alexandru: drafting this for now
 

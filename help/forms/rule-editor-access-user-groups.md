@@ -1,26 +1,26 @@
 ---
-title: Aem アダプティブフォームのルールエディターへのアクセスを提供してユーザーグループを選択する方法
+title: 選択したユーザーグループに AEM アダプティブフォームルールエディターへのアクセス権を付与する方法
 description: アダプティブフォームで作業を行うユーザーのタイプやスキルはそれぞれ異なります。各ユーザーの役割や職務に応じて、ルールエディターへのアクセスを制限する方法を説明します。
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 2ef0e685-458b-4117-b02a-55dd3472577e
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '320'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-
-# 選択したユーザーグループにルールエディターへのアクセスを許可する {#grant-rule-editor-access-to-select-user-groups}
+# ルールエディターへのアクセスを許可してユーザーグループを選択 {#grant-rule-editor-access-to-select-user-groups}
 
 ## 概要 {#overview}
 
 アダプティブフォームで作業を行うユーザーのタイプやスキルはそれぞれ異なります。正しい知識を使用してスクリプトや複雑なルールを操作できる上級ユーザーもいれば、アダプティブフォームのレイアウトや基本的なプロパティ以外の操作はできない初心者のユーザーもいます。
 
-[!DNL Experience Manager Forms] を使用すると、各ユーザーの役割や職務に応じて、ルールエディターへのアクセスを制限することができます。 アダプティブフォームの設定サービスを使用して、ルールエディターを表示してアクセスできる[ユーザーグループ](forms-groups-privileges-tasks.md)を指定することができます。
+[!DNL Experience Manager Forms] では、各ユーザーの役割や職務に応じて、ルールエディターへのアクセスを制限できます。アダプティブフォームの設定サービスを使用して、ルールエディターを表示してアクセスできる[ユーザーグループ](forms-groups-privileges-tasks.md)を指定することができます。
 
 ## ルールエディターにアクセスできるユーザーグループの指定 {#specify-user-groups-that-can-access-rule-editor}
 
@@ -55,4 +55,3 @@ ht-degree: 91%
    ルールエディターへのアクセス権を持たないユーザーに表示されるコンポーネントツールバー
 
    ユーザーをグループに追加する方法については、[ユーザーの管理とセキュリティ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ja)を参照してください。
-

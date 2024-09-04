@@ -6,13 +6,13 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 12c54be1-378d-4dbe-9129-93ddc7c343a4
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '693'
 ht-degree: 100%
 
 ---
-
 
 # ユーザーデータからフォーム送信メタデータへの情報の追加 {#adding-information-from-user-data-to-form-submission-metadata}
 

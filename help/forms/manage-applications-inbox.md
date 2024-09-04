@@ -9,13 +9,13 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 92130660-9942-426f-ae2f-4f3300f9735c
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '1084'
 ht-degree: 100%
 
 ---
-
 
 # AEM インボックスでの Forms アプリケーションとタスクの管理 {#manage-forms-applications-and-tasks-in-aem-inbox}
 
@@ -154,4 +154,3 @@ AEM インボックスでは、アクティブなタスクのみが表示され�
 1. [プロパティインデックスを作成し、true に設定します](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=ja#the-property-index)。
 
 1. CRX DE でインデックスを設定するか、パッケージを介してデプロイした後、[リポジトリーのインデックスを再作成します](https://helpx.adobe.com/jp/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex)。
-

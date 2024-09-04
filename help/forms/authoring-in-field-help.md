@@ -7,13 +7,13 @@ feature: Adaptive Forms, Foundation Components
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
-workflow-type: tm+mt
+exl-id: 9abc6e42-3b53-4dca-bd6a-ced5cf6c6ac4
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '369'
 ht-degree: 100%
 
 ---
-
 
 # フォームフィールド用の文脈依存ヘルプの作成{#authoring-in-context-help-for-form-fields}
 

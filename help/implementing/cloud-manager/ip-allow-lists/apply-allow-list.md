@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '293'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -29,9 +29,9 @@ IP 許可リストを適用すると、リストの定義に含まれている�
 1. 適切な組織を選択します。
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 1. **概要**&#x200B;ページから、**環境**&#x200B;画面に移動します。
-1. **環境** 画面で、特定の環境詳細ページに移動します。
+1. **環境**&#x200B;画面で、特定の環境の詳細ページに移動します。
 1. **IP 許可リスト**&#x200B;テーブルに移動します。
-1. このテーブルの上部にある入力フィールドを使用すると、IP 許可リストと、その適用先となるオーサーサービスまたはパブリッシュサービスを選択できます。
+1. テーブルの上部にある入力フィールドを使用すると、IP 許可リストと、その適用先となるオーサーサービスまたはパブリッシュサービスを選択できます。
 IP 許可リストを適用するには、その IP 許可リストが既に Cloud Manager に存在する必要があります。詳しくは、[IP 許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)を参照してください。
 1. 「**適用**」をクリックし、送信を確認します。
 

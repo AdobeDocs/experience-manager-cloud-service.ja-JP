@@ -3,13 +3,13 @@ title: 買い物かごおよび Dispatcher の設定
 description: 買い物かごおよび Dispatcher の設定
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
-workflow-type: tm+mt
+exl-id: 2ce424a7-6bf4-4482-b5cb-5a7998a294e9
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '88'
 ht-degree: 100%
 
 ---
-
 
 # 買い物かごおよび Dispatcher の設定
 

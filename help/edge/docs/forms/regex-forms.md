@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '191'
 ht-degree: 100%
 
 ---
-
 
 # 検証に一般的に使用される正規表現
 

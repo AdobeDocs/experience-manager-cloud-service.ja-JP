@@ -1,17 +1,17 @@
 ---
-title: アダプティブFormsで SOM 式を使用するにはどうすればよいですか？
-description: アダプティブFormsでパネルの SOM 式を抽出する方法を説明します。
+title: アダプティブフォームでの SOM 式の使用方法
+description: アダプティブフォームでパネルの SOM 式を抽出する方法について説明します。
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 5c30d5ca-12b8-4cc6-aa95-bde562419827
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '344'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-
-# アダプティブフォームでの SOM 式の使用 {#using-som-expressions-in-adaptive-forms}
+# アダプティブフォームでの SOM 式の使用{#using-som-expressions-in-adaptive-forms}
 
 アダプティブフォームは AEM ページとしてモデル化され、AEM リポジトリーで JCR コンテンツ構造で表示されます。コンテンツ構造のキー要素は guideContainer ノードです。guideContainer の下にある rootPanel にはネストされたパネルやフィールドが含まれる場合があります。
 

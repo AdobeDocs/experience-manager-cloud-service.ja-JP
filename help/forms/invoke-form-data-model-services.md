@@ -8,13 +8,13 @@ feature: Adaptive Forms, Form Data Model
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 56e5cabd-a509-4ef9-9fea-3cc610f8dee1
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '488'
 ht-degree: 100%
 
 ---
-
 
 # アダプティブフォームからフォームデータモデル（FDM）サービスを呼び出すための API {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 

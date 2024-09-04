@@ -8,13 +8,13 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 59ae0eed-d832-4f46-9f99-7bcca9f82306
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '683'
 ht-degree: 100%
 
 ---
-
 
 # XDP ベースのアダプティブフォームにおける XFA のサポート {#xfa-support-in-xdp-based-adaptive-forms}
 
@@ -267,4 +267,3 @@ XDP ファイルを使用してアダプティブフォームを作成すると�
 >[!NOTE]
 >
 >XFA チェックボタンに連結されたアダプティブフォームのラジオボタンおよびチェックボックスグループの必須プロパティを上書きすることはできません。
-

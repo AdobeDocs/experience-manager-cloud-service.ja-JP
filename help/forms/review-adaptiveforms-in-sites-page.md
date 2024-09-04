@@ -5,13 +5,13 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: e53535a8-cd6b-4f30-9523-773243098757
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '338'
 ht-degree: 100%
 
 ---
-
 
 # アダプティブフォームのレビューの作成と管理 {#review-step-forms-aem-sites-page}
 

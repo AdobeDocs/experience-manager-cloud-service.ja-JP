@@ -8,13 +8,13 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
-workflow-type: tm+mt
+exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '2335'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
-
 
 # OSGi 上の Forms 中心のワークフロー {#forms-centric-workflow-on-osgi}
 
@@ -201,7 +201,7 @@ Forms 中心のワークフローは、次のように起動またはトリガ�
 
 ### AEM インボックスからのアプリケーションの送信 {#inbox}
 
-作成したワークフローアプリケーションは、インボックスでアプリケーションとして使用できます。[!DNL workflow-users] のグループのメンバーであるユーザーは、関連するワークフローをトリガーする申請書を入力して送信できます。
+作成したワークフローアプリケーションは、インボックスでアプリケーションとして使用できます。[!DNL workflow-users] グループのメンバーであるユーザーは、関連するワークフローをトリガーするアプリケーションを入力して送信できます。
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 

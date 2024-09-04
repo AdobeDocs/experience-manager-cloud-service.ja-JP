@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 96179c5f88e8546c12674e34afd0269c1f196d65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '421'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 69%
 
 AEM as a Cloud Service は、デフォルトでは、インターネット経由でアクセスできます。セキュリティはユーザーの認証および認可によって処理されますが、信頼できる IP アドレスにのみアクセスを制限する方法は IP 許可リストです。
 
-Cloud Manager の IP 許可リストを使用すると、そのような信頼できる IP アドレスのみにアクセスを制限および制御できます。適切な権限を持つCloud Manager ユーザーは、信頼できる IP アドレスを [ 作成して IP 許可リストを追加 ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) し、そのアドレスからのみ、サイトのユーザーがAEM ドメインにアクセスできるようにすることができます。
+Cloud Manager の IP 許可リストを使用すると、そのような信頼できる IP アドレスのみにアクセスを制限および制御できます。適切な権限を持つ Cloud Manager ユーザーは、信頼できる IP アドレスの [IP 許可リストを作成および追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)し、自分のサイトのユーザーがそのアドレスから AEM ドメインにアクセスできるようにすることができます。
 
 IP 許可リストを追加すれば、環境内のオーサーサービスとパブリッシュサービスのいずれか一方または両方に対して、ユニットまたはエンティティとして何度でも [IP 許可リストを適用または適用解除](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)することができます。
 
@@ -32,11 +32,11 @@ IP 許可リストを追加すれば、環境内のオーサーサービスと�
 >
 >IP 許可リストが適用されない場合、デフォルトでは、すべての IP アドレスが許可されます。IP 許可リストが適用されると、IP 許可リストに記載されている IP アドレス以外は禁止されます。
 
-## フロントエンドパイプラインでのCloud Manager IP許可リストの使用 {#allowlists-frontend-pipeline}
+## フロントエンドパイプラインでの Cloud Manager IP 許可リストの使用 {#allowlists-frontend-pipeline}
 
-[ フロントエンドパイプラインを使用してサイトを開発する ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 場合、または使用する予定の場合は、事前に次のCloud Manager IP許可リストを追加する必要があります。
+[フロントエンドパイプラインを使用してサイトを開発する場合や、使用する予定がある場合は](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)、事前に次の Cloud Manager IP 許可リストを追加する必要があります。
 
-[IP 許可リストを追加 ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist) する際に、*`Cloud Manager`* という名前を付け、以下のアドレスのリストをコピーして IP許可リストダイアログボックスに貼り付けます。
+[IP 許可リストを追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist)する際は、*`Cloud Manager`* という名前を付け、以下のアドレスのリストをコピーして、IP 許可リストダイアログボックスにペーストします。
 
 **Cloud Manager の IP 許可リスト**
 
@@ -66,10 +66,10 @@ IP 許可リストを追加すれば、環境内のオーサーサービスと�
 4.152.211.251
 ```
 
-フロントエンドパイプラインの実行が中断されないようにするには、このCloud Manager IP 許可リストが追加されていることを確認してください。 次に、オーサー環境にリストを適用します *その前に* パイプラインを有効にします。
+フロントエンドパイプラインの実行が中断されないようにするには、この Cloud Manager IP 許可リストを確実に追加します。次に、パイプラインを有効にする&#x200B;*前*&#x200B;に、リストをオーサー環境に適用します。
 
-[IP許可リストの適用 ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) を参照してください。
-[ フロントエンドパイプラインの有効化 ](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) を参照してください。
+詳しくは、[IP 許可リストの適用](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)を参照してください。
+詳しくは、[フロントエンドパイプラインの有効化](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)を参照してください。
 
 
 ## 制限事項 {#limitations}

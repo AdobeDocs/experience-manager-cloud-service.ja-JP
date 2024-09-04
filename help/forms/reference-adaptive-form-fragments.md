@@ -1,6 +1,6 @@
 ---
-title: 参照アダプティブフォームフラグメントとは何ですか?
-description: AEM Forms には、フォームをすばやく作成するためにアセットとして使用できるアダプティブフォームフラグメントが用意されています。
+title: 参照用のアダプティブフォームフラグメントとは
+description: AEM Forms には、フォームをすばやく作成するアセットとして使用できるアダプティブフォームフラグメントが用意されています。
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -9,17 +9,17 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '396'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-
 # 参照用のアダプティブフォームフラグメント {#reference-adaptive-form-fragments}
 
-アダプティブフォームフラグメントは、フォームの作成時に使用できるフィールドのグループまたはフィールドのグループを含むパネルです。これを使用してフォームを簡単にすばやく作成できます。アダプティブフォームフラグメントは、サイドバーのアセット ブラウザーを使用してフォームにドラッグアンドドロップし、フォーム編集者で編集できます。
+アダプティブフォームフラグメントは、フォームの作成時に使用できるフィールドのグループまたはフィールドのグループを含むパネルです。これを使用してフォームを簡単にすばやく作成できます。サイドバーのアセットブラウザーを使用して、アダプティブフォームフラグメントをフォームにドラッグ＆ドロップし、それをフォームエディターで編集できます。
 
 アダプティブフォームの作成者に向けて、[!DNL AEM Forms] パッケージ [[!DNL AEM FORMS] REFERENCE FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS) で参照用のフラグメントが提供されています。次のフラグメントが含まれています。
 
@@ -40,7 +40,7 @@ ht-degree: 83%
 
 ## アドレス {#address}
 
-郵送物アドレスを指定するためのフィールドが含まれています。 使用できるフィールドは、アドレス、郵便番号、市、州および国です。指定された米国の郵便番号に対応する市と州を入力する事前設定済みの web サービスも含まれています。
+住所を指定するフィールドが含まれています。使用できるフィールドは、アドレス、郵便番号、市、州および国です。指定された米国の郵便番号に対応する市と州を入力する事前設定済みの web サービスも含まれています。
 
 ![住所フラグメント](assets/address.png)
 
@@ -50,7 +50,7 @@ ht-degree: 83%
 
 ## 連絡先情報 {#contact-information}
 
-電話番号と電子メールアドレスを取得するためのフィールドが含まれています。
+電話番号とメールアドレスを取得するフィールドが含まれています。
 
 ![連絡先情報フラグメント](assets/contact-info.png)
 

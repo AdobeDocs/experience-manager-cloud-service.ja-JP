@@ -1,13 +1,13 @@
 ---
 title: コンテンツ転送ツールの概要
-description: コンテンツ転送ツールを使用して、オンプレミスのAEM インスタンスからAEM as a Cloud Serviceにコンテンツを転送する方法を説明します
+description: コンテンツ転送ツールを使用して、オンプレミスの AEM インスタンスから AEM as a Cloud Service にコンテンツを転送する方法について説明します。
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
 source-git-commit: e73933acc3ff23d1456f03b288f2f842a6289ace
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '612'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="概要"
->abstract="コンテンツ転送ツールは、アドビが開発したツールで、ソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM Cloud Service インスタンスへの既存のコンテンツの移行を開始するために使用できます。 また、このツールは自動的にグループを転送します。"
+>abstract="コンテンツ転送ツールは、アドビが開発したツールで、ソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM Cloud Service インスタンスへの既存のコンテンツの移行を開始するために使用できます。 グループも自動的に転送されます。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja" text="ガイドラインとベストプラクティス"
 
 コンテンツ転送ツールは、アドビが開発したツールで、ソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM Cloud Service インスタンスへの既存のコンテンツの移行を開始するために使用できます。
 
-また、このツールは自動的にグループを転送します。  詳しくは、[ グループの移行 ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) を参照してください。
+グループも自動的に転送されます。詳しくは、[グループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)を参照してください。
 
 コンテンツ転送ツールは、コンテンツ転送プロセスを Cloud Acceleration Manager と統合します。これにより、ユーザーは次の利点をすべて活用できます。
 
