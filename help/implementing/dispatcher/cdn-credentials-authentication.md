@@ -4,10 +4,10 @@ description: 設定ファイルでルールを宣言し、Cloud Manager 設定�
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: c8059260ab0ff13ed85f55eda2e09ca5cb678fa9
+source-git-commit: 5d51ff056d4e4f0fdbb3004cbac55803ac91f8ca
 workflow-type: tm+mt
-source-wordcount: '1379'
-ht-degree: 91%
+source-wordcount: '1443'
+ht-degree: 84%
 
 ---
 
@@ -72,7 +72,7 @@ data:
    * action - 対象のオーセンティケーターを参照して、「authenticate」を指定する必要があります。
 
 >[!NOTE]
->参照する設定をデプロイする前に、Edge Key を、[秘密鍵タイプの Cloud Manager 環境変数](/help/operations/config-pipeline.md#secret-env-vars)として設定する必要があります。
+>Edge キーは、それを参照する設定をデプロイする前に、[ 秘密鍵タイプのCloud Manager環境変数 ](/help/operations/config-pipeline.md#secret-env-vars) として設定する必要があります。 32 バイト以上の長さの一意のランダムキーを使用することをお勧めします。例えば、Open SSL 暗号化ライブラリは、コマンド `openssl rand -hex 32` を実行してランダムキーを生成できます。
 
 ### 安全に移行してトラフィックのブロックのリスクを軽減 {#migrating-safely}
 
@@ -140,7 +140,7 @@ data:
    * action - 対象のオーセンティケーターを参照して、「authenticate」を指定する必要があります。
 
 >[!NOTE]
->参照する設定をデプロイする前に、パージキーを、[秘密鍵タイプの Cloud Manager 環境変数](/help/operations/config-pipeline.md#secret-env-vars)として設定する必要があります。
+>パージキーは、それを参照する設定をデプロイする前に、[ 秘密鍵タイプのCloud Manager環境変数 ](/help/operations/config-pipeline.md#secret-env-vars) として設定される必要があります。 32 バイト以上の長さの一意のランダムキーを使用することをお勧めします。例えば、Open SSL 暗号化ライブラリは、openssl rand -hex 32 コマンドを実行してランダムキーを生成できます
 
 パージキーの設定と CDN キャッシュパージの実行に焦点を当てた [ チュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) を参照してください。
 
