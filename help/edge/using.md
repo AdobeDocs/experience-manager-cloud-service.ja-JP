@@ -4,9 +4,9 @@ description: AEM as a Cloud Service を Edge Delivery Services と併用する�
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 16531cf084ad1b9619f4dffc6d028c7df4002ff5
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '338'
 ht-degree: 100%
 
 ---
@@ -45,9 +45,3 @@ Edge 配信サービスを使用すると、コンテンツソースに関係な
 Edge 配信サービスは、ブロックの概念に基づいています。AEM には、プロジェクトのニーズに合わせて拡張できる事前定義済みのブロックの包括的なライブラリが付属しています。Edge 配信サービスプロジェクトのコードは、GitHub で管理されます。
 
 詳しくは、[Edge Delivery Services を使用した WYSIWYG オーサリングの開発者向け入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)ドキュメントを参照してください。
-
-## 既存の AEM プロジェクト {#existing-projects}
-
-新しい AEM プロジェクトで Edge 配信サービスのメリットを活用できるようになるまで待つ必要はありません。Edge 配信サービスは既存の AEM プロジェクトに統合できるので、パフォーマンスの向上をすぐに活用できます。
-
-詳しくは、[既存の AEM プロジェクトでの Edge 配信サービスの使用](/help/edge/wysiwyg-authoring/existing-projects.md)を参照してください。

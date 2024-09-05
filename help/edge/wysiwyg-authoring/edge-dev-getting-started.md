@@ -1,20 +1,20 @@
 ---
-title: Edge Delivery Servicesを使用した WYSIWYG オーサリングの開発者向けスタートガイド
-description: このガイドでは、Edge Delivery Servicesと WYSIWYG コンテンツオーサリング用ユニバーサルエディターを使用して、新しいAdobe Experience Manager サイトを使い始める方法を説明します。
+title: Edge Delivery Servicesを使用したWYSIWYG オーサリングの開発者向け入門ガイド
+description: このガイドでは、Edge Delivery ServicesとWYSIWYG コンテンツオーサリング用ユニバーサルエディターを使用して、新しいAdobe Experience Manager サイトを使い始める方法を説明します。
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 87%
+source-wordcount: '1207'
+ht-degree: 86%
 
 ---
 
 
-# Edge Delivery Servicesを使用した WYSIWYG オーサリングの開発者向けスタートガイド {#edge-dev-getting-started}
+# Edge Delivery Servicesを使用したWYSIWYG オーサリングの開発者向け入門ガイド {#edge-dev-getting-started}
 
-このガイドでは、Edge Delivery Servicesと WYSIWYG コンテンツオーサリング用ユニバーサルエディターを使用して、新しいAdobe Experience Manager サイトを使い始める方法を説明します。
+このガイドでは、Edge Delivery ServicesとWYSIWYG コンテンツオーサリング用ユニバーサルエディターを使用して、新しいAdobe Experience Manager サイトを使い始める方法を説明します。
 
 ## 前提条件 {#prerequisites}
 
@@ -23,15 +23,6 @@ ht-degree: 87%
 * [Edge Delivery Service のチュートリアル](/help/edge/developer/tutorial.md)を完了していること。
 * [AEM Cloud Service サンドボックス](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)にアクセスできること。
 * [同じサンドボックス環境でユニバーサルエディターが有効になっている](/help/implementing/universal-editor/getting-started.md)こと。
-
-## 適切なエディタを選択 {#editor-choice}
-
-AEM には 2 種類の異なるコンテンツエディターが用意されており、状況に応じて、適切なコンテンツエディターを選択して使用します。
-
-* **ユニバーサルエディター** - 新しいサイトのデフォルトの選択肢です。
-* **AEM ページエディター** - 既存の AEM Sites から Edge Delivery Services に移行する場合に選択します。　
-
-このガイドでは、ユニバーサルエディターを活用して、Edge Delivery Services を使用した AEM プロジェクトに焦点を当てます。適切なエディターの選択および既存の AEM サイトの Edge Delivery Services への移行について詳しくは、[AEM での Edge Delivery Services の使用](/help/edge/using.md)ドキュメントを参照してください。
 
 ## Edge Delivery Services 向けに開発する場合の中心概念 {#core-concepts}
 
@@ -59,7 +50,7 @@ Edge Delivery Services では GitHub を活用しているので、GitHub リポ
 >
 >ブロックの詳細と Edge Delivery Services 向けの開発方法については、Edge Delivery Services ドキュメントの[ビルド](/help/edge/developer/block-collection.md)の節を参照してください。
 
-## WYSIWYG オーサリングおよびEdge Delivery Servicesの概要 {#getting-started}
+## WYSIWYGのオーサリングとEdge Delivery Servicesの概要 {#getting-started}
 
 [前提条件](#prerequisites)を満たし、[ユニバーサルエディターの使用を選択](#editor-choice)したら、独自のプロジェクトを開始できます。
 
@@ -131,7 +122,7 @@ GitHub プロジェクトが完成したら、プロジェクトで使用でき�
 >
 >ユニバーサルエディターを使用してサイトを編集するには、Chromium ベースのブラウザーを使用する必要があります。
 
-1. Edge Delivery Servicesサイトテンプレートを使用した最新の WYSIWYG オーサリングを GitHub （[`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)）からダウンロードします。
+1. Edge Delivery Servicesのサイトテンプレートを使用した最新のWYSIWYG オーサリングを GitHub （[`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)）からダウンロードします。
 
 1. AEM as a Cloud Service オーサリングインスタンスにログインし、サイトコンソールに移動して、**作成**／**テンプレートからサイト**&#x200B;をタップまたはクリックします。
 
@@ -141,7 +132,7 @@ GitHub プロジェクトが完成したら、プロジェクトで使用でき�
 
    ![テンプレートの読み込み](assets/edge-dev-getting-started/site-templates.png)
 
-1. GitHub からダウンロードした WYSIWYG オーサリングとEdge Delivery Servicesのサイトテンプレートをアップロードします。
+1. GitHub からダウンロードしたWYSIWYG オーサリングとEdge Delivery Services サイトテンプレートをアップロードします。
 
    * テンプレートは 1 回だけアップロードする必要があります。アップロードした後は、追加サイトの作成に再利用できます。
 
@@ -193,10 +184,10 @@ GitHub プロジェクトが完成したら、プロジェクトで使用でき�
 
 ## 次の手順 {#next-steps}
 
-これで、Edge Delivery Services プロジェクトで WYSIWYG オーサリングが機能するようになったので、独自のブロックの作成とスタイル設定を開始できます。
+これで、Edge Delivery Services プロジェクトを使用したWYSIWYGのオーサリングが完了したので、独自のブロックの作成とスタイル設定を開始できます。
 
 詳細については、[ユニバーサルエディターで使用するために実装されたブロックの作成](/help/edge/wysiwyg-authoring/create-block.md)ガイドを参照してください。
 
 >[!TIP]
 >
->AEM as a Cloud Serviceをコンテンツソースとする WYSIWYG オーサリングが可能な新しいEdge Delivery Servicesプロジェクトの作成に関するエンドツーエンドのチュートリアルについては、[ このAEM GEMs ウェビナー ](https://experienceleague.adobe.com/ja/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery) を参照してください。
+>AEM as a Cloud Serviceをコンテンツソースとして使用したWYSIWYG オーサリングが可能な新しいEdge Delivery Servicesプロジェクトの作成に関するエンドツーエンドのチュートリアルについては、[ このAEM GEMs ウェビナー ](https://experienceleague.adobe.com/ja/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery) を参照してください。
