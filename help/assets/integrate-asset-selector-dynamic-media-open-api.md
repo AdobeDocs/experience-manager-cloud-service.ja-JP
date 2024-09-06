@@ -2,7 +2,8 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセットセレクター'
 description: アセットセレクターを様々なAdobe、Adobe以外のアプリケーションおよびサードパーティアプリケーションと統合します。
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 82%
@@ -18,11 +19,11 @@ ht-degree: 82%
 
 アセットセレクターと、OpenAPI 機能を備えた Dynamic Media の統合には、次の前提条件を使用します。
 
-* [通信方法](#overview-asset-selector.md#prereqs)
+* [通信方法](/help/assets/overview-asset-selector.md#prereqs)
 * OpenAPI 機能を備えた Dynamic Media にアクセスするには、次のライセンスが必要です。
    * アセットリポジトリ（例：Experience Manager Assets as a Cloud Service）。
    * AEM Dynamic Media。
-* ブランドの一貫性を確保するために、[承認済みアセット](#approved-assets.md)のみを使用できます。
+* ブランドの一貫性を確保するために、[承認済みアセット](/help/assets/approve-assets.md)のみを使用できます。
 
 ## OpenAPI 機能を備えた Dynamic Media の統合 {#adobe-app-integration-polaris}
 
@@ -36,7 +37,7 @@ OpenAPI 機能を備えた Dynamic Media では、`rootPath` プロパティと 
 aemTierType:[1: "delivery"]
 ```
 
-この設定により、すべての承認済みアセットをフォルダーなしで表示したり、フラットな構造として表示したりできます。詳しくは、[ アセットセレクター `aemTierType` プロパティ ](#asset-selector-properties.md) の下のプロパティに移動します。
+この設定により、すべての承認済みアセットをフォルダーなしで表示したり、フラットな構造として表示したりできます。詳しくは、[ アセットセレクター `aemTierType` プロパティ ](/help/assets/asset-selector-properties.md) の下のプロパティに移動します。
 
 
 ### 承認済みアセットからの動的配信 URL の作成 {#create-dynamic-media-url}

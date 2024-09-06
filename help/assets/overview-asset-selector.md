@@ -2,7 +2,8 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセットセレクター'
 description: アセットセレクターを使用し、アプリケーション内のアセットのメタデータとレンディションを検索および取得します。
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 70%
@@ -19,7 +20,7 @@ ht-degree: 70%
 
 アセットセレクターには、次のような多くの利点があります。
 
-* Vanilla JavaScript ライブラリを使用して、任意の [Adobe](#integrate-asset-selector-adobe-app.md) アプリケーションまたは [ 非Adobe](#integrate-asset-selector.md) アプリケーションと簡単に統合できます。
+* Vanilla JavaScript ライブラリを使用して、任意の [Adobe](/help/assets/integrate-asset-selector-adobe-app.md) アプリケーションまたは [ 非Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md) アプリケーションと簡単に統合できます。
 * アセットセレクターパッケージのアップデートがアプリケーションで使用可能なアセットセレクターに自動的にデプロイされるため、管理が簡単です。最新の修正内容を読み込むために、アプリケーション内でアップデートを行う必要がありません。
 * アプリケーション内のアセットセレクターの表示を制御するプロパティを利用できるため、カスタマイズが容易です。
 * フルテキスト検索、標準のフィルターおよびカスタマイズされたフィルターを使用して、オーサリングエクスペリエンス内で使用するアセットにすばやく移動できます。
@@ -51,8 +52,8 @@ ht-degree: 70%
 
 **詳細を表示**
 
-* [アセットセレクターとAdobeアプリの統合](#integrate-asset-selector-adobe-app.md)
-* [アセットセレクターとAdobe以外のアプリの統合](#integrate-asset-selector-non-adobe-app.md)
+* [アセットセレクターとAdobeアプリの統合](/help/assets/integrate-asset-selector-adobe-app.md)
+* [アセットセレクターとAdobe以外のアプリの統合](/help/assets/integrate-asset-selector-non-adobe-app.md)
 * [アセットセレクター Dynamic Media オープン API の統合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
@@ -124,7 +125,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 * **[!UICONTROL ステータス]：**&#x200B;アセットの現在の状態（`all`、`approved`、`rejected`、`no status`）が含まれます。
 * **[!UICONTROL ファイルタイプ]：**`folder`、`file`、`images`、`documents`、`video` が含まれます。
-* **[!UICONTROL 有効期限ステータス]：**&#x200B;有効期限に基づいてアセットに言及します。`[!UICONTROL Expired]`チェックボックスをオンにして有効期限切れのアセットをフィルタリングするか、アセットの `[!UICONTROL Expiration Duration]` を設定し、有効期限に基づいてアセットを表示できます。アセットの有効期限が既に切れているか、有効期限が近づいている場合、バッジがその内容を示します。 さらに、有効期限切れのアセットの使用状況（またはドラッグ＆ドロップ）を許可するかどうかを制御できます。詳しくは、[有効期限切れのアセットのカスタマイズ](#asset-selector-customization.md#customize-expired-assets)を参照してください。デフォルトでは、今後 30 日以内に有効期限が切れるアセットに **まもなく有効期限が切れる** バッジが表示されます。 ただし、`expirationDate` プロパティを使用して有効期限を設定できます。
+* **[!UICONTROL 有効期限ステータス]：**&#x200B;有効期限に基づいてアセットに言及します。`[!UICONTROL Expired]`チェックボックスをオンにして有効期限切れのアセットをフィルタリングするか、アセットの `[!UICONTROL Expiration Duration]` を設定し、有効期限に基づいてアセットを表示できます。アセットの有効期限が既に切れているか、有効期限が近づいている場合、バッジがその内容を示します。 さらに、有効期限切れのアセットの使用状況（またはドラッグ＆ドロップ）を許可するかどうかを制御できます。詳しくは、[有効期限切れのアセットのカスタマイズ](/help/assets/asset-selector-customization.md#customize-expired-assets)を参照してください。デフォルトでは、今後 30 日以内に有効期限が切れるアセットに **まもなく有効期限が切れる** バッジが表示されます。 ただし、`expirationDate` プロパティを使用して有効期限を設定できます。
 
   >[!TIP]
   >

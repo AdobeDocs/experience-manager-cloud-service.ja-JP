@@ -2,13 +2,13 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセットセレクター'
 description: アセットセレクターを様々なAdobe、Adobe以外のアプリケーションおよびサードパーティアプリケーションと統合します。
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 55848de0-aff2-42a0-b959-c771235d9425
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 77%
 
 ---
-
 
 # Adobe以外のアプリケーションとの統合 {#integrate-asset-selector-non-adobe-app}
 
@@ -18,7 +18,7 @@ ht-degree: 77%
 
 アセットセレクターをアドビ以外のアプリケーションと統合する場合は、次の前提条件を使用します。
 
-* [通信方法](#overview-asset-selector.md#prereqs)
+* [通信方法](/help/assets/overview-asset-selector.md#prereqs)
 * imsClientId
 * imsScope
 * redirectUrl

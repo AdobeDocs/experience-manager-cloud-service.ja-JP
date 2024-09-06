@@ -2,13 +2,13 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセットセレクター'
 description: アセットセレクターを様々なAdobe、Adobe以外のアプリケーションおよびサードパーティアプリケーションと統合します。
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 88%
 
 ---
-
 
 # アセットセレクターとAdobeアプリケーションの統合 {#integrate-asset-selector-with-adobe-app}
 
@@ -18,7 +18,7 @@ ht-degree: 88%
 
 アセットセレクターを [!DNL Adobe] アプリケーションと統合する場合は、次の前提条件を使用しまず。
 
-* [通信方法](#overview-asset-selector.md#prereqs)
+* [通信方法](/help/assets/overview-asset-selector.md#prereqs)
 * imsOrg
 * imsToken
 * apikey
@@ -27,7 +27,7 @@ ht-degree: 88%
 
 次の例では、統合シェルの下で [!DNL Adobe] アプリケーションを実行している場合、または認証用に生成された `imsToken` が既にある場合に、アセットセレクターの使用方法を示します。
 
-以下の例の _6～15 行目_&#x200B;に示されているように、`script` タグを使用してアセットセレクターパッケージをコードに含めます。スクリプトが読み込まれると、`PureJSSelectors` グローバル変数を使用できるようになります。_16～23 行目_&#x200B;に示されているように、アセットセレクターの[プロパティ](#asset-selector-properties.md)を定義します。`imsOrg` プロパティと `imsToken` プロパティは、いずれもアドビアプリケーションでの認証に必要です。`handleSelection` プロパティは、選択したアセットを処理するために使用されます。_17 行目_&#x200B;で示されているように、アセットセレクターをレンダリングするには `renderAssetSelector` 関数を呼び出します。_21～22 行目_&#x200B;に示されているように、アセットセレクターが `<div>` コンテナ要素に表示されます。
+以下の例の _6～15 行目_&#x200B;に示されているように、`script` タグを使用してアセットセレクターパッケージをコードに含めます。スクリプトが読み込まれると、`PureJSSelectors` グローバル変数を使用できるようになります。_16～23 行目_&#x200B;に示されているように、アセットセレクターの[プロパティ](/help/assets/asset-selector-properties.md)を定義します。`imsOrg` プロパティと `imsToken` プロパティは、いずれもアドビアプリケーションでの認証に必要です。`handleSelection` プロパティは、選択したアセットを処理するために使用されます。_17 行目_&#x200B;で示されているように、アセットセレクターをレンダリングするには `renderAssetSelector` 関数を呼び出します。_21～22 行目_&#x200B;に示されているように、アセットセレクターが `<div>` コンテナ要素に表示されます。
 
 これらの手順に従うことで、[!DNL Adobe] アプリケーションでアセットセレクターを使用できます。
 
@@ -153,4 +153,3 @@ onErrorReceived: (type, msg) => {
 >* [ アセットセレクターのプロパティ ](/help/assets/asset-selector-properties.md)
 >* [ アセットセレクター Dynamic Media オープン API の統合 ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 >* [ アセットセレクターのカスタマイズ ](/help/assets/asset-selector-customization.md)
-

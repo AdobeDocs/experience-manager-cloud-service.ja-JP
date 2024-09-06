@@ -2,17 +2,17 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセットセレクター'
 description: アセットセレクターを様々なAdobe、Adobe以外のアプリケーションおよびサードパーティアプリケーションと統合します。
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 86%
 
 ---
 
-
 # Vanilla JS を使用したアセットセレクターの統合 {#integration-using-vanilla-js}
 
-あらゆる [!DNL Adobe] アプリケーションまたはアドビ以外のアプリケーションを [!DNL Experience Manager Assets] リポジトリと統合し、アプリケーション内からアセットを選択できます。[アセットセレクターと様々なアプリケーションの統合](#integrate-asset-selector.md)を参照してください。
+あらゆる [!DNL Adobe] アプリケーションまたはアドビ以外のアプリケーションを [!DNL Experience Manager Assets] リポジトリと統合し、アプリケーション内からアセットを選択できます。[アセットセレクターと様々なアプリケーションの統合](#asset-selector-integration-with-apps)を参照してください。
 
 統合は、アセットセレクターパッケージを読み込み、Vanilla JavaScript ライブラリを使用して Assets as a Cloud Service に接続することで行われます。アプリケーション内の `index.html` または適切なファイルを、次の目的で編集します。
 
@@ -39,4 +39,3 @@ ht-degree: 86%
 >* [ アセットセレクターのカスタマイズ ](/help/assets/asset-selector-customization.md)
 >* [ アセットセレクターのプロパティ ](/help/assets/asset-selector-properties.md)
 >* [ アセットセレクター Dynamic Media オープン API の統合 ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-

@@ -2,13 +2,13 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセットセレクター'
 description: アセットセレクターを使用し、アプリケーション内のアセットのメタデータとレンディションを検索および取得します。
 role: Admin,User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 1%
 
 ---
-
 
 # アセットセレクターへのファイルおよびフォルダーのアップロード {#upload-files-folders}
 
@@ -28,13 +28,13 @@ ht-degree: 1%
 
    また、サムネールを使用して選択した画像をプレビューし、X アイコンをクリックして、リストから特定の画像を削除することもできます。 X アイコンは、画像の名前またはサイズの上にマウスを置いた場合にのみ表示されます。 また、「**[!UICONTROL すべてを削除]**」をクリックして、アップロードリストからすべての項目を削除することもできます。
 
-1. アップロードプロセスを完了するには、「**[!UICONTROL アップロード]**」をクリックします。 アップロードしたアセットが表示されます。 設定可能なコードについては、[ 基本アップロード ](asset-selector-customization.md#basic-upload) を参照してください。
+1. アップロードプロセスを完了するには、「**[!UICONTROL アップロード]**」をクリックします。 アップロードしたアセットが表示されます。 設定可能なコードについては、[ 基本アップロード ](/help/assets/asset-selector-customization.md#basic-upload) を参照してください。
 
 ## メタデータを使用したアセットのアップロード {#upload-assets-with-metadata}
 
-アセットをアプリケーションに直ちにアップロードしながら、アセットにメタデータを追加できます。 メタデータには、ビジネスの件名、製品の詳細、キャンペーンなど、様々なフィールドが含まれます。 それには、プロパティ `metadataSchema` 使用します。 プロパティについて詳しくは、[ アセットセレクターのプロパティ ](asset-selector-properties.md) を参照 `metadataSchema` てください。
+アセットをアプリケーションに直ちにアップロードしながら、アセットにメタデータを追加できます。 メタデータには、ビジネスの件名、製品の詳細、キャンペーンなど、様々なフィールドが含まれます。 それには、プロパティ `metadataSchema` 使用します。 プロパティについて詳しくは、[ アセットセレクターのプロパティ ](/help/assets/asset-selector-properties.md) を参照 `metadataSchema` てください。
 
-設定に必要なコードスニペットについては、[ メタデータを使用してアップロード ](#upload-with-metadata) を参照してください。
+設定に必要なコードスニペットについては、[ メタデータを使用してアップロード ](/help/assets/asset-selector-customization.md#upload-with-metadata) を参照してください。
 
 ![ メタデータを使用したアセットのアップロード ](assets/upload-with-metadata.png)
 
@@ -51,7 +51,6 @@ ht-degree: 1%
 
 ## カスタマイズされたアップロード {#customize-upload}
 
-アセットセレクターを使用すると、カスタマイズされたアップロードフォームを追加できます。 複数のカスタマイズを使用できます。 例えば、[hideUploadButton](#asset-selector-properties.md) プロパティを使用すると、アプリケーションでデフォルトに表示されるアップロードボタンを非表示にできます。 代わりに、要件に応じて MFE アプリケーションの外部でレンダリングするようにカスタマイズできます。 設定については、[ カスタマイズされたアップロード ](#asset-selector-customization.md#customized-upload) を参照してください。
+アセットセレクターを使用すると、カスタマイズされたアップロードフォームを追加できます。 複数のカスタマイズを使用できます。 例えば、[hideUploadButton](/help/assets/asset-selector-properties.md) プロパティを使用すると、アプリケーションでデフォルトに表示されるアップロードボタンを非表示にできます。 代わりに、要件に応じて MFE アプリケーションの外部でレンダリングするようにカスタマイズできます。 設定については、[ カスタマイズされたアップロード ](/help/assets/asset-selector-customization.md#customized-upload) を参照してください。
 
 ![ カスタマイズされたアップロード ](assets/customized-upload.png)
-

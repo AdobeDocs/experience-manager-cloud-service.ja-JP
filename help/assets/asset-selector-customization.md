@@ -2,13 +2,13 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセットセレクター'
 description: 関数を使用すると、アプリケーション内のアセットセレクターをカスタマイズできます。
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1241'
 ht-degree: 86%
 
 ---
-
 
 # アセットセレクターのカスタマイズ {#asset-selector-customization}
 
@@ -21,7 +21,7 @@ ht-degree: 86%
 * [有効期限切れのアセットのカスタマイズ](#customize-expired-assets)
 * [コンテキスト呼び出しフィルター](#contextual-invocation-filter)
 
-[!DNL Experience Manager Assets] リポジトリにアクセスするための認証の詳細を定義するには、アプリケーション実装内の `index.html` ファイルまたは同様のファイルで前提条件を定義する必要があります。 完了したら、要件に応じてコードスニペットを追加できます。
+[!DNL Experience Manager Assets] リポジトリにアクセスするための認証の詳細を定義するには、アプリケーション実装内の **index.html** ファイルまたは同様のファイルで前提条件を定義する必要があります。 完了したら、要件に応じてコードスニペットを追加できます。
 
 ## フィルターパネルのカスタマイズ {#customize-filter-panel}
 
@@ -186,12 +186,12 @@ interface SelectedAsset {
 | *tiff:imageLength* | 数値 | アセットの高さ。 |
 | *computedMetadata* | `Record<string, any>` | あらゆる種類（リポジトリ、アプリケーション、埋め込みメタデータ）のすべてのアセットのメタデータのバケットを表すオブジェクト。 |
 | *_links* | `Record<string, any>` | 関連付けられたアセットのハイパーメディアリンク。メタデータやレンディションなどのリソースへのリンクが含まれます。 |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | アセットのレンディションに関する情報を含むオブジェクトの配列。 |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | 文字列 | レンディションの URI。 |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | 文字列 | レンディションの MIME タイプ。 |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>&#39;* | 数値 | レンディションのサイズ（バイト単位）。 |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | 数値 | レンディションの幅。 |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | 数値 | レンディションの高さ。 |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition>`* | `Array<Object>` | アセットのレンディションに関する情報を含むオブジェクトの配列。 |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>`* | 文字列 | レンディションの URI。 |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>`* | 文字列 | レンディションの MIME タイプ。 |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>`* | 数値 | レンディションのサイズ（バイト単位）。 |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>`* | 数値 | レンディションの幅。 |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>`* | 数値 | レンディションの高さ。 |
 
 ### オブジェクトスキーマを使用したアセット選択の処理 {#handling-selection}
 
