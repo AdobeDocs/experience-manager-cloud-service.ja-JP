@@ -4,7 +4,7 @@ description: Cloud Manager でアドビが管理するリポジトリを作成�
 exl-id: 6c32c4ae-f48d-4440-bfc2-cdc1a3d59599
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 100%
@@ -31,7 +31,7 @@ Cloud Manager でアドビが管理するリポジトリを作成する方法に
 
    ![リポジトリーを追加ダイアログ](assets/add-adobe-repository.png)
 
-ウィザードが閉じると、新しいリポジトリが&#x200B;**リポジトリ**&#x200B;ウィンドウのテーブルに表示されます。これで、[CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)を関連付けることや、[**リポジトリ**&#x200B;ウィンドウ内で管理することができます。](managing-repositories.md)
+ウィザードが閉じると、新しいリポジトリが&#x200B;**リポジトリ**&#x200B;ウィンドウのテーブルに表示されます。これで、[CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)を関連付けることや、[**リポジトリ**&#x200B;ウィンドウ](managing-repositories.md)内で管理することができます。
 
 >[!TIP]
 >

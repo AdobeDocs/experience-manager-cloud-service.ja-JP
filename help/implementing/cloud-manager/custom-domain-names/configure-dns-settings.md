@@ -1,27 +1,27 @@
 ---
 title: DNS 設定の指定
-description: カスタムドメイン名の DNS 設定を指定することで、サイトで訪問者にサービスを提供できる方法を説明します。
+description: カスタムドメイン名の DNS 設定を指定して、サイトで訪問者にサービスを提供できるようにする方法について説明します。
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 57%
+ht-degree: 95%
 
 ---
 
 
 # DNS 設定の指定 {#configure-dns}
 
-カスタムドメイン名が正常に [ 検証およびデプロイされた後 ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)、カスタムドメイン名の DNS レコードを DNS プロバイダーで更新する準備が整います。 この作業を行うと、サイトで訪問者にサービスを提供できます。したがって、このアクティビティは通常、運用開始より前に行われます。
+カスタムドメイン名が正常に[検証され、デプロイ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)されたら、DNS プロバイダーを使用してカスタムドメイン名の DNS レコードを更新する準備が整います。この作業を行うと、サイトで訪問者にサービスを提供できます。したがって、このアクティビティは通常、運用開始より前に行われます。
 
 ## DNS 設定とは {#dns-settings}
 
-`CNAME` または A レコードは、プロビジョニングされると、ドメインのすべてのインターネットトラフィックを、指している場所にルーティングします。 その場所がトラフィックを処理するようにプロビジョニングされていない場合は、機能が一時的に停止します。テストされていない場合は、コンテンツにエラーがある可能性があります。テストが完了し、運用開始の準備が整った後は、この手順が常に実行されるのは、このためです。
+`CNAME` または A レコードがプロビジョニングされると、ドメインのすべてのインターネットトラフィックが、そのレコードが指している場所にルーティングされます。その場所がトラフィックを処理するようにプロビジョニングされていない場合は、機能が一時的に停止します。テストされていない場合は、コンテンツにエラーがある可能性があります。テストが完了し、運用開始の準備が整った後は、この手順が常に実行されるのは、このためです。
 
-これらの設定を行うには、`CNAME` または apex レコードを設定して、カスタムドメイン名がCloud Manager ドメイン名を指すようにする必要があります。 このドキュメントの次の節は、DNS 設定に適したレコードタイプを判断するのに役立ちます。
+これらの設定を行うには、カスタムドメイン名が Cloud Manager ドメイン名を指すように、`CNAME` または apex レコードを設定する必要があるかどうかを判断する必要があります。このドキュメントの後の節は、DNS 設定に適したレコードタイプを判断するうえで役に立ちます。
 
 ## 要件 {#requirements}
 
@@ -29,7 +29,7 @@ DNS レコードを設定する前に、次の要件を満たす必要があり�
 
 * ドメインホストまたは登録機関がわからない場合は、確認する必要があります。
 * 組織のドメインの DNS レコードを編集できる、またはそれが可能な適切な担当者に連絡できなければなりません。
-* [ ドメイン名ステータスの確認 ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) ドキュメントに記載されているように、設定されたカスタムドメイン名は既に確認されている必要があります。
+* [ ドメイン名ステータスの確認 ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) ドキュメントに記載されているように、設定されたカスタムドメイン名は既に検証されている必要があります。
 
 ## CNAME レコード {#cname-record}
 
@@ -59,4 +59,4 @@ apex ドメインは、サブドメインを含まないカスタムドメイン
 
 ## 次の手順 {#next-steps}
 
-カスタムドメイン名の DNS レコードを設定したら、Cloud Managerでこれらの設定を検証する必要があります。 [DNS レコードのステータスの確認 ](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) ドキュメントに進み、カスタムドメイン名を完成させます。
+カスタムドメイン名の DNS レコードを設定したら、Cloud Manager でこれらの設定を検証する必要があります。カスタムドメイン名を完成するには、[DNS レコードのステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)ドキュメントに進んでください。

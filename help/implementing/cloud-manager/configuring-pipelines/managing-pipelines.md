@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '1119'
-ht-degree: 100%
+source-wordcount: '1110'
+ht-degree: 89%
 
 ---
 
@@ -50,13 +50,13 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 1. ここでは、プログラムのすべてのパイプラインのリストを確認できるほか、**パイプラインカード**&#x200B;の場合と同様にパイプラインの実行を開始および停止することができます。
 
-パイプラインが実行中の場合、**ステータス**&#x200B;列の情報アイコンをタップすると、実行に関する詳細が表示されます。
+パイプラインが実行中の場合、「ステータス **列の情報アイコンをクリックすると** 実行に関する詳細が表示されます。
 
 ![パイプライン実行の詳細](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
-「**詳細を表示**」をタップまたはクリックすると、[パイプライン実行の詳細](#view-details)が表示されます。
+「**詳細を表示**」をクリックすると、[パイプライン実行の詳細](#view-details)が表示されます。
 
-また、パイプラインの省略記号ボタンをタップまたはクリックすると、パイプラインの状態に合わせて、次のような追加のアクションを実行できます [編集中](#editing-pipelines) 0.45008334 [実行をキャンセルしています。](#cancel)
+また、パイプラインの省略記号ボタンをクリックして、パイプラインの状態に適した追加のアクション（[ 編集 ](#editing-pipelines) 実行のキャンセル [ を実行 ](#cancel) することもできます。
 
 ![パイプラインアクション](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
@@ -70,13 +70,13 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 1. ここでは、現在および過去の実行を含む、プログラムのすべてのパイプライン実行のリストを確認できます。
 
-パイプラインが実行中の場合、**ステータス**&#x200B;列の情報アイコンをタップすると、実行に関する詳細が表示されます。
+パイプラインが実行中の場合、「**ステータス** 列の情報アイコンをクリックすると、実行の詳細が表示されます。
 
 ![パイプライン実行の詳細](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-パイプライン実行を表す行をタップまたはクリックすると、[パイプライン実行の詳細](#view-details)が表示されます。
+パイプライン実行を表す行をタップまたはクリックすると、[ パイプライン実行の詳細 ](#view-details) に移動します。
 
-また、省略記号ボタンをタップまたはクリックして、詳細の表示やログのダウンロードなど、パイプライン実行に関するさらなるアクションを実行することもできます。これにより、[パイプラインの詳細ページ](#view-details)が表示されます。
+また、「。..」ボタンをクリックして、詳細の表示やログのダウンロードなど、パイプラインの実行に関する詳細アクションを実行すると、[ パイプラインの詳細ページ ](#view-details) に移動できます。
 
 ![パイプライン実行アクション](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-execution-actions.png)
 

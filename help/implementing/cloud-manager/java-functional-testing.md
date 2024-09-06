@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -22,12 +22,12 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 >[!NOTE]
 >
->Cloud Manager が `it.tests` フォルダーを自動作成する前にリポジトリが作成された場合は、[AEM プロジェクトアーキタイプを使用して最新バージョンを生成することもできます。](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+>Cloud Manager が `it.tests` フォルダーを自動作成する前にリポジトリが作成された場合は、[AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)を使用して最新バージョンを生成することもできます。
 
 `it.tests` フォルダーの内容を取得したら、それを独自のテストの基礎として使用し、次の操作を実行できます。
 
-1. [テストケースを作成します。](#writing-functional-tests)
-1. [テストをローカルで実行します。](#local-test-execution)
+1. [ テストケースを作成します ](#writing-functional-tests)。
+1. [ テストをローカルで実行 ](#local-test-execution)。
 1. コードを Cloud Manager リポジトリにコミットし、Cloud Manager パイプラインを実行します。
 
 ## カスタム機能テストの作成 {#writing-functional-tests}

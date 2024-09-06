@@ -5,10 +5,10 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 100%
+source-wordcount: '399'
+ht-degree: 93%
 
 ---
 
@@ -59,10 +59,10 @@ Cloud Manager では、パイプラインカードの目立つ位置にある「
 
 ## リポジトリウィンドウからのリポジトリ情報へのアクセス {#repositories-window}
 
-[**リポジトリ**&#x200B;ウィンドウのツールバーには、「**リポジトリ情報にアクセス**」ボタンもあります。](managing-repositories.md)アドビが管理するリポジトリへのアクセスに関する、同じ情報が表示されます。
+「**リポジトリ情報にアクセス**」ボタンは、「[**リポジトリ** ウィンドウ ](managing-repositories.md) のツールバーでも使用できます。 Adobeが管理するリポジトリへのアクセスに関する同じ情報が表示されます。
 
 ## アクセスパスワードの失効 {#revoke-password}
 
-アクセスパスワードはいつでも失効できます。これを行うには、[このリクエストに対するサポートチケットを作成](https://experienceleague.adobe.com/ja?support-solution=Experience+Manager&amp;support-tab=home#support)してください。
+アクセスパスワードはいつでも失効できます。これを行うには、[このリクエストに対するサポートチケットを作成](https://experienceleague.adobe.com/ja?support-solution=Experience+Manager&amp;support-tab=home#support)します。
 
 チケットは高い優先度で処理され、1 日以内に失効されます。

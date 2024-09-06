@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b2950c62c55942614e23d08b3bb96864d4112e8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 81%
+source-wordcount: '1499'
+ht-degree: 75%
 
 ---
 
@@ -37,8 +37,8 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 1. [ツールバー](#toolbars-my-programs-toolbars)：組織の選択、アラート、アカウント設定を行います。
 1. プログラムの現在のビューを切り替えることができるタブ。
    * **ホーム**&#x200B;ビュー（デフォルト）：すべてのプログラムの概要を表示する&#x200B;**マイプログラム**&#x200B;ビューを選択します
-   * **License**[License ダッシュボードにアクセスする ](/help/implementing/cloud-manager/license-dashboard.md)License」
-   * タブはデフォルトでは閉じられていますが、[Cloud Manager ヘッダー](#cloud-manager-header)のハンバーガーメニューを使用して表示できます。
+   * **ライセンス** [ ライセンスダッシュボード ](/help/implementing/cloud-manager/license-dashboard.md) にアクセスする。
+   * タブはデフォルトで閉じられ、[Cloud Managerヘッダー ](#cloud-manager-header) のハンバーガーメニューで表示されます。
 1. [統計とコールトゥアクション](#statistics)：最近のアクティビティの概要を確認します。
 1. [**「マイプログラム」**&#x200B;セクション](#my-programs-section)：すべてのプログラムの概要を表示します
 1. [クイックリンク](#quick-links-section)：関連するリソースに簡単にアクセスします。
@@ -63,7 +63,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 1. 組織セレクターには、現在ログインしている組織（この例では、Foundation 内部）が表示されます。Adobe ID が複数の組織に関連付けられている場合、別の組織に切り替えるには、タップまたはクリックします。
 1. ソリューション切り替えボタンをタップまたはクリックすると、他の Experience Cloud ソリューションに素早くジャンプできます。
 1. ヘルプアイコンを使用すると、学習リソースやサポートリソースに素早くアクセスできます。
-1. 通知アイコンには、現在割り当てられている未完了の[通知](/help/implementing/cloud-manager/notifications.md)の数を示すバッジが付きます。
+1. 通知アイコンには、現在割り当てられている未完了の [ 通知 ](/help/implementing/cloud-manager/notifications.md) の数を示すバッジが付きます。
 1. ユーザー設定にアクセスするには、ユーザーを表すアイコンを選択します。ユーザー画像が設定されていない場合、アイコンがランダムに割り当てられます。
 
 #### プログラムツールバー {#program-toolbar}
@@ -118,7 +118,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 * プログラム名
 * サービスタイプ：
    * AEM as a Cloud Service プログラム用 **Experience Managerクラウド**
-   * [AMS プログラム **の** Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+   * [AMS プログラム **の** Experience Manager](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/introduction)
 * [ プログラムの種類 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * サンドボックス
    * 実稼動
@@ -183,7 +183,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 ### ツールバー {#program-overview-toolbar}
 
-プログラムの概要のツールバーは、マイプログラムコンソールのツールバーと類似しています。[](#my-programs-toolbars)ここでは違いのみを説明します。
+プログラムの概要のツールバーは、[ マイプログラムコンソール ](#my-programs-toolbars) のツールバーと似ています。 ここでは違いのみを説明します。
 
 #### Cloud Manager ヘッダー {#cloud-manager-header-2}
 
@@ -225,7 +225,7 @@ Cloud Manager ヘッダーには、自動的に開くハンバーガーメニュ
 
 ### コールトゥアクション {#cta}
 
-「コールトゥアクション」セクションでは、プログラムのステータスに応じて役立つ情報を提供します。新しいプログラムの場合は、次の手順が提供されるほか、[プログラム作成時に設定された公開日のリマインダーが表示される場合があります。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+「コールトゥアクション」セクションでは、プログラムのステータスに応じて役立つ情報を提供します。新規プログラムの場合は、次の手順が提供され、開始日 [ プログラムの作成時に設定 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) が通知されます。
 
 ![新規プログラムのアクションの呼び出し](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
@@ -251,7 +251,7 @@ Cloud Manager ヘッダーには、自動的に開くハンバーガーメニュ
 
 ### パフォーマンスカード {#performance}
 
-**パフォーマンス**&#x200B;カードを使用すると、**[CDN ダッシュボード](/help/implementing/cloud-manager/cdn-performance.md)**&#x200B;の概要を確認できます。
+**パフォーマンス** カードには、**[CDN ダッシュボード](/help/implementing/cloud-manager/cdn-performance.md)** の概要が表示されます。
 
 ![パフォーマンスカード](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 

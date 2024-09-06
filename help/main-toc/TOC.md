@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 503c6712aeea33fc093dbaec780e50c1e72579cd
+source-git-commit: 2bf129d763fcad024eb3799cdf2a97bdbc2472c5
 workflow-type: tm+mt
-source-wordcount: '5578'
-ht-degree: 98%
+source-wordcount: '5586'
+ht-degree: 97%
 
 ---
 
@@ -105,6 +105,7 @@ ht-degree: 98%
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024年度 {#2024}
+         + [2024.8.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-8-0.md)
          + [2024.7.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-7-0.md)
          + [2024.6.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-6-0.md)
          + [2024.5.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
@@ -1073,7 +1074,6 @@ ht-degree: 98%
          + [サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [環境の休止](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-         + [Edge Delivery Services のサポート](/help/implementing/cloud-manager/edge-delivery-services.md)
       + AEM アプリケーションプロジェクトの作成 {#create-application-project}
          + [プロジェクト作成ウィザード](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [プロジェクトのセットアップ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -1107,7 +1107,6 @@ ht-degree: 98%
             + [機能テストの概要](/help/implementing/cloud-manager/functional-testing.md)
             + [Java 機能テスト](/help/implementing/cloud-manager/java-functional-testing.md)
             + [UI テスト](/help/implementing/cloud-manager/ui-testing.md)
-         + [エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md)
          + [エクスペリエンス監査ダッシュボード](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [ログへのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md)
       + [カスタム権限](/help/implementing/cloud-manager/custom-permissions.md)
@@ -1116,11 +1115,9 @@ ht-degree: 98%
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
       + [高度なネットワーク機能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=ja)
-      + SSL 証明書 {#manage-ssl-certificates}
-         + [はじめに](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-         + [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-         + [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + カスタムドメイン名 {#custom-domain-names}
+      + Edge Delivery Sites {#edge-delivery-sites}
+         + [Cloud ManagerでのEdge Delivery サポート](/help/implementing/cloud-manager/edge-delivery-services.md)
+      + ドメイン設定 {#custom-domain-names}
          + [はじめに](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
@@ -1128,7 +1125,12 @@ ht-degree: 98%
          + [DNS 設定の指定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [DNS レコードのステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-         + [ドメイン検証済み（DV）証明書](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
+      + SSL 証明書 {#manage-ssl-certificates}
+         + [はじめに](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         + [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+         + [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+      + CDN 設定 {#cdn-configurations}
+         + [CDN 設定の追加](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
       + IP 許可リスト {#ip-allow-lists}
          + [はじめに](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [IP 許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)

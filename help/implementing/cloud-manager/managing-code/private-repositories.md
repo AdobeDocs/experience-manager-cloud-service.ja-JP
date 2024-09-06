@@ -4,10 +4,10 @@ description: 独自のプライベート GitHub リポジトリを操作する�
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -110,7 +110,7 @@ Cloud Manager で GitHub リポジトリを検証すると統合が完了し、C
 
 ## プライベートリポジトリとパイプラインの関連付け {#pipelines}
 
-検証済みのプライベートリポジトリは、[フルスタックパイプラインおよびフロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)に関連付けることができます。
+検証済みのプライベートリポジトリは、[ フルスタックおよびフロントエンドパイプライン ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) に関連付けることができます。
 
 >[!NOTE]
 >

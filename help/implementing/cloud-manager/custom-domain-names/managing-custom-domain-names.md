@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 100%
+source-wordcount: '342'
+ht-degree: 68%
 
 ---
 
@@ -17,9 +17,11 @@ ht-degree: 100%
 
 Cloud Manager では、カスタムドメイン名の表示、更新、置換、削除を行うことができます。
 
-## 表示と更新 {#view-and-update}
+## カスタムドメイン名の表示と更新 {#view-and-update}
 
 **表示と更新**&#x200B;メニューを使用すると、どのカスタムドメイン名の詳細でも表示できます。
+
+**カスタムドメイン名を表示および更新するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
@@ -39,13 +41,13 @@ Cloud Manager では、カスタムドメイン名の表示、更新、置換、
 
 >[!NOTE]
 >
->SSL 証明書が有効であり、[既に設定済み](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)で、更新するカスタムドメイン名が含まれている必要があります。
+>SSL 証明書が有効であり、[ 既に設定済み ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)、更新するカスタムドメイン名が含まれている必要があります。
 
 ## カスタムドメイン名の削除 {#deleting}
 
 **ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持つユーザーが、Cloud Manager を使用してカスタムドメイン名を削除できます。
 
-### 関連するすべての環境からカスタムドメイン名を削除する方法 {#delete-cdn-all}
+### 関連付けられているすべての環境からカスタムドメイン名を削除する {#delete-cdn-all}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
@@ -59,11 +61,11 @@ Cloud Manager では、カスタムドメイン名の表示、更新、置換、
 
 1. 送信を確認します。
 
-### 特定の環境からカスタムドメイン名を削除する方法 {#delete-cdn-specific}
+### 特定の環境からカスタムドメイン名を削除する {#delete-cdn-specific}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 1. **概要**&#x200B;ページの&#x200B;**環境**&#x200B;画面に移動します。
-1. **環境**&#x200B;ページから、対象となる環境の詳細画面に移動します。
+1. **環境** ページから、対象となる環境の詳細画面に移動します。
 1. ドメイン名のテーブルで、削除するカスタムドメイン名の行を見つけます。
 1. 行の右端にある省略記号ボタンをクリックします。
 1. 「**削除**」を選択します。

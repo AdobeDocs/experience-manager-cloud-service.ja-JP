@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0c9328dc5be8f0a5e0924d0fc2ec59c9fce4141b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '826'
-ht-degree: 73%
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager でカスタムドメイン名が正常に検証されたかどう
 
 ## 要件 {#requirements}
 
-Cloud Managerでドメイン名のステータスを確認する前に、これらの要件を満たす必要があります。
+Cloud Manager でドメイン名のステータスを確認する前に、次の要件を満たす必要があります。
 
 * [TXT レコードの追加 ](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) のドキュメントで説明されているように、最初にカスタムドメインの TXT レコードを追加する必要があります。
 
@@ -35,17 +35,17 @@ Cloud Manager 内でカスタムドメイン名のステータスを決定でき
 
 1. 左側のナビゲーションパネルで「**ドメイン設定**」をクリックします。
 
-1. ドメイン名の「**ステータス**」アイコンをクリックします。
+1. そのドメイン名の&#x200B;**ステータス**&#x200B;アイコンをクリックします。
 
-ステータスの詳細が表示されます。 ステータス **ドメインが検証済みでデプロイ済み** が表示されると、カスタムドメインを使用する準備が整います。 様々なステータスとその意味について詳しくは、[ 次の節 ](#statuses) を参照してください。
+ステータスの詳細が表示されます。ステータスが&#x200B;**ドメインが検証済みでデプロイ済み**&#x200B;と表示されたら、カスタムドメインを使用する準備が整います。様々なステータスとその意味について詳しくは、[次の節](#statuses)を参照してください。
 
 >[!NOTE]
 >
->Cloud Managerに新しいカスタムドメイン名を追加する **場合** カスタムドメインを追加 **ウィザードのトリガー手順で「** 作成 [」を選択すると、Cloud Managerによって検証が自動的に追加されます。](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) 以降の検証では、ステータスの横にある再検証アイコンをアクティブに選択する必要があります。
+>Cloud Managerでは、「Cloud Managerに新しいカスタムドメイン名を追加 **する際****カスタムドメインを追加** ウィザードのトリガー手順で「作成 [ を選択すると、検証の検証が自動的に追加されます ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 それ以降の検証では、ステータスの横にある再検証アイコンをアクティブに選択する必要があります。
 
 ## 検証ステータスについて {#statuses}
 
-Cloud Managerは、[TXT 値 ](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) を介してドメインの所有権を検証し、次のいずれかのステータスメッセージを表示します。
+Cloud Manager は、[TXT 値](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)を使用してドメインの所有権を検証し、次のいずれかのステータスメッセージを表示します。
 
 * **ドメイン検証失敗** - TXT 値が見つからないか、エラーが検出されました。
 
@@ -55,7 +55,7 @@ Cloud Managerは、[TXT 値 ](/help/implementing/cloud-manager/custom-domain-nam
 * **ドメイン検証中** - 検証が進行中です。
 
    * このステータスは、通常、ステータスの横にある「**再検証**」アイコンを選択した後に表示されます。
-   * DNS の伝播遅延が原因で、DNS 検証の処理に数時間かかる場合があります。
+   * DNS の生成遅延が原因で、DNS 検証の処理に数時間かかる場合があります。
 
 * **検証済み、デプロイメントに失敗しました** - TXT 検証は成功しましたが、CDN のデプロイメントに失敗しました。
 
@@ -74,7 +74,7 @@ Cloud Managerは、[TXT 値 ](/help/implementing/cloud-manager/custom-domain-nam
 
 ## ドメイン名エラー {#domain-error}
 
-次に、一般的なドメイン名の検証エラーとその一般的な解決策を示します。
+次に、一般的なドメイン名の検証エラーとその一般的な解決方法を示します。
 
 ### エラー：ドメインがインストールされていません {#domain-not-installed}
 
@@ -112,4 +112,4 @@ UI を使用して既存の環境設定をすべて移行すると、このメ�
 
 ## 次の手順 {#next-steps}
 
-Cloud Managerでドメインステータスを確認したら、AEM as a Cloud Serviceを指す DNS CNAME または APEX レコードを追加して、DNS 設定を指定する必要があります。 ドキュメント [DNS 設定の指定 ](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) に進んで、カスタムドメイン名の設定を続行します。
+Cloud Manager でドメインのステータスを確認したら、AEM as a Cloud Service を指す DNS CNAME または APEX レコードを追加して、DNS 設定を指定する必要があります。カスタムドメイン名の設定を続行するには、[DNS 設定の指定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)ドキュメントに進んでください。

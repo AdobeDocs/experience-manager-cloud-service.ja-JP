@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ec95438d704568076af045d8933be2125885f482
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 93%
+source-wordcount: '923'
+ht-degree: 85%
 
 ---
 
@@ -21,7 +21,7 @@ Cloud Manager には、組織またはテナントが使用できる AEMaaCS 製
 >
 >ライセンスダッシュボードは、AEM as a Cloud Service プログラムにのみ適用されます。[AMS プログラム](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/introduction)は、ライセンスダッシュボードには含まれません。
 >
->プログラムが備えているサービスのタイプ（AMS または AEMaaCS）を特定するには、[Cloud Manager UI の操作](/help/implementing/cloud-manager/navigation.md#program-cards)ドキュメントを参照してください。
+>プログラムのサービスの種類（AMS または AEMaaCS）を判断するには、ドキュメント [Cloud Manager UI の操作 ](/help/implementing/cloud-manager/navigation.md#program-cards) を参照してください。
 
 ## 概要 {#overview}
 
@@ -39,7 +39,7 @@ Cloud Manager ライセンスダッシュボードを使用すると、次の情
 >ライセンスダッシュボードを表示するには、**ビジネスオーナー**&#x200B;の役割のユーザーがログインする必要があります。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
-1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、Cloud Manager ヘッダーのハンバーガーメニューボタンをタップまたはクリックします。[](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)これにより、タブが表示されます。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、[Cloud Managerヘッダー ](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) のハンバーガーメニューボタンをクリックします。 これにより、タブが表示されます。
 1. タブの「**ライセンス**」オプションをタップまたはクリックします。
 
 ![ライセンスダッシュボード](assets/license-dashboard.png)
@@ -72,7 +72,7 @@ Cloud Managerのライセンス領域の **使用状況の詳細を表示** ボ�
 
 ### Sites の使用状況の詳細 {#sites-usage-details}
 
-**Sites の使用状況の詳細**&#x200B;ウィンドウには、[コンテンツリクエスト](#what-is-a-content-request)に基づいて Sites ライセンスの使用状況の概要を示すグラフが表示されます。
+**Sites 使用状況の詳細** ウィンドウには、[ コンテンツリクエスト ](#what-is-a-content-request) に基づいて Sites ライセンスの使用状況の概要を示すグラフが表示されます。
 
 ![Sites の使用状況の詳細ウィンドウ](assets/sites-usage-details.png)
 
@@ -83,7 +83,7 @@ Cloud Managerのライセンス領域の **使用状況の詳細を表示** ボ�
 <!-- REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}
 
-The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users](#standard-users). Select the appropriate tab to toggle between the views.
 
 For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
 
@@ -113,7 +113,7 @@ The right side of the window presents an area chart showing the usage broken dow
 
 コンテンツリクエストは、製品やサービスを提供することのみを目的とし、アドビが開始した、またはアドビに代わって開始されたリクエストやアクティビティを除外します。一般的な検索エンジンやソーシャルメディアサービスに関連する、ボット、クローラー、スパイダーからのアドビが特定したユーザーエージェントトラフィックも除外されます。
 
-[Cloud Service コンテンツリクエストについて](/help/implementing/cloud-manager/content-requests.md)も参照してください。
+[Cloud Serviceコンテンツリクエストについて ](/help/implementing/cloud-manager/content-requests.md) も参照してください。
 
 ### Adobe Experience Manager はコンテンツリクエストをどのように測定しますか？ {#how-are-content-requests-measured}
 

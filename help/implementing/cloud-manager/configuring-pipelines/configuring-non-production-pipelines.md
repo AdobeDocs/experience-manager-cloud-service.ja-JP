@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: ht
-source-wordcount: '1403'
-ht-degree: 100%
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+workflow-type: tm+mt
+source-wordcount: '1402'
+ht-degree: 97%
 
 ---
 
@@ -103,7 +103,7 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
       * **実稼動機能テスト** - 開発環境に対して[実稼動機能テスト](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)を実行します。
       * **カスタム機能テスト** - 開発環境に対して[カスタム機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)を実行します。
       * **カスタム UI テスト** - カスタムアプリケーションに対して[カスタム UI テスト](/help/implementing/cloud-manager/ui-testing.md)を実行します。
-      * **エクスペリエンス監査** - [エクスペリエンス監査](/help/implementing/cloud-manager/experience-audit-testing.md)の実行
+      * **エクスペリエンス監査** - [エクスペリエンス監査](/help/implementing/cloud-manager/experience-audit-dashboard.md)の実行
 
    ![フルスタックパイプライン](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -116,7 +116,7 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
 ターゲットデプロイメントは、AEM アプリケーションの選択した部分のコードのみをデプロイします。このようなデプロイメントでは、次のいずれかのタイプのコードを&#x200B;**含む**&#x200B;よう選択できます。
 
 * **設定** - AEM 環境の様々な機能の設定を行います。
-   * ログ転送、パージ関連のメンテナンスタスク、様々な CDN 設定を含むサポートされている設定のリストと、これらが適切にデプロイされるようにリポジトリで管理する方法について詳しくは、[設定パイプラインの使用](/help/operations/config-pipeline.md)を参照してください。
+   * サポートされている設定（ログ転送、パージ関連のメンテナンスタスク、様々な CDN 設定を含む）のリストと、これらが適切にデプロイされるようにリポジトリで管理する方法について詳しくは、[設定パイプラインの使用](/help/operations/config-pipeline.md)を参照してください。
    * ターゲットのデプロイメントパイプラインを実行している場合、設定は、パイプラインで定義した環境、リポジトリ、分岐に保存されていれば、デプロイされます。
    * 設定パイプラインは、常に 1 つの環境に 1 つしか存在できません。
 * **フロントエンドコード** - AEM アプリケーションのフロントエンド用に JavaScript と CSS を設定します。
@@ -152,13 +152,13 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
    * **Git ブランチ** - このオプションは、選択したパイプラインのどのブランチからコードを取得するかを定義します。
       * ブランチ名の最初の数文字と、このフィールドのオートコンプリート機能を入力します。これにより、選択可能な一致するブランチが検索されます。
    * **コードの場所** - このオプションは、パイプラインがコードを取得する必要がある、選択したリポジトリーのブランチ内のパスを定義します。
-   * **パイプライン** - フロントエンドの実稼動以外のパイプラインの場合、**[エクスペリエンス監査を有効にするオプションがあります。](/help/implementing/cloud-manager/experience-audit-testing.md)**
+   * **パイプライン** – 実稼動以外のフロントエンドのパイプラインの場合は、**[エクスペリエンス監査](/help/implementing/cloud-manager/experience-audit-dashboard.md)** を有効にするオプションがあります。
 
    ![設定パイプライン](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
 1. エクスペリエンス監査を有効にした場合は、「**続行**」をタップまたはクリックして「**エクスペリエンス監査**」タブに進みます。ここでは、エクスペリエンス監査に常に含めるパスを定義できます。
 
-   * 「**エクスペリエンス監査**」を有効にした場合、設定方法について詳しくは、[エクスペリエンス監査](/help/implementing/cloud-manager/experience-audit-testing.md#configuration)のドキュメントを参照してください。
+   * **エクスペリエンス監査** を有効にした場合、設定方法について詳しくは、ドキュメント [ エクスペリエンス監査 ](/help/implementing/cloud-manager/experience-audit-dashboard.md) を参照してください。
    * 有効にしていない場合は、この手順をスキップします。
 
 1. 「**保存**」をタップまたはクリックして、パイプラインを保存します。

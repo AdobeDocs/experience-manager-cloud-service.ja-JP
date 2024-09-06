@@ -5,10 +5,10 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1373'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -97,7 +97,7 @@ Junit を使用して実装され、Maven を使用して実行されます（�
 >
 >カスタム UI テストは、AEM アプリケーションの変更デプロイメントと AEM 製品プッシュ更新によって使用される実稼動パイプラインおよび非実稼動（オプトイン）パイプラインで実行されるため、アプリケーションの適切な機能を確保し、リリースの安全性を高める重要な役割を果たします。また、顧客 UI テストは、各顧客の内部プレリリース検証パイプラインで実行され、早期にフィードバックを得るのに役立ちます。
 >
->Selenium 以外のコンテナでは、[UI テストセクション](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)の環境変数に基づいて HTTP プロキシを使用してテストを実行する必要があります。
+>Selenium 以外のコンテナは、[UI テストセクション ](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) の環境変数に基づいて、HTTP プロキシを使用してテストを実行する必要があります。
 
 パイプラインの実行を効率的に行うために、主要機能と主要ユーザーインタラクションフローに注力することをお勧めします。この品質ゲートに収まらない完全な UI テストスイートは、顧客の開発フロー中に、一般的な顧客検証パイプラインの一部として実行することをお勧めします。
 
@@ -111,7 +111,7 @@ Junit を使用して実装され、Maven を使用して実行されます（�
 
 この品質ゲートは、AEM の標準で提供されていますが、デプロイメントパイプラインをブロックしていません。デフォルトでは、パブリッシュインスタンスのルートページ（`/`）に対して監査が実行されます。監査対象と見なされる最大 25 個のカスタムパスを設定して貢献できます。
 
-詳しくは、[エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md)を参照してください。
+詳しくは、[エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-dashboard.md)を参照してください。
 
 ### 顧客の検証
 

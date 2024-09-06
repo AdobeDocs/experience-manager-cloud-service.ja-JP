@@ -5,10 +5,10 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1515'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -36,9 +36,9 @@ Cloud Manager には、様々な機能へのアクセスを制御するための
 
 独自のカスタム権限を作成して使用するには、次の 3 つの手順を実行する必要があります。
 
-1. [製品プロファイルを作成します。](#create)
-1. [製品プロファイルにカスタム権限を割り当てます。](#assign-permissions)
-1. [製品プロファイルにユーザーを割り当てます。](#assign-users)
+1. [ 製品プロファイルの作成 ](#create)。
+1. [ 製品プロファイルへのカスタム権限の割り当て ](#assign-permissions)。
+1. [ 製品プロファイルへのユーザーの割り当て ](#assign-users)。
 
 このセクションでは、これらの手順について詳しく説明します。独自のカスタム権限を作成する際には、[用語](#terms)および[設定可能な権限](#configurable-permissions)の節を参照すると役立つ場合があります。
 
@@ -62,7 +62,7 @@ Cloud Manager には、様々な機能へのアクセスを制御するための
 
 1. プロファイルに関する一般的な詳細を入力します。
 
-   * **製品プロファイル名**  - プロファイルのわかりやすい名前
+   * **製品プロファイル名** - プロファイルのわかりやすい名前
    * **表示名** - UI に表示される省略名（オプション）
    * **説明** - 目的を説明するプロファイルのわかりやすい説明（オプション）
    * **メールでユーザーに通知** - 選択すると、このプロファイルに対して追加または削除が行われたユーザーにメール通知が届きます。
@@ -104,7 +104,7 @@ Cloud Manager には、様々な機能へのアクセスを制御するための
 
 これで、カスタム権限を使用して作成した新しい製品プロファイルにユーザーを割り当てることができます。
 
-1. Admin Console で、[カスタム権限を割り当てた新しい製品プロファイル](#assign-permissions)の名前を選択します。
+1. Admin Consoleで、「カスタム権限を割り当てた新しい製品プロファイル [ の名前を選択し ](#assign-permissions) す。
 
 1. 開いたウィンドウで、「**ユーザー**」タブを選択します。
 
@@ -164,7 +164,7 @@ Admin Console の使用方法について詳しくは、[エンタープライ�
 
 | 用語 | 説明 |
 |---|---|
-| 定義済みの権限 | Cloud Manager の様々な機能を管理するための、**ビジネスオーナー**&#x200B;や&#x200B;**デプロイメントマネージャー**&#x200B;といった事前定義済みの役割。事前定義済みの役割について詳しくは、[AEM as a Cloud Service のチームおよび製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md)を参照してください。 |
+| 定義済みの権限 | Cloud Manager の様々な機能を管理するための、**ビジネスオーナー**&#x200B;や&#x200B;**デプロイメントマネージャー**&#x200B;といった事前定義済みの役割。事前に定義された役割について詳しくは、[AEMas a Cloud Service のチームおよび製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md)を参照してください。 |
 | カスタム権限 | Cloud Manager の機能により、ユーザーは権限プロファイルを作成して、Cloud Manager でサポートされる機能を管理する役割を定義できます |
 | 製品プロファイル | 権限プロファイルに含まれるユーザーに適用される設定可能な権限を管理するために、Admin Console で作成されます |
 | 設定可能な権限 | 権限プロファイルで設定できる Cloud Manager の権限 |
@@ -196,7 +196,7 @@ Admin Console の使用方法について詳しくは、[エンタープライ�
 * デプロイメントマネージャー
 * デベロッパー
 
-事前定義済みの役割について詳しくは、[AEM as a Cloud Service のチームおよび製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md)を参照してください。
+事前に定義された役割について詳しくは、[AEMas a Cloud Service のチームおよび製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md)を参照してください。
 
 ### カスタムプロファイルを導入すると、事前定義済みの権限プロファイルはどうなりますか？
 

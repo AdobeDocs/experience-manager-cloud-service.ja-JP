@@ -6,8 +6,8 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: ht
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 100%
 
@@ -102,11 +102,11 @@ ht-degree: 100%
 
 1. エクスペリエンス監査に含めるパスを指定します。
 
-   * 詳しくは、[エクスペリエンス監査のテスト](/help/implementing/cloud-manager/experience-audit-testing.md#configuration)のドキュメントを参照してください。
+   * 詳しくは、[エクスペリエンス監査のテスト](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration)のドキュメントを参照してください。
 
 1. 「**保存**」をクリックしてパイプラインを保存します。
 
-エクスペリエンス監査の対象として設定されたパスはサービスに送信され、パイプラインの実行時にパフォーマンス、アクセシビリティ、SEO（検索エンジン最適化）、ベストプラクティスおよび PWA（プログレッシブ ｗeb アプリ）の各テストに従って評価されます。詳しくは、[エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-testing.md)を参照してください。
+エクスペリエンス監査の対象として設定されたパスはサービスに送信され、パイプラインの実行時にパフォーマンス、アクセシビリティ、SEO（検索エンジン最適化）、ベストプラクティスおよび PWA（プログレッシブ ｗeb アプリ）の各テストに従って評価されます。詳しくは、[エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-dashboard.md)を参照してください。
 
 パイプラインが保存され、**プログラムの概要**&#x200B;ページの&#x200B;**パイプライン**&#x200B;カードで[パイプラインを管理](managing-pipelines.md)できるようになりました。
 

@@ -4,7 +4,7 @@ description: "[!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 のリ
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 92%
@@ -84,7 +84,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
   >[!NOTE]
   >「コンテンツ監査」は、「エクスペリエンス監査」に名称が変更されました。
 
-  詳しくは、[エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md)を参照してください。
+  詳しくは、[エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-dashboard.md)を参照してください。
 
 * Assets プログラムで新しく作成された環境が、スマートコンテンツサービスで自動的に設定されるようになりました。
 

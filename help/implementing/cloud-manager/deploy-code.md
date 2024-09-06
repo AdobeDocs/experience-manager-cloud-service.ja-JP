@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3a5451020b8f76f95bcd8bff7b6eabd06be00f31
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1197'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -64,7 +64,7 @@ _コードスキャン、機能テスト、UI テスト、エクスペリエン�
 * **コードスキャン** - このステップでは、アプリケーションコードの品質を評価します。
    * テストプロセスの詳細については、[コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)を参照してください。
 * **ビルドイメージ** - このプロセスでは、ビルドステップで生成されたコンテンツおよび Dispatcher パッケージを Docker イメージと Kubernetes 設定に変換します。
-* **ステージにデプロイ** - [ステージテストフェーズ](#stage-testing)に備えて、イメージがステージング環境にデプロイされます。
+* **ステージにデプロイ** - [ ステージテストステージ ](#stage-testing) に備えて、イメージがステージング環境にデプロイされます。
 
 ![ステージデプロイメント](assets/stage-deployment.png)
 
@@ -86,7 +86,7 @@ _コードスキャン、機能テスト、UI テスト、エクスペリエン�
    * 設定されたページがサービスに送信され、評価されます。
    * 結果は情報提供であり、スコアおよび現在のスコアと以前のスコア間の変化を示します。
    * このインサイトは、現在のデプロイメントでリグレッションが導入されいないか判断するのに役立ちます。
-   * 詳しくは、[エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-testing.md)を参照してください。
+   * 詳しくは、[エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-dashboard.md)を参照してください。
 
 ![ステージテスト](assets/stage-testing.png)
 

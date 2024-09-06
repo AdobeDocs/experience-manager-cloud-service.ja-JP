@@ -5,19 +5,19 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 100%
+source-wordcount: '429'
+ht-degree: 77%
 
 ---
 
 
 # プログラムの編集 {#editing-programs}
 
-プログラムを管理および編集するには、[**マイプログラム**&#x200B;コンソールから開始します。](/help/implementing/cloud-manager/navigation.md)**マイプログラム**&#x200B;ページには、アクセス権を持つすべてのプログラムの概要が表示されます。個々のプログラムを選択すると、**プログラムの概要**&#x200B;ページで、プログラムの詳細が一目でわかります。
+プログラムを管理および編集するには、[**マイプログラム** コンソール ](/help/implementing/cloud-manager/navigation.md) から開始します。 **マイプログラム**&#x200B;ページには、アクセス権を持つすべてのプログラムの概要が表示されます。個々のプログラムを選択すると、**プログラムの概要**&#x200B;ページで、プログラムの詳細が一目でわかります。
 
-必要な権限を持つユーザーは、**プログラムの概要**&#x200B;から、組織内で作成された[実稼動プログラム](creating-production-programs.md)および組織内で作成された[サンドボックスプログラムを編集できます。](creating-sandbox-programs.md)プログラムの編集で、次のことが可能です。
+**プログラムの概要** から、必要な権限を持つユーザーは [ 組織で作成された実稼動プログラム ](creating-production-programs.md) および [ 組織で作成されたサンドボックスプログラム ](creating-sandbox-programs.md) を編集できます。 プログラムを編集すると、次のことが可能です。
 
 * Assets を使用している既存のプログラムに Sites ソリューションを追加する（その逆も同様）。
 * Sites と Assets の両方を使用している既存のプログラムから Sites または Assets を削除する。
@@ -26,9 +26,13 @@ ht-degree: 100%
 
 ## 権限 {#permissions}
 
-プログラムの編集やサンドボックスプログラムの削除、およびライセンスダッシュボードへのアクセスを行うには、**ビジネスオーナー**&#x200B;ロールのメンバーである必要があります。
+プログラムの編集またはサンドボックスプログラムの削除やライセンスダッシュボードへのアクセスには、**ビジネスオーナー** 役割のメンバーである必要があります。
 
 ## プログラムの編集 {#editing}
+
+ソリューションやアドオンの追加または削除など、編集されたプログラムの変更内容は次回のデプロイメント後に有効になります。
+
+**プログラムを編集するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
@@ -43,16 +47,10 @@ ht-degree: 100%
    ![「一般」タブ](assets/edit-program-prod1.png)
 
 1. プログラムの編集に使用できるオプションは、プログラムの作成時のオプションと同じです。
-   * 個々のオプションについて詳しくは、[実稼働プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)と[サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)のドキュメントを参照してください。
+   * 個々のオプションについて詳しくは、[ 実稼動プログラムの作成 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) および [ サンドボックスプログラムの作成 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) を参照してください。
    * [その他のオプション](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options)は組織の使用権限に応じて、実稼動プログラムで使用できる場合があります。
 
 1. 「**更新**」をクリックして、プログラムに対する変更を保存します。
-
-プログラムに対する変更が保存されます。
-
->[!NOTE]
->
->ソリューションやアドオンの追加または削除など、編集されたプログラムの変更内容は次回のデプロイメント後に有効になります。
 
 ## サンドボックスプログラムの削除 {#delete-sandbox-program}
 
@@ -62,7 +60,7 @@ ht-degree: 100%
 >
 >**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持つユーザーは、サンドボックスプログラム全体ではなく、実稼動環境とステージ環境を削除することもできます。
 
-サンドボックスプログラムを削除するには、次の操作を行います。
+**サンドボックスプログラムを削除するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 

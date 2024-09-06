@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9defb49b2639aa8945d1fed0332400b8ab5ced8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '2377'
-ht-degree: 100%
+source-wordcount: '2375'
+ht-degree: 92%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 100%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、環境を追加するプログラムをタップまたはクリックします。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、環境を追加するプログラムをクリックします。
 
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、**環境**&#x200B;カードの「**環境を追加**」をクリックして環境を追加します。
 
@@ -58,7 +58,7 @@ ht-degree: 100%
 
 1. 表示される&#x200B;**環境を追加**&#x200B;ダイアログで以下を行います。
 
-   * 「[**環境タイプ**」を選択します。](#environment-types)
+   * [**環境タイプ**](#environment-types) を選択します。
       * 使用可能な環境または使用中の環境の数は、環境タイプ名の後ろの括弧内に表示されます。
    * 「**環境名**」を入力します。
       * 環境名は、環境の作成後に変更できません。
@@ -99,7 +99,7 @@ ht-degree: 100%
 
 選択した地域は、実稼動環境とステージング環境の両方に適用されます。
 
-追加の地域を指定しない場合、[環境を作成した後でも指定できます。](#edit-regions)
+追加のリージョンを指定しない場合は、[ 環境の作成後に指定できます ](#edit-regions)。
 
 プログラムの[高度なネットワーク](/help/security/configuring-advanced-networking.md)をプロビジョニングする場合は、Cloud Manager API を使用して追加の公開地域を環境に追加する前に、このプロビジョニングを行うことをお勧めします。 そうしないと、追加の公開地域のトラフィックがメイン地域のプロキシを通過します。
 
@@ -209,7 +209,7 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 
 追加のアクションを実行する前に、システムが自動的に回復するまでどれくらいの時間待つかは、その地域の障害がシステムに与える影響によって異なります。
 
-いずれの場合も、[ トラフィックは、常にオンライン状態の最も近い他の地域にルーティングされます。](/help/operations/additional-publish-regions.md) 引き続きイシューが発生する場合は、アドビカスタマーケアにお問い合わせください。
+いずれの場合も、[ トラフィックは常に、オンラインである他の最も近いリージョンにルーティングされます ](/help/operations/additional-publish-regions.md)。 引き続き問題が発生する場合は、Adobeカスタマーケアにお問い合わせください。
 
 ## 環境の更新 {#updating-dev-environment}
 
@@ -221,7 +221,7 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 
 ### アップデートとパイプライン {#updates-pipelines}
 
-パイプラインは、[AEM as a Cloud Service の環境にコードをデプロイする](deploy-code.md)唯一の手段です。そのため、各パイプラインは特定の AEM バージョンに関連付けられています。
+パイプラインは、[AEM as a Cloud Serviceの環境にコードをデプロイ ](deploy-code.md) する唯一の方法です。 そのため、各パイプラインは特定のAEM バージョンに関連付けられています。
 
 パイプラインで前回デプロイされた AEM よりも新しいバージョンの AEM が使用可能であることが Cloud Manager で検出された場合は、環境のステータスが&#x200B;**アップデート利用可能**&#x200B;と表示されます。
 
@@ -272,7 +272,7 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 >* 実稼動プログラムに作成された実稼動環境とステージング環境は削除できません。
 >* サンドボックスプログラム内の実稼動環境とステージング環境は削除できます。
 
-## アクセスの管理 {#managing-access}
+## アクセスを管理 {#managing-access}
 
 **環境**&#x200B;カードで環境の省略記号メニューから「**アクセスを管理**」を選択します。 オーサーインスタンスに直接移動して、環境のアクセスを管理できます。
 
@@ -310,7 +310,7 @@ Cloud Manager では、Sites プログラムのパブリッシュサービスと
 
 >[!TIP]
 >
->詳しくは、[カスタムドメイン名の概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)ドキュメントを参照してください。
+>詳しくは、ドキュメント [ カスタムドメイン名の概要 ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) を参照してください。
 
 ## IP 許可リストの管理 {#manage-ip-allow-lists}
 
@@ -318,10 +318,10 @@ Cloud Manager では、Sites プログラムのオーサリングサービス、
 
 IP 許可リストを管理するには、プログラムの&#x200B;**概要**&#x200B;ページの「**環境**」タブに移動します。 個々の環境をクリックすると、その詳細を管理できます。
 
-### IP 許可リストの適用 {#apply-ip-allow-list}
+### IP許可リストを適用 {#apply-ip-allow-list}
 
 IP 許可リストを適用すると、許可リストの定義に含まれているすべての IP 範囲が、環境のオーサリングサービスまたはパブリッシュサービスに関連付けられます。
 
 >[!TIP]
 >
->詳しくは、[IP 許可リストの概要](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)ドキュメントを参照してください。
+>詳しくは、「IP許可リストの概要 [ を参照してください ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。

@@ -5,7 +5,7 @@ exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 100%
@@ -27,7 +27,7 @@ Cloud Manager の Cloud Services パイプラインでサポートされるテ�
 
    * 機能テストは、[実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)のテスト段階の一部ですが、オプションとして、[実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)のテスト段階に含めることもできます。
 
-1. [エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md)
+1. [エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-dashboard.md)
 
    * エクスペリエンス監査テストは、すべての Cloud Manager 実稼動パイプラインで有効になっており、スキップできません。
 

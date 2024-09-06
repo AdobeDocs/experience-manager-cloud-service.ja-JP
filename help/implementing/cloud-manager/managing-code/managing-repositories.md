@@ -4,10 +4,10 @@ description: Cloud Manager で Git リポジトリを作成、表示および削
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 100%
+source-wordcount: '621'
+ht-degree: 92%
 
 ---
 
@@ -71,11 +71,11 @@ Cloud Manager は、アドビが管理するリポジトリ（**Adobe リポジ�
 
 ## リポジトリ情報へアクセス {#repo-info}
 
-**リポジトリ**&#x200B;ウィンドウでリポジトリを表示する際に、ツールバーの「**リポジトリ情報へアクセス**」ボタンをタップまたはクリックすると、アドビが管理するリポジトリにプログラムでアクセスする方法の詳細を表示できます。
+**リポジトリ** ウィンドウでリポジトリを表示する場合、ツールバーの「**リポジトリ情報にアクセス**」ボタンをクリックすると、Adobeが管理するリポジトリにプログラムでアクセスする方法の詳細を表示できます。
 
 ![リポジトリ情報](assets/repo-info.png)
 
-**リポジトリ情報**&#x200B;ウィンドウが開き、詳細が表示されます。リポジトリ情報へのアクセスについて詳しくは、[リポジトリ情報へのアクセス](accessing-repos.md)ドキュメントを参照してください。
+**リポジトリ情報**&#x200B;ウィンドウが開き、詳細が表示されます。リポジトリ情報へのアクセスについて詳しくは、ドキュメント [ リポジトリ情報へのアクセス ](accessing-repos.md) を参照してください。
 
 ## 分岐を確認 / プロジェクトを作成 {#check-branches}
 

@@ -5,25 +5,25 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
-workflow-type: ht
-source-wordcount: '1292'
-ht-degree: 100%
+source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+workflow-type: tm+mt
+source-wordcount: '1295'
+ht-degree: 76%
 
 ---
 
 
 # オンボーディングジャーニー {#onboarding-journey}
 
-AEM as a Cloud Service を選択していただき、ありがとうございます。このドキュメントは、オンボーディングプロセスのガイド付きジャーニーの出発点です。新しいアプリケーションをデプロイする場合でも、既存のアプリケーションを移行する場合でも、このオンボーディングジャーニーでチームの準備が確実に整い、AEM as a Cloud Service にアクセスできるようになります。
+AEM as a Cloud Service を選択していただき、ありがとうございます。このドキュメントは、オンボーディングプロセスのガイド付きジャーニーの出発点です。新しいアプリケーションをデプロイする場合でも、既存のアプリケーションを移行する場合でも、このオンボーディングジャーニーはチームを設定します。 これにより、訪問者がAEM as a Cloud Serviceにアクセスできるようになります。
 
 ## はじめに {#introduction}
 
-Adobe Experience Manager は、あらゆるチャネルにわたって非常にインパクトのあるパーソナライズされたエクスペリエンスを迅速に提供し、すべてのチャネルにコンテンツを解放する、構成可能なコンテンツサービスの強力なスイートです。**Edge 配信サービス**&#x200B;は、Adobe Experience Manager の最新のイノベーションで、優れたコンテンツベロシティを実現し、卓越したエクスペリエンスを提供します。Edge Delivery Services の概要について詳しくは、[Edge Delivery Services の概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=ja)を参照してください。Edge 配信サービスの使用方法については、[開発者向けチュートリアル](https://www.hlx.live/developer/tutorial)ページを参照してください。
+Adobe Experience Manager は、あらゆるチャネルにわたって非常にインパクトのあるパーソナライズされたエクスペリエンスを迅速に提供し、すべてのチャネルにコンテンツを解放する、構成可能なコンテンツサービスの強力なスイートです。**Edge 配信サービス**&#x200B;は、Adobe Experience Manager の最新のイノベーションで、優れたコンテンツベロシティを実現し、卓越したエクスペリエンスを提供します。Edge Delivery Services の概要について詳しくは、[Edge Delivery Services の概要](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/overview)を参照してください。Edge 配信サービスの使用方法については、[開発者向けチュートリアル](https://www.aem.live/developer/tutorial)ページを参照してください。
 
 オンボーディングとは、指定されたシステム管理者が AEM as a Cloud Service を組織用に設定するプロセスです。このプロセスには、クラウドリソースの初期プロビジョニングや、ユーザーを職務に基づいて役割に割り当てる作業が含まれます。これにより、各メンバーが AEM as a Cloud Service にログオンしてリソースにアクセスできるようになります。
 
-![オンボーディングジャーニー](/help/journey-onboarding/assets/onboarding-journey.png)
+![ オンボーディングジャーニー ](/help/journey-onboarding/assets/onboarding-journey.png)。
 
 このガイドでは、オンボーディングに関する最も重要なトピックについて順を追って説明します。完了すると、次のことが可能になります。
 
@@ -42,40 +42,40 @@ AEM as a Cloud Service を使い始めると、学ぶべきことがたくさん
 
 * **契約** - アドビの契約にはオンボーディングプロセスの側面が定義されているので、内容をよく理解しておく必要があります。
 * **Admin Console** - ここで、ユーザーの管理と役割の割り当てを行います。
-* **Cloud Manager** - プログラムや環境などのリソースを設定するためのツールです。このツールから Git にアクセスしてパイプラインを作成し、カスタムコードを管理およびデプロイすることもできます。
+* **Cloud Manager** - プログラムや環境などのリソースを設定するためのツールです。また、カスタムコードを管理およびデプロイするために、Git にアクセスしてパイプラインを作成する場所でもあります。
 
-これらの概念については、このオンボーディングジャーニーで詳しく説明します。ジャーニーの完了時に、次の状態になることが目標です。
+これらの概念については、このオンボーディングジャーニーで詳しく説明します。ジャーニーの完了時に、次の操作を実行できることが目標です。
 
-* AEM as a Cloud Service へのアクセス権を必要なユーザーに付与している状態。
-* プロジェクトの最初のクラウドリソースの設定が完了している状態。
+* AEM as a Cloud Serviceへの必要なユーザーのアクセス権を付与します。
+* プロジェクトの最初のクラウドリソースを設定します。
 * 最初のコードをデプロイし、最初のコンテンツを作成する方法を理解している状態。
 
 つまり、AEM as a Cloud Service を使用して新しいプロジェクトに取りかかれるようになります。
 
-## 対象読者 {#audience}
+## オーディエンス {#audience}
 
-オンボーディングジャーニーは、AEM as a Cloud Service および一般的な AEM を初めて使用するお客様の&#x200B;**システム管理者**&#x200B;向けに特別に書かれています。システム管理者とは、AEM as a Cloud Service 契約の署名後に、アドビから最初に連絡を受けるユーザーです。通常は、このユーザーが最初に AEM as a Cloud Service 上のリソースにアクセスして設定を行います。このトピックを読んでいるユーザーは、おそらくシステム管理者です。
+オンボーディングジャーニーは、AEM as a Cloud Serviceおよび一般的なAEMを初めて使用するお客様の **システム管理者** 向けに特別に書かれています。 システム管理者は、AEM as a Cloud Service契約の署名後に最初に連絡を取るAdobeです。 通常は、このユーザーが最初に AEM as a Cloud Service 上のリソースにアクセスして設定を行います。このトピックを読んでいるユーザーは、おそらくシステム管理者です。
 
-システム管理者は、組織の AEMaaCS ユーザーに関して、アクセスから権限に至るすべての側面を管理します。その過程で、システム管理者は他の役割の人とやり取りする必要があります。
+システム管理者は、組織の AEMaaCS ユーザーに関して、アクセスから権限に至るすべての側面を管理します。ただし、システム管理者は、途中で他のペルソナとやり取りする必要があります。
 
 | ペルソナ | 説明 | ジャーニーでの役割 |
 |---|---|---|
-| システム管理者 | このジャーニーの対象者。クラウドリソースの初期プロビジョニングを行い、ユーザーを職務責任に基づいて適切な役割に割り当てます | アクセスから権限に至る、ユーザーのすべての側面を管理します |
+| システム管理者 | このジャーニーのターゲットは、クラウドリソースの初期プロビジョニングを行い、ユーザーを職務責任に基づいて適切な役割に割り当てることです | アクセスから権限に至る、ユーザーのすべての側面を管理します |
 | コンテンツ作成者 | AEM でコンテンツの作成とレビューを行います | システム管理者から権限を付与されると、作成者はコンテンツを作成するジャーニーを開始できます |
-| デベロッパー | 様々なソースのコンテンツを消費する AEM アプリケーションを開発します。 | システム管理者から権限を付与されると、開発者はソリューションを開発するジャーニーを開始できます |
+| デベロッパー | 様々なソースのコンテンツを使用するAEM アプリケーションを開発します。 | システム管理者から権限を付与されると、開発者はソリューションを開発するジャーニーを開始できます |
 | デプロイメントマネージャー | 環境の追加や更新を行い、パイプラインを実行し、コードを AEM 環境やコード品質にデプロイします。 | システム管理者から権限を付与されると、デプロイメントマネージャーはデプロイメントを管理するジャーニーを開始できます |
 
 このオンボーディングガイドでは、システム管理者としてオンボーディングする完全なプロセスを説明します。AEM ユーザー、開発者、デプロイメントマネージャーの役割については、このジャーニーの補足のパートで簡単に説明します。
 
 >[!TIP]
 >
->AEM as a Cloud Service を初めて使用するものの、AEM ついては既に詳しく、オンプレミスまたは Adobe Managed Services から移行する場合は、必ず [AEM as a Cloud Service への移行ジャーニー](/help/journey-migration/getting-started.md)を確認してください。
+>AEM as a Cloud Serviceを初めて使用するものの、AEMついては既に詳しく、オンプレミスまたはAdobeのManaged Servicesから移行する場合は、[AEM as a Cloud Service移行ジャーニー](/help/journey-migration/getting-started.md) をご覧ください。
 
 ## オンボーディングジャーニーの概要 {#overview}
 
 以下の記事では、オンボーディングのコアとなる概念を詳しく説明し、AEM as a Cloud Service に関する基本的な知識を提供します。ジャーニーの特定の部分に直接移動することもできますが、多くの概念は、それまでの記事で紹介された概念に基づいています。したがって、オンボーディングを初めて行う場合は、最初から順に進めることをお勧めします。
 
-| # | 記事 | 説明 | 対象読者 |
+| | 記事 | 説明 | 対象読者 |
 |---|---|---|---|
 | 0 | オンボーディングジャーニー | このドキュメント | システム管理者 |
 | 1 | [オンボーディングの準備](preparation.md) | オンボーディングプロセスの開始に先立って、システム管理者がシステムにログインする前に理解しておく必要がある準備手順がいくつかあります。 | システム管理者 |
@@ -95,14 +95,14 @@ AEM as a Cloud Service を使い始めると、学ぶべきことがたくさん
 
 ## AEM ドキュメントジャーニー {#documentation-journeys}
 
-[ドキュメントジャーニー](/help/journey-documentation/documentation-journeys.md)では、多様かつ複雑なトピックおよび機能を組み合わせて説明しています。ここでは、AEM を初めて使用するユーザーが、以前のトピックや AEM に関する最小限の知識を有しているという前提で、ビジネス上の問題の全体を理解して解決するのに役立つ情報が提供されています。
+[ ドキュメントジャーニー ](/help/journey-documentation/documentation-journeys.md) では、多様かつ複雑なトピックおよび機能を組み合わせて説明しています。 ここでは、AEM を初めて使用するユーザーが、以前のトピックや AEM に関する最小限の知識を有しているという前提で、ビジネス上の問題の全体を理解して解決するのに役立つ情報が提供されています。
 
-ドキュメントジャーニーは、アドビの最新の調査、アドビのコンサルタントによる実装実績、顧客プロジェクトからのフィードバックなどに基づいて、ベストプラクティスの原則を軸に設計されています。
+ドキュメントジャーニーは、ベストプラクティス原則を軸に設計されています。 Adobeの最新の調査、Adobeコンサルタントによる実装実績、お客様のプロジェクトからのフィードバックを活用して情報を提供します。
 
-新しい AEM as a Cloud Service アプリケーションにチームをオンボーディングする方法について、アドビの推奨事項を理解するには、ここが出発点になります。
+新しいAEM as a Cloud Service アプリケーションにチームをオンボーディングする方法について、Adobeの推奨事項を理解するには、まずここから始めてください。
 
 ## その他のリソース {#additional-resources}
 
 オンボーディングジャーニーのコンテンツの範囲を超えてさらに詳しく知りたい場合に役立つ、追加のオプションリソースを次に示します。
 
-* [AEM as a Cloud Service のオンボーディング](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html?lang=ja) - この短いビデオでは、AEM の Cloud Service オンボーディングプロセスの概要を説明します。
+* [AEM as a Cloud Service のオンボーディング](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding) - この短いビデオでは、AEM の Cloud Service オンボーディングプロセスの概要を説明します。
