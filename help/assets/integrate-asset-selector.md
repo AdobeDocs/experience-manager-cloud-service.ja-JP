@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセッ�
 description: アセットセレクターを様々なAdobe、Adobe以外のアプリケーションおよびサードパーティアプリケーションと統合します。
 role: Admin, User
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: b85363b0a284929a2308ebee24888937f7c32841
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 86%
@@ -29,9 +29,9 @@ ht-degree: 86%
 
 アセットセレクターは、次のような様々なアプリケーションと統合できます。
 
-* [アセットセレクターと  [!DNL Adobe]  アプリケーションの統合](#integrate-asset-selector.md)
-* [アセットセレクターとアドビ以外のアプリケーションの統合](#integrate-asset-selector-non-adobe.md)
-* [OpenAPI 機能を備えた Dynamic Media の統合](#integrate-asset-selector-dynamic-media-open-api.md)
+* [アセットセレクターと  [!DNL Adobe]  アプリケーションの統合](/help/assets/integrate-asset-selector-adobe-app.md)
+* [アセットセレクターとアドビ以外のアプリケーションの統合](/help/assets/integrate-asset-selector-non-adobe-app.md)
+* [OpenAPI 機能を備えた Dynamic Media の統合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!MORELIKETHIS]
