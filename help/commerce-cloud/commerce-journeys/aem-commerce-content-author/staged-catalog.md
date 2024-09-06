@@ -4,10 +4,10 @@ description: ステージングされた製品カタログエクスペリエン�
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: f172f514eaa8f1337359f00fad964f5781fba769
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 100%
+source-wordcount: '485'
+ht-degree: 91%
 
 ---
 
@@ -25,9 +25,9 @@ AEM Content と Commerce ジャーニーの以前のドキュメント、 [製�
 
 このドキュメントは、ステージングされた製品データと AEM ローンチにもとづいて製品カタログエクスペリエンスを管理する方法を理解するのに役立ちます。作成者は、次回の製品ローンチ（新しいアパレルコレクションなど）を並行して準備する必要が何度もあります。これには、ステージング済みの（まだ公開されていない）製品データへのアクセスと、コンテンツの作成機能が必要です。この新しいコンテンツは、製品のローンチと共に公開されます。
 
-    >[!メモ]
-    >
-    >この機能は、Adobe Commerce または Cloud Edition およびトークンベースの認証をサポートするサードパーティコネクターでのみ使用できます。詳しくは、[はじめに]（https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=ja）を参照してください。
+>[!NOTE]
+>
+>この機能は、Adobe Commerceまたは Cloud Edition と、トークンベースの認証をサポートするサードパーティコネクターでのみ使用できます。 詳しくは、[ はじめに ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=ja) を参照してください。
 
 まず、作成者が CIF を使用してステージングされた製品データにアクセスする方法を説明します。
 
@@ -45,9 +45,9 @@ AEM Content と Commerce ジャーニーの以前のドキュメント、 [製�
 
 ![ステージ plp](assets/staged-plp.png)
 
-    >[!注意]
-    >
-    >オムニサーチにコンテキストがないので、ライブ製品カタログデータのみが返されます
+>[!NOTE]
+>
+>オムニサーチにコンテキストがないので、ライブ製品カタログデータのみが返されます
 
 ## AEM ローンチ {#launches}
 
