@@ -5,8 +5,8 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
-workflow-type: ht
+source-git-commit: ffe90d3919c0f0c1a1c60efccc0191118dfaa84a
+workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 100%
 
@@ -88,7 +88,7 @@ ht-degree: 100%
 ![メディアの編集](assets/ue-edit-media.png)
 
 1. プロパティパネルで、選択した画像のプレビューをタップまたはクリックします。
-1. [アセットセレクター](/help/assets/asset-selector.md#using-asset-selector)ウィンドウが開き、アセットを選択できます。
+1. [アセットセレクター](/help/assets/overview-asset-selector.md#using-asset-selector)ウィンドウが開き、アセットを選択できます。
 1. 選択して、新しいアセットを選択します。
 1. 「**選択**」を選択して、アセットが置き換えられたプロパティパネルに戻ります。
 

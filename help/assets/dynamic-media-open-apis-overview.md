@@ -2,7 +2,8 @@
 title: OpenAPI 機能を備えたDynamic Media
 description: Dynamic Mediaを OpenAPI 機能と共に使用する理由や有効にする方法など、主要な概念について説明します。
 role: User
-source-git-commit: 8cd8eb834b548a52d6a9e094cb2c4447f228ab0d
+exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
+source-git-commit: 1041769d4c1efa4465745a85df65c803939b472b
 workflow-type: tm+mt
 source-wordcount: '1061'
 ht-degree: 1%
@@ -19,7 +20,7 @@ OpenAPI 機能を備えたDynamic Mediaにより、DAM は、アセットガバ�
 
 OpenAPI 機能を備えたDynamic Mediaには、次のような主なメリットがあります。
 
-* **シームレスな統合**: OpenAPI 機能を備えたDynamic Mediaは、包括的な検索および配信 API のセットを提供します。 これにより、開発者は簡単に [ アセットの配信をアプリケーションと統合 ](/help/assets/integrate-dynamic-media-open-apis.md) できます。 アプリケーションには、Adobeアプリケーションだけでなく、サードパーティのアプリケーションも含まれます。 承認済みアセットを検索して選択する [ マイクロフロントエンドアセットセレクターのユーザーインターフェイス ](/help/assets/asset-selector.md) を提供します。 このセレクターは、React JS、Angular JS、Vanilla JS など、JavaScript フレームワークに基づくすべてのアプリケーションと簡単に統合できます。
+* **シームレスな統合**: OpenAPI 機能を備えたDynamic Mediaは、包括的な検索および配信 API のセットを提供します。 これにより、開発者は簡単に [ アセットの配信をアプリケーションと統合 ](/help/assets/integrate-dynamic-media-open-apis.md) できます。 アプリケーションには、Adobeアプリケーションだけでなく、サードパーティのアプリケーションも含まれます。 承認済みアセットを検索して選択する [ マイクロフロントエンドアセットセレクターのユーザーインターフェイス ](/help/assets/overview-asset-selector.md) を提供します。 このセレクターは、React JS、Angular JS、Vanilla JS など、JavaScript フレームワークに基づくすべてのアプリケーションと簡単に統合できます。
 
 * **デジタルアセットの一元管理**:DAM は、すべてのデジタルアセットの唯一の情報源です。 デジタルアセットはAEM Assetsで一元管理され、アセットのバイナリをコピーせずに、配信 URL を使用して参照することで消費側のアプリケーションに配信されます。
 
@@ -103,11 +104,11 @@ AEM as a Cloud Serviceで OpenAPI 機能を備えたDynamic Mediaを有効にす
    </p>
 </td>
 <td>
-   <a href="/help/assets/asset-selector.md">
+   <a href="/help/assets/overview-asset-selector.md">
    <img alt="Adobeのアセットセレクター" src="./assets/asset-selector-prereqs.png" />
    </a>
    <div>
-      <a href="/help/assets/asset-selector.md">
+      <a href="/help/assets/overview-asset-selector.md">
       <strong>Adobeのマイクロフロントエンドアセットセレクター </strong>
       </a>
    </div>
@@ -204,4 +205,3 @@ AEM as a Cloud Serviceで OpenAPI 機能を備えたDynamic Mediaを有効にす
 </td>
 
 </table>
-

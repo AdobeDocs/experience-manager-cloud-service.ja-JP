@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 503c6712aeea33fc093dbaec780e50c1e72579cd
 workflow-type: tm+mt
-source-wordcount: '5533'
+source-wordcount: '5578'
 ht-degree: 98%
 
 ---
@@ -456,7 +456,17 @@ ht-degree: 98%
    + [アセットマイクロサービスの概要](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets] でのアクセシビリティ](/help/assets/accessibility.md)
    + デジタルアセットの管理 {#manage}
-      + [マイクロフロントエンドアセットセレクター](/help/assets/asset-selector.md)
+      + マイクロフロントエンドアセットセレクター {#asset-selector}
+         + [アセットセレクターの概要](/help/assets/overview-asset-selector.md)
+         + アセットセレクターの統合 {#asset-selector-integration}
+            + [アセットセレクターの統合の概要](/help/assets/integrate-asset-selector.md)
+            + [アセットセレクターとAdobeアプリケーションの統合](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [アセットセレクターとアドビ以外のアプリケーションの統合](/help/assets/integrate-asset-selector-non-adobe-app.md)
+            + [Dynamic Media用アセットセレクターと OpenAPI 機能の統合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+         + [アセットセレクターのプロパティ](/help/assets/asset-selector-properties.md)
+         + [アセットセレクターの例](/help/assets/asset-selector-examples.md)
+         + [アセットセレクターのカスタマイズ](/help/assets/asset-selector-customization.md)
+         + [アセットセレクターのアップロード](/help/assets/asset-selector-upload.md)
       + [マイクロフロントエンドの宛先セレクター](/help/assets/destination-selector.md)
       + [アセットを共有する](/help/assets/share-assets.md)
       + [アセットの再処理](/help/assets/reprocessing.md)

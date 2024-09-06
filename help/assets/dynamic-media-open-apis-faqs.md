@@ -2,9 +2,10 @@
 title: OpenAPI 機能を備えたDynamic Mediaに関するよくある質問
 description: OpenAPI 機能を備えたDynamic Mediaに関するよくある質問
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
+source-git-commit: dcc233be4d1bb84534aaef64316406bb960ce51d
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1494'
 ht-degree: 1%
 
 ---
@@ -108,14 +109,14 @@ OpenAPI 機能を備えたDynamic MediaとDynamic Mediaの主な違いの一部�
 | [Assetsas a Cloud Serviceでのみ使用可能 ](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | 追加の設定およびプロビジョニング手順を備えたオンプレミスまたはAdobeManaged Servicesでも利用できます。 |
 | [ 幅、高さ、回転、反転、画質、形式など、サポートされる画像修飾子の限定されたセット ](/help/assets/deliver-assets-apis.md) | 利用可能な画像修飾子の豊富なセット |
 | [ ユーザー、役割、日時に基づいてアセット配信が制限される ](/help/assets/restrict-assets-delivery.md) | Dynamic Mediaに公開されたAssetsには、すべてのユーザーがアクセスできます |
-| ほとんどの開発者は、OpenAPI の仕様に精通しています。 AEM Assets拡張機能は、[ マイクロフロントエンドアセットセレクター ](/help/assets/asset-selector.md) を使用すると、非常にシンプルになります。 | SOAP ベースの API。統合のカスタマイズを開発する際に障壁になる。 |
+| ほとんどの開発者は、OpenAPI の仕様に精通しています。 AEM Assetsの拡張性は、[ マイクロフロントエンドアセットセレクター ](/help/assets/overview-asset-selector.md) を使用すると、非常にシンプルになります。 | SOAP ベースの API。統合のカスタマイズを開発する際に障壁になる。 |
 | バージョンの更新やメタデータの変更など、DAM 内の承認済みアセットに加えられた変更は、自動的に配信 URL に反映されます。 CDN を介して OpenAPI 機能を備えたDynamic Mediaに 10 分の短期間有効（TTL）値が設定されていると、更新は 10 分以内にすべてのオーサリングインターフェイスと公開済みインターフェイスに表示されます。 | 推奨される 10 時間の CDN TTL。 キャッシュ無効化アクションを使用して、TTL 値を上書きできます。 |
 | ダウンストリームアプリケーションへのアセット配信には承認済みのアセットのみを使用でき、デジタルエクスペリエンスでブランド承認済みアセットを有効化できます。 | Dynamic Mediaで公開済みアセットを更新すると、承認ワークフローなしで自動公開されるので、デジタルエクスペリエンスでブランドが承認したアセットに適用されるわけではありません。 |
 | 配信されたアセット数に基づく使用状況レポート。 この機能は間もなく利用できるようになります。 | 使用状況レポートは使用できません。 この機能は間もなく利用できるようになります。 |
 | Assetsのas a Cloud Serviceリポジトリーで期限切れとマークされたAssetsは、ダウンストリームアプリケーションでは使用できなくなりました。 | 固有のアセットの有効期限はありません。 アセットは、AEM as a Cloud Service リポジトリから削除されるまで、公開されたままになります。 |
 | 画像プリセットおよびビデオスマート切り抜き機能はサポートしていません。 | 画像プリセットおよびビデオスマート切り抜き機能をサポートします。 |
 | ダイナミックビデオエンコード：入力ビデオに基づいて最適なエンコードが確実に提供されます。 ネイティブビデオ配信の設定は不要です。 | 標準 3 エンコード （入力ビデオに関係なくエンコード） （ビデオ配信のパフォーマンスに影響を与える可能性があります）。 ビデオのビットレートごとに異なるエンコードを手動で設定する必要があります。 |
-| アセット UID に基づく URL を推測するのは困難ですが（URL の不明化を有効にします）、SEO に最適化されています。 | URL の不明化は、URL クエリパラメーターでのみ使用できます。 URL 内のAssets ID （アセット名）は認識できます。 |
+| アセットのUIDに基づく URL を推測するのは困難ですが（URL の不明化を有効にします）、SEO に最適化されています。 | URL の不明化は、URL クエリパラメーターでのみ使用できます。 URL 内のAssets ID （アセット名）は認識できます。 |
 
 +++
 
@@ -123,7 +124,7 @@ OpenAPI 機能を備えたDynamic MediaとDynamic Mediaの主な違いの一部�
 
 次の表に、2 つのソリューションの主な違いの概要を示します。
 
-| OpenAPI 機能を備えたDynamic Media | Connected Assets |
+| OpenAPI 機能を備えたDynamic Media | 接続されたアセット |
 |---|---|
 | リモート DAM デプロイメントのAssetsは、AEM as a Cloud Serviceで利用できます。 | リモート DAM デプロイメント上のAssetsは、AEM as a Cloud ServiceまたはAdobe Managed Servicesで利用できます。 |
 | リモート DAM デプロイメント上のアセットがAEM Sites インスタンスで使用可能な場合、アセットバイナリはコピーされません。 | リモート DAM デプロイメント上のアセットがAEM Sites インスタンスで使用可能な場合、アセットバイナリはコピーされます。 |
@@ -135,6 +136,3 @@ OpenAPI 機能を備えたDynamic MediaとDynamic Mediaの主な違いの一部�
 | リモート DAM のアセットメタデータは、AEM Sites インスタンスでも使用できます。 | リモート DAM のアセットメタデータは、AEM Sites インスタンスでは使用できません。 |
 
 +++
-
-
-
