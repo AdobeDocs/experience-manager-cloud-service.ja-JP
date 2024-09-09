@@ -3,10 +3,11 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.9.0 �
 description: AEM as a Cloud ServiceのCloud Manager 2024.9.0 のリリースノートについて説明します。
 feature: Release Information
 role: Admin
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: 610ae004b6da2f7fc0dae2baa613cb363fe9fb00
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 22%
+source-wordcount: '367'
+ht-degree: 20%
 
 ---
 
@@ -32,9 +33,17 @@ AEM as a Cloud Service の Cloud Manager 2024.9.0 のリリース日は 2024年9
 
   Cloud Managerを使用すると、[ セルフサービスAdobeで生成および管理される DV （Domain Validation） SSL 証明書 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を使用できるようになります。 この機能により、オンライン組織やビジネス向けに安全な web サイトを作成するための、最も迅速で簡単でコスト効率に優れたソリューションを実現できます。<!-- CMGR-52403 -->
 
+  >[!NOTE]
+  >
+  >[Content Hub](/help/assets/product-overview.md) のお客様は、段階的なロールアウトの一環として、この機能を段階的に受け取るように計画されています。
+
 * Cloud Managerでの **Edge Delivery Servicesのサポート：**
 
   AEM Sitesの一部としてEdge Delivery Services ライセンスをお持ちの場合 [Cloud Managerを通じて直接Edge Delivery Servicesでサイトをオンボーディングできるようになりました ](/help/implementing/cloud-manager/edge-delivery-services.md)。 この機能により、ガイド付きのセルフサービスの運用開始エクスペリエンスが可能になります。 また、すべてのAEM プロパティにわたってドメイン名の管理、SSL 証明書、CDN マッピングなどの基本的なワークフローを統合し、一貫性と効率性を確保します。<!-- CMGR-49859 -->
+
+  >[!NOTE]
+  >
+  >[Content Hub](/help/assets/product-overview.md) のお客様は、段階的なロールアウトの一環として、この機能を段階的に受け取るように計画されています。
 
 * GitHub リポジトリを使用するお客様は、web 階層設定パイプラインを作成および使用できるようになりました。<!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
 
