@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセッ�
 description: アセットセレクターを使用して、要件に応じてカスタマイズする例。
 role: Admin, User
 exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 82%
+source-wordcount: '257'
+ht-degree: 81%
 
 ---
 
@@ -53,5 +53,6 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 >[!MORELIKETHIS]
 >
 >* [ アセットセレクターのカスタマイズ ](/help/assets/asset-selector-customization.md)
+>* [ アセットセレクターのアップロード ](/help/assets/asset-selector-upload.md)
 >* [ アセットセレクターのプロパティ ](/help/assets/asset-selector-properties.md)
->* [ アセットセレクター Dynamic Media オープン API の統合 ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [ アセットセレクターとDynamic Mediaの OpenAPI 機能との統合 ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

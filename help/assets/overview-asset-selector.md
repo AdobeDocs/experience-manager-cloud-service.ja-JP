@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセッ�
 description: アセットセレクターを使用し、アプリケーション内のアセットのメタデータとレンディションを検索および取得します。
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 70%
+source-wordcount: '1295'
+ht-degree: 69%
 
 ---
 
@@ -219,7 +219,13 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
         <em> 使いやすさに基づいて、アセットセレクターの様々なコンポーネントを設定およびカスタマイズします。</em>
         </p>
     </td>
-    <td></td>
+    <td>
+        <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="アセットセレクターのアップロードグラフィック"><br/>
+        <a href="asset-selector-upload.md"> アセットセレクターのカスタマイズ </a>
+        <p>
+        <em> ローカルまたはサードパーティのファイルシステムからアセットセレクターにファイルまたはフォルダーをアップロードする方法を説明します。</em>
+        </p>
+    </td>
 </tr>
 </table>
 
@@ -228,4 +234,4 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 >* [ アセットセレクターのカスタマイズ ](/help/assets/asset-selector-customization.md)
 >* [ アセットセレクターと様々なアプリケーションの統合 ](/help/assets/integrate-asset-selector.md)
 >* [ アセットセレクターのプロパティ ](/help/assets/asset-selector-properties.md)
->* [ アセットセレクター Dynamic Media オープン API の統合 ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [ アセットセレクターとDynamic Mediaの OpenAPI 機能との統合 ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
