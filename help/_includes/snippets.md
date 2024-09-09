@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 94%
+source-wordcount: '993'
+ht-degree: 87%
 
 ---
 # スニペット {#snippets}
@@ -156,8 +156,27 @@ ht-degree: 94%
 >フロントエンドパイプラインを使用してサイトを開発する場合や、使用する予定がある場合は、事前に Cloud Manager IP 許可リストを追加する必要があります。
 >詳しくは、[フロントエンドパイプラインでの Cloud Manager IP 許可リストの使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)を参照してください。
 
-## Dynamic Media を操作する  {#work-with-dynamic-media}
+## Dynamic Media の操作 {#work-with-dynamic-media}
 
 >[!TIP]
 >
 >Dynamic Mediaを初めてお使いですか？ Dynamic Mediaの概要については、[Dynamic Mediaの操作 ](/help/assets/dynamic-media/dynamic-media.md) を参照してください。
+
+## Dynamic Mediaについても参照してください {#see-also-dm}
+
+>[!NOTE]
+>
+>* Dynamic Mediaを初めてお使いですか？ Dynamic Mediaの概要については、[Dynamic Mediaの操作 ](/help/assets/dynamic-media/dynamic-media.md) を参照してください。
+>
+>* [Dynamic Mediaのベストプラクティス ](/help/assets/dynamic-media/dm-best-practices.md) に従って、最大限の価値を引き出します。
+>
+>* [ スナップショットツール ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) を使用してDynamic Mediaの画像機能を試します。
+>
+>* [ アダプティブビデオ ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash) でビデオをスムーズに再生します。
+>
+>* [ スマート切り抜きによる画像 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) の切り抜きを自動化します。
+>
+>* [ スマート切り抜きによるビデオ ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) の切り抜きを自動化します。
+>
+>* [ インタラクティブな 3D を活用したエクスペリエンス ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video) を提供します。
+>* その他の [Dynamic Media リソース バンク ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)。

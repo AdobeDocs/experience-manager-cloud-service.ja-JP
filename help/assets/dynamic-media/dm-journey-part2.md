@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
 workflow-type: tm+mt
-source-wordcount: '2677'
+source-wordcount: '2621'
 ht-degree: 100%
 
 ---
@@ -212,19 +212,22 @@ Flyout ビューアは、既定の標準提供ビューアで、プロパティ�
 
 読んだ内容について詳しくは、以下の資料を使って概念をさらに詳しく調べてください。以上で、Dynamic Media ジャーニーは完了です。
 
-_Dynamic Media ヘルプトピック_
+{{see-also-dm}}
 
-* [画像プリセットの作成方法](/help/assets/dynamic-media/image-presets.md)
-* 画像プリセットを作成する際に、「画像の修飾子」フィールドで使用できる[画像処理パラメーター](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=ja)のリスト
-* [アセットのプレビュー方法](/help/assets/dynamic-media/previewing-assets.md)
-* [3D アセットのプレビュー方法](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [画像セットの作成方法](/help/assets/dynamic-media/image-sets.md)
-* [スピンセットの作成方法](/help/assets/dynamic-media/spin-sets.md)
-* [混在メディアセットの作成方法](/help/assets/dynamic-media/mixed-media-sets.md)
+<!--
+_Dynamic Media Help topics_
+
+* [How to create image presets](/help/assets/dynamic-media/image-presets.md)
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
+* [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
+* [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
+* [How to create Spin sets](/help/assets/dynamic-media/spin-sets.md)
+* [How to create Mixed Media sets](/help/assets/dynamic-media/mixed-media-sets.md) -->
 
 _Dynamic Media チュートリアル_
 
-* [Experience Manager Assets での Dynamic Media の使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=ja)
+* [Experience Manager Assets での Dynamic Media の使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=pt-BR)
 * [Adobe Experience Manager コンテンツライブラリ](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/experience-manager)（_Dynamic Media_ で検索）
 
 _Dynamic Media ビューア_

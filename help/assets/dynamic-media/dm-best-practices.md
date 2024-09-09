@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 100%
@@ -411,3 +411,5 @@ Dynamic Media スマートイメージングは、クライアントのブラウ
 CDN （コンテンツ配信ネットワーク）は、Dynamic Media アセットをキャッシュして、顧客にすばやく配信します。これらのアセットに更新を行った際は、変更を web サイトにすぐに反映することが重要です。CDN キャッシュをパージまたは無効にすることで、Dynamic Media によって配信されるアセットをすばやく更新できます。このアプローチにより、通常 10 時間に設定されている TTL（有効期間）の値に基づいてキャッシュの有効期限が切れるのを待つ必要がなくなります。特定のユースケースに応じて、CDN TTL（有効期間）設定を適宜更新できます。
 
 詳しくは、[Dynamic Media を使用した CDN キャッシュの無効化](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)を参照してください。
+
+{{see-also-dm}}
