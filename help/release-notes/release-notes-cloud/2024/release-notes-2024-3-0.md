@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.3.0 リ�
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '2292'
-ht-degree: 97%
+source-wordcount: '2293'
+ht-degree: 96%
 
 ---
 
@@ -116,7 +116,7 @@ Assets Essentials では、管理者は、リポジトリで使用可能なプ�
 
 ### AEM Forms の新機能 {#forms-new-features}
 
-* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**：AEM Forms Edge Delivery Services は、作成者が新しいフォームを迅速にアップデート、公開、起動できる迅速な開発環境を可能にする、構成可能なサービスセットです。これらのサービスは、エンゲージメントとコンバージョンを促進する、優れた効果の高いフォームエクスペリエンスを提供します。これらのフォームエクスペリエンスは、簡単に作成および開発できます。
+* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**: AEM Forms用Edge Delivery Servicesは、作成者が新しいフォームを迅速に更新、公開、開始できる、迅速な開発環境を可能にする構成可能なサービスセットです。 これらのサービスは、エンゲージメントとコンバージョンを促進する、優れた効果の高いフォームエクスペリエンスを提供します。これらのフォームエクスペリエンスは、簡単に作成および開発できます。
 
   ![EDS Forms の機能](/help/edge/assets/eds-forms-features.png)
 

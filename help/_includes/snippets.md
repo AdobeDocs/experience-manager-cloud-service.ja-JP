@@ -1,8 +1,8 @@
 ---
-source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 95%
+source-wordcount: '915'
+ht-degree: 94%
 
 ---
 # スニペット {#snippets}
@@ -56,7 +56,7 @@ ht-degree: 95%
 
 ## 関連トピック {#see-more-forms-eds}
 
-* [AEM Forms Edge Delivery Services の基本を学ぶ](/help/edge/docs/forms/tutorial.md)
+* [AEM FormsのEdge Delivery Servicesの基本を学ぶ](/help/edge/docs/forms/tutorial.md)
 * [Google Sheet または Microsoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
 * [データの受け入れを開始するための Google Sheets または Microsoft Excel ファイルの設定](/help/edge/docs/forms/submit-forms.md)
 * [フォームを公開してデータの収集を開始](/help/edge/docs/forms/publish-forms.md)

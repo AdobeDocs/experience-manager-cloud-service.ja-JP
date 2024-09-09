@@ -1,13 +1,13 @@
 ---
 title: ルールを使用してフォームに動的な動作を追加
-description: AEM Forms Edge Delivery Services は、ピークパフォーマンスを発揮するように作られており、ユーザーは合理化されたデータ収集とユーザーエンゲージメントの今後を思い描くことができます。ルールを使用してフォームに動的な動作を追加
+description: AEM FormsのEdge Delivery Servicesは最高のパフォーマンスを実現するように設計されているので、合理化されたデータ収集とユーザーエンゲージメントの将来を想像できます。 ルールを使用してフォームに動的な動作を追加
 feature: Edge Delivery Services
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '2216'
-ht-degree: 100%
+source-wordcount: '2218'
+ht-degree: 98%
 
 ---
 
