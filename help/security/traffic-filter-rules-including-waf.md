@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: dee1a768c1cec6cf0e7c321d4d76a486db661d13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3928'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -255,7 +255,7 @@ when:
 | MALFORMED-DATA | リクエスト本文内の不正なデータ | 「Content-Type」リクエストヘッダーに従って不正な形式である POST、PUT、PATCH リクエストの本文です。例えば、「Content-Type: application/x-www-form-urlencoded」リクエストヘッダーが指定され、JSON である POST 本文が含まれているとします。これは、多くの場合、プログラミングエラーや、自動リクエスト、悪意のあるリクエストです。エージェント 3.2 以降が必要です。 |
 | SANS | 悪意のある IP トラフィック | [SANS Internet Storm Center](https://isc.sans.edu/) には、悪意のあるアクティビティにエンゲージしたと報告された IP アドレスのリストが含まれます。 |
 | NO-CONTENT-TYPE | 「Content-Type」リクエストヘッダーなし | 「Content-Type」リクエストヘッダーを持たない POST、PUT または PATCH リクエストです。この場合、アプリケーションサーバーでは、デフォルトで「Content-Type: text/plain; charset=us-ascii」を想定する必要があります。自動化された悪意のあるリクエストの多くには、「Content-Type」が欠落している可能性があります。 |
-| NOUA | ユーザーエージェントなし | 「User-Agent」ヘッダーが含まれていないリクエスト、またはヘッダー値が設定されていないリクエストを示します。 |
+| NOUA | ユーザーエージェントなし | リクエストに「User-Agent」ヘッダーが含まれていなかったか、ヘッダー値が設定されていなかったことを示します。 |
 | TORNODE | Tor トラフィック | Tor は、ユーザーの ID を隠すソフトウェアです。Tor トラフィックのスパイクは、攻撃者がその場所をマスクしようとしていることを示す可能性があります。 |
 | NULLBYTE | Null バイト | 通常、Null バイトはリクエストには表示されず、リクエストの形式が正しくなく、悪意がある可能性があることを示します。 |
 | PRIVATEFILE | プライベートファイル | プライベートファイルは、Apache `.htaccess` ファイルや、機密情報の漏洩につながる可能性のある設定ファイルなど、本来、部外秘のものです。 |

@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: c5057120d68e1119211c7733a8eb0424590096bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2172'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 >title="AEM as a Cloud Service の非推奨（廃止予定）の機能と削除された機能"
 >abstract="AEM as a Cloud Service には、クラウドネイティブなデプロイメントモデルがあります。一部の機能や特徴は、クラウドネイティブな同等機能に置き換えられました。ここでは、それらの機能を示します。"
 
-Adobeでは、製品の性能を絶えず評価して、常に下位互換性を慎重に考慮しながら、古い機能を作成し直したり、より近代的な機能に置き換えて、お客様にとっての全体的な価値を向上させています。 また、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] はクラウドネイティブなデプロイメントモデルを提供するので、一部の機能はクラウドネイティブな同等機能に置き換わりました。
+アドビでは、製品の機能を絶えず評価して、常に後方互換性を慎重に考慮しながら、古い機能を作成し直したり、新たな機能に置き換えて、お客様にとっての全体的な価値を向上させます。また、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] はクラウドネイティブなデプロイメントモデルを提供するので、一部の機能はクラウドネイティブな同等機能に置き換わりました。
 
 近い将来行われる [!DNL Experience Manager] 機能の削除や置換を通知するため、次のルールが適用されます。
 
@@ -236,7 +236,7 @@ Adobeでは、製品の性能を絶えず評価して、常に下位互換性を
     <td>org.apache.sling.commons.log.logback<br>org.apache.sling.commons.log.logback.webconsole</td>
     <td>この内部 logback API は、AEM as a Cloud Service ではサポートされていません。</td>
     <td>2022/1/27</td>
-    <td>削除</td>
+    <td>削除済み</td>
   </tr>
   <tr>
     <td>com.github.jcotness.handlebars.js</td>

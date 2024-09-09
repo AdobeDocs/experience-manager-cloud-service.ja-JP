@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 9cc49bf83d278d4064faa1d0157201226a067cb1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1142'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -48,15 +48,15 @@ Have a look at the August 2024 Release Overview video for a summary of the featu
 
 **Edge Delivery Services 用の AEM オーサリング**
 
-次のような既存の Sites [ 継承 ](/help/sites-cloud/authoring/universal-editor/inheritance.md) 機能がサポートされるようになりました。
+次のような既存の Sites [継承](/help/sites-cloud/authoring/universal-editor/inheritance.md)機能がサポートされるようになりました。
 
 * [AEM ローンチ](/help/sites-cloud/authoring/launches/overview.md)
 * ページレベルでの [MSM](/help/sites-cloud/administering/msm/overview.md)
 
 さらに、次のページ管理機能がサポートされるようになりました。
 
-* [AEM タグ ](/help/sites-cloud/authoring/sites-console/tags.md) は、Edge Delivery Servicesに [ 分類 ](/help/edge/wysiwyg-authoring/taxonomy.md) として書き出すことができます。
-* Edge Delivery Services用 [ テンプレート ](/help/edge/wysiwyg-authoring/templates.md) は、近日中に提供されます。
+* [AEM タグ](/help/sites-cloud/authoring/sites-console/tags.md)は、Edge Delivery Services に[分類](/help/edge/wysiwyg-authoring/taxonomy.md)として書き出すことができます。
+* Edge Delivery Services 用[テンプレート](/help/edge/wysiwyg-authoring/templates.md)は、近日中に提供されます。
 
 ### 早期導入プログラム {#sites-early-adopter}
 
@@ -69,62 +69,62 @@ AEM の新機能を通じて GenAI を活用し、[バリエーションを生�
 
 ### アセットビューの新機能 {#assets-view-new-features}
 
-**更新されたAdobe Firefly画像の生成**
+**アップデート後の Adobe Firefly 画像の生成**
 
-Assetsのas a Cloud Serviceでは、Fireflyの最新ウィジェットを使用するようになりました。このウィジェットを使用すると、Adobe Fireflyを使用して様々なスタイルの画像を生成できます。 組み込みのアセットエディターを使用してスタイル、構成、寸法などを定義することで、必要なFireflyをすばやく作成してAEM Assets リポジトリー内に直接保存し、すぐに使用できます。
+Assets as a Cloud Service では、Firefly の最新ウィジェットを使用するようになりました。これにより、Adobe Firefly を使用して様々なスタイルの画像を生成できます。組み込みの Firefly エディターを使用してスタイル、構成、寸法などを定義すれば、必要なアセットを AEM Assets リポジトリ内で直接作成して保存し、すぐに使用できます。
 
-![Adobe Firefly画像の生成 ](/help/assets/assets/bugatti-type-57.png)
+![Adobe Firefly 画像の生成](/help/assets/assets/bugatti-type-57.png)
 
 **PSB ファイルのサポート**
 
-Assetsのas a Cloud Serviceでは、既存のPSDファイルのサポートに加えて、Photoshopの大きなドキュメント（PSB ファイル）をサポートするようになりました。
+Assets as a Cloud Service では、既存の PSD ファイルのサポートに加えて、Photoshop の大きなドキュメント（PSB ファイル）がサポートすされるようになりました。
 
-### Content Hubの新しい機能強化 {#content-hub-new-enhancements}
+### コンテンツハブの新しい機能強化 {#content-hub-new-enhancements}
 
-* 長いファイル名の処理が改善され、ツールヒントを使用して完全な名前を簡単に拡張できます。
-* コンテンツの縦横比に合わせて、より広い領域のコンテンツをカバーするようにサムネールを改善しました。
-* コンテンツハブでサポートされる、AEMのカスタムサムネールエクスペリエンス。
+* 長いファイル名の取り扱いを改善しました。ツールヒントを使用して完全な名前を簡単に展開できます。
+* サムネールを改善し、コンテンツの縦横比に合わせて、より広い領域のコンテンツがカバーされるようにしました。
+* コンテンツハブでサポートされる、AEM のカスタムサムネールエクスペリエンス。
 * カラー検索の改善。
 * 設定の改善により、操作性が向上します。
-* コレクションの情報ページが改善され、作成者の名前が反映されるようになりました。
+* 作成者の名前が反映されるように、コレクションの情報ページを改善しました。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### AEM Formsの新しいプレリリース機能 {#forms-new-prerelease-features}
+### AEM Forms の新しいプレリリース機能 {#forms-new-prerelease-features}
 
-#### コアコンポーネントベースのアダプティブFormsのドラフトを自動保存
+#### コアコンポーネントベースアダプティブフォームのドラフトの自動保存
 
-部分的に完了したフォームを自動的にドラフトとして保存する自動保存機能を利用できるようになりました。 後で戻って、同じデバイスまたは他のデバイスで充填を完了することができます。 この機能により、ユーザーはフォームへの入力を最初からやり直す必要がなくなるので、フォームの放棄が減り、組織のコンバージョン率が向上します。
+一部が完了したフォームを自動的にドラフトとして保存する、自動保存機能を利用できるようになりました。後で戻って、同じデバイスまたは他のデバイスで入力を完了できます。この機能により、ユーザーはフォームへの入力を最初からやり直す必要がなくなるので、フォームの放棄が減り、組織のコンバージョン率が向上します。
 
 
 ### AEM Forms の早期アクセス機能 {#forms-new-early-access-features}
 
-AEM Forms早期アクセスプログラム プログラムは、最先端のイノベーションに独占的にアクセスし、その発展を形作るユニークな機会を提供します。
+AEM Forms 早期アクセスプログラムでは、最先端のイノベーションに排他的にアクセスし、その開発に貢献できるユニークな機会を提供します。
 
 このリリースノートでは、現在のリリースで提供されるイノベーションのリストを示します。早期アクセスプログラムで利用可能なイノベーションの完全なリストについては、[AEM Forms 早期アクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
 
 #### AEM Forms AI アシスタント
 
-アダプティブForms用のジェネレーティブ AI は、まったく新しいレベルの機能を提供し、フォーム開発プロセスを簡単にします。 これにより、以前よりも迅速に、より優れたフォームを作成できます。
+アダプティブフォーム用の生成 AI を使用すれば、まったく新しいレベルの機能により、フォーム開発プロセスが容易になります。かつてないほど短時間で、より優れたフォームを作成できるようになります。
 
-![ ジェネレーティブ AI アシスタント、アダプティブForms](/help/forms/assets/generative-ai-assistant.png)
+![生成 AI アシスタント、アダプティブフォーム](/help/forms/assets/generative-ai-assistant.png)
 
-提供されるジェネレーティブ AI 機能は次のとおりです。
+オファー上の生成 AI 機能は次のとおりです。
 
-* **製品クエリ用 AI アシスタント**:AEM フォームに関する質問にすぐに回答できます。 AI アシスタントは、独自の個人のナレッジベースとして機能し、プラットフォーム内で直接洞察に満ちたガイダンスと推奨事項を提供します。
+* **製品クエリ用 AI アシスタント**：AEM フォーム関連の質問に対する回答をすぐに得られます。AI アシスタントは、ユーザー自身のナレッジベースとして機能し、プラットフォーム内で直接、インサイトに満ちたガイダンスとレコメンデーションを提供します。
 
-* **アダプティブフォームの生成**：生成 AI プロンプトを使用して、本格的なフォームを簡単に作成します。 ジェネレーティブ AI は、ドロップオフを減らし、エクスペリエンスをパーソナライズする、使いやすいフォームを自動的に生成します。
+* **アダプティブフォームの生成**：生成 AI プロンプトを使用して、本格的なフォームを簡単に作成します。アドビの生成 AI は、離脱を減らし、エクスペリエンスをパーソナライズする使いやすいフォームを自動的に生成します。
 
-* **Formsのパネル生成**：特定のデータ収集ニーズに合わせてカスタマイズされたフォームセクションを生成します。 例えば、支払い情報、顧客の環境設定、旅行の詳細を収集するためのセクションを生成します。
+* **Forms のパネル生成**：特定のデータ収集ニーズに合わせてフォームセクションを生成します。例えば、支払い情報、顧客の環境設定、旅行の詳細を収集するためのセクションを生成します。
 
-* **フォームレイアウトの変更**：生成 AI プロンプトを使用して、様々なレイアウトやデザインを試します。 フォームに最適なレイアウトをウィザードやタブ付きビューで試すことができます。 ジェネレーティブ AI プロンプトを使用すると、モバイルの応答性に合わせてフォームを最適化し、ユーザーの好みに合わせて視覚的に魅力的なフォームを作成できます。
+* **フォームレイアウトの変更**：生成 AI プロンプトを使用して、様々なレイアウトやデザインを試します。ウィザードやタブ付きビューなどの様々なレイアウトを試して、自身のフォームに最適なスタイルを見つけます。生成 AI プロンプトを使用してモバイル機器のレスポンシブデザイン向けにフォームを最適化し、ユーザーが好む魅力的な外観のフォームを作成します。
 
-* **送信アクションの設定**：生成 AI プロンプトを使用すると、フォームの送信アクションを簡単に設定できます。 事前定義済みの送信アクションのライブラリから、または独自の開発チームが作成およびデプロイしたカスタム送信アクションのリストから選択します。
+* **送信アクションの設定**：生成 AI プロンプトを使用して、フォームの送信アクションを簡単に設定します。事前定義済みの送信アクションのライブラリ、または自社開発チームによって作成およびデプロイされたカスタム送信アクションのリストから選択します。
 
 >[!IMPORTANT]
 >
-> 任意のイノベーションのために早期アクセスプログラムへの参加に興味がある場合は、興味のある機能のリストを記載したメールを公式アドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) に送信するだけです。
+> イノベーションの早期アクセスプログラムへの参加に興味がある方は、興味のある機能のリストを添えて、公式アドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールを送信してください。
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
