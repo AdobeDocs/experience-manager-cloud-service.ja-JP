@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセッ�
 description: アセットセレクターを使用し、アプリケーション内のアセットのメタデータとレンディションを検索および取得します。
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: 0b8c345efa4c8f59b423644944ca2a6f8d54cbb4
 workflow-type: tm+mt
 source-wordcount: '1295'
 ht-degree: 69%
@@ -221,7 +221,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
     </td>
     <td>
         <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="アセットセレクターのアップロードグラフィック"><br/>
-        <a href="asset-selector-upload.md"> アセットセレクターのカスタマイズ </a>
+        <a href="asset-selector-upload.md"> アセットセレクターのアップロード </a>
         <p>
         <em> ローカルまたはサードパーティのファイルシステムからアセットセレクターにファイルまたはフォルダーをアップロードする方法を説明します。</em>
         </p>
