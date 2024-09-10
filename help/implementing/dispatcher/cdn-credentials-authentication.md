@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 5d51ff056d4e4f0fdbb3004cbac55803ac91f8ca
 workflow-type: tm+mt
 source-wordcount: '1443'
-ht-degree: 84%
+ht-degree: 92%
 
 ---
 
@@ -74,9 +74,9 @@ data:
 >[!NOTE]
 >Edge キーは、それを参照する設定をデプロイする前に、[ 秘密鍵タイプのCloud Manager環境変数 ](/help/operations/config-pipeline.md#secret-env-vars) として設定する必要があります。 32 バイト以上の長さの一意のランダムキーを使用することをお勧めします。例えば、Open SSL 暗号化ライブラリは、コマンド `openssl rand -hex 32` を実行してランダムキーを生成できます。
 
-### 安全に移行してトラフィックのブロックのリスクを軽減 {#migrating-safely}
+### ブロックされたトラフィックのリスクを軽減する安全な移行 {#migrating-safely}
 
-サイトがすでに実稼働している場合、設定の誤りが公開トラフィックをブロックする可能性があるので、顧客が管理する CDN への移行には注意が必要です。これは、想定される X-AEM-Edge-Key ヘッダー値を持つリクエストのみがAdobe CDN で受け入れられるからです。 テストヘッダーが含まれる場合にのみリクエストを評価する原因となる、追加の条件が認証ルールに一時的に含まれる場合は、このアプローチをお勧めします。
+サイトが既に実稼動している場合は、誤った設定によりパブリックトラフィックがブロックされる可能性があるので、顧客管理 CDN に移行する際には注意が必要です。これは、予期される X-AEM-Edge-Key ヘッダー値を持つリクエストのみが Adobe CDN によって受け入れられるからです。認証ルールに追加の条件を一時的に含め、テストヘッダーが含まれている場合にのみリクエストを評価するという次のアプローチをお勧めします。
 
 ```
     - name: edge-auth-rule
@@ -95,7 +95,7 @@ data:
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <CONFIGURED_EDGE_KEY>" -H "x-edge-test: test"
 ```
 
-正常にテストされたら、追加の条件を削除して、設定を再デプロイできます。
+テストが正常に完了したら、追加条件を削除して設定を再デプロイできます。
 
 ## API トークンのパージ {#purge-API-token}
 
@@ -142,7 +142,7 @@ data:
 >[!NOTE]
 >パージキーは、それを参照する設定をデプロイする前に、[ 秘密鍵タイプのCloud Manager環境変数 ](/help/operations/config-pipeline.md#secret-env-vars) として設定される必要があります。 32 バイト以上の長さの一意のランダムキーを使用することをお勧めします。例えば、Open SSL 暗号化ライブラリは、openssl rand -hex 32 コマンドを実行してランダムキーを生成できます
 
-パージキーの設定と CDN キャッシュパージの実行に焦点を当てた [ チュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) を参照してください。
+パージキーの設定と CDN キャッシュパージの実行に焦点を当てた[チュートリアル](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)を参照してください。
 
 ## 基本認証 {#basic-auth}
 

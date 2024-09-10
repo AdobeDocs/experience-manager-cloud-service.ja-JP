@@ -2,7 +2,7 @@
 source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 # スニペット {#snippets}
@@ -131,9 +131,9 @@ ht-degree: 87%
 
 ## フォームポータル{#forms-portal-see-also}
 
-* [Forms ポータルコンポーネントの概要](/help/forms/configure-forms-portal.md)
+* [フォームポータルコンポーネントの概要](/help/forms/configure-forms-portal.md)
 * [Sites ページでのフォームの一覧表示](/help/forms/list-forms-on-sites-page.md)
-* [フォームをドラフトとして保存する](/help/forms/save-core-component-based-form-as-draft.md)
+* [アダプティブフォームを下書きとして保存](/help/forms/save-core-component-based-form-as-draft.md)
 * [Sites ページへのフォームリンクの追加](/help/forms/add-form-link-to-aem-sites-page.md)
 
 

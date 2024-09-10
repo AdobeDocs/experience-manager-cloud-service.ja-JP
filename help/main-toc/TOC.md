@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2bf129d763fcad024eb3799cdf2a97bdbc2472c5
+source-git-commit: bd6106256cf812d4420f1f9d84ec008d9cd18a46
 workflow-type: tm+mt
-source-wordcount: '5586'
-ht-degree: 97%
+source-wordcount: '5592'
+ht-degree: 99%
 
 ---
 
@@ -85,6 +85,7 @@ ht-degree: 97%
    + AEMaaCS メンテナンスリリースノート {#maintenance}
       + [最新のメンテナンスリリースノート](/help/release-notes/maintenance/latest.md)
       + 2024年度 {#2024}
+         + [メンテナンスリリースノート（2024.9.0）](/help/release-notes/maintenance/2024/2024-9-0.md)
          + [メンテナンスリリースノート（2024.8.0）](/help/release-notes/maintenance/2024/2024-8-0.md)
          + [メンテナンスリリースノート（2024.7.0）](/help/release-notes/maintenance/2024/2024-7-0.md)
          + [メンテナンスリリースノート（2024.6.0）](/help/release-notes/maintenance/2024/2024-6-0.md)
@@ -492,7 +493,7 @@ ht-degree: 97%
       + [メタデータスキーマ](/help/assets/metadata-schemas.md)
       + [ビデオアセットの管理](/help/assets/manage-video-assets.md)
       + [MSM を使用したアセットの再利用](/help/assets/reuse-assets-using-msm.md)
-      + [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+      + [アセットのダウンロード](/help/assets/download-assets-from-aem.md)
       + [編集するアセットのチェックアウトとチェックイン](/help/assets/check-out-and-submit-assets.md)
       + [プライベートフォルダーの作成と共有](/help/assets/private-folder.md)
       + [アセットのデジタル著作権管理](/help/assets/drm.md)
@@ -629,7 +630,7 @@ ht-degree: 97%
       + [コンテンツハブのデプロイ](/help/assets/deploy-content-hub.md)
       + [コンテンツハブユーザーインターフェイスの設定](/help/assets/configure-content-hub-ui-options.md)
       + [コンテンツハブへのブランド承認済みアセットのアップロードまたは読み込み](/help/assets/upload-brand-approved-assets.md)
-      + [Content Hub用のアセットの承認](/help/assets/approve-assets-content-hub.md)
+      + [コンテンツハブ向けアセットの承認](/help/assets/approve-assets-content-hub.md)
       + [コンテンツハブでのアセットの検索](/help/assets/search-assets-content-hub.md)
       + [アセットのプロパティ](/help/assets/asset-properties-content-hub.md)
       + [コンテンツハブでのアセットの共有](/help/assets/share-assets-content-hub.md)
@@ -704,7 +705,7 @@ ht-degree: 97%
       + コアコンポーネント {#authoring-adaptive-forms-core-components}
          + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
             + [アダプティブフォームを作成します](/help/forms/creating-adaptive-form-core-components.md)
-            + [コアコンポーネントに基づくアダプティブフォームのレイアウト設定](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
+            + [コアコンポーネントに基づくアダプティブフォームのレイアウトの設定](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [アダプティブフォームフラグメントの作成](/help/forms/adaptive-form-fragments-core-components.md)
             + [アダプティブフォームのテーマの作成 - コアコンポーネント](/help/forms/using-themes-in-core-components.md)
             + [コアコンポーネントに基づくアダプティブフォームテンプレートの作成](/help/forms/template-editor-core-components.md)
@@ -739,11 +740,11 @@ ht-degree: 97%
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要](/help/forms/create-and-use-custom-functions.md)
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成と使用](/help/forms/custom-function-core-component-create-function.md)
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の例](/help/forms/custom-function-core-components-use-cases.md)
-            + Forms ポータルとそのコンポーネントの概要 {#introduction-to-forms-portal}
-               + [Forms ポータルコンポーネントの概要](/help/forms/configure-forms-portal.md)
-               + [検索とリスターコンポーネントを使用して、Sites ページ上でフォームを一覧表示する](/help/forms/list-forms-on-sites-page.md)
-               + [ドラフトと送信コンポーネントを使用した、Sites ページ上でのフォームのドラフトとしての保存とリスト](/help/forms/save-core-component-based-form-as-draft.md)
-               + [リンクコンポーネントを使用したサイトページへのフォームリンクの追加](/help/forms/add-form-link-to-aem-sites-page.md)
+            + フォームポータルとそのコンポーネントの概要{#introduction-to-forms-portal}
+               + [フォームポータルコンポーネントの概要](/help/forms/configure-forms-portal.md)
+               + [検索とリスターコンポーネントを使用した Sites ページでのフォームの一覧表示](/help/forms/list-forms-on-sites-page.md)
+               + [下書きと送信コンポーネントを使用した Sites ページでの下書きとしてのフォームの保存と一覧表示](/help/forms/save-core-component-based-form-as-draft.md)
+               + [リンクコンポーネントを使用した Sites ページへのフォームリンクの追加](/help/forms/add-form-link-to-aem-sites-page.md)
       + 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
          + PDF フォームのアダプティブフォームへの変換 {#afcs}
             + [自動フォーム変換サービスの概要](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja)
