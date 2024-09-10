@@ -6,10 +6,10 @@ mini-toc-levels: 2
 feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 638b18beb5202ec34c1957a74d5b293236c2cf4e
 workflow-type: tm+mt
-source-wordcount: '3842'
-ht-degree: 100%
+source-wordcount: '3869'
+ht-degree: 99%
 
 ---
 
@@ -22,6 +22,10 @@ ht-degree: 100%
 | AEM as a Cloud Service | この記事 |
 
 大企業では、web サイトの作成に必要なインフラストラクチャが分散していることがあります。Web サイト作成機能と、それらの web サイトの作成に使用されたデジタルアセットが、別々のデプロイメントに格納されている場合もあります。その理由の 1 つは、連携して動作する必要がある既存のデプロイメントが地理的に分散していることです。もう 1 つの理由は、買収によって、親会社が一緒に使用したいと考えている [!DNL Experience Manager] のバージョンが異なるなど、インフラストラクチャが異種混在になることです。
+
+>[!NOTE]
+>
+>Adobeでは、OpenAPI 機能を備えたDynamic Mediaを活用して、AEM Assetsas a Cloud ServiceとAEM Sitesを接続することをお勧めします。 [ リモート AEM AssetsとAEM Sitesの統合 ](/help/assets/integrate-remote-approved-assets-with-sites.md) を参照してください。
 
 Connected Assets 機能では、[!DNL Experience Manager Sites] と [!DNL Experience Manager Assets] の統合により、上記のユースケースをサポートしています。ユーザーは、別個の [!DNL Assets] デプロイメントから取得するデジタルアセットを使用する web ページを [!DNL Sites] に作成できます。
 
