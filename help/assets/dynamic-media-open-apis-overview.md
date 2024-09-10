@@ -3,9 +3,9 @@ title: OpenAPI 機能を備えたDynamic Media
 description: Dynamic Mediaを OpenAPI 機能と共に使用する理由や有効にする方法など、主要な概念について説明します。
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 1041769d4c1efa4465745a85df65c803939b472b
+source-git-commit: 6199a8ae0033feee0c1bee4e4c50e19cd55c805c
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1062'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ AEM as a Cloud Serviceで OpenAPI 機能を備えたDynamic Mediaを有効にす
 
   >[!NOTE]
   >
-  > Adobe以外のアプリケーションと統合する場合は、アプリケーションがホストされている場所を許可リストに加えるドメイン名を指定します。
+  > Adobe以外のアプリケーションと統合するには、アプリケーションがホストされている許可リストにドメイン名を指定します。
 
 * 統合プロジェクトに関わる主要顧客連絡先の詳細。
 
