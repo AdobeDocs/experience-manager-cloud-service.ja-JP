@@ -5,9 +5,9 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
 source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2982'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -186,7 +186,7 @@ AEM の各ノードには、一意の UUID が必要です。このエラーは�
    * _留意事項_：追加抽出の場合、ソース上に存在しなくなっても、移行セットにノードが存在します。
 * 移行先のノードが取り込みと後続の追加取り込みの間に移動される
 
-この競合は手動で解決する必要があります。コンテンツを参照する他のコンテンツに留意し、2 つのノードのうち、削除する必要があるノードをコンテンツに精通したユーザーが決定する必要があります。解決策として、問題のあるノードがなくても、追加抽出を再度行う必要が生じる場合があります。
+この競合は手動で解決する必要があります。コンテンツを参照する他のコンテンツに留意し、2 つのノードのうち、削除する必要があるノードをコンテンツに精通したユーザーが決定する必要があります。解決策として、問題のあるノードを使用せずに、追加抽出を再度行う必要が生じる場合があります。
 
 ### 参照されているノードを削除できないことによる追加取り込みの失敗 {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
@@ -214,10 +214,10 @@ AEM の各ノードには、一意の UUID が必要です。このエラーは�
 >abstract="取り込みエラーの一般的な原因は、ノードプロパティの値の最大サイズを超えていることです。 この状況を修正するには、ドキュメント（BPA レポートに関連するものを含む）に従います。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=ja" text="移行の前提条件"
 
-MongoDB に保存されるノードプロパティの値は 16 MB を超えることはできません。ノード値がサポートされているサイズを超えると、取り込みは失敗し、ログには次のいずれかが含まれます。
+MongoDB に保存されるノードプロパティの値は、16 MB 未満にする必要があります。ノード値がサポートされているサイズを超えると、取り込みに失敗し、ログには次のいずれかが含まれます。
 
-* `BSONObjectTooLarge` エラーが発生し、最大値を超えたノードを指定した場合
-* `BsonMaximumSizeExceededException` エラー。unicode 文字を含んでいる可能性があるノードが、最大サイズ**を超えていることを示します
+* `BSONObjectTooLarge` エラー。最大値を超えたノードが指定されます。または
+* `BsonMaximumSizeExceededException` エラー。最大サイズを超える Unicode 文字を含む可能性のあるノードがあることを示します **
 
 これは MongoDB の制限です。
 
@@ -227,7 +227,7 @@ MongoDB に保存されるノードプロパティの値は 16 MB を超える�
 
 >[!NOTE]
 >
->[ ベストプラクティスアナライザー ](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) バージョン 2.1.50 以降では、最大サイズを超える Unicode 文字を含む大きなノードについてレポートします。 最新バージョンを使用していることを確認してください。 2.1.50 より前の BPA バージョンでは、これらの大規模なノードを識別してレポートすることはなく、上記の前提条件のOak ツールを使用して個別に検出する必要があります。
+>[ベストプラクティスアナライザー](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)バージョン 2.1.50 以降では、最大サイズを超える Unicode 文字を含む大きなノードがレポートされます。最新バージョンを実行していることを確認してください。2.1.50 より前の BPA バージョンでは、これらの大規模なノードを識別してレポートすることはできず、上記の前提条件となる Oak ツールを使用して個別に検出する必要があります。
 
 ### 取り込みの取り消し {#ingestion-rescinded}
 

@@ -6,9 +6,9 @@ keywords: AEM forms を Power Automate に接続、Power Automate による AEM 
 feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: ae2815a49a674521344ded8da009290c4d999fdf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1209'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -74,12 +74,12 @@ Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接
 
 1. API 権限ページで、「`Add a permission`」をクリックします。
 
-1. Microsoft® API で、`Power Automate` を選択し、次の権限を選択します。
+1. Microsoft® API で、「`Power Automate`」を選択し、次の権限を選択します。
    * Flows.Manage.All
    * Flows.Read.All
-   * GCC 権限（GCC （Government Cloud Computing）テナントに接続する場合はオプション）
+   * GCC 権限（GCC（政府のクラウドコンピューティング）テナントに接続する場合はオプション）
 「`Add permissions`」をクリックして、権限を保存します。
-1. API 権限ページで、「`Add a permission`」をクリックします。 組織で使用している API を選択して `DataVerse` を検索し、`user_impersonation` Click `Add` 権限を有効にします。
+1. API 権限ページで、「`Add a permission`」をクリックします。組織で使用している API を選択し、`DataVerse` を検索して `user_impersonation` を有効にし、`Add` 権限をクリックします。
 1. （オプション）証明書とシークレットページで、「新しいクライアントシークレット」をクリックします。 「クライアントシークレットの追加」画面で、説明とシークレットの有効期限を入力し、「追加」をクリックします。 シークレットの文字列が生成されます。
 1. 組織固有の [Dynamics 環境の URL](https://docs.microsoft.com/ja-jp/power-automate/web-api#compose-http-requests) をメモしておいてください。
 
@@ -113,14 +113,14 @@ Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接
 
 1. 設定ページで「**[!UICONTROL 作成]**」をタップして、AEM Forms 内に [!DNL Microsoft® Power Automate Flow Service] の設定を作成します。
 
-1. （オプション）「`Connect to Microsoft GCC`」チェックボックスを選択して、GCC テナントに接続します。
+1. （オプション）GCC テナントに接続するには、「`Connect to Microsoft GCC`」チェックボックスをオンにします。
 
    >[!NOTE]
    >
-   > GCC （Government Cloud Computing）テナントに接続する場合は、Microsoft Azure Portal で GCC 権限を選択します。
+   > GCC（政府のクラウドコンピューティング）テナントに接続する場合は、Microsoft Azure Portal で GCC 権限を選択します。
 
 
-   ![Power Automate クラウド設定 ](/help/forms/assets/power-automate.png)
+   ![Power Automate クラウド設定](/help/forms/assets/power-automate.png)
 
 1. **[!UICONTROL Microsoft® Power Automate の Dataverse の設定]**&#x200B;ページで、**[!UICONTROL クライアント ID]**（アプリケーション ID とも呼ばれます）、**[!UICONTROL クライアントシークレット]**、**[!UICONTROL OAuth URL]** および&#x200B;**[!UICONTROL Dynamics 環境 URL]** を指定します。 クライアント ID、クライアントシークレット、OAuth URL、Dynamics 環境 ID を使用します。 Microsoft® Azure Active Directory アプリケーション UI の「エンドポイント」オプションを使用して、OAuth URL を検索します。 [マイフロー](https://us.flow.microsoft.com)リンクを開いて「マイフロー」を選択し、URL にリストされている ID を Dynamics 環境 ID として使用します。
 

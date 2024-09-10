@@ -5,9 +5,9 @@ role: User, Leader
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: d71107be2831bf00bff3856d7cd0e10818ec6be5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '358'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->Assets ビューに移動して `Network Error` メッセージが表示された場合は、[ クロスオリジンリソース共有（CORS）設定 ](/help/headless/deployment/cross-origin-resource-sharing.md) の記事に記載されている手順を実行していることを確認してください。
+>アセットビューに移動して `Network Error` メッセージが表示される場合は、[クロスオリジンリソース共有（CORS）設定](/help/headless/deployment/cross-origin-resource-sharing.md)の記事に記載される手順を実行する必要があります。
 
 ## [!DNL Assets View] のユースケース {#use-cases}
 

@@ -5,9 +5,9 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
 source-git-commit: bc103cfe43f2c492b20ee692c742189d6e454856
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2834'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -135,7 +135,7 @@ AEM ログレベルは、OSGi 設定を介して環境の種類ごとに設定�
 </tr>
 <tr>
 <td>ログメッセージ</td>
-<td>No specified approver, defaulting to [ Creative Approvers user group ]</td>
+<td>指定承認者なし。デフォルトで [クリエイティブ承認者ユーザーグループ] に設定されます</td>
 </tr>
 </tbody>
 </table>
@@ -144,13 +144,13 @@ AEM ログレベルは、OSGi 設定を介して環境の種類ごとに設定�
 
 AEM Java ログは OSGi 設定として定義されるので、ターゲット固有の AEM as a Cloud Service 環境は実行モードのフォルダーを使用します。
 
-Sling LogManager ファクトリの OSGi 設定を使用して、カスタム Java パッケージの Java ログを設定します。サポートされている設定プロパティは次の 3 つです。
+Sling LogManager ファクトリの OSGi 設定を使用して、カスタム Java パッケージの Java ログを設定します。サポートされている設定には、次の 3 つのプロパティがあります。
 
 | OSGi 設定プロパティ | 説明 |
 |---|---|
 | `org.apache.sling.commons.log.names` | ログステートメントを収集する Java パッケージです。 |
-| `org.apache.sling.commons.log.level` | `org.apache.sling.commons.log.names` で指定された、Java パッケージをログに記録するログレベル |
-| `org.apache.sling.commons.log.file` | 出力のターゲットを指定：`logs/error.log` |
+| `org.apache.sling.commons.log.level` | Java パッケージをログに記録するログレベルです（`org.apache.sling.commons.log.names` で指定） |
+| `org.apache.sling.commons.log.file` | 出力のターゲットを `logs/error.log` に指定します |
 
 その他の LogManager OSGi 設定プロパティを変更すると、AEM as a Cloud Service での可用性の問題が発生する場合があります。
 

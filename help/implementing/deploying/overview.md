@@ -5,9 +5,9 @@ feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
 source-git-commit: 1ad144fb630eca51f2004300c71d75f627cf9977
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3440'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 
 AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Managed Services ソリューション上の AEM の場合と同様です。開発者はコードを作成しローカルでテストします。コードはその後、AEM as a Cloud Service のリモート環境にプッシュされます。Cloud Manager（Managed Services のオプションのコンテンツ配信ツール）が必要です。この配信ツールは、AEM as a Cloud Service 開発、ステージ、および実稼動環境にコードをデプロイするための唯一のメカニズムになりました。前述の環境をデプロイする前に、機能の検証とデバッグを迅速に行うために、コードをローカル環境から[迅速な開発環境](/help/implementing/developing/introduction/rapid-development-environments.md)に同期できます。
 
-[AEM バージョン](/help/implementing/deploying/aem-version-updates.md)のアップデートは、常に、[カスタムコード](#customer-releases)のプッシュとは別のデプロイメントイベントになります。別の見方をすれば、カスタムコードリリースは実稼動環境にある AEM バージョンに照らしてテストする必要があります。カスタムコードがその AEM 上にデプロイされるからです。その後に行われるAEM バージョンのアップデート（頻繁に行われ、自動的に適用されます）は、既にデプロイされているカスタマーコードとの下位互換性を保つことを目的としています。
+[AEM バージョン](/help/implementing/deploying/aem-version-updates.md)のアップデートは、常に、[カスタムコード](#customer-releases)のプッシュとは別のデプロイメントイベントになります。別の見方をすれば、カスタムコードリリースは実稼動環境にある AEM バージョンに照らしてテストする必要があります。カスタムコードがその AEM 上にデプロイされるからです。その後に行われる AEM バージョンの更新（頻繁に自動的に適用されます）は、既にデプロイされている顧客コードとの後方互換性を保持することを目的としています。
 
 このドキュメントの残りの部分では、AEM as a Cloud Service のバージョンアップデートと顧客側でのアップデートの両方に対応できるように、開発者が開発のベストプラクティスをどのように適応させるべきかについて説明します。
 

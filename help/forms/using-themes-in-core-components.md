@@ -5,7 +5,7 @@ keywords: アダプティブフォームのスタイル設定コアコンポー�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 source-git-commit: 076ee3616ad56b4d463d93e407a9e7e67e54b4ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2816'
 ht-degree: 100%
 
