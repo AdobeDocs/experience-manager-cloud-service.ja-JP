@@ -1,18 +1,18 @@
 ---
-title: Cloud Manager での git の使用
+title: Cloud Managerでの Git の使用
 description: Cloud Manager の Git リポジトリを使用する方法と、オンプレミスで顧客管理された独自の Git リポジトリを Cloud Manager と統合する方法について説明します。
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 80206fc1396896fe45e2c959c78a0bf30eba71c5
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
-# Cloud Manager での git の使用 {#git-integration}
+# Cloud Managerでの Git の使用 {#git-integration}
 
 Adobe Cloud Manager には、Cloud Manager の CI／CD パイプラインを使用したコードのデプロイに使用される単一の Git リポジトリがプロビジョニングされます。
 
@@ -40,19 +40,19 @@ Cloud Manager の Git リポジトリをそのまま使用することもでき�
 
 >[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12)
 
-## 基本分岐戦略 {#branching-strategy}
+## 基本ブランチ戦略 {#branching-strategy}
 
 このビデオでは、基本的な分岐戦略について説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 
-## 機能分岐の開発 {#feature-development}
+## 機能ブランチの開発 {#feature-development}
 
 機能分岐を使用して、顧客が管理する Git リポジトリ内のコード変更を分離し、Cloud Manager の Git リポジトリと同期して、コードの品質と検証テストに非実稼動パイプラインを使用します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
 
-## 実稼動デプロイメント {#production-deployment}
+## 実稼動のデプロイメント {#production-deployment}
 
 顧客管理 Git リポジトリで実稼動版リリースのコードを準備し、Cloud Manager の Git リポジトリと同期して、ステージ環境と実稼動環境にデプロイします。
 
@@ -66,6 +66,6 @@ Cloud Manager の Git リポジトリのリリースタグを、顧客が管理�
 
 ## その他のリソース {#additional-resources}
 
-* [GitHub リソース](https://try.github.io)
+* [GitHub リソース](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
 * [Atlassian Git チュートリアル](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)

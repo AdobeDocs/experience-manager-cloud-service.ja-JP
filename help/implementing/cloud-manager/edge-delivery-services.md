@@ -4,9 +4,9 @@ description: Edge Delivery Servicesを使用してCloud Manager プロジェク�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
+source-git-commit: bc6ea60abed904ef514a4b010a9848511c28128e
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1503'
 ht-degree: 6%
 
 ---
@@ -75,7 +75,7 @@ AEM as a Cloud Service Sites Edge Delivery Servicesライセンスを契約し�
 
 実稼動プログラムにEdge Delivery Servicesを追加すると、そのプログラムにEdge Delivery Servicesライセンスが適用されます。
 
-概要ページに、**Edge Delivery** という新しいクリック可能なタブが表示されます。 タブをクリックすると、追加した各Edge Delivery サイトを一覧表示するテーブルが表示されます。 左側のナビゲーションパネルの **サービス** グループ化の下に、**Edge Delivery Sites** という名前のメニューオプションがあります。
+概要ページに、**Edge Delivery** というクリック可能なタブが表示されます。 タブをクリックすると、追加した各Edge Delivery サイトを一覧表示するテーブルが表示されます。 左側のナビゲーションパネルの **サービス** グループの下に、**Edge Delivery Sites** という名前のメニューオプションがあります。
 
 ![ 左側のナビゲーションパネルに「Edge Delivery Sites」を表示し、「Edge Delivery配信」タブの右側にある「Publish」タブを表示する概要ページ ](/help/implementing/cloud-manager/assets/cm-overview-eds.png)
 
@@ -127,7 +127,7 @@ AEM as a Cloud Service Sites Edge Delivery Servicesライセンスを契約し�
 | 5 | SSL 証明書を追加 | [SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。 |
 | 6 | Edge Delivery サイトの CDN の設定 | [CDN 設定の追加 ](#add-cdn) を参照してください。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on) （2 分、13 秒）
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Edge Delivery サイトに CDN 設定を追加します。 {#add-cdn}
 
