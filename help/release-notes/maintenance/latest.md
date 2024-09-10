@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: eb01b6982578ad1300163c2fd536e844afc815fa
-workflow-type: ht
-source-wordcount: '736'
-ht-degree: 100%
+source-git-commit: 9323464610b804ff407f5eedf404ab2cca93a8da
+workflow-type: tm+mt
+source-wordcount: '572'
+ht-degree: 50%
 
 ---
 
@@ -16,75 +16,60 @@ ht-degree: 100%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 17569 {#release-17569}
+## リリース 17689 {#release-17689}
 
-2024年8月27日（PT）に公開されたメンテナンスリリース 17569 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 17465 でした。
+2024年9月10日（PT）に公開されたメンテナンスリリース 17689 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 17569 でした。
 
 2024.9.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。 詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
 
-### 機能強化 {#enhancements-17569}
+### 機能強化 {#enhancements-17689}
 
-* CQ-4353778：翻訳プロセスイベント。
-* CQ-4354583：Adobe パイプラインを使用して翻訳プロセスイベントを送信します。
-* CQ-4356479：アドビコードでのみ /adobe サーブレットコンテキストを使用できるようにします。
-* CQ-4358226：翻訳キーワード保存機能が特定の文字列形式で機能しません。
-* CQ-4358270：AEM 翻訳キット：8月8日（PT）。
-* CQ-4358310：oak-compat-query-spi-1.2 をクイックスタートに追加します。
-* GRANITE-49833：イベント送信者とプロキシのバッチ処理のサポート。
-* GRANITE-52053：Commons コレクション 3 の使用を削除します：Platform 他。
-* GRANITE-52492：PIT 復元の場合の Elastic 非同期キャッチアップ。
-* GRANITE-53099：Apache Felix Http Jetty 5.1.24 を更新します。
-* GRANITE-53125：CloudEvent に分類を追加します。
-* GRANITE-53328：FileVault を、スタッシュログの改善を含んだ 3.8.0-T20240726111512-3cc11d50 に更新します。
-* GRANITE-53453：commons-lang を 3.15.0 に更新します。
-* GRANITE-53478：FileVault をバージョン 3.8.0 に更新します。
-* GRANITE-53505：QS を commons-collections-3.2.2-adobe-2 に更新します。
-* GRANITE-53528：プラットフォームアーティファクトのバージョンを更新します。
-* GRANITE-53547：代替 API を提供して Apache Commons Lang 2 の使用を避けます。
-* GRANITE-53575：CS で BSAFE 6.2.5 を使用します。
-* GRANITE-53608：Oak を最新のパブリックリリース（1.68.0）に更新します。
-* SITES-23583：Sites エバーグリーンのテストが Java 17 で失敗します。
-* SKYOPS-79535：rum スクリプト v2 に更新します。
-* SKYOPS-79816：FACT ツールでのサービスユーザーマッピング用の Sling 機能アナライザータスクを有効にします。
-* SKYOPS-81179：AEM でバンドル切り替えのテストをビルドします。
-* SKYOPS-81866：Java 21 と互換性がないことがわかっているバンドルの警告を報告します。
-* SKYOPS-82660：Sling API を 2.27.6 に更新します。
-* SKYOPS-82961：Sling ResourceResolver 1.12.0-T20240723153354-a0270a0 に更新します。
-* SKYOPS-83356：AEM デプロイメントで使用される JVM のバージョンを追跡するためのグローバルダッシュボードを作成します。
-* SKYOPS-83436：Java Runtime 21 のロールアウトで、AEM Forms でアダプティブフォームを作成できなくなります。
-* SKYOPS-84272：AEM ランチャーの起動時に使用される Java バージョンのログを記録します。
+* ASSETS-41404:DRM の改善をサポートする変更。
+* ASSETS-41621：非同期アセットコピージョブを更新しました。
+* ASSETS-32166：非同期のアセット移動ジョブを更新しました。
+* ASSETS-41429:DM OpenAPI での画像プリセットのサポート。
+* ASSETS-38968：コンテンツフラグメント参照の表示域が向上しました。
+* ASSETS-41787、ASSETS-41183: Assets一括操作フレームワークの機能強化。
+* GRANITE-52917：コンテンツのコピーパッケージのインストール時間を改善するための最適化。
+* SCRNS-3980: アセットがスケジュールされていない後続のプレーヤーでグレーの画面を検出します。
 
-### 修正された問題 {#fixed-issues-17569}
+### 修正された問題 {#fixed-issues-17689}
 
-* CMGR-60225：AEM リリース 17486 への更新を検証中に、AEM Sites CS のお客様でパイプライン実行エラーが検出されました。
-* GRANITE-45919：「ユーザー設定を編集」の「国 / 地域」リストに禁輸対象国が表示されます。
-* GRANITE-51715：ピッカーで選択した範囲がテキストフィールドに入力されない場合があります。
-* GRANITE-53290：XSS チェックで URL を解析する際に、プロトコルを正しく確認します。
-* GRANITE-53576：OSGi 設定のサービスランキングの定義が間違っています。
-* SKYOPS-82129：Sling モデルでのメモリリーク。
+* ASSETS-40875:AssetDeleteHandler によってログに記録されたスプリアス NPE。
+* ASSETS-42422:1 つのアセット移動に対して非同期ジョブをトリガーしないようにします。
+* ASSETS-41234：検索バーが開いている場合、統合シェル – グローバルナビゲーションが機能しない可能性があります。
+* ASSETS-42256：統合シェル – 環境を示すタグ/バッジが断続的にのみ機能します。
+* ASSETS-41271：移動操作中にAssetsを不必要に再公開しないようにします。
+* ASSETS-38894：ウォッチドッグを処理して再試行を制限します。
+* ASSETS-40815：プレビューPDFレンディションを使用して、リンク共有 UI で PPT ファイルを表示します。
+* ASSETS-37123：リンク共有ダイアログでアセットのプレビューを読み込めない。
+* CQ-4358156：削除されるタグのバックリンクを更新します。
+* SCRNS-4495：異なるユーザーグループに対して、貼り付けボタンが正しく機能しない問題を修正しました。
+* SCRNS-4512: AEMaaCS 画面からデバイスに関連するコンポーネントを削除します。
+* SCRNS-4466: チャネル ダッシュボードで、非表示 – マニフェストの表示、オフライン コンテンツの生成、マニフェスト キャッシュの更新、表示パネル。
+* SCRNS-4513: リスト ビューで検索結果ページの列ヘッダーを追加します。
 
-### 既知の問題 {#known-issues-17569}
+### 既知の問題 {#known-issues-17689}
 
-* ASSETS-40875 - AssetDeleteHandler クラスが、アセット削除イベントをリッスンし、削除イベントのタイプ（PRE_DELETE または POST_DELETE）に基づいて特定のアクションを実行する。特定のシナリオでは、POST_DELETE タイプのイベントによって NullPointerException が発生します。
-* FORMS-14340 - FormsAndDocumentOmniSearchHandler および CloudStorageSubmitActionInserter のインスタンス化中にエラーが発生する。これらは無害なログステートメントです。
-* FORMS-15818 - コンポーネント記述子エントリ「OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml」のステートメントがサーバーログで見つからない。これらは無害なログステートメントです。
-* SITES-23662 - 公開をトリガーするユーザーがサーバーログの JCR ログステートメントから抽出できない。これは開発中の機能で、断続的で無害な「OSGi イベントのバッチで有効なユーザー ID が見つかりません」というエラーがログに記録される可能性があります。
+* FORMS-14340:FormsAndDocumentOmniSearchHandler および CloudStorageSubmitActionInserter のインスタンス化でエラーが発生しました。 これらは無害なログステートメントです。
+* FORMS-15818: コンポーネント記述子エントリ &#39;OSGI-INF/com.adobe.aemfd.docmanager.impl。*.xml&#39;がサーバーログに見つかりません。 これらは無害なログステートメントです。
+* SITES-23662：公開をトリガーするユーザーを、サーバーログの JCR ログステートメントから抽出できない。 これは、開発中の機能で、断続的で無害な「OSGI イベントのバッチで有効なユーザー ID が見つかりません」エラーがログに発生する可能性があります。
 
-### 変更通知 {#change-notice-17569}
+### 変更通知 {#change-notice-17689}
 
 * 2024年9月以降、AEM as a Cloud Service では、Sling Model Exporter フレームワークを介したリソースリゾルバーのシリアル化が無効になります。 詳しくは、[ドキュメント](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)を参照してください。
 
-### 廃止された機能と API {#deprecated-17569}
+### 廃止された機能と API {#deprecated-17689}
 
 現在 `com.day.cq.wcm.api` を更新中で、現在のリリースでは、いくつかのメソッドとクラスを `@Deprecated` としてマークしています。これらは今後のリリースでは削除される予定なので、いずれかを使用している場合は、推奨される代替手段に切り替えます。
 
 AEM as a Cloud Service で廃止および削除された機能と API について詳しくは、[廃止および削除された機能と API](/help/release-notes/deprecated-removed-features.md) ドキュメントを参照してください。
 
-### セキュリティ修正 {#security-17569}
+### セキュリティ修正 {#security-17689}
 
 AEM as a Cloud Service では、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。このメンテナンスリリースでは、特定された 4 つの脆弱性に対処し、堅牢なシステム保護に対する取り組みを強化しています。
 
-### 組み込みテクノロジー {#embedded-tech-17569}
+### 組み込みテクノロジー {#embedded-tech-17689}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
