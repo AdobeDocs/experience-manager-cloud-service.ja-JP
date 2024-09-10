@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bd6106256cf812d4420f1f9d84ec008d9cd18a46
+source-git-commit: 983928c46ed5c4999dcae12c75930a9973d51f75
 workflow-type: tm+mt
-source-wordcount: '5592'
-ht-degree: 99%
+source-wordcount: '5600'
+ht-degree: 98%
 
 ---
 
@@ -1147,6 +1147,7 @@ ht-degree: 99%
       + [AEM as a Cloud Service の SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
       + [AEM の迅速な開発環境](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [AEM as a Cloud Service の開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md)
+      + [AEM as a Cloud ServiceDeveloper Console（Beta）](/help/implementing/developing/introduction/developer-console.md)
       + [ログ](/help/implementing/developing/introduction/logging.md)
       + [ログ転送](/help/implementing/developing/introduction/log-forwarding.md)
       + [設定と設定ブラウザー](/help/implementing/developing/introduction/configurations.md)
