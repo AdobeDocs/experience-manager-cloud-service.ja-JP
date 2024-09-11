@@ -1,40 +1,51 @@
 ---
-title: AEM as a Cloud Service リリース 2024.07 の移行ツールのリリースノート
-description: AEM as a Cloud Service リリース 2024.07.0 の移行ツールのリリースノート
+title: AEM as a Cloud Service リリース 2024.09 の移行ツールのリリースノート
+description: AEM as a Cloud Service リリース 2024.09.0 の移行ツールのリリースノート
 feature: Release Information
 exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
 role: Admin
-source-git-commit: 4f01ca0076248442fe93161bbc8b98bffb64551b
-workflow-type: ht
-source-wordcount: '171'
-ht-degree: 100%
+source-git-commit: 0c16f264826a46907afc33c91a021e7696f5b7a8
+workflow-type: tm+mt
+source-wordcount: '230'
+ht-degree: 33%
 
 ---
 
-# AEM as a Cloud Service リリース 2024.07.0 の移行ツールのリリースノート {#release-notes}
+# AEM as a Cloud Service リリース 2024.09.0 の移行ツールのリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service 2024.07.0 の移行ツールのリリースノートの概要を説明しています。
+このページでは、AEM as a Cloud Service 2024.09.0 の移行ツールのリリースノートの概要を説明しています。
 
 ## コンテンツ転送ツール {#ctt-release}
 
 ### リリース日 {#release-date-ctt}
 
-コンテンツ転送ツール v3.0.16 のリリース日は 2024年7月です。
+コンテンツ転送ツール v3.0.20 のリリース日は 2024 年 8 月 28 日です。
 
 ### 新機能 {#what-is-new-ctt}
 
-* エラー時の CTT 抽出ログの自動アップロード。
-* ユーザーは抽出キーの更新時に取り込みを正常に実行できるようになりました。
-* AzureDataStore で Azure アクセスキーと秘密鍵を使用して CTT 抽出を実行するためのサポートが追加されました。
-* 無効なキーを使用して移行セットを作成する際、ユーザーは正しいエラーメッセージを受信するようになりました。
+* ユーザーはこのリリースでは取り込まれなくなるので、ユーザーマッピングオプション機能は削除されました。
+* 抽出および取り込み中のプリンシパルの移行を無効または有効にする OSGI 設定オプションが追加されました（デフォルト設定では有効になっています）
+
+### バグ修正 {#bug-fixes-ctt}
+
+* azcopy 設定で秘密鍵の保護を解除する際のエラーを防ぐために、CTT を改善しました
+* 検証フェーズで AzCopy ログをコピーする際に、CTT がエラーを適切に処理するようになりました
+* 抽出プロセス中に作成された azcopy ログディレクトリの変更
 
 ## ベストプラクティスアナライザー {#bpa-release}
 
 ### リリース日 {#release-date-bpa}
 
-ベストプラクティスアナライザー v2.1.50 のリリース日は 2024年5月です。
+ベストプラクティスアナライザー v2.1.52 のリリース日は 2024 年 9 月 4 日です
+
+### 新機能 {#what-is-new-bpa}
+
+* AEMでの JCR ベースのイベントを検出する新しいパターンが導入されました
 
 ### バグ修正 {#bug-fixes-bpa}
 
-* ベストプラクティスアナライザーにより、16MBを超えるすべてのノードが検出されるようになりました
-* NCC 結果が散発的に発生する競合状態が修正されました。
+* 修正偽陽性
+* Dispatcher からリダイレクトされた応答を処理するための堅牢性の向上
+* /apps/wcm/core/resources/languages/以下のすべての言語について、NCC 検索の非レポートを修正しました。
+* ノードの複数プロパティに値がないかどうかを検出するチェックを追加しました
+

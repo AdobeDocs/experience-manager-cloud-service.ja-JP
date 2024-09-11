@@ -3,10 +3,11 @@ title: AEM as a Cloud Service リリース 2024.05.0 の移行ツールのリリ
 description: AEM as a Cloud Service リリース 2024.05.0 の移行ツールのリリースノート
 feature: Release Information
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+exl-id: f50a74fa-ad7d-4837-b0a1-9945c32af02f
+source-git-commit: 3b2ed44b438fe8587a9b9603ddfacc41111fb903
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 83%
+source-wordcount: '208'
+ht-degree: 85%
 
 ---
 
@@ -18,11 +19,16 @@ ht-degree: 83%
 
 ### リリース日 {#release-date-bpa}
 
-ベストプラクティスアナライザー v2.1.48 のリリース日は 2024年5月9日（PT）です。
+ベストプラクティスアナライザー v2.1.50 のリリース日は 2024年5月です。
 
 ### 新機能 {#what-is-new-bpa}
 
 * ベストプラクティスアナライザー（BPA）では、BPA で生成されたレポートを Cloud Acceleration Manager（CAM）に直接自動アップロードできるようになりました。ユーザーはレポートを手動でダウンロードして CAM にアップロードする必要がなくなります。詳しくは、[ ベストプラクティスアナライザーの使用 ](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) を参照してください
+
+### バグ修正 {#bug-fixes-bpa}
+
+* ベストプラクティスアナライザーにより、16MBを超えるすべてのノードが検出されるようになりました
+* NCC 結果が散発的に発生する競合状態が修正されました。
 
 ## Cloud Acceleration Manager {#cam-release}
 
