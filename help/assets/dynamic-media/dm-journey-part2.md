@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
 source-wordcount: '2621'
 ht-degree: 100%
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 # Dynamic Media ジャーニー：基礎知識、第 2 部  {#dm-journey-part2}
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 Dynamic Media ジャーニー：基礎知識、第 2 部へようこそ。ここでは次のことを学ぶことができます。
 
@@ -211,8 +211,6 @@ Flyout ビューアは、既定の標準提供ビューアで、プロパティ�
 ## オプション - 詳細情報
 
 読んだ内容について詳しくは、以下の資料を使って概念をさらに詳しく調べてください。以上で、Dynamic Media ジャーニーは完了です。
-
-{{see-also-dm}}
 
 <!--
 _Dynamic Media Help topics_

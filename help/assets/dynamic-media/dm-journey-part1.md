@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
 source-wordcount: '3615'
 ht-degree: 100%
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 # Dynamic Media ジャーニー：基本知識（第 1 部） {#dm-journey-part1}
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 Dynamic Media ジャーニーへようこそ。
 
@@ -268,7 +268,6 @@ _選択した「ZoomVertical_light」ビューアプリセットに基づくア�
 
 このジャーニーの第 1 部では、様々な Dynamic Media トピックの基本を説明しました。ここで学んだ内容についてさらに詳しく知るには、以下の資料を参照してください。または、ジャーニーの第 2 部に進んでください。[この Dynamic Media ジャーニーの次のステップ](#whats-next)を参照してください。
 
-{{see-also-dm}}
 <!--
 _Dynamic Media Help topics_
 
