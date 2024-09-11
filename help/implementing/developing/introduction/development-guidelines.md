@@ -4,7 +4,7 @@ description: AEM as a Cloud Service での開発に関するガイドライン�
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ea631743af99879d2a76d3a4a78ecf5883f39c69
+source-git-commit: 16379d9cb7cdf876502205c12a233a95b410a67a
 workflow-type: tm+mt
 source-wordcount: '2770'
 ht-degree: 99%
@@ -183,7 +183,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 >
 
 >[!NOTE]
->一部のお客様には、AEM Cloud Service Developer Consoleの刷新されたエクスペリエンスを試してみることができます。 詳しくは [ この記事 ](/help/implementing/developing/introduction/developer-console.md) を参照してください。
+>一部のお客様には、AEM Cloud Service Developer Consoleの刷新されたエクスペリエンスを試してみることができます。 詳しくは [ この記事 ](/help/implementing/developing/introduction/aem-developer-console.md) を参照してください。
 
 ユーザーはオーサー層の開発環境では CRXDE Lite にアクセスできますが、ステージ環境や実稼動環境ではアクセスできません。不変リポジトリー（`/libs`、`/apps`）に実行時に書き込むことはできないので、書き込もうとするとエラーが発生します。
 
