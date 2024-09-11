@@ -5,10 +5,10 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 93%
+source-wordcount: '384'
+ht-degree: 76%
 
 ---
 
@@ -66,10 +66,10 @@ CDN のパフォーマンスを向上させる方法の提案については、�
 Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 ```
 
-* **ヒット** - データがキャッシュからリクエストされ、見つかりました。
-* **ミス** - データがキャッシュからリクエストされましたが、見つかりません。
-* **パス** - データはキャッシュからリクエストされますが、どのような場合でも、このデータをキャッシュしないように設定されています。
-* **その他** - キャッシュからのすべてのデータリクエストで、他の大文字と小文字が一致しません。
+* **ヒット** - データはキャッシュからリクエストされ、見つかりました。
+* **ミス** - データはキャッシュからリクエストされ、見つかりません。
+* **渡す** - データはキャッシュからリクエストされ、どの場合もこのデータをキャッシュしないように設定されます。
+* **その他** – 他の大文字と小文字が一致しない、キャッシュからのすべてのデータリクエスト。
 
 キャッシュ指標は 24 時間ごとに更新されます。
 

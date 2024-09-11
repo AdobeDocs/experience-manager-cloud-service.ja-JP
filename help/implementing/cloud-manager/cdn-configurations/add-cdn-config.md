@@ -4,13 +4,13 @@ description: Edge Delivery サイトまたはCloud Manager環境用の CDN 設�
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e57a6ceb2482e61acabe928da0f539d26989985c
+exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 18%
 
 ---
-
 
 # CDN 設定の追加 {#add-cdn}
 
@@ -41,7 +41,3 @@ SSL を使用してドメインを設定するには、CDN 設定の追加を完
    * SSL 証明書を選択します。 CDN タイプとして **Adobe管理 CDN** を選択した場合にのみ必要です。
 
 1. 「**保存**」をクリックします。
-
-
-
-

@@ -1,15 +1,15 @@
 ---
-title: パブリッシュ層のカスタムドメインの設定
+title: Publish層用のカスタムドメインの設定
 description: AdobeCloud Managerでパブリッシュ層のカスタムドメインを設定する方法について説明します。
-source-git-commit: f6c0e8e5c1d7391011ccad5aa2bad4a6ab7d10c3
+exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
+source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '261'
 ht-degree: 6%
 
 ---
 
-
-# パブリッシュ層のカスタムドメインの設定{#configure-custom-domain}
+# パブリッシュ層用のカスタムドメインの設定{#configure-custom-domain}
 
 AdobeCloud Managerでは、カスタムドメインを追加して web サイトを目立たせることができます。 AEM as a Cloud Serviceにはデフォルトドメインが付属していますが、必要に応じてカスタマイズできます。
 
@@ -20,9 +20,7 @@ AdobeCloud Managerでは、カスタムドメインを追加して web サイト
 * 証明書ポリシーは、ドメイン検証（DV）ポリシーではなく、拡張検証（EV）または組織検証（OV）のいずれかに準拠する必要があります。
 
 
-## カスタムドメインを追加
-
-パブリッシュ層のカスタムドメインを設定するには、次の手順に従います。
+## パブリッシュ層用のカスタムドメインの設定
 
 1. **[!UICONTROL Cloud ManagerAdobe]**/**[!UICONTROL プログラムの概要]**/**[!UICONTROL SSL 証明書]** に移動して、SSL 証明書を追加します。
    ![ 画像 ](/help/assets/assets/ssl-certificate.png)
@@ -31,11 +29,11 @@ AdobeCloud Managerに [SSL 証明書 ](/help/implementing/cloud-manager/managing
 1. SSL 証明書を追加したら、カスタムドメインを追加します。 **[!UICONTROL ドメイン設定]** をクリックし、**[!UICONTROL Publish サービス]** オプションに対してカスタムドメインを指定します。
 詳細情報 [ カスタムドメイン ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
 
-1. 公開ドメインに対応する DNS レコードに 2 つの [CNAME レコード ](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) を追加します。
-DNS の伝播遅延が原因で、DNS 検証の処理に数時間かかる場合があります。
+1. 公開ドメインに対応する DNS レコードに 2 つの [CNAME レコード ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を追加します。
+DNS の生成遅延が原因で、DNS 検証の処理に数時間かかる場合があります。
 
 1. カスタムドメインの設定を容易にするサポートケースをログに記録し、カスタムドメインが配信層にリダイレクトされるようにします。
 
 >[!NOTE]
 >
-> 必ずアセットセレクターの IMS クライアントで許可されているリダイレクト URL のリストにカスタムドメインを追加してください。<br> 各Adobeチームと調整し、カスタムドメイン文字列を指定して、このタスクを実行します。
+>許可されたリダイレクト URL リストにカスタムドメインを追加します。 リストは、アセットセレクターの IMS クライアントにあります。<br> 各Adobeチームと調整し、カスタムドメイン文字列を指定して、このタスクを実行します。

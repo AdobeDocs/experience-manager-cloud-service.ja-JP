@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 983928c46ed5c4999dcae12c75930a9973d51f75
+source-git-commit: 1b8640e4ac60e242abc0462bed3335a90e8c49f7
 workflow-type: tm+mt
-source-wordcount: '5600'
+source-wordcount: '5593'
 ht-degree: 98%
 
 ---
@@ -1121,9 +1121,7 @@ ht-degree: 98%
       + ドメイン設定 {#custom-domain-names}
          + [はじめに](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-         + [TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
          + [カスタムドメイン名ステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
-         + [DNS 設定の指定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [DNS レコードのステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + SSL 証明書 {#manage-ssl-certificates}

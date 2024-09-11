@@ -5,9 +5,9 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
+source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '705'
 ht-degree: 67%
 
 ---
@@ -38,7 +38,7 @@ Adobe Experience Manager as a Cloud Service には、`*.adobeaemcloud.com` で�
 
 ## カスタムドメイン名と独自の CDN {#byo-cdn}
 
-AEM as a Cloud Serviceには組み込みのコンテンツ配信ネットワーク（CDN）サービスが用意されていますが、AEMで使用する BYO （Bring Your Own） CDN も利用できます。 カスタムドメインは、AEM が管理する CDN か、自分が管理している CDN のいずれかにインストールできます。
+AEM as a Cloud Serviceには組み込みの CDN （コンテンツ配信ネットワーク）サービスが用意されていますが、AEMで使用する BYO （Bring Your Own） CDN も利用できます。 カスタムドメインは、AEM が管理する CDN か、自分が管理している CDN のいずれかにインストールできます。
 
 * Cloud Managerは、AEMの管理による CDN にインストールされたカスタムドメイン名と証明書を管理します。
 * BYO CDN にインストールされるカスタムドメイン名と証明書は、その CDN 内で直接管理されます。
@@ -52,13 +52,12 @@ AEM as a Cloud Serviceには組み込みのコンテンツ配信ネットワー�
 カスタムドメイン名を追加するには、DNS サービスと Cloud Manager 間のやり取りが必要です。このワークフローのため、カスタムドメイン名のインストール、設定および検証には、いくつかの手順が必要です。 次の表に、必要な手順の概要と、これらの手順を完了するためのドキュメントリソースへのリンクを示します。
 
 | 手順 | 説明 | ドキュメント化 |
-|---|---|---|
+| --- | --- | --- |
 | 1 | Cloud Manager への SSL 証明書の追加 | [SSL 証明書を追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | Cloud Manager へのカスタムドメインの追加 | [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 3 | TXT レコードを追加してドメインを検証 | [TXT レコードの追加 ](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
+| 3 | AEM as a Cloud Service を指す DNS CNAME または APEX レコードを追加して、DNS 設定を構成します | [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
 | 4 | ドメイン検証ステータスの確認 | [ ドメイン名のステータスの確認 ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | AEM as a Cloud Service を指す DNS CNAME または APEX レコードを追加して、DNS 設定を構成します | [DNS 設定の指定 ](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
-| 6 | DNS レコードのステータスを確認 | [DNS レコードのステータスの確認 ](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+| 5 | DNS レコードのステータスを確認 | [DNS レコードのステータスの確認 ](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >
