@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
+source-git-commit: 74172fe7fcf9a22837645a154f2e85fd6fa6b40e
 workflow-type: tm+mt
 source-wordcount: '2621'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 100%
 
 Dynamic Media ジャーニー：基礎知識、第 2 部へようこそ。ここでは次のことを学ぶことができます。
 
-* Dynamic Media URL の分解と Dynamic Media のコンテンツ配信方法
-* アセットをレンダリングするための画像プリセットの作成の基本
-* 画像セット、スピンセット、混在メディアセット
+* Dynamic Media URL の分解とDynamic Mediaのコンテンツ配信方法。
+* アセットをレンダリングするための画像プリセットの作成の基本。
+* 画像セット、スピンセット、混在メディアセットです。
 
 [Dynamic Media ジャーニー：基礎知識、第 1 部](/help/assets/dynamic-media/dm-journey-part1.md)も参照してください。
 
