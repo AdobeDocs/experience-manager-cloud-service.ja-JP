@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
+source-git-commit: b616f85df5211897286cc7031fdff809296ebcd6
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 100%
