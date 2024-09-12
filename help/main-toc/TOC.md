@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
+source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
 workflow-type: tm+mt
-source-wordcount: '5602'
+source-wordcount: '5605'
 ht-degree: 97%
 
 ---
@@ -1068,6 +1068,7 @@ ht-degree: 97%
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
 
 
+
    + Cloud Manager の使用 {#using-cloud-manager}
       + [ナビゲーション](/help/implementing/cloud-manager/navigation.md)
       + プログラム {#programs}
@@ -1134,6 +1135,7 @@ ht-degree: 97%
          + [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + CDN 設定 {#cdn-configurations}
          + [CDN 設定の追加](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+         + [CDN 設定の管理](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP 許可リスト {#ip-allow-lists}
          + [はじめに](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [IP 許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -1143,6 +1145,7 @@ ht-degree: 97%
       + [Cloud Serviceコンテンツリクエストについて](/help/implementing/cloud-manager/content-requests.md)
       + [CDN パフォーマンスダッシュボード](/help/implementing/cloud-manager/cdn-performance.md)
       + [Cloud Manager に関する FAQ](/help/implementing/cloud-manager/faqs.md)
+
 
 
    + AEM as a Cloud Service 向けの開発 {#developing}

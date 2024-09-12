@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
+source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 6%
@@ -46,6 +46,5 @@ Adobeが管理する CDN の場合、DV 証明書を使用する場合、ACME �
    | --- | --- |
    | アドビが管理する CDN | a. **ドメイン** ドロップダウンリストで、使用するドメイン名を選択します。<br> ドロップダウンリストに利用可能な検証済みドメインがありませんか？ [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。<br>b.「SSL 証明書」ドロップダウンリストで、使用する証明書を選択します。<br> ドロップダウンリストに SSL 証明書は表示されませんか？ [SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。 |
    | その他の CDN プロバイダー。 | 使用可能なAdobe管理の CDN ではなく独自の CDN プロバイダーを使用している場合は、このオプションを選択します。<br> 「**ドメイン**」ドロップダウンリストで、使用するドメイン名を選択します。<br> ドロップダウンリストに使用可能な SSL 証明書がありませんか？ [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。 |
-
 
 1. 「**保存**」をクリックします。
