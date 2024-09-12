@@ -4,10 +4,10 @@ description: 設定ファイルでルールとフィルターを宣言し、Clou
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: ht
-source-wordcount: '1314'
-ht-degree: 100%
+source-git-commit: 35d3dcca6b08e42c0d2a97116d0628ac9bbb6a7c
+workflow-type: tm+mt
+source-wordcount: '1350'
+ht-degree: 97%
 
 ---
 
@@ -153,6 +153,21 @@ data:
 |         | queryParamMatch | 指定した正規表現に一致するすべてのクエリパラメーターを削除します。 |
 | **transform** | op:replace、（reqProperty、reqHeader、queryParam、reqCookie のいずれか）、match、replacement | リクエストパラメーターの一部（「path」プロパティのみサポートされています）、またはリクエストヘッダー、クエリパラメーター、Cookie のいずれかを新しい値に置き換えます。 |
 |              | op:tolower、（reqProperty、reqHeader、queryParam、reqCookie のいずれか） | リクエストパラメーター（「path」プロパティのみサポートされています）またはリクエストヘッダー、クエリパラメーター、Cookie のいずれかを小文字の値に設定します。 |
+
+置換アクションは、次に示すように、キャプチャグループをサポートします。
+
+```
+      - name: replace-jpg-with-jpeg
+        when:
+          reqProperty: path
+          like: /mypath          
+        actions:
+          - type: transform
+            reqProperty: path
+            op: replace
+            match: (.*)(\.jpg)$
+            replacement: "\1\.jpeg"          
+```
 
 アクションは連結できます。例：
 
@@ -384,3 +399,31 @@ data:
 |-----------|--------------------------|-------------|
 | **リダイレクト** | location | 「Location」ヘッダーの値。 |
 |     | ステータス（オプション、デフォルトは 301） | リダイレクトメッセージで使用される HTTP ステータス（デフォルトでは 301）で、許可されている値は 301、302、303、307、308 です。 |
+
+リダイレクトの場所は、文字列リテラル（https://www.example.com/pageなど）か、オプションで変換されるプロパティの結果（path など）のどちらかで、次の構文を使用します。
+
+```
+experimental_redirects:
+  rules:
+    - name: country-code-redirect
+      when: { reqProperty: path, like: "/" }
+      action:
+        type: redirect
+        location:
+          reqProperty: clientCountry
+          transform:
+            - op: replace
+              match: '^(/.*)$'
+              replacement: 'https://www.example.com/\1/home'
+            - op: tolower
+    - name: www-redirect
+      when: { reqProperty: domain, equals: "example.com" }
+      action:
+        type: redirect
+        location:
+          reqProperty: path
+          transform:
+            - op: replace
+              match: '^(/.*)$'
+              replacement: 'https://www.example.com/\1'
+```
