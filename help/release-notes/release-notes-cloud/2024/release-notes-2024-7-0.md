@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.7.0 リリー�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.7.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: 2edaca5637c735645e2b761377b9681d9b48daa1
+exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
+source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 100%
+source-wordcount: '1605'
+ht-degree: 77%
 
 ---
 
@@ -60,19 +61,25 @@ AEM の新機能を通じて GenAI を活用し、[バリエーションを生�
 
 **アセットセレクターによるアセットのアップロード**
 
-アセットセレクターで、コンテンツ作成者がローカルファイルシステムからドラッグまたは参照して、セレクターから最終アセットを直接アップロードできるようになりました。これにより、選択したアプリケーションから最終アセットを DAM にアップロードできます。
+アセットセレクターで、コンテンツ作成者がローカルファイルシステムからドラッグまたは参照して、セレクターから直接最終アセットをアップロードできるようになりました。 この機能を使用すると、選択したアプリケーションから最終的なアセットを DAM にアップロードできます。
+
+### Dynamic Mediaの早期アクセス機能 {#dm-early-access}
+
+**AI ベースのビデオキャプション**
+
+AdobeDynamic Mediaの AI ベースのビデオキャプションは、人工知能を使用して、ビデオコンテンツのキャプションを自動生成します。 この機能は、正確なリアルタイムキャプションを提供することで、アクセシビリティを向上し、ユーザーエクスペリエンスを向上させることを目的としています。 AI がビデオの音声トラックを分析して、音声を書き起こし、キャプションを作成します。このキャプションは、精度やカスタマイズを考慮して編集できます。 これらのキャプションは、アクセシビリティ要件を満たし、テキストベースのビデオサポートを利用または好むオーディエンスのビデオエンゲージメントを向上させるのに役立ちます。
 
 ### アセットビューの新機能 {#assets-view-new-features}
 
 **コンテンツ資格情報の統合**
 
-Experience Manager Assets で、サポートされる画像形式のコンテンツ資格情報がサポートされるようになりました。これにより、アセットの系統と作成方法（生成 AI を使用して変更したかどうかなど）に関する情報が提供されます。
+Experience Manager Assets で、サポートされる画像形式のコンテンツ資格情報がサポートされるようになりました。この機能は、アセットの系列と作成方法に関する情報を提供します（GenAI を使用して変更されたかどうかなど）。
 
 ![コンテンツ資格情報](/help/assets/assets/content-credentials.png)
 
 **フォルダーのコンテンツの視覚的なプレビュー**
 
-Experience Manager Assets で、コンテンツを参照または検索する際に、フォルダーのサムネールにフォルダーのコンテンツの視覚的なプレビューが表示されるようになりました。これにより、AEM Assets リポジトリ内で使用可能なアセットの検出性が向上します。
+Experience Manager Assetsでは、コンテンツの参照時や検索時に、フォルダーのサムネールにフォルダーコンテンツの視覚的なプレビューが表示されるようになりました。これにより、AEM Assets リポジトリー内で使用可能なアセットを見つけやすくなります。
 
 <!--
 
@@ -93,7 +100,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### コアコンポーネントベースのアダプティブフォーム用のビジュアルルールエディターの強化
 
-アダプティブフォームの作成者は、コアコンポーネントのビジュアルルールエディターで使用できる標準機能で繰り返し可能なフォームフィールドを使用して、カスタマイズや開発チームの支援を必要とせずに、フォーム内に複雑なビジネスロジックを作成できます。
+アダプティブフォームの作成者は、繰り返し可能なフォームフィールドと、すぐに使用できるビジュアルルールエディターの機能を使用して、開発チームのカスタマイズやサポートを必要とせずに、フォーム内で複雑なビジネスロジックを作成できます。
 
 ### AEM Forms の早期アクセス機能 {#forms-new-early-access-features}
 
@@ -103,7 +110,7 @@ AEM Forms 早期アクセスプログラムでは、他のユーザーよりも�
 
 #### ユニバーサルエディターによるアダプティブフォームの作成
 
-Adobe Experience Manager [ユニバーサルエディター](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)を活用して、WYSIWYG ドラッグ＆ドロップオーサリングを使用してアダプティブフォームを作成し、ヘッドレス登録エクスペリエンスとヘッドフル登録エクスペリエンスの両方を Edge Delivery Service 経由で配信します。アダプティブフォームの作成者は、web ページ内のフォームのバリエーションに対する実験を簡単に作成して開始し、エンドユーザーにとって最もパフォーマンスの高いエクスペリエンスを決定できます。
+Adobe Experience Manager [ユニバーサルエディター](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)を活用して、WYSIWYG ドラッグ＆ドロップオーサリングを使用してアダプティブフォームを作成し、ヘッドレス登録エクスペリエンスとヘッドフル登録エクスペリエンスの両方を Edge Delivery Service 経由で配信します。アダプティブフォームの作成者は、web ページ内のフォームのバリエーションに対する実験を簡単に作成して開始できます。 この機能を使用すると、エンドユーザーにとって最もパフォーマンスの高いエクスペリエンスを決定できます。
 
 >[!IMPORTANT]
 >
@@ -113,22 +120,23 @@ Adobe Experience Manager [ユニバーサルエディター](https://experiencel
 
 ### セルフサービス API キーを使用した CDN のコンテンツのパージ {#purge-cdn}
 
-HTTP キャッシュ制御ヘッダーを使用した TTL の設定は、コンテンツ配信のパフォーマンスとコンテンツの鮮度のバランスを取る効果的なアプローチです。ただし、更新されたコンテンツを直ちに提供することが重要なシナリオでは、CDN キャッシュを直接パージすると有益な場合があります。
+HTTP キャッシュ制御ヘッダーを使用した TTL の設定は、コンテンツ配信のパフォーマンスとコンテンツの鮮度のバランスを取る効果的なアプローチです。ただし、更新されたコンテンツを直ちに提供することが重要なシナリオでは、CDN キャッシュを直接パージすると便利な場合があります。
 
-Cloud Manager 設定パイプラインを使用してセルフサービスでパージ API トークンを設定し、次のいずれかのバリエーションで[パージ API を呼び出す](/help/implementing/dispatcher/cdn-cache-purge.md)[方法について説明](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)します。
+Cloud Manager設定パイプラインを使用してパージ API トークンの設定をセルフサービスで行う [ 方法を説明します ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)。これにより、次のバリエーションのいずれかを使用して [ パージ API を呼び出す ](/help/implementing/dispatcher/cdn-cache-purge.md) ことができます。
+
 * 単一の URL
 * タグを使用した複数の URL
 * 完全な CDN キャッシュのパージ
 
 ### 顧客管理 CDN 用 X-AEM-Edge-Key のセルフサービス設定 {#customermanaged-keys}
 
-以前は、顧客管理 CDN の設定に必要な X-AEM-Edge-Key を生成するには、サポートチケットが必要でした。これにより、設定パイプラインを使用してデプロイされる設定ファイルでキー値を宣言することでセルフサービスになり、新しい環境のオンボーディングの遅延がなくなります。[詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)。
+以前は、顧客管理 CDN の設定に必要な X-AEM-Edge-Key を生成するには、サポートチケットが必要でした。このワークフローは、設定パイプラインを使用してデプロイされた設定ファイルでキーの値を宣言することで、セルフサービスになり、新しい環境のオンボーディングの遅延を取り除きます。 [詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)。
 
 ### トラフィックフィルタールールアラート {#traffic-filter-rules-alerts}
 
-トラフィックフィルタールールには、オプションでライセンス可能な web アプリケーションファイアウォール（WAF）ルールが含まれており、ブロックするトラフィックを設定できます。
+トラフィックフィルタールール（オプションでライセンス可能な web アプリケーションファイアウォール（WAF）ルールを含む）を使用すると、ブロックするトラフィックを設定できます。
 
-トラフィックフィルタールールがトリガーされるたびに、[アラートを購読](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts)できるようになりました。特定のトラフィック状況が発生するとアクションセンターのメール通知が送信されるので、適切な対策を講じることができます。
+トラフィックフィルタールールがトリガーされるたびに、[ アラートを登録 ](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) できるようになりました。 特定のトラフィック状況が発生するとアクションセンターのメール通知が送信されるので、適切な対策を講じることができます。
 
 ### コンテンツ配信関連の早期導入プログラム {#foundation-early-adopter}
 
