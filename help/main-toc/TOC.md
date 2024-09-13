@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: 34904bc7cd0f13d7f2bccb6f6e21057cb7eb9a4f
 workflow-type: tm+mt
-source-wordcount: '5615'
+source-wordcount: '5621'
 ht-degree: 97%
 
 ---
@@ -629,8 +629,8 @@ ht-degree: 97%
    + コンテンツハブ {#content-hub}
       + [概要](/help/assets/product-overview.md)
       + [コンテンツハブのデプロイ](/help/assets/deploy-content-hub.md)
-      + [コンテンツハブユーザーインターフェイスの設定](/help/assets/configure-content-hub-ui-options.md)
       + [コンテンツハブへのブランド承認済みアセットのアップロードまたは読み込み](/help/assets/upload-brand-approved-assets.md)
+      + [コンテンツハブユーザーインターフェイスの設定](/help/assets/configure-content-hub-ui-options.md)
       + [コンテンツハブ向けアセットの承認](/help/assets/approve-assets-content-hub.md)
       + [コンテンツハブでのアセットの検索](/help/assets/search-assets-content-hub.md)
       + [アセットのプロパティ](/help/assets/asset-properties-content-hub.md)
@@ -638,7 +638,8 @@ ht-degree: 97%
       + [コンテンツハブを使用したアセットのダウンロード](/help/assets/download-assets-content-hub.md)
       + [コンテンツハブでのコレクションの管理](/help/assets/collections-content-hub.md)
       + [Adobe Express を使用したコンテンツハブの画像の編集](/help/assets/edit-images-content-hub.md)
-      + [コンテンツハブのアセットインサイト](/help/assets/insights-content-hub.md)
+      + [Content Hubのアセットインサイト](/help/assets/insights-content-hub.md)
+      + [Content Hubに関するよくある質問 ](/help/assets/frequently-asked-questions-content-hub.md)
    + ベストプラクティス{#best-practices}
       + [検索のベストプラクティス](/help/assets/search-best-practices.md)
       + [メタデータの管理とベストプラクティス](/help/assets/metadata-best-practices.md)
