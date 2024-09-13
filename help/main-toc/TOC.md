@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 34904bc7cd0f13d7f2bccb6f6e21057cb7eb9a4f
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
-source-wordcount: '5621'
-ht-degree: 97%
+source-wordcount: '5638'
+ht-degree: 96%
 
 ---
 
@@ -1122,7 +1122,9 @@ ht-degree: 97%
       + [通知](/help/implementing/cloud-manager/notifications.md)
       + [高度なネットワーク機能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=ja)
       + Edge Delivery Sites {#edge-delivery-sites}
-         + [Cloud ManagerでのEdge Delivery サポート](/help/implementing/cloud-manager/edge-delivery-services.md)
+         + [Cloud ManagerのEdge Delivery Servicesの概要](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+         + [Cloud ManagerへのEdge Delivery サイトの追加](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+         + [Cloud ManagerでのEdge Delivery サイトの管理](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + ドメイン設定 {#custom-domain-names}
          + [ドメイン設定の概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [カスタムドメイン名を追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
@@ -1130,7 +1132,7 @@ ht-degree: 97%
          + [DNS レコードのステータスを確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + SSL 証明書 {#manage-ssl-certificates}
-         + [SSL 証明書の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         + [SSL 証明書の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
          + [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [SSL 証明書エラーのトラブルシューティング](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)

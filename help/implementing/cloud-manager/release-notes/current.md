@@ -4,7 +4,7 @@ description: AEM as a Cloud Service の Cloud Manager 2024.9.0 のリリース�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 610ae004b6da2f7fc0dae2baa613cb363fe9fb00
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 83%
@@ -39,7 +39,7 @@ AEM as a Cloud Service の Cloud Manager 2024.9.0 のリリース日は 2024年9
 
 * **Cloud Manager での Edge Delivery Services のサポート：**
 
-  AEM Sitesの一部としてEdge Delivery Services ライセンスをお持ちの場合 [Cloud Managerを通じて直接Edge Delivery Servicesでサイトをオンボーディングできるようになりました ](/help/implementing/cloud-manager/edge-delivery-services.md)。 この機能により、ガイド付きのセルフサービスの運用開始エクスペリエンスが可能になります。また、すべての AEM プロパティにわたってドメイン名の管理、SSL 証明書、CDN マッピングなどの基本的なワークフローを統合し、一貫性と効率性を確保します。<!-- CMGR-49859 -->
+  AEM Sitesの一部としてEdge Delivery Services ライセンスをお持ちの場合 [Cloud Managerを通じて直接Edge Delivery Servicesでサイトをオンボーディングできるようになりました ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。 この機能により、ガイド付きのセルフサービスの運用開始エクスペリエンスが可能になります。また、すべての AEM プロパティにわたってドメイン名の管理、SSL 証明書、CDN マッピングなどの基本的なワークフローを統合し、一貫性と効率性を確保します。<!-- CMGR-49859 -->
 
   >[!NOTE]
   >

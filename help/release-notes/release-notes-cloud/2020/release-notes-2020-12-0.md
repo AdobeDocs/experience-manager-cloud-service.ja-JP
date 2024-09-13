@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.12.0 リ�
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 50%
+source-wordcount: '657'
+ht-degree: 47%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 50%
 
 * [!DNL Dynamic Media] の機能に、AEM [!DNL Sites] 画像ベースのコアコンポーネントからアクセスできるようになりました。 作成者は、Web ページの作成時に画像プリセット、スマート切り抜き、画像修飾子を使用するように、コンポーネントをすばやく設定できます。[コアコンポーネント 2.13.0 リリース](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0)を参照してください。
 
-* [!DNL Experience Manager] デスクトップアプリケーションを使用すると、デスクトップアプリケーションインターフェイス上の Windows エクスプローラーまたはMac Finder からファイルをドラッグして、ファイルやフォルダーをアップロードできます。 [ デスクトップアプリケーションを使用したアセットの追加 ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#upload-and-add-new-assets-to-aem) を参照してください。
+* [!DNL Experience Manager] デスクトップアプリケーションを使用すると、デスクトップアプリケーションインターフェイス上の Windows エクスプローラーまたはMac Finder からファイルをドラッグして、ファイルやフォルダーをアップロードできます。 [ デスクトップアプリケーションを使用したアセットの追加 ](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem) を参照してください。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -49,7 +49,7 @@ Adobe Experience Manager（AEM as a Cloud Service）のCloud Manager 2020.12.0 �
 
 ### [!DNL Cloud Manager] の新機能 {#what-is-new-cm}
 
-* [SSL 証明書](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)と[カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/introduction.md)のセルフサービス管理。
+* [SSL 証明書 ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) のセルフサービス管理および [ カスタムドメイン名の概要 ](/help/implementing/cloud-manager/custom-domain-names/introduction.md)。
 
 * [IP 許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)のセルフサービス管理。
 
@@ -65,7 +65,7 @@ Adobe Experience Manager（AEM as a Cloud Service）のCloud Manager 2020.12.0 �
 
 ### [!DNL Code Refactoring Tools] の新機能  {#what-is-new-crt}
 
-* AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンは、AEM Dispatcher コンバーターと Repository Modernizer のバグ修正を含んでいるほか、新しいユーティリティであるインデックスコンバーターもサポートしています。 このプラグインの詳細については、[ 統合エクスペリエンス ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits) を参照してください。
+* AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンは、AEM Dispatcher コンバーターと Repository Modernizer のバグ修正を含んでいるほか、新しいユーティリティであるインデックスコンバーターもサポートしています。 このプラグインの詳細については、[ 統合エクスペリエンス ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) を参照してください。
 
 * インデックスコンバーターは、顧客のカスタム Oak インデックス定義をAEM as a Cloud Service互換のOak インデックス定義に変換するために使用できるユーティリティです。 詳しくは、[ インデックスコンバーター ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) を参照してください。
 
@@ -85,6 +85,6 @@ Adobe Experience Manager（AEM as a Cloud Service）のCloud Manager 2020.12.0 �
 
 ### バグ修正 {#ctt-bug-fixes}
 
-* 移行セットの CTT（Content Transfer Tool）ユーザーインターフェイスのステータスが持続せず、非アクティブな期間が続いたた後に変更されていました。この問題が修正されました。
-* ログが利用できない場合は、ログを表示するオプションは無効になっています。 この問題が修正され、ログが欠落している理由をユーザーに通知するメッセージングが追加されました。
-* ユーザーが取り込みを停止すると、コンテンツ転送ツールのユーザーインターフェイスのステータスが *失敗* と表示されました。 この問題は修正され、代わりに *STOPPED* が表示されるようになりました。
+* 移行セットの CTT（Content Transfer Tool）ユーザーインターフェイスのステータスが持続せず、非アクティブな期間が続いたた後に変更されていました。この問題は修正されました。
+* ログが利用できない場合は、ログを表示するオプションは無効になっています。 この問題が修正され、ログが見つからない理由をユーザーに通知するメッセージが追加されました。
+* ユーザーが取り込みを停止すると、コンテンツ転送ツールのユーザーインターフェイスのステータスが *失敗* と表示されました。 この問題は、代わりに *停止* と表示されるように修正されました。

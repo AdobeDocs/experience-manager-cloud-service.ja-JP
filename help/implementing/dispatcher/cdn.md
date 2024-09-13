@@ -4,10 +4,10 @@ description: AEM の管理による CDN を使用する方法と、独自の CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '1607'
-ht-degree: 63%
+source-wordcount: '1608'
+ht-degree: 62%
 
 ---
 
@@ -34,11 +34,10 @@ Edge Delivery Services層への公開を検討しているお客様は、Adobe�
 
 Cloud Manager セルフサービス UI を使用して、AEMの組み込み CDN を使用したコンテンツ配信の準備を行う場合は、Adobeが管理する CDN 機能を利用できます。 この機能を使用すると、DV （ドメイン検証）証明書や EV/OV （拡張/組織検証）証明書などの SSL 証明書の設定およびインストールなど、セルフサービス CDN 管理を処理できます。 これらの方法について詳しくは、次を参照してください。
 
-* [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-* [CDN 設定の追加 ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-* [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-* [Cloud Manager での Edge Delivery Services のサポート](/help/implementing/cloud-manager/edge-delivery-services.md)
-
+* [Cloud ManagerのEdge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+* [カスタムドメイン名の概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+* [SSL 証明書の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
+* [CDN 設定の追加](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
 
 **トラフィックの制限**
 
