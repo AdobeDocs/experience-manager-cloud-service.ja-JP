@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 6%
+source-wordcount: '356'
+ht-degree: 7%
 
 ---
 
@@ -40,11 +40,11 @@ Adobeが管理する CDN の場合、DV 証明書を使用する場合、ACME �
    | Sites | Edge Delivery サイトを選択します。 |
    | 環境 | AEM設定内でターゲットとする特定のCloud Service環境を選択します。<br> 「**層**」ドロップダウンリストで、次のいずれかを選択します。<br>・ コンテンツがエンドユーザーに配信される、ライブの実稼動環境をターゲットにするには、**Publish** を選択します。<br>・変更を運用開始前にテストするステージング環境または非実稼動環境の場合は、「**プレビュー**」を選択します。 |
 
-1. 次のいずれかを選択して、CDN タイプを選択します。
+1. 次のいずれかを選択して、CDN タイプおよび関連する設定を選択します。
 
-   | CDN タイプ | 説明 |
+   | CDN タイプ | 設定の詳細 |
    | --- | --- |
-   | アドビが管理する CDN | a. **ドメイン** ドロップダウンリストで、使用するドメイン名を選択します。<br> ドロップダウンリストに利用可能な検証済みドメインがありませんか？ [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。<br>b.「SSL 証明書」ドロップダウンリストで、使用する証明書を選択します。<br> ドロップダウンリストに SSL 証明書は表示されませんか？ [SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。 |
-   | その他の CDN プロバイダー。 | 使用可能なAdobe管理の CDN ではなく独自の CDN プロバイダーを使用している場合は、このオプションを選択します。<br> 「**ドメイン**」ドロップダウンリストで、使用するドメイン名を選択します。<br> ドロップダウンリストに使用可能な SSL 証明書がありませんか？ [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。 |
+   | アドビが管理する CDN | **設定の詳細** で、次の操作を行います。<br>a.**ドメイン** ドロップダウンリストで、使用するドメイン名を選択します。<br> ドロップダウンリストに利用可能な検証済みドメインがありませんか？ [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。<br>b.**SSL 証明書** ドロップダウンリストで、使用する証明書を選択します。<br> ドロップダウンリストに SSL 証明書は表示されませんか？ [SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。 |
+   | その他 CDN プロバイダー | 使用可能なAdobe管理の CDN ではなく独自の CDN プロバイダーを使用している場合は、このオプションを選択します。<br>**設定の詳細** の **ドメイン** ドロップダウンリストで、使用するドメイン名を選択します。<br> ドロップダウンリストに利用可能な検証済みドメインがありませんか？ [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。 |
 
 1. 「**保存**」をクリックします。
