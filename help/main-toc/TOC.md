@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
-source-wordcount: '5605'
+source-wordcount: '5615'
 ht-degree: 97%
 
 ---
@@ -1123,13 +1123,13 @@ ht-degree: 97%
       + Edge Delivery Sites {#edge-delivery-sites}
          + [Cloud ManagerでのEdge Delivery サポート](/help/implementing/cloud-manager/edge-delivery-services.md)
       + ドメイン設定 {#custom-domain-names}
-         + [はじめに](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         + [ドメイン設定の概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [カスタムドメイン名を追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [カスタムドメイン名ステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
          + [DNS レコードのステータスを確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + SSL 証明書 {#manage-ssl-certificates}
-         + [はじめに](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         + [SSL 証明書の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [SSL 証明書エラーのトラブルシューティング](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
@@ -1137,7 +1137,7 @@ ht-degree: 97%
          + [CDN 設定の追加](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
          + [CDN 設定の管理](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP 許可リスト {#ip-allow-lists}
-         + [はじめに](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+         + [IP 許可リストの概要](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [IP 許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
          + [IP許可リストの適用と適用解除](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [IP 許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)

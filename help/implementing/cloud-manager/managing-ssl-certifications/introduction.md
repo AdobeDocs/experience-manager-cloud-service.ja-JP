@@ -1,19 +1,19 @@
 ---
-title: SSL 証明書の管理の概要
+title: SSL 証明書の概要
 description: Cloud Manager が、SSL 証明書をインストールするセルフサービスツールを提供する方法について説明します。
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 41%
+source-wordcount: '765'
+ht-degree: 35%
 
 ---
 
 
-# SSL 証明書の管理の概要{#introduction}
+# SSL 証明書の概要{#introduction}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
@@ -37,7 +37,7 @@ Cloud Managerには、SSL （Secure Socket Layer）証明書をインストー�
 >DV （ドメイン検証）証明書をアップロードすることはできません。
 
 
-## 証明書の概要 {#certificates}
+## SSL 証明書の概要 {#certificates}
 
 企業や組織は、SSL 証明書を使用して web サイトを保護し、顧客の信頼を確保します。 SSL プロトコルを使用するには、web サーバーで SSL 証明書を使用する必要があります。
 
@@ -46,8 +46,6 @@ Cloud Managerには、SSL （Secure Socket Layer）証明書をインストー�
 >[!IMPORTANT]
 >
 >Cloud Manager からは、SSL 証明書や秘密鍵は提供されません。これらの情報は、証明機関（信頼できるサード パーティの組織）から取得する必要があります。 よく知られている証明機関には、*DigiCert*、*暗号化しましょう*、*GlobalSign*、*Entrust*、*Verisign* などがあります。
-
-## Cloud Manager SSL 管理機能 {#features}
 
 Cloud Manager では、次の顧客向け SSL 証明書の使用オプションをサポートしています。
 
@@ -58,14 +56,9 @@ Cloud Manager では、次の顧客向け SSL 証明書の使用オプション�
 * プラットフォーム TLS サービスは、終了に使用された SSL 証明書と、そのドメインをホストする CDN サービスに基づいて、リクエストを顧客の CDN サービスにルーティングします。
 * AEM as a Cloud Service は、ドメインのワイルドカード SSL 証明書を受け入れます。
 
-## レコメンデーション {#recommendations}
+AEM as a Cloud Service は、セキュリティで保護された `https` サイトのみをサポートしています。複数のカスタムドメインを持つ顧客の場合、ドメインを追加するたびに証明書をアップロードしたくはありません。 複数のドメインを持つ 1 つの証明書を取得することで、そのような顧客はメリットが得られます。
 
-AEM as a Cloud Service は、セキュリティで保護された `https` サイトのみをサポートしています。
-
-* 複数のカスタムドメインを持つ顧客の場合、ドメインを追加するたびに証明書をアップロードしたくはありません。
-* 複数のドメインを持つ 1 つの証明書を取得することで、そのような顧客はメリットが得られます。
-
-## 証明書の要件 {#requirements}
+## SSL 証明書の要件 {#requirements}
 
 * AEM as a Cloud Serviceは、OV （Organization Validation）、EV （Extended Validation）、DV （Domain Validation）ポリシーに準拠する証明書を受け付けます。<!-- CQDOC-21758, #2 -->
 * 証明書はすべて、2048 ビットの RSA 秘密鍵と一致する信頼できる認証局の X.509 TLS 証明書である必要があります。
@@ -73,7 +66,7 @@ AEM as a Cloud Service は、セキュリティで保護された `https` サイ
 
 OV 証明書と EV 証明書は、CA で検証された情報を提供します。 このような情報は、Web サイトの所有者、メールの送信者、コードやPDFドキュメントのデジタル署名者が信頼できるかどうかを評価するのに役立ちます。 DV 証明書では、このような所有権の検証は許可されません。
 
-### 顧客管理証明書の形式 {#certificate-format}
+### 顧客管理 SSL 証明書形式 {#certificate-format}
 
 <!-- CQDOC-21758, #3 -->
 
@@ -99,14 +92,11 @@ SSL 証明書ファイルを Cloud Manager にインストールするには、S
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
-## 制限事項 {#limitations}
+## インストールする SSL 証明書の数の制限 {#limitations}
 
 Cloud Managerでは、常に最大 50 個の SSL 証明書をインストールできます。 これらの証明書は、プログラム全体の 1 つ以上の環境に関連付けることができ、期限切れの証明書も含めることができます。
 
-上限に達した場合は、証明書を確認して、以下を検討します。
-
-* 期限切れの証明書を削除します。
-* 1 つの証明書が複数のドメイン（最大 100 個の SAN）をカバーする可能性があるので、同じ証明書内の複数のドメインをグループ化します。
+上限に達した場合は、証明書を確認し、期限切れの証明書を削除することを検討します。 または、1 つの証明書が複数のドメイン（最大 100 個の SAN）をカバーする可能性があるので、同じ証明書内の複数のドメインをグループ化します。
 
 ## 詳細情報 {#learn-more}
 

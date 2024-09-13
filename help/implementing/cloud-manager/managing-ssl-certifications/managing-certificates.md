@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 18%
+ht-degree: 14%
 
 ---
 
@@ -54,7 +54,7 @@ SSL 証明書のステータスは、「**SSL 証明書** ページから一目�
 
 ## 期限切れの顧客管理 SSL 証明書の置換 {#replace-ssl-certificate}
 
-[ 期限切れの SSL 証明書の更新 ](#update-ssl-certificate) で説明したのと同じ手順に従って、期限切れの顧客管理 SSL 証明書を置き換えます。
+[ 期限切れの SSL 証明書の更新 ](#update-ssl-certificate) と同じ手順に従って、期限切れの顧客管理 SSL 証明書を置き換えます。
 
 ## SSL 証明書の削除 {#deleting-an-ssl-certificate}
 
@@ -87,4 +87,4 @@ UI を使用して既存の環境設定をすべて移行すると、このメ�
 
 詳しくは、[SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。
 
-IP 許可リストまたはカスタムドメイン名に対応する既存の CDN 設定がある環境の **IP 許可リスト**&#x200B;ページと&#x200B;**環境**&#x200B;ページにも、同様のメッセージが表示されます。
+IP許可リストまたはカスタムドメイン名に対応する既存の CDN許可リストがある環境の **IP 設定** ページと **環境** ページにも、同様のメッセージが表示されます。
