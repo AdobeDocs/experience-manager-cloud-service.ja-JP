@@ -5,9 +5,9 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
 source-git-commit: 346f36a476a11dc7fe022df8b7b8df7aff06a2ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1678'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 99%
 
 [!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次のバグ修正が含まれています。
 
-* 既存のアセットの新しいバージョンをアップロードおよび作成する際に、MIME タイプが失われてしまう。
+* 既存のアセットの新しいバージョンをアップロードして作成する際に、MIME タイプが失われます。
 
 >[!NOTE]
 >
