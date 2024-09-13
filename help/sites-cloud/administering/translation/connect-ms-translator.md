@@ -5,33 +5,27 @@ feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 2314ad30ea31b49d832ce0fdf729420e0ee70e0c
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 100%
+source-wordcount: '293'
+ht-degree: 79%
 
 ---
 
 # Microsoft Translator への接続 {#connecting-to-microsoft-translator}
 
-AEM ページのコンテンツまたはアセットの翻訳に Microsoft Translation アカウントを使用するには、[Microsoft Translator](https://www.microsoft.com/ja-jp/translator/business/) クラウドサービスの設定を作成します。
+AEMには、ページのコンテンツまたはアセットを翻訳する ](https://www.microsoft.com/ja-jp/translator/business/)0}Microsoft Translator} 用の組み込みコネクタが用意されています。 [Microsoft Translator を使用するためのライセンスをMicrosoftから取得したら、このページの手順に従ってコネクタを設定してください。
 
 >[!TIP]
 >
->コンテンツの翻訳を初めて行う場合は、[AEM Sites 翻訳ジャーニー](/help/journey-sites/translation/overview.md)を参照してください。これは、AEM の強力な翻訳ツールを使用して AEM Sites コンテンツを翻訳する手順を示すガイドです。AEM や翻訳の経験がないユーザーに最適です。
+>コンテンツの翻訳を初めて行う場合は、[Sites 翻訳ジャーニー](/help/journey-sites/translation/overview.md)を参照してください。これは、AEM の強力な翻訳ツールを使用して AEM Sites コンテンツを翻訳する手順を示すガイドです。AEM や翻訳の経験がないユーザーに最適です。
 
->[!NOTE]
->
->AEM には、毎月最大 2,000,000 文字の無料翻訳を利用できる体験版の Microsoft Translation アカウントが用意されています。実稼動システムに適したアカウントサブスクリプションを取得するには、[Microsoft Translator 体験版ライセンス設定のアップグレード](#upgrading-the-microsoft-translator-trial-license-configuration)を参照してください。
-
-| Property | 説明 |
+| プロパティ | 説明 |
 |---|---|
 | 翻訳ラベル | 翻訳サービスの表示名 |
 | 翻訳の帰属 | （オプション）ユーザー生成コンテンツの場合に、翻訳済みのテキストの横に表示される帰属情報（例：`Translations by Microsoft`） |
 | ワークスペース ID | （オプション）使用するカスタム Microsoft Translator エンジンの ID |
 | サブスクリプションキー | Microsoft Translator の Microsoft サブスクリプションキー |
-
-設定を作成したら、その[設定をアクティベートする](#activating-the-translator-service-configurations)必要があります。
 
 Microsoft Translator 設定を作成するには、次の手順に従います。
 
@@ -48,31 +42,11 @@ Microsoft Translator 設定を作成するには、次の手順に従います�
 1. 「**作成**」をクリックします。
 1. **設定を編集**&#x200B;ウィンドウで、前述の表で説明した翻訳サービスの値を指定します。
 
-   ![翻訳設定の編集](../assets/edit-translation-config.png)
+   ![翻訳設定の編集](../assets/msft-config-ui.png)
 
 1. 「**接続**」を選択して接続を確認します。
 1. 「**保存して閉じる**」を選択します。
 
-## Microsoft Translator 体験版ライセンス設定のアップグレード {#upgrading-the-microsoft-translator-trial-license-configuration}
+## トランスレーターサービス設定の公開 {#publishing-the-translator-service-configurations}
 
-Microsoft Translation 設定ページには、実稼動システムに適したアカウントのサブスクリプションを取得する場合に役立つ、Microsoft web サイトへのリンクが表示されます。
-
-1. [ナビゲーションパネル](/help/sites-cloud/authoring/basic-handling.md#first-steps)で、**ツール**／**クラウドサービス**／**翻訳クラウドサービス**&#x200B;を選択します。
-1. 既存の Microsoft Translator 設定を選択します。
-1. 「**編集**」を選択します。
-1. 「**設定を編集**」ウィンドウで **サブスクリプションをアップグレード**&#x200B;を選択します。サービスの詳細を表示する Microsoft Web ページが開きます。
-
-## Microsoft Translator エンジンのカスタマイズ {#customizing-your-microsoft-translator-engine}
-
-Microsoft Translation 設定ページには、Microsoft Translator エンジンをカスタマイズする場合に役立つ、Microsoft Web サイトへのリンクが表示されます
-
-1. [ナビゲーションパネル](/help/sites-cloud/authoring/basic-handling.md#first-steps)で、**ツール**／**クラウドサービス**／**翻訳クラウドサービス**&#x200B;を選択します。
-1. 既存の Microsoft Translator 設定を選択します。
-1. 「**編集**」を選択します。
-1. 「**設定を編集**」ウィンドウで「**トランスレーターをカスタマイズ**」を選択します。表示された Microsoft の web ページを使用して、サービスをカスタマイズします。
-
-## Translator サービス設定のアクティベート {#activating-the-translator-service-configurations}
-
-パブリッシュインスタンスでレプリケートされる翻訳コンテンツをサポートするには、クラウドサービス設定をアクティベートする必要があります。[ツリーの公開](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-and-unpublishing-a-tree)方法を使用して、Microsoft Translator 設定を格納するリポジトリーノードをアクティベートします。このノードは以下に示す親ノードの下にあります。
-
-* `/libs/settings/cloudconfigs/translation/msft-translation`
+最後の手順として、「[ ツリーの公開 ](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-and-unpublishing-a-tree) アクションを使用して、Microsoft Translator 設定を公開し、公開済みの翻訳済みコンテンツをサポートしてください。
