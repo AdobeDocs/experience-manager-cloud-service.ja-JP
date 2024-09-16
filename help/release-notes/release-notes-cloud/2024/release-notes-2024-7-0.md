@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.7.0 ãƒªã
 feature: Release Information
 role: Admin
 exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
-source-git-commit: dc9dda65b2555b8d9065574497221a3e58971269
+source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
 workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 76%
