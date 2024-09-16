@@ -1,13 +1,13 @@
 ---
 title: 運用開始後
-description: 問題を監視し、パフォーマンスを向上させる方法を説明します
+description: 問題を監視し、パフォーマンスを向上させる方法を説明します。
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
+source-git-commit: bb2688701b80a560ea9078c2b7b6594ff55ce824
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 100%
+source-wordcount: '458'
+ht-degree: 77%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="AEM のトラブルシューティング"
->abstract="AEM に関する問題のトラブルシューティングに役立つ、開発者コンソールや CRXDE Lite などのツールと共に、継続的な開発とログの管理に関するベストプラクティスについて説明します。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=ja" text="ログへのアクセスと管理"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ja#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service の開発ツール"
+>abstract="ログの継続的な開発と管理に関するベストプラクティスを確認します。 AEMに関する問題のトラブルシューティングに役立つ、Developer ConsoleやCRXDE Liteなどのツールについて説明します。"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="ログへのアクセスと管理"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service の開発ツール"
 
-このジャーニーは最後の部分です。移行が完了した後で、イシューを監視してパフォーマンスを向上させる方法を確認します。一時ファイルを確実にクリーンアップし、継続的な開発のベストプラクティスを確認し、ログを管理する必要があります。
+このジャーニーは最後の部分です。移行が完了したら、問題を監視してパフォーマンスを向上させる方法について説明します。 一時ファイルのクリーンアップ、継続的な開発のベストプラクティスの確認、ログの管理を行います。
 
 ## これまでの説明内容 {#story-so-far}
 
@@ -42,10 +42,10 @@ AEM as a Cloud Service 開発者環境でのデバッグは、開発環境、ス
 
 ## CRXDE Lite {#crxde-lite}
 
-ユーザーは開発環境では CRXDE Lite にアクセスできますが、ステージング環境や実稼動環境ではアクセスできません。
+ユーザーは開発環境ではCRXDE Liteにアクセスできますが、ステージング環境や実稼動環境ではアクセスできません。
 
 >[!IMPORTANT]
->実行時に `/libs` や `/apps` などの不変リポジトリに書き込むと、エラーが発生します。ユーザーは、ステージング環境と実稼動環境用の開発者ツールにもアクセスできません。
+>実行時に `/libs` や `/apps` などの不変リポジトリーに書き込むと、エラーが発生します。 ユーザーは、ステージング環境と実稼動環境用の開発者ツールにもアクセスできません。
 
 CRXDE Lite を使用して AEM アプリケーションを開発する方法について詳しくは、[CRXDE Lite による開発](/help/implementing/developing/tools/crxde.md)を参照してください。
 
