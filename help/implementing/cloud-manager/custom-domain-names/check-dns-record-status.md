@@ -7,8 +7,8 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 39%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ Cloud Managerを使用して DNS レコードのステータスを確認する�
 
 1. そのドメイン名の&#x200B;**ステータス**&#x200B;アイコンをクリックします。
 
-Cloud Managerはドメイン名に対して DNS 検索を実行し、それを表示します [ 現在のステータス ](#statuses)。
+Cloud Manager は、ドメイン名に対して DNS ルックアップを実行し、[現在のステータス](#statuses)を表示します。
 
 カスタムドメイン名が最初に正常に検証およびデプロイされると、Cloud Managerによって DNS 参照が自動的にトリガーされます。 それ以降の試行では、ステータスの横にある「**もう一度解決する**」アイコンをアクティブに選択する必要があります。
 

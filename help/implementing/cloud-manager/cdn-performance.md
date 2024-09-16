@@ -7,8 +7,8 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 76%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

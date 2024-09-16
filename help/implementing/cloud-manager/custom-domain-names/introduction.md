@@ -7,8 +7,8 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 67%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -40,28 +40,28 @@ Adobe Experience Manager as a Cloud Service には、`*.adobeaemcloud.com` で�
 
 AEM as a Cloud Serviceには組み込みの CDN （コンテンツ配信ネットワーク）サービスが用意されていますが、AEMで使用する BYO （Bring Your Own） CDN も利用できます。 カスタムドメインは、AEM が管理する CDN か、自分が管理している CDN のいずれかにインストールできます。
 
-* Cloud Managerは、AEMの管理による CDN にインストールされたカスタムドメイン名と証明書を管理します。
+* Cloud Manager は、AEM が管理する CDN にインストールされたカスタムドメイン名と証明書を管理します。
 * BYO CDN にインストールされるカスタムドメイン名と証明書は、その CDN 内で直接管理されます。
 
-**独自の CDN で管理されるドメインには、Cloud Manager経由でのインストールは必要ありません** - X-Forwarded-Host を介してAEMで使用できるようになり、Dispatcherで定義される vhost と一致します。 詳しくは、[CDN ドキュメント](/help/implementing/dispatcher/cdn.md)を参照してください。
+**独自の CDN で管理されるドメインは、Cloud Manager 経由でのインストールは必要ありません** - X-Forwarded-Host を介して AEM で使用可能になり、Dispatcher で定義された vhosts と一致します。詳しくは、[CDN ドキュメント](/help/implementing/dispatcher/cdn.md)を参照してください。
 
-1 つの環境で、AEMが管理する CDN にインストールされたドメインと、BYO CDN にインストールされたドメインの両方を持つことができます。
+1 つの環境で、AEM が管理する CDN にインストールされたドメインと、BYO CDN にインストールされたドメインの両方を持つことができます。
 
 ## ワークフロー {#workflow}
 
-カスタムドメイン名を追加するには、DNS サービスと Cloud Manager 間のやり取りが必要です。このワークフローのため、カスタムドメイン名のインストール、設定および検証には、いくつかの手順が必要です。 次の表に、必要な手順の概要と、これらの手順を完了するためのドキュメントリソースへのリンクを示します。
+カスタムドメイン名を追加するには、DNS サービスと Cloud Manager 間のやり取りが必要です。このワークフローでは、カスタムドメイン名のインストール、設定、および検証には、いくつかの手順が必要です。次の表に、必要な手順の概要と、これらの手順を完了するためのドキュメントリソースへのリンクを示します。
 
-| 手順 | 説明 | ドキュメント化 |
+| ステップ | 説明 | ドキュメント化 |
 | --- | --- | --- |
-| 1 | Cloud Manager への SSL 証明書の追加 | [SSL 証明書を追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
-| 2 | Cloud Manager へのカスタムドメインの追加 | [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 3 | AEM as a Cloud Service を指す DNS CNAME または APEX レコードを追加して、DNS 設定を構成します | [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 4 | ドメイン検証ステータスの確認 | [ ドメイン名のステータスの確認 ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | DNS レコードのステータスを確認 | [DNS レコードのステータスの確認 ](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+| 1 | Cloud Manager への SSL 証明書の追加 | [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 2 | Cloud Manager へのカスタムドメインの追加 | [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
+| 3 | AEM as a Cloud Service を指す DNS CNAME または APEX レコードを追加して、DNS 設定を構成します | [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
+| 4 | ドメイン検証ステータスの確認 | [ドメイン名ステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 5 | DNS レコードのステータスを確認 | [DNS レコードのステータスを確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >
->通常、AEM as a Cloud Service でのカスタムドメイン名の設定手順は簡単です。 ただし、場合によっては、ドメインのデリゲーションに関する問題が発生し、解決に 1～2 営業日かかる場合があります。 そのため、運用開始日の前にドメインを適切にインストールしておくことを強くお勧めします。 詳しくは、[ ドメイン名のステータスの確認 ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) ドキュメントを参照してください。
+>通常、AEM as a Cloud Service でのカスタムドメイン名の設定手順は簡単です。ただし、ドメインのデリゲーションに関する問題が発生した場合は、解決に 1～2 営業日かかる可能性があります。このため、運用開始日より早い時期にドメインをインストールすることを強くお勧めします。詳しくは、[ドメイン名ステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)のドキュメントを参照してください。
 
 ## 制限事項 {#limitations}
 
@@ -78,5 +78,5 @@ AEMaaCS でカスタムドメイン名を使用する場合は、いくつかの
 
 ## 今すぐ始める {#get-started}
 
-* [SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を行って、プロジェクトの新しいカスタムドメイン名の設定を開始します。
-* [ カスタムドメイン名の管理 ](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) ドキュメントを確認して、既存のドメイン名を管理します。
+* プロジェクトに新しいカスタムドメイン名の設定を開始するには、[SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)を参照してください。
+* 既存のドメイン名を管理するには、[カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)ドキュメントを参照してください。

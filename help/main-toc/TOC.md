@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '5638'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -106,7 +106,7 @@ ht-degree: 96%
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024年度 {#2024}
-         + [リリースノート（2024.8.0）](/help/implementing/cloud-manager/release-notes/2024/2024-8-0.md)
+         + [2024.8.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-8-0.md)
          + [2024.7.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-7-0.md)
          + [リリースノート（2024.6.0）](/help/implementing/cloud-manager/release-notes/2024/2024-6-0.md)
          + [2024.5.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
@@ -170,7 +170,7 @@ ht-degree: 96%
       + 2024年度 {#2024}
          + [2024.01.0 のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-2024-01-0.md)
          + [2024.05.0 のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-2024-05-0.md)
-         + [リリースノート（2024.07.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2024-07-0.md)
+         + [2024.07.0 のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-2024-07-0.md)
       + 2023年度 {#2023}
          + [2023.10.0 のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-2023-10-0.md)
          + [リリースノート（2023.9.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2023-09-0.md)
@@ -459,13 +459,13 @@ ht-degree: 96%
    + [アセットマイクロサービスの概要](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets] でのアクセシビリティ](/help/assets/accessibility.md)
    + デジタルアセットの管理 {#manage}
-      + マイクロフロントエンドアセットセレクター {#asset-selector}
+      + マイクロフロントエンドのアセットセレクター{#asset-selector}
          + [アセットセレクターの概要](/help/assets/overview-asset-selector.md)
-         + アセットセレクターの統合 {#asset-selector-integration}
+         + アセットセレクターの統合{#asset-selector-integration}
             + [アセットセレクターの統合の概要](/help/assets/integrate-asset-selector.md)
-            + [アセットセレクターとAdobeアプリケーションの統合](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [アセットセレクターとアドビアプリケーションの統合](/help/assets/integrate-asset-selector-adobe-app.md)
             + [アセットセレクターとアドビ以外のアプリケーションの統合](/help/assets/integrate-asset-selector-non-adobe-app.md)
-            + [Dynamic Media用アセットセレクターと OpenAPI 機能の統合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+            + [OpenAPI 機能を備えた Dynamic Media へのアセットセレクターの統合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
          + [アセットセレクターのプロパティ](/help/assets/asset-selector-properties.md)
          + [アセットセレクターの例](/help/assets/asset-selector-examples.md)
          + [アセットセレクターのカスタマイズ](/help/assets/asset-selector-customization.md)
@@ -476,7 +476,7 @@ ht-degree: 96%
       + [アクティビティと DAM タスクの監視](/help/assets/assets-activity-history.md)
       + [アセットマイクロサービスの基本](/help/assets/asset-microservices-configure-and-use.md)
       + [アセットの追加とアップロード](/help/assets/add-assets.md)
-      + [アセットの検索](/help/assets/search-assets.md)
+      + [アセットを検索](/help/assets/search-assets.md)
       + [一般的なアセット管理タスク](/help/assets/manage-digital-assets.md)
       + [公開を管理](/help/assets/manage-publication.md)
       + [3D アセットのプレビュー](/help/assets/dynamic-media/previewing-3d-assets.md)
@@ -494,7 +494,7 @@ ht-degree: 96%
       + [メタデータスキーマ](/help/assets/metadata-schemas.md)
       + [ビデオアセットの管理](/help/assets/manage-video-assets.md)
       + [MSM を使用したアセットの再利用](/help/assets/reuse-assets-using-msm.md)
-      + [アセットのダウンロード](/help/assets/download-assets-from-aem.md)
+      + [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
       + [編集するアセットのチェックアウトとチェックイン](/help/assets/check-out-and-submit-assets.md)
       + [プライベートフォルダーの作成と共有](/help/assets/private-folder.md)
       + [アセットのデジタル著作権管理](/help/assets/drm.md)
@@ -545,7 +545,7 @@ ht-degree: 96%
          + [Dynamic Media のベストプラクティス](/help/assets/dynamic-media/dm-best-practices.md)
       + [Experience League 提供の Dynamic Media ニュースレターアーカイブ](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Dynamic Media をセットアップする](/help/assets/dynamic-media/administering-dynamic-media.md)
-      + [Dynamic Media を使用する](/help/assets/dynamic-media/dynamic-media.md)
+      + [Dynamic Media の操作](/help/assets/dynamic-media/dynamic-media.md)
       + [Dynamic Media を構成する](/help/assets/dynamic-media/config-dm.md)
       + [オプション - Dynamic Media の設定、一般設定](/help/assets/dynamic-media/dm-general-settings.md)
       + [オプション - Dynamic Media の設定、公開設定](/help/assets/dynamic-media/dm-publish-settings.md)
@@ -1092,7 +1092,7 @@ ht-degree: 96%
          + [プライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [リポジトリーへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git サブモジュールのサポート](/help/implementing/cloud-manager/managing-code/git-submodules.md)
-         + [Cloud Managerでの Git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [Cloud Manager での Git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [複数のリポジトリーの使用](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [エンタープライズ開発チームのセットアップ](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
          + [GitHub チェック設定](/help/implementing/cloud-manager/managing-code/github-check-config.md)
@@ -1121,13 +1121,13 @@ ht-degree: 96%
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
       + [高度なネットワーク機能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=ja)
-      + Edge Delivery Sites {#edge-delivery-sites}
+      + Edge Delivery サイト {#edge-delivery-sites}
          + [Cloud ManagerのEdge Delivery Servicesの概要](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Cloud ManagerへのEdge Delivery サイトの追加](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [Cloud ManagerでのEdge Delivery サイトの管理](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + ドメイン設定 {#custom-domain-names}
          + [ドメイン設定の概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-         + [カスタムドメイン名を追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+         + [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [カスタムドメイン名ステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
          + [DNS レコードのステータスを確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)

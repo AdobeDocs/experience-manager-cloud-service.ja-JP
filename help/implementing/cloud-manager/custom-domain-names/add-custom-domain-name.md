@@ -1,5 +1,5 @@
 ---
-title: カスタムドメイン名を追加
+title: カスタムドメイン名の追加
 description: Cloud Manager を使用してカスタムドメイン名を追加する方法を説明します。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
@@ -7,23 +7,23 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 33%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# カスタムドメイン名を追加 {#adding-cdn}
+# カスタムドメイン名の追加 {#adding-cdn}
 
 Cloud Manager を使用してカスタムドメイン名を追加する方法を説明します。
 
 ## 要件 {#requirements}
 
-Cloud Managerでカスタムドメイン名を追加する前に、次の要件を満たします。
+Cloud Manager でカスタムドメイン名を追加する前に、次の要件を満たす必要があります。
 
 * [SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) のドキュメントで説明されているように、カスタムドメイン名を追加する前に、追加するドメインのドメイン SSL 証明書を追加する必要があります。
 * Cloud Manager でカスタムドメイン名を追加するには、**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割が必要です。
-* Fastly CDN を使用している。
+* Fastly CDN を使用している必要があります。
 
 >[!IMPORTANT]
 >
@@ -36,11 +36,11 @@ Cloud Manager では、次の 2 つの場所からカスタムドメイン名を
 * [ドメイン設定ページから](#adding-cdn-settings)
 * [環境ページから](#adding-cdn-environments)
 
-カスタムドメイン名を追加する場合、ドメインは最も具体的で有効な証明書を使用して提供されます。 複数の証明書が同じドメインを持つ場合は、直近に更新されたものが選択されます。重複するドメインがないように証明書を管理することをお勧めします。
+カスタムドメイン名を追加する場合、最も具体的で有効な証明書を使用してドメインが提供されます。複数の証明書が同じドメインを持つ場合は、直近に更新されたものが選択されます。重複するドメインがないように証明書を管理することをお勧めします。
 
-このドキュメントで説明するどちらの方法でも、手順は Fastly に基づいています。 別の CDN を使用していた場合は、使用するように選択した CDN でドメインを設定します。
+このドキュメントで説明するどちらの方法でも、手順は Fastly に基づいています。 別の CDN を使用した場合は、使用するように選択した CDN をドメインに設定します。
 
-## ドメイン設定ページからカスタムドメイン名を追加します {#adding-cdn-settings}
+## ドメイン設定ページからのカスタムドメイン名の追加 {#adding-cdn-settings}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
@@ -103,7 +103,7 @@ DNS レコードを設定する前に、次の要件を満たします。
 
 * ドメインホストまたは登録機関がわからない場合は、確認する。
 * 組織のドメインの DNS レコードを編集する、または適切な担当者に連絡できる。
-* [ ドメイン名ステータスの確認 ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) ドキュメントに記載されているように、設定されたカスタムドメイン名は既に検証されている必要があります。
+* [ドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)ドキュメントの説明に従って、設定済みのカスタムドメイン名の検証をすでに済ませている必要があります。
 
 #### CNAME レコード {#cname-record}
 
@@ -210,7 +210,7 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
 
 ## 環境ページからのカスタムドメイン名の追加 {#adding-cdn-environments}
 
-**環境** ページからカスタムドメイン名を追加する手順は、[ ドメイン設定ページからカスタムドメイン名を追加する ](#adding-cdn-settings) 場合と同じですが、エントリポイントが異なります。 **環境**&#x200B;ページからカスタムドメイン名を追加するには、次の手順に従います。
+**環境**&#x200B;ページからカスタムドメイン名を追加する手順は、[ドメイン設定ページからカスタムドメイン名を追加](#adding-cdn-settings)する場合と同じですが、エントリポイントが異なります。**環境**&#x200B;ページからカスタムドメイン名を追加するには、次の手順に従います。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
@@ -224,6 +224,6 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
    1. この名前に関連付けられている SSL 証明書をドロップダウンリストから選択します。
    1. 「**+追加**」をクリックします。
 
-   ![ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
+   ![カスタムドメイン名の追加](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
-1. **ドメイン名を追加** ダイアログボックスが開き、「**ドメイン名**」タブが表示されます。 [ ドメイン設定ページからのカスタムドメイン名の追加 ](#adding-cdn-settings) の場合と同様に続行します。—>
+1. **ドメイン名を追加**&#x200B;ダイアログボックスが開き、「**ドメイン名**」タブが表示されます。[ ドメイン設定ページからのカスタムドメイン名の追加 ](#adding-cdn-settings) の場合と同様に続行します。—>

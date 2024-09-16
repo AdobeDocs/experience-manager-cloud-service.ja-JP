@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 3ff7b76f7892269f6ca001ff2c079bc693c06d93
 workflow-type: tm+mt
 source-wordcount: '822'
-ht-degree: 40%
+ht-degree: 41%
 
 ---
 
@@ -91,7 +91,7 @@ Fastly は、ドメインをまず登録したアカウントにロックしま�
 
 カスタムドメイン名の CDN 設定が既にある場合は、「**カスタムドメイン名**」ページと「**環境**」ページに情報メッセージが表示されます。 Cloud Manager内で管理および表示できるように、UI を通じてこれらの設定を追加することをお勧めします。
 
-UI を使用して既存の環境設定をすべて移行すると、このメッセージは表示されなくなります。 メッセージが表示されなくなるまでに 1～2 営業日かかる場合があります。
+UI を使用して既存の環境設定をすべて移行すると、このメッセージは表示されなくなります。メッセージが表示されなくなるまでに 1～2 営業日かかる場合があります。
 
 詳しくは [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。
 
