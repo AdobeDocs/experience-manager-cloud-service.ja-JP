@@ -7,9 +7,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: cfaa3be31195929b80310610120a779a20537c61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1402'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -152,13 +152,13 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
    * **Git ブランチ** - このオプションは、選択したパイプラインのどのブランチからコードを取得するかを定義します。
       * ブランチ名の最初の数文字と、このフィールドのオートコンプリート機能を入力します。これにより、選択可能な一致するブランチが検索されます。
    * **コードの場所** - このオプションは、パイプラインがコードを取得する必要がある、選択したリポジトリーのブランチ内のパスを定義します。
-   * **パイプライン** – 実稼動以外のフロントエンドのパイプラインの場合は、**[エクスペリエンス監査](/help/implementing/cloud-manager/experience-audit-dashboard.md)** を有効にするオプションがあります。
+   * **パイプライン** - フロントエンドの実稼動以外のパイプラインの場合、**[エクスペリエンス監査](/help/implementing/cloud-manager/experience-audit-dashboard.md)**&#x200B;を有効にするオプションがあります。
 
    ![設定パイプライン](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
 1. エクスペリエンス監査を有効にした場合は、「**続行**」をタップまたはクリックして「**エクスペリエンス監査**」タブに進みます。ここでは、エクスペリエンス監査に常に含めるパスを定義できます。
 
-   * **エクスペリエンス監査** を有効にした場合、設定方法について詳しくは、ドキュメント [ エクスペリエンス監査 ](/help/implementing/cloud-manager/experience-audit-dashboard.md) を参照してください。
+   * 「**エクスペリエンス監査**」を有効にした場合、設定方法について詳しくは、[エクスペリエンス監査](/help/implementing/cloud-manager/experience-audit-dashboard.md)のドキュメントを参照してください。
    * 有効にしていない場合は、この手順をスキップします。
 
 1. 「**保存**」をタップまたはクリックして、パイプラインを保存します。

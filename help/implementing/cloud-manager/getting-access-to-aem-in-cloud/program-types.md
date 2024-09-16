@@ -1,26 +1,26 @@
 ---
-title: プログラムとプログラムタイプについて
+title: プログラムとプログラムタイプ
 description: Cloud Manager の階層、その構造に様々な種類のプログラムが収まる仕組み、それらのプログラムの違いなどについて説明します。
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '521'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
-# プログラムとプログラムタイプについて {#understanding-programs}
+# プログラムとプログラムタイプ {#understanding-programs}
 
 Cloud Manager は、エンティティ階層を軸に構築されています。その詳細は、Cloud Manager での日常業務にとって重要ではありませんが、概要はプログラムを理解し独自のプログラムをセットアップするうえで役に立ちます。
 
 ![Cloud Manager の階層](assets/program-types1.png)
 
 * **テナント** - これは階層の最上位です。すべての顧客にテナントがプロビジョニングされます。
-* **プログラム** – 各テナントには 1 つ以上のプログラムがあります [ 多くの場合、顧客がライセンスを取得したソリューションが反映されています ](introduction-production-programs.md)。
+* **プログラム** - 各テナントには 1 つ以上のプログラムがあります。[これらは、多くの場合、顧客がライセンスを取得したソリューションを反映しています](introduction-production-programs.md)。
 * **環境** - 各プログラムには複数の環境があります。ライブコンテンツ用の実稼働環境、ステージングの環境、開発目的の環境などです。
    * 各プログラムでは、実稼動環境は 1 つだけですが、実稼働以外の環境は複数存在できます。
 * **リポジトリ** - プログラムには Git リポジトリがあり、そこで環境のアプリケーションとフロントエンドコードが維持管理されています。
@@ -61,6 +61,6 @@ $ git clone {URL}
 * **実稼動プログラム**&#x200B;は、サイトのライブトラフィックを有効にするために作成されます。
    * 詳しくは、[実稼動プログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)を参照してください。
 * **サンドボックスプログラム**&#x200B;は、通常、トレーニング、デモの実行、イネーブルメント、POC またはドキュメントの目的にかなうように作成されます。
-   * サンドボックス環境はライブトラフィックを実行するためのものではなく、実稼動プログラムにはない制限があります。
-   * Sites、Assets、Edge Delivery Servicesが含まれており、サンプルコード、開発環境および実稼動以外のパイプラインを含んだ Git ブランチが自動入力されて提供されます。
+   * サンドボックス環境はライブトラフィックを実行するためのものではなく、実稼動プログラムにはない制限事項があります。
+   * Sites、Assets、Edge Delivery Services が含まれており、サンプルコード、開発環境および実稼動以外のパイプラインを含む Git ブランチが自動入力されて提供されます。
    * 詳しくは、[サンドボックスプログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)を参照してください。

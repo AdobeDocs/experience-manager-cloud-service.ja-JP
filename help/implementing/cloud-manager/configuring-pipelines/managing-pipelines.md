@@ -7,9 +7,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1110'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -50,13 +50,13 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 1. ここでは、プログラムのすべてのパイプラインのリストを確認できるほか、**パイプラインカード**&#x200B;の場合と同様にパイプラインの実行を開始および停止することができます。
 
-パイプラインが実行中の場合、「ステータス **列の情報アイコンをクリックすると** 実行に関する詳細が表示されます。
+パイプラインが実行中の場合、**ステータス**&#x200B;列の情報アイコンをクリックすると、実行に関する詳細が表示されます。
 
 ![パイプライン実行の詳細](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
 「**詳細を表示**」をクリックすると、[パイプライン実行の詳細](#view-details)が表示されます。
 
-また、パイプラインの省略記号ボタンをクリックして、パイプラインの状態に適した追加のアクション（[ 編集 ](#editing-pipelines) 実行のキャンセル [ を実行 ](#cancel) することもできます。
+また、パイプラインの省略記号ボタンをクリックして、パイプラインの[編集](#editing-pipelines)や[実行のキャンセル](#cancel)など、パイプラインの状態に応じた追加のアクションを実行することもできます。
 
 ![パイプラインアクション](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
@@ -70,13 +70,13 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 1. ここでは、現在および過去の実行を含む、プログラムのすべてのパイプライン実行のリストを確認できます。
 
-パイプラインが実行中の場合、「**ステータス** 列の情報アイコンをクリックすると、実行の詳細が表示されます。
+パイプラインが実行中の場合、**ステータス**&#x200B;列の情報アイコンをクリックすると、実行に関する詳細が表示されます。
 
 ![パイプライン実行の詳細](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-パイプライン実行を表す行をタップまたはクリックすると、[ パイプライン実行の詳細 ](#view-details) に移動します。
+パイプライン実行を表す行をタップまたはクリックすると、[パイプライン実行の詳細](#view-details)が表示されます。
 
-また、「。..」ボタンをクリックして、詳細の表示やログのダウンロードなど、パイプラインの実行に関する詳細アクションを実行すると、[ パイプラインの詳細ページ ](#view-details) に移動できます。
+また、省略記号ボタンをクリックして、詳細の表示やログのダウンロードなど、パイプライン実行に関するさらなるアクションを実行することもできます。これにより、[パイプラインの詳細ページ](#view-details)が表示されます。
 
 ![パイプライン実行アクション](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-execution-actions.png)
 

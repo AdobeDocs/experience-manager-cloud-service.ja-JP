@@ -7,9 +7,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1482'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ Cloud Manager で使用できるパイプラインとその用途を次の表に
 * パイプラインを設定または実行するには、ユーザーが&#x200B;**デプロイメントマネージャー**&#x200B;の役割でログインしている必要があります。
 * フルスタックパイプラインは、常に 1 つの環境に 1 つしか存在できません。
 
-さらに、[web 階層設定パイプライン ](#web-tier-config-pipelines) の導入を選択した場合に、フルスタックパイプラインがどのように動作するかを認識しておいてください。
+さらに、[web 階層設定パイプライン](#web-tier-config-pipelines)の導入を選択した場合は、フルスタックパイプラインがどのように動作するかを認識しておいてください。
 
 * 環境のフルスタックパイプラインは、対応する web 階層設定パイプラインが存在する場合、Dispatcher 設定を無視します。
 * 環境に対応する web 階層設定パイプラインが存在しない場合、ユーザーは、Dispatcher 設定を含めるまたは無視するようにフルスタックパイプラインを設定できます。

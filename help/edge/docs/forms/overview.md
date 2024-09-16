@@ -1,20 +1,20 @@
 ---
-title: AEM Forms Edge Delivery Servicesの概要
-description: AEM FormsのEdge Delivery Services
+title: AEM Forms の Edge Delivery Services の概要
+description: AEM Forms の Edge Delivery Services
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1037'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-# AEM FormsのEdge Delivery Services
+# AEM Forms の Edge Delivery Services
 
 
-AEM FormsのEdge Delivery Servicesは、作成者が新しいフォームを迅速に更新、公開、ローンチできる迅速な開発環境を可能にする、構成可能なサービスセットです。 これらのサービスは、エンゲージメントとコンバージョンを促進する、優れた効果の高いフォームエクスペリエンスを提供します。これらのフォームエクスペリエンスは、簡単に作成および開発できます。
+AEM Forms の Edge Delivery Services は、作成者が新しいフォームを迅速に更新、公開、起動できる高速開発環境を可能にする、構成可能な一連のサービスです。これらのサービスは、エンゲージメントとコンバージョンを促進する、優れた効果の高いフォームエクスペリエンスを提供します。これらのフォームエクスペリエンスは、簡単に作成および開発できます。
 
 これらのサービスにより、次のことが可能になります。
 
@@ -22,13 +22,13 @@ AEM FormsのEdge Delivery Servicesは、作成者が新しいフォームを迅�
 
 * **優れたデジタル登録エクスペリエンスを提供：**&#x200B;迅速な読み込みとレンダリングを行うデジタル登録エクスペリエンスを提供し、実際の使用のモニタリング（RUM）を通じてフォームのパフォーマンスを継続的に監視します。読み込み時間の短縮とユーザーエクスペリエンスの最適化により、フォームの完成率とコンバージョン率が向上します。
 
-* **開発者向けツールセットの使用：AEM Formsの**Edge Delivery Services
-では、プレーンなHTML、最新の CSS、vanilla JavaScriptを使用して、特別なエクスペリエンスを作成し、特定のフレームワークの急な学習曲線を避けます。 基本的な web 開発スキルを持つ開発者は、フォームコンポーネントとエクスペリエンスをカスタマイズして簡単に作成できます。パイプラインの実行を待機する必要はありません。コードを GitHub にチェックインするだけで、変更が公開されます。
+* **開発者にわかりやすいツールセットを使用：**AEM Forms の Edge Delivery Services は、
+プレーン HTML、最新の CSS、Vanilla JavaScript を使用して優れたエクスペリエンスを作成し、特定のフレームワークの急な学習曲線を回避します。基本的な web 開発スキルを持つ開発者は、フォームコンポーネントとエクスペリエンスをカスタマイズして簡単に作成できます。パイプラインの実行を待機する必要はありません。コードを GitHub にチェックインするだけで、変更が公開されます。
 
-## AEM Forms Edge Delivery Servicesの概要 {#edge-overview}
+## AEM Forms の Edge Delivery Services の概要 {#edge-overview}
 
-AEM FormsのEdge Delivery Servicesを使用すると、web サイト上でのフォームの作成方法を高い柔軟性で柔軟に作成できます。 [WYSIWYG オーサリング](/help/forms/creating-adaptive-form-core-components.md)と[ドキュメントベースのオーサリング](/help/edge/docs/forms/create-forms.md)を使用すると、コンテンツとフォームを作成できます。AEM FormsのEdge Delivery Services
-Edge Delivery Servicesサイトにフォームを追加するための [ アダプティブ Forms ブロック ](/help/edge/docs/forms/create-forms.md) と呼ばれるフォームブロックを提供します。
+AEM Forms の Edge Delivery Services を使用すると、web サイト上でフォームを作成する際の柔軟性を高めることができます。[WYSIWYG オーサリング](/help/forms/creating-adaptive-form-core-components.md)と[ドキュメントベースのオーサリング](/help/edge/docs/forms/create-forms.md)を使用すると、コンテンツとフォームを作成できます。AEM Forms の Edge Delivery Services は、
+[アダプティブフォームブロック](/help/edge/docs/forms/create-forms.md)と呼ばれるフォームブロックを提供し、Edge Delivery Services サイトにフォームを追加します。
 
 例えば、Microsoft Excel または Google Sheets で直接フォームを作成すると、これらのスプレッドシートが web サイト用のフォームに変換されます。新しいフォームやフォームコンテンツ（新しいフォームフィールドなど）は、再作成プロセスを必要とせずに web サイト上で即座に使用できます。
 
@@ -36,7 +36,7 @@ Microsoft Excel または Google Sheets（ドキュメントベースのオー�
 
 ![Edge Delivery Services と AEM に公開](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
-AEM FormsのEdge Delivery Servicesでは GitHub を使用しているので、お客様は GitHub リポジトリから直接コードを管理およびデプロイできます。 例えば、[Google Sheets](/help/edge/docs/forms/create-forms.md) または [Microsoft Excel](/help/edge/docs/forms/create-forms.md) でフォームを作成でき、GitHub リポジトリで CSS と JavaScript を使用してフォームのコンポーネントを開発できます。
+AEM Forms の Edge Delivery Services では GitHub を利用しているので、ユーザーは自分の GitHub リポジトリから直接コードを管理およびデプロイできます。例えば、[Google Sheets](/help/edge/docs/forms/create-forms.md) または [Microsoft Excel](/help/edge/docs/forms/create-forms.md) でフォームを作成でき、GitHub リポジトリで CSS と JavaScript を使用してフォームのコンポーネントを開発できます。
 
 フォームの準備が整ったら、Chrome ブラウザー拡張機能である [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content) を使用して、コンテンツの更新をプレビューおよび公開できます。
 
@@ -89,19 +89,19 @@ WYSIWYG オーサリングには、フォームを作成する WYSIWYG インタ
 >
 > WYSIWYG オーサリング機能は、早期導入プログラムで利用できます。詳しくは、作業用アドレスから aem-forms-ea@adobe.com にメールを送信して、機能へのアクセスをリクエストしてください。
 
-### AEM FormsのEdge Delivery Services
+### AEM Forms の Edge Delivery Services
 
-:Formsのオーサリング、公開、送信
+：フォームのオーサリング、公開、送信
 
 ドキュメントベースのオーサリングと WYSIWYG オーサリングを使用してフォームを作成、公開、送信するプロセスを次の図に示します。
 
-![ ドキュメントベースのオーサリング ](/help/edge/assets/document-based-authoring-workflow.png)
+![ドキュメントベースのオーサリング](/help/edge/assets/document-based-authoring-workflow.png)
 
 ![WYSIWYG オーサリング](/help/edge/assets/wysiwyg-authoring-workflow.png)
 
 ## フォームの作成を開始
 
-* [AEM FormsのEdge Delivery Servicesの基本を学ぶ](/help/edge/docs/forms/tutorial.md)
+* [AEM Forms の Edge Delivery Services の基本を学ぶ](/help/edge/docs/forms/tutorial.md)
 * [Google Sheet または Microsoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
 * [データの受け入れを開始するための Google Sheets または Microsoft Excel ファイルの設定](/help/edge/docs/forms/submit-forms.md)
 * [フォームを公開してデータの収集を開始](/help/edge/docs/forms/publish-forms.md)

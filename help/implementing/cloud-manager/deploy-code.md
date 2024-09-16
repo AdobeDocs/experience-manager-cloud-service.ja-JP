@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: cfaa3be31195929b80310610120a779a20537c61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1197'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ _コードスキャン、機能テスト、UI テスト、エクスペリエン�
 
 1. [ステージデプロイメント](#stage-deployment)
 1. [ステージテスト](#stage-testing)
-1. [実稼働デプロイメント](#production-deployment)
+1. [実稼動のデプロイメント](#production-deployment)
 
 >[!TIP]
 >
@@ -64,7 +64,7 @@ _コードスキャン、機能テスト、UI テスト、エクスペリエン�
 * **コードスキャン** - このステップでは、アプリケーションコードの品質を評価します。
    * テストプロセスの詳細については、[コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)を参照してください。
 * **ビルドイメージ** - このプロセスでは、ビルドステップで生成されたコンテンツおよび Dispatcher パッケージを Docker イメージと Kubernetes 設定に変換します。
-* **ステージにデプロイ** - [ ステージテストステージ ](#stage-testing) に備えて、イメージがステージング環境にデプロイされます。
+* **ステージにデプロイ** - [ステージテストフェーズ](#stage-testing)に備えて、イメージがステージング環境にデプロイされます。
 
 ![ステージデプロイメント](assets/stage-deployment.png)
 

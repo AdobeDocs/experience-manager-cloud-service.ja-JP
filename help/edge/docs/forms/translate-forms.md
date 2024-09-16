@@ -1,20 +1,20 @@
 ---
-title: AEM Forms用のEdge Delivery Servicesの翻訳とローカライズ
-description: AEM Forms用のEdge Delivery Servicesの翻訳とローカライズ
+title: AEM Forms の Edge Delivery Services の翻訳とローカライズ
+description: AEM Forms の Edge Delivery Services の翻訳とローカライズ
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '546'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# AEM Forms用のEdge Delivery Servicesの翻訳とローカライズ
+# AEM Forms の Edge Delivery Services の翻訳とローカライズ
 
 Edge Delivery では、フォーム翻訳の際に、正確さ、明確さおよび一貫性に重点を置いてフォームコンテンツを別の言語に変換する必要があります。フォームを翻訳またはローカライズすると、様々な地域の幅広いオーディエンスにリーチできるので、ユーザーエクスペリエンスが向上し、多様な言語設定でより良いコミュニケーションを促進することができます。
 

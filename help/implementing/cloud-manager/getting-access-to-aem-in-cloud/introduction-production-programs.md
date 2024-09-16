@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '490'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,4 +36,4 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->実稼動プログラム [ 編集できますが、削除はできません ](editing-programs.md)。
+>実稼動プログラムは[編集できますが、削除できません](editing-programs.md)。

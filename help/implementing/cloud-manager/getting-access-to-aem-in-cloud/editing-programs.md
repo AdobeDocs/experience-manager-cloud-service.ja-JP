@@ -6,18 +6,18 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '429'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 
 # プログラムの編集 {#editing-programs}
 
-プログラムを管理および編集するには、[**マイプログラム** コンソール ](/help/implementing/cloud-manager/navigation.md) から開始します。 **マイプログラム**&#x200B;ページには、アクセス権を持つすべてのプログラムの概要が表示されます。個々のプログラムを選択すると、**プログラムの概要**&#x200B;ページで、プログラムの詳細が一目でわかります。
+プログラムを管理および編集するには、[**マイプログラム**&#x200B;コンソール](/help/implementing/cloud-manager/navigation.md)から開始します。**マイプログラム**&#x200B;ページには、アクセス権を持つすべてのプログラムの概要が表示されます。個々のプログラムを選択すると、**プログラムの概要**&#x200B;ページで、プログラムの詳細が一目でわかります。
 
-**プログラムの概要** から、必要な権限を持つユーザーは [ 組織で作成された実稼動プログラム ](creating-production-programs.md) および [ 組織で作成されたサンドボックスプログラム ](creating-sandbox-programs.md) を編集できます。 プログラムを編集すると、次のことが可能です。
+必要な権限を持つユーザーは、**プログラムの概要**&#x200B;から、[組織内で作成された実稼動プログラム](creating-production-programs.md)および[組織内で作成されたサンドボックスプログラム](creating-sandbox-programs.md)を編集できます。プログラムを編集することで、次のことが可能です。
 
 * Assets を使用している既存のプログラムに Sites ソリューションを追加する（その逆も同様）。
 * Sites と Assets の両方を使用している既存のプログラムから Sites または Assets を削除する。
@@ -26,7 +26,7 @@ ht-degree: 77%
 
 ## 権限 {#permissions}
 
-プログラムの編集またはサンドボックスプログラムの削除やライセンスダッシュボードへのアクセスには、**ビジネスオーナー** 役割のメンバーである必要があります。
+プログラムの編集やサンドボックスプログラムの削除およびライセンスダッシュボードへのアクセスを行うには、**ビジネスオーナー**&#x200B;の役割を持つメンバーである必要があります。
 
 ## プログラムの編集 {#editing}
 
@@ -47,7 +47,7 @@ ht-degree: 77%
    ![「一般」タブ](assets/edit-program-prod1.png)
 
 1. プログラムの編集に使用できるオプションは、プログラムの作成時のオプションと同じです。
-   * 個々のオプションについて詳しくは、[ 実稼動プログラムの作成 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) および [ サンドボックスプログラムの作成 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) を参照してください。
+   * 個々のオプションについて詳しくは、[実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)と[サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)を参照してください。
    * [その他のオプション](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options)は組織の使用権限に応じて、実稼動プログラムで使用できる場合があります。
 
 1. 「**更新**」をクリックして、プログラムに対する変更を保存します。

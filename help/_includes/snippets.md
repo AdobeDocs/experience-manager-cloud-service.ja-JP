@@ -1,8 +1,8 @@
 ---
 source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '993'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 # スニペット {#snippets}
@@ -56,7 +56,7 @@ ht-degree: 89%
 
 ## 関連トピック {#see-more-forms-eds}
 
-* [AEM FormsのEdge Delivery Servicesの基本を学ぶ](/help/edge/docs/forms/tutorial.md)
+* [AEM Forms の Edge Delivery Services の基本を学ぶ](/help/edge/docs/forms/tutorial.md)
 * [Google Sheet または Microsoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
 * [データの受け入れを開始するための Google Sheets または Microsoft Excel ファイルの設定](/help/edge/docs/forms/submit-forms.md)
 * [フォームを公開してデータの収集を開始](/help/edge/docs/forms/publish-forms.md)
@@ -160,24 +160,24 @@ ht-degree: 89%
 
 >[!TIP]
 >
->Dynamic Mediaを初めてお使いですか？ Dynamic Mediaの概要については、[Dynamic Mediaの操作 ](/help/assets/dynamic-media/dynamic-media.md) を参照してください。
+>Dynamic Media を初めて使用しますか？Dynamic Media の概要について詳しくは、[Dynamic Media の操作](/help/assets/dynamic-media/dynamic-media.md)を参照してください。
 
-## Dynamic Mediaについても参照してください {#see-also-dm}
+## また、Dynamic Media も参照してください。 {#see-also-dm}
 
 >[!NOTE]
 >
->* Dynamic Mediaを初めてお使いですか？ Dynamic Mediaの概要については、[Dynamic Mediaの操作 ](/help/assets/dynamic-media/dynamic-media.md) を参照してください。
+>* Dynamic Media を初めて使用しますか？Dynamic Media の概要について詳しくは、[Dynamic Media の操作](/help/assets/dynamic-media/dynamic-media.md)を参照してください。
 >
->* [Dynamic Mediaのベストプラクティス ](/help/assets/dynamic-media/dm-best-practices.md) に従って、最大限の価値を引き出します。
+>* 最大限に活用するには、[Dynamic Media のベストプラクティス](/help/assets/dynamic-media/dm-best-practices.md)に従ってください。
 >
->* [ スナップショットツール ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) を使用してDynamic Mediaの画像機能を試します。
+>* [スナップショットツール](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)で Dynamic Media の画像機能をお試しください。
 >
->* [ アダプティブビデオ ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash) でビデオをスムーズに再生します。
+>* [アダプティブビデオ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash)でスムーズなビデオ再生を実現します。
 >
->* [ スマート切り抜きによる画像 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) の切り抜きを自動化します。
+>* [スマート切り抜き](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)で画像の切り抜きを自動化します。
 >
->* [ スマート切り抜きによるビデオ ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) の切り抜きを自動化します。
+>* [スマート切り抜き](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video)でビデオの切り抜きを自動化します。
 >
->* [ インタラクティブな 3D を活用したエクスペリエンス ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video) を提供します。
->* その他の [Dynamic Media リソース バンク ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)。
+>* [インタラクティブな 3D を活用したエクスペリエンス](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)を実現します。
+>* その他の場合は、[Dynamic Media リソースバンク](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)を参照してください。
 

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '988'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -118,7 +118,7 @@ ht-degree: 98%
 
 ### Dispatcher {#dispatcher}
 
-[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja) シークレットでは、通常の環境変数のみを使用できます。
+[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja) で使用できるのは、通常の環境変数のみです。シークレットは使用できません。
 
 ただし、環境変数は `IfDefine` ディレクティブでは使用できません。
 

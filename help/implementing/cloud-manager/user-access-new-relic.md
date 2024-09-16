@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1850'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -109,7 +109,7 @@ AEM as a Cloud Service 用の New Relic One APM には、多くの機能があ�
 
 1. New Relic から、アカウントを確認するためのリンクが記載されたメールが送信されます。
 
-New Relicから確認メールが届かない場合は、[ トラブルシューティングの節 ](#troubshooting) を参照してください。
+New Relic から確認メールが届かない場合は、[トラブルシューティングの節](#troubshooting)を参照してください。
 
 ## New Relic One へのアクセス {#accessing-new-relic}
 
@@ -172,7 +172,7 @@ New Relic からメールが届かない場合は、次の操作を実行しま�
 New Relic One にユーザーを追加する場合は、次の制限が適用されます。
 
 * 最大 30 人のユーザーを追加できます。ユーザーの最大数に達した場合は、新しいユーザーを追加できるように、ユーザーを削除します。
-* New Relicに追加されるユーザーのタイプは **制限付き** です。詳しくは [New Relic ドキュメント ](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change) を参照してください。
+* New Relic に追加されたユーザーは、**制限付き**&#x200B;のタイプになります。詳しくは、[New Relic のドキュメント](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)を参照してください。
 * AEM as a Cloud Service は New Relic One APM ソリューションのみを提供し、アラート、ログ、API 統合のサポートは提供していません。
 
 >[!NOTE]
@@ -203,7 +203,7 @@ New Relic One アカウントは、アドビが管理するプライマリアカ
 
 ### アドビは New Relic Oneからのアラート通知を送信しますか？ {#alerting-new-relic}
 
-アドビは、監視の目的でのみ New Relic One へのアクセスを提供します。お客様への警告や内部の運用アラートには使用しません。インシデントに関する通知は、[ ユーザー通知プロファイル ](/help/journey-onboarding/notification-profiles.md) を使用して送信されます。
+アドビは、監視の目的でのみ New Relic One へのアクセスを提供します。お客様への警告や内部の運用アラートには使用しません。インシデントに関する通知は、[ユーザー通知プロファイル](/help/journey-onboarding/notification-profiles.md)を使用して送信されます。
 
 ### New Relic One Cloud Service のデータへは、誰がアクセスできますか？ {#access-new-relic-cloud}
 

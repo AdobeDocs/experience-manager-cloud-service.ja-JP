@@ -1,15 +1,15 @@
 ---
-title: フォームフィールドの検証に一般的に使用されるAEM Formsの正規表現式のEdge Delivery Services
-description: フォームフィールドの検証に一般的に使用されるAEM Formsの正規表現式のEdge Delivery Services
+title: AEM Forms の Edge Delivery Services では、フォームフィールドの検証に一般的に使用される正規表現を使用します
+description: AEM Forms の Edge Delivery Services では、フォームフィールドの検証に一般的に使用される正規表現を使用します
 feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
 exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 

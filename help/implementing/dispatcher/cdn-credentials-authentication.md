@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
 source-git-commit: 5d51ff056d4e4f0fdbb3004cbac55803ac91f8ca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1443'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ data:
    * action - 対象のオーセンティケーターを参照して、「authenticate」を指定する必要があります。
 
 >[!NOTE]
->Edge キーは、それを参照する設定をデプロイする前に、[ 秘密鍵タイプのCloud Manager環境変数 ](/help/operations/config-pipeline.md#secret-env-vars) として設定する必要があります。 32 バイト以上の長さの一意のランダムキーを使用することをお勧めします。例えば、Open SSL 暗号化ライブラリは、コマンド `openssl rand -hex 32` を実行してランダムキーを生成できます。
+>参照する設定をデプロイする前に、Edge キーを、[秘密鍵タイプの Cloud Manager 環境変数](/help/operations/config-pipeline.md#secret-env-vars)として設定する必要があります。最小 32 バイトの長さの一意のランダムキーを使用することをお勧めします。例えば、Open SSL 暗号化ライブラリは、コマンド `openssl rand -hex 32` を実行してランダムキーを生成できます。
 
 ### ブロックされたトラフィックのリスクを軽減する安全な移行 {#migrating-safely}
 
@@ -140,7 +140,7 @@ data:
    * action - 対象のオーセンティケーターを参照して、「authenticate」を指定する必要があります。
 
 >[!NOTE]
->パージキーは、それを参照する設定をデプロイする前に、[ 秘密鍵タイプのCloud Manager環境変数 ](/help/operations/config-pipeline.md#secret-env-vars) として設定される必要があります。 32 バイト以上の長さの一意のランダムキーを使用することをお勧めします。例えば、Open SSL 暗号化ライブラリは、openssl rand -hex 32 コマンドを実行してランダムキーを生成できます
+>参照する設定をデプロイする前に、パージキーを、[秘密鍵タイプの Cloud Manager 環境変数](/help/operations/config-pipeline.md#secret-env-vars)として設定する必要があります。最小 32 バイトの長さの一意のランダムキーを使用することをお勧めします。例えば、Open SSL 暗号化ライブラリは、コマンド openssl rand -hex 32 を実行してランダムキーを生成できます
 
 パージキーの設定と CDN キャッシュパージの実行に焦点を当てた[チュートリアル](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)を参照してください。
 

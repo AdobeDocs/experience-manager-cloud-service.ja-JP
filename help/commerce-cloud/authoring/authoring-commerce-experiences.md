@@ -5,9 +5,9 @@ exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 feature: Commerce Integration Framework
 role: Admin
 source-git-commit: dbf5c47f6d66b1ce35536b0762556511386a7e38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '720'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ CIF 製品カタログページは、その場でレンダリングされる仮�
 
 >[!NOTE]
 >
-> カテゴリと製品の両方が選択された場合は、製品が取得されます。
+> カテゴリと製品の両方を選択した場合は、製品が使用されます。
 
 これにより、ページのレンダリング時に実際のリンクに置き換えられるプレースホルダーリンクが作成されます。
 

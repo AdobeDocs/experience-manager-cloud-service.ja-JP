@@ -7,9 +7,9 @@ feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 source-git-commit: 638b18beb5202ec34c1957a74d5b293236c2cf4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3869'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->Adobeでは、OpenAPI 機能を備えたDynamic Mediaを活用して、AEM Assetsas a Cloud ServiceとAEM Sitesを接続することをお勧めします。 [ リモート AEM AssetsとAEM Sitesの統合 ](/help/assets/integrate-remote-approved-assets-with-sites.md) を参照してください。
+>アドビでは、OpenAPI 機能を備えた Dynamic Media を活用して、AEM Assets as a Cloud Service と AEM Sites を接続することをお勧めします。詳しくは、[リモート AEM Assets と AEM Sites の統合](/help/assets/integrate-remote-approved-assets-with-sites.md)を参照してください。
 
 Connected Assets 機能では、[!DNL Experience Manager Sites] と [!DNL Experience Manager Assets] の統合により、上記のユースケースをサポートしています。ユーザーは、別個の [!DNL Assets] デプロイメントから取得するデジタルアセットを使用する web ページを [!DNL Sites] に作成できます。
 

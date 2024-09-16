@@ -1,13 +1,13 @@
 ---
-title: AEM FormsのEdge Delivery Servicesのテーマとスタイルのカスタマイズ
-description: AEM FormsのEdge Delivery Servicesのテーマとスタイルのカスタマイズ
+title: AEM Forms の Edge Delivery Services のテーマとスタイルのカスタマイズ
+description: AEM Forms の Edge Delivery Services のテーマとスタイルのカスタマイズ
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2016'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

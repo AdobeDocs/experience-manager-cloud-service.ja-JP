@@ -1,23 +1,23 @@
 ---
-title: AEM FormsのEdge Delivery Servicesの概要 – 開発者向けチュートリアル
+title: AEM Forms の Edge Delivery Services の基本を学ぶ - 開発者向けチュートリアル
 description: このチュートリアルは、新しい Adobe Experience Manager Forms（AEM）プロジェクトを起動および実行するのに役立ちます。10～20 分で、独自のフォームが作成されます。
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1850'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # はじめに - 開発者向けチュートリアル
 
-今日のデジタル時代では、ユーザーにわかりやすいフォームを作成することはどの組織にとっても不可欠です。AEM Forms用Edge Delivery Services（EDS）を使用すると、Google ドキュメントやMicrosoft Office などの使い慣れたツールを使用してフォームを作成できます。
+今日のデジタル時代では、ユーザーにわかりやすいフォームを作成することはどの組織にとっても不可欠です。AEM Forms の Edge Delivery Services（EDS）を使用すると、Google Docs や Microsoft Office などの使い慣れたツールを使用してフォームを作成できます。
 
 これらのフォームは、Microsoft Excel または Google Sheets ファイルに直接データを送信します。これにより、Google Sheets、Microsoft Excel、Microsoft SharePoint の活発なエコシステムと堅牢な API を使用して、送信されたデータを簡単に処理したり、既存のビジネスワークフローを開始したりできます。
 
-AEM Forms には、アダプティブフォームブロックと呼ばれるブロックが用意されており、データを取得して保存するフォームを簡単に作成できます。[アダプティブフォームブロックで設定済みの新しい AEM プロジェクトを作成](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)することも、[アダプティブフォームブロックを既存の AEM プロジェクトに追加](#add-adaptive-forms-block-to-your-existing-aem-project)することもできます。
+AEM Forms には、アダプティブフォームブロックと呼ばれるブロックが用意されており、データを取得して保存するフォームを簡単に作成できます。[アダプティブフォームブロックで事前設定された新しい AEM プロジェクトを作成](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) するか、[アダプティブフォームブロックを既存の AEM プロジェクトに追加](#add-adaptive-forms-block-to-your-existing-aem-project)できます。
 
 この AEM Forms チュートリアルでは、新しい Adobe Experience Manager（AEM）Forms プロジェクトを使用して独自のカスタムフォームを作成、プレビュー、公開する方法について説明します。
 

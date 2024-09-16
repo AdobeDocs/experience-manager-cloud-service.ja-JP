@@ -7,15 +7,15 @@ hidefromtoc: true
 exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '665'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # カスタムコンポーネントの作成
 
-AEM FormsのEdge Delivery Servicesを使用すると、[ ネイティブHTMLのフォームコンポーネント ](/help/edge/docs/forms/form-components.md) をカスタマイズして、使いやすいインタラクティブフォームを作成できます。 これにより、カスタム CSS（カスケーディングスタイルシート）とコンポーネントを装飾するためのカスタムコードを使用した[フォームフィールドのスタイル設定](/help/edge/docs/forms/style-theme-forms.md)の説明に従って、定義済みのマークアップを使用してフォームコンポーネントを変更し、アダプティブフォームブロック内のフォームフィールドの外観を向上させることができます。
+AEM Forms の Edge Delivery Services を使用すると、[ネイティブ HTML フォームコンポーネント](/help/edge/docs/forms/form-components.md)をカスタマイズし、ユーザーにわかりやすいインタラクティブなフォームを作成できます。これにより、カスタム CSS（カスケーディングスタイルシート）とコンポーネントを装飾するためのカスタムコードを使用した[フォームフィールドのスタイル設定](/help/edge/docs/forms/style-theme-forms.md)の説明に従って、定義済みのマークアップを使用してフォームコンポーネントを変更し、アダプティブフォームブロック内のフォームフィールドの外観を向上させることができます。
 
 ![カスタムコンポーネント](/help/edge/assets/custom-component-image.png)
 

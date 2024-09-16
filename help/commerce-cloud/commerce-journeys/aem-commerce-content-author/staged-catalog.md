@@ -5,9 +5,9 @@ exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 feature: Commerce Integration Framework
 role: Admin
 source-git-commit: f172f514eaa8f1337359f00fad964f5781fba769
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '485'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ AEM Content と Commerce ジャーニーの以前のドキュメント、 [製�
 
 >[!NOTE]
 >
->この機能は、Adobe Commerceまたは Cloud Edition と、トークンベースの認証をサポートするサードパーティコネクターでのみ使用できます。 詳しくは、[ はじめに ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=ja) を参照してください。
+>この機能は、Adobe Commerce または Cloud Edition およびトークンベースの認証をサポートするサードパーティコネクタでのみ使用できます。詳しくは、[はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=ja)を参照してください。
 
 まず、作成者が CIF を使用してステージングされた製品データにアクセスする方法を説明します。
 

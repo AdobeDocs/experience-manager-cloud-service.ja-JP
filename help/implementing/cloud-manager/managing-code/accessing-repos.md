@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '399'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Cloud Manager では、パイプラインカードの目立つ位置にある「
 
 ## リポジトリウィンドウからのリポジトリ情報へのアクセス {#repositories-window}
 
-「**リポジトリ情報にアクセス**」ボタンは、「[**リポジトリ** ウィンドウ ](managing-repositories.md) のツールバーでも使用できます。 Adobeが管理するリポジトリへのアクセスに関する同じ情報が表示されます。
+[**リポジトリ**&#x200B;ウィンドウ](managing-repositories.md)のツールバーには、「**リポジトリ情報にアクセス**」ボタンもあります。アドビが管理するリポジトリへのアクセスに関する同じ情報が表示されます。
 
 ## アクセスパスワードの失効 {#revoke-password}
 

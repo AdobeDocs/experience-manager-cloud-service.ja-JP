@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4513'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -645,7 +645,7 @@ public class DontDoThis implements Page {
 * **重大度**：ブロッカー
 * **開始バージョン**：2021.8.0
 
-`lucene` タイプの Oak インデックスは常に非同期でインデックスを作成する必要があります。これに従わないと、システムが不安定になる可能性があります。Lucene インデックスの構造について詳しくは、[Oakのドキュメント ](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition) を参照してください。
+`lucene` タイプの Oak インデックスは常に非同期でインデックスを作成する必要があります。これに従わないと、システムが不安定になる可能性があります。Lucene インデックスの構造について詳しくは、[Oak のドキュメント](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)を参照してください。
 
 #### 非準拠コード {#non-compliant-code-indexasync}
 
@@ -897,7 +897,7 @@ Experience Manager as a Cloud Service 上でのアセット処理をアセット
 
 従来、Experience Manager プロジェクトでは静的テンプレートを使用するのが一般的でしたが、アドビでは、最も柔軟性が高く、静的テンプレートにはない追加機能をサポートしている編集可能なテンプレートをお勧めします。詳しくは、[ページテンプレート](/help/implementing/developing/components/templates.md)のドキュメントを参照してください。
 
-静的なテンプレートから編集可能なテンプレートへの移行は、[Experience Manager最新化ツール ](https://opensource.adobe.com/aem-modernize-tools/) を使用して、ほとんど自動化することができます。
+静的なテンプレートから編集可能なテンプレートへの移行は、[Experience Manager 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/)を使用して、ほとんど自動化することができます。
 
 ### 従来の基盤コンポーネントの使用は推奨されない {#oakpal-usage-legacy}
 
@@ -906,9 +906,9 @@ Experience Manager as a Cloud Service 上でのアセット処理をアセット
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-従来の基盤コンポーネント（`/libs/foundation` 下のコンポーネントなど）は、一部の Experience Manager リリースでは廃止され、コアコンポーネントが採用されています。使用する方法がオーバーレイであろうと継承であろうと、基盤コンポーネントに基づいてカスタムコンポーネントを作成することは、お勧めしません。対応するコアコンポーネントに移行してください。
+従来の基盤コンポーネント（`/libs/foundation` 下のコンポーネントなど）は、一部の Experience Manager リリースでは廃止され、コアコンポーネントが採用されています。使用する方法がオーバーレイであろうと継承であろうと、カスタムコンポーネントの基礎として基盤コンポーネントを使用することは、お勧めしません。対応するコアコンポーネントに変換する必要があります。
 
-この移行は、[Experience Manager最新化ツール ](https://opensource.adobe.com/aem-modernize-tools/) で容易に行うことができます。
+この変換は、[Experience Manager 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/)で容易に行うことができます。
 
 ### サポートされている実行モード名と順序のみを使用 {#oakpal-supported-runmodes}
 
@@ -1207,7 +1207,7 @@ AEM Cloud Service では、UI コンテンツパッケージでカスタム検�
 
 >[!WARNING]
 >
->この問題は、[Cloud Manager 2024 年 8 月のリリース ](/help/implementing/cloud-manager/release-notes/current.md) 以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします。
+>[Cloud Manager 2024年8月リリース](/help/implementing/cloud-manager/release-notes/current.md)以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします。
 
 ### damAssetLucene タイプのカスタムフルテキストインデックス定義には、「damAssetLucene」というプレフィックスを正しく付ける {#oakpal-dam-asset-lucene}
 
@@ -1220,7 +1220,7 @@ AEM Cloud Service では、`damAssetLucene` タイプのカスタムフルテキ
 
 >[!WARNING]
 >
->この問題は、[Cloud Manager 2024 年 8 月のリリース ](/help/implementing/cloud-manager/release-notes/current.md) 以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします。
+>[Cloud Manager 2024年8月リリース](/help/implementing/cloud-manager/release-notes/current.md)以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします。
 
 ### インデックス定義ノードに同じ名前のプロパティを含めない {#oakpal-index-property-name}
 
@@ -1233,7 +1233,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（つま�
 
 >[!WARNING]
 >
->この問題は、[Cloud Manager 2024 年 8 月のリリース ](/help/implementing/cloud-manager/release-notes/current.md) 以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします。
+>[Cloud Manager 2024年8月リリース](/help/implementing/cloud-manager/release-notes/current.md)以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします。
 
 ### 特定の OOTB インデックス定義のカスタマイズは禁止されている {#oakpal-customizing-ootb-index}
 
@@ -1253,7 +1253,7 @@ AEM Cloud Service では、次の OOTB インデックスの許可されてい�
 
 >[!WARNING]
 >
->この問題は、[Cloud Manager 2024 年 8 月のリリース ](/help/implementing/cloud-manager/release-notes/current.md) 以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします。
+>[Cloud Manager 2024年8月リリース](/help/implementing/cloud-manager/release-notes/current.md)以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします。
 
 ### アナライザーのトークナイザーの設定は、「tokenizer」という名前で作成する {#oakpal-tokenizer}
 
@@ -1266,7 +1266,7 @@ AEM Cloud Service では、アナライザーで誤った名前のトークナ�
 
 >[!WARNING]
 >
->この問題は、[Cloud Manager 2024 年 8 月のリリース ](/help/implementing/cloud-manager/release-notes/current.md) 以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします。
+>[Cloud Manager 2024年8月リリース](/help/implementing/cloud-manager/release-notes/current.md)以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします。
 
 ### インデックス作成定義の設定にスペースを含めることはできない {#oakpal-indexing-definitions-spaces}
 

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '571'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Cloud Manager を使用すると、複数の方法でパイプライン変数を
 
 1. **変数設定**&#x200B;ウィンドウが開きます。テーブルの 1 行目に変数の詳細を入力し、「**追加**」をタップまたはクリックします。
 
-   * **設定名** は、変数の一意の ID で、先頭に [ パイプライン変数命名規則 ](#naming-conventions) を付ける必要があります。
+   * **設定名**&#x200B;は変数の一意の ID で、[パイプライン変数の命名規則](#naming-conventions)に従う必要があります。
    * **値**&#x200B;は、変数が保持する値です。
    * **適用された手順**&#x200B;は、変数を適用するパイプライン内の手順です。これは必須です。
       * **ビルド**
