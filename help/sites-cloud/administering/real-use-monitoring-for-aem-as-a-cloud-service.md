@@ -1,13 +1,13 @@
 ---
 title: AEM as a Cloud Service の実際の使用のモニタリング
-description: Real Use Monitoring （RUM）を使用して、web サイトやアプリケーションのデジタルユーザーエクスペリエンスをリアルタイムでキャプチャおよび分析する方法を説明します。
+description: クライアントサイドのデータ収集を監視できる自動サービスである、Real Use Monitoring （RUM）について説明します。
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: c0b86950e36b936d7d471b5bf7b671df7db5d317
+source-git-commit: ed52bac52618e23b9bcbe7c6767501c6711aff00
 workflow-type: tm+mt
-source-wordcount: '1200'
-ht-degree: 14%
+source-wordcount: '1012'
+ht-degree: 13%
 
 ---
 
@@ -23,27 +23,21 @@ ht-degree: 14%
 
 ## 概要 {#overview}
 
-RUM （Real Use Monitoring）サービスは、Web サイトやアプリケーションのデジタル・ユーザー・エクスペリエンスをリアルタイムでキャプチャし、分析するパフォーマンス監視技術です。 Web アプリケーションのリアルタイムパフォーマンスを可視化し、エンドユーザーエクスペリエンスに関するより深いインサイトを提供します。 このサービスは、ユーザー自身ではなく web サイトのエンゲージメントを監視することで、パフォーマンスを最適化することに焦点を当てています。
-
-RUM を使用すると、URL の開始からリクエストがブラウザーに返されるまで、主要なパフォーマンス指標が追跡されます。 これにより、開発者はアプリケーションを強化して、エンドユーザーが簡単に使用できるようになります。
-
->[!INFO]
->
->「実際のユーザー監視」は、サービスの真の本質をより適切に反映するため、「実際の使用監視」にブランド変更されました。
+RUM （Real Use Monitoring）サービスは、Web サイトまたはアプリケーション上のクライアント側トラフィックをリアルタイムで監視するパフォーマンス監視技術です。 このサービスは、ユーザー自体ではなく、web サイトのエンゲージメントを監視してパフォーマンスを最適化するための鍵となる指標とデータの収集に焦点を当てています。 RUM を使用すると、URL の開始からリクエストがブラウザーに返されるまで、主要なパフォーマンス指標が追跡されます。
 
 ## 実際の使用状況の監視サービスのメリットを享受できるのは誰か {#who-can-benefit-from-rum-service}
 
-AEMは、お客様やAdobeがAEM サイトとのやり取りを理解するのに役立つ RUM を開発しました。 RUM を使用すると、パフォーマンスの問題を診断し、実験の有効性を測定できます。 RUM は、サンプリングを通じて訪問者のプライバシーを保持します。つまり、すべてのページビューのごく一部のみが監視され、個人を特定できる情報（PII）は収集されません。
+AEMAdobeは、エンドユーザーがAEM サイトとどのようにやり取りしているかを理解するのに役立つ、実際の使用状況のモニタリングを開発しました。 実際の使用モニタリングは、パフォーマンスの問題を診断し、実験の有効性を測定します。 リアルタイムモニタリングは、サンプリングを通じて訪問者のプライバシーを保持します。つまり、すべてのページビューのごく一部のみが監視され、個人を特定できる情報（PII）は収集されません。
 
 ## Real Use Monitoring サービスとプライバシー {#rum-service-and-privacy}
 
-AEMの Real Use Monitoring サービスは、訪問者のプライバシーを保護し、データ収集を最小限に抑えるように設計されています。 訪問者として、それはあなたが訪問しているサイトまたはAdobeに利用可能になったサイトが個人情報を収集しないことを意味します。
+AEMの Real Use Monitoring サービスは、訪問者のプライバシーを保護し、データ収集を最小限に抑えます。 訪問者として、それはあなたが訪問しているサイトまたはAdobeに利用可能になったサイトが個人情報を収集しないことを意味します。
 
 サイトオペレーターは、この機能を通じた監視を有効にするために追加のオプトインは必要ありません。 RUM を有効にするためにエンドユーザーが受け入れるための追加のポップアップまたは同意フォームはありません。
 
 ## Real Use Monitoring サービスのデータ・サンプリング {#rum-service-data-sampling}
 
-従来の web 分析ソリューションでは、すべての訪問者に関するデータを収集しようとします。AEM RUM サービスは、ほんの一部のページビューから情報を取得するだけです。 このサービスは、分析の代わりではなく、サンプリングおよび匿名化されることを目的としています。 デフォルトでは、ページのサンプリング比は 1:100 です。 現時点では、サイト演算子はサンプリングレートを増減できません。 合計トラフィックを正確に推定するために、100 回のページビューごとに 1 からデータが収集され、全体的なトラフィックの信頼性の高い概算が得られます。
+従来の web 分析ソリューションでは、すべての訪問者に関するデータを収集しようとします。AEM Real Use Monitoring （RUM）サービスは、少数のページ・ビューから情報を収集するだけです。 このサービスは、分析の代わりではなく、サンプリングおよび匿名化されることを目的としています。 デフォルトでは、ページのサンプリング比は 1:100 です。 現時点では、サイト演算子はサンプリングレートを増減できません。 合計トラフィックを正確に推定するために、100 回のページビューごとに 1 からデータが収集され、全体的なトラフィックの信頼性の高い概算が得られます。
 
 データを収集するかどうかの決定は、ページビューごとに行われるため、複数のページをまたいでインタラクションを追跡することは事実上不可能になります。 デザイン上、RUM には訪問者やセッションの概念はなく、ページビューの概念しかありません。
 
@@ -65,31 +59,31 @@ Real Use Monitoring サービスは、個人を特定できる情報の収集を
 
 ## 顧客に対するリアルタイムモニタリングの仕組み {#how-rum-works-for-a-customer}
 
-実際の使用状況の監視では、クライアントサイドのトラフィックが自動的に監視され、有益なインサイトが得られます。 Adobeのお客様は、このサービスが既存の設定にシームレスに統合されているので、追加の手順を実行する必要はありません。 一般提供（GA）ロールアウトでは、この新機能のメリットが自動的に得られます。
+実際の使用状況の監視では、クライアントサイドのトラフィックが自動的に監視されます。 Adobeのお客様は、このサービスが既存の設定にシームレスに統合されているので、追加の手順を実行する必要はありません。 実使用監視（RUM）は一般提供（GA）なので、この新機能のメリットを自動的に受けることができます。 実際の使用状況の監視サービスでは、ビジュアライゼーションツールを使用して現在指標を公開していません。 アドビでは、この機能をできる限り早くお客様に提供できるように取り組んでいます。
 
 <!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
 If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99). -->
 
-## Real Use Monitoring Service データの使用方法 {#how-rum-service-data-is-being-used}
+## Adobeでの実際の使用状況のモニタリング {#how-rum-data-is-being-used}
 
-RUM データは、次の目的で有益です。
+実際の使用状況の監視データは、次の目的で使用されます。
 
 * お客様のサイトに対してパフォーマンスのボトルネックを特定および修正する
-* ページビューを含む自動トラフィック検索を効率化する。
 * 互換性を向上させるために、AEMが同じページ上の他のスクリプト（分析、ターゲティング、外部ライブラリなど）とどのようにやり取りするかを理解する。
+<!--
+## Limitations and understanding variance in page views and performance metrics {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
 
-## ページビュー数とパフォーマンス指標の制限事項と相違について {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
+Here are key considerations for customers to keep in mind when interpreting their RUM data:
 
-RUM データを分析する際、ページビューやその他のパフォーマンス指標に違いが生じる場合があります。 これらの差異は、リアルタイムのクライアントサイドのモニタリングに固有のいくつかの要因に起因する可能性があります。お客様が RUM データを解釈する際に留意すべき重要な考慮事項を以下に示します。
+1. **Tracker blockers**
 
-1. **トラッカーブロッカー**
+   * End-users employing tracker blockers or privacy extensions can impede RUM data collection, as these tools restrict the tracking scripts' execution. This restriction may lead to underreported page views and user interactions, creating a discrepancy between actual site activity and the data captured by RUM.
 
-   * トラッカーブロッカーやプライバシー拡張機能を使用するエンドユーザーは、これらのツールがトラッキングスクリプトの実行を制限するので、RUM データ収集を妨げる可能性があります。 この制限により、報告が少ないページビューやユーザーのインタラクションが生じ、実際のサイトアクティビティと RUM によって取り込まれるデータとの間に不一致が生じる可能性があります。
+1. **Limitations in capturing headless API/JSON calls**
 
-1. **ヘッドレス API/JSON 呼び出しのキャプチャに関する制限事項**
-
-   * RUM データサービスはクライアントサイドのエクスペリエンスに重点を置いており、現時点では、AEM以外のヘッドレスアプリから行われたバックエンド API または JSON 呼び出しを取得しません。 RUM サービスデータからのこれらの呼び出しを除外すると、CDN Analytics によって測定されたコンテンツリクエストとの相違が生じます。
+   * RUM data service focuses on the client-side experience and doesn't capture the backend API or JSON calls made from a non-AEM headless app at this time. The exclusion of these calls from RUM service data creates variances from the content requests measured by CDN Analytics.
+-->
 
 ## FAQ {#faq}
 
@@ -99,7 +93,7 @@ RUM データを分析する際、ページビューやその他のパフォー�
    Yes.
 -->
 
-1. **「次のペイントへのインタラクション」、「最初のバイトまでの時間」、「最初の内容を含むペイント」の web バイタルメトリクスは収集されていますか？**
+1. **「次のペイントへのインタラクション」、「最初のバイトまでの時間」、「最初の内容を含んだペイント」の指標が収集されていますか？**
 
    次のペイントまでのインタラクション（INP）と最初のバイトまでの時間（TTFB）が収集されます。  現時点では、コンテンツの初回ペイント（FCP）は収集しません。
 
@@ -113,6 +107,6 @@ RUM データを分析する際、ページビューやその他のパフォー�
 
 1. **オプトアウトするにはどうすればよいですか？**
 
-   Adobeでは、大きなメリットがあり、デジタルエクスペリエンスを最適化できるので、Real Use Monitoring （RUM）を使用することをお勧めします。 Web サイトのパフォーマンスの向上に役立つ貴重なインサイトを提供できます。 このサービスはシームレスに動作するように設計されており、Web サイトのパフォーマンスには影響しません。
+   Adobeでは、Real Use Monitoring （RUM）を使用すると大きなメリットがあり、Web サイトのパフォーマンスを向上させてデジタルエクスペリエンスを最適化する際にAdobeが役立つことをお勧めします。 このサービスはシームレスに動作するように設計されており、Web サイトのパフォーマンスには影響しません。
 
-   オプトアウトするということは、これらのインサイトが欠落していることを意味します。 ただし、問題が発生した場合は、Adobeサポートにお問い合わせください。
+   オプトアウトは、web サイトでのトラフィックエンゲージメントを向上させる機会を逃すことを意味する場合があります。 ただし、問題が発生した場合は、Adobeサポートにお問い合わせください。
