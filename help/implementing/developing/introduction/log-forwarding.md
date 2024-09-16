@@ -4,9 +4,9 @@ description: AEM as a Cloud Serviceでの Splunk およびその他のログベ�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: bf0b577de6174c13f5d3e9e4a193214c735fb04d
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1359'
 ht-degree: 1%
 
 ---
@@ -177,9 +177,10 @@ AEM ログ（Apache/Dispatcherを含む）は、次の命名規則でフォル�
 
 * aemaccess
 * aemerror
+* aemrequest
 * aemdispatcher
-* httpdaccess
-* httpderror
+* aemhttpdaccess
+* aemhttpderror
 
 各フォルダーに 1 つのファイルが作成され、に追加されます。 お客様は、このファイルが大きくなりすぎないよう、ファイルの処理と管理を行います。
 
@@ -209,6 +210,9 @@ data:
 
 * 特定のクラウドプロバイダーとの統合を行わずに、API キーを作成します。
 * tags プロパティはオプションです
+* AEM ログの場合、Datadog ソース タグは `aemaccess`、`aemerror`、`aemrequest`、`aemdispatcher`、`aemhttpdaccess`、`aemhttpderror` のいずれかに設定されます
+* CDN ログの場合、Datadog ソース タグは `aemcdn` に設定されます
+* datadog サービスタグは `adobeaemcloud` に設定されていますが、タグセクションで上書きできます
 
 
 ### Elasticsearchと OpenSearch {#elastic}
@@ -230,10 +234,12 @@ data:
 
 考慮事項：
 
+* デフォルトでは、ポートは 443 です。 オプションで、`port` というプロパティで上書きすることもできます
 * 資格情報には、アカウントの資格情報ではなく、必ずデプロイメントの資格情報を使用します。 これらは、次の画像に似た画面で生成される資格情報です。
 
 ![Elastic デプロイメント資格情報 ](/help/implementing/developing/introduction/assets/ec-creds.png)
 
+* AEM ログの場合、`index` は `aemaccess`、`aemerror`、`aemrequest`、`aemdispatcher`、`aemhttpdaccess` または `aemhttpderror` のいずれかに設定されます
 * オプションのパイプラインプロパティは、Elasticsearchまたは OpenSearch 取り込みパイプラインの名前に設定する必要があります。この名前は、ログエントリを適切なインデックスにルーティングするように設定できます。 パイプラインのプロセッサタイプは *スクリプト* に設定し、スクリプト言語は *痛みなし* に設定する必要があります。 次に、ログエントリを aemaccess_dev_26_06_2024 などのインデックスにルーティングするスクリプトスニペットの例を示します。
 
 ```
@@ -254,15 +260,15 @@ data:
   https:
     default:
       enabled: true
-      url: "https://example.com:8443/aem_logs/aem"
+      url: "https://example.com/aem_logs/aem"
       authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
 考慮事項：
 
-* URL 文字列には **https://** を含める必要があります。含めない場合、検証が失敗します。 URL 文字列にポートが含まれていない場合、ポート 443 （デフォルトの HTTPS ポート）が想定されます。
-* 443 以外のポートを使用したい場合は、URL の一部として指定してください。
+* URL 文字列には **https://** を含める必要があります。含めない場合、検証が失敗します。
+* URL にはポートを含めることができます。 例えば、`https://example.com:8443/aem_logs/aem` のようになります。URL 文字列にポートが含まれていない場合、ポート 443 （デフォルトの HTTPS ポート）が想定されます。
 
 #### HTTPS CDN ログ {#https-cdn}
 
@@ -278,13 +284,14 @@ Web リクエスト（POST）は、ログエントリの配列である json ペ
 
 AEM ログ（apache/dispatcher を含む）の場合、web リクエスト（POST）は、[AEM as a Cloud Serviceのログ ](/help/implementing/developing/introduction/logging.md) で説明されているように、様々なログエントリ形式でログエントリの配列である json ペイロードで継続的に送信されます。 その他のプロパティについては、以下の「[ ログエントリの形式 ](#log-format) の節で説明します。
 
-`sourcetype` という名前のプロパティもあり、次のいずれかの値に設定されます。
+`Source-Type` という名前のプロパティもあり、次のいずれかの値に設定されます。
 
 * aemaccess
 * aemerror
+* aemrequest
 * aemdispatcher
-* httpdaccess
-* httpderror
+* aemhttpdaccess
+* aemhttpderror
 
 ### Splunk {#splunk}
 
@@ -299,8 +306,13 @@ data:
       enabled: true
       host: "splunk-host.example.com"
       token: "${{SPLUNK_TOKEN}}"
-      index: "AEMaaCS"
+      index: "aemaacs"
 ```
+
+考慮事項：
+
+* デフォルトでは、ポートは 443 です。 オプションで、`port` という名前のプロパティで上書きできます。
+
 
 <!--
 ### Sumo Logic {#sumologic}
@@ -343,119 +355,26 @@ aem_tier: author
 
 ## 高度なネットワーク {#advanced-networking}
 
->[!NOTE]
->
->この機能は、まだ早期導入の準備ができていません。
-
-
 一部の組織は、ログの宛先で受信できるトラフィックを制限します。
 
-CDN ログの場合は、[fastly ドキュメント – 公開 IP リスト ](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) で説明しているように、IP アドレスを許可リストに登録できます。 その共有 IP アドレスのリストが大きすぎる場合は、（Adobe以外の） Azure Blob Store にトラフィックを送信することを検討してください。このストアでは、専用の IP アドレスのログを最終的な送信先に送信するロジックを書き込むことができます。
+CDN ログの場合は、[fastly ドキュメント – 公開 IP リスト ](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) で説明しているように、IP アドレスを許可リストに登録できます。 その共有 IP アドレスのリストが大きすぎる場合は、https Adobeまたは（サーバー以外の） Azure Blob Store にトラフィックを送信することを検討してください。そこでは、既知の IP から最終的な宛先にログを送信するロジックを書き込むことができます。
 
-AEM ログ（Apache/Dispatcherを含む）の場合は、ログ転送を設定して [ 高度なネットワーク機能 ](/help/security/configuring-advanced-networking.md) を実行できます。 オプションの `port` パラメーターと `host` パラメーターを利用する、以下の 3 つの高度なネットワークタイプのパターンを参照してください。
-
-### フレキシブルポートエグレス {#flex-port}
-
-ログトラフィックが 443 （以下の 8443 など）以外のポートに送信される場合は、次のように高度なネットワークを設定します。
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 8443, # something other than 443
-            "portOrig": 30443
-        }    
-    ]
-}
-```
-
-次のように yaml ファイルを設定します。
+AEM ログ（Apache/Dispatcherを含む）の場合、[ 高度なネットワーク ](/help/security/configuring-advanced-networking.md) を設定している場合は、advancedNetworking プロパティを使用して、専用のエグレス IP アドレスから、または VPN 経由で転送できます。
 
 ```
 kind: "LogForwarding"
 version: "1"
+metadata:
+  envTypes: ["dev"]
 data:
   splunk:
     default:
-      host: "${{AEM_PROXY_HOST}}"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+      enabled: true
+      host: "splunk-host.example.com"
+      port: 443
+      token: "${{SPLUNK_TOKEN}}"
+      index: "aemaacs"
+    aem:
+      advancedNetworking: true
 ```
 
-### 専用エグレス IP {#dedicated-egress}
-
-
-ログトラフィックを専用のエグレス IP から送信する必要がある場合は、次のように高度なネットワークを設定します。
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 443, 
-            "portOrig": 30443
-        }    
-    ]
-}
-```
-
-次のように yaml ファイルを設定します。
-
-```
-      
-kind: "LogForwarding"
-version: "1"
-   metadata:
-     envTypes: ["dev"]
-data:
-  splunk:
-     default:
-       enabled: true
-       index: "index_name" 
-       token: "${{SPLUNK_TOKEN}}"  
-     aem:
-       enabled: true
-       host: "${{AEM_PROXY_HOST}}"
-       port: 30443       
-     cdn:
-       enabled: true
-       host: "splunk-host.example.com"
-       port: 443    
-```
-
-### VPN {#vpn}
-
-ログトラフィックを VPN 経由で送信する必要がある場合は、次のように高度なネットワークを設定します。
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 443,
-            "portOrig": 30443
-        }    
-    ]
-}
-
-kind: "LogForwarding"
-version: "1"
-   metadata:
-     envTypes: ["dev"]
-data:
-  splunk:
-     default:
-       enabled: true
-       index: "index_name" 
-       token: "${{SPLUNK_TOKEN}}"  
-     aem:
-       enabled: true
-       host: "${{AEM_PROXY_HOST}}"
-       port: 30443       
-     cdn:
-       enabled: true
-       host: "splunk-host.example.com"
-       port: 443     
-```
