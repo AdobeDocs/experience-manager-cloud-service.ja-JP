@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f8b058549162b7ae3d57b1a7dd3461f738b75320
-workflow-type: ht
-source-wordcount: '1269'
-ht-degree: 100%
+source-git-commit: 9b31ea4218ce6a3a0f2a53e28efec4d9b98f9b38
+workflow-type: tm+mt
+source-wordcount: '1303'
+ht-degree: 91%
 
 ---
 
@@ -55,7 +55,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 | リクエストタイプ | コンテンツリクエスト | 説明 |
 | --- | --- | --- |
 | HTTP コード 100-299 | 次のものが含まれます。 | これらは、すべてのコンテンツまたはコンテンツの一部を配信する通常のリクエストです。 |
-| 自動化用の HTTP ライブラリ | 次のものが含まれます。 | 例：<br>・Amazon CloudFront<br>・Apache Http Client<br>・非同期 Http クライアント<br>・Axios<br>・アズレウス<br>・Curl<br>・GitHub ノードフェッチ<br>・Guzzle<br>・Go-http-client<br>・ヘッドレスクロム<br>・ Java™ Client<br>・ジャージー<br>・Node Oembed<br>・okhttp<br>・Python リクエスト<br>・Reactor Netty<br>・Wget<br>・WinHTTP |
+| 自動化用の HTTP ライブラリ | 次のものが含まれます。 | 例：<br>・ Amazon CloudFront<br>・ Apache Http Client<br>・非同期 Http クライアント <br>・ Axios<br>・ Azureus<br>・ Curl<br>・ GitHub Node Fetch<br>・ Guzzle<br>・ Go-http-client<br>・ ヘッドレス Chrome<br>・ Java™ Client<br>・ Jersey<br>・ Node Oembed<br> <br>・ Python リクエスト <br>・ Reactor Netty<br>・ Wget<br>・ WinHTTP<br>・ Fast HTTP <br> <br>・ GitHub ノードの取得・ Reactor Netty |
 | 監視ツールおよびヘルスチェックツール | 次のものが含まれます。 | これらは、サイトの特定の側面を監視するために顧客が設定します。例えば、可用性や実際のユーザーパフォーマンスなどです。これらがヘルスチェックの /system/probes/health などの特定のエンドポイントをターゲットにしている場合は、サイトの実際の HTML ページではなく、`/system/probes/health` エンドポイントを使用することをお勧めします。[以下を参照してください](#excluded-content-request)<br>例：<br>・Amazon-Route53-Health-Check-Service<br>・EyeMonIT_bot_version_0.1_[（https://www.eyemon.it/）](https://www.eyemon.it/)<br>・Investis-Site24x7<br>・Mozilla/5.0 以降（互換；UptimeRobot/2.0；[https://uptimerobot.com/](https://uptimerobot.com/)）<br>・ThousandEyes-Dragonfly-x1<br>・OmtrBot/1.0<br>・WebMon/2.0.0 |
 | `<link rel="prefetch">` リクエスト | 次のものが含まれます。 | 次のページの読み込み速度を上げるには、ユーザーがリンクをクリックする前にブラウザーで一連のページを読み込むように設定し、既にキャッシュに存在している必要があります。*注意：これにより、取得されるこれらのページの数に応じて、トラフィックが大幅に増加します*。 |
 | Adobe Analytics または Google Analytics レポートをブロックするトラフィック | 次のものが含まれます。 | サイトの訪問者が、Google Analytics や Adobe Analytic sの正確性に影響を与えるプライバシーソフトウェア（広告ブロッカーなど）をインストールしていることがよくあります。AEM as a Cloud Service は、クライアントサイドではなく、アドビが運用するインフラストラクチャへの最初のエントリポイントに対するリクエストをカウントします。 |
@@ -75,7 +75,8 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 | 顧客が Cloud Service プログラムを監視するための URL | 除外済み | 可用性やヘルスチェックを外部で監視するには、URL を使用することをお勧めします。<br><br>`/system/probes/health` |
 | AEM as a Cloud Service ポッドウォームアップサービス | 除外済み |
 | エージェント：skyline-service-warmup/1。* |
-| よく知られている検索エンジン、ソーシャルネットワーク、HTTP ライブラリ（Fastly によってタグ付け） | 除外済み | サイトを定期的に訪問し、検索インデックスやサービスを更新するよく知られたサービス：<br><br>例：<br>・ AddSearchBot<br>・ AhrefsBot<br>・ Applebot<br>・ Ask Jeeves Corporate Spider<br>・ Bingbot<br>・ BingPreview<br>・ BLEXBot<br>・ BuiltWith<br>・ Bytespider<br>・ CrawlerKengo<br>・ Facebookexternalhit<br>・ Google AdsBot<br>・ Google AdsBot Mobile<br>・ Googlebot<br>・ Googlebot Mobile<br>・ lmspider<br>・ LucidWorks<br>・ MJ12bot<br>・ Pingdom<br>・ Pinterest<br>・ SemrushBot<br>・ SiteImprove<br>・ StashBot<br>・ StatusCakes<br>・ YandexBot |
+| よく知られている検索エンジン、ソーシャルネットワーク、HTTP ライブラリ（Fastly によってタグ付け） | 除外済み | 検索インデックスまたはサービスを更新するためにサイトを定期的に訪問するよく知られたサービス：<br><br> 例：<br>・ AddSearchBot<br>・ AhrefsBot<br>・ Applebot<br>・ Ask Jeeves Corporate Spider<br>・ Bingbot<br>・ BingPreview<br>・ BLEXBot<br>・ BuiltWith<br>・ Bytespider<br>・ CrawlerKengo<br>・ Facebookexternalhit<br>・ Google Bot<br>・ Google Bot Mobile<br>・ Mobile<br> <br> <br> <br> <br> <br>・ Googleogleoglebot bot<br>・ Googlebot Mobile<br>・ lmspider<br>・ LucidWorks<br>・ MJ12bot<br>・ Pinterest開発・・ SemrushBot 開発・・ SiteImproveBot 開発・・ StashBot 開発・・ StatusBot 開発・・ Claudebot 開発 |
 | コマース統合フレームワーク呼び出しの除外 | 除外済み | これらは、二重カウントを避けるために、AEM に対して行われたリクエストで、Commerce Integration Framework に転送されます（URL は `/api/graphql` で始まります）。これらは Cloud Service の請求対象ではありません。 |
 | `manifest.json` を除外 | 除外済み | マニフェストは API 呼び出しではなく、デスクトップまたは携帯電話に web サイトをインストールする方法に関する情報を提供するためにここに記載されています。アドビは `/etc.clientlibs/*/manifest.json` に対する JSON リクエストをカウントするべきではありません |
 | `favicon.ico` を除外 | 除外済み | 返されるコンテンツは HTML や JSON ではありませんが、SAML 認証フローなどのシナリオでは、favicon が HTML として返される場合があるので、カウントから明示的に除外されることがわかります。 |
+| 別のバックエンドへの CDN プロキシ | 除外済み | [CDN オリジンセレクター ](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) 技術を使用してAEM以外の様々なバックエンドにルーティングされたリクエストは、AEMにヒットしないので、除外されます。 |
