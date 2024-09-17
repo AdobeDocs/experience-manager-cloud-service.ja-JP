@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
+source-git-commit: f45de13049f78f97b256235d9395695cb531c40d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1490'
+ht-degree: 43%
 
 ---
 
@@ -21,15 +21,15 @@ Cloud Manager を使用してカスタムドメイン名を追加する方法を
 
 Cloud Manager でカスタムドメイン名を追加する前に、次の要件を満たす必要があります。
 
-* [SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) のドキュメントで説明されているように、カスタムドメイン名を追加する前に、追加するドメインのドメイン SSL 証明書を追加する必要があります。
+* [SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) のドキュメントに記載されているように、カスタムドメイン名を追加する前に、追加するドメインのドメイン SSL 証明書を追加する必要があります。
 * Cloud Manager でカスタムドメイン名を追加するには、**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割が必要です。
-* Fastly CDN を使用している必要があります。
+* Fastly または他の CDN を使用している。
 
 >[!IMPORTANT]
 >
 >Adobe以外の CDN を使用している場合でも、ドメインをCloud Managerに追加する必要があります。
 
-## カスタムドメイン名を追加する場所 {#}
+## カスタムドメイン名の追加先 {#where-to-add-cdn}
 
 Cloud Manager では、次の 2 つの場所からカスタムドメイン名を追加できます。
 
@@ -68,7 +68,7 @@ Cloud Manager では、次の 2 つの場所からカスタムドメイン名を
 
    | 証明書の種類を選択した場合 | 説明 |
    | --- | ---  |
-   | アドビが管理する証明書 | 次の手順に進む前に ](#abobe-managed-cert-steps)[Adobe管理の証明書の手順を完了してください。 |
+   | アドビが管理する証明書 | 次の手順に進む前に ](#adobe-managed-cert-steps)[Adobe管理の証明書の手順を完了してください。 |
    | 顧客が管理する証明書 | 次の手順に進む前に、[ 顧客が管理する証明書の手順 ](#customer-managed-cert-steps) を完了してください。 |
 
 1. **確認** をクリックします。
@@ -78,7 +78,6 @@ Cloud Manager では、次の 2 つの場所からカスタムドメイン名を
    >[!NOTE]
    >
    >自己管理 SSL 証明書と自己管理 CDN プロバイダーを使用している場合は、準備ができたら、この手順をスキップして、直接 [CDN 設定の追加 ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) に進むことができます。
-
 
 
 ### Adobe管理証明書の手順 {#adobe-managed-cert-steps}
@@ -97,7 +96,7 @@ Cloud Manager では、次の 2 つの場所からカスタムドメイン名を
 >
 >Adobeが管理する CDN の場合、DV （Domain Validation）証明書を使用する場合、ACME 検証が設定されているサイトのみ許可されます。
 
-#### 要件 {#dv-requirements}
+#### 要件 {#adobe-managed-cert-dv-requirements}
 
 DNS レコードを設定する前に、次の要件を満たします。
 
@@ -105,7 +104,7 @@ DNS レコードを設定する前に、次の要件を満たします。
 * 組織のドメインの DNS レコードを編集する、または適切な担当者に連絡できる。
 * [ドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)ドキュメントの説明に従って、設定済みのカスタムドメイン名の検証をすでに済ませている必要があります。
 
-#### CNAME レコード {#cname-record}
+#### CNAME レコード {#adobe-managed-cert-cname-record}
 
 正規名つまり CNAME レコードは、エイリアス名を真のドメイン名つまり正規ドメイン名にマッピングする DNS レコードタイプです。CNAME レコードは、通常、`www.example.com` などのサブドメインを、そのサブドメインのコンテンツをホストするドメインにマッピングするために使用されます。
 
@@ -115,7 +114,7 @@ DNS サービスプロバイダーにログインし、次の表のように、�
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-#### APEX レコード {#apex-record}
+#### APEX レコード {#adobe-managed-cert-apex-record}
 
 apex ドメインは、サブドメインを含まないカスタムドメイン（例：`example.com` など）です。DNS プロバイダーを通じて、Apex ドメインは `A`、`ALIAS` または `ANAME` レコードで設定されます。 Apex ドメインは、特定の IP アドレスを指す必要があります。
 
@@ -132,7 +131,6 @@ apex ドメインは、サブドメインを含まないカスタムドメイン
 * `A record for domain @ pointing to IP 151.101.195.10`
 
 
-
 ### 顧客管理証明書の手順 {#customer-managed-cert-steps}
 
 証明書の種類 *顧客が管理する証明書* を選択した場合は、**ドメインの検証** ダイアログボックスで次の手順を実行します。
@@ -145,7 +143,7 @@ apex ドメインは、サブドメインを含まないカスタムドメイン
 
 Cloud Manager では、特定の TXT レコードを使用して、ドメインを CDN サービスでホストすることを認証します。Cloud Managerにカスタムドメインを使用した CDN サービスのデプロイとバックエンドサービスとの関連付けを許可する DNS TXT レコードをゾーンに作成します。 この関連付けは、お客様の管理下にあり、Cloud Manager でサービスからドメインにコンテンツを提供することを認可するものです。この認証は、付与することも、取り下げることもできます。TXT レコードは、ドメインと Cloud Manager 環境に固有のものです。
 
-## 要件 {#requirements-customer-cert}
+#### 要件 {#customer-managed-cert-requirements}
 
 TXT レコードを追加する前に、次の要件を満たします。
 
@@ -153,7 +151,7 @@ TXT レコードを追加する前に、次の要件を満たします。
 * 組織のドメインの DNS レコードを編集する、または適切な担当者に連絡できる。
 * まず、この記事で前述したように、カスタムドメイン名を追加します。
 
-## 検証用の TXT レコードを追加 {#verification}
+#### 検証用の TXT レコードを追加 {#customer-managed-cert-verification}
 
 1. **ドメインを検証** ダイアログボックスで、Cloud Managerは検証に使用する名前と TXT 値を表示します。 この値をコピーします。
 
@@ -170,7 +168,7 @@ TXT レコードを追加する前に、次の要件を満たします。
 
 1. TXT レコードをドメインホストに保存します。
 
-## TXT レコードを検証 {#verify}
+#### TXT レコードを検証 {#customer-managed-cert-verify}
 
 完了したら、次のコマンドを実行して結果を確認できます。
 

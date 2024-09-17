@@ -5,10 +5,10 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 505e0887124472693216fee2f0a3e960591b5ae5
-workflow-type: ht
+source-git-commit: 5dc3d571c553f2972295172c7a6d0249be3285b8
+workflow-type: tm+mt
 source-wordcount: '1950'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -47,11 +47,11 @@ Cloud Manager のエクスペリエンス監査を使用すると、サイト上
 
 実稼動パイプラインでは、エクスペリエンス監査をデフォルトで使用できます。フルスタックパイプラインとフロントエンドパイプラインの開発に対して、オプションで有効にすることができます。どのような場合でも、パイプラインの実行中に評価されるコンテンツパスを定義する必要があります。
 
-1. 設定するパイプラインのタイプに応じて、次の手順に従います。
+1. 設定するパイプラインのタイプに応じて、次のいずれかの操作を行います。
 
    * 新しい [実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)を追加して、監査で評価するパスを定義します。
-   * フロントエンドまたは開発フルスタックパイプラインで監査を有効にする場合は、新しい[実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)を追加します。
-   * または、[既存のパイプラインを編集](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)し、既存のオプションを更新することもできます。
+   * フロントエンドパイプラインまたは開発用フルスタックパイプラインで監査を有効にする場合は、新しい [ 実稼動以外のパイプライン ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) を追加します。
+   * または、[ 既存のパイプラインを編集 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) し、既存のオプションを更新できます。
 
 1. 実稼動以外のパイプラインを追加または編集する際にエクスペリエンス監査を使用するには、「**エクスペリエンス監査**」チェックボックスをオンにします。このオプションは「**ソースコード**」タブにあります。
 
@@ -218,7 +218,7 @@ Cloud Manager の「**レポート**」タブが開き、**エクスペリエン
 >
 >オンデマンドスキャンは、環境が削除されておらず、同じ環境上に他の保留中のスキャンがない場合にのみ開始できます。
 
-## エクスペリエンス監査で発生した問題 {#issues}
+## エクスペリエンス監査で問題が発生する {#issues}
 
 監査対象として[設定したページ](#configuration)が利用できなかった場合や、監査にその他のエラーがあった場合は、エクスペリエンス監査にその事実が反映されます。
 
@@ -236,13 +236,12 @@ Cloud Manager の「**レポート**」タブが開き、**エクスペリエン
 * ページが存在しない。
 * ページにより、基本認証以外の認証を必要とするリダイレクトが行われる。
 * 内部的な問題が発生した。
-* 等。
 
 >[!TIP]
 >
 >ページの[生レポートにアクセス](#scanned-pages)すると、ページが監査できなかった理由の詳細を示すことができます。
 
-## 一般的なパフォーマンスに関するヒント {#performance-tips}
+## 一般的なパフォーマンスのヒント {#performance-tips}
 
 簡単に修正できる最も一般的な影響力のある問題のうち 2 つは、Cumulative Layout Shifts（CLS）と Largest Contentful Paint（LCP）に関連しています。
 
