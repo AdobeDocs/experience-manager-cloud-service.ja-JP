@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f0dc6a753590a1aaddcf01b9766ab0ab6373187c
+source-git-commit: 8349f6d4d4f04d8609d5a5241b973201b54b2cd2
 workflow-type: tm+mt
-source-wordcount: '5641'
+source-wordcount: '5651'
 ht-degree: 97%
 
 ---
@@ -625,8 +625,6 @@ ht-degree: 97%
       + [タグを管理](/help/assets/tagging-management-assets-view.md)
       + [コンテンツ資格情報](/help/assets/content-credentials.md)
       + [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
-
-
    + コンテンツハブ {#content-hub}
       + [概要](/help/assets/product-overview.md)
       + [コンテンツハブのデプロイ](/help/assets/deploy-content-hub.md)
@@ -1068,9 +1066,6 @@ ht-degree: 97%
    + [バリエーションを生成](/help/generative-ai/generate-variations.md)
 + 実装 {#implementing}
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
-
-
-
    + Cloud Manager の使用 {#using-cloud-manager}
       + [ナビゲーション](/help/implementing/cloud-manager/navigation.md)
       + プログラム {#programs}
@@ -1149,9 +1144,6 @@ ht-degree: 97%
       + [Cloud Serviceコンテンツリクエストについて](/help/implementing/cloud-manager/content-requests.md)
       + [CDN パフォーマンスダッシュボード](/help/implementing/cloud-manager/cdn-performance.md)
       + [Cloud Manager に関する FAQ](/help/implementing/cloud-manager/faqs.md)
-
-
-
    + AEM as a Cloud Service 向けの開発 {#developing}
       + [AEM プロジェクトの構造](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [AEM プロジェクトリポジトリーの構造パッケージ](/help/implementing/developing/introduction/repository-structure-package.md)
@@ -1259,7 +1251,7 @@ ht-degree: 97%
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
       + [ContextHub でのセグメント化の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=ja)
    + AEM as a Cloud Service の設定と拡張 {#configuring-and-extending}
-      + App Builder を使用した AEM の拡張{#app-builder}
+      + App Builder {#app-builder} を使用したAEMの拡張
          + [Adobe Developer App Builder を使用した AEM の拡張](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [App Builder の概要](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe 開発者コンソール](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
@@ -1287,6 +1279,10 @@ ht-degree: 97%
       + [ページプロパティの拡張](/help/implementing/developing/extending/page-properties.md)
       + [バルクエディターの拡張](/help/implementing/developing/extending/bulk-editor.md)
       + [MSM の拡張](/help/implementing/developing/extending/msm.md)
+      + 国際化{#internationalization}
+         + [コンポーネントの国際化](/help/implementing/developing/extending/i18n/components.md)
+         + [UI 文字列の国際化](/help/implementing/developing/extending/i18n/dev.md)
+         + [翻訳のための文字列の抽出](/help/implementing/developing/extending/i18n/extract.md)
    + AEM as a Cloud Service へのデプロイ {#deploying}
       + [AEM as a Cloud Service へのデプロイ](/help/implementing/deploying/overview.md)
       + [AEM バージョンのアップデート](/help/implementing/deploying/aem-version-updates.md)
