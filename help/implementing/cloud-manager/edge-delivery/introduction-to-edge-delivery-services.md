@@ -4,7 +4,7 @@ description: Edge Delivery Servicesを使用してCloud Manager プロジェク�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a51e2cf3f91b3bc1fe1600024943f6bd95f78352
+source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 6%
@@ -34,7 +34,7 @@ Adobe Experience Manager Sitesの一部としてライセンスをEdge Delivery 
 
 さらに、主要なワークフロー間の一貫性を確保しながら、すべてのAEM プロパティを管理できる統一されたエクスペリエンスにアクセスできます。 これには、ドメイン名の管理、SSL 証明書の管理、CDN マッピングが含まれます。
 
-## 実稼動プログラムまたはサンドボックスプログラムへのEdge Delivery Servicesの追加
+## 実稼動プログラムまたはサンドボックスプログラムへのEdge Delivery Servicesの追加について
 
 Edge Delivery Servicesは、プロジェクトの開始方法に応じて、様々な方法で追加できます。
 
@@ -51,17 +51,16 @@ Edge Delivery Servicesは、プロジェクトの開始方法に応じて、様�
 >* 実稼動プログラムに適用するには、未使用のEdge Delivery Services ライセンスが必要です。
 >* Edge Delivery Servicesライセンスがプログラムに適用またはプログラムから削除されると、変更はパイプラインを実行しなくても、直ちに有効になります。
 
-
 ## Edge Delivery ServicesのAdobe推奨パス {#recommended-path-eds}
 
-Cloud Managerを通じてEdge Delivery Services ライセンスにアクセスして利用することで、Adobeのメリットを最大限に活用できます。 これにより、いくつかの主なメリットを活用できます。
+Cloud Managerを通じてEdge Delivery Services ライセンスにアクセスして利用することで、Adobeから得られるメリットを最大限に活用できます。 これにより、いくつかの主なメリットを活用できます。
 
-* [ 選択したプログラムでライセンスを使用する ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) または [ 他のプログラムを更新する ](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
+* [ 選択したプログラムでライセンスを使用する ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)、[ 他のプログラムを更新する ](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)、またはその両方。
 * [API ファースト ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) の利点を活用して、CRUD （作成、読み取り、更新、削除）操作を実行します。
 * [SLA レポートへのアクセス ](/help/implementing/cloud-manager/sla-reporting.md) （*近日公開*）
 * 登録済みの実稼動プログラムの [Adobeサポートへのアクセス権を取得します ](/help/edge/overview.md#support-ticket)。
 
-さらに、Cloud Managerを使用すると、[Adobe管理による CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) をEdge Delivery サイトに使用し、DV 証明書の設定や追加など、セルフサービスの CDN 管理などの主なメリットを活用できます。 さらに、DV 証明書を作成した後、Adobeは、削除されない限り、3 か月ごとに自動的に更新します。 AdobeのEdge Delivery Services ライセンスを持っておらず、これらの利点を回避する場合は、自分で管理する CDN のみを使用できます。 この設定は、[`aem.live` プラットフォームで行う必要があります。](https://www.aem.live/docs/go-live-checklist#cdn-configuration)
+さらに、Cloud Managerを使用すると、[Adobe管理による CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) をEdge Delivery サイトに使用し、DV 証明書の設定や追加など、セルフサービスの CDN 管理などの主なメリットを活用できます。 さらに、DV 証明書を作成した後、Adobeは、削除されない限り、3 か月ごとに自動的に更新します。 AdobeのEdge Delivery Services ライセンスを持っておらず、これらの利点を回避する場合は、自分で管理する CDN のみを使用できます。 この設定は、[`aem.live` プラットフォーム上になければなりません ](https://www.aem.live/docs/go-live-checklist#cdn-configuration)。
 
 ## Edge Delivery To Do リストについて {#ed-todo-list}
 

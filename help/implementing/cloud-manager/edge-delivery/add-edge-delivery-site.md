@@ -1,34 +1,29 @@
 ---
 title: Cloud ManagerへのEdge Delivery サイトの追加
-description: 実稼動プログラムまたはサンドボックスプログラムにEdge Delivery サイトを追加する方法と、そのメリットについて説明します。
+description: 実稼動プログラムまたはサンドボックスプログラムにEdge Delivery サイトを追加する方法を説明します。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 68f05c49ebc3d46aa44b3998e6142ab8547e5455
+source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 2%
+source-wordcount: '446'
+ht-degree: 3%
 
 ---
 
 
-# Cloud ManagerへのEdge Delivery サイトの追加 {#eds-add-site}
+# Cloud ManagerへのEdge Delivery サイトの追加 {#adding}
 
-実稼動プログラムまたはサンドボックスプログラムにEdge Delivery サイトを追加する方法と、そのメリットについて説明します。
+Edge Delivery サイトは、実稼動プログラムまたはサンドボックスプログラムに追加できます。
 
-## はじめに {#introduction}
+Edge Delivery サイトをCloud Managerに追加するには、[Edge Delivery プロジェクトのサポートチケットを登録 ](/help/edge/overview.md##support-ticket) する必要があります。
 
-AEM as a Cloud Serviceを使用したEdge Delivery Servicesプロジェクトの一環として、Edge Delivery サイトをCloud Managerに追加することをお勧めします。 Edge Delivery Web サイトをCloud Managerに追加すると、次の利点があります。
+[Cloud ManagerのEdge Delivery Servicesの概要 ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) も参照してください。
 
-* [Adobe管理による CDN へのアクセス](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-* [SLA レポートへのアクセス](/help/implementing/cloud-manager/sla-reporting.md)
-* [ライセンス使用状況レポートへのアクセス](/help/implementing/cloud-manager/license-dashboard.md)
-
-[Edge Delivery プロジェクトのサポートチケットを登録 ](/help/edge/overview.md##support-ticket) するには、Edge Delivery サイトをCloud Managerに追加する必要があります。
-
-## Cloud ManagerへのおよびEdge Delivery サイトの追加 {#adding}
+**Edge Delivery サイトをCloud Managerに追加するには：**
 
 1. [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) でCloud Managerにログインし、適切なプログラムを選択します。
 1. 次のいずれかの操作を行います。
+
    * **プログラムの概要** ページで、「**Edge Delivery**」タブをクリックします。 次に、ページの右下隅付近にある「**Edge Delivery サイトを追加**」をクリックします。
 
      ![ 「Edge Delivery」タブからEdge Delivery サイトを追加する ](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
@@ -59,11 +54,3 @@ AEM as a Cloud Serviceを使用したEdge Delivery Servicesプロジェクトの
 1. **確認** をクリックします。
 
 リポジトリが検証されると、Edge配信サイト テーブル内のステータスが緑色の円に変わり、その内側に白いチェックマークが付きます。
-
-実稼動プログラムにEdge Delivery Servicesを追加すると、そのプログラムにはEdge Delivery Servicesライセンスが適用されます。
-
-各Edge Delivery サイトには、Edge Delivery サイトの作成手順を示す **0}Edge Delivery to-do- リストがあります。**
-
-![Edge Delivery to-do アプリ ](/help/implementing/cloud-manager/assets/edge-delivery-to-do-ist.png)
-
-これらの手順について詳しくは、[Cloud ManagerでのEdge Delivery Servicesの概要 ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list) を参照してください。
