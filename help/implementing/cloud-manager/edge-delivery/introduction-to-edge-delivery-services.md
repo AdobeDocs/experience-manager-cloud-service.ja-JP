@@ -4,7 +4,7 @@ description: Edge Delivery Servicesを使用してCloud Manager プロジェク�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
+source-git-commit: ad6a0e13f27839b9900e440d60948158ddf75d99
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 6%
@@ -68,7 +68,7 @@ Cloud Managerを通じてEdge Delivery Services ライセンスにアクセス�
 
 ![Edge Delivery サイトの To Do リスト ](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
-|  | タスク | 説明 |
+|   | タスク | 説明 |
 | --- | --- | --- |
 | 1 | 製品コラボレーションチャネルに参加 | **リクエストを今すぐ送信** をクリックすると、会社のチャネルを作成するためのリクエストがAdobeに送信されます。 チャネルが既に存在する場合は、会社のチャネルに転送されます。 |
 | 2 | 前提条件を完了 | **入門チュートリアルを表示** をクリックすると、[ 入門 – 開発者チュートリアル ](https://www.aem.live/developer/tutorial) に移動します。 |
@@ -76,5 +76,7 @@ Cloud Managerを通じてEdge Delivery Services ライセンスにアクセス�
 | 4 | ドメインを追加 | [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。 |
 | 5 | SSL 証明書を追加 | [SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。 |
 | 6 | Edge Delivery サイトの CDN の設定 | [CDN 設定の追加 ](#add-cdn) を参照してください。 |
+
+<!-- &#x2460; for "1" inside circle -->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
