@@ -1,14 +1,20 @@
 ---
 title: コンテンツハブユーザーインターフェイスの設定
 description: コンテンツハブユーザーインターフェイスの設定
-source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
+exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
+source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1185'
 ht-degree: 7%
 
 ---
 
 # コンテンツハブユーザーインターフェイスの設定 {#configure-content-hub-user-interface}
+
+>[!CONTEXTUALHELP]
+>id="configure_content_hub"
+>title="コンテンツハブユーザーインターフェイスの設定"
+>abstract="Experience Manager Assetsを使用すると、管理者は、Content Hub ユーザーインターフェイスで使用できるオプションを設定できます。 管理者が選択した設定オプションに基づいて、Content Hub ユーザーはContent Hubでフィールドを表示できます。 設定オプションには、アセットのインポート時のメタデータ、フィルター、アセットプロパティ、アセットの検索時のメタデータ、パーソナライズされたブランディング、任意のカスタムリンクが含まれます。"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Content Hubでのアセットの設定 ](assets/configure-assets.png)
@@ -43,7 +49,7 @@ Content Hubの設定オプションにアクセスするには：
 
 ## Content Hubで設定オプションを管理する {#manage-configuration-options}
 
-ユーザーに対して次の設定オプションを管理します。
+管理者として、ユーザーの次の設定オプションを管理します。
 
 * [import](#configure-import-options-content-hub)
 
@@ -134,7 +140,7 @@ Content Hubでは、管理者がアセットの検索時に表示するフィル
 
 ### 検索 {#configure-metadata-search-content-hub}
 
-管理者は、ユーザーがContent Hubで検索条件を指定した際に検索されるメタデータフィールドを定義できます。 以下の手順を実行します。
+管理者は、ユーザーがContent Hubで検索条件を指定した際に検索されるメタデータフィールドを定義できます。 次の手順を実行します。
 
 1. [ 設定 ](#access-configuration-options-content-hub) ユーザーインターフェイスで、「**[!UICONTROL メタデータを追加]**」をクリックします。
 
@@ -184,5 +190,3 @@ Content Hubでは、管理者がアセットの検索時に表示するフィル
 カスタムリンクは、Content Hub ホームページで「インサイト」タブの横に新しいタブとして表示されます。
 
 ![Content Hubの設定 UI カスタムリンク タブ ](assets/configuration-ui-custom-link-tab.png)
-
-
