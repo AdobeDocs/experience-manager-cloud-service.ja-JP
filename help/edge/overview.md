@@ -4,10 +4,10 @@ description: AEM as a Cloud Service を使用して、Edge Delivery Services で
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 6c7e704dff97e8549664618f879863c3ca0f8f86
-workflow-type: ht
-source-wordcount: '1356'
-ht-degree: 100%
+source-git-commit: fa50e661d05a5083be3605a8c6e26450357f4aec
+workflow-type: tm+mt
+source-wordcount: '1425'
+ht-degree: 93%
 
 ---
 
@@ -135,7 +135,11 @@ Edge Delivery Services は [Adobe Target](https://www.aem.live/developer/target-
 
 ### サポートチケットのログ {#support-ticket}
 
-製品の問題が追加の調査とトラブルシューティングを必要とし、応答 SLT を満たす必要がある場合は、Admin Console を使用して次のプロセスに従ってサポートチケットを送信できます。
+製品の問題に追加の調査とトラブルシューティングが必要で、応答 SLT を満たす必要がある場合は、サポートチケットを送信できます。
+
+サポートチケットをログに記録するには、まずCloud ManagerでEdge Delivery サイトを登録する必要があります。 AEM as a Cloud Serviceを使用する場合は、すべてのCloud Manager ユーザーに web サイトを登録することをお勧めします。[ それにより、多くの利点が得られます。](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) サイトをまだ登録していない場合は、詳細について [Cloud Managerのドキュメント ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) を参照してください。
+
+Web サイトがCloud Managerに登録されたら、Admin Consoleを使用して次のプロセスに従い、サポートチケットを送信します。
 
 1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/?support-tab=home#support)チケットを作成します。
 1. チケットのタイトルに「**Edge Delivery**」を追加します。
