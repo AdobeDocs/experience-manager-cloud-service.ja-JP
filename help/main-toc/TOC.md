@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: f0dc6a753590a1aaddcf01b9766ab0ab6373187c
 workflow-type: tm+mt
-source-wordcount: '5638'
-ht-degree: 98%
+source-wordcount: '5641'
+ht-degree: 97%
 
 ---
 
@@ -470,6 +470,7 @@ ht-degree: 98%
          + [アセットセレクターの例](/help/assets/asset-selector-examples.md)
          + [アセットセレクターのカスタマイズ](/help/assets/asset-selector-customization.md)
          + [アセットセレクターのアップロード](/help/assets/asset-selector-upload.md)
+         + [アセットセレクターコレクション](/help/assets/asset-selector-collections.md)
       + [マイクロフロントエンドの宛先セレクター](/help/assets/destination-selector.md)
       + [アセットを共有する](/help/assets/share-assets.md)
       + [アセットの再処理](/help/assets/reprocessing.md)

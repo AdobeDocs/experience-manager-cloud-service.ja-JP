@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセッ�
 description: アセットセレクターを使用し、アプリケーション内のアセットのメタデータとレンディションを検索および取得します。
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 0b8c345efa4c8f59b423644944ca2a6f8d54cbb4
+source-git-commit: 027922c304be9c36b600b04b264d571ea8ed60d4
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 69%
+source-wordcount: '1314'
+ht-degree: 68%
 
 ---
 
@@ -196,15 +196,15 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
         <em> アセットセレクターをDynamic Media Open API と統合する方法を理解します </em>。
         </p>
      </td>
-</tr>
-<tr>
-    <td>
+     <td>
         <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="アセットセレクターのプロパティグラフィック"><br/>
         <a href="asset-selector-customization.md"> アセットセレクターのプロパティ </a>
         <p>
         <em> フィルター、アセットの選択、期限切れのアセットなど、アセットセレクターの様々なコンポーネントのカスタマイズに関する基本について説明します。</em>
         </p>
     </td>
+</tr>
+<tr>
     <td>
         <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="アセットセレクターの例を示すグラフィック"><br/>
         <a href="asset-selector-customization.md"> アセットセレクターの例 </a>
@@ -225,6 +225,15 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
         <p>
         <em> ローカルまたはサードパーティのファイルシステムからアセットセレクターにファイルまたはフォルダーをアップロードする方法を説明します。</em>
         </p>
+    </td>
+     <td>
+        <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="アセットセレクターコレクションのグラフィック"><br/>
+        <a href="asset-selector-collections.md"> アセットセレクターコレクション </a>
+        <p>
+        <em> コレクションリポジトリーを使用してアセットセレクター内でExperience Managerを使用する方法を説明します。</em>
+        </p>
+    </td>
+    <td>
     </td>
 </tr>
 </table>
