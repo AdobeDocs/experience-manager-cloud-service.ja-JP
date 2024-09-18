@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '367'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -35,15 +35,15 @@ AEM as a Cloud Service の Cloud Manager 2024.9.0 のリリース日は 2024年9
 
   >[!NOTE]
   >
-  >[Content Hub](/help/assets/product-overview.md) のお客様は、段階的なロールアウトの一環として、この機能を段階的に受け取るように計画されています。
+  >[コンテンツハブ](/help/assets/product-overview.md)のお客様には、段階的なロールアウトの一環として、フェーズ単位でこの機能が提供される予定です。
 
 * **Cloud Manager での Edge Delivery Services のサポート：**
 
-  AEM Sitesの一部としてEdge Delivery Services ライセンスをお持ちの場合 [Cloud Managerを通じて直接Edge Delivery Servicesでサイトをオンボーディングできるようになりました ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。 この機能により、ガイド付きのセルフサービスの運用開始エクスペリエンスが可能になります。また、すべての AEM プロパティにわたってドメイン名の管理、SSL 証明書、CDN マッピングなどの基本的なワークフローを統合し、一貫性と効率性を確保します。<!-- CMGR-49859 -->
+  AEM Sites の一部として Edge Delivery Services のライセンスをお持ちの場合は、[Cloud Manager で Edge Delivery Services を使用してサイトを直接オンボードできるようになりました](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。この機能により、ガイド付きのセルフサービスの運用開始エクスペリエンスが可能になります。また、すべての AEM プロパティにわたってドメイン名の管理、SSL 証明書、CDN マッピングなどの基本的なワークフローを統合し、一貫性と効率性を確保します。<!-- CMGR-49859 -->
 
   >[!NOTE]
   >
-  >[Content Hub](/help/assets/product-overview.md) のお客様は、段階的なロールアウトの一環として、この機能を段階的に受け取るように計画されています。
+  >[コンテンツハブ](/help/assets/product-overview.md)のお客様には、段階的なロールアウトの一環として、フェーズ単位でこの機能が提供される予定です。
 
 * GitHub リポジトリを使用するお客様は、web 階層設定パイプラインを作成および使用できるようになりました。<!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
 
