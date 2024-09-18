@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 86%
+source-wordcount: '904'
+ht-degree: 68%
 
 ---
 
@@ -50,11 +50,30 @@ SSL 証明書のステータスは、**SSL 証明書**&#x200B;ページから一
    * 「**秘密鍵**」フィールドでは、証明書に変更を加えた場合にのみ、このフィールドを更新します。
    * 「**証明書チェーン**」フィールド（または信頼チェーン）に、証明書チェーンを貼り付けます。
 
-1. 「**更新**」をクリックして変更を保存し、自動的に適用されるようにします。
+1. 「**更新**」をクリックして変更を保存し、自動的に適用します。—>
 
 ## 期限切れの顧客管理 SSL 証明書の置換 {#replace-ssl-certificate}
 
 [ 期限切れの SSL 証明書の更新 ](#update-ssl-certificate) と同じ手順に従って、期限切れの顧客管理 SSL 証明書を置き換えます。
+
+## Adobe管理 SSL 証明書（#rename-an-ssl-certificate）の名前の変更
+
+次に、SSL 証明書の名前を変更する理由を示します。
+
+* **組織の向上**：証明書の名前を変更すると、目的を明確にするのに役立ちます。例えば、目的の環境（ステージング、実稼動など）やドメインを特定できます。
+* **混乱を避ける**：複数の証明書を管理する場合は、明確でわかりやすい名前を付けると、間違った証明書を間違ったドメインに適用するなど、間違いを防ぐのに役立ちます。
+* **コンプライアンスと監査**：適切な名前の証明書は、セキュリティと監査の目的で追跡しやすくなります。
+
+**Adobe管理の SSL 証明書の名前を変更するには：**
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) でCloud Managerにログインし、適切なプログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
+1. ページの左上隅にあるハンバーガーアイコンをクリックして、左側のナビゲーションメニューを表示します。
+1. **サービス** 見出しの下の **SSL 証明書** をクリックします。
+1. **SSL 証明書** ページで、証明書の名前を変更する行の最後にある省略記号をクリックします。
+1. **名前変更** をクリックします。
+1. **DV 証明書の名前を変更** ダイアログボックスで、**証明書名** テキストフィールドに証明書の新しい名前を入力します。
+1. **名前変更** をクリックします。
 
 ## SSL 証明書の削除 {#deleting-an-ssl-certificate}
 
