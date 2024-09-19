@@ -3,9 +3,9 @@ title: Cloud ManagerでのEdge Delivery サイトの管理
 description: Edge Delivery サイトに CDN 設定を追加する方法や、Edge Delivery サイトを削除する方法を説明します。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '512'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ CDN 設定を既存のサイトに追加して、Cloud ManagerでEdge Delivery �
 
 Cloud ManagerのAdobeでは、次のようないくつかの理由でEdge Delivery サイトの名前を変更する必要があります。
 
-* **明確さと編成**：サイトの目的や関連環境（実稼働、ステージングなど）をより適切に説明します。
+* **明確さと組織**：サイトの目的や関連する環境（実稼働、ステージングなど）をわかりやすく説明します。
 * **混乱を避ける**：複数のサイトを使用している場合、名前を変更すると、サイト間の区別が容易になり、設定や更新が間違ったサイトに適用される可能性を減らすことができます。
 * **標準化**：組織のガイドラインに従った一貫性のある命名規則に従い、管理と監査を容易にします。
 
@@ -61,3 +61,7 @@ Edge Deliveryのサイトテーブルで、サイトを削除する行の最後�
 
 
      ![ 「Edge Delivery サイト」ボタンから「Edge Delivery サイトを追加」 ](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
+
+### サポートチケットを記録 {#eds-support-ticket}
+
+{{support-ticket}}

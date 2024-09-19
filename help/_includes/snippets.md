@@ -1,8 +1,8 @@
 ---
-source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
-workflow-type: ht
-source-wordcount: '993'
-ht-degree: 100%
+source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
+workflow-type: tm+mt
+source-wordcount: '1139'
+ht-degree: 83%
 
 ---
 # スニペット {#snippets}
@@ -95,7 +95,7 @@ ht-degree: 100%
     <td>「Then」でフィールド、パネル、フォームのルールを検証／リセット </td>
     <td>検証およびリセット関数は、ルールエディターのフォームオブジェクトのみをサポートします。 
    </td>
-    <td>検証およびリセット関数は、ルールエディターのフォーム／パネル／フィールドオブジェクトをサポートします。 
+    <td>検証/リセット関数は、ルールエディターのフォーム/パネル/フィールドオブジェクトをサポートします。 
    </td>
    </tr>
    <tr>
@@ -143,7 +143,7 @@ ht-degree: 100%
 >
 >フロントエンドパイプラインでは、以下の IP 許可リストを事前に Cloud Manager に追加する必要があります。
 >必要に応じて、以下のアドレスのブロックをコピーして ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)IP 許可リストを追加[します。各アドレスはコンマで区切ります。このブロックを **IP 許可リストを追加**&#x200B;ダイアログボックスの「**IP アドレス / CIDR**」フィールドにペーストします。アドレスリストの最初のコンマの直後にカーソルを置き、**Enter** キーを押します。リストを保存します。
->フロントエンドパイプラインの実行が中断されないようにするには、パイプラインを有効にする&#x200B;*前に*、この IP 許可リストを Cloud Manager に確実に追加します。
+>フロントエンドパイプラインの実行が中断されないようにするには、この IP許可リストがCloud Managerに追加されていることを *事前に* パイプラインを有効にします。
 >
 >**Cloud Manager の IP 許可リスト**
 >52.254.106.192/28、20.186.185.181、52.254.106.240/28、52.254.107.128/28、52.254.105.192/28、52.254.106.176/28、20.186.185.227、52.254.106.144/28、52.254.107.64/28、20.186.185.239、20.22.83.112、52.254.107.80/28、52.254.107.144/28、52.254.106.224/28、20.14.241.153、52.254.107.0/28、52.254.107.32/28、52.254.106.208/28、40.70.154.136/29、52.254.106.160/28、52.254.107.16/28、52.254.106.0/28、4.152.211.251
@@ -160,17 +160,17 @@ ht-degree: 100%
 
 >[!TIP]
 >
->Dynamic Media を初めて使用しますか？Dynamic Media の概要について詳しくは、[Dynamic Media の操作](/help/assets/dynamic-media/dynamic-media.md)を参照してください。
+>Dynamic Media を初めて使用しますか？Dynamic Mediaの概要については、[Dynamic Mediaの操作 ](/help/assets/dynamic-media/dynamic-media.md) を参照してください。
 
 ## また、Dynamic Media も参照してください。 {#see-also-dm}
 
 >[!NOTE]
 >
->* Dynamic Media を初めて使用しますか？Dynamic Media の概要について詳しくは、[Dynamic Media の操作](/help/assets/dynamic-media/dynamic-media.md)を参照してください。
+>* Dynamic Media を初めて使用しますか？Dynamic Mediaの概要については、[Dynamic Mediaの操作 ](/help/assets/dynamic-media/dynamic-media.md) を参照してください。
 >
 >* 最大限に活用するには、[Dynamic Media のベストプラクティス](/help/assets/dynamic-media/dm-best-practices.md)に従ってください。
 >
->* [スナップショットツール](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)で Dynamic Media の画像機能をお試しください。
+>* [ スナップショットツール ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) を使用して、Dynamic Mediaの画像機能を試します。
 >
 >* [アダプティブビデオ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash)でスムーズなビデオ再生を実現します。
 >
@@ -178,6 +178,21 @@ ht-degree: 100%
 >
 >* [スマート切り抜き](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video)でビデオの切り抜きを自動化します。
 >
->* [インタラクティブな 3D を活用したエクスペリエンス](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)を実現します。
+>* [ インタラクティブな 3D を活用したエクスペリエンス ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video) を提供します。
 >* その他の場合は、[Dynamic Media リソースバンク](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)を参照してください。
+
+## サポートチケットのログ {#support-ticket}
+
+製品の問題に追加の調査とトラブルシューティングが必要で、応答 SLT を満たす必要がある場合は、サポートチケットを送信できます。
+
+サポートチケットをログに記録するには、まずCloud ManagerでEdge Delivery サイトを登録する必要があります。 AEM as a Cloud Serviceを使用する場合は、すべてのCloud Manager ユーザーに web サイトを登録することをお勧めします [ これにより、多くの利点が得られます ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。 サイトをまだ登録していない場合は、[Cloud Manager ドキュメント ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) を参照してください。
+
+Web サイトがCloud Managerに登録されたら、Admin Consoleを使用して次のプロセスに従い、サポートチケットを送信します。
+
+1. [ 標準のサポートプロセスに従って ](https://experienceleague.adobe.com/?support-tab=home#support) チケットを作成します。
+1. チケットのタイトルに「**Edge Delivery**」を追加します。
+1. 説明では、問題の説明に加えて、次の詳細を入力します。
+
+   * ライブ web サイトの URL。例：`www.mydomain.com`。
+   * オリジン web サイトの URL（`.hlx` URL）。
 
