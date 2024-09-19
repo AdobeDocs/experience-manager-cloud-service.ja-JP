@@ -3,7 +3,7 @@ title: Cloud ManagerでのEdge Delivery サイトの管理
 description: Edge Delivery サイトに CDN 設定を追加する方法や、Edge Delivery サイトを削除する方法を説明します。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
+source-git-commit: e28e4bf06c28f97d665e5fd86ab87d484116504f
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 3%
@@ -62,6 +62,8 @@ Edge Deliveryのサイトテーブルで、サイトを削除する行の最後�
 
      ![ 「Edge Delivery サイト」ボタンから「Edge Delivery サイトを追加」 ](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
-### サポートチケットを記録 {#eds-support-ticket}
+## サポートチケットを記録 {#eds-support-ticket}
 
 {{support-ticket}}
+
+

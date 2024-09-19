@@ -4,7 +4,7 @@ description: Edge Delivery Servicesを使用してCloud Manager プロジェク�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3db0b72a267a001b3fda5341a6c2c642babfb9eb
+source-git-commit: e28e4bf06c28f97d665e5fd86ab87d484116504f
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 6%
@@ -62,7 +62,10 @@ Edge Delivery Servicesは、プロジェクトの開始方法に応じて、様�
 >* 実稼動プログラムに適用するには、未使用のEdge Delivery Services ライセンスが必要です。
 >* Edge Delivery Servicesライセンスがプログラムに適用またはプログラムから削除されると、変更はパイプラインを実行しなくても、直ちに有効になります。
 
+
 ## Edge Delivery To Do リストについて {#ed-todo-list}
+
+<!-- &#x2460; for "1" inside circle -->
 
 **Edge Delivery To-Do リスト** はオンボーディングタスクのチェックリストで、オンボーディング、Edge Delivery サイトの管理を [ 運用開始 ](/help/journey-onboarding/go-live-checklist.md) までガイドすることを目的としています。
 
@@ -77,7 +80,6 @@ Edge Delivery Servicesは、プロジェクトの開始方法に応じて、様�
 | 5 | SSL 証明書を追加 | [SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。 |
 | 6 | Edge Delivery サイトの CDN の設定 | [CDN 設定の追加 ](#add-cdn) を参照してください。 |
 
-<!-- &#x2460; for "1" inside circle -->
 
 ## サポートチケットを記録 {#eds-support-ticket}
 
