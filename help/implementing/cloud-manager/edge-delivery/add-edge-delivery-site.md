@@ -3,9 +3,9 @@ title: Cloud ManagerへのEdge Delivery サイトの追加
 description: 実稼動プログラムまたはサンドボックスプログラムにEdge Delivery サイトを追加する方法を説明します。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ad6a0e13f27839b9900e440d60948158ddf75d99
+source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '505'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,9 @@ Edge Delivery サイトをCloud Managerに追加するには、[Edge Delivery �
 
      ![ 「Edge Delivery」タブからEdge Delivery サイトを追加する ](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
 
-   * ページの左上隅にあるハンバーガーアイコンをクリックして、左側のナビゲーションメニューを表示します。 **サービス** 見出しの下の **Edge Delivery Sites** をクリックします。 ページの右上隅付近にある「**サイトを追加**」をクリックします。
+   * ページの左上隅にある ![ サイドナビゲーションの表示と非表示 ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、サイドナビゲーションメニューを表示します。
+「**サービス**」見出しの下の「![Edge Delivery Sites の Web ページ ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**」をクリックします。
+ページの右上隅付近にある「**サイトを追加**」をクリックします。
 
      ![ 「Edge Delivery サイト」ボタンから「Edge Delivery サイトを追加」 ](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
 
@@ -46,10 +48,14 @@ Edge Delivery サイトをCloud Managerに追加するには、[Edge Delivery �
 
    | ステップ番号 | 説明 |
    | - | - |
-   | **1** | 「**リポジトリ URL**」フィールドにリストされている Git リポジトリの `main` ブランチに、パスと名前が `well-known/adobe/cloudmanager-challenge.txt` のファイルを追加します。 場所のパスの先頭にピリオドを追加し *いでください*<br> 必要に応じて、「**コピー** アイコンをクリックして、パスをクリップボードにコピーします。 |
-   | **2** | 手順 2 のテキストフィールドに表示されたコードを、手順 1 で作成したファイルに追加します。<br> 必要に応じて、「**コピー** アイコンをクリックして、コードをクリップボードにコピーします。 |
+   | **1** | 「**リポジトリ URL**」フィールドにリストされている Git リポジトリの `main` ブランチに、パスと名前が `well-known/adobe/cloudmanager-challenge.txt` のファイルを追加します。 場所のパスの先頭にピリオドを追加し *いでください*<br> 必要に応じて、「![ コピー ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) をクリックして、パスをクリップボードにコピーします。 |
+   | **2** | 手順 2 のテキストフィールドに表示されたコードを、手順 1 で作成したファイルに追加します。<br> 必要に応じて、「![ コピー ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) をクリックして、コードをクリップボードにコピーします。 |
    | **3** | 作成した変更のプルリクエストを Git リポジトリーで作成し、`main` に結合してコードをコミットします。 |
 
 1. **確認** をクリックします。
 
-リポジトリが検証されると、Edge配信サイト テーブル内のステータスが緑色の円に変わり、その内側に白いチェックマークが付きます。
+リポジトリが検証されると、Edge Delivery サイトテーブル内のステータスが緑色の円に変わり、その内側に白いチェックマークが表示されます。
+
+同じテーブルで、「![Edge Delivery サイトに関する情報」をクリックします。リポジトリの確認済み URL や、プレビューおよび実稼動 web サイトの URL など、サイトに関する詳細を表示で ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) ます。
+
+
