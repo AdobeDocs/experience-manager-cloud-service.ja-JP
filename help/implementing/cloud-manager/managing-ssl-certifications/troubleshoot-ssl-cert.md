@@ -1,20 +1,20 @@
 ---
 title: SSL 証明書エラーのトラブルシューティング
-description: 一般的な原因を特定して SSL 証明書エラーのトラブルシューティングを行い、安全な接続を維持する方法を説明します。
+description: よくある原因を特定して SSL 証明書エラーのトラブルシューティングを行い、安全な接続を維持する方法を説明します。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '331'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 
 # SSL 証明書エラーのトラブルシューティング {#certificate-errors}
 
-証明書が正しくインストールされていないか、Cloud Managerの要件を満たしていない場合は、特定のエラーが発生する場合があります。
+証明書が正しくインストールされていないか、Cloud Manager の要件を満たしていない場合は、特定のエラーが発生する場合があります。
 
 +++**正しい証明書の順序**
 
@@ -91,7 +91,7 @@ certificate:
 |---|---|---|
 | `2.23.140.1.1` | EV | はい |
 | `2.23.140.1.2.2` | OV | はい |
-| `2.23.140.1.2.1` | DV | いいえ |
+| `2.23.140.1.2.1` | DV | 不可 |
 
 証明書の出力テキストの OID パターンに対して `grep` を実行すると、証明書ポリシーを確認できます。
 
@@ -108,7 +108,7 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 +++
 
-+++**証明書の有効期限**
++++**証明書の有効期限の日付**
 
 Cloud Manager で想定している SSL 証明書の有効期間は現在の日付から少なくとも 90 日間です。証明書チェーンの有効期限を確認します。
 

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: bb75e70fb83b63e12968f7cb01e6976e367ff70e
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2630'
+ht-degree: 100%
 
 ---
 
@@ -214,7 +214,7 @@ Cloud Manager で UI テストを作成して実行するには、リポジト�
 
 >[!NOTE]
 >
-> これらの値は、パイプラインの実行中に自動的に設定されるので、パイプライン変数として手動で設定する必要はありません。
+> これらの値は、パイプラインの実行時に自動的に設定されるので、パイプライン変数として手動で設定する必要はありません。
 
 | 変数 | 例 | 説明 | テストフレームワーク |
 |----------------------------|----------------------------------|----------------------------------------------------------------------------------------------------|---------------------|
@@ -223,9 +223,9 @@ Cloud Manager で UI テストを作成して実行するには、リポジト�
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM オーサーインスタンスの URL | すべて |
 | `AEM_AUTHOR_USERNAME` | `admin` | AEM オーサーインスタンスにログインするためのユーザー名 | すべて |
 | `AEM_AUTHOR_PASSWORD` | `admin` | AEM オーサーインスタンスにログインするためのパスワード | すべて |
-| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM パブリッシュインスタンスの URL | すべて* |
-| `AEM_PUBLISH_USERNAME` | `admin` | AEM パブリッシュインスタンスにログインするためのユーザー名 | すべて* |
-| `AEM_PUBLISH_PASSWORD` | `admin` | AEM パブリッシュインスタンスにログインするためのパスワード | すべて* |
+| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM パブリッシュインスタンスの URL | すべて * |
+| `AEM_PUBLISH_USERNAME` | `admin` | AEM パブリッシュインスタンスにログインするためのユーザー名 | すべて * |
+| `AEM_PUBLISH_PASSWORD` | `admin` | AEM パブリッシュインスタンスにログインするためのパスワード | すべて * |
 | `REPORTS_PATH` | `/usr/src/app/reports` | テスト結果の XML レポートの保存先となるパス | すべて |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | テストフレームワークにアクセスできるようにファイルをアップロードする必要がある URL | すべて |
 | `PROXY_HOST` | `proxy-host` | テストフレームワークで使用される内部 HTTP プロキシのホスト名 | Selenium を除くすべて |

@@ -6,9 +6,9 @@ role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
 source-git-commit: c4cb466bf6a9b6f8f4a28943d28bdb524610f5ad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1447'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -24,13 +24,13 @@ AEM のコンテンツ翻訳機能の概要については、[多言語サイト
 
 >[!TIP]
 >
->コンテンツの翻訳を初めて行う場合は、[AEM Sites 翻訳ジャーニー](/help/journey-sites/translation/overview.md)を参照してください。これは、AEM の強力な翻訳ツールを使用して AEM Sites コンテンツを翻訳する手順を示すガイドです。AEM や翻訳の経験がないユーザーに最適です。
+>コンテンツの翻訳を初めて行う場合は、[Sites 翻訳ジャーニー](/help/journey-sites/translation/overview.md)を参照してください。これは、AEM の強力な翻訳ツールを使用して AEM Sites コンテンツを翻訳する手順を示すガイドです。AEM や翻訳の経験がないユーザーに最適です。
 
 ## 翻訳サービスプロバイダーへの接続 {#connecting-to-a-translation-service-provider}
 
-AEMを翻訳サービスプロバイダーに接続するクラウド設定を作成します。
+AEM をお使いの翻訳サービスプロバイダーに接続するためのクラウド設定を作成します。
 
-AEMには、Microsoft® Translator にデフォルトで [ 接続 ](connect-ms-translator.md) する機能が用意されています。 翻訳パートナープログラムに参加している、AEM コネクタを持つその他のAdobe Exchangeテクノロジーベンダーについては、[ こちら ](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=experience+manager+translation&amp;sort=RELEVANCE) を参照してください。
+AEM には、[Microsoft® Translator に接続](connect-ms-translator.md)する機能がデフォルトで含まれています。Adobe Exchange パートナープログラムに参加している、AEM コネクタを持つその他の翻訳テクノロジーベンダーについては、[ こちら](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=experience+manager+translation&amp;sort=RELEVANCE)を参照してください。
 
 コネクタパッケージをインストールしたら、コネクタ用のクラウド設定を作成できます。通常は、翻訳サービスで認証を行うための資格情報を指定する必要があります。Microsft Translator コネクタ用のクラウド設定の追加については、[Microsoft® Translator との統合](connect-ms-translator.md)を参照してください。
 

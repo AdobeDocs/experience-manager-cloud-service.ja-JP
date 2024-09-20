@@ -6,15 +6,15 @@ role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 solution: Experience Manager Sites
 source-git-commit: 2314ad30ea31b49d832ce0fdf729420e0ee70e0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '293'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 # Microsoft Translator への接続 {#connecting-to-microsoft-translator}
 
-AEMには、ページのコンテンツまたはアセットを翻訳する ](https://www.microsoft.com/ja-jp/translator/business/)0}Microsoft Translator} 用の組み込みコネクタが用意されています。 [Microsoft Translator を使用するためのライセンスをMicrosoftから取得したら、このページの手順に従ってコネクタを設定してください。
+AEM には、ページのコンテンツまたはアセットを翻訳する [Microsoft Translator](https://www.microsoft.com/ja-jp/translator/business/) の組み込みコネクタが用意されています。Microsoft Translator を使用するためのライセンスを Microsoft から取得したら、このページの手順に従ってコネクタを設定してください。
 
 >[!TIP]
 >
@@ -47,6 +47,6 @@ Microsoft Translator 設定を作成するには、次の手順に従います�
 1. 「**接続**」を選択して接続を確認します。
 1. 「**保存して閉じる**」を選択します。
 
-## トランスレーターサービス設定の公開 {#publishing-the-translator-service-configurations}
+## Translator サービス設定の公開 {#publishing-the-translator-service-configurations}
 
-最後の手順として、「[ ツリーの公開 ](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-and-unpublishing-a-tree) アクションを使用して、Microsoft Translator 設定を公開し、公開済みの翻訳済みコンテンツをサポートしてください。
+最後の手順として、公開された翻訳済みコンテンツをサポートするために、[ツリーの公開](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-and-unpublishing-a-tree)アクションを使用して Microsoft Translator 設定を公開してください。

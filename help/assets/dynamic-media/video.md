@@ -6,9 +6,9 @@ feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 source-git-commit: 7c195e5640f828d2c59dbabd8f29127692788576
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '9402'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -522,7 +522,7 @@ Dynamic Media では、次のサポートを有効にすることができます
 * マルチキャプションとオーディオトラック
 * AI 生成キャプション（早期アクセス）
 
-Adobeカスタマーサポートケースを作成して送信する。
+アドビカスタマーサポートケースの作成と送信によります。
 
 上記の 3 つの機能のいずれかを有効にすると、それらがすべて有効になります。そのため、DASH のみを有効にする場合は、実際には上記の 3 つの機能すべてを有効にしています。
 

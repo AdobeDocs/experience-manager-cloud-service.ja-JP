@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '705'
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Adobe Experience Manager as a Cloud Service には、`*.adobeaemcloud.com` で�
 
 ## カスタムドメイン名と独自の CDN {#byo-cdn}
 
-AEM as a Cloud Serviceには組み込みの CDN （コンテンツ配信ネットワーク）サービスが用意されていますが、AEMで使用する BYO （Bring Your Own） CDN も利用できます。 カスタムドメインは、AEM が管理する CDN か、自分が管理している CDN のいずれかにインストールできます。
+AEM as a Cloud Service にはビルトインの CDN（コンテンツ配信ネットワーク）サービスが用意されていますが、BYO（Bring Your Own）の CDN を AEM とともに使用することもできます。カスタムドメインは、AEM が管理する CDN か、自分が管理している CDN のいずれかにインストールできます。
 
 * Cloud Manager は、AEM が管理する CDN にインストールされたカスタムドメイン名と証明書を管理します。
 * BYO CDN にインストールされるカスタムドメイン名と証明書は、その CDN 内で直接管理されます。
@@ -55,9 +55,9 @@ AEM as a Cloud Serviceには組み込みの CDN （コンテンツ配信ネッ�
 | --- | --- | --- |
 | 1 | Cloud Manager への SSL 証明書の追加 | [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | Cloud Manager へのカスタムドメインの追加 | [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 3 | AEM as a Cloud Service を指す DNS CNAME または APEX レコードを追加して、DNS 設定を構成します | [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
+| 3 | AEM as a Cloud Service を指す DNS CNAME または APEX レコードを追加して、DNS 設定を構成する | [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
 | 4 | ドメイン検証ステータスの確認 | [ドメイン名ステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | DNS レコードのステータスを確認 | [DNS レコードのステータスを確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+| 5 | DNS レコードのステータスの確認 | [DNS レコードのステータスを確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >

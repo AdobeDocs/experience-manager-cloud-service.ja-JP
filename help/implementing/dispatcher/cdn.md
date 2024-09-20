@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
 source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1608'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Edge Delivery Services 層への公開を検討している顧客は、アドビ
 
 Cloud Manager のセルフサービス UI を通じて AEM の組み込み CDN を使用してコンテンツ配信の準備をするには、アドビの管理による CDN 機能を活用できます。この機能を使用すると、DV（ドメイン検証）証明書や EV／OV（拡張／組織検証）証明書などの SSL 証明書の設定とインストールを含む、セルフサービス CDN 管理を処理できます。これらの方法について詳しくは、次を参照してください。
 
-* [Cloud ManagerのEdge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+* [Cloud Manager の Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [カスタムドメイン名の概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [SSL 証明書の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
 * [CDN 設定の追加](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
