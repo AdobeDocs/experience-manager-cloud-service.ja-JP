@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 68%
+ht-degree: 79%
 
 ---
 
@@ -25,15 +25,15 @@ SSL 証明書のステータスは、**SSL 証明書**&#x200B;ページから一
 | --- | --- |
 | グリーン | 証明書は現在の日付から 14 日以上有効です。 |
 | オレンジ | 証明書の有効期限は 14 日未満です。<br>• サイトへの不正アクセスやサイトの停止を回避するために、Cloud Manager のユーザーインターフェイスで証明書を更新して置き換える計画を必ず立ててください。<br>• 証明書の有効期限が間もなく切れることを警告する通知が Cloud Manager の UI に定期的に表示されます。 |
-| レッド | SSL 証明書の有効期限が切れています。<br>[ 期限切れの顧客管理 SSL 証明書の更新 ](#update-ssl-certificate) または [SSL 証明書の削除 ](#deleting-an-ssl-certificate) を参照してください。 |
+| レッド | SSL 証明書の有効期限が切れています。<br>詳しくは、[顧客が管理する期限切れの SSL 証明書の更新](#update-ssl-certificate)または [SSL 証明書の削除](#deleting-an-ssl-certificate)を参照してください。 |
 
-## 期限切れの顧客管理 SSL 証明書の更新 {#update-ssl-certificate}
+## 顧客が管理する期限切れの SSL 証明書の更新 {#update-ssl-certificate}
 
 顧客が管理する証明書の有効期限が切れると、有効期限切れの証明書で使用されているドメインは機能しなくなります。証明書を更新すると、お使いのドメインが引き続き希望どおりに動作します。
 
 このタスクを完了するには、ユーザーが&#x200B;**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持つメンバーである必要があります。
 
-**期限切れの顧客管理 SSL 証明書を更新するには：**
+**顧客が管理する期限切れの SSL 証明書を更新するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
@@ -41,7 +41,7 @@ SSL 証明書のステータスは、**SSL 証明書**&#x200B;ページから一
 1. **環境**&#x200B;画面から、**SSL 証明書**&#x200B;画面に移動します。
 1. 更新の対象となる、顧客が管理する期限切れの証明書の行で、右端にある省略記号ボタンをクリックして、「**表示と更新**」を選択します。
 
-   ![ 期限切れの顧客管理 SSL 証明書の更新 ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
+   ![顧客が管理する期限切れの SSL 証明書の更新](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
 1. **SSL 証明書の表示と更新**&#x200B;ダイアログボックスで、次の操作を行います。
 
@@ -52,9 +52,9 @@ SSL 証明書のステータスは、**SSL 証明書**&#x200B;ページから一
 
 1. 「**更新**」をクリックして変更を保存し、自動的に適用します。—>
 
-## 期限切れの顧客管理 SSL 証明書の置換 {#replace-ssl-certificate}
+## 顧客が管理する期限切れの SSL 証明書の置換 {#replace-ssl-certificate}
 
-[ 期限切れの SSL 証明書の更新 ](#update-ssl-certificate) と同じ手順に従って、期限切れの顧客管理 SSL 証明書を置き換えます。
+[期限切れの SSL 証明書の更新](#update-ssl-certificate)で説明したのと同じ手順に従って、顧客が管理する期限切れの SSL 証明書を置き換えます。
 
 ## Adobe管理 SSL 証明書（#rename-an-ssl-certificate）の名前の変更
 
@@ -104,6 +104,6 @@ SSL 証明書の CDN 設定が既にある場合は、**SSL 証明書**&#x200B;�
 
 UI を使用して既存の環境設定をすべて移行すると、このメッセージは表示されなくなります。メッセージが表示されなくなるまでに 1～2 営業日かかる場合があります。
 
-詳しくは、[SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。
+詳しくは、[SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)を参照してください。
 
-IP許可リストまたはカスタムドメイン名に対応する既存の CDN許可リストがある環境の **IP 設定** ページと **環境** ページにも、同様のメッセージが表示されます。
+IP 許可リストまたはカスタムドメイン名に対応する既存の CDN 設定がある環境の **IP 許可リスト**&#x200B;ページと&#x200B;**環境**&#x200B;ページにも、同様のメッセージが表示されます。

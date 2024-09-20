@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 8349f6d4d4f04d8609d5a5241b973201b54b2cd2
 workflow-type: tm+mt
 source-wordcount: '5651'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -106,7 +106,7 @@ ht-degree: 97%
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024年度 {#2024}
-         + [2024.8.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-8-0.md)
+         + [リリースノート（2024.8.0）](/help/implementing/cloud-manager/release-notes/2024/2024-8-0.md)
          + [2024.7.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-7-0.md)
          + [リリースノート（2024.6.0）](/help/implementing/cloud-manager/release-notes/2024/2024-6-0.md)
          + [2024.5.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
@@ -459,9 +459,9 @@ ht-degree: 97%
    + [アセットマイクロサービスの概要](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets] でのアクセシビリティ](/help/assets/accessibility.md)
    + デジタルアセットの管理 {#manage}
-      + マイクロフロントエンドのアセットセレクター{#asset-selector}
+      + マイクロフロントエンドのアセットセレクター {#asset-selector}
          + [アセットセレクターの概要](/help/assets/overview-asset-selector.md)
-         + アセットセレクターの統合{#asset-selector-integration}
+         + アセットセレクターの統合 {#asset-selector-integration}
             + [アセットセレクターの統合の概要](/help/assets/integrate-asset-selector.md)
             + [アセットセレクターとアドビアプリケーションの統合](/help/assets/integrate-asset-selector-adobe-app.md)
             + [アセットセレクターとアドビ以外のアプリケーションの統合](/help/assets/integrate-asset-selector-non-adobe-app.md)
@@ -637,8 +637,8 @@ ht-degree: 97%
       + [コンテンツハブを使用したアセットのダウンロード](/help/assets/download-assets-content-hub.md)
       + [コンテンツハブでのコレクションの管理](/help/assets/collections-content-hub.md)
       + [Adobe Express を使用したコンテンツハブの画像の編集](/help/assets/edit-images-content-hub.md)
-      + [Content Hubのアセットインサイト](/help/assets/insights-content-hub.md)
-      + [Content Hubに関するよくある質問 ](/help/assets/frequently-asked-questions-content-hub.md)
+      + [コンテンツハブのアセットインサイト](/help/assets/insights-content-hub.md)
+      + [コンテンツハブに関するよくある質問](/help/assets/frequently-asked-questions-content-hub.md)
    + ベストプラクティス{#best-practices}
       + [検索のベストプラクティス](/help/assets/search-best-practices.md)
       + [メタデータの管理とベストプラクティス](/help/assets/metadata-best-practices.md)
@@ -676,7 +676,7 @@ ht-degree: 97%
    + はじめに {#getting-started-forms}
       + [ユースケースと開発環境の設定](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [ローン申し込みフォームの作成](/help/forms/create-adaptive-form-tutorial.md)
-   + {#integrate} の統合
+   + {#integrate} の統合 
       + サービス {#services}
          + [AEM Forms as a Cloud Service と Adobe Sign の統合](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [AEM Forms as a Cloud Service と DocuSign の統合](/help/forms/integrate-docusign-adaptive-forms.md)
@@ -1075,7 +1075,7 @@ ht-degree: 97%
          + [サンドボックスプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
-         + [休止状態の環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
+         + [環境を休止状態にする](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + AEM アプリケーションプロジェクトの作成 {#create-application-project}
          + [プロジェクト作成ウィザード](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [プロジェクトのセットアップ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -1084,12 +1084,12 @@ ht-degree: 97%
       + コードの管理 {#managing-code}
          + [Maven プロジェクトバージョンの処理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Cloud Managerでのリポジトリの管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [Adobeリポジトリーの追加](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [Adobe リポジトリの追加](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [プライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [リポジトリーへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+         + [リポジトリへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git サブモジュールのサポート](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Cloud Manager での Git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-         + [複数のリポジトリーの使用](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+         + [複数のリポジトリの使用](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [エンタープライズ開発チームのセットアップ](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
          + [GitHub チェック設定](/help/implementing/cloud-manager/managing-code/github-check-config.md)
          + [GitHub チェック注釈](/help/implementing/cloud-manager/managing-code/github-annotations.md)
@@ -1097,7 +1097,7 @@ ht-degree: 97%
       + Cloud Manager CI／CD パイプライン {#cicd-pipelines}
          + [はじめに](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-         + [実稼動以外のパイプラインを設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [パイプラインの管理](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [パイプライン変数](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md)
@@ -1118,14 +1118,14 @@ ht-degree: 97%
       + [通知](/help/implementing/cloud-manager/notifications.md)
       + [高度なネットワーク機能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=ja)
       + Edge Delivery サイト {#edge-delivery-sites}
-         + [Cloud ManagerのEdge Delivery Servicesの概要](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
-         + [Cloud ManagerへのEdge Delivery サイトの追加](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
-         + [Cloud ManagerでのEdge Delivery サイトの管理](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
+         + [Cloud Manager の Edge Delivery Services の概要](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+         + [Cloud Manager への Edge Delivery サイトの追加](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+         + [Cloud Manager での Edge Delivery サイトの管理](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + ドメイン設定 {#custom-domain-names}
          + [ドメイン設定の概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-         + [カスタムドメイン名ステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
-         + [DNS レコードのステータスを確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
+         + [カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+         + [DNS レコードのステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + SSL 証明書 {#manage-ssl-certificates}
          + [SSL 証明書の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
@@ -1138,10 +1138,10 @@ ht-degree: 97%
       + IP 許可リスト {#ip-allow-lists}
          + [IP 許可リストの概要](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [IP 許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [IP許可リストの適用と適用解除](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [IP 許可リストの適用と適用解除](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [IP 許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md)
-      + [Cloud Serviceコンテンツリクエストについて](/help/implementing/cloud-manager/content-requests.md)
+      + [Cloud Service コンテンツリクエストについて](/help/implementing/cloud-manager/content-requests.md)
       + [CDN パフォーマンスダッシュボード](/help/implementing/cloud-manager/cdn-performance.md)
       + [Cloud Manager に関する FAQ](/help/implementing/cloud-manager/faqs.md)
    + AEM as a Cloud Service 向けの開発 {#developing}
@@ -1150,7 +1150,7 @@ ht-degree: 97%
       + [AEM as a Cloud Service の SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
       + [AEM の迅速な開発環境](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [AEM as a Cloud Service の開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md)
-      + [AEM as a Cloud ServiceDeveloper Console（Beta）](/help/implementing/developing/introduction/aem-developer-console.md)
+      + [AEM as a Cloud Service Developer Console（Beta）](/help/implementing/developing/introduction/aem-developer-console.md)
       + [ログ](/help/implementing/developing/introduction/logging.md)
       + [ログ転送](/help/implementing/developing/introduction/log-forwarding.md)
       + [設定と設定ブラウザー](/help/implementing/developing/introduction/configurations.md)

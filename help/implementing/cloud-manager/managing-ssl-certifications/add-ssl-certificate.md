@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 86%
+ht-degree: 92%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 86%
 
 Cloud Manager のセルフサービスツールを使用して、顧客管理の SSL 証明書またはアドビが生成および管理する DV（ドメイン検証）証明書を追加する方法について説明します。
 
-[SSL 証明書エラーのトラブルシューティング ](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md) も参照してください。
+詳しくは、[SSL 証明書エラーのトラブルシューティング](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)も参照してください。
 
 ## SSL 証明書の追加 {#adding-an-ssl-certificate}
 
@@ -49,7 +49,7 @@ Cloud Manager のセルフサービスツールを使用して、顧客管理の
 
    | | ユースケース | ステップ |
    | --- | --- | --- |
-   | 1 | **アドビが管理する証明書（DV）を追加** | **アドビが管理する証明書（DV）を追加するには：**<br> a.「**アドビが管理する（DV）**」証明書タイプを選択します。<br>![DV 証明書の追加 ](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b.「**証明書名**」フィールドに、証明書に関連付ける名前を入力します。<br>c.**ドメインを選択** ドロップダウンリストで、DV 証明書に関連付けるドメインを 1 つ以上選択します。<br>選択するドメインがありませんか？その場合は、カスタムドメインを追加する必要があります。[ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。 カスタムドメイン名の追加が完了したら、このトピックに戻って手順 1 から再度開始します。<br>d. 手順 7 に進みます。 |
+   | 1 | **アドビが管理する証明書（DV）を追加** | **アドビが管理する証明書（DV）を追加するには：**<br> a.「**アドビが管理する（DV）**」証明書タイプを選択します。<br>![DV 証明書の追加 ](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b.「**証明書名**」フィールドに、証明書に関連付ける名前を入力します。<br>c.**ドメインを選択** ドロップダウンリストで、DV 証明書に関連付けるドメインを 1 つ以上選択します。<br>選択するドメインがありませんか？その場合は、カスタムドメインを追加する必要があります。詳しくは、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。カスタムドメイン名の追加が完了したら、このトピックに戻って手順 1 から再度開始します。<br>d. 手順 7 に進みます。 |
    | 2 | **顧客管理証明書（OV／EV）を追加** | **顧客管理証明書（OV／EV）を追加するには：**<br> a.「**顧客管理（OV／EV）**」証明書タイプを選択します。<br>b.「**証明書名**」フィールドに、証明書の名前を入力します。このフィールドは情報提供のみを目的とし、証明書を簡単に参照するのに役立つ任意の名前を指定できます。<br>c.「**証明書**」、「**秘密鍵**」、「**証明書チェーン**」の各フィールドに必要な値を貼り付けます。<br>![SSL 証明書を追加ダイアログボックス](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>値で検出されたエラーが表示されます。証明書を保存する前に、すべてのエラーに対処する必要があります。一般的なエラーのトラブルシューティング方法について詳しくは、[証明書エラー](#certificate-errors)を参照してください。<br>d. 手順 7 に進みます。 |
 
 <!--
@@ -73,7 +73,7 @@ Cloud Manager のセルフサービスツールを使用して、顧客管理の
 
 1. ダイアログボックスの右下隅にある「**保存**」をクリックします。
 
-   証明書が正常に発行されると、「**SSL 証明書** 表に緑色のチェックマークが表示されます。
+   証明書が正常に発行されると、**SSL 証明書**&#x200B;表に緑色のチェックマークが表示されます。
 
 これで、プロジェクトに機能する SSL 証明書が追加されました。この手順は、多くの場合、カスタムドメイン名を設定する最初の手順となります。
 
