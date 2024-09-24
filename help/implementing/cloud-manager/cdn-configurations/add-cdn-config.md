@@ -5,15 +5,15 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 6%
+source-wordcount: '448'
+ht-degree: 7%
 
 ---
 
 
-# CDN 設定の追加 {#add-cdn}
+# CDN （コンテンツ配信ネットワーク）設定の追加 {#add-cdn}
 
 プログラム内でAdobeが管理する CDN の SSL 証明書にドメインをリンクするには、CDN （コンテンツ配信ネットワーク）設定を追加する必要があります。
 
@@ -29,7 +29,7 @@ Adobeが管理する CDN の場合、DV 証明書を使用する場合、ACME �
 
 1. ユースケースに応じて、次のいずれかの操作を行います。
 
-   | ユースケース | 手順 |
+   | ユースケース | ステップ |
    | --- | --- |
    | Cloud Managerの *既存の* Edge Delivery サイトに CDN 設定を追加したいのですが、 | 回答：左側のナビゲーションパネルの **サービス** の下の **Edge Delivery Sites** をクリックします。<br>b.Edge Delivery テーブルで、ドメインが関連付けられていない行の最後にある「。..」をクリックします。<br>c.**CDN を設定** をクリックします。  ![Edge Delivery サイトの CDN を設定をクリックする ](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png) |
    | Cloud Managerに CDN 設定を追加したいのですが、 | a.左側のナビゲーションパネルの **サービス** の下の **CDN 設定** をクリックします。<br>b.CDN 設定ページの右上隅付近にある「**追加**」をクリックします。 |

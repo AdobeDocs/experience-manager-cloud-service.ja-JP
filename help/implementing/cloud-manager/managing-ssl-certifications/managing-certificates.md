@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 79%
+source-wordcount: '949'
+ht-degree: 67%
 
 ---
 
@@ -35,10 +35,10 @@ SSL 証明書のステータスは、**SSL 証明書**&#x200B;ページから一
 
 **顧客が管理する期限切れの SSL 証明書を更新するには：**
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) でCloud Managerにログインし、適切なプログラムを選択します。
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
-1. **概要**&#x200B;ページから、**環境**&#x200B;画面に移動します。
-1. **環境**&#x200B;画面から、**SSL 証明書**&#x200B;画面に移動します。
+1. ページの左上隅にある ![ メニューアイコンを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、サイドメニューを表示します。
+1. **サービス** 見出しの下の ![ 閉じたアイコンをロック ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL 証明書** をクリックします。
 1. 更新の対象となる、顧客が管理する期限切れの証明書の行で、右端にある省略記号ボタンをクリックして、「**表示と更新**」を選択します。
 
    ![顧客が管理する期限切れの SSL 証明書の更新](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
@@ -50,7 +50,7 @@ SSL 証明書のステータスは、**SSL 証明書**&#x200B;ページから一
    * 「**秘密鍵**」フィールドでは、証明書に変更を加えた場合にのみ、このフィールドを更新します。
    * 「**証明書チェーン**」フィールド（または信頼チェーン）に、証明書チェーンを貼り付けます。
 
-1. 「**更新**」をクリックして変更を保存し、自動的に適用します。—>
+1. 「**更新**」をクリックして変更を保存し、自動的に適用されるようにします。
 
 ## 顧客が管理する期限切れの SSL 証明書の置換 {#replace-ssl-certificate}
 
@@ -68,10 +68,10 @@ SSL 証明書のステータスは、**SSL 証明書**&#x200B;ページから一
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) でCloud Managerにログインし、適切なプログラムを選択します。
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
-1. ページの左上隅にあるハンバーガーアイコンをクリックして、左側のナビゲーションメニューを表示します。
-1. **サービス** 見出しの下の **SSL 証明書** をクリックします。
-1. **SSL 証明書** ページで、証明書の名前を変更する行の最後にある省略記号をクリックします。
-1. **名前変更** をクリックします。
+1. ページの左上隅にある ![ メニューアイコンを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、サイドメニューを表示します。
+1. **サービス** 見出しの下の ![ 閉じたアイコンをロック ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL 証明書** をクリックします。
+1. **SSL 証明書** ページで、*Adobe管理 ![ 証明書の名前を変更する行の最後にある ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 詳細アイコン* をクリックします。
+1. ドロップダウンメニューで、「**名前を変更**」をクリックします。
 1. **DV 証明書の名前を変更** ダイアログボックスで、**証明書名** テキストフィールドに証明書の新しい名前を入力します。
 1. **名前変更** をクリックします。
 
@@ -87,10 +87,12 @@ SSL 証明書のステータスは、**SSL 証明書**&#x200B;ページから一
 
 **SSL 証明書を削除するには：**
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
-1. **概要**&#x200B;ページから、**環境**&#x200B;画面に移動します。
-1. **環境**&#x200B;画面から、**SSL 証明書**&#x200B;画面に移動します。
-1. 削除する証明書の行で、右端にある省略記号ボタンをクリックし、「**削除**」を選択します。
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) でCloud Managerにログインし、適切なプログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
+1. ページの左上隅にある ![ メニューアイコンを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、サイドメニューを表示します。
+1. **サービス** 見出しの下の ![ 閉じたアイコンをロック ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL 証明書** をクリックします。
+1. SSL 証明書ページで、削除する証明書の表の行で、右端にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします
+1. ドロップダウンメニューで、「**削除**」をクリックします。
 次の画像に示すように、「削除」ボタンに情報アイコンが表示されている場合は、上記のメモを参照してください。
 
    ![情報アイコン付きの「削除」ボタン](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
@@ -102,8 +104,9 @@ SSL 証明書のステータスは、**SSL 証明書**&#x200B;ページから一
 
 SSL 証明書の CDN 設定が既にある場合は、**SSL 証明書**&#x200B;ページに情報メッセージが表示されます。これらの設定を UI を通じて追加し、Cloud Manager で表示および管理できるようにすることをお勧めします。
 
-UI を使用して既存の環境設定をすべて移行すると、このメッセージは表示されなくなります。メッセージが表示されなくなるまでに 1～2 営業日かかる場合があります。
+UI を使用して既存の環境設定をすべて移行すると、このメッセージは表示されなくなります。メッセージが消えるまでに 1～2 営業日かかる場合があります。
 
 詳しくは、[SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)を参照してください。
 
 IP 許可リストまたはカスタムドメイン名に対応する既存の CDN 設定がある環境の **IP 許可リスト**&#x200B;ページと&#x200B;**環境**&#x200B;ページにも、同様のメッセージが表示されます。
+

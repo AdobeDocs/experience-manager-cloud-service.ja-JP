@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 92%
+source-wordcount: '547'
+ht-degree: 69%
 
 ---
 
@@ -33,24 +33,21 @@ Cloud Manager のセルフサービスツールを使用して、顧客管理の
 
 **SSL 証明書を追加するには：**
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
-
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) でCloud Managerにログインし、適切なプログラムを選択します。
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
-
-1. **概要**&#x200B;ページから、**環境**&#x200B;画面に移動します。
-
-1. 左側のナビゲーションパネルの&#x200B;**サービス**&#x200B;で、「**SSL 証明書**」をクリックします。次の画像に示すように左側のナビゲーションパネルが表示されない場合は、左上隅のハンバーガーアイコンをクリックする必要があります。
+1. ページの左上隅にある ![ メニューアイコンを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、サイドメニューを表示します。
+1. **サービス** 見出しの下の ![ 閉じたアイコンをロック ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL 証明書** をクリックします。
 
    ![SSL 証明書の追加](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
 
-1. ページの右上隅にある「**SSL 証明書を追加**」をクリックします。
+1. SSL 証明書ページの右上隅付近にある「**SSL 証明書を追加**」をクリックします。
 
 1. **SSL 証明書を追加**&#x200B;ダイアログボックスで、[特定のユースケース](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)に基づいて、次のいずれかの操作を行います。
 
    | | ユースケース | ステップ |
    | --- | --- | --- |
-   | 1 | **アドビが管理する証明書（DV）を追加** | **アドビが管理する証明書（DV）を追加するには：**<br> a.「**アドビが管理する（DV）**」証明書タイプを選択します。<br>![DV 証明書の追加 ](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b.「**証明書名**」フィールドに、証明書に関連付ける名前を入力します。<br>c.**ドメインを選択** ドロップダウンリストで、DV 証明書に関連付けるドメインを 1 つ以上選択します。<br>選択するドメインがありませんか？その場合は、カスタムドメインを追加する必要があります。詳しくは、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。カスタムドメイン名の追加が完了したら、このトピックに戻って手順 1 から再度開始します。<br>d. 手順 7 に進みます。 |
-   | 2 | **顧客管理証明書（OV／EV）を追加** | **顧客管理証明書（OV／EV）を追加するには：**<br> a.「**顧客管理（OV／EV）**」証明書タイプを選択します。<br>b.「**証明書名**」フィールドに、証明書の名前を入力します。このフィールドは情報提供のみを目的とし、証明書を簡単に参照するのに役立つ任意の名前を指定できます。<br>c.「**証明書**」、「**秘密鍵**」、「**証明書チェーン**」の各フィールドに必要な値を貼り付けます。<br>![SSL 証明書を追加ダイアログボックス](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>値で検出されたエラーが表示されます。証明書を保存する前に、すべてのエラーに対処する必要があります。一般的なエラーのトラブルシューティング方法について詳しくは、[証明書エラー](#certificate-errors)を参照してください。<br>d. 手順 7 に進みます。 |
+   | 1 | **Adobe管理（DV）証明書を追加する** | **Adobe管理（DV）証明書を追加するには：**<br> a.**SSL 証明書を追加** ダイアログボックスで、証明書の種類として **Adobe管理（DV）** を選択します。<br>![DV 証明書の追加 ](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b.「**証明書名**」フィールドに、証明書に関連付ける名前を入力します。<br>c.**ドメインを選択** ドロップダウンリストで、DV 証明書に関連付けるドメインを 1 つ以上選択します。<br>選択するドメインがありませんか？その場合は、カスタムドメインを追加する必要があります。詳しくは、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。カスタムドメイン名の追加が完了したら、このトピックに戻って手順 1 から再度開始します。<br>d. 手順 7 に進みます。 |
+   | 2 | **顧客管理（OV/EV）証明書の追加** | **顧客管理（OV/EV）証明書を追加するには：**<br> a.**SSL 証明書を追加** ダイアログボックスで、証明書の種類 **顧客管理（OV/EV）** を選択します。<br>b.「**証明書名**」フィールドに、証明書の名前を入力します。このフィールドは情報提供のみを目的とし、証明書を簡単に参照するのに役立つ任意の名前を指定できます。<br>c.「**証明書**」、「**秘密鍵**」、「**証明書チェーン**」の各フィールドに必要な値を貼り付けます。<br>![SSL 証明書を追加ダイアログボックス](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>値で検出されたエラーが表示されます。証明書を保存する前に、すべてのエラーに対処する必要があります。一般的なエラーのトラブルシューティング方法について詳しくは、[証明書エラー](#certificate-errors)を参照してください。<br>d. 手順 7 に進みます。 |
 
 <!--
     **Add an SSL certificate:**
@@ -73,7 +70,7 @@ Cloud Manager のセルフサービスツールを使用して、顧客管理の
 
 1. ダイアログボックスの右下隅にある「**保存**」をクリックします。
 
-   証明書が正常に発行されると、**SSL 証明書**&#x200B;表に緑色のチェックマークが表示されます。
+   証明書が正常に発行されると、**SSL 証明書** 表に緑色のチェックマーク（有効）が表示されます。
 
 これで、プロジェクトに機能する SSL 証明書が追加されました。この手順は、多くの場合、カスタムドメイン名を設定する最初の手順となります。
 

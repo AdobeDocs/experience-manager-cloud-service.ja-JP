@@ -5,9 +5,9 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '447'
 ht-degree: 58%
 
 ---
@@ -33,10 +33,10 @@ AdobeCloud Managerでは、次の理由により、カスタムドメイン名�
 
 1. ページの左上隅にあるハンバーガーアイコンをクリックして、左側のナビゲーションメニューを表示します。
 1. **サービス** 見出しの下の「**CDN 設定**」をクリックします。
-1. **CDN 設定** ページで、CDN を編集する行の最後にある省略記号をクリックします。
+1. **CDN 設定** ページで、CDN を編集する行の最後にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 1. 「**編集**」をクリックします。
 1. **CDN 設定を編集** ダイアログボックスで、次の操作を行います。
-   * 「**層**」ドロップダウンリストで、使用する層（オーサーまたはPublish）を選択します。
+   * 「**層**」ドロップダウンリストで、使用する層（Publishまたはプレビュー）を選択します。
    * **SSL 証明書** ドロップダウンリストで、使用する SSL 証明書を選択します。
 1. 「**更新**」をクリックします。
 

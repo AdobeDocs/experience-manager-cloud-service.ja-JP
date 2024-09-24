@@ -4,15 +4,15 @@ description: Cloud Managerを使用して、Edge Delivery サイトまたはClou
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '468'
 ht-degree: 15%
 
 ---
 
 
-# CDN 設定の管理 {#manage-cdn-configurations}
+# CDN （コンテンツ配信ネットワーク）設定の管理 {#manage-cdn-configurations}
 
 Cloud Managerを使用して、Edge Delivery サイトまたはCloud Manager環境の CDN 設定を編集、更新、削除する方法について説明します。
 
@@ -31,7 +31,7 @@ Cloud ManagerのAdobeでは、いくつかの理由で、環境層（Publishま�
 **CDN 設定を編集するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
-1. 左側のナビゲーションパネルの **サービス** の下の **CDN 設定** をクリックします。
+1. サイドパネルの **サービス** で、「**CDN 設定**」をクリックします。
 1. **CDN 設定** テーブルで、CDN 設定を編集する行の最後にある省略記号をクリックします。
 
    ![CDN 設定の編集 ](/help/implementing/cloud-manager/assets/cdn-config-edit.png)

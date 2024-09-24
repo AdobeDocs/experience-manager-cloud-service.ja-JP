@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f45de13049f78f97b256235d9395695cb531c40d
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '1490'
-ht-degree: 97%
+source-wordcount: '1489'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ Cloud Manager でカスタムドメイン名を追加する前に、次の要件
 
 * [SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) のドキュメントに記載されているように、カスタムドメイン名を追加する前に、追加するドメインのドメイン SSL 証明書を追加する必要があります。
 * Cloud Manager でカスタムドメイン名を追加するには、**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割が必要です。
-* Fastly または他の CDN を使用している。
+* Fastly または他の CDN （コンテンツ配信ネットワーク）を使用している。
 
 >[!IMPORTANT]
 >
@@ -31,22 +31,22 @@ Cloud Manager でカスタムドメイン名を追加する前に、次の要件
 
 ## カスタムドメイン名の追加先 {#where-to-add-cdn}
 
-Cloud Manager では、次の 2 つの場所からカスタムドメイン名を追加できます。
+カスタムドメイン名は、Cloud Managerの次の 2 つの場所から追加できます。
 
-* [ドメイン設定ページから](#adding-cdn-settings)
-* [環境ページから](#adding-cdn-environments)
+* [ドメイン設定ページ](#adding-cdn-settings)
+* [環境ページ](#adding-cdn-environments)
 
 カスタムドメイン名を追加する場合、最も具体的で有効な証明書を使用してドメインが提供されます。複数の証明書が同じドメインを持つ場合は、直近に更新されたものが選択されます。重複するドメインがないように証明書を管理することをお勧めします。
 
-このドキュメントで説明するどちらの方法の手順も、Fastly に基づいています。別の CDN を使用した場合は、使用するように選択した CDN をドメインに設定します。
+このドキュメントで説明するどちらの方法の手順も、Fastly に基づいています。別の CDN （コンテンツ配信ネットワーク）を使用している場合は、使用するように選択した CDN でドメインを設定します。
 
-## ドメイン設定ページからのカスタムドメイン名の追加 {#adding-cdn-settings}
+## カスタムドメイン名の追加 {#adding-cdn-settings}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 
-1. 左側のナビゲーションパネルで、「**ドメイン設定**」タブを選択します。
+1. サイドメニューの **サービス** で、**ドメイン設定** を選択します。
 
    ![ドメイン設定ウィンドウ](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
@@ -59,7 +59,7 @@ Cloud Manager では、次の 2 つの場所からカスタムドメイン名を
 
 1. **ドメインを検証**&#x200B;ダイアログボックスの&#x200B;**このドメインで使用する予定の証明書タイプは何ですか?**&#x200B;ドロップダウンリストで、次のオプションのいずれかを選択します。
 
-   | 証明書タイプ | 説明 |
+   | 証明書の種類オプション | 説明 |
    | --- | --- |
    | アドビが管理する証明書 | DV（ドメイン検証）証明書を使用する場合に選択します。このオプションは、ほとんどの場合に最適で、基本的なドメイン検証を提供します。証明書は、アドビによって管理され、自動的に更新されます。 |
    | 顧客が管理する証明書 | EV または OV 証明書を使用する場合に選択します。このオプションでは、EV（拡張検証）または OV（組織検証）でセキュリティが強化されます。より厳しい検証、より高い信頼レベル、証明書に対するカスタム管理のいずれかが必要な場合に使用します。 |
@@ -207,6 +207,8 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
 
 
 ## 環境ページからのカスタムドメイン名の追加 {#adding-cdn-environments}
+
+<!-- I DON'T SEE THIS ABILITY ANYMORE IN THE UI -->
 
 **環境**&#x200B;ページからカスタムドメイン名を追加する手順は、[ドメイン設定ページからカスタムドメイン名を追加](#adding-cdn-settings)する場合と同じですが、エントリポイントが異なります。**環境**&#x200B;ページからカスタムドメイン名を追加するには、次の手順に従います。
 
