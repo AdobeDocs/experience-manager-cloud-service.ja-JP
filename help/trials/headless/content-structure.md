@@ -6,10 +6,10 @@ index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
-source-wordcount: '1003'
-ht-degree: 100%
+source-git-commit: c9cddf9f0e344a2a24ee1a608b3ea920e258f34a
+workflow-type: tm+mt
+source-wordcount: '1013'
+ht-degree: 99%
 
 ---
 
@@ -90,6 +90,7 @@ Adventure のタイトルを入力するフィールドは既に存在します�
 
    * **レンダリング時の名前：****テキスト領域** - Adventure を作成すると、このフィールドには旅行の簡単な説明が格納されます。
    * **フィールドラベル：**`Description` - Adventure を作成する際にこのフィールドに表示されるラベルです。
+   * **デフォルトのタイプ**:**プレーンテキスト** – この例に必要な形式。
 
 1. Adventure の価格を格納するフィールドを追加します。**1 行のテキスト**&#x200B;フィールドをドラッグ＆ドロップして、次のプロパティを入力します。
 
