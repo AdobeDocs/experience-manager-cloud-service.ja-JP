@@ -3,7 +3,7 @@ title: Edge Delivery Servicesのパスマッピング
 description: AEM オーサーインスタンスで使用されるページパスを web サイトで使用されるパブリックページパスにマッピングし、Edge Delivery Servicesに公開するコンテンツを制御する方法について説明します。
 feature: Edge Delivery Services
 role: User
-source-git-commit: 51a2b453ccce39cb42c927a088bc088083545542
+source-git-commit: 2727744f276ee5facae718a987dcc6dc54d4e917
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -95,8 +95,8 @@ Edge Delivery Servicesページで使用されるAssetsは、通常、web ペー
    }'
    ```
 
-1. プロジェクトで設定サービスを使用しない場合、パスマッピングはプロジェクト GitHub リポジトリの paths.json ファイルを介して設定されます。
+1. プロジェクトで設定サービスを使用しない場合、パスマッピングはプロジェクト GitHub リポジトリの `paths.json` ファイルを介して設定されます。
 
-   * 例については、[`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json`](/https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json) を参照してください。
+   * 例については、[`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json) を参照してください。
 
 どちらの場合も、パスマッピングを設定したら、公開アクセス可能な設定 URL `https://<branch>--<site>--<org>.aem.page/config.json` を使用して設定を確認できます。
