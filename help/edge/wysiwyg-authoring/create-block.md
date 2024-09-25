@@ -1,33 +1,33 @@
 ---
 title: ユニバーサルエディターで使用するために実装されたブロックの作成
-description: Edge Delivery Services プロジェクトでの WYSIWYG オーサリングのユニバーサルエディターで使用するために実装されたブロックを作成する方法を説明します。
+description: Edge Delivery Servicesプロジェクトを使用したWYSIWYG オーサリングで、ユニバーサルエディターで使用するために実装されたブロックを作成する方法を説明します。
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 772fcc2688edb57eca3b84689de1d1c47f87dcd0
+source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 64%
+source-wordcount: '1445'
+ht-degree: 62%
 
 ---
 
 
 # ユニバーサルエディターで使用するために実装されたブロックの作成 {#create-block}
 
-Edge Delivery Services プロジェクトでの WYSIWYG オーサリングのユニバーサルエディターで使用するために実装されたブロックを作成する方法を説明します。
+Edge Delivery Servicesプロジェクトを使用したWYSIWYG オーサリングで、ユニバーサルエディターで使用するために実装されたブロックを作成する方法を説明します。
 
 ## 前提条件 {#prerequisites}
 
-このガイドでは、Edge Delivery Servicesプロジェクトを使用した WYSIWYG オーサリングでユニバーサルエディター用に実装されたブロックを作成する手順を説明します。 ここでは、コンポーネントの追加、ユニバーサルエディターでのコンポーネント定義の読み込み、ページの公開、ブロック装飾とスタイルの実装、実稼動環境への変更の反映および検証について説明します。このガイドを完了すると、独自のプロジェクト用に新しいブロックを作成してデプロイできます。
+このガイドでは、Edge Delivery Servicesプロジェクトを使用したWYSIWYG オーサリングでユニバーサルエディター用に実装されたブロックを作成する手順を説明します。 ここでは、コンポーネントの追加、ユニバーサルエディターでのコンポーネント定義の読み込み、ページの公開、ブロック装飾とスタイルの実装、実稼動環境への変更の反映および検証について説明します。このガイドを完了すると、独自のプロジェクト用に新しいブロックを作成してデプロイできます。
 
-このガイドには、Edge Delivery Servicesプロジェクトでの WYSIWYG オーサリングと、ユニバーサルエディターに関する十分な知識が必要です。 このガイドを始める前に、Edge Delivery Services へのアクセス権を持ち、次の項目について基本事項を理解しておく必要があります。
+このガイドには、Edge Delivery Services プロジェクトでのWYSIWYG オーサリングと、ユニバーサルエディターに関する十分な知識が必要です。 このガイドを始める前に、Edge Delivery Services へのアクセス権を持ち、次の項目について基本事項を理解しておく必要があります。
 
 * [Edge Delivery Service のチュートリアル](/help/edge/developer/tutorial.md)を完了していること。
 * [AEM Cloud Service サンドボックス](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)にアクセスできること。
 * [同じサンドボックス環境でユニバーサルエディターが有効になっている](/help/implementing/universal-editor/getting-started.md)こと。
-* [Edge Delivery Servicesを使用した WYSIWYG オーサリングの開発者向け入門ガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) を完了しました。
+* [Edge Delivery Servicesを使用したWYSIWYG オーサリングの開発者向け入門ガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) を完了しました。
 
-このガイドは、[Edge Delivery Servicesを使用した WYSIWYG オーサリングの開発者向けスタートガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) ガイドで行われる作業に基づいています。
+このガイドは、[Edge Delivery ServicesでのWYSIWYG オーサリングの開発者向けスタートガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) ガイドで行われる作業に基づいています。
 
 ## プロジェクトへの新しいブロックの追加 {#add-block}
 
@@ -45,7 +45,7 @@ Edge Delivery Services プロジェクトでの WYSIWYG オーサリングのユ
 
 ### ブロック定義とモデルの作成 {#create-block-model}
 
-1&amp;period; Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) ガイドを使用した WYSIWYG オーサリング向け [ 開発者向けスタートガイドで作成した GitHub プロジェクトをローカルにクローンし、選択したエディターで開きます。
+1&amp;period; WYSIWYG Edge Delivery Services オーサリング用 [ 開発者向けスタートガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) ガイドで作成した GitHub プロジェクトをローカルにクローンし、選択したエディターで開きます。
 
 * ここでは、説明のために Microsoft のコードを使用しています。
 
@@ -85,7 +85,7 @@ Edge Delivery Services プロジェクトでの WYSIWYG オーサリングのユ
 
 3&amp;period; プロジェクトのルートにある `component-models.json` ファイルを編集し、新しい引用ブロックに次の [ モデル定義 ](/help/implementing/universal-editor/field-types.md#model-structure) を追加して、ファイルを保存します。
 
-* コンテンツモデルの作成時に考慮すべき重要な点について詳しくは、[Edge Delivery Servicesプロジェクトを使用した WYSIWYG オーサリング向けコンテンツモデリング ](/help/edge/wysiwyg-authoring/content-modeling.md) を参照してください。
+* コンテンツモデルの作成時に考慮すべき重要な事項について詳しくは、[Edge Delivery ServicesプロジェクトでのWYSIWYG オーサリング向けコンテンツモデリング ](/help/edge/wysiwyg-authoring/content-modeling.md) を参照してください。
 
 >[!BEGINTABS]
 
@@ -155,7 +155,7 @@ Edge Delivery Services プロジェクトでの WYSIWYG オーサリングのユ
 
 基本的な引用ブロックが定義され、サンプルプロジェクトにコミットされたので、既存のページに引用ブロックを追加できます。
 
-1. ブラウザーで、AEM as a Cloud Service にログインします。[Sites コンソールを使用 ](/help/sites-cloud/authoring/basic-handling.md)、Edge Delivery Servicesによる WYSIWYG オーサリング向け [ 開発者向けスタートガイドで作成したサイトに移動 ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) て、ページを選択します。
+1. ブラウザーで、AEM as a Cloud Service にログインします。[Sites コンソールを使用 ](/help/sites-cloud/authoring/basic-handling.md)、WYSIWYG オーサリング用 [Edge Delivery Services開発者向けスタートガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) ガイドで作成したサイトに移動し、ページを選択します。
 
    * この場合、説明のために `index` を使用しています。
 
@@ -331,13 +331,19 @@ export default function decorate(block) {
 
 新しいモデルを使用したコンテンツの公開は、モデルを `main` ブランチに結合した場合にのみサポートされます。
 
+## ドキュメントベースのオーサリングのためのブロックの再利用 {#reusing-blocks}
+
+同じコンテンツモデルに準拠する場合は、WYSIWYG オーサリング用にユニバーサルエディターを使用して、作成したブロックをドキュメントベースのオーサリングに使用できます。
+
+詳しくは、[WYSIWYGおよびドキュメントベースのオーサリングのためのブロック ](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md) を参照してください。
+
 ## 次の手順 {#next-steps}
 
 これでブロックの作成方法がわかったので、コンテンツのセマンティックモデルを作成して効率的な開発者エクスペリエンスを実現する方法を理解することが不可欠です。
 
-Edge Delivery Servicesプロジェクトでの WYSIWYG オーサリング向けコンテンツモデリングの仕組みについては、[Edge Delivery Servicesプロジェクトでの WYSIWYG オーサリング向けコンテンツモデリング ](/help/edge/wysiwyg-authoring/content-modeling.md) を参照してください。
+コンテンツモデリングがEdge Delivery ServicesプロジェクトでのWYSIWYG オーサリングでどのように機能するかを詳しくは、[Edge Delivery ServicesプロジェクトでのWYSIWYG オーサリング向けコンテンツモデリング ](/help/edge/wysiwyg-authoring/content-modeling.md) を参照してください。
 
 >[!TIP]
 >
->AEM as a Cloud Serviceをコンテンツソースとする WYSIWYG オーサリングが可能な新しいEdge Delivery Servicesプロジェクトの作成に関するエンドツーエンドのチュートリアルについては、[ このAEM GEMs ウェビナー ](https://experienceleague.adobe.com/ja/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery) を参照してください。
+>AEM as a Cloud Serviceをコンテンツソースとして使用したWYSIWYG オーサリングが可能な新しいEdge Delivery Servicesプロジェクトの作成に関するエンドツーエンドのチュートリアルについては、[ このAEM GEMs ウェビナー ](https://experienceleague.adobe.com/ja/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery) を参照してください。
 
