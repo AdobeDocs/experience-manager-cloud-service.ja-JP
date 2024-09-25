@@ -4,10 +4,10 @@ description: このガイドでは、Edge Delivery ServicesとWYSIWYG コンテ�
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 86%
+source-wordcount: '1223'
+ht-degree: 85%
 
 ---
 
@@ -113,6 +113,10 @@ Edge Delivery Services では GitHub を活用しているので、GitHub リポ
 1. 必要に応じてコミットメッセージを追加し、「**変更をコミット**」をクリックして、変更を `main` 分岐に直接コミットします。
 
    ![変更のコミット](assets/edge-dev-getting-started/commit-paths-changes.png)
+
+>[!TIP]
+>
+>Edge Delivery Servicesマッピングについて詳しくは、「パスのパスマッピング [ のドキュメントを参照してください。](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ### 新しい AEM サイトの作成と編集 {#create-aem-site}
 

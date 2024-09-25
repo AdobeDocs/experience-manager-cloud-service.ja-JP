@@ -3,13 +3,13 @@ title: 分類データの管理
 description: Edge Delivery ServicesサイトでAEMとタグを使用するための分類データを管理する方法を説明します。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
+exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '845'
 ht-degree: 7%
 
 ---
-
 
 # 分類データの管理 {#managing-taxonomy-data}
 
@@ -108,6 +108,10 @@ Edge Delivery Servicesサイトの表形式のデータを管理して公開す�
    * `main` にコミットするか、プロセスに従ってプルリクエストを作成します。
 
 このプロセスは、分類ページごとに 1 回だけ実行する必要があります。 完了したら、分類を公開できます。
+
+>[!TIP]
+>
+>Edge Delivery Servicesマッピングについて詳しくは、「パスのパスマッピング [ のドキュメントを参照してください。](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ## 分類の公開 {#publishing}
 

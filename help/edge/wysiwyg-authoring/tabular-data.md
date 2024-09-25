@@ -4,10 +4,10 @@ description: スプレッドシートを使用して、Edge Delivery Services �
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: f8e305f636c7a7247d2a41f6ed25b1715bd8837c
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 97%
+source-wordcount: '986'
+ht-degree: 95%
 
 ---
 
@@ -121,6 +121,10 @@ AEM でスプレッドシートのデータを公開するには、さらにプ�
    ![バナーによる公開の確認](assets/tabular-data/tabular-data-publish-banner.png)
 
 リダイレクトスプレッドシートが公開され、公にアクセスできるようになりました。
+
+>[!TIP]
+>
+>Edge Delivery Servicesマッピングについて詳しくは、「パスのパスマッピング [ のドキュメントを参照してください。](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ## その他のスプレッドシートタイプ {#other}
 
