@@ -4,10 +4,10 @@ description: AEM as a Cloud Serviceでの Splunk およびその他のログベ�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bf0b577de6174c13f5d3e9e4a193214c735fb04d
+source-git-commit: 17d195f18055ebd3a1c4a8dfe1f9f6bc35ebaf37
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 1%
+source-wordcount: '1362'
+ht-degree: 3%
 
 ---
 
@@ -44,14 +44,7 @@ AEMと Apache/Dispatcherのログを、専用のエグレス IP などのAEMの�
 
 ## 設定 {#setup}
 
-1. Git のプロジェクトの最上位フォルダーに、次のフォルダーとファイル構造を作成します。
-
-   ```
-   config/
-        logForwarding.yaml
-   ```
-
-1. メタデータと、次の形式に類似した設定を含める必要が `logForwarding.yaml` ります（例として Splunk を使用）。
+1. `logForwarding.yaml` という名前のファイルを作成します。[ 設定パイプラインの記事 ](/help/operations/config-pipeline.md#common-syntax) で説明しているように、メタデータ（**kind** を `LogForwarding` に、バージョンを「1」に設定する必要があります）と、次のような設定を含める必要があります（例として Splunk を使用します）。
 
    ```
    kind: "LogForwarding"
@@ -67,52 +60,51 @@ AEMと Apache/Dispatcherのログを、専用のエグレス IP などのAEMの�
          index: "AEMaaCS"
    ```
 
-   **kind** パラメーターはに設定する必要があります。また `LogForwarding` バージョンはスキーマバージョン（1）に設定する必要があります。
+1. [設定パイプラインの使用](/help/operations/config-pipeline.md#folder-structure)で説明されているように、*config* または類似の名前の最上位フォルダーの下のどこかにファイルを配置します。
 
-   設定内のトークン（`${{SPLUNK_TOKEN}}` など）は秘密鍵を表しているので、Git に保存しないでください。 代わりに、**secret** 型のCloud Manager[ 環境変数 ](/help/implementing/cloud-manager/environment-variables.md) として宣言します。 ログをオーサー層、パブリッシュ層およびプレビュー層に転送できるように、「適用されるサービス」フィールドのドロップダウン値として **すべて** を必ず選択してください。
+1. RDE 以外の環境タイプ（現在サポートされていません）の場合は、[ この節 ](/help/operations/config-pipeline.md#creating-and-managing) で参照されているように、Cloud Managerでターゲット設定パイプラインを作成します。フルスタックパイプラインと web 階層設定パイプラインでは設定ファイルをデプロイしません。
 
-   **default** ブロックの後に追加の **cdn** ブロックや **aem** ブロックを含めることで、CDN ログとAEM ログ（Apache/Dispatcherを含む）に異なる値を設定できます。このブロックでは、プロパティを **default** ブロックで定義されたプロパティを上書きできます。必要なのは、有効なプロパティのみです。 以下の例に示すように、CDN ログに別の Splunk インデックスを使用する使用例が考えられます。
+1. 設定をデプロイします。
 
-   ```
-      kind: "LogForwarding"
-      version: "1"
-      metadata:
-        envTypes: ["dev"]
-      data:
-        splunk:
-          default:
-            enabled: true
-            host: "splunk-host.example.com"
-            token: "${{SPLUNK_TOKEN}}"
-            index: "AEMaaCS"
-          cdn:
-            enabled: true
-            token: "${{SPLUNK_TOKEN_CDN}}"
-            index: "AEMaaCS_CDN"   
-   ```
+設定内のトークン（`${{SPLUNK_TOKEN}}` など）は秘密鍵を表しているので、Git に保存しないでください。 代わりに、Cloud Manager[ シークレット環境変数 ](/help/operations/config-pipeline.md#secret-env-vars) として宣言します。 ログをオーサー層、パブリッシュ層およびプレビュー層に転送できるように、「適用されるサービス」フィールドのドロップダウン値として **すべて** を必ず選択してください。
 
-   別のシナリオとして、CDN ログまたはAEM ログ（Apache/Dispatcherを含む）の転送を無効にする場合もあります。 例えば、CDN ログのみを転送するには、次を設定します。
+**default** ブロックの後に追加の **cdn** ブロックや **aem** ブロックを含めることで、CDN ログとAEM ログ（Apache/Dispatcherを含む）に異なる値を設定できます。このブロックでは、プロパティを **default** ブロックで定義されたプロパティを上書きできます。必要なのは、有効なプロパティのみです。 以下の例に示すように、CDN ログに別の Splunk インデックスを使用する使用例が考えられます。
 
-   ```
-      kind: "LogForwarding"
-      version: "1"
-      metadata:
-        envTypes: ["dev"]
-      data:
-        splunk:
-          default:
-            enabled: true
-            host: "splunk-host.example.com"
-            token: "${{SPLUNK_TOKEN}}"
-            index: "AEMaaCS"
-          aem:
-            enabled: false
-   ```
+```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "splunk-host.example.com"
+         token: "${{SPLUNK_TOKEN}}"
+         index: "AEMaaCS"
+       cdn:
+         enabled: true
+         token: "${{SPLUNK_TOKEN_CDN}}"
+         index: "AEMaaCS_CDN"   
+```
 
-1. RDE 以外の環境タイプ（現在サポートされていない環境）の場合は、ターゲット設定パイプラインをCloud Managerで作成します。フルスタックパイプラインと web 階層設定パイプラインでは、設定ファイルをデプロイしません。
+別のシナリオとして、CDN ログまたはAEM ログ（Apache/Dispatcherを含む）の転送を無効にする場合もあります。 例えば、CDN ログのみを転送するには、次を設定します。
 
-   * [実稼動パイプラインの設定を参照してください](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)。
-   * [実稼動以外のパイプラインの設定を参照してください](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
+```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "splunk-host.example.com"
+         token: "${{SPLUNK_TOKEN}}"
+         index: "AEMaaCS"
+       aem:
+         enabled: false
+```
 
 ## 宛先設定のログ記録 {#logging-destinations}
 

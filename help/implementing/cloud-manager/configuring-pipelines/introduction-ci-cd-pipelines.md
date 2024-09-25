@@ -6,8 +6,8 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
+source-git-commit: 7f6e8f91716b679f9715f9df33ae59aa5bf70751
+workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 100%
 
@@ -115,7 +115,7 @@ Cloud Manager で使用できるパイプラインとその用途を次の表に
 
 設定パイプラインを使用すると、ログ転送、パージ関連のメンテナンスタスク、トラフィックフィルタールール（WAF（Web アプリケーションファイアウォール）ルールなど）を含む様々な CDN 設定の設定をすばやくデプロイできます。さらに、リクエストと応答の変換、オリジンセレクター、クライアントサイドリダイレクト、エラーページ、顧客管理 CDN キー、パージ API キー、基本認証を管理できます。
 
-サポートされている機能の包括的なリストと、リポジトリ内の設定を適切にデプロイするために設定を管理する方法については、[設定パイプラインの使用](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)を参照してください。
+サポートされている機能の包括的なリストと、リポジトリ内の設定を適切にデプロイするために設定を管理する方法については、[設定パイプラインの使用](/help/operations/config-pipeline.md)を参照してください。
 
 ### 設定パイプラインの設定 {#configure-config-deployment}
 
