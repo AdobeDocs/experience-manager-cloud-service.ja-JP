@@ -5,10 +5,10 @@ exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
-workflow-type: ht
-source-wordcount: '293'
-ht-degree: 100%
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+workflow-type: tm+mt
+source-wordcount: '303'
+ht-degree: 69%
 
 ---
 
@@ -31,9 +31,9 @@ IP 許可リストを適用すると、リストの定義に含まれている�
 1. **概要**&#x200B;ページから、**環境**&#x200B;画面に移動します。
 1. **環境**&#x200B;画面で、特定の環境の詳細ページに移動します。
 1. **IP 許可リスト**&#x200B;テーブルに移動します。
-1. テーブルの上部にある入力フィールドを使用すると、IP 許可リストと、その適用先となるオーサーサービスまたはパブリッシュサービスを選択できます。
+1. このテーブルの上部にある入力フィールドを使用すると、IP許可リストと、その適用先となるオーサーサービス、Publish サービスまたはプレビューサービスを選択できます。
 IP 許可リストを適用するには、その IP 許可リストが既に Cloud Manager に存在する必要があります。詳しくは、[IP 許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)を参照してください。
-1. 「**適用**」をクリックし、送信を確認します。
+1. ![ 追加アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)**適用** をクリックし、送信を確認します。
 
 ## IP 許可リストの適用解除 {#un-applying}
 
@@ -44,8 +44,10 @@ IP 許可リストを適用するには、その IP 許可リストが既に Clo
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインします。
 1. 適切な組織を選択します。
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
-1. **概要**&#x200B;ページから&#x200B;**環境**&#x200B;画面に移動します。
-1. **環境**&#x200B;画面で特定の環境の詳細ページに移動し、**IP 許可リスト**&#x200B;テーブルに移動します。
+1. **概要** ページから **環境** ページに移動します。
+1. 特定の環境の詳細ページに移動します。
+1. 「一般」タブから、「**IP許可リスト**」テーブルまでスクロールします。
 1. 適用を解除する IP 許可リストの行を特定します。
-1. 特定された行の右側で省略記号ボタンをクリックし、「**適用解除**」を選択します。
-1. 送信を確認します。
+1. 識別された行の右側で、![ その他アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+1. **適用解除** をクリックします。
+1. **IP許可リストの適用解除** ダイアログボックスで、「**適用解除**」をクリックします。

@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 67%
+source-wordcount: '1574'
+ht-degree: 51%
 
 ---
 
@@ -57,14 +57,14 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 ![Experience Cloud ヘッダー](assets/experience-cloud-header.png)
 
-1. 個々のプログラムの特定の部分に移動できるタブにアクセスできるハンバーガーメニュー。 または、コンテキストに応じて [ ライセンスダッシュボード ](/help/implementing/cloud-manager/license-dashboard.md) と **[マイプログラム](#my-programs-console)** コンソールを切り替えることができます。
-1. Cloud Manager ボタンをクリックすると、Cloud Manager のどこにいても、Cloud Manager のマイプログラムコンソールコンソールに戻ります。
-1. 「フィードバック」ボタンをタップまたはクリック、Cloud Manager に関するフィードバックをアドビに送信します。
-1. 組織セレクターには、現在ログインしている組織（この例では、Foundation 内部）が表示されます。Adobe ID が複数の組織に関連付けられている場合、別の組織に切り替えるには、タップまたはクリックします。
-1. ソリューション切り替えボタンをタップまたはクリックすると、他の Experience Cloud ソリューションに素早くジャンプできます。
-1. ヘルプアイコンを使用すると、学習リソースやサポートリソースに素早くアクセスできます。
-1. 通知アイコンには、現在割り当てられている未完了の [ 通知 ](/help/implementing/cloud-manager/notifications.md) の数を示すバッジが付きます。
-1. ユーザー設定にアクセスするには、ユーザーを表すアイコンを選択します。ユーザー画像が設定されていない場合、アイコンがランダムに割り当てられます。
+1. ![ メニューアイコンを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) （サイドメニューを表示/非表示）をクリックすると、個々のプログラムの特定の部分に移動できる様々なタブにアクセスできます。 または、コンテキストに応じて [ ライセンスダッシュボード ](/help/implementing/cloud-manager/license-dashboard.md) と **[マイプログラム](#my-programs-console)** コンソールを切り替えることができます。
+1. 「Cloud ManagerをAdobe」ボタンをクリックすると、Cloud Managerのどこにいても、Cloud Managerのマイプログラム コンソールに戻ります。
+1. **フィードバック** をクリックして、Cloud Managerに関するAdobeにフィードバックを提供します。
+1. 組織セレクターをクリックすると、現在ログインしている組織（この例では、Foundation Internal）が表示されます。 Adobe ID が複数の組織に関連付けられている場合、別の組織に切り替えるには、クリックします。
+1. ![ アプリアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) （ソリューション切り替えボタン）をクリックすると、他のExperience Cloudソリューションにすばやくジャンプできます。
+1. ![ ヘルプアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg) をクリックすると、学習リソースやサポートリソースにすばやくアクセスできます。
+1. ![ ベルアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) （[ 通知 ](/help/implementing/cloud-manager/notifications.md)）をクリックして、通知や案内などを表示します。
+1. ユーザー設定へのユーザーアクセスを表すアイコンをクリックします。 ユーザー画像が設定されていない場合、アイコンがランダムに割り当てられます。
 
 #### プログラムツールバー {#program-toolbar}
 
@@ -72,9 +72,9 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 ![プログラムツールバー](assets/program-toolbar.png)
 
-1. プログラムセレクターが開き、ドロップダウンで他のプログラムをすばやく選択したり、新しいプログラムの作成など、コンテキストに適したアクションを実行したりできます。
-1. 「はじめに」リンクから、[オンボーディングドキュメントジャーニー](/help/journey-onboarding/overview.md)にアクセスして、Cloud Manager を使い始めることができます。
-1. アクションボタンを使用すると、新しいプログラムの作成など、コンテキストに適したアクションを実行できます。
+1. **マイプログラム** セレクターによってドロップダウンが開き、他のプログラムをすばやく選択したり、新しいプログラムの作成など、コンテキストに適したアクションを実行したりできます
+1. **はじめに** リンクをクリックすると、Cloud Managerを使い始めるための [ オンボーディングドキュメントジャーニー ](/help/journey-onboarding/overview.md) にアクセスできます。
+1. アクションボタンは、プログラムの追加など、コンテキストに適したアクションを提供します。
 
 ### 統計とコールトゥアクション {#statistics}
 
@@ -209,23 +209,23 @@ Cloud Manager ヘッダーには、自動的に開くハンバーガーメニュ
 
 **プログラム**
 
-* 概要 - 現在のドキュメントに記載されているプログラムの概要
-* [アクティビティ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - プログラムのパイプライン実行の履歴
-* [パイプライン](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - プログラムに対して設定されたすべてのパイプライン
-* [リポジトリ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - プログラムに対して設定されたすべてのリポジトリ
-* [レポート](/help/implementing/cloud-manager/sla-reporting.md) - SLA データなどの指標
+* ![ 最新のグリッド表示アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ModernGridView_18_N.svg) 概要 – 現在のドキュメントで説明されているプログラムの概要
+* ![ ベルアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg)[ アクティビティ ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - プログラムのパイプライン実行履歴
+* ![ ワークフローアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)[ パイプライン ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - プログラム用に設定されているすべてのパイプライン
+* ![ フォルダーアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)[ リポジトリ ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - プログラム用に設定されているすべてのリポジトリ
+* ![ グラフ円アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg)[ レポート ](/help/implementing/cloud-manager/sla-reporting.md) - SLA データなどの指標
 
 **サービス**
 
-* [環境](/help/implementing/cloud-manager/manage-environments.md) - プログラムに対して設定されたすべての環境
-* [Edge Delivery サイト ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - Edge Delivery サイトの管理
-* [ ドメイン設定 ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - プログラムのカスタムドメイン名を管理します
-* [SSL 証明書 ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - プログラムの SSL 証明書を管理します
-* [CDN 設定 ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - CDN 設定を管理します
-* [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) – 特定の IP アドレスの許可リストを定義します
-* [コンテンツセット](/help/implementing/developing/tools/content-copy.md) - コピー目的に対して作成されたコンテンツのセット
-* [コンテンツをコピーアクティビティ](/help/implementing/developing/tools/content-copy.md) - コンテンツをコピーするアクティビティ
-* [ ネットワークインフラストラクチャ ](/help/security/configuring-advanced-networking.md) - プログラムの高度なネットワークオプションを管理します
+* ![ データアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)[ 環境 ](/help/implementing/cloud-manager/manage-environments.md) - プログラム用に設定されたすべての環境
+* ![Web ページアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) [Edge Delivery Sites](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - Edge Delivery Sites の管理
+* ![ 設定アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg)[ ドメイン設定 ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - プログラムのカスタムドメイン名を管理します
+* ![ 鍵がかかったアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg)[SSL 証明書 ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - プログラムの SSL 証明書を管理します
+* ![ ソーシャルネットワークアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg)[CDN 設定 ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - CDN 設定の管理
+* ![ タスクリストアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg)[IP 許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) – 特定の IP アドレスの許可リストを定義します
+* ![ ボックスアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg)[ コンテンツセット ](/help/implementing/developing/tools/content-copy.md) - コピー用に作成されたコンテンツのセット
+* ![ 履歴アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg)[ コンテンツをコピーアクティビティ ](/help/implementing/developing/tools/content-copy.md) - コンテンツのコピーアクティビティ
+* ![ チャネルアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Channel_18_N.svg)[ ネットワークインフラストラクチャ ](/help/security/configuring-advanced-networking.md) - プログラムの高度なネットワークオプションを管理します
 
 **リソース**
 
