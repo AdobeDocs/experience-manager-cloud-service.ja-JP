@@ -4,9 +4,9 @@ description: AEM UI には、基盤となる原則があり、いくつかの主
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bd5601661cd59c158802f900677855be76d5893b
+source-git-commit: 7d09e0c990c716d7bbb305210960621ba8735de4
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '939'
 ht-degree: 94%
 
 ---
@@ -176,7 +176,7 @@ AEM には、編集、プレビュー、注釈など、ページオーサリン�
 
 統合シェルをAEM UI として使用している場合は ](/help/overview/aem-cloud-service-on-unified-shell.md) 統合シェルの [AEM as a Cloud Service} を参照してください。
 
-カスタマイズが必要な場合（または既にカスタマイズしている場合）は、次の手順を無効にできます。
+カスタマイズが必要な場合、または既にカスタマイズを行っている場合は、統合コミュニケーションを無効にできます。
 
 * [UI から](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
 
