@@ -4,10 +4,10 @@ description: 統合シェルでの AEM as a Cloud Service のメリットにつ�
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 100%
+source-wordcount: '408'
+ht-degree: 95%
 
 ---
 
@@ -44,6 +44,10 @@ AEM as a Cloud Service（オーサーサービス）は統合シェルと統合�
 
    ![画像](/help/overview/assets/unifiedshell3.png)
 
+>[!NOTE]
+>
+>統合シェルは、プロジェクトコードから無効にすることもできます。 [AEM UI の構造 – 統合シェル ](/help/implementing/developing/introduction/ui-structure.md#unified-shell) を参照してください。
+
 ## ダークテーマへの変更 {#changing-to-dark-theme}
 
 ダークテーマに変更するには、自分のプロファイルアイコンをクリックします。このアクションにより、以下のようなポップオーバーが表示されます。切替スイッチを使用して、統合シェルをダークテーマに切り替えることができます。
@@ -73,3 +77,4 @@ AEM インボックスにアクセスするには、統合シェルのベルの�
 ポップオーバーの「インボックス」ボタンをクリックすると、AEM インボックスに移動できます。
 
 ![画像](/help/overview/assets/unifiedshell6.png)
+

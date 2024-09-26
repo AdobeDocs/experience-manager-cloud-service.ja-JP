@@ -4,10 +4,10 @@ description: AEM UI には、基盤となる原則があり、いくつかの主
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 100%
+source-wordcount: '935'
+ht-degree: 94%
 
 ---
 
@@ -171,3 +171,15 @@ AEM には、編集、プレビュー、注釈など、ページオーサリン�
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
 技術情報について詳しくは、ページエディター用の [JS ドキュメントセット](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)を参照してください。
+
+### 統合シェル {#unified-shell}
+
+統合シェルをAEM UI として使用している場合は ](/help/overview/aem-cloud-service-on-unified-shell.md) 統合シェルの [AEM as a Cloud Service} を参照してください。
+
+カスタマイズが必要な場合（または既にカスタマイズしている場合）は、次の手順を無効にできます。
+
+* [UI から](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
+
+* プロジェクトコードから、`Boolean` プロパティを設定します。
+
+  `/conf/global/setting/unifiedshell` - `false`
