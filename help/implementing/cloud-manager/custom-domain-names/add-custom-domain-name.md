@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
 source-wordcount: '1509'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 
@@ -21,7 +21,7 @@ Cloud Managerで **ドメイン設定** を使用してカスタムドメイン�
 
 Cloud Manager でカスタムドメイン名を追加する前に、次の要件を満たす必要があります。
 
-* [SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) のドキュメントに記載されているように、カスタムドメイン名を追加する前に、追加するドメインのドメイン SSL 証明書を追加する必要があります。
+* カスタムドメイン名を追加する前に、[SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)ドキュメントの説明に従って、追加するドメインのドメイン SSL 証明書を追加しておく必要があります。
 * Cloud Manager でカスタムドメイン名を追加するには、**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割が必要です。
 * Fastly または他の CDN （コンテンツ配信ネットワーク）を使用している。
 

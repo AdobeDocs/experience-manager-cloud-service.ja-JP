@@ -198,8 +198,8 @@ ht-degree: 99%
    + ユニバーサルエディターのリリースノート {#univeral-editor}
       + [ユニバーサルエディターの最新リリースノート](/help/release-notes/universal-editor/current.md)
       + 2024年度 {#2024}
-         + [リリースノート（2024.07.28)](/help/release-notes/universal-editor/2024/2024-07-28.md)
-         + [リリースノート（2024.06.28)](/help/release-notes/universal-editor/2024/2024-06-28.md)
+         + [リリースノート（2024.07.28）](/help/release-notes/universal-editor/2024/2024-07-28.md)
+         + [リリースノート（2024.06.28）](/help/release-notes/universal-editor/2024/2024-06-28.md)
    + [新機能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service の主要な変更点](/help/release-notes/aem-cloud-changes.md)
    + [非推奨（廃止予定）および削除された機能と API](/help/release-notes/deprecated-removed-features.md)
@@ -470,7 +470,7 @@ ht-degree: 99%
          + [アセットセレクターの例](/help/assets/asset-selector-examples.md)
          + [アセットセレクターのカスタマイズ](/help/assets/asset-selector-customization.md)
          + [アセットセレクターのアップロード](/help/assets/asset-selector-upload.md)
-         + [アセットセレクターコレクション](/help/assets/asset-selector-collections.md)
+         + [アセットセレクターのコレクション](/help/assets/asset-selector-collections.md)
       + [マイクロフロントエンドの宛先セレクター](/help/assets/destination-selector.md)
       + [アセットを共有する](/help/assets/share-assets.md)
       + [アセットの再処理](/help/assets/reprocessing.md)
@@ -1253,7 +1253,7 @@ ht-degree: 99%
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
       + [ContextHub でのセグメント化の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=ja)
    + AEM as a Cloud Service の設定と拡張 {#configuring-and-extending}
-      + App Builder {#app-builder} を使用したAEMの拡張
+      + App Builder を使用した AEM の拡張 {#app-builder}
          + [Adobe Developer App Builder を使用した AEM の拡張](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [App Builder の概要](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe 開発者コンソール](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
