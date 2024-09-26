@@ -5,9 +5,9 @@ exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 8ccf03ebcb4a96b66a15dc9a1161a857888278a7
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1256'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ AEM as a Cloud Service SDK は、次のアーティファクトで構成され�
 
 >[!NOTE]
 > 
-> AEM as a Cloud Serviceと SDK には、様々な領域における違いがあります。 迅速かつ繰り返し変更が必要な状況のために、Adobeは迅速な開発環境を導入しました。 詳しくは、[ 迅速な開発環境 ](/help/implementing/developing/introduction/rapid-development-environments.md) を参照してください。
+> AEM as a Cloud Service と SDK には、様々な領域で違いがあります。迅速かつ反復的に変更が必要な状況に対応するために、アドビは迅速な開発環境を導入しました。詳しくは、[迅速な開発環境](/help/implementing/developing/introduction/rapid-development-environments.md)を参照してください。
 
 ## SDK を使用する場合のビルド {#building-for-the-sdk}
 

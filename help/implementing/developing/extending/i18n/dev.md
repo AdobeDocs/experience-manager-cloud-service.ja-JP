@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: a0afa0d733b8493883770d03fc1a55db247aaf71
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1089'
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ i18n.get("Enter a search keyword");
 
 #### 翻訳のヒントの使用 {#using-translation-hints}
 
-辞書内で重複する文字列を識別できるようにするために、国際化される文字列の翻訳のヒントを指定します。 翻訳のヒントを指定するには、`get` メソッドの 2 つ目のオプションパラメーターを使用します。翻訳のヒントは、辞書の項目のコメントプロパティと正確に一致させる必要があります。
+辞書内で重複する文字列を識別できるようにするために、国際化される文字列の翻訳のヒントを指定します。翻訳のヒントを指定するには、`get` メソッドの 2 つ目のオプションパラメーターを使用します。翻訳のヒントは、辞書の項目のコメントプロパティと正確に一致させる必要があります。
 
 例えば、文字列 `Request` が動詞と名詞としてそれぞれ 1 回ずつ、計 2 回辞書に記載されているとします。次のコードでは、`get` メソッドの引数として翻訳のヒントが記述されています。
 
@@ -90,7 +90,7 @@ i18n.get("Request","A noun, as in a request for a web page");
 
 ローカライズされる文字列に変数を追加し、センテンスに文脈に応じた意味を持たせます。例えば、Web アプリケーションにログインした後、ホームページに「Welcome back Administrator.You have two messages in your inbox.」と表示されるとします。ページのコンテキストに応じて、ユーザー名とメッセージ数が決定されます。
 
-ディクショナリでは、変数は文字列内で括弧で囲まれたインデックスとして表されます。 変数の値は `get` メソッドの引数として指定します。引数は翻訳のヒントの次に置かれ、インデックスは引数の順番と一致します。
+辞書内では、変数は括弧で囲まれたインデックスとして文字列に表示されます。変数の値は `get` メソッドの引数として指定します。引数は翻訳のヒントの次に置かれ、インデックスは引数の順番と一致します。
 
 ```xml
 i18n.get("Welcome back {0}. You have {1} messages.", "user name, number of messages", user.getDisplayName(), numItems);

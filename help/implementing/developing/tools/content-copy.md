@@ -5,9 +5,9 @@ exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: dfd44fc637e60f48c3d13430f1f4b9b7b9427d3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1347'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -203,7 +203,7 @@ ht-degree: 95%
 
 ## 既知の問題 {#known-issues}
 
-[ コンテンツのコピー機能 ](/help/implementing/developing/tools/content-copy.md) を使用する場合は、次の既知の問題があります。
+[コンテンツのコピー機能](/help/implementing/developing/tools/content-copy.md)を使用する場合は、次の既知の問題に注意してください。
 
-* ソース環境のリソースの名前を変更すると、ターゲット環境で UUID が競合するので、コンテンツのコピー操作が失敗する可能性があります。
-   * このエラーを回避するには、リソース名を変更する代わりに、最初にリソースを削除してから、新しいリソース名で再作成します。
+* ソース環境のリソースの名前を変更すると、ターゲット環境の UUID が競合するので、コンテンツのコピー操作が失敗する可能性があります。
+   * このエラーを回避するには、リソースの名前を変更する代わりに、まずリソースを削除してから、目的の新しいリソース名で再作成します。
