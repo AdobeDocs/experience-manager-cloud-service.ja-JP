@@ -1,20 +1,20 @@
 ---
 title: プリンシパルの管理
 description: Admin Consoleを使用した移行のプリンシパルの管理
-source-git-commit: 5bf497fb2122cc3d3ff0903aeb680a35e90f33b0
+exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
+source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
-
 
 # プリンシパルの管理 {#managing-principals}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_managingprincipals"
 >title="プリンシパルの管理"
->abstract="コンテンツ移行中または移行後にユーザーを管理するために必要なことを説明します"
+>abstract="コンテンツ移行中または移行後にユーザーを管理するために必要な操作について説明します"
 
 コンテンツをAEM as a Cloud Service クラウドAdmin Consoleに転送する前に、環境で実行できるタスクがいくつかあります。  ユーザーの作成、グループの作成、グループへのユーザーの割り当て。これらのユーザーとグループは、IMS （AdobeのIdentity Management サービス）に存在します。IMS は、すべてのAdobeクラウドベースのサービスでユーザーとグループを管理するために使用されます。
 

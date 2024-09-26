@@ -1,20 +1,20 @@
 ---
 title: 移行後のプリンシパルの管理
-description: IMS とAEMでユーザーとグループを設定する方法について説明します
-source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
+description: IMS と AEM でユーザーとグループを設定する方法について説明します
+exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
+source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
-
 
 # 移行後のプリンシパルの管理 {#managing-principals-after-migration}
 
 >[!CONTEXTUALHELP]
 >id="managing-principals"
 >title="移行後のプリンシパルの管理"
->abstract="IMS とAEMでユーザーとグループを設定する方法について説明します"
+>abstract="IMS と AEM でユーザーとグループを設定する方法について説明します"
 
 このドキュメントでは、AEM as a Cloud Service環境と連携するために IMS およびAEMでユーザーとグループを設定する際に必要な大まかな手順について説明します。
 
@@ -56,5 +56,3 @@ Assets コレクションを作成すると、そのコレクションへのア�
 * ユーザーが初めてログインすると、AEMに IMS ユーザーが作成され、新しいグループと元のコレクショングループにアクセスできるようになります。
 
 注意：ユーザーを一括割り当てする場合、上記の手順を使用して IMS でユーザーを作成する必要があります。既に IMS に存在するユーザーは、一括アップロードでは再作成できません。
-
-
