@@ -227,7 +227,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 デフォルトでは、プログラムを開くと、「**概要**」タブが表示されます。現在のタブがハイライト表示されます。別のタブを選択すると、その詳細が表示されます。
 
-[Cloud Managerヘッダーの左上隅にある ![ メニューアイコンを表示 ](#cloud-manager-header-2) をクリックして、タブのサイドメニューの表示と非表示を切り替えます。](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)
+[Cloud Managerヘッダ](#cloud-manager-header-2)ーの左上隅にある ![ メニューアイコンを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、タブのサイドメニューの表示と非表示を切り替えます。
 
 ### コールトゥセクション {#cta}
 
