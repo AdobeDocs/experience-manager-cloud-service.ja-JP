@@ -4,9 +4,9 @@ description: AEM UI には、基盤となる原則があり、いくつかの主
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
+source-git-commit: bd5601661cd59c158802f900677855be76d5893b
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '937'
 ht-degree: 94%
 
 ---
@@ -180,6 +180,8 @@ AEM には、編集、プレビュー、注釈など、ページオーサリン�
 
 * [UI から](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
 
-* プロジェクトコードから、`Boolean` プロパティを設定します。
+* プロジェクトコードから、次の手順を実行します。
 
-  `/conf/global/setting/unifiedshell` - `false`
+   * オン `/conf/global/setting/unifiedshell`
+
+      * `Boolean` プロパティ `enable` を `false` に設定する
