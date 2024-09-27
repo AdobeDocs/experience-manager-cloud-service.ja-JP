@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
-workflow-type: ht
-source-wordcount: '1266'
-ht-degree: 100%
+source-git-commit: 2d5fa0b15456ad9838fa236a2b5c79d41a9af7fe
+workflow-type: tm+mt
+source-wordcount: '1248'
+ht-degree: 71%
 
 ---
 
@@ -28,33 +28,27 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2024.8.0）の公開日は 2024年8月29日（PT）です。次回の機能リリース（2024.9.0）は、2024年9月26日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2024.9.0）の公開日は 2024年9月26日（PT）です。次回の機能リリース（2024.10.0）は、2024年10月31日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
 最新のメンテナンスリリースノートについては、[こちら](/help/release-notes/maintenance/latest.md)をご覧ください。
 
-## リリースビデオ {#release-video}
+<!--  ## Release Video {#release-video}
 
-2024.8.0 リリースで追加された機能の概要については、2024年8月リリースの概要ビデオをご覧ください。
+Have a look at the September 2024 Release Overview video for a summary of the features added in the 2024.9.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433381?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Experience Manager Sites の新機能 {#new-feature-sites}
 
-**Edge Delivery Services 用の AEM オーサリング**
+#### 翻訳管理 {#translation-management}
 
-次のような既存の Sites [継承](/help/sites-cloud/authoring/universal-editor/inheritance.md)機能がサポートされるようになりました。
-
-* [AEM ローンチ](/help/sites-cloud/authoring/launches/overview.md)
-* ページレベルでの [MSM](/help/sites-cloud/administering/msm/overview.md)
-
-さらに、次のページ管理機能がサポートされるようになりました。
-
-* [AEM タグ](/help/sites-cloud/authoring/sites-console/tags.md)は、Edge Delivery Services に[分類](/help/edge/wysiwyg-authoring/taxonomy.md)として書き出すことができます。
-* Edge Delivery Services 用[テンプレート](/help/edge/wysiwyg-authoring/templates.md)は、近日中に提供されます。
+AEM翻訳ワークフローおよび API アクションで、翻訳ジョブの状態の変化に関するインサイトを提供するトリガーイベントが追加されました。 ユーザーは、Adobe Developer Consoleを通じてこれらのイベントを購読できます。 AEM Translation Management API について詳しくは、[ こちら ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) を参照してください。
 
 ### 早期導入プログラム {#sites-early-adopter}
 
@@ -73,27 +67,10 @@ Adobe Dynamic Media の AI 生成のビデオキャプションは、人工知�
 
 Dynamic Media アカウントで AI 生成のキャプションサポートに早期アクセスするには、[アドビカスタマーサポートケースを作成して送信](/help/assets/dynamic-media/video.md##enable-dash)してください。
 
-### アセットビューの新機能 {#assets-view-new-features}
+### アセットセレクターの新機能 {#asset-selector-new-features}
 
-**アップデート後の Adobe Firefly 画像の生成**
-
-Assets as a Cloud Service では、Firefly の最新ウィジェットを使用するようになりました。これにより、Adobe Firefly を使用して様々なスタイルの画像を生成できます。組み込みの Firefly エディターを使用してスタイル、構成、寸法などを定義すれば、必要なアセットを AEM Assets リポジトリ内で直接作成して保存し、すぐに使用できます。
-
-![Adobe Firefly 画像の生成](/help/assets/assets/bugatti-type-57.png)
-
-**PSB ファイルのサポート**
-
-Assets as a Cloud Service では、既存の PSD ファイルのサポートに加えて、Photoshop の大きなドキュメント（PSB ファイル）がサポートすされるようになりました。
-
-### コンテンツハブの新しい機能強化 {#content-hub-new-enhancements}
-
-* 長いファイル名の取り扱いを改善しました。ツールヒントを使用して完全な名前を簡単に展開できます。
-* サムネールの改善により、コンテンツの縦横比に適合し、より広い領域のコンテンツをカバーできるようになりました。
-* コンテンツハブでサポートされる、AEM のカスタムサムネールエクスペリエンス。
-* カラー検索の改善。
-* 設定の改善により、操作性が向上します。
-* 作成者の名前が反映されるように、コレクションの情報ページを改善しました。
-
+アセットセレクターで、コレクションを参照して目的のアセットを見つけることができるようになりました。
+![ アセットセレクターコレクション ](/help/assets/assets/collections-rail-modal-view.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -132,29 +109,49 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 >
 > Forms のイノベーションの早期アクセスプログラムへの参加に興味がありますか？興味のある機能のリストを添えて、公式アドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールを送信してください。
 
+## CIF アドオン {#cloud-services-cif}
+
+### 機能改善 {#improvements-fixes-cif}
+
+* カテゴリ制限をカスタマイズ可能にします。
+
+### バグ修正 {#bug-fixes-cif}
+
+* Commerce フィールドが、Assets メタデータスキーマエディターと正しく統合されません。
+* カルーセル製品のマルチフィールドでドラッグ&amp;ドロップが発生する問題。
+* カルーセルカテゴリのマルチフィールドでドラッグ&amp;ドロップが発生する問題。
+* カテゴリおよび製品エディターページのページ情報のメニューで、クリックが機能しません。
+* 注文確認ページに注文番号が表示されません。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
-### コンテンツ配信関連の早期導入プログラム {#foundation-early-adopter}
+### 動的コンテンツを読み込むためのEdge サイドインクルード（ESI） {#esi}
 
-以下の早期導入プログラムのどれに興味があるかを明記して、**<aemcs-cdn-config-adopter@adobe.com>** にメールを送信してください。
+アドビが管理する CDN で、エッジレベルの動的 web コンテンツアセンブリ用のマークアップ言語である[エッジサイドインクルード（ESI）](/help/implementing/dispatcher/edge-side-includes.md)がサポートされるようになりました。ESI スニペットを含めることで、より大きい TTL で HTML ページ全体を CDN にキャッシュしながら、より頻繁なアップデート（小さい TTL）を必要とする小さなセクションを、接触チャネルから頻繁に取得できます。この機能は徐々に展開されます。
 
-#### CDN での基本認証（早期導入プログラム） {#basicauth-cdn}
+### CDN での基本認証 {#basicauth-cdn}
 
-ユーザー名とパスワードの入力を求める基本認証ダイアログを表示して、特定のコンテンツリソースを保護します。この機能は、エンドユーザーのアクセス権に対する包括的なソリューションとして機能するのではなく、主にビジネス関係者によるコンテンツのレビューなど、簡易な認証ユースケースを対象としています。ユーザー名とパスワードのリストは、秘密鍵タイプの Cloud Manager 環境変数を参照して、設定パイプライン経由でデプロイされる Git の設定ファイルを通じて管理されます。[詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth)。
+ユーザー名とパスワードの入力を求める基本認証ダイアログを表示して、特定のコンテンツリソースを保護します。この機能は、エンドユーザーのアクセス権に対する包括的なソリューションとして機能するのではなく、主にビジネス関係者によるコンテンツのレビューなど、簡易な認証ユースケースを対象としています。ユーザー名とパスワードのリストは、設定パイプラインを介してデプロイされた Git の設定ファイルを通じて、秘密鍵タイプのCloud Manager環境変数への参照を使用して管理されます。 [詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth)。
 
-#### クライアントサイドのリダイレクト（早期導入プログラム） {#client-side-redirects-early-adopter}
+### クライアントサイドリダイレクト {#client-side-redirects}
 
-ソース管理で 301/302 クライアントサイドのリダイレクトを設定し、CDN にデプロイします。[詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. -->リクエストと応答の変換、AEM 外のサイトへのトラフィックのルーティングなど、[CDN 設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)に関連して既に利用可能な他の機能がいくつかあります。
+CDN にデプロイされ CDN で評価される設定ファイル Git で [ ブラウザーリダイレクト ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) を宣言する。 これは、ページの削除、変更されたサイト構造、SEO の最適化などのシナリオで役立ちます。
 
-#### ビジネスユーザーが Git 外部でリダイレクトを宣言できる（早期導入プログラム） {#apache-rewritemaps-early-adopter}
+### 新しいAEM Developer Console（パブリック Beta） {#aem-developer-console-beta}
 
-AEM 6.5 と同様に、Apache／Dispatcher は、web 階層パイプラインの実行を必要とせずに、公開リポジトリ内の特定の場所に配置された書き換えマップを取り込んで読み込みます。このアプローチにより、ビジネスユーザーは、スプレッドシートや、ACS Commons リダイレクトマップマネージャーやカスタムアプリケーションなどの UI を使用してリダイレクトを宣言できます。<!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
+クラウド環境でコードをデバッグするためのよりインタラクティブなエクスペリエンスを提供する、刷新された ](/help/implementing/developing/introduction/aem-developer-console.md)0}AEM Developer Console} をお試しください。[
 
-#### 動的コンテンツを読み込むためのエッジサイドインクルード（ESI）（早期導入プログラム） {#esi-early-adopter}
+現在のAEM Developer Consoleで「*新しいコンソールを利用可能*」ボタンをクリックすると、誰でもパブリックベータ版にアクセスできます。 Adobeから **<aemcs-new-devconsole-ui-beta@adobe.com>** にメールで送信できるフィードバックを歓迎します。
 
-アドビが管理する CDN で、エッジレベルの動的 web コンテンツアセンブリ用のマークアップ言語である[エッジサイドインクルード（ESI）](/help/implementing/dispatcher/edge-side-includes.md)がサポートされるようになりました。ESI スニペットを含め、より大きい TTL で HTML ページ全体を CDN にキャッシュしながら、より頻繁なアップデート（小さい TTL）を必要とする小さなセクションを、接触チャネルから頻繁に取得できます。<!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
+![AEM Developer Consoleの OSGi バンドル画面 ](/help/implementing/developing/introduction/assets/osgi-bundles.png)
 
+### ビジネスユーザーが Git 外部でリダイレクトを宣言できる（早期導入プログラム） {#apache-rewritemaps-early-adopter}
+
+AEM 6.5 と同様に、Apache/Dispatcher は、パブリッシュリポジトリーの特定の場所に配置された書き換えマップを取り込み、web 層パイプラインを実行しなくても読み込みます。 このアプローチを使用すると、ビジネスユーザーはスプレッドシートや UI （ACS Commons リダイレクトマップマネージャーやカスタムアプリケーションなど）を使用してリダイレクトを宣言できます。 **<aemcs-cdn-config-adopter@adobe.com>** に電子メールを送信して、早期導入プログラムに参加します。
+
+### RDE の設定パイプライン（早期導入プログラム） {#config-pipeline-rdes-early-adopter}
+
+[ 設定パイプライン ](/help/operations/config-pipeline.md) は、CDN オプション（トラフィックフィルタールール、リクエスト/応答の変換など）を含む yaml ファイル設定をデプロイするために使用します。 これらの同じ設定を CLI を使用する RDE （迅速な開発環境）にデプロイするように **<aemcs-cdn-config-adopter@adobe.com>** にメールを送信して、早期導入プログラムに参加してください。
 
 ## [!DNL Experience Manager] ガイド {#guides}
 

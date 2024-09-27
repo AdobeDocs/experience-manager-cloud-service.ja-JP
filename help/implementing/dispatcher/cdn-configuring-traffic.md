@@ -4,10 +4,10 @@ description: 設定ファイルでルールとフィルターを宣言し、Clou
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 35d3dcca6b08e42c0d2a97116d0628ac9bbb6a7c
-workflow-type: ht
-source-wordcount: '1350'
-ht-degree: 100%
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
+workflow-type: tm+mt
+source-wordcount: '1321'
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ AEM as a Cloud Service では、受信リクエストまたは送信応答の特
 
 * [リクエスト変換](#request-transformations) - ヘッダー、パスおよびパラメーターなど、受信リクエストの側面を変更します。
 * [応答変換](#response-transformations) - クライアント（web ブラウザーなど）に戻る途中のヘッダーを変更します。
-* [クライアントサイドのリダイレクト](#client-side-redirectors) - ブラウザーのリダイレクトをトリガーします。この機能はまだ一般提供（GA）されていませんが、早期導入者が使用できます。
+* [ クライアントサイドのリダイレクト ](#client-side-redirectors) - ブラウザーのリダイレクトをトリガーにします。
 * [接触チャネルセレクター](#origin-selectors) - 別の接触チャネルバックエンドにプロキシ処理します。
 
 また、CDN で許可または拒否するトラフィックを制御するトラフィックフィルタールール（WAF を含む）も CDN で設定できます。この機能は既にリリースされています。詳しくは、[WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)ページを参照してください。
@@ -363,9 +363,6 @@ data:
 
 ## クライアントサイドのリダイレクト {#client-side-redirectors}
 
->[!NOTE]
->この機能はまだ一般提供されていません。早期導入プログラムに参加するには、`aemcs-cdn-config-adopter@adobe.com` にメールを送信し、ユースケースを説明します。
-
 301、302 および同様のクライアントサイドリダイレクトに対して、クライアントサイドのリダイレクトルールを使用できます。ルールが一致する場合、CDN は応答として、ステータスコードとメッセージ（例：HTTP/1.1 301 Moved Permanently）、および場所ヘッダーセットを含むステータス行で応答します。
 
 絶対位置と固定値を持つ相対位置の両方が使用されます。
@@ -380,7 +377,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_redirects:
+  redirects:
     rules:
       - name: redirect-absolute
         when: { reqProperty: path, equals: "/page.html" }

@@ -4,10 +4,10 @@ description: 設定ファイルでルールを宣言し、Cloud Manager 設定�
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 5d51ff056d4e4f0fdbb3004cbac55803ac91f8ca
-workflow-type: ht
-source-wordcount: '1443'
-ht-degree: 100%
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
+workflow-type: tm+mt
+source-wordcount: '1415'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 * 顧客管理 CDN からのリクエストを検証する Adobe CDN で使用される X-AEM-Edge-Key HTTP ヘッダー値。
 * CDN キャッシュ内のリソースのパージに使用される API トークン。
-* 基本認証フォームを送信することで、制限されたコンテンツにアクセスできるユーザー名／パスワードの組み合わせのリスト。[この機能は、早期導入者が使用できます。](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter)
+* 基本認証フォームを送信することで、制限されたコンテンツにアクセスできるユーザー名／パスワードの組み合わせのリスト。
 
 上記のそれぞれについては、設定の構文を含めて、以下の該当する節で説明します。
 
@@ -146,9 +146,6 @@ data:
 
 ## 基本認証 {#basic-auth}
 
->[!NOTE]
->この機能はまだ一般提供されていません。早期導入プログラムに参加するには、`aemcs-cdn-config-adopter@adobe.com` にメールを送信します。
-
 ユーザー名とパスワードの入力を求める基本認証ダイアログを表示して、特定のコンテンツリソースを保護します。この機能は、エンドユーザーのアクセス権に対する本格的なソリューションではなく、主にビジネス関係者によるコンテンツのレビューなどの軽い認証ユースケースを対象としています。
 
 エンドユーザーには、次のような基本認証ダイアログがポップアップ表示されます。
@@ -164,7 +161,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_authentication:
+  authentication:
     authenticators:
        - name: my-basic-authenticator
          type: basic
@@ -185,12 +182,12 @@ data:
 
 さらに、構文には次のものが含まれます。
 
-* `experimental_authentication` ノードを含む `data` ノード（機能がリリースされると、実験的なプレフィックスは削除されます）。
-* `experimental_authentication` の下には、1 つの `authenticators` ノードと 1 つの `rules` ノードがあり、どちらも配列をなしています。
+* `authentication` ノードを含む `data` ノード。
+* `authentication` の下には、1 つの `authenticators` ノードと 1 つの `rules` ノードがあり、どちらも配列をなしています。
 * オーセンティケーター：このシナリオでは、次の構造を持つ基本オーセンティケーターの宣言を行います。
    * name - わかりやすい文字列
    * type - `basic` にする必要があります
-   * 資格情報の配列。各資格情報には、次の名前と値のペアが含まれ、エンドユーザーは基本認証ダイアログで入力できます。
+   * 最大 10 個の資格情報を含む配列です。各資格情報には、次の名前と値のペアが含まれ、エンドユーザーは基本認証ダイアログで入力できます。
       * user - ユーザーの名前
       * password - この値は、サービスフィールドで「**すべて**」が選択された、[Cloud Manager 秘密鍵タイプの環境変数](/help/operations/config-pipeline.md#secret-env-vars)を参照する必要があります。
 * ルール：使用するオーセンティケーターと、保護するリソースのどちらに使用するかを宣言できます。各ルールには、以下が含まれます。
@@ -208,7 +205,7 @@ data:
 1. 最初は `edgeKey1` のみが定義され、この場合は `${{CDN_EDGEKEY_052824}}` として参照されます。これは、推奨される規則として、作成日を反映しています。
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -218,7 +215,7 @@ data:
 1. 設定では、`edgeKey2` から参照してデプロイします。
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -229,7 +226,7 @@ data:
 1. 古いエッジキーが使用されていないことを確認したら、設定から `edgeKey1` を削除してエッジキーを削除します。
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -240,7 +237,7 @@ data:
 1. 次のローテーションの準備が整ったら、同じ手順に従いますが、今回は `edgeKey1` を設定に追加し、例えば、`${{CDN_EDGEKEY_031426}}` という名前の新しい Cloud Manager 環境の秘密鍵を参照します。
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge

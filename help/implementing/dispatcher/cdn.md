@@ -4,10 +4,10 @@ description: AEM の管理による CDN を使用する方法と、独自の CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
-workflow-type: ht
-source-wordcount: '1608'
-ht-degree: 100%
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -72,7 +72,7 @@ HTTP キャッシュ制御ヘッダーを使用した TTL の設定は、コン�
 
 ### CDN での基本認証 {#basic-auth}
 
-ビジネス関係者がコンテンツのレビューを行うなどの簡単な認証ユースケースの場合は、ユーザー名とパスワードを必要とする基本認証ダイアログを表示して、コンテンツを保護します。[詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md)を確認し、早期導入プログラムに参加してください。
+ビジネス関係者がコンテンツのレビューを行うなどの簡単な認証ユースケースの場合は、ユーザー名とパスワードを必要とする基本認証ダイアログを表示して、コンテンツを保護します。[詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md)。
 
 ## 顧客管理 CDN での AEM の管理による CDN への参照 {#point-to-point-CDN}
 

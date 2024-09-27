@@ -4,17 +4,14 @@ description: アドビが管理する CDN で、エッジレベルの動的 web 
 feature: Dispatcher
 exl-id: 35093477-2788-4f69-80a9-899f43567cae
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: d70a8030ca6687b1839adc0ce1becdf366ec7170
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # エッジサイドインクルード {#edge-side-includes}
-
->[!NOTE]
->この機能はまだ一般提供されていません。早期導入プログラムに参加するには、`aemcs-cdn-config-adopter@adobe.com` にメールを送信し、ユースケースを説明します。
 
 コンテンツ配信速度は、ページを積極的にキャッシュすることで向上します。これは、キャッシュヘッダーの有効期間（TTL）の値を高く設定することで実現されます。ページに動的コンテンツが含まれていて、頻繁に更新する必要があるか、全くキャッシュできない可能性がある場合、これは困難になる可能性があります。幸いにも、含まれる HTML ページを高い TTL でキャッシュして、クライアントサイドの JavaScript または CDN を使用して、より動的なコンテンツスニペットの取得を後回しにする戦略があります。後者のアプローチは、エッジサイドインクルード（ESI）と呼ばれる標準的な手法で、AEM 公開でレンダリングされたサイトでサポートされています。HTML には ESI タグが含まれており、CDN はブラウザーにページを配信する前にこれらのタグを分析し、オリジン（または TTL が期限切れでない場合は CDN キャッシュ）から追加のより動的な（低い TTL）コンテンツを取得するように指示します。
 
