@@ -5,7 +5,7 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b5ae995623c41803f8704fa9699d3514c37e4550
+source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
 workflow-type: tm+mt
 source-wordcount: '1677'
 ht-degree: 41%
@@ -145,8 +145,8 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 * プログラムの特定の ![ データアイコン ](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg)[ 環境 ](/help/implementing/cloud-manager/manage-environments.md) に移動します
 * ![ プログラムの概要アイコン ](/help/implementing/cloud-manager/assets/program-overview.svg)[ プログラムの概要 ](#program-overview) を開きます。
-* ![ 編集アイコン ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)[ プログラムを編集 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![ 削除アイコン ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[ サンドボックスプログラムを削除する ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![ 編集アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)[ プログラムを編集 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
+* ![ 削除アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[ サンドボックスプログラムを削除する ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -183,9 +183,9 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 #### Cloud Manager ヘッダー {#cloud-manager-header-2}
 
-ページの左上隅にはAdobeCloud Managerが表示されます。 ![ サイドメニューアイコン ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、タブのサイドメニューをソフトウェアの他の領域に表示したり非表示にしたりできます。
+ページの左上隅にはAdobeCloud Managerが表示されます。 ![ サイドメニューアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、タブのサイドメニューをソフトウェアの他の領域に表示したり非表示にしたりできます。
 
-![Cloud Manager のハンバーガーメニュー](assets/cloud-manager-hamburger.png)
+![Cloud Managerのサイドメニュー ](assets/cloud-manager-hamburger.png)
 
 「AdobeCloud Manager」をクリックしてホームに戻ります。
 
@@ -227,7 +227,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 デフォルトでは、プログラムを開くと、「**概要**」タブが表示されます。現在のタブがハイライト表示されます。別のタブを選択すると、その詳細が表示されます。
 
-[Cloud Managerヘッダ](#cloud-manager-header-2)ーの左上隅にある ![ メニューアイコンを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、タブのサイドメニューの表示と非表示を切り替えます。
+[Cloud Managerヘッダーの左上隅にある ![ メニューアイコンを表示 ](#cloud-manager-header-2) をクリックして、タブのサイドメニューの表示と非表示を切り替えます。](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)
 
 ### コールトゥセクション {#cta}
 
