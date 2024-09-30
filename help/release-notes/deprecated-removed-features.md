@@ -4,10 +4,10 @@ description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 115c7e02b5f2fda8e57ad1f5bcbc40ff044eb23d
+source-git-commit: 0bcb769f0d8beb4b501646d82fa91bd9233a2173
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2496'
+ht-degree: 82%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 <tbody>
   <tr>
     <td>org.apache.sling.commons.auth<br>org.apache.sling.commons.auth.spi</td>
-    <td>Sling の Auth Core/Auth Core SPI インターフェイスを代わりに使用してください。 [ 以下の削除に関する注意事項を参照してください。] （#org.apache.sling.commons.auth）</td>
+    <td>Sling の Auth Core/Auth Core SPI インターフェイスを代わりに使用してください。 <a href="#org.apache.sling.commons.auth"> 以下の削除に関する注意事項を参照してください。</a></td>
     <td>2015</td>
     <td>2021/7/30</td>
   </tr>
@@ -144,7 +144,7 @@ ht-degree: 0%
     <td>2021/7/30</td>
   </tr>
   <tr> <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml</td>
-    <td>Eclipse Jetty パッケージと Felix Http Jetty パッケージはサポートされなくなりました。 [ 以下の削除に関する注意事項を参照してください。] （#org.eclipse.jetty）</td>
+    <td>Eclipse Jetty パッケージと Felix Http Jetty パッケージはサポートされなくなりました。 <a href="#org.eclipse.jetty"> 以下の削除に関する注意事項を参照してください。</a></td>
     <td>2021/5/27</td>
     <td>2021/8/26</td>
   </tr>
@@ -155,7 +155,7 @@ ht-degree: 0%
     <td>2021/8/26</td>
   </tr>  
   <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
-    <td>この API の使用は、AEM as a Cloud Serviceではサポートされていません。 [ 以下の削除に関する注意事項を参照してください。] （#com.mongodb）</td>
+    <td>この API の使用は、AEM as a Cloud Serviceではサポートされていません。 <a href="#com.mongodb"> 以下の削除に関する注意事項を参照してください。</a></td>
     <td>2021/5/27</td>
     <td>2021/7/30</td>
   </tr>
@@ -173,7 +173,7 @@ ht-degree: 0%
   </tr>
   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
-    <td>Apache Abdera が 2017 年以降廃止されたプロジェクトなので、この API は非推奨（廃止予定）となりました。 [ 以下の削除に関する注意事項を参照してください。] （#org.apache.abdera_or_org.apache.sling.atom.taglib）</td>
+    <td>Apache Abdera が 2017 年以降廃止されたプロジェクトなので、この API は非推奨（廃止予定）となりました。 <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib"> 以下の削除に関する注意事項を参照してください。</a></td>
     <td>2021/7/29</td>
     <td>2021/9/29</td>
   </tr>
@@ -202,13 +202,13 @@ ht-degree: 0%
     <td>削除済み</td>
   <tr>
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
-    <td>従来のAEM 6.x API。 [ 以下の削除に関する注意事項を参照してください。] （#org.apache.abdera_or_org.apache.sling.atom.taglib）</td>
+    <td>従来のAEM 6.x API。 <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib"> 以下の削除に関する注意事項を参照してください。</a></td>
     <td>2019/4/8</td>
     <td>2021/9/29</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>Apache Felix Http ホワイトボードはサポートされなくなりました。コードを OSGi Http ホワイトボードに移行します。 [ 以下の削除に関する注意事項を参照してください。] （#org.apache.felix.http.whiteboard）</td>
+    <td>Apache Felix Http ホワイトボードはサポートされなくなりました。コードを OSGi Http ホワイトボードに移行します。 <a href="#org.apache.felix.http.whiteboard"> 以下の削除に関する注意事項を参照してください。</a></td>
     <td>2022/1/27</td>
     <td>2022/3/24</td>
   </tr>
@@ -270,7 +270,7 @@ ht-degree: 0%
     <td>2023/06/15</td>
   </tr>
   <tr>
-    <td>org.slf4j.event	</td>
+    <td>org.slf4j.event    </td>
     <td>この内部 slf4j API は、AEM as a Cloud Service ではサポートされていません。</td>
     <td>2022/4/11</td>
     <td>2024/08/30</td>
