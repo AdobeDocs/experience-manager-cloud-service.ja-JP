@@ -5,7 +5,7 @@ exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 source-git-commit: 0c31f83d3e115a676c7daa37f634e25d08f4d06c
 workflow-type: tm+mt
 source-wordcount: '1374'
-ht-degree: 7%
+ht-degree: 14%
 
 ---
 
@@ -14,12 +14,12 @@ ht-degree: 7%
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"
 >title="コンテンツハブユーザーインターフェイスの設定"
->abstract="Experience Manager Assetsを使用すると、管理者は、Content Hub ユーザーインターフェイスで使用できるオプションを設定できます。 管理者が選択した設定オプションに基づいて、Content Hub ユーザーはContent Hubでフィールドを表示できます。 設定オプションには、アセットのインポート時のメタデータ、フィルター、アセットプロパティ、アセットの検索時のメタデータ、パーソナライズされたブランディング、任意のカスタムリンクが含まれます。"
+>abstract="Experience Manager Assets を使用すると、管理者はコンテンツハブユーザーインターフェイスで使用可能なオプションを設定できます。管理者が選択した設定オプションに基づいて、コンテンツハブユーザーはコンテンツハブのフィールドを表示できます。設定オプションには、アセットの読み込み時のメタデータ、フィルター、アセットのプロパティ、アセットの検索時のメタデータ、パーソナライズされたブランディング、任意のカスタムリンクが含まれます。"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Content Hubでのアセットの設定 ](assets/configure-assets.png)
 
-Experience Manager Assetsを使用すると、管理者は、Content Hub ユーザーインターフェイスで使用できるオプションを設定できます。 管理者が選択した設定オプションに基づいて、Content Hub ユーザーはContent Hubでフィールドを表示できます。 設定オプションは次のとおりです。
+Experience Manager Assets を使用すると、管理者はコンテンツハブユーザーインターフェイスで使用可能なオプションを設定できます。管理者が選択した設定オプションに基づいて、コンテンツハブユーザーはコンテンツハブのフィールドを表示できます。設定オプションは次のとおりです。
 
 * アセットの検索中にユーザーが使用できるフィルター。
 
