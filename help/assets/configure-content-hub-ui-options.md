@@ -2,9 +2,9 @@
 title: コンテンツハブユーザーインターフェイスの設定
 description: コンテンツハブユーザーインターフェイスの設定
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
+source-git-commit: 0c31f83d3e115a676c7daa37f634e25d08f4d06c
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1374'
 ht-degree: 7%
 
 ---
@@ -60,6 +60,8 @@ Content Hubの設定オプションにアクセスするには：
 * [検索](#configure-metadata-search-content-hub)
 
 * [ブランディング](#configure-branding-content-hub)
+
+* [有効期限切れのアセット](#expired-assets-content-hub)
 
 * [カスタムリンク](#configure-custom-links-content-hub)
 
@@ -168,6 +170,33 @@ Content Hubでは、管理者がアセットの検索時に表示するフィル
 設定ユーザーインターフェイスで有効にしたブランディングのアップデートは、Content Hub ポータルバナーに表示されます。
 
 ![Content Hubの設定 UI ブランディング ](assets/configuration-ui-branding-updates.png)
+
+### 有効期限切れのアセット {#expired-assets-content-hub}
+
+管理者は、期限切れのアセットをContent Hubに表示する必要があるかどうかを制御できます。 期限切れのアセットを表示可能にすると、ユーザーがダウンロードできるかどうかを定義することもできます。
+
+期限切れのアセットは、デフォルトではContent Hubに表示されません。
+
+これを行うには、次の手順を実行します。
+
+1. [ 設定 ](#access-configuration-options-content-hub) ユーザーインターフェイスで、「**[!UICONTROL 期限切れのAssets]**」をクリックします。
+
+1. 「**[!UICONTROL 表示]**」セクションで、「**[!UICONTROL 期限切れアセットの表示をユーザーに許可]** 切替スイッチを有効にして、期限切れのすべてのアセットをContent Hubに表示します。
+
+1. アセットの表示を有効にした後、「ユーザーが期限切れアセットをダウンロードできるようにする **[!UICONTROL 切替スイッチを使用して、期限切れアセットをダウンロードする機能を有効または無効にでき]** す。
+
+1. 「**[!UICONTROL 保存]**」をクリックして、変更内容を適用します。
+
+   ![Content Hubの期限切れアセット ](assets/expired-assets-content-hub.png)
+
+アセットの表示を有効にすると、次の図に示すように、Content Hubで期限切れのアセットを確認できます。
+
+![Content Hubの期限切れアセット ](assets/view-download-expired-assets.png)
+
+管理者がダウンロードを有効にしている場合は、図でハイライト表示されているように、Content Hub ユーザーもダウンロードできます。
+
+有効期限切れのアセットの表示が有効になっている場合、Content Hubでは、今後 15 日以内に期限切れになるアセットもアセットカードの `Expiring in n days` メッセージで強調表示します。
+
 
 ### カスタムリンク {#configure-custom-links-content-hub}
 
