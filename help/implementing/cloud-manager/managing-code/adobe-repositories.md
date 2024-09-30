@@ -1,37 +1,46 @@
 ---
-title: Cloud Manager での Adobe リポジトリの追加
-description: Cloud Manager でアドビが管理するリポジトリを作成する方法について説明します。
+title: Cloud ManagerでのAdobeリポジトリの追加
+description: Cloud ManagerでAdobeが管理するリポジトリを追加する方法について説明します。
 exl-id: 6c32c4ae-f48d-4440-bfc2-cdc1a3d59599
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
-source-wordcount: '145'
-ht-degree: 100%
+source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 8%
 
 ---
 
-# Cloud Manager での Adobe リポジトリの追加 {#adobe-repositories}
+# Cloud ManagerでのAdobeリポジトリの追加 {#adobe-repositories}
 
-Cloud Manager でアドビが管理するリポジトリを作成する方法について説明します。
+Cloud ManagerでAdobeが管理するリポジトリを追加する方法について説明します。
 
-## アドビが管理するリポジトリの追加 {#add-adobe-repository}
+**リポジトリ** ページを使用すると、Adobeが管理するリポジトリを、選択したプログラムに簡単に追加できます。
 
-**リポジトリ**&#x200B;ウィンドウを使用すると、アドビが管理するリポジトリをプログラムに容易に追加できます。
+**Cloud ManagerにAdobeリポジトリを追加するには：**
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) でCloud Managerにログインし、Adobeが管理するリポジトリを追加する適切な組織とプログラムを選択します。
 
-1. **プログラムの概要**&#x200B;ページで、「**リポジトリ**」タブをクリックして「**リポジトリ**」ページに切り替えます。
+1. **プログラムの概要** ページのサイドメニューで、![ フォルダーアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)**リポジトリ** タブをクリックします。 をクリックして **リポジトリ** ページに切り替えます。
 
-1. ツールバーで「**リポジトリを追加**」をクリックします。
+1. **リポジトリ** ページで、右上隅付近の「**リポジトリを追加**」をクリックします。
 
    ![「リポジトリーを追加」ボタン](assets/add-repository.png)
 
-1. 必要に応じて名前と説明を入力し、「**保存**」をクリックします。
+1. **リポジトリを追加** ダイアログボックスで、リポジトリタイプとして **2}Adobeリポジトリ } が選択されていることを確認します。**
+
+1. それぞれのテキストフィールドに、以下を入力します。
+
+   * **リポジトリ名** – 新しいリポジトリの名前を表す名前。
+   * **リポジトリ URL のプレビュー** - インフラストラクチャが既に配置され、Adobeによって完全に統合および管理されているので、URL パスを入力したり、既存のパスを編集したりする必要はありません。
+   * **説明（オプション）** - リポジトリの詳細な説明。
 
    ![リポジトリーを追加ダイアログ](assets/add-adobe-repository.png)
 
-ウィザードが閉じると、新しいリポジトリが&#x200B;**リポジトリ**&#x200B;ウィンドウのテーブルに表示されます。これで、[CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)を関連付けることや、[**リポジトリ**&#x200B;ウィンドウ](managing-repositories.md)内で管理することができます。
+1. **保存** をクリックします。
+新しいリポジトリが、**リポジトリ** ページのテーブルに表示されます。
+
+[CI/CD パイプライン ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) を関連付けたり、[**リポジトリ** ページ ](managing-repositories.md) 内で管理したりできるようになりました。
 
 >[!TIP]
 >

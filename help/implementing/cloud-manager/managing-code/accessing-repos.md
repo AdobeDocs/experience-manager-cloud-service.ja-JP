@@ -5,10 +5,10 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
-source-wordcount: '399'
-ht-degree: 100%
+source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 44%
 
 ---
 
@@ -19,50 +19,51 @@ Cloud Manager でセルフサービスの Git アカウント管理を使用し�
 
 ## 概要ページからのリポジトリ情報へのアクセス {#overview-page}
 
-Cloud Manager では、パイプラインカードの目立つ位置にある「**リポジトリ情報にアクセス**」ボタンを使用して、アドビが管理するリポジトリのリポジトリアクセス情報を簡単に取得できます。
+Cloud Managerを使用すると、**パイプライン** カードから「リポジトリ情報にアクセス **を使用して、Adobeが管理するリポジトリのリポジトリアクセス情報を簡単に取得でき** す。
+
+**リポジトリ情報** ダイアログボックスでは、Adobeが管理するリポジトリに対する次のアクセス情報を表示できます。
+
+* Git ユーザー名。
+* Git パスワード。
+* Cloud Manager Git リポジトリへの URL。
+* リモートを Git リポジトリにすばやく追加し、コードをプッシュするビルド済み Git コマンド。
+
+![リポジトリ情報ウィンドウ](assets/repository-info.png)
+
+[プライベートリポジトリ](private-repositories.md)に関するアクセス情報は、Cloud Manager では利用できません。
+
+**リポジトリー情報にアクセス** 機能は、「開発者 **または** デプロイメントマネージャー **の役割を持つユーザーに表示** れます。
+
+**概要ページからリポジトリ情報にアクセスするには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動します。
+1. **プログラムの概要** ページの **パイプライン** カードの下の「**リポジトリー情報へアクセス**」をクリックします。
 
-   ![環境カードの「リポジトリ情報にアクセス」ボタン](assets/pipelines-card.png)
+   ![ パイプラインカードのリポジトリ情報にアクセス ](assets/pipelines-card.png)
 
-1. 「**リポジトリ情報にアクセス**」ボタンをタップまたはクリックして、**リポジトリ情報**&#x200B;ダイアログを開き、次の情報を表示します。
+1. パスワードにアクセスするには、新しいパスワードを生成する必要があります。「リポジトリ情報」ダイアログ・ボックスで、「**`Generate password`**」をクリックします。
 
-   * Git ユーザー名。
-   * Git パスワード。
-   * Cloud Manager Git リポジトリへの URL。
-   * リモートを Git リポジトリにすばやく追加し、コードをプッシュするためのビルド済み Git コマンド。
+1. 確認ダイアログボックスで、「**`Generate password`**」をクリックします。
 
-   ![リポジトリ情報ウィンドウ](assets/repository-info.png)
+   ![パスワードの生成を確認](assets/confirm-generated-password.png)
 
-1. パスワードにアクセスするには、新しいパスワードを生成する必要があります。これを行うには、「**パスワードを生成**」ボタンをタップまたはクリックします。
-
-1. **...してもよろしいですか？**&#x200B;と表示されるダイアログで「**パスワードを生成**」をタップまたはクリックして、パスワードの生成を確認します。
-
-   ![パスワードの生成を確認](assets/confirm-password-generation.png)
-
-1. パスワードが生成され、「**パスワード**」フィールドにコピー用に表示されます。
+1. 「**パスワード**」フィールドの右側にある ![ コピーアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) をクリックして、パスワードをクリップボードにコピーします。
 
    * パスワードを生成すると、以前のパスワードは無効になります。
-   * Cloud Manager はパスワードを保存しません。このパスワードを安全に保存するのはユーザーの責任です。
-   * Cloud Manager はパスワードを保存しないので、パスワードが失われた場合は、新しいパスワードを再生成する必要があります。
+   * Cloud Managerはパスワードを保存しません。 パスワードを安全に保存するのはユーザーの責任です。
+   * Cloud Managerはパスワードを保存しないので、パスワードを失った場合は、新しく再生成する必要があります。
 
-   ![生成されたパスワードの例](assets/generated-password.png)
+   ![ リポジトリ情報ダイアログボックスのパスワードをコピー ](/help/implementing/cloud-manager/managing-code/assets/repository-copy-password.png)
 
 これらの資格情報を使用して、リポジトリのローカルコピーを複製し、そのローカルリポジトリで変更を加えることができます。変更できたら、Cloud Manager のリモートコードリポジトリにコードの変更をコミットして戻すことができます。
 
->[!NOTE]
->
->* 「**リポジトリ情報にアクセス**」オプションは、**開発者**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持つユーザーに表示されます。
->* 「**リポジトリ情報にアクセス**」ボタンをクリックすると、アドビが管理するリポジトリのリポジトリアクセス情報のみが表示されます。[プライベートリポジトリ](private-repositories.md)に関するアクセス情報は、Cloud Manager では利用できません。
+## リポジトリーページからのリポジトリー情報へのアクセス {#repositories-window}
 
-## リポジトリウィンドウからのリポジトリ情報へのアクセス {#repositories-window}
-
-[**リポジトリ**&#x200B;ウィンドウ](managing-repositories.md)のツールバーには、「**リポジトリ情報にアクセス**」ボタンもあります。アドビが管理するリポジトリへのアクセスに関する同じ情報が表示されます。
+**リポジトリ情報にアクセス** 機能は、[**リポジトリ** ページ ](managing-repositories.md) からも使用できます。 アドビが管理するリポジトリへのアクセスに関する同じ情報が表示されます。
 
 ## アクセスパスワードの失効 {#revoke-password}
 
-アクセスパスワードはいつでも失効できます。これを行うには、[このリクエストに対するサポートチケットを作成](https://experienceleague.adobe.com/ja?support-solution=Experience+Manager&amp;support-tab=home#support)します。
+アクセスパスワードはいつでも取り消すことができます。
 
-チケットは高い優先度で処理され、1 日以内に失効されます。
+それには、[ このリクエストのサポートチケットを作成 ](https://experienceleague.adobe.com/ja?support-solution=Experience+Manager&amp;support-tab=home#support) します。 チケットは優先度が高く処理され、通常は 1 日以内に失効します。
