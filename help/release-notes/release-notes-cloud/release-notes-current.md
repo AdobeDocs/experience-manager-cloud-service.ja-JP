@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 2d5fa0b15456ad9838fa236a2b5c79d41a9af7fe
+source-git-commit: 894c5df2cdc6637bae9b4b8f2cbdd1f1162b3942
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 71%
+source-wordcount: '1289'
+ht-degree: 68%
 
 ---
 
@@ -71,6 +71,12 @@ Dynamic Media アカウントで AI 生成のキャプションサポートに�
 
 アセットセレクターで、コレクションを参照して目的のアセットを見つけることができるようになりました。
 ![ アセットセレクターコレクション ](/help/assets/assets/collections-rail-modal-view.png)
+
+### Content Hubの新機能 {#content-hub-new-features}
+
+管理者は、期限切れのアセットをContent Hubに表示する必要があるかどうかを制御できるようになりました。 期限切れのアセットを表示可能にすると、ユーザーがダウンロードできるかどうかを定義することもできます。
+
+![Content Hubの期限切れアセット ](/help/assets/assets/view-download-expired-assets.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
