@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 2ea7700107d3f0b73828ba07d5cefdec126e37b8
 workflow-type: tm+mt
 source-wordcount: '5662'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -929,7 +929,7 @@ ht-degree: 99%
       + [パスマッピング](/help/edge/wysiwyg-authoring/path-mapping.md)
       + [表形式のデータとスプレッドシート](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [分類データの管理](/help/edge/wysiwyg-authoring/taxonomy.md)
-      + [WYSIWYGとドキュメントベースのブロック](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
+      + [WYSIWYG とドキュメントベースのブロック](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
       + [WIP Sites 機能](/help/edge/wysiwyg-authoring/wip-features.md)
    + ドキュメントベースのオーサリング {#document-authoring}
       + [オーサリング](/help/edge/docs/authoring.md)
