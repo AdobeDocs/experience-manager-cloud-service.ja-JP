@@ -5,9 +5,9 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: f2364de6237ca9f0285815b581bcf3881488188d
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '384'
 ht-degree: 44%
 
 ---
@@ -42,9 +42,9 @@ Cloud Managerを使用すると、**パイプライン** カードから「リ�
 
    ![ パイプラインカードのリポジトリ情報にアクセス ](assets/pipelines-card.png)
 
-1. パスワードにアクセスするには、新しいパスワードを生成する必要があります。「リポジトリ情報」ダイアログ・ボックスで、「**`Generate password`**」をクリックします。
+1. パスワードにアクセスするには、新しいパスワードを生成する必要があります。**リポジトリ情報** ダイアログボックスで、「**パスワードを生成**」を選択します。
 
-1. 確認ダイアログボックスで、「**`Generate password`**」をクリックします。
+1. 確認ダイアログボックスで、「**パスワードを生成**」を選択します。
 
    ![パスワードの生成を確認](assets/confirm-generated-password.png)
 

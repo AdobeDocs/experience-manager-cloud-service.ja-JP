@@ -1,13 +1,13 @@
 ---
 title: Cloud Managerでのリポジトリの管理
-description: Cloud Managerで GIT リポジトリを作成、表示、削除する方法について説明します。
+description: Cloud Managerで Git リポジトリを追加、表示、削除する方法について説明します。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: b35b25bcd62c28f7894171b7b2269fa46d612686
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 14%
+source-wordcount: '708'
+ht-degree: 20%
 
 ---
 
@@ -50,6 +50,8 @@ Cloud Manager内で作成されたリポジトリは、パイプラインの追�
 
 ## リポジトリを追加 {#adding-repositories}
 
+リポジトリを追加するには、ユーザーが **デプロイメントマネージャー** または **ビジネスオーナー** の役割を持っている必要があります。
+
 **リポジトリ** ページの右上隅付近にある「**リポジトリを追加**」をクリックします
 
 ![ リポジトリを追加ダイアログボックス。](assets/repository-add.png)
@@ -60,11 +62,15 @@ Cloud Managerでは、Adobeが管理するリポジトリ （**Adobeリポジト
 * [Cloud Manager での Adobe リポジトリの追加](adobe-repositories.md)
 * [Cloud Manager でのプライベートリポジトリの追加](private-repositories.md)
 
->[!NOTE]
->
->* リポジトリを追加するには、ユーザーが **デプロイメントマネージャー** または **ビジネスオーナー** の役割を持っている必要があります。
->* 特定の企業または IMS 組織のすべてのプログラムで使用できるリポジトリは 300 個までです。
+特定の企業または IMS 組織のすべてのプログラムで使用できるリポジトリは 300 個までです。
 
+## リポジトリ情報へのアクセス {#repo-info}
+
+**リポジトリ**&#x200B;ウィンドウでリポジトリを表示する際に、ツールバーの「**リポジトリ情報へアクセス**」ボタンをクリックすると、アドビが管理するリポジトリにプログラムでアクセスする方法の詳細を表示できます。
+
+![リポジトリ情報](assets/repository-access-repo-info2.png)
+
+**リポジトリ情報**&#x200B;ウィンドウが開き、詳細が表示されます。リポジトリ情報へのアクセスについて詳しくは、[リポジトリ情報へのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)を参照してください。
 
 ## 分岐を確認 / プロジェクトを作成 {#check-branches}
 
@@ -91,7 +97,7 @@ Cloud Managerでは、Adobeが管理するリポジトリ （**Adobeリポジト
 
 ![削除](assets/repository-delete.png)
 
-リポジトリを削除すると、今後作成される新しいリポジトリにその名前を使用できなくなります。 同じ名前を使用しようとすると、次のエラーメッセージが表示されます。
+リポジトリを削除すると、今後作成される新しいリポジトリにその名前を使用できなくなります。 削除されたリポジトリと同じ名前を使用してリポジトリを追加しようとすると、次のエラーメッセージが表示されます。
 
 `Repository name should be unique within organization.`
 
