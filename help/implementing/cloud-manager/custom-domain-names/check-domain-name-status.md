@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3ff7b76f7892269f6ca001ff2c079bc693c06d93
-workflow-type: ht
-source-wordcount: '822'
-ht-degree: 100%
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+workflow-type: tm+mt
+source-wordcount: '832'
+ht-degree: 88%
 
 ---
 
@@ -21,7 +21,7 @@ Cloud Manager がカスタムドメイン名を正常に確認したことを確
 
 Cloud Manager でドメイン名のステータスを確認する前に、次の要件を満たす必要があります。
 
-* まず、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)ドキュメントの説明に従って、カスタムドメインの TXT レコードを追加します。
+* まず、[ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) ドキュメントの説明に従って、カスタムドメインの EV/OV 証明書を追加します。
 
 ## カスタムドメイン名のステータスの確認 {#how-to}
 
@@ -45,13 +45,13 @@ Cloud Manager 内でカスタムドメイン名のステータスを判断でき
 
 ## 検証ステータス {#statuses}
 
-Cloud Manager は、[TXT 値](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を使用してドメインの所有権を検証し、次のいずれかのステータスメッセージを表示します。
+Cloud Managerは、顧客が管理する証明書を使用してドメインの所有権を確認します。 完了すると、次のいずれかのステータスメッセージが表示されます。
 
 | ステータス | 説明 |
 | --- | --- |
-| ドメイン検証失敗 | TXT 値が見つからないか、エラーが検出されました。<br>ステータスメッセージに表示される指示に従って、問題を解決します。準備が整ったら、ステータスの横にある「**再検証**」アイコンを選択する必要があります。 |
+| ドメイン検証失敗 | 顧客が管理する EV/OV 証明書がないか、エラーが検出されました。<br>ステータスメッセージに表示される指示に従って、問題を解決します。準備が整ったら、ステータスの横にある「**再検証**」アイコンを選択する必要があります。 |
 | ドメイン検証中 | 検証が進行中です。<br>このステータスは、通常、ステータスの横にある&#x200B;**再検証**&#x200B;アイコンを選択した後に表示されます。DNS の生成遅延が原因で、DNS 検証の処理に数時間かかる場合があります。 |
-| 検証済み - デプロイメント失敗 | TXT 検証は成功しましたが、CDN のデプロイメントに失敗しました。<br>この場合は、アドビ担当者にお問い合わせください。 |
+| 検証済み - デプロイメント失敗 | EV/OV 証明書の検証は成功しましたが、CDN のデプロイメントに失敗しました。<br>この場合は、アドビ担当者にお問い合わせください。 |
 | ドメイン検証済みおよびデプロイ済み | このステータスは、カスタムドメイン名が使用できる状態であることを示します。<br>この時点で、カスタムドメイン名はテストの準備ができており、Cloud Manager のドメイン名を指すようになっています。詳しくは、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。 |
 | 削除中 | カスタムドメイン名を削除中です。 |
 | 削除に失敗しました | カスタムドメイン名の削除に失敗しました。再試行する必要があります。<br>詳しくは、[カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)を参照してください。 |
@@ -63,7 +63,7 @@ Cloud Manager は、[TXT 値](/help/implementing/cloud-manager/custom-domain-nam
 
 ### エラー : ドメインがインストールされていません {#domain-not-installed}
 
-このエラーは、レコードが適切にアップデートされたことを確認した後でも、TXT レコードのドメイン検証中に発生する可能性があります。
+このエラーは、証明書が適切に更新されたことを確認した後でも、EV/OV 証明書のドメイン検証中に発生する場合があります。
 
 #### エラーの原因 {#cause}
 

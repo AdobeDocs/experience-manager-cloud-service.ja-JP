@@ -1,8 +1,8 @@
 ---
-source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
+source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1202'
+ht-degree: 94%
 
 ---
 # スニペット {#snippets}
@@ -197,7 +197,7 @@ ht-degree: 0%
 >* [インタラクティブな 3D を活用したエクスペリエンス](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)を実現します。
 >* その他の場合は、[Dynamic Media リソースバンク](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)を参照してください。
 
-## サポートチケットのログ {#support-ticket}
+## サポートチケットを記録 {#support-ticket}
 
 製品の問題に対して追加の調査とトラブルシューティングが必要な場合、および応答 SLT を満たす必要がある場合は、サポートチケットを送信できます。
 

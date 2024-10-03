@@ -4,10 +4,10 @@ description: よくある原因を特定して SSL 証明書エラーのトラ�
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
-workflow-type: ht
-source-wordcount: '331'
-ht-degree: 100%
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+workflow-type: tm+mt
+source-wordcount: '377'
+ht-degree: 87%
 
 ---
 
@@ -15,6 +15,18 @@ ht-degree: 100%
 # SSL 証明書エラーのトラブルシューティング {#certificate-errors}
 
 証明書が正しくインストールされていないか、Cloud Manager の要件を満たしていない場合は、特定のエラーが発生する場合があります。
+
++++**無効な証明書**
+
+このエラーは、顧客が暗号化された秘密鍵を追加し、DER 形式の秘密鍵を使用したために発生します。
+
++++
+
++++**秘密鍵は PKCS 8 形式である必要があります**
+
+このエラーは、顧客が暗号化された秘密鍵を追加し、DER 形式の秘密鍵を使用したために発生します。
+
++++
 
 +++**正しい証明書の順序**
 

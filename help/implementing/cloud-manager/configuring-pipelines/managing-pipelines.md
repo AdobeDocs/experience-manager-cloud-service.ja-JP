@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
-source-wordcount: '1110'
-ht-degree: 100%
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+workflow-type: tm+mt
+source-wordcount: '1111'
+ht-degree: 99%
 
 ---
 
@@ -92,7 +92,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 パイプラインのタイプによっては、省略記号ボタンをもう一度クリックして「**キャンセル**」を選択すると、実行をキャンセルできる場合があります。
 
-## パイプラインの編集 {#editing-pipelines}
+## パイプラインを編集 {#editing-pipelines}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 

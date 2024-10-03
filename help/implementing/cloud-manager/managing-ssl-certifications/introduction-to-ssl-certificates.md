@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 484f7b0fd8917902d028434451964dd9df3e3445
+source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '891'
 ht-degree: 56%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 56%
 
 # SSL 証明書の概要{#introduction}
 
-SSL 証明書をインストールおよび管理するためにCloud Managerが提供するセルフサービスツールについて説明します。
+SSL （Secure Socket Layer）証明書をインストールおよび管理するためにCloud Managerが提供するセルフサービスツールについて説明します。
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
@@ -32,18 +32,18 @@ SSL 証明書をインストールおよび管理するためにCloud Managerが
 
 >[!IMPORTANT]
 >
->Cloud Manager からは、SSL 証明書や秘密鍵は提供されません。これらは、信頼できるサードパーティの組織である証明機関から取得する必要があります。 よく知られている証明機関には、*DigiCert*、*Let&#39;s Encrypt*、*GlobalSign*、*Entrust*、*Verisign* などがあります。
+>Cloud Manager からは、SSL 証明書や秘密鍵は提供されません。これらの部分は、信頼できるサードパーティの組織である証明機関から取得する必要があります。 よく知られている証明機関には、*DigiCert*、*Let&#39;s Encrypt*、*GlobalSign*、*Entrust*、*Verisign* などがあります。
 
-## Cloud Managerを使用した証明書の管理 {#cloud-manager}
+## Cloud Managerでの証明書の管理 {#cloud-manager}
 
 Cloud Managerには、SSL 証明書をインストールおよび管理するセルフサービスツールが用意されており、ユーザーのサイトセキュリティを確保できます。 Cloud Managerでは、証明書を管理する 2 つのモデルをサポートしています。
 
 | | モデル | 説明 |
 | --- | --- | --- |
-| 1 | **[アドビが管理する証明書（DV）](#adobe-managed)** | Cloud Managerを使用すると、ドメインのクイックセットアップ用にAdobeから提供される DV （Domain Validation）証明書を設定できます。 |
-| 2 | **[顧客が管理する証明書（OV／EV）](#customer-managed)** | Cloud Managerは、所有する OV および EV SSL 証明書や、サードパーティの認証機関による秘密鍵（*Let’s Encrypt* を管理できる、プラットフォーム TLS （Transport Layer Security）サービスを提供しています。 |
+| A | **[アドビが管理する証明書（DV）](#adobe-managed)** | Cloud Managerを使用すると、ドメインのクイックセットアップ用にAdobeから提供される DV （Domain Validation）証明書を設定できます。 |
+| B | **[顧客が管理する証明書（OV／EV）](#customer-managed)** | Cloud Managerは、所有する OV および EV SSL 証明書と、サードパーティの認証機関からの秘密鍵（*Let’s Encrypt* を管理できる、プラットフォーム TLS （Transport Layer Security）サービスを提供しています。 |
 
-どちらのモデルも、次の一般的な機能を備えています。
+どちらのモデルも、証明書を管理するための次の一般的な機能を提供します。
 
 * 各 Cloud Manager 環境は、複数の証明書を使用できます。
 * 秘密鍵は、複数の SSL 証明書を発行する場合があります。
@@ -59,7 +59,7 @@ DV 証明書は、最も基本的なレベルの SSL 証明書で、多くの場
 
 DV 証明書を作成すると、その証明書を削除しない限り、アドビが 3 か月ごとに自動的に更新します。
 
-### 顧客管理証明書 {#customer-managed}
+### 顧客管理の証明書 {#customer-managed}
 
 OV 証明書と EV 証明書は、CA で検証された情報を提供します。このような情報は、web サイト所有者、メール送信者、コードや PDF ドキュメントのデジタル署名者が信頼できるかどうかを評価するのに役立ちます。DV 証明書では、このような所有権の検証は許可されません。
 
@@ -72,13 +72,13 @@ OV および EV は、Cloud Managerの DV 証明書に対してさらに、こ�
 
 >[!TIP]
 >
->複数のカスタムドメインがあり、ドメインを追加するたびに証明書をアップロードしたくない場合は、複数のドメインを持つ 1 つの証明書を取得すると便利です。
+>複数のカスタムドメインがある場合、新しいドメインを追加するたびに証明書をアップロードしたくないことがあります。 その場合、複数のドメインに対応する単一の証明書を取得することで、メリットが得られる可能性があります。
 
 >[!NOTE]
 >
 >インストールされている証明書が同じドメインに対応している場合は、より正確な証明書が適用されます。
 >
->例えば、ドメインが `dev.adobe.com` で、`*.adobe.com` をカバーする証明書と `dev.adobe.com` をカバーする証明書がある場合、より正確なので、後者が適用されます。
+>例えば、ドメインが `dev.adobe.com` で、`*.adobe.com` 用の証明書と `dev.adobe.com` 用の証明書が 1 つある場合、より具体的な証明書（`dev.adobe.com`）が使用されます。
 
 #### 顧客管理証明書の要件 {#requirements}
 

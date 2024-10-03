@@ -1,20 +1,20 @@
 ---
-title: 実稼動パイプラインの設定
-description: 実稼動パイプラインを設定し、コードをビルドして実稼働環境にデプロイする方法について説明します。
+title: 実稼動パイプラインを追加
+description: 実稼動パイプラインを追加して、コードをビルドし、実稼動環境にデプロイする方法を説明します。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
-workflow-type: ht
-source-wordcount: '1374'
-ht-degree: 100%
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+workflow-type: tm+mt
+source-wordcount: '1376'
+ht-degree: 98%
 
 ---
 
 
-# 実稼動パイプラインの設定 {#configure-production-pipeline}
+# 実稼動パイプラインを追加 {#configure-production-pipeline}
 
 実稼動パイプラインを設定し、コードをビルドして実稼働環境にデプロイする方法について説明します。実稼動パイプラインは最初にコードをステージング環境にデプロイし、承認があると同じコードを実稼動環境にデプロイします。
 
