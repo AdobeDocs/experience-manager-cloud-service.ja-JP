@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.10.0 �
 description: AEM as a Cloud ServiceのCloud Manager 2024.10.0 のリリースノートについて説明します。
 feature: Release Information
 role: Admin
-source-git-commit: b90ace2250277005d8ac250c841104c93298a605
+source-git-commit: aa8d4c8c69a96054492b886893414c3e82b2f4ad
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 15%
+source-wordcount: '569'
+ht-degree: 13%
 
 ---
 
@@ -29,6 +29,16 @@ AEM as a Cloud ServiceのCloud Manager リリース 2024.10.0 のリリース日
 * <!-- BOTH CS & AMS --> Cloud Managerで使用されるAEM アーキタイプのバージョンが、バージョン 26 に更新されました。 [https://github.com/adobe/aem-project-archetype/releasesを参照してください ](https://github.com/adobe/aem-project-archetype/releases)
 
 <!-- (CMGR-59817) -->
+
+* <!-- CS ONLY --> 新しいカスタムドメインを追加する際、以前の検証方法では長い DNS 検証プロセスが必要でした。 Adobeは、お客様に対してこのプロセスを簡略化しました。 現在は、所有権の証明として機能する有効な SSL 証明書（EV または OV）を指定するだけで済みます。 DNS の TXT レコードを更新する必要はなくなりました。
+
+  >[!NOTE]
+  >
+  >この機能は、お客様が管理する EV および OV 証明書にのみ適用されます。 Adobeで管理される DV 証明書には、引き続き CNAME レコードが必要です。
+
+  [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。
+
+  ![ 顧客が管理する EV/OV 証明書のドメインの検証 ](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
 * <!-- CS ONLY --> ネットワークインフラストラクチャを追加または編集すると、「IP アドレス」フィールドと「ネットワークマスク」フィールドの値は、次のルールに従って検証されます。
 
@@ -66,7 +76,7 @@ Cloud Managerの早期導入プログラムに参加して、今後の機能を�
 
 [Cloud Managerでの外部リポジトリの追加 ](/help/implementing/cloud-manager/managing-code/external-repositories.md) を参照してください。
 
-![ リポジトリを追加ダイアログボックス ](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
+![リポジトリを追加ダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
 
 >[!NOTE]
 >

@@ -4,7 +4,7 @@ description: よくある原因を特定して SSL 証明書エラーのトラ�
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+source-git-commit: b387fee62500094d712f5e1f6025233c9397f8ec
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 87%
@@ -18,13 +18,13 @@ ht-degree: 87%
 
 +++**無効な証明書**
 
-このエラーは、顧客が暗号化された秘密鍵を追加し、DER 形式の秘密鍵を使用したために発生します。
+このエラーは、顧客が暗号化された秘密鍵を使用し、DER 形式でキーを提供したために発生します。
 
 +++
 
 +++**秘密鍵は PKCS 8 形式である必要があります**
 
-このエラーは、顧客が暗号化された秘密鍵を追加し、DER 形式の秘密鍵を使用したために発生します。
+このエラーは、顧客が暗号化された秘密鍵を使用し、DER 形式でキーを提供したために発生します。
 
 +++
 
