@@ -4,10 +4,10 @@ description: 新しい Assets UI（Assets ビュー）を使用してアセッ�
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 816bf0f93dd67f193f4e8a7c9bc4a7df29cb6cf5
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 100%
+source-wordcount: '1881'
+ht-degree: 93%
 
 ---
 
@@ -125,11 +125,23 @@ OneDrive アカウントから AEM Assets にアセットを読み込む前に�
    >* Dropbox のアプリケーションと、`https://www.dropbox.com/home/bulkimport-assets` にあるアセットを含むフォルダーの作成中に、「**完全な Dropbox**」を選択した場合は、「**[!UICONTROL ソースフォルダー]**」フィールドで `bulkimport-assets` を指定します。
    >* Dropbox のアプリケーションと、`https://www.dropbox.com/home/Apps/BulkImportAppFolderScope/bulkimport-assets` にあるアセットを含むフォルダーの作成中に、「**アプリのフォルダー**」を選択した場合は、「**[!UICONTROL ソースフォルダー]**」フィールドで `bulkimport-assets` を指定します。ここで `BulkImportAppFolderScope` は、アプリケーションの名前を指します。ここでは、`Apps` が `home` の後に自動的に追加されます。
 
+   >[!NOTE]
+   >
+   >OneDrive をデータソースとして使用する場合は、次のルールに基づいてソースフォルダーパスを指定します。
+   >* ドメインを指定せずに、ルートフォルダー名のみを指定します。 フォルダーの完全な URL パスが `https://my.sharepoint.com/my?id=/personal/user/Documents/Importfolder/` の場合は、「**[!UICONTROL Source フォルダー]**」フィールドに `/Importfolder/` を指定します。
+   >* フォルダー名に複数の単語が含まれる場合は、スペースで区切って一括読み込み設定で名前を指定します。
+   >* ソースフォルダーはディレクトリのルートに配置する必要があります。 フォルダーパスはサポートされていません。
+
 1. （オプション）ファイルが Experience Manager Assets に読み込まれた後、ソースデータストアから元のファイルを削除するには、「**[!UICONTROL 読み込み後にソースファイルを削除]**」オプションを選択します。
 1. 「**[!UICONTROL 読み込みモード]**」を選択します。「**[!UICONTROL スキップ]**」、「**[!UICONTROL 置換]**」または「**[!UICONTROL バージョンを作成]**」を選択します。スキップモードがデフォルトです。このモードでは、アセットが既に存在する場合は、取得をスキップします。
    ![ソースの詳細の読み込み](/help/assets/assets/bulk-import-source-details.png)
 
 1. （オプション）「**[!UICONTROL メタデータファイル]**」フィールドに、CSV 形式で読み込むメタデータファイルを指定します。メタデータソースファイルは、ソースフォルダー内に指定する必要があります。「**[!UICONTROL 次へ]**」をクリックして、**[!UICONTROL 場所とフィルター]**&#x200B;に移動します。
+
+   >[!NOTE]
+   >
+   >組織のセキュリティルールによっては、このアプリケーションを一括読み込みツールに接続するために、管理者の同意が必要になる場合があります。 これが必要な場合、管理者は、一括読み込み設定を保存する前に同意を得る必要があります。
+
 1. 「 **[!UICONTROL アセットのターゲットフォルダー]**」フィールドを使用して、アセットの読み込み先となる DAM 内の場所を定義するパスを指定します。例：`/content/dam/imported_assets`
 1. （オプション）「**[!UICONTROL フィルターを選択]**」セクションで、アセットの最小ファイルサイズを MB 単位で指定して、「**[!UICONTROL 最小サイズでフィルター]**」フィールドの取り込みプロセスにアセットを含めます。
 1. （オプション）アセットの最大ファイルサイズを MB 単位で指定して、「**[!UICONTROL 最大サイズでフィルター]**」フィールドの取り込みプロセスにアセットを含めます。
