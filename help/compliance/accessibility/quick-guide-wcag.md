@@ -4,10 +4,10 @@ description: Web コンテンツアクセシビリティガイドライン（WCA
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 feature: Compliance
 role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: bffc743b2d28c4c4815a17df75c04c8bfdc90a1e
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 100%
+source-wordcount: '1749'
+ht-degree: 98%
 
 ---
 
@@ -23,9 +23,11 @@ Adobe Experience Manager（AEM）as a Cloud Service は、Web コンテンツの
 
 >[!NOTE]
 >
->[更新版のガイドライン WCAG 2.2](https://www.w3.org/TR/WCAG22/) は現在作成中ですが、このポイントについては考慮されません。
+>これらのドキュメントはガイドラインの [ 更新版 ](https://www.w3.org/TR/WCAG/) を記述したので、WCAG 2.2 は 2023 年 10 月に利用可能になりました。
+>
+>[WCAG 2.1 との比較 ](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) および [WCAG 2.2 の新機能 ](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2) を参照してください。
 
-WCAG 2.1 は、障がい者が web コンテンツにアクセスして利用できるようにするための、テクノロジーから独立した一連のガイドラインおよび達成基準で構成されています。これらのガイドラインでは、Web コンテンツの作成者、デザイナー、開発者を対象として、視覚障碍、難聴、学習障碍、加齢に伴う制限をはじめとする障碍の種類に関係なく、できるだけ多くの人ができるだけ容易にアクセスできるようなリソースを作成するようアドバイスしています。
+WCAG 2.1 は、障碍のあるユーザーが Web コンテンツにアクセスして利用できるようにするための、テクノロジーから独立した一連のガイドラインおよび達成基準で構成されます。これらのガイドラインでは、Web コンテンツの作成者、デザイナー、開発者を対象として、視覚障碍、難聴、学習障碍、加齢に伴う制限をはじめとする障碍の種類に関係なく、できるだけ多くの人ができるだけ容易にアクセスできるようなリソースを作成するようアドバイスしています。
 
 例えば、HTML の `alt` 属性を使用して画像（またはその他のテキスト以外のコンテンツ）を説明すると、視覚障碍または弱視の人にとって大きな助けとなります。`alt` 属性内のテキストの説明は、音声出力に変換したり、電子的に再生可能な点字ディスプレイに転送したりすることができます。
 
