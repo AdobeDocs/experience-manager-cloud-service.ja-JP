@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 41%
+source-wordcount: '1660'
+ht-degree: 40%
 
 ---
 
@@ -45,7 +45,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 >[!TIP]
 >
->プログラムについて詳しくは、[プログラムとプログラムタイプ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)ドキュメントを参照してください。
+>プログラムについて詳しくは、[プログラムとプログラムタイプ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)を参照してください。
 
 ### ツールバー {#my-programs-toolbars}
 
@@ -227,9 +227,9 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 デフォルトでは、プログラムを開くと、「**概要**」タブが表示されます。現在のタブがハイライト表示されます。別のタブを選択すると、その詳細が表示されます。
 
-[Cloud Managerヘッダーの左上隅にある  メニューアイコンを表示 ](#cloud-manager-header-2) をクリックして、タブのサイドメニューの表示と非表示を切り替えます。![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)
+[Cloud Managerヘッダーの左上隅にある ![ メニューアイコンを表示 ](#cloud-manager-header-2) をクリックして、タブのサイドメニューの表示と非表示を切り替えます。](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)
 
-### コールトゥセクション {#cta}
+### コールトゥアクション {#cta}
 
 「コールトゥアクション」セクションでは、プログラムのステータスに応じて役立つ情報を提供します。新しいプログラムの場合は、次の手順が示され、開始日 [ プログラムの作成時に設定 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) が示されます。
 
@@ -245,7 +245,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 **環境**&#x200B;カードには 3 つの環境のみ表示されます。「**すべて表示**」ボタンをクリックすると、プログラムのすべての環境が表示されます。
 
-環境の管理方法について詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md)ドキュメントを参照してください。
+[ 環境の管理 ](/help/implementing/cloud-manager/manage-environments.md) も参照してください。
 
 ### パイプラインカード {#pipelines}
 
@@ -253,7 +253,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 **パイプライン**&#x200B;カードには 3 つのパイプラインのみ表示されます。「**すべて表示**」をクリックすると、プログラムのすべてのパイプラインが表示されます。
 
-パイプラインの管理方法について詳しくは、[パイプラインの管理](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)ドキュメントを参照してください。
+パイプラインの管理方法について詳しくは、[ パイプラインの管理 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) も参照してください。
 
 ### パフォーマンスカード {#performance}
 

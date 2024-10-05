@@ -5,10 +5,10 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
-workflow-type: ht
-source-wordcount: '384'
-ht-degree: 100%
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +28,7 @@ CDN ダッシュボードは、すべてのプログラムの概要ページで�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、表示する CDN ダッシュボードのプログラムをタップまたはクリックします。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、CDN ダッシュボードを表示するプログラムをクリックします。
 
    ![マイプログラムページ](assets/my-programs.png)
 

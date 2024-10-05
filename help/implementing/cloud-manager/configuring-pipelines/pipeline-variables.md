@@ -5,10 +5,10 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+workflow-type: tm+mt
 source-wordcount: '571'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -81,7 +81,7 @@ Cloud Manager を使用すると、複数の方法でパイプライン変数を
 
 1. 「**保存**」をタップまたはクリックして、変数に対する変更をパイプラインに保存します。
 
-変数を削除する場合は、**変数設定**&#x200B;ウィンドウのパイプライン変数の省略記号メニューから「**編集**」ではなく「**削除**」を選択します。
+変数を削除する場合は、「**変数設定** ウィンドウのパイプライン変数の省略記号メニューから **編集** ではなく **削除** を選択します。
 
 ## Cloud Manager CLI の使用 {#cli}
 

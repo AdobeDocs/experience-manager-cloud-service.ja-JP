@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
-source-wordcount: '923'
-ht-degree: 100%
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+workflow-type: tm+mt
+source-wordcount: '911'
+ht-degree: 92%
 
 ---
 
@@ -21,18 +21,13 @@ Cloud Manager には、組織またはテナントが使用できる AEMaaCS 製
 >
 >ライセンスダッシュボードは、AEM as a Cloud Service プログラムにのみ適用されます。[AMS プログラム](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/introduction)は、ライセンスダッシュボードには含まれません。
 >
->プログラムが備えているサービスのタイプ（AMS または AEMaaCS）を特定する方法について詳しくは、[Cloud Manager UI の操作](/help/implementing/cloud-manager/navigation.md#program-cards)ドキュメントを参照してください。
+>プログラムのサービスの種類（AMS または AEMaaCS）を判断するには、[Cloud Manager UI の操作 ](/help/implementing/cloud-manager/navigation.md#program-cards) を参照してください。
 
 ## 概要 {#overview}
 
-Cloud Manager ライセンスダッシュボードを使用すると、次の情報に簡単にアクセスできます。
+Cloud Manager ライセンスダッシュボードを使用すると、使用済みのものや使用可能なものなど、すべてのプログラムで使用できるソリューションの使用権限に簡単にアクセスできます。 さらに、Sites ソリューションの月別のコンテンツリクエスト消費指標も示されます。
 
-1. 使用済みのものや利用可能なものなど、すべてのプログラムでソリューションの使用権限が利用可能です。
-1. Sites ソリューションの月別のコンテンツリクエスト消費指標
-
-## ライセンスダッシュボードの使用 {#using-dashboard}
-
-ライセンスダッシュボードにアクセスするには、次の手順に従います。
+## ライセンスダッシュボードへのアクセス {#using-dashboard}
 
 >[!NOTE]
 >
@@ -40,7 +35,7 @@ Cloud Manager ライセンスダッシュボードを使用すると、次の情
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、[Cloud Manager ヘッダー](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)のハンバーガーメニューボタンをクリックします。これにより、タブが表示されます。
-1. タブの「**ライセンス**」オプションをタップまたはクリックします。
+1. タブの「**ライセンス**」オプションをクリックします。
 
 ![ライセンスダッシュボード](assets/license-dashboard.png)
 
@@ -105,6 +100,8 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ## よくある質問 {#faq}
 
++++
+
 ### コンテンツリクエストとは？ {#what-is-a-content-request}
 
 コンテンツリクエストとは、コンテンツやデータを HTML 形式でページビューとして配信するか、JSON 形式で API 呼び出しとして配信するために、AEM Sites または顧客提供のキャッシュシステム（コンテンツ配信ネットワークなど）に送信されるリクエストです。
@@ -114,6 +111,9 @@ The right side of the window presents an area chart showing the usage broken dow
 コンテンツリクエストは、製品やサービスを提供することのみを目的とし、アドビが開始した、またはアドビに代わって開始されたリクエストやアクティビティを除外します。一般的な検索エンジンやソーシャルメディアサービスに関連する、ボット、クローラー、スパイダーからのアドビが特定したユーザーエージェントトラフィックも除外されます。
 
 詳しくは、[Cloud Service コンテンツリクエストについて](/help/implementing/cloud-manager/content-requests.md)も参照してください。
++++
+
++++
 
 ### Adobe Experience Manager はコンテンツリクエストをどのように測定しますか？ {#how-are-content-requests-measured}
 
@@ -122,15 +122,26 @@ The right side of the window presents an area chart showing the usage broken dow
 AEM には、よく知られているボットを除外するルールも用意されています。これには、検索インデックスまたはサービスを更新するためにサイトに定期的にアクセスするよく知られているサービスも含まれます。
 
 [Cloud Service コンテンツリクエストについて](/help/implementing/cloud-manager/content-requests.md)も参照してください。
++++
+
++++
 
 ### Analytics レポートに AEM コンテンツリクエストと異なる結果が表示されるのはなぜですか？ {#why-are-reports-different}
 
 コンテンツリクエストは、組織の Analytics レポートツールと異なる場合があります。詳しくは、[Cloud Service コンテンツリクエストについて](/help/implementing/cloud-manager/content-requests.md)を参照してください。
++++
+
++++
 
 ### コンテンツリクエスト量の詳細を把握したい場合はどうすればよいですか？ {#current-request-volumes}
 
 ライセンスダッシュボードに表示されるコンテンツリクエスト量について詳しい情報が必要な場合は、コンテンツリクエスト量を増やす最大要因を示すレポートを、担当のアドビチームから提供することができます。アドビチームまたはアドビカスタマーサポートに問い合わせて、上位使用状況レポートをご依頼ください。
++++
+
++++
 
 ### 独自の CDN を使用している場合はどうなりますか？ {#using-own-cdn}
 
 ライセンスダッシュボードには、Cloud Service CDN で追跡されたデータのみが表示されます。独自の CDN（BYOCDN）を導入する場合は、契約に従い、コンテンツリクエスト量を年単位でアドビに報告します。
++++
+

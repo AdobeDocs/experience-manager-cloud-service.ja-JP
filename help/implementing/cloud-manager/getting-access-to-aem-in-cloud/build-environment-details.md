@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
-source-wordcount: '788'
-ht-degree: 100%
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+workflow-type: tm+mt
+source-wordcount: '786'
+ht-degree: 98%
 
 ---
 
@@ -87,7 +87,7 @@ Cloud Manager [リリース 2023.10.0](/help/implementing/cloud-manager/release-
 
 お使いのビルドプロセスが、Git リポジトリに配置するのに適さない特定の設定変数に基づいている場合や、同じブランチを使用するパイプライン実行間で環境変数を変えることが必要になる場合があります。
 
-詳しくは、[パイプライン変数の設定](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)ドキュメントを参照してください。
+詳しくは、[ パイプライン変数を設定 ](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) も参照してください
 
 ## 追加のシステムパッケージのインストール {#installing-additional-system-packages}
 

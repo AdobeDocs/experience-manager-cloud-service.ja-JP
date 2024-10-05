@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 98%
+source-wordcount: '1375'
+ht-degree: 97%
 
 ---
 
@@ -128,7 +128,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->Web 階層設定パイプラインは、プライベートリポジトリではサポートされていません。制限の詳細と完全なリストについては、[Cloud Manager でのプライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)ドキュメントを参照してください。
+>Web 階層設定パイプラインは、プライベートリポジトリではサポートされていません。詳細と制限の完全なリストについては、[Cloud Managerでのプライベートリポジトリの追加 ](/help/implementing/cloud-manager/managing-code/private-repositories.md) ドキュメントを参照してください。
 
 実稼動環境の作成を完了する手順では、デプロイメントタイプを選択したら、ターゲットとするデプロイメントパイプラインは同じです。
 

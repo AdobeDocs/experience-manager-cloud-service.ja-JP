@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
-source-wordcount: '2375'
-ht-degree: 100%
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+workflow-type: tm+mt
+source-wordcount: '2371'
+ht-degree: 98%
 
 ---
 
@@ -50,13 +50,13 @@ ht-degree: 100%
 
    ![環境カード](assets/no-environments.png)
 
-   * 「**環境を追加**」オプションは「**環境**」タブでも使用できます。
+   * 「**環境を追加**」オプションは「![ データアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**環境**」タブでも使用できます。
 
      ![「環境」タブ](assets/environments-tab.png)
 
    * 「**環境を追加**」オプションは、権限がない場合やライセンスされているリソースによっては、無効になっている場合があります。
 
-1. 表示される&#x200B;**環境を追加**&#x200B;ダイアログで以下を行います。
+1. **環境を追加** ダイアログボックスで、
 
    * 「[**環境タイプ**](#environment-types)」を選択します。
       * 使用可能な環境または使用中の環境の数は、環境タイプ名の後ろの括弧内に表示されます。
@@ -310,7 +310,7 @@ Cloud Manager では、Sites プログラムのパブリッシュサービスと
 
 >[!TIP]
 >
->詳しくは、[カスタムドメイン名の概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)ドキュメントを参照してください。
+>詳しくは、[ カスタムドメイン名の概要 ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) を参照してください。
 
 ## IP 許可リストの管理 {#manage-ip-allow-lists}
 
@@ -324,4 +324,4 @@ IP 許可リストを適用すると、許可リストの定義に含まれて�
 
 >[!TIP]
 >
->詳しくは、[IP 許可リストの概要](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)ドキュメントを参照してください。
+>詳しくは、[IP許可リストの概要 ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) を参照してください。

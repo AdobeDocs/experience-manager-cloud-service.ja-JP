@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 99%
+source-wordcount: '1109'
+ht-degree: 98%
 
 ---
 
@@ -112,7 +112,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 >[!NOTE]
 >
->Web 階層設定パイプラインは、プライベートリポジトリではサポートされていません。制限の詳細と完全なリストについては、[Cloud Manager でのプライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)ドキュメントを参照してください。
+>Web 階層設定パイプラインは、プライベートリポジトリではサポートされていません。詳細と制限事項の一覧については、[Cloud Managerにプライベートリポジトリを追加する ](/help/implementing/cloud-manager/managing-code/private-repositories.md) を参照してください。
 
 ## パイプラインの削除 {#deleting-pipelines}
 
