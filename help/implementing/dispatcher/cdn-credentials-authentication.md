@@ -4,10 +4,10 @@ description: 設定ファイルでルールを宣言し、Cloud Manager 設定�
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 83efc7298bc8d211d1014e8d8be412c6826520b8
+source-git-commit: 37d399c63ae49ac201a01027069b25720b7550b9
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 98%
+source-wordcount: '1486'
+ht-degree: 91%
 
 ---
 
@@ -30,9 +30,10 @@ ht-degree: 98%
 
 設定の一部として、Adobe CDN と顧客 CDN は、`X-AEM-Edge-Key` HTTP ヘッダーの値について合意する必要があります。この値は、リクエストが Adobe CDN にルーティングされる前に、顧客 CDN で各リクエストに対して設定され、Adobe CDN では値が期待どおりであることを検証するので、リクエストを適切な AEM 接触チャネルにルーティングするのに役立つ HTTP ヘッダーを含む他の HTTP ヘッダーを信頼できます。
 
-*X-AEM-Edge-Key* 値は、最上位レベルの `config` フォルダーの下にある `cdn.yaml` または類似の名前のファイル内の `edgeKey1` プロパティと `edgeKey2` プロパティによって参照されます。フォルダー構造と設定のデプロイ方法について詳しくは、[設定パイプラインの使用](/help/operations/config-pipeline.md#folder-structure)を参照してください。
+*X-AEM-Edge-Key* 値は、最上位レベルの `config` フォルダーの下にある `cdn.yaml` または類似の名前のファイル内の `edgeKey1` プロパティと `edgeKey2` プロパティによって参照されます。フォルダー構造と設定のデプロイ方法について詳しくは、[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md#folder-structure) を参照してください。  構文について以下の例で説明します。
 
-構文は次のとおりです。
+>[!WARNING]
+>条件に一致するすべてのリクエスト（以下のサンプルでは、パブリッシュ層へのすべてのリクエストを意味します）に対して、正しい X-AEM-Edge-Key を持たないダイレクトアクセスが拒否されます。 認証を徐々に導入する必要がある場合は、[ トラフィックのブロックのリスクを軽減するための安全な移行 ](#migrating-safely) の節を参照してください。
 
 ```
 kind: "CDN"
@@ -78,7 +79,7 @@ data:
 
 ### ブロックされたトラフィックのリスクを軽減する安全な移行 {#migrating-safely}
 
-サイトが既に実稼動している場合は、誤った設定によりパブリックトラフィックがブロックされる可能性があるので、顧客管理 CDN に移行する際には注意が必要です。これは、予期される X-AEM-Edge-Key ヘッダー値を持つリクエストのみが Adobe CDN によって受け入れられるからです。認証ルールに追加の条件を一時的に含め、テストヘッダーが含まれている場合にのみリクエストを評価するという次のアプローチをお勧めします。
+サイトが既に実稼動している場合は、誤った設定によりパブリックトラフィックがブロックされる可能性があるので、顧客管理 CDN に移行する際には注意が必要です。これは、予期される X-AEM-Edge-Key ヘッダー値を持つリクエストのみが Adobe CDN によって受け入れられるからです。テストヘッダーが含まれている場合、またはパスが一致する場合にのみリクエストがブロックされるように、追加条件が認証ルールに一時的に含まれる場合は、アプローチをお勧めします。
 
 ```
     - name: edge-auth-rule
@@ -86,6 +87,17 @@ data:
           allOf:  
             - { reqProperty: tier, equals: "publish" }
             - { reqHeader: x-edge-test, equals: "test" }
+        action:
+          type: authenticate
+          authenticator: edge-auth
+```
+
+```
+    - name: edge-auth-rule
+        when:
+          allOf:
+            - { reqProperty: tier, equals: "publish" }
+            - { reqProperty: path, like: "/test*" }
         action:
           type: authenticate
           authenticator: edge-auth
