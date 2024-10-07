@@ -5,21 +5,28 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: b735c724bd8d68273b3c09a2dc53a13f5f6095ae
 workflow-type: tm+mt
-source-wordcount: '949'
-ht-degree: 83%
+source-wordcount: '1038'
+ht-degree: 93%
 
 ---
 
 
 # SSL 証明書の管理 {#managing-ssl-certificates}
 
-Cloud Manager を使用して、アドビが管理する SSL 証明書と顧客が管理する SSL 証明書のステータスを確認する方法と、それらの SSL 証明書を削除する方法について説明します。顧客が管理する証明書の場合は、それらを編集および更新（置換）することもできます。
+Cloud Manager を使用して SSL 証明書のステータスを確認する方法と、SSL 証明書を編集、置換、更新および削除する方法について説明します。
 
 ## SSL 証明書のステータスの確認 {#checking-status-an-ssl-certificate}
 
-SSL 証明書のステータスは、**SSL 証明書**&#x200B;ページから一目で確認できます。
+Cloud Managerには、プログラムのすべての証明書のステータスの概要が表示されます。
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切なプログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
+1. ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、サイドメニューを表示します。
+1. **サービス**&#x200B;見出しの下にある ![鍵がかかったアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) 「**SSL 証明書**」をクリックします。
+
+**SSL 証明書** ページには、SSL 証明書のステータスが表示されます。
 
 | SSL 証明書のステータス | 説明 |
 | --- | --- |
@@ -37,8 +44,8 @@ SSL 証明書のステータスは、**SSL 証明書**&#x200B;ページから一
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切なプログラムを選択します。
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
-1. ページの左上隅にある ![ メニューアイコンを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、サイドメニューを表示します。
-1. **サービス** 見出しの下の ![ 閉じたアイコンをロック ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL 証明書** をクリックします。
+1. ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、サイドメニューを表示します。
+1. **サービス**&#x200B;見出しの下にある ![鍵がかかったアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) 「**SSL 証明書**」をクリックします。
 1. 更新の対象となる、顧客が管理する期限切れの証明書の行で、右端にある省略記号ボタンをクリックして、「**表示と更新**」を選択します。
 
    ![顧客が管理する期限切れの SSL 証明書の更新](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
@@ -51,6 +58,12 @@ SSL 証明書のステータスは、**SSL 証明書**&#x200B;ページから一
    * 「**証明書チェーン**」フィールド（または信頼チェーン）に、証明書チェーンを貼り付けます。
 
 1. 「**更新**」をクリックして変更を保存し、自動的に適用されるようにします。
+
+>[!NOTE]
+>
+>同じ SAN ドメイン・エントリーに対応する SAN 証明書が 2 つ以上ある場合、一方の証明書でそのドメインをカバーし、もう一方の証明書を更新すると、他方の証明書がドメインにインストールされます。
+>
+>詳しくは、[SSL 証明書の問題のトラブルシューティング ](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert) を参照してください。
 
 ## 顧客が管理する期限切れの SSL 証明書の置換 {#replace-ssl-certificate}
 
@@ -68,9 +81,9 @@ SSL 証明書の名前を変更する必要がある理由を以下に示しま�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切なプログラムを選択します。
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
-1. ページの左上隅にある ![ メニューアイコンを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、サイドメニューを表示します。
-1. **サービス** 見出しの下の ![ 閉じたアイコンをロック ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL 証明書** をクリックします。
-1. **SSL 証明書** ページで、*Adobe管理 ![ 証明書の名前を変更する行の最後にある ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 詳細アイコン* をクリックします。
+1. ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、サイドメニューを表示します。
+1. **サービス**&#x200B;見出しの下にある ![鍵がかかったアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) 「**SSL 証明書**」をクリックします。
+1. **SSL 証明書**&#x200B;ページで、名前を変更する&#x200B;*アドビが管理する*&#x200B;証明書の行の末尾にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 1. ドロップダウンメニューで、「**名前を変更**」をクリックします。
 1. **DV 証明書の名前を変更**&#x200B;ダイアログボックスの「**証明書名**」テキストフィールドに、証明書の新しい名前を入力します。
 1. 「**名前を変更**」をクリックします。
@@ -89,9 +102,9 @@ SSL 証明書の名前を変更する必要がある理由を以下に示しま�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切なプログラムを選択します。
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
-1. ページの左上隅にある ![ メニューアイコンを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、サイドメニューを表示します。
-1. **サービス** 見出しの下の ![ 閉じたアイコンをロック ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL 証明書** をクリックします。
-1. SSL 証明書ページで、削除する証明書の表の行で、右端にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします
+1. ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、サイドメニューを表示します。
+1. **サービス**&#x200B;見出しの下にある ![鍵がかかったアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) 「**SSL 証明書**」をクリックします。
+1. SSL 証明書ページで、削除する証明書のテーブル行の右端にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 1. ドロップダウンメニューで、「**削除**」をクリックします。
 次の画像に示すように、「削除」ボタンに情報アイコンが表示されている場合は、上記のメモを参照してください。
 
@@ -104,9 +117,8 @@ SSL 証明書の名前を変更する必要がある理由を以下に示しま�
 
 SSL 証明書の CDN 設定が既にある場合は、**SSL 証明書**&#x200B;ページに情報メッセージが表示されます。これらの設定を UI を通じて追加し、Cloud Manager で表示および管理できるようにすることをお勧めします。
 
-UI を使用して既存の環境設定をすべて移行すると、このメッセージは表示されなくなります。メッセージが消えるまでに 1～2 営業日かかる場合があります。
+UI を使用して既存の環境設定をすべて移行すると、このメッセージは表示されなくなります。メッセージが表示されなくなるまでに 1～2 営業日かかる場合があります。
 
 詳しくは、[SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)を参照してください。
 
 IP 許可リストまたはカスタムドメイン名に対応する既存の CDN 設定がある環境の **IP 許可リスト**&#x200B;ページと&#x200B;**環境**&#x200B;ページにも、同様のメッセージが表示されます。
-

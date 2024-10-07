@@ -1,22 +1,24 @@
 ---
-title: SSL 証明書エラーのトラブルシューティング
-description: よくある原因を特定して SSL 証明書エラーのトラブルシューティングを行い、安全な接続を維持する方法を説明します。
+title: SSL 証明書の問題のトラブルシューティング
+description: 一般的な原因を特定して SSL 証明書の問題のトラブルシューティングを行い、安全な接続を維持する方法を説明します。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b387fee62500094d712f5e1f6025233c9397f8ec
+source-git-commit: 1017f84564cedcef502b017915d370119cd5a241
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 87%
+source-wordcount: '556'
+ht-degree: 52%
 
 ---
 
 
-# SSL 証明書エラーのトラブルシューティング {#certificate-errors}
+# SSL 証明書の問題のトラブルシューティング {#certificate-problems}
 
-証明書が正しくインストールされていないか、Cloud Manager の要件を満たしていない場合は、特定のエラーが発生する場合があります。
+一般的な原因を特定して SSL 証明書の問題のトラブルシューティングを行い、安全な接続を維持する方法を説明します。
 
 +++**無効な証明書**
+
+## 無効な証明書 {#invalid-certificate}
 
 このエラーは、顧客が暗号化された秘密鍵を使用し、DER 形式でキーを提供したために発生します。
 
@@ -24,11 +26,15 @@ ht-degree: 87%
 
 +++**秘密鍵は PKCS 8 形式である必要があります**
 
+## 秘密鍵は PKCS 8 形式である必要があります {#pkcs-8}
+
 このエラーは、顧客が暗号化された秘密鍵を使用し、DER 形式でキーを提供したために発生します。
 
 +++
 
 +++**正しい証明書の順序**
+
+## 正しい証明書の順序 {#certificate-order}
 
 証明書のデプロイに失敗する原因として最もよくあるのは、中間証明書またはチェーン証明書の順序が正しくないことです。
 
@@ -58,6 +64,8 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 +++**クライアント証明書の削除**
 
+## クライアント証明書の削除 {#client-certificates}
+
 証明書を追加する際に、次のようなエラーが表示される場合があります。
 
 ```text
@@ -69,6 +77,8 @@ The Subject of an intermediate certificate must match the issuer in the previous
 +++
 
 +++**証明書ポリシー**
+
+## 証明書ポリシー {#policy}
 
 次のエラーが発生した場合は、証明書のポリシーを確認してください。
 
@@ -117,11 +127,26 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 # "DV Policy - Not Accepted"
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
++++
+
++++**証明書の有効性
+
+## 証明書の有効性 {#validity}
+
+Cloud Manager で想定している SSL 証明書の有効期間は現在の日付から少なくとも 90 日間です。証明書チェーンの有効期限を確認します。
 
 +++
 
-+++**証明書の有効期限の日付**
++++**ドメインに間違った SAN 証明書が適用される
 
-Cloud Manager で想定している SSL 証明書の有効期間は現在の日付から少なくとも 90 日間です。証明書チェーンの有効期限を確認します。
+## ドメインに間違った SAN 証明書が適用される {#wrong-san-cert}
+
+`dev.yoursite.com` と `stage.yoursite.com` を実稼動以外の環境にリンクし、`prod.yoursite.com` を実稼動環境にリンクするとします。
+
+これらのドメインで CDN を設定するには、それぞれに証明書をインストールする必要があります。このため、非実稼動ドメイン用に `*.yoursite.com` をカバーする 1 つの証明書をインストールし、実稼動ドメイン用に `*.yoursite.com` をカバーする別の証明書をインストールします。
+
+この設定は有効です。 ただし、両方の証明書が同じ SAN エントリをカバーしているので、証明書の 1 つを更新すると、CDN は該当するすべてのドメインに最新の証明書をインストールします。これは予期していないように見える場合があります。
+
+これは予期しない動作になる場合がありますが、これはエラーではなく、基になる CDN の標準的な動作です。 同じ SAN ドメイン・エントリーに対応する SAN 証明書が 2 つ以上ある場合、一方の証明書でそのドメインをカバーし、もう一方の証明書を更新すると、他方の証明書がドメインにインストールされます。
 
 +++
