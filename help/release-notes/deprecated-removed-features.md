@@ -4,10 +4,10 @@ description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 0bcb769f0d8beb4b501646d82fa91bd9233a2173
+source-git-commit: 4e59095a47a919fd0b6acb868e27d71f9193c520
 workflow-type: tm+mt
-source-wordcount: '2496'
-ht-degree: 82%
+source-wordcount: '2504'
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 82%
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
 >title="AEM as a Cloud Service の非推奨（廃止予定）の機能と削除された機能"
->abstract="AEM as a Cloud Service には、クラウドネイティブなデプロイメントモデルがあります。一部の機能や特徴は、クラウドネイティブな同等機能に置き換えられました。ここでは、それらの機能を示します。"
+>abstract="AEM as a Cloud Service には、クラウドネイティブなデプロイメントモデルがあります。一部の機能は、クラウドネイティブな同等機能に置き換えられました。ここでは、それらの機能を示します。"
 
 アドビでは、製品の機能を絶えず評価して、常に後方互換性を慎重に考慮しながら、古い機能を作成し直したり、新たな機能に置き換えて、お客様にとっての全体的な価値を向上させます。また、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] はクラウドネイティブなデプロイメントモデルを提供するので、一部の機能はクラウドネイティブな同等機能に置き換わりました。
 
@@ -35,6 +35,7 @@ ht-degree: 82%
 
 | 機能 | 非推奨（廃止予定）の機能 | 代替手段 |
 | ------------ | ------------------ | ----------- |
+| [!DNL Sites] | [JavaScript使用 API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **ソーシャルメディアのステータス** のエクスペリエンスフラグメントのプロパティ。  | この機能は間もなく削除されます。 |
 | [!DNL Sites] | テンプレートベースのシンプルなコンテンツフラグメント。 | 現在は[モデルベースの構造化コンテンツフラグメント](/help/assets/content-fragments/content-fragments-models.md)。 |
 | [!DNL Assets] | 取り込んだ画像を処理する `DAM Asset Update` ワークフロー | 現在は、アセットの取り込みで[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が使用されています。 |
@@ -79,7 +80,7 @@ ht-degree: 82%
 <tbody>
   <tr>
     <td>org.apache.sling.commons.auth<br>org.apache.sling.commons.auth.spi</td>
-    <td>Sling の Auth Core/Auth Core SPI インターフェイスを代わりに使用してください。 <a href="#org.apache.sling.commons.auth"> 以下の削除に関する注意事項を参照してください。</a></td>
+    <td>代わりに、Sling の Auth Core／Auth Core SPI インターフェイスを使用します。<a href="#org.apache.sling.commons.auth">以下の削除に関するメモを参照してください。</a></td>
     <td>2015</td>
     <td>2021/7/30</td>
   </tr>
@@ -144,7 +145,7 @@ ht-degree: 82%
     <td>2021/7/30</td>
   </tr>
   <tr> <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml</td>
-    <td>Eclipse Jetty パッケージと Felix Http Jetty パッケージはサポートされなくなりました。 <a href="#org.eclipse.jetty"> 以下の削除に関する注意事項を参照してください。</a></td>
+    <td>Eclipse Jetty パッケージと Felix Http Jetty パッケージはサポートされなくなりました。<a href="#org.eclipse.jetty">以下の削除に関するメモを参照してください。</a></td>
     <td>2021/5/27</td>
     <td>2021/8/26</td>
   </tr>
@@ -155,7 +156,7 @@ ht-degree: 82%
     <td>2021/8/26</td>
   </tr>  
   <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
-    <td>この API の使用は、AEM as a Cloud Serviceではサポートされていません。 <a href="#com.mongodb"> 以下の削除に関する注意事項を参照してください。</a></td>
+    <td>この API の使用は、AEM as a Cloud Service ではサポートされていません。<a href="#com.mongodb">以下の削除に関するメモを参照してください。</a></td>
     <td>2021/5/27</td>
     <td>2021/7/30</td>
   </tr>
@@ -173,7 +174,7 @@ ht-degree: 82%
   </tr>
   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
-    <td>Apache Abdera が 2017 年以降廃止されたプロジェクトなので、この API は非推奨（廃止予定）となりました。 <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib"> 以下の削除に関する注意事項を参照してください。</a></td>
+    <td>Apache Abdera が 2017年以降廃止されたプロジェクトなので、この API は廃止されました。<a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">以下の削除に関するメモを参照してください。</a></td>
     <td>2021/7/29</td>
     <td>2021/9/29</td>
   </tr>
@@ -202,13 +203,13 @@ ht-degree: 82%
     <td>削除済み</td>
   <tr>
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
-    <td>従来のAEM 6.x API。 <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib"> 以下の削除に関する注意事項を参照してください。</a></td>
+    <td>従来の AEM 6.x API。<a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">以下の削除に関するメモを参照してください。</a></td>
     <td>2019/4/8</td>
     <td>2021/9/29</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>Apache Felix Http ホワイトボードはサポートされなくなりました。コードを OSGi Http ホワイトボードに移行します。 <a href="#org.apache.felix.http.whiteboard"> 以下の削除に関する注意事項を参照してください。</a></td>
+    <td>Apache Felix Http ホワイトボードはサポートされなくなりました。コードを OSGi Http ホワイトボードに移行します。<a href="#org.apache.felix.http.whiteboard">以下の削除に関するメモを参照してください。</a></td>
     <td>2022/1/27</td>
     <td>2022/3/24</td>
   </tr>
@@ -279,51 +280,51 @@ ht-degree: 82%
     <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
     <td>この API の使用は、AEM as a Cloud Service ではサポートされていません。</td>
     <td>2024/05/17</td>
-    <td>2024/06/30</td>
+    <td>2024年6月30日（PT）</td>
   </tr>
   <tr>
     <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
     <td>代わりに、org.apache.sling.xss を使用します。</td>
-    <td>12/12/2023</td>
-    <td>2024/06/30</td>
+    <td>2023年12月12日（PT）</td>
+    <td>2024年6月30日（PT）</td>
   </tr>
   <tr>
     <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
     <td>代わりに、org.apache.sling.xss を使用します。</td>
-    <td>12/12/2023</td>
-    <td>2024/06/30</td>
+    <td>2023年12月12日（PT）</td>
+    <td>2024年6月30日（PT）</td>
   </tr>  
   <tr>
     <td>com.drew.*</td>
-    <td>画像やビデオからのメタデータの抽出は、Cloud ServiceのAsset compute、Apache POI または Apache Tika を使用して行う必要があります。</td>
-    <td>9/17/2024</td>
-    <td>12/17/2024</td>
+    <td>画像やビデオからのメタデータの抽出には、Cloud Service の Asset Compute、Apache POI または Apache Tika を使用する必要があります。</td>
+    <td>2024年9月17日（PT）</td>
+    <td>2024年12月17日（PT）</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
     <td></td>
-    <td>9/23/2024</td>
-    <td>12/23/2024</td>
+    <td>2024年9月23日（PT）</td>
+    <td>2024月12月23日（PT）</td>
   </tr>       
 </tbody>
 </table>
 </details>
 
-### `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth} の削除
+### `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth} の削除
 
-`org.apache.sling.commons.auth` やを使用している場合は、コードを `org.apache.sling.commons.auth.spi` の応答に移行することで、使用方法を置き換えるこ `org.apache.sling.auth` ができます。 `org.apache.sling.auth.spi`といったアドバイスを耳にしたことがある方もいるでしょう。古いバージョンの [ACS AEM Commons を使用している場合は ](https://adobe-consulting-services.github.io/acs-aem-commons/) 必ず最新バージョンに更新してください。
+`org.apache.sling.commons.auth` や `org.apache.sling.commons.auth.spi` を使用している場合、コードをそれぞれ `org.apache.sling.auth` または。 `org.apache.sling.auth.spi` に移行することで使用を置き換えることができます。古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
 
 アクションリスト：
-* ACS AEM Commons を最新バージョンに更新します
-* `org.apache.sling.commons.auth` や `org.apache.sling.commons.auth.spi` から `org.apache.sling.auth` に移行します。`org.apache.sling.auth.spi`。
+* ACS AEM Commons を最新バージョンに更新
+* `org.apache.sling.commons.auth` や `org.apache.sling.commons.auth.spi` から `org.apache.sling.auth` または `org.apache.sling.auth.spi` にそれぞれ移行します。
 
 ### `org.eclipse.jetty*` {#org.eclipse.jetty} の削除
 
-パッケージ `org.eclipse.jetty` またはそのサブパッケージの 1 つから何かを使用する場合は、同様の機能を持つ他のサードパーティライブラリに移行してください。 移行が不可能な場合は、必要なバンドルを以下のリストからプロジェクトに追加します。
+`org.eclipse.jetty` パッケージまたはそのサブパッケージのいずれかを使用する場合は、同様の機能を備えた他のサードパーティライブラリに移行することをお勧めします。移行が不可能な場合は、以下のリストから必要なバンドルをプロジェクトに追加します。
 
 アクションリスト：
-* `org.eclipse.jetty` パッケージの使用方法を、他のサードパーティライブラリ/独自コードに置き換える
-* このリストから必要なバンドルを選択して、プロジェクトに追加します。
+* `org.eclipse.jetty` パッケージの使用を他のサードパーティライブラリ／独自のコードに置き換える
+* 次のリストから必要なバンドルを選択し、プロジェクトに追加
    * org.eclipse.jetty:jetty-client:9.4.54.v20240208
    * org.eclipse.jetty:jetty-http:9.4.54.v20240208
    * org.eclipse.jetty:jetty-io:9.4.54.v20240208
@@ -335,7 +336,7 @@ ht-degree: 82%
 
 ### `com.mongodb` {#com.mongodb} の削除
 
-Mongo Client API をプロジェクトに追加します。
+Mongo client API をプロジェクトに追加します。
 
 アクションリスト：
 * このバンドルをプロジェクトに追加
@@ -343,17 +344,17 @@ Mongo Client API をプロジェクトに追加します。
 
 ### `org.apache.abdera*` および `org.apache.sling.atom.taglib` {#org.apache.abdera_or_org.apache.sling.atom.taglib} の使用
 
-`org.apache.abdera` および `org.apache.sling.atom.taglib` のパッケージの使用方法を、同様の機能や独自のコードを提供するサードパーティライブラリに置き換えます。
+`org.apache.abdera` および `org.apache.sling.atom.taglib` のパッケージの使用を、同様の機能を備えたサードパーティライブラリまたは独自のコードに置き換えます。
 
 アクションリスト：
-* `org.apache.abdera` および `org.apache.sling.atom.taglib` のパッケージの使用方法を、他のサードパーティのライブラリや独自のコードに置き換えます。
+* `org.apache.abdera` および `org.apache.sling.atom.taglib` のパッケージの使用を他のサードパーティライブラリ／独自のコードに置き換える。
 
 ### `org.apache.felix.http.whiteboard` {#org.apache.felix.http.whiteboard} の使用
 
-`org.apache.felix.http.whiteboard` の使用方法を [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html) に置き換えます。 公式の OSGi API にも同様の機能があり、置き換える際に必要になるのは、ほとんどの場合、サービス登録プロパティを変更することだけです。
+`org.apache.felix.http.whiteboard` の使用を [OSGi Http ホワイトボード](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)に置き換えます。公式の OSGi API には同様の機能があり、ほとんどの場合、置き換えにはサービス登録プロパティの変更のみが必要です。
 
 アクションリスト：
-* `org.apache.felix.http.whiteboard` の使用方法を [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html) に置き換えます。
+* `org.apache.felix.http.whiteboard` の使用を [OSGi Http ホワイトボード](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)に置き換える
 
 ## OSGi 設定 {#osgi-configuration}
 
