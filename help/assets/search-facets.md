@@ -4,14 +4,17 @@ description: この記事では、Adobe Experience Manager で検索ファセッ
 feature: Metadata
 role: Admin, User
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '2505'
-ht-degree: 100%
+source-wordcount: '2523'
+ht-degree: 99%
 
 ---
 
 # 検索ファセット {#search-facets}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |

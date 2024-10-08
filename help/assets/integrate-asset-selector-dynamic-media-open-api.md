@@ -3,14 +3,17 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセッ�
 description: アセットセレクターを様々なAdobe、Adobe以外のアプリケーションおよびサードパーティアプリケーションと統合します。
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '902'
 ht-degree: 82%
 
 ---
 
 # OpenAPI 機能を備えた Dynamic Media の統合 {#integrate-asset-selector-dynamic-media-open-apis}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 アセットセレクターを使用すると、様々なAdobeアプリケーションを使用してを統合し、シームレスに連携できるようになります。
 
@@ -29,7 +32,7 @@ ht-degree: 82%
 
 アセットセレクターと Dynamic Media OpenAPI プロセスの統合には、カスタマイズされた Dynamic Media URL の作成や、Dynamic Media URL を選択する準備など、様々な手順が含まれます。
 
-### Dynamic Media用アセットセレクターと OpenAPI 機能の統合 {#integrate-dynamic-media}
+### OpenAPI 機能を備えた Dynamic Media へのアセットセレクターの統合 {#integrate-dynamic-media}
 
 OpenAPI 機能を備えた Dynamic Media では、`rootPath` プロパティと `path` プロパティを使用しないでください。代わりに、`aemTierType` プロパティを設定できます。設定の構文を以下に示します。
 

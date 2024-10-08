@@ -2,14 +2,18 @@
 title: Content Hubでのコレクションの管理
 description: Content Hubでコレクションを管理する方法を学ぶ
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '635'
 ht-degree: 3%
 
 ---
 
 # [!DNL Content Hub] でのコレクションの管理 {#manage-collections}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
 ![コレクションの管理](assets/manage-collection.png)

@@ -4,14 +4,17 @@ description: 詳しくは、AEM Assets ビューでアセットを検索およ�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: de5aaead0955f997cf5304c3cd1d540b2eded16b
-workflow-type: ht
-source-wordcount: '2002'
-ht-degree: 100%
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+workflow-type: tm+mt
+source-wordcount: '2020'
+ht-degree: 99%
 
 ---
 
 # [!DNL Assets view] でアセットを検索 {#search-assets}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
 >id="assets_search"

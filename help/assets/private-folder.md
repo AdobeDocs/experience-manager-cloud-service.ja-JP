@@ -5,14 +5,17 @@ contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 100%
+source-wordcount: '639'
+ht-degree: 97%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets] のプライベートフォルダー {#private-folder}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |

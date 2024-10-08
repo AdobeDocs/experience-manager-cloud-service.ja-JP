@@ -4,14 +4,17 @@ description: AEM AssetsとDynamic Mediaが、静的および動的な画像レ�
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 1%
+source-wordcount: '453'
+ht-degree: 2%
 
 ---
 
 # Experience Manager Assetsでのレンディションの表示と管理{#renditions}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Adobe Experience Manager（AEM）のレンディションは、画像などのデジタルアセットのカスタマイズバージョンで、最適なパフォーマンスを確保するために様々なデバイスやプラットフォーム向けに設計されています。 AEMを使用すると、これらのレンディションを簡単に作成および管理し、ユーザーエクスペリエンスを向上させることができます。 サムネールの作成、web またはモバイル用の画像の最適化、透かしの追加、動的レンディションやスマート切り抜きレンディションの表示とダウンロードなどを行うことができます。
 

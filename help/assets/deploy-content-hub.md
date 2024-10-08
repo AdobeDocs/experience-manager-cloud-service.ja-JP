@@ -3,14 +3,17 @@ title: デプロイ [!DNL Content Hub]
 description: Content Hubをデプロイしてアクティブ化し、様々なタイプの権限（アセットのアップロード、ユーザーのAdobe Express）を持つユーザーにアクセスを提供する方法と、ユーザーに管理者権限を提供する方法について説明します。
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 3bb3920d043c83dac6f8e566761b626236bd2a04
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1587'
 ht-degree: 4%
 
 ---
 
 # コンテンツハブのデプロイ {#deploy-content-hub}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Content Hubのデプロイ ](assets/deploy-content-hub.png)
 

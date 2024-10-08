@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 100%
+source-wordcount: '790'
+ht-degree: 98%
 
 ---
 
 # [!DNL Adobe Creative Cloud] 統合を使用したアセットバリエーションの生成 {#content-automation}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 コンテンツ自動処理アドオンは、[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] API と [!DNL Adobe Creative Cloud] API を統合して、大規模なアセットをクリエイティブに処理します。[!DNL Experience Manager] では、クラウドベースの[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)を利用して、[!DNL Adobe Creative Cloud] 機能を使用し、アセットの作成とメディアの処理を自動化します。
 

@@ -4,10 +4,10 @@ description: デジタルアセットを効果的に管理するためのメタ�
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1384'
-ht-degree: 100%
+source-wordcount: '1399'
+ht-degree: 99%
 
 ---
 
@@ -17,6 +17,9 @@ aem metadata
 experience manager metadata-->
 
 # メタデータの管理とベストプラクティス {#metadata-best-practices}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- |---------|----|-----|
 
 ビジネスを際立たせ、より多くのお客様を引き付けるには、画像、ビデオ、その他のデジタルアセットなどの高品質のビジュアルを活用することが重要です。これを実現するには、すべてのデジタルアセットにメタデータを追加して、簡単に検索できるようにするプロセスが必要です。メタデータは、アセットの名前、タイプ、リポジトリ内の場所、変更日、関連するタグなど、デジタルアセットに関する基本的な詳細を提供するデータです。メタデータは、アセット管理を効率化し、検索性とアクセシビリティを強化して、効果的なバージョン管理を実現します。
 

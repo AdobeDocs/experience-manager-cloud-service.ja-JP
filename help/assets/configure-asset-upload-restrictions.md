@@ -4,14 +4,17 @@ description: Adobe Experience Manager Assets を設定して、ユーザーが�
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
 feature: Upload, Asset Ingestion
 role: User, Admin, Developer
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 100%
+source-wordcount: '390'
+ht-degree: 96%
 
 ---
 
 # アセットのアップロード制限を設定する {#configure-asset-upload-restrictions}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Adobe Experience Manager Assets を設定して、ユーザーがアップロードできるアセットのタイプを MIME タイプに基づいて制限することができます。
 

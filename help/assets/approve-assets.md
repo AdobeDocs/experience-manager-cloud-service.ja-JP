@@ -3,14 +3,17 @@ title: Experience Managerでのアセットの承認
 description: ' [!DNL Experience Manager] でアセットを承認する方法について説明します。'
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 9b3b93100c45c7053549c3f9899a344ca7db104d
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 2%
+source-wordcount: '694'
+ht-degree: 3%
 
 ---
 
 # [!DNL Experience Manager] でのアセットの承認
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ブランドマネージャーとマーケターは、ブランドアセットを厳格に管理しています。 アセットの承認済みの最新バージョンのみを使用できるので、すべてのチャネルとアプリケーションでブランドの一貫性を確保できます。
 

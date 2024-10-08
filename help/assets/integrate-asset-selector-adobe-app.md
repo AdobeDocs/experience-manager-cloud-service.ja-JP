@@ -3,14 +3,17 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセッ�
 description: アセットセレクターを様々なAdobe、Adobe以外のアプリケーションおよびサードパーティアプリケーションと統合します。
 role: Admin, User
 exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
-source-git-commit: 7590e0240f3f429831aee5d9620ea4fa6f32847b
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 88%
+source-wordcount: '785'
+ht-degree: 86%
 
 ---
 
 # アセットセレクターとAdobeアプリケーションの統合 {#integrate-asset-selector-with-adobe-app}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 アセットセレクターを使用すると、様々なAdobeアプリケーションを使用してを統合し、シームレスに連携できるようになります。
 

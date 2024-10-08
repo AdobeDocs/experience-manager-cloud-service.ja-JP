@@ -3,14 +3,17 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセッ�
 description: アセットセレクターを使用して、アプリケーション内のアセットのメタデータとレンディションを検索および取得します。
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 73%
+source-wordcount: '1295'
+ht-degree: 72%
 
 ---
 
 # アセットセレクターのプロパティ {#asset-selector-properties}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 アセットセレクターのプロパティを使用して、アセットセレクターのレンダリング方法をカスタマイズできます。次の表に、アセットセレクターをカスタマイズして使用するために利用できるプロパティを示します。
 
@@ -47,8 +50,8 @@ ht-degree: 73%
 | *filterRepoList* | 関数 | いいえ |  | Experience Manager リポジトリを呼び出し、フィルタリングされたリポジトリのリストを返す `filterRepoList` コールバック関数を使用できます。 |
 | *expiryOptions* | 関数 | | | 次の 2 つのプロパティ間で使用できます。**getExpiryStatus** では、有効期限切れのアセットのステータスが表示されます。関数は、指定したアセットの有効期限に基づいて、`EXPIRED`、`EXPIRING_SOON` または `NOT_EXPIRED` を返します。[有効期限切れのアセットのカスタマイズ](/help/assets/asset-selector-customization.md#customize-expired-assets)を参照してください。さらに、**allowSelectionAndDrag** を使用できます。この場合、関数の値は `true` または `false` のいずれかになります。値が `false` に設定されている場合、有効期限切れのアセットはキャンバス上で選択またはドラッグできません。 |
 | *showToast* | | いいえ | | これにより、アセットセレクターで、有効期限切れのアセットに対してカスタマイズされたトーストメッセージを表示できます。 |
-| *metadataSchema* | 配列 | いいえ | | ユーザーからメタデータを収集するために指定するフィールドの配列を追加します。 このプロパティを使用すると、非表示のメタデータも使用できます。このメタデータは、アセットに自動的に割り当てられますが、ユーザーには表示されません。 |
-| *onMetadataFormChange* | コールバック関数 | いいえ | | それは `property` と `value` で構成されています。 `Property` は、値が更新中の *metadataSchema* から渡されたフィールドの *mapToProperty* と等しくなります。 一方、`value` は新しい値と等しく、入力として提供されます。 |
+| *metadataSchema* | 配列 | 不可 | | ユーザーからメタデータを収集するために指定するフィールドの配列を追加します。 このプロパティを使用すると、非表示のメタデータも使用できます。このメタデータは、アセットに自動的に割り当てられますが、ユーザーには表示されません。 |
+| *onMetadataFormChange* | コールバック関数 | 不可 | | それは `property` と `value` で構成されています。 `Property` は、値が更新中の *metadataSchema* から渡されたフィールドの *mapToProperty* と等しくなります。 一方、`value` は新しい値と等しく、入力として提供されます。 |
 | *targetUploadPath* | 文字列 |  | `"/content/dam"` | ファイルのターゲットアップロードパス。デフォルトは、アセットリポジトリのルートです。 |
 | *hideUploadButton* | ブール演算式 | | False | 内部のアップロードボタンを非表示にするかどうかを確認します。 |
 | *onUploadStart* | 関数 | いいえ |  | これは、Dropbox、OneDrive、ローカル間でアップロードソースを渡すために使用されるコールバック関数です。 構文は `(uploadInfo: UploadInfo) => void` です |

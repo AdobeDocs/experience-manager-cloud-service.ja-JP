@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 100%
+source-wordcount: '960'
+ht-degree: 98%
 
 ---
 
 # アセットレポート {#asset-reports}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |

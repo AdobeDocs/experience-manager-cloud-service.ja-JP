@@ -2,14 +2,18 @@
 title: Content Hubでのアセットインサイトの表示
 description: ' [!DNL Content Hub] でアセットインサイトを表示する方法を説明します。'
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 0%
+source-wordcount: '296'
+ht-degree: 1%
 
 ---
 
 # [!DNL Content Hub] のAssets Insights {#assets-insights}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Assets インサイト ](assets/asset-insights-banner.jpg)
 
@@ -49,4 +53,3 @@ Content Hubでは、ファイル形式、キャンペーン、チャネル、地
 * **[!UICONTROL キャンペーン別Assets]**: キャンペーンに基づいたアセット数とそれぞれの割合。
 * **[!UICONTROL チャネル別のAssets]**：アセット数と、使用されているチャネルに基づくそれぞれのパーセンテージ。
 * **[!UICONTROL 地域別のAssets]**：アセット数と、アセット使用の地域に基づくそれぞれの割合。
-

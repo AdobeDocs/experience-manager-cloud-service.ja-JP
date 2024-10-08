@@ -5,14 +5,17 @@ contentOwner: KK
 exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
 role: User, Leader, Developer
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 100%
+source-wordcount: '703'
+ht-degree: 97%
 
 ---
 
 # デジタルアセットの再処理 {#reprocessing-digital-assets}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 後で変更した既存のメタデータプロファイルが存在するフォルダー内のアセットを再処理できます。新しく編集したプリセットをフォルダー内の既存のアセットに再適用する場合は、フォルダーを再処理する必要があります。必要な数のアセットを再処理できます。
 

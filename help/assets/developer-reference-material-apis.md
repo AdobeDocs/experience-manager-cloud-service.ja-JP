@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1938'
-ht-degree: 100%
+source-wordcount: '1956'
+ht-degree: 99%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets] デベロッパー向けの使用例、API、参考資料 {#assets-cloud-service-apis}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 このドキュメントは、[!DNL Assets] as a [!DNL Cloud Service] の開発者向けレコメンデーション、リファレンス資料およびリソースが含まれています。新しいアップロードモジュール、API リファレンス、後処理ワークフローで提供されるサポートに関する情報が含まれています。
 

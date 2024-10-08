@@ -5,14 +5,17 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 7c8f54d7c1139485717cc42dafbc87be74fd5883
-workflow-type: ht
-source-wordcount: '527'
-ht-degree: 100%
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+workflow-type: tm+mt
+source-wordcount: '545'
+ht-degree: 97%
 
 ---
 
-# [!DNL Assets view] でサポートされているファイル形式  {#file-format-support}
+# [!DNL Assets view] でサポートされているファイル形式 {#file-format-support}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Assets view] では幅広いファイル形式をサポートしており、各機能は各種ファイルタイプに対応しています。
 
@@ -26,7 +29,7 @@ ht-degree: 100%
 
 [!DNL Assets view] は Adobe Camera Raw を活用し、キヤノン（CR2/CR3）、ニコン（NEF）、ソニー（SRW/SRF）、富士フイルム（RAF）、オリンパス（ORF）など、幅広い大手カメラメーカーの Camera Raw ファイルもサポートしています。
 
-以下に示すように、ユースケースや機能に対する各種ファイルタイプのサポートレベルは異なります。凡例を使用すると、サポートレベルがわかります。
+以下に示すように、ユースケースや機能に対する各種ファイルタイプのサポートレベルは異なります。 凡例を使用すると、サポートレベルがわかります。
 
 | サポートレベル | 説明 |
 |-------------------|-------------------------|

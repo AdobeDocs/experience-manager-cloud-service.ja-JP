@@ -4,14 +4,17 @@ description: を利用したオプションを使用してビデオ  [!DNL Adobe
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Best Practices, Video, Interactive Videos
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 18%
+source-wordcount: '797'
+ht-degree: 19%
 
 ---
 
 # [!DNL Assets view] でビデオを編集する {#edit-videos}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ビデオ用の埋め込みクイックアクションを使用すると、Assets ユーザーは、ビデオコンテンツのバリエーション [!DNL Adobe Express] 簡単に作成できます。 [!DNL Adobe Express] を利用した [!DNL Assets view] のクイックアクションでは、ビデオの切り抜き、ビデオのサイズ変更、ビデオのトリミング、ビデオのGIFへの変換など、使いやすいビデオ編集オプションが提供されています。
 
@@ -21,7 +24,7 @@ ht-degree: 18%
 
 AEM Assets内の [!DNL Adobe Express] および少なくとも 1 つの環境にアクセスするための権限。 環境には、[!DNL Assets as a Cloud Service] または [!DNL Assets view] 内の任意のリポジトリを指定できます。
 
-## Adobe Expressを使用したビデオの編集 {#edit-video-using-express}
+## Adobe Express を使用したビデオの編集 {#edit-video-using-express}
 
 埋め込みおよ [!DNL Adobe Express] クイックアクションを使用すると、ビデオを最適なサイズと向きに簡単に変換できます。
 
@@ -68,7 +71,7 @@ AEM Assets内の [!DNL Adobe Express] および少なくとも 1 つの環境に
 
 ### ビデオをGIFに変換 {#convert-mp4-to-gif-using-express}
 
-Adobe Expressを使用して、MP4 ビデオをGIF形式にすばやく変換できます。 以下の手順を実行します。
+Adobe Expressを使用して、MP4 ビデオをGIF形式にすばやく変換できます。 次の手順を実行します。
 
 1. ビデオを選択し、「**[!UICONTROL 編集]**」をクリックします。
 2. 左側のペインで使用可能なクイックアクションから **[!UICONTROL GIFに変換]** をクリックします。

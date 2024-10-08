@@ -2,15 +2,18 @@
 title: Assetsを  [!DNL the Content Hub] で共有
 description: Assetsを  [!DNL the Content Hub] で共有
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '472'
 ht-degree: 3%
 
 ---
 
-
 # コンテンツハブでのアセットの共有 {#search-assets-as-a-link}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![ アセットを共有のバナー画像 ](assets/share-assets-banner.png)
 
@@ -34,7 +37,7 @@ ht-degree: 3%
 
 ## 複数アセットの共有 {#share-multiple-assets}
 
-共有リンク [!DNL The Content Hub] 使用して複数のアセットを共有できます。 以下の手順を実行します。
+共有リンク [!DNL The Content Hub] 使用して複数のアセットを共有できます。 次の手順を実行します。
 
 1. 承認済み受信者と共有する必要があるアセットを選択します。 複数のアセットを 1 つずつ選択することも、**[!UICONTROL すべてを選択]** をクリックして使用可能なすべてのアセットを一度に選択することもできます。 **[!UICONTROL すべてを選択]** オプションは、少なくとも 1 つのアセットを選択した場合にのみ表示されます。
 
@@ -61,7 +64,3 @@ ht-degree: 3%
 共有リンクをクリックし、アセットカードにあるダウンロードアイコンをクリックして、アセットをダウンロードします。  複数のアセットを選択して、「**[!UICONTROL ダウンロード]**」をクリックすることもできます。<!--You can either download original assets or Original+Renditions of an asset.--> [!DNL The Content Hub] は、各アセットを 1 つずつローカルファイルシステムにダウンロードします。
 
 ![ 共有リンクへのアクセス ](assets/content-hub-access-shared-links.png)
-
-
-
-

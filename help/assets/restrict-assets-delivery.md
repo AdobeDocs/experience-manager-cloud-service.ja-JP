@@ -3,14 +3,17 @@ title: Experience Managerでのアセットの配信を制限
 description: ' [!DNL Experience Manager] でアセット配信を制限する方法を説明します。'
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 65f0018a25c57189229fc56332ad874ebd0deef4
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1148'
 ht-degree: 2%
 
 ---
 
 # [!DNL Experience Manager] のアセットへのアクセス制限 {#restrict-access-to-assets}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Managerの中央アセットガバナンスを使用すると、DAM 管理者またはブランド管理者がアセットへのアクセスを管理できます。 オーサリング側、特にAEM as a Cloud Service オーサーインスタンスで承認済みアセットの役割を設定することで、アクセスを制限できます。
 

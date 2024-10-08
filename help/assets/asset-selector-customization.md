@@ -3,14 +3,17 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセッ�
 description: 関数を使用すると、アプリケーション内のアセットセレクターをカスタマイズできます。
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1243'
-ht-degree: 86%
+source-wordcount: '1261'
+ht-degree: 85%
 
 ---
 
 # アセットセレクターのカスタマイズ {#asset-selector-customization}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 アセットセレクターを使用すると、環境設定、要件、機能のニーズに応じて、様々なコンポーネントをカスタマイズできます。 次のコンポーネント [ マイクロフロントエンドアセットセレクター ](#overview-asset-selector.md) をカスタマイズできます。
 

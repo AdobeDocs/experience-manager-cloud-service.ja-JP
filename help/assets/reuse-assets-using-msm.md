@@ -6,14 +6,17 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '3407'
-ht-degree: 100%
+source-wordcount: '3425'
+ht-degree: 99%
 
 ---
 
 # MSM for を使用したアセットの再利用[!DNL Assets] {#reuse-assets-using-msm-for-assets}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |

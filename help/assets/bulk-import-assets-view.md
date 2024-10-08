@@ -4,14 +4,17 @@ description: 新しい Assets UI（Assets ビュー）を使用してアセッ�
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 816bf0f93dd67f193f4e8a7c9bc4a7df29cb6cf5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1881'
-ht-degree: 93%
+source-wordcount: '1899'
+ht-degree: 92%
 
 ---
 
 # Assets ビューを使用したアセットの一括読み込み  {#bulk-import-assets-view}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 AEM Assets ビューの一括読み込みを使用すると、管理者はデータソースから AEM Assets に大量のアセットを読み込むことができます。管理者は、個々のアセットやフォルダーを AEM Assets にアップロードする必要がなくなりました。
 

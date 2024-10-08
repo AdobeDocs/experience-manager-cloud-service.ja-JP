@@ -5,14 +5,17 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1536'
-ht-degree: 100%
+source-wordcount: '1554'
+ht-degree: 99%
 
 ---
 
 # Experience Manager Assets での公開の管理 {#manage-publication-in-aem}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager Assets] 管理者は、アセットやアセットを含んだフォルダーをオーサーインスタンスから [!DNL Experience Manager Assets]、[!DNL Dynamic Media] および [!DNL Brand Portal]. に公開できます。また、アセットやフォルダーを後の日時に公開するようにスケジューリングすることもできます。公開すると、ユーザーはアセットにアクセスでき、さらに他のユーザーにアセットを配布できます。デフォルトでは、アセットやフォルダーを [!DNL Experience Manager Assets] に公開できます。ただし、[!DNL Experience Manager Assets] を設定して [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=ja) と [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ja) への公開を有効にすることができます。
 

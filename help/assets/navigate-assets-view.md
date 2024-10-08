@@ -4,14 +4,17 @@ description: ' [!DNL Assets view] のユーザーインターフェイスとナ�
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: b8ee421c5105c95dc4a509d3b2e32fa43b1adc0b
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 89%
+source-wordcount: '984'
+ht-degree: 98%
 
 ---
 
 # ファイルおよびフォルダーへの移動とアセットの表示 {#view-assets-and-details}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 <!-- TBD: Give screenshots of all views with many assets. Zoom out to showcase how the thumbnails/tiles flow on the UI in different views. -->
 
@@ -31,8 +34,8 @@ ht-degree: 89%
 
 ## アセットとフォルダーの参照と表示 {#browse-repository}
 
-メインユーザーインターフェイスまたは左側のサイドバーからフォルダーを参照できます。Experience Manager Assetsでは、コンテンツの参照時や検索時に、フォルダーのサムネールにフォルダーコンテンツの視覚的なプレビューが表示されるようになりました。これにより、AEM Assets リポジトリー内で使用可能なアセットを見つけやすくなります。 このフォルダーのサムネールを使用すると、AEM Assets リポジトリー内のフォルダー内の特定のアセットの検索に費やす時間を節約できます。
-フォルダー内のアセットを参照する際に、インターフェイスを使用してアセットのサムネールを表示し、リポジトリーを視覚的に参照したり、アセットの詳細を表示して目的のアセットをすばやく見つけたりできます。 左側のサイドバーで使用できるオプションは次のとおりです。
+メインユーザーインターフェイスまたは左側のサイドバーからフォルダーを参照できます。Experience Manager Assets で、コンテンツを参照または検索する際に、フォルダーのサムネールにフォルダーのコンテンツの視覚的なプレビューが表示されるようになりました。これにより、AEM Assets リポジトリ内で使用可能なアセットの検出性が向上します。このフォルダーのサムネールを確認することで、AEM Assets リポジトリのフォルダー内の特定のアセットの検索にかかる時間を節約できます。
+フォルダー内のアセットの参照時には、このインターフェイスを使用してアセットのサムネールを表示し、リポジトリを視覚的に参照したり、アセットの詳細を表示して目的のアセットをすばやく見つけたりできます。左側のサイドバーで使用できるオプションは次のとおりです。
 
 * [マイワークスペース](/help/assets/my-workspace-assets-view.md)：Assets には、ウィジェットを提供するカスタマイズ可能なワークスペースが含まれるようになりました。このワークスペースは、Assets ユーザーインターフェイスの主要な領域と、最も関連性の高い情報に簡単にアクセスできます。このページは、作業項目の概要を示し、主要なワークフローにすばやくアクセスできるワンストップソリューションとして機能します。これらのオプションにより簡単にアクセスできるので、効率とコンテンツ速度が向上します。
 * [タスク](/help/assets/my-workspace-assets-view.md)：自分に割り当てられたタスクは、「**マイタスク**」タブで確認できます。一方、自分が作成したタスクは、「**割り当てられたタスク**」タブで表示できます。また、完了したタスクは、「**完了済みタスク**」タブにあります。
@@ -62,7 +65,7 @@ ht-degree: 89%
 
 アセットを見つけるには、`Name`、`Relevancy`、`Size`、`Modified` および `Created` の昇順または降順にアセットを並べ替えます。
 
-フォルダー内を移動するには、フォルダーのサムネールをダブルクリックするか、左サイドバーからフォルダーを選択します。 フォルダーの詳細を表示するには、フォルダーを選択し、上部のツールバーで「詳細」をクリックします。階層を上下に移動するには、左側のサイドバーを使用するか、上部のパンくずリストを使用します。
+フォルダー内に移動するには、フォルダーのサムネールをダブルクリックするか、左側のサイドバーからフォルダーを選択します。フォルダーの詳細を表示するには、フォルダーを選択し、上部のツールバーで「詳細」をクリックします。階層を上下に移動するには、左側のサイドバーを使用するか、上部のパンくずリストを使用します。
 
 ![フォルダーの参照](assets/browsing-folders.png)
 

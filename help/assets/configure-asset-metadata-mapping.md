@@ -4,14 +4,17 @@ description: Adobe Workfront と Experience Manager as a Cloud Service のアプ
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 100%
+source-wordcount: '1030'
+ht-degree: 98%
 
 ---
 
 # Adobe Workfront と Experience Manager Assets 間のアセットメタデータのマッピング設定 {#asset-metadata-mapping-workfront-aem-assets}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Adobe Workfrontと Experience Manager as a Cloud Service のアプリケーション間でアセットメタデータのフィールドをマッピングできます。 メタデータフィールドをマッピングした結果、アセットを Workfront から Experience Manager Assets に送信すると、マッピングされたアセットメタデータを Experience Manager Assets で表示できます。
 

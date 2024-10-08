@@ -9,14 +9,17 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 100%
+source-wordcount: '1686'
+ht-degree: 99%
 
 ---
 
 # [!DNL Experience Manager Assets] のトランスクリプションの設定 {#configure-transcription-service}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 トランスクリプションとは、音声認識技術を使用して、オーディオまたはビデオファイル内の音声をテキストに変換するプロセス（音声テキスト変換）です。
 [!DNL Adobe Experience Manager Assets] には、[!DNL Azure Media Services] 設定されています。このサービスは、サポートされているオーディオまたはビデオファイルに含まれている音声言語のテキストトランスクリプトを WebVTT（.vtt）形式で自動的に生成します。オーディオまたはビデオアセットが [!DNL Experience Manager Assets] で処理される際に、トランスクリプションサービスによって、オーディオまたはビデオアセットのテキストトランスクリプトレンディションが自動的に生成され、オリジナルのアセットが存在する Assets リポジトリー内の場所に保存されます。[!DNL Experience Manager Assets] トランスクリプションサービスを使用すると、マーケターは、テキストコンテンツの検索効率を高めてオーディオおよびビデオコンテンツを効果的に管理できるほか、アクセシビリティやローカライゼーションに対応することで、これらのアセットの ROI を向上できます。

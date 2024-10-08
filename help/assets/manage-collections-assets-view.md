@@ -4,14 +4,17 @@ description: コレクションとは、Experience Manager Assets ビュー内�
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 100%
+source-wordcount: '928'
+ht-degree: 98%
 
 ---
 
 # コレクションを管理 {#manage-collections}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
 >id="assets_collections"

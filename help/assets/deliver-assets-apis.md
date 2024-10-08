@@ -2,14 +2,18 @@
 title: 配信 API
 description: 配信 API の使用方法を説明します。
 role: User
-source-git-commit: deae260ce34a0801ee534ddadfb14823ef461a87
+exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 0%
+source-wordcount: '555'
+ht-degree: 1%
 
 ---
 
 # 配信 API {#delivery-apis}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Managerアセットリポジトリで使用可能なすべての [ 承認済みアセット ](approve-assets.md) は、配信 URL を使用して [ 検索 ](search-assets-api.md) 後、統合されたダウンストリームアプリケーションに配信できます。
 

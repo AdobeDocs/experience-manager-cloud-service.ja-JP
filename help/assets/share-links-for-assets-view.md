@@ -4,14 +4,17 @@ description: リンクを生成し、 [!DNL Assets view]  アプリケーショ�
 exl-id: 7d7d488b-410b-4e90-bd10-4ffbb5fcec49
 feature: Adobe Asset Link, Link Sharing
 role: Admin
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 100%
+source-wordcount: '415'
+ht-degree: 96%
 
 ---
 
 # アセットへのリンクの共有 {#share-links-assets}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Assets view] を使用すると、[!DNL Assets view] アプリケーションに対するアクセス権を持たない外部の関係者と、リンクを生成してアセットを共有できます。リンクの有効期限を定義し、メールやメッセージングサービスなどの好みの通信方法を使用して、他のユーザーとリンクを共有できます。 リンクの受信者は、アセットをプレビューし、ダウンロードできます。
 

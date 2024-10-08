@@ -2,14 +2,17 @@
 title: Publish層用のカスタムドメインの設定
 description: AdobeCloud Managerでパブリッシュ層のカスタムドメインを設定する方法について説明します。
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 6%
+source-wordcount: '279'
+ht-degree: 7%
 
 ---
 
 # パブリッシュ層用のカスタムドメインの設定{#configure-custom-domain}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 AdobeCloud Managerでは、カスタムドメインを追加して web サイトを目立たせることができます。 AEM as a Cloud Serviceにはデフォルトドメインが付属していますが、必要に応じてカスタマイズできます。
 

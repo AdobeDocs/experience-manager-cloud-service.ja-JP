@@ -1,14 +1,18 @@
 ---
 title: Adobe Expressを使用したContent Hubでの画像の編集
 description: Adobe Expressを使用したContent Hubでの画像の編集
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '408'
 ht-degree: 2%
 
 ---
 
 # Content Hubでの画像の編集 {#edit-images-content-hub}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Adobe Expressを使用したContent Hubでの画像の編集 ](assets/edit-images-content-hub.png)
 
@@ -49,5 +53,3 @@ Content Hubを使用して画像を編集するには：
 1. **[!UICONTROL 新しいアセットとして保存]** をクリックして、アセットを保存します。
 
 また、管理者は、Content Hubにアセットを追加する際に表示される必須フィールドとオプションフィールド（キャンペーン名、キーワード、チャネルなど）を設定することもできます。 詳しくは、[Content Hub ユーザーインターフェイスの設定 ](configure-content-hub-ui-options.md#configure-upload-options-content-hub) を参照してください。
-
-

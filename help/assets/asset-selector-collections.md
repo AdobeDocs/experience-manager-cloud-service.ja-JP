@@ -2,15 +2,18 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセットセレクター'
 description: アセットセレクターを使用して、アプリケーション内のアセットのメタデータとレンディションを検索および取得します。
 role: Admin,User
-source-git-commit: 5c76b28726403a6b011a55add190e6e3a6d7a390
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '479'
 ht-degree: 15%
 
 ---
 
 
 # アセットセレクターコレクション {#asset-selector-collections}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 コレクションとは、アセットセレクター内のアセット、フォルダーまたはその他のコレクションのセットです。 コレクションを使用して、ユーザー間でアセットを共有します。フォルダーとは異なり、1 つのコレクションに異なる複数の場所のアセットを含めることができます。
 

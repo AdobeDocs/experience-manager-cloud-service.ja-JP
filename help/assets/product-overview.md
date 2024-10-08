@@ -1,15 +1,18 @@
 ---
 title: Content Hubの概要
 description: Content Hubの詳細、主なメリット、アクセス方法、Content Hubで利用できるオプションに関するフィードバックの提供方法について説明します。
-source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
+exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '676'
 ht-degree: 6%
 
 ---
 
-
 # Content Hubの概要 {#overview-content-hub}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |----|-----|
 
 ![Content Hubの概要 ](assets/content-hub-overview.png)
 

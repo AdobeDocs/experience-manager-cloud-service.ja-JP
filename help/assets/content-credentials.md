@@ -2,22 +2,25 @@
 title: Content credentialsの統合
 description: AEM Assetsに統合され、Assets ビューに表示されるContent credentialsは、どのように作成され、誰が作成したかなど、アセットの履歴に関するコンテキストを提供できます。 デジタルコンテンツの栄養ラベルと同様、Content credentialsは透明性を高め、オーディエンスとの信頼を構築するのに役立ちます。
 role: User
-source-git-commit: 1c0ffe9d6e45f1d6b3574d1ac5611b2c2e2d00e0
+exl-id: 27c25ae0-4477-40c3-85c8-3e0aa725aba7
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 0%
+source-wordcount: '480'
+ht-degree: 1%
 
 ---
 
-
 # コンテンツ資格情報 {#content-credentials}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ブランドは、コンテンツの透明性、AI の開示、アセットの改ざんの防止にこれまで以上に関心を寄せています。 Adobeの Content Authenticity Initiative （CAI）は、[Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) （C2PA）技術標準に準拠したツールを構築しています。 Content credentialsは、新しい種類の暗号化された改ざん防止メタデータで、コンテンツの系列を理解し、ブランドアセットの整合性を確保するのに役立ちます。 これには、デジタルアセットの履歴に関するインサイトを提供する様々な来歴データが含まれます。
 
 この情報には、次のものが含まれます。
 
 * **発行者または署名者：** アセットを認証または署名するためにデジタル署名を発行したエンティティまたは会社に関する情報。
-* **発行日：** コンテンツ資格情報がアセットに適用された日付
+* **発行日：** Content Credentialがアセットに適用された日付
 * **クレジットと使用状況：** 名前、ソーシャルメディアハンドル、その他の ID 関連情報など、アセットのプロデューサーに関する情報。
 * **プロセス：** アセットに対して行われた編集や変更の記録。
 * **デバイスの詳細：** アセットの作成または編集に使用されたアプリまたはデバイスに関する情報。

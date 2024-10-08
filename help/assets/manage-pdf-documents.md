@@ -4,14 +4,17 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] で PDF
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 100%
+source-wordcount: '856'
+ht-degree: 98%
 
 ---
 
 # Experience Manager Assets as a Cloud Service での PDF ドキュメントの管理 {#add-assets-to-experience-manager}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager Assets は、Document Cloud PDF ビューアとシームレスに統合され、PDF ドキュメントの複数ページをプレビューできます。 さらに、注釈、テキストの検索、ブックマークやサムネールを使用した PDF ドキュメント内の移動など、高度な Document Cloud PDF ビューア機能も使用できます。Experience Manager Assets では、サポートされている他の形式でドキュメントをアップロードし、PDF 形式でプレビューすることもできます。
 

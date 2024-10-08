@@ -4,14 +4,17 @@ description: リンクとして共有、ダウンロード、 [!DNL Brand Portal
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1829'
-ht-degree: 100%
+source-wordcount: '1847'
+ht-degree: 99%
 
 ---
 
 # Adobe [!DNL Experience Manager] で管理されるアセットの共有と配布  {#share-assets-from-aem}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |

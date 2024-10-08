@@ -4,14 +4,17 @@ description: 既存のインストールの外部依存関係の削除
 feature: Workfront Integrations and Apps
 exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
 role: Admin
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 100%
+source-wordcount: '122'
+ht-degree: 87%
 
 ---
 
 # 既存のインストールの外部依存関係の削除 {#remove-external-depedencies}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Workfront の既存の拡張コネクタインストールに対して設定手順を実行して、Hoodo 配布ポイントへの依存関係を削除することをお勧めします。
 

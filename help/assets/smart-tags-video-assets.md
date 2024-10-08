@@ -4,14 +4,17 @@ description: Adobe Experience Manager では、 [!DNL Adobe Sensei] を使用し
 feature: Smart Tags
 role: Admin, User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 100%
+source-wordcount: '1243'
+ht-degree: 98%
 
 ---
 
 # ビデオアセットのスマートタグ {#video-smart-tags}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 新しいコンテンツに対するニーズが高まる中で、人手による作業を減らしつつ、人を惹きつけるデジタルエクスペリエンスをすぐに届ける必要があります。[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、人工知能を使用したビデオアセットの自動タグ付けをサポートしています。ビデオの手動のタグ付けには時間がかかる場合があります。しかし、[!DNL Adobe Sensei] を活用したビデオスマートタグ付け機能では、人工知能モデルを使用してビデオコンテンツを分析し、ビデオアセットにタグを追加します。DAM ユーザーが顧客に豊富なエクスペリエンスを提供するまでの時間を短縮できます。Adobe の機械学習サービスは、ビデオに対して 2 組のタグを生成します。1 組は、そのビデオ内のオブジェクト、シーンおよび属性に対応し、もう 1 組は、飲む、走る、ジョギングするなどのアクションに対応します。
 

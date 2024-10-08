@@ -2,14 +2,17 @@
 title: コンテンツハブユーザーインターフェイスの設定
 description: コンテンツハブユーザーインターフェイスの設定
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 0c31f83d3e115a676c7daa37f634e25d08f4d06c
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 14%
+source-wordcount: '1392'
+ht-degree: 16%
 
 ---
 
 # コンテンツハブユーザーインターフェイスの設定 {#configure-content-hub-user-interface}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"
@@ -173,7 +176,7 @@ Content Hubでは、管理者がアセットの検索時に表示するフィル
 
 ### 有効期限切れのアセット {#expired-assets-content-hub}
 
-管理者は、期限切れのアセットをContent Hubに表示する必要があるかどうかを制御できます。 期限切れのアセットを表示可能にすると、ユーザーがダウンロードできるかどうかを定義することもできます。
+管理者は、期限切れのアセットをContent Hubに表示する必要があるかどうかを制御できます。 有効期限切れのアセットを表示する場合は、ユーザーがこれらをダウンロードできるかどうかも定義できます。
 
 期限切れのアセットは、デフォルトではContent Hubに表示されません。
 
@@ -187,11 +190,11 @@ Content Hubでは、管理者がアセットの検索時に表示するフィル
 
 1. 「**[!UICONTROL 保存]**」をクリックして、変更内容を適用します。
 
-   ![Content Hubの期限切れアセット ](assets/expired-assets-content-hub.png)
+   ![コンテンツハブの有効期限切れのアセット](assets/expired-assets-content-hub.png)
 
 アセットの表示を有効にすると、次の図に示すように、Content Hubで期限切れのアセットを確認できます。
 
-![Content Hubの期限切れアセット ](assets/view-download-expired-assets.png)
+![コンテンツハブの有効期限切れのアセット](assets/view-download-expired-assets.png)
 
 管理者がダウンロードを有効にしている場合は、図でハイライト表示されているように、Content Hub ユーザーもダウンロードできます。
 

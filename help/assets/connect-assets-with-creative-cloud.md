@@ -4,14 +4,17 @@ description: AEM Assets を設定し、Creative Cloud に接続する方法を�
 exl-id: 880200fe-94b3-49de-802c-34283f7c71bc
 feature: Collaboration
 role: User
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 100%
+source-wordcount: '300'
+ht-degree: 95%
 
 ---
 
 # AEM Assets を Creative Cloud に接続  {#cross-org-entitlements}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager Assets には、別の IMS 組織にプロビジョニングされた Creative Cloud 権限に接続する機能があり、この機能を使用すると、Express ライブラリや Creative Cloud ライブラリなどの最新の Creative Cloud 統合を AEM Assets で簡単に使用できます。
 

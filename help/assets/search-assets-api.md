@@ -2,14 +2,18 @@
 title: Assets検索 API
 description: Search Assets API の使用方法について説明します。
 role: User
-source-git-commit: 3e2fe458460fe8ec4c1dd12152c1134bfb9ca62b
+exl-id: 0c52e793-4c33-4230-b4f2-27296dd9e4b3
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 1%
+source-wordcount: '468'
+ht-degree: 2%
 
 ---
 
 # Assets検索 API {#search-assets-api}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Managerアセットリポジトリで利用可能なすべての [ 承認済みアセット ](approve-assets.md) は、検索された後、配信 URL を使用して統合ダウンストリームアプリケーションに配信できます。
 

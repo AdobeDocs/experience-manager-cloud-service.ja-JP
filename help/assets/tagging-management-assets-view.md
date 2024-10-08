@@ -4,15 +4,17 @@ description: アセットビューでタグを管理する方法を説明しま�
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 100%
+source-wordcount: '1757'
+ht-degree: 99%
 
 ---
 
 # アセットビューでタグを管理 {#view-assets-and-details}
 
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
 >id="assets_taxonomy_management"

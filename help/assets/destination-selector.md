@@ -5,14 +5,17 @@ contentOwner: Adobe
 role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 100%
+source-wordcount: '1905'
+ht-degree: 99%
 
 ---
 
 # マイクロフロントエンドの宛先セレクター {#Overview}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 マイクロフロントエンドの宛先セレクターには、アプリケーション内に [!DNL Experience Manager Assets as a Cloud Service] リポジトリと簡単に統合できるユーザーインターフェイスがあります。[!DNL Experience Manager Assets as a Cloud Service] リポジトリ内の適切なフォルダーを検索または参照して、アプリケーションからアセットをアップロードできます。
 

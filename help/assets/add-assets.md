@@ -4,14 +4,17 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '3144'
-ht-degree: 100%
+source-wordcount: '3162'
+ht-degree: 99%
 
 ---
 
 # [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets]へのデジタルアセットの追加  {#add-assets-to-experience-manager}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager Assets] は、様々な種類のデジタルアセットを様々なソースから受け取ります。バイナリと作成されたレンディションを格納し、様々なワークフローや [!DNL Adobe Sensei] サービスを使用してアセット処理を実行し、様々な面にわたる多数のチャネルを通じて配布できます。
 

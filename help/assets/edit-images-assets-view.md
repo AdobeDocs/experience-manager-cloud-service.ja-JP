@@ -4,14 +4,17 @@ description: ' [!DNL Adobe Express]  を利用したオプションを使用し�
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: af5ca9c436dce1929f310d40369abf05e60836f8
-workflow-type: ht
-source-wordcount: '1127'
-ht-degree: 100%
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 98%
 
 ---
 
 # [!DNL Assets view] での画像の編集 {#edit-images-in-assets-view}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 アセットビュー UI では、UI に統合された Adobe Express を活用した基本的な画像編集が可能です。この編集には、サイズ変更、背景の削除、切り抜き、JPEG 形式と PNG 形式間の変換が含まれます。また、アセットビュー UI に埋め込まれた Adobe Express インターフェイスを通じて高度な編集を行うこともできます。
 
@@ -102,7 +105,7 @@ Express の使用権限を持つユーザーは、アセットビュー内の Ex
 
    1. 複数のページから単一ページを保存するには、「**バージョンとして保存**」をクリックして、元の形式で元の場所にアセットを保存します。
 
-   1. 複数のページまたは複数のページの中から単一ページを保存するには、「**新しいアセットとして保存**」をクリックします。このアクションにより、単一または複数のアセットを任意のフォルダーに書き出し、元の形式または別の形式で新しいアセットとして保存できます。
+   1. 複数のページを保存する場合または複数のページの中から単一ページを保存するには、「**新しいアセットとして保存**」をクリックします。このアクションにより、単一または複数のアセットを任意のフォルダーに書き出し、元の形式または別の形式で新しいアセットとして保存できます。
 
 1. 保存ダイアログボックスで、次の手順を実行します。
    1. 「**名前を付けて保存**」フィールドにファイルの名前を入力します。

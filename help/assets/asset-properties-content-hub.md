@@ -2,15 +2,18 @@
 title: ' [!DNL the Content Hub] のアセットプロパティ'
 description: ' [!DNL Content Hub] でアセットプロパティを表示および管理する方法を説明します。'
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '617'
 ht-degree: 12%
 
 ---
 
-
 # Content Hubでのアセットプロパティの管理 {#asset-properties}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![ メタデータバナー画像 ](assets/metadata-banner-image.png)
 
@@ -126,4 +129,3 @@ Content Hubにアセットを追加する際に指定するプロパティもあ
 The date range allows you to select dates you want to see the assets. You can customize date range by choosing the start and end dates. 
 
 -->
-

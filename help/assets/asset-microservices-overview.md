@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
 role: Architect, Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 100%
+source-wordcount: '855'
+ht-degree: 98%
 
 ---
 
 # アセットマイクロサービスを使用したアセットの取り込みと処理の概要 {#asset-microservices-overview}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Adobe Experience Manager as a [!DNL Cloud Service] は、Experience Manager のアプリケーションと機能を利用するためのクラウドネイティブな方法です。この新しいアーキテクチャの主要な要素の 1 つは、アセットの取り込みと処理で、これはアセットマイクロサービスを利用して行われます。アセットマイクロサービスは、クラウドサービスを使用して、拡張性と回復性に優れたアセット処理を提供します。アドビは、様々なアセットタイプや処理オプションを最適に処理するための Cloud Services を管理します。クラウドネイティブなアセットマイクロサービスの主な利点は次のとおりです。
 

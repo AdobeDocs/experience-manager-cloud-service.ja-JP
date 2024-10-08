@@ -6,15 +6,18 @@ mini-toc-levels: 2
 feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 638b18beb5202ec34c1957a74d5b293236c2cf4e
-workflow-type: ht
-source-wordcount: '3869'
-ht-degree: 100%
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+workflow-type: tm+mt
+source-wordcount: '3887'
+ht-degree: 99%
 
 ---
 
 
 # Connected Assets を使用した [!DNL Experience Manager Sites] での DAM アセットの共有  {#use-connected-assets-to-share-dam-assets-in-aem-sites}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |

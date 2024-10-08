@@ -4,14 +4,17 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] のイ
 role: Admin
 feature: Workfront Integrations and Apps
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 100%
+source-wordcount: '783'
+ht-degree: 98%
 
 ---
 
 # [!DNL Workfront for Experience Manager enhanced connector] のインストール  {#assets-integration-overview}
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |

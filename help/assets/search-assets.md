@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: ht
-source-wordcount: '5506'
-ht-degree: 100%
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+workflow-type: tm+mt
+source-wordcount: '5524'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,9 @@ ht-degree: 100%
 | -------- | ---------------------------- |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
+
+| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager Assets] は、コンテンツ速度の向上に役立つ堅牢なアセット検索方法を備えています。標準搭載の機能とカスタムメソッドを使用したシームレスでインテリジェントなアセットの検索エクスペリエンスにより、チームは市場投入までの時間を短縮できます。アセットの検索機能は、デジタルアセット管理システムの利用の中核を成します。クリエイティブ担当者によるさらなる利用、ビジネスユーザーやマーケティング担当者によるアセットの堅牢な管理、DAM 管理者による管理などの用途があります。[!DNL Assets] ユーザーインターフェイスまたはその他のアプリやサーフェスで実行できる簡易検索、詳細検索、カスタム検索は、これらのユースケースを達成するのに役立ちます。
 
