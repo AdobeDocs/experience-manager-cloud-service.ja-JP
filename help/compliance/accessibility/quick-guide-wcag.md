@@ -5,9 +5,9 @@ exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 feature: Compliance
 role: Admin, Architect, Developer, Leader
 source-git-commit: bffc743b2d28c4c4815a17df75c04c8bfdc90a1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1749'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ Adobe Experience Manager（AEM）as a Cloud Service は、Web コンテンツの
 
 >[!NOTE]
 >
->これらのドキュメントはガイドラインの [ 更新版 ](https://www.w3.org/TR/WCAG/) を記述したので、WCAG 2.2 は 2023 年 10 月に利用可能になりました。
+>これらのドキュメントを[ガイドラインの更新されたバージョンとして記述したので、WCAG 2.2](https://www.w3.org/TR/WCAG/) は 2023年10月に使用可能になりました。
 >
->[WCAG 2.1 との比較 ](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) および [WCAG 2.2 の新機能 ](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2) を参照してください。
+>詳しくは、[WCAG 2.1 との比較](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1)および [WCAG 2.2 の新機能](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2)を参照してください。
 
 WCAG 2.1 は、障碍のあるユーザーが Web コンテンツにアクセスして利用できるようにするための、テクノロジーから独立した一連のガイドラインおよび達成基準で構成されます。これらのガイドラインでは、Web コンテンツの作成者、デザイナー、開発者を対象として、視覚障碍、難聴、学習障碍、加齢に伴う制限をはじめとする障碍の種類に関係なく、できるだけ多くの人ができるだけ容易にアクセスできるようなリソースを作成するようアドバイスしています。
 

@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
 source-git-commit: 137ea509de353f9f800f0b64bb8f2f6375e7d83d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '388'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -92,6 +92,6 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 
 ### チュートリアル
 
-CDN で提供されるエラーページの作成、デプロイ、テストの手順については、[CDN エラーページ ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) チュートリアルを参照してください。
+CDN で提供されるエラーページの作成、デプロイ、テストの手順について詳しくは、[CDN エラーページ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)チュートリアルを参照してください。
 
 

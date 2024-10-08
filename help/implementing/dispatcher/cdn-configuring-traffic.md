@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
 source-git-commit: 7f7ecfcca77cc3a38f3a4517bf41c48565b9faea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1339'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -153,9 +153,9 @@ data:
 
 | 名前 | プロパティ | 意味 |
 |-----------|--------------------------|-------------|
-| **set** | （reqProperty、reqHeader、queryParam、reqCookie のいずれか）、value | 指定されたリクエストパラメーター（「path」プロパティのみサポート）またはリクエストヘッダー、クエリパラメーター、cookie を、文字列リテラルまたはリクエストパラメーターである特定の値に設定します。 |
+| **set** | （reqProperty、reqHeader、queryParam、reqCookie のいずれか）、value | 指定されたリクエストパラメーター（「path」プロパティのみサポートされています）またはリクエストヘッダー、クエリパラメーター、Cookie のいずれかを、文字列リテラルまたはリクエストパラメーターの特定の値に設定します。 |
 |     | var、value | 指定されたリクエストプロパティを特定の値に設定します。 |
-| **unset** | reqProperty | 指定されたリクエストパラメーター（「path」プロパティのみサポート）またはリクエストヘッダー、クエリパラメーター、cookie を、文字列リテラルまたはリクエストパラメーターである指定された値に削除します。 |
+| **unset** | reqProperty | 指定されたリクエストパラメーター（「path」プロパティのみサポートされています）またはリクエストヘッダー、クエリパラメーター、Cookie のいずれかを、文字列リテラルまたはリクエストパラメーターの特定の値に削除します。 |
 |         | var | 指定した変数を削除します。 |
 |         | queryParamMatch | 指定した正規表現に一致するすべてのクエリパラメーターを削除します。 |
 | **transform** | op:replace、（reqProperty、reqHeader、queryParam、reqCookie のいずれか）、match、replacement | リクエストパラメーターの一部（「path」プロパティのみサポートされています）、またはリクエストヘッダー、クエリパラメーター、Cookie のいずれかを新しい値に置き換えます。 |
