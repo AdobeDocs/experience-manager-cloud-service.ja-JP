@@ -2,7 +2,7 @@
 source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
 source-wordcount: '1202'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 # スニペット {#snippets}
@@ -162,7 +162,7 @@ ht-degree: 97%
 >
 >[ユニバーサルエディター](/help/implementing/universal-editor/introduction.md)は IP 許可リストと互換性がありません。
 >
->ユニバーサルエディターを使用する場合は、IP許可リストを有効にしないでください。
+>ユニバーサルエディターを使用する場合は、IP 許可リストを有効にしないでください。
 
 ## ユニバーサルエディターと IP 許可リスト {#ue-ip-allow-lists}
 
@@ -197,7 +197,7 @@ ht-degree: 97%
 >* [インタラクティブな 3D を活用したエクスペリエンス](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)を実現します。
 >* その他の場合は、[Dynamic Media リソースバンク](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)を参照してください。
 
-## サポートチケットを記録 {#support-ticket}
+## サポートチケットのログ {#support-ticket}
 
 製品の問題に対して追加の調査とトラブルシューティングが必要な場合、および応答 SLT を満たす必要がある場合は、サポートチケットを送信できます。
 

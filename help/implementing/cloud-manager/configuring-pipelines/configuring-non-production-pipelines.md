@@ -1,6 +1,6 @@
 ---
-title: 実稼動以外のパイプラインを追加
-description: 実稼動環境にデプロイする前にコードの品質をテストするための実稼動以外のパイプラインを追加する方法を説明します。
+title: 実稼動以外のパイプラインの追加
+description: 実稼動環境にデプロイする前にコードの品質をテストするため、実稼動以外のパイプラインを追加する方法について説明します。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
@@ -9,14 +9,14 @@ role: Admin, Architect, Developer
 source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
 source-wordcount: '1402'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
 
 # 実稼動以外のパイプラインの追加 {#configuring-non-production-pipelines}
 
-実稼動環境にデプロイする前にコードの品質をテストするための実稼動以外のパイプラインを設定する方法を説明します。
+実稼動環境にデプロイする前にコードの品質をテストするため、実稼動以外のパイプラインを設定する方法を説明します。
 
 実稼働パイプラインを設定するには、ユーザーに&#x200B;**[デプロイメントマネージャー](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**&#x200B;の役割が必要です。
 
@@ -33,7 +33,7 @@ ht-degree: 96%
 >
 >初期設定後に[パイプライン設定を編集](managing-pipelines.md)できます。
 
-## 実稼動以外の新しいパイプラインを追加します。 {#adding-non-production-pipeline}
+## 新しい実稼動以外のパイプラインの追加 {#adding-non-production-pipeline}
 
 Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環境を用意したら、次の手順に従って実稼動以外のパイプラインを追加する準備が整います。
 

@@ -92,7 +92,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 パイプラインのタイプによっては、省略記号ボタンをもう一度クリックして「**キャンセル**」を選択すると、実行をキャンセルできる場合があります。
 
-## パイプラインを編集 {#editing-pipelines}
+## パイプラインの編集 {#editing-pipelines}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 

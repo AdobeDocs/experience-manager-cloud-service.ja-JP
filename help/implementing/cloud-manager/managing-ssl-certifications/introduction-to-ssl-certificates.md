@@ -1,6 +1,6 @@
 ---
 title: SSL 証明書の概要
-description: SSL 証明書をインストールおよび管理するためにCloud Managerが提供するセルフサービスツールについて説明します。
+description: SSL 証明書のインストールおよび管理において Cloud Manager が提供するセルフサービスツールについて説明します。
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -8,14 +8,14 @@ role: Admin, Architect, Developer
 source-git-commit: 912e63b2ff11e24392fc7509945f352ab07c60cc
 workflow-type: tm+mt
 source-wordcount: '914'
-ht-degree: 55%
+ht-degree: 97%
 
 ---
 
 
 # SSL 証明書の概要{#introduction}
 
-SSL （Secure Socket Layer）証明書をインストールおよび管理するためにCloud Managerが提供するセルフサービスツールについて説明します。
+SSL（Secure Socket Layer）証明書のインストールおよび管理において Cloud Manager が提供するセルフサービスツールについて説明します。
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
@@ -24,26 +24,26 @@ SSL （Secure Socket Layer）証明書をインストールおよび管理する
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="SSL 証明書の表示、更新、および置換"
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="SSL 証明書のステータスの確認"
 
-## SSL 証明書とは {#overview}
+## SSL 証明書とは？ {#overview}
 
-企業や組織では、SSL （Secure Socket Layer）証明書を使用して web サイトを保護し、顧客の信頼を確保しています。 SSL プロトコルを使用するには、web サーバーに SSL 証明書が必要です。
+企業や組織は SSL（Secure Socket Layer）証明書を使用して自社の web サイトを保護し、顧客の信頼を確保します。SSL プロトコルを使用するには、web サーバーに SSL 証明書が必要です。
 
 組織や企業などのエンティティが認証機関（CA）に証明書を要求すると、CA は検証プロセスを完了します。このプロセスは、ドメイン名制御の検証から、会社登録書やサブスクライバー契約書の収集まで多岐にわたります。エンティティの情報が検証されると、CA は CA の秘密鍵を使用して公開鍵に署名します。主要な認証機関はすべて web ブラウザーのルート証明書を持っているので、エンティティ証明書は&#x200B;*信頼チェーン*&#x200B;を介してリンクされ、web ブラウザーはそれを信頼済み証明書と認識します。
 
 >[!IMPORTANT]
 >
->Cloud Manager からは、SSL 証明書や秘密鍵は提供されません。これらの部分は、信頼できるサードパーティの組織である証明機関から取得する必要があります。 よく知られている証明機関には、*DigiCert*、*Let&#39;s Encrypt*、*GlobalSign*、*Entrust*、*Verisign* などがあります。
+>Cloud Manager からは、SSL 証明書や秘密鍵は提供されません。これらの情報は、証明機関（信頼できるサードパーティの組織）から取得する必要があります。よく知られている証明機関には、*DigiCert*、*Let&#39;s Encrypt*、*GlobalSign*、*Entrust*、*Verisign* などがあります。
 
-## Cloud Managerでの証明書の管理 {#cloud-manager}
+## Cloud Manager を使用した証明書の管理 {#cloud-manager}
 
-Cloud Managerには、SSL 証明書をインストールおよび管理するセルフサービスツールが用意されており、ユーザーのサイトセキュリティを確保できます。 Cloud Managerでは、証明書を管理する 2 つのモデルをサポートしています。
+Cloud Manager には、SSL 証明書をインストールおよび管理するセルフサービスツールが用意されており、ユーザーのサイトセキュリティを確保します。Cloud Manager では、証明書を管理する 2 つのモデルをサポートしています。
 
 | | モデル | 説明 |
 | --- | --- | --- |
-| A | **[アドビが管理する証明書（DV）](#adobe-managed)** | Cloud Managerを使用すると、ドメインのクイックセットアップ用にAdobeから提供される DV （Domain Validation）証明書を設定できます。 |
-| B | **[顧客が管理する証明書（OV／EV）](#customer-managed)** | Cloud Managerは、所有する OV および EV SSL 証明書と、サードパーティの認証機関からの秘密鍵（*Let’s Encrypt* を管理できる、プラットフォーム TLS （Transport Layer Security）サービスを提供しています。 |
+| A | **[アドビが管理する証明書（DV）](#adobe-managed)** | Cloud Manager を使用すると、ユーザーはアドビが提供する DV（ドメイン検証）証明書を設定して、ドメインをすばやく設定できます。 |
+| B | **[顧客が管理する証明書（OV／EV）](#customer-managed)** | Cloud Manager は、プラットフォーム TLS（Transport Layer Security）サービスを提供し、所有する OV および EV SSL 証明書と、サードパーティの証明機関からの秘密鍵（*Let&#39;s Encrypt* など）を管理できます。 |
 
-どちらのモデルも、証明書を管理するための次の一般的な機能を提供します。
+どちらのモデルも、証明書を管理する次の一般的な機能を提供します。
 
 * 各 Cloud Manager 環境は、複数の証明書を使用できます。
 * 秘密鍵は、複数の SSL 証明書を発行する場合があります。
@@ -51,45 +51,45 @@ Cloud Managerには、SSL 証明書をインストールおよび管理するセ
 
 >[!IMPORTANT]
 >
->[ カスタムドメインを追加して環境に関連付けるには ](/help/implementing/cloud-manager/custom-domain-names/introduction.md)、ドメインをカバーする有効な SSL 証明書が必要です。
+>[カスタムドメインを追加して環境に関連付けるには](/help/implementing/cloud-manager/custom-domain-names/introduction.md)、そのドメインを対象とする有効な SSL 証明書が必要です。
 
-### Adobe管理証明書 {#adobe-managed}
+### アドビが管理する証明書 {#adobe-managed}
 
-DV 証明書は、最も基本的なレベルの SSL 証明書で、多くの場合、テスト目的や、基本的な暗号化で web サイトを保護する目的で使用されます。DV 証明書は、[ 実稼動プログラムとサンドボックスプログラム ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) の両方で使用できます。
+DV 証明書は、最も基本的なレベルの SSL 証明書で、多くの場合、テスト目的や、基本的な暗号化で web サイトを保護する目的で使用されます。DV 証明書は[実稼動プログラムとサンドボックスプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)の両方で利用できます。
 
 DV 証明書を作成すると、その証明書を削除しない限り、アドビが 3 か月ごとに自動的に更新します。
 
-### 顧客管理の証明書 {#customer-managed}
+### 顧客が管理する証明書 {#customer-managed}
 
 OV 証明書と EV 証明書は、CA で検証された情報を提供します。このような情報は、web サイト所有者、メール送信者、コードや PDF ドキュメントのデジタル署名者が信頼できるかどうかを評価するのに役立ちます。DV 証明書では、このような所有権の検証は許可されません。
 
-OV および EV は、Cloud Managerの DV 証明書に対してさらに、これらの機能を提供します。
+また、OV と EV は、Cloud Manager の DV 証明書を通じてこれらの機能も提供します。
 
-* 複数の環境が 1 つの OV/EV 証明書を使用できます。
+* 複数の環境で OV／EV 証明書を使用できます。
    * つまり、1 度の追加で複数回使用できます。
-* 通常、各 OV/EV 証明書には複数のドメインが含まれます。
-* Cloud Managerは、ドメインのワイルドカード OV/EV 証明書を受け付けます。
+* 通常、各 OV／EV 証明書には複数のドメインが含まれます。
+* Cloud Manager は、ドメインのワイルドカード OV／EV 証明書を受け付けます。
 
 >[!TIP]
 >
->複数のカスタムドメインがある場合、新しいドメインを追加するたびに証明書をアップロードしたくないことがあります。 その場合、複数のドメインに対応する単一の証明書を取得することで、メリットが得られる可能性があります。
+>複数のカスタムドメインがある場合は、新しいドメインを追加するたびに証明書をアップロードする必要がないことがあります。その場合、複数のドメインを対象とする単一の証明書を取得するとメリットが得られます。
 
 >[!NOTE]
 >
->インストールされている証明書が同じドメインに対応している場合は、より正確な証明書が適用されます。
+>同じドメインを対象とする 2 つの証明書がインストールされている場合は、より適切な証明書が適用されます。
 >
->例えば、ドメインが `dev.adobe.com` で、`*.adobe.com` 用の証明書と `dev.adobe.com` 用の証明書が 1 つある場合、より具体的な証明書（`dev.adobe.com`）が使用されます。
+>例えば、ドメインが `dev.adobe.com` で、`*.adobe.com` 用の証明書と `dev.adobe.com` 用の証明書がそれぞれ 1 つずつある場合は、より具体的な証明書（`dev.adobe.com`）が使用されます。
 
-#### 顧客管理証明書の要件 {#requirements}
+#### 顧客が管理する証明書の要件 {#requirements}
 
-独自の EV/OV 証明書をアップロードする場合は、次の要件を満たす必要があります。
+独自の EV／OV 証明書をアップロードする場合は、次の要件を満たす必要があります。
 
-* AEM as a Cloud Serviceでは、OV （Organization Validation）ポリシーまたは EV （Extended Validation）ポリシーに準拠する証明書を受け付けます。
-   * Cloud Managerは独自の DV （Domain Validation）証明書のアップロードをサポートしていません。
+* AEM as a Cloud Service では、OV（組織検証）ポリシーまたは EV（拡張検証）ポリシーに準拠する証明書を受け付けます。
+   * Cloud Manager は、独自の DV（ドメイン検証）証明書のアップロードをサポートしていません。
 * 証明書はすべて、2048 ビットの RSA 秘密鍵と一致する信頼できる証明機関の X.509 TLS 証明書である必要があります。
 * 自己署名証明書は受け付けられません。
 
-#### 顧客管理証明書の形式 {#certificate-format}
+#### 顧客が管理する証明書の形式 {#certificate-format}
 
 SSL 証明書ファイルを Cloud Manager でインストールするには、SSL ファイルを PEM 形式にする必要があります。PEM 形式の一般的なファイル拡張子には `.pem,` があります。`crt`、`.cer`、`.cert` です。
 

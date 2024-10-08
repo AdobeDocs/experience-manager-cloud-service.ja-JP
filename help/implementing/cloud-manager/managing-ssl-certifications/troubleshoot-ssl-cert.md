@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 1017f84564cedcef502b017915d370119cd5a241
 workflow-type: tm+mt
 source-wordcount: '556'
-ht-degree: 52%
+ht-degree: 54%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 52%
 
 一般的な原因を特定して SSL 証明書の問題のトラブルシューティングを行い、安全な接続を維持する方法を説明します。
 
-+++**無効な証明書**
++++**証明書が無効です**
 
 ## 無効な証明書 {#invalid-certificate}
 
@@ -24,7 +24,7 @@ ht-degree: 52%
 
 +++
 
-+++**秘密鍵は PKCS 8 形式である必要があります**
++++**秘密鍵は PKCS 8 形式にする必要があります**。
 
 ## 秘密鍵は PKCS 8 形式である必要があります {#pkcs-8}
 

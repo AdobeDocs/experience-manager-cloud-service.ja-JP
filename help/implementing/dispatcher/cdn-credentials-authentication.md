@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 37d399c63ae49ac201a01027069b25720b7550b9
 workflow-type: tm+mt
 source-wordcount: '1486'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -57,7 +57,7 @@ data:
 
 `data` ノード上のプロパティの説明について詳しくは、[設定パイプラインの使用](/help/operations/config-pipeline.md#common-syntax)を参照してください。`kind` プロパティの値は *CDN* に設定し、`version` プロパティは `1` に設定する必要があります。
 
-詳しくは、[HTTP ヘッダー検証 CDN ルールの設定とデプロイ ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) チュートリアルの手順を参照してください。
+詳しくは、[HTTP ヘッダー検証 CDN ルールの設定とデプロイ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)チュートリアルの手順を参照してください。
 
 その他のプロパティには次が含まれます。
 
@@ -192,7 +192,7 @@ data:
            authenticator: my-basic-authenticator
 ```
 
-`data` ノード上のプロパティの説明について詳しくは、[設定パイプラインの使用](/help/operations/config-pipeline.md#common-syntax)を参照してください。`kind` プロパティの値は *CDN* に、`version` プロパティは `1` に設定する必要があります。
+`data` ノード上のプロパティの説明について詳しくは、[設定パイプラインの使用](/help/operations/config-pipeline.md#common-syntax)を参照してください。`kind` プロパティの値は *CDN* に設定し、`version` プロパティは `1` に設定する必要があります。
 
 さらに、構文には次のものが含まれます。
 
