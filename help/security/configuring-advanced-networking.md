@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: fd6fb14bf3acdd30efb984e1666ed91a2327d810
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5675'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -214,9 +214,9 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ## 出力専用 IP アドレス {#dedicated-egress-ip-address}
 
-専用 IP アドレスは、SaaS ベンダー（CRM ベンダーなど）との統合や、IP アドレスの許可リストを提供する AEM as a Cloud Service 外部のソリューションと統合する場合のセキュリティを強化します。専用 IP アドレスを許可リストに追加することで、AEM Cloud Service からのトラフィックのみが外部サービスに送信されるようになります。これは、その他の許可されている IP からのトラフィックに加えられるものです。
+専用 IP アドレスは、SaaS ベンダー（CRM ベンダーなど）との統合や、IP アドレスの許可リストを提供する AEM as a Cloud Service 外部のソリューションと統合する場合のセキュリティを強化します。専用 IP アドレスを許可リストに追加することで、AEM Cloud Service からのトラフィックのみが外部サービスに送信されるようになります。これは、その他の許可されている IP からのトラフィックに追加されます。
 
-同じ専用 IP がプログラム内のすべての環境に適用され、オーサーサービスとPublish サービスの両方に適用されます。
+同じ専用 IP がプログラム内のすべての環境に、オーサーサービスとパブリッシュサービスの両方に適用されます。
 
 専用 IP アドレス機能が有効になっていない場合、AEM as a Cloud Service から出ていくトラフィックは、他の AEM as a Cloud Service の顧客と共有する一連の IP を使用します。
 
