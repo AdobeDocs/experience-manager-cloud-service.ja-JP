@@ -5,10 +5,10 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
+source-git-commit: c30ec18858c977f0701fef9bb2a7d3320e67dcba
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 97%
+source-wordcount: '1100'
+ht-degree: 95%
 
 ---
 
@@ -159,7 +159,8 @@ ht-degree: 97%
 
 * サムネールをタップまたはクリックして、ローンチを選択します。
 * ツールバーが表示されます。「クローン」を選択します。
-   * クローンはコンソールに表示されます。
+   * クローンが作成され、コンソールに表示されます。
+   * **ローンチタイトル** は、クローンであることを示しています。 [ ローンチ設定 ](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration) （**プロパティ**）を編集してタイトルを更新できます。
 
 ## ローンチの削除 {#deleting-a-launch}
 
