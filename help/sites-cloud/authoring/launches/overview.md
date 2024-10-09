@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: cc007536d14bd0464879b30d6303c24ccf15d2d0
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 100%
+source-wordcount: '897'
+ht-degree: 97%
 
 ---
 
@@ -105,9 +105,13 @@ ht-degree: 100%
 
 ## ローンチコンソール {#the-launches-console}
 
-ローンチコンソールを使用すると、ローンチの概要を確認し、リストされたローンチに対して処理を実行できます。コンソールは次の方法でアクセスできます。
+ローンチコンソールには、ローンチの概要が表示され、リストに表示されたローンチを操作できます。
 
-* **ツール**&#x200B;コンソールで、**ツール**／**サイト**／**ローンチ**&#x200B;と選択します。
+![ローンチコンソール - コンテンツを管理](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+
+コンソールは次の方法でアクセスできます。
+
+* **ツール** コンソール：**ツール**、**一般**、**ローンチ**。
 
 * Sites コンソールでソースコンテンツをナビゲートする際に、**参照**&#x200B;パネルの「**ローンチ**」セクションの下部にある「**ローンチコンソール**」をクリックします。
 
@@ -116,6 +120,3 @@ ht-degree: 100%
 * 右上の「**ローンチ**」ボタン（Sites コンソールでローンチコンテンツをナビゲーションする場合）。
 
   ![Sites コンソールのローンチオプション](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
-
-* または、例えば次のように指定します。
-  `https://<host>:<port>/libs/launches/content/launches.html`

@@ -5,7 +5,7 @@ exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 100%
@@ -74,7 +74,9 @@ ht-degree: 100%
      >[!NOTE]
      >
      >ここでは単一のローンチについて説明します。ネストされたローンチがある場合は、[ネストされたローンチの昇格](#promoting-a-nested-launch)を参照してください。
+
 1. 「**次へ**」を選択して、続行します。
+
 1. 昇格させるページを確認できます。これは、選択したページの範囲によって変わります。
 
    ![昇格の確認](/help/sites-cloud/authoring/assets/launches-promote-review.png)
