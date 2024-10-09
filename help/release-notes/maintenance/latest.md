@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: ee3e1bedddddff0aa41665359a91a0de48fd19c8
+source-git-commit: ea7e027b5247b64e78da1d14e4e602f39a37e4bd
 workflow-type: tm+mt
-source-wordcount: '1411'
-ht-degree: 90%
+source-wordcount: '836'
+ht-degree: 27%
 
 ---
 
@@ -16,120 +16,70 @@ ht-degree: 90%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 17964 {#release-17964}
+## リリース 18099 {#release-18099}
 
-2024年9月25日（PT）に公開されたメンテナンスリリース 17964 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 17689 でした。リリース 17882 は、問題が発生したことにより非公開になりました。
+2024年10月9日（PT）に公開された、メンテナンスリリース 18099 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 17964 でした。
 
 2024.10.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
 
-### 機能強化 {#enhancements-17964}
+### 機能強化 {#enhancements-18099}
 
-* ASSETS - 37750：[優先度 4] [GraphQL] DM scene7 URL のサポート：画像のスマート切り抜き。
-* CQ - 4354583：[AEMaaCS] Adobe パイプラインを使用して翻訳プロセスイベントを送信。
-* CQ - 4357642：OOTB コネクタで MSFT 資格情報を更新。
-* CQ - 4358217：リクエストエンティティからリクエスト本文をシリアル化を解除。
-* CQ - 4358342：RequestProcessors を 1 つの HTTP メソッドにのみ登録。
-* FORMS - 10781：ルールエディターを強化して、パネル内の次／前の項目のルールを作成。
-* FORMS - 14595：[ブラウザーレス機能]ブラウザーレスレンダリングの DoR を計算するのに事前入力されたデータを使用する際、DoR に値がない。
-* FORMS - 15619：AEM Forms で翻訳キットを更新。
-* FORMS - 16113：[Adobe Sign] 別のユーザーによる契約ステータスの更新ができない。
-* FORMS - 16155：[ルールエディター]非同期関数を実装。
-* GRANITE - 53872：IMS クライアント ID の新しい環境変数を追加。
-* SITES - 23738：コアコンポーネント 2.27.0 をリリース。
-* SITES - 16610：コンテンツフラグメント：ローンチの詳細エンドポイントを取得。
-* SITES - 16614：コンテンツフラグメント：ローンチのエンドポイントをリベース。
-* SITES - 16615：コンテンツフラグメント：ローンチのエンドポイントを昇格。
-* SITES - 24215：コンテンツフラグメント：ローンチのソースエンドポイントの取得を実装。
-* SITES - 20336：コンテンツフラグメント：コンテンツフラグメントモデルを削除する際の検証を改善。
-* SITES - 21090：コンテンツフラグメント：数値フィールドの小数の最小値／最大値のサポートを追加。
-* SITES - 21658：コンテンツフラグメント：UUID 参照を使用するようにアップグレード。
-* SITES - 23054：コンテンツフラグメント：コンテンツフラグメントモデルをコピー。
-* SITES - 23264：コンテンツフラグメント：モデルの静的スキーマを作成。
-* SITES - 23265：コンテンツフラグメント：UI スキーマ GET エンドポイントを通じてモデルの静的スキーマを公開。
-* SITES - 23266：コンテンツフラグメント：コンテンツフラグメントモデルに制約を追加する機能。
-* SITES - 23778：コンテンツフラグメント：コンテンツフラグメントモデルの検索では、公開されたことのないモデルを検索できるようにする必要がある。
-* SITES - 23335：コンテンツフラグメント：外部アセット参照のサポートを追加。
-* SITES - 24626：コンテンツフラグメント：RTC：UUID 移行の権限：2。
-* SITES - 24786：コンテンツフラグメント：`referencesTree` エンドポイントの機能強化。
-* SITES - 24833：コンテンツフラグメント：許可された HTML タグのリストに対する HTML 入力の検証を削除。
-* SITES - 23380：GraphQL：適切な API を使用してアセットのメタデータを読み取り。
-* SITES - 22864：[Edge Delivery] 新しい AEM コンテンツ構造統合を備えたユニバーサルエディター（2024年下半期）。
-* SITES - 23584：基盤コンポーネントのテストが Java 17 で失敗。
-* SITES - 23662：イベンティング：公開リクエストをトリガーするユーザーを、サーバーログの JCR ログステートメントから抽出できない。
-* SITES - 23301：コンテンツフラグメントの翻訳を作成する際に、フォルダー構造を作成する新しいワークフローを開始するサポートを追加。
-* SITES - 23336：コンテンツフラグメント：外部アセット参照のサポートを追加。
-* SITES - 24091：MSM コンテンツパッケージ分割：メイン。
-* Sites - 24114：isSourceRenderCondition：エラーログメッセージをデバッグに減らす。
-* Sites - 24166：タッチ UI エディターのリモートアセット軽減。
-* Sites - 24409：すべてのリクエストプロセッサーを 1 つの HTTP メソッドにのみ登録する。
-* Sites - 25008：PersistenceExceptions と権限の問題に関する処理を改善する。
-* SITES - 24821: aem.page / aem.live をデフォルトにします。
+* ASSETS-43015：最新の auth.ims バンドルに更新します。
+* ASSETS-41684:src/main/features/docker/ethos/base-ims-oauth.jsonを更新します。
+* ASSETS-38322:AEMの http リクエストイベントを有効化。
+* ASSETS-41684: OOB OSGI 設定を追加して、Assets、Foundation、Sites およびForms用のグループマッピングに対して FI を定義します。
+* ASSETS-41448：グループマッピングに対する FI をサポートするように、auth.ims バンドルを更新します。
+* CQ-4356633:「コンテンツのみ」のツールチップに文字を追加。
+* SITES-23584：基盤コンポーネントテストが Java 17 で失敗する。
+* GUIDES-19069:aem guides アドオンの guidesPeerLinkIndex を追加。
+* GRANITE-54300：Oak を最新のパブリックリリース（1.70.0）に更新します。
+* GRANITE-54274:Firefly IMS クライアントを受け入れます。
+* GRANITE-36205：内部の Oak リリースバージョンを最新に更新します。
+* GRANITE-45298：低い権限を持つユーザーは、JS を使用せずに XSS 形式で悪意のあるフォームを作成することで、RCE を取得できます。
+* GRANITE-54266：実稼動 SDK に検索 Suggestor サービスがない。
+* GRANITE-50948 - リポジトリサービスをAEMに統合ローカル開発用に別のリポジトリサービスを追加します。
+* GRANITE-53966：コンテンツ配布に別のスレッドプールを使用する。
+* GRANITE-53514:Treeactivation 1.0.26。
+* GRANITE-54054:com.adobe.granite.repository.impl.SystemUserValidation warnOnly の環境変数。
+* GRANITE-50948：リポジトリサービスをAEMに統合リポジトリサービスをサポート。
+* GRANITE-52454：サポートヘルパー 0.1.2 の追加
+* GRANITE-53514:Treeactivation 1.0.26。
+* GRANITE-54038:Creative Cloudのエンタープライズ IMS クライアントをAEM 許可リストに加える IMS クライアントに追加します。
+* GRANITE-36205：内部の Oak リリースバージョンを最新に更新します。
+* GRANITE-53485: レプリケーション Azure Blob Storage のサービスプリンシパル認証をサポートします。
+* GRANITE-54006:Jackson を 2.17.2 に更新します。
+* GRANITE-53287: セキュリティ権限の統合テストバージョンを更新しています。
+* GRANITE-53914:Java 17 でモジュールバージョンを更新した場合、プラットフォームテストが失敗します。
+* GRANITE-53870：クイックスタートの最大 JVM バージョン数のチェックをスキップする内部メカニズムを作成します。
+* GRANITE-52454：サポートヘルパーのアップグレード AEMaaCS の最新リリースを使用するためのサポートヘルパーのアップグレード GRANITE-52454。
+* SKYOPS-85335:org.apache.sling.jcr.repoinit を 1.1.52 に更新します。
+* SKYOPS-85336:Sling Commons Threadsを 3.3.0 に更新します。
+* SKYOPS-76378:i18n での ResourceBundle 登録/登録解除のスレッドの安全性を向上しました。
+* SKYOPS-84951：可変コンテンツチェックサム生成コードが正しくありません。
+* SKYOPS-82383: &#39;helm-values&#39; convert-merge-analyze の結果をコマンド実行記述子に公開します。
+* SKYOPS-86329:java 21 sdk サポートのプラットフォームテストモジュールのバージョンを更新しています。
+* SKYOPS-69768: SlingModels は ResourceResolvers を逆シリアル化しません。
+* SKYOPS-84810: RDE の起動時に&quot;40-initialize-publish.sh&quot;の実行をスキップします。
+* SKYOPS-79285:Sling XSS を 2.4.2 に更新する
 
-### 修正された問題 {#fixed-issues-17964}
+### 修正された問題 {#fixed-issues-18099}
 
-* CQ - 4356887：Akamai Technologies Inc.の翻訳プロジェクトステータスの不整合。
-* CQ - 4357878：翻訳フレームワークが、ベンダーエラーの翻訳時にエラー状態を設定しない。
-* CQ - 4358028：サムネールがアップロードされている場合に、プロジェクトを作成できなかった。
-* CQ - 4358290：公開済みページでターゲット設定が機能しない。
-* FORMS - 13173：アダプティブフォーム／ルールエディター／オブジェクトをドロップフィールドのドロップダウンリストの位置がずれている。
-* FORMS - 13873：コンポーネント名に AFv2（「–」）があると、ルールが失敗する。
-* FORMS - 14340：FormsAndDocumentOmniSearchHandler および CloudStorageSubmitActionInserter のインスタンス化中にエラーが発生する。
-* FORMS - 15363：ルールエディターに表示される名前。
-* FORMS - 15381：認証範囲に関するメッセージの UI 拡張。
-* FORMS - 15595：AEM Form TnC コンポーネントの同意テキスト改行の問題。
-* FORMS - 15623：AEMaaCS Forms - Dynamics で複数のテーブルを 1 つのPOSTで更新する代替方法。
-* FORMS - 15682：AEM Forms - DOR を Dynamics FDM にバインドできない。
-* FORMS - 15799：Adobe Sign GovCloud 署名ページが iframe でレンダリングされないことに注意してください。
-* FORMS - 15835：送信後のフォーム URL 書き換えの問題。
-* FORMS - 16091：再構築された Binary.java の使用。
-* FORMS - 16096：Forms ユーザーは、restendpoint ダイアログへのアクセス権を持っていない。
-* FORMS - 16139：コアコンポーネントフォームでの DoR に必要なログの追加。
-* FORMS - 6935：アクティブコンポーネントの状態では、3 対 1 のコントラスト比が不足している。
-* FORMS - 7018：空の要素がフォーカスを受け取る。
-* GRANITE - 53028：ExternalProcessPollingHandler のNPE。
-* GRANITE - 53907：サービスユーザーをワークフロースーパーユーザーとして識別できない。
-* Sites - 24405：コンテンツフラグメント：列挙型の拡張情報にはより高い冗長性が必要
-* Sites - 23024：コンテンツフラグメント：GET フラグメントで、定義済みリストが locked: true を返さない。
-* SITES - 23269：コンテンツフラグメント：コンテンツフラグメントを作成すると、ロックされたフィールドを設定できる。
-* SITES - 23337：コンテンツフラグメント：`body` を含むバッチエンドポイントがキャスト例外で失敗する。
-* SITES - 23474：コンテンツフラグメント：ページネーションでは、コンテンツフラグメントの検索時に壊れたリソースを除外する必要がある。
-* SITES - 23615：コンテンツフラグメント：コンテンツフラグメントコピーの AuthoringInfo が更新されない
-* SITES - 23668：コンテンツフラグメント：マルチフィールドを含むパッチライブコピーが 400 で失敗する
-* SITES - 23695：コンテンツフラグメント：タブの説明が UiSchema では使用できない
-* SITES - 23704: コンテンツフラグメント：_extendedInfo で複数値の列挙がサポートされない
-* SITES - 23781：コンテンツフラグメント：列挙フィールドで値の重複が許可されない
-* SITES - 24150：コンテンツフラグメント：コンテンツフラグメントのバージョン作成に関するオーサリングデータが欠落している
-* SITES - 24230：コンテンツフラグメント：コンテンツフラグメントモデルの検索における `modified` レプリケーションステータス後のフィルタリングを修正
-* SITES - 24233：コンテンツフラグメント：`publishedBy` によるフィルタリングでは、コンテンツフラグメントモデルの検索に未公開のリソースを含めることができる
-* SITES - 24355：コンテンツフラグメント：ライブ関係は、フォルダーで作成したコンテンツフラグメントでは考慮されない
-* SITES - 24816：コンテンツフラグメント：ValidationStatus メッセージの順序に一貫性がない。
-* SITES - 23896：イベンティング：ページ移動イベントと共に、さらに多くのイベントが発生する
-* SITES - 23899：イベンティング：ページイベントが遅延するか、まったく生成されない
-* SITES - 23961：イベンティング：設定フォルダーが存在する場合、参照を含むコンテンツフラグメントモデルの作成が失敗する
-* SITES - 23963：イベンティング：ページ削除イベントが表示されない場合がある
-* SITES - 23443:GraphQL:GraphQL Cursor クエリの一貫性のない動作。
-* SITES - 10994：キーボードのフォーカス順序が論理的ではない。
-* SITES - 16357：AEM：「Analytics を設定」タブで Sites メニューからボタンが切り捨てられる。
-* SITES - 19836：コンテナ内のゴーストコンポーネントが、パブリッシュインスタンスとプレビューインスタンスに表示される。
-* SITES - 22348：プロジェクトのライブコピーが 100 個を超える場合、ライブコピーの概要ページの読み込みに失敗する。
-* SITES - 22960：ContentFragmentModelOmniSearchHandler でリソースリゾルバーが閉じられない。
-* SITES - 23284：URL エンコーディングにより、パスブラウザーダイアログが空白になる。
-* SITES - 23505：ページを別の場所に移動すると、コンポーネントに誤った URL が表示される。
-* SITES - 23574：多くのページで現在のバージョンをプレビュー／比較できない。
-* SITES - 23585：cq:responsive ノードを持つコンポーネントの継承の復元に関する問題。
-* SITES - 23650：AEM オーサー環境における受信リンク数の不一致。
-* SITES - 23659：コンテンツ言語サーブレットの回帰が FT_* SITES - 9757 の切り替えによって発生。
-* SITES - 23759：エクスペリエンスフラグメントで追加したアセットがローンチで公開されない。
-* SITES - 24025：AEM の 302 リダイレクトにより、パブリック DNS ではなく内部 DNS を使用して場所ヘッダーが返される。
-* SITES - 24036：AEM RTE で ASCII 形式の文字の保持に関する調査が必要。
-* SITES - 24317：プロキシ設定が基本認証で機能しない。
-* SITES - 24918：専用の ip エグレスを使用した際に 504 エラーが返される問題を修正しました。
+* CNTBF-298: CC で書き出されたパッケージから jcr:uuid を削除します。
+* SKYOPS-83910:SKYOPS-82371 で見つかった同時実行の問題を修正しました。
+* GRANITE-52876:com.adobe.granite.ui.content 0.8.1448 を更新します。
+* GRANITE-53088:SITES-11992 の修正によって発生したリグレッション。
+* GUIDES-14445：ネイティブPDFの生成が失敗し、Node.js の依存関係の取得に関連するエラーが発生します。
+* GUIDES-16961:`<conref>` のタイトルが、web エディターのベースラインダッシュボードと翻訳ダッシュボードで解決されない。
+* GUIDES-17283:「**topicmeta に追加されたメタデータを使用**」オプションを選択すると、メタデータプロパティがネイティブPDF出力のドキュメントのプロパティに反映されません。
+* GUIDES-17793：公開済みコンテンツの一括アクティベーション中に、参照されたPDFが **一括Publish ダッシュボード** からアクティベートされない。
 
-### 既知の問題 {#known-issues-17964}
+リリースで修正された新機能および機能強化ガイドの機能と問題について詳しくは、[Experience Manager Guides リリースロードマップ ](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) を参照してください。
+
+### 既知の問題 {#known-issues-18099}
 
 * FORMS - 15818：コンポーネント記述子エントリ `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` が見つからないというステートメントがサーバーログに記録される。これらは無害なログステートメントです。
 
-### 廃止された機能と API {#deprecated-17964}
+### 廃止された機能と API {#deprecated-18099}
 
 AEM as a Cloud Service で廃止および削除された機能と API について詳しくは、[廃止および削除された機能と API](/help/release-notes/deprecated-removed-features.md) ドキュメントを参照してください。
 
@@ -145,15 +95,19 @@ AEM as a Cloud Service で廃止および削除された機能と API につい�
 
 Adobeでは現在、`com.day.cq.wcm.api` のアップデートを行っています。 メソッドやクラスの一部は、現在のリリースでは `@Deprecated` としてマークされています。 これらは今後のリリースで削除される予定です。 推奨の代替案に切り替えることを検討してください。
 
-### セキュリティ修正 {#security-17964}
+#### org.apache.jackrabbit.oak.plugins.blob {#org.apache.jackrabbit.oak.plugins.blob}
 
-AEM as a Cloud Service では、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。このメンテナンスリリースでは、特定された 16 つの脆弱性に対処し、堅牢なシステム保護に対する取り組みを強化しています。
+* GRANITE-54165：パブリック API の org.apache.jackrabbit.oak.plugins.blob を非推奨（廃止予定）にします。
 
-### 組み込みテクノロジー {#embedded-tech-17964}
+### セキュリティ修正 {#security-18099}
+
+AEM as a Cloud Service では、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。このメンテナンスリリースでは、特定された 2 つの脆弱性に対処し、堅牢なシステム保護に対する取り組みを強化しています。
+
+### 組み込みテクノロジー {#embedded-tech-18099}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
-| AEM Oak | 1.68.0 | [Oak API 1.68.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.68.0/index.html) |
+| AEM Oak | 1.70.0 | [Oak API 1.70.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.70.0/index.html) |
 | AEM SLING API | 2.27.6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.24-1.4.0 | [HTML テンプレート言語仕様](https://github.com/adobe/htl-spec) |
 | AEM コアコンポーネント | 2.27.0 | [AEM WCM コアコンポーネント](https://github.com/adobe/aem-core-wcm-components) |
