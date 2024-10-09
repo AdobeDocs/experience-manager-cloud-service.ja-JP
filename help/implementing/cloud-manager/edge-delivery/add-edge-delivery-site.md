@@ -3,10 +3,10 @@ title: Cloud Manager への Edge Delivery サイトの追加
 description: 実稼動プログラムまたはサンドボックスプログラムにEdge Delivery サイトを追加する方法を説明します。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f684a52ca3b51d1aa4412122f7ad28dde3e2672f
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 5%
+source-wordcount: '498'
+ht-degree: 6%
 
 ---
 
@@ -56,6 +56,6 @@ Edge Delivery サイトをCloud Managerに追加するには、[Edge Delivery �
 
 リポジトリが検証されると、Edge Delivery サイトテーブル内のステータスが緑色の円に変わり、その内側に白いチェックマークが表示されます。
 
-同じテーブルで、「![Edge Delivery サイトに関する情報」をクリックします。リポジトリの確認済み URL や、プレビューおよび実稼動 web サイトの URL など、サイトに関する詳細を表示で ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) ます。
+同じ表で、「![Edge Delivery サイトに関する情報 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)」をクリックすると、リポジトリの検証済み URL やプレビューおよび実稼動 web サイトの URL など、サイトに関する詳細が表示されます。
 
 

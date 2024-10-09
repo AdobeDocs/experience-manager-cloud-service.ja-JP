@@ -1,14 +1,14 @@
 ---
-title: Java™ 機能テスト
-description: AEM as a Cloud Service 用の Java™ 機能テストの作成方法を説明します
+title: Java &trade；機能テスト
+description: AEM as a Cloud Serviceの Java &trade；機能テストの作成方法を説明します
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
-source-wordcount: '878'
-ht-degree: 100%
+source-git-commit: f60dc00fc031fa7ef73a18daec9c6c0e5570b018
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 79%
 
 ---
 
@@ -34,7 +34,7 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 アドビが製品機能テストの作成に使用するのと同じツールを、カスタム機能テストの作成に使用できます。テストの作成方法の例として、GitHub の[製品機能テスト](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)を参照してください。
 
-カスタム機能テストのコードは、プロジェクトの `it.tests` フォルダーにある Java™ コードです。すべての機能テストを含んだ 1 つの JAR が生成されます。ビルドで複数のテスト JAR が生成される場合、どの JAR が選択されるかは非決定的です。テスト JAR がゼロになる場合、テスト手順はデフォルトで合格します。テストのサンプルについては、[AEM プロジェクトのアーキタイプ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)を参照してください。
+カスタム機能テストのコードは、プロジェクトの `it.tests` フォルダーにある Java™ コードです。すべての機能テストを含んだ 1 つの JAR が生成されます。ビルドで複数のテスト JAR が生成される場合、どの JAR が選択されるかは非決定的です。テスト JAR がゼロになる場合、テスト手順はデフォルトで合格します。テストのサンプルについては、[AEM プロジェクトのアーキタイプ ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) を参照してください。
 
 テストは、少なくとも 2 つのオーサーインスタンス、2 つのパブリッシュインスタンス、Dispatcher 設定など、アドビが維持管理するテストインフラストラクチャで実行されます。つまり、この設定では、カスタム機能テストは AEM スタック全体に対して実行されます。
 
@@ -106,9 +106,9 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 | タイプ | 値 | 説明 |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0.5 | テスト実行ごとに確保される CPU 時間の量です。 |
-| メモリ | 0.5 Gi | テストに割り当てられたメモリの量（値は GiB 単位） |
-| タイムアウト | 30 m | テストが終了するまでの期間。 |
-| 推奨期間 | 15 m | アドビは、この時間を超えないようにテストを書き込むことをお勧めします。 |
+| メモリ | 0.5 Gi | テストに割り当てられたメモリの量（値は GB 単位）です。 |
+| タイムアウト | 30 m | テストを停止するまでの制限時間。 |
+| 推奨期間 | 15 m | Adobeは、この期間を超えないようにテストを作成することをお勧めします。 |
 
 >[!NOTE]
 >
@@ -118,8 +118,7 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 * aem-cloud-testing-clients：
 
-機能テストの実行に使用するコンテナ化されたインフラストラクチャの今後の変更では、カスタム機能テストで使用する [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) ライブラリをバージョン **1.2.1** 以上に更新する必要があります 
-`it.tests/pom.xml` 内の依存関係が更新されていることを確認します。
+機能テストを実行するためのコンテナ化されたインフラストラクチャの今後の変更では、カスタム機能テスト内の [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) ライブラリをバージョン **1.2.1** 以降に更新する必要があります。 `it.tests/pom.xml` ファイル内の依存関係が、それに応じて更新されていることを確認します。
 
 ```
 <dependency>
@@ -132,7 +131,7 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 >[!NOTE]
 >
 >この変更は、2024年4月6日（PT）より前に実行する必要があります。
->依存関係ライブラリの更新に失敗すると、「カスタム機能テスト」手順でパイプラインにエラーが発生します。
+>依存関係ライブラリを更新しないと、「カスタム機能テスト」ステップでパイプラインエラーが発生する可能性があります。
 
 ### ローカルテストの実行 {#local-test-execution}
 
@@ -140,7 +139,7 @@ Cloud Manager パイプラインで機能テストをアクティブ化する前
 
 #### IDE での実行 {#running-in-an-ide}
 
-テストクラスは JUnit テストなので、Eclipse、IntelliJ、NetBeans などの主要な Java™ IDE から実行できます。製品機能テストとカスタム機能テストはどちらも同じテクノロジーに基づいているので、製品テストをカスタムテストにコピーすることで、両者をローカルで実行できます。
+テストクラスは JUnit テストなので、Eclipse、IntelliJ、NetBeans などの主要な Java ™ IDE から実行できます。 製品機能テストとカスタム機能テストはどちらも同じテクノロジーに基づいているので、製品テストをカスタムテストにコピーすることで、両者をローカルで実行できます。
 
 ただし、これらのテストを実行する際は、`aem-testing-clients`（および基礎となる Sling Testing Client）ライブラリで想定される様々なシステムプロパティを設定する必要があります。
 
@@ -148,15 +147,15 @@ Cloud Manager パイプラインで機能テストをアクティブ化する前
 
 | プロパティ | 説明 | 例 |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
-| `sling.it.instances` | インスタンスの数は、クラウドサービスに合わせて `2` に設定する必要があります | `2` |
-| `sling.it.instance.url.1` | オーサー URL に設定する必要があります。 | `http://localhost:4502` |
-| `sling.it.instance.runmode.1` | 最初のインスタンスの実行モードは、`author` に設定する必要があります | `author` |
-| `sling.it.instance.adminUser.1` | 作成者の管理者ユーザーに設定する必要があります。 | `admin` |
-| `sling.it.instance.adminPassword.1` | 作成者の管理者パスワードに設定する必要があります。 |                         |
-| `sling.it.instance.url.2` | パブリッシュ URL に設定する必要があります。 | `http://localhost:4503` |
-| `sling.it.instance.runmode.2` | 2 番目のインスタンスの実行モードは、`publish` に設定する必要があります | `publish` |
-| `sling.it.instance.adminUser.2` | パブリッシュの管理者ユーザーに設定する必要があります。 | `admin` |
-| `sling.it.instance.adminPassword.2` | パブリッシュの管理者パスワードに設定する必要があります。 |                         |
+| `sling.it.instances` | インスタンスの数。クラウドサービスに一致させる場合は、`2` に設定する必要があります。 | `2` |
+| `sling.it.instance.url.1` | オーサー URL に設定します。 | `http://localhost:4502` |
+| `sling.it.instance.runmode.1` | 最初のインスタンスの実行モード。 `author` に設定します。 | `author` |
+| `sling.it.instance.adminUser.1` | オーサー管理者ユーザーに設定します。 | `admin` |
+| `sling.it.instance.adminPassword.1` | オーサー管理者パスワードに設定します。 |                         |
+| `sling.it.instance.url.2` | パブリッシュ URL に設定します。 | `http://localhost:4503` |
+| `sling.it.instance.runmode.2` | 2 番目のインスタンスの実行モード。 `publish` に設定します。 | `publish` |
+| `sling.it.instance.adminUser.2` | パブリッシュ管理者ユーザーに設定します。 | `admin` |
+| `sling.it.instance.adminPassword.2` | 管理者パスワードを「公開」に設定します。 |                         |
 
 
 

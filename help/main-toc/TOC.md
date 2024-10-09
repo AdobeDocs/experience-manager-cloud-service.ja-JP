@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0b69e7ff3b35685ff9ac899eb19c3b58d7f37b41
-workflow-type: ht
-source-wordcount: '5675'
-ht-degree: 100%
+source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+workflow-type: tm+mt
+source-wordcount: '5678'
+ht-degree: 99%
 
 ---
 
@@ -1071,7 +1071,7 @@ ht-degree: 100%
    + [バリエーションを生成](/help/generative-ai/generate-variations.md)
 + 実装 {#implementing}
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
-   + Cloud Manager の使用 {#using-cloud-manager}
+   + Cloud Manager {#using-cloud-manager} の使用
       + [ナビゲーション](/help/implementing/cloud-manager/navigation.md)
       + プログラム {#programs}
          + [プログラムとプログラムタイプ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
@@ -1101,13 +1101,13 @@ ht-degree: 100%
          + [GitHub チェック注釈](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [環境変数](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI／CD パイプライン {#cicd-pipelines}
-         + [はじめに](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+         + [CI/CD パイプラインの概要](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [パイプラインの管理](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [パイプライン変数](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md)
-      + テスト結果について {#test-results}
+      + テスト結果の理解 {#test-results}
          + [概要](/help/implementing/cloud-manager/overview-test-results.md)
          + [コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)
          + [カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)

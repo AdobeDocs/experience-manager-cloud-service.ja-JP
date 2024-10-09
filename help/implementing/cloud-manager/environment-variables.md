@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -90,7 +90,7 @@ ht-degree: 100%
 
 1. 必要な設定の変更を行ったら、「**保存**」を選択します。
 
-[変数を追加する場合と同様に、](#add-variables) ステータスが **更新中** のインジケーターがテーブルの上部と新しく更新された変数の横に表示され、環境が設定で更新されていることを示します。完了すると、更新された環境変数がテーブルに表示されます。
+[ 変数を追加する場合と同様に ](#add-variables)、ステータスが **更新中** のインジケーターがテーブルの上部と新しく更新された変数の横に表示され、環境が設定で更新されていることを示します。 完了すると、更新された環境変数がテーブルに表示されます。
 
 >[!TIP]
 >

@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+workflow-type: tm+mt
 source-wordcount: '4513'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -794,7 +794,7 @@ Experience Manager コンテンツリポジトリ内の `/libs` コンテンツ�
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2019.6.0
 
-[パッケージには重複する OSGi 設定を含めない](#oakpal-package-osgi)と同様に、これも複雑なプロジェクトでよく発生する問題です。複数の異なるコンテンツパッケージに同じノードパスが書き込まれるケースです。コンテンツパッケージの依存関係を使用すると、一貫性のある結果を得ることができますが、その際には、パッケージがまったく重複しないようにすることをお勧めします。
+[ パッケージには重複する OSGi 設定を含めない ](#oakpal-package-osgi) と同様に、これも複雑なプロジェクトでよく発生する問題です。複数の異なるコンテンツパッケージに同じノードパスが書き込まれるケースです。 コンテンツパッケージの依存関係を使用すると、一貫性のある結果を得ることができますが、その際には、パッケージがまったく重複しないようにすることをお勧めします。
 
 ### デフォルトのオーサリングモードをクラシック UI にしない {#oakpal-default-authoring}
 
@@ -853,7 +853,7 @@ Cloud Service デプロイメントモデルとの互換性を保つには、個
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-Experience Manager クライアントライブラリには、画像やフォントなどの静的リソースが含まれている場合があります。[プリプロセッサーの使用](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)のドキュメントで説明しているように、プロキシ化されたクライアントライブラリを使用する場合、パブリッシュインスタンスで効果的に参照するために、これらの静的リソースを `resources` という名前の子フォルダーに格納する必要があります。
+Experience Manager クライアントライブラリには、画像やフォントなどの静的リソースが含まれている場合があります。[ プリプロセッサーの使用 ](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) ドキュメントで説明しているように、プロキシ化されたクライアントライブラリを使用する場合、パブリッシュインスタンスで効果的に参照するために、これらの静的リソースを `resources` という名前の子フォルダーに格納する必要があります。
 
 #### 非準拠コード {#non-compliant-proxy-enabled}
 

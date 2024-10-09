@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 98%
+source-wordcount: '1108'
+ht-degree: 94%
 
 ---
 
@@ -56,7 +56,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 「**詳細を表示**」をクリックすると、[パイプライン実行の詳細](#view-details)が表示されます。
 
-また、パイプラインの省略記号ボタンをクリックして、パイプラインの[編集](#editing-pipelines)や[実行のキャンセル](#cancel)など、パイプラインの状態に応じた追加のアクションを実行することもできます。
+また、パイプラインの省略記号ボタンをクリックして、パイプラインの状態に適した追加のアクション（[ 編集 ](#editing-pipelines) 実行のキャンセル [ を実行 ](#cancel) することもできます。
 
 ![パイプラインアクション](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
@@ -98,7 +98,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動し、編集するパイプラインの横にある省略記号ボタンをクリックして、メニューから「**編集**」を選択します。
 
-1. 「**実稼動パイプラインを編集**」または「**実稼動以外のパイプラインを編集**」ダイアログボックスが表示され、パイプラインの作成時に入力したのと同じ詳細を編集できます。
+1. **実稼動パイプラインを編集** または **実稼動以外のパイプラインを編集** ダイアログボックスが表示され、パイプラインの作成時に入力したのと同じ詳細を編集できます。
 
    * パイプラインで使用できるフィールドと設定オプションについて詳しくは、次のページを参照してください。
       * [実稼動パイプラインの設定](configuring-production-pipelines.md)

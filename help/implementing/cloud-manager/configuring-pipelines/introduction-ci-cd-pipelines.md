@@ -1,15 +1,15 @@
 ---
-title: CI/CD パイプライン
+title: CI/CD パイプラインの概要
 description: Cloud Manager の CI/CD パイプラインと、CI/CD パイプラインを使用してコードを効率的にデプロイする方法について説明します。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7f6e8f91716b679f9715f9df33ae59aa5bf70751
+source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 100%
+source-wordcount: '1488'
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Cloud Manager の CI/CD パイプライン（継続的統合／継続的配信）と、CI/CD パイプラインを使用してコードを効率的にデプロイする方法について説明します。
 
-## はじめに {#introduction}
+## CI/CD パイプラインの概要 {#introduction}
 
 Cloud Manager の CI／CD パイプラインは、ソースリポジトリーからコードを作成して環境にデプロイするためのメカニズムです。パイプラインは、Git などのソースコードリポジトリからのプルリクエスト（つまり、コード変更）などのイベントでトリガーできます。または、リリース頻度に合わせた定期的なスケジュールでトリガーすることもできます。
 

@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 7c195e5640f828d2c59dbabd8f29127692788576
-workflow-type: ht
-source-wordcount: '9402'
-ht-degree: 100%
+source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+workflow-type: tm+mt
+source-wordcount: '10490'
+ht-degree: 99%
 
 ---
 
@@ -66,17 +66,17 @@ ht-degree: 100%
 
    * ビデオのメタデータを操作します。
 
-      * タイトル、説明、タグ、カスタムメタデータフィールドなど、ビデオのプロパティを編集：
-        [ビデオのプロパティの編集](/help/assets/manage-digital-assets.md#editing-properties)
+      * タイトル、説明、タグ、カスタムメタデータフィールドなど、ビデオのプロパティを編集します。
+        [ビデオのプロパティを編集します](/help/assets/manage-digital-assets.md#editing-properties)。
 
-      * [デジタルアセット用のメタデータの管理](/help/assets/manage-metadata.md)
+      * [デジタルアセットのメタデータの管理](/help/assets/manage-metadata.md)
       * [メタデータスキーマ](/help/assets/metadata-schemas.md)
 
    * ビデオをレビューおよび承認し、注釈を付け、完全なバージョン管理を維持します。
 
-      * [ビデオへの注釈](/help/assets/manage-video-assets.md#annotate-video-assets)または[アセットへの注釈](/help/assets/manage-digital-assets.md#annotating)
+      * [ ビデオへの注釈 ](/help/assets/manage-video-assets.md#annotate-video-assets) または [ アセットへの注釈 ](/help/assets/manage-digital-assets.md#annotating)
 
-      * [バージョンの作成](/help/assets/manage-digital-assets.md#asset-versioning)
+      * [バージョンを作成](/help/assets/manage-digital-assets.md#asset-versioning)
       * [アセットでのワークフローの開始](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
 
       * [フォルダーのアセットのレビュー](/help/assets/bulk-approval.md)
@@ -520,7 +520,7 @@ Dynamic Media では、次のサポートを有効にすることができます
 
 * DASH
 * マルチキャプションとオーディオトラック
-* AI 生成キャプション（早期アクセス）
+* AI で生成されたキャプション （限定提供）
 
 アドビカスタマーサポートケースの作成と送信によります。
 
@@ -530,7 +530,7 @@ Dynamic Media では、次のサポートを有効にすることができます
 | --- | --- |
 | DASH | DASH（HTTP での動的アダプティブストリーミング）はビデオストリーミングの国際標準であり、様々なビデオビューアーで広く採用されています。アカウントで DASH が有効になっている場合は、アダプティブビデオストリーミング用に DASH または HLS のいずれかを選択できます。ビューアのプリセットで再生タイプとして「**[!UICONTROL 自動]**」が選択されていると、プレーヤー間の自動切り替えで両方を選択できます。<br>アカウントで DASH を有効にする場合の主なメリットには、次のようなものがあります。<br>• アダプティブビットレートストリーミング用に DASH ストリームビデオをパッケージ化します。この方法では配信の効率が向上します。アダプティブストリーミングにより、顧客に最適な視聴エクスペリエンスが提供されます。<br>• Dynamic Media プレイヤーでブラウザーに最適化されたストリーミングにより、HLS と DASH のストリーミングを切り替え、最高のサービス品質を確保できます。Safari ブラウザーを使用すると、ビデオプレーヤーが HLS に自動的に切り替わります。<br>• ビデオビューアプリセットを編集して、優先ストリーミング方式（HLS または DASH）を設定できます。<br>• 最適化されたビデオエンコーディングにより、DASH 機能を有効にしながら、追加のストレージを使用しなくて済みます。HLS と DASH の両方に対して 1 つのビデオエンコーディングセットが作成され、ビデオの保存コストが最適化されます。<br>• 顧客にとってビデオ配信がより利用しやすくなります。<br>• API を使用してストリーミング URL を取得することもできます。 |
 | マルチキャプションとオーディオトラック | 複数のキャプションとオーディオトラックのサポートが自動的に有効になるというメリットが得られます。有効にすると、以降にアップロードするすべてのビデオは、新しいバックエンドアーキテクチャで処理されるようになります。このアーキテクチャには、ビデオへの複数のキャプションおよびオーディオトラックを追加するサポートが含まれます。 |
-| AI 生成キャプション（早期アクセス） | AI を活用したビデオのキャプションを作成します。AI を使用して、ビデオのトランスクリプトを作成し、キャプションに変換します。タイムラインも定義されています。 |
+| AI で生成されたキャプション （限定提供） | AI を活用したビデオのキャプションを作成します。AI を使用して、ビデオのトランスクリプトを作成し、キャプションに変換します。タイムラインも定義されています。 |
 
 >[!IMPORTANT]
 >
@@ -545,7 +545,7 @@ Dynamic Media では、次のサポートを有効にすることができます
    * Cloud Service 環境（プログラム ID および環境 ID）。
    * Dynamic Media の会社アカウント名。
    * Dynamic Media の地域：北米（NA）、アジア太平洋（APAC）またはヨーロッパ中東アジア（EMEA）。
-   * AEM as a Cloud Service で、Dynamic Media アカウントで DASH、マルチキャプション、マルチオーディオトラック、AI 生成キャプション（早期アクセス）のサポートを有効にするように指定します。
+   * AEM as a Cloud Serviceで、Dynamic Media アカウントに対して DASH、マルチキャプション、マルチオーディオトラック、AI 生成キャプション（限定提供）のサポートを有効にするように指定します。
 
 1. アドビカスタマーサポートでは、リクエストが送信された順序に基づいて、お客様の待機リストに追加します。
 1. アドビがお客様のリクエストを処理する準備が整うと、カスタマーサポートがお客様に連絡し、有効化の目標日を調整して設定します。
@@ -556,132 +556,26 @@ Dynamic Media では、次のサポートを有効にすることができます
    * 通常通り、[ビデオプロファイル](/help/assets/dynamic-media/video-profiles.md)を作成します。
    * ビデオに[複数のキャプションとオーディオトラックを追加します](#add-msma)。
 
-## Dynamic Media におけるビデオの複数のキャプションとオーディオトラックのサポートについて{#about-msma}
 
-Dynamic Media で複数のキャプションとオーディオトラック機能を使用すると、プライマリビデオに複数のキャプションとオーディオトラックを簡単に追加できます。この機能により、グローバルなオーディエンスがビデオにアクセスできるようになります。1 つの公開済みプライマリビデオを複数の言語でグローバルオーディエンスに向けてカスタマイズし、様々な地理的地域のアクセシビリティガイドラインに従うことができます。また、作成者は、ユーザーインターフェイスの 1 つのタブからキャプションとオーディオトラックを管理することもできます。
-
-![Dynamic Media の「キャプションとオーディオトラック」タブと、アップロードされた .VTT キャプションファイルおよびビデオ用にアップロードされた .MP3 オーディオトラックファイルを示すテーブル。](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
-
-
-プライマリビデオに複数のキャプションとオーディオトラックを追加する際に考慮するユースケースとしては、次のようなものがあります。
-
-
-| タイプ | ユースケース |
-| --- | --- |
-| キャプション | 複数言語のサポート<br>アクセシビリティ用代替テキスト |
-| オーディオトラック | 複数言語のサポート<br>解説トラック<br>説明オーディオ |
-
-
-すべての [Dynamic Media でサポートされるビデオ形式](/help/assets/file-format-support.md)およびすべての Dynamic Media ビデオビューア（Dynamic Media Video_360 ビューアを除く）は、複数のキャプションおよびオーディオトラックでの使用がサポートされています。
-
-複数のキャプションとオーディオトラック機能を Dynamic Media アカウントで使用できるようにするには、アドビカスタマーサポートが機能の切替スイッチを有効（オン）にする必要があります。
-
-### ビデオに複数のキャプションとオーディオトラックを追加 {#add-msma}
-
-ビデオに複数のキャプションとオーディオトラックを追加する前に、次を確認しておく必要があります。
-
-* Dynamic Media が AEM 環境で設定されている。
-* [Dynamic Media ビデオプロファイルが、ビデオが取り込まれるフォルダーに適用されている](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders)。
-* [Dynamic Media アカウントでマルチキャプションおよびマルチオーディオトラックが有効になっている](/help/assets/dynamic-media/video.md#enable-dash)。
-
-追加されたキャプションはでサポートされる形式は、WebVTT および AdobeVTT 形式です。また、追加されたオーディオトラックファイルでサポートされる形式は、MP3 形式です。
-
->[!IMPORTANT]
->
->Dynamic Media アカウントで複数のキャプションおよびオーディオトラックのサポートを有効化する前にアップロードしたビデオは、[再処理する必要があります](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。このビデオ再処理の手順は、複数のキャプションとオーディオトラック機能を使用できるようにするために必要です。再処理後も、ビデオ URL は引き続き通常通り動作し、再生することができます。
-
-**ビデオに複数のキャプションとオーディオトラックを追加するには：**
-
-1. 既にビデオプロファイルが割り当てられている[フォルダーにプライマリビデオをアップロード](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)します。
-1. 複数のキャプションおよびオーディオトラックを追加する、アップロード済みビデオアセットに移動します。
-1. リスト表示またはカード表示のアセット選択モードで、ビデオアセットを選択します。
-1. ツールバーで、プロパティアイコン（中に「i」がある円）をタップします。
-
-   ![「アセットのプロパティ」ボタン&#x200B;](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*カード表示で選択したビデオアセット。*
-
-1. ビデオのプロパティページで、「**[!UICONTROL キャプションとオーディオトラック]**」タブを選択します。
-
-
-   >[!TIP]
-   >「[!UICONTROL キャプションとオーディオトラック]」タブが表示されない場合、次の 2 つのいずれかを意味します。
-   >* 選択したビデオが存在するフォルダーには、ビデオプロファイルが割り当てられていません。その場合は、[フォルダーへのビデオプロファイルの適用](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)を参照してください。
-   >* または、Dynamic Media でビデオを再処理する必要があります。その場合は、[フォルダー内の Dynamic Media アセットの再処理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)を参照してください。
-
-   上記のいずれかのタスクを完了したら、次の手順に戻ります。
-
-   ![アセットのプロパティ&#x200B;](/help/assets/dynamic-media/assets/msma-audiotracks.png)*ビデオのプロパティページの「キャプションとオーディオトラック」タブ。*
-
-1. （オプション）ビデオに 1 つまたは複数のキャプションファイルを追加するには、次の手順を実行します。
-
-   * 「**[!UICONTROL キャプションをアップロード]**」を選択します。
-   * 1 つまたは複数の `.vtt`（Video Text Tracks）ファイルに移動して選択し、開きます。
-   * キャプションをメディアプレーヤーに表示するには、アップロードした各キャプションファイルに関する必要な詳細（メタデータ）を追加する必要があります。キャプションファイル名の右側にある鉛筆アイコンを選択します。キャプションを編集ダイアログボックスで、次の必要なファイルの詳細情報を入力し、「**[!UICONTROL 保存]**」を選択します。アップロードした各キャプションファイルに対して、この手順を繰り返します。
-
-
-   | キャプションメタデータ | 説明 |
-   | --- | --- | 
-   | ファイル名 | デフォルトのファイル名は、元のファイル名から派生します。ファイル名はアップロード時にのみ変更でき、後で変更することはできません。ファイル名の文字数の要件は、AEM Assets と同じです。<br>追加のキャプションファイルとオーディオトラックファイルに同じファイル名を使用することはできません。 |
-   | 言語 | キャプションの言語を選択します。 |
-   | タイプ | 使用するキャプションのタイプを選択します。<br>**サブタイトル** - ダイアログを翻訳または文字起こししたビデオと共に表示されるキャプションテキスト。<br>**キャプション** - キャプションテキストには、背景雑音と話者の識別が含まれます。また、会話の翻訳または文字起こしと共に、その他の関連情報も含まれます。この機能により、聴覚障害のある人にとってコンテンツのアクセシビリティが向上します。 |
-   | ラベル | メディアプレーヤーの&#x200B;**[!UICONTROL オーディオまたはキャプションを選択]**&#x200B;ポップアップリストのキャプションの名前に表示されるテキスト。ラベルは、サブタイトルまたはキャプショントラックに対応するユーザーに表示される内容です。例：英語（CC）。 |
-
-   必要に応じて、後でキャプションメタデータを変更または編集できます。ビデオが公開されると、これらの詳細が公開されたビデオの公開 URL に反映されます。
-
-1. （オプション）ビデオに 1 つまたは複数のオーディオトラックを追加するには、次の手順を実行します。
-
-   * 「**[!UICONTROL オーディオトラックをアップロード]**」を選択します。
-   * 1 つまたは複数の .mp3 ファイルに移動して選択し、開きます。
-   * メディアプレーヤーの&#x200B;**[!UICONTROL オーディオまたはキャプションを選択]**&#x200B;ポップアップリストにオーディオトラックを表示するには、各オーディオトラックファイルに必要な詳細を追加します。適切に表示する必要な情報をすべて含めます。オーディオトラックのファイル名の右側にある鉛筆アイコンを選択します。オーディオトラックを編集ダイアログボックスで、次の必要な詳細情報を入力し、「**[!UICONTROL 保存]**」を選択します。アップロードした各オーディオトラックファイルに対して、この手順を繰り返します。
-
-   | オーディオトラックメタデータ | 説明 |
-   | --- | --- |
-   | ファイル名 | デフォルトのファイル名は、元のファイル名から派生します。ファイル名はアップロード時にのみ変更でき、後で変更することはできません。ファイル名の文字数の要件は、AEM Assets と同じです。<br>追加のオーディオトラックファイルやキャプションファイルに同じファイル名を使用することはできません。 |
-   | 言語 | オーディオトラックの言語を選択します。 |
-   | タイプ | 使用するオーディオトラックのタイプを選択します。<br>**オリジナル** - 元々ビデオに添付されていたオーディオトラック。ラベルには `[Original]` と表示され、デフォルトで英語が選択されています。**[!UICONTROL オーディオトラックを編集]**&#x200B;ダイアログボックスで&#x200B;**[!UICONTROL ラベル]**&#x200B;と&#x200B;**[!UICONTROL 言語]**&#x200B;は変更できますが、プライマリビデオが再処理されていると、デフォルトは元の値になります。<br>**標準** - 元の言語以外の言語のアドオンオーディオトラック。<br>**オーディオの説明** - ビデオ内の非言語的動作やジェスチャーの記述的ナレーションも含まれるオーディオトラック。視覚障害のあるユーザー向けのコンテンツアクセシビリティを高めます。 |
-   | ラベル | オーディオトラックの名前として、メディアプレーヤーの&#x200B;**[!UICONTROL オーディオまたはキャプションを選択]**&#x200B;ポップアップリストに表示されるテキスト。ラベルは、オーディオトラックに対応する顧客に表示される内容です。例えば、`English [Original]` などです。ビデオに添付されるオーディオのラベルは、デフォルトでは `[Original]` に設定されます。 |
-
-   必要に応じて、後でこのオーディオトラックメタデータを変更または編集できます。 ビデオが公開されると、これらの詳細が公開されたビデオの公開 URL に反映されます。
-
-1. ページの右上隅にある&#x200B;**[!UICONTROL 保存して閉じる]**&#x200B;ドロップダウンリストで、「**[!UICONTROL 保存]**」を選択します。ファイルがアップロードされ、メタデータ処理が開始されます（インターフェイスのステータス列を参照）。
-
-   >[!NOTE]
-   >
-   >インスタンスのキャッシュ設定に基づき、メタデータ処理がプレビューおよび公開済み URL に反映されるまでに数分かかる場合があります。
-
-1. （オプション）前の手順で「**[!UICONTROL 保存]**」を選択する代わりに「**[!UICONTROL 保存して閉じる]**」を選択した場合でも、アップロードしたファイルの処理ステータスを表示できます。詳しくは、[アップロードされたキャプションファイルとオーディオトラックファイルのライフサイクルステータスを表示する](/help/assets/dynamic-media/video.md#lifecycle-status-video)を参照してください。
-
-1. （オプション）公開する前にビデオをプレビューして、キャプションとオーディオが期待どおりに動作することを確認します。[複数のキャプションとオーディオトラックがあるビデオのプレビュー](/help/assets/dynamic-media/video.md#preview-video-audio-subtitle)を参照してください。
-
-1. ビデオを公開します。詳しくは、[アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
-
-
-
-<!--
+<!-- HIDDEN AS OF OCTOBER 7, 2024 AS PER EMAIL REQUEST FROM RIYA MIDHA ON SAME DATE 
 
 ## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
 
-With multiple caption and audio track capability in Dynamic Media, you can easily add multiple audio tracks. You can also add multiple caption files using either your own `.vtt` (Video Text Track) files or AI-generated caption files. AI-generated captions in Dynamic Media are designed to enhance video accessibility and engagement by automatically generating accurate and synchronized subtitles. This technology uses advanced AI algorithms to transcribe spoken content into text, which is then displayed as captions on the video. Some key features of this technology include the following:
+With multiple caption and audio track capability in Dynamic Media, you can easily add multiple captions and audio tracks to a primary video. This capability means that your videos are accessible to a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
 
-* **Automatic Transcription:** The AI system transcribes spoken words into text in real-time, ensuring that captions are generated quickly and accurately.
-* **Multilingual Support:** Captions can be automatically delivered in more than 60 languages, making it easier to reach a global audience.
-* **Enhanced Accessibility:** By providing captions, videos become more accessible to viewers who are deaf or hard of hearing, or people who prefer to watch videos with the sound off.
-* **Improved Engagement:** Captions can help retain viewer attention and improve comprehension, especially in noisy environments or when the viewer's native language is different from the video's language.
+   ![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
-These features make AI-powered captions a valuable tool for content creators looking to enhance their video content's accessibility and engagement. 
-
-![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
 Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
 
-| Type | Use case |
-|--- |--- |
-| **Captions** | Multiple language support |
-|  | Descriptive text for accessibility |
-| **Audio tracks** | Multiple language support  |
-|  | Commentary tracks |
-|  | Descriptive audio |
 
-All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers - except the Dynamic Media *Video_360* viewer - are supported for use with multiple captions and audio tracks.
+| Type | Use case | 
+| --- | --- |
+| Captions | Multiple language support<br>Descriptive text for accessibility |
+|Audio tracks | Multiple language support<br>Commentary tracks<br>Descriptive audio |
+
+
+All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers-except the Dynamic Media Video_360 viewer-are supported for use with multiple captions and audio tracks.
 
 Multi-caption and multi-audio track capability is available for your Dynamic Media account by way of a feature toggle that must be enabled (turned on) by Adobe Customer Support.
 
@@ -691,163 +585,268 @@ Before you add multiple caption and audio tracks to your video, be sure you alre
 
 * Dynamic Media is set up in an AEM environment.
 * A [Dynamic Media Video profile is applied to the folder where your videos are ingested](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-* [Multi-caption/audio tracks and AI-generated captions are enabled on your Dynamic Media account](#enable-dash).
+* [Multi-caption, and multi-audio track is enabled on your Dynamic Media account](/help/assets/dynamic-media/video.md#enable-dash).
 
-Added captions are supported with WebVTT and Adobe VTT formats. And, added audio track files are supported with MP3 format.
+Added captions and captions are supported with WebVTT and Adobe VTT formats. And, added audio track files are supported with MP3 format.
 
 >[!IMPORTANT]
 >
->For videos uploaded *before* enabling multiple caption/audio track support or AI-generated captions on your Dynamic Media account, [you need to reprocess them](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This reprocessing step ensures that these videos can use the multiple caption/audio track and AI-generated caption features. After reprocessing, the video URLs continue to function and play as usual.
+>Any videos that you uploaded before enabling multiple caption and audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multiple caption and audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
 
 **To add multiple captions and audio tracks to your video:**
 
 1. [Upload your primary video to a folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) that already has a video profile assigned to it.
 1. Navigate to the uploaded video asset that you want to add multiple caption and audio tracks.
 1. In asset selection mode, either from the List View or the Card View, select the video asset.
-1. On the toolbar, click the Properties icon (a circle with an "i" in it).
-![Selected video asset with checkmark over video thumbnail image and View Properties highlighted on the toolbar.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
+1. On the toolbar, select the Properties icon (a circle with an "i" in it). 
+
+   ![Asset properties button.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
+
 1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
 
+
    >[!TIP]
-   >If you do not see the **[!UICONTROL Captions & Audio Tracks]** tab, it means either one of two things:
-   >
+   >If you do not see the [!UICONTROL Captions & Audio Tracks] tab, it means either one of two things:
    >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
    >* Or, Dynamic Media must reprocess the video. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+
+    When you have completed either one of the above tasks, return to these steps.
+
+   ![Asset properties](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Captions and audio tracks tab on the video's Properties page.*
+
+1. (Optional) To add one or more caption files to a video, do the following:
+
+    * Select **[!UICONTROL Upload Captions]**.
+    * Navigate to, and select, one or more `.vtt` (Video Text Tracks) files and open them.
+    * For captions to be visible on the media player, you must add required details (metadata) about each caption file that you uploaded. Select the pencil icon to the right of a caption file name. In the Edit Caption dialog box, enter the following required details about the file, then select **[!UICONTROL Save]**. Repeat this process for each caption file that you uploaded:
+
+
+    | Caption metadata | Description | 
+    | --- | --- | 
+    Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
+    | Language | Select the language of the caption. |
+    | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises and speaker identification. It also includes other relevant details alongside the translation or transcription of dialogue. This functionality makes the content more accessible to individuals who are deaf or hard of hearing. |
+    | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, English (CC). |
+
+    You can change or edit caption metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+
+1. (Optional) To add one or more audio tracks to a video, do the following:
+
+    * Select **[!UICONTROL Upload Audio Tracks]**.
+    * Navigate to, and select, one or more .mp3 files and open them.
+    * To make audio tracks visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, add the required details for each audio track file. Ensure you include all necessary information for proper display. Select the pencil icon to the right of an audio track file name. In the Edit Audio Track dialog box, enter the following required details, then select **[!UICONTROL Save]**. Repeat this process for each audio track file that you uploaded.
+
+    | Audio Track metadata | Description |
+    | --- | --- |
+    | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files.| 
+    | Language | Select the language of the audio track. |
+    | Type | Select the type of audio track that you are using.<br>**Original** - The audio track originally attached to the video and represented as `[Original]` in the label with English language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** - An add-on audio track for a language other than the original.<br>**Audio description** - An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
+    | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
+
+    You can change or edit this audio track metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+
+1. In the upper-right corner of the page, from the **[!UICONTROL Save & Close]** drop-down list, select **[!UICONTROL Save]**. The files are uploaded and metadata processing begins, as seen in the Status column of the interface.
+
+    >[!NOTE]
+    >
+    >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+
+1. (Optional) If you selected **[!UICONTROL Save & Close]** in the previous step, instead of selecting **[!UICONTROL Save]**, you can still view the processing status of the uploaded files. See [View the lifecycle status of uploaded caption and audio track files](/help/assets/dynamic-media/video.md#lifecycle-status-video).
+
+1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](/help/assets/dynamic-media/video.md#preview-video-audio-subtitle).
+
+1. Publish the video. See [Publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md). -->
+
+
+
+## Dynamic Media におけるビデオの複数のキャプションとオーディオトラックのサポートについて{#about-msma}
+
+Dynamic Media で複数のキャプションとオーディオトラック機能を使用すると、複数のオーディオトラックを簡単に追加できます。また、独自の `.vtt`（ビデオテキストトラック）ファイルまたは AI 生成のキャプションファイルを使用して、複数のキャプションファイルを追加することもできます。Dynamic Media の AI 生成キャプションは、正確で同期された字幕を自動的に生成し、ビデオのアクセシビリティとエンゲージメントを向上させるように設計されています。このテクノロジーは、高度な AI アルゴリズムを使用して、音声コンテンツをテキストに文字起こしして、ビデオにキャプションとして表示します。このテクノロジーの主な機能には、次のものが含まれます。
+
+* **自動トランスクリプション：** AI システムは、音声の単語をリアルタイムでテキストに文字起こしするので、キャプションを迅速かつ正確に生成できます。
+* **多言語サポート：**&#x200B;キャプションは、60 以上の言語で自動的に配信できるので、世界中のオーディエンスに簡単に到達できます。
+* **アクセシビリティの向上：**&#x200B;キャプションを提供すると、聴覚障害のある視聴者や、サウンドをオフにしてビデオを視聴したい人びとにとって、ビデオへのアクセスが向上します。
+* **エンゲージメントの向上：**&#x200B;キャプションは、特にノイズの多い環境や、視聴者の母国語がビデオの言語と異なる場合に、視聴者の注意を引き、理解を向上させるのに役立ちます。
+
+これらの機能があることで、AI を活用したキャプションは、ビデオコンテンツのアクセシビリティとエンゲージメントの向上を目指すコンテンツクリエーターにとって価値のあるツールになります。
+
+![Dynamic Media の「キャプションとオーディオトラック」タブと、アップロードされた .VTT キャプションファイルおよびビデオ用にアップロードされた .MP3 オーディオトラックファイルを示すテーブル。](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
+
+プライマリビデオに複数のキャプションとオーディオトラックを追加する際に考慮するユースケースとしては、次のようなものがあります。
+
+| タイプ | ユースケース |
+|--- |--- |
+| **キャプション** | 複数言語のサポート |
+|  | アクセシビリティ用代替テキスト |
+| **オーディオトラック** | 複数言語のサポート |
+|  | 解説トラック |
+|  | 説明オーディオ |
+
+[Dynamic Media でサポートされているすべてのビデオ形式](/help/assets/file-format-support.md)とすべての Dynamic Media ビデオビューア（Dynamic Media *Video_360* ビューアを除く）は、複数のキャプションとオーディオトラックでの使用がサポートされています。
+
+複数のキャプションとオーディオトラック機能を Dynamic Media アカウントで使用できるようにするには、アドビカスタマーサポートが機能の切替スイッチを有効（オン）にする必要があります。
+
+### ビデオに複数のキャプションとオーディオトラックを追加 {#add-msma}
+
+ビデオに複数のキャプションとオーディオトラックを追加する前に、次を確認しておく必要があります。
+
+* Dynamic Media が AEM 環境で設定されている。
+* [Dynamic Media ビデオプロファイルが、ビデオが取り込まれるフォルダーに適用されている](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders)。
+* [Dynamic Media アカウントでマルチキャプション／オーディオトラックおよび AI 生成キャプションが有効になっている](#enable-dash)。
+
+追加されたキャプションでサポートされる形式は、WebVTT および AdobeVTT 形式です。また、追加されたオーディオトラックファイルでサポートされる形式は、MP3 形式です。
+
+>[!IMPORTANT]
+>
+>Dynamic Media アカウントで複数のキャプション／オーディオトラックのサポートまたは AI 生成キャプションを有効にする&#x200B;*前*&#x200B;にアップロードしたビデオについては、[再処理する必要があります](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。この再処理の手順により、これらのビデオで複数のキャプション／オーディオトラックと AI 生成キャプション機能を使用できます。再処理後も、ビデオ URL は引き続き通常どおり機能し、再生されます。
+
+**ビデオに複数のキャプションとオーディオトラックを追加するには：**
+
+1. 既にビデオプロファイルが割り当てられている[フォルダーにプライマリビデオをアップロード](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)します。
+1. 複数のキャプションおよびオーディオトラックを追加する、アップロード済みビデオアセットに移動します。
+1. リスト表示またはカード表示のアセット選択モードで、ビデオアセットを選択します。
+1. ツールバーで、プロパティアイコン（丸に「i」のマーク）をクリックします。
+   ![ビデオのサムネール画像の上にチェックマークが付いている、選択したビデオアセットと、ツールバーでハイライト表示されている「プロパティを表示」。](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*カード表示で選択したビデオアセット。*
+1. ビデオのプロパティページで、「**[!UICONTROL キャプションとオーディオトラック]**」タブを選択します。
+
+   >[!TIP]
+   >「**[!UICONTROL キャプションとオーディオトラック]**」タブが表示されない場合、次の 2 つのいずれかを意味します。
    >
-   >When you have completed either one of the above tasks, return to these steps.
-  
-   ![Captions and Audio Tracks tab on the Properties page.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
-   *Captions and audio tracks tab on the video's Properties page.*
+   >* 選択したビデオが存在するフォルダーには、ビデオプロファイルが割り当てられていません。その場合は、[フォルダーへのビデオプロファイルの適用](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)を参照してください。
+   >* または、Dynamic Media でビデオを再処理する必要があります。その場合は、[フォルダー内の Dynamic Media アセットの再処理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)を参照してください。
+   >
+   >上記のいずれかのタスクを完了したら、次の手順に戻ります。
 
-1. To add one or more audio tracks to a video, do the following:
-   1. Select **[!UICONTROL Upload Audio Tracks]**.
-   1. Navigate to, and select, one or more .mp3 files and open them.
-   1. For audio tracks to be visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, you must add required details about each audio track file. Doing so ensures that all audio tracks are properly listed and accessible. Select the pencil icon to the right of an audio track file name. In the **Edit Audio Track** dialog box, enter the following required details:
-    
-      | Audio Track metadata | Description |
+   ![プロパティページの「キャプションとオーディオトラック」タブ。](/help/assets/dynamic-media/assets/msma-audiotracks.png)
+   *ビデオのプロパティページの「キャプションとオーディオトラック」タブ。*
+
+1. ビデオに 1 つまたは複数のオーディオトラックを追加するには、次の手順を実行します。
+   1. 「**[!UICONTROL オーディオトラックをアップロード]**」を選択します。
+   1. 1 つまたは複数の .mp3 ファイルに移動して選択し、開きます。
+   1. メディアプレーヤーの&#x200B;**[!UICONTROL オーディオまたはキャプションを選択]**&#x200B;ポップアップリストでオーディオトラックを表示するには、各オーディオトラックファイルに関する必要な詳細を追加することが必要です。これにより、すべてのオーディオトラックが適切にリストされ、アクセスできます。オーディオトラックのファイル名の右側にある鉛筆アイコンを選択します。**オーディオトラックを編集**&#x200B;ダイアログボックスで、次の必要な詳細情報を入力します。
+
+      | オーディオトラックメタデータ | 説明 |
       |--- |--- |
-      | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files. |
-      | Language | Select the correct language of the audio track. |
-      | Type | Select the type of audio track that you are using.<br>**Original** - The audio track originally attached to the video and represented as `[Original]` in the label with `English` language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** - An add-on audio track for a language other than the original.<br>**Audio description** - An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
-      | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
+      | ファイル名 | デフォルトのファイル名は、元のファイル名から派生します。ファイル名はアップロード時にのみ変更でき、後で変更することはできません。ファイル名の文字数の要件は、AEM Assets と同じです。<br>追加のオーディオトラックファイルやキャプションファイルに同じファイル名を使用することはできません。 |
+      | 言語 | オーディオトラックの正しい言語を選択します。 |
+      | タイプ | 使用するオーディオトラックのタイプを選択します。<br>**オリジナル** - 元々ビデオに添付されていたオーディオトラック。ラベルには `[Original]` と表示され、デフォルトで `English` 言語が選択されています。**[!UICONTROL オーディオトラックを編集]**&#x200B;ダイアログボックスで&#x200B;**[!UICONTROL ラベル]**&#x200B;と&#x200B;**[!UICONTROL 言語]**&#x200B;は変更できますが、プライマリビデオが再処理されていると、デフォルトは元の値になります。<br>**標準** - 元の言語以外の言語のアドオンオーディオトラック。<br>**オーディオの説明** - ビデオ内の非言語的動作やジェスチャーの記述的ナレーションも含まれるオーディオトラック。視覚障害のあるユーザー向けのコンテンツアクセシビリティを高めます。 |
+      | ラベル | オーディオトラックの名前として、メディアプレーヤーの&#x200B;**[!UICONTROL オーディオまたはキャプションを選択]**&#x200B;ポップアップリストに表示されるテキスト。ラベルは、オーディオトラックに対応する顧客に表示される内容です。例えば、`English [Original]` などです。ビデオに添付されるオーディオのラベルは、デフォルトでは `[Original]` に設定されます。 |
 
-      You can change or edit this audio track metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+      必要に応じて、後でこのオーディオトラックメタデータを変更または編集できます。 ビデオが公開されると、これらの詳細は、公開中のビデオの公開 URL に反映されます。
 
-   1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**.
-   1. Do one of the following:
-        * Repeat this process for each audio track file that you upload.
-        * Continue to the next step to add captions to a video.
+   1. ページの右上隅付近にある&#x200B;**[!UICONTROL 保存して閉じる]**&#x200B;ドロップダウンで、「**[!UICONTROL 保存]**」をクリックします。
+   1. 次のいずれかの操作を行います。
+      * アップロードした各オーディオトラックファイルに対して、この手順を繰り返します。
+      * 次の手順に進み、ビデオにキャプションを追加します。
 
-1. To add one or more caption files to a video, choose which one of the following use cases best fits your scenario:
-   
-   |  | Use case | Create Caption option to use |
+1. ビデオに 1 つ以上のキャプションファイルを追加するには、シナリオに最も適した次のユースケースのいずれかを選択します。
+
+   |  | ユースケース | 使用する「キャプションを作成」オプション |
    | --- | --- | --- |
-   | **Option 1** | I have my own pre-existing caption files that are in the languages that I want to use.<br>See **Option 1** below. | **[!UICONTROL Upload Files]** |
-   | **Option 2** | I want AI to generate my caption files in multiple languages.<br>See **Option 2** below. | **[!UICONTROL Convert audio tracks]** |
-   | **Option 3** | Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file.<br>See **Option 3** below. | **[!UICONTROL Translate caption]** |
+   | **オプション 1** | 独自の既存キャプションファイル（自分が使用する言語のもの）がある場合。<br>以下の&#x200B;**オプション 1** を参照してください。 | **[!UICONTROL ファイルをアップロード]** |
+   | **オプション 2** | AI で、複数の言語でキャプションファイルを生成したい場合。<br>以下の&#x200B;**オプション 2** を参照してください。 | **[!UICONTROL オーディオトラックを変換]** |
+   | **オプション 3** | キャプションファイル（`.vtt`）内のテキストを修正し、再度アップロードして古い `.vtt` ファイルを置き換えてから、修正したファイルを AI で翻訳する場合。<br>以下の&#x200B;**オプション 3** を参照してください。 | **[!UICONTROL キャプションを翻訳]** |
 
-    ![Create Captions options.](/help/assets/dynamic-media/assets/msma-createcaption.png)
-    *The Create Captions drop-down menu gives you three options: Upload Files, Convert audio tracks, and Translate caption.*
+   ![「キャプションを作成」オプション。](/help/assets/dynamic-media/assets/msma-createcaption.png)
+   *キャプションを作成ドロップダウンメニューには、「ファイルをアップロード」、「オーディオトラックを変換」、「キャプションを翻訳」の 3 つのオプションがあります。*
 
-    +++**Option 1:** *I have my own pre-existing caption files that are in the languages that I want to use* (**[!UICONTROL Upload Files]** option)
++++**オプション 1：***使用する言語の既存の独自のキャプションファイルを自分で用意します*（「**[!UICONTROL ファイルをアップロード]**」オプション）
 
-    1. Near the upper-right side of the page, click **[!UICONTROL Create Caption]** > **[!UICONTROL Upload files]**.
-    1. Navigate to, and select, one or more of your pre-existing `.vtt` files and open them.
-    1. For captions to be visible on the media player, you *must* add the required details about *each* caption file that you upload. Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, enter the following required details about the file:
-    
-        | Caption metadata | Description |
-        |--- |--- |
-        | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
-        | Language | Select the language of the caption. After a caption file is processed, this language field becomes uneditable (dimmed) |
-        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises, speaker differentiation, and other relevant details, along with dialogue translation or transcription, enhancing accessibility for individuals who are deaf or hard of hearing. |
-        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
+   1. ページの右上付近で、**[!UICONTROL キャプションを作成]**／**[!UICONTROL ファイルをアップロード]**&#x200B;をクリックします。
+   1. 1 つまたは複数の既存の `.vtt` ファイルに移動して選択し、開きます。
+   1. キャプションをメディアプレーヤーに表示するには、アップロードした&#x200B;*各*&#x200B;キャプションファイルに関する必要な詳細を追加することが&#x200B;*必要*&#x200B;です。キャプションファイル名の右側にある鉛筆アイコンを選択します。**キャプションを編集**&#x200B;ダイアログボックスで、次の必要なファイルの詳細情報を入力します。
 
-        You can change or edit caption metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+      | キャプションメタデータ | 説明 |
+      |--- |--- |
+      | ファイル名 | デフォルトのファイル名は、元のファイル名から派生します。ファイル名はアップロード時にのみ変更でき、後で変更することはできません。ファイル名の文字数の要件は、AEM Assets と同じです。<br>追加のキャプションファイルとオーディオトラックファイルに同じファイル名を使用することはできません。 |
+      | 言語 | キャプションの言語を選択します。キャプションファイルを処理すると、この言語フィールドは編集できなくなります（グレー表示になる） |
+      | タイプ | 使用するキャプションのタイプを選択します。<br>**サブタイトル** - ダイアログを翻訳または文字起こししたビデオと共に表示されるキャプションテキスト。<br>**キャプション** - キャプションテキストには、背景雑音、話者の識別、その他の関連する詳細、および会話の翻訳または文字起こしが含まれているので、聴覚障害のあるユーザーのアクセシビリティを向上します。 |
+      | ラベル | メディアプレーヤーの&#x200B;**[!UICONTROL オーディオまたはキャプションを選択]**&#x200B;ポップアップリストのキャプションの名前に表示されるテキスト。ラベルは、サブタイトルまたはキャプショントラックに対応するユーザーに表示される内容です。例えば、`English (CC)` のように指定します。 |
 
-    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. The files are uploaded and metadata processing begins, as seen in the **Status** column of the interface.
+      必要に応じて、後でキャプションメタデータを変更または編集できます。ビデオが公開されると、これらの詳細は、公開中のビデオの公開 URL に反映されます。
 
-        >[!NOTE]
-        >
-        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+   1. ページの右上隅付近にある&#x200B;**[!UICONTROL 保存して閉じる]**&#x200B;ドロップダウンで、「**[!UICONTROL 保存]**」をクリックします。ファイルがアップロードされ、メタデータ処理が開始されます（インターフェイスの&#x200B;**ステータス**&#x200B;列参照）。
 
-    1. If you selected **[!UICONTROL Save & Close]** in the previous step, instead of selecting **[!UICONTROL Save]**, you can still view the processing status of the uploaded files. See [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
-    1. Continue to step 8.
+      >[!NOTE]
+      >
+      >インスタンスのキャッシュ設定に基づき、メタデータ処理がプレビューおよび公開済み URL に反映されるまでに数分かかる場合があります。
 
-    +++
+   1. 前の手順で「**[!UICONTROL 保存]**」を選択する代わりに「**[!UICONTROL 保存して閉じる]**」を選択した場合でも、アップロードしたファイルの処理ステータスを表示できます。詳しくは、[アップロードされたキャプションファイルとオーディオトラックファイルのライフサイクルステータスを表示する](#lifecycle-status-video)を参照してください。
+   1. 手順 8 に進みます。
 
-    +++**Option 2:** *I want AI to generate my caption files in multiple languages* (**[!UICONTROL Convert audio tracks]** option)
++++
 
-    1. Near the upper-right corner of the page, click **[!UICONTROL Create Caption]** > **[!UICONTROL Convert audio tracks]**.
++++**オプション 2：***AI に複数の言語でキャプションファイルを生成する場合*（「**[!UICONTROL オーディオトラックを変換]**」オプション）
 
-        ![Convert audio tracks dialog box.](/help/assets/dynamic-media/assets/msma-convertaudiotracks.png)
-        *The Convert Audio Tracks dialog box uses AI to generate caption files in multiple languages.*
+   1. ページの右上隅付近で、**[!UICONTROL キャプションを作成]**／**[!UICONTROL オーディオトラックを変換]**&#x200B;をクリックします。
 
-    1. In the **Convert Audio Tracks** dialog box, set the following options:
-    
-        | Option | Description |
-        |--- |--- |
-        | Audio track to convert | In the drop-down list, choose the uploaded audio track file from which you want captions generated using AI.  |
-        | Output languages | In the drop-down list, select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click **X**.<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
+      ![オーディオトラックを変換ダイアログボックス。](/help/assets/dynamic-media/assets/msma-convertaudiotracks.png)
+      *オーディオトラックを変換ダイアログボックスでは、AI を使用して複数の言語のキャプションファイルを生成します。*
 
-    1. Click **[!UICONTROL Done]**.
-    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
-    1. Click the **[!UICONTROL Captions & Audio tracks]** tab again. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
+   1. **オーディオトラックを変換**&#x200B;ダイアログボックスで、次のオプションを設定します。
 
-        >[!NOTE]
-        >
-        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+      | オプション | 説明 |
+      |--- |--- |
+      | 変換するオーディオトラック | ドロップダウンリストで、AI を使用してキャプションを生成する、アップロードされたオーディオトラックファイルを選択します。 |
+      | 出力言語 | ドロップダウンリストで、キャプションファイルを表示する言語を 1 つ以上選択します。<br>選択した言語を削除するには、「**X**」をクリックします。<br>ビデオの再生中、ここで選択した順序でメディアプレーヤーに言語のリストが表示されます。 |
 
-    1. (Optional) Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
+   1. 「**[!UICONTROL 完了]**」をクリックします。
+   1. ページの右上隅付近にある&#x200B;**[!UICONTROL 保存して閉じる]**&#x200B;ドロップダウンで、「**[!UICONTROL 保存]**」をクリックします。
+   1. 「**[!UICONTROL キャプションとオーディオトラック]**」タブをもう一度クリックします。1 つ以上のキャプションファイルが作成され、処理が開始されます（インターフェイスの&#x200B;**ステータス**&#x200B;列を参照）。また、[アップロードされたキャプションファイルとオーディオトラックファイルのライフサイクルステータスを表示する](#lifecycle-status-video)も参照してください。
 
-        | Caption metadata | Description |
-        | --- | --- |
-        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises and speaker differentiation. It also includes other relevant information, along with the translation or transcription of the dialogue. This approach makes the content more accessible for individuals who are deaf or hard of hearing. |
-        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
+      >[!NOTE]
+      >
+      >インスタンスのキャッシュ設定に基づき、メタデータ処理がプレビューおよび公開済み URL に反映されるまでに数分かかる場合があります。
 
-        You can change or edit certain caption metadata later, if necessary. When the video is published, these metadata details are reflected on public URLs in published videos.
-    1. Continue to step 8.
+   1. （オプション）キャプションファイル名の右側にある鉛筆アイコンを選択します。**キャプションを編集**&#x200B;ダイアログボックスで、次のファイルの詳細情報を編集できます。
 
-    +++
+      | キャプションメタデータ | 説明 |
+      | --- | --- |
+      | タイプ | 使用するキャプションのタイプを選択します。<br>**サブタイトル** - ダイアログを翻訳または文字起こししたビデオと共に表示されるキャプションテキスト。<br>**キャプション** - キャプションテキストには、背景雑音と話者の識別が含まれます。また、会話の翻訳または文字起こしと共に、その他の関連情報も含まれます。このアプローチにより、聴覚障害のある人にとってコンテンツのアクセシビリティが向上します。 |
+      | ラベル | メディアプレーヤーの&#x200B;**[!UICONTROL オーディオまたはキャプションを選択]**&#x200B;ポップアップリストのキャプションの名前に表示されるテキスト。ラベルは、サブタイトルまたはキャプショントラックに対応するユーザーに表示される内容です。例：`English (CC)` |
 
-    +++**Option 3:** *Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file* (**[!UICONTROL Translate captions]** option)
+      必要に応じて、後で特定のキャプションメタデータを変更または編集できます。ビデオが公開されると、これらのメタデータの詳細が公開されたビデオの公開 URL に反映されます。
+   1. 手順 8 に進みます。
 
-    1. Click **[!UICONTROL Create Caption]** > **[!UICONTROL Translate captions]**. This option is available if one or more caption files were already added and processed.
++++
 
-        ![Translate Captions dialog box.](/help/assets/dynamic-media/assets/msma-translate-captions.png)
-        *The Translate Captions dialog box lets you use an existing caption file to have AI generate new caption files in multiple languages.*
++++**オプション 3：***キャプションファイル（`.vtt`）内のテキストを修正し、再度アップロードして古い `.vtt` ファイルを置き換え、修正したファイルを AI に翻訳させる必要があります*（「**[!UICONTROL キャプションを翻訳]**」オプション）
 
-    1. In the **Translate caption** dialog box, set the following options:
+   1. **[!UICONTROL キャプションを作成]**／**[!UICONTROL キャプションを翻訳]**&#x200B;をクリックします。このオプションは、1 つ以上のキャプションファイルが既に追加および処理されている場合に使用できます。
 
-        | Option | Description |
-        |--- |--- |
-        | Caption to translate | In the drop-down list, choose a caption file from which you want the captions generated using AI. |
-        | Output languages | In the drop-down list, select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click **X**.<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
+      ![キャプションを翻訳ダイアログボックス。](/help/assets/dynamic-media/assets/msma-translate-captions.png)
+      *キャプションを翻訳ダイアログボックスでは、既存のキャプションファイルを使用して、AI に複数の言語の新しいキャプションファイルを生成させることができます。*
 
-    1. Click **[!UICONTROL Done]**.
-    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
-    1. Click the **[!UICONTROL Captions & Audio tracks]** tab again. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
+   1. **キャプションを翻訳**&#x200B;ダイアログボックスで、次のオプションを設定します。
 
-        >[!NOTE]
-        >
-        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+      | オプション | 説明 |
+      |--- |--- |
+      | 翻訳するキャプション | ドロップダウンリストで、AI を使用してキャプションを生成するキャプションファイルを選択します。 |
+      | 出力言語 | ドロップダウンリストで、キャプションファイルを表示する言語を 1 つ以上選択します。<br>選択した言語を削除するには、「**X**」をクリックします。<br>ビデオの再生中、ここで選択した順序でメディアプレーヤーに言語のリストが表示されます。 |
 
-    1. (Optional) Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
+   1. 「**[!UICONTROL 完了]**」をクリックします。
+   1. ページの右上隅付近にある&#x200B;**[!UICONTROL 保存して閉じる]**&#x200B;ドロップダウンで、「**[!UICONTROL 保存]**」をクリックします。
+   1. 「**[!UICONTROL キャプションとオーディオトラック]**」タブをもう一度クリックします。1 つ以上のキャプションファイルが作成され、処理が開始されます（インターフェイスの&#x200B;**ステータス**&#x200B;列を参照）。また、[アップロードされたキャプションファイルとオーディオトラックファイルのライフサイクルステータスを表示する](#lifecycle-status-video)も参照してください。
 
-        | Caption metadata | Description |
-        | --- | --- |
-        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text also includes background noises, speaker differentiation. It also includes other relevant information, along with the translation or transcription of the dialogue. This approach makes the content more accessible for individuals who are deaf or hard of hearing. |
-        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
+      >[!NOTE]
+      >
+      >インスタンスのキャッシュ設定に基づき、メタデータ処理がプレビューおよび公開済み URL に反映されるまでに数分かかる場合があります。
 
-        You can change or edit certain caption metadata later, if necessary. When the video is published, these metadata details are reflected on public URLs in published videos.
+   1. （オプション）キャプションファイル名の右側にある鉛筆アイコンを選択します。**キャプションを編集**&#x200B;ダイアログボックスで、次のファイルの詳細情報を編集できます。
 
-    1. Continue to step 8.
+      | キャプションメタデータ | 説明 |
+      | --- | --- |
+      | タイプ | 使用するキャプションのタイプを選択します。<br>**サブタイトル** - ダイアログを翻訳または文字起こししたビデオと共に表示されるキャプションテキスト。<br>**キャプション** - キャプションテキストには、背景雑音、話者の識別も含まれます。また、会話の翻訳または文字起こしと共に、その他の関連情報も含まれます。このアプローチにより、聴覚障害のある人にとってコンテンツのアクセシビリティが向上します。 |
+      | ラベル | メディアプレーヤーの&#x200B;**[!UICONTROL オーディオまたはキャプションを選択]**&#x200B;ポップアップリストのキャプションの名前に表示されるテキスト。ラベルは、サブタイトルまたはキャプショントラックに対応するユーザーに表示される内容です。例：`English (CC)` |
 
-    +++
+      必要に応じて、後で特定のキャプションメタデータを変更または編集できます。ビデオが公開されると、これらのメタデータの詳細が公開されたビデオの公開 URL に反映されます。
 
-1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](#preview-video-audio-subtitle).
-1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
+   1. 手順 8 に進みます。
 
--->
++++
+
+1. （オプション）公開する前にビデオをプレビューして、キャプションとオーディオが期待どおりに動作することを確認します。[複数のキャプションとオーディオトラックがあるビデオのプレビュー](#preview-video-audio-subtitle)を参照してください。
+1. ビデオを公開します。詳しくは、[アセットの公開](publishing-dynamicmedia-assets.md)を参照してください。
 
 #### 既に公開されているビデオへのキャプションとオーディオトラックのファイルの追加について
 

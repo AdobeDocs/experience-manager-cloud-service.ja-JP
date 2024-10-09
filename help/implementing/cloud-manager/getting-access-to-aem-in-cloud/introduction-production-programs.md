@@ -5,10 +5,10 @@ exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 実稼働プログラムは、コードの記述、構築、テストを開始する準備が整い、ライブトラフィックをホストするためにコードをデプロイするチームを対象としています。
 
-[実稼動プログラムを作成](creating-production-programs.md)した後、ユーザーの目的に応じて、[プログラム作成ウィザード](using-the-wizard.md)がプログラムの作成時にユーザーが選択した内容をガイドします。
+[ 実稼動プログラムを作成 ](creating-production-programs.md) した後、ユーザーの目的に応じて、[ プログラム作成ウィザード ](using-the-wizard.md) がプログラムの作成時にユーザーが選択した内容をガイドします。
 
 ## プログラム作成オプション {#program-creation-options}
 

@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
-workflow-type: ht
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+workflow-type: tm+mt
 source-wordcount: '1000'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -147,7 +147,7 @@ apex ドメインは、サブドメインを含まないカスタムドメイン
 
    有効な EV／OV 証明書をアップロードすると、**ドメイン設定**&#x200B;テーブルでドメインのステータスが&#x200B;**検証済み**&#x200B;としてマークされます。
 
-   ![検証済みステータスを示すドメイン設定テーブル。](/help/implementing/cloud-manager/assets/domain-settings-verified.png)
+   ![ 検証されたステータスを示すドメイン設定テーブル ](/help/implementing/cloud-manager/assets/domain-settings-verified.png)。
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)

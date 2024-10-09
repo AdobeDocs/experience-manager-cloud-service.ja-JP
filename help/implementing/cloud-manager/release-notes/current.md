@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.10.0 �
 description: AEM as a Cloud Service の Cloud Manager 2024.10.0 のリリースノートについて説明します。
 feature: Release Information
 role: Admin
-source-git-commit: aa8d4c8c69a96054492b886893414c3e82b2f4ad
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 82%
+ht-degree: 84%
 
 ---
 
@@ -38,7 +38,7 @@ AEM as a Cloud Service の Cloud Manager リリース 2024.10.0 のリリース�
 
   [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。
 
-  ![ 顧客が管理する EV/OV 証明書のドメインの検証 ](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
+  ![顧客が管理する EV／OV 証明書のドメインを検証](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
 * <!-- CS ONLY --> ネットワークインフラストラクチャを追加または編集する際、IP アドレスフィールドとネットワークマスクフィールドの値は、次のルールに従って検証されます。
 
@@ -90,4 +90,4 @@ Cloud Manager の早期導入プログラムに参加すると、今後の機能
 
 
 
-## Known Issues {#known-issues} -->
+## Known issues {#known-issues} -->

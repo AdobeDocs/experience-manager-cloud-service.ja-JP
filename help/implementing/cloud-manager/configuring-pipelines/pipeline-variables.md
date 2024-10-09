@@ -5,10 +5,10 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 92%
+source-wordcount: '551'
+ht-degree: 61%
 
 ---
 
@@ -30,26 +30,26 @@ Cloud Manager を使用すると、複数の方法でパイプライン変数を
 
 変数名は、次の規則に従う必要があります。
 
-* 変数には、英数字とアンダースコア（`_`）のみ使用できます。
+* 変数には、英数字とアンダースコア（`_`）のみを含めることができます。
 * 名前はすべて大文字にします。
 * 変数の数はパイプラインあたり最大 200 個までです。
 * 名前は 100 文字以下にする必要があります。
 * `string` 変数の値はそれぞれ、2048 文字未満にする必要があります。
 * `secretString` 変数型の値はそれぞれ、500 文字以下にする必要があります。
 
-## Cloud Manager UI の使用 {#ui}
+## Cloud Manager ユーザーインターフェイスを使用 {#ui}
 
-パイプライン変数は、Cloud Manager UI を使用して設定および管理できます。パイプライン変数を追加、編集、削除するには、パイプラインを編集する権限が必要です。
+パイプライン変数は、Cloud Manager ユーザーインターフェイスを介して設定および管理できます。 パイプライン変数を追加、編集、削除するには、パイプラインを編集する権限が必要です。
 
 パイプラインが実行中の場合、変数管理はブロックされます。
 
 ### パイプライン変数の追加 {#add-ui}
 
-1. [パイプラインを管理](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)する際、パイプライン変数を作成するパイプラインの省略記号ボタンをタップまたはクリックし、コンテキストメニューから「**変数を表示／編集**」を選択します。
+1. [ パイプラインの管理 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 時に、パイプライン変数を作成するパイプラインの省略記号ボタンをクリックし、コンテキストメニューから **変数を表示/編集** を選択します。
 
    ![パイプライン変数の表示／編集](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. **変数設定**&#x200B;ウィンドウが開きます。テーブルの 1 行目に変数の詳細を入力し、「**追加**」をタップまたはクリックします。
+1. **変数設定**&#x200B;ウィンドウが開きます。テーブルの最初の行に変数の詳細を入力し、「**追加**」をクリックします。
 
    * **設定名**&#x200B;は変数の一意の ID で、[パイプライン変数の命名規則](#naming-conventions)に従う必要があります。
    * **値**&#x200B;は、変数が保持する値です。
@@ -65,21 +65,21 @@ Cloud Manager を使用すると、複数の方法でパイプライン変数を
 
 ### パイプライン変数の編集 {#edit-ui}
 
-1. [パイプラインを管理](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)する際、パイプライン変数を作成するパイプラインの省略記号ボタンをタップまたはクリックし、コンテキストメニューから「**変数を表示／編集**」を選択します。
+1. [ パイプラインの管理 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 時に、パイプライン変数を作成するパイプラインの省略記号ボタンをクリックし、コンテキストメニューから **変数を表示/編集** を選択します。
 
    ![パイプライン変数の表示／編集](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. **変数設定**&#x200B;ウィンドウが開きます。編集する変数の省略記号ボタンをタップまたはクリックし、「**編集**」を選択します。
+1. **変数設定**&#x200B;ウィンドウが開きます。編集する変数の省略記号ボタンをクリックし、「**編集**」を選択します。
 
    ![変数の編集](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png)
 
-1. 必要に応じて変数の値を更新し、「**適用**」（行の最後のチェックマーク）をタップまたはクリックして変更を適用するか、「**破棄**」（戻る矢印）をタップまたはクリックして、変更を元に戻します。
+1. 必要に応じて変数の値を更新し、**適用** （行の最後にあるチェックマーク）をクリックして変更を適用するか、**破棄** （左矢印）をクリックして変更を元に戻します。
 
    * 変数の値のみを編集できます。
 
    ![変数の編集](/help/implementing/cloud-manager/assets/pipeline-variables-edit-save.png)
 
-1. 「**保存**」をタップまたはクリックして、変数に対する変更をパイプラインに保存します。
+1. 「**保存**」をクリックします。
 
 変数を削除する場合は、「**変数設定** ウィンドウのパイプライン変数の省略記号メニューから **編集** ではなく **削除** を選択します。
 
