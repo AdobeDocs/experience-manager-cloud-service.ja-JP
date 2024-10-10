@@ -310,7 +310,7 @@ ht-degree: 100%
 </table>
 </details>
 
-### `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth} の削除
+### `org.apache.sling.commons.auth*` の削除 {#org.apache.sling.commons.auth}
 
 `org.apache.sling.commons.auth` や `org.apache.sling.commons.auth.spi` を使用している場合、コードをそれぞれ `org.apache.sling.auth` または。 `org.apache.sling.auth.spi` に移行することで使用を置き換えることができます。古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
 
@@ -318,7 +318,7 @@ ht-degree: 100%
 * ACS AEM Commons を最新バージョンに更新
 * `org.apache.sling.commons.auth` や `org.apache.sling.commons.auth.spi` から `org.apache.sling.auth` または `org.apache.sling.auth.spi` にそれぞれ移行します。
 
-### `org.eclipse.jetty*` {#org.eclipse.jetty} の削除
+### `org.eclipse.jetty*` の削除 {#org.eclipse.jetty}
 
 `org.eclipse.jetty` パッケージまたはそのサブパッケージのいずれかを使用する場合は、同様の機能を備えた他のサードパーティライブラリに移行することをお勧めします。移行が不可能な場合は、以下のリストから必要なバンドルをプロジェクトに追加します。
 
@@ -334,7 +334,7 @@ ht-degree: 100%
    * `org.eclipse.jetty:jetty-util:9.4.54.v20240208`
    * `org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208`
 
-### `com.mongodb` {#com.mongodb} の削除
+### `com.mongodb` の削除 {#com.mongodb}
 
 Mongo client API をプロジェクトに追加します。
 
@@ -342,14 +342,14 @@ Mongo client API をプロジェクトに追加します。
 * このバンドルをプロジェクトに追加
    * `org.mongodb:mongo-java-driver:3.12.7`
 
-### `org.apache.abdera*` および `org.apache.sling.atom.taglib` {#org.apache.abdera_or_org.apache.sling.atom.taglib} の使用
+### `org.apache.abdera*` および `org.apache.sling.atom.taglib` の使用 {#org.apache.abdera_or_org.apache.sling.atom.taglib}
 
 `org.apache.abdera` および `org.apache.sling.atom.taglib` のパッケージの使用を、同様の機能を備えたサードパーティライブラリまたは独自のコードに置き換えます。
 
 アクションリスト：
 * `org.apache.abdera` および `org.apache.sling.atom.taglib` のパッケージの使用を他のサードパーティライブラリ／独自のコードに置き換える。
 
-### `org.apache.felix.http.whiteboard` {#org.apache.felix.http.whiteboard} の使用
+### `org.apache.felix.http.whiteboard` の使用 {#org.apache.felix.http.whiteboard}
 
 `org.apache.felix.http.whiteboard` の使用を [OSGi Http ホワイトボード](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)に置き換えます。公式の OSGi API には同様の機能があり、ほとんどの場合、置き換えにはサービス登録プロパティの変更のみが必要です。
 
