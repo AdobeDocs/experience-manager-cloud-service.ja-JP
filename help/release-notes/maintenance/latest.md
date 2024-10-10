@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: ea7e027b5247b64e78da1d14e4e602f39a37e4bd
+source-git-commit: 7bc6d9a947a5ce7c56481eaec8a2f186caf36c64
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 39%
+source-wordcount: '773'
+ht-degree: 41%
 
 ---
 
@@ -24,43 +24,37 @@ ht-degree: 39%
 
 ### 機能強化 {#enhancements-18099}
 
-* ASSETS-43015：最新の auth.ims バンドルに更新します。
-* ASSETS-41684:src/main/features/docker/ethos/base-ims-oauth.jsonを更新します。
 * ASSETS-38322:AEMの http リクエストイベントを有効化。
-* ASSETS-41684: OOB OSGI 設定を追加して、Assets、Foundation、Sites およびForms用のグループマッピングに対して FI を定義します。
 * ASSETS-41448：グループマッピングに対する FI をサポートするように、auth.ims バンドルを更新します。
+* ASSETS-41684: OOB OSGI 設定を追加して、Assets、Foundation、Sites およびForms用のグループマッピングに対して FI を定義します。
+* ASSETS-43015：最新の auth.ims バンドルに更新します。
 * CQ-4356633:「コンテンツのみ」のツールチップに文字を追加。
-* SITES-23584：基盤コンポーネントテストが Java 17 で失敗する。
-* GUIDES-19069:aem guides アドオンの guidesPeerLinkIndex を追加。
-* GRANITE-54300：Oak を最新のパブリックリリース（1.70.0）に更新します。
-* GRANITE-54274:Firefly IMS クライアントを受け入れます。
-* GRANITE-36205：内部の Oak リリースバージョンを最新に更新します。
-* GRANITE-45298：低い権限を持つユーザーは、JS を使用せずに XSS 形式で悪意のあるフォームを作成することで、RCE を取得できます。
-* GRANITE-54266：実稼動 SDK に検索 Suggestor サービスがない。
-* GRANITE-50948 - リポジトリサービスをAEMに統合ローカル開発用に別のリポジトリサービスを追加します。
-* GRANITE-53966：コンテンツ配布に別のスレッドプールを使用する。
-* GRANITE-53514:Treeactivation 1.0.26。
-* GRANITE-54054:com.adobe.granite.repository.impl.SystemUserValidation warnOnly の環境変数。
 * GRANITE-50948：リポジトリサービスをAEMに統合リポジトリサービスをサポート。
 * GRANITE-52454：サポートヘルパー 0.1.2 の追加
-* GRANITE-53514:Treeactivation 1.0.26。
-* GRANITE-54038:Creative Cloudのエンタープライズ IMS クライアントをAEM 許可リストに加える IMS クライアントに追加します。
-* GRANITE-36205：内部の Oak リリースバージョンを最新に更新します。
-* GRANITE-53485: レプリケーション Azure Blob Storage のサービスプリンシパル認証をサポートします。
-* GRANITE-54006:Jackson を 2.17.2 に更新します。
-* GRANITE-53287: セキュリティ権限の統合テストバージョンを更新しています。
-* GRANITE-53914:Java 17 でモジュールバージョンを更新した場合、プラットフォームテストが失敗します。
-* GRANITE-53870：クイックスタートの最大 JVM バージョン数のチェックをスキップする内部メカニズムを作成します。
 * GRANITE-52454：サポートヘルパーのアップグレード AEMaaCS の最新リリースを使用するためのサポートヘルパーのアップグレード GRANITE-52454。
+* GRANITE-53287: セキュリティ権限の統合テストバージョンを更新しています。
+* GRANITE-53485: レプリケーション Azure Blob Storage のサービスプリンシパル認証をサポートします。
+* GRANITE-53514:Treeactivation がバージョン 1.0.26 に更新されました。
+* GRANITE-53870：クイックスタートの最大 JVM バージョン数のチェックをスキップする内部メカニズムを作成します。
+* GRANITE-53914:Java 17 で更新されたモジュールバージョンを使用したプラットフォームテストの失敗を修正しました。
+* GRANITE-53966：コンテンツ配布に別のスレッドプールを使用する。
+* GRANITE-54006:Jackson を 2.17.2 に更新します。
+* GRANITE-54038:Creative Cloudのエンタープライズ IMS クライアントをAEM 許可リストに加える IMS クライアントに追加します。
+* GRANITE-54054:com.adobe.granite.repository.impl.SystemUserValidation warnOnly の環境変数。
+* GRANITE-54266：実稼動 SDK に検索 Suggestor サービスがない。
+* GRANITE-54274:Firefly IMS クライアントを受け入れます。
+* GRANITE-54300：Oak を最新のパブリックリリース（1.70.0）に更新します。
+* GUIDES-19069:aem guides アドオンの guidesPeerLinkIndex を追加。
+* SITES-23584:Java 17 で基盤コンポーネントのテストが失敗する問題を修正。
+* SKYOPS-69768: SlingModels は ResourceResolvers を逆シリアル化しません。
+* SKYOPS-76378:i18n での ResourceBundle 登録/登録解除のスレッドの安全性を向上しました。
+* SKYOPS-79285:Sling XSS を 2.4.2 に更新します。
+* SKYOPS-82383: &#39;helm-values&#39; convert-merge-analyze の結果をコマンド実行記述子に公開します。
+* SKYOPS-84810: RDE の起動時に&quot;40-initialize-publish.sh&quot;の実行をスキップします。
+* SKYOPS-84951：可変コンテンツチェックサム生成コードを修正。
 * SKYOPS-85335:org.apache.sling.jcr.repoinit を 1.1.52 に更新します。
 * SKYOPS-85336:Sling Commons Threadsを 3.3.0 に更新します。
-* SKYOPS-76378:i18n での ResourceBundle 登録/登録解除のスレッドの安全性を向上しました。
-* SKYOPS-84951：可変コンテンツチェックサム生成コードが正しくありません。
-* SKYOPS-82383: &#39;helm-values&#39; convert-merge-analyze の結果をコマンド実行記述子に公開します。
 * SKYOPS-86329:java 21 sdk サポートのプラットフォームテストモジュールのバージョンを更新しています。
-* SKYOPS-69768: SlingModels は ResourceResolvers を逆シリアル化しません。
-* SKYOPS-84810: RDE の起動時に&quot;40-initialize-publish.sh&quot;の実行をスキップします。
-* SKYOPS-79285:Sling XSS を 2.4.2 に更新する
 
 ### 修正された問題 {#fixed-issues-18099}
 
@@ -77,7 +71,7 @@ ht-degree: 39%
 
 ### 既知の問題 {#known-issues-18099}
 
-* FORMS - 15818：コンポーネント記述子エントリ `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` が見つからないというステートメントがサーバーログに記録される。これらは無害なログステートメントです。
+* FORMS-15818: コンポーネント記述子のエントリ `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml`、サーバーログにステートメントが見つかりません。 これらは無害なログステートメントです。
 
 ### 廃止された機能と API {#deprecated-18099}
 
