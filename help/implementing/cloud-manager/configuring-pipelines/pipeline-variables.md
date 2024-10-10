@@ -5,87 +5,101 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: f7a8e823f058115f11241f0864517432a7dea5ab
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 61%
+source-wordcount: '611'
+ht-degree: 28%
 
 ---
 
 # パイプライン変数の設定 {#configuring-pipeline-variables}
 
-お使いのビルドプロセスが、Git リポジトリに配置するのに適さない特定の設定変数に基づいている場合や、同じブランチを使用するパイプライン実行間で環境変数を変えることが必要になる場合があります。Cloud Manager では、これらのデータをパイプライン変数として管理できます。
+ビルドプロセスが、Git リポジトリに保存してはいけない特定の設定変数に依存している可能性があります。 または、同じブランチ上で実行されるパイプライン間で調整する必要がある場合もあります。 Cloud Managerでは、これらの設定をパイプライン変数として管理できます。
 
 ## パイプライン変数 {#pipeline-variables}
 
 Cloud Manager を使用すると、複数の方法でパイプライン変数を設定できます。
 
-* [Cloud Manager UI の使用](#ui)
+* [Cloud Manager ユーザーインターフェイスの使用](#ui)
 * [Cloud Manager CLI の使用](#cli)
 * [Cloud Manager API の使用](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Variables/operation/getPipelineVariables)
 
 変数は、プレーンテキストとして保存することも、保存時に暗号化することもできます。どちらの場合も、変数はビルド環境内で環境変数として使用可能になり、変数は `pom.xml` ファイル内または他のビルドスクリプト内から参照できます。
 
-### パイプライン変数の命名規則 {#naming-conventions}
+## Cloud Managerを使用したパイプライン変数の追加 {#ui}
 
-変数名は、次の規則に従う必要があります。
+パイプライン変数は、Cloud Manager ユーザーインターフェイスを通じて設定および管理できます。 これは、特に様々なステップで様々な設定が必要な場合に、パイプライン管理の効率化に役立ちます。
 
-* 変数には、英数字とアンダースコア（`_`）のみを含めることができます。
-* 名前はすべて大文字にします。
-* 変数の数はパイプラインあたり最大 200 個までです。
-* 名前は 100 文字以下にする必要があります。
-* `string` 変数の値はそれぞれ、2048 文字未満にする必要があります。
-* `secretString` 変数型の値はそれぞれ、500 文字以下にする必要があります。
-
-## Cloud Manager ユーザーインターフェイスを使用 {#ui}
-
-パイプライン変数は、Cloud Manager ユーザーインターフェイスを介して設定および管理できます。 パイプライン変数を追加、編集、削除するには、パイプラインを編集する権限が必要です。
+パイプライン変数を追加、編集、削除するには、パイプラインを編集する権限が必要です。
 
 パイプラインが実行中の場合、変数管理はブロックされます。
 
-### パイプライン変数の追加 {#add-ui}
+### パイプライン変数を追加 {#add-ui}
 
-1. [ パイプラインの管理 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 時に、パイプライン変数を作成するパイプラインの省略記号ボタンをクリックし、コンテキストメニューから **変数を表示/編集** を選択します。
+1. [ パイプラインの管理 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 時に、パイプライン変数を作成するパイプラインの ![ 省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
-   ![パイプライン変数の表示／編集](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
+1. ドロップダウンメニューから、「**変数を表示/編集**」をクリックします。
 
-1. **変数設定**&#x200B;ウィンドウが開きます。テーブルの最初の行に変数の詳細を入力し、「**追加**」をクリックします。
+   ![ パイプライン変数の表示/編集 ](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-   * **設定名**&#x200B;は変数の一意の ID で、[パイプライン変数の命名規則](#naming-conventions)に従う必要があります。
-   * **値**&#x200B;は、変数が保持する値です。
-   * **適用された手順**&#x200B;は、変数を適用するパイプライン内の手順です。これは必須です。
-      * **ビルド**
-      * **機能テスト**
-      * **UI テスト**
-   * **タイプ**&#x200B;は、変数がプレーンテキストか、シークレットとして暗号化されているかを定義します。
+1. **変数設定** ダイアログボックスで、テーブルの最初の行に詳細を入力します。
+
+   | フィールド | 説明 |
+   | --- | --- |
+   | 名前 | 設定変数の一意の名前。 パイプラインで使用される特定の変数を識別します。 次の命名規則に従う必要があります。<ul><li>変数には、英数字とアンダースコア（`_`）のみを含めることができます。</li><li>名前はすべて大文字にします。</li><li>変数の数はパイプラインあたり最大 200 個までです。</li><li>名前は 100 文字以下にする必要があります。</li><li>`string` 変数の値はそれぞれ、2048 文字未満にする必要があります。</li><li>`secretString` 変数型の値はそれぞれ、500 文字以下にする必要があります。</li></ul> |
+   | 値 | 変数が保持する値。 |
+   | 適用されたステップ | 必須。変数が適用されるパイプラインのステップ：<ul><li>**ビルド** – 変数は、ビルドプロセス中に適用されます。</li><li>**機能テスト** – 変数は、機能テストステップで使用されます。</li><li>**UI テスト** – 変数は、UI テスト段階で使用されます。</li></ul> |
+   | タイプ | 変数がプレーンテキストか、シークレットとして暗号化するかを選択します。 |
 
    ![変数の追加](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png)
 
-1. がテーブルに追加されます。必要に応じて変数を追加し、「**保存**」をタップまたはクリックして、パイプラインに追加した変数を保存します。
+1. 「**追加**」をクリックします。
 
-### パイプライン変数の編集 {#edit-ui}
-
-1. [ パイプラインの管理 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 時に、パイプライン変数を作成するパイプラインの省略記号ボタンをクリックし、コンテキストメニューから **変数を表示/編集** を選択します。
-
-   ![パイプライン変数の表示／編集](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
-
-1. **変数設定**&#x200B;ウィンドウが開きます。編集する変数の省略記号ボタンをクリックし、「**編集**」を選択します。
-
-   ![変数の編集](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png)
-
-1. 必要に応じて変数の値を更新し、**適用** （行の最後にあるチェックマーク）をクリックして変更を適用するか、**破棄** （左矢印）をクリックして変更を元に戻します。
-
-   * 変数の値のみを編集できます。
-
-   ![変数の編集](/help/implementing/cloud-manager/assets/pipeline-variables-edit-save.png)
+   必要に応じて、変数を追加します。
 
 1. 「**保存**」をクリックします。
 
-変数を削除する場合は、「**変数設定** ウィンドウのパイプライン変数の省略記号メニューから **編集** ではなく **削除** を選択します。
+### パイプライン変数の編集 {#edit-ui}
 
-## Cloud Manager CLI の使用 {#cli}
+1. [ パイプラインの管理 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 時に、パイプライン変数を編集するパイプラインの ![ 省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
-この CLI コマンドは変数を設定します。
+1. ドロップダウンメニューで、「**変数を表示/編集**」をクリックします。
+
+   ![ パイプライン変数の表示/編集 ](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
+
+1. **変数設定** ダイアログボックスで、変更する変数の ![ 省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+
+1. ドロップダウンメニューで、「**編集**」をクリックします。
+
+   ![変数の編集](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png)
+
+1. 必要に応じて変数の値を更新します。
+
+   変更できるのは変数の値のみです。
+
+1. 次のいずれかの操作を行います。
+
+   * ![ 適用 – チェックマークアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg) をクリックして、変更を適用します。
+   * ![ 取り消しアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Undo_18_N.svg) をクリックして、変更を元に戻します。
+
+1. 「**保存**」をクリックします。
+
+### パイプライン変数の削除 {#delete-ui}
+
+1. [ パイプラインの管理 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 時に、パイプライン変数を削除するパイプラインの ![ 省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+
+1. ドロップダウンメニューで、「**変数を表示/編集**」をクリックします。
+
+   ![ パイプライン変数の表示/編集 ](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
+
+1. **変数設定** ダイアログボックスで、削除する変数の ![ 省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+
+1. ドロップダウンメニューで、「**削除**」をクリックします。
+
+
+## Cloud Manager CLI を使用したパイプライン変数の設定 {#cli}
+
+CLI （Command Line Interface）のこのコマンドは、変数を設定します。
 
 ```shell
 $ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test
@@ -97,7 +111,7 @@ $ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIAB
 $ aio cloudmanager:list-pipeline-variables PIPELINEID
 ```
 
-Maven `pom.xml` ファイル内で使用する場合は、通常、次のような構文を使用して、これらの変数を Maven プロパティにマッピングすると便利です。
+Maven `pom.xml` ファイルで使用する場合は、多くの場合、次の例のような構文を使用して、これらの変数を Maven プロパティにリンクすると便利です。
 
 ```xml
         <profile>

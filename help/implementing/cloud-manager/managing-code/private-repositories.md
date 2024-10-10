@@ -1,19 +1,19 @@
 ---
-title: Cloud Manager でのプライベート GitHub リポジトリの追加
+title: Cloud Managerにプライベート GitHub リポジトリを追加する
 description: 独自のプライベート GitHub リポジトリを操作する Cloud Manager を設定する方法について説明します。
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
-workflow-type: ht
-source-wordcount: '928'
-ht-degree: 100%
+source-git-commit: 2fa4abca9823bbc62900023d637429f3fbfd894d
+workflow-type: tm+mt
+source-wordcount: '930'
+ht-degree: 95%
 
 ---
 
-# Cloud Manager でのプライベート GitHub リポジトリの追加 {#private-repositories}
+# Cloud Managerにプライベート GitHub リポジトリを追加する {#private-repositories}
 
-プライベート GitHub リポジトリと統合するように Cloud Manager をセットアップすると、Cloud Manager を使用して GitHub 内で直接コードを検証できます。この設定により、コードを Adobe リポジトリと定期的に同期する必要がなくなります。
+プライベート GitHub リポジトリと統合するように Cloud Manager をセットアップすると、Cloud Manager を使用して GitHub 内で直接コードを検証できます。この設定により、コードをAdobeリポジトリと定期的に同期する必要がなくなります。
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
@@ -63,7 +63,7 @@ Cloud Manager でのプライベート GitHub リポジトリの設定は、次�
    | 説明（オプション） | リポジトリの詳細な説明です。 |
 
 1. 「**保存**」を選択します。
-これで、[プライベートリポジトリの所有権を検証](#validate-ownership)できるようになりました。
+これで、[ プライベートリポジトリの所有権を検証 ](#validate-ownership) できます。
 
 >[!TIP]
 >
