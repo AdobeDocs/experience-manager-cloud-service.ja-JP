@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 7bc6d9a947a5ce7c56481eaec8a2f186caf36c64
+source-git-commit: 6fa6fc9015624bec9113a198285531a3bdd7e29c
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 41%
+ht-degree: 42%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 41%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 18099 {#release-18099}
+## リリース 18175 {#release-18175}
 
-2024年10月9日（PT）に公開された、メンテナンスリリース 18099 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 17964 でした。
+2024年10月10日（PT）に公開された、メンテナンスリリース 18175 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 17964 でした。リリース 18099 は、問題が発生したことにより非公開になりました。
 
 2024.10.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
 
-### 機能強化 {#enhancements-18099}
+### 機能強化 {#enhancements-18175}
 
 * ASSETS-38322:AEMの http リクエストイベントを有効化。
 * ASSETS-41448：グループマッピングに対する FI をサポートするように、auth.ims バンドルを更新します。
@@ -56,12 +56,11 @@ ht-degree: 41%
 * SKYOPS-85336:Sling Commons Threadsを 3.3.0 に更新します。
 * SKYOPS-86329:java 21 sdk サポートのプラットフォームテストモジュールのバージョンを更新しています。
 
-### 修正された問題 {#fixed-issues-18099}
+### 修正された問題 {#fixed-issues-18175}
 
 * CNTBF-298: CC で書き出されたパッケージから jcr:uuid を削除します。
 * SKYOPS-83910:SKYOPS-82371 で見つかった同時実行の問題を修正しました。
 * GRANITE-52876:com.adobe.granite.ui.content 0.8.1448 を更新します。
-* GRANITE-53088:SITES-11992 の修正によって発生したリグレッション。
 * GUIDES-14445：ネイティブPDFの生成が失敗し、Node.js の依存関係の取得に関連するエラーが発生します。
 * GUIDES-16961:`<conref>` のタイトルが、web エディターのベースラインダッシュボードと翻訳ダッシュボードで解決されない。
 * GUIDES-17283:「**topicmeta に追加されたメタデータを使用**」オプションを選択すると、メタデータプロパティがネイティブPDF出力のドキュメントのプロパティに反映されません。
@@ -69,11 +68,11 @@ ht-degree: 41%
 
 リリースで修正された新機能および機能強化ガイドの機能と問題について詳しくは、[Experience Manager Guides リリースロードマップ ](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) を参照してください。
 
-### 既知の問題 {#known-issues-18099}
+### 既知の問題 {#known-issues-18175}
 
 * FORMS-15818: コンポーネント記述子のエントリ `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml`、サーバーログにステートメントが見つかりません。 これらは無害なログステートメントです。
 
-### 廃止された機能と API {#deprecated-18099}
+### 廃止された機能と API {#deprecated-18175}
 
 AEM as a Cloud Service で廃止および削除された機能と API について詳しくは、[廃止および削除された機能と API](/help/release-notes/deprecated-removed-features.md) ドキュメントを参照してください。
 
@@ -93,11 +92,11 @@ AEM as a Cloud Service で廃止および削除された機能と API につい�
 
 * GRANITE-54165：パブリック API の org.apache.jackrabbit.oak.plugins.blob を非推奨（廃止予定）にします。
 
-### セキュリティ修正 {#security-18099}
+### セキュリティ修正 {#security-18175}
 
 AEM as a Cloud Service では、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。このメンテナンスリリースでは、特定された 2 つの脆弱性に対処し、堅牢なシステム保護に対する取り組みを強化しています。
 
-### 組み込みテクノロジー {#embedded-tech-18099}
+### 組み込みテクノロジー {#embedded-tech-18175}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
