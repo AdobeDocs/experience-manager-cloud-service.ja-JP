@@ -9,10 +9,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 1c6ab84a7fadb543cc8e28424efe634627923e70
 workflow-type: tm+mt
-source-wordcount: '1433'
-ht-degree: 100%
+source-wordcount: '1380'
+ht-degree: 95%
 
 ---
 
@@ -64,8 +64,7 @@ AEM Forms 6.5 から AEM as a Cloud Service 環境へのスムーズな移行を
 
   ![ドライランの結果](assets/enable-add-on.png)
 
-* クラウドサービス環境では、移行ユーティリティはユーザーマッピングツールおよびコンテンツ転送ツールと連携して機能します。移行ユーティリティは、[!DNL AEM Forms] アセットをクラウドサービスと互換性のあるものにし、コンテンツ転送ツールは、コンテンツを [!DNL AEM Forms] 環境から[!DNL AEM] as a Cloud Service 環境に移行します。移行ユーティリティを使用する前に、[AEM as a Cloud Service に移行する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html?lang=ja)プロセスを学習します。このプロセスには次の 2 つのツールがあります。
-   * [ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#cloud-migration)：ユーザーマッピングツールは、対応するアドビの IMS ユーザーアカウントでユーザーをマッピングするのに役立ちます。
+* Cloud Service環境では、移行ユーティリティはコンテンツ転送ツールと連携して機能します。 移行ユーティリティは、[!DNL AEM Forms] アセットをクラウドサービスと互換性のあるものにし、コンテンツ転送ツールは、コンテンツを [!DNL AEM Forms] 環境から[!DNL AEM] as a Cloud Service 環境に移行します。移行ユーティリティを使用する前に、[AEM as a Cloud Service に移行する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html?lang=ja)プロセスを学習します。このプロセスでは、次のツールを使用します。
    * [コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja#cloud-migration)：コンテンツ転送ツールは、コンテンツを準備して、既存の環境からクラウドサービス環境に転送するのに役立ちます。これにより、ユーザーは AEM Forms からクラウド環境に簡単にアップグレードできます。
 * [!DNL AEM Forms] as a Cloud Service およびローカル [!DNL AEM Forms] 環境の管理者権限を持つアカウント。
 * [!DNL AEM Forms]ソフトウェア配布ポータル[からベストプラクティスアナライザー、コンテンツ転送ツール、](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html) 移行ユーティリティをダウンロードしてインストールする.
@@ -86,11 +85,9 @@ AEM Forms 6.5 から AEM as a Cloud Service 環境へのスムーズな移行を
 
    >[!NOTE]
    >
-   > 6.5 から Cloud Service に移行する場合は、クローン環境を使用してコンテンツ転送ツールおよび移行ユーティリティを実行することをお勧めします。コンテンツ転送ツールと移行ユーティリティで、コンテンツとアセットに変更をいくつか加えます。したがって、実稼働環境上でコンテンツ転送ツールと移行ユーティリティを実行しないでください。
+   > 6.5 からクラウドサービスに移行する場合は、クローン環境を使用してコンテンツ転送ツールと移行ユーティリティを実行することをお勧めします。 コンテンツ転送ツールと移行ユーティリティで、コンテンツとアセットに変更をいくつか加えます。そのため、実稼動環境でコンテンツ転送ツールや移行ユーティリティを実行しないでください。
 
 1. 管理者権限を使ってクローン環境にログインします。
-
-1. [ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#cloud-migration)を実行して、ユーザーを対応するアドビの IMS ユーザーアカウントにマッピングします。[!DNL AEM Forms] as a Cloud Service インスタンスにログインするには、アドビの IMS ユーザーアカウントが必要です。
 
 1. クローン環境の[ソフトウェア配布ポータル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja#cloud-migration)から、[!DNL AEM Forms]コンテンツ転送ツール[と ](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html) as a Cloud Service 移行ユーティリティをダウンロードしてインストールします。AEM パッケージマネージャーを使用して、ツールとユーティリティをインストールできます。
 
