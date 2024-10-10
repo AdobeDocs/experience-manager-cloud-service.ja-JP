@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 04ec933125da9ee3c84ffd948b144581d31763d6
 workflow-type: tm+mt
 source-wordcount: '2485'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
 >title="AEM as a Cloud Service の非推奨（廃止予定）の機能と削除された機能"
->abstract="AEM as a Cloud Service には、クラウドネイティブなデプロイメントモデルがあります。一部の機能は、クラウドネイティブな同等機能に置き換えられました。ここでは、それらの機能を示します。"
+>abstract="AEM as a Cloud Service には、クラウドネイティブなデプロイメントモデルがあります。一部の機能や特徴は、クラウドネイティブでの同等機能に置き換えられました。ここでは、それらの機能を示します。"
 
 アドビでは、製品の機能を絶えず評価して、常に後方互換性を慎重に考慮しながら、古い機能を作成し直したり、新たな機能に置き換えて、お客様にとっての全体的な価値を向上させます。また、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] はクラウドネイティブなデプロイメントモデルを提供するので、一部の機能はクラウドネイティブな同等機能に置き換わりました。
 
@@ -35,7 +35,7 @@ ht-degree: 98%
 
 | 機能 | 非推奨（廃止予定）の機能 | 代替手段 |
 | ------------ | ------------------ | ----------- |
-| [!DNL Sites] | [JavaScript使用 API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) |
+| [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/ja/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **ソーシャルメディアのステータス** のエクスペリエンスフラグメントのプロパティ。  | この機能は間もなく削除されます。 |
 | [!DNL Sites] | テンプレートベースのシンプルなコンテンツフラグメント。 | 現在は[モデルベースの構造化コンテンツフラグメント](/help/assets/content-fragments/content-fragments-models.md)。 |
 | [!DNL Assets] | 取り込んだ画像を処理する `DAM Asset Update` ワークフロー | 現在は、アセットの取り込みで[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が使用されています。 |

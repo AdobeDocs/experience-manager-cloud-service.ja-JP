@@ -6,7 +6,7 @@ role: Admin
 source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -30,15 +30,15 @@ AEM as a Cloud Service の Cloud Manager リリース 2024.10.0 のリリース�
 
 <!-- (CMGR-59817) -->
 
-* <!-- CS ONLY --> 新しいカスタムドメインを追加する際、以前の検証方法では長い DNS 検証プロセスが必要でした。 Adobeは、お客様に対してこのプロセスを簡略化しました。 現在は、所有権の証明として機能する有効な SSL 証明書（EV または OV）を指定するだけで済みます。 DNS の TXT レコードを更新する必要はなくなりました。
+* <!-- CS ONLY --> 新しいカスタムドメインの追加時、以前の検証方法では長い DNS 検証プロセスが必要でした。アドビは、お客様向けにこのプロセスを簡略化しました。現在は、所有権の証明として機能する有効な SSL 証明書（EV または OV）を指定するだけ済みます。DNS の TXT レコードを更新する必要はなくなりました。
 
   >[!NOTE]
   >
-  >この機能は、お客様が管理する EV および OV 証明書にのみ適用されます。 Adobeで管理される DV 証明書には、引き続き CNAME レコードが必要です。
+  >この機能は、お客様が管理する EV および OV 証明書にのみ適用されます。アドビが管理する DV 証明書には、引き続き CNAME レコードが必要です。
 
-  [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。
+  [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。
 
-  ![顧客が管理する EV／OV 証明書のドメインを検証](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
+  ![顧客が管理する EV/OV 証明書のドメイン検証](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
 * <!-- CS ONLY --> ネットワークインフラストラクチャを追加または編集する際、IP アドレスフィールドとネットワークマスクフィールドの値は、次のルールに従って検証されます。
 

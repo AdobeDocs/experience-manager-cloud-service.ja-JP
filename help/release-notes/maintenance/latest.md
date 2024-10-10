@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: ea7e027b5247b64e78da1d14e4e602f39a37e4bd
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 27%
+ht-degree: 39%
 
 ---
 
@@ -83,17 +83,17 @@ ht-degree: 27%
 
 AEM as a Cloud Service で廃止および削除された機能と API について詳しくは、[廃止および削除された機能と API](/help/release-notes/deprecated-removed-features.md) ドキュメントを参照してください。
 
-次に、最近非推奨（廃止予定）になった機能や、廃止予定の機能の概要を示します。
+次に、最近廃止された機能や、廃止予定の機能の概要を示します。
 
-#### JavaScriptの使用 API {#javascript-use-api}
+#### JavaScript Use API {#javascript-use-api}
 
 [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) は、API を活用したコードのデバッグと保守に関する課題があったこと、Java の代替手段と比較してパフォーマンスの制限があったため、正式に廃止されました。
 
-パフォーマンスの向上、デバッグの容易さ、長期サポートの強化を実現する [Java Use API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) に移行する必要があります。
+[Java Use API](https://experienceleague.adobe.com/ja/docs/experience-manager-htl/content/java-use-api) に移行する必要があります。これにより、パフォーマンスが向上し、デバッグが容易になり、長期サポートが強化されます。
 
 #### com.day.cq.wcm.api {#com-day-cq-wcm-api}
 
-Adobeでは現在、`com.day.cq.wcm.api` のアップデートを行っています。 メソッドやクラスの一部は、現在のリリースでは `@Deprecated` としてマークされています。 これらは今後のリリースで削除される予定です。 推奨の代替案に切り替えることを検討してください。
+アドビは現在 `com.day.cq.wcm.api` を更新中です。メソッドやクラスの一部は、現在のリリースでは `@Deprecated` としてマークされています。これらは今後のリリースで削除される予定です。推奨の代替案に切り替えることを検討してください。
 
 #### org.apache.jackrabbit.oak.plugins.blob {#org.apache.jackrabbit.oak.plugins.blob}
 
