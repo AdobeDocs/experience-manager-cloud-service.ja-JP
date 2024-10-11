@@ -318,7 +318,7 @@ ht-degree: 100%
 * ACS AEM Commons を最新バージョンに更新
 * `org.apache.sling.commons.auth` や `org.apache.sling.commons.auth.spi` から `org.apache.sling.auth` または `org.apache.sling.auth.spi` にそれぞれ移行します。
 
-### `org.eclipse.jetty*` {#org.eclipse.jetty} の削除
+### `org.eclipse.jetty*` の削除 {#org.eclipse.jetty}
 
 `org.eclipse.jetty` パッケージまたはそのサブパッケージのいずれかを使用する場合は、同様の機能を備えた他のサードパーティライブラリに移行することをお勧めします。移行が不可能な場合は、以下のリストから必要なバンドルをプロジェクトに追加します。
 
@@ -334,7 +334,7 @@ ht-degree: 100%
    * `org.eclipse.jetty:jetty-util:9.4.54.v20240208`
    * `org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208`
 
-### `com.mongodb` {#com.mongodb} の削除
+### `com.mongodb` の削除 {#com.mongodb}
 
 Mongo client API をプロジェクトに追加します。
 
