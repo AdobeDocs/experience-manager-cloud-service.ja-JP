@@ -310,7 +310,7 @@ ht-degree: 100%
 </table>
 </details>
 
-### `org.apache.sling.commons.auth*` の削除 {#org.apache.sling.commons.auth}
+### `org.apache.sling.commons.auth*` の削除 {#org.apache.sling.commons.auth}
 
 `org.apache.sling.commons.auth` や `org.apache.sling.commons.auth.spi` を使用している場合、コードをそれぞれ `org.apache.sling.auth` または。 `org.apache.sling.auth.spi` に移行することで使用を置き換えることができます。古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
 
@@ -318,7 +318,7 @@ ht-degree: 100%
 * ACS AEM Commons を最新バージョンに更新
 * `org.apache.sling.commons.auth` や `org.apache.sling.commons.auth.spi` から `org.apache.sling.auth` または `org.apache.sling.auth.spi` にそれぞれ移行します。
 
-### `org.eclipse.jetty*` の削除 {#org.eclipse.jetty}
+### `org.eclipse.jetty*` {#org.eclipse.jetty} の削除
 
 `org.eclipse.jetty` パッケージまたはそのサブパッケージのいずれかを使用する場合は、同様の機能を備えた他のサードパーティライブラリに移行することをお勧めします。移行が不可能な場合は、以下のリストから必要なバンドルをプロジェクトに追加します。
 
@@ -334,7 +334,7 @@ ht-degree: 100%
    * `org.eclipse.jetty:jetty-util:9.4.54.v20240208`
    * `org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208`
 
-### `com.mongodb` の削除 {#com.mongodb}
+### `com.mongodb` {#com.mongodb} の削除
 
 Mongo client API をプロジェクトに追加します。
 
