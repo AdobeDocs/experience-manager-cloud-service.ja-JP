@@ -4,10 +4,10 @@ description: Cloud Acceleration Manager を使用して、移行セットから�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
-workflow-type: ht
-source-wordcount: '2982'
-ht-degree: 100%
+source-git-commit: 766573bfeb5190d212e87b18331e41820ddd3e32
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -228,6 +228,20 @@ MongoDB に保存されるノードプロパティの値は、16 MB 未満にす
 >[!NOTE]
 >
 >[ベストプラクティスアナライザー](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)バージョン 2.1.50 以降では、最大サイズを超える Unicode 文字を含む大きなノードがレポートされます。最新バージョンを実行していることを確認してください。2.1.50 より前の BPA バージョンでは、これらの大規模なノードを識別してレポートすることはできず、上記の前提条件となる Oak ツールを使用して個別に検出する必要があります。
+
+### 予期しない断続的なエラーによる取り込み失敗 {#ingestion-failure-due-to-unexpected-intermittent-errors}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
+>title="予期しない断続的なエラー"
+>abstract="予期しない断続的なダウンストリームサービスエラーが発生する場合がありますが、残念ながら、取り込みを再試行するしかありません。"
+
+予期しない断続的な問題が発生すると、取り込みの失敗に役立つ場合がありますが、その場合は、残念ながら、取り込みを再試行するしかありません。 取り込みログを調査して失敗の原因を明らかにし、再試行を試みる必要がある以下のエラーに一致するかどうかを確認します。
+
+## MongoDB の問題 {#mongo-db-issues}
+
+* `Atlas prescale timeout error` – 取り込みフェーズでは、取り込まれる移行セットコンテンツのサイズに合った適切なサイズに、ターゲットのクラウドデータベースを事前にスケジュールしようとします。 まれに、この操作が期待された期間内に完了しないことがあります。
+* `Exhausted mongo restore retries` – 取り込んだ移行セットの内容のローカルダンプをクラウドデータベースに復元する試みが使い果たされました。 これは、MongoDB の全体的なヘルス/ネットワークの問題を示しており、多くの場合、数分後に自然に治癒します。
 
 ### 取り込みの取り消し {#ingestion-rescinded}
 
