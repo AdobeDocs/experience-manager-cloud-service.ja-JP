@@ -5,10 +5,10 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 59%
+source-wordcount: '1321'
+ht-degree: 58%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 59%
 
 [AEM as a Cloud Service デプロイメントプロセスで使用できる品質ゲート ](/help/implementing/cloud-manager/deploy-code.md) および様々なタイプの組み込み機能テストについて説明します。 包括的なテスト戦略のフレームワーク内で、使用をコントリビューションおよび最適化する方法について説明します。
 
-## 概要
+## 機能テストについて
 
 次の図は、テスト戦略全体のコンテキストで使用可能なパイプラインの概要と、[AEM as a Cloud Service デプロイメントプロセス](/help/implementing/cloud-manager/deploy-code.md)を示しています。
 
 ![AEM Cloud Service デプロイメントの品質ゲート](assets/functional-testing/quality-gates-compact.svg)
 
-## 目的
+## 機能テストの目的
 
 AEM Cloud Service デプロイメントパイプラインの目的は、開発および AEM 製品リリースのライフサイクルの様々な段階で、堅牢で安全なデプロイメントを容易にすることです。これらのパイプラインには、様々なレベルで複数の品質ゲートが組み込まれており、AEM アプリケーションの変更と AEM 製品のアップデートの両方に対するデプロイメントの整合性と安全性を確保できます。
 
@@ -38,13 +38,13 @@ Adobeには、いくつかの組み込みの品質ゲートが用意されてい
 
 これらの品質ゲートは、テスト戦略全体の包括的なテストフレームワークではないことに注意する必要があります。AEM 製品は、AEM Cloud Service のデプロイメントプロセスに入る前に、広範なテストが行われます。同様に、アプリケーションは、デプロイメントフェーズに達する前に、既に高品質である必要があります。このアプローチは、品質ゲートが完全なテスト計画の代わりとなるのではなく、デプロイメントプロセスを保護する主要目的に焦点を当てるようにします。
 
-## 品質ゲート
+## テストの品質ゲート
 
 次の図は、使用可能な品質ゲートの詳細図、テスト戦略全体でのその使用状況、および [AEM as a Cloud Service デプロイメントプロセス](/help/implementing/cloud-manager/deploy-code.md)を示します。
 
 ![AEM Cloud Service デプロイメントの品質ゲート](assets/functional-testing/quality-gates-overview.svg)
 
-### お客様が提供する品質ゲートの概要
+### 概要顧客提供品質ゲート
 
 |                               | 単体テスト | カスタム<br/> 機能テスト | カスタム<br/> UI テスト | 顧客<br/> 検証 | 手動<br/> テスト |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|

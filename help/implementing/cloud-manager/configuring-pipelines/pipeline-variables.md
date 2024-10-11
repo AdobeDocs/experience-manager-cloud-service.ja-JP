@@ -1,22 +1,22 @@
 ---
-title: パイプライン変数の設定
+title: Cloud Managerのパイプライン変数
 description: Cloud Manager でパイプライン変数を使用して、お使いのビルドに特有の設定変数を管理する方法について説明します。
 exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f7a8e823f058115f11241f0864517432a7dea5ab
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 28%
+source-wordcount: '621'
+ht-degree: 27%
 
 ---
 
-# パイプライン変数の設定 {#configuring-pipeline-variables}
+# Cloud Managerのパイプライン変数 {#configuring-pipeline-variables}
 
 ビルドプロセスが、Git リポジトリに保存してはいけない特定の設定変数に依存している可能性があります。 または、同じブランチ上で実行されるパイプライン間で調整する必要がある場合もあります。 Cloud Managerでは、これらの設定をパイプライン変数として管理できます。
 
-## パイプライン変数 {#pipeline-variables}
+## パイプライン変数について {#pipeline-variables}
 
 Cloud Manager を使用すると、複数の方法でパイプライン変数を設定できます。
 
@@ -26,7 +26,7 @@ Cloud Manager を使用すると、複数の方法でパイプライン変数を
 
 変数は、プレーンテキストとして保存することも、保存時に暗号化することもできます。どちらの場合も、変数はビルド環境内で環境変数として使用可能になり、変数は `pom.xml` ファイル内または他のビルドスクリプト内から参照できます。
 
-## Cloud Managerを使用したパイプライン変数の追加 {#ui}
+## Cloud Managerからパイプライン変数を追加する {#ui}
 
 パイプライン変数は、Cloud Manager ユーザーインターフェイスを通じて設定および管理できます。 これは、特に様々なステップで様々な設定が必要な場合に、パイプライン管理の効率化に役立ちます。
 
@@ -34,7 +34,7 @@ Cloud Manager を使用すると、複数の方法でパイプライン変数を
 
 パイプラインが実行中の場合、変数管理はブロックされます。
 
-### パイプライン変数を追加 {#add-ui}
+**Cloud Managerを使用してパイプライン変数を追加するには：**
 
 1. [ パイプラインの管理 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 時に、パイプライン変数を作成するパイプラインの ![ 省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
@@ -59,7 +59,7 @@ Cloud Manager を使用すると、複数の方法でパイプライン変数を
 
 1. 「**保存**」をクリックします。
 
-### パイプライン変数の編集 {#edit-ui}
+## パイプライン変数の編集 {#edit-ui}
 
 1. [ パイプラインの管理 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 時に、パイプライン変数を編集するパイプラインの ![ 省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
@@ -84,7 +84,7 @@ Cloud Manager を使用すると、複数の方法でパイプライン変数を
 
 1. 「**保存**」をクリックします。
 
-### パイプライン変数の削除 {#delete-ui}
+## パイプライン変数の削除 {#delete-ui}
 
 1. [ パイプラインの管理 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 時に、パイプライン変数を削除するパイプラインの ![ 省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
