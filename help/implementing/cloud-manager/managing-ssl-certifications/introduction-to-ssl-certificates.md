@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 912e63b2ff11e24392fc7509945f352ab07c60cc
+source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 97%
+source-wordcount: '928'
+ht-degree: 89%
 
 ---
 
@@ -40,8 +40,8 @@ Cloud Manager には、SSL 証明書をインストールおよび管理する�
 
 | | モデル | 説明 |
 | --- | --- | --- |
-| A | **[アドビが管理する証明書（DV）](#adobe-managed)** | Cloud Manager を使用すると、ユーザーはアドビが提供する DV（ドメイン検証）証明書を設定して、ドメインをすばやく設定できます。 |
-| B | **[顧客が管理する証明書（OV／EV）](#customer-managed)** | Cloud Manager は、プラットフォーム TLS（Transport Layer Security）サービスを提供し、所有する OV および EV SSL 証明書と、サードパーティの証明機関からの秘密鍵（*Let&#39;s Encrypt* など）を管理できます。 |
+| A | **[Adobe管理 SSL 証明書（DV）](#adobe-managed)** | Cloud Manager を使用すると、ユーザーはアドビが提供する DV（ドメイン検証）証明書を設定して、ドメインをすばやく設定できます。 |
+| B | **[顧客管理 SSL 証明書（OV/EV）](#customer-managed)** | Cloud Manager は、プラットフォーム TLS（Transport Layer Security）サービスを提供し、所有する OV および EV SSL 証明書と、サードパーティの証明機関からの秘密鍵（*Let&#39;s Encrypt* など）を管理できます。 |
 
 どちらのモデルも、証明書を管理する次の一般的な機能を提供します。
 
@@ -53,20 +53,19 @@ Cloud Manager には、SSL 証明書をインストールおよび管理する�
 >
 >[カスタムドメインを追加して環境に関連付けるには](/help/implementing/cloud-manager/custom-domain-names/introduction.md)、そのドメインを対象とする有効な SSL 証明書が必要です。
 
-### アドビが管理する証明書 {#adobe-managed}
+### Adobe管理（DV） SSL 証明書 {#adobe-managed}
 
 DV 証明書は、最も基本的なレベルの SSL 証明書で、多くの場合、テスト目的や、基本的な暗号化で web サイトを保護する目的で使用されます。DV 証明書は[実稼動プログラムとサンドボックスプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)の両方で利用できます。
 
 DV 証明書を作成すると、その証明書を削除しない限り、アドビが 3 か月ごとに自動的に更新します。
 
-### 顧客が管理する証明書 {#customer-managed}
+### 顧客管理の OV/EV SSL 証明書 {#customer-managed}
 
 OV 証明書と EV 証明書は、CA で検証された情報を提供します。このような情報は、web サイト所有者、メール送信者、コードや PDF ドキュメントのデジタル署名者が信頼できるかどうかを評価するのに役立ちます。DV 証明書では、このような所有権の検証は許可されません。
 
 また、OV と EV は、Cloud Manager の DV 証明書を通じてこれらの機能も提供します。
 
-* 複数の環境で OV／EV 証明書を使用できます。
-   * つまり、1 度の追加で複数回使用できます。
+* 複数の環境が 1 つの OV/EV 証明書を使用できます。 つまり、1 度の追加で複数回使用できます。
 * 通常、各 OV／EV 証明書には複数のドメインが含まれます。
 * Cloud Manager は、ドメインのワイルドカード OV／EV 証明書を受け付けます。
 
@@ -80,12 +79,12 @@ OV 証明書と EV 証明書は、CA で検証された情報を提供します�
 >
 >例えば、ドメインが `dev.adobe.com` で、`*.adobe.com` 用の証明書と `dev.adobe.com` 用の証明書がそれぞれ 1 つずつある場合は、より具体的な証明書（`dev.adobe.com`）が使用されます。
 
-#### 顧客が管理する証明書の要件 {#requirements}
+#### 顧客管理の OV/EV SSL 証明書の要件 {#requirements}
 
-独自の EV／OV 証明書をアップロードする場合は、次の要件を満たす必要があります。
+顧客が管理する独自の OV/EV SSL 証明書を追加する場合は、次の要件を満たす必要があります。
 
 * AEM as a Cloud Service では、OV（組織検証）ポリシーまたは EV（拡張検証）ポリシーに準拠する証明書を受け付けます。
-   * Cloud Manager は、独自の DV（ドメイン検証）証明書のアップロードをサポートしていません。
+   * Cloud Managerは、独自の DV （Domain Validation）証明書の追加をサポートしていません。
 * 証明書はすべて、2048 ビットの RSA 秘密鍵と一致する信頼できる証明機関の X.509 TLS 証明書である必要があります。
 * 自己署名証明書は受け付けられません。
 
@@ -115,7 +114,7 @@ SSL 証明書ファイルを Cloud Manager でインストールするには、S
 
 >[!TIP]
 >
->Adobeでは、Cloud Manager を使用して証明書をインストールする前に、`openssl verify -untrusted intermediate.pem certificate.pem` などのツールを使用して証明書の整合性をローカルで検証することをお勧めします。
+>Adobeでは、Cloud Managerを使用して証明書をインストールする前に、`openssl verify -untrusted intermediate.pem certificate.pem` などのツールを使用して証明書の整合性をローカルで検証することをお勧めします。
 
 ## インストールする SSL 証明書の数の制限 {#limitations}
 

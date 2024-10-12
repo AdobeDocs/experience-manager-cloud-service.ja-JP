@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
-workflow-type: ht
-source-wordcount: '832'
-ht-degree: 100%
+source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+workflow-type: tm+mt
+source-wordcount: '847'
+ht-degree: 84%
 
 ---
 
@@ -17,15 +17,11 @@ ht-degree: 100%
 
 Cloud Manager がカスタムドメイン名を正常に確認したことを確かめる方法について説明します。
 
-## 要件 {#requirements}
-
-Cloud Manager でドメイン名のステータスを確認する前に、次の要件を満たす必要があります。
-
-* まず、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)ドキュメントの説明に従って、カスタムドメインの EV／OV 証明書を追加します。
-
 ## カスタムドメイン名のステータスの確認 {#how-to}
 
-Cloud Manager 内でカスタムドメイン名のステータスを判断できます。
+Cloud Managerでドメイン名のステータスを確認する前に、「顧客管理の SSL 証明書の追加 [ の説明に従って、カスタムドメイン用の顧客管理（OV/EV） SSL 証明書が既に追加されていることを確認してくだ ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md##add-customer-managed-ssl-cert) い。
+
+**カスタムドメイン名のステータスを確認するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
@@ -33,7 +29,7 @@ Cloud Manager 内でカスタムドメイン名のステータスを判断でき
 
 1. **概要**&#x200B;ページから&#x200B;**環境**&#x200B;画面に移動します。
 
-1. 左側のナビゲーションパネルで「**ドメイン設定**」をクリックします。
+1. 左側のメニューで **ドメイン設定** をクリックします。
 
 1. そのドメイン名の&#x200B;**ステータス**&#x200B;アイコンをクリックします。
 
@@ -41,11 +37,14 @@ Cloud Manager 内でカスタムドメイン名のステータスを判断でき
 
 >[!NOTE]
 >
->[Cloud Manager に新しいカスタムドメイン名を追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)する際に、**カスタムドメインを追加**&#x200B;ウィザードの検証手順で「**作成**」を選択すると、Cloud Manager で自動的に検証がトリガーされます。それ以降の検証では、ステータスの横にある再検証アイコンをアクティブに選択する必要があります。
+>ドメインで *Adobe管理（DV） SSL 証明書を使用している場合* Cloud Managerでは、「カスタムドメイン名の追加 [ 時に **ドメインの検証ダイアログボックスの「** 検証 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)」をクリックすると、検証が自動的にトリガーされます。
+>
+>**顧客管理（OV/EV） SSL 証明書** を使用する予定がある場合、ドメインは *後* OV/EV SSL 証明書を追加 [ 検証されます ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
+
 
 ## 検証ステータス {#statuses}
 
-Cloud Manager は、顧客が管理する証明書を使用してドメインの所有権を検証します。完了すると、次のいずれかのステータスメッセージが表示されます。
+Cloud Managerは、顧客管理（OV/EV） SSL 証明書を使用してドメインの所有権を検証します。 完了すると、次のいずれかのステータスメッセージが表示されます。
 
 | ステータス | 説明 |
 | --- | --- |
