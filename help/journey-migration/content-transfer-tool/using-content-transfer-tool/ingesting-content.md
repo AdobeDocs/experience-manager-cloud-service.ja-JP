@@ -4,10 +4,10 @@ description: Cloud Acceleration Manager を使用して、移行セットから�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 766573bfeb5190d212e87b18331e41820ddd3e32
+source-git-commit: ec80660d45c69363690b653dd54634c74c3c9907
 workflow-type: tm+mt
 source-wordcount: '3137'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 95%
 >id="aemcloud_ctt_ingestion"
 >title="コンテンツの取り込み"
 >abstract="取得とは、移行セットから宛先の Cloud Service インスタンスにコンテンツを取得することを指します。 コンテンツ転送ツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=ja#top-up-extraction-process" text="追加抽出"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="追加抽出"
 
 Cloud Acceleration Manager を使用して移行セットを取り込むには、次の手順に従います。
 
@@ -94,7 +94,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 >id="aemcloud_ctt_ingestion_topup"
 >title="追加取り込み"
 >abstract="前回のコンテンツ転送アクティビティ以降に変更されたコンテンツを移動するには、追加取り込み機能を使用します。 取り込みが完了したら、エラーや警告がないかログを確認します。 エラーが発生した場合は、報告された問題を解決するかアドビカスタマーケアに連絡して、すぐに対処してください。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ja" text="ログの表示"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="ログの表示"
 
 コンテンツ転送ツールには、移行セットの&#x200B;*追加*&#x200B;を実行することで、差分コンテンツを抽出できる機能が備わっています。これにより、再度すべてのコンテンツを抽出するのではなく、前回の抽出以降に変更されたコンテンツのみを含めるように移行セットを変更できます。
 
@@ -113,7 +113,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="コンテンツ取り込みのトラブルシューティング"
 >abstract="取り込みログとドキュメントを参照して、取り込みが失敗する一般的な原因に関する解決策を見つけ、問題を修正します。 修正したら、取り込みを再実行できます。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=ja" text="コンテンツ転送の検証"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="コンテンツ転送の検証"
 
 ### CAM が移行トークンを取得できない {#cam-unable-to-retrieve-the-migration-token}
 
@@ -146,13 +146,13 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 > 「移行トークン」フィールドが表示されるのは、そのトークンの取得が実際には許可されていない場合があるためです。手動で指定できるようにすることで、ユーザーは追加のヘルプなしで、すばやく取り込みを開始できます。 トークンが指定されているにもかかわらず、メッセージが表示される場合、問題はトークンの取得ではありません。
 
 * AEM as a Cloud Service は環境の状態を維持し、様々な通常の理由で移行サービスの再起動が必要になる場合があります。そのサービスが再起動中の場合はサービスにアクセスできませんが、最終的には利用できるようになります。
-* インスタンス上で別のプロセスが実行されている可能性があります。例えば、[AEM バージョンの更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=ja)の適用中にシステムがビジー状態になり、移行サービスが定期的に利用できなくなる可能性があります。その場合はプロセスが完了すると、取り込みの開始を再試行できます。
+* インスタンス上で別のプロセスが実行されている可能性があります。例えば、[AEM バージョンの更新](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)の適用中にシステムがビジー状態になり、移行サービスが定期的に利用できなくなる可能性があります。その場合はプロセスが完了すると、取り込みの開始を再試行できます。
 * Cloud Manager を使用して [IP 許可リストが適用されている](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)場合、Cloud Acceleration Manager が移行サービスに到達するのをブロックします。アドレスが動的なので、取り込み用に IP アドレスを追加することはできません。現在、唯一の解決策は、取り込みとインデックス作成プロセス中に IP 許可リストを無効にすることです。
 * 調査が必要となる理由が、他に存在する場合があります。それでも取り込みやインデックス作成に失敗する場合は、アドビカスタマーケアにお問い合わせください。
 
 ### AEM バージョンの更新と取り込み {#aem-version-updates-and-ingestions}
 
-[AEM バージョンの更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=ja)は、最新の AEM as a Cloud Service バージョンを使用して最新の状態に保つために、環境に自動的に適用されます。取り込みの実行中に更新がトリガーされると、環境が壊れるなど、予期しない結果が生じる可能性があります。
+[AEM バージョンの更新](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)は、最新の AEM as a Cloud Service バージョンを使用して最新の状態に保つために、環境に自動的に適用されます。取り込みの実行中に更新がトリガーされると、環境が壊れるなど、予期しない結果が生じる可能性があります。
 
 移行先プログラムで「AEM バージョンの更新」がオンボーディングされている場合、取り込みプロセスでは、開始前にそのキューを無効にしようとします。取り込みが完了すると、バージョン更新の状態が、取り込み開始前の状態に戻ります。
 
@@ -174,7 +174,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="一意性制約違反"
 >abstract="非ワイプ取り込みエラーの一般的な原因は、ノード ID の競合です。 競合するノードは 1 つのみ存在できます。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=ja#top-up-ingestion-process" text="追加取り込み"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="追加取り込み"
 
 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)エラーの一般的な原因は、ノード ID の競合です。このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
 
@@ -194,7 +194,7 @@ AEM の各ノードには、一意の UUID が必要です。このエラーは�
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="参照されているノードを削除できません"
 >abstract="非ワイプ取り込みエラーの一般的な原因は、移行先インスタンスの特定のノードに対するバージョンの競合です。 ノードのバージョンを修正する必要があります。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=ja#top-up-ingestion-process" text="追加取り込み"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="追加取り込み"
 
 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)が失敗するもう一つの一般的な原因は、移行先インスタンスの特定のノードに対するバージョンの競合です。このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
 
@@ -212,7 +212,7 @@ AEM の各ノードには、一意の UUID が必要です。このエラーは�
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="大きなノードプロパティ"
 >abstract="取り込みエラーの一般的な原因は、ノードプロパティの値の最大サイズを超えていることです。 この状況を修正するには、ドキュメント（BPA レポートに関連するものを含む）に従います。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=ja" text="移行の前提条件"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="移行の前提条件"
 
 MongoDB に保存されるノードプロパティの値は、16 MB 未満にする必要があります。ノード値がサポートされているサイズを超えると、取り込みに失敗し、ログには次のいずれかが含まれます。
 
