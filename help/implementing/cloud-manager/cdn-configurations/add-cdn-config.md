@@ -5,19 +5,19 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: 42b30c12f17106610cfb7f7b4c04c5ab703bab45
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 7%
+ht-degree: 11%
 
 ---
 
 
-# CDN （コンテンツ配信ネットワーク）設定の追加 {#add-cdn}
+# CDN 設定の追加 {#add-cdn}
 
 プログラム内でAdobeが管理する CDN の SSL 証明書にドメインをリンクするには、CDN （コンテンツ配信ネットワーク）設定を追加する必要があります。
 
-Adobeが管理する CDN の場合、DV 証明書を使用する場合、ACME 検証が有効なサイトのみ許可されます。
+Adobe管理の CDN で DV SSL 証明書を使用する場合、ACME 検証が有効なサイトのみ許可されます。
 
 >[!IMPORTANT]
 >
@@ -31,8 +31,8 @@ Adobeが管理する CDN の場合、DV 証明書を使用する場合、ACME �
 
    | ユースケース | ステップ |
    | --- | --- |
-   | Cloud Managerの *既存の* Edge Delivery サイトに CDN 設定を追加したいのですが、 | 回答：左側のナビゲーションパネルの **サービス** の下の **Edge Delivery Sites** をクリックします。<br>b.Edge Delivery テーブルで、ドメインが関連付けられていない行の最後にある「。..」をクリックします。<br>c.**CDN を設定** をクリックします。  ![Edge Delivery サイトの CDN を設定をクリックする ](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png) |
-   | Cloud Managerに CDN 設定を追加したいのですが、 | a.左側のナビゲーションパネルの **サービス** の下の **CDN 設定** をクリックします。<br>b.CDN 設定ページの右上隅付近にある「**追加**」をクリックします。 |
+   | Cloud Managerの *既存の* Edge Delivery サイトに CDN 設定を追加したいのですが、 | a.左側のメニューの **サービス** で、**Edge Delivery Sites** をクリックします。<br>b.Edge Delivery テーブルで、ドメインが関連付けられていない行の最後にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。<br>c.**CDN を設定** をクリックします。  ![Edge Delivery サイトの CDN を設定をクリックする ](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png) |
+   | Cloud Managerに CDN 設定を追加したいのですが、 | a.左側のメニューの **サービス** で、「**CDN 設定**」をクリックします。<br>b.CDN 設定ページの右上隅付近にある「**追加**」をクリックします。 |
 
 1. **CDN を設定** ダイアログボックスの **接触チャネル** ドロップダウンリストで、次のいずれかを選択します。
 
@@ -47,7 +47,7 @@ Adobeが管理する CDN の場合、DV 証明書を使用する場合、ACME �
 
    | CDN タイプ | 設定の詳細 |
    | --- | --- |
-   | アドビが管理する CDN | **設定の詳細** で、次の操作を行います。<br>a.**ドメイン** ドロップダウンリストで、使用するドメイン名を選択します。<br> ドロップダウンリストに利用可能な検証済みドメインがありませんか？ [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。<br>b.**SSL 証明書** ドロップダウンリストで、使用する証明書を選択します。<br> ドロップダウンリストに SSL 証明書は表示されませんか？ [SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。 |
-   | その他 CDN プロバイダー | 使用可能なAdobe管理の CDN ではなく独自の CDN プロバイダーを使用している場合は、このオプションを選択します。<br>**設定の詳細** の **ドメイン** ドロップダウンリストで、使用するドメイン名を選択します。<br> ドロップダウンリストに利用可能な検証済みドメインがありませんか？ [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。 |
+   | アドビが管理する CDN | **設定の詳細** で、次の操作を行います。<br>a.**ドメイン** ドロップダウンリストで、使用するドメイン名を選択します。<br> ドロップダウンリストに利用可能な検証済みドメインがありませんか？ [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。<br>b.**SSL 証明書** ドロップダウンリストで、使用する証明書を選択します。<br> ドロップダウンリストに SSL 証明書は表示されませんか？ [SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。 |
+   | その他 CDN プロバイダー | 使用可能なAdobe管理の CDN ではなく独自の CDN プロバイダーを使用している場合は、このオプションを選択します。<br>**設定の詳細** の **ドメイン** ドロップダウンリストで、使用するドメイン名を選択します。<br> ドロップダウンリストに利用可能な検証済みドメインがありませんか？ [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。 |
 
 1. 「**保存**」をクリックします。
