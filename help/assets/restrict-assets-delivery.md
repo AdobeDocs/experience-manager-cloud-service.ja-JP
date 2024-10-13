@@ -1,66 +1,42 @@
 ---
-title: Experience Managerでのアセットの配信を制限
-description: ' [!DNL Experience Manager] でアセット配信を制限する方法を説明します。'
+title: OpenAPI 機能を使用したDynamic Mediaによるアセットの配信制限
+description: OpenAPI 機能を使用してアセットの配信を制限する方法を説明します。
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 6e9fa8301fba9cab1a185bf2d81917e45acfe3a3
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 2%
+source-wordcount: '1181'
+ht-degree: 1%
 
 ---
 
-# [!DNL Experience Manager] のアセットへのアクセス制限 {#restrict-access-to-assets}
+# OpenAPI 機能を使用したDynamic Mediaによるアセットの配信制限 {#restrict-access-to-assets}
 
 | [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Experience Managerの中央アセットガバナンスを使用すると、DAM 管理者またはブランド管理者がアセットへのアクセスを管理できます。 オーサリング側、特にAEM as a Cloud Service オーサーインスタンスで承認済みアセットの役割を設定することで、アクセスを制限できます。
+Experience Managerのアセットガバナンスの一元化により、DAM 管理者またはブランド管理者は、OpenAPI 機能を使用して、Dynamic Mediaを通じて使用可能なアセットへのアクセスを管理できます。 AEM as a Cloud Service オーサーサービスでアセットに特定のメタデータを設定することで ](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy) 選択した [AdobeのIdentity Management System （IMS）ユーザーまたはグループに（個々のアセットに対して）承認済みアセットの配信を制限できます。
 
-ユーザー [ 検索 ](search-assets-api.md) または [ 配信 URL](deliver-assets-apis.md) の利用は、認証プロセスを正常に渡すと、制限付きアセットにアクセスできます。
+OpenAPI を使用したDynamic Mediaによってアセットが制限されると、そのアセットへのアクセスを許可された（Adobe IMSがオンボーディングされた）ユーザーにのみアクセスが許可されます。 アセットにアクセスするには、OpenAPI でDynamic Mediaの [ 検索 ](search-assets-api.md) 機能と [ 配信 ](deliver-assets-apis.md) 機能を活用する必要があります。
 
 ![ アセットへの制限付きアクセス ](/help/assets/assets/restricted-access.png)
-
-## IMS トークンを使用した制限付き配信 {#restrict-delivery-ims-token}
 
 Experience Manager Assetsでは、IMS を介した配信制限には、次の 2 つの重要な段階が含まれます。
 
 * オーサリング
 * 配信
 
-### オーサリング {#authoring}
+## オーサリング {#authoring}
 
-[!DNL Experience Manager] 内のアセットの配信を役割に基づいて制限できます。 役割を設定するには、次の手順を実行します。
+### IMS ベアラートークンを使用した制限付き配信 {#restrict-delivery-ims-token}
 
-1. DAM 管理者として [!DNL Experience Manager] に移動します。
-1. 役割を設定する必要があるアセットを選択します。
-1. **[!UICONTROL プロパティ]**/**[!UICONTROL 詳細]** に移動し、「**[!UICONTROL 詳細メタデータ]**」タブに [!UICONTROL  役割 ] フィールドが存在することを確認します。
+IMS ユーザーおよびグループ ID に基づいて、[!DNL Experience Manager] 内のアセットの配信を制限できます。
 
-   ![ 役割メタデータ ](/help/assets/assets/roles_metadata.jpg)
-フィールドが使用できない場合は、次の手順を使用してフィールドを追加します。
+>[!NOTE]
+>
+> この機能は、現在、セルフサービスではありません。 IMS[ ユーザー ](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) および [ グループ ](https://helpx.adobe.com/in/enterprise/using/user-groups.html) にアセット配信を制限するには、[Adobe Admin Console](https://adminconsole.adobe.com/) ポータルからアクセス制限に必要な情報を取得する方法と、AEM as a Cloud Service オーサーサービスでアクセスを設定する方法について、エンタープライズサポートチームにお問い合わせください。
 
-   1. **[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL メタデータスキーマ]**&#x200B;に移動します。
-   1. メタデータスキーマを選択し、「**[!UICONTROL 編集 _（e）_]**」をクリックします。
-   1. フォームのメタデータセクションの右側にある **[!UICONTROL フォームを作成]** セクションから **[!UICONTROL 複数値テキスト]** フィールドを追加します。
-   1. 新しく追加されたフィールドをクリックし、**[!UICONTROL 設定]** パネルで次の更新を行います。
-      1. **[!UICONTROL フィールドラベル]** を _役割_ に変更します。
-      1. **[!UICONTROL プロパティにマッピング]** を _に更新します。/jcr:content/metadata/dam:roles_ です。
-
-1. アセットの役割メタデータに追加する IMS グループを取得します。 IMS グループを取得するには、次の手順に従います。
-   1. `https://adminconsole.adobe.com/.` でログイン
-   1. それぞれの組織に移動し、**[!UICONTROL ユーザーグループ]** に移動します。
-   1. 追加する **[!UICONTROL ユーザーグループ]** を選択し、URL から **[!UICONTROL orgID]** と **[!UICONTROL userGroupID]** を抽出するか、`{orgID}@AdobeOrg:{usergroupID}` などの組織 ID を使用します。
-
-1. グループ ID をアセットプロパティの **[!UICONTROL 役割]** フィールドに追加します。 <br>
-「**[!UICONTROL 役割]**」フィールドで定義されたグループ ID は、アセットにアクセスできる唯一のユーザーです。 IMS グループ ID 以外にも、「**[!UICONTROL 役割]**」フィールドに IMS ユーザー ID と IMS プロファイル ID を追加できます。 例えば、`{orgId}@AdobeOrg:{profileId}` のように指定します。
-
-   >[!NOTE]
-   >
-   >新しいAssets ビューでは、個々のユーザーではなく、フォルダーレベルまで、そしてグループにのみアクセス権を付与できます。 詳しくは、[Experience Manager Assets内での権限の管理 ](https://experienceleague.adobe.com/ja/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) を参照してください。
-
-   >[!VIDEO](https://video.tv.adobe.com/v/3427429)
-
-#### オンおよびオフの日時を使用したアセットの配信制限 {#restrict-delivery-assets-date-time}
+### オンおよびオフの日時を使用したアセットの配信制限 {#restrict-delivery-assets-date-time}
 
 DAM 作成者は、アセットプロパティで使用できるアクティベーションのオンタイムまたはオフタイムを定義して、アセットの配信を制限することもできます。
 
@@ -95,28 +71,36 @@ DAM 作成者は、アセットプロパティで使用できるアクティベ�
 
 
 
-### 制限付きアセットの配信 {#delivery-restricted-assets}
+## 制限付きアセットの配信 {#delivery-restricted-assets}
 
-制限付きアセットの配信は、アセットへのアクセスが正常に許可されるかどうかに基づいて行われます。 認証は、AEM オーサーインスタンスまたはアセットセレクターからリクエストが送信された場合は IMS トークンに基づき、Publishまたはプレビューインスタンスにカスタム ID プロバイダーが設定されている場合は特別な Cookie に基づいています。
+制限付きアセットの配信は、アセットへのアクセスが正常に許可されるかどうかに基づいて行われます。 認証は、[IMS ベアラートークン ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/) （[AEM アセットセレクター ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) から開始されたリクエストの申請）またはセキュア cookie を使用して行います（AEM Publish/プレビューサービスでカスタム ID プロバイダーを設定しており、ページで cookie の作成と包含を設定している場合）。
 
-#### AEM オーサーリクエストまたはアセットセレクターリクエストの配信 {#delivery-aem-author-asset-selector}
+### AEM オーサーリクエストまたはアセットセレクターリクエストの配信 {#delivery-aem-author-asset-selector}
 
-AEM オーサーインスタンスやアセットセレクターからリクエストが送信された場合に制限付きアセットの配信を有効にするには、有効な IMS トークンが必要です。 次の手順に従います。
+AEM オーサーサービスまたはAEM アセットセレクターからリクエストが送信された場合に制限付きアセットの配信を有効にするには、有効な IMS ベアラートークンが必要です。\
+AEM Cloud Service オーサーサービスおよびアセットセレクターでは、IMS ベアラートークンが自動的に生成され、ログイン成功後のリクエストに使用されます。
 
-1. [ アクセストークンの生成 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)。
-   * AEM as a Cloud Service環境の開発コンソールにログインします。
+>[!NOTE]
+>
+>AEM Asset Selector ベースの統合で IMS 認証を有効にする方法について詳しくは、エンタープライズサポートにお問い合わせください
 
-   * **[!UICONTROL Environment]**/**[!UICONTROL Integrations]**/**[!UICONTROL ローカルトークン]**/**[!UICONTROL ローカル開発トークンの取得]**/**[!UICONTROL accessToken 値をコピー]** に移動します。 [ トークンへのアクセス方法と関連する側面 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) について説明します。
+1. アセットセレクターベース以外のエクスペリエンスの場合、OpenAPI 機能を備えたAEM as a Cloud ServiceおよびDynamic Mediaは現在、サーバーサイド API 統合をサポートし、IMS ベアラートークンを生成できます。
+   * [2](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow)AEM as a Cloud Service Developer Consoleを介して IMS ベアラートークンを取得できるサービス間 API 統合を実行するには、](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) こちら } の手順に従います。[
+   * 期間限定で、（実稼動のユースケース向けではなく）ローカル開発者アクセス、[AEM as a Cloud Service Developer Consoleで認証されたユーザーの短時間のみ有効な IMS ベアラートークンを ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) 手順に従って生成できます。[ こちら ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)
 
-1. 取得したアクセストークンを **[!UICONTROL Authorization]** ヘッダーに統合し、その値に **[!UICONTROL Bearer]** というプレフィックスが付いていることを確認します。
+1. [Search](search-assets-api.md) および [Delivery](deliver-assets-apis.md) API リクエストを行う際に、取得した IMS ベアラートークンを HTTP リクエストの **[!UICONTROL Authorization]** ヘッダーに追加します（その値に **[!UICONTROL Bearer]** というプレフィックスが付いていることを確認します）。
 
-1. リクエストを開始して、アクセストークンの機能を検証します。 IMS アクセストークンがない場合や、提供されたアクセストークンにアセットのメタデータに追加されたものと同じプリンシパルまたはグループがない場合は、404 エラーが発生します。
+1. アクセス制限を検証するには、**[!UICONTROL Authorization]** ヘッダーを含める場合と含めない場合の配信 API リクエストを開始します。
+   * IMS ベアラートークンがない場合や、指定された IMS ベアラートークンがアセットへのアクセス権を付与されたユーザーに属していない場合（直接またはグループメンバーシップを通じて）、応答は `404` しいエラーステータスコードを生成します。
+   * IMS ベアラートークンがアセットへのアクセスを許可されたユーザーまたはグループの 1 つである場合、応答はアセットのバイナリコンテンツを含んだ `200` 成功ステータスコードを生成します。
 
-#### Publish インスタンスのカスタム ID プロバイダーの配信 {#delivery-custom-identity-provider}
+### Publish サービスでのカスタム ID プロバイダーの配信 {#delivery-custom-identity-provider}
 
-Publishまたはプレビューインスタンスで設定されたカスタム ID プロバイダーの場合、セットアッププロセス中に、属性内の保護されたアセットへのアクセス権を持つ必要があ `groupMembership` グループを指定できます。 [SAML 統合 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) を介してカスタム ID プロバイダーにログオンすると、`groupMembership` 属性が読み取られ、Cookie が作成するために使用されます。この Cookie は、認証用のすべてのリクエストで送信されます。AEM オーサーまたはアセットセレクターからのリクエストの場合は IMS トークンと同様です。
+OpenAPI ライセンスを持つAEM Sites、AEM Assets、Dynamic Mediaは一緒に使用でき、アセットの制限付き配信は、AEM Publishまたはプレビューサービスを通じて配信される web サイトで設定できます。
+AEM SitesのPublishおよびプレビューサービスが [ カスタム ID プロバイダー（IdP） ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) を使用するように設定されている場合、内のセキュリティで保護されたアセットへのアクセス権を持つ必要のあるグループを、セットアッププロセスの際に `groupMembership` 属性に含めることができます。\
+Web サイトユーザーがカスタム ID プロバイダーにログオンし、Publish/プレビューサービスでホストされる web サイトにアクセスすると、`groupMembership` 属性が読み取られ、セキュリティで保護された Cookie が作成されて Web サイトに配信され、認証に成功します。 このセキュア cookie は、Web サイトのコンテンツを user-agent に配信するためのその後のすべてのリクエストに含まれます。
 
-セキュリティで保護されたアセットがページで使用可能で、アセットをレンダリングするためのリクエストが配信 URL に対して行われると、AEMは cookie または IMS トークンに存在するロールを確認し、アセットのオーサリング中に適用される `dam:roles property` と照合します。 一致する場合は、アセットが表示されます。
+セキュリティで保護されたアセットがページでリクエストされると、AEM Publish層とプレビュー層は secure-cookie から認証マテリアルを抽出し、アクセスを検証します。 一致する場合は、アセットが表示されます。
 
 >[!NOTE]
 >
