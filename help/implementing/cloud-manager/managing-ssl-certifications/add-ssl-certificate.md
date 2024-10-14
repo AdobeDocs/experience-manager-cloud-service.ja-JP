@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: f12392075b71b219bf449f585f63561167ddada9
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 26%
@@ -90,13 +90,18 @@ Cloud Managerに追加されたら、Adobeが DV SSL 証明書を発行してイ
 
 ## 顧客管理（OV/ED） SSL 証明書の追加 {#add-customer-managed-ssl-cert}
 
+<!-- IF THIS TOPIC GET UPDATED, REMEMBER TO UPDATE THE STEPS ALSO IN THE "MANAGE SSL CERTIFICATES TOPIC TOO -->
+
 ドメインでAdobe管理の SSL 証明書（推奨）を使用するか、顧客管理の SSL 証明書を使用するかを選択する際にサポートが必要ですか？ [ 追加する SSL 証明書の選択 ](#which-ssl-to-add) を参照してください。
 
 **顧客管理（OV/EV） SSL 証明書を追加するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切なプログラムを選択します。
+
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
+
 1. ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、サイドメニューを表示します。
+
 1. **サービス**&#x200B;見出しの下にある ![鍵がかかったアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg)「**SSL 証明書**」をクリックします。
 
    ![SSL 証明書の追加](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
@@ -109,7 +114,8 @@ Cloud Managerに追加されたら、Adobeが DV SSL 証明書を発行してイ
 このフィールドは情報提供のみを目的とし、SSL 証明書を簡単に参照するのに役立つ任意の名前を指定できます。
 
 1. 「**証明書**」、「**秘密鍵**」、「**証明書チェーン**」フィールドで、OV または EV SSL 証明書から必要な値をコピーして、ダイアログボックスのそれぞれのフィールドに貼り付けます。
-値で検出されたエラーが表示されます。証明書を保存する前に、すべてのエラーに対処する必要があります。一般的なエラーのトラブルシューティング方法について詳しくは、[証明書エラー](#certificate-errors)を参照してください。
+
+   値で検出されたエラーが表示されます。証明書を保存する前に、すべてのエラーに対処する必要があります。一般的なエラーのトラブルシューティング方法について詳しくは、[証明書エラー](#certificate-errors)を参照してください。
 
    ![SSL 証明書を追加ダイアログボックス ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)|
 

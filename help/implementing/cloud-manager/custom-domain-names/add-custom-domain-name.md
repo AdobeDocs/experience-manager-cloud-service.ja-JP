@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: 02f9b035320bb4b6219d5ed4273554259fc09e59
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 75%
+source-wordcount: '993'
+ht-degree: 73%
 
 ---
 
@@ -31,10 +31,7 @@ Cloud Manager でカスタムドメイン名を追加する前に、次の要件
 
 ## カスタムドメイン名の追加先 {#where-to-add-cdn}
 
-Cloud Manager では、次の 2 つの場所からカスタムドメイン名を追加できます。
-
-* [ドメイン設定ページ](#adding-cdn-settings)
-* [環境ページ](#adding-cdn-environments)
+Cloud Managerの [ ドメイン設定ページ ](#adding-cdn-settings) からカスタムドメイン名を追加できます。
 
 カスタムドメイン名を追加する場合、最も具体的で有効な証明書を使用してドメインが提供されます。複数の証明書が同じドメインを持つ場合は、直近に更新されたものが選択されます。重複するドメインがないように証明書を管理することをお勧めします。
 
@@ -68,13 +65,12 @@ Cloud Manager では、次の 2 つの場所からカスタムドメイン名を
 
    | 選択した証明書タイプ | 説明 |
    | --- | ---  |
-   | アドビが管理する証明書 | a.以下の [Adobeが管理する証明書の手順 ](#adobe-managed-cert-steps) 実行します。 **ドメインの検証** ダイアログボックスの手順を完了したら、「**検証**」をクリックします。<ul><li>DNS の生成遅延が原因で、DNS 検証の処理に数時間かかる場合があります。</li><li>Cloud Managerは最終的にドメイン名の所有権を確認し、「**ドメイン設定**」テーブルのステータスを更新します。 詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)を参照してください。</li>![ ドメインステータスの検証 ](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. [Adobe管理（DV） SSL 証明書を追加する ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) 準備が整いました。</li></ul> |
-   | 顧客が管理する証明書 | a. 「**OK**」をクリックします。<br>b.これで、[ 顧客管理（OV/EV） SSL 証明書を追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) する準備が整いました。<ul><li>証明書を追加すると、ドメイン名が「**ドメイン設定**」テーブルで検証済みとマークされます。 詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)を参照してください。</li></ul><br>![顧客が管理する EV/OV 証明書のドメイン検証](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
+   | アドビが管理する証明書 | a.以下の [Adobeが管理する証明書の手順 ](#adobe-managed-cert-steps) 実行します。 手順を完了したら、「**ドメインを検証**」ダイアログボックスで「**検証**」をクリックします。<ul><li>DNS の生成遅延が原因で、DNS 検証の処理に数時間かかる場合があります。</li><li>Cloud Managerは最終的にドメイン名の所有権を確認し、「**ドメイン設定**」テーブルのステータスを更新します。 詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)を参照してください。</li>![ ドメインステータスの検証 ](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. [Adobe管理（DV） SSL 証明書を追加する ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert) 準備が整いました。</li></ul> |
+   | 顧客が管理する証明書 | a. 「**OK**」をクリックします。<br>b.これで、[ 顧客管理（OV/EV） SSL 証明書を追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert) する準備が整いました。<br> 証明書を追加すると、ドメイン名は **ドメイン設定** テーブルで検証済みとマークされます。 詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)を参照してください。</li></ul><br>![顧客が管理する EV/OV 証明書のドメイン検証](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
    >[!NOTE]
    >
    >顧客管理（OV/EV）の SSL 証明書と顧客管理の CDN プロバイダーを使用する場合は、SSL 証明書の追加をスキップし、準備が整ったら直接 [CDN 設定の追加 ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) に進むことができます。
-
 
 ### アドビが管理する証明書の手順 {#adobe-managed-cert-steps}
 

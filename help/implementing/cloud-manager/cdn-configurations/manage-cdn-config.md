@@ -4,21 +4,21 @@ description: Cloud Managerを使用して、Edge Delivery サイトまたはClou
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 42b30c12f17106610cfb7f7b4c04c5ab703bab45
+source-git-commit: 02f9b035320bb4b6219d5ed4273554259fc09e59
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 14%
+source-wordcount: '802'
+ht-degree: 15%
 
 ---
 
 
-# CDN （コンテンツ配信ネットワーク）設定の管理 {#manage-cdn-configurations}
+# CDN 設定の管理 {#manage-cdn-configurations}
 
-Cloud Managerを使用して、Edge Delivery サイトまたはCloud Manager環境の CDN 設定を編集、更新、削除する方法について説明します。
+Cloud Managerを使用して、Edge Delivery サイトまたはCloud Manager環境の CDN 設定を編集または削除する方法について説明します。
 
 ## CDN 設定ページから CDN 設定を編集します {#edit-cdn}
 
-Cloud ManagerのAdobeでは、いくつかの理由で、環境層（Publishまたはプレビュー）や SSL 証明書を含む CDN 設定を編集する必要がある場合があります。
+AdobeCloud Managerでは、いくつかの理由で、環境層（Publishまたはプレビュー）や SSL 証明書を含む CDN （コンテンツ配信ネットワーク）設定を編集する必要がある場合があります。
 
 * **環境の変更**：層を調整すると、実稼動（Publish）またはテスト（プレビュー）用に、CDN 設定を正しい環境と一致させることができます。
 * **セキュリティの強化**：証明書を更新する場合や、コンプライアンスやセキュリティのニーズに対応する場合は、別の SSL 証明書の選択が必要になる場合があります。
@@ -37,6 +37,7 @@ Cloud ManagerのAdobeでは、いくつかの理由で、環境層（Publishま�
    ![CDN 設定の編集 ](/help/implementing/cloud-manager/assets/cdn-config-edit.png)
 
 1. ドロップダウンメニューから、「**編集**」をクリックします。
+
 1. **CDN 設定を編集** ダイアログボックスで、それぞれのドロップダウンリストに 1 つ以上のオプションを設定します。
 
    このダイアログボックスに表示されるオプションは、**Adobeが管理する CDN** と **その他の CDN プロバイダー** （顧客が管理する CDN）のどちらを使用しているかによって異なります。
@@ -44,6 +45,7 @@ Cloud ManagerのAdobeでは、いくつかの理由で、環境層（Publishま�
 1. 「**更新**」をクリックします。
 
    編集した CDN のステータスは、「**CDN 設定**」テーブルで更新され、変更が反映されます。
+
 
 ## 環境ページからの CDN 設定の編集
 
@@ -63,7 +65,7 @@ Cloud ManagerのAdobeでは、いくつかの理由で、環境層（Publishま�
 
 1. ポップアップメニューで、「**編集**」をクリックします。
 
-1. **設定を編集** ダイアログボックスで、それぞれのドロップダウンリストに 1 つ以上のオプションを設定します。
+1. **CDN 設定を編集** ダイアログボックスで、それぞれのドロップダウンリストに 1 つ以上のオプションを設定します。
 
 このダイアログボックスに表示されるオプションは、**Adobeが管理する CDN** と **その他の CDN プロバイダー** （顧客が管理する CDN）のどちらを使用しているかによって異なります。
 
@@ -87,11 +89,36 @@ Cloud ManagerでAdobe管理または顧客管理の CDN 設定を削除すると
 
 1. 左側のパネルの「**サービス**」で、「**CDN 設定**」をクリックします。
 
-1. CDN 設定テーブルで、CDN を削除する行の最後にある省略記号をクリックします。
+1. CDN 設定テーブルで、削除する CDN に対応する行の最後にある ![ その他のアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
    ![CDN 設定の削除 ](/help/implementing/cloud-manager/assets/cdn-config-delete.png)
 
-1. 「**削除**」をクリックします。
+1. ドロップダウンメニューで、「**削除**」をクリックします。
+
+1. **CDN 設定を削除** ダイアログボックスで、「**削除**」をクリックします。
+
+1. もう一度 **削除** をクリックして、サイトの CDN の削除を確認します。
+
+
+## 環境ページからの CDN 設定の削除
+
+**環境** ページから CDN 設定を削除する手順は、[CDN 設定ページから CDN 設定を削除する ](#edit-cdn) 場合とほぼ同じですが、エントリポイントが異なります。
+
+**環境ページから CDN 設定を削除するには：**
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
+
+1. 左側のメニューで、「**環境**」をクリックします。
+
+1. **環境** ページで、対象となる環境を選択します。
+
+1. 環境の詳細ページの **CDN 設定** のグループ化で、削除する CDN 設定に対応する ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+
+   ![ 環境詳細ページの CDN 設定グループ ](/help/implementing/cloud-manager/assets/cdn/environments-cdn-config.png)
+
+1. ドロップダウンメニューで、「**削除**」をクリックします。
+
+1. **CDN 設定を削除** ダイアログボックスで、「**削除**」をクリックします。
 
 1. もう一度 **削除** をクリックして、サイトの CDN の削除を確認します。
 
