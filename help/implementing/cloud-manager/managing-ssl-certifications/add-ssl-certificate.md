@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f12392075b71b219bf449f585f63561167ddada9
+source-git-commit: 9645ee21bc8c44020d5bb7cdd513d67429353c7d
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '996'
 ht-degree: 26%
 
 ---
@@ -46,7 +46,7 @@ Cloud Managerに追加されたら、Adobeが DV SSL 証明書を発行してイ
 * **顧客管理（OV/EV） SSL 証明書の場合：**
 
    * OV/EV SSL 証明書を認証局から取得します。 詳しくは、[ 顧客管理 OV/EV SSL 証明書の要件 ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements) を参照してください。
-   * 証明書を取得したら、Cloud Managerで [ 顧客管理（OV/EV） SSL 証明書の追加 ](#add-customer-manage-ssl-cert) を行います。
+   * 証明書を取得したら、Cloud Managerで [ 顧客管理（OV/EV） SSL 証明書の追加 ](#add-customer-managed-ssl-cert) を行います。
    * 追加すると、カスタムドメイン名は検証済みとマークされ、SSL 証明書が適用されます。
 
 どちらの場合でも、証明書の検証とインストールが完了すると、カスタムドメインを環境で安全に使用できるようになります。 Cloud Manager インターフェイスで定期的に [ ドメインのステータスを確認 ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) し、すべてが期待どおりに動作していることを確認します。
@@ -76,8 +76,7 @@ Cloud Managerに追加されたら、Adobeが DV SSL 証明書を発行してイ
 1. **証明書名** フィールドに、DV SSL 証明書に関連付ける名前を入力します。
 
 1. **ドメインを選択** ドロップダウンリストで、DV SSL 証明書に関連付ける検証済みドメインを 1 つ以上選択します。
-   * 選択するドメインがありませんか？ その場合は、まずカスタムドメイン名を追加し、SSL 証明書を追加する前にドメイン名が検証されていることを確認する必要があります。
-   * [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。
+   * 選択するドメインがありませんか？ その場合は、まず [ カスタムドメイン名を追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) する必要があります。また、Adobe管理の SSL 証明書を追加する前に、ドメイン名が検証されていることを確認します。
    * カスタムドメイン名の追加が完了したら、このトピックに戻って手順 1 から再度開始します。
 
 1. ダイアログボックスの右下隅にある「**保存**」をクリックします。
