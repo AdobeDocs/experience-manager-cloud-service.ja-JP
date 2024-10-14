@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '1314'
-ht-degree: 57%
+ht-degree: 58%
 
 ---
 
@@ -132,7 +132,7 @@ ht-degree: 57%
 
 >[!NOTE]
 >
->Web 階層設定パイプラインは、プライベートリポジトリではサポートされていません。詳細と制限事項の一覧については、[Cloud Managerでのプライベートリポジトリの追加 ](/help/implementing/cloud-manager/managing-code/private-repositories.md) を参照してください。
+>Web 階層設定パイプラインは、プライベートリポジトリではサポートされていません。制限の詳細と完全なリストについては、[Cloud Manager でのプライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)を参照してください。
 
 **ターゲットデプロイメントパイプラインを設定するには：**
 
@@ -162,9 +162,9 @@ ht-degree: 57%
 
 1. 「**保存**」をクリックします。
 
-パイプラインが保存され、**プログラムの概要**&#x200B;ページの&#x200B;**パイプライン**&#x200B;カードの[パイプラインを管理](managing-pipelines.md)できるようになります。
+パイプラインが保存され、**プログラムの概要**&#x200B;ページの&#x200B;**パイプライン**&#x200B;カードで[パイプラインを管理](managing-pipelines.md)できるようになりました。
 
-## Dispatcher パッケージをスキップ {#skip-dispatcher-packages}
+## Dispatcher パッケージのスキップ {#skip-dispatcher-packages}
 
 ビルドストレージに公開せずにパイプラインにDispatcher パッケージをビルドするには、「公開」オプションを無効にします。 これにより、パイプラインの実行時間を短縮できる場合があります。
 

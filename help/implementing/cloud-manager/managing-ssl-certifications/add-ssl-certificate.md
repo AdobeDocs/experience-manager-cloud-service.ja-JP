@@ -1,6 +1,6 @@
 ---
 title: SSL 証明書の追加
-description: Cloud Managerのセルフサービスツールを使用して、独自の SSL 証明書またはAdobe管理の DV （ドメイン検証）証明書を追加する方法について説明します。
+description: Cloud Manager のセルフサービスツールを使用して、独自の SSL 証明書またはアドビが管理する DV（ドメイン検証）証明書を追加する方法について説明します。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -8,14 +8,14 @@ role: Admin, Architect, Developer
 source-git-commit: 9645ee21bc8c44020d5bb7cdd513d67429353c7d
 workflow-type: tm+mt
 source-wordcount: '996'
-ht-degree: 26%
+ht-degree: 29%
 
 ---
 
 
 # SSL 証明書の追加 {#add-ssl-cert}
 
-Cloud を使用して独自の SSL 証明書またはAdobe管理の DV （ドメイン検証）証明書を追加する方法について説明します
+クラウドを使用して独自の SSL 証明書またはアドビが管理する DV（ドメイン検証）証明書を追加する方法について説明します。
 
 >[!NOTE]
 >
