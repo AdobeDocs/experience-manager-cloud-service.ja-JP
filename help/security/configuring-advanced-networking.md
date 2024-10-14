@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: 09cc9c65aff42c3a169791d32dfdbdbfb044aecb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5676'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -299,7 +299,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 <tbody>
   <tr>
     <td><b>HTTP または HTTPS プロトコル</b></td>
-    <td>Azure （*.windows.net）またはAdobe サービスへのトラフィック</td>
+    <td>Azure（*.windows.net）またはアドビサービスへのトラフィック</td>
     <td>任意</td>
     <td>（専用 IP ではなく）共有クラスター IP を経由</td>
     <td>adobe.io<br>api.windows.net</td>
