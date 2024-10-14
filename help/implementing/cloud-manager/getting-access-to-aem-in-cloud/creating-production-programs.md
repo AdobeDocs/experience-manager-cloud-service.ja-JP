@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6a3d2d484bde20586b329010cdfe156570e736f5
-workflow-type: ht
-source-wordcount: '1029'
-ht-degree: 100%
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+workflow-type: tm+mt
+source-wordcount: '1027'
+ht-degree: 98%
 
 ---
 
@@ -119,7 +119,7 @@ AEM Sites および Forms は、標準の 99.9％のサービスレベル契約�
 
 ## プログラムへのアクセス {#accessing}
 
-1. ランディングページにプログラムカードが表示されたら、省略記号（...）ボタンを選択して、使用可能なメニューオプションを表示します。
+1. ランディングページにプログラムカードが表示されたら、https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svgをクリックして、使用可能なメニューオプションを確認します。
 
    ![プログラムの概要](assets/program-overview.png)
 

@@ -5,10 +5,10 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 27%
+source-wordcount: '618'
+ht-degree: 26%
 
 ---
 
@@ -84,6 +84,7 @@ Cloud Manager を使用すると、複数の方法でパイプライン変数を
 
 1. 「**保存**」をクリックします。
 
+
 ## パイプライン変数の削除 {#delete-ui}
 
 1. [ パイプラインの管理 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 時に、パイプライン変数を削除するパイプラインの ![ 省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
@@ -92,10 +93,7 @@ Cloud Manager を使用すると、複数の方法でパイプライン変数を
 
    ![ パイプライン変数の表示/編集 ](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. **変数設定** ダイアログボックスで、削除する変数の ![ 省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
-
-1. ドロップダウンメニューで、「**削除**」をクリックします。
-
+1. **変数設定** ダイアログボックスで、削除する変数の ![ 省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**削除**」をクリックします。
 
 ## Cloud Manager CLI を使用したパイプライン変数の設定 {#cli}
 

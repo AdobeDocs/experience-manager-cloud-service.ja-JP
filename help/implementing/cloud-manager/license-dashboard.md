@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 92%
+source-wordcount: '909'
+ht-degree: 98%
 
 ---
 
@@ -21,11 +21,11 @@ Cloud Manager には、組織またはテナントが使用できる AEMaaCS 製
 >
 >ライセンスダッシュボードは、AEM as a Cloud Service プログラムにのみ適用されます。[AMS プログラム](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/introduction)は、ライセンスダッシュボードには含まれません。
 >
->プログラムのサービスの種類（AMS または AEMaaCS）を判断するには、[Cloud Manager UI の操作 ](/help/implementing/cloud-manager/navigation.md#program-cards) を参照してください。
+>お使いのプログラムが保有しているサービスのタイプ（AMS または AEMaaCS）を判断する方法については、[Cloud Manager UI の操作](/help/implementing/cloud-manager/navigation.md#program-cards)を参照してください。
 
 ## 概要 {#overview}
 
-Cloud Manager ライセンスダッシュボードを使用すると、使用済みのものや使用可能なものなど、すべてのプログラムで使用できるソリューションの使用権限に簡単にアクセスできます。 さらに、Sites ソリューションの月別のコンテンツリクエスト消費指標も示されます。
+Cloud Manager ライセンスダッシュボードを使用すると、すべてのプログラム（使用中のプログラムや使用可能なプログラムを含む）をまたいで使用できる、ソリューションの資格に簡単にアクセスできます。また、Sites ソリューションのコンテンツリクエスト消費指標の月別トレンド表示にもアクセスできます。
 
 ## ライセンスダッシュボードへのアクセス {#using-dashboard}
 
@@ -34,7 +34,7 @@ Cloud Manager ライセンスダッシュボードを使用すると、使用済
 >ライセンスダッシュボードを表示するには、**ビジネスオーナー**&#x200B;の役割のユーザーがログインする必要があります。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
-1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、[Cloud Manager ヘッダー](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)のハンバーガーメニューボタンをクリックします。これにより、タブが表示されます。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、[Cloud Managerヘッダー ](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) のhttps://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svgをクリックします。 この操作により、タブが表示されます。
 1. タブの「**ライセンス**」オプションをクリックします。
 
 ![ライセンスダッシュボード](assets/license-dashboard.png)

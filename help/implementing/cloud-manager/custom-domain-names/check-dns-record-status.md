@@ -5,10 +5,10 @@ exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
-workflow-type: ht
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -31,9 +31,9 @@ Cloud Manager を使用して DNS レコードのステータスを確認する�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. **概要**&#x200B;ページから&#x200B;**環境**&#x200B;画面に移動します。
+1. **概要**&#x200B;ページの&#x200B;**環境**&#x200B;画面に移動します。
 
-1. 左側のナビゲーションパネルで「**ドメイン設定**」をクリックします。
+1. 左側のメニューで **ドメイン設定** をクリックします。
 
 1. そのドメイン名の&#x200B;**ステータス**&#x200B;アイコンをクリックします。
 

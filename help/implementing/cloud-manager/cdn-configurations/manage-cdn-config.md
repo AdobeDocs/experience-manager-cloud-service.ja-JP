@@ -4,10 +4,10 @@ description: Cloud Managerを使用して、Edge Delivery サイトまたはClou
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 02f9b035320bb4b6219d5ed4273554259fc09e59
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 15%
+source-wordcount: '797'
+ht-degree: 13%
 
 ---
 
@@ -31,7 +31,7 @@ AdobeCloud Managerでは、いくつかの理由で、環境層（Publishまた�
 **CDN 設定ページから CDN 設定を編集するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
-1. サイドパネルの「**サービス**」で、「![ ソーシャルネットワークアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg)**CDN 設定**」をクリックします。
+1. 左側のメニューの **サービス** で、![ ソーシャルネットワークアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg)**CDN 設定** をクリックします。
 1. **CDN 設定** テーブルで、更新する CDN 設定を持つ行の最後にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
    ![CDN 設定の編集 ](/help/implementing/cloud-manager/assets/cdn-config-edit.png)
@@ -87,13 +87,11 @@ Cloud ManagerでAdobe管理または顧客管理の CDN 設定を削除すると
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. 左側のパネルの「**サービス**」で、「**CDN 設定**」をクリックします。
+1. 左側のメニューの **サービス** で、「**CDN 設定**」をクリックします。
 
-1. CDN 設定テーブルで、削除する CDN に対応する行の最後にある ![ その他のアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+1. CDN 設定テーブルで、削除する CDN に対応する行の最後にある ![ その他のアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、**削除** をクリックします。
 
    ![CDN 設定の削除 ](/help/implementing/cloud-manager/assets/cdn-config-delete.png)
-
-1. ドロップダウンメニューで、「**削除**」をクリックします。
 
 1. **CDN 設定を削除** ダイアログボックスで、「**削除**」をクリックします。
 
@@ -112,11 +110,9 @@ Cloud ManagerでAdobe管理または顧客管理の CDN 設定を削除すると
 
 1. **環境** ページで、対象となる環境を選択します。
 
-1. 環境の詳細ページの **CDN 設定** のグループ化で、削除する CDN 設定に対応する ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+1. 環境の詳細ページの **CDN 設定** のグループ化で、削除する CDN 設定に対応する ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、**削除** をクリックします。
 
    ![ 環境詳細ページの CDN 設定グループ ](/help/implementing/cloud-manager/assets/cdn/environments-cdn-config.png)
-
-1. ドロップダウンメニューで、「**削除**」をクリックします。
 
 1. **CDN 設定を削除** ダイアログボックスで、「**削除**」をクリックします。
 

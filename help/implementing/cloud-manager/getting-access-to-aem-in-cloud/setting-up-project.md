@@ -1,37 +1,34 @@
 ---
 title: プロジェクトのセットアップ
-description: Maven を使用して AEM プロジェクトをビルドする方法と、独自のプロジェクトを作成する際に遵守する必要のある標準規格について説明します。
+description: Maven を使用してAEM プロジェクトをビルドする方法と、独自のプロジェクトを作成する際に遵守する必要がある標準について説明します。
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
-source-wordcount: '1399'
-ht-degree: 100%
+source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
+workflow-type: tm+mt
+source-wordcount: '1395'
+ht-degree: 70%
 
 ---
 
 # プロジェクトのセットアップ {#project-setup}
 
-Maven を使用して AEM プロジェクトをビルドする方法と、独自のプロジェクトを作成する際に遵守する必要のある標準規格について説明します。
+Maven を使用してAEM プロジェクトをビルドする方法と、独自のプロジェクトを作成する際に遵守する必要がある標準について説明します。
 
 ## プロジェクト設定の詳細 {#project-setup-details}
 
-Cloud Manager で正常にビルドおよびデプロイするには、AEM プロジェクトは次のガイドラインに従う必要があります。
+Cloud Managerを使用して正常にビルドおよびデプロイするには、AEM プロジェクトが次のガイドラインに従う必要があります。
 
 * プロジェクトは [Apache Maven](https://maven.apache.org) を使用してビルドする必要があります。
 * Git リポジトリーのルートには `pom.xml` ファイルが必要です。この `pom.xml` ファイルでは、必要な数のサブモジュール（その中にさらに他のサブモジュールを含む場合があります）を参照できます。
-* 追加の Maven アーティファクトリポジトリへの参照を `pom.xml` ファイルに追加できます。
-   * 設定時には、[パスワードで保護されたアーティファクトリポジトリー](#password-protected-maven-repositories)へのアクセスがサポートされます。ただし、ネットワークで保護されたアーティファクトリポジトリーへのアクセスはサポートされていません。
-* デプロイ可能なコンテンツパッケージは、`target` という名前のディレクトリに含まれているコンテンツパッケージ `.zip` ファイルをスキャンすることで検出されます。
-   * 任意の数のサブモジュールでコンテンツパッケージを作成することもできます。
-* デプロイ可能な Dispatcher アーティファクトは、`conf` および `conf.d` というディレクトリを持つ `.zip` ファイル（これも `target` という名前のディレクトリに含まれる）をスキャンすることで検出されます。
-* 複数のコンテンツパッケージがある場合、パッケージデプロイメントの順序は保証されません。
-   * 特定の順序が必要な場合は、コンテンツパッケージの依存関係を使用して順序を定義できます。
+* 追加の Maven アーティファクトリポジトリーへの参照を `pom.xml` ファイルに追加できます。 設定時には、[パスワードで保護されたアーティファクトリポジトリー](#password-protected-maven-repositories)へのアクセスがサポートされます。ただし、ネットワークで保護されたアーティファクトリポジトリーへのアクセスはサポートされていません。
+* デプロイ可能なコンテンツパッケージは、`target` という名前のディレクトリに含まれているコンテンツパッケージ `.zip` ファイルをスキャンすることで検出されます。 任意の数のサブモジュールでコンテンツパッケージを作成することができます。
+* デプロイ可能なDispatcher アーティファクトは、`conf` および `conf.d` というディレクトリを持つ `.zip` ファイル（これも `target` という名前のディレクトリに含まれる）をスキャンすることで検出されます。
+* 複数のコンテンツパッケージがある場合、パッケージデプロイメントの順序は保証されません。特定の順序が必要な場合は、コンテンツパッケージの依存関係を使用して順序を定義できます。
 * パッケージはデプロイメント時に[スキップ](#skipping-content-packages)できます。
 
-## Cloud Manager での Maven プロファイルのアクティブ化 {#activating-maven-profiles-in-cloud-manager}
+## Cloud Managerでの Maven プロファイルのアクティブ化 {#activating-maven-profiles-in-cloud-manager}
 
 ごく一部のケースでは、Cloud Manager 内で実行する場合と、開発用ワークステーションで実行する場合とで、ビルドプロセスを若干変更する必要があるかもしれません。この場合は、[Maven プロファイル](https://maven.apache.org/guides/introduction/introduction-to-profiles.html)を使用して、Cloud Manager を含む環境ごとのビルドの違いを定義できます。
 
@@ -109,13 +106,13 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
         </profile>
 ```
 
-## パスワードで保護された Maven リポジトリーのサポート {#password-protected-maven-repositories}
+## パスワードで保護された Maven リポジトリーをCloud Manager内で使用する {#password-protected-maven-repositories}
 
 >[!NOTE]
 >
->パスワードで保護された Maven リポジトリーのアーティファクトは、慎重に使用する必要があります。これは、このメカニズムを通じてデプロイされるコードが現在、Cloud Manager の品質ゲートに実装されている[コード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)を通じて実行されないからです。したがって、まれなケースで、AEM に結び付けられていないコードに対してのみ使用する必要があります。バイナリと共に Java ソースおよびプロジェクトのソースコード全体もデプロイすることをお勧めします。
+>Cloud Managerはこのコードを [ コード品質ルール ](/help/implementing/cloud-manager/custom-code-quality-rules.md) と共に評価しないので、パスワードで保護された Maven リポジトリからアーティファクトを慎重にデプロイします。 この方法は、まれな状況にのみ使用し、AEMに関連のないコードにのみ適用してください。 Adobeでは、Java ソースとプロジェクトのソースコード全体とバイナリの両方を含めるよう勧告しています。 これにより、デプロイメントプロセス全体の透明性と保守性が向上します。
 
-パスワードで保護された Maven リポジトリを Cloud Manager 内で使用するには、次の操作を実行します。
+**パスワードで保護された Maven リポジトリーをCloud Manager内で使用するには：**
 
 1. パスワード（およびオプションでユーザー名）をシークレットの[パイプライン変数](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)として指定します。
 1. 次に、Git リポジトリーの `.cloudmanager/maven/settings.xml` という名前のファイル内でそのシークレットを参照します。このファイルは、[Maven Settings File](https://maven.apache.org/settings.html) スキーマに従います。
@@ -124,9 +121,9 @@ Cloud Manager のビルドプロセスが開始したとき、以下が行われ
 
 * このファイル内の `<servers>` 要素が、Cloud Manager から提供されるデフォルトの `settings.xml` ファイルに結合されます。
    * `adobe` と `cloud-manager` で始まるサーバー ID は予約済みと見なされます。カスタムサーバーでは使用しないでください。
-   * サーバー ID がこれらのプレフィックスのいずれかに一致しない場合、デフォルトの ID `central` は Cloud Manager でミラーリングされません。
+   * Cloud Managerは、特定のプレフィックスまたはデフォルトの ID `central` に一致するサーバ ID のみをミラーリングします。他のすべてのサーバ ID は、ミラーリングから除外されます。
 * このファイルを配置すると、サーバー ID は `<repository>` 内や `pom.xml` ファイル内の `<pluginRepository>` 要素から参照されます。
-* 一般に、これらの `<repository>` や `<pluginRepository>` 要素は、[Cloud Manager 固有のプロファイル](#activating-maven-profiles-in-cloud-manager)に含まれますが、厳密に必要とは限りません。
+* 一般に、これらの `<repository>` 要素および `<pluginRepository>` 要素は、[Cloud Manager固有のプロファイル ](#activating-maven-profiles-in-cloud-manager) に含まれますが、厳密には必要ありません。
 
 例えば、リポジトリーが `https://repository.myco.com/maven2` にあり、Cloud Manager が使用するユーザー名が `cloudmanager` で、パスワードが `secretword` だとします。次の手順を実行します。
 
@@ -136,7 +133,7 @@ Cloud Manager のビルドプロセスが開始したとき、以下が行われ
    $ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
    ```
 
-1. これを `.cloudmanager/maven/settings.xml` ファイルから参照します。
+1. このシークレットを次の `.cloudmanager/maven/settings.xml` ファイルから参照します：
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -195,7 +192,7 @@ Cloud Manager のビルドプロセスが開始したとき、以下が行われ
 
 ### ソースのデプロイ {#deploying-sources}
 
-バイナリと共に Java ソースを Maven リポジトリーにデプロイすることをお勧めします。
+バイナリと共に Java ソースを Maven リポジトリにデプロイすることをお勧めします。
 
 それには、プロジェクトに maven-source-plugin を設定します。
 
@@ -216,9 +213,9 @@ Cloud Manager のビルドプロセスが開始したとき、以下が行われ
 
 ### プロジェクトソースのデプロイ {#deploying-project-sources}
 
-バイナリと一緒にプロジェクトソース全体を Maven リポジトリーにデプロイすることをお勧めします。これにより、正確なアーティファクトを再ビルドできます。
+バイナリと共にプロジェクトソース全体を Maven リポジトリにデプロイすることをお勧めします。これにより、正確なアーティファクトを再構築できます。
 
-それには、プロジェクトに maven-assembly-plugin を設定します。
+次の方法で、プロジェクトに maven-assembly-plugin を設定します。
 
 ```xml
          <plugin>
@@ -244,7 +241,7 @@ Cloud Manager のビルドプロセスが開始したとき、以下が行われ
 ## コンテンツパッケージのスキップ {#skipping-content-packages}
 
 Cloud Manager では、ビルドは、任意の数のコンテンツパッケージを作成できます。
-様々な理由により、コンテンツパッケージを生成してもデプロイしないことが望ましい場合があります。例えば、テストのみに使用するコンテンツパッケージを構築する場合またはビルドプロセスの別の手順で再パッケージ化される場合などです。つまり、別のパッケージのサブパッケージです。
+様々な理由により、コンテンツパッケージを生成してもデプロイしないことが望ましい場合があります。例としては、コンテンツパッケージがテスト目的でのみビルドされる場合や、ビルドプロセスの別の手順でコンテンツパッケージが再パッケージ化される場合が考えられます。 つまり、別のパッケージのサブパッケージです。
 
 これらのシナリオに対応するため、Cloud Manager はビルドコンテンツパッケージのプロパティで、`cloudManagerTarget` という名前のプロパティを探します。このプロパティが `none` に設定されている場合、パッケージはスキップされ、デプロイされません。
 
@@ -298,7 +295,7 @@ build/aem-guides-wknd.all-2021.1216.1101633.0000884042.zip (content-package)
 build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatcher-configuration)
 ```
 
-コード品質ステップのログにも、類似の情報が含まれます。
+コード品質ステップのログには、類似した情報が含まれます。
 
 ### 例 {#example-reuse}
 
@@ -312,7 +309,7 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 両方のブランチが同じコミット ID 上にあります。
 
 1. 最初にパイプライン 1 を実行すると、パッケージは通常どおりビルドされます。
-1. その後、パイプライン 2 を実行すると、パイプライン 1 で作成したパッケージが再利用されます。
+1. 次に、パイプライン 2 を実行すると、パイプライン 1 で作成されたパッケージが再利用されます。
 
 #### 例 2 {#example-2}
 
@@ -330,7 +327,7 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 ### オプトアウト {#opting-out}
 
-必要に応じて、パイプライン変数 `CM_DISABLE_BUILD_REUSE` を `true` に設定して、特定のパイプラインに対して再利用動作を無効にできます。この変数が設定されている場合でも、コミットハッシュは抽出され、結果として生成されたアーティファクトは後で使用するために保存されますが、以前に保存されたアーティファクトは再利用されません。この動作を理解するために、次のシナリオについて考えてみます。
+必要に応じて、パイプライン変数 `CM_DISABLE_BUILD_REUSE` を `true` に設定して、特定のパイプラインに対して再利用動作を無効にできます。この変数が設定されている場合、システムはコミットハッシュを抽出し、結果のアーティファクトを後で使用するために保存しますが、以前に保存されたアーティファクトの再利用はスキップします。 この動作を理解するには、次のシナリオについて考えます。
 
 1. 新しいパイプラインが作成されます。
 1. そのパイプラインが実行され（実行番号 1）、現在の HEAD コミットが `becdddb` となっています。実行が完了すると、結果として生成されたアーティファクトが保存されます。
@@ -344,6 +341,7 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 * ビルドアーティファクトは、コミットハッシュが同じかどうかに関係なく、異なるプログラムをまたいで再利用されることはありません。
 * ブランチやパイプラインが異なる場合でも、ビルドアーティファクトは同じプログラム内で再利用されます。
-* [Maven バージョン処理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)では、実稼動パイプラインでのみ、プロジェクトのバージョンを置き換えます。したがって、開発デプロイ実行および実稼動パイプライン実行の両方で同じコミットが使用され、開発デプロイパイプラインが先に実行される場合、バージョンは変更されずにステージング環境と実稼動環境にデプロイされます。ただし、この場合もタグは作成されます。
-* 保存されたアーティファクトが正常に取得されなかった場合、ビルドステップは、アーティファクトが保存されていない場合と同じように実行されます。
+* [Maven バージョン処理 ](/help/implementing/cloud-manager/managing-code/project-version-handling.md) では、実稼動パイプラインでのみ、プロジェクトのバージョンを置き換えます。
+開発デプロイと実稼動パイプラインの両方に同じコミットが使用され、開発デプロイが最初に実行される場合、バージョンは変更されずにステージング環境と実稼動環境にデプロイされます。 ただし、この場合もタグは作成されます。
+* 保存されたアーティファクトが正常に取得されなかった場合、ビルドステップは、アーティファクトが保存されていないかのように実行されます。
 * 以前に作成したビルドアーティファクトを Cloud Manager で再利用する場合、`CM_DISABLE_BUILD_REUSE` 以外のパイプライン変数は考慮されません。

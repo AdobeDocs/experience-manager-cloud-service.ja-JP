@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1656'
 ht-degree: 40%
 
 ---
@@ -38,7 +38,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 1. プログラムの現在のビューを切り替えることができるタブ。
    * **ホーム**&#x200B;ビュー（デフォルト）：すべてのプログラムの概要を表示する&#x200B;**マイプログラム**&#x200B;ビューを選択します
    * **ライセンス** [ ライセンスダッシュボード ](/help/implementing/cloud-manager/license-dashboard.md) にアクセスする。
-   * タブはデフォルトで閉じられ、[Cloud Managerヘッダー ](#cloud-manager-header) のハンバーガーメニューで表示されます。
+   * タブはデフォルトで閉じられ、[Cloud Manager ヘッダーでhttps://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svgを使用して表示され ](#cloud-manager-header) す。
 1. [統計とコールトゥアクション](#statistics)：最近のアクティビティの概要を確認します。
 1. [**「マイプログラム」**&#x200B;セクション](#my-programs-section)：すべてのプログラムの概要を表示します
 1. 関連リソースに簡単にアクセスするための [ クイックリンク ](#quick-links-section)。
@@ -195,7 +195,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 ![プログラムツールバー](assets/cloud-manager-program-toolbar.png)
 
-ハンバーガーメニューを使用してタブを非表示にしても、ツールバーには、現在表示しているタブが常に表示されます。
+https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svgを使用してタブを非表示にしている場合でも、ツールバーには現在表示しているタブが常に表示されます。
 
 ### プログラムタブ {#program-tabs}
 
@@ -227,7 +227,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 デフォルトでは、プログラムを開くと、「**概要**」タブが表示されます。現在のタブがハイライト表示されます。別のタブを選択すると、その詳細が表示されます。
 
-[Cloud Managerヘッダーの左上隅にある メニューアイコンを表示 ](#cloud-manager-header-2) をクリックして、タブのサイドメニューの表示と非表示を切り替えます。![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)
+[Cloud Managerヘッダーの左上隅にある ![ メニューアイコンを表示 ](#cloud-manager-header-2) をクリックして、タブのサイドメニューの表示と非表示を切り替えます。](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)
 
 ### コールトゥアクション {#cta}
 

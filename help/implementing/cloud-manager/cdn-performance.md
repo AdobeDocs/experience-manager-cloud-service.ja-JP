@@ -5,10 +5,10 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 96%
+source-wordcount: '376'
+ht-degree: 84%
 
 ---
 
@@ -28,7 +28,7 @@ CDN ダッシュボードは、すべてのプログラムの概要ページで�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、CDN ダッシュボードを表示するプログラムをクリックします。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、表示する CDN ダッシュボードのプログラムをクリックします。
 
    ![マイプログラムページ](assets/my-programs.png)
 
@@ -42,17 +42,17 @@ CDN ダッシュボードは、すべてのプログラムの概要ページで�
 
 ![CDN パフォーマンスダッシュボード](assets/cdn-performance-dashboard.png)
 
-CDN のパフォーマンスの詳細と改善方法の提案は、「**トレンドを表示**」をタップまたはクリックします。
+CDN パフォーマンスとその改善方法に関する推奨事項について詳しくは、「**トレンドの表示**」をクリックしてください。
 
 ![パフォーマンスのトレンド](assets/cdn-performance-trend.png)
 
-グラフの下で「**表示**」をタップまたはクリックして、グラフの期間を変更します。
+グラフの下の **表示** をクリックして、グラフの期間を変更します。
 
 CDN のパフォーマンスを向上させる方法の提案については、「**レコメンデーション**」タブを選択します。
 
 ![CDN のレコメンデーション](assets/cdn-performance-recommendations.png)
 
-リスト内のレコメンデーションの横にある山形記号をタップまたはクリックすると、改善を行う手順と問題の原因に関する詳細が表示されます。
+リスト内のレコメンデーションの横にある山形アイコンをクリックして、改善するための手順と問題の原因に関する詳細を表示します。
 
 ## キャッシュヒットの定義 {#cache-hit}
 

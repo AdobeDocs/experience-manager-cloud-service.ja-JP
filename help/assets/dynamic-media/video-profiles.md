@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
 workflow-type: tm+mt
-source-wordcount: '3744'
-ht-degree: 100%
+source-wordcount: '3742'
+ht-degree: 99%
 
 ---
 
@@ -151,7 +151,7 @@ Dynamic Media には、最高の閲覧エクスペリエンスを実現できる
 
 他のアセットタイプへの高度な処理パラメーターの定義については、[アセット処理の設定](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)を参照してください。
 
-**アダプティブビットレートストリーミング用のビデオプロファイルを作成するには**、
+**アダプティブビットレートストリーミング用のビデオプロファイルを作成するには：**
 
 1. Experience Manager ロゴを選択し、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL ビデオプロファイル]**&#x200B;に移動します。
 1. 「**[!UICONTROL 作成]**」を選択します。
@@ -191,7 +191,7 @@ Dynamic Media には、最高の閲覧エクスペリエンスを実現できる
 
 「**[!UICONTROL アダプティブストリーミング用にエンコーディング]**」オプションを使用しない場合は、プロファイルに追加されるすべてのエンコーディングプリセットが、単一ビットレートのストリーミングまたはプログレッシブビデオ配信用の個々のビデオレンディションとして扱われます。また、すべてのビデオレンディションが同じ縦横比であることを確認するための検証は実行されません。
 
-サポートされるビデオ形式のコーデックは H.264（.mp4）および WebM です。
+サポートされているビデオ形式コーデックは H.264 （.mp4）です。<!-- use to also include WebM but was requested for removal by Riya Midha in email dated October 14, 2024 -->
 
 [アダプティブビットレートストリーミング用のビデオエンコーディングプロファイルの作成](#creating-a-video-encoding-profile-for-adaptive-streaming)も参照してください。
 

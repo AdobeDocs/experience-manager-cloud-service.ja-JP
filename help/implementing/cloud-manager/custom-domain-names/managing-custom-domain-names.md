@@ -5,9 +5,9 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 27d9a48c6afa115d5c755fa54cf96cb6a561b2f5
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '789'
 ht-degree: 62%
 
 ---
@@ -31,7 +31,7 @@ AdobeCloud Managerでは、次の理由により、カスタムドメイン名�
 
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 
-1. ページの左上隅にある ![ アイコン – ハンバーガーを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左側のナビゲーションメニューを表示します。
+1. ページの左上隅にある ![ アイコンを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左側のメニューを表示します。
 
 1. **サービス**&#x200B;見出しの下にある「**CDN 設定**」をクリックします。
 

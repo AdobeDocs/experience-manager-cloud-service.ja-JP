@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 98%
+source-wordcount: '1398'
+ht-degree: 97%
 
 ---
 
@@ -129,7 +129,7 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
 
 >[!NOTE]
 >
->Web 階層設定パイプラインは、プライベートリポジトリではサポートされていません。詳細と制限事項の一覧については、[Cloud Managerでのプライベートリポジトリの追加 ](/help/implementing/cloud-manager/managing-code/private-repositories.md) を参照してください。
+>Web 階層設定パイプラインは、プライベートリポジトリではサポートされていません。制限の詳細と完全なリストについては、[Cloud Manager でのプライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)を参照してください。
 
 実稼動以外のターゲットデプロイメントパイプラインの作成を完了する手順は、デプロイメントタイプを選択した場合と同じです。
 
@@ -156,16 +156,16 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
 
    ![設定パイプライン](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. エクスペリエンス監査を有効にした場合は、「**続行**」をタップまたはクリックして「**エクスペリエンス監査**」タブに進みます。ここでは、エクスペリエンス監査に常に含めるパスを定義できます。
+1. エクスペリエンス監査を有効にした場合は、「**続行**」をクリックして「**エクスペリエンス監査**」タブに進みます。ここでは、エクスペリエンス監査に常に含めるパスを定義できます。
 
    * 「**エクスペリエンス監査**」を有効にした場合、設定方法について詳しくは、[エクスペリエンス監査](/help/implementing/cloud-manager/experience-audit-dashboard.md)のドキュメントを参照してください。
    * 有効にしていない場合は、この手順をスキップします。
 
-1. 「**保存**」をタップまたはクリックして、パイプラインを保存します。
+1. 「**保存**」をクリックしてパイプラインを保存します。
 
 パイプラインが保存され、**プログラムの概要**&#x200B;ページの&#x200B;**パイプライン**&#x200B;カードで[パイプラインを管理](managing-pipelines.md)できるようになりました。
 
-## Dispatcher パッケージをスキップ {#skip-dispatcher-packages}
+## Dispatcher パッケージのスキップ {#skip-dispatcher-packages}
 
 Dispatcher パッケージをパイプラインの一部として作成しても、ストレージを作成するために公開しない場合は、そのパッケージの公開を無効にすることができます。その結果、パイプラインの実行時間が短くなる可能性があります。
 
