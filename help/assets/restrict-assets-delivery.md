@@ -3,16 +3,16 @@ title: OpenAPI 機能を使用したDynamic Mediaによるアセットの配信�
 description: OpenAPI 機能を使用してアセットの配信を制限する方法を説明します。
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 6e9fa8301fba9cab1a185bf2d81917e45acfe3a3
+source-git-commit: 03e13d29629c5e0305401179502cd1fc24f9ad75
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 1%
+source-wordcount: '1117'
+ht-degree: 2%
 
 ---
 
 # OpenAPI 機能を使用したDynamic Mediaによるアセットの配信制限 {#restrict-access-to-assets}
 
-| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Experience Managerのアセットガバナンスの一元化により、DAM 管理者またはブランド管理者は、OpenAPI 機能を使用して、Dynamic Mediaを通じて使用可能なアセットへのアクセスを管理できます。 AEM as a Cloud Service オーサーサービスでアセットに特定のメタデータを設定することで ](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy) 選択した [AdobeのIdentity Management System （IMS）ユーザーまたはグループに（個々のアセットに対して）承認済みアセットの配信を制限できます。
@@ -96,12 +96,4 @@ AEM Cloud Service オーサーサービスおよびアセットセレクター�
 
 ### Publish サービスでのカスタム ID プロバイダーの配信 {#delivery-custom-identity-provider}
 
-OpenAPI ライセンスを持つAEM Sites、AEM Assets、Dynamic Mediaは一緒に使用でき、アセットの制限付き配信は、AEM Publishまたはプレビューサービスを通じて配信される web サイトで設定できます。
-AEM SitesのPublishおよびプレビューサービスが [ カスタム ID プロバイダー（IdP） ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) を使用するように設定されている場合、内のセキュリティで保護されたアセットへのアクセス権を持つ必要のあるグループを、セットアッププロセスの際に `groupMembership` 属性に含めることができます。\
-Web サイトユーザーがカスタム ID プロバイダーにログオンし、Publish/プレビューサービスでホストされる web サイトにアクセスすると、`groupMembership` 属性が読み取られ、セキュリティで保護された Cookie が作成されて Web サイトに配信され、認証に成功します。 このセキュア cookie は、Web サイトのコンテンツを user-agent に配信するためのその後のすべてのリクエストに含まれます。
-
-セキュリティで保護されたアセットがページでリクエストされると、AEM Publish層とプレビュー層は secure-cookie から認証マテリアルを抽出し、アクセスを検証します。 一致する場合は、アセットが表示されます。
-
->[!NOTE]
->
-> [OpenAPI 機能を使用してDynamic Mediaをアクティブ化するためのサポートチケット ](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) で、ユースケースに制限付き配信を指定します。 Adobeエンジニアリングは、必要な説明や、制限付き配信のプロセスの設定を支援します。
+OpenAPI ライセンスを持つAEM Sites、AEM Assets、Dynamic Mediaを一緒に使用できるので、AEM Publishまたはプレビューサービスでホストされている web サイトで、アセットの配信制限を設定できます。 セキュア配信フローでは、ブラウザー Cookie を利用してユーザーのアクセスを確立します。このユースケースを実装するには、配信層用のカスタムドメインがパブリッシュドメインのサブドメインになっている必要があります。 AEM SitesのPublishおよびプレビューサービスが [ カスタム ID プロバイダー（IdP） ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) を使用するように設定されている場合、ユーザーのグループメンバーシップをカプセル化す `delivery-token` と呼ばれる新しい Cookie を、公開ドメインの投稿ユーザーの認証で設定する必要があります。 配信層は、セキュア cookie から認証内容を抽出し、アクセスを検証します。 詳しくは、[ エンタープライズサポートチケット ](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) をログに記録してください。
