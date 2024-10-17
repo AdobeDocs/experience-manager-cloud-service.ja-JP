@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 6fa6fc9015624bec9113a198285531a3bdd7e29c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '773'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -34,21 +34,21 @@ ht-degree: 92%
 * GRANITE-52454：サポートヘルパーのアップグレード、GRANITE-52454：AEMaaCS の最新リリースを使用するようにサポートヘルパーをアップグレード。
 * GRANITE-53287：セキュリティ権限の統合テストバージョンを更新。
 * GRANITE-53485：レプリケーション Azure Blob Storage のサービスプリンシパル認証をサポート。
-* GRANITE-53514:Treeactivation がバージョン 1.0.26 に更新されました。
+* GRANITE-53514：Treeactivation をバージョン 1.0.26 にアップデート。
 * GRANITE-53870：クイックスタートの最大 JVM バージョンチェックをスキップする内部メカニズムを作成。
-* GRANITE-53914:Java 17 で更新されたモジュールバージョンを使用したプラットフォームテストの失敗を修正しました。
+* GRANITE-53914：アップデートされた Java 17 モジュールバージョンでのプラットフォームテストの失敗を修正。
 * GRANITE-53966：コンテンツ配布に別のスレッドプールを使用。
 * GRANITE-54006：Jackson を 2.17.2 にアップデート。
 * GRANITE-54038：Creative Cloud エンタープライズ IMS クライアントを AEM IMS クライアント許可リストに追加。
 * GRANITE-54054：com.adobe.granite.repository.impl.SystemUserValidation warnOnly の環境変数。
 * GRANITE-54266：実稼動 SDK に検索サジェストサービスがない。
 * GRANITE-54274：Firefly IMS クライアントを受け入れる。
-* GRANITE-54300：Oak を最新のパブリックリリース（1.70.0）に更新します。
+* GRANITE-54300：Oak を最新のパブリックリリース（1.70.0）にアップデート。
 * GUIDES-19069：aem guides アドオンの guidesPeerLinkIndex を追加。
-* SITES-23584:Java 17 で基盤コンポーネントのテストが失敗する問題を修正。
-* SKYOPS-69768：SlingModels は ResourceResolvers を逆シリアル化しない。
+* SITES-23584：Java 17 で基盤コンポーネントのテストが失敗する問題を修正。
+* SKYOPS-69768：SlingModels で ResourceResolvers が逆シリアル化されない。
 * SKYOPS-76378：i18n での ResourceBundle 登録／登録解除のスレッドの安全性を向上。
-* SKYOPS-79285:Sling XSS を 2.4.2 に更新します。
+* SKYOPS-79285：Sling XSS を 2.4.2 にアップデート。
 * SKYOPS-82383：コマンド実行記述子で「helm-values」convert-merge-analyse 結果を公開。
 * SKYOPS-84810：RDE の起動時に「40-initialize-publish.sh」の実行をスキップする。
 * SKYOPS-84951：可変コンテンツチェックサム生成コードを修正。
@@ -70,7 +70,7 @@ ht-degree: 92%
 
 ### 既知の問題 {#known-issues-18175}
 
-* FORMS-15818: コンポーネント記述子のエントリ `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml`、サーバーログにステートメントが見つかりません。 これらは無害なログステートメントです。
+* FORMS-15818：コンポーネント記述子エントリ `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` が見つからないというステートメントがサーバーログに記録される。これらは無害なログステートメントです。
 
 ### 廃止された機能と API {#deprecated-18175}
 
