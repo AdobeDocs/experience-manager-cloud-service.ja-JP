@@ -6,10 +6,10 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 0dbc3ae264f83672a212151d14011820aa5e3e78
+source-git-commit: 8d38ee90ed5b4e9a5d39d0580e35101187f2c457
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3243'
+ht-degree: 64%
 
 ---
 
@@ -32,7 +32,7 @@ Adobe Sensei AI を使用したスマートイメージングが、各ユーザ�
 >
 >Dynamic Media の&#x200B;[_スナップショット_](https://snapshot.scene7.com/)を使用して、Dynamic Media の画像修飾子とスマートイメージングのメリットを体験してみましょう。
 >
-> スナップショットは、最適化された動的な画像配信における Dynamic Media のパワーをわかりやすく伝えるために作られた、視覚的なデモツールです。テスト画像やDynamic Mediaの URL を試して、様々なDynamic Media画像修飾子の出力を視覚的に確認し、次の項目に対するスマートイメージング最適化を確認します。
+>スナップショットは、最適化された動的な画像配信における Dynamic Media のパワーをわかりやすく伝えるために作られた、視覚的なデモツールです。テスト画像やDynamic Mediaの URL を試して、様々なDynamic Media画像修飾子の出力を視覚的に確認し、次の項目に対するスマートイメージング最適化を確認します。
 >
 >* ファイルサイズ（WebP および AVIF 配信を使用）
 >* ネットワーク帯域幅
@@ -254,74 +254,73 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 +++
 
 
-<!-- QUESTIONS BELOW WERE REMOVED AS PER CQDOC-22085
++++
 
-+++**Can I enable Smart Imaging for my account?**
+**アカウントでスマートイメージングを有効にするには、どうすればよいですか？**
 
-No. You initiate a request to use Smart Imaging; it is not automatically enabled.
+スマートイメージングの使用を開始するには、既存の URL やプリセットに `bfc=on`、`dpr=on,dprValue`、`network=on` またはこれら 3 つのパラメーター設定をすべて追加します。 これらの変更を手動で行わない場合は、サポートケースを作成することで、スマートイメージングをデフォルトで有効にすることができます。
 
-Create a support case as described below. In your support case, be sure you mention which of the following Smart Imaging capabilities (one or more) you want enabled on your account:
+サポートケースを作成する際に、アカウントでアクティベートするスマートイメージング機能を指定します。
 
-* WebP
-* AVIF
-* DPR and Network Bandwidth optimization
-* PNG to lossy AVIF or lossy WebP
-
-If you already have Smart Imaging enabled with WebP, but desire other new capabilities as listed above, you must create a support case.
-
-**To create a support case to enable Smart Imaging on your account:**
-
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-1. Provide the following information in your support case:
-
-    * Primary contact name, email, phone.
-
-    * List which of the following Smart Imaging capabilities (one or more) you want enabled on your account:
-      * WebP
-      * AVIF
-      * DPR and Network Bandwidth optimization
-      * PNG to lossy AVIF or lossy WebP
-    
-    * All domains to be enabled for Smart Imaging (that is, `images.company.com` or `mycompany.scene7.com`).
-
-       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts. 
-
-       Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.  
-
-       Look for the field labeled **[!UICONTROL Published Server Name]**.
-    
-    * Verify that you are using the CDN through Adobe and not managed with a direct relationship.
-
-    * Verify you are using a dedicated domain such as `images.company.com` or `mycompany.scene7.com`, and not a generic domain, such as `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.  
-
-       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts.
-
-       Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.  
-
-       Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media Classic domain, you can request moving over to your own custom domain as part of this transition.
-
-    * Indicate if you want it to work over HTTP/2.
-
-1. Adobe Customer Support adds you to the Smart Imaging customer Wait List based on the order in which requests are submitted.
-1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date.
-1. **Optional**: You can optionally test Smart Imaging in Staging before Adobe pushes the new feature to production.
-1. You are notified after completion by Customer Support.
-1. To maximize the performance improvements of Smart Imaging, Adobe recommends setting the Time To Live (TTL) to 24 hours or longer. The TTL defines how long assets are cached by the CDN. To change this setting:
-
-    1. If you use Dynamic Media Classic, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**. Set the **[!UICONTROL Default Client Cache Time To Live]** value to 24 or longer.
-    1. If you use Dynamic Media, follow [these instructions](config-dm.md). Set the **[!UICONTROL Expiration]** value 24 hours or longer.
-
-
-
-**When is my account enabled with Smart Imaging?**
-
-Requests are processed in the order in which they are received by Customer Support, according to the Wait List.
+* ブラウザーフォーマット変換（WebP または AVIF）
+* ネットワーク帯域幅の最適化
 
 >[!NOTE]
 >
->There can be a long lead time because enabling Smart Imaging involves Adobe clearing the cache. Therefore, only a few customer transitions can be handled at any given time.
+>DPR では、正しい `dprValue` を判断するためにクライアントサイドの調整が必要です。 そのため、Adobeでは、URL に `dpr=on,dprValue` を追加して、DPR を有効にすることをお勧めします。
 
--->
+**アカウントでスマートイメージングを有効にするためのサポートケースを作成するには：**
+
+1. [Admin Console を使用して、新しいサポートケースの作成を開始します](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)。
+1. サポートケースには、次の情報を記入してください。
+
+   * **プライマリ連絡先の詳細：**
+
+      * 名前、メールおよび電話番号を入力します。
+
+   * **有効にするスマートイメージング機能：**
+
+      * アカウントに必要な機能をリストします。
+
+         * ブラウザーフォーマット変換：WebP または AVIF
+         * ネットワーク帯域幅の最適化
+         * DPR:DPR では、正しい `dprValue` を判断するためのクライアントサイドの調整が必要です。 そのため、Adobeでは、URL に `dpr=on,dprValue` を追加して、DPR を有効にすることをお勧めします。
+
+   * **スマートイメージングのドメイン：**
+
+      * *`company.com`* や *`mycompany.scene7.com`* など、関連するすべてのドメインを一覧表示します。
+      * スマートイメージングは、汎用ドメインとカスタムドメインの両方をサポートします。
+      * ドメインを特定するには、[Dynamic Media Classic デスクトップアプリケーションを開き ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) 会社アカウントにログインします。
+
+         1. **[!UICONTROL 設定]**／**[!UICONTROL アプリケーション設定]**／**[!UICONTROL 一般設定]**&#x200B;に移動します。
+         1. 「**[!UICONTROL 公開先サーバー名]**」フィールドを探して、ドメインを確認します。
+         1. 別のプロバイダーで管理されているのではなく、Adobeの CDN を使用していることを確認します。
+
+   * **HTTP/2 サポートを示します：**
+
+      * スマートイメージングが HTTP/2 上で機能する必要がある場合は、を指定します。
+
+1. Adobeカスタマーサポートでは、リクエストされたスマートイメージング機能をデフォルトで有効にするので、URL にパラメーターを手動で追加する必要はありません。
+1. Adobeでは、キャッシュを通じてパフォーマンスを最大限に高めるために、有効期間（TTL）を 24 時間以上に設定することをお勧めします。
+TTL を調整するには：
+
+   1. **Dynamic Media Classicの場合：**
+      1. **[!UICONTROL 設定]**/**[!UICONTROL アプリケーション設定]**/**[!UICONTROL Publish設定]**/**[!UICONTROL Image Server]** に移動します。
+      1. **[!UICONTROL クライアントキャッシュのデフォルトの有効期限]** 値を 24 時間以上に設定します。
+   1. **Adobe Experience ManagerのDynamic Mediaの場合：**
+      1. [ 次の手順 ](/help/assets/dynamic-media/config-dm.md) に従います。
+      1. **[!UICONTROL 有効期限]** の値を 24 時間以上に設定します。
+
+
++++
+
+**アカウントでスマートイメージングが有効になるのはいつですか？**
+
+カスタマーサポートは、待機リストに従って、リクエストを受け取った順序で処理します。
+
+>[!NOTE]
+>
+>リードタイムが長くなる場合がありますが、それは、スマートイメージングを有効化するためには、アドビによるキャッシュのクリアが必要になるからです。そのため、処理できる移行の数は、常にほんの数件です。
 
 +++
 
@@ -469,27 +468,6 @@ PNG は可逆形式なので、以前配信されていた WebP および AVIF �
 
 はい。スマートイメージングでは、画質レベルに応じた非可逆変換をサポートするようになりまし。会社の設定を使用するか、画像の URL パスに `qlt=100` を追加して、画質を 100 に設定することで、可逆変換を引き続き使用できます。
 +++
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
