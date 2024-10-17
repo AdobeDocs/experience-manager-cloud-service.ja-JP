@@ -5,7 +5,7 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 04ec933125da9ee3c84ffd948b144581d31763d6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 100%
 
@@ -310,7 +310,7 @@ ht-degree: 100%
 </table>
 </details>
 
-### `org.apache.sling.commons.auth*` の削除 {#org.apache.sling.commons.auth}
+### `org.apache.sling.commons.auth*` の削除 {#org.apache.sling.commons.auth}
 
 `org.apache.sling.commons.auth` や `org.apache.sling.commons.auth.spi` を使用している場合、コードをそれぞれ `org.apache.sling.auth` または。 `org.apache.sling.auth.spi` に移行することで使用を置き換えることができます。古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
 
