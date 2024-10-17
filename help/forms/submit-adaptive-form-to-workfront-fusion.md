@@ -6,10 +6,10 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
+source-git-commit: d0d7a10b2c1dadb0f8bfaa654db7993d3e5e6635
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 100%
+source-wordcount: '1272'
+ht-degree: 98%
 
 ---
 
@@ -81,6 +81,10 @@ Web フックを追加するには、次の手順に従います。
    > 指定した Web フック名が AEM インスタンスに表示されるので、Web フック名は慎重に選択することをお勧めします。
 
 1. 「**[!UICONTROL 追加]**」をクリックして、新しい接続を追加します。**[!UICONTROL 接続を作成]**&#x200B;ダイアログボックスが表示されます。
+
+>[!NOTE]
+>
+> テクニカルアカウントが **forms-users** グループのメンバーであることを確認します。メンバーでない場合、Webhook の追加に失敗します。
 
 #### Web フックに接続を追加 {#add-connection}
 
