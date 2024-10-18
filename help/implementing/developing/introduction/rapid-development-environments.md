@@ -4,7 +4,7 @@ description: クラウド環境で迅速な開発反復処理を行うために�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3c1cbf0930799c2919696465931bf7c1f76bf8bb
+source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
 workflow-type: tm+mt
 source-wordcount: '4794'
 ht-degree: 88%
@@ -99,6 +99,7 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
    ```
    aio login
    ```
+
    ログイン情報（トークン）はグローバル aio 設定に保存されるため、サポートされるログインと組織は 1 つだけです。 異なるログインや組織を必要とする複数の RDE を使用する場合は、次の例に従ってコンテキストを導入します。
 
    <details><summary>次の例に従って、RDE ログインの 1 つにローカルコンテキストを設定します</summary>
@@ -111,7 +112,6 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
    aio auth ctx -s mycontext
    aio login --no-open
    ```
-
 
    >[!NOTE]
    > login コマンドに `--no-open` オプションを指定すると、デフォルトのブラウザーを開く代わりに、ターミナルに URL が出力されます。 このように、ブラウザーの **匿名** ウィンドウでコピーして開くことができます。 これにより、通常のブラウザーウィンドウで現在ログインしているセッションはそのまま残り、コンテキストに必要な特定のログインと組織を確実に使用できます。
@@ -153,8 +153,8 @@ Setup the CLI configuration necessary to use the RDE commands.
 ローカル設定またはグローバル設定を選択すると、setup コマンドは現在のログインから組織 ID を読み取り、次に組織のプログラムを読み取ります。組織が見つからない場合は、ガイダンスに従って手動で入力できます。
 
 ```
- Selected only organization: XYXYXYXYXYXYXYXXYY
- retrieving programs of your organization ...
+Selected only organization: XYXYXYXYXYXYXYXXYY
+retrieving programs of your organization ...
 ```
 
 プログラムを取得後、ユーザーはリストから選択したり、入力してフィルタリングしたりできます。
@@ -248,7 +248,6 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 * コマンドの詳細なヘルプを表示するには、次のように入力します。
 
   `aio aem rde <command> --help`
-
 
 ### グローバルフラグ {#global-flags}
 
@@ -507,7 +506,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 >
 >オーサーサービスのログコマンドの実行中にエラー `RDECLI:UNEXPECTED_API_ERROR` が表示される場合は、環境をリセットして再試行してください。最新のリセット操作が 2024年5月末より前であった場合、このエラーがスローされます。
 >
-```
+>```
 >aio aem:rde:reset
 >```
 
@@ -683,6 +682,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
   }
 }
 ```
+
 </details>
 
 ### インストール {#install}
@@ -723,6 +723,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
   ]
 }
 ```
+
 </details>
 
 ### 削除 {#delete}
@@ -901,6 +902,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
   ]
 }
 ```
+
 </details>
 
 ### リセット {#reset}
@@ -931,6 +933,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
   "status": "reset"
 }
 ```
+
 </details>
 
 ### やり直し {#restart}
