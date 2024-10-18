@@ -4,10 +4,10 @@ description: クラウド環境で迅速な開発反復処理を行うために�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fd57437b16a87de2b279b0f8bc10c12a7d3f721a
+source-git-commit: 3c1cbf0930799c2919696465931bf7c1f76bf8bb
 workflow-type: tm+mt
-source-wordcount: '4537'
-ht-degree: 93%
+source-wordcount: '4794'
+ht-degree: 88%
 
 ---
 
@@ -1052,3 +1052,17 @@ RDE プラグインを使用するには、Cloud Manager **開発者 - Cloud Ser
 `aio cloudmanager:list-programs`
 
 これにより、設定した組織の下にあるすべてのプログラムがリストされ、正しい役割が割り当てられていることを確認できます。
+
+### 非推奨のコンテキスト「aio-cli-plugin-cloudmanager」の使用 {#aio-rde-plugin-troubleshooting-deprecatedcontext}
+
+「aio-cli-plugin-aem-rde」の履歴により、コンテキスト名「aio-cli-plugin-cloudmanager」がしばらくの間使用されていました。 rde プラグインは、コンテキスト情報を処理する IMS 方法を使用するようになりました。つまり、コンテキスト情報をグローバルまたはローカルに保存するオプションと、必要に応じてすべての aio 呼び出しを設定済みのデフォルトにデフォルト設定するオプションがあります。 設定されたデフォルトのコンテキストはローカルに保存され、開発者は個々のコンテキストとその情報をフォルダー内で追跡および使用できます。 詳しくは、上記 [ ローカルコンテキストの設定例 ](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) を参照してください。
+
+両方のプラグイン、aio-cli-plugin-cloudmanager および aio-cli-plugin-aem-rde を使用し、同じコンテキストですべての情報を保持したい開発者は、今すぐ次のオプションを選択する必要があります。
+
+#### コンテキスト「aio-cli-plugin-cloudmanager」を使用し続ける
+
+コンテキストは引き続き使用できますが、RDE プラグインに非推奨の警告が表示されます。 この警告は、```--quiet``` モードを使用すると省略できます。 RDE プラグインの新しいバージョンでは、「aio-cli-plugin-cloudmanager」コンテキストを読み取るためのフォールバックは提供されません。 引き続き利用するには、デフォルトのコンテキストを「aio-cli-plugin-cloudmanager」に設定するだけです。上記の [ ローカルコンテキストを設定する例 ](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) を参照してください。
+
+#### cloud manager プラグインには、その他のコンテキスト名も使用します
+
+Cloud Manager プラグインは、使用するコンテキストを定義するパラメーターを提供します。 IMS のデフォルトのコンテキスト設定は、まだサポートしていません。 これを行うには、[ ローカルコンテキストを設定する例 ](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) を使用して RDE プラグインを設定し、Cloud Manager プラグインへのすべての呼び出しで ```--imsContextName=myContext``` のように「myContext」を使用するように指示します。
