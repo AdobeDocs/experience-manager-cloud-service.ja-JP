@@ -4,9 +4,9 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 4492536120989423b639bbb75105568a9c328507
+source-git-commit: 32803bc4304e55ccf0a618236e482cb42aa88e27
 workflow-type: tm+mt
-source-wordcount: '5469'
+source-wordcount: '5557'
 ht-degree: 98%
 
 ---
@@ -287,7 +287,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 }
 ```
 
-特定のタイプのコンテンツフラグメントを 1 つ取得するには、まずそのパスも決定する必要があります。次に例を示します。
+特定のタイプのコンテンツフラグメントを 1 つ取得するには、まずそのパスも決定する必要があります。例：
 
 ```graphql
 {
@@ -356,7 +356,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 #### バリエーション {#variations}
 
-コンテンツフラグメントのバリエーションに対するクエリを簡略化するために、`_variations` フィールドが実装されています。次に例を示します。
+コンテンツフラグメントのバリエーションに対するクエリを簡略化するために、`_variations` フィールドが実装されています。例：
 
 ```graphql
 {
@@ -582,7 +582,7 @@ GraphQL クエリでフィルタリングを使用して、特定のデータを
    * ASC（昇順）または DESC（降順）。デフォルトでは ASC が適用されます
    * 並べ替えの方向は、フィールドごとに指定できます。つまり、あるフィールドを昇順で、別のフィールドを降順（name、firstName DESC）で並べ替えることができます
 
-次に例を示します。
+例：
 
 ```graphql
 query {
@@ -614,7 +614,7 @@ query {
 >
 >これは、パフォーマンスに悪影響を及ぼす可能性があります。
 
-次に例を示します。
+例：
 
 ```graphql
 query {
@@ -929,6 +929,15 @@ AEM コンテンツフラグメント用の GraphQL を使用すると、AEM Dyn
 GraphQL のソリューションでは、次のことが可能です。
 
 * `ImageRef` 参照で `_dmS7Url` を使用する
+   * [URL によるDynamic Media アセット配信のサンプルクエリ – 画像リファレンス ](#sample-query-dynamic-media-asset-delivery-by-url-imageref) を参照してください。
+* 複数の参照（`ImageRef`、`MultimediaRef`、`DocumentRef`）で `_dmS7Url` を使用する
+   * [URL によるDynamic Media アセット配信のサンプルクエリ – 複数リファレンス ](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs) を参照してください。
+
+* スマート切り抜き機能での `_dmS7Url` の使用
+
+   * `_smartCrops` プロパティは、特定のアセットで使用できるスマート切り抜き設定を公開します
+
+   * [URL によるDynamic Media アセット配信のサンプルクエリ – スマート切り抜きを使用 ](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop) を参照してください。
 
 >[!NOTE]
 >
@@ -1011,6 +1020,36 @@ query allTeams {
     }
   }
 }
+```
+
+### URL によるDynamic Media アセット配信のサンプルクエリ – スマート切り抜きを使用 {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+
+サンプルクエリを以下に示します。
+
+* リクエストされたアセットで使用可能なスマート切り抜き設定を公開するには
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      title
+      teamMembers {
+        profilePicture {
+          ... on ImageRef {
+            height
+            width
+            _dmS7Url
+            _smartCrops {
+              width
+              height
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+} 
 ```
 
 ## AEM 用の GraphQL - 拡張機能の概要 {#graphql-extensions}
@@ -1157,11 +1196,11 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
 ## 自動テスト {#automated-testing}
 
-AEM Cloud Managerでデプロイメントパイプラインを実行する場合、パイプラインの実行中に自動テストが実行されます。
+AEM Cloud Manager でデプロイメントパイプラインを実行する場合、パイプライン実行中に自動テストが実行されます。
 
-正確な結果を得るには、AEM as a Cloud Service **ステージング** 環境で **実稼動** 環境をできるだけ正確にミラーリングする必要があります。 これは、コンテンツにとって特に重要です。
+正確な結果を得るには、AEM as a Cloud Service **ステージング**&#x200B;環境で&#x200B;**本番**&#x200B;環境をできるだけ正確にミラーリングする必要があります。これは、コンテンツにとって特に重要です。
 
-それには、AEM as a Cloud Service[ コンテンツコピーツール ](/help/implementing/developing/tools/content-copy.md) を使用して、実稼動コンテンツをステージング環境にコピーします。
+AEM as a Cloud Service [コンテンツコピーツール](/help/implementing/developing/tools/content-copy.md)を使用して、本番コンテンツをステージング環境にコピーすることで、可能になります。
 
 ## 制限事項 {#limitations}
 
@@ -1187,7 +1226,7 @@ AEM Cloud Managerでデプロイメントパイプラインを実行する場合
 
       * これらのフィールドは異なるデータタイプです。
 
-   * 次に例を示します。
+   * 例：
 
       * 異なるモデルを持つ 2 つ（またはそれ以上）のフラグメント（`M1`、`M2` など）が、別のフラグメントからの参照（コンテンツ参照またはフラグメント参照）として使用される場合。例：`Fragment1` `MultiField/List`
       * 異なるモデルを持つこれら 2 つのフラグメント（`M1`、`M2`）には、同じ名前のフィールドがありますが、タイプが異なります。
