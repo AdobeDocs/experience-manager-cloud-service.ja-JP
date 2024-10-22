@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
@@ -62,7 +62,7 @@ Cloud Manager には、プログラムに対するすべての証明書のステ
 
 >[!NOTE]
 >
->同じ SAN ドメイン・エントリーに対応する SAN 証明書が 2 つ以上ある場合、一方の証明書でそのドメインをカバーし、もう一方の証明書を更新すると、他方の証明書がドメインにインストールされます。
+>同じ SAN ドメインエントリをカバーする SAN 証明書が 2 つ以上ある場合、一方の証明書がそのドメインをカバーし、もう一方の証明書が更新されると、後者がドメインにインストールされます。
 >
 >詳しくは、[SSL 証明書問題のトラブルシューティング](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert)を参照してください。
 
@@ -88,7 +88,7 @@ SSL 証明書の名前を変更する必要がある理由を以下に示しま�
 
 1. **サービス**&#x200B;見出しの下にある ![鍵がかかったアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) 「**SSL 証明書**」をクリックします。
 
-1. **SSL 証明書** ページで、**Adobe管理 ![SSL 証明書の名前を変更する行の最後にある** 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+1. **SSL 証明書**&#x200B;ページで、名前を変更する&#x200B;**アドビが管理する** SSL 証明書の行の末尾にある、![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックします。
 
 1. ドロップダウンメニューで、「**名前を変更**」をクリックします。
 
@@ -119,7 +119,7 @@ SSL 証明書の名前を変更する必要がある理由を以下に示しま�
 
 1. SSL 証明書ページで、削除する証明書のテーブル行で、右端にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックしてから **削除** をクリックします。
 
-   **削除** に情報アイコンが表示されている場合（下図を参照）、上記のメモを参照してください。
+   次の画像に示すように、**削除**&#x200B;に情報アイコンが表示されている場合は、上記のメモを参照してください。
 
    ![情報アイコン付きの「削除」ボタン](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
 
