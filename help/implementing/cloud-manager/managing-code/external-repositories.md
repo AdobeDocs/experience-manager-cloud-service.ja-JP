@@ -4,9 +4,9 @@ description: Cloud Manager に外部リポジトリを追加する方法につ�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '742'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Cloud Manager に外部リポジトリを追加する方法について説明し
 
 >[!NOTE]
 >
->この機能は、[ 早期導入プログラム ](/help/implementing/cloud-manager/release-notes/current.md#early-adoption) でのみ使用できます。
+>この機能は、[早期導入プログラム](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)でのみ利用できます。
 
 ## 外部リポジトリの設定
 
