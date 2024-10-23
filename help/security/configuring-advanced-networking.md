@@ -4,10 +4,10 @@ description: AEM as a Cloud Service の高度なネットワーク機能（VPN �
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 09cc9c65aff42c3a169791d32dfdbdbfb044aecb
-workflow-type: ht
-source-wordcount: '5676'
-ht-degree: 100%
+source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
+workflow-type: tm+mt
+source-wordcount: '5657'
+ht-degree: 99%
 
 ---
 
@@ -563,9 +563,7 @@ IPSec 技術を搭載したほとんどの VPN デバイスがサポートされ
 
 ### 設定に役立つドメイン {#vpn-useful-domains-for-configuration}
 
-次の図は、設定と開発に役立つ一連のドメインと関連 IP を視覚的に表したものです。図の下の表に、これらのドメインと IP を示します。
-
-![VPN ドメイン設定](/help/security/assets/AdvancedNetworking.jpg)
+次の表に、設定と開発に役立つ一連のドメインと IP を示します。
 
 <table>
 <thead>
