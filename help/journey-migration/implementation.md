@@ -4,10 +4,10 @@ description: クラウドに移行するためのコードとコンテンツの�
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '2282'
-ht-degree: 100%
+source-wordcount: '2288'
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ Cloud Service への移行の正確な手順は、購入したシステムと準
 
 次の図は、AEM as a Cloud Service で使用するコードとコンテンツを変換するフェーズについて、主な段階を示したものです。
 
-![画像](/help/journey-migration/assets/exec-image1.png)
+![ コンバージョン手順 ](/help/journey-migration/assets/exec-image1.png)
 
 以下の章では、これを実現するために必要なツールの詳細を説明します。
 
@@ -217,7 +217,7 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 次の節では、コンテンツ移行戦略とタイムラインの策定に使用できる重要な手順と関連タスクを示します。
 
-![画像](/help/journey-migration/assets/content-migration2.png)
+![ 移行戦略の策定手順 ](/help/journey-migration/assets/content-migration2.png)
 
 ### フィットメント {#fitment}
 

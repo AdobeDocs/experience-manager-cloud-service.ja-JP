@@ -5,7 +5,7 @@ exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 solution: Experience Manager Sites
 feature: Workflow
 role: Admin
-source-git-commit: d46678e999889934631bd0c678de5b060bc38f44
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
 source-wordcount: '2200'
 ht-degree: 100%
@@ -338,7 +338,7 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
     * select the `checkbox`in the **Read** column
     * select **Save**
 
-![chlimage_1-204](assets/chlimage_1-204.png)
+![Setting tag permissions](assets/chlimage_1-204.png)
 
 * ensure all publish instances have same permissions
 

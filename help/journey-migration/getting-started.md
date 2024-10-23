@@ -4,10 +4,10 @@ description: AEM as a Cloud Service への移行の基本事項を把握して�
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 100%
+source-wordcount: '579'
+ht-degree: 96%
 
 ---
 
@@ -39,11 +39,11 @@ Cloud Service への移行ジャーニーには、次の段階が含まれます
 
 次の図は AEM as a Cloud Service への移行プロセス概要を示しています。
 
-![画像](/help/journey-migration/assets/move-aemcloud-process.png)
+![AEM as a Cloud Serviceへの移行プロセス概要 ](/help/journey-migration/assets/move-aemcloud-process.png)
 
 移行ジャーニーのより詳細で詳細な表示については、以下の図も参照してください。
 
-![画像](/help/journey-migration/assets/migration-process.png)
+![ 移行ジャーニーの詳細で詳細な表示 ](/help/journey-migration/assets/migration-process.png)
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
 

@@ -4,10 +4,10 @@ description: Experience Manager as a Cloud Service への移行ガイド（パ�
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7c704aa09ae4a6a3368b1eccb12982360a3350b3
 workflow-type: tm+mt
-source-wordcount: '1464'
-ht-degree: 100%
+source-wordcount: '1472'
+ht-degree: 82%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 100%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=ja" text="新機能と新着情報"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html?lang=ja" text="AEM as a Cloud Service の概要"
 
-Adobe Experience Manager（AEM）as a Cloud Service は、コンテナベースのインフラストラクチャ、API 主導の開発、およびガイド付き DevOps プロセスに基づいて構築された、Experience Manager の再構築基盤を提供し、マーケターとデベロッパーがカスタマーエクスペリエンス管理のイノベーションで常に時代を先取りできるようにします。
+Adobe Experience Manager（AEM）as a Cloud Serviceは、Experience Managerのための更新されたアーキテクチャを提供しています。 この基盤は、コンテナベースのインフラストラクチャ、API 駆動型開発、ガイド付き DevOps プロセスに基づいて構築されています。 これにより、マーケターや開発者は、顧客体験管理のイノベーションの最先端を行くことができます。
 
-Cloud Service は、Adobe Experience Manager の豊富な機能と拡張性を、最新のクラウドネイティブアーキテクチャの俊敏性を組み合わせて、ブランドが消費者の絶え間ない要求に応えることを可能にします。
+Cloud Serviceは、すぐに使用できる豊富な機能とAdobe Experience Managerの拡張性を、最新のクラウドネイティブアーキテクチャの俊敏性と組み合わせることで、ブランドは絶え間なく変化する消費者の需要に応えることができます。
 
-この概要では、様々な Experience Manager のデプロイメントから Experience Manager as a Cloud Service まで顧客をトランジションするために推奨される段階的アプローチの概要を説明し、既存の顧客が、エクスペリエンス管理という目的を持って構築された最新プラットフォームで、接続された継続的なエクスペリエンスを提供できるようにします。
+このページでは、お客様が以前のExperience ManagerデプロイメントからExperience Managerのas a Cloud Service的なデプロイメントに移行する際に推奨される段階的アプローチの概要を説明します。 新しい専用プラットフォームは、連続性のある継続的なエクスペリエンスの提供を支援します。
 
 <!-- It primarily focuses on:
 * Getting Started with Adobe Experience Manager as a Cloud Service
@@ -33,7 +33,7 @@ Cloud Service は、Adobe Experience Manager の豊富な機能と拡張性を�
 
 移行ジャーニーの一般的な表示については、以下の図を参照してください。
 
-![画像](/help/journey-migration/assets/migration-process.png)
+![ 移行ジャーニーの一般表現 ](/help/journey-migration/assets/migration-process.png)
 
 ## Adobe Experience Manager as a Cloud Service について {#getting-started}
 
@@ -49,9 +49,9 @@ Cloud Service は、Adobe Experience Manager の豊富な機能と拡張性を�
 
 ### 開発
 
-Adobe Experience Manager as a Cloud Service でのコード開発の基本は、Adobe Experience Manager オンプレミスや Managed Services ソリューションの場合と同様です。
+Adobe Experience Manager as a Cloud Serviceのコード開発の基本事項は、Adobe Experience Manager オンプレミスおよびManaged Services ソリューションの場合と同様です。
 
-デベロッパーはコードを作成しローカルでテストします。コードはその後、リモートの Adobe Experience Manager as a Cloud Service 環境にプッシュされます。
+開発者は、コードを作成してローカルでテストし、リモートのAdobe Experience Manager as a Cloud Service環境にプッシュします。
 
 Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法については、Experience Manager as a Cloud Service の実装に関するセルフヘルプリソースを参照してください。
 
@@ -64,9 +64,9 @@ Experience Manager as a Cloud Service のデプロイメントをカスタマイ
 
 ### デプロイ
 
-開発者はコードを作成しローカルでテストします。コードはその後、リモートの AEM as a Cloud Service 環境にプッシュされます。
+開発者は、コードを作成してローカルでテストし、リモートのAEM as a Cloud Service環境にプッシュします。
 
-Cloud Manager（Managed Services のオプションのコンテンツ配信ツール）が必要です。これが、AEM as a Cloud Service 環境にコードをデプロイするための唯一のメカニズムになりました。
+Cloud Managerは、Managed Servicesのオプションのコンテンツ配信ツールでしたが、現在は必須となっています。 これは、AEM as a Cloud Service環境にコードをデプロイするための唯一のメカニズムです。
 
 AEM as a Cloud Service 環境を設定およびデプロイする方法については、セルフヘルプのリソースを参照してください。
 
@@ -117,13 +117,17 @@ Cloud Service への移行プロセスには、計画、実行、運用開始後
 
 Cloud Service への推奨される移行プロセスの概要を次の図に示します。
 
-![画像](/help/journey-migration/assets/home-img1.png)
+![Cloud Serviceへの推奨される移行プロセスの概要 ](/help/journey-migration/assets/home-img1.png)
 
 <br>
 
 ### 計画
 
-Cloud Service への移行プロセスを開始する前に、Experience Manager as a Cloud Service に習熟し、それに対する主要な変更点を確認すると共に、置換または廃止された機能も確認する必要があります。
+Cloud Serviceへの移行ジャーニーを開始する前に、以下を理解しておく必要があります。
+
+* Experience Managerのas a Cloud Serviceをよく理解する
+* 主な変更点を確認します
+* 置き換えられた機能または非推奨（廃止予定）となった機能の確認
 
 <table>
 <tr>

@@ -4,10 +4,10 @@ description: Java™ および JavaScript API を使用することにより、�
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a0afa0d733b8493883770d03fc1a55db247aaf71
-workflow-type: ht
-source-wordcount: '1089'
-ht-degree: 100%
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+workflow-type: tm+mt
+source-wordcount: '1095'
+ht-degree: 99%
 
 ---
 
@@ -174,7 +174,7 @@ UI のすべての文字列が国際化されたかどうかをテストしま�
 
 次の画像は、AEM ホームページのスタブ翻訳です。
 
-![chlimage_1](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
+![AEM ホームページのスタブ翻訳 ](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
 
 ユーザーの言語を設定するには、ユーザーアカウントの環境設定ノードで言語プロパティを設定します。
 

@@ -4,10 +4,10 @@ description: 設定ファイルでルールとフィルターを宣言し、Clou
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 6ea53e6b2b009895dccf99ac0265dc42b68db509
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 100%
+source-wordcount: '1341'
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ AEM as a Cloud Service では、受信リクエストまたは送信応答の特
 
 機能的には、前述の様々な機能が次のシーケンスで評価されます。
 
-![画像](/help/implementing/dispatcher/assets/order.png)
+![ 評価の順序 ](/help/implementing/dispatcher/assets/order.png)
 
 ## 設定 {#initial-setup}
 
