@@ -4,10 +4,10 @@ description: ここでは、Screens as a Cloud Service でプレーヤーをイ�
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
+source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 100%
+source-wordcount: '595'
+ht-degree: 97%
 
 ---
 
@@ -35,13 +35,13 @@ ht-degree: 100%
 
 1. 「**設定**」タブをクリックし、「**リセット**」オプションの下の「**工場出荷時**」ボタンをクリックします。
 
-   ![画像](/help/screens-cloud/assets/player/installplayer-2.png)
+   ![ リセットオプションの下の「工場出荷時」ボタン ](/help/screens-cloud/assets/player/installplayer-2.png)
 
 1. 「**確認**」をクリックして、プレーヤーをリセットします。
 
 1. 「**設定**」タブから、「**実行モードを切り替え**」オプションの下の「**クラウドモードに変更**」ボタンをクリックします。
 
-   ![画像](/help/screens-cloud/assets/player/installplayer-1.png)
+   ![ 「実行モードを切り替え」オプションの下の「クラウドモードに変更」ボタン ](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. クラウドモードに切り替えるときに「**確認**」をクリックすると、プレーヤーの登録が解除されます。
 
