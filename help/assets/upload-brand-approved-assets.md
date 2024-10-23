@@ -3,16 +3,21 @@ title: ブランド承認済みアセットのアップロード先  [!DNL Conte
 description: ブランド承認済みアセットをContent Hubにアップロードする方法を学ぶ
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 54300b9f27f1092a491820ab5279ee1633c6d53d
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 0%
+source-wordcount: '958'
+ht-degree: 2%
 
 ---
 
 # ブランド承認済みアセットのContent Hubへのアップロード {#upload-brand-approved-assets-content-hub}
 
-| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+>[!CONTEXTUALHELP]
+>id="upload_assets_content_hub"
+>title="ブランド承認済みアセットのContent Hubへのアップロード"
+>abstract="ローカルファイルシステムからContent Hubに承認済みアセットを追加するか、OneDrive またはDropboxのデータソースからアセットを読み込みます。 検索機能を強化するために、フォルダー構造に関係なく、すべてのアセットがContent Hubの最上位に表示されます。"
+
+| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 [ アセットを追加する権限を持つContent Hub ユーザー ](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)、ローカルファイルシステムからContent Hubにアセットを追加したり、OneDrive またはDropboxのデータソースからアセットを読み込んだりできます。 ローカルファイルシステムで使用可能なフォルダー構造や、検索機能を強化するための OneDrive およびDropboxデータソースに関係なく、すべてのアセットがContent Hubの最上位に表示されます。
