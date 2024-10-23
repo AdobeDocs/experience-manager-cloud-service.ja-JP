@@ -5,10 +5,10 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 05531a5c1eca996bd3652d6ce6233b7a960d0bc9
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 100%
+source-wordcount: '1322'
+ht-degree: 98%
 
 ---
 
@@ -91,7 +91,7 @@ Adobeには、いくつかの組み込みの品質ゲートが用意されてい
 
 顧客固有の開発に対するリスク管理を最大限に高めるために、アドビでは重要な UI テストを AEM as a Cloud Service に取り込むことをお勧めします。それらを限定的に保持し、顧客体験への影響を最大化することに重点を置きます。
 
-テストは Docker イメージでパッケージ化され、可能な限り変動するように設計されています（Cypress、Selenium、Java および JavaScript のサポートを含む）。カスタム機能テストと同様に、同じ特性と目的に従います。
+テストは、可能な限り揮発性に設計された Docker イメージにパッケージ化されます（Cypress、Playwright、Selenium、Java およびJavaScriptをサポート）。 カスタム機能テストと同様に、同じ特性と目的に従います。
 
 >[!NOTE]
 >
