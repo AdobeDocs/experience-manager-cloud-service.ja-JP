@@ -1,24 +1,24 @@
 ---
 title: コンテンツフラグメント
-description: Adobe Experience Manager as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、使用が可能になります。
+description: Adobe Experience Manager as a Cloud Service コンテンツフラグメントを使用すると、ページのオーサリング時にも使用できる、チャネルに依存しないコンテンツをデザイン、作成、キュレーションおよび使用できます。
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: b2b38a3163925fdc2bd4c5f78aaddb44ae716601
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 100%
+source-wordcount: '1267'
+ht-degree: 91%
 
 ---
 
 # コンテンツフラグメント {#content-fragments}
 
-Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントは、[ページに依存しないアセットとして作成および管理されます](/help/sites-cloud/administering/content-fragments/overview.md)。
+Adobe Experience Manager（AEM）as a Cloud Serviceのコンテンツフラグメントは [ ページに依存しないアセットとして作成および管理 ](/help/sites-cloud/administering/content-fragments/overview.md) されるので、チャネルに依存しないコンテンツを様々なバリエーション（チャネル固有）で作成できます。 コンテンツページをオーサリングする際に、これらのフラグメントとそれらのバリエーションを使用できます。
 
-これにより、チャネルに依存しないコンテンツを様々なバリエーション（チャネル固有）で作成できます。その後、コンテンツページをオーサリングする際に、これらのフラグメントとそれらのバリエーションを使用できます。
-
-更新された JSON エクスポーターと共に構造化コンテンツフラグメントを使用して、AEM コンテンツをコンテンツサービス経由で AEM ページ以外のチャネルに配信することもできます。
+>[!CAUTION]
+>
+>基本的な用語および概念のほか、フラグメントの作成と管理およびAEM ページ以外のチャネルへの構造化コンテンツフラグメントの配信について説明している [ コンテンツフラグメントの使用方法 ](/help/sites-cloud/administering/content-fragments/overview.md) （および関連ページ）と併せて、このページを読む必要があります。
 
 >[!NOTE]
 >
@@ -40,10 +40,6 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 >エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
 >
 >詳しくは、[AEM のコンテンツフラグメントとエクスペリエンスフラグメントについて](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments)を参照してください。
-
->[!CAUTION]
->
->このページは、基本的な用語および概念をフラグメントの作成および管理と共に紹介している[コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/overview.md)（および関連ページ）と併せて読む必要があります。
 
 コンテンツフラグメントは、次のことを可能にします。
 
