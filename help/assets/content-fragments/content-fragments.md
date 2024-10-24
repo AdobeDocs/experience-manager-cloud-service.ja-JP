@@ -1,20 +1,20 @@
 ---
 title: コンテンツフラグメントの操作（Assets - コンテンツフラグメント）
-description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントで、ページオーサリングやヘッドレス配信に最適な、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。また、MSM と共に使用する方法も説明します。
+description: Adobe Experience Manager（AEM）as a Cloud Serviceのコンテンツフラグメントで、ページオーサリングやヘッドレス配信に最適な、コンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
 workflow-type: tm+mt
-source-wordcount: '2230'
-ht-degree: 100%
+source-wordcount: '2220'
+ht-degree: 97%
 
 ---
 
 # コンテンツフラグメントの操作 {#working-with-content-fragments}
 
-Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを使用すると、[ページに依存しないコンテンツの設計、作成、キュレーション、公開](/help/sites-cloud/authoring/fragments/content-fragments.md)が可能になります。ヘッドレ配信に最適とされる複数の場所、複数のチャネル上で使用可能なコンテンツを用意できるようになります。また、[マルチサイト管理と併用してコンテンツを再利用](#reusing-content-fragments-with-msm)することもできます。
+Adobe Experience Manager（AEM）as a Cloud Serviceのコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーションおよび [ 公開 ](/help/sites-cloud/authoring/fragments/content-fragments.md) が可能になります。 ヘッドレ配信に最適とされる複数の場所、複数のチャネル上で使用可能なコンテンツを用意できるようになります。また、[マルチサイト管理と併用してコンテンツを再利用](#reusing-content-fragments-with-msm)することもできます。
 
 コンテンツフラグメントには、構造化されたコンテンツが含まれます。
 
