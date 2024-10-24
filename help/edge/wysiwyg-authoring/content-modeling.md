@@ -4,10 +4,10 @@ description: Edge Delivery Services プロジェクトでのWYSIWYG オーサリ
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 058f3c24ac883315dfaa9206a8c2caa4bb005d07
 workflow-type: tm+mt
-source-wordcount: '2242'
-ht-degree: 85%
+source-wordcount: '2196'
+ht-degree: 83%
 
 ---
 
@@ -608,20 +608,7 @@ Edge 配信サービスのコンテンツモデルでは、セクションに含
 
 AEM as a Cloud Service では、パスごとまたはパスパターンごとにテーブルのような方法でメタデータを定義できます。Excel や Google スプレッドシートに似た、表のようなデータ用のオーサリング UI が利用可能です。
 
-このようなテーブルを作成するには、ページを作成し、サイトコンソールのメタデータテンプレートを使用します。
-
-スプレッドシートのページプロパティで、必要なメタデータフィールドと URL を定義します。次に、ページパスまたはページパスパターンごとにメタデータを追加します。
-
-公開する前に、パスマッピングにもスプレッドシートが追加されていることを確認してください。
-
-```json
-{
-  "mappings": [
-    "/content/site/:/",
-    "/content/site/metadata:/metadata.json"
-  ]
-}
-```
+詳しくは、[ スプレッドシートを使用した表形式のデータの管理 ](/help/edge/wysiwyg-authoring/tabular-data.md) を参照してください。
 
 ### ページプロパティ {#page-properties}
 
@@ -631,7 +618,7 @@ AEM で使用できるデフォルトのページプロパティの多くは、�
 * ISO8601 形式の `published-time` としてドキュメントが最後に公開された時刻
 * `cq-tags` としての `cq:tags`、タグ ID のコンマ区切りリスト。
 
-また、カスタムページメタデータのコンポーネントモデルを定義することもできます。このモデルは、AEM Sites のページのプロパティダイアログのタブとして作成者が使用できます。
+作成者がユニバーサルエディターで使用できる、カスタムページメタデータ用のコンポーネントモデルを定義することもできます。
 
 これを行うには、ID `page-metadata` を持つコンポーネントモデルを作成します。
 

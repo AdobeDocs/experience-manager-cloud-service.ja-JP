@@ -4,10 +4,10 @@ description: スプレッドシートを使用して、Edge Delivery Services �
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
+source-git-commit: 69c8e54bde6c6047fdefbbbb1f166af690584f88
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 95%
+source-wordcount: '1014'
+ht-degree: 92%
 
 ---
 
@@ -101,6 +101,10 @@ AEM でスプレッドシートのデータを公開するには、さらにプ�
      ]
    }
    ```
+
+   >[!NOTE]
+   >
+   >この `paths.json` エントリは、表形式のデータを使用してリダイレクトを作成する例に基づいています。 作成するスプレッドシートの [ タイプ ](#other) に適したパスを必ず更新してください。
 
 1. 「**変更をコミット…**」をクリックして、変更を `main` に保存します。
 
