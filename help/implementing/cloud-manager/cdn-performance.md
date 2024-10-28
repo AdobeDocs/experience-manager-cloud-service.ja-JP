@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '376'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -42,17 +42,17 @@ CDN ダッシュボードは、すべてのプログラムの概要ページで�
 
 ![CDN パフォーマンスダッシュボード](assets/cdn-performance-dashboard.png)
 
-CDN パフォーマンスとその改善方法に関する推奨事項について詳しくは、「**トレンドの表示**」をクリックしてください。
+CDN のパフォーマンスの詳細と改善方法の提案は、「**トレンドを表示**」をクリックします。
 
 ![パフォーマンスのトレンド](assets/cdn-performance-trend.png)
 
-グラフの下の **表示** をクリックして、グラフの期間を変更します。
+グラフの下で「**表示**」をクリックして、グラフの期間を変更します。
 
 CDN のパフォーマンスを向上させる方法の提案については、「**レコメンデーション**」タブを選択します。
 
 ![CDN のレコメンデーション](assets/cdn-performance-recommendations.png)
 
-リスト内のレコメンデーションの横にある山形アイコンをクリックして、改善するための手順と問題の原因に関する詳細を表示します。
+リスト内のレコメンデーションの横にある山形記号をクリックすると、改善を行う手順と問題の原因に関する詳細が表示されます。
 
 ## キャッシュヒットの定義 {#cache-hit}
 

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ SLA レポートデータでは、オーサー層とパブリッシュ層とい�
 
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 
-1. **プログラムの概要** ページの左側のメニューで、「**レポート**」をクリックします。
+1. **プログラムの概要**&#x200B;ページの左側のサイドメニューで、「**レポート**」をクリックします。
 
 1. 「**SLA レポート**」をクリックします。
 

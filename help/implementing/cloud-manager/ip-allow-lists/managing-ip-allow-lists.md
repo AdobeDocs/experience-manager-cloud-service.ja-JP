@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '841'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Cloud Manager で IP 許可リストのステータスを表示、編集、削�
 **IP 許可リストを表示および更新するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
-1. **概要** ページの左側のメニューの **サービス** で、![ タスクリストアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg)**IP許可リスト** をクリックします。
+1. **概要**&#x200B;ページの左側のサイドメニューの&#x200B;**サービス**&#x200B;で、![タスクリストアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg)「**IP 許可リスト**」をクリックします。
 1. 表示または更新する IP 許可リストの行を特定します。
 1. 行の右端にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 1. ドロップダウンメニューから、「**表示と更新**」をクリックします。
@@ -40,7 +40,7 @@ Cloud Manager で IP 許可リストのステータスを表示、編集、削�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. **概要** ページの左側のメニューの **サービス** で、![ タスクリストアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg)**IP許可リスト** をクリックします。
+1. **概要**&#x200B;ページの左側のサイドメニューの&#x200B;**サービス**&#x200B;で、![タスクリストアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg)「**IP 許可リスト**」をクリックします。
 
 1. IP 許可リストテーブルの&#x200B;**ステータス**&#x200B;列で、緑色（使用中）の IP 許可リストの上にマウスポインターを合わせると、そのリストに適用されている 1 つ以上のサービスが表示されます。
 
@@ -63,9 +63,9 @@ IP 許可リストを削除すると、すべてのサービスからリスト�
 **IP 許可リストを削除するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
-1. **概要** ページの左側のメニューの **サービス** で、![ タスクリストアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg)**IP許可リスト** をクリックします。
-1. 削除する IP許可リストの行を見つけ、行の右端にある ![ その他のアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックして、**削除** をクリックします。
-1. **IP許可リストを削除** ダイアログボックスで、「**削除**」をクリックします。
+1. **概要**&#x200B;ページの左側のサイドメニューの&#x200B;**サービス**&#x200B;で、![タスクリストアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg)「**IP 許可リスト**」をクリックします。
+1. 削除する IP 許可リストの行を特定し、行の右端にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**削除**」をクリックします。
+1. **IP 許可リストを削除**&#x200B;ダイアログボックスで、「**削除**」をクリックします。
 
 ## 既存の CDN 設定 {#pre-existing-cdn}
 

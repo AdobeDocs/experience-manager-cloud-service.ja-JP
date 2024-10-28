@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '366'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Cloud Manager を使用して DNS レコードのステータスを確認する�
 
 1. **概要**&#x200B;ページの&#x200B;**環境**&#x200B;画面に移動します。
 
-1. 左側のメニューで **ドメイン設定** をクリックします。
+1. 左側のサイドメニューで「**ドメイン設定**」をクリックします。
 
 1. そのドメイン名の&#x200B;**ステータス**&#x200B;アイコンをクリックします。
 

@@ -6,9 +6,9 @@ feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3742'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -191,7 +191,7 @@ Dynamic Media には、最高の閲覧エクスペリエンスを実現できる
 
 「**[!UICONTROL アダプティブストリーミング用にエンコーディング]**」オプションを使用しない場合は、プロファイルに追加されるすべてのエンコーディングプリセットが、単一ビットレートのストリーミングまたはプログレッシブビデオ配信用の個々のビデオレンディションとして扱われます。また、すべてのビデオレンディションが同じ縦横比であることを確認するための検証は実行されません。
 
-サポートされているビデオ形式コーデックは H.264 （.mp4）です。<!-- use to also include WebM but was requested for removal by Riya Midha in email dated October 14, 2024 -->
+サポートされているビデオ形式のコーデックは H.264（.mp4）です。<!-- use to also include WebM but was requested for removal by Riya Midha in email dated October 14, 2024 -->
 
 [アダプティブビットレートストリーミング用のビデオエンコーディングプロファイルの作成](#creating-a-video-encoding-profile-for-adaptive-streaming)も参照してください。
 

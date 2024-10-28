@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '618'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -93,7 +93,7 @@ Cloud Manager を使用すると、複数の方法でパイプライン変数を
 
    ![パイプライン変数の表示／編集](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. **変数設定** ダイアログボックスで、削除する変数の ![ 省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**削除**」をクリックします。
+1. **変数設定**&#x200B;ダイアログボックスで、削除する変数の ![省略記号 - その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**削除**」をクリックします。
 
 ## Cloud Manager CLI を使用したパイプライン変数の設定 {#cli}
 

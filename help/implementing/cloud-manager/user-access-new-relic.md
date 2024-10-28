@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1825'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -47,13 +47,13 @@ AEM as a Cloud Service 用の New Relic One APM には、多くの機能があ�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、New Relic One ユーザーを管理するプログラムをクリックします。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、New Relic One ユーザーを管理するプログラムをクリックします。
 
-1. プログラムの概要ページの **環境** カードの下部にあるhttps://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svgをクリックし、「**New Relicをアクティベート**」を選択します。
+1. プログラムの概要ページの&#x200B;**環境**&#x200B;カードの下部にある https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg をクリックし、「**New Relic をアクティベート**」を選択します。
 
    ![ユーザーを管理](assets/newrelic-activate-sub-account.png)
 
-   * また、プログラムの **環境** 画面の上部にあるhttps://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svgをクリックして、「**ユーザーを管理**」オプションにアクセスすることもできます。
+   * プログラムの&#x200B;**環境**&#x200B;画面の上部にある https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg をクリックして、「**ユーザーを管理**」オプションにアクセスすることもできます。
 
 1. サブアカウントのアクティベーションを正常に完了するには、同じ環境に対して[パイプラインを実行](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)します。
 
@@ -71,11 +71,11 @@ AEM as a Cloud Service 用の New Relic One APM には、多くの機能があ�
 
 1. New Relic One ユーザーを管理するプログラムをクリックします。
 
-1. プログラムの概要ページの **環境** カードの下部にあるhttps://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svgをクリックし、「**ユーザーを管理**」を選択します。
+1. プログラムの概要ページの&#x200B;**環境**&#x200B;カードの下部にある https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg をクリックし、「**ユーザーを管理**」を選択します。
 
    ![ユーザーを管理](assets/newrelic-manage-users.png)
 
-   * また、プログラムの **環境** 画面の上部にあるhttps://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svgをクリックして、「**ユーザーを管理**」オプションにアクセスすることもできます。
+   * プログラムの&#x200B;**環境**&#x200B;画面の上部にある https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg をクリックして、「**ユーザーを管理**」オプションにアクセスすることもできます。
 
 1. 「**New Relic ユーザーを管理**」ダイアログで、追加するユーザーの氏名を入力し、「**追加**」ボタンをクリックします。追加するすべてのユーザーについて、この手順を繰り返します。
 
@@ -121,11 +121,11 @@ New Relic から確認メールが届かない場合は、[トラブルシュー
 
 1. New Relic One にアクセスするプログラムをクリックします。
 
-1. プログラムの概要ページの **環境** カードの下部にあるhttps://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svgをクリックし、「**New Relicを開く**」を選択します。
+1. プログラムの概要ページの&#x200B;**環境**&#x200B;カードの下部にある https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg をクリックし、「**New Relic を開く**」を選択します。
 
    ![ユーザーを管理](assets/newrelic-access.png)
 
-   * プログラムの **環境** 画面の上部にあるhttps://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svgをクリックして、New Relicにアクセスすることもできます。
+   * プログラムの&#x200B;**環境**&#x200B;画面の上部にある https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg をクリックして、New Relic にアクセスすることもできます。
 
 1. 開いた新しいブラウザータブで、New Relic One にログインします。
 

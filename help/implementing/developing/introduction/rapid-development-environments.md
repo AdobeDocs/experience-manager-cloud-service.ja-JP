@@ -5,9 +5,9 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4794'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -100,12 +100,12 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
    aio login
    ```
 
-   ログイン情報（トークン）はグローバル aio 設定に保存されるため、サポートされるログインと組織は 1 つだけです。 異なるログインや組織を必要とする複数の RDE を使用する場合は、次の例に従ってコンテキストを導入します。
+   ログイン情報（トークン）はグローバル aio 設定に保存されるので、1 つのログインと組織のみがサポートされます。異なるログインや組織を必要とする複数の RDE を使用する場合は、次の例に従ってコンテキストを導入します。
 
-   <details><summary>次の例に従って、RDE ログインの 1 つにローカルコンテキストを設定します</summary>
-   特定のコンテキスト内の現在のディレクトリにある.aio ファイルにログイン情報をローカルに保存するには、次の手順に従います。 コンテキストは、CI/CD 環境またはスクリプトをセットアップする優れた方法でもあります。  この機能を利用するには、少なくとも aio-cli バージョン 10.3.1 を使用してください。「npm install -g @adobe/aio-cli」を使用してアップデートします。
+   <details><summary>この例に従って、RDE ログインの 1 つにローカルコンテキストを設定します</summary>
+   特定のコンテキスト内の現在のディレクトリにある .aio ファイルにログイン情報をローカルに保存するには、次の手順に従います。また、コンテキストは、CI/CD 環境またはスクリプトを設定する賢明な方法です。この機能を利用するには、aio-cli バージョン 10.3.1 以上を使用する必要があります。「npm install -g @adobe/aio-cli」を使用して更新します。
 
-   「mycontext」というコンテキストを作成し、auth プラグインを使用してデフォルトのコンテキストとして設定してから、login コマンドを呼び出します。
+   「mycontext」というコンテキストを作成し、ログインコマンドを呼び出す前に、認証プラグインを使用してデフォルトのコンテキストとして設定します。
 
    ```
    aio config set --json -l "ims.contexts.mycontext" "{ cli.bare-output: false }"
@@ -114,13 +114,13 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
    ```
 
    >[!NOTE]
-   > login コマンドに `--no-open` オプションを指定すると、デフォルトのブラウザーを開く代わりに、ターミナルに URL が出力されます。 このように、ブラウザーの **匿名** ウィンドウでコピーして開くことができます。 これにより、通常のブラウザーウィンドウで現在ログインしているセッションはそのまま残り、コンテキストに必要な特定のログインと組織を確実に使用できます。
+   > `--no-open` オプションを指定したログインコマンドでは、デフォルトのブラウザーを開く代わりに、ターミナルに URL を出力します。このように、ブラウザーの&#x200B;**匿名**&#x200B;ウィンドウでコピーして開くことができます。この方法では、通常のブラウザーウィンドウで現在ログインしているセッションはそのまま残り、コンテキストに必要な特定のログインと組織を使用できます。
 
-   最初のコマンドは、ローカルの `.aio` 設定ファイルに `mycontext` という新しいログインコンテキスト設定を作成します（ファイルは必要に応じて作成されます）。 2 番目のコマンドは、コンテキスト `mycontext` を「現在」のコンテキスト（デフォルト）に設定します。
+   最初のコマンドでは、ローカルの .`.aio` 設定ファイルに、`mycontext` という新しいログインコンテキスト設定を作成します（ファイルは必要に応じて作成されます）。2 番目のコマンドでは、コンテキスト `mycontext` を「現在」のコンテキスト（デフォルト）に設定します。
 
-   この設定を行うと、login コマンドはログイントークンをコンテキスト `mycontext` ードに自動的に保存するので、ローカルに保持されます。
+   この設定を行うと、ログインコマンドではログイントークンをコンテキスト `mycontext` に自動的に保存し、ローカルに保持します。
 
-   複数のフォルダーにローカル設定を保持することで、複数のコンテキストを管理できます。 または、1 つの設定ファイル内で複数のコンテキストを設定し、「現在」のコンテキストを変更することでコンテキストを切り替えることもできます。
+   ローカル設定を複数のフォルダーに保存することで、複数のコンテキストを管理できます。または、1 つの設定ファイル内に複数のコンテキストを設定し、「現在」のコンテキストを変更することで切り替えることもできます。
    </details>
 
 1. ご自分の組織、プログラムおよび環境を使用するように RDE プラグインを設定します。以下の setup コマンドでは、組織内のプログラムのリストをインタラクティブにユーザーに提示し、そのプログラム内の選択可能な RDE 環境を表示します。
@@ -1056,16 +1056,16 @@ RDE プラグインを使用するには、Cloud Manager **開発者 - Cloud Ser
 
 これにより、設定した組織の下にあるすべてのプログラムがリストされ、正しい役割が割り当てられていることを確認できます。
 
-### 非推奨のコンテキスト「aio-cli-plugin-cloudmanager」の使用 {#aio-rde-plugin-troubleshooting-deprecatedcontext}
+### 廃止されたコンテキスト「aio-cli-plugin-cloudmanager」の使用 {#aio-rde-plugin-troubleshooting-deprecatedcontext}
 
-「aio-cli-plugin-aem-rde」の履歴により、コンテキスト名「aio-cli-plugin-cloudmanager」がしばらくの間使用されていました。 rde プラグインは、コンテキスト情報を処理する IMS 方法を使用するようになりました。つまり、コンテキスト情報をグローバルまたはローカルに保存するオプションと、必要に応じてすべての aio 呼び出しを設定済みのデフォルトにデフォルト設定するオプションがあります。 設定されたデフォルトのコンテキストはローカルに保存され、開発者は個々のコンテキストとその情報をフォルダー内で追跡および使用できます。 詳しくは、上記 [ ローカルコンテキストの設定例 ](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) を参照してください。
+「aio-cli-plugin-aem-rde」の履歴により、コンテキスト名「aio-cli-plugin-cloudmanager」がしばらくの間使用されていました。rde プラグインは、コンテキスト情報の処理に IMS 方式を使用するようになりました。つまり、コンテキスト情報をグローバルまたはローカルに保存するオプションがあり、必要に応じてすべての aio 呼び出しを設定済みのデフォルトにデフォルト設定することもできます。設定済みのデフォルトのコンテキストはローカルに保存され、開発者はフォルダー内の個々のコンテキストとその情報を追跡および使用できます。詳しくは、上記の[ローカルコンテキストの設定例](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools)を参照してください。
 
-両方のプラグイン、aio-cli-plugin-cloudmanager および aio-cli-plugin-aem-rde を使用し、同じコンテキストですべての情報を保持したい開発者は、今すぐ次のオプションを選択する必要があります。
+aio-cli-plugin-cloudmanager と aio-cli-plugin-aem-rde の両方のプラグインを使用し、すべての情報を同じコンテキストに保持する開発者は、現時点で次のオプションを選択する必要があります。
 
-#### コンテキスト「aio-cli-plugin-cloudmanager」を使用し続ける
+#### コンテキスト「aio-cli-plugin-cloudmanager」を引き続き使用
 
-コンテキストは引き続き使用できますが、RDE プラグインに非推奨の警告が表示されます。 この警告は、```--quiet``` モードを使用すると省略できます。 RDE プラグインの新しいバージョンでは、「aio-cli-plugin-cloudmanager」コンテキストを読み取るためのフォールバックは提供されません。 引き続き利用するには、デフォルトのコンテキストを「aio-cli-plugin-cloudmanager」に設定するだけです。上記の [ ローカルコンテキストを設定する例 ](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) を参照してください。
+コンテキストは引き続き使用できますが、RDE プラグインに非推奨（廃止予定）の警告が表示されます。この警告は、```--quiet``` モードを使用すると省略できます。RDE プラグインの最新バージョンでは、コンテキスト「aio-cli-plugin-cloudmanager」を読み取るためのフォールバックは提供されません。引き続き利用するには、デフォルトのコンテキストを「aio-cli-plugin-cloudmanager」に設定するだけです。上記の[ローカルコンテキストの設定例](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools)を参照してください。
 
-#### cloud manager プラグインには、その他のコンテキスト名も使用します
+#### Cloud Manager プラグインにも他のコンテキスト名を使用
 
-Cloud Manager プラグインは、使用するコンテキストを定義するパラメーターを提供します。 IMS のデフォルトのコンテキスト設定は、まだサポートしていません。 これを行うには、[ ローカルコンテキストを設定する例 ](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) を使用して RDE プラグインを設定し、Cloud Manager プラグインへのすべての呼び出しで ```--imsContextName=myContext``` のように「myContext」を使用するように指示します。
+Cloud Manager プラグインには、使用するコンテキストを定義するためのパラメーターが用意されています。IMS のデフォルトのコンテキスト設定は、まだサポートされていません。これを行うには、[ローカルコンテキストの設定例](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools)を参照して、RDE プラグインを設定し、Cloud Manager プラグインに対して、すべての呼び出しで ```--imsContextName=myContext``` のように「myContext」を使用するように指示します。

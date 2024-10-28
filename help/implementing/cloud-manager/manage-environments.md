@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2357'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 94%
 
 また、追加の公開地域を削除することもできます。 ただし、1 つのトランザクションで行えるのは、地域の追加または削除のいずれかのみとなります。 1 つの地域を追加し、1 つの地域を削除する必要がある場合は、まず追加して、変更を保存してから、削除します（または逆の順序）。
 
-1. プログラムの概要コンソールで、実稼動環境のhttps://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svgをクリックし、メニューから **編集** を選択します。
+1. プログラムのプログラム概要コンソールから、実稼動環境の https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg をクリックし、メニューの「**編集**」を選択します。
 
    ![環境を編集](assets/select-edit-environment.png)
 
@@ -129,7 +129,7 @@ ht-degree: 94%
 
 **概要**&#x200B;ページから、2 つの方法で環境の詳細にアクセスできます。
 
-1. **概要** ページで、左側のメニューの **環境** タブをクリックします。
+1. **概要**&#x200B;ページで、左側のメニューの「**環境**」タブをクリックします。
 
    ![「環境」タブ](assets/environments-tab2.png)
 
@@ -145,7 +145,7 @@ ht-degree: 94%
 
    ![環境の詳細](assets/environ-preview1.png)
 
-または、目的とする環境のhttps://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svgをクリックし、「**詳細を表示**」を選択します。
+または、目的とする環境の https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg をクリックし、「**詳細を表示**」を選択します。
 
 ![環境の詳細を表示](assets/view-environment-details.png)
 
@@ -193,7 +193,7 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 
 1. **概要**&#x200B;ページで、「**環境**」タブを選択します。
 
-1. 「**環境**」タブの左側のメニューで、クエリする環境を選択します。
+1. 「**環境**」タブの左側のメニューで、クエリを実行する環境を選択します。
 
 1. 環境を選択したら、次の手順に従います。
 
@@ -235,11 +235,11 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 >[!NOTE]
 > 2024年の時点では、開発インスタンスと一部のサンドボックスプログラムは既に自動的に更新されているので、それらの更新を手動で管理する必要はありません。 この移行の結果、開発インスタンスの環境を手動で更新するオプションを、_一部_&#x200B;のプログラムで使用できない場合があります。
 
-一部の開発環境やサンドボックスプログラム内の環境では、環境のhttps://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svgをクリックすると、**環境** カードから「**更新**」オプションを使用できます。
+一部の開発環境およびサンドボックスプログラム内の環境の&#x200B;**環境**&#x200B;カードで環境の https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg をクリックすると、「**更新**」オプションを使用できます。
 
 ![環境カードの「アップデート」オプション](assets/environ-update2.png)
 
-このオプションは、プログラムの「**環境**」タブをクリックし、環境の「https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg」をクリックしても使用できます。
+このオプションは、プログラムの「**環境**」タブをクリックした後、環境の https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg をクリックしても使用できます。
 
 ![「環境」タブの「更新」オプション](assets/environ-update3.png)
 
@@ -259,11 +259,11 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 
 **デプロイメントマネージャー**&#x200B;または&#x200B;**ビジネスオーナー**&#x200B;の役割を持つユーザーは、開発環境を削除できます。
 
-**環境** カードのプログラムの **概要** 画面で、削除する開発環境のhttps://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svgをクリックします。
+**環境**&#x200B;カードのプログラムの&#x200B;**概要**&#x200B;画面で、削除する開発環境の https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg をクリックします。
 
 ![「削除」オプション](assets/environ-delete.png)
 
-「削除」オプションは、プログラムの&#x200B;**概要**&#x200B;ウィンドウの「**環境**」タブでも使用できます。 環境のhttps://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svgをクリックし、「**削除**」を選択します。
+「削除」オプションは、プログラムの&#x200B;**概要**&#x200B;ウィンドウの「**環境**」タブでも使用できます。 環境の https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg をクリックし、「**削除**」を選択します。
 
 ![「環境」タブの「削除」オプション](assets/environ-delete2.png)
 

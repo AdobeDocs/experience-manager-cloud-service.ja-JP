@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
 source-git-commit: 32803bc4304e55ccf0a618236e482cb42aa88e27
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5557'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -929,15 +929,15 @@ AEM コンテンツフラグメント用の GraphQL を使用すると、AEM Dyn
 GraphQL のソリューションでは、次のことが可能です。
 
 * `ImageRef` 参照で `_dmS7Url` を使用する
-   * [URL によるDynamic Media アセット配信のサンプルクエリ – 画像リファレンス ](#sample-query-dynamic-media-asset-delivery-by-url-imageref) を参照してください。
+   * [URL による Dynamic Media アセット配信のサンプルクエリ - 画像参照](#sample-query-dynamic-media-asset-delivery-by-url-imageref)を参照してください
 * 複数の参照（`ImageRef`、`MultimediaRef`、`DocumentRef`）で `_dmS7Url` を使用する
-   * [URL によるDynamic Media アセット配信のサンプルクエリ – 複数リファレンス ](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs) を参照してください。
+   * [URL による Dynamic Media アセット配信のサンプルクエリ - 複数の参照](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)を参照してください
 
-* スマート切り抜き機能での `_dmS7Url` の使用
+* スマート切り抜き機能で `_dmS7Url` を使用する
 
    * `_smartCrops` プロパティは、特定のアセットで使用できるスマート切り抜き設定を公開します
 
-   * [URL によるDynamic Media アセット配信のサンプルクエリ – スマート切り抜きを使用 ](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop) を参照してください。
+   * [URL による Dynamic Media アセット配信のサンプルクエリ - スマート切り抜きの使用](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)を参照してください
 
 >[!NOTE]
 >
@@ -1022,11 +1022,11 @@ query allTeams {
 }
 ```
 
-### URL によるDynamic Media アセット配信のサンプルクエリ – スマート切り抜きを使用 {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+### URL による Dynamic Media アセット配信のサンプルクエリ - スマート切り抜きの使用 {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
 
 サンプルクエリを以下に示します。
 
-* リクエストされたアセットで使用可能なスマート切り抜き設定を公開するには
+* リクエストされたアセットで使用できるスマート切り抜き設定を公開するには
 
 ```graphql
 query allTeams {

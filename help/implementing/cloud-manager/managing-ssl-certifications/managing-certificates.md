@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1029'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Cloud Manager には、プログラムに対するすべての証明書のステ
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 1. ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、サイドメニューを表示します。
 1. **サービス**&#x200B;見出しの下にある ![鍵がかかったアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) 「**SSL 証明書**」をクリックします。
-1. 更新する期限切れの顧客管理証明書の行で、右端のhttps://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svgをクリックし、「**表示と更新**」をクリックします。
+1. 更新の対象となる、顧客が管理する期限切れの証明書の行で、右端にある https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg をクリックして、「**表示と更新**」を選択します。
 
    ![顧客が管理する期限切れの SSL 証明書の更新](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
@@ -117,7 +117,7 @@ SSL 証明書の名前を変更する必要がある理由を以下に示しま�
 
 1. **サービス**&#x200B;見出しの下にある ![鍵がかかったアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) 「**SSL 証明書**」をクリックします。
 
-1. SSL 証明書ページで、削除する証明書のテーブル行で、右端にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックしてから **削除** をクリックします。
+1. SSL 証明書ページで、削除する証明書のテーブル行の右端にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 、「**削除**」の順にクリックします。
 
    次の画像に示すように、**削除**&#x200B;に情報アイコンが表示されている場合は、上記のメモを参照してください。
 

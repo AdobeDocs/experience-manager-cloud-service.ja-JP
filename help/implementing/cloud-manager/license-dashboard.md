@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '909'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Cloud Manager ライセンスダッシュボードを使用すると、すべて
 >ライセンスダッシュボードを表示するには、**ビジネスオーナー**&#x200B;の役割のユーザーがログインする必要があります。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
-1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、[Cloud Managerヘッダー ](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) のhttps://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svgをクリックします。 この操作により、タブが表示されます。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、[Cloud Manager ヘッダー](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)の https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg をクリックします。このアクションにより、タブが表示されます。
 1. タブの「**ライセンス**」オプションをクリックします。
 
 ![ライセンスダッシュボード](assets/license-dashboard.png)

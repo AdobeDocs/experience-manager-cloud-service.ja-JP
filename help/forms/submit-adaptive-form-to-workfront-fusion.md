@@ -7,9 +7,9 @@ feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 source-git-commit: d0d7a10b2c1dadb0f8bfaa654db7993d3e5e6635
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1272'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Web フックを追加するには、次の手順に従います。
 
 >[!NOTE]
 >
-> テクニカルアカウントが **forms-users** グループのメンバーであることを確認します。メンバーでない場合、Webhook の追加に失敗します。
+> テクニカルアカウントが **forms-users** グループのメンバーであることを確認します。それ以外の場合、web フックの追加は失敗します。
 
 #### Web フックに接続を追加 {#add-connection}
 

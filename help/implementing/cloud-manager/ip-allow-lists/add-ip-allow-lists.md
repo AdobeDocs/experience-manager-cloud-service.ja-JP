@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '236'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -29,9 +29,9 @@ Cloud Manager を使用して独自の IP 許可リストを追加する方法�
 
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 
-1. **プログラムの概要** ページで、左側のメニュー（メニューを表示するには、左上隅の ![ メニューアイコンを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックする必要がある場合があります）を使用して、![ タスクリストアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP許可リスト** をクリックします。
+1. **プログラムの概要**&#x200B;ページで、左側のサイドメニューを使用して（メニューを表示するには、左上隅の ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックする必要がある場合があります）、![タスクリストアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg)「**IP 許可リスト**」をクリックします。
 
-   ![ 左側のメニューの「IP許可リスト」オプション ](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
+   ![左側のサイドメニューの「IP 許可リスト」オプション](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
 1. IP 許可リストページの右上隅付近にある「**IP 許可リストを追加**」をクリックします。
 
