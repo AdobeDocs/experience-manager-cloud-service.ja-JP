@@ -2,16 +2,16 @@
 title: コンテンツハブ向けアセットの承認
 description: Assetsのas a Cloud Serviceでアセットを承認して、Content Hubで使用できるようにする方法を説明します。
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 189fc257fed1115f66559d0f9063885ae527a0fa
 workflow-type: tm+mt
 source-wordcount: '746'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
 # コンテンツハブ向けアセットの承認 {#approve-assets-content-hub}
 
-| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Content Hub用のアセットの承認 ](assets/content-hub-approve-assets.png)
@@ -28,7 +28,7 @@ AEM Assetsのas a Cloud Service機能を使用してアセットを承認する�
 
 * アセットの **[!UICONTROL アセットプロパティ]** で使用可能な [ ステータス ](/help/assets/manage-organize-assets-view.md##manage-asset-status) フィールドを編集できるように、アセットメタデータを編集する権限を書き込みます。
 
-## コンテンツハブ向けアセットの承認 {#approve-assets-for-content-hub}
+## コンテンツハブ向けアセットの承認{#approve-assets-for-content-hub}
 
 Assetsのas a Cloud Serviceで `approved` とマークされたアセットは、Content Hubで自動的に使用できるようになります。
 

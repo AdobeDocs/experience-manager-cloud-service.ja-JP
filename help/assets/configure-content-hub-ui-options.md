@@ -2,16 +2,16 @@
 title: コンテンツハブユーザーインターフェイスの設定
 description: コンテンツハブユーザーインターフェイスの設定
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: b74067002a676a4d206dac170022ce0ec6d223de
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 16%
+source-wordcount: '1822'
+ht-degree: 13%
 
 ---
 
 # コンテンツハブユーザーインターフェイスの設定 {#configure-content-hub-user-interface}
 
-| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
@@ -59,6 +59,7 @@ Content Hubの設定オプションにアクセスするには：
 * [フィルター](#configure-filters-content-hub)
 
 * [アセットの詳細](#configure-asset-details-content-hub)
+* [アセットカード](#asset-card)
 
 * [検索](#configure-metadata-search-content-hub)
 
@@ -143,6 +144,25 @@ Content Hubでは、管理者がアセットの検索時に表示するフィル
 
 ![Content Hubのアセットのプロパティ ](assets/config-ui-asset-properties.png)
 
+### アセットカード {#asset-card}
+
+Content Hub UI では、アセットレベルのビューに、承認済みアセットの **アセットカード** が表示されます。 アセットカードには、ユーザーの主要なアセットの詳細が表示されます。 アセットカードには、アセットのサムネール、アセットのメタデータ、その他のアクションにつながるオプションがあります。 Content Hub管理者は、リポジトリレベルでメタデータフィールドを追加して、すべてのアセットのアセットカードにメタデータ名とメタデータ値を一度に表示します。 アセットカードには 6 つのメタデータフィールドを使用できます。 メタデータフィールドには、メタデータ名とメタデータプロパティが含まれます。 アセットカードには、メタデータとそのメタデータ値が表示されます。 管理者は、メタデータ名を指定し、適切なメタデータプロパティにマッピングします。 メタデータプロパティは、メタデータ値をアセットカードにレンダリングします。 メタデータプロパティはアセットのプロパティにリンクされているので、レンダリングされるメタデータの値は、すべてのアセットカードで異なります。 例えば、管理者がアセットカードに **ライセンス済み** メタデータを追加し、この **ライセンス済み** メタデータを適切なメタデータプロパティにマッピングします。 Content Hub UI のアセットカードには、この **ライセンス済み** メタデータとそのメタデータ値（**はい** または **いいえ**）が表示されます。 この例では、ライセンスを持つAssetsはアセットカードに **はい** と表示され、ライセンスを持たないアセットは **いいえ** と表示されます。
+
+![Content Hubのアセットのプロパティ ](/help/assets/assets/metadata-on-asset-card.png)
+
+#### アセットカードの下でのメタデータの追加、編集、削除 {#add-edit-delete-metadata}
+
+アセットにメタデータを追加するには、以下の手順を参照してください。
+
+1. [ 設定 ](#access-configuration-options-content-hub) ユーザーインターフェイスで、「**アセットカード**」をクリックします。
+2. **メタデータを追加** をクリックします。 **アセットカードメタデータを追加** ダイアログボックスが表示されます。
+3. 「**ラベル**」フィールドにメタデータ名を指定し、「**メタデータ**」フィールドにメタデータプロパティを選択します。 例えば、メタデータに **Licensed** という名前を付け、メタデータプロパティとして **dc:license** を選択します。 選択したメタデータプロパティは、Content Hub UI でメタデータと共に表示される値にマッピングされます。 この例では、**dc:license** プロパティがライセンス ID にマップされています。 このプロパティは、指定されたアセット（PDFライセンス）パスに従って、対応するアセットを見つけ、そのアセットの有無に基づいて、UI でブール値（**はい** または **いいえ**）をレンダリングします。 ライセンスPDFが見つかった場合は、「**はい**」と表示されます。 存在しない場合は、「いいえ **と表示され** す。 したがって、Content Hub UI では、ライセンス ID を持つアセットは **はい** と表示され、ライセンス ID を持たないアセットは **いいえ** と表示されます。
+4. **確認** をクリックしてから **保存** をクリックして、新しいプロパティがアセットの詳細ページに表示されるように変更を適用します。
+   ![ アセットカード ](/help/assets/assets/asset-card.png)
+
+同様に、使用可能な各プロパティの横にある「![ 編集 ](/help/assets/assets/edit-content-hub.svg)」をクリックして必要な変更を加えるか、「![ 削除 ](/help/assets/assets/delete-content-hub.svg)」をクリックして既存のメタデータプロパティを削除します。 すべての変更を加えた後で **保存** をクリックして、変更を適用します。
+
+
 ### 検索 {#configure-metadata-search-content-hub}
 
 管理者は、ユーザーがContent Hubで検索条件を指定した際に検索されるメタデータフィールドを定義できます。 次の手順を実行します。
@@ -174,7 +194,7 @@ Content Hubでは、管理者がアセットの検索時に表示するフィル
 
 ![Content Hubの設定 UI ブランディング ](assets/configuration-ui-branding-updates.png)
 
-### 有効期限切れのアセット {#expired-assets-content-hub}
+### 有効期限切れのアセット{#expired-assets-content-hub}
 
 管理者は、期限切れのアセットをContent Hubに表示する必要があるかどうかを制御できます。 有効期限切れのアセットを表示する場合は、ユーザーがこれらをダウンロードできるかどうかも定義できます。
 
