@@ -4,10 +4,10 @@ description: Web アプリケーションファイアウォール（WAF）ルー
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: cf9e1b3c290d142095912c794de58547913faece
-workflow-type: ht
-source-wordcount: '4012'
-ht-degree: 100%
+source-git-commit: 51c54d29f998d4c5fcd6ff2e5139638c495955b3
+workflow-type: tm+mt
+source-wordcount: '4019'
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 トラフィックフィルター規則のサブカテゴリには、拡張セキュリティライセンスまたは WAF-DDoS 保護ライセンスが必要です。これらの強力なルールは、WAF（web アプリケーションファイアウォール）トラフィックフィルタールール（または WAF ルール）と呼ばれ、この記事で後述される [WAF フラグ](#waf-flags-list)にアクセスできます。
 
-トラフィックフィルタールールは、Cloud Manager 設定パイプラインを通じて、実稼動（サンドボックス以外の）プログラムで、開発環境、ステージ環境および実稼動環境のタイプにデプロイできます。RDE のサポートは今後提供される予定です。
+トラフィックフィルタールールは、Cloud Manager 設定パイプラインを通じて、実稼動（サンドボックス以外の）プログラムで、開発環境、ステージ環境および実稼動環境のタイプにデプロイできます。この設定ファイルは、コマンドラインツールを使用して迅速な開発環境（RDE）にデプロイできます。
 
 [チュートリアルに従って](#tutorial)、この機能に関する具体的な専門知識をすばやく構築します。
 

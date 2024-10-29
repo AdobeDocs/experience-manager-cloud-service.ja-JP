@@ -4,10 +4,10 @@ description: 設定パイプラインを使用して、ログ転送の設定、�
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 3d0abce117cf94d7bf521e78be2ec019f216aa08
+source-git-commit: 2247fdd919057703f1c35145ba2bc9c6ec47250b
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 99%
+source-wordcount: '1000'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 99%
 
 Cloud Manager 設定パイプラインでは、設定ファイル（YAML 形式で作成）をターゲット環境にデプロイします。この方法では、ログ転送、パージ関連のメンテナンスタスク、いくつかの CDN 機能など、AEM as a Cloud Service の多くの機能を設定できます。
 
-設定パイプラインは、Cloud Manager を通じて、実稼動（サンドボックス以外の）プログラムで、開発環境、ステージ環境および実稼動環境のタイプにデプロイできます。RDE はサポートされません。
+設定パイプラインは、Cloud Manager を通じて、実稼動（サンドボックス以外の）プログラムで、開発環境、ステージ環境および実稼動環境のタイプにデプロイできます。設定ファイルは、[ コマンドラインツール ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) を使用して、迅速な開発環境（RDE）にデプロイできます。
 
 このドキュメントの以降の節では、設定パイプラインの使用方法と、それらの設定を構造化する方法に関する重要な情報の概要を示します。設定パイプラインでサポートされる機能のすべてまたはサブセットで共有される一般的な概念について説明します。
 
@@ -38,7 +38,7 @@ Cloud Manager 設定パイプラインでは、設定ファイル（YAML 形式�
 | [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | 悪意のあるトラフィックをブロックするルールを宣言します |
 | [リクエスト変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | トラフィックリクエストの形式を変換するルールを宣言します |
 | [応答変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | 特定のリクエストに対する応答の形式を変換するルールを宣言します |
-| [クライアントサイドのリダイレクト](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | 301/302 スタイルのクライアントサイドリダイレクトの宣言 |
+| [クライアントサイドのリダイレクト](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | 301/302 スタイルのクライアントサイドのリダイレクトを宣言します |
 | [接触チャネルセレクター](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | アドビ以外のアプリケーションを含む様々なバックエンドにトラフィックをルーティングするルールを宣言します |
 | [CDN エラーページ](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | AEM オリジンに到達できない場合は、設定ファイルの自己ホスト型静的コンテンツの場所を参照して、デフォルトのエラーページを上書きします |
 | [CDN パージ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | CDN のパージに使用するパージ API キーを宣言します |
@@ -53,6 +53,9 @@ Cloud Manager 設定パイプラインでは、設定ファイル（YAML 形式�
 パイプラインの作成および設定方法について詳しくは、[CI／CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)ドキュメントを参照してください。
 
 Cloud Manager で設定パイプラインを作成する場合は、パイプラインを設定する際に、**フルスタックコード**&#x200B;ではなく&#x200B;**ターゲットデプロイメント**&#x200B;を選択します。
+
+前述のように、RDE の設定は、パイプラインではなく [ コマンドラインツール ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) を使用してデプロイされます。
+
 
 ## 共通の構文 {#common-syntax}
 

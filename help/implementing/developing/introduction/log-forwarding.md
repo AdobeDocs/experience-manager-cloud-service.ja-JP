@@ -4,7 +4,7 @@ description: AEM as a Cloud Serviceでの Splunk およびその他のログベ�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e450a58587ca4d7dff2ab229f522c7e7d4f3f20c
+source-git-commit: af7e94a5727608cd480b2b32cd097d347abb23d3
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 2%
@@ -63,7 +63,7 @@ AEMと Apache/Dispatcherのログを、専用のエグレス IP などのAEMの�
 
 1. [設定パイプラインの使用](/help/operations/config-pipeline.md#folder-structure)で説明されているように、*config* または類似の名前の最上位フォルダーの下のどこかにファイルを配置します。
 
-1. RDE 以外の環境タイプ（現在サポートされていません）の場合は、[ この節 ](/help/operations/config-pipeline.md#creating-and-managing) で参照されているように、Cloud Managerでターゲット設定パイプラインを作成します。フルスタックパイプラインと web 階層設定パイプラインでは設定ファイルをデプロイしません。
+1. コマンドラインツールを使用する RDE 以外の環境タイプの場合は、[ この節 ](/help/operations/config-pipeline.md#creating-and-managing) で参照されているように、Cloud Managerでターゲット設定パイプラインを作成します。フルスタックパイプラインと web 階層設定パイプラインでは設定ファイルをデプロイしません。
 
 1. 設定をデプロイします。
 

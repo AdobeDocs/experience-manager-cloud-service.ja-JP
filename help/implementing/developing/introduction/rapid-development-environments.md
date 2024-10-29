@@ -4,10 +4,10 @@ description: クラウド環境で迅速な開発反復処理を行うために�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
-workflow-type: ht
-source-wordcount: '4794'
-ht-degree: 100%
+source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
+workflow-type: tm+mt
+source-wordcount: '4863'
+ht-degree: 98%
 
 ---
 
@@ -277,7 +277,7 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 
 以下に例をいくつか示します。
 
-<u>コンテンツパッケージのデプロイ</u>
+#### コンテンツパッケージのデプロイ {#deploy-content-package}
 
 `aio aem:rde:install sample.demo.ui.apps.all-1.0.0-SNAPSHOT.zip`
 
@@ -300,7 +300,7 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 >
 >WKND プロジェクトの Dispatcher 設定は、上記のコンテンツパッケージのインストールではデプロイされません。「Apache／Dispatcher 設定のデプロイ」の手順に従って、別途デプロイします。
 
-<u>OSGi 設定のデプロイ</u>
+#### OSGI 設定のデプロイ {#deploy-OSGI-config}
 
 `aio aem:rde:install com.adobe.granite.demo.MyServlet.cfg.json`
 
@@ -311,7 +311,7 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 #2: deploy completed for osgi-config com.adobe.granite.demo.MyServlet.cfg.json on author,publish - done by 9E0725C05D54FE1A0B49431C@AdobeID at 2022-09-13T11:54:36.390Z
 ```
 
-<u>バンドルのデプロイ</u>
+#### バンドルのデプロイ {#deploy-bundle}
 
 バンドルをデプロイするには、次を使用します。
 
@@ -324,7 +324,7 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 #3: deploy staged for osgi-bundle org.apache.felix.gogo.jline-1.1.8.jar on author,publish - done by 9E0725C05D53BE1A0B49431C@AdobeID at 2022-09-14T07:54:28.882Z
 ```
 
-<u>コンテンツファイルのデプロイ</u>
+#### コンテンツファイルのデプロイ {#deploy-content-file}
 
 コンテンツファイルをデプロイするには、次を使用します。
 
@@ -337,7 +337,7 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 #4: deploy completed for content-file world.txt on author,publish - done by 9E0729C05C54FE1A0B49431C@AdobeID at 2022-09-14T07:49:30.644Z
 ```
 
-<u>Apache／Dispatcher 設定のデプロイ</u>
+#### Apache/Dispatcher設定のデプロイ {#deploy-apache-config}
 
 このタイプの設定では、フォルダー構造全体を zip ファイル形式にする必要があります。
 
@@ -388,6 +388,26 @@ The analyser found the following errors for publish :
 ```
 
 上記のコード例は、バンドルが解決されない場合の動作を示しています。この場合、バンドルは「ステージング済み」で、他のコードのインストールを通じて要件（この場合、読み込み不足）が満たされた場合にのみインストールされます。
+
+#### 設定パイプラインに関連する設定のデプロイ（yaml 設定） {#deploy-config-pipeline}
+
+[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md) の記事で説明されている環境固有の設定（1 つ以上の yaml ファイル）は、次のようにデプロイできます。
+
+`aio aem:rde:install -t env-config ./my-config-folder`
+ここで、my-config-folder は yaml 設定を含む親フォルダーです。
+
+または、config フォルダーツリーを含んだ zip ファイルをインストールすることもできます。
+
+`aio aem:rde:install -t env-config config.zip`
+
+次の例に示すように、yaml ファイルの envTypes 配列には値 *rde* を含める必要があります。
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["rde"]
+```
 
 ### サイトテーマとサイトテンプレートに基づくフロントエンドコードのデプロイ {#deploying-themes-to-rde}
 
