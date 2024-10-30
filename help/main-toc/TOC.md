@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2d41b880ec3988b72128c7aac8b619c337a89427
+source-git-commit: 82c0c5973c0e4145ed1ba027012d1bda160e8c93
 workflow-type: tm+mt
-source-wordcount: '5684'
+source-wordcount: '5687'
 ht-degree: 99%
 
 ---
@@ -1072,7 +1072,7 @@ ht-degree: 99%
    + [バリエーションを生成](/help/generative-ai/generate-variations.md)
 + 実装 {#implementing}
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
-   + Cloud Manager {#using-cloud-manager} の使用
+   + Cloud Manager の使用 {#using-cloud-manager}
       + [ナビゲーション](/help/implementing/cloud-manager/navigation.md)
       + プログラム {#programs}
          + [プログラムとプログラムタイプ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
@@ -1102,7 +1102,7 @@ ht-degree: 99%
          + [GitHub チェック注釈](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [環境変数](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI／CD パイプライン {#cicd-pipelines}
-         + [CI/CD パイプラインの概要](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+         + [CI-CD パイプラインの概要](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [パイプラインの管理](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
@@ -1306,6 +1306,7 @@ ht-degree: 99%
       + [Dispatcher ツールを使用した検証とデバッグ（レガシー）](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [AEM as a Cloud Service での CDN](/help/implementing/dispatcher/cdn.md)
       + [CDN でのトラフィックの設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+      + [パイプラインを使用しない URL リダイレクト](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
       + [エッジサイドインクルード](/help/implementing/dispatcher/edge-side-includes.md)
       + [CDN 資格情報および認証の設定](/help/implementing/dispatcher/cdn-credentials-authentication.md)
       + [CDN エラーページの設定](/help/implementing/dispatcher/cdn-error-pages.md)
