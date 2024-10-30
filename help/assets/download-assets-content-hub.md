@@ -3,10 +3,10 @@ title: Content Hubからのアセットのダウンロード
 description: Content Hub ポータルからアセットをダウンロードする方法を学ぶ
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 96b7b7fe32aefc81a9fde15d79e9089f71cb5d31
+source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 4%
+source-wordcount: '526'
+ht-degree: 3%
 
 ---
 
@@ -22,20 +22,12 @@ Content Hubでは、アセットをダウンロードして共有できます。
 
 Content Hubでは、1 つまたは複数のアセットをダウンロードできます。 アセットの元のバージョンがダウンロードされます。
 
-## 前提条件 {#prerequisites}
-
-[Content Hub ユーザー ](deploy-content-hub.md#onboard-content-hub-users) は、この記事で説明されるアクションを実行できます。
-
-## アセットをダウンロード {#download-single-asset}
-
-ダウンロードする前に、[ アセットのライセンスを承認 ](/help/assets/approve-assets-content-hub.md) してください。
-
-### 単一ダウンロード {#single-download-asset}
+## ライセンス取得済みアセットを 1 つダウンロード {#single-download-asset}
 
 アセットを選択し、上部のパネルから ![ ダウンロード ](/help/assets/assets/download-icon.svg) をクリックします。 アセットをダウンロード ダイアログボックスに、アセットのライセンスが表示されます。 ライセンス条項に同意し、「**ダウンロード**」をクリックします。
 または、アセットカードの ![ ダウンロード ](/help/assets/assets/download-icon.svg) をクリックして、アセットをダウンロードします。
 
-#### アセットからの単一アセットのダウンロード ダイアログボックス {#single-download-from-asset-dialog-box}
+### アセットから 1 つのライセンス済みアセットをダウンロード ダイアログボックス {#single-download-from-asset-dialog-box}
 
 1. アセットのサムネールをクリックします。 アセット ダイアログボックスが表示されます。
 1. 右端のツールバーから ![ ダウンロード ](/help/assets/assets/download-icon.svg) をクリックします。 ダウンロードペインには、アセットレンディションと、ライセンス契約条件の承認チェックボックスが表示されます。
@@ -49,7 +41,7 @@ Content Hubでは、1 つまたは複数のアセットをダウンロードで�
    * 左側のペインの元のアセットレンディションに戻るには、「**元のレンディション」ボックス** をクリックします。
 1. （ライセンスが付与されたアセットの）ライセンス条件に同意し、「**ダウンロード**」をクリックしてアセットをダウンロードします。
 
-### マルチダウンロード {#multi-download}
+## 複数のライセンス済みAssetsのダウンロード{#multi-download}
 
 1. アセットを選択し、上部のパネルから ![ ダウンロード ](/help/assets/assets/download-icon.svg) をクリックします。 表示されるダイアログボックスは、ダウンロードリストに期限切れのアセットが含まれているか、期限切れでないアセットのみが含まれているかによって異なります。<br/>
    **期限切れアセットをダウンロード** ダイアログボックス：このダイアログボックスでは、期限切れアセットのプレビューと有効期限が左側のペインに表示されます。 選択した合計のうち期限切れのアセットのカウントが右側のパネルに表示されます。 **すべてのアセットで続行** をクリックして、有効期限が切れたアセットを他のアセット（存在する場合）と共にダウンロードします。 アセットをダウンロード ダイアログボックスが表示されます。 詳しくは、[ アセットをダウンロード ](#Download-asset-dialog-box) ダイアログボックスを参照してください。
@@ -69,7 +61,7 @@ Content Hubでは、1 つまたは複数のアセットをダウンロードで�
 1. 利用条件に同意し、「**ダウンロード**」をクリックして、使用可能なライセンスに関連付けられたアセットを左側のパネルでダウンロードします。
    ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
 
-### ライセンスのないアセットのダウンロード {#download-non-licensed-assets}
+### ライセンスのないAssetsのダウンロード {#download-non-licensed-assets}
 
 ライセンスのないアセットをダウンロードするには、アセットを選択し、上部のパネルから ![ ダウンロード ](/help/assets/assets/download-icon.svg) をクリックします。
 
