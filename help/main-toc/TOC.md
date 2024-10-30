@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 04c9ab33d0f6023195cffe9929cfad172a230216
+source-git-commit: d9fec7d96bbea19549f3fcfe53606c0d59a01a53
 workflow-type: tm+mt
-source-wordcount: '5681'
+source-wordcount: '5709'
 ht-degree: 99%
 
 ---
@@ -462,6 +462,10 @@ ht-degree: 99%
    + [サポートされているファイル形式](/help/assets/file-format-support.md)
    + [アセットマイクロサービスの概要](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets] でのアクセシビリティ](/help/assets/accessibility.md)
+   + [Assetsas a Cloud Service究極](/help/assets/assets-ultimate-overview.md)
+   + [Assets Ultimate のas a Cloud Service化の有効化](/help/assets/enable-assets-ultimate.md)
+   + [Assetsas a Cloud Serviceプライム](/help/assets/assets-prime.md)
+   + [Assets Collaborator ユーザー](/help/assets/assets-collaborator-users.md)
    + デジタルアセットの管理 {#manage}
       + マイクロフロントエンドのアセットセレクター {#asset-selector}
          + [アセットセレクターの概要](/help/assets/overview-asset-selector.md)
@@ -640,6 +644,7 @@ ht-degree: 99%
       + [コンテンツハブでのアセットの共有](/help/assets/share-assets-content-hub.md)
       + [コンテンツハブを使用したアセットのダウンロード](/help/assets/download-assets-content-hub.md)
       + [コンテンツハブでのコレクションの管理](/help/assets/collections-content-hub.md)
+      + [Content Hubでのライセンス取得済みAssetsの管理](/help/assets/manage-licensed-assets-on-content-hub.md)
       + [Adobe Express を使用したコンテンツハブの画像の編集](/help/assets/edit-images-content-hub.md)
       + [コンテンツハブのアセットインサイト](/help/assets/insights-content-hub.md)
       + [コンテンツハブに関するよくある質問](/help/assets/frequently-asked-questions-content-hub.md)
