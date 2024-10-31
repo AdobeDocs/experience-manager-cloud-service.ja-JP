@@ -1,12 +1,12 @@
 ---
 title: AEM as a Cloud Serviceのログ転送
-description: AEM as a Cloud Serviceでの Splunk およびその他のログベンダーへのログの転送について説明します
+description: AEM as a Cloud Serviceでのログのベンダーへの転送について説明します
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: af7e94a5727608cd480b2b32cd097d347abb23d3
+source-git-commit: f6de6b6636d171b6ab08fdf432249b52c2318c45
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1781'
 ht-degree: 2%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->この機能はまだリリースされておらず、一部のログ宛先はリリース時には使用できない場合があります。 それまでの間、サポートチケットを開いて、**AEM as a Cloud Serviceのログ** に記載されているように、[Splunk](/help/implementing/developing/introduction/logging.md) にログを転送できます。
+>ログ転送は、Adobeサポートチケットの送信が必要だった従来の方法とは異なり、セルフサービス方式で設定されるようになりました。 ログ転送がAdobeによって設定されている場合は、[ 移行 ](#legacy-migration) の節を参照してください。
 
-ログベンダーのライセンスまたはログ製品のホストのライセンスを持つお客様は、AEM ログ（Apache/Dispatcherを含む）および CDN ログを、関連するログ出力先に転送できます。 AEM as a Cloud Serviceは、次のログ出力先をサポートしています。
+ログベンダーのライセンスを持つお客様、またはログ製品をホストするお客様は、AEM ログ（Apache/Dispatcherを含む）および CDN ログを、関連するログ出力先に転送することができます。 AEM as a Cloud Serviceは、次のログ出力先をサポートしています。
 
 * Azure Blob ストレージ
-* DataDog
+* Datadog
 * Elasticsearchまたは OpenSearch
 * HTTPS
 * Splunk
 
-ログ転送は、Git で設定を宣言し、Cloud Manager設定パイプラインを介して実稼動（サンドボックス以外）プログラムの開発、ステージング、実稼動環境タイプにデプロイすることで、セルフサービス方式で設定されます。
+ログ転送は、Git で設定を宣言し、Cloud Manager設定パイプラインを介して実稼動（サンドボックス以外）プログラムの RDE、開発、ステージ、実稼動環境の各タイプにデプロイすることで、セルフサービス方式で設定されます。
 
 AEMと Apache/Dispatcherのログを、専用のエグレス IP などのAEMの高度なネットワークインフラストラクチャ経由でルーティングするオプションがあります。
 
@@ -139,6 +139,8 @@ data:
 
 ![Azure Blob SAS トークン設定 ](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
 
+以前に正しく機能していた後にログの配信が停止した場合は、設定した SAS トークンが期限切れの可能性があるので、まだ有効かどうかを確認します。
+
 #### Azure Blob Storage CDN ログ {#azureblob-cdn}
 
 グローバルに分散された各ログサーバーは、`aemcdn` フォルダーの下で、数秒ごとに新しいファイルを生成します。 作成したファイルは、に追加されなくなります。 ファイル名の形式は YYYY-MM-DDThh:mm:ss.sss-uniqueid.log です。 例：2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log
@@ -202,10 +204,12 @@ data:
 考慮事項：
 
 * 特定のクラウドプロバイダーとの統合を行わずに、API キーを作成します。
-* tags プロパティはオプションです
+* タグプロパティはオプションです
 * AEM ログの場合、Datadog ソース タグは `aemaccess`、`aemerror`、`aemrequest`、`aemdispatcher`、`aemhttpdaccess`、`aemhttpderror` のいずれかに設定されます
 * CDN ログの場合、Datadog ソース タグは `aemcdn` に設定されます
-* datadog サービスタグは `adobeaemcloud` に設定されていますが、タグセクションで上書きできます
+* Datadog サービスタグは `adobeaemcloud` に設定されていますが、タグセクションで上書きできます
+* 取り込みパイプラインで Datadog タグを使用してログを転送するための適切なインデックスを決定する場合は、ログ転送 YAML ファイルでこれらのタグが正しく設定されていることを確認します。 タグが見つからない場合、パイプラインがタグに依存していると、ログの取り込みに成功しない可能性があります。
+
 
 
 ### Elasticsearchと OpenSearch {#elastic}
@@ -307,6 +311,8 @@ data:
 * デフォルトでは、ポートは 443 です。 オプションで、`port` という名前のプロパティで上書きできます。
 * sourcetype フィールドには、特定のログに応じて、*aemaccess*、*aemerror* のいずれかの値が表示されます。
   *aemrequest*、*aemdispatcher*、*aemhttpdaccess*、*aemhttpderror*、*aemcdn*
+* 必要な IP が許可リストに加えるされたにもかかわらずログが配信されない場合は、Splunk トークンの検証を強制するファイアウォールルールがないことを確認します。 無効な Splunk トークンが意図的に送信される最初の検証ステップを Fastly が実行します。 無効な Splunk トークンを使用して接続を終了するようにファイアウォールが設定されている場合、検証プロセスが失敗し、Fastly が Splunk インスタンスにログを配信できなくなります。
+
 
 >[!NOTE]
 >

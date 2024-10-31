@@ -4,10 +4,10 @@ description: AEM as a Cloud Service のログを使用して一元的なログ�
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc103cfe43f2c492b20ee692c742189d6e454856
-workflow-type: ht
-source-wordcount: '2834'
-ht-degree: 100%
+source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
+workflow-type: tm+mt
+source-wordcount: '2376'
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 AEM as a Cloud Service は、カスタムコードを含めて、顧客ベースに独自のエクスペリエンスを作成する顧客のためのプラットフォームです。このことを念頭に置いた上で、ログサービスは、ローカル開発およびクラウド環境、特に AEM as a Cloud Service の開発環境をデバッグし、実行されるコードを理解するための重要な機能となります。
 
-AEM as a Cloud Service のログ設定とログレベルは、AEM プロジェクトの一部として Git に保存され、AEM プロジェクトの一部として Cloud Manager を介してデプロイされる構成ファイルで管理されます。AEM as a Cloud Service のログは、次の 2 つの論理セットに分割できます。
+AEM as a Cloud Service のログ設定とログレベルは、AEM プロジェクトの一部として Git に保存され、AEM プロジェクトの一部として Cloud Manager を介してデプロイされる構成ファイルで管理されます。AEM as a Cloud Serviceのログインは、次の 3 つの論理セットに分類できます。
 
 * AEM ログ。AEM アプリケーションレベルでログを実行します。
 * Apache HTTPD Web サーバー／Dispatcher ログ。パブリッシュ層で Web サーバーと Dispatcher のログを実行します。
@@ -510,8 +510,6 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service では、ユーザーが CDN ログにアクセスできるようになっています。このログは、キャッシュヒット率の最適化などのユースケースに役立ちます。CDN ログ形式はカスタマイズできず、情報、警告、エラーなどの様々なモードに設定する概念もありません。
 
-CDN ログは、新しい Splunk 転送サポートチケットリクエストの Splunk に転送されます。Splunk 転送を既に有効にしているお客様は、将来 CDN ログを追加できます。
-
 **例**
 
 ```
@@ -611,82 +609,18 @@ Debug によって書き込まれるログステートメントのトラフィ�
 * 慎重に行い、絶対に必要な場合にのみ実行する
 * 可能な限り早く適切なレベルに戻し、再デプロイする
 
-## Splunk ログ {#splunk-logs}
+## ログ転送 {#log-forwarding}
 
-Splunk アカウントを持っている顧客は、カスタマーサポートチケットを介して、AEM Cloud Service のログを適切なインデックスに転送するように依頼できます。ログデータは、Cloud Manager のログのダウンロードで利用できるものと同じですが、Splunk 製品のクエリ機能を利用すると便利です。
+ログはCloud Managerからダウンロードできますが、一部の組織では、これらのログを優先されるログ送信先に転送することが有益です。 AEMは、次の宛先へのストリーミングログをサポートしています。
 
-Splunk に送信されるログに関連付けられるネットワーク帯域幅は、お客様のネットワーク I/O 使用の一部と見なされます。
+* Azure Blob ストレージ
+* Datadog
+* HTTPD
+* Elasticsearch（および OpenSearch）
+* Splunk
 
-CDN ログは、新しいサポートチケットリクエストの Splunk に転送されます。Splunk 転送を既に有効にしているお客様は、将来 CDN ログを追加できます。
-
->[!NOTE]
->
->*特定*&#x200B;のログや&#x200B;*特定*&#x200B;のユーザーログを Splunk に転送することはできません。
->
->**すべて**&#x200B;のログは Splunk に転送され、お客様は要件に基づいてさらに絞り込むことができます。
-
-### Splunk 転送の有効化 {#enabling-splunk-forwarding}
-
-サポートを依頼するには、顧客は次のことを示す必要があります。
-
-* Splunk HEC エンドポイントアドレス。このエンドポイントには有効な SSL 証明書が存在し、公にアクセス可能である必要があります。
-* Splunk のインデックス
-* Splunk のポート
-* Splunk の HEC トークン。詳しくは、[HTTP イベントコレクターの例 ](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples)を参照してください。
-
-上記のプロパティは、関連するプログラム／環境タイプの組み合わせごとに指定する必要があります。例えば、開発、ステージング、実稼動の各環境を希望する場合は、次に示す 3 組の情報を提供する必要があります。
+この機能の設定方法について詳しくは、[ ログ転送の記事 ](/help/implementing/developing/introduction/log-forwarding.md) を参照してください。
 
 >[!NOTE]
 >
->サンドボックスプログラム環境の Splunk 転送はサポートされていません。
-
->[!NOTE]
->
->Splunk 転送機能は専用エグレス IP アドレスからは使用できません。
-
-最初のリクエストに、ステージング／実稼働環境に加えて、有効にすべき開発環境がすべて含まれていることを確認してください。Splunk には SSL 証明書が必要で、公開されている必要があります。
-
-最初のリクエストの後に新たに作成された開発環境で Splunk 転送を行うことを想定してはいるものの、Splunk 転送を有効にしていない場合は、追加のリクエストを行う必要があります。
-
-また、開発環境がリクエストされた場合、リクエストに含まれていない他の開発環境や、サンドボックス環境でも Splunk 転送が有効になり、Splunk インデックスを共有する可能性があります。ユーザーは `aem_env_id` フィールドを使用して、これらの環境を区別できます。
-
-以下に、カスタマーサポートへの依頼サンプルを示します。
-
-プログラム 123、実稼動環境
-
-* Splunk HEC エンドポイントアドレス： `splunk-hec-ext.acme.com`
-* Splunk インデックス：acme_123prod（顧客は任意の命名規則を選択できます）
-* Splunk ポート：443
-* Splunk HEC トークン：ABC123
-
-プログラム 123、ステージ環境
-
-* Splunk HEC エンドポイントアドレス： `splunk-hec-ext.acme.com`
-* Splunk インデックス：acme_123stage
-* Splunk ポート：443
-* Splunk HEC トークン：ABC123
-
-プログラム 123、開発環境
-
-* Splunk HEC エンドポイントアドレス： `splunk-hec-ext.acme.com`
-* Splunk インデックス：acme_123dev
-* Splunk ポート：443
-* Splunk HEC トークン：ABC123
-
-各環境に同じ Splunk インデックスを使用する場合はこれで十分です。その場合、`aem_env_type` フィールドを使用して、開発、ステージ、実稼動の値に基づいて区別できます。複数の開発環境がある場合は、`aem_env_id` フィールドも使用できます。一部の組織で、関連するインデックスのアクセスが一部の Splunk ユーザーに制限されている場合、実稼動環境のログに対して別のインデックスを選択することも可能です。
-
-ログエントリの例を次に示します。
-
-```
-aem_env_id: 1242
-aem_env_type: dev
-aem_program_id: 12314
-aem_tier: author
-file_path: /var/log/aem/error.log
-host: 172.34.200.12 
-level: INFO
-msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
-orig_time: 16.07.2020 08:35:32.346
-pod_name: aemloggingall-aem-author-77797d55d4-74zvt
-splunk_customer: true
-```
+>サンドボックスプログラム環境のログ転送はサポートされていません。

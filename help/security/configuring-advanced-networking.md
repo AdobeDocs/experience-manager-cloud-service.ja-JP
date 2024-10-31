@@ -4,9 +4,9 @@ description: AEM as a Cloud Service の高度なネットワーク機能（VPN �
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
+source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
 workflow-type: tm+mt
-source-wordcount: '5657'
+source-wordcount: '5618'
 ht-degree: 99%
 
 ---
@@ -236,10 +236,6 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 >
 >専用のエングレス IP アドレスインフラストラクチャタイプは、作成後に編集することはできません。設定値を変更する唯一の方法は、設定値を削除して再作成することです。
 
->[!INFO]
->
->専用のエグレス IP が設定されている場合、Splunk 転送は引き続き動的エグレス範囲を使用します。Splunk 転送は、専用のエグレス IP を使用するように設定できません。
-
 ### UI 設定 {#configuring-dedicated-egress-provision-ui}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
@@ -411,7 +407,6 @@ IPSec 技術を搭載したほとんどの VPN デバイスがサポートされ
 >VPN インフラストラクチャに対する制限事項を次に示します。
 >
 >* サポートは 1 つの VPN 接続に制限されています。
->* Splunk 転送機能は VPN 接続では使用できません。
 >* プライベートホスト名を解決するには、DNS リゾルバーをゲートウェイアドレス空間にリストする必要があります。
 
 ### UI 設定 {#configuring-vpn-ui}
