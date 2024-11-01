@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1661'
 ht-degree: 40%
 
 ---
@@ -38,7 +38,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 1. プログラムの現在のビューを切り替えることができるタブ。
    * **ホーム**&#x200B;ビュー（デフォルト）：すべてのプログラムの概要を表示する&#x200B;**マイプログラム**&#x200B;ビューを選択します
    * **ライセンス** [ ライセンスダッシュボード ](/help/implementing/cloud-manager/license-dashboard.md) にアクセスする。
-   * タブはデフォルトで閉じられ、[Cloud Manager ヘッダーでhttps://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svgを使用して表示され ](#cloud-manager-header) す。
+   * タブはデフォルトで閉じられ、[Cloud Managerヘッダーの ![ メニューアイコンを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) を使用して表示され ](#cloud-manager-header) す。
 1. [統計とコールトゥアクション](#statistics)：最近のアクティビティの概要を確認します。
 1. [**「マイプログラム」**&#x200B;セクション](#my-programs-section)：すべてのプログラムの概要を表示します
 1. 関連リソースに簡単にアクセスするための [ クイックリンク ](#quick-links-section)。
@@ -195,7 +195,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 ![プログラムツールバー](assets/cloud-manager-program-toolbar.png)
 
-https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svgを使用してタブを非表示にしている場合でも、ツールバーには現在表示しているタブが常に表示されます。
+![ メニューアイコンを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) を使用してタブを非表示にしている場合でも、ツールバーには常に現在表示しているタブが表示されます。
 
 ### プログラムタブ {#program-tabs}
 

@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: ht
-source-wordcount: '789'
-ht-degree: 100%
+source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 95%
 
 ---
 
@@ -31,11 +31,11 @@ Adobe Cloud Manager では、次の理由により、カスタムドメイン名
 
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 
-1. ページの左上隅にある ![表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左側のサイドメニューを表示します。
+1. ページの左上隅にある ![ メニューアイコンを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左側のメニューを表示します。
 
 1. **サービス**&#x200B;見出しの下にある「**CDN 設定**」をクリックします。
 
-1. **CDN 設定**&#x200B;ページで、編集する CDN の行の末尾にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+1. **CDN 設定** ページで、CDN を編集する行の最後にある ![ メニューアイコンを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
 1. 「**編集**」をクリックします。
 
