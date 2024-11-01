@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 9b6cbe2d1a076b6c06fb3e9d55b79e124d4abc96
+source-git-commit: d98aa9d206486022d465ca19c8888088562d56c3
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 66%
+source-wordcount: '1395'
+ht-degree: 65%
 
 ---
 
@@ -56,6 +56,10 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 **バリエーションを生成**
 
 AEM の新機能を通じて GenAI を活用し、[バリエーションを生成](/help/generative-ai/generate-variations.md)し、クラウドサービスでアクセスできるようになりました。バリエーションを生成は、生成 AI を使用してコンテンツの作成を生成し拡張するのに役立ちます。プログラムでの検討については、アドビのアカウントチームにお問い合わせください。
+
+**コンテンツフラグメント配信用AEM REST OpenAPI**
+
+コンテンツフラグメント配信用の [AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) がAEM as a Cloud Serviceで使用できるようになりました。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

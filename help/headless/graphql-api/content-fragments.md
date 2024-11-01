@@ -4,10 +4,10 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 32803bc4304e55ccf0a618236e482cb42aa88e27
-workflow-type: ht
-source-wordcount: '5557'
-ht-degree: 100%
+source-git-commit: 575b626447f6b88c1be601fbbd4de7eeb0264019
+workflow-type: tm+mt
+source-wordcount: '5582'
+ht-degree: 99%
 
 ---
 
@@ -30,6 +30,10 @@ AEM の GraphQL API を使用すると、ヘッドレス CMS 実装の JavaScrip
 >
 >* [AEM Commerce が、GraphQL 経由でコマースプラットフォームのデータを使用する](/help/commerce-cloud/integrating/magento.md)。
 >* AEM コンテンツフラグメントが、AEM GraphQL API（標準の GraphQL に基づくカスタム実装）と連携して、アプリケーションで使用するための構造化コンテンツを配信する。
+
+>[!NOTE]
+>
+>使用可能な様々な API の概要および関連する概念の一部の比較については ](/help/headless/apis-headless-and-content-fragments.md)[ 構造化コンテンツ配信および管理用のAEM API} を参照してください。
 
 >[!NOTE]
 >
