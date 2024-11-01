@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 98%
+source-wordcount: '785'
+ht-degree: 95%
 
 ---
 
@@ -54,7 +54,7 @@ Cloud Manager [リリース 2023.10.0](/help/implementing/cloud-manager/release-
 
 ### 特定の Java バージョンの使用 {#using-java-support}
 
-デフォルトでは、プロジェクトは Oracle 8 JDK を使用して Cloud Manager ビルドプロセスで作成されますが、AEM Cloud Service のお客様は、Maven の実行に使用する JDK バージョンを `11` に設定することを強くお勧めします。
+デフォルトでは、プロジェクトはOracle 8 JDK を使用してCloud Manager ビルドプロセスによってビルドされますが、AEM Cloud Serviceのお客様は、Maven の実行に使用する JDK バージョンを `11` に設定することをお勧めします。
 
 #### Maven JDK バージョンの設定 {#alternate-maven-jdk-version}
 
@@ -87,7 +87,7 @@ Cloud Manager [リリース 2023.10.0](/help/implementing/cloud-manager/release-
 
 お使いのビルドプロセスが、Git リポジトリに配置するのに適さない特定の設定変数に基づいている場合や、同じブランチを使用するパイプライン実行間で環境変数を変えることが必要になる場合があります。
 
-詳しくは、[ パイプライン変数を設定 ](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) も参照してください
+詳しくは、[パイプライン変数の設定](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)も参照してください。
 
 ## 追加のシステムパッケージのインストール {#installing-additional-system-packages}
 
