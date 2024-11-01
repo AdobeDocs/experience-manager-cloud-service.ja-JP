@@ -1,20 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート。'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.9.0 リリースのリリースノート。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.9.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: 9b6cbe2d1a076b6c06fb3e9d55b79e124d4abc96
+source-git-commit: 0c4db1b70aa665e1802a316ece26db1e06f40b24
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 66%
+source-wordcount: '1324'
+ht-degree: 91%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の 2024.9.0 リリースノート {#release-notes}
 
-以下のセクションでは、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンの機能リリースノートの概要について説明します。
+以下の節では、[!DNL Experience Manager] as a Cloud Service の 2024.9.0 バージョンの機能リリースノートの概要について説明します。
 
 >[!NOTE]
 >
@@ -28,34 +26,32 @@ ht-degree: 66%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2024.10.0）のリリース日は、2024年10月31日（PT）です。次回の機能リリース（2024.11.0）は 2024年11月21日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2024.9.0）の公開日は 2024年9月26日（PT）です。次回の機能リリース（2024.10.0）は、2024年10月31日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
 最新のメンテナンスリリースノートについては、[こちら](/help/release-notes/maintenance/latest.md)をご覧ください。
 
-<!-- ## Release Video {#release-video}
+## リリースビデオ {#release-video}
 
-Have a look at the October 2024 Release Overview video for a summary of the features added in the 2024.10.0 release:
+2024.9.0 リリースで追加された機能の概要については、2024年9月リリースの概要ビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3434847?quality=12)
 
--->
-
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-**最新化されたページイベント**
+### Experience Manager Sites の新機能 {#new-feature-sites}
 
-次のAEM Sites ページイベントは、AEM as a Cloud Service Eventing Platform に基づく外部的に消費されるイベントとして使用できるようになりました。 イベントはAdobe I/Oを介して処理し、外部プロセスとやり取りできます。
-* ページが公開されました
-* ページが非公開にされました
-* ページが削除されました
+#### 翻訳管理 {#translation-management}
+
+AEM 翻訳ワークフローと API アクションが、翻訳ジョブの状態の変化に関するインサイトを提供するイベントをトリガーするようになりました。ユーザーは、Adobe Developer Console を通じてこれらのイベントを購読できます。AEM Translation Management API について詳しくは、[こちら](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/)を参照してください。
 
 ### 早期導入プログラム {#sites-early-adopter}
 
 **バリエーションを生成**
 
 AEM の新機能を通じて GenAI を活用し、[バリエーションを生成](/help/generative-ai/generate-variations.md)し、クラウドサービスでアクセスできるようになりました。バリエーションを生成は、生成 AI を使用してコンテンツの作成を生成し拡張するのに役立ちます。プログラムでの検討については、アドビのアカウントチームにお問い合わせください。
+
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -67,33 +63,16 @@ Adobe Dynamic Media の AI 生成のビデオキャプションは、人工知�
 
 Dynamic Media アカウントで AI 生成のキャプションサポートに早期アクセスするには、[アドビカスタマーサポートケースを作成して送信](/help/assets/dynamic-media/video.md##enable-dash)してください。
 
-### アセットビューの新機能 {#assets-view-new-features}
+### アセットセレクターの新機能 {#asset-selector-new-features}
 
-**予定レポート**
-
-Assets ビューで、繰り返しスケジュールまたは将来の日付にレポートを自動的に生成できるようになり、データ駆動型のインサイトを明らかにする労力を軽減できます。
-
-![ 予定レポート – ](/help/assets/assets/scheduled-reports-tab.png)
+アセットセレクターでは、コレクションを参照して目的のアセットを検索できるようになりました。
+![アセットセレクターのコレクション](/help/assets/assets/collections-rail-modal-view.png)
 
 ### コンテンツハブの新機能 {#content-hub-new-features}
 
-**ライセンス済みアセットのデジタル著作権管理**
-
-Content Hubのユーザー向けライセンスアセットに DRM を活用することで、ライセンスのコンプライアンスを向上させ、ライセンス条項を含むアセットを共有するリスクを最小限に抑えることができるようになりました。このため、ユーザーは、ライセンス条項を確認して同意してから、ライセンス条項をダウンロードする必要があります。
-
-![download-multiple-license](/help/assets/assets/download-multiple-license.png)
-
-**アセットカードのメタデータ設定**
-
-Content Hubでは、アセットカードに表示する必要がある主要なメタデータフィールドを、最大 6 つのフィールドまで設定できるようになりました。
-
-![ アセットカード上の主要なメタデータ ](/help/assets/assets/asset-card-key-metadata.png)
-
-**期限切れアセットの表示とダウンロードの設定**
-
 管理者は、有効期限切れのアセットをコンテンツハブに表示する必要があるかどうかを制御できるようになりました。有効期限切れのアセットを表示する場合は、ユーザーがこれらをダウンロードできるかどうかも定義できます。
 
-![コンテンツハブの有効期限切れのアセット](/help/assets/assets/expired-assets-content-hub.png)
+![コンテンツハブの有効期限切れのアセット](/help/assets/assets/view-download-expired-assets.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -102,6 +81,7 @@ Content Hubでは、アセットカードに表示する必要がある主要な
 #### コアコンポーネントベースアダプティブフォームのドラフトの自動保存
 
 一部が完了したフォームを自動的にドラフトとして保存する、自動保存機能を利用できるようになりました。後で戻って、同じデバイスまたは他のデバイスで入力を完了できます。この機能により、ユーザーはフォームへの入力を最初からやり直す必要がなくなるので、フォームの放棄が減り、組織のコンバージョン率が向上します。
+
 
 ### AEM Forms の早期アクセス機能 {#forms-new-early-access-features}
 
@@ -133,34 +113,31 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 
 ## CIF アドオン {#cloud-services-cif}
 
+### 機能改善 {#improvements-fixes-cif}
+
+* カテゴリ制限をカスタマイズ可能にします。
+
 ### バグ修正 {#bug-fixes-cif}
 
-* コア CIF コンポーネントで正しく動作するように UI テストを修正しました。
-* カテゴリ URL 形式がクラウドインスタンスで期待どおりに機能しない問題を解決しました。
+* Commerce のフィールドが、Assets メタデータスキーマエディターと適切に統合されていない。
+* カルーセル製品のマルチフィールドでのドラッグ＆ドロップの問題。
+* カルーセルカテゴリのマルチフィールドでのドラッグ＆ドロップの問題。
+* カテゴリおよび製品エディターページのページ情報のメニューで、クリックは機能しません。
+* 注文番号が注文確認ページに表示されません。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
-### 高度なネットワークオプションを使用したセルフサービスログ転送 {#log-forwarding}
+### 動的コンテンツ読み込み用のエッジサイドインクルード（ESI） {#esi}
 
-AEM（Apache/Dispatcherを含む）および CDN ログはCloud Managerからダウンロードできますが、多くの組織では、これらのログを優先されるログ先にストリーミングすると便利です。 AEMは、Azure Blob Storage、Datadog、HTTPS、Elasticsearch（および OpenSearch](/help/implementing/developing/introduction/log-forwarding.md)、Splunk への [ ログ転送）をサポートするようになりました。 AEM ログは、オプションで、専用の IP アドレスを使用するなどの高度なネットワーク設定を介して転送できます。
+アドビが管理する CDN で、エッジレベルの動的 web コンテンツアセンブリ用のマークアップ言語である[エッジサイドインクルード（ESI）](/help/implementing/dispatcher/edge-side-includes.md)がサポートされるようになりました。ESI スニペットを含めることで、より高い TTL で HTML ページ全体を CDN でキャッシュしながら、より頻繁なアップデート（低い TTL）を必要とする小さなセクションを、接触チャネルから頻繁に取得できます。この機能は段階的にロールアウトされます。
 
-この機能は、ユーザーがセルフサービス方式で設定し、[Config パイプライン ](/help/operations/config-pipeline.md) を使用してデプロイします。
+### CDN での基本認証 {#basicauth-cdn}
 
-### ビジネスユーザー向けのパイプラインを使用しない URL リダイレクト {#pipeline-free-redirects}
+ユーザー名とパスワードの入力を求める基本認証ダイアログを表示して、特定のコンテンツリソースを保護します。この機能は、エンドユーザーのアクセス権に対する包括的なソリューションとして機能するのではなく、主にビジネス関係者によるコンテンツのレビューなど、簡易な認証ユースケースを対象としています。ユーザー名とパスワードのリストは、設定パイプラインを介してデプロイされた Git の設定ファイルを通じて、秘密鍵タイプのCloud Manager環境変数への参照を使用して管理されます。 [詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth)。
 
-ブラウザーサイドのリダイレクトは、web ページが停止や移動などのシナリオに使用すると便利です。 [ パイプラインを使用しない URL リダイレクト ](/help/implementing/dispatcher/pipeline-free-url-redirects.md) を使用すると、Apache 書き換えマップファイルをAEMの公開場所に配置できます。そこでファイルが自動的に読み込まれるので、ファイルをソースコントロールにコミットしたり、Cloud Manager パイプラインを開始したりする必要はありません。
+### クライアントサイドのリダイレクト {#client-side-redirects}
 
-書き換えファイルを公開するオプションには、ファイルをアセットとしてアップロードする、ACS Commons 書き換えマップマネージャを使用する、カスタムユーザーインターフェイスを操作するなどがあります。
-
-### RDE の設定パイプライン {#config-pipeline-rdes}
-
-迅速な開発環境は、クラウド環境でコードと設定を迅速にデプロイおよびテストするための強力なツールです。 RDE では、トラフィックフィルタールールやリクエスト/応答変換などの CDN 設定、ログ転送およびその他の設定オプションなど、[ 設定 YAML ファイルの同期 ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) をサポートするようになりました。 詳しくは、サポートされている設定オプションの [ 完全なリストを参照 ](/help/operations/config-pipeline.md) してください。
-
-### 新製品プロファイル {#new-product-profiles}
-
-新しいAEM環境が作成されると、製品プロファイルがAdobe Admin Consoleに自動的に表示され、管理者はライセンス取得済みのソリューションおよび機能へのアクセス権を割り当てることができます。
-
-新しい環境に、更新された一連の製品プロファイルが含まれるようになりました。これにより、Adobe Developer Consoleでの API 認証情報の生成などの今後の機能と互換性を持つようになります。 既存の環境は、将来のリリースで製品プロファイルを更新できるようになります。 [詳細情報](/help/onboarding/aem-cs-team-product-profiles.md)。
+CDN にデプロイされ CDN で評価される設定ファイル Git で [ ブラウザーリダイレクト ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) を宣言する。 これは、ページの削除、変更されたサイト構造、SEO の最適化などのシナリオで役立ちます。
 
 ### 新しい AEM Developer Console（パブリックベータ版） {#aem-developer-console-beta}
 
@@ -169,6 +146,14 @@ AEM（Apache/Dispatcherを含む）および CDN ログはCloud Managerからダ
 現在の AEM Developer Console の「*新しいコンソールが使用可能*」ボタンをクリックすると、誰でもパブリックベータ版にアクセスできます。アドビでは、フィードバックを大切にしています。**<aemcs-new-devconsole-ui-beta@adobe.com>** までメールで送信してください。
 
 ![AEM Developer Console の OSGi バンドル画面](/help/implementing/developing/introduction/assets/osgi-bundles.png)
+
+### ビジネスユーザーが Git 外部でリダイレクトを宣言できる（早期導入プログラム） {#apache-rewritemaps-early-adopter}
+
+AEM 6.5 と同様に、Apache／Dispatcher は、web 階層パイプラインの実行を必要とせずに、公開リポジトリ内の特定の場所に配置された書き換えマップを取り込んで読み込みます。このアプローチにより、ビジネスユーザーは、スプレッドシートや、ACS Commons リダイレクトマップマネージャーやカスタムアプリケーションなどの UI を使用してリダイレクトを宣言できます。早期導入プログラムに参加するには、**<aemcs-cdn-config-adopter@adobe.com>** にメールを送信します。
+
+### RDE 用の設定パイプライン（早期導入プログラム） {#config-pipeline-rdes-early-adopter}
+
+[ 設定パイプライン ](/help/operations/config-pipeline.md) は、CDN オプション（トラフィックフィルタールール、リクエスト/応答の変換など）を含む yaml ファイル設定をデプロイするために使用します。 早期導入プログラムに参加するには、**<aemcs-cdn-config-adopter@adobe.com>** にメールを送信し、CLI を使用する RDE（迅速な開発環境）にこれらの同じ設定をデプロイします。
 
 ## [!DNL Experience Manager] ガイド {#guides}
 

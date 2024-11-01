@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.8.0 リリー�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.8.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: 35ec3edfec42936b9a5908265d6dbb529a70f6cf
+source-git-commit: d6f058bbb6bd7222327ff7bf3c5fe6a6ecf0461b
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 100%
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の 2024.8.0 リリースノート {#release-notes}
 
-以下のセクションでは、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンの機能リリースノートの概要について説明します。
+以下の節では、[!DNL Experience Manager] as a Cloud Service の 2024.8.0 バージョンの機能リリースノートの概要について説明します。
 
 >[!NOTE]
 >

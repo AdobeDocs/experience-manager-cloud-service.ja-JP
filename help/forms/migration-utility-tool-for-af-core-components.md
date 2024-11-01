@@ -8,22 +8,22 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 5d8f4d5d628b090b8bf54de0f2d9d62c02544522
+source-git-commit: c52d649e569ef427e70c85a88fa0f48fcc534e9e
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '993'
 ht-degree: 7%
 
 ---
 
 # はじめに
 
-<span class="preview">機能は、早期導入プログラムで利用できます。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID で aem-forms-ea@adobe.com までメールを送信してください。</span>
+<span class="preview"> この機能は、早期導入プログラムで利用できます。 早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
 
-[AEM Modernize Tool](https://opensource.adobe.com/aem-modernize-Tools/) スイートの一部であるForms変換ユーティリティを使用すると、従来の基盤コンポーネントで構築されたアダプティブFormsを、サポートされている最新のコアコンポーネント機能を利用するフォームに簡単に変換できます。
+Forms変換ユーティリティは、[AEM Modernize Tool](https://opensource.adobe.com/aem-modernize-tools/) スイートの一部で、従来の基盤コンポーネントで構築されたアダプティブFormsを、サポートされている最新のコアコンポーネント機能を利用するフォームに簡単に変換するのに役立ちます。
 
 ## AEM Modernize Tools とは
 
-[AEM Modernize Tools](https://opensource.adobe.com/aem-modernize-Tools/) とは、Adobe Experience Manager（AEM）プロジェクトの最新化または更新プロセスを容易にするユーティリティまたはソフトウェアアプリケーションのセットを指します。 これらのツールは、通常、AEM内の古いコンポーネントや機能を、より効率的でサポートされている新しい代替機能に変換する際に役立ちます。 Forms変換ユーティリティは、AEM Modernize Tools の下にインストールされ、基盤コンポーネントに基づくアダプティブFormsをコアコンポーネントベースのフォームに変換します。
+[AEM Modernize Tools](https://opensource.adobe.com/aem-modernize-tools/) とは、Adobe Experience Manager（AEM）プロジェクトの最新化または更新プロセスを容易にするユーティリティまたはソフトウェアアプリケーションのセットを指します。 これらのツールは、通常、AEM内の古いコンポーネントや機能を、より効率的でサポートされている新しい代替機能に変換する際に役立ちます。 Forms変換ユーティリティは、AEM Modernize Tools の下にインストールされ、基盤コンポーネントに基づくアダプティブFormsをコアコンポーネントベースのフォームに変換します。
 
 Forms変換ユーティリティは、古い基盤コンポーネントに基づくアダプティブFormsを、新しいコアコンポーネントベースのフォームに変換します。 この変換プロセスにより、フォームが最新の標準と機能に準拠するようになり、AEM環境のパフォーマンス、互換性、メンテナンスのしやすさが向上する可能性があります。
 
@@ -68,7 +68,7 @@ AEM Modernize Tools をインストールして設定するには：
 
    `java -jar aem-author-p4502.jar`
 
-1. ローカルシステムで [AEM Modernize Tool](https://git.corp.adobe.com/livecycle/forms-modernizer/tree/convertForms) リポジトリのクローンを作成します。
+1. ローカルシステムで [AEM Modernize Tool](/help/journey-migration/refactoring-tools/aem-modernization-tools.md) リポジトリのクローンを作成します。
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]
@@ -101,7 +101,7 @@ AEM環境でAEM Modernize Tools を有効にして使用するには、基盤コ
 
 ![AEM Modernize コンポーネントルール ](/help/forms/assets/aem-modernize-tools-component-rule.png)
 
-## フォーム変換ユーティリティを実行して、基盤コンポーネントベースのフォームをコアコンポーネントベースのフォームに変換する
+## フォーム変換ユーティリティを実行して、基盤コンポーネントベースのフォームをコアコンポーネントベースのフォームに変換します
 
 1. **[!UICONTROL ツール/AEM Modernize Tools/Forms変換]** に移動します。
 

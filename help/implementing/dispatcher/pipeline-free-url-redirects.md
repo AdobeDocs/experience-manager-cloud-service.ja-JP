@@ -3,17 +3,14 @@ title: パイプラインを使用しない URL リダイレクト
 description: Git パイプラインまたはCloud Manager パイプラインにアクセスせずに 301 または 302 リダイレクトを宣言する方法を説明します。
 feature: Dispatcher
 role: Admin
-source-git-commit: 567c75f456f609dbc254753b439151d0f4100bc0
+source-git-commit: 4be9d99de2a8fbebc508419630ce254d2f9fd6dc
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
 
 # パイプラインを使用しない URL リダイレクト {#pipeline-free-redirects}
-
->[!NOTE]
->この機能はまだリリースされていません。
 
 様々な理由で、組織は 301 （または 302）リダイレクトを引き起こす方法で URL を書き換えます。つまり、ブラウザーは別のページにリダイレクトされます。
 
@@ -78,6 +75,6 @@ RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 
 次の点に注意してください。
 
-* デフォルトでは、書き換えマップを読み込む場合、完全なマップファイルが読み込まれるのを待たずに Apache が起動します。そのため、完全なマップが読み込まれるまでの間に一時的な不整合が生じる場合があります。 この設定を変更すると、マップの内容がすべて読み込まれるのを Apache が待ちますが、Apache の起動にはより長い時間がかかります。 Apache が待機するようにこの動作を変更するには、`managed-rewrite-maps.yaml` ファイルに `wait:true` を追加します。
-* 負荷間の頻度を変更するには、`managed-rewrite-maps.yaml` ファイルに `ttl: <integer>` を追加します。 例：`ttl: 120`
+* デフォルトでは、書き換えマップを読み込む場合、Apache は完全なマップファイルが読み込まれるのを待たずに起動します。そのため、完全なマップが読み込まれるまでの間に一時的な不整合が生じる場合があります。 この設定を変更すると、マップの内容がすべて読み込まれるのを Apache が待ちますが、Apache の起動にはより長い時間がかかります。 Apache が待機するようにこの動作を変更するには、`managed-rewrite-maps.yaml` ファイルに `wait:true` を追加します。
+* 負荷間の頻度を変更するには、`managed-rewrite-maps.yaml` ファイルに `ttl: <integer>` を追加します。 例：`ttl: 120`。
 * Apache には、RewriteMap 単一エントリに対して 1024 長の制限があります。
