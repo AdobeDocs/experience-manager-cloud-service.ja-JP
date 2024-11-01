@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
 workflow-type: tm+mt
 source-wordcount: '5618'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -558,7 +558,7 @@ IPSec 技術を搭載したほとんどの VPN デバイスがサポートされ
 
 ### 設定に役立つドメイン {#vpn-useful-domains-for-configuration}
 
-次の表に、設定と開発に役立つ一連のドメインと IP を示します。
+次の表では、設定と開発に役立つ一連のドメインと IP について説明します。
 
 <table>
 <thead>
