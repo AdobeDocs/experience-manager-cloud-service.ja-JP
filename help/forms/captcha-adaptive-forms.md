@@ -6,9 +6,8 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 feature: Adaptive Forms, Foundation Components
-exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: e6f986e014e45fad461721d84f18cc49a7bb434e
 workflow-type: tm+mt
 source-wordcount: '1742'
 ht-degree: 100%
