@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: a5159f2ff49b8e216087df4206c14a9ccd89f336
+source-git-commit: 08b23f093e4362a9885919a3e3d87bdcaada8876
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 64%
+source-wordcount: '1480'
+ht-degree: 61%
 
 ---
 
@@ -143,6 +143,19 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 * カテゴリ URL 形式がクラウドインスタンスで期待どおりに機能しない問題を解決しました。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
+
+### フォーム送信を制御する設定 {#configuration-submissions}
+
+特定の場所で Coral または Foundation フォームのフォーム送信を制御するために、AEMでは新しい設定 `com.adobe.granite.ui.components.FormRestrict` が導入されました。 この設定は、次の 2 つのフィールドで構成されます。
+
+1. **許可パスを追加**: フォームのアクションが許可されるパスを指定します。
+1. **動作を制限**：制限されるパス（許可リストに含まれないパス）の動作を決定します。 次の 2 つのオプションから選択できます。
+   * **ポップアップ** （デフォルト）：ポップアップ通知を表示します。
+   * **Prevent**：フォームの送信をブロックします。
+
+>[!NOTE]
+>
+>この設定は、`/apps`、`/libs`、`/mnt/overlay`、`/mnt/override` にあるすべての Coral フォームまたは Foundation フォームでサポートされているわけではありません。
 
 ### 高度なネットワークオプションを使用したセルフサービスログ転送 {#log-forwarding}
 
