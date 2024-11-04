@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 keywords: コアコンポーネントに基づくアダプティブフォームのレイアウト、フォームの様々なレイアウト、動的フォームレイアウト AEM、AEM Cloud Service フォームレイアウト、AEM コアコンポーネントのフォームレイアウトタイプ、アダプティブフォームのレイアウト
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 3ab7ff01201a7da790fe556bfe68c8c76aff9698
+source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2104'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 4%
 
 アダプティブFormsは、フォームを効果的にレイアウトおよびデザインするためのファーストクラスのコンポーネントを提供します。 レイアウトは、フォームでのコンポーネントの表示方法を制御します。 アダプティブ Formsでは、パネル、ウィザード、アコーディオン、上部タブ/水平タブのタブ、左/垂直タブのタブなどの様々なレイアウトがサポートされています。
 
-![ レイアウトの種類 ](/help/forms/assets/generic-layout-hero-image.png){align="center"}
+<!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
 
 ## 前提条件
 
