@@ -4,13 +4,13 @@ description: AEM Formsはカスタム関数をサポートしており、ルー�
 keywords: ルールエディターでカスタム関数を使用して、カスタム関数の追加、カスタム関数の使用、カスタム関数の作成をおこないます。
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: f5c17382052b4d116deaae564f1a2b9fdbb5ea0a
+exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 11%
+source-wordcount: '1340'
+ht-degree: 13%
 
 ---
-
 
 # コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成
 
@@ -226,7 +226,7 @@ AEM as a Cloud Service の [AEMaaCS プロジェクトディレクトリ]を Clo
 
 >[!NOTE]
 >
-> 次の [ カスタム関数 ](/help/forms/assets//customfunctions.zip) フォルダーを参照できます。 [ パッケージマネージャー ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager) を使用して、このフォルダーをダウンロードし、AEM インスタンスにインストールします。
+> 次の [ カスタム関数 ](/help/forms/assets//customfunctions.zip) フォルダーを参照できます。 [ パッケージマネージャー ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager) を使用して、このフォルダーをダウンロードし、AEM インスタンスにインストールします。
 
 ## カスタム関数の機能
 
@@ -238,49 +238,7 @@ AEM forms のカスタム関数は、フォームの機能を拡張およびパ�
 
 ### カスタム関数での非同期のサポート {#support-of-async-functions}
 
-非同期カスタム関数がルールエディターリストに表示されない。 ただし、同期関数式を使用して作成されたカスタム関数内で、非同期関数を呼び出すことができます。
-
-![Sync および async カスタム関数 ](/help/forms/assets/workflow-for-sync-async-custom-fumction.png)
-
->[!NOTE]
->
-> カスタム関数で非同期関数を呼び出す利点は、非同期関数を使用すると、複数のタスクを同時に実行でき、カスタム関数内で各関数の結果を使用できる点です。
-
-カスタム関数を使用して非同期関数を呼び出す方法については、以下のコードを参照してください。
-
-```javascript
-    
-    async function asyncFunction() {
-    const response = await fetch('https://petstore.swagger.io/v2/store/inventory');
-    const data = await response.json();
-    return data;
-    }
-
-    /**
-    * callAsyncFunction
-    * @name callAsyncFunction callAsyncFunction
-    */
-    function callAsyncFunction() {
-    asyncFunction()
-        .then(responseData => {
-        console.log('Response data:', responseData);
-        })
-        .catch(error => {
-         console.error('Error:', error);
-    });
-}
-```
-
-上記の例では、asyncFunction 関数は `asynchronous function` です。 `https://petstore.swagger.io/v2/store/inventory` に対して `GET` リクエストを実行することで、非同期操作を実行します。 `await` を使用して応答を待ち、`response.json()` を使用して応答本文を JSON として解析し、データを返します。 `callAsyncFunction` 関数は、`asyncFunction` 関数を呼び出してコンソールに応答データを表示する同期カスタム関数です。 `callAsyncFunction` 関数は同期していますが、非同期の asyncFunction 関数を呼び出し、`then` 文と `catch` 文で結果を処理します。
-
-動作を確認するには、ボタンを追加し、ボタンクリック時に非同期関数を呼び出すボタンのルールを作成します。
-
-![async 関数のルールを作成しています ](/help/forms/assets/rule-for-async-funct.png)
-
-ユーザーが「`Fetch`」ボタンをクリックすると、カスタム関数 `callAsyncFunction` が呼び出され、非同期関数 `asyncFunction` が呼び出されることを示すには、以下のコンソールウィンドウの図を参照してください。 コンソールウィンドウをInspectして、ボタンクリックに対する応答を表示します。
-
-![ コンソールウィンドウ ](/help/forms/assets/async-custom-funct-console.png)
-
+カスタム関数を使用すると、ルールエディターで非同期関数を実装できます。 この方法のガイダンスについては、記事 [ アダプティブフォームでの非同期関数の使用 ](/help/forms/using-async-funct-in-rule-editor.md) を参照してください。
 
 ### フィールドおよびグローバルスコープのオブジェクトは、カスタム関数でサポートされています。 {#support-field-and-global-objects}
 
@@ -289,6 +247,8 @@ AEM forms のカスタム関数は、フォームの機能を拡張およびパ�
 >[!NOTE]
 >
 > `param {scope} globals` は最後のパラメーターである必要があり、アダプティブフォームのルールエディターには表示されません。
+
+スコープ オブジェクトの詳細については、「[ カスタム関数のスコープ オブジェクト ](/help/forms/custom-function-core-component-scope-function.md)」を参照してください。
 
 ### カスタム関数でのキャッシュサポート
 

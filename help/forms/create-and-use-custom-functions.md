@@ -7,15 +7,15 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# コアコンポーネントに基づくアダプティブFormsのカスタム関数の概要
+# コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -72,7 +72,7 @@ JavaScript注釈は、JavaScript コードのメタデータを提供するた�
    * date[]：日付値の配列を表します。
    * 配列：様々なタイプの値を含む汎用の配列を表します。
    * オブジェクト：値を直接渡す代わりに、カスタム関数に渡されるフォームオブジェクトを表します。
-   * scope: globals オブジェクトを表します。このオブジェクトには、フォームインスタンス、ターゲットフィールドインスタンス、カスタム関数内でフォームの変更を実行するためのメソッドなどの読み取り専用変数が含まれています。 これはJavaScript注釈の最後のパラメーターとして宣言され、アダプティブフォームのルールエディターには表示されません。 scope パラメーターは、フォームまたはコンポーネントのオブジェクトにアクセスして、フォームの処理に必要なルールまたはイベントをトリガーします。 Globals オブジェクトの詳細と使用方法については、[ ここをクリック ](/help/forms/custom-function-core-component-create-function.md#field-and-global-scope-objects-support-in-custom-functions) してください。
+   * scope: globals オブジェクトを表します。このオブジェクトには、フォームインスタンス、ターゲットフィールドインスタンス、カスタム関数内でフォームの変更を実行するためのメソッドなどの読み取り専用変数が含まれています。 これはJavaScript注釈の最後のパラメーターとして宣言され、アダプティブフォームのルールエディターには表示されません。 scope パラメーターは、フォームまたはコンポーネントのオブジェクトにアクセスして、フォームの処理に必要なルールまたはイベントをトリガーします。 Globals オブジェクトの詳細と使用方法については、[ ここをクリック ](/help/forms/custom-function-core-component-scope-function.md) してください。
 
 パラメータータイプでは大文字と小文字が区別されず、パラメーター名にはスペースを使用できません。
 

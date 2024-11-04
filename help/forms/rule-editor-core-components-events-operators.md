@@ -4,13 +4,13 @@ description: アダプティブFormsのルールエディターは、様々な�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
+source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
 workflow-type: tm+mt
-source-wordcount: '1921'
-ht-degree: 54%
+source-wordcount: '2106'
+ht-degree: 50%
 
 ---
-
 
 # コアコンポーネントに基づくアダプティブフォームのルールエディターでの演算子のタイプとイベント
 
@@ -309,6 +309,50 @@ When （オプション）：
 >入力値が検証ルールと一致しない場合は、ユーザーに検証メッセージを表示できます。メッセージの内容は、サイドバー内のコンポーネントプロパティにある「**[!UICONTROL スクリプト検証メッセージ]**」フィールドから指定できます。
 
 ![スクリプトの検証](assets/script-validation.png)
+
+#### [!UICONTROL  パネル間の移動 ]
+
+**[!UICONTROL パネル間を移動]** ルールタイプを使用すると、フォーム内の様々なパネル間でフォーカスを移動できます。 例えば、次のパネルにフォーカスを移動する式を作成できます。
+
+次のパネルにフォーカスを移動するための一般的な **パネル間を移動** ルールは、次のような構造になっています。
+
+`Navigate among the panels`
+
+`Shift focus to the next item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+同様に、前のパネルにフォーカスを移動するための **パネル間を移動** ルールを記述できます。
+
+`Navigate among the panels`
+
+`Shift focus to the previous item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+パネル内を移動するためのルールを作成する方法について詳しくは、[ ここをクリック ](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons) を参照してください。
+
+#### [!UICONTROL  非同期関数呼び出し ]
+
+<span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features). </span>
+
+**[!UICONTROL 非同期関数呼び出し]** のルールタイプを使用すると、非同期関数を実行できます。 これにより、メイン実行スレッドとは独立して動作する関数呼び出しを開始できます。これにより、非同期の関数が完了するまで待たずに、他のプロセスが実行を続行できます。
+
+非同期関数を実行する一般的な非同期関数呼び出しルールは、次のような構造になっています。
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+`Async Function call`
+
+`[Callback Function];`
+
+ビジュアル ルール エディターで非同期関数呼び出しを使用する方法の詳細については、「[ ルール エディターでの非同期関数呼び出しの使用 ](/help/forms/using-async-funct-in-rule-editor.md) を参照してください。
 
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}

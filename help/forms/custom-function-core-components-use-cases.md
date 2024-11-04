@@ -4,13 +4,13 @@ description: この記事では、コアコンポーネントに基づくアダ�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 580e206427f2205fa8ca537ab4988a90c988171b
+exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 0%
 
 ---
-
 
 # カスタム関数の開発と使用の例
 
@@ -264,7 +264,7 @@ ht-degree: 0%
 
 カスタム関数でフィールドおよびグローバルオブジェクトを使用して、`Contact Us` フォームを利用して送信ハンドラーを上書きする方法を説明します。
 
-[create-custom-function](/help/forms/custom-function-core-component-create-function.md) の節で説明したように、次のコード行を追加して、フォーム送信の送信メッセージまたは失敗メッセージをカスタマイズし、フォーム送信メッセージをモーダルボックスに表示します。
+[create-custom-functionas](/help/forms/custom-function-core-component-create-function.md) の節で説明したように、次のコード行を追加して、フォーム送信の送信メッセージまたは失敗メッセージをカスタマイズし、フォーム送信メッセージをモーダルボックスに表示します。
 
 ```javascript
 /**

@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0e7c58b2a4d0f0704f8693c0dddae0b1a033ec83
+source-git-commit: d256fe6c551943727c7e953a6dbd6443789616c3
 workflow-type: tm+mt
-source-wordcount: '5729'
-ht-degree: 99%
+source-wordcount: '5741'
+ht-degree: 98%
 
 ---
 
@@ -746,9 +746,11 @@ ht-degree: 99%
                + [基盤ルールエディターとコアコンポーネントのルールエディターの違い](/help/forms/rule-editor-core-components-difference-tables.md)
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターで使用できる演算子とイベントのタイプ](/help/forms/rule-editor-core-components-events-operators.md)
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターの例](/help/forms/rule-editor-core-components-usecases.md)
+               + [アダプティブフォームでの非同期関数の使用](/help/forms/using-async-funct-in-rule-editor.md)
             + コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要{#create-and-use-custom-function-core-component}
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要](/help/forms/create-and-use-custom-functions.md)
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成と使用](/help/forms/custom-function-core-component-create-function.md)
+               + [カスタム関数内のオブジェクトのスコープ](/help/forms/custom-function-core-component-scope-function.md)
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の例](/help/forms/custom-function-core-components-use-cases.md)
             + フォームポータルとそのコンポーネントの概要{#introduction-to-forms-portal}
                + [フォームポータルコンポーネントの概要](/help/forms/configure-forms-portal.md)

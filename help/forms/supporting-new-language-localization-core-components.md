@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: d9f4e14edb1d7a84f130dea0c82734574404601c
-workflow-type: ht
-source-wordcount: '2068'
-ht-degree: 100%
+source-git-commit: cc2a226898f5dbe9073ba9b5a859218da664b1d7
+workflow-type: tm+mt
+source-wordcount: '2124'
+ht-degree: 97%
 
 ---
 
@@ -228,6 +228,28 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
       ![clientlib-it-custom-locale のペースト](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
+1. `languageinit.js``aemLangUrl` パスを更新
+
+   1. [AEMaaCS プロジェクトディレクトリ]内の次のディレクトリに移動します。
+
+      ```
+      /ui.apps/src/main/content/jcr_root/apps/<app-id>/clientlib/clientlib-it-custom-locale/js
+      ```
+
+   1. `languageinit.js` ファイルをエディターで開きます。
+   1. `languageinit.js` ファイル内の次の行を探します。
+
+      `const aemLangUrl = /etc.clientlibs/forms-core-components-it/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json;`
+
+   1. 上記の行で、`forms-core-components-it` をお使いの `<app-id>` （アプリケーションの実際の ID）に置き換えます。
+
+      `const aemLangUrl = '/etc.clientlibs/<app-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json';`
+
+      ![language-init-file](/help/forms/assets/language-init-name-change.png)
+
+>[!NOTE]
+>  
+> `forms-core-components-it` をプロジェクト名または `<app-id>` で置き換えないと、日付選択コンポーネントは翻訳に失敗します。
 
 ### 次の手順に従って、新しいロケールのファイルを作成します。
 

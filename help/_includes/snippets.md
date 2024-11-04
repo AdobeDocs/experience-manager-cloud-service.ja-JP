@@ -1,8 +1,8 @@
 ---
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: d761370dcf6530bf557de6f8a0e7b6e111eb9e35
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 98%
+source-wordcount: '1260'
+ht-degree: 95%
 
 ---
 # スニペット {#snippets}
@@ -111,6 +111,12 @@ ht-degree: 98%
    <td>「<b>次の値を設定</b>」オプションは、ルールエディターで API を呼び出すための<b>サービス出力</b>プロパティをサポートしていません。
    </td>
    </tr>
+   <tr>
+   <td>パネル間の移動</td>
+   <td> <b> 次へボタン </b> コンポーネントと <b> 前へボタン </b> コンポーネントを使用して、パネル間を移動できます。 コンテナ内に配置されたナビゲーションボタンは、その子要素に対して機能します</td>
+   <td> <b> パネル内のナビゲーション </b> ルールはルールエディターで使用でき、ユーザーはパネルの子間を移動するためのルールを作成できます。
+   </td>
+   </tr>
    </tr>
    </tr>
   </tbody>
@@ -126,6 +132,7 @@ ht-degree: 98%
 * [ルールエディターの様々なエディションの違い](/help/forms/rule-editor-core-components-difference-tables.md)
 * [コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要](/help/forms/create-and-use-custom-functions.md)
 * [コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成](/help/forms/custom-function-core-component-create-function.md)
+* [カスタム関数内のオブジェクトのスコープ](/help/forms/custom-function-core-component-scope-function.md)
 * [カスタム関数の開発と使用の例](/help/forms/custom-function-core-components-use-cases.md)
 
 
@@ -170,7 +177,7 @@ ht-degree: 98%
 >
 >ユニバーサルエディターは [IP 許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)と互換性がありません。
 >
->ユニバーサルエディターを使用する場合は、IP許可リストを有効にしないでください。
+>ユニバーサルエディターを使用する場合は、IP 許可リストを有効にしないでください。
 
 ## Dynamic Media の操作 {#work-with-dynamic-media}
 
