@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 08b23f093e4362a9885919a3e3d87bdcaada8876
+source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
 workflow-type: tm+mt
-source-wordcount: '1480'
-ht-degree: 61%
+source-wordcount: '1514'
+ht-degree: 58%
 
 ---
 
@@ -83,19 +83,19 @@ Assets ビューで、繰り返しスケジュールまたは将来の日付に�
 
 **ライセンス済みアセットのデジタル著作権管理**
 
-Content Hubのユーザー向けライセンスアセットに DRM を活用することで、ライセンスのコンプライアンスを向上させ、ライセンス条項を含むアセットを共有するリスクを最小限に抑えることができるようになりました。このため、ユーザーは、ライセンス条項を確認して同意してから、ライセンス条項をダウンロードする必要があります。
+Content Hubのユーザー向けライセンスアセットに DRM を活用することで、ライセンスのコンプライアンスを向上させ、ライセンス条項を含むアセットを共有するリスクを最小限に抑えることができるようになりました。このため、ユーザーは、ライセンス条項を確認して同意してから、ライセンス条項をダウンロードする必要があります。 詳しくは、[Content Hubでのライセンス済みアセットの管理 ](/help/assets/manage-licensed-assets-on-content-hub.md) を参照してください。
 
 ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
 
 **アセットカードのメタデータ設定**
 
-Content Hubでは、アセットカードに表示する必要がある主要なメタデータフィールドを、最大 6 つのフィールドまで設定できるようになりました。
+Content Hubでは、アセットカードに表示する必要がある主要なメタデータフィールドを、最大 6 つのフィールドまで設定できるようになりました。 詳しくは、[Content Hubの設定 ](/help/assets/configure-content-hub-ui-options.md#asset-card) のアセットカードの節を参照してください。
 
 ![ アセットカード上の主要なメタデータ ](/help/assets/assets/asset-card-key-metadata.png)
 
 **期限切れアセットの表示とダウンロードの設定**
 
-管理者は、有効期限切れのアセットをコンテンツハブに表示する必要があるかどうかを制御できるようになりました。有効期限切れのアセットを表示する場合は、ユーザーがこれらをダウンロードできるかどうかも定義できます。
+管理者は、有効期限切れのアセットをコンテンツハブに表示する必要があるかどうかを制御できるようになりました。期限切れのアセットを表示可能にすると、ユーザーがダウンロードできるかどうかを定義することもできます。 詳しくは、[Content Hubの設定 ](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) の「期限切れのAssets」の節を参照してください。
 
 ![コンテンツハブの有効期限切れのアセット](/help/assets/assets/expired-assets-content-hub.png)
 
