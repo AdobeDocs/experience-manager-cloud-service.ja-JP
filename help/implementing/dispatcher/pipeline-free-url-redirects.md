@@ -3,7 +3,7 @@ title: パイプラインを使用しない URL リダイレクト
 description: Git パイプラインまたはCloud Manager パイプラインにアクセスせずに 301 または 302 リダイレクトを宣言する方法を説明します。
 feature: Dispatcher
 role: Admin
-source-git-commit: 4be9d99de2a8fbebc508419630ce254d2f9fd6dc
+source-git-commit: 36b7d72f24bd60ad94762c9c9937105bea6e31b6
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 0%
@@ -57,7 +57,7 @@ maps:
   path: /content/dam/redirectmaps/mysite-redirectmap.txt
 ```
 
-次に、`rewrites/rewrite.rules` や `<yourfile>.vhost` などの Apache 設定ファイルで、name プロパティによって参照されるマップファイルを設定する必要があります（上記のサンプルの `my.map`。
+次に、`rewrites/rewrite.rules` や `<yourfile>.vhost` などの Apache 設定ファイルで、name プロパティによって参照されるマップファイルを設定する必要があります（上記のサンプルでは `my.map`）。
 
 `RewriteMap` ディレクティブは、データが `sdbm` （単純 DBM）形式を使用してデータベース・マネージャ（DBM）ファイル形式で格納されることを示す必要があります。
 
