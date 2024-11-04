@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: ffe90d3919c0f0c1a1c60efccc0191118dfaa84a
-workflow-type: ht
-source-wordcount: '1297'
-ht-degree: 100%
+source-git-commit: 31fc69523107719d6f33d7a0845407547b57f4a7
+workflow-type: tm+mt
+source-wordcount: '1317'
+ht-degree: 97%
 
 ---
 
@@ -159,7 +159,11 @@ ht-degree: 100%
 
 1. ドラッグしたコンポーネントがコンテンツツリー内で灰色に変わり、挿入ポイントは青い線で表されます。コンポーネントをリリースして、新しい場所に配置します。
 
-コンポーネントは、コンテンツツリーおよびエディターの両方で並べ替えられます
+コンテンツツリーとエディターの両方で、コンポーネントの順序が変更されます。
+
+>[!NOTE]
+>
+>ソースコンテナとターゲットコンテナの間に別の [ コンポーネントフィルター ](/help/implementing/universal-editor/customizing.md#filtering-components) が設定されている場合、コンポーネントをコンテナ間で移動することはできません。
 
 ## コンテンツのプレビュー {#previewing-content}
 

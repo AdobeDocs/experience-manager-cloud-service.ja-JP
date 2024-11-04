@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター 2024.08.13 リリースノート
-description: ユニバーサルエディターの 2024.08.13 リリースのリリースノートです。
+title: ユニバーサルエディター 2024.09.3 リリースノート
+description: ユニバーサルエディターの 2024.09.3 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: c66621eb336b8e6eb5ceb1056c089c190fcd1c34
+source-git-commit: b70acef8dc259fff3041617abe0a89f7eb73dfab
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 0%
+source-wordcount: '189'
+ht-degree: 1%
 
 ---
 
 
-# ユニバーサルエディター 2024.08.13 リリースノート {#release-notes}
+# ユニバーサルエディター 2024.09.3 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2024 年 8 月 13 日リリースのリリースノートです。
+ユニバーサルエディターの 2024 年 9 月 3 日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -22,18 +22,15 @@ ht-degree: 0%
 
 ## 新機能 {#what-is-new}
 
-* **カスタムデータタイプ**：プロパティパネル内にカスタムフィールドを作成 [ できるので、独自のデータニーズに合わせてエディターをカスタマイズできます。](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/item-types-renderers/)
-   * コマースのユースケース用にカスタム製品ピッカーを開発する場合でも、ドロップダウンリストにバックエンドの値を入力する場合でも、この機能を使用すると、作成者がコンテンツの作成に使用するデータを制御できます。
-* **クロスコンテナのドラッグ&amp;ドロップ**:[ コンテンツツリーパネル内で [ ドラッグ&amp;ドロップを使用して異なるコンテナ間でコンポーネントを移動 ](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) でき、レイアウト構成の柔軟性が向上します。](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
-* **最適化された GitHub 統合**:GitHub 応答のキャッシュが導入され、タグと `universal-editor-cors-library` の取得が大幅に高速化され、ユーザーエクスペリエンスが高速でスムーズになりました。
-* **設定可能な IMS トークン検証**：トークン管理の柔軟性を高めるために、[IMS トークン検証がオプションになりました。](/help/implementing/universal-editor/local-dev.md#setting-up-service)
-   * この設定オプションを使用すると、必要に応じて検証を無効にして、クラウドゲートウェイの設定を簡素化できます。
-* **Splunk 統合**:Splunk ログは、モニタリングと診断を強化し、ローカル開発のために [ ユニバーサルエディターサービスに統合され ](/help/implementing/universal-editor/local-dev.md#setting-up-service) した。
-   * この統合により、効率的なログトラッキング、よりスムーズな操作、迅速なトラブルシューティングが保証されます。
+* **`rootPath`がコンテンツ選択で使用できるようになりました**:[AEM コンテンツ、](/help/implementing/universal-editor/field-types.md#aem-content)[ コンテンツフラグメント、](/help/implementing/universal-editor/field-types.md#content-fragment) および [ エクスペリエンスフラグメント ](/help/implementing/universal-editor/field-types.md#experience-fragment) フィールドタイプを使用する際に、ターゲット設定されたコンテンツ選択をユーザーに表示する `rootPath` をコンテンツ選択で提供できるようになりました。
+   * これにより、コンテンツの選択は、指定されたパス内のコンテンツおよび任意のサブディレクトリに限定される。
+
+## 6.5 のサポートのための早期導入プログラム {#early-adoption}
+
+ユニバーサルエディターが、早期導入プログラムの一環としてAEM 6.5 を使用する際のヘッドレスユースケースで利用できるようになりました。
+
+この新機能のテストやフィードバックの提供に関心がある場合は、Adobe IDに関連付けられたメールアドレスからAdobe担当者にメールを送信してください。
 
 ## バグ修正 {#bug-fixes}
 
-* **公開フィードバックの強化**：権限が不十分なために公開が失敗した場合、公開中のユーザーへのフィードバックが改善されて、単に失敗を示すのではなく、明確な警告が表示されるようになりました。
-* **URL 処理の改善**：誤った URL エンコーディング/デコードが原因で公開に失敗していた問題を修正しました。
-* **正確なデータ処理**：浮動小数が誤って整数として保存される問題に対処し、コンテンツ全体で正確なデータ処理を確保しました。
-* **セキュリティと安定性**:Docker イメージのセキュリティの脆弱性を修正し、コンポーネントピッカーやパンくずリストなどの重要なコンポーネントのカバレッジをテストし、より安全で安定した信頼性の高いエディターエクスペリエンスを実現しました。
+* **クロスコンテナのドラッグ&amp;ドロップ**:[ ドラッグ&amp;ドロップを使用して異なるコンテナ間でコンポーネントを移動 ](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) では、ソースとターゲットの両方で [ コンポーネントフィルター ](/help/implementing/universal-editor/customizing.md#filtering-components) を順守するようになりました。
