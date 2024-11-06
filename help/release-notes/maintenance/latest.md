@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c638039ea957f5f7ae0dc64f49c3ace4381cb040
+source-git-commit: dc7f95ac98fd300a803e307ce11a51937d604a07
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 29%
+source-wordcount: '613'
+ht-degree: 32%
 
 ---
 
@@ -66,6 +66,10 @@ ht-degree: 29%
 ### 廃止された機能と API {#deprecated-18459}
 
 AEM as a Cloud Service で廃止および削除された機能と API について詳しくは、[廃止および削除された機能と API](/help/release-notes/deprecated-removed-features.md) ドキュメントを参照してください。
+
+### セキュリティ修正 {#security-18459}
+
+AEM as a Cloud Service では、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。このメンテナンスリリースでは、特定された 21 つの脆弱性に対処し、堅牢なシステム保護に対する取り組みを強化しています。
 
 ### 組み込みテクノロジー {#embedded-tech-18459}
 
