@@ -4,11 +4,10 @@ description: ' [!DNL AEM Forms]  as a Cloud Service 用に Adobe Acrobat Sign �
 feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
-exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 2128dac489c270d296f86b56ae811556fb5fe87e
+source-git-commit: 551123925e43c98f8870f4a5da028d211f5c8ffb
 workflow-type: tm+mt
-source-wordcount: '2117'
-ht-degree: 100%
+source-wordcount: '2195'
+ht-degree: 96%
 
 ---
 
@@ -57,7 +56,8 @@ ht-degree: 100%
 
 1. これで、**[!UICONTROL ソリューションを選択]**&#x200B;して、[!DNL Adobe Acrobat Sign] を選択できます。
 
-   ![Adobe Acrobat Sign Solutions](assets/adobe-sign-solution.png)
+   <!--![Adobe Acrobat Sign Solutions](assets/adobe-sign-solution.png)-->
+   ![Adobe Acrobat Sign Solutionsの設定 ](assets/adobe-sign-solution-config.png)
 
 <!--
 
@@ -104,11 +104,17 @@ ht-degree: 100%
    * [!DNL widget_write]
    * [!DNL workflow_read]
 
+   
+   > 手順 12 で示したように、スコープ修飾子を `self` から `account` にAEM UI から直接変更できます。
+
    [!DNL Adobe Acrobat Sign] アプリケーション用に OAuth 設定を構成してキーを取得するための詳しい手順については、開発者用ドキュメントの[アプリケーション用に OAuth 設定を構成する](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)を参照してください。
 
    ![OAuth 設定](/help/forms/assets/oauthconfig-new.png)
 
 1. **[!UICONTROL Adobe Acrobat Sign 設定を作成]**&#x200B;ページに戻ります。「**[!UICONTROL 設定]**」タブで、「**[!UICONTROL クライアント ID]**（アプリケーション ID）と&#x200B;**[!UICONTROL クライアントシークレット]**」の値を指定します。前述の手順で作成した [Adobe Acrobat Sign アプリケーションのクライアント ID とクライアントシークレット](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret)を使用します。
+
+1. [!UICONTROL  認証範囲 ] セクションでは、必要に応じてプレフィックス「self」または「account」を範囲に追加することで、範囲を「account」または「self」に変更できます。
+   ![ 認定の範囲 ](/help/forms/assets/authorization-scope.png)
 
 1. 「**[!UICONTROL 添付ファイルの Adobe Acrobat Sign を有効にする]**」オプションを選択すると、アダプティブフォームに添付されているファイルが、署名用に送信された対応する [!DNL Adobe Acrobat Sign] ドキュメントに添付されます。
 
@@ -263,6 +269,10 @@ AEM Forms as a Cloud Service では、定義された間隔で署名者のステ
 
 設定の値をセットするには、[AEM SDK を使用して OSGi 設定を生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#generating-osgi-configurations-using-the-aem-sdk-quickstart)し、Cloud Service インスタンスに[設定をデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja#deployment-process)します。
 
+## よくある質問
+
+* **Q:iframe でAdobe Sign GovCloud Signature ページをレンダリングできますか？**
+* **A:** はい。iframe でAdobe Sign GovCloud Signature ページをレンダリングできます。
 
 >[!MORELIKETHIS]
 >
