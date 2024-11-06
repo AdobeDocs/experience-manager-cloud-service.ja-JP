@@ -4,10 +4,10 @@ description: AEM as a Cloud Service の高度なネットワーク機能（VPN �
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
+source-git-commit: 2a7d46e91bbd6ca96bd8b7fd5d4d84cf69bdee36
 workflow-type: tm+mt
-source-wordcount: '5618'
-ht-degree: 100%
+source-wordcount: '5524'
+ht-degree: 99%
 
 ---
 
@@ -398,7 +398,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ## 仮想プライベートネットワーク（VPN） {#vpn}
 
-VPN を使用すると、作成者、公開、またはプレビューインスタンスからオンプレミスインフラストラクチャまたはデータセンターに接続できます。これは、データベースへのアクセスを保護する場合などに役立ちます。また、VPN をサポートしている CRM ベンダーなどの SaaS ベンダーへの接続や、企業ネットワークから AEM as a Cloud Service のオーサー、プレビューまたはパブリッシュインスタンスへの接続も可能になります。
+VPN を使用すると、作成者、公開、またはプレビューインスタンスからオンプレミスインフラストラクチャまたはデータセンターに接続できます。これは、データベースへのアクセスを保護する場合などに役立ちます。また、VPN をサポートする CRM ベンダーなどの SaaS ベンダーに接続することもできます。
 
 IPSec 技術を搭載したほとんどの VPN デバイスがサポートされています。[このデバイスのリストの **RouteBase の設定手順**&#x200B;の列にある情報を参照してください。](https://learn.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) 表の説明に従って、デバイスを設定します。
 
@@ -558,7 +558,9 @@ IPSec 技術を搭載したほとんどの VPN デバイスがサポートされ
 
 ### 設定に役立つドメイン {#vpn-useful-domains-for-configuration}
 
-次の表では、設定と開発に役立つ一連のドメインと IP について説明します。
+次の図は、設定と開発に役立つ一連のドメインと関連 IP を視覚的に表したものです。図の下の表に、これらのドメインと IP を示します。
+
+![VPN ドメイン設定](/help/security/assets/AdvancedNetworking.jpg)
 
 <table>
 <thead>
@@ -581,21 +583,6 @@ IPSec 技術を搭載したほとんどの VPN デバイスがサポートされ
   </tr>
 </tbody>
 </table>
-
-### VPN をイングレス接続に限定する方法 {#restrict-vpn-to-ingress-connections}
-
-AEM への VPN アクセスのみを許可する場合は、`p{PROGRAM_ID}.external.adobeaemcloud.com` で定義された IP のみが環境と通信できるように、環境の許可リストを Cloud Manager で設定します。これは、Cloud Manager で他の IP ベースの許可リストと同じように行うことができます。
-
-パスベースのルールにする必要がある場合は、標準の http ディレクティブを Dispatcher レベルで使用して、特定の IP を拒否または許可します。リクエストが常にオリジンに到達するように、目的のパスを CDN でキャッシュできないようにする必要もあります。
-
-#### httpd 設定の例 {#httpd-example}
-
-```
-Order deny,allow
-Deny from all
-Allow from 192.168.0.1
-Header always set Cache-Control private
-```
 
 ## 環境での高度なネットワーク設定の有効化 {#enabling}
 
