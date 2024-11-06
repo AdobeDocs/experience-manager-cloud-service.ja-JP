@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: dc7f95ac98fd300a803e307ce11a51937d604a07
+source-git-commit: 90e1ca38bd517215a631573987462a716bfed160
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '629'
 ht-degree: 32%
 
 ---
@@ -56,8 +56,11 @@ ht-degree: 32%
 * SITES-25456：イベント：ページを移動する際、ページ移動イベントの他に、ページ削除イベントが生成されます。
 * SITES-25658：イベント：層と sourceUrl は、ページコンテンツの状態イベントには入力されません。
 * SITES-6497：ローンチ：ローンチでページを作成が機能しません。
+* SITES-25938：ローンチ：翻訳プロジェクト後に予期しない削除が発生する。
 * SITES-25393：ユニバーサルエディターを使用したEdge Delivery:1 つの段落を含む書式設定されたリッチテキストをレンダリングすると、テキストノードが失われる。
 * SITES-24643：ユニバーサルエディターを使用したEdge Delivery：ページメタデータモデルで OpenGraph とtwitterメタデータ属性が機能しない。
+* SITES-25401：エクスペリエンスフラグメント：XF 参照の遅い更新
+
 
 ### 既知の問題 {#known-issues-18459}
 
