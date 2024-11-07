@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 31fc69523107719d6f33d7a0845407547b57f4a7
+source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 97%
+source-wordcount: '1375'
+ht-degree: 94%
 
 ---
 
@@ -132,6 +132,16 @@ ht-degree: 97%
 >[!TIP]
 >
 >ホットキー `a` を使用して、選択したコンテナにコンポーネントを追加します。
+
+### コンテナ内のコンポーネントの複製 {#duplicating-components}
+
+1. [ コンテンツツリー ](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) またはエディターを使用して、コンテナ内のコンポーネントを選択します。
+1. 次に、プロパティパネルで「**複製**」アイコンを選択します。
+
+   ![コンテナに追加するコンポーネントの選択](assets/ue-duplicate-component.png)
+1. コンポーネントが複製され、選択したコンポーネントの下に挿入されます。
+
+コンポーネントがコンテナに挿入され、エディターで編集できます。
 
 ### コンテナからのコンポーネントの削除 {#deleting-components}
 

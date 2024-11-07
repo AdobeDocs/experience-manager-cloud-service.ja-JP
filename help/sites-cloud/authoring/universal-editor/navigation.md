@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
-workflow-type: ht
-source-wordcount: '1576'
-ht-degree: 100%
+source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
+workflow-type: tm+mt
+source-wordcount: '1615'
+ht-degree: 96%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 100%
 
 1. ユニバーサルエディターにログインします。ログインして[ユニバーサルエディターにアクセスする](/help/implementing/universal-editor/getting-started.md#request-access)には、Adobe ID が必要です。
 
-1. ログインしたら、編集するページの URL を[ロケーションバーに入力します。](#location-bar)次のようなコンテンツの編集を開始できます。[テキストコンテンツ](#text-mode)または[メディアコンテンツ。](#media-mode)
+1. ログインしたら、編集するページの URL を[ロケーションバーに入力します。](#location-bar) れにより、テキストコンテンツやメディアコンテンツなどのコンテンツの編集を開始できます。
 
 ## UI について {#ui}
 
@@ -280,7 +280,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ![追加アイコン](assets/ue-add-component-icon.png)
 
-「追加」ボタンをタップまたはクリックすると、使用できるコンポーネントのドロップダウンメニューが開き、選択したコンテナに [ を追加します。](#adding-components)
+「追加」ボタンをタップまたはクリックすると、使用できるコンポーネントのドロップダウンメニューが開き、選択したコンテナに [ を追加します。](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)
 
 ![コンテキストメニューを追加](assets/add-context-menu.png)
 
@@ -288,13 +288,21 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 >
 >ホットキー `a` を使用して、選択したコンテナコンポーネントにコンポーネントを追加します。
 
+##### 複製 {#duplicate}
+
+コンテンツツリーまたはエディターでコンテナコンポーネント内のコンポーネントを選択すると、「複製」オプションがプロパティパネルに表示されます。
+
+![ 複製アイコン ](assets/duplicate.png)
+
+「複製」ボタンをタップまたはクリック [ 選択したコンポーネントを複製 ](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)
+
 ##### 削除 {#delete}
 
 コンテンツツリーまたはエディターでコンテナコンポーネント内のコンポーネントを選択すると、プロパティパネルに削除オプションが表示されます。
 
 ![削除アイコン](assets/ue-delete-component-icon.png)
 
-「削除」ボタンをタップまたはクリックすると [ はコンポーネントを削除します。](#deleting-components)
+「削除」ボタンをタップまたはクリックすると [ はコンポーネントを削除します。](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)
 
 >[!TIP]
 >
