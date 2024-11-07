@@ -4,10 +4,10 @@ description: コンテンツ作成者のニーズに合わせてユニバーサ�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6612abbd95599791ff9571b59154aa8ab34fb5f8
+source-git-commit: 732b0648e7114594cb8d35df03f83b842d62736e
 workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 97%
+ht-degree: 89%
 
 ---
 
@@ -75,9 +75,9 @@ data-aue-filter="container-filter"
 ]
 ```
 
-### プロパティパネルでのコンポーネントを条件付きで表示および非表示にする {#conditionally-hide}
+### プロパティパネルでのコンポーネントの条件付き表示/非表示 {#conditionally-hide}
 
-1 つまたは複数のコンポーネントを一般的に作成者が利用できる場合がありますが、意味をなさない状況が発生する場合もあります。このような場合、`condition` 属性を[コンポーネントモデルのフィールド](/help/implementing/universal-editor/field-types.md#fields)に追加することによって、プロパティパネルでコンポーネントを非表示にすることができます。
+1 つまたは複数のコンポーネントを一般的に作成者が利用できる場合がありますが、意味をなさない状況が発生する場合もあります。その場合、コンポーネントモデルの [ フィールド ](/help/implementing/universal-editor/field-types.md#fields) に `condition` 属性を追加することで、プロパティパネルでコンポーネントを非表示にすることができます。
 
 条件は、[ JsonLogic スキーマを使用して定義できます。](https://jsonlogic.com/) 条件が true の場合、フィールドが表示されます。条件が false の場合、フィールドは非表示になります。
 

@@ -4,10 +4,10 @@ description: Edge Delivery Servicesプロジェクトを使用したWYSIWYG オ�
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1445'
-ht-degree: 62%
+ht-degree: 59%
 
 ---
 
@@ -165,7 +165,7 @@ Edge Delivery Servicesプロジェクトを使用したWYSIWYG オーサリン�
 
    * ページを読み込むには、ユニバーサルエディターで「**Adobe でログイン**」をタップまたはクリックして AEM を認証する必要がある場合があります。
 
-1. ユニバーサルエディターでセクションを選択します。プロパティパネルで、**追加**&#x200B;アイコンをタップまたはクリックし、メニューから新しい&#x200B;**引用**&#x200B;ブロックを選択します。
+1. ユニバーサルエディターでセクションを選択します。プロパティパネルで、「**追加**」アイコンをタップまたはクリックし、メニューから新しい **引用** ブロックを選択します。
 
    * **追加**&#x200B;アイコンは、プラス記号です。
    * 選択したオブジェクトの青色のアウトラインに「**セクション**」というラベルの付いたタブがある場合、セクションが選択されていることがわかります。
@@ -175,7 +175,7 @@ Edge Delivery Servicesプロジェクトを使用したWYSIWYG オーサリン�
 
 1. ページがリロードされ、選択したセクションの下に引用ブロックが、`component-definitions.json` ファイルで指定したデフォルトのコンテンツと共に追加されます。
 
-   * 引用ブロックは、他のブロックと同様に、インプレースまたはプロパティパネル内で選択および編集できます。
+   * 引用ブロックは、インプレースまたはプロパティパネルで他のブロックとして選択および編集できます。
    * スタイル設定は、後の手順で適用します。
 
    ![選択したセクションの新しい引用ブロックを含むページ](assets/create-block/quote-added.png)

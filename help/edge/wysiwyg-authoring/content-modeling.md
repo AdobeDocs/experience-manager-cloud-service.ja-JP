@@ -4,10 +4,10 @@ description: Edge Delivery Services プロジェクトでのWYSIWYG オーサリ
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 058f3c24ac883315dfaa9206a8c2caa4bb005d07
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '2196'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -112,7 +112,7 @@ Edge Delivery ServicesでWYSIWYG オーサリングを使用する場合は、�
 * ブロック名を定義する必要があります。ブロック名は、ブロックのテーブルヘッダーにレンダリングされます。
    * ブロック名は、ブロックを修飾する適切なスタイルとスクリプトを取得するために使用します。
 * [モデル ID](/help/implementing/universal-editor/field-types.md#model-structure) を定義できます。
-   * モデル ID は、コンポーネントのモデルへの参照です。作成者がプロパティパネルで使用できるフィールドを定義します。
+   * モデル ID は、作成者がプロパティパネルで使用できるフィールドを定義するコンポーネントのモデルへの参照です。
 * [フィルター ID](/help/implementing/universal-editor/customizing.md#filtering-components) を定義できます。
    * フィルター ID はコンポーネントのフィルターへの参照です。これにより、ブロックやセクションに追加できる子を制限したり、有効にする RTE 機能を制限したりするなど、オーサリング動作を変更できます。
 

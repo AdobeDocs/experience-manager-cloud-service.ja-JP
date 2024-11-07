@@ -4,7 +4,7 @@ description: リモートアプリのコンテンツや UI の変更に反応す
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 3%
@@ -91,7 +91,7 @@ ht-degree: 3%
 
 ### aue:content-patch {#content-patch}
 
-`aue:content-patch` イベントは、コンポーネントのデータがプロパティパネルで更新されたときにトリガーされます。
+プロパティパネルでコンポーネントのデータが更新されると、`aue:content-patch` イベントがトリガーされます。
 
 ペイロードは、更新されたプロパティの JSON パッチです。
 
