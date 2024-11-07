@@ -4,7 +4,7 @@ description: EDS フォームへの繰り返し可能なセクションの追加
 feature: Edge Delivery Services
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 6612abbd95599791ff9571b59154aa8ab34fb5f8
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 100%
@@ -112,7 +112,7 @@ To add repeatable sections in Edge Delivery:
 1. Open or create new document file in a Microsft SharePoint Site to embed the Excel sheet  in it using a `Form Block`. For example, open the `index` file and add a `Form Block`.
 2. Open the command prompt, navigate to your AEM Edge Delivery project directory on your local machine, and execute the command as `aem up`.
 
-The form is accessible at `https://localhost:3000`, where clicking the `Add` button adds new repeatable section for entering co-applicant details. You can also delete the the repeatable section by clicking the `Delete` button. 
+The form is accessible at `https://localhost:3000`, where clicking the `Add` button adds new repeatable section for entering co-applicant details. You can also delete the repeatable section by clicking the `Delete` button. 
 
 >[!NOTE]
 >
