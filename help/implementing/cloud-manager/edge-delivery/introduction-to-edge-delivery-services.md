@@ -1,18 +1,18 @@
 ---
-title: Cloud ManagerのEdge Delivery Servicesの概要
+title: Cloud Manager の Edge Delivery Services の概要
 description: Edge Delivery Servicesを使用してCloud Manager プロジェクトを配信する方法を説明します。
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
+source-git-commit: 3941b7f97d434946a3cb796633f306b89e68c0a4
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 6%
+source-wordcount: '756'
+ht-degree: 10%
 
 ---
 
 
-# Cloud ManagerのEdge Delivery Servicesの概要 {#edge-delivery-services}
+# Cloud Manager の Edge Delivery Services の概要 {#edge-delivery-services}
 
 Edge Delivery Services は、web サイト上のコンテンツの柔軟なオーサリングを実現する、構成可能なサービスセットです。この機能を使用すると、次のことが可能です。
 
@@ -20,7 +20,7 @@ Edge Delivery Services は、web サイト上のコンテンツの柔軟なオ�
 * RUM （Real Use Monitoring）を通じてパフォーマンスを継続的に監視します。
 * コンテンツソースを分離することでオーサリング効率を向上させます。
 
-ユニバーサルエディターとドキュメントベースのオーサリングを使用して、AEM コンテンツ管理と WYSIWYG オーサリングの両方を使用できます。
+ユニバーサルエディターとドキュメントベースのオーサリングを使用して、AEM コンテンツ管理とWYSIWYG オーサリングの両方を使用できます。
 
 AEM as a Cloud ServiceのCloud Managerを使用すると、プロジェクトのEdge Delivery サービスを有効にできます。
 
@@ -76,13 +76,14 @@ Edge Delivery Servicesは、プロジェクトの開始方法に応じて、様�
 | 1 | 製品コラボレーションチャネルに参加 | **リクエストを今すぐ送信** をクリックすると、会社のチャネルを作成するためのリクエストがAdobeに送信されます。 チャネルが既に存在する場合は、会社のチャネルに転送されます。 |
 | 2 | 前提条件を完了 | **入門チュートリアルを表示** をクリックすると、[ 入門 – 開発者チュートリアル ](https://www.aem.live/developer/tutorial) に移動します。 |
 | 3 | Edge Delivery サイトを追加 | [Edge Delivery サイトの追加 ](#eds-add-site) を参照してください。 |
-| 4 | ドメインを追加 | [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。 |
+| 4 | ドメインを追加 | [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。 |
 | 5 | SSL 証明書を追加 | [SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。 |
-| 6 | Edge Delivery サイトの CDN の設定 | [CDN 設定の追加 ](#add-cdn) を参照してください。 |
+| 6 | Edge Delivery サイトの CDN の設定 | [CDN 設定の追加 ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) を参照してください。 |
+| 7 | 運用開始 | 運用開始の最後の手順を完了します。 |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
-## サポートチケットを記録 {#eds-support-ticket}
+## サポートチケットのログ {#eds-support-ticket}
 
 {{support-ticket}}
 

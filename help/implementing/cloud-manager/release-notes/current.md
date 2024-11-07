@@ -1,18 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.10.0 のリリースノート
-description: AEM as a Cloud Service の Cloud Manager 2024.10.0 のリリースノートについて説明します。
+title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.11.0 のリリースノート
+description: AEM as a Cloud ServiceのCloud Manager 2024.11.0 のリリースについて説明します。
 feature: Release Information
 role: Admin
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
-workflow-type: ht
-source-wordcount: '569'
-ht-degree: 100%
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: db661281831dcb07491dca16e73e835b487814a6
+workflow-type: tm+mt
+source-wordcount: '799'
+ht-degree: 29%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.10.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.11.0 のリリースノート {#release-notes}
 
-このページは、AEM as a Cloud Service の Cloud Manager リリース 2024.10.0 のリリースノートです。
+AEM（Adobe Experience Manager）as a Cloud ServiceのCloud Manager 2024.11.0 のリリースについて説明します。
 
 >[!NOTE]
 >
@@ -20,53 +21,31 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service の Cloud Manager リリース 2024.10.0 のリリース日は 2024年10月3日（PT）です。
+AEM as a Cloud ServiceのCloud Manager 2024.11.0 のリリース日は 2024 年 11 月 7 日（PT）です。
 
-次回のリリースは 2024年11月14日（PT）に予定されています。
+次回の予定リリースは 2024 年 12 月 5 日（PT）です。
 
 ## 新機能 {#what-is-new}
 
-* <!-- BOTH CS & AMS --> Cloud Manager で使用される AEM アーキタイプバージョンがバージョン 26 に更新されました。[https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases) を参照してください
+* AEM Cloud Serviceの最新のEdge Delivery Servicesイノベーションを体験してください。サンドボックスプログラムで参照できるようになりました。 [ 詳細情報 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md#auto-creation) <!-- (CMGR-62319) -->
+* AEM Cloud Managerのドメイン設定ページに、名前でドメインをすばやく見つけることができる検索機能が追加されました。 検索フィールドにキーワードを入力すると、一致するドメインをフィルタリングして表示できるので、複数のドメインを効率的に管理しやすくなります。 さらに、ページには、「検証済み **、「未検証** などのステータスフィルターが用意されており、検索結果をさらに絞り込む **ことができます**。<!-- (CMGR-62615) -->
 
-<!-- (CMGR-59817) -->
-
-* <!-- CS ONLY --> 新しいカスタムドメインの追加時、以前の検証方法では長い DNS 検証プロセスが必要でした。アドビは、お客様向けにこのプロセスを簡略化しました。現在は、所有権の証明として機能する有効な SSL 証明書（EV または OV）を指定するだけ済みます。DNS の TXT レコードを更新する必要はなくなりました。
-
-  >[!NOTE]
-  >
-  >この機能は、お客様が管理する EV および OV 証明書にのみ適用されます。アドビが管理する DV 証明書には、引き続き CNAME レコードが必要です。
-
-  [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。
-
-  ![顧客が管理する EV/OV 証明書のドメイン検証](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
-
-* <!-- CS ONLY --> ネットワークインフラストラクチャを追加または編集する際、IP アドレスフィールドとネットワークマスクフィールドの値は、次のルールに従って検証されます。
-
-   * アドレス空間は、接続アドレス空間で定義されているアドレスと重複しないようにする必要があります。
-   * DNS アドレスは、接続アドレス空間で定義されているたネットワークマスクに属しているか、パブリックである必要があります。
-
-  ![ネットワークインフラストラクチャを追加ダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/network-infrastructure-add.png)
-
-* <!-- CS ONLY --> インデックス作成、可変コンテンツのインストール、およびジョブの変換のための環境デプロイメントログの形式が変更されています。
-
-  >[!NOTE]
-  >
-  >この変更は、段階的にロールアウトされる予定で、完了予定日は 2024年12月です。
-
-  ![実稼動カードへのデプロイ](/help/implementing/cloud-manager/release-notes/assets/deploy-to-production-card.png)
-
-  ログの形式は、次に示す単純なエントリから変更されます。
-
-  ![単純なエントリを表示するログファイル](/help/implementing/cloud-manager/release-notes/assets/log-file-simple-entry.png)
-
-  次のような JSON エントリになります。
-
-  ![JSON エントリを表示するログファイル](/help/implementing/cloud-manager/release-notes/assets/log-file-json-entry.png)
-
+![ ドメイン設定の「検索」フィールド ](/help/implementing/cloud-manager/assets/domain-settings-search.png)
 
 ## 早期導入プログラム {#early-adoption}
 
 Cloud Manager の早期導入プログラムに参加すると、今後の機能をテストする機会を得ることができます。
+
+### AEM ホーム {#aem-home}
+
+AEM ホームは、Adobe Experience Manager内のコンテンツ、アセット、サイトを管理するための新しい一元的な開始点です。 AEM ホームは、パーソナライズされたエクスペリエンスを提供するようにカスタマイズされており、ユーザーの役割と目標に基づいてAEM エコシステムをシームレスに移動するのに役立ちます。 ガイドとなるよう設計されており、望ましい結果を効率的に達成するための重要なインサイトと推奨されるアクションを提供します。 AEM ホームでは、明確なペルソナ駆動型のロードマップを提示することで、目的を達成するために必要な情報を素早く見つけ、すべてのAEM機能でより効率的で効果的なエクスペリエンスをサポートできます。
+
+AEM ホームでは、早期導入のお客様が利用できる、ワークフローの最適化、目標の優先順位付け、結果の促進につながる強化されたエクスペリエンスをまず紹介します。 オプトインすると、AEM ホームの発展を形作り、AEM コミュニティに最適なサービスを提供するための進化に影響を与えるフィードバックを提供できます。
+
+この新しい機能のテストおよびフィードバックの提供に関心がある場合は、Adobe IDに関連付けられたメールアドレスから [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) にメールを送信してください。 必ず次の情報を含めてください。
+
+* プロファイルに最適な役割：コンテンツ作成者、開発者、ビジネスオーナー、管理者、またはその他（説明を入力）。
+* プライマリ AEM アクセスサーフェス：AEM Sites、AEM Assets、AEM Forms、Cloud Manager、またはその他（説明を入力）。
 
 ### 独自の Git の導入 - GitLab と Bitbucket をサポートするようになりました {#gitlab-bitbucket}
 
@@ -82,12 +61,17 @@ Cloud Manager の早期導入プログラムに参加すると、今後の機能
 >
 >現在、標準のプルリクエストコード品質チェックは、GitHub でホストされるリポジトリ専用ですが、この機能を他の Git ベンダーに拡張する更新が進行中です。
 
-この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) にメールを送信します。使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
+この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) にメールを送信します。使用する Git プラットフォームと、プライベート/パブリックまたはエンタープライズリポジトリ構造のいずれを使用しているかをを必ず含めてください。—>
 
 
-<!-- ## Bug fixes
+## バグ修正
+
+* 最近のアップデートでは、SonarQube で、特定のケースでハードコードされたパスワードが検出されない問題が修正されました。 この修正には、拡張されたパターンチェックが含まれ、SonarQube のデフォルトの検出標準に従っています。<!-- CMGR-62682 -->
+* Cloud Managerで SSL 証明書を更新しようとすると、**[!UICONTROL SSL 証明書を表示および更新]** ダイアログボックスで **[!UICONTROL 更新]** をクリックすると、不明なエラーが表示されます。<!-- CMGR-62848 -->
+* Cloud Managerで SSL 証明書を更新すると、ドメインが同じでも、文字の大文字と小文字が異なる場合でも、「新しい証明書は既存のドメインに一致しません」というエラーで失敗します。 更新では、RFC 標準に合わせて、ドメインが大文字と小文字を区別せずに認識されるようになりました。<!-- CMGR-62844 -->
+* Cloud Managerでは、ドメイン設定への外部キーリンクがないので、IP 許可リストバインディングが実行中の状態のままでした。 この修正により、関連するドメイン設定への IP許可リストバインディングのリンクが正しくなるようになりました。<!-- CMGR-62838 -->
+* Cloud Managerは、SSL 証明書の OCSP （Online Certificate Status Protocol）ステータスを検証します。 Adobeでは、Cloud Managerを通じてインストールする前に、`openssl verify -untrusted intermediate.pem certificate.pem` などのツールを使用して証明書の整合性をローカルで検証することもお勧めします。 詳しくは、[SSL 証明書の要件ドキュメント ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates#requirements) を参照してください。<!-- CMGR-62341  -->
 
 
 
-
-## Known issues {#known-issues} -->
+<!-- ## Known issues {#known-issues} -->
