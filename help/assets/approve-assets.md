@@ -3,16 +3,16 @@ title: Experience Managerでのアセットの承認
 description: ' [!DNL Experience Manager] でアセットを承認する方法について説明します。'
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 3%
+source-wordcount: '713'
+ht-degree: 5%
 
 ---
 
 # [!DNL Experience Manager] でのアセットの承認
 
-| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ブランドマネージャーとマーケターは、ブランドアセットを厳格に管理しています。 アセットの承認済みの最新バージョンのみを使用できるので、すべてのチャネルとアプリケーションでブランドの一貫性を確保できます。
@@ -96,13 +96,15 @@ AEM Assetsでアセットを承認してアセット管理を効率化し、ア�
 
 1. アセットを選択し、「**[!UICONTROL 詳細]**」をクリックします。
 
-1. 右側のパネルに表示されている「レンディション」アイコンをクリックします。
+1. 右側のパネルに表示されている「Dynamic Media」アイコンをクリックします。
 
-1. 「**[!UICONTROL Dynamic]**」セクションの「**[!UICONTROL Dynamic Media with OpenAPI]**」を選択します。
+1. **[!UICONTROL Dynamic Media]** パネルにある「**[!UICONTROL Dynamic Media with OpenAPI]**」を選択します。
 
 1. **[!UICONTROL URL をコピー]** をクリックして、アセットの配信 URL をコピーします。
-   ![ 配信 URL をコピー ](/help/assets/assets/copy-delivery-url.png)
+   ![ 動的レンディション ](/help/assets/assets/dm-with-openapi-non-image-assets.png)
 
    >[!NOTE]
    >
    >承認済みアセットの配信 URL をコピーするオプションは、Assets ビューでのみ使用できます。
+
+Dynamic Media パネル内に表示されるその他のレンディションについて詳しくは、[Dynamic Media レンディションの表示とダウンロード ](/help/assets/renditions.md#view-download-dm-renditions) を参照してください。

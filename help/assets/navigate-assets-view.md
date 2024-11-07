@@ -4,16 +4,16 @@ description: ' [!DNL Assets view] のユーザーインターフェイスとナ�
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 98%
+source-wordcount: '998'
+ht-degree: 86%
 
 ---
 
 # ファイルおよびフォルダーへの移動とアセットの表示 {#view-assets-and-details}
 
-| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 <!-- TBD: Give screenshots of all views with many assets. Zoom out to showcase how the thumbnails/tiles flow on the UI in different views. -->
@@ -34,7 +34,7 @@ ht-degree: 98%
 
 ## アセットとフォルダーの参照と表示 {#browse-repository}
 
-メインユーザーインターフェイスまたは左側のサイドバーからフォルダーを参照できます。Experience Manager Assets で、コンテンツを参照または検索する際に、フォルダーのサムネールにフォルダーのコンテンツの視覚的なプレビューが表示されるようになりました。これにより、AEM Assets リポジトリ内で使用可能なアセットの検出性が向上します。このフォルダーのサムネールを確認することで、AEM Assets リポジトリのフォルダー内の特定のアセットの検索にかかる時間を節約できます。
+メインユーザーインターフェイスまたは左側のサイドバーからフォルダーを参照できます。Experience Manager Assetsでは、コンテンツの参照時や検索時に、フォルダーのサムネールにフォルダーコンテンツの視覚的なプレビューが表示されます。 これにより、AEM Assets リポジトリ内で使用可能なアセットを見つけやすくなります。 このフォルダーのサムネールを確認することで、AEM Assets リポジトリのフォルダー内の特定のアセットの検索にかかる時間を節約できます。
 フォルダー内のアセットの参照時には、このインターフェイスを使用してアセットのサムネールを表示し、リポジトリを視覚的に参照したり、アセットの詳細を表示して目的のアセットをすばやく見つけたりできます。左側のサイドバーで使用できるオプションは次のとおりです。
 
 * [マイワークスペース](/help/assets/my-workspace-assets-view.md)：Assets には、ウィジェットを提供するカスタマイズ可能なワークスペースが含まれるようになりました。このワークスペースは、Assets ユーザーインターフェイスの主要な領域と、最も関連性の高い情報に簡単にアクセスできます。このページは、作業項目の概要を示し、主要なワークフローにすばやくアクセスできるワンストップソリューションとして機能します。これらのオプションにより簡単にアクセスできるので、効率とコンテンツ速度が向上します。
@@ -77,9 +77,9 @@ ht-degree: 98%
 
 アセットをプレビューするには、目的のアセットを選択し、上部のツールバーで[!UICONTROL 詳細]アイコン（![詳細アイコン](assets/do-not-localize/edit-in-icon.png)）をクリックします。アセットを表示できるだけでなく、詳細なメタデータを表示したり、その他のアクションを実行したりできます。
 
-![アセットをプレビュー](assets/preview-asset-2.png)
+![アセットをプレビュー](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**：リポジトリ内の現在のフォルダーまたは現在の検索結果に戻ります **B**：プレビューしているファイルの名前と形式 **C**：タスクを割り当てます **D**：高度なメタデータ **E**：キーワードとスマートタグ **F**：コメントと注釈 **G**：選択したアセットに関連するタスクを表示します **H**：バージョンを表示および管理します **I**：画像のレンディションを表示します **J**：画像を編集します **K**：基本メタデータ **L**：高度なメタデータ **M**：キーワードとスマートタグ **N**：より詳細にプレビューします。ズーム、フルスクリーン、その他のオプション **O**：フォルダーに戻ることなく、現在のフォルダー内の前または次のアセットに進みます
+**A**：リポジトリー内の現在のフォルダーまたは現在の検索結果に戻ります **B**：プレビューしているファイルの名前と形式 **C**：タスクを割り当て **D**：詳細メタデータ **E**：キーワードとスマートタグ **F**：コメントと注釈 **G**：選択したアセットに関連するタスクを表示します **H** **** **：バージョンを表示および管理** ****：画像のレンディションをを含む SmartView Dynamic Mediaレンディション OpenAPI 機能レンディションを使用した切り抜きとDynamic Media。 **L**：基本メタデータ **M**：詳細メタデータ **N**：キーワードとスマートタグ **O**：フォルダーに戻ることなく、現在のフォルダー内の前または次のアセットに進みます **P**：より詳細なプレビュー。 ズーム、全画面表示、その他のオプション。
 
 また、ビデオをプレビューすることもできます。
 
