@@ -4,10 +4,10 @@ description: ここでは、Screens コンテンツプロバイダーを使用�
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: bdb82da7463bc6b5265a7271072fe3a771fbb380
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 100%
+source-wordcount: '382'
+ht-degree: 96%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 
 1. Screens as a Cloud Service 用のプログラムを選択し、次に示すアイコンをクリックして、その特定のプログラムの Cloud Manager の&#x200B;**概要**&#x200B;ページを開きます。
 
-   ![Cloud Manager の概要ページのアイコンは、ツールバーの左端に表示されます。](/help/screens-cloud/assets/configure/screens-cp-1.png)
+   ![Cloud Managerの概要ページのアイコンは、ツールバーの左端に表示されます。](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
    >プログラムをまだ作成していない場合は、[Screens as a Cloud Service への初回ログイン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=ja)を参照してください。このトピックでは、Cloud Manager で Screens as a Cloud Service 用のプログラムを追加する手順を説明します。
