@@ -4,10 +4,10 @@ description: ユニバーサルエディターの 2024.11.05 リリースのリ�
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 4bccfcb877c8b1a947b15935aa82ecb005e62213
+source-git-commit: e7839425012a101321b19d728f0ea3f0272dc394
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 23%
+source-wordcount: '151'
+ht-degree: 29%
 
 ---
 
@@ -24,9 +24,4 @@ ht-degree: 23%
 
 * **ユニバーサルエディターサービスのロールバックパイプライン：** ロールバックパイプラインを使用すると、Adobeのオンコールチームは、必要に応じて特定のブランチにユニバーサルエディターサービスをすばやく戻し、問題が発生した場合に迅速に回復して高可用性を確保できます。
 * **コンテンツ操作のための最適化された API 呼び出し：** ユニバーサルエディターサービスは、SlingPostServlet を介した作成、コピー、移動操作に、HTMLAPI の代わりに JSON API を使用するようになり、応答の解析を効率化します。
-
-## 6.5 のサポートのための早期導入プログラム {#early-adoption}
-
-ユニバーサルエディターが、早期導入プログラムの一環としてAEM 6.5 を使用する際のヘッドレスユースケースで利用できるようになりました。
-
-この新機能のテストやフィードバックの共有に関心がある場合は、Adobe IDに関連付けられたメールアドレスからAdobeのカスタマーサクセスマネージャーにメールを送信してください。
+* **AEM 6.5 でのユニバーサルエディターのサポート：** ユニバーサルエディターは、（AEM 6.5 を使用する場合 [ ヘッドレスユースケースで使用できるようになりました。](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction.html)
