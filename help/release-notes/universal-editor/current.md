@@ -7,7 +7,7 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 4bccfcb877c8b1a947b15935aa82ecb005e62213
 workflow-type: tm+mt
 source-wordcount: '188'
-ht-degree: 0%
+ht-degree: 23%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->Adobe Experience Manager as a Cloud Serviceの最新のリリースノートについては、[ このページ ](/help/release-notes/release-notes-cloud/release-notes-current.md) を参照してください。
+>Adobe Experience Manager as a Cloud Service の最新のリリースノートについては、[このページ](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
 ## 新機能 {#what-is-new}
 

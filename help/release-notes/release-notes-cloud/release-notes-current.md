@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
 workflow-type: tm+mt
 source-wordcount: '1514'
-ht-degree: 58%
+ht-degree: 86%
 
 ---
 
@@ -46,7 +46,7 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 
 **最新化されたページイベント**
 
-次のAEM Sites ページイベントは、AEM as a Cloud Service Eventing Platform に基づく外部的に消費されるイベントとして使用できるようになりました。 イベントはAdobe I/Oを介して処理し、外部プロセスとやり取りできます。
+次の AEM Sites ページイベントは、AEM as a Cloud Service イベンティングプラットフォームに基づく外部で消費可能なイベントとして使用できるようになりました。イベントは Adobe I/O を介して処理され、外部プロセスとやり取りできます。
 * ページが公開されました
 * ページが非公開にされました
 * ページが削除されました
@@ -57,9 +57,9 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 
 AEM の新機能を通じて GenAI を活用し、[バリエーションを生成](/help/generative-ai/generate-variations.md)し、クラウドサービスでアクセスできるようになりました。バリエーションを生成は、生成 AI を使用してコンテンツの作成を生成し拡張するのに役立ちます。プログラムでの検討については、アドビのアカウントチームにお問い合わせください。
 
-**コンテンツフラグメント配信用AEM REST OpenAPI**
+**コンテンツフラグメント配信用の AEM REST OpenAPI**
 
-コンテンツフラグメント配信用の [AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) がAEM as a Cloud Serviceで使用できるようになりました。
+[コンテンツフラグメント配信用の AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) が AEM as a Cloud Service で使用できるようになりました。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -73,27 +73,27 @@ Dynamic Media アカウントで AI 生成のキャプションサポートに�
 
 ### アセットビューの新機能 {#assets-view-new-features}
 
-**予定レポート**
+**スケジュールされたレポート**
 
-Assets ビューで、繰り返しスケジュールまたは将来の日付にレポートを自動的に生成できるようになり、データ駆動型のインサイトを明らかにする労力を軽減できます。
+繰り返しスケジュールまたは今後の日付で、アセットビューでレポートを自動的に生成できるようになったので、データに基づくインサイトの発見が容易になりました。
 
-![ 予定レポート – ](/help/assets/assets/scheduled-reports-tab.png)
+![スケジュールされたレポート](/help/assets/assets/scheduled-reports-tab.png)
 
 ### コンテンツハブの新機能 {#content-hub-new-features}
 
-**ライセンス済みアセットのデジタル著作権管理**
+**ライセンス済みアセットの Digital Rights Management**
 
 Content Hubのユーザー向けライセンスアセットに DRM を活用することで、ライセンスのコンプライアンスを向上させ、ライセンス条項を含むアセットを共有するリスクを最小限に抑えることができるようになりました。このため、ユーザーは、ライセンス条項を確認して同意してから、ライセンス条項をダウンロードする必要があります。 詳しくは、[Content Hubでのライセンス済みアセットの管理 ](/help/assets/manage-licensed-assets-on-content-hub.md) を参照してください。
 
-![download-multiple-license](/help/assets/assets/download-multiple-license.png)
+![複数ライセンスをダウンロード](/help/assets/assets/download-multiple-license.png)
 
 **アセットカードのメタデータ設定**
 
 Content Hubでは、アセットカードに表示する必要がある主要なメタデータフィールドを、最大 6 つのフィールドまで設定できるようになりました。 詳しくは、[Content Hubの設定 ](/help/assets/configure-content-hub-ui-options.md#asset-card) のアセットカードの節を参照してください。
 
-![ アセットカード上の主要なメタデータ ](/help/assets/assets/asset-card-key-metadata.png)
+![アセットカードの主なメタデータ](/help/assets/assets/asset-card-key-metadata.png)
 
-**期限切れアセットの表示とダウンロードの設定**
+**有効期限切れのアセットの表示とダウンロードの設定**
 
 管理者は、有効期限切れのアセットをコンテンツハブに表示する必要があるかどうかを制御できるようになりました。期限切れのアセットを表示可能にすると、ユーザーがダウンロードできるかどうかを定義することもできます。 詳しくは、[Content Hubの設定 ](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) の「期限切れのAssets」の節を参照してください。
 
@@ -157,27 +157,27 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 >
 >この設定は、`/apps`、`/libs`、`/mnt/overlay`、`/mnt/override` にあるすべての Coral フォームまたは Foundation フォームでサポートされているわけではありません。
 
-### 高度なネットワークオプションを使用したセルフサービスログ転送 {#log-forwarding}
+### 高度なネットワークオプションを備えたセルフサービスログ転送 {#log-forwarding}
 
-AEM（Apache/Dispatcherを含む）および CDN ログはCloud Managerからダウンロードできますが、多くの組織では、これらのログを優先されるログ先にストリーミングすると便利です。 AEMは、Azure Blob Storage、Datadog、HTTPS、Elasticsearch（および OpenSearch](/help/implementing/developing/introduction/log-forwarding.md)、Splunk への [ ログ転送）をサポートするようになりました。 AEM ログは、オプションで、専用の IP アドレスを使用するなどの高度なネットワーク設定を介して転送できます。
+AEM（Apache／Dispatcher を含む）および CDN ログは Cloud Manager からダウンロードできますが、多くの組織では、これらのログを優先されるログの宛先にストリーミングすることが有益であると考えられています。AEM では、Azure Blob Storage、Datadog、HTTPS、Elasticsearch（および OpenSearch）、Splunk への[ログ転送](/help/implementing/developing/introduction/log-forwarding.md)がサポートされるようになりました。AEM ログは、オプションで、専用 IP アドレスを使用するなどの高度なネットワーク設定を介して転送できます。
 
-この機能は、ユーザーがセルフサービス方式で設定し、[Config パイプライン ](/help/operations/config-pipeline.md) を使用してデプロイします。
+この機能は、ユーザーがセルフサービス方式で設定し、[設定パイプライン](/help/operations/config-pipeline.md)を使用してデプロイします。
 
-### ビジネスユーザー向けのパイプラインを使用しない URL リダイレクト {#pipeline-free-redirects}
+### ビジネスユーザー向けのパイプライン不要の URL リダイレクト {#pipeline-free-redirects}
 
-ブラウザーサイドのリダイレクトは、web ページが停止や移動などのシナリオに使用すると便利です。 [ パイプラインを使用しない URL リダイレクト ](/help/implementing/dispatcher/pipeline-free-url-redirects.md) を使用すると、Apache 書き換えマップファイルをAEMの公開場所に配置できます。そこでファイルが自動的に読み込まれるので、ファイルをソースコントロールにコミットしたり、Cloud Manager パイプラインを開始したりする必要はありません。
+ブラウザーサイドのリダイレクトは、web ページの削除や移動があった場合など、様々なシナリオで役立ちます。[パイプライン不要の URL リダイレクト](/help/implementing/dispatcher/pipeline-free-url-redirects.md)を使用すると、Apache 書き換えマップファイルを AEM パブリッシュの場所に配置して、自動的に読み込むことができます。ファイルをソース管理にコミットしたり、Cloud Manager パイプラインを開始したりする必要はありません。
 
-書き換えファイルを公開するオプションには、ファイルをアセットとしてアップロードする、ACS Commons 書き換えマップマネージャを使用する、カスタムユーザーインターフェイスを操作するなどがあります。
+書き換えファイルを公開するオプションには、アセットとしてアップロードする、ACS Commons 書き換えマップマネージャーを使用する、カスタムユーザーインターフェイスを操作するなどがあります。
 
 ### RDE の設定パイプライン {#config-pipeline-rdes}
 
-迅速な開発環境は、クラウド環境でコードと設定を迅速にデプロイおよびテストするための強力なツールです。 RDE では、トラフィックフィルタールールやリクエスト/応答変換などの CDN 設定、ログ転送およびその他の設定オプションなど、[ 設定 YAML ファイルの同期 ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) をサポートするようになりました。 詳しくは、サポートされている設定オプションの [ 完全なリストを参照 ](/help/operations/config-pipeline.md) してください。
+迅速な開発環境は、クラウド環境でコードと設定を迅速にデプロイおよびテストするための強力なツールです。RDE では、トラフィックフィルタールールやリクエスト／応答変換などの CDN 設定、ログ転送、その他の設定オプションを含む[設定 YAML ファイルの同期](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)がサポートされるようになりました。詳しくは、サポートされている設定オプションの[完全なリストを参照](/help/operations/config-pipeline.md)してください。
 
-### 新製品プロファイル {#new-product-profiles}
+### 新しい製品プロファイル {#new-product-profiles}
 
-新しいAEM環境が作成されると、製品プロファイルがAdobe Admin Consoleに自動的に表示され、管理者はライセンス取得済みのソリューションおよび機能へのアクセス権を割り当てることができます。
+新しい AEM 環境を作成すると、製品プロファイルが Adobe Admin Console に自動的に表示され、管理者はライセンス済みソリューションと機能へのアクセスを割り当てることができます。
 
-新しい環境に、更新された一連の製品プロファイルが含まれるようになりました。これにより、Adobe Developer Consoleでの API 認証情報の生成などの今後の機能と互換性を持つようになります。 既存の環境は、将来のリリースで製品プロファイルを更新できるようになります。 [詳細情報](/help/onboarding/aem-cs-team-product-profiles.md)。
+新しい環境に更新済み製品プロファイルのセットが含まれるようになり、Adobe Developer Console での API 認証情報の生成などの今後の機能と互換性を持つようになりました。既存の環境では、今後のリリースで製品プロファイルを更新できるようになります。[詳細情報](/help/onboarding/aem-cs-team-product-profiles.md)。
 
 ### 新しい AEM Developer Console（パブリックベータ版） {#aem-developer-console-beta}
 
