@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 57a9f67c7c570c63809f19f2f737dcaa612ee836
+source-git-commit: 8406caedaec4236d9fb2a0ce3e97f96417186c45
 workflow-type: tm+mt
-source-wordcount: '5776'
+source-wordcount: '5780'
 ht-degree: 98%
 
 ---
@@ -948,6 +948,7 @@ ht-degree: 98%
       + [表形式のデータとスプレッドシート](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [分類データの管理](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [WYSIWYG とドキュメントベースのブロック](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
+      + [DAM Assetsを使用したページ](/help/edge/wysiwyg-authoring/dam-assets.md)
       + [WIP Sites 機能](/help/edge/wysiwyg-authoring/wip-features.md)
    + ドキュメントベースのオーサリング {#document-authoring}
       + [オーサリング](/help/edge/docs/authoring.md)
