@@ -4,10 +4,10 @@ description: AEM as a Cloud Service チームおよび製品プロファイル�
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 0ff50aa77711d70d372a1f43ad7336c39ab1167c
+source-git-commit: c8534ddf84998377ee63575403417165ccec2dbd
 workflow-type: tm+mt
-source-wordcount: '1821'
-ht-degree: 39%
+source-wordcount: '2059'
+ht-degree: 34%
 
 ---
 
@@ -275,6 +275,27 @@ AEM Sitesを含むプログラムで環境をプロビジョニングした組�
 >
 >* AEM 製品プロファイルについて詳しくは、[AEM 製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-aem.md)を参照してください。
 >* オンボーディングプロセスについて詳しくは、[オンボーディングジャーニー](/help/journey-onboarding/overview.md)を参照してください。
+
+### 既存の環境の製品プロファイルの追加 {#adding-product-profiles-for-existing-environments}
+
+2024 年 11 月上旬より前に作成された環境では、上記の節で説明した組織レベルの製品インスタンスおよび特定の製品プロファイルが欠落している可能性があります。 既存の製品プロファイルには、サービスの切り替えもありません。 これらの製品プロファイルを更新することをお勧めします。これは、今後 API にアクセスするための前提条件です。
+
+プログラム内の 1 つ以上の環境で製品プロファイルの更新が必要な場合、Cloud Managerでは以下の通知が表示されます。 環境は、製品プロファイルを更新する前に、最新バージョンのAEMである必要があります。
+
+![ 製品プロファイルの最新化 ](/help/onboarding/assets/modernize-product-profiles.png)
+
+**製品プロファイルを追加** ボタンをクリックすると、メニューが開き、プログラムで使用可能なすべての環境または個々の環境に新しい製品プロファイルを追加するためのオプションが表示されます。
+
+![ 環境の置換 ](/help/onboarding/assets/choose-env-r.png)
+
+**すべての環境** をクリックして、新しい製品プロファイルをプログラム内のすべての環境に追加します。 または、「**個々の環境**」をクリックして、選択した環境に新しい製品プロファイルを追加します。これにより、ユーザーが環境のリストページに移動し、「その他のオプション **アイコンから** 製品プロファイルを追加 **アクションを選択でき** す。
+
+![ 個別環境 ](/help/onboarding/assets/individual-environments.png)
+
+プログラムの概要ページの「環境」セクションに移動し、環境に対応する「その他のオプション」アイコンをクリックして、「製品プロファイルを追加」を選択することで、選択した環境に製品プロファイルを追加することもできます。
+
+環境のステータスには、新しい製品プロファイルの追加中は「製品プロファイルの追加」と表示され、処理が完了すると、その後「実行中」と表示されます。
+
 
 ## Cloud Manager 製品プロファイル {#cloud-manager-product-profiles}
 
