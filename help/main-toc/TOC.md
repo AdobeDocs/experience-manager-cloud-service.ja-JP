@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8406caedaec4236d9fb2a0ce3e97f96417186c45
+source-git-commit: 69428ec9709dae212e568e6100b4451ea3c67289
 workflow-type: tm+mt
-source-wordcount: '5780'
+source-wordcount: '5782'
 ht-degree: 98%
 
 ---
@@ -362,7 +362,7 @@ ht-degree: 98%
          + [ユニバーサルエディターを使用したコンテンツのオーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [ユニバーサルエディターを使用したコンテンツの公開](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [ユニバーサルエディターでのコンテンツの継承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
-         + [ページテンプレート](/help/edge/wysiwyg-authoring/templates.md)
+         + [ページテンプレート](/help/sites-cloud/authoring/universal-editor/templates.md)
       + フラグメント {#fragments}
          + [コンテンツフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [エクスペリエンスフラグメント](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -454,6 +454,7 @@ ht-degree: 98%
             + [翻訳のベストプラクティス](/help/sites-cloud/administering/translation/best-practices.md)
       + [タグの管理](/help/sites-cloud/administering/tags.md)
       + [ワークフローの管理](/help/sites-cloud/administering/workflows-administering.md)
+      + [テンプレートコンソール](/help/sites-cloud/administering/templates-console.md)
    + AEM as a Cloud Service との統合 {#integrations}
       + [Adobe Analytics との統合](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Adobe Analytics 自動設定との統合](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)

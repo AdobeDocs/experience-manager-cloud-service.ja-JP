@@ -4,13 +4,13 @@ description: 作業中のAEM Sitesの機能とユースケースを確認し、E
 solution: Experience Manager Sites
 feature: Edge Delivery Services
 role: User
-source-git-commit: 50421f55444f61d64cd2ecd046bd7bc5f1f859e3
+exl-id: 21745f53-a7ef-4eec-9170-b267c2f4314e
+source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 4%
 
 ---
-
 
 # Edge Delivery Servicesの作業中のサイト機能 {#wip-sites-features}
 
@@ -35,7 +35,7 @@ AEM SitesでEdge Delivery Servicesを使用する場合、ほとんどの Sites 
 | [ 言語コピー ](/help/sites-cloud/administering/translation/overview.md) | 部分的に使用可能 | コンポーネントはコンテンツを継承しますが、継承を元に戻すことができるのはページレベルのみです | [ ユニバーサルエディターでのコンテンツの継承 ](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [ マルチサイト管理 ](/help/sites-cloud/administering/msm/overview.md) | 部分的に使用可能 | コンポーネントはコンテンツを継承しますが、継承を元に戻すことができるのはページレベルのみです | [ ユニバーサルエディターでのコンテンツの継承 ](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [ローンチ](/help/sites-cloud/authoring/launches/overview.md) | 一部利用可能 | コンポーネントはコンテンツを継承しますが、継承を元に戻すことができるのはページレベルのみです | [ ユニバーサルエディターでのコンテンツの継承 ](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
-| [ページテンプレート](/help/sites-cloud/authoring/page-editor/templates.md) | 準備中 | テンプレートから作成されたページは、元のテンプレートから独立したコピーです。 | [ ユニバーサルエディターでのページテンプレートの使用 ](/help/edge/wysiwyg-authoring/templates.md) |
+| [ページテンプレート](/help/sites-cloud/authoring/page-editor/templates.md) | 準備中 | テンプレートから作成されたページは、元のテンプレートから独立したコピーです。 | [ ユニバーサルエディターでのページテンプレートの使用 ](/help/sites-cloud/authoring/universal-editor/templates.md) |
 | [Context Hub とターゲティング ](/help/sites-cloud/authoring/personalization/overview.md) | 使用不可 |  |  |
 | [タイムワープ](/help/sites-cloud/authoring/launches/preview.md) | 使用不可 |  |  |
 | [関連コンテンツ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#associated-content-browser) | 使用不可 |  |  |

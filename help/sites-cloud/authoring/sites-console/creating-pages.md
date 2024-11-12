@@ -5,8 +5,8 @@ exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 6e13244d7ba7bb6e7a51525b66274427fe21d664
-workflow-type: ht
+source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
+workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 1. ウィザードの最初のステージで、次のいずれかを実行できます。
 
    * 新しいページの作成に使用するテンプレートを選択し、「**次へ**」を選択して続行するか、「**キャンセル**」を選択してプロセスを中止します。
-   * テンプレートは、[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)と[ユニバーサルエディター](/help/edge/wysiwyg-authoring/templates.md)の両方でサポートされています。
+   * テンプレートは、[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)と[ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/templates.md)の両方でサポートされています。
 
    ![新しいページのテンプレートの選択](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 
