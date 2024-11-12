@@ -4,9 +4,9 @@ description: Edge Delivery Servicesを使用してCloud Manager プロジェク�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3941b7f97d434946a3cb796633f306b89e68c0a4
+source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '752'
 ht-degree: 10%
 
 ---
@@ -32,7 +32,7 @@ AEM as a Cloud ServiceのCloud Managerを使用すると、プロジェクトの
 
 Adobe Experience Manager Sitesの一部としてライセンスをEdge Delivery Servicesしている場合は、Cloud Managerで直接Edge Delivery Servicesを使用してサイトをオンボーディングし、[ ガイド付きのセルフサービスエクスペリエンスを使用して ](/help/implementing/cloud-manager/managing-code/private-repositories.md) 運用を開始できます。
 
-さらに、主要なワークフロー間の一貫性を確保しながら、すべてのAEM プロパティを管理できる統一されたエクスペリエンスにアクセスできます。 これには、ドメイン名の管理、SSL 証明書の管理、CDN マッピングが含まれます。
+さらに、主要なワークフロー間の一貫性を確保しながら、すべてのAEM プロパティを管理できる統一されたエクスペリエンスにアクセスできます。 これらのワークフローには、ドメイン名の管理、SSL 証明書の管理、CDN マッピングが含まれます。
 
 ## Edge Delivery ServicesにAdobeの推奨パスを使用するメリット {#recommended-path-eds}
 
@@ -74,12 +74,13 @@ Edge Delivery Servicesは、プロジェクトの開始方法に応じて、様�
 |   | タスク | 説明 |
 | --- | --- | --- |
 | 1 | 製品コラボレーションチャネルに参加 | **リクエストを今すぐ送信** をクリックすると、会社のチャネルを作成するためのリクエストがAdobeに送信されます。 チャネルが既に存在する場合は、会社のチャネルに転送されます。 |
-| 2 | 前提条件を完了 | **入門チュートリアルを表示** をクリックすると、[ 入門 – 開発者チュートリアル ](https://www.aem.live/developer/tutorial) に移動します。 |
+| 2 | 前提条件を完了 | [ はじめる前にチュートリアルを表示 ](https://www.aem.live/developer/tutorial) を参照してください。 |
 | 3 | Edge Delivery サイトを追加 | [Edge Delivery サイトの追加 ](#eds-add-site) を参照してください。 |
 | 4 | ドメインを追加 | [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。 |
 | 5 | SSL 証明書を追加 | [SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。 |
 | 6 | Edge Delivery サイトの CDN の設定 | [CDN 設定の追加 ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) を参照してください。 |
-| 7 | 運用開始 | 運用開始の最後の手順を完了します。 |
+| 7 | プッシュ検証の設定 | [ プッシュ検証の設定 ](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md) を参照してください。 |
+| 8 | 運用開始 | [ 運用開始チェックリスト ](/help/edge/docs/go-live-checklist.md) を参照してください。 |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 

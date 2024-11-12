@@ -4,17 +4,16 @@ description: 独自の実稼動 CDN を構築するためにプッシュ無効�
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-hide: true
-source-git-commit: 3941b7f97d434946a3cb796633f306b89e68c0a4
+source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '160'
 ht-degree: 2%
 
 ---
 
 # プッシュの無効化の設定
 
-プッシュ無効化を使用すると、作成者が行ったコンテンツ更新が公開時に管理コンテンツ配信ネットワーク（CDN）から自動的に削除されるので、最新のコンテンツのみが提供されます。
+プッシュの無効化は、作成者が行ったコンテンツ更新が公開時に管理コンテンツ配信ネットワーク（CDN）から自動的に削除されるようにします。 これにより、最新のコンテンツのみが提供されるようになります。
 
 システムは、特定の URL とキャッシュタグまたはキーに基づいてコンテンツをクリアし、古いバージョンがパージされるようにします。
 
@@ -28,3 +27,5 @@ ht-degree: 2%
 | `cdn.prod.type` | managed |   |
 
 構成シートに変更が加えられたら、[ 構成ツールを使用して構成シートをプレビューし、アクティブ化して ](/help/edge/docs/sidekick.md) 更新をSidekickする必要があります。
+
+[Cloud ManagerのEdge Delivery Servicesの概要 ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list) も参照してください。

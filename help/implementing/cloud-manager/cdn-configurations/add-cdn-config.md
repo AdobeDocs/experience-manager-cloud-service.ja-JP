@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 42b30c12f17106610cfb7f7b4c04c5ab703bab45
+source-git-commit: cd15fd36b8baf8e693ae449031a51fa1febefaee
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '440'
 ht-degree: 11%
 
 ---
@@ -31,7 +31,7 @@ Adobe管理の CDN で DV SSL 証明書を使用する場合、ACME 検証が有
 
    | ユースケース | ステップ |
    | --- | --- |
-   | Cloud Managerの *既存の* Edge Delivery サイトに CDN 設定を追加したいのですが、 | a.左側のメニューの **サービス** で、**Edge Delivery Sites** をクリックします。<br>b.Edge Delivery テーブルで、ドメインが関連付けられていない行の最後にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。<br>c.**CDN を設定** をクリックします。  ![Edge Delivery サイトの CDN を設定をクリックする ](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png) |
+   | Cloud Managerの *既存の* Edge Delivery サイトに CDN 設定を追加したいのですが、 | a.左側のメニューの **サービス** で、**Edge Delivery Sites** をクリックします。<br>b.Edge Delivery テーブルで、ドメインが関連付けられていない行の最後にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。<br>c.**CDN を設定** をクリックします。 |
    | Cloud Managerに CDN 設定を追加したいのですが、 | a.左側のメニューの **サービス** で、「**CDN 設定**」をクリックします。<br>b.CDN 設定ページの右上隅付近にある「**追加**」をクリックします。 |
 
 1. **CDN を設定** ダイアログボックスの **接触チャネル** ドロップダウンリストで、次のいずれかを選択します。
