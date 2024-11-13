@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: 2a7d46e91bbd6ca96bd8b7fd5d4d84cf69bdee36
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5524'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -398,7 +398,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ## 仮想プライベートネットワーク（VPN） {#vpn}
 
-VPN を使用すると、作成者、公開、またはプレビューインスタンスからオンプレミスインフラストラクチャまたはデータセンターに接続できます。これは、データベースへのアクセスを保護する場合などに役立ちます。また、VPN をサポートする CRM ベンダーなどの SaaS ベンダーに接続することもできます。
+VPN を使用すると、作成者、公開、またはプレビューインスタンスからオンプレミスインフラストラクチャまたはデータセンターに接続できます。これは、データベースへのアクセスを保護する場合などに役立ちます。また、VPN をサポートしている CRM ベンダーなどの SaaS ベンダーへの接続も可能になります。
 
 IPSec 技術を搭載したほとんどの VPN デバイスがサポートされています。[このデバイスのリストの **RouteBase の設定手順**&#x200B;の列にある情報を参照してください。](https://learn.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) 表の説明に従って、デバイスを設定します。
 
