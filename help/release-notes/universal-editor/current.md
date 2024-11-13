@@ -1,10 +1,10 @@
 ---
-title: ユニバーサルエディター 2024.11.12 リリースノート
-description: ユニバーサルエディターの 2024.11.12 リリースのリリースノートです。
+title: ユニバーサルエディター 2024.11.13 リリースノート
+description: ユニバーサルエディターの 2024.11.13 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 03ccad00e689052ada8cca976d6c385be01d3cc9
+source-git-commit: 98795cab471470442cf5c424a67ce2846cfe85dc
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 12%
@@ -12,9 +12,9 @@ ht-degree: 12%
 ---
 
 
-# ユニバーサルエディター 2024.11.12 リリースノート {#release-notes}
+# ユニバーサルエディター 2024.11.13 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2024 年 11 月 12 日リリースのリリースノートです。
+ユニバーサルエディターの 2024 年 11 月 13 日リリースのリリースノートです。
 
 >[!TIP]
 >
