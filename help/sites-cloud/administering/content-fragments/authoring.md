@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
-source-wordcount: '2685'
-ht-degree: 100%
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+workflow-type: tm+mt
+source-wordcount: '2704'
+ht-degree: 99%
 
 ---
 
@@ -60,6 +60,7 @@ ht-degree: 100%
    * 「**プロパティ**」タブでは、フラグメントの&#x200B;**タイトル**&#x200B;および&#x200B;**説明**&#x200B;または&#x200B;**バリエーション**&#x200B;を更新できます
 * 中央パネル：選択したバリエーションの実際のフィールドとコンテンツを表示します
    * コンテンツの編集が可能
+      * モデルで（複数として）設定した場合、様々なデータタイプを使用して、関連するフィールドのインスタンスを **追加** できます
    * 「**タブプレースホルダー**」フィールドは、ここに表示されるモデル内で定義され、ナビゲーションに使用できる場合、フィールドは、水平方向に表示されるか、ドロップダウンリストとして表示されます。
 
   >[!NOTE]

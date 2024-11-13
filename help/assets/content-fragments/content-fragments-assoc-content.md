@@ -5,10 +5,10 @@ exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 100%
+source-wordcount: '292'
+ht-degree: 93%
 
 ---
 
@@ -18,9 +18,9 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 >[!NOTE]
 >
->コンテンツフラグメントは Sites 機能ですが、 **Assets**.
+>コンテンツフラグメントは Sites 機能ですが、**Assets** として保存されます。
 >
->コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。この節では、主に **Assets** コンソールから主にアクセスされるエディターについて説明します。
+>コンテンツフラグメントのオーサリングには 2 つのエディターがあります。基本機能は同じですが、いくつかの違いがあります。 この節では、主に **Assets** コンソールから主にアクセスされるエディターについて説明します。
 
 ## 関連コンテンツの追加 {#adding-associated-content}
 

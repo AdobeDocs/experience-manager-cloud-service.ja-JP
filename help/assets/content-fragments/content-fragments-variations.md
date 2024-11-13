@@ -5,10 +5,10 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '2474'
-ht-degree: 100%
+source-wordcount: '2504'
+ht-degree: 98%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->コンテンツフラグメントは Sites 機能ですが、 **Assets**.
+>コンテンツフラグメントは Sites 機能ですが、**Assets** として保存されます。
 >
->コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。この節では、**Assets** コンソールから主にアクセスされるエディターを説明します。Sites のドキュメントを参照してください。 [コンテンツフラグメント — オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)：新しいエディターの詳細 ( 主に **コンテンツフラグメント** コンソール )。
+>コンテンツフラグメントのオーサリングには 2 つのエディターがあります。基本機能は同じですが、いくつかの違いがあります。 この節では、**Assets** コンソールから主にアクセスされるエディターを説明します。Sites のドキュメントを参照してください。 [コンテンツフラグメント — オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)：新しいエディターの詳細 ( 主に **コンテンツフラグメント** コンソール )。
 
 次から： **バリエーション** 「 」タブでは、次の操作を実行できます。
 
@@ -56,6 +56,8 @@ ht-degree: 100%
 以下の操作を実行できます。
 
 * 「**バリエーション**」タブでコンテンツを直接編集します。データタイプごとに異なる編集オプションが用意されています。次に例を示します。
+
+   * モデルで（複数として）設定した場合、様々なデータタイプを使用して、関連するフィールドのインスタンスを **追加** できます
 
    * **複数行テキスト**&#x200B;フィールドの場合は、[全画面表示エディター](#full-screen-editor)を開いて次の操作をおこなうこともできます。
 

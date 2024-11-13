@@ -1,26 +1,26 @@
 ---
 title: コンテンツフラグメントの操作の概要
-description: Adobe Experience Manager（AEM as a Cloud Service）のコンテンツフラグメントで、構造化コンテンツを作成して使用する方法を説明します。ヘッドレス配信、ページオーサリングに最適です。
+description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを使用して、ヘッドレス配信やページオーサリングに最適な構造化コンテンツを作成および使用できる方法について説明します。
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 96%
+source-wordcount: '1818'
+ht-degree: 98%
 
 ---
 
 # コンテンツフラグメントの操作の概要 {#overview-working-with-content-fragments}
 
-Adobe Experience Manager（AEM）as a Cloud Serviceを使用すると、コンテンツフラグメントで、ページに依存しないコンテンツのデザイン、作成、キュレーションおよび公開が可能になります。 [ ヘッドレス配信 ](/help/headless/what-is-headless.md) や [ ページオーサリング ](/help/sites-cloud/authoring/fragments/content-fragments.md) に最適な、複数の場所や複数のチャネルでの使用に対応したコンテンツを準備できます。
+Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツを設計、作成、キュレーション、公開できます。複数の場所、複数のチャネル上で使用可能なコンテンツを用意でき、[ヘッドレス配信](/help/headless/what-is-headless.md)や[ページオーサリング](/help/sites-cloud/authoring/fragments/content-fragments.md)に理想的です。
 
 >[!IMPORTANT]
 >
 >コンテンツフラグメントには、**コンテンツフラグメント**&#x200B;と **Assets** の 2 つのコンソールからアクセスできます。
 >
->また、コンテンツフラグメントをオーサリングするためのエディターは 2 つあります（両方のエディターは、両方のコンソールからアクセスできます）。
+>また、コンテンツフラグメントをオーサリングするためのエディターも 2 つあります。基本機能は同じですが、いくつかの違いがあります。 両方のエディターには、両方のコンソールからアクセスできます。
 >
 >この節では、**コンテンツフラグメント**&#x200B;コンソールと&#x200B;*新しい*&#x200B;コンテンツフラグメントエディターについて説明します。これらはヘッドレスコンテンツ配信用に開発されています（ただし、すべてのシナリオで使用できます）。
 >
