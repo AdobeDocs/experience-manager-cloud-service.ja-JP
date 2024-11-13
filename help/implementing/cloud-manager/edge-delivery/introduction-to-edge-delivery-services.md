@@ -4,9 +4,9 @@ description: Edge Delivery Servicesを使用してCloud Manager プロジェク�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
+source-git-commit: abd0fa0ea3e6e18187bcb60731ec6fe823a98e45
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '757'
 ht-degree: 10%
 
 ---
@@ -79,7 +79,7 @@ Edge Delivery Servicesは、プロジェクトの開始方法に応じて、様�
 | 4 | ドメインを追加 | [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。 |
 | 5 | SSL 証明書を追加 | [SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。 |
 | 6 | Edge Delivery サイトの CDN の設定 | [CDN 設定の追加 ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) を参照してください。 |
-| 7 | プッシュ検証の設定 | [ プッシュ検証の設定 ](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md) を参照してください。 |
+| 7 | プッシュ検証の設定 | [Edge Delivery サイトのプッシュ検証の設定 ](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md) を参照してください。 |
 | 8 | 運用開始 | [ 運用開始チェックリスト ](/help/edge/docs/go-live-checklist.md) を参照してください。 |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)

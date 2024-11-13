@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
+source-git-commit: 2652582ce2a740c958c10bea42c7674513706735
 workflow-type: tm+mt
-source-wordcount: '5794'
+source-wordcount: '5799'
 ht-degree: 98%
 
 ---
@@ -1149,6 +1149,7 @@ ht-degree: 98%
       + Edge Delivery サイト {#edge-delivery-sites}
          + [Cloud Manager の Edge Delivery Services の概要](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Cloud Manager への Edge Delivery サイトの追加](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+         + [Edge Delivery サイト用のプッシュ検証の設定](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [Cloud Manager での Edge Delivery サイトの管理](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + ドメイン設定 {#custom-domain-names}
          + [ドメイン設定の概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -1163,7 +1164,6 @@ ht-degree: 98%
          + [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + CDN 設定 {#cdn-configurations}
          + [CDN 設定の追加](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [プッシュ検証の設定](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md)
          + [CDN 設定の管理](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP 許可リスト {#ip-allow-lists}
          + [IP 許可リストの概要](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
