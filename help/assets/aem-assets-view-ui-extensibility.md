@@ -3,9 +3,10 @@ title: AEM Assets ビュー UI 拡張機能
 description: AEM Assets ビューの UI 拡張機能について説明します。 AEM Assets ビュー UI を使用すると、特定のビジネスニーズに合わせてカスタム UI コンポーネントを追加できます。
 feature: App Builder
 role: User, Developer
-source-git-commit: c1446200898102881a20508031d4853c61f7c964
+exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
+source-git-commit: e47a8fc65e58ae2ffff805966d7dae8c6edc7aac
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '581'
 ht-degree: 3%
 
 ---
@@ -26,7 +27,7 @@ AEM Assets ビューには、UI 拡張機能があります。 この機能を�
 次の方法で、Assets ビューにアクセスします。
 ![access-assets-view-ui](/help/assets/assets/access-assets-view.jpg)
 
-## 追加された UI 拡張コンポーネントがAssets ビュー UI のどこに表示されるか。 {#ui-extensibility-panel-assets-view}
+## UI 拡張機能は、「Assets ビュー」 UI のどこに表示されますか？ {#ui-extensibility-panel-assets-view}
 
 Assets ビュー内で、アセット、フォルダーまたはコレクションの詳細ページに移動します。 この詳細ページには、追加された UI 拡張機能を表示する専用のパネルがあります。
 ![ マイワークスペース ](/help/assets/assets/my-workspace-assets-view3.png)
@@ -52,5 +53,3 @@ Assets ビュー内で、アセット、フォルダーまたはコレクショ�
 1. ローカル環境を設定し、最初の UI 拡張機能を作成して、Assets ビューで UI 拡張機能を開発するプロセスを実際に体験します。 詳しくは [ ステップバイステップのAEM Assets ビュー拡張機能の開発 ](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/) を参照してください。
 1. AIO CLI を使用してアプリを設定し、基本的な拡張機能構造と必要なコードを生成します。 詳しくは、[AEM Assets ビューのコード生成 ](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/) を参照してください。
 1. 拡張機能をローカルでテストして、デプロイメント前に想定どおりに動作することを確認します。 拡張機能を完全に分離された環境または部分的に分離された環境で実行し、テスト用に拡張機能を実稼動環境のAEM Assets ビューに接続します。 詳しくは、[ トラブルシューティング - AEM Assets ビュー拡張機能 ](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/) を参照してください。
-
-
