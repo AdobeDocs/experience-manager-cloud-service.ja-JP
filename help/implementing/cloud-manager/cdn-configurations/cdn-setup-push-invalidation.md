@@ -4,9 +4,10 @@ description: 独自の実稼動 CDN を構築するためにプッシュ無効�
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
+exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
+source-git-commit: 0ac6856e8f3e664fcc7e3c08faac4c4f5c16af18
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '161'
 ht-degree: 2%
 
 ---
@@ -28,4 +29,4 @@ ht-degree: 2%
 
 構成シートに変更が加えられたら、[ 構成ツールを使用して構成シートをプレビューし、アクティブ化して ](/help/edge/docs/sidekick.md) 更新をSidekickする必要があります。
 
-[Cloud ManagerのEdge Delivery Servicesの概要 ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list) も参照してください。
+[Cloud ManagerのEdge Delivery To Do リストについて ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list) も参照してください。

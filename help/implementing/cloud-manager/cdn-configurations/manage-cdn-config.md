@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: cd15fd36b8baf8e693ae449031a51fa1febefaee
+source-git-commit: ea478d73307c3b57b0a12e35b247bb1c46b33595
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 14%
@@ -63,7 +63,7 @@ AdobeCloud Managerでは、いくつかの理由で、環境層（Publishまた�
 
 1. **CDN 設定を編集** ダイアログボックスで、それぞれのドロップダウンリストに 1 つ以上のオプションを設定します。
 
-このダイアログボックスに表示されるオプションは、**Adobeが管理する CDN** と **その他の CDN プロバイダー** （顧客が管理する CDN）のどちらを使用しているかによって異なります。
+   このダイアログボックスに表示されるオプションは、**Adobeが管理する CDN** と **その他の CDN プロバイダー** （顧客が管理する CDN）のどちらを使用しているかによって異なります。
 
 1. 「**更新**」をクリックします。
 
