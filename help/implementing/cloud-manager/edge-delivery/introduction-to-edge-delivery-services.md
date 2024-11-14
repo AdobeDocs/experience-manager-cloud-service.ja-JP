@@ -4,9 +4,9 @@ description: Edge Delivery Servicesを使用してCloud Manager プロジェク�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: abd0fa0ea3e6e18187bcb60731ec6fe823a98e45
+source-git-commit: 0fb5476b4cff9e26971696bd8352181a71e7b3e4
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '766'
 ht-degree: 10%
 
 ---
@@ -63,13 +63,13 @@ Edge Delivery Servicesは、プロジェクトの開始方法に応じて、様�
 >* Edge Delivery Servicesライセンスがプログラムに適用またはプログラムから削除されると、変更はパイプラインを実行しなくても、直ちに有効になります。
 
 
-## Edge Delivery To Do リストについて {#ed-todo-list}
+## Cloud ManagerのEdge Delivery To Do リストについて {#ed-todo-list}
 
 <!-- &#x2460; for "1" inside circle -->
 
-**Edge Delivery To-Do リスト** はオンボーディングタスクのチェックリストで、オンボーディング、Edge Delivery サイトの管理を [ 運用開始 ](/help/journey-onboarding/go-live-checklist.md) までガイドすることを目的としています。
+Cloud Managerの **Edge Delivery To-Do リスト** は、オンボーディングタスクのチェックリストで、Edge Delivery サイトのオンボーディング、管理を [ 運用開始 ](/help/journey-onboarding/go-live-checklist.md) までガイドします。
 
-![Edge Delivery サイトの To Do リスト ](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Cloud ManagerのEdge Delivery サイト to-do リスト ](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | タスク | 説明 |
 | --- | --- | --- |
