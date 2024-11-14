@@ -4,10 +4,10 @@ description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 04ec933125da9ee3c84ffd948b144581d31763d6
+source-git-commit: de73e38580895e3d8fe2029b59907d4c722556db
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 100%
+source-wordcount: '2576'
+ht-degree: 96%
 
 ---
 
@@ -499,3 +499,16 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
       * 型：boolean
 +++
 
+## バージョン 21 への Java ランタイム更新 {#java-runtime-update-21}
+
+AEM as a Cloud Serviceは Java 21 ランタイムに移行されます。 互換性を確保するには、次の調整を行う必要があります。
+
+### org.objectweb.asm {#org.objectweb.asm} の最小バージョン
+
+org.objectweb.asm の使用状況をバージョン 9.5 以降に更新して、新しい JVM ランタイムが確実にサポートされるようにします。
+
+### org.apache.groovy {#org.apache.groovy} の最小バージョン
+
+新しい JVM ランタイムが確実にサポートされるように、org.apache.groovy の使用方法をバージョン 4.0.22 以降に更新します。
+
+このバンドルは、AEM Groovy コンソールなどのサードパーティの依存関係を追加することで、間接的に含めることができます。
