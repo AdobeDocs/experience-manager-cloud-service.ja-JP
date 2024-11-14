@@ -1,8 +1,8 @@
 ---
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: f3502de1aebd44a056e1263b059e1588243f5845
 workflow-type: tm+mt
-source-wordcount: '1274'
-ht-degree: 93%
+source-wordcount: '1259'
+ht-degree: 92%
 
 ---
 # スニペット {#snippets}
@@ -214,7 +214,7 @@ ht-degree: 93%
 
 サポートチケットをログに記録するには、まず Cloud Manager に Edge Delivery サイトを登録する必要があります。Cloud Manager に web サイトを登録することは、すべての AEM as a Cloud Service ユーザーにとって推奨され、[様々なメリットをもたらします](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。サイトをまだ登録していない場合は、[Cloud Manager ドキュメント](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)を参照し、詳細を確認してください。
 
-Web サイトが Cloud Manager に登録されたら、Admin Console を使用して次のプロセスに従ってサポートチケットを送信します。
+**サポートチケットをログに記録するには：**
 
 1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/?support-tab=home#support)チケットを作成します。
 1. チケットのタイトルに「**Edge Delivery**」を追加します。
