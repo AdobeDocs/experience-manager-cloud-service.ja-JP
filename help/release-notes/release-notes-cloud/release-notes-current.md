@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 2b34b23c05ff125a24fb0969d0239a384e773011
 workflow-type: tm+mt
 source-wordcount: '1633'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -103,17 +103,17 @@ Dynamic Media アカウントで AI 生成のキャプションサポートに�
 
 ### AEM Formsの新機能 {#forms-new-features}
 
-* [ パネルレイアウトのナビゲーションボタンを使用したユーザーエクスペリエンスの向上 ](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)：水平タブ、垂直タブ、アコーディオン、ウィザードなどのナビゲーションボタンをパネルレイアウトに追加できるようになりました。 これらのボタンを使用すると、選択したパネルにフォーカスを合わせて、パネル間の切り替えが簡単になり、ユーザーエクスペリエンスが向上します。
+* [パネルレイアウトのナビゲーションボタンを使用したユーザーエクスペリエンスの向上](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)：水平タブ、垂直タブ、アコーディオン、ウィザードなどのナビゲーションボタンをパネルレイアウトに追加できるようになりました。これらのボタンを使用すると、選択したパネルに焦点を当てて、パネル間の切り替えを簡素化し、ユーザーエクスペリエンスを向上させることができます。
 
 <!--* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.-->
 
 ### AEM Forms の新しいプレリリース機能 {#forms-new-prerelease-features}
 
-* [ コアコンポーネントベースのアダプティブFormsのドラフトの自動保存 ](/help/forms/save-core-component-based-form-as-draft.md)：部分的に完了したフォームを自動的にドラフトとして保存する自動保存機能を利用できるようになりました。 後で戻って、同じデバイスまたは他のデバイスで入力を完了できます。この機能により、ユーザーはフォームへの入力を最初からやり直す必要がなくなるので、フォームの放棄が減り、組織のコンバージョン率が向上します。
+* [コアコンポーネントベースアダプティブフォームのドラフトの自動保存](/help/forms/save-core-component-based-form-as-draft.md)：一部が完了したフォームを自動的にドラフトとして保存する、自動保存機能を利用できるようになりました。後で戻って、同じデバイスまたは他のデバイスで入力を完了できます。この機能により、ユーザーはフォームへの入力を最初からやり直す必要がなくなるので、フォームの放棄が減り、組織のコンバージョン率が向上します。
 
-* [Adobe Sign範囲を簡単に更新 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms):AEM クラウド設定ページから直接Adobe Sign設定の範囲を変更できるので、既存の設定をすばやく簡単に更新できます。
+* [Adobe Sign スコープを簡単に更新](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms)：AEM クラウド設定ページから Adobe Sign 設定のスコープを直接変更できるので、既存の設定をよりすばやく簡単に更新できます。
 
-* [ アダプティブFormsでの非同期関数のサポート ](/help/forms/using-async-funct-in-rule-editor.md)：アダプティブフォームで非同期操作が必要な場合（外部プロセスやデータ取得の待機など）、カスタム関数を使用してこれらの操作を実装し、ルールエディターで設定できます。
+* [アダプティブフォームの非同期関数のサポート](/help/forms/using-async-funct-in-rule-editor.md)：アダプティブフォームで外部プロセスの待機やデータの取得などの非同期操作が必要な際は、カスタム関数を使用してこれらの操作を実装し、ルールエディターで設定できます。
 
 ### AEM Forms の早期アクセス機能 {#forms-new-early-access-features}
 
