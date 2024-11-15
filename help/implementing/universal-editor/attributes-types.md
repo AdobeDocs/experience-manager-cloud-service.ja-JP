@@ -4,10 +4,10 @@ description: ユニバーサルエディターに必要なデータ属性と項�
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 93%
+source-wordcount: '574'
+ht-degree: 72%
 
 ---
 
@@ -31,8 +31,8 @@ ht-degree: 93%
 | `data-aue-resource` | リソースに対する URN。[AEM のユニバーサルエディターを使用した概要ドキュメントページのインストルメント](getting-started.md#instrument-thepage)の節を参照してください。 |
 | `data-aue-prop` | リソースの属性。[AEM のユニバーサルエディターを使用した概要ドキュメントページのインストルメント](getting-started.md#instrument-thepage)の節を参照してください。 |
 | `data-aue-type` | [編集可能な項目のタイプ](#item-types)（テキスト、画像、参照など） |
-| `data-aue-filter` | どの参照が使用できるかをを定義します |
-| `data-aue-label` | エディターに表示される選択可能な項目のカスタムラベルを定義します。<br>`data-aue-model` が設定されている場合、ラベルはモデルを使用して取得されます |
+| `data-aue-filter` | 定義：<br> – 有効にする RTE 機能 <br>- コンテナに追加できるコンポーネント <br>- メディアタイプに追加できるアセット |
+| `data-aue-label` | エディターに表示される選択可能な項目のカスタムラベルを定義します |
 | `data-aue-model` | プロパティパネルでフォームベースの編集に使用するモデルを定義します |
 | `data-aue-behavior` | [実装の動作](#behaviors)を定義します。例えば、スタンドアロンのテキストや画像は、コンポーネントを模倣して移動または削除可能にすることもできます。 |
 
@@ -47,10 +47,14 @@ ht-degree: 93%
 | `component` | 編集可能はコンポーネントです。さらなる機能は追加しません。DOM の移動可能/削除可能な部分を示し、プロパティパネルとそのフィールドを開くために必要です | 必須 | n/a | n/a | オプション | オプション | n/a |
 | `reference` | 参照は編集可能で、例えば、コンテンツフラグメント、エクスペリエンスフラグメントまたは製品があります。 | 状況によって異なる<br>は以下を参照 | 状況によって異なる<br>以下を参照 | オプション<br>参照セレクターに渡されるコンテンツフラグメント、製品またはエクスペリエンスフラグメントのフィルター条件のリスト | オプション | オプション | n/a |
 
-ユースケースに応じて、`data-aue-prop` または `data-aue-resource` は必要な場合と不要な場合があります。次に例を示します。
+コンテンツの変更が書き込まれる場所を示すプライマリキーなので、`data-aue-resource` は常に必要です。
 
-* `data-aue-resource` は、GraphQL 経由でコンテンツフラグメントに対してクエリを実行し、リストをコンテキスト内で編集可能にする場合は必須です。
-* `data-aue-prop` は、参照されるコンテンツフラグメントのコンテンツをレンダリングするコンポーネントがあり、コンポーネント内の参照を更新する場合は必須です。
+* `data-aue-type` が設定されているタグで直接指定する必要はありません。
+* 設定されていない場合は、一番近い親の `data-aue-resource` 属性が使用されます。
+
+コンテキスト内で編集を行う場合は、`data-aue-prop` は必須です。ただし、オプションであるコンテナを除きます（コンテナがコンテンツフラグメントで、prop が複数参照フィールドを指すように設定されている場合）。
+
+* `data-aue-prop` は、`data-aue-resource` のプライマリキーに対して更新する属性です。
 
 ## 動作 {#behaviors}
 

@@ -4,10 +4,10 @@ description: ユニバーサルエディターへのアクセス権を取得す�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 395cb7b2e37c7358baa7ae07329f42bd5a560cb1
+source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 100%
+source-wordcount: '574'
+ht-degree: 96%
 
 ---
 
@@ -20,82 +20,7 @@ ht-degree: 100%
 >
 >すぐに例を確認したい場合は、[GitHub のユニバーサルエディターサンプルアプリ](https://github.com/adobe/universal-editor-sample-editable-app)を参照してください。
 
-## オンボーディング手順 {#onboarding}
-
-ユニバーサルエディターは任意のソースからコンテンツを編集できますが、このドキュメントでは AEM アプリを例として使用します。
-
-AEM アプリをオンボーディングし、ユニバーサルエディターを使用できるようにするには、手順がいくつかあります。
-
-1. [ユニバーサルエディターのコアライブラリを含めます。](#core-library)
-1. [必要な OSGi 設定を追加します。](#osgi-configurations)
-1. [ページを実装します。](#instrument-page)
-
-このドキュメントでは、これらの手順を説明します。
-
-## ユニバーサルエディターコアライブラリを含める {#core-library}
-
-ユニバーサルエディターで使用できるようにアプリの実装を行う前に、次の依存関係を含める必要があります。
-
-```javascript
-@adobe/universal-editor-cors
-```
-
-実装を有効にするには、以下の読み込みを `index.js` に追加する必要があります。
-
-```javascript
-import "@adobe/universal-editor-cors";
-```
-
-### 非 React アプリの代替 {#alternative}
-
-React アプリを実装していない場合や、サーバーサイドでのレンダリングが必要な場合は、ドキュメント本文に次のものを含める方法もあります。
-
-```html
-<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST" async></script>
-```
-
-常に最新バージョンをお勧めしますが、重大な変更があった場合には以前のバージョンのサービスを参照できます。
-
-* `https://universal-editor-service.experiencecloud.live/corslib/LATEST` - 最新の UE CORS ライブラリ
-* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - バージョン 2.x の最新の UE CORS ライブラリ
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - バージョン 2.1.x の最新の UE CORS ライブラリ
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1` - バージョン 2.1.1 の正確な UE CORS ライブラリ
-
-## 必要な OSGi 設定を追加 {#osgi-configurations}
-
-ユニバーサルエディターを使用して AEM コンテンツをアプリで編集するには、AEM 内で CORS と Cookie の設定を行う必要があります。
-
-次の [OSGi 設定は、AEM オーサリングインスタンスで設定する必要があります。](/help/implementing/deploying/configuring-osgi.md)
-
-* `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` の `SameSite Cookies = None`
-* `org.apache.sling.engine.impl.SlingMainServlet` の X-FRAME-OPTIONS: SAMEORIGIN ヘッダーを削除します
-
-### com.day.crx.security.token.impl.impl.impl.TokenAuthenticationHandler {#samesite-cookies}
-
-ログイントークン cookie は、サードパーティドメインとして AEM に送信する必要があります。したがって、SameSite cookie を明示的に `None` に設定する必要があります。
-
-このプロパティは、`com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` OSGi 設定で設定される必要があります。
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-          xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-          token.samesite.cookie.attr="None" />
-```
-
-### org.apache.sling.engine.impl.SlingMainServlet {#sameorigin}
-
-X-Frame-Options: SAMEORIGIN は、iframe 内で AEM ページのレンダリングを防ぎます。ヘッダーを削除すると、ページを読み込むことができます。
-
-このプロパティは、`org.apache.sling.engine.impl.SlingMainServlet` OSGi 設定で設定する必要があります。
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-          xmlns:jcr="http://www.jcp.org/jcr/1.0"
-          jcr:primaryType="sling:OsgiConfig"
-          sling.additional.response.headers="[X-Content-Type-Options=nosniff]"/>
-```
+ユニバーサルエディターはどのソースからもコンテンツを編集できますが、このドキュメントではAEM アプリを例として使用します。 このドキュメントでは、これらの手順を説明します。
 
 ## ページの実装 {#instrument-page}
 
