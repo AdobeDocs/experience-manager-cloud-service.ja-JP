@@ -1,20 +1,20 @@
 ---
 title: 使用状況および共有に関するレポート
-description: デジタルアセットの使用状況、アクティビティ、共有を理解するのに役立つ、 [!DNL Adobe Experience Manager Assets]  でのアセットに関するレポートです。
+description: デジタルアセットの使用状況  [!DNL Adobe Experience Manager Assets]  アクティビティ、共有を理解するのに役立つ、内のアセットに関するレポートです。
 contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 311230e2d6a395f9382af80df1cbe0fb25427874
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 98%
+source-wordcount: '991'
+ht-degree: 88%
 
 ---
 
 # アセットレポート {#asset-reports}
 
-| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 | バージョン | 記事リンク |
@@ -26,7 +26,7 @@ ht-degree: 98%
 
 レポートの情報を使用して重要な成功指標を導き出し、企業やお客様における [!DNL Assets] の採用状況を測定することができます。
 
-[!DNL Assets] のレポートフレームワークでは、[!DNL Sling] ジョブを利用して、レポートの要求が順序立てて非同期的に処理されます。このフレームワークは大規模なリポジトリーに合わせて拡張することができます。レポートの非同期処理により、レポートの生成速度と効率が向上します。
+[!DNL Assets] レポートフレームワークは、[!DNL Sling] ジョブを非同期で使用して、レポートリクエストを順番に処理します。 このフレームワークは大規模なリポジトリーに合わせて拡張することができます。レポートの非同期処理により、レポートの生成速度と効率が向上します。
 
 レポート管理インターフェイスは直感的で、アーカイブされたレポートにアクセスし、レポートの実行ステータス（成功、失敗、待機中）を表示する、詳細なオプションとコントロールが含まれます。
 
@@ -65,7 +65,7 @@ ht-degree: 98%
    ![アセットレポートに移動するツールページ](assets/navigation.png)
 
 1. [!UICONTROL アセットレポート]ページで、ツールバーの「**[!UICONTROL 作成]**」をクリックします。
-1. **[!UICONTROL レポートを作成]**&#x200B;ページで、作成するレポートを選択し、「**[!UICONTROL 次へ]**」をクリックします。
+1. **[!UICONTROL レポートを作成]** ページから、作成するレポートを選択して **[!UICONTROL 次へ]** をクリックします。 **ダウンロード** レポートを作成するには、**AEM管理者製品プロファイル** の使用権限を付与します。 AEM管理者の製品プロファイルを使用する権限については、[AEM製品プロファイルの割り当て ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) を参照してください。
 
    ![レポートタイプの選択](assets/choose_report.png)
 
@@ -103,12 +103,12 @@ ht-degree: 98%
 
    ![レポート列の選択または選択のキャンセル](assets/configure_columns.png)
 
-   カスタムの列名やプロパティパスを表示するには、CRX のノード下のアセットバイナリのプロパティを設定します。`jcr:content`または、プロパティパスピッカーを使用してパスを追加します。
+   カスタムの列名やプロパティパスを表示するには、CRX のノード下のアセットバイナリのプロパティを設定します。`jcr:content`または、プロパティパスピッカーを使用して追加します。
 
    ![レポート列の選択または選択のキャンセル](assets/custom_columns.png)
 
 1. ツールバーから「**[!UICONTROL 作成]**」をクリックします。レポートの生成が開始されたことを通知するメッセージが表示されます。
-1. [!UICONTROL アセットレポート]ページのレポート生成ステータスは、レポートジョブの現在の状態（「[!UICONTROL 成功]」、「[!UICONTROL 失敗]」、「[!UICONTROL 待機中]」、「[!UICONTROL スケジュール済み]」など）に基づきます。通知インボックスにも同じステータスが表示されます。レポートページを表示するには、レポートのリンクをクリックします。または、レポートを選択し、ツールバーの「**[!UICONTROL 表示]**」をクリックします。
+1. [!UICONTROL アセットレポート]ページのレポート生成ステータスは、レポートジョブの現在の状態（「[!UICONTROL 成功]」、「[!UICONTROL 失敗]」、「[!UICONTROL 待機中]」、「[!UICONTROL スケジュール済み]」など）に基づきます。通知インボックスにも同じステータスが表示されます。 レポートページを表示するには、レポートリンクをクリックします。 または、レポートを選択し、ツールバーの「**[!UICONTROL 表示]**」をクリックします。
 
    <!--![A generated report](assets/report_page.png)-->
    ![生成されたレポートのステータス](assets/report-status.JPG)
