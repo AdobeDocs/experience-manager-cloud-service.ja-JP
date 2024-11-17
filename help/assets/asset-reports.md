@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 311230e2d6a395f9382af80df1cbe0fb25427874
+source-git-commit: 6a03eb1a4ac8284299c1ffcf27d6a6c8a8b9abc4
 workflow-type: tm+mt
 source-wordcount: '991'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 
@@ -65,7 +65,11 @@ ht-degree: 88%
    ![アセットレポートに移動するツールページ](assets/navigation.png)
 
 1. [!UICONTROL アセットレポート]ページで、ツールバーの「**[!UICONTROL 作成]**」をクリックします。
-1. **[!UICONTROL レポートを作成]** ページから、作成するレポートを選択して **[!UICONTROL 次へ]** をクリックします。 **ダウンロード** レポートを作成するには、**AEM管理者製品プロファイル** の使用権限を付与します。 AEM管理者の製品プロファイルを使用する権限については、[AEM製品プロファイルの割り当て ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) を参照してください。
+1. **[!UICONTROL レポートを作成]**&#x200B;ページで、作成するレポートを選択し、「**[!UICONTROL 次へ]**」をクリックします。
+
+   >[!NOTE]
+   >
+   >**ダウンロード** レポートを作成するには、**AEM管理者製品プロファイル** の使用権限を付与します。 AEM管理者の製品プロファイルを使用する権限については、[AEM製品プロファイルの割り当て ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) を参照してください。
 
    ![レポートタイプの選択](assets/choose_report.png)
 
