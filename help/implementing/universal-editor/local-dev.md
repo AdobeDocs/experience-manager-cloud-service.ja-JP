@@ -4,10 +4,10 @@ description: ローカル開発用または独自のインフラストラクチ�
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: 4fedb7a812b53fd9ebd9c82e86fa8f05394d464f
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 82%
+source-wordcount: '932'
+ht-degree: 77%
 
 ---
 
@@ -76,9 +76,17 @@ UES_PORT=8000
 UES_PRIVATE_KEY=./key.pem
 UES_CERT=./certificate.pem
 UES_TLS_REJECT_UNAUTHORIZED=false
+UES_CORS_PRIVATE_NETWORK=true
 ```
 
-これらは、この例でのローカル開発に必要な最小値です。これらと使用可能なその他の値の詳細を次の表に示します。
+この例でのローカル開発に必要な最小値です。
+
+>[!NOTE]
+>
+>Chrome バージョン 130 以降を実行している場合は、`UES_CORS_PRIVATE_NETWORK` オプションを使用して、[ プライベートネットワークアクセス ](https://wicg.github.io/private-network-access/#private-network-request) 用の CORS ヘッダーの送信を有効にする必要があります。
+
+
+これらと使用可能なその他の値の詳細を次の表に示します。
 
 | 値 | オプション | デフォルト | 説明 |
 |---|---|---|---|
@@ -93,6 +101,7 @@ UES_TLS_REJECT_UNAUTHORIZED=false
 | `UES_SPLUNK_TOKEN` | はい | なし | Splunk トークン |
 | `UES_SPLUNK_INDEX` | はい | なし | ログを書き込むインデックス |
 | `UES_SPLUNK_SOURCE` | はい | `universal-editor-service` | Splunk ログでのソースの名前 |
+| `UES_CORS_PRIVATE_NETWORK` | はい | `false` | [ プライベートネットワークを許可するように CORS ヘッダーを送信できるようにします。](https://wicg.github.io/private-network-access/#private-network-request) Chrome バージョン 130 以降を使用する場合は必須です |
 
 >[!NOTE]
 >
