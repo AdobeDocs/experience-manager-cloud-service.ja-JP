@@ -2,17 +2,23 @@
 title: コンテンツハブでのアセットの検索
 description: ' [!DNL Content Hub] でアセットを検索する方法を説明します。'
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '662'
 ht-degree: 1%
 
 ---
 
-
 # [!DNL Content Hub] でのAssetsの検索 {#search-assets}
 
 ![ アセットを共有のバナー画像 ](assets/search.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub ガイドがPDF形式で利用できるようになりました。 ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えます。
+>
+>[!BADGE Content Hub ガイドのPDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 リポジトリに多数のアセットがある場合、適切なアセットの検索には時間がかかります。 [!DNL The Content Hub] の検索では、承認済みアセットを検索できるので、アセットに対して追加のアクション（ダウンロード、共有、コレクションの作成など）を実行できます。 様々な機能を利用して検索結果を絞り込むことができます。例えば、テキストベースの検索、フィルターの使用、タグまたはスマートタグ固有の検索の実行、特定のファイル形式の検索などを行うことができます。
 

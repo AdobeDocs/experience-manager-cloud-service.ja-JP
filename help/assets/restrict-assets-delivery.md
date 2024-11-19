@@ -3,9 +3,9 @@ title: OpenAPI 機能を使用したDynamic Mediaによるアセットの配信�
 description: OpenAPI 機能を使用してアセットの配信を制限する方法を説明します。
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 03e13d29629c5e0305401179502cd1fc24f9ad75
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1151'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 2%
 
 | [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>OpenAPI 機能ガイドのDynamic MediaがPDF形式で利用できるようになりました。 ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えます。
+>
+>[!BADGE OpenAPI 機能ガイドPDFのDynamic Media]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Experience Managerのアセットガバナンスの一元化により、DAM 管理者またはブランド管理者は、OpenAPI 機能を使用して、Dynamic Mediaを通じて使用可能なアセットへのアクセスを管理できます。 AEM as a Cloud Service オーサーサービスでアセットに特定のメタデータを設定することで ](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy) 選択した [AdobeのIdentity Management System （IMS）ユーザーまたはグループに（個々のアセットに対して）承認済みアセットの配信を制限できます。
 
@@ -34,7 +40,7 @@ IMS ユーザーおよびグループ ID に基づいて、[!DNL Experience Mana
 
 >[!NOTE]
 >
-> この機能は、現在、セルフサービスではありません。 IMS[ ユーザー ](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) および [ グループ ](https://helpx.adobe.com/in/enterprise/using/user-groups.html) にアセット配信を制限するには、[Adobe Admin Console](https://adminconsole.adobe.com/) ポータルからアクセス制限に必要な情報を取得する方法と、AEM as a Cloud Service オーサーサービスでアクセスを設定する方法について、エンタープライズサポートチームにお問い合わせください。
+この機能は、現在、セルフサービスではありません。 IMS[ ユーザー ](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) および [ グループ ](https://helpx.adobe.com/in/enterprise/using/user-groups.html) にアセット配信を制限するには、[Adobe Admin Console](https://adminconsole.adobe.com/) ポータルからアクセス制限に必要な情報を取得する方法と、AEM as a Cloud Service オーサーサービスでアクセスを設定する方法について、エンタープライズサポートチームにお問い合わせください。
 
 ### オンおよびオフの日時を使用したアセットの配信制限 {#restrict-delivery-assets-date-time}
 
@@ -82,7 +88,7 @@ AEM Cloud Service オーサーサービスおよびアセットセレクター�
 
 >[!NOTE]
 >
->AEM Asset Selector ベースの統合で IMS 認証を有効にする方法について詳しくは、エンタープライズサポートにお問い合わせください
+AEM Asset Selector ベースの統合で IMS 認証を有効にする方法について詳しくは、エンタープライズサポートにお問い合わせください
 
 1. アセットセレクターベース以外のエクスペリエンスの場合、OpenAPI 機能を備えたAEM as a Cloud ServiceおよびDynamic Mediaは現在、サーバーサイド API 統合をサポートし、IMS ベアラートークンを生成できます。
    * [2](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow)AEM as a Cloud Service Developer Consoleを介して IMS ベアラートークンを取得できるサービス間 API 統合を実行するには、](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) こちら } の手順に従います。[

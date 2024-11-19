@@ -3,9 +3,9 @@ title: Content Hubからのアセットのダウンロード
 description: Content Hub ポータルからアセットをダウンロードする方法を学ぶ
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '554'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,12 @@ ht-degree: 3%
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![アセットのダウンロード](assets/download-asset-genstudio.jpeg)
+
+>[!AVAILABILITY]
+>
+>Content Hub ガイドがPDF形式で利用できるようになりました。 ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えます。
+>
+>[!BADGE Content Hub ガイドのPDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hubでは、アセットをダウンロードして共有できます。 これらのアセットには、画像、ビデオ、またはその他のデジタルコンテンツが含まれる場合があります。 Content Hubは、効果的なアセット配布のためにアクセシビリティと適応性を強化します。
 
@@ -36,7 +42,7 @@ Content Hubでは、1 つまたは複数のアセットをダウンロードで�
 
      >[!NOTE]
      >
-     >利用条件チェックボックスは、ライセンスされたアセットに対してのみ表示されます。 また、アセットダイアログボックスには、ライセンスが承認されたアセットのライセンス条件のプレビューのみが表示されます。 ダウンロードする前に [ アセットのライセンスを承認 ](/help/assets/approve-assets-content-hub.md) し、アセットダイアログボックスでライセンス条件のプレビューを有効にします。
+     利用条件チェックボックスは、ライセンスされたアセットに対してのみ表示されます。 また、アセットダイアログボックスには、ライセンスが承認されたアセットのライセンス条件のプレビューのみが表示されます。 ダウンロードする前に [ アセットのライセンスを承認 ](/help/assets/approve-assets-content-hub.md) し、アセットダイアログボックスでライセンス条件のプレビューを有効にします。
 
    * 左側のペインの元のアセットレンディションに戻るには、「**元のレンディション」ボックス** をクリックします。
 1. （ライセンスが付与されたアセットの）ライセンス条件に同意し、「**ダウンロード**」をクリックしてアセットをダウンロードします。
@@ -48,18 +54,18 @@ Content Hubでは、1 つまたは複数のアセットをダウンロードで�
 
    >[!NOTE]
    >
-   >[ 有効期限切れのアセットのダウンロードオプションを有効にする ](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) と、アセットをダウンロードできます。 ダウンロードが有効になっている期限切れアセットのみをダウンロードできます。
+   [ 有効期限切れのアセットのダウンロードオプションを有効にする ](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) と、アセットをダウンロードできます。 ダウンロードが有効になっている期限切れアセットのみをダウンロードできます。
 
    <a id="Download-asset-dialog-box"></a> **アセットをダウンロードダイアログボックス：** このダイアログボックスには、選択したアセットに関連付けられているライセンスのリストが左側のペインに表示されます。 ライセンスを選択すると、契約条件（PDF 形式）が中央のウィンドウにプレビューされ、関連するアセットのプレビューとカウントが右側のウィンドウに表示されます。 レビュー済みのライセンスは水色でハイライト表示されます。
 
    >[!NOTE]
    >
-   > **アセットをダウンロード」ダイアログボックス** は、承認されたライセンスに関するライセンス条件のみをプレビューします。 [ アセットのダウンロード ](/help/assets/approve-assets-content-hub.md) ダイアログボックスでライセンス条件をプレビューするには、アセットをダウンロードする前に **アセットのライセンスを承認** します。
+   **アセットをダウンロード」ダイアログボックス** は、承認されたライセンスに関するライセンス条件のみをプレビューします。 [ アセットのダウンロード ](/help/assets/approve-assets-content-hub.md) ダイアログボックスでライセンス条件をプレビューするには、アセットをダウンロードする前に **アセットのライセンスを承認** します。
 
 1. ![remove-icon](/help/assets/assets/remove-icon.svg) をクリックして、ダウンロードダイアログボックスからライセンスを削除します。
 
 1. 利用条件に同意し、「**ダウンロード**」をクリックして、使用可能なライセンスに関連付けられたアセットを左側のパネルでダウンロードします。
-   ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
+   ![複数ライセンスをダウンロード](/help/assets/assets/download-multiple-license.png)
 
 ### ライセンスのないAssetsのダウンロード {#download-non-licensed-assets}
 

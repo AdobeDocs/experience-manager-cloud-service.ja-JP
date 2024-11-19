@@ -1,10 +1,11 @@
 ---
 title: Content Hubに関するよくある質問（FAQ）
-description: Content Hubに関するよくある質問（FAQ）のいくつかへの回答を得ます。
-source-git-commit: 3b8a80e346fe63450f9b57733c67de2e4b52b2b8
+description: コンテンツハブに関するよくある質問（FAQ）への回答を参照してください。
+exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 1%
+source-wordcount: '1128'
+ht-degree: 2%
 
 ---
 
@@ -14,6 +15,12 @@ ht-degree: 1%
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Content Hubに関するよくある質問 ](assets/content-hub-faqs.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub ガイドがPDF形式で利用できるようになりました。 ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えます。
+>
+>[!BADGE Content Hub ガイドのPDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 ## Content Hubとは {#what-is-content-hub}
 
@@ -87,5 +94,3 @@ Adobeは、Brand PortalからContent HubへのAdobeサポートを提供して�
 ## Content Hubに「Product Settings/Configuration」オプションが表示されないのはなぜですか。 {#ui-configuration-option-missing}
 
 [ 設定ユーザーインターフェイス ](/help/assets/configure-content-hub-ui-options.md) にアクセスするには、[Content Hub管理者 ](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator) である必要があります。 Adobe Admin Consoleの実稼動オーサーインスタンスでAEM Administrators 製品プロファイルに割り当てられていても設定オプションが表示されない場合は、AEM Administrators 製品プロファイルの名前が変更されていないことを確認してください。 詳しくは、[AEM as a Cloud Service チームおよび製品プロファイル ](/help/onboarding/aem-cs-team-product-profiles.md) を参照してください。
-
-

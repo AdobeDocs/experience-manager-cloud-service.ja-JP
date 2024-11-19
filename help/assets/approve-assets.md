@@ -3,9 +3,9 @@ title: Experience Managerでのアセットの承認
 description: ' [!DNL Experience Manager] でアセットを承認する方法について説明します。'
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '747'
 ht-degree: 5%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 5%
 
 | [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>OpenAPI 機能ガイドのDynamic MediaがPDF形式で利用できるようになりました。 ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えます。
+>
+>[!BADGE OpenAPI 機能ガイドPDFのDynamic Media]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 ブランドマネージャーとマーケターは、ブランドアセットを厳格に管理しています。 アセットの承認済みの最新バージョンのみを使用できるので、すべてのチャネルとアプリケーションでブランドの一貫性を確保できます。
 
@@ -36,7 +42,7 @@ AEM Assetsでアセットを承認してアセット管理を効率化し、ア�
 
 >[!NOTE]
 >
->アセットまたはフォルダーのデフォルトのスキーマが異なる場合は、その特定のスキーマでこの更新を行ってください。
+アセットまたはフォルダーのデフォルトのスキーマが異なる場合は、その特定のスキーマでこの更新を行ってください。
 
 ## アセットの承認 {#approve-assets}
 
@@ -78,7 +84,7 @@ AEM Assetsでアセットを承認してアセット管理を効率化し、ア�
 
 >[!NOTE]
 > 
->この方法では、フォルダー内に新しく作成されたアセットが承認されます。 フォルダー内の既存のアセットの場合、手動で選択して承認する必要があります。 <br> または、「**[!UICONTROL 再処理]**」オプションを使用して、メタデータプロファイルから古いアセットに変更を適用します。
+この方法では、フォルダー内に新しく作成されたアセットが承認されます。 フォルダー内の既存のアセットの場合、手動で選択して承認する必要があります。 <br> または、「**[!UICONTROL 再処理]**」オプションを使用して、メタデータプロファイルから古いアセットに変更を適用します。
 
 同様に、Assets ビューでフォルダー内のアセットを一括承認するには、次の手順を実行します。
 
@@ -105,6 +111,6 @@ AEM Assetsでアセットを承認してアセット管理を効率化し、ア�
 
    >[!NOTE]
    >
-   >承認済みアセットの配信 URL をコピーするオプションは、Assets ビューでのみ使用できます。
+   承認済みアセットの配信 URL をコピーするオプションは、Assets ビューでのみ使用できます。
 
 Dynamic Media パネル内に表示されるその他のレンディションについて詳しくは、[Dynamic Media レンディションの表示とダウンロード ](/help/assets/renditions.md#view-download-dm-renditions) を参照してください。

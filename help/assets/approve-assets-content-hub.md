@@ -2,9 +2,9 @@
 title: コンテンツハブ向けアセットの承認
 description: Assetsのas a Cloud Serviceでアセットを承認して、Content Hubで使用できるようにする方法を説明します。
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 189fc257fed1115f66559d0f9063885ae527a0fa
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '774'
 ht-degree: 6%
 
 ---
@@ -15,6 +15,12 @@ ht-degree: 6%
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Content Hub用のアセットの承認 ](assets/content-hub-approve-assets.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub ガイドがPDF形式で利用できるようになりました。 ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えます。
+>
+>[!BADGE Content Hub ガイドのPDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 ブランドマネージャーとマーケターは、ブランドアセットを厳格に管理しています。 Content Hub内では、承認済みの最新バージョンのアセットのみを使用できるので、すべてのチャネルとアプリケーションでブランドの一貫性を確保できます。
 
@@ -34,7 +40,7 @@ Assetsのas a Cloud Serviceで `approved` とマークされたアセットは�
 
 >[!NOTE]
 >
->Assetsのas a Cloud ServiceおよびContent HubがContent Hubに表示されるアセットと同じ組織を使用する必要があります。
+Assetsのas a Cloud ServiceおよびContent HubがContent Hubに表示されるアセットと同じ組織を使用する必要があります。
 
 AEM as a Cloud Service内でAssets表示を使用して、アセットのステータスを `approved` に設定するには：
 
@@ -89,7 +95,7 @@ Assets表示から管理者表示に切り替えた後は、フォルダー設�
 
 >[!NOTE]
 > 
->この方法では、フォルダー内に新しく作成されたアセットが承認されます。 フォルダー内の既存のアセットの場合、手動で選択して承認する必要があります。
+この方法では、フォルダー内に新しく作成されたアセットが承認されます。 フォルダー内の既存のアセットの場合、手動で選択して承認する必要があります。
 
 ## Content Hubを使用してアップロードされたアセットの管理 {#manage-assets-uploaded-using-content-hub}
 

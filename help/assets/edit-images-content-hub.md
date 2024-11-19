@@ -2,19 +2,25 @@
 title: Adobe Expressを使用したContent Hubでの画像の編集
 description: Adobe Expressを使用したContent Hubでの画像の編集
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 2%
+source-wordcount: '436'
+ht-degree: 6%
 
 ---
 
 # Content Hubでの画像の編集 {#edit-images-content-hub}
 
-| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Adobe Expressを使用したContent Hubでの画像の編集 ](assets/edit-images-content-hub.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub ガイドがPDF形式で利用できるようになりました。 ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えます。
+>
+>[!BADGE Content Hub ガイドのPDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hubでは、Adobe Expressを使用して新しいコンテンツを作成できます。 使いやすいツールで既存のコンテンツを編集したり、テンプレートやブランド要素を使用してオンブランドのバリエーションを作成したり、Adobe Fireflyの最新の GenAI 機能で新しいコンテンツを作成したりできます。
 
@@ -24,7 +30,7 @@ Adobe Expressにアクセスする権限および [ 新しいバリエーショ�
 
 >[!NOTE]
 >
->[!DNL Adobe Express] を使用して、PNG およびJPG/JPEGファイルタイプの画像を編集できます。
+[!DNL Adobe Express] を使用して、PNG およびJPG/JPEGファイルタイプの画像を編集できます。
 
 ## [!DNL Adobe Express] を使用して画像を編集する {#edit-images-using-content-hub}
 

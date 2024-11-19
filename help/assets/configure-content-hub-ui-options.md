@@ -2,9 +2,9 @@
 title: コンテンツハブユーザーインターフェイスの設定
 description: コンテンツハブユーザーインターフェイスの設定
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1557'
 ht-degree: 16%
 
 ---
@@ -18,9 +18,16 @@ ht-degree: 16%
 >id="configure_content_hub"
 >title="コンテンツハブユーザーインターフェイスの設定"
 >abstract="Experience Manager Assets を使用すると、管理者はコンテンツハブユーザーインターフェイスで使用可能なオプションを設定できます。管理者が選択した設定オプションに基づいて、コンテンツハブユーザーはコンテンツハブのフィールドを表示できます。設定オプションには、アセットの読み込み時のメタデータ、フィルター、アセットのプロパティ、アセットの検索時のメタデータ、パーソナライズされたブランディング、任意のカスタムリンクが含まれます。"
+>additional-url="https://images-tv.adobe.com/mpcv3/4477/98bce651-721c-442e-98b8-c43e7708e44c_1698834577.854x480at800_h264.mp4" text="ビデオを見る"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Content Hubでのアセットの設定 ](assets/configure-assets.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub ガイドがPDF形式で利用できるようになりました。 ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えます。
+>
+>[!BADGE Content Hub ガイドのPDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Experience Manager Assets を使用すると、管理者はコンテンツハブユーザーインターフェイスで使用可能なオプションを設定できます。管理者が選択した設定オプションに基づいて、コンテンツハブユーザーはコンテンツハブのフィールドを表示できます。設定オプションは次のとおりです。
 
@@ -112,7 +119,7 @@ Content Hubでは、管理者がアセットの検索時に表示するフィル
 
    >[!NOTE]
    >
-   >新しいフィルターは、フィルター条件に一致するアセットがリポジトリー内に最後に 1 つ存在する場合にのみ、検索ページに表示されます。
+   新しいフィルターは、フィルター条件に一致するアセットがリポジトリー内に最後に 1 つ存在する場合にのみ、検索ページに表示されます。
 
 同様に、使用可能な各フィルターの横にある ![ 編集アイコン ](assets/do-not-localize/edit_icon.svg) をクリックしてラベルを編集したり、削除アイコンをクリックして既存のフィルターを削除したりできます。 すべての変更を加えた後で **[!UICONTROL 保存]** をクリックして、変更を適用します。
 
@@ -148,7 +155,7 @@ Content Hubでは、管理者がアセットの検索時に表示するフィル
 
 **アセットカード** に表示する必要がある主要なメタデータフィールドを、最大 6 つのフィールドまで設定できます。 これを行うには、次の手順を実行します。
 
-![ アセットカード上の主要なメタデータ ](/help/assets/assets/asset-card-key-metadata.png)
+![アセットカードの主なメタデータ](/help/assets/assets/asset-card-key-metadata.png)
 
 1. [ 設定 ](#access-configuration-options-content-hub) ユーザーインターフェイスで、「**アセットカード**」をクリックします。
 2. **メタデータを追加** をクリックします。 **アセットカードメタデータを追加** ダイアログボックスが表示されます。
