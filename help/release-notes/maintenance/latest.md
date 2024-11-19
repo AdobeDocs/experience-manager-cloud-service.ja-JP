@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 9a653fbe13b29fa60af7410fff178cbac6ca554d
+source-git-commit: f9f3d1fcb32445269e5ca4b9479b8e9075c73c10
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 93%
+source-wordcount: '852'
+ht-degree: 92%
 
 ---
 
@@ -33,6 +33,7 @@ ht-degree: 93%
 * SITES-24369：コンテンツフラグメント：OpenAPI ドキュメントの改善。
 * SITES-25478：コンテンツフラグメント：外部アセット参照のバックエンドサポートを追加。
 * SITES-26119：コンテンツフラグメント：参照タイプに外部アセット参照のサポートを追加。
+* SITES-24609：コンテンツフラグメント：コンテンツフラグメントを削除する際の検証を強化します。
 * SITES-21199：ユニバーサルエディターを使用した Edge Delivery：ページから作成されたテンプレートのサポートを追加。
 * SITES-20311：ユニバーサルエディターを使用した Edge Delivery：CSV をスプレッドシートに読み込むサポートを追加。
 * SITES-24821：ユニバーサルエディターを使用した Edge Delivery：aem.page／aem.live をデフォルトに設定して Edge Delivery と統合。
