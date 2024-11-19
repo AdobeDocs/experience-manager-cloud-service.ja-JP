@@ -4,10 +4,10 @@ description: 設定ファイルでルールとフィルターを宣言し、Clou
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 198b3e29c3cd392db3ee42eeca22e3c8c414420f
+source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
 workflow-type: tm+mt
 source-wordcount: '1351'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ AEM as a Cloud Service では、受信リクエストまたは送信応答の特
 
 機能的には、前述の様々な機能が次のシーケンスで評価されます。
 
-![ 評価の順序 ](/help/implementing/dispatcher/assets/order.png)
+![評価の順序](/help/implementing/dispatcher/assets/order.png)
 
 ## 設定 {#initial-setup}
 
@@ -158,8 +158,8 @@ data:
 | **unset** | reqProperty | 指定されたリクエストパラメーター（「path」プロパティのみサポートされています）またはリクエストヘッダー、クエリパラメーター、Cookie のいずれかを、文字列リテラルまたはリクエストパラメーターの特定の値に削除します。 |
 |         | var | 指定した変数を削除します。 |
 |         | queryParamMatch | 指定した正規表現に一致するすべてのクエリパラメーターを削除します。 |
-| **transform** | op:replace,（reqProperty または reqHeader または queryParam または reqCookie または var）, match, replacement | リクエストパラメーターの一部（「path」プロパティのみサポート）、リクエストヘッダー、クエリパラメーター、cookie、変数を新しい値に置き換えます。 |
-|              | op:tolower、（reqProperty または reqHeader または queryParam または reqCookie または var） | リクエストパラメーター（「path」プロパティのみサポート）、リクエストヘッダー、クエリパラメーター、cookie、変数を小文字の値に設定します。 |
+| **transform** | op:replace、（reqProperty、reqHeader、queryParam、reqCookie、var のいずれか）、match、replacement | リクエストパラメーターの一部（「path」プロパティのみサポートされています）、またはリクエストヘッダー、クエリパラメーター、Cookie、変数のいずれかを新しい値に置き換えます。 |
+|              | op:tolower、（reqProperty、reqHeader、queryParam、reqCookie、var のいずれか） | リクエストパラメーター（「path」プロパティのみサポートされています）またはリクエストヘッダー、クエリパラメーター、Cookie、変数のいずれかを小文字の値に設定します。 |
 
 置換アクションでは、次に示すように、キャプチャグループをサポートしています。
 
@@ -369,7 +369,7 @@ data:
             - reqProperty: domain
               equals: <Production Host>
             - reqProperty: path
-              matches: "^^(/scripts/.*|/styles/.*|/fonts/.*|/blocks/.*|/icons/.*|.*/media_.*|/favicon.ico)"
+              matches: "^(/scripts/.*|/styles/.*|/fonts/.*|/blocks/.*|/icons/.*|.*/media_.*|/favicon.ico)"
         action:
           type: selectOrigin
           originName: aem-live
@@ -431,7 +431,7 @@ experimental_redirects:
           reqProperty: clientCountry
           transform:
             - op: replace
-              match: '^(/.*)$'
+              match: '^(.*)$'
               replacement: 'https://www.example.com/\1/home'
             - op: tolower
     - name: www-redirect
@@ -442,6 +442,6 @@ experimental_redirects:
           reqProperty: path
           transform:
             - op: replace
-              match: '^(/.*)$'
+              match: '^/(.*)$'
               replacement: 'https://www.example.com/\1'
 ```

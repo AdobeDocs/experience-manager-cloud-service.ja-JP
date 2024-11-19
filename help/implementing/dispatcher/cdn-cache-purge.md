@@ -4,10 +4,10 @@ description: API 呼び出しで使用できるパージ API トークンを設�
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 5b777171cb9246c2a0174985e060d7d1b6ed8591
-workflow-type: ht
-source-wordcount: '450'
-ht-degree: 100%
+source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
+workflow-type: tm+mt
+source-wordcount: '469'
+ht-degree: 95%
 
 ---
 
@@ -74,6 +74,19 @@ curl
 ```
 
 `X-AEM-Purge` ヘッダーには「all」値を含める必要があることに注意してください。
+
+## 顧客管理 CDN とのインタラクション
+
+[ 顧客管理 CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) の場合は、`X-Forwarded-Host` と `X-AEM-Edge-Key` も指定する必要があります。
+
+```
+curl
+-X PURGE "https://publish-p1234-e5467.adobeaemcloud.com/resource-path" \
+-H 'X-AEM-Purge-Key: <my_purge_key>' \
+-H 'X-AEM-Edge-Key: <my_edge_key>' \
+-H 'X-Forwarded-Host: <my_forwarded_domain>'
+```
+
 
 ## Apache／Dispatcher レイヤーとのインタラクション {#apache-layer}
 
