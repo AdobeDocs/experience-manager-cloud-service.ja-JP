@@ -4,7 +4,7 @@ description: ローカル開発用または独自のインフラストラクチ�
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4fedb7a812b53fd9ebd9c82e86fa8f05394d464f
+source-git-commit: ccdb43c31e3ba1365a514bff696c9ec11dbbc21e
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 77%
@@ -154,7 +154,7 @@ Universal Editor Service listening on port 8000 as HTTPS Server
 
 [ローカルで実行されるユニバーサルエディターサービス](#running-ue)と[ローカルサービスを使用するために実装されたコンテンツページ](#using-loca-ue)を使用して、エディターを起動できるようになりました。
 
-1. ブラウザーを `https://localhost:8000/corslib/LATEST` で開きます。
+1. ブラウザーを `https://localhost:8000/ping` で開きます。
 1. [自己署名証明書](#ue-https)に同意するようダイレクトされます。
 1. 自己署名証明書が信頼されると、ローカルのユニバーサルエディターサービスを使用してページを編集できるようになります。
 
