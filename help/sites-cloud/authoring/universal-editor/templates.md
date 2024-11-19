@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
+source-git-commit: 92da26452438f2b56cdec1aecc76587d4982f00e
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '763'
 ht-degree: 3%
 
 ---
@@ -16,10 +16,6 @@ ht-degree: 3%
 # ユニバーサルエディターで編集可能なページを作成するためのテンプレート {#page-templates}
 
 ユニバーサルエディターで編集可能なページの作成に使用できるテンプレートを作成する方法を説明します。これにより、時間を節約し、一貫したブランディングを確保できます。
-
->[!NOTE]
->
->この機能は、AEM as a Cloud Serviceの今後のリリースで使用できるようになります。
 
 >[!NOTE]
 >
