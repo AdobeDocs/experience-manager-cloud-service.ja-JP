@@ -4,7 +4,7 @@ description: Edge Delivery Services プロジェクトでのWYSIWYG オーサリ
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: dce661331c42ba2cc082553e1e344c73556ce18d
 workflow-type: tm+mt
 source-wordcount: '2196'
 ht-degree: 82%
@@ -521,7 +521,7 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 | ![A group of people sitting on a stage][image0] |
 +-------------------------------------------------+
 | Adobe Experience Cloud                          |
-| ## Welcome to AEM                               |
+| ## Meet the Experts                             |
 | Join us in this ask me everything session ...   |
 | [More Details](https://link.to/more-details)    |
 | [RSVP](https://link.to/sign-up)                 |
