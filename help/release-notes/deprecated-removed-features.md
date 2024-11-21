@@ -4,10 +4,10 @@ description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: de73e38580895e3d8fe2029b59907d4c722556db
+source-git-commit: 644228b1bdae20c1ed6ca1de71b4c60d75f2cc4a
 workflow-type: tm+mt
-source-wordcount: '2576'
-ht-degree: 96%
+source-wordcount: '2603'
+ht-degree: 97%
 
 ---
 
@@ -42,9 +42,11 @@ ht-degree: 96%
 | [!DNL Assets] | [!DNL Experience Manager] へのアセットの直接アップロード。[非推奨（廃止予定）のアセットアップロード API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api) を参照してください。 | [直接バイナリアップロード](/help/assets/add-assets.md)を使用。技術的な詳細については、[直接アップロード API](/help/assets/developer-reference-material-apis.md#upload-binary) を参照してください。 |
 | [!DNL Assets] | [!DNL ImageMagick] などのコマンドラインツールの呼び出しを含め、`DAM Asset Update` ワークフローの[特定のワークフローステップ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)はサポートされていません。 | [アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が多くのワークフローの代替機能となります。カスタム処理の場合は、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用します。 |
 | [!DNL Assets] | ビデオの FFmpeg トランスコード。 | FFmpeg サムネールの生成には、[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)を使用。FFmpeg トランスコードの場合は、[Dynamic Media](/help/assets/manage-video-assets.md) を使用。 |
-| [!DNL Foundation] | レプリケーションエージェントの「配布」タブのツリーレプリケーション UI（2021 年 9 月 30 日以降に削除） | [公開を管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow)アプローチ |
-| [!DNL Foundation] | レプリケーションエージェントの管理画面の「配布」タブも、レプリケーション API も、10 MB を超えるコンテンツパッケージのレプリケーションには使用できません。代わりに、[パブリケーションの管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーワークフローの公開](/help/operations/replication.md#publish-content-tree-workflow)を使用します |
+| [!DNL Foundation] | レプリケーションエージェントの「配布」タブのツリーレプリケーション UI（2021 年 9 月 30 日以降に削除） | [ パブリケーションの管理 ](/help/operations/replication.md#manage-publication) または [ ツリーアクティベーションワークフローステップ ](/help/operations/replication.md#tree-activation) アプローチ。 |
+| [!DNL Foundation] | レプリケーションエージェントの管理画面の「配布」タブも、レプリケーション API も、10 MB を超えるコンテンツパッケージのレプリケーションには使用できません。 | [ パブリケーションの管理 ](/help/operations/replication.md#manage-publication) または [ ツリーアクティベーションワークフローステップ ](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Adobe Developer Console プロジェクトから生成された資格情報を使用した統合では、サービスアカウント（JWT）資格情報のサポートが段階的に失われます。2024 年5月1日（PT）以降、Adobe Developer Console で新しいサービスアカウント（JWT）資格情報を作成できなくなります。ただし、既存のサービスアカウント（JWT）資格情報は、2025年1月1日（PT）までは設定済みの統合に引き続き使用できます。この時点で、既存のサービスアカウント（JWT）資格情報は機能しなくなり、お客様は OAuth サーバー間の資格情報に移行する必要があります。[詳細情報](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | OAuth サーバー間の資格情報に[移行](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)します。 |
+| [!DNL Foundation] | Publish コンテンツツリーワークフローと、コンテンツ階層のレプリケーションに使用された、関連するPublish コンテンツツリーワークフローステップ。 | よりパフォーマンスの高い [ ツリーのアクティベーションワークフローステップ ](/help/operations/replication.md#tree-activation) を使用します。 |
+
 
 ## 削除された機能 {#removed-features}
 
@@ -180,7 +182,7 @@ ht-degree: 96%
   </tr>
   <tr>
     <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
-    <td>Apache Abdera が 2017年以降廃止されたプロジェクトなので、この API は非推奨（廃止予定）となりました。</td>
+    <td>Apache Abdera が 2017年以降廃止されたプロジェクトなので、この API は廃止されました。</td>
     <td>2019/4/8</td>
     <td>2021/9/29</td>
   </tr>
@@ -499,16 +501,16 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
       * 型：boolean
 +++
 
-## バージョン 21 への Java ランタイム更新 {#java-runtime-update-21}
+## Java ランタイムのバージョン 21 へのアップデート {#java-runtime-update-21}
 
-AEM as a Cloud Serviceは Java 21 ランタイムに移行されます。 互換性を確保するには、次の調整を行う必要があります。
+AEM as a Cloud Service は Java 21 ランタイムに移行します。互換性を確保するには、次の調整を行うことが不可欠です。
 
-### org.objectweb.asm {#org.objectweb.asm} の最小バージョン
+### org.objectweb.asm の最小バージョン {#org.objectweb.asm}
 
-org.objectweb.asm の使用状況をバージョン 9.5 以降に更新して、新しい JVM ランタイムが確実にサポートされるようにします。
+新しい JVM ランタイムのサポートを確保するには、org.objectweb.asm の使用をバージョン 9.5 以降に更新します。
 
-### org.apache.groovy {#org.apache.groovy} の最小バージョン
+### org.apache.groovy の最小バージョン {#org.apache.groovy}
 
-新しい JVM ランタイムが確実にサポートされるように、org.apache.groovy の使用方法をバージョン 4.0.22 以降に更新します。
+新しい JVM ランタイムのサポートを確保するには、org.apache.groovy の使用をバージョン 4.0.22 以降に更新します。
 
-このバンドルは、AEM Groovy コンソールなどのサードパーティの依存関係を追加することで、間接的に含めることができます。
+このバンドルは、AEM Groovy コンソールなどのサードパーティの依存関係を追加することで間接的に含めることができます。

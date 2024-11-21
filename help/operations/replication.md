@@ -4,10 +4,10 @@ description: AEM as a Cloud Service での配布とレプリケーションの�
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 60006b0e0b5215263b53cbb7fec840c47fcef1a8
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 100%
+source-wordcount: '1701'
+ht-degree: 76%
 
 ---
 
@@ -23,11 +23,10 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 >[!NOTE]
 >
->コンテンツの一括公開に関心がある場合は、[コンテンツツリーの公開ワークフロー](#publish-content-tree-workflow)を使用してください。
->このワークフローステップは、特に Cloud Service 向けに構築されており、大きなペイロードを効率的に処理できます。
+>コンテンツの一括公開に関心がある場合は、[ ツリーのアクティベーションワークフローステップ ](#tree-activation) を使用してワークフローを作成すると、大きなペイロードを効率的に処理できます。
 >独自の一括公開カスタムコードを作成することはお勧めできません。
->何らかの理由でカスタマイズする必要がある場合は、既存のワークフロー API を使用して、このワークフロー／ワークフロー手順をトリガーできます。
->常に、公開する必要のあるコンテンツのみを公開することをお勧めします。また、必要がない場合は、大量のコンテンツを公開しないようにしてください。ただし、コンテンツツリーの公開ワークフローで送信できるコンテンツの量に制限はありません。
+>何らかの理由でカスタマイズする必要がある場合は、既存のワークフロー API を使用して、このステップでワークフローをトリガーできます。
+>常に、公開する必要のあるコンテンツのみを公開することをお勧めします。また、必要でない場合は、大量のコンテンツを公開しないように注意してください。 ただし、ツリーのアクティベーションワークフローステップでワークフローを通じて送信できるコンテンツの量に制限はありません。
 
 ### クイック公開／非公開 - 計画的公開／非公開 {#publish-unpublish}
 
@@ -51,7 +50,84 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 「公開を管理」について詳しくは、 [公開の基本に関するドキュメント](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) を参照してください。
 
+### ツリーのアクティベーションワークフローステップ {#tree-activation}
+
+ツリーのアクティベーションワークフローステップの目的は、コンテンツノードの深い階層を効率的にレプリケートすることです。 キューが大きくなりすぎると自動的に一時停止し、他のレプリケーションを最小限の遅延で並行して実行できるようにします。
+
+`TreeActivation` のプロセスステップを使用するワークフローモデルを作成します。
+
+1. AEM as a Cloud Service のホームページから、**ツール／ワークフロー／モデル**&#x200B;に移動します。
+1. ワークフローモデルページで、画面の右上隅にある「**作成**」を押します。
+1. モデルにタイトルと名前を追加します。詳しくは、[ワークフローモデルの作成](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem)を参照してください。
+1. 作成したモデルをリストから選択し、「**編集**」を押します。
+1. 次のウィンドウで、デフォルトで表示されるステップを削除します
+1. プロセスステップを現在のモデルフローにドラッグ&amp;ドロップします。
+
+   ![プロセスステップ](/help/operations/assets/processstep.png)
+
+1. フローのプロセスステップを選択し、レンチアイコンを押して「**設定**」を選択します。
+1. 「**プロセス**」タブを選択し、ドロップダウンリストから `Publish Content Tree` を選択し、**ハンドラー処理の設定**&#x200B;チェックボックスをオンにします。
+
+   ![Treeactivation](/help/operations/assets/new-treeactivationstep.png)
+
+1. 「**引数**」フィールドに追加のパラメーターを設定します。複数のコンマ区切り引数をまとめることができます。次に例を示します。
+
+   `enableVersion=false,agentId=publish,chunkSize=50,maxTreeSize=500000,dryRun=false,filters=onlyModified,maxQueueSize=10`
+
+   >[!NOTE]
+   >
+   >パラメーターのリストについては、以下の「**パラメーター**」の節を参照してください。
+
+1. 「**完了**」を押して、ワークフローモデルを保存します。
+
+**パラメーター**
+
+| 名前 | default | 説明 |
+| -------------- | ------- | --------------------------------------------------------------- |
+| path |         | 開始するルートパス |
+| agentId | publish | 使用するレプリケーションエージェント名 |
+| chunkSize | 50 | 単一のレプリケーションにバンドルするパスの数 |
+| maxTreeSize | 500000 | ツリーのノードの最大数は小さいと見なされます |
+| maxQueueSize | 10 | レプリケーションキュー内の項目の最大数 |
+| enableVersion | false | バージョン管理を有効にする |
+| dryRun | false | True に設定した場合、レプリケーションは実際には呼び出されません |
+| userId |         | 仕事のためだけに。 ワークフローでは、ワークフローを呼び出したユーザーが使用されます |
+| フィルター |         | ノードフィルター名のリスト。 以下のサポートされるフィルターを参照してください |
+
+**サポートフィルター**
+
+| 名前 | 説明 |
+| ------------- | ------------------------------------------- |
+| onlyModified | 前回のパブリッシュ以降に変更されたノード |
+| onlyPublished | 以前にパブリッシュされたノード |
+
+
+**サポートの再開**
+
+ワークフローは、コンテンツをチャンク単位で処理し、チャンクは公開されるコンテンツ全体のサブセットを表します。  ワークフローがシステムによって停止された場合、中断した場所から続行されます。
+
+**ワークフローの進行状況の監視**
+
+1. AEM as a Cloud Serviceのホームページから、**ツール/一般/ジョブ** に移動します。
+1. ワークフローに対応する行を確認します。 *進行状況* 列には、レプリケーションの進行状況が示されます。 例えば、41/564 と表示され、更新すると 52/564 に更新される場合があります。
+
+   ![Treeactivation の進行状況 ](/help/operations/assets/treeactivation-progress.png)
+
+
+1. 行を選択して開くと、ワークフロー実行のステータスに関する追加の詳細が表示されます。
+
+   ![Treeactivation ステータスの詳細 ](/help/operations/assets/treeactivation-progress-details.png)
+
+
+
 ### コンテンツツリーの公開ワークフロー {#publish-content-tree-workflow}
+
+>[!NOTE]
+>
+>この機能は非推奨（廃止予定）になり、カスタムワークフローに含めることができる、よりパフォーマンスの高いツリーのアクティベーションステップに置き換わりました。
+
+<details>
+<summary>非推奨（廃止予定）の機能の詳細については、ここをクリックしてください。</summary>
 
 次に示すように、 **ツール／ワークフロー／モデル**&#x200B;を選択し、「**コンテンツツリーを公開**」という標準のワークフローモデルをコピーして、ツリーレプリケーションをトリガーできます。
 
@@ -117,10 +193,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
-
-**サポートの再開**
-
-ワークフローは、コンテンツをチャンク単位で処理し、チャンクは公開されるコンテンツ全体のサブセットを表します。ワークフローがシステムによって停止されると、ワークフローが再起動され、まだ処理されていないチャンクを処理します。ログステートメントには、コンテンツが特定のパスから再開されたことが示されます。
+</details>
 
 ### レプリケーション API {#replication-api}
 
