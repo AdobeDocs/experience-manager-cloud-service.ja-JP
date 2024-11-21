@@ -1,12 +1,12 @@
 ---
-title: \s の使用
+title: 設定パイプラインの使用
 description: 設定パイプラインを使用して、ログ転送の設定、パージ関連のメンテナンスタスク、様々な CDN 設定など、様々な設定の AEM as a Cloud Service をデプロイする方法について説明します。
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 4d8f6f37541c0d712019f21a5684ec4bd5133de3
+source-git-commit: 20338fde4b0875f9f40a2f3f1702b8e1c01a0a88
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '998'
 ht-degree: 78%
 
 ---

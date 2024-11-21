@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2652582ce2a740c958c10bea42c7674513706735
+source-git-commit: 87acfc03c4497fcbfb94ff43cdd380cd6725bcf2
 workflow-type: tm+mt
-source-wordcount: '5799'
+source-wordcount: '5801'
 ht-degree: 98%
 
 ---
@@ -1186,7 +1186,8 @@ ht-degree: 98%
       + [設定と設定ブラウザー](/help/implementing/developing/introduction/configurations.md)
       + [AEM 技術基盤](/help/implementing/developing/introduction/aem-technologies.md)
       + [API リファレンス資料](/help/implementing/developing/reference-materials.md)
-      + [サーバー側 API のアクセストークンの生成](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+      + [OpenAPI ベースの API](/help/implementing/developing/open-api-based-apis.md)
+      + [サーバーサイド API のアクセストークンの生成](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
       + [サーバーサイド API のアクセストークンの生成（レガシー）](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [サイトのクイック作成とフロントエンドのカスタマイズ](/help/implementing/developing/introduction/quick-site-creation.md)
       + [フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
