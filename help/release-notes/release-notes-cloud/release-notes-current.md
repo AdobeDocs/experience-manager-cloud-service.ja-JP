@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 083e334c2ac248e15168ae3ec4c8daf2b2888ee5
+source-git-commit: 5d2c09a3e1c67e6c2435d84112546107d284259f
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 42%
+source-wordcount: '1778'
+ht-degree: 41%
 
 ---
 
@@ -51,6 +51,10 @@ Have a look at the November 2024 Release Overview video for a summary of the fea
 AEM インスタンス **[!DNL Edge Delivery Services]介して公開するための CSV インポーター**
 
 お気に入りのスプレッドシートツールでEdge Delivery スプレッドシートデータ（リダイレクトなど）を効率的に管理し、新しい CSV インポーターを使用してAEMにアップロードします。 [詳細情報](/help/edge/wysiwyg-authoring/tabular-data.md#importing)。
+
+### AEM Sitesのプレリリース機能
+
+一意の ID ベースの参照を使用したコンテンツフラグメント参照が強化され、アセットやフラグメントが移動された場合でも安定したリンクが維持されるようになり、更新や再公開が不要になりました。 現在の制限事項：一意の ID では、ページ参照はまだサポートされていません。 コンテンツフラグメントでページが参照されている場合は、この機能を使用しないでください。
 
 ### 早期導入プログラム {#sites-early-adopter}
 
