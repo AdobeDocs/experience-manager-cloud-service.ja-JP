@@ -4,9 +4,9 @@ description: コアコンポーネントベースのアダプティブフォー�
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2933b3be569724800a77b4ea93e91441046746f6
+source-git-commit: 2e4c9a7d30b954045082baf242737ac2f7426c70
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1387'
 ht-degree: 8%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 8%
 
 # フォームをドラフトとして保存し、Sites ページに一覧表示する
 
-<span class="preview"> この記事には、プレリリース機能である **自動保存** 機能に関するコンテンツが含まれています。 プレリリース機能には、[プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)を通じてのみアクセスできます。</span>
+この記事に <span class="preview">、プレリリース機能である **ドラフト** 機能に関するコンテンツが含まれています。 プレリリース機能には、[プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)を通じてのみアクセスできます。</span>
 
 フォームへの入力を開始しても、一時停止してから後で戻る必要があるユーザーを考えてみましょう。 AEMには、今後の完成に備えてフォームをドラフトとして保存できる `save-as-draft` オプションが用意されています。 これを容易にするために、AEMには、標準で **ドラフトと送信** フォームポータルコンポーネントが用意されています。このコンポーネントは、AEM Sites ページにドラフトと送信を表示します。 このコンポーネントには、後で完了するためにドラフトとして保存されたフォームと、送信済みのフォームが一覧表示されます。 ログインしているユーザーのみが、自分の下書きを編集したり、送信されたフォームを表示したりできます。 ただし、匿名ユーザーが **検索とリスター** コンポーネントを使用してフォームのリストを移動し、フォームをドラフトとして保存した場合、そのドラフトは **ドラフトと送信** コンポーネントに表示されません。 ドラフトと送信を表示するには、フォームの送信時にユーザーがログインしている必要があります。
 
@@ -137,7 +137,7 @@ ht-degree: 8%
 
 アダプティブフォームをプレビューして入力し、「**フォームを保存**」ボタンをクリックすると、フォームはドラフトとして保存されます。
 
-### 自動保存
+### ドラフト
 
 >[!NOTE]
 >
@@ -147,13 +147,13 @@ ht-degree: 8%
 
 1. オーサーインスタンスで、アダプティブフォームを編集モードで開きます。
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
-1. ガイドコンテナのプロパティ ![ ガイドプロパティ ](/help/forms/assets/configure-icon.svg) アイコンをクリックし、「**[!UICONTROL 自動保存]**」タブを開きます。
+1. 「ガイドコンテナのプロパティ ![ ガイドプロパティ ](/help/forms/assets/configure-icon.svg)」アイコンをクリックし、「**[!UICONTROL ドラフト]**」タブを開きます。
 
    ![ 自動保存 ](/help/forms/assets/auto-save.png)
 
-1. 「**[!UICONTROL 有効]**」チェックボックスを選択して、フォームの自動保存を有効にします。
-1. **[!UICONTROL トリガー]** を **時間ベース** として設定し、指定した時間間隔の経過後にフォーム <!--based on the occurrence of an event or--> を自動保存します。
-1. **[!UICONTROL この間隔で自動保存（秒）]** の時間間隔を指定して、定義された間隔でフォームの自動保存をトリガーにする期間を設定します。
+1. 「**[!UICONTROL ドラフトを自動的に保存]**」チェックボックスをオンにして、フォームをドラフトとして自動保存できるようにします。
+1. **[!UICONTROL 環境設定を保存]** を **一定の間隔でドラフトを保存** として設定し、特定の時間間隔の後にフォーム <!--based on the occurrence of an event or--> ージを自動保存します。
+1. 指定した間隔でフォームの自動保存をトリガーにする期間を設定する場合は ]**時間間隔を**[!UICONTROL  保存間隔の頻度（秒）で指定します。
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
 ## ドラフト&amp;送信コンポーネントを使用して、Sites ページでドラフト/送信済みフォームを表示する

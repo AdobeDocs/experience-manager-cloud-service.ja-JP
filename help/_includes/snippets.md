@@ -1,8 +1,8 @@
 ---
-source-git-commit: f3502de1aebd44a056e1263b059e1588243f5845
+source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 92%
+source-wordcount: '1323'
+ht-degree: 88%
 
 ---
 # スニペット {#snippets}
@@ -53,6 +53,7 @@ ht-degree: 92%
 * [Workfront Fusion に送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Salesforce アプリケーションにアダプティブフォームを接続](/help/forms/aem-forms-salesforce-integration.md)
 * [Microsoft へのアダプティブフォームの接続](/help/forms/ms-dynamics-odata-configuration.md)
+* [アダプティブフォームのAdobe Marketo Engageへの接続](/help/forms/integrate-form-to-marketo-engage.md)
 * [カスタム送信アクションを作成](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## 関連トピック {#see-more-forms-eds}
@@ -131,6 +132,8 @@ ht-degree: 92%
 * [コアコンポーネントに基づくアダプティブフォームのルールエディターのユーザーインターフェイス](/help/forms/rule-editor-core-components-user-interface.md)
 * [コアコンポーネントに基づくアダプティブフォームの様々なユースケース](/help/forms/rule-editor-core-components-usecases.md)
 * [ルールエディターの様々なエディションの違い](/help/forms/rule-editor-core-components-difference-tables.md)
+* [アダプティブフォームでの非同期関数の使用](/help/forms/using-async-funct-in-rule-editor.md)
+* [コアコンポーネントに基づくフォームのビジュアルルールエディターにおける呼び出しサービスの機能強化](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要](/help/forms/create-and-use-custom-functions.md)
 * [コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成](/help/forms/custom-function-core-component-create-function.md)
 * [カスタム関数内のオブジェクトのスコープ](/help/forms/custom-function-core-component-scope-function.md)
@@ -144,6 +147,12 @@ ht-degree: 92%
 * [アダプティブフォームを下書きとして保存](/help/forms/save-core-component-based-form-as-draft.md)
 * [Sites ページへのフォームリンクの追加](/help/forms/add-form-link-to-aem-sites-page.md)
 
+## Marketo Engage{#marketo-engage-see-also}
+
+* [Marketo EngageとAEM Formsの統合](/help/forms/integrate-form-to-marketo-engage.md)
+* [Marketo Engageと統合する新しいフォームの設定 ](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [既存のアダプティブFormsのMarketo Engageデータソースを設定する](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [既存のフォームをMarketo Engageするための送信アクションの設定](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Cloud Manager の IP 許可リストとフロントエンドパイプライン {#allowlist-frontend-pipeline}
 

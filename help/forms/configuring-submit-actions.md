@@ -4,9 +4,9 @@ description: アダプティブフォームには、複数の送信アクショ�
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: db0487ab11f48690cb36b410b895324e0d4cf684
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3929'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,8 @@ ht-degree: 100%
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=ja) |
-| AEM as a Cloud Service | この記事 |
+| AEM as a Cloud Service（コアコンポーネント） | [ここをクリックしてください](/help/forms/configure-submit-actions-core-components.md) |
+| AEM as a Cloud Service（基盤コンポーネント） | この記事 |
 
 **適用先**: ✔️アダプティブフォームの基盤コンポーネント。 ❌ [アダプティブフォーム (コアコンポーネント](/help/forms/configure-submit-actions-core-components.md). Adobeでは、コアコンポーネントを次のように使用することをお勧めします。 [AEM SitesページへのアダプティブFormsの追加](create-or-add-an-adaptive-form-to-aem-sites-page.md) または [スタンドアロンのアダプティブFormsを作成する](creating-adaptive-form-core-components.md).
 
@@ -31,6 +32,7 @@ ht-degree: 100%
 * [Azure Blob Storage に送信](#azure-blob-storage)
 * [Power Automate に送信](#microsoft-power-automate)
 * [Workfront Fusion に送信](#workfront-fusion)
+* [Marketo Engage に送信](/help/forms/integrate-form-to-marketo-engage.md)
 
 [デフォルトの送信アクションを拡張](custom-submit-action-form.md)して、独自の送信アクションを作成することもできます。
 

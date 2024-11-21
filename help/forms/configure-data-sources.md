@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
 workflow-type: tm+mt
 source-wordcount: '2129'
 ht-degree: 100%
@@ -150,7 +150,7 @@ RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式ま
 
 1. 「**[!UICONTROL 作成]**」を選択して、RESTful サービス用のクラウド設定を作成します。
 
-### Open API 仕様バージョン 3.0 用の RESTful サービスの設定 {#configure-restful-services-open-api-3.0}
+### Open API 仕様バージョン 3.0 {#configure-restful-services-open-api-3.0} 用の RESTful サービスの設定
 
 1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーを選択します。
 
@@ -330,7 +330,6 @@ When you enable mutual authentication for form data model (FDM), both the data s
 ## 次の手順 {#next-steps}
 
 上記の手順により、データソースが設定されました。次に、フォームデータモデル（FDM）を作成できます。データソースのないフォームデータモデル（FDM）が既に作成されている場合は、設定したデータソースにそのフォームデータモデル（FDM）を関連付けることができます。詳しくは、[フォームデータモデルの作成](create-form-data-models.md)を参照してください。
-
 
 <!--
 

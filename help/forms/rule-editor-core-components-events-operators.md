@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
+source-git-commit: 7acbf2099a2b47b5f42885e8f9a9e1727a8112b5
 workflow-type: tm+mt
-source-wordcount: '2106'
-ht-degree: 50%
+source-wordcount: '2148'
+ht-degree: 58%
 
 ---
 
@@ -31,7 +31,7 @@ AEM Forms as a Cloud では、複雑な条件やアクションを簡単に定�
 * **Starts With（次の値で始まる）**
 * **Ends With（次の値で終わる）**
 * **Contains（次を含む）**
-* **次を含まない**
+* **Does not contain（次の値を含まない）**
 * **Is Empty（空である）**
 * **Is Not Empty（空ではない）**
 * **Has Selected（選択済み）：**&#x200B;チェックボックス、ドロップダウン、ラジオボタンの特定のオプションをユーザーが選択した場合に true を返します。
@@ -79,17 +79,17 @@ _
 
 「When」ルールを記述するときに、「Clear Value Of」アクションをトリガーできます。「Clear Value Of」アクションは、指定したオブジェクトの値をクリアします。「When」ステートメントに「Clear Value Of」をオプションとして含めると、複数フィールドで複雑な条件を作成できます。 Else ステートメントを追加して、さらに条件を追加できます
 
-![値をクリア](assets/clearvalueof.png)
+![次の値をクリア](assets/clearvalueof.png)
 
 >[!NOTE]
 >
 > ルールタイプが単一レベルの then-else ステートメントのみをサポートする場合。
 
-##### [!UICONTROL When] に複数のフィールドを使用できる {#allowed-multiple-fields}
+##### [!UICONTROL When] で許可された複数のフィールド {#allowed-multiple-fields}
 
-**When** 条件には、ルールが適用されるフィールド以外のフィールドを追加するオプションがあります。
+**When** 条件では、ルールが適用されるフィールドとは別に他のフィールドを追加するオプションがあります。
 
-例えば、「When」のルールタイプを使用すると、様々なフォームオブジェクトの条件を評価し、アクションを実行することができます。
+例えば、「When」のルールタイプを使用すると、様々なフォームオブジェクトの条件を評価し、アクションを実行できます。
 
 日時：
 
@@ -105,12 +105,12 @@ AND/OR
 
 _
 
-![When で複数のフィールドを許可 ](/help/forms/assets/allowed-multiple-field-when.png)
+![When で許可された複数のフィールド](/help/forms/assets/allowed-multiple-field-when.png)
 
 **When 条件機能で複数のフィールドを許可して使用する場合の考慮事項**
 
 * ルールエディターでこの機能を使用するには ](https://github.com/adobe/aem-core-forms-components)[ コアコンポーネントがバージョン 3.0.14 以降に設定されていることを確認します。
-* When 条件内の異なるフィールドにルールが適用されている場合、そのフィールドの 1 つのみが変更されても、ルールはトリガーします。
+* ルールが When 条件内の異なるフィールドに適用されている場合、これらのフィールドの 1 つのみを変更した場合でも、ルールはトリガーします。
 
 
 <!--
@@ -130,10 +130,10 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
    * value: deps
 1. Click **[!UICONTROL Done]**. -->
 
-「When」条件機能で許可されている複数のフィールドに問題が発生した場合は、次のようにトラブルシューティング手順に従います。
+When 条件機能で許可された複数のフィールドで問題が発生した場合は、次のトラブルシューティング手順に従います。
 
 1. フォームを編集モードで開きます。
-1. コンテンツブラウザーを開き、アダプティブフォームの **[!UICONTROL ガイドコンテナ]** コンポーネントを選択します。
+1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
 1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。アダプティブフォームコンテナダイアログボックスが開きます。
 1. 「完了」をクリックして、ダイアログを再度保存します。
 
@@ -145,7 +145,13 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 **[!UICONTROL Disable （無効）]**：指定したオブジェクトを無効にします。
 
-**[!UICONTROL Invoke service （サービスを起動）]**：フォームデータモデル（FDM）で設定されたサービスを起動します。「サービスを起動」オプションを選択すると、フィールドが表示されます。このフィールドをタップすると、[!DNL Experience Manager] インスタンス上のすべてのフォームデータモデル（FDM）で設定されたすべてのサービスが表示されます。フォームデータモデルサービスを選択すると、さらにフィールドが表示され、指定したサービスに対する入力パラメーターと出力パラメーターを使用して、ここでフォームオブジェクトをマップすることができます。フォームデータモデル（FDM）サービスの呼び出しについては、ルール例を参照してください。
+**[!UICONTROL Invoke service （サービスを起動）]**：フォームデータモデル（FDM）で設定されたサービスを起動します。「サービスを起動」オプションを選択すると、フィールドが表示されます。このフィールドをタップすると、[!DNL Experience Manager] インスタンス上のすべてのフォームデータモデル（FDM）で設定されたすべてのサービスが表示されます。フォームデータモデルサービスを選択すると、さらにフィールドが表示され、指定したサービスに対する入力パラメーターを使用して、ここでフォームオブジェクトをマップすることができます。 指定したサービスのイベントペイロードオプションを使用して、出力パラメーターをマッピングできます。 また、ルールエディターを使用して、サービスを呼び出し操作の成功および失敗応答を処理するルールを作成することもできます。
+
+>[!NOTE]
+>
+> 呼び出しサービスについて詳しくは、[ ここをクリック ](/help/forms/invoke-service-enhancements-rule-editor.md) してください。
+
+フォームデータモデル（FDM）サービスの呼び出しについては、ルール例を参照してください。
 
 フォームデータモデルサービスに加えて、ダイレクト WSDL URL を指定して Web サービスを呼び出すことができます。 ただし、フォームデータモデルサービスには数多くの利点があるので、この方法でサービスを起動することをお勧めします。
 
@@ -157,17 +163,17 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 **[!UICONTROL プロパティを設定]**&#x200B;のルールタイプを使用すると、条件アクションに基づいて、指定したオブジェクトのプロパティの値を設定できます。プロパティは次のいずれかに設定できます。
 * visible（ブーリアン）
-* label.value （文字列）
-* label.visible （ブール値）
-* 説明（文字列）
+* label.value（文字列）
+* label.visible（ブーリアン）
+* description（文字列）
 * enabled（ブーリアン）
-* readOnly （ブール値）
-* 必須（ブール値）
-* screenReaderText （String）
+* readOnly（ブーリアン）
+* required（ブーリアン）
+* screenReaderText（文字列）
 * valid（ブーリアン）
 * errorMessage（文字列）
-* デフォルト（数値、文字列、日付）
-* enumNames （String[]）
+* default（数値、文字列、日付）
+* enumNames（文字列[]）
 * chartType（文字列）
 
 例えば、ボタンがクリックされたときにテキストボックスを表示するルールを定義できます。 カスタム関数、フォームオブジェクト、オブジェクトプロパティ、またはサービス出力を使用して、ルールを定義できます。
@@ -176,7 +182,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 カスタム関数に基づいてルールを定義するには、ドロップダウンリストから「**[!UICONTROL 関数の出力]**」を選択し、「**[!UICONTROL 関数]**」タブからカスタム関数をドラッグアンドドロップします。条件アクションが満たされると、テキスト入力ボックスが表示されます。
 
-フォームオブジェクトに基づいてルールを定義するには、ドロップダウンリストから「**[!UICONTROL フォームオブジェクト]**」を選択し、「**[!UICONTROL フォームオブジェクト]**」タブからフォームオブジェクトをドラッグ＆ドロップします。条件アクションが満たされると、テキスト入力ボックスがアダプティブフォームに表示されます。
+フォームオブジェクトに基づいてルールを定義するには、ドロップダウンリストから「**[!UICONTROL フォームオブジェクト]**」を選択し、「**[!UICONTROL フォームオブジェクト]**」タブからフォームオブジェクトをドラッグ＆ドロップします。条件アクションが満たされると、アダプティブフォームにテキスト入力ボックスが表示されます。
 
 オブジェクトプロパティに基づくプロパティの設定ルールを使用すると、アダプティブフォームに含まれる別のオブジェクトプロパティに基づいて、アダプティブフォーム内でテキスト入力ボックスを表示できます。
 
@@ -188,11 +194,11 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 **[!UICONTROL Set Focus （フォーカスの設定）]**：指定したオブジェクトにフォーカスを設定します。
 
-**[!UICONTROL フォームを送信]** フォームを送信します。
+**[!UICONTROL フォームを送信]**：フォームを送信します。
 
-**[!UICONTROL Reset]** フォームまたは指定したオブジェクトをリセットします。
+**[!UICONTROL リセット]**：フォームまたは指定されたオブジェクトをリセットします。
 
-**[!UICONTROL Validate]** フォームまたは指定したオブジェクトを検証します。
+**[!UICONTROL 検証]**：フォームまたは指定されたオブジェクトを検証します。
 
 **[!UICONTROL Add Instance （インスタンスの追加）]**：指定した繰り返し可能なパネルまたは表の行のインスタンスを追加します。
 
@@ -202,9 +208,9 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 **[!UICONTROL 移動先]** 他のアダプティブForms、画像やドキュメントフラグメントなどの他のアセット、または外部 URL に移動します。<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-**[!UICONTROL イベントのディスパッチ]** 事前に定義された条件またはイベントに基づいて、特定のアクションまたはビヘイビアーをトリガーします。
+**[!UICONTROL イベントのディスパッチ]**：定義済みの条件またはイベントに基づいて、特定のアクションまたは動作をトリガーします。
 
-#### [!UICONTROL Set Value of] {#set-value-of}
+#### [!UICONTROL 次の値を設定] {#set-value-of}
 
 「**[!UICONTROL Set Value Of]**」のルールタイプを使用すると、指定した条件に応じてフォームオブジェクトの値を設定できます。この値には、他のオブジェクトの値や、リテラル文字列、数式や関数から算出された値、または他のオブジェクトのプロパティ値、フォームデータモデルサービスの出力値を指定することができます。同様に、関数や数式から算出された構成要素、文字列、プロパティ、または値を確認することもできます。
 
@@ -222,7 +228,7 @@ When （オプション）：
 
 (Condition 1 AND Condition 2 AND Condition 3) is TRUE;
 
-次の使用例は、`Question2` の値を `True` に設定し、`Result` の値を `correct` に設定します。
+次の例では、`Question2` の値を `True` に、`Result` の値を `correct` に設定しています。
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 

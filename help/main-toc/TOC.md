@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 87acfc03c4497fcbfb94ff43cdd380cd6725bcf2
+source-git-commit: 6653a761ee8d0cb1d7b07acd263121422d419a8b
 workflow-type: tm+mt
-source-wordcount: '5801'
-ht-degree: 98%
+source-wordcount: '5873'
+ht-degree: 97%
 
 ---
 
@@ -32,6 +32,7 @@ ht-degree: 98%
    + AEMaaCS 機能のリリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024年度 {#2024}
+         + [2024.10.0 のリリースノート](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
          + [2024.9.0 のリリースノート](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
          + [リリースノート（2024.8.0）](/help/release-notes/release-notes-cloud/2024/release-notes-2024-8-0.md)
          + [2024.7.0 のリリースノート](/help/release-notes/release-notes-cloud/2024/release-notes-2024-7-0.md)
@@ -719,6 +720,11 @@ ht-degree: 98%
          + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
          + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
          + [アダプティブフォームの XML スキーマのデザイン](/help/forms/adaptive-form-xml-schema-form-model.md)
+         + アダプティブFormsとAdobe Marketo Engageの統合 {#integrate-adaptive-form-with-market-engage}
+            + [Adobe Marketo EngageとAEM Formsの統合](/help/forms/integrate-form-to-marketo-engage.md)
+            + [Marketo Engageと統合する新しいフォームの設定 ](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [既存のアダプティブForms用にAdobe Marketo Engage データソースを設定する](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [既存のフォームをMarketo Engageするための送信アクションの設定](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + アダプティブフォーム {#adaptive-forms-authoring}
       + [アダプティブフォームを作成します](/help/forms/create-an-adaptive-form.md)
       + [アダプティブフォームフラグメントの作成](/help/forms/adaptive-form-fragments.md)
@@ -730,6 +736,7 @@ ht-degree: 98%
             + [アダプティブフォームフラグメントの作成](/help/forms/adaptive-form-fragments-core-components.md)
             + [アダプティブフォームのテーマの作成 - コアコンポーネント](/help/forms/using-themes-in-core-components.md)
             + [コアコンポーネントに基づくアダプティブフォームテンプレートの作成](/help/forms/template-editor-core-components.md)
+            + [XFA フォームテンプレートに基づくアダプティブフォーム（コアコンポーネント）の作成](/help/forms/create-adaptive-form-using-xfa-templates.md)
             + [アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-core-components.md)
             + [機械翻訳または人間による翻訳を使用したアダプティブフォームの翻訳](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [リダイレクトページまたはお礼メッセージの設定](/help/forms/configure-redirect-page-or-thank-you-message.md)
@@ -758,6 +765,7 @@ ht-degree: 98%
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターで使用できる演算子とイベントのタイプ](/help/forms/rule-editor-core-components-events-operators.md)
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターの例](/help/forms/rule-editor-core-components-usecases.md)
                + [アダプティブフォームでの非同期関数の使用](/help/forms/using-async-funct-in-rule-editor.md)
+               + [コアコンポーネントに基づくフォームのビジュアルルールエディターにおける呼び出しサービスの機能強化](/help/forms/invoke-service-enhancements-rule-editor.md)
             + コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要{#create-and-use-custom-function-core-component}
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要](/help/forms/create-and-use-custom-functions.md)
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成と使用](/help/forms/custom-function-core-component-create-function.md)
