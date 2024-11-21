@@ -5,10 +5,10 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: ht
-source-wordcount: '376'
-ht-degree: 100%
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+workflow-type: tm+mt
+source-wordcount: '374'
+ht-degree: 95%
 
 ---
 
@@ -42,7 +42,7 @@ CDN ダッシュボードは、すべてのプログラムの概要ページで�
 
 ![CDN パフォーマンスダッシュボード](assets/cdn-performance-dashboard.png)
 
-CDN のパフォーマンスの詳細と改善方法の提案は、「**トレンドを表示**」をクリックします。
+CDN パフォーマンスとその改善方法についての推奨事項について詳しくは、「**トレンドを表示**」をクリックしてください。
 
 ![パフォーマンスのトレンド](assets/cdn-performance-trend.png)
 

@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8f3ceb5ebf348b5f3f496b1db04d7dd7c9a0ac5c
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 68%
+source-wordcount: '890'
+ht-degree: 64%
 
 ---
 
@@ -41,9 +41,9 @@ Cloud Manager ライセンスダッシュボードを使用すると、使用済
 
 ダッシュボードは、次の 3 つのセクションに分かれています。
 
-* **ソリューション** - このセクションでは、Sites や Assets などのライセンスを取得したソリューションの概要を説明します。
-* **アドオン** - このセクションでは、使用可能なライセンス済みソリューションに対するアドオンの概要を説明します。
-* **その他の使用権限** - このセクションでは、テナント内で使用できるサンドボックス、開発環境およびその他の使用権限の概要を説明します。
+* **ソリューション** - ライセンスを取得したソリューション。
+* **アドオン** – 使用可能なライセンス済みソリューションに対するアドオン。
+* **その他の使用権限** - テナント内で使用できる、サンドボックスや開発環境およびその他の使用権限。
 
 各セクションでは、利用可能な項目と使用方法をまとめています。現在、テナントに他のソリューションが存在する場合でも、Sites および Assets ソリューションのみが表示されます。
 
