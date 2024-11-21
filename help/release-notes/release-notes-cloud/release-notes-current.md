@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: b72d5fca4113f6d3b9cbabab655e36f2370231d9
+source-git-commit: 083e334c2ac248e15168ae3ec4c8daf2b2888ee5
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1722'
 ht-degree: 42%
 
 ---
@@ -171,7 +171,7 @@ intuitive and improving the mobile form-filling experience.
 
 開発者は、AEMをCloud Service機能として独自のアプリケーションやツールに深く組み込むことができます。 新しいAEM as a Cloud Service API は、一貫性があり、十分にドキュメント化され、使いやすいことを目標として、OpenAPI 仕様に従います。 認証が必要なエンドポイントの資格情報は、Adobe Developer Console プロジェクトを作成することで生成されます。
 
-OpenAPI ベースのAEM API の詳細を説明し、設定と使用方法を説明したエンドツーエンドのチュートリアルを試してください。
+[OpenAPI ベースのAEM API](/help/implementing/developing/open-api-based-apis.md) について詳しくは、設定と使用方法を説明した [ エンドツーエンドのチュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) を試してください。
 
 具体的には、以下に示す API エンドポイントは、早期導入プログラムの一部として利用できます。 興味があれば、それらの使用方法を説明して [aem-apis@adobe.com](mailto:aem-apis@adobe.com) に電子メールを送信してください。
 * [Sites コンテンツフラグメント API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
