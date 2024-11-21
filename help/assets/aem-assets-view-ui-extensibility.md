@@ -4,9 +4,9 @@ description: AEM Assets ビューの UI 拡張機能について説明します�
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: e47a8fc65e58ae2ffff805966d7dae8c6edc7aac
+source-git-commit: af7e6ab40212dfa3d91cda80a76b1b6b01dd65a3
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '598'
 ht-degree: 3%
 
 ---
@@ -17,10 +17,13 @@ ht-degree: 3%
 | ------------- | --------------------------- |---------|----|-----|
 
 AEM Assets ビューには、UI 拡張機能があります。 この機能を使用すると、Assets ビューの標準機能では満たされない特定のビジネスニーズを満たすために、カスタム UI コンポーネントをAEM Assets ビュー UI に追加できます。 この拡張機能により、AEM Assets ビューの柔軟性が向上し、組織は特定のワークフローと要件に合わせてインターフェイスを調整できます。
-拡張機能をアセット、フォルダー、コレクションレベルに追加できます。 追加された拡張機能は、アセット、コレクションまたはフォルダーの詳細ページの専用パネル内に表示されます。
+拡張機能をアセット、フォルダー、コレクションレベルに追加できます。 追加された拡張機能は、アセット、コレクション、フォルダーの詳細ページの専用パネル内に表示されます。
 
 >[!IMPORTANT]
-> AEM Assets ビュー UI 拡張機能は、[Assets Ultimate](/help/assets/assets-ultimate-overview.md) で利用できます。
+>
+> * AEM Assets ビュー UI 拡張機能は、[Assets Ultimate](/help/assets/assets-ultimate-overview.md) で利用できます。
+> * Assets ビューの UI 拡張機能は、as a Beta リリースで使用できます。 Assets ビュー UI 拡張機能に早期にアクセスするには、[Adobeのカスタマーサポートケースを作成して送信 ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) します。
+> * 「詳細なフィードバック」オプションを展開し、「問題を報告」をクリックすると、ドキュメントに関するフィードバックを得ることができます。
 
 ## Assets ビューへのアクセス方法に <a id="1"></a> いて
 
@@ -32,9 +35,6 @@ AEM Assets ビューには、UI 拡張機能があります。 この機能を�
 Assets ビュー内で、アセット、フォルダーまたはコレクションの詳細ページに移動します。 この詳細ページには、追加された UI 拡張機能を表示する専用のパネルがあります。
 ![ マイワークスペース ](/help/assets/assets/my-workspace-assets-view3.png)
 
->[!NOTE]
->
-> AEM Assets ビューの UI 拡張機能は、as a Beta リリースで使用できます。 「詳細なフィードバック」オプションを展開し、「問題を報告」をクリックすると、ドキュメントに関するフィードバックを得ることができます。
 
 ## 拡張コンポーネントを追加するための前提条件
 
