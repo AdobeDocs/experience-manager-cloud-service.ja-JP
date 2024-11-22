@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 5d2c09a3e1c67e6c2435d84112546107d284259f
+source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
 workflow-type: tm+mt
 source-wordcount: '1778'
 ht-degree: 41%
@@ -54,7 +54,7 @@ AEM インスタンス **[!DNL Edge Delivery Services]介して公開するた�
 
 ### AEM Sitesのプレリリース機能
 
-一意の ID ベースの参照を使用したコンテンツフラグメント参照が強化され、アセットやフラグメントが移動された場合でも安定したリンクが維持されるようになり、更新や再公開が不要になりました。 現在の制限事項：一意の ID では、ページ参照はまだサポートされていません。 コンテンツフラグメントでページが参照されている場合は、この機能を使用しないでください。
+強化 [ 一意の ID ベースの参照を使用したコンテンツフラグメント参照 ](/help/headless/graphql-api/uuid-reference-upgrade.md) により、アセットやフラグメントが移動された場合でも安定したリンクが有効なままになり、更新や再公開を行う必要がなくなります。 現在の制限事項：一意の ID では、ページ参照はまだサポートされていません。 コンテンツフラグメントでページが参照されている場合は、この機能を使用しないでください。
 
 ### 早期導入プログラム {#sites-early-adopter}
 

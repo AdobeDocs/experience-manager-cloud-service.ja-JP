@@ -4,7 +4,7 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: e44872277c4bda66fafd074416ea5253c365cc2f
+source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
 workflow-type: tm+mt
 source-wordcount: '5814'
 ht-degree: 96%
@@ -257,8 +257,6 @@ Sites GraphQL サービスは、コンテンツフラグメントモデルに対
 ### データタイプ {#data-types}
 
 AEM 用 GraphQL では一連のタイプをサポートしています。サポートされているすべてのコンテンツフラグメントモデルデータ型と、それに対応する GraphQL 型を以下の表に示します。
-
-<!-- CQDOC-21487 - check additions to table -->
 
 | コンテンツフラグメントモデル - データ型 | GraphQL の型 | 説明 |
 |--- |--- |--- |
@@ -1145,7 +1143,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
          * [サンプルクエリ - 1 つの特定の都市フラグメント](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)を参照してください
 
       * `_id_`：リポジトリ内のコンテンツフラグメントの UUID
-        <!-- CQDOC-21487 -->
+
          * [UUID 参照を持つ特定モデルのコンテンツフラグメントのサンプルクエリ ](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references) を参照してください。
          * [UUID リファレンスによるコンテンツフラグメントのサンプルクエリを参照してください。](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
 
