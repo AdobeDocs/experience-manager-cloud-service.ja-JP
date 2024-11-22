@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2fb23918b04f63aab3ae859485be673034e7aec
+source-git-commit: 9d169ad7a2982ee44d9b47a418d50b2806942ce2
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 96%
+source-wordcount: '1016'
+ht-degree: 94%
 
 ---
 
@@ -52,6 +52,11 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 1. **ドメインを追加**&#x200B;ダイアログボックスの「**ドメイン名**」フィールドに、使用するカスタムドメイン名を入力します。
 ドメイン名を入力する際は、`http://`、`https://`、スペースを含めないでください。
 
+   >[!NOTE]
+   >
+   >ドメインの `www` バージョンと `non-www` バージョンの両方が必要な場合は、別々に追加する必要があります。 例えば、`example.com` と `www.example.com` です。
+   <!-- Marius Petria on SLACK tmp-skyline-cdn-certificates - Actually  my opinion is that this option should be explicit in UI (that was present in the initial mocks of the design but for some reason it was dropped). I think when adding a domain there should be a check mark to also add www.domain. When adding example.com Customer should be prompted with the following options: Do you also want to add www.example.com and have a redirect example.com -> www.example.com?Do you also want to add www.example.com and have a redirect www.example.com -> example.com? -->
+
 1. 「**作成**」をクリックします。
 
 1. **ドメインを検証**&#x200B;ダイアログボックスの&#x200B;**このドメインで使用する予定の証明書タイプは何ですか？**&#x200B;ドロップダウンリストで、次のオプションのいずれかを選択します。
@@ -70,7 +75,7 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 
    >[!NOTE]
    >
-   >顧客管理の独自の（OV/EV または DV） SSL 証明書を使用し、顧客管理の CDN ***プロバイダー*** を使用する場合は、SSL 証明書の追加をスキップして、準備が整ったら直接 [CDN 設定の追加 ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) に移動できます。
+   >顧客管理の独自の（OV/EV または DV） SSL 証明書を使用する場合、顧客管理の CDN ***プロバイダー*** を使用するには、SSL 証明書の追加をスキップできます。 準備ができたら、代わりに、[CDN 設定の追加 ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) に直接移動します。
 
 
 ### アドビが管理する証明書の手順 {#adobe-managed-cert-steps}
