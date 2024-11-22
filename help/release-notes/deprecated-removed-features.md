@@ -4,10 +4,10 @@ description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 644228b1bdae20c1ed6ca1de71b4c60d75f2cc4a
+source-git-commit: 0ab75d1e49e06152cf3f4e8effe7d6d918b262c8
 workflow-type: tm+mt
-source-wordcount: '2603'
-ht-degree: 97%
+source-wordcount: '2709'
+ht-degree: 93%
 
 ---
 
@@ -505,12 +505,67 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
 
 AEM as a Cloud Service は Java 21 ランタイムに移行します。互換性を確保するには、次の調整を行うことが不可欠です。
 
-### org.objectweb.asm の最小バージョン {#org.objectweb.asm}
+### ビルド時間の要件：
+
+#### org.objectweb.asm の最小バージョン {#org.objectweb.asm}
 
 新しい JVM ランタイムのサポートを確保するには、org.objectweb.asm の使用をバージョン 9.5 以降に更新します。
 
-### org.apache.groovy の最小バージョン {#org.apache.groovy}
+#### org.apache.groovy の最小バージョン {#org.apache.groovy}
 
 新しい JVM ランタイムのサポートを確保するには、org.apache.groovy の使用をバージョン 4.0.22 以降に更新します。
 
 このバンドルは、AEM Groovy コンソールなどのサードパーティの依存関係を追加することで間接的に含めることができます。
+
+#### bnd-maven-plugin の最小バージョン {#bnd-maven-plugin}
+
+新しい JVM ランタイムが確実にサポートされるように、bnd-maven-plugin の使用方法をバージョン 6.4.0 以降に更新します。
+
+#### aemanalyzer-maven-plugin の最小バージョン {#aemanalyser-maven-plugin}
+
+aemanalyzer-maven-plugin の使用をバージョン 1.6.6 以降に更新して、新しい JVM ランタイムがサポートされるようにします。
+
+#### Maven-bundle-plugin の最小バージョン  {#maven-bundle-plugin}
+
+新しい JVM ランタイムがサポートされるように、maven-bundle-plugin の使用方法をバージョン 5.1.5 以降に更新します。
+
+#### maven-scr-plugin の依存関係の更新  {#maven-scr-plugin}
+
+`maven-scr-plugin` は Java 17 および 21 と直接互換性がありません。 ただし、以下のスニペットのように、プラグイン設定内で ASM 依存関係バージョンを更新することで、記述子ファイルを生成することは可能です。
+
+```
+[source,xml]
+ <project>
+   ...
+   <build>
+     ...
+     <plugins>
+       ...
+       <plugin>
+         <groupId>org.apache.felix</groupId>
+         <artifactId>maven-scr-plugin</artifactId>
+         <version>1.26.4</version>
+         <executions>
+           <execution>
+             <id>generate-scr-scrdescriptor</id>
+             <goals>
+               <goal>scr</goal>
+             </goals>
+           </execution>
+         </executions>
+         <dependencies>
+           <dependency>
+             <groupId>org.ow2.asm</groupId>
+             <artifactId>asm-analysis</artifactId>
+             <version>9.7.1</version>
+             <scope>compile</scope>
+           </dependency>
+         </dependencies>
+       </plugin>
+       ...
+     </plugins>
+     ...
+   </build>
+   ...
+ </project>
+```
