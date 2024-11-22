@@ -4,7 +4,7 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
+source-git-commit: b1b28cdc5fd1b697a2c2cd2893340d3c6afc8562
 workflow-type: tm+mt
 source-wordcount: '5814'
 ht-degree: 96%
@@ -1142,7 +1142,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
       * `_path`：リポジトリ内のコンテンツフラグメントへのパス
          * [サンプルクエリ - 1 つの特定の都市フラグメント](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)を参照してください
 
-      * `_id_`：リポジトリ内のコンテンツフラグメントの UUID
+      * `_id`：リポジトリ内のコンテンツフラグメントの UUID
 
          * [UUID 参照を持つ特定モデルのコンテンツフラグメントのサンプルクエリ ](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references) を参照してください。
          * [UUID リファレンスによるコンテンツフラグメントのサンプルクエリを参照してください。](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
