@@ -4,13 +4,10 @@ description: hCaptcha® サービスでフォームのセキュリティを容�
 topic-tags: Adaptive Forms, author
 keywords: hCaptcha&reg; サービス、アダプティブForms、CAPTCHA チャレンジ、ボット防止、フォーム送信セキュリティ、フォームスパム防止
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
-exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 553f456f0eab43cee11fb9e66ce9e1dbacdc2b5c
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '981'
 ht-degree: 33%
 
 ---
@@ -31,7 +28,7 @@ AEM Forms as a Cloud Service は、次の CAPTCHA ソリューションをサポ
 
 hCaptcha® サービスは、ボット、スパム、自動化された不正使用からフォームを保護します。チェックボックスウィジェットテストを行ってユーザーの反応を評価し、フォームを使用しているのが人間かボットかを判断します。テストが失敗した場合の続行を防ぎ、ボットによるスパムの投稿や悪意のあるアクティビティを防止することで、オンライントランザクションの安全性を高めます。
 
-AEM Formsのas a Cloud Serviceは、アダプティブ Forms コアコンポーネントの hCaptcha® をサポートしています。 これを使用して、フォーム送信時にチェックボックスウィジェットの課題を表示できます。
+AEM Formsのas a Cloud Serviceは、アダプティブ Formsの hCaptcha® をサポートしています。 これを使用して、フォーム送信時にチェックボックスウィジェットの課題を表示できます。
 
 <!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b677ab1781491059098cbf63f13f72555d6012b3
+source-git-commit: d74ca698d0b6992d1f58173fbcd6bac399421fef
 workflow-type: tm+mt
-source-wordcount: '5880'
+source-wordcount: '5883'
 ht-degree: 97%
 
 ---
@@ -750,7 +750,7 @@ ht-degree: 97%
             + [アダプティブフォームの REST エンドポイント送信アクションへの送信を設定する](/help/forms/configure-submit-action-restpoint.md)
             + [アダプティブフォームのメール送信アクションの送信を設定する](/help/forms/configure-submit-action-send-email.md)
             + [アダプティブフォームでの Google reCAPTCHA の使用](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [アダプティブフォームでの hCaptcha の使用](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [アダプティブフォームのコアコンポーネントでの hCAPTCHA の使用](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
             + [アダプティブフォームにカスタムエラーハンドラーの追加](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [コアコンポーネントに基づくアダプティブフォームのロケールの追加](/help/forms/supporting-new-language-localization-core-components.md)
             + [アダプティブフォームの JSON スキーマのデザイン（コアコンポーネント）](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -797,7 +797,7 @@ ht-degree: 97%
          + アダプティブフォームへのコンポーネントの追加 {#add-components-to-an-adaptive-form}
             + [アダプティブフォームでの CAPTCHA の使用](/help/forms/captcha-adaptive-forms.md)
             + [アダプティブフォームでの hCaptcha の使用](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [アダプティブフォームでの Turnstile の使用](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [アダプティブフォームでの Turnstile CAPTCHA の使用](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [コアコンポーネントの使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
             + [手書き署名の適用](/help/forms/signing-forms-using-scribble.md)
             + [アダプティブフォームへのテーブルの追加](/help/forms/adaptive-forms-tables.md)
