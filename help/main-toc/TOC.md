@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6653a761ee8d0cb1d7b07acd263121422d419a8b
+source-git-commit: b677ab1781491059098cbf63f13f72555d6012b3
 workflow-type: tm+mt
-source-wordcount: '5873'
+source-wordcount: '5880'
 ht-degree: 97%
 
 ---
@@ -1051,6 +1051,7 @@ ht-degree: 97%
       + [永続的な GraphQL クエリ](/help/headless/graphql-api/persisted-queries.md)
       + [GraphQLクエリの最適化](/help/headless/graphql-api/graphql-optimization.md)
       + [最適化された GraphQL フィルタリング用コンテンツフラグメントの更新](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
+      + [UUID 参照用のコンテンツフラグメントのアップグレード](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [GraphQL クエリの例](/help/headless/graphql-api/sample-queries.md)
       + [GraphQL クエリのトラブルシューティング](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
    + [コンテンツフラグメント配信用のAEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)

@@ -4,15 +4,21 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 575b626447f6b88c1be601fbbd4de7eeb0264019
+source-git-commit: e44872277c4bda66fafd074416ea5253c365cc2f
 workflow-type: tm+mt
-source-wordcount: '5582'
-ht-degree: 99%
+source-wordcount: '5814'
+ht-degree: 96%
 
 ---
 
 
 # コンテンツフラグメントと共に使用する AEM GraphQL API {#graphql-api-for-use-with-content-fragments}
+
+>[!IMPORTANT]
+>
+>コンテンツフラグメントで使用するGraphQL API の様々な機能は、早期導入プログラムを通じて利用できます。
+>
+>ステータスと、関心のあるユーザーへの適用方法を確認するには、[ リリースノート ](/help/release-notes/release-notes-cloud/release-notes-current.md) を確認してください。
 
 Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 
@@ -252,6 +258,8 @@ Sites GraphQL サービスは、コンテンツフラグメントモデルに対
 
 AEM 用 GraphQL では一連のタイプをサポートしています。サポートされているすべてのコンテンツフラグメントモデルデータ型と、それに対応する GraphQL 型を以下の表に示します。
 
+<!-- CQDOC-21487 - check additions to table -->
+
 | コンテンツフラグメントモデル - データ型 | GraphQL の型 | 説明 |
 |--- |--- |--- |
 | 1 行のテキスト | `String`、`[String]` | 作成者名、場所名などの単純な文字列に使用します。 |
@@ -262,7 +270,9 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 | 定義済みリスト | `String` | モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
 | タグ | `[String]` | AEM で使用されているタグを表す文字列のリストを表示するために使用します |
 | コンテンツ参照 | `String`、`[String]` | AEM 内の別のアセットへのパスを表示するために使用します |
+| コンテンツ参照 (UUID) | `String`、`[String]` | パスを表示するために使用します。パスは、AEMの別のアセットに対して UUID で表されます |
 | フラグメント参照 | *モデル型の*<br><br>単一のフィールド：`Model` - 直接参照されるモデル型 <br><br>マルチフィールド（1 つの参照タイプ）：`[Model]` - 型の配列 `Model`（配列から直接参照）<br><br>複数の参照型を持つマルチフィールド：`[AllFragmentModels]` - 和集合型を持つ配列から参照される、すべてのモデル型の配列 | モデルの作成時に定義された、特定のモデル型の 1 つ以上のコンテンツフラグメントの参照に使用します |
+| フラグメント参照 (UUID) | *モデル型の*<br><br>単一のフィールド：`Model` - 直接参照されるモデル型 <br><br>マルチフィールド（1 つの参照タイプ）：`[Model]` - 型の配列 `Model`（配列から直接参照）<br><br>複数の参照型を持つマルチフィールド：`[AllFragmentModels]` - 和集合型を持つ配列から参照される、すべてのモデル型の配列 | モデルの作成時に定義された、特定のモデル型の 1 つ以上のコンテンツフラグメントの参照に使用します |
 
 {style="table-layout:auto"}
 
@@ -306,6 +316,27 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 ```
 
 [サンプルクエリ - ある 1 つの特定の都市フラグメント](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)を参照してください。
+
+#### ID （UUID） {#id-uuid}
+
+ID フィールドは、AEM GraphQLの識別子としても使用されます。 これは、AEM リポジトリ内のコンテンツフラグメントアセットのパスを表しますが、実際のパスを保持する代わりに、リソースを表す UUID を保持します。 これをコンテンツフラグメントの識別子として選択した理由は次のとおりです。
+
+* AEM 内で一意である
+* 容易に取得でき、
+* リソースを移動しても変更されません。
+
+コンテンツフラグメントおよび参照されるコンテンツフラグメントまたはアセットの UUID は、JSON プロパティリク `_id` ストを介して返すことができます。
+
+```graphql
+{
+  articleList {
+    items {
+        _id
+        _path
+    }
+  }
+}
+```
 
 #### メタデータ {#metadata}
 
@@ -1112,6 +1143,11 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
       * `_path`：リポジトリ内のコンテンツフラグメントへのパス
          * [サンプルクエリ - 1 つの特定の都市フラグメント](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)を参照してください
+
+      * `_id_`：リポジトリ内のコンテンツフラグメントの UUID
+        <!-- CQDOC-21487 -->
+         * [UUID 参照を持つ特定モデルのコンテンツフラグメントのサンプルクエリ ](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references) を参照してください。
+         * [UUID リファレンスによるコンテンツフラグメントのサンプルクエリを参照してください。](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
 
       * `_reference`：参照（リッチテキストエディターでのインライン参照など）を表示します
          * [プリフェッチされた参照を含んだ複数のコンテンツフラグメントのサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)を参照してください

@@ -4,16 +4,22 @@ description: GraphQL を AEM と共に使用し、サンプルコンテンツと
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: afff23f505b789667e4d34683d0dfd11b1a436a8
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 100%
+source-wordcount: '1940'
+ht-degree: 94%
 
 ---
 
 # AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ {#learn-graphql-with-aem-sample-content-queries}
 
 GraphQL を AEM と共に使用し、サンプルコンテンツとクエリを調べて、コンテンツをヘッドレスに提供する方法を説明します。
+
+>[!IMPORTANT]
+>
+>コンテンツフラグメントで使用するGraphQL API の様々な機能は、早期導入プログラムを通じて利用できます。
+>
+>ステータスと、関心のあるユーザーへの適用方法を確認するには、[ リリースノート ](/help/release-notes/release-notes-cloud/release-notes-current.md) を確認してください。
 
 >[!NOTE]
 >
@@ -1479,6 +1485,79 @@ query {
         ... on ArchiveRef {
           _path
           format
+        }
+      }
+    }
+  }
+}
+```
+
+### UUID 参照を使用した特定モデルのコンテンツフラグメントのサンプルクエリ {#sample-wknd-fragment-specific-model-uuid-references}
+
+<!-- CQDOC-21487 - need more details on both, text must be checked too -->
+
+これらのクエリでは次のものを検索します。
+
+* コンテンツフラグメントの UUID、および参照されるコンテンツフラグメントまたはアセットの UUID
+* 結果は、JSON プロパティ `_id` を使用して返されます
+
+#### UUID 参照を使用した特定モデルのコンテンツフラグメントのサンプルクエリ {#sample-wknd-fragment-specific-model-using-a-uuid-reference}
+
+次のクエリは、`_id` と `_path` を使用して、すべてのコンテンツ参照を返します。
+
+```graphql
+{
+  articleList {
+    items {
+        _id
+        _path
+        title
+        featuredImage {
+          ... on ImageRef {
+            _id
+            _path           
+          }
+        }
+        authorFragment {
+          firstName
+          lastName
+          profilePicture {
+            ... on ImageRef {
+              _id
+              _path
+            }
+          }
+        }
+      }
+  }
+}
+```
+
+#### UUID リファレンスによるコンテンツフラグメントのサンプルクエリ {#sample-wknd-fragment-specific-model-by-uuid-reference}
+
+次のクエリは、特定の `_id` に関連するすべてのコンテンツ参照を返します。
+
+```graphql
+{
+  articleById(_id: "3ce2bf53-7436-4d3e-b19a-2793bc2ca63e") {
+    item {
+      _id
+      _path
+      title
+      featuredImage {
+        ... on ImageRef {
+          _id
+          _path
+        }
+      }
+      authorFragment {
+        firstName
+        lastName
+        profilePicture {
+          ... on ImageRef {
+            _id
+            _path
+          }
         }
       }
     }
