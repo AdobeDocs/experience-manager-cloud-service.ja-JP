@@ -7,9 +7,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: ecf42a4bda424bb344e1b348924f1435a99f26c7
+source-git-commit: 529e5919381d6c347f1eb45f913b2b529de80fd6
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '389'
 ht-degree: 34%
 
 ---
@@ -51,7 +51,6 @@ Adobe Experience Managerの中央ハブとして機能するAEM ホームペー�
 
 使用可能な実稼動AEM Cloud Service環境がない場合、オプションはグレー表示（使用不可）になります。
 
-![](/help/implementing/cloud-manager/assets/aem-home-no-prod-environs.png)
-
-
+![ 実稼動環境のAEM ホーム ](/help/implementing/cloud-manager/assets/aem-home-no-prod-environs.png)
+.
 
