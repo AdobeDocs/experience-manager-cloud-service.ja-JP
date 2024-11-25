@@ -1,66 +1,66 @@
 ---
 title: Cloud Manager の Edge Delivery Services の概要
-description: Edge Delivery Servicesを使用してCloud Manager プロジェクトを配信する方法を説明します。
+description: Edge Delivery Services を使用して Cloud Manager プロジェクトを配信する方法について説明します。
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 0fb5476b4cff9e26971696bd8352181a71e7b3e4
 workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 10%
+ht-degree: 89%
 
 ---
 
 
 # Cloud Manager の Edge Delivery Services の概要 {#edge-delivery-services}
 
-Edge Delivery Services は、web サイト上のコンテンツの柔軟なオーサリングを実現する、構成可能なサービスセットです。この機能を使用すると、次のことが可能です。
+Edge Delivery Services は、web サイト上のコンテンツの柔軟なオーサリングを実現する、合成可能なサービスセットです。この機能では、次の操作を実行できます。
 
-* 完璧な Lighthouse スコアで高速サイトを作成します。
-* RUM （Real Use Monitoring）を通じてパフォーマンスを継続的に監視します。
-* コンテンツソースを分離することでオーサリング効率を向上させます。
+* 完璧な Lighthouse スコアで高速なサイトを作成する。
+* RUM（実際の使用のモニタリング）を通じてパフォーマンスを継続的に監視する。
+* コンテンツソースを分離することでオーサリング効率を向上させる。
 
-ユニバーサルエディターとドキュメントベースのオーサリングを使用して、AEM コンテンツ管理とWYSIWYG オーサリングの両方を使用できます。
+ユニバーサルエディターを使用した AEM コンテンツ管理および WYSIWYG オーサリングと、ドキュメントベースのオーサリングの両方を使用できます。
 
-AEM as a Cloud ServiceのCloud Managerを使用すると、プロジェクトのEdge Delivery サービスを有効にできます。
+AEM as a Cloud Service の Cloud Manager を使用すると、プロジェクトで Edge Delivery Service を有効にできます。
 
 >[!TIP]
 >
->Edge Delivery Servicesの詳細とAEMでの使用方法については、[Edge Delivery Servicesの概要 ](/help/edge/overview.md) を参照してください。
+>Edge Delivery Services の概要と、AEM で使用する方法について詳しくは、[Edge Delivery Services の概要](/help/edge/overview.md)を参照してください。
 
-## Cloud ManagerのEdge Delivery Servicesについて {#edge-in-cloud-manager}
+## Cloud Manager の Edge Delivery Services について {#edge-in-cloud-manager}
 
-Adobe Experience Manager Sitesの一部としてライセンスをEdge Delivery Servicesしている場合は、Cloud Managerで直接Edge Delivery Servicesを使用してサイトをオンボーディングし、[ ガイド付きのセルフサービスエクスペリエンスを使用して ](/help/implementing/cloud-manager/managing-code/private-repositories.md) 運用を開始できます。
+Adobe Experience Manager Sites の一部として Edge Delivery Services のライセンスを取得している場合は、Cloud Manager で Edge Delivery Services を使用してサイトを直接オンボードし、[ガイド付きのセルフサービスエクスペリエンスを使用](/help/implementing/cloud-manager/managing-code/private-repositories.md)して運用開始できます。
 
-さらに、主要なワークフロー間の一貫性を確保しながら、すべてのAEM プロパティを管理できる統一されたエクスペリエンスにアクセスできます。 これらのワークフローには、ドメイン名の管理、SSL 証明書の管理、CDN マッピングが含まれます。
+さらに、主要なワークフロー全体の一貫性を確保しながら、すべての AEM プロパティを管理するための統合されたエクスペリエンスにアクセスできます。これらのワークフローには、ドメイン名の管理、SSL 証明書の管理、CDN マッピングが含まれます。
 
-## Edge Delivery ServicesにAdobeの推奨パスを使用するメリット {#recommended-path-eds}
+## アドビが推奨する Edge Delivery Services のパスを使用するメリット {#recommended-path-eds}
 
-Cloud Managerを通じてEdge Delivery Services ライセンスにアクセスして利用することで、Adobeから得られるメリットを最大限に活用できます。 これにより、いくつかの主なメリットを活用できます。
+Cloud Manager を通じて Edge Delivery Services ライセンスにアクセスして使用することで、アドビのメリットを最大限に活用できます。これにより、いくつかの主なメリットを活用できます。
 
-* [ 選択したプログラムでライセンスを使用する ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)、[ 他のプログラムを更新する ](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)、またはその両方。
-* [API ファースト ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) の利点を活用して、CRUD （作成、読み取り、更新、削除）操作を実行します。
-* [SLA レポートへのアクセス ](/help/implementing/cloud-manager/sla-reporting.md) （*近日公開*）
-* 登録済みの実稼動プログラムの [Adobeサポートへのアクセス権を取得します ](/help/edge/overview.md#support-ticket)。
+* [選択したプログラムのライセンスを消費](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)、[他のプログラムを更新](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)、またはその両方を実行します。
+* CRUD（作成、読み取り、更新、削除）操作を実行するための [API ファースト](https://developer.adobe.com/experience-cloud/experience-manager-apis/)のメリットを活用します。
+* [SLA レポートへのアクセス](/help/implementing/cloud-manager/sla-reporting.md)（*近日公開予定*）
+* 登録済みの実稼動プログラムに関する[アドビサポートにアクセス](/help/edge/overview.md#support-ticket)できます。
 
-さらに、Cloud Managerを使用すると、[Adobe管理による CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) をEdge Delivery サイトに使用し、DV 証明書の設定や追加など、セルフサービスの CDN 管理などの主なメリットを活用できます。 さらに、DV 証明書を作成した後、Adobeは、削除されない限り、3 か月ごとに自動的に更新します。 AdobeのEdge Delivery Services ライセンスを持っておらず、これらの利点を回避する場合は、自分で管理する CDN のみを使用できます。 この設定は、[`aem.live` プラットフォーム上になければなりません ](https://www.aem.live/docs/go-live-checklist#cdn-configuration)。
+さらに、Cloud Manager を使用すると、Edge Delivery サイトに[アドビが管理する CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) を使用し、DV 証明書の設定や追加などのセルフサービス CDN 管理などの主なメリットを活用できます。また、DV 証明書を作成すると、その証明書を削除しない限り、アドビが 3 か月ごとに自動的に更新します。アドビの Edge Delivery Services ライセンスを持っておらず、これらのメリットを回避することにした場合は、独自の自己管理 CDN のみを使用できます。この設定は [`aem.live` プラットフォーム](https://www.aem.live/docs/go-live-checklist#cdn-configuration)上で行う必要があります。
 
-## 実稼動プログラムまたはサンドボックスプログラムへのEdge Delivery Servicesの追加について
+## 実稼動プログラムまたはサンドボックスプログラムへの Edge Delivery Services の追加について
 
-Edge Delivery Servicesは、プロジェクトの開始方法に応じて、様々な方法で追加できます。
+Edge Delivery Services は、プロジェクトの開始方法に応じて、様々な方法で追加できます。
 
 | ユースケース | 説明 |
 | --- | --- |
-| 新しい実稼動プログラムにEdge Delivery Servicesを追加したいのですが、 | [ 実稼動プログラムの作成 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) を参照してください。<br> ウィザードの「**ソリューションとアドオン**」タブで、「**Edge Delivery Services**」を選択します。 |
-| 既存の実稼動プログラムにEdge Delivery Servicesを追加したいのですが、 | [ プログラムの編集 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) を参照してください。<br>**プログラムを編集** ダイアログボックスの「**ソリューションとアドオン**」タブで、「**Edge Delivery Services**」を選択します。 |
-| Cloud ManagerにEdge Delivery サイトを追加したいのですが | [Edge Delivery サイトの追加 ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) を参照してください。 |
-| 新規または既存のサンドボックスプログラムにEdge Delivery Servicesを追加したいのですが、 | [ サンドボックスプログラムの作成 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) を参照してください。<br> サンドボックスプログラムを作成すると、デフォルトでEdge Delivery Servicesがプログラムに追加されるので、選択する必要はありません。<br>Edge Deliveryが一般提供される前の既存のサンドボックスプログラムは、Edge Delivery Servicesを自動的に継承します。 |
+| 新しい実稼動プログラムに Edge Delivery Services を追加したい。 | [実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)を参照してください。<br>ウィザードの「**ソリューションとアドオン**」タブで、「**Edge Delivery Services**」を選択します。 |
+| 既存の実稼動プログラムに Edge Delivery Services を追加したい。 | [プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)を参照してください。<br>**プログラムを編集**&#x200B;ダイアログボックスの「**ソリューションとアドオン**」タブで、「**Edge Delivery Services**」を選択します。 |
+| Cloud Manager に Edge Delivery サイトを追加したい | [Edge Delivery サイトの追加](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)を参照してください。 |
+| 新規または既存のサンドボックスプログラムに Edge Delivery Services を追加したい。 | [サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)を参照してください。<br>サンドボックスプログラムを作成すると、Edge Delivery Services がデフォルトでプログラムに追加されるので、これを選択する必要はありません。<br>Edge Delivery が一般提供される前の既存のサンドボックスプログラムは、Edge Delivery Services を自動的に継承します。 |
 
 >[!NOTE]
 >
->* プログラムを追加または編集するには、**ビジネスオーナー** の役割のメンバーであるか、その権限が付与されている必要があります。
->* 実稼動プログラムに適用するには、未使用のEdge Delivery Services ライセンスが必要です。
->* Edge Delivery Servicesライセンスがプログラムに適用またはプログラムから削除されると、変更はパイプラインを実行しなくても、直ちに有効になります。
+>* プログラムを追加または編集するには、**ビジネス所有者**&#x200B;の役割のメンバーであるか、これらの操作を行う権限が付与されている必要があります。
+>* 実稼動プログラムに適用する前に、組織に未使用の Edge Delivery Services ライセンスが必要です。
+>* Edge Delivery Services ライセンスがプログラムに適用または削除されると、パイプラインを実行しなくても、変更がすぐに有効になります。
 
 
 ## Cloud ManagerのEdge Delivery To Do リストについて {#ed-todo-list}
@@ -73,12 +73,12 @@ Cloud Managerの **Edge Delivery To-Do リスト** は、オンボーディン�
 
 |   | タスク | 説明 |
 | --- | --- | --- |
-| 1 | 製品コラボレーションチャネルに参加 | **リクエストを今すぐ送信** をクリックすると、会社のチャネルを作成するためのリクエストがAdobeに送信されます。 チャネルが既に存在する場合は、会社のチャネルに転送されます。 |
+| 1 | 製品コラボレーションチャネルに参加 | 「**今すぐリクエストを送信**」をクリックすると、会社のチャネルを作成するためのリクエストがアドビに送信されます。チャネルが既に存在する場合は、会社のチャネルに転送されます。 |
 | 2 | 前提条件を完了 | [ はじめる前にチュートリアルを表示 ](https://www.aem.live/developer/tutorial) を参照してください。 |
-| 3 | Edge Delivery サイトを追加 | [Edge Delivery サイトの追加 ](#eds-add-site) を参照してください。 |
+| 3 | Edge Delivery サイトを追加 | [Edge Delivery サイトの追加](#eds-add-site)を参照してください。 |
 | 4 | ドメインを追加 | [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。 |
-| 5 | SSL 証明書を追加 | [SSL 証明書の追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。 |
-| 6 | Edge Delivery サイトの CDN の設定 | [CDN 設定の追加 ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) を参照してください。 |
+| 5 | SSL 証明書を追加 | [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)を参照してください。 |
+| 6 | Edge Delivery サイトの CDN を設定 | [CDN 設定の追加](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)を参照してください。 |
 | 7 | プッシュ検証の設定 | [Edge Delivery サイトのプッシュ検証の設定 ](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md) を参照してください。 |
 | 8 | 運用開始 | [ 運用開始チェックリスト ](/help/edge/docs/go-live-checklist.md) を参照してください。 |
 

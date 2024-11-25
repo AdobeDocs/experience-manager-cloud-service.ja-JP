@@ -1,24 +1,24 @@
 ---
-title: Edge Delivery Services プロジェクトを使用したWYSIWYG オーサリング用コンテンツモデリング
-description: Edge Delivery Services プロジェクトでのWYSIWYG オーサリングでのコンテンツモデリングの仕組みと、独自のコンテンツをモデル化する方法について説明します。
+title: Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリング用のコンテンツモデリング
+description: Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリングにおけるコンテンツモデリングの仕組みと独自のコンテンツをモデル化する方法について説明します。
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 source-git-commit: dce661331c42ba2cc082553e1e344c73556ce18d
 workflow-type: tm+mt
 source-wordcount: '2196'
-ht-degree: 82%
+ht-degree: 98%
 
 ---
 
 
-# Edge Delivery Services プロジェクトを使用したWYSIWYG オーサリング用コンテンツモデリング {#content-modeling}
+# Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリング用のコンテンツモデリング {#content-modeling}
 
-Edge Delivery Services プロジェクトでのWYSIWYG オーサリングでのコンテンツモデリングの仕組みと、独自のコンテンツをモデル化する方法について説明します。
+Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリングにおけるコンテンツモデリングの仕組みと独自のコンテンツをモデル化する方法について説明します。
 
 ## 前提条件 {#prerequisites}
 
-Edge Delivery ServicesでWYSIWYG オーサリングを使用するプロジェクトは、コンテンツソースや [ オーサリング方法 ](/help/edge/wysiwyg-authoring/authoring.md) に関係なく、他のEdge Delivery Servicesプロジェクトの仕組みの大部分を継承します。
+Edge Delivery Services で WYSIWYG オーサリングを行うプロジェクトは、コンテンツソースまたは[オーサリングメソッド](/help/edge/wysiwyg-authoring/authoring.md)とは独立して、他の Edge Delivery Services プロジェクトの大半の仕組みを継承します。
 
 プロジェクトのコンテンツをモデル化する前に、まず、次のドキュメントをお読みください。
 
@@ -26,7 +26,7 @@ Edge Delivery ServicesでWYSIWYG オーサリングを使用するプロジェ�
 * [マークアップ、セクション、ブロック、自動ブロック](/help/edge/developer/markup-sections-blocks.md)
 * [ブロックコレクション](/help/edge/developer/block-collection.md)
 
-コンテンツのソースに依存しない方法で機能するような、説得力のあるコンテンツモデルを考え出すには、これらの概念を理解することが不可欠です。このドキュメントでは、WYSIWYG オーサリングのために特別に実装された仕組みについて詳しく説明します。
+コンテンツのソースに依存しない方法で機能するような、説得力のあるコンテンツモデルを考え出すには、これらの概念を理解することが不可欠です。このドキュメントでは、WYSIWYG オーサリング用に特化して実装されている仕組みについて詳細を説明します。
 
 ## デフォルトコンテンツ {#default-content}
 
@@ -39,17 +39,17 @@ AEM では、このコンテンツは非常にシンプルで、事前定義済�
 * **画像**：ソース、説明
 * **ボタン**：テキスト、タイトル、URL、タイプ（デフォルト、プライマリ、セカンダリ）
 
-これらのコンポーネントのモデルは、[Edge Delivery ServicesでWYSIWYGをオーサリングするためのボイラープレート ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112) の一部です。
+これらのコンポーネントのモデルは、[Edge Delivery Services を使用した WYSIWYG オーサリング用のボイラープレート](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)の一部です。
 
 ## ブロック {#blocks}
 
-ブロックは、特定のスタイルや機能を使用して豊富なコンテンツを作成するために使用します。デフォルトコンテンツとは異なり、ブロックには追加のセマンティクスが必要です。
+ブロックは、特定のスタイルや機能を使用して豊富なコンテンツを作成するために使用します。デフォルトコンテンツとは異なり、ブロックには追加のセマンティックが必要です。
 
 ブロックは基本的に、JavaScript で装飾され、スタイルシートでスタイル設定されたコンテンツの要素です。
 
 ### ブロックモデルの定義 {#model-definition}
 
-Edge Delivery ServicesでWYSIWYG オーサリングを使用する場合は、コンテンツを作成するインターフェイスを作成者に提供するために、ブロックのコンテンツを明示的にモデル化する必要があります。 基本的には、モデルを作成して、オーサリング UI がブロックに基づいて作成者に提示するオプションを理解できるようにする必要があります。
+Edge Delivery Servicesで WYSIWYG オーサリングを使用する場合、作成者がコンテンツ作成に使用するインターフェイスを提供できるように、ブロックのコンテンツを明示的にモデル化する必要があります。基本的には、モデルを作成して、オーサリング UI がブロックに基づいて作成者に提示するオプションを理解できるようにする必要があります。
 
 [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json) ファイルは、ブロックのモデルを定義します。コンポーネントモデルで定義されたフィールドは、AEM 内でプロパティとして保持され、ブロックを構成するテーブル内のセルとしてレンダリングされます。
 
@@ -326,7 +326,7 @@ Edge Delivery ServicesでWYSIWYG オーサリングを使用する場合は、�
 
 どのプロジェクトでも初期段階で、すべてのブロックについて、コンテンツモデルを慎重に検討する必要があります。作成者がブロックの実装やスタイルを再利用しながら、切り替えたり組み合わせたりできるようにするには、コンテンツソースやオーサリングエクスペリエンスに依存しないようにする必要があります。詳細と一般的なガイダンスについては、[David のモデル（テイク 2）にあります。](https://www.aem.live/docs/davidsmodel)具体的には、[ブロックコレクション](/help/edge/developer/block-collection.md)は、一般的なユーザーインターフェイスのパターンにおける特定の使用例に対応する、広範なコンテンツモデルのセットを含んでいます。
 
-Edge Delivery Servicesを使用したWYSIWYGのオーサリングでは、リッチテキストなどの文脈依存マークアップを編集するのではなく、複数のフィールドで構成されるフォームを使用して情報をオーサリングする場合に、魅力的なセマンティックコンテンツモデルを提供する方法が問題となります。
+Edge Delivery Services を使用した WYSIWYG オーサリングでは、リッチテキストのようにコンテキスト内でセマンティックマークアップを編集するのではなく、複数のフィールドで構成されるフォームを使用して情報がオーサリングされる場合に、魅力的なセマンティックコンテンツモデルをどのように提供するかという問題が生じます。
 
 この問題を解決するには、魅力的なコンテンツモデルを容易に作成できる 3 つの方法があります。
 
@@ -608,7 +608,7 @@ Edge 配信サービスのコンテンツモデルでは、セクションに含
 
 AEM as a Cloud Service では、パスごとまたはパスパターンごとにテーブルのような方法でメタデータを定義できます。Excel や Google スプレッドシートに似た、表のようなデータ用のオーサリング UI が利用可能です。
 
-詳しくは、[ スプレッドシートを使用した表形式のデータの管理 ](/help/edge/wysiwyg-authoring/tabular-data.md) を参照してください。
+詳しくは、[スプレッドシートを使用した表形式データの管理](/help/edge/wysiwyg-authoring/tabular-data.md)ドキュメントを参照してください。
 
 ### ページプロパティ {#page-properties}
 
@@ -618,7 +618,7 @@ AEM で使用できるデフォルトのページプロパティの多くは、�
 * ISO8601 形式の `published-time` としてドキュメントが最後に公開された時刻
 * `cq-tags` としての `cq:tags`、タグ ID のコンマ区切りリスト。
 
-作成者がユニバーサルエディターで使用できる、カスタムページメタデータ用のコンポーネントモデルを定義することもできます。
+また、カスタムページメタデータのコンポーネントモデルを定義することもできます。このモデルは、ユニバーサルエディターで作成者が使用できます。
 
 これを行うには、ID `page-metadata` を持つコンポーネントモデルを作成します。
 
@@ -637,13 +637,13 @@ AEM で使用できるデフォルトのページプロパティの多くは、�
 
 ## 次の手順 {#next-steps}
 
-これで、コンテンツのモデル化方法を理解できたので、WYSIWYG オーサリングプロジェクトを使用して独自のEdge Delivery Servicesのブロックを作成できます。
+これで、コンテンツをモデル化する方法を理解できたので、WYSIWYG オーサリングプロジェクトを使用して独自の Edge Delivery Services のブロックを作成できます。
 
-Edge Delivery Servicesプロジェクトを使用したWYSIWYG オーサリングで、ユニバーサルエディターで使用するために実装されたブロックを作成する方法については、ドキュメント [ ユニバーサルエディターで使用するために実装されたブロックの作成 ](/help/edge/wysiwyg-authoring/create-block.md) を参照してください。
+Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリングで、ユニバーサルエディターで使用するために実装されたブロックを作成する方法について詳しくは、[ユニバーサルエディターで使用するために実装されたブロックの作成](/help/edge/wysiwyg-authoring/create-block.md)ドキュメントを参照してください。
 
-ブロックの作成に精通している場合は、ドキュメント [Edge Delivery Servicesを使用したWYSIWYG オーサリングの開発者向けガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) を参照して、Edge Delivery Servicesとコンテンツオーサリング用のユニバーサルエディターを使用して新しいAdobe Experience Manager サイトを使い始めてください。
+ブロックの作成に慣れている場合は、[Edge Delivery Services を使用した WYSIWYG オーサリングの開発者向け入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)ドキュメントを参照して、Edge Delivery Services とコンテンツオーサリング用のユニバーサルエディターを使用し、新しい Adobe Experience Manager サイトを立ち上げて実行します。
 
 >[!TIP]
 >
->AEM as a Cloud Serviceをコンテンツソースとして使用したWYSIWYG オーサリングが可能な新しいEdge Delivery Servicesプロジェクトの作成に関するエンドツーエンドのチュートリアルについては、[ このAEM GEMs ウェビナー ](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery) を参照してください。
+>コンテンツソースとして AEM as a Cloud Service を使用して WYSIWYG オーサリングを実行できる、新しい Edge Delivery Services プロジェクトの作成に関するエンドツーエンドのチュートリアルについて詳しくは、[この AEM GEM ウェビナー](https://experienceleague.adobe.com/ja/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)を参照してください。
 

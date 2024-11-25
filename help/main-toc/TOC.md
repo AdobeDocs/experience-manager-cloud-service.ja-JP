@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
 workflow-type: tm+mt
 source-wordcount: '5886'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -473,10 +473,10 @@ ht-degree: 96%
    + [サポートされているファイル形式](/help/assets/file-format-support.md)
    + [アセットマイクロサービスの概要](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets] でのアクセシビリティ](/help/assets/accessibility.md)
-   + [Assetsas a Cloud Service究極](/help/assets/assets-ultimate-overview.md)
-   + [Assets Ultimate のas a Cloud Service化の有効化](/help/assets/enable-assets-ultimate.md)
-   + [Assetsas a Cloud Serviceプライム](/help/assets/assets-prime.md)
-   + [Assets Collaborator ユーザー](/help/assets/assets-collaborator-users.md)
+   + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
+   + [Assets as a Cloud Service Ultimate の有効化](/help/assets/enable-assets-ultimate.md)
+   + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
+   + [Assets 共同作業者ユーザー](/help/assets/assets-collaborator-users.md)
    + デジタルアセットの管理 {#manage}
       + マイクロフロントエンドのアセットセレクター {#asset-selector}
          + [アセットセレクターの概要](/help/assets/overview-asset-selector.md)
@@ -484,7 +484,7 @@ ht-degree: 96%
             + [アセットセレクターの統合の概要](/help/assets/integrate-asset-selector.md)
             + [アセットセレクターとアドビアプリケーションの統合](/help/assets/integrate-asset-selector-adobe-app.md)
             + [アセットセレクターとアドビ以外のアプリケーションの統合](/help/assets/integrate-asset-selector-non-adobe-app.md)
-            + [OpenAPI 機能を備えた Dynamic Media へのアセットセレクターの統合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+            + [OpenAPI 機能を備えた Dynamic Media とのアセットセレクターの統合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
          + [アセットセレクターのプロパティ](/help/assets/asset-selector-properties.md)
          + [アセットセレクターの例](/help/assets/asset-selector-examples.md)
          + [アセットセレクターのカスタマイズ](/help/assets/asset-selector-customization.md)
@@ -651,11 +651,11 @@ ht-degree: 96%
       + [コンテンツハブへのブランド承認済みアセットのアップロードまたは読み込み](/help/assets/upload-brand-approved-assets.md)
       + [コンテンツハブユーザーインターフェイスの設定](/help/assets/configure-content-hub-ui-options.md)
       + [コンテンツハブ向けアセットの承認](/help/assets/approve-assets-content-hub.md)
-      + [コンテンツハブでのアセットの検索](/help/assets/search-assets-content-hub.md)
+      + [コンテンツハブでアセットを検索する](/help/assets/search-assets-content-hub.md)
       + [アセットのプロパティ](/help/assets/asset-properties-content-hub.md)
       + [コンテンツハブでのアセットの共有](/help/assets/share-assets-content-hub.md)
       + [コンテンツハブを使用したアセットのダウンロード](/help/assets/download-assets-content-hub.md)
-      + [Content Hubでのライセンス取得済みAssetsの管理](/help/assets/manage-licensed-assets-on-content-hub.md)
+      + [コンテンツハブでのライセンス済みアセットの管理](/help/assets/manage-licensed-assets-on-content-hub.md)
       + [コンテンツハブでのコレクションの管理](/help/assets/collections-content-hub.md)
       + [Adobe Express を使用したコンテンツハブの画像の編集](/help/assets/edit-images-content-hub.md)
       + [コンテンツハブのアセットインサイト](/help/assets/insights-content-hub.md)
@@ -944,7 +944,7 @@ ht-degree: 96%
          + [CIF 製品カルーセルに対するカスタム属性](/help/commerce-cloud/customizing/product-carousel.md)
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [移行](/help/commerce-cloud/migration.md)
-   + [FAQ](/help/commerce-cloud/faq.md)
+   + [よくある質問](/help/commerce-cloud/faq.md)
 + Edge 配信サービス {#edge-delivery}
    + [Edge 配信サービスの概要](/help/edge/overview.md)
    + [AEM での Edge Delivery の使用](/help/edge/using.md)
@@ -1015,7 +1015,7 @@ ht-degree: 96%
          + [拡張機能のインストール](/help/edge/docs/sidekick-extension.md)
          + [プロジェクト設定](https://www.aem.live/tools/sidekick/)
          + [Sidekick ライブラリ](/help/edge/docs/sidekick-library.md)
-      + [FAQ](/help/edge/docs/faq.md)
+      + [よくある質問](/help/edge/docs/faq.md)
       + [Admin API](https://www.aem.live/docs/admin.html)
       + [AEM ステータス](https://www.aemstatus.net)
       + ツール {#tools}
@@ -1043,7 +1043,7 @@ ht-degree: 96%
          + [マークダウンエディター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=ja)
       + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=ja)
       + [JSON プレビュー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=ja)
-   + [構造化コンテンツ配信および管理用のAEM API](/help/headless/apis-headless-and-content-fragments.md)
+   + [構造化コンテンツの配信と管理用の AEM API](/help/headless/apis-headless-and-content-fragments.md)
    + GraphQL API {#graphql-api}
       + [コンテンツフラグメント用 GraphQL API](/help/headless/graphql-api/content-fragments.md)
       + [GraphQL エンドポイントを管理](/help/headless/graphql-api/graphql-endpoint.md)
@@ -1054,7 +1054,7 @@ ht-degree: 96%
       + [UUID 参照用のコンテンツフラグメントのアップグレード](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [GraphQL クエリの例](/help/headless/graphql-api/sample-queries.md)
       + [GraphQL クエリのトラブルシューティング](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [コンテンツフラグメント配信用のAEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+   + [コンテンツフラグメント配信用の AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
    + [コンテンツフラグメントとコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md)
    + [Assets HTTP API でのコンテンツフラグメントのサポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=ja)
    + セキュリティ {#security}
@@ -1340,7 +1340,7 @@ ht-degree: 96%
       + [Dispatcher ツールを使用した検証とデバッグ（レガシー）](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [AEM as a Cloud Service での CDN](/help/implementing/dispatcher/cdn.md)
       + [CDN でのトラフィックの設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)
-      + [パイプラインを使用しない URL リダイレクト](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
+      + [パイプライン不要の URL リダイレクト](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
       + [エッジサイドインクルード](/help/implementing/dispatcher/edge-side-includes.md)
       + [CDN 資格情報および認証の設定](/help/implementing/dispatcher/cdn-credentials-authentication.md)
       + [CDN エラーページの設定](/help/implementing/dispatcher/cdn-error-pages.md)

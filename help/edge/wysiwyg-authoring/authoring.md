@@ -1,5 +1,5 @@
 ---
-title: Edge Delivery Services向けのWYSIWYG コンテンツオーサリング
+title: Edge Delivery Services 向けの WYSIWYG コンテンツのオーサリング
 description: コンテンツのオーサリングと Edge Delivery Services を連携する方法、および Edge Delivery Services で AEM コンテンツをオーサリングする方法について説明します。
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
@@ -7,25 +7,25 @@ role: User
 source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 61%
+ht-degree: 97%
 
 ---
 
 
-# Edge Delivery Services向けのWYSIWYG コンテンツオーサリング {#authoring-edge}
+# Edge Delivery Services 向けの WYSIWYG コンテンツのオーサリング {#authoring-edge}
 
 Edge Delivery Services を使用すると、オーサリングが簡単、迅速、柔軟に行えます。Edge Delivery Services のコンテンツを作成する方法は 2 つあります。
 
-* [ ユニバーサルエディター ](#universal-editor) - AEM内でコンテンツをオーサリングするための最新のWYSIWYG（what-you-see-is-what-you-get） UI
+* [ユニバーサルエディター](#universal-editor) - AEM 内でコンテンツをオーサリングするための最新 の What You See Is What You Get（WYSIWYG）UI
 * [ドキュメントベースのオーサリング](#document-based)：Microsoft Word や Google Docs など
 
 ## ユニバーサルエディターのオーサリング {#universal-editor}
 
 AEM as a Cloud Service で Edge Delivery Services を使用する場合、作成したコンテンツが AEM as a Cloud Service に保持されるという最も基本的なことを必ず理解しておいてください。
 
-![WYSIWYG オーサリングとEdge Delivery Servicesの連携方法 ](assets/how-aem-edge-works.png)
+![WYSIWYG オーサリングと Edge Delivery Services の連携](assets/how-aem-edge-works.png)
 
-1. [AEM Sites環境 ](/help/sites-cloud/authoring/quick-start.md) は、新しいページ、エクスペリエンスフラグメント、コンテンツフラグメントなどのコンテンツ管理に使用します。
+1. [AEM Sites 環境](/help/sites-cloud/authoring/quick-start.md)は、新しいページ、エクスペリエンスフラグメント、コンテンツフラグメントの作成などのコンテンツ管理に使用されます。
    * AEM のすべての機能（ワークフロー、MSM、翻訳、起動など）を使用できます。
 1. [ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md)は、AEM で管理されるコンテンツの作成に使用されます。
    * ユニバーサルエディターには、コンテンツオーサリング用の最新の UI が用意されています。
@@ -40,9 +40,9 @@ AEM as a Cloud Service で Edge Delivery Services を使用する場合、作成
 
 ブロックは、Edge Delivery Services によって配信されるページの基本的なコンポーネントです。作成者は、アドビが標準で提供するデフォルトブロック、または開発者がプロジェクト用にカスタマイズしたブロックから選択できます。
 
-ユニバーサルエディターには、ブロックを追加して整理することでコンテンツをオーサリングするための、最新の直感的な GUI が用意されています。
+ユニバーサルエディターには、ブロックを追加および配置してコンテンツをオーサリングできる最新の直感的な GUI が用意されています。
 
-![ ユニバーサルエディターでのブロックの追加と配置 ](assets/blocks.png)
+![ユニバーサルエディターでブロックを追加および配置する](assets/blocks.png)
 
 ブロックの詳細は、プロパティ パネルで設定できます。
 
@@ -50,10 +50,10 @@ AEM as a Cloud Service で Edge Delivery Services を使用する場合、作成
 
 ユニバーサルエディターを使用したオーサリング方法について詳しくは、[ユニバーサルエディターを使用したコンテンツのオーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md)ドキュメントを参照してください。
 
-独自のプロジェクトを開始してAEMとEdge Delivery Servicesでオーサリングする方法については、[Edge Delivery ServicesでのWYSIWYG オーサリングの開発者向けガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) を参照してください。
+AEM と Edge Delivery Services を使用してオーサリングする独自のプロジェクトを開始する方法について詳しくは、[Edge Delivery Services を使用した WYSIWYG オーサリングの開発者向け入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)を参照してください。
 
 ## その他のオーサリング方法  {#authoring-methods}
 
-WYSIWYG オーサリングは、コンテンツ作成者向けの強力で直感的なツールです。 ただし、オーサリングのユースケースは様々です。そのため、AEMには追加のオーサリングソリューションが用意されています。
+WYSIWYG オーサリングは、コンテンツ作成者向けの強力で直感的なツールです。ただし、オーサリングのユースケースは多種多様なので、AEM では追加のオーサリングソリューションを提供しています。
 
-ドキュメントベースのオーサリングやヘッドレスなど、AEMが提供するオーサリングソリューションについて詳しくは、[ オーサリング方法の選択 ](/help/edge/authoring-methods.md) を参照してください。
+ドキュメントベースのオーサリングやヘッドレスなど、AEM が提供するオーサリングソリューションについて詳しくは、[オーサリング方法の選択](/help/edge/authoring-methods.md)ドキュメントを参照してください。

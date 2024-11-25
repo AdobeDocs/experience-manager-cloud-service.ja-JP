@@ -1,11 +1,11 @@
 ---
 title: リモート AEM Assets と AEM Sites の統合
-description: AEM Sites を設定して承認済みAEM Assetsに接続する方法を説明します。
+description: AEM Sites を設定し、承認済み AEM Assets に接続する方法について説明します。
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
 source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 15%
+ht-degree: 96%
 
 ---
 
@@ -20,42 +20,42 @@ ht-degree: 15%
 >
 >[!BADGE OpenAPI 機能ガイドPDFのDynamic Media]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
-様々なオンラインプラットフォームにわたって魅力的で一貫性のあるブランドエクスペリエンスを提供するには、デジタルアセットを効果的に管理することが重要です。 OpenAPI 機能を備えたDynamic Mediaは、AEM SitesとAEM Assetsas a Cloud Service間のシームレスな統合を可能にすることで、デジタルアセット管理を強化します。 この革新的な機能により、複数のAEM環境にわたって様々なタイプの承認済みデジタルアセットを簡単に共有および管理し、サイト作成者およびコンテンツ編集者のワークフローを合理化できます。
+デジタルアセットを効果的に管理することは、様々なオンラインプラットフォームにわたって魅力的で一貫性のあるブランドエクスペリエンスを提供するのに重要です。OpenAPI 機能を備えた Dynamic Media は、AEM Sites と AEM Assets as a Cloud Service 間のシームレスな統合を有効にして、デジタルアセット管理を強化します。この革新的な機能により、複数の AEM 環境間で様々なタイプの承認済みデジタルアセットを簡単に共有および管理でき、サイト作成者とコンテンツ編集者のワークフローが効率化されます。
 
-OpenAPI 機能を備えたDynamic Mediaを使用すると、サイト作成者はリモート DAM のアセットをAEM ページエディターおよび [ コンテンツフラグメント ](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html?lang=ja) 内で直接使用して、コンテンツの作成プロセスと管理プロセスをシンプル化できます。
+OpenAPI 機能を備えた Dynamic Media を使用すると、サイト作成者はリモート DAM のアセットを AEM ページエディターおよび[コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html?lang=ja)内で直接使用できるので、コンテンツの作成および管理プロセスが簡素化されます。
 
-複数のAEM Sites インスタンスを、最大数に制限なくリモート DAM デプロイメントに接続できます。これは、[Connected Assets](use-assets-across-connected-assets-instances.md) 機能よりも大きな利点です。
+ユーザーは、最大数の制限なしに複数の AEM Sites インスタンスをリモート DAM デプロイメントに接続できます。これは、[接続されたアセット](use-assets-across-connected-assets-instances.md)機能に比べて著しく優れています。
 
 ![画像](/help/assets/assets/connected-assets-rdam.png)
 
-初期設定が完了したら、AEM Sites インスタンス上にページを作成し、必要に応じてアセットを追加できます。 アセットを追加する際は、ローカル DAM に保存されているアセットを選択するか、リモート DAM で使用可能なアセットを参照して使用できます。
+初期設定後、ユーザーは AEM Sites インスタンス上にページを作成し、必要に応じてアセットを追加できます。アセットを追加する際は、ローカル DAM に保存されているアセットを選択するか、リモート DAM で使用可能なアセットを参照して使用することができます。
 
-OpenAPI 機能を備えたDynamic Mediaには、コンテンツフラグメントでのリモートアセットへのアクセスと使用、リモートアセットのメタデータの取得など、他のいくつかの利点があります。 他の [Connected Assetsと比較した OpenAPI 機能を備えたDynamic Mediaのメリット ](/help/assets/dynamic-media-open-apis-faqs.md) についての詳細をご覧ください。
+OpenAPI 機能を備えた Dynamic Media には、コンテンツフラグメント内のリモートアセットへのアクセスと使用、リモートアセットのメタデータの取得など、他にもいくつかのメリットがあります。詳しくは、[接続されたアセットと比較した OpenAPI 機能を備えた Dynamic Media のその他のメリット](/help/assets/dynamic-media-open-apis-faqs.md)を参照してください。
 
 ## 事前準備 {#pre-requisites-sites-integration}
 
-Dynamic Mediaを OpenAPI 機能と共に使用してリモートアセットをサポートするには、次が必要です。
+OpenAPI 機能を備えた Dynamic Media を使用したリモートアセットのサポートには、以下が必要です。
 
 * AEM 6.5 SP 18 以降または AEM as a Cloud Service
 
 * コアコンポーネントリリース 2.23.2 以降
 
-* AEM as a Cloud Service用に次の [ 環境変数 ](/help/implementing/cloud-manager/environment-variables.md#add-variables) を設定します。
+* AEM as a Cloud Service に次の[環境変数](/help/implementing/cloud-manager/environment-variables.md#add-variables)を設定します。
 
-   * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyy.adobeaemcloud.com&quot; <br>
-     `pXXXX` はプログラム ID <br> を参照します
-     `eYYYY` は環境 ID を指します
+   * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyyyy.adobeaemcloud.com&quot; <br>
+     `pXXXX` はプログラム ID を参照します<br>。
+     `eYYYY` は環境 ID を参照します。
 
-  これらの変数は、ローカル Sites インスタンスとして機能するAEM as a Cloud Service環境のCloud Manager ユーザーインターフェイスを使用して設定されます。
+  これらの変数は、ローカル Sites インスタンスとして機能する AEM as a Cloud Service 環境の Cloud Manager ユーザーインターフェイスを使用して設定されます。
 
-   * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId]:IMS クライアント ID を取得するには、Adobeサポートチケットを送信する必要があります。
+   * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId]：IMS クライアント ID を取得するには、アドビサポートチケットを送信する必要があります。
 
-     または、次の手順に従って、AEM Sites インスタンスでAEM 6.5 の [OSGi 設定 ](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) を指定します。
+     または、次の手順に従って、AEM Sites インスタンスで AEM 6.5 の [OSGi 設定](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html?lang=ja)を行います。
 
-   1. コンソールにログインし、**[!UICONTROL OSGi]/** をクリックするか
-ダイレクト URL を使用する例：`https://localhost:4502/system/console/configMgr`
+   1. コンソールにログインして「**[!UICONTROL OSGi] >**」をクリックするか、
+直接 URL を使用します。例：`https://localhost:4502/system/console/configMgr`
 
-   1. **Next Generation Dynamic Media Config** （`NextGenDynamicMediaConfigImpl`）の OSGi 設定を次のように行い、値をリモートアセット環境の値に置き換えます。
+   1. **次世代の Dynamic Media 設定**（`NextGenDynamicMediaConfigImpl`）OSGi の設定を次のように行って、値をリモートアセット環境の値に置き換えます。
 
       ```text
         imsClient="<ims-client-ID>"
@@ -64,23 +64,23 @@ Dynamic Mediaを OpenAPI 機能と共に使用してリモートアセットを�
         repositoryId="<repo-id>.adobeaemcloud.com"
       ```
 
-      `imsOrg` は必須入力ではありません。
-      `repositoryId` = &quot;delivery-pxxxxx-eyyyy.adobeaemcloud.com&quot;
-ここで、`pXXXX` はプログラム ID を表します
-      `eYYYY` は環境 ID を指します
+      `imsOrg` は必須の入力ではありません。
+      `repositoryId` = &quot;delivery-pxxxxx-eyyyyyy.adobeaemcloud.com&quot;
+ここで、`pXXXX` はプログラム ID を参照します。
+      `eYYYY` は環境 ID を参照します
 
       ![次世代の Dynamic Media 設定 OSGi の設定ウィンドウ](/help/assets/assets/remote-assets-osgi.png)
 
-  [IMS 認証 ](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html) の詳細情報。
+  詳しくは、[IMS 認証](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html?lang=ja)を参照してください。
 
   OSGi の設定方法について詳しくは、次のドキュメントを参照してください。
 
    * AEM as a Cloud Service 用の [Adobe Experience Manager as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ja)
    * AEM 6.5 用の [OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=ja)
 
-* リモート DAM AEM as a Cloud Service インスタンスにログインするための IMS アクセス。 リモート DAM 環境への IMS アクセス権を持つ Sites オーサーを指します。
+* リモート DAM AEM as a Cloud Service インスタンスにログインする IMS アクセス。これは、リモート DAM 環境への IMS アクセス権を持つ Sites 作成者を参照します。
 
-* AEM Sites インスタンスに Image v3 コンポーネントを設定します。 コンポーネントが存在しない場合は、[ コンテンツパッケージ ](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.0) をダウンロードしてインストールします。
+* AEM Sites インスタンスで画像 v3 コンポーネントを設定します。コンポーネントが存在しない場合は、[コンテンツパッケージ](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.0)をダウンロードしてインストールします。
 
 ## HTTPS を設定 {#https}
 
@@ -90,58 +90,58 @@ Dynamic Mediaを OpenAPI 機能と共に使用してリモートアセットを�
 
 ## リモート DAM からのアセットへのアクセス {#fetch-assets}
 
-OpenAPI 機能を備えたDynamic Mediaを使用すると、ローカルのAEM Sites ページエディターおよびAEM コンテンツフラグメント上のリモート DAM インスタンスで使用可能なアセットにアクセスできます。
+OpenAPI 機能を備えた Dynamic Media を使用すると、ローカルの AEM Sites ページエディターおよび AEM コンテンツフラグメント上のリモート DAM インスタンスで使用可能なアセットにアクセスできます。
 
 ![画像](/help/assets/assets/open-APIs.png)
 
 ### AEM ページエディターでのリモートアセットへのアクセス {#access-assets-page-editor}
 
-AEM Sites インスタンスのAEM ページエディターでリモートアセットを使用するには、次の手順に従います。 統合はAEM as a Cloud ServiceとAEM 6.5 で行えます。
+AEM Sites インスタンスの AEM ページエディター内でリモートアセットを使用するには、次の手順に従います。この統合は、AEM as a Cloud Service および AEM 6.5 で実行できます。
 
-1. **[!UICONTROL Sites]**/_自分の web サイト_ に移動します。ここにAEM **[!UICONTROL Page]** があり、リモートアセットを追加する必要があります。
-1. ページを選択し、「**[!UICONTROL 編集（_e_）]**」をクリックします。 AEM **[!UICONTROL ページエディター]** が開きます。
-1. レイアウトコンテナをクリックし、**[!UICONTROL 画像]** コンポーネントを追加します。
-1. **[!UICONTROL 画像]** コンポーネントをクリックし、![ 設定アイコン ](/help/assets/assets/do-not-localize/settings-icon.svg) アイコンをクリックします。
-1. 「**[!UICONTROL ページからアイキャッチ画像を継承]**」オプションのチェックを外します。
-1. **[!UICONTROL 選択]** をクリックし、**[!UICONTROL リモート]** を選択します。
+1. **[!UICONTROL Sites]**／_自分の web サイト_&#x200B;に移動します。この web サイト内に、リモートアセットを追加する必要がある AEM **[!UICONTROL ページ]**&#x200B;が存在します。
+1. ページを選択し、「**[!UICONTROL 編集（_e_）]**」をクリックします。AEM **[!UICONTROL ページエディター]**&#x200B;が開きます。
+1. レイアウトコンテナをクリックし、**[!UICONTROL 画像]**&#x200B;コンポーネントを追加します。
+1. **[!UICONTROL 画像]**&#x200B;コンポーネントをクリックし、![設定アイコン](/help/assets/assets/do-not-localize/settings-icon.svg) アイコンをクリックします。
+1. 「**[!UICONTROL ページからアイキャッチ画像を継承]**」オプションをオフにします。
+1. 「**[!UICONTROL 選択]**」をクリックして、「**[!UICONTROL リモート]**」を選択します。
    ![画像](/help/assets/assets/uncheck-inherit-option.jpg)
 
-   ログインするように求められます。
-1. アセットを選択し、「**[!UICONTROL 選択]** をクリックします。
-1. 代替テキストを追加し、「完了 **[!UICONTROL をクリックし]** す。
-   <br> リモートアセットが画像コンポーネントに表示されます。 また、アセットがページに読み込まれたとき、または「プレビュー」タブを使用して、アセットの配信 URL を確認することもできます。 配信 URL は、アセットがリモートからアクセスされていることを示します。
+   ログインを求めるプロンプトが表示されます。
+1. アセットを選択し、「**[!UICONTROL 選択]**」をクリックします。
+1. 代替テキストを追加し、「**[!UICONTROL 完了]**」をクリックします。
+   <br>リモートアセットが画像コンポーネントに表示されます。また、アセットの配信 URL は、ページに読み込まれた際や、「プレビュー」タブを使用して確認することもできます。配信 URL は、アセットがリモートでアクセスされていることを示します。
 
-画像コアコンポーネント v3 およびティーザーコアコンポーネント v2 の場合のみ、AEM ページエディターで標準でリモートアセットにアクセスできます。 カスタムコンポーネントなど、他のコンポーネントを使用する場合は、アセットセレクターをそれらのコンポーネントと統合するためにカスタマイズが必要です。
+画像コアコンポーネント v3 とティーザーコアコンポーネント v2 の場合のみ、AEM ページエディターで標準のリモートアセットにアクセスできます。カスタムコンポーネントを含むその他のコンポーネントについては、アセットセレクターをこれらのコンポーネントと統合するのにカスタマイズが必要です。
 
 #### ビデオ：AEM ページエディターでのリモートアセットへのアクセス
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427666)
 
-### AEM コンテンツフラグメント内のリモートアセットへのアクセス {#access-assets-content-fragment}
+### AEM コンテンツフラグメントでのリモートアセットへのアクセス {#access-assets-content-fragment}
 
-AEM Sites インスタンスのAEM コンテンツフラグメント内でリモートアセットを使用するには、次の手順に従います。 この統合は、AEM as a Cloud ServiceではなくAEM 6.5 で行えます。
+AEM Sites インスタンスの AEM コンテンツフラグメント内でリモートアセットを使用するには、次の手順に従います。この統合は AEM 6.5 で実行できますが、AEM as a Cloud Service では実行できません。
 
-1. **[!UICONTROL Assets]** / **[!UICONTROL ファイル]** に移動します。
+1. **[!UICONTROL アセット]**／**[!UICONTROL ファイル]**&#x200B;に移動します。
 1. コンテンツフラグメントが存在するアセットフォルダーを選択します。
-1. コンテンツフラグメントを選択し、**[!UICONTROL 編集（_e_）]** をクリックします。
+1. コンテンツフラグメントを選択し、「**[!UICONTROL 編集（_e_）]**」をクリックします。
 
    >[!NOTE]
    >
-   AEM コンテンツフラグメントモデルがない場合は、[ 作成 ](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en) が必要になる場合があります。
+   AEM コンテンツフラグメントモデルがない場合は、[作成](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=ja)する必要があります。
 
-1. テキストコンポーネントの横にある ![ チェックマークアイコン ](/help/assets/assets/do-not-localize/checkmark-icon.svg) アイコンをクリックします。
-1. 「**[!UICONTROL リモート]**」を選択して、リモート DAM からアセットを取得します。 <br>
-必要に応じて、**[!UICONTROL ローカル]** または **[!UICONTROL リモート]** DAM リポジトリを選択できます。
+1. テキストコンポーネントの横にある ![チェックマークアイコン](/help/assets/assets/do-not-localize/checkmark-icon.svg) アイコンをクリックします。
+1. 「**[!UICONTROL リモート]**」を選択して、リモート DAM からアセットを取得します。<br>
+ニーズに応じて、**[!UICONTROL ローカル]**&#x200B;または&#x200B;**[!UICONTROL リモート]**&#x200B;の DAM リポジトリを選択できます。
 
-   ![ 画像 ](/help/assets/assets/cf-pick.jpg)
-ログインするように求められます。
-1. アセットを選択し、「**[!UICONTROL 選択]** をクリックします。
-   <br> リモートアセットの URL がテキストコンポーネントに表示されます。
+   ![画像](/help/assets/assets/cf-pick.jpg)
+ログインを求めるプロンプトが表示されます。
+1. アセットを選択し、「**[!UICONTROL 選択]**」をクリックします。
+   <br>リモートアセット URL がテキストコンポーネントに表示されます。
 
-#### ビデオ：AEM コンテンツフラグメント内のリモートアセットへのアクセス
+#### ビデオ：AEM コンテンツフラグメントでのリモートアセットへのアクセス
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427667)
 
-### Edge Delivery Servicesでのリモートアセットへのアクセス {#access-assets-eds}
+### Edge Delivery Services でのリモートアセットへのアクセス {#access-assets-eds}
 
-また、Edge Delivery Servicesでリモートアセットにアクセスすることもできます。 詳しくは、[Dynamic Mediaを使用して OpenAPI 機能で配信される、Assetsas a Cloud Serviceのアセットの利用 ](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi) を参照してください。
+また、Edge Delivery Services でリモートアセットにアクセスすることもできます。詳しくは、[OpenAPI 機能を備えた Dynamic Media を使用して配信される Assets as a Cloud Service からのアセットの利用](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi)を参照してください。

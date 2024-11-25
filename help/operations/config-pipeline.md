@@ -7,7 +7,7 @@ exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
 source-git-commit: 20338fde4b0875f9f40a2f3f1702b8e1c01a0a88
 workflow-type: tm+mt
 source-wordcount: '998'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 78%
 
 Cloud Manager 設定パイプラインでは、設定ファイル（YAML 形式で作成）をターゲット環境にデプロイします。この方法では、ログ転送、パージ関連のメンテナンスタスク、いくつかの CDN 機能など、AEM as a Cloud Service の多くの機能を設定できます。
 
-Config パイプラインは、Cloud Managerを介して、実稼動（サンドボックス以外）プログラムの開発環境、ステージング環境および実稼動環境タイプにデプロイできます。 設定ファイルは、[ コマンドラインツール ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) を使用して、迅速な開発環境（RDE）にデプロイできます。
+設定パイプラインは、Cloud Manager を通じて、実稼動（サンドボックス以外の）プログラムで、開発環境、ステージ環境および実稼動環境のタイプにデプロイできます。設定ファイルは、[コマンドラインツール](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)を使用して迅速な開発環境（RDE）にデプロイできます。
 
-このドキュメントの以降の節では、設定パイプラインの使用方法と設定方法の構造に関する重要な情報の概要を説明します。 設定パイプラインでサポートされる機能のすべてまたはサブセットで共有される一般的な概念について説明します。
+このドキュメントの以降の節では、設定パイプラインの使用方法と、それらの設定を構造化する方法に関する重要な情報の概要を示します。設定パイプラインでサポートされる機能のすべてまたはサブセットで共有される一般的な概念について説明します。
 
 * [サポートされる設定](#configurations) - 設定パイプラインでデプロイできる設定のリスト
 * [設定パイプラインの作成と管理](#creating-and-managing) - 設定パイプラインの作成方法。
@@ -31,13 +31,13 @@ Config パイプラインは、Cloud Managerを介して、実稼動（サンド
 
 ## サポートされる設定 {#configurations}
 
-次の表は、そのような設定の包括的なリストと、個別の設定構文やその他の情報を説明する専用ドキュメントへのリンクを示しています。
+次の表に、このような設定の包括的なリストと、その個別の設定構文やその他の情報を説明する専用ドキュメントへのリンクを示します。
 
 | タイプ | YAML `kind` 値 | 説明 |
 |---|---|---|
 | [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | 悪意のあるトラフィックをブロックするルールを宣言します |
 | [リクエスト変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | トラフィックリクエストの形式を変換するルールを宣言します |
-| [応答変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | 特定のリクエストに対する応答の形状を変換するルールを宣言する |
+| [応答変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | 特定のリクエストに対する応答の形式を変換するルールを宣言します。 |
 | [クライアントサイドのリダイレクト](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | 301/302 スタイルのクライアントサイドのリダイレクトを宣言します |
 | [接触チャネルセレクター](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | アドビ以外のアプリケーションを含む様々なバックエンドにトラフィックをルーティングするルールを宣言します |
 | [CDN エラーページ](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | AEM オリジンに到達できない場合は、設定ファイルの自己ホスト型静的コンテンツの場所を参照して、デフォルトのエラーページを上書きします |
@@ -46,15 +46,15 @@ Config パイプラインは、Cloud Managerを介して、実稼動（サンド
 | [基本認証](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | 特定の URL を保護する基本認証ダイアログのユーザー名とパスワードを宣言します。 |
 | [バージョンのパージメンテナンスタスク](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | コンテンツのバージョンをパージするタイミングに関するルールを宣言して、AEM リポジトリを最適化します |
 | [監査ログのパージメンテナンスタスク](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | ログをパージするタイミングに関するルールを宣言して、AEM 監査ログを最適化し、パフォーマンスを向上させます |
-| [ログ転送](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Azure Blob Storage、Datadog、HTTPS、Elasticsearch、Splunk など、様々な宛先にログを転送するためのエンドポイントと資格情報を設定します。 |
+| [ログ転送](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Azure Blob Storage、Datadog、HTTPS、Elasticsearch、Splunk など、様々な宛先にログを転送するエンドポイントと資格情報を設定します。 |
 
 ## 設定パイプラインの作成と管理 {#creating-and-managing}
 
 パイプラインの作成および設定方法について詳しくは、[CI／CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)ドキュメントを参照してください。
 
-Cloud Managerで config パイプラインを作成する場合は、パイプラインの設定時に **フルスタックコード** ではなく **ターゲットデプロイメント** を選択してください。
+Cloud Manager で設定パイプラインを作成する場合は、パイプラインを設定する際に、**フルスタックコード**&#x200B;ではなく&#x200B;**ターゲットデプロイメント**&#x200B;を選択します。
 
-前述のように、RDE の設定は、パイプラインではなく [ コマンドラインツール ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) を使用してデプロイされます。
+前述のように、RDE の設定は、パイプラインではなく[コマンドラインツール](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)を使用してデプロイされます。
 
 
 ## 共通の構文 {#common-syntax}
@@ -70,7 +70,7 @@ Cloud Managerで config パイプラインを作成する場合は、パイプ�
 
 | プロパティ | 説明 | デフォルト |
 |---|---|---|
-| `kind` | ログ転送、トラフィックフィルタールール、リクエスト変換など、どのタイプの設定かを決定する文字列 | 必須、デフォルトなし |
+| `kind` | ログ転送、トラフィックフィルタールール、リクエスト変換などの設定のタイプを決定する文字列 | 必須、デフォルトなし |
 | `version` | スキーマバージョンを表す文字列 | 必須、デフォルトなし |
 | `envTypes` | この文字列の配列は、`metadata` ノードの子プロパティです。可能な値は、dev、stage、prod または任意の組み合わせで、設定を処理する環境タイプを決定します。例えば、配列に `dev` のみが含まれている場合、設定がステージ環境または実稼動環境にデプロイされていても、設定はステージ環境または実稼動環境に読み込まれません。 | すべての環境タイプ（開発、ステージング、実稼働） |
 
@@ -111,7 +111,7 @@ Cloud Managerで config パイプラインを作成する場合は、パイプ�
   logForwarding.yaml
 ```
 
-この構造は、すべての環境とすべてのタイプの設定（CDN、ログ転送など）で同じ設定で十分な場合に使用します。 このシナリオでは、`envTypes` 配列プロパティにすべての環境タイプが含まれます。
+この構造は、すべての環境とすべての設定のタイプ（CDN、ログ転送など）に対して同じ設定で十分な場合に使用します。このシナリオでは、`envTypes` 配列プロパティにすべての環境タイプが含まれます。
 
 ```yaml
    kind: "cdn"

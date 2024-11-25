@@ -7,7 +7,7 @@ role: Admin, User, Developer
 source-git-commit: c8534ddf84998377ee63575403417165ccec2dbd
 workflow-type: tm+mt
 source-wordcount: '2059'
-ht-degree: 34%
+ht-degree: 88%
 
 ---
 
@@ -20,7 +20,7 @@ AEM as a Cloud Service チームおよび製品プロファイルでライセン
 
 特定のアドビソリューションに対するアクセス権をユーザーに付与する場合、必ずしも完全なアクセス権を付与する必要はありません。製品プロファイルを使用すると、ソリューションごとに独自のユーザー権限を設定できます。これらのプロファイルは、[ Admin Console](/help/journey-onboarding/admin-console.md) を通じて使用でき、アクセスできます。
 
-Adobe Admin Consoleには、製品、製品インスタンス、製品プロファイルの構造化階層があり、組織の内部ユーザーをメンバーシップに割り当てることができ、ライセンスを取得したソリューションや機能にアクセスできます。
+Adobe Admin Console には、製品、製品インスタンス、製品プロファイルの構造化された階層があり、組織の内部ユーザーにメンバーシップを割り当てて、ライセンス済みソリューションや機能にアクセスできます。
 
 <!-- Alexandru: Drafting for now 
 
@@ -40,12 +40,12 @@ AEM as a Cloud Service は、AEM をサービスとして提供する、完全�
 
 >[!NOTE]
 >
-> この記事で説明する一部の製品インスタンスおよび製品プロファイルは、新しく作成した環境でのみ表示される場合があります。 将来のメカニズムでは、既存の環境も更新できるようになります。
+> この記事で説明する製品インスタンスと製品プロファイルの一部は、新しく作成した環境にのみ表示される場合があります。今後のメカニズムでは、既存の環境も更新できます。
 
-Adobeが初めてAEM ソリューションのライセンスを処理すると、Adobe Admin ConsoleのAdobe Experience Manager as a Cloud Service製品の下に 2 つの製品インスタンスが表示されます。
+アドビが初めて AEM ソリューションのライセンスを処理すると、Adobe Admin Console の Adobe Experience Manager as a Cloud Service 製品の下に次の 2 つの製品インスタンスが表示されます。
 
-* **AEM組織レベル** – 単一の製品プロファイルだけでなく、すべてのAEM環境を対象とする機能へのアクセスを表す 1 つ以上の製品プロファイルを含みます
-* **Cloud Manager** - Cloud Manager機能への様々なアクセスレベルに対応する製品プロファイルが含まれます。
+* **AEM 組織レベル** - 1 つの AEM 環境だけでなく、すべての AEM 環境に適用される機能へのアクセスを表す 1 つ以上の製品プロファイルが含まれます。
+* **Cloud Manager** - Cloud Manager 機能への様々なアクセスレベルに対応する製品プロファイルが含まれます。
 
 <!--
 >[!NOTE]
@@ -53,43 +53,43 @@ Adobeが初めてAEM ソリューションのライセンスを処理すると�
 >For existing programs, the AEM Org-Level Product Instance is created upon selecting the **Update product** profiles action for a given environment.
 -->
 
-![ 組織レベルの製品インスタンス ](/help/onboarding/assets/orglevel.png)
+![組織レベルの製品インスタンス](/help/onboarding/assets/orglevel.png)
 
-AEM組織レベルの製品インスタンス内には、AEM組織レベルのレポーターという名前の製品プロファイルがあり、現時点では使用されていませんが、AEM製品ライセンスに関する情報の取得にアクセスできることを表すために、今後このプロファイルが使用される可能性があります。
+AEM 組織レベルの製品インスタンス内には、AEM 組織レベルのレポーターという名前の製品プロファイルがあります。これは、現時点では使用されていませんが、今後 AEM 製品ライセンスに関する情報を取得するアクセスを表すのに使用される可能性があります。
 
-Forms Communication Solution のライセンスが取得されると、対応する製品プロファイルがAEM組織レベルの製品インスタンスにも表示されます。
+Forms コミュニケーションソリューションのライセンスが付与されると、対応する製品プロファイルが AEM 組織レベルの製品インスタンスの下にも表示されます。
 
-![ 報告者製品プロファイル ](/help/onboarding/assets/org-level-reporters.png)
+![レポーターの製品プロファイル](/help/onboarding/assets/org-level-reporters.png)
 
 ### 環境および階層レベルの製品インスタンス {#environment-and-tier-level-product-instances}
 
-1 つ以上のAEM環境で新しいプログラムをプロビジョニングすると、環境ごとに 2 つの製品インスタンスが表示され、それぞれにオーサー用とパブリッシュ用の製品プロファイルが含まれます。
+1 つ以上の AEM 環境で新しいプログラムをプロビジョニングすると、環境ごとに 2 つの製品インスタンスが表示され、それぞれにオーサー用とパブリッシュ用の製品プロファイルが含まれます。
 
-![ 環境製品インスタンス ](/help/onboarding/assets/env-productinstances.png)
+![環境の製品インスタンス](/help/onboarding/assets/env-productinstances.png)
 
-AEM Sitesを含むプログラムで環境をプロビジョニングした組織のオーサー製品インスタンスの製品プロファイルを以下に示します。
+AEM Sites を含むプログラムで環境をプロビジョニングした組織のオーサー製品インスタンス内の製品プロファイルを以下に示します。
 
-![Sites 製品インスタンス ](/help/onboarding/assets/sites-product-instances.png)
+![Sites の製品インスタンス](/help/onboarding/assets/sites-product-instances.png)
 
-次の表に、環境層固有の製品インスタンスの下で使用可能な製品プロファイルのリストを示します。
+次の表に、環境層固有の製品インスタンスの下にある使用可能な製品プロファイルのリストを示します。
 
 <table style="table-layout:auto">
     <tr>
         <th>製品インスタンス</th>
         <th>命名規則</th>
-        <th>既定のサービス</th>
+        <th>デフォルトのサービス</th>
         <th>説明</th>
     </tr>
     <tr>
         <td>AEM オーサー</td>
-        <td>AEM Sites コンテンツマネージャー – 作成者 – プログラム <code>id</code> – 環境 <code>id</code></td>
-        <td>AEM Sites コンテンツ管理者</td>
+        <td>AEM Sites コンテンツマネージャー - オーサー - プログラム <code>id</code> - 環境 <code>id</code></td>
+        <td>AEM Sites コンテンツマネージャー</td>
         <td>
             <ul>
-                <li>この環境で、AEM Sites オーサー機能への制御アクセスを目的としています。 この製品プロファイルのユーザーは、AEMで自動的に作成されるAEM Sites コンテンツ作成者AEM グループのメンバーになります。 目的のアクセスレベルでAEM グループ権限をAEMに設定する必要があります。</li><br>
-                <li>デフォルトサービスが選択されたままの場合
+                <li>この環境上の AEM Sites オーサー機能への制御されたアクセスを目的としています。この製品プロファイルのユーザーは、AEM で自動的に作成される AEM Sites コンテンツ作成者 AEM グループのメンバーになります。AEM グループの権限は、目的のアクセスレベルを使用して AEM で設定する必要があります。</li><br>
+                <li>デフォルトのサービスが選択されたままの場合
                     <ul>
-                        <li>また、この製品プロファイルのユーザーは、「AEM Sites コンテンツ管理者 – サービス」AEM グループのメンバーにもなります。</li>
+                        <li>この製品プロファイルのユーザーは、「AEM Sites コンテンツマネージャー - サービス」AEM グループのメンバーにもなります。</li>
                       <!--  <li>users in this product profile will have access to AEM Sites Content Management API.</li>
                         <li>an Adobe Developer Console API OAuth S2S project containing AEM Sites Content Management API can optionally be scoped to this environment.</li>-->
                     </ul>
@@ -99,14 +99,14 @@ AEM Sitesを含むプログラムで環境をプロビジョニングした組�
     </tr>
     <tr>
         <td></td>
-        <td>AEM管理者 – オーサー – プログラム <code>id</code> – 環境 <code>id</code></td>
-        <td>AEM管理者</td>
+        <td>AEM 管理者 - オーサー - プログラム <code>id</code> - 環境 <code>id</code></td>
+        <td>AEM 管理者</td>
         <td>
             <ul>
-                <li>AEM オーサー環境およびパブリッシュ環境の機能への無制限なアクセスを目的としている。 この製品プロファイルのユーザーは、AEMで自動的に作成されたAEM Administrators author AEM グループのメンバーになります。</li><br>
-                <li>デフォルトサービスが選択されたままの場合
+                <li>AEM オーサーおよびパブリッシュ環境機能への無制限のアクセスを目的としています。この製品プロファイルのユーザーは、AEM で自動的に作成される AEM 管理者作成者 AEM グループのメンバーになります。</li><br>
+                <li>デフォルトのサービスが選択されたままの場合
                     <ul>
-                        <li>この製品プロファイルのユーザーは、「AEM Administrators - Service」AEM グループのメンバーにもなります</li>
+                        <li>この製品プロファイルのユーザーは、「AEM 管理者 - サービス」AEM グループのメンバーにもなります</li>
                     </ul>
                 </li>
             </ul>
@@ -114,14 +114,14 @@ AEM Sitesを含むプログラムで環境をプロビジョニングした組�
     </tr>
     <tr>
         <td></td>
-        <td>AEM ユーザー – オーサー – プログラム <code>id</code> – 環境 <code>id</code></td>
+        <td>AEM ユーザー - オーサー - プログラム <code>id</code> - 環境 <code>id</code></td>
         <td>AEM ユーザー</td>
         <td>
             <ul>
-                <li>AEM オーサー環境の機能へのアクセスが非常に制限された環境を対象としています。 この製品プロファイルのユーザーは、AEMで自動的に作成された「寄稿者」AEM グループのメンバーになります</li><br>
-                <li>デフォルトサービスが選択されたままの場合
+                <li>AEM オーサー環境機能への非常に限定されたアクセスを目的としています。この製品プロファイルのユーザーは、AEM で自動的に作成される「寄稿者」AEM グループのメンバーになります。</li><br>
+                <li>デフォルトのサービスが選択されたままの場合
                     <ul>
-                        <li>この製品プロファイルのユーザーは、「AEM Users - Service」AEM グループのメンバーにもなります</li>
+                        <li>この製品プロファイルのユーザーは、「AEM ユーザー - サービス」AEM グループのメンバーにもなります。</li>
                     </ul>
                 </li>
             </ul>
@@ -129,51 +129,51 @@ AEM Sitesを含むプログラムで環境をプロビジョニングした組�
     </tr>
     <tr>
         <td></td>
-        <td>AEM Reporters - author - Program <code>id</code> - Environment <code>id</code></td>
+        <td>AEM レポーター - オーサー - プログラム <code>id</code> - 環境 <code>id</code></td>
         <td>AEM レポーター</td>
         <td>
             <ul>
-                <li>現在使用されていませんが、今後、この環境のオーサー層に関するレポート情報にアクセスできる可能性があります。</li>
+                <li>現在は使用されていませんが、今後、この環境のオーサー層に関するレポート情報へのアクセスが提供される可能性があります。</li>
             </ul>
         </td>
     </tr>
     <tr>
         <td></td>
-        <td>AEM Assets Collaborator - author - Program <code>id</code> - Environment <code>id</code></td>
-        <td>AEM Assets Collaborator Users</td>
+        <td>AEM Assets 共同作業者 - オーサー - プログラム <code>id</code> - 環境 <code>id</code></td>
+        <td>AEM Assets 共同作業者ユーザー</td>
         <td>
         <ul>
-                <li>DAM への読み取り専用アクセスを目的としています。 この製品プロファイルのユーザーは、AEMで自動的に作成された「投稿者」AEM グループのメンバーになります。
+                <li>DAM への読み取り専用アクセスを目的としています。この製品プロファイルのユーザーは、AEM で自動的に作成される「寄稿者」AEM グループのメンバーになります。
                 </li>
                 <li>
-                また、アセットのバリエーションを作成するためのAdobe Express使用権限も提供します。
+                また、アセットのバリエーションを作成する Adobe Express 権限も提供します。
                 </li>
           <ul>
     </tr>
     <tr>
         <td></td>
-        <td>AEM Assets パワーユーザー – オーサー – プログラム <code>id</code> – 環境 <code>id</code></td>
+        <td>AEM Assets パワーユーザー - オーサー - プログラム <code>id</code> - 環境 <code>id</code></td>
         <td>AEM Assets パワーユーザー</td>
 <td>
         <ul>
-                <li>DAM への読み取り専用アクセスを目的としています。 この製品プロファイルのユーザーは、AEMで自動的に作成された「投稿者」AEM グループのメンバーになります。
+                <li>DAM への読み取り専用アクセスを目的としています。この製品プロファイルのユーザーは、AEM で自動的に作成される「寄稿者」AEM グループのメンバーになります。
                 </li>
                 <li>
-                また、アセットのバリエーションを作成するためのAdobe Express使用権限も提供します。
+                また、アセットのバリエーションを作成する Adobe Express 権限も提供します。
                 </li>
           <ul>
 </td>
     </tr>
     <tr>
         <td></td>
-        <td>AEM Forms コンテンツマネージャー – 作成者 – プログラム <code>id</code> – 環境 <code>id</code></td>
-        <td>AEM Forms コンテンツ管理者</td>
+        <td>AEM Forms コンテンツマネージャー - オーサー - プログラム <code>id</code> - 環境 <code>id</code></td>
+        <td>AEM Forms コンテンツマネージャー</td>
         <td>
             <ul>
-                <li>この環境で、AEM Forms オーサー機能への制御アクセスを目的としています。 この製品プロファイルのユーザーは、AEMで自動的に作成されるAEM Forms forms-users AEM グループのメンバーになります。</li><br>
-                <li>デフォルトサービスが選択されたままの場合
+                <li>この環境上の AEM Forms オーサー機能への制御されたアクセスを目的としています。この製品プロファイルのユーザーは、AEM で自動的に作成される AEM Forms forms-users AEM グループのメンバーになります。</li><br>
+                <li>デフォルトのサービスが選択されたままの場合
                     <ul>
-                        <li>また、この製品プロファイルのユーザーは、「AEM Forms コンテンツ管理者 – サービス」AEM グループのメンバーにもなります。</li>
+                        <li>この製品プロファイルのユーザーは、「AEM Forms コンテンツマネージャー - サービス」AEM グループのメンバーにもなります。</li>
                     </ul>
                 </li>
             </ul>
@@ -181,14 +181,14 @@ AEM Sitesを含むプログラムで環境をプロビジョニングした組�
     </tr>
     <tr>
         <td></td>
-        <td>AEM Forms開発者 – 作成者 – プログラム <code>id</code> – 環境 <code>id</code></td>
-        <td>AEM Forms開発者</td>
+        <td>AEM Forms 開発者 - オーサー - プログラム <code>id</code> - 環境 <code>id</code></td>
+        <td>AEM Forms 開発者</td>
         <td>
             <ul>
-                <li>この環境で、AEM Forms オーサー機能への制御アクセスを目的としています。 この製品プロファイルのユーザーは、AEMで自動的に作成されるAEM Forms forms-power-users AEM グループのメンバーになります。 これらのユーザーには、XDP をアップロードし、フォームデータモデルを作成する権限と、通常のフォームオーサリングタスクが含まれます。</li><br>
-                <li>デフォルトサービスが選択されたままの場合
+                <li>この環境上の AEM Forms オーサー機能への制御されたアクセスを目的としています。この製品プロファイルのユーザーは、AEM で自動的に作成される AEM Forms forms-power-users AEM グループのメンバーになります。これらのユーザーには、通常のフォーム作成タスクに加えて、XDP をアップロードし、フォームデータモデルを作成する権限もあります。</li><br>
+                <li>デフォルトのサービスが選択されたままの場合
                     <ul>
-                        <li>また、本製品プロファイルのユーザーは、「AEM Forms Developers - Service」AEM グループのメンバーでもあります。</li>
+                        <li>この製品プロファイルのユーザーは、「AEM Forms 開発者 - サービス」AEM グループのメンバーにもなります。</li>
                     </ul>
                 </li>
             </ul>
@@ -196,14 +196,14 @@ AEM Sitesを含むプログラムで環境をプロビジョニングした組�
     </tr>
     <tr>
         <td></td>
-        <td>AEM Forms Communications Service ユーザー – 作成者 – プログラム <code>id</code> – 環境 <code>id</code></td>
-        <td>AEM Forms Communications Service ユーザー</td>
+        <td>AEM Forms コミュニケーションサービスユーザー - オーサー - プログラム <code>id</code> - 環境 <code>id</code></td>
+        <td>AEM Forms コミュニケーションサービスユーザー</td>
         <td>
             <ul>
-                <li>この環境のAEM Forms Communications Services 機能への制御されたアクセスを目的としています。 この製品プロファイルのユーザーは、AEMで自動的に作成されるAEM Forms forms-users AEM グループのメンバーになります。</li><br>
-                <li>デフォルトサービスが選択されたままの場合
+                <li>この環境上の AEM Forms コミュニケーションサービス機能への制御されたアクセスを目的としています。この製品プロファイルのユーザーは、AEM で自動的に作成される AEM Forms forms-users AEM グループのメンバーになります。</li><br>
+                <li>デフォルトのサービスが選択されたままの場合
                     <ul>
-                        <li>また、本製品プロファイルのユーザーは、「AEM Forms Communications Service Users - Service」AEM グループのメンバーにもなります。</li>
+                        <li>この製品プロファイルのユーザーは、「AEM Forms コミュニケーションサービスユーザー - サービス」AEM グループのメンバーにもなります。</li>
                     </ul>
                 </li>
             </ul>
@@ -211,14 +211,14 @@ AEM Sitesを含むプログラムで環境をプロビジョニングした組�
     </tr>
     <tr>
         <td>AEM パブリッシュ</td>
-        <td>AEM ユーザー – パブリッシュ – プログラム <code>id</code> – 環境 <code>id</code></td>
+        <td>AEM ユーザー - パブリッシュ - プログラム <code>id</code> - 環境 <code>id</code></td>
         <td>AEM ユーザー</td>
         <td>
             <ul>
-                <li>AEM オーサー環境の機能へのアクセスが非常に制限された環境を対象としています。 この製品プロファイルのユーザーは、AEMで自動的に作成された「contrib」AEM グループのメンバーになります</li><br>
-                <li>デフォルトサービスが選択されたままの場合
+                <li>AEM オーサー環境機能への非常に限定されたアクセスを目的としています。この製品プロファイルのユーザーは、AEM で自動的に作成される「寄稿者」AEM グループのメンバーになります。</li><br>
+                <li>デフォルトのサービスが選択されたままの場合
                     <ul>
-                        <li>この製品プロファイルのユーザーは、「AEM Users - Service」AEM グループのメンバーにもなります。</li>
+                        <li>この製品プロファイルのユーザーは、「AEM ユーザー - サービス」AEM グループのメンバーにもなります。</li>
                     </ul>
                 </li>
             </ul>
@@ -226,24 +226,24 @@ AEM Sitesを含むプログラムで環境をプロビジョニングした組�
     </tr>
     <tr>
         <td></td>
-        <td>AEM Reporter - publish - Program <code>id</code> - Environment <code>id</code></td>
+        <td>AEM レポーター - パブリッシュ - プログラム <code>id</code> - 環境 <code>id</code></td>
         <td>AEM レポーター</td>
         <td>
             <ul>
-                <li>現在使用されていませんが、今後、この環境のパブリッシュ層に関するレポート情報にアクセスできる可能性があります。</li>
+                <li>現在は使用されていませんが、今後、この環境のパブリッシュ層に関するレポート情報へのアクセスが提供される可能性があります。</li>
             </ul>
         </td>
     </tr>
    <tr>
         <td></td>
-        <td>AEM Forms Communications Service ユーザー – 公開 – プログラム <code>id</code> – 環境 <code>id</code></td>
-        <td>AEM Forms Communications Service ユーザー</td>
+        <td>AEM Forms コミュニケーションサービスユーザー - パブリッシュ - プログラム <code>id</code> - 環境 <code>id</code></td>
+        <td>AEM Forms コミュニケーションサービスユーザー</td>
         <td>
             <ul>
-                <li>この環境のAEM Forms Communications Services 機能への制御されたアクセスを目的としています。 この製品プロファイルのユーザーは、AEMで自動的に作成されるAEM Forms forms-users AEM グループのメンバーになります。</li><br>
-                <li>デフォルトサービスが選択されたままの場合
+                <li>この環境上の AEM Forms コミュニケーションサービス機能への制御されたアクセスを目的としています。この製品プロファイルのユーザーは、AEM で自動的に作成される AEM Forms forms-users AEM グループのメンバーになります。</li><br>
+                <li>デフォルトのサービスが選択されたままの場合
                     <ul>
-                        <li>また、本製品プロファイルのユーザーは、「AEM Forms Communications Service Users - Service」AEM グループのメンバーにもなります。</li>
+                        <li>この製品プロファイルのユーザーは、「AEM Forms コミュニケーションサービスユーザー - サービス」AEM グループのメンバーにもなります。</li>
                     </ul>
                 </li>
             </ul>
@@ -251,15 +251,15 @@ AEM Sitesを含むプログラムで環境をプロビジョニングした組�
     </tr>
 </table>
 
-各製品プロファイルでは、関連付けられた製品プロファイルサービスがデフォルトで有効になっています。 複雑なアクセス要件がない限り、デフォルトサービスのみを選択することをお勧めします。 対応するAEM グループが命名規則 `<Product Profile Prefix> - Service` でAEMに作成され（例：**AEM Sites Content Managers - Service**）、親製品プロファイル内のユーザーは対応するAEM グループのメンバーになります。
+各製品プロファイルには、関連付けられた製品プロファイルサービスがデフォルトで有効になっています。複雑なアクセス要件がない限り、デフォルトのサービスのみを選択したままにしておくことをお勧めします。対応する AEM グループが、命名規則 `<Product Profile Prefix> - Service`（例：**AEM Sites コンテンツマネージャー - サービス**）を使用して AEM 内に作成され、親製品プロファイル内のユーザーは自動的にその対応する AEM グループのメンバーになります。
 
-サービスに関連付けられたAEMのAEM グループには、その環境層の組み合わせに対して、そのサービスの関連するすべての製品プロファイルに存在するユーザーの集計セットが含まれます。
+サービスに関連付けられた AEM 内の AEM グループには、その環境と層の組み合わせに対して、そのサービスに関連付けられたすべての製品プロファイルに存在するユーザーの集計セットが含まれます。
 
-![ サービス ](/help/onboarding/assets/services.png)
+![サービス](/help/onboarding/assets/services.png)
 
-次の画像は、AEM Sites コンテンツマネージャーのオーサー層の製品プロファイルとサービスを反映したAEM グループを表しています。
+次の画像は、AEM Sites コンテンツマネージャーのオーサー層の製品プロファイルとサービスを反映した AEM グループを表しています。
 
-![AEM グループとサービスのマッピング ](/help/onboarding/assets/profile-to-service-mapping.png)
+![AEM グループからサービスへのマッピング](/help/onboarding/assets/profile-to-service-mapping.png)
 
 >[!NOTE]
 >

@@ -7,7 +7,7 @@ role: Admin, Developer
 source-git-commit: b1b28cdc5fd1b697a2c2cd2893340d3c6afc8562
 workflow-type: tm+mt
 source-wordcount: '5814'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 96%
 >
 >コンテンツフラグメントで使用するGraphQL API の様々な機能は、早期導入プログラムを通じて利用できます。
 >
->ステータスと、関心のあるユーザーへの適用方法を確認するには、[ リリースノート ](/help/release-notes/release-notes-cloud/release-notes-current.md) を確認してください。
+>ステータスを確認し、興味がある場合に適用する方法について詳しくは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
 Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 
@@ -39,7 +39,7 @@ AEM の GraphQL API を使用すると、ヘッドレス CMS 実装の JavaScrip
 
 >[!NOTE]
 >
->使用可能な様々な API の概要および関連する概念の一部の比較については ](/help/headless/apis-headless-and-content-fragments.md)[ 構造化コンテンツ配信および管理用のAEM API} を参照してください。
+>使用可能な様々な API の概要と、関連する概念のいくつかの比較について詳しくは、[構造化コンテンツの配信と管理用の AEM API](/help/headless/apis-headless-and-content-fragments.md) を参照してください。
 
 >[!NOTE]
 >

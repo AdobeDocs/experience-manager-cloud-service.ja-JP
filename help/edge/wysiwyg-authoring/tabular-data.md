@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 73%
+ht-degree: 78%
 
 ---
 
@@ -44,7 +44,7 @@ Edge Delivery Services を使用した AEM のサイトでは、キーと値の�
 
 Edge Delivery Services を使用した AEM プロジェクトでスプレッドシートを使ってマッピングを作成するには、最新のサイトテンプレートを使用してサイトを作成しておく必要があります。
 
-詳しくは、[Edge Delivery Servicesを使用したWYSIWYG オーサリングの開発者向けスタートガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) を参照してください。
+詳しくは、[Edge Delivery Services を使用した WYSIWYG オーサリングの開発者向け入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)ドキュメントを参照してください。
 
 ## スプレッドシートの作成 {#spreadsheet}
 
@@ -150,7 +150,7 @@ AEM でスプレッドシートのデータを公開するには、さらにプ�
 
    >[!NOTE]
    >
-   >この `paths.json` エントリは、表形式のデータを使用してリダイレクトを作成する例に基づいています。 作成するスプレッドシートの [ タイプ ](#other) に適したパスを必ず更新してください。
+   >この `paths.json` エントリは、表形式のデータを使用してリダイレクトを作成する例に基づいています。[作成するスプレッドシートのタイプ](#other)に応じて適切なパスを更新します。
 
 1. 「**変更をコミット…**」をクリックして、変更を `main` に保存します。
 
@@ -174,7 +174,7 @@ AEM でスプレッドシートのデータを公開するには、さらにプ�
 
 >[!TIP]
 >
->Edge Delivery Servicesマッピングについて詳しくは、「パスのパスマッピング [ のドキュメントを参照してください。](/help/edge/wysiwyg-authoring/path-mapping.md)
+>パスマッピングについて詳しくは、[Edge Delivery Services のパスマッピング](/help/edge/wysiwyg-authoring/path-mapping.md)ドキュメントを参照してください。
 
 ## その他のスプレッドシートタイプ {#other}
 
@@ -193,7 +193,7 @@ AEM でスプレッドシートのデータを公開するには、さらにプ�
 * 設定：`/.helix/config.json`
 * ヘッダー：`/.helix/headers.json`
 * メタデータ：`/metadata.json`
-* 分類：詳しくは、分類データの管理 [ ドキュメントを参照し ](/help/edge/wysiwyg-authoring/taxonomy.md) ください。
+* 分類：詳しくは、[分類データの管理](/help/edge/wysiwyg-authoring/taxonomy.md)ドキュメントを参照してください。
 
 また、任意の列を含む[独自のスプレッドシートを作成](#own-spreadsheet)して、独自に使用することもできます。
 
