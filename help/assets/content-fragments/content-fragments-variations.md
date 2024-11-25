@@ -5,16 +5,16 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: abc114373f5db501bb8709fd2d4c33aebc1c5ec9
 workflow-type: tm+mt
 source-wordcount: '2504'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
 # バリエーション - フラグメントコンテンツのオーサリング{#variations-authoring-fragment-content}
 
-[バリエーション](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)は、Adobe Expoerience Manager（AEM）as a Cloud Service のコンテンツフラグメントの重要な機能です。これは、特定のチャネルやシナリオで使用するために、**マスター**&#x200B;コンテンツのコピーの作成と編集を行えるからです。これにより、特にヘッドレスコンテンツ配信の柔軟性が高まります。
+[ バリエーション ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) は、Adobe Experience Manager（AEM）のas a Cloud Serviceにおけるコンテンツフラグメントの重要な機能です。 これは、特定のチャネルやシナリオで使用するために、**マスター**&#x200B;コンテンツのコピーの作成と編集を行えるからです。これにより、特にヘッドレスコンテンツ配信の柔軟性が高まります。
 
 >[!NOTE]
 >
