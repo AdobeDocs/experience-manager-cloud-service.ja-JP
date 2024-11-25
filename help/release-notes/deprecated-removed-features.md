@@ -4,10 +4,10 @@ description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 0ab75d1e49e06152cf3f4e8effe7d6d918b262c8
+source-git-commit: 1ff3a9a0ff6b408794956323f12194f136d6b2ad
 workflow-type: tm+mt
-source-wordcount: '2709'
-ht-degree: 93%
+source-wordcount: '2800'
+ht-degree: 90%
 
 ---
 
@@ -505,7 +505,9 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
 
 AEM as a Cloud Service は Java 21 ランタイムに移行します。互換性を確保するには、次の調整を行うことが不可欠です。
 
-### ビルド時間の要件：
+### ランタイム要件
+
+これらの調整は、Java 21 ランタイムとの互換性を確保するために必要です。 ライブラリは、古いバージョンの Java と互換性があるので、いつでも更新できます。
 
 #### org.objectweb.asm の最小バージョン {#org.objectweb.asm}
 
@@ -517,9 +519,13 @@ AEM as a Cloud Service は Java 21 ランタイムに移行します。互換性
 
 このバンドルは、AEM Groovy コンソールなどのサードパーティの依存関係を追加することで間接的に含めることができます。
 
+### ビルド時間の要件
+
+これらの調整は、新しいバージョンの Java でプロジェクトを構築できるようにするために必要ですが、実行時の互換性には必要ありません。 Maven プラグインは、古いバージョンの Java と互換性があるので、いつでも更新できます。
+
 #### bnd-maven-plugin の最小バージョン {#bnd-maven-plugin}
 
-新しい JVM ランタイムが確実にサポートされるように、bnd-maven-plugin の使用方法をバージョン 6.4.0 以降に更新します。
+bnd-maven-plugin の使用方法をバージョン 6.4.0 に更新して、新しい JVM ランタイムがサポートされるようにします。 バージョン 7 以降は Java 11 以下と互換性がないので、現時点ではそのバージョンへのアップグレードは推奨されません。
 
 #### aemanalyzer-maven-plugin の最小バージョン {#aemanalyser-maven-plugin}
 
