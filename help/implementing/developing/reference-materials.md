@@ -5,9 +5,9 @@ exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 7c2d2fc7b37d70bee4764921a138af6379401064
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '635'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ AEM では、カスタマイズ可能なコンポーネントとコンテンツ�
 | [コンテンツフラグメント GraphQL API](/help/headless/graphql-api/content-fragments.md) | ヘッドレス CMS 実装の JavaScript クライアントにコンテンツフラグメントを効率的に配信できるようになります |
 | [コンテンツフラグメントアセット HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ja) | サポートされている HTTP アセットリクエストの厳密な形式 |
 | [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) | コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI |
-| [ コンテンツフラグメント配信用AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) | AEM Edge Delivery Services上の HTTP REST API。JSON 形式のコンテンツフラグメントから構造化コンテンツを配信するように設計されています。 |
+| [コンテンツフラグメント配信用の AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) | AEM Edge Delivery Services 上の HTTP REST API で、コンテンツフラグメントから構造化コンテンツを JSON 形式で配信するように設計されています。 |
 
 ## SPA 固有の API {#spa-apis}
 

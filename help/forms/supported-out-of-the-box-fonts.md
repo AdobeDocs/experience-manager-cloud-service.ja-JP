@@ -1,19 +1,19 @@
 ---
-title: AEM Formsのas a Cloud Serviceでは、PDFジェネレーション用の標準フォントがサポートされています。
-description: AEM Formsのas a Cloud Serviceでは、レコードのドキュメントとPDF用の標準フォントがサポートされています。
+title: AEM Forms as a Cloud Service では、PDF 生成用の標準フォントをサポートしています。
+description: AEM Forms as a Cloud Service では、レコードのドキュメントと PDF 用の標準フォントをサポートしています。
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 67b07bf6-a45c-4a74-8b24-cb2e26c55bc9
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '150'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Formsas a Cloud ServiceでのPDF生成でサポートされる、標準（OOTB）フォント  {#ootb-supported-fonts-overview}
+# Forms as a Cloud Service での PDF 生成用にサポートされる標準（OOTB）フォント  {#ootb-supported-fonts-overview}
 
-AEM Formsas a Cloud Serviceは、[ 通信 API](/help/forms/aem-forms-cloud-service-communications-introduction.md)、[ コアコンポーネントのレコードのドキュメント ](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record)、および [ 基盤コンポーネントのレコードのドキュメント ](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record) 内でシームレスに使用できる、OOTB でサポートされる様々な組み込みフォントを提供します。
+AEM Forms as a Cloud Service には、[Communication API](/help/forms/aem-forms-cloud-service-communications-introduction.md)、[コアコンポーネントのレコードのドキュメント](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record)、[基盤コンポーネントのレコードのドキュメント](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)内でシームレスに使用できる、様々な組み込み OOTB でサポートされるフォントが用意されています。
 
 <!--
 
@@ -28,9 +28,9 @@ AEM Forms offers various OOTB supported fonts that can be seamlessly used within
 * To generate Document of Record to archive AEM forms and content together in PDF format ([Click to know more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms)).
 -->
 
-## 標準（OOTB）でサポートされているフォント {#ootb-supported-fonts}
+## 標準（OOTB）でサポートされるフォント {#ootb-supported-fonts}
 
-OOTB でサポートされているフォントのリストを以下に示します。
+OOTB でサポートされるフォントのリストは次のとおりです。
 
 * AdobeArabic
 * AdobeFanHeitiStd
@@ -52,5 +52,5 @@ OOTB でサポートされているフォントのリストを以下に示しま
 * eurosign.ttf
 
 
-上記のフォントに加えて、カスタムフォントを使用して、PDFに具体的なルックアンドフィールを提供できます。 カスタムフォントを有効にするには、有効なライセンスを持つ [ カスタムフォントをFormsas a Cloud Serviceに追加する ](/help/forms/use-custom-fonts.md) 必要があります。
+上記のフォントに加えて、カスタムフォントを使用して PDF に特定のルックアンドフィールを提供できます。カスタムフォントを有効にするには、有効なライセンスを使用して、[カスタムフォントを Forms as a Cloud Service 環境に追加します](/help/forms/use-custom-fonts.md)。
 

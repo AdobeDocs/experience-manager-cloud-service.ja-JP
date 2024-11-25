@@ -1,18 +1,18 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセットセレクター'
-description: アセットセレクターを様々なAdobe、Adobe以外のアプリケーションおよびサードパーティアプリケーションと統合します。
+description: アセットセレクターを様々なアドビ、アドビ以外、サードパーティのアプリケーションと統合します。
 role: Admin, User
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '196'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 # Vanilla JS を使用したアセットセレクターの統合 {#integration-using-vanilla-js}
 
-| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 あらゆる [!DNL Adobe] アプリケーションまたはアドビ以外のアプリケーションを [!DNL Experience Manager Assets] リポジトリと統合し、アプリケーション内からアセットを選択できます。[アセットセレクターと様々なアプリケーションの統合](#asset-selector-integration-with-apps)を参照してください。
@@ -39,6 +39,6 @@ ht-degree: 79%
 
 >[!MORELIKETHIS]
 >
->* [ アセットセレクターのカスタマイズ ](/help/assets/asset-selector-customization.md)
->* [ アセットセレクターのプロパティ ](/help/assets/asset-selector-properties.md)
->* [ アセットセレクターとDynamic Mediaの OpenAPI 機能との統合 ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [アセットセレクターのカスタマイズ](/help/assets/asset-selector-customization.md)
+>* [アセットセレクターのプロパティ](/help/assets/asset-selector-properties.md)
+>* [OpenAPI 機能を備えた Dynamic Media とのアセットセレクターの統合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

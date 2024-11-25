@@ -1,21 +1,21 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセットセレクター'
-description: 関数を使用すると、アプリケーション内のアセットセレクターをカスタマイズできます。
+description: 関数を使用して、アプリケーション内のアセットセレクターをカスタマイズします。
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1261'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # アセットセレクターのカスタマイズ {#asset-selector-customization}
 
-| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-アセットセレクターを使用すると、環境設定、要件、機能のニーズに応じて、様々なコンポーネントをカスタマイズできます。 次のコンポーネント [ マイクロフロントエンドアセットセレクター ](#overview-asset-selector.md) をカスタマイズできます。
+アセットセレクターを使用すると、環境設定、要件、機能のニーズに応じて、様々なコンポーネントをカスタマイズできます。[マイクロフロントエンドのアセットセレクター](#overview-asset-selector.md)の次のコンポーネントをカスタマイズできます。
 
 * [フィルターパネルのカスタマイズ](#customize-filter-panel)
 * [モーダルビューでの情報のカスタマイズ](#customize-info-in-modal-view)
@@ -24,7 +24,7 @@ ht-degree: 85%
 * [有効期限切れのアセットのカスタマイズ](#customize-expired-assets)
 * [コンテキスト呼び出しフィルター](#contextual-invocation-filter)
 
-[!DNL Experience Manager Assets] リポジトリにアクセスするための認証の詳細を定義するには、アプリケーション実装内の **index.html** ファイルまたは同様のファイルで前提条件を定義する必要があります。 完了したら、要件に応じてコードスニペットを追加できます。
+アプリケーション実装内の **index.html** ファイルまたは同様のファイルで前提条件を定義して、[!DNL Experience Manager Assets] リポジトリにアクセスする認証の詳細を定義する必要があります。完了したら、要件に応じてコードスニペットを追加できます。
 
 ## フィルターパネルのカスタマイズ {#customize-filter-panel}
 
@@ -410,10 +410,10 @@ const filterSchema = useMemo ((); => {
 
 ## アセットセレクターでのアップロード {#upload-in-asset-selector}
 
-ローカルファイルシステムからアセットセレクターにファイルまたはフォルダーをアップロードできます。 ローカルファイルシステムを使用してファイルをアップロードするには、通常、アセットセレクターマイクロフロントエンドアプリケーションが提供するアップロード機能を使用する必要があります。 アセットセレクターでアップロードを呼び出すために必要な様々なコードスニペットを次に示します。
+ローカルファイルシステムからアセットセレクターにファイルまたはフォルダーをアップロードできます。ローカルファイルシステムを使用してファイルをアップロードするには、通常、アセットセレクターのマイクロフロントエンドアプリケーションによって提供されるアップロード機能を使用する必要があります。アセットセレクターでアップロードを呼び出すのに必要な様々なコードスニペットには、次が含まれます。
 
-* [基本的なアップロードフォームコードスニペット](#basic-upload)
-* [メタデータを使用してアップロード](#upload-with-metadata)
+* [基本アップロードフォームのコードスニペット](#basic-upload)
+* [メタデータを使用したアップロード](#upload-with-metadata)
 * [カスタマイズされたアップロード](#customized-upload)
 * [サードパーティのソースを使用したアップロード](#upload-using-third-party-source)
 
@@ -452,7 +452,7 @@ export const UploadExample = () => {
 }
 ```
 
-### メタデータを使用してアップロード {#upload-with-metadata}
+### メタデータを使用したアップロード {#upload-with-metadata}
 
 ```
 import { AllInOneUpload } from '@assets/upload';
@@ -611,7 +611,7 @@ const ControlledUploadExample = () => {
 
 >[!MORELIKETHIS]
 >
->* [ アセットセレクターのプロパティ ](/help/assets/asset-selector-properties.md)
->* [ アセットセレクターと様々なアプリケーションの統合 ](/help/assets/integrate-asset-selector.md)
->* [ アセットセレクターのプロパティ ](/help/assets/asset-selector-properties.md)
->* [ アセットセレクターとDynamic Mediaの OpenAPI 機能との統合 ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [アセットセレクターのプロパティ](/help/assets/asset-selector-properties.md)
+>* [アセットセレクターと様々なアプリケーションの統合](/help/assets/integrate-asset-selector.md)
+>* [アセットセレクターのプロパティ](/help/assets/asset-selector-properties.md)
+>* [OpenAPI 機能を備えた Dynamic Media とのアセットセレクターの統合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

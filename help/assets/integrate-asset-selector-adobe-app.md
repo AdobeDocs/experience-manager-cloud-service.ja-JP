@@ -1,21 +1,21 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセットセレクター'
-description: アセットセレクターを様々なAdobe、Adobe以外のアプリケーションおよびサードパーティアプリケーションと統合します。
+description: アセットセレクターを様々なアドビ、アドビ以外、サードパーティのアプリケーションと統合します。
 role: Admin, User
 exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '785'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# アセットセレクターとAdobeアプリケーションの統合 {#integrate-asset-selector-with-adobe-app}
+# アセットセレクターとアドビアプリケーションの統合 {#integrate-asset-selector-with-adobe-app}
 
-| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-アセットセレクターを使用すると、様々なAdobeアプリケーションを使用してを統合し、シームレスに連携できるようになります。
+アセットセレクターを使用すると、様々なアドビアプリケーションを統合して、シームレスに連携できます。
 
 ## 前提条件{#prereqs-adobe-app}
 
@@ -67,7 +67,7 @@ ht-degree: 86%
 
 ### ImsAuthProps {#ims-auth-props}
 
-`ImsAuthProps` のプロパティでは、アセットセレクターがア `imsToken` ットを取得するために使用する認証情報およびフローを定義します。 これらのプロパティを設定すると、認証フローの動作を制御し、様々な認証イベントのリスナーを登録できます。
+`ImsAuthProps` プロパティは、アセットセレクターが `imsToken` を取得するのに使用する認証情報とフローを定義します。これらのプロパティを設定すると、認証フローの動作を制御し、様々な認証イベントのリスナーを登録できます。
 
 | プロパティ名 | 説明 |
 |---|---|
@@ -82,7 +82,7 @@ ht-degree: 86%
 
 ### ImsAuthService {#ims-auth-service}
 
-クラス `ImsAuthService`、アセットセレクターの認証フローを処理します。 これは、Adobe IMS 認証サービスから `imsToken` を取得する役割を果たします。`imsToken` は、ユーザーを認証し、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] アセットリポジトリへのアクセスを認証するために使用されます。ImsAuthService は、`ImsAuthProps` プロパティを使用して認証フローを制御し、様々な認証イベントのリスナーを登録します。便利な [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) 関数を使用して、_ImsAuthService_ インスタンスをアセットセレクターに登録できます。`ImsAuthService` クラスでは、次の関数を使用できます。ただし、_registerAssetsSelectorsAuthService_ 関数を使用している場合は、これらの関数を直接呼び出す必要はありません。
+`ImsAuthService` クラスは、アセットセレクターの認証フローを処理します。これは、Adobe IMS 認証サービスから `imsToken` を取得する役割を果たします。`imsToken` は、ユーザーを認証し、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] アセットリポジトリへのアクセスを認証するために使用されます。ImsAuthService は、`ImsAuthProps` プロパティを使用して認証フローを制御し、様々な認証イベントのリスナーを登録します。便利な [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) 関数を使用して、_ImsAuthService_ インスタンスをアセットセレクターに登録できます。`ImsAuthService` クラスでは、次の関数を使用できます。ただし、_registerAssetsSelectorsAuthService_ 関数を使用している場合は、これらの関数を直接呼び出す必要はありません。
 
 | 関数名 | 説明 |
 |---|---|
@@ -152,7 +152,7 @@ onErrorReceived: (type, msg) => {
 
 >[!MORELIKETHIS]
 >
->* [ アセットセレクターと様々なアプリケーションの統合 ](/help/assets/integrate-asset-selector.md)
->* [ アセットセレクターのプロパティ ](/help/assets/asset-selector-properties.md)
->* [ アセットセレクターとDynamic Mediaの OpenAPI 機能との統合 ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
->* [ アセットセレクターのカスタマイズ ](/help/assets/asset-selector-customization.md)
+>* [アセットセレクターと様々なアプリケーションの統合](/help/assets/integrate-asset-selector.md)
+>* [アセットセレクターのプロパティ](/help/assets/asset-selector-properties.md)
+>* [OpenAPI 機能を備えた Dynamic Media とのアセットセレクターの統合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [アセットセレクターのカスタマイズ](/help/assets/asset-selector-customization.md)

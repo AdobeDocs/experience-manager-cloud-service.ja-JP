@@ -1,31 +1,31 @@
 ---
 title: 分類データの管理
-description: Edge Delivery ServicesサイトでAEMとタグを使用するための分類データを管理する方法を説明します。
+description: Edge Delivery Services サイトで、AEM でタグを使用する分類データの管理方法について説明します。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
 source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '845'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 # 分類データの管理 {#managing-taxonomy-data}
 
-Edge Delivery ServicesサイトでAEMとタグを使用するための分類データを管理する方法を説明します。
+Edge Delivery Services サイトで、AEM でタグを使用する分類データの管理方法について説明します。
 
 ## はじめに {#introduction}
 
-タグ付けは、ページを整理および管理するのに役立つ重要な機能です。 AEMの [ タグ付けコンソール ](/help/sites-cloud/administering/tags.md#tagging-console) を使用すると、タグの豊富な分類を作成してページを整理できます。
+タグ付けは、ページの整理と管理に役立つ重要な機能です。AEM の[タグ付けコンソール](/help/sites-cloud/administering/tags.md#tagging-console)を使用すると、豊富なタグの分類を作成してページを整理できます。
 
-これらのタグは、作成者がコンテンツを整理する際に役立つだけでなく、読者にとっても役立ちます。 タグとその分類は、ページ上のコンポーネントで使用して、読者がコンテンツを移動しやすくすることができます。
+これらのタグは、コンテンツを整理する際にユーザーや作成者だけでなく、読者にとっても役立ちます。タグとその分類は、ページ上のコンポーネントで使用して、読者がコンテンツを移動するのに役立ちます。
 
-ユニバーサルエディターは、タグの ID でのみ機能します。 コンテンツの分類ページを作成することにより、すべての言語のこれらのタグの説明をユニバーサルエディターに公開して、コンテンツのレンダリング時に情報を使用できるようにします。
+ユニバーサルエディターは、タグの ID でのみ機能します。コンテンツの分類ページを作成すると、これらのタグの説明がすべての言語でユニバーサルエディターに公開され、コンテンツをレンダリングする際にその情報を使用できます。
 
 ## 分類ページの作成 {#creating}
 
-分類は、[AEMの他のページ ](/help/sites-cloud/authoring/sites-console/creating-pages.md) と同様に作成されます。
+分類は、[AEM の他のページ](/help/sites-cloud/authoring/sites-console/creating-pages.md)と同様に作成されます。
 
 1. [**Sites** コンソールに移動します。](/help/sites-cloud/authoring/sites-console/introduction.md)
 
@@ -35,53 +35,53 @@ Edge Delivery ServicesサイトでAEMとタグを使用するための分類デ�
 
    ![ページを作成](assets/taxonomy/create-page.png)
 
-1. **ページを作成** ウィザードの **テンプレート** タブで、**分類** テンプレートを選択し、「**次へ** をタップまたはクリックします。
+1. **ページを作成**&#x200B;ウィザードの「**テンプレート**」タブで、**分類**&#x200B;テンプレートを選択し、「**次へ**」をタップまたはクリックします。
 
-   ![ 分類テンプレート ](assets/taxonomy/taxonomy-template.png)
+   ![分類テンプレート](assets/taxonomy/taxonomy-template.png)
 
-1. **ページを作成** ウィザードの **プロパティ** タブで、ページに意味のある **タイトル** を指定し、**タグ** フィールドに [ タグピッカーを使用 ](/help/sites-cloud/authoring/sites-console/tags.md) して、分類に含めるタグまたは名前空間を選択します。
+1. **ページを作成**&#x200B;ウィザードの「**プロパティ**」タブで、ページに意味のある&#x200B;**タイトル**&#x200B;を入力し、「**タグ**」フィールドで[タグピッカーを使用](/help/sites-cloud/authoring/sites-console/tags.md)して、分類に含めるタグまたは名前空間を選択します。
 
-   ![ 分類プロパティ ](assets/taxonomy/create-page-wizard-properties.png)
+   ![分類プロパティ](assets/taxonomy/create-page-wizard-properties.png)
 
 1. 「**作成**」をタップまたはクリックします。
 
-分類ページが作成されます。 **成功** ダイアログで、「**完了** ダイアログをタップまたはクリックしてメッセージを解除するか、「**開く [ をタップまたはクリックして、** ページエディター ](/help/sites-cloud/authoring/page-editor/introduction.md) でページを編集することができます。
+分類ページが作成されます。**成功**&#x200B;ダイアログでは、**完了**&#x200B;ダイアログをタップまたはクリックしてメッセージを閉じるか、「**開く**」をクリックして[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)でページを編集できます。
 
-次の手順で使用するために、分類ページの結果ページ名をメモしておきます。
+次の手順で使用するのに、分類ページの結果のページ名をメモしておきます。
 
 ## 分類ページの編集 {#editing}
 
-AEMの他のページと同様に、分類ページの編集を開始します。
+AEM の他のページと同様に、分類ページの編集を開始します。
 
 1. [**Sites** コンソールに移動します。](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 1. 編集する分類を選択します。
 
-1. アクションバーの **編集** をタップまたはクリックします。
+1. アクションバーの「**編集**」をタップまたはクリックします。
 
 1. ページエディターが開き、分類が表示されます。
 
    * 分類ページは、ページエディターでは読み取り専用です。
 
-   ![ 分類を編集 ](assets/taxonomy/edit-page.png)
+   ![分類の編集](assets/taxonomy/edit-page.png)
 
-1. ツールバーの **ページ情報** アイコンをタップまたはクリックして、「**プロパティを開く** を選択します。
+1. ツールバーの&#x200B;**ページ情報**&#x200B;アイコンをタップまたはクリックし、「**プロパティを開く**」を選択します。
 
-   ![ プロパティを開く ](assets/taxonomy/open-properties.png)
+   ![プロパティを開く](assets/taxonomy/open-properties.png)
 
-1. **ページプロパティ** ウィンドウで、ページの名前を更新し、タグセレクターを使用して、分類に含まれるタグと名前空間を更新できます。
+1. **ページプロパティ**&#x200B;ウィンドウでは、ページの名前を更新し、タグセレクターを使用して分類に含まれるタグと名前空間を更新できます。
 
-   ![ ページプロパティの編集 ](assets/taxonomy/edit-properties.png)
+   ![ページのプロパティの編集](assets/taxonomy/edit-properties.png)
 
 1. 「**保存して閉じる**」をタップまたはクリックします。
 
-分類のコンテンツが選択したタグと名前空間から自動的に生成されるので、ページエディターに表示されるページは読み取り専用です。 分類のコンテンツを自動的に生成するためのフィルターの一種として機能します。 したがって、エディターでページを直接編集する必要はありません。
+分類のコンテンツは選択したタグと名前空間から自動的に生成されるので、ページエディターに表示されるページは読み取り専用です。これらは、分類のコンテンツを自動的に生成する一種のフィルターとして機能します。したがって、エディターでページを直接編集する必要はありません。
 
-基になるタグと名前空間を更新すると、AEMによって分類ページのコンテンツが自動的に更新されます。 ただし、変更を加えた後で分類を [ 再公開 ](#publishing) して、その変更をユーザーが使用できるようにする必要があります。
+AEM では、基になるタグと名前空間を更新すると、分類ページのコンテンツが自動的に更新されます。ただし、変更をユーザーが使用できるようにするには、変更後に[分類を再公開](#publishing)する必要があります。
 
 ## 分類の公開に関する paths.json の更新 {#paths-json}
 
-Edge Delivery Servicesサイトの表形式のデータを管理して公開する [ 場合と同様に ](/help/edge/wysiwyg-authoring/tabular-data.md) 分類データを公開できるように、プロジェクトの `paths.json` ファイルを更新する必要があります。
+[Edge Delivery Services サイトの表形式データを管理および公開](/help/edge/wysiwyg-authoring/tabular-data.md)する場合と同様に、分類データの公開を許可するには、プロジェクトの `paths.json` ファイルを更新する必要があります。
 
 1. GitHub でプロジェクトのルートを開きます。
 
@@ -89,7 +89,7 @@ Edge Delivery Servicesサイトの表形式のデータを管理して公開す�
 
    ![paths.json file](assets/taxonomy/paths-json.png)
 
-1. 行を追加して、新しい分類ページを `.json` リソースにマッピングします。
+1. 新しい分類ページを `.json` リソースにマッピングする行を追加します。
 
    ```json
    {
@@ -100,41 +100,41 @@ Edge Delivery Servicesサイトの表形式のデータを管理して公開す�
    }
    ```
 
-   * 作成 `<taxonomy-page-name>` た [ 分類ページ ](#creating) の名前と一致する必要があります。
-   * 任意の有効な名前を指定で `<taxonomy-json-name>` ます。
+   * `<taxonomy-page-name>` は、[作成した分類ページ](#creating)の名前と一致する必要があります。
+   * `<taxonomy-json-name>` には、任意の有効な名前を指定できます。
 
 1. 「**変更をコミット…**」をクリックして、変更を `main` に保存します。
 
    * `main` にコミットするか、プロセスに従ってプルリクエストを作成します。
 
-このプロセスは、分類ページごとに 1 回だけ実行する必要があります。 完了したら、分類を公開できます。
+このプロセスは、分類ページごとに 1 回だけ実行する必要があります。完了したら、分類を公開できます。
 
 >[!TIP]
 >
->Edge Delivery Servicesマッピングについて詳しくは、「パスのパスマッピング [ のドキュメントを参照してください。](/help/edge/wysiwyg-authoring/path-mapping.md)
+>パスマッピングについて詳しくは、[Edge Delivery Services のパスマッピング](/help/edge/wysiwyg-authoring/path-mapping.md)ドキュメントを参照してください。
 
 ## 分類の公開 {#publishing}
 
-分類は、公開されるまで、ユニバーサルエディターまたはユーザーは使用できません。
+分類は、公開されるまでユニバーサルエディターやユーザーには提供されません。
 
-分類ページは、他のページと同様に、[ ツールバーの **クイックPublish** または **公開を管理** アイコンを使用 ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) して公開されます。
+分類ページは、[ツールバーの&#x200B;**クイック公開**&#x200B;アイコンまたは&#x200B;**公開を管理**&#x200B;アイコンを使用](/help/sites-cloud/authoring/sites-console/publishing-pages.md)して、他のページと同様に公開されます。
 
 分類ページは、次の操作を行うたびに再公開する必要があります。
 
-* 分類ページを編集します。
-* 分類ページに含まれるタグおよび名前空間を編集または追加します。
+* 分類ページを編集。
+* 分類ページに含まれるタグおよび名前空間を編集または追加。
 
-新しい分類ページを作成する場合は、まず [ プロジェクト内の `paths.json` ファイルへのマッピングを追加 ](#paths-json) する必要があります。
+新しい分類ページを作成する場合は、まず[プロジェクトの `paths.json` ファイルにマッピングを追加](#paths-json)する必要があります。
 
 ## 分類情報へのアクセス {#accessing}
 
-分類が公開されると、その情報をユニバーサルエディターで活用して、ユーザーに表示できます。
+分類を公開すると、その情報はユニバーサルエディターで活用され、ユーザーに表示されます。
 
-以下のアドレスで、JSON データとして分類にアクセスできます。
+次のアドレスで、JSON データとして分類にアクセスできます。
 
 `https://<branch>--<repository>--<owner>.hlx.page/<taxonomy-json-name>.json`
 
-分類をプロジェクトの `paths.json` ファイルにマッピングする [ 際に定義した `<taxonomy-json-name>` を使用します。](#paths-json) 分類データは、次の例のように JSON データとして返されます。
+プロジェクト内の `paths.json` ファイルに分類をマッピングする際に定義した `<taxonomy-json-name>`を使用します。[](#paths-json)分類データは、次の例のように JSON データとして返されます。
 
 ```json
 {
@@ -159,6 +159,6 @@ Edge Delivery Servicesサイトの表形式のデータを管理して公開す�
 }
 ```
 
-この JSON データは、分類を更新して再公開すると、自動的に更新されます。 アプリは、ユーザーのこの情報にプログラムでアクセスできます。
+この JSON データは、分類を更新して再公開すると、自動的に更新されます。アプリでは、ユーザーのこの情報にプログラムでアクセスできます。
 
-[ 複数の言語でタグを管理している場合 ](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages)、`sheet=` パラメーターの値として ISO2 言語コードを渡すことで、それらの言語にアクセスできます。
+[複数の言語でタグを管理する場合は、](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages)`sheet=` パラメーターの値として ISO2 言語コードを渡すことで、それらの言語にアクセスできます。

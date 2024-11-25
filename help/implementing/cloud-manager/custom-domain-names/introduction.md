@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '704'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ AEM as a Cloud Service にはビルトインの CDN（コンテンツ配信ネ�
 
 >[!TIP]
 >
->通常、AEM as a Cloud Service でのカスタムドメイン名の設定手順は簡単です。ただし、ドメインのデリゲーションに関する問題が発生した場合は、解決に 1～2 営業日かかる可能性があります。このため、運用開始日より早い時期にドメインをインストールすることをお勧めします。 詳しくは、[ドメイン名ステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)のドキュメントを参照してください。
+>通常、AEM as a Cloud Service でのカスタムドメイン名の設定手順は簡単です。ただし、ドメインのデリゲーションに関する問題が発生した場合は、解決に 1～2 営業日かかる可能性があります。そのため、運用開始日の前にドメインを適切にインストールしておくことをお勧めします。詳しくは、[ドメイン名ステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)のドキュメントを参照してください。
 
 ## 制限事項 {#limitations}
 

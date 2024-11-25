@@ -1,21 +1,21 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセットセレクター'
-description: アセットセレクターを使用して、要件に応じてカスタマイズする例。
+description: アセットセレクターを使用して要件に応じてカスタマイズする例。
 role: Admin, User
 exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 # アセットセレクターのプロパティの使用例 {#usage-examples}
 
-| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-**index.html** ファイルのアセットセレクター [ プロパティ ](/help/assets/asset-selector-properties.md) を定義して、アプリケーション内のアセットセレクター表示をカスタマイズできます。
+**index.html** ファイルでアセットセレクターの[プロパティ](/help/assets/asset-selector-properties.md)を定義して、アプリケーション内のアセットセレクター表示をカスタマイズできます。
 
 ## 例 1：パネルビューのアセットセレクター
 
@@ -55,7 +55,7 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 
 >[!MORELIKETHIS]
 >
->* [ アセットセレクターのカスタマイズ ](/help/assets/asset-selector-customization.md)
->* [ アセットセレクターのアップロード ](/help/assets/asset-selector-upload.md)
->* [ アセットセレクターのプロパティ ](/help/assets/asset-selector-properties.md)
->* [ アセットセレクターとDynamic Mediaの OpenAPI 機能との統合 ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [アセットセレクターのカスタマイズ](/help/assets/asset-selector-customization.md)
+>* [アセットセレクターのアップロード](/help/assets/asset-selector-upload.md)
+>* [アセットセレクターのプロパティ](/help/assets/asset-selector-properties.md)
+>* [OpenAPI 機能を備えた Dynamic Media とのアセットセレクターの統合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

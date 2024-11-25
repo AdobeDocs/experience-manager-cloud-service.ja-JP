@@ -1,21 +1,21 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセットセレクター'
-description: アセットセレクターを様々なAdobe、Adobe以外のアプリケーションおよびサードパーティアプリケーションと統合します。
+description: アセットセレクターを様々なアドビ、アドビ以外、サードパーティのアプリケーションと統合します。
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '442'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
-# Adobe以外のアプリケーションとの統合 {#integrate-asset-selector-non-adobe-app}
+# アドビ以外のアプリケーションとの統合 {#integrate-asset-selector-non-adobe-app}
 
-| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-アセットセレクターを使用すると、Adobe以外の様々なアプリケーションやサードパーティのアプリケーションを統合し、それらをシームレスに連携できるようになります。
+アセットセレクターを使用すると、アドビ以外の様々なアプリケーションやサードパーティのアプリケーションを統合して、シームレスに連携できます。
 
 ## 前提条件 {#prereqs-non-adobe-app}
 
@@ -30,9 +30,9 @@ ht-degree: 71%
 
 アセットセレクターは、アドビ以外のアプリケーションと統合する場合に、`imsScope` や `imsClientID` などの Identity Management System（IMS）プロパティを使用した [!DNL Experience Manager Assets] リポジトリへの認証をサポートします。
 
-## Adobe以外のアプリケーション用のアセットセレクターを設定する {#configure-non-adobe-app}
+## アドビ以外のアプリケーションに対するアセットセレクターの設定 {#configure-non-adobe-app}
 
-Adobe以外のアプリケーションにアセットセレクターを設定するには、プロビジョニングのサポートチケットをログに記録してから、統合手順を実行する必要があります。
+アドビ以外のアプリケーションに対してアセットセレクターを設定するには、まずプロビジョニングのサポートチケットを記録してから、統合手順を実行する必要があります。
 
 ### サポートチケットのログ {#log-a-support-ticket}
 
@@ -47,7 +47,7 @@ Admin Console を使用してサポートチケットを記録する手順は次
 
 ## 統合手順 {#non-adobe-app-integration-steps}
 
-アセットセレクターをAdobe以外のアプリケーションと統合する場合の認証用の `index.html` ファイルの例を次に示します。
+アセットセレクターをアドビ以外のアプリケーションと統合する際の認証には、この例の `index.html` ファイルを使用します。
 
 `index.html` ファイルの例の *9 行目*&#x200B;から *11 行目*&#x200B;に示すように、`Script` タグを使用してアセットセレクターパッケージにアクセスします。
 
@@ -138,7 +138,7 @@ Admin Console を使用してサポートチケットを記録する手順は次
 </html>
 ```
 
-## 配信リポジトリにアクセスできません {#unable-to-access-delivery-repository}
+## 配信リポジトリにアクセスできない {#unable-to-access-delivery-repository}
 
 >[!TIP]
 >
@@ -146,7 +146,7 @@ Admin Console を使用してサポートチケットを記録する手順は次
 
 >[!MORELIKETHIS]
 >
->* [ アセットセレクターと様々なアプリケーションの統合 ](/help/assets/integrate-asset-selector.md)
->* [ アセットセレクターのプロパティ ](/help/assets/asset-selector-properties.md)
->* [ アセットセレクターとDynamic Mediaの OpenAPI 機能との統合 ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
->* [ アセットセレクターのカスタマイズ ](/help/assets/asset-selector-customization.md)
+>* [アセットセレクターと様々なアプリケーションの統合](/help/assets/integrate-asset-selector.md)
+>* [アセットセレクターのプロパティ](/help/assets/asset-selector-properties.md)
+>* [OpenAPI 機能を備えた Dynamic Media とのアセットセレクターの統合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [アセットセレクターのカスタマイズ](/help/assets/asset-selector-customization.md)

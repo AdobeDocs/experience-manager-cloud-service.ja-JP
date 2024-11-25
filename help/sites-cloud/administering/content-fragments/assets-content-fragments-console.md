@@ -1,53 +1,53 @@
 ---
-title: コンテンツフラグメントコンソールでのAssetsの表示と管理
-description: Adobe Experience Manager as a Cloud Serviceの**コンテンツフラグメントコンソール**でAssetsを表示および管理する方法について説明します。
+title: コンテンツフラグメントコンソールでのアセットの表示と管理
+description: Adobe Experience Manager as a Cloud Service の **コンテンツフラグメントコンソール** でアセットを表示および管理する方法について説明します。
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
 solution: Experience Manager Sites
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '212'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
-# コンテンツフラグメントコンソールでのAssetsの表示と管理 {#viewing-managing-assets-content-fragments-console}
+# コンテンツフラグメントコンソールでのアセットの表示と管理 {#viewing-managing-assets-content-fragments-console}
 
-デフォルトでは、Adobe Experience Manager as a Cloud Serviceの [ コンテンツフラグメントコンソール ](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) には、[ コンテンツフラグメント ](/help/sites-cloud/administering/content-fragments/overview.md) が表示されます。
+デフォルトでは、Adobe Experience Manager as a Cloud Service の[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)に[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)が表示されます。
 
-ただし、この **コンテンツフラグメントコンソール** では、他のすべての種類の **0}Assets} を表示および管理することもできます。**
-
->[!NOTE]
->
->コンテンツフラグメントは、**[Assets](/help/assets/overview.md)** コンソールからアクセスすることもできます。
-
-## Assetsの表示 {#viewing-assets}
-
-コンテンツフラグメントコンソールの左端のパネルを使用して、表示、参照、管理するリソースタイプとして **0}Assets} を選択できます。**
-
-![ コンテンツフラグメントコンソール – ナビゲーション ](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+ただし、この&#x200B;**コンテンツフラグメントコンソール**&#x200B;では、他のすべての種類の&#x200B;**アセット**&#x200B;を表示および管理することもできます。
 
 >[!NOTE]
 >
->コンテンツフラグメントはAssetsとして保存されますが、このビューには表示されません。
+>また、コンテンツフラグメントには、**[Assets](/help/assets/overview.md)** コンソールからアクセスすることもできます。
+
+## アセットの表示 {#viewing-assets}
+
+コンテンツフラグメントコンソールの左端のパネルを使用して、表示、参照、管理するリソースタイプとして「**アセット**」を選択できます。
+
+![コンテンツフラグメントコンソール - ナビゲーション](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+
+>[!NOTE]
+>
+>コンテンツフラグメントはアセットとして保存されますが、このビューには表示されません。
 
 ## アセットの管理 {#managing-assets}
 
-コンテンツフラグメントコンソールの **Assets** ビューから、次の操作を実行できます。
+コンテンツフラグメントコンソールの&#x200B;**アセット**&#x200B;ビューから、次の操作を実行できます。
 
-![ コンテンツフラグメントコンソール – アセットを参照 ](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
+![コンテンツフラグメントコンソール - アセットの参照](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
 
-* 構造に移動して、Assetsを参照します。[Assets コンソールの機能と同様 ](/help/assets/navigate-assets-view.md)。
-* [フォルダーを作成](/help/assets/manage-digital-assets.md#creating-folders)
-* [アセットをアップロード](/help/assets/add-delete-assets-view.md)
-* 表示タイプ（リスト、グリッド、ギャラリー、ウォーターフォール）を設定し、該当する場合は列を表示します
+* 構造に移動してアセットを参照。[Assets コンソールの機能に似ています](/help/assets/navigate-assets-view.md)。
+* [フォルダーの作成](/help/assets/manage-digital-assets.md#creating-folders)
+* [アセットのアップロード](/help/assets/add-delete-assets-view.md)
+* 表示タイプ（リスト、グリッド、ギャラリー、ウォーターフォール）を設定し、必要に応じて表示する列を設定します
 
-また、選択した 1 つ以上のAssetsに対してアクションを実行することもできます。
+また、選択した 1 つまたは複数のアセットに対してアクションを実行することもできます。
 
-![ コンテンツフラグメントコンソール – 選択したアセットのアクション ](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-actions.png)
+![コンテンツフラグメントコンソール - 選択したアセットのアクション](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-actions.png)
 
-次について詳しくは、[Assetsの管理 ](/help/assets/manage-organize-assets-view.md) を参照してください。
+次について詳しくは、[アセットの管理](/help/assets/manage-organize-assets-view.md)を参照してください。
 
 * 詳細
 * ダウンロード

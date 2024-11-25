@@ -6,9 +6,9 @@ feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 source-git-commit: 4cec40947f1b50dd627321cabfbe43033a224f8b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1720'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 >[!NOTE]
 >
->使用可能な様々な API の概要および関連する概念の一部の比較については ](/help/headless/apis-headless-and-content-fragments.md)[ 構造化コンテンツ配信および管理用のAEM API} を参照してください。
+>使用可能な様々な API の概要と、関連する概念のいくつかの比較について詳しくは、[構造化コンテンツの配信と管理用の AEM API](/help/headless/apis-headless-and-content-fragments.md) を参照してください。
 >
 >この[コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
@@ -146,7 +146,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 **応答**：返されるエンティティのクラスはアセットまたはフォルダーです。含まれるエンティティのプロパティは、各エンティティの完全なプロパティセットのサブセットです。エンティティのすべての表現を取得するために、クライアントはリンクで参照される URL のコンテンツを `self` の `rel` で取得する必要があります。
 
-## フォルダーを作成する {#create-a-folder}
+## フォルダーの作成 {#create-a-folder}
 
 指定されたパスに `sling`:`OrderedFolder` を作成します。ノード名の代わりに「`*`」が指定されている場合、サーブレットパラメーター名がノード名として使用されます。リクエストでは、次のいずれかを受け付けます。
 

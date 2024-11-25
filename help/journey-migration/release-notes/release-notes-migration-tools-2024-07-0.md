@@ -4,7 +4,7 @@ description: AEM as a Cloud Service リリース 2024.07.0 の移行ツールの
 feature: Release Information
 role: Admin
 source-git-commit: 60c7691530ee56a5c8f44bbfd72f20b58ddf5c1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '133'
 ht-degree: 100%
 

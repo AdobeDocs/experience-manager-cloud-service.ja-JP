@@ -5,9 +5,9 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4863'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -300,7 +300,7 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 >
 >WKND プロジェクトの Dispatcher 設定は、上記のコンテンツパッケージのインストールではデプロイされません。「Apache／Dispatcher 設定のデプロイ」の手順に従って、別途デプロイします。
 
-#### OSGI 設定のデプロイ {#deploy-OSGI-config}
+#### OSGi 設定のデプロイ {#deploy-OSGI-config}
 
 `aio aem:rde:install com.adobe.granite.demo.MyServlet.cfg.json`
 
@@ -337,7 +337,7 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 #4: deploy completed for content-file world.txt on author,publish - done by 9E0729C05C54FE1A0B49431C@AdobeID at 2022-09-14T07:49:30.644Z
 ```
 
-#### Apache/Dispatcher設定のデプロイ {#deploy-apache-config}
+#### Apache／Dispatcher 設定のデプロイ {#deploy-apache-config}
 
 このタイプの設定では、フォルダー構造全体を zip ファイル形式にする必要があります。
 
@@ -391,16 +391,16 @@ The analyser found the following errors for publish :
 
 #### 設定パイプラインに関連する設定のデプロイ（yaml 設定） {#deploy-config-pipeline}
 
-[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md) の記事で説明されている環境固有の設定（1 つ以上の yaml ファイル）は、次のようにデプロイできます。
+[設定パイプラインの使用](/help/operations/config-pipeline.md)の記事の説明に従って、環境固有の設定（1 つ以上の yaml ファイル）は、次のようにデプロイできます。
 
 `aio aem:rde:install -t env-config ./my-config-folder`
 ここで、my-config-folder は yaml 設定を含む親フォルダーです。
 
-または、config フォルダーツリーを含んだ zip ファイルをインストールすることもできます。
+または、config フォルダーツリーを含む zip ファイルをインストールすることもできます。
 
 `aio aem:rde:install -t env-config config.zip`
 
-次の例に示すように、yaml ファイルの envTypes 配列には値 *rde* を含める必要があります。
+次の例に示すように、yaml ファイルの envTypes 配列には、値 *rde* を含める必要があります。
 
 ```
 kind: "CDN"

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1803'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 68%
 
 AEM as a Cloud Service の New Relic One アプリケーションパフォーマンスモニタリング（APM）サービスと、そのサービスへのアクセス方法について説明します。
 
-## New Relic Oneについて {#introduction}
+## New Relic One について {#introduction}
 
-アドビは、アプリケーションのモニタリング、可用性、パフォーマンスを重視しています。AEM as a Cloud Serviceでは、New Relic Oneのモニタリングを利用でき、標準製品の一部としてシステムと環境のパフォーマンス指標を包括的に把握できます。
+アドビは、アプリケーションのモニタリング、可用性、パフォーマンスを重視しています。AEM as a Cloud Service には、New Relic One モニタリングへのアクセスが含まれており、チームは標準製品の一部としてシステムと環境のパフォーマンス指標を包括的に可視化できます。
 
-このドキュメントでは、AEM as a Cloud Service環境のNew Relic One Application Performance Monitoring （APM）機能へのアクセスを管理する方法の概要を説明します。 これらの機能を効果的に管理することで、最適なパフォーマンスをサポートし、AEM as a Cloud Serviceのメリットを最大限に活用できます。
+このドキュメントでは、AEM as a Cloud Service 環境で New Relic One アプリケーションパフォーマンスモニタリング（APM）機能へのアクセスを管理する方法について説明します。これらの機能を効果的に管理することで、最適なパフォーマンスをサポートし、AEM as a Cloud Service のメリットを最大限に活用できます。
 
 新しい実稼動プログラムが作成されると、AEM as a Cloud Service プログラムに関連付けられた New Relic One サブアカウントが自動的に作成されます。データの取り込みを開始するには、[このサブアカウントをアクティベートする必要があります](#activate-sub-account)。
 
@@ -35,15 +35,15 @@ AEM as a Cloud Service 用の New Relic One APM には、多くの機能があ�
 
 * インフラストラクチャレベルのモニタリングおよびアプリケーション（Adobe Experience Manager）のモニタリングからの主要指標を組み合わせることで、全体的なパフォーマンス最適化を実現
 
-* AEM as a Cloud Serviceは、Java Management Extensions （JMX）の MBean とヘルスチェックをNew Relic Insights 内で直接公開し、アプリケーションのパフォーマンスとヘルス指標を詳細に調べることができます。
+* AEM as a Cloud Service は、Java Management Extensions（JMX）MBean とヘルスチェックを New Relic Insights 内に直接公開し、アプリケーションのパフォーマンスとヘルス指標の詳細な調査を有効にします。
 
 ## New Relic One サブアカウントをアクティベート {#activate-sub-account}
 
-新しく作成されたプログラムの場合は、New Relic One サブアカウントが作成されます。 ただし、データを取り込むには、有効にする必要があります。 このアクティベーションは自動的には行われません。 サブアカウントをアクティベートするには、次の手順に従います。
+新しく作成したプログラムの場合は、New Relic One サブアカウントが作成されます。ただし、データを取り込むには、アクティベートする必要があります。このアクティベーションは自動ではありません。サブアカウントをアクティベートするには、次の手順に従います。
 
 >[!NOTE]
 >
->New Relic One サブアカウントを管理するには、**ビジネスオーナー** または **デプロイメントマネージャー** のロールを持つユーザーがログインする必要があります。
+>New Relic One サブアカウントを管理するには、**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持つユーザーがログインしている必要があります。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
@@ -53,7 +53,7 @@ AEM as a Cloud Service 用の New Relic One APM には、多くの機能があ�
 
    ![ユーザーを管理](assets/newrelic-activate-sub-account.png)
 
-   * また、「**ユーザーを管理** オプションにアクセスすることもできます。 プログラムの **環境** 画面の上部にある ![ さらにスモークアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+   * また、「**ユーザーを管理**」オプションにアクセスすることもできます。プログラムの&#x200B;**環境**&#x200B;画面の上部にある ![Smock のその他のアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
 1. サブアカウントのアクティベーションを正常に完了するには、同じ環境に対して[パイプラインを実行](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)します。
 
@@ -65,7 +65,7 @@ AEM as a Cloud Service 用の New Relic One APM には、多くの機能があ�
 
 >[!NOTE]
 >
->New Relic One ユーザーを管理するには、**ビジネスオーナー** または **デプロイメントマネージャー** のロールを持つユーザーがログインする必要があります。
+>New Relic One ユーザーを管理するには、**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持つユーザーがログインしている必要があります。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
@@ -75,9 +75,9 @@ AEM as a Cloud Service 用の New Relic One APM には、多くの機能があ�
 
    ![ユーザーを管理](assets/newrelic-manage-users.png)
 
-   * また、「**ユーザーを管理** オプションにアクセスすることもできます。 プログラムの **環境** 画面の上部にある ![ さらにスモークアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+   * また、「**ユーザーを管理**」オプションにアクセスすることもできます。プログラムの&#x200B;**環境**&#x200B;画面の上部にある ![Smock のその他のアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
-1. 「**New Relic ユーザーを管理**」ダイアログで、追加するユーザーの氏名を入力し、「**追加**」ボタンをクリックします。追加するすべてのユーザーについて、この手順を繰り返します。
+1. **New Relic ユーザーを管理**&#x200B;ダイアログで、追加するユーザーの氏名を入力し、「**追加**」ボタンをクリックします。追加するすべてのユーザーについて、この手順を繰り返します。
 
    ![ユーザーを追加](assets/newrelic-add-users.png)
 
@@ -89,17 +89,17 @@ AEM as a Cloud Service 用の New Relic One APM には、多くの機能があ�
 
 >[!NOTE]
 >
->New Relic One ユーザーを管理している場合は、自分自身もユーザーとして追加して、自分自身にアクセスできるようにする必要があります。 New Relic One にアクセスするには、**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;であるだけでは十分ではありません。自分自身もユーザーとして作成する必要があります。
+>New Relic One ユーザーを管理している場合は、自分自身がアクセスできるように自分自身もユーザーとして追加する必要もあります。New Relic One にアクセスするには、**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;であるだけでは十分ではありません。自分自身もユーザーとして作成する必要があります。
 
 ## New Relic One ユーザーアカウントをアクティベート {#activate-user-account}
 
 [New Relic One ユーザーの管理](#manage-users)のプレビューセクションで説明しているように、New Relic One ユーザーアカウントが作成されると、New Relic はそれらのユーザーに指定されたアドレスに確認メールを送信します。これらのアカウントを使用するには、ユーザーはまずパスワードをリセットして New Relic のアカウントを有効にする必要があります
 
-**New Relic One ユーザーアカウントを有効にするには：**
+**New Relic One ユーザーアカウントをアクティベートするには：**
 
-1. New Relicからのメールに記載されているリンクをクリックします。
+1. New Relic からのメールに記載されているリンクをクリックします。
 
-1. New Relicのログインページで、「**パスワードを忘れた場合**」をクリックします。
+1. New Relic ログインページで、「**パスワードを忘れた場合**」をクリックします。
 
    ![New Relic ログイン](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
 
@@ -109,13 +109,13 @@ AEM as a Cloud Service 用の New Relic One APM には、多くの機能があ�
 
 1. New Relic から、アカウントを確認するためのリンクが記載されたメールが送信されます。
 
-New Relicから確認メールが届かない場合は、[ トラブルシューティングの節 ](#troubshooting) を参照してください。
+New Relic から確認メールが届かない場合は、[トラブルシューティングの節](#troubshooting)を参照してください。
 
 ## New Relic One へのアクセス {#accessing-new-relic}
 
 [New Relic アカウントを有効](#activate-account)にすると、Cloud Manager を介して、または直接、New Relic One にアクセスできます。
 
-**Cloud Managerを経由してNew Relic Oneにアクセスするには：**
+**Cloud Manager を介して New Relic One にアクセスするには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
@@ -125,7 +125,7 @@ New Relicから確認メールが届かない場合は、[ トラブルシュー
 
    ![ユーザーを管理](assets/newrelic-access.png)
 
-   * また、New Relicにアクセスすることもできます。 プログラムの **環境** 画面の上部にある ![ さらにスモークアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+   * また、New Relic にアクセスすることもできます。プログラムの&#x200B;**環境**&#x200B;画面の上部にある ![Smock のその他のアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
 1. 開いた新しいブラウザータブで、New Relic One にログインします。
 
@@ -137,7 +137,7 @@ New Relicから確認メールが届かない場合は、[ トラブルシュー
 
 ### メールの検証 {#verify-email}
 
-New Relic Oneへのログイン時にメールの確認を求められた場合は、メールが複数のアカウントに関連付けられていることを意味します。 アクセスするアカウントを選択できます。
+New Relic One へのログイン中に使用するメールを確認するように求められた場合は、メールが複数のアカウントに関連付けられていることを意味します。アクセスするアカウントを選択できます。
 
 メールアドレスを確認しない場合、New Relic は、メールアドレスに関連付けられた最新のユーザーレコードを使用してログインを試みます。ログインする度にメールが確認されないようにするには、ログイン画面の「**このアカウントを記憶する**」チェックボックスをクリックします。
 
@@ -145,7 +145,7 @@ New Relic Oneへのログイン時にメールの確認を求められた場合�
 
 ## New Relic One ユーザーアクセスのトラブルシューティング {#troubleshooting}
 
-[New Relic One ユーザーの管理 ](#manage-users) で説明しているようにNew Relic One ユーザーとして追加され、元のアカウント確認メールが見つからない場合は、次のトラブルシューティング手順を実行できます。
+[New Relic One ユーザーの管理](#manage-users)で説明しているように New Relic One ユーザーとして追加され、元のアカウント確認メールが見つからない場合は、次のトラブルシューティング手順に従ってください。
 
 **New Relic One ユーザーアクセスのトラブルシューティングを行うには：**
 
@@ -163,10 +163,10 @@ New Relic Oneへのログイン時にメールの確認を求められた場合�
 
 新規登録プロセスを完了し、メールまたはパスワードのエラーメッセージが原因でアカウントにログインできない場合は、[Admin Console](https://adminconsole.adobe.com/) からサポートチケットをログに記録します。
 
-New Relicからメールが届かない場合は、以下の操作をおこなってください。
+New Relic からメールが届かない場合は、次の操作を実行します。
 
 * [スパムフィルター](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/)を確認します。
-* 該当する場合、[ メールにNew Relic許可リストに加えるを追加 ](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist) してください。
+* 該当する場合、[メール許可リストに New Relic を追加](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist)します。
 * いずれの提案も役に立たない場合は、サポートチケットに関するフィードバックを提供してください。
 
 ## 制限事項 {#limitations}
@@ -174,7 +174,7 @@ New Relicからメールが届かない場合は、以下の操作をおこな�
 New Relic One にユーザーを追加する場合は、次の制限が適用されます。
 
 * 最大 30 人のユーザーを追加できます。ユーザーの最大数に達した場合は、新しいユーザーを追加できるように、ユーザーを削除します。
-* New Relicに追加されるユーザーのタイプは **制限** です。 詳しくは、[New Relicのドキュメントを参照してください ](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)。
+* New Relic に追加されたユーザーは、**制限付き**&#x200B;のタイプになります。詳しくは、[New Relic のドキュメント](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)を参照してください。
 * AEM as a Cloud Service は New Relic One APM ソリューションのみを提供し、アラート、ログ、API 統合のサポートは提供していません。
 
 >[!NOTE]
@@ -187,7 +187,7 @@ AEM as a Cloud Service プログラムの New Relic One 製品に関する詳細
 
 ## よくある質問 {#faqs}
 
-+++**AdobeはNew Relic Oneで何をモニタリングしますか？**{#adobe-monitor}
++++**アドビは New Relic One で何をモニタリングしますか？** {#adobe-monitor}
 
 アドビは、New Relic One の Java プラグインを介して AEM as a Cloud Service のオーサー、パブリッシュ、プレビュー（利用可能な場合）サービスをモニタリングします。アドビは、カスタムの New Relic One APM テレメトリと、実稼動および実稼動以外の AEM as a Cloud Service 環境でのモニタリングを有効にします。
 
@@ -204,28 +204,28 @@ New Relic One アカウントは、アドビが管理するプライマリアカ
 * 両方の New Relic One の完全なモニタリング指標およびイベントは、7 日間保持されます。
 +++
 
-+++**AdobeはNew Relic Oneからアラート通知を送信しますか？**{#alerting-new-relic}
++++**アドビは New Relic Oneからのアラート通知を送信しますか？** {#alerting-new-relic}
 
-Adobeでは、New Relic One アクセスを観察目的でのみ提供し、カスタマーアラートや内部運用アラートには使用しません。 インシデントに関する通知は、[ユーザー通知プロファイル](/help/journey-onboarding/notification-profiles.md)を使用して送信されます。
+アドビは、監視の目的でのみ New Relic One へのアクセスを提供します。お客様への警告や内部の運用アラートには使用しません。インシデントに関する通知は、[ユーザー通知プロファイル](/help/journey-onboarding/notification-profiles.md)を使用して送信されます。
 +++
 
-+++**New Relic One Cloud Service のデータにアクセスできるのは誰ですか？** {#access-new-relic-cloud}
++++**New Relic One Cloud Service のデータへは、誰がアクセスできますか？** {#access-new-relic-cloud}
 
 最大 30 人のチームメンバーに完全な読み取りアクセスが許可されます。読み取りアクセスには、New Relic One エージェントによって収集されたすべての APM 指標が含まれます。
 +++
 
-+++**カスタム SSO 設定はサポートされていますか？**{#custom-sso}
++++**カスタム SSO 設定はサポートされていますか？** {#custom-sso}
 
 カスタム SSO 設定は、アドビがプロビジョニングした New Relic One アカウントではサポートされていません。
 +++
 
-+++**既にオンプレミスのNew Relic サブスクリプションがある場合はどうなりますか？**{#new-relic-subscription}
++++**既にオンプレミスの New Relic サブスクリプションがある場合はどうなりますか？** {#new-relic-subscription}
 
 New Relic One は、New Relic の新しい観測可能なプラットフォームであり、アドビサポートとお客様のチームが指標とイベントをすべて 1 か所で観測、監視、表示できます。
 
 New Relic One を使用すると、ユーザーがアクセスできるすべてのアカウントを検索し、すべてのサービスとホストからのデータを 1 つのビューで視覚化できます。
 
-Adobeのサポートでは、New Relic Oneやその他のツールを使用してAEM as a Cloud Serviceを監視しますが、社内のサービスやインフラストラクチャには引き続きNew Relicを使用できます。 Adobe New Relic One アカウントと顧客管理の New Relic アカウントの両方からのデータを視覚化できるようになります。
+アドビサポートは、New Relic One やその他のツールを使用して AEM as a Cloud Service を監視しますが、お客様のチームは引き続き New Relic をオンプレミスのサービスとインフラストラクチャに活用できます。Adobe New Relic One アカウントと顧客管理の New Relic アカウントの両方からのデータを視覚化できるようになります。
 
 >[!NOTE]
 >
@@ -233,7 +233,7 @@ Adobeのサポートでは、New Relic Oneやその他のツールを使用し�
 
 +++
 
-+++**New Relic One アカウントの APM エージェントが停止しました。 何が起こったの？**{#deactivated}
++++**New Relic One アカウントの APM エージェントが停止しました。なぜこうなったのでしょうか？** {#deactivated}
 
 90 日以上アクティビティが検出されなかった場合、[APM エージェントは停止します](#limitations)。このドキュメントの [New Relic One サブアカウントのアクティベート](#activate-sub-account)の節と同じ手順に従って、New Relic One サブアカウントを再アクティベートします。
 +++

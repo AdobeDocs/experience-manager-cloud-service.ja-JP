@@ -5,9 +5,9 @@ feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
 source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1829'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API で
 
 >[!NOTE]
 >
->使用可能な様々な API の概要および関連する概念の一部の比較については ](/help/headless/apis-headless-and-content-fragments.md)[ 構造化コンテンツ配信および管理用のAEM API} を参照してください。
+>使用可能な様々な API の概要と、関連する概念のいくつかの比較について詳しくは、[構造化コンテンツの配信と管理用の AEM API](/help/headless/apis-headless-and-content-fragments.md) を参照してください。
 >
 >この[コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 

@@ -4,15 +4,15 @@ description: アセットセレクターを使用して、アプリケーショ�
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1295'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
 # アセットセレクターのプロパティ {#asset-selector-properties}
 
-| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 アセットセレクターのプロパティを使用して、アセットセレクターのレンダリング方法をカスタマイズできます。次の表に、アセットセレクターをカスタマイズして使用するために利用できるプロパティを示します。
@@ -35,9 +35,9 @@ ht-degree: 72%
 | *onDrop* | 関数 | いいえ | | このプロパティで、アセットのドロップ機能を許可することができます。 |
 | *dropOptions* | `{allowList?: Object}` | いいえ | | 「allowList」を使用してドロップオプションを設定します。 |
 | *colorScheme* | 文字列 | いいえ | | アセットセレクターのテーマ（`light` または `dark`）を設定します。 |
-| *テーマ* | 文字列 | いいえ | デフォルト | `default` と `express` の間のアセットセレクターアプリケーションにテーマを適用します。 `@react-spectrum/theme-express` もサポートしています。 |
-| *handleSelection* | 関数 | いいえ | | アセットが選択され、モーダルの `Select` ボタンがクリックされた場合に、アセットの項目の配列と一緒に呼び出されます。この関数は、モーダルビューでのみ呼び出されます。パネルビューの場合は、`handleAssetSelection` 関数または `onDrop` 関数を使用します。例： <pre>handleSelection=(assets: Asset[])=> {...}</pre> 詳しくは [ アセットの選択 ](/help/assets/asset-selector-customization.md#selection-of-assets) を参照してください。 |
-| *handleAssetSelection* | 関数 | いいえ | | アセットが選択または選択解除されたときに、項目の配列と一緒に呼び出されます。これは、ユーザーがアセットの選択時にアセットをリッスンする場合に役立ちます。例： <pre>handleSelection=(assets: Asset[])=> {...}</pre> 詳しくは [ アセットの選択 ](/help/assets/asset-selector-customization.md#selection-of-assets) を参照してください。 |
+| *テーマ* | 文字列 | いいえ | デフォルト | アセットセレクターアプリケーションに、`default` と `express` の間のテーマを適用します。また、`@react-spectrum/theme-express` もサポートしています。 |
+| *handleSelection* | 関数 | いいえ | | アセットが選択され、モーダルの `Select` ボタンがクリックされた場合に、アセットの項目の配列と一緒に呼び出されます。この関数は、モーダルビューでのみ呼び出されます。パネルビューの場合は、`handleAssetSelection` 関数または `onDrop` 関数を使用します。例： <pre>handleSelection=(assets: Asset[])=> {...}</pre> 詳しくは、[アセットの選択](/help/assets/asset-selector-customization.md#selection-of-assets)を参照してください。 |
+| *handleAssetSelection* | 関数 | いいえ | | アセットが選択または選択解除されたときに、項目の配列と一緒に呼び出されます。これは、ユーザーがアセットの選択時にアセットをリッスンする場合に役立ちます。例： <pre>handleSelection=(assets: Asset[])=> {...}</pre> 詳しくは、[アセットの選択](/help/assets/asset-selector-customization.md#selection-of-assets)を参照してください。 |
 | *onClose* | 関数 | いいえ | | モーダルビューで `Close` ボタンが押された際に呼び出されます。これは、`modal` ビューでのみ呼び出され、`rail` ビューでは無視されます。 |
 | *onFilterSubmit* | 関数 | いいえ | | ユーザーが別のフィルター条件を変更したときに、フィルター項目と一緒に呼び出されます。 |
 | *selectionType* | 文字列 | いいえ | シングル | 一度にアセットを `single` 選択または `multiple` 選択するための設定です。 |
@@ -50,17 +50,17 @@ ht-degree: 72%
 | *filterRepoList* | 関数 | いいえ |  | Experience Manager リポジトリを呼び出し、フィルタリングされたリポジトリのリストを返す `filterRepoList` コールバック関数を使用できます。 |
 | *expiryOptions* | 関数 | | | 次の 2 つのプロパティ間で使用できます。**getExpiryStatus** では、有効期限切れのアセットのステータスが表示されます。関数は、指定したアセットの有効期限に基づいて、`EXPIRED`、`EXPIRING_SOON` または `NOT_EXPIRED` を返します。[有効期限切れのアセットのカスタマイズ](/help/assets/asset-selector-customization.md#customize-expired-assets)を参照してください。さらに、**allowSelectionAndDrag** を使用できます。この場合、関数の値は `true` または `false` のいずれかになります。値が `false` に設定されている場合、有効期限切れのアセットはキャンバス上で選択またはドラッグできません。 |
 | *showToast* | | いいえ | | これにより、アセットセレクターで、有効期限切れのアセットに対してカスタマイズされたトーストメッセージを表示できます。 |
-| *metadataSchema* | 配列 | 不可 | | ユーザーからメタデータを収集するために指定するフィールドの配列を追加します。 このプロパティを使用すると、非表示のメタデータも使用できます。このメタデータは、アセットに自動的に割り当てられますが、ユーザーには表示されません。 |
-| *onMetadataFormChange* | コールバック関数 | 不可 | | それは `property` と `value` で構成されています。 `Property` は、値が更新中の *metadataSchema* から渡されたフィールドの *mapToProperty* と等しくなります。 一方、`value` は新しい値と等しく、入力として提供されます。 |
-| *targetUploadPath* | 文字列 |  | `"/content/dam"` | ファイルのターゲットアップロードパス。デフォルトは、アセットリポジトリのルートです。 |
-| *hideUploadButton* | ブール演算式 | | False | 内部のアップロードボタンを非表示にするかどうかを確認します。 |
-| *onUploadStart* | 関数 | いいえ |  | これは、Dropbox、OneDrive、ローカル間でアップロードソースを渡すために使用されるコールバック関数です。 構文は `(uploadInfo: UploadInfo) => void` です |
-| *importSettings* | 関数 | | | これにより、サードパーティのソースからアセットを読み込むサポートが可能になります。 `sourceTypes` では、有効にする読み込みソースの配列を使用します。 サポートされているソースは Onedrive とDropboxです。 構文は `{ sourceTypes?: ImportSourceType[]; apiKey?: string; }` です |
-| *onUploadComplete* | 関数 | いいえ | | これは、成功、失敗または重複の中からファイルのアップロードステータスを渡すために使用されるコールバック関数です。 構文は `(uploadStats: UploadStats) => void` です |
-| *onFilesChange* | 関数 | いいえ | | これは、ファイルが変更されたときのアップロードの動作を表示するために使用されるコールバック関数です。 アップロード待ちの新しいファイル配列と、アップロードのソースタイプが渡されます。 エラーが発生した場合、Sourceのタイプは null にできます。 構文は `(newFiles: File[], uploadType: UploadType) => void` です |
-| *uploadingPlaceholder* | 文字列 | | | これは、アセットのアップロードが開始されたときに、メタデータフォームに置き換わるプレースホルダー画像です。 構文は `{ href: string; alt: string; } ` です |
+| *metadataSchema* | 配列 | いいえ | | ユーザーからメタデータを収集するのに指定するフィールドの配列を追加します。このプロパティを使用すると、アセットに自動的に割り当てられるが、ユーザーには表示されない非表示のメタデータも使用できます。 |
+| *onMetadataFormChange* | コールバック関数 | いいえ | | これは、`property` と `value` から構成されます。`Property` は、値を更新する *metadataSchema* から渡されたフィールドの *mapToProperty* と等しくなります。一方、`value` は、入力として指定する新しい値と等しくなります。 |
+| *targetUploadPath* | 文字列 |  | `"/content/dam"` | ファイルのターゲットアップロードパスで、デフォルトは、アセットリポジトリのルートです。 |
+| *hideUploadButton* | ブール演算式 | | False | これは、内部アップロードボタンを非表示にするかどうかを確認します。 |
+| *onUploadStart* | 関数 | いいえ |  | これは、Dropbox、OneDrive、ローカル間でアップロードソースを渡すのに使用されるコールバック関数です。構文は `(uploadInfo: UploadInfo) => void` です。 |
+| *importSettings* | 関数 | | | これにより、サードパーティソースからのアセットの読み込みのサポートが有効になります。`sourceTypes` は、有効にする読み込みソースの配列を使用します。サポートされているソースは、Onedrive と Dropbox です。構文は `{ sourceTypes?: ImportSourceType[]; apiKey?: string; }` です。 |
+| *onUploadComplete* | 関数 | いいえ | | これは、成功、失敗、重複の中からファイルアップロードステータスを渡すのに使用されるコールバック関数です。構文は `(uploadStats: UploadStats) => void` です。 |
+| *onFilesChange* | 関数 | いいえ | | これは、ファイルを変更した際のアップロードの動作を示すのに使用されるコールバック関数です。アップロード保留中のファイルの新しい配列とアップロードのソースタイプを渡します。エラーの場合、ソースタイプは null になることがあります。構文は `(newFiles: File[], uploadType: UploadType) => void` です。 |
+| *uploadingPlaceholder* | 文字列 | | | これは、アセットのアップロードを開始した際にメタデータフォームを置き換えるプレースホルダー画像です。構文は `{ href: string; alt: string; } ` です。 |
 | *uploadConfig* | オブジェクト | | | これは、アップロード用にカスタマイズされた設定を含むオブジェクトです。 |
-| *featureSet* | 配列 | 文字列 | | `featureSet:[ ]` プロパティは、アセットセレクターアプリケーションで特定の機能を有効または無効にするために使用されます。 コンポーネントまたは機能を有効にするには、配列に文字列値を渡すか、配列を空のままにして、そのコンポーネントを無効にします。 例えば、アセットセレクターでアップロード機能を有効にするには、構文 `featureSet:[0:"upload"]` を使用します。 |
+| *featureSet* | 配列 | 文字列 | | `featureSet:[ ]` プロパティは、アセットセレクターアプリケーションで特定の機能を有効または無効にするのに使用されます。コンポーネントまたは機能を有効にするには、配列に文字列値を渡すか、配列を空のままにして、そのコンポーネントを無効にします。例えば、アセットセレクターでアップロード機能を有効にするには、構文 `featureSet:[0:"upload"]` を使用します。 |
 
 <!--
 | *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |

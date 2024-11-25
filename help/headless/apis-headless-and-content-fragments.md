@@ -1,38 +1,38 @@
 ---
-title: 構造化コンテンツ配信およびコンテンツフラグメント管理のためのAEM API
-description: 構造化コンテンツ配信およびコンテンツフラグメント管理に使用できる API について説明します
+title: 構造化コンテンツの配信とコンテンツフラグメント管理用の AEM API
+description: 構造化コンテンツの配信とコンテンツフラグメント管理用に使用できる API について説明します。
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 source-git-commit: 21599676916068f3529976410a93951b02f750b0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '592'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
-# 構造化コンテンツ配信および管理用のAEM API {#aem-apis-structured-content-delivery-and-management}
+# 構造化コンテンツの配信と管理用の AEM API {#aem-apis-structured-content-delivery-and-management}
 
-Adobe Experience Manager（AEM）as a Cloud Serviceでは、コンテンツフラグメントからの構造化コンテンツ配信とコンテンツフラグメント管理の両方に対して複数の API を提供しています。 特定の API について詳しくは、個々のページを参照してください。
+Adobe Experience Manager（AEM）as a Cloud Service では、コンテンツフラグメントからの構造化コンテンツ配信とコンテンツフラグメント管理の両方に対して複数の API を提供します。特定の API について詳しくは、個々のページを参照してください。
 
-* [ コンテンツフラグメント配信用AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
-   * この API は、AEMのコンテンツフラグメントから構造化コンテンツを配信するための JSON 応答を作成します。
+* [コンテンツフラグメント配信用の AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+   * この API は、AEM のコンテンツフラグメントから構造化コンテンツを配信する JSON 応答を作成します。
    * エンドポイントとしてコンテンツフラグメントへのパスを使用します。
    * この API は REST ベースです。
    * CDN 統合を含むコンテンツ配信用に最適化されています。
-* [コンテンツフラグメント配信用のAEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
-   * この API はスキーマベースです。 API スキーマは、コンテンツ構造を定義するコンテンツフラグメントモデルで表されます。
-   * この API はGraphQL ベースです。
+* [コンテンツフラグメント配信用の AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
+   * この API はスキーマベースです。API スキーマは、コンテンツ構造を定義するコンテンツフラグメントモデルで表されます。
+   * この API は GraphQL ベースです。
 * [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md)
    * これらの API は、構造化コンテンツ管理を目的としています。
-   * それぞれのGET演算子は、コンテンツ配信用に最適化されていません。
+   * それぞれの GET 演算子は、コンテンツ配信用に最適化されていません。
    * この API は REST ベースです。
 * [AEM Assets HTTP API での コンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)
-   * AEMの構造化コンテンツ配信用の JSON 出力のオリジナル API。
-      * 堅牢で実証済みですが、この API では JSON 出力を *完全にハイドレート* することはできません。 参照はパスとしてのみ出力され、それ以上のコンテンツを取得するにはセカンダリ API リクエストが必要です。
-   * Assets HTTP API は、コンテンツフラグメントとコンテンツフラグメントモデル（CRUD）の管理にも使用できます。
+   * AEM の構造化コンテンツ配信用の JSON 出力の元の API。
+      * この API は堅牢で実証済みですが、*完全にハイドレート*&#x200B;された JSON 出力を提供しません。参照はパスとしてのみ出力されるので、さらにコンテンツを取得するには 2 番目の API リクエストが必要になります。
+   * また、Assets HTTP API は、コンテンツフラグメントおよびコンテンツフラグメントモデル（CRUD）の管理にも使用できます。
    * この API は REST ベースです。
-   * Assets HTTP API でのコンテンツフラグメントのサポートは、今後、廃止される予定です。これは、Edge Delivery Services JSON REST API によって継承されるためです。 タイムスケールはまだ決まっていません。
+   * Assets HTTP API のコンテンツフラグメントサポートは、Edge Delivery Services JSON REST API によって継承されるので、今後、廃止される予定です。時間スケールは、まだ決定されていません。
 
 <!--
 ## JSON vs HTML {#json-vs-HTML}
@@ -49,45 +49,45 @@ Key considerations include:
   * HTML is the standard markup language for creating and rendering web pages in a browser.
 -->
 
-## REST とGraphQL {#rest-vs-graphql}
+## REST と GraphQL {#rest-vs-graphql}
 
-使用する API は、開発者向けの決定です。AEMは、両方をサポートしています。
+使用する API は、開発者が決定します。AEM は両方をサポートしています。
 
-多くの比較をオンラインで利用できますが、REST のハイライトとメリットには次のようなものがあります。
+オンラインで多くの比較が使用可能ですが、REST のハイライトとメリットは次のとおりです。
 
-* シンプル
+* シンプルさ
 
-   * 開発者は（多くの場合） HTTP と REST に精通しています。 [API レポートのPostmanの状況 ](https://www.postman.com/state-of-api/) によると、REST を使用している開発者の割合が高くなっています。
+   * 開発者は（多くの場合）HTTP と REST に精通しています。[Postman の API の現状レポート](https://www.postman.com/state-of-api/)によると、REST を使用している開発者の割合が高くなっています。
 
-   * シンプルさは、親しみやすさをもたらします。 REST の場合、誰がクエリを所有し、誰がアプリを所有するかという組織的な質問はありませんが、これらの質問はGraphQLで発生する可能性があります。
+   * シンプルさには、親しみやすさが伴います。REST では、クエリの所有者やアプリの所有者に関する組織的な質問は発生しませんが、GraphQL ではこれらの質問が発生する可能性があります。
 
-   * （通常は）慣れることで、幅広いコミュニティとツールの風景が得られます。 GraphQL固有の欠点ではありませんが、REST にとってより広く、より深い可能性があります。
+   * 親しみやすさには（通常）幅広いコミュニティとツール環境が伴います。これは GraphQL 固有の欠点ではありませんが、REST ではより広範囲かつ奥深いものとなる可能性があります。
 
-   * また、よりシンプルなアプローチにより、セキュリティの実装も容易になります。 REST では、レンダリングするコンテンツを決定するフィルタリングはすべてクライアントアプリで行われます。 GraphQLでは、これはクライアントとサーバーの間のスキーマベースのクエリで行われます。
+   * また、アプローチがシンプルになると、セキュリティの実装も簡単になります。REST では、レンダリングするコンテンツを決定するフィルタリングはすべてクライアントアプリで実行されます。GraphQL では、これはクライアントとサーバーの間のスキーマベースのクエリで行われます。
 
 * 柔軟性
 
-   * REST を使用すると、開発者は任意のリソース `GET` 使用できます。 GraphQLを使用すると、スキーマ内で定義されたリソースに制限されます。
+   * REST を使用すると、開発者は任意のリソースを `GET` できます。GraphQL を使用すると、スキーマ内で定義されたリソースに制限されます。
 
 * キャッシュ
 
-   * REST `GET` リクエストに対する JSON 応答は、本質的にキャッシュ可能です。 GraphQL `POST` リクエストは、作成されない限りキャッシュできません。例えば、サーバーに保存され、REST のような `GET` リクエストでリクエストされるAEM永続クエリを使用する場合などです。
+   * REST `GET` リクエストに対する JSON 応答は、本質的にキャッシュ可能です。GraphQL `POST` リクエストは、サーバー上に保存され、REST のような `GET` リクエストでリクエストされる AEM 永続クエリを使用するなどしてキャッシュ可能にしない限り、キャッシュできません。
 
-GraphQLの利点は次のとおりです。
+GraphQL のメリットは次のとおりです。
 
 * コンテンツ配信の効率
 
    * フォーカス
 
-      * GraphQLを使用すると、クライアントアプリケーションは、レンダリングに必要な正確なコンテンツをリクエストでき、それ以上はリクエストできなくなります。 このアプローチは、コンテンツの過剰配信、過剰なコンテンツペイロードおよび不要な帯域幅消費を防ぎます。
+      * GraphQL を使用すると、クライアントアプリケーションは、レンダリングに必要な正確なコンテンツをリクエストできますが、それ以上のリクエストは必要ありません。このアプローチにより、過度のコンテンツペイロードや不要な帯域幅の消費によるコンテンツの過剰配信が防止されます。
 
    * 単一のエンドポイント
 
-      * REST では、すべての API リクエストがエンドポイントですが、GraphQLでは共通のエンドポイントは 1 つだけで、異なるコンテンツリクエストがその共通のエンドポイントを使用したクエリとして表現されます。
+      * REST ではすべての API リクエストがエンドポイントですが、GraphQL では共通のエンドポイントは 1 つだけで、様々なコンテンツリクエストはその共通のエンドポイントを使用するクエリとして表現されます。
 
-* ラピッドプロトタイピング
+* 迅速なプロトタイプ作成
 
-   * GraphQLの場合、これは 1 つの手順でGraphQLのクエリと統合されたプロセスであり、プロトタイプ作成が容易になります。 一方、REST のプロセスは 2 ステップです。
+   * GraphQL では、これが GraphQL クエリに統合された 1 ステップのプロセスとなり、プロトタイプ作成が簡単になります。一方、REST は 2 ステップのプロセスです。
 
       1. API を使用してコンテンツを取得します。
       2. JSON 応答で、クライアントアプリでのレンダリングに使用する内容を決定します。
