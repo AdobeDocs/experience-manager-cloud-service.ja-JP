@@ -3,9 +3,9 @@ title: 配信 API
 description: 配信 API の使用方法を説明します。
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 7727aa87693cc96e3497dcda71190866b198975d
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '619'
 ht-degree: 3%
 
 ---
@@ -40,6 +40,11 @@ Experience Managerアセットリポジトリで使用可能なすべての [ �
 | [ アセットメタデータ ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) | タイトル、説明、CreateDate、ModifyDate など、アセットに関連付けられたプロパティを返します。 |
 | [ ビデオアセットのプレーヤーコンテナ ](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | ビデオアセットのプレーヤーコンテナを返します。 Player を iframe HTML要素に埋め込んで、ビデオを再生できます。 |
 | [ 選択した出力形式で再生マニフェストが表示されます ](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | 指定したビデオアセットの再生マニフェストファイルを、選択した出力形式で返します。 再生マニフェストファイルを取り込んでビデオを再生するには、HLS または DASH プロトコルによるアダプティブストリーミングが可能なカスタムプレーヤーを作成する必要があります。 |
+
+
+>[!NOTE]
+>
+[ 画像プリセット、スマートイメージング、その他の画像修飾子 ](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) は、限定提供（LA）機能として使用できます。 アクセスするには、[Adobeのカスタマーサポートケースを作成して送信 ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) します。
 
 ## 配信 API エンドポイント {#delivery-apis-endpoint}
 
