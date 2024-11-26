@@ -4,9 +4,9 @@ description: Edge Delivery Services プロジェクトを使用した WYSIWYG �
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 487d918059e85e3f5dd19d2248b3a8365da41dee
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1428'
 ht-degree: 97%
 
 ---
@@ -328,8 +328,6 @@ export default function decorate(block) {
 このガイドでは、わかりやすくするために `main` ブランチに直接コミットするようにしました。サンプルリポジトリでの実験の場合、これは通常問題になりません。実際のプロジェクト作業では、`main` に結合する前に、別のブランチで開発し、プルリクエスト経由ですべての変更を確認することで、[開発のベストプラクティスに従う必要があります](https://www.aem.live/docs/dev-collab-and-good-practices)。
 
 `main` ブランチで開発していない場合は、ユニバーサルエディターのロケーションバーに `?ref=<branch>` を追加して、ブランチからページを読み込むことができます。`<branch>` は、プロジェクトのプレビューまたはライブ URL（例：`https://<branch>--<repo>--<owner>.hlx.page`）に使用されるブランチ名です。
-
-新しいモデルを使用したコンテンツの公開は、モデルを `main` ブランチに結合した場合にのみサポートされます。
 
 ## ドキュメントベースのオーサリング用にブロックを再使用する {#reusing-blocks}
 
