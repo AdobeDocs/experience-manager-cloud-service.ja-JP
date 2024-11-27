@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
+source-git-commit: d424b6f2e0a2ec40ab607dcbdcba3120c7f45a58
 workflow-type: tm+mt
 source-wordcount: '1778'
 ht-degree: 41%
@@ -28,7 +28,7 @@ ht-degree: 41%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2024.11.0）のリリース日は、2024年11月21日（PT）です。次回の機能リリース（2024.12.0）は 2024年12月12日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2024.11.0）のリリース日は、2024年11月21日（PT）です。次回の機能リリース（2025.1.0）は 2024年1月30日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -84,7 +84,7 @@ Dynamic Media アカウントのDynamic Media配信レポートに早期にア�
 
 Assets ビューで、使用可能になった別のパネルから、OpenAPI レンディションを使用してDynamic MediaおよびDynamic Mediaにアクセスできるようになりました。 配信 URL をコピーするか、アセットとレンディションタイプに基づいてレンディションをダウンロードするかを選択できます。 詳しくは、[Dynamic Media レンディション ](/help/assets/renditions.md#dynamic-media-renditions) および [OpenAPI 機能レンディションのDynamic Media](/help/assets/renditions.md#dm-with-openapi-renditions) を参照してください。
 
-![ 動的レンディション ](/help/assets/assets/dm-scene7-renditions.png)
+![動的レンディション](/help/assets/assets/dm-scene7-renditions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
