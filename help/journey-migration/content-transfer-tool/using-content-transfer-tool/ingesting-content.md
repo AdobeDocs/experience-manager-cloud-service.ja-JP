@@ -4,10 +4,10 @@ description: Cloud Acceleration Manager を使用して、移行セットから�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 1add389e1bba181757229ca73252f1fcaa9d049a
+source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
 workflow-type: tm+mt
-source-wordcount: '3187'
-ht-degree: 98%
+source-wordcount: '3296'
+ht-degree: 95%
 
 ---
 
@@ -169,6 +169,17 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
+### クラウド環境が準備完了状態でないため、取り込みに失敗しました {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
+>title="クラウド環境が準備完了状態ではありません"
+>abstract="まれに、target クラウド環境で予期しない問題が発生し、取り込みが失敗する場合があります。"
+
+まれに、取り込みの target Cloud Service環境で予期しない問題が発生する場合があります。 その結果、環境が想定された準備完了状態ではないため、取り込みは失敗します。 発生したエラー状態の詳細を表示するには、取り込みログを確認します。
+
+オーサー環境が使用可能であることを確認し、数分待ってから取り込みを再試行します。 問題が解決しない場合は、発生したエラー状態をカスタマーサポートにお問い合わせください。
+
 ### 一意性制約違反による追加取り込みのエラー {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 >[!CONTEXTUALHELP]
@@ -239,7 +250,7 @@ MongoDB に保存されるノードプロパティの値は、16 MB 未満にす
 
 予期しない断続的な問題による取り込みエラーが発生する場合がありますが、残念ながら、取り込みを再試行するしかありません。取り込みログを調査してエラーの原因を明らかにし、以下のエラーのいずれかに一致するかどうかを確認し、再試行する必要があります。
 
-## MongoDB の問題 {#mongo-db-issues}
+#### MongoDB の問題 {#mongo-db-issues}
 
 * `Atlas prescale timeout error` - 取り込みフェーズでは、取り込まれる移行セットのコンテンツのサイズに合わせて、ターゲットクラウドデータベースを適切なサイズにプリスケールしようとします。まれに、この操作は予想された期間内に完了しません。
 * `Exhausted mongo restore retries` - 取り込まれた移行セットのコンテンツのローカルダンプをクラウドデータベースに復元する試みが失敗しました。これは、MongoDB の全体的なヘルス／ネットワークの問題を示し、多くの場合、数分後には修復されます。
