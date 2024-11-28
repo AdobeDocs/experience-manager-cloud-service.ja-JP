@@ -3,10 +3,10 @@ title: 配信 API
 description: 配信 API の使用方法について説明します。
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 7727aa87693cc96e3497dcda71190866b198975d
+source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 89%
+source-wordcount: '627'
+ht-degree: 88%
 
 ---
 
@@ -44,7 +44,8 @@ Experience Manager Assets リポジトリで使用可能なすべての[承認�
 
 >[!NOTE]
 >
-[ 画像プリセット、スマートイメージング、その他の画像修飾子 ](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) は、限定提供（LA）機能として使用できます。 アクセスするには、[Adobeのカスタマーサポートケースを作成して送信 ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) します。
+* [ 画像プリセット、スマートイメージング、その他の画像修飾子 ](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) は、限定提供（LA）機能として使用できます。 アクセスするには、[Adobeのカスタマーサポートケースを作成して送信 ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) します。
+* スマート切り抜きは、[Assets Prime](/help/assets/assets-ultimate-overview.md) では使用できません。
 
 ## 配信 API エンドポイント {#delivery-apis-endpoint}
 

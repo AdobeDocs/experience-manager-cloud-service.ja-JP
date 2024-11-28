@@ -4,9 +4,9 @@ description: AEM Assets ビューの UI 拡張機能について説明します�
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: af7e6ab40212dfa3d91cda80a76b1b6b01dd65a3
+source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '589'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ Assets ビュー内で、アセット、フォルダーまたはコレクショ�
 ## 拡張コンポーネントを追加するための前提条件
 
 * [Assets ビューへのアクセス ](#1)。
-* [Assets Ultimate](https://developer.adobe.com/app-builder/docs/overview/) にデフォルトで含まれている [AdobeApp Builder](/help/assets/assets-ultimate-overview.md) にアクセスします。
+* [Adobeの App Builder](https://developer.adobe.com/app-builder/docs/overview/) にアクセスします。
 * 組織内のシステム管理者の役割の開発者の権利。 詳しくは、[this](https://developer.adobe.com/uix/docs/guides/get-access/) を参照してください。
 * Adobe IO コマンドラインツール（AIO CLI）をローカルマシンにインストールする必要があります。 このツールは、拡張機能プロジェクトの作成とデプロイに不可欠です。 詳しくは、[this](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up) を参照してください。
 * JavaScript、Node.js および React テクノロジーに関する十分な理解。
