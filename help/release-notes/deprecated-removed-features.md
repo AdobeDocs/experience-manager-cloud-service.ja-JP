@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 1ff3a9a0ff6b408794956323f12194f136d6b2ad
 workflow-type: tm+mt
 source-wordcount: '2800'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -16,36 +16,36 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
 >title="AEM as a Cloud Service の非推奨（廃止予定）の機能と削除された機能"
->abstract="AEM as a Cloud Service には、クラウドネイティブなデプロイメントモデルがあります。一部の機能や特徴は、クラウドネイティブでの同等機能に置き換えられました。ここでは、それらの機能を示します。"
+>abstract="AEM as a Cloud Service には、クラウドネイティブなデプロイメントモデルがあります。 一部の機能や特徴は、クラウドネイティブでの同等機能に置き換えられました。ここでは、それらの機能を示します。"
 
-アドビでは、製品の機能を絶えず評価して、常に後方互換性を慎重に考慮しながら、古い機能を作成し直したり、新たな機能に置き換えて、お客様にとっての全体的な価値を向上させます。また、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] はクラウドネイティブなデプロイメントモデルを提供するので、一部の機能はクラウドネイティブな同等機能に置き換わりました。
+アドビでは、製品の機能を絶えず評価して、常に後方互換性を慎重に考慮しながら、古い機能を作成し直したり、新たな機能に置き換えて、お客様にとっての全体的な価値を向上させます。 また、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] はクラウドネイティブなデプロイメントモデルを提供するので、一部の機能はクラウドネイティブな同等機能に置き換わりました。
 
 近い将来行われる [!DNL Experience Manager] 機能の削除や置換を通知するため、次のルールが適用されます。
 
-1. まず、非推奨（廃止予定）の発表が行われます。廃止される機能は引き続き使用できますが、それ以上改善されません。
-1. 廃止予定と発表された機能は、早ければ後続のメジャーリリースで削除されます。削除の実際の目標日が通知されます。
+1. まず、非推奨（廃止予定）の発表が行われます。 廃止される機能は引き続き使用できますが、それ以上改善されません。
+1. 廃止予定と発表された機能は、早ければ後続のメジャーリリースで削除されます。 削除の実際の目標日が通知されます。
 
 このプロセスにより、機能が実際に削除されるまでに、非推奨（廃止予定）の機能の新しいバージョンまたは後継機能にお客様が実装を合わせるためのリリースサイクルが少なくとも 1 回あります。
 
 ## 非推奨（廃止予定）の機能 {#deprecated-features}
 
-ここでは、[!DNL Experience Manager] as a [!DNL Cloud Service] で廃止予定の機能について説明します。通常、将来のリリースで削除が予定される機能はまず廃止対象として代替手段が提示されます。
+ここでは、[!DNL Experience Manager] as a [!DNL Cloud Service] で廃止予定の機能について説明します。 通常、将来のリリースで削除が予定される機能はまず廃止対象として代替手段が提示されます。
 
 現在のデプロイメントでその機能を利用しているかどうかを確認し、提示される代替手段を使用するために実装の変更を計画するようにお勧めします。
 
 | 機能 | 非推奨（廃止予定）の機能 | 代替手段 |
 | ------------ | ------------------ | ----------- |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/ja/docs/experience-manager-htl/content/java-use-api) |
-| [!DNL Sites] | **ソーシャルメディアのステータス** のエクスペリエンスフラグメントのプロパティ。  | この機能は間もなく削除されます。 |
+| [!DNL Sites] | **ソーシャルメディアのステータス** のエクスペリエンスフラグメントのプロパティ。 | この機能は間もなく削除されます。 |
 | [!DNL Sites] | テンプレートベースのシンプルなコンテンツフラグメント。 | 現在は[モデルベースの構造化コンテンツフラグメント](/help/assets/content-fragments/content-fragments-models.md)。 |
 | [!DNL Assets] | 取り込んだ画像を処理する `DAM Asset Update` ワークフロー | 現在は、アセットの取り込みで[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が使用されています。 |
-| [!DNL Assets] | [!DNL Experience Manager] へのアセットの直接アップロード。[非推奨（廃止予定）のアセットアップロード API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api) を参照してください。 | [直接バイナリアップロード](/help/assets/add-assets.md)を使用。技術的な詳細については、[直接アップロード API](/help/assets/developer-reference-material-apis.md#upload-binary) を参照してください。 |
-| [!DNL Assets] | [!DNL ImageMagick] などのコマンドラインツールの呼び出しを含め、`DAM Asset Update` ワークフローの[特定のワークフローステップ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)はサポートされていません。 | [アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が多くのワークフローの代替機能となります。カスタム処理の場合は、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用します。 |
-| [!DNL Assets] | ビデオの FFmpeg トランスコード。 | FFmpeg サムネールの生成には、[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)を使用。FFmpeg トランスコードの場合は、[Dynamic Media](/help/assets/manage-video-assets.md) を使用。 |
-| [!DNL Foundation] | レプリケーションエージェントの「配布」タブのツリーレプリケーション UI（2021 年 9 月 30 日以降に削除） | [ パブリケーションの管理 ](/help/operations/replication.md#manage-publication) または [ ツリーアクティベーションワークフローステップ ](/help/operations/replication.md#tree-activation) アプローチ。 |
-| [!DNL Foundation] | レプリケーションエージェントの管理画面の「配布」タブも、レプリケーション API も、10 MB を超えるコンテンツパッケージのレプリケーションには使用できません。 | [ パブリケーションの管理 ](/help/operations/replication.md#manage-publication) または [ ツリーアクティベーションワークフローステップ ](/help/operations/replication.md#tree-activation) |
-| [!DNL Foundation] | Adobe Developer Console プロジェクトから生成された資格情報を使用した統合では、サービスアカウント（JWT）資格情報のサポートが段階的に失われます。2024 年5月1日（PT）以降、Adobe Developer Console で新しいサービスアカウント（JWT）資格情報を作成できなくなります。ただし、既存のサービスアカウント（JWT）資格情報は、2025年1月1日（PT）までは設定済みの統合に引き続き使用できます。この時点で、既存のサービスアカウント（JWT）資格情報は機能しなくなり、お客様は OAuth サーバー間の資格情報に移行する必要があります。[詳細情報](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | OAuth サーバー間の資格情報に[移行](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)します。 |
-| [!DNL Foundation] | Publish コンテンツツリーワークフローと、コンテンツ階層のレプリケーションに使用された、関連するPublish コンテンツツリーワークフローステップ。 | よりパフォーマンスの高い [ ツリーのアクティベーションワークフローステップ ](/help/operations/replication.md#tree-activation) を使用します。 |
+| [!DNL Assets] | [!DNL Experience Manager] へのアセットの直接アップロード。 [非推奨（廃止予定）のアセットアップロード API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api) を参照してください。 | [直接バイナリアップロード](/help/assets/add-assets.md)を使用。 技術的な詳細については、[直接アップロード API](/help/assets/developer-reference-material-apis.md#upload-binary) を参照してください。 |
+| [!DNL Assets] | [!DNL ImageMagick] などのコマンドラインツールの呼び出しを含め、`DAM Asset Update` ワークフローの[特定のワークフローステップ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)はサポートされていません。 | [アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が多くのワークフローの代替機能となります。 カスタム処理の場合は、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用します。 |
+| [!DNL Assets] | ビデオの FFmpeg トランスコード。 | FFmpeg サムネールの生成には、[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)を使用。 FFmpeg トランスコードの場合は、[Dynamic Media](/help/assets/manage-video-assets.md) を使用。 |
+| [!DNL Foundation] | レプリケーションエージェントの「配布」タブのツリーレプリケーション UI（2021 年 9 月 30 日以降に削除） | [パブリケーションの管理](/help/operations/replication.md#manage-publication)または[ツリーアクティベーションワークフローステップ](/help/operations/replication.md#tree-activation)のアプローチ。 |
+| [!DNL Foundation] | レプリケーションエージェントの管理画面の「配布」タブとレプリケーション API のいずれも、10 MB を超えるコンテンツパッケージのレプリケーションには使用できません。 | [パブリケーションの管理](/help/operations/replication.md#manage-publication)または[ツリーアクティベーションワークフローステップ](/help/operations/replication.md#tree-activation) |
+| [!DNL Foundation] | Adobe Developer Console プロジェクトから生成された資格情報を使用した統合では、サービスアカウント（JWT）資格情報のサポートが段階的に失われます。 2024 年5月1日（PT）以降、Adobe Developer Console で新しいサービスアカウント（JWT）資格情報を作成できなくなります。ただし、既存のサービスアカウント（JWT）資格情報は、2025年1月1日（PT）までは設定済みの統合に引き続き使用できます。この時点で、既存のサービスアカウント（JWT）資格情報は機能しなくなり、お客様は OAuth サーバー間の資格情報に移行する必要があります。 [詳細情報](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | OAuth サーバー間の資格情報に[移行](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)します。 |
+| [!DNL Foundation] | コンテンツツリーを公開ワークフローと、コンテンツの階層のレプリケーションに使用された関連するコンテンツツリーを公開ワークフローステップ。 | よりパフォーマンスの高い[ツリーアクティベーションワークフローステップ](/help/operations/replication.md#tree-activation)を使用します。 |
 
 
 ## 削除された機能 {#removed-features}
@@ -54,7 +54,7 @@ ht-degree: 90%
 
 | 領域 | 機能 | 代替手段 | 削除予定日 |
 | ------------ | ------------------ | ----------- | ------------------- |
-| ユーザーインターフェイス | クラシック UI が製品ユーザーインターフェイスから削除されました。いくつかのクラシック UI ダイアログは、リンクチェッカー、バージョンパージ、一部の Cloud Service 設定など、いくつかの機能で使用できます。今後の[製品アップデート](/help/release-notes/home.md)により、クラシック UI の利用範囲がさらに狭まる可能性があります。 | 標準 UI | 削除済み |
+| ユーザーインターフェイス | クラシック UI が製品ユーザーインターフェイスから削除されました。 いくつかのクラシック UI ダイアログは、リンクチェッカー、バージョンパージ、一部の Cloud Service 設定など、いくつかの機能で使用できます。 今後の[製品アップデート](/help/release-notes/home.md)により、クラシック UI の利用範囲がさらに狭まる可能性があります。 | 標準 UI | 削除済み |
 | [!DNL Dynamic Media] | [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html?lang=ja#integration) および [Dynamic Media Hybrid モード](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html?lang=ja#dynamic)との従来の統合は、[!DNL Experience Manager] as a [!DNL Cloud Service] では使用できません。 | [!DNL Experience Manager] as a [!DNL Cloud Service] に用意されている [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) を使用します。 | 削除済み |
 | [!DNL Sites] | Portal Director とポートレットコンポーネント | これらの機能は [!DNL Experience Manager] 6.4 で非推奨（廃止予定）となり、現在は [!DNL Experience Manager] から削除されています。 | 削除済み |
 | [!DNL Sites] | デザインインポーター | 実行時に [!DNL Experience Manager] リポジトリーの不変セクションにアクセスできないので、この機能は削除されました。 | 削除済み |
@@ -68,7 +68,7 @@ ht-degree: 90%
 
 ## AEM API {#aem-apis}
 
-非推奨（廃止予定）の AEM API とそれらの削除予定日の一覧を以下に示します。お客様は、削除予定日までに、これらの API をコードから削除する必要があります。該当する API を削除日以降に使用すると、ローカル SDK／開発環境および Cloud Manager ビルドプロセスでエラーが発生します。
+非推奨（廃止予定）の AEM API とそれらの削除予定日の一覧を以下に示します。 お客様は、削除予定日までに、これらの API をコードから削除する必要があります。 該当する API を削除日以降に使用すると、ローカル SDK／開発環境および Cloud Manager ビルドプロセスでエラーが発生します。
 
 <details>
   <summary>展開して、非推奨（廃止予定）の API のリストを確認します。</summary>
@@ -82,7 +82,7 @@ ht-degree: 90%
 <tbody>
   <tr>
     <td>org.apache.sling.commons.auth<br>org.apache.sling.commons.auth.spi</td>
-    <td>代わりに、Sling の Auth Core／Auth Core SPI インターフェイスを使用します。<a href="#org.apache.sling.commons.auth">以下の削除に関するメモを参照してください。</a></td>
+    <td>代わりに、Sling の Auth Core／Auth Core SPI インターフェイスを使用します。 <a href="#org.apache.sling.commons.auth">以下の削除に関するメモを参照してください。</a></td>
     <td>2015</td>
     <td>2021/7/30</td>
   </tr>
@@ -124,13 +124,13 @@ ht-degree: 90%
   </tr>
   <tr>
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 はメンテナンスモードになっています。Commons Lang 3 を代わりに使用してください。</td>
+    <td>Commons Lang 2 はメンテナンスモードになっています。 Commons Lang 3 を代わりに使用してください。</td>
     <td>2021/4/30</td>
     <td>2021/12/31</td>
   </tr>
   <tr>
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 はメンテナンスモードになっています。Commons Collections 4 を代わりに使用してください。</td>
+    <td>Commons Collections 3 はメンテナンスモードになっています。 Commons Collections 4 を代わりに使用してください。</td>
     <td>2021/4/30</td>
     <td>2021/12/31</td>
   </tr>
@@ -147,7 +147,7 @@ ht-degree: 90%
     <td>2021/7/30</td>
   </tr>
   <tr> <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml</td>
-    <td>Eclipse Jetty パッケージと Felix Http Jetty パッケージはサポートされなくなりました。<a href="#org.eclipse.jetty">以下の削除に関するメモを参照してください。</a></td>
+    <td>Eclipse Jetty パッケージと Felix Http Jetty パッケージはサポートされなくなりました。 <a href="#org.eclipse.jetty">以下の削除に関するメモを参照してください。</a></td>
     <td>2021/5/27</td>
     <td>2021/8/26</td>
   </tr>
@@ -158,13 +158,13 @@ ht-degree: 90%
     <td>2021/8/26</td>
   </tr>  
   <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
-    <td>この API の使用は、AEM as a Cloud Service ではサポートされていません。<a href="#com.mongodb">以下の削除に関するメモを参照してください。</a></td>
+    <td>この API の使用は、AEM as a Cloud Service ではサポートされていません。 <a href="#com.mongodb">以下の削除に関するメモを参照してください。</a></td>
     <td>2021/5/27</td>
     <td>2021/7/30</td>
   </tr>
   <tr>
     <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>org.apache.felix.scr.component</td>
-    <td>Apache Felix メタタイプと SCR API は非推奨（廃止予定）です。OSGi メタタイプおよび Declarative Service API を代わりに使用してください。</td>
+    <td>Apache Felix メタタイプと SCR API は非推奨（廃止予定）です。  OSGi メタタイプおよび Declarative Service API を代わりに使用してください。</td>
     <td>2021/5/27</td>
     <td>削除済み</td>
   </tr>
@@ -176,7 +176,7 @@ ht-degree: 90%
   </tr>
   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
-    <td>Apache Abdera が 2017年以降廃止されたプロジェクトなので、この API は廃止されました。<a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">以下の削除に関するメモを参照してください。</a></td>
+    <td>Apache Abdera が 2017年以降廃止されたプロジェクトなので、この API は廃止されました。 <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">以下の削除に関するメモを参照してください。</a></td>
     <td>2021/7/29</td>
     <td>2021/9/29</td>
   </tr>
@@ -200,18 +200,18 @@ ht-degree: 90%
   </tr>
   <tr>
     <td>org.apache.jackrabbit.vault.util.xml<br>org.apache.jackrabbit.vault.util.xml.serialize</td>
-    <td>Apache Xerces に関連する Util クラスは、後続のリリースで削除され、メジャーバージョンが変更されます。これらのユーティリティは Filevault の内部使用のためのものであるため、API はパブリック API サーフェスから非推奨になります。</td>
+    <td>Apache Xerces に関連する Util クラスは、後続のリリースで削除され、メジャーバージョンが変更されます。 これらのユーティリティは Filevault の内部使用のためのものであるため、API はパブリック API サーフェスから非推奨になります。</td>
     <td>2021/9/1</td>
     <td>削除済み</td>
   <tr>
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
-    <td>従来の AEM 6.x API。<a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">以下の削除に関するメモを参照してください。</a></td>
+    <td>従来の AEM 6.x API。 <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">以下の削除に関するメモを参照してください。</a></td>
     <td>2019/4/8</td>
     <td>2021/9/29</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>Apache Felix Http ホワイトボードはサポートされなくなりました。コードを OSGi Http ホワイトボードに移行します。<a href="#org.apache.felix.http.whiteboard">以下の削除に関するメモを参照してください。</a></td>
+    <td>Apache Felix Http ホワイトボードはサポートされなくなりました。 コードを OSGi Http ホワイトボードに移行します。 <a href="#org.apache.felix.http.whiteboard">以下の削除に関するメモを参照してください。</a></td>
     <td>2022/1/27</td>
     <td>2022/3/24</td>
   </tr>
@@ -253,13 +253,13 @@ ht-degree: 90%
   </tr>
   <tr>
     <td>com.adobe.granite.resourceresolverhelper</td>
-    <td>この API は、サポートされなくなりました。代わりに、org.apache.sling.api.resource.ResourceResolverFactory を使用します。</td>
+    <td>この API は、サポートされなくなりました。 代わりに、org.apache.sling.api.resource.ResourceResolverFactory を使用します。</td>
     <td>2022/9/29</td>
     <td>2022/11/24</td>
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
-    <td>この API は非推奨です。代わりに、Apache Sling のビルダーを使用します。</td>
+    <td>この API は非推奨です。 代わりに、Apache Sling のビルダーを使用します。</td>
     <td>2022/10/31</td>
     <td>2023/1/1</td>
   </tr>
@@ -274,7 +274,7 @@ ht-degree: 90%
   </tr>
   <tr>
     <td>org.slf4j.event    </td>
-    <td>この内部 slf4j API は、AEM as a Cloud Service ではサポートされていません。</td>
+    <td>この内部 slf4j API は、AEM as a Cloud Service ではサポートされていません</td>
     <td>2022/4/11</td>
     <td>2024/08/30</td>
   </tr>
@@ -314,7 +314,7 @@ ht-degree: 90%
 
 ### `org.apache.sling.commons.auth*` の削除 {#org.apache.sling.commons.auth}
 
-`org.apache.sling.commons.auth` や `org.apache.sling.commons.auth.spi` を使用している場合、コードをそれぞれ `org.apache.sling.auth` または。 `org.apache.sling.auth.spi` に移行することで使用を置き換えることができます。古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
+`org.apache.sling.commons.auth` や `org.apache.sling.commons.auth.spi` を使用している場合、コードをそれぞれ `org.apache.sling.auth` または。 `org.apache.sling.auth.spi` に移行することで使用を置き換えることができます。 古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
 
 アクションリスト：
 * ACS AEM Commons を最新バージョンに更新
@@ -322,7 +322,7 @@ ht-degree: 90%
 
 ### `org.eclipse.jetty*` の削除 {#org.eclipse.jetty}
 
-`org.eclipse.jetty` パッケージまたはそのサブパッケージのいずれかを使用する場合は、同様の機能を備えた他のサードパーティライブラリに移行することをお勧めします。移行が不可能な場合は、以下のリストから必要なバンドルをプロジェクトに追加します。
+`org.eclipse.jetty` パッケージまたはそのサブパッケージのいずれかを使用する場合は、同様の機能を備えた他のサードパーティライブラリに移行することをお勧めします。 移行が不可能な場合は、以下のリストから必要なバンドルをプロジェクトに追加します。
 
 アクションリスト：
 * `org.eclipse.jetty` パッケージの使用を他のサードパーティライブラリ／独自のコードに置き換える
@@ -353,7 +353,7 @@ Mongo client API をプロジェクトに追加します。
 
 ### `org.apache.felix.http.whiteboard` の使用 {#org.apache.felix.http.whiteboard}
 
-`org.apache.felix.http.whiteboard` の使用を [OSGi Http ホワイトボード](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)に置き換えます。公式の OSGi API には同様の機能があり、ほとんどの場合、置き換えにはサービス登録プロパティの変更のみが必要です。
+`org.apache.felix.http.whiteboard` の使用を [OSGi Http ホワイトボード](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)に置き換えます。 公式の OSGi API には同様の機能があり、ほとんどの場合、置き換えにはサービス登録プロパティの変更のみが必要です。
 
 アクションリスト：
 * `org.apache.felix.http.whiteboard` の使用を [OSGi Http ホワイトボード](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)に置き換える
@@ -363,11 +363,11 @@ Mongo client API をプロジェクトに追加します。
 次の 2 つのリストは、AEM as a Cloud Service の OSGi 設定サーフェスを反映しており、顧客が設定できる内容を示しています。
 
 1. 顧客コードで設定してはいけない OSGi 設定のリスト
-1. プロパティを設定できるが、示されている検証ルールに従う必要がある OSGi 設定のリスト。これらのルールには、プロパティの宣言が必須かどうか、プロパティの型、場合によっては許容される値の範囲が許可されます。
+1. プロパティを設定できるが、示されている検証ルールに従う必要がある OSGi 設定のリスト。 これらのルールには、プロパティの宣言が必須かどうか、プロパティの型、場合によっては許容される値の範囲が許可されます。
 
 OSGi 設定がリストに表示されない場合は、顧客コードで設定できます。
 
-これらのルールは、Cloud Manager のビルドプロセス中に検証されます。今後、ルールが追加される可能性があり、その実施予定日が表に記載されています。顧客は、目標の実施日までにこれらのルールを遵守する必要があります。削除日の後にルールに従わないと、Cloud Manager のビルドプロセスでエラーが発生します。ローカル SDK の開発中に OSGI 設定エラーにフラグを付けるには、Maven プロジェクトに [AEM as a Maven SDK Build Analyzer Maven プラグイン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ja) を含める必要があります。
+これらのルールは、Cloud Manager のビルドプロセス中に検証されます。 今後、ルールが追加される可能性があり、その実施予定日が表に記載されています。 顧客は、目標の実施日までにこれらのルールを遵守する必要があります。 削除日の後にルールに従わないと、Cloud Manager のビルドプロセスでエラーが発生します。 ローカル SDK の開発中に OSGI 設定エラーにフラグを付けるには、Maven プロジェクトに [AEM as a Maven SDK Build Analyzer Maven プラグイン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ja) を含める必要があります。
 
 OSGI 設定に関する追加情報は、[この場所](/help/implementing/deploying/configuring-osgi.md)にあります。
 
@@ -503,7 +503,7 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
 
 ## Java ランタイムのバージョン 21 へのアップデート {#java-runtime-update-21}
 
-AEM as a Cloud Service は Java 21 ランタイムに移行します。互換性を確保するには、次の調整を行うことが不可欠です。
+AEM as a Cloud Service は Java 21 ランタイムに移行します。 互換性を確保するには、次の調整を行うことが不可欠です。
 
 ### ランタイム要件
 
@@ -527,17 +527,17 @@ AEM as a Cloud Service は Java 21 ランタイムに移行します。互換性
 
 bnd-maven-plugin の使用方法をバージョン 6.4.0 に更新して、新しい JVM ランタイムがサポートされるようにします。 バージョン 7 以降は Java 11 以下と互換性がないので、現時点ではそのバージョンへのアップグレードは推奨されません。
 
-#### aemanalyzer-maven-plugin の最小バージョン {#aemanalyser-maven-plugin}
+#### aemanalyser-maven-plugin の最小バージョン {#aemanalyser-maven-plugin}
 
-aemanalyzer-maven-plugin の使用をバージョン 1.6.6 以降に更新して、新しい JVM ランタイムがサポートされるようにします。
+新しい JVM ランタイムのサポートを確保するには、aemanalyser-maven-plugin の使用をバージョン 1.6.6 以降にアップデートします。
 
-#### Maven-bundle-plugin の最小バージョン  {#maven-bundle-plugin}
+#### maven-bundle-plugin の最小バージョン  {#maven-bundle-plugin}
 
-新しい JVM ランタイムがサポートされるように、maven-bundle-plugin の使用方法をバージョン 5.1.5 以降に更新します。
+新しい JVM ランタイムのサポートを確保するには、maven-bundle-plugin の使用をバージョン 5.1.5 以降にアップデートします。
 
 #### maven-scr-plugin の依存関係の更新  {#maven-scr-plugin}
 
-`maven-scr-plugin` は Java 17 および 21 と直接互換性がありません。 ただし、以下のスニペットのように、プラグイン設定内で ASM 依存関係バージョンを更新することで、記述子ファイルを生成することは可能です。
+`maven-scr-plugin` は、Java 17 および 21 と直接互換性がありません。 ただし、以下のスニペットのように、プラグイン設定内で ASM 依存関係バージョンを更新して、記述子ファイルを生成することは可能です。
 
 ```
 [source,xml]
