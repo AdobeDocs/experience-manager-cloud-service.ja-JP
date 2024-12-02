@@ -5,9 +5,9 @@ feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
 source-git-commit: 4eb0feecbc5d0f090789bd3023e366ef4eb620db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '644'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ maps:
   path: /content/dam/redirectmaps/mysite-redirectmap.txt
 ```
 
-次に、`rewrites/rewrite.rules` や `<yourfile>.vhost` などの Apache 設定ファイルで、name プロパティによって参照されるマップファイルを設定する必要があります（上記のサンプルでは `my.map`）。
+次に、`rewrites/rewrite.rules` や `<yourfile>.vhost` などの Apache 設定ファイルで、name プロパティによって参照されるマップファイル（上記のサンプルでは `my.map`）を設定する必要があります。
 
 `RewriteMap` ディレクティブは、データが `sdbm`（シンプル DBM）形式を使用してデータベースマネージャー（DBM）ファイル形式で保存されていることを示す必要があります。
 

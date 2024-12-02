@@ -1,32 +1,32 @@
 ---
-title: Edge Delivery サイトのプッシュ無効化の設定
-description: Edge Delivery サイトのプッシュ無効化を設定して、効率的なコンテンツ更新とキャッシュ制御を確保する方法を説明します。
+title: Edge Delivery サイト用のプッシュ無効化の設定
+description: 効率的なコンテンツ更新とキャッシュコントロールを確保するために、Edge Delivery サイトのプッシュ無効化を設定する方法について説明します。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
 source-git-commit: 1a391837ded0af0c5bb436c34a5818f418436308
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '172'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# プッシュの無効化の設定
+# プッシュ無効化の設定
 
-プッシュの無効化は、作成者が行ったコンテンツ更新が公開時に管理コンテンツ配信ネットワーク（CDN）から自動的に削除されるようにします。 これにより、最新のコンテンツのみが提供されるようになります。
+プッシュ無効化により、作成者によるコンテンツ更新は、公開時に管理対象コンテンツ配信ネットワーク（CDN）から自動的に削除されます。これにより、最新のコンテンツのみが提供されるようになります。
 
 システムは、特定の URL とキャッシュタグまたはキーに基づいてコンテンツをクリアし、古いバージョンがパージされるようにします。
 
-プッシュの無効化を有効にするには、特定のプロパティをプロジェクトの設定ファイルに追加する必要があります。 例えば、SharePointの `.helix/config.xlsx` という名前のMicrosoft Excel ワークブックや、Google Drive のGoogle シート名 `.helix/config` などです。
+プッシュ無効化を有効にするには、プロジェクトの設定ファイルに特定のプロパティを追加する必要があります。例えば、SharePoint 内の `.helix/config.xlsx` という名前の Microsoft Excel ワークブックや、Google Drive 内の `.helix/config` という名前の Google Sheets などです。
 
 次の設定プロパティは、実稼動ホストの名前と CDN 管理のタイプを定義します。
 
-| キー | value | 件のコメント |
+| キー | 値 | コメント |
 | --- | --- | --- |
-| `cdn.prod.host` | `<Production Host>` | 本番サイトのホスト名。 例えば、`www.example.com` のように指定します。 |
-| `cdn.prod.type` | managed |   |
+| `cdn.prod.host` | `<Production Host>` | 実稼動サイトのホスト名。例えば、`www.example.com` のように指定します。 |
+| `cdn.prod.type` | 管理対象 |   |
 
-構成シートに変更が加えられたら、[ 構成ツールを使用して構成シートをプレビューし、アクティブ化して ](/help/edge/docs/sidekick.md) 更新をSidekickする必要があります。
+設定シートに変更を行ったら、ユーザーは [Sidekick ツール](/help/edge/docs/sidekick.md)を使用して変更をプレビューし、アクティブ化して更新を適用する必要があります。
 
-[Cloud ManagerのEdge Delivery To Do リストについて ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list) も参照してください。
+また、[Cloud Manager の Edge Delivery の TODO リストについて](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list)も参照してください。
