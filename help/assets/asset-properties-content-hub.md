@@ -6,7 +6,7 @@ exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
 source-git-commit: 2be8d61f1f00444f01772515760d15f2a6f81cd9
 workflow-type: tm+mt
 source-wordcount: '682'
-ht-degree: 69%
+ht-degree: 73%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 69%
 
 >[!AVAILABILITY]
 >
->Content Hub ガイドがPDF形式で利用できるようになりました。 ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えます。
+>コンテンツハブガイドを PDF 形式で利用できるようになりました。ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えてください。
 >
->[!BADGE Content Hub ガイドのPDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE コンテンツハブガイドの PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 [!DNL The Content Hub] を使用すると、効率的なアセット配布に重要なアセットに関する情報を表示できます。アセットに使用可能なすべてのデータのコレクションです。
 

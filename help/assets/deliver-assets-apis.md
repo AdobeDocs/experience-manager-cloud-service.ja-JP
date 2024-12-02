@@ -6,7 +6,7 @@ exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
 source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
 source-wordcount: '627'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 88%
 
 >[!AVAILABILITY]
 >
->OpenAPI 機能ガイドのDynamic MediaがPDF形式で利用できるようになりました。 ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えます。
+>OpenAPI 機能搭載 Dynamic Media のガイドを、PDF 形式で利用できるようになりました。ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えてください。
 >
->[!BADGE OpenAPI 機能ガイドPDFのDynamic Media]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE OpenAPI 機能搭載 Dynamic Media ガイドの PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Experience Manager Assets リポジトリで使用可能なすべての[承認済みアセット](approve-assets.md)を[検索](search-assets-api.md)し、配信 URL を使用して統合されたダウンストリームアプリケーションに配信できます。
 
@@ -44,7 +44,7 @@ Experience Manager Assets リポジトリで使用可能なすべての[承認�
 
 >[!NOTE]
 >
-* [ 画像プリセット、スマートイメージング、その他の画像修飾子 ](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) は、限定提供（LA）機能として使用できます。 アクセスするには、[Adobeのカスタマーサポートケースを作成して送信 ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) します。
+* [画像プリセット、スマートイメージング、追加の画像の修飾子](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/)は、限定提供機能として使用できます。アクセス権を取得するには、[アドビカスタマーサポートケースを作成および送信してください](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)。
 * スマート切り抜きは、[Assets Prime](/help/assets/assets-ultimate-overview.md) では使用できません。
 
 ## 配信 API エンドポイント {#delivery-apis-endpoint}
