@@ -7,10 +7,10 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: e1e122b730de07d9fff36828bb85ceec7c0b101b
 workflow-type: tm+mt
-source-wordcount: '2378'
-ht-degree: 100%
+source-wordcount: '2336'
+ht-degree: 94%
 
 ---
 
@@ -222,19 +222,24 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 [ルールエディターのサービスの呼び出し](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=ja#invoke)アクションを使用してカスタムエラーハンドラーを作成および使用する方法を理解するために、「**ペット ID**」および「**ペット名**」という 2 つのフィールドを持つアダプティブフォームを例に、「**ペット ID**」でカスタムエラーハンドラーを使用して、`200 - OK`、`404 - Not Found`、`400 - Bad Request` などの外部サービスを呼び出すように設定された REST エンドポイントが返す様々なエラーをチェックしましょう。
 
 アダプティブフォームにカスタムエラーハンドラーを追加して使用するには、次の手順を実行します。
-1. [カスタムエラーハンドラーを作成](#create-custom-error-message)
-1. [ルールエディターを使用してカスタムエラーハンドラーを設定](#use-custom-error-handler)
+1. [エラーハンドラーのカスタム関数の追加](#1-add-custom-function-for-error-handler)
+2. [ルールエディターを使用してカスタムエラーハンドラーを設定](#use-custom-error-handler)
 
-#### 1. カスタムエラーハンドラーを作成 {#create-custom-error-message}
+#### 1. エラーハンドラーのカスタム関数を追加する
 
-カスタムエラー関数を作成するには、次の手順を実行します。
+>[!NOTE]
+>
+> カスタム関数の追加方法を学ぶには、「[ コアコンポーネントに基づくアダプティブフォームでカスタム関数を作成 ](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function)」をクリックします。
 
-1. [AEM Forms as a Cloud Service リポジトリを複製](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=jp#accessing-git).
-1. の下にフォルダーを作成します。 `[AEM Forms as a Cloud Service repository folder]/apps/` フォルダー。 例えば、という名前のフォルダーを作成します。 `experience-league`
-1. に移動します。 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` をクリックし、 `ClientLibraryFolder` as `clientlibs`.
-1. `js` という名前のフォルダーを作成します。
-1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` フォルダーに移動します。
-1. JavaScript ファイル（例：`function.js`）を追加します。ファイルには、カスタムエラーハンドラーのコードが含まれています。
+<!-- To create a custom error function, perform the following steps:
+
+1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git). 
+2. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`
+3. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder` as `clientlibs`.
+4. Create a folder named `js`.
+5. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder. -->
+
+1. JavaScript ファイルにカスタムエラーハンドラーのコード（例：`function.js`）を追加します。 ファイルには、カスタムエラーハンドラーのコードが含まれています。
 次のコードを JavaScript ファイルに追加して、REST サービスエンドポイントから受け取った応答とヘッダーをブラウザーコンソールに表示します。
 
    ```javascript
@@ -253,43 +258,45 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
        }
    ```
 
-   カスタムエラーハンドラーからデフォルトのエラーハンドラーを呼び出すには、サンプルコードの次の行が使用されます。
-   `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+<!--
+1. Save the `function.js` file.
+1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
+2. Add a text file as `js.txt`. The file contains:
 
-   >[!NOTE]
-   >
-   > Adobe Analytics の `.content.xml` ファイルを開き、 `allowProxy` および `categories` プロパティ。
-   >
-   > * `allowProxy = [Boolean]true`
-   > * `categories= customfunctionsdemo`
-   >例えば、この場合、 [custom-errorhandler-name] は次のように指定されます。 `customfunctionsdemo`.
+    ```javascript
+        #base=js
+        functions.js
+    ```
 
-1. `function.js` ファイルを保存します。
-1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` フォルダーに移動します。
-1. `js.txt` というテキストファイルを追加します。ファイルには次が含まれます。
+3. Save the `js.txt` file.    
+The created folder structure looks like:
 
-   ```javascript
-       #base=js
-       functions.js
-   ```
+    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) -->
 
-1. `js.txt` ファイルを保存します。\
-   作成したフォルダー構造は次のようになります。
 
-   ![作成されたクライアントライブラリフォルダー構造](/help/forms/assets/customclientlibrary_folderstructure.png)
+    >[!NOTE]
+    >
+    > * カスタムエラーハンドラーからデフォルトのエラーハンドラーを呼び出すには、次のサンプルコード行を使用します。&#39;guidelib.dataIntegrationUtils.defaultErrorHandler （response, headers） &#39;
+    > * &#39;.content.xml&#39; ファイルで、&#39;allowProxy&#39; プロパティと&#39;categories&#39; プロパティを追加して、アダプティブフォームでカスタムエラーハンドラークライアントライブラリを使用します。
+    >
+    >   * &#39;allowProxy = [ ブール値 ]true&#39;
+    >   * &#39;categories= customfunctionsdemo&#39;
+    >       例えば、この場合、[custom-errorhandler-name] は「customfunctionsdemo」として指定されます。
 
-   >[!NOTE]
-   >
-   > カスタム関数の作成方法について詳しくは、[ルールエディターのカスタム関数](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=ja#write-rules)を参照してください。
 
-1. 次のコマンドを使用して、リポジトリに変更を追加、コミット、プッシュします。
+1. リポジトリ内の変更を追加、コミット、プッシュします。
 
-   ```javascript
-       git add .
-       git commit -a -m "Adding error handling files"
-       git push
-   ```
+<!--
+    using the below commands:
+         
+    ```javascript
 
+        git add .
+        git commit -a -m "Adding error handling files"
+        git push
+    ```
+
+-->
 1. [パイプラインを実行します。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
 
 パイプラインが正常に実行されると、カスタムエラーハンドラーがアダプティブフォームのルールエディターで使用できるようになります。次に、ルールエディターのサービスの呼び出しを AEM Forms で使用して、カスタムエラーハンドラーを設定して使用する方法を説明します。

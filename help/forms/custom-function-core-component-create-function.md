@@ -1,14 +1,14 @@
 ---
 title: アダプティブフォームでのカスタム関数の作成と追加
 description: AEM Formsはカスタム関数をサポートしており、ルールエディター内で独自の関数を作成および使用できます。
-keywords: ルールエディターでカスタム関数を使用して、カスタム関数の追加、カスタム関数の使用、カスタム関数の作成をおこないます。
+keywords: カスタム関数の追加, カスタム関数の使用, カスタム関数の作成, ルールエディターでのカスタム関数の使用.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: 249c60c6b4a888b8d32bbb6bebf159c972f82f94
 workflow-type: tm+mt
 source-wordcount: '1340'
-ht-degree: 13%
+ht-degree: 56%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 13%
 
 ## 考慮事項
 
-* `parameter type` と `return type` は `None` をサポートしていません。
+* `parameter type` と `return type` は `None` をサポートしません。
 
 * カスタム関数リストでサポートされていない関数は次のとおりです。
    * ジェネレーター関数
-   * 非同期/待機関数
+   * 非同期／待機関数
    * メソッドの定義
    * クラスメソッド
    * デフォルトのパラメーター
-   * REST パラメーター
+   * Rest パラメーター
 
 ## カスタム関数を作成するための前提条件
 
@@ -35,18 +35,18 @@ ht-degree: 13%
 
 **ソフトウェア：**
 
-* **プレーンテキストエディター（IDE）**：任意のプレーンテキストエディターも使用できますが、Microsoft Visual Studio Code などの統合開発環境（IDE）は、編集を容易にする高度な機能を提供します。
+* **プレーンテキストエディター（IDE）**：どのプレーンテキストエディターでも機能しますが、Microsoft Visual Studio Code などの統合開発環境（IDE）では、編集を簡単にする高度な機能が提供されます。
 
-* **Git:** このバージョン管理システムは、コードの変更を管理するために必要です。 インストールされていない場合は、https://git-scm.comからダウンロードします。
+* **Git**：コードの変更を管理するには、このバージョン管理システムが必須です。インストール済みでない場合は、https://git-scm.com からダウンロードしてください。
 
 
-## カスタム関数の作成 {#create-custom-function}
+## カスタム関数の作成
 
 ルールエディターでカスタム関数を呼び出すクライアントライブラリを作成します。 詳しくは、「[クライアント側ライブラリの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=ja#developing)」を参照してください。
 
-カスタム関数の作成手順は次のとおりです。
+カスタム関数を作成する手順は次のとおりです。
 1. [クライアントライブラリの作成](#create-client-library)
-1. [アダプティブフォームへのクライアントライブラリの追加](#use-custom-function)
+1. [アダプティブフォームにクライアントライブラリを追加](#use-custom-function)
 
 ### クライアントライブラリの作成 {#create-client-library}
 
@@ -72,17 +72,17 @@ ht-degree: 13%
 
 1. [AEMaaCS プロジェクトディレクトリ ] をエディターで開きます。
 
-   ![ カスタム関数のフォルダー構造 ](/help/forms/assets/custom-library-folder-structure.png)
+   ![カスタム関数のフォルダー構造](/help/forms/assets/custom-library-folder-structure.png)
 
 1. `ui.apps` を見つけます。
-1. 新規フォルダーを追加します。 例えば、`experience-league` というフォルダーを追加します。
-1. フォルダー `/experience-league/` 移動し、`ClientLibraryFolder` を追加します。 例えば、`customclientlibs` という名前のクライアントライブラリフォルダーを作成します。
+1. 新しいフォルダーを追加します。例えば、`experience-league` という名前のフォルダーを追加します。
+1. `/experience-league/` フォルダーに移動し、`ClientLibraryFolder` を追加します。例えば、`customclientlibs` という名前のクライアントライブラリフォルダーを作成します。
 
    `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/`
 
 **クライアントライブラリフォルダーへのファイルとフォルダーの追加**
 
-追加したクライアントライブラリフォルダーに次の内容を追加します。
+追加したクライアントライブラリフォルダーに以下を追加します。
 
 * .content.xml ファイル
 * js.txt ファイル
@@ -90,7 +90,7 @@ ht-degree: 13%
 
 `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/`
 
-1. `.content.xml` で次のコード行を追加します。
+1. `.content.xml` で、次のコード行を追加します。
 
    ```javascript
    <?xml version="1.0" encoding="UTF-8"?>
@@ -101,15 +101,15 @@ ht-degree: 13%
 
    >[!NOTE]
    >
-   > `client library folder` および `categories` プロパティには、任意の名前を付けることができます。
+   > `client library folder` と `categories` プロパティには任意の名前を選択できます。
 
-1. `js.txt` で次のコード行を追加します。
+1. `js.txt` で、次のコード行を追加します。
 
    ```javascript
          #base=js
        function.js
    ```
-1. `js` フォルダーに、Javascript ファイルをとして追加します。これには、カスタム関数が含まれ `function.js` います。
+1. `js` フォルダーで、カスタム関数を含む JavaScript ファイルを `function.js` として追加します。
 
    ```javascript
     /**
@@ -135,9 +135,9 @@ ht-degree: 13%
    ```
 1. ファイルを保存します。
 
-![ カスタム関数のフォルダー構造 ](/help/forms/assets/custom-function-added-files.png)
+![カスタム関数のフォルダー構造](/help/forms/assets/custom-function-added-files.png)
 
-**新規フォルダーを filter.xml に含めます**:
+**新しいフォルダーを filter.xml に含める**：
 
 1. [AEMaaCS プロジェクトディレクトリ]内の `/ui.apps/src/main/content/META-INF/vault/filter.xml` ファイルに移動します。
 
@@ -146,7 +146,7 @@ ht-degree: 13%
    `<filter root="/apps/experience-league" />`
 1. ファイルを保存します。
 
-![ カスタム関数フィルター xml](/help/forms/assets/custom-function-filterxml.png)
+![カスタム関数フィルター xml](/help/forms/assets/custom-function-filterxml.png)
 
 **新しく作成したクライアントライブラリフォルダーをAEM環境にデプロイします**。
 
@@ -170,16 +170,16 @@ AEM as a Cloud Service の [AEMaaCS プロジェクトディレクトリ]を Clo
 
 パイプラインが正常に実行されると、クライアントライブラリに追加されたカスタム関数が [ アダプティブフォームのルールエディター ](/help/forms/rule-editor-core-components.md) で使用できるようになります。
 
-### アダプティブフォームへのクライアントライブラリの追加{#use-custom-function}
+### アダプティブフォームにクライアントライブラリを追加{#use-custom-function}
 
-クライアントライブラリをForms CS 環境にデプロイしたら、アダプティブフォームでその機能を使用します。 アダプティブフォームにクライアントライブラリを追加するには、次の手順に従います
+クライアントライブラリを Forms CS 環境にデプロイしたら、その機能をアダプティブフォームで使用します。アダプティブフォームでクライアントライブラリを追加するには、次の手順に従います。
 
 1. フォームを編集モードで開きます。フォームを編集モードで開くには、フォームを選択し、「**[!UICONTROL 編集]**」を選択します。
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
 1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。アダプティブフォームコンテナダイアログボックスが開きます。
-1. 「**[!UICONTROL 基本]**」タブを開き、ドロップダウンリストから **[!UICONTROL クライアントライブラリカテゴリ]** の名前を選択します（この場合は「`customfunctionscategory`」を選択します）。
+1. 「**[!UICONTROL 基本]**」タブをクリックし、ドロップダウンリストから&#x200B;**[!UICONTROL クライアントライブラリカテゴリ]**&#x200B;の名前を選択します（この場合は、`customfunctionscategory` を選択します）。
 
-   ![カスタム関数をクライアントライブラリを追加する](/help/forms/assets/clientlib-custom-function.png)
+   ![カスタム関数のクライアントライブラリを追加](/help/forms/assets/clientlib-custom-function.png)
 
    >[!NOTE]
    >
@@ -191,7 +191,7 @@ AEM as a Cloud Service の [AEMaaCS プロジェクトディレクトリ]を Clo
 
 ## アダプティブフォームでのカスタム関数の使用
 
-アダプティブフォームでは、[ ルールエディター内のカスタム関数 ](/help/forms/rule-editor-core-components.md) を使用できます。 JavaScriptのファイル（`Function.js` ファイル）に次のコードを追加して、生年月日（YYYY-MM-DD）に基づいて年齢を計算しましょう。 生年月日を入力として取得し、年齢を返すカスタム関数を `calculateAge()` として作成します。
+アダプティブフォームでは、[ ルールエディター内のカスタム関数 ](/help/forms/rule-editor-core-components.md) を使用できます。 JavaScriptのファイル（`Function.js` ファイル）に次のコードを追加して、生年月日（YYYY-MM-DD）に基づいて年齢を計算しましょう。 生年月日を入力として受け取り、年齢を返す `calculateAge()` というカスタム関数を作成します。
 
 ```javascript
     /**
@@ -216,17 +216,17 @@ AEM as a Cloud Service の [AEMaaCS プロジェクトディレクトリ]を Clo
     }
 ```
 
-上記の例では、ユーザーが誕生日を（YYYY-MM-DD）形式で入力すると、カスタム関数 `calculateAge` が呼び出され、年齢が返されます。
+上記の例では、ユーザーが生年月日を（YYYY-MM-DD）形式で入力すると、カスタム関数 `calculateAge` が呼び出され、年齢が返されます。
 
 ![ ルールエディター内の Calcualte Agae カスタム関数 ](/help/forms/assets/custom-function-calculate-age.png)
 
-フォームをプレビューして、ルールエディターを介してカスタム関数がどのように実装されているかを確認します。
+フォームをプレビューして、ルールエディターを通じてカスタム関数がどのように実装されるかを確認しましょう。
 
 ![ ルールエディターフォームプレビューでの Agae カスタム関数の計算 ](/help/forms/assets/custom-function-age-calculate-form.png)
 
 >[!NOTE]
 >
-> 次の [ カスタム関数 ](/help/forms/assets//customfunctions.zip) フォルダーを参照できます。 [ パッケージマネージャー ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager) を使用して、このフォルダーをダウンロードし、AEM インスタンスにインストールします。
+> 次の[カスタム関数](/help/forms/assets//customfunctions.zip)フォルダーを参照できます。[パッケージマネージャー](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager)を使用して、このフォルダーをダウンロードして AEM インスタンスにインストールします。
 
 ## カスタム関数の機能
 
@@ -234,7 +234,7 @@ AEM forms のカスタム関数は、フォームの機能を拡張およびパ�
 
 これらの関数は、特定フィールドの操作、グローバルフィールドの使用、非同期操作、キャッシュメカニズムの組み込みなど、様々な機能をサポートします。 この柔軟性により、フォームを複雑な要件に適応させ、効率的にカスタマイズされたユーザーエクスペリエンスを提供できるようになります。 これらの高度な機能を活用することで、フォームのインタラクションを強化し、パフォーマンスを最適化して、AEM フォームをより機能的でレスポンシブなものにすることができます。
 
-カスタム関数の機能について説明します。
+カスタム関数の機能について詳しく見ていきましょう。
 
 ### カスタム関数での非同期のサポート {#support-of-async-functions}
 
@@ -242,31 +242,31 @@ AEM forms のカスタム関数は、フォームの機能を拡張およびパ�
 
 ### フィールドおよびグローバルスコープのオブジェクトは、カスタム関数でサポートされています。 {#support-field-and-global-objects}
 
-フィールドオブジェクトは、テキストフィールド、チェックボックスなど、フォーム内の個々のコンポーネントまたは要素を参照します。 Globals オブジェクトには、フォームインスタンス、ターゲットフィールドインスタンス、カスタム関数内でフォームの変更を実行するメソッドなどの読み取り専用変数が含まれています。
+フィールドオブジェクトは、テキストフィールド、チェックボックスなど、フォーム内の個々のコンポーネントまたは要素を参照します。 Globals オブジェクトには、フォームインスタンス、ターゲットフィールドインスタンス、カスタム関数内でフォームの変更を実行するためのメソッドなどの読み取り専用変数が含まれています。
 
 >[!NOTE]
 >
-> `param {scope} globals` は最後のパラメーターである必要があり、アダプティブフォームのルールエディターには表示されません。
+> `param {scope} globals` は最後のパラメーターにする必要があり、アダプティブフォームのルールエディターには表示されません。
 
 スコープ オブジェクトの詳細については、「[ カスタム関数のスコープ オブジェクト ](/help/forms/custom-function-core-component-scope-function.md)」を参照してください。
 
 ### カスタム関数でのキャッシュサポート
 
-アダプティブFormsは、カスタム関数のキャッシュを実装して、ルールエディターでカスタム関数のリストを取得する際の応答時間を短縮します。 `error.log` ファイルに `Fetched following custom functions list from cache` のようなメッセージが表示されます。
+アダプティブフォームは、カスタム関数のキャッシュを実装して、ルールエディターでカスタム関数リストを取得する際の応答時間を短縮します。`error.log` ファイルに、`Fetched following custom functions list from cache` というメッセージが表示されます。
 
-![ キャッシュをサポートするカスタム関数 ](/help/forms/assets/custom-function-cache-error.png)
+![キャッシュサポートを備えたカスタム関数](/help/forms/assets/custom-function-cache-error.png)
 
-カスタム関数が変更されると、キャッシュが無効化され、解析されます。
+カスタム関数を変更すると、キャッシュは無効になり、解析されます。
 
 ## トラブルシューティング
 
-* カスタム関数のコードを含んだJavaScript ファイルにエラーがある場合、カスタム関数はアダプティブフォームのルールエディターに表示されません。 カスタム関数のリストを確認するには、エラーの `error.log` ファイルに移動します。 エラーが発生すると、カスタム関数のリストは空で表示されます。
+* カスタム関数のコードを含む JavaScript ファイルにエラーがある場合、カスタム関数はアダプティブフォームのルールエディターにリストされません。カスタム関数リストを確認するには、エラーの `error.log` ファイルに移動します。エラーが発生した場合、カスタム関数リストは空で表示されます。
 
-  ![ エラーログファイル ](/help/forms/assets/custom-function-list-error-file.png)
+  ![エラーログファイル](/help/forms/assets/custom-function-list-error-file.png)
 
-  エラーがない場合、カスタム関数が取得され、`error.log` ファイルに表示されます。 `error.log` ファイルに `Fetched following custom functions list` のようなメッセージが表示されます。
+  エラーがない場合、カスタム関数が取得され、`error.log` ファイルに表示されます。`error.log` ファイルに、`Fetched following custom functions list` というメッセージが表示されます。
 
-  ![ 適切なカスタム関数を持つエラーログファイル ](/help/forms/assets/custom-function-list-fetched-in-error.png)
+  ![適切なカスタム関数を使用したエラーログファイル](/help/forms/assets/custom-function-list-fetched-in-error.png)
 
 ## 次の手順
 
