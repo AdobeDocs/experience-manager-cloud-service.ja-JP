@@ -4,10 +4,10 @@ description: AEM Assets ビューの UI 拡張機能について説明します�
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
+source-git-commit: bbb183470e12c0fc81c821fc2e0c1e7d77c33707
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 3%
+source-wordcount: '576'
+ht-degree: 5%
 
 ---
 
@@ -22,7 +22,7 @@ AEM Assets ビューには、UI 拡張機能があります。 この機能を�
 >[!IMPORTANT]
 >
 > * AEM Assets ビュー UI 拡張機能は、[Assets Ultimate](/help/assets/assets-ultimate-overview.md) で利用できます。
-> * Assets ビューの UI 拡張機能は、as a Beta リリースで使用できます。 Assets ビュー UI 拡張機能に早期にアクセスするには、[Adobeのカスタマーサポートケースを作成して送信 ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) します。
+> * Assets ビュー UI 拡張機能にアクセスするには、[Adobeのカスタマーサポートケースを作成して送信 ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) します。
 > * 「詳細なフィードバック」オプションを展開し、「問題を報告」をクリックすると、ドキュメントに関するフィードバックを得ることができます。
 
 ## Assets ビューへのアクセス方法に <a id="1"></a> いて
