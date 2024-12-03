@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
+source-git-commit: 47ee6803146acd93ed62b7eef1419d52f870ae90
 workflow-type: tm+mt
-source-wordcount: '5886'
-ht-degree: 97%
+source-wordcount: '5890'
+ht-degree: 100%
 
 ---
 
@@ -205,6 +205,7 @@ ht-degree: 97%
    + ユニバーサルエディターのリリースノート {#univeral-editor}
       + [ユニバーサルエディターの最新リリースノート](/help/release-notes/universal-editor/current.md)
       + 2024年度 {#2024}
+         + [リリースノート（2024.11.13）](/help/release-notes/universal-editor/2024/2024-11-13.md)
          + [リリースノート（2024.11.05）](/help/release-notes/universal-editor/2024/2024-11-05.md)
          + [リリースノート（2024.10.29）](/help/release-notes/universal-editor/2024/2024-10-29.md)
          + [リリースノート（2024.09.27）](/help/release-notes/universal-editor/2024/2024-09-27.md)
@@ -617,7 +618,7 @@ ht-degree: 97%
          + [概要](/help/assets/dynamic-media-open-apis-overview.md)
          + [アセットの承認](/help/assets/approve-assets.md)
          + [ダウンストリームアプリケーションとの統合](/help/assets/integrate-dynamic-media-open-apis.md)
-         + [アセット API の検索](/help/assets/search-assets-api.md)
+         + [検索アセット API](/help/assets/search-assets-api.md)
          + [配信 API](/help/assets/deliver-assets-apis.md)
          + [アセット配信の制限](/help/assets/restrict-assets-delivery.md)
          + [リモート AEM Assets と AEM Sites の統合](/help/assets/integrate-remote-approved-assets-with-sites.md)
@@ -720,11 +721,11 @@ ht-degree: 97%
          + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
          + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
          + [アダプティブフォームの XML スキーマのデザイン](/help/forms/adaptive-form-xml-schema-form-model.md)
-         + アダプティブFormsとAdobe Marketo Engageの統合 {#integrate-adaptive-form-with-market-engage}
-            + [Adobe Marketo EngageとAEM Formsの統合](/help/forms/integrate-form-to-marketo-engage.md)
-            + [Marketo Engageと統合する新しいフォームの設定 ](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-            + [既存のアダプティブForms用にAdobe Marketo Engage データソースを設定する](/help/forms/use-marketo-engage-data-source-in-form.md)
-            + [既存のフォームをMarketo Engageするための送信アクションの設定](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+         + アダプティブフォームと Adobe Marketo Engage の統合{#integrate-adaptive-form-with-market-engage}
+            + [Adobe Marketo Engage と AEM Forms の統合](/help/forms/integrate-form-to-marketo-engage.md)
+            + [Marketo Engage と統合する新しいフォームの設定](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [既存のアダプティブフォーム用の Adobe Marketo Engage データソースの設定](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [既存のフォーム用の Marketo Engage に対する送信アクションの設定](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + アダプティブフォーム {#adaptive-forms-authoring}
       + [アダプティブフォームを作成します](/help/forms/create-an-adaptive-form.md)
       + [アダプティブフォームフラグメントの作成](/help/forms/adaptive-form-fragments.md)
@@ -750,13 +751,13 @@ ht-degree: 97%
             + [アダプティブフォームの REST エンドポイント送信アクションへの送信を設定する](/help/forms/configure-submit-action-restpoint.md)
             + [アダプティブフォームのメール送信アクションの送信を設定する](/help/forms/configure-submit-action-send-email.md)
             + [アダプティブフォームでの Google reCAPTCHA の使用](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [アダプティブフォームのコアコンポーネントでの hCAPTCHA の使用](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [アダプティブフォームコアコンポーネントでの hCaptcha の使用](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
             + [アダプティブフォームにカスタムエラーハンドラーの追加](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [コアコンポーネントに基づくアダプティブフォームのロケールの追加](/help/forms/supporting-new-language-localization-core-components.md)
             + [アダプティブフォームの JSON スキーマのデザイン（コアコンポーネント）](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [アダプティブフォームへのバージョン管理、コメント、注釈の追加](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [アダプティブフォームの比較](/help/forms/compare-forms.md)
-            + [カスタム送信アクションを作成](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+            + [カスタム送信アクションの作成](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [移行ユーティリティツールを使用した基盤コンポーネントベースのアダプティブフォームからコアコンポーネントベースのフォームへの変換](/help/forms/migration-utility-tool-for-af-core-components.md)
             + コアコンポーネントに基づくアダプティブフォームのルールエディターの概要{#rule-editor-core-components}
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターの概要](/help/forms/rule-editor-core-components.md)
@@ -765,11 +766,11 @@ ht-degree: 97%
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターで使用できる演算子とイベントのタイプ](/help/forms/rule-editor-core-components-events-operators.md)
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターの例](/help/forms/rule-editor-core-components-usecases.md)
                + [アダプティブフォームでの非同期関数の使用](/help/forms/using-async-funct-in-rule-editor.md)
-               + [コアコンポーネントに基づくフォームのビジュアルルールエディターにおける呼び出しサービスの機能強化](/help/forms/invoke-service-enhancements-rule-editor.md)
+               + [コアコンポーネントに基づくフォーム用のビジュアルルールエディターの呼び出しサービスの機能強化](/help/forms/invoke-service-enhancements-rule-editor.md)
             + コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要{#create-and-use-custom-function-core-component}
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要](/help/forms/create-and-use-custom-functions.md)
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成と使用](/help/forms/custom-function-core-component-create-function.md)
-               + [カスタム関数内のオブジェクトのスコープ](/help/forms/custom-function-core-component-scope-function.md)
+               + [カスタム関数のスコープオブジェクト](/help/forms/custom-function-core-component-scope-function.md)
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の例](/help/forms/custom-function-core-components-use-cases.md)
             + フォームポータルとそのコンポーネントの概要{#introduction-to-forms-portal}
                + [フォームポータルコンポーネントの概要](/help/forms/configure-forms-portal.md)
@@ -797,7 +798,7 @@ ht-degree: 97%
          + アダプティブフォームへのコンポーネントの追加 {#add-components-to-an-adaptive-form}
             + [アダプティブフォームでの CAPTCHA の使用](/help/forms/captcha-adaptive-forms.md)
             + [アダプティブフォームでの hCaptcha の使用](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [アダプティブフォームでの Turnstile CAPTCHA の使用](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [アダプティブフォームでの Turnstile Captcha の使用](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [コアコンポーネントの使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
             + [手書き署名の適用](/help/forms/signing-forms-using-scribble.md)
             + [アダプティブフォームへのテーブルの追加](/help/forms/adaptive-forms-tables.md)
@@ -818,7 +819,7 @@ ht-degree: 97%
          + [!DNL Adobe Sign] の使用 {#use-adobe-sign}
             + [Adobe Sign を使用したアダプティブフォームの電子サイン](/help/forms/working-with-adobe-sign.md)
          + 送信アクションとメタデータ送信の設定 {#configure-submit-actions-and-metadata-submission}
-            + [アダプティブフォームの送信アクションを設定](/help/forms/configuring-submit-actions.md)
+            + [アダプティブフォームの送信アクションの設定](/help/forms/configuring-submit-actions.md)
             + [リダイレクトページの設定](/help/forms/configuring-redirect-page.md)
             + [アダプティブフォームの非同期送信を設定](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [カスタム送信アクションの作成](/help/forms/custom-submit-action-form.md)
@@ -959,7 +960,7 @@ ht-degree: 97%
       + [表形式のデータとスプレッドシート](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [分類データの管理](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [WYSIWYG とドキュメントベースのブロック](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
-      + [DAM Assetsを使用したページ](/help/edge/wysiwyg-authoring/dam-assets.md)
+      + [DAM アセットを使用したページ](/help/edge/wysiwyg-authoring/dam-assets.md)
       + [WIP Sites 機能](/help/edge/wysiwyg-authoring/wip-features.md)
    + ドキュメントベースのオーサリング {#document-authoring}
       + [オーサリング](/help/edge/docs/authoring.md)
@@ -1100,7 +1101,7 @@ ht-degree: 97%
          + [コンテンツフラグメントのメタデータとタグの定義について](/help/journey-headless/author/metadata-tagging.md)
 + 生成 AI {#generative-ai}
    + [バリエーションを生成](/help/generative-ai/generate-variations.md)
-   + [アシスタント（Beta限定）](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [アシスタント（ベータ版限定）](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + 実装 {#implementing}
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
    + Cloud Manager の使用 {#using-cloud-manager}
@@ -1124,7 +1125,7 @@ ht-degree: 97%
          + [Cloud Managerでのリポジトリの管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Adobe リポジトリの追加](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [プライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [外部リポジトリの追加（Beta限定）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [外部リポジトリの追加（ベータ版限定）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [リポジトリへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git サブモジュールのサポート](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Cloud Manager での Git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
