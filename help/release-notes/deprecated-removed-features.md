@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 1ff3a9a0ff6b408794956323f12194f136d6b2ad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2800'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -507,7 +507,7 @@ AEM as a Cloud Service は Java 21 ランタイムに移行します。 互換�
 
 ### ランタイム要件
 
-これらの調整は、Java 21 ランタイムとの互換性を確保するために必要です。 ライブラリは、古いバージョンの Java と互換性があるので、いつでも更新できます。
+これらの調整は、Java 21 ランタイムとの互換性を確保するのに必要です。ライブラリは、古いバージョンの Java と互換性があるので、いつでも更新できます。
 
 #### org.objectweb.asm の最小バージョン {#org.objectweb.asm}
 
@@ -521,11 +521,11 @@ AEM as a Cloud Service は Java 21 ランタイムに移行します。 互換�
 
 ### ビルド時間の要件
 
-これらの調整は、新しいバージョンの Java でプロジェクトを構築できるようにするために必要ですが、実行時の互換性には必要ありません。 Maven プラグインは、古いバージョンの Java と互換性があるので、いつでも更新できます。
+これらの調整は、新しいバージョンの Java を使用してプロジェクトを作成できるようにするのに必要ですが、ランタイム互換性には必要ありません。Maven プラグインは、古いバージョンの Java と互換性があるので、いつでも更新できます。
 
 #### bnd-maven-plugin の最小バージョン {#bnd-maven-plugin}
 
-bnd-maven-plugin の使用方法をバージョン 6.4.0 に更新して、新しい JVM ランタイムがサポートされるようにします。 バージョン 7 以降は Java 11 以下と互換性がないので、現時点ではそのバージョンへのアップグレードは推奨されません。
+新しい JVM ランタイムのサポートを確保するには、bnd-maven-plugin の使用をバージョン 6.4.0 にアップデートします。バージョン 7 以降は、Java 11 以下と互換性がないので、現時点ではそのバージョンへのアップグレードはお勧めしません。
 
 #### aemanalyser-maven-plugin の最小バージョン {#aemanalyser-maven-plugin}
 
