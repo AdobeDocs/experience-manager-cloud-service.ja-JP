@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: dcf7bde3bc73b70002f87f14d905cd294280ff94
+source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
 workflow-type: tm+mt
 source-wordcount: '2374'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,6 +33,9 @@ ht-degree: 97%
 * 外部システムとの統合を容易にする HTTP API。オンデマンド操作（低遅延）用とバッチ操作（高スループット操作）用に別々の API が含まれています。
 
 * データへのセキュリティで保護されたアクセス。通信 API は、顧客が指定したデータリポジトリにのみ接続してデータにアクセスするので、通信の安全性が高くなります。
+
+API から提供されるすべてのパラメーター、認証方法および各種サービスの詳細については、[API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)を参照してください。API リファレンスドキュメントは、.yaml 形式でも入手できます。.yaml ファイルをダウンロードし、Postman にアップロードして API の機能を確認できます。
+
 
 <!-- 
 ![A sample credit card statement](assets/statement.png)
@@ -194,7 +197,7 @@ PDF documents contain metadata, which is information about the document (as dist
 
 ### PDF/A 準拠ドキュメントへのコンバージョンと検証
 
-通信ドキュメント変換 API は、PDF ドキュメントを PDF/A 準拠ドキュメントにコンバージョンするのに役立ちます。API を使用すると、PDF ドキュメントを PDF/A 準拠ドキュメントにコンバージョンしたり、PDF ドキュメントが PDF/A に準拠しているかどうかを判断したりできます。PDF/A は、ドキュメントのコンテンツを長期保存するためのアーカイブ形式です。フォントはドキュメントに埋め込まれ、ファイルは非圧縮になります。その結果、通常、PDF/A ドキュメントは標準の PDF ドキュメントよりも大きくなります。なお、PDF/A ドキュメントには、オーディオおよびビデオのコンテンツは含まれません。サポートされるPDF/A 準拠の規格には、PDF/A-1a、1b、2a、2b、3a、3b が含まれます。
+通信ドキュメント変換 API は、PDF ドキュメントを PDF/A 準拠ドキュメントにコンバージョンするのに役立ちます。API を使用すると、PDF ドキュメントを PDF/A 準拠ドキュメントにコンバージョンしたり、PDF ドキュメントが PDF/A に準拠しているかどうかを判断したりできます。PDF/A は、ドキュメントのコンテンツを長期保存するためのアーカイブ形式です。フォントはドキュメントに埋め込まれ、ファイルは非圧縮になります。その結果、通常、PDF/A ドキュメントは標準の PDF ドキュメントよりも大きくなります。なお、PDF/A ドキュメントには、オーディオおよびビデオのコンテンツは含まれません。サポートされる PDF/A 準拠標準には、PDF/A-1a、1b、2a、2b、3a、3b が含まれます。
 
 ### PDF を XDP にコンバージョン {#convert-pdf-to-xdp}
 
@@ -214,10 +217,10 @@ Signature API を使用すると、組織は配布および受信する Adobe PD
 * 非表示の署名フィールドを PDF ドキュメントに追加します。
 * PDF ドキュメント内の指定した署名フィールドに署名します。
 * PDF ドキュメントの証明
-* PDFドキュメントで指定した署名フィールドから署名を削除します
-* PDFドキュメントから指定された署名フィールドを削除する
+* PDF ドキュメント内の指定した署名フィールドから署名を削除します
+* PDF ドキュメントから指定した署名フィールドを削除します。
 
-<span class="preview"> 指定された署名フィールドから署名を削除し、指定された署名フィールドを削除します。PDFドキュメントは、早期導入プログラムで利用できます。 早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
+<span class="preview">早期導入プログラムでは、PDF ドキュメントから指定した署名フィールドから署名を削除することや、指定した署名フィールドを削除することができます。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
 
 
 <!--
@@ -304,8 +307,6 @@ PDF Reader サービスを拡張する様々な使用権限の機能を次に示
 
 * **メッセージ**：1 つ以上の使用権限が適用された PDF ドキュメントを開いた際に Adobe Acrobat Reader 内に表示されるメッセージ。
 * **パスワードをロック解除**：暗号化された PDF ドキュメントを開く際に必要なパスワード。通常、これはドキュメントを開くパスワードですが、PDF ドキュメントが権限パスワードでさらに保護されている場合は、いずれかを使用して開くことができます。
-
-API から提供されるすべてのパラメーター、認証方法および各種サービスの詳細については、[API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)を参照してください。API リファレンスドキュメントは、.yaml 形式でも入手できます。.yaml ファイルをダウンロードし、Postman にアップロードして API の機能を確認できます。
 
 ## 通信 API のタイプ {#types}
 
