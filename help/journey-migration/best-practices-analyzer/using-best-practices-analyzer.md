@@ -4,10 +4,10 @@ description: ベストプラクティスアナライザーを使用してアッ�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 9f5d7ee97da1c92d3a3d4573fa3ec737356f54a9
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 98%
+source-wordcount: '2724'
+ht-degree: 99%
 
 ---
 
@@ -77,39 +77,42 @@ ht-degree: 98%
 
 1. 「**レポートの生成**」をクリックして、ベストプラクティスアナライザーを実行します。
 
-   ![ レポートの生成 ](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+   ![レポートを生成](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. BPA アップロードキーを指定して、生成した BPA レポートを [Cloud Acceleration Manager（CAM）](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)に自動的にアップロードします。アップロードキーを取得するには、[CAM のベストプラクティス分析 ](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) に移動します。
+1. BPA アップロードキーを指定して、生成した BPA レポートを [Cloud Acceleration Manager（CAM）](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)に自動的にアップロードします。アップロードキーを取得するには、[CAM のベストプラクティス分析](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)に移動します。
 
-   ![BPA アップロードキーの設定 ](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+   ![BPA アップロードキーを設定](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
 >[!NOTE]
 >「**CAM へのレポートの自動アップロードをスキップ**」を選択すると、CAM への自動アップロードをスキップできます。スキップすることを選択した場合は、BPA レポートをコンマ区切り値ファイルとして手動でダウンロードし、そのファイルを CAM にアップロードする必要があります。操作を効率化するため、アップロードキーオプションを使用することをお勧めします。
 
+>[!IMPORTANT]
+>CAM に手動でアップロードする場合、レポートのサイズは約 200 MB に制限されます。 大きなレポートの場合は、自動アップロードを利用する必要があります。
+
 1. 有効なキーを指定すると、「**生成**」ボタンがアクティブになります。「**生成**」をクリックして、レポートの生成を開始します。
 
-   ![ レポートの生成 ](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
+   ![レポートを生成](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
 
 1. BPA がレポートを生成している間は、ツールの進行状況を画面で確認できます。進行状況が完了率で表示されます。また、分析された項目の数と、見つかった結果の数が表示されます。
 
-   ![ レポートの生成 ](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+   ![レポートの生成](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
 
 >[!NOTE]
 >BPA アップロードキーの有効期限のタイムスタンプが右上隅に表示されます。BPA アップロードキーの有効期限が近づいたら、更新する必要があります。キーを更新するには、「**更新**」をクリックして CAM に移動し、キーを更新します。
 
 1. BPA レポートが生成された後は、概要と結果の数が、結果のタイプと重要度レベル別に整理された表形式で表示されます。特定の結果の詳細を取得するには、表で結果のタイプに対応する番号をクリックします。
 
-   ![ レポートの概要 ](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
+   ![レポートの概要](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
 1. 「**CSV に書き出し**」をクリックすると、レポートをコンマ区切り値（CSV）形式でダウンロードできます。また、「**CAM に移動**」をクリックして、CAM でレポートを表示することもできます。これにより、CAM の[ベストプラクティス分析](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)ページが表示されます。
 
 BPA に対して「**レポートの更新**」をクリックしてキャッシュをクリアし、レポートを再生成させることができます。
 
-![ レポートを更新 ](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
+![レポートを更新](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
 1. キャッシュの有効期限が切れた場合は、「**CAM で最後に生成されたレポートを表示**」をクリックして CAM で最後に生成されたレポートを表示するか、「**新しいレポートを生成**」をクリックして新しいレポートの生成を開始することができます。
 
-![ レポートなし ](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
+![レポートなし](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
 
 #### ベストプラクティスアナライザーレポートでのフィルターの使用 {#bpa-filters}
@@ -118,14 +121,14 @@ BPA に対して「**レポートの更新**」をクリックしてキャッシ
 
 1. ページの左側にある左レールアイコンをクリックします。**ACS Commons フィルター**&#x200B;が表示されます。**ACS Commonsフィルター**&#x200B;をクリックして、下の画像に示すインタラクティブチェックボックスを表示します。
 
-   ![ACS Commons フィルター ](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
+   ![ACS Commons フィルター](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
    >左レールアイコンは、BPA が ACS Commons の使用を検出した場合にのみ表示されます。
 
 1. このボックスの選択を解除すると、ACS Commons に関連するすべての結果が除外されます。次の画像に示すように、**フィルター適用済みの結果数**&#x200B;がレポートに表示されます。このフィルターは、レポートがコンマ区切り値（CSV）形式で書き出される場合にも適用されます。
 
-   ![ フィルター適用済み結果数 ](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
+   ![フィルター適用済みの結果数](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
    >ACS Commons の結果は無視しないでください。AEM as a Cloud Service との互換性を確認するには、[ドキュメント](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)を参照してください。

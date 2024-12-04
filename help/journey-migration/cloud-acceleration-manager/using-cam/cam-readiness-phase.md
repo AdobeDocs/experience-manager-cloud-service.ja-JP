@@ -4,10 +4,10 @@ description: このページでは、Cloud Acceleration Manager における準�
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 feature: Migration
 role: Admin
-source-git-commit: f86d681c8f8cb6d602058ef30b648c53ff7bad69
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 94%
+source-wordcount: '1096'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ Cloud Acceleration Manager（CAM）でプロジェクトを作成したら、準
 
 1. プロジェクトカードをクリックします。
 
-   ![ プロジェクトカード ](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing1.png)
+   ![プロジェクトカード](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing1.png)
 
 1. プロジェクトのランディングページで、「**準備**」セクションに移動します（下図を参照）。
 
@@ -43,7 +43,7 @@ Cloud Acceleration Manager（CAM）でプロジェクトを作成したら、準
 
 1. **ベストプラクティス分析**&#x200B;カードの「**レビュー**」をクリックします。
 
-   ![ ベストプラクティス分析 – レビュー ](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
+   ![ベストプラクティス分析 - レビュー](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
 
 1. ベストプラクティスアナライザー（BPA）をダウンロードします。
 
@@ -57,14 +57,14 @@ Cloud Acceleration Manager（CAM）でプロジェクトを作成したら、準
 
 1. CAM で「**アップロードキーを取得**」をクリックすると、BPA レポートを CAM に直接自動的にアップロードするためのシステム設定に必要なキーを取得できます。
 
-   ![ アップロードキーの取得 ](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
+   ![アップロードキーを取得](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
 
    >[!IMPORTANT]
-   >レポートは手動でアップロードすることもできますが、アップロードキーを使用すると操作が効率化されます。ブラウザーが匿名モードになっている場合は、レポートを手動でアップロードできないことに注意してください。
+   >レポートは手動でアップロードすることもできますが、アップロードキーを使用すると操作が効率化されます。レポートのサイズが約 200 MB 以上の場合、手動でアップロードすることはできないことに注意してください。 また、ブラウザーの匿名モードを使用してレポートをアップロードすることもできません。
 
 1. 新しいレポートがアップロードされると、CAM でベストプラクティス分析レポートを表示できます。
 
-   ![ ベストプラクティス分析レポート ](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
+   ![ベストプラクティス分析レポート](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
    >[!NOTE]
    >複数の異なるレポートをアップロードする場合、詳細が表示されるレポートは、常に（アップロード日ではなく）作成日が最新のレポートです。
@@ -82,7 +82,7 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
 
 1. **印刷プレビュー**&#x200B;アクションをクリックします。
 
-   ![ 印刷プレビュー ](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1b.png)
+   ![印刷プレビュー](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1b.png)
 
 1. レポートが印刷可能なプレビューに表示された新しいタブで、「**印刷**」をクリックして、レポートを PDF 形式で印刷します。
 
@@ -91,7 +91,7 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
    >* 上記の機能には、「**PDF として保存**」オプションをお勧めします。このオプションはサポートされています。
    >* ブラウザーの印刷ボタンを使用すると、1 ページのみが印刷されます。
 
-   ![ 印刷 ](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
+   ![印刷](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### 「トレンドラインを表示」の使用 {#trendline-view-cam}
 
@@ -104,15 +104,15 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
 
 1. プロジェクトに移動し、**準備**&#x200B;フェーズの&#x200B;**ベストプラクティス分析**&#x200B;カードから「**レビュー**」をクリックします。
 
-   ![ ベストプラクティス分析 – レビュー ](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![ベストプラクティス分析 - レビュー](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. **表示**&#x200B;ドロップダウンリストから、「**トレンドラインレポート**」をクリックします（下図を参照）。
 
-   ![ トレンドラインレポート ](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
+   ![トレンドラインレポート](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
 1. 「**トレンドラインレポート**」をクリックすると、レポートのトレンドライン表示が開きます。
 
-   ![ トレンドライン表示 ](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
+   ![トレンドライン表示](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
 
    >[!NOTE]
@@ -124,14 +124,14 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
    >1. **カスタムコンポーネントとテンプレートのトレンド**
    >
    >次の図に示すように、ドロップダウンからグラフィック表示を追加または変更できます。
-   >![ グラフィック表示の選択 ](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
+   >![グラフィック表示の選択](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
 ### ベストプラクティス分析レポートの確認 {#analysis-report}
 
 ベストプラクティス分析レポートページで使用可能な以下のカードの情報を検討します。
 
-![ ベストプラクティス分析レポート ](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
+![ベストプラクティス分析レポート](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 >[!NOTE]
 > 各カードを使用すると、次の操作を実行できます。
@@ -144,21 +144,21 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
 
 **レポートのプロパティ**&#x200B;カードでは、レポートの日付、期間、フィルター、アップロード日、Adobe Experience Manager（AEM）の詳細など、レポートのプロパティに関する情報を提供します。
 
-![ レポートのプロパティ ](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
+![レポートのプロパティ](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
 
 #### レポートの概要 {#report-overview}
 
 この&#x200B;**レポートの概要**&#x200B;カードでは、AEM as a Cloud Service に移行するための準備状況を評価する際に適用される、レポートの結果と重大度レベルを示します（下図を参照）。
 
-![ レポートの概要 ](/help/journey-migration/cloud-acceleration-manager/assets/report-overview.png)
+![レポートの概要](/help/journey-migration/cloud-acceleration-manager/assets/report-overview.png)
 
 このレポートをクリックすると、「**レポート**」タブが開きます。
 
-![ 「レポート」タブ ](/help/journey-migration/cloud-acceleration-manager/assets/report-overview2.png)
+![「レポート」タブ](/help/journey-migration/cloud-acceleration-manager/assets/report-overview2.png)
 
 重要度、サブタイプまたはカウントに基づいてレポートをフィルタリングできます。
 
-![ レポートフィルター ](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
+![レポートフィルター](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
 >結果カテゴリと重要度レベルについては、[ベストプラクティスアナライザーレポートの説明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=ja)を参照してください。
@@ -183,38 +183,38 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
 * 評価
 * コンテンツの移行に関する考慮事項
 
-  ![ 移行の複雑性の評価 ](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
+  ![移行の複雑性の評価](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## 「計画とセットアップ」カードの使用 {#planning-setup}
 
 1. **計画と設定**&#x200B;カードの「**表示**」をクリックします。このカードには、AEM 移行の計画と設定に役立つ、すべての関連コンテンツが用意されています。
 
-   ![ 計画とセットアップ – 表示 ](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
+   ![計画と設定 - 表示](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
 
 1. コンテンツカルーセルには、移行ジャーニーのこのフェーズに関係のあるすべての情報が表示されます。
 
-   ![ カルーセルの計画と設定 ](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
+   ![計画と設定カルーセル](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ### トレンドラインビューからのベストプラクティス分析レポートの削除 {#delete-trendline}
 
 >[!IMPORTANT]
 >レポートは、複数のレポートがプロジェクトにアップロードされている場合にのみ削除できます。
 
-1. プロジェクトに移動し、**準備**&#x200B;フェーズの&#x200B;**ベストプラクティス分析**&#x200B;カードで「**レビュー**」をクリックします。
+1. プロジェクトに移動し、**準備**&#x200B;フェーズの&#x200B;**ベストプラクティス分析**&#x200B;カードから「**レビュー**」をクリックします。
 
-   ![ ベストプラクティス分析 – レビュー ](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![ベストプラクティス分析 - レビュー](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. 「**...**」をクリックします。
 
-   ![ 楕円 ](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![楕円形](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
 1. ドロップダウンリストで、「**トレンドラインを表示**」をクリックします（下の図を参照）。
 
-   ![ トレンドラインを表示 ](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
+   ![トレンドラインを表示](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
 1. **トレンドラインレポート**&#x200B;画面の削除アイコンをクリックします。
 
-   ![ トレンドラインレポート – 削除 ](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
+   ![トレンドラインレポート - 削除](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
 
 1. 「**削除**」をクリックして削除を確認します。
 
