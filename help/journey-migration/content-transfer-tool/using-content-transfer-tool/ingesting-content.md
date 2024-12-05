@@ -5,9 +5,9 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
 source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3296'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -169,16 +169,16 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### クラウド環境が準備完了状態でないため、取り込みに失敗しました {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
+### クラウド環境が準備完了状態ではないことによる取り込みの失敗 {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
->title="クラウド環境が準備完了状態ではありません"
->abstract="まれに、target クラウド環境で予期しない問題が発生し、取り込みが失敗する場合があります。"
+>title="クラウド環境が準備完了状態ではない"
+>abstract="まれに、ターゲットクラウド環境で予期しない問題が発生し、取り込みが失敗する場合があります。"
 
-まれに、取り込みの target Cloud Service環境で予期しない問題が発生する場合があります。 その結果、環境が想定された準備完了状態ではないため、取り込みは失敗します。 発生したエラー状態の詳細を表示するには、取り込みログを確認します。
+まれに、取り込みのターゲット Cloud Service 環境で予期しない問題が発生する場合があります。その結果、環境が期待どおりの準備完了状態ではないので、取り込みは失敗します。発生したエラー状態の詳細を確認するには、取り込みログを確認します。
 
-オーサー環境が使用可能であることを確認し、数分待ってから取り込みを再試行します。 問題が解決しない場合は、発生したエラー状態をカスタマーサポートにお問い合わせください。
+オーサー環境が使用可能であることを確認し、数分間待機してから、取り込みを再試行します。エラー状態が発生した際、問題が解決しない場合は、カスタマーサポートにお問い合わせください。
 
 ### 一意性制約違反による追加取り込みのエラー {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 

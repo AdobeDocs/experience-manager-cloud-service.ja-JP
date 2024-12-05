@@ -4,9 +4,9 @@ description: 配信 API の使用方法について説明します。
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
 source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '627'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

@@ -5,9 +5,9 @@ exl-id: 077eed73-a066-4273-b2f5-da4bf5cd900c
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: 1a55c35814d6651173f7bdeaa677a7dbdec13f73
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '165'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 75%
 
 >[!NOTE]
 >
->AEMにログインしていない状態で OpenAPI にアクセスする場合（統合で別の製品から OpenAPI を使用する場合など）は、認証が必要です。
+>AEM にログインしていない場合、例えば、統合の一環として別の製品から OpenAPI を使用する場合など、OpenAPI にアクセスするには認証が必要です。
 >
->OpenAPI へのアクセスの認証について詳しくは、[OpenAPI ベースの API](/help/implementing/developing/open-api-based-apis.md) を参照してください。
+>OpenAPI へのアクセスを認証する方法について詳しくは、[OpenAPI ベースの API](/help/implementing/developing/open-api-based-apis.md) を参照してください。
 
 >[!NOTE]
 >

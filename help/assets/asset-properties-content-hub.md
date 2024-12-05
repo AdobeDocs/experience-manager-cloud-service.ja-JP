@@ -1,16 +1,16 @@
 ---
-title: でのアセットとそのプロパティのプレビュー  [!DNL the Content Hub]
-description: ' [!DNL Content Hub] でアセットとプロパティをプレビューする方法を説明します。'
+title: ' [!DNL the Content Hub] でのアセットとそのプロパティのプレビュー'
+description: ' [!DNL Content Hub] でアセットとプロパティをプレビューする方法について説明します。'
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
 source-git-commit: 2be8d61f1f00444f01772515760d15f2a6f81cd9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '682'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
-# Content Hubでのアセットとそのプロパティのプレビュー {#asset-properties}
+# コンテンツハブでのアセットとそのプロパティのプレビュー {#asset-properties}
 
 | [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
@@ -25,10 +25,10 @@ ht-degree: 73%
 
 [!DNL The Content Hub] を使用すると、効率的なアセット配布に重要なアセットに関する情報を表示できます。アセットに使用可能なすべてのデータのコレクションです。
 
-アセットのプレビューとそのプロパティを表示すると、アセットをさらに分類するのに役立ち、デジタル情報量が多くなるにつれてさらに役に立ちます。 数百個のファイルをファイル名、サムネールおよびメモリだけに基づいて管理することは可能です。ただし、この手法は、関係者の数や管理するアセットの数が増えると、拡張性が低くなります。さらに、以下の理由からデジタルアセットの価値が大きくなります。
+アセットプレビューとそのプロパティの表示は、アセットをより細かく分類でき、デジタル情報量が大きくなるにつれ便利です。数百個のファイルをファイル名、サムネールおよびメモリだけに基づいて管理することは可能です。ただし、この手法は、関係者の数や管理するアセットの数が増えると、拡張性が低くなります。さらに、以下の理由からデジタルアセットの価値が大きくなります。
 
 * アクセスが容易になる - システムやユーザーが簡単に見つけることができます。
-* 操作が容易 – アセットのビジュアルと関連情報に関する情報をすべて把握し、迅速かつ信頼性の高い方法でアセットに対処できます。
+* 操作が容易になる - アセットのビジュアルと関連情報に関する完全な情報が得られるので、より迅速かつ信頼性の高い方法で操作できます。
 * 完全 - アセットは、より多くの情報とコンテキストを保持します。
 
 ## 前提条件 {#prerequisites}
@@ -56,7 +56,7 @@ ht-degree: 73%
 
 ## サポートされるアセット形式 {#supported-formats}
 
-[!DNL Content Hub] では、基になる [!DNL Assets] リポジトリがサポートするすべてのアセットタイプと形式をサポートしています。 次の表に、アセットを視覚的にプレビューするための追加サポートを提供する、[!DNL the Content Hub] の主要なファイル形式を示します。
+[!DNL Content Hub] は、基になる [!DNL Assets] リポジトリがサポートするすべてのアセットタイプと形式をサポートします。次の表に、アセットを視覚的にプレビューする追加サポートを提供する [!DNL the Content Hub] の主なファイル形式を示します。
 
 <table> 
     <tbody>
@@ -106,9 +106,9 @@ ht-degree: 73%
 
 ### 派生プロパティ {#derived-properties}
 
-[!DNL Content Hub] に表示されるアセットの一部のプロパティは、アセットが [!DNL Assets] にアップロードされ、[!DNL Content Hub] で使用可能になるように承認された際に、派生または自動的に生成されます。 その一部の一覧を以下に示します。
+[!DNL Content Hub] に表示されるアセットの一部のプロパティは、アセットが [!DNL Assets] にアップロードされ、[!DNL Content Hub] での使用が承認された際に、自動的に派生または生成されます。その一部の一覧を以下に示します。
 
-* **サイズ：** サイズは、基になるリポジトリに保存されたアセットバイナリのサイズを表します。
+* **サイズ：**&#x200B;サイズは、基になるリポジトリに保存されているアセットバイナリのサイズを表します。
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
@@ -126,10 +126,10 @@ ht-degree: 73%
 
 コンテンツハブにアセットを追加する際に指定するプロパティもあります。詳しくは、[コンテンツハブへのブランド承認済みアセットの追加](upload-brand-approved-assets.md)を参照してください。これらのプロパティは、アセットプロパティページにも表示されます。
 
-管理者は、各アセットに表示されるプロパティを設定することもできます。
+また、管理者は、次の各アセットに表示されるプロパティを設定することもできます。
 
-* アセットプレビュー UI の場合：[Content Hub ユーザーインターフェイスの設定 ](configure-content-hub-ui-options.md#configure-asset-details-content-hub) を参照してください。
-* 検索結果またはコレクションのアセットカード：[Content Hub ユーザーインターフェイスの設定 ](configure-content-hub-ui-options.md#asset-card) を参照してください。
+* アセットプレビュー UI の場合：詳しくは、[コンテンツハブユーザーインターフェイスの設定](configure-content-hub-ui-options.md#configure-asset-details-content-hub)を参照してください。
+* 検索結果またはコレクションのアセットカードの場合：詳しくは、[コンテンツハブユーザーインターフェイスの設定](configure-content-hub-ui-options.md#asset-card)を参照してください。
 
 <!--
 
