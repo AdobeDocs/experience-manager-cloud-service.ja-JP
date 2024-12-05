@@ -1,19 +1,18 @@
 ---
-title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.11.0 のリリースノート
-description: AEM as a Cloud Service の Cloud Manager 2024.11.0 のリリースについて説明します。
+title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.12.0 のリリースノート
+description: AEM as a Cloud Service の Cloud Manager 2024.12.0 のリリースについて説明します。
 feature: Release Information
 role: Admin
-exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
+source-git-commit: ea1aa471a4fcb2ace6e4079715ac88af2d296e18
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.11.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud ServiceのCloud Manager 2024.12.0 のリリースノート {#release-notes}
 
-AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2024.11.0 のリリースについて説明します。
+AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2024.12.0 のリリースについて説明します。
 
 >[!NOTE]
 >
@@ -21,37 +20,42 @@ AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2024.11.0 
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service の Cloud Manager 2024.11.0 のリリース日は 2024年11月7日（PT）です。
+AEM as a Cloud ServiceのCloud Manager 2024.12.0 のリリース日は 2024 年 12 月 5 日（木）です。
 
-次回のリリース予定は 2024年12月5日（PT）です。
+次回の予定リリースは 2024 年 1 月（PT）です。
 
 ## 新機能 {#what-is-new}
 
-* AEM Cloud Service で最新の Edge Delivery Services イノベーションを体験してください。サンドボックスプログラムで探索できるようになりました。[詳細情報](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md#auto-creation) <!-- (CMGR-62319) -->
-* AEM Cloud Manager のドメイン設定ページに、名前でドメインをすばやく見つけることができる検索機能が追加されました。検索フィールドにキーワードを入力すると、一致するドメインがフィルタリングされて表示できるので、複数のドメインを効率的に管理しやすくなります。さらに、ページには、**検証済み**&#x200B;や&#x200B;**未検証**&#x200B;などのステータスフィルターが用意され、検索結果をさらに絞り込むことができます。<!-- (CMGR-62615) -->
+* **Java 21 サポート：** お客様は、オプションで Java 17 または Java 21 を使用してビルドできるようになり、パフォーマンスの向上と新しい言語機能を利用できます。 Maven プロジェクトの説明や特定のライブラリバージョンの更新を含む設定手順については、[ ビルド環境 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) を参照してください。 ビルドバージョンが Java 17 または Java 21 に設定されている場合、ランタイムのデフォルトは Java 21 になります。
 
-![ドメイン設定の「検索」フィールド](/help/implementing/cloud-manager/assets/domain-settings-search.png)
+  2025 年 2 月以降、サンドボックスと開発環境は、ビルドバージョン（Java 8、11、17、21）に関係なく、Java 21 ランタイムにアップグレードされます。 実稼動環境は、2025 年 4 月のアップグレードに続きます。
+
+* **レコードタイプ：** AEM Cloud Managerの CDN 設定を使用してドメインの運用開始準備を改善するために、レコードタイプのサポートが追加されました。 CNAME レコードタイプまたは Fastly の IP を表す A レコードタイプを追加して、ドメインのルーティングを簡素化することで、運用を開始するオプションが追加されました。 この機能強化により、Fastly でのドメイン設定を CNAME レコードのみに依存するという制限がなくなります。
+
+  [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。<!-- CMGR-63076 -->
+
+* **Edge Delivery サイトへの複数のドメインの追加：** apex ドメインと non-apex ドメインの両方を含む複数のドメインを、AEM Cloud ManagerのEdge Delivery サイト（EDS）に追加できるようになりました。 この機能強化により、複数のドメインを EDS オリジンに関連付ける機能を制限していた以前の制限が解決されました。 この更新により、ドメイン設定を柔軟に管理できるようになり、複雑なドメイン設定を含むサイトの運用開始プロセスが簡素化されます。<!-- CMGR-63007 -->
+
+* **高度なフィルタリングオプション：** AEM Cloud Managerのパイプライン実行ページと SSL 証明書ページに高度なフィルタリングオプションが導入されました。 複数の条件でフィルタリングできるようになりました。関連データにすばやくアクセスでき、デプロイメントの効率が向上します。<!-- CMGR-26263 -->
+
+   * **パイプラインアクティビティフィルタリング：** パイプラインアクティビティのフィルタリングが含まれます。これにより、特定のパイプラインアクティビティの検索結果を絞り込むことができます。 使用可能なフィルターには、パイプライン、アクション、ステータスが含まれます。
+     ![ パイプラインアクティビティフィルタリング ](/help/implementing/cloud-manager/assets/filters-pipeline.png)
+
+
+   * **SSL 証明書フィルタリング：** SSL 証明書フィルタリングが含まれ、特定の証明書の検索結果を絞り込むことができます。 使用可能なフィルターには、SSL 証明書の名前、所有権、ステータスが含まれます。
+     ![SSL 証明書フィルタリング ](/help/implementing/cloud-manager/assets/filters-ssl-certificates.png)
 
 ## 早期導入プログラム {#early-adoption}
 
 Cloud Manager の早期導入プログラムに参加すると、今後の機能をテストする機会を得ることができます。
 
-### AEM ホーム {#aem-home}
-
-AEM ホームでは、Adobe Experience Manager 内でコンテンツ、アセット、サイトを管理する一元的な開始点が導入されています。パーソナライズされたエクスペリエンスを提供するように設計された AEM ホームを使用すると、役割と目標に応じて AEM エコシステムをシームレスに操作できます。ガイドとして機能し、目的を効率的に達成するのに役立つ重要なインサイトと推奨されるアクションを提供します。AEM ホームは、明確でペルソナ主導型のレイアウトにより、重要なツールにすばやくアクセスでき、すべての AEM 機能にわたって効率化された効果的なエクスペリエンスをサポートします。
-
-早期導入者が使用できる AEM ホームは、ワークフローの改善、目標の優先順位付け、結果の提供に焦点を当てた最適化されたエクスペリエンスを提供します。オプトインすると、AEM ホームの今後を形成し、AEM コミュニティ全体の価値を高めるフィードバックを提供することで、AEM ホームの開発に影響を与えることができます。
-
-この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) にメールを送信してください。次の情報を必ず含めてください。
-
-* プロファイルに最適な役割：コンテンツ作成者、開発者、ビジネス所有者、管理者、その他（説明を入力）。
-* プライマリ AEM アクセスサーフェス：AEM Sites、AEM Assets、AEM Forms、Cloud Manager、その他（説明を入力）。
-
 ### 独自の Git の導入 - GitLab と Bitbucket をサポートするようになりました {#gitlab-bitbucket}
 
 <!-- BOTH CS & AMS -->
 
-**独自の Git の導入**&#x200B;機能が拡張され、GitLab や Bitbucket などの外部リポジトリのサポートが含まれるようになりました。この新しいサポートは、プライベートおよびエンタープライズ GitHub リポジトリに対する既存のサポートに追加されます。これらの新しいリポジトリを追加すると、パイプラインに直接リンクすることもできます。これらのリポジトリは、パブリッククラウドプラットフォーム上や、プライベートクラウドまたはインフラストラクチャ内でホストできます。また、この統合により、Adobe リポジトリと常にコード同期を行う必要がなくなり、プルリクエストをメイン分岐に結合する前に検証できるようになります。
+**独自の Git を取り込む** 機能が拡張され、GitLab や Bitbucket などの外部リポジトリがサポートされるようになりました。 この新しいサポートは、プライベートおよびエンタープライズ GitHub リポジトリに対する既存のサポートに追加されます。これらの新しいリポジトリを追加すると、パイプラインに直接リンクすることもできます。これらのリポジトリは、パブリッククラウドプラットフォーム上や、プライベートクラウドまたはインフラストラクチャ内でホストできます。また、この統合により、Adobe リポジトリと常にコード同期を行う必要がなくなり、プルリクエストをメイン分岐に結合する前に検証できるようになります。
+
+外部リポジトリ（GitHub でホストされているリポジトリを除く）と **Git の変更時** に設定された **デプロイメントトリガー** を使用したパイプラインが自動的に開始されるようになりました。
 
 [Cloud Manager でのプライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/external-repositories.md)を参照してください。
 
@@ -63,15 +67,10 @@ AEM ホームでは、Adobe Experience Manager 内でコンテンツ、アセッ
 
 この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) にメールを送信します。使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
 
-
 ## バグ修正
 
-* 最近のアップデートでは、特定のケースでハードコードされたパスワードが検出されないという SonarQube の問題が修正されました。修正には、拡張されたパターンチェックが含まれ、SonarQube のデフォルトの検出標準に準拠しています。<!-- CMGR-62682 -->
-* Cloud Manager で SSL 証明書を更新しようとすると、**[!UICONTROL SSL 証明書の表示と更新]**&#x200B;ダイアログボックスで「**[!UICONTROL 更新]**」をクリックした後に不明なエラーが表示されます。<!-- CMGR-62848 -->
-* Cloud Manager では、ドメインが同じでも大文字と小文字が異なっている場合、「新しい証明書が既存のドメイン名と一致しません」というエラーが発生し、SSL 証明書の更新が失敗します。更新では、RFC 標準に準拠して、ドメインが大文字と小文字を区別しないものとして認識されるようになりました。<!-- CMGR-62844 -->
-* Cloud Manager では、ドメイン設定への外部キーリンクがないので、IP 許可リストバインディングが実行中の状態のままでした。修正により、IP 許可リストバインディングが関連付けられたドメイン設定に正しくリンクされるようになりました。<!-- CMGR-62838 -->
-* Cloud Manager は、SSL 証明書の OCSP（オンライン証明書ステータスプロトコル）ステータスを検証します。アドビでは、Cloud Manager 経由で証明書をインストールする前に、`openssl verify -untrusted intermediate.pem certificate.pem` などのツールを使用して証明書の整合性をローカルで検証することもお勧めします。詳しくは、[SSL 証明書の要件ドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates#requirements)を参照してください。<!-- CMGR-62341  -->
-
+* AEM Cloud Managerでアクティブなドメインマッピングが設定されたドメインが削除されるのを防ぐためのセーフガードが追加されました。 このようなドメインを削除しようとすると、ドメインの削除を続行する前にドメインマッピングを削除するよう指示するエラーメッセージが表示されるようになりました。 このワークフローは、ドメインの整合性を確保し、誤った設定を防ぎます。<!-- CMGR-63033 -->
+* まれに、それぞれのケースに関連付けられているステータスが正しくないため、ユーザーがドメイン名を追加したり、SSL 証明書を更新したりできませんでした。<!-- CMGR-62816 -->
 
 
 <!-- ## Known issues {#known-issues} -->

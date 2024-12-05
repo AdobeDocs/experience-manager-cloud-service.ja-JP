@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9d169ad7a2982ee44d9b47a418d50b2806942ce2
+source-git-commit: b2852673ad313e5ea6be6dc0ed185d60a46fedeb
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +54,7 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 
    >[!NOTE]
    >
-   >ドメインの `www` バージョンと `non-www` バージョンの両方が必要な場合は、別々に追加する必要があります。 例えば、`example.com` と `www.example.com` です。
+   >ドメインの `www` バージョンと `non-www` バージョンの両方が必要な場合は、個別に追加する必要があります。例えば、`example.com` と `www.example.com` です。
    <!-- Marius Petria on SLACK tmp-skyline-cdn-certificates - Actually  my opinion is that this option should be explicit in UI (that was present in the initial mocks of the design but for some reason it was dropped). I think when adding a domain there should be a check mark to also add www.domain. When adding example.com Customer should be prompted with the following options: Do you also want to add www.example.com and have a redirect example.com -> www.example.com?Do you also want to add www.example.com and have a redirect www.example.com -> example.com? -->
 
 1. 「**作成**」をクリックします。
@@ -75,7 +75,7 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 
    >[!NOTE]
    >
-   >顧客管理の独自の（OV/EV または DV） SSL 証明書を使用する場合、顧客管理の CDN ***プロバイダー*** を使用するには、SSL 証明書の追加をスキップできます。 準備ができたら、代わりに、[CDN 設定の追加 ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) に直接移動します。
+   >顧客が管理する自社の（OV/EV または DV）SSL 証明書を使用し、顧客が管理する CDN ***プロバイダー***&#x200B;を使用する場合は、SSL 証明書の追加をスキップできます。代わりに、準備が整ったら [CDN 設定の追加](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)に直接進むことができます。
 
 
 ### アドビが管理する証明書の手順 {#adobe-managed-cert-steps}
@@ -86,7 +86,7 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 
 使用中のドメインを検証するには、CNAME を追加して検証する必要があります。
 
-ある `CNAME` またはレコードがプロビジョニングされると、ドメインのすべてのインターネットトラフィックが、そのレコードが指している場所にルーティングされます。その場所がトラフィックを処理するようにプロビジョニングされていない場合は、機能が一時的に停止します。テストされていない場合は、コンテンツにエラーがある可能性があります。この手順が常にテストが完了し運用開始の準備が整った後に実行されるのは、このためです。
+`CNAME` レコードタイプまたは `A` レコードタイプは、プロビジョニングされると、ドメインのすべてのインターネットトラフィックをポインティングしている場所にルーティングします。 その場所がトラフィックを処理するようにプロビジョニングされていない場合は、機能が一時的に停止します。テストされていない場合は、コンテンツにエラーがある可能性があります。この手順が常にテストが完了し運用開始の準備が整った後に実行されるのは、このためです。
 
 これらの設定を行うには、カスタムドメイン名が Cloud Manager ドメイン名を指すように、`CNAME` または Apex レコードを設定する必要があるかどうかを判断します。このドキュメントの後の節は、DNS 設定に適したレコードタイプを判断するうえで役に立ちます。
 
@@ -130,7 +130,7 @@ apex ドメインは、サブドメインを含まないカスタムドメイン
 
 >[!TIP]
 >
->*CNAME* または *A レコード*&#x200B;を管理する DNS サーバーに設定すると、時間を節約できます。
+>*CNAME レコード* または *A レコード* は、管理 DNS サーバーで設定して、時間を節約できます。
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
