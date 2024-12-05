@@ -44,8 +44,8 @@ Experience Manager Assets リポジトリで使用可能なすべての[承認�
 
 >[!NOTE]
 >
-* [画像プリセット、スマートイメージング、追加の画像の修飾子](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/)は、限定提供機能として使用できます。アクセス権を取得するには、[アドビカスタマーサポートケースを作成および送信してください](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)。
-* スマート切り抜きは、[Assets Prime](/help/assets/assets-ultimate-overview.md) では使用できません。
+>* [画像プリセット、スマートイメージング、追加の画像の修飾子](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/)は、限定提供機能として使用できます。アクセス権を取得するには、[アドビカスタマーサポートケースを作成および送信してください](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)。
+>* スマート切り抜きは、[Assets Prime](/help/assets/assets-ultimate-overview.md) では使用できません。
 
 ## 配信 API エンドポイント {#delivery-apis-endpoint}
 
