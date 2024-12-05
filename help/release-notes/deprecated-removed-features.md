@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 9d58d9342a8c0337b1fa0c80b40f1cf6d07c2eee
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2513'
+ht-degree: 79%
 
 ---
 
