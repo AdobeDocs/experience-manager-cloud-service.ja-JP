@@ -2,10 +2,10 @@
 title: コンテンツハブユーザーインターフェイスの設定
 description: コンテンツハブユーザーインターフェイスの設定
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 794d8f51f0a44b708538c491b8945c564382f1c5
+source-git-commit: deeb1487ce51f2a91e556b32f9db2a644656d828
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 98%
 
 >[!AVAILABILITY]
 >
->Content Hub ガイドがPDF形式で利用できるようになりました。 ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えます。
+>コンテンツハブガイドを PDF 形式で利用できるようになりました。ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えてください。
 >
->[!BADGE Content Hub ガイドのPDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE コンテンツハブガイドの PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Experience Manager Assets を使用すると、管理者はコンテンツハブユーザーインターフェイスで使用可能なオプションを設定できます。管理者が選択した設定オプションに基づいて、コンテンツハブユーザーはコンテンツハブのフィールドを表示できます。設定オプションには次のものが含まれます。
 
@@ -73,6 +73,8 @@ Experience Manager Assets を使用すると、管理者はコンテンツハブ
 * [ブランディング](#configure-branding-content-hub)
 
 * [有効期限切れのアセット](#expired-assets-content-hub)
+
+* [レンディション](#renditions-content-hub)
 
 * [カスタムリンク](#configure-custom-links-content-hub)
 
@@ -165,7 +167,6 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 同様に、使用可能な各プロパティの横にある ![編集](/help/assets/assets/edit-content-hub.svg) をクリックして必要な変更を行うか、![削除](/help/assets/assets/delete-content-hub.svg) をクリックして既存のメタデータプロパティを削除します。すべての変更を行ったら、「**保存**」をクリックして、変更を適用します。
 
-
 ### 検索 {#configure-metadata-search-content-hub}
 
 管理者は、ユーザーがコンテンツハブで検索条件を指定した際に検索されるメタデータフィールドを定義できます。次の手順を実行します。
@@ -223,6 +224,23 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 有効期限切れのアセットの表示が有効になっている場合、コンテンツハブはアセットカードの `Expiring in n days` メッセージを使用して、今後 15 日以内に有効期限切れになるアセットもハイライト表示します。
 
+### レンディション {#renditions-content-hub}
+
+レンディションは、画像やドキュメントなどのデジタルアセットのカスタマイズバージョンで、最適なパフォーマンスを確保するために、様々なデバイスやプラットフォーム向けに設計されています。 詳しくは、[Adobe Experience Manager Assetsのレンディション ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions) を参照してください。
+
+Content Hubでは、静的レンディションをダウンロードできます。 静的レンディションは、ネイティブに生成されるアセットの元のファイルを表す様々な表現です。 例としては、サムネールやモバイルに最適化されたレンディションがあります。 管理者は、アセットレンディションの可用性を管理および制御し、元のアセットをダウンロードできるかどうかを管理できます。
+
+これを行うには、次の手順を実行します。
+
+[ 設定 ](#access-configuration-options-content-hub) ユーザーインターフェイスで「**[!UICONTROL レンディション]**」をクリックします。 以下のオプションが利用できます。
+
+* [!UICONTROL  静的レンディションの可用性を有効にする ] 切替スイッチを有効にして、すべての静的レンディションをContent Hubで表示します。
+
+* 有効または無効 **[!UICONTROL ユーザーが元のアセットをダウンロードできるようにする]** を切り替えて、元のアセットをダウンロードできるかどうかを制御します。
+
+  ![Content Hubでのレンディションの設定 ](assets/config-renditions.png)
+
+Content Hubで静的レンディションを表示およびダウンロードする方法について詳しくは、[Content Hubでのアセットのダウンロード ](/help/assets/download-assets-content-hub.md) を参照してください。
 
 ### カスタムリンク {#configure-custom-links-content-hub}
 
