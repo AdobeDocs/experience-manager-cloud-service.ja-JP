@@ -4,10 +4,10 @@ description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 9d58d9342a8c0337b1fa0c80b40f1cf6d07c2eee
+source-git-commit: 33dd48cc6484675ca54cfba19f741d23ee4f5ff1
 workflow-type: tm+mt
-source-wordcount: '2513'
-ht-degree: 79%
+source-wordcount: '2768'
+ht-degree: 82%
 
 ---
 
@@ -510,4 +510,77 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
 
 ## Java ランタイムのバージョン 21 へのアップデート {#java-runtime-update-21}
 
-Adobe Experience Manager as a Cloud Serviceは Java 21 ランタイムに移行しています。 互換性を確保するには、[ ランタイム要件 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) で説明されているライブラリバージョンの更新が不可欠です。
+<!-- NEW but needed to be removed for now; removed 12/5/24 LEAVE HERE, DO NOT DELETE Adobe Experience Manager as a Cloud Service is transitioning to the Java 21 runtime. To ensure compatibility, updating library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) is essential. -->
+
+AEM as a Cloud Service は Java 21 ランタイムに移行します。 互換性を確保するには、次の調整を行うことが不可欠です。
+
+### ランタイム要件
+
+これらの調整は、Java 21 ランタイムとの互換性を確保するのに必要です。ライブラリは、古いバージョンの Java と互換性があるので、いつでも更新できます。
+
+#### org.objectweb.asm の最小バージョン {#org.objectweb.asm}
+
+新しい JVM ランタイムのサポートを確保するには、org.objectweb.asm の使用をバージョン 9.5 以降に更新します。
+
+#### org.apache.groovy の最小バージョン {#org.apache.groovy}
+
+新しい JVM ランタイムのサポートを確保するには、org.apache.groovy の使用をバージョン 4.0.22 以降に更新します。
+
+このバンドルは、AEM Groovy コンソールなどのサードパーティの依存関係を追加することで間接的に含めることができます。
+
+### ビルド時間の要件
+
+これらの調整は、新しいバージョンの Java を使用してプロジェクトを作成できるようにするのに必要ですが、ランタイム互換性には必要ありません。Maven プラグインは、古いバージョンの Java と互換性があるので、いつでも更新できます。
+
+#### bnd-maven-plugin の最小バージョン {#bnd-maven-plugin}
+
+新しい JVM ランタイムのサポートを確保するには、bnd-maven-plugin の使用をバージョン 6.4.0 にアップデートします。バージョン 7 以降は、Java 11 以下と互換性がないので、現時点ではそのバージョンへのアップグレードはお勧めしません。
+
+#### aemanalyser-maven-plugin の最小バージョン {#aemanalyser-maven-plugin}
+
+新しい JVM ランタイムのサポートを確保するには、aemanalyser-maven-plugin の使用をバージョン 1.6.6 以降にアップデートします。
+
+#### maven-bundle-plugin の最小バージョン  {#maven-bundle-plugin}
+
+新しい JVM ランタイムのサポートを確保するには、maven-bundle-plugin の使用をバージョン 5.1.5 以降にアップデートします。
+
+#### maven-scr-plugin の依存関係の更新  {#maven-scr-plugin}
+
+`maven-scr-plugin` は、Java 17 および 21 と直接互換性がありません。 ただし、以下のスニペットのように、プラグイン設定内で ASM 依存関係バージョンを更新して、記述子ファイルを生成することは可能です。
+
+```
+[source,xml]
+ <project>
+   ...
+   <build>
+     ...
+     <plugins>
+       ...
+       <plugin>
+         <groupId>org.apache.felix</groupId>
+         <artifactId>maven-scr-plugin</artifactId>
+         <version>1.26.4</version>
+         <executions>
+           <execution>
+             <id>generate-scr-scrdescriptor</id>
+             <goals>
+               <goal>scr</goal>
+             </goals>
+           </execution>
+         </executions>
+         <dependencies>
+           <dependency>
+             <groupId>org.ow2.asm</groupId>
+             <artifactId>asm-analysis</artifactId>
+             <version>9.7.1</version>
+             <scope>compile</scope>
+           </dependency>
+         </dependencies>
+       </plugin>
+       ...
+     </plugins>
+     ...
+   </build>
+   ...
+ </project>
+```

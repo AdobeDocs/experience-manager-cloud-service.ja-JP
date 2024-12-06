@@ -3,10 +3,11 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.12.0 �
 description: AEM as a Cloud Service の Cloud Manager 2024.12.0 のリリースについて説明します。
 feature: Release Information
 role: Admin
-source-git-commit: ea1aa471a4fcb2ace6e4079715ac88af2d296e18
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: 8e89adcaadbc53c3d525d57ef452f671137a619f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '645'
+ht-degree: 41%
 
 ---
 
@@ -22,17 +23,20 @@ AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2024.12.0 
 
 AEM as a Cloud ServiceのCloud Manager 2024.12.0 のリリース日は 2024 年 12 月 5 日（木）です。
 
-次回の予定リリースは 2024 年 1 月（PT）です。
+次回のリリース予定は 2025年1月23日（PT）です。
+
 
 ## 新機能 {#what-is-new}
 
-* **Java 21 サポート：** お客様は、オプションで Java 17 または Java 21 を使用してビルドできるようになり、パフォーマンスの向上と新しい言語機能を利用できます。 Maven プロジェクトの説明や特定のライブラリバージョンの更新を含む設定手順については、[ ビルド環境 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) を参照してください。 ビルドバージョンが Java 17 または Java 21 に設定されている場合、ランタイムのデフォルトは Java 21 になります。
+<!-- * **Java 21 support:** Customers can now optionally build with Java 17 or Java 21, benefiting from performance improvements and new language features. See [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for configuration steps, including updating your Maven project description, and certain library versions. When the build version is set to Java 17 or Java 21, the runtime defaults to Java 21.
 
-  2025 年 2 月以降、サンドボックスと開発環境は、ビルドバージョン（Java 8、11、17、21）に関係なく、Java 21 ランタイムにアップグレードされます。 実稼動環境は、2025 年 4 月のアップグレードに続きます。
+    Starting February 2025, sandboxes and dev environments upgrade to the Java 21 runtime, regardless of the build version (Java 8, 11, 17, or 21). Production environments follow with an upgrade in April 2025. -->
 
 * **レコードタイプ：** AEM Cloud Managerの CDN 設定を使用してドメインの運用開始準備を改善するために、レコードタイプのサポートが追加されました。 CNAME レコードタイプまたは Fastly の IP を表す A レコードタイプを追加して、ドメインのルーティングを簡素化することで、運用を開始するオプションが追加されました。 この機能強化により、Fastly でのドメイン設定を CNAME レコードのみに依存するという制限がなくなります。
 
   [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。<!-- CMGR-63076 -->
+
+<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. -->
 
 * **Edge Delivery サイトへの複数のドメインの追加：** apex ドメインと non-apex ドメインの両方を含む複数のドメインを、AEM Cloud ManagerのEdge Delivery サイト（EDS）に追加できるようになりました。 この機能強化により、複数のドメインを EDS オリジンに関連付ける機能を制限していた以前の制限が解決されました。 この更新により、ドメイン設定を柔軟に管理できるようになり、複雑なドメイン設定を含むサイトの運用開始プロセスが簡素化されます。<!-- CMGR-63007 -->
 
