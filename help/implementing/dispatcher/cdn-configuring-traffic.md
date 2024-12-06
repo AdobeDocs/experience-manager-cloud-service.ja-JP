@@ -4,10 +4,10 @@ description: 設定ファイルでルールとフィルターを宣言し、Clou
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
+source-git-commit: 4e65a0fb32273548860731c09e27cb58fab93ab4
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 100%
+source-wordcount: '1377'
+ht-degree: 96%
 
 ---
 
@@ -241,7 +241,7 @@ data:
 
 ## 応答変換 {#response-transformations}
 
-応答変換ルールを使用すると、CDN の送信応答のヘッダーを設定および設定解除できます。また、リクエスト変換ルールで以前に設定された変数を参照するには、上記の例を参照してください。
+応答変換ルールを使用すると、CDN の送信応答のヘッダーを設定および設定解除できます。また、リクエスト変換ルールで以前に設定された変数を参照する場合は、上記の例も参照してください。 応答のステータスコードを設定することもできます。
 
 設定例：
 
@@ -282,6 +282,15 @@ data:
           - type: set
             respHeader: x-resp-header-2
             value: value-set-by-resp-rule-2
+      # Example: setting status code
+      - name: status-code-rule
+        when:
+          reqProperty: path
+          like: status-code
+        actions:
+          - type: set
+            respProperty: status
+            value: '410'        
 ```
 
 **アクション**
@@ -291,6 +300,7 @@ data:
 | 名前 | プロパティ | 意味 |
 |-----------|--------------------------|-------------|
 | **set** | reqHeader、値 | 指定されたヘッダーを応答内の指定された値に設定します。 |
+|          | respProperty、値#respProperty ツイカ# | 応答プロパティを設定します。 ステータスコードを設定するために、「status」プロパティのみをサポートします。 |
 | **設定解除** | respHeader | 指定したヘッダーを応答から削除します。 |
 
 ## 接触チャネルセレクター {#origin-selectors}
