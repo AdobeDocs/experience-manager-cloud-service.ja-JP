@@ -4,10 +4,10 @@ description: Cloud Acceleration Manager を使用して、移行セットから�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
+source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
 workflow-type: tm+mt
-source-wordcount: '3296'
-ht-degree: 100%
+source-wordcount: '3322'
+ht-degree: 98%
 
 ---
 
@@ -64,8 +64,9 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
    >[!IMPORTANT]
    > 宛先環境への取り込みを開始するには、宛先 Cloud Service オーサーサービスで、自身もローカルの **AEM 管理者**&#x200B;グループに属している必要があります。取り込みを開始できない場合、詳しくは、[取り込みを開始できない](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion)を参照してください。
 
-1. 取り込みの選択肢が選択されると、その所要時間の推定が表示されます。これは、類似した取り込みの履歴データに基づくベストエフォート型の推定です。
+1. 取り込みの選択肢を選択すると、その期間の見積もり値が表示される場合があります。 これは、類似した取り込みの履歴データに基づくベストエフォート型の推定です。
 
+   * この場合、CAM はターゲットシステム上のコンテンツの量を把握しないため、この予測値は **ワイプなし** 取り込みに対して計算または表示されません。
    * この推定は、抽出の「サイズ確認」値が収集され使用可能な場合にのみ計算され表示されます。
    * この値は推定値であり、インテリジェントには計算されますが、正確とは見なせません。実際の所要時間は、様々な要因によって変わる可能性があります。
    * この値は、取り込みの実行中に期間ダイアログでも確認できます。このダイアログには、取り込みの「**期間の表示**」アクションを通じてアクセスします。
