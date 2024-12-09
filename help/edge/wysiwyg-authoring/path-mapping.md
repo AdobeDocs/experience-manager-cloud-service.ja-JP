@@ -3,13 +3,13 @@ title: Edge Delivery Services のパスマッピング
 description: AEM オーサリングインスタンスで使用されるページパスを、web サイトで使用されるパブリックページパスにマッピングし、Edge Delivery Services に公開されるコンテンツを制御する方法について説明します。
 feature: Edge Delivery Services
 role: User
-source-git-commit: 2727744f276ee5facae718a987dcc6dc54d4e917
-workflow-type: ht
+exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
-
 
 # Edge Delivery Services のパスマッピング {#path-mapping}
 
@@ -20,7 +20,7 @@ AEM オーサリングインスタンスで使用されるページパスを、w
 AEM を使用して WYSIWYG コンテンツをオーサリングし、Edge Delivery Services に公開できるようするには、プロジェクトのパスマッピングを設定する必要があります。このマッピングには 2 つの目的があります。
 
 * AEM オーサリングインスタンスで使用されるページパスと、web サイトで使用されるパブリックページパス間の関係をマッピングして作成します。
-* コンテンツ（ページ、シート、アセットなど）のEdge Delivery Services への公開を制御します。
+* Edge Delivery Servicesに公開するコンテンツ（ページ、シート、アセットなど）を制御します。
 
 パスマッピングは、プロジェクトごとに、プロジェクトのコンテンツと URL 構造に従って個別に設定する必要があります。これは、コンテンツの公開中や[ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/navigation.md)でのコンテンツの編集中に AEM によって使用されます。
 
@@ -79,7 +79,7 @@ Edge Delivery Services ページで使用されるアセットは、通常、web
 
    ```text
    curl --request POST \
-     --url https://admin.hlx.page/config/{org}/sites/{site}/public.json \
+     --url https://admin.aem.page/config/{org}/sites/{site}/public.json \
      --header 'Content-Type: application/json' \
      --header 'x-auth-token: ......' \
      --data '{
