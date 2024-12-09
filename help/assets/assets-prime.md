@@ -3,10 +3,11 @@ title: Assets Prime
 description: 主なメリット、ユーザータイプ、権限など、Assets Prime の主要な側面について説明します。
 feature: Asset Management
 role: User, Admin
-source-git-commit: f033efd954ea7f9d27a891bfb9c0226e9d9c1432
-workflow-type: ht
-source-wordcount: '1073'
-ht-degree: 100%
+exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
+source-git-commit: 92faabc50ce4b83ad1015bbbadeac416d66c3b0b
+workflow-type: tm+mt
+source-wordcount: '1124'
+ht-degree: 95%
 
 ---
 
@@ -34,6 +35,12 @@ Assets as a Cloud Service Prime には、次のような様々な主要機能を
 * **統合**：他のアドビアプリケーションおよびアドビ以外のアプリケーションとの統合。
 
 * **Dynamic Media（アドオン）**：画像、ビデオ、その他の新しいコンテンツを変換して配信し、あらゆるデバイスで大規模にリッチでインタラクティブなマルチメディアエクスペリエンスを実現するためのツール。
+
+  >[!NOTE]
+  >
+  >回転、切り抜き（手動のみ – スマート切り抜きなし）、反転、サイズ、優先 WebP、高さ、幅、画質、形式、アダプティブビデオストリーミングなどの基本的な画像修飾子にアクセスできる、OpenAPI 機能を持つDynamic Mediaは、Assets Prime でも使用できます。 詳しくは、Adobeアカウントチームにお問い合わせください。
+
+1. [新しいプログラムを作成します](/help/journey-onboarding/create-program.md)。
 
 ただし、DAM のニーズが拡大し、UI 拡張機能、API 駆動型自動化、カスタムコードのデプロイメントなどのより多くの機能が必要になる場合は、[Assets Ultimate](/help/assets/assets-ultimate-overview.md) へのアップグレードを考慮する必要があります。
 
