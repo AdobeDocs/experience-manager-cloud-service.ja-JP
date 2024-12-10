@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 33dd48cc6484675ca54cfba19f741d23ee4f5ff1
 workflow-type: tm+mt
 source-wordcount: '2768'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 82%
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
->title="AEM as a Cloud Serviceの非推奨（廃止予定）の機能と削除された機能"
->abstract="AEM as a Cloud Service には、クラウドネイティブなデプロイメントモデルがあります。 このタブでは、クラウドネイティブな同等機能に置き換わる機能について重点的に説明します。"
+>title="AEM as a Cloud Service の廃止された機能と削除された機能"
+>abstract="AEM as a Cloud Service には、クラウドネイティブなデプロイメントモデルがあります。 このタブには、クラウドネイティブな機能に置き換えられた機能がハイライト表示されます。"
 
 アドビでは、製品の機能を絶えず評価して、常に後方互換性を慎重に考慮しながら、古い機能を作成し直したり、新たな機能に置き換えて、お客様にとっての全体的な価値を向上させます。 As a [!DNL Cloud Service] はクラウドネイティブなデプロイメントモデルを使用するの [!DNL Adobe Experience Manager] 同様に、特定の機能をクラウドネイティブな同等機能に置き換えます。
 
