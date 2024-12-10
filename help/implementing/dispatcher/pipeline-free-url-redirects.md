@@ -4,10 +4,10 @@ description: Git パイプラインまたは Cloud Manager パイプラインに
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: 4eb0feecbc5d0f090789bd3023e366ef4eb620db
-workflow-type: ht
-source-wordcount: '644'
-ht-degree: 100%
+source-git-commit: c80454204837529007c1fda7eef4486c213eb509
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -58,9 +58,9 @@ maps:
   path: /content/dam/redirectmaps/mysite-redirectmap.txt
 ```
 
-次に、`rewrites/rewrite.rules` や `<yourfile>.vhost` などの Apache 設定ファイルで、name プロパティによって参照されるマップファイル（上記のサンプルでは `my.map`）を設定する必要があります。
+次に、`rewrites/rewrite.rules` や `<yourfile>.vhost` などの Apache 設定ファイルで、name プロパティによって参照されるマップファイルを設定する必要があります（上記のサンプルでは `my.map`）。 読み込まれると、このマップファイルは、**固定** 場所 `/tmp/rewrites/` の下の Dispatcher ローカルストレージに保存されます。
 
-`RewriteMap` ディレクティブは、データが `sdbm`（シンプル DBM）形式を使用してデータベースマネージャー（DBM）ファイル形式で保存されていることを示す必要があります。
+`RewriteMap` ディレクティブは、データが `sdbm` （simple DBM）形式を使用してデータベース・マネージャ（DBM）ファイル形式で格納されることを示し、フル・ファイル・パスは格納場所の接頭辞と name プロパティから導出されます。
 
 残りの設定は、`redirectmap.txt` の形式によって異なります。最もシンプルな形式は、以下のサンプルに示すように、元の URL とマッピングされた URL を 1 対 1 でマッピングしたものです。
 
