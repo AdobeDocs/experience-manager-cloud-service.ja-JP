@@ -4,9 +4,9 @@ description: ヘッドレスコンテンツ配信用の Adobe Experience Manager
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: e8f992df5a270e7335af466a524daa013bff5f42
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1824'
 ht-degree: 100%
 
 ---
@@ -82,16 +82,6 @@ GraphQL クエリとその JSON 応答は、CDN を使用する場合、`GET` �
 
 * [永続クエリのキャッシュ](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
 * [永続クエリのキャッシュの管理](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
-
-#### AEM GraphQL のプリキャッシュの使用 {#use-aem-graphql-pre-caching}
-
-**レコメンデーション**
-
-この機能を使用すると、AEM は GraphQL クエリの範囲内でコンテンツをさらにキャッシュして、行ごとではなく、JSON 出力のブロックとしてアセンブリすることができます。
-
-**その他の参照**
-
-AEM Cloud Service のプログラムおよび環境でこの機能を有効にする場合は、Adobe にご連絡ください。
 
 ### GraphQL クエリの最適化 {#graphql-query-optimization}
 
