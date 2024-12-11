@@ -4,10 +4,10 @@ description: Git パイプラインまたは Cloud Manager パイプラインに
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: c80454204837529007c1fda7eef4486c213eb509
+source-git-commit: 639a8927fb232f7d4a18e0f49b1221c184066787
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '699'
+ht-degree: 82%
 
 ---
 
@@ -30,11 +30,14 @@ AEM as a Cloud Service では、クライアントサイドリダイレクトを
 この機能のコアとなるのは、AEM Apache／Dispatcher が、公開リポジトリ内の指定した場所に配置された 1 つ以上の書き換えマップファイルを読み込む（または再読み込みする）機能です。ファイルがそこに到達する仕組みはこの機能の範囲外ですが、次のいずれかの方法を検討可能であると明記しておくことが重要です。
 
 * 書き換えマップをアセットとしてオーサーユーザーインターフェイスに取り込み、公開します。
-* [ACS Commons 書き換えマップマネージャー](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)をインストールします。これには、URL マッピングを管理するユーザーインターフェイスが含まれ、書き換えマップファイルを公開することもできます。
+* [ACS Commons 書き換えマップマネージャ ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) （[ 少なくとも 6.7.0 バージョン以降 ](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)）をインストールする場合。このマネージャには、URL マッピングを管理するユーザーインターフェイスが含まれており、書き換えマップファイルを公開することもできます。
 * カスタムアプリケーションを作成することで、完全な柔軟性を実現します。例えば、URL マッピングを管理するユーザーインターフェイスまたはコマンドラインインターフェイス、あるいは書き換えマップをアップロードするフォームを使用し、その後 AEM API を使用して書き換えマップファイルを公開します。
 
 >[!NOTE]
 > この機能には、AEM バージョン **18311 以降**&#x200B;が必要です。
+
+>[!NOTE]
+> この機能で書き換えマップマネージャを使用するには、ACS Commons バージョン **6.7.0 以降** が必要です。
 
 ## 書き換えマップ {#rewrite-map}
 
