@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
+source-git-commit: 55ee7f866bcfc4ecc2e203102872af9752240019
 workflow-type: tm+mt
-source-wordcount: '2926'
+source-wordcount: '2909'
 ht-degree: 65%
 
 ---
@@ -74,8 +74,6 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ### 標準プロファイルの作成 {#create-standard-profile}
 
-標準の処理プロファイルを作成するには、次の手順に従います。
-
 1. 管理者は、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL 処理プロファイル]**&#x200B;にアクセスします。「**[!UICONTROL 作成]**」をクリックします。
 1. フォルダーに適用する際に、プロファイルを一意に識別するのに役立つ名前を指定します。
 1. FPO レンディションを生成するには、「**[!UICONTROL 画像]**」タブで「**[!UICONTROL FPO レンディションを作成]**」を有効にします。**[!UICONTROL 品質]**&#x200B;の値を 1～100 で入力します。
@@ -124,8 +122,6 @@ The following video demonstrates the usefulness and usage of standard profile.
 >標準メタデータは、カスタムアプリケーションを使用して編集することはできません。変更できるのは、カスタムメタデータのみです。
 
 ### カスタムプロファイルの作成 {#create-custom-profile}
-
-カスタムプロファイルを作成するには、次の手順に従います。
 
 1. 管理者は **[!UICONTROL ツール]**/**[!UICONTROL Assets]**/**[!UICONTROL 処理プロファイル]**/**[!UICONTROL 作成]** にアクセスします。
 1. 処理プロファイル ページで「**[!UICONTROL カスタム]**」タブをクリックし、「**[!UICONTROL 新規追加]**」をクリックします。
