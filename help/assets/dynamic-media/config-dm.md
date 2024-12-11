@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Configuration,Dynamic Media
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
-workflow-type: ht
-source-wordcount: '3811'
-ht-degree: 100%
+source-git-commit: 45eecefbb39476671e90218cd502e0242172c1a1
+workflow-type: tm+mt
+source-wordcount: '3625'
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 {{work-with-dynamic-media}}
 
-開発、ステージング、実稼動など、様々な環境で Adobe Experience Manager を使用する場合は、環境ごとに Dynamic Media Cloud Services を設定します。
+開発、ステージング、実稼動など、様々な環境でAdobe Experience Manager as a Cloud Serviceを使用する場合は、環境ごとにDynamic MediaのCloud Serviceを行います。
 
 また、[Dynamic Media の会社エイリアスアカウントの設定](/help/assets/dynamic-media/dm-alias-account.md)も参照してください。
 
@@ -200,32 +200,35 @@ Dynamic Media のセットアップと設定をさらにカスタマイズした
 
 -->
 
-### （オプション）Dynamic Media でのアクセス制御リスト権限の有効化 {#optional-enable-acl}
+<!-- Removed as per CQDOC-20701 - May need to revisit and update. In Adobe Experience Manager (AEM) as a Cloud Service, enabling Access Control List (ACL) permissions for Dynamic Media requires a different approach compared to on-premise versions (which was described below), as direct editing of OSGi configurations via the UI is not supported. Not sure how this is done now. For example, you can manage ACLs using tools like the Netcentric Access Control Tool (AC Tool), which simplifies the specification and deployment of complex ACLs in AEM but I doubt that's the recommended method.
 
-AEM で Dynamic Media を実行すると、現在、PlatformServerServlet の ACL（アクセス制御リスト）権限を確認せずに、`/is/image` リクエストをセキュアプレビュー画像サーバー側に転送します。ただし、ACL 権限を&#x200B;_有効にする_&#x200B;ことはできます。これにより、許可された `/is/image` リクエストが転送されます。 アセットへのアクセスを許可されていないユーザーには、「403 - Forbidden」エラーが表示されます。
+### (Optional) Enable Access Control List permissions in Dynamic Media {#optional-enable-acl}
 
-**Dynamic Media で ACL 権限を有効にする手順は次のとおりです。**
+When you run Dynamic Media on AEM as a Cloud Service, it currently forwards `/is/image` requests to Secure Preview Image Serving without checking ACL (Access Control List) permissions on the PlatformServerServlet. You can, however, _enable_ ACL permissions. Doing so forwards the authorized `/is/image` requests. If a user is not authorized to access the asset, a "403 - Forbidden" error is displayed.
 
-1. Experience Manager から、**[!UICONTROL ツール]**／**[!UICONTROL 操作]**／**[!UICONTROL Web コンソール]**&#x200B;に移動します。
+**To enable Access Control List permissions in Dynamic Media on AEM as a Cloud Service:**
+
+1. From Adobe Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
-1. 新しいブラウザータブが開き、**[!UICONTROL Adobe Experience Manager Web コンソール設定]**&#x200B;ページが表示されます。
+1. A new browser tab opens to the **[!UICONTROL Adobe Experience Manager Web Console Configuration]** page.
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
-1. ページで、_Adobe CQ Scene7 PlatformServer_ という名前までスクロールします。
+1. On the page, scroll to the name _Adobe CQ Scene7 PlatformServer_.
 
-1. 名前の右側にある鉛筆アイコン（**[!UICONTROL 設定値を編集]**）を選択します。
+1. To the right of the name, select the pencil icon (**[!UICONTROL Edit the configuration values]**).
 
-1. **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** ページで、次の 2 つの設定のチェックボックスをオンにします。
+1. On the **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** page, select the check box for the following two settings:
 
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - この設定を有効にすると、保存する権限の結果が 2 分間（デフォルト）キャッシュされます。
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` - この設定を有効にすると、Dynamic Media 画像サーバーを介してアセットをプレビューする際のユーザーのアクセスを検証します。
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` &ndash; When enabled, this setting caches permission results for two minutes (default) to save.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` &ndash; When enabled, this setting validates a user's access while they preview assets by way of Dynamic Media Image Server.
 
-   ![Dynamic Media - Scene7 モードでアクセス制御リスト設定を有効にする](/help/assets/dynamic-media/assets/acl.png)
+   ![Enable Access Control List settings in Dynamic Media - Scene7 mode](/help/assets/dynamic-media/assets/acl.png)
 
-1. ページの右下隅付近にある「**[!UICONTROL 保存]**」を選択します。
+1. Near the lower-right corner of the page, select **[!UICONTROL Save]**.
+-->
 
 ### （オプション）Dynamic Media 設定のセットアップと設定 {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
