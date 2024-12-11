@@ -4,10 +4,10 @@ description: ユニバーサルエディターへのアクセス権を取得す�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
+source-git-commit: 8357caf2b0d396f6a1bd7b6160d6b48d8d6c026c
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 96%
+source-wordcount: '627'
+ht-degree: 87%
 
 ---
 
@@ -20,11 +20,21 @@ ht-degree: 96%
 >
 >すぐに例を確認したい場合は、[GitHub のユニバーサルエディターサンプルアプリ](https://github.com/adobe/universal-editor-sample-editable-app)を参照してください。
 
-ユニバーサルエディターはどのソースからもコンテンツを編集できますが、このドキュメントではAEM アプリを例として使用します。 このドキュメントでは、これらの手順を説明します。
+ユニバーサルエディターは任意のソースからコンテンツを編集できますが、このドキュメントでは AEM アプリを例として使用します。このドキュメントでは、これらの手順を説明します。
 
 ## ページの実装 {#instrument-page}
 
-ユニバーサルエディターサービスは、編集中のアプリのコンテンツに対して正しいバックエンドシステムを識別して利用するために、[統一リソース名（URN）](https://ja.wikipedia.org/wiki/Uniform_Resource_Name)を要求します。したがって、コンテンツをコンテンツリソースにマッピングし直すには、URN スキーマが必要です。
+ユニバーサルエディターでページをレンダリングして編集するには、JavaScript ライブラリが必要です。
+
+さらに、ユニバーサルエディターサービスは、編集中のアプリのコンテンツに対して正しいバックエンドシステムを識別して利用するために ](https://ja.wikipedia.org/wiki/Uniform_Resource_Name)[URN （Uniform Resource Name）を要求します。 したがって、コンテンツをコンテンツリソースにマッピングし直すには、URN スキーマが必要です。
+
+### ユニバーサルエディターの CORS ライブラリを含める {#cors-library}
+
+ユニバーサルエディターがアプリに接続するには、アプリにユニバーサルエディター CORS ライブラリが含まれている必要があります。 アプリに次のスクリプトを追加します。
+
+```html
+ <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
+```
 
 ### 接続の作成 {#connections}
 
