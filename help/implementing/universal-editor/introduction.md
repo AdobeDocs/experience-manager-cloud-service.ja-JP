@@ -4,10 +4,10 @@ description: ユニバーサルエディターを使用して、ヘッドレス�
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: b8d56873b7bc23295fefc35a826b8047c626649e
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 94%
+source-wordcount: '992'
+ht-degree: 98%
 
 ---
 
@@ -86,12 +86,11 @@ ht-degree: 94%
 
 ユニバーサルエディターを探索し、独自のプロジェクトへの実装を進める際には、次の制限事項に留意してください。
 
-* 1 ページ上の実装として参照するAEM リソースは、25 個（コンテンツフラグメント、ページ、エクスペリエンスフラグメント、Assetsなど）以内にしてください。
-* AEM as a Cloud Service は、サポートされている唯一の AEM バックエンドです。
-   * [AEM 6.5 のサポートは、早期導入プログラムの一環として利用できます。](/help/release-notes/universal-editor/current.md#early-adoption)
+* 単一ページの実装として参照できる AEM リソース（コンテンツフラグメント、ページ、エクスペリエンスフラグメント、アセットなど）は 25 個以下にする必要があります。
+* サポートされているAEM バックエンドはAEM as a Cloud Serviceと ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)0}AEM 6.5} のみです。[
 * AEM as a Cloud Service リリース `2023.8.13099` 以降が必要です。
 * コンテンツ作成者は、独自の Experience Cloud アカウントを持つ必要があります。
-* AEMの一部として、ユニバーサルエディターはAEMと同じデスクトップブラウザーをサポートします。
+* AEM の一部として、ユニバーサルエディターは AEM と同じデスクトップブラウザーをサポートします。
    * これらのブラウザーのモバイルバージョンはサポートされていません。
 
 {{ue-ip-allow-lists}}
