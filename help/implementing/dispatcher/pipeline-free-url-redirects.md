@@ -4,10 +4,10 @@ description: Git パイプラインまたは Cloud Manager パイプラインに
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: 7968aa15df2a592efb41af228ee79e8c8d4e218b
+source-git-commit: 41d610728fe92b07db722694432653cf7f03ce9c
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 82%
+ht-degree: 78%
 
 ---
 
@@ -25,19 +25,19 @@ AEM as a Cloud Service では、クライアントサイドリダイレクトを
 
 * リダイレクトの管理をビジネスユーザーが担当し、ソース管理にファイルの変更をコミットするために必要なアクセス権や、Cloud Manager web 層設定パイプラインを実行する機能を持っていない場合。
 * リダイレクトの件数が数件から数万件に及ぶ場合。
-* カスタムプロジェクトとして作成する、または [ACS Commons 書き換えマップマネージャー](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)を使用して作成するユーザーインターフェイスのオプションが必要な場合。
+* カスタムプロジェクトとして作成するか、[ACS Commons リダイレクトマップマネージャ ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) を使用して作成するユーザーインターフェイスのオプションが必要な場合。
 
 この機能のコアとなるのは、AEM Apache／Dispatcher が、公開リポジトリ内の指定した場所に配置された 1 つ以上の書き換えマップファイルを読み込む（または再読み込みする）機能です。ファイルがそこに到達する仕組みはこの機能の範囲外ですが、次のいずれかの方法を検討可能であると明記しておくことが重要です。
 
 * 書き換えマップをアセットとしてオーサーユーザーインターフェイスに取り込み、公開します。
-* [ACS Commons 書き換えマップマネージャ ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) （[ 少なくとも 6.7.0 バージョン以降 ](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)）をインストールします。このマネージャには、URL マッピングを管理するユーザーインターフェイスが含まれており、書き換えマップファイルを公開することもできます。
+* [ACS Commons リダイレクトマップマネージャー ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) （[ 少なくとも 6.7.0 バージョン以降 ](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)）をインストールする場合。このマネージャーには、URL マッピングを管理するユーザーインターフェイスが含まれており、書き換えマップファイルを公開することもできます。
 * カスタムアプリケーションを作成することで、完全な柔軟性を実現します。例えば、URL マッピングを管理するユーザーインターフェイスまたはコマンドラインインターフェイス、あるいは書き換えマップをアップロードするフォームを使用し、その後 AEM API を使用して書き換えマップファイルを公開します。
 
 >[!NOTE]
 > この機能には、AEM バージョン **18311 以降**&#x200B;が必要です。
 
 >[!NOTE]
-> この機能で書き換えマップマネージャを使用するには、ACS Commons バージョン **6.7.0 以降** が必要です。
+> この機能でリダイレクトマップマネージャを使用するには、ACS Commons バージョン **6.7.0 以降** が必要です。
 
 ## 書き換えマップ {#rewrite-map}
 
