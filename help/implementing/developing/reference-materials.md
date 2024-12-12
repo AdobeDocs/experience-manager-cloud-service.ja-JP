@@ -4,9 +4,9 @@ description: AEM には、デジタルエクスペリエンスプロジェクト
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7c2d2fc7b37d70bee4764921a138af6379401064
-workflow-type: ht
-source-wordcount: '635'
+source-git-commit: 4182374ea9d603ed53e75511d34fdfcf69829200
+workflow-type: tm+mt
+source-wordcount: '660'
 ht-degree: 100%
 
 ---
@@ -70,12 +70,17 @@ AEM では、カスタマイズ可能なコンポーネントとコンテンツ�
 | [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja) | AEM で Web サイトの開発時間を短縮しメンテナンスコストを削減するための、標準化された Web コンテンツ管理（WCM）コンポーネント |
 | [JSON エクスポーター](/help/implementing/developing/components/json-exporter.md) | 任意の AEM ページのコンテンツを JSON データモデル形式で配信します |
 | [コンポーネントの JSON 書き出しの有効化](/help/implementing/developing/components/enabling-json-exporter.md) | モデラーフレームワークに基づいてコンポーネントコンテンツの JSON 書き出しを生成します |
-| [Assets API](/help/assets/mac-api-assets.md) | バイナリ、メタデータ、レンディション、コメントなどのアセットに対して作成、読み出し、更新、削除（CRUD）操作を実行できるようになります。AEM Assets HTTP API を参照してください |
-| [コンテンツフラグメント HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | CRUD 操作を使用して HTTP API でコンテンツフラグメントのコンテンツに直接アクセスします |
-| [コンテンツフラグメント GraphQL API](/help/headless/graphql-api/content-fragments.md) | ヘッドレス CMS 実装の JavaScript クライアントにコンテンツフラグメントを効率的に配信できるようになります |
-| [コンテンツフラグメントアセット HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ja) | サポートされている HTTP アセットリクエストの厳密な形式 |
 | [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) | コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI |
 | [コンテンツフラグメント配信用の AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) | AEM Edge Delivery Services 上の HTTP REST API で、コンテンツフラグメントから構造化コンテンツを JSON 形式で配信するように設計されています。 |
+| [コンテンツフラグメント GraphQL API](/help/headless/graphql-api/content-fragments.md) | ヘッドレス CMS 実装の JavaScript クライアントにコンテンツフラグメントを効率的に配信できるようになります |
+|  |  |
+| [Assets API](/help/assets/mac-api-assets.md) | バイナリ、メタデータ、レンディション、コメントなどのアセットに対して作成、読み出し、更新、削除（CRUD）操作を実行できるようになります。AEM Assets HTTP API を参照してください |
+| [コンテンツフラグメント HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | CRUD 操作を使用して HTTP API でコンテンツフラグメントのコンテンツに直接アクセスします |
+| [コンテンツフラグメントアセット HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ja) | サポートされている HTTP アセットリクエストの厳密な形式 |
+
+>[!NOTE]
+>
+>使用可能な様々な API の概要と、関連する概念のいくつかの比較について詳しくは、[構造化コンテンツの配信と管理用の AEM API](/help/headless/apis-headless-and-content-fragments.md) を参照してください。
 
 ## SPA 固有の API {#spa-apis}
 
