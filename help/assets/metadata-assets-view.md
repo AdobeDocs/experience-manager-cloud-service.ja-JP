@@ -5,7 +5,7 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 1252814d99927cb8fff81b66f6e7caca92bb6e9a
+source-git-commit: fbf7321e0fc70627cc80d50d99ef5de4baf03e9b
 workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 94%
@@ -223,3 +223,4 @@ How can one search based strictly on the metadata. Similar to AEM Assets GQL que
 >
 >* [Search assets](search.md).
 -->
+
