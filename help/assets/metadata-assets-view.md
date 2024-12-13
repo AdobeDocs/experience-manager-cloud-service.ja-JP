@@ -5,16 +5,16 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 1252814d99927cb8fff81b66f6e7caca92bb6e9a
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 99%
+source-wordcount: '1904'
+ht-degree: 94%
 
 ---
 
 # アセットビューのメタデータ {#metadata}
 
-| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 メタデータとは、データに関するデータまたは説明のことです。例えば、アセットとしての画像には、撮影されたカメラに関する情報や著作権情報などを含めることができます。こうした情報が画像のメタデータです。メタデータは、効率的なアセット管理を行うために重要です。メタデータは、対象のアセットに使用できるすべてのデータのコレクションですが、必ずしもそのアセットに含まれているとは限りません。
@@ -170,6 +170,19 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 1. フォルダーを選択し、「**[!UICONTROL 削除]**」をクリックします。また、リストから複数のフォルダーを選択することもできます。
 
 また、フォルダーの詳細ページに移動し、「**[!UICONTROL メタデータフォーム]**」フィールドから「**[!UICONTROL システムマッピングされたメタデータフォーム]**」を選択して、割り当てられたメタデータフォームをフォルダーから削除することもできます。
+
+### メタデータフォームでのリンクコンポーネントの操作 {#link-component-metadata-form}
+
+リンクコンポーネントを使用すると、ストレージリンク、著作権情報、問い合わせフォームなどの外部 URL を有効にすることができます。 メタデータフォームでリンクコンポーネントを使用するには、[ メタデータフォームを設定 ](#metadata-forms) する必要があります。
+
+メタデータフォームでリンクコンポーネントを使用するには、次の手順に従います。
+
+1. アセットの詳細ページに移動し、「**[!UICONTROL URL をリンク]**」に移動します。
+1. 選択したアセットのリダイレクトに使用する URL を追加します。
+1. **[!UICONTROL リンクを追加]** をクリックします。 次のいずれかのアクションを実行します。
+   * ![ コピーアイコン ](assets/do-not-localize/copy.svg) をクリックして、URL をコピーします。
+   * ![ 編集アイコン ](assets/do-not-localize/edit.svg) をクリックして、URL を編集します。
+1. 「**[!UICONTROL 保存]**」をクリックして、変更を保存します。
 
 ## 次の手順 {#next-steps}
 
