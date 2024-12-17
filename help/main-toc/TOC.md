@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bd502ff77faea5d6e7bbe6d39c0c22cb54e3c165
+source-git-commit: 4e9d49aef85f79e99894153237cc58a75458b1e5
 workflow-type: tm+mt
 source-wordcount: '5929'
 ht-degree: 99%
@@ -479,6 +479,7 @@ ht-degree: 99%
    + [Assets as a Cloud Service Ultimate の有効化](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [Assets 共同作業者ユーザー](/help/assets/assets-collaborator-users.md)
+   + [AEM AssetsとEdge Delivery Services用コンテンツのオーサリングの統合](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + デジタルアセットの管理 {#manage}
       + マイクロフロントエンドのアセットセレクター {#asset-selector}
          + [アセットセレクターの概要](/help/assets/overview-asset-selector.md)
@@ -649,7 +650,6 @@ ht-degree: 99%
       + [コンテンツ資格情報](/help/assets/content-credentials.md)
       + [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
       + [AEM Assets ビュー UI 拡張機能](/help/assets/aem-assets-view-ui-extensibility.md)
-      + [AEM AssetsとEdge Delivery Services用コンテンツのオーサリングの統合](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + コンテンツハブ {#content-hub}
       + [概要](/help/assets/product-overview.md)
       + [コンテンツハブのデプロイ](/help/assets/deploy-content-hub.md)
