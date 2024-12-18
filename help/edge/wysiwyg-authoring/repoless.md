@@ -3,13 +3,13 @@ title: サイト間でのコードの再利用
 description: ほぼ同じように見えて動作する類似サイトが多数あるものの、コンテンツが異なる場合は、レポートモデルで複数のサイト間でコードを共有する方法を説明します。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: e25e21984ebadde7076d95c6051b8bfca5b2ce03
+exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
+source-git-commit: 7b37f3d387f0200531fe12cde649b978f98d5d49
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
-
 
 # サイト間でのコードの再利用 {#repoless}
 
@@ -45,7 +45,7 @@ AEMは、複数の GitHub リポジトリを作成し、各サイトを専用の
 
 1. [アクセストークンの取得](#access-token)
 1. [設定サービスの設定](#config-service)
-1. [アクセス制御の設定](#access-control)
+1. [サイト設定とテクニカルアカウントの追加](#access-control)
 1. [AEM設定を更新](#update-aem)
 1. [サイトの認証](#authenticate-site)
 
@@ -126,9 +126,9 @@ curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
 
 パブリック設定が作成されたら、`https://main--<your-aem-project>--<your-github-org>.aem.page/config.json` のような URL を使用してアクセスし、設定を検証できます。
 
-### アクセス制御の設定 {#access-control}
+### サイト設定のパスマッピングの追加とテクニカルアカウントの設定 {#access-control}
 
-アクセス制御を設定するには、テクニカルアカウントを提供する必要があります。
+サイト設定を作成し、パスマッピングに追加する必要があります。
 
 1. サイトのルートに新しいページを作成し、「[**設定** テンプレートを選択します。](/help/edge/wysiwyg-authoring/tabular-data.md#other)
    * 設定は空のままにして、事前定義済みの `key` と `value` 列のみを追加できます。 作成するだけで済みます。
@@ -156,28 +156,31 @@ curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
    ```text
    curl 'https://main--<your-aem-project>--<your-github-org>.aem.live/config.json'
    ```
-1. ブラウザーで、次のリンクに応答してテクニカルアカウントを取得できるようになりました。
+
+サイト設定がマッピングされたら、公開権限を持つテクニカルアカウントを定義することで、アクセス制御を設定できます。
+
+1. ブラウザーで、次のリンクの応答にあるテクニカルアカウントを取得します。
 
    ```text
    https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
    ```
 
-応答は次のようになります。
+1. 応答は次のようになります。
 
-```json
-{
-  "total": 1,
-  "offset": 0,
-  "limit": 1,
-  "data": [
-    {
-      "key": "admin.role.publish",
-      "value": "<tech-account-id>@techacct.adobe.com"
-    }
-  ],
-  ":type": "sheet"
-}
-```
+   ```json
+   {
+     "total": 1,
+     "offset": 0,
+     "limit": 1,
+     "data": [
+       {
+         "key": "admin.role.publish",
+         "value": "<tech-account-id>@techacct.adobe.com"
+       }
+     ],
+     ":type": "sheet"
+   }
+   ```
 
 1. 次のような cURL コマンドを使用して、設定にテクニカルアカウントを設定します。
 
