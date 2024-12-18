@@ -2,9 +2,9 @@
 title: AEM AssetsとEdge Delivery Services用コンテンツのオーサリングの統合
 description: AEM AssetsをEdge Delivery Servicesと統合する方法について説明します。 この統合により、AEM AssetsとMicrosoft Word およびGoogle ドキュメントを統合したり、AEM Assetsと Universal Editor を統合したり、Dynamic Mediaと OpenAPI 機能と Universal Editor を統合したり、Dynamic Mediaと OpenAPI 機能をMicrosoft Word およびGoogle ドキュメントと統合したりできます。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: def807c2bb1b2fe337879b3abe2c0a5d1b5f1dea
+source-git-commit: 9e7701152e1da4afc73d3d5ba271b04df2054397
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -60,11 +60,11 @@ OpenAPI 機能を備えた DM を使用して配信されたアセットを使�
 * Open API 機能を備えたAssetsが有効になっているDynamic MediaCloud Service環境に対する使用権限。
 * Dynamic Media ライセンス。
 * 画像アセットのコピー参照が有効になっているAEM Assets サイドキックプラグインが有効になりました。 詳しくは、ドキュメントベースのオーサリングでは [this](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) を、ユニバーサルエディターベースのオーサリングでは [this](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) を参照してください。
-* 承認済みのAssets。 承認済みのAssetsは、Assets Cloud Serviceのバックエンドまたは UI のアクションを介して `dam:status=Approved` ールされています。
+* 承認済みのAssets。 承認済みのアセットは、Assets Cloud Serviceのバックエンドまたは UI のアクションを介して `dam:status=Approved` 認されます。
 
 ### Dynamic Mediaを使用して配信されるアセットを OpenAPI 機能と共に使用する{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
 
-コンテンツのオーサリング中に、Dynamic Mediaを使用して OpenAPI 機能で配信されるアセットを使用するには、以下を参照してください。
+コンテンツのオーサリング中に、Dynamic Mediaを使用して OpenAPI 機能とともに配信されるアセットを使用するには、以下を参照してください。
 
 * [ 画像参照の使用 ](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
 * [ ビデオリファレンスの使用 ](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
