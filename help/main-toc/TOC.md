@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4e9d49aef85f79e99894153237cc58a75458b1e5
+source-git-commit: 9388187a14129420d17d5ccdadd20313f123d870
 workflow-type: tm+mt
-source-wordcount: '5929'
+source-wordcount: '5938'
 ht-degree: 99%
 
 ---
@@ -641,7 +641,7 @@ ht-degree: 99%
       + [レンディションの表示と管理](/help/assets/renditions.md)
       + [アセットメタデータの管理](/help/assets/metadata-assets-view.md)
       + [一括名前変更](/help/assets/bulk-rename-assets-view.md)
-      + [メタデータの一括編集](/help/assets/bulk-metadata-edit.md)
+      + [一括メタデータ編集](/help/assets/bulk-metadata-edit.md)
       + [アセットを共有する](/help/assets/share-links-for-assets-view.md)
       + [コレクションを管理](/help/assets/manage-collections-assets-view.md)
       + [アセット、フォルダー、コレクションの監視](/help/assets/manage-notifications-assets-view.md)
@@ -755,7 +755,8 @@ ht-degree: 99%
             + [アダプティブフォームの REST エンドポイント送信アクションへの送信を設定する](/help/forms/configure-submit-action-restpoint.md)
             + [アダプティブフォームのメール送信アクションの送信を設定する](/help/forms/configure-submit-action-send-email.md)
             + [アダプティブフォームでの Google reCAPTCHA の使用](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [アダプティブフォームコアコンポーネントでの hCaptcha の使用](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [アダプティブフォームのコアコンポーネントでの Captcha の使用](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [アダプティブフォームのコアコンポーネントでのターンスタイル Captcha の使用](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [アダプティブフォームにカスタムエラーハンドラーの追加](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [コアコンポーネントに基づくアダプティブフォームのロケールの追加](/help/forms/supporting-new-language-localization-core-components.md)
             + [アダプティブフォームの JSON スキーマのデザイン（コアコンポーネント）](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
