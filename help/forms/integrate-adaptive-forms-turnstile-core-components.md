@@ -4,7 +4,8 @@ description: Turnstile サービスでフォームのセキュリティを簡単
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 819c376671ee141e1bcf885a22f161b327ce2c15
+exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
+source-git-commit: 709b3381eedefe7619cb961f345f202cadf512f3
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 24%
@@ -91,13 +92,13 @@ AEM Formsを Turnstile サービスと統合するには、次の手順を実行
    * **[!UICONTROL 設定 ]:** Turnstile Captcha サービス用に設定されたクラウド設定を選択します。
      >[!NOTE]
      >* 同様の目的のために、環境内に複数のクラウド設定を持つことができます。 そのため、サービスは慎重に選択してください。サービスがリストされない場合は、設定コンテナを作成してAEM Forms環境を Turnstile サービスと接続する方法について、[Turnstile の設定 ](#steps-to-configure-hcaptcha) の節を参照してください。
+
    * **[!UICONTROL 検証 ]:** Captcha 検証をエラーメッセージの形式で提供します。
+
       * **エラーメッセージ：** Captcha 送信が失敗した場合にユーザーに表示するエラーメッセージを指定します。
         >[!NOTE]
         >* エラーメッセージが表示されるのは、クライアント側の CAPTCHA が入力された場合のみです。
-
-
-1. 「**[!UICONTROL 完了]**」を選択します。
+1. 「**[!UICONTROL 完了]**」をクリックします。
 
 
 現在は、フォームの入力者が Turnstile サービスによって発生する課題を正常にクリアした正当なフォームのみがフォーム送信に許可されています。
