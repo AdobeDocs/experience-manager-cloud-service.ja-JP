@@ -5,7 +5,7 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
-source-git-commit: 709b3381eedefe7619cb961f345f202cadf512f3
+source-git-commit: eba6aec89e645e443ba6f4ca5aff66a39288ff1e
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 24%
@@ -98,6 +98,7 @@ AEM Formsを Turnstile サービスと統合するには、次の手順を実行
       * **エラーメッセージ：** Captcha 送信が失敗した場合にユーザーに表示するエラーメッセージを指定します。
         >[!NOTE]
         >* エラーメッセージが表示されるのは、クライアント側の CAPTCHA が入力された場合のみです。
+
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
 
