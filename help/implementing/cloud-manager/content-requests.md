@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+source-git-commit: 18d19acfedce57a3ae52020d36785689b715ed08
 workflow-type: tm+mt
-source-wordcount: '1276'
-ht-degree: 98%
+source-wordcount: '1249'
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 ## はじめに {#introduction}
 
-コンテンツリクエストとは、AEM Sites に対して行われるリクエストを指します。これには、Edge Delivery Services や顧客提供のキャッシュシステム（コンテンツ配信ネットワークなど）に関連するリクエストが含まれます。これらのリクエストは、ページビュー（ページやエクスペリエンスフラグメントなど）を通じて HTML 形式で、またはヘッドレス方式で API 呼び出しを通じて JSON 形式でコンテンツまたはデータを配信します。コンテンツリクエストは、ページビューまたは 5 回の API 呼び出しとしてカウントされ、コンテンツリクエストを受信する最初のキャッシュシステムの入力時に測定されます。コンテンツリクエストをカウントする目的で、特定の HTTP リクエストが含められたり除外されたりします。含まれる HTTP リクエストと除外される HTTP リクエストの完全なリスト、およびその技術的な定義については、ドキュメントを参照してください。
+コンテンツリクエストとは、AEM Sites に対して行われるリクエストを指します。これには、Edge Delivery Services や顧客提供のキャッシュシステム（コンテンツ配信ネットワークなど）に関連するリクエストが含まれます。これらのリクエストは、ページビュー（ページやエクスペリエンスフラグメントなど）を通じて HTML 形式で、またはヘッドレス方式で API 呼び出しを通じて JSON 形式でコンテンツまたはデータを配信します。コンテンツリクエストは、ページビューまたは 5 回の API 呼び出しとしてカウントされ、コンテンツリクエストを受信する最初のキャッシュシステムの入力時に測定されます。コンテンツリクエストをカウントする目的で、特定の HTTP リクエストが含められたり除外されたりします。含まれる HTTP リクエストと除外される HTTP リクエストの完全なリストおよびその技術的な定義については、ドキュメントを参照してください。
 
 ## Cloud Service コンテンツリクエストについて {#understanding-cloud-service-content-requests}
 
@@ -79,4 +79,3 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 | コマース統合フレームワーク呼び出しの除外 | 除外済み | 二重カウントを避けるために、AEM に対して行われたリクエストで、Commerce Integration Framework に転送されます（URL は `/api/graphql` で始まります）。これらは Cloud Service の請求対象ではありません。 |
 | `manifest.json` を除外 | 除外済み | マニフェストは API 呼び出しではありません。ここでは、デスクトップまたは携帯電話に web サイトをインストールする方法に関する情報を提供します。アドビは `/etc.clientlibs/*/manifest.json` に対する JSON リクエストをカウントするべきではありません |
 | `favicon.ico` を除外 | 除外済み | 返されるコンテンツを HTML や JSON にしないでください。ただし、SAML 認証フローなどの特定のシナリオでは、favicon が HTML として返されることが確認されています。その結果、favicon はカウントから明示的に除外されます。 |
-| 別のバックエンドへの CDN プロキシ | 除外済み | [CDN 接触チャネルセレクター技術](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors)を使用して AEM 以外の別のバックエンドにルーティングしたリクエストは、AEM にヒットしないので除外されます。 |
