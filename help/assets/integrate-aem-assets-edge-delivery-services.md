@@ -2,7 +2,7 @@
 title: AEM Assets と Edge Delivery Services 向けコンテンツのオーサリングの統合
 description: AEM AssetsをEdge Delivery Servicesと統合する方法について説明します。 この統合により、AEM AssetsとMicrosoft Word およびGoogle ドキュメントを統合したり、AEM Assetsと Universal Editor を統合したり、Dynamic Mediaと OpenAPI 機能と Universal Editor を統合したり、Dynamic Mediaと OpenAPI 機能をMicrosoft Word およびGoogle ドキュメントと統合したりできます。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 3a758af4d17d761b8e3e4a77ea3cda6a4b6d0bb7
+source-git-commit: b908cb1e8d9c7814f4b23142aee589af74047cd8
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 3%
@@ -84,4 +84,3 @@ AEM Assetsと統合するためのユニバーサルエディターを設定し�
 
 * ユニバーサルエディターにカスタムアセットピッカー機能を追加するには、[Edge Delivery サイトの設定 ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) を参照してください。 カスタムのアセットピッカーを使用すると、ユニバーサルエディターのコンテンツに直接アセットを挿入できます。
 * ユニバーサルエディターでのオーサリング中にAEM Assetsにアクセスしてアセットを挿入する方法については、[ 拡張機能の概要 ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) を参照してください。
-
