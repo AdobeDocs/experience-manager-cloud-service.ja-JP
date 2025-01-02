@@ -5,9 +5,9 @@ exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: d82a88e5b7337e9d81a91e812f6a90237e80b1ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3160'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -163,9 +163,9 @@ X-Frame オプションの `sameorigin` は、フレーム内での AEM ペー�
 
 >[!NOTE]
 >
->パッケージは非推奨となったので、以前はJavaScript ライブラリ（`<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>` またはnpmjs.com経由）を含めることをお勧めしていた方法は、推奨されなくなりました。
+>`<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>` または npmjs.com 経由での、以前推奨されていた JavaScript ライブラリを組み込む方法は、パッケージが非推奨（廃止予定）になったので、推奨されなくなりました。
 >
->アプリがまだ非推奨パッケージを使用している場合、ユニバーサルエディターの UI には、古いパッケージが検出されたことを示す警告が表示されます。
+>アプリがまだ非推奨（廃止予定）のパッケージを使用している場合、ユニバーサルエディターの UI には、古いパッケージが検出されたことを示す警告が表示されます。
 
 ## 変更を保持する接続の定義 {#connection}
 

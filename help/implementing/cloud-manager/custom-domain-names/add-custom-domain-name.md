@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: b2852673ad313e5ea6be6dc0ed185d60a46fedeb
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1020'
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 
 使用中のドメインを検証するには、CNAME を追加して検証する必要があります。
 
-`CNAME` レコードタイプまたは `A` レコードタイプは、プロビジョニングされると、ドメインのすべてのインターネットトラフィックをポインティングしている場所にルーティングします。 その場所がトラフィックを処理するようにプロビジョニングされていない場合は、機能が一時的に停止します。テストされていない場合は、コンテンツにエラーがある可能性があります。この手順が常にテストが完了し運用開始の準備が整った後に実行されるのは、このためです。
+`CNAME` レコードタイプまたは `A` レコードタイプがプロビジョニングされると、ドメインのすべてのインターネットトラフィックが、そのレコードが指している場所にルーティングされます。その場所がトラフィックを処理するようにプロビジョニングされていない場合は、機能が一時的に停止します。テストされていない場合は、コンテンツにエラーがある可能性があります。この手順が常にテストが完了し運用開始の準備が整った後に実行されるのは、このためです。
 
 これらの設定を行うには、カスタムドメイン名が Cloud Manager ドメイン名を指すように、`CNAME` または Apex レコードを設定する必要があるかどうかを判断します。このドキュメントの後の節は、DNS 設定に適したレコードタイプを判断するうえで役に立ちます。
 
@@ -130,7 +130,7 @@ apex ドメインは、サブドメインを含まないカスタムドメイン
 
 >[!TIP]
 >
->*CNAME レコード* または *A レコード* は、管理 DNS サーバーで設定して、時間を節約できます。
+>*CNAME レコード*&#x200B;または *A レコード*&#x200B;を管理する DNS サーバーに設定すると、時間を節約できます。
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)

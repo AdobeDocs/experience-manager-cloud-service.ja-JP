@@ -6,9 +6,9 @@ feature: Configuration,Dynamic Media
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 source-git-commit: 45eecefbb39476671e90218cd502e0242172c1a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3625'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 {{work-with-dynamic-media}}
 
-開発、ステージング、実稼動など、様々な環境でAdobe Experience Manager as a Cloud Serviceを使用する場合は、環境ごとにDynamic MediaのCloud Serviceを行います。
+開発、ステージング、実稼動など、様々な環境で Adobe Experience Manager as a Cloud Service を使用する場合は、環境ごとに Dynamic Media Cloud Services を設定します。
 
 また、[Dynamic Media の会社エイリアスアカウントの設定](/help/assets/dynamic-media/dm-alias-account.md)も参照してください。
 

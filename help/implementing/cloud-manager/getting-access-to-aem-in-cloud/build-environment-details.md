@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 3bc9ec12de604818f6be1c0717566a5f16c6a7b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '777'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
    * アドビでは、ユーザーに [HTTP ではなく HTTPS を使用するように Maven リポジトリを更新](#https-maven)することをお勧めします。
 * <!-- OLD --> インストールされる Java バージョンは、Oracle JDK 11.0.22 と Oracle JDK 8u401 です。
 <!-- NEW but needed to be removed 12/5/24 * The Java versions installed are Oracle JDK 11.0.22, Oracle JDK 17.0.10, and Oracle JDK 21.0.4. -->
-<!-- OLD --> * **重要：** デフォルトでは、JAVA_HOME 環境変数は `/usr/lib/jvm/jdk1.8.0_401` に設定されています。これには、OracleJDK 8u401 が含まれています。 AEM クラウドプロジェクトで JDK 11 を使用する場合は、このデフォルトを上書きする必要があります。 詳しくは、Maven JDK バージョンの設定の節を参照してください。
+<!-- OLD --> * **重要：**&#x200B;デフォルトでは、JAVA_HOME 環境変数は `/usr/lib/jvm/jdk1.8.0_401` に設定されています。これには、Oracle JDK 8u401 が含まれています。AEM Cloud プロジェクトで JDK 11 を使用するには、このデフォルトを上書きする必要があります。詳しくは、Maven JDK バージョンの設定の節を参照してください。
 <!-- NEW but needed to be removed 12/5/24 * **IMPORTANT:** By default, the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_401`, which contains Oracle JDK 8u401. ***This default should be overridden for AEM Cloud Projects to use JDK 21 (preferred), 17, or 11***. See the [Setting the Maven JDK Version](#alternate-maven-jdk-version) section for more details. -->
 * 必要に応じてインストールされる追加のシステムパッケージが、次のようにいくつかあります。
    * `bzip2`
@@ -58,13 +58,13 @@ Cloud Manager [リリース 2023.10.0](/help/implementing/cloud-manager/release-
 
 ### 特定の Java バージョンの使用
 
-Cloud Managerのビルドプロセスでは、デフォルトでOracle 8 JDK を使用してプロジェクトをビルドしますが、AEM Cloud Serviceのお客様は、Maven 実行 JDK バージョンを 11 に設定する必要があります。
+Cloud Manager のビルドプロセスでは、デフォルトで Oracle 8 JDK を使用してプロジェクトを作成しますが、AEM Cloud Service のお客様は Maven 実行 JDK バージョンを 11 に設定する必要があります。
 
 <!-- OLD below -->
 
 #### Maven JDK バージョンの設定
 
-Adobeでは、Maven 実行全体の JDK バージョンを `.cloudmanager/java-version file` で `11` 定することをお勧めします。
+アドビでは、`.cloudmanager/java-version file` で、Maven 実行全体の JDK バージョンを `11` に設定することをお勧めします。
 
 これを行うには、パイプラインで使用される Git リポジトリ分岐に `.cloudmanager/java-version` というファイルを作成します。`11` というテキストのみが含まれるようにファイルを編集します。Cloud Manager は値 `8` も受け入れますが、このバージョンは AEM Cloud Service プロジェクトではサポートされなくなりました。その他の値は無視されます。`11` を指定した場合は、Oracle 11 が使用され、`JAVA_HOME` 環境変数が `/usr/lib/jvm/jdk-11.0.22` に設定されます。
 

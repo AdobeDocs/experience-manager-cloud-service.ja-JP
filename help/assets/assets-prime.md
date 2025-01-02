@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
 source-git-commit: 92faabc50ce4b83ad1015bbbadeac416d66c3b0b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1124'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Assets as a Cloud Service Prime には、次のような様々な主要機能を
 
   >[!NOTE]
   >
-  >回転、切り抜き（手動のみ – スマート切り抜きなし）、反転、サイズ、優先 WebP、高さ、幅、画質、形式、アダプティブビデオストリーミングなどの基本的な画像修飾子にアクセスできる、OpenAPI 機能を持つDynamic Mediaは、Assets Prime でも使用できます。 詳しくは、Adobeアカウントチームにお問い合わせください。
+  >Assets Prime では、回転、切り抜き（手動のみ - スマート切り抜きなし）、反転、サイズ、優先 WebP、高さ、幅、画質、形式、アダプティブビデオストリーミングなどの基本的な画像の修飾子にアクセスできる OpenAPI 機能を備えた Dynamic Media も使用できます。詳しくは、アドビのアカウントチームにお問い合わせください。
 
 1. [新しいプログラムを作成します](/help/journey-onboarding/create-program.md)。
 

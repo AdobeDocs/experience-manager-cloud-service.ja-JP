@@ -7,9 +7,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service の仕組み
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 9388187a14129420d17d5ccdadd20313f123d870
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5938'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -479,7 +479,7 @@ ht-degree: 99%
    + [Assets as a Cloud Service Ultimate の有効化](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [Assets 共同作業者ユーザー](/help/assets/assets-collaborator-users.md)
-   + [AEM AssetsとEdge Delivery Services用コンテンツのオーサリングの統合](/help/assets/integrate-aem-assets-edge-delivery-services.md)
+   + [AEM Assets と Edge Delivery Services 向けコンテンツのオーサリングの統合](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + デジタルアセットの管理 {#manage}
       + マイクロフロントエンドのアセットセレクター {#asset-selector}
          + [アセットセレクターの概要](/help/assets/overview-asset-selector.md)
@@ -640,7 +640,7 @@ ht-degree: 99%
       + [ビデオの編集](/help/assets/edit-videos-assets-view.md)
       + [レンディションの表示と管理](/help/assets/renditions.md)
       + [アセットメタデータの管理](/help/assets/metadata-assets-view.md)
-      + [一括名前変更](/help/assets/bulk-rename-assets-view.md)
+      + [名前を一括変更](/help/assets/bulk-rename-assets-view.md)
       + [一括メタデータ編集](/help/assets/bulk-metadata-edit.md)
       + [アセットを共有する](/help/assets/share-links-for-assets-view.md)
       + [コレクションを管理](/help/assets/manage-collections-assets-view.md)
@@ -755,8 +755,8 @@ ht-degree: 99%
             + [アダプティブフォームの REST エンドポイント送信アクションへの送信を設定する](/help/forms/configure-submit-action-restpoint.md)
             + [アダプティブフォームのメール送信アクションの送信を設定する](/help/forms/configure-submit-action-send-email.md)
             + [アダプティブフォームでの Google reCAPTCHA の使用](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [アダプティブフォームのコアコンポーネントでの Captcha の使用](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-            + [アダプティブフォームのコアコンポーネントでのターンスタイル Captcha の使用](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+            + [アダプティブフォームコアコンポーネントでの hCaptcha の使用](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [アダプティブフォームコアコンポーネントでの Turnstile Captcha の使用](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [アダプティブフォームにカスタムエラーハンドラーの追加](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [コアコンポーネントに基づくアダプティブフォームのロケールの追加](/help/forms/supporting-new-language-localization-core-components.md)
             + [アダプティブフォームの JSON スキーマのデザイン（コアコンポーネント）](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -968,8 +968,8 @@ ht-degree: 99%
       + [DAM アセットを使用したページ](/help/edge/wysiwyg-authoring/dam-assets.md)
       + [WIP Sites 機能](/help/edge/wysiwyg-authoring/wip-features.md)
       + [サイト間でのコードの再利用](/help/edge/wysiwyg-authoring/repoless.md)
-      + [複数サイト管理のレポート](/help/edge/wysiwyg-authoring/repoless-msm.md)
-      + [レポートステージと実稼働環境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+      + [Repoless マルチサイト管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
+      + [Repoless ステージと実稼動環境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
    + ドキュメントベースのオーサリング {#document-authoring}
       + [オーサリング](/help/edge/docs/authoring.md)
       + [一括メタデータ](/help/edge/docs/bulk-metadata.md)

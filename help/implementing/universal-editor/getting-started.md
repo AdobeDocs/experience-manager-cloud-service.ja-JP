@@ -5,9 +5,9 @@ exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 8357caf2b0d396f6a1bd7b6160d6b48d8d6c026c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '627'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 87%
 
 ## ページの実装 {#instrument-page}
 
-ユニバーサルエディターでページをレンダリングして編集するには、JavaScript ライブラリが必要です。
+ユニバーサルエディターでは、エディターでページをレンダリングおよび編集するために JavaScript ライブラリが必要です。
 
-さらに、ユニバーサルエディターサービスは、編集中のアプリのコンテンツに対して正しいバックエンドシステムを識別して利用するために ](https://ja.wikipedia.org/wiki/Uniform_Resource_Name)[URN （Uniform Resource Name）を要求します。 したがって、コンテンツをコンテンツリソースにマッピングし直すには、URN スキーマが必要です。
+さらに、ユニバーサルエディターサービスでは、編集中のアプリ内のコンテンツに適したバックエンドシステムを識別して使用するために、[統一リソース名（URN）](https://ja.wikipedia.org/wiki/Uniform_Resource_Name)が必要です。したがって、コンテンツをコンテンツリソースにマッピングし直すには、URN スキーマが必要です。
 
-### ユニバーサルエディターの CORS ライブラリを含める {#cors-library}
+### ユニバーサルエディター CORS ライブラリを含める {#cors-library}
 
-ユニバーサルエディターがアプリに接続するには、アプリにユニバーサルエディター CORS ライブラリが含まれている必要があります。 アプリに次のスクリプトを追加します。
+ユニバーサルエディターをアプリに接続するには、アプリにユニバーサルエディター CORS ライブラリを含める必要があります。アプリに次のスクリプトを追加します。
 
 ```html
  <script src="https://universal-editor-service.adobe.io/cors.js" async></script>

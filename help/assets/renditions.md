@@ -5,9 +5,9 @@ exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
 source-git-commit: eb5886b5ed6a6f5b52303b4fccf5c266178b36f8
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '664'
+ht-degree: 100%
 
 ---
 
@@ -25,22 +25,22 @@ Dynamic Media 画像プリセットおよびスマート切り抜きレンディ
 ## 静的レンディション {#static-renditions}
 
 静的レンディションは、デジタルアセットの事前生成されたバージョンで、通常はアセットの取り込みまたは変更中に作成されます。これらのレンディションは、web サムネール、レスポンシブデザイン用のモバイルに対応した形式、印刷用の高解像度バージョンなど、特定の目的とプラットフォーム用に最適化され、効率的で一貫したエクスペリエンスを確保します。
-Experience Manager Assetsでの [ 静的レンディションの表示とダウンロード ](#view-and-download-static-renditions) 方法を説明します。
+詳しくは、Experience Manager Assets で[静的レンディションの表示とダウンロード](#view-and-download-static-renditions)を行う方法を参照してください。
 
 ### 静的レンディションの表示とダウンロード{#view-and-download-static-renditions}
 
-アセットレンディションを表示してダウンロードするには、次の手順に従います。
+アセットのレンディションを表示してダウンロードするには、次の手順に従います。
 
-1. Assets ビューで、**Assets** をクリックし、フォルダーに移動して、アセットを選択し、**詳細** をクリックします。
+1. アセットビューで、「**アセット**」をクリックし、フォルダーに移動してアセットを選択し、「**詳細**」をクリックします。
 1. 右側のパネルで使用可能なレンディションのアイコンをクリックします。
-1. レンディションを選択してプレビューし、![ ダウンロードアイコン ](/help/assets/assets/download-icon.svg) をクリックしてダウンロードします。
+1. レンディションを選択してプレビューし、![ダウンロードアイコン](/help/assets/assets/download-icon.svg) をクリックしてダウンロードします。
 
-   ![ 動的レンディションの表示とダウンロード ](/help/assets/assets/view-download-static-rendition.png)
+   ![動的レンディションの表示とダウンロード](/help/assets/assets/view-download-static-rendition.png)
 
 ## 動的レンディション {#dynamic-renditions}
 
 動的レンディションは、特定のニーズに合うようにリアルタイムで作成される、カスタマイズされたアセットバージョンです。例えば、デバイスの解像度に基づく画像のサイズ変更や、様々な縦横比に合わせた切り抜きなどです。
-これらのレンディションにより、組織は、様々なオーディエンスニーズに合わせて、パーソナライズされ最適化されたエクスペリエンスを提供できます。Experience Manager Assetsで動的レンディションを表示およびダウンロードできます。
+これらのレンディションにより、組織は、様々なオーディエンスニーズに合わせて、パーソナライズされ最適化されたエクスペリエンスを提供できます。Experience Manager Assets で動的レンディションを表示およびダウンロードできます。
 
 ## Dynamic Media レンディション {#dynamic-media-renditions}
 

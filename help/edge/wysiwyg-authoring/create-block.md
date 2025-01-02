@@ -5,9 +5,9 @@ exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1415'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -45,13 +45,13 @@ Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリン
 
 ### ブロック定義とモデルの作成 {#create-block-model}
 
-1\. WYSIWYG Edge Delivery Services オーサリング用 [ 開発者向けスタートガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) ガイドで作成した GitHub プロジェクトをローカルに複製し、選択したエディターで開きます。
+1\.[Edge Delivery Services を使用した WYSIWYG オーサリングの開発者向け入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)で作成した GitHub プロジェクトをローカルにクローンし、任意のエディターで開きます。
 
 * ここでは、説明のために Microsoft のコードを使用しています。
 
 ![プロジェクトのクローン](assets/create-block/clone.png)
 
-2\. プロジェクトのルートにある `component-definition.json` ファイルを編集し、新しい引用ブロックに次の定義を追加して、ファイルを保存します。
+2\.プロジェクトのルートにある `component-definition.json` ファイルを編集し、新しい引用ブロックに次の定義を追加して、ファイルを保存します。
 
 >[!BEGINTABS]
 
@@ -83,7 +83,7 @@ Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリン
 
 >[!ENDTABS]
 
-3\. プロジェクトのルートにある `component-models.json` ファイルを編集し、新しい引用ブロックに次の[モデル定義](/help/implementing/universal-editor/field-types.md#model-structure)を追加して、ファイルを保存します。
+3\.プロジェクトのルートにある `component-models.json` ファイルを編集し、新しい引用ブロックに次の[モデル定義](/help/implementing/universal-editor/field-types.md#model-structure)を追加して、ファイルを保存します。
 
 * コンテンツモデルを作成する際に考慮すべき重要事項について詳しくは、[Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリング用のコンテンツモデリング](/help/edge/wysiwyg-authoring/content-modeling.md)ドキュメントを参照してください。
 
@@ -119,7 +119,7 @@ Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリン
 
 >[!ENDTABS]
 
-4\. プロジェクトのルートにある `component-filters.json` ファイルを編集し、[フィルター定義](/help/implementing/universal-editor/customizing.md#filtering-components)に引用ブロックを追加して、ブロックを任意のセクションに追加してファイルを保存できるようにします。
+4\.プロジェクトのルートにある `component-filters.json` ファイルを編集し、[フィルター定義](/help/implementing/universal-editor/customizing.md#filtering-components)に引用ブロックを追加して、ブロックを任意のセクションに追加してファイルを保存できるようにします。
 
 >[!BEGINTABS]
 
@@ -147,7 +147,7 @@ Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリン
 
 >[!ENDTABS]
 
-5\. git を使用して、これらの変更を `main` ブランチにコミットします。
+5\.git を使用して、これらの変更を `main` ブランチにコミットします。
 
 * `main` へのコミットは、説明のみを目的としています。[ベストプラクティスに従って](https://www.aem.live/docs/dev-collab-and-good-practices)、実際のプロジェクト作業にはプルリクエストを使用します。
 
@@ -190,13 +190,13 @@ Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリン
 
 作業用の引用ブロックを作成したので、スタイル設定を適用できます。
 
-1\. プロジェクトのエディターに戻ります。
+1\.プロジェクトのエディターに戻ります。
 
-2\. `blocks` フォルダーの下に `quote` フォルダーを作成します。
+2\.`blocks` フォルダーの下に `quote` フォルダーを作成します。
 
 ![引用フォルダーの作成](assets/create-block/new-folder.png)
 
-3\. 新しい `quote` フォルダーに、次の JavaScript を追加してブロック装飾を実装する `quote.js` ファイルを追加し、ファイルを保存します。
+3\.新しい `quote` フォルダーに、次の JavaScript を追加してブロック装飾を実装する `quote.js` ファイルを追加し、ファイルを保存します。
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-4\. `quote` フォルダーに `quote.css` ファイルを追加し、次の CSS コードを追加してブロックのスタイル設定を定義し、ファイルを保存します。
+4\.`quote` フォルダーに `quote.css` ファイルを追加し、次の CSS コードを追加してブロックのスタイル設定を定義し、ファイルを保存します。
 
 >[!BEGINTABS]
 
@@ -263,17 +263,17 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-5\. git を使用して、これらの変更を `main` ブランチにコミットします。
+5\.git を使用して、これらの変更を `main` ブランチにコミットします。
 
 * `main` へのコミットは、説明のみを目的としています。[ベストプラクティスに従って](https://www.aem.live/docs/dev-collab-and-good-practices)、実際のプロジェクト作業にプルリクエストを使用します。
 
-6\. プロジェクトのページを編集していたユニバーサルエディターの「ブラウザー」タブに戻り、ページをリロードしてスタイル設定されたブロックを表示します。
+6\.プロジェクトのページを編集していたユニバーサルエディターの「ブラウザー」タブに戻り、ページをリロードしてスタイル設定されたブロックを表示します。
 
-7\. ページ上でスタイル設定された引用ブロックを参照します。
+7\.ページ上でスタイル設定された引用ブロックを参照します。
 
 ![ユニバーサルエディターのスタイル設定された引用ブロック](assets/create-block/quote-styled.png)
 
-8\. 公開済みページに移動して、変更が実稼動環境にプッシュされたことを確認します。リンクは、`https://<branch>--<repo>--<owner>.aem.page` のようになります。
+8\.公開済みページに移動して、変更が実稼動環境にプッシュされたことを確認します。リンクは、`https://<branch>--<repo>--<owner>.aem.page` のようになります。
 
 ![公開およびスタイル設定された引用ブロック](assets/create-block/quote-styled-published.png)
 

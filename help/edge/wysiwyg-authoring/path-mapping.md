@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: User
 exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
 source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ AEM オーサリングインスタンスで使用されるページパスを、w
 AEM を使用して WYSIWYG コンテンツをオーサリングし、Edge Delivery Services に公開できるようするには、プロジェクトのパスマッピングを設定する必要があります。このマッピングには 2 つの目的があります。
 
 * AEM オーサリングインスタンスで使用されるページパスと、web サイトで使用されるパブリックページパス間の関係をマッピングして作成します。
-* Edge Delivery Servicesに公開するコンテンツ（ページ、シート、アセットなど）を制御します。
+* コンテンツ（ページ、シート、アセットなど）の Edge Delivery Services への公開を制御します。
 
 パスマッピングは、プロジェクトごとに、プロジェクトのコンテンツと URL 構造に従って個別に設定する必要があります。これは、コンテンツの公開中や[ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/navigation.md)でのコンテンツの編集中に AEM によって使用されます。
 

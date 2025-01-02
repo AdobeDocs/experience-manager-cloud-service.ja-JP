@@ -3,9 +3,9 @@ title: コンテンツハブユーザーインターフェイスの設定
 description: コンテンツハブユーザーインターフェイスの設定
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 source-git-commit: 323fe1ba95b027f3c0d625e122b1885723e94b0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1718'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -227,21 +227,21 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 ### レンディション {#renditions-content-hub}
 
-レンディションは、画像やドキュメントなどのデジタルアセットのカスタマイズバージョンで、最適なパフォーマンスを確保するために、様々なデバイスやプラットフォーム向けに設計されています。 詳しくは、[Adobe Experience Manager Assetsのレンディション ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions) を参照してください。
+レンディションは、画像やドキュメントなどのデジタルアセットのカスタマイズバージョンで、最適なパフォーマンスを確保するために、様々なデバイスやプラットフォーム向けに設計されています。詳しくは、[Adobe Experience Manager Assets のレンディション](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)を参照してください。
 
-Content Hubでは、静的レンディションをダウンロードできます。 静的レンディションは、ネイティブに生成されるアセットの元のファイルを表す様々な表現です。 例としては、サムネールやモバイルに最適化されたレンディションがあります。 管理者は、アセットレンディションの可用性を管理および制御し、元のアセットをダウンロードできるかどうかを管理できます。
+コンテンツハブでは、静的レンディションをダウンロードできます。静的レンディションは、ネイティブに生成されるアセットの元のファイルを様々に表現したものです。例には、サムネールやモバイルに最適化されたレンディションなどがあります。管理者は、アセットレンディションの可用性を管理および制御し、元のアセットをダウンロードできるかどうかを管理できます。
 
 これを行うには、次の手順を実行します。
 
-[ 設定 ](#access-configuration-options-content-hub) ユーザーインターフェイスで「**[!UICONTROL レンディション]**」をクリックします。 以下のオプションが利用できます。
+[設定](#access-configuration-options-content-hub)ユーザーインターフェイスで、「**[!UICONTROL レンディション]**」をクリックします。以下のオプションが利用できます。
 
-* [!UICONTROL  静的レンディションの可用性を有効にする ] 切替スイッチを有効にして、すべての静的レンディションをContent Hubで表示します。
+* 「[!UICONTROL 静的レンディションの可用性を有効にする]」切替スイッチを有効にして、すべての静的レンディションをコンテンツハブで表示します。
 
-* 有効または無効 **[!UICONTROL ユーザーが元のアセットをダウンロードできるようにする]** を切り替えて、元のアセットをダウンロードできるかどうかを制御します。
+* 「**[!UICONTROL ユーザーに元のアセットのダウンロードを許可]**」切替スイッチを有効または無効にして、元のアセットをダウンロードできるかどうかを制御します。
 
-  ![Content Hubでのレンディションの設定 ](assets/config-renditions.png)
+  ![コンテンツハブのレンディション設定](assets/config-renditions.png)
 
-Content Hubで静的レンディションを表示およびダウンロードする方法について詳しくは、[Content Hubでのアセットのダウンロード ](/help/assets/download-assets-content-hub.md) を参照してください。
+コンテンツハブで静的レンディションを表示およびダウンロードする方法について詳しくは、[コンテンツハブでのアセットのダウンロード](/help/assets/download-assets-content-hub.md)を参照してください。
 
 ### カスタムリンク {#configure-custom-links-content-hub}
 

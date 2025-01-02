@@ -5,9 +5,9 @@ feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
 source-git-commit: 41d610728fe92b07db722694432653cf7f03ce9c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '699'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -25,19 +25,19 @@ AEM as a Cloud Service では、クライアントサイドリダイレクトを
 
 * リダイレクトの管理をビジネスユーザーが担当し、ソース管理にファイルの変更をコミットするために必要なアクセス権や、Cloud Manager web 層設定パイプラインを実行する機能を持っていない場合。
 * リダイレクトの件数が数件から数万件に及ぶ場合。
-* カスタムプロジェクトとして作成するか、[ACS Commons リダイレクトマップマネージャ ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) を使用して作成するユーザーインターフェイスのオプションが必要な場合。
+* カスタムプロジェクトとして作成する、または [ACS Commons リダイレクトマップマネージャー](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)を使用して作成するユーザーインターフェイスのオプションが必要な場合。
 
 この機能のコアとなるのは、AEM Apache／Dispatcher が、公開リポジトリ内の指定した場所に配置された 1 つ以上の書き換えマップファイルを読み込む（または再読み込みする）機能です。ファイルがそこに到達する仕組みはこの機能の範囲外ですが、次のいずれかの方法を検討可能であると明記しておくことが重要です。
 
 * 書き換えマップをアセットとしてオーサーユーザーインターフェイスに取り込み、公開します。
-* [ACS Commons リダイレクトマップマネージャー ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) （[ 少なくとも 6.7.0 バージョン以降 ](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)）をインストールする場合。このマネージャーには、URL マッピングを管理するユーザーインターフェイスが含まれており、書き換えマップファイルを公開することもできます。
+* [ACS Commons リダイレクトマップマネージャー](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)（[バージョン 6.7.0 以降](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)）をインストールします。これには、URL マッピングを管理するユーザーインターフェイスが含まれ、書き換えマップファイルを公開することもできます。
 * カスタムアプリケーションを作成することで、完全な柔軟性を実現します。例えば、URL マッピングを管理するユーザーインターフェイスまたはコマンドラインインターフェイス、あるいは書き換えマップをアップロードするフォームを使用し、その後 AEM API を使用して書き換えマップファイルを公開します。
 
 >[!NOTE]
 > この機能には、AEM バージョン **18311 以降**&#x200B;が必要です。
 
 >[!NOTE]
-> この機能でリダイレクトマップマネージャを使用するには、ACS Commons バージョン **6.7.0 以降** が必要です。
+> この機能でリダイレクトマップマネージャーを使用するには、ACS Commons バージョン **6.7.0 以降**&#x200B;が必要です。
 
 ## 書き換えマップ {#rewrite-map}
 
@@ -61,9 +61,9 @@ maps:
   path: /content/dam/redirectmaps/mysite-redirectmap.txt
 ```
 
-次に、`rewrites/rewrite.rules` や `<yourfile>.vhost` などの Apache 設定ファイルで、name プロパティによって参照されるマップファイルを設定する必要があります（上記のサンプルでは `my.map`）。 読み込まれると、このマップファイルは、**固定** 場所 `/tmp/rewrites/` の下の Dispatcher ローカルストレージに保存されます。
+次に、`rewrites/rewrite.rules` や `<yourfile>.vhost` などの Apache 設定ファイルで、name プロパティによって参照されるマップファイル（上記のサンプルでは `my.map`）を設定する必要があります。読み込まれると、このマップファイルは、**固定**&#x200B;場所`/tmp/rewrites/`の下の Dispatcher ローカルストレージに保存されます。
 
-`RewriteMap` ディレクティブは、データが `sdbm` （simple DBM）形式を使用してデータベース・マネージャ（DBM）ファイル形式で格納されることを示し、フル・ファイル・パスは格納場所の接頭辞と name プロパティから導出されます。
+`RewriteMap` ディレクティブは、データが `sdbm`（シンプル DBM）形式を使用してデータベースマネージャー（DBM）ファイル形式で保存され、ファイルのフルパスは保存場所の接頭辞と name プロパティから導出されることを示す必要があります。
 
 残りの設定は、`redirectmap.txt` の形式によって異なります。最もシンプルな形式は、以下のサンプルに示すように、元の URL とマッピングされた URL を 1 対 1 でマッピングしたものです。
 

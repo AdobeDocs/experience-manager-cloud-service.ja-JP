@@ -6,9 +6,9 @@ contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
 source-git-commit: fbf7321e0fc70627cc80d50d99ef5de4baf03e9b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1904'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -173,15 +173,15 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 
 ### メタデータフォームでのリンクコンポーネントの操作 {#link-component-metadata-form}
 
-リンクコンポーネントを使用すると、ストレージリンク、著作権情報、問い合わせフォームなどの外部 URL を有効にすることができます。 メタデータフォームでリンクコンポーネントを使用するには、[ メタデータフォームを設定 ](#metadata-forms) する必要があります。
+リンクコンポーネントを使用して、ストレージリンク、著作権情報、お問い合わせフォームなどの外部 URL を有効にします。メタデータフォームでリンクコンポーネントを使用するには、[メタデータフォームを設定する](#metadata-forms)必要があります。
 
 メタデータフォームでリンクコンポーネントを使用するには、次の手順に従います。
 
-1. アセットの詳細ページに移動し、「**[!UICONTROL URL をリンク]**」に移動します。
+1. アセット詳細ページに移動し、**[!UICONTROL リンク URL]** に移動します。
 1. 選択したアセットのリダイレクトに使用する URL を追加します。
-1. **[!UICONTROL リンクを追加]** をクリックします。 次のいずれかのアクションを実行します。
-   * ![ コピーアイコン ](assets/do-not-localize/copy.svg) をクリックして、URL をコピーします。
-   * ![ 編集アイコン ](assets/do-not-localize/edit.svg) をクリックして、URL を編集します。
+1. 「**[!UICONTROL リンクを追加]**」をクリックします。次のいずれかの操作を行います。
+   * ![コピーアイコン](assets/do-not-localize/copy.svg) をクリックして、URL をコピーします。
+   * ![編集アイコン](assets/do-not-localize/edit.svg) をクリックして、URL を編集します。
 1. 「**[!UICONTROL 保存]**」をクリックして、変更を保存します。
 
 ## 次の手順 {#next-steps}
