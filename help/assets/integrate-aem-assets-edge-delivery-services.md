@@ -2,7 +2,7 @@
 title: AEM Assets と Edge Delivery Services 向けコンテンツのオーサリングの統合
 description: AEM AssetsをEdge Delivery Servicesと統合する方法について説明します。 この統合により、AEM AssetsとMicrosoft Word およびGoogle ドキュメントを統合したり、AEM Assetsと Universal Editor を統合したり、Dynamic Mediaと OpenAPI 機能と Universal Editor を統合したり、Dynamic Mediaと OpenAPI 機能をMicrosoft Word およびGoogle ドキュメントと統合したりできます。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: ed9d559e09746023577c27dafbd64a8c46acc5da
+source-git-commit: e6fd7b1d16aac5e7021a8c309f6483f98746e85e
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 3%
@@ -26,6 +26,7 @@ ht-degree: 3%
 ## Edge Delivery Services向けのAEM Assetsとドキュメントベースのオーサリングフローの統合 {#integrate-aem-assets-with-document-based-authoring-tools}
 
 Microsoft Word やGoogle ドキュメントなどのドキュメントベースのオーサリングツールとAEM Assetsを統合すると、エディターにアセットセレクターが直接表示されます。 このアセットセレクターを使用してAEM Assetsにアクセスし、承認済みアセットをドキュメントに挿入します。
+
 既にEdge Delivery Servicesの web サイトがある場合は、[AEM Assets プラグイン ](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) を参照して、AEM Assetsを既存のAEM プロジェクトに統合します。 Edge Delivery Services Web サイトがない場合は、以下の [ 前提条件 ](#integrate-aem-assets-with-microsoft-word-and-google-docs) および [AEM Assetsとドキュメントベースのオーサリング環境の統合 ](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) の節を参照してください。
 
 ### 前提条件{#integrate-aem-assets-with-microsoft-word-and-google-docs}
