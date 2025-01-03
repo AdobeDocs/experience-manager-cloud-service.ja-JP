@@ -5,13 +5,13 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 8e89adcaadbc53c3d525d57ef452f671137a619f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '645'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud ServiceのCloud Manager 2024.12.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.12.0 のリリースノート {#release-notes}
 
 AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2024.12.0 のリリースについて説明します。
 
@@ -21,7 +21,7 @@ AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2024.12.0 
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud ServiceのCloud Manager 2024.12.0 のリリース日は 2024 年 12 月 5 日（木）です。
+AEM as a Cloud Service の Cloud Manager 2024.12.0 のリリース日は 2024年12月5日木曜日（PT）です。
 
 次回のリリース予定は 2025年1月23日（PT）です。
 
@@ -32,22 +32,22 @@ AEM as a Cloud ServiceのCloud Manager 2024.12.0 のリリース日は 2024 年 
 
     Starting February 2025, sandboxes and dev environments upgrade to the Java 21 runtime, regardless of the build version (Java 8, 11, 17, or 21). Production environments follow with an upgrade in April 2025. -->
 
-* **レコードタイプ：** AEM Cloud Managerの CDN 設定を使用してドメインの運用開始準備を改善するために、レコードタイプのサポートが追加されました。 CNAME レコードタイプまたは Fastly の IP を表す A レコードタイプを追加して、ドメインのルーティングを簡素化することで、運用を開始するオプションが追加されました。 この機能強化により、Fastly でのドメイン設定を CNAME レコードのみに依存するという制限がなくなります。
+* **A レコードタイプ：** AEM Cloud Manager で CDN 設定を使用してドメインの運用開始準備を改善するために、A レコードタイプのサポートが追加されました。Fastly の IP を表す CNAME レコードタイプまたは A レコードタイプのいずれかを追加して運用開始するオプションが追加され、ドメインのルーティングが簡素化されました。この機能強化により、Fastly でのドメイン設定に対して CNAME レコードにのみ依存するという制限がなくなります。
 
-  [ カスタムドメイン名の追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。<!-- CMGR-63076 -->
+  詳しくは、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。<!-- CMGR-63076 -->
 
 <!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. -->
 
-* **Edge Delivery サイトへの複数のドメインの追加：** apex ドメインと non-apex ドメインの両方を含む複数のドメインを、AEM Cloud ManagerのEdge Delivery サイト（EDS）に追加できるようになりました。 この機能強化により、複数のドメインを EDS オリジンに関連付ける機能を制限していた以前の制限が解決されました。 この更新により、ドメイン設定を柔軟に管理できるようになり、複雑なドメイン設定を含むサイトの運用開始プロセスが簡素化されます。<!-- CMGR-63007 -->
+* **Edge Delivery サイトへの複数のドメインの追加：** AEM Cloud Manager の Edge Delivery サイト（EDS）に、apex ドメインと非 apex ドメインの両方を含む複数のドメインを追加できるようになりました。この機能強化により、複数のドメインを EDS 接触チャネルに関連付ける機能を制限していた以前の制限が解決されます。この更新により、ドメイン設定の管理に対する柔軟性が向上し、複雑なドメイン設定を含むサイトの運用開始プロセスが簡素化されます。<!-- CMGR-63007 -->
 
-* **高度なフィルタリングオプション：** AEM Cloud Managerのパイプライン実行ページと SSL 証明書ページに高度なフィルタリングオプションが導入されました。 複数の条件でフィルタリングできるようになりました。関連データにすばやくアクセスでき、デプロイメントの効率が向上します。<!-- CMGR-26263 -->
+* **高度なフィルタリングオプション：** AEM Cloud Manager のパイプライン実行ページと SSL 証明書ページに、高度なフィルタリングオプションが導入されました。複数の条件でフィルタリングできるようになり、関連データにすばやくアクセスして、デプロイメントの効率を向上できます。<!-- CMGR-26263 -->
 
-   * **パイプラインアクティビティフィルタリング：** パイプラインアクティビティのフィルタリングが含まれます。これにより、特定のパイプラインアクティビティの検索結果を絞り込むことができます。 使用可能なフィルターには、パイプライン、アクション、ステータスが含まれます。
-     ![ パイプラインアクティビティフィルタリング ](/help/implementing/cloud-manager/assets/filters-pipeline.png)
+   * **パイプラインアクティビティフィルタリング：**パイプラインアクティビティフィルタリングが含まれているので、特定のパイプラインアクティビティの検索結果を絞り込むことができます。使用可能なフィルターには、パイプライン、アクション、ステータスが含まれます。
+     ![パイプラインアクティビティフィルタリング](/help/implementing/cloud-manager/assets/filters-pipeline.png)
 
 
-   * **SSL 証明書フィルタリング：** SSL 証明書フィルタリングが含まれ、特定の証明書の検索結果を絞り込むことができます。 使用可能なフィルターには、SSL 証明書の名前、所有権、ステータスが含まれます。
-     ![SSL 証明書フィルタリング ](/help/implementing/cloud-manager/assets/filters-ssl-certificates.png)
+   * **SSL 証明書フィルタリング：**SSL 証明書フィルタリングが含まれているので、特定の証明書の検索結果を絞り込むことができます。使用可能なフィルターには、SSL 証明書の名前、所有権、ステータスが含まれます。
+     ![SSL 証明書フィルタリング](/help/implementing/cloud-manager/assets/filters-ssl-certificates.png)
 
 ## 早期導入プログラム {#early-adoption}
 
@@ -57,9 +57,9 @@ Cloud Manager の早期導入プログラムに参加すると、今後の機能
 
 <!-- BOTH CS & AMS -->
 
-**独自の Git を取り込む** 機能が拡張され、GitLab や Bitbucket などの外部リポジトリがサポートされるようになりました。 この新しいサポートは、プライベートおよびエンタープライズ GitHub リポジトリに対する既存のサポートに追加されます。これらの新しいリポジトリを追加すると、パイプラインに直接リンクすることもできます。これらのリポジトリは、パブリッククラウドプラットフォーム上や、プライベートクラウドまたはインフラストラクチャ内でホストできます。また、この統合により、Adobe リポジトリと常にコード同期を行う必要がなくなり、プルリクエストをメイン分岐に結合する前に検証できるようになります。
+**独自の Git の導入**&#x200B;機能が拡張され、GitLab や Bitbucket などの外部リポジトリのサポートが含まれるようになりました。この新しいサポートは、プライベートおよびエンタープライズ GitHub リポジトリに対する既存のサポートに追加されます。これらの新しいリポジトリを追加すると、パイプラインに直接リンクすることもできます。これらのリポジトリは、パブリッククラウドプラットフォーム上や、プライベートクラウドまたはインフラストラクチャ内でホストできます。また、この統合により、Adobe リポジトリと常にコード同期を行う必要がなくなり、プルリクエストをメイン分岐に結合する前に検証できるようになります。
 
-外部リポジトリ（GitHub でホストされているリポジトリを除く）と **Git の変更時** に設定された **デプロイメントトリガー** を使用したパイプラインが自動的に開始されるようになりました。
+外部リポジトリ（GitHub でホストされているリポジトリを除く）を使用するパイプラインと、**Git 変更時**&#x200B;に設定した&#x200B;**デプロイメントトリガー**&#x200B;が自動的に開始されるようになりました。
 
 [Cloud Manager でのプライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/external-repositories.md)を参照してください。
 
@@ -73,8 +73,8 @@ Cloud Manager の早期導入プログラムに参加すると、今後の機能
 
 ## バグ修正
 
-* AEM Cloud Managerでアクティブなドメインマッピングが設定されたドメインが削除されるのを防ぐためのセーフガードが追加されました。 このようなドメインを削除しようとすると、ドメインの削除を続行する前にドメインマッピングを削除するよう指示するエラーメッセージが表示されるようになりました。 このワークフローは、ドメインの整合性を確保し、誤った設定を防ぎます。<!-- CMGR-63033 -->
-* まれに、それぞれのケースに関連付けられているステータスが正しくないため、ユーザーがドメイン名を追加したり、SSL 証明書を更新したりできませんでした。<!-- CMGR-62816 -->
+* AAEM Cloud Manager でアクティブなドメインマッピングを含むドメインの削除を防ぐための保護機能が追加されました。このようなドメインを削除しようとするユーザーには、ドメインの削除を続行する前にまずドメインマッピングを削除するように指示するエラーメッセージが表示されるようになりました。このワークフローにより、ドメインの整合性が確保され、誤った設定が防止されます。<!-- CMGR-63033 -->
+* まれに、それぞれのケースに関連付けられたステータスが正しくないので、ユーザーがドメイン名を追加することや、SSL 証明書を更新することができないことがありました。<!-- CMGR-62816 -->
 
 
 <!-- ## Known issues {#known-issues} -->

@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: d7156a79f004a454b7689b2085a97d4c513d52b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1802'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 98%
 
 ## リリースビデオ {#release-video}
 
-2024.11.0 リリースで追加された機能の概要については、2024 年 11 月リリースの概要ビデオをご覧ください。
+2024.11.0 リリースで追加された機能の概要については、2024年11月リリースの概要ビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 

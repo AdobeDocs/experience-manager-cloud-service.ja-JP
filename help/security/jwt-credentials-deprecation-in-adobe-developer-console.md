@@ -5,9 +5,9 @@ exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
 source-git-commit: 18e9daad8bec6749d493994264792c0cd3b55d15
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '770'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -60,34 +60,34 @@ Cloud Manager で AEM as a Cloud Service 環境をプロビジョニングする
 
 ![自動生成されたプロジェクト](/help/security/assets/jwt-deprecation-autogen-projects.png)
 
-## 自動生成プロジェクトに関する FAQ {#autogen-projects-faqs}
+## 自動生成されたプロジェクトに関する FAQ {#autogen-projects-faqs}
 
-この節では、AEM as a Cloud Serviceの自動生成プロジェクトでの JWT 資格情報の非推奨（廃止予定）に関するよくある質問に対する回答を示します。
+この節では、AEM as a Cloud Service で自動生成されたプロジェクトに対する JWT 資格情報の廃止に関してよくある質問とその回答を示します。
 
-**自動生成されるプロジェクトを選択するにはどうすればよいですか？**
+**自動生成されたプロジェクトを選択するにはどうすればよいですか？**
 
-Adobe Developer Consoleへの移動 | プロジェクトセクション。  AEM as a Cloud Service自動生成プロジェクトには、「自動生成」識別情報を含むロックアイコンが表示されます。  自動生成されたプロジェクトは、AEM-p#####-e#####という形式に従い、テクニカルアカウントユーザーが作成します。
+Adobe Developer Console の「プロジェクト」セクションに移動します。AEM as a Cloud Service の自動生成されたプロジェクトには、「自動生成」識別子の付いたロックアイコンが表示されます。自動生成されたプロジェクトは、AEM-p#####-e###### の形式に従って、テクニカルアカウントユーザーによって作成されます。
 
-![ 自動生成されたプロジェクト ](/help/security/assets/jwt-alert.png)
+![自動生成されたプロジェクト](/help/security/assets/jwt-alert.png)
 
-**自動生成プロジェクトで問題が発生した場合はどうなりますか？**
+**自動生成されたプロジェクトで問題が発生した場合はどうなりますか？**
 
-[Adobeカスタマーケア ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) にお問い合わせください。
+[アドビカスタマーケア](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)にお問い合わせください。
 
 **自動生成されたプロジェクトを移行する必要はありますか？**
 
-AEM リリース 17258 （2024 年 8 月）以降を使用している環境の場合、Adobeは、ユーザーに代わって自動生成された移行を実行するので、アクションは必要ありません。
+AEM リリース 17258（2024年8月）以降の環境では、アドビがお客様に代わって自動生成して移行するので、アクションは必要ありません。
 
-**自動生成プロジェクトを移行するタイムラインは何ですか？**
+**自動生成されたプロジェクトの移行タイムラインはどのようになりますか？**
 
-Adobeは、開発環境から始めて、2025 年第 1 四半期から段階的な移行アプローチを開始します。
+アドビは、開発環境から始めて、2025年第 1 四半期に段階的な移行アプローチを開始する予定です。
 
-**AEM リリース 17258 （2024 年 8 月）より古いAEM リリースがある場合、AEM as a Cloud Service インスタンスはどのような影響を受けますか？**
+**AEM リリース 17258（2024年8月）より古い AEM リリースがある場合、AEM as a Cloud Service インスタンスはどのような影響を受けますか?**
 
-自動生成されたプロジェクト統合は、2025 年 6 月までに OAuth に移行されない限り、機能しなくなります。
+自動生成されたプロジェクト統合は、2025年6月までに OAuth に移行されない場合、機能しなくなります。
 
-スムーズな移行を実現するには、[Adobeカスタマーケアに迅速に連絡し ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)[ 最新のAEM リリース ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest) への更新処理を開始する必要があります。 これにより、リグレッションテストに十分な時間が与えられ、Adobeがプロジェクトの移行を効率的に管理できるようになります。
+スムーズな移行を確実に行うために、お客様は[アドビカスタマーケア](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)に迅速に連絡し、[最新の AEM リリース](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest)への更新処理を開始する必要があります。これにより、回帰テストに十分な時間を確保でき、アドビはプロジェクトの移行を効率的に管理できます。
 
-**AEM as a Cloud Service AEM リリースをアップグレードせずに、サポートされている OAuth バージョンにアップグレードすることはできますか？**
+**AEM as a Cloud Service AEM リリースをアップグレードせずに、サポートされている OAuth バージョンにアップグレードできますか？**
 
-いいえ。スムーズな移行を実現するには、[Adobeカスタマーケアに迅速に連絡し ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)[ 最新のAEM リリース ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest) への更新処理を開始する必要があります。 これにより、リグレッションテストに十分な時間が与えられ、Adobeがプロジェクトの移行を効率的に管理できるようになります。
+いいえ。スムーズな移行を確実に行うために、お客様は[アドビカスタマーケア](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)に迅速に連絡し、[最新の AEM リリース](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest)への更新処理を開始する必要があります。これにより、回帰テストに十分な時間を確保でき、アドビはプロジェクトの移行を効率的に管理できます。
