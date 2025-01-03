@@ -4,10 +4,10 @@ description: AEM の管理による CDN を使用する方法と、独自の CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: c31441baa6952d92be4446f9035591b784091324
+source-git-commit: 6600f5c1861e496ae8ee3b6d631ed8c033c4b7ef
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1745'
+ht-degree: 90%
 
 ---
 
@@ -23,12 +23,12 @@ AEM as a Cloud Service には統合 CDN が付属しており、ユーザーの�
 
 AEM の管理による CDN は、ほとんどの顧客のパフォーマンスとセキュリティのニーズを満たします。パブリッシュ層では、顧客は独自の CDN を通じてトラフィックをルーティングすることを選択できますが、これは顧客が管理する必要があります。このオプションは、特に顧客が CDN プロバイダーとの既存のレガシー統合を持ち、交換するのが困難な場合に、ケースバイケースで使用できます。
 
-Edge Delivery Services 層への公開を検討している顧客は、アドビの管理による CDN を活用できます。詳しくは、[アドビが管理する CDN](#aem-managed-cdn) を参照してください。<!-- CQDOC-21758, 5b -->
+Edge Delivery Services 層への公開を検討している顧客は、アドビの管理による CDN を活用できます。[Adobe管理の CDN](#aem-managed-cdn) を参照してください。<!-- CQDOC-21758, 5b -->
 
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## アドビが管理する CDN {#aem-managed-cdn}
+## Adobeが管理する CDN {#aem-managed-cdn}
 
 <!-- CQDOC-21758, 5a -->
 
@@ -120,7 +120,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->なお、独自の CDN を使用する場合、Cloud Manager にドメインと証明書をインストールする必要はありません。Adobe CDN でのルーティングは、リクエスト `Host` ヘッダーで送信されるデフォルトのドメイン `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` を使用して行われます。リクエスト `Host` ヘッダーをカスタムドメイン名で上書きすると、リクエストが Adobe CDN 経由で誤ってルーティングされる可能性があります。
+>なお、独自の CDN を使用する場合、Cloud Manager にドメインと証明書をインストールする必要はありません。Adobe CDN でのルーティングは、リクエスト `Host` ヘッダーで送信されるデフォルトのドメイン `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` を使用して行われます。リクエスト `Host` ヘッダーをカスタムドメイン名で上書きすると、リクエストがAdobe CDN を介して誤ってルーティングされるか、421 エラーが発生する可能性があります。
 
 >[!NOTE]
 >
@@ -133,6 +133,30 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 顧客 CDN と AEM CDN の間の追加ホップは、キャッシュミスがあった場合にのみ必要になります。この記事で説明しているキャッシュ最適化戦略を使用すると、顧客 CDN を追加した場合でも、無視できるほどわずかな待ち時間しか発生しません。
 
 この顧客 CDN 設定は、パブリッシュ層に対してサポートされていますが、オーサー層の前ではサポートされていません。
+
+### デバッグ設定
+
+BYOCDN 設定をデバッグするには、`x-aem-debug` ヘッダーに値 `edge=true` を使用してください。 例：
+
+Linux® の場合：
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
+```
+
+Windows の場合：
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
+```
+
+これにより、リクエストで使用される特定のプロパティが `x-aem-debug` 応答ヘッダーに反映されます。 例：
+
+```
+x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
+```
+
+これを使用すると、例えば、edge 認証が設定されている場合の host の値を検証したり、x-forwarded-host ヘッダー値や、edge キーが設定されており、どのキーが使用されているか（1 つのキーが一致する場合）を検証したりできます。
 
 ### CDN ベンダー設定のサンプル {#sample-configurations}
 
@@ -160,6 +184,11 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 **パブリッシュサービスエンドポイントへのリダイレクト**
 
 リクエストが 403 forbidden 応答を受け取った場合、リクエストに必要なヘッダーの一部が欠落していることを意味します。よくある原因は、CDN が apex と `www` ドメインの両方のトラフィックを管理しているものの、`www` ドメインに適したヘッダーを追加していないことです。この問題は、AEM as a Cloud Service CDN ログを確認し、必要なリクエストヘッダーを確認することで、トリアージすることができます。
+
+**エラー 421 リダイレクトの誤り**
+
+リクエストが `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` の前後に本文を含む 421 エラーを受け取った場合、HTTP `Host` ークフローがホストの証明書上のホストと一致しないことを示しています。 これは通常、`Host` または SNI の設定が間違っていることを示します。 `Host` と SNI の両方の設定が publish-p&lt;PROGRAM_ID>-e を指していることを確認してください。<ENV-ID>.adobeaemcloud.com ホスト。
+
 
 **リダイレクトループが多すぎます**
 
