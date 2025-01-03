@@ -2,9 +2,9 @@
 title: AEM Assets と Edge Delivery Services 向けコンテンツのオーサリングの統合
 description: AEM AssetsをEdge Delivery Servicesと統合する方法について説明します。 この統合により、AEM AssetsとMicrosoft Word およびGoogle ドキュメントを統合したり、AEM Assetsと Universal Editor を統合したり、Dynamic Mediaと OpenAPI 機能と Universal Editor を統合したり、Dynamic Mediaと OpenAPI 機能をMicrosoft Word およびGoogle ドキュメントと統合したりできます。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: b908cb1e8d9c7814f4b23142aee589af74047cd8
+source-git-commit: fc19e2bf43237418f3636d982c46915c8013cbfa
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '698'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 ![EDS2](/help/assets/assets/EDS2.png)
 
-Edge Delivery Servicesは、web サイト上のコンテンツの作成と配信を高度に柔軟に行える、構成可能なサービスセットです。 ユニバーサルエディターを使用した [AEM コンテンツ管理 ](/help/sites-cloud/authoring/author-publish.md) および [WYSIWYG オーサリングと、ドキュメントベースのオーサリングの両方を使用 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring) きます。
+[Edge Delivery Services](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/overview) は、Web サイト上のコンテンツの作成と配信を高度に柔軟に行える、構成可能なサービスセットです。 ユニバーサルエディターを使用した [AEM コンテンツ管理 ](/help/sites-cloud/authoring/author-publish.md) および [WYSIWYG オーサリングと、ドキュメントベースのオーサリングの両方を使用 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring) きます。
 
 次の場所でコンテンツを編集できます。
 
