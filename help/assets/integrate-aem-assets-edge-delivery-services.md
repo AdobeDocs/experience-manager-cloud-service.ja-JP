@@ -2,7 +2,7 @@
 title: AEM Assets と Edge Delivery Services 向けコンテンツのオーサリングの統合
 description: AEM AssetsをEdge Delivery Servicesと統合する方法について説明します。 この統合により、AEM AssetsとMicrosoft Word およびGoogle ドキュメントを統合したり、AEM Assetsと Universal Editor を統合したり、Dynamic Mediaと OpenAPI 機能と Universal Editor を統合したり、Dynamic Mediaと OpenAPI 機能をMicrosoft Word およびGoogle ドキュメントと統合したりできます。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: f57edede03cf55110122c59f2874a5f40ffa9c76
+source-git-commit: 105081c9124a85581240b19866adc271ea8bb190
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 3%
@@ -18,7 +18,6 @@ ht-degree: 3%
 次の場所でコンテンツを編集できます。
 
 * [Microsoft Word またはGoogle ドキュメント](#integrate-aem-assets-with-document-based-authoring-tools)
-
 * [ユニバーサルエディター](#integrate-aem-assets-with-universal-editor)
 
 コンテンツを編集した後、Edge Delivery Servicesに公開できます。
