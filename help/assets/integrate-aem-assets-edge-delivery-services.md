@@ -2,7 +2,7 @@
 title: AEM Assets と Edge Delivery Services 向けコンテンツのオーサリングの統合
 description: AEM AssetsをEdge Delivery Servicesと統合する方法について説明します。 この統合により、AEM AssetsとMicrosoft Word およびGoogle ドキュメントを統合したり、AEM Assetsと Universal Editor を統合したり、Dynamic Mediaと OpenAPI 機能と Universal Editor を統合したり、Dynamic Mediaと OpenAPI 機能をMicrosoft Word およびGoogle ドキュメントと統合したりできます。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: e6fd7b1d16aac5e7021a8c309f6483f98746e85e
+source-git-commit: f57edede03cf55110122c59f2874a5f40ffa9c76
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 3%
@@ -78,7 +78,7 @@ OpenAPI 機能を備えたDynamic Mediaを使用してアセットを配信す�
 
 ## サンプルEdge Delivery Servicesサイト{#example-of-an-Edge-Delivery-Services-site}
 
-[WKND Travel](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-hospitality/wknd-trvl-home) を参照してください。 このサイトは、Edge Delivery Servicesのドキュメントベースのオーサリング機能を使用して構築されています。 サイトのコンテンツは、アセット配信用の OpenAPI 機能を備えたDynamic Mediaを使用して、[Google ドキュメント ](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) でオーサリングされます。 作成したコンテンツは、ドキュメントから直接公開されます。 このドキュメントベースのオーサリング設定の場合、すべての重要なファイル、フォルダー、設定、web サイトのスタイル設定および機能コードがこの [Git リポジトリ ](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) に保存されます。
+[WKND Travel](http://bit.ly/3DExLnf) を参照してください。 このサイトは、Edge Delivery Servicesのドキュメントベースのオーサリング機能を使用して構築されています。 サイトのコンテンツは、アセット配信用の OpenAPI 機能を備えたDynamic Mediaを使用して、[Google ドキュメント ](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) でオーサリングされます。 作成したコンテンツは、ドキュメントから直接公開されます。 このドキュメントベースのオーサリング設定の場合、すべての重要なファイル、フォルダー、設定、web サイトのスタイル設定および機能コードがこの [Git リポジトリ ](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) に保存されます。
 
 ## Edge Delivery Services向けのAEM Assetsとユニバーサルエディターベースのオーサリングフローの統合 {#integrate-aem-assets-with-universal-editor}
 
