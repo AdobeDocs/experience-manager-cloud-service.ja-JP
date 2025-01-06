@@ -4,10 +4,10 @@ description: Git パイプラインまたは Cloud Manager パイプラインに
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: e30a9fbe74f1f5cd8a924dc3fec140fad5e0a164
+source-git-commit: 8f5dd529b5f317326d9742be1dd3a3104fe6957a
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 88%
+source-wordcount: '758'
+ht-degree: 82%
 
 ---
 
@@ -27,7 +27,7 @@ AEM as a Cloud Service では、クライアントサイドリダイレクトを
 * リダイレクトの件数が数件から数万件に及ぶ場合。
 * カスタムプロジェクトとして、または [ACS Commons リダイレクトマップマネージャ ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) または [ACS Commons リダイレクトマネージャ ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html) を使用して作成したユーザーインターフェイスのオプションが必要な場合。
 
-この機能のコアとなるのは、AEM Apache／Dispatcher が、公開リポジトリ内の指定した場所に配置された 1 つ以上の書き換えマップファイルを読み込む（または再読み込みする）機能です。ファイルがそこに到達する仕組みはこの機能の範囲外ですが、次のいずれかの方法を検討可能であると明記しておくことが重要です。
+この機能の中核は、AEM Apache/Dispatcherが、公開リポジトリ内の指定された場所に配置された 1 つ以上の書き換えマップファイルを読み込む（または再読み込みする）機能です（AEM公開からダウンロードできます）。 ファイルがそこに到達する仕組みはこの機能の範囲外ですが、次のいずれかの方法を検討可能であると明記しておくことが重要です。
 
 * 書き換えマップをアセットとしてオーサーユーザーインターフェイスに取り込み、公開します。
 * [ACS Commons リダイレクトマップマネージャー](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)（[バージョン 6.7.0 以降](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)）をインストールします。これには、URL マッピングを管理するユーザーインターフェイスが含まれ、書き換えマップファイルを公開することもできます。
