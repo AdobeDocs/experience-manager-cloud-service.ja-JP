@@ -5,10 +5,10 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 100%
+source-wordcount: '1169'
+ht-degree: 79%
 
 ---
 
@@ -29,11 +29,13 @@ ht-degree: 100%
 
 ## コード品質ルール {#understanding-code-quality-rules}
 
-コード品質テストでは、ソースコードをスキャンし、一定の品質基準を満たしていることを確認します。これは SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査を組み合わせて実装されています。汎用の Java ルールと AEM 固有のルールを組み合わせたルールは 100 以上あります。AEM 固有のルールの一部は、AEM エンジニアリングのベストプラクティスに基づいて作成され、[カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)と呼ばれます。
+コード品質テストでは、ソースコードをスキャンし、一定の品質基準を満たしていることを確認します。OakPAL を使用した SonarQube とコンテンツパッケージレベルの調査を組み合わせると、この手順を実装できます。 汎用の Java ルールと AEM 固有のルールを組み合わせたルールは 100 以上あります。AEM 固有のルールの一部は、AEM エンジニアリングのベストプラクティスに基づいて作成され、[カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)と呼ばれます。
 
->[!NOTE]
+ルールの現在の完全なリストをダウンロードできます [ このリンクを使用 ](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)。
+
+>[!IMPORTANT]
 >
->[このリンクを使用して](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)、ルールの完全なリストをダウンロードできます。
+>2025 年 2 月 13 日木曜日（PT）（Cloud Manager 2025.2.0）より、Cloud Manager Code Quality では、更新された SonarQube 9.9 バージョンと、更新されたルールのリストを使用しています [ ここからダウンロードしてください ](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx)。
 
 ### 3 層評価 {#three-tiered-gate}
 
@@ -41,9 +43,9 @@ ht-degree: 100%
 
 * **重大** - パイプラインの即時失敗を引き起こす問題です。
 
-* **重要** - パイプラインの一時停止状態を引き起こす問題です。デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナーは、問題をオーバーライドできます。この場合、パイプラインは続行されます。または、問題を承認できます。この場合、パイプラインはエラーで停止します。
+* **重要** - パイプラインの一時停止状態を引き起こす問題です。デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナーは、問題をオーバーライドして、パイプラインを続行できます。 または、問題を受け入れることもできますが、それによってエラーが発生した際にパイプラインが停止する可能性があります。
 
-* **情報** - 情報提供だけを目的とした問題です。パイプラインの実行には影響しません。
+* **情報** – 情報提供だけを目的とした問題。パイプラインの実行には影響しない問題
 
 >[!NOTE]
 >
@@ -51,7 +53,7 @@ ht-degree: 100%
 
 ### 評価 {#ratings}
 
-この手順の結果は、**評価**&#x200B;として提供されます。
+この手順の結果は、**評価** として提供されます。
 
 次の表に、重大、重要、情報の各カテゴリの評価と失敗のしきい値を示します。
 
@@ -68,15 +70,15 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->詳しくは、[SonarQube の指標の定義](https://docs.sonarqube.org/latest/user-guide/metric-definitions/)を参照してください。
+>詳しくは、[SonarQube の指標の定義](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/)を参照してください。
 
 >[!NOTE]
 >
 >[!UICONTROL Cloud Manager] で実行されるカスタムコード品質ルールについて詳しくは、[カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)を参照してください。
 
-## 偽陽性の処理 {#dealing-with-false-positives}
+## 誤検出の処理 {#dealing-with-false-positives}
 
-品質スキャンプロセスは完璧ではなく、実際には問題がないにもかかわらず問題として誤って特定することもあります。これは「**偽陽性**」と呼ばれます。
+品質スキャンプロセスは完璧ではなく、実際には問題ではない問題を誤って特定することもあります。 この状態は **偽陽性** と呼ばれます。
 
 この場合、ルール ID を注釈属性として指定した標準の Java `@SuppressWarnings` 注釈を使用して、ソースコードに注釈を付けることができます。例えば、よくある問題の 1 つとして、ハードコードされたパスワードを検出する SonarQube ルールにおいて、ハードコードされたパスワードの識別方法が強引な場合があります。
 
@@ -87,7 +89,7 @@ ht-degree: 100%
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-この場合、SonarQube は致命的脆弱性を報告します。コードを見直した後、これが脆弱性でないことを確認し、適切なルール ID でこれに注釈を付けることができます。
+SonarQube が致命的な脆弱性を報告する。 コードを見直した後、この問題が脆弱性でないことを確認し、適切なルール ID でコードに注釈を付けることができます。
 
 ```java
 @SuppressWarnings("squid:S2068")
@@ -106,14 +108,14 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 >[!NOTE]
 >
->`@SuppressWarnings` 注釈をできるだけ具体的なものにする（問題の原因となっている特定のステートメントやブロックにのみ注釈を付ける）ことをお勧めしますが、クラスレベルで注釈を付けることもできます。
+>問題の原因となっている文やブロックにのみ注釈を付けるなど、`@SuppressWarnings` 注釈をできるだけ具体的なものにすることをお勧めしますが、クラスレベルで注釈を付けることもできます。
 
 >[!NOTE]
 >明示的なセキュリティテスト手順はありませんが、コード品質手順の間に評価されるセキュリティ関連のコード品質ルールはあります。Cloud Service でのセキュリティの詳細については、[AEM as a Cloud Service のセキュリティの概要](/help/security/cloud-service-security-overview.md)を参照してください。
 
 ## コンテンツパッケージスキャンの最適化 {#content-package-scanning-optimization}
 
-Cloud Manager は、品質分析プロセスの一環として、Maven ビルドで生成されたコンテンツパッケージの分析を実行します。Cloud Manager は、このプロセスを高速化するための最適化を提供します。この最適化は、特定のパッケージ化の制約が観察された場合に有効です。最も重要なのは、単一のコンテンツパッケージ（一般的に「すべて」のパッケージと呼ばれます）を出力するプロジェクトで実行される最適化です。このパッケージには、ビルドで作成された他のいくつかのコンテンツパッケージが含まれ、スキップ済みとしてマークされます。Cloud Manager がこのシナリオを検出すると、「すべて」のパッケージを展開するのではなく、個々のコンテンツパッケージを直接スキャンし、依存関係に基づいて並べ替えます。例えば、次のビルド出力について考えてみましょう。
+Cloud Manager は、品質分析プロセスの一環として、Maven ビルドで生成されたコンテンツパッケージの分析を実行します。Cloud Managerは、このプロセスを高速化するための最適化を提供します。これは、特定のパッケージ化の制約が観察された場合に効果的です。 最も重要な最適化のターゲットは、単一の「すべて」のパッケージを生成するプロジェクトです。このパッケージには、ビルドからの複数のコンテンツパッケージが含まれ、スキップ済みとしてマークされます。 Cloud Manager がこのシナリオを検出すると、「すべて」のパッケージを展開するのではなく、個々のコンテンツパッケージを直接スキャンし、依存関係に基づいて並べ替えます。例えば、次のビルド出力について考えてみましょう。
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip`（コンテンツパッケージ）
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip`（スキップされたコンテンツパッケージ）
@@ -128,4 +130,4 @@ Cloud Manager は、品質分析プロセスの一環として、Maven ビルド
 >[!NOTE]
 >
 >* この最適化は、AEM にデプロイされるパッケージには影響しません。
->* 埋め込みコンテンツパッケージとスキップされたコンテンツパッケージの照合はファイル名に基づくので、複数のスキップされたコンテンツパッケージのファイル名が完全に同じである場合や、埋め込み中にファイル名が変更された場合は、この最適化を実行できません。
+>* 埋め込みコンテンツパッケージとスキップされたコンテンツパッケージの一致は、ファイル名に依存します。 この最適化は、複数のスキップされたパッケージが同じファイル名を共有する場合、または埋め込み中にファイル名が変更された場合には行えません。
