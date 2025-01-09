@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f971857e10cbed5f7c64870c53fa7409e39493bc
+source-git-commit: c3e3905d3896d79149a386241d798f78631184b3
 workflow-type: tm+mt
-source-wordcount: '5940'
-ht-degree: 100%
+source-wordcount: '5948'
+ht-degree: 99%
 
 ---
 
@@ -224,6 +224,7 @@ ht-degree: 100%
    + [AEM as a Cloud Service のセキュリティの概要](/help/security/cloud-service-security-overview.md)
    + [AEM as a Cloud Service の高度なネットワーク機能の設定](/help/security/configuring-advanced-networking.md)
    + [AEM as a Cloud Service の IMS サポート](/help/security/ims-support.md)
+   + [ユーザーグループと製品プロファイルの同期の変更](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
    + [AEM as a Cloud Service のサイト Cookie サポートポリシー](/help/security/same-site-cookie-support.md)
    + [メールサービスの OAuth2 サポート](/help/security/oauth2-support-for-mail-service.md)
    + [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)
