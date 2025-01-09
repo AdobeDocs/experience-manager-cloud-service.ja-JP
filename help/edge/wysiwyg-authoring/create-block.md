@@ -4,10 +4,10 @@ description: Edge Delivery Services プロジェクトを使用した WYSIWYG �
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
-workflow-type: ht
+source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリン
 
 ![プロジェクトのクローン](assets/create-block/clone.png)
 
-2\.プロジェクトのルートにある `component-definition.json` ファイルを編集し、新しい引用ブロックに次の定義を追加して、ファイルを保存します。
+2\.プロジェクトのルートにある [`component-definition.json` ファイルを編集し ](/help/implementing/universal-editor/component-definition.md) 新しい引用ブロックに次の定義を追加して、ファイルを保存します。
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリン
 
 >[!ENDTABS]
 
-4\.プロジェクトのルートにある `component-filters.json` ファイルを編集し、[フィルター定義](/help/implementing/universal-editor/customizing.md#filtering-components)に引用ブロックを追加して、ブロックを任意のセクションに追加してファイルを保存できるようにします。
+4\.プロジェクトのルートにある [`component-filters.json` ファイルを編集し ](/help/implementing/universal-editor/customizing.md#filtering-components) 引用ブロックを [ フィルター定義 ](/help/implementing/universal-editor/customizing.md#filtering-components) に追加して、ブロックを任意のセクションに追加できるようにして、ファイルを保存します。
 
 >[!BEGINTABS]
 

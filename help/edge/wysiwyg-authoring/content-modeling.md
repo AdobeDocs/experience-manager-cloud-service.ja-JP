@@ -4,10 +4,10 @@ description: Edge Delivery Services プロジェクトを使用した WYSIWYG �
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: dce661331c42ba2cc082553e1e344c73556ce18d
+source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
 workflow-type: tm+mt
-source-wordcount: '2196'
-ht-degree: 98%
+source-wordcount: '2195'
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ Edge Delivery Servicesで WYSIWYG オーサリングを使用する場合、作�
 
 すべてのブロックにモデルが必要となるわけではありません。一部のブロックは、子のリスト用の単純な[コンテナ](#container)であり、それぞれの子には独自のモデルがあります。
 
-また、ユニバーサルエディターを使用して、どのブロックが存在し、どのブロックをページに追加できるのか定義する必要もあります。[`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) ファイルには、ユニバーサルエディターで使用可能になったコンポーネントの一覧が表示されます。
+また、ユニバーサルエディターを使用して、どのブロックが存在し、どのブロックをページに追加できるのか定義する必要もあります。[`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) ファイルには、ユニバーサルエディターで使用可能になるコンポーネントの一覧が記載されています。
 
 ```json
 {
@@ -112,7 +112,7 @@ Edge Delivery Servicesで WYSIWYG オーサリングを使用する場合、作�
 * ブロック名を定義する必要があります。ブロック名は、ブロックのテーブルヘッダーにレンダリングされます。
    * ブロック名は、ブロックを修飾する適切なスタイルとスクリプトを取得するために使用します。
 * [モデル ID](/help/implementing/universal-editor/field-types.md#model-structure) を定義できます。
-   * モデル ID は、作成者がプロパティパネルで使用できるフィールドを定義するコンポーネントのモデルへの参照です。
+   * モデル ID は、コンポーネントのモデルへの参照です。作成者がプロパティパネルで使用できるフィールドを定義します。
 * [フィルター ID](/help/implementing/universal-editor/customizing.md#filtering-components) を定義できます。
    * フィルター ID はコンポーネントのフィルターへの参照です。これにより、ブロックやセクションに追加できる子を制限したり、有効にする RTE 機能を制限したりするなど、オーサリング動作を変更できます。
 

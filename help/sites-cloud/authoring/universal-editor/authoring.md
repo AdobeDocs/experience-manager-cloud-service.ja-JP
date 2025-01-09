@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: e4db952e8284dba578c6b3ac86405e9ab640e7c0
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 76%
+source-wordcount: '1378'
+ht-degree: 99%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 76%
 >
 >デフォルトでは、コンテンツをタップまたはクリックすると、そのコンテンツが編集用に選択されます。リンクをたどってコンテンツを移動する場合は、[プレビューモード](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)に切り替えます。
 
-選択するコンテンツによって、異なるインプレース編集オプションが使用されたり、[ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) のコンテンツに関する追加情報やオプションが使用されたりする場合があります。
+選択したコンテンツに応じて、異なるインプレース編集オプションが設定されている場合や、[プロパティパネル](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)にコンテンツの追加情報やオプションが表示される場合があります。
 
 ### プレーンテキストの編集 {#edit-plain-text}
 
@@ -51,11 +51,11 @@ ht-degree: 76%
 
 薄い青色のアウトラインは、選択を示す濃い青色のアウトラインに変わり、カーソルが表示されます。変更を行ったら、Enter キーまたは Return キーを押すか、テキストボックスの外側を選択して、変更を保存します。
 
-テキストコンポーネントを選択すると、その詳細が [ プロパティ パネルに表示されます。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) パネル内のテキストを編集することもできます。
+テキストコンポーネントを選択すると、その詳細がプロパティパネルに表示されます。[](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)また、パネル内のテキストを編集することもできます。
 
-![ プロパティパネルでのテキストの編集 ](assets/ue-editing-text-component-rail.png)
+![プロパティパネルでのテキストの編集](assets/ue-editing-text-component-rail.png)
 
-また、テキストの詳細は、プロパティパネルにも表示されます。 変更は、フォーカスがプロパティパネルの編集したフィールドを離れると、自動的に保存されます。
+また、テキストの詳細はプロパティパネルで確認できます。フォーカスがプロパティパネルの編集されたフィールドを離れると、変更は自動的に保存されます。
 
 ### リッチテキストの編集 {#edit-rich-text}
 
@@ -75,7 +75,7 @@ ht-degree: 76%
 
 #### プロパティパネル {#properties-rail}
 
-[ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) には、選択したテキストの項目が表示されます。 エントリをタップすると、テキストを編集するための大きいキャンバスを表示するダイアログが開きます。
+[プロパティパネル](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)には、選択したテキストの項目が表示されます。エントリをタップすると、テキストを編集するための大きいキャンバスを表示するダイアログが開きます。
 
 ![リッチテキスト編集ダイアログ](assets/rich-text-canvas.png)
 
@@ -83,30 +83,30 @@ ht-degree: 76%
 
 ### メディアの編集 {#edit-media}
 
-プロパティの詳細は、[ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) に表示されます。
+詳細は、[プロパティパネル](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)で確認できます。
 
 ![メディアの編集](assets/ue-edit-media.png)
 
 1. プロパティパネルで、選択した画像のプレビューをタップまたはクリックします。
 1. [アセットセレクター](/help/assets/overview-asset-selector.md#using-asset-selector)ウィンドウが開き、アセットを選択できます。
 1. 選択して、新しいアセットを選択します。
-1. アセットを置き換えたプロパティパネルに戻るには、「**選択**」を選択します。
+1. 「**選択**」を選択して、アセットが置き換えられたプロパティパネルに戻ります。
 
 変更はコンテンツに自動的に保存されます。
 
 ### コンテンツフラグメントの編集 {#edit-content-fragment}
 
-[ コンテンツフラグメント ](/help/sites-cloud/administering/content-fragments/overview.md) を選択すると、その詳細を [ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) で編集できます。
+[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)を選択した場合、詳細は、[プロパティパネル](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)で編集できます。
 
 ![コンテンツフラグメントの編集](assets/ue-edit-cf.png)
 
-選択したコンテンツフラグメントのコンテンツモデルで定義されたフィールドが、プロパティ パネルに表示され、編集可能になります。
+選択したコンテンツフラグメントのコンテンツモデルで定義されたフィールドが、プロパティパネルに表示され編集可能になります。
 
-コンテンツフラグメントに関連するフィールドを選択すると、コンテンツフラグメントがコンポーネントパネルに読み込まれ、フィールドが自動的にスクロールされます。
+コンテンツフラグメントに関連するフィールドを選択した場合、コンポーネントパネルにコンテンツフラグメントが読み込まれ、フィールドが自動的にスクロールされます。
 
-変更は、フォーカスがプロパティパネルの編集したフィールドを離れると、自動的に保存されます。
+フォーカスがプロパティパネルの編集されたフィールドを離れると、変更は自動的に保存されます。
 
-[ コンテンツフラグメントエディター ](/help/sites-cloud/administering/content-fragments/authoring.md) でコンテンツフラグメントを編集する場合は、代わりに、プロパティパネルの [**CF エディターで開く** ボタン ](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) をタップまたはクリックします。
+代わりにコンテンツフラグメントを[コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md)で編集する場合は、プロパティパネルの [**CF エディターで開く**&#x200B;ボタン](/help/sites-cloud/authoring/universal-editor/navigation.md#edit)をタップまたはクリックします。
 
 >[!TIP]
 >
@@ -123,9 +123,12 @@ ht-degree: 76%
 ### コンテナへのコンポーネントの追加 {#adding-components}
 
 1. [コンテンツツリー](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)またはエディターでコンテナコンポーネントを選択します。
-1. 次に、プロパティパネルの「追加」アイコンを選択します。
 
    ![コンテナに追加するコンポーネントの選択](assets/ue-add-component.png)
+
+1. 次に、プロパティパネルで追加アイコンを選択します。
+
+   ![ 追加アイコンを選択 ](assets/add-icon.png)
 
 コンポーネントがコンテナに挿入され、エディターで編集できます。
 
@@ -135,8 +138,8 @@ ht-degree: 76%
 
 ### コンテナ内のコンポーネントの複製 {#duplicating-components}
 
-1. [ コンテンツツリー ](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) またはエディターを使用して、コンテナ内のコンポーネントを選択します。
-1. 次に、プロパティパネルの「**複製**」アイコンを選択します。
+1. [コンテンツツリー](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)またはエディターを使用して、コンテナ内のコンポーネントを選択します。
+1. 次に、プロパティパネルで&#x200B;**複製**&#x200B;アイコンを選択します。
 
    ![コンテナに追加するコンポーネントの選択](assets/ue-duplicate-component.png)
 1. コンポーネントが複製され、選択したコンポーネントの下に挿入されます。
@@ -169,11 +172,11 @@ ht-degree: 76%
 
 1. ドラッグしたコンポーネントがコンテンツツリー内で灰色に変わり、挿入ポイントは青い線で表されます。コンポーネントをリリースして、新しい場所に配置します。
 
-コンテンツツリーとエディターの両方で、コンポーネントの順序が変更されます。
+コンポーネントは、コンテンツツリーおよびエディターの両方で並べ替えられます。
 
 >[!NOTE]
 >
->ソースコンテナとターゲットコンテナの間に別の [ コンポーネントフィルター ](/help/implementing/universal-editor/customizing.md#filtering-components) が設定されている場合、コンポーネントをコンテナ間で移動することはできません。
+>ソースコンテナとターゲットコンテナ間で異なる[コンポーネントフィルター](/help/implementing/universal-editor/customizing.md#filtering-components)が設定されている場合、コンテナ間でコンポーネントを移動できません。
 
 ## コンテンツのプレビュー {#previewing-content}
 
