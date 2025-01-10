@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: c142ac7ad12179dd842ce6c81cc4d97ece36a197
+source-git-commit: 222636f9520c17203df632778d3f60b62369a47b
 workflow-type: tm+mt
-source-wordcount: '10543'
-ht-degree: 91%
+source-wordcount: '10564'
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,8 @@ ht-degree: 91%
 
    * 独自のビデオエンコーディングプロファイルを作成します。または、ダイナミックメディアに付属する、事前定義済みの「_アダプティブビデオエンコーディング_」プロファイルを使用します。
 
-      * [ビデオエンコーディングプロファイルを作成します](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)。
+      * [ ビデオエンコーディングプロファイルを作成します ] （/help/assets/dynamic-media/video-profiles.
+      * 出力ビデオの最大符号化解像度は、8,192 × 4,320 または 4,320 × 8,192.md#creating-a-video-encoding-profile-for-adaptive-streaming）です。
       * 詳しくは、[ビデオエンコーディングのベストプラクティス](#best-practices-for-encoding-videos)を参照してください。
 
    * ビデオ処理プロファイルを、プライマリソースビデオのアップロード先となる 1 つ以上のフォルダーに関連付けます。
@@ -41,7 +42,8 @@ ht-degree: 91%
 
    * 指定フォルダーにプライマリソースビデオをアップロードします。追加したビデオは、そのフォルダーに割り当てたビデオ処理プロファイルに従ってエンコードされます。
 
-      * Dynamic Media では、最大長 30 分、最小解像度が 25 x 25 を超える短い形式のビデオが主にサポートされています。
+      * Dynamic Mediaは主に、最大 30 分、最小解像度が 25 × 25 を超える短時間のビデオをサポートします。
+      * サポートされている入力ビデオの最大解像度は 16,384 × 16,384 です。
       * 15 GB までのビデオファイルをアップロードできます。
       * [ビデオをアップロードします](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
       * 詳しくは、[サポートされる入力ファイル形式](/help/assets/file-format-support.md)を参照してください。
@@ -104,7 +106,7 @@ ht-degree: 91%
 
 Dynamic Media のビデオは、高品質のアダプティブビデオを簡単に公開して、デスクトップ、タブレット、モバイルデバイスを含む複数の画面にストリーミングするエンドツーエンドのソリューションです。アダプティブビデオセットでは、同じビデオを、400 kbps、800 kbps、1000 kbps などの様々なビットレートと形式でエンコードしたバージョンにグループ分けします。デスクトップコンピューターまたはモバイルデバイスが、使用可能な帯域幅を検出します。
 
-例えば、iOS モバイルデバイスでは、3G、4G、Wi-Fi などの帯域幅が検出されます。次に、アダプティブビデオセット内の様々なビデオビットレートの中から、適切なエンコード済みビデオが自動的に選択されます。ビデオはデスクトップ、モバイルデバイスまたはタブレットにストリーミングされます。
+例えば、iOS モバイルデバイスでは、3G、4G、Wi-Fi などの帯域幅が検出されます。 次に、アダプティブビデオセット内の様々なビデオビットレートの中から、適切なエンコード済みビデオが自動的に選択されます。ビデオはデスクトップ、モバイルデバイスまたはタブレットにストリーミングされます。
 
 また、デスクトップまたはモバイルデバイスでネットワークの状態が変化した場合は、ビデオ画質が自動的に動的に切り替わります。また、顧客がデスクトップで全画面表示モードに入ると、アダプティブビデオセットはより高い解像度を使用して顧客の視聴エクスペリエンスを向上させるよう対応します。アダプティブビデオセットを使用すると、Dynamic Media ビデオを複数の画面とデバイスで再生する顧客にとって最適な視聴エクスペリエンスが提供されます。
 
@@ -284,16 +286,16 @@ Dynamic Media を有効にし、ビデオクラウドサービスを設定済み
 
 ビデオファイルをエンコードする場合は、可能な限り高品質のソースビデオファイルを使用します。以前にエンコードされたビデオファイルの使用は避けてください。そのようなファイルは既に圧縮済みで、さらにエンコードすると標準を下回る品質のビデオが作成されるからです。
 
-* Dynamic Media では、最大長 30 分、最小解像度が 25 x 25 を超える短い形式のビデオが主にサポートされています。
+* Dynamic Mediaは主に、最大 30 分、最小解像度が 25 × 25 を超える短時間のビデオをサポートします。
 * 15 GB までのプライマリソースビデオファイルをアップロードできます。
 
 次の表に、ソースビデオファイルのエンコード前の推奨サイズ、縦横比および最小ビットレートを示します。
 
 | サイズ | 縦横比 | 最小ビットレート |
 |--- |--- |--- |
-| 1,024 x 768 | 4:3 | 4,500 kbps（ほとんどのビデオ） |
-| 1,280 x 720 | 16:9 | 3,000～6,000 kbps（ビデオ内のモーションの量に応じて調整） |
-| 1920 x 1080 | 16:9 | 6,000～8,000 kbps（ビデオ内のモーションの量に応じて調整） |
+| 1024 × 768 | 4:3 | 4,500 kbps（ほとんどのビデオ） |
+| 1280×720 | 16:9 | 3,000～6,000 kbps（ビデオ内のモーションの量に応じて調整） |
+| 1920×1080 | 16:9 | 6,000～8,000 kbps（ビデオ内のモーションの量に応じて調整） |
 
 ### ファイルのメタデータの取得 {#obtaining-a-file-s-metadata}
 
@@ -320,7 +322,7 @@ Dynamic Media を有効にし、ビデオクラウドサービスを設定済み
 | 1.78 | 16:9 |
 | 0.56 | 9:16 |
 
-例えば、幅 1,440、高さ 1,080 のビデオの縦横比は 1,440/1,080、つまり 1.33 になります。このビデオファイルをエンコードするには、縦横比 4:3 のビデオエンコーディングプリセットを選択します。
+例えば、幅 1,440、高さ 1,080×ビデオの縦横比は 1,440/1,080 （1.33）になります。この場合、ビデオファイルをエンコードするには、縦横比が 4:3 のビデオエンコーディングプリセットを選択します。
 
 ### ビットレート {#bitrate}
 
@@ -352,16 +354,16 @@ VBR と CRB のどちらを使用するべきかVBR と CBR のどちらを選�
 
 ### 解像度 {#resolution}
 
-**解像度**&#x200B;は、ビデオファイルの高さと幅をピクセル単位で表したものです。ほとんどのソースビデオは、1920 x 1080 などの高解像度で保存されます。ストリーミング用のソースビデオは、比較的低い解像度（640 x 480 以下）に圧縮されます。
+**解像度** ビデオファイルの高さと幅をピクセル単位で表します。 ほとんどのソースビデオは、高解像度（例：1920 × 1080）で保存されます。 ストリーミング目的では、ソースビデオはより小さな解像度（640 × 480 以下）に圧縮されます。
 
-解像度とデータレートは、ビデオ画質を決定する統合的な 2 つの要素です。同じビデオ画質を維持するには、ビデオファイルのピクセル数が多いほど（解像度が高いほど）、データレートを高くする必要があります。例えば、320 x 240 の解像度と 640 x 480 の解像度のビデオファイルで、フレームあたりのピクセル数を考えてみましょう。
+解像度とデータレートは、ビデオ画質を決定する統合的な 2 つの要素です。同じビデオ画質を維持するには、ビデオファイルのピクセル数が多いほど（解像度が高いほど）、データレートを高くする必要があります。例えば、320 × 240 の解像度と 640 × 480 の解像度のビデオファイルで、フレームあたりのピクセル数を考えてみましょう。
 
 | 解像度 | フレームあたりピクセル数 |
 |--- |--- |
-| 320 x 240 | 76,800 |
-| 640 x 480 | 307,200 |
+| 320 × 240 | 76,800 |
+| 640 × 480 | 307,200 |
 
-640 x 480 ファイルのピクセル数は、フレームあたり 4 倍になります。この 2 つの解像度の例でデータレートを同じにするには、640 x 480 ファイルを 4 倍に圧縮します。これにより、ビデオの画質が低下する可能性があります。そのため、250 kbps のビデオデータレートの場合、320 x 240 の解像度では高画質になりますが、640 x 480 の解像度では高画質になりません。
+640 × 480 ファイルのピクセル数は、フレームあたり 4 倍になります。 この 2 つの解像度の例でデータレートを同じにするには、640 × 480 ファイルを 4 倍に圧縮します。これにより、ビデオの画質が低下する可能性があります。 したがって、250 Kbps のビデオデータレートの場合、320 × 240 の解像度では高画質になりますが、640 × 480 の解像度では高画質になりません。
 
 一般に、高いデータレートを使用するほど、ビデオの画質は良くなり、高い解像度を使用するほど、その画質を維持するために必要になるデータレートも（解像度が低い場合と比較して）増加します。
 
@@ -381,6 +383,8 @@ VBR と CRB のどちらを使用するべきかVBR と CBR のどちらを選�
 | 720p | 720 | 大型の画面 |
 | 1080p | 1080 | 高画質の大型の画面 |
 
+サポートされている入力ビデオの最大解像度は 16,384 × 16,384 です。 出力ビデオの最大符号化解像度は、8,192 × 4,320 または 4,320 × 8,192 です。
+
 ### Fps（1 秒あたりのフレーム数） {#fps-frames-per-second}
 
 米国と日本では、ほとんどのビデオが 29.97 fps で撮影されます。ヨーロッパでは、ほとんどのビデオが 25 fps で撮影されます。映画は 24 fps で撮影されます。
@@ -395,14 +399,14 @@ VBR と CRB のどちらを使用するべきかVBR と CBR のどちらを選�
 
 結果の比率が整数の場合、ビデオは最適に拡大／縮小されます。結果の比率が整数でない場合は、余ったピクセルのアーティファクトがディスプレイに残るので、ビデオの画質に影響します。この影響は、ビデオにテキストが含まれる場合に特に目立ちます。
 
-例えば、ソースビデオが 1920 x 1080 だとします。次の表では、エンコードされた 3 つのビデオで使用する、最適なエンコード設定を示しています。
+例えば、ソースビデオが 1920 × 1080 だとします。 次の表では、エンコードされた 3 つのビデオで使用する、最適なエンコード設定を示しています。
 
-| ビデオタイプ | 幅 x 高さ | 幅の比率 | 高さの比率 |
+| ビデオタイプ | 幅×高さ | 幅の比率 | 高さの比率 |
 |--- |--- |--- |--- |
-| ソース | 1920 x 1080 | 1 | 1 |
-| エンコード済み | 960 x 540 | 2 | 2 |
-| エンコード済み | 640 x 360 | 3 | 3 |
-| エンコード済み | 480 x 270 | 4 | 4 |
+| ソース | 1920×1080 | 1 | 1 |
+| エンコード済み | 960 × 540 | 2 | 2 |
+| エンコード済み | 640 × 360 | 3 | 3 |
+| エンコード済み | 480 × 270 | 4 | 4 |
 
 ### エンコードされたビデオのファイル形式 {#encoded-video-file-format}
 
@@ -438,7 +442,7 @@ Dynamic Media では、MP4 H.264 ビデオエンコーディングプリセッ�
 
 **ビデオレポートを表示するには：**
 
-1. Experience Manager の左上隅にある Experience Manager ロゴを選択します。左側のレールで、![ ハンマーアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg)/**[!UICONTROL Assets]**/**[!UICONTROL ビデオレポート]** をクリックします。
+1. Experience Manager の左上隅にある Experience Manager ロゴを選択します。左パネルで、![ハンマーアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg)／**[!UICONTROL アセット]**／**[!UICONTROL ビデオレポート]**&#x200B;をクリックします。
 1. ビデオレポートページで、次のいずれかの操作を行います。
 
    * 右上隅付近にある&#x200B;**[!UICONTROL ビデオレポートを更新]**&#x200B;アイコンを選択します。「更新」を使用するのは、レポートの終了日が今日の日付である場合のみです。この機能によって、前回のレポート実行以降に発生したビデオトラッキングを確認できます。
@@ -528,7 +532,7 @@ Dynamic Media では、次のサポートを有効にすることができます
 
 | 機能 | 説明 |
 | --- | --- |
-| DASH | DASH（HTTP での動的アダプティブストリーミング）はビデオストリーミングの国際標準であり、様々なビデオビューアーで広く採用されています。アカウントで DASH が有効になっている場合は、アダプティブビデオストリーミング用に DASH または HLS のいずれかを選択できます。ビューアのプリセットで再生タイプとして「**[!UICONTROL 自動]**」が選択されていると、プレーヤー間の自動切り替えで両方を選択できます。<br> アカウントで DASH を有効にする主なメリットには、次のようなものがあります。<ul><li>アダプティブビットレートストリーミング用に DASH ストリームビデオをパッケージ化できます。この方法では配信の効率が向上します。アダプティブストリーミングにより、顧客に最適な視聴エクスペリエンスが提供されます。</li><li>Dynamic Media プレイヤーでブラウザーに最適化されたストリーミングにより、HLS と DASH のストリーミングを切り替え、最高のサービス品質を確保できます。Safari ブラウザーを使用すると、ビデオプレーヤーが HLS に自動的に切り替わります。</li><li>ビデオビューアプリセットを編集して、優先ストリーミング方式（HLS または DASH）を設定できます。</li><li>最適化されたビデオエンコーディングにより、DASH 機能を有効にしながら、追加のストレージを使用しなくて済みます。HLS と DASH の両方に対して 1 つのビデオエンコーディングセットが作成され、ビデオの保存コストが最適化されます。</li><li>顧客がビデオ配信をアクセスしやすくなります。</li><li>API を使用してストリーミング URL を取得することもできます。</li></ul> |
+| DASH | DASH（HTTP での動的アダプティブストリーミング）はビデオストリーミングの国際標準であり、様々なビデオビューアーで広く採用されています。アカウントで DASH が有効になっている場合は、アダプティブビデオストリーミング用に DASH または HLS のいずれかを選択できます。ビューアのプリセットで再生タイプとして「**[!UICONTROL 自動]**」が選択されていると、プレーヤー間の自動切り替えで両方を選択できます。<br>アカウントで DASH を有効にする場合の主なメリットには、次のようなものがあります。<ul><li>アダプティブビットレートストリーミング用に DASH ストリームビデオをパッケージ化できます。この方法では配信の効率が向上します。アダプティブストリーミングにより、顧客に最適な視聴エクスペリエンスが提供されます。</li><li>Dynamic Media プレイヤーでブラウザーに最適化されたストリーミングにより、HLS と DASH のストリーミングを切り替え、最高のサービス品質を確保できます。Safari ブラウザーを使用すると、ビデオプレーヤーが HLS に自動的に切り替わります。</li><li>ビデオビューアプリセットを編集して、優先ストリーミング方式（HLS または DASH）を設定できます。</li><li>最適化されたビデオエンコーディングにより、DASH 機能を有効にしながら、追加のストレージを使用しなくて済みます。HLS と DASH の両方に対して 1 つのビデオエンコーディングセットが作成され、ビデオの保存コストが最適化されます。</li><li>顧客がビデオ配信をアクセスしやすくなります。</li><li>API を使用してストリーミング URL を取得することもできます。</li></ul> |
 | マルチキャプションとオーディオトラック | 複数のキャプションとオーディオトラックのサポートが自動的に有効になるというメリットが得られます。有効にすると、以降にアップロードするすべてのビデオは、新しいバックエンドアーキテクチャで処理されるようになります。このアーキテクチャには、ビデオへの複数のキャプションおよびオーディオトラックを追加するサポートが含まれます。 |
 | AI 生成キャプション（限定提供） | AI を活用したビデオのキャプションを作成します。AI を使用して、ビデオのトランスクリプトを作成し、キャプションに変換します。タイムラインも定義されています。 |
 
@@ -704,8 +708,8 @@ Dynamic Media で複数のキャプションとオーディオトラック機能
 
 1. 既にビデオプロファイルが割り当てられている[フォルダーにプライマリビデオをアップロード](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)します。
 1. 複数のキャプションおよびオーディオトラックを追加する、アップロード済みビデオアセットに移動します。
-1. アセット選択モードで ![ カード表示アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （カード表示）または ![ リスト表示アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （リスト表示）からビデオアセットを選択します。
-1. ツールバーで、![ 情報アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) プロパティをクリックします。
+1. アセット選択モードで、![カードを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg)（カード表示）または ![リストを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)（リスト表示）からビデオアセットを選択します。
+1. ツールバーで、![情報アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) プロパティをクリックします。
    ![ビデオのサムネール画像の上にチェックマークが付いている、選択したビデオアセットと、ツールバーでハイライト表示されている「プロパティを表示」。](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*カード表示で選択したビデオアセット。*
 1. ビデオのプロパティページで、「**[!UICONTROL キャプションとオーディオトラック]**」タブを選択します。
 
@@ -718,12 +722,12 @@ Dynamic Media で複数のキャプションとオーディオトラック機能
    >上記のいずれかのタスクを完了したら、次の手順に戻ります。
 
    ![プロパティページの「キャプションとオーディオトラック」タブ。](/help/assets/dynamic-media/assets/msma-audiotracks.png)
-   *ビデオのプロパティページの「キャプションとオーディオトラック」タブ*
+   *ビデオのプロパティページの「キャプションとオーディオトラック」タブ。*
 
 1. ビデオに 1 つまたは複数のオーディオトラックを追加するには、次の手順を実行します。
    1. 「**[!UICONTROL オーディオトラックをアップロード]**」を選択します。
    1. 1 つまたは複数の .mp3 ファイルに移動して選択し、開きます。
-   1. メディアプレーヤーの&#x200B;**[!UICONTROL オーディオまたはキャプションを選択]**&#x200B;ポップアップリストでオーディオトラックを表示するには、各オーディオトラックファイルに関する必要な詳細を追加することが必要です。これにより、すべてのオーディオトラックが適切にリストされ、アクセスできます。オーディオトラックファイル名の右側にある ![ 描画アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) をクリックします。 **オーディオトラックを編集**&#x200B;ダイアログボックスで、次の必要な詳細情報を入力します。
+   1. メディアプレーヤーの&#x200B;**[!UICONTROL オーディオまたはキャプションを選択]**&#x200B;ポップアップリストでオーディオトラックを表示するには、各オーディオトラックファイルに関する必要な詳細を追加することが必要です。これにより、すべてのオーディオトラックが適切にリストされ、アクセスできます。オーディオトラックのファイル名の右側にある ![描画アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) をクリックします。**オーディオトラックを編集**&#x200B;ダイアログボックスで、次の必要な詳細情報を入力します。
 
       | オーディオトラックメタデータ | 説明 |
       |--- |--- |
@@ -748,13 +752,13 @@ Dynamic Media で複数のキャプションとオーディオトラック機能
    | **オプション 3** | キャプションファイル（`.vtt`）内のテキストを修正し、再度アップロードして古い `.vtt` ファイルを置き換えてから、修正したファイルを AI で翻訳する場合。<br>以下の&#x200B;**オプション 3** を参照してください。 | **[!UICONTROL キャプションを翻訳]** |
 
    ![「キャプションを作成」オプション。](/help/assets/dynamic-media/assets/msma-createcaption.png)
-   *キャプションを作成ドロップダウンメニューには、ファイルのアップロード、オーディオトラックの変換、キャプションの翻訳の 3 つのオプションが用意されています。*
+   *キャプションを作成ドロップダウンメニューには、「ファイルをアップロード」、「オーディオトラックを変換」、「キャプションを翻訳」の 3 つのオプションがあります。*
 
 +++**オプション 1：***使用する言語の既存の独自のキャプションファイルを自分で用意します*（「**[!UICONTROL ファイルをアップロード]**」オプション）
 
    1. ページの右上付近で、**[!UICONTROL キャプションを作成]**／**[!UICONTROL ファイルをアップロード]**&#x200B;をクリックします。
    1. 1 つまたは複数の既存の `.vtt` ファイルに移動して選択し、開きます。
-   1. キャプションをメディアプレーヤーに表示するには、アップロードした&#x200B;*各*&#x200B;キャプションファイルに関する必要な詳細を追加することが&#x200B;*必要*&#x200B;です。キャプションファイル名の右側にある ![ 描画アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) をクリックします。 **キャプションを編集**&#x200B;ダイアログボックスで、次の必要なファイルの詳細情報を入力します。
+   1. キャプションをメディアプレーヤーに表示するには、アップロードした&#x200B;*各*&#x200B;キャプションファイルに関する必要な詳細を追加することが&#x200B;*必要*&#x200B;です。キャプションファイル名の右側にある ![描画アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) をクリックします。**キャプションを編集**&#x200B;ダイアログボックスで、次の必要なファイルの詳細情報を入力します。
 
       | キャプションメタデータ | 説明 |
       |--- |--- |
@@ -787,8 +791,8 @@ Dynamic Media で複数のキャプションとオーディオトラック機能
 
       | オプション | 説明 |
       |--- |--- |
-      | 変換するオーディオトラック | ![ 山形の下アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) をクリックし、AI を使用してキャプションを生成する、アップロード済みオーディオトラックファイルを選択します。 |
-      | 出力言語 | ![ 山形の下向きアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) をクリックし、キャプションファイルを表示する言語を 1 つ以上選択します。<br> 選択した言語を削除するには、![ 閉じるアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) をクリックします。<br>ビデオの再生中、ここで選択した順序でメディアプレーヤーに言語のリストが表示されます。 |
+      | 変換するオーディオトラック | ![山形下向きアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) をクリックし、AI を使用してキャプションを生成する、アップロードされたオーディオトラックファイルを選択します。 |
+      | 出力言語 | ![山形下向きアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) をクリックし、キャプションファイルを表示する言語を 1 つ以上選択します。<br>選択した言語を削除するには、![閉じるアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) をクリックします。<br>ビデオの再生中、ここで選択した順序でメディアプレーヤーに言語のリストが表示されます。 |
 
    1. 「**[!UICONTROL 完了]**」をクリックします。
    1. ページの右上隅付近にある&#x200B;**[!UICONTROL 保存して閉じる]**&#x200B;ドロップダウンで、「**[!UICONTROL 保存]**」をクリックします。
@@ -798,7 +802,7 @@ Dynamic Media で複数のキャプションとオーディオトラック機能
       >
       >インスタンスのキャッシュ設定に基づき、メタデータ処理がプレビューおよび公開済み URL に反映されるまでに数分かかる場合があります。
 
-   1. （オプション）キャプションファイル名の右側にある ![ 描画アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) をクリックします。 **キャプションを編集**&#x200B;ダイアログボックスで、次のファイルの詳細情報を編集できます。
+   1. （オプション）キャプションファイル名の右側にある ![描画アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) をクリックします。**キャプションを編集**&#x200B;ダイアログボックスで、次のファイルの詳細情報を編集できます。
 
       | キャプションメタデータ | 説明 |
       | --- | --- |
@@ -817,12 +821,12 @@ Dynamic Media で複数のキャプションとオーディオトラック機能
       ![キャプションを翻訳ダイアログボックス。](/help/assets/dynamic-media/assets/msma-translate-captions.png)
       *キャプションを翻訳ダイアログボックスでは、既存のキャプションファイルを使用して、AI に複数の言語の新しいキャプションファイルを生成させることができます。*
 
-   1. **キャプションを翻訳** ダイアログボックスで、次のオプションを設定します。
+   1. **キャプションを翻訳**&#x200B;ダイアログボックスで、次のオプションを設定します。
 
       | オプション | 説明 |
       |--- |--- |
-      | 翻訳するキャプション | ![ 山形の下アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) をクリックし、AI を使用してキャプションを生成するキャプションファイルを選択します。 |
-      | 出力言語 | ![ 山形の下向きアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) をクリックし、キャプションファイルを表示する言語を 1 つ以上選択します。<br> 選択した言語を削除するには、![ 閉じるアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) をクリックします。<br>ビデオの再生中、ここで選択した順序でメディアプレーヤーに言語のリストが表示されます。 |
+      | 翻訳するキャプション | ![山形下向きアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) をクリックし、AI を使用してキャプションを生成するキャプションファイルを選択します。 |
+      | 出力言語 | ![山形下向きアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) をクリックし、キャプションファイルを表示する言語を 1 つ以上選択します。<br>選択した言語を削除するには、![閉じるアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) をクリックします。<br>ビデオの再生中、ここで選択した順序でメディアプレーヤーに言語のリストが表示されます。 |
 
    1. 「**[!UICONTROL 完了]**」をクリックします。
    1. ページの右上隅付近にある&#x200B;**[!UICONTROL 保存して閉じる]**&#x200B;ドロップダウンで、「**[!UICONTROL 保存]**」をクリックします。
@@ -832,7 +836,7 @@ Dynamic Media で複数のキャプションとオーディオトラック機能
       >
       >インスタンスのキャッシュ設定に基づき、メタデータ処理がプレビューおよび公開済み URL に反映されるまでに数分かかる場合があります。
 
-   1. （オプション）キャプションファイル名の右側にある ![ 描画アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) をクリックします。 **キャプションを編集**&#x200B;ダイアログボックスで、次のファイルの詳細情報を編集できます。
+   1. （オプション）キャプションファイル名の右側にある ![描画アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) をクリックします。**キャプションを編集**&#x200B;ダイアログボックスで、次のファイルの詳細情報を編集できます。
 
       | キャプションメタデータ | 説明 |
       | --- | --- |
@@ -884,10 +888,10 @@ Dynamic Media では、URL 修飾子を使用して、ビデオにキャプシ�
 **ビデオのライフサイクルステータスを表示するには：**
 
 1. ライフサイクルステータスを表示するビデオアセットに移動します。
-1. アセット選択モードで ![ カード表示アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （カード表示）または ![ リスト表示アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （リスト表示）からビデオアセットを選択します。
-1. ツールバーで、![ 情報アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) プロパティをクリックします。
-1. **プロパティ** ページで、「**[!UICONTROL キャプションとオーディオトラック]**」タブを選択します。
-1. **[!UICONTROL ステータス]** 列に、各キャプションまたはオーディオファイルの状態が表示されます。
+1. アセット選択モードで、![カードを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg)（カード表示）または ![リストを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)（リスト表示）からビデオアセットを選択します。
+1. ツールバーで、![情報アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) プロパティをクリックします。
+1. **プロパティ**&#x200B;ページで、「**[!UICONTROL キャプションとオーディオトラック]**」タブを選択します。
+1. **[!UICONTROL ステータス]**&#x200B;列で、各キャプションファイルまたはオーディオファイルのステートをメモします。
 
 | キャプションとオーディオトラックのステータス | 説明 |
 | --- | --- |
@@ -914,16 +918,16 @@ Dynamic Media では、URL 修飾子を使用して、ビデオにキャプシ�
 **複数のオーディオトラックがあるビデオのデフォルトオーディオを設定するには：**
 
 1. デフォルトのオーディオトラックを設定するビデオアセットに移動します。
-1. アセット選択モードで ![ カード表示アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （カード表示）または ![ リスト表示アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （リスト表示）からビデオアセットを選択します。
-1. ツールバーで、![ 情報アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) プロパティをクリックします。
+1. アセット選択モードで、![カードを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg)（カード表示）または ![リストを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)（リスト表示）からビデオアセットを選択します。
+1. ツールバーで、![情報アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) プロパティをクリックします。
 1. プロパティページで、「**[!UICONTROL キャプションとオーディオトラック]**」タブを選択します。
 1. **オーディオトラック**&#x200B;の見出しで、ビデオのデフォルトとして設定するオーディオトラックファイルを選択します。
-1. ![ オーディオアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg)**[!UICONTROL デフォルトとして設定]** をクリックします。
-1. **デフォルトとして設定** ダイアログボックスで、「**[!UICONTROL 置換]**」をクリックします。
+1. ![オーディオアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg)「**[!UICONTROL デフォルトとして設定]**」をクリックします。
+1. **デフォルトとして設定**&#x200B;ダイアログボックスで、「**[!UICONTROL 置換]**」をクリックします。
 
    ![選択したオーディオトラックファイル名と、ハイライトされた「デフォルトとして設定」ボタンが表示されたオーディオトラックの見出し。](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*ビデオのデフォルトオーディオトラックの設定*
 
-1. 右上隅にある「保存して閉じる **[!UICONTROL をクリックし]** す。
+1. 右上隅で「**[!UICONTROL 保存して閉じる]**」をクリックします。
 1. ビデオを公開します。詳しくは、[アセットの公開](publishing-dynamicmedia-assets.md)を参照してください。
 
 ### 複数のキャプションとオーディオトラックがあるビデオのプレビュー {#preview-video-audio-subtitle}
@@ -942,20 +946,20 @@ Dynamic Media では、URL 修飾子を使用して、ビデオにキャプシ�
 
 1. **[!UICONTROL アセット]**&#x200B;で、複数のキャプションとオーディオトラックを追加した既存のビデオに移動します。
 1. ビデオアセットをクリックして、プレビューモードで開きます。
-1. プレビューページで、ページの左上隅付近にある ![ 左パネルのアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg)![ 山形の下アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) をクリックし、「**[!UICONTROL ビューア]**」を選択します。
+1. プレビューページで、ページの左上隅付近にある ![左パネルアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) ![山形下向きアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) をクリックし、「**[!UICONTROL ビューア]**」を選択します。
 
    ![「ビューアー」オプションを表示するドロップダウンリスト。](/help/assets/dynamic-media/assets/msma-selectviewers.png)
 
-1. ページの左上隅付近にある ![ 左パネル アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) ビューア ![ 下向き山形記号のアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) をクリックし、ビデオプレビューに使用するビューアを選択します。
+1. ページの左上隅付近にある ![左パネルアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg)「ビューア」![山形下向きアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) をクリックし、ビデオプレビューに使用するビューアを選択します。
 
-1. ページの右下隅付近にある吹き出しアイコンをクリックし、聞く、見る、またはその両方を希望するオーディオまたは字幕/キャプションを選択します。
+1. ページの右下隅付近にある吹き出しアイコンをクリックし、聞きたい、見たい、またはその両方を行いたいオーディオまたはサブタイトル／キャプションを選択します。
 
    ![ビデオビューアーのオーディオとキャプションのポップアップリスト。](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*ビデオ再生用のオーディオとキャプションを選択するユーザーのシミュレーション。*
 
-1. 再生を開始するには、![ 再生アイコン ](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg) をクリックします。
-必要に応じて、![ 最大化アイコン ](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Maximize_22_N.svg) をクリックして、表示ウィンドウを最大化します。
-ページの左下隅付近に「**[!UICONTROL URL]**」ボタンと **[!UICONTROL 埋め込み]** ボタンがあることに注意してください。 これらのボタンはそれぞれ、[web アプリケーションにビデオの URL をリンクする](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)ため、[web ページにビデオを埋め込む](/help/assets/dynamic-media/embed-code.md)ために使用します。
-1. プレビューページの右上隅付近にある「**[!UICONTROL 閉じる]** をクリックします。
+1. 再生を開始するには、![再生アイコン](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg) をクリックします。
+必要に応じて、![最大化アイコン](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Maximize_22_N.svg) をクリックして、表示ウィンドウを最大化します。
+ページの左下隅付近にある「**[!UICONTROL URL]**」ボタンと「**[!UICONTROL 埋め込み]**」ボタンをクリックします。これらのボタンはそれぞれ、[web アプリケーションにビデオの URL をリンクする](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)ため、[web ページにビデオを埋め込む](/help/assets/dynamic-media/embed-code.md)ために使用します。
+1. プレビューページの右上隅付近にある「**[!UICONTROL 閉じる]**」をクリックします。
 
 ### ビデオからのキャプションまたはオーディオトラックファイルの削除
 
@@ -966,13 +970,13 @@ Dynamic Media では、URL 修飾子を使用して、ビデオにキャプシ�
 **ビデオからキャプションファイルまたはオーディオトラックファイルを削除するには：**
 
 1. デフォルトのオーディオトラックを設定するビデオアセットに移動します。
-1. アセット選択モードで ![ カード表示アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （カード表示）または ![ リスト表示アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （リスト表示）からビデオアセットを選択します。
-1. ツールバーで、![ 情報アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) プロパティをクリックします。
+1. アセット選択モードで、![カードを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg)（カード表示）または ![リストを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)（リスト表示）からビデオアセットを選択します。
+1. ツールバーで、![情報アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) プロパティをクリックします。
 1. プロパティページで、「**[!UICONTROL キャプションとオーディオトラック]**」タブを選択します。
 1. 次のいずれかの操作を行います。
 
-   * キャプション – 「**キャプション**」見出しの下で、ビデオから削除する 1 つ以上のキャプションファイルを選択し、![ 削除アイコン ](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg)**[!UICONTROL 削除]** をクリックします。
-   * オーディオトラック – 「**オーディオトラック**」見出しの下で、ビデオから削除する 1 つ以上のオーディオトラックファイルを選択し、![ 削除アイコン ](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL 削除]** をクリックします。
+   * キャプション - **キャプション**&#x200B;の見出しで、ビデオから削除する 1 つまたは複数のキャプションファイルを選択し、![削除アイコン](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg)「**[!UICONTROL 削除]**」をクリックします。
+   * オーディオトラック - **オーディオトラック**&#x200B;の見出しで、ビデオから削除する 1 つまたは複数のオーディオトラックファイルを選択し、![削除アイコン](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg)「**[!UICONTROL 削除]**」をクリックします。
 
 1. 削除ダイアログボックスで、「**[!UICONTROL OK]**」をクリックします。
 1. ビデオを公開します。
@@ -988,13 +992,13 @@ Dynamic Media では、URL 修飾子を使用して、ビデオにキャプシ�
 **ビデオにアップロードされたキャプションまたはオーディオトラックファイルをダウンロードするには：**
 
 1. デフォルトのオーディオトラックを設定するビデオアセットに移動します。
-1. アセット選択モードで ![ カード表示アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （カード表示）または ![ リスト表示アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （リスト表示）からビデオアセットを選択します。
-1. ツールバーで、![ 情報アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) プロパティをクリックします。
-1. **プロパティ** ページで、「**[!UICONTROL キャプションとオーディオトラック]**」タブを選択します。
+1. アセット選択モードで、![カードを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg)（カード表示）または ![リストを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)（リスト表示）からビデオアセットを選択します。
+1. ツールバーで、![情報アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) プロパティをクリックします。
+1. **プロパティ**&#x200B;ページで、「**[!UICONTROL キャプションとオーディオトラック]**」タブを選択します。
 1. 次のいずれかの操作を行います。
 
-   * キャプション – 「**キャプション**」見出しの下で、ビデオからダウンロードする 1 つ以上のキャプションファイルを選択し、![ ダウンロードアイコン ](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg)**[!UICONTROL ダウンロード]** をクリックします。
-   * オーディオトラック – 「**オーディオトラック**」見出しの下で、ビデオからダウンロードする 1 つ以上のオーディオトラックファイルを選択し、![ ダウンロードアイコン ](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg)**[!UICONTROL ダウンロード]** をクリックします。
+   * キャプション - **キャプション**&#x200B;見出しで、ビデオからダウンロードする 1 つ以上のキャプションファイルを選択し、![ダウンロードアイコン](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg)「**[!UICONTROL ダウンロード]**」をクリックします。
+   * オーディオトラック - **オーディオトラック**&#x200B;見出しで、ビデオからダウンロードする 1 つ以上のオーディオトラックファイルを選択し、![ダウンロードアイコン](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg)「**[!UICONTROL ダウンロード]**」をクリックします。
 
 1. ダウンロードダイアログボックスで、以下のオプションを設定します。
 
@@ -1004,7 +1008,7 @@ Dynamic Media では、URL 修飾子を使用して、ビデオにキャプシ�
    | アセットごとに個別のフォルダーを作成 | ダウンロード用に選択したキャプションファイルまたはオーディオトラックファイルごとにフォルダーを作成します。 |
    | メール | デフォルトのメールプログラムを使用して、.zip ファイルを指定したメールアドレスに送信します。 |
    | アセット | ダウンロードするファイルの数と、選択したすべてのファイルの合計サイズを指定します。このオプションの選択を解除すると、「**[!UICONTROL ダウンロード]**」ボタンが暗くなり（オフになり）、ファイルをダウンロードできなくなります。 |
-   | レンディション | レンディションとは、元のファイルの代替バージョンまたはプレビューのことで、通常は解像度の低いバージョンや小さいバージョンです。 0 B と表示されている場合は、代替バージョンがないか、サイズを登録するには小さすぎる可能性があります。 |
+   | レンディション | レンディションとは、元のファイルの代替バージョンまたはプレビューを指し、通常は小さいまたは低い解像度のバージョンです。0 B と表示される場合は、代替バージョンが使用できないか、サイズを登録するには小さすぎる可能性があります。 |
 
 1. 「**[!UICONTROL ダウンロード]**」を選択します。
 1. ビデオを公開します。詳しくは、[アセットの公開](publishing-dynamicmedia-assets.md)を参照してください。
@@ -1079,11 +1083,11 @@ URL での JSON 機能の使用について詳しくは、[静的な（画像以
 
      キャプションパスの末尾にある `,1` に注意します。パスの VTT ファイル名拡張子の直後で、ビデオプレーヤーバーのクローズドキャプションボタンの有効（オン）と無効（オフ）を任意に切り替えることができます。それぞれ、`,1` または `,0` を設定します。
 
-   * 埋め込みビデオビューアエクスペリエンスの場合、「**[!UICONTROL 埋め込みコード]**」をクリックします。 埋め込みコードダイアログボックスで、埋め込みコードを選択してクリップボードにコピーし、そのコードを単純なテキストエディターに貼り付けます。コピーした埋め込みコードを次の構文で追加します。
+   * 埋め込みビデオビューアエクスペリエンスの場合は、「**[!UICONTROL 埋め込みコード]**」をクリックします。埋め込みコードダイアログボックスで、埋め込みコードを選択してクリップボードにコピーし、そのコードを単純なテキストエディターに貼り付けます。コピーした埋め込みコードを次の構文で追加します。
 
      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-     キャプションのパスの末尾に `,1` が表示されます。 パスの VTT ファイル名拡張子の直後で、ビデオプレーヤーバーのクローズドキャプションボタンの有効（オン）と無効（オフ）を任意に切り替えることができます。それぞれ、`,1` または `,0` を設定します。
+     キャプションパスの末尾にある `,1` に注意します。パスの VTT ファイル名拡張子の直後で、ビデオプレーヤーバーのクローズドキャプションボタンの有効（オン）と無効（オフ）を任意に切り替えることができます。それぞれ、`,1` または `,0` を設定します。
 
 ## ビデオにチャプターマーカーを追加 {#adding-chapter-markers-to-video}
 
@@ -1091,7 +1095,7 @@ URL での JSON 機能の使用について詳しくは、[静的な（画像以
 
 >[!NOTE]
 >
->ビデオプレーヤーが、チャプターマーカーの使用をサポートしている必要があります。Dynamic Media ビデオプレーヤーは、チャプターマーカーをサポートしていますが、サードパーティのビデオプレーヤーは、チャプターマーカーをサポートしているとは限りません。
+>ビデオプレーヤーが、チャプターマーカーの使用をサポートしている必要があります。 Dynamic Media ビデオプレーヤーは、チャプターマーカーをサポートしていますが、サードパーティのビデオプレーヤーは、チャプターマーカーをサポートしているとは限りません。
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -1185,26 +1189,26 @@ Experience Manager 内のすべてのビデオには、サムネールを関連�
 
 
 1. サムネイル画像を変更するアップロード済みビデオアセットに移動します。
-1. アセット選択モードで ![ カード表示アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （カード表示）または ![ リスト表示アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （リスト表示）からビデオアセットを選択します。
-1. ツールバーで、![ 情報アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) プロパティをクリックします。
-1. ビデオのプロパティページで、「**[!UICONTROL サムネイルを変更]**」をクリックします。
-1. [ サムネイルを変更 ] ダイアログ ボックスで、次のいずれかの操作を行います。
+1. アセット選択モードで、![カードを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg)（カード表示）または ![リストを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)（リスト表示）からビデオアセットを選択します。
+1. ツールバーで、![情報アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) プロパティをクリックします。
+1. ビデオのプロパティページで、「**[!UICONTROL サムネールを変更]**」をクリックします。
+1. サムネールを変更ダイアログボックスで、次のいずれかの操作を行います。
 
    * ビデオのフレームを新しいサムネイルとして使用するには：
 
-      * ツールバーの「**[!UICONTROL ビデオからフレームを選択]**」タブをクリックします。
-      * ![ 再生アイコン ](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg) をクリックします。
-      * ビデオの新しいサムネールとしてキャプチャするフレーム上で ![ 一時停止アイコン ](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PauseCircle_22_N.svg) をクリックします。
+      * ツールバーで「**[!UICONTROL ビデオからフレームを選択]**」タブをクリックします。
+      * ![再生アイコン](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg) をクリックします。
+      * ビデオの新しいサムネールとしてキャプチャするフレームの ![一時停止アイコン](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PauseCircle_22_N.svg) をクリックします。
 
    * 画像アセットを新しいサムネールとして使用するには、次の手順を行います。
 
-      * ツールバーの「**[!UICONTROL Assetsからサムネールを選択]**」タブをクリックします。
-      * **[!UICONTROL サムネールを選択]** ボタンをクリックします。
+      * ツールバーで「**[!UICONTROL アセットからサムネールを選択]**」タブをクリックします。
+      * 「**[!UICONTROL サムネールを選択]**」ボタンをクリックします。
       * 使用を希望する、以前にアップロードおよび公開された画像アセットに移動します。アセットは、ビデオのサムネール画像として機能するように自動的にサイズ変更されます。
       * 画像アセットを選択し、「**[!UICONTROL 選択]**」をクリックします。
 
-1. [ サムネイルを変更 ] ダイアログ ボックスで、[**[!UICONTROL 変更を保存]**] をクリックします。
-1. ビデオのプロパティページで、右上隅にある **[!UICONTROL 保存して閉じる]** または **[!UICONTROL 保存]** をクリックします。
+1. サムネールを変更ダイアログボックスで、「**[!UICONTROL 変更を保存]**」をクリックします。
+1. ビデオのプロパティページで、右上隅にある「**[!UICONTROL 保存して閉じる]**」または「**[!UICONTROL 保存]**」をクリックします。
 
 
 
@@ -1218,7 +1222,7 @@ Based on the total time of the video, Dynamic Media captures ten (default) thumb
 
 Ideally, you can add a video thumbnail anytime after you upload your video but before you publish the video on your website.
 
-If you prefer, you can choose to upload a custom thumbnail to represent your video instead of using a thumbnail generated by Dynamic Media. For example, you could create a custom thumbnail image that has the title of your video, an eye-catching opening image, or a very specific image captured from your video. The custom video thumbnail image that you upload should have a maximum resolution of 1280 x 720 pixels (minimum width of 640 pixels) and be no larger than 2MB.
+If you prefer, you can choose to upload a custom thumbnail to represent your video instead of using a thumbnail generated by Dynamic Media. For example, you could create a custom thumbnail image that has the title of your video, an eye-catching opening image, or a very specific image captured from your video. The custom video thumbnail image that you upload should have a maximum resolution of 1280 &times; 720 pixels (minimum width of 640 pixels) and be no larger than 2MB.
 
 See also [About video thumbnails](/help/assets/dynamic-media/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
@@ -1321,7 +1325,7 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
 
 #### getVideoManifestURI API パラメーター
 
-この API では、次の 3 つのパラメーターを取り込みます。
+この API は、次の 3 つのパラメーターを取ります。
 
 | パラメーター | 説明 |
 | --- | --- |
