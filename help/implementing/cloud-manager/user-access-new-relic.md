@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
-workflow-type: ht
-source-wordcount: '1803'
-ht-degree: 100%
+source-git-commit: 8f8662360d23926df91e91881e78dadea33504f0
+workflow-type: tm+mt
+source-wordcount: '1812'
+ht-degree: 96%
 
 ---
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service 用の New Relic One APM には、多くの機能があ�
 
    * また、「**ユーザーを管理**」オプションにアクセスすることもできます。プログラムの&#x200B;**環境**&#x200B;画面の上部にある ![Smock のその他のアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
-1. **New Relic ユーザーを管理**&#x200B;ダイアログで、追加するユーザーの氏名を入力し、「**追加**」ボタンをクリックします。追加するすべてのユーザーについて、この手順を繰り返します。
+1. **New Relic ユーザーの管理** ダイアログボックスで、追加するユーザーの姓名を入力し、「**追加**」ボタンをクリックします。 追加するすべてのユーザーについて、この手順を繰り返します。
 
    ![ユーザーを追加](assets/newrelic-add-users.png)
 
@@ -174,7 +174,7 @@ New Relic からメールが届かない場合は、次の操作を実行しま�
 New Relic One にユーザーを追加する場合は、次の制限が適用されます。
 
 * 最大 30 人のユーザーを追加できます。ユーザーの最大数に達した場合は、新しいユーザーを追加できるように、ユーザーを削除します。
-* New Relic に追加されたユーザーは、**制限付き**&#x200B;のタイプになります。詳しくは、[New Relic のドキュメント](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)を参照してください。
+* New Relic に追加されたユーザーは、**制限付き**&#x200B;のタイプになります。詳しくは、[New Relic のドキュメント](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/introduction-managing-users/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)を参照してください。
 * AEM as a Cloud Service は New Relic One APM ソリューションのみを提供し、アラート、ログ、API 統合のサポートは提供していません。
 
 >[!NOTE]
@@ -194,14 +194,14 @@ AEM as a Cloud Service プログラムの New Relic One 製品に関する詳細
 New Relic One アカウントは、アドビが管理するプライマリアカウントに接続されており、複数のアプリケーションがレポートを作成します。AEM as a Cloud Service 環境ごとに 3 つあります。
 
 * 環境ごとにオーサーサービス用の 1 つのアプリケーション
-* 環境ごとにパブリッシュサービス用の 1 つのアプリケーション（ゴールデンパブリッシュを含む）
+* 環境ごとに `Publish` サービス用の 1 つのアプリケーション（ゴールデンPublishを含む）
 * 環境ごとにプレビューサービス用の 1 つのアプリケーション
 
 メモ：
 
 * 各アプリケーションは、1 つのライセンスキーを使用します。
 * AEM as a Cloud Service 環境は、1 つの New Relic One アカウントにのみレポートします。
-* 両方の New Relic One の完全なモニタリング指標およびイベントは、7 日間保持されます。
+* 両方のNew Relic Oneの完全なモニタリング指標およびイベントは、3 か月間保持されます。 &lt;!— CQDOC-22238 - 7 日間から 3 か月間に更新。 >
 +++
 
 +++**アドビは New Relic Oneからのアラート通知を送信しますか？** {#alerting-new-relic}
