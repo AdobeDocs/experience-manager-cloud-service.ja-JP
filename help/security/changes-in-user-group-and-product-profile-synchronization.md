@@ -5,13 +5,13 @@ feature: Security
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 32ce30ce136a714e277e00197d38ea380c777377
+exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
+source-git-commit: ccfcecb77c7999784d6eaf6c1c6cfcb4269f5c80
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
 
 ---
-
 
 # ユーザーグループと製品プロファイルの同期の変更 {#changes-in-user-group-and-product-profile-synchronization}
 
@@ -43,3 +43,4 @@ Cloud Managerの環境のアクションメニューで「管理 **アクセス 
 ![Admin Consoleのサフィックス ](/help/security/assets/admin-console-profile-suffixes.png)
 
 万一、AEM アプリケーションで、AEMに表示されないグループが参照されている場合は、代わりに、i）適切なAEM インスタンスの製品プロファイルまたは ii） Adobe Admin Console ユーザーグループを使用するようにします。
+
