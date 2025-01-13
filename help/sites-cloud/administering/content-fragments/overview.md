@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 98%
+source-wordcount: '1857'
+ht-degree: 97%
 
 ---
 
 # コンテンツフラグメントの操作の概要 {#overview-working-with-content-fragments}
+
+>[!IMPORTANT]
+>
+>早期導入プログラムを通じて、コンテンツフラグメントおよびコンテンツフラグメントモデルの様々な機能を利用できます。
+>
+>ステータスを確認し、興味がある場合に適用する方法について詳しくは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
 Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツを設計、作成、キュレーション、公開できます。複数の場所、複数のチャネル上で使用可能なコンテンツを用意でき、[ヘッドレス配信](/help/headless/what-is-headless.md)や[ページオーサリング](/help/sites-cloud/authoring/fragments/content-fragments.md)に理想的です。
 
@@ -20,7 +26,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 >
 >コンテンツフラグメントには、**コンテンツフラグメント**&#x200B;と **Assets** の 2 つのコンソールからアクセスできます。
 >
->また、コンテンツフラグメントをオーサリングするためのエディターも 2 つあります。基本機能は同じですが、いくつかの違いがあります。 両方のエディターには、両方のコンソールからアクセスできます。
+>また、コンテンツフラグメントをオーサリングするエディターは 2 つあります。基本機能は同じですが、いくつか違いがあります。両方のエディターは、両方のコンソールからアクセスできます。
 >
 >この節では、**コンテンツフラグメント**&#x200B;コンソールと&#x200B;*新しい*&#x200B;コンテンツフラグメントエディターについて説明します。これらはヘッドレスコンテンツ配信用に開発されています（ただし、すべてのシナリオで使用できます）。
 >
@@ -83,16 +89,19 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 >
 >詳しくは、[AEM のコンテンツフラグメントとエクスペリエンスフラグメントについて](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments)を参照してください。
 
-このページおよび以下のページでは、コンテンツフラグメントを作成、設定、維持管理および使用するためのタスクについて説明しています。
+このページおよび次のページでは、コンテンツフラグメントを作成、設定、維持管理および使用するためのタスクについて説明します。
 
-* [インスタンスに対するコンテンツフラグメント機能を有効にする](/help/sites-cloud/administering/content-fragments/setup.md)
+* [お使いのインスタンスでコンテンツフラグメント機能を有効にする](/help/sites-cloud/administering/content-fragments/setup.md)
 * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - モデルを有効化、作成および定義します。
 * [コンテンツフラグメントを作成](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)（コンテンツフラグメントコンソールを使用）
 
 フラグメントが作成されたら、次の操作を実行できます。
 
-* [コンテンツフラグメントコンソールを使用](/help/sites-cloud/administering/content-fragments/managing.md) - フラグメントにアクセスし、それを公開（プレビューまたは実稼動へ）、参照する
-* [コンテンツフラグメントエディターを使用](/help/sites-cloud/administering/content-fragments/authoring.md) - フラグメントを編集、公開（プレビューまたは実稼動へ）し、参照する
+* [ コンテンツフラグメントコンソールの使用 ](/help/sites-cloud/administering/content-fragments/managing.md) – 次の操作を行います。
+   * フラグメントへのアクセス、公開（プレビューまたは実稼動用）、参照
+* [ コンテンツフラグメントエディターの使用 ](/help/sites-cloud/administering/content-fragments/authoring.md) – 次の操作を行います。
+   * フラグメントを編集、公開（プレビューまたは実稼動用）、参照します。
+   * コメントを使用した他の作成者との共同作業
 * [分析](/help/sites-cloud/administering/content-fragments/analysis.md)  エディターを使用したコンテンツフラグメントの構造
 * [GraphQL を使用してフラグメントにアクセスし、アプリケーションへのヘッドレス配信を実現します](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)。
 * [または、フラグメントをページオーサリングに使用します。](/help/sites-cloud/authoring/fragments/content-fragments.md)
@@ -177,7 +186,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 * [コンテンツフラグメントコンポーネント（参照コンポーネント）を使用することで、ページエディター内で](/help/sites-cloud/authoring/fragments/content-fragments.md)使用できます。
 
-   * [コンテンツフラグメントのコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ja)は、ページの作成者が使用できます。作成者は、必要なコンテンツフラグメントを HTML または JSON 形式で参照し、配信できます。
+   * [コンテンツフラグメントのコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ja)は、ページの作成者が使用できます。作成者は、コンテンツフラグメントコンポーネントを使用して、必要なコンテンツフラグメントを HTML または JSON 形式で参照し、配信できます。
 
 コンテンツフラグメントは、次のようなコンテンツ構造です。
 
@@ -190,14 +199,14 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 作成者がより柔軟にコンテンツをコントロールできるように、画像をコンテンツフラグメントに追加したり、コンテンツフラグメントと統合したりできます。
 
-アセットは、様々な方法でコンテンツフラグメントと使用できます。どの方法にもそれぞれの利点があります
+コンテンツフラグメントアセットは、（直接的または間接的に）次の構成要素からなります。
 
 * **コンテンツ参照**&#x200B;として
 * **複数行テキスト**&#x200B;フィールド内に
 
 ### コンテンツフラグメントの構成要素 {#constituent-parts-of-a-content-fragment}
 
-コンテンツフラグメントのアセットは、（直接的または間接的に）次の構成要素から構成されます。
+コンテンツフラグメントアセットは、（直接的または間接的に）次の構成要素からなります。
 
 * **フラグメントの要素**
 

@@ -5,10 +5,10 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: abc114373f5db501bb8709fd2d4c33aebc1c5ec9
-workflow-type: ht
-source-wordcount: '2504'
-ht-degree: 100%
+source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
+workflow-type: tm+mt
+source-wordcount: '2518'
+ht-degree: 99%
 
 ---
 
@@ -314,6 +314,10 @@ ht-degree: 100%
 1. 全画面表示エディターを閉じても、注釈はハイライト表示されたままです。それを選択するとダイアログボックスが開くので、そこで注釈をさらに編集できます。
 
    ![注釈](assets/cfm-variations-07c.png)
+
+>[!NOTE]
+>
+>注釈機能では、新しい [ コンテンツフラグメントエディター ](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment) に入力されたコメントが表示されません。
 
 ### 注釈の表示、編集、削除 {#viewing-editing-deleting-annotations}
 
