@@ -4,10 +4,10 @@ description: アセットビューのクイック公開を使用すると、ア�
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, Dynamic Media
 role: User
-source-git-commit: 8ab19fe82fc390d28d33b17222177fd8486c8fc7
-workflow-type: ht
-source-wordcount: '1209'
-ht-degree: 100%
+source-git-commit: 991888d532b3396054bd04c11c7257b61c337725
+workflow-type: tm+mt
+source-wordcount: '1212'
+ht-degree: 86%
 
 ---
 
@@ -22,18 +22,18 @@ Experience Manager Assets ビューでは、アセットを AEM や Dynamic Medi
 
 ## 始める前に {#before-you-begin}
 
-AEM および Dynamic Media の公開オプションを表示するには、次の設定を行います。
+これらの設定を構成して、AEMおよびDynamic Mediaの公開オプションを表示します。
 
-* Dynamic Media の公開オプションを表示するには、管理ビューを使用して、次の設定を行います。
+* Dynamic Mediaの公開オプションを表示するには、「管理者」ビューを使用して次の設定を行います。
 
    * [Dynamic Media クラウド設定を作成します](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)。
    * フォルダーレベルで Dynamic Media 公開モードを設定します。これらの設定は、Dynamic Media クラウド設定の作成中にも設定できます。フォルダーレベルでこれらの設定を上書きする方法について詳しくは、[Dynamic Media のフォルダーレベルでの選択的公開の設定](/help/assets/dynamic-media/selective-publishing.md)を参照してください。
 
-* AEM の公開オプションを表示するには、環境に合わせて AEM パブリッシュエンドポイントを設定する必要があります。
+* AEMの公開オプションを表示するには、ご利用の環境にAEM パブリッシュエンドポイントを設定する必要があります。
 
 ## アップロード中のアセットの公開 {#piblish-assets-during-upload}
 
-アセットをフォルダーにアップロードしながら、AEM および Dynamic Media にアセットを公開できます。表示される公開オプションは、アセットがアップロードされるフォルダーに設定されている Dynamic Media 公開モードによって異なります。Dynamic Media 公開モードは、次のように設定できます。
+アセットをフォルダーにアップロードしながら、AEM および Dynamic Media にアセットを公開できます。表示される公開オプションは、アセットのアップロード先フォルダーのDynamic Media公開モード設定によって異なります。 Dynamic Media 公開モードは、次のように設定できます。
 
 * **アクティベーション時：**&#x200B;アセットをこのフォルダーにアップロードする際は、URL／埋め込みリンクが提供される前に、最初にアセットを明示的に公開する必要があります。
 
@@ -42,7 +42,7 @@ AEM および Dynamic Media の公開オプションを表示するには、次�
 
 ### アクティベーション時への Dynamic Media 公開モードの設定 {#dynamic-media-publish-mode-set-to-upon-activation}
 
-**アクティベーション時**&#x200B;に Dynamic Media 公開モードを設定したフォルダーへのアップロード中にアセットを公開するには：
+Dynamic Media Publish モードが **アクティベーション時** に設定されているフォルダーにアセットをアップロードする際にアセットを公開するには：
 
 1. **アセットを追加**／**参照**／**ファイルを参照**&#x200B;をクリックして、アセットをアップロードする適切なフォルダーに移動します。「**公開オプション**」セクションには、**DM 公開モード**&#x200B;が&#x200B;**アクティベーション時**として表示されます。
    ![アクティベーション時のアップロード画像](/help/assets/assets/upload-uactivation.svg)
@@ -50,15 +50,15 @@ AEM および Dynamic Media の公開オプションを表示するには、次�
 
 ### Dynamic Media 公開モードを即時に設定 {#dynamic-media-publish-mode-set-to-immediate}
 
-Dynamic Media 公開モードを&#x200B;**即時**&#x200B;に設定したフォルダーへのアップロード中にアセットを公開するには：
+Dynamic Media Publish モードが **即時** に設定されているフォルダーにアセットをアップロードしながら公開するには：
 
-1. **アセットを追加**／**参照**／**ファイルを参照**&#x200B;をクリックして、アセットをアップロードする適切なフォルダーに移動します。「公開オプション」セクションには、**DM 公開モード**&#x200B;が&#x200B;**即時**として表示されます。
+1. **アセットを追加**／**参照**／**ファイルを参照**&#x200B;をクリックして、アセットをアップロードする適切なフォルダーに移動します。「**Publishオプション**」セクションには、「**DM Publishモード** が **即時** と表示されます。
    ![ファイルのアップロード画像 - 即時モード](/help/assets/assets/resized-image-pdf-svg-new.svg)
 
 
    Dynamic Media 公開モードは&#x200B;**即時**&#x200B;なので、「**アップロード**」をクリックすると、アップロードしたアセットは自動的に Dynamic Media に公開されます。
 
-2. アップロードしたアセットを AEM に公開するには、「**AEM に公開**」を選択し、「アップロード」をクリックします。
+2. **AEMにPublish** を選択して、アップロードしたアセットをAEMに公開し、「アップロード」をクリックします。
 
    「**AEM に公開**」を選択した場合、アセットは AEM と Dynamic Media に公開され、それ以外の場合はアセットは Dynamic Media に公開されます。
 
@@ -68,7 +68,7 @@ Dynamic Media 公開モードを&#x200B;**即時**&#x200B;に設定したフォ�
 
 Dynamic Media 公開モードを&#x200B;**選択的公開**&#x200B;に設定したフォルダーへのアップロード中にアセットを公開するには：
 
-1. **アセットを追加**／**参照**／**ファイルを参照**&#x200B;をクリックして、アセットをアップロードする適切なフォルダーに移動します。「公開オプション」セクションには、**DM 公開モード**&#x200B;が&#x200B;**選択的公開**として表示されます。
+1. **アセットを追加**／**参照**／**ファイルを参照**&#x200B;をクリックして、アセットをアップロードする適切なフォルダーに移動します。「**Publishオプション**」セクションには、「**DM Publishモード** が **選択Publish** として表示されます。
    ![アップロード画像 - 選択的公開モード](/help/assets/assets/upload-selective.svg)
 
 2. 要件に応じて「**AEM に公開**」、「**Dynamic Media に公開**」、またはその両方を選択し、「**アップロード**」をクリックします。
