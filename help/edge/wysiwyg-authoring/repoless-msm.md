@@ -1,17 +1,17 @@
 ---
-title: 複数サイト管理のレポート
+title: Repoless マルチサイト管理
 description: 1 つのコードベースを活用するローカライズされたサイトを使用してリポジトリ方式でプロジェクトを設定する方法に関するベストプラクティスの推奨事項を説明します。各サイトはEdge Delivery Servicesによって提供されます。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: e25e21984ebadde7076d95c6051b8bfca5b2ce03
+exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
+source-git-commit: 42218450ab03201c69c59053f720954183f4b652
 workflow-type: tm+mt
 source-wordcount: '1222'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-
-# 複数サイト管理のレポート {#repoless-msm}
+# Repoless マルチサイト管理 {#repoless-msm}
 
 1 つのコードベースを活用するローカライズされたサイトを使用してリポジトリ方式でプロジェクトを設定する方法に関するベストプラクティスの推奨事項を説明します。各サイトはEdge Delivery Servicesによって提供されます。
 
@@ -140,7 +140,7 @@ MSM リポジトリのユースケースを設定するには、いくつかの�
                    "admin": [
                        "*@adobe.com"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },

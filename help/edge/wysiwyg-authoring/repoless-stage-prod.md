@@ -1,17 +1,17 @@
 ---
-title: レポートステージと実稼働環境
+title: Repoless ステージと実稼動環境
 description: 単一のコードベースをリポジトリで活用して、ステージング環境と実稼動環境用に個別のサイトを設定する方法を説明します。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 709d0661286d023c5cec51be2c51a1123ef7deb6
+exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
+source-git-commit: 42218450ab03201c69c59053f720954183f4b652
 workflow-type: tm+mt
 source-wordcount: '654'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-
-# レポートステージと実稼働環境 {#repoless-stage-prod}
+# Repoless ステージと実稼動環境 {#repoless-stage-prod}
 
 単一のコードベースをリポジトリで活用して、ステージング環境と実稼動環境用に個別のサイトを設定する方法を説明します。
 
@@ -73,7 +73,7 @@ ht-degree: 1%
                    "admin": [
                        "*@adobe.com"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },
