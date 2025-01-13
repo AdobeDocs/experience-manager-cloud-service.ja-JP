@@ -6,7 +6,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
-source-git-commit: ccfcecb77c7999784d6eaf6c1c6cfcb4269f5c80
+source-git-commit: 605a8032430b1be4aacebfcf73cfc16ba7691349
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ユーザーがAEM as a Cloud Serviceにログインしたりアクセストークンが使用されたりすると、Adobe Admin Console ユーザーグループ、製品プロファイルおよび製品プロファイルサービスがグループとしてAEM リポジトリに同期されます。
 
-1 月 28 日（PT）に、UI の混乱を減らし、パフォーマンスを最適化するために、同期の動作にいくつかの変更が加えられ、AEMに表示されるグループが少なくなります。 次の 2 つのカテゴリのAEM グループが削除されます。
+1 月 27 日（PT）に、UI の混乱を減らし、パフォーマンスを最適化するために、同期の動作にいくつかの変更が加えられ、AEMに表示されるグループが少なくなります。 次の 2 つのカテゴリのAEM グループが削除されます。
 
 1. サフィックス `GROUP_NAME_SUFFIX` のAEM グループ これらのグループは、Adobe Developer Consoleには表示されませんが、AEM グループ管理画面には表示されます（下図を参照）。 万一、AEM アプリケーションがこれらのグループを参照する場合は、代わりに、このサフィックスを付けずにAdobe Admin Console ユーザーグループを参照してください。
 
