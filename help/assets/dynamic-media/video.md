@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 222636f9520c17203df632778d3f60b62369a47b
+source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
 workflow-type: tm+mt
-source-wordcount: '10564'
-ht-degree: 96%
+source-wordcount: '10560'
+ht-degree: 97%
 
 ---
 
@@ -31,8 +31,8 @@ ht-degree: 96%
 
    * 独自のビデオエンコーディングプロファイルを作成します。または、ダイナミックメディアに付属する、事前定義済みの「_アダプティブビデオエンコーディング_」プロファイルを使用します。
 
-      * [ ビデオエンコーディングプロファイルを作成します ] （/help/assets/dynamic-media/video-profiles.
-      * 出力ビデオの最大符号化解像度は、8,192 × 4,320 または 4,320 × 8,192.md#creating-a-video-encoding-profile-for-adaptive-streaming）です。
+      * [ビデオエンコーディングプロファイルを作成します](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)。
+      * 出力ビデオの最大符号化解像度は、8,192 × 4,320 または 4,320 × 8,192.md です。
       * 詳しくは、[ビデオエンコーディングのベストプラクティス](#best-practices-for-encoding-videos)を参照してください。
 
    * ビデオ処理プロファイルを、プライマリソースビデオのアップロード先となる 1 つ以上のフォルダーに関連付けます。
