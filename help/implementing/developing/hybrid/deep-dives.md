@@ -4,10 +4,10 @@ description: AEM SPA エディター SDK は、一連の AEM Gems セッショ�
 exl-id: 93c950be-be80-42d5-93eb-805a91b6ebba
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1ad37259616147113a222267ffeb3956cb5ac9bf
 workflow-type: tm+mt
 source-wordcount: '266'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -17,6 +17,6 @@ AEM SPA エディター SDK は、一連の AEM Gems セッションで特集さ
 
 ## Gem セッション {#gem-sessions}
 
-* **[AEM SPA エディター](https://helpx.adobe.com/jp/experience-manager/kt/eseminars/gems/aem-spa-editor.html)** - 初心者向けに、SPA エディターの概要を説明します。AEM で SPA を使い始めたばかりの方は、こちらをご覧ください。
-* **[SPA エディター SDK の詳細 - 第 1 部 - React](https://helpx.adobe.com/jp/experience-manager/kt/eseminars/gems/SPA-Editor-SDK-Deep-Dive-React.html)** - AEM ページエディターを使用して作成できる単一ページアプリの開発に深く掘り下げます。プロジェクトの構造に関する考慮事項やレコメンデーションの説明、プロジェクトのアーキテクチャを構成するすべてのレイヤーの確認、AEM と SPA のコンポーネントの役割、モデルオブジェクトの構造と主要な JSON フィールドなど。
-* **[SPA エディター SDK の詳細 - 第 2 部 - Angular](https://helpx.adobe.com/jp/experience-manager/kt/eseminars/gems/SPA-Editor-SDK-Deep-Dive-Angular.html)** - AEM ページエディターを使用して作成できる単一ページアプリの開発について詳しく説明します。プロジェクトの構造に関する考慮事項やレコメンデーションの説明、プロジェクトのアーキテクチャを構成するすべてのレイヤーの確認、AEM と SPA のコンポーネントの役割、モデルオブジェクトの構造と主要な JSON フィールドなど。
+* **[AEM SPA エディター](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2018/aem-spa-editor)** - 初心者向けに、SPA エディターの概要を説明します。AEM で SPA を使い始めたばかりの方は、こちらをご覧ください。
+* **[SPA エディター SDK の詳細 - 第 1 部 - React](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2018/spa-editor-sdk-deep-dive-react)** - AEM ページエディターを使用して作成できる単一ページアプリの開発に深く掘り下げます。プロジェクトの構造に関する考慮事項やレコメンデーションの説明、プロジェクトのアーキテクチャを構成するすべてのレイヤーの確認、AEM と SPA のコンポーネントの役割、モデルオブジェクトの構造と主要な JSON フィールドなど。
+* **[SPA エディター SDK の詳細 - 第 2 部 - Angular](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2018/spa-editor-sdk-deep-dive-angular)** - AEM ページエディターを使用して作成できる単一ページアプリの開発について詳しく説明します。プロジェクトの構造に関する考慮事項やレコメンデーションの説明、プロジェクトのアーキテクチャを構成するすべてのレイヤーの確認、AEM と SPA のコンポーネントの役割、モデルオブジェクトの構造と主要な JSON フィールドなど。
