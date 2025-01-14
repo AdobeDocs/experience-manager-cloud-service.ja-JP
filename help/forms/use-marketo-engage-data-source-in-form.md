@@ -4,15 +4,15 @@ Description: Learn how to use Marketo Engage schema in Adaptive Forms.
 Keywords: Use Marketo Engage data source in Adaptive Forms, How to connect a Marketo instance data source with form? , Connect a form to Marketo.
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 15%
+ht-degree: 17%
 
 ---
 
-
-# 既存のアダプティブFormsのMarketo Engageデータソースを設定する
+# 既存のアダプティブフォーム用の Marketo Engage データソースの設定
 
 <span class="preview">機能は、早期導入プログラムで利用できます。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID で aem-forms-ea@adobe.com までメールを送信してください。</span>
 
@@ -36,16 +36,18 @@ Marketo Engageを既存のAEM Formsと統合するためのクラウドサービ
 
 ## 既存のアダプティブフォームをMarketo Engageデータソース用に設定する方法
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442871/marketo-aem-forms-aem-marketo-engage)
+
 アダプティブフォームにMarketo Engageデータソースを設定するには、次の手順を実行します。
 1. [!DNL Experience Manager Forms] オーサーインスタンスにログインします。
 
-1. アダプティブフォームを編集用に開きます。
-1. コンテンツツリーを開き、「**[!UICONTROL ガイドコンテナ]**」を選択します。
-1. アダプティブフォームコンテナのプロパティ（![アダプティブフォームコンテナのプロパティ](/help/forms/assets/configure-icon.svg) アイコン）をクリックします。データソースを設定するための「アダプティブフォームコンテナ」ダイアログボックスが開きます。
-1. 「**[!UICONTROL データモデル]**」タブを開き、フォームモデルを「**コネクタ**」として選択します。
-1. ドロップダウンリストから **[!UICONTROL コネクタ]** を選択します。
+2. アダプティブフォームを編集用に開きます。
+3. コンテンツツリーを開き、「**[!UICONTROL ガイドコンテナ]**」を選択します。
+4. アダプティブフォームコンテナのプロパティ（![アダプティブフォームコンテナのプロパティ](/help/forms/assets/configure-icon.svg) アイコン）をクリックします。データソースを設定するための「アダプティブフォームコンテナ」ダイアログボックスが開きます。
+5. 「**[!UICONTROL データモデル]**」タブを開き、フォームモデルを「**コネクタ**」として選択します。
+6. ドロップダウンリストから **[!UICONTROL コネクタ]** を選択します。
 
-1. **[!UICONTROL コネクタ]** を選択したら、クラウド設定を選択できます。
+7. **[!UICONTROL コネクタ]** を選択したら、クラウド設定を選択できます。
 
    ![Marketo コネクタの選択 ](/help/forms/assets/select-marketo-connector.png)
 
@@ -53,7 +55,7 @@ Marketo Engageを既存のAEM Formsと統合するためのクラウドサービ
 
    ![Marketo データSource](/help/forms/assets/marketo-engage-data-source.png)
 
-1. 「**[!UICONTROL 完了]**」をクリックします。
+8. 「**[!UICONTROL 完了]**」をクリックします。
 
 または、アダプティブフォームのプロパティを編集して、関連する設定を変更することもできます。
 
@@ -81,5 +83,3 @@ Marketo Engageを既存のAEM Formsと統合するためのクラウドサービ
 ## 関連トピック
 
 {{marketo-engage-see-also}}
-
-

@@ -4,15 +4,15 @@ Description: Learn how to configure the submit action of Adaptive Form to send d
 Keywords: Submit data to Marketo engage, Configure submit action as Submit to Marketo Engage
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 18%
+ht-degree: 20%
 
 ---
 
-
-# 既存のフォームをMarketo Engageするための送信アクションの設定
+# 既存のフォーム用の Marketo Engage に対する送信アクションの設定
 
 <span class="preview">機能は、早期導入プログラムで利用できます。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID で aem-forms-ea@adobe.com までメールを送信してください。</span>
 
@@ -34,13 +34,15 @@ Marketo Engageへの送信アクションを設定するための前提条件は
 
 ## 既存のフォームをMarketo Engageに送信する方法を教えてください。
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442866/submit-action-marketo-engage-marketo-aem-aem-forms-engage)
+
 アダプティブフォームの送信アクションを、Adobe Marketo Engageにデータを送信するように設定できます。 Marketo Engageに対する送信アクションを設定するには、次の手順を実行します。
 
 1. アダプティブフォームを編集用に開きます。
-1. コンテンツツリーを開き、「**[!UICONTROL ガイドコンテナ]**」を選択します。
-1. アダプティブフォームコンテナのプロパティ（![アダプティブフォームコンテナのプロパティ](/help/forms/assets/configure-icon.svg) アイコン）をクリックします。送信アクションを設定するための「アダプティブフォームコンテナ」ダイアログボックスが開きます。
-1. 「**[!UICONTROL 送信]**」タブを開き、送信アクションを「**Marketo Engageに送信** として選択します。
-1. 「**[!UICONTROL 完了]**」をクリックします。
+2. コンテンツツリーを開き、「**[!UICONTROL ガイドコンテナ]**」を選択します。
+3. アダプティブフォームコンテナのプロパティ（![アダプティブフォームコンテナのプロパティ](/help/forms/assets/configure-icon.svg) アイコン）をクリックします。送信アクションを設定するための「アダプティブフォームコンテナ」ダイアログボックスが開きます。
+4. 「**[!UICONTROL 送信]**」タブを開き、送信アクションを「**Marketo Engageに送信** として選択します。
+5. 「**[!UICONTROL 完了]**」をクリックします。
 
 ![Marketo送信操作 ](/help/forms/assets/marketo-engage-submit-action.png){width=50%, height=50%}
 
