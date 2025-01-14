@@ -4,7 +4,7 @@ description: この記事では、フロントエンド開発者が AEM 向け S
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '2028'
 ht-degree: 100%
@@ -16,6 +16,8 @@ ht-degree: 100%
 単一ページアプリケーション（SPA）により、web サイトのユーザーに魅力的なエクスペリエンスを提供することができます。開発者は SPA フレームワークを使用してサイトを構築したいと考え、作成者はそうして構築されたサイトのコンテンツを AEM 内でシームレスに編集したいと考えています。
 
 この記事では、フロントエンド開発者が AEM 向けの SPA を開発する際に考慮すべき重要な問題を紹介し、SPA を AEM にデプロイする際に関する AEM のアーキテクチャの概要を説明します。
+
+{{ue-over-spa}}
 
 ## AEM 向け SPA 開発原則 {#spa-development-principles-for-aem}
 

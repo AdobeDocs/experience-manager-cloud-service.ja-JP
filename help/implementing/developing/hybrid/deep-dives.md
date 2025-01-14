@@ -4,7 +4,7 @@ description: AEM SPA エディター SDK は、一連の AEM Gems セッショ�
 exl-id: 93c950be-be80-42d5-93eb-805a91b6ebba
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1ad37259616147113a222267ffeb3956cb5ac9bf
+source-git-commit: 9441c4e489cc338548aa632a568f45dc567d66cf
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 98%
@@ -14,6 +14,8 @@ ht-degree: 98%
 # SPA の詳細 {#spa-deep-dives}
 
 AEM SPA エディター SDK は、一連の AEM Gems セッションで特集されました。[ Adobe Experience Manager Gems](https://helpx.adobe.com/jp/experience-manager/kt/eseminars/gems/aem-index.html) は、アドビのエキスパートによる技術的な詳細の解説シリーズです。アドビエンジニアが主催するこのシリーズは、AEM SPA エディター SDK を低レベルでより深く理解するための優れたガイドとして機能します。
+
+{{ue-over-spa}}
 
 ## Gem セッション {#gem-sessions}
 

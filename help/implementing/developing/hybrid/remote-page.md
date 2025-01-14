@@ -4,7 +4,7 @@ description: RemotePage コンポーネントは、AEM 内のリモート React 
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 # RemotePage コンポーネント {#remote-page-component}
 
 外部 SPA と AEM の間で[どのレベルの統合](/help/implementing/developing/headful-headless.md)を行うかを決める際に、AEM 内で SPA を表示して編集できる必要があることはよくあります。RemotePage コンポーネントは、この目的のためのカスタムページコンポーネントです。
+
+{{ue-over-spa}}
 
 ## 概要 {#overview}
 

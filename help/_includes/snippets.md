@@ -1,8 +1,8 @@
 ---
-source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
+source-git-commit: f6be839d58b796b3791342375ff61d17b1f8cb0f
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 88%
+source-wordcount: '1367'
+ht-degree: 96%
 
 ---
 # スニペット {#snippets}
@@ -53,8 +53,8 @@ ht-degree: 88%
 * [Workfront Fusion に送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Salesforce アプリケーションにアダプティブフォームを接続](/help/forms/aem-forms-salesforce-integration.md)
 * [Microsoft へのアダプティブフォームの接続](/help/forms/ms-dynamics-odata-configuration.md)
-* [アダプティブフォームのAdobe Marketo Engageへの接続](/help/forms/integrate-form-to-marketo-engage.md)
-* [カスタム送信アクションを作成](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+* [Adobe Marketo Engage にアダプティブフォームを接続](/help/forms/integrate-form-to-marketo-engage.md)
+* [カスタム送信アクションの作成](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## 関連トピック {#see-more-forms-eds}
 
@@ -114,9 +114,9 @@ ht-degree: 88%
    </td>
    </tr>
    <tr>
-   <td>パネル間の移動</td>
-   <td> <b> 次へボタン </b> コンポーネントと <b> 前へボタン </b> コンポーネントを使用して、パネル間を移動できます。 コンテナ内に配置されたナビゲーションボタンは、その子要素に対して機能します</td>
-   <td> <b> パネル内のナビゲーション </b> ルールはルールエディターで使用でき、ユーザーはパネルの子間を移動するためのルールを作成できます。
+   <td>パネル間を移動</td>
+   <td> <b>次へボタン</b>コンポーネントと<b>前へボタン</b>コンポーネントを使用して、パネル間を移動できます。コンテナ内に配置されたナビゲーションボタンで、その子要素を操作します</td>
+   <td> <b>パネル内のナビゲーション</b>ルールはルールエディターにあり、ユーザーはパネルの子間を移動するためのルールを作成できます。
    </td>
    </tr>
    </tr>
@@ -133,10 +133,10 @@ ht-degree: 88%
 * [コアコンポーネントに基づくアダプティブフォームの様々なユースケース](/help/forms/rule-editor-core-components-usecases.md)
 * [ルールエディターの様々なエディションの違い](/help/forms/rule-editor-core-components-difference-tables.md)
 * [アダプティブフォームでの非同期関数の使用](/help/forms/using-async-funct-in-rule-editor.md)
-* [コアコンポーネントに基づくフォームのビジュアルルールエディターにおける呼び出しサービスの機能強化](/help/forms/invoke-service-enhancements-rule-editor.md)
+* [コアコンポーネントに基づくフォーム用のビジュアルルールエディターの呼び出しサービスの機能強化](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要](/help/forms/create-and-use-custom-functions.md)
 * [コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成](/help/forms/custom-function-core-component-create-function.md)
-* [カスタム関数内のオブジェクトのスコープ](/help/forms/custom-function-core-component-scope-function.md)
+* [カスタム関数のスコープオブジェクト](/help/forms/custom-function-core-component-scope-function.md)
 * [カスタム関数の開発と使用の例](/help/forms/custom-function-core-components-use-cases.md)
 
 
@@ -149,10 +149,10 @@ ht-degree: 88%
 
 ## Marketo Engage{#marketo-engage-see-also}
 
-* [Marketo EngageとAEM Formsの統合](/help/forms/integrate-form-to-marketo-engage.md)
-* [Marketo Engageと統合する新しいフォームの設定 ](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-* [既存のアダプティブFormsのMarketo Engageデータソースを設定する](/help/forms/use-marketo-engage-data-source-in-form.md)
-* [既存のフォームをMarketo Engageするための送信アクションの設定](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [Marketo Engage の AEM Forms への統合](/help/forms/integrate-form-to-marketo-engage.md)
+* [Marketo Engage と統合する新しいフォームの設定](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [既存のアダプティブフォーム用の Marketo Engage データソースの設定](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [既存のフォーム用の Marketo Engage に対する送信アクションの設定](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Cloud Manager の IP 許可リストとフロントエンドパイプライン {#allowlist-frontend-pipeline}
 
@@ -189,8 +189,8 @@ ht-degree: 88%
 >
 >ユニバーサルエディターを使用する場合は、次のいずれかを行う必要があります。
 >
->* IP許可リストを有効にしないでください。
->* [ ユニバーサルエディターサービスの独自のインスタンスを実行します。](/help/implementing/universal-editor/local-dev.md)
+>* IP 許可リストを有効にしないでください。
+>* [ユニバーサルエディターサービスの独自のインスタンスを実行します。](/help/implementing/universal-editor/local-dev.md)
 
 ## Dynamic Media の操作 {#work-with-dynamic-media}
 
@@ -232,3 +232,11 @@ ht-degree: 88%
    * ライブ web サイトの URL。例：`www.mydomain.com`。
    * オリジン web サイトの URL（`.hlx` URL）。
 
+## SPA Editor よりもユニバーサルエディターが推奨されます {#ue-over-spa}
+
+>[!IMPORTANT]
+>
+>SPA エディターは引き続きAdobeでサポートされますが、AEMでヘッドレスコンテンツを管理するための推奨されるエディターは次のとおりです。
+>
+>* ヘッドレスコンテンツを視覚的に編集する [ ユニバーサルエディター ](/help/edge/wysiwyg-authoring/authoring.md)。
+>* ヘッドレスコンテンツのフォームベースの編集のための [ コンテンツフラグメントエディター ](/help/assets/content-fragments/content-fragments-managing.md)。

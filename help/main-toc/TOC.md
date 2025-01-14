@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 07539e1f0907b87d0b866a2cbcd534bb2c87692b
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
 workflow-type: tm+mt
-source-wordcount: '5957'
+source-wordcount: '5954'
 ht-degree: 99%
 
 ---
@@ -1213,7 +1213,8 @@ ht-degree: 99%
       + [サイトのクイック作成とフロントエンドのカスタマイズ](/help/implementing/developing/introduction/quick-site-creation.md)
       + [フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [サイトのテンプレートとテーマのカスタマイズ](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
-      + [AEM におけるヘッドフルとヘッドレス](/help/implementing/developing/headful-headless.md)
+      + [AEMにおけるヘッドフルとヘッドレス](/help/implementing/developing/headful-headless.md)
+      + [Sling Model Exporter による ResourceResolvers のシリアル化を許可しない](/help/implementing/developing/disallow-resourceresolver-serialization.md)
       + フルスタック AEM 開発 {#full-stack}
          + [AEM Sites の開発の手引き - WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
          + [AEM UI の構造](/help/implementing/developing/introduction/ui-structure.md)
@@ -1278,11 +1279,9 @@ ht-degree: 99%
          + [RemotePage コンポーネント](/help/implementing/developing/hybrid/remote-page.md)
          + [AEM 内での外部 SPA の編集](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [SPA の複合コンポーネント](/help/implementing/developing/hybrid/composite-components.md)
-         + [サーバーサイドレンダリング](/help/implementing/developing/hybrid/ssr.md)
          + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=ja)
          + [ローンチの統合](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA リファレンスドキュメント](/help/implementing/developing/hybrid/reference-materials.md)
-         + [Sling Model Exporter による ResourceResolvers のシリアル化を許可しない](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
    + 開発者ツール {#developer-tools}
       + [開発者モード](/help/implementing/developing/tools/developer-mode.md)
       + [Eclipse 用 AEM 開発者ツール](/help/implementing/developing/tools/eclipse.md)

@@ -4,7 +4,7 @@ description: SPA では、ページコンポーネントは子コンポーネン
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 # SPA ページコンポーネント {#spa-page-component}
 
 SPA のページコンポーネントは、JSP ファイルまたは HTL のファイルやリソースオブジェクトを介して子コンポーネントの HTML 要素を提供しません。この処理は SPA フレームワークに委任されます。子コンポーネントの表現は、JSON データ構造（モデル）として取得されます。次に、指定された JSON モデルに従って SPA コンポーネントがページに追加されます。そのため、ページコンポーネントの初期本文の構成は、その対応するプリレンダリング HTML とは異なります。
+
+{{ue-over-spa}}
 
 ## ページモデルの管理  {#page-model-management}
 

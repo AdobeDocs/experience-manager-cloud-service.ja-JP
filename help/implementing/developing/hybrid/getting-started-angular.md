@@ -4,8 +4,8 @@ description: この記事では、SPA アプリケーションの例とその設
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 100%
 
@@ -20,6 +20,8 @@ SPA オーサリング機能には、AEM 内で SPA をサポートするため�
 >[!NOTE]
 >
 >この記事は Angular フレームワークに基づいています。対応する React フレームワークのドキュメントについては、「 [AEM での SPA の使用 - React](getting-started-react.md)」を参照してください。
+
+{{ue-over-spa}}
 
 ## はじめに {#introduction}
 

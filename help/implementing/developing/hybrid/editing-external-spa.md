@@ -4,16 +4,18 @@ description: このドキュメントでは、スタンドアロン SPA を AEM 
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
-source-wordcount: '2374'
-ht-degree: 100%
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
+workflow-type: tm+mt
+source-wordcount: '2370'
+ht-degree: 99%
 
 ---
 
 # AEM 内での外部 SPA の編集 {#editing-external-spa-within-aem}
 
 外部 SPA と AEM の間で[どのレベルの統合](/help/implementing/developing/headful-headless.md)を行うかを決める際に、多くの場合、AEM 内で SPA を編集および表示できる必要があることを考慮してください。
+
+{{ue-over-spa}}
 
 ## 概要 {#overview}
 
@@ -79,7 +81,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 * `path` - 初期化時に、定義されたパスのモデルが取得され、`ModelStore` に保存されます。このパスは、必要に応じて初期化時に `rootModel` を取得するのに使用できます。
 * `modelClient` - モデルの取得を担当するカスタムクライアントを提供できます。
-* `model` - 通常、[SSR を使用](/help/implementing/developing/hybrid/ssr.md)する場合に入力されるパラメーターとして渡される `model` オブジェクト。
+* `model` - SSR の使用時に生成されるパラメーターとして渡される `model` オブジェクト。
 
 ### AEM 認証可能なリーフコンポーネント {#authorable-leaf-components}
 
@@ -375,4 +377,3 @@ AEM のコンテキストで SPA を理解するには、次の参照資料が�
 * [SPA リファレンス資料（API リファレンス）](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA 青写真と PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
 * [SPA モデルルーティング](/help/implementing/developing/hybrid/routing.md)
-* [SPA およびサーバーサイドレンダリング](/help/implementing/developing/hybrid/ssr.md)

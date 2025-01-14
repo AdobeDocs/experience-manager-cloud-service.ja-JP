@@ -4,8 +4,8 @@ description: AEM 単一ページアプリケーション（SPA）エディター
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
-workflow-type: ht
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 100%
 
@@ -18,6 +18,8 @@ ht-degree: 100%
 複合コンポーネントが AEM 単一ページアプリケーション（SPA）エディターフレームワーク内で適切に実装されている場合、コンテンツ作成者は、そのようなコンポーネントを他のコンポーネントと同様にドラッグ＆ドロップできる一方で、複合コンポーネントを構成する各コンポーネントを個別に編集することもできます。
 
 この記事では、AEM SPA エディターとシームレスに連携する複合コンポーネントを、単一ページアプリケーションに追加する方法について説明します。
+
+{{ue-over-spa}}
 
 ## ユースケース {#use-case}
 

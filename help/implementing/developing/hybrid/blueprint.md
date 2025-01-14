@@ -4,7 +4,7 @@ description: このドキュメントでは、AEM 内に編集可能な SPA コ�
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 # SPA ブループリント {#spa-blueprint}
 
 作成者が AEM SPA エディターを使用して SPA のコンテンツを編集できるようにするには、SPA が満たすべき要件があります。
+
+{{ue-over-spa}}
 
 ## はじめに {#introduction}
 

@@ -4,7 +4,7 @@ description: 複数のパートで構成されているこのチュートリア�
 exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 100%
@@ -12,6 +12,8 @@ ht-degree: 100%
 ---
 
 # WKND SPA プロジェクト {#wknd-spa-project}
+
+{{ue-over-spa}}
 
 複数のパートで構成されているこのチュートリアルを実行すると、プロジェクトの設定、コンポーネントのマッピング、フロントエンド開発ツール、アプリケーションのルーティングなどを理解して、独自の SPA を実装できるようになります。このチュートリアルを活用して SPA 開発に習熟しください。
 

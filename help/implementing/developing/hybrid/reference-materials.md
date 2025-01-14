@@ -4,7 +4,7 @@ description: 単一ページアプリケーション API リファレンスと�
 exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 100%
@@ -12,6 +12,8 @@ ht-degree: 100%
 ---
 
 # SPA 参照資料 {#spa-reference-materials}
+
+{{ue-over-spa}}
 
 ## NMP モジュールの SPA Javascript API リファレンス {#api-references}
 

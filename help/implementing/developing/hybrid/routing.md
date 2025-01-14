@@ -4,7 +4,7 @@ description: AEM の単一ページアプリケーションの場合、アプリ
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 # SPA モデルルーティング{#spa-model-routing}
 
 AEM の単一ページアプリケーションの場合、アプリはルーティングを担当します。このドキュメントでは、ルーティングメカニズム、契約、使用可能なオプションについて説明します。
+
+{{ue-over-spa}}
 
 ## プロジェクトルーティング {#project-routing}
 
