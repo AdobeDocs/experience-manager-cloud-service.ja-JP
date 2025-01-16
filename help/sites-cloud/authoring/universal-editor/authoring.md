@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: e4db952e8284dba578c6b3ac86405e9ab640e7c0
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '1378'
 ht-degree: 99%
@@ -176,7 +176,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->ソースコンテナとターゲットコンテナ間で異なる[コンポーネントフィルター](/help/implementing/universal-editor/customizing.md#filtering-components)が設定されている場合、コンテナ間でコンポーネントを移動できません。
+>ソースコンテナとターゲットコンテナ間で異なる[コンポーネントフィルター](/help/implementing/universal-editor/filtering.md)が設定されている場合、コンテナ間でコンポーネントを移動できません。
 
 ## コンテンツのプレビュー {#previewing-content}
 

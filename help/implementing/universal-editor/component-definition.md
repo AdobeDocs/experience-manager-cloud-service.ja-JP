@@ -3,13 +3,13 @@ title: コンポーネント定義
 description: コンポーネント定義とユニバーサルエディター間の JSON 契約について詳しく説明します。
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 1%
 
 ---
-
 
 # コンポーネント定義 {#component-definition}
 
@@ -79,7 +79,7 @@ ht-degree: 1%
 * `title` は、UI に表示されるコンポーネントの説明をテキストで定義します。
 * コンポ `id` ネントを一意に識別します。
    * 同 `id` の [ コンポーネントモデル ](/help/implementing/universal-editor/field-types.md#model-structure) は、コンポーネントのフィールドを定義します。
-   * 一意なので、例えば [ フィルター定義 ](/help/implementing/universal-editor/customizing.md#filtering-components) で使用して、コンテナに追加できるコンポーネントを決定できます。
+   * 一意なので、例えば [ フィルター定義 ](/help/implementing/universal-editor/filtering.md) で使用して、コンテナに追加できるコンポーネントを決定できます。
 
 ## `plugins` {#plugins}
 

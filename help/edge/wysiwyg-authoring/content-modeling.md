@@ -4,7 +4,7 @@ description: Edge Delivery Services プロジェクトを使用した WYSIWYG �
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '2195'
 ht-degree: 99%
@@ -113,7 +113,7 @@ Edge Delivery Servicesで WYSIWYG オーサリングを使用する場合、作�
    * ブロック名は、ブロックを修飾する適切なスタイルとスクリプトを取得するために使用します。
 * [モデル ID](/help/implementing/universal-editor/field-types.md#model-structure) を定義できます。
    * モデル ID は、コンポーネントのモデルへの参照です。作成者がプロパティパネルで使用できるフィールドを定義します。
-* [フィルター ID](/help/implementing/universal-editor/customizing.md#filtering-components) を定義できます。
+* [フィルター ID](/help/implementing/universal-editor/filtering.md) を定義できます。
    * フィルター ID はコンポーネントのフィルターへの参照です。これにより、ブロックやセクションに追加できる子を制限したり、有効にする RTE 機能を制限したりするなど、オーサリング動作を変更できます。
 
 ブロックがページに追加されると、この情報はすべて AEM に保存されます。リソースタイプまたはブロック名のいずれかが見つからない場合、そのブロックはページ上にレンダリングされません。
@@ -245,7 +245,7 @@ Edge Delivery Servicesで WYSIWYG オーサリングを使用する場合、作�
 
 前述の構造は両方とも、プロパティのリストという 1 つの次元を持ちます。コンテナブロックを使用すると、子（通常は、同じタイプまたはモデル）を追加できるので、2 次元になります。これらのブロックは、最初に 1 つの列を持つ行としてレンダリングされる独自のプロパティを引き続きサポートします。また、子も追加できます。この場合、各項目は行としてレンダリングされ、各プロパティはその行内の列としてレンダリングされます。
 
-次の例では、ブロックは、リンクされたアイコンのリストを子として受け入れます。それぞれのリンクされたアイコンには、画像とリンクが含まれています。フィルター設定を参照するために、ブロックのデータに[フィルター ID](/help/implementing/universal-editor/customizing.md#filtering-components) が設定される点に注意してください。
+次の例では、ブロックは、リンクされたアイコンのリストを子として受け入れます。それぞれのリンクされたアイコンには、画像とリンクが含まれています。フィルター設定を参照するために、ブロックのデータに[フィルター ID](/help/implementing/universal-editor/filtering.md) が設定される点に注意してください。
 
 >[!BEGINTABS]
 
@@ -536,9 +536,9 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 Edge 配信サービスのコンテンツモデルでは、セクションに含まれるデフォルトのコンテンツまたはブロックである1 レベルのネストのみを意図的に許可します。つまり、他のコンポーネントを含む、より複雑なビジュアルコンポーネントを持つには、セクションとしてモデル化し、自動ブロッククライアント側を使用して組み合わせる必要があります。これの一般的な例としては、タブや、アコーディオンのような折りたたみ可能なセクションがあります。
 
-セクションは、ブロックと同じ方法で定義できますが、リソースタイプは `core/franklin/components/section/v1/section` となります。セクションには、[ユニバーサルエディター](/help/implementing/universal-editor/introduction.md)のみにより使用される名前と[フィルター ID](/help/implementing/universal-editor/customizing.md#filtering-components) を指定できます。また、セクションには、セクションのメタデータをレンダリングするのに使用される[モデル ID](/help/implementing/universal-editor/field-types.md#model-structure) も指定できます。モデルはこのようにして、セクションメタデータブロックのモデルとなります。空でない場合、このモデルは自動的にキーと値のブロックとしてセクションに追加されます。
+セクションは、ブロックと同じ方法で定義できますが、リソースタイプは `core/franklin/components/section/v1/section` となります。セクションには、[ユニバーサルエディター](/help/implementing/universal-editor/introduction.md)のみにより使用される名前と[フィルター ID](/help/implementing/universal-editor/filtering.md) を指定できます。また、セクションには、セクションのメタデータをレンダリングするのに使用される[モデル ID](/help/implementing/universal-editor/field-types.md#model-structure) も指定できます。モデルはこのようにして、セクションメタデータブロックのモデルとなります。空でない場合、このモデルは自動的にキーと値のブロックとしてセクションに追加されます。
 
-デフォルトのセクションの[モデル ID](/help/implementing/universal-editor/field-types.md#model-structure) および[フィルター ID](/help/implementing/universal-editor/customizing.md#filtering-components) は `section` です。これを使用して、デフォルトのセクションの動作を変更できます。次の使用例は、いくつかのスタイルと背景画像をセクションメタデータモデルに追加します。
+デフォルトのセクションの[モデル ID](/help/implementing/universal-editor/field-types.md#model-structure) および[フィルター ID](/help/implementing/universal-editor/filtering.md) は `section` です。これを使用して、デフォルトのセクションの動作を変更できます。次の使用例は、いくつかのスタイルと背景画像をセクションメタデータモデルに追加します。
 
 ```json
 {

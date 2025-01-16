@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bd2162d7b2187637d76a5182a0cae39b5bac8791
+source-git-commit: b491afccbd9e92b59c3d752c0d066efd34f2c776
 workflow-type: tm+mt
-source-wordcount: '5958'
+source-wordcount: '5960'
 ht-degree: 99%
 
 ---
@@ -1255,6 +1255,7 @@ ht-degree: 99%
          + [モデル定義、フィールドおよびコンポーネントタイプ](/help/implementing/universal-editor/field-types.md)
          + [SecurBank サンプルアプリ](/help/implementing/universal-editor/securbank.md)
          + [イベント](/help/implementing/universal-editor/events.md)
+         + [コンポーネントのフィルタリング](/help/implementing/universal-editor/filtering.md)
          + [カスタマイズ](/help/implementing/universal-editor/customizing.md)
          + [アーキテクチャ](/help/implementing/universal-editor/architecture.md)
          + [認証](/help/implementing/universal-editor/authentication.md)

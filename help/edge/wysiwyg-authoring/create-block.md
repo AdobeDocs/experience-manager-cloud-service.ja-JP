@@ -4,7 +4,7 @@ description: Edge Delivery Services プロジェクトを使用した WYSIWYG �
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 96%
@@ -119,7 +119,7 @@ Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリン
 
 >[!ENDTABS]
 
-4\.プロジェクトのルートにある [`component-filters.json` ファイルを編集し ](/help/implementing/universal-editor/customizing.md#filtering-components) 引用ブロックを [ フィルター定義 ](/help/implementing/universal-editor/customizing.md#filtering-components) に追加して、ブロックを任意のセクションに追加できるようにして、ファイルを保存します。
+4\.プロジェクトのルートにある [`component-filters.json` ファイルを編集し ](/help/implementing/universal-editor/filtering.md) 引用ブロックを [ フィルター定義 ](/help/implementing/universal-editor/filtering.md) に追加して、ブロックを任意のセクションに追加できるようにして、ファイルを保存します。
 
 >[!BEGINTABS]
 
