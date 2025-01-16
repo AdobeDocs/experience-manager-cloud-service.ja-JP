@@ -4,10 +4,10 @@ description: ユニバーサルエディターへのアクセス権を取得す�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8357caf2b0d396f6a1bd7b6160d6b48d8d6c026c
-workflow-type: ht
-source-wordcount: '627'
-ht-degree: 100%
+source-git-commit: 75acf37e7804d665e38e9510cd976adc872f58dd
+workflow-type: tm+mt
+source-wordcount: '956'
+ht-degree: 66%
 
 ---
 
@@ -119,6 +119,51 @@ data-aue-resource="urn:<referenceName>:<resource>"
 ```html
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
+
+## ユニバーサルエディターを開くコンテンツパスまたは `sling:resourceType`s を定義します。 (オプション) {#content-paths}
+
+[ ページエディター ](/help/sites-cloud/authoring/page-editor/introduction.md) を使用して既存のAEM プロジェクトがある場合、コンテンツ作成者がページを編集すると、ページはページエディターで自動的に開きます。 コンテンツパスまたは `sling:resourceType` に基づいてAEMを開くエディターを定義できるので、選択したコンテンツに必要なエディターに関係なく、作成者のエクスペリエンスがシームレスになります。
+
+1. Configuration Manager を開きます。
+
+   `http://<host>:<port>/system/console/configMgr`
+
+1. リストで **ユニバーサルエディター URL サービス** を見つけて、「**設定値を編集**」をクリックします。
+
+1. ユニバーサルエディターを開くコンテンツパスまたは `sling:resourceType`s を定義します。
+
+   * **ユニバーサルエディターを開くマッピング** フィールドで、ユニバーサルエディターを開くパスを指定します。
+   * ユニバーサルエディターで開く **Sling:resourceTypes** フィールドに、ユニバーサルエディターによって直接開かれるリソースのリストを指定します。
+
+1. 「**保存**」をクリックします。
+
+AEMは、この設定に基づくページのユニバーサルエディターを次の順序で開きます。
+
+1. AEMは `Universal Editor Opening Mapping` の下のマッピングをチェックします。コンテンツがそこに定義されたパスの下にある場合は、ユニバーサルエディターが開きます。
+1. `Universal Editor Opening Mapping` で定義されたパスにないコンテンツの場合、AEMは、コンテンツの `resourceType` が、ユニバーサルエディターで開かれる **Sling:resourceTypes で定義されたものと一致するかどうかを確認し** コンテンツがこれらの型のいずれかに一致する場合、ユニバーサルエディターは `${author}${path}.html` で開かれます。
+1. それ以外の場合は、AEMによってページエディターが開きます。
+
+「**ユニバーサルエディターでマッピングを開く**」フィールドでマッピングを定義するには、次の変数を使用できます。
+
+* `path`：開くリソースのコンテンツパス
+* `localhost`：スキーマを含まない `localhost` （例：`localhost:4502`）の Externalizer エントリ
+* `author`：スキーマなしのオーサー用 Externalizer エントリ（例：`localhost:4502`）
+* `publish`：スキーマを使用しないパブリッシュ用の Externalizer エントリ（例：`localhost:4503`）
+* `preview`：スキーマを使用しないプレビュー用の Externalizer エントリ（例：`localhost:4504`）
+* `env`：定義された Sling 実行モードに基づく `prod`、`stage`、`dev`
+* `token`: `QueryTokenAuthenticationHandler` にクエリトークンが必要です
+
+### マッピングの例 {#example-mappings}
+
+* AEM オーサーで `/content/foo` の下のすべてのページを開きます。
+
+   * `/content/foo:${author}${path}.html?login-token=${token}`
+   * これにより、`https://localhost:4502/content/foo/x.html?login-token=<token>` が開きます
+
+* すべての変数を情報として指定して、リモート NextJS サーバー上の `/content/bar` 下にあるすべてのページを開きます。
+
+   * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+   * これにより、`https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>` が開きます
 
 ## ユニバーサルエディターを使用する準備が整いました {#youre-ready}
 
