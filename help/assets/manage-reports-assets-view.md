@@ -4,10 +4,10 @@ description: アセットビューの「レポート」セクションのデー�
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: 6e0cd465f8695c948ece4679e083d6b9b35dded4
+source-git-commit: c92fc95d7f2774b24664b457bf785120945fc966
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 78%
+source-wordcount: '1540'
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 78%
 
 ## レポートへのアクセス {#access-reports}
 
-AEM管理者製品プロファイルに割り当てられているユーザーはすべて、Assets ビューでインサイトダッシュボードにアクセスしたり、ユーザー定義のレポートを作成したりできます。
+AEM 管理者の製品プロファイルに割り当てられているユーザーはすべて、アセットビューでインサイトダッシュボードにアクセスしたり、ユーザー定義のレポートを作成したりできます。
 
 レポートにアクセスするには、**[!UICONTROL 設定]**&#x200B;の&#x200B;**[!UICONTROL レポート]**&#x200B;に移動します。
 
@@ -48,7 +48,7 @@ AEM Assets ビュー環境では、レポートダッシュボードを通じて
 
    **「設定」タブ：**
 
-   1. **レポートタイプ：**[!UICONTROL  アップロード ]、[!UICONTROL  ダウンロード ]、[Dynamic Media配信レポート ](#dynamic-media-delivery-reports) のいずれかのタイプを選択します。
+   1. **レポートタイプ：**[!UICONTROL アップロード]、[!UICONTROL ダウンロード]、[Dynamic Media 配信レポート](#dynamic-media-delivery-reports)タイプから選択します。
    1. **タイトル：**&#x200B;レポートにタイトルを追加します。
    1. **説明：**&#x200B;レポートにオプションの説明を追加します。
    1. **フォルダーパスを選択：**&#x200B;フォルダーパスを選択すると、その特定のフォルダー内でアップロードおよびダウンロードされたアセットのレポートが生成されます。 例えば、フォルダーにアップロードされたアセットのレポートが必要な場合は、そのフォルダーへのパスを指定します。
@@ -76,7 +76,7 @@ AEM Assets ビュー環境では、レポートダッシュボードを通じて
      <tr>
       <td>パス</td>
       <td>アセットビューでアセットを使用できるフォルダーパス。</td>
-      <td>アップロード、ダウンロード、Dynamic Media配信</td>
+      <td>アップロード、ダウンロード、Dynamic Media 配信</td>
      </tr>
      <tr>
       <td>MIME タイプ</td>
@@ -136,52 +136,54 @@ AEM Assets ビュー環境では、レポートダッシュボードを通じて
     </tbody>
    </table>
 
-## Dynamic Media配信レポート {#dynamic-media-delivery-reports}
+## Dynamic Media 配信レポート {#dynamic-media-delivery-reports}
 
-アセットレベルの配信数、リファラー情報、AEM Assets 内のアセットパス、一意のアセット ID など、Dynamic Media で配信されたアセットの配信インサイトを取得します。 レポートは、AEM AssetsのDynamic Media リポジトリを介して配信されたすべてのアセットについて、またはAEM Assetsの特定のフォルダー階層について生成できます。 さらに、Dynamic Media配信レポートのインサイトは、配信されたアセットの ROI の測定、チャネルのパフォーマンスの測定、情報に基づいたアセット管理タスクの実行に役立ちます。
+アセットレベルの配信数、リファラー情報、AEM Assets 内のアセットパス、一意のアセット ID など、Dynamic Media で配信されたアセットの配信インサイトを取得します。AEM Assets リポジトリの Dynamic Media 経由で配信されるすべてのアセットに対するレポートや、AEM Assets の特定のフォルダー階層に対するレポートを生成できます。さらに、Dynamic Media 配信レポートのインサイトは、配信されたアセットの ROI の測定、チャネルのパフォーマンスの測定、アセットに関して情報に基づいたアセット管理タスクを実行するのに役立ちます。
 
+<!--
 >[!NOTE]
 > 
->Dynamic Media アカウントのDynamic Media配信レポートに早期にアクセスするには、[Adobeのカスタマーサポートケースを作成して送信 ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) します。
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+-->
 
 ### 前提条件 {#prereqs-dynamic-media-delivery-reports}
 
-このレポートを作成して使用するには、Dynamic Media ライセンスが必要です。
+このレポートを作成および使用するには、Dynamic Media ライセンスが必要です。
 
 >[!IMPORTANT]
 > 
 >* Dynamic Media 経由で配信されるアセットに関するレポートが提供されます。
->* レポートは、最初の 100 万行に対して生成されます。この制限内のすべてのファイルを取り込むには、小さいフォルダーのリファラー列を含めることを検討してください。
+>* レポートは、最初の 100 万行に対して生成されます。この制限内のすべてのファイルを取り込むには、より小さいフォルダーのリファラー列を含めることを検討してください。
 >* レポートは過去 3 か月間のみ生成できます。
 
-### Dynamic Media配信レポートの作成{#create-dynamic-media-delivery-report}
+### Dynamic Media 配信レポートの作成{#create-dynamic-media-delivery-report}
 
-1. [ レポートの作成 ](#create-report) で説明されている手順を使用して、Dynamic Media配信レポートを作成します。
+1. [レポートの作成](#create-report)に記載されている手順に従って、Dynamic Media 配信レポートを作成します。
 
-1. ]**レポートタイプ**[!UICONTROL  ドロップダウンリストから「**[!UICONTROL Dynamic Media配信]**」を選択します。
+1. **[!UICONTROL レポートタイプ]**&#x200B;ドロップダウンリストから「**[!UICONTROL Dynamic Media 配信]**」を選択します。
 
-   ![Dynamic Media配信レポートドロップダウン ](assets/dynamic-media-delivery-report-option.png)
+   ![Dynamic Media 配信レポートドロップダウン](assets/dynamic-media-delivery-report-option.png)
 
 
-1. 「**[!UICONTROL 列]**」タブで「**[!UICONTROL リファラー]**」列を選択すると、レポートに含めることができます。
+1. 「**[!UICONTROL 列]**」タブで、**[!UICONTROL リファラー]**&#x200B;列を選択してレポートに含めることができます。
 
-   ![ リファラー ](assets/referrer.png)
+   ![リファラー](assets/referrer.png)
 
-   ダウンロードされたレポートのすべての列は、読み取り専用です。ただし、「リファラー **列は、レポートに含めたり除外したりするように変更できます**。<!--Choosing a referrer displays the number of visitors received from each referred report that directs traffic to the site. It offers insights into the sources of traffic and the origin of the visitors. Such insights help measure ROI of delivered assets, measure channel performance, and help take informed asset management tasks for assets.-->
+   ダウンロードしたレポートの列はすべて読み取り専用ですが、**リファラー**&#x200B;列はレポートに含めるか除外するかを変更できます。<!--Choosing a referrer displays the number of visitors received from each referred report that directs traffic to the site. It offers insights into the sources of traffic and the origin of the visitors. Such insights help measure ROI of delivered assets, measure channel performance, and help take informed asset management tasks for assets.-->
 
-### Dynamic Media配信レポートで実行されたアクション {#actions-performed-dynamic-media-delivery-reports}
+### Dynamic Media 配信レポートで実行するアクション {#actions-performed-dynamic-media-delivery-reports}
 
-レポートを作成した後、次の操作を実行できます。
+レポートを作成した後、次のアクションを実行できます。
 
 * **[!UICONTROL 削除]**：選択したレポートを削除できます。
-* **[!UICONTROL CSV をダウンロード]**：選択したレポートを CSV 形式でダウンロードできます。 ダウンロードされたレポートは、名前、パス、DynamicMediaID、リファラー、ヒットの各列で構成されます。
-   * **リファラー** 列には、アセットが配信または含まれる URL がリストされます。
+* **[!UICONTROL CSV をダウンロード]**：選択したレポートを CSV 形式でダウンロードできます。ダウンロードしたレポートは、名前、パス、DynamicMediaID、リファラー、ヒット数の各列で構成されます。
+   * **リファラー**&#x200B;列には、アセットが配信される、または含まれる URL がリストされます。
 
-   * **ヒット数** 列には、アセットが配信された回数（配信数）がリストされます。
+   * **ヒット数**&#x200B;列には、アセットが配信された回数（配信数）がリストされます。
 
-Dynamic Media配信レポートを CSV 形式で削除またはダウンロードするには、[ 既存のレポートの表示とダウンロード ](#View-and-download-existing-report) を参照してください。
+Dynamic Media 配信レポートを CSV 形式で削除またはダウンロードするには、[既存のレポートの表示とダウンロード](#View-and-download-existing-report)を参照してください。
 
-![ ダウンロードした CSV のDynamic Media配信レポート ](assets/csv-dynamic-media-delivery-report.png)
+![Dynamic Media 配信レポートにダウンロードした CSV](assets/csv-dynamic-media-delivery-report.png)
 
 
 ## 既存のレポートの表示とダウンロード {#View-and-download-existing-report}
