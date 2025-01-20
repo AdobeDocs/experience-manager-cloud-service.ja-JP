@@ -4,10 +4,10 @@ description: このチュートリアルは、新しい Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '1850'
-ht-degree: 100%
+source-git-commit: 8cf72ab1958b313196341bef4f3ece121721ac14
+workflow-type: tm+mt
+source-wordcount: '1806'
+ht-degree: 92%
 
 ---
 
@@ -61,27 +61,27 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
    >
    > GitHub Enterprise で IP フィルタリングを使用している場合は、次の IP（3.227.118.73）を許可リストに追加できます。
 
-   これで完了です。`https://<branch>--<repo>--<owner>.hlx.page/` で新しい web サイトを実行しています。
+   これで完了です。`https://<branch>--<repo>--<owner>.aem.page/` で新しい web サイトを実行しています。
 
    * `<branch>` は、GitHub リポジトリのブランチを指します。
    * `<repository>` は GitHub リポジトリを示します。
    * `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を指します。
 
-   例えば、ブランチ名が `main`、リポジトリが `wefinance`、所有者が `wkndforms` の場合、web サイトは [https://main—wefinance—wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/) で稼働しています。
+   例えば、ブランチ名が `main`、リポジトリが `wefinance`、所有者が `wkndform` の場合、web サイトは [https://main--wefinance--wkndforms.aem.page/で稼働します ](https://main--wefinance--wkndform.aem.page/)
 
 
 
 ### 独自のコンテンツソースのリンク
 
-新しく作成した GitHub リポジトリは、[Google Drive フォルダーに保存されたサンプルコンテンツ](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ)を指します。この読み取り専用コンテンツは、フォームの最適な出発点となります。必要に応じて、自身の Google Drive にコピーし、自由にカスタマイズしてください。
+<!--Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
-![Google Drive のサンプルコンテンツ](/help/edge/assets/folder-with-sample-content.png)
+![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)-->
 
 サンプルコンテンツを自身のコンテンツフォルダーにコピーし、GitHub リポジトリが自身のコンテンツフォルダーを指すようにするには、次の手順を実行します。
 
 1. Google Drive または Microsoft SharePoint で、AEM コンテンツ専用の新しいフォルダーを作成します。このドキュメントでは、Microsoft SharePoint で作成されたフォルダーを使用します。
 
-1. Adobe Experience Manager ユーザー（helix@adobe.com）とフォルダーを共有します。
+1. フォルダーをAdobe Experience Manager ユーザーと共有します（forms@adobe.com）。
 
    ![「アクセスを管理」オプションを使用して、AEM ユーザーとフォルダーを共有する（SharePoint）](/help/edge/assets/share-folder-with-aem-user.png)
 
@@ -90,13 +90,13 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
 
    フォルダーに対する編集権限が Adobe Experience Manager ユーザーに付与されていることを確認します。
 
-   ![AEM ユーザーとフォルダーを共有し、編集権限を付与する（SharePoint）](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+   ![AEM ユーザーとフォルダーを共有し、編集権限を付与する – SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
 
-   ![AEM ユーザーとフォルダーを共有し、編集権限を付与する（Google Drive）](/help/edge/assets/add-aem-user-google-folder.png)
+   ![AEM ユーザーとフォルダーを共有し、編集権限を付与する – Google ドライブ ](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
 
-1. [Google Drive フォルダーに保存されたサンプルコンテンツ](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_)をフォルダーにコピーします。コピーする手順は、次のとおりです。
+1. [ サンプルコンテンツ ](/help/edge/assets/wefinance1.zip) をフォルダーにコピーします。 コピーする手順は、次のとおりです。
 
-   1. ファイルを一緒にダウンロードするか、個々のファイルをダウンロードします。
+   1. ダウンロードしたフォルダーを解凍し、コンテンツをコピーします。
 
       ![サンプルコンテンツのダウンロード](/help/edge/assets/download-sample-content.png)
 
@@ -113,7 +113,7 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
 
    1. AEM Forms ボイラープレートを使用して以前に作成した GitHub リポジトリに移動します。
    1. `fstab.yaml` を開いて編集します。
-   1. 既存の参照を、AEM ユーザー（helix@adobe.com）と共有したフォルダーのパスに置き換えます。
+   1. 既存の参照を、AEM ユーザーと共有したフォルダーのパス（forms@adobe.com）に置き換えます。
 
       ![Google Drive のサンプルコンテンツ](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -175,7 +175,7 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
 
 
    ```HTML
-   https://<branch>--<repository>--<owner>.hlx.live
+   https://<branch>--<repository>--<owner>.aem.live
    ```
 
    * `<branch>` は、GitHub リポジトリのブランチを参照します。
@@ -183,11 +183,9 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
    * `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を参照します。
 
 
-   `https://<branch>--<repo>--<owner>.hlx.page/enquiry` の URL。
+   `https://<branch>--<repo>--<owner>.aem.page/enquiry` の URL。
 
-   例えば、プロジェクトのリポジトリの名前が「wefinance」で、アカウント所有者「wkndforms」の下にあり、「main」ブランチを使用している場合、URL は次のようになります。
-
-   [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page)。
+   例えば、プロジェクトのリポジトリーの名前が「wefinance」で、アカウント所有者の下にある「wkndform」で、「main」ブランチとフォーム名を `enquiry` として使用する場合、URL は [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry) です。
 
 ### フォームの作成
 
@@ -195,11 +193,11 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
 
 ![お問い合わせフォーム](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
-まず、フィールドラベルの更新から始めましょう。編集用に「お問い合わせ」シートを開き、送信ボタンのラベルを「`Let's Chat`」に変更し、AEM Sidekick を使用してファイルをプレビューして公開します。
+まず、フィールドラベルの更新から始めましょう。編集用に「お問い合わせ」シートを開き、送信ボタンのラベルを「`Let's Talk`」に変更し、AEM Sidekick を使用してファイルをプレビューして公開します。
 
 ![お問い合わせフォーム](/help/edge/assets/enquiry-form-preview-publish.png)
 
-ファイルをプレビューまたは公開すると、ファイルの JSON バージョンが新しいタブに表示されます。ファイルのプレビュー（.hlx.page）または公開（.hlx.live）の URL をコピーします。
+ファイルをプレビューまたは公開すると、ファイルの JSON バージョンが新しいタブに表示されます。ファイルのプレビュー（.aem.page）または公開（.aem.live） URL をコピーします。
 
 ![フォームスプレッドシートの JSON](/help/edge/assets//preview-and-publish-enquiry-form.png)
 
@@ -216,13 +214,16 @@ AEM Sidekick を使用して、お問い合わせドキュメントをプレビ�
 
 
 ```HTML
-    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+    https://<branch>--<repository>--<owner>.aem.page/enquiry
        
 ```
 
-送信ボタンのラベルが `Let's Chat` に更新されます。
+送信ボタンのラベルが `Let's Talk` に更新されます。
 
-![お問い合わせフォーム](/help/edge/assets/updated-form.png)
+[![ お問い合わせフォーム ](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.live/enquiry)
+
+URL: [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)
+
 
 新しいフォームの作成と公開について詳しくは、[フォームの作成](/help/edge/docs/forms/create-forms.md)ガイドを参照してください。
 
@@ -254,8 +255,8 @@ AEM Sidekick を使用して、お問い合わせドキュメントをプレビ�
 
 成果を公開る準備は整いましたか？Git を使用して変更をコミットし、プッシュします。これにより、次の URL からアクセスできるプレビュー環境と実稼動環境が更新されます（プレースホルダーをプロジェクトの詳細に置き換えます）。
 
-プレビュー環境：`https://<branch>--<repo>--<owner>.hlx.page/`
-実稼動環境：`https://<branch>--<repo>--<owner>.hlx.live/`
+プレビュー環境：`https://<branch>--<repo>--<owner>.aem.page/`
+実稼動環境：`https://<branch>--<repo>--<owner>.aem.live/`
 
 これで完了です。ローカル開発環境が正常に設定され、変更がデプロイされました。
 

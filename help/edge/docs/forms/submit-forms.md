@@ -4,10 +4,10 @@ description: スプレッドシートとアダプティブフォームブロッ�
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 086706a1b9ab211738ea2978b73e1681b04ddac2
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 100%
+source-wordcount: '425'
+ht-degree: 84%
 
 ---
 
@@ -28,27 +28,25 @@ ht-degree: 100%
 
 スプレッドシートでデータを受け入れるようにするには
 
-1. フォームが含まれているスプレッドシートを開き、新しいシートを追加し、名前を `incoming` に変更します。
+1. フォームがあるスプレッドシートを開き、新しいシートを追加して、名前を `incoming` に変更します。 例えば、「[ 問い合わせ ](/help/edge/assets/enquiry.xlsx)」フォームのMicrosoft Excel ワークブックなどです。
 
    >[!WARNING]
    >
    > `incoming` シートが存在しない場合、AEM ではスプレッドシートにデータを送信しません。
 
-1. このシートに、「intake_form」という名前のテーブルを挿入します。フォームフィールド名と一致させるために必要な列の数を選択します。次に、ツールバーで挿入／表に移動し、「OK」をクリックします。
+2. このシートに、「intake_form」という名前のテーブルを挿入します。フォームフィールド名と一致させるために必要な列の数を選択します。次に、ツールバーで挿入／表に移動し、「OK」をクリックします。
 
-1. 表の名前を「intake_form」に変更します。Microsoft Excel で表の名前を変更するには、表を選択し、「表書式」をクリックします。
+3. 表の名前を「intake_form」に変更します。Microsoft Excel で表の名前を変更するには、表を選択し、「表書式」をクリックします。
 
-1. 次に、フォームフィールド名を表ヘッダーとして追加します。フィールドが完全に同じであることを確認するには、「shared-default」シートからフィールドをコピー＆ペーストします。「shared-default」シートで、送信フィールドを除く「Name」列の下にリストされるフォーム ID を選択してコピーします。
+4. 次に、フォームフィールド名を表ヘッダーとして追加します。フィールドが完全に同じであることを確認するには、「shared-default」シートからフィールドをコピー＆ペーストします。「shared-default」シートで、送信フィールドを除く「Name」列の下にリストされるフォーム ID を選択してコピーします。
 
-1. 「incoming」シートで、形式を選択して貼り付け／行/列の入れ替えを選択して、フィールド ID をこの新しいシートの列ヘッダーとしてコピーします。データを取得する必要があるフィールドのみを保持し、他のフィールドは無視できます。
+5. 「incoming」シートで、形式を選択して貼り付け／行/列の入れ替えを選択して、フィールド ID をこの新しいシートの列ヘッダーとしてコピーします。データを取得する必要があるフィールドのみを保持し、他のフィールドは無視できます。
 
-   `shared-default` の `Name` 列の各値は、送信ボタンを除き、`incoming` シートのヘッダーとして機能します。例えば、「お問い合わせ」フォームのヘッダーを示す次の画像を考慮してみましょう。
+   `shared-default` の `Name` 列の各値は、送信ボタンを除き、`incoming` シートのヘッダーとして機能します。例えば、「問い合わせ」フォームのヘッダーを示す次の画像について考えてみます。
 
-   ![「お問い合わせ」フォームのフィールド](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
+   ![お問い合わせフォームのフィールド](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-
-
-1. AEM Sidekick 拡張機能を使用して、フォームの更新をプレビューします。これで、シートはフォームの送信を受け入れる準備が整いました。
+6. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 拡張機能を使用して、フォームの更新をプレビューします。 これで、シートはフォームの送信を受け入れる準備が整いました。
 
    >[!NOTE]
    >
@@ -57,232 +55,256 @@ ht-degree: 100%
 
 フィールド名が `incoming` シートに追加されると、フォームは送信を受け入れる準備が整います。フォームをプレビューし、これを使用してデータをシートに送信できます。
 
-データを受信するようにシートを設定したら、[アダプティブフォームブロックを使用してフォームをプレビュー](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page)したり、[POST リクエストを使用](#use-admin-apis-to-send-data-to-your-sheet)してシートへのデータの送信を開始したりできます。
+データを受信するようにシートを設定したら、[ フォームをプレビュー ](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) して <!--or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet)--> シートへのデータの送信を開始できます。
 
 >[!WARNING]
 >
 >  「shared-default」シートには、一般にアクセスされることに抵抗のある個人を特定できる情報や機密データを決して含めないでください。
 
-### スプレッドシートでデータを受け入れるように Admin API を使用して有効にする
+<!--
+### Use Admin APIs to enable a spreadsheet to accept data
 
-また、POST リクエストをフォームに送信して、データを受け入れ、`incoming` シートのヘッダーを設定するように有効にすることもできます。POST リクエストを受信すると、サービスではリクエストの本文を分析し、データの取り込みに必要な必須のヘッダーとシートを自律的に生成します。
+You can also send a POST request to the form to enable it to accept data and configure headers for the `incoming` sheet. Upon receiving the POST request, the service analyzes the body of request and autonomously generates the essential headers and sheets needed for data ingestion.
 
-スプレッドシートでデータを受け入れるように Admin API を使用して有効にするには：
-
-
-1. 作成したワークブックを開き、デフォルトのシートの名前を `incoming` に変更します。
-
-   >[!WARNING]
-   >
-   > `incoming` シートが存在しない場合、AEM ではこのワークブックにデータを送信しません。
-
-1. Sidekick でシートをプレビューします。
-
-   >[!NOTE]
-   >
-   >以前にシートをプレビューしたことがある場合でも、`incoming` シートを初めて作成した後に再度プレビューする必要があります。
-
-1. POST リクエストを送信して `incoming` シートに適切なヘッダーを生成し、`shared-default` シートがまだ存在しない場合はスプレッドシートに追加します。
-
-   シートを設定する POST リクエストの形式については、[Admin API ドキュメント](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile)を参照してください。以下に例を示します。
-
-   **リクエスト**
-
-   ```JSON
-   POST 'https://admin.hlx.page/form/{owner}/{repo}/{branch}/contact-us.json' \
-   --header 'Content-Type: application/json' \
-   --data '{
-       "data": {
-           "Email": "john@wknd.com",
-           "Name": "John",
-           "Subject": "Regarding Product Inquiry",
-           "Message": "I have some questions about your products.",
-           "Phone": "123-456-7890",
-           "Company": "Adobe Inc.",
-           "Country": "United States",
-           "PreferredContactMethod": "Email",
-           "SubscribeToNewsletter": true
-       }
-   }'
-   ```
+To use Admin APIs to enable a spreadsheet to accept data: 
 
 
-   **応答**
+1. Open the workbook that you have created and change the name of the default sheet to `incoming`. 
 
-   ```JSON
-   HTTP/2 200 
-   content-type: application/json
-   x-invocation-id: 1b3bd30a-8cfb-4f85-a662-4b1f7cf367c5
-   cache-control: no-store, private, must-revalidate
-   accept-ranges: bytes
-   date: Sat, 10 Feb 2024 09:26:48 GMT
-   via: 1.1 varnish
-   x-served-by: cache-del21736-DEL
-   x-cache: MISS
-   x-cache-hits: 0
-   x-timer: S1707557205.094883,VS0,VE3799
-   strict-transport-security: max-age=31557600
-   content-length: 138
-   
-   {"rowCount":2,"columns":["Email","Name","Subject","Message","Phone","Company","Country",      "PreferredContactMethod","SubscribeToNewsletter"]}%
-   ```
+    >[!WARNING] 
+    >
+    > If the `incoming` sheet doesn't exist, AEM won't send any data to this workbook.
 
-   以下に示すように、cURL や Postman などのツールを使用して、この POST リクエストを実行できます。
+1. Preview the sheet in the sidekick.
 
-   ```JSON
-   curl -s -i -X POST 'https://admin.hlx.page/form/wkndforms/portal/main/contact-us.json' \
-       --header 'Content-Type: application/json' \
-       --data '{
-           "data": {
-               "Email": "john@wknd.com",
-               "Name": "John",
-               "Subject": "Regarding Product Inquiry",
-               "Message": "I have some questions about your products.",
-               "Phone": "123-456-7890",
-               "Company": "Wknd Inc.",
-               "Country": "United States",
-               "PreferredContactMethod": "Email",
-               "SubscribeToNewsletter": true
-       }
-   }'
-   ```
+    >[!NOTE] 
+    >
+    >Even if you have previewed the sheet before, you must preview it again after creating the `incoming` sheet for the first time.
 
-   上記の POST リクエストでは、フォームフィールドとそれぞれのサンプル値の両方を含むサンプルデータを提供します。このデータは、フォームを設定するために Admin サービスによって使用されます。
+1. Send the POST request to generate the appropriate headers in the `incoming` sheet, and add the `shared-default` sheets to your spread sheet, if it does not exist already.
 
-   これで、フォームでデータを受け入れるように有効にしました。また、スプレッドシートに次の変更が見られることもわかります。
+    To understand how to format the POST request for setting up your sheet, refer to the [Admin API documentation](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). You can look at the example provided below: 
 
-## データを受け入れるように有効になると、シートが自動的に変更される。
+    **Request** 
+    
+    ```JSON
 
-データを受信するようにシートを設定すると、スプレッドシートに次の変更が見られます。
+    POST 'https://admin.aem.page/form/{owner}/{repo}/{branch}/contact-us.json' \
+    --header 'Content-Type: application/json' \
+    --data '{
+        "data": {
+            "Email": "john@wknd.com",
+            "Name": "John",
+            "Subject": "Regarding Product Inquiry",
+            "Message": "I have some questions about your products.",
+            "Phone": "123-456-7890",
+            "Company": "Adobe Inc.",
+            "Country": "United States",
+            "PreferredContactMethod": "Email",
+            "SubscribeToNewsletter": true
+        }
+    }'
 
-「Slack」という名前のシートが Excel ワークブックまたは Google Sheets に追加されます。このシートでは、新しいデータがスプレッドシートに取り込まれるたびに、指定した Slack チャネルに対する自動通知を設定できます。現在、AEM では、AEM エンジニアリング Slack 組織とアドビエンタープライズサポート組織への通知のみをサポートします。
-
-1. Slack 通知を設定するには、Slack ワークスペースの「teamId」と、「チャネル名」または「ID」を入力します。また、slack ボットに（debug コマンドを使用して）「teamId」と「チャネル ID」を問い合わせることもできます。チャネル名を変更しても残り続けるので、「チャネル名」の代わりに「チャネル ID」を使用することをお勧めします。
-
-   >[!NOTE]
-   >
-   > 古いフォームには「teamId」列がありませんでした。「teamId」は「#」または「/」で区切られてチャネル列に含まれていました。
-
-1. 必要なタイトルを入力し、フィールドの下に Slack 通知に表示するフィールドの名前を入力します。各見出しはコンマで区切る必要があります（名前、メールなど）。
-
-   >[!WARNING]
-   >
-   >  「shared-default」シートには、一般にアクセスされることに抵抗のある個人を特定できる情報や機密データを決して含めないでください。
+    ```
 
 
-## シートへのデータの送信 {#send-data-to-your-sheet}
+    **Response**
 
-データを受信するようにシートを設定したら、[アダプティブフォームブロックを使用してフォームをプレビュー](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page)するか、[Admin API を使用](#use-admin-apis-to-send-data-to-your-sheet)してシートへのデータの送信を開始できます。
+    ```JSON
 
-### Admin API を使用してシートにデータを送信
+    HTTP/2 200 
+    content-type: application/json
+    x-invocation-id: 1b3bd30a-8cfb-4f85-a662-4b1f7cf367c5
+    cache-control: no-store, private, must-revalidate
+    accept-ranges: bytes
+    date: Sat, 10 Feb 2024 09:26:48 GMT
+    via: 1.1 varnish
+    x-served-by: cache-del21736-DEL
+    x-cache: MISS
+    x-cache-hits: 0
+    x-timer: S1707557205.094883,VS0,VE3799
+    strict-transport-security: max-age=31557600
+    content-length: 138
 
-hlx.page、hlx.live、または実稼動ドメインを使用して、POST リクエストをフォームに直接送信し、データを送信できます。
+    {"rowCount":2,"columns":["Email","Name","Subject","Message","Phone","Company","Country",      "PreferredContactMethod","SubscribeToNewsletter"]}%
+
+    ```
+
+    You can use tools like curl or Postman to execute this POST request, as demonstrated below:
+
+    ```JSON
+
+    curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
+        --header 'Content-Type: application/json' \
+        --data '{
+            "data": {
+                "Email": "john@wknd.com",
+                "Name": "John",
+                "Subject": "Regarding Product Inquiry",
+                "Message": "I have some questions about your products.",
+                "Phone": "123-456-7890",
+                "Company": "Wknd Inc.",
+                "Country": "United States",
+                "PreferredContactMethod": "Email",
+                "SubscribeToNewsletter": true
+        }
+    }'
+
+    ```
+
+    The above mentioned POST request provides sample data, including both form fields and their respective sample values. This data is used by the Admin service to set up the form.
+
+    Your form is now enabled to accept data. You also observe the following changes in your spreadsheet: 
+
+## Automatic changes to sheet once it is enabled to accept data. 
+
+Once the sheet is set to recieve data, you observe the following changes in your spreadsheet: 
+
+A sheet named "Slack" is added to your Excel Workbook or Google Sheet. In this sheet, you can configure automatic notifications for a designated Slack channel whenever new data is ingested into your spreadsheet. At present, AEM supports notifications exclusively to the AEM Engineering Slack organization and the Adobe Enterprise Support organization.
+
+1. To set up Slack notifications enter the "teamId" of the Slack workspace and the "channel name" or "ID". You can also ask the slack-bot (with the debug command) for the "teamId" and the "channel ID". Using the "channel ID" instead of the "channel name" is preferable, as it survives channel renames.
+
+    >[!NOTE] 
+    >
+    > Older forms didn't have the "teamId" column. The "teamId" was included in the channel column, separated by a "#" or "/".
+
+1. Enter any title that you want and under fields enter the names of the fields you want to see in the Slack notification. Each heading should be separated by a comma (For example name, email).
+
+    >[!WARNING] 
+    >
+    >  Never should the "shared-default" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
+
+
+
+<!--
+## Send data to your sheet {#send-data-to-your-sheet}
+
+After the sheet is set to receive data, you can [preview the form using Adaptive Forms Block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) or [use Admin APIs](#use-admin-apis-to-send-data-to-your-sheet) to start sending data to the sheet.
+
+### Use Admin APIs to send data to your sheet
+
+You can send POST requests directly to your form using aem.page, aem.live, or your production domain, to send data. 
 
 
 ```JSON
-POST https://branch–repo–owner.hlx.(page|live)/email-form
+
+POST https://branch–repo–owner.aem.(page|live)/email-form
 POST https://my-domain.com/email-form
+
 ```
 
->[!NOTE]
+>[!NOTE] 
 >
-> URL には、.json 拡張子を付けることはできません。POST 操作が `.live` または実稼動ドメインで機能するには、シートを公開する必要があります。
+> The URL should not have the .json extension. You must publish the sheet for POST operations to function on `.live` or on the production domain.
 
-#### フォームデータの書式設定
+#### Formatting the form data
 
-POST 本文のフォームデータを書式設定するには、いくつかの方法があります。以下を使用できます。
+There are a few different ways that you can format the form data in the POST body. You can use: 
 
-* `name:value` のペアの配列：
-
-  ```JSON
-  {
-    "data": [
-      { "name": "name", "value": "Clark Kent" },
-      { "name": "email", "value": "superman@example.com" },
-      { "name": "subject", "value": "Regarding Product Inquiry" },
-      { "name": "message", "value": "I have some questions about your products." },
-      { "name": "phone", "value": "123-456-7890" },
-      { "name": "company", "value": "Example Inc." },
-      { "name": "country", "value": "United States" },
-      { "name": "preferred_contact_method", "value": "Email" },
-      { "name": "newsletter_subscribe", "value": true }
-    ]
-  }
-  ```
-
-  例：
-
-  ```JSON
-  curl -s -i -X POST 'https://main--portal--wkndforms.hlx.page/contact-us' \
-      --header 'Content-Type: application/json' \
-      --data '{
+* array of `name:value` pairs: 
+    
+    ```JSON
+    
+    {
       "data": [
-          { "name": "name", "value": "Clark Kent" },
-          { "name": "email", "value": "superman@example.com" },
-          { "name": "subject", "value": "Regarding Product Inquiry" },
-          { "name": "message", "value": "I have some questions about your        products." },
-          { "name": "phone", "value": "123-456-7890" },
-          { "name": "company", "value": "Example Inc." },
-          { "name": "country", "value": "United States" },
-          { "name": "preferred_contact_method", "value": "Email" },
-          { "name": "newsletter_subscribe", "value": true }
+        { "name": "name", "value": "Clark Kent" },
+        { "name": "email", "value": "superman@example.com" },
+        { "name": "subject", "value": "Regarding Product Inquiry" },
+        { "name": "message", "value": "I have some questions about your products." },
+        { "name": "phone", "value": "123-456-7890" },
+        { "name": "company", "value": "Example Inc." },
+        { "name": "country", "value": "United States" },
+        { "name": "preferred_contact_method", "value": "Email" },
+        { "name": "newsletter_subscribe", "value": true }
       ]
-  }'
-  ```
+    }
+
+    ```
+
+    For example
+
+    ```JSON
+
+    curl -s -i -X POST 'https://main--wefinance--wkndform.aem.page/contact-us' \
+        --header 'Content-Type: application/json' \
+        --data '{
+        "data": [
+            { "name": "name", "value": "Clark Kent" },
+            { "name": "email", "value": "superman@example.com" },
+            { "name": "subject", "value": "Regarding Product Inquiry" },
+            { "name": "message", "value": "I have some questions about your        products." },
+            { "name": "phone", "value": "123-456-7890" },
+            { "name": "company", "value": "Example Inc." },
+            { "name": "country", "value": "United States" },
+            { "name": "preferred_contact_method", "value": "Email" },
+            { "name": "newsletter_subscribe", "value": true }
+        ]
+    }'
+
+    ```
 
 
 
-* `key:value` のペアを持つオブジェクト：
+* an object with `key:value` pairs:
 
-  ```JSON
-      {
-        "data": {
-          "name": "Jessica Jones",
-          "email": "jj@example.com",
-          "subject": "Regarding Product Inquiry",
-          "message": "I have some questions about your products.",
-          "phone": "123-456-7890",
-          "company": "Example Inc.",
-          "country": "United States",
-          "preferred_contact_method": "Email",
-          "newsletter_subscribe": true
+    ```JSON
+
+        {
+          "data": {
+            "name": "Jessica Jones",
+            "email": "jj@example.com",
+            "subject": "Regarding Product Inquiry",
+            "message": "I have some questions about your products.",
+            "phone": "123-456-7890",
+            "company": "Example Inc.",
+            "country": "United States",
+            "preferred_contact_method": "Email",
+            "newsletter_subscribe": true
+          }
         }
-      }
-  ```
 
-  例：
+    ```
 
-  ```JSON
-  curl -s -i -X POST 'https://admin.hlx.page/form/wkndforms/portal/main/contact-us.json' \
-  --header 'Content-Type: application/json' \
-  --data '{
-      "data": {
-          "Email": "khushwant@wknd.com",
-          "Name": "khushwant",
-          "Subject": "Regarding Product Inquiry",
-          "Message": "I have some questions about your products.",
-          "Phone": "123-456-7890",
-          "Company": "Adobe Inc.",
-          "Country": "United States",
-          "PreferredContactMethod": "Email",
-          "SubscribeToNewsletter": true
-      }
-  }'
-  ```
+    For example,
 
-* URL エンコードされた（`x-www-form-urlencoded`）本文（`content-type` ヘッダーが `application/x-www-form-urlencoded` に設定されている）
+    ```JSON
 
-  ```Shell
-  'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&Message=I   +have+some+questions+about+your+products.&Phone=123-456-7890&Company=Adobe+Inc.&   Country=United+States&PreferredContactMethod=Email&SubscribeToNewsletter=true'
-  ```
+    curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
+    --header 'Content-Type: application/json' \
+    --data '{
+        "data": {
+            "Email": "khushwant@wknd.com",
+            "Name": "khushwant",
+            "Subject": "Regarding Product Inquiry",
+            "Message": "I have some questions about your products.",
+            "Phone": "123-456-7890",
+            "Company": "Adobe Inc.",
+            "Country": "United States",
+            "PreferredContactMethod": "Email",
+            "SubscribeToNewsletter": true
+        }
+    }'
 
-  例：
+    ```
 
-  ```Shell
-  curl -s -i -X POST \
-    -d 'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&   Message=I+have+some+questions+about+your+products.&Phone=123-456-7890& Company=Adobe+Inc.&Country=United+States&PreferredContactMethod=Email&   SubscribeToNewsletter=true' \
-    https://main--portal--wkndforms.hlx.live/contact-us
-  ```
+* URL encoded (`x-www-form-urlencoded`) body (with `content-type` header set to `application/x-www-form-urlencoded`)
+
+    ```Shell
+
+    'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&Message=I   +have+some+questions+about+your+products.&Phone=123-456-7890&Company=Adobe+Inc.&   Country=United+States&PreferredContactMethod=Email&SubscribeToNewsletter=true'
+
+    ```
+
+    For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch.,
+
+    ```Shell
+
+    curl -s -i -X POST \
+      -d 'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&   Message=I+have+some+questions+about+your+products.&Phone=123-456-7890& Company=Adobe+Inc.&Country=United+States&PreferredContactMethod=Email&   SubscribeToNewsletter=true' \
+      https://main--wefinance--wkndform.aem.live/contact-us
+
+    ```
+-->
 
 次に、[「ありがとうございます」メッセージをカスタマイズ](/help/edge/docs/forms/thank-you-page-form.md)できます。
 

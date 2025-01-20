@@ -4,10 +4,10 @@ description: ドロップダウンリストオプションは別個のスプレ�
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 35fe88437dd86d490feeafe5bfc25ffda23234fb
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 100%
+source-wordcount: '472'
+ht-degree: 93%
 
 ---
 
@@ -21,9 +21,6 @@ ht-degree: 100%
 
 * 管理の簡素化：ドロップダウンオプションを一元的な場所に維持して、更新や追加を簡単にします。
 * 効率の向上：フォーム定義内に長いオプションリストを手動で追加する必要がなくなります。
-
-
-
 
 ![ドロップダウンオプション](/help/forms/assets/drop-down-options.png)
 
@@ -58,8 +55,8 @@ ht-degree: 100%
 
 1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) を使用して、`shared-country` シートをプレビューし公開します。
 
-   `shared-country` シートを表示する URL https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country を参照してください。
-
+   例えば、プロジェクトのリポジトリの名前が「wefinance」の場合は、アカウント所有者の「wkndform」の下にあり、「main」ブランチを使用しています。この URL で `shared-country` シートを表示します。
+   [https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country](https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)
 
 >[!NOTE]
 >
@@ -79,13 +76,14 @@ ht-degree: 100%
 
    ![国のドロップダウン](/help/forms/assets/load-dropdown-options-form.png)
 
-[照会スプレッドシート](/help/forms/assets/enquiry-options.xlsx)を参照して、ドロップダウンリストのオプションを読み込む URL を追加できます。
+[照会スプレッドシート](/help/edge/assets/enquiry.xlsx)を参照して、ドロップダウンリストのオプションを読み込む URL を追加できます。
 
 ドロップダウンリストのオプションを読み込む URL をフォーム定義に統合したら、`Destination` ドロップダウンのオプションが URL から表示されるようになります。
 
-以下の URL を参照してください。別個のシートに保存されたオプションを表示する `enquiry` フォームが表示されます。
+<!-- For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch, the below URL displays the `enquiry` form displaying the options saved in the separate sheet:
 
-https://main--wefinance--wkndforms.hlx.live/enquiry-form
+[https://main--wefinance--wkndform.aem.live/enquiry-form](https://main--wefinance--wkndform.aem.live/enquiry-form) 
+-->
 
 ## 関連トピック
 

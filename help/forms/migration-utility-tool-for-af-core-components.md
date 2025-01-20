@@ -8,10 +8,10 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: c52d649e569ef427e70c85a88fa0f48fcc534e9e
+source-git-commit: c374d95e6b64b8f35f89d469d698add8b95e01eb
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 7%
+source-wordcount: '1060'
+ht-degree: 8%
 
 ---
 
@@ -37,7 +37,18 @@ Forms変換ユーティリティは、古い基盤コンポーネントに基づ
 
 * 変換が成功すると、フォームに適用されているすべてのルールが削除されます。 ルールは自動的には移行されません。 これらのルールを手動で再作成し、変換後のフォームに適用する必要があります。
 * 元のフォームで使用されていた翻訳設定は引き継がれません。 変換後のフォームの翻訳を再設定します。
-  <!-- * If the form built on Foundation Components contains custom function rules, you have to rewrite these rules for the converted form based on Core Components.-->
+* 基盤コンポーネント上で作成されたフォームにスクリプトまたはカスタム関数ルールが含まれている場合、コアコンポーネントに基づいて変換されたフォーム用にこれらを書き換える必要があります。
+* 次の OOTB 基盤コンポーネントは、コアコンポーネントではまだサポートされていないので、変換された形式で削除されます。
+   * Adobe Sign ブロック
+   * グラフ
+   * ファイル添付リスト
+   * 脚注プレースホルダー
+   * 画像選択
+   * 次へボタン
+   * 前へボタン
+   * 手書き署名
+   * 概要ステップ
+   * ツールバー
 
 ## AEM Modernize Tools を使用するための前提条件
 
@@ -68,7 +79,7 @@ AEM Modernize Tools をインストールして設定するには：
 
    `java -jar aem-author-p4502.jar`
 
-1. ローカルシステムで [AEM Modernize Tool](/help/journey-migration/refactoring-tools/aem-modernization-tools.md) リポジトリのクローンを作成します。
+1. ローカルシステムで [AEM Modernize Tool](https://github.com/adobe/forms-modernizer) リポジトリのクローンを作成します。
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]

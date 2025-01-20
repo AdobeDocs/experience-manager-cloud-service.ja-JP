@@ -6,8 +6,8 @@ hide: true
 hidefromtoc: true
 exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
+source-git-commit: 812b1e41b460783d3fa220bd24ecfcfd4208a5df
+workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 100%
 
@@ -137,7 +137,7 @@ CSS を使用してスタイルを追加したり、コンポーネントを装�
    .... existing code ....
    if (fieldType === 'range') {
    const module = await import('./components/range.js');
-   return module.default;
+   return module.default(element,fd);;
    }
     return null; // null should be returned to use the original markup
    }

@@ -4,10 +4,10 @@ description: 完璧なフォームを素早く作成しましょう。⚡ AEM Fo
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '806'
-ht-degree: 100%
+source-git-commit: 4dcc580a6e3b49b1839fbb0f101c172bddf5cfcc
+workflow-type: tm+mt
+source-wordcount: '790'
+ht-degree: 88%
 
 ---
 
@@ -26,25 +26,24 @@ AEM Forms Edge Delivery には、アダプティブフォームブロックと�
 
 開始する前に、次の手順が完了していることを確認してください。
 
-* [AEM Forms ボイラープレートを使用した AEM プロジェクト](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)を設定するか、[アダプティブフォームブロックを既存の AEM プロジェクトに追加](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)して、ローカルマシン上に対応する GitHub リポジトリのクローンを作成します。
-このドキュメントでは、Edge Delivery Services（EDS）プロジェクトのローカルフォルダーを `[EDS Project repository]` と呼びます。
+* AEM Forms ボイラープレートを使用して [AEM プロジェクトを設定し ](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 既存のAEM プロジェクトに [ 追加されたアダプティブ Forms ブロックを使用し ](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) ローカルマシン上に対応する GitHub リポジトリのクローンを作成します。
+<!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
 * Google Sheets または Microsoft SharePoint へのアクセス権があることを確認します。Microsoft SharePoint をコンテンツソースとして設定するには、[SharePoint の使用方法](https://www.aem.live/docs/setup-customer-sharepoint)を参照してください。
 
 
 
 ## フォームの作成
 
-<!-- 
-
+<!--
 +++ Step 1: Add the Adaptive Forms Block to your Edge Delivery Services (EDS) project.
 
 The Adaptive  empowers users to create forms for an Edge Delivery Service Site. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Forms Block into your Edge Delivery Services project:
 
 1. **Clone the Adaptive Forms Block repository**: Clone the [Adaptive Forms Block repository](https://github.com/adobe-rnd/form-block) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Forms Block repository]`.
-1. **Locate the Adaptive Forms Block Repository:** Access the [Adaptive Forms Block repository]/blocks/src folder and copy its content. 
+2. **Locate the Adaptive Forms Block Repository:** Access the [Adaptive Forms Block repository]/blocks/src folder and copy its content. 
 
-1. on your local machine and copy the `form` folder. 
-1. **Paste the Adaptive Forms Block's code into your EDS Project:**
+3. on your local machine and copy the `form` folder. 
+4. **Paste the Adaptive Forms Block's code into your EDS Project:**
 Navigate to the [EDS Project repository]/blocks/ folder on your local machine and create a 'form' folder. Paste the `[Adaptive Forms Block repository]/blocks/src content`, copied in perevious step to the `[EDS Project repository]/blocks/form` folder.
 1. **Commit Changes to GitHub:** Check in the `[EDS Project repository]/blocks/form` folder and its underlying files to your Edge Delivery Services project on GitHub.
 
@@ -59,17 +58,15 @@ Ensure a smooth GitHub build process by addressing potential issues:
     If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
 * **Handle Linting Errors:**
-    Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project.
+    Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
 +++
-
--->
 
 +++ 手順 1：Microsoft Excel または Google Sheets を使用してフォームを作成します。
 
 複雑なプロセスを進める代わりに、スプレッドシートを使用してフォームを簡単に作成できます。フォーム構造を構成する行と列を定義できます。各行は、個々の[フォームフィールド](/help/edge/docs/forms/form-components.md#available-components)を表し、列ヘッダーは対応する[フィールドプロパティ](/help/edge/docs/forms/form-components.md#components-properties)を定義します。
 
-例えば、行が `enquiry` フォームのフィールドの概要を示し、列ヘッダーがそのプロパティを定義する次のスプレッドシートを考えてみましょう。
+例えば、次のスプレッドシートで、行が [ 問い合わせ ](/help/edge/assets/enquiry.xlsx) スプレッドシートと列見出しのフィールドのプロパティを定義しているとします。
 
 ![照会スプレッドシート](/help/edge/assets/enquiry-form-spreadsheet.png)
 
@@ -81,7 +78,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    ![Google Drive のサンプルコンテンツ](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-1. [プロジェクトに指定された設定に従って](https://www.aem.live/docs/setup-customer-sharepoint)、シートが適切な AEM ユーザー（`helix@adobe.com` など）と共有されていることを確認します。ユーザにシートの編集権限を付与します。
+1. [プロジェクトに指定された設定に従って](https://www.aem.live/docs/setup-customer-sharepoint)、シートが適切な AEM ユーザー（`forms@adobe.com` など）と共有されていることを確認します。ユーザにシートの編集権限を付与します。
 
 1. 作成したスプレッドシートを開き、デフォルトのシートの名前を「shared-default」に変更します。
 
@@ -90,7 +87,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 1. フォームフィールドを追加するには、行と列のヘッダーを「shared-default」シートに挿入します。各行は、[フォームフィールド](/help/edge/docs/forms/form-components.md#available-components)を表し、列ヘッダーが対応するフィールドの[プロパティ](/help/edge/docs/forms/form-components.md#components-properties)を定義する必要があります。
 
 
-   すぐに開始するには、[照会スプレッドシート](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0)の内容を、お使いのスプレッドシートにコピーすることを検討してください。内容をコピーした後、スプレッドシートを保存します。
+   すぐに開始するには、[照会スプレッドシート](/help/edge/assets/enquiry.xlsx)の内容を、お使いのスプレッドシートにコピーすることを検討してください。内容をコピーした後、スプレッドシートを保存します。
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427468?quality=12&learn=on)
 
@@ -103,16 +100,16 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 
    ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form-path>/<form-file-name>.json
+       https://<branch>--<repository>--<owner>.aem.live/<form-path>/<form-file-name>.json
    ```
 
    * `<branch>` は、GitHub リポジトリのブランチを参照します。
    * `<repository>` は GitHub リポジトリを示します。
-   * `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を参照します。
+   * `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を指します。
 
-   例えば、プロジェクトのリポジトリの名前が「portal」で、アカウント「wkndforms」の下にあり、「main」ブランチを使用している場合、URL は次のようになります。
+   例えば、プロジェクトのリポジトリの名前が「wefinance」で、「wkndform」というアカウントの下にあり、「main」ブランチを使用している場合、URL は次のようになります。
 
-   `https://main--portal--wkndforms.hlx.page/enquiry.json`
+   [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json)
 
 
 +++
@@ -126,7 +123,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 
 
-1. フォームを埋め込むドキュメントファイル（インデックスファイルなど）を開きます。または、新しいドキュメントを作成することもできます。
+1. フォームを埋め込むドキュメントファイル（インデックスファイルなど）を開きます。または、[ 新しいドキュメントを作成する ](/help/edge/assets/enquiry-form.docx) こともできます。
 
 1. フォームを追加するドキュメント内の目的の場所に移動します。
 
@@ -134,10 +131,10 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    | フォーム |
    |---|
-   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
 
 
-   ![アダプティブフォームブロックを web ページに追加](/help/edge/assets/add-adaptive-forms-block.png)
+   ![アダプティブフォームブロックを web ページに追加](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
    このブロックは、フォームが埋め込まれるプレースホルダーとして機能します。ブロックの 2 行目に、`<form>.json` ファイルのプレビュー URL をハイパーリンクとして追加します。
 
@@ -147,10 +144,10 @@ Ensure a smooth GitHub build process by addressing potential issues:
    > URL がプレーンテキストとして表示されるのではなく、ハイパーリンクとして書式設定されていることを確認します。
 
 
-1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) を使用してドキュメントをプレビューします。これで、ページにフォームが表示されます。例えば、[照会スプレッドシート](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0)に基づくフォームは次のとおりです。
+1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) を使用してドキュメントをプレビューします。これで、ページにフォームが表示されます。例えば、[照会スプレッドシート](/help/edge/assets/enquiry-form.docx)に基づくフォームは次のとおりです。
 
 
-   [![EDS フォームのサンプル](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
+   [![EDS フォームのサンプル](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.page/enquiry-form)
 
    ここで、フォームに入力して送信ボタンをクリックすると、スプレッドシートがまだデータを受け入れるように設定されていないので、次のようなエラーが発生します。
 

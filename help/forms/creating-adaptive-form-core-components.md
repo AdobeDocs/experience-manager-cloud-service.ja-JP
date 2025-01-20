@@ -5,14 +5,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 66fd6f506aa8dddc2a948b3c7a07134b9ae3df54
+source-git-commit: 812b1e41b460783d3fa220bd24ecfcfd4208a5df
 workflow-type: tm+mt
-source-wordcount: '2368'
-ht-degree: 97%
+source-wordcount: '2370'
+ht-degree: 100%
 
 ---
 
-# アダプティブフォームを作成します {#creating-an-adaptive-form-core-components}
+# アダプティブフォーム（コアコンポーネント）の作成 {#creating-an-adaptive-form-core-components}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -35,7 +35,7 @@ ht-degree: 97%
 
 アダプティブフォームを作成するには、以下が必要です。
 
-* **お使いの環境でのアダプティブフォームコアコンポーネントの有効化**：アダプティブフォームコアコンポーネントは、プログラムを作成した時点でお使いの環境で有効になります。アーキタイプ 39 以前の Forms as a Cloud Service 環境をご利用の場合は、[ご利用の環境でアダプティブフォームコアコンポーネントを有効にします](enable-adaptive-forms-core-components.md)。ご利用の環境でコアコンポーネントを有効にすると、**アダプティブ Forms（コアコンポーネント）** のテンプレートとテーマが環境に追加されます。 AEM SDK バージョンが 2023.02.0 より前の場合は、2023.02.0 リリースより前にアダプティブフォームのコアコンポーネントがプレリリースの一部であったので、[お使いの環境で `prerelease` フラグが有効になっていることを確認してください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)。
+* **お使いの環境でのアダプティブフォームコアコンポーネントの有効化**：アダプティブフォームコアコンポーネントは、プログラムを作成した時点でお使いの環境で有効になります。アーキタイプ 39 以前の Forms as a Cloud Service 環境をご利用の場合は、[ご利用の環境でアダプティブフォームコアコンポーネントを有効にします](enable-adaptive-forms-core-components.md)。使用する環境でコアコンポーネントを有効にすると、**アダプティブフォーム（コアコンポーネント）**&#x200B;のテンプレートとテーマが環境に追加されます。AEM SDK バージョンが 2023.02.0 より前の場合は、2023.02.0 リリースより前にアダプティブフォームのコアコンポーネントがプレリリースの一部であったので、[お使いの環境で `prerelease` フラグが有効になっていることを確認してください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)。
 
 * **アダプティブフォームテンプレート**：テンプレートは基本構造を提供し、アダプティブフォームのアピアランス（レイアウトとスタイル）を定義します。これには、特定のプロパティやコンテンツ構造を有するフォーマット済みのコンポーネントが含まれます。また、テーマと送信アクションを定義するオプションも提供されます。 テーマは、ルックアンドフィールと送信アクションを定義し、アダプティブフォームの送信時に実行するアクションを定義します。 例えば、収集したデータをデータソースに送信する場合などです。 クラウドサービスでは、空白という名前の OOTB テンプレートが提供されます。
 
@@ -109,9 +109,9 @@ ht-degree: 97%
 
 >[!NOTE]
 >
-> また、[XFA フォームテンプレート（*.XDP ファイル）を使用してアダプティブFormsを作成する ](/help/forms/create-adaptive-form-using-xfa-templates.md) こともできます。 これにより、XDP ファイルのフィールドをアダプティブFormsで直接再利用できるため、時間を節約できます。
+> また、[XFA フォームテンプレート（*.XDP ファイル）を使用してアダプティブフォームを作成](/help/forms/create-adaptive-form-using-xfa-templates.md)することもできます。これにより、XDP ファイルのフィールドをアダプティブフォームで直接再利用して、時間を節約できます。
 
-## アダプティブフォームの送信アクションを設定 {#configure-submit-action-for-form}
+## アダプティブフォームの送信アクションの設定 {#configure-submit-action-for-form}
 
 送信アクションを使用すると、アダプティブフォーム経由で取り込んだデータの送信先を選択できます。送信アクションは、ユーザーがアダプティブフォームの「送信」ボタンをクリックするとトリガーされます。アダプティブフォームには、すぐに使用できる送信アクションがいくつか含まれています。デフォルトの送信アクションを拡張して、独自のカスタム送信アクションを作成することもできます。フォームの送信アクションを設定するには、次の手順を実行します。
 
