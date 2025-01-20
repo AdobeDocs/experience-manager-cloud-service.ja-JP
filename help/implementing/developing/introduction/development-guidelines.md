@@ -4,8 +4,8 @@ description: AEM as a Cloud Service での開発に関するガイドライン�
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 16379d9cb7cdf876502205c12a233a95b410a67a
-workflow-type: ht
+source-git-commit: 9c684e3a82353c9e241efc9ee1f3bed694d8635a
+workflow-type: tm+mt
 source-wordcount: '2770'
 ht-degree: 100%
 
@@ -191,7 +191,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 AEM as a Cloud Service 開発者環境をデバッグするための一連のツールは、RDE 環境、開発環境、ステージ環境、実稼動環境の AEM as a Cloud Service Developer Console で利用できます。URL は、次のようにオーサーサービス URL またはパブリッシュサービス URL を調整して決定できます。
 
-`https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
+`https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
 ショートカットとして、次の Cloud Manager CLI コマンドを使用して、下記の環境パラメーターに基づいて AEM as a Cloud Service Developer Console を起動できます。
 
