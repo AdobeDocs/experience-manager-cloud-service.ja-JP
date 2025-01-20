@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
 source-git-commit: cddfcddc0ca3652270bdb735e580386ac9ff1fc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 65%
 
 ユーザーが AEM as a Cloud Service にログインするか、アクセストークンを使用するたびに、Adobe Admin Console ユーザーグループ、製品プロファイルおよび製品プロファイルサービスがグループとして AEM リポジトリに同期されます。
 
-AEMのバージョンが 18751 より新しい場合（メンテナンスリリースは 1 月 27 日に実稼動環境へのロールアウトを開始する予定です）、UI の混乱を減らし、パフォーマンスを最適化するために、同期動作にいくつかの変更が加えられ、AEMに表示されるグループが少なくなります。 次の 2 つのカテゴリの AEM グループが削除されます。
+AEM バージョン 18751 以降（メンテナンスリリースは 1月27日（PT）に実稼動環境へのロールアウトを開始する予定です）では、UI の簡素化およびパフォーマンスの最適化を行うために、同期動作にいくつかの変更が加えられ、AEM に表示されるグループの数が少なくなります。次の 2 つのカテゴリの AEM グループが削除されます。
 
-1. サフィックス `GROUP_NAME_SUFFIX` を持つ AEM グループ。これらのグループは、Adobe Developer Console には表示されませんが、以下に示すように AEM グループ管理画面に表示されます。万一、AEM アプリケーションがこれらのグループを参照する場合は、代わりに、このサフィックスを付けずにAdobe Admin Console ユーザーグループを参照してください。
+1. サフィックス `GROUP_NAME_SUFFIX` を持つ AEM グループ。これらのグループは、Adobe Developer Console には表示されませんが、以下に示すように AEM グループ管理画面に表示されます。万が一、AEM アプリケーションがこれらのグループを参照する場合は、代わりにそのサフィックスのない Adobe Admin Console ユーザーグループを参照してください。
 
    ![削除されたグループ 1](/help/security/assets/removed-groups-1.png)
 
-1. 特定の環境に関係なく、Adobe Admin Console製品プロファイルに関連付けられたAEM グループ。 これには、次の製品プロファイルが含まれる場合があります。
+1. 特定の環境に関連しない Adobe Admin Console 製品プロファイルに関連付けられた AEM グループ。これには、次の製品プロファイルが含まれる場合があります。
 
    * 他のアドビ製品に関連する
    * 他の AEM プログラムに関連する
@@ -42,5 +42,5 @@ Cloud Manager の環境のアクションメニューでアクセスを管理／
 
 ![Admin Console のサフィックス](/help/security/assets/admin-console-profile-suffixes.png)
 
-万一、AEM アプリケーションで、AEMに表示されないグループが参照されている場合は、代わりに、i）適切なAEM インスタンスの製品プロファイルまたは ii） Adobe Admin Console ユーザーグループを使用するようにします。
+万が一、AEM アプリケーションが参照しているグループが AEM に表示されなくなる場合は、代わりに i) 適切な AEM インスタンスの製品プロファイル、または ii) Adobe Admin Console ユーザーグループのいずれかを使用してください。
 
