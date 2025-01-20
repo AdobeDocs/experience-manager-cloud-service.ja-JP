@@ -4,9 +4,9 @@ description: コンテンツコピーツールを使用すると、可変コン�
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: dfd44fc637e60f48c3d13430f1f4b9b7b9427d3d
-workflow-type: ht
-source-wordcount: '1347'
+source-git-commit: fef97af53726d45cae36e2c9c6a5d82aa2f872c2
+workflow-type: tm+mt
+source-wordcount: '1286'
 ht-degree: 100%
 
 ---
@@ -200,10 +200,3 @@ ht-degree: 100%
 * コンテンツのコピーツールにはバージョン管理機能がなく、前回のコンテンツのコピー操作以降にコンテンツセット内のソース環境で変更されたコンテンツや作成されたコンテンツを自動的に検出できません。
    * 前回のコンテンツのコピー操作以降のコンテンツの変更のみで宛先環境を更新する場合は、コンテンツセットを作成する必要があります。それから、前回のコンテンツコピー操作以降に変更が加えられたソースインスタンス上のパスを指定します。
 * バージョン情報は、コンテンツコピーに含まれていません。
-
-## 既知の問題 {#known-issues}
-
-[コンテンツのコピー機能](/help/implementing/developing/tools/content-copy.md)を使用する場合は、次の既知の問題に注意してください。
-
-* ソース環境のリソースの名前を変更すると、ターゲット環境の UUID が競合するので、コンテンツのコピー操作が失敗する可能性があります。
-   * このエラーを回避するには、リソースの名前を変更する代わりに、まずリソースを削除してから、目的の新しいリソース名で再作成します。
