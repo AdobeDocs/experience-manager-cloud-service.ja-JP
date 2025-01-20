@@ -1,7 +1,7 @@
 ---
-source-git-commit: f6be839d58b796b3791342375ff61d17b1f8cb0f
+source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1371'
 ht-degree: 96%
 
 ---
@@ -66,6 +66,7 @@ ht-degree: 96%
 * [繰り返し可能なセクションをフォームに追加する](/help/edge/docs/forms/repeatable-forms.md)
 * [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
 * [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
+* [フォーム送信サービスの使用](/help/forms/forms-submission-service.md)
 
 
 ## コアコンポーネントのルールエディターと基盤コンポーネントのルールエディターの違い {#rule-editor-diff}

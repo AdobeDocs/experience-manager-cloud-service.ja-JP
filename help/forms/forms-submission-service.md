@@ -4,9 +4,7 @@ Description: Learn how to use forms submission service for submitting forms.
 Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
-hide: true
-hidefromtoc: true
-source-git-commit: 4ea2980a0e1093839e9271c666f2bbcca98d8a26
+source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 1%

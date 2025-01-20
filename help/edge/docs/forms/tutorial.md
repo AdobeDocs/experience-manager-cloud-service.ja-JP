@@ -4,7 +4,7 @@ description: このチュートリアルは、新しい Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 8cf72ab1958b313196341bef4f3ece121721ac14
+source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
 source-wordcount: '1806'
 ht-degree: 92%
@@ -67,7 +67,7 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
    * `<repository>` は GitHub リポジトリを示します。
    * `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を指します。
 
-   例えば、ブランチ名が `main`、リポジトリが `wefinance`、所有者が `wkndform` の場合、web サイトは [https://main--wefinance--wkndforms.aem.page/で稼働します ](https://main--wefinance--wkndform.aem.page/)
+   例えば、ブランチ名が `main`、リポジトリが `wefinance`、所有者が `wkndform` の場合、web サイトは [https://main--wefinance--wkndform.aem.pageで稼働します ](https://main--wefinance--wkndform.aem.page)
 
 
 
