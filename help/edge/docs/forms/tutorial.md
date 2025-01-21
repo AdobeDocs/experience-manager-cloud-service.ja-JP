@@ -4,9 +4,9 @@ description: このチュートリアルは、新しい Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1803'
 ht-degree: 92%
 
 ---
@@ -67,9 +67,8 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
    * `<repository>` は GitHub リポジトリを示します。
    * `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を指します。
 
-   例えば、ブランチ名が `main`、リポジトリが `wefinance`、所有者が `wkndform` の場合、web サイトは [https://main--wefinance--wkndform.aem.pageで稼働します ](https://main--wefinance--wkndform.aem.page)
-
-
+   例えば、ブランチ名が `main`、リポジトリが `wefinance`、所有者が `wkndforms` の場合、web サイトは `https://main--wefinance--wkndforms.aem.page` で稼働します
+&lt;! – （https://main--wefinance--wkndform.aem.page)-->
 
 ### 独自のコンテンツソースのリンク
 
@@ -135,8 +134,6 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
 
    1. 参照を更新し、すべてが正しく表示されたら、更新された `fsatb.yaml` ファイルをコミットします。ビルドの問題が発生した場合は、[GitHub ビルド問題のトラブルシューティング](#troubleshooting-github-build-issues)を参照してください。
 
-
-
       ![更新された fsatab.yaml ファイルのコミット](/help/edge/assets/commit-updated-fstab-yaml.png)
 
       これにより、コンテンツフォルダーが web サイトに接続されます。参照を更新した後、最初に「404 Not Found」というエラーが発生する場合があります。これは、コンテンツがまだプレビューされていないためです。次の節では、コンテンツのオーサリングとプレビューを開始する方法について説明します。
@@ -185,7 +182,8 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
 
    `https://<branch>--<repo>--<owner>.aem.page/enquiry` の URL。
 
-   例えば、プロジェクトのリポジトリーの名前が「wefinance」で、アカウント所有者の下にある「wkndform」で、「main」ブランチとフォーム名を `enquiry` として使用する場合、URL は [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry) です。
+   例えば、プロジェクトのリポジトリーの名前が「wefinance」で、アカウント所有者の「wkndform」の下にあり、「main」ブランチとフォーム名を `enquiry` として使用する場合、URL は `https://main--wefinance--wkndform.aem.live/enquiry` になります。
+&lt;! – （https://main--wefinance--wkndform.aem.live/enquiry).-->
 
 ### フォームの作成
 
@@ -199,7 +197,7 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
 
 ファイルをプレビューまたは公開すると、ファイルの JSON バージョンが新しいタブに表示されます。ファイルのプレビュー（.aem.page）または公開（.aem.live） URL をコピーします。
 
-![フォームスプレッドシートの JSON](/help/edge/assets//preview-and-publish-enquiry-form.png)
+![フォームスプレッドシートの JSON](/help/edge/assets/preview-and-publish-enquiry-form.png)
 
 `enquiry` ファイルを開き、フォームブロック内の URL を、前の手順でコピーしたファイルの URL に置き換えます。URL がハイパーリンクであることを確認します。
 
@@ -220,9 +218,12 @@ AEM Sidekick を使用して、お問い合わせドキュメントをプレビ�
 
 送信ボタンのラベルが `Let's Talk` に更新されます。
 
-[![ お問い合わせフォーム ](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.live/enquiry)
+![お問い合わせフォーム](/help/edge/assets/updated-form.png)
 
-URL: [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)
+&lt;! – （https://main--wefinance--wkndform.aem.live/enquiry)-->
+
+URL: `https://main--wefinance--wkndform.aem.live/enquiry`
+&lt;! – （https://main--wefinance--wkndform.aem.live/enquiry)-->
 
 
 新しいフォームの作成と公開について詳しくは、[フォームの作成](/help/edge/docs/forms/create-forms.md)ガイドを参照してください。

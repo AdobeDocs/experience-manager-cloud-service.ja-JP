@@ -4,13 +4,13 @@ Description: Learn how to use forms submission service for submitting forms.
 Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
+source-git-commit: 42db7e5d4896a4a488643cb54f0b77cf4db86f3e
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '835'
 ht-degree: 1%
 
 ---
-
 
 # Edge Delivery Services FormsによるForms送信サービス
 
@@ -31,7 +31,7 @@ Forms送信サービスを使用すると、フォーム送信データを OneDr
 Forms Submission サービスを使用するための前提条件を以下に示します。
 
 * AEM プロジェクトに最新のアダプティブフォームブロックが含まれていることを確認します。
-* Forms送信サービスを使用するには、Git リポジトリが許可リストに追加されていることを確認してください。 Forms送信サービスをリクエストする [form](https://main--afb--adobe.hlx.page/docs/docbased/submit#feature-enablement-request) に入力します。
+* Forms送信サービスを使用するには、Git リポジトリが許可リストに追加されていることを確認してください。 Forms Submission サービスを使用するための許可リストに追加するには、mailto:aem-forms-ea@adobe.comに GitHub の組織名とリポジトリ名を入力してください。
 
 ## Forms送信サービスの設定
 

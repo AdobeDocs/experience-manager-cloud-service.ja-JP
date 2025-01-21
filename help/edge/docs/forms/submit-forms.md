@@ -4,17 +4,17 @@ description: スプレッドシートとアダプティブフォームブロッ�
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: 086706a1b9ab211738ea2978b73e1681b04ddac2
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 84%
+source-wordcount: '426'
+ht-degree: 65%
 
 ---
 
 # データの受け入れを開始するための Google Sheets または Microsoft Excel ファイルの設定
 
 
-[フォームを作成してプレビュー](/help/edge/docs/forms/create-forms.md)したら、対応するスプレッドシートでデータの受信を開始できるようにします。スプレッドシートでデータを受け入れるように手動で有効にすることも、スプレッドシートでデータを受け入れるように Admin API を使用して有効にすることもできます。
+[ フォームを作成してプレビュー ](/help/edge/docs/forms/create-forms.md) したら、対応するスプレッドシートでデータの受信を開始できます。 スプレッドシートでデータを受け入れるように手動で有効にすることも、スプレッドシートでデータを受け入れるように Admin API を使用して有効にすることもできます。
 
 ![ドキュメントベースのオーサリングエコシステム](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -34,19 +34,19 @@ ht-degree: 84%
    >
    > `incoming` シートが存在しない場合、AEM ではスプレッドシートにデータを送信しません。
 
-2. このシートに、「intake_form」という名前のテーブルを挿入します。フォームフィールド名と一致させるために必要な列の数を選択します。次に、ツールバーで挿入／表に移動し、「OK」をクリックします。
+1. このシートに、「intake_form」という名前のテーブルを挿入します。フォームフィールド名と一致させるために必要な列の数を選択します。次に、ツールバーで挿入／表に移動し、「OK」をクリックします。
 
-3. 表の名前を「intake_form」に変更します。Microsoft Excel で表の名前を変更するには、表を選択し、「表書式」をクリックします。
+1. 表の名前を「intake_form」に変更します。Microsoft Excel で表の名前を変更するには、表を選択し、「表書式」をクリックします。
 
-4. 次に、フォームフィールド名を表ヘッダーとして追加します。フィールドが完全に同じであることを確認するには、「shared-default」シートからフィールドをコピー＆ペーストします。「shared-default」シートで、送信フィールドを除く「Name」列の下にリストされるフォーム ID を選択してコピーします。
+1. 次に、フォームフィールド名を表ヘッダーとして追加します。フィールドがまったく同じであることを確認するには、「共有 aem」シートからフィールドをコピーして貼り付けることができます。  共有 aem シートで、「名前」列にリストされたフォーム ID を選択してコピーします（送信フィールドを除く）。
 
-5. 「incoming」シートで、形式を選択して貼り付け／行/列の入れ替えを選択して、フィールド ID をこの新しいシートの列ヘッダーとしてコピーします。データを取得する必要があるフィールドのみを保持し、他のフィールドは無視できます。
+1. 「incoming」シートで、形式を選択して貼り付け／行/列の入れ替えを選択して、フィールド ID をこの新しいシートの列ヘッダーとしてコピーします。データを取得する必要があるフィールドのみを保持し、他のフィールドは無視できます。
 
-   `shared-default` の `Name` 列の各値は、送信ボタンを除き、`incoming` シートのヘッダーとして機能します。例えば、「問い合わせ」フォームのヘッダーを示す次の画像について考えてみます。
+   `shared-aem` の `Name` 列の各値は、送信ボタンを除き、`incoming` シートのヘッダーとして機能します。例えば、「問い合わせ」フォームのヘッダーを示す次の画像について考えてみます。
 
    ![お問い合わせフォームのフィールド](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-6. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 拡張機能を使用して、フォームの更新をプレビューします。 これで、シートはフォームの送信を受け入れる準備が整いました。
+1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 拡張機能を使用して、フォームの更新をプレビューします。 これで、シートはフォームの送信を受け入れる準備が整いました。
 
    >[!NOTE]
    >
@@ -59,7 +59,7 @@ ht-degree: 84%
 
 >[!WARNING]
 >
->  「shared-default」シートには、一般にアクセスされることに抵抗のある個人を特定できる情報や機密データを決して含めないでください。
+>  「共有 aem」シートには、個人を特定できる情報や機密データが含まれていて、公開アクセスに不安がある場合は、絶対に使用しないでください。
 
 <!--
 ### Use Admin APIs to enable a spreadsheet to accept data

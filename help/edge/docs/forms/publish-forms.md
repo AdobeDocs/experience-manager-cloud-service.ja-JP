@@ -4,10 +4,10 @@ description: AEM Forms の Edge Delivery Services の公開
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
-source-git-commit: 4e6045aadd7d927851e431e2204cb2d56767a5a3
+source-git-commit: 81fbf43572c5129efb0a0718b408f0c9ae4a5ad3
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 77%
+source-wordcount: '587'
+ht-degree: 78%
 
 ---
 
@@ -53,7 +53,8 @@ ht-degree: 77%
 
    例えば、プロジェクトのリポジトリの名前が「wefinance」で、「wkndform」というアカウントの下にあり、「main」ブランチとフォームを「inquiry」として使用している場合、URL は次のようになります。
 
-   [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json)
+   `https://main--wefinance--wkndform.aem.live/enquiry.json`
+&lt;! – （https://main--wefinance--wkndform.aem.live/enquiry.json)-->
 
 +++
 
@@ -74,7 +75,7 @@ Web ページにフォームを追加するには、以下の手順に従いま�
 
    | フォーム |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
    ![「フォーム」という名前のブロックをファイルに追加](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
@@ -95,16 +96,16 @@ Web ページにフォームを追加するには、以下の手順に従いま�
 
    | フォーム |
    |---|
-   | [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.page/enquiry.json` |
 
 
    **パブリッシュ URL**
 
    | フォーム |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
-1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) を使用して web ページをプレビューします。これで、ページにフォームが表示されます。例えば、[お問い合わせスプレッドシート](/help/edge/assets/enquiry.xlsx)に基づくフォームは次のとおりです。
+1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) を使用して web ページをプレビューします。これで、ページにフォームが表示されます。例えば、[お問い合わせスプレッドシート](/help/edge/assets/enquiry-form.docx)に基づくフォームは次のとおりです。
 
 
    ![EDS フォームのサンプル](/help/edge/assets/updated-form.png)

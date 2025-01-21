@@ -4,10 +4,10 @@ description: 完璧なフォームを素早く作成しましょう。⚡ AEM Fo
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: 4dcc580a6e3b49b1839fbb0f101c172bddf5cfcc
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 88%
+source-wordcount: '782'
+ht-degree: 86%
 
 ---
 
@@ -60,8 +60,6 @@ Ensure a smooth GitHub build process by addressing potential issues:
 * **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
-+++
-
 +++ 手順 1：Microsoft Excel または Google Sheets を使用してフォームを作成します。
 
 複雑なプロセスを進める代わりに、スプレッドシートを使用してフォームを簡単に作成できます。フォーム構造を構成する行と列を定義できます。各行は、個々の[フォームフィールド](/help/edge/docs/forms/form-components.md#available-components)を表し、列ヘッダーは対応する[フィールドプロパティ](/help/edge/docs/forms/form-components.md#components-properties)を定義します。
@@ -76,15 +74,15 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 1. AEM Edge Delivery プロジェクトディレクトリ内の任意の場所で、Microsoft Excel ワークブックまたは Google シートを作成します。例えば、Google Drive の AEM Edge Delivery プロジェクトディレクトリに `enquiry` という名前のスプレッドシートを作成します。
 
-   ![Google Drive のサンプルコンテンツ](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+   <!-- ![Sample Content on Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)-->
 
 1. [プロジェクトに指定された設定に従って](https://www.aem.live/docs/setup-customer-sharepoint)、シートが適切な AEM ユーザー（`forms@adobe.com` など）と共有されていることを確認します。ユーザにシートの編集権限を付与します。
 
-1. 作成したスプレッドシートを開き、デフォルトのシートの名前を「shared-default」に変更します。
+1. 作成したスプレッドシートを開き、デフォルトシートの名前を「shared-aem」に変更します。
 
    ![デフォルトのシート名を「shared-default」に変更](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. フォームフィールドを追加するには、行と列のヘッダーを「shared-default」シートに挿入します。各行は、[フォームフィールド](/help/edge/docs/forms/form-components.md#available-components)を表し、列ヘッダーが対応するフィールドの[プロパティ](/help/edge/docs/forms/form-components.md#components-properties)を定義する必要があります。
+1. フォームフィールドを追加するには、行および列ヘッダーを「shared-aem」シートに挿入します。 各行は、[フォームフィールド](/help/edge/docs/forms/form-components.md#available-components)を表し、列ヘッダーが対応するフィールドの[プロパティ](/help/edge/docs/forms/form-components.md#components-properties)を定義する必要があります。
 
 
    すぐに開始するには、[照会スプレッドシート](/help/edge/assets/enquiry.xlsx)の内容を、お使いのスプレッドシートにコピーすることを検討してください。内容をコピーした後、スプレッドシートを保存します。
@@ -109,7 +107,8 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    例えば、プロジェクトのリポジトリの名前が「wefinance」で、「wkndform」というアカウントの下にあり、「main」ブランチを使用している場合、URL は次のようになります。
 
-   [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json)
+`https://main--wefinance--wkndform.aem.page/enquiry.json`
+&lt;! – （https://main--wefinance--wkndform.aem.page/enquiry.json)-->
 
 
 +++
@@ -131,7 +130,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    | フォーム |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
 
    ![アダプティブフォームブロックを web ページに追加](/help/edge/assets/enquiry-doc-to-embed-form.png)
