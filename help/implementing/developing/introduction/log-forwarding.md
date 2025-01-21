@@ -4,9 +4,9 @@ description: AEM as a Cloud Serviceでのログのベンダーへの転送につ
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: f6de6b6636d171b6ab08fdf432249b52c2318c45
+source-git-commit: 6e91ad839de6094d7f6abd47881dabc6357a80ff
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1975'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ログベンダーのライセンスを持つお客様、またはログ製品をホストするお客様は、AEM ログ（Apache/Dispatcherを含む）および CDN ログを、関連するログ出力先に転送することができます。 AEM as a Cloud Serviceは、次のログ出力先をサポートしています。
 
-* Azure Blob ストレージ
+* Azure Blob Storage
 * Datadog
 * Elasticsearchまたは OpenSearch
 * HTTPS
@@ -31,23 +31,21 @@ AEMと Apache/Dispatcherのログを、専用のエグレス IP などのAEMの�
 
 ログの宛先に送信されたログに関連付けられているネットワーク帯域幅は、組織のネットワーク I/O 使用の一部と見なされることに注意してください。
 
-
 ## この記事の編成方法 {#how-organized}
 
 この記事は、次のように構成されています。
 
 * 設定 – すべてのログ宛先に共通
+* トランスポートと高度なネットワーク – ログ設定を作成する前に、ネットワーク設定を考慮する必要があります
 * 宛先設定のログ記録 – 各宛先の形式は若干異なります
 * ログエントリ形式 – ログエントリ形式に関する情報
-* 高度なネットワーク – 専用のエグレスまたは VPN 経由でのAEMおよび Apache/Dispatcher ログの送信
 * 従来のログ転送からの移行 – Adobeが以前に設定したログ転送からセルフサービスアプローチに移行する方法
-
 
 ## 設定 {#setup}
 
 1. `logForwarding.yaml` という名前のファイルを作成します。[ 設定パイプラインの記事 ](/help/operations/config-pipeline.md#common-syntax) で説明しているように、メタデータ（**kind** を `LogForwarding` に、バージョンを「1」に設定する必要があります）と、次のような設定を含める必要があります（例として Splunk を使用します）。
 
-   ```
+   ```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -71,7 +69,7 @@ AEMと Apache/Dispatcherのログを、専用のエグレス IP などのAEMの�
 
 **default** ブロックの後に追加の **cdn** ブロックや **aem** ブロックを含めることで、CDN ログとAEM ログ（Apache/Dispatcherを含む）に異なる値を設定できます。このブロックでは、プロパティを **default** ブロックで定義されたプロパティを上書きできます。必要なのは、有効なプロパティのみです。 以下の例に示すように、CDN ログに別の Splunk インデックスを使用する使用例が考えられます。
 
-```
+```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -91,7 +89,7 @@ AEMと Apache/Dispatcherのログを、専用のエグレス IP などのAEMの�
 
 別のシナリオとして、CDN ログまたはAEM ログ（Apache/Dispatcherを含む）の転送を無効にする場合もあります。 例えば、CDN ログのみを転送するには、次を設定します。
 
-```
+```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -107,13 +105,90 @@ AEMと Apache/Dispatcherのログを、専用のエグレス IP などのAEMの�
          enabled: false
 ```
 
+## トランスポートと高度なネットワーク {#transport-advancednetworking}
+
+一部の組織は、ログ宛先で受信できるトラフィックを制限し、他の組織は HTTPS （443）以外のポートを使用する必要がある場合があります。  その場合は、ログ転送設定をデプロイする前に [ 詳細ネットワーク ](/help/security/configuring-advanced-networking.md) を設定する必要があります。
+
+次の表を使用して、ポート 443 を使用しているかどうか、および固定 IP アドレスからログを表示する必要があるかどうかに基づいて、高度なネットワーク設定とログ設定の要件を確認してください。
+<html>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+</style>
+<table>
+  <tbody>
+    <tr>
+      <th>宛先ポート</th>
+      <th>固定 IP からログを表示するための要件</th>
+      <th>高度なネットワークが必要</th>
+      <th>LogForwarding.yaml ポート定義が必要です</th>
+    </tr>
+    <tr>
+      <td rowspan="2">HTTPS （443）</td>
+      <td>不可</td>
+      <td>不可</td>
+      <td>いいえ</td>
+    </tr>
+    <tr>
+      <td>はい</td>
+      <td>対応 <a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address"> 専用エグレス </a></td>
+      <td>いいえ</td>
+    <tr>
+    <tr>
+      <td rowspan="2">非標準ポート （例：8088）</td>
+      <td>いいえ</td>
+      <td>対応 <a href="/help/security/configuring-advanced-networking.md#flexible-port-egress-flexible-port-egress"> 柔軟なエグレス </a></td>
+      <td>はい</td>
+    </tr>
+    <tr>
+      <td>はい</td>
+      <td>対応 <a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address"> 専用エグレス </a></td>
+      <td>あり</td>
+  </tbody>
+</table>
+</html>
+
+>[!NOTE]
+>ログが 1 つの IP アドレスから表示されるかどうかは、高度なネットワーク設定の選択によって決まります。  これを容易にするには、専用のエグレスを使用する必要があります。
+>
+> 高度なネットワーク設定は [2 段階のプロセス ](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling) で、プログラムおよび環境レベルでイネーブルメントを行う必要があります。
+
+AEM ログ（Apache/Dispatcherを含む）の場合、[ 高度なネットワーク機能 ](/help/security/configuring-advanced-networking.md) を設定していれば、`aem.advancedNetworking` プロパティを使用して、専用のエグレス IP アドレスから、または VPN 経由で転送できます。
+
+次の例は、高度なネットワークを使用して標準の HTTPS ポートに対してログを設定する方法を示しています。
+
+```yaml
+kind: "LogForwarding"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  splunk:
+    default:
+      enabled: true
+      host: "splunk-host.example.com"
+      port: 443
+      token: "${{SPLUNK_TOKEN}}"
+      index: "aemaacs"
+    aem:
+      advancedNetworking: true
+```
+
+CDN ログの場合は、[Fastly ドキュメント – 公開 IP リスト ](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) で説明しているように、IP アドレスを許可リストに登録できます。 その共有 IP アドレスのリストが大きすぎる場合は、https Adobeまたは（サーバー以外の） Azure Blob Store にトラフィックを送信することを検討してください。そこでは、既知の IP から最終的な宛先にログを送信するロジックを書き込むことができます。
+
+>[!NOTE]
+>AEM ログと同じ IP アドレスから CDN ログを表示することはできません。これは、ログがAEM Cloud Serviceではなく Fastly から直接送信されるためです。
+
 ## 宛先設定のログ記録 {#logging-destinations}
 
 サポートされるログの宛先の設定を、具体的な考慮事項と共に以下に示します。
 
-### Azure Blob ストレージ {#azureblob}
+### Azure Blob Storage {#azureblob}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -147,7 +222,7 @@ data:
 
 例えば、ある時点で次のようになります。
 
-```
+```text
 aemcdn/
    2024-03-04T10:00:00.000-abc.log
    2024-03-04T10:00:00.000-def.log
@@ -155,7 +230,7 @@ aemcdn/
 
 30 秒後には、
 
-```
+```text
 aemcdn/
    2024-03-04T10:00:00.000-abc.log
    2024-03-04T10:00:00.000-def.log
@@ -164,7 +239,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-各ファイルには、それぞれ別の行に記述された複数の JSON ログエントリが含まれます。 ログエントリの形式については、[AEM as a Cloud Serviceのログ ](/help/implementing/developing/introduction/logging.md) を参照してください。各ログエントリには、以下の [ ログエントリの形式 ](#log-format) の節で説明しているその他のプロパティも含まれています。
+各ファイルには、それぞれ別の行に記述された複数の JSON ログエントリが含まれます。 ログエントリの形式については、[AEM as a Cloud Serviceのログ ](/help/implementing/developing/introduction/logging.md) を参照してください。各ログエントリには、以下の [ ログエントリの形式 ](#log-formats) の節で説明しているその他のプロパティも含まれています。
 
 #### Azure Blob Storage AEM ログ {#azureblob-aem}
 
@@ -181,10 +256,9 @@ AEM ログ（Apache/Dispatcherを含む）は、次の命名規則でフォル�
 
 [AEM as a Cloud Serviceのログ ](/help/implementing/developing/introduction/logging.md) のログエントリフォーマットを参照してください。 ログエントリには、以下の [ ログエントリの形式 ](#log-formats) の節で説明する追加のプロパティも含まれます。
 
-
 ### Datadog {#datadog}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -210,11 +284,9 @@ data:
 * Datadog サービスタグは `adobeaemcloud` に設定されていますが、タグセクションで上書きできます
 * 取り込みパイプラインで Datadog タグを使用してログを転送するための適切なインデックスを決定する場合は、ログ転送 YAML ファイルでこれらのタグが正しく設定されていることを確認します。 タグが見つからない場合、パイプラインがタグに依存していると、ログの取り込みに成功しない可能性があります。
 
-
-
 ### Elasticsearchと OpenSearch {#elastic}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -239,7 +311,7 @@ data:
 * AEM ログの場合、`index` は `aemaccess`、`aemerror`、`aemrequest`、`aemdispatcher`、`aemhttpdaccess` または `aemhttpderror` のいずれかに設定されます
 * オプションのパイプラインプロパティは、Elasticsearchまたは OpenSearch 取り込みパイプラインの名前に設定する必要があります。この名前は、ログエントリを適切なインデックスにルーティングするように設定できます。 パイプラインのプロセッサタイプは *スクリプト* に設定し、スクリプト言語は *痛みなし* に設定する必要があります。 次に、ログエントリを aemaccess_dev_26_06_2024 などのインデックスにルーティングするスクリプトスニペットの例を示します。
 
-```
+```text
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
 def sourceType = ctx._index;
 def date = new SimpleDateFormat('dd_MM_yyyy').format(new Date());
@@ -248,7 +320,7 @@ ctx._index = sourceType + "_" + envType + "_" + date;
 
 ### HTTPS {#https}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -279,7 +351,7 @@ Web リクエスト（POST）は、ログエントリの配列である json ペ
 
 #### HTTPS AEM ログ {#https-aem}
 
-AEM ログ（apache/dispatcher を含む）の場合、web リクエスト（POST）は、[AEM as a Cloud Serviceのログ ](/help/implementing/developing/introduction/logging.md) で説明されているように、様々なログエントリ形式でログエントリの配列である json ペイロードで継続的に送信されます。 その他のプロパティについては、以下の「[ ログエントリの形式 ](#log-format) の節で説明します。
+AEM ログ（apache/dispatcher を含む）の場合、web リクエスト（POST）は、[AEM as a Cloud Serviceのログ ](/help/implementing/developing/introduction/logging.md) で説明されているように、様々なログエントリ形式でログエントリの配列である json ペイロードで継続的に送信されます。 その他のプロパティについては、以下の「[ ログエントリの形式 ](#log-formats) の節で説明します。
 
 `Source-Type` という名前のプロパティもあり、次のいずれかの値に設定されます。
 
@@ -292,7 +364,7 @@ AEM ログ（apache/dispatcher を含む）の場合、web リクエスト（POS
 
 ### Splunk {#splunk}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -313,16 +385,14 @@ data:
   *aemrequest*、*aemdispatcher*、*aemhttpdaccess*、*aemhttpderror*、*aemcdn*
 * 必要な IP が許可リストに加えるされたにもかかわらずログが配信されない場合は、Splunk トークンの検証を強制するファイアウォールルールがないことを確認します。 無効な Splunk トークンが意図的に送信される最初の検証ステップを Fastly が実行します。 無効な Splunk トークンを使用して接続を終了するようにファイアウォールが設定されている場合、検証プロセスが失敗し、Fastly が Splunk インスタンスにログを配信できなくなります。
 
-
 >[!NOTE]
 >
 > 従来のログ転送からこのセルフサービスモデルに [ 移行する場合 ](#legacy-migration)、Splunk インデックスに送信される `sourcetype` フィールドの値が変更された可能性があるので、それに応じて調整します。
 
-
 <!--
 ### Sumo Logic {#sumologic}
 
-   ```
+   ```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -351,36 +421,11 @@ data:
 
 例えば、プロパティには次の値を含めることができます。
 
-```
+```text
 aem_env_id: 1242
 aem_env_type: dev
 aem_program_id: 12314
 aem_tier: author
-```
-
-## 高度なネットワーク {#advanced-networking}
-
-一部の組織は、ログの宛先で受信できるトラフィックを制限します。
-
-CDN ログの場合は、[fastly ドキュメント – 公開 IP リスト ](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) で説明しているように、IP アドレスを許可リストに登録できます。 その共有 IP アドレスのリストが大きすぎる場合は、https Adobeまたは（サーバー以外の） Azure Blob Store にトラフィックを送信することを検討してください。そこでは、既知の IP から最終的な宛先にログを送信するロジックを書き込むことができます。
-
-AEM ログ（Apache/Dispatcherを含む）の場合、[ 高度なネットワーク ](/help/security/configuring-advanced-networking.md) を設定している場合は、advancedNetworking プロパティを使用して、専用のエグレス IP アドレスから、または VPN 経由で転送できます。
-
-```
-kind: "LogForwarding"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  splunk:
-    default:
-      enabled: true
-      host: "splunk-host.example.com"
-      port: 443
-      token: "${{SPLUNK_TOKEN}}"
-      index: "aemaacs"
-    aem:
-      advancedNetworking: true
 ```
 
 ## レガシーログ転送からの移行 {#legacy-migration}
@@ -399,10 +444,6 @@ Adobeでそのように設定されているお客様は、ご都合の良い時
 設定をすべての環境にデプロイして、すべての環境をセルフサービスで制御できるようにすることをお勧めしますが、必須ではありません。 そうしないと、Adobeが設定した環境と、セルフサービスで設定した環境を忘れてしまう可能性があります。
 
 >[!NOTE]
->
 >Splunk インデックスに送信された `sourcetype` フィールドの値が変更された可能性があるので、それに応じて調整します。
-
->[!NOTE]
 >
 >Adobeサポートが以前に設定した環境にログ転送をデプロイすると、最大で数時間ログの重複が発生する場合があります。 これは最終的に自動解決されます。
-
