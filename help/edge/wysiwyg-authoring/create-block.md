@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリン
 
 ![プロジェクトのクローン](assets/create-block/clone.png)
 
-2\.プロジェクトのルートにある [`component-definition.json` ファイルを編集し ](/help/implementing/universal-editor/component-definition.md) 新しい引用ブロックに次の定義を追加して、ファイルを保存します。
+2\.プロジェクトのルートにある [`component-definition.json` ファイル](/help/implementing/universal-editor/component-definition.md)を編集し、新しい引用ブロックに次の定義を追加して、ファイルを保存します。
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリン
 
 >[!ENDTABS]
 
-4\.プロジェクトのルートにある [`component-filters.json` ファイルを編集し ](/help/implementing/universal-editor/filtering.md) 引用ブロックを [ フィルター定義 ](/help/implementing/universal-editor/filtering.md) に追加して、ブロックを任意のセクションに追加できるようにして、ファイルを保存します。
+4\.プロジェクトのルートにある [`component-filters.json` ファイル](/help/implementing/universal-editor/filtering.md)を編集し、[フィルター定義](/help/implementing/universal-editor/filtering.md)に引用ブロックを追加して、ブロックを任意のセクションに追加してファイルを保存できるようにします。
 
 >[!BEGINTABS]
 

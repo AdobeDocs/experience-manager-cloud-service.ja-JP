@@ -8,7 +8,7 @@ role: User
 source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '1378'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -128,7 +128,7 @@ ht-degree: 99%
 
 1. 次に、プロパティパネルで追加アイコンを選択します。
 
-   ![ 追加アイコンを選択 ](assets/add-icon.png)
+   ![追加アイコンの選択](assets/add-icon.png)
 
 コンポーネントがコンテナに挿入され、エディターで編集できます。
 

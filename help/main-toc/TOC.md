@@ -226,14 +226,14 @@ ht-degree: 99%
    + [AEM as a Cloud Service の高度なネットワーク機能の設定](/help/security/configuring-advanced-networking.md)
    + [AEM as a Cloud Service の IMS サポート](/help/security/ims-support.md)
    + [ユーザーグループと製品プロファイルの同期の変更](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
-   + [AEM as a Cloud Service のサイト Cookie サポートポリシー](/help/security/same-site-cookie-support.md)
+   + [AEM as a Cloud Service の同一サイト cookie サポート](/help/security/same-site-cookie-support.md)
    + [メールサービスの OAuth2 サポート](/help/security/oauth2-support-for-mail-service.md)
    + [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service のセキュリティに関する考慮事項](/help/security/security-considerations.md)
    + [Adobe Developer Console での JWT 資格情報の非推奨（廃止予定）](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [AEM as a Cloud Service の IMS 統合の設定](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Sling サービスユーザーマッピングとサービスユーザー定義のベストプラクティス](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
-   + [Adobeas a Cloud Serviceの顧客管理キー](/help/security/customer-managed-keys.md)
+   + [Adobe as a Cloud Service の顧客管理キー](/help/security/customer-managed-keys.md)
 + オンボーディング {#onboarding}
    + [ここから開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ja)
    + オンボーディングジャーニー {#journey}

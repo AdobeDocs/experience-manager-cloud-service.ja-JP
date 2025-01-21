@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '2195'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Edge Delivery Servicesで WYSIWYG オーサリングを使用する場合、作�
 
 すべてのブロックにモデルが必要となるわけではありません。一部のブロックは、子のリスト用の単純な[コンテナ](#container)であり、それぞれの子には独自のモデルがあります。
 
-また、ユニバーサルエディターを使用して、どのブロックが存在し、どのブロックをページに追加できるのか定義する必要もあります。[`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) ファイルには、ユニバーサルエディターで使用可能になるコンポーネントの一覧が記載されています。
+また、ユニバーサルエディターを使用して、どのブロックが存在し、どのブロックをページに追加できるのか定義する必要もあります。[`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) ファイルには、ユニバーサルエディターで使用できるようになったコンポーネントの一覧が表示されます。
 
 ```json
 {
