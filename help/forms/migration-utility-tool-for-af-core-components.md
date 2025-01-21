@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: c374d95e6b64b8f35f89d469d698add8b95e01eb
+source-git-commit: 92a5599ac94d5bf09311d34dd0287def46b14353
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 8%
@@ -31,7 +31,7 @@ Forms変換ユーティリティは、古い基盤コンポーネントに基づ
 
 >[!NOTE]
 > 
-> ローカルのAEM設定にAEM Modernize Tools をインストールすることをお勧めします。 基盤コンポーネントに基づくアダプティブ Formsをコアコンポーネントベースのフォームに移行します。 フォームとそのアセットをダウンロードします。 次に、フォームとそのアセットを必要な環境にアップロードします。
+>ローカルのAEM設定にAEM Modernize Tools をインストールすることをお勧めします。 基盤コンポーネントに基づくアダプティブ Formsをコアコンポーネントベースのフォームに移行します。 フォームとそのアセットをダウンロードします。 次に、フォームとそのアセットを必要な環境にアップロードします。
 
 ## AEM Modernize Tools 使用時の考慮事項 {#considerations}
 
@@ -39,6 +39,7 @@ Forms変換ユーティリティは、古い基盤コンポーネントに基づ
 * 元のフォームで使用されていた翻訳設定は引き継がれません。 変換後のフォームの翻訳を再設定します。
 * 基盤コンポーネント上で作成されたフォームにスクリプトまたはカスタム関数ルールが含まれている場合、コアコンポーネントに基づいて変換されたフォーム用にこれらを書き換える必要があります。
 * 次の OOTB 基盤コンポーネントは、コアコンポーネントではまだサポートされていないので、変換された形式で削除されます。
+
    * Adobe Sign ブロック
    * グラフ
    * ファイル添付リスト
@@ -54,10 +55,9 @@ Forms変換ユーティリティは、古い基盤コンポーネントに基づ
 
 * [AEM Forms 用のローカル開発環境を設定](/help/forms/setup-local-development-environment.md)
 * [お使いの環境でアダプティブ Forms コアコンポーネントを有効にします。](/help/forms/enable-adaptive-forms-core-components.md)
-
 * [!DNL forms-users] グループにユーザーを追加します。 [!DNL forms-users] グループのメンバーには、アダプティブフォームを作成する権限があります。
-
 * 次の役割を持つユーザーは、AEM環境内にAEM Modernize Tools をインストールする権限を持っています。
+
    * 開発者の役割
    * 管理者の役割
 
@@ -68,7 +68,7 @@ Forms変換ユーティリティは、古い基盤コンポーネントに基づ
 AEM Modernize Tools をインストールして設定するには：
 
 1. [ローカルのAEM Forms環境へのAEM Modernize Tools のインストール](#install-aem-modernize-Tools)
-2. [ローカルのAEM Forms環境に対してAEM Modernize Tools を有効にする](#enable-aem-modernize-Tools)
+1. [ローカルのAEM Forms環境に対してAEM Modernize Tools を有効にする](#enable-aem-modernize-Tools)
 
 ### ローカルのAEM Forms環境へのAEM Modernize Tools のインストール {#install-aem-modernize-Tools}
 
@@ -93,6 +93,7 @@ AEM Modernize Tools をインストールして設定するには：
    ```Shell
        mvn clean install 
    ```
+
 ![ インストールイメージの成功 ](/help/forms/assets/aem-modernize-install-steps.png)
 
 インストールが完了すると、AEM Modernize Tools を使用できるようになります。
@@ -128,10 +129,12 @@ AEM環境でAEM Modernize Tools を有効にして使用するには、基盤コ
 
 1. **[!UICONTROL ジョブ名]** を指定します。
 1. 「**[!UICONTROL フォーム]**」タブでは、次のいずれかのオプションを選択できます。
+
    * **なし**：フォームの変換を開始する前に基盤コンポーネントベースのフォームのコピーを作成しない場合は、このオプションを選択します。
    * **復元**：フォームをフォーム変換を開始する前の状態に復元するには、このオプションを選択します。
    * **ターゲットにコピー**：フォームの変換を開始する前に基盤コンポーネントベースのフォームのコピーを作成する場合は、このオプションを選択します。
-ここでは、「**ターゲットにコピー** オプションが選択されています。 「**ターゲットにコピー**」オプションが選択されている場合、「**[!UICONTROL Sourceのパス]**」および「**[!UICONTROL ターゲットパス]**」オプションが表示されます。
+
+   ここでは、「**ターゲットにコピー** オプションが選択されています。 「**ターゲットにコピー**」オプションが選択されている場合、「**[!UICONTROL Sourceのパス]**」および「**[!UICONTROL ターゲットパス]**」オプションが表示されます。
 
 1. `source folder`1}Source Path} に ]**名」を入力します。**[!UICONTROL 
 1. **[!UICONTROL ターゲットパス]** で `target folder` 名を指定します。
@@ -152,6 +155,7 @@ AEM環境でAEM Modernize Tools を有効にして使用するには、基盤コ
    ![AEM Modernize Tools Success](/help/forms/assets/aem-modernize-tools-success.png)
 
 1. アダプティブフォームを選択し、/ **[!UICONTROL プロパティ]** を選択します。 フォームプロパティページが開きます。
+
    ![AEM Modernize Tools の宛先フォルダー ](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
 1. **[!UICONTROL 保存して閉じる]** を選択して、変換されたフォームのプロパティを再度保存します。
