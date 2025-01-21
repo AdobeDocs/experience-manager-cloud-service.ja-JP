@@ -4,10 +4,10 @@ description: クラウド環境で迅速な開発反復処理を行うために�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
-workflow-type: ht
-source-wordcount: '4863'
-ht-degree: 100%
+source-git-commit: 24c34daebf7d45d9262181890310eb196c58a7db
+workflow-type: tm+mt
+source-wordcount: '4990'
+ht-degree: 97%
 
 ---
 
@@ -548,23 +548,23 @@ RDE をリセットすると、すべてのカスタムコード、設定およ�
 
 リセットすると、RDE が使用可能な最新の AEM バージョンに設定されます。
 
-<!-- Alexandru: hiding for now, do not delete
+リセットは、[Cloud Manager](#reset-the-rde-cloud-manager) または [ コマンドライン ](#reset-the-rde-command-line) を使用して行うことができます。 リセットには数分かかり、既存のコンテンツとコードはすべて RDE から削除されます。
 
-Resetting can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
-
->[NOTE!]
+>[注意!]
 >
->You must be assigned the Cloud Manager Developer role to use the reset feature. If not, a reset action results in an error.
+>リセット機能を使用するには、Cloud Manager開発者の役割が割り当てられている必要があります。 そうでない場合、リセットアクションはエラーになります。
 
-### Reset the RDE by way of Command Line {#reset-the-rde-command-line}
+### コマンドラインを使用した RDE のリセット {#reset-the-rde-command-line}
 
-You can reset the RDE and return it to a default state by running:
+RDE をリセットし、次のコマンドを実行してデフォルトの状態に戻すことができます。
 
 `aio aem:rde:reset`
 
-This usually takes a few minutes. Use the [status command](#checking-rde-status) to check when the environment is ready again.
+この処理には通常数分かかり、処理が成功した場合は ```Environment reset.``` に、エラーが発生した場合は ```Failed to reset the environment.``` に報告されます。 構造化された出力については、以下の出力に関する章 ```--json``` 参照してください。
 
-### Reset the RDE in Cloud Manager {#reset-the-rde-cloud-manager} -->
+[status コマンド ](#checking-rde-status) を使用して、環境の準備が再び整ったことを確認します。
+
+### Cloud Managerでの RDE のリセット {#reset-the-rde-cloud-manager}
 
 次の手順に従って、Cloud Manager を使用して RDE をリセットできます。
 
@@ -942,7 +942,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 }
 ```
 
-#### 完了まで待機 {#wait}
+#### 完了するまで待ち、正常にリセットします {#wait-success}
 
 ```$ aio aem rde reset --json```
 
@@ -951,6 +951,18 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
   "programId": "myProgram",
   "environmentId": "myEnv",
   "status": "reset"
+}
+```
+
+#### 完了まで待機、リセットに失敗しました {#wait-failed}
+
+```$ aio aem rde reset --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "reset_failed"
 }
 ```
 
