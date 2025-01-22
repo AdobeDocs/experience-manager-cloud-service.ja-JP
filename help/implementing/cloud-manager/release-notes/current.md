@@ -3,9 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.1.0 �
 description: AEM as a Cloud Service の Cloud Manager 2025.1.0 のリリースについて説明します。
 feature: Release Information
 role: Admin
-source-git-commit: bf12306969581723e4e9ce1517a8f0d445f26521
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: 4ec2f22b399528f35c07a95d7487264149521338
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '367'
 ht-degree: 22%
 
 ---
@@ -49,12 +50,12 @@ AEM as a Cloud ServiceのCloud Manager 2025.1.0 のリリース日は 2025 年 1
 
    * **機能の有効化**
       * この機能は、2025 年 2 月 13 日木曜日（PT）に、新しい SonarQube バージョンのデフォルトのロールアウトと同時に、すべてのお客様に対して有効になります。
-      * お客様は、上記の 2 つの変数設定を設定して *すぐに* 有効にし、SonarQube 9.9 バージョンをアップグレードできます。
+      * お客様は、上記の 2 つの変数設定を SonarQube 9.9 バージョンのアップグレードに対して設定することで *直ちに* 有効にできます。
 
    * **Java 21 ランタイムのデプロイメント**
       * Java 21 ランタイムは、Java 17 または Java 21 でビルドする場合にデプロイされます。
       * すべてのCloud Manager環境への段階的なロールアウトは 2 月にサンドボックスと開発環境で始まり、4 月に実稼動環境に拡張されます。
-      * Java 21 ランタイム *以前* の導入を希望するお客様は、Adobe（[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) までお問い合わせください。
+      * Java 11 を使用してビルドし、Java 21 ランタイム *以前* の導入を希望するお客様は、Adobe（[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) にお問い合わせください。
 
 
 <!-- ## Early adoption program {#early-adoption}
