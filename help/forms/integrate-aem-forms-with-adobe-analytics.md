@@ -5,7 +5,7 @@ exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 100%
@@ -118,7 +118,7 @@ AEM Forms と [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
 
 1. 「**[!UICONTROL 保存]**」を選択して、データ要素を保存します。
 
-   >[!VIDEO](https://video.tv.adobe.com/v/337472)
+>[!VIDEO](https://video.tv.adobe.com/v/337472)
 
 ### ルールの設定 {#configure-rules}
 
@@ -180,7 +180,7 @@ AEM Forms と [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
 
    中断、エラー、フィールド訪問、ヘルプ、レンダリング、保存、送信などのすべてのイベントタイプに対するルールを作成できます。
 
-   >[!VIDEO](https://video.tv.adobe.com/v/337425)
+>[!VIDEO](https://video.tv.adobe.com/v/337425)
 
 
 ### 公開フロー {#publish-flow}

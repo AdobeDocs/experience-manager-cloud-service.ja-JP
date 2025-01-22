@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 5321fed58f66b2beabcacc2de4b7dfb2dc3754f1
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '3145'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -75,13 +75,11 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 新しいアダプティブフォームまたは既存のアダプティブフォームを埋め込む前に、 **[!UICONTROL アダプティブForms — 埋め込み (v2)]**，有効 **アダプティブFormsコアコンポーネント** とを追加します。 **アダプティブFormsクライアントライブラリ** をAEM Sitesページに追加します。
 
-+++  AEM Cloud Service 環境でのアダプティブフォームコアコンポーネントの有効化
+### AEM Cloud Service 環境でのアダプティブフォームコアコンポーネントの有効化
 
 [アダプティブフォームコアコンポーネントがお使いの AEM Forms as a Cloud Service 環境で有効になっている](enable-adaptive-forms-core-components.md)ことを確認します。
 
-+++
-
-+++  AEM Sites ページまたはエクスペリエンスフラグメントに、アダプティブフォームクライアントライブラリを追加
+### AEM Sites ページまたはエクスペリエンスフラグメントに、アダプティブフォームクライアントライブラリを追加
 
 **[!UICONTROL フォームコンテナ]**&#x200B;設定ダイアログボックスで「**[!UICONTROL フォームがページの幅全体に広がっている場合]**」オプションが選択されており、コアコンポーネントを使用したアダプティブフォームが使用されている場合は、対応する Sites ページに clientlibs を含める必要があります。
 
@@ -130,9 +128,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 1. [デプロイメントパイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=ja)して、クライアントライブラリを AEM as a Cloud Service 環境にデプロイします。
 
-+++
-
-+++ AEM Sites ページまたはエクスペリエンスフラグメントの&#x200B;**[!UICONTROL アダプティブフォームコンテナの有効化]**
+### アダプティブFormsを有効にする – AEM Sites ページまたはエクスペリエンスフラグメントの埋め込み（v2）
 
 テンプレートのポリシーで&#x200B;**[!UICONTROL アダプティブフォーム - 埋め込み（v2）]**&#x200B;コンポーネントを有効にするには、次の手順を実行します。
 
@@ -142,8 +138,6 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
-
-+++
 
 ## アダプティブフォーム - 埋め込みコンポーネントを使用してアダプティブフォームを埋め込むには： {#embed-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
