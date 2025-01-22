@@ -4,14 +4,16 @@ description: AEM as a Cloud Service の Cloud Manager 2025.1.0 のリリース�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 4ec2f22b399528f35c07a95d7487264149521338
+source-git-commit: f6c1aa32647bcabeb0781973f81b75c11edc6a5d
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 22%
+source-wordcount: '412'
+ht-degree: 19%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.1.0 のリリースノート {#release-notes}
+
+<!-- https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3389843928 -->
 
 AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2025.1.0 のリリースについて説明します。
 
@@ -28,7 +30,7 @@ AEM as a Cloud ServiceのCloud Manager 2025.1.0 のリリース日は 2025 年 1
 
 ## 新機能 {#what-is-new}
 
-* **コード品質ルール：** Cloud Managerのコード品質ステップは、2025 年 2 月 13 日木曜日（PT）に予定されているCloud Manager 2025.2.0 リリースで SonarQube Server 9.9 の使用を開始します。
+* **コード品質ルール - SonarQube サーバーのアップグレード：** Cloud Manager コード品質ステップでは、2025 年 2 月 13 日（木）に予定されているCloud Manager 2025.2.0 リリースで SonarQube サーバー 9.9 の使用を開始します。
 
 準備のために、更新された SonarQube ルールが [ コード品質ルール ](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) で利用できるようになりました。
 
@@ -56,6 +58,10 @@ AEM as a Cloud ServiceのCloud Manager 2025.1.0 のリリース日は 2025 年 1
       * Java 21 ランタイムは、Java 17 または Java 21 でビルドする場合にデプロイされます。
       * すべてのCloud Manager環境への段階的なロールアウトは 2 月にサンドボックスと開発環境で始まり、4 月に実稼動環境に拡張されます。
       * Java 11 を使用してビルドし、Java 21 ランタイム *以前* の導入を希望するお客様は、Adobe（[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) にお問い合わせください。
+
+* **「CDN 設定」の名前は「ドメインマッピング」に変更されました。** AEM Cloud Managerのユーザーインターフェイス改善の一環として、用語と機能の統一を改善するために、「CDN 設定」ラベルは「ドメインマッピング」に変更されました。<!-- CMGR-64738 -->
+
+  ![CDN 設定」の名前は、ユーザーインターフェイスで「ドメインマッピング」に変更されました ](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
 
 
 <!-- ## Early adoption program {#early-adoption}
