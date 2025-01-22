@@ -4,10 +4,10 @@ description: 設定ファイルでルールとフィルターを宣言し、Clou
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: cb1581e96f1cfeadf6ee37cae4738d9d51177504
-workflow-type: ht
-source-wordcount: '1377'
-ht-degree: 100%
+source-git-commit: c57fba06f23fa57fbf26796e747bb76f6a7a4203
+workflow-type: tm+mt
+source-wordcount: '1390'
+ht-degree: 99%
 
 ---
 
@@ -158,6 +158,7 @@ data:
 | **unset** | reqProperty | 指定されたリクエストパラメーター（「path」プロパティのみサポートされています）またはリクエストヘッダー、クエリパラメーター、Cookie のいずれかを、文字列リテラルまたはリクエストパラメーターの特定の値に削除します。 |
 |         | var | 指定した変数を削除します。 |
 |         | queryParamMatch | 指定した正規表現に一致するすべてのクエリパラメーターを削除します。 |
+|         | queryParamDoesNotMatch | 指定された正規表現に一致しないすべてのクエリパラメーターを削除します。 |
 | **transform** | op:replace、（reqProperty、reqHeader、queryParam、reqCookie、var のいずれか）、match、replacement | リクエストパラメーターの一部（「path」プロパティのみサポートされています）、またはリクエストヘッダー、クエリパラメーター、Cookie、変数のいずれかを新しい値に置き換えます。 |
 |              | op:tolower、（reqProperty、reqHeader、queryParam、reqCookie、var のいずれか） | リクエストパラメーター（「path」プロパティのみサポートされています）またはリクエストヘッダー、クエリパラメーター、Cookie、変数のいずれかを小文字の値に設定します。 |
 
@@ -449,7 +450,7 @@ redirects:
       action:
         type: redirect
         location:
-          reqProperty: path
+          reqProperty: url
           transform:
             - op: replace
               match: '^/(.*)$'
