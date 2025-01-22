@@ -1,19 +1,18 @@
 ---
-title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.12.0 のリリースノート
-description: AEM as a Cloud Service の Cloud Manager 2024.12.0 のリリースについて説明します。
+title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.1.0 のリリースノート
+description: AEM as a Cloud Service の Cloud Manager 2025.1.0 のリリースについて説明します。
 feature: Release Information
 role: Admin
-exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
+source-git-commit: bf12306969581723e4e9ce1517a8f0d445f26521
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 92%
+source-wordcount: '363'
+ht-degree: 22%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.12.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.1.0 のリリースノート {#release-notes}
 
-AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2024.12.0 のリリースについて説明します。
+AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2025.1.0 のリリースについて説明します。
 
 >[!NOTE]
 >
@@ -21,64 +20,50 @@ AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2024.12.0 
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service の Cloud Manager 2024.12.0 のリリース日は 2024年12月5日木曜日（PT）です。
+AEM as a Cloud ServiceのCloud Manager 2025.1.0 のリリース日は 2025 年 1 月 22 日（水）です。
 
-次回のリリース予定は 2025年1月23日（PT）です。
+次回のリリース予定は 2025年2月13日（PT）です。
 
 
 ## 新機能 {#what-is-new}
 
-* **コード品質ルール：** 2025 年 2 月 13 日木曜日（PT）より、Cloud Manager コード品質ステップで、アップグレードされた SonarQube バージョン 9.9.5.90363 が使用されるようになりました。
+* **コード品質ルール：** Cloud Managerのコード品質ステップは、2025 年 2 月 13 日木曜日（PT）に予定されているCloud Manager 2025.2.0 リリースで SonarQube Server 9.9 の使用を開始します。
 
-  [ このリンク ](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) でAEM as a Cloud Service上のCloud Managerで使用できる更新されたルールにより、Cloud Manager パイプラインのセキュリティスコアとコード品質が決定します。 この更新は、品質ゲートに影響を与え、デプロイメントをブロックする可能性があります。
+準備のために、更新された SonarQube ルールが [ コード品質ルール ](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) で利用できるようになりました。
 
-<!-- * **Java 21 support:** Customers can now optionally build with Java 17 or Java 21, benefiting from performance improvements and new language features. See [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for configuration steps, including updating your Maven project description, and certain library versions. When the build version is set to Java 17 or Java 21, the runtime defaults to Java 21.
+次のパイプラインテキスト変数を設定して、新しいルールを「アーリーチェック」できます。
 
-    Starting February 2025, sandboxes and dev environments upgrade to the Java 21 runtime, regardless of the build version (Java 8, 11, 17, or 21). Production environments follow with an upgrade in April 2025. -->
+`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-* **A レコードタイプ：** AEM Cloud Manager で CDN 設定を使用してドメインの運用開始準備を改善するために、A レコードタイプのサポートが追加されました。Fastly の IP を表す CNAME レコードタイプまたは A レコードタイプのいずれかを追加して運用開始するオプションが追加され、ドメインのルーティングが簡素化されました。この機能強化により、Fastly でのドメイン設定に対して CNAME レコードにのみ依存するという制限がなくなります。
+さらに、次の変数を設定して、コード品質ステップが同じコミットに対して実行されるようにします（通常、同じコ `commitId` ットに対してスキップされます）。
 
-  詳しくは、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。<!-- CMGR-63076 -->
+`CM_DISABLE_BUILD_REUSE` = `true`
 
-<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. -->
-
-* **Edge Delivery サイトへの複数のドメインの追加：** AEM Cloud Manager の Edge Delivery サイト（EDS）に、apex ドメインと非 apex ドメインの両方を含む複数のドメインを追加できるようになりました。この機能強化により、複数のドメインを EDS 接触チャネルに関連付ける機能を制限していた以前の制限が解決されます。この更新により、ドメイン設定の管理に対する柔軟性が向上し、複雑なドメイン設定を含むサイトの運用開始プロセスが簡素化されます。<!-- CMGR-63007 -->
-
-* **高度なフィルタリングオプション：** AEM Cloud Manager のパイプライン実行ページと SSL 証明書ページに、高度なフィルタリングオプションが導入されました。複数の条件でフィルタリングできるようになり、関連データにすばやくアクセスして、デプロイメントの効率を向上できます。<!-- CMGR-26263 -->
-
-   * **パイプラインアクティビティフィルタリング：**パイプラインアクティビティフィルタリングが含まれているので、特定のパイプラインアクティビティの検索結果を絞り込むことができます。使用可能なフィルターには、パイプライン、アクション、ステータスが含まれます。
-     ![パイプラインアクティビティフィルタリング](/help/implementing/cloud-manager/assets/filters-pipeline.png)
-
-
-   * **SSL 証明書フィルタリング：**SSL 証明書フィルタリングが含まれているので、特定の証明書の検索結果を絞り込むことができます。使用可能なフィルターには、SSL 証明書の名前、所有権、ステータスが含まれます。
-     ![SSL 証明書フィルタリング](/help/implementing/cloud-manager/assets/filters-ssl-certificates.png)
-
-## 早期導入プログラム {#early-adoption}
-
-Cloud Manager の早期導入プログラムに参加すると、今後の機能をテストする機会を得ることができます。
-
-### 独自の Git の導入 - GitLab と Bitbucket をサポートするようになりました {#gitlab-bitbucket}
-
-<!-- BOTH CS & AMS -->
-
-**独自の Git の導入**&#x200B;機能が拡張され、GitLab や Bitbucket などの外部リポジトリのサポートが含まれるようになりました。この新しいサポートは、プライベートおよびエンタープライズ GitHub リポジトリに対する既存のサポートに追加されます。これらの新しいリポジトリを追加すると、パイプラインに直接リンクすることもできます。これらのリポジトリは、パブリッククラウドプラットフォーム上や、プライベートクラウドまたはインフラストラクチャ内でホストできます。また、この統合により、Adobe リポジトリと常にコード同期を行う必要がなくなり、プルリクエストをメイン分岐に結合する前に検証できるようになります。
-
-外部リポジトリ（GitHub でホストされているリポジトリを除く）を使用するパイプラインと、**Git 変更時**&#x200B;に設定した&#x200B;**デプロイメントトリガー**&#x200B;が自動的に開始されるようになりました。
-
-[Cloud Manager でのプライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/external-repositories.md)を参照してください。
-
-![リポジトリを追加ダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
+![ 変数設定ページ ](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
 
 >[!NOTE]
 >
->現在、標準のプルリクエストコード品質チェックは、GitHub でホストされるリポジトリ専用ですが、この機能を他の Git ベンダーに拡張する更新が進行中です。
+>Adobeでは、メインの実稼動パイプラインと同じブランチに設定された新しい CI/CD コード品質パイプラインを作成することをお勧めします。 2025 年 2 月 13 日（PT）リリースより前に *適切な変数を設定し、新しく適用されたルールにブロッカーが導入されないことを検証します*。
 
-この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) にメールを送信します。使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
+* **Java 17 および Java 21 ビルドサポート：** お客様は、Java 17 または Java 21 を使用してビルドできるようになり、パフォーマンスの強化や新しい言語機能にアクセスできます。 Maven プロジェクトおよびライブラリのバージョンの更新など、設定手順については、[ ビルド環境 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) を参照してください。 ビルドバージョンが Java 17 または Java 21 に設定されている場合、デプロイされるランタイムは Java 21 です。
 
-## バグ修正
+   * **機能の有効化**
+      * この機能は、2025 年 2 月 13 日木曜日（PT）に、新しい SonarQube バージョンのデフォルトのロールアウトと同時に、すべてのお客様に対して有効になります。
+      * お客様は、上記の 2 つの変数設定を設定して *すぐに* 有効にし、SonarQube 9.9 バージョンをアップグレードできます。
 
-* AAEM Cloud Manager でアクティブなドメインマッピングを含むドメインの削除を防ぐための保護機能が追加されました。このようなドメインを削除しようとするユーザーには、ドメインの削除を続行する前にまずドメインマッピングを削除するように指示するエラーメッセージが表示されるようになりました。このワークフローにより、ドメインの整合性が確保され、誤った設定が防止されます。<!-- CMGR-63033 -->
-* まれに、それぞれのケースに関連付けられたステータスが正しくないので、ユーザーがドメイン名を追加することや、SSL 証明書を更新することができないことがありました。<!-- CMGR-62816 -->
+   * **Java 21 ランタイムのデプロイメント**
+      * Java 21 ランタイムは、Java 17 または Java 21 でビルドする場合にデプロイされます。
+      * すべてのCloud Manager環境への段階的なロールアウトは 2 月にサンドボックスと開発環境で始まり、4 月に実稼動環境に拡張されます。
+      * Java 21 ランタイム *以前* の導入を希望するお客様は、Adobe（[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) までお問い合わせください。
+
+
+<!-- ## Early adoption program {#early-adoption}
+
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
+
+<!-- ## Bug fixes -->
+
+
 
 
 <!-- ## Known issues {#known-issues} -->

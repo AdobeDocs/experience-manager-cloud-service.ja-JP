@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 268c7357e77412d177aa29dfd22ce381192f13d6
+source-git-commit: 7b0e9106806d7fd10953db19f55be773c68c3fe5
 workflow-type: tm+mt
-source-wordcount: '5978'
+source-wordcount: '5983'
 ht-degree: 99%
 
 ---
@@ -113,6 +113,7 @@ ht-degree: 99%
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024年度 {#2024}
+         + [2024.12.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-12-0.md)
          + [2024.11.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-11-0.md)
          + [2024.10.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md)
          + [2024.9.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-9-0.md)
@@ -652,7 +653,7 @@ ht-degree: 99%
       + [アセット、フォルダー、コレクションの監視](/help/assets/manage-notifications-assets-view.md)
       + [レポートの管理](/help/assets/manage-reports-assets-view.md)
       + [再処理](/help/assets/reprocessing-assets-view.md)
-      + [タグを管理](/help/assets/tagging-management-assets-view.md)
+      + [タグの管理](/help/assets/tagging-management-assets-view.md)
       + [コンテンツ資格情報](/help/assets/content-credentials.md)
       + [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
       + [AEM Assets ビュー UI 拡張機能](/help/assets/aem-assets-view-ui-extensibility.md)

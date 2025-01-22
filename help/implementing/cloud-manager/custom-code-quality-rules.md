@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 30d128c914b1eea19fb324f6587a364da3ebba1d
 workflow-type: tm+mt
-source-wordcount: '4421'
-ht-degree: 100%
+source-wordcount: '4384'
+ht-degree: 99%
 
 ---
 
@@ -21,9 +21,11 @@ ht-degree: 100%
 
 徹底的なテストを通じて高品質のコードを保証するための、Adobe Experience Manager エンジニアリングのベストプラクティスに基づく Cloud Manager のカスタムコード品質ルールについて説明します。[コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)も参照してください。
 
->[!NOTE]
+完全な SonarQube ルールは、アドビ独自の情報が原因でダウンロードできません。*現在の* ルールの完全なリストをダウンロードできます [ このリンクを使用 ](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)。 ルールの説明と例については、このドキュメントを引き続き参照してください。
+
+>[!IMPORTANT]
 >
->完全な SonarQube ルールは、アドビ独自の情報が原因でダウンロードできません。ルールの完全なリストをダウンロードするには、[このリンクを使用](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)します。ルールの説明と例については、このドキュメントを引き続き参照してください。
+>2025年2月13日木曜日（PT）（Cloud Manager 2025.2.0）以降、Cloud Manager コード品質では、更新された SonarQube 9.9 バージョンと、[ここからダウンロード](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx)できる更新されたルールのリストが使用されます。
 
 >[!NOTE]
 >
@@ -187,7 +189,7 @@ public void orDoThis () {
 ### 常に ResourceResolver オブジェクトを閉じる {#resourceresolver-objects-should-always-be-closed}
 
 * **キー**：CQRules:CQBP-72
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2018.4.0
 
@@ -229,7 +231,7 @@ public void orDoThis(Session session) throws Exception {
 ### サーブレットの登録に Sling サーブレットパスを使用しない {#do-not-use-sling-servlet-paths-to-register-servlets}
 
 * **キー**：CQRules:CQBP-75
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2018.4.0
 
@@ -249,7 +251,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 ### キャッチされた例外は、ログに記録またはスローする必要があるが、両方は行わない {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 * **キー**：CQRules:CQBP-44---CatchAndEitherLogOrThrow
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
@@ -291,7 +293,7 @@ public void orDoThis() throws MyCustomException {
 ### ログステートメントの直後にスローステートメントを使用しない {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 * **キー**：CQRules:CQBP-44---ConsecutivelyLogAndThrow
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
@@ -317,7 +319,7 @@ public void doThis() throws Exception {
 ### GET または HEAD 要求の処理時に INFO でログに記録しない {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 * **キー**：CQRules:CQBP-44---LogInfoInGetOrHeadRequests
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 
 一般的に、INFO ログレベルは重要なアクションを区切るために使用し、デフォルトでは、Experience Manager は INFO レベル以上をログに記録するように設定されています。GET および HEAD メソッドは読み取り専用操作に過ぎず、重要なアクションを構成しません。GET または HEAD 要求に応答して INFO レベルでログに記録すると、大量のログノイズが作成されるので、ログファイル内の有用な情報を特定するのが難しくなります。GET または HEAD リクエストを処理する際に、問題が発生した場合は、WARN または ERROR レベルでログを記録します。詳細なトラブルシューティング情報が必要な場合は、DEBUG または TRACE レベルを使用してください。
@@ -345,7 +347,7 @@ public void doGet() throws Exception {
 ### Exception.getMessage() をログステートメントの最初のパラメーターとして使用しない {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 * **キー**：CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
@@ -378,7 +380,7 @@ public void doThis() {
 ### catch ブロックのログは、WARN または ERROR レベルにする必要がある {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 * **キー**：CQRules:CQBP-44---WrongLogLevelInCatchBlock
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
@@ -411,7 +413,7 @@ public void doThis() {
 ### コンソールにスタックトレースをプリントしない {#do-not-print-stack-traces-to-the-console}
 
 * **キー**：CQRules:CQBP-44---ExceptionPrintStackTrace
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
@@ -444,7 +446,7 @@ public void doThis() {
 ### 標準出力または標準エラーに出力しない {#do-not-output-to-standard-output-or-standard-error}
 
 * **キー**：CQRules:CQBP-44—LogLevelConsolePrinters
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
@@ -477,7 +479,7 @@ public void doThis() {
 ### apps および libs パスをハードコーディングしない {#avoid-hardcoded-apps-and-libs-paths}
 
 * **キー**：CQRules:CQBP-71
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
@@ -502,7 +504,7 @@ public void doThis(Resource resource) {
 ### Sling スケジューラーを使用しない {#sonarqube-sling-scheduler}
 
 * **キー**：CQRules:AMSCORE-554
-* **タイプ**：コードスメル／Cloud Service との互換性
+* **種類**: `Code Smell`/Cloud Serviceの互換性
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
@@ -513,7 +515,7 @@ Sling ジョブがクラスター環境で処理される方法について詳�
 ### Experience Manager の非推奨 API は使用しない {#sonarqube-aem-deprecated}
 
 * **キー**：AMSCORE-553
-* **タイプ**：コードスメル／Cloud Service との互換性
+* **種類**: `Code Smell`/Cloud Serviceの互換性
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
@@ -800,7 +802,7 @@ Experience Manager コンテンツリポジトリ内の `/libs` コンテンツ�
 ### デフォルトのオーサリングモードをクラシック UI にしない {#oakpal-default-authoring}
 
 * **キー**：ClassicUIAuthoringMode
-* **タイプ**：コードスメル／Cloud Service との互換性
+* **種類**: `Code Smell`/Cloud Serviceの互換性
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
@@ -809,7 +811,7 @@ OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、Experien
 ### ダイアログを使用したコンポーネントにはタッチ UI ダイアログが必要 {#oakpal-components-dialogs}
 
 * **キー**：ComponentWithOnlyClassicUIDialog
-* **タイプ**：コードスメル／Cloud Service との互換性
+* **種類**: `Code Smell`/Cloud Serviceの互換性
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
@@ -824,7 +826,7 @@ Experience Manager 最新化ツールのドキュメントには、コンポー�
 ### 可変コンテンツと不変コンテンツがパッケージ内に混在してはならない {#oakpal-packages-immutable}
 
 * **キー**：ImmutableMutableMixedPackage
-* **タイプ**：コードスメル／Cloud Service との互換性
+* **種類**: `Code Smell`/Cloud Serviceの互換性
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
@@ -839,7 +841,7 @@ Cloud Service デプロイメントモデルとの互換性を保つには、個
 ### リバースレプリケーションエージェントを使用しない {#oakpal-reverse-replication}
 
 * **キー**：ReverseReplication
-* **タイプ**：コードスメル／Cloud Service との互換性
+* **種類**: `Code Smell`/Cloud Serviceの互換性
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
@@ -892,7 +894,7 @@ Adobe Experience Manager as a Cloud Service でのアセット処理をアセッ
 ### 静的なテンプレートより編集可能なテンプレートの使用を推奨 {#oakpal-static-template}
 
 * **キー**：StaticTemplateUsage
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -903,7 +905,7 @@ Adobe Experience Manager as a Cloud Service でのアセット処理をアセッ
 ### 従来の基盤コンポーネントの使用は推奨されない {#oakpal-usage-legacy}
 
 * **キー**：LegacyFoundationComponentUsage
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -914,7 +916,7 @@ Adobe Experience Manager as a Cloud Service でのアセット処理をアセッ
 ### サポートされている実行モード名と順序のみを使用 {#oakpal-supported-runmodes}
 
 * **キー**：SupportedRunmode
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -923,7 +925,7 @@ Experience Manager as a Cloud Service では、実行モード名に対して厳
 ### カスタム検索インデックス定義ノードは、`/oak:index` の直接の子にする必要がある {#oakpal-custom-search}
 
 * **キー**：OakIndexLocation
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -932,7 +934,7 @@ Experience Manager as a Cloud Service では、カスタム検索インデック
 ### カスタム検索インデックス定義ノードの compatVersion は 2 にする {#oakpal-custom-search-compatVersion}
 
 * **キー**：IndexCompatVersion
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -941,7 +943,7 @@ Experience Manager as a Cloud Service では、カスタム検索インデック
 ### カスタム検索インデックス定義ノードの子孫ノードのタイプは、`nt:unstructured ` にする{#oakpal-descendent-nodes}
 
 * **キー**：IndexDescendantNodeType
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -950,7 +952,7 @@ Experience Manager as a Cloud Service では、カスタム検索インデック
 ### カスタム検索インデックス定義ノードには、子を持つ indexRules という名前の子ノードを含める {#oakpal-custom-search-index}
 
 * **キー**：IndexRulesNode
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -959,7 +961,7 @@ Experience Manager as a Cloud Service では、カスタム検索インデック
 ### カスタム検索インデックス定義ノードは命名規則に従う {#oakpal-custom-search-definitions}
 
 * **キー**：IndexName
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -977,7 +979,7 @@ Experience Manager as a Cloud Service では、カスタム検索インデック
 ### カスタム検索インデックス定義ノードに seed という名前のプロパティを含めない {#oakpal-property-name-seed}
 
 * **キー**：IndexSeedProperty
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -986,7 +988,7 @@ Experience Manager as a Cloud Service では、カスタム検索インデック
 ### カスタム検索インデックス定義ノードに reindex というプロパティを含めない {#oakpal-reindex-property}
 
 * **キー**：IndexReindexProperty
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -1031,7 +1033,7 @@ Cloud Service に移行する前に、このプロパティを使用している
 ### カスタム検索のインデックス定義に `compatVersion` が含まれる場合は、2 に設定する必要があります {#oakpal-compatVersion}
 
 * **キー**：IndexCompatVersion
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2022.1.0
 
@@ -1039,7 +1041,7 @@ Cloud Service に移行する前に、このプロパティを使用している
 ### `includedPaths` を指定するインデックスノードでは、同じ値を持つ `queryPaths` も指定する必要があります {#oakpal-included-paths-without-query-paths}
 
 * **キー**：IndexIncludedPathsWithoutQueryPaths
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2023.1.0
 
@@ -1048,7 +1050,7 @@ Cloud Service に移行する前に、このプロパティを使用している
 ### 汎用ノードタイプの `nodeScopeIndex` を指定するインデックスノードでも `includedPaths` と `queryPaths` を指定する必要があります {#oakpal-full-text-on-generic-node-type}
 
 * **キー**：IndexFulltextOnGenericType
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2023.1.0
 
@@ -1094,7 +1096,7 @@ Cloud Service に移行する前に、このプロパティを使用している
 ### クエリエンジンの queryLimitReads プロパティは上書きしないでください {#oakpal-query-limit-reads}
 
 * **キー**：OverrideOfQueryLimitReads
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2023.1.0
 
@@ -1103,7 +1105,7 @@ Cloud Service に移行する前に、このプロパティを使用している
 ### 同じインデックスの複数のアクティブバージョン {#oakpal-multiple-active-versions}
 
 * **キー**：IndexDetectMultipleActiveVersionsOfSameIndex
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2023.1.0
 
@@ -1130,7 +1132,7 @@ Cloud Service に移行する前に、このプロパティを使用している
 ### 完全なカスタムインデックス定義の名前は、公式のガイドラインに従う必要があります {#oakpal-fully-custom-index-name}
 
 * **キー**：IndexValidFullyCustomName
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2023.1.0
 
@@ -1191,7 +1193,7 @@ Cloud Service に移行する前に、このプロパティを使用している
 ### タグプロパティ {#tags-property}
 
 * **キー**：IndexHasValidTagsProperty
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2023.1.0
 
