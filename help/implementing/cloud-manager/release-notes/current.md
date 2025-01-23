@@ -4,10 +4,10 @@ description: AEM as a Cloud Service の Cloud Manager 2025.1.0 のリリース�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: f6c1aa32647bcabeb0781973f81b75c11edc6a5d
+source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 19%
+source-wordcount: '695'
+ht-degree: 11%
 
 ---
 
@@ -32,15 +32,15 @@ AEM as a Cloud ServiceのCloud Manager 2025.1.0 のリリース日は 2025 年 1
 
 * **コード品質ルール - SonarQube サーバーのアップグレード：** Cloud Manager コード品質ステップでは、2025 年 2 月 13 日（木）に予定されているCloud Manager 2025.2.0 リリースで SonarQube サーバー 9.9 の使用を開始します。
 
-準備のために、更新された SonarQube ルールが [ コード品質ルール ](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) で利用できるようになりました。
+  準備のために、更新された SonarQube ルールが [ コード品質ルール ](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) で利用できるようになりました。
 
-次のパイプラインテキスト変数を設定して、新しいルールを「アーリーチェック」できます。
+  次のパイプラインテキスト変数を設定して、新しいルールを「アーリーチェック」できます。
 
-`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
+  `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-さらに、次の変数を設定して、コード品質ステップが同じコミットに対して実行されるようにします（通常、同じコ `commitId` ットに対してスキップされます）。
+  さらに、次の変数を設定して、コード品質ステップが同じコミットに対して実行されるようにします（通常、同じコ `commitId` ットに対してスキップされます）。
 
-`CM_DISABLE_BUILD_REUSE` = `true`
+  `CM_DISABLE_BUILD_REUSE` = `true`
 
 ![ 変数設定ページ ](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
 
@@ -59,9 +59,27 @@ AEM as a Cloud ServiceのCloud Manager 2025.1.0 のリリース日は 2025 年 1
       * すべてのCloud Manager環境への段階的なロールアウトは 2 月にサンドボックスと開発環境で始まり、4 月に実稼動環境に拡張されます。
       * Java 11 を使用してビルドし、Java 21 ランタイム *以前* の導入を希望するお客様は、Adobe（[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) にお問い合わせください。
 
-* **「CDN 設定」の名前は「ドメインマッピング」に変更されました。** AEM Cloud Managerのユーザーインターフェイス改善の一環として、用語と機能の統一を改善するために、「CDN 設定」ラベルは「ドメインマッピング」に変更されました。<!-- CMGR-64738 -->
+* **「CDN 設定」の名前が「ドメインマッピング」に変更されました：** AEM Cloud Managerのユーザーインターフェイスの改善の一環として、「CDN 設定」ラベルが「ドメインマッピング」に変更されました。 この変更により、用語と機能の連携が向上します。<!-- CMGR-64738 -->
 
   ![CDN 設定」の名前は、ユーザーインターフェイスで「ドメインマッピング」に変更されました ](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
+
+* **ワンクリックでEdge Delivery サイトのプロビジョニング：** Cloud Managerで、適切な権限とライセンスを持つユーザーがワンクリックでサンプルEdge Delivery Servicesサイトを作成できるようになりました。 この合理化されたプロセスにより、次の自動機能が提供されます。
+
+   * **GitHub 統合** – 既存の組織内に GitHub リポジトリを自動的に作成し、Edge Delivery Services用のボイラープレートテンプレートで事前設定します。
+   * **AEM コード同期アプリのインストール** - AEM コード同期アプリケーションをリポジトリにインストールして、シームレスな同期とデプロイメントを確実に行います。
+   * **コンテンツCollaborationの設定** - コンテンツを保存するための専用のGoogle ドライブフォルダーをリンクし、コンテンツ管理用のコラボレーション環境を提供します。
+   * **コンテンツの公開** - プロビジョニングされたサイトのコンテンツをCloud Manager ユーザーインターフェイスから直接公開できるようになり、ワークフローが簡素化され、効率が向上しました。
+   * **拡張Collaboration** – 複数の共同作業者をGoogle Drive コンテンツストレージフォルダーに追加して、チームワークとコンテンツの投稿を促進できます。
+
+  これらの機能強化は、自動化の向上、設定プロセスの簡略化、Edge Delivery Servicesユーザーの共同作業の強化を目的としています。<!-- CMGR-59362 -->
+
+  ![Edge Delivery サイトのプロビジョニング ](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
+
+  ![Edge Delivery サイトをプロビジョニング ](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png) ダイアログボックス
+
+* **Edge Delivery Servicesサイトのサポートの強化：** Cloud Managerでは、最新のEdge Delivery Servicesサイトのオンボーディングをサポートするようになりました。 このアップデートには、CDN と配信スタックの包括的なリファクタリングが含まれており、堅牢性と保守性が向上しています。
+
+* **早期導入プログラムの更新 – Bitbucket と GitLab の PR 検証のサポート：** Cloud Managerは、Bitbucket と GitLab のクラウドバージョンとセルフホストバージョンの両方で、プルリクエスト（PR）検証をサポートするようになりました。 この機能を使用すると、お客様は、PR を結合する前に、Adobeのコード品質しきい値に照らしてコードの変更をテストできます。 この機能強化により、マージ前のコード品質を高めることで、実稼動パイプラインでのコード変更の成功率が大幅に向上し、市場投入までの時間が短縮され、開発ワークフローが合理化されます。
 
 
 <!-- ## Early adoption program {#early-adoption}

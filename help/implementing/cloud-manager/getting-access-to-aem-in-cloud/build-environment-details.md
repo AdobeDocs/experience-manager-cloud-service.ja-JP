@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 14162af8ab209b04645502546912af106c67f2b1
+source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 50%
@@ -117,7 +117,7 @@ Java 21 を使用してAEMをローカルで実行すると、`MaxPermSize` パ�
 >`.cloudmanager/java-version` を `21` または `17` に設定すると、Java 21 ランタイムがデプロイされます。 Java 21 ランタイムは、2025 年 2 月 13 日木曜日（PT）以降、すべての環境（Java 11 でコードを作成した環境に限らない）に対して段階的にロールアウトされるようにスケジュールされています。 ロールアウトは、サンドボックスと開発環境で始まり、2025 年 4 月にすべての実稼動環境にロールアウトされます。 Java 21 ランタイム *以前* の導入を希望するお客様は、Adobe（[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) までお問い合わせください。
 
 
-#### ビルド時間の要件
+#### ビルド時間の要件 {#build-time-reqs}
 
 Java 21 および Java 17 でプロジェクトを構築するには、次の調整が必要です。 これらは古い Java バージョンと互換性があるので、Java 21 および Java 17 を実行する前でも更新できます。
 
