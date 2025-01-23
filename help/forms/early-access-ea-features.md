@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 7654289713246e894388bcd9bfa995248aeb3c38
+source-git-commit: b4ed1039e199f520a1d7b44ae9af11ecdf52f5c3
 workflow-type: tm+mt
-source-wordcount: '1735'
-ht-degree: 34%
+source-wordcount: '1779'
+ht-degree: 33%
 
 ---
 
@@ -90,7 +90,7 @@ WYSIWYG オーサリングは、アダプティブフォームを作成してEdg
 
 ### AEM FormsからMarketoへのコネクタ
 
-[AEM Forms/Marketo コネクタ ](/help/forms/integrate-adaptive-form-with-marketo-engage.md) は、Adobe Experience Manager（AEM）で作成された web フォーム（アダプティブForms）とマーケティング自動処理プラットフォームであるMarketoの間のギャップを埋めます。
+[AEM Forms/Marketo コネクタ ](/help/forms/integrate-form-to-marketo-engage.md) は、Adobe Experience Manager（AEM）で作成された web フォーム（アダプティブForms）とマーケティング自動処理プラットフォームであるMarketoの間のギャップを埋めます。
 
 AEM アダプティブFormsで作成された web サイト上のフォームが誰かに送信されると、コネクタは、送信されたデータがMarketoに自動的に送信されるようにします。 これにより、手動でのデータ入力が不要になり、エラーのリスクが軽減されます。
 
@@ -100,6 +100,12 @@ AEM アダプティブFormsで作成された web サイト上のフォームが
 
 基本的に、AEM Forms/Marketo コネクタは、両方のプラットフォームの強みを活用して、より効率的で効果的なマーケティングファネルを作成するのに役立ちます。
 
+開始する準備はできていますか？ 次の記事では、イノベーションを使用する詳細な手順を説明します。
+
+* [Marketo Engage の AEM Forms への統合](/help/forms/integrate-form-to-marketo-engage.md)
+* [ アダプティブフォームとMarketo Engageの統合 ](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [既存のアダプティブFormsのMarketo Engageとデータソースの設定](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Marketo Engageへの既存のアダプティブフォームの送信](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## その他の早期アクセス・イノベーション
 
