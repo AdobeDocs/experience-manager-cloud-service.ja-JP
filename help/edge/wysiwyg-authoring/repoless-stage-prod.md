@@ -4,9 +4,9 @@ description: 単一のコードベースをリポジトリで活用して、ス�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: 42218450ab03201c69c59053f720954183f4b652
+source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '693'
 ht-degree: 2%
 
 ---
@@ -45,6 +45,10 @@ ht-degree: 2%
    * `code` の設定は、最初のプロジェクト作成に使用した設定と同じである必要があります。
    * `content`/`source`/`url` は、作成する新しいサイトの名前に合わせて変更する必要があります。 この例では、`wknd-prod` です。
    * つまり、「POSTURL」のサイト名と「`content`/`source`/`url`」は同じにする必要があります。
+   * `admin` ブロックを調整して、サイトへの完全な管理アクセス権を持つユーザーを定義します。
+      * これはメールアドレスの配列です。
+      * ワイルドカード `*` を使用できます。
+      * 詳しくは、[ 作成者の認証の設定 ](https://www.aem.live/docs/authentication-setup-authoring#default-roles) ドキュメントを参照してください。
 
    ```text
    curl --request POST \
@@ -71,7 +75,7 @@ ht-degree: 2%
            "admin": {
                "role": {
                    "admin": [
-                       "*@adobe.com"
+                       "<email>@<domain>.<tld>"
                    ],
                    "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"

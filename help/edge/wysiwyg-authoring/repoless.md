@@ -4,10 +4,10 @@ description: ほぼ同じように見えて動作する類似サイトが多数�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: 7b37f3d387f0200531fe12cde649b978f98d5d49
+source-git-commit: e7f7c169e7394536fc2968ecf1418cd095177679
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 0%
+source-wordcount: '971'
+ht-degree: 2%
 
 ---
 
@@ -34,10 +34,11 @@ AEMは、複数の GitHub リポジトリを作成し、各サイトを専用の
 * サイトは、「Edge Delivery ServicesでのWYSIWYG オーサリングの開発者向けスタートガイド [ のドキュメントに従って、既に完全にセットアップされて ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) ます。
 * 少なくともAEM as a Cloud Service 2024.08 を実行している。
 
-また、2 つの項目を設定するようにAdobeに依頼する必要があります。 SlackチャンネルでAdobeに問い合わせるか、サポートの問題を提起して、これらのリクエストをおこないます。
+また、次の項目を設定するようAdobeに依頼する必要があります。 Slackチャネル経由でお問い合わせいただくか、サポートの問題を提起してAdobeをリクエストし、以下の変更を行ってください。
 
-* お使いの環境の [aem.live 設定サービス ](https://www.aem.live/docs/config-service-setup#prerequisites) がアクティブになり、管理者として設定されています。
-* Adobeは、プログラムのリポジトリ機能を有効にする必要があります。
+* お使いの環境と管理者として設定されている環境で [aem.live configuration サービス ](https://www.aem.live/docs/config-service-setup#prerequisites) をアクティブ化するように依頼します。
+* Adobeでプログラムの応答機能を有効にするように依頼します。
+* 組織を作成するようAdobeに依頼してください。
 
 ## リポジトリ機能の有効化 {#activate}
 
@@ -64,67 +65,6 @@ AEMは、複数の GitHub リポジトリを作成し、各サイトを専用の
 ```text
 --header 'x-auth-token: <your-token>'
 ```
-
-### 設定サービスの設定 {#config-service}
-
-[ 前提条件 ](#prerequisites) に記載されているように、お使いの環境で設定サービスを有効にする必要があります。 この cURL コマンドを使用すると、設定サービスのセットアップを確認できます。
-
-```text
-curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
---header 'x-auth-token: <your-token>'
-```
-
-設定サービスが適切に設定されている場合は、次のような JSON が返されます。
-
-```json
-{
-  "title": "<your-github-org>",
-  "description": "Your GitHub Org",
-  "lastModified": "2024-11-14T12:14:04.230Z",
-  "created": "2024-11-14T12:13:37.032Z",
-  "version": 1,
-  "users": [
-    {
-      "email": "justthisguyyouknow@adobe.com",
-      "roles": [
-        "admin"
-      ],
-      "id": "<your-id>"
-    }
-  ]
-}
-```
-
-プロジェクトSlackチャネル経由でAdobeに問い合わせるか、設定サービスが有効になっていない場合はサポートの問題を報告してください。 トークンを取得し、設定サービスが有効であることを確認したら、設定を続行できます。
-
-1. コンテンツソースが正しく設定されていることを確認します。
-
-   ```text
-   curl --request GET \
-   --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>.json \
-   --header 'x-auth-token: <your-token>'
-   ```
-
-1. パスのマッピングをパブリック設定に追加します。
-
-   ```text
-   curl --request POST \
-     --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/public.json \
-     --header 'x-auth-token: <your-token>' \
-     --header 'Content-Type: application/json' \
-     --data '{
-       "paths": {
-           "mappings": [
-               "/content/<your-site-content>/:/"
-      ],
-           "includes": [
-               "/content/<your-site-content>/"
-           ]
-       }
-   }'
-   ```
-
-パブリック設定が作成されたら、`https://main--<your-aem-project>--<your-github-org>.aem.page/config.json` のような URL を使用してアクセスし、設定を検証できます。
 
 ### サイト設定のパスマッピングの追加とテクニカルアカウントの設定 {#access-control}
 
@@ -184,6 +124,11 @@ curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
 
 1. 次のような cURL コマンドを使用して、設定にテクニカルアカウントを設定します。
 
+   * `admin` ブロックを調整して、サイトへの完全な管理アクセス権を持つユーザーを定義します。
+      * これはメールアドレスの配列です。
+      * ワイルドカード `*` を使用できます。
+      * 詳しくは、[ 作成者の認証の設定 ](https://www.aem.live/docs/authentication-setup-authoring#default-roles) ドキュメントを参照してください。
+
    ```text
    curl --request POST \
      --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/access.json \
@@ -193,7 +138,7 @@ curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
        "admin": {
            "role": {
                "admin": [
-                   "*@adobe.com"
+                   "<email>@<domain>.<tld>"
                ],
                "config_admin": [
                    "<tech-account-id>@techacct.adobe.com"
@@ -229,8 +174,8 @@ AEMをリポジトリで使用するように設定したら、configuration サ
 
 ベースサイトがリポジトリで使用できるように設定されたので、同じコードベースを活用する追加のサイトを作成できます。 ユースケースに応じて、次のドキュメントを参照してください。
 
-* [複数サイト管理のレポート](/help/edge/wysiwyg-authoring/repoless-msm.md)
-* [レポートステージと実稼働環境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [Repoless マルチサイト管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
+* [Repoless ステージと実稼動環境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
 
 ## トラブルシューティング {#troubleshooting}
 
