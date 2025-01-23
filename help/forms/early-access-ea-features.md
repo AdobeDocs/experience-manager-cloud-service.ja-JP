@@ -6,7 +6,7 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 2c70f7aec042c384cd37985877954b627d95879e
+source-git-commit: 7654289713246e894388bcd9bfa995248aeb3c38
 workflow-type: tm+mt
 source-wordcount: '1735'
 ht-degree: 34%
@@ -90,7 +90,7 @@ WYSIWYG オーサリングは、アダプティブフォームを作成してEdg
 
 ### AEM FormsからMarketoへのコネクタ
 
-AEM Forms/Marketo コネクタは、Adobe Experience Manager（AEM）で作成された web フォーム（アダプティブForms）とマーケティング自動処理プラットフォームのMarketoとの間のギャップを埋めます。
+[AEM Forms/Marketo コネクタ ](/help/forms/integrate-adaptive-form-with-marketo-engage.md) は、Adobe Experience Manager（AEM）で作成された web フォーム（アダプティブForms）とマーケティング自動処理プラットフォームであるMarketoの間のギャップを埋めます。
 
 AEM アダプティブFormsで作成された web サイト上のフォームが誰かに送信されると、コネクタは、送信されたデータがMarketoに自動的に送信されるようにします。 これにより、手動でのデータ入力が不要になり、エラーのリスクが軽減されます。
 
