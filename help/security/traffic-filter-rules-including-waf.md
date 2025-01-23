@@ -4,10 +4,10 @@ description: Web アプリケーションファイアウォール（WAF）ルー
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 1b4c427a36ee26522e9da499156f78276e099bd0
+source-git-commit: f2616fb8f27d4f966243c3a43abedcc46ceff477
 workflow-type: tm+mt
-source-wordcount: '4037'
-ht-degree: 99%
+source-wordcount: '4053'
+ht-degree: 98%
 
 ---
 
@@ -184,7 +184,7 @@ data:
 
 | **プロパティ** | **タイプ** | **説明** |
 |---|---|---|
-| reqProperty | `string` | リクエストプロパティ。<br><br>次のいずれか：<br><ul><li>`path`：クエリパラメーターを除いた URL のフルパスを返します。 （エスケープされていないバリアントには `pathRaw` を使用）</li><li>`url`：クエリパラメーターを含んだ完全な URL を返します。 （エスケープされていないバリアントには `urlRaw` を使用）</li><li>`queryString`：URL のクエリ部分を返します</li><li>`method`：リクエストで使用される HTTP メソッドを返します。</li><li>`tier`：`author`、`preview` または `publish` のいずれか 1 つを返します。</li><li>`domain`：小文字のドメインプロパティ（`Host` ヘッダーで定義）を返します</li><li>`clientIp`：クライアント IP を返します。</li><li>`clientCountry`：クライアントがいる国を識別する 2 文字のコード（[地域指標記号](https://en.wikipedia.org/wiki/Regional_indicator_symbol)）を返します。</li></ul> |
+| reqProperty | `string` | リクエストプロパティ。<br><br>次のいずれか：<br><ul><li>`path`：クエリパラメーターを除いた URL のフルパスを返します。 （エスケープされていないバリアントには `pathRaw` を使用）</li><li>`url`：クエリパラメーターを含んだ完全な URL を返します。 （エスケープされていないバリアントには `urlRaw` を使用）</li><li>`queryString`：URL のクエリ部分を返します</li><li>`method`：リクエストで使用される HTTP メソッドを返します。</li><li>`tier`：`author`、`preview` または `publish` のいずれか 1 つを返します。</li><li>`domain`：小文字のドメインプロパティ（`Host` ヘッダーで定義）を返します</li><li>`clientIp`：クライアント IP を返します。</li><li>`forwardedDomain`:`X-Forwarded-Host` ヘッダーで定義された最初のドメインを小文字で返します</li><li>`forwardedIp`: ヘッダーの最初の IP`X-Forwarded-For` 返します。</li><li>`clientCountry`：クライアントがいる国を識別する 2 文字のコード（[地域指標記号](https://en.wikipedia.org/wiki/Regional_indicator_symbol)）を返します。</li></ul> |
 | reqHeader | `string` | 指定された名前のリクエストヘッダーを返します |
 | queryParam | `string` | 指定された名前のクエリパラメーターを返します |
 | reqCookie | `string` | 指定された名前の Cookie を返します |
