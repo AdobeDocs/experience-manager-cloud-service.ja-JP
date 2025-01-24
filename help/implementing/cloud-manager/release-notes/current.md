@@ -4,10 +4,10 @@ description: AEM as a Cloud Service の Cloud Manager 2025.1.0 のリリース�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
+source-git-commit: 9850a52626c2bd80f7528931d23691dff1dd3eb2
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 11%
+source-wordcount: '811'
+ht-degree: 10%
 
 ---
 
@@ -80,6 +80,17 @@ AEM as a Cloud ServiceのCloud Manager 2025.1.0 のリリース日は 2025 年 1
 * **Edge Delivery Servicesサイトのサポートの強化：** Cloud Managerでは、最新のEdge Delivery Servicesサイトのオンボーディングをサポートするようになりました。 このアップデートには、CDN と配信スタックの包括的なリファクタリングが含まれており、堅牢性と保守性が向上しています。
 
 * **早期導入プログラムの更新 – Bitbucket と GitLab の PR 検証のサポート：** Cloud Managerは、Bitbucket と GitLab のクラウドバージョンとセルフホストバージョンの両方で、プルリクエスト（PR）検証をサポートするようになりました。 この機能を使用すると、お客様は、PR を結合する前に、Adobeのコード品質しきい値に照らしてコードの変更をテストできます。 この機能強化により、マージ前のコード品質を高めることで、実稼動パイプラインでのコード変更の成功率が大幅に向上し、市場投入までの時間が短縮され、開発ワークフローが合理化されます。
+
+* **パイプラインの高度なフィルターオプション：** Cloud Managerには、パイプライン ページに高度なフィルターオプションが追加され、関連するデータにすばやくアクセスできるようになり、デプロイメントの効率が向上しました。 主な機能には、次のようなものがあります。
+
+   * **多条件フィルタリング：** パイプライン名、環境、デプロイコードなどのフィルターを使用して、検索結果を絞り込みます。
+   * **効率化されたパイプライン検索：** 特定のパイプラインを簡単に見つけることで、ナビゲーションの迅速化とワークフロー管理の向上を実現します。
+
+  これらの機能強化により、パイプラインの管理とデプロイが全体的に効率的になり、使いやすくなります。
+
+  ![ パイプラインフィルター機能 ](/help/implementing/cloud-manager/release-notes/assets/pipeline-filters.png)
+
+* **Edge Delivery サービスのセルフサービス CDN 設定：** Edge Delivery サービスの新しい導入者は、Cloud Managerを通じて CDN を個別に設定できるようになりました。 この更新により、`.hlx.page/live` から新しい `.aem.page/live` へのサポートが拡張され、ユーザーに対する柔軟性が向上し、設定が合理化されます。
 
 
 <!-- ## Early adoption program {#early-adoption}
