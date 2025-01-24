@@ -1,13 +1,13 @@
 ---
-title: AEM Forms の Edge Delivery Services の基本を学ぶ。フォームを作成します。
-description: 完璧なフォームを素早く作成しましょう。⚡ AEM Forms Edge Delivery ドキュメントベースのオーサリング = 超高速かつ SEO に対応したフォームで、高い顧客満足度と検索エンジンを実現。
+title: AEM Forms の Edge Delivery Services の基本を学ぶ。 フォームを作成します。
+description: 完璧なフォームを素早く作成しましょう。 ⚡ AEM Forms Edge Delivery ドキュメントベースのオーサリング = 超高速かつ SEO に対応したフォームで、高い顧客満足度と検索エンジンを実現。
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
 source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 86%
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 86%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
 
-AEM Forms Edge Delivery には、アダプティブフォームブロックと呼ばれるブロックが用意されており、フォームを簡単に作成して、キャプチャしたデータを保存するのに役立ちます。[アダプティブフォームブロックで事前設定された新しい AEM プロジェクトを作成](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) するか、[アダプティブフォームブロックを既存の AEM プロジェクトに追加](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)できます。
+AEM Forms Edge Delivery には、アダプティブフォームブロックと呼ばれるブロックが用意されており、フォームを簡単に作成して、キャプチャしたデータを保存するのに役立ちます。 [アダプティブフォームブロックで事前設定された新しい AEM プロジェクトを作成](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) するか、[アダプティブフォームブロックを既存の AEM プロジェクトに追加](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)できます。
 
 これらのフォームは、Microsoft Excel または Google Sheets ファイルに直接データを送信します。これにより、Google Sheets、Microsoft Excel、Microsoft SharePoint の活発なエコシステムと堅牢な API を使用して、送信されたデータを簡単に処理したり、既存のビジネスワークフローを開始したりできます。
 
@@ -26,9 +26,9 @@ AEM Forms Edge Delivery には、アダプティブフォームブロックと�
 
 開始する前に、次の手順が完了していることを確認してください。
 
-* AEM Forms ボイラープレートを使用して [AEM プロジェクトを設定し ](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 既存のAEM プロジェクトに [ 追加されたアダプティブ Forms ブロックを使用し ](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) ローカルマシン上に対応する GitHub リポジトリのクローンを作成します。
+* [AEM Forms ボイラープレートを使用した AEM プロジェクト](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)を設定するか、[アダプティブフォームブロックを既存の AEM プロジェクトに追加](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)して、ローカルマシン上に対応する GitHub リポジトリのクローンを作成します。
 <!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
-* Google Sheets または Microsoft SharePoint へのアクセス権があることを確認します。Microsoft SharePoint をコンテンツソースとして設定するには、[SharePoint の使用方法](https://www.aem.live/docs/setup-customer-sharepoint)を参照してください。
+* Google Sheets または Microsoft SharePoint へのアクセス権があることを確認します。 Microsoft SharePoint をコンテンツソースとして設定するには、[SharePoint の使用方法](https://www.aem.live/docs/setup-customer-sharepoint)を参照してください。
 
 
 
@@ -62,9 +62,9 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 +++ 手順 1：Microsoft Excel または Google Sheets を使用してフォームを作成します。
 
-複雑なプロセスを進める代わりに、スプレッドシートを使用してフォームを簡単に作成できます。フォーム構造を構成する行と列を定義できます。各行は、個々の[フォームフィールド](/help/edge/docs/forms/form-components.md#available-components)を表し、列ヘッダーは対応する[フィールドプロパティ](/help/edge/docs/forms/form-components.md#components-properties)を定義します。
+複雑なプロセスを進める代わりに、スプレッドシートを使用してフォームを簡単に作成できます。 フォーム構造を構成する行と列を定義できます。 各行は、個々の[フォームフィールド](/help/edge/docs/forms/form-components.md#available-components)を表し、列ヘッダーは対応する[フィールドプロパティ](/help/edge/docs/forms/form-components.md#components-properties)を定義します。
 
-例えば、次のスプレッドシートで、行が [ 問い合わせ ](/help/edge/assets/enquiry.xlsx) スプレッドシートと列見出しのフィールドのプロパティを定義しているとします。
+例えば、行が[お問い合わせ](/help/edge/assets/enquiry.xlsx)スプレッドシートのフィールドの概要を示し、列ヘッダーがそのプロパティを定義する次のスプレッドシートを考えてみましょう。
 
 ![照会スプレッドシート](/help/edge/assets/enquiry-form-spreadsheet.png)
 
@@ -72,11 +72,11 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 1. Microsoft SharePoint または Google Drive の AEM Edge Delivery プロジェクトフォルダーにアクセスします。
 
-1. AEM Edge Delivery プロジェクトディレクトリ内の任意の場所で、Microsoft Excel ワークブックまたは Google シートを作成します。例えば、Google Drive の AEM Edge Delivery プロジェクトディレクトリに `enquiry` という名前のスプレッドシートを作成します。
+1. AEM Edge Delivery プロジェクトディレクトリ内の任意の場所で、Microsoft Excel ワークブックまたは Google シートを作成します。 例えば、Google Drive の AEM Edge Delivery プロジェクトディレクトリに `enquiry` という名前のスプレッドシートを作成します。
 
    <!-- ![Sample Content on Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)-->
 
-1. [プロジェクトに指定された設定に従って](https://www.aem.live/docs/setup-customer-sharepoint)、シートが適切な AEM ユーザー（`forms@adobe.com` など）と共有されていることを確認します。ユーザにシートの編集権限を付与します。
+1. [プロジェクトに指定された設定に従って](https://www.aem.live/docs/setup-customer-sharepoint)、シートが適切な AEM ユーザー（`forms@adobe.com` など）と共有されていることを確認します。 ユーザにシートの編集権限を付与します。
 
 1. 作成したスプレッドシートを開き、デフォルトシートの名前を「shared-aem」に変更します。
 
@@ -85,7 +85,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 1. フォームフィールドを追加するには、行および列ヘッダーを「shared-aem」シートに挿入します。 各行は、[フォームフィールド](/help/edge/docs/forms/form-components.md#available-components)を表し、列ヘッダーが対応するフィールドの[プロパティ](/help/edge/docs/forms/form-components.md#components-properties)を定義する必要があります。
 
 
-   すぐに開始するには、[照会スプレッドシート](/help/edge/assets/enquiry.xlsx)の内容を、お使いのスプレッドシートにコピーすることを検討してください。内容をコピーした後、スプレッドシートを保存します。
+   すぐに開始するには、[照会スプレッドシート](/help/edge/assets/enquiry.xlsx)の内容を、お使いのスプレッドシートにコピーすることを検討してください。 内容をコピーした後、スプレッドシートを保存します。
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427468?quality=12&learn=on)
 
@@ -94,7 +94,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    ![AEM Sidekick を使用してシートをプレビュー](/help/edge/assets/preview-form.png)
 
-   プレビュー時に、新しいブラウザータブにシートの内容が JSON 形式で表示されます。プレビュー URL を取り込む必要があります。これは、次のセクションでフォームをレンダリングする際に必要です。URL 形式は次のとおりです。
+   プレビュー時に、新しいブラウザータブにシートの内容が JSON 形式で表示されます。 プレビュー URL を取り込む必要があります。これは、次のセクションでフォームをレンダリングする際に必要です。 URL 形式は次のとおりです。
 
 
    ```JSON
@@ -105,7 +105,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
    * `<repository>` は GitHub リポジトリを示します。
    * `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を指します。
 
-   例えば、プロジェクトのリポジトリの名前が「wefinance」で、「wkndform」というアカウントの下にあり、「main」ブランチを使用している場合、URL は次のようになります。
+   例えば、プロジェクトのリポジトリの名前が「wefinance」で、アカウント「wkndform」の下にあり、「main」分岐を使用している場合、URL は次のようになります。
 
 `https://main--wefinance--wkndform.aem.page/enquiry.json`
 &lt;! – （https://main--wefinance--wkndform.aem.page/enquiry.json)-->
@@ -116,17 +116,17 @@ Ensure a smooth GitHub build process by addressing potential issues:
 +++ 手順 2：Edge Delivery Services（EDS）ページを使用してフォームをプレビュー
 
 
-ここまでで、フォームの構造の準備が整いました。フォームをプレビューする手順は次のとおりです。
+ここまでで、フォームの構造の準備が整いました。 フォームをプレビューする手順は次のとおりです。
 
 1. Microsoft SharePoint または Google Drive アカウントを開き、AEM Edge Delivery プロジェクトディレクトリに移動します。
 
 
 
-1. フォームを埋め込むドキュメントファイル（インデックスファイルなど）を開きます。または、[ 新しいドキュメントを作成する ](/help/edge/assets/enquiry-form.docx) こともできます。
+1. フォームを埋め込むドキュメントファイル（インデックスファイルなど）を開きます。 または、[新しいドキュメントを作成](/help/edge/assets/enquiry-form.docx)することもできます。
 
 1. フォームを追加するドキュメント内の目的の場所に移動します。
 
-1. フォームをレンダリングするフォームブロックを作成します。挿入／テーブルを選択し、1 列 2 行のテーブルを作成します。テーブルに「Form」という名前を付け、2 行目にプレビュー URL をペーストします。以下に示すように、URL がプレーンテキストではなく、ハイパーリンクとして書式設定されていることを確認します。
+1. フォームをレンダリングするフォームブロックを作成します。 挿入／テーブルを選択し、1 列 2 行のテーブルを作成します。 テーブルに「Form」という名前を付け、2 行目にプレビュー URL をペーストします。 以下に示すように、URL がプレーンテキストではなく、ハイパーリンクとして書式設定されていることを確認します。
 
    | フォーム |
    |---|
@@ -135,7 +135,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    ![アダプティブフォームブロックを web ページに追加](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
-   このブロックは、フォームが埋め込まれるプレースホルダーとして機能します。ブロックの 2 行目に、`<form>.json` ファイルのプレビュー URL をハイパーリンクとして追加します。
+   このブロックは、フォームが埋め込まれるプレースホルダーとして機能します。 ブロックの 2 行目に、`<form>.json` ファイルのプレビュー URL をハイパーリンクとして追加します。
 
    >[!IMPORTANT]
    >
@@ -143,7 +143,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
    > URL がプレーンテキストとして表示されるのではなく、ハイパーリンクとして書式設定されていることを確認します。
 
 
-1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) を使用してドキュメントをプレビューします。これで、ページにフォームが表示されます。例えば、[照会スプレッドシート](/help/edge/assets/enquiry-form.docx)に基づくフォームは次のとおりです。
+1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) を使用してドキュメントをプレビューします。 これで、ページにフォームが表示されます。 例えば、[照会スプレッドシート](/help/edge/assets/enquiry-form.docx)に基づくフォームは次のとおりです。
 
 
    [![EDS フォームのサンプル](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.page/enquiry-form)

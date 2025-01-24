@@ -709,7 +709,7 @@ ht-degree: 99%
    + はじめに {#getting-started-forms}
       + [ユースケースと開発環境の設定](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [ローン申し込みフォームの作成](/help/forms/create-adaptive-form-tutorial.md)
-   + {#integrate} の統合 
+   + {#integrate} の統合
       + サービス {#services}
          + [AEM Forms as a Cloud Service と Adobe Sign の統合](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [AEM Forms as a Cloud Service と DocuSign の統合](/help/forms/integrate-docusign-adaptive-forms.md)
@@ -1016,7 +1016,7 @@ ht-degree: 99%
          + [ルールを使用してフォームに動的な動作を追加](/help/edge/docs/forms/rules-forms.md)
          + [検証用の正規表現](/help/edge/docs/forms/regex-forms.md)
          + [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
-         + [Forms Submission Service の使用](/help/forms/forms-submission-service.md)
+         + [フォーム送信サービスの使用](/help/forms/forms-submission-service.md)
       + 機能 {#advanced-features-edge-delivery-services-forms}
          + [フォームフラグメントの使用](/help/edge/docs/forms/form-fragments.md)
          + [繰り返し可能なセクションをフォームに追加する](/help/edge/docs/forms/repeatable-forms.md)
@@ -1024,7 +1024,7 @@ ht-degree: 99%
          + [reCAPTCHA を使用してフォームを保護する](/help/edge/docs/forms/recaptacha-forms.md)
          + [カスタムコンポーネント](/help/edge/docs/forms/custom-components-forms.md)
          + [フォームの実際の使用のモニタリング](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [Edge Delivery Services向けのFormsの公開](/help/edge/docs/forms/publishing-forms.md)
+         + [Edge Delivery Services 向けのフォームの公開](/help/edge/docs/forms/publishing-forms.md)
       + 参照 {#forms-references}
          + [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
    + Edge Delivery リソース {#resources}
@@ -1220,7 +1220,7 @@ ht-degree: 99%
       + [サイトのクイック作成とフロントエンドのカスタマイズ](/help/implementing/developing/introduction/quick-site-creation.md)
       + [フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [サイトのテンプレートとテーマのカスタマイズ](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
-      + [AEMにおけるヘッドフルとヘッドレス](/help/implementing/developing/headful-headless.md)
+      + [AEM におけるヘッドフルとヘッドレス](/help/implementing/developing/headful-headless.md)
       + [Sling Model Exporter による ResourceResolvers のシリアル化を許可しない](/help/implementing/developing/disallow-resourceresolver-serialization.md)
       + フルスタック AEM 開発 {#full-stack}
          + [AEM Sites の開発の手引き - WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)

@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 81fbf43572c5129efb0a0718b408f0c9ae4a5ad3
 workflow-type: tm+mt
 source-wordcount: '587'
-ht-degree: 78%
+ht-degree: 99%
 
 ---
 
@@ -30,17 +30,17 @@ ht-degree: 78%
 
 1. Microsoft SharePoint または Google Drive アカウントを開き、AEM Edge Delivery プロジェクトディレクトリに移動します。
 
-1. フォームを含むスプレッドシートを開きます。例えば、「[ 問い合わせ ](/help/edge/assets/enquiry.xlsx)」フォームのMicrosoft Excel ワークブックなどです。
+1. フォームを含むスプレッドシートを開きます。 例：[お問い合わせ](/help/edge/assets/enquiry.xlsx)フォームの Microsoft Excel ワークブック。
 
 1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) を使用してシートをプレビューします。
 
    ![AEM Sidekick を使用してシートをプレビュー](/help/edge/assets/preview-form.png) します。
 
-   プレビュー操作が正常に完了すると、スプレッドシートのコンテンツが JSON 形式に変換されます。プレビューページには、このコンテンツが構造化された表形式で表示されます。例えば、添付の画像は「お問い合わせ」フォームの内容を示しています。
+   プレビュー操作が正常に完了すると、スプレッドシートのコンテンツが JSON 形式に変換されます。 プレビューページには、このコンテンツが構造化された表形式で表示されます。 例えば、添付の画像は「お問い合わせ」フォームの内容を示しています。
 
    ![フォームのプレビューの JSON 形式](/help/edge/assets/forms-preview-json-format.png)
 
-1. AEM Sidekick を使用してシートを公開します。次の節でフォームをレンダリングするために必要となるので、パブリッシュ URL を取得します。URL 形式は次のとおりです。
+1. AEM Sidekick を使用してシートを公開します。 次の節でフォームをレンダリングするために必要となるので、パブリッシュ URL を取得します。 URL 形式は次のとおりです。
 
 
    ```JSON
@@ -51,7 +51,7 @@ ht-degree: 78%
    * `<repository>` は GitHub リポジトリを示します。
    * `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を指します。
 
-   例えば、プロジェクトのリポジトリの名前が「wefinance」で、「wkndform」というアカウントの下にあり、「main」ブランチとフォームを「inquiry」として使用している場合、URL は次のようになります。
+   例えば、プロジェクトのリポジトリの名前が「wefinance」で、アカウント「wkndform」の下にあり、「main」分岐とフォームを「お問い合わせ」として使用している場合、URL は次のようになります。
 
    `https://main--wefinance--wkndform.aem.live/enquiry.json`
 &lt;! – （https://main--wefinance--wkndform.aem.live/enquiry.json)-->
@@ -67,11 +67,11 @@ Web ページにフォームを追加するには、以下の手順に従いま�
 
 1. Microsoft SharePoint または Google Drive アカウントにアクセスし、`[AEM Edge Delivery project directory]` に移動します。
 
-1. フォームを埋め込むドキュメントファイルを開きます。例えば、[inquiry-form.docx](/help/edge/assets/enquiry-form.docx) ファイルを開くことも、新しいドキュメントを作成することもできます。
+1. フォームを埋め込むドキュメントファイルを開きます。 例えば、[enquiry-form.docx](/help/edge/assets/enquiry-form.docx) ファイルを開くことも、新しいドキュメントを作成することもできます。
 
 1. ドキュメント内でフォームを挿入するセクションを特定し、これに応じてそのセクションに移動します。
 
-1. 「Form」という名前のブロックをファイルに追加します。 例えば、プロジェクトのリポジトリの名前が「wefinance」の場合は、アカウント所有者の「wkndform」の下にあり、「main」ブランチを使用しています。
+1. 「フォーム」という名前のブロックをファイルに追加します。 例えば、プロジェクトのリポジトリの名前が「wefinance」で、アカウント所有者「wkndform」の下にあり、「main」分岐を使用している場合。
 
    | フォーム |
    |---|
@@ -79,16 +79,16 @@ Web ページにフォームを追加するには、以下の手順に従いま�
 
    ![「フォーム」という名前のブロックをファイルに追加](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
-   このブロックは、フォームが埋め込まれるプレースホルダーとして機能します。ブロックの 2 行目に、`<form>.json` ファイルの URL をハイパーリンクとして追加します。
+   このブロックは、フォームが埋め込まれるプレースホルダーとして機能します。 ブロックの 2 行目に、`<form>.json` ファイルの URL をハイパーリンクとして追加します。
 
    >[!IMPORTANT]
    >
    >
    > URL がプレーンテキストとして表示されるのではなく、ハイパーリンクとして書式設定されていることを確認します。
 
-   開発またはテストの目的でプレビュー URL （.page URL）を使用し、実稼動ではパブリッシュ URL （.live）を使用します。
+   開発またはテスト目的にはプレビュー URL（.page URL）を使用し、実稼動環境にはパブリッシュ URL（.live）を使用します。
 
-   例えば、プロジェクトのリポジトリの名前が「wefinance」の場合は、アカウント所有者の「wkndform」の下にあり、「main」ブランチを使用しています。
+   例えば、プロジェクトのリポジトリの名前が「wefinance」で、アカウント所有者「wkndform」の下にあり、「main」分岐を使用している場合。
 
    プレビュー URL およびパブリッシュ URL の例を次に示します。
 
@@ -105,12 +105,12 @@ Web ページにフォームを追加するには、以下の手順に従いま�
    |---|
    | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
-1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) を使用して web ページをプレビューします。これで、ページにフォームが表示されます。例えば、[お問い合わせスプレッドシート](/help/edge/assets/enquiry-form.docx)に基づくフォームは次のとおりです。
+1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) を使用して web ページをプレビューします。 これで、ページにフォームが表示されます。 例えば、[お問い合わせスプレッドシート](/help/edge/assets/enquiry-form.docx)に基づくフォームは次のとおりです。
 
 
    ![EDS フォームのサンプル](/help/edge/assets/updated-form.png)
 
-1. AEM Sidekick を使用してフォームを公開します。これで、お客様はフォームに入力して送信できます。
+1. AEM Sidekick を使用してフォームを公開します。 これで、お客様はフォームに入力して送信できます。
 
 +++
 

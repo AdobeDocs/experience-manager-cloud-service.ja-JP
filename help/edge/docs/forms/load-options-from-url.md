@@ -7,14 +7,14 @@ role: Admin, Architect, Developer
 source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
 source-wordcount: '506'
-ht-degree: 87%
+ht-degree: 92%
 
 ---
 
 
 # AEM Forms as a Cloud Service の Edge Delivery Services の URL または別のシートからのオプション
 
-多くの場合、フォームには、ユーザーが定義済みのオプションから選択するドロップダウンメニューが含まれます。これらのオプションは通常、フォーム自体内で定義されますが、長いリストの管理は面倒な場合があります。このガイドでは、URL を使用して別のスプレッドシートからドロップダウンオプションを読み込んでフォームのオーサリングを改善する方法について概要を説明します。
+多くの場合、フォームには、ユーザーが定義済みのオプションから選択するドロップダウンメニューが含まれます。 これらのオプションは通常、フォーム自体内で定義されますが、長いリストの管理は面倒な場合があります。 このガイドでは、URL を使用して別のスプレッドシートからドロップダウンオプションを読み込んでフォームのオーサリングを改善する方法について概要を説明します。
 
 
 別のスプレッドシートからドロップダウンオプションを読み込むことには、次のメリットがあります。
@@ -36,7 +36,7 @@ ht-degree: 87%
 
 1. 次のように、スプレッドシートを作成します。
    1. Microsoft® SharePoint または Google Drive で AEM プロジェクトフォルダーを見つけます。
-   1. 新しいシートを追加します。例：「shared-country」。
+   1. 新しいシートを追加します。 例：「shared-country」。
 1. オプション列を定義します。
 「オプション」と「値」の 2 つの列を追加します。
    * 「オプション」では、ドロップダウンメニューに表示されるテキストを定義します。
@@ -55,19 +55,19 @@ ht-degree: 87%
 
 1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) を使用して、`shared-country` シートをプレビューし公開します。
 
-   例えば、プロジェクトのリポジトリの名前が「wefinance」の場合は、アカウント所有者の「wkndform」の下にあり、「main」ブランチを使用しています。この URL で `shared-country` シートを表示します。
+   例えば、プロジェクトのリポジトリの名前が「wefinance」で、アカウント所有者「wkndform」の下にあり、「main」分岐を使用している場合、`shared-country` シートを表示する URL は次のようになります。
    `https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country`
    <!--(https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)  -->
 
 >[!NOTE]
 >
-> `?sheet=country` は、URL に追加されたクエリパラメーターです。このパラメーターは、`shared-country` シートに基づいてフィルタリングされた JSON を示します。様々な国に関連する情報を含んだ JSON ファイルにリダイレクトされます。
+> `?sheet=country` は、URL に追加されたクエリパラメーターです。 このパラメーターは、`shared-country` シートに基づいてフィルタリングされた JSON を示します。 様々な国に関連する情報を含んだ JSON ファイルにリダイレクトされます。
 
 ## ドロップダウンリストのオプションを読み込む URL を追加する{#add-url}
 
-`select` フィールドの `Options` プロパティには URL を指定できます。その URL は、`Destination` ドロップダウンリストのオプションとして使用される JSON 配列を返します。ドロップダウンリストのオプションを読み込む URL を追加するには、次の手順に従います。
+`select` フィールドの `Options` プロパティには URL を指定できます。 その URL は、`Destination` ドロップダウンリストのオプションとして使用される JSON 配列を返します。 ドロップダウンリストのオプションを読み込む URL を追加するには、次の手順に従います。
 
-1. Microsoft® SharePoint または Google ドライブ上の AEM プロジェクトフォルダーに移動し、スプレッドシートを開きます。また、フォーム用の新しいスプレッドシートを作成することもできます。
+1. Microsoft® SharePoint または Google ドライブ上の AEM プロジェクトフォルダーに移動し、スプレッドシートを開きます。 また、フォーム用の新しいスプレッドシートを作成することもできます。
 1. `shared-country` シートの URL をコピーして、`Destination` フィールドの `Options` 列にペーストします。
 
    ![照会スプレッドシート](/help/forms/assets/drop-down-enquiry.png)
