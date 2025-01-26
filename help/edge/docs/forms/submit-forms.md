@@ -4,23 +4,31 @@ description: スプレッドシートとアダプティブフォームブロッ�
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
+source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 80%
+source-wordcount: '890'
+ht-degree: 86%
 
 ---
 
 # データの受け入れを開始するための Google Sheets または Microsoft Excel ファイルの設定
 
 
-[ フォームを作成してプレビュー ](/help/edge/docs/forms/create-forms.md) したら、対応するスプレッドシートでデータの受信を開始できます。 スプレッドシートでデータを受け入れるように手動で有効にすることも、スプレッドシートでデータを受け入れるように Admin API を使用して有効にすることもできます。
+[ フォームを作成してプレビュー ](/help/edge/docs/forms/create-forms.md) したら、対応するスプレッドシートでデータの受信を開始できます。 次の操作を実行できます。
+
+* [ スプレッドシートを手動で有効にしてデータを受け入れる ](#manually-enable-the-spreadsheet-to-accept-data)
+* [スプレッドシートでデータを受け入れるように Admin API を使用して有効にする](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
 
 ![ドキュメントベースのオーサリングエコシステム](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 
+<!--
+
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
+-->
+
+[Forms Submission サービスを手動で設定する ](#configuring-the-forms-submission-service-manually) または [API を使用するForms Submission サービスを設定する ](#configuring-the-forms-submission-service-using-api) ことができます。
 
 
 ## スプレッドシートでデータを受け入れるように手動で有効にする
@@ -60,118 +68,112 @@ ht-degree: 80%
 >
 >  「共有 aem」シートには、個人を特定できる情報や機密データが含まれていて、公開アクセスに不安がある場合は、絶対に使用しないでください。
 
-<!--
-### Use Admin APIs to enable a spreadsheet to accept data
 
-You can also send a POST request to the form to enable it to accept data and configure headers for the `incoming` sheet. Upon receiving the POST request, the service analyzes the body of request and autonomously generates the essential headers and sheets needed for data ingestion.
+## スプレッドシートでデータを受け入れるように Admin API を使用して有効にする
 
-To use Admin APIs to enable a spreadsheet to accept data: 
+また、POST リクエストをフォームに送信して、データを受け入れ、`incoming` シートのヘッダーを設定するように有効にすることもできます。POST リクエストを受信すると、サービスではリクエストの本文を分析し、データの取り込みに必要な必須のヘッダーとシートを自律的に生成します。
 
-
-1. Open the workbook that you have created and change the name of the default sheet to `incoming`. 
-
-    >[!WARNING] 
-    >
-    > If the `incoming` sheet doesn't exist, AEM won't send any data to this workbook.
-
-1. Preview the sheet in the sidekick.
-
-    >[!NOTE] 
-    >
-    >Even if you have previewed the sheet before, you must preview it again after creating the `incoming` sheet for the first time.
-
-1. Send the POST request to generate the appropriate headers in the `incoming` sheet, and add the `shared-default` sheets to your spread sheet, if it does not exist already.
-
-    To understand how to format the POST request for setting up your sheet, refer to the [Admin API documentation](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). You can look at the example provided below: 
-
-    **Request** 
-    
-    ```JSON
-
-    POST 'https://admin.aem.page/form/{owner}/{repo}/{branch}/contact-us.json' \
-    --header 'Content-Type: application/json' \
-    --data '{
-        "data": {
-            "Email": "john@wknd.com",
-            "Name": "John",
-            "Subject": "Regarding Product Inquiry",
-            "Message": "I have some questions about your products.",
-            "Phone": "123-456-7890",
-            "Company": "Adobe Inc.",
-            "Country": "United States",
-            "PreferredContactMethod": "Email",
-            "SubscribeToNewsletter": true
-        }
-    }'
-
-    ```
+スプレッドシートでデータを受け入れるように Admin API を使用して有効にするには：
 
 
-    **Response**
+1. 作成したワークブックを開き、デフォルトのシートの名前を `incoming` に変更します。
 
-    ```JSON
+   >[!WARNING]
+   >
+   > `incoming` シートが存在しない場合、AEM ではこのワークブックにデータを送信しません。
 
-    HTTP/2 200 
-    content-type: application/json
-    x-invocation-id: 1b3bd30a-8cfb-4f85-a662-4b1f7cf367c5
-    cache-control: no-store, private, must-revalidate
-    accept-ranges: bytes
-    date: Sat, 10 Feb 2024 09:26:48 GMT
-    via: 1.1 varnish
-    x-served-by: cache-del21736-DEL
-    x-cache: MISS
-    x-cache-hits: 0
-    x-timer: S1707557205.094883,VS0,VE3799
-    strict-transport-security: max-age=31557600
-    content-length: 138
+1. Sidekick でシートをプレビューします。
 
-    {"rowCount":2,"columns":["Email","Name","Subject","Message","Phone","Company","Country",      "PreferredContactMethod","SubscribeToNewsletter"]}%
+   >[!NOTE]
+   >
+   >以前にシートをプレビューしたことがある場合でも、`incoming` シートを初めて作成した後に再度プレビューする必要があります。
 
-    ```
+1. POST リクエストを送信して `incoming` シートに適切なヘッダーを生成し、`shared-default` シートがまだ存在しない場合はスプレッドシートに追加します。
 
-    You can use tools like curl or Postman to execute this POST request, as demonstrated below:
+   シートを設定する POST リクエストの形式については、[Admin API ドキュメント](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile)を参照してください。以下に例を示します。
 
-    ```JSON
+   **リクエスト**
 
-    curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
-        --header 'Content-Type: application/json' \
-        --data '{
-            "data": {
-                "Email": "john@wknd.com",
-                "Name": "John",
-                "Subject": "Regarding Product Inquiry",
-                "Message": "I have some questions about your products.",
-                "Phone": "123-456-7890",
-                "Company": "Wknd Inc.",
-                "Country": "United States",
-                "PreferredContactMethod": "Email",
-                "SubscribeToNewsletter": true
-        }
-    }'
+   ```JSON
+   POST 'https://admin.aem.page/form/{owner}/{repo}/{branch}/contact-us.json' \
+   --header 'Content-Type: application/json' \
+   --data '{
+       "data": {
+           "Email": "john@wknd.com",
+           "Name": "John",
+           "Subject": "Regarding Product Inquiry",
+           "Message": "I have some questions about your products.",
+           "Phone": "123-456-7890",
+           "Company": "Adobe Inc.",
+           "Country": "United States",
+           "PreferredContactMethod": "Email",
+           "SubscribeToNewsletter": true
+       }
+   }'
+   ```
 
-    ```
 
-    The above mentioned POST request provides sample data, including both form fields and their respective sample values. This data is used by the Admin service to set up the form.
+   **応答**
 
-    Your form is now enabled to accept data. You also observe the following changes in your spreadsheet: 
+   ```JSON
+   HTTP/2 200 
+   content-type: application/json
+   x-invocation-id: 1b3bd30a-8cfb-4f85-a662-4b1f7cf367c5
+   cache-control: no-store, private, must-revalidate
+   accept-ranges: bytes
+   date: Sat, 10 Feb 2024 09:26:48 GMT
+   via: 1.1 varnish
+   x-served-by: cache-del21736-DEL
+   x-cache: MISS
+   x-cache-hits: 0
+   x-timer: S1707557205.094883,VS0,VE3799
+   strict-transport-security: max-age=31557600
+   content-length: 138
+   
+   {"rowCount":2,"columns":["Email","Name","Subject","Message","Phone","Company","Country",      "PreferredContactMethod","SubscribeToNewsletter"]}%
+   ```
 
-## Automatic changes to sheet once it is enabled to accept data. 
+   以下に示すように、cURL や Postman などのツールを使用して、この POST リクエストを実行できます。
 
-Once the sheet is set to recieve data, you observe the following changes in your spreadsheet: 
+   ```JSON
+   curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
+       --header 'Content-Type: application/json' \
+       --data '{
+           "data": {
+               "Email": "john@wknd.com",
+               "Name": "John",
+               "Subject": "Regarding Product Inquiry",
+               "Message": "I have some questions about your products.",
+               "Phone": "123-456-7890",
+               "Company": "Wknd Inc.",
+               "Country": "United States",
+               "PreferredContactMethod": "Email",
+               "SubscribeToNewsletter": true
+       }
+   }'
+   ```
 
-A sheet named "Slack" is added to your Excel Workbook or Google Sheet. In this sheet, you can configure automatic notifications for a designated Slack channel whenever new data is ingested into your spreadsheet. At present, AEM supports notifications exclusively to the AEM Engineering Slack organization and the Adobe Enterprise Support organization.
+   上記の POST リクエストでは、フォームフィールドとそれぞれのサンプル値の両方を含むサンプルデータを提供します。このデータは、フォームを設定するために Admin サービスによって使用されます。
 
-1. To set up Slack notifications enter the "teamId" of the Slack workspace and the "channel name" or "ID". You can also ask the slack-bot (with the debug command) for the "teamId" and the "channel ID". Using the "channel ID" instead of the "channel name" is preferable, as it survives channel renames.
+   これで、フォームでデータを受け入れるように有効にしました。また、スプレッドシートに次の変更が見られることもわかります。
 
-    >[!NOTE] 
-    >
-    > Older forms didn't have the "teamId" column. The "teamId" was included in the channel column, separated by a "#" or "/".
+## データの受け入れを有効にすると、シートが自動的に変更されます。
 
-1. Enter any title that you want and under fields enter the names of the fields you want to see in the Slack notification. Each heading should be separated by a comma (For example name, email).
+データを受信するようにシートを設定すると、スプレッドシートに次の変更が見られます。
 
-    >[!WARNING] 
-    >
-    >  Never should the "shared-default" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
+「Slack」という名前のシートが Excel ワークブックまたは Google Sheets に追加されます。このシートでは、新しいデータがスプレッドシートに取り込まれるたびに、指定した Slack チャネルに対する自動通知を設定できます。現在、AEM では、AEM エンジニアリング Slack 組織とアドビエンタープライズサポート組織への通知のみをサポートします。
+
+1. Slack 通知を設定するには、Slack ワークスペースの「teamId」と、「チャネル名」または「ID」を入力します。また、slack ボットに（debug コマンドを使用して）「teamId」と「チャネル ID」を問い合わせることもできます。チャネル名を変更しても残り続けるので、「チャネル名」の代わりに「チャネル ID」を使用することをお勧めします。
+
+   >[!NOTE]
+   >
+   > 古いフォームには「teamId」列がありませんでした。「teamId」は「#」または「/」で区切られてチャネル列に含まれていました。
+
+1. 必要なタイトルを入力し、フィールドの下に Slack 通知に表示するフィールドの名前を入力します。各見出しはコンマで区切る必要があります（名前、メールなど）。
+
+   >[!WARNING]
+   >
+   >  「shared-default」シートには、一般にアクセスされることに抵抗のある個人を特定できる情報や機密データを決して含めないでください。
 
 
 

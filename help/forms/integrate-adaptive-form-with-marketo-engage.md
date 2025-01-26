@@ -5,14 +5,14 @@ Keywords: How to connect a Marketo instance with form? , Connect a form to Marke
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
-source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
+source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '576'
 ht-degree: 9%
 
 ---
 
-# Marketo Engageと統合する新しいフォームの設定
+# アダプティブフォームとMarketo Engageの統合
 
 <span class="preview">機能は、早期導入プログラムで利用できます。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID で aem-forms-ea@adobe.com までメールを送信してください。</span>
 
@@ -44,7 +44,7 @@ Marketo Engageと連携する新しいアダプティブフォームを設定す
 
    ![Formsとドキュメントの選択 ](/help/forms/assets/select-forms.png)
 
-1. **[!UICONTROL 作成]**／**[!UICONTROL アダプティブフォーム]**&#x200B;を選択します。フォーム作成ウィザードが開きます。
+1. **[!UICONTROL 作成]**／**[!UICONTROL アダプティブフォーム]**&#x200B;を選択します。 フォーム作成ウィザードが開きます。
 
    ![AF を選択 ](/help/forms/assets/select-create-forms.png)
 
@@ -70,7 +70,7 @@ Marketo Engageと連携する新しいアダプティブフォームを設定す
 
    ![Marketo engage への送信 ](/help/forms/assets/select-marketo-engage.png)
 
-1. 「**[!UICONTROL 作成]**」を選択します。アダプティブフォームを保存するタイトル、名前、場所を指定します。
+1. 「**[!UICONTROL 作成]**」を選択します。 アダプティブフォームを保存するタイトル、名前、場所を指定します。
 
    ![ フォームを作成 ](/help/forms/assets/create-marketo-form.png)
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7b0e9106806d7fd10953db19f55be773c68c3fe5
+source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
 workflow-type: tm+mt
-source-wordcount: '5983'
+source-wordcount: '5993'
 ht-degree: 99%
 
 ---
@@ -1017,6 +1017,8 @@ ht-degree: 99%
          + [検証用の正規表現](/help/edge/docs/forms/regex-forms.md)
          + [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
          + [フォーム送信サービスの使用](/help/forms/forms-submission-service.md)
+      + WYSIWYG {#universal-editor}
+         + [概要 – Forms用Edge Delivery Servicesのユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + 機能 {#advanced-features-edge-delivery-services-forms}
          + [フォームフラグメントの使用](/help/edge/docs/forms/form-fragments.md)
          + [繰り返し可能なセクションをフォームに追加する](/help/edge/docs/forms/repeatable-forms.md)

@@ -5,7 +5,7 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 4f2dcb02c3ad00ef9735679d8bd4cce568bfabb5
+source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 1%
@@ -100,7 +100,7 @@ Forms Submission サービスをGoogle Sheets またはMicrosoft Excel で設定
 > * `incoming` シートをAdobe Experience Manager `forms@adobe.com` と共有し、編集アクセス権を付与します。
 > * サイドキックで `incoming` シートをプレビューして公開します。
 
-シートを設定するためのPOSTリクエストのフォーマット方法については、[API ドキュメント ](https://main--afb--adobe.hlx.page/docs/index.html#/paths/~1%7Bid%7D/post) を参照してください。 以下に例を示します。
+シートを設定するためのPOSTリクエストのフォーマット方法については、[API ドキュメント ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/) を参照してください。 以下に例を示します。
 
 以下に示すように、curl やPostmanなどのツールを使用してこのPOSTリクエストを実行できます。
 
