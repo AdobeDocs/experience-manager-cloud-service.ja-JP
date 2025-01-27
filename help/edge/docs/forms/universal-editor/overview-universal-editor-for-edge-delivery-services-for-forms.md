@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 7122022c4245887ec576d4c1cd9af288b440f0c2
+source-git-commit: 64270a0d3b65ac327b14826117631deeb749c95f
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1000'
 ht-degree: 15%
 
 ---
@@ -32,12 +32,13 @@ ht-degree: 15%
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス"> 
     <h3>WYSIWYG インターフェイス</h3>
-    <p>ユニバーサルエディターは、フォームデザインのためのWYSIWYG インターフェイスを提供します。 事前定義済みのコンポーネントライブラリ、レスポンシブデザインのサポート、テンプレートベースのフォーム作成を提供します。 フォームフィールドを即座に追加または削除し、フィールドのプロパティ（ラベル、データ連結、検証など）を変更できます。 カスタムフォームコンポーネントをユニバーサルエディターにプラグインすることもできます。</p>
+    <p>ユニバーサルエディターは、事前定義済みのコンポーネントライブラリ、レスポンシブデザイン、テンプレートベースの作成、リアルタイムフィールドの変更を含むフォームデザインのためのWYSIWYG インターフェイスを提供します。
+ </p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="ルールエディター">
     <h3>ルールエディター</h3>
-    <p>ルールエディターでは、軽量のJavaScriptと JSON ベースの定義を通じて、イベント駆動型ルールを使用した高度なフォームインタラクション、即時検証、エラー処理を作成できます。</p>
+    <p>デバイス間でシームレスに適応するレスポンシブフォームのデザイン。 レスポンシブモードを使用して、デスクトップ、タブレットおよびモバイルのデザインをプレビューおよびテストします。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="送信アクション">
@@ -49,17 +50,17 @@ ht-degree: 15%
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス alt=" WYSIWYG Interface"> 
     <h3>パーソナライズ機能</h3>
-    <p>パーソナライズ機能</p>
+    <p>Personalizationはユーザーデータを使用して、ユーザーの環境設定に基づいてカスタマイズされたフォームエクスペリエンスを提供し、コンテンツ、レイアウト、オプションを動的に調整します。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="ルールエディター">
-    <h3>認証ヘッダー</h3>
-    <p>ルールエディターでは、軽量のJavaScriptと JSON ベースの定義を通じて、イベント駆動型ルールを使用した高度なフォームインタラクション、即時検証、エラー処理を作成できます。</p>
+    <h3>A/B テスト</h3>
+    <p>A/B テスト（実験）を使用すると、組織は様々なフォームデザイン、レイアウト、機能を試して、最もパフォーマンスの高いバリアントを特定できます。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="送信アクション">
-    <h3> 公開/非公開 </h3>
-    <p>数回クリックするだけでフォームを公開および非公開にすることで、フォームの表示を簡単に制御できます。</p>
+    <h3> タスク管理 </h3>
+    <p>とAdobe Workfrontを統合すると、チームはフォームの作成と管理のタスクを管理でき、シームレスな共同作業と効率化されたワークフローが実現します。</p>
   </div>
 </div>
 
@@ -67,17 +68,17 @@ ht-degree: 15%
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="事前入力サービス">
     <h3>事前入力サービス</h3>
-    <p>事前入力サービスは、様々なソースからの関連データをフォームフィールドにインテリジェントに入力し、手動でのデータ入力を減らすことで、ユーザーエクスペリエンスを向上させます。</p>
+    <p>事前入力サービスは、様々なソースからの関連するユーザーデータをフォームフィールドに自動的に入力するので、手動での入力を減らし、ユーザーエクスペリエンスを向上させることができます。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="データ連結">
     <h3>データ連結</h3>
-    <p>データバインディングにより、フォームフィールドとバックエンドデータソース間の直接の動的接続が可能になり、リアルタイムの同期と複雑なデータマッピングがサポートされます。</p>
+    <p>データバインディングにより、フォームフィールドとバックエンドデータソース間の直接接続が可能になり、リアルタイムの更新と高度なデータマッピングがサポートされます。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="国際化/ローカリゼーション">
-    <h3>ローカライゼーション</h3>
-    <p>国際化対応のサポートにより、多言語レンダリング、右から左への言語互換性、ロケール固有のフォーマットを使用してグローバルアクセシビリティを確保できます。</p>
+    <h3>公開/非公開</h3>
+    <p>フォームの表示を簡単に制御します。数回のクリックでフォームを公開または非公開にし、可用性、ユーザーアクセス、コンテンツ更新を動的に管理します。</p>
   </div>
 </div>
 
@@ -85,17 +86,17 @@ ht-degree: 15%
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="分析とトラッキング">
     <h3>分析とトラッキング</h3>
-    <p>組み込みの分析とトラッキングのメカニズムは、フォームのインタラクション、送信率、ユーザーの行動に関するインサイトを提供し、継続的な最適化を可能にします。</p>
+    <p>組み込みの分析とトラッキングを使用して、ユーザーの行動、フォームのインタラクション、送信率に関するインサイトを取得し、データ駆動型のフォーム最適化を可能にします。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="実験（A/B テスト）">
-    <h3>実験（A/B テスト）</h3>
-    <p>実験を行うことで、組織はフォームデザインに対して A/B テストを実行し、最もパフォーマンスの高いレイアウトや機能を特定できます。</p>
+    <h3>送信アクション</h3>
+    <p>送信アクションは、バックエンド統合、条件付き送信ロジック、安全なエンドポイント、プリプロセッサーをサポートし、送信ワークフローを合理化します。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="タスク管理">
-    <h3>タスク管理</h3>
-    <p>Adobe Workfrontとの統合により、チームはフォームの作成とメンテナンスに関連するタスクを管理でき、共同作業を確実に効率化できます。</p>
+    <h3>カスタムコンポーネント</h3>
+    <p>カスタムコンポーネントを使用すると、デベロッパーは特定の組織のユースケースに合わせて独自の要素を作成することで、フォーム機能を拡張できます。</p>
   </div>
 </div>
 
@@ -108,12 +109,12 @@ ht-degree: 15%
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="Formsの埋め込み">
     <h3>Formsの埋め込み</h3>
-    <p>ユニバーサルエディターは、フォームをEdge Deliver Services のサイトページに直接埋め込むことをサポートしています。 これを行うには、すぐに使用できる埋め込みコンポーネントを使用します。</p>
+    <p>ユニバーサルエディターの組み込み埋め込みコンポーネントを使用してEdge Delivery Services Sites ページにフォームを直接埋め込み、シームレスなユーザーエクスペリエンスを実現します。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="カスタムコンポーネント">
     <h3>カスタムコンポーネント</h3>
-    <p>カスタムコンポーネントを使用すると、開発者は特定の使用例に合わせてカスタマイズされた一意のフォーム要素を作成することで、フォームの機能を拡張できます 
+    <p>カスタムコンポーネントを使用すると、デベロッパーは特定の組織のユースケースに合わせて独自の要素を作成することで、フォーム機能を拡張できます。
     </p>
   </div>
 </div>
@@ -122,12 +123,12 @@ ht-degree: 15%
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="「ありがとうございます」設定">
     <h3>「ありがとうございます」設定</h3>
-    <p>フォームの送信後に表示される確認メッセージまたはページをカスタマイズします。</p>
+    <p>フォームの送信が成功した後に、ユーザーに表示される確認メッセージまたはページを簡単にカスタマイズできます。</p>
   </div>
     <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="送信アクション">
     <h3>送信アクション</h3>
-    <p>送信アクションは、バックエンド統合オプション、データプリプロセッサー、条件付き送信ロジック、安全なエンドポイント接続を使用して、フォーム送信ワークフローを促進します。</p>
+    <p>送信アクションは、バックエンド統合と安全なエンドポイント接続を使用して、フォーム送信ワークフローを容易にします。</p>
   </div>
 </div>
 
