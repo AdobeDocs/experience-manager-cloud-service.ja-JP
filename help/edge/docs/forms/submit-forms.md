@@ -4,10 +4,10 @@ description: スプレッドシートとアダプティブフォームブロッ�
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: 552779d9d1cee2ae9f233cabc2405eb6416c41bc
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 86%
+source-wordcount: '873'
+ht-degree: 88%
 
 ---
 
@@ -27,9 +27,6 @@ ht-degree: 86%
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
 -->
-
-[Forms Submission サービスを手動で設定する ](#configuring-the-forms-submission-service-manually) または [API を使用するForms Submission サービスを設定する ](#configuring-the-forms-submission-service-using-api) ことができます。
-
 
 ## スプレッドシートでデータを受け入れるように手動で有効にする
 
