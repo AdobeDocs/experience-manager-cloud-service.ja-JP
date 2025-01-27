@@ -1,14 +1,14 @@
 ---
 title: AEM Forms の Edge Delivery Services の概要
-description: AEM Forms の Edge Delivery Services
+description: AEM FormsのEdge Delivery Servicesは最高のパフォーマンスを実現するために構築されており、合理化されたデータ収集とユーザーエンゲージメントの将来を思い描くことができます。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 60998217ea7d3d9c426975510b433308b0ddea14
+source-git-commit: b9364394f683fa8af5d28723e5f10b20b001ea37
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 16%
+source-wordcount: '956'
+ht-degree: 15%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 16%
 
 ユニバーサルエディターは、特にEdge Delivery Services（EDS）に焦点を当てています。 ユニバーサルエディターの主な強みは、高度なフォーム作成機能、動的なルール編集、様々なデータソースとのシームレスな統合など、堅牢な機能セットにあります。 ユーザーは、事前定義済みのコンポーネント、カスタマイズ可能なテンプレート、およびフォーム要素の広範なライブラリを使用して、レスポンシブフォームをすばやくデザインできます。
 
-![ユニバーサルエディター](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
+![ユニバーサルエディター](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){{width=50%, align-center}}
 
 
 
@@ -43,7 +43,7 @@ ht-degree: 16%
     <p>デバイス間でシームレスに適応するレスポンシブフォームのデザイン。 レスポンシブモードを使用して、デスクトップ、タブレットおよびモバイルのデザインをプレビューおよびテストします。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="送信アクション">
+    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="WYSIWYG インターフェイス" alt="送信アクション">
     <h3>レスポンシブモード </h3>
     <p>デバイス（デスクトップ、タブレット、モバイル）間でシームレスに適応するフォームを設計します。 レスポンシブモードを使用して、様々な画面サイズのフォームをプレビューします。</p>
   </div>
@@ -68,17 +68,17 @@ ht-degree: 16%
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="事前入力サービス">
+    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="WYSIWYG インターフェイス" alt="事前入力サービス">
     <h3>事前入力サービス</h3>
     <p>事前入力サービスは、様々なソースからの関連するユーザーデータをフォームフィールドに自動的に入力するので、手動での入力を減らし、ユーザーエクスペリエンスを向上させることができます。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="データ連結">
+    <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="WYSIWYG インターフェイス" alt="データ連結">
     <h3>データ連結</h3>
     <p>データバインディングにより、フォームフィールドとバックエンドデータソース間の直接接続が可能になり、リアルタイムの更新と高度なデータマッピングがサポートされます。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/localization.svg" alt="WYSIWYG インターフェイス" alt="国際化/ローカリゼーション">
+    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="WYSIWYG インターフェイス" alt="国際化/ローカリゼーション">
     <h3>公開/非公開</h3>
     <p>フォームの表示を簡単に制御します。数回のクリックでフォームを公開または非公開にし、可用性、ユーザーアクセス、コンテンツ更新を動的に管理します。</p>
   </div>
@@ -96,7 +96,7 @@ ht-degree: 16%
     <p>送信アクションは、バックエンド統合、条件付き送信ロジック、安全なエンドポイント、プリプロセッサーをサポートし、送信ワークフローを合理化します。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="タスク管理">
+    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="WYSIWYG インターフェイス" alt="タスク管理">
     <h3>カスタムコンポーネント</h3>
     <p>カスタムコンポーネントを使用すると、デベロッパーは特定の組織のユースケースに合わせて独自の要素を作成することで、フォーム機能を拡張できます。</p>
   </div>
@@ -104,17 +104,17 @@ ht-degree: 16%
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="エディターのカスタマイズ">
+    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="WYSIWYG インターフェイス" alt="エディターのカスタマイズ">
     <h3>エディターのカスタマイズ</h3>
     <p>開発者は、UI 拡張機能を通じてユニバーサルエディターの機能を拡張し、特定の組織ニーズに合わせてカスタマイズされたソリューションを実現できます。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="Formsの埋め込み">
+    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="WYSIWYG インターフェイス" alt="Formsの埋め込み">
     <h3>Formsの埋め込み</h3>
     <p>ユニバーサルエディターの組み込み埋め込みコンポーネントを使用してEdge Delivery Services Sites ページにフォームを直接埋め込み、シームレスなユーザーエクスペリエンスを実現します。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス" alt="カスタムコンポーネント">
+    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="WYSIWYG インターフェイス" alt="カスタムコンポーネント">
     <h3>「ありがとうございます」設定</h3>
     <p>フォームの送信が成功した後に、ユーザーに表示される確認メッセージまたはページを簡単にカスタマイズできます。
     </p>
