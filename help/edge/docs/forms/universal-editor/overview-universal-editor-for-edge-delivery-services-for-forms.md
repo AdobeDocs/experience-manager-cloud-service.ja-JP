@@ -5,25 +5,22 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 14%
+source-wordcount: '1114'
+ht-degree: 12%
 
 ---
 
 # Forms用Edge Delivery Servicesのユニバーサルエディター（EDS Forms ブロック）
 
+ユニバーサルエディターは、シンプルで視覚的かつ直感的なAdobe Edge（WYSIWYG）インターフェイスを提供することで、What You See Is What You Get配信サービス（EDS）のフォーム作成に革命をもたらします。 コンテンツ作成者やフォーム作成者向けに設計されたこのツールは、従来のフォーム作成プロセスの複雑さを排除し、技術に詳しくないユーザーでもアクセスできるようにします。
 
-ユニバーサルエディターは、コンテンツ作成者やフォーム作成者がフォームを簡単に作成、管理、編集できるように設計されています。 Edge Delivery Services（EDS）に焦点を当てたシンプルで視覚的かつ効率的な編集エクスペリエンスを提供します。
+ユニバーサルエディターを使用すると、テキストフィールド、チェックボックス、ラジオボタンなどの事前定義済みコンポーネントを使用して、レスポンシブなインタラクティブなフォームをすばやくデザインできます。 その堅牢な機能セットは、動的なルール、シームレスなデータ統合、高度なパーソナライゼーションをサポートし、すべてのフォームがニーズに合わせて調整されるようにします。
 
-ユニバーサルエディターを使用すると、フォーム要素（テキストフィールド、チェックボックス、ラジオボタンなど）を使用して、What You See Is What You Get（WYSIWYG）インターフェイスでフォームを作成できます。 WYSIWYGのアプローチを使用すると、技術的な専門知識がないユーザーでも、フォームを直感的に簡単に作成できます。
+軽量のクライアントサイドレンダリングを管理する場合でも、ブラウザー間の互換性を確保する場合でも、厳密なアクセシビリティ標準に準拠する場合でも、ユニバーサルエディターはフォームの作成と管理を合理化するソリューションを提供します。
 
-ユニバーサルエディターは、特にEdge Delivery Services（EDS）に焦点を当てています。 ユニバーサルエディターの主な強みは、高度なフォーム作成機能、動的なルール編集、様々なデータソースとのシームレスな統合など、堅牢な機能セットにあります。 ユーザーは、事前定義済みのコンポーネント、カスタマイズ可能なテンプレート、およびフォーム要素の広範なライブラリを使用して、レスポンシブフォームをすばやくデザインできます。
-
-![ ユニバーサルエディター ](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=50%, align-center}
-
-ユニバーサルエディターの機能は、軽量なクライアントサイドレンダリング、クロスブラウザー互換性、アクセシビリティ標準への厳密な準拠を維持するように慎重に設計されています。
+![ ユニバーサルエディター ](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} —>
 
 ## EDS Forms用ユニバーサルエディターの主な機能
 
@@ -36,65 +33,65 @@ ht-degree: 14%
  </p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="WYSIWYG インターフェイス" alt="ルールエディター">
+    <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="ルールエディター">
     <h3>ルールエディター</h3>
     <p>ルールエディターでは、イベント駆動型ルール、即時検証、エラー処理を使用する動的なフォームインタラクションを、軽量のJavaScriptと JSON を使用して作成できます。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="WYSIWYG インターフェイス" alt="レスポンシブモード">
+    <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="レスポンシブモード">
     <h3>レスポンシブモード </h3>
     <p>デバイス（デスクトップ、タブレット、モバイル）間でシームレスに適応するフォームを設計します。 レスポンシブモードを使用して、様々な画面サイズのフォームをプレビューおよびテストします。</p>
   </div>
 </div>
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="WYSIWYG インターフェイス alt=" WYSIWYG Interface"> 
+    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="パーソナライズ機能"> 
     <h3>パーソナライズ機能</h3>
     <p>Personalizationはユーザーデータを使用して、ユーザーの環境設定に基づいてカスタマイズされたフォームエクスペリエンスを提供し、コンテンツ、レイアウト、オプションを動的に調整します。</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="WYSIWYG インターフェイス" alt="ルールエディター">
-    <h3>A/B テスト</h3>
-    <p>A/B テスト（実験）を使用すると、組織は様々なフォームデザイン、レイアウト、機能を試して、最もパフォーマンスの高いバリアントを特定できます。</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="WYSIWYG インターフェイス" alt="Adobe Workfrontとの統合">
-    <h3> タスク管理 </h3>
-    <p>Adobe Workfrontとの統合により、チームはフォームの作成と管理のタスクを管理し、ワークフローを合理化できます。</p>
-  </div>
-</div>
-
-<div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="WYSIWYG インターフェイス" alt="事前入力サービス">
+    <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="事前入力サービス">
     <h3>事前入力サービス</h3>
     <p>事前入力サービスは、様々なソースからの関連するユーザーデータをフォームフィールドに自動的に入力するので、手動での入力を減らし、ユーザーエクスペリエンスを向上させることができます。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="WYSIWYG インターフェイス" alt="データ連結">
-    <h3>データ連結</h3>
-    <p>データバインディングにより、フォームフィールドとバックエンドデータソース間の直接接続が可能になり、構造化された苦情データストレージ用のリアルタイムの更新と高度なデータマッピングがサポートされます。</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="WYSIWYG インターフェイス" alt="国際化/ローカリゼーション">
-    <h3>公開/非公開</h3>
-    <p>フォームの表示を簡単に制御します。数回クリックするだけで、エディターから直接フォームを公開または非公開にすることができます。これにより、可用性、ユーザーアクセス、コンテンツの更新をリアルタイムで動的に管理し、フォームを常に最新の状態に保ち、必要に応じてアクセスできるようにします。</p>
+    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="ルールエディター">
+    <h3>A/B テスト</h3>
+    <p>A/B テスト（実験）を使用すると、組織は様々なフォームデザイン、レイアウト、機能を試して、最もパフォーマンスの高いバリアントを特定できます。</p>
   </div>
 </div>
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="WYSIWYG インターフェイス" alt="分析とトラッキング">
+    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="分析とトラッキング">
     <h3>分析とトラッキング</h3>
     <p>組み込みの分析とトラッキングを使用して、ユーザーの行動、フォームのインタラクション、送信率に関するインサイトを取得し、データ駆動型のフォーム最適化を可能にします。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="WYSIWYG インターフェイス" alt="送信アクション">
+    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="Adobe Workfrontとの統合">
+    <h3> タスク管理 </h3>
+    <p>Adobe Workfrontとの統合により、チームはフォームの作成と管理のタスクを管理し、ワークフローを合理化できます。</p>
+  </div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="データ連結">
+    <h3>データ連結</h3>
+    <p>データバインディングにより、フォームフィールドとバックエンドデータソース間の直接接続が可能になり、構造化された苦情データストレージ用のリアルタイムの更新と高度なデータマッピングがサポートされます。</p>
+  </div>
+</div>
+
+<div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="国際化/ローカリゼーション">
+    <h3>公開/非公開</h3>
+    <p>フォームの表示を簡単に制御します。数回クリックするだけで、エディターから直接フォームを公開または非公開にでき、可用性とコンテンツの更新をリアルタイムで動的に管理できます。</p>
+  </div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="送信アクション">
     <h3>送信アクション</h3>
     <p>送信アクションは、バックエンド統合、条件付き送信ロジック、安全なエンドポイント、プリプロセッサーをサポートし、送信ワークフローを合理化します。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="WYSIWYG インターフェイス" alt="タスク管理">
+    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="タスク管理">
     <h3>カスタムコンポーネント</h3>
     <p>カスタムコンポーネントを使用すると、デベロッパーは特定の組織のユースケースに合わせて独自の要素を作成することで、フォーム機能を拡張できます。</p>
   </div>
@@ -102,17 +99,17 @@ ht-degree: 14%
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="WYSIWYG インターフェイス" alt="エディターのカスタマイズ">
+    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="エディターのカスタマイズ">
     <h3>エディターのカスタマイズ</h3>
     <p>開発者は、UI 拡張機能を通じてエディターの機能を拡張し、特定の組織ニーズに合わせてカスタマイズされたソリューションを実現できます。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="WYSIWYG インターフェイス" alt="Formsの埋め込み">
+    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="Formsの埋め込み">
     <h3>Formsの埋め込み</h3>
     <p>ユニバーサルエディターの組み込み埋め込みコンポーネントを使用してEdge Delivery Services Sites ページにフォームを直接埋め込み、シームレスなユーザーエクスペリエンスを実現します。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="WYSIWYG インターフェイス" alt="カスタムコンポーネント">
+    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="カスタムコンポーネント">
     <h3>「ありがとうございます」設定</h3>
     <p>フォームの送信が成功した後に、ユーザーに表示される確認メッセージまたはページを簡単にカスタマイズできます。
     </p>
@@ -284,8 +281,28 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## オンボーディング
 
-ユニバーサルエディターとルールエディターをお使いの環境で有効にする場合、またはForms ポータル、レコードのドキュメント、Adobe Signとの統合、右から左への言語のサポートなどの追加機能をリクエストする場合は、公式アドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールでお問い合わせください。
+ユニバーサルエディターとルールエディターなどの高度な機能を有効にするには、aem-forms-ea@adobe.comで公式メール ID から電子メールを書いてください。 Adobeチームが、フォーム作成エクスペリエンスの変換を支援します。
 
+## よくある質問（FAQ）
+
+第 **四半期ユニバーサルエディターを使用できるのは誰ですか？**
+ユニバーサルエディターは、次のような幅広いオーディエンス向けに設計されています。
+
+* 視覚に訴えるフォームを作成したいコンテンツ作成者。
+* 高度なカスタマイズ機能と統合機能を必要とする開発者。
+* 拡張性、安全性、コンプライアンス性に優れたフォームソリューションを求める組織。
+
+**Q：ユニバーサルエディターで作成したフォームを既存のシステムに統合できますか？**
+絶対。 ユニバーサルエディターは、バックエンドシステムとのシームレスなデータバインディングをサポートし、リアルタイムの更新と高度なデータマッピングを可能にします。 また、タスク管理用のAdobe Workfrontなどのツールと統合され、データ送信ワークフローの安全なエンドポイントをサポートしています。
+
+**Q：フォームコンポーネントをカスタマイズできますか？**
+はい、ユニバーサルエディターを使用すると、開発者は特定の組織のニーズに合わせてカスタマイズされたカスタムコンポーネントを作成できます。 さらに、UI 拡張機能とカスタムワークフローを使用して、エディターの機能を拡張できます。
+
+**Q：ユニバーサルエディターはアクセシビリティをどのように処理しますか？**
+ユニバーサルエディターは、WCAG （web コンテンツアクセシビリティガイドライン）を含むアクセシビリティ標準に厳密に準拠して設計されています。 これにより、障害のあるユーザーでもフォームを使用できるので、包括的なエクスペリエンスを提供できます。
+
+**Q：フォームからどのような分析を取得できますか？**
+ユニバーサルエディターには、ユーザーのインタラクション、フォーム送信率およびコンバージョン指標を監視する組み込みの分析およびトラッキングツールが含まれています。 これらのインサイトは、フォームを最適化してパフォーマンスを向上させるのに役立ちます。
 
 
 ## フォームの作成を開始

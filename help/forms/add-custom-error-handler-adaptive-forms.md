@@ -7,16 +7,18 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '2323'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
 # AEM Adaptive Formsにカスタムエラーハンドラーを追加する {#error-handlers-in-adaptive-form}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
+>[!NOTE]
+>
+> Adobeでは、（新しいアダプティブFormsの作成 [ または ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)[ AEM SitesページへのアダプティブFormsの追加 [ に、最新の拡張可能なデータキャプチャ ](/help/forms/creating-adaptive-form-core-components.md) コアコンポーネント ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) を使用することをお勧めします。 これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古いアプローチを説明します。
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -222,12 +224,12 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 [ルールエディターのサービスの呼び出し](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=ja#invoke)アクションを使用してカスタムエラーハンドラーを作成および使用する方法を理解するために、「**ペット ID**」および「**ペット名**」という 2 つのフィールドを持つアダプティブフォームを例に、「**ペット ID**」でカスタムエラーハンドラーを使用して、`200 - OK`、`404 - Not Found`、`400 - Bad Request` などの外部サービスを呼び出すように設定された REST エンドポイントが返す様々なエラーをチェックしましょう。
 
 アダプティブフォームにカスタムエラーハンドラーを追加して使用するには、次の手順を実行します。
-1. [エラーハンドラーのカスタム関数の追加](#1-add-the-custom-function-for-the-error-handler)
+1. [エラーハンドラーのカスタム関数を追加](#1-add-the-custom-function-for-the-error-handler)
 2. [ルールエディターを使用してカスタムエラーハンドラーを設定](#use-custom-error-handler)
 
-#### 1. エラーハンドラーのカスタム関数を追加する
+#### 1. エラーハンドラーのカスタム関数を追加
 
-カスタム関数の追加方法を学ぶには、「[ コアコンポーネントに基づくアダプティブフォームでカスタム関数を作成 ](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function)」をクリックします。
+カスタム関数を追加する方法について詳しくは、「[コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function)」をクリックしてください。
 
 <!-- To create a custom error function, perform the following steps:
 
@@ -237,7 +239,7 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 4. Create a folder named `js`.
 5. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder. -->
 
-1. JavaScript ファイルにカスタムエラーハンドラーのコード（例：`function.js`）を追加します。 ファイルには、カスタムエラーハンドラーのコードが含まれています。
+1. JavaScript ファイル（例：`function.js`）に、カスタムエラーハンドラーの以下のコードを追加します。ファイルには、カスタムエラーハンドラーのコードが含まれています。
 次のコードを JavaScript ファイルに追加して、REST サービスエンドポイントから受け取った応答とヘッダーをブラウザーコンソールに表示します。
 
    ```javascript
@@ -258,15 +260,15 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 
    >[!NOTE]
    >
-   > * カスタムエラーハンドラーからデフォルトのエラーハンドラーを呼び出すには、次のサンプルコード行を使用します。`guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
-   > * `.content.xml` ファイルで、`allowProxy` プロパティと `categories` プロパティを追加して、アダプティブフォームでカスタムエラーハンドラークライアントライブラリを使用します。
+   > * カスタムエラーハンドラーからデフォルトのエラーハンドラーを呼び出すには、サンプルコードの次の行が使用されます。`guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+   > * アダプティブフォームでカスタムエラーハンドラークライアントライブラリを使用するには、`.content.xml` ファイルに `allowProxy` プロパティと `categories` プロパティを追加します。
    >
    >   * `allowProxy = [Boolean]true`
    >   * `categories= customfunctionsdemo`
    >       例えば、この場合、 [custom-errorhandler-name] は次のように指定されます。 `customfunctionsdemo`.
 
 
-1. リポジトリ内の変更を追加、コミット、プッシュします。
+1. 変更を追加し、コミットして、リポジトリにプッシュします。
 
 <!--
 
