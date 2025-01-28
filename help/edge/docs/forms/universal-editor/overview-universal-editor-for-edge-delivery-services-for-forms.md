@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ef6f00203241c12fce08cf81495b36f47e64613e
+source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '980'
 ht-degree: 14%
 
 ---
@@ -78,7 +78,7 @@ ht-degree: 14%
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="WYSIWYG インターフェイス" alt="国際化/ローカリゼーション">
     <h3>公開/非公開</h3>
-    <p>フォームの表示を簡単に制御します。数回のクリックで公開または非公開にし、可用性とコンテンツの更新を動的に管理します。</p>
+    <p>フォームの表示を簡単に制御します。数回クリックするだけで、エディターから直接フォームを公開または非公開にすることができます。これにより、可用性、ユーザーアクセス、コンテンツの更新をリアルタイムで動的に管理し、フォームを常に最新の状態に保ち、必要に応じてアクセスできるようにします。</p>
   </div>
 </div>
 
@@ -104,7 +104,7 @@ ht-degree: 14%
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="WYSIWYG インターフェイス" alt="エディターのカスタマイズ">
     <h3>エディターのカスタマイズ</h3>
-    <p>開発者は、UI 拡張機能を通じてユニバーサルエディターの機能を拡張し、特定の組織ニーズに合わせてカスタマイズされたソリューションを実現できます。</p>
+    <p>開発者は、UI 拡張機能を通じてエディターの機能を拡張し、特定の組織ニーズに合わせてカスタマイズされたソリューションを実現できます。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="WYSIWYG インターフェイス" alt="Formsの埋め込み">
