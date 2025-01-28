@@ -4,9 +4,9 @@ description: AEM as a Cloud Serviceでのログのベンダーへの転送につ
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6e91ad839de6094d7f6abd47881dabc6357a80ff
+source-git-commit: 9c258e2906c37ee9b91d2faa78f7dfdaa5956dc2
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '1985'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 * HTTPS
 * Splunk
 
-ログ転送は、Git で設定を宣言し、Cloud Manager設定パイプラインを介して実稼動（サンドボックス以外）プログラムの RDE、開発、ステージ、実稼動環境の各タイプにデプロイすることで、セルフサービス方式で設定されます。
+ログ転送は、Git で設定を宣言することでセルフサービス方式で設定され、Cloud Manager設定パイプラインを介して開発環境、ステージング環境、実稼動環境の各タイプにデプロイできます。 この設定ファイルは、コマンドラインツールを使用して迅速な開発環境（RDE）にデプロイできます。
 
 AEMと Apache/Dispatcherのログを、専用のエグレス IP などのAEMの高度なネットワークインフラストラクチャ経由でルーティングするオプションがあります。
 
