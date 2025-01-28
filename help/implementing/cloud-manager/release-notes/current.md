@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
 workflow-type: tm+mt
 source-wordcount: '841'
-ht-degree: 9%
+ht-degree: 45%
 
 ---
 
@@ -23,45 +23,45 @@ AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2025.1.0 �
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud ServiceのCloud Manager 2025.1.0 のリリース日は 2025 年 1 月 22 日（水）です。
+AEM as a Cloud Service の Cloud Manager 2025.1.0 のリリース日は 2025年1月22日水曜日（PT）です。
 
-次回のリリース予定は 2025年2月13日（PT）です。
+次回のリリース予定は 2025年2月13日木曜日（PT）です。
 
 
 ## 新機能 {#what-is-new}
 
-* **コード品質ルール - SonarQube サーバーのアップグレード：** Cloud Manager コード品質ステップでは、2025 年 2 月 13 日（木）に予定されているCloud Manager 2025.2.0 リリースで SonarQube サーバー 9.9 の使用を開始します。
+* **コード品質ルール - SonarQube Server のアップグレード：** Cloud Manager コード品質ステップは、2025 年2月13日木曜日（PT）に予定されている Cloud Manager 2025.2.0 リリースで SonarQube Server 9.9 を使用して開始されます。
 
-  準備のために、更新された SonarQube ルールが [ コード品質ルール ](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) で利用できるようになりました。
+  これに備え、更新された SonarQube ルールが[コード品質ルール](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)で使用できるようになりました。
 
-  次のパイプラインテキスト変数を設定して、新しいルールを「アーリーチェック」できます。
+  次のパイプラインテキスト変数を設定して、新しいルールを「早期に確認」できます。
 
   `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-  さらに、次の変数を設定して、コード品質ステップが同じコミットに対して実行されるようにします（通常、同じコ `commitId` ットに対してスキップされます）。
+  さらに、コード品質ステップが同じコミットに対して実行されるように、次の変数を設定します（通常、同じ `commitId` の場合はスキップされます）。
 
   `CM_DISABLE_BUILD_REUSE` = `true`
 
-![ 変数設定ページ ](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
+![変数設定ページ](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
 
 >[!NOTE]
 >
->Adobeでは、メインの実稼動パイプラインと同じブランチに設定された新しい CI/CD コード品質パイプラインを作成することをお勧めします。 2025 年 2 月 13 日（PT）リリースより前に *適切な変数を設定し、新しく適用されたルールにブロッカーが導入されないことを検証します*。
+>アドビでは、メインの実稼動パイプラインと同じ分岐に設定された、新しい CI/CD コード品質パイプラインを作成することをお勧めします。2025年2月13日（PT）のリリースの&#x200B;*前*&#x200B;に適切な変数を設定して、新しく適用されるルールによってブロッカーが導入されないことを検証します。
 
-* **Java 17 および Java 21 ビルドサポート：** お客様は、Java 17 または Java 21 を使用してビルドできるようになり、パフォーマンスの強化や新しい言語機能にアクセスできます。 Maven プロジェクトおよびライブラリのバージョンの更新など、設定手順については、[ ビルド環境 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) を参照してください。 ビルドバージョンが Java 17 または Java 21 に設定されている場合、デプロイされるランタイムは Java 21 です。
+* **Java 17 および Java 21 ビルドサポート：**&#x200B;お客様は、Java 17 または Java 21 を使用してビルドし、パフォーマンス強化と新しい言語機能にアクセスできます。Maven プロジェクトとライブラリのバージョンのアップデートを含む設定手順について詳しくは、[ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)を参照してください。ビルドバージョンを Java 17 または Java 21 に設定した際、デプロイされるランタイムは Java 21 です。
 
    * **機能の有効化**
-      * この機能は、2025 年 2 月 13 日木曜日（PT）に、新しい SonarQube バージョンのデフォルトのロールアウトと同時に、すべてのお客様に対して有効になります。
-      * お客様は、上記の 2 つの変数設定を SonarQube 9.9 バージョンのアップグレードに対して設定することで *直ちに* 有効にできます。
+      * この機能は、新しい SonarQube バージョンのデフォルトのロールアウトと同時に、2025年2月13日木曜日（PT）にすべてのお客様に対して有効になります。
+      * お客様は、SonarQube 9.9 バージョンをアップグレードするために、上記の 2 つの変数設定を行って、*直ちに*&#x200B;有効にすることができます。
 
    * **Java 21 ランタイムのデプロイメント**
-      * Java 21 ランタイムは、Java 17 または Java 21 でビルドする場合にデプロイされます。
-      * すべてのCloud Manager環境への段階的なロールアウトは 2 月にサンドボックスと開発環境で始まり、4 月に実稼動環境に拡張されます。
-      * Java 11 を使用してビルドし、Java 21 ランタイム *以前* の導入を希望するお客様は、Adobe（[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) にお問い合わせください。
+      * Java 17 または Java 21 を使用してビルドすると、Java 21 ランタイムがデプロイされます。
+      * すべての Cloud Manager 環境への段階的なロールアウトは、サンドボックスと開発環境向けに 2月に開始され、4月には実稼動環境に拡張されます。
+      * Java 11 を使用してビルドし、Java 21 ランタイムを&#x200B;*早期*&#x200B;に導入するお客様は、アドビ（[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)）にお問い合わせください。
 
 * **「CDN 設定」の名前が「ドメインマッピング」に変更されました：** AEM Cloud Managerのユーザーインターフェイスの改善の一環として、「CDN 設定」ラベルが「ドメインマッピング」に変更されました。 この変更により、用語と機能の連携が向上します。<!-- CMGR-64738 -->
 
-  ![CDN 設定」の名前は、ユーザーインターフェイスで「ドメインマッピング」に変更されました ](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
+  ![ユーザーインターフェースの「CDN 設定」の名前を「ドメインマッピング」へと変更](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
 
 * **ワンクリックでEdge Delivery サイトのプロビジョニング：** Cloud Managerで、適切な権限とライセンスを持つユーザーがワンクリックでサンプルEdge Delivery Servicesサイトを作成できるようになりました。 この合理化されたプロセスにより、次の自動機能が提供されます。
 

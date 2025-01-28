@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: bc5dbee5b5accc747288638fd8e22ed8f2d12fd5
 workflow-type: tm+mt
 source-wordcount: '4049'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -184,7 +184,7 @@ data:
 
 | **プロパティ** | **タイプ** | **説明** |
 |---|---|---|
-| reqProperty | `string` | リクエストプロパティ。<br><br>次のいずれか：<br><ul><li>`path`：クエリパラメーターを除いた URL のフルパスを返します。 （エスケープされていないバリアントには `pathRaw` を使用）</li><li>`url`：クエリパラメーターを含んだ完全な URL を返します。 （エスケープされていないバリアントには `urlRaw` を使用）</li><li>`queryString`：URL のクエリ部分を返します</li><li>`method`：リクエストで使用される HTTP メソッドを返します。</li><li>`tier`：`author`、`preview` または `publish` のいずれか 1 つを返します。</li><li>`domain`：小文字のドメインプロパティ（`Host` ヘッダーで定義）を返します</li><li>`clientIp`：クライアント IP を返します。</li><li>`forwardedDomain`:`X-Forwarded-Host` ヘッダーで定義された最初のドメインを小文字で返します</li><li>`forwardedIp`: ヘッダーの最初の IP`X-Forwarded-For` 返します。</li><li>`clientCountry`：クライアントがいる国を識別する 2 文字のコード（[地域指標記号](https://en.wikipedia.org/wiki/Regional_indicator_symbol)）を返します。</li></ul> |
+| reqProperty | `string` | リクエストプロパティ。<br><br>次のいずれか：<br><ul><li>`path`：URL のフルパスをクエリパラメーターなしで返します。（エスケープされていないバリアントには `pathRaw` を使用）</li><li>`url`：完全な URL をクエリパラメーターを含めて返します。（エスケープされていないバリアントには `urlRaw` を使用）</li><li>`queryString`：URL のクエリ部分を返します</li><li>`method`：リクエストで使用される HTTP メソッドを返します。</li><li>`tier`：`author`、`preview` または `publish` のいずれか 1 つを返します。</li><li>`domain`：小文字のドメインプロパティ（`Host` ヘッダーで定義）を返します</li><li>`clientIp`：クライアント IP を返します。</li><li>`forwardedDomain`：`X-Forwarded-Host` ヘッダーで定義されている最初のドメインを小文字で返します。</li><li>`forwardedIp`：`X-Forwarded-For` ヘッダーの最初の IP を返します。</li><li>`clientCountry`：クライアントがいる国を識別する 2 文字のコード（[地域指標記号](https://en.wikipedia.org/wiki/Regional_indicator_symbol)）を返します。</li></ul> |
 | reqHeader | `string` | 指定された名前のリクエストヘッダーを返します |
 | queryParam | `string` | 指定された名前のクエリパラメーターを返します |
 | reqCookie | `string` | 指定された名前の Cookie を返します |
