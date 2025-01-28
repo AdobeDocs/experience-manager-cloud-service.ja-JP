@@ -5,10 +5,10 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
 workflow-type: tm+mt
 source-wordcount: '455'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -26,24 +26,24 @@ ht-degree: 74%
 
    ![Cloud Manager ランディングページ](assets/log-in.png)
 
-1. *プログラムを作成しましょう* ウィザードの **プログラム名** テキストフィールドに、プログラムの名前を入力します。
+1. *プログラムを作成*&#x200B;ウィザードの&#x200B;**プログラム名**&#x200B;テキストフィールドに、プログラムの名前を入力します。
 
-1. **プログラムの目的** で、「![ 自動選択アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MagicWand_18_N.svg)**サンドボックスの設定**」を選択します。
+1. **プログラムの目的**&#x200B;の下で、![自動選択アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MagicWand_18_N.svg)「**サンドボックスを設定**」を選択します。
 
    ![プログラムタイプの作成](assets/create-sandbox.png)
 
 1. （オプション）ウィザードダイアログボックスの右下隅で、次のいずれかの操作を行います。
 
-   * 画像ファイルを ![ 画像アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg)**プログラム画像を追加** ターゲットにドラッグ&amp;ドロップします。
-   * ![ 画像アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg)**プログラム画像を追加** をクリックし、ファイルブラウザーから画像を選択します。
-   * ![ 削除アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) をクリックして、追加した画像を削除します。
+   * 画像ファイルを ![画像アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **プログラム画像を追加**&#x200B;ターゲットにドラッグ＆ドロップします。
+   * ![画像アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg)「**プログラム画像を追加**」をクリックし、ファイルブラウザーから画像を選択します。
+   * ![削除アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) をクリックして、追加した画像を削除します。
 
 1. 「**続行**」をクリックします。
 
 1. **ソリューションとアドオン**&#x200B;リストボックスで、プログラムに含める 1 つ以上のソリューションを選択します。
 
    * ソリューション名の左側にある山形をクリックすると、選択したソリューションに含める使用可能なオプションのアドオンが表示されます。
-   * **Sites**、**Assets**、**Edge Deliver Services** の各ソリューションは、サンドボックスプログラムを作成する際に、デフォルトで常に選択されます。 選択を解除することはできません。
+   * **Sites**、**Assets**、**Edge Delivery Services** の各ソリューションは、サンドボックスプログラムを作成する際に、デフォルトで常に選択されます。選択を解除することはできません。
 
    ![サンドボックス用のソリューションとアドオンを選択](assets/sandbox-solutions-add-ons.png)
 
@@ -55,7 +55,7 @@ ht-degree: 74%
 
 新しいサンドボックスプログラムの作成が完了したら、プログラムの概要ページを表示して、サンドボックス設定の詳細を確認し、環境にアクセスできます。
 
-1. Cloud Manager ランディングページのサンドボックスプログラムで、作成したサンドボックスプログラムの ![ その他の小さなリストアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+1. Cloud Manager ランディングページのサンドボックスプログラムで、作成したサンドボックスプログラムの ![その他の小さいリストアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
    ![プログラムの概要へのアクセス](assets/program-overview-sandbox.png)
 

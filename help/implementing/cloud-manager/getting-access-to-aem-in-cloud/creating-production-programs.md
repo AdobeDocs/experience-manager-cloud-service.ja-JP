@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: ht
-source-wordcount: '1027'
-ht-degree: 100%
+source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
+workflow-type: tm+mt
+source-wordcount: '1045'
+ht-degree: 95%
 
 ---
 
@@ -33,15 +33,15 @@ ht-degree: 100%
 
 1. *プログラムを作成*&#x200B;ウィザードの&#x200B;**プログラム名**&#x200B;テキストフィールドに、プログラムの名前を入力します。
 
-1. **プログラムの目的**&#x200B;の下で、「**`Set up for production`**」を選択します。
+1. **プログラムの目的** で、「![ 地球アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg)**実稼動用に設定**」を選択します。
 
    ![プログラムの作成ウィザード](assets/create-production-program.png)
 
 1. （オプション）ウィザードダイアログボックスの右下隅で、次のいずれかの操作を行います。
 
-   * 画像ファイルを&#x200B;**プログラム画像を追加**&#x200B;ターゲットにドラッグ＆ドロップします。
-   * 「**プログラム画像を追加**」をクリックし、ファイルブラウザーから画像を選択します。
-   * 追加した画像を削除するには、ごみ箱アイコンをクリックします。
+   * 画像ファイルを ![画像アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **プログラム画像を追加**&#x200B;ターゲットにドラッグ＆ドロップします。
+   * ![画像アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg)「**プログラム画像を追加**」をクリックし、ファイルブラウザーから画像を選択します。
+   * ![削除アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) をクリックして、追加した画像を削除します。
 
 1. 「**続行**」をクリックします。
 
@@ -52,13 +52,13 @@ ht-degree: 100%
    * デジタルエクスペリエンスを最適化する完全に管理された CDN ソリューションの場合は、**Edge Delivery Services** を選択します。詳しくは、[Edge Delivery Services を使用した Cloud Manager プロジェクトの配信について](#edge-overview)を参照してください。
    * 「**[セキュリティの強化を有効にする](#security)**」オプションを選択した場合は、HIPAA 資格が使用可能なソリューションのみを選択できます。
 
-   ![ソリューションの選択](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
+     ![ソリューションの選択](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
 
-1. ソリューション名の左にある山形アイコンをクリックすると、オプションのアドオンが表示されます（**Sites** の下の「**Commerce**」アドオンオプションなど）。
+   * ソリューション名の左側にある ![ 山形記号のサイズ 300 アイコン ](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) をクリックすると、{Sites **の下に** Commerce **** アドオンオプションなど、任意のアドオンが表示されます。
 
    ![アドオンを選択](assets/setup-prod-commerce.png)
 
-1. ソリューションやアドオンを選択してから、「**続行**」をクリックします。
+1. ソリューションとアドオンの選択が完了したら、「**続行**」をクリックします。
 
 1. 「**開始日**」タブで、実稼動プログラムの運用開始予定日を入力します。
 
@@ -69,7 +69,7 @@ ht-degree: 100%
 
 1. 「**作成**」をクリックします。Cloud Manager によってプログラムが作成され、ランディングページに表示され、選択できるようになります。
 
-![Cloud Manager の概要](assets/navigate-cm.png)
+   ![Cloud Manager の概要](assets/navigate-cm.png)
 
 ## その他の実稼動プログラムオプション {#options}
 
