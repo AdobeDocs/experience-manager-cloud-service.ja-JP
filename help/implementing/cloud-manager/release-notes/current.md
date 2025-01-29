@@ -4,10 +4,10 @@ description: AEM as a Cloud Service の Cloud Manager 2025.1.0 のリリース�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 43fa46ad6c424b9622ce00a65aed7f18006ef3ba
+source-git-commit: 17f6c359a0396c3ee68b43d0140d637856f7f502
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -100,7 +100,7 @@ GitLab と Bitbucket のサポートが追加された「独自の Git の導入
 
 * **高度なテスト環境：** 開発と実稼動のギャップを埋めるように設計された専用ソリューション。 この環境は、企業のニーズに合わせてカスタマイズされ、本番レベルの仕様をレプリケートして、正確なユーザー受け入れテスト（UAT）と徹底的なパフォーマンス評価をサポートします。
 
-早期導入プログラムへの参加を希望される場合は、[ このフォームに記入 ](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMABL5CQpkZ6ths76A qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7WInknown%7CTWFpbJEY3JD mc4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3J d&amp;reserved=0) て、`OrgID` ールと共に電子メール（詳細）を送信してください。
+早期導入プログラムへの参加を希望される場合は、[ このフォームに記入して ](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMABL5CQpkZ6ths76A qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7WInknown%7CTWFpbJEY3JD mc4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3J d&amp;reserved=0)`OrgID` と共に [earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com) にメールを送信してください。
 
 
 
