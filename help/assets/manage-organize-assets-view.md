@@ -5,16 +5,16 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 98%
+source-wordcount: '1633'
+ht-degree: 78%
 
 ---
 
 # アセットの管理 {#manage-assets}
 
-| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Assets view] の操作しやすいインターフェイスを使用して、様々なデジタルアセット管理（DAM）タスクを簡単に実行できます。 アセットを追加した後は、アセットの検索、ダウンロード、移動、コピー、名前変更、削除、更新および編集を行うことができます。
@@ -138,6 +138,53 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
+
+
+### 承認ターゲットを設定 {#set-approval-target}
+
+Assets表示を使用すると、アセットの詳細ページの「**Approval Target**」フィールドに指定した値に基づいて、OpenAPI 機能、Content Hub、またはその両方を使用して、承認済みアセットをDynamic Mediaに公開できます。
+
+承認ターゲットを設定する手順は、次のとおりです。
+
+1. アセットを選択し、ツールバーの「**[!UICONTROL 詳細]**」をクリックします。
+
+1. 「**[!UICONTROL 基本]**」タブで、**[!UICONTROL ステータス]**&#x200B;ドロップダウンリストからアセットのステータスを選択します。可能な値は、「承認済み」、「却下」、「ステータスなし」（デフォルト）です。
+
+1. 手順 2 で **承認済み** を選択した場合は、承認ターゲットを選択します。 指定可能な値には、配信およびContent Hubなどがあります。
+
+   * **配信** は、ドロップダウンメニューで選択されたデフォルトのオプションであり、Experience Manager Assetsで有効になっている場合、OpenAPI を使用した [Dynamic Mediaと ](/help/assets/dynamic-media-open-apis-overview.md)4}Content Hub](/help/assets/product-overview.md) の両方にアセットを公開します。[
+
+   * **Content Hub** を選択すると、Content Hubにのみアセットが公開されます。 Content Hubがオプションとして表示されるのは、Experience Manager Assetsで有効になっている場合のみです。
+
+   * ドロップダウンリストからオプションを選択しない場合、AEM as a Cloud Service環境で有効になっているデフォルトのオプションがアセットに自動的に適用されます。
+
+
+   使用可能なオプションについて詳しくは、[ 承認されたアセットのデフォルトの承認ターゲットと公開宛先 ](#default-approval-target-options-publish-destinations) を参照してください。
+
+   >[!NOTE]
+   >
+   >承認ターゲットの設定は、使用制限のある機能です。 サポートチケットを作成することで、有効または無効にすることができます。 OpenAPI が有効になっているDynamic Mediaがある場合は、デフォルトで有効になっています。
+
+   ![ 承認ステータス ](/help/assets/assets/approval-status-delivery.png)
+
+1. 他のアセットプロパティを指定し、「**[!UICONTROL 保存]** をクリックします。
+
+その他の注意点を次に示します。
+
+* デフォルトのメタデータフォームを使用しておらず、「**[!UICONTROL 承認ターゲット]**」フィールドを表示できない場合は、[ メタデータフォームを編集 ](/help/assets/metadata-assets-view.md#metadata-forms) して、使用可能なコンポーネントから **[!UICONTROL 承認対象]** フィールドをメタデータフォームにドラッグし、「**[!UICONTROL 保存]**」をクリックします。
+
+* Assets ビューを使用して承認の対象を `Content Hub` として選択すると、同じ組織に属するユーザーがContent Hubでアセットを使用できるようになります。
+
+#### 承認済みアセットのデフォルトの承認ターゲットと公開先 {#default-approval-target-options-publish-destinations}
+
+次の表に、AEM as a Cloud Service環境で OpenAPI およびContent Hub`Approval Target` 使用した DM が有効かどうかに基づいて、ドロップダウンリストとデフォルトの承認ターゲットを表示するための前提条件を示します。
+
+| OpenAPI のDynamic Media | コンテンツハブ | 承認ターゲット ドロップダウンリストが表示されますか？ | 承認済みアセットのデフォルトの承認ターゲット | Publish先 |
+| --- | --- | --- | --- |---|
+| Enabled | Enabled | あり | 配信 | OpenAPI とContent HubのDynamic Media |
+| 有効になっていません | Enabled | あり | コンテンツハブ | コンテンツハブ |
+| Enabled | 有効になっていません | あり | 配信 | OpenAPI のDynamic Media |
+| 有効になっていません | 有効になっていません | いいえ | 該当なし | 該当なし |
 
 ### アセットの有効期限を設定 {#set-asset-expiration-date}
 
