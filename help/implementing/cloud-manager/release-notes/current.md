@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 43fa46ad6c424b9622ce00a65aed7f18006ef3ba
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 43%
+ht-degree: 93%
 
 ---
 
@@ -59,44 +59,44 @@ AEM as a Cloud Service の Cloud Manager 2025.1.0 のリリース日は 2025年1
       * すべての Cloud Manager 環境への段階的なロールアウトは、サンドボックスと開発環境向けに 2月に開始され、4月には実稼動環境に拡張されます。
       * Java 11 を使用してビルドし、Java 21 ランタイムを&#x200B;*早期*&#x200B;に導入するお客様は、アドビ（[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)）にお問い合わせください。
 
-* **「CDN 設定」の名前が「ドメインマッピング」に変更されました：** AEM Cloud Managerのユーザーインターフェイスの改善の一環として、「CDN 設定」ラベルが「ドメインマッピング」に変更されました。 この変更により、用語と機能の連携が向上します。<!-- CMGR-64738 -->
+* **「CDN 設定」の名前を「ドメインマッピング」へと変更：** AEM Cloud Manager のユーザーインターフェイスの改善の一部として、「CDN 設定」というラベルの名前が「ドメインマッピング」に変更されました。この変更により、用語と機能の整合性が向上します。<!-- CMGR-64738 -->
 
   ![ユーザーインターフェースの「CDN 設定」の名前を「ドメインマッピング」へと変更](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
 
-* **ワンクリックでEdge Delivery サイトのプロビジョニング：** Cloud Managerで、適切な権限とライセンスを持つユーザーがワンクリックでサンプルEdge Delivery Servicesサイトを作成できるようになりました。 この合理化されたプロセスにより、次の自動機能が提供されます。
+* **ワンクリックで Edge Delivery サイトをプロビジョニング：** Cloud Manager では、適切な権限とライセンスを持つユーザーが、シングルクリックでサンプルの Edge Delivery Services サイトを作成できるようになりました。この効率化されたプロセスでは、次の自動化機能が用意されています。
 
-   * **GitHub 統合** – 既存の組織内に GitHub リポジトリを自動的に作成し、Edge Delivery Services用のボイラープレートテンプレートで事前設定します。
-   * **AEM コード同期アプリのインストール** - AEM コード同期アプリケーションをリポジトリにインストールして、シームレスな同期とデプロイメントを確実に行います。
-   * **コンテンツCollaborationの設定** - コンテンツを保存するための専用のGoogle ドライブフォルダーをリンクし、コンテンツ管理用のコラボレーション環境を提供します。
-   * **コンテンツの公開** - プロビジョニングされたサイトのコンテンツをCloud Manager ユーザーインターフェイスから直接公開できるようになり、ワークフローが簡素化され、効率が向上しました。
-   * **拡張Collaboration** – 複数の共同作業者をGoogle Drive コンテンツストレージフォルダーに追加して、チームワークとコンテンツの投稿を促進できます。
+   * **GitHub 統合** - Edge Delivery Services のボイラープレートテンプレートで事前設定された GitHub リポジトリを既存の組織内に自動的に作成します。
+   * **AEM コード同期アプリのインストール** - AEM コード同期アプリケーションをリポジトリにインストールし、シームレスな同期とデプロイメントを確保します。
+   * **コンテンツ共同作業の設定** - コンテンツストレージ用の指定された Google Drive フォルダーをリンクし、コンテンツ管理の共同作業環境を提供します。
+   * **コンテンツの公開** - ユーザーは、プロビジョニングされたサイトのコンテンツを Cloud Manager ユーザーインターフェイスから直接公開できるので、ワークフローが簡素化され、効率が向上します。
+   * **共同作業の強化** - プラットフォームにより、ユーザーは Google Drive のコンテンツストレージフォルダーに複数の共同作業者を追加できるので、チームワークとコンテンツの投稿が容易になります。
 
-  これらの機能強化は、自動化の向上、設定プロセスの簡略化、Edge Delivery Servicesユーザーの共同作業の強化を目的としています。<!-- CMGR-59362 -->
+  これらの機能強化は、自動化の改善、設定プロセスの簡素化、Edge Delivery Services ユーザーの共同作業の強化を目的としています。<!-- CMGR-59362 -->
 
-  ![Edge Delivery サイトのプロビジョニング ](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
+  ![Edge Delivery サイトのプロビジョニング](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
 
-  ![Edge Delivery サイトをプロビジョニング ](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png) ダイアログボックス
+  ![Edge Delivery サイトをプロビジョニングダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
 
-* **Edge Delivery Servicesサイトのサポートの強化：** Cloud Managerでは、最新のEdge Delivery Servicesサイトのオンボーディングをサポートするようになりました。 このアップデートには、CDN と配信スタックの包括的なリファクタリングが含まれており、堅牢性と保守性が向上しています。
+* **Edge Delivery Services サイトのサポートの強化：** Cloud Manager では、最新の Edge Delivery Services サイトのオンボーディングをサポートするようになりました。この更新には、CDN と配信スタックの包括的なリファクタリングが含まれ、堅牢性と保守性が向上します。
 
-* **パイプラインの高度なフィルターオプション：** Cloud Managerには、パイプライン ページに高度なフィルターオプションが追加され、関連するデータにすばやくアクセスできるようになり、デプロイメントの効率が向上しました。 主な機能には、次のようなものがあります。
+* **パイプラインの高度なフィルターオプション：** Cloud Manager では、パイプラインページに高度なフィルタリングオプションが追加され、関連するデータにすばやくアクセスして、デプロイメントの効率を向上させることができるようになりました。主な機能には、次のようなものがあります。
 
-   * **多条件フィルタリング：** パイプライン名、環境、デプロイコードなどのフィルターを使用して、検索結果を絞り込みます。
-   * **効率化されたパイプライン検索：** 特定のパイプラインを簡単に見つけることで、ナビゲーションの迅速化とワークフロー管理の向上を実現します。
+   * **複数条件フィルタリング：**&#x200B;パイプライン名、環境、デプロイコードなどのフィルターを使用して検索結果を絞り込みます。
+   * **パイプライン検索の合理化：**&#x200B;特定のパイプラインを簡単に見つけられるので、ナビゲーションが高速化し、ワークフロー管理が向上します。
 
   これらの機能強化により、パイプラインの管理とデプロイが全体的に効率的になり、使いやすくなります。
 
-  ![ パイプラインフィルター機能 ](/help/implementing/cloud-manager/release-notes/assets/pipeline-filters.png)
+  ![パイプラインフィルター機能](/help/implementing/cloud-manager/release-notes/assets/pipeline-filters.png)
 
-* **Edge Delivery サービスのセルフサービス CDN 設定：** Edge Delivery サービスの新しい導入者は、Cloud Managerを通じて CDN を個別に設定できるようになりました。 この更新により、`.hlx.page/live` から新しい `.aem.page/live` へのサポートが拡張され、ユーザーに対する柔軟性が向上し、設定が合理化されます。
+* **Edge Delivery Service のセルフサービス CDN 設定：** Edge Delivery Service の新しい導入者は、Cloud Manager を通じて CDN を個別に設定できるようになりました。このアップデートにより、`.hlx.page/live` から新しい `.aem.page/live` へとサポートが拡張され、ユーザーに対する柔軟性が向上し、設定が効率化されます。
 
 ## 早期導入プログラム {#early-adoption}
 
 Cloud Manager の早期導入プログラムに参加すると、今後の機能をテストする機会を得ることができます。
 
-* **早期導入プログラムの更新 – Bitbucket と GitLab の PR 検証のサポート：** Cloud Managerは、Bitbucket と GitLab のクラウドバージョンとセルフホストバージョンの両方で、プルリクエスト（PR）検証をサポートするようになりました。 この機能を使用すると、お客様は、PR を結合する前に、Adobeのコード品質しきい値に照らしてコードの変更をテストできます。 この機能強化により、マージ前のコード品質を高めることで、実稼動パイプラインでのコード変更の成功率が大幅に向上し、市場投入までの時間が短縮され、開発ワークフローが合理化されます。
+* **早期導入プログラムの更新 - Bitbucket と GitLab の PR 検証のサポート：** Cloud Manager では、Bitbucket と GitLab のクラウドバージョンと自己ホスト型バージョンの両方でプルリクエスト（PR）検証をサポートするようになりました。この機能により、お客様は PR を結合する前に、アドビのコード品質しきい値に対してコードの変更をテストできます。この機能強化により、結合前により高いコードの品質を確保することで、実稼動パイプラインでのコード変更の成功率が大幅に向上し、市場投入までの時間が短縮され、開発ワークフローが効率化されます。
 
-「Bring Your Own Git」（現在は GitLab と Bitbucket がサポート）の詳細と、早期導入者として登録するには、[Cloud Manager 2024 年 10 月リリースノート ](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket) を参照してください。
+GitLab と Bitbucket のサポートが追加された「独自の Git の導入」と、早期導入者としての新規登録について詳しくは、[Cloud Manager 2024年10月リリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket)を参照してください。
 
 * **高度なテスト環境：** 開発と実稼動のギャップを埋めるように設計された専用ソリューション。 この環境は、企業のニーズに合わせてカスタマイズされ、本番レベルの仕様をレプリケートして、正確なユーザー受け入れテスト（UAT）と徹底的なパフォーマンス評価をサポートします。
 
