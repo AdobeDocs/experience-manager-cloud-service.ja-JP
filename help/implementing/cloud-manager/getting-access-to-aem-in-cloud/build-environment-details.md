@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 7098f8aacf42e84f40b266ecae2c6fe28c84b0d3
 workflow-type: tm+mt
 source-wordcount: '1489'
-ht-degree: 44%
+ht-degree: 82%
 
 ---
 
@@ -25,10 +25,10 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 * Apache Maven 3.9.4 がインストールされています。
    * アドビでは、ユーザーに [HTTP ではなく HTTPS を使用するように Maven リポジトリを更新](#https-maven)することをお勧めします。
 <!-- OLD Removed 1/16/25 * The Java versions installed are Oracle JDK 11.0.22 and Oracle JDK 8u401. -->
-* インストールされる Java バージョンは、Oracle JDK 11.0.22、Oracle JDK 17.0.10 およびOracle JDK 21.0.4 です。
+* インストールされる Java バージョンは、Oracle JDK 11.0.22、Oracle JDK 17.0.10 および Oracle JDK 21.0.4 です。
 
 <!-- OLD Removed 1/16/25 * **IMPORTANT:** By default, the JAVA_HOME environment variable is set to `/usr/lib/jvm/jdk1.8.0_401`, which contains Oracle JDK 8u401. This default should be overridden for AEM Cloud Projects to use JDK 11. See the Setting the Maven JDK Version section for more details. -->
-* **重要：** デフォルトでは、`JAVA_HOME` 環境変数は `/usr/lib/jvm/jdk1.8.0_401` に設定されています。これには、OracleJDK 8u401 が含まれています。 ***AEM Cloud Projects で JDK 21 （推奨）、17 または 11 を使用する場合は、このデフォルトを上書きする必要があります***。 詳しくは、[Maven JDK バージョンの設定](#alternate-maven-jdk-version)の節を参照してください。
+* **重要：**&#x200B;デフォルトでは、`JAVA_HOME` 環境変数は `/usr/lib/jvm/jdk1.8.0_401` に設定されています。これには、Oracle JDK 8u401 が含まれています。***AEM Cloud プロジェクトで JDK 21（推奨）、17、または 11 を使用するには、このデフォルトを上書きする必要があります***。詳しくは、[Maven JDK バージョンの設定](#alternate-maven-jdk-version)の節を参照してください。
 * 必要に応じてインストールされる追加のシステムパッケージが、次のようにいくつかあります。
    * `bzip2`
    * `unzip`
@@ -71,18 +71,18 @@ To do so, create a file named `.cloudmanager/java-version` in the git repository
 
 ### 特定の Java バージョンの使用 {#using-java-support}
 
-Cloud Managerのビルドプロセスでは、デフォルトでOracle 8 JDK を使用してプロジェクトをビルドしますが、AEM Cloud Serviceのお客様は、Maven 実行 JDK バージョンを 21 （推奨）、17 または 11 に設定する必要があります。
+Cloud Manager のビルドプロセスでは、デフォルトで Oracle 8 JDK を使用してプロジェクトを作成しますが、AEM Cloud Service のお客様は Maven 実行 JDK バージョンを 21（推奨）、17、または 11 に設定する必要があります。
 
 #### Maven JDK バージョンの設定 {#alternate-maven-jdk-version}
 
-Maven 実行 JDK を設定するには、パイプラインで使用される Git リポジトリーブランチに `.cloudmanager/java-version` という名前のファイルを作成します。 ファイルを編集して、テキスト、`21` または `17` のみが含まれるようにします。 Cloud Manager は値 `8` も受け入れますが、このバージョンは AEM Cloud Service プロジェクトではサポートされなくなりました。その他の値は無視されます。`21` または `17` を指定した場合は、Oracle Java 21 またはOracle Java 17 が使用されます。
+Maven 実行 JDK を設定するには、パイプラインで使用される Git リポジトリーブランチに `.cloudmanager/java-version` という名前のファイルを作成します。 `21` または `17` というテキストのみが含まれるようにファイルを編集します。Cloud Manager は値 `8` も受け入れますが、このバージョンは AEM Cloud Service プロジェクトではサポートされなくなりました。その他の値は無視されます。`21` または `17` を指定した場合は、Oracle Java 21 またはOracle Java 17 が使用されます。
 
 
-#### Java 21 または Java 17 を使用してビルドへの移行の前提条件 {#prereq-for-building}
+#### Java 21 または Java 17 を使用したビルドへの移行の前提条件 {#prereq-for-building}
 
-Java 21 または Java 17 を使用したビルドに移行するには、まず最新バージョンの SonarQube にアップグレードする必要があります。 詳しくは、[Cloud Manager 2025.1.0 のリリースノート ](/help/implementing/cloud-manager/release-notes/current.md#what-is-new) を参照してください。
+Java 21 または Java 17 を使用したビルドに移行するには、まず最新の SonarQube バージョンにアップグレードする必要があります。詳しくは、[Cloud Manager 2025.1.0 のリリースノート](/help/implementing/cloud-manager/release-notes/current.md#what-is-new)を参照してください。
 
-アプリケーションを新しい Java ビルドバージョンおよびランタイムバージョンに移行する場合は、実稼動環境にデプロイする前に、開発環境とステージ環境で十分にテストします。
+アプリケーションを新しい Java ビルドバージョンとランタイムバージョンに移行する場合は、実稼動環境にデプロイする前に、開発環境とステージ環境で徹底的にテストします。
 
 次のデプロイメント戦略をお勧めします。
 
@@ -90,18 +90,18 @@ Java 21 または Java 17 を使用したビルドに移行するには、まず
 1. Cloud Manager リポジトリにブランチを設定して、Java 21 をビルド時の Java バージョンとして使用し、DEV パイプラインをこのブランチを使用するように設定し、パイプラインを実行します。 検証テストを実行します。
 1. 問題がないようであれば、Java 21 をビルド時の Java バージョンとして使用するようにステージ/実稼動パイプラインを設定し、パイプラインを実行します。
 
-##### 一部の翻訳機能 {#translation-features}
+##### 一部の翻訳機能について {#translation-features}
 
-以下の機能は、Java 21 または Java 17 でビルドすると正しく機能しない場合があり、Adobeでは、2025 年初頭までに解決される予定です。
+Java 21 または Java 17 を使用してビルドすると、次の機能が正しく機能しない可能性があります。アドビでは、2025 年初頭までにこれらの問題を解決する予定です。
 
-* 人間翻訳を使用すると、`XLIFF` （XML Localization Interchange File Format）が失敗する。
-* 新しいバージョンの Java ではロケール・コンストラクタが変更されているため、`I18n` （国際化）で言語ロケールのヘブライ語（`he`）、インドネシア語（`in`）、イディッシュ語（`yi`）が適切に処理されません。
+* `XLIFF`（XML Localization Interchange File Format）は、人による翻訳を使用すると失敗します。
+* 新しい Java バージョンでの ロケールコンストラクタの変更により、`I18n`（国際化）では、言語ロケールのヘブライ語（`he`）、インドネシア語（`in`）、イディッシュ語（`yi`）が適切に処理されません。
 
 #### ランタイム要件 {#runtime-requirements}
 
-Java 21 ランタイムは、Java 21 および Java 17 を使用したビルドに使用され、Java 11 ビルドにも徐々に適用されます（以下のメモを参照）。 Java 21 アップデートを入手するには、環境がAEM リリース 17098 以降である必要があります。 互換性を確保するには、次の調整が必要です。
+Java 21 ランタイムは、Java 21 および Java 17 のビルドに使用され、Java 11 ビルドにも段階的に適用される予定です（以下のメモを参照）。Java 21 アップデートを入手するには、環境がAEM リリース 17098 以降である必要があります。 互換性を確保するには、次の調整が必要です。
 
-ライブラリのアップデートは、古い Java バージョンとの互換性が維持されるので、いつでも適用できます。
+ライブラリの更新は、古い Java バージョンとの互換性が維持されるので、いつでも適用できます。
 
 * **ASM の最小バージョン：**
 新しい JVM ランタイムのサポートを確保するために `org.objectweb.asm` 多くの場合 `org.ow2.asm.*` アーティファクトにバンドルされている Java パッケージの使用状況をバージョン 9.5 以降に更新します。
@@ -114,36 +114,36 @@ Java 21 ランタイムは、Java 21 および Java 17 を使用したビルド�
 AEM Cloud Service SDKは Java 21 と互換性があり、Cloud Manager パイプラインを実行する前に、プロジェクトと Java 21 の互換性を検証するために使用できます。
 
 * **ランタイムパラメーターの編集：**
-Java 21 を使用してAEMをローカルで実行すると、`MaxPermSize` パラメーターが原因で開始スクリプト（`crx-quickstart/bin/start` または `crx-quickstart/bin/start.bat`）が失敗します。 対処方法としては、スクリプトから `-XX:MaxPermSize=256M` を削除するか、環境変数 `CQ_JVM_OPTS` を定義して `-Xmx1024m -Djava.awt.headless=true` に設定します。
+Java 21 を使用して AEM をローカルで実行すると、`MaxPermSize` パラメーターにより起動スクリプト（`crx-quickstart/bin/start` または `crx-quickstart/bin/start.bat`）が失敗します。対処方法としては、スクリプトから `-XX:MaxPermSize=256M` を削除するか、環境変数 `CQ_JVM_OPTS` を定義して `-Xmx1024m -Djava.awt.headless=true` に設定します。
 
   この問題は、AEM Cloud Service SDKのバージョン 19149 以降で解決されています。
 
 >[!IMPORTANT]
 >
->`.cloudmanager/java-version` を `21` または `17` に設定すると、Java 21 ランタイムがデプロイされます。 Java 21 ランタイムは、2025 年 2 月 4 日火曜日（PT）以降、すべての環境（Java 11 でコードが構築されている環境に限らない）に対して段階的にロールアウトされるようにスケジュールされています。 ロールアウトは、サンドボックスと開発環境で始まり、2025 年 4 月にすべての実稼動環境にロールアウトされます。 Java 21 ランタイム *以前* の導入を希望するお客様は、Adobe（[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) までお問い合わせください。
+>`.cloudmanager/java-version` を `21` または `17` に設定すると、Java 21 ランタイムがデプロイされます。Java 21 ランタイムは、2025年2月4日木曜日（PT）から、すべての環境（コードが Java 11 でビルドされている環境だけでなく）に段階的にロールアウトされる予定です。ロールアウトは、サンドボックスと開発環境から開始され、2025年4月にすべての実稼動環境にロールアウトされます。Java 21 ランタイムを&#x200B;*早期に*&#x200B;導入するお客様は、アドビ（[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)）にお問い合わせください。
 
 
 #### ビルド時間の要件 {#build-time-reqs}
 
-Java 21 および Java 17 でプロジェクトを構築するには、次の調整が必要です。 これらは古い Java バージョンと互換性があるので、Java 21 および Java 17 を実行する前でも更新できます。
+Java 21 および Java 17 を使用してプロジェクトをビルドできるようにするには、次の調整が必要です。これらは古い Java バージョンと互換性があるので、Java 21 および Java 17 を実行する前でも更新できます。
 
 AEM Cloud Serviceのお客様は、新しい言語機能を活用するために、できるだけ早く Java 21 でプロジェクトを構築することをお勧めします。
 
 * **`bnd-maven-plugin` の最小バージョン：**
-`bnd-maven-plugin` の使用状況をバージョン 6.4.0 に更新して、新しい JVM ランタイムがサポートされるようにします。
+新しい JVM ランタイムのサポートを確保するには、`bnd-maven-plugin` の使用をバージョン 6.4.0 に更新します。
 
-  バージョン 7 以降は Java 11 以前と互換性がないので、そのバージョンへのアップグレードはお勧めしません。
+  バージョン 7 以降は、Java 11 以下と互換性がないので、そのバージョンへのアップグレードはお勧めしません。
 
 * **`aemanalyser-maven-plugin` の最小バージョン：**
-`aemanalyser-maven-plugin` の使用状況をバージョン 1.6.6 以降に更新して、新しい JVM ランタイムがサポートされるようにします。
+新しい JVM ランタイムのサポートを確保するには、`aemanalyser-maven-plugin` の使用をバージョン 1.6.6 以降に更新します。
 
 * **`maven-bundle-plugin` の最小バージョン：**
-`maven-bundle-plugin` の使用状況をバージョン 5.1.5 以降に更新して、新しい JVM ランタイムがサポートされるようにします。
+新しい JVM ランタイムのサポートを確保するには、`maven-bundle-plugin` の使用をバージョン 5.1.5 以降に更新します。
 
-  バージョン 6 以降は Java 11 以前と互換性がないので、そのバージョンへのアップグレードはお勧めしません。
+  バージョン 6 以降は、Java 11 以下と互換性がないので、そのバージョンへのアップグレードはお勧めしません。
 
 * **`maven-scr-plugin` の依存関係の更新：**
-`maven-scr-plugin` は、Java 21 または Java 17 と直接互換性がありません。 ただし、次の例に示すように、プラグイン設定で ASM 依存関係バージョンを更新することで、記述子ファイルを生成できます。
+`maven-scr-plugin` は、Java 21 または Java 17 と直接互換性がありません。ただし、次の例に示すように、プラグイン設定で ASM 依存関係バージョンを更新して、記述子ファイルを生成できます。
 
 ```XML
 <project>

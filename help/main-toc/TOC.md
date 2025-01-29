@@ -87,7 +87,7 @@ ht-degree: 99%
          + [リリースノート（2020.2.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + AEMaaCS メンテナンスリリースノート {#maintenance}
       + [最新のメンテナンスリリースノート](/help/release-notes/maintenance/latest.md)
-      + 2025 年 {#2025}
+      + 2025年度 {#2025}
          + [メンテナンスリリースノート（2025.1.0）](/help/release-notes/maintenance/2025/2025-1-0.md)
       + 2024年度 {#2024}
          + [メンテナンスリリースノート（2024.11.0）](/help/release-notes/maintenance/2024/2024-11-0.md)
