@@ -4,9 +4,9 @@ description: アセットセレクターを使用して、アプリケーショ�
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1332'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -162,7 +162,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 * ![リスト表示](assets/do-not-localize/list-view.png) [!UICONTROL **リスト表示**]：リスト表示では、スクロール可能なファイルとフォルダーが 1 列に表示されます。
 * ![グリッド表示](assets/do-not-localize/grid-view.png) [!UICONTROL **グリッド表示**]：グリッド表示では、スクロール可能なファイルとフォルダーは、行と列のグリッド形式で表示されます。
 * ![ギャラリー表示](assets/do-not-localize/gallery-view.png) [!UICONTROL **ギャラリー表示**]：ギャラリー表示では、ファイルやフォルダーは、中央に固定された水平リストに表示されます。
-* ![ ウォーターフォール表示 ](assets/do-not-localize/waterfall-view.png)[!UICONTROL **ウォーターフォール** 表示 ] ウォーターフォール表示では、ファイルやフォルダーがBridgeの形式で表示されます。
+* ![ウォーターフォール表示](assets/do-not-localize/waterfall-view.png) [!UICONTROL **ウォーターフォール**&#x200B;表示]：ウォーターフォール表示では、ファイルやフォルダーがブリッジ図形式で表示されます。
 
 **概要の図**
 
