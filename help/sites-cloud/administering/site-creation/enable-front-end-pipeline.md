@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
-workflow-type: ht
-source-wordcount: '544'
-ht-degree: 100%
+source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 87%
 
 ---
 
@@ -66,3 +66,14 @@ AEM では、フロントエンドパイプラインを使用するように既�
 * [サイトパネルを使用したサイトテーマの管理](site-rail.md)
 * [クイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md) - このドキュメントジャーニーでは、フロントエンドパイプラインとクイックサイト作成ツールを使用してサイトを迅速にデプロイするプロセスの包括的な概要を示しています。
 * [CI／CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) - このドキュメントでは、フルスタックパイプラインおよび web 階層設定パイプラインとの関連でフロントエンドパイプラインについて説明しています。
+
+## フロントエンドパイプラインとカスタムドメイン {#custom-domains}
+
+[ 技術的な詳細 ](#technical-details) の節で説明しているように、サイトのフロントエンドパイプライン機能をアクティブ化すると、`/conf/<site-name>/sling:configs` の下に `SiteConfig` ノードと `HtmlPageItemsConfig` ノードが作成されます。
+
+[Cloud Managerのカスタムドメイン機能 ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) とフロントエンドパイプラインを使用するサイトの場合、これらのノードにプロパティを追加する必要があります。
+
+1. `SiteConfig` でサイトの `customFrontendPrefix` プロパティを設定します。
+1. これにより、`HtmlPageItemsConfig` の `prefixPath` 値がカスタムドメインで更新されます。
+
+その後、サイトのページは、更新された URL からテーマアーティファクトを参照します。

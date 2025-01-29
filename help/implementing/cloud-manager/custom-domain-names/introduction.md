@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
-workflow-type: ht
-source-wordcount: '704'
-ht-degree: 100%
+source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
+workflow-type: tm+mt
+source-wordcount: '720'
+ht-degree: 97%
 
 ---
 
@@ -75,6 +75,7 @@ AEMaaCS でカスタムドメイン名を使用する場合は、いくつかの
 * 一度に追加できるドメイン名は 1 つだけです。
 * AEM as a Cloud Service では、`*.example.com` のようなワイルドカードドメインをサポートしていません。
 * カスタムドメイン名を追加する前に、カスタムドメイン名を含んだ有効な SSL 証明書（ワイルドカード証明書が有効）をプログラムにインストールする必要があります。
+* [ フロントエンドパイプライン機能 ](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md#custom-domains) でカスタムドメイン名を使用するには、追加の設定手順が必要です。
 
 ## 今すぐ始める {#get-started}
 
