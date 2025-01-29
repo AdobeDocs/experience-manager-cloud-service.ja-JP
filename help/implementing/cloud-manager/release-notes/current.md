@@ -4,10 +4,10 @@ description: AEM as a Cloud Service の Cloud Manager 2025.1.0 のリリース�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 17f6c359a0396c3ee68b43d0140d637856f7f502
+source-git-commit: 613a5602706d4d0d63fce7a20bf52660d9a9d335
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '923'
+ht-degree: 93%
 
 ---
 
@@ -96,11 +96,11 @@ Cloud Manager の早期導入プログラムに参加すると、今後の機能
 
 * **早期導入プログラムの更新 - Bitbucket と GitLab の PR 検証のサポート：** Cloud Manager では、Bitbucket と GitLab のクラウドバージョンと自己ホスト型バージョンの両方でプルリクエスト（PR）検証をサポートするようになりました。この機能により、お客様は PR を結合する前に、アドビのコード品質しきい値に対してコードの変更をテストできます。この機能強化により、結合前により高いコードの品質を確保することで、実稼動パイプラインでのコード変更の成功率が大幅に向上し、市場投入までの時間が短縮され、開発ワークフローが効率化されます。
 
-GitLab と Bitbucket のサポートが追加された「独自の Git の導入」と、早期導入者としての新規登録について詳しくは、[Cloud Manager 2024年10月リリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket)を参照してください。
+  GitLab と Bitbucket のサポートが追加された「独自の Git の導入」と、早期導入者としての新規登録について詳しくは、[Cloud Manager 2024年10月リリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket)を参照してください。
 
 * **高度なテスト環境：** 開発と実稼動のギャップを埋めるように設計された専用ソリューション。 この環境は、企業のニーズに合わせてカスタマイズされ、本番レベルの仕様をレプリケートして、正確なユーザー受け入れテスト（UAT）と徹底的なパフォーマンス評価をサポートします。
 
-早期導入プログラムへの参加を希望される場合は、[ このフォームに記入して ](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMABL5CQpkZ6ths76A qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7WInknown%7CTWFpbJEY3JD mc4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3J d&amp;reserved=0)`OrgID` と共に [earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com) にメールを送信してください。
+  早期導入プログラムへの参加を希望される場合は、[ このフォームに記入して ](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMABL5CQpkZ6ths76A qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7WInknown%7CTWFpbJEY3JD mc4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3J d&amp;reserved=0)`OrgID` と共に [earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com) にメールを送信してください。
 
 
 
