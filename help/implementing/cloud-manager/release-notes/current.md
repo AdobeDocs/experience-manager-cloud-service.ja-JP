@@ -4,10 +4,10 @@ description: AEM as a Cloud Service の Cloud Manager 2025.1.0 のリリース�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
+source-git-commit: 43fa46ad6c424b9622ce00a65aed7f18006ef3ba
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 45%
+source-wordcount: '923'
+ht-degree: 43%
 
 ---
 
@@ -79,10 +79,6 @@ AEM as a Cloud Service の Cloud Manager 2025.1.0 のリリース日は 2025年1
 
 * **Edge Delivery Servicesサイトのサポートの強化：** Cloud Managerでは、最新のEdge Delivery Servicesサイトのオンボーディングをサポートするようになりました。 このアップデートには、CDN と配信スタックの包括的なリファクタリングが含まれており、堅牢性と保守性が向上しています。
 
-* **早期導入プログラムの更新 – Bitbucket と GitLab の PR 検証のサポート：** Cloud Managerは、Bitbucket と GitLab のクラウドバージョンとセルフホストバージョンの両方で、プルリクエスト（PR）検証をサポートするようになりました。 この機能を使用すると、お客様は、PR を結合する前に、Adobeのコード品質しきい値に照らしてコードの変更をテストできます。 この機能強化により、マージ前のコード品質を高めることで、実稼動パイプラインでのコード変更の成功率が大幅に向上し、市場投入までの時間が短縮され、開発ワークフローが合理化されます。
-
-「Bring Your Own Git」（現在は GitLab と Bitbucket がサポート）の詳細と、早期導入者として登録するには、[Cloud Manager 2024 年 10 月リリースノート ](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket) を参照してください。
-
 * **パイプラインの高度なフィルターオプション：** Cloud Managerには、パイプライン ページに高度なフィルターオプションが追加され、関連するデータにすばやくアクセスできるようになり、デプロイメントの効率が向上しました。 主な機能には、次のようなものがあります。
 
    * **多条件フィルタリング：** パイプライン名、環境、デプロイコードなどのフィルターを使用して、検索結果を絞り込みます。
@@ -94,10 +90,19 @@ AEM as a Cloud Service の Cloud Manager 2025.1.0 のリリース日は 2025年1
 
 * **Edge Delivery サービスのセルフサービス CDN 設定：** Edge Delivery サービスの新しい導入者は、Cloud Managerを通じて CDN を個別に設定できるようになりました。 この更新により、`.hlx.page/live` から新しい `.aem.page/live` へのサポートが拡張され、ユーザーに対する柔軟性が向上し、設定が合理化されます。
 
+## 早期導入プログラム {#early-adoption}
 
-<!-- ## Early adoption program {#early-adoption}
+Cloud Manager の早期導入プログラムに参加すると、今後の機能をテストする機会を得ることができます。
 
-Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
+* **早期導入プログラムの更新 – Bitbucket と GitLab の PR 検証のサポート：** Cloud Managerは、Bitbucket と GitLab のクラウドバージョンとセルフホストバージョンの両方で、プルリクエスト（PR）検証をサポートするようになりました。 この機能を使用すると、お客様は、PR を結合する前に、Adobeのコード品質しきい値に照らしてコードの変更をテストできます。 この機能強化により、マージ前のコード品質を高めることで、実稼動パイプラインでのコード変更の成功率が大幅に向上し、市場投入までの時間が短縮され、開発ワークフローが合理化されます。
+
+「Bring Your Own Git」（現在は GitLab と Bitbucket がサポート）の詳細と、早期導入者として登録するには、[Cloud Manager 2024 年 10 月リリースノート ](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket) を参照してください。
+
+* **高度なテスト環境：** 開発と実稼動のギャップを埋めるように設計された専用ソリューション。 この環境は、企業のニーズに合わせてカスタマイズされ、本番レベルの仕様をレプリケートして、正確なユーザー受け入れテスト（UAT）と徹底的なパフォーマンス評価をサポートします。
+
+早期導入プログラムへの参加を希望される場合は、[ このフォームに記入 ](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMABL5CQpkZ6ths76A qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7WInknown%7CTWFpbJEY3JD mc4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3J d&amp;reserved=0) て、`OrgID` ールと共に電子メール（詳細）を送信してください。
+
+
 
 <!-- ## Bug fixes -->
 
