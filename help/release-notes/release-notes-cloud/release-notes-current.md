@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 75a011ed952e1801f0988942d4501a52d348bb3f
+source-git-commit: 3b7a77fd77226f79510b61f9bb20ad9477b6654e
 workflow-type: tm+mt
-source-wordcount: '1759'
-ht-degree: 47%
+source-wordcount: '1812'
+ht-degree: 44%
 
 ---
 
@@ -59,7 +59,7 @@ AEM コンテンツフラグメントエディターの新しい最新化され�
 
 **コンテンツフラグメントの強化機能**
 
-強化 [ 一意の ID ベースの参照を使用したコンテンツフラグメント参照 ](/help/headless/graphql-api/uuid-reference-upgrade.md) により、アセットやフラグメントを移動した場合でも有効な安定したリンクが確保され、更新や再公開が不要になりました。 現在の制限事項：ページ参照は、一意の ID ではまだサポートされていません。 コンテンツフラグメントでページを参照する場合は、この機能を使用しないでください。
+[ 一意の ID ベースの参照を使用したコンテンツフラグメント参照 ](/help/headless/graphql-api/uuid-reference-upgrade.md) の強化。これにより、フラグメントが別の場所に移動された場合でも、個々のコンテンツフラグメントのGraphQL クエリが安定したままになります。 これは、「ByID」クエリで可能になりました。 パスは変更される可能性があり、「ByPath」クエリが機能しなくなる可能性がありますが、UUID は安定しています。 新しい ID は、任意のクエリやその他の適用可能な API リクエストのプロパティとして返すこともできます。 現在の制限（2025.1）：一意の ID では、ページ参照はまだサポートされていません。 コンテンツフラグメントでページが参照されている場合は、この機能を使用しないでください。 この制限は、次回のAEM as a Cloud Service リリースで解除される予定です。
 
 **コンテンツフラグメント配信用の AEM REST OpenAPI**
 
