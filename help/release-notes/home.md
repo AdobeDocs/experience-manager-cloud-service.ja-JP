@@ -4,7 +4,7 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のリリース
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: e8a8542c9e767113d01491c6d328c34fac8a1dbd
+source-git-commit: 451e8cac2c0203db9b64ee39a615f201c2436933
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 99%
@@ -16,18 +16,18 @@ ht-degree: 99%
 
 | 製品 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| バージョン | 2024.11.0 |
+| バージョン | 2025.1.0 |
 | タイプ | 継続的アップデート |
 | 公開日 | 継続的アップデート |
 
 ## リリースの準備方法 {#how-to-prepare}
 
-[!DNL Adobe Experience Manager] as a Cloud Service の継続的なリリースモデルを使用すると、アプリケーションは継続的に自動アップデートされます。アップデートには、機能リリースとメンテナンスアップデートの 2 種類があります。
+[!DNL Adobe Experience Manager] as a Cloud Service の継続的なリリースモデルを使用すると、アプリケーションは継続的に自動アップデートされます。 アップデートには、機能リリースとメンテナンスアップデートの 2 種類があります。
 
 * [機能リリースは、予測可能な月次の頻度で行われ、新機能と製品の革新に重点を置いています。](/help/release-notes/release-notes-cloud/release-notes-current.md)
-* [メンテナンスリリースは頻繁に行われ、セキュリティアップデート、バグ修正、パフォーマンスの強化に重点を置いています。](/help/release-notes/maintenance/latest.md)これにより、[!DNL Adobe Experience Manager] as a Cloud Service は常に最新で、重要な修正が加えられます。
+* [メンテナンスリリースは頻繁に行われ、セキュリティアップデート、バグ修正、パフォーマンスの強化に重点を置いています。 ](/help/release-notes/maintenance/latest.md)これにより、[!DNL Adobe Experience Manager] as a Cloud Service は常に最新で、重要な修正が加えられます。
 
-イノベーションのスピードに加えて、[!DNL Adobe Experience Manager] as a Cloud Service は、実稼動にリリースされる 1 か月前に今後の機能を予めプレビューできる柔軟性を備えています。独自のカスタム環境で機能をテストし、事前に内部ユーザーのトレーニング／準備を行うことで、今後のリリースが組織に与える影響を評価できます。Fomrs などの AEM アドオンがある場合、[プログラム設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)でソリューションを選択することで、更新することができます。
+イノベーションのスピードに加えて、[!DNL Adobe Experience Manager] as a Cloud Service は、実稼動にリリースされる 1 か月前に今後の機能を予めプレビューできる柔軟性を備えています。 独自のカスタム環境で機能をテストし、事前に内部ユーザーのトレーニング／準備を行うことで、今後のリリースが組織に与える影響を評価できます。 Fomrs などの AEM アドオンがある場合、[プログラム設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)でソリューションを選択することで、更新することができます。
 
 >[!NOTE]
 >

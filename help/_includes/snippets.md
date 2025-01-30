@@ -1,8 +1,8 @@
 ---
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+source-git-commit: 7b4bb513b928bf94b4ada4e1a06a1e254f33aafa
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 96%
+source-wordcount: '1388'
+ht-degree: 97%
 
 ---
 # スニペット {#snippets}
@@ -90,8 +90,8 @@ ht-degree: 96%
      </tr>
    <tr>
     <td>繰り返し可能なパネルフィールドで数学演算を実行 </td>
-    <td>繰り返し可能なパネルフィールドに OOTB 数学関数を適用し、ルールエディターを使用して sum、average などの関数を実行できます。2 つの引数を指定する必要があります。1 つ目はフィールドを含む繰り返し可能なパネルを指定し、2 つ目は対応する繰り返し可能なパネル内のフィールドを指定します。 </td>
-    <td>繰り返し可能なパネルフィールドでの数学演算は、カスタム関数を使用して実行できます。また、ルールエディターを使用して、繰り返し可能なパネルのフィールドに数学関数を直接適用することもできます。
+    <td>繰り返し可能なパネルフィールドに OOTB 数学関数を適用し、ルールエディターを使用して sum、average などの関数を実行できます。 2 つの引数を指定する必要があります。1 つ目はフィールドを含む繰り返し可能なパネルを指定し、2 つ目は対応する繰り返し可能なパネル内のフィールドを指定します。 </td>
+    <td>繰り返し可能なパネルフィールドでの数学演算は、カスタム関数を使用して実行できます。 また、ルールエディターを使用して、繰り返し可能なパネルのフィールドに数学関数を直接適用することもできます。
    </td>
    </tr>
       <tr>
@@ -103,7 +103,7 @@ ht-degree: 96%
    </tr>
    <tr>
     <td>ES10 サポート </td>
-    <td>ES10 はまだサポートされていません。ES5 JavaScript 機能のみをサポートします。 </td>
+    <td>ES10 はまだサポートされていません。 ES5 JavaScript 機能のみをサポートします。 </td>
     <td>カスタム関数内の let 関数や arrow 関数（ES10 サポート）などの最新の JavaScript 機能をサポートします。 
    </td>
    </tr>
@@ -116,7 +116,7 @@ ht-degree: 96%
    </tr>
    <tr>
    <td>パネル間を移動</td>
-   <td> <b>次へボタン</b>コンポーネントと<b>前へボタン</b>コンポーネントを使用して、パネル間を移動できます。コンテナ内に配置されたナビゲーションボタンで、その子要素を操作します</td>
+   <td> <b>次へボタン</b>コンポーネントと<b>前へボタン</b>コンポーネントを使用して、パネル間を移動できます。 コンテナ内に配置されたナビゲーションボタンで、その子要素を操作します</td>
    <td> <b>パネル内のナビゲーション</b>ルールはルールエディターにあり、ユーザーはパネルの子間を移動するためのルールを作成できます。
    </td>
    </tr>
@@ -160,7 +160,7 @@ ht-degree: 96%
 >[!IMPORTANT]
 >
 >フロントエンドパイプラインでは、以下の IP 許可リストを事前に Cloud Manager に追加する必要があります。
->必要に応じて、以下のアドレスのブロックをコピーして ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)IP 許可リストを追加[します。各アドレスはコンマで区切ります。このブロックを **IP 許可リストを追加**&#x200B;ダイアログボックスの「**IP アドレス / CIDR**」フィールドにペーストします。アドレスリストの最初のコンマの直後にカーソルを置き、**Enter** キーを押します。リストを保存します。
+>必要に応じて、以下のアドレスのブロックをコピーして ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)IP 許可リストを追加[します。 各アドレスはコンマで区切ります。 このブロックを **IP 許可リストを追加**&#x200B;ダイアログボックスの「**IP アドレス / CIDR**」フィールドにペーストします。 アドレスリストの最初のコンマの直後にカーソルを置き、**Enter** キーを押します。 リストを保存します。
 >フロントエンドパイプラインの実行が中断されないようにするには、パイプラインを有効にする&#x200B;*前に*、この IP 許可リストを Cloud Manager に確実に追加します。
 >
 >**Cloud Manager の IP 許可リスト**
@@ -197,13 +197,13 @@ ht-degree: 96%
 
 >[!TIP]
 >
->Dynamic Media を初めて使用しますか？Dynamic Media の概要について詳しくは、[Dynamic Media の操作](/help/assets/dynamic-media/dynamic-media.md)を参照してください。
+>Dynamic Media を初めて使用しますか？ Dynamic Media の概要について詳しくは、[Dynamic Media の操作](/help/assets/dynamic-media/dynamic-media.md)を参照してください。
 
 ## また、Dynamic Media も参照してください。 {#see-also-dm}
 
 >[!NOTE]
 >
->* Dynamic Media を初めて使用しますか？Dynamic Media の概要について詳しくは、[Dynamic Media の操作](/help/assets/dynamic-media/dynamic-media.md)を参照してください。
+>* Dynamic Media を初めて使用しますか？ Dynamic Media の概要について詳しくは、[Dynamic Media の操作](/help/assets/dynamic-media/dynamic-media.md)を参照してください。
 >
 >* 最大限に活用するには、[Dynamic Media のベストプラクティス](/help/assets/dynamic-media/dm-best-practices.md)に従ってください。
 >
@@ -222,7 +222,7 @@ ht-degree: 96%
 
 製品の問題に対して追加の調査とトラブルシューティングが必要な場合、および応答 SLT を満たす必要がある場合は、サポートチケットを送信できます。
 
-サポートチケットをログに記録するには、まず Cloud Manager に Edge Delivery サイトを登録する必要があります。Cloud Manager に web サイトを登録することは、すべての AEM as a Cloud Service ユーザーにとって推奨され、[様々なメリットをもたらします](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。サイトをまだ登録していない場合は、[Cloud Manager ドキュメント](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)を参照し、詳細を確認してください。
+サポートチケットをログに記録するには、まず Cloud Manager に Edge Delivery サイトを登録する必要があります。 Cloud Manager に web サイトを登録することは、すべての AEM as a Cloud Service ユーザーにとって推奨され、[様々なメリットをもたらします](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。 サイトをまだ登録していない場合は、[Cloud Manager ドキュメント](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)を参照し、詳細を確認してください。
 
 **サポートチケットをログに記録するには：**
 
@@ -230,14 +230,14 @@ ht-degree: 96%
 1. チケットのタイトルに「**Edge Delivery**」を追加します。
 1. 説明では、問題の説明に加えて、次の詳細を入力します。
 
-   * ライブ web サイトの URL。例：`www.mydomain.com`。
+   * ライブ web サイトの URL。 例：`www.mydomain.com`。
    * オリジン web サイトの URL（`.hlx` URL）。
 
-## SPA Editor よりもユニバーサルエディターが推奨されます {#ue-over-spa}
+## SPA エディターよりユニバーサルエディターを推奨 {#ue-over-spa}
 
 >[!IMPORTANT]
 >
->SPA エディターは引き続きAdobeでサポートされますが、AEMでヘッドレスコンテンツを管理するための推奨されるエディターは次のとおりです。
+>新規プロジェクト用のSPA エディター [ 非推奨 ](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated) になりました。 既存のプロジェクトではAdobeで引き続きサポートされますが、新しいプロジェクトには使用しないでください。 AEMでヘッドレスコンテンツを管理するために推奨されるエディターは、次のとおりです。
 >
->* ヘッドレスコンテンツを視覚的に編集する [ ユニバーサルエディター ](/help/edge/wysiwyg-authoring/authoring.md)。
->* ヘッドレスコンテンツのフォームベースの編集のための [ コンテンツフラグメントエディター ](/help/assets/content-fragments/content-fragments-managing.md)。
+>* ヘッドレスコンテンツを視覚的に編集する[ユニバーサルエディター](/help/edge/wysiwyg-authoring/authoring.md)。
+>* ヘッドレスコンテンツをフォームベースで編集する[コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md)。

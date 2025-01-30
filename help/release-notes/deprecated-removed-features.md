@@ -4,10 +4,10 @@ description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: b0bc2eb4298a88c6dc421390dd9527e181386b5d
-workflow-type: ht
-source-wordcount: '2513'
-ht-degree: 100%
+source-git-commit: 32cc525d5443f455f1579ef027c08796ffc209e7
+workflow-type: tm+mt
+source-wordcount: '2543'
+ht-degree: 99%
 
 ---
 
@@ -35,6 +35,8 @@ ht-degree: 100%
 
 | 機能 | 非推奨（廃止予定）の機能 | 代替手段 |
 | ------------ | ------------------ | ----------- |
+| Sites | [PWA機能 ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | なし |
+| Sites | [SPA Editor](/help/implementing/developing/hybrid/introduction.md) | AEMでヘッドレスコンテンツを管理するために推奨されるエディターは次のとおりです。<br>- [ ユニバーサルエディター ](/help/edge/wysiwyg-authoring/authoring.md) ビジュアルエディター）。<br>- フォームベースの編集用の [ コンテンツフラグメントエディター ](/help/assets/content-fragments/content-fragments-managing.md)。 |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/ja/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **ソーシャルメディアのステータス** のエクスペリエンスフラグメントのプロパティ。 | この機能は間もなく削除される予定です。 |
 | [!DNL Sites] | テンプレートベースのシンプルなコンテンツフラグメント。 | 現在は[モデルベースの構造化コンテンツフラグメント](/help/assets/content-fragments/content-fragments-models.md)。 |

@@ -4,12 +4,13 @@ description: Edge Delivery Services サイトで、AEM でタグを使用する�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
-workflow-type: ht
-source-wordcount: '845'
-ht-degree: 100%
+source-git-commit: 701a7c08d591d9a3ffabfe041745748194c923b2
+workflow-type: tm+mt
+source-wordcount: '974'
+ht-degree: 85%
 
 ---
+
 
 # 分類データの管理 {#managing-taxonomy-data}
 
@@ -77,7 +78,7 @@ AEM の他のページと同様に、分類ページの編集を開始します�
 
 分類のコンテンツは選択したタグと名前空間から自動的に生成されるので、ページエディターに表示されるページは読み取り専用です。これらは、分類のコンテンツを自動的に生成する一種のフィルターとして機能します。したがって、エディターでページを直接編集する必要はありません。
 
-AEM では、基になるタグと名前空間を更新すると、分類ページのコンテンツが自動的に更新されます。ただし、変更をユーザーが使用できるようにするには、変更後に[分類を再公開](#publishing)する必要があります。
+AEM では、基になるタグと名前空間を更新すると、分類ページのコンテンツが自動的に更新されます。ただし、ユーザーがこれらの変更を利用できるようにするには、変更の後に分類を [ 再公開 ](#publishing) する必要があります。
 
 ## 分類の公開に関する paths.json の更新 {#paths-json}
 
@@ -155,6 +156,10 @@ AEM では、基になるタグと名前空間を更新すると、分類ペー�
       "title": "Translate"
     }
   ],
+  "columns": [
+    "tag",
+    "title"
+  ],
   ":type": "sheet"
 }
 ```
@@ -162,3 +167,47 @@ AEM では、基になるタグと名前空間を更新すると、分類ペー�
 この JSON データは、分類を更新して再公開すると、自動的に更新されます。アプリでは、ユーザーのこの情報にプログラムでアクセスできます。
 
 [複数の言語でタグを管理する場合は、](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages)`sheet=` パラメーターの値として ISO2 言語コードを渡すことで、それらの言語にアクセスできます。
+
+## 追加のタグプロパティの公開 {#additional-properties}
+
+デフォルトでは、分類には `tag` と `title` の値が含まれています [ 前の例を参照）。](#accessing) 追加のタグプロパティを公開するように分類を設定できます。 この例では、タグの説明を公開します。
+
+1. サイトコンソールを使用して、作成した分類を選択します。
+1. ツールバーの **プロパティ** アイコンをタップまたはクリックします。
+1. 「**その他のプロパティ**」セクションで、「**追加** をタップまたはクリックしてフィールドを追加します。
+1. 新しいフィールドに、公開する JRC プロパティ名を入力します。 この場合は、タグの説明に `jcr:description` と入力します。
+1. 「**保存して閉じる**」をタップまたはクリックします。
+1. 分類を選択したまま、ツールバーの **クイックPublish** をタップまたはクリックします。
+
+これで [ 分類にアクセスする際に ](#accessing)、タグの説明（または公開するために選択したプロパティ）が JSON に含まれます。
+
+```json
+{
+  "total": 3,
+  "offset": 0,
+  "limit": 3,
+  "data": [
+    {
+      "tag": "default:",
+      "title": "Standard Tags",
+      "jcr:description": "These are the standard tags"
+    },
+    {
+      "tag": "do-not-translate",
+      "title": "Do Not Translate",
+      "jcr:description": "Tag to mark pages that should not be translated"
+    },
+    {
+      "tag": "translate",
+      "title": "Translate",
+      "jcr:description": "Tag to mark pages that should be translated"
+    }
+  ],
+  "columns": [
+    "tag",
+    "title",
+    "jcr:description"
+  ],
+  ":type": "sheet"
+}
+```
