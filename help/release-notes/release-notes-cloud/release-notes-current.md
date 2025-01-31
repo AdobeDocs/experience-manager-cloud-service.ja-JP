@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
+source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1749'
 ht-degree: 42%
 
 ---
@@ -78,7 +78,7 @@ AEMでヘッドレスコンテンツを管理するために推奨されるエ�
 
 #### PWAの機能 {#pwa-features}
 
-AEM Sitesの [ プログレッシブ web アプリ（PWA）機能 ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) は、リリース 2025.1.0 以降の新しいプロジェクトで非推奨（廃止予定）になりました。この機能は、既存のプロジェクトでは引き続きサポートされますが、新規プロジェクトでは使用しないでください
+AEM Sitesの [ プログレッシブ web アプリ（PWA）機能 ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) は、リリース 2025.1.0 以降の新しいプロジェクトでは非推奨（廃止予定）になります。この機能は、既存のプロジェクトでは引き続きサポートされますが、新規プロジェクトでは使用しないでください
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
