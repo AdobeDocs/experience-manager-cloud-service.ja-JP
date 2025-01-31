@@ -5,10 +5,10 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
-workflow-type: ht
-source-wordcount: '696'
-ht-degree: 100%
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
+workflow-type: tm+mt
+source-wordcount: '698'
+ht-degree: 95%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 サンドボックスプログラム環境が休止モードに入るまで、数分かかる場合があります。休止中、データは保持されます。
 
-### サンドボックスプログラム環境を手動で休止状態にする {#using-manual-hibernation}
+### サンドボックスプログラム環境の手動休止 {#using-manual-hibernation}
 
 Developer Console からサンドボックスプログラムを手動で休止解除できます。サンドボックスプログラム用の開発者コンソールへのアクセスは、Cloud Manager のユーザーであれば誰でも利用できます。
 
@@ -60,7 +60,7 @@ Developer Console で、**ポッド**&#x200B;ドロップダウンリストの�
 
 ![休止状態にする環境のリスト](assets/hibernate-1b.png)
 
-## Developer Console からサンドボックスプログラムを手動で休止解除する {#de-hibernation-introduction}
+## サンドボックスプログラムをDeveloper Consoleから手動で休止解除する {#de-hibernation-introduction}
 
 Developer Console からサンドボックスプログラムを手動で休止解除できます。
 
@@ -68,13 +68,13 @@ Developer Console からサンドボックスプログラムを手動で休止�
 >
 >**開発者**&#x200B;の役割を持つユーザーは、サンドボックスプログラム環境の休止状態を解除できます。
 
-**Developer Console からサンドボックスプログラムを手動で休止解除するには：**
+**Developer Consoleからサンドボックスプログラムの休止状態を手動で解除するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、休止解除するプログラムをクリックして、詳細を表示します。
 
-1. **環境**&#x200B;カードで、https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg をクリックし、「**Developer Console**」をクリックします。
+1. **環境**&#x200B;カードで、![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)、「**Developer Console**」の順にクリックします。
 
    * 詳しくは、[Developer Console へのアクセス](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)を参照してください。
 

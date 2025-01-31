@@ -5,9 +5,9 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8f8662360d23926df91e91881e78dadea33504f0
+source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1818'
 ht-degree: 96%
 
 ---
@@ -49,7 +49,7 @@ AEM as a Cloud Service 用の New Relic One APM には、多くの機能があ�
 
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、New Relic One ユーザーを管理するプログラムをクリックします。
 
-1. プログラムの概要ページの&#x200B;**環境**&#x200B;カードの下部にある https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg をクリックし、「**New Relic をアクティベート**」を選択します。
+1. プログラムの概要ページの **環境** カードの下部にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**New Relicをアクティベート**」を選択します。
 
    ![ユーザーを管理](assets/newrelic-activate-sub-account.png)
 
@@ -71,13 +71,13 @@ AEM as a Cloud Service 用の New Relic One APM には、多くの機能があ�
 
 1. New Relic One ユーザーを管理するプログラムをクリックします。
 
-1. プログラムの概要ページの&#x200B;**環境**&#x200B;カードの下部にある https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg をクリックし、「**ユーザーを管理**」を選択します。
+1. プログラムの概要ページの **環境** カードの下部にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**ユーザーを管理**」を選択します。
 
    ![ユーザーを管理](assets/newrelic-manage-users.png)
 
    * また、「**ユーザーを管理**」オプションにアクセスすることもできます。プログラムの&#x200B;**環境**&#x200B;画面の上部にある ![Smock のその他のアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
-1. **New Relic ユーザーの管理** ダイアログボックスで、追加するユーザーの姓名を入力し、「**追加**」ボタンをクリックします。 追加するすべてのユーザーについて、この手順を繰り返します。
+1. **New Relic ユーザーを管理**&#x200B;ダイアログボックスで、追加するユーザーの氏名を入力し、「**追加**」ボタンをクリックします。追加するすべてのユーザーについて、この手順を繰り返します。
 
    ![ユーザーを追加](assets/newrelic-add-users.png)
 
@@ -121,7 +121,7 @@ New Relic から確認メールが届かない場合は、[トラブルシュー
 
 1. New Relic One にアクセスするプログラムをクリックします。
 
-1. プログラムの概要ページの&#x200B;**環境**&#x200B;カードの下部にある https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg をクリックし、「**New Relic を開く**」を選択します。
+1. プログラムの概要ページの **環境** カードの下部にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**New Relicを開く**」を選択します。
 
    ![ユーザーを管理](assets/newrelic-access.png)
 
@@ -194,14 +194,14 @@ AEM as a Cloud Service プログラムの New Relic One 製品に関する詳細
 New Relic One アカウントは、アドビが管理するプライマリアカウントに接続されており、複数のアプリケーションがレポートを作成します。AEM as a Cloud Service 環境ごとに 3 つあります。
 
 * 環境ごとにオーサーサービス用の 1 つのアプリケーション
-* 環境ごとに `Publish` サービス用の 1 つのアプリケーション（ゴールデンPublishを含む）
+* 環境ごとに `Publish` サービス用の 1 つのアプリケーション（ゴールデンパブリッシュを含む）
 * 環境ごとにプレビューサービス用の 1 つのアプリケーション
 
 メモ：
 
 * 各アプリケーションは、1 つのライセンスキーを使用します。
 * AEM as a Cloud Service 環境は、1 つの New Relic One アカウントにのみレポートします。
-* 両方のNew Relic Oneの完全なモニタリング指標およびイベントは、3 か月間保持されます。 &lt;!— CQDOC-22238 - 7 日間から 3 か月間に更新。 >
+* 両方の New Relic One の完全なモニタリング指標およびイベントは、3 か月間保持されます。&lt;!-- CQDOC-22238 - 7 日間から 3 か月間に更新しました。>
 +++
 
 +++**アドビは New Relic Oneからのアラート通知を送信しますか？** {#alerting-new-relic}

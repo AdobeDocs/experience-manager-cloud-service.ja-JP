@@ -5,10 +5,10 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: ht
-source-wordcount: '427'
-ht-degree: 100%
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 84%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 100%
 
 * Assets を使用している既存のプログラムに Sites ソリューションを追加する（その逆も同様）。
 * Sites と Assets の両方を使用している既存のプログラムから Sites または Assets を削除する。
-* 使用されていない 2 つ目のソリューション使用権を既存のプログラムに追加するか、新規のプログラムとして追加する。
+* 未使用のソリューション使用権限を既存のプログラムに追加するか、新しいプログラムを作成する。
 * サンドボックスプログラムを削除する。
 
 ## 権限 {#permissions}
 
-プログラムの編集やサンドボックスプログラムの削除およびライセンスダッシュボードへのアクセスを行うには、**ビジネスオーナー**&#x200B;の役割を持つメンバーである必要があります。
+プログラムの編集、サンドボックスプログラムの削除、ライセンスダッシュボードへのアクセスを行うには、**ビジネスオーナー** の役割が必要です。
 
 ## プログラムの編集 {#editing}
 
@@ -46,7 +46,7 @@ ht-degree: 100%
 
    ![「一般」タブ](assets/edit-program-prod1.png)
 
-1. プログラムの編集に使用できるオプションは、プログラムの作成時のオプションと同じです。
+1. プログラムの編集に使用できるオプションは、プログラム作成のオプションと同じです。
    * 個々のオプションについて詳しくは、[実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)と[サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)を参照してください。
    * [その他のオプション](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options)は組織の使用権限に応じて、実稼動プログラムで使用できる場合があります。
 
@@ -70,7 +70,7 @@ ht-degree: 100%
 
    ![プログラムオプションを削除する](assets/delete-sandbox1.png)
 
-または、Cloud Manager の概要ページからプログラムのカードにある https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg をクリックし、「**プログラムを削除**」を選択することもできます。
+または、Cloud Managerの概要ページでプログラムのカードの ![ その他のアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、**プログラムを削除** を選択することもできます。
 
 ![プログラムカードからサンドボックスを削除](assets/delete-sandbox2.png)
 
