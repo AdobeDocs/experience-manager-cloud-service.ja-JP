@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 32cc525d5443f455f1579ef027c08796ffc209e7
+source-git-commit: d6cbfb2b374aba6ce52a8ac7e1af37d687cc13d9
 workflow-type: tm+mt
-source-wordcount: '6003'
+source-wordcount: '6006'
 ht-degree: 99%
 
 ---
@@ -576,7 +576,8 @@ ht-degree: 99%
       + [Experience League 提供の Dynamic Media ニュースレターアーカイブ](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Dynamic Media をセットアップする](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Dynamic Media の操作](/help/assets/dynamic-media/dynamic-media.md)
-      + [Dynamic Media を構成する](/help/assets/dynamic-media/config-dm.md)
+      + [Dynamic Media テンプレート](/help/assets/dynamic-media/dynamic-media-templates.md)
+      + [Dynamic Media の設定](/help/assets/dynamic-media/config-dm.md)
       + [オプション - Dynamic Media の設定、一般設定](/help/assets/dynamic-media/dm-general-settings.md)
       + [オプション - Dynamic Media の設定、公開設定](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Dynamic Media のトラブルシューティング](/help/assets/dynamic-media/troubleshoot-dm.md)
