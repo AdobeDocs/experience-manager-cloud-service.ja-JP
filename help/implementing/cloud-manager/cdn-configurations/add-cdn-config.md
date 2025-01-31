@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: cd15fd36b8baf8e693ae449031a51fa1febefaee
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 99%
+source-wordcount: '447'
+ht-degree: 91%
 
 ---
 
@@ -31,8 +31,8 @@ ht-degree: 99%
 
    | ユースケース | ステップ |
    | --- | --- |
-   | Cloud Manager の&#x200B;*既存*&#x200B;の Edge Delivery サイトに CDN 設定を追加したいと考えている | a. 左側のサイドメニューの&#x200B;**サービス**&#x200B;で、「**Edge Delivery Sites**」をクリックします。<br>b. Edge Delivery テーブルで、ドメインが関連付けられていない行の末尾にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。<br>c.**CDN を設定** をクリックします。 |
-   | Cloud Manager に CDN 設定を追加したいと考えている | a. 左側のサイドメニューの&#x200B;**サービス**&#x200B;で、「**CDN 設定**」をクリックします。<br>b. CDN 設定ページの右上隅付近にある「**追加**」をクリックします。 |
+   | Cloud Manager の&#x200B;*既存*&#x200B;の Edge Delivery サイトに CDN 設定を追加したいと考えている | 回答：左側のメニューの **サービス** で、![Web ページアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites** をクリックします。<br>b. Edge Delivery テーブルで、ドメインが関連付けられていない行の末尾にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。<br>c. 「**CDN を設定**」をクリックします。 |
+   | Cloud Manager に CDN 設定を追加したいと考えている | a.左側のメニューの **サービス** で、![ ソーシャルネットワークアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg)**ドメインマッピング** をクリックします。<br>b.ドメインマッピングページの右上隅付近にある「**追加**」をクリックします。 |
 
 1. **CDN を設定**&#x200B;ダイアログボックスの&#x200B;**接触チャネル**&#x200B;ドロップダウンリストで、次のいずれかを選択します。
 

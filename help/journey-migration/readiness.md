@@ -4,9 +4,9 @@ description: AEM インストールをクラウドに移行する準備ができ
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1915'
 ht-degree: 99%
 
 ---
@@ -169,7 +169,7 @@ AEM as a Cloud Service で導入された変更を把握したら、既存のイ
 
 レビュー段階で必要になる主なステップを次の図に示します。
 
-![ レビューフェーズで必要となる主な手順 ](/help/journey-migration/assets/planning-phaseimg1.png)
+![レビュー段階で必要になる主なステップ](/help/journey-migration/assets/planning-phaseimg1.png)
 
 次に、これらの各手順の内容を詳しく説明します。
 
@@ -196,7 +196,7 @@ AEM as a Cloud Service で導入された変更を把握したら、既存のイ
 * 特定の AEM インストールの機能セットの詳細を説明するドキュメント
 * AEM カスタム設定およびコードの詳細
 * 実稼動 Dispatcher の設定
-* CDN 設定（存在する場合）
+* ドメインマッピング（CDN 設定）（存在する場合）
 
 **レポートをソーシャル化**
 

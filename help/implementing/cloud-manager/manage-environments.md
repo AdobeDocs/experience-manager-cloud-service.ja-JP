@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '2367'
-ht-degree: 60%
+source-wordcount: '2374'
+ht-degree: 59%
 
 ---
 
@@ -194,9 +194,9 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 
 または、「**環境**」タブからも同じ情報にアクセスできます。
 
-1. **概要**&#x200B;ページで、「**環境**」タブを選択します。
+1. **概要** ページで、![ データアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**環境** をクリックします。
 
-1. 「**環境**」タブの左側のメニューで、クエリを実行する環境を選択します。
+1. **環境** ページの左側のメニューで、クエリする環境を選択します。
 
 1. 環境を選択した後：
 
@@ -306,7 +306,7 @@ Adobeは、クラウドネイティブなサービスとして、実稼動プロ
 
      ![ローカルログイン](assets/environ-login-locally.png)
 
-   * 左側のパネルから、「**環境**」をクリックします。 **環境** ページで、「詳細」アイコン ![ をクリックし ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 「**ローカルログイン**」をクリックします。
+   * 左側のパネルから、![ データアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**環境** をクリックします。 **環境** ページで、「詳細」アイコン ![ をクリックし ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 「**ローカルログイン**」をクリックします。
 
      ![「環境」タブからのローカルログイン](assets/environ-login-locally-2.png)
 
@@ -322,7 +322,7 @@ Cloud Manager では、Sites プログラムのパブリッシュサービスと
 
 Cloud Managerでは、Sites プログラムのオーサーサービス、パブリッシュサービスおよびプレビューサービスで IP 許可リストがサポートされています。
 
-IP許可リストを管理するには、プログラムの **概要** ページの **環境** タブに移動します。 個々の環境をクリックすると、その詳細を管理できます。
+IP許可リストを管理するには、プログラムの ![ 概要 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) ページの **** データアイコン **環境** ページに移動します。 個々の環境をクリックすると、その詳細を管理できます。
 
 ### IP 許可リストの適用 {#apply-ip-allow-list}
 

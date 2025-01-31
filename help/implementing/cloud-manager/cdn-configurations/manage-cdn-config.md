@@ -1,22 +1,22 @@
 ---
-title: CDN 設定の管理
+title: ドメインマッピングの管理
 description: Cloud Manager を使用して、Edge Delivery サイトまたは Cloud Manager 環境の CDN 設定を編集、更新、または削除する方法について説明します。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: ea478d73307c3b57b0a12e35b247bb1c46b33595
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 98%
+source-wordcount: '783'
+ht-degree: 68%
 
 ---
 
-# CDN 設定の管理 {#manage-cdn-configurations}
+# ドメインマッピングの管理 {#manage-cdn-configurations}
 
 Cloud Manager を使用して、Edge Delivery サイトまたは Cloud Manager 環境の CDN 設定を編集または削除する方法について説明します。
 
-## CDN 設定ページからの CDN 設定の編集 {#edit-cdn}
+## ドメインマッピングページからの CDN 設定の編集 {#edit-cdn}
 
 Adobe Cloud Manager では、いくつかの理由により、環境層（パブリッシュまたはプレビュー）や SSL 証明書を含む CDN（コンテンツ配信ネットワーク）設定を編集する必要がある場合があります。
 
@@ -28,11 +28,11 @@ Adobe Cloud Manager では、いくつかの理由により、環境層（パブ
 
 このタスクを完了するには、ユーザーが&#x200B;**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持つメンバーである必要があります。
 
-**CDN 設定ページから CDN 設定を編集するには：**
+**ドメインマッピングページから CDN 設定を編集するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
-1. 左側のサイドメニューの&#x200B;**サービス**&#x200B;で、![ソーシャルネットワークアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg)「**CDN 設定**」をクリックします。
-1. **CDN 設定**&#x200B;テーブルで、CDN 設定を更新する行の末尾にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+1. 左側のメニューの **サービス** で、![ ソーシャルネットワークアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg)**ドメインマッピング** をクリックします。
+1. **ドメインマッピング** テーブルで、更新する CDN 設定を持つ行の最後にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
 1. ドロップダウンメニューで、「**編集**」をクリックします。
 
@@ -42,22 +42,22 @@ Adobe Cloud Manager では、いくつかの理由により、環境層（パブ
 
 1. 「**更新**」をクリックします。
 
-   編集した CDN のステータスは、**CDN 設定**&#x200B;テーブルで更新され、行った変更が反映されます。
+   編集した CDN のステータスが「**ドメインマッピング**」テーブルで更新され、変更が反映されます。
 
 
 ## 環境ページからの CDN 設定の編集
 
-**環境**&#x200B;ページから CDN 設定を編集する手順は、[CDN 設定ページから CDN 設定を編集](#edit-cdn)する場合とほとんど同じですが、エントリポイントが異なります。
+**環境** ページから CDN 設定を編集する手順は、[ ドメインマッピングページから CDN 設定を編集する ](#edit-cdn) 場合とほぼ同じですが、エントリポイントが異なります。
 
 **環境ページから CDN 設定を編集するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. 左側のサイドメニューで、「**環境**」をクリックします。
+1. 左側のメニューで、![ データアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**環境** をクリックします。
 
 1. **環境**&#x200B;ページで、対象となる環境を選択します。
 
-1. 環境の詳細ページの CDN 設定グループで、編集する CDN 設定に対応する ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+1. 環境の詳細ページのドメインマッピングのグループで、編集する CDN 設定に対応する ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
 1. ポップアップメニューで、「**編集**」をクリックします。
 
@@ -83,9 +83,9 @@ Cloud Manager でアドビが管理する CDN または顧客が管理する CDN
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. 左側のメニューの **サービス** で、「**CDN 設定**」をクリックします。
+1. 左側のメニューの **サービス** で、![ ソーシャルネットワークアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg)**ドメインマッピング** をクリックします。
 
-1. CDN 設定テーブルで、削除する CDN に対応する行の末尾にある![その他のアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックし、「**削除**」をクリックします。
+1. ドメインマッピング テーブルで、削除する CDN に対応する行の最後にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、**削除** をクリックします。
 
 1. **CDN 設定を削除**&#x200B;ダイアログボックスで、「**削除**」をクリックします。
 
@@ -94,17 +94,17 @@ Cloud Manager でアドビが管理する CDN または顧客が管理する CDN
 
 ## 環境ページからの CDN 設定の削除
 
-**環境**&#x200B;ページから CDN 設定を削除する手順は、[CDN 設定ページから CDN 設定を削除](#edit-cdn)する場合とほとんど同じですが、エントリポイントが異なります。
+**環境** ページから CDN 設定を削除する手順は、[ ドメインマッピングページから CDN 設定を削除する ](#edit-cdn) 場合とほぼ同じですが、エントリポイントが異なります。
 
 **環境ページから CDN 設定を削除するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. 左側のサイドメニューで、「**環境**」をクリックします。
+1. 左側のメニューで、![ データアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**環境** をクリックします。
 
 1. **環境**&#x200B;ページで、対象となる環境を選択します。
 
-1. 環境の詳細ページの **CDN 設定**&#x200B;グループで、削除する CDN 設定に対応する ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**削除**」をクリックします。
+1. 環境の詳細ページの **ドメインマッピング** のグループ化で、削除する CDN 設定に対応する ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、**削除** をクリックします。
 
 1. **CDN 設定を削除**&#x200B;ダイアログボックスで、「**削除**」をクリックします。
 
