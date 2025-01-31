@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3b7a77fd77226f79510b61f9bb20ad9477b6654e
+source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
 workflow-type: tm+mt
-source-wordcount: '1812'
-ht-degree: 44%
+source-wordcount: '1750'
+ht-degree: 42%
 
 ---
 
@@ -150,12 +150,6 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 #### クラウドストレージのサポートの強化：Azure Blob Storage への直接PDFアップロード
 
 AEM Forms Document Generation API では、生成されたPDFドキュメントの Azure Blob Storage への直接アップロードをサポートするようになりました。 この機能強化により、ストレージと取得が合理化され、効率が向上し、クラウドワークフローとの統合が促進されます。
-
-* **[ファイル添付の Base64 エンコード文字列のサポート](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**：コアコンポーネントに基づくアダプティブフォームのファイル添付コンポーネントに、添付ファイルを Base64 エンコード文字列として送信するオプションが含まれるようになりました。
-
->[!IMPORTANT]
->
-> Forms のイノベーションの早期アクセスプログラムへの参加に興味がありますか？ 興味のある機能のリストを添えて、公式アドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールを送信してください。## CIF アドオン {#cloud-services-cif}
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 

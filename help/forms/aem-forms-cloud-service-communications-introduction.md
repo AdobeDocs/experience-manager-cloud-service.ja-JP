@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
+source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
 workflow-type: tm+mt
-source-wordcount: '2374'
-ht-degree: 100%
+source-wordcount: '2435'
+ht-degree: 98%
 
 ---
 
@@ -62,9 +62,16 @@ A credit card statement can be created using Communications APIs. This sample st
 ![PDF ドキュメントの作成](assets/outPutPDF_popup.png)
 図：PDF ドキュメントを作成するための一般的なワークフロー
 
+ドキュメント生成 API は、生成されたPDFドキュメントを返します。 また、オプションで、生成されたPDFを Azure Blob Storage にアップロードすることもできます。
+
+<span class="preview"> Document Generation API を使用して生成されたPDFを Azure Blob Storage にアップロードする機能は、[ 早期導入プログラム ](/help/forms/early-access-ea-features.md) の下にあります。 早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
+
+
 ### PostScript（PS）、Printer Command Language（PCL）、Zebra Printing Language（ZPL）ドキュメントの作成 {#create-PS-PCL-ZPL-documents}
 
 ドキュメント生成 API を使用して、XDP フォームデザインまたは PDF ドキュメントに基づく PostScript（PS）、Printer Command Language（PCL）および Zebra Printing Language（ZPL）のドキュメントを作成できます。これらの API は、フォームデザインとフォームデータを結合してドキュメントを生成します。ドキュメントをファイルに保存し、カスタムプロセスを開発してファイルをプリンターに送信することができます。
+
+
 
 <!-- ### Processing batch data to create multiple documents
 
