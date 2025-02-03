@@ -6,9 +6,9 @@ role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
 source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '625'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -69,11 +69,11 @@ AEM では、フロントエンドパイプラインを使用するように既�
 
 ## フロントエンドパイプラインとカスタムドメイン {#custom-domains}
 
-[ 技術的な詳細 ](#technical-details) の節で説明しているように、サイトのフロントエンドパイプライン機能をアクティブ化すると、`/conf/<site-name>/sling:configs` の下に `SiteConfig` ノードと `HtmlPageItemsConfig` ノードが作成されます。
+[技術的詳細](#technical-details)の節に従って、サイトのフロントエンドパイプライン機能をアクティブ化すると、`/conf/<site-name>/sling:configs` の下に `SiteConfig` ノードと `HtmlPageItemsConfig` ノードが作成されます。
 
-[Cloud Managerのカスタムドメイン機能 ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) とフロントエンドパイプラインを使用するサイトの場合、これらのノードにプロパティを追加する必要があります。
+フロントエンドパイプラインと共にサイトに [Cloud Manager のカスタムドメイン機能](/help/implementing/cloud-manager/custom-domain-names/introduction.md)を使用する場合は、これらのノードに追加のプロパティを追加する必要があります。
 
-1. `SiteConfig` でサイトの `customFrontendPrefix` プロパティを設定します。
+1. サイトの `SiteConfig` に `customFrontendPrefix` プロパティを設定します。
 1. これにより、`HtmlPageItemsConfig` の `prefixPath` 値がカスタムドメインで更新されます。
 
 その後、サイトのページは、更新された URL からテーマアーティファクトを参照します。

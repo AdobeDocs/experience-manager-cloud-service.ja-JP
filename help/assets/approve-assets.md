@@ -4,9 +4,9 @@ description: ' [!DNL Experience Manager] でアセットを承認する方法に
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
 source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1115'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -37,17 +37,17 @@ AEM Assets as a Cloud Service へのアクセス権と、アセットの&#x200B;
 1. 該当するメタデータスキーマを選択し、「**[!UICONTROL 編集]**」をクリックします。<br>**[!UICONTROL メタデータスキーマフォームエディター]**&#x200B;が開き、「**[!UICONTROL 基本]**」タブがハイライト表示されます。
 1. 下にスクロールして、「**[!UICONTROL レビューステータス]**」をクリックします。
 1. 右側のサイドパネルにある「**[!UICONTROL ルール]**」タブをクリックします。
-1. 「編集を無効にする **[!UICONTROL のチェックを外]** ます。
+1. 「**[!UICONTROL 編集を無効にする]**」をオフにします。
 「**[!UICONTROL レビューステータス]**」フィールドのマッピング先のプロパティを表示する必要がある場合は、「**[!UICONTROL 設定]**」タブに移動し、「**[!UICONTROL プロパティにマッピング]**」フィールドで `./jcr:content/metadata/dam:status` 値を表示します。
-1. **[!UICONTROL ドロップダウン]** フィールドを、右側の **[!UICONTROL フォームを作成]** セクションからフォームの「メタデータ」セクションにドラッグ&amp;ドロップします。
+1. 右側の「**[!UICONTROL フォームを作成]**」セクションから「**[!UICONTROL ドロップダウン]**」フィールドをフォームの「メタデータ」セクションにドラッグ＆ドロップします。
 1. 新しく追加されたフィールドをクリックし、**[!UICONTROL 設定]**&#x200B;パネルで次の更新を行います。
-   1. **[!UICONTROL フィールドラベル]** を _承認ターゲット_ に変更します。
+   1. **[!UICONTROL フィールドラベル]**&#x200B;を「_承認ターゲット_」に変更します。
    1. 「**[!UICONTROL プロパティにマッピング]**」を _./jcr:content/metadata/dam:activationTarget_ に更新します。
-   1. `contenthub` と `delivery` をオプション値として選択肢を追加します。
+   1. オプション値として `contenthub` と `delivery` の選択肢を追加します。
 
    >[!NOTE]
    >
-   Assets ビューを使用して承認のターゲットをContent Hubとして選択すると、同じ組織に属するユーザーがContent Hubでアセットを使用できるようになります。 承認ターゲットを配信として選択した場合、すべてのユーザーがアセットを使用できます。
+   アセットビューを使用して承認ターゲットをコンテンツハブとして選択すると、アセットは同じ組織に属するユーザーがコンテンツハブで使用できるようになります。承認ターゲットを配信として選択すると、アセットはすべてのユーザーが使用できるようになります。
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -85,15 +85,15 @@ AEM Assets as a Cloud Service へのアクセス権と、アセットの&#x200B;
    1. **[!UICONTROL マッピング先のプロパティ]**&#x200B;を _.jcr:content/metadata/dam:status_ に更新します。
    1. デフォルト値を「_承認済み_」に変更します。
 
-1. **[!UICONTROL ドロップダウン]** フィールドを、右側の **[!UICONTROL フォームを作成]** セクションからフォームの「メタデータ」セクションにドラッグ&amp;ドロップします。
+1. 右側の「**[!UICONTROL フォームを作成]**」セクションから「**[!UICONTROL ドロップダウン]**」フィールドをフォームの「メタデータ」セクションにドラッグ＆ドロップします。
 1. 新しく追加されたフィールドをクリックし、**[!UICONTROL 設定]**&#x200B;パネルで次の更新を行います。
-   1. **[!UICONTROL フィールドラベル]** を _承認ターゲット_ に変更します。
+   1. **[!UICONTROL フィールドラベル]**&#x200B;を「_承認ターゲット_」に変更します。
    1. 「**[!UICONTROL プロパティにマッピング]**」を _./jcr:content/metadata/dam:activationTarget_ に更新します。
-   1. `contenthub` と `delivery` をオプション値として選択肢を追加します。
+   1. オプション値として `contenthub` と `delivery` の選択肢を追加します。
 
    >[!NOTE]
    >
-   Assets ビューを使用して承認のターゲットをContent Hubとして選択すると、同じ組織に属するユーザーがContent Hubでアセットを使用できるようになります。 承認ターゲットを配信として選択した場合、すべてのユーザーがアセットを使用できます。
+   アセットビューを使用して承認ターゲットをコンテンツハブとして選択すると、アセットは同じ組織に属するユーザーがコンテンツハブで使用できるようになります。承認ターゲットを配信として選択すると、アセットはすべてのユーザーが使用できるようになります。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 1. **[!UICONTROL メタデータプロファイル]**&#x200B;ページで、新しく作成したメタデータプロファイルを選択します。
 1. 上部のアクションバーから「**[!UICONTROL フォルダーにメタ―データプロファイルを適用]**」をクリックします。
@@ -112,18 +112,18 @@ AEM Assets as a Cloud Service へのアクセス権と、アセットの&#x200B;
 
 1. 右側のパネルの「[!UICONTROL プロパティ]」セクションにある「**[!UICONTROL ステータス]**」フィールドで「**[!UICONTROL 承認済み]**」を選択します。
 
-   ステータスを「`Approved`」として選択し、Experience Manager Assetsで [OpenAPI 機能を持つDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) または [Content Hub](/help/assets/product-overview.md)、あるいはその両方が有効になっている場合、「**[!UICONTROL Approval Target]**」フィールドで使用できる `Delivery` および `Content Hub` オプションを確認できます。
+   ステータスを `Approved` として選択し、Experience Manager Assets に対して [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) や[コンテンツハブ](/help/assets/product-overview.md)、または両方が有効になっている場合は、「**[!UICONTROL 承認ターゲット]**」フィールドで使用できる「`Delivery`」および「`Content Hub`」オプションを表示できます。
 
-   * 「**[!UICONTROL 配信]**」を選択すると、OpenAPI 機能を備えたDynamic MediaとContent Hubの両方でアセットを使用できるようになります。 Content Hubを有効にしていない場合、このオプションを選択すると、OpenAPI 機能のみでDynamic Mediaがアセットを使用できるようになります。
-   * 「**[!UICONTROL Content Hub]**」を選択して、Content Hubでアセットを使用できるようにします。
+   * 「**[!UICONTROL 配信]**」を選択すると、アセットが OpenAPI 機能を備えた Dynamic Media とコンテンツハブの両方で使用できるようになります。コンテンツハブが有効になっていない場合、このオプションを選択すると、アセットは OpenAPI 機能を備えた Dynamic Media でのみ使用できるようになります。
+   * アセットをコンテンツハブで使用できるようにするには、「**[!UICONTROL コンテンツハブ]**」を選択します。
 
-   ![ 承認ステータス ](/help/assets/assets/approval-status-delivery.png)
+   ![承認ステータス](/help/assets/assets/approval-status-delivery.png)
 
-   デフォルトのメタデータフォームを使用しておらず、「**[!UICONTROL 承認ターゲット]**」フィールドを表示できない場合は、[ メタデータフォームを編集 ](/help/assets/metadata-assets-view.md#metadata-forms) して、使用可能なコンポーネントから **[!UICONTROL 承認対象]** フィールドをメタデータフォームにドラッグし、「**[!UICONTROL 保存]**」をクリックします。
+   デフォルトのメタデータフォームを使用しておらず、「**[!UICONTROL 承認ターゲット]**」フィールドを表示できない場合は、[メタデータフォームを編集](/help/assets/metadata-assets-view.md#metadata-forms)して、「**[!UICONTROL 承認対象]**」フィールドを使用できるコンポーネントからメタデータフォームにドラッグし、「**[!UICONTROL 保存]**」をクリックします。
 
    >[!NOTE]
    >
-   組織内でAssets ビューを使用して承認の対象を `Content Hub` として選択した場合、同じ組織に属するユーザーがContent Hubでアセットを使用できるようになります。
+   組織内でアセットビューを使用して承認ターゲットを `Content Hub` として選択すると、アセットは同じ組織に属するユーザーがコンテンツハブで使用できるようになります。
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 

@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '740'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Cloud Manager に外部リポジトリを追加する方法について説明し
 
 >[!NOTE]
 >
->この機能は、早期導入プログラムでのみ利用できます。 詳細および早期導入者としてサインアップするには、[ 独自の Git の取り込み – GitLab と Bitbucket のサポートを追加 ](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md#gitlab-bitbucket) を参照してください。
+>この機能は、早期導入プログラムを通じてのみ使用できます。詳細と早期導入者としての新規登録について詳しくは、[独自の Git の導入 - GitLab と Bitbucket をサポートするようになりました](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md#gitlab-bitbucket)を参照してください。
 
 ## 外部リポジトリの設定
 

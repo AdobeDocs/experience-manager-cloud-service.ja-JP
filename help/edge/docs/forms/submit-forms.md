@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
 source-git-commit: 552779d9d1cee2ae9f233cabc2405eb6416c41bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '873'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 [フォームを作成してプレビュー](/help/edge/docs/forms/create-forms.md)したら、対応するスプレッドシートでデータの受信を開始できるようにします。次の操作を実行できます。
 
-* [ スプレッドシートを手動で有効にしてデータを受け入れる ](#manually-enable-the-spreadsheet-to-accept-data)
+* [スプレッドシートでデータを受け入れるように手動で有効にする](#manually-enable-the-spreadsheet-to-accept-data)
 * [スプレッドシートでデータを受け入れるように Admin API を使用して有効にする](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
 
 ![ドキュメントベースのオーサリングエコシステム](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
@@ -154,7 +154,7 @@ ht-degree: 97%
 
    これで、フォームでデータを受け入れるように有効にしました。また、スプレッドシートに次の変更が見られることもわかります。
 
-## データの受け入れを有効にすると、シートが自動的に変更されます。
+## データを受け入れるように有効になると、シートが自動的に変更される。
 
 データを受信するようにシートを設定すると、スプレッドシートに次の変更が見られます。
 
