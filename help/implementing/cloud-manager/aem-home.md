@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Manager起動パッド
+title: Adobe Experience Manager Launchpad （早期導入）
 description: Adobe Experience Manager起動パッドページについて説明します。
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -7,9 +7,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 07fd05fe47d0d2ba13f6289cd6607d97d19c1deb
+source-git-commit: 8a2ec46ab1fe27e860d223d3ed1f691324660f83
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '391'
 ht-degree: 7%
 
 ---
