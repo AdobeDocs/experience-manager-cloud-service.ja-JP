@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
 source-wordcount: '1047'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 93%
 
 1. *プログラムを作成*&#x200B;ウィザードの&#x200B;**プログラム名**&#x200B;テキストフィールドに、プログラムの名前を入力します。
 
-1. **プログラムの目的** で、「![ 地球アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg)**実稼動用に設定**」を選択します。
+1. **プログラムの目的**&#x200B;の下で、![地球のアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg)「**実稼動用に設定**」を選択します。
 
    ![プログラムの作成ウィザード](assets/create-production-program.png)
 
@@ -54,7 +54,7 @@ ht-degree: 93%
 
      ![ソリューションの選択](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
 
-   * ソリューション名の左側にある ![ 山形記号のサイズ 300 アイコン ](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) をクリックすると、{Sites **の下に** Commerce **** アドオンオプションなど、任意のアドオンが表示されます。
+   * ソリューション名の左にある ![山形サイズ 300 アイコン](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) をクリックすると、オプションのアドオンが表示されます（**Sites** の下の「**Commerce**」アドオンオプションなど）。
 
    ![アドオンを選択](assets/setup-prod-commerce.png)
 

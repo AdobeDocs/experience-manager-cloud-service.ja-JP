@@ -774,7 +774,7 @@ ht-degree: 99%
             + [アダプティブフォームの比較](/help/forms/compare-forms.md)
             + [カスタム送信アクションの作成](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [移行ユーティリティツールを使用した基盤コンポーネントベースのアダプティブフォームからコアコンポーネントベースのフォームへの変換](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [アダプティブFormsのメールテンプレート](/help/forms/html-email-templates-in-adaptive-forms.md)
+            + [アダプティブフォームのメールテンプレート](/help/forms/html-email-templates-in-adaptive-forms.md)
             + コアコンポーネントに基づくアダプティブフォームのルールエディターの概要{#rule-editor-core-components}
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターの概要](/help/forms/rule-editor-core-components.md)
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターのユーザーインターフェイス](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1022,7 +1022,7 @@ ht-degree: 99%
          + [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
          + [フォーム送信サービスの使用](/help/forms/forms-submission-service.md)
       + WYSIWYG {#universal-editor}
-         + [概要 – Forms用Edge Delivery Servicesのユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [概要 - Forms の Edge Delivery Services のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [はじめに](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [ ルールエディターを使用したへのルールの追加 ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
       + 機能 {#advanced-features-edge-delivery-services-forms}
