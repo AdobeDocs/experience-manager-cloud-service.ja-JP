@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 4ae213f212864d83bf6f999de616c6e3376c3f63
 workflow-type: tm+mt
-source-wordcount: '6020'
+source-wordcount: '6026'
 ht-degree: 99%
 
 ---
@@ -854,6 +854,8 @@ ht-degree: 99%
          + [アダプティブフォームのレビューの作成と管理](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [アダプティブフォームのキーワード](/help/forms/adaptive-forms-keywords.md)
       + [フォームのプレビュー](/help/forms/previewing-forms.md)
+   + インタラクティブ通信 {#interactive-communocation}
++[ インタラクティブ通信の概要 ](/help/forms/introduction-to-interactive-communication.md)
    + Forms 中心のワークフロー {#create-form-centric-workflows}
       + [Forms 中心のワークフローの導入](/help/forms/aem-forms-workflow.md)
       + [ワークフローでの Forms 中心のステップの使用 + ステップリファレンス](/help/forms/aem-forms-workflow-step-reference.md)
