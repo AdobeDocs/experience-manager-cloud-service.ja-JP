@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a3c414f9b5e575856a942e02661e8c70a7083495
+source-git-commit: 77d8ebeaa3914f4a91d2cf27ccc5b048e64d6b38
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 89%
+source-wordcount: '887'
+ht-degree: 22%
 
 ---
 
@@ -16,69 +16,89 @@ ht-degree: 89%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 19149 {#19149}
+## リリース 19352 {#19352}
 
-2025年1月21日（PT）に公開された、メンテナンスリリース 19149 の継続的な改善点を以下にまとめます。 前回のメンテナンスリリースは、リリース 18751 でした。
+2025年2月5日に公開された、メンテナンスリリース 19352 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 19149 でした。
 
-2025.1.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。 詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
+2025.2.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。 詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
 
-### 機能強化 {#enhancements-19149}
+### 機能強化 {#enhancements-19352}
 
-* ASSETS-45286：ダウンロードアーカイブ非同期ジョブの詳細な進行状況を表示。
-* ASSETS-46296：アセットセレクターでの Dynamic Media テンプレートのサポート。
-* ASSETS-44796：DAM 非同期アセットジョブに対して Assets イベントを実行。
+* FORMS-13998：アコーディオンコンポーネントを追加。
+* FORMS-17913：ラジオグループのカードバリアントを追加。
+* FORMS-17333:AEM フォーム送信でHTMLメールテンプレートを有効にする。
+* FORMS-17702:Output Sync API で生成されたPDFを Azure Blob Storage にアップロードできるようにします。
+* SITES-28282：ユニバーサルエディターを使用したEdge Delivery：任意のページのベースパス、サイト名、組織をページ情報として提供します。
+* SITES-27055：ユニバーサルエディターを使用したEdge Delivery：リバースプロキシサーブレットでクエリパラメーターをサポートします。
+* SITES-26796：ユニバーサルエディターを使用したEdge Delivery：分類スプレッドシートのカスタム列をサポートします。
+* SITES-26087：ユニバーサルエディターを使用したEdge Delivery：スプレッドシートへの CSV の書き出しをサポートします。
+* SITES-26265：ユニバーサルエディターを使用したEdge Delivery：設定 UI で、Edge Deliveryと統合する TA アカウントを表示します。
+* SITES-20372：ユニバーサルエディターを使用したEdge Delivery：スプレッドシート用の基本的な MSM ユースケースを有効にします。
+* SITES-26681：ユニバーサルエディターを使用したEdge Delivery: オーサー上の分類スプレッドシート用に？sheet= パラメーターをサポートします。
+* SITES-26479: [ スキーマ ] コンテンツフラグメントモデルのスケジュールされた公開ステータスエンドポイント。
+* SITES-25944:[ ライブコピーの概要 ] ステータスを「ライブコピーが最新、制限付き継承」に追加
+* SITES-28713: [V2] コンテンツスクレーパーに構造化データのサポートを追加。
+* SITES-27896：通知時に自動的に開く「コメント」タブ
+* SITES-26720：ユーザーがアセットセレクターからコレクション全体を選択できないようにする。
+* SITES-27875：デフォルトでコンテナ内の編集可能なコンテンツを移動可能にします。
+* SITES-28340:Dark Alley Universal Editor サービスプラグイン。
+* SITES-26098：コンテンツフラグメントを公開する際に、参照ページを公開しない可能性があります。
+* SITES-27789:DOM でのデータ属性 data-aue-component のサポート。
+* SITES-25997：変更日をサポートするようにバリエーションを強化します。
+* SITES-28023：リモートアセット参照のGraphQL出力（リポジトリ + アセット ID）。
+* SITES-26058：コンテンツフラグメントモデルのスケジュールされた公開ステータスエンドポイント。
+* SITES-25108:UUID 参照のモデル移行。
+* SITES-26630：複数のコンテンツフラグメント用にコンテンツフラグメントのスケジュールされた公開ステータスエンドポイント。
+* SITES-23432：削除参照機能の改善。
+* SITES-25797：外部アセット参照のサポート - GraphQL。
+* SITES-17514：コンテンツフラグメントを非公開にするためのエンドポイントの機能強化を削除する。
+* SITES-14633：インストール前にコンテンツフラグメントモデルのペイロード作成の検証 – ドライラン。
 
-### 修正された問題 {#fixed-issues-19149}
+### 修正された問題 {#fixed-issues-19352}
 
-* GRANITE-55074：エラー応答に CORS 応答ヘッダーが設定されていることを確認。
-* ASSETS-43755：一括アセット関連のスケーラビリティの改善。
-* ASSETS-45399：アセットのライブコピーを作成した後、Assets コンソールにリダイレクトされる。
-* ASSETS-45462：カスタムフォルダーのサムネールに関するブラウザーのキャッシュの問題。
-* ASSETS-46398：DM テンプレートのダウンロードおよび再処理アクションが非表示になる。
-* ASSETS-44484：接続されたアセット設定の再保存に関する問題。
-* ASSETS-44122：非同期コピーアセットジョブで、現在のフォルダーにコピーする際に、宛先フォルダーの名前が変更されない。
-* ASSETS-44463：メタデータの書き出しが成功しても「CSV をダウンロード」ボタンが表示されない。
-* ASSETS-45134：宛先タイトル付きの移動ジョブで、すべてのフォルダータイトルが上書きされる。
-* ASSETS-45137：アセットビューを通じた一括アップロードで競合が発生する。
-* ASSETS-45758：アセットの関連付けで関係を追加した後、ビジー／読み込みアニメーションが無限に続く。
-* ASSETS-44148：AEM の NODE_MOVED イベントにより、ログに偽の NPE が発生する場合がある。
-* ASSETS-28607：カスタムビデオサムネールを設定する際に JS エラーが発生する。
-* GRANITE-55781：Adobe Developer Console と AEM 間のグループ同期を改善。 詳しくは、[ユーザーグループと製品プロファイルの同期の変更](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)を参照してください。
-* GRANITE-55754：SDK 起動スクリプトが Java 21 をサポートしていることを確認。
-* GRANITE-54248：大きなアセットフォルダー内のすべての項目をスクロールできない。
-* SCRNS-4597：検索結果リスト表示の改善。
+* SITES-28415：ユニバーサルエディターを使用したEdge Delivery：スプレッドシートの「プロパティを開く」ボタンを修正。
+* SITES-26669：ユニバーサルエディターを使用したEdge Delivery:BOM がスプレッドシートになっている UTF-8 でエンコードされた CSV ファイルをアップロードする際の問題を修正しました。
+* SITES-26543：ユニバーサルエディターを使用したEdge Delivery：間違ったマークアップをレンダリングするモデルを含めずに、空のブロックを修正します。
+* SITES-26857：ユニバーサルエディターを使用したEdge Delivery：ファイルベース設定で UI に表示されるサイト認証トークンを修正します。
+* SITES-26662：ユニバーサルエディターを使用したEdge Delivery：大文字と小文字を区別するバルクメタデータの問題を修正しました。
+* SITES-28133:Publishから「プレビュー」に変更したことにより、実稼動環境でコンテンツを使用できる。
+* SITES-27187：参照を含む、スケジュールされたページ/アセットのアクティベーション（試験的）が、参照を公開できません。
+* SITES-27264:2 コンテンツフラグメント – ライブコピー作成関連の Selenium テストが、マスターで一貫して失敗する。
+* SITES-26559：コンテンツフラグメントモデルのクエリを cqPageLucene インデックスにピン留めします。
+* SITES-24469：インタラクティブ要素にキーボードでアクセスできない。
+* SITES-24518：親参照テーブルの「名前」ボタンと「モデル」ボタンにキーボードでアクセスできない。
+* SITES-27937: モデルを更新した後、UISchema 制約が null に設定されます。
+* SITES-27852: モデル UISchema に分類がありません。
+* SITES-27904：完全投影用のリスト/検索コンテンツフラグメントモデルに MetadataSchema が見つからない。
+* SITES-26827：フラグメントのリストが無限ループに陥る。
+* SITES-27678: [ パフォーマンス ]_references の不要な取得を防ぎます。
+* SITES-27589：複数のコンテンツ/フラグメント参照フィールドを持つコンテンツフラグメントモデルで、UUID アップグレードに失敗する。
+* SITES-26679：コンテンツフラグメントモデルを非公開にする場合は、公開済みの参照のみを検証する必要があります。
+* SITES-26666:referencesTree エンドポイントと参照エンドポイントが異なる結果を返す。
+* SITES-26499:GETフラグメントおよびPATCHでのタグフィールドの値の順序が正しくなく、順序がランダム化される。
+* SITES-26585：スキーマの小さな説明エラーを修正。
+* SITES-26647：エンドポイントを削除および UnpublishFragments 参照の検証が、管理者以外のユーザーの場合に失敗する可能性があります。
+* SITES-26458: [ コンテンツフラグメントモデルを検索 ] レプリケーションステータスによるフィルタリングを修正。
+* SITES-23513:[ コンテンツフラグメントモデルエディター ] 「フラグメント参照」 – 「許可されたコンテンツフラグメントモデル」プロパティの検証が失敗します。
+* SITES-26575：プレビューからフラグメントを非公開にすると、previewStatus が更新される。
+* SITES-26571: FT_SITES-12435 が有効な場合、ページ参照を保存できません。
+* SITES-26660:@ContentType のタイプが「文字列」の場合、コンテンツフラグメントのバージョン比較が壊れる場合があります。
+* SITES-26626：数値およびブール値フィールドに customErrorMessage がありません。
+* SITES-26268：フラグメントの作成時に参照が無効な場合、誤ったステータスコードが返される。
 
-
-### 既知の問題 {#known-issues-19149}
+### 既知の問題 {#known-issues-19352}
 
 なし。
 
-### 廃止された機能と API {#deprecated-19149}
+### 廃止された機能と API {#deprecated-19352}
 
 AEM as a Cloud Service で廃止および削除された機能と API について詳しくは、[廃止および削除された機能と API](/help/release-notes/deprecated-removed-features.md) ドキュメントを参照してください。
 
-#### ユーザーグループと製品プロファイルの同期の変更
+### セキュリティ修正 {#security-19352}
 
-権限管理に Adobe Admin Console を使用する際、次のグループは AEM に同期されなくなるので、使用しないでください。
-* _GROUP_NAME_SUFFIX で終わる AEM グループ。
-* 他の環境、プログラム、製品からの製品プロファイル。
+AEM as a Cloud Service では、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。 このメンテナンスリリースでは、特定された 36 つの脆弱性に対処し、堅牢なシステム保護に対する取り組みを強化しています。
 
-詳しくは、[ユーザーグループと製品プロファイルの同期の変更](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)を参照してください。
-
-#### SPA Editor の廃止 {#deprecate-spa-editor}
-
-[SPA エディター ](/help/implementing/developing/hybrid/introduction.md) は、リリース 2025.1.0 以降の新しいプロジェクトでは廃止されました。SPA エディターは、既存のプロジェクトでは引き続きサポートされますが、新しいプロジェクトには使用しないでください。
-
-AEMでヘッドレスコンテンツを管理するために推奨されるエディターは次のとおりです。
-
-* ビジュアル編集用の [ ユニバーサルエディター ](/help/edge/wysiwyg-authoring/authoring.md)。
-* フォームベースの編集用の [ コンテンツフラグメントエディター ](/help/assets/content-fragments/content-fragments-managing.md)。
-
-### セキュリティ修正 {#security-19149}
-
-AEM as a Cloud Service では、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。 このメンテナンスリリースでは、特定された 4 つの脆弱性に対処し、堅牢なシステム保護に対する取り組みを強化しています。
-
-### 組み込みテクノロジー {#embedded-tech-19149}
+### 組み込みテクノロジー {#embedded-tech-19352}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
