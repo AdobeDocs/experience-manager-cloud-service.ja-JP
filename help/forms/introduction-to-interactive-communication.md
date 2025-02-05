@@ -5,13 +5,13 @@ feature: Release Information
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 4ae213f212864d83bf6f999de616c6e3376c3f63
+exl-id: 7656d6fb-8727-491d-8216-7770b78ff854
+source-git-commit: 32558fc6cd0e325132230b09f7f00a0dfaf7af0d
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '366'
 ht-degree: 3%
 
 ---
-
 
 # インタラクティブ通信
 
@@ -45,11 +45,22 @@ ht-degree: 3%
 | **クラウド統合** | AEM Formsのas a Cloud Serviceでドキュメントを直接編集する |
 
 
-## はじめに
+## オンボーディング
 
 1. **アクセスをリクエスト**：公式アドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールを送信します
 2. **管理者設定**:Adobeは、アクセスを有効にし、管理者権限を提供します
 3. **作成を開始**:[ 直感的なエディター ](https://video.tv.adobe.com/v/3444094/) を使用して、最初の通信から始めます。
+
+## よくある質問
+
+**Q：既存の XDP をインタラクティブ通信エディターに読み込むことができますか？**
+はい、既存の XDP を読み込んで、開始点として使用できます。 サポートされていない機能は、読み込み処理中にハイライト表示されます。
+
+**Q：インタラクティブ通信エディターはオンプレミスデプロイメントで使用できますか？**
+いいえ。エディターは、Formsas a Cloud Serviceのデプロイメントでのみ使用できます。
+
+
+
 
 
 
@@ -128,4 +139,3 @@ With Interactive Communication, you can integrate PDF documents into existing wo
 * インタラクティブ通信エディターのチュートリアル
 * フラグメントの作成
 * 通信のプレビューとテスト
-
