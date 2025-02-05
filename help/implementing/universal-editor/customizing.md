@@ -4,10 +4,10 @@ description: コンテンツ作成者のニーズに合わせてユニバーサ�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: afcb3cbc2b0868de7bac9446eb07ae30c033de66
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 95%
+ht-degree: 73%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 95%
 
 ### 公開の無効化 {#disable-publish}
 
-特定のオーサリングワークフローでは、コンテンツを公開する前に確認する必要があります。このような場合、どの作成者も公開オプションを使用できません。
+特定のオーサリングワークフローでは、コンテンツを公開する前に確認する必要があります。 このような場合、どの作成者も公開オプションを使用できません。
 
 次のメタデータを追加することで、「**公開**」ボタンを完全にアプリ内で抑制できます。
 
@@ -41,13 +41,13 @@ ht-degree: 95%
 
 ### コンポーネントのフィルタリング {#filtering-components}
 
-コンポーネントフィルターを使用して、ユニバーサルエディターでコンテナごとに許可されるコンポーネントを制限できます。 詳しくは、ドキュメント [ コンポーネントのフィルタリング ](/help/implementing/universal-editor/filtering.md) を参照してください。
+コンポーネントフィルターを使用して、ユニバーサルエディターでコンテナごとに使用できるコンポーネントを制限できます。 詳しくは、[コンポーネントのフィルタリング](/help/implementing/universal-editor/filtering.md)のドキュメントを参照してください。
 
 ### プロパティパネルでのコンポーネントを条件付きで表示および非表示にする {#conditionally-hide}
 
-1 つまたは複数のコンポーネントを一般的に作成者が利用できる場合がありますが、意味をなさない状況が発生する場合もあります。このような場合、`condition` 属性を[コンポーネントモデルのフィールド](/help/implementing/universal-editor/field-types.md#fields)に追加することによって、プロパティパネルでコンポーネントを非表示にすることができます。
+1 つまたは複数のコンポーネントを一般的に作成者が利用できる場合がありますが、意味をなさない状況が発生する場合もあります。 その場合、`condition` 属性を [ コンポーネントモデルのフィールド ](/help/implementing/universal-editor/field-types.md#fields) に追加することで、プロパティパネルでコンポーネントを非表示にできます。
 
-条件は、[ JsonLogic スキーマを使用して定義できます。](https://jsonlogic.com/) 条件が true の場合、フィールドが表示されます。条件が false の場合、フィールドは非表示になります。
+条件は、[JsonLogic スキーマ ](https://jsonlogic.com/) を使用して定義できます。 条件が true の場合、フィールドが表示されます。 条件が false の場合、フィールドは非表示になります。
 
 >[!BEGINTABS]
 
@@ -86,9 +86,9 @@ ht-degree: 95%
 
 ### カスタムプレビュー URL {#custom-preview-urls}
 
-カスタムプレビュー URL は、`urn:adobe:aue:config:preview` メタ設定を使用して指定できます。この URL は、[エディターの右上のツールバー](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)にある「**ページを開く**」ボタンをクリックすると開きます。
+カスタムプレビュー URL は、`urn:adobe:aue:config:preview` のメタ設定を使用して指定できます。この設定は、**エディターの右上のツールバー ](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar) にある「[ ページを開く** ボタンをクリックすると開きます。
 
-これは、[WYSIWYG オーサリングを備えた Edge Delivery Services を使用](/help/edge/wysiwyg-authoring/authoring.md)するアプリケーションなど、特定のプレビュー要件を持つアプリケーションに特に役立ちます。
+これは、[WYSIWYG オーサリングでEdge Delivery Servicesを使用する ](/help/edge/wysiwyg-authoring/authoring.md) など、特定のプレビュー要件を持つアプリケーションで特に役立ちます。
 
 これを行うには、次の例のように、実装されたアプリのメタタグに目的のプレビュー URL を含めるのみです。
 
@@ -100,7 +100,7 @@ ht-degree: 95%
 
 Adobe Experience Cloud サービスとして、ユニバーサルエディターの UI は、App Builder とExperience Manager を使用して拡張できます。
 
-UI 拡張機能は、Adobe App Builder で作成された JavaScript アプリケーションで、ユニバーサルエディターなどの Adobe Experience Cloud 統合シェルで実行される UI アプリケーションに埋め込むことができます。ヘッダーメニューとプロパティパネルに独自のボタンとアクションを追加したり、ユニバーサルエディター用に独自のイベントを作成したりできます。
+UI 拡張機能は、Adobe App Builder で作成された JavaScript アプリケーションで、ユニバーサルエディターなどの Adobe Experience Cloud 統合シェルで実行される UI アプリケーションに埋め込むことができます。 ヘッダーメニューとプロパティパネルに独自のボタンとアクションを追加したり、ユニバーサルエディター用に独自のイベントを作成したりできます。
 
 これらの可能性を調べるには、次のリソースを参照してください。
 
@@ -110,6 +110,6 @@ UI 拡張機能は、Adobe App Builder で作成された JavaScript アプリ�
 
 >[!TIP]
 >
->例について詳しくは、[AEM UI 拡張チュートリアルを参照してください。](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) コンテンツフラグメントコンソールの拡張に重点を置いていますが、ユニバーサルエディターで UI 拡張機能を実装する場合の概念は同じです。
+>例を挙げて学びたい場合は、[AEM UI 拡張機能のチュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) を参照してください。 コンテンツフラグメントコンソールの拡張に重点を置いていますが、ユニバーサルエディターで UI 拡張機能を実装する場合の概念は同じです。
 
-[AEM Sites での Extension Manager の使用](https://developer.adobe.com/uix/docs/extension-manager/) 拡張機能をインスタンスごとに有効または無効にしたり、ユニバーサルエディターを含むアドビのファーストパーティ拡張機能にアクセスしたりできます。
+[AEM SitesのExtension Managerを使用 ](https://developer.adobe.com/uix/docs/extension-manager/) すると、インスタンスごとに拡張機能を有効または無効にしたり、ユニバーサルエディターを含むAdobeのファーストパーティ拡張機能にアクセスしたりできます。

@@ -4,10 +4,10 @@ description: プロジェクトに適切な人材を選択し、適切な役割�
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -75,7 +75,7 @@ Adobe Experience Manager Assets の導入を成功させるために必要な人
 
 <br>
 
-![AEM Assets チームでの架空の役割と関与のレベルを示す横棒グラフ。](/help/overview/assets/team_involvement2.png)
+![ 架空の役割とAEM Assets チームへの関与レベルを示す横棒グラフ ](/help/overview/assets/team_involvement2.png)。
 
 >[!TIP]
 >

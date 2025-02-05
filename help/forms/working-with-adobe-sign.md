@@ -6,10 +6,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '3243'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 100%
 
    * カスタムフォームテンプレートがない場合は、「**[!UICONTROL レコードのドキュメントを生成]**」オプションを選択します。このオプションを使用すると、署名用に送信されたドキュメントにアダプティブフォームのすべてのフィールドが表示されます。
 
-1. 「**[!UICONTROL 作成」を選択します。]** 署名が有効なアダプティブフォームが作成されます。[!DNL Adobe Sign] フィールドをフォームに追加し、署名用に送信できます。
+1. 「**[!UICONTROL 作成]**」を選択します。 署名付きのアダプティブフォームが作成されます。 [!DNL Adobe Sign] フィールドをフォームに追加し、署名用に送信できます。
 
 #### アダプティブフォームで [!DNL Adobe Sign] を有効にする {#editafsign}
 

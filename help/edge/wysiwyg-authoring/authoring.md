@@ -4,10 +4,10 @@ description: コンテンツのオーサリングと Edge Delivery Services を�
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -44,11 +44,11 @@ AEM as a Cloud Service で Edge Delivery Services を使用する場合、作成
 
 ![ユニバーサルエディターでブロックを追加および配置する](assets/blocks.png)
 
-ブロックの詳細は、プロパティ パネルで設定できます。
+ブロックの詳細は、プロパティパネルで設定できます。
 
 ![ブロックプロパティの設定](assets/block-properties.png)
 
-ユニバーサルエディターを使用したオーサリング方法について詳しくは、[ユニバーサルエディターを使用したコンテンツのオーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md)ドキュメントを参照してください。
+ユニバーサルエディターを使用したコンテンツの作成方法について詳しくは、ドキュメント [ ユニバーサルエディターを使用したコンテンツのオーサリング ](/help/sites-cloud/authoring/universal-editor/authoring.md) を参照してください。
 
 AEM と Edge Delivery Services を使用してオーサリングする独自のプロジェクトを開始する方法について詳しくは、[Edge Delivery Services を使用した WYSIWYG オーサリングの開発者向け入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)を参照してください。
 

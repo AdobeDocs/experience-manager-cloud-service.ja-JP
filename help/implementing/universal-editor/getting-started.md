@@ -4,10 +4,10 @@ description: ユニバーサルエディターへのアクセス権を取得す�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 75acf37e7804d665e38e9510cd976adc872f58dd
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '956'
-ht-degree: 66%
+ht-degree: 95%
 
 ---
 
@@ -18,19 +18,19 @@ ht-degree: 66%
 
 >[!TIP]
 >
->すぐに例を確認したい場合は、[GitHub のユニバーサルエディターサンプルアプリ](https://github.com/adobe/universal-editor-sample-editable-app)を参照してください。
+>すぐに例を確認したい場合は、[GitHub のユニバーサルエディターサンプルアプリ ](https://github.com/adobe/universal-editor-sample-editable-app) を参照してください。
 
-ユニバーサルエディターは任意のソースからコンテンツを編集できますが、このドキュメントでは AEM アプリを例として使用します。このドキュメントでは、これらの手順を説明します。
+ユニバーサルエディターは任意のソースからコンテンツを編集できますが、このドキュメントでは AEM アプリを例として使用します。 このドキュメントでは、これらの手順を説明します。
 
 ## ページの実装 {#instrument-page}
 
 ユニバーサルエディターでは、エディターでページをレンダリングおよび編集するために JavaScript ライブラリが必要です。
 
-さらに、ユニバーサルエディターサービスでは、編集中のアプリ内のコンテンツに適したバックエンドシステムを識別して使用するために、[統一リソース名（URN）](https://ja.wikipedia.org/wiki/Uniform_Resource_Name)が必要です。したがって、コンテンツをコンテンツリソースにマッピングし直すには、URN スキーマが必要です。
+さらに、ユニバーサルエディターサービスでは、編集中のアプリ内のコンテンツに適したバックエンドシステムを識別して使用するために、[統一リソース名（URN）](https://ja.wikipedia.org/wiki/Uniform_Resource_Name)が必要です。 したがって、コンテンツをコンテンツリソースにマッピングし直すには、URN スキーマが必要です。
 
 ### ユニバーサルエディター CORS ライブラリを含める {#cors-library}
 
-ユニバーサルエディターをアプリに接続するには、アプリにユニバーサルエディター CORS ライブラリを含める必要があります。アプリに次のスクリプトを追加します。
+ユニバーサルエディターをアプリに接続するには、アプリにユニバーサルエディター CORS ライブラリを含める必要があります。 アプリに次のスクリプトを追加します。
 
 ```html
  <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
@@ -47,9 +47,9 @@ ht-degree: 66%
 * `<category>` - これは、2 つのオプションを持つ接続の分類です。
    * `system` - 接続エンドポイントの場合
    * `config` - [オプション設定の定義](#configuration-settings)の場合
-* `<referenceName>` - 接続を識別するためにドキュメントで再利用される短い名前です。例：`aemconnection`
-* `<protocol>` - 使用するユニバーサルエディター永続化サービスの永続化プラグインを示します。例：`aem`
-* `<url>` - 変更が保持されるシステムの URL です。例：`http://localhost:4502`
+* `<referenceName>` - 接続を識別するためにドキュメントで再利用される短い名前です。 例：`aemconnection`
+* `<protocol>` - 使用するユニバーサルエディター永続化サービスの永続化プラグインを示します。 例：`aem`
+* `<url>` - 変更が保持されるシステムの URL です。 例：`http://localhost:4502`
 
 識別子 `urn:adobe:aue:system` は、Adobe Universal Editor の接続を表します。
 
@@ -59,8 +59,8 @@ ht-degree: 66%
 data-aue-resource="urn:<referenceName>:<resource>"
 ```
 
-* `<referenceName>` - `<meta>` タグに記載されている名前付きリファレンスです。例：`aemconnection`
-* `<resource>` - ターゲットシステム内のリソースへのポインターです。例：`/content/page/jcr:content` などの AEM コンテンツのパス
+* `<referenceName>` - `<meta>` タグに記載されている名前付きリファレンスです。 例：`aemconnection`
+* `<resource>` - ターゲットシステム内のリソースへのポインターです。 例：`/content/page/jcr:content` などの AEM コンテンツのパス
 
 >[!TIP]
 >
@@ -102,7 +102,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 接続 URN で `config` プレフィックスを使用して、必要に応じてサービスおよび拡張エンドポイントを設定します。
 
-アドビがホストするユニバーサルエディターサービスを使用しない場合は、これはメタタグで設定できます。ユニバーサルエディターが提供するデフォルトのサービスエンドポイントを上書きするには、独自のサービスエンドポイントを設定します。
+アドビがホストするユニバーサルエディターサービスを使用しない場合は、これはメタタグで設定できます。 ユニバーサルエディターが提供するデフォルトのサービスエンドポイントを上書きするには、独自のサービスエンドポイントを設定します。
 
 * メタ名 - `urn:adobe:aue:config:service`
 * メタコンテンツ - `content="https://adobe.com"`（例）
@@ -111,7 +111,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 <meta name="urn:adobe:aue:config:service" content="<url>">
 ```
 
-ページに対して特定の拡張機能のみを有効にしたい場合は、メタタグで設定できます。拡張機能を取得するには、拡張機能エンドポイントを設定します。
+ページに対して特定の拡張機能のみを有効にしたい場合は、メタタグで設定できます。 拡張機能を取得するには、拡張機能エンドポイントを設定します。
 
 * メタ名：`urn:adobe:aue:config:extensions`
 * メタコンテンツ：`content="https://adobe.com,https://anotherone.com,https://onemore.com"`（例）
@@ -120,50 +120,50 @@ data-aue-resource="urn:<referenceName>:<resource>"
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
 
-## ユニバーサルエディターを開くコンテンツパスまたは `sling:resourceType`s を定義します。 (オプション) {#content-paths}
+## ユニバーサルエディターを開くコンテンツパスまたは `sling:resourceType` の定義 （オプション） {#content-paths}
 
-[ ページエディター ](/help/sites-cloud/authoring/page-editor/introduction.md) を使用して既存のAEM プロジェクトがある場合、コンテンツ作成者がページを編集すると、ページはページエディターで自動的に開きます。 コンテンツパスまたは `sling:resourceType` に基づいてAEMを開くエディターを定義できるので、選択したコンテンツに必要なエディターに関係なく、作成者のエクスペリエンスがシームレスになります。
+[ ページエディター ](/help/sites-cloud/authoring/page-editor/introduction.md) を使用して既存のAEM プロジェクトがある場合、コンテンツ作成者がページを編集すると、ページはページエディターで自動的に開きます。 コンテンツパスまたは `sling:resourceType` に基づいて AEM が開くエディターを定義できるので、選択したコンテンツに必要なエディターに関係なく、作成者にとってシームレスなエクスペリエンスを実現できます。
 
 1. Configuration Manager を開きます。
 
    `http://<host>:<port>/system/console/configMgr`
 
-1. リストで **ユニバーサルエディター URL サービス** を見つけて、「**設定値を編集**」をクリックします。
+1. リストで&#x200B;**ユニバーサルエディター URL サービス**&#x200B;を見つけて、「**設定値を編集**」をクリックします。
 
-1. ユニバーサルエディターを開くコンテンツパスまたは `sling:resourceType`s を定義します。
+1. ユニバーサルエディターを開くコンテンツパスまたは `sling:resourceType` を定義します。
 
-   * **ユニバーサルエディターを開くマッピング** フィールドで、ユニバーサルエディターを開くパスを指定します。
-   * ユニバーサルエディターで開く **Sling:resourceTypes** フィールドに、ユニバーサルエディターによって直接開かれるリソースのリストを指定します。
+   * 「**ユニバーサルエディターを開くマッピング**」フィールドに、ユニバーサルエディターを開くパスを指定します。
+   * 「**ユニバーサルエディターで開く Sling:resourceTypes**」フィールドに、ユニバーサルエディターによって直接開かれるリソースのリストを指定します。
 
 1. 「**保存**」をクリックします。
 
-AEMは、この設定に基づくページのユニバーサルエディターを次の順序で開きます。
+AEM は、この設定に基づいて、次の順序でページのユニバーサルエディターを開きます。
 
-1. AEMは `Universal Editor Opening Mapping` の下のマッピングをチェックします。コンテンツがそこに定義されたパスの下にある場合は、ユニバーサルエディターが開きます。
-1. `Universal Editor Opening Mapping` で定義されたパスにないコンテンツの場合、AEMは、コンテンツの `resourceType` が、ユニバーサルエディターで開かれる **Sling:resourceTypes で定義されたものと一致するかどうかを確認し** コンテンツがこれらの型のいずれかに一致する場合、ユニバーサルエディターは `${author}${path}.html` で開かれます。
-1. それ以外の場合は、AEMによってページエディターが開きます。
+1. AEM は `Universal Editor Opening Mapping` の下にあるマッピングを確認し、コンテンツがそこに定義されているパスの下にある場合は、ユニバーサルエディターが開かれます。
+1. `Universal Editor Opening Mapping` で定義されたパスの下にないコンテンツの場合、AEM はコンテンツの `resourceType` が、**ユニバーサルエディターで開かれる Sling:resourceTypes**&#x200B;で定義されたものと一致するかどうかを確認し、コンテンツがこれらのタイプのいずれかに一致する場合は、`${author}${path}.html` でユニバーサルエディターが開かれます。
+1. それ以外の場合は、AEM によってページエディターが開かれます。
 
-「**ユニバーサルエディターでマッピングを開く**」フィールドでマッピングを定義するには、次の変数を使用できます。
+「**ユニバーサルエディターを開くマッピング**」フィールドでマッピングを定義するには、次の変数を使用できます。
 
 * `path`：開くリソースのコンテンツパス
-* `localhost`：スキーマを含まない `localhost` （例：`localhost:4502`）の Externalizer エントリ
-* `author`：スキーマなしのオーサー用 Externalizer エントリ（例：`localhost:4502`）
-* `publish`：スキーマを使用しないパブリッシュ用の Externalizer エントリ（例：`localhost:4503`）
-* `preview`：スキーマを使用しないプレビュー用の Externalizer エントリ（例：`localhost:4504`）
+* `localhost`：スキーマなしの `localhost` の Externalizer エントリ（例：`localhost:4502`）
+* `author`：スキーマなしのオーサーの Externalizer エントリ（例：`localhost:4502`）
+* `publish`：スキーマなしのパブリッシュの Externalizer エントリ（例：`localhost:4503`）
+* `preview`：スキーマなしのプレビューの Externalizer エントリ（例：`localhost:4504`）
 * `env`：定義された Sling 実行モードに基づく `prod`、`stage`、`dev`
-* `token`: `QueryTokenAuthenticationHandler` にクエリトークンが必要です
+* `token`：`QueryTokenAuthenticationHandler` に必要なクエリトークン
 
 ### マッピングの例 {#example-mappings}
 
-* AEM オーサーで `/content/foo` の下のすべてのページを開きます。
+* AEM オーサーの `/content/foo` の下にあるすべてのページを開きます。
 
    * `/content/foo:${author}${path}.html?login-token=${token}`
-   * これにより、`https://localhost:4502/content/foo/x.html?login-token=<token>` が開きます
+   * これにより、`https://localhost:4502/content/foo/x.html?login-token=<token>` が開きます。
 
-* すべての変数を情報として指定して、リモート NextJS サーバー上の `/content/bar` 下にあるすべてのページを開きます。
+* リモート NextJS サーバー上の `/content/bar` の下にあるすべてのページを開き、すべての変数を情報として指定します。
 
    * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
-   * これにより、`https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>` が開きます
+   * これにより、`https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>` が開きます。
 
 ## ユニバーサルエディターを使用する準備が整いました {#youre-ready}
 

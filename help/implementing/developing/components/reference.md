@@ -4,10 +4,10 @@ description: コンポーネントとその構造の詳細に関するデベロ�
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '3481'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->このドキュメントを参照する前に、[WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)を完了し、[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)と[ AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)についてよく理解してください。
+>このドキュメントを参照する前に、[WKND チュートリアル ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) を完了し、[ コアコンポーネント ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja) と [AEM プロジェクトアーキタイプ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) に精通していることを確認してください。
 
 WKND チュートリアルでは、ほとんどの使用例をカバーしているので、このドキュメントはこれらのリソースを補完する目的でのみ提供されます。AEM でのコンポーネントの構造化および設定方法に関する詳細な技術的詳細を説明するものであり、入門用ガイドとしての意図されたものではありません。
 
@@ -105,32 +105,32 @@ AEM コンポーネントの構造は強力で柔軟性があります。以下�
 * **ルートノード**：
    * `<mycomponent> (cq:Component)` - コンポーネントの階層ノード
 * **重要なプロパティ**：
-   * `jcr:title` - コンポーネントのタイトル。コンポーネントが[コンポーネントブラウザー](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)または[コンポーネントコンソール](/help/sites-cloud/authoring/components-console.md)リストされているときにラベルとして使用されます
-   * `jcr:description` - コンポーネントの説明。コンポーネントブラウザーおよびコンポーネントコンソールでマウスオーバーヒントとして使用
-   * 詳しくは、「[コンポーネントアイコン](#component-icon)」の節を参照してください。
+   * `jcr:title` - コンポーネントのタイトル。例えば、[ コンポーネントブラウザー ](/help/sites-cloud/authoring/components-console.md) および [ コンポーネントコンソール ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) にコンポーネントがリストされる際のラベルとして使用されます。
+   * `jcr:description` - コンポーネントの説明。コンポーネントブラウザーおよびコンポーネントコンソールでマウスを上に置くと表示されるヒントとして使用されます。
+   * 詳しくは、[ コンポーネントアイコン ](#component-icon) の節を参照してください。
 * **重要な子ノード**：
-   * `cq:editConfig (cq:EditConfig)` - コンポーネントの編集プロパティを定義し、コンポーネントをコンポーネントブラウザーに表示できるようにします
+   * `cq:editConfig (cq:EditConfig)` - コンポーネントの編集プロパティを定義し、コンポーネントをコンポーネントブラウザーに表示できるようにします。
       * コンポーネントにダイアログがある場合は、cq:editConfig が存在しなくても、コンポーネントは自動的にコンポーネントブラウザーまたはサイドキックに表示されます。
    * `cq:childEditConfig (cq:EditConfig)` - 独自の `cq:editConfig` を定義しない子コンポーネントの作成者 UI 要素を制御します。
    * `cq:dialog (nt:unstructured)` - このコンポーネントのダイアログ。ユーザーがコンポーネントを設定したり、コンテンツを編集したりできるインターフェイスを定義します。
-   * `cq:design_dialog (nt:unstructured)` - このコンポーネントのデザイン編集
+   * `cq:design_dialog (nt:unstructured)` – このコンポーネントのデザイン編集。
 
 #### コンポーネントアイコン {#component-icon}
 
 コンポーネントのアイコンまたは省略形は、デベロッパーがコンポーネントを作成する際にコンポーネントの JCR プロパティで定義します。これらのプロパティは、次の順番で評価され、最初に見つかった有効なプロパティが使用されます。
 
-1. `cq:icon` - コンポーネントブラウザーで表示するための [Coral UI ライブラリ](https://opensource.adobe.com/coral-spectrum/examples/#icon)の標準的なアイコンを指定する String プロパティ
+1. `cq:icon` - コンポーネントブラウザーに表示される [Coral UI ライブラリ ](https://opensource.adobe.com/coral-spectrum/examples/#icon) 内の標準アイコンを指す文字列プロパティ。
    * Coral アイコンの HTML 属性の値を使用します。
-1. `abbreviation` - コンポーネントブラウザーでのコンポーネント名の省略形をカスタマイズするための String プロパティ
+1. `abbreviation` - コンポーネントブラウザーでコンポーネント名の略語をカスタマイズする文字列プロパティ。
    * 省略形は最大 2 文字までにする必要があります。
    * 空の文字列が指定されると、`jcr:title` プロパティの最初の 2 文字を使用して省略形が作成されます。
       * 例えば、「Image」の場合は「Im」になります。
       * ローカライズされたタイトルが省略形の作成に使用されます。
    * 省略形は、コンポーネントに `abbreviation_commentI18n` プロパティがある場合にのみ翻訳されます。これは、翻訳ヒントとして使用されます。
-1. `cq:icon.png` または `cq:icon.svg` - コンポーネントブラウザーに表示される、このコンポーネントのアイコン
+1. `cq:icon.png` または `cq:icon.svg` - コンポーネントブラウザーに表示される、このコンポーネントのアイコン。
    * 20 x 20 ピクセルは、標準的なコンポーネントのアイコンのサイズです。
       * 大きいアイコンはクライアントサイドで縮小されます。
-   * お勧めの色は、RGB（112、112、112）、つまり #707070 です。
+   * 推奨色は rgb （112, 112, 112） > #707070 です。
    * 標準的なコンポーネントアイコンの背景は、透明です。
    * `.png` および `.svg` ファイルのみがサポートされます。
    * Eclipse プラグインを使用してファイルシステムから読み込む場合、例えば `_cq_icon.png` や `_cq_icon.svg` のように、ファイル名をエスケープする必要があります。
@@ -172,7 +172,7 @@ AEM コンポーネントの構造は強力で柔軟性があります。以下�
 | `cq:isContainer` | `Boolean` | コンポーネントがコンテナコンポーネントかどうか、したがって段落システムなど他のコンポーネントを格納できるかどうかを示します。 |
 | `cq:dialog` | `nt:unstructured` | これは、コンポーネントの編集ダイアログの定義です。 |
 | `cq:design_dialog` | `nt:unstructured` | これは、コンポーネントのデザインダイアログの定義です。 |
-| `cq:editConfig` | `cq:EditConfig` | これは[コンポーネントの編集構成](#edit-behavior)を定義します。 |
+| `cq:editConfig` | `cq:EditConfig` | これは [ コンポーネントの編集設定 ](#edit-behavior) を定義します。 |
 | `cq:htmlTag` | `nt:unstructured` | 対象を囲んでいる HTML タグに追加されたその他のタグ属性を返します。自動生成された div に属性を追加できます。 |
 | `cq:noDecoration` | `Boolean` | true の場合、コンポーネントは、自動生成された div クラスと css クラスでレンダリングされません。 |
 | `cq:template` | `nt:unstructured` | このプロパティがある場合、コンポーネントがコンポーネントブラウザーから追加された際に、コンテンツテンプレートとしてこのノードを使用します。 |
@@ -256,9 +256,9 @@ Content not found
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-より正確に言えば、Granite UI には、ダイアログ（より一般的に言えば[フォーム](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)）での使用に適した、幅広いフィールドコンポーネントが用意されています。
+Granite UI には、具体的に言えばダイアログ、一般的に言えば [ フォーム ](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html) での使用に適した、幅広いフィールドコンポーネントが用意されています。
 
-リソースタイプを作成したうえで、`sling:resourceType` プロパティで作成したリソースタイプを参照して、新しいノードをダイアログに追加することによって、フィールドをインスタンス化できます。
+リソースタイプを作成したら、`sling:resourceType` プロパティで参照して新しいノードをダイアログに追加することで、フィールドをインスタンス化できます。
 
 #### ダイアログフィールドへのアクセス {#access-to-dialog-fields}
 
@@ -339,7 +339,7 @@ AEM には、既存の設定が多数あります。**CRXDE Lite** のクエリ�
 
 前の例では、`isEmpty` は、コンポーネントにコンテンツがなくて作成者には見えない場合にのみ true になる変数です。
 
-繰り返しを避けるために、アドビは、これらのプレースホルダーに、[コアコンポーネントが提供するような](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html) HTL テンプレートを使用することをコンポーネントの実装者に推奨します。
+繰り返しを避けるために、Adobeでは、コンポーネントの実装者に、これらのプレースホルダー [ コアコンポーネントで提供されるものなど ](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html) に HTL テンプレートを使用することをお勧めします。
 
 その後、前のリンクでのテンプレートの使用は、次の HTL 行で行います。
 
@@ -350,7 +350,7 @@ AEM には、既存の設定が多数あります。**CRXDE Lite** のクエリ�
 
 前の例では、`model.text` はコンテンツが含まれていて表示されている場合にのみ true になる変数です。
 
-このテンプレートの使用例は、コアコンポーネント[（タイトルコンポーネントなど）](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)で確認できます。
+このテンプレートの使用例は、コアコンポーネント [ タイトルコンポーネントなど ](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27) で確認できます。
 
 ### cq:EditConfig の子ノードを使用した設定 {#configuring-with-cq-editconfig-child-nodes}
 

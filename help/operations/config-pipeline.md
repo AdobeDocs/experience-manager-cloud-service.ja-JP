@@ -4,10 +4,10 @@ description: 設定パイプラインを使用して、ログ転送の設定、�
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 5e96d5d71abf78a0dba179cb37cad0322688351b
-workflow-type: ht
-source-wordcount: '994'
-ht-degree: 100%
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
+source-wordcount: '991'
+ht-degree: 97%
 
 ---
 
@@ -50,7 +50,7 @@ Cloud Manager 設定パイプラインでは、設定ファイル（YAML 形式�
 
 ## 設定パイプラインの作成と管理 {#creating-and-managing}
 
-パイプラインの作成および設定方法について詳しくは、[CI／CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)ドキュメントを参照してください。
+パイプラインの作成および設定方法について詳しくは、[CI/CD パイプライン ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) を参照してください。
 
 Cloud Manager で設定パイプラインを作成する場合は、パイプラインを設定する際に、**フルスタックコード**&#x200B;ではなく&#x200B;**ターゲットデプロイメント**&#x200B;を選択します。
 
@@ -95,7 +95,7 @@ Cloud Manager で設定パイプラインを作成する場合は、パイプラ
     cdn.yaml
 ```
 
-`/config` の下のフォルダー名とファイル名は任意です。ただし、YAML ファイルには有効な [`kind` プロパティ値を含める必要があります。](#configurations)
+`/config` の下のフォルダー名とファイル名は任意です。ただし、YAML ファイルには有効な [`kind` プロパティ値を含める必要があり ](#configurations) す。
 
 通常、設定はすべての環境にデプロイされます。各環境のすべてのプロパティ値が同じである場合は、1 つの YAML ファイルで十分です。ただし、下位環境のテスト時など、環境間でプロパティ値が異なることは一般的です。
 

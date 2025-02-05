@@ -4,10 +4,10 @@ description: マルチサイトマネージャーの機能を拡張する方法�
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2337'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->このページは、[コンテンツの再利用：マルチサイトマネージャー](/help/sites-cloud/administering/msm/overview.md)のドキュメントを読んでおくとより簡単に理解できます。
+>このページは、ドキュメント [ コンテンツの再利用：マルチサイトマネージャー ](/help/sites-cloud/administering/msm/overview.md) のコンテキストでより簡単に理解できます。
 
 >[!CAUTION]
 >
@@ -255,7 +255,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
    * **`artifactName`**：`MyLiveActionFactory package`
    * **`packageGroup`**：`myPackages`
 
-1. Eclipse を起動して、[Maven プロジェクトをインポートします](/help/implementing/developing/tools/eclipse.md#import-the-maven-project-into-eclipse)。
+1. Eclipse を起動して、[Maven プロジェクトを読み込みます](/help/implementing/developing/tools/eclipse.md#import-the-maven-project-into-eclipse)。
 
 ### POM ファイルへの依存関係の追加 {#add-dependencies-to-the-pom-file}
 

@@ -4,10 +4,10 @@ description: Adobe Experience Manager では、リソースを集中的に消費
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '854'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -103,7 +103,7 @@ AEM は、毎日午前 1 時にパージジョブを実行して、1 日以上�
 
 1. AEM SDK Quickstart Jar の AEM web コンソール（`https://<host>:<port>/system/console`）に管理者ユーザーとしてログインします。
 1. **OSGi**／**設定**&#x200B;に移動します。
-1. Web コンソールから、「**[!UICONTROL Async Process Default Queue Configuration]**」を開きます。
+1. Web コンソールから、**[!UICONTROL 非同期プロセスのデフォルトキュー設定]** を開きます。
 1. 「**[!UICONTROL Threshold number of assets]**」ボックスで、削除操作の非同期処理に関するアセットまたはフォルダー数のしきい値を指定します。
 
    ![アセット削除しきい値](assets/async-delete-threshold.png)
@@ -117,7 +117,7 @@ AEM は、毎日午前 1 時にパージジョブを実行して、1 日以上�
 
 1. AEM SDK Quickstart Jar の AEM web コンソール（`https://<host>:<port>/system/console`）に管理者ユーザーとしてログインします。
 1. **OSGi**／**設定**&#x200B;に移動します。
-1. Web コンソールで、「**[!UICONTROL Async Move Operation Job Processing]**」設定を開きます。
+1. Web コンソールから、**[!UICONTROL 非同期移動操作ジョブ処理設定]** を開きます。
 1. 「**[!UICONTROL Threshold number of assets/references]**」ボックスで、移動操作の非同期処理に関するアセットやフォルダーまたは参照の数のしきい値を指定します。
 
    ![アセット移動しきい値](assets/async-move-threshold.png)
@@ -129,7 +129,7 @@ AEM は、毎日午前 1 時にパージジョブを実行して、1 日以上�
 
 1. AEM SDK Quickstart Jar の AEM web コンソール（`https://<host>:<port>/system/console`）に管理者ユーザーとしてログインします。
 1. **OSGi**／**設定**&#x200B;に移動します。
-1. Web コンソールで、「**[!UICONTROL Async Page Move Operation Job Processing Configuration]**」を開きます。
+1. Web コンソールから、**[!UICONTROL 非同期ページ移動操作ジョブ処理設定]** を開きます。
 1. 「**メール通知を有効にする**」オプションを選択すると、このジョブステータスに関するメール通知を受信できます例えば、成功、失敗です。
 
    ![MSM 設定](assets/async-msm.png)

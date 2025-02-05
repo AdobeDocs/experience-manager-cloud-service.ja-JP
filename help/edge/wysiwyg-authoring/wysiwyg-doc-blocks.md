@@ -3,13 +3,13 @@ title: WYSIWYG とドキュメントベースのオーサリング用のブロ�
 description: WYSIWYG オーサリングとドキュメントベースのオーサリングの両方に使用できるブロックを作成する方法について説明します。
 feature: Edge Delivery Services
 role: User
-source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
-workflow-type: ht
+exl-id: f039c70a-e1a0-4fcc-8f42-dfa0f8bb3764
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
-
 
 # WYSIWYG とドキュメントベースのオーサリング用のブロック {#wysiwyg-and-doc-blocks}
 
@@ -17,7 +17,7 @@ WYSIWYG オーサリングとドキュメントベースのオーサリングの
 
 ## 概要 {#overview}
 
-特定のプロジェクトでは、[ユニバーサルエディターを使用した WYSIWYG オーサリング](/help/edge/wysiwyg-authoring/authoring.md)とドキュメントベースのオーサリングの両方をサポートする必要がある場合があります。[](/help/edge/docs/authoring.md)開開発時間を最小限に抑え、同じサイトエクスペリエンスを確保するために、両方のユースケースをサポートするブロックのセットを 1 つ作成できます。
+特定のプロジェクトでは、[ ユニバーサルエディターを使用したWYSIWYGのオーサリングと ](/help/edge/wysiwyg-authoring/authoring.md) ドキュメントベースのオーサリング [ の両方をサポートす ](/help/edge/docs/authoring.md) ことをお勧めします。 開発時間を最小限に抑え、同じサイトエクスペリエンスを確保するには、一連のブロックを作成して、両方のユースケースをサポートします。
 
 これを行うには、WYSIWYG オーサリング設定とドキュメントベースのオーサリング設定の両方に同じコンテンツモデリングアプローチを使用する必要があります。
 

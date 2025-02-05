@@ -4,10 +4,10 @@ description: コアコンポーネントベースのアダプティブフォー�
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2e4c9a7d30b954045082baf242737ac2f7426c70
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1387'
-ht-degree: 8%
+ht-degree: 16%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 8%
 
 ## 前提条件
 
-* [お使いの環境でアダプティブ Forms コアコンポーネントを有効にします。](/help/forms/enable-adaptive-forms-core-components.md)
+* [環境でのアダプティブフォームコアコンポーネントの有効化](/help/forms/enable-adaptive-forms-core-components.md)。
 
-  最新のコアコンポーネントを環境にデプロイすると、オーサリング環境でForms ポータルコンポーネントにアクセスできるようになります。
+  最新のコアコンポーネントを環境にデプロイすると、フォームポータルコンポーネントにオーサリング環境でアクセスできます。
 
 * [ ドラフトと送信Forms ポータルコンポーネント用の Azure ストレージコネクタと統合ストレージコネクタの設定 ](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
 
@@ -76,26 +76,26 @@ ht-degree: 8%
 
 標準のForms ポータルコンポーネントを使用して、Sites ページ上のドラフトおよび送信を一覧表示できます。 次の手順を実行して、**ドラフトと送信** ポータルコンポーネントを追加します。
 
-1. AEM Sitesページを **編集** モードで開きます。
+1. AEM Sites ページを&#x200B;**編集**&#x200B;モードで開きます。
 1. **[!UICONTROL ページ情報]**／**[!UICONTROL テンプレートを編集]**に移動します。
-   ![ テンプレートポリシーを編集 ](/help/forms/assets/save-form-as-draft-edit-template.png)
+   ![テンプレートポリシーの編集](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. **[!UICONTROL ポリシー]** をクリックし、**[AEM アーキタイププロジェクト名 ] - Formsとコミュニケーションポータル** の下にある **[!UICONTROL ドラフトと送信]** チェックボックスを選択します。
 
-   ![ ポリシーの選択 ](/help/forms/assets/save-form-as-draft-enable-policy.png)
+   ![ポリシーの選択](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. 「**[!UICONTROL 完了]**」をクリックします。
 1. 次に、オーサリングモードでAEM Sitesページを再度開きます。
-1. ページエディターでForms ポータルコンポーネントを追加できるセクションを見つけます。
-1. **追加** アイコンをクリックします。 アイコンは、新しいコンポーネントを追加するオプションを示すプラス記号（+）です。
+1. ページエディター内で、フォームポータルコンポーネントを追加できるセクションを見つけます。
+1. **追加**&#x200B;アイコンをクリックします。アイコンはプラス記号（+）で、新しいコンポーネントを追加するオプションを示します。
 
-   **追加** アイコンをクリックすると、**新規コンポーネントの挿入** ダイアログボックスが表示され、挿入する様々なコンポーネントが表示されます。
+   **追加**&#x200B;アイコンをクリックすると、**新規コンポーネントを挿入**&#x200B;ダイアログボックスが表示され、挿入する様々なコンポーネントが表示されます。
 
    >[!NOTE]
    >
-   > または、コンポーネントをドラッグ&amp;ドロップすることもできます。
+   > または、コンポーネントをドラッグ＆ドロップすることもできます。
 
-1. ダイアログボックスで使用可能なコンポーネントを参照し、リストから目的のコンポーネントを選択します。 例えば、リストから **ドラフトと送信** コンポーネントを選択して、**ドラフトと送信** Formsポータルコンポーネントを追加します。
+1. ダイアログボックスで使用可能なコンポーネントを参照し、リストから目的のコンポーネントを選択します。例えば、リストから **ドラフトと送信** コンポーネントを選択して、**ドラフトと送信** Formsポータルコンポーネントを追加します。
 
    ![ ドラフトと送信コンポーネントの追加 ](/help/forms/assets/save-form-as-draft-add-dns.png)
 

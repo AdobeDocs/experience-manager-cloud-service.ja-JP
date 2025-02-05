@@ -4,16 +4,16 @@ description: 詳しくは、AEM Assets ビューでアセットを検索およ�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2020'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
 # [!DNL Assets view] でアセットを検索 {#search-assets}
 
-| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
@@ -142,7 +142,7 @@ ht-degree: 99%
 
    ![Firefly の統合](assets/firefly-integration.png)
 
-   新しいアセットが正常に生成されました。さらに、説明ボックスに新しいテキストプロンプトを入力して、画像の説明を変更できます。[優れた AI プロンプトを記述して、高品質で関連性の高いコンテンツを生成する方法を説明します。](https://helpx.adobe.com/jp/firefly/using/tips-and-tricks.html) または、[スタイルの変更や画像のサイズの変更など、他の様々な機能を使用して画像を編集](https://helpx.adobe.com/jp/firefly/using/text-to-image.html)できます。
+   新しいアセットが正常に生成されました。さらに、説明ボックスに新しいテキストプロンプトを入力して、画像の説明を変更できます。[ 優れた AI プロンプトを記述して、特別で関連性の高いコンテンツを生成する方法を説明します ](https://helpx.adobe.com/jp/firefly/using/tips-and-tricks.html)。 または、[ スタイルや画像のサイズの変更など、他の様々な機能を使用して画像を編集 ](https://helpx.adobe.com/jp/firefly/using/text-to-image.html) することもできます。
 
    ![Firefly の統合](assets/bugatti-type-57.png)
 

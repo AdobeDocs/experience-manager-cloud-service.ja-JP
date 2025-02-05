@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7b4bb513b928bf94b4ada4e1a06a1e254f33aafa
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1388'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 # スニペット {#snippets}
@@ -186,12 +186,12 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->ユニバーサルエディターは [IP 許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)と互換性がありません。
+>ユニバーサルエディターは [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) と互換性がありません。
 >
 >ユニバーサルエディターを使用する場合は、次のいずれかを行う必要があります。
 >
 >* IP 許可リストを有効にしないでください。
->* [ユニバーサルエディターサービスの独自のインスタンスを実行します。](/help/implementing/universal-editor/local-dev.md)
+>* [ ユニバーサルエディターサービスの独自のインスタンスを実行します ](/help/implementing/universal-editor/local-dev.md)。
 
 ## Dynamic Media の操作 {#work-with-dynamic-media}
 

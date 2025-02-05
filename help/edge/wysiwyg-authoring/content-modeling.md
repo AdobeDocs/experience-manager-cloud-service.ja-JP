@@ -4,10 +4,10 @@ description: Edge Delivery Services プロジェクトを使用した WYSIWYG �
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2195'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -18,7 +18,7 @@ Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリン
 
 ## 前提条件 {#prerequisites}
 
-Edge Delivery Services で WYSIWYG オーサリングを行うプロジェクトは、コンテンツソースまたは[オーサリングメソッド](/help/edge/wysiwyg-authoring/authoring.md)とは独立して、他の Edge Delivery Services プロジェクトの大半の仕組みを継承します。
+Edge Delivery ServicesでWYSIWYG オーサリングを使用するプロジェクトは、コンテンツソースや [ オーサリング方法 ](/help/edge/wysiwyg-authoring/authoring.md) に関係なく、他のEdge Delivery Servicesプロジェクトの仕組みの大部分を継承します。
 
 プロジェクトのコンテンツをモデル化する前に、まず、次のドキュメントをお読みください。
 
@@ -39,7 +39,7 @@ AEM では、このコンテンツは非常にシンプルで、事前定義済�
 * **画像**：ソース、説明
 * **ボタン**：テキスト、タイトル、URL、タイプ（デフォルト、プライマリ、セカンダリ）
 
-これらのコンポーネントのモデルは、[Edge Delivery Services を使用した WYSIWYG オーサリング用のボイラープレート](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)の一部です。
+これらのコンポーネントのモデルは、[Edge Delivery ServicesでWYSIWYGをオーサリングするためのボイラープレート ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112) の一部です。
 
 ## ブロック {#blocks}
 
@@ -111,9 +111,9 @@ Edge Delivery Servicesで WYSIWYG オーサリングを使用する場合、作�
 * `core/franklin/components/block/v1/block` リソースタイプを使用する必要があります。これは、AEM のブロックロジックの汎用実装です。
 * ブロック名を定義する必要があります。ブロック名は、ブロックのテーブルヘッダーにレンダリングされます。
    * ブロック名は、ブロックを修飾する適切なスタイルとスクリプトを取得するために使用します。
-* [モデル ID](/help/implementing/universal-editor/field-types.md#model-structure) を定義できます。
+* [ モデル ID](/help/implementing/universal-editor/field-types.md#model-structure) を定義できます。
    * モデル ID は、コンポーネントのモデルへの参照です。作成者がプロパティパネルで使用できるフィールドを定義します。
-* [フィルター ID](/help/implementing/universal-editor/filtering.md) を定義できます。
+* [ フィルター ID](/help/implementing/universal-editor/filtering.md) を定義できます。
    * フィルター ID はコンポーネントのフィルターへの参照です。これにより、ブロックやセクションに追加できる子を制限したり、有効にする RTE 機能を制限したりするなど、オーサリング動作を変更できます。
 
 ブロックがページに追加されると、この情報はすべて AEM に保存されます。リソースタイプまたはブロック名のいずれかが見つからない場合、そのブロックはページ上にレンダリングされません。
@@ -181,7 +181,7 @@ Edge Delivery Servicesで WYSIWYG オーサリングを使用する場合、作�
 
 >[!ENDTABS]
 
-一部のタイプの値はマークアップ内のセマンティックを推定でき、プロパティは単一のセルに結合されます。この動作については、[型推論](#type-inference)の節で説明します。
+一部のタイプの値はマークアップ内のセマンティックを推定でき、プロパティは単一のセルに結合されます。この動作については、「型の推論 [ の節で説明し ](#type-inference) す。
 
 #### キーと値のブロック {#key-value}
 
@@ -189,7 +189,7 @@ Edge Delivery Servicesで WYSIWYG オーサリングを使用する場合、作�
 
 ただし、その他の場合は、ブロックはキー値ペアのような設定として読み取られます。
 
-この例として、[ セクションのメタデータがあります。](/help/edge/developer/markup-sections-blocks.md#sections) この使用例では、ブロックをキー値ペアテーブルとしてレンダリングするように設定できます。詳しくは、[セクションとセクションのメタデータ](#sections-metadata)の節を参照してください。
+その例として、[ セクションメタデータ ](/help/edge/developer/markup-sections-blocks.md#sections) が挙げられます。 このユースケースでは、ブロックをキーと値のペアテーブルとしてレンダリングするように設定できます。 詳しくは、[セクションとセクションのメタデータ](#sections-metadata)の節を参照してください。
 
 >[!BEGINTABS]
 
@@ -322,9 +322,9 @@ Edge Delivery Servicesで WYSIWYG オーサリングを使用する場合、作�
 
 ### ブロックのセマンティックコンテンツモデルの作成 {#creating-content-models}
 
-[ブロック構造の仕組みがわかれば、](#block-structure)AEMで 1 対 1 で保持されるコンテンツを配信層にマッピングするコンテンツモデルを作成できます。
+[ ブロック構造の仕組みについて説明 ](#block-structure) を使用すれば、AEMに保存されたコンテンツを 1 対 1 で配信層にマッピングするコンテンツモデルを作成できます。
 
-どのプロジェクトでも初期段階で、すべてのブロックについて、コンテンツモデルを慎重に検討する必要があります。作成者がブロックの実装やスタイルを再利用しながら、切り替えたり組み合わせたりできるようにするには、コンテンツソースやオーサリングエクスペリエンスに依存しないようにする必要があります。詳細と一般的なガイダンスについては、[David のモデル（テイク 2）にあります。](https://www.aem.live/docs/davidsmodel)具体的には、[ブロックコレクション](/help/edge/developer/block-collection.md)は、一般的なユーザーインターフェイスのパターンにおける特定の使用例に対応する、広範なコンテンツモデルのセットを含んでいます。
+どのプロジェクトでも初期段階で、すべてのブロックについて、コンテンツモデルを慎重に検討する必要があります。作成者がブロックの実装やスタイルを再利用しながら、切り替えたり組み合わせたりできるようにするには、コンテンツソースやオーサリングエクスペリエンスに依存しないようにする必要があります。詳細および一般的なガイダンスについては、[David&#39;s Model （take 2） ](https://www.aem.live/docs/davidsmodel) を参照してください。 具体的には、[ ブロックコレクション ](/help/edge/developer/block-collection.md) には、一般的なユーザーインターフェイスパターンの特定のユースケースに対応する、広範なコンテンツモデルのセットが含まれています。
 
 Edge Delivery Services を使用した WYSIWYG オーサリングでは、リッチテキストのようにコンテキスト内でセマンティックマークアップを編集するのではなく、複数のフィールドで構成されるフォームを使用して情報がオーサリングされる場合に、魅力的なセマンティックコンテンツモデルをどのように提供するかという問題が生じます。
 
@@ -345,7 +345,7 @@ Edge Delivery Services を使用した WYSIWYG オーサリングでは、リッ
 * **画像** - AEM のリソースへの参照が `image/` で始まる MIME タイプのアセットである場合、その参照は `<picture><img src="${reference}"></picture>` としてレンダリングされます。
 * **リンク** - AEM 内に存在している参照が画像ではない場合、または値が `https?://` または `#` で始まる場合、参照は `<a href="${reference}">${reference}</a>` としてレンダリングされます。
 * **リッチテキスト** - トリミングされた値が段落（`p`、`ul`、`ol`、`h1` - `h6` など）で始まる場合、値はリッチテキストとしてレンダリングされます。
-* **クラス名** - `classes` プロパティは[ブロックオプション](/help/edge/developer/markup-sections-blocks.md#block-options)として扱われ、[単純なブロック](#simple)ではテーブルヘッダーにレンダリングされ、または[コンテナブロック内にある項目の値リストとしてレンダリングされます。](#container)[ブロックを別のスタイルに設定](/help/edge/wysiwyg-authoring/create-block.md#block-options)する際、完全に新しいブロックを作成する必要はない場合に役立ちます。
+* **クラス名** - `classes` プロパティは [ ブロックオプション ](/help/edge/developer/markup-sections-blocks.md#block-options) として扱われ、[ 単純ブロック ](#simple) のテーブルヘッダーまたは [ コンテナブロック ](#container) 内の項目の値リストとしてレンダリングされます。 この方法は、完全に新しいブロックを作成する必要がない [ 異なるスタイルをブロックに設定する ](/help/edge/wysiwyg-authoring/create-block.md#block-options) 場合に便利です。
 * **値リスト** - 値が複数値プロパティで、最初の値が以前の値でない場合、すべての値がコンマ区切りリストとして連結されます。
 
 それ以外の部分はすべてプレーンテキストとしてレンダリングされます。
@@ -532,11 +532,11 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 ## セクションとセクションのメタデータ {#sections-metadata}
 
-開発者は複数の[ブロック](#blocks)を定義およびモデル化するのと同じ方法で、異なるセクションを定義できます。
+開発者が複数の [ ブロック ](#blocks) を定義してモデル化するのと同じように、異なるセクションを定義できます。
 
 Edge 配信サービスのコンテンツモデルでは、セクションに含まれるデフォルトのコンテンツまたはブロックである1 レベルのネストのみを意図的に許可します。つまり、他のコンポーネントを含む、より複雑なビジュアルコンポーネントを持つには、セクションとしてモデル化し、自動ブロッククライアント側を使用して組み合わせる必要があります。これの一般的な例としては、タブや、アコーディオンのような折りたたみ可能なセクションがあります。
 
-セクションは、ブロックと同じ方法で定義できますが、リソースタイプは `core/franklin/components/section/v1/section` となります。セクションには、[ユニバーサルエディター](/help/implementing/universal-editor/introduction.md)のみにより使用される名前と[フィルター ID](/help/implementing/universal-editor/filtering.md) を指定できます。また、セクションには、セクションのメタデータをレンダリングするのに使用される[モデル ID](/help/implementing/universal-editor/field-types.md#model-structure) も指定できます。モデルはこのようにして、セクションメタデータブロックのモデルとなります。空でない場合、このモデルは自動的にキーと値のブロックとしてセクションに追加されます。
+セクションは、ブロックと同じ方法で定義できますが、リソースタイプは `core/franklin/components/section/v1/section` となります。セクションには、名前と [ フィルター ID](/help/implementing/universal-editor/filtering.md) （[ ユニバーサルエディター ](/help/implementing/universal-editor/introduction.md) でのみ使用される）と、セクションメタデータのレンダリングに使用される [ モデル ID](/help/implementing/universal-editor/field-types.md#model-structure) を含めることができます。 モデルはこのようにして、セクションメタデータブロックのモデルとなります。空でない場合、このモデルは自動的にキーと値のブロックとしてセクションに追加されます。
 
 デフォルトのセクションの[モデル ID](/help/implementing/universal-editor/field-types.md#model-structure) および[フィルター ID](/help/implementing/universal-editor/filtering.md) は `section` です。これを使用して、デフォルトのセクションの動作を変更できます。次の使用例は、いくつかのスタイルと背景画像をセクションメタデータモデルに追加します。
 
@@ -595,7 +595,7 @@ Edge 配信サービスのコンテンツモデルでは、セクションに含
 
 ## ページメタデータ {#page-metadata}
 
-ドキュメントには、ページの `<head>` でどの `<meta>` 要素がレンダリングされるかを定義するのに使用されるページ[メタデータブロック](https://www.aem.live/developer/block-collection/metadata)を含めることができます。AEM as a Cloud Service のページのプロパティは、`title`、`description`、`keywords` などの Edge 配信サービスですぐに使用できるプロパティにマッピングされます。
+ドキュメントにはページ [ メタデータブロック ](https://www.aem.live/developer/block-collection/metadata) を含めることができます。このページを使用して、ページの `<head>` でレンダリングされる `<meta>` 要素を定義します。 AEM as a Cloud Service のページのプロパティは、`title`、`description`、`keywords` などの Edge 配信サービスですぐに使用できるプロパティにマッピングされます。
 
 独自のメタデータの定義方法を詳しく学ぶ前に、次のドキュメントを参照して、最初にページメタデータの概念を理解してください。
 
@@ -645,5 +645,5 @@ Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリン
 
 >[!TIP]
 >
->コンテンツソースとして AEM as a Cloud Service を使用して WYSIWYG オーサリングを実行できる、新しい Edge Delivery Services プロジェクトの作成に関するエンドツーエンドのチュートリアルについて詳しくは、[この AEM GEM ウェビナー](https://experienceleague.adobe.com/ja/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)を参照してください。
+>AEM as a Cloud Serviceをコンテンツソースとして使用したWYSIWYG オーサリングが可能な新しいEdge Delivery Servicesプロジェクトの作成に関するエンドツーエンドのチュートリアルについては、[ このAEM GEMs ウェビナー ](https://experienceleague.adobe.com/ja/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery) を参照してください。
 

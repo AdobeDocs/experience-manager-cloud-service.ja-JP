@@ -5,16 +5,16 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '1250'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
 # レイアウトコンテナおよびレイアウトモードの設定 {#configuring-layout-container-and-layout-mode}
 
-[レスポンシブレイアウト](/help/sites-cloud/authoring/page-editor/responsive-layout.md)は、[レスポンシブ web デザインを実現するためのメカニズムです。](https://en.wikipedia.org/wiki/Responsive_web_design)レスポンシブレイアウトを使用すると、コンテンツ作成者は、ユーザーが使用するデバイスのレイアウトとサイズに応じて web ページを作成できます。
+[レスポンシブレイアウト](/help/sites-cloud/authoring/page-editor/responsive-layout.md)は、[レスポンシブ web デザイン](https://en.wikipedia.org/wiki/Responsive_web_design)を実現するためのメカニズムです。これにより、コンテンツ作成者は、ユーザーが使用するデバイスのレイアウトとサイズに応じて web ページを作成できます。
 
 AEM は、次のメカニズムを組み合わせて使用することにより、ページのレスポンシブレイアウトを実現します。
 
@@ -228,4 +228,4 @@ AEM では、必要な CSS の一部の生成に LESS を使用するため、�
 
 ### レイアウトコンテナのグリッドを設定する {#configure-the-grid-of-the-layout-container}
 
-[ページテンプレートを編集することで](/help/sites-cloud/authoring/page-editor/templates.md)、レイアウトコンテナの特定のインスタンスごとに、使用可能な列の数を設定できます。
+レイアウトコンテナの特定のインスタンスごとに使用可能な列の数を設定するには [ ページテンプレートを編集します ](/help/sites-cloud/authoring/page-editor/templates.md)。

@@ -4,10 +4,10 @@ description: クラウド環境で迅速な開発反復処理を行うために�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 24c34daebf7d45d9262181890310eb196c58a7db
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4990'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -548,23 +548,23 @@ RDE をリセットすると、すべてのカスタムコード、設定およ�
 
 リセットすると、RDE が使用可能な最新の AEM バージョンに設定されます。
 
-リセットは、[Cloud Manager](#reset-the-rde-cloud-manager) または [ コマンドライン ](#reset-the-rde-command-line) を使用して行うことができます。 リセットには数分かかり、既存のコンテンツとコードはすべて RDE から削除されます。
+リセットは、[Cloud Manager](#reset-the-rde-cloud-manager) または [コマンドライン](#reset-the-rde-command-line) で行うことができます。リセットには数分かかり、既存のコンテンツおよびコードはすべて RDE から削除されます。
 
->[注意!]
+>[メモ]
 >
->リセット機能を使用するには、Cloud Manager開発者の役割が割り当てられている必要があります。 そうでない場合、リセットアクションはエラーになります。
+>リセット機能を使用するには、Cloud Manager 開発者の役割が割り当てられている必要があります。そうでない場合、リセットアクションはエラーとなります。
 
 ### コマンドラインを使用した RDE のリセット {#reset-the-rde-command-line}
 
-RDE をリセットし、次のコマンドを実行してデフォルトの状態に戻すことができます。
+次のコマンドを実行すると、RDE をリセットしてデフォルトの状態に戻すことができます。
 
 `aio aem:rde:reset`
 
-この処理には通常数分かかり、処理が成功した場合は ```Environment reset.``` に、エラーが発生した場合は ```Failed to reset the environment.``` に報告されます。 構造化された出力については、以下の出力に関する章 ```--json``` 参照してください。
+これには、通常数分かかり、成功した場合は ```Environment reset.```、エラーの場合は ```Failed to reset the environment.``` が報告されます。構造化された出力について詳しくは、以下の ```--json``` 出力に関する章を参照してください。
 
-[status コマンド ](#checking-rde-status) を使用して、環境の準備が再び整ったことを確認します。
+環境の準備が再び整ったことを確認するには、[ステータスコマンド](#checking-rde-status)を使用します。
 
-### Cloud Managerでの RDE のリセット {#reset-the-rde-cloud-manager}
+### Cloud Manager での RDE のリセット {#reset-the-rde-cloud-manager}
 
 次の手順に従って、Cloud Manager を使用して RDE をリセットできます。
 
@@ -942,7 +942,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 }
 ```
 
-#### 完了するまで待ち、正常にリセットします {#wait-success}
+#### 完了まで待機し、リセットに成功 {#wait-success}
 
 ```$ aio aem rde reset --json```
 
@@ -954,7 +954,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 }
 ```
 
-#### 完了まで待機、リセットに失敗しました {#wait-failed}
+#### 完了まで待機し、リセットに失敗 {#wait-failed}
 
 ```$ aio aem rde reset --json```
 
@@ -1062,7 +1062,7 @@ AEM as a Cloud Service での RDE について詳しくは、[設定方法、使
 
 ### 既存の RDE に対する最新の AEM バージョンを取得する方法 {#get-latest-aem-version}
 
-作成時に、RDE は使用可能な最新の Adobe Experience Manager（AEM）バージョンに設定されます。Cloud Manager または `aio aem:rde:reset` コマンドを使用して実行できる [RDE のリセット](#reset-rde)は、RDE を循環させ、使用可能な最新の AEM バージョンに設定します。
+作成時に、RDE は使用可能な最新の Adobe Experience Manager（AEM）バージョンに設定されます。Cloud Managerまたは `aio aem:rde:reset` コマンドを使用して実行できる [RDE リセット ](#reset-rde) は、RDE を循環させ、使用可能な最新のAEM バージョンに設定します。
 
 ## aio RDE プラグインのトラブルシューティング {#aio-rde-plugin-troubleshooting}
 

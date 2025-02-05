@@ -4,10 +4,10 @@ description: 事前設定済みのテンプレートのライブラリに基づ�
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## これまでの説明内容 {#story-so-far}
 
-AEM Reference Demo Add-On ジャーニーの前のドキュメントである[プログラムを作成](create-program.md)では、最初の設定手順で、テスト用のプログラムを作成し、パイプラインを使用してアドオンコンテンツをデプロイしました。その結果、以下を習得しました。
+AEM Reference Demos Add-On ジャーニーの前のドキュメントである [ プログラムを作成 ](create-program.md) では、最初の設定手順で、テスト用のプログラムを作成し、パイプラインを使用してアドオンコンテンツをデプロイしました。 その結果、以下を習得しました。
 
 * Cloud Manager を使用してプログラムを作成する方法を理解します。
 * 新しいプログラムの Reference Demos Add-On を有効にする方法。
@@ -105,8 +105,8 @@ AEM Reference Demo Add-On ジャーニーの前のドキュメントである[�
 
 アドオンコンテンツを使用して AEM の機能をテストできるようになりました。ジャーニーを続行するには、次の 2 つのオプションがあります。
 
-* AEM Screens のコンテンツの完全なデモとテストを行う場合は、前に説明したように、**We.Cafe サイトテンプレート**&#x200B;に基づいてサイトをデプロイし、続いて[デモサイトに対して AEM Screens を有効にします](screens.md)。
-* Sites コンテンツのデモのみの場合は、続いて[デモサイトを管理](manage.md)に進んで、デモサイトの管理に役立つツールと、デモサイトを削除する方法を学びます。
+* AEM Screensのコンテンツの完全なデモとテストを行う場合は、前に説明したように、**We.Cafe サイトテンプレート** に基づいてサイトをデプロイし、続いて [ デモサイトに対してAEM Screensを有効にする ](screens.md) を行います。
+* Sites コンテンツのデモのみの場合は、続いて [ デモサイトの管理 ](manage.md) に進んで、デモサイトの管理に役立つツールと、デモサイトを削除する方法を学びます。
 
 ## その他のリソース {#additional-resources}
 

@@ -5,7 +5,7 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2518'
 ht-degree: 99%
@@ -49,7 +49,7 @@ ht-degree: 99%
 
 コンテンツフラグメントを編集用に開くと、デフォルトで「**バリエーション**」タブが開きます。このタブで、プライマリまたはバリエーション（ある場合）のコンテンツをオーサリングできます。構造化されたフラグメントには、コンテンツモデルで定義された、様々なデータタイプの各種フィールドが含まれています。
 
-例：
+次に例を示します。
 
 ![全画面表示エディター](assets/cfm-variations-02.png)
 
@@ -105,7 +105,7 @@ ht-degree: 99%
 
 全画面表示エディター（複数行テキスト）を開いている場合は、次のアクションも（すべての[形式](#formats)で）使用できます。
 
-* [形式](#formats)（[リッチテキスト](#rich-text)、[プレーンテキスト](#plain-text)、[マークダウン](#markdown)）の選択
+* [format](#formats) （[ リッチテキスト ](#rich-text)、[ プレーンテキスト ](#plain-text)、[Markdown](#markdown)）を選択します。
 
 * [コンテンツのアップロード](#uploading-content)
 
@@ -221,7 +221,7 @@ ht-degree: 99%
 
 全画面表示エディターを開くと、「**テキスト統計**」アクションには、テキストに関する様々な情報が表示されます。
 
-例：
+次に例を示します。
 
 ![統計](assets/cfm-variations-04.png)
 
@@ -317,7 +317,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->注釈機能では、新しい [ コンテンツフラグメントエディター ](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment) に入力されたコメントが表示されません。
+>注釈機能では、新しい[コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment)で入力したコメントは表示されません。
 
 ### 注釈の表示、編集、削除 {#viewing-editing-deleting-annotations}
 
@@ -417,7 +417,7 @@ ht-degree: 99%
 
 ![継承関係を示すコンテンツフラグメント](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
 
-例：
+次に例を示します。
 
 * 継承をキャンセル
 

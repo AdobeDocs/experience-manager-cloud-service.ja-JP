@@ -5,10 +5,10 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '1071'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -129,7 +129,7 @@ AEM ヘッドレスアプリケーションの使用時に最高のユーザー�
 
 ただし、AEM のヘッドレスストアは、ここで終わる必要はありません。[ジャーニーの「はじめに」のパート](getting-started.md#integration-levels)では、AEM でヘッドレス配信と従来のフルスタックモデルをサポートできるだけでなく、両方の利点を組み合わせたハイブリッドモデルもサポートできる方法について簡単に説明に説明しました。
 
-このような柔軟性がプロジェクトに必要な場合は、さらにジャーニーのオプションパート [AEM で単一ページアプリケーション（SPA）を作成する方法](create-spa.md)に進んでください。
+このような柔軟性がプロジェクトに必要な場合は、さらにジャーニーのオプションパート [AEMでシングルページアプリケーション（SPA）を作成する方法 ](create-spa.md) に進んでください。
 
 ## その他のリソース {#additional-resources}
 

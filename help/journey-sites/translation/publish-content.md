@@ -8,10 +8,10 @@ exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1326'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## これまでの説明内容 {#story-so-far}
 
-AEM Sites 翻訳ジャーニーの以前のドキュメント（[コンテンツの翻訳](configure-connector.md)）では、AEM 翻訳プロジェクトを使用してコンテンツを翻訳する方法について説明しました。その結果、以下を達成できました。
+AEM Sites翻訳ジャーニーの以前のドキュメント [ コンテンツの翻訳 ](configure-connector.md) では、AEM翻訳プロジェクトを使用してコンテンツを翻訳する方法について説明しました。 その結果、以下を達成できました。
 
 * 翻訳プロジェクトの概要を理解する
 * 新しい翻訳プロジェクトを作成できる
@@ -122,7 +122,7 @@ AEM Sites 翻訳ジャーニーの以前のドキュメント（[コンテンツ
 
 お気づきかもしれませんが、新しいカードに表示される統計情報が異なります。これは、最後の翻訳以降に変更された内容を AEM が認識し、翻訳が必要なコンテンツのみを対象とするからです。これには、更新されたコンテンツの再翻訳と、新しいコンテンツの初回翻訳が含まれます。
 
-これ以降は、[初回翻訳と同じように翻訳ジョブを開始および管理](translate-content.md#using-translation-project)します。
+これ以降は、[ 初回翻訳と同じように翻訳ジョブを開始および管理 ](translate-content.md#using-translation-project) します。
 
 ### 手動作成された翻訳プロジェクトの更新 {#updating-manual-project}
 
@@ -144,15 +144,15 @@ AEM Sites 翻訳ジャーニーの以前のドキュメント（[コンテンツ
    ![ターゲット言語を選択](assets/select-target-language.png)
 
 1. 新しい翻訳ジョブのターゲット言語が設定されたら、ジョブカードの下部にある省略記号ボタンを選択して、ジョブの詳細を表示します。
-1. ジョブを初めて作成したとき、ジョブは空です。[翻訳プロジェクトの初回作成時と同じように](translate-content.md##manually-creating)、「**追加**」ボタンをタップまたはクリックし、パスブラウザーを使用して、ジョブにコンテンツを追加します。
+1. ジョブを初めて作成したとき、ジョブは空です。**追加** ボタンをタップまたはクリックし、（翻訳プロジェクトの初回作成時と同じように [ パスブラウザーを使用して、ジョブにコンテンツを追加し ](translate-content.md##manually-creating) す。
 
 >[!TIP]
 >
 >パスブラウザーの強力なフィルターは、更新されたコンテンツのみを見つけるのに役立ちます。
 >
->パスブラウザーについて詳しくは、 [その他のリソース](#additional-resources) の節を参照してください。
+>パスブラウザーについて詳しくは、[ その他のリソース ](#additional-resources) の節を参照してください。
 
-これ以降は、[初回翻訳と同じように翻訳ジョブを開始および管理](translate-content.md#using-translation-project)します。
+これ以降は、[ 初回翻訳と同じように翻訳ジョブを開始および管理 ](translate-content.md#using-translation-project) します。
 
 ## ジャーニーの終了 {#end-of-journey}
 

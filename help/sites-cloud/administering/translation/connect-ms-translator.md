@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 solution: Experience Manager Sites
-source-git-commit: 2314ad30ea31b49d832ce0fdf729420e0ee70e0c
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ AEM には、ページのコンテンツまたはアセットを翻訳する [Mi
 
 >[!TIP]
 >
->コンテンツの翻訳を初めて行う場合は、[Sites 翻訳ジャーニー](/help/journey-sites/translation/overview.md)を参照してください。これは、AEM の強力な翻訳ツールを使用して AEM Sites コンテンツを翻訳する手順を示すガイドです。AEM や翻訳の経験がないユーザーに最適です。
+>コンテンツの翻訳を初めて行う場合は、[ サイト翻訳ジャーニー](/help/journey-sites/translation/overview.md) を参照してください。これは、AEMの強力な翻訳ツールを使用してAEM Sites コンテンツを翻訳する手順を示すガイドです。AEMや翻訳の経験がないユーザーに最適です。
 
 | プロパティ | 説明 |
 |---|---|
@@ -29,7 +29,7 @@ AEM には、ページのコンテンツまたはアセットを翻訳する [Mi
 
 Microsoft Translator 設定を作成するには、次の手順に従います。
 
-1. [ナビゲーションパネル](/help/sites-cloud/authoring/basic-handling.md#first-steps)で、**ツール**／**クラウドサービス**／**翻訳クラウドサービス**&#x200B;を選択します。
+1. [ ナビゲーションパネル ](/help/sites-cloud/authoring/basic-handling.md#first-steps) で、**ツール**/**Cloud Service**/**翻訳Cloud Service** を選択します。
 1. 設定を作成する場所に移動します。通常は、これはサイトのルートにあります。また、グローバルなデフォルト設定にすることもできます。
 1. 「**作成**」ボタンを選択します。
 1. 設定を定義します。

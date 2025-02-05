@@ -4,10 +4,10 @@ description: AEM の Query Builder を使用すると、コンテンツリポジ
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '627'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -101,7 +101,7 @@ replic.action=Activate
 
 >[!TIP]
 >
->Maven の使用など、新しい AEM プロジェクトのセットアップについて詳しくは、[WKND チュートリアル](develop-wknd-tutorial.md)を参照してください。
+>Maven の使用を含む新しいAEM プロジェクトの設定については、[WKND チュートリアル ](develop-wknd-tutorial.md) で詳しく説明しています。
 
 まず、プロジェクトの Maven 依存関係を更新する必要があります。`PredicateEvaluator` は `cq-search` アーティファクトの一部なので、Maven の pom ファイルに追加する必要があります。
 

@@ -2,10 +2,11 @@
 title: デジタルアセットの再処理
 description: デジタルアセットの再処理の様々な方法について説明します。
 role: User, Leader, Developer
-source-git-commit: b041aa680b65ba4da0d7bf90fcb849a6388a9838
+exl-id: 19ca5278-929e-438b-9436-928f6c9f87d5
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '685'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -81,7 +82,7 @@ ht-degree: 100%
 
 ### フォルダー内の Dynamic Media アセットの再処理 {#reprocessing-dynamic-media}
 
-後で変更した既存の Dynamic Media イメージプロファイルまたは Dynamic Media ビデオプロファイルが存在するフォルダー内のアセットを再処理できます。詳しくは、[フォルダー内の Dynamic Media アセットの再処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ja)を参照してください。
+後で変更した既存の Dynamic Media イメージプロファイルまたは Dynamic Media ビデオプロファイルが存在するフォルダー内のアセットを再処理できます。詳しくは、[ フォルダー内のDynamic Media アセットの再処理 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ja) を参照してください。
 
 >[!NOTE]
 >

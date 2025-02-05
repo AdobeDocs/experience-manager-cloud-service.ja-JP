@@ -4,10 +4,10 @@ description: リモートアプリのコンテンツや UI の変更に対応す
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 95%
 
 例えば、`aue:content-update` と `aue:ui-select` です。
 
-イベントには、リクエストと応答のペイロードが含まれ、対応する呼び出しが成功するとトリガーされます。呼び出しとそのペイロードの例について詳しくは、[ユニバーサルエディターの呼び出し](/help/implementing/universal-editor/calls.md)ドキュメントを参照してください。
+イベントには、リクエストと応答のペイロードが含まれ、対応する呼び出しが成功するとトリガーされます。呼び出しとそのペイロードの例について詳しくは、ドキュメント [ ユニバーサルエディターの呼び出し ](/help/implementing/universal-editor/calls.md) を参照してください。
 
 ## コンテンツ更新イベント {#content-events}
 
@@ -55,7 +55,7 @@ ht-degree: 95%
 
 ### aue:content-details {#content-details}
 
-プロパティパネルにコンポーネントが読み込まれると、`aue:content-details` イベントがトリガーされます。
+`aue:content-details` イベントは、プロパティパネルにコンポーネントを読み込んだ際にトリガーされます。
 
 ペイロードは、コンポーネントのコンテンツであり、オプションでそのスキーマでもあります。
 
@@ -91,7 +91,7 @@ ht-degree: 95%
 
 ### aue:content-patch {#content-patch}
 
-プロパティパネルでコンポーネントのデータが更新されると、`aue:content-patch` イベントがトリガーされます。
+`aue:content-patch` イベントは、プロパティパネルでコンポーネントのデータを更新した際にトリガーされます。
 
 ペイロードは、更新したプロパティの JSON パッチです。
 

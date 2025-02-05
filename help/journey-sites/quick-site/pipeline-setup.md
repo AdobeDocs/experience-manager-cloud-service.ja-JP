@@ -5,10 +5,10 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '949'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## これまでの説明内容 {#story-so-far}
 
-AEM クイックサイト作成ジャーニーの前のドキュメントである [テンプレートからサイトを作成](create-site.md) では、サイトテンプレートを使用して AEM サイトをすばやく作成する方法を学び、フロントエンドツールを使用してさらにカスタマイズできるようになりました。ここまでの学習内容を以下にまとめます。
+AEM クイックサイト作成ジャーニーの前のドキュメントである [ テンプレートからサイトを作成 ](create-site.md) では、サイトテンプレートを使用してAEM サイトをすばやく作成する方法を学び、フロントエンドツールを使用してさらにカスタマイズできるようになりました。ここまでの学習内容を以下にまとめます。
 
 * AEM Site テンプレートの取得方法を理解する。
 * テンプレートを使用して新しいサイトを作成する方法を学ぶ。
@@ -114,11 +114,11 @@ URL にアクセスまたはコピーしたプログラムの名前をメモし�
 * フロントエンドパイプラインとは何かを理解する。
 * Cloud Manager でフロントエンドパイプラインを設定する方法を理解する。
 
-この知識をもとに、 [フロントエンド開発者へのアクセス権の付与](grant-access.md) のドキュメントを確認して、AEM クイックサイト作成ジャーニーを続行します。このドキュメントでは、Cloud Manager にフロントエンド開発者をオンボーディングして、AEM サイトの Git リポジトリとパイプラインにアクセスできるようにします。
+この知識をもとに、[ フロントエンド開発者へのアクセス権の付与 ](grant-access.md) のドキュメントを確認して、AEM クイックサイト作成ジャーニーを続行します。このドキュメントでは、Cloud Managerにフロントエンド開発者をオンボーディングして、AEM サイトの Git リポジトリとパイプラインにアクセスできるようにします。
 
 ## その他のリソース {#additional-resources}
 
-[サイトテーマのカスタマイズ](customize-theme.md) のドキュメントを確認して、クイックサイト作成ジャーニーの次のステップに進むことをお勧めします。ジャーニーに必須ではありませんが、このドキュメントで取り上げたいくつかの概念について詳しく説明している追加のオプションリソースを以下に挙げます。
+[ サイトテーマのカスタマイズ ](customize-theme.md) のドキュメントを確認して、クイックサイト作成ジャーニーの次のパートに進むことをお勧めしますが、以下のリソースではこのドキュメントで取り上げた概念についてより詳しく説明しています。追加的なオプションであり、ジャーニーを続ける上で必須のリソースではありません。
 
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=ja) - Cloud Manager の機能について詳しくは、詳細な技術ドキュメントを直接参照してください。
 * [Cloud Manager リポジトリ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - AEMaaCS プロジェクトの Git リポジトリの設定および管理方法について詳しくは、このドキュメントを参照してください。

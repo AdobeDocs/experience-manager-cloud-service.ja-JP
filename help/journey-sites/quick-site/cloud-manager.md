@@ -5,10 +5,10 @@ exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '1113'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -31,7 +31,7 @@ Cloud Manager と、新しいクイックサイト作成プロセスとの結び
 
 このドキュメントでは、設定を開始するジャーニーの次のステップに進む前に、クイックサイト作成ソリューションのこれらの基本的な要素を理解することに焦点を当てています。
 
-このジャーニーを順を追って進めることをお勧めしますが、既に AEM Sites と Cloud Manager が連携することを理解していて、設定を直接開始する場合は、 [ジャーニーの次のステップにスキップ](create-site.md) できます。
+このジャーニーを順を追って進めることをお勧めしますが、既にAEM SitesとCloud Managerが連携することを理解していて、設定を直接開始する場合は [ ジャーニーの次のステップにスキップ ](create-site.md) できます。
 
 ## 担当する役割 {#responsible-role}
 
@@ -122,11 +122,11 @@ Cloud Manager は、AEM as a Cloud Service の必須コンポーネントであ�
 * AEM Sites と Cloud Manager が連携してフロントエンド開発を容易にする仕組みを理解する。
 * フロントエンドのカスタマイズ手順が AEM から完全に切り離されており、AEM に関する知識を必要としない仕組みを確認する。
 
-この知識に基づいて、次は [テンプレートからのサイトの作成](create-site.md)のドキュメントを確認して、AEM クイックサイト作成ジャーニーを続行してください。そこでは、テンプレートを使用して新規 AEM サイトを迅速に作成する方法を習得します。
+この知識に基づいて、次は [ テンプレートからのサイトの作成 ](create-site.md) のドキュメントを確認して、AEM クイックサイト作成ジャーニーを続行してください。そこでは、テンプレートを使用して新規AEM サイトを迅速に作成する方法を習得します。
 
 ## その他のリソース {#additional-resources}
 
-[テンプレートからのサイトの作成](create-site.md) のドキュメントを確認して、クイックサイト作成ジャーニーの次のステップに進むことをお勧めしますが、以下のリソースではこのドキュメントで取り上げた概念についてさらに詳しく説明しています。なお、これらは追加のオプションリソースであり、ジャーニーを続けるうえで必須ではありません。
+[ テンプレートからサイトを作成 ](create-site.md) のドキュメントを確認して、クイックサイト作成ジャーニーの次のパートに進むことをお勧めしますが、以下のリソースではこのドキュメントで取り上げた概念についてより詳しく説明しています。追加的なオプションであり、ジャーニーを続ける上で必須のリソースではありません。
 
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=ja) - Cloud Manager の機能について詳しくは、詳細な技術ドキュメントを直接参照してください。
 * [役割に基づく権限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=ja) - Cloud Manager には、適切な権限を持つ役割が事前に設定されています。これらの役割の詳細と管理方法については、このドキュメントを参照してください。

@@ -4,10 +4,10 @@ description: プレリリースチャネルを使用して、AEM as a Cloud Serv
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1264'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## はじめに {#introduction}
 
-Adobe Experience Manager as a Cloud Service は、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja#aem-as-cloud-service)に従って、毎月のリリースサイクルで新機能を提供します。
+Adobe Experience Manager as a Cloud Serviceは、[Experience Managerリリースロードマップ ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja#aem-as-cloud-service) に従って、毎月のリリースサイクルで新機能を提供します。
 
 次の機能リリースで公開予定の機能を把握できるように、プレリリースチャネルを購読できます。プレリリースチャネルにアクセスするには、開発環境または任意のサンドボックス環境を設定します。AEM ユーザーインターフェイスからアクセス可能な変更をプレビューしたり、新しいプレリリース API に対してコードを作成したりできます。
 
@@ -50,7 +50,7 @@ AEM as a Cloud Service には 2 種類のリリースがあります。
 
 ## カレンダーをマークする {#mark-calendars}
 
-機能リリースは事前にスケジュールされており、リリース日は [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja#aem-as-cloud-service) で公開されています。
+機能リリースは事前にスケジュールされており、リリース日は ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja#aem-as-cloud-service)0}Adobe Experience League} に公開されています。[
 
 リリース日を控えておくと、今後の機能の確認やテストを計画できます。
 
@@ -83,7 +83,7 @@ AEM as a Cloud Service には 2 種類のリリースがあります。
 
 1. プレリリースを有効にする環境を選択し、**プログラム**／**環境**／**環境設定**&#x200B;に移動して、設定にアクセスします。
 
-1. 新しい[環境変数](../implementing/cloud-manager/environment-variables.md)を追加します。
+1. 新しい [ 環境変数 ](../implementing/cloud-manager/environment-variables.md) を追加します
 
    | 名前 | 値 | 適用されるサービス | タイプ |
    |------|-------|-----------------|------|
@@ -97,7 +97,7 @@ AEM as a Cloud Service には 2 種類のリリースがあります。
 
 Cloud Manager API と CLI を使用して環境変数を更新することもできます。
 
-* [Cloud Manager API の環境変数エンドポイント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables)を使用して、`AEM_RELEASE_CHANNEL` 環境変数に値 `prerelease` を設定します。
+* [Cloud Manager API の環境変数エンドポイント ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables) を使用して、`AEM_RELEASE_CHANNEL` 環境変数に値 `prerelease` を設定します。
 
   ```text
   PATCH /program/{programId}/environment/{environmentId}/variables

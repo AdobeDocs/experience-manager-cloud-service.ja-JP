@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 100%
 
 これは、**Day CQ WCM Rollout Manager** の [OSGi 設定](/help/implementing/deploying/configuring-osgi.md)を使用して行います。ロールアウトマネージャーが、ブループリントに存在する名前を使用してライブコピーで作成されたページからの競合を処理する場合は、**手動で作成されたページで競合を処理**（`rolloutmgr.conflicthandling.enabled`）の値を true に設定します。
 
-AEM には、[競合の管理が無効になった場合の動作が事前定義](#behavior-when-conflict-handling-deactivated)されています。
+AEM には[競合の処理のアクティベートが解除されたときの動作が事前定義](#behavior-when-conflict-handling-deactivated)されています。
 
 ## 競合ハンドラー {#conflict-handlers}
 
@@ -118,7 +118,7 @@ AEM には次の機能があります。
 
 ### 競合処理が無効になった場合の動作 {#behavior-when-conflict-handling-deactivated}
 
-手動で[競合処理を無効にする](#rollout-manager-and-conflict-handling)と、AEM では、競合するページに対して何のアクションも実行されません。競合しないページは、正常にロールアウトされます。
+手動で [ 競合処理を無効にする ](#rollout-manager-and-conflict-handling) と、AEMでは、競合するページに対して何のアクションも実行されません。 競合しないページは、正常にロールアウトされます。
 
 >[!CAUTION]
 >

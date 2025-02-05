@@ -4,10 +4,10 @@ description: アダプティブフォームで DocuSign を使用して電子サ
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1534'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -185,7 +185,7 @@ AEM Forms as a Cloud Service には DocuSign 用のカスタム送信アクシ�
 
    - カスタムフォームテンプレートがない場合は、「**[!UICONTROL レコードのドキュメントを生成]**」オプションを選択します。このオプションを使用すると、署名用に送信されたドキュメントにアダプティブフォームのすべてのフィールドが表示されます。
 
-1. 「**[!UICONTROL 作成」を選択します。]** 署名が有効なアダプティブフォームが作成されます。[!DNL DocuSign] フィールドをフォームに追加し、署名用に送信できます。
+1. 「**[!UICONTROL 作成]**」を選択します。 署名付きのアダプティブフォームが作成されます。 [!DNL DocuSign] フィールドをフォームに追加し、署名用に送信できます。
 1. アダプティブフォームを編集モードで開きます。「**[!UICONTROL コンテンツ]**」タブで「**[!UICONTROL フォームコンテナ]**」を選択し、「![設定](assets/configure-icon.svg)」をクリックします。
 
 1. 「**[!UICONTROL 送信]**」セクションの「**[!UICONTROL 送信アクション]**」ドロップダウンリストで、「**[!UICONTROL DocuSign 電子サインを使用して送信]**」を選択します。

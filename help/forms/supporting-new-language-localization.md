@@ -4,10 +4,10 @@ description: アダプティブフォームでは、追加設定なしで提供�
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '1220'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ AEM Forms が標準でサポートしているロケールは、英語（en）�
 #### 1. リポジトリのクローンを作成する {#clone-the-repository}
 
 1. コマンドラインで、Forms Cloud Service リポジトリのクローン先に移動します。
-1. [Cloud Manager から取得したコマンドを実行します。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/` のようになります。
+1. [Cloud Managerから取得した ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) コマンドを実行します。 `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/` に似ています。
 1. git のユーザー名とパスワードを使用して、リポジトリのクローンを作成します。
 1. 任意のエディターで、クローン作成された FormsCloud Service リポジトリフォルダーを開きます。
 

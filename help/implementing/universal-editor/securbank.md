@@ -4,10 +4,10 @@ description: ユニバーサルエディターの概要と、SecurBank アプリ
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '902'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -24,12 +24,12 @@ ht-degree: 100%
 
 SecurBank アプリのインストールは簡単ですが、AEM as a Cloud Service の多くの領域に関係するので、いくつかの手順が必要になります。主な手順の概要は次のとおりです。
 
-1. [Cloud Manager でサンドボックスプログラムを作成](#create-sandbox-program)
-1. [プログラムの Git リポジトリのクローンを作成し、SecurBank AEM プロジェクトコンテンツで更新](#clone-and-update)
-1. [パイプラインを実行して、SecurBank AEM プロジェクトをデプロイ](#run-pipeline)
-1. [ローカル web アプリ開発用の Cloud Manager 資格情報を取得](#retrieve-credentials)
-1. [SecurBank web アプリをダウンロードして設定](#download-web-app)
-1. [SecurBank web アプリを実行](#run-web-app)
+1. [Cloud Managerでサンドボックスプログラムを作成します ](#create-sandbox-program)。
+1. [ プログラムの Git リポジトリを複製し、SecurBank AEM プロジェクトのコンテンツを使用して更新します ](#clone-and-update)。
+1. [ パイプラインを実行して SecurBank AEM プロジェクトをデプロイします ](#run-pipeline)。
+1. [ ローカル web アプリ開発用のCloud Manager資格情報を取得 ](#retrieve-credentials) します。
+1. [SecurBank web アプリをダウンロードして設定します ](#download-web-app)。
+1. [SecurBank web アプリを実行します ](#run-web-app)。
 
 次の節では、必要な個々のタスクについて詳しく説明します。
 
@@ -42,13 +42,13 @@ SecurBank をインストールできる新しい Cloud Manager プログラム�
 1. SecurBank アプリ用の新しいサンドボックスプログラムを作成します。
 
    * 「**ソリューションとアドオン**」を選択する際は、デフォルトのオプションを使用します。
-   * サンドボックスプログラムの作成方法について詳しくは、[サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)ドキュメントを参照してください。
+   * サンドボックスプログラムの作成方法について詳しくは、ドキュメント [ サンドボックスプログラムの作成 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) を参照してください。
 
 ### プログラムの Git リポジトリのクローンを作成し、SecurBank AEM プロジェクトコンテンツで更新 {#clone-and-update}
 
 1. プログラムを作成したら、これを開き、「**リポジトリ**」タブで「**リポジトリ情報へアクセス**」ボタンをタップまたはクリックして&#x200B;**リポジトリ情報**&#x200B;ダイアログを開き、サンドボックス環境の Git リポジトリにアクセスするために必要な資格情報を表示します。
 
-   * リポジトリ情報にアクセスする方法について詳しくは、[リポジトリへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)ドキュメントを参照してください。
+   * リポジトリ情報へのアクセス方法について詳しくは、[ リポジトリへのアクセス ](/help/implementing/cloud-manager/managing-code/accessing-repos.md) のドキュメントを参照してください。
 
 1. **リポジトリ情報**&#x200B;ダイアログの資格情報を使用して、ローカルマシンにリポジトリのクローンを作成します。
 
@@ -71,7 +71,7 @@ SecurBank の AEM プロジェクトをサンドボックスリポジトリに�
 1. Cloud Manager のサンドボックスプログラムの「**概要**」タブに戻り、フルスタックの実稼動以外の環境パイプラインを実行します。
 
    * パイプライン実行のすべてのオプションをオフにします。
-   * パイプラインの実行について詳しくは、[パイプラインの管理](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)ドキュメントを参照してください。
+   * パイプラインの実行について詳しくは、[ パイプラインの管理 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) のドキュメントを参照してください。
 
 ### ローカル web アプリ開発用の Cloud Manager 資格情報を取得 {#retrieve-credentials}
 

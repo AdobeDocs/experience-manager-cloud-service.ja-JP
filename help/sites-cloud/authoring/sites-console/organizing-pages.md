@@ -5,17 +5,17 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
 
 # ページの整理 {#creating-and-organizing-pages}
 
-AEM で web サイトを整理する方法について説明します。ページをどのように整理する必要があるかを理解したら、[新しいページを作成](/help/sites-cloud/authoring/sites-console/creating-pages.md)し、[既存のページを管理](/help/sites-cloud/authoring/sites-console/managing-pages.md)できます。
+AEM で web サイトを整理する方法について説明します。ページの整理方法を理解したら、[ 新しいページを作成する ](/help/sites-cloud/authoring/sites-console/creating-pages.md)、[ 既存のページを管理 ](/help/sites-cloud/authoring/sites-console/managing-pages.md) できます。
 
 {{edge-delivery-authoring}}
 
@@ -51,7 +51,7 @@ Web サイトの構造は、コンテンツページを保持するツリーと�
    /...
 ```
 
-この構造は [**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)から表示でき、web サイトのページ間を移動したり、ページ上でアクションを実行したりできます。
+この構造は、Web サイトのページ間を移動し、ページでアクションを実行できる [**Sites** コンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) から表示できます。
 
 ## ページ命名規則 {#page-naming-conventions}
 
@@ -130,7 +130,7 @@ AEM では、複数のテンプレートが標準提供されています。使�
 
 ## コンポーネント {#components}
 
-[コンポーネント](/help/implementing/developing/components/overview.md)は、AEM で提供される、特定のタイプのコンテンツを追加できる要素です。AEM には、包括的な機能を提供する[コアコンポーネント](/help/implementing/developing/components/overview.md#core-components)と呼ばれる、一連のコンポーネントが標準提供されています。コンポーネントの例を以下に示します。
+[コンポーネント](/help/implementing/developing/components/overview.md)は、AEM で提供される、特定のタイプのコンテンツを追加できる要素です。AEMには、すぐに使用できるコンポーネント [ コアコンポーネント ](/help/implementing/developing/components/overview.md#core-components) と呼ばれる、包括的な機能を提供する様々なコンポーネントが用意されています。 コンポーネントの例を以下に示します。
 
 * テキスト
 * 画像

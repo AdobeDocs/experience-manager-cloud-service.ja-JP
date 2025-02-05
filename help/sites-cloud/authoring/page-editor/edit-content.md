@@ -5,10 +5,10 @@ exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1612'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ AEM ページエディターには、より高度な機能にアクセスでき�
 
   ![ページに新しいコンポーネントを追加する際のプレースホルダー](assets/edit-content-component-placeholder.png)
 
-* [既存のコンポーネントを移動](#movging-components)すると、青色の正方形で表示されます。
+* [ 既存のコンポーネントを移動 ](#movging-components) すると、青い四角形で表示されます。
 
   ![ページ上の既存のコンポーネントを移動する際のプレースホルダー](assets/edit-content-move-placeholder.png)
 
@@ -54,7 +54,7 @@ AEM ページエディターには、より高度な機能にアクセスでき�
 
 [コンポーネントブラウザー](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)を使用して、新しいコンポーネントを追加できます。[コンポーネントプレースホルダー](#component-placeholder)は、コンポーネントを配置している場所を示します。
 
-1. ページエディターが&#x200B;[**編集**&#x200B;モード](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)であることを確認します。
+1. ページエディターが [**編集** モードになっていることを確認 ](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) ます。
 1. [コンポーネントブラウザー](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)を開きます。
 1. 必要なコンポーネントを[必要な位置](#component-placeholder)までドラッグしてリリースします。
 1. 新しく配置したコンポーネントを[編集](#edit-content)します。
@@ -67,7 +67,7 @@ AEM ページエディターには、より高度な機能にアクセスでき�
 
 段落システムの「**ここにコンポーネントをドラッグ**」プレースホルダーを使用して、新しいコンポーネントを追加できます。
 
-1. ページエディターが&#x200B;[**編集**&#x200B;モード](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)であることを確認します。
+1. ページエディターが [**編集** モードになっていることを確認 ](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) ます。
 1. 段落システムから新しいコンポーネントを選択して追加するには、2 つの方法があります。
 
    * 既存のコンポーネントのツールバーまたは「**コンポーネントをここにドラッグ**」ボックスから「**コンポーネントを挿入**」オプション（+）を選択します。
@@ -87,13 +87,13 @@ AEM ページエディターには、より高度な機能にアクセスでき�
 
 ## アセットの追加 {#adding-asset}
 
-[アセットブラウザーからアセットをドラッグして、新しいコンポーネントをページに追加することもできます。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)これにより、適切なタイプのコンポーネント（アセットを含む）が自動的に作成されます。
+[アセットブラウザー](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)からアセットをドラッグして、新しいコンポーネントをページに追加することもできます。これにより、適切なタイプのコンポーネント（アセットを含む）が自動的に作成されます。
 
 この動作は使用しているインストール環境で設定できます。詳しくは、[コンポーネントのリファレンスガイド](/help/implementing/developing/components/reference.md#component-placeholders)のドキュメントを参照してください。
 
 前述のいずれかのアセットタイプをドラッグしてコンポーネントを作成するには：
 
-1. ページが&#x200B;[**編集**&#x200B;モードであることを確認します。](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. ページが&#x200B;[**編集**&#x200B;モード](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)であることを確認します。
 1. [アセットブラウザー](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)を開きます。
 1. 必要なアセットを必要な位置にドラッグします。[コンポーネントプレースホルダー](#component-placeholder)は、コンポーネントが配置されている場所を示し、挿入されるターゲットも表示されます。
 1. アセットをターゲット上にリリースします。アセットタイプに適したコンポーネントが、必要な場所に作成されます。これには選択したアセットが含まれます。
@@ -133,7 +133,7 @@ AEM ページエディターには、より高度な機能にアクセスでき�
 
   ![「削除」ボタン](assets/edit-content-delete.png)
 
-* **コンポーネントを挿入**&#x200B;すると、[新しいコンポーネントを追加](#adding-a-component-from-the-paragraph-system)するためのダイアログが開きます。
+* **コンポーネントを挿入** して、「新しいコンポーネントを追加 [ するためのダイアログを開き ](#adding-a-component-from-the-paragraph-system) す。
 
   ![「挿入」ボタン](assets/edit-content-insert-component.png)
 
@@ -219,7 +219,7 @@ AEM ページエディターには、より高度な機能にアクセスでき�
 
    ![コンポーネントツールバーの「レイアウト」ボタン](assets/edit-content-layout.png)
 
-1. レイアウトアクションを選択すると、[レイアウトモード](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)の場合と同様にコンポーネントのレイアウトを変更できます。
+1. レイアウトアクションを選択すると、[ レイアウトモード ](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode) で行うようにコンポーネントのレイアウトを変更できます。
 
    * コンポーネントのサイズ変更ハンドルが表示されます。
    * エミュレーターツールバーが画面の上部に表示されます。

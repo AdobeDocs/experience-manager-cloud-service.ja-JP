@@ -4,10 +4,10 @@ description: AEM コンテンツサービスは、web ページだけに焦点�
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -65,7 +65,7 @@ AEM 内では、セレクター `model` と `.json` 拡張機能を使用して�
 
   >[!NOTE]
   >
-  >標準的な実装ではありませんが、[複数のセレクターがサポートされています](enabling-json-exporter.md#multiple-selectors)。ただし、`model` セレクターを最初に指定する必要があります。
+  >標準実装ではありませんが、[ 複数のセレクターがサポートされています ](enabling-json-exporter.md#multiple-selectors) が、`model` を最初にする必要があります。
 
 ### その他の情報 {#further-information}
 

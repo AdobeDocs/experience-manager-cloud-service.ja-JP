@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 100%
@@ -123,7 +123,7 @@ ht-degree: 100%
    >
    >宛先のパスをソースパスに含めることはできません。
 
-1. Enter:
+1. 次を入力 :
 
    * ページの&#x200B;**タイトル**。
    * URL で使用される&#x200B;**名前**。
@@ -348,7 +348,7 @@ ht-degree: 100%
 
 ライブコピーページにはいつでもコンポーネントを追加できます。ライブコピーとその段落システムの継承ステータスにより、コンポーネント追加の動作が変わることはありません。
 
-ライブコピーページがソースページに同期されても、追加されたコンポーネントは変わらず残ります。[ライブコピーページ上のコンポーネントの順序の変更](#changing-the-order-of-components-on-a-live-copy-page)も参照してください。
+ライブコピーページがソースページに同期されても、追加されたコンポーネントは変わらず残ります。詳しくは、[ライブコピーページ上のコンポーネントの順序の変更](#changing-the-order-of-components-on-a-live-copy-page)も参照してください。
 
 >[!TIP]
 >

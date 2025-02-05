@@ -4,17 +4,17 @@ description: フロントエンドパイプラインを使用すると、フロ�
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1169'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 
 # フロントエンドパイプラインを使用したサイトの開発 {#developing-site-with-front-end-pipeline}
 
-[フロントエンドパイプラインを使用すると、](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) フロントエンド開発者の自主性が高まり、開発プロセスを大幅に加速できます。このドキュメントでは、このプロセスがどのように機能するかと、このプロセスの可能性を最大限に引き出すために知っておくべきいくつかの考慮事項を説明します。
+[ フロントエンドパイプラインを使用すると ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)、フロントエンド開発者の自主性が高まり、開発プロセスを大幅に加速できます。 このドキュメントでは、このプロセスがどのように機能するかと、このプロセスの可能性を最大限に引き出すために知っておくべきいくつかの考慮事項を説明します。
 
 >[!TIP]
 >
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## フロントエンドビルドコントラクト {#front-end-build-contract}
 
-[フルスタックビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)と同様に、フロントエンドパイプラインには独自の環境があります。次のフロントエンドビルドコントラクトが守られている限り、開発者はこのパイプラインをある程度柔軟に使用できます。
+[ フルスタックビルド環境 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) と同様に、フロントエンドパイプラインには独自の環境があります。 次のフロントエンドビルドコントラクトが守られている限り、開発者はこのパイプラインをある程度柔軟に使用できます。
 
 フロントエンドパイプラインでは、フロントエンド Node.js プロジェクトでデプロイするビルドを生成するために、`build` スクリプトディレクティブを使用する必要があります。これは、Cloud Manager がコマンド `npm run build` を使用して、フロントエンドビルドに対してデプロイ可能なプロジェクトを生成するためです。
 

@@ -4,10 +4,10 @@ description: プログラム、環境、パイプラインを通じて、Cloud M
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '864'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ Cloud Manager は、AEM as a Cloud Service に不可欠なコンポーネント�
 
 次の手順に従って、 Cloud Manager に移動します。
 
-1. Cloud Manager のログインページ（[`https://my.cloudmanager.adobe.com`.](https://my.cloudmanager.adobe.com/)）に移動します。
+1. Cloud Managerのログインページ（[`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/)）に移動します。
 
 1. Cloud Manager の&#x200B;**プログラムと製品**&#x200B;ページでプログラムを選択して、**概要**&#x200B;ページを起動します。
 
@@ -38,7 +38,7 @@ Cloud Manager は、AEM as a Cloud Service に不可欠なコンポーネント�
 
 ## Cloud Manager での役割ベースの権限 {#role-based-permissions}
 
-| 権限 | 説明 | ビジネスオーナー | デプロイメントマネージャー | プログラムマネージャー | デベロッパー |
+| 権限 | 説明 | ビジネスオーナー | デプロイメントマネージャー | プログラムマネージャー | 開発者 |
 |--- |--- |--- |--- |--- |--- |
 | プログラムを追加<br>プログラムを編集 | 新しいプログラムの追加<br>ソリューションまたはアドオンの追加または削除 | x |  |  |  |
 | 環境を作成 | 実稼動とステージング環境および開発環境の作成 | x | x |  |  |
@@ -48,7 +48,7 @@ Cloud Manager は、AEM as a Cloud Service に不可欠なコンポーネント�
 | パイプラインの実行 | パイプラインの開始 | x | x |  |  |
 | パイプラインの実行 | 重要な 3 層品質ゲートエラーの拒否/承認 | x | x | x |  |
 | パイプラインの実行 | 運用開始の承認の提供 | x | x | x |  |
-| パイプラインの実行 | 実稼動デプロイメントのスケジュール設定 | x | x | × |  |
+| パイプラインの実行 | 実稼動デプロイメントのスケジュール設定 | x | x | x |  |
 | パイプラインの削除 | パイプラインの削除の許可 |  | x |  |  |
 | 実行のキャンセル | 現在の実行のキャンセル |  | x |  |  |
 | 個人用アクセストークンの生成 | Git へのアクセス |  | x |  | x |

@@ -4,10 +4,10 @@ description: レスポンシブデザインを使用すると、同じエクス�
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '908'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -73,7 +73,7 @@ CSS ファイルでは、ターゲットとしているデバイスのプロパ�
 
 ### AEM ページでのメディアクエリの使用 {#using-media-queries-with-aem-pages}
 
-[WKND サンプルプロジェクト](/help/implementing/developing/introduction/develop-wknd-tutorial.md)と [AEM Project アーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)は、ページポリシーを介した clientlibs を含む[ページコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=ja)を使用します。
+[WKND サンプルプロジェクト ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) および [AEM プロジェクトアーキタイプ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) は、[ ページコアコンポーネント ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=ja) を使用します。これには、ページポリシーを介した clientlib が含まれます。
 
 独自のページコンポーネントがページコアコンポーネントに基づいていない場合は、クライアントライブラリフォルダーをその HTL または JSP スクリプトに含めることもできます。これにより、レスポンシブグリッドが機能するために必要なメディアクエリを含む CSS ファイルが生成され、参照されます。
 

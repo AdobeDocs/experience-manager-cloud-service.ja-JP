@@ -4,10 +4,10 @@ description: RemotePage コンポーネントは、AEM 内のリモート React 
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -41,9 +41,9 @@ AEM の編集可能な外部 SPA の詳細については、[AEM 内の外部 SP
 
 ## 制限事項 {#limitations}
 
-* RemotePage コンポーネントでは、実装が[ここにあるような。](https://github.com/shellscape/webpack-manifest-plugin)ただし、RemotePage コンポーネントは React フレームワーク（および remote-page-next コンポーネントを介した Next.js）で動作するようにのみテストされているので、Angular など他のフレームワークからのアプリケーションのリモート読み込みはサポートされていません。
+* RemotePage コンポーネントでは、実装によりアセットマニフェストが指定されることを想定しています。アセットマニフェストの例については[こちら](https://github.com/shellscape/webpack-manifest-plugin)を参照してください。ただし、RemotePage コンポーネントは、React フレームワーク（および remote-page-next コンポーネントを介した Next.js）での動作のみがテストされているので、Angularなど他のフレームワークからのアプリケーションのリモート読み込みはサポートされていません。
 * AEM でリモートレンダリングを行う場合、アプリケーションのルート HTML ファイルに定義された内部 CSS およびルート DOM ノードのインライン CSS は使用できません。
 
 ## 技術的詳細 {#technical-details}
 
-AEM SPA プロジェクトの他の部分と同様、RemotePage コンポーネントもオープンソースです。RemotePage コンポーネントの技術的な詳細については、[GitHub リポジトリを参照してください。](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)
+AEM SPA プロジェクトの他の部分と同様、RemotePage コンポーネントもオープンソースです。RemotePage コンポーネントの技術的な詳細については、[ GitHub リポジトリを参照してください ](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)。

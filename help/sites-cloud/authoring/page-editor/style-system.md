@@ -5,10 +5,10 @@ exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1305'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -113,7 +113,7 @@ AEM では、実際には最後の 3 つの手順のみが実行されます。�
 
 コアコンポーネントのバージョン 2 以降はスタイルシステムの活用に完全に対応しているので、追加の設定は不要です。
 
-以下の手順は、独自のカスタムコンポーネントに対してスタイルシステムを有効にする場合、または[編集ダイアログのオプションの「スタイル」タブを有効にする](#enable-styles-tab-edit)場合にのみ必要です。
+次の手順は、独自のカスタムコンポーネントのスタイルシステムを有効にする場合、または [ 編集ダイアログの「オプションのスタイル」タブを有効にする ](#enable-styles-tab-edit) 場合にのみ必要です。
 
 ### デザインダイアログの「スタイル」タブを有効にする {#enable-styles-tab-design}
 

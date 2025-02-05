@@ -5,10 +5,10 @@ exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '827'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -108,11 +108,11 @@ AEM **Sites** コンソールのサイドパネルを使用して、コンテン
 
 ## サイト {#site}
 
-サイドパネルの&#x200B;**サイト**&#x200B;ビューには、[サイトテンプレートを使用して作成された](/help/sites-cloud/administering/site-creation/create-site.md)サイトの詳細が表示されます。
+サイドパネルの **サイト** ビューには、（サイトテンプレートを使用して作成した [ サイトの詳細が表示され ](/help/sites-cloud/administering/site-creation/create-site.md) す。
 
 ![サイトパネル](assets/console-side-panel-site-paenl.png)
 
-サイトパネルを使用して[サイトのテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)を管理する方法について詳しくは、[サイトパネルを使用したサイトテーマの管理](/help/sites-cloud/administering/site-creation/site-rail.md)のドキュメントを参照してください。
+サイトパネルを使用して [ サイトのテーマ ](/help/sites-cloud/administering/site-creation/site-rail.md) を管理する方法について詳しくは、[ サイトパネルを使用したサイトテーマの管理 ](/help/sites-cloud/administering/site-creation/site-themes.md) のドキュメントを参照してください。
 
 テーマベースのサイト作成を可能にするフロントエンドパイプラインをまだ設定していない場合は、サイドパネルにそのオプションが表示されます。
 
@@ -120,7 +120,7 @@ AEM **Sites** コンソールのサイドパネルを使用して、コンテン
 
 >[!TIP]
 >
->テンプレートからサイトを作成し、そのテーマをカスタマイズするプロセスに関するエンドツーエンドの説明については、 [クイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md) を参照してください。
+>テンプレートからサイトを作成し、そのテーマをカスタマイズするプロセスに関するエンドツーエンドの説明について詳しくは、[クイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md)を参照してください。
 
 ## フィルター {#filter}
 

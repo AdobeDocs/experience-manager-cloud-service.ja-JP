@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->コンテンツの翻訳を初めて行う場合は、[Sites 翻訳ジャーニー](/help/journey-sites/translation/overview.md)を参照してください。これは、AEM の強力な翻訳ツールを使用して AEM Sites コンテンツを翻訳する手順を示すガイドです。AEM や翻訳の経験がないユーザーに最適です。
+>コンテンツの翻訳を初めて行う場合は、[ サイト翻訳ジャーニー](/help/journey-sites/translation/overview.md) を参照してください。これは、AEMの強力な翻訳ツールを使用してAEM Sites コンテンツを翻訳する手順を示すガイドです。AEMや翻訳の経験がないユーザーに最適です。
 
 [WKND チュートリアルサイト](/help/implementing/developing/introduction/develop-wknd-tutorial.md)には、複数の言語ブランチが含まれています。使用される構造は次のとおりです。
 
@@ -61,7 +61,7 @@ ht-degree: 100%
 1. 言語マスターのコンテンツをオーサリングします。
 1. サイトの各言語コピーの言語ルートを作成します。例えば、WKND のサンプルサイトのフランス語の言語コピーは `/content/wknd/language-masters/fr` です。
 
-翻訳するコンテンツの準備が完了したら、言語コピーおよび関連する翻訳プロジェクトの不足ページを自動的に作成できます（[翻訳プロジェクトの作成](managing-projects.md)を参照）。AEM のコンテンツ翻訳プロセスの概要については、[多言語サイトのコンテンツの翻訳](overview.md)を参照してください。
+翻訳するコンテンツの準備が完了したら、言語コピーおよび関連する翻訳プロジェクトの不足ページを自動的に作成できます（[ 翻訳プロジェクトの作成 ](managing-projects.md) を参照）。AEMのコンテンツ翻訳プロセスの概要については、[ 多言語サイトのコンテンツの翻訳 ](overview.md) を参照してください。
 
 ## 言語ルートの作成 {#creating-a-language-root}
 

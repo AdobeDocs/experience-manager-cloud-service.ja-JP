@@ -4,10 +4,10 @@ description: コンテンツにタグを付け、AEM タグ付けインフラス
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1562'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 コンテンツにタグ付けし、AEM タグ付けインフラストラクチャを使用するには：
 
-* タグは、[`cq:Tag`](#cq-tag-node-type) タイプのノードとして[分類階層のルートノード](#taxonomy-root-node)の下に存在する必要があります。
+* タグは、タイプ [`cq:Tag`](#cq-tag-node-type) のノードとして、[ 分類のルートノード ](#taxonomy-root-node) の下に存在する必要があります。
 * タグ付けされたコンテンツノードの`NodeType`には、[`cq:Taggable`](#taggable-content-cq-taggable-mixin) Mixin が含まれている必要があります。
 * [`TagID`](#tagid) がコンテンツノードの [`cq:tags`](#cq-tags-property) プロパティに追加され、[`cq:Tag`](#cq-tag-node-type) タイプのノードに解決されます。
 
@@ -41,18 +41,18 @@ ht-degree: 100%
 ### タグの特徴 {#tag-characteristics}
 
 * ノードタイプは `cq:Tag` です。
-* ノード名は[`TagID`](#tagid) の構成要素になります。
-* [`TagID`](#tagid) には常に[名前空間](#tag-namespace)が含まれています。
+* ノード名は [`TagID`](#tagid) のコンポーネントです。
+* [`TagID`](#tagid) には常に [ 名前空間 ](#tag-namespace) が含まれています。
 * `jcr:title` プロパティ（UI に表示するタイトル）は省略可能です。
 * `jcr:description` プロパティは省略可能です。
-* 子ノードが含まれている場合、[コンテナタグ](#container-tags)と呼ばれます。
-* リポジトリーにおいて、[分類のルートノード](#taxonomy-root-node)と呼ばれる基本パスの下に保存されます。
+* 子ノードを含む場合、は [ コンテナタグ ](#container-tags) と呼ばれます。
+* タグは、[ 分類のルートノード ](#taxonomy-root-node) と呼ばれるベースパスの下のリポジトリに格納されます。
 
 ### タグ ID {#tagid}
 
 `TagID` は、リポジトリー内のタグノードに解決されるパスを識別します。
 
-通常、`TagID` は名前空間で始まる短縮形の`TagID` ですが、[分類のルートノード](#taxonomy-root-node)から始まる絶対`TagID` にすることもできます。
+通常、`TagID` は名前空間で始まる短縮形の `TagID` ードですが、[ 分類のルートノード ](#taxonomy-root-node) から始まる絶対 `TagID` ードにすることもできます。
 
 コンテンツにタグ付けするときに、コンテンツがまだ存在しない場合は、[`cq:tags`](#cq-tags-property) プロパティがコンテンツノードに追加され、`TagID` がこのプロパティの `String` 配列値に追加されます。
 
@@ -68,7 +68,7 @@ AEM の基本パスは `/content/cq:tags` であり、ルートノードのタ�
 
 名前空間を使用するとグループ化を行うことができます。サイトごと（例：公開または社内）や大規模なアプリケーションごと（例：Sites または Assets）に名前空間を設けることが最も典型的なユースケースですが、名前空間はその他の様々なニーズにも使用できます。名前空間は、現在のコンテンツに適用されるタグのサブセット（つまり特定の名前空間のタグ）のみを表示するためにユーザーインターフェイスで使用されます。
 
-タグの名前空間は、分類サブツリーの最初のレベルです。これは、[分類のルートノード](#taxonomy-root-node)の直下のノードです。名前空間は `cq:Tag` タイプのノードで、その親は `cq:Tag` ノードタイプではありません。
+タグの名前空間は、分類サブツリーの最初のレベルです。これは、[分類のルートノード](#taxonomy-root-node)の直下のノードです。名前空間は `cq:Tag` タイプのノードで、その親は `cq:Tag` ノードタイプではありません。
 
 すべてのタグには名前空間があります。名前空間を指定しない場合、タグはデフォルトの名前空間（`TagID` `default`、つまり `/content/cq:tags/default`）に割り当てられます。この場合、タイトルはデフォルトで `Standard Tags` に設定されます。
 
@@ -107,7 +107,7 @@ AEM の基本パスは `/content/cq:tags` であり、ルートノードのタ�
 
 ### アクセス制御 {#access-control}
 
-タグは、リポジトリー内で[分類のルートノード](#taxonomy-root-node)の下にノードとして存在します。作成者やサイト訪問者に対し、特定の名前空間内でのタグの作成を許可または禁止するには、リポジトリーに適切な ACL を設定します。
+タグは、リポジトリ内で[分類のルートノード](#taxonomy-root-node)の下にノードとして存在します。作成者やサイト訪問者に対し、特定の名前空間内でのタグの作成を許可または禁止するには、リポジトリに適切な ACL を設定してください。
 
 また、特定のタグまたは名前空間に対する読み取り権限を拒否することで、特定のコンテンツへのタグの適用を制御できます。
 

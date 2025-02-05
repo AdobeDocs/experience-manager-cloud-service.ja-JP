@@ -8,10 +8,10 @@ exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ AEM Sites は、デジタルエクスペリエンスを作成および管理す�
 
 AEM には、コンテンツを翻訳するための強力なツールが用意されているので、他の地域やロケールのオーディエンスにも限りなく迅速にコンテンツを配信できます。このドキュメントジャーニーでは、オーサリングツールについても紹介するので、AEM でのコンテンツの作成および管理方法を理解したあと、独自の翻訳プロジェクトの管理に必要な詳細情報を入手することができます。
 
-AEM Sites と翻訳要件に精通している方は、このジャーニーの基礎知識を既にお持ちかもしれません。その場合は、最後の [その他のリソース](#additional-resources) の節でリンクされているアドビの技術ドキュメントを参照してください。
+AEM Sites と翻訳要件に精通している方は、このジャーニーの基礎知識を既にお持ちかもしれません。その場合は、[ 以下のその他のリソース ](#additional-resources) の節でリンクされているアドビの技術ドキュメントを参照してください。
 
 ## AEM ドキュメントジャーニー {#documentation-journeys}
 

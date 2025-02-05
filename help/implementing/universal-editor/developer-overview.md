@@ -4,10 +4,10 @@ description: ユニバーサルエディターの動作およびプロジェク�
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d82a88e5b7337e9d81a91e812f6a90237e80b1ea
-workflow-type: ht
-source-wordcount: '3160'
-ht-degree: 100%
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
+source-wordcount: '3179'
+ht-degree: 93%
 
 ---
 
@@ -33,17 +33,17 @@ ht-degree: 100%
 この概要に従うには、次が必要になります。
 
 * [AEM as a Cloud Service のローカル開発インスタンス](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ja)
-   * ローカル開発インスタンスは、[開発用に HTTPS を使用して `localhost` で設定する必要があります。](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=ja)
-   * [WKND デモサイトをインストールする必要があります。](https://github.com/adobe/aem-guides-wknd)
-* [ユニバーサルエディターへのアクセス](/help/implementing/universal-editor/getting-started.md#onboarding)
-* 開発目的で実行している[ローカルユニバーサルエディターサービス](/help/implementing/universal-editor/local-dev.md)
-   * [ローカルサービスの自己署名証明書を受け入れるように](/help/implementing/universal-editor/local-dev.md#editing)ブラウザーが設定されていることを確認します。
+   * `localhost`](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=ja) での開発を行うには、ローカル開発インスタンスを HTTPS で [ 設定する必要があります。
+   * [WKND デモサイトをインストールする必要があります ](https://github.com/adobe/aem-guides-wknd)。
+* [ ユニバーサルエディターへのアクセス ](/help/implementing/universal-editor/getting-started.md#onboarding)。
+* 開発目的で実行される [ ローカルユニバーサルエディターサービス ](/help/implementing/universal-editor/local-dev.md)。
+   * ブラウザーで [ ローカルサービスの自己署名証明書を受け入れる ](/help/implementing/universal-editor/local-dev.md#editing) ように指示してください。
 
-このドキュメントは、web 開発に一般的に精通しているだけでなく、AEM 開発に関する基本的な知識を前提としています。AEM の開発経験がない場合は、[続行する前に WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)を確認することを考慮してください。
+このドキュメントは、web 開発に一般的に精通しているだけでなく、AEM 開発に関する基本的な知識を前提としています。AEM開発の経験がない場合は、続行する前に [WKND チュートリアル ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) を確認することを検討してください。
 
 ## AEM の起動およびユニバーサルエディターへのログイン {#sign-in}
 
-まだ実行していない場合は、[前提条件で詳しく説明されるように、WKND をインストールし、HTTPS を有効にしてローカルの AEM 開発インスタンスを実行する必要があります。](#prerequisites)この概要は、インスタンスが `https://localhost:8443` で実行されていることを前提としています。
+まだ実行していない場合は、（前提条件を参照して [WKND がインストールされ、HTTPS が有効になっている状態でローカル AEM開発インスタンスを実行する必要があり ](#prerequisites) す。 この概要では、インスタンスが `https://localhost:8443` で実行されていることを前提としています。
 
 1. AEM エディターで WKND 英語メインページを開きます。
 
@@ -189,7 +189,7 @@ WKND ページがユニバーサルエディターに正常に読み込まれ、
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
 
-   * ライブラリの最新バージョンを常にお勧めします。以前のバージョンが必要な場合は、[AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md#alternative)ドキュメントを参照してください。
+   * ライブラリの最新バージョンを常にお勧めします。以前のバージョンが必要な場合は、[AEMのユニバーサルエディターの概要 ](/help/implementing/universal-editor/getting-started.md#alternative) を参照してください。
 
 1. ローカルユニバーサルエディターサービスへの接続に必要なメタデータをファイルの最後に追加します。
 
@@ -572,21 +572,21 @@ WKND ページがユニバーサルエディターに正常に読み込まれ、
 
 独自のアプリの実装を開始する際は、この例で実行した基本的な手順に注意してください。
 
-1. [開発環境を設定します。](#prerequisites)
+1. [ 開発環境を設定します ](#prerequisites)。
    * WKND がインストールされた HTTPS 上でローカルに実行される AEM
    * HTTPS 上でローカルに実行されるユニバーサルエディターサービス
 1. AEM の OSGi 設定を更新して、そのコンテンツをリモートで読み込めるようにしました。
    * [`org.apache.sling.engine.impl.SlingMainServlet`](#sameorigin)
    * [`com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`](#samesite-cookies)
-1. [次の項目を追加しました。 ](#ue-connect-remote-frame)
-1. [次の項目の変更を保持するための接続を定義しました。 ](#connection)
+1. [`universal-editor-embedded.js` ライブラリをアプリのページコンポーネントの `customheaderlibs.html` ファイルに追加しました ](#ue-connect-remote-frame)。
+1. [ アプリのページコンポーネントの `customheaderlibs.html` ファイルに変更を保持する接続を定義しました ](#connection)。
    * ローカル AEM 開発インスタンスへの接続を定義しました。
    * また、ローカルのユニバーサルエディターサービスへの接続も定義しました。
-1. [ティーザーコンポーネントを実装しました。](#instrumenting-components)
-1. [ティーザーのサブコンポーネントを実装しました。](#subcomponents)
-1. [ローカルのユニバーサルエディターサービスを使用して変更を保存できるように、カスタム認証ヘッダーを定義しました。](#auth-header)
-1. [プロパティパネルを使用するアプリを実装しました。](#properties-rail)
-1. [プロパティパネルを使用するティーザーコンポーネントを実装しました。](#properties-rail-component)
+1. [ ティーザーコンポーネントの実装は完了しました ](#instrumenting-components)。
+1. [ ティーザーのサブコンポーネントの実装も行いました ](#subcomponents)。
+1. [ ローカルのユニバーサルエディターサービスを使用して変更を保存できるように、カスタム認証ヘッダーを定義しました ](#auth-header)。
+1. [ プロパティパネルを使用するようにアプリのインストルメントを行いました ](#properties-rail)。
+1. [ プロパティパネルを使用するためにティーザーコンポーネントの実装を行いました ](#properties-rail-component)。
 
 これらと同じ手順に従って、ユニバーサルエディターで使用するために独自のアプリを実装できます。JCR 内の任意のプロパティをユニバーサルエディターに公開できます。
 

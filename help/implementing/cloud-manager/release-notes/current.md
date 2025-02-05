@@ -4,9 +4,9 @@ description: AEM as a Cloud Service の Cloud Manager 2025.1.0 のリリース�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 613a5602706d4d0d63fce7a20bf52660d9a9d335
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 97%
 
 ---

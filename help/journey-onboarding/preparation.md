@@ -4,16 +4,16 @@ description: オンボーディングプロセスの開始に先立って、シ�
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '760'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
 # オンボーディングの準備 {#onboarding-preparation}
 
-[AEM as a Cloud Service オンボーディングジャーニーの概要](overview.md)の記事を読み、オンボーディングプロセスの内容について理解したので、作業に取りかかる準備が整いました。ただし、オンボーディングプロセスを開始する前に、システム管理者がシステムにログインする前に理解しておくべき準備手順がいくつかあります。
+[AEM as a Cloud Service オンボーディングのジャーニーの概要 ](overview.md) の記事を読み、オンボーディングプロセスの内容について理解したので、作業に取りかかる準備が整いました。 ただし、オンボーディングプロセスを開始する前に、システム管理者がシステムにログインする前に理解しておくべき準備手順がいくつかあります。
 
 ## 目的 {#objective}
 

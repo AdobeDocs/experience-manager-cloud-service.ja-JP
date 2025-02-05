@@ -4,7 +4,7 @@ description: コンポーネント定義とユニバーサルエディター間�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 1%
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 ## `groups` {#groups}
 
-作成者 `groups`、エディターのプロパティパネルにある「**追加**」アイコンをクリックして新しいコンポーネントをページに追加 [ するときに、ユニバーサルエディターで表示されるコンポーネントのグループを定義します。](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) グループは、コンポーネントの整理に役立ちます。 共通グループには、**一般コンポーネント** や **詳細コンポーネント** があります。
+作成者 `groups`、エディターのプロパティパネルにある **追加** アイコンをクリックして [ 新しいコンポーネントをページに追加 ](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) したときにユニバーサルエディターに表示されるコンポーネントのグループを定義します。 グループは、コンポーネントの整理に役立ちます。 共通グループには、**一般コンポーネント** や **詳細コンポーネント** があります。
 
 * `title` は、エディター UI に表示されるグループの説明をテキストで定義します。
 * グループ `id` 一意に識別します。

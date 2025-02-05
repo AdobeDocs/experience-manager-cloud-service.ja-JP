@@ -5,10 +5,10 @@ exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1485'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## これまでの説明内容 {#story-so-far}
 
-AEM クイックサイト作成ジャーニーの前のドキュメントである [Cloud Manager とクイックサイト作成ワークフローについて](cloud-manager.md) では、Cloud Manager と、Cloud Manager が新しいクイックサイト作成プロセスをどのように結び付けるかについて説明しました。ここで、次のことを行う必要があります。
+AEM クイックサイト作成ジャーニーの前のドキュメント [Cloud Managerとクイックサイト作成ワークフローについて ](cloud-manager.md) では、Cloud Managerと、新しいクイックサイト作成プロセスとの結び付けについて説明しました。次のことができるようになりました。
 
 * AEM Sites と Cloud Manager が連携してフロントエンド開発を容易にする仕組みを理解する。
 * フロントエンドのカスタマイズ手順が AEM から完全に切り離されており、AEM に関する知識を必要としない仕組みを確認する。
@@ -54,7 +54,7 @@ AEM クイックサイト作成ジャーニーの前のドキュメントであ�
 
 ## サイトテンプレートの取得 {#obtaining-template}
 
-最も簡単に使い始める方法は、[AEM 標準サイトテンプレートの最新リリースを GitHub リポジトリからダウンロードすることです。](https://github.com/adobe/aem-site-template-standard/releases)
+最も簡単に使い始める方法は、[AEM標準サイトテンプレートの最新リリースを GitHub リポジトリからダウンロードする ](https://github.com/adobe/aem-site-template-standard/releases) ことです。
 
 ダウンロードが完了したら、他のパッケージと同様に AEM 環境にアップロードできます。このトピックに関する詳細情報が必要な場合は、 [その他のリソース](#additional-resources) を参照し、パッケージの操作方法を確認してください。
 
@@ -177,11 +177,11 @@ AEM クイックサイト作成ジャーニーの前のドキュメントであ�
 * テンプレートを使用して新しいサイトを作成する方法を学ぶ。
 * 新しいサイトからテンプレートをダウンロードして、フロントエンド開発者に提供する方法を確認する。
 
-この知識に基づいて、次は [パイプラインの設定](pipeline-setup.md) のドキュメントを確認して、AEM クイックサイト作成ジャーニーを続行してください。そこでは、サイトテーマのカスタマイズを管理するフロントエンドパイプラインを作成します。
+この知識に基づいて、次は [ パイプラインの設定 ](pipeline-setup.md) のドキュメントを確認して、AEM クイックサイト作成ジャーニーを続行してください。そこでは、サイトテーマのカスタマイズを管理するフロントエンドパイプラインを作成します。
 
 ## その他のリソース {#additional-resources}
 
-[パイプラインの設定](pipeline-setup.md) のドキュメントを確認して、クイックサイト作成ジャーニーの次のパートに進むことをお勧めしますが、以下のリソースではこのドキュメントで取り上げた概念についてより詳しく説明しています。追加的なオプションであり、ジャーニーを続ける上で必須のリソースではありません。
+[ パイプラインの設定 ](pipeline-setup.md) のドキュメントを確認して、クイックサイト作成ジャーニーの次のパートに進むことをお勧めしますが、以下のリソースではこのドキュメントで取り上げた概念についてより詳しく説明しています。追加的なオプションであり、ジャーニーを続ける上で必須のリソースではありません。
 
 * [AEM 標準サイトテンプレート](https://github.com/adobe/aem-site-template-standard) - これは AEM 標準サイトのテンプレートの GitHub リポジトリです。
 * [ページの整理](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - このガイドでは、AEM サイトのページを整理する方法について詳しく説明します。

@@ -4,10 +4,10 @@ description: AEM as a Cloud Serviceの Query Builder API の述語リファレ�
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2270'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -171,7 +171,7 @@ JCR 日付プロパティを日時の間隔と照合します。ISO8601
 
 ### hasPermission {#haspermission}
 
-指定された [JCR 権限](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)が現在のセッションに含まれる項目に、結果を制限します。
+この述語は、指定された [JCR 権限 ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) が現在のセッションに含まれる項目に、結果を制限します。
 
 フィルターのみの述語で、検索インデックスは使用できません。ファセットの抽出には対応していません。
 

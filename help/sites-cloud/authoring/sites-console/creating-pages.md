@@ -5,10 +5,10 @@ exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->新しいページの作成を開始する前に、[AEM でページを整理する方法](/help/sites-cloud/authoring/sites-console/organizing-pages.md)について理解を深めます。
+>新しいページの作成を開始する前に、[AEMでのページの編成方法 ](/help/sites-cloud/authoring/sites-console/organizing-pages.md) について理解しておく必要があります。
 
 ## アクセス権 {#access-privileges}
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 すべてのページが事前に作成されていない限り、コンテンツの作成を開始するには、まずページを作成する必要があります。
 
-1. [**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)を開きます。
+1. [**Sites** コンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) を開きます。
 1. 新しいページを作成する場所に移動します。
 1. ツールバーの「**作成**」を使用してドロップダウンセレクターを開き、リストから「**ページ**」を選択します。
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 1. ウィザードの最初のステージで、次のいずれかを実行できます。
 
    * 新しいページの作成に使用するテンプレートを選択し、「**次へ**」を選択して続行するか、「**キャンセル**」を選択してプロセスを中止します。
-   * テンプレートは、[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)と[ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/templates.md)の両方でサポートされています。
+   * テンプレートは、[ ページエディター ](/help/sites-cloud/authoring/page-editor/introduction.md) と [ ユニバーサルエディター ](/help/sites-cloud/authoring/universal-editor/templates.md) の両方でサポートされます。
 
    ![新しいページのテンプレートの選択](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 

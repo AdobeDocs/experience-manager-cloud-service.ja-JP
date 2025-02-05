@@ -5,10 +5,10 @@ exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1271'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ AEM で web サイトのページを管理する方法（移動、コピー、�
 
 >[!TIP]
 >
->ページの管理を始める前に、[AEM でページがどのように編成されているかを理解しておいてください。](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>ページの管理を開始する前に、[AEMでのページの編成方法 ](/help/sites-cloud/authoring/sites-console/organizing-pages.md) について理解しておく必要があります。
 
 >[!TIP]
 >
@@ -32,9 +32,9 @@ AEM で web サイトのページを管理する方法（移動、コピー、�
 
 ## ページを開いて編集 {#opening-a-page-for-editing}
 
-[ページを作成](/help/sites-cloud/authoring/sites-console/creating-pages.md)するか、[**Sites** コンソールを使用して既存のページに移動すると、](/help/sites-cloud/authoring/sites-console/introduction.md)そのページを開いて編集できます。
+[ ページを作成 ](/help/sites-cloud/authoring/sites-console/creating-pages.md) または [**Sites** コンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) を使用して既存ページに移動した後、そのページを開いて編集できます。
 
-1. [**Sites** コンソールを開きます。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. [**Sites** コンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) を開きます。
 1. 移動して、編集するページを見つけます。
 1. 次のいずれかを使用してページを選択します。
 
@@ -53,7 +53,7 @@ AEM で web サイトのページを管理する方法（移動、コピー、�
 
 ページとそのすべてのサブページを新しい場所にコピーできます。
 
-1. [**Sites** コンソールを開きます。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. [**Sites** コンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) を開きます。
 1. 移動して、コピーするページを見つけます。
 1. 次のいずれかを使用してページを選択します。
 
@@ -95,7 +95,7 @@ AEM で web サイトのページを管理する方法（移動、コピー、�
 
 AEM では、名前変更または移動が行われるページへの内部リンクを更新する機能が用意されています。この機能はページ単位で実行できるので、非常に柔軟性があります。
 
-1. [**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)を開きます。
+1. [**Sites** コンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) を開きます。
 1. 移動対象のページが表示されるまで移動します。
 1. 次のいずれかを使用してページを選択します。
 
@@ -181,7 +181,7 @@ AEM では、名前変更または移動が行われるページへの内部リ�
 
 ### ページの削除 {#deleting-a-page}
 
-1. [**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)を開きます。
+1. [**Sites** コンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) を開きます。
 1. 削除するページに移動します。
 1. [選択モード](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)を使用して必要なページを選択してから、ツールバーの「**削除**」を使用します。
 
@@ -212,7 +212,7 @@ AEM では、名前変更または移動が行われるページへの内部リ�
 
 ファイルやページの整理に役立つフォルダーを作成できます。
 
-1. [**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)を開きます。
+1. [**Sites** コンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) を開きます。
 1. 必要な場所に移動します。
 1. オプションリストを開くには、ツールバーの「**作成**」を選択します。
 1. 「**フォルダー**」を選択して、ダイアログを開きます。ここで、「**名前**」と「**タイトル**」を入力できます。

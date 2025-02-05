@@ -4,7 +4,7 @@ description: 単一のコードベースをリポジトリで活用して、ス�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## 概要 {#overview}
 
-ステージング環境とは別に、実稼動環境用のサイトを設定したい場合があります。 ステージング環境と実稼動環境を個別に設定するための 2 つ目のサイトの設定は、マルチサイト管理に必要な [ 設定に似ています。](/help/edge/wysiwyg-authoring/repoless-msm.md) 実際、必要に応じて、MSM サイト構造と組み合わせることができます。
+ステージング環境とは別に、実稼動環境用のサイトを設定したい場合があります。 ステージング環境と実稼動環境を別々に設定するために 2 つ目のサイトを設定することは、[ マルチサイト管理に必要な設定 ](/help/edge/wysiwyg-authoring/repoless-msm.md) と似ています。 実際、必要に応じて、MSM のサイト構造と組み合わせることができます。
 
 このドキュメントでは、個別のステージング環境と実稼動環境の典型的な例を使用します。 希望する任意の環境に対して、個別の環境を作成できます。
 
@@ -33,8 +33,8 @@ ht-degree: 2%
 
 個別の実稼動サイトを設定するには、次の 2 つの手順があります。
 
-1. [実稼動環境用に新しいEdge Delivery Servicesサイトを作成します。](#create-edge-site)
-1. [実稼動サイト用にAEMのクラウド設定を更新します。](#update-cloud-configuration)
+1. [ 実稼動環境用に新しいEdge Delivery Servicesサイトを作成します ](#create-edge-site)。
+1. [ 実稼動サイト用にAEMのクラウド設定を更新します ](#update-cloud-configuration)。
 
 ### 実稼動環境用の新しいEdge Delivery Servicesサイトの作成 {#create-edge-site}
 

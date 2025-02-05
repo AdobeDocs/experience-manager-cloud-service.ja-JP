@@ -4,18 +4,18 @@ description: Content Package Maven Plugin を使用した AEM アプリケーシ
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d757c94475f257ee4b05092671ae5e6384b8342e
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '1235'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 # Adobe Content Package Maven Plugin {#adobe-content-package-maven-plugin}
 
-パッケージデプロイメントおよび管理タスクを Maven プロジェクトに組み込むには、Adobe Content Package Maven プラグインを使用します。
+パッケージデプロイメントおよび管理タスクを Maven プロジェクトに組み込むには、Adobe Content Package Maven Plugin を使用します。
 
-構築したパッケージは Adobe Content Package Maven プラグインによって AEM にデプロイされ、通常 AEM [Package Manager：](/help/implementing/developing/tools/package-manager.md) を使って実行するタスクの自動化を可能にします。
+構築したパッケージは、Adobeの Content Package Maven プラグインによってAEMにデプロイされ、通常AEM[Package Manager](/help/implementing/developing/tools/package-manager.md) を使って行う作業の自動化を可能にします。
 
 * ファイルシステム内のファイルから新しいパッケージを作成する。
 * AEM にパッケージをインストールまたはアンインストールする。
@@ -23,7 +23,7 @@ ht-degree: 100%
 * AEM にインストールされているパッケージのリストを取得する。
 * AEM からパッケージを削除する。
 
-このドキュメントでは、Maven を使用してこれらのタスクを管理する方法について詳しく説明します。また一方、[AEM プロジェクトとそのパッケージの構造](#aem-project-structure)を理解することも重要です。
+このドキュメントでは、Maven を使用してこれらのタスクを管理する方法について詳しく説明します。ただし、[AEM プロジェクトとそのパッケージが構造化される仕組み ](#aem-project-structure) を理解することも重要です。
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->パッケージの&#x200B;**作成**&#x200B;は、[Apache Jackrabbit FileVault Package Maven プラグイン](https://jackrabbit.apache.org/filevault-package-maven-plugin/)で管理されるようになりました。
+>パッケージ **作成** は、[Apache Jackrabbit FileVault Package Maven プラグイン ](https://jackrabbit.apache.org/filevault-package-maven-plugin/) で管理されるようになりました。
 >
 >この記事では、構築済みパッケージの AEM への&#x200B;**デプロイメント**&#x200B;を、Adobe Content Package Maven プラグインで実行する方法について説明します。
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service は、最新の AEM プロジェクトアーキタイプ�
 
 ## Content Package Maven Plugin の入手 {#obtaining-the-content-package-maven-plugin}
 
-このプラグインは [Maven Central リポジトリー](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)から入手できます。
+このプラグインは、[Maven Central リポジトリー ](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public) から入手できます。
 
 ## Content Package Maven Plugin のゴールとパラメーター
 

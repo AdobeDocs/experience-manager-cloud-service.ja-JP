@@ -4,10 +4,10 @@ description: Adobe Experience Manager（AEM）設定と、AEM でのワークス
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '1482'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -77,7 +77,7 @@ WKND-General を WKND サイトのすべてのコンテンツに関連付ける�
    ![設定の作成](assets/configuration-create.png)
 
    * **タイトル**&#x200B;は内容がわかるように付けます。
-   * **名前**&#x200B;はリポジトリ内のノード名になります。
+   * 「**名前**」はリポジトリ内のノード名になります。
       * タイトルに基づいて自動的に生成され、[AEM の命名規則](naming-conventions.md)に従って調整されます。
       * 必要に応じて調整できます。
 1. 許可する設定のタイプを確認します。
@@ -200,7 +200,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 AEM の設定は、Sling コンテキスト対応設定に基づいています。Sling バンドルには、コンテキスト対応設定の取得に使用できるサービス API が用意されています。コンテキスト対応設定とは、[前の例で説明したように](#developer-example)、コンテンツリソースまたはリソースツリーに関連する設定です。
 
-コンテキスト対応設定、例、使用方法の詳細については、[Sling のドキュメント](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)を参照してください。
+コンテキスト対応設定、例、使用方法について詳しくは、[Sling のドキュメント ](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) を参照してください。
 
 ### ConfMgr Web コンソール {#confmgr-web-console}
 

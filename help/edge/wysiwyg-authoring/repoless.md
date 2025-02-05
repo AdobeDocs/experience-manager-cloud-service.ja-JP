@@ -4,7 +4,7 @@ description: ほぼ同じように見えて動作する類似サイトが多数�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: e7f7c169e7394536fc2968ecf1418cd095177679
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 2%
@@ -31,7 +31,7 @@ AEMは、複数の GitHub リポジトリを作成し、各サイトを専用の
 
 この機能を利用するには、必ず次の手順を実行してください。
 
-* サイトは、「Edge Delivery ServicesでのWYSIWYG オーサリングの開発者向けスタートガイド [ のドキュメントに従って、既に完全にセットアップされて ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) ます。
+* サイトは、[Edge Delivery Services WYSIWYG オーサリング開発者向け入門ガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) のドキュメントに従って、既に完全に設定されています。
 * 少なくともAEM as a Cloud Service 2024.08 を実行している。
 
 また、次の項目を設定するようAdobeに依頼する必要があります。 Slackチャネル経由でお問い合わせいただくか、サポートの問題を提起してAdobeをリクエストし、以下の変更を行ってください。
@@ -70,7 +70,7 @@ AEMは、複数の GitHub リポジトリを作成し、各サイトを専用の
 
 サイト設定を作成し、パスマッピングに追加する必要があります。
 
-1. サイトのルートに新しいページを作成し、「[**設定** テンプレートを選択します。](/help/edge/wysiwyg-authoring/tabular-data.md#other)
+1. サイトのルートに新しいページを作成し、[**設定** テンプレート ](/help/edge/wysiwyg-authoring/tabular-data.md#other) を選択します。
    * 設定は空のままにして、事前定義済みの `key` と `value` 列のみを追加できます。 作成するだけで済みます。
 1. 次のような cURL コマンドを使用して、パブリック設定に、サイト設定へのマッピングを作成します。
 

@@ -5,10 +5,10 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '13685'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -50,11 +50,11 @@ ht-degree: 100%
 
 ## 原則 1：知覚可能 {#principle-perceivable}
 
-[原則 1：知覚可能 - 情報およびユーザーインターフェイスコンポーネントは、ユーザーが知覚できる方法でユーザーに提示可能でなければならない。](https://www.w3.org/TR/WCAG/#perceivable)
+[ 原則 1：知覚可能 – 情報およびユーザーインターフェイスコンポーネントは、ユーザーが知覚できる方法でユーザーに提示可能でなければならない ](https://www.w3.org/TR/WCAG/#perceivable)。
 
 ### 代替テキスト（1.1） {#text-alternatives}
 
-[ガイドライン 1.1 代替テキスト：テキスト以外のコンテンツにはすべて、拡大印刷、点字、音声、シンボル、平易な言葉などの人物が必要とする形式に変換できるように、代替テキストを提供すること。](https://www.w3.org/TR/WCAG/#text-alternatives)
+[ ガイドライン 1.1 代替テキスト：テキスト以外のコンテンツにはすべて、拡大印刷、点字、音声、シンボル、平易な言葉などの人物が必要とする形式に変換できるように、代替テキストを提供すること ](https://www.w3.org/TR/WCAG/#text-alternatives)。
 
 ### 非テキストコンテンツ (1.1.1) {#non-text-content}
 
@@ -117,9 +117,9 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 #### 詳細情報 - 非テキストコンテンツ（1.1.1） {#more-information-non-text-content}
 
-* [達成基準 1.1.1 について](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
-* [達成基準 1.1.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
-* [W3C による CAPTCHA の説明と代替手段](https://www.w3.org/TR/turingtest/)
+* [ 達成基準 1.1.1 の概要 ](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)。
+* [ 達成基準 1.1.1 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)。
+* [W3C による CAPTCHA](https://www.w3.org/TR/turingtest/) の説明と代替手段。
 
 <!--
 * [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
@@ -127,7 +127,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 ### 時間依存メディア（1.2） {#time-based-media}
 
-[ガイドライン 1.2 時間依存メディア：時間依存メディアには代替コンテンツを提供すること。](https://www.w3.org/TR/WCAG/#time-based-media)
+[ ガイドライン 1.2 時間依存メディア：時間依存メディアには代替コンテンツを提供すること ](https://www.w3.org/TR/WCAG/#time-based-media)。
 
 ここでは、*時間依存*&#x200B;の Web コンテンツについて扱います。これには、ユーザーが再生可能なコンテンツ（映像、音声、アニメーションなど）や、収録済みのコンテンツ、ライブストリームなどが含まれます。
 
@@ -173,8 +173,8 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 #### 詳細情報 - 音声のみおよび映像のみ（収録済み）（1.2.1） {#more-information-audio-only-and-video-only-prerecorded}
 
-* [達成基準 1.2.1 について](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html)
-* [達成基準 1.2.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded)
+* [ 達成基準 1.2.1 について ](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html)。
+* [ 達成基準 1.2.1 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded)。
 
 ### キャプション（収録済み）（1.2.2） {#captions-prerecorded}
 
@@ -193,21 +193,21 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * オープン：映像再生時に常に表示
 * クローズド：ユーザーがキャプションのオン、オフを切り替え可能
 
-可能な場合は、クローズドキャプションを使用して、キャプションの表示／非表示をユーザーが選択できるようにします。
+可能な場合はクローズドキャプションを使用して、ユーザーがキャプションの表示と非表示を選択できるようにします。
 
-クローズドキャプションは、適切な形式（[SMIL](https://www.w3.org/AudioVideo/) など）の同期キャプションファイルをビデオファイルと共に作成して提供する必要があります（この方法の詳細は、このガイドの範囲外ですが、[詳細情報 - キャプション（収録済み）（1.2.2）](#more-information-captions-prerecorded)に、いくつかのチュートリアルへのリンクを提示しています）。映像でキャプションを利用できることをユーザーに知らせるために、注意書きを表示するか、ビデオプレーヤーのキャプション機能を有効にしてください。
+クローズドキャプションは、適切な形式（[SMIL](https://www.w3.org/AudioVideo/) など）の同期キャプションファイルをビデオファイルと共に作成して提供する必要があります（この方法の詳細は、このガイドの範囲外ですが、[ 詳細情報 – キャプション（収録済み）（1.2.2） ](#more-information-captions-prerecorded)）に、いくつかのチュートリアルへのリンクを提示しています）。 映像でキャプションを利用できることをユーザーに知らせるために、注意書きを表示するか、ビデオプレーヤーのキャプション機能を有効にしてください。
 
 オープンキャプションを使用する必要がある場合は、映像トラック内にテキストを埋め込みます。これを行うには、映像にタイトルをオーバーレイできるビデオ編集アプリケーションを使用します。
 
 #### 詳細情報 - キャプション（収録済み）（1.2.2） {#more-information-captions-prerecorded}
 
-* [達成基準 1.2.2 について](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
-* [達成基準 1.2.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
+* [ 達成基準 1.2.2 について ](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)。
+* [ 達成基準 1.2.2 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)。
 
 c
-* [W3C：同期されたマルチメディア](https://www.w3.org/AudioVideo/)
-* [キャプション、トランスクリプト、および音声解説（WebAIM）](https://webaim.org/techniques/captions/)
--->
+* [W3C：同期マルチメディア ](https://www.w3.org/AudioVideo/)。
+* [ キャプション、トランスクリプト、音声解説 – WebAIM 提供 ](https://webaim.org/techniques/captions/)。
+—>
 
 ### 音声解説または代替メディア（収録済み）（1.2.3） {#audio-description-or-media-alternative-prerecorded}
 
@@ -235,8 +235,8 @@ c
 
 #### 詳細情報 - 音声解説または代替メディア（収録済み）（1.2.3） {#more-information-audio-description-or-media-alternative-prerecorded}
 
-* [達成基準 1.2.3 について](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html)
-* [達成基準 1.2.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
+* [ 達成基準 1.2.3 について ](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html)。
+* [ 達成基準 1.2.3 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)。
 
 <!--
 * [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
@@ -288,7 +288,7 @@ c
 
 ### 適応可能 (1.3) {#adaptable}
 
-[ガイドライン 1.3 適応可能：情報や構造を維持しながら、様々な方法（よりシンプルなレイアウトなど）で提示できるコンテンツを作成します。](https://www.w3.org/TR/WCAG/#adaptable)
+[ ガイドライン 1.3 適応可能：情報や構造を失うことなく、様々な方法（例えば、よりシンプルなレイアウト）で提示できるコンテンツを作成する ](https://www.w3.org/TR/WCAG/#adaptable)。
 
 このガイドラインは、次のようなユーザーのサポートに必要な要件に対応しています。
 
@@ -454,12 +454,12 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
 #### 詳細情報 - 感覚的な特徴（1.3.3） {#more-information-sensory-characteristics}
 
-* [達成基準 1.3.3 について](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
-* [達成基準 1.3.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
+* [ 達成基準 1.3.3 について ](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)。
+* [ 達成基準 1.3.3 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)。
 
 ### 判別可能（1.4） {#distinguishable}
 
-[ガイドライン 1.4 判別可能：コンテンツを、利用者にとって見やすく、聞きやすいものにします。これには、前景と背景を区別することも含む。](https://www.w3.org/TR/WCAG/#distinguishable)
+[ ガイドライン 1.4 識別可能：前景と背景を分離するなど、コンテンツを見たり聞いたりしやすくします ](https://www.w3.org/TR/WCAG/#distinguishable)。
 
 ### 色の使用（1.4.1）  {#use-of-color}
 
@@ -491,8 +491,8 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
 #### 詳細情報 - 色の使用（1.4.1） {#more-information-use-of-color}
 
-* [達成基準 1.4.1 について](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
-* [達成基準 1.4.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
+* [ 達成基準 1.4.1 について ](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)。
+* [ 達成基準 1.4.1 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)。
 
 ### 音声の制御（1.4.2）  {#audio-control}
 
@@ -516,8 +516,8 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
 #### 詳細情報 - 音声の制御（1.4.2） {#more-information-audio-control}
 
-* [達成基準 1.4.2 について](https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html)
-* [達成基準 1.4.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#audio-control)
+* [ 達成基準 1.4.2 について ](https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html)。
+* [ 達成基準 1.4.2 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#audio-control)。
 
 ### コントラスト（最低限）（1.4.3） {#contrast-minimum}
 
@@ -573,8 +573,8 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
 #### 詳細情報 - コントラスト（最低限）（1.4.3） {#more-information-contrast-minimum}
 
-* [達成基準 1.4.3 について](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
-* [達成基準 1.4.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
+* [ 達成基準 1.4.3 について ](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)。
+* [ 達成基準 1.4.3 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)。
 
 ### テキストのサイズ変更（1.4.4）  {#resize-text}
 
@@ -592,8 +592,8 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
 #### 詳細情報 - テキストのサイズ変更（1.4.4） {#more-information-resize-text}
 
-* [達成基準 1.4.4 について](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)
-* [達成基準 1.4.4 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#resize-text)
+* [ 達成基準 1.4.4 について ](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)。
+* [ 達成基準 1.4.4 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#resize-text)。
 
 ### 文字画像（1.4.5） {#images-of-text}
 
@@ -617,16 +617,16 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
 #### 詳細情報 - 文字画像（1.4.5） {#more-information-images-of-text}
 
-* [達成基準 1.4.5 について](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html)
-* [達成基準 1.4.5 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#images-of-text)
+* [ 達成基準 1.4.5 の概要 ](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html)。
+* [ 達成基準 1.4.5 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#images-of-text)。
 
 ## 原則 2：操作可能 {#principle-operable}
 
-[原則 2：操作可能 - ユーザーインターフェイスコンポーネントおよびナビゲーションは操作可能でなければならない。](https://www.w3.org/TR/WCAG/#operable)
+[ 原則 2：操作可能 – ユーザーインターフェイスコンポーネントおよびナビゲーションは操作可能でなければならない ](https://www.w3.org/TR/WCAG/#operable)。
 
 ### キーボード操作可能（2.1） {#keyboard-accessible}
 
-[ガイドライン 2.1 キーボード操作可能：すべての機能をキーボードから使用できること。](https://www.w3.org/TR/WCAG/#keyboard-accessible)
+[ ガイドライン 2.1 キーボード対応：すべての機能をキーボードから使用できるようにする ](https://www.w3.org/TR/WCAG/#keyboard-accessible)。
 
 これは、キーボードを使用してすべての機能のアクセスを確保することを目的としています。
 
@@ -646,8 +646,8 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
 #### 詳細情報 - キーボード（2.1.1） {#more-information-keyboard}
 
-* [達成基準 2.1.1 について](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
-* [達成基準 2.1.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#keyboard)
+* [ 達成基準 2.1.1 について ](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)。
+* [ 達成基準 2.1.1 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#keyboard)。
 
 ### キーボードトラップなし（2.1.2）  {#no-keyboard-trap}
 
@@ -667,12 +667,12 @@ web ページの機能によって、フォーカスがコンテンツのサブ�
 
 #### 詳細情報 - キーボードトラップなし（2.1.2） {#more-information-no-keyboard-trap}
 
-* [達成基準 2.1.2 について](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
-* [達成基準 2.1.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap)
+* [ 達成基準 2.1.2 について ](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)。
+* [ 達成基準 2.1.2 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap)。
 
 ### 十分な時間（2.2） {#enough-time}
 
-[ガイドライン 2.2 十分な時間：ユーザーに対し、コンテンツを読んで使用するのに十分な時間を提供します。](https://www.w3.org/TR/WCAG/#enough-time)
+[ ガイドライン 2.2 十分な時間：ユーザーがコンテンツを読んで使用するのに十分な時間を提供します ](https://www.w3.org/TR/WCAG/#enough-time)。
 
 これは、ユーザーがコンテンツを読んで行動を起こすのに十分な時間を確保することを目的としています。
 
@@ -692,8 +692,8 @@ web ページの機能によって、フォーカスがコンテンツのサブ�
 
 #### 詳細情報 - タイミング調整可能（2.2.1） {#more-information-timing-adjustable}
 
-* [達成基準 2.2.1 について](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
-* [達成基準 2.2.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
+* [ 達成基準 2.2.1 について ](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)。
+* [ 達成基準 2.2.1 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)。
 
 ### 一時停止、停止、非表示（2.2.2）  {#pause-stop-hide}
 
@@ -726,12 +726,12 @@ web ページの機能によって、フォーカスがコンテンツのサブ�
 
 #### 詳細情報 - 一時停止、停止、非表示（2.2.2） {#more-information-pause-stop-hide}
 
-* [達成基準 2.2.2 について](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html)
-* [達成基準 2.2.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)
+* [ 達成基準 2.2.2 について ](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html)。
+* [ 達成基準 2.2.2 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)。
 
 ### 発作および身体的反応（2.3） {#seizures-and-physcial-reactions}
 
-[ガイドライン 2.3 発作の防止：発作や身体的反応を引き起こすようなコンテンツを設計しないこと。](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)
+[ ガイドライン 2.3 発作の防止：発作や身体的反応を引き起こすようなコンテンツを設計しないこと ](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)。
 
 ### 3 回の閃光、またはしきい値以下（2.3.1） {#three-flashes-or-below-threshold}
 
@@ -756,12 +756,12 @@ web ページの機能によって、フォーカスがコンテンツのサブ�
 
 #### 詳細情報 - 3 回の閃光、またはしきい値以下（2.3.1） {#more-information-three-flashes-or-below-threshold}
 
-* [達成基準 2.3.1 について](https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html)
-* [達成基準 2.3.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold)
+* [ 達成基準 2.3.1 について ](https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html)。
+* [ 達成基準 2.3.1 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold)。
 
 ### ナビゲーション可能（2.4） {#navigable}
 
-[ガイドライン 2.4 ナビゲーション可能：ユーザーのナビゲーション、コンテンツの検索、位置の特定に役立つ方法を提供します。](https://www.w3.org/TR/WCAG/#navigable)
+[ ガイドライン 2.4 ナビゲーション可能：ユーザーのナビゲーション、コンテンツの検索、位置の特定に役立つ方法を提供します ](https://www.w3.org/TR/WCAG/#navigable)。
 
 このガイドラインは、ユーザーがコンテンツを簡単かつわかりやすくナビゲートできることを目的としています。
 
@@ -781,8 +781,8 @@ web ページの機能によって、フォーカスがコンテンツのサブ�
 
 #### 詳細情報 - ブロックのスキップ（2.4.1） {#more-information-bypass-blocks}
 
-* [達成基準 2.4.1 について](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)
-* [達成基準 2.4.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)
+* [ 達成基準 2.4.1 について ](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)。
+* [ 達成基準 2.4.1 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)。
 
 ### ページタイトル（2.4.2）  {#page-titled}
 
@@ -802,8 +802,8 @@ AEM で新しい HTML ページを作成する際には、ページタイトル�
 
 #### 詳細情報 - ページタイトル（2.4.2） {#more-information-page-titled}
 
-* [達成基準 2.4.2 について](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html)
-* [達成基準 2.4.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
+* [ 達成基準 2.4.2 について ](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html)。
+* [ 達成基準 2.4.2 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)。
 
 ### フォーカス順序（2.4.3）  {#focus-order}
 
@@ -821,8 +821,8 @@ AEM で新しい HTML ページを作成する際には、ページタイトル�
 
 #### 詳細情報 - フォーカス順序（2.4.3） {#more-information-focus-order}
 
-* [達成基準 2.4.3 について](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)
-* [達成基準 2.4.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)
+* [ 達成基準 2.4.3 について ](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)。
+* [ 達成基準 2.4.3 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)。
 
 ### リンクの目的（コンテキスト内）（2.4.4）  {#link-purpose-in-context}
 
@@ -884,8 +884,8 @@ John Smith's publications
 
 #### 詳細情報 - リンクの目的（コンテキスト内）（2.4.4） {#more-information-link-purpose-in-context}
 
-* [達成基準 2.4.4 について](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html)
-* [達成基準 2.4.4 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)
+* [ 達成基準 2.4.4 について ](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html)。
+* [ 達成基準 2.4.4 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)。
 
 <!--
 * [C7: Using CSS to hide a portion of the link text](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
@@ -909,8 +909,8 @@ John Smith's publications
 
 #### 詳細情報 - 複数の手段（2.4.5） {#more-information-multiple-ways}
 
-* [達成基準 2.4.5 について](https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html)
-* [達成基準 2.4.5 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)
+* [ 達成基準 2.4.5 について ](https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html)。
+* [ 達成基準 2.4.5 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)。
 
 ### 見出しおよびラベル（2.4.6）  {#headings-and-labels}
 
@@ -928,8 +928,8 @@ John Smith's publications
 
 #### 詳細 - 見出しおよびラベル（2.4.6） {#more-information-headings-and-labels}
 
-* [達成基準 2.4.6 について](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html)
-* [達成基準 2.4.6 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)
+* [ 達成基準 2.4.6 について ](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html)。
+* [ 達成基準 2.4.6 の達成方法 ](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)。
 
 ### フォーカスの可視化（2.4.7）  {#focus-visible}
 
@@ -956,11 +956,11 @@ John Smith's publications
 
 ## 原則 3：理解可能 {#principle-understandable}
 
-[原則 3：理解可能 - 情報とユーザーインターフェイスの操作は理解可能である必要があります。](https://www.w3.org/TR/WCAG/#understandable)
+[ 原則 3：理解可能 – 情報とユーザーインターフェイスの操作は理解可能である必要があります ](https://www.w3.org/TR/WCAG/#understandable)。
 
 ### テキストコンテンツを読みやすく理解可能にする（3.1） {#make-text-content-readable-and-understandable}
 
-[ガイドライン 3.1 読み取り可能：テキストコンテンツを読みやすく理解可能にします。](https://www.w3.org/TR/WCAG/#readable)
+[ ガイドライン 3.1 読みやすさ：テキストコンテンツを読みやすく理解可能にすること ](https://www.w3.org/TR/WCAG/#readable)。
 
 ### ページの言語（3.1.1） {#language-of-page}
 
@@ -1043,7 +1043,7 @@ span 要素を適切な言語で追加するには、RTE のソース編集モ�
 
 ### 予測可能（3.2） {#predictable}
 
-[ガイドライン 3.2 予測可能：web ページを予測可能な方法で表示および操作できるようにします。](https://www.w3.org/TR/WCAG/#predictable)
+[ ガイドライン 3.2 予測可能：web ページを予測可能な方法で表示および操作できるようにします ](https://www.w3.org/TR/WCAG/#predictable)。
 
 これは、web ページの外観と動作の一貫性を確保することを目的としています。
 
@@ -1141,7 +1141,7 @@ web ページ上に 2 つのコンポーネントがあり、両方のコンポ�
 
 ### 入力支援（3.3） {#input-assistance}
 
-[ガイドライン 3.3 入力支援：利用者の間違いを防ぎ、修正を支援すること。](https://www.w3.org/TR/WCAG/#input-assistance)
+[ ガイドライン 3.3 入力支援：利用者の間違いを防ぎ、修正を支援すること ](https://www.w3.org/TR/WCAG/#input-assistance)。
 
 ### エラーの特定（3.3.1）  {#error-identification}
 
@@ -1273,11 +1273,11 @@ AEM WKND デモプロジェクトでは、**テキストフィールド**&#x200B
 
 ## 原則 4：堅牢 {#principle-robust}
 
-[原則 4：堅牢 - コンテンツは、支援テクノロジーを含む様々なユーザーエージェントが確実に解釈できるように十分に堅牢でなければならない。](https://www.w3.org/TR/WCAG/#robust)
+[ 原則 4：堅牢 – コンテンツは、支援テクノロジーを含む様々なユーザーエージェントが確実に解釈できるように十分に堅牢でなければならない ](https://www.w3.org/TR/WCAG/#robust)。
 
 ### 互換性（4.1） {#compatible}
 
-[ガイドライン 4.1 互換性：支援テクノロジーを含む、現在および将来のユーザーエージェントとの互換性を最大化します。](https://www.w3.org/TR/WCAG/#compatible)
+[ ガイドライン 4.1 互換：支援テクノロジーを含む、現在および将来のユーザーエージェントとの互換性を最大限に高めます ](https://www.w3.org/TR/WCAG/#compatible)。
 
 支援テクノロジーを含む、現在および将来のユーザーエージェントとの互換性を最大化します。
 

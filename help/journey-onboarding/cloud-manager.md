@@ -4,20 +4,20 @@ description: プロジェクトリソースを設定するための Cloud Manage
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
 # Cloud Manager へのアクセス {#cloud-resources}
 
-[オンボーディングジャーニー](overview.md)のこのパートでは、プロジェクトリソースを設定するための Cloud Manager へのアクセス方法について説明します。
+[ オンボーディングジャーニー ](overview.md) のこのパートでは、プロジェクトリソースを設定するためのCloud Managerへのアクセス方法について説明します。
 
 ## 目的 {#objective}
 
-オンボーディングジャーニーの前の記事 [Cloud Manager 製品プロファイルへのチームメンバーの割り当て](assign-profiles-cloud-manager.md)では、AEMaaCS チームに適切な役割を付与しました。ここでは、チームが使用するプロジェクトリソースを設定するための Cloud Manager にアクセスする方法について説明します。
+オンボーディングジャーニーの前の記事 [Cloud Manager製品プロファイルへのチームメンバーの割り当て ](assign-profiles-cloud-manager.md) では、AEMaaCS チームに適切な役割を付与しました。 ここでは、チームが使用するプロジェクトリソースを設定するための Cloud Manager にアクセスする方法について説明します。
 
 ジャーニーの前の手順を完了したので、チームは Cloud Manager にアクセスできます。Cloud Manager を使用すると、プログラムや環境などのプロジェクトリソースの作成と管理を行えます。
 
@@ -40,7 +40,7 @@ Cloud Manager は、AEM as a Cloud Service に不可欠なコンポーネント�
 
 1. システム管理者として、**ビジネスオーナー**&#x200B;の役割が割り当てられていることを確認します。
 
-   * このジャーニーの前の手順の [Cloud Manager 製品プロファイルへのチームメンバーの割り当て](assign-profiles-cloud-manager.md)に戻り、システム管理者に&#x200B;**ビジネスオーナー**&#x200B;の役割を割り当てる方法の詳細を参照してください。
+   * このジャーニーの前の手順の [Cloud Manager製品プロファイルへのチームメンバーの割り当て ](assign-profiles-cloud-manager.md) に戻り、システム管理者に **ビジネスオーナー** の役割を割り当てる方法の詳細を参照してください。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) から Cloud Manager にログインすると、通常のランディングページが表示されます。
 

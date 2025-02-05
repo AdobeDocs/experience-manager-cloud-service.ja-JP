@@ -2,10 +2,10 @@
 title: リモート AEM Assets と AEM Sites の統合
 description: AEM Sites を設定し、承認済み AEM Assets に接続する方法について説明します。
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 96%
+source-wordcount: '1028'
+ht-degree: 98%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 96%
 
 >[!AVAILABILITY]
 >
->OpenAPI 機能ガイドのDynamic MediaがPDF形式で利用できるようになりました。 ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えます。
+>OpenAPI 機能搭載 Dynamic Media のガイドを、PDF 形式で利用できるようになりました。ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えてください。
 >
->[!BADGE OpenAPI 機能ガイドPDFのDynamic Media]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE OpenAPI 機能搭載 Dynamic Media ガイドの PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 デジタルアセットを効果的に管理することは、様々なオンラインプラットフォームにわたって魅力的で一貫性のあるブランドエクスペリエンスを提供するのに重要です。OpenAPI 機能を備えた Dynamic Media は、AEM Sites と AEM Assets as a Cloud Service 間のシームレスな統合を有効にして、デジタルアセット管理を強化します。この革新的な機能により、複数の AEM 環境間で様々なタイプの承認済みデジタルアセットを簡単に共有および管理でき、サイト作成者とコンテンツ編集者のワークフローが効率化されます。
 
@@ -32,7 +32,7 @@ OpenAPI 機能を備えた Dynamic Media を使用すると、サイト作成者
 
 OpenAPI 機能を備えた Dynamic Media には、コンテンツフラグメント内のリモートアセットへのアクセスと使用、リモートアセットのメタデータの取得など、他にもいくつかのメリットがあります。詳しくは、[接続されたアセットと比較した OpenAPI 機能を備えた Dynamic Media のその他のメリット](/help/assets/dynamic-media-open-apis-faqs.md)を参照してください。
 
-## 事前準備 {#pre-requisites-sites-integration}
+## 始める前に {#pre-requisites-sites-integration}
 
 OpenAPI 機能を備えた Dynamic Media を使用したリモートアセットのサポートには、以下が必要です。
 

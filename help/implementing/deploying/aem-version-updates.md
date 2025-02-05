@@ -4,10 +4,10 @@ description: Adobe Experience Manager (AEM) as a Cloud Service で継続的統�
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: 73fac04561f43a4053e1694da9e096a2ecbc1484
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '997'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ NIMU を通じて、AEM バージョンの更新がスケジュールされて�
 #### アクティビティの更新
 
 Cloud Manager の UI 環境パネルを使用して、以前と同様、環境ごとに現在の AEM のバージョンを確認することができます。顧客側で作成したテストを含め、パイプラインで使用される品質ゲートと同じものが非侵入型メンテナンス更新で使用されます。
-プログラムの環境に非破壊的なメンテナンス更新が適用されるたびに ](/help/implementing/cloud-manager/notifications.md)0}Cloud Manager UI 通知が送信されます。 [この通知をメールにも送信するように設定することができます。
+プログラムの環境に非侵入型メンテナンス更新が適用されるたびに、[Cloud Manager UI 通知](/help/implementing/cloud-manager/notifications.md)が送信されます。この通知をメールにも送信するように設定することができます。
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ AEM のアップデートは、複数のステップを含む集中的かつ完�
 
 ## 複合ノードストア {#composite-node-store}
 
-ノードのクラスターであるオーサリングインスタンスの場合も含め、通常、アップデートでダウンタイムは発生しません。[Oak の複合ノードストア機能](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)により、ローリングアップデートが可能です。
+ノードのクラスターであるオーサリングインスタンスの場合も含め、通常、アップデートでダウンタイムは発生しません。[Oakの複合ノードストア機能 ](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html) により、ローリングアップデートが可能です。
 
 この機能を利用すると、AEM で複数のリポジトリを同時に参照できます。[ローリングデプロイメント](/help/implementing/deploying/overview.md#how-rolling-deployments-work)の場合、新しい AEM バージョンには独自の `/libs` （TarMK ベースの不変リポジトリ）が含まれます。古い AEM バージョンとは異なりますが、どちらも、`/content`、`/conf`、`/etc` などのエリアを含む共有 DocumentMK ベースの可変リポジトリを参照します。
 
@@ -108,5 +108,5 @@ AEM のアップデートは、複数のステップを含む集中的かつ完�
 関連するテーマについて詳しくは、以下を参照してください。
 
 * [Cloud Manager CI／CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-* [Cloud Manager UI の通知](/help/implementing/cloud-manager/notifications.md)
-* [Adobe Experience Manager as a Cloud Serviceのアーキテクチャ](/help/overview/architecture.md)
+* [Cloud Manager UI 通知](/help/implementing/cloud-manager/notifications.md)
+* [Adobe Experience Manager as a Cloud Service のアーキテクチャ](/help/overview/architecture.md)

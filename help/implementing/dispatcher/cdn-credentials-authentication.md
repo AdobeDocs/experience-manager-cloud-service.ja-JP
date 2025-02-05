@@ -4,17 +4,17 @@ description: 設定ファイルでルールを宣言し、Cloud Manager 設定�
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: d6484393410d32f348648e13ad176ef5136752f2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1497'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
 
 # CDN 資格情報および認証の設定 {#cdn-credentials-authentication}
 
-アドビが提供する CDN には様々な機能とサービスがあり、その一部は適切なレベルのエンタープライズセキュリティを確保する資格情報と認証に依存しています。Cloud Manager [設定パイプライン](/help/operations/config-pipeline.md)を使用してデプロイした設定ファイルでルールを宣言すると、お客様はセルフサービス方式で次を設定できます。
+アドビが提供する CDN には様々な機能とサービスがあり、その一部は適切なレベルのエンタープライズセキュリティを確保する資格情報と認証に依存しています。Cloud Manager [config パイプライン ](/help/operations/config-pipeline.md) を使用してデプロイされた設定ファイルでルールを宣言すると、お客様はセルフサービス方式で以下を設定できます。
 
 * 顧客管理 CDN からのリクエストを検証する Adobe CDN で使用される X-AEM-Edge-Key HTTP ヘッダー値。
 * CDN キャッシュ内のリソースのパージに使用される API トークン。
@@ -28,14 +28,14 @@ ht-degree: 92%
 
 [AEM as a Cloud Service の CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) ページの説明に従って、お客様は、顧客 CDNと呼ばれる（BYOCDN と呼ばれることもあります）独自の CDN を通じてトラフィックをルーティングすることを選択できます。
 
-設定の一部として、Adobe CDN と顧客 CDN は、`X-AEM-Edge-Key` HTTP ヘッダーの値について合意する必要があります。この値は、AdobeCDN にルーティングされる前に、顧客 CDN で各リクエストで設定され、CDN で値が期待どおりであることを検証するので、リクエストを適切なAEM オリジンにルーティングするのに役立つヘッダーなど、他の HTTP ヘッダーを信頼できます。
+設定の一部として、Adobe CDN と顧客 CDN は、`X-AEM-Edge-Key` HTTP ヘッダーの値について合意する必要があります。この値は、リクエストが Adobe CDN にルーティングされる前に、顧客 CDN で各リクエストに対して設定され、Adobe CDN では値が期待どおりであることを検証するので、リクエストを適切な AEM 接触チャネルにルーティングするのに役立つ HTTP ヘッダーを含む他の HTTP ヘッダーを信頼できます。
 
 *X-AEM-Edge-Key* 値は、最上位レベルの `config` フォルダーの下にある `cdn.yaml` または類似の名前のファイル内の `edgeKey1` プロパティと `edgeKey2` プロパティによって参照されます。フォルダー構造と設定のデプロイ方法について詳しくは、[設定パイプラインの使用](/help/operations/config-pipeline.md#folder-structure)を参照してください。構文は以下の例で説明されています。
 
-デバッグ情報と一般的なエラーについて詳しくは、[ 一般的なエラー ](/help/implementing/dispatcher/cdn.md#common-errors) を確認してください。
+デバッグ情報と一般的なエラーについて詳しくは、[一般的なエラー](/help/implementing/dispatcher/cdn.md#common-errors)を参照してください。
 
 >[!WARNING]
->条件に一致するすべてのリクエスト（以下のサンプルでは、パブリッシュ層へのすべてのリクエストを意味します）に対して、正しい X-AEM-Edge-Key を持たない直接アクセスは拒否されます。認証を徐々に導入する必要がある場合は、[ トラフィックのブロックのリスクを軽減するための安全な移行 ](#migrating-safely) の節を参照してください。
+>条件に一致するすべてのリクエスト（以下のサンプルでは、パブリッシュ層へのすべてのリクエストを意味します）に対して、正しい X-AEM-Edge-Key を持たない直接アクセスは拒否されます。認証を段階的に導入する必要がある場合は、[ブロックされたトラフィックのリスクを軽減するための安全な移行](#migrating-safely)の節を参照してください。
 
 ```
 kind: "CDN"
@@ -145,11 +145,11 @@ data:
 
 * 子 `authentication` ノードを含む `data` ノード。
 * `authentication` の下には、1 つの `authenticators` ノードと 1 つの `rules` ノードがあり、どちらも配列をなしています。
-* Authenticators：特定の種類のトークンまたは証明書（この場合はパージキー）を宣言できます。 次のプロパティが含まれます。
+* オーセンティケーター：トークンまたは資格情報のタイプ（この場合はパージキー）を宣言できます。次のプロパティが含まれます。
    * name - わかりやすい文字列。
    * type - パージする必要があります。
    * purgeKey1 - この値は、[Cloud Manager 秘密鍵タイプの環境変数](/help/operations/config-pipeline.md#secret-env-vars)を参照する必要があります。「適用されたサービス」フィールドで、「すべて」を選択します。値（例：`${{CDN_PURGEKEY_031224}}`）は、追加した日を反映することをお勧めします。
-   * purgeKey2 – 秘密鍵の回転に使用されます。これについては、以下の [ 秘密鍵の回転 ](#rotating-secrets) の節で説明します。 `purgeKey1` と `purgeKey2` の 1 つ以上を宣言する必要があります。
+   * purgeKey2 - 以下の[秘密鍵のローテーション](#rotating-secrets)の節で説明する、秘密鍵のローテーションに使用します。`purgeKey1` と `purgeKey2` の 1 つ以上を宣言する必要があります。
 * ルール：使用するオーセンティケーターと、パブリッシュ層とプレビュー層のどちらに使用するかを宣言できます。これには以下が含まれます。
    * name - わかりやすい文字列
    * when - [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)の記事の構文に従って、ルールを評価するタイミングを決定する条件。通常、現在の層（例：パブリッシュ）の比較が含まれます。

@@ -4,10 +4,10 @@ description: Cloud Acceleration Manager を使用して、移行セットから�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 67b04abfc0213ac175afca34b9424dafbe150a25
-workflow-type: ht
-source-wordcount: '3412'
-ht-degree: 100%
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
+source-wordcount: '3411'
+ht-degree: 99%
 
 ---
 
@@ -182,7 +182,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 
 まれに、取り込みのターゲット Cloud Service 環境で予期しない問題が発生する場合があります。その結果、環境が期待どおりの準備完了状態ではないので、取り込みは失敗します。発生したエラー状態の詳細を確認するには、取り込みログを確認します。
 
-オーサー環境が使用可能であることを確認し、数分間待機してから、取り込みを再試行します。エラー状態が発生した際、問題が解決しない場合は、カスタマーサポートにお問い合わせください。
+オーサー環境が使用可能であることを確認し、数分間待機してから、取り込みを再試行します。問題が解決しない場合は、発生したエラー状態をカスタマーサポートにお問い合わせください。
 
 ### 一意性制約違反による追加取り込みのエラー {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 

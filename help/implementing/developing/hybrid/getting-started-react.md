@@ -4,7 +4,7 @@ description: この記事では、サンプルの SPA アプリケーション�
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 100%
@@ -182,7 +182,7 @@ MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppP
 
 この例の `AppPage` クラスでは、インナーコンテンツメソッドを含む `Page` を拡張して使用します。
 
-`Page` は、ページモデルの JSON 表現を取得し、コンテンツを処理してページの各要素をラップ／デコレートします。`Page` のその他の詳細については、[SPA ブループリント](blueprint.md)のドキュメントを参照してください。
+`Page` は、ページモデルの JSON 表現を取り込み、コンテンツを処理してページの各要素をラップ／デコレートします。`Page` のその他の詳細については、[SPA ブループリント](blueprint.md)のドキュメントを参照してください。
 
 ### Image.js {#image-js}
 

@@ -4,10 +4,10 @@ description: コンテンツの公開が Edge 配信サービスと連携する�
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ Edge 配信サービスを使用すると、コンテンツソースに関係な
 
 ## AEM からのフローの公開 {#publishing-flow}
 
-ユニバーサルエディターを使用して AEM コンテンツをオーサリングする場合、公開は、ユニバーサルエディターで「**公開**」ボタンをクリックします。 [ユニバーサルエディターを使用したコンテンツの公開。](/help/sites-cloud/authoring/universal-editor/publishing.md)ドキュメントを参照してください
+ユニバーサルエディターを使用して AEM コンテンツをオーサリングする場合、公開は、ユニバーサルエディターで「**公開**」ボタンをクリックします。[ ユニバーサルエディターを使用したコンテンツの公開 ](/help/sites-cloud/authoring/universal-editor/publishing.md) ドキュメントを参照してください。
 
 公開時の情報のフローは次のとおりです。作成者が公開を開始すると、このフローは自動的で、参考のためにそのフローがここで説明されています。
 

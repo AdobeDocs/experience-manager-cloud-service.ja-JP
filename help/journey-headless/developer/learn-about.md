@@ -5,16 +5,16 @@ exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
 # CMS ヘッドレス開発について {#learn-about}
 
-[AEM ヘッドレスデベロッパージャーニー](overview.md)のこの部分では、ヘッドレステクノロジーと、それを使用する理由について説明します。
+[AEM ヘッドレスデベロッパージャーニー](overview.md) のこのパートでは、ヘッドレステクノロジーと、それを使用する理由について説明します。
 
 ## 目的 {#objective}
 
@@ -127,7 +127,7 @@ AEM ヘッドレスジャーニーを開始していただきありがとうご�
 
 ## その他のリソース {#additional-resources}
 
-「[AEM Headless as a Cloud Service - はじめに](getting-started.md)」ドキュメントを確認して、ヘッドレス開発のジャーニーの次の部分に進むことをお勧めします。以下は、このドキュメントで取り上げるいくつかの概念について詳しく説明する、追加のオプションリソースです。
+「[AEM as a Cloud Service ヘッドレスの概要 ](getting-started.md)」ドキュメントを確認して、ヘッドレス開発のジャーニーの次のパートに進むことをお勧めしますが、以下のリソースではこのドキュメントで取り上げた概念についてより詳しく説明しています。追加的なオプションであり、ジャーニーを続ける上で必須のリソースではありません。
 
 * [Adobe Experience Manager as a Cloud Service のアーキテクチャの概要](/help/overview/architecture.md) - AEM as a Cloud Service の構造について
 * [ヘッドレス CMS としての AEM の概要](/help/headless/introduction.md)

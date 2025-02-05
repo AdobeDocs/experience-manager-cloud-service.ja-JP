@@ -1,20 +1,20 @@
 ---
 title: 独自のユニバーサルエディターサービスの実行
-description: ローカル開発用または独自のインフラストラクチャの一部として独自のユニバーサルエディターサービスを実行する方法を説明します。
+description: ローカル開発用または独自のインフラストラクチャの一部として、独自のユニバーサルエディターサービスを実行する方法について説明します。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ccdb43c31e3ba1365a514bff696c9ec11dbbc21e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '932'
-ht-degree: 77%
+ht-degree: 95%
 
 ---
 
 
 # 独自のユニバーサルエディターサービスの実行 {#local-ue-service}
 
-ローカル開発用または独自のインフラストラクチャの一部として独自のユニバーサルエディターサービスを実行する方法を説明します。
+ローカル開発用または独自のインフラストラクチャの一部として、独自のユニバーサルエディターサービスを実行する方法について説明します。
 
 ## 概要 {#overview}
 
@@ -26,18 +26,18 @@ ht-degree: 77%
 
 ## ユースケース {#use-cases}
 
-ユニバーサルエディターサービスの独自のコピーは、次の場合に役立ちます。
+ユニバーサルエディターサービスの独自のコピーは、次の操作を行う場合に役立ちます。
 
-* ユニバーサルエディターで使用するために、AEM上でローカルに開発します。
-* Adobeのユニバーサルエディターサービスとは別に、独自のインフラストラクチャの一部として独自のユニバーサルエディターサービスを実行します。
+* ユニバーサルエディターで使用するために AEM 上でローカルに開発。
+* アドビのユニバーサルエディターサービスから独立して、独自のインフラストラクチャの一部として独自のユニバーサルエディターサービスを実行。
 
-どちらのユースケースもサポートされています。 このドキュメントでは、ユニバーサルエディターサービスのローカルコピーと共にAEMを HTTPS で実行する方法について説明します。
+どちらのユースケースもサポートされています。このドキュメントでは、ユニバーサルエディターサービスのローカルコピーと共に HTTPS で AEM を実行する方法について説明します。
 
-独自のユニバーサルエディターサービスを独自のインフラストラクチャの一部として実行する場合は、ローカル開発例と同じ手順に従います。
+独自のインフラストラクチャの一部として独自のユニバーサルエディターサービスを実行する場合は、ローカル開発の例と同じ手順に従います。
 
 ## HTTPS で実行する AEM の設定 {#aem-https}
 
-HTTPS で保護されている外部フレーム内では、保護されていない HTTP フレームを読み込むことはできません。 ユニバーサルエディターサービスは HTTPS 上で実行し、AEM または他のリモートページも HTTPS 上で実行する必要があります。
+HTTPS で保護された外側のフレーム内で、保護されていない HTTP フレームを読み込むことはできません。ユニバーサルエディターサービスは HTTPS 上で実行し、AEM または他のリモートページも HTTPS 上で実行する必要があります。
 
 これを行うには、HTTPS で実行する AEM を設定する必要があります。開発目的で、自己署名証明書を使用できます。
 
@@ -79,29 +79,29 @@ UES_TLS_REJECT_UNAUTHORIZED=false
 UES_CORS_PRIVATE_NETWORK=true
 ```
 
-この例でのローカル開発に必要な最小値です。
+これらは、この例でのローカル開発に必要な最小値です。
 
 >[!NOTE]
 >
->Chrome バージョン 130 以降を実行している場合は、`UES_CORS_PRIVATE_NETWORK` オプションを使用して、[ プライベートネットワークアクセス ](https://wicg.github.io/private-network-access/#private-network-request) 用の CORS ヘッダーの送信を有効にする必要があります。
+>Chrome バージョン 130 以降を実行している場合は、`UES_CORS_PRIVATE_NETWORK` オプションを使用して、[プライベートネットワークアクセス](https://wicg.github.io/private-network-access/#private-network-request)用の CORS ヘッダーの送信を有効にする必要があります。
 
 
 これらと使用可能なその他の値の詳細を次の表に示します。
 
 | 値 | オプション | デフォルト | 説明 |
 |---|---|---|---|
-| `UES_PORT` | はい | `8080` | サーバーが動作しているポート |
-| `UES_PRIVATE_KEY` | はい | なし | HTTPS サーバーの秘密鍵のパス |
-| `UES_CERT` | はい | なし | HTTPS サーバーの証明書ファイルのパス |
-| `UES_TLS_REJECT_UNAUTHORIZED` | はい | `true` | 許可されていない TLS 接続を拒否します |
-| `UES_DISABLE_IMS_VALIDATION` | はい | `false` | IMS 検証を無効にします |
-| `UES_ENDPOINT_MAPPING` | はい | 空白 | 内部書き換え用のエンドポイントのマッピング<br>例：`UES_ENDPOINT_MAPPING='[{"https://your-public-facing-author-domain.net": "http://10.0.0.1:4502"}]'`<br>結果：ユニバーサルエディターサービスは、指定された接続 `https://your-public-facing-author-domain.net` ではなく `http://10.0.0.1:4502` に接続します |
-| `UES_LOG_LEVEL` | はい | `info` | サーバーのログレベル。指定可能な値は、`silly`、`trace`、`debug`、`verbose`、`info`、`log`、`warn`、`error` および `fatal` です |
-| `UES_SPLUNK_HEC_URL` | はい | なし | Splunk エンドポイントへの HEC URL |
-| `UES_SPLUNK_TOKEN` | はい | なし | Splunk トークン |
-| `UES_SPLUNK_INDEX` | はい | なし | ログを書き込むインデックス |
-| `UES_SPLUNK_SOURCE` | はい | `universal-editor-service` | Splunk ログでのソースの名前 |
-| `UES_CORS_PRIVATE_NETWORK` | はい | `false` | [ プライベートネットワークを許可するように CORS ヘッダーを送信できるようにします。](https://wicg.github.io/private-network-access/#private-network-request) Chrome バージョン 130 以降を使用する場合は必須です |
+| `UES_PORT` | あり | `8080` | サーバーが動作しているポート |
+| `UES_PRIVATE_KEY` | あり | なし | HTTPS サーバーの秘密鍵のパス |
+| `UES_CERT` | あり | なし | HTTPS サーバーの証明書ファイルのパス |
+| `UES_TLS_REJECT_UNAUTHORIZED` | あり | `true` | 許可されていない TLS 接続を拒否します |
+| `UES_DISABLE_IMS_VALIDATION` | あり | `false` | IMS 検証を無効にします |
+| `UES_ENDPOINT_MAPPING` | あり | 空白 | 内部書き換え用のエンドポイントのマッピング<br>例：`UES_ENDPOINT_MAPPING='[{"https://your-public-facing-author-domain.net": "http://10.0.0.1:4502"}]'`<br>結果：ユニバーサルエディターサービスは、指定された接続 `https://your-public-facing-author-domain.net` ではなく `http://10.0.0.1:4502` に接続します |
+| `UES_LOG_LEVEL` | あり | `info` | サーバーのログレベル。指定可能な値は、`silly`、`trace`、`debug`、`verbose`、`info`、`log`、`warn`、`error` および `fatal` です |
+| `UES_SPLUNK_HEC_URL` | あり | なし | Splunk エンドポイントへの HEC URL |
+| `UES_SPLUNK_TOKEN` | あり | なし | Splunk トークン |
+| `UES_SPLUNK_INDEX` | あり | なし | ログを書き込むインデックス |
+| `UES_SPLUNK_SOURCE` | あり | `universal-editor-service` | Splunk ログでのソースの名前 |
+| `UES_CORS_PRIVATE_NETWORK` | あり | `false` | CORS ヘッダーの送信を有効にして [ プライベートネットワーク ](https://wicg.github.io/private-network-access/#private-network-request) を許可します。 Chrome バージョン 130 以降を使用する場合は必須です |
 
 >[!NOTE]
 >
@@ -152,9 +152,9 @@ Universal Editor Service listening on port 8000 as HTTPS Server
 
 ## ローカルユニバーサルエディターサービスを使用したページの編集 {#editing}
 
-[ローカルで実行されるユニバーサルエディターサービス](#running-ue)と[ローカルサービスを使用するために実装されたコンテンツページ](#using-loca-ue)を使用して、エディターを起動できるようになりました。
+[ ユニバーサルエディターサービスがローカルで実行されている ](#running-ue) と、[ コンテンツページがローカルサービスを使用するようにインストルメントされている ](#using-loca-ue) ので、エディターを起動できるようになりました。
 
 1. ブラウザーを `https://localhost:8000/ping` で開きます。
-1. [自己署名証明書](#ue-https)に同意するようダイレクトされます。
+1. ブラウザーで [ 自己署名証明書 ](#ue-https) を受け入れるよう指示します。
 1. 自己署名証明書が信頼されると、ローカルのユニバーサルエディターサービスを使用してページを編集できるようになります。
 

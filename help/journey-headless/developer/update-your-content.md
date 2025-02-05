@@ -5,16 +5,16 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # AEM Assets API を使用してコンテンツをアップデートする方法 {#update-your-content}
 
-[AEM ヘッドレスデベロッパージャーニーのこの部分では、REST API を使用してコンテンツフラグメントのコンテンツにアクセスし、アップデートする方法について説明します。](overview.md)
+[AEM ヘッドレスデベロッパージャーニー](overview.md) のこのパートでは、REST API を使用してコンテンツフラグメントのコンテンツにアクセスし、アップデートする方法について説明します。
 
 ## これまでの説明内容 {#story-so-far}
 

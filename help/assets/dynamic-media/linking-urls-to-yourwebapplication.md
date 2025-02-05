@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 100%
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Web サイトやアプリケーションは、URL コールによって Dynamic Media のサービスにアクセスします。アセットを公開すると、Dynamic Media はそのアセットを参照する URL 文字列をアクティベートします。これらの URL を web ブラウザーに貼り付けてテストできます。
 
-Adobe Experience Manager を WCM として使用&#x200B;*していない*&#x200B;場合に限り、URL へのリンクを使用します。ビデオプレーヤーをポップアップウィンドウまたはモーダルウィンドウとして配信する場合には、（埋め込みではなく）リンク機能を使用します。Experience Manager を WCM として使用している場合は、[ページに直接アセットを追加します。](adding-dynamic-media-assets-to-pages.md)
+Adobe Experience Manager を WCM として使用&#x200B;*していない*&#x200B;場合に限り、URL へのリンクを使用します。ビデオプレーヤーをポップアップウィンドウまたはモーダルウィンドウとして配信する場合には、（埋め込みではなく）リンク機能を使用します。Experience Manager を WCM として使用している場合は、[ページに直接アセットを追加します](adding-dynamic-media-assets-to-pages.md)。
 
 Web ページやアプリケーションにこれらの URL 文字列を配置するには、Dynamic Media からコピーします。
 

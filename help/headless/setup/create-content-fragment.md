@@ -4,10 +4,10 @@ description: AEM のコンテンツフラグメントを使用して、ページ
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '341'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -29,7 +29,7 @@ AEM のコンテンツフラグメントを使用して、ページに依存し�
 
 1. AEM as a Cloud Service にログインし、メインメニューで&#x200B;**ナビゲーション**／**コンテンツフラグメント**&#x200B;を選択します。
 
-1. [以前に作成したフォルダー](create-assets-folder.md)を選択します。
+1. [ 前に作成したフォルダー ](create-assets-folder.md) を選択します。
 1. 「**作成**」を選択します。
 1. コンテンツフラグメントの作成は、ダイアログとして表示されます。
 コンテンツフラグメントの作成に使用する場所とモデルを選択します。
@@ -49,8 +49,8 @@ AEM のコンテンツフラグメントを使用して、ページに依存し�
 
 ## 次の手順 {#next-steps}
 
-コンテンツフラグメントを作成したら、「はじめる前に」ガイドの最後の部分に進み、[コンテンツフラグメントにアクセスして配信するための API リクエストを作成](create-api-request.md)できます。
+コンテンツフラグメントを作成したので、「はじめる前に」ガイドの最後のパートに進み、[API リクエストを作成してコンテンツフラグメントにアクセスして配信 ](create-api-request.md) します。
 
 >[!TIP]
 >
->コンテンツフラグメントの管理について詳しくは、[コンテンツフラグメントのドキュメント](/help/sites-cloud/administering/content-fragments/overview.md)を参照してください。
+>コンテンツフラグメントの管理について詳しくは、[ コンテンツフラグメントのドキュメント ](/help/sites-cloud/administering/content-fragments/overview.md) を参照してください。

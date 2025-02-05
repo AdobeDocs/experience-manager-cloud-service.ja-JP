@@ -5,10 +5,10 @@ exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '874'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 サイトテーマのカスタマイズのみを担当するフロントエンド開発者の場合、AEM の設定方法に関する知識は必要ないため、このドキュメントの 「[目的](#objective) 」の節にスキップしても構いません。
 
-フロントエンド開発者だけではなく Cloud Manager または AEM 管理者の役割も担っている場合は、以前のドキュメントで、AEM クイックサイト作成ジャーニー、[フロントエンド開発者へのアクセス権の付与、](grant-access.md)Git リポジトリにアクセスできるようにフロントエンド開発者をオンボードする方法を学びましたが、ここでは次のことを知っておく必要があります。
+Cloud ManagerまたはAEM管理者とフロントエンド開発者の役割も果たしている場合は、AEM クイックサイト作成ジャーニーの前のドキュメント [ フロントエンド開発者へのアクセス権の付与 ](grant-access.md)、フロントエンド開発者をオンボーディングして Git リポジトリにアクセスする方法も学びました。ここで、次のことを理解する必要があります。
 
 * フロントエンド開発者をユーザーとして追加する方法。
 * フロントエンド開発者に必要な役割を付与する方法。
@@ -114,10 +114,10 @@ Cloud Manager 管理者から、Cloud Manager ユーザーとしてオンボー�
 * Cloud Manager とは何かをハイレベルで理解します。
 * カスタマイズをコミットできるよう、AEM Git にアクセスするための資格情報を取得しました。
 
-この知識に基づいて、次は[サイトテーマのカスタマイズ](customize-theme.md)のドキュメントを確認して、AEM クイックサイト作成ジャーニーを続行してください。そこでは、サイトテーマの作成方法、カスタマイズ方法および AEM のライブコンテンツを使用したテスト方法を習得します。
+この知識に基づいて、次は [ サイトテーマのカスタマイズ ](customize-theme.md) のドキュメントを確認して、AEM クイックサイト作成ジャーニーを続行してください。そこでは、サイトテーマの作成方法、カスタマイズ方法、およびAEMのライブコンテンツを使用したテスト方法を習得します。
 
 ## その他のリソース {#additional-resources}
 
-[サイトテーマのカスタマイズ](customize-theme.md) のドキュメントを確認して、クイックサイト作成ジャーニーの次のパートに進むことをお勧めしますが、以下のリソースではこのドキュメントで取り上げた概念についてより詳しく説明しています。追加的なオプションであり、ジャーニーを続ける上で必須のリソースではありません。
+[ サイトテーマのカスタマイズ ](customize-theme.md) のドキュメントを確認して、クイックサイト作成ジャーニーの次のパートに進むことをお勧めしますが、以下のリソースではこのドキュメントで取り上げた概念についてより詳しく説明しています。追加的なオプションであり、ジャーニーを続ける上で必須のリソースではありません。
 
-* [Adobe Experience Manager Cloud Manager ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja) - Cloud Manager の機能の詳細についてはこのドキュメントを参照してください。
+* [Adobe Experience Manager Cloud Manager ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja) - Cloud Manager の機能について詳しくは、Cloud Manager のドキュメントを参照してください。

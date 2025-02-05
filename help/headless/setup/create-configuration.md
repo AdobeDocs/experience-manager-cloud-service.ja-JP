@@ -4,10 +4,10 @@ description: AEM as a Cloud Service でヘッドレスを使い始めるため�
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -21,7 +21,7 @@ AEM as a Cloud Service でヘッドレス機能を使い始めるには、まず
 
 AEM のヘッドレスなコンテンツ管理に関しては、AEM 内でコンテンツモデルを作成できるワークプレイスとして設定を考えてみてください。これにより、将来のコンテンツとコンテンツフラグメントの構造を定義できます。複数の設定を作成して、これらのモデルを分離できます。
 
-コンテンツモデルの管理での設定の使用方法は、[フルスタック AEM の実装ページテンプレート](/help/sites-cloud/authoring/page-editor/templates.md)と似ています。
+[ フルスタック AEM実装のページテンプレート ](/help/sites-cloud/authoring/page-editor/templates.md) を熟知している場合、コンテンツモデルの管理に設定を使用する方法は似ています。
 
 ## 設定の作成方法 {#how-to-create-a-configuration}
 
@@ -49,8 +49,8 @@ AEM のヘッドレスなコンテンツ管理に関しては、AEM 内でコン
 
 ## 次の手順 {#next-steps}
 
-この設定を使用して、「はじめる前に」ガイドの第 2 部に進み、[コンテンツフラグメントモデルを作成します。](create-content-model.md)
+この設定を使用して、「はじめる前に」ガイドの第 2 部および [ コンテンツフラグメントモデルを作成 ](create-content-model.md) に進むことができます。
 
 >[!TIP]
 >
->設定ブラウザーの詳細については、[設定ブラウザーのドキュメント](/help/implementing/developing/introduction/configurations.md)を参照してください。
+>設定ブラウザーについて詳しくは、[ 設定ブラウザーのドキュメント ](/help/implementing/developing/introduction/configurations.md) を参照してください。

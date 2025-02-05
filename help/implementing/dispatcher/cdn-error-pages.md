@@ -4,17 +4,17 @@ description: Amazon S3 や Azure Blob Storage などの自己ホスト型スト�
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 137ea509de353f9f800f0b64bb8f2f6375e7d83d
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '388'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
 
 # CDN エラーページの設定 {#cdn-error-pages}
 
-万が一、[アドビが管理する CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) が AEM の接触チャネルに到達できない場合、CDN はデフォルトで、サーバーに到達できないことを示す、ブランド化されていない汎用のエラーページを表示します。Amazon S3 や Azure Blob Storage などの自己ホスト型ストレージで静的ファイルをホストし、Cloud Manager [設定パイプライン](/help/operations/config-pipeline.md#managing-in-cloud-manager)を使用してデプロイされた設定ファイルで静的ファイルを参照することで、デフォルトのエラーページを上書きできます。
+万が一、[アドビが管理する CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) が AEM の接触チャネルに到達できない場合、CDN はデフォルトで、サーバーに到達できないことを示す、ブランド化されていない汎用のエラーページを表示します。デフォルトのエラーページをオーバーライドするには、Amazon S3 や Azure Blob Storage などの自己ホスト型ストレージで静的ファイルをホストし、Cloud Manager [config パイプライン ](/help/operations/config-pipeline.md#managing-in-cloud-manager) を使用してデプロイされた設定ファイルで静的ファイルを参照します。
 
 ## 設定 {#setup}
 

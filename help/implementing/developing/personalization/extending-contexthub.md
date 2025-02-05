@@ -4,10 +4,10 @@ description: 提供されている ContextHub ストアやモジュールのタ�
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -60,7 +60,7 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandidate', 0);
 ```
 
-ほとんどの場合、1 つの候補のみが必要で優先度を `0` に設定できますが、[より高度な登録](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies)について学ぶことができます。これにより、少数のストア実装のうちの 1 つを javascript 条件（`applies`）と優先度の候補に基づいて選択できます。
+ほとんどの場合、候補は 1 つのみ必要で、優先度は `0` に設定できます。しかし、興味があれば、[ より高度な登録 ](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) について知ることができます。これにより、JavaScript の条件（`applies`）と候補の優先度に基づいて、いくつかのストア実装の 1 つを選択できます。
 
 ## ContextHub UI モジュールタイプの作成 {#creating-contexthub-ui-module-types}
 

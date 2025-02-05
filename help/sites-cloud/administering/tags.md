@@ -5,10 +5,10 @@ exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 solution: Experience Manager Sites
 feature: Workflow
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2200'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -75,8 +75,8 @@ Adobe Experience Manager（AEM）では、タグが以下のプロパティと�
 タグを作成、使用してコンテンツを整理するには、いくつかの手順があります。
 
 1. [タグ用の名前空間を作成](#creating-namespaces)（または、再利用する既存の名前空間を選択します）。
-1. [新しいタグを作成します。](#creating-tags)
-1. [タグを公開します。](#publishing-tags)
+1. [ 新しいタグを作成します ](#creating-tags)。
+1. [ タグをPublishします ](#publishing-tags)。
 
 ### 名前空間の作成 {#creating-namespaces}
 
@@ -96,7 +96,7 @@ Adobe Experience Manager（AEM）では、タグが以下のプロパティと�
 
 名前空間が作成されます。タグ付けコンソールでは、名前空間は最下位（コンソールの左端の列）にあり、フォルダーアイコンで表され、その特性が他のタグの「コンテナ」すなわちグループの形で反映されます。
 
-この名前空間で[新しいタグを作成](#creating-tags)したり、[既存のタグを管理](#managing-tags)したりできるようになりました。
+この名前空間で [ 新しいタグを作成 ](#creating-tags) したり、[ 既存のタグを管理 ](#managing-tags) したりできます。
 
 名前空間にサブタグを含める必要はありません。名前空間自体はタグなので、コンテンツを他のタグとして整理するために使用できます。ただし、構造化タグ付け分類の作成を続ける場合、プロジェクトの要件に基づきその名前空間内で[サブタグを作成](#creating-tags)できます。
 
@@ -104,7 +104,7 @@ Adobe Experience Manager（AEM）では、タグが以下のプロパティと�
 
 タグは通常、名前空間に追加されます。
 
-1. タグを作成するには、[タグ付けコンソール](#tagging-console)を開きます。
+1. タグを作成するには、[ タグ付けコンソール ](#tagging-console) を開きます。
 
 1. タグを作成する名前空間を選択します。または、別のタグを選択して、その下にサブタグを作成します。
 
@@ -132,7 +132,7 @@ Adobe Experience Manager（AEM）では、タグが以下のプロパティと�
 
 AEM で他のコンテンツを作成する場合と同様に、タグ（または名前空間）を作成した後、タグはオーサリング環境にのみ存在します。タグをユーザーが使用できるようにするには、タグを公開する必要があります。
 
-1. タグを公開するには、[タグ付けコンソール](#tagging-console)を開きます。
+1. タグを公開するには、[ タグ付けコンソール ](#tagging-console) を開きます。
 
 1. 公開するタグを選択し、ツールバーで「**公開**」を選択します。
 
@@ -176,7 +176,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 プロパティコンソールを&#x200B;**プロパティ**&#x200B;ビューに切り替えることにより、誰がいつタグを最後に公開したを含む、タグの詳細を表示することができます。
 
-1. タグのプロパティを表示するには、[タグ付けコンソール](#tagging-console)を開きます。
+1. タグのプロパティを表示するには、[ タグ付けコンソール ](#tagging-console) を開きます。
 
 1. プロパティを表示するタグを選択し、左側のパネルで「**プロパティ**」を選択します。
 
@@ -192,7 +192,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 タグと名前空間は作成後に編集できます。
 
-1. タグを編集するには、[タグ付けコンソール](#tagging-console)を開きます。
+1. タグを編集するには、[ タグ付けコンソール ](#tagging-console) を開きます。
 
 1. 編集するタグを選択し、ツールバーで「**編集**」を選択します。
 
@@ -206,13 +206,13 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 言語の翻訳を追加する方法について詳しくは、[他の言語でのタグの管理](#managing-tags-in-different-languages)の節を参照してください。
 
-変更が既に公開済みのタグに対して行われた場合は、[再公開します。](#publishing-tags)
+既に公開済みのタグに変更を加えた場合は、[ 再公開 ](#publishing-tags) できます。
 
 ### タグの非公開 {#unpublishing-tags}
 
 オーサーインスタンスでタグのアクティベートを解除し、パブリッシュインスタンスからタグを削除するには、タグを非公開にします。
 
-1. タグを非公開にするには、[タグ付けコンソール](#tagging-console)を開きます。
+1. タグの公開を解除するには、[ タグ付けコンソール ](#tagging-console) を開きます。
 
 1. 非公開にするタグを 1 つ以上選択し、ツールバーで「**非公開**」を選択します。
 
@@ -232,7 +232,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 特定のタグが適用されるコンテンツを確認するのに役立ちます。これを行うには、タグ付けコンソールで&#x200B;**参照**&#x200B;ビューを使用します。
 
-1. タグの参照を表示するには、[タグ付けコンソール](#tagging-console)を開きます。
+1. タグの参照を表示するには、[ タグ付けコンソール ](#tagging-console) を開きます。
 
 1. 参照を表示するタグを選択し、左側のパネルで「**参照**」を選択します。
 
@@ -258,7 +258,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 >
 >タグの移動と名前の変更は、管理者のみが実行できることをお勧めします。
 
-1. タグの移動や名前の変更を行うには、[タグ付けコンソール](#tagging-console)を開きます。
+1. タグを移動または名前を変更するには、[ タグ付けコンソール ](#tagging-console) を開きます。
 
 1. 移動または名前を変更するタグを選択し、ツールバーで「**移動**」を選択します。
 
@@ -281,7 +281,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 タグ分類に重複や類似したタグがある場合は、それらのタグを結合すると便利です。タグ `A` をタグ `B` に結合すると、`A` タグでタグ付けされるすべてのページは、タグ `B` でタグ付けされ、作成者はタグ `A` を使用できなくなります。
 
-1. 2 つのタグを結合するには、[タグ付けコンソール](#tagging-console)を開きます。
+1. 2 つのタグを結合するには、[ タグ付けコンソール ](#tagging-console) を開きます。
 
 1. 別のタグに統合するタグを選択し、ツールバーで「**結合**」を選択します。
 
@@ -297,7 +297,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 タグ分類が変更され、タグや名前空間を不要にした場合は、タグや名前空間を削除できます。
 
-1. タグを削除するには、[タグ付けコンソール](#tagging-console)を開きます。
+1. タグを削除するには、[ タグ付けコンソール ](#tagging-console) を開きます。
 
 1. 削除するタグを選択し、ツールバーで「**削除**」を選択します。
 
@@ -358,7 +358,7 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 `Animals` というタグがあり、このタグをドイツ語とフランス語に翻訳するとします。
 
-1. [タグ付けコンソール](#tagging-console)を開きます。
+1. [ タギングコンソール ](#tagging-console) を開きます。
 
 1. 翻訳するタグを選択し、ツールバーで「**編集**」を選択します。
 

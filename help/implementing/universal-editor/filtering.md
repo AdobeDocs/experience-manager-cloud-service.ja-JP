@@ -3,13 +3,13 @@ title: コンポーネントのフィルタリング
 description: コンポーネントフィルターを使用して、ユニバーサルエディターでコンテナごとに許可されたコンポーネントを制限する方法を説明します。
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 48c1a109c060db4ce19bf645723357008d51c572
+exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 63%
 
 ---
-
 
 # コンポーネントのフィルタリング {#filtering-components}
 

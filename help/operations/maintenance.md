@@ -4,10 +4,10 @@ description: AEM as a Cloud Serviceのメンテナンスタスクと、その設
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 3692cf1b14fda80f35eb34583fbbf6b256a89917
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '2043'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -268,7 +268,7 @@ data:
 * すべてのプロパティを定義する必要があります。デフォルトは継承されません。
 * 以下のプロパティテーブルのタイプ（整数、文字列、ブール値など）を考慮する必要があります。
 
-**4** - [設定パイプライン](/help/operations/config-pipeline.md#managing-in-cloud-manager)の記事の説明に従って、Cloud Manager で設定パイプラインを作成します。
+**4** - [config パイプラインの記事 ](/help/operations/config-pipeline.md#managing-in-cloud-manager) で説明されているように、Cloud Managerで config パイプラインを作成します。
 
 ### バージョンのパージ {#version-purge}
 

@@ -4,10 +4,10 @@ description: アセット共有の Query Builder の機能は、Java API と RES
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1830'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -487,7 +487,7 @@ AEM Query Builder Debugger を使用して、説明可能な XPath クエリを�
 >
 >ロガーの設定は、ドキュメント「[ロギング](/help/implementing/developing/introduction/logging.md)」に記述されています。
 
-前の「[テストおよびデバッグ](#testing-and-debugging)」節に記述されたクエリを実行したときの Query Builder 実装のログ出力（情報レベル）。
+前の節（テストとデバッグ [ で説明したクエリの実行時における Query Builder 実装のログ出力（情報レベル ](#testing-and-debugging)
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):

@@ -4,20 +4,20 @@ description: Cloud Manager を使用して最初の環境を作成する方法�
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
 feature: Onboarding
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '725'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 # 環境の作成 {#create-environments}
 
-[オンボーディングジャーニー](overview.md)のこのパートでは、Cloud Manager を使用して最初の環境を作成する方法を説明します。
+[ オンボーディングジャーニー ](overview.md) のこのパートでは、Cloud Managerを使用して最初の環境を作成する方法を説明します。
 
 ## 目的 {#objective}
 
-オンボーディングジャーニーの前のドキュメント「[プログラムの作成](create-program.md)」を読み、独自の Cloud Manager プログラムを作成できました。次に、Cloud Manager を使用して、そのプログラム用の最初の環境を作成する方法を説明します。
+オンボーディングジャーニーの前のドキュメント [ プログラムの作成 ](create-program.md) を読み、独自のCloud Manager プログラムを作成できました。 次に、Cloud Manager を使用して、そのプログラム用の最初の環境を作成する方法を説明します。
 
 このドキュメントを読み終えると、次のことができるようになります。
 

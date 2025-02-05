@@ -3,10 +3,10 @@ title: OpenAPI 機能を備えた Dynamic Media を使用したアセットの�
 description: OpenAPI 機能を使用したアセットの配信の制限方法について説明します。
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 97%
+source-wordcount: '1150'
+ht-degree: 98%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 97%
 
 >[!AVAILABILITY]
 >
->OpenAPI 機能ガイドのDynamic MediaがPDF形式で利用できるようになりました。 ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えます。
+>OpenAPI 機能搭載 Dynamic Media のガイドを、PDF 形式で利用できるようになりました。ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えてください。
 >
->[!BADGE OpenAPI 機能ガイドPDFのDynamic Media]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE OpenAPI 機能搭載 Dynamic Media ガイドの PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Experience Manager のアセットガバナンスを一元化すると、DAM 管理者またはブランドマネージャーは、OpenAPI 機能を備えた Dynamic Media を通じて使用可能なアセットへのアクセスを管理できます。AEM as a Cloud Service オーサーサービスでアセットの特定のメタデータを設定して、承認済みアセット（個別のアセットに至るまで）の配信を、選択した [Adobe Identity Management System（IMS）ユーザーまたはグループ](https://helpx.adobe.com/jp/enterprise/using/users.html#user-mgt-strategy)に制限できます。
 

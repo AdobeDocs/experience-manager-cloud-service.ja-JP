@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2414'
 ht-degree: 100%
@@ -88,7 +88,7 @@ AEM で標準として用意されている同期アクションの一覧を次�
 インストールされたロールアウト設定がアプリケーションの要件を満たさない場合は、次の手順を実行して[ロールアウト設定を作成](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration)できます。
 
 1. [ロールアウト設定を作成します。](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
-1. [ロールアウト設定に同期アクションを追加します。](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
+1. [ロールアウト設定に同期アクションを追加します](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)。
 
 ブループリントまたはライブコピーページでロールアウト設定を指定すると、新しいロールアウト設定を使用できるようになります。
 

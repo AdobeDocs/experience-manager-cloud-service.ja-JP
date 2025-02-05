@@ -4,7 +4,7 @@ description: Sling Model Exporter による ResourceResolvers のシリアル化
 exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a64c17943332782814bdacd7484e056cd445d3a9
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 35%
@@ -15,7 +15,7 @@ ht-degree: 35%
 
 Sling Model Exporter 機能を使用すると、Sling モデルオブジェクトを JSON 形式にシリアル化できます。 この機能は、SPA（単一ページアプリケーション）が AEM からのデータに容易にアクセスできるようにするので、広く使用されています。実装側では、Jackson Databind ライブラリを使用して、これらのオブジェクトをシリアル化します。
 
-シリアル化は再帰的な操作です。「ルートオブジェクト」から始めて、すべての適格なオブジェクトを再帰的に反復処理し、それらのオブジェクトとその子をシリアル化します。 シリアル化されるフィールドの説明については、記事 [Jackson - Decide What Fields Get Serialized/Deserialized.](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not) を参照してください。
+シリアル化は再帰的な操作です。「ルートオブジェクト」から始めて、すべての適格なオブジェクトを再帰的に反復処理し、それらのオブジェクトとその子をシリアル化します。 シリアル化されるフィールドの説明については、[Jackson - Decide What Fields Get Serialized/Deserialized](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not) を参照してください。
 
 このアプローチは、すべてのタイプのオブジェクトを JSON にシリアル化します。 当然、シリアル化ルールの対象である場合は、Sling `ResourceResolver` オブジェクトもシリアル化できます。 `ResourceResolver` サービス（つまり、それを表すサービスオブジェクト）には、開示してはいけない、潜在的な機密情報が含まれているため、これは問題になります。例：
 
@@ -49,6 +49,6 @@ WARN メッセージは、AEM as a Cloud Service とローカル AEM SDK の両�
 
 Adobeは、すべてのお客様に対して、アプリケーションログおよびコードベースをチェックしてこの問題の影響を受けているかどうかを確認し、必要に応じてカスタムアプリケーションを変更して、この警告メッセージがログに表示されないようにします。
 
-ほとんどの場合、これらの必要な変更は簡単であると想定されています。 `ResourceResolver` オブジェクトは JSON 出力にはまったく必要ありません。そこに含まれる情報は、通常フロントエンドアプリケーションでは必要ないからです。つまり、ほとんどの場合、`ResourceResolver` オブジェクトが Jackson によって考慮されないように除外すれば十分です（[rules.](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not) を参照）。
+ほとんどの場合、これらの必要な変更は簡単であると想定されています。 `ResourceResolver` オブジェクトは JSON 出力には全く必要ありません。そこに含まれる情報は、通常、フロントエンドアプリケーションでは必要ないからです。つまり、ほとんどの場合、`ResourceResolver` オブジェクトが Jackson によって考慮されないように除外すれば十分です（[rules](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not) を参照）。
 
 Sling モデルがこの問題の影響を受けながらも変更されていない場合、`ResourceResolver` オブジェクトのシリアル化を明示的に無効にすると（2 番目の手順としてAdobeで実行する）、JSON 出力に変更が適用されます。

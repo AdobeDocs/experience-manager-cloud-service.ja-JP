@@ -5,10 +5,10 @@ exl-id: 5f025828-f2ca-4cbb-9cdf-a199e9e90cc7
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1122'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -79,7 +79,7 @@ AEM サイトエディターのサイドパネルを使用して、ページに�
 
 ![コンポーネントブラウザーに表示される情報](assets/editor-side-panel-component-description.png)
 
-使用可能なコンポーネントについて詳しくは、[コンポーネントコンソール](/help/sites-cloud/authoring/components-console.md)を参照してください。
+使用可能なコンポーネントについて詳しくは、[ コンポーネントコンソール ](/help/sites-cloud/authoring/components-console.md) を参照してください
 
 ## アセットブラウザー {#assets-browser}
 
@@ -182,4 +182,4 @@ AEM サイトエディターのサイドパネルを使用して、ページに�
 
 ## 関連コンテンツブラウザー {#associated-content-browser}
 
-ページにコンテンツフラグメントが含まれている場合、[関連コンテンツのブラウザー](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)にもアクセスできます。
+ページにコンテンツフラグメントが含まれている場合、[ 関連コンテンツのブラウザー ](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content) にもアクセスできます。

@@ -4,10 +4,10 @@ description: 新しいプログラムとパイプラインを設定してアド�
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## これまでの説明内容 {#story-so-far}
 
-Adobe Experience Manager（AEM）参照デモのアドオンジャーニーの前のドキュメントである[参照デモのアドオンのインストールについて](installation.md)では、参照デモのアドオンのインストールプロセスについて説明し、異なる要素がどのように連携するのかを確認しました。その結果、以下を習得しました。
+Adobe Experience Manager（AEM） Reference Demo Add-on ジャーニーの前のドキュメントである [Reference Demo Add-on のインストールについて ](installation.md) では、Reference Demos Add-on のインストールプロセスを学び、異なる要素がどのように連携するのかを確認しました。 その結果、以下を習得しました。
 
 * Cloud Manager の基本を理解しました。
 * パイプラインで AEM にコンテンツと設定を配信する方法を理解しました。

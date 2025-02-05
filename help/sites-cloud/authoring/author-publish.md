@@ -5,10 +5,10 @@ exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ![オーサー、パブリッシャー、ディスパッチャーの模式図](assets/author-publish.jpg)
 
-AEM as a Cloud Service の技術的アーキテクチャについて詳しくは、[Adobe Experience Manager as a Cloud Service のアーキテクチャの概要](/help/overview/architecture.md)ドキュメントを参照してください。
+Adobe Experience Manager as a Cloud Serviceの技術的アーキテクチャについて詳しくは、「AEM as a Cloud Serviceのアーキテクチャの概要 [ を参照してくだ ](/help/overview/architecture.md) い。
 
 {{edge-delivery-authoring}}
 

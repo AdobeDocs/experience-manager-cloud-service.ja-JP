@@ -5,10 +5,10 @@ topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3088'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ AEM as a Cloud Service では、インデックス作成に関わる様々な操
 
 ### コンポーネント内のクエリ {#queries-in-components}
 
-AEM システムで実行されるクエリは、より負担のかかる操作の 1 つになる可能性があるので、コンポーネント内でクエリを使用しないことをお勧めします。ページがレンダリングされるたびに複数のクエリを実行すると、システムのパフォーマンスが低下する場合があります。コンポーネントのレンダリング時にクエリが実行されることを回避するには、**[ノードの走査](#traversing-nodes)**&#x200B;と&#x200B;**[結果の先取り](#prefetching-results)**&#x200B;という 2 つの方法があります。
+AEM システムで実行されるクエリは、より負担のかかる操作の 1 つになる可能性があるので、コンポーネント内でクエリを使用しないことをお勧めします。ページがレンダリングされるたびに複数のクエリを実行すると、システムのパフォーマンス低下につながります。コンポーネントのレンダリング時にクエリが実行されることを回避するには、**[ノードの走査](#traversing-nodes)**&#x200B;と&#x200B;**[結果の先取り](#prefetching-results)**&#x200B;という 2 つの方法があります。
 
 ### ノードの走査 {#traversing-nodes}
 
@@ -62,14 +62,14 @@ AEM システムで実行されるクエリは、より負担のかかる操作�
 
 ## クエリの最適化 {#optimizing-queries}
 
-Oak ドキュメントでは、[クエリの実行方法の概要が説明されています。](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing) これは、このドキュメントで説明するすべての最適化アクティビティの基礎となります。
+Oak ドキュメントでは [ クエリの実行方法の概要 ](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing) が提供されています。 これは、このドキュメントで説明するすべての最適化アクティビティの基礎となります。
 
 AEM as a Cloud Service には、効率的なクエリの実装をサポートするように設計された[クエリパフォーマンスツール](#query-performance-tool)が用意されています。
 
 * 実行済みのクエリと、関連するパフォーマンス特性およびクエリプランが表示されます。
 * クエリプランの表示から完全なクエリの実行まで、様々なレベルでアドホッククエリを実行できます。
 
-クエリパフォーマンスツールは、Cloud Manager の[開発者コンソールからアクセスできます。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ja#queries) AEM as a Cloud Service のクエリパフォーマンスツールでは、AEM 6.x バージョンに対するクエリの実行に関する詳細が提供されます。
+クエリパフォーマンスツールは、Cloud Managerの [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ja#queries) からアクセスできます。 AEM as a Cloud Serviceのクエリパフォーマンスツールでは、AEM 6.x バージョンに対するクエリの実行に関する詳細が提供されます。
 
 このグラフは、クエリパフォーマンスツールを使用してクエリを最適化するための一般的なフローを示しています。
 

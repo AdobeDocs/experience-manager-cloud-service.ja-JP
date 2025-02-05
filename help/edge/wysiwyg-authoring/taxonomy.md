@@ -4,10 +4,10 @@ description: Edge Delivery Services サイトで、AEM でタグを使用する�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 701a7c08d591d9a3ffabfe041745748194c923b2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '974'
-ht-degree: 85%
+ht-degree: 65%
 
 ---
 
@@ -26,9 +26,9 @@ Edge Delivery Services サイトで、AEM でタグを使用する分類デー�
 
 ## 分類ページの作成 {#creating}
 
-分類は、[AEM の他のページ](/help/sites-cloud/authoring/sites-console/creating-pages.md)と同様に作成されます。
+分類は、「AEMのその他のページ [ と同様に作成され ](/help/sites-cloud/authoring/sites-console/creating-pages.md) す。
 
-1. [**Sites** コンソールに移動します。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. [**Sites** コンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) に移動します。
 
 1. 分類を作成する場所を選択します。
 
@@ -46,7 +46,7 @@ Edge Delivery Services サイトで、AEM でタグを使用する分類デー�
 
 1. 「**作成**」をタップまたはクリックします。
 
-分類ページが作成されます。**成功**&#x200B;ダイアログでは、**完了**&#x200B;ダイアログをタップまたはクリックしてメッセージを閉じるか、「**開く**」をクリックして[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)でページを編集できます。
+分類ページが作成されます。**成功** ダイアログで、「**完了** ダイアログをタップまたはクリックしてメッセージを解除するか、「**開く [ をタップまたはクリックして、** ページエディター ](/help/sites-cloud/authoring/page-editor/introduction.md) でページを編集することができます。
 
 次の手順で使用するのに、分類ページの結果のページ名をメモしておきます。
 
@@ -54,7 +54,7 @@ Edge Delivery Services サイトで、AEM でタグを使用する分類デー�
 
 AEM の他のページと同様に、分類ページの編集を開始します。
 
-1. [**Sites** コンソールに移動します。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. [**Sites** コンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) に移動します。
 
 1. 編集する分類を選択します。
 
@@ -82,7 +82,7 @@ AEM では、基になるタグと名前空間を更新すると、分類ペー�
 
 ## 分類の公開に関する paths.json の更新 {#paths-json}
 
-[Edge Delivery Services サイトの表形式データを管理および公開](/help/edge/wysiwyg-authoring/tabular-data.md)する場合と同様に、分類データの公開を許可するには、プロジェクトの `paths.json` ファイルを更新する必要があります。
+[Edge Delivery Servicesサイトの表形式データの管理と公開 ](/help/edge/wysiwyg-authoring/tabular-data.md) の場合と同様に、分類データを公開できるように、プロジェクトの `paths.json` ファイルを更新する必要があります。
 
 1. GitHub でプロジェクトのルートを開きます。
 
@@ -101,7 +101,7 @@ AEM では、基になるタグと名前空間を更新すると、分類ペー�
    }
    ```
 
-   * `<taxonomy-page-name>` は、[作成した分類ページ](#creating)の名前と一致する必要があります。
+   * 作成 `<taxonomy-page-name>` た [ 分類ページ ](#creating) の名前と一致する必要があります。
    * `<taxonomy-json-name>` には、任意の有効な名前を指定できます。
 
 1. 「**変更をコミット…**」をクリックして、変更を `main` に保存します。
@@ -112,20 +112,20 @@ AEM では、基になるタグと名前空間を更新すると、分類ペー�
 
 >[!TIP]
 >
->パスマッピングについて詳しくは、[Edge Delivery Services のパスマッピング](/help/edge/wysiwyg-authoring/path-mapping.md)ドキュメントを参照してください。
+>Edge Delivery Servicesマッピングについて詳しくは、「パスのパスマッピング [ を参照してください ](/help/edge/wysiwyg-authoring/path-mapping.md)。
 
 ## 分類の公開 {#publishing}
 
 分類は、公開されるまでユニバーサルエディターやユーザーには提供されません。
 
-分類ページは、[ツールバーの&#x200B;**クイック公開**&#x200B;アイコンまたは&#x200B;**公開を管理**&#x200B;アイコンを使用](/help/sites-cloud/authoring/sites-console/publishing-pages.md)して、他のページと同様に公開されます。
+分類ページは、他のページと同様に、[ ツールバーの **クイックPublish** または **公開を管理** アイコンを使用 ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) して公開されます。
 
 分類ページは、次の操作を行うたびに再公開する必要があります。
 
 * 分類ページを編集。
 * 分類ページに含まれるタグおよび名前空間を編集または追加。
 
-新しい分類ページを作成する場合は、まず[プロジェクトの `paths.json` ファイルにマッピングを追加](#paths-json)する必要があります。
+新しい分類ページを作成する場合は、まず [ プロジェクト内の `paths.json` ファイルへのマッピングを追加 ](#paths-json) する必要があります。
 
 ## 分類情報へのアクセス {#accessing}
 
@@ -135,7 +135,7 @@ AEM では、基になるタグと名前空間を更新すると、分類ペー�
 
 `https://<branch>--<repository>--<owner>.aem.page/<taxonomy-json-name>.json`
 
-プロジェクト内の `paths.json` ファイルに分類をマッピングする際に定義した `<taxonomy-json-name>`を使用します。[](#paths-json)分類データは、次の例のように JSON データとして返されます。
+[ 分類をプロジェクトの `paths.json` ファイルにマッピング ](#paths-json) する際に定義した `<taxonomy-json-name>` を使用します。 分類データは、次の例のように JSON データとして返されます。
 
 ```json
 {
@@ -166,11 +166,11 @@ AEM では、基になるタグと名前空間を更新すると、分類ペー�
 
 この JSON データは、分類を更新して再公開すると、自動的に更新されます。アプリでは、ユーザーのこの情報にプログラムでアクセスできます。
 
-[複数の言語でタグを管理する場合は、](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages)`sheet=` パラメーターの値として ISO2 言語コードを渡すことで、それらの言語にアクセスできます。
+[ 複数の言語でタグを管理する場合 ](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages)、ISO2 言語コードを `sheet=` パラメーターの値として渡すことで、それらの言語にアクセスできます。
 
 ## 追加のタグプロパティの公開 {#additional-properties}
 
-デフォルトでは、分類には `tag` と `title` の値が含まれています [ 前の例を参照）。](#accessing) 追加のタグプロパティを公開するように分類を設定できます。 この例では、タグの説明を公開します。
+デフォルトでは、分類には `tag` と `title` の値が含まれています [ 前の例 ](#accessing)。 追加のタグプロパティを公開するように分類を設定できます。 この例では、タグの説明を公開します。
 
 1. サイトコンソールを使用して、作成した分類を選択します。
 1. ツールバーの **プロパティ** アイコンをタップまたはクリックします。
@@ -179,7 +179,7 @@ AEM では、基になるタグと名前空間を更新すると、分類ペー�
 1. 「**保存して閉じる**」をタップまたはクリックします。
 1. 分類を選択したまま、ツールバーの **クイックPublish** をタップまたはクリックします。
 
-これで [ 分類にアクセスする際に ](#accessing)、タグの説明（または公開するために選択したプロパティ）が JSON に含まれます。
+これで [ 分類にアクセスすると ](#accessing)、タグの説明（または公開するために選択したプロパティ）が JSON に含まれます。
 
 ```json
 {

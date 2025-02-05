@@ -6,10 +6,10 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: タスクの割り当て手順の使用、PDF/A ステップへの変換、レコードステップのドキュメントの生成、ワークフローの使用、ドキュメントに署名ステップ、印刷出力ステップの生成、非インタラクティブPDF出力の生成
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '7379'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -121,7 +121,7 @@ Forms 中心のワークフローステップは、AEM ワークフローで AEM
     -->
 
 * **[!UICONTROL 割り当て先]**／**[!UICONTROL 割り当てオプション]**：タスクをユーザーに割り当てる方法を指定します。参加者選択スクリプトを使用してタスクを動的にユーザーまたはグループに割り当てることも、タスクを特定の AEM ユーザーまたはグループに割り当てることもできます。
-* **[!UICONTROL 参加者選択]**：このオプションは、「割り当てオプション」フィールドで「**[!UICONTROL ユーザーまたはグループに動的に割り当て]**」オプションを選択した場合に使用できます。ユーザーまたはグループを動的に選択するには、ECMAScript またはサービスを使用できます。詳しくは、[ユーザーへのワークフローの動的な割り当て](https://helpx.adobe.com/jp/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)および[カスタムの Adobe Experience Manager 動的参加者ステップの作成](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja&amp;CID=RedirectAEMCommunityKautuk)を参照してください。
+* **[!UICONTROL 参加者選択]**：このオプションは、「割り当てオプション」フィールドで「**[!UICONTROL ユーザーまたはグループに動的に割り当て]**」オプションを選択した場合に使用できます。ユーザーまたはグループを動的に選択するには、ECMAScript またはサービスを使用できます。詳しくは、[ ユーザーへのワークフローの動的な割り当て ](https://helpx.adobe.com/jp/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) および [ カスタム Adobe Experience Manager動的参加者ステップの作成 ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja&amp;CID=RedirectAEMCommunityKautuk) を参照してください。
 
 * **[!UICONTROL 参加者]**：このオプションは、「**[!UICONTROL 参加者選択]**」フィールドで「**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**」オプションが選択されている場合に使用できます。このフィールドでは、「RandomParticipantChooser」オプションのユーザーまたはグループを選択できます。
 

@@ -4,10 +4,10 @@ description: Cloud Manager と、それを使用してアドオンをインス�
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -104,7 +104,7 @@ AEM 参照デモのアドオンのジャーニーのこのパートを終了し�
 * パイプラインで AEM にコンテンツと設定を配信する方法を理解しました。
 * 数回クリックするだけで、デモコンテンツがあらかじめ登録された新しいサイトをテンプレートで作成できることがわかりました。
 
-この知識に基づいて、[プログラムとパイプラインの作成](create-program.md)を確認して、AEM クイックサイト作成ジャーニーを続行してください。そこでは、アドオンをデプロイするための新しいプログラムとパイプラインを設定する方法を習得します。
+この知識に基づいて、[ プログラムとパイプラインの作成 ](create-program.md) を確認して、AEM クイックサイト作成ジャーニーを続行してください。そこでは、アドオンをデプロイするための新しいプログラムとパイプラインを設定する方法を習得します。
 
 ## その他のリソース {#additional-resources}
 

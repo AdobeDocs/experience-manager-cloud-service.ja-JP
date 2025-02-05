@@ -4,10 +4,10 @@ description: AEM 単一ページアプリケーション（SPA）エディター
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -30,16 +30,16 @@ ht-degree: 100%
 複合コンポーネントのユースケースをサポートするモデルには、次の前提条件があります。
 
 * AEM 開発インスタンスは、サンプルプロジェクトを使用して、ポート 4502 上でローカルに実行されている。
-* [AEM で編集可能な](editing-external-spa.md)、動作する外部 React アプリがある。
-* React アプリは、[RemotePage コンポーネントを使用して](remote-page.md) AEM エディターに読み込まれている。
+* 動作する外部 React アプリがある [AEMでの編集が有効 ](editing-external-spa.md)。
+* React アプリがAEM エディターに読み込まれている [RemotePage コンポーネントを使用 ](remote-page.md)。
 
 ## 複合コンポーネントを SPA に追加する {#adding-composite-components}
 
 AEM 内の SPA 実装に応じて、複合コンポーネントを実装するためのモデルは 3 つあります。
 
-* [コンポーネントが AEM プロジェクトに存在しない。](#component-does-not-exist)
-* [コンポーネントは AEM プロジェクトに存在するが、必要なコンテンツが存在しない。](#content-does-not-exist)
-* [コンポーネントと必要なコンテンツが両方とも AEM プロジェクトに存在する。](#both-exist)
+* [ コンポーネントがAEM プロジェクトに存在しない ](#component-does-not-exist)。
+* [ コンポーネントはAEM プロジェクトに存在するが、必要なコンテンツが存在しない ](#content-does-not-exist)。
+* [ コンポーネントと必要なコンテンツが両方ともAEM プロジェクトに存在する ](#both-exist)。
 
 以下の節では、カードコンポーネントを使用して各ケースを実装する例を示します。
 
@@ -134,7 +134,7 @@ function Home() {
 
 次に、それを SPA に追加して、そのコンテンツを取得します。
 
-1. これに対応するコンポーネントを SPA に作成します。子コンポーネントが、SPA プロジェクト内の対応する AEM リソースタイプにマッピングされていることを確認します。この例では、[前の例](#component-does-not-exist)で説明したのと同じ `AEMText` コンポーネントと `AEMImage` コンポーネントを使用します。
+1. これに対応するコンポーネントを SPA に作成します。子コンポーネントが、SPA プロジェクト内の対応する AEM リソースタイプにマッピングされていることを確認します。この例では、（前の例で [ 説明したのと同じ `AEMText` コンポーネントと `AEMImage` コンポーネントを使用 ](#component-does-not-exist) ます。
 
    ```javascript
    import React from 'react';
@@ -178,4 +178,4 @@ function Home() {
 
 ![ノード構造内の複合パス](assets/composite-path.png)
 
-`AEMCard` コンポーネントは、[前のユースケースで定義したものと同じです。](#content-does-not-exist) ここでは、AEM プロジェクトの上記の場所で定義されたコンテンツが SPA に含まれています。
+`AEMCard` コンポーネントは、（前のユースケースで [ 定義したもの ](#content-does-not-exist) と同じです。 ここでは、AEM プロジェクトの上記の場所で定義されたコンテンツがSPAに含まれています。

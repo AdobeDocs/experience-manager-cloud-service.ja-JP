@@ -4,10 +4,10 @@ description: このドキュメントでは、AEM 内に編集可能な SPA コ�
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2022'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -81,7 +81,7 @@ SPA コンポーネントは、ページモデルと同期する必要があり�
 * `:itemsOrder`：子の順番付きリスト。JSON マップオブジェクトでは、フィールドの順番は保証されません。マップと現在の配列の両方を利用することで、API の利用者は両方の構造のメリットが得られます
 * `:path`：項目のコンテンツパス（ページを表す項目に存在）
 
-[AEM コンテンツサービスの利用](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)も参照してください。
+[AEM コンテンツサービスの基本を学ぶ ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja) も参照してください。
 
 ### フレームワーク固有のモジュール {#framework-specific-module}
 

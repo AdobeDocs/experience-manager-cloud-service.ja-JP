@@ -8,10 +8,10 @@ exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -104,6 +104,6 @@ AEM は、すべてのコンテンツの翻訳ルールを自動的に作成し�
 
 ## その他のリソース {#additional-resources}
 
-[コンテンツの翻訳](translate-content.md)のドキュメントを確認して、翻訳ジャーニーの次のステップに進むことをお勧めします。ジャーニーの続行に必須ではありませんが、この記事で取り上げたいくつかの概念について詳しく説明している追加のオプションリソースを以下に挙げておきます。
+[ コンテンツの翻訳 ](translate-content.md) のドキュメントを確認して、翻訳ジャーニーの次のステップに進むことをお勧めしますが、以下のリソースではこのドキュメントで取り上げた概念についてより詳しく説明しています。追加的なオプションであり、ジャーニーを続ける上で必須のリソースではありません。
 
 * [翻訳するコンテンツの特定](/help/sites-cloud/administering/translation/rules.md) - 翻訳が必要なコンテンツを翻訳ルールで特定する方法について説明します。

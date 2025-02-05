@@ -5,10 +5,10 @@ exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '860'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -64,7 +64,7 @@ AEM を使用してヘッドレスビジネスケースを解決する方法を�
 
 ## 次の手順 {#what-is-next}
 
-これで、Adobe ヘッドレスジャーニーを開始する準備が整いました。このジャーニーの次のステップに進み、「[AEM Headless as a Cloud Service 向けオーサリング - 概要](introduction.md)」を読むことをお勧めします。
+これで、Adobe ヘッドレスジャーニーを開始する準備が整いました。このジャーニーの次のステップに進み、「[AEM ヘッドレスas a Cloud Serviceのオーサリング – 概要 ](introduction.md) を読むことをお勧めします。
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}

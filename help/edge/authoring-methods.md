@@ -4,10 +4,10 @@ description: コンテンツ作成者が最適な決定を行うのに役立つ�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a75e7051-e5ec-4d2a-848a-a66989e2f30b
-source-git-commit: ceaedd8ee76b6a5008e0310cf7677660d84c1e44
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -54,7 +54,7 @@ AEM の実装ごとに、独自のワークフローと目標があります。�
 これは、以下が必要かどうかを決定するのに役立ちます。
 
 * コンテンツフラグメントエディターやユニバーサルエディターを使用する [AEM as a headless CMS](/help/headless/introduction.md)。
-* [ドキュメントベースの編集](/help/edge/docs/authoring.md)を使用する AEM Edge Delivery Services または[ユニバーサルエディターを使用する WYSIWYG オーサリング](/help/edge/wysiwyg-authoring/authoring.md)。
+* [ ドキュメントベースの編集 ](/help/edge/docs/authoring.md) または [ ユニバーサルエディターを使用したWYSIWYG オーサリング ](/help/edge/wysiwyg-authoring/authoring.md) を使用したAEMEdge Delivery Services。
 
 ## コンテンツオーサリングの環境設定 {#content-authoring}
 
@@ -64,8 +64,8 @@ AEM の実装ごとに、独自のワークフローと目標があります。�
 
 これは、以下が必要かどうかを決定するのに役立ちます。
 
-* [ドキュメントベースの編集](/help/edge/docs/authoring.md)を使用する AEM Edge Delivery Services。
-* [ユニバーサルエディターを使用する WYSIWYG オーサリング。](/help/edge/wysiwyg-authoring/authoring.md)
+* [ ドキュメントベースの編集 ](/help/edge/docs/authoring.md) を使用してEdge Delivery ServicesをAEMします。
+* [ ユニバーサルエディターを使用したWYSIWYGのオーサリング ](/help/edge/wysiwyg-authoring/authoring.md)。
 
 ## プロジェクトの目標 {#project-goals}
 

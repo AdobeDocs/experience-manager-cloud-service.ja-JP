@@ -4,10 +4,10 @@ description: このガイドでは、Edge Delivery Services と WYSIWYG コン�
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
-workflow-type: ht
-source-wordcount: '1223'
-ht-degree: 100%
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
+source-wordcount: '1212'
+ht-degree: 86%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 100%
 
 このガイドを始める前に、Edge Delivery Services に関する基本事項を理解し、Edge Delivery Services にアクセス可能な状態にしておく必要があります。次の項目について確認してください。
 
-* [Edge Delivery Service のチュートリアル](/help/edge/developer/tutorial.md)を完了していること。
-* [AEM Cloud Service サンドボックス](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)にアクセスできること。
-* [同じサンドボックス環境でユニバーサルエディターが有効になっている](/help/implementing/universal-editor/getting-started.md)こと。
+* [Edge Delivery サービスのチュートリアル ](/help/edge/developer/tutorial.md) が完了しました。
+* [AEM Cloud Service サンドボックス ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) にアクセスできます。
+* [ 同じサンドボックス環境上でユニバーサルエディターを有効にする ](/help/implementing/universal-editor/getting-started.md) 必要があります。
 
 ## Edge Delivery Services 向けに開発する場合の中心概念 {#core-concepts}
 
@@ -52,7 +52,7 @@ Edge Delivery Services では GitHub を活用しているので、GitHub リポ
 
 ## WYSIWYG オーサリングと Edge Delivery Services の概要 {#getting-started}
 
-[前提条件](#prerequisites)を満たし、[ユニバーサルエディターの使用を選択](#editor-choice)したら、独自のプロジェクトを開始できます。
+[ 前提条件 ](#prerequisites) を満たし、[ ユニバーサルエディターを使用することを選択 ](#editor-choice) したら、独自のプロジェクトから開始できます。
 
 ### GitHub プロジェクトを作成 {#create-github-project}
 
@@ -116,7 +116,7 @@ Edge Delivery Services では GitHub を活用しているので、GitHub リポ
 
 >[!TIP]
 >
->パスマッピングについて詳しくは、[Edge Delivery Services のパスマッピング](/help/edge/wysiwyg-authoring/path-mapping.md)ドキュメントを参照してください。
+>パスのマッピングについて詳しくは、「[Edge Delivery Servicesのパスのマッピング ](/help/edge/wysiwyg-authoring/path-mapping.md)」を参照してください。
 
 ### 新しい AEM サイトの作成と編集 {#create-aem-site}
 
@@ -128,7 +128,7 @@ GitHub プロジェクトが完成したら、プロジェクトで使用でき�
 
 1. GitHub（[`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)）から最新の WYSIWYG オーサリングと Edge Delivery Services サイトテンプレートをダウンロードします。
 
-1. AEM as a Cloud Service オーサリングインスタンスにログインし、サイトコンソールに移動して、**作成**／**テンプレートからサイト**&#x200B;をタップまたはクリックします。
+1. AEM as a Cloud Service オーサーインスタンスにログインし、サイトコンソールに移動して、**作成**/**テンプレートからのサイト** をクリックします。
 
    ![コンソールから新しいサイトを作成](assets/edge-dev-getting-started/create-site-console.png)
 
@@ -140,23 +140,23 @@ GitHub プロジェクトが完成したら、プロジェクトで使用でき�
 
    * テンプレートは 1 回だけアップロードする必要があります。アップロードした後は、追加サイトの作成に再利用できます。
 
-1. テンプレートが読み込まれると、ウィザードに表示されます。タップまたはクリックして選択し、「**次へ**」をタップまたはクリックします。
+1. テンプレートが読み込まれると、ウィザードに表示されます。クリックして選択し、「**次へ**」をクリックします。
 
    ![テンプレートを選択](assets/edge-dev-getting-started/select-template.png)
 
 1. 次のフィールドを入力し、「**作成**」をタップまたはクリックします。
 
    * **サイトのタイトル** - サイトを説明するタイトルを追加します。
-   * **サイトのタイトル** - [前の手順](#create-github-project)で定義した `<site-name>` を使用します。
+   * **サイトのタイトル** - [ 前の手順 ](#create-github-project) で定義した `<site-name>` を使用します。
    * **GitHub URL** - 前の手順で作成した GitHub プロジェクトの URL を使用します。
 
    ![サイトの詳細](assets/edge-dev-getting-started/create-site-details.png)
 
-1. AEM にダイアログが表示され、サイトの作成を確認します。「**OK**」をタップまたはクリックして閉じます。
+1. AEM にダイアログが表示され、サイトの作成を確認します。「**OK**」をクリックして閉じます。
 
    ![サイトの作成の確認](assets/edge-dev-getting-started/site-creation-confirmation.png)
 
-1. サイトコンソールで、新しく作成したサイトの `index.html` に移動し、ツールバーの「**編集**」をタップまたはクリックします。
+1. Sites コンソールで、新しく作成したサイトの `index.html` に移動し、ツールバーの **編集** をクリックします。
 
    ![新しいサイトの編集](assets/edge-dev-getting-started/new-site.png)
 
@@ -194,4 +194,4 @@ GitHub プロジェクトが完成したら、プロジェクトで使用でき�
 
 >[!TIP]
 >
->コンテンツソースとして AEM as a Cloud Service を使用して WYSIWYG オーサリングを実行できる、新しい Edge Delivery Services プロジェクトの作成に関するエンドツーエンドのチュートリアルについて詳しくは、[この AEM GEM ウェビナー](https://experienceleague.adobe.com/ja/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)を参照してください。
+>AEM as a Cloud Serviceをコンテンツソースとして使用したWYSIWYG オーサリングが可能な新しいEdge Delivery Servicesプロジェクトの作成に関するエンドツーエンドのチュートリアルについては、[ このAEM GEMs ウェビナー ](https://experienceleague.adobe.com/ja/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery) を参照してください。

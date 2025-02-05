@@ -1,56 +1,56 @@
 ---
 title: 編集可能テンプレート
-description: ページの作成時や、初期コンテンツ、構造化コンテンツ、オーサリングポリシー、レイアウトの定義時に、編集可能なテンプレートがどのように使用されるかを説明します。
+description: ページを作成する際や、初期コンテンツ、構造化コンテンツ、オーサリングポリシー、レイアウトを定義する際の、編集可能テンプレートを使用する方法について説明します。
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3443'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
 # 編集可能テンプレート {#editable-templates}
 
-ページの作成時や、初期コンテンツ、構造化コンテンツ、オーサリングポリシー、レイアウトの定義時に、編集可能なテンプレートがどのように使用されるかを説明します。
+ページを作成する際や、初期コンテンツ、構造化コンテンツ、オーサリングポリシー、レイアウトを定義する際の、編集可能テンプレートを使用する方法について説明します。
 
 ## 概要 {#overview}
 
-ページを作成する場合は、テンプレートを選択する必要があります。ページテンプレートは、新しいページのベースとして使用されます。テンプレートでは、作成されるページの構造、すべての初期コンテンツおよび使用可能なコンポーネント （デザインプロパティ）を定義できます。
+ページを作成する場合は、テンプレートを選択する必要があります。ページテンプレートは、新しいページのベースとして使用されます。テンプレートでは、結果ページの構造、すべての初期コンテンツ、使用可能なコンポーネント（デザインプロパティ）を定義できます。
 
-* 編集可能なテンプレートを使用すると、作成者はテンプレートを作成して使用できます。
-* 編集可能テンプレートを使用すると、次の両方のモードで編集可能なページを作成できます
-   * [ ページエディター ](/help/sites-cloud/authoring/page-editor/templates.md)
+* 編集可能テンプレートを使用すると、作成者はテンプレートを作成して使用できます。
+* 編集可能テンプレートを使用すると、次の両方で編集可能なページを作成できます
+   * [ページエディター](/help/sites-cloud/authoring/page-editor/templates.md)
    * [ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/templates.md)
 
-ページテンプレート ユニバーサルエディターで編集可能なページの作成に使用するテンプレートでは、編集可能なテンプレート機能の限られたサブセットが使用されます。 したがって、このドキュメントの残りの部分では、ページエディターを使用して編集可能なページの作成に使用される編集可能なテンプレートに焦点を当てています。
+ユニバーサルエディターで編集可能なページの作成に使用されるページテンプレートでは、編集可能テンプレート機能の制限されたサブセットを使用します。したがって、このドキュメントの残りの部分では、ページエディターで編集可能なページの作成に使用される編集可能テンプレートに焦点を当てます。
 
-## ページエディターを使用して編集できる編集可能なテンプレートとページ {#page-editor}
+## 編集可能テンプレートとページエディターで編集されたページ {#page-editor}
 
-ページエディターを使用して編集可能なページを作成するためのテンプレートを作成する場合、通常は専門の作成者が識別されます。
+ページエディターで編集可能なページを作成するテンプレートを作成する場合、通常は専門的な作成者が特定されます。
 
 * このような専門的な作成者は、**テンプレート作成者**&#x200B;と呼ばれます。
 * テンプレート作成者は、`template-authors` グループのメンバーである必要があります。
-* 編集可能テンプレートは、編集可能テンプレートから作成されたすべてのページに動的な接続を保持します。 これにより、テンプレートに対するあらゆる変更がページに反映されます。
-* 編集可能テンプレートを使用すると、ページコンポーネントの汎用性が高まるので、コアページコンポーネントをカスタマイズせずに使用できます。
+* 編集可能テンプレートから作成されたすべてのページと編集可能テンプレートとの動的な接続が保持されます。これにより、テンプレートに対するあらゆる変更がページに反映されます。
+* 編集可能テンプレートによって、ページコンポーネントの汎用性が高まり、核となるページコンポーネントをカスタマイズなしで使用できます。
 
 編集可能テンプレートを使用すると、ページの構成要素がコンポーネント内で分離されます。UI で必要なコンポーネントの組み合わせを設定できるので、ページのバリエーションごとに新しいページコンポーネントを開発する必要はなくなります。
 
 このドキュメントでは、
 
-* 編集可能テンプレート作成の概要を説明します
+* 編集可能テンプレートの作成の概要を説明します。
 * 編集可能テンプレートの作成に必要な管理者や開発者のタスクについて説明します
 * 編集可能テンプレートの技術的基礎について説明します
 * AEM がテンプレートの利用可能性を評価する方法について説明します
 
 >[!NOTE]
 >
->このドキュメントでは、テンプレートの作成と編集について既に理解していることを前提としています。テンプレート作成者に公開された編集可能なテンプレートの機能について詳しくは、オーサリングドキュメント [ ページエディターを使用して編集可能なページを作成するためのテンプレート ](/help/sites-cloud/authoring/page-editor/templates.md) を参照してください。
+>このドキュメントでは、テンプレートの作成と編集について既に理解していることを前提としています。テンプレート作成者に公開される編集可能テンプレートの機能について詳しくは、オーサリングに関するドキュメントの[ページエディターで編集可能なページを作成するテンプレート](/help/sites-cloud/authoring/page-editor/templates.md)を参照してください。
 
 >[!TIP]
 >
->[WKND チュートリアル ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) では、例を実装して編集可能テンプレートの使用方法を詳しく説明します。これは、新しいプロジェクトでテンプレートを設定する方法を理解するのに非常に役立ちます
+>[WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)では、編集可能テンプレートの使用方法を例を実装して詳しく説明しているので、新しいプロジェクトでのテンプレートの設定方法を理解するのに非常に役立ちます。
 
 ## 新しい編集可能テンプレートの作成 {#creating-a-new-template}
 
@@ -74,7 +74,7 @@ ht-degree: 88%
    * ページ作成者がコンポーネントを追加または削除するには、テンプレートに段落システムを追加する必要があります。
    * コンポーネントのロックを解除（再度ロックできます）して、初期コンテンツを定義できます。
 
-   テンプレート作成者が構造を定義する方法について詳しくは、[ ページエディターを使用して編集可能なページを作成するためのテンプレート ](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author) を参照してください。
+   テンプレート作成者が構造を定義する方法について詳しくは、[ページエディターで編集可能なページを作成するテンプレート](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author)を参照してください。
 
    構造の技術的な詳細については、このドキュメントの[構造](#structure)を参照してください。
 
@@ -86,7 +86,7 @@ ht-degree: 88%
 
    * これらのポリシーは、テンプレート（および、そのテンプレートを使用して作成されるページ）に適用されます。
 
-   テンプレート作成者がポリシーを定義する方法について詳しくは、[ ページエディターを使用して編集可能なページを作成するためのテンプレート ](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author) を参照してください。
+   テンプレート作成者がポリシーを定義する方法について詳しくは、[ページエディターで編集可能なページを作成するテンプレート](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author)を参照してください。
 
    ポリシーの技術的な詳細については、このドキュメントの[コンテンツポリシー](#content-policies)を参照してください。
 
@@ -95,7 +95,7 @@ ht-degree: 88%
    * 初期コンテンツは、テンプレートに基づいてページが最初に作成される際に表示されるコンテンツを定義します。
    * その後、ページ作成者が初期コンテンツを編集できます。
 
-   テンプレート作成者が構造を定義する方法について詳しくは、[ ページエディターを使用して編集可能なページを作成するためのテンプレート ](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author) を参照してください。
+   テンプレート作成者が構造を定義する方法について詳しくは、[ページエディターで編集可能なページを作成するテンプレート](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author)を参照してください。
 
    初期コンテンツの技術的な詳細については、このドキュメントの[初期コンテンツ](#initial-content)を参照してください。
 
@@ -104,7 +104,7 @@ ht-degree: 88%
    * デバイスの形式に合わせてテンプレートのレイアウトを定義できます。
    * テンプレートがページオーサリングと同じように動作するには、レスポンシブレイアウトを使用します。
 
-   テンプレート作成者がテンプレートレイアウトを定義する方法について詳しくは、[ ページエディターを使用して編集可能なページを作成するためのテンプレート ](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author) を参照してください。
+   テンプレート作成者がテンプレートレイアウトを定義する方法について詳しくは、[ページエディターで編集可能なページを作成するテンプレート](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author)を参照してください。
 
    テンプレートレイアウトの技術的な詳細については、このドキュメントの[レイアウト](#layout)を参照してください。
 
@@ -113,7 +113,7 @@ ht-degree: 88%
    * テンプレートを有効または無効にして、ページ作成者が使用できるようにしたり、使用できなくしたりできます。
    * テンプレートは、特定のページブランチに対して使用可能または使用不可にすることができます。
 
-   テンプレート作成者がテンプレートを有効にする方法について詳しくは、[ ページエディターを使用して編集可能なページを作成するためのテンプレート ](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) を参照してください。
+   テンプレート作成者がテンプレートを有効にする方法について詳しくは、[ページエディターで編集可能なページを作成するテンプレート](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author)を参照してください。
 
    テンプレートの有効化の技術的な詳細については、このドキュメントの[使用するテンプレートの有効化と許可](#enabling-and-allowing-a-template-for-use)を参照してください。
 
@@ -225,7 +225,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->グローバルフォルダーにテンプレートを作成する場合は、[設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)でグローバルフォルダーを編集し、「**編集可能なテンプレート**」オプションをオンにします。ただし、これは推奨されるベストプラクティスではありません。
+>グローバルフォルダーにテンプレートを作成する場合は、[ 設定ブラウザー ](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) でグローバルフォルダーを編集し「**編集可能テンプレート**」オプションをオンにします。ただし、これは推奨されるベストプラクティスではありません。
 
 ### ACL とグループ {#acls-and-groups}
 
@@ -369,7 +369,7 @@ When creating an editable template, the value is copied from the template type t
 
 他のテンプレートの基盤となるテンプレートを作成した場合、このテンプレートをテンプレートタイプとしてコピーできます。
 
-1. ページテンプレートの場合と同様にテンプレートを作成します。[ ページエディターを使用して編集可能なページを作成するためのテンプレート ](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author) を参照してください。 これは、テンプレートタイプの基盤となります。
+1. ページテンプレートの場合と同様にテンプレートを作成します。詳しくは、[ページエディターで編集可能なページを作成するテンプレート](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author)を参照してください。これは、テンプレートタイプの基盤となります。
 1. CRXDE Lite を使用して、[テンプレートフォルダー](#template-folders)の `templates` ノードから `template-types` ノードに、作成したテンプレートをコピーします。
 1. このテンプレートを[テンプレートフォルダー](#template-folders)の下の `templates` ノードから削除します。
 1. `template-types` ノードの下にあるテンプレートのコピーで、すべての `jcr:content` ノードから `cq:template` および `cq:templateType` プロパティをすべて削除します。
@@ -467,7 +467,7 @@ GitHub のコード
 
 ### レイアウト {#layout}
 
-[ テンプレートを編集する際にレイアウトを定義できます ](/help/sites-cloud/authoring/page-editor/templates.md)、これには [ コンテンツ作成者がページ上で [ 設定できる ](/help/sites-cloud/administering/responsive-layout.md) 標準のレスポンシブレイアウト ](/help/sites-cloud/authoring/page-editor/responsive-layout.md) が使用されます。
+[ テンプレートを編集する際にレイアウトを定義できます ](/help/sites-cloud/authoring/page-editor/templates.md)、これには [ コンテンツ作成者がページ上で設定 ](/help/sites-cloud/administering/responsive-layout.md) できる [ 標準のレスポンシブレイアウト ](/help/sites-cloud/authoring/page-editor/responsive-layout.md) が使用されます。
 
 ### コンテンツポリシー {#content-policies}
 

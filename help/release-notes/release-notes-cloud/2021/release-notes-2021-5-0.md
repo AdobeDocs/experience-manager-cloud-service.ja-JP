@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 リ�
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 93%
 
 #### Dynamic Media の新機能 {#what-is-new-dm}
 
-* スマートイメージング DPR（Device Pixel Ratio）とネットワーク帯域幅の最適化により、高解像度のディスプレイとネットワーク帯域幅の制約があるデバイスで、最高品質の画像を効率的に配信できます。詳しくは、[スマートイメージングに関する FAQ](/help/assets/dynamic-media/imaging-faq.md) および[次世代の画像形式 WebP および AVIF による画像の最適化](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)を参照してください。
+* スマートイメージング DPR（Device Pixel Ratio）とネットワーク帯域幅の最適化により、高解像度のディスプレイとネットワーク帯域幅の制約があるデバイスで、最高品質の画像を効率的に配信できます。詳しくは、[ スマートイメージングに関する FAQ](/help/assets/dynamic-media/imaging-faq.md) および [ 次世代の画像形式 WebP および AVIF による画像の最適化 ](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) を参照してください。
 * Dynamic Media 配信で、次世代画像形式 AVIF のサポートが導入されました（fmt URL 修飾子）。
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}

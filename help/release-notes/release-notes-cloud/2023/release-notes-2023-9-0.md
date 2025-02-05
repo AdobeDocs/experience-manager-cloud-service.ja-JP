@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 リ�
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 82%
+ht-degree: 84%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 82%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.9.0）のリリース日は 2023年9月28日です。次回の機能リリース（2023.10.0）は 2023年10月26日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.9.0）の公開日は 2023年9月28日（PT）です。次回の機能リリース（2023.10.0）は、2023年10月26日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -36,7 +36,7 @@ ht-degree: 82%
 
 ## リリースビデオ {#release-video}
 
-2023.9.0 リリースで追加された機能の概要については、2023 年 9 月リリースの概要ビデオをご覧ください。
+2023.9.0 リリースで追加された機能の概要については、2023年9月リリースの概要ビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 
@@ -58,7 +58,7 @@ Edge Delivery Servicesについて詳しくは、記事 [ こちら ](/help/edge
 
 ### 管理ビューの新機能 {#admin-view-features}
 
-* **AEM Assetsのas a Cloud ServiceとEdge Delivery Services向けのドキュメントベースのオーサリングの統合**:AEM AssetsとEdge Delivery Services向けのドキュメントベースのオーサリングを統合して、web サイト作成者が [AEM Assets リポジトリで使用できる画像を使用しながら、Microsoft Word またはGoogle ドキュメントでドキュメントをオーサリング ](/help/edge/using.md#integrate-assets-edge) できるようにします。
+* **AEM Assetsのas a Cloud ServiceとEdge Delivery Services向けのドキュメントベースのオーサリングの統合**:AEM AssetsとEdge Delivery Services向けのドキュメントベースのオーサリングを統合して、web サイト作成者が [AEM Assets リポジトリで使用できる画像を、Microsoft Word またはGoogle Docsでドキュメントをオーサリングしながら ](/help/edge/using.md#integrate-assets-edge) 利用できるようにします。
 
 * **ZIP アーカイブを解凍**:Experience Managerで管理されている ZIP アーカイブを選択し、ファイルをダウンロードせずに [Experience Managerに直接抽出 ](/help/assets/manage-digital-assets.md#extract-zip-archives) する機能。
 
@@ -118,7 +118,7 @@ Edge Delivery Servicesについて詳しくは、記事 [ こちら ](/help/edge
 
 ### キャンペーン関連の URL パラメーターの新しい CDN キャッシュ動作 {#cache-url-params}
 
-新規環境の場合、CDN は、マーケティングキャンペーンのパフォーマンスとキャッシュヒット率を高めるために、マーケティング関連のクエリパラメーターをデフォルトで削除します。 既存の環境は影響を受けません。 [詳細情報。](/help/implementing/dispatcher/caching.md#marketing-parameters)
+新規環境の場合、CDN は、マーケティングキャンペーンのパフォーマンスとキャッシュヒット率を高めるために、マーケティング関連のクエリパラメーターをデフォルトで削除します。 既存の環境は影響を受けません。 [詳細情報](/help/implementing/dispatcher/caching.md#marketing-parameters)。
 
 ### トラフィックフィルタールール（WAF ルールを含む）早期導入プログラム {#waf-early-adopter}
 

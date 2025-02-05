@@ -4,10 +4,10 @@ description: AEM オーサリングインスタンスで使用されるページ
 feature: Edge Delivery Services
 role: User
 exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ AEM を使用して WYSIWYG コンテンツをオーサリングし、Edge Deliv
 * AEM オーサリングインスタンスで使用されるページパスと、web サイトで使用されるパブリックページパス間の関係をマッピングして作成します。
 * コンテンツ（ページ、シート、アセットなど）の Edge Delivery Services への公開を制御します。
 
-パスマッピングは、プロジェクトごとに、プロジェクトのコンテンツと URL 構造に従って個別に設定する必要があります。これは、コンテンツの公開中や[ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/navigation.md)でのコンテンツの編集中に AEM によって使用されます。
+パスマッピングは、プロジェクトごとに、プロジェクトのコンテンツと URL 構造に従って個別に設定する必要があります。AEMがコンテンツの公開中や、[ ユニバーサルエディター ](/help/sites-cloud/authoring/universal-editor/navigation.md) でコンテンツを編集する際に使用されます。
 
 ## 設定形式 {#configuration-format}
 

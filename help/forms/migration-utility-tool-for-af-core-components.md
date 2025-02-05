@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 92a5599ac94d5bf09311d34dd0287def46b14353
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 8%
@@ -53,8 +53,8 @@ Forms変換ユーティリティは、古い基盤コンポーネントに基づ
 
 ## AEM Modernize Tools を使用するための前提条件
 
-* [AEM Forms 用のローカル開発環境を設定](/help/forms/setup-local-development-environment.md)
-* [お使いの環境でアダプティブ Forms コアコンポーネントを有効にします。](/help/forms/enable-adaptive-forms-core-components.md)
+* [AEM Formsのローカル開発環境を設定します ](/help/forms/setup-local-development-environment.md)。
+* [環境でのアダプティブフォームコアコンポーネントの有効化](/help/forms/enable-adaptive-forms-core-components.md)。
 * [!DNL forms-users] グループにユーザーを追加します。 [!DNL forms-users] グループのメンバーには、アダプティブフォームを作成する権限があります。
 * 次の役割を持つユーザーは、AEM環境内にAEM Modernize Tools をインストールする権限を持っています。
 

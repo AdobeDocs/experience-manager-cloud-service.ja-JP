@@ -5,10 +5,10 @@ exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1740'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -137,7 +137,7 @@ AEM では、デバイスの幅に応じたレイアウトを定義できます�
 
 >[!NOTE]
 >
->まだ使用可能になっていない場合は、**レイアウトコンテナ**&#x200B;を明示的に[段落システムまたはページ用にアクティベート](/help/sites-cloud/administering/responsive-layout.md)する必要があります。
+>まだ使用可能になっていない場合は、**レイアウトコンテナ** を明示的に [ 段落システムまたはページ用にアクティベート ](/help/sites-cloud/administering/responsive-layout.md) する必要があります。
 
 1. **レイアウトコンテナ**&#x200B;は、[コンポーネントブラウザー](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)で標準コンポーネントとして使用できます。ここから、ページ上の必要な場所へドラッグできます。そうすると、「**コンポーネントをここにドラッグ**」プレースホルダーが表示されます。
 1. その後、レイアウトコンテナにコンポーネントを追加できます。これらのコンポーネントには、実際のコンテンツが格納されます。
@@ -184,7 +184,7 @@ AEM では、デバイスの幅に応じたレイアウトを定義できます�
 * [ツールバーのモードメニュー](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)を使用して&#x200B;**レイアウト**&#x200B;モードを選択する。
    * **編集**&#x200B;モードまたは&#x200B;**ターゲット設定**&#x200B;モードに切り替える場合と同様に、**レイアウト**&#x200B;モードを選択します。
    * **レイアウト**&#x200B;モードは持続され、モードセレクターで別のモードを選択するまで、**レイアウト**&#x200B;モードのままです。
-* [個別のコンポーネントを編集する](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout)。
+* [個別のコンポーネントを編集する](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout)とき。
    * コンポーネントのクイックアクションメニューの「**レイアウト**」オプションを使用すると、**レイアウト**&#x200B;モードに切り替えることができます。
    * コンポーネントを編集している間は&#x200B;**レイアウト**&#x200B;モードが維持され、別のコンポーネントにフォーカスが移ると&#x200B;**編集**&#x200B;モードに戻ります。
 

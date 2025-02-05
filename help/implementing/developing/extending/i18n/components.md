@@ -5,10 +5,11 @@ topic-tags: components
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: b55f7260628f759de2718290624cdc82da7a2961
-workflow-type: ht
+exl-id: 0276b310-b9a9-44b6-b295-06c51ef17208
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '349'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 100%
 
 次のプロセスを使用して、コンポーネントを国際化し、様々な言語で UI を提供します。
 
-1. [文字列を国際化するコードを使用してコンポーネントを実装します。](/help/implementing/developing/extending/i18n/dev.md) コードは翻訳対象の文字列を識別し、実行時に表示する言語を選択します。
+1. [ 文字列を国際化するコードを使用してコンポーネントを実装します ](/help/implementing/developing/extending/i18n/dev.md)。 コードは翻訳する文字列を識別し、実行時に表示する言語を選択します。
 1. 辞書を作成し、翻訳する英語の文字列を追加します。
 1. 辞書を XLIFF 形式で書き出し、文字列を翻訳して、その XLIFF ファイルを AEM に読み込みます。
 1. 辞書をアプリケーションのリリース管理プロセスに組み込みます。

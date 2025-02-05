@@ -5,10 +5,10 @@ exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ AEM の強力な翻訳ツールを使用してヘッドレスコンテンツを�
 
 ヘッドレステクノロジー、AEM によるヘッドレスコンテンツの提供方法、ヘッドレスコンテンツの翻訳方法を読者が幅広く理解できるようにすることが、このジャーニーの目的です。これらのトピックのいずれかに詳しくない場合は、ここから始めるのが最適です。
 
-AEM、ヘッドレスおよび翻訳に精通している方は、このジャーニーの基礎知識を既にお持ちかもしれません。その場合は、最後の [その他のリソース](#additional-resources) の節でリンクされているアドビの技術ドキュメントを参照してください。
+AEM、ヘッドレスおよび翻訳に精通している方は、このジャーニーの基礎知識を既にお持ちかもしれません。その場合は、[ 以下のその他のリソース ](#additional-resources) の節でリンクされているアドビの技術ドキュメントを参照してください。
 
 ## AEM ドキュメントジャーニー {#documentation-journeys}
 

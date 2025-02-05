@@ -4,7 +4,7 @@ description: 1 つのコードベースを活用するローカライズされ�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1261'
 ht-degree: 2%
@@ -55,9 +55,9 @@ MSM を使用すると、ロケールや言語をまたいでブランドのコ�
 
 MSM リポジトリのユースケースを設定するには、いくつかの手順があります。
 
-1. [AEM サイト設定を更新します。](#update-aem-configurations)
-1. [ローカライズしたページ用に新しいEdge Delivery Servicesサイトを作成します。](#create-edge-sites)
-1. [ローカライズしたサイトに合わせて、AEMのクラウド設定を更新します。](#update-cloud-configurations)
+1. [AEM サイト設定を更新します ](#update-aem-configurations)。
+1. [ ローカライズしたページ用に新しいEdge Delivery Servicesサイトを作成する ](#create-edge-sites)。
+1. [ ローカライズしたサイト用にAEMのクラウド設定を更新します ](#update-cloud-configurations)。
 
 ### AEM サイト設定の更新 {#update-aem-configurations}
 

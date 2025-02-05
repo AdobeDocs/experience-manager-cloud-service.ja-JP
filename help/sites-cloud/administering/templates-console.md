@@ -4,13 +4,13 @@ description: テンプレートコンソールが、ページテンプレート�
 solution: Experience Manager Sites
 feature: Administering
 role: User
-source-git-commit: 993f81e0ff2b71ce2edf59a2c74398db3abe8f06
+exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 3%
 
 ---
-
 
 # テンプレートコンソール {#templates-console}
 
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 ページを作成する場合、テンプレートを選択する必要があります。 ページテンプレートは、新しいページのベースとして使用されます。[ 編集可能テンプレートをAEM](/help/implementing/developing/components/templates.md) て、作成されるページの構造、すべての初期コンテンツおよび使用可能なコンポーネント （デザインプロパティ）を定義できます。
 
-コンテンツ作成者がサイトコンソールで新しいページを作成すると [ 使用可能な一連のテンプレートが表示されます。](/help/sites-cloud/authoring/sites-console/creating-pages.md) テンプレートを使用して、次の機能を備えた編集可能なページを作成できます。
+コンテンツ作成者が [ サイトコンソールで新しいページを作成 ](/help/sites-cloud/authoring/sites-console/creating-pages.md) すると、使用可能な一連のテンプレートが表示されます。 テンプレートを使用して、次の機能を備えた編集可能なページを作成できます。
 
 * [ ページエディター ](/help/sites-cloud/authoring/page-editor/templates.md)
 * [ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/templates.md)
@@ -73,7 +73,7 @@ ht-degree: 3%
 
 ## プロパティ {#properties}
 
-テンプレートの [ プロパティ ](/help/sites-cloud/authoring/page-editor/templates.md) は、ページプロパティを [ 編集するのと同じ方法で編集できます。テンプレ ](/help/sites-cloud/authoring/sites-console/page-properties.md) トのプロパティには次のものがあります。
+[ テンプレートのプロパティ ](/help/sites-cloud/authoring/page-editor/templates.md) は、（ページプロパティを編集 [ できるのと同じ方法で編集できます。テンプレートのプロパティには次のもの ](/help/sites-cloud/authoring/sites-console/page-properties.md) 含まれます。
 
 * テンプレートのタイトル
 * 説明
