@@ -3,15 +3,12 @@ title: インタラクティブ通信の概要
 description: AEM Forms インタラクティブ通信を使用して、動的でデータ駆動型の通信を簡単に設計します
 feature: Release Information
 role: Admin
-hide: true
-hidefromtoc: true
-source-git-commit: a771aa7e683cfbcacc8a9d5765c63d50169a2756
+source-git-commit: 2f4fd0c380c612042cfe5d755b0b1e5ddc7e7c88
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 4%
+source-wordcount: '306'
+ht-degree: 3%
 
 ---
-
 
 # インタラクティブ通信
 
@@ -21,8 +18,12 @@ ht-degree: 4%
 
 金融機関が口座取引明細書を作成してから政府機関がメリットの通知を合理化するなど、インタラクティブ通信は高品質で安全な法的準拠の通信を簡単かつ効率的に作成するための頼れるツールです。
 
-![インタラクティブ通信エディター](/help/forms/assets/ic-editor.png)
 
+[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+
+<!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
+
+-->
 ## コア機能
 
 インタラクティブ通信エディターの主な機能は次のとおりです。
@@ -41,14 +42,11 @@ ht-degree: 4%
 | **クラウド統合** | AEM Formsのas a Cloud Serviceでドキュメントを直接編集する |
 
 
-## オンボーディング
+## はじめに
 
-Formsas a Cloud Serviceデプロイメントの早期アクセスプログラムで使用できるインタラクティブ通信エディター。 アクセスをリクエストするには、Formsのas a Cloud Serviceデプロイメントの組織 ID とプログラムの詳細を、公式アドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールで送信します。 アクセス権を付与されたら、[ 最初の通信の作成 ](/help/forms/create-your-first-communication.md) を開始します。
-
-
-
-
-
+1. **アクセスをリクエスト**：公式アドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールを送信します
+2. **管理者設定**:Adobeは、アクセスを有効にし、管理者権限を提供します
+3. **作成を開始**:[ 直感的なエディター ](https://video.tv.adobe.com/v/3444094/) を使用して、最初の通信から始めます。
 
 
 
@@ -122,10 +120,8 @@ With Interactive Communication, you can integrate PDF documents into existing wo
 
 ## 次へ
 
-* [最初の通信を作成](/help/forms/create-your-first-communication.md)
-* [よくある問題](/help/forms/interactive-communications-faq.md)
+* 最初の通信を作成
 * 用語と概念を理解する
 * インタラクティブ通信エディターのチュートリアル
 * フラグメントの作成
 * 通信のプレビューとテスト
-
