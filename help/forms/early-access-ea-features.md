@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 3bd7b574b34d09b3a205cf72b307d459efc00eab
+source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
 workflow-type: tm+mt
-source-wordcount: '1998'
-ht-degree: 30%
+source-wordcount: '2056'
+ht-degree: 29%
 
 ---
 
@@ -111,7 +111,19 @@ AEM アダプティブFormsで作成された web サイト上のフォームが
 
 ### アダプティブFormsのHTMLメールテンプレート
 
-アダプティブFormsでは、HTMLのメールテンプレートを使用できます。 HTML用のメールテンプレートを使用すると、フォームが送信される際に、リッチでパーソナライズされた、視覚的にアピールするメールを送信できます。 これらのメールは、フォームデータを使用してカスタマイズし、画像やリンクなどの様々なメールタグを使用して強化できます。 アダプティブFormsでは、HTMLテンプレートを含んだファイルをアップロードするか、プレーンテキストエディターを使用してこれらのテンプレートを作成できます。
+
+アダプティブFormsでは、[HTMLのメールテンプレート ](/help/forms/html-email-templates-in-adaptive-forms.md) を使用できます。 HTML用のメールテンプレートを使用すると、フォームが送信される際に、リッチでパーソナライズされた、視覚的にアピールするメールを送信できます。 これらのメールは、フォームデータを使用してカスタマイズし、画像やリンクなどの様々なメールタグを使用して強化できます。 アダプティブFormsでは、HTMLテンプレートを含んだファイルをアップロードするか、プレーンテキストエディターを使用してこれらのテンプレートを作成できます。
+
+![HTMLのメールテンプレート ](/help/forms/assets/html-email.png)
+
+### RESTful Web サービス送信アクション
+
+アダプティブFormsでは、新しい RESTful web サービス送信アクションを使用して、認証済みの外部 REST エンドポイントにキャプチャされたデータをシームレスに送信できるようになりました。
+
+* サポートされる標準：API 統合を容易にする Swagger 2.0 および 3.0
+* セキュア認証：OAuth 2.0、基本認証、API キー、カスタム認証
+* 柔軟なデータ形式：マルチパートフォームデータ、JSON、URL エンコード（キーと値のペア）
+
 
 
 ### 右から左（RTL）言語のサポート
