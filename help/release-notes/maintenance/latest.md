@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
+source-git-commit: 636183e0597bed24b3e437ed53a35c9e64ac0504
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '950'
 ht-degree: 21%
 
 ---
@@ -56,6 +56,11 @@ ht-degree: 21%
 
 ### 修正された問題 {#fixed-issues-19352}
 
+* CQ-4356756：関連アセットのサポートを翻訳しないでください。
+* CQ-4358206：翻訳プロジェクトで繰り返し翻訳スケジューラーが機能しない。
+* CQ-4358126：翻訳クラウドサービスで設定サブフォルダーを選択できない。
+* FORMS-18098、FORMS-17954:Microsoft Edge ブラウザーの Internet Explorer モードで、アダプティブFormsを読み込めない。
+* FORMS-17162：アセットを公開すると OOTB クエリが実行され、公開のパフォーマンスが低下します。
 * SITES-28415：ユニバーサルエディターを使用したEdge Delivery：スプレッドシートの「プロパティを開く」ボタンを修正。
 * SITES-26669：ユニバーサルエディターを使用したEdge Delivery:BOM がスプレッドシートになっている UTF-8 でエンコードされた CSV ファイルをアップロードする際の問題を修正しました。
 * SITES-26543：ユニバーサルエディターを使用したEdge Delivery：間違ったマークアップをレンダリングするモデルを含めずに、空のブロックを修正します。
@@ -85,8 +90,6 @@ ht-degree: 21%
 * SITES-26660:@ContentType のタイプが「文字列」の場合、コンテンツフラグメントのバージョン比較が壊れる場合があります。
 * SITES-26626：数値およびブール値フィールドに customErrorMessage がありません。
 * SITES-26268：フラグメントの作成時に参照が無効な場合、誤ったステータスコードが返される。
-* FORMS-18098、FORMS-17954:Microsoft Edge ブラウザーの Internet Explorer モードで、アダプティブFormsを読み込めない。
-* FORMS-17162：アセットを公開すると OOTB クエリが実行され、公開のパフォーマンスが低下します。
 
 ### 既知の問題 {#known-issues-19352}
 
