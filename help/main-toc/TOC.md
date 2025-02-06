@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a771aa7e683cfbcacc8a9d5765c63d50169a2756
+source-git-commit: 17489f3f65a71c6fc0f805af37cb233ab1c5470a
 workflow-type: tm+mt
-source-wordcount: '6034'
+source-wordcount: '6039'
 ht-degree: 99%
 
 ---
@@ -1354,6 +1354,7 @@ ht-degree: 99%
       + 国際化{#internationalization}
          + [コンポーネントの国際化](/help/implementing/developing/extending/i18n/components.md)
          + [UI 文字列の国際化](/help/implementing/developing/extending/i18n/dev.md)
+         + [トランスレーターを使用した辞書の管理](/help/implementing/developing/extending/i18n/translator.md)
          + [翻訳のための文字列の抽出](/help/implementing/developing/extending/i18n/extract.md)
    + AEM as a Cloud Service へのデプロイ {#deploying}
       + [AEM as a Cloud Service へのデプロイ](/help/implementing/deploying/overview.md)

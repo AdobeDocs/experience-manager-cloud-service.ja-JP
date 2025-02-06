@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 0276b310-b9a9-44b6-b295-06c51ef17208
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 401685af02c720994d72cd95d36f0cfcdf15d198
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 93%
+source-wordcount: '355'
+ht-degree: 90%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 93%
 
 次のプロセスを使用して、コンポーネントを国際化し、様々な言語で UI を提供します。
 
-1. [ 文字列を国際化するコードを使用してコンポーネントを実装します ](/help/implementing/developing/extending/i18n/dev.md)。 コードは翻訳する文字列を識別し、実行時に表示する言語を選択します。
-1. 辞書を作成し、翻訳する英語の文字列を追加します。
-1. 辞書を XLIFF 形式で書き出し、文字列を翻訳して、その XLIFF ファイルを AEM に読み込みます。
+1. [文字列を国際化するコードを使用してコンポーネントを実装します。](/help/implementing/developing/extending/i18n/dev.md) コードは翻訳対象の文字列を識別し、実行時に表示する言語を選択します。
+1. [ 辞書の作成 ](/help/implementing/developing/extending/i18n/translator.md#creating-a-dictionary).
+1. [ 書き出し ](/help/implementing/developing/extending/i18n/translator.md#exporting-a-dictionary) 辞書を XLIFF 形式に変換し、文字列を翻訳してから、XLIFF ファイルをAEMに読み込みます。
 1. 辞書をアプリケーションのリリース管理プロセスに組み込みます。
 
 >[!NOTE]
@@ -37,10 +37,11 @@ AEM 国際化フレームワークでは、リポジトリ内の辞書を使用�
 * コードが読みやすい。
 * デフォルトの言語を常に利用できる。
 
-AEM as a Cloud Service では、翻訳の変更は [CI／CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)を通じて Git から取得する必要があります。
+[ トランスレーターツール ](/help/implementing/developing/extending/i18n/translator.md) を使用すると、すべての辞書を 1 つの場所で一元的に管理できます。
 
 ![i18n-components-2](/help/implementing/developing/extending/assets/i18n-comp2.png)
 
+AEM as a Cloud Service では、翻訳の変更は [CI／CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)を通じて Git から取得する必要があります。
 
 ### システム辞書内の文字列のオーバーレイ {#overlaying-strings-in-system-dictionaries}
 
