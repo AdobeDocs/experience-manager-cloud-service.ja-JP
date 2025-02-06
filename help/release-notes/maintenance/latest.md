@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 77d8ebeaa3914f4a91d2cf27ccc5b048e64d6b38
+source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 22%
+source-wordcount: '919'
+ht-degree: 21%
 
 ---
 
@@ -85,6 +85,8 @@ ht-degree: 22%
 * SITES-26660:@ContentType のタイプが「文字列」の場合、コンテンツフラグメントのバージョン比較が壊れる場合があります。
 * SITES-26626：数値およびブール値フィールドに customErrorMessage がありません。
 * SITES-26268：フラグメントの作成時に参照が無効な場合、誤ったステータスコードが返される。
+* FORMS-18098、FORMS-17954:Microsoft Edge ブラウザーの Internet Explorer モードで、アダプティブFormsを読み込めない。
+* FORMS-17162：アセットを公開すると OOTB クエリが実行され、公開のパフォーマンスが低下します。
 
 ### 既知の問題 {#known-issues-19352}
 

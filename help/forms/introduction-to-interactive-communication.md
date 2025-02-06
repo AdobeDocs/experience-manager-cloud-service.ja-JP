@@ -3,7 +3,7 @@ title: インタラクティブ通信の概要
 description: AEM Forms インタラクティブ通信を使用して、動的でデータ駆動型の通信を簡単に設計します
 feature: Release Information
 role: Admin
-source-git-commit: 2f4fd0c380c612042cfe5d755b0b1e5ddc7e7c88
+source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 3%
@@ -18,12 +18,12 @@ ht-degree: 3%
 
 金融機関が口座取引明細書を作成してから政府機関がメリットの通知を合理化するなど、インタラクティブ通信は高品質で安全な法的準拠の通信を簡単かつ効率的に作成するための頼れるツールです。
 
-
-[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+>[!VIDEO](https://video.tv.adobe.com/v/3444094/)
 
 <!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
 
 -->
+
 ## コア機能
 
 インタラクティブ通信エディターの主な機能は次のとおりです。
