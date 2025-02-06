@@ -4,9 +4,9 @@ description: ユニバーサルエディターがプロパティパネルで編�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: a27da2d6d675d68d69071d0b393ad5e0f82bb7ae
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1353'
 ht-degree: 95%
 
 ---
@@ -305,11 +305,13 @@ AEM コンテンツコンポーネントタイプでは、AEM コンテンツピ
 
 #### コンテンツフラグメント {#content-fragment}
 
-コンテンツフラグメントピッカーを使用すると、[コンテンツフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)と（必要に応じて）そのバリエーションを選択できます。追加の設定と検証を提供します。
+コンテンツフラグメントピッカーを使用すると、[コンテンツフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)と（必要に応じて）そのバリエーションを選択できます。追加の設定を提供します。
 
 | 設定 | 値タイプ | 説明 | 必須 |
 |---|---|---|---|
 | `variationName` | `string` | 選択したバリエーションを保存する変数名。未定義の場合、バリエーションピッカーは表示されません | いいえ |
+
+また、追加の検証タイプも提供します。
 
 | 検証タイプ | 値タイプ | 説明 | 必須 |
 |---|---|---|---|
@@ -444,11 +446,13 @@ AEM コンテンツコンポーネントタイプでは、AEM コンテンツピ
 
 #### エクスペリエンスフラグメント {#experience-fragment}
 
-エクスペリエンスフラグメントピッカーを使用すると、[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fragments/experience-fragments.md)と（必要に応じて）そのバリエーションを選択できます。追加の設定と検証を提供します。
+エクスペリエンスフラグメントピッカーを使用すると、[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fragments/experience-fragments.md)と（必要に応じて）そのバリエーションを選択できます。追加の設定を提供します。
 
 | 設定 | 値タイプ | 説明 | 必須 |
 |---|---|---|---|
 | `variationName` | `string` | 選択したバリエーションを保存する変数名。未定義の場合、バリエーションピッカーは表示されません | いいえ |
+
+また、追加の検証タイプも提供します。
 
 | 検証タイプ | 値タイプ | 説明 | 必須 |
 |---|---|---|---|
