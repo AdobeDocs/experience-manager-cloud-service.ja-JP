@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
+source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
 workflow-type: tm+mt
-source-wordcount: '2129'
-ht-degree: 100%
+source-wordcount: '2339'
+ht-degree: 94%
 
 ---
 
@@ -123,7 +123,10 @@ RESTful サービス、SOAP サービス、OData サービスのクラウドサ�
 
 ## RESTful Web サービスの設定 {#configure-restful-web-services}
 
-RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式または YAML 形式で [ in JSON or YAML forSwagger 定義ファイル](https://swagger.io/specification/v2/) in JSON or YAML format in a 内に記述できます。[!DNL Experience Manager] as a Cloud Service で RESTful web サービスを設定するには、ファイルシステムまたはファイルがホストされている URL に [!DNL Swagger] ファイル（[Swagger Version 2.0](https://swagger.io/specification/v2/)）[!DNL Swagger] ファイル（[Swagger Version 3.0](https://swagger.io/specification/v3/)）が存在しているか、Swagger ファイルがホストされる URL を指定する必要があります。
+RESTful Web サービスは、[Swagger の仕様 ](https://swagger.io/specification/v2/) に従い、JSON 形式または YAML 形式で、[!DNL Swagger] 定義ファイルまたはサービスエンドポイント内に記述できます。
+
+>[!NOTE]
+> [!DNL Experience Manager] as a Cloud Service で RESTful web サービスを設定するには、ファイルシステムまたはファイルがホストされている URL に [!DNL Swagger] ファイル（[Swagger Version 2.0](https://swagger.io/specification/v2/)）[!DNL Swagger] ファイル（[Swagger Version 3.0](https://swagger.io/specification/v3/)）が存在しているか、Swagger ファイルがホストされる URL を指定する必要があります。
 
 ### Open API 仕様バージョン 2.0 用の RESTful サービスの設定 {#configure-restful-services-open-api-2.0}
 
@@ -177,6 +180,31 @@ RESTful サービス Open API 仕様バージョン 3.0 でサポートされて
 * 1 回の操作に対する異なる MIME タイプの異なるリクエスト本文
 
 詳しくは、[OpenAPI 3.0 仕様](https://swagger.io/specification/v3/)を参照してください。
+
+### サービスエンドポイントを使用した RESTful サービスの設定 {#configure-restful-services-service-endpoint}
+
+<span class="preview"> サービスエンドポイント機能は早期導入プログラムの対象であり、コアコンポーネントにのみ適用されます。 早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
+
+1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーを選択します。
+
+   クラウドサービス設定用フォルダーの作成方法と構成方法については、「[クラウドサービス設定用フォルダーの構成](configure-data-sources.md#cloud-folder)」を参照してください。
+
+1. **[!UICONTROL 作成]** を選択して、**[!UICONTROL Data Source設定を作成]** ウィザードを開きます。
+
+1. 設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL RESTful サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」を選択します。
+
+1. 次のページで、**[!UICONTROL RESTful サービス]** ドロップダウンから **[!UICONTROL サービスエンドポイント]** を選択します。
+
+   ![ サービスエンドポイント ](/help/forms/assets/select-service-endpoint.png)
+
+1. **[!UICONTROL サービスエンドポイント URL]** を指定します。
+
+   >[!NOTE]
+   > デフォルトでは、メソッドの種類はPOSTです。
+1. ドロップダウンリストから、選択するコンテンツタイプの 1 つを選択します。 コンテンツタイプは、マルチパートフォームデータ、JSON、URL エンコード（キーと値のペア）です。
+1. 次に、ドロップダウンリストから認証タイプ（「OAuth 2.0」、「基本認証」、「API キー」、「カスタム認証」など）のいずれかを選択します。
+   ![ サービスエンドポイント認証の種類 ](/help/forms/assets/service-endpoint-authtype.png)
+1. 「作成」をクリックします。
 
 ### パフォーマンスを最適化するためのフォームデータモデル（FDM）HTTP クライアント設定 {#fdm-http-client-configuration}
 

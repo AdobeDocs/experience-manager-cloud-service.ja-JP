@@ -3,13 +3,12 @@ Title: How to configure submit to Rest Endpoint submit action for an Adaptive Fo
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
 keywords: AEM Forms REST エンドポイント、REST エンドポイントへの送信、REST URL へのデータの POST、REST エンドポイントアクションの設定
 feature: Adaptive Forms, Core Components
-exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-title: 「アダプティブフォームの送信アクションの設定方法」
+title: アダプティブフォームの送信アクションの設定方法
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 100%
+source-wordcount: '703'
+ht-degree: 88%
 
 ---
 
@@ -30,10 +29,10 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
 ## REST エンドポイントへの送信の送信アクションを設定する {#steps-to-configure-submit-to-restendpoint-submit-action}
 
-送信アクションを設定するには：
+Swagger Open API 仕様に基づいて送信アクションを設定するには：
 
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
-1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。アダプティブフォームコンテナダイアログボックスが開きます。
+1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。 アダプティブフォームコンテナダイアログボックスが開きます。
 1. 「**[!UICONTROL 送信]**」タブをクリックします。
 1. **[!UICONTROL 送信アクション]**&#x200B;ドロップダウンリストから、「**[!UICONTROL REST エンドポイントへの送信]**」を選択します。
    ![REST エンドポイントへの送信のアクション設定](/help/forms/assets/submit-action-restendpoint.png)
@@ -68,6 +67,20 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
    **[!UICONTROL POST リクエストを有効にする]**&#x200B;ことで、リクエストを POST する URL を指定することもできます。フォームをホストする AEM サーバーにデータを送信するには、AEM サーバーのルートパスに対応する相対パスを使用します。例えば、`/content/forms/af/SampleForm.html` のようになります。他のサーバーにデータを送信するには、絶対パスを使用します。
 
 1. 「**[!UICONTROL 完了]**」をクリックします。
+
+### サービス REST エンドポイントに基づく送信アクションの設定 {#config-service-endpoint-auth}
+
+<span class="preview"> サービスエンドポイント機能は早期導入プログラムの対象であり、コアコンポーネントにのみ適用されます。 早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
+
+1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
+1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。 アダプティブフォームコンテナダイアログボックスが開きます。
+1. 「**[!UICONTROL 送信]**」タブをクリックします。
+1. **[!UICONTROL 送信アクション]**&#x200B;ドロップダウンリストから、「**[!UICONTROL REST エンドポイントへの送信]**」を選択します。
+1. POSTリクエストを有効にします。
+1. REST エンドポイント URL を指定します。
+1. サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択します。 認証タイプとコンテンツタイプについて詳しくは、[ データソースの設定 ](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint) を参照してください。
+   ![Rest エンドポイントの設定 ](assets/rest-service-endpoint-config.png)
+1. 「完了」をクリックします。
 
 ## ベストプラクティス
 
