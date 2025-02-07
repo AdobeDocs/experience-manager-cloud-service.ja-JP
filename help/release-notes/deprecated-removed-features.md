@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 32cc525d5443f455f1579ef027c08796ffc209e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2543'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 99%
 
 このプロセスにより、機能が実際に削除されるまでに、非推奨（廃止予定）の機能の新しいバージョンまたは後継機能にお客様が実装を合わせるためのリリースサイクルが少なくとも 1 回あります。
 
-## 非推奨（廃止予定）の機能 {#deprecated-features}
+## 廃止される機能 {#deprecated-features}
 
 ここでは、[!DNL Experience Manager] as a [!DNL Cloud Service] で廃止予定の機能について説明します。 通常、将来のリリースで削除される機能は、最初に非推奨（廃止予定）に設定されて代替の機能が提供されます。
 
@@ -35,8 +35,8 @@ ht-degree: 99%
 
 | 機能 | 非推奨（廃止予定）の機能 | 代替手段 |
 | ------------ | ------------------ | ----------- |
-| Sites | [PWA機能 ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | なし |
-| Sites | [SPA Editor](/help/implementing/developing/hybrid/introduction.md) | AEMでヘッドレスコンテンツを管理するために推奨されるエディターは次のとおりです。<br>- [ ユニバーサルエディター ](/help/edge/wysiwyg-authoring/authoring.md) ビジュアルエディター）。<br>- フォームベースの編集用の [ コンテンツフラグメントエディター ](/help/assets/content-fragments/content-fragments-managing.md)。 |
+| Sites | [PWA 機能](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | なし |
+| Sites | [SPA Editor](/help/implementing/developing/hybrid/introduction.md) | AEM でヘッドレスコンテンツの管理に推奨されるエディターは次のとおりです。<br>- ビジュアル編集用の[ユニバーサルエディター](/help/edge/wysiwyg-authoring/authoring.md)。<br>- フォームベース編集用の[コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md)。 |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/ja/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **ソーシャルメディアのステータス** のエクスペリエンスフラグメントのプロパティ。 | この機能は間もなく削除される予定です。 |
 | [!DNL Sites] | テンプレートベースのシンプルなコンテンツフラグメント。 | 現在は[モデルベースの構造化コンテンツフラグメント](/help/assets/content-fragments/content-fragments-models.md)。 |
