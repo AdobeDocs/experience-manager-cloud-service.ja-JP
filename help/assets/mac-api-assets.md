@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2f4c5db2b40d55e2e46e14cb5309754969b5bdea
+source-git-commit: 3143ca304ec7ff56d45502a3fd5e49b3b9ed6ce4
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 83%
+source-wordcount: '1709'
+ht-degree: 81%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 83%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
-## 概要 {#overview}
+## AEM [!DNL Assets] HTTP API の概要 {#overview}
 
-AEM [!DNL Assets] HTTP API を使用すると、/`api/assets` の REST インターフェイスを介して、デジタルアセットに対する CRUD （作成、読み取り、更新、削除）操作を有効にできます。 これらの操作は、アセットのメタデータ、レンディションおよびコメントに適用されます。 [コンテンツフラグメントをサポート](/help/assets/content-fragments/assets-api-content-fragments.md)しています。
+AEM [!DNL Assets] HTTP API を使用すると、/`api/assets` で使用可能な REST インターフェイスを介して、デジタルアセットに対する CRUD （作成、読み取り、更新、削除）操作を有効にできます。 これらの操作は、アセットのメタデータ、レンディションおよびコメントに適用されます。 [コンテンツフラグメントをサポート](/help/assets/content-fragments/assets-api-content-fragments.md)しています。
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 >
 >アセットやバイナリ一般（レンディションなど）のアップロードまたは更新に関連する API 呼び出しはすべて、[!DNL Experience Manager] as a [!DNL Cloud Service] デプロイメントでは廃止されています。バイナリをアップロードする場合は、代わりに、[直接バイナリアップロード API](developer-reference-material-apis.md#asset-upload) を使用します。
 
-## コンテンツフラグメント {#content-fragments}
+## コンテンツフラグメントの管理 {#content-fragments}
 
 [ コンテンツフラグメント ](/help/assets/content-fragments/content-fragments.md) は、テキスト、数値、日付を格納する構造化アセットです。 `standard` アセット（画像やドキュメントなど）とはいくつかの違いがあるので、コンテンツフラグメントの処理にはいくつかの追加ルールが適用されます。
 
@@ -51,9 +51,9 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 >
 >使用可能な様々な API の概要と、関連する概念のいくつかの比較について詳しくは、[構造化コンテンツの配信と管理用の AEM API](/help/headless/apis-headless-and-content-fragments.md) を参照してください。
 >
->この[コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
+>[コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
-## データモデル {#data-model}
+## データモデルを調べる {#data-model}
 
 [!DNL Assets] HTTP API は、主にフォルダーと標準アセットという 2 つの要素を公開します。 また、コンテンツフラグメントで使用するカスタムデータモデルの詳細な要素も提供します。 詳しくは、コンテンツフラグメントのデータモデルを参照してください。 詳しくは、[コンテンツフラグメントのデータモデル](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)を参照してください。
 
@@ -61,7 +61,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 >
 >この[コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
-### フォルダー {#folders}
+### フォルダーの管理 {#folders}
 
 フォルダーは、従来のファイルシステムにおけるディレクトリに似ています。フォルダーには、アセット、サブフォルダーまたはその両方を含めることができます。 フォルダーには、以下のコンポーネントがあります。
 
@@ -82,7 +82,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 * `parent`：親フォルダーへのリンク。
 * `thumbnail` （任意）：フォルダーのサムネール画像へのリンク。
 
-### Assets {#assets}
+### アセットの管理 {#assets}
 
 [!DNL Experience Manager] では、アセットには次の要素が含まれています。
 
@@ -103,7 +103,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 * プロパティ
 * リンク
 
-## 使用可能な機能 {#available-features}
+## 使用可能な API 操作の探索 {#available-features}
 
 [!DNL Assets] HTTP API には、以下の機能が含まれます。
 
@@ -293,7 +293,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 * 412 - PRECONDITION FAILED（ルートコレクションが見つからないかアクセスできない場合）
 * 500 - INTERNAL SERVER ERROR（他に問題がある場合）
 
-## ヒント、ベストプラクティス、制限事項 {#tips-limitations}
+## ベストプラクティスとメモの制限に従う {#tips-limitations}
 
 * [!UICONTROL  オフタイム ] に達すると、[!DNL Assets] Web インターフェイスと HTTP API を介してAssetsとそのレンディションが使用できなくなります。 [!UICONTROL  オンタイム ] が未来の時間である場合、または [!UICONTROL  オフタイム ] が過去の時間である場合、API は 404 エラーを返します。
 
@@ -301,7 +301,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 * API を使用して更新された場合、フォルダーまたはアセットの一部のプロパティは、異なるプレフィックスにマップされます。`jcr:title`、`jcr:description`、`jcr:language` の `jcr` プレフィックスは `dc` プレフィックスに置き換えられます。したがって、返された JSON コードで、`dc:title`、`dc:description` にはそれぞれ `jcr:title`、`jcr:description` の値が含まれています。
 
-**関連情報**
+**関連リソースの参照**
 
 * [アセットを翻訳](translate-assets.md)
 * [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
