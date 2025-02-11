@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 2724eaaaade94be89d33da5eecec4444cf851bd0
 workflow-type: tm+mt
 source-wordcount: '720'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ AEMaaCS でカスタムドメイン名を使用する場合は、いくつかの
 * 一度に追加できるドメイン名は 1 つだけです。
 * AEM as a Cloud Service では、`*.example.com` のようなワイルドカードドメインをサポートしていません。
 * カスタムドメイン名を追加する前に、カスタムドメイン名を含んだ有効な SSL 証明書（ワイルドカード証明書が有効）をプログラムにインストールする必要があります。
-* [ フロントエンドパイプライン機能 ](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md#custom-domains) でカスタムドメイン名を使用するには、追加の設定手順が必要です。
+* [フロントエンドパイプライン機能](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md#custom-domains)でカスタムドメイン名を使用するには、追加の設定手順が必要です。
 
 ## 今すぐ始める {#get-started}
 

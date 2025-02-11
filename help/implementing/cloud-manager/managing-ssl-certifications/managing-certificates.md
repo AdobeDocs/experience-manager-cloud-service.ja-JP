@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
 source-wordcount: '1023'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Cloud Manager には、プログラムに対するすべての証明書のステ
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 1. ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、サイドメニューを表示します。
 1. **サービス**&#x200B;見出しの下にある ![鍵がかかったアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) 「**SSL 証明書**」をクリックします。
-1. 更新する期限切れの顧客管理証明書の行で、右端にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、**表示と更新** をクリックします。
+1. 更新の対象となる、顧客が管理する期限切れの証明書の行で、右端にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックして、「**表示と更新**」をクリックします。
 
    ![顧客が管理する期限切れの SSL 証明書の更新](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
@@ -62,7 +62,7 @@ Cloud Manager には、プログラムに対するすべての証明書のステ
 
 >[!NOTE]
 >
->2 つ以上の SAN 証明書が同じ SAN ドメイン・エントリーをカバーし、そのうちの 1 つが更新された場合、システムは更新された証明書をドメインにインストールします。
+>2 つ以上の SAN 証明書が同じ SAN ドメインエントリをカバーし、そのうちの 1 つが更新されると、システムはそのドメインに対して更新された証明書をインストールします。
 >
 >詳しくは、[SSL 証明書問題のトラブルシューティング](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert)を参照してください。
 

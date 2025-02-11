@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
 source-wordcount: '1729'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -136,7 +136,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ### 設定のデバッグ
 
-BYOCDN 設定をデバッグするには、`x-aem-debug` ヘッダーに値 `edge=true` を使用します。 例：
+BYOCDN 設定をデバッグするには、`edge=true` の値を持つ `x-aem-debug` ヘッダーを使用します。例：
 
 Linux® の場合：
 
@@ -150,13 +150,13 @@ Windows の場合：
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
 ```
 
-このプロセスは、`x-aem-debug` 応答ヘッダーのリクエストで使用される特定のプロパティを反映します。 次に例を示します。
+このプロセスにより、リクエストで使用される特定のプロパティが `x-aem-debug` 応答ヘッダーに反映されます。例：
 
 ```
 x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
 ```
 
-このプロセスにより、ホスト値、エッジ認証設定、x-forwarded-host ヘッダー値などの詳細を検証できます。 また、エッジキーが設定されているかどうかと、一致するものが存在する場合にどのキーが使用されるかも識別します。
+このプロセスにより、ホスト値、エッジ認証設定、x-forwarded-host ヘッダー値などの詳細を検証できます。また、エッジキーが設定されているかどうか、一致が存在する場合に使用されるキーも識別します。
 
 ### CDN ベンダー設定のサンプル {#sample-configurations}
 
@@ -187,7 +187,7 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 
 **エラー 421 誤ったリダイレクト**
 
-メッセージ `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` の 421 エラーは、HTTP `Host` が証明書にリストされているどのホストとも一致しないことを示しています。 この問題は、通常、`Host` または SNI 設定が間違っていることを示します。 `Host` と SNI の両方の設定が publish-p&lt;PROGRAM_ID>-e.adobeaemcloud.com ホストを指していることを確認します。
+`Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` というメッセージを含む 421 エラーは、HTTP `Host` が証明書にリストされているどのホストとも一致しないことを示します。この問題は通常、`Host` または SNI の設定のいずれかが間違っていることを示します。`Host` と SNI の設定の両方が publish-p&lt;PROGRAM_ID>-e.adobeaemcloud.com ホストを指していることを確認します。
 
 **リダイレクトループが多すぎます**
 

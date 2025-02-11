@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
 source-wordcount: '1665'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -215,7 +215,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 * ![Web ページアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) [Edge Delivery サイト](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - Edge Delivery サイトの管理
 * ![設定アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [ドメイン設定](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - プログラムのカスタムドメイン名の管理
 * ![鍵がかかったアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [SSL 証明書](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - プログラムの SSL 証明書の管理
-* ![ ソーシャルネットワークアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg)[ ドメインマッピング ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - ドメインマッピングの管理
+* ![ソーシャルネットワークアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [ドメインマッピング](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - ドメインマッピングの管理
 * ![タスクリストアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [IP 許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - 特定の IP アドレスの許可リストの定義
 * ![ボックスアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [コンテンツセット](/help/implementing/developing/tools/content-copy.md) - コピー目的に対して作成されたコンテンツのセット
 * ![履歴アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [コンテンツをコピーアクティビティ](/help/implementing/developing/tools/content-copy.md) - コンテンツをコピーするアクティビティ
@@ -243,7 +243,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 **環境**&#x200B;カードには、環境の概要とクイックアクションへのリンクが表示されます。
 
-**環境**&#x200B;カードには 3 つの環境のみ表示されます。 ![ ワークフローアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)**すべてを表示** をクリックして、プログラムのすべての環境を表示します。
+**環境**&#x200B;カードには 3 つの環境のみ表示されます。![ワークフローアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)「**すべて表示**」をクリックすると、プログラムのすべての環境が表示されます。
 
 詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md)も参照してください。
 
@@ -251,7 +251,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 **パイプライン**&#x200B;カードには、パイプラインの概要とクイックアクションへのリンクが表示されます。
 
-**パイプライン**&#x200B;カードには 3 つのパイプラインのみ表示されます。![ ワークフローアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)**すべてを表示** をクリックして、プログラムのすべてのパイプラインを表示します。
+**パイプライン**&#x200B;カードには 3 つのパイプラインのみ表示されます。![ワークフローアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)「**すべて表示**」をクリックすると、プログラムのすべてのパイプラインが表示されます。
 
 パイプラインの管理方法について詳しくは、[パイプラインの管理](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)も参照してください。
 

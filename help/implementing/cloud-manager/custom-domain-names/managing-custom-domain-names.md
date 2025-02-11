@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -33,9 +33,9 @@ Adobe Cloud Manager では、次の理由により、カスタムドメイン名
 
 1. ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左サイドメニューを表示します。
 
-1. **サービス** 見出しの下の ![ ソーシャルネットワークアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg)**ドメインマッピング** をクリックします。
+1. **サービス**&#x200B;見出しの下にある ![ソーシャルネットワークアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg)「**ドメインマッピング**」をクリックします。
 
-1. **ドメインマッピング** ページで、CDN を編集する行の最後にある ![ メニューアイコンを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+1. **ドメインマッピング**&#x200B;ページで、編集する CDN の行の末尾にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
 1. 「**編集**」をクリックします。
 

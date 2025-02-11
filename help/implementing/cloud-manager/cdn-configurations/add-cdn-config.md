@@ -8,7 +8,7 @@ exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
 source-git-commit: 70ee0ca9e7bb37abc6b82413fc02e37347893011
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 89%
 >
 >[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)と [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)をそれぞれ行いましたか？そうでない場合は、CDN 設定を追加する前に、これらの 2 つのタスクを完了する必要があります。
 
-[Adobe管理の CDN](https://www.aem.live/docs/byo-cdn-adobe-managed) も参照してください。
+[Adobeの管理による CDN](https://www.aem.live/docs/byo-cdn-adobe-managed) も参照してください。
 
 **CDN 設定を追加するには：**
 
@@ -33,8 +33,8 @@ ht-degree: 89%
 
    | ユースケース | ステップ |
    | --- | --- |
-   | Cloud Manager の&#x200B;*既存*&#x200B;の Edge Delivery サイトに CDN 設定を追加したいと考えている | 回答：左側のメニューの **サービス** で、![Web ページアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites** をクリックします。<br>b. Edge Delivery テーブルで、ドメインが関連付けられていない行の末尾にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。<br>c. 「**CDN を設定**」をクリックします。 |
-   | Cloud Manager に CDN 設定を追加したいと考えている | a.左側のメニューの **サービス** で、![ ソーシャルネットワークアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg)**ドメインマッピング** をクリックします。<br>b.ドメインマッピングページの右上隅付近にある「**追加**」をクリックします。 |
+   | Cloud Manager の&#x200B;*既存*&#x200B;の Edge Delivery サイトに CDN 設定を追加したいと考えている | a. 左側のサイドメニューの&#x200B;**サービス**&#x200B;で、![web ページアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg)「**Edge Delivery Sites**」をクリックします。<br>b. Edge Delivery テーブルで、ドメインが関連付けられていない行の末尾にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。<br>c. 「**CDN を設定**」をクリックします。 |
+   | Cloud Manager に CDN 設定を追加したいと考えている | 左側のサイドメニューの&#x200B;**サービス**&#x200B;で、![ソーシャルネットワークアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg)「**ドメインマッピング**」をクリックします。<br>b. ドメインマッピングページの右上隅付近にある「**追加**」をクリックします。 |
 
 1. **CDN を設定**&#x200B;ダイアログボックスの&#x200B;**接触チャネル**&#x200B;ドロップダウンリストで、次のいずれかを選択します。
 

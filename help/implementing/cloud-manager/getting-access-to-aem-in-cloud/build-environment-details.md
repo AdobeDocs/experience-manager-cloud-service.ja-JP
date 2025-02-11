@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: d5461217cfec894a922b2f476aabfc04df45d9d0
 workflow-type: tm+mt
 source-wordcount: '1488'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -92,7 +92,7 @@ Java 21 または Java 17 を使用したビルドに移行するには、まず
 
 ##### 一部の翻訳機能について {#translation-features}
 
-以下の機能は、Java 21 ランタイムにデプロイすると、正しく機能しない可能性があり、Adobeでは、2025 年初頭までに解決される予定です。
+Java 21 ランタイムにデプロイすると、次の機能が正しく機能しない可能性があります。アドビでは、2025年初頭までにこれらの問題を解決する予定です。
 
 * `XLIFF`（XML Localization Interchange File Format）は、人による翻訳を使用すると失敗します。
 * 新しい Java バージョンでの ロケールコンストラクタの変更により、`I18n`（国際化）では、言語ロケールのヘブライ語（`he`）、インドネシア語（`in`）、イディッシュ語（`yi`）が適切に処理されません。

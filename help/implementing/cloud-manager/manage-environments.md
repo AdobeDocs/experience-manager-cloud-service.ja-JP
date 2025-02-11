@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
 source-wordcount: '2374'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ ht-degree: 59%
 
 | 環境タイプ | 説明 |
 | --- | --- |
-| **実稼動環境とステージング環境** | 実稼動環境とステージング環境はペアとして使用でき、それぞれ実稼動およびテストのために使用されます。 ステージ環境でパフォーマンスとセキュリティのテストを実施します。 規模は実稼動と同じです。 |
-| **開発** | 開発環境は、開発およびテストのために構築でき、実稼動以外のパイプラインにのみ関連付けることができます。 開発環境は、ステージング環境や実稼動環境と同じ規模ではないので、パフォーマンスおよびセキュリティのテストの実行には使用しないでください。 |
-| **迅速な開発** | 迅速な開発環境（RDE）を使用すると、開発者は変更を迅速にデプロイしてレビューできます。 この機能により、ローカル開発環境で既に検証された機能のテストに必要な時間が短縮されます。 RDE の使用方法について詳しくは、[迅速な開発環境ドキュメント](/help/implementing/developing/introduction/rapid-development-environments.md)を参照してください。 |
+| **実稼動 + ステージ** | 実稼動環境とステージング環境はペアとして使用でき、それぞれ実稼動およびテストに使用されます。ステージ環境でパフォーマンスとセキュリティのテストを実施します。 規模は実稼動と同じです。 |
+| **開発** | 開発環境は、開発およびテストの目的で構築でき、実稼動以外のパイプラインにのみ関連付けることができます。開発環境は、ステージング環境や実稼動環境と同じ規模ではないので、パフォーマンスおよびセキュリティのテストの実行には使用しないでください。 |
+| **高速開発** | 高速開発環境（RDE）を使用すると、開発者は変更を迅速にデプロイしてレビューできます。この機能により、ローカル開発環境で既に検証済みの機能のテストに必要な時間が短縮されます。RDE の使用方法について詳しくは、[高速開発環境ドキュメント](/help/implementing/developing/introduction/rapid-development-environments.md)を参照してください。 |
 
-各環境の機能は、その環境の [ プログラム ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) で有効にしたソリューションによって異なります。
+各環境の機能は、その環境の[プログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)で有効になっているソリューションによって異なります。
 
 * [Sites](/help/overview/introduction.md)
 * [Assets](/help/assets/overview.md)
@@ -50,29 +50,29 @@ ht-degree: 59%
 
 1. 次のいずれかの操作を行います。
 
-   「**環境を追加**」オプションがグレー表示（無効）になっている場合は、権限が不足しているか、ライセンスされているリソースに依存している可能性があります。
+   「**環境を追加**」オプションがグレー表示（無効）になっている場合は、権限が不足しているか、ライセンス済みリソースに依存している場合があります。
 
-   * **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールの **環境** カードで、「**環境を追加**」をクリックします。
+   * **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、**環境**&#x200B;カードの「**環境を追加**」をクリックします。
 
    ![環境カード](assets/no-environments.png)
 
-   * 左側のパネルで ![ データアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**環境** をクリックし、環境ページの右上隅付近にある **環境を追加** をクリックします。
+   * 左側のサイドパネルで、![データアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)「**環境**」をクリックし、環境ページの右上隅近くにある「**環境を追加**」をクリックします。
 
      ![「環境」タブ](assets/environments-tab.png)
 
-1. **環境を追加** ダイアログボックスで以下を行います。
+1. **環境を追加**&#x200B;ダイアログボックスで、次の操作を行います。
 
-   * [**環境タイプ**](#environment-types) を選択します。 使用可能な環境または使用中の環境の数は、環境タイプ名の後ろの括弧内に表示されます。
-   * 環境 **名前** を入力します。 環境の作成後に環境名を変更することはできません。
-   * 環境のオプションの&#x200B;**説明**&#x200B;をオプションで入力します。
+   * 「[**環境タイプ**](#environment-types)」を選択します。使用可能な環境または使用中の環境の数は、環境タイプ名の後ろの括弧内に表示されます。
+   * 環境の&#x200B;**名前**&#x200B;を入力します。環境名は、環境の作成後に変更できません。
+   * 環境のオプションの&#x200B;**説明**&#x200B;を入力します。
    * **実稼動環境とステージング環境**&#x200B;を一緒に追加する場合は、実稼動環境とステージング環境の両方の名前と説明を入力する必要があります。
-   * ドロップダウンから「**プライマリ地域**」を選択します。 作成後にプライマリ地域を変更することはできません。 また、使用可能な使用権限に応じて、[ 複数の地域 ](#multiple-regions) を設定できます。
+   * ドロップダウンから「**プライマリ地域**」を選択します。プライマリ地域は作成後に変更できません。また、使用可能な権限によっては、[複数の地域](#multiple-regions)を設定できる場合があります。
 
    ![環境を追加ダイアログ](assets/add-environment2.png)
 
 1. 「**保存**」をクリックします。
 
-これで、**概要** ページの **環境** カードに新しい環境が表示されるようになりました。 新しい環境にパイプラインを設定できるようになりました。
+これで、**概要**&#x200B;ページの&#x200B;**環境**&#x200B;カードに新しい環境が表示されるようになりました。新しい環境にパイプラインを設定できるようになりました。
 
 ## 複数の公開地域 {#multiple-regions}
 
@@ -101,15 +101,15 @@ ht-degree: 59%
 
 追加の地域を指定しない場合は、[環境を作成した後でも指定できます。](#edit-regions)
 
-プログラムの[高度なネットワーク](/help/security/configuring-advanced-networking.md)をプロビジョニングする場合は、Cloud Manager API を使用して追加の公開地域を環境に追加する前に、このプロビジョニングを行うことをお勧めします。 そうしないと、追加の公開地域のトラフィックがメイン地域のプロキシを通過します。
+プログラムの[高度なネットワーク](/help/security/configuring-advanced-networking.md)をプロビジョニングする場合は、Cloud Manager API を使用して追加の公開地域を環境に追加する前に、このプロビジョニングを行うことをお勧めします。 そうしないと、追加の公開地域のトラフィックがプライマリ地域のプロキシを通過します。
 
 ### 複数の公開地域の編集 {#edit-regions}
 
 最初に追加の地域を指定しなかった場合、必要な権限があれば、環境を作成した後に指定できます。
 
-また、追加の公開地域を削除することもできます。 ただし、1 回のトランザクションで追加または削除できるのはリージョンのみです。 1 つの地域を追加し、1 つの地域を削除する必要がある場合は、まず追加して、変更を保存してから、削除します（または逆の順序）。
+また、追加の公開地域を削除することもできます。 ただし、1 つのトランザクションで行えるのは、地域の追加または削除のいずれかのみとなります。1 つの地域を追加し、1 つの地域を削除する必要がある場合は、まず追加して、変更を保存してから、削除します（または逆の順序）。
 
-1. プログラムの概要コンソールで、実稼動環境の ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、メニューから **編集** を選択します。
+1. プログラムのプログラム概要コンソールから、実稼動環境の ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、メニューの「**編集**」を選択します。
 
    ![環境を編集](assets/select-edit-environment.png)
 
@@ -123,22 +123,22 @@ ht-degree: 59%
 
 実稼動環境に対する変更は、実稼動環境とステージング環境の両方に適用されます。 複数の公開地域に対する変更を編集できるのは、実稼動環境のみです。
 
-プログラムの[高度なネットワーク](/help/security/configuring-advanced-networking.md)をプロビジョニングする場合は、追加の公開地域を環境に追加する前に、このプロビジョニングを行うことをお勧めします。 そうしないと、追加の公開地域のトラフィックがメイン地域のプロキシを通過します。
+プログラムの[高度なネットワーク](/help/security/configuring-advanced-networking.md)をプロビジョニングする場合は、追加の公開地域を環境に追加する前に、このプロビジョニングを行うことをお勧めします。 そうしないと、追加の公開地域のトラフィックがプライマリ地域のプロキシを通過します。
 
 ## 環境の詳細へのアクセス {#viewing-environment}
 
 
 1. 環境の詳細にアクセスするには、次のいずれかの操作を行います。
 
-   * **概要** ページの左側のメニューで、![ データアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**環境** をクリックします。
+   * **概要**&#x200B;ページの左側のサイドメニューで、![データアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)「**環境**」をクリックします。
 
    ![「環境」タブ](assets/environments-tab2.png)
 
-   * **環境** カードから、![ ワークフローアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)**すべて表示** をクリックします。
+   * **環境**&#x200B;カードから、![ワークフローアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)「**すべて表示**」をクリックします。
 
      ![「すべて表示」オプション](assets/environment-showall.png)
 
-   **環境** ページが開いて、プログラムのすべての環境が一覧表示されます。
+   **環境**&#x200B;ページが開いて、プログラムのすべての環境が一覧表示されます。
 
    ![「環境」タブ](assets/environments-tab2.png)
 
@@ -148,13 +148,13 @@ ht-degree: 59%
 
    ![環境の詳細](assets/environ-preview1.png)
 
-   * 目的とする環境の ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、**詳細を表示** をクリックします。
+   * 目的の環境の ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**詳細を表示**」をクリックします。
 
    ![環境の詳細を表示](assets/view-environment-details.png)
 
 >[!NOTE]
 >
->**環境**&#x200B;カードには 3 つの環境のみ表示されます。 カードの **すべて表示** をクリックすると、プログラムのすべての環境が表示されます。
+>**環境**&#x200B;カードには 3 つの環境のみ表示されます。 カードの「**すべて表示**」をクリックすると、プログラムのすべての環境が表示されます。
 
 ### プレビューサービスへのアクセス {#access-preview-service}
 
@@ -168,15 +168,15 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 
 必要な権限を持つユーザーは、プレビューサービスの URL を共有する前に、次の手順を完了して、URL に確実にアクセスできるようにする必要があります。
 
-1. 適切な IP許可リスト許可リストに加えるを作成してプレビューサービスに適用し、`Preview Default [<envId>]` の適用を直ちに解除します。
+1. 適切な IP 許可リストを作成してプレビューサービスに適用し、`Preview Default [<envId>]` 許可リストの適用を直ちに解除します。
 
-   詳しくは、[IP許可リストの適用と適用解除 ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) を参照してください。
+   詳しくは、[IP 許可リストの適用と適用解除](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)を参照してください。
 
-1. **IP許可リスト** 更新ワークフローを使用して、デフォルトの IP を削除し、必要な IP を追加します。 詳しくは、[IP許可リストの管理 ](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) を参照してください。
+1. **IP 許可リスト**&#x200B;の更新ワークフローを使用して、デフォルトの IP を削除し、必要な IP を追加します。詳しくは、[IP 許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)を参照してください。
 
-プレビューサービスへのアクセスをロック解除すると、プレビューサービス名の前にあるロックアイコンは表示されなくなります。
+プレビューサービスへのアクセスをロック解除すると、プレビューサービス名の前にあるロックアイコンは非表示になります。
 
-アクティブ化した後は、AEM内の **`Manage Publication`** ユーザーインターフェイスを使用して、コンテンツをプレビューサービスに公開できます。 詳しくは、[ コンテンツをプレビュー ](/help/sites-cloud/authoring/sites-console/previewing-content.md) を参照してください。
+アクティブ化した後は、AEM 内の、**`Manage Publication`** ユーザーインターフェイスを使用して、コンテンツをプレビューサービスに公開できます。詳しくは、[コンテンツのプレビュー](/help/sites-cloud/authoring/sites-console/previewing-content.md)を参照してください。
 
 >[!NOTE]
 >
@@ -188,32 +188,32 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 
 1. **概要**&#x200B;ページで、**環境**&#x200B;カードを探します。
 
-1. **環境** カードの **ステータス** 列には、設定された追加の公開地域で問題が発生したかどうかが反映されます。 「**情報**」アイコンをクリックして、地域の詳細を表示します。
+1. **環境**&#x200B;カードの&#x200B;**ステータス**&#x200B;列には、設定された追加の公開地域に問題があるかどうかが表示されます。「**情報**」アイコンをクリックして、地域の詳細を表示します。
 
    ![環境カード上の追加の公開地域のステータス情報](assets/additional-publish-region-status-environments-card.png)
 
 または、「**環境**」タブからも同じ情報にアクセスできます。
 
-1. **概要** ページで、![ データアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**環境** をクリックします。
+1. **概要**&#x200B;ページで、![データアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)「**環境**」をクリックします。
 
-1. **環境** ページの左側のメニューで、クエリする環境を選択します。
+1. 「**環境**」ページの左側のサイドメニューで、クエリを実行する環境を選択します。
 
-1. 環境を選択した後：
+1. 環境を選択したら、次の手順に従います。
 
-   * **環境情報** テーブルには、選択した環境用に設定されている地域が表示されます。
-   * **環境セグメント** テーブルの **ステータス** 列には、設定された追加の公開地域で問題が発生したかどうかが反映されます。 ステータスの上にポインタを合わせると、イシューの詳細が表示されます。
+   * **環境情報**&#x200B;テーブルには、選択した環境に対して設定されている地域が表示されます。
+   * **環境セグメント**&#x200B;テーブルの&#x200B;**ステータス**&#x200B;列には、設定された追加の公開地域に問題があるかどうかが表示されます。ステータスの上にポインタを合わせると、イシューの詳細が表示されます。
 
    ![「環境」タブの追加の公開地域のステータス情報](assets/additional-publish-region-status-environments-tab.png)
 
-追加の公開地域で問題が報告された場合は、しばらくお待ちください。 Cloud Managerは継続的にリージョンのリカバリを試み、いつでも使用可能になる可能性があります。 数時間後も問題が解決しない場合は、追加の公開地域を削除し、（同じ地域または別の地域の）公開地域を再度追加して、完全なデプロイメントをトリガーできます。
+追加の公開地域で問題が報告された場合は、しばらくお待ちください。Cloud Manager は継続的に地域の回復を試み、この地域はいつでも使用できるようになります。数時間後も問題が解決しない場合は、追加の公開地域を削除し、（同じ地域または別の地域の）公開地域を再度追加して、完全なデプロイメントをトリガーできます。
 
 追加のアクションを実行する前に、システムが自動的に回復するまでどれくらいの時間待つかは、その地域の障害がシステムに与える影響によって異なります。
 
-いずれにせよ、[ トラフィックは常にオンラインの最も近い地域にルーティングされます ](/help/operations/additional-publish-regions.md)。 引き続き問題が発生する場合は、アドビカスタマーケアにお問い合わせください。
+いずれの場合も、[トラフィックは、常にオンライン状態の最も近い地域にルーティングされます](/help/operations/additional-publish-regions.md)。引き続き問題が発生する場合は、アドビカスタマーケアにお問い合わせください。
 
 ## 環境の更新 {#updating-dev-environment}
 
-Adobeは、クラウドネイティブなサービスとして、実稼動プログラム内の開発環境、ステージング環境および実稼動環境の更新を自動的に管理します。
+クラウドネイティブなサービスとして、アドビでは実稼動プログラム内の開発環境、ステージング環境および実稼動環境の更新を自動的に管理します。
 
 ただし、サンドボックスプログラム内の環境の更新は、プログラム内で管理されます。 そのような環境で AEM の最新の公開バージョンが動作していない場合、プログラムの&#x200B;**概要**&#x200B;画面で&#x200B;**環境**&#x200B;カードのステータスには&#x200B;**アップデート利用可能**&#x200B;と表示されます。
 
@@ -223,7 +223,7 @@ Adobeは、クラウドネイティブなサービスとして、実稼動プロ
 
 パイプラインは、[AEM as a Cloud Service の環境にコードをデプロイ](deploy-code.md)する唯一の手段です。そのため、各パイプラインは特定の AEM バージョンに関連付けられています。
 
-パイプラインで最後にデプロイされたAEMよりも新しいバージョンの AEM をCloud Managerが検出すると、環境のステータスが **アップデート利用可能** と表示されます。
+パイプラインで前回デプロイされた AEM よりも新しいバージョンの AEM が Cloud Manager で検出された場合は、環境のステータスが&#x200B;**更新可能**&#x200B;と表示されます。
 
 したがって、更新プロセスは次の 2 つの手順で構成されます。
 
@@ -235,11 +235,11 @@ Adobeは、クラウドネイティブなサービスとして、実稼動プロ
 >[!NOTE]
 > 2024年の時点では、開発インスタンスと一部のサンドボックスプログラムは既に自動的に更新されているので、それらの更新を手動で管理する必要はありません。 この移行の結果、開発インスタンスの環境を手動で更新するオプションを、_一部_&#x200B;のプログラムで使用できない場合があります。
 
-特定の開発環境とサンドボックス環境では、**更新** オプションを **環境** カードで使用できます。 環境の横にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックして **更新** にアクセスします。
+「**更新**」オプションは、特定の開発環境およびサンドボックス環境の&#x200B;**環境**&#x200B;カードで使用できます。**更新**&#x200B;にアクセスするには、環境の横にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
-![環境カードの「アップデート」オプション](assets/environ-update2.png)
+![環境カードの「更新」オプション](assets/environ-update2.png)
 
-このオプションは、プログラムの「**環境**」タブをクリックし、環境の ![ その他のアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックしても使用できます。
+このオプションは、プログラムの「**環境**」タブをクリックした後、環境の ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックしても使用できます。
 
 ![「環境」タブの「更新」オプション](assets/environ-update3.png)
 
@@ -247,25 +247,25 @@ Adobeは、クラウドネイティブなサービスとして、実稼動プロ
 
 パイプラインのバージョンが公開済みの最新の AEM バージョンに更新されたら、ユーザーは、関連するパイプラインを実行して最新バージョンの AEM を環境にデプロイするように促されます。
 
-![ パイプラインを実行して環境を更新するように求めるプロンプトの例 ](assets/update-run-pipeline.png)
+![環境を更新するパイプラインを実行するプロンプトの例](assets/update-run-pipeline.png)
 
 「**更新**」オプションの動作は、プログラムの設定と現在の状態によって異なります。
 
-| State | 「更新」オプション… |
+| 状態 | 「更新」オプション... |
 | --- | --- |
-| パイプラインは既に更新されています | パイプラインの実行をユーザーに促すプロンプトを表示します。 |
-| パイプラインは既に更新中です | 更新が既に実行中であることをユーザーに通知します。 |
-| パイプラインが存在しません | は、ユーザーに作成を求めます。 |
+| パイプラインが既に更新されている | ユーザーにパイプラインの実行を求めるプロンプトが表示されます。 |
+| パイプラインが既に更新中である | 更新が既に実行中であることをユーザーに通知します。 |
+| パイプラインが存在しない | ユーザーに作成を求めるプロンプトが表示されます。 |
 
 ## 開発環境の削除 {#deleting-environment}
 
 **デプロイメントマネージャー**&#x200B;または&#x200B;**ビジネスオーナー**&#x200B;の役割を持つユーザーは、開発環境を削除できます。
 
-**環境** カードのプログラムの **概要** 画面で、削除する開発環境の ![ その他のアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+**環境**&#x200B;カードのプログラムの&#x200B;**概要**&#x200B;画面で、削除する開発環境の ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
-![ 「削除」オプション ](assets/environ-delete.png)
+![「削除」オプション](assets/environ-delete.png)
 
-「**削除**」オプションは、プログラムの **概要** ウィンドウの「**環境**」タブでも使用できます。 環境の ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**削除**」を選択します。
+「**削除**」オプションは、プログラムの&#x200B;**概要**&#x200B;ウィンドウの「**環境**」タブでも使用できます。環境の ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**削除**」を選択します。
 
 ![「環境」タブの「削除」オプション](assets/environ-delete2.png)
 
@@ -282,31 +282,31 @@ Adobeは、クラウドネイティブなサービスとして、実稼動プロ
 
 >[!TIP]
 >
->AEM as a Cloud Serviceのチームおよび製品プロファイルでライセンス取得済みの製品ソリューションへのアクセスを許可および制限する方法については ](/help/onboarding/aem-cs-team-product-profiles.md)[AEM as a Cloud ServiceのチームおよびAdobeプロファイル } を参照してください。
+>AEM as a Cloud Service チームおよび製品プロファイルで、ライセンス取得済みのアドビソリューションに対するアクセスを許可および制限する方法について詳しくは、[AEM as a Cloud Service チームおよび製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md)を参照してください。
 
 ## Developer Console へのアクセス {#accessing-developer-console}
 
-1. **環境** カードで ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックしてから、**Developer Console** をクリックします。
+1. **環境**&#x200B;カードから、![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**Developer Console**」をクリックします。
 
 ブラウザーに新しいタブが開き、**Developer Console** へのログオンページが表示されます。
 
 ![Developer Console へのログイン](assets/environ-devconsole.png)
 
-**Developer Console** にアクセスできるのは、**開発者**&#x200B;の役割を持つユーザーだけです。 ただし、サンドボックスプログラムの場合は、そのサンドボックスプログラムにアクセスできるユーザーは誰でも、**0}Developer Console} にアクセスできます。**
+**Developer Console** にアクセスできるのは、**開発者**&#x200B;の役割を持つユーザーだけです。 ただし、サンドボックスプログラムの場合は、そのサンドボックスプログラムにアクセスできるユーザーは誰でも、**Developer Console** にアクセスできます。
 
-詳しくは、[サンドボックス環境の休止と休止解除](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)を参照してください。
+詳しくは、[サンドボックス環境の休止と休止解除](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)を参照してください。
 
-このオプションは、**概要** ウィンドウの **環境** タブで、個々の環境の ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックしても使用できます。
+このオプションは、個々の環境の ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックする際に&#x200B;**概要**&#x200B;ウィンドウの「**環境**」タブで使用できます。
 
 ## ローカルログイン {#login-locally}
 
 1. 次のいずれかの操作を行います。
 
-   * **環境** カードで ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、**ローカルログイン** をクリックします。
+   * **環境**&#x200B;カードから、![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**ローカルログイン**」をクリックします。
 
      ![ローカルログイン](assets/environ-login-locally.png)
 
-   * 左側のパネルから、![ データアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**環境** をクリックします。 **環境** ページで、「詳細」アイコン ![ をクリックし ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 「**ローカルログイン**」をクリックします。
+   * 左側のサイドパネルから、![データアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)「**環境**」をクリックします。**環境**&#x200B;ページで、![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**ローカルログイン**」をクリックします。
 
      ![「環境」タブからのローカルログイン](assets/environ-login-locally-2.png)
 
@@ -320,13 +320,13 @@ Cloud Manager では、Sites プログラムのパブリッシュサービスと
 
 ## IP 許可リストの管理 {#manage-ip-allow-lists}
 
-Cloud Managerでは、Sites プログラムのオーサーサービス、パブリッシュサービスおよびプレビューサービスで IP 許可リストがサポートされています。
+Cloud Manager では、Sites プログラムのオーサリングサービス、パブリッシュサービス、プレビューサービスで IP 許可リストがサポートされています。
 
-IP許可リストを管理するには、プログラムの ![ 概要 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) ページの **** データアイコン **環境** ページに移動します。 個々の環境をクリックすると、その詳細を管理できます。
+IP 許可リストを管理するには、プログラムの&#x200B;**概要**&#x200B;ページの ![データアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **環境**&#x200B;ページに移動します。個々の環境をクリックすると、その詳細を管理できます。
 
 ### IP 許可リストの適用 {#apply-ip-allow-list}
 
-IP許可リストを適用すると、定義されたすべての IP 範囲が環境内のオーサーサービスまたはパブリッシュサービスにリンクされます。
+IP 許可リストを適用すると、定義されたすべての IP 範囲が、環境のオーサーサービスまたはパブリッシュサービスにリンクされます。
 
 >[!TIP]
 >

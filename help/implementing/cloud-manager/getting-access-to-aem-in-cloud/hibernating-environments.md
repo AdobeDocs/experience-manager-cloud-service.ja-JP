@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
 source-wordcount: '698'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 95%
 
 サンドボックスプログラム環境が休止モードに入るまで、数分かかる場合があります。休止中、データは保持されます。
 
-### サンドボックスプログラム環境の手動休止 {#using-manual-hibernation}
+### サンドボックスプログラム環境を手動で休止状態にする {#using-manual-hibernation}
 
 Developer Console からサンドボックスプログラムを手動で休止解除できます。サンドボックスプログラム用の開発者コンソールへのアクセスは、Cloud Manager のユーザーであれば誰でも利用できます。
 
@@ -60,7 +60,7 @@ Developer Console で、**ポッド**&#x200B;ドロップダウンリストの�
 
 ![休止状態にする環境のリスト](assets/hibernate-1b.png)
 
-## サンドボックスプログラムをDeveloper Consoleから手動で休止解除する {#de-hibernation-introduction}
+## Developer Console からサンドボックスプログラムを手動で休止解除する {#de-hibernation-introduction}
 
 Developer Console からサンドボックスプログラムを手動で休止解除できます。
 
@@ -68,7 +68,7 @@ Developer Console からサンドボックスプログラムを手動で休止�
 >
 >**開発者**&#x200B;の役割を持つユーザーは、サンドボックスプログラム環境の休止状態を解除できます。
 
-**Developer Consoleからサンドボックスプログラムの休止状態を手動で解除するには：**
+**Developer Console からサンドボックスプログラムを手動で休止解除するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 

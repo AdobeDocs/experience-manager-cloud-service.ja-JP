@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
 source-wordcount: '1818'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ AEM as a Cloud Service 用の New Relic One APM には、多くの機能があ�
 
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、New Relic One ユーザーを管理するプログラムをクリックします。
 
-1. プログラムの概要ページの **環境** カードの下部にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**New Relicをアクティベート**」を選択します。
+1. プログラムの概要ページの&#x200B;**環境**&#x200B;カードの下部にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**New Relic をアクティベート**」を選択します。
 
    ![ユーザーを管理](assets/newrelic-activate-sub-account.png)
 
@@ -71,7 +71,7 @@ AEM as a Cloud Service 用の New Relic One APM には、多くの機能があ�
 
 1. New Relic One ユーザーを管理するプログラムをクリックします。
 
-1. プログラムの概要ページの **環境** カードの下部にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**ユーザーを管理**」を選択します。
+1. プログラムの概要ページの&#x200B;**環境**&#x200B;カードの下部にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**ユーザーを管理**」を選択します。
 
    ![ユーザーを管理](assets/newrelic-manage-users.png)
 
@@ -121,7 +121,7 @@ New Relic から確認メールが届かない場合は、[トラブルシュー
 
 1. New Relic One にアクセスするプログラムをクリックします。
 
-1. プログラムの概要ページの **環境** カードの下部にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**New Relicを開く**」を選択します。
+1. プログラムの概要ページの&#x200B;**環境**&#x200B;カードの下部にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**New Relic を開く**」を選択します。
 
    ![ユーザーを管理](assets/newrelic-access.png)
 

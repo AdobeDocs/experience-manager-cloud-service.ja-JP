@@ -8,7 +8,7 @@ exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
 workflow-type: tm+mt
 source-wordcount: '2435'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -62,9 +62,9 @@ A credit card statement can be created using Communications APIs. This sample st
 ![PDF ドキュメントの作成](assets/outPutPDF_popup.png)
 図：PDF ドキュメントを作成するための一般的なワークフロー
 
-ドキュメント生成 API は、生成されたPDFドキュメントを返します。 また、オプションで、生成されたPDFを Azure Blob Storage にアップロードすることもできます。
+ドキュメント生成 API は、生成された PDF ドキュメントを返します。また、オプションで、生成された PDF を Azure Blob Storage にアップロードすることもできます。
 
-<span class="preview"> Document Generation API を使用して生成されたPDFを Azure Blob Storage にアップロードする機能は、[ 早期導入プログラム ](/help/forms/early-access-ea-features.md) の下にあります。 早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
+<span class="preview">ドキュメント生成 API を使用して生成された PDF を Azure Blob Storage 機能にアップロードすることは、[早期導入プログラム](/help/forms/early-access-ea-features.md)で行うことができます。早期導入プログラムに登録し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
 
 
 ### PostScript（PS）、Printer Command Language（PCL）、Zebra Printing Language（ZPL）ドキュメントの作成 {#create-PS-PCL-ZPL-documents}
