@@ -7,7 +7,7 @@ exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
 source-wordcount: '498'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -48,12 +48,12 @@ ht-degree: 92%
 
    | 手順番号 | 説明 |
    | - | - |
-   | **1** | 「**リポジトリ URL**」フィールドにリストされている Git リポジトリの `main` 分岐に、パスと名前が `well-known/adobe/cloudmanager-challenge.txt` のファイルを追加します。場所のパスの先頭にピリオドを追加&#x200B;*しない*&#x200B;でください。<br> 必要に応じて、![ コピーアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) をクリックして、パスをクリップボードにコピーします。 |
-   | **2** | 手順 2 のテキストフィールドに表示されたコードを、手順 1 で作成したファイルに追加します。<br> 必要に応じて、![ コピーアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) をクリックして、コードをクリップボードにコピーします。 |
+   | **1** | 「**リポジトリ URL**」フィールドにリストされている Git リポジトリの `main` 分岐に、パスと名前が `well-known/adobe/cloudmanager-challenge.txt` のファイルを追加します。場所のパスの先頭にピリオドを追加&#x200B;*しない*&#x200B;でください。<br>必要に応じて、![コピーアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) をクリックして、パスをクリップボードにコピーします。 |
+   | **2** | 手順 2 のテキストフィールドに表示されたコードを、手順 1 で作成したファイルに追加します。<br>必要に応じて、![コピーアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) をクリックして、コードをクリップボードにコピーします。 |
    | **3** | 作成した変更のプルリクエストを Git リポジトリに作成し、`main` に結合してコードをコミットします。 |
 
 1. 「**確認**」をクリックします。
 
 リポジトリを検証すると、Edge Delivery サイトテーブル内のそのステータスが更新されます。内側に白色のチェックマークが付いた緑色の円は、ステータスを示します。
 
-同じテーブルで、「![Edge Delivery サイトに関する情報アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) をクリックして、サイトの詳細を表示します。 この情報には、検証済みのリポジトリ URL と、プレビューおよび実稼動 web サイトの URL が含まれます。
+同じ表で、![Edge Delivery サイトに関する情報アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) をクリックして、サイトの詳細を表示します。この情報には、検証済みのリポジトリ URL と、プレビューおよび実稼動 web サイトの URL が含まれます。

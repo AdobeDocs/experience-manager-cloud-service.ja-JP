@@ -7,7 +7,7 @@ exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
 source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -53,12 +53,12 @@ Edge Delivery Services サイトを削除すると、関連付けられている
 1. 次のいずれかの操作を行います。
 
    * **プログラムの概要**&#x200B;ページで、「**Edge Delivery**」タブをクリックします。Edge Delivery サイトテーブルで、削除するサイトの行の末尾にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
-![Edge Delivery サイトを削除アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)**削除** をクリックし、もう一度 **削除** をクリックしてサイトの削除を確定します。
+![Edge Delivery サイトを削除アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)「**削除**」をクリックし、もう一度「**削除**」をクリックして、サイトの削除を確認します。
 
-     ![「Edge Delivery」タブから Edge Delivery サイトを追加する](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
+     ![「Edge Delivery」タブから Edge Delivery サイトを追加](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
 
-   * ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左側のサイドメニューを表示します。**サービス** 見出しの下の ![Edge Delivery Sites の web ページアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites** をクリックします。
-Edge Delivery サイトテーブルで、削除するサイトの行の末尾にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。![Edge Delivery サイトを削除アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)**削除** をクリックし、もう一度 **削除** をクリックしてサイトの削除を確定します。
+   * ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左側のサイドメニューを表示します。**サービス**&#x200B;見出しの下にある ![Edge Delivery サイトの web ページアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg)「**Edge Delivery サイト**」をクリックします。
+Edge Delivery サイトテーブルで、削除するサイトの行の末尾にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。![Edge Delivery サイトを削除アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)「**削除**」をクリックし、もう一度「**削除**」をクリックして、サイトの削除を確認します。
 
      ![「Edge Delivery サイト」ボタンからの Edge Delivery サイトの追加](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 

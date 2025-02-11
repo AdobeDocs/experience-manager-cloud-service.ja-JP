@@ -656,7 +656,7 @@ ht-degree: 99%
       + [レポートの管理](/help/assets/manage-reports-assets-view.md)
       + [再処理](/help/assets/reprocessing-assets-view.md)
       + [タグの管理](/help/assets/tagging-management-assets-view.md)
-      + [コンテンツ資格情報](/help/assets/content-credentials.md)
+      + [Content Credentials](/help/assets/content-credentials.md)
       + [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
       + [AEM Assets ビュー UI 拡張機能](/help/assets/aem-assets-view-ui-extensibility.md)
    + コンテンツハブ {#content-hub}
@@ -708,7 +708,7 @@ ht-degree: 99%
       + [as a Cloud Service の移行元 [!DNL AEM 6.5 Forms] または以前のバージョン [!DNL AEM Forms] ](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
       + [アダプティブフォーム、PDF フォームおよびその他のアセットの読み込み、書き出し、整理](/help/forms/import-export-forms-templates.md)
-      + [「公開を管理」を使用したPublish アダプティブForms](/help/forms/manage-publication.md)
+      + [「公開を管理」を使用したアダプティブフォームの公開](/help/forms/manage-publication.md)
    + はじめに {#getting-started-forms}
       + [ユースケースと開発環境の設定](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [ローン申し込みフォームの作成](/help/forms/create-adaptive-form-tutorial.md)
@@ -1028,7 +1028,7 @@ ht-degree: 99%
       + WYSIWYG {#universal-editor}
          + [概要 - Forms の Edge Delivery Services のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [はじめに](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [ ルールエディターを使用したへのルールの追加 ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [ルールエディターを使用したルールの追加](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
       + 機能 {#advanced-features-edge-delivery-services-forms}
          + [フォームフラグメントの使用](/help/edge/docs/forms/form-fragments.md)
          + [繰り返し可能なセクションをフォームに追加する](/help/edge/docs/forms/repeatable-forms.md)
