@@ -5,16 +5,28 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 96%
+source-wordcount: '1377'
+ht-degree: 88%
 
 ---
 
+
 # レイアウトコンテナおよびレイアウトモードの設定 {#configuring-layout-container-and-layout-mode}
 
-[レスポンシブレイアウト](/help/sites-cloud/authoring/page-editor/responsive-layout.md)は、[レスポンシブ web デザイン](https://en.wikipedia.org/wiki/Responsive_web_design)を実現するためのメカニズムです。これにより、コンテンツ作成者は、ユーザーが使用するデバイスのレイアウトとサイズに応じて web ページを作成できます。
+コンテンツ作成者がレスポンシブレイアウトを使用できるように、レイアウトコンテナとレイアウトモードを設定する方法について説明します。
+
+>[!TIP]
+>
+>このドキュメントでは、レスポンシブ web デザインをサポートするようにサイト管理者がレイアウトコンテナを設定する方法について説明します。 その他のリソースを利用できます。
+>
+>* コンテンツ作成者がコンテンツページでレスポンシブデザイン機能を使用する方法の詳細については、ドキュメント [ レスポンシブレイアウト ](/help/sites-cloud/authoring/page-editor/responsive-layout.md) を参照してください。
+>* 開発者向けに、レイアウトコンテナとレスポンシブグリッドの詳細については、[ レスポンシブデザインドキュメント ](/help/implementing/developing/introduction/responsive-design.md) に説明されています。このドキュメントでは、サイトをデザインする際にレイアウトコンテナとレスポンシブグリッドを使用するためのヒントが提供されています。
+
+## 概要 {#overview}
+
+レスポンシブレイアウトは、[ レスポンシブ web デザイン ](https://en.wikipedia.org/wiki/Responsive_web_design) を実現するためのメカニズムです。 これにより、コンテンツ作成者は、ユーザーが使用するデバイスのレイアウトとサイズに応じて web ページを作成できます。
 
 AEM は、次のメカニズムを組み合わせて使用することにより、ページのレスポンシブレイアウトを実現します。
 
@@ -229,3 +241,9 @@ AEM では、必要な CSS の一部の生成に LESS を使用するため、�
 ### レイアウトコンテナのグリッドを設定する {#configure-the-grid-of-the-layout-container}
 
 レイアウトコンテナの特定のインスタンスごとに使用可能な列の数を設定するには [ ページテンプレートを編集します ](/help/sites-cloud/authoring/page-editor/templates.md)。
+
+### ネストされたレスポンシブグリッド {#nested-responsive-grids}
+
+Adobeが推奨するベストプラクティスは、構造をできるだけ平らにすることです。
+
+ネストされたレスポンシブグリッドの使用が避けられない場合は、開発者用ドキュメント [ レスポンシブデザイン ](/help/implementing/developing/introduction/responsive-design.md#nested-responsive-grids) を参照してください。

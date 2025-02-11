@@ -5,14 +5,14 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 4cec40947f1b50dd627321cabfbe43033a224f8b
-workflow-type: ht
-source-wordcount: '1720'
-ht-degree: 100%
+source-git-commit: 2f4c5db2b40d55e2e46e14cb5309754969b5bdea
+workflow-type: tm+mt
+source-wordcount: '1693'
+ht-degree: 83%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] HTTP API {#assets-http-api}
+# [!DNL Adobe Experience Manager Assets] HTTP API でのデジタルアセットの管理{#assets-http-api}
 
 | [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 ## 概要 {#overview}
 
-[!DNL Assets] HTTP API を使用すれば、デジタルアセット（メタデータ、レンディション、コメントのほか、[!DNL Experience Manager] コンテンツフラグメントを使用した構造化コンテンツも含む）に対して作成、読み取り、更新、削除（CRUD）操作を実行できます。この API は `/api/assets` で公開されており、REST API として実装されています。[コンテンツフラグメントをサポート](/help/assets/content-fragments/assets-api-content-fragments.md)しています。
+AEM [!DNL Assets] HTTP API を使用すると、/`api/assets` の REST インターフェイスを介して、デジタルアセットに対する CRUD （作成、読み取り、更新、削除）操作を有効にできます。 これらの操作は、アセットのメタデータ、レンディションおよびコメントに適用されます。 [コンテンツフラグメントをサポート](/help/assets/content-fragments/assets-api-content-fragments.md)しています。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 ## コンテンツフラグメント {#content-fragments}
 
-[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)は特殊なタイプのアセットです。テキスト、数値、日付などの構造化データにアクセスするために使用できます。`standard` アセット（画像やドキュメントなど）とはいくつかの違いがあるので、コンテンツフラグメントの処理にはいくつかの追加ルールが適用されます。
+[ コンテンツフラグメント ](/help/assets/content-fragments/content-fragments.md) は、テキスト、数値、日付を格納する構造化アセットです。 `standard` アセット（画像やドキュメントなど）とはいくつかの違いがあるので、コンテンツフラグメントの処理にはいくつかの追加ルールが適用されます。
 
 詳しくは、[ [!DNL Experience Manager Assets]  HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)を参照してください。
 
@@ -55,7 +55,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 ## データモデル {#data-model}
 
-[!DNL Assets] HTTP API は、フォルダーとアセット（標準アセット用）という 2 つの主要要素を公開します。さらに、コンテンツフラグメント内の構造化コンテンツを記述するカスタムデータモデルに対する詳細な要素が公開されます。詳しくは、[コンテンツフラグメントのデータモデル](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)を参照してください。
+[!DNL Assets] HTTP API は、主にフォルダーと標準アセットという 2 つの要素を公開します。 また、コンテンツフラグメントで使用するカスタムデータモデルの詳細な要素も提供します。 詳しくは、コンテンツフラグメントのデータモデルを参照してください。 詳しくは、[コンテンツフラグメントのデータモデル](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)を参照してください。
 
 >[!NOTE]
 >
@@ -63,14 +63,14 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 ### フォルダー {#folders}
 
-フォルダーは、従来のファイルシステムにおけるディレクトリに似ています。フォルダーには、アセット、フォルダーのみ、またはフォルダーとアセットを含めることができます。フォルダーには、以下のコンポーネントがあります。
+フォルダーは、従来のファイルシステムにおけるディレクトリに似ています。フォルダーには、アセット、サブフォルダーまたはその両方を含めることができます。 フォルダーには、以下のコンポーネントがあります。
 
 **エンティティ**：フォルダーのエンティティはフォルダーの子要素で、フォルダーまたはアセットです。
 
 **プロパティ**：
 
-* `name` はフォルダーの名前です。これは、URL パスの最後のセグメント（拡張子を除く）と同じです。
-* `title` は名前の代わりに表示できるフォルダータイトル（オプション）です。
+* `name`：フォルダーの名前（拡張子を除いた URL パスの最後のセグメント）。
+* `title`：フォルダー名の代わりに表示されるオプションのタイトルです。
 
 >[!NOTE]
 >
@@ -78,18 +78,18 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 **リンク**&#x200B;フォルダーは、次の 3 つのリンクを公開します。
 
-* `self`：自分自身へのリンク。
+* `self`：フォルダー自体へのリンク。
 * `parent`：親フォルダーへのリンク。
-* `thumbnail`：（オプション）フォルダーのサムネール画像へのリンク。
+* `thumbnail` （任意）：フォルダーのサムネール画像へのリンク。
 
 ### Assets {#assets}
 
 [!DNL Experience Manager] では、アセットには次の要素が含まれています。
 
-* アセットのプロパティとメタデータ
-* アセットの当初アップロードされたバイナリファイル。
-* 設定に応じた複数のレンディション。サイズの異なる画像、エンコーディングが異なるビデオ、PDF または [!DNL Adobe InDesign] ファイルから抽出したページなどがあります。
-* コメント（オプション）
+* **プロパティとメタデータ：** アセットに関する識別情報。
+* **バイナリファイル：** 最初にアップロードされたファイル。
+* **レンディション：** 設定された複数のレンディション（様々なサイズの画像、異なるビデオエンコーディング、PDF/Adobe InDesign ファイルから抽出されたページなど）。
+* **コメント（任意）:** ユーザーが指定した備考。
 
 コンテンツフラグメントの要素については、[AEM Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)を参照してください。
 
@@ -173,7 +173,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 ## アセットの作成 {#create-an-asset}
 
-アセットの作成方法については、[アセットのアップロード](developer-reference-material-apis.md)を参照してください。HTTP API を使用してアセットを作成することはできません。
+この HTTP API 経由でのアセットの作成はサポートされていません。 アセット作成には、[ アセットアップロード ](developer-reference-material-apis.md) API を使用します。
 
 ## アセットバイナリの更新 {#update-asset-binary}
 
@@ -181,7 +181,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 ## アセットのメタデータの更新 {#update-asset-metadata}
 
-アセットメタデータのプロパティを更新します。`dc:` 名前空間内のプロパティを更新すると、API は `jcr` 名前空間内の同じプロパティをアップデートします。API は 2 つの名前空間内のプロパティを同期させません。
+この操作は、アセットのメタデータを更新します。 `dc:` 名前空間のプロパティを更新すると、対応する `jcr:` プロパティが更新されます。 ただし、API は、2 つの名前空間の下のプロパティを同期しません。
 
 **リクエスト**：`PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
@@ -196,7 +196,10 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 アセットのレンディションを作成します。リクエストパラメーター名が指定されない場合、ファイル名がレンディション名として使用されます。
 
-**パラメーター**：パラメーターは `name`（レンディションの名前）と `file`（ファイル参照）です。
+**パラメーター**：パラメーターは次のとおりです。
+
+`name`：レンディション名。
+`file`：参照としてのレンディションのバイナリファイル。
 
 **リクエスト**
 
@@ -292,9 +295,9 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 ## ヒント、ベストプラクティス、制限事項 {#tips-limitations}
 
-* [!UICONTROL オフタイム]の経過後、アセットとそのレンディションは、[!DNL Assets] Web インターフェイスでも HTTP API でも使用できません。[!UICONTROL オンタイム]が未来の場合、または[!UICONTROL オフタイム]が過去の場合、API は 404 エラーメッセージを返します。
+* [!UICONTROL  オフタイム ] に達すると、[!DNL Assets] Web インターフェイスと HTTP API を介してAssetsとそのレンディションが使用できなくなります。 [!UICONTROL  オンタイム ] が未来の時間である場合、または [!UICONTROL  オフタイム ] が過去の時間である場合、API は 404 エラーを返します。
 
-* Assets HTTP API は完全なメタデータを返しません。名前空間はハードコードされ、これらの名前空間のみが返されます。完全なメタデータについては、アセットパス `/jcr_content/metadata.json` を参照してください。
+* Assets HTTP API は、メタデータのサブセットのみを返します。 名前空間はハードコードされ、これらの名前空間のみが返されます。完全なメタデータについては、アセットパス `/jcr_content/metadata.json` を参照してください。
 
 * API を使用して更新された場合、フォルダーまたはアセットの一部のプロパティは、異なるプレフィックスにマップされます。`jcr:title`、`jcr:description`、`jcr:language` の `jcr` プレフィックスは `dc` プレフィックスに置き換えられます。したがって、返された JSON コードで、`dc:title`、`dc:description` にはそれぞれ `jcr:title`、`jcr:description` の値が含まれています。
 
