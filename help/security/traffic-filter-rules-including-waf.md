@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4049'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 98%
 
 例えば、Apache レイヤーでは、お客様が [Dispatcher モジュール](https://experienceleague.adobe.com/ja/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)または [ModSecurity](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) を設定して、特定のコンテンツへのアクセスを制限できます。
 
-この記事で説明しているように、Cloud Managerの [config パイプライン ](/help/operations/config-pipeline.md) を使用して、トラフィックフィルタールールをAdobe管理 CDN にデプロイできます。 IP アドレス、パス、ヘッダーなどのプロパティに基づくトラフィックフィルタールールおよびレート制限の設定に基づくルールに加えて、お客様は、WAF ルールと呼ばれる強力なトラフィックフィルタールールのサブカテゴリをライセンスできます。
+この記事で説明するように、トラフィックフィルタールールは、Cloud Manager の[設定パイプライン](/help/operations/config-pipeline.md)を使用して、アドビが管理する CDN にデプロイできます。IP アドレス、パス、ヘッダーなどのプロパティに基づくトラフィックフィルタールールおよびレート制限の設定に基づくルールに加えて、お客様は、WAF ルールと呼ばれる強力なトラフィックフィルタールールのサブカテゴリをライセンスできます。
 
 ## 推奨プロセス {#suggested-process}
 
@@ -105,11 +105,11 @@ ht-degree: 98%
 
 1. WAF ルールにライセンスが付与されている場合は、新規および既存のプログラムシナリオの両方について、以下で説明するように、Cloud Manager で機能を有効にする必要があります。
 
-   1. 新しいプログラムでWAFを設定するには、「実稼動プログラムを追加 [ する際に、「{ セキュリティ **」タブの** 0}WAF-DDOS 対策 **」チェックボックスをオンに ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) ます。**
+   1. 新しいプログラムで WAF を設定するには、[実稼動プログラムを追加](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)する際に「**セキュリティ**」タブの「**WAF-DDOS 保護**」チェックボックスをオンにします。
 
    1. 既存のプログラムで WAF を設定するには、[プログラムを編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)し、任意の時点で「**セキュリティ**」タブで「**WAF-DDOS**」オプションをオフまたはオンにします。
 
-1. [config パイプラインの記事 ](/help/operations/config-pipeline.md#managing-in-cloud-manager) に記載されているように、Cloud Managerで config パイプラインを作成します。 パイプラインは、`cdn.yaml` ファイルが下に配置された最上位の `config` フォルダーを参照します。詳しくは、[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md#folder-structure) を参照してください。
+1. [設定パイプラインの記事](/help/operations/config-pipeline.md#managing-in-cloud-manager)の説明に従って、Cloud Manager で設定パイプラインを作成します。パイプラインは、`cdn.yaml` ファイルが下の任意の場所に配置された最上位レベルの `config` フォルダーを参照します。詳しくは、[設定パイプラインの使用](/help/operations/config-pipeline.md#folder-structure)を参照してください。
 
 ## トラフィックフィルタールールの構文 {#rules-syntax}
 
