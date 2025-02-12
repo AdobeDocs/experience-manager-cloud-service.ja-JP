@@ -3,7 +3,8 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.6.0 リリー�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.6.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
+exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
+source-git-commit: 6d548f10caa32bb5a7a6b0afe762f60058eca2fe
 workflow-type: tm+mt
 source-wordcount: '1972'
 ht-degree: 100%
@@ -230,7 +231,7 @@ AEM 6.5 と同様に、Apache／Dispatcher は、web 階層パイプラインの
 
 ## [!DNL Experience Manager] ガイド {#guides}
 
-Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0)を参照してください。
+Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 

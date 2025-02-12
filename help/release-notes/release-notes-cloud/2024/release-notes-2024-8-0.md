@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.8.0 リ�
 feature: Release Information
 role: Admin
 exl-id: dd1d4b8f-8331-4e97-a754-37e720974db6
-source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
+source-git-commit: 61b40acf4f51c16a694b7c3b13ee1c480670ee3f
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 100%
@@ -99,7 +99,7 @@ Assets as a Cloud Service では、既存の PSD ファイルのサポートに�
 
 AEM Forms 早期アクセスプログラムでは、最先端のイノベーションに排他的にアクセスし、その開発に貢献できるユニークな機会を提供します。
 
-このリリースノートでは、現在のリリースで提供されるイノベーションのリストを示します。早期アクセスプログラムで利用可能なイノベーションの完全なリストについては、[AEM Forms 早期アクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
+このリリースノートでは、現在のリリースで提供されるイノベーションのリストを示します。 早期アクセスプログラムで利用可能なイノベーションの完全なリストについては、[AEM Forms 早期アクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
 
 #### AEM Forms AI アシスタント
 
@@ -146,10 +146,9 @@ AEM 6.5 と同様に、Apache／Dispatcher は、web 階層パイプラインの
 
 アドビが管理する CDN で、エッジレベルの動的 web コンテンツアセンブリ用のマークアップ言語である[エッジサイドインクルード（ESI）](/help/implementing/dispatcher/edge-side-includes.md)がサポートされるようになりました。ESI スニペットを含め、より大きい TTL で HTML ページ全体を CDN にキャッシュしながら、より頻繁なアップデート（小さい TTL）を必要とする小さなセクションを、接触チャネルから頻繁に取得できます。<!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-
 ## [!DNL Experience Manager] ガイド {#guides}
 
-Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0)を参照してください。
+Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 

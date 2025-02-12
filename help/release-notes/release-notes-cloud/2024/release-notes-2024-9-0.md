@@ -3,7 +3,8 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.9.0 リリー�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.9.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: 0c4db1b70aa665e1802a316ece26db1e06f40b24
+exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
+source-git-commit: b0208964fc193e0e839bccaaf8245c86f280767d
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 91%
@@ -59,7 +60,7 @@ AEM の新機能を通じて GenAI を活用し、[バリエーションを生�
 
 **AI 生成のビデオキャプション**
 
-Adobe Dynamic Media の AI 生成のビデオキャプションは、人工知能を使用して、ビデオコンテンツのキャプションを自動的に生成します。この機能は、正確なリアルタイムのキャプションを提供することで、アクセシビリティを向上させ、ユーザーエクスペリエンスを強化するように設計されています。AI は、ビデオのオーディオトラックを分析し、音声を文字起こしして、キャプションを作成します。キャプションを編集して、精度を高めたりカスタマイズしたりできます。これらのキャプションは、アクセシビリティ要件を満たし、テキストベースのビデオサポートに依存している、またはこれを好むオーディエンスのビデオエンゲージメントを向上させるのに役立ちます。
+Adobe Dynamic Media の AI 生成のビデオキャプションは、人工知能を使用して、ビデオコンテンツのキャプションを自動的に生成します。 この機能は、正確なリアルタイムのキャプションを提供することで、アクセシビリティを向上させ、ユーザーエクスペリエンスを強化するように設計されています。 AI は、ビデオのオーディオトラックを分析し、音声を文字起こしして、キャプションを作成します。キャプションを編集して、精度を高めたりカスタマイズしたりできます。 これらのキャプションは、アクセシビリティ要件を満たし、テキストベースのビデオサポートに依存している、またはこれを好むオーディエンスのビデオエンゲージメントを向上させるのに役立ちます。
 
 Dynamic Media アカウントで AI 生成のキャプションサポートに早期アクセスするには、[アドビカスタマーサポートケースを作成して送信](/help/assets/dynamic-media/video.md##enable-dash)してください。
 
@@ -80,14 +81,14 @@ Dynamic Media アカウントで AI 生成のキャプションサポートに�
 
 #### コアコンポーネントベースアダプティブフォームのドラフトの自動保存
 
-一部が完了したフォームを自動的にドラフトとして保存する、自動保存機能を利用できるようになりました。後で戻って、同じデバイスまたは他のデバイスで入力を完了できます。この機能により、ユーザーはフォームへの入力を最初からやり直す必要がなくなるので、フォームの放棄が減り、組織のコンバージョン率が向上します。
+一部が完了したフォームを自動的にドラフトとして保存する、自動保存機能を利用できるようになりました。後で戻って、同じデバイスまたは他のデバイスで入力を完了できます。 この機能により、ユーザーはフォームへの入力を最初からやり直す必要がなくなるので、フォームの放棄が減り、組織のコンバージョン率が向上します。
 
 
 ### AEM Forms の早期アクセス機能 {#forms-new-early-access-features}
 
 AEM Forms 早期アクセスプログラムでは、最先端のイノベーションに排他的にアクセスし、その開発に貢献できるユニークな機会を提供します。
 
-このリリースノートでは、現在のリリースで提供されるイノベーションのリストを示します。早期アクセスプログラムで利用可能なイノベーションの完全なリストについては、[AEM Forms 早期アクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
+このリリースノートでは、現在のリリースで提供されるイノベーションのリストを示します。 早期アクセスプログラムで利用可能なイノベーションの完全なリストについては、[AEM Forms 早期アクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
 
 #### AEM Forms AI アシスタント
 
@@ -157,7 +158,7 @@ AEM 6.5 と同様に、Apache／Dispatcher は、web 階層パイプラインの
 
 ## [!DNL Experience Manager] ガイド {#guides}
 
-Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0)を参照してください。
+Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 

@@ -3,7 +3,8 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.11.0 リリー
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.11.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: fbcb022da15610009d59abd868f02ec2c2f6669d
+exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
+source-git-commit: aafa51c246ee67f9fed014a39ecfb4605ac6152f
 workflow-type: tm+mt
 source-wordcount: '1809'
 ht-degree: 100%
@@ -189,7 +190,7 @@ Edge コンピューティングには、データ処理がブラウザーに近
 
 ## [!DNL Experience Manager] ガイド {#guides}
 
-Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0)を参照してください。
+Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 

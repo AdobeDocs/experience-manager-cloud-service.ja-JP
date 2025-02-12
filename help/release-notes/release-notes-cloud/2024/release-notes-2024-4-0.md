@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.4.0 リ�
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: bc0ae042c378f24b88da84768cdcc9573926ac89
 workflow-type: tm+mt
-source-wordcount: '2727'
+source-wordcount: '2707'
 ht-degree: 98%
 
 ---
@@ -166,7 +166,7 @@ Experience Manager Assets では、[シングルクリックでアセットま�
 * **[Real Use Monitoring （RUM） Data Service を利用すると](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**AEM as a Cloud Serviceのクライアントサイド収集を有効にできます。
 実際の使用のモニタリング（RUM）データサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントの信頼性の高い測定を保証します。ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
 
-  この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから、RUM を有効にする各環境のドメイン名を添付して、`aemcs-rum-adopter@adobe.com` にメールを送信してください。Adobeのプロダクトチームが、Real Use Monitoring （RUM）データサービスを有効にします。
+  この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから、RUM を有効にする各環境のドメイン名を添付して、`aemcs-rum-adopter@adobe.com` にメールを送信してください。Adobeの製品チームが、Real Use Monitoring （RUM）データサービスを有効にします。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
@@ -286,9 +286,7 @@ Experience Manager Guides では、言語グループを作成し、コンテン
 管理者は、Generic REST Client、Salsify、Akeneo、Microsoft Azure DevOps Boards（ADO）などの一部のコネクタに対して複数のリソース URL を設定できます。
 次に、作成者は、ジェネレーターを使用してデータソースに接続し、コンテンツスニペットまたはトピックを作成します。この機能は、URL ごとにデータソースを作成する必要がないので便利です。これは、単一のコンテンツスニペットまたはトピック内の特定のデータソースのリソースからデータを迅速に取得するのに役立ちます。データソースコネクタの詳細と、[ユーザーインターフェイスからデータソースコネクタを設定](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools)する方法を参照してください。[データソースからデータを使用](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet)する方法を参照してください。
 
-新機能と機能強化について詳しくは、[ 2024.04.0リリースの新機能](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0)を参照してください。
-
-このリリースで修正された問題の一覧については、[2024.4.0リリースで修正された問題](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0)を参照してください。
+新機能および機能強化について詳しくは、[Experience Manager Guides リリース情報 ](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 

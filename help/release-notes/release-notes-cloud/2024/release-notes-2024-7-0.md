@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.7.0 リ�
 feature: Release Information
 role: Admin
 exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
-source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
+source-git-commit: ce6b0db34488a49d15d4c1197bdee80c63a2e0fa
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 76%
+ht-degree: 84%
 
 ---
 
@@ -63,21 +63,21 @@ AEM の新機能を通じて GenAI を活用し、[バリエーションを生�
 
 アセットセレクターで、コンテンツ作成者がローカルファイルシステムからドラッグまたは参照して、セレクターから直接最終アセットをアップロードできるようになりました。 この機能を使用すると、選択したアプリケーションから最終的なアセットを DAM にアップロードできます。
 
-### Dynamic Mediaの早期アクセス機能 {#dm-early-access}
+### Dynamic Media の早期アクセス機能 {#dm-early-access}
 
-**AI が生成するビデオキャプション**
+**AI 生成のビデオキャプション**
 
-AdobeDynamic Mediaで AI によって生成されたビデオキャプションは、人工知能を使用してビデオコンテンツのキャプションを自動生成します。 この機能は、正確なリアルタイムキャプションを提供することで、アクセシビリティを向上し、ユーザーエクスペリエンスを向上させることを目的としています。 AI がビデオの音声トラックを分析して、音声を書き起こし、キャプションを作成します。このキャプションは、精度やカスタマイズを考慮して編集できます。 これらのキャプションは、アクセシビリティ要件を満たし、テキストベースのビデオサポートを利用または好むオーディエンスのビデオエンゲージメントを向上させるのに役立ちます。
+Adobe Dynamic Media の AI 生成のビデオキャプションは、人工知能を使用して、ビデオコンテンツのキャプションを自動的に生成します。 この機能は、正確なリアルタイムのキャプションを提供することで、アクセシビリティを向上させ、ユーザーエクスペリエンスを強化するように設計されています。 AI は、ビデオのオーディオトラックを分析し、音声を文字起こしして、キャプションを作成します。キャプションを編集して、精度を高めたりカスタマイズしたりできます。 これらのキャプションは、アクセシビリティ要件を満たし、テキストベースのビデオサポートに依存している、またはこれを好むオーディエンスのビデオエンゲージメントを向上させるのに役立ちます。
 
-Dynamic Media アカウントで AI 生成のキャプションサポートに早期にアクセスするには、[Adobeカスタマーサポートケースを作成して送信 ](/help/assets/dynamic-media/video.md##enable-dash) します。
+Dynamic Media アカウントで AI 生成のキャプションサポートに早期アクセスするには、[アドビカスタマーサポートケースを作成して送信](/help/assets/dynamic-media/video.md##enable-dash)してください。
 
 ### アセットビューの新機能 {#assets-view-new-features}
 
-**コンテンツ資格情報の統合**
+**Content Credentials の統合**
 
-Experience Manager Assets で、サポートされる画像形式のコンテンツ資格情報がサポートされるようになりました。この機能は、アセットの系列と作成方法に関する情報を提供します（GenAI を使用して変更されたかどうかなど）。
+Experience Manager Assets で、サポートされる画像形式の Content Credentials がサポートされるようになりました。この機能は、アセットの系列と作成方法に関する情報を提供します（GenAI を使用して変更されたかどうかなど）。
 
-![コンテンツ資格情報](/help/assets/assets/content-credentials.png)
+![Content Credentials](/help/assets/assets/content-credentials.png)
 
 **フォルダーのコンテンツの視覚的なプレビュー**
 
@@ -122,7 +122,7 @@ Adobe Experience Manager [ユニバーサルエディター](https://experiencel
 
 ### セルフサービス API キーを使用した CDN のコンテンツのパージ {#purge-cdn}
 
-HTTP キャッシュ制御ヘッダーを使用した TTL の設定は、コンテンツ配信のパフォーマンスとコンテンツの鮮度のバランスを取る効果的なアプローチです。ただし、更新されたコンテンツを直ちに提供することが重要なシナリオでは、CDN キャッシュを直接パージすると便利な場合があります。
+HTTP キャッシュ制御ヘッダーを使用した TTL の設定は、コンテンツ配信のパフォーマンスとコンテンツの鮮度のバランスを取る効果的なアプローチです。ただし、更新されたコンテンツを直ちに提供することが重要なシナリオでは、CDN キャッシュを直接パージすると有益な場合があります。
 
 Cloud Manager設定パイプラインを使用してパージ API トークンの設定をセルフサービスで行う [ 方法を説明します ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)。これにより、次のバリエーションのいずれかを使用して [ パージ API を呼び出す ](/help/implementing/dispatcher/cdn-cache-purge.md) ことができます。
 
@@ -190,7 +190,7 @@ Sling リソースが欠落していることが検出されると、アクシ�
 
 ## [!DNL Experience Manager] ガイド {#guides}
 
-Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0)を参照してください。
+Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 

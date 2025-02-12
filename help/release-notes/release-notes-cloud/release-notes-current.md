@@ -5,8 +5,8 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 20db0990c506aeb473b71132813cec053009275f
-workflow-type: ht
+source-git-commit: cdf1a62ca7c8d25b146cb7b6c1329f064e42df56
+workflow-type: tm+mt
 source-wordcount: '1750'
 ht-degree: 100%
 
@@ -202,7 +202,7 @@ Edge コンピューティングには、データ処理がブラウザーに近
 
 ## [!DNL Experience Manager] ガイド {#guides}
 
-Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0)を参照してください。
+Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 
