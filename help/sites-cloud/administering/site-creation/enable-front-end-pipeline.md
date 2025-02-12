@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: d37bdc060ea569748745011346bc448a569ae91d
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 92%
+source-wordcount: '910'
+ht-degree: 60%
 
 ---
 
@@ -69,11 +69,41 @@ AEM では、フロントエンドパイプラインを使用するように既�
 
 ## フロントエンドパイプラインとカスタムドメイン {#custom-domains}
 
+フロントエンドパイプラインは [Cloud Managerのカスタムドメイン機能と共に使用できますが ](/help/implementing/cloud-manager/custom-domain-names/introduction.md)2 つの機能を一緒に使用する場合は、次の要件に注意してください。
+
+### 静的フロントエンドファイル {#static-files}
+
+フロントエンドパイプラインを介してデプロイされた静的フロントエンドアセットは、デフォルトで、Adobeの事前定義済みの静的ドメインから提供されます。
+
+フロントエンドアセットにカスタムドメインが必要な場合は、パブリッシュ層にカスタムドメインをインストールし、Dispatcherを設定して、Adobeの静的ホスティングの場所に特定のパス（`/static/` など）をルーティングできます。 この方法では、静的アセットのリクエストを適切に転送およびキャッシュするために ](https://experienceleague.adobe.com/ja/docs/experience-manager-dispatcher/using/dispatcher)0}Dispatcher ルール } を更新する必要があります。[
+
+カスタムドメインと Dispatcher を設定したら、静的ドメインからフロントエンドアセットを提供するようにAEMを設定できます。
+
+### 設定 {#configuration}
+
 [技術的詳細](#technical-details)の節に従って、サイトのフロントエンドパイプライン機能をアクティブ化すると、`/conf/<site-name>/sling:configs` の下に `SiteConfig` ノードと `HtmlPageItemsConfig` ノードが作成されます。
 
-フロントエンドパイプラインと共にサイトに [Cloud Manager のカスタムドメイン機能](/help/implementing/cloud-manager/custom-domain-names/introduction.md)を使用する場合は、これらのノードに追加のプロパティを追加する必要があります。
+ステータスアセットのフロントエンドパイプラインと共に、Cloud Managerのカスタムドメイン機能をサイトに使用する場合は、これらのノードにプロパティを追加する必要があります。
 
 1. サイトの `SiteConfig` に `customFrontendPrefix` プロパティを設定します。
+   1. `/conf/<site-name>/sling:configs/com.adobe.aem.wcm.site.manager.config.SiteConfig` に移動します。
+   1. プロパティ `customFrontendPrefix = "https://your-custom-domain.com/static/"` を追加または更新します。
 1. これにより、`HtmlPageItemsConfig` の `prefixPath` 値がカスタムドメインで更新されます。
+   1. `/conf/<site-name>/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig` に移動します。
+   1. `prefixPath` に `prefixPath = "https://your-custom-domain.com/static/<hash>/..."` などのカスタムドメインが反映されていることを確認します。
+   * この値は、必要に応じて手動で上書きすることもできます。
+1. 設定を確認します。
+   1. デプロイメント後、ページがカスタムドメインからテーマアーティファクトを正しく参照していることを確認します。
+   1. ブラウザーの開発者ツールを開き、`theme.css` および `theme.js` ファイルパスを調べて、正しいドメインから読み込まれていることを確認します。
 
-その後、サイトのページは、更新された URL からテーマアーティファクトを参照します。
+その後、サイトのページは、更新された URL からテーマアーティファクトを参照します。 次に、Dispatcher はこれらのリソースのリクエストを静的ドメインにルーティングします。
+
+## フロントエンド開発者向けのベストプラクティス {#best-practices}
+
+フロントエンドパイプラインを介してデプロイする前に、フロントエンドアセットをローカルに開発およびテストする必要がある場合は、次のアプローチを考慮します。
+
+* テーマアーティファクトをテスト用にローカルで上書きするには、[Site Theme Builder のプロキシモード ](https://github.com/adobe/aem-site-theme-builder?tab=readme-ov-file#proxy) を使用します。
+* テーマファイルをローカル開発サーバーから手動で提供し、ローカルサーバーアドレスと一致するよ `HtmlPageItemsConfig` に `prefixPath` を更新します。
+* ライブ更新を確認するには、テスト中にブラウザーのキャッシュが無効になっていることを確認します。
+
+ローカルフロントエンド開発について詳しくは、[Site Theme Builder ドキュメント ](https://github.com/adobe/aem-site-theme-builder) を参照してください。
