@@ -4,10 +4,10 @@ description: このチュートリアルは、新しい Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: ec3a9982494df35faf1df9f49416197dc96f1b4a
 workflow-type: tm+mt
-source-wordcount: '1803'
-ht-degree: 97%
+source-wordcount: '1920'
+ht-degree: 92%
 
 ---
 
@@ -67,8 +67,8 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
    * `<repository>` は GitHub リポジトリを示します。
    * `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を指します。
 
-   例えば、ブランチ名が `main`、リポジトリが `wefinance`、所有者が `wkndforms` の場合、web サイトは `https://main--wefinance--wkndforms.aem.page` で稼働します
-&lt;! – （https://main--wefinance--wkndform.aem.page)-->
+   例えば、分岐名が `main`、リポジトリが `wefinance`、所有者が `wkndforms` の場合、web サイトは `https://main--wefinance--wkndforms.aem.page` で稼動しています。
+&lt;!--(https://main--wefinance--wkndform.aem.page)-->
 
 ### 独自のコンテンツソースのリンク
 
@@ -182,8 +182,8 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
 
    `https://<branch>--<repo>--<owner>.aem.page/enquiry` の URL。
 
-   例えば、プロジェクトのリポジトリーの名前が「wefinance」で、アカウント所有者の「wkndform」の下にあり、「main」ブランチとフォーム名を `enquiry` として使用する場合、URL は `https://main--wefinance--wkndform.aem.live/enquiry` になります。
-&lt;! – （https://main--wefinance--wkndform.aem.live/enquiry).-->
+   例えば、プロジェクトのリポジトリの名前が「wefinance」で、アカウント所有者「wkndform」の下にあり、「main」分岐とフォーム名を `enquiry` として使用している場合、URL は次のようになります。`https://main--wefinance--wkndform.aem.live/enquiry`
+&lt;! --(https://main--wefinance--wkndform.aem.live/enquiry).-->
 
 ### フォームの作成
 
@@ -220,10 +220,10 @@ AEM Sidekick を使用して、お問い合わせドキュメントをプレビ�
 
 ![お問い合わせフォーム](/help/edge/assets/updated-form.png)
 
-&lt;! – （https://main--wefinance--wkndform.aem.live/enquiry)-->
+&lt;!--(https://main--wefinance--wkndform.aem.live/enquiry)-->
 
-URL: `https://main--wefinance--wkndform.aem.live/enquiry`
-&lt;! – （https://main--wefinance--wkndform.aem.live/enquiry)-->
+URL：`https://main--wefinance--wkndform.aem.live/enquiry`
+&lt;!--(https://main--wefinance--wkndform.aem.live/enquiry)-->
 
 
 新しいフォームの作成と公開について詳しくは、[フォームの作成](/help/edge/docs/forms/create-forms.md)ガイドを参照してください。
@@ -277,14 +277,33 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
 
 統合するには：
 
-1. アダプティブフォームブロックリポジトリ：[https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) をコンピューターにクローンします。
+1. **必要なファイルとフォルダーの追加**
+   1. 次のフォルダーとファイルを [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) からコピーして、AEM プロジェクトに貼り付けます。
 
-1. ダウンロードしたフォルダー内で、`blocks/form` フォルダーを見つけます。 このフォルダーをコピーします。 次に、AEM プロジェクトのローカル `blocks` フォルダーに移動し、コピーしたフォームフォルダーをここにペーストします。
+      * [ フォームブロック ](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) フォルダー
+      * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) フォルダー
+      * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) フォルダー
+      * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) ファイル
+      * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) ファイル
 
-1. これらの変更を GitHub 上の AEM プロジェクトにコミットしてプッシュします。
+1. **コンポーネント定義およびモデルファイルの更新**
+   1. AEM プロジェクトの `../models/_component-definition.json` ファイルに移動し、AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48) の [_component-definition.json ファイルからの変更を使用して更新します。
 
+   1. AEM プロジェクトの `../models/_component-models.json` ファイルに移動し、AEM Forms Boilerplate の [_component-models.json ファイルからの変更で更新し ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26) す。
 
-これで作業は完了です。 アダプティブフォームブロックが AEM プロジェクトの一部になりました。 フォームの作成と AEM ページへの追加を開始できます。
+1. **エディタースクリプトにフォームエディターを追加する**
+   1. AEM プロジェクトの `../scripts/editor-support.js` ファイルに移動し、AEM Forms Boilerplate の [editor-support.js ファイルからの変更で更新し ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106) す。
+1. **ESLint 構成ファイルの更新**
+   1. AEM プロジェクトの `../.eslintignore` ファイルに移動し、次のコード行を追加して、フォームブロックルールエンジンに関連するエラーを防ぎます。
+
+      ```
+          blocks/form/rules/formula/*
+          blocks/form/rules/model/*
+      ```
+
+1. これらの変更を GitHub 上の AEM プロジェクトリポジトリにコミットしてプッシュします。
+
+これで作業は完了です。アダプティブフォームブロックが AEM プロジェクトの一部になりました。 フォームの作成と AEM ページへの追加を開始できます。
 
 
 ## GitHub ビルドの問題のトラブルシューティング

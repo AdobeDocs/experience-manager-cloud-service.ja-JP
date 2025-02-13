@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 0410e1d16ad26d3169c01cca3ad9040e3c4bfc9f
+source-git-commit: 1244bafe1263c52a584b587845c1a12b9ddfd333
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 100%
+source-wordcount: '1778'
+ht-degree: 86%
 
 ---
 
@@ -25,7 +25,6 @@ AEM Forms には、アダプティブフォームブロックと呼ばれるブ�
 ## 前提条件
 
 * GitHub アカウントを持っており、Git の基本を理解している。
-* Google または Microsoft SharePoint アカウントを持っている。
 * HTML、CSS、JavaScript の基本を理解している。
 * ローカル開発用の Node/npm がインストールされている。
 
@@ -156,14 +155,33 @@ GitHub プロジェクトが完成したら、AEM as a Cloud Service オーサ�
 >[!NOTE]
 >
 >
-> この手順は、[AEM ボイラープレート](https://github.com/adobe-rnd/aem-boilerplate-xwalk)を使用して作成したプロジェクトに適用されます。 [AEM Forms ボイラープレート](https://github.com/adobe-rnd/aem-boilerplate-forms)を使用して AEM プロジェクトを作成した場合は、この手順をスキップできます。
+> この手順は、[AEM ボイラープレート](https://github.com/adobe-rnd/aem-boilerplate-xwalk)を使用して作成したプロジェクトに適用されます。 [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) を使用してAEM プロジェクトを作成した場合は、この手順をスキップできます。
 
 統合するには：
+1. **必要なファイルとフォルダーの追加**
+   1. 次のフォルダーとファイルを [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) からコピーして、AEM プロジェクトに貼り付けます。
 
-1. コンピューターにアダプティブフォームブロック GitHub リポジトリ [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) のクローンを作成します。
-1. ダウンロードしたフォルダー内で、`blocks/form` フォルダーを見つけて、このフォルダーをコピーします。
-1. コンピューターに AEM プロジェクト GitHub リポジトリのクローンを作成します。
-1. 次に、ローカル AEM プロジェクトリポジトリの `blocks` フォルダーに移動し、コピーしたフォームフォルダーをそこにペーストします。
+      * [ フォームブロック ](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) フォルダー
+      * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) フォルダー
+      * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) フォルダー
+      * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) ファイル
+      * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) ファイル
+
+1. **コンポーネント定義およびモデルファイルの更新**
+   1. AEM プロジェクトの `../models/_component-definition.json` ファイルに移動し、AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48) の [_component-definition.json ファイルからの変更を使用して更新します。
+
+   1. AEM プロジェクトの `../models/_component-models.json` ファイルに移動し、AEM Forms Boilerplate の [_component-models.json ファイルからの変更で更新し ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26) す。
+
+1. **エディタースクリプトにフォームエディターを追加する**
+   1. AEM プロジェクトの `../scripts/editor-support.js` ファイルに移動し、AEM Forms Boilerplate の [editor-support.js ファイルからの変更で更新し ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106) す。
+1. **ESLint 構成ファイルの更新**
+   1. AEM プロジェクトの `../.eslintignore` ファイルに移動し、次のコード行を追加して、フォームブロックルールエンジンに関連するエラーを防ぎます。
+
+      ```
+          blocks/form/rules/formula/*
+          blocks/form/rules/model/*
+      ```
+
 1. これらの変更を GitHub 上の AEM プロジェクトリポジトリにコミットしてプッシュします。
 
 これで作業は完了です。アダプティブフォームブロックが AEM プロジェクトの一部になりました。[フォームの作成と AEM プロジェクトへの追加を開始](#add-edge-delivery-services-forms-to-aem-site-project)できます。
@@ -173,14 +191,14 @@ GitHub プロジェクトが完成したら、AEM as a Cloud Service オーサ�
 WYSIWYG オーサリング用のユニバーサルエディターで AEM プロジェクトを開き、プロジェクトを編集し、AEM プロジェクトページに Edge Delivery Services フォームを含める「アダプティブフォーム」セクションを追加できます。
 
 1. AEM プロジェクトページに「アダプティブフォーム」セクションを追加します。追加するには：
-   1. Sites コンソールで AEM プロジェクトに移動し、「**編集**」をクリックします。編集用にユニバーサルエディターで AEM プロジェクトページが開きます。
+   1. Sites コンソールのAEM プロジェクトに移動し、編集するサイトページを選択して、「**編集**」をクリックします。 AEM プロジェクトページがユニバーサルエディターで開き、編集できるようになります。
 この場合、説明のために `index.html` ページを使用しています。
-   1. コンテンツツリーを開き、「アダプティブフォーム」セクションを追加する場所に移動します。
+   1. コンテンツツリーを開き、アダプティブフォーム セクションを追加するセクションに移動します。
    1. 「**[!UICONTROL 追加]**」アイコンをクリックし、コンポーネントリストから&#x200B;**[!UICONTROL アダプティブフォーム]**&#x200B;コンポーネントを選択します。
 
    ![コンテンツツリー](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
 
-   「アダプティブフォーム」セクションが指定した場所に追加されます。これで、AEM プロジェクトページへのフォームコンポーネントの追加を開始できます。
+   アダプティブフォーム セクションが追加されます。 これで、AEM プロジェクトページへのフォームコンポーネントの追加を開始できます。
 
 1. 追加した「アダプティブフォーム」セクションにフォームコンポーネントを追加します。フォームコンポーネントを追加するには：
    1. コンテンツツリーで、追加した「アダプティブフォーム」セクションに移動します。
@@ -198,13 +216,16 @@ WYSIWYG オーサリング用のユニバーサルエディターで AEM プロ�
 
       ![プロパティを開く](/help/edge/docs/forms/assets/component-properties.png)
 
-      以下のスクリーンショットは、WYSIWYG オーサリングを使用して AEM プロジェクトで作成されたフォームを示しています。
+   1. フォームをプレビューします。
+以下のスクリーンショットは、WYSIWYG オーサリングを使用して AEM プロジェクトで作成されたフォームを示しています。
 
       ![追加したフォーム](/help/edge/docs/forms/assets/added-form-aem-sites.png)
 
-   >[!NOTE]
-   >
-   > 変更を行った後は、AEM プロジェクトページを再度公開することが重要です。そうしないと、更新がブラウザーに表示されません。
+      プレビューが終了したら、ユーザーはページの公開に進むことができます。
+
+      >[!NOTE]
+      >
+      > 変更を行った後は、AEM プロジェクトページを再度公開することが重要です。そうしないと、更新がブラウザーに表示されません。
 
 1. AEM プロジェクトページを再公開します。
 
@@ -257,8 +278,9 @@ WYSIWYG オーサリング用のユニバーサルエディターで AEM プロ�
 
 変更が完了したら、Git コマンドを使用して変更をコミットおよびプッシュします。これにより、次の URL からアクセスできるプレビュー環境と実稼動環境が更新されます（プレースホルダーをプロジェクトの詳細に置き換えます）。
 
-プレビュー環境：`https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
-実稼動環境：`https://<branch>--<repo>--<owner>.aem.live/content/<site-name>`
+プレビュー：`https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
+
+実稼動：`https://<branch>--<repo>--<owner>.aem.live/content/<site-name>`
 
 
 ## GitHub ビルドの問題のトラブルシューティング
@@ -268,5 +290,9 @@ WYSIWYG オーサリング用のユニバーサルエディターで AEM プロ�
 * **lint エラーの処理：**
 lint エラーが発生した場合は、回避できます。 [EDS プロジェクト]/package.json ファイルを開き、「lint」スクリプトを `"lint": "npm run lint:js && npm run lint:css"` から `"lint": "echo 'skipping linting for now'"` に変更します。 ファイルを保存し、変更を GitHub プロジェクトにコミットします。
 
-<!-- * **Resolve Module Path Error:**
-    If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file. -->
+* **モジュールパスエラーの解決：**
+「モジュール &#39;…/…/scripts/lib-franklin.js&#39; へのパスを解決できません」というエラーが発生した場合は、[EDS プロジェクト]/blocks/forms/form.js ファイルに移動します。 lib-franklin.js ファイルを aem.js ファイルに置き換えて、読み込みステートメントを更新します。
+
+## 関連トピック
+
+{{see-more-forms-eds}}

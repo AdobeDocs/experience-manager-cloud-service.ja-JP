@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 17489f3f65a71c6fc0f805af37cb233ab1c5470a
+source-git-commit: 477d29855ca6ea89322cdb91e01140983243678c
 workflow-type: tm+mt
-source-wordcount: '6039'
+source-wordcount: '6052'
 ht-degree: 99%
 
 ---
@@ -1013,6 +1013,7 @@ ht-degree: 99%
       + [リダイレクト](/help/edge/docs/redirects.md)
    + フォームの作成 {#build-forms}
       + [概要](/help/edge/docs/forms/overview.md)
+      + [Edge Delivery Services Formsの仕組み](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + はじめに {#getting-started-edge-delivery-services-forms}
          + [はじめに](/help/edge/docs/forms/tutorial.md)
          + [Google Sheet または Microsoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
@@ -1028,7 +1029,9 @@ ht-degree: 99%
       + WYSIWYG {#universal-editor}
          + [概要 - Forms の Edge Delivery Services のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [はじめに](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [ルールエディターを使用したルールの追加](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [ルールエディターを使用したへのルールの追加](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [カスタムコンポーネントの作成](/help/edge/docs/forms/universal-editor/create-custom-component)
+         + [フォームでの reCAPTCHA の使用](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
       + 機能 {#advanced-features-edge-delivery-services-forms}
          + [フォームフラグメントの使用](/help/edge/docs/forms/form-fragments.md)
          + [繰り返し可能なセクションをフォームに追加する](/help/edge/docs/forms/repeatable-forms.md)
