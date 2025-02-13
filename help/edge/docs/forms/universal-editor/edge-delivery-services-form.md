@@ -6,7 +6,8 @@ feature: Edge Delivery Services
 Role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 1244bafe1263c52a584b587845c1a12b9ddfd333
+exl-id: db58ce85-139a-4cc1-8e18-73da76357299
+source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 57%
@@ -114,7 +115,3 @@ You can publish Edge Delivery Services Forms on one of the following:
 ## 関連トピック
 
 {{see-more-forms-eds}}
-
-
-
-

@@ -6,7 +6,8 @@ keywords: フォームの reCAPTCHA、ユニバーサルエディターの reCAP
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 52ad4537b78604e5f6948876870b58657ffcbd3a
+exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
+source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
 workflow-type: tm+mt
 source-wordcount: '1225'
 ht-degree: 13%

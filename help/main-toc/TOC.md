@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3ab46e78581893591f56793bc0561aea4f2fbef5
+source-git-commit: e25b08e824ba5f0ba6d60b334ebb50d13442f590
 workflow-type: tm+mt
 source-wordcount: '6077'
 ht-degree: 99%
@@ -1036,7 +1036,7 @@ ht-degree: 99%
          + [概要 - Forms の Edge Delivery Services のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [はじめに](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [ルールエディターを使用したへのルールの追加](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [カスタムコンポーネントの作成](/help/edge/docs/forms/universal-editor/create-custom-component)
+         + [カスタムコンポーネントの作成](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [フォームでの reCAPTCHA の使用](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
       + 機能 {#advanced-features-edge-delivery-services-forms}
          + [フォームフラグメントの使用](/help/edge/docs/forms/form-fragments.md)

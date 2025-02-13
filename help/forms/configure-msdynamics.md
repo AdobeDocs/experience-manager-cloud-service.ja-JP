@@ -3,7 +3,7 @@ title: Microsoft Dynamics 365 の標準フォームデータモデルをアダ�
 description: Microsoft Dynamics 365 をアダプティブFormsと統合する方法を説明します。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: fadbe44e0dba4e7dcbad230c286d6126e68910bc
+source-git-commit: 25284474793742a1af28e3c81976a3061d9eaf3e
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 16%
@@ -68,8 +68,9 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
 上記の前提条件を設定したら、アダプティブ FormsとMicrosoft® Dynamics 365 の統合に進むことができます。 フォーム送信時にデータをMicrosoft® Dynamics 365 に送信するには、次の手順に従います。
 
-[1. Microsoft Dynamics用にクラウドサービスを設定 ](#1-configure-cloud-service-configuration-for-microsoft-dynamics) ます。
-[2。 フォームデータモデル（FDM） ](#2-create-form-data-model-fdm) 作成
+[1. Microsoft Dynamicsのクラウドサービス設定を行う](#1-configure-cloud-service-configuration-for-microsoft-dynamics)
+
+[2. フォームデータモデル（FDM）を作成する](#2-create-form-data-model-fdm)
 
 ### 1. Microsoft Dynamicsのクラウドサービス設定を行う
 

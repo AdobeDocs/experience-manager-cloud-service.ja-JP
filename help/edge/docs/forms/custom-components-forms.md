@@ -4,9 +4,8 @@ description: EDS フォームのカスタムコンポーネントの作成
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
 role: Admin, Architect, Developer
-source-git-commit: 52ad4537b78604e5f6948876870b58657ffcbd3a
+source-git-commit: d71c5d6488935de4a02c8d3828f287542b979d0f
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 96%
