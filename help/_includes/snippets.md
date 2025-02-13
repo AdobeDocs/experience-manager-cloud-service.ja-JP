@@ -1,8 +1,8 @@
 ---
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
 workflow-type: tm+mt
-source-wordcount: '1388'
-ht-degree: 98%
+source-wordcount: '1394'
+ht-degree: 97%
 
 ---
 # スニペット {#snippets}
@@ -43,7 +43,8 @@ ht-degree: 98%
 ## アダプティブフォーム送信アクション {#af-submit-action}
 
 * [メールを送信](/help/forms/configure-submit-action-send-email.md)
-* [SharePoint に送信](/help/forms/configure-submit-action-sharepoint.md)
+* [SharePoint Document Library への送信](/help/forms/connect-forms-to-sharepoint-document-library.md)
+* [SharePoint リストに送信](/help/forms/connect-forms-to-sharepoint-list.md)
 * [フォームデータモデルを使用して送信](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 * [Azure Blob Storage に送信](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [REST エンドポイントへの送信](/help/forms/configure-submit-action-restpoint.md)
@@ -52,7 +53,7 @@ ht-degree: 98%
 * [Power Automate に送信](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Workfront Fusion に送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Salesforce アプリケーションにアダプティブフォームを接続](/help/forms/aem-forms-salesforce-integration.md)
-* [Microsoft へのアダプティブフォームの接続](/help/forms/ms-dynamics-odata-configuration.md)
+* [Microsoft へのアダプティブフォームの接続](/help/forms/configure-msdynamics.md)
 * [Adobe Marketo Engage にアダプティブフォームを接続](/help/forms/integrate-form-to-marketo-engage.md)
 * [カスタム送信アクションの作成](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 

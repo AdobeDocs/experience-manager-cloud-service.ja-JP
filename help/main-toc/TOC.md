@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 901172d201e968ec00eb8c988107a6a9fb7a5e7b
+source-git-commit: 3ab46e78581893591f56793bc0561aea4f2fbef5
 workflow-type: tm+mt
-source-wordcount: '6058'
+source-wordcount: '6077'
 ht-degree: 99%
 
 ---
@@ -737,7 +737,8 @@ ht-degree: 99%
          + [ [!DNL Microsoft Dynamics]  OData の設定](/help/forms/ms-dynamics-odata-configuration.md)
          + [OAuth 2.0 クライアント資格情報フローを使用して、アダプティブフォームを Salesforce アプリケーションに接続](/help/forms/aem-forms-salesforce-integration.md)
          + [ [!DNL Azure]  ストレージの設定](/help/forms/configure-azure-storage.md)
-         + [ [!DNL Microsoft Dynamics 365] および [!DNL Salesforce] クラウドサービスの設定](/help/forms/configure-msdynamics-salesforce.md)
+         + [ [!DNL Microsoft Dynamics 365]  クラウドサービスの設定](/help/forms/configure-msdynamics.md)
+         + [Salesforce Cloud Services の設定](/help/forms/configure-salesforce.md)
          + [フォームデータモデルの作成](/help/forms/create-form-data-models.md)
          + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
          + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
@@ -761,8 +762,11 @@ ht-degree: 99%
             + [アダプティブフォームの送信アクションの設定](/help/forms/configure-submit-actions-core-components.md)
             + [Azure Blob Storage にアダプティブフォームを送信する](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Microsoft へのアダプティブフォームの送信](/help/forms/configure-submit-action-onedrive.md)
-            + [Microsoft へのアダプティブフォームの接続](/help/forms/configure-submit-action-sharepoint.md)
-            + [認証範囲を使用した制限付きアクセスでの SharePoint サイトの設定](/help/forms/configure-sharepoint-site-limited-access.md)
+            + Microsoft® SharePointへのアダプティブフォームの接続 {#connect-to-sharepoint}
+               + [Microsoft へのアダプティブフォームの接続](/help/forms/configure-submit-action-sharepoint.md)
+               + [SharePoint Document Library への送信](/help/forms/connect-forms-to-sharepoint-document-library.md)
+               + [SharePoint リストに送信](/help/forms/connect-forms-to-sharepoint-list.md)
+               + [認証範囲を使用した制限付きアクセスでの SharePoint サイトの設定](/help/forms/configure-sharepoint-site-limited-access.md)
             + [AEM アダプティブフォームと AEM ワークフローを統合する](/help/forms/configure-submit-action-workflow.md)
             + [アダプティブフォームの REST エンドポイント送信アクションへの送信を設定する](/help/forms/configure-submit-action-restpoint.md)
             + [アダプティブフォームのメール送信アクションの送信を設定する](/help/forms/configure-submit-action-send-email.md)

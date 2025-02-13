@@ -5,7 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+hide: true
+hidefromtoc: true
+source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 100%

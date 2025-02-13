@@ -4,10 +4,10 @@ description: AEM Forms 用の統合ストレージコネクタ（USC）の管理
 role: Admin, Developer, User
 feature: Adaptive Forms, Workflow
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: c17e4e70fa8cec176c908983230b03f2899bc1ca
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 100%
+source-wordcount: '637'
+ht-degree: 99%
 
 ---
 
@@ -73,5 +73,5 @@ AEM ワークフローを使用し、Microsoft Azure ストレージサーバー
 >
 >* [AEM Forms のデータソースを設定](/help/forms/configure-data-sources.md)
 >* [AEM Forms の Azure ストレージを設定](/help/forms/configure-azure-storage.md)
->* [Microsoft Dynamics 365 および Salesforce とアダプティブフォームの統合](/help/forms/configure-msdynamics-salesforce.md)
->  [AEM Sites ページへフォームポータルを追加](/help/forms/configure-forms-portal.md)
+>* [Microsoft Dynamics 365 の統合 ](/help/forms/configure-msdynamics.md)
+>  [AEM Sites ページへのフォームポータルの追加](/help/forms/configure-forms-portal.md)
