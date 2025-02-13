@@ -1,54 +1,41 @@
 ---
-title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.1.0 のリリースノート
-description: AEM as a Cloud Service の Cloud Manager 2025.1.0 のリリースについて説明します。
+title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.2.0 のリリースノート
+description: AEM as a Cloud Service の Cloud Manager 2025.2.0 のリリースについて説明します。
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '922'
-ht-degree: 100%
+source-git-commit: c2a0961cae6d36d8ea3116c6e7982889257f90c8
+workflow-type: tm+mt
+source-wordcount: '720'
+ht-degree: 35%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.1.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.2.0 のリリースノート {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3389843928 -->
 
-AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2025.1.0 のリリースについて説明します。
+AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2025.2.0 のリリースについて説明します。
 
->[!NOTE]
->
->詳しくは、[Adobe Experience Manager as a Cloud Service の最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
+
+[Adobe Experience Manager as a Cloud Serviceの最新のリリースノート ](/help/release-notes/release-notes-cloud/release-notes-current.md) も参照してください。
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service の Cloud Manager 2025.1.0 のリリース日は 2025年1月22日水曜日（PT）です。
+AEM as a Cloud Service の Cloud Manager 2025.2.0 のリリース日は 2025年2月13日木曜日（PT）です。
 
-次回のリリース予定は 2025年2月13日木曜日（PT）です。
-
+次回のリリース予定は 2025年3月13日木曜日（PT）です。
 
 ## 新機能 {#what-is-new}
 
-* **コード品質ルール - SonarQube Server のアップグレード：** Cloud Manager コード品質ステップは、2025 年2月13日木曜日（PT）に予定されている Cloud Manager 2025.2.0 リリースで SonarQube Server 9.9 を使用して開始されます。
+* **コード品質ルールを更新します。**
+2025 年 2 月 13 日木曜日（PT）より、Cloud Manager コード品質ステップで、アップグレードされた SonarQube バージョン 9.9.5.90363 が使用されるようになりました。
 
-  これに備え、更新された SonarQube ルールが[コード品質ルール](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)で使用できるようになりました。
+  [このリンク](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)の AEM as a Cloud Service での Cloud Manager に使用可能な更新されたルールにより、Cloud Manager パイプラインのセキュリティスコアとコード品質が決定されます。この更新は、品質ゲートに影響を与え、デプロイメントをブロックする可能性があります。
 
-  次のパイプラインテキスト変数を設定して、新しいルールを「早期に確認」できます。
+* **Java 17 および Java 21 ビルドのサポート。**
 
-  `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
-
-  さらに、コード品質ステップが同じコミットに対して実行されるように、次の変数を設定します（通常、同じ `commitId` の場合はスキップされます）。
-
-  `CM_DISABLE_BUILD_REUSE` = `true`
-
-![変数設定ページ](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
-
->[!NOTE]
->
->アドビでは、メインの実稼動パイプラインと同じ分岐に設定された、新しい CI/CD コード品質パイプラインを作成することをお勧めします。2025年2月13日（PT）のリリースの&#x200B;*前*&#x200B;に適切な変数を設定して、新しく適用されるルールによってブロッカーが導入されないことを検証します。
-
-* **Java 17 および Java 21 ビルドサポート：**&#x200B;お客様は、Java 17 または Java 21 を使用してビルドし、パフォーマンス強化と新しい言語機能にアクセスできます。Maven プロジェクトとライブラリのバージョンのアップデートを含む設定手順について詳しくは、[ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)を参照してください。ビルドバージョンを Java 17 または Java 21 に設定した際、デプロイされるランタイムは Java 21 です。
+  お客様は Java 17 または Java 21 を使用してビルドできるようになり、パフォーマンスの強化や新しい言語機能にアクセスできます。 Maven プロジェクトとライブラリのバージョンのアップデートを含む設定手順について詳しくは、[ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)を参照してください。ビルドバージョンを Java 17 または Java 21 に設定した際、デプロイされるランタイムは Java 21 です。
 
    * **機能の有効化**
       * この機能は、新しい SonarQube バージョンのデフォルトのロールアウトと同時に、2025年2月13日木曜日（PT）にすべてのお客様に対して有効になります。
@@ -59,52 +46,46 @@ AEM as a Cloud Service の Cloud Manager 2025.1.0 のリリース日は 2025年1
       * すべての Cloud Manager 環境への段階的なロールアウトは、サンドボックスと開発環境向けに 2月に開始され、4月には実稼動環境に拡張されます。
       * Java 11 を使用してビルドし、Java 21 ランタイムを&#x200B;*早期*&#x200B;に導入するお客様は、アドビ（[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)）にお問い合わせください。
 
-* **「CDN 設定」の名前を「ドメインマッピング」へと変更：** AEM Cloud Manager のユーザーインターフェイスの改善の一部として、「CDN 設定」というラベルの名前が「ドメインマッピング」に変更されました。この変更により、用語と機能の整合性が向上します。<!-- CMGR-64738 -->
+* Edge Delivery Servicesの稼動時間レポートの **99.99%。**
+対象となるEdge Delivery Services プログラムで、99.99% の高可用性の稼動時間レポートが利用できるようになりました。 この機能を有効にするには、Edge Delivery Services サイトを正常にオンボーディングし、99.99% Service level agreement（SLA）をCloud Manager内に適用する必要があります。
 
-  ![ユーザーインターフェースの「CDN 設定」の名前を「ドメインマッピング」へと変更](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
+  [SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) も参照してください。
 
-* **ワンクリックで Edge Delivery サイトをプロビジョニング：** Cloud Manager では、適切な権限とライセンスを持つユーザーが、シングルクリックでサンプルの Edge Delivery Services サイトを作成できるようになりました。この効率化されたプロセスでは、次の自動化機能が用意されています。
+* **Edge Delivery Servicesのユーザー招待エクスペリエンスが向上しました。**
+Edge Delivery Servicesに関連付けられたコンテンツリポジトリーにユーザーを招待する際の操作性が向上しました。<!-- CMGR-65331 -->
 
-   * **GitHub 統合** - Edge Delivery Services のボイラープレートテンプレートで事前設定された GitHub リポジトリを既存の組織内に自動的に作成します。
-   * **AEM コード同期アプリのインストール** - AEM コード同期アプリケーションをリポジトリにインストールし、シームレスな同期とデプロイメントを確保します。
-   * **コンテンツ共同作業の設定** - コンテンツストレージ用の指定された Google Drive フォルダーをリンクし、コンテンツ管理の共同作業環境を提供します。
-   * **コンテンツの公開** - ユーザーは、プロビジョニングされたサイトのコンテンツを Cloud Manager ユーザーインターフェイスから直接公開できるので、ワークフローが簡素化され、効率が向上します。
-   * **共同作業の強化** - プラットフォームにより、ユーザーは Google Drive のコンテンツストレージフォルダーに複数の共同作業者を追加できるので、チームワークとコンテンツの投稿が容易になります。
+* **パブリッシュインスタンスでの管理者プロファイルの自動作成。**
+以前は、Cloud Managerでは、パブリッシュインスタンス上に管理者プロファイルを手動で作成できましたが、デフォルトでは自動作成はサポートされていませんでした。 この更新により、パブリッシュインスタンスで管理プロファイルが自動的に作成されるようになり、ユーザビリティが向上し、顧客の設定時間が短縮されました。
 
-  これらの機能強化は、自動化の改善、設定プロセスの簡素化、Edge Delivery Services ユーザーの共同作業の強化を目的としています。<!-- CMGR-59362 -->
+  詳しくは、[ カスタム権限 ](/help/implementing/cloud-manager/custom-permissions.md) を参照してください。
 
-  ![Edge Delivery サイトのプロビジョニング](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
+  ![パイプラインアクティビティフィルタリング](/help/implementing/cloud-manager/release-notes/assets/product-profiles.png)
 
-  ![Edge Delivery サイトをプロビジョニングダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
+* **Cloud Service環境向けの OAuth への移行**
+新しいCloud Service環境では、以前に使用されていた JWT 認証方法の代わりに、Adobe Developer Console統合プロジェクトに対して、OAuth ベースのサービス間認証を使用するようになりました。 JWT 認証は非推奨（廃止予定）となり、2025 年 6 月に提供終了になる予定です。
 
-* **Edge Delivery Services サイトのサポートの強化：** Cloud Manager では、最新の Edge Delivery Services サイトのオンボーディングをサポートするようになりました。この更新には、CDN と配信スタックの包括的なリファクタリングが含まれ、堅牢性と保守性が向上します。
+* **EC （楕円曲線）秘密鍵（secp384r1）のサポート。**
+Cloud Managerは `secp384r1` 楕円曲線（EC）秘密鍵をサポートするようになり、顧客管理の OV/EV SSL 証明書のセキュリティとコンプライアンスを向上させます。
+詳しくは、[ 顧客が管理する OV/EV SSL 証明書の要件 ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) を参照してください。<!-- CMGR-63636 -->
 
-* **パイプラインの高度なフィルターオプション：** Cloud Manager では、パイプラインページに高度なフィルタリングオプションが追加され、関連するデータにすばやくアクセスして、デプロイメントの効率を向上させることができるようになりました。主な機能には、次のようなものがあります。
+<!--
+## Early adoption program {#early-adoption}
 
-   * **複数条件フィルタリング：**&#x200B;パイプライン名、環境、デプロイコードなどのフィルターを使用して検索結果を絞り込みます。
-   * **パイプライン検索の合理化：**&#x200B;特定のパイプラインを簡単に見つけられるので、ナビゲーションが高速化し、ワークフロー管理が向上します。
-
-  これらの機能強化により、パイプラインの管理とデプロイが全体的に効率的になり、使いやすくなります。
-
-  ![パイプラインフィルター機能](/help/implementing/cloud-manager/release-notes/assets/pipeline-filters.png)
-
-* **Edge Delivery Service のセルフサービス CDN 設定：** Edge Delivery Service の新しい導入者は、Cloud Manager を通じて CDN を個別に設定できるようになりました。このアップデートにより、`.hlx.page/live` から新しい `.aem.page/live` へとサポートが拡張され、ユーザーに対する柔軟性が向上し、設定が効率化されます。
-
-## 早期導入プログラム {#early-adoption}
-
-Cloud Manager の早期導入プログラムに参加すると、今後の機能をテストする機会を得ることができます。
-
-* **早期導入プログラムの更新 - Bitbucket と GitLab の PR 検証のサポート：** Cloud Manager では、Bitbucket と GitLab のクラウドバージョンと自己ホスト型バージョンの両方でプルリクエスト（PR）検証をサポートするようになりました。この機能により、お客様は PR を結合する前に、アドビのコード品質しきい値に対してコードの変更をテストできます。この機能強化により、結合前により高いコードの品質を確保することで、実稼動パイプラインでのコード変更の成功率が大幅に向上し、市場投入までの時間が短縮され、開発ワークフローが効率化されます。
-
-  GitLab と Bitbucket のサポートが追加された「独自の Git の導入」と、早期導入者としての新規登録について詳しくは、[Cloud Manager 2024年10月リリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket)を参照してください。
-
-* **高度なテスト環境：**&#x200B;開発と実稼動の間のギャップを埋めるために設計された専用ソリューションです。企業のニーズに合わせて調整されたこの環境は、実稼動レベルの仕様をレプリケートして、正確なユーザー受け入れテスト（UAT）と徹底的なパフォーマンス評価をサポートします。
-
-  早期導入プログラムへの参加を希望される場合は、[このフォームに入力](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0)して、`OrgID` を記載したメールを [earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com) に送信してください。
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
 
 
+## バグ修正
 
-<!-- ## Bug fixes -->
+* **（UI）Cloud Managerで、ドメインの CDN 設定ができない問題を修正しました。**
+Cloud Managerで CDN 設定を追加しようとすると、ドロップダウンメニューからドメインを選択した際に画面エラーが発生しました。 このユーザーインターフェイスのバグにより、実稼動環境でのドメインマッピングが妨げられ、設定プロセスがブロックされていました。
+
+  さらに、ユーザーインターフェイスから削除されているにもかかわらず、一部のドメインはバックエンドでアクセスできないままでした。 この問題は、既存の CDN 設定との競合を引き起こしました。
+
+  この修正により、エラーを発生させずに、ドロップダウンからドメインを正常に選択できるようになりました。 ドメインの再設定を妨げるバックエンドの不整合は解決されました。 最後に、検証の改善により、競合するドメインを再追加する前に、適切に削除できるようになりました。<!-- CMGR-64888 -->
+* **（バックエンド） SSL の有効期限通知が複数回送信される問題を修正しました。**
+午前 0 時に 1 日 1 回実行するように設計されている SSL 有効期限通知スケジューラーが、1 日 2 回、午前 0 時と午前 12 時 30 分に誤ってトリガーされていたバグが特定されました。 この問題により、SSL 証明書の有効期限に関する複数の冗長な通知が送信されていました。
+
+  通知スケジューラーは、意図したとおりに 1 日に 1 回だけ正しく実行されるようになりました。 また、SSL の重複する有効期限切れ通知を受け取らなくなりました。<!-- CMGR-64748 -->
 
 
 
