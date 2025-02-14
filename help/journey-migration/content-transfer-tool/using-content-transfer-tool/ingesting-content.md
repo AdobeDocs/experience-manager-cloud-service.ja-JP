@@ -4,10 +4,10 @@ description: Cloud Acceleration Manager を使用して、移行セットから�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 01c2bda6b688bb85a214991f7594585f87850ec2
 workflow-type: tm+mt
-source-wordcount: '3411'
-ht-degree: 99%
+source-wordcount: '3441'
+ht-degree: 98%
 
 ---
 
@@ -258,6 +258,7 @@ MongoDB に保存されるノードプロパティの値は、16 MB 未満にす
 
 * `Atlas prescale timeout error` - 取り込みフェーズでは、取り込まれる移行セットのコンテンツのサイズに合わせて、ターゲットクラウドデータベースを適切なサイズにプリスケールしようとします。まれに、この操作は予想された期間内に完了しません。
 * `Exhausted mongo restore retries` - 取り込まれた移行セットのコンテンツのローカルダンプをクラウドデータベースに復元する試みが失敗しました。これは、MongoDB の全体的なヘルス／ネットワークの問題を示し、多くの場合、数分後には修復されます。
+* `Mongo network error` - MongoDB への接続の確立が失敗することがあります。その場合、取り込みプロセスが早期に終了し、失敗としてレポートします。 取り込みの簡単な再試行を試みる必要があります。
 
 ### 取り込みの取り消し {#ingestion-rescinded}
 
