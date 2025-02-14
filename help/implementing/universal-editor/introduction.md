@@ -4,10 +4,10 @@ description: ユニバーサルエディターを使用して、ヘッドレス�
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: b8d56873b7bc23295fefc35a826b8047c626649e
-workflow-type: ht
+source-git-commit: 2947c4cb1fad7e1c7635a0e423a4adfe23013f79
+workflow-type: tm+mt
 source-wordcount: '992'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -90,7 +90,7 @@ ht-degree: 100%
 * サポートされている AEM バックエンドは、AEM as a Cloud Service と ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)AEM 6.5[ のみです。
 * AEM as a Cloud Service リリース `2023.8.13099` 以降が必要です。
 * コンテンツ作成者は、独自の Experience Cloud アカウントを持つ必要があります。
-* AEM の一部として、ユニバーサルエディターは AEM と同じデスクトップブラウザーをサポートします。
+* AEMの一部として、ユニバーサルエディター [AEMと同じデスクトップブラウザーをサポート ](/help/overview/supported-platforms.md) します。
    * これらのブラウザーのモバイルバージョンはサポートされていません。
 
 {{ue-ip-allow-lists}}
