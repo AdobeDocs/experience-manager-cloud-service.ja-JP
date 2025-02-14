@@ -4,10 +4,10 @@ description: WYSIWYG テンプレートエディターを使用して Dynamic Me
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: f5fa8f1f23d35d239f7bb0e22e104627f9f84317
+source-git-commit: 2fcbcaf5fe4794d8ea52386583dc592c0c1983d5
 workflow-type: tm+mt
-source-wordcount: '2722'
-ht-degree: 100%
+source-wordcount: '2801'
+ht-degree: 96%
 
 ---
 
@@ -33,7 +33,7 @@ Dynamic Media テンプレートの主なメリットには、次のようなも
 * **一貫したオムニチャネルエクスペリエンスを確保：**&#x200B;チャネル全体でブランドの一貫性を維持します。
 * **コンテンツを効果的に再利用：** 1 回使用のコンテンツを避け、動的なパラメーター化されたテンプレートを使用して拡大します。
 * **リスクを軽減：**&#x200B;価格、割引、リンクをリアルタイムで更新します。
-* **顧客エンゲージメントを強化：**&#x200B;インタラクティブでコンテキストに関連のあるエクスペリエンスを推進します。
+* **顧客エンゲージメントの強化：** インタラクティブで文脈的に関連性の高いエクスペリエンスを促進します。
 
 >[!NOTE]
 >
@@ -45,6 +45,9 @@ Dynamic Media テンプレートを作成するには、次の操作が必要で
 
 1. Dynamic Media にアクセスします。
 1. [AEM Assets インスタンスで使用可能な画像を Dynamic Media と同期して、テンプレートの作成に使用します](/help/assets/dynamic-media/config-dm.md)。
+1. タッチ UI で次の内容を確認しました。
+   * **[!UICONTROL Dynamic Media 設定を編集ページ]** で、**[!UICONTROL Dynamic Media 同期モード]** が **[!UICONTROL デフォルトで無効]** に設定されている場合、一部のAEM フォルダーに適用されません（**[!UICONTROL すべてのコンテンツを同期]** がオフになります）。 詳しくは、[Dynamic Media Cloud Serviceの設定 ](/help/assets/dynamic-media/config-dm.md) を参照してください。
+   * **[!UICONTROL Dynamic Media 同期モード]** は、作成後にテンプレートを保存する宛先フォルダーまたはサブフォルダーに対して **[!UICONTROL サブフォルダーで有効]** に設定されます。 詳しくは、[Dynamic Media Cloud Serviceの設定 ](/help/assets/dynamic-media/config-dm.md) を参照してください。
 
 ## Dynamic Media WYSIWYG テンプレートの作成{#how-to-create-dynamic-media-wysiwyg-template}
 
@@ -62,13 +65,13 @@ DM テンプレートを作成するには、次の手順に従います。
 
 1. アセットビューに移動し、左側のパネルで使用可能な **[!UICONTROL Dynamic Media アセット]**&#x200B;をクリックします。
 
-   ![Dynamic Media テンプレート](/help/assets/assets/dm-templates/DM-Assets1.png)
+   ![Dynamic Media テンプレート](/help/assets/assets/DM-Assets1.png)
 
 1. 「**[!UICONTROL テンプレートを作成]**」をクリックしてテンプレートを Dynamic Media アセットに保存するか、フォルダーに移動して「**[!UICONTROL テンプレートを作成]**」をクリックし、そのフォルダー内にテンプレートを保存します。**[!UICONTROL 新規テンプレート]**ダイアログボックスが表示されます。
-   ![リアルタイムでカスタマイズできる動的テンプレートの作成方法](/help/assets/assets/dm-templates/new-template.png)
+   ![リアルタイムでカスタマイズできる動的テンプレートの作成方法](/help/assets/assets/new-template.png)
 **[!UICONTROL Dynamic Media アセット]**&#x200B;の下に[フォルダーを作成](/help/assets/add-delete-assets-view.md)するには、**[!UICONTROL アセット]**&#x200B;の下にフォルダーを作成します。**[!UICONTROL アセット]**&#x200B;の下のフォルダーツリーは、**[!UICONTROL Dynamic Media アセット]**&#x200B;の下にレプリケートされます。
 1. テンプレート名を指定し、キャンバスの幅と高さを定義して、「**[!UICONTROL 作成]**」をクリックします。空白のキャンバスが表示され、テンプレートの作成に使用するメニューオプションが両側に表示されます。メニューオプションにポインタを合わせると、ツールチップが表示されます。
-   ![リアルタイムのカスタマイズ可能なテンプレート](/help/assets/assets/dm-templates/blank-canvas-page.png)
+   ![リアルタイムのカスタマイズ可能なテンプレート](/help/assets/assets/blank-canvas-page.png)
 
 >[!NOTE]
 >
@@ -76,23 +79,23 @@ DM テンプレートを作成するには、次の手順に従います。
 
 **右側のパネルのメニューオプション：**&#x200B;これらのオプションを使用して、必要な画像とテキストレイヤーをキャンバスに追加します。
 
-* ![DM テンプレート](/help/assets/assets/dm-templates/add-image.svg)：クリックして、画像をキャンバスに追加します。
-* ![カスタマイズ可能なテンプレート](/help/assets/assets/dm-templates/add-text.svg)：クリックして、テキストをキャンバスに追加します。
-* ![カスタマイズ可能なテンプレート](/help/assets/assets/dm-templates/show-layers-list.svg)：クリックして、キャンバス上のすべてのレイヤー（画像とテキスト）のリストを表示します。キャンバスに追加されたすべての画像とテキストは、個別のレイヤーとして表されます。
+* ![DM テンプレート](/help/assets/assets/add-image.svg)：クリックして、画像をキャンバスに追加します。
+* ![カスタマイズ可能なテンプレート](/help/assets/assets/add-text.svg)：クリックして、テキストをキャンバスに追加します。
+* ![カスタマイズ可能なテンプレート](/help/assets/assets/show-layers-list.svg)：クリックして、キャンバス上のすべてのレイヤー（画像とテキスト）のリストを表示します。キャンバスに追加されたすべての画像とテキストは、個別のレイヤーとして表されます。
 
 **左側のパネルのメニューオプション：**&#x200B;以下に示すように、一般的なエディターアクションにこれらのオプションを使用します。
 
-* ![DM テンプレート](/help/assets/assets/dm-templates/layer-selector.svg)：レイヤーを選択します。
-* ![カスタマイズをサポートするテンプレート](/help/assets/assets/dm-templates/bring-forward.svg)：クリックして選択したレイヤーを前に移動するか、**Ctrl** + **]** キー（Windows）または **Cmd** + **]** キー（Mac）を押します。
-* ![簡単にカスタマイズできるテンプレートを作成する方法](/help/assets/assets/dm-templates/send-backward.svg)：クリックして選択したレイヤーを後に移動するか、**Ctrl** + **[** キー（Windows）または **Cmd** + **[** キー（Mac）を押します。
-* ![すぐにカスタマイズできるテンプレートを作成](/help/assets/assets/dm-templates/undo.svg)：クリックして最後のアクションを取り消すか、**Ctrl** + **Z** キー（Windows）または **Cmd** + **Z** キー（Mac）を押します。
-* ![バナーをすばやく作成するテンプレート](/help/assets/assets/dm-templates/redo.svg)：クリックして最後のアクションをやり直すか、**Ctrl** + **Y** キー（Windows）または **Cmd** + **Y** キー（Mac）を押します。
-* ![チラシをすばやく作成するテンプレート](/help/assets/assets/dm-templates/zoomin.svg)：クリックしてキャンバスをズームインするか、**Ctrl** + **+** キー（Windows）または Cmd + **+** キー（Mac）を押します。
-* ![バナーをすばやく作成するテンプレート](/help/assets/assets/dm-templates/zoomout.svg)：クリックしてキャンバスをズームアウトするか、**Ctrl** + **-** キー（Windows）または **Cmd** + **-** キー（Mac）を押します。
+* ![DM テンプレート](/help/assets/assets/layer-selector.svg)：レイヤーを選択します。
+* ![カスタマイズをサポートするテンプレート](/help/assets/assets/bring-forward.svg)：クリックして選択したレイヤーを前に移動するか、**Ctrl** + **]** キー（Windows）または **Cmd** + **]** キー（Mac）を押します。
+* ![簡単にカスタマイズできるテンプレートを作成する方法](/help/assets/assets/send-backward.svg)：クリックして選択したレイヤーを後に移動するか、**Ctrl** + **[** キー（Windows）または **Cmd** + **[** キー（Mac）を押します。
+* ![すぐにカスタマイズできるテンプレートを作成](/help/assets/assets/undo.svg)：クリックして最後のアクションを取り消すか、**Ctrl** + **Z** キー（Windows）または **Cmd** + **Z** キー（Mac）を押します。
+* ![バナーをすばやく作成するテンプレート](/help/assets/assets/redo.svg)：クリックして最後のアクションをやり直すか、**Ctrl** + **Y** キー（Windows）または **Cmd** + **Y** キー（Mac）を押します。
+* ![チラシをすばやく作成するテンプレート](/help/assets/assets/zoom-in.svg)：クリックしてキャンバスをズームインするか、**Ctrl** + **+** キー（Windows）または Cmd + **+** キー（Mac）を押します。
+* ![バナーをすばやく作成するテンプレート](/help/assets/assets/Zoom-out.svg)：クリックしてキャンバスをズームアウトするか、**Ctrl** + **-** キー（Windows）または **Cmd** + **-** キー（Mac）を押します。
 * テキストやプロパティが編集されていない場合は、**Backspace** キーまたは **Delete** キーを押すと、選択したレイヤーが削除されます。
 
-テンプレートの作成中にいつでもキャンバスの寸法を編集するには、キャンバスレイヤーで![チラシをすばやく作成するテンプレート](/help/assets/assets/dm-templates/show-layers-list.svg)**／**&#x200B;その他のオプション（![](/help/assets/assets/dm-templates/three-dots.svg)）をクリックします。
-![](/help/assets/assets/dm-templates/edit-canvas1.png)
+テンプレートの作成中にいつでもキャンバスの寸法を編集するには、キャンバスレイヤーで![チラシをすばやく作成するテンプレート](/help/assets/assets/show-layers-list.svg)**／**&#x200B;その他のオプション（![](/help/assets/assets/three-dots.svg)）をクリックします。
+![](/help/assets/assets/edit-canvas1.png)
 
 >[!NOTE]
 >
@@ -102,19 +105,19 @@ DM テンプレートを作成するには、次の手順に従います。
 
 キャンバスに画像を追加するには、次の手順を実行します。
 
-1. 「![バナーをすぐに作成](/help/assets/assets/dm-templates/add-image.svg)」をクリックして、[アセットセレクター](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)パネルを表示します。パネルには、Dynamic Media に同期される AEM Assets インスタンス内の画像が表示されます。
+1. 「![バナーをすぐに作成](/help/assets/assets/add-image.svg)」をクリックして、[アセットセレクター](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)パネルを表示します。パネルには、Dynamic Media に同期される AEM Assets インスタンス内の画像が表示されます。
 1. パネルを参照するか、検索バーでキーワードを使用して、特定の画像を見つけます。
 1. 画像をキャンバス上にドラッグ＆ドロップして使用します。キャンバス上のレイヤーのサイズ変更や再配置について詳しくは、[**[!UICONTROL プロパティパネル]**](#reposition-resize-delete-a-layer)を参照してください。
-   ![数秒以内にバナーを作成](/help/assets/assets/dm-templates/add-image-to-canvas.png)
+   ![数秒以内にバナーを作成](/help/assets/assets/add-image-to-canvas.png)
 
 ### キャンバスにテキストレイヤーを追加{#add-text-to-the-canvas}
 
 キャンバスにテキストレイヤーを追加するには、次の手順を実行します。
 
-1. 「![新しいバナーをすばやく作成](/help/assets/assets/dm-templates/add-text.svg)」をクリックして、キャンバスにテキストレイヤーを追加し、プロパティパネルを開きます。
+1. 「![新しいバナーをすばやく作成](/help/assets/assets/add-text.svg)」をクリックして、キャンバスにテキストレイヤーを追加し、プロパティパネルを開きます。
 1. レイヤーを選択し、テキストをクリックして更新します。
 1. プロパティパネルで&#x200B;**[!UICONTROL スマートテキストのサイズ変更]**を有効にすると、テキストの長さとフォントサイズが自動的に調整され、指定された領域に最適に収まります。
-   ![カスタマイズ可能な最適なバナー](/help/assets/assets/dm-templates/add-text-layer.png)
+   ![カスタマイズ可能な最適なバナー](/help/assets/assets/add-text-layer.png)
 
 レイヤーの再配置、サイズ変更、回転または削除について詳しくは、[**[!UICONTROL プロパティパネル]**](#reposition-resize-delete-a-layer)を参照してください。パネルの「**[!UICONTROL テキスト]**」セクションの下にある各フィールドの値を変更して、テキストを目的のフォント、サイズ、カラー、スタイル、位置（レイヤー内）に書式設定します。
 
@@ -126,8 +129,8 @@ DM テンプレートを作成するには、次の手順に従います。
 
 キャンバスレイヤーを編集または削除するには、次の手順を実行します。
 
-1. 「![動的更新をサポートするテンプレート](/help/assets/assets/dm-templates/show-layers-list.svg)」をクリックして、キャンバスまたはレイヤーリストからレイヤーを選択します。
-1. 「**その他のオプション**」（![リアルタイムの更新をサポートするテンプレート](/help/assets/assets/dm-templates/three-dots.svg)）をクリックして、レイヤーを編集または削除します。
+1. 「![動的更新をサポートするテンプレート](/help/assets/assets/show-layers-list.svg)」をクリックして、キャンバスまたはレイヤーリストからレイヤーを選択します。
+1. 「**その他のオプション**」（![リアルタイムの更新をサポートするテンプレート](/help/assets/assets/three-dots.svg)）をクリックして、レイヤーを編集または削除します。
 1. 「**[!UICONTROL 削除]**」をクリックして、レイヤーを削除します。
 1. 「**[!UICONTROL 編集]**」をクリックして、[**[!UICONTROL プロパティパネル]**](#reposition-resize-delete-a-layer)を使用してレイヤーを編集します。
    ![迅速なバナー作成](/help/assets/assets/dm-templates/edit-delete-layer.png)
@@ -136,12 +139,12 @@ DM テンプレートを作成するには、次の手順に従います。
 
 レイヤーのプロパティパネルに移動するには：
 
-1. 「![迅速なコンテンツ作成](/help/assets/assets/dm-templates/show-layers-list.svg)」をクリックします。
+1. 「![迅速なコンテンツ作成](/help/assets/assets/show-layers-list.svg)」をクリックします。
 1. リストからレイヤーを選択します。
 
 このパネルには、キャンバスプレーン上のレイヤーの中心点の位置（X 値と Y 値）とレイヤーの寸法（幅と高さ）が、テキストの書式設定オプションと共に表示されます。
 
-![迅速なコンテンツ作成](/help/assets/assets/dm-templates/properties-panel.png)
+![迅速なコンテンツ作成](/help/assets/assets/properties-panel.png)
 
 レイヤーのプロパティパネルからキャンバス上の別のレイヤーを選択して、そのプロパティパネルに移動します。
 
@@ -160,7 +163,7 @@ DM テンプレートを作成するには、次の手順に従います。
 パネルの「**[!UICONTROL テキスト]**」セクションの下にある各フィールドの値を変更して、テキストを目的のフォント、サイズ、カラー、スタイル、位置（レイヤー内）に書式設定します。
 
 **[!UICONTROL スマートテキストのサイズ変更]**：フォントサイズと長さをスマートに調整して、指定された領域にテキストを最適に収めるには、**[!UICONTROL スマートテキストのサイズ変更]**（[コピーフィット](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)）を必ず含めてください。この機能により、テキストのオーバーフローが防止され、テキストの下部にある余分なスペースが最小限に抑えられます。
-![すぐにコンテンツを作成](/help/assets/assets/dm-templates/smart-text-resize.png)
+![すぐにコンテンツを作成](/help/assets/assets/smart-text-resize.png)
 
 ### レイヤーをパラメーター化 {#parameterise-a-layer}
 
@@ -168,11 +171,11 @@ DM テンプレートを作成するには、次の手順に従います。
 
 レイヤーをパラメーター化するには：
 
-1. 「![即時コンテンツ作成](/help/assets/assets/dm-templates/show-layers-list.svg)」をクリックし、レイヤーを選択して「**[!UICONTROL パラメーター]**」をクリックします。**[!UICONTROL パラメーター]**&#x200B;パネルが表示されます。
+1. 「![即時コンテンツ作成](/help/assets/assets/show-layers-list.svg)」をクリックし、レイヤーを選択して「**[!UICONTROL パラメーター]**」をクリックします。**[!UICONTROL パラメーター]**&#x200B;パネルが表示されます。
 1. **[!UICONTROL パラメーターを含める]**&#x200B;を切り替えて、プロパティをパラメーター化します。パラメーター化後のプロパティの動作について詳しくは、[こちら](#parameterisation-options-or-allowed-parameters)を参照してください。
 1. **オプション：**&#x200B;パラメーター名を変更します。パラメーター名には、レイヤー名の後に接尾辞が続きます。選択したレイヤーでは、そのすべてのパラメーター化されたプロパティは同じレイヤー名を共有し、その後に様々な接尾辞が続きます。セマンティックの命名規則に従ってレイヤー名を変更すると、URL にパラメーターを含める際に、パラメーター名自体がレイヤーのコンテンツや目的についての説明となります。
 1. 「**[!UICONTROL 保存]**」をクリックします。
-   ![即時コンテンツ作成](/help/assets/assets/dm-templates/parameterise-a-layer.png)
+   ![即時コンテンツ作成](/help/assets/assets/parameterise-a-layer.png)
 画像とテキストレイヤーのパラメーターパネルを切り替えるには、キャンバス上でレイヤーを選択し、「**[!UICONTROL パラメーター]**」をクリックします。
 
 #### パラメーターパネルオプション {#parameterisation-options-or-allowed-parameters}
@@ -201,7 +204,7 @@ URL のパラメーター値を更新して、URL からテキスト、フォン
 
 テンプレートの柔軟性を維持するもう 1 つの方法は、単一のパラメーター名を使用して複数のレイヤーを制御することです。この戦略は、表示（レイヤーを非表示または表示）パラメーターで、単一のテンプレートからデザインまたはグラフィックを更新する場合に役立ちます。
 
-複数のレイヤーの非表示パラメーター（![高速コンテンツ作成](/help/assets/assets/dm-templates/Visibility-icon.svg)）に同じ名前を割り当て、同時に非表示または表示できるようにするには、次の手順に従います。
+複数のレイヤーの非表示パラメーター（![高速コンテンツ作成](/help/assets/assets/Visibility-icon.svg)）に同じ名前を割り当て、同時に非表示または表示できるようにするには、次の手順に従います。
 
 1. レイヤーの[**[!UICONTROL プロパティパネル]**](#parameterise-a-layer)に移動します。
 1. 以前にパラメーター化していない場合は、**[!UICONTROL 非表示]**&#x200B;パラメーターを切り替えます。
@@ -219,7 +222,7 @@ URL のパラメーター値を更新して、URL からテキスト、フォン
 1. キャンバスページで、「**[!UICONTROL プレビュー]**」をクリックします。また、**[!UICONTROL アセットビュー]****／****[!UICONTROL Dynamic Media アセット]****に移動して、**&#x200B;テンプレートを見つけて選択し&#x200B;**、**「**[!UICONTROL テンプレートを編集]**」をクリックして&#x200B;**、**「**[!UICONTROL プレビュー]**」をクリックすることもできます。プレビューページには、テンプレート、そのパラメーター（パラメーター化されたレイヤとプロパティ）、公開ステータスおよび「**[!UICONTROL 公開]**」オプションが表示されます。
 1. **[!UICONTROL テンプレートパラメーター]**&#x200B;パネルからパラメーターを選択して値を編集すると、プレビューの対応するテンプレートレイヤーのコンテンツ、サイズ、位置、またはテキストの書式設定が即座に更新されます。例：
    1. テキストレイヤーを選択してテキストを編集するか、
-   1. 画像レイヤーを選択し、「![その場でコンテンツを作成](/help/assets/assets/dm-templates/add-image.svg)」をクリックし、アセットセレクターから画像を選択して、「**[!UICONTROL 更新]**」をクリックします。
+   1. 画像レイヤーを選択し、「![その場でコンテンツを作成](/help/assets/assets/add-image.svg)」をクリックし、アセットセレクターから画像を選択して、「**[!UICONTROL 更新]**」をクリックします。
 
    テンプレートはすぐに更新され、編集されたテキストが表示され、以前の画像が新しい画像に置き換えられます。また、画像パラメーターの値には、新しい画像のパスが反映されます。同様に、レイヤーの値を調整してサイズ変更すると、その変更がリアルタイムでテンプレートに適用されます。
 1. リストから[グループ化されたレイヤー](#group-layers)の非表示パラメーターを選択して、テンプレート内でまとめて表示または非表示にします。
