@@ -5,10 +5,11 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
+exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
+source-git-commit: d48048ab130805d2be40ac3f7ee60e4269337cb5
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 0%
+source-wordcount: '467'
+ht-degree: 1%
 
 ---
 
@@ -123,19 +124,6 @@ https://main--universaleditor--wkndforms.aem.live/content/forms/af/wknd-form
 ```
 
 
+## 関連トピック
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{{see-more-forms-eds}}

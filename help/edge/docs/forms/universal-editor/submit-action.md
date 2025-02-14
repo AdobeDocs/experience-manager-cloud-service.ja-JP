@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: ba38294710553145a670ea42dd2b7571fa4eba7b
+source-git-commit: da2f673319dd5cec764408b4517698a9d39031bb
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '735'
 ht-degree: 18%
 
 ---
@@ -140,3 +140,8 @@ REST エンドポイントを設定するには：
 1. クリックすると、次のオプションが表示されます。
    * **[!UICONTROL 送信時]**：送信時は、フォームが送信されたときに表示されるメッセージをカスタマイズするのに役立ちます。 デフォルトでは、フォームが正常に送信されると、「フォームを送信していただきありがとうございます」というカスタムメッセージがユーザーに表示されます。
 また、**[!UICONTROL メッセージを表示]** オプションを選択してフォームの送信時に「ありがとうございます」メッセージをカスタマイズしたり、リッチテキスト **エディター** でメッセージを追加または編集したりできます。
+
+
+## 関連トピック
+
+{{see-more-forms-eds}}
