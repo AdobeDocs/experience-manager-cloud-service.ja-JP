@@ -4,10 +4,10 @@ description: AEM as a Cloud Service でのコンテンツの検索とインデ�
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: 4de04b0a2c74406544757f9a92c061abfde5b615
-workflow-type: ht
-source-wordcount: '2531'
-ht-degree: 100%
+source-git-commit: bf8ec70fa6f6678c4a2ffb49aea453be11fa26f1
+workflow-type: tm+mt
+source-wordcount: '2767'
+ht-degree: 88%
 
 ---
 
@@ -359,9 +359,50 @@ Jackrabbit `filevault-package-maven-plugin` のバージョン >= `1.3.2` を使
 
 ### インデックスの削除 {#removing-an-index}
 
-次の操作は、カスタムインデックスにのみ適用されます。製品インデックスは AEM で使用されるので、削除できません。
+次の設定は、標準提供（OOTB）のインデックスのカスタマイズと、完全なカスタムインデックスにのみ適用されます。 元の OOTB インデックスはAEMで使用されるので、削除することはできません。
 
-カスタマイズしたインデックスは、顧客リポジトリから削除することで、顧客アプリケーションの新しいバージョンで削除される場合があります。リポジトリから削除したインデックスは、インスタンス内にしばらく存在し続ける可能性がありますが、AEM のクエリには使用されません。インスタンスから古いバージョンのインデックスをクリーンアップする、定期的に実行されるクリーンアップメカニズムが導入されています。
+システムの整合性と安定性を確保するために、デプロイ後は、インデックス定義を不変として扱う必要があります。 カスタムインデックスまたはカスタマイズの削除の効果を実現するには、インデックスの削除を効果的にシミュレートする定義を使用して、カスタムインデックスまたはカスタマイズ済みインデックスの新しいバージョンを作成します。
+
+新しいバージョンのインデックスをデプロイすると、同じインデックスの古いバージョンはクエリで使用されなくなります。
+古いバージョンはただちに環境から削除されることはありません。
+ただし、定期的に実行されるクリーンアップメカニズムによって、ガベージコレクションの対象になります。
+エラーが発生した場合のリカバリを可能にする猶予期間の後
+（現在、インデックス作成が削除されてから 7 日が経過しましたが、変更される可能性があります）、
+このクリーンアップメカニズムは、未使用のインデックスデータを削除します。
+およびを指定すると、古いバージョンのインデックスが環境で無効になるか、環境から削除されます。
+
+以下では、OOTB インデックスのカスタマイズの削除と完全なカスタムインデックスの削除の 2 つのケースについて説明します。
+
+#### 標準提供のインデックスのカスタマイズの削除
+
+OOTB インデックスの定義を新しいバージョンとして使用して、[ 変更の取り消し ](#undoing-a-change-undoing-a-change) で説明されている手順に従います。 例えば、既に `damAssetLucene-8-custom-3` をデプロイしていて、カスタマイズが不要になり、デフォルトの `damAssetLucene-8` インデックスに戻す場合は、`damAssetLucene-8` のインデックス定義を含んだインデックス `damAssetLucene-8-custom-4` を追加する必要があります。
+
+#### 完全なカスタムインデックスの削除
+
+[ 変更の取り消し ](#undoing-a-change-undoing-a-change) で説明されている手順に従って、新しいバージョンとしてダミーインデックスを使用します。 ダミーインデックスはクエリには使用されず、データを含んでいないので、インデックスが存在しなかった場合と効果は同じです。 この例では、`/oak:index/acme.product-custom-3` という名前を付けることができます。この名前により、`/oak:index/acme.product-custom-2` インデックスが置き換えられます。このようなダミーインデックスの例を次に示します。
+
+```xml
+<acme.product-custom-3
+        jcr:primaryType="oak:QueryIndexDefinition"
+        async="async"
+        compatVersion="2"
+        includedPaths="/dummy"
+        queryPaths="/dummy"
+        type="lucene">
+        <indexRules jcr:primaryType="nt:unstructured">
+            <rep:root jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <dummy
+                        jcr:primaryType="nt:unstructured"
+                        name="dummy"
+                        propertyIndex="{Boolean}true"/>
+                </properties>
+            </rep:root>
+        </indexRules>
+</acme.product-custom-3>
+```
+
+
 
 ## インデックスとクエリの最適化 {#index-query-optimizations}
 
