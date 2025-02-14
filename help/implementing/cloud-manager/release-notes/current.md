@@ -4,7 +4,7 @@ description: AEM as a Cloud Service の Cloud Manager 2025.2.0 のリリース�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: ee7a99c5bf08b39a743d4b326ac23cc8546c512e
+source-git-commit: aaef376b733c10643e44205e55a0921c22008990
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 18%
@@ -65,7 +65,7 @@ AEM as a Cloud Service の Cloud Manager 2025.2.0 のリリース日は 2025年2
 * **EC 秘密鍵（secp384r1）のサポート**
 
   Cloud Managerは `secp384r1` 楕円曲線（EC）秘密鍵をサポートするようになり、顧客管理の OV/EV SSL 証明書のセキュリティとコンプライアンスを向上させます。
-詳しくは、[ 顧客が管理する OV/EV SSL 証明書の要件 ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) を参照してください。<!-- CMGR-63636 -->
+詳しくは、[ 顧客が管理する OV/EV SSL 証明書の要件 ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements) を参照してください。<!-- CMGR-63636 -->
 
 * **特殊なテスト環境**
 
