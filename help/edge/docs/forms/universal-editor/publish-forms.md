@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: a765af62628d8b6308d6f712f450a5a1e62640d9
+source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 1. フォームの公開ステータスを確認するには、もう一度 **公開** をクリックします。
    ![公開ステータス](/help/forms/assets/publish-status.png)
 
-1. フォームを **非公開** するには、エディターでフォームを開き、右上隅の 3 ドットメニューをクリックして「**非公開**」を選択します。
+1. フォームを **非公開** するには、エディターでフォームを開き、右上隅の「。..」メニューをクリックして **非公開** をクリックします。
    ![ 非公開 ](/help/forms/assets/unpublish--form.png)
 
 ## Edge Delivery Publisher のリファラーフィルターを設定して、AEMでのフォーム送信を有効にします

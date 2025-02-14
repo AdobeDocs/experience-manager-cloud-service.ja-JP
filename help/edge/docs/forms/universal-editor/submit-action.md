@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 2cb18eb1bf755df48e2d9d10fabf3cdb95e79e57
+source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 18%
@@ -46,7 +46,7 @@ REST エンドポイントを設定するには：
 
 {width=50%,height=50%}![ アダプティブフォームの POST リクエストを有効にする ](/help/forms/assets/enable-post-request-ue.png)
 
->
+>[!NOTE]
 >
 > * 内部サーバーにデータを post 送信するには、リソースのパスを指定します。 データはリソースのパスにポストされます。 例えば、`/content/restEndPoint` のようになります。このような POST リクエストには、送信リクエストの認証情報が使用されます。
 > * 外部サーバーにデータを POST 送信するには、URL を指定します。URL の形式は、`https://host:port/path_to_rest_end_point` です。POST リクエストを匿名で処理するためのパスを設定してください。
