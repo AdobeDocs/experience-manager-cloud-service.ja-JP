@@ -5,7 +5,8 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 1336e42c0632761daccca40f3c9709bbcfbed6c9
+exl-id: ac780399-34fe-457d-aaf4-b675656c024d
+source-git-commit: c7f973e373137654bd9c2084bd592ed392896cf1
 workflow-type: tm+mt
 source-wordcount: '1843'
 ht-degree: 86%
@@ -901,5 +902,3 @@ The Adaptive Forms Block offers a standardized HTML structure, simplifying the p
 * **Miscellaneous styling:**: This section covers styles for success or error messages, file upload areas, and other elements you might encounter in a form.
 
 -->
-
-

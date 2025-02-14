@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
+exl-id: beee9be7-8215-496b-9fb9-61fba000a055
+source-git-commit: ba38294710553145a670ea42dd2b7571fa4eba7b
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '733'
 ht-degree: 18%
 
 ---
-
 
 # アダプティブフォーム送信アクション
 
@@ -44,7 +44,7 @@ REST エンドポイントを設定するには：
 1. REST エンドポイント URL を指定します。
 1. また、**POST リクエストを有効にする** ことで、リクエストを POST する URL を指定することもできます。
 
-{width=50%,height=50%}![ アダプティブフォームの POST リクエストを有効にする ](/help/forms/assets/enable-post-request-ue.png)
+![ アダプティブフォームの POST リクエストを有効にする ](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ REST エンドポイントを設定するには：
 1. これにより、フォーム送信をメール通知に直接統合することで、ワークフローを合理化できます。
 1. これは、組織がメールのコンテンツをカスタマイズするのに役立ち、特定のコミュニケーションニーズに適したものにすることができます。
 
-{width=50%,height=50%}![ ユニバーサルエディターのアダプティブフォームのプロパティ ](/help/forms/assets/submit-actions-ue.png)
+![ ユニバーサルエディターでのアダプティブフォームのプロパティ ](/help/forms/assets/submit-actions-ue.png)
 
 
 送信アクションをフォーム送信用のメールとして設定するには：
@@ -140,5 +140,3 @@ REST エンドポイントを設定するには：
 1. クリックすると、次のオプションが表示されます。
    * **[!UICONTROL 送信時]**：送信時は、フォームが送信されたときに表示されるメッセージをカスタマイズするのに役立ちます。 デフォルトでは、フォームが正常に送信されると、「フォームを送信していただきありがとうございます」というカスタムメッセージがユーザーに表示されます。
 また、**[!UICONTROL メッセージを表示]** オプションを選択してフォームの送信時に「ありがとうございます」メッセージをカスタマイズしたり、リッチテキスト **エディター** でメッセージを追加または編集したりできます。
-
-
