@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 4fc312fe8a52b7c5733a68014136e297479ab2a0
+source-git-commit: d09dce45efb7d8d881420cf724de493837b6ae71
 workflow-type: tm+mt
 source-wordcount: '1843'
 ht-degree: 87%
@@ -53,8 +53,7 @@ ht-degree: 87%
 * **デフォルトのスタイルを更新**：`/blocks/form/form.css file` を編集することで、フォームのデフォルトのスタイルを変更できます。このファイルでは、複数手順のウィザードフォームをサポートする、フォームの包括的なスタイル設定を提供します。この例では、カスタム CSS 変数を使用することを重視しており、フォーム間でのカスタマイズ、メンテナンス、統一されたスタイル設定が容易になります。&lt;!— アダプティブ Forms ブロックをプロジェクトに追加する方法については、[ フォームの作成 ](/help/edge/docs/forms/create-forms.md) を参照してください。
 
 * **Formsの CSS スタイル設定**：スタイルが正しく適用されていることを確認するには、フォーム固有の CSS を `main .form form` セレクター内に含めます。 これにより、スタイルはメインコンテンツ領域内のフォーム要素のみをターゲットにし、web サイトの他の部分との競合を回避できます。
-
-  例：
+例：
 
   ```css
   main .form form input {
@@ -68,8 +67,7 @@ ht-degree: 87%
   main .form form label {
     /* Add styles specific to labels inside the form */
   }
-  ```
-
+  
 ## コンポーネント構造
 
 アダプティブフォームブロックは、様々なフォーム要素に対して一貫した HTML 構造を提供し、スタイルと管理を簡単にします。スタイル設定の目的で CSS を使用してコンポーネントを操作できます。
