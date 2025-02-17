@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d71c5d6488935de4a02c8d3828f287542b979d0f
+exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
+source-git-commit: ee5171e36c24526f331b3722fcd9bd7a1c72072b
 workflow-type: tm+mt
-source-wordcount: '1561'
-ht-degree: 6%
+source-wordcount: '1736'
+ht-degree: 5%
 
 ---
-
 
 # WYSIWYG オーサリングでのカスタムコンポーネントの作成
 
@@ -173,24 +173,25 @@ AEM プロジェクトに新しいカスタムコンポーネント用の新し�
 
 ステップ値のカスタムプロパティを追加するには、ファイルに次のコード行を含むコンポーネントモデルを追加し ` _<component>.json` す。
 
-```javascript
+    &quot;&#39;javascript
     {
-    "component": "number",
-    "name": "stepValue",
-    "label": "Step Value",
-    "valueType": "number"
+    &quot;component&quot;: &quot;number&quot;,
+    &quot;name&quot;: &quot;stepValue&quot;,
+    &quot;label&quot;: &quot;Step Value&quot;,
+    &quot;valueType&quot;: &quot;number&quot;
     }
-    ```
-The JSON snippet defines a custom property called **Step Value** for a **Range** component. Below is a breakdown of each field:
+    &quot;&#39;
 
-* **component**: Specifies the type of input field used in the Property dialog. In this case, `number` indicates that the field accepts numeric values.
-* **name**: The identifier for the property, used to reference it in the component’s logic. Here, the `stepValue` represents the step value setting for the range.
-* **label**: The display name of the property as seen in the Property dialog. 
-* **valueType**: Defines the data type expected for the property. The `number` ensures that only numeric inputs are allowed.
+JSON スニペットは、**範囲** コンポーネントに **ステップ値** と呼ばれるカスタムプロパティを定義します。 各フィールドの分類を次に示します。
 
-You can now use `stepValue` as a custom property in the JSON properties of `range.js` and implement dynamic behavior based on its value at runtime.
+* **component**: プロパティダイアログで使用される入力フィールドのタイプを指定します。 この場合、`number` は、フィールドが数値を受け入れることを示します。
+* **name**: プロパティの識別子。コンポーネントのロジックで参照するために使用されます。 ここで、`stepValue` は範囲のステップ値の設定を表します。
+* **label**: プロパティダイアログに表示されるプロパティの表示名。
+* **valueType**：プロパティに必要なデータタイプを定義します。 `number` では、数値の入力のみが許可されます。
 
-Hence, the final `_range.json` file, after adding the component definition, component model and custom properties, is as follows:
+`range.js` の JSON プロパティでカスタムプロパティとして `stepValue` を使用し、実行時にその値に基づいて動的な動作を実装できるようになりました。
+
+したがって、コンポーネント定義、コンポーネントモデル、カスタムプロパティを追加した後の最終的な `_range.json` ファイルは次のようになります。
 
 ```javascript
  {
@@ -322,6 +323,10 @@ const OOTBComponentDecorators = ['file-input',
 上記の手順を完了すると、カスタムコンポーネントがユニバーサルエディター内のフォームのコンポーネントリストに表示されます。 その後、フォームセクションにドラッグ&amp;ドロップできます。
 
 ![ 範囲コンポーネント ](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+
+次のスクリーンショットは、コンポーネントモデルに追加された `range` コンポーネントのプロパティを示しています。このプロパティは、フォーム作成者が設定できるプロパティを指定しています。
+
+![ 範囲コンポーネントのプロパティ ](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 スタイルと機能を追加して、カスタムコンポーネントの実行時の動作を定義できるようになりました。
 
