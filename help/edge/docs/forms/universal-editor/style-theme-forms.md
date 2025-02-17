@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: d09dce45efb7d8d881420cf724de493837b6ae71
+source-git-commit: 3b901af3283263e7ded0424e8557130ee49fa4cc
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1844'
 ht-degree: 87%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 87%
 * [プロパティ](https://www.w3schools.com/css/css_syntax.asp)：CSS プロパティは、要素の外観を定義します。フォームフィールドのスタイル設定に関する一般的なプロパティには、色、背景色、境界線、パディング、余白などがあります。
 * [ボックスモデル](https://www.w3schools.com/css/css_boxmodel.asp)：CSS ボックスモデルは、パディング、境界線、余白で囲まれたコンテンツ領域として、HTML 要素の構造を記述します。
 * フレックスボックス／グリッド：CSS [フレックスボックス](https://www.w3schools.com/css/css3_flexbox.asp)および[グリッドレイアウト](https://www.w3schools.com/css/css_grid.asp)は、レスポンシブで柔軟なデザインを作成するのに強力なツールです。
+
 
 ## アダプティブフォームブロックのフォームのスタイル設定
 
