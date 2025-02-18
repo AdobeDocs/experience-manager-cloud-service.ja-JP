@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: 7acbf2099a2b47b5f42885e8f9a9e1727a8112b5
+source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
 workflow-type: tm+mt
-source-wordcount: '2148'
-ht-degree: 58%
+source-wordcount: '2171'
+ht-degree: 57%
 
 ---
 
@@ -111,7 +111,7 @@ _
 
 * ルールエディターでこの機能を使用するには ](https://github.com/adobe/aem-core-forms-components)[ コアコンポーネントがバージョン 3.0.14 以降に設定されていることを確認します。
 * ルールが When 条件内の異なるフィールドに適用されている場合、これらのフィールドの 1 つのみを変更した場合でも、ルールはトリガーします。
-
+* **AND** ルールの **When** 条件に追加できるフィールドは複数のみです。 **OR** ルールには使用できません。
 
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.
@@ -134,7 +134,7 @@ When 条件機能で許可された複数のフィールドで問題が発生し
 
 1. フォームを編集モードで開きます。
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
-1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。アダプティブフォームコンテナダイアログボックスが開きます。
+1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。 アダプティブフォームコンテナダイアログボックスが開きます。
 1. 「完了」をクリックして、ダイアログを再度保存します。
 
 **[!UICONTROL Hide （非表示）]**：指定したオブジェクトを非表示にします。
@@ -344,7 +344,7 @@ When （オプション）：
 
 #### [!UICONTROL  非同期関数呼び出し ]
 
-<span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features). </span>
+<span class="preview">これはプレリリース機能で、[プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)を通してアクセスできます。</span>
 
 **[!UICONTROL 非同期関数呼び出し]** のルールタイプを使用すると、非同期関数を実行できます。 これにより、メイン実行スレッドとは独立して動作する関数呼び出しを開始できます。これにより、非同期の関数が完了するまで待たずに、他のプロセスが実行を続行できます。
 

@@ -1,13 +1,13 @@
 ---
 title: プレビューインスタンスまたはパブリッシュインスタンスでフォームを公開または非公開にする方法を教えてください。
-description: AEM オーサー環境からフォームの公開または非公開を行って、インスタンスをプレビューまたは公開する方法を説明します。 フォームをステージング環境でテストする場合でも、エンドユーザーにライブでデプロイする場合でも、AEMにはこのプロセスを効率的に管理するための合理化されたツールが用意されています。
+description: AEM オーサー環境からプレビューまたはパブリッシュインスタンスへのフォームの公開または非公開について説明します。 フォームをステージング環境でテストする場合でも、エンドユーザーにライブでデプロイする場合でも、AEMにはこのプロセスを効率的に管理するための合理化されたツールが用意されています。
 Keywords: Manage publication, Forms Manage publication, AF Manage publication, Adaptive Forms Manage publication, Cloud Manage publication
 feature: Adaptive Forms
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 role: User, Developer
 level: Intermediate
 exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
-source-git-commit: 64f4e62201c590e5da2f3b1f7e570a018dc8135c
+source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
 workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 2%
@@ -19,32 +19,32 @@ ht-degree: 2%
 Adobe Experience Manager（AEM）Forms管理者は、オーサーインスタンスからExperience Manager Formsにフォームを公開できます。 また、フォームまたはフォルダーの公開を後の日時にスケジューリングすることもできます。 公開すると、ユーザーはフォームにアクセスして入力できます。
 
 Experience Manager Formsでは、次のいずれかの方法を使用してフォームを公開できます。
-* [Publish オプション ](#publish-forms-using-the-publish-option)
+* [ 公開オプション ](#publish-forms-using-the-publish-option)
 * [「公開を管理」オプション](#publish-forms-using-the-manage-publication-option)
 
 ## 留意すべき事項
 
 * `forms-users` グループのメンバーのみが **公開を管理** オプションを使用してフォームを公開できます。
-* Experience Manager Formsのフォームやフォルダーに加えた変更は、再公開されるまで **Publish** インスタンスに表示されません。 これにより、**Publish** インスタンスで進行中の更新が利用できなくなります。 管理者によって明示的に公開された変更のみが **0}Publish} インスタンスに反映されます。**
+* Experience Manager Formsのフォームやフォルダーに加えた変更は、再公開されるまで **パブリッシュ** インスタンスに表示されません。 これにより、処理中の更新が **パブリッシュ** インスタンスで使用できなくなります。 管理者が明示的に公開した変更のみが **公開** インスタンスに反映されます。
 
-## 「Publish」オプションを使用したPublish forms
+## 「公開」オプションを使用したフォームの公開
 
-「**Publish**」オプションを使用すると、フォームをすぐに公開できます。 ツールバーの「**Publish**」ボタンを使用してExperience Managerフォームを公開します。 Publish オプションを使用してフォームを公開するには、次の手順を実行します。
+「**公開**」オプションを使用すると、フォームを直ちに公開できます。 ツールバーの **公開** ボタンを使用してExperience Manager フォームを公開するには： 「公開」オプションを使用してフォームを公開するには、次の手順を実行します。
 
 1. Experience Manager Forms コンソールで、親フォルダーに移動し、公開するフォームを選択します。
-1. ツールバーの **Publish** オプションをクリックし、フォームと共に公開されるすべての参照アセットを確認します。
+1. ツールバーの「**公開**」オプションをクリックし、フォームと共に公開されるすべての参照アセットを確認します。
 1. 「**[!UICONTROL 公開する]**」をクリックします。
 
-   ![Publishとフォームの非公開 ](/help/edge/docs/forms/assets/publish-form-option.png)
+   ![ フォームの公開と非公開 ](/help/edge/docs/forms/assets/publish-form-option.png)
 
    フォームとその関連アセットが正常に公開されると、**成功** ダイアログが表示されます。
 1. 「**閉じる**」をクリックします。
 
-   ![成功ダイアログ](/help/forms/assets/publish-success.png)
+   ![成功ダイアログ](/help/forms/assets/publish-success1.png)
 
 ### フォームを非公開にする
 
-「**Publish**」オプションとその関連アセットを使用してフォームを正常に公開した後、ツールバーにある「**[!UICONTROL 非公開]**」ボタンを使用して非公開にすることもできます。 フォームを非公開にするには：
+「**公開**」オプションとその関連アセットを使用してフォームを正常に公開した後、ツールバーにある「**[!UICONTROL 非公開]**」ボタンを使用して非公開にすることもできます。 フォームを非公開にするには：
 
 1. フォームとその関連アセットを非公開にするには、フォームを選択し、ツールバーの **[!UICONTROL 非公開]** をクリックします
 
@@ -58,7 +58,7 @@ Experience Manager Formsでは、次のいずれかの方法を使用してフ�
 
    ![ 非公開に成功 ](/help/forms/assets/unpublishing-start.png)
 
-## 「公開を管理」オプションを使用したPublish forms
+## 「公開を管理」オプションを使用したフォームの公開
 
 公開を管理を使用すると、選択した宛先にコンテンツを公開または選択した宛先からコンテンツを非公開にしたり、`forms&documents` フォルダー全体から公開リストにコンテンツを追加したり、公開する参照を選択したり、後の日時に公開をスケジュールしたりできます。  **公開を管理** オプションを使用してフォームを公開するには、次の手順を実行します。
 
@@ -75,23 +75,23 @@ Experience Manager Formsでは、次のいずれかの方法を使用してフ�
 
    * **アクション**
 
-      * **Publish**：選択した宛先へのPublish forms
+      * **公開**：選択した宛先にフォームを公開します
       * **非公開**：宛先からフォームを非公開にします
 
    * **宛先**
 
-      * **Publish**: Publish forms からExperience Manager Forms （AEM） Publish インスタンスへ。
-      * **プレビュー**:Publish forms からExperience Manager Forms（AEM）プレビューインスタンスへ。
+      * **公開**：フォームをExperience Manager Forms（AEM）パブリッシュインスタンスに公開します。
+      * **プレビュー**：フォームをExperience Manager Forms（AEM）プレビューインスタンスに公開します。
 
    * **スケジュール設定**
 
-      * **今すぐ**:Publish Forms を直ちに使用できます
-      * **後**:**アクティベート日** または時刻に基づくPublish forms
+      * **今すぐ**：フォームを直ちに公開します
+      * **Later**:**アクティベーション日** または時刻に基づいてフォームを公開します
 
 1. 「**次へ**」をクリックして続行します。
 1. （オプション）「**範囲**」タブで「[ コンテンツを追加 ](#add-content)」オプションを使用して、公開用にさらにコンテンツを追加します。 例えば、Formsやレコードのドキュメントファイルをさらに追加できます。
    ![ 「範囲」タブ ](/help/forms/assets/scope-tab.png)
-1. **[!UICONTROL Publish]** をクリックしてフォームおよび関連アセットを公開すると、成功したというメッセージが表示されます。
+1. **[!UICONTROL 公開]** をクリックして、フォームと関連アセットを公開すると、正常に完了したというメッセージが表示されます。
    ![ 正常なメッセージを公開 ](/help/forms/assets/publish-successful.png)
 
 ### コンテンツを追加する
@@ -143,7 +143,7 @@ By default, publishing a folder to Experience Manager Forms publishes all the as
         * -->
 
 
-### 後でフォームをPublishまたは非公開にする
+### 後からのフォームの公開または非公開
 
 「後で公開または非公開にする」オプションを使用すると、後でフォームを公開または非公開にできるだけでなく、ワークフローを設定することもできます。 フォームがワークフローの完了後に公開または非公開になります。
 
@@ -154,10 +154,10 @@ By default, publishing a folder to Experience Manager Forms publishes all the as
 
    ![公開を管理](/help/forms/assets/manage-publication.png)
 
-1. 「**Publish**」または **非公開** を **[!UICONTROL アクション]** からクリックします。
+1. **アクション** から **公開** または **[!UICONTROL 非公開]** をクリックします。
 1. コンテンツを公開または非公開にする **[!UICONTROL 宛先]** を選択します。
    * **プレビュー**:「**プレビュー**」オプションを使用して、Experience Manager Forms プレビュー環境に公開または非公開にします。 Experience Manager Forms プレビュー環境は、開発フォームでテストするために使用します。
-   * **Publish**: フォームが実稼動環境で使用できる状態になったら、「Experience Manager Forms **Publish**」オプションを使用して、フォームをExperience Manager Forms パブリッシュ環境に送信します。
+   * **公開**：フォームが実稼動環境で使用できる状態になったら、「Experience Manager Forms **公開**」オプションを使用して、フォームをExperience Manager Forms パブリッシュ環境に送信します。
 
 1. **[!UICONTROL スケジュール]** から **後で** を選択します。
 
@@ -169,7 +169,7 @@ By default, publishing a folder to Experience Manager Forms publishes all the as
    ![ 公開を管理してコンテンツを後で追加 ](/help/forms/assets/publish-later-add-content.png)
 1. 「**[!UICONTROL 次へ]**」をクリックします。
 1. 「**ワークフロー**」タブで、**[!UICONTROL ワークフロータイトル]** を指定します。
-1. 「**[!UICONTROL Publishを後で]**」をクリックします。
+1. **[!UICONTROL 後で公開する]** をクリックします。
 
    ![「公開を管理」ワークフロー](/help/forms/assets/manage-publication-workflows.png)
 
