@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ae962d89b842b0708c1ac8633bb49c86cb2edfda
+source-git-commit: 693576c9da99d3cc74b7cec8a7c7ea08120ae5bb
 workflow-type: tm+mt
-source-wordcount: '6086'
-ht-degree: 99%
+source-wordcount: '6092'
+ht-degree: 98%
 
 ---
 
@@ -782,6 +782,7 @@ ht-degree: 99%
             + [カスタム送信アクションの作成](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [移行ユーティリティツールを使用した基盤コンポーネントベースのアダプティブフォームからコアコンポーネントベースのフォームへの変換](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [アダプティブフォームのメールテンプレート](/help/forms/html-email-templates-in-adaptive-forms.md)
+            + [&#x200B;Experience Manager Formsでの公開の管理](/help/forms/manage-publication.md)
             + コアコンポーネントに基づくアダプティブフォームのルールエディターの概要{#rule-editor-core-components}
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターの概要](/help/forms/rule-editor-core-components.md)
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターのユーザーインターフェイス](/help/forms/rule-editor-core-components-user-interface.md)
