@@ -8,11 +8,11 @@ exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 source-git-commit: 3143ca304ec7ff56d45502a3fd5e49b3b9ed6ce4
 workflow-type: tm+mt
 source-wordcount: '1709'
-ht-degree: 81%
+ht-degree: 97%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] HTTP API でのデジタルアセットの管理{#assets-http-api}
+# [!DNL Adobe Experience Manager Assets] HTTP API を使用したデジタルアセットの管理{#assets-http-api}
 
 | [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
@@ -24,7 +24,7 @@ ht-degree: 81%
 
 ## AEM [!DNL Assets] HTTP API の概要 {#overview}
 
-AEM [!DNL Assets] HTTP API を使用すると、/`api/assets` で使用可能な REST インターフェイスを介して、デジタルアセットに対する CRUD （作成、読み取り、更新、削除）操作を有効にできます。 これらの操作は、アセットのメタデータ、レンディションおよびコメントに適用されます。 [コンテンツフラグメントをサポート](/help/assets/content-fragments/assets-api-content-fragments.md)しています。
+AEM [!DNL Assets] HTTP API を使用すると、/`api/assets` で使用可能な REST インターフェイスを介して、デジタルアセットに対する CRUD （作成、読み取り、更新、削除）操作を有効にできます。 これらの操作は、アセットのメタデータ、レンディションおよびコメントに適用されます。これには、[コンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)が含まれます。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 ## コンテンツフラグメントの管理 {#content-fragments}
 
-[ コンテンツフラグメント ](/help/assets/content-fragments/content-fragments.md) は、テキスト、数値、日付を格納する構造化アセットです。 `standard` アセット（画像やドキュメントなど）とはいくつかの違いがあるので、コンテンツフラグメントの処理にはいくつかの追加ルールが適用されます。
+[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)は、テキスト、数値および日付を保存する、構造化されたアセットです。`standard` アセット（画像やドキュメントなど）とはいくつかの違いがあるので、コンテンツフラグメントの処理にはいくつかの追加ルールが適用されます。
 
 詳しくは、[ [!DNL Experience Manager Assets]  HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)を参照してください。
 
@@ -55,7 +55,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 ## データモデルを調べる {#data-model}
 
-[!DNL Assets] HTTP API は、主にフォルダーと標準アセットという 2 つの要素を公開します。 また、コンテンツフラグメントで使用するカスタムデータモデルの詳細な要素も提供します。 詳しくは、コンテンツフラグメントのデータモデルを参照してください。 詳しくは、[コンテンツフラグメントのデータモデル](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)を参照してください。
+[!DNL Assets] HTTP API は 、主にフォルダーと標準アセットの 2つの要素を公開します。また、コンテンツフラグメントで使用するカスタムデータモデルの詳細な要素も提供します。詳しくは、コンテンツフラグメントのデータモデルを参照してください。詳しくは、[コンテンツフラグメントのデータモデル](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)を参照してください。
 
 >[!NOTE]
 >
@@ -63,14 +63,14 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 ### フォルダーの管理 {#folders}
 
-フォルダーは、従来のファイルシステムにおけるディレクトリに似ています。フォルダーには、アセット、サブフォルダーまたはその両方を含めることができます。 フォルダーには、以下のコンポーネントがあります。
+フォルダーは、従来のファイルシステムにおけるディレクトリに似ています。フォルダーには、アセット、サブフォルダーまたはその両方を含めることができます。フォルダーには、以下のコンポーネントがあります。
 
 **エンティティ**：フォルダーのエンティティはフォルダーの子要素で、フォルダーまたはアセットです。
 
 **プロパティ**：
 
 * `name`：フォルダーの名前（拡張子を除いた URL パスの最後のセグメント）。
-* `title`：フォルダー名の代わりに表示されるオプションのタイトルです。
+* `title`：フォルダー名の代わりに表示されるオプションのタイトル。
 
 >[!NOTE]
 >
@@ -80,16 +80,16 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 * `self`：フォルダー自体へのリンク。
 * `parent`：親フォルダーへのリンク。
-* `thumbnail` （任意）：フォルダーのサムネール画像へのリンク。
+* `thumbnail`（オプション）：フォルダーのサムネール画像へのリンク。
 
 ### アセットの管理 {#assets}
 
 [!DNL Experience Manager] では、アセットには次の要素が含まれています。
 
-* **プロパティとメタデータ：** アセットに関する識別情報。
-* **バイナリファイル：** 最初にアップロードされたファイル。
-* **レンディション：** 設定された複数のレンディション（様々なサイズの画像、異なるビデオエンコーディング、PDF/Adobe InDesign ファイルから抽出されたページなど）。
-* **コメント（任意）:** ユーザーが指定した備考。
+* **プロパティとメタデータ：**&#x200B;アセットに関する詳細情報。
+* **バイナリファイル：**&#x200B;最初にアップロードされたファイル。
+* **レンディション：**&#x200B;複数の設定されたレンディション（様々なサイズの画像、異なるビデオエンコーディング、PDF／Adobe InDesign ファイルから抽出されたページなど）。
+* **コメント（オプション）：**&#x200B;ユーザーが指定した備考。
 
 コンテンツフラグメントの要素については、[AEM Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)を参照してください。
 
@@ -173,7 +173,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 ## アセットの作成 {#create-an-asset}
 
-この HTTP API 経由でのアセットの作成はサポートされていません。 アセット作成には、[ アセットアップロード ](developer-reference-material-apis.md) API を使用します。
+アセットの作成は、この HTTP API 経由ではサポートされていません。アセットの作成には、[アセットアップロード](developer-reference-material-apis.md) API を使用します。
 
 ## アセットバイナリの更新 {#update-asset-binary}
 
@@ -181,7 +181,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 ## アセットのメタデータの更新 {#update-asset-metadata}
 
-この操作は、アセットのメタデータを更新します。 `dc:` 名前空間のプロパティを更新すると、対応する `jcr:` プロパティが更新されます。 ただし、API は、2 つの名前空間の下のプロパティを同期しません。
+この操作により、アセットのメタデータが更新されます。`dc:` 名前空間のプロパティを更新すると、対応する `jcr:` プロパティが更新されます。ただし、API は 2 つの名前空間のプロパティを同期しません。
 
 **リクエスト**：`PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
@@ -198,7 +198,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 **パラメーター**：パラメーターは次のとおりです。
 
-`name`：レンディション名。
+`name`：レンディション名の場合。
 `file`：参照としてのレンディションのバイナリファイル。
 
 **リクエスト**
@@ -295,9 +295,9 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 ## ベストプラクティスとメモの制限に従う {#tips-limitations}
 
-* [!UICONTROL  オフタイム ] に達すると、[!DNL Assets] Web インターフェイスと HTTP API を介してAssetsとそのレンディションが使用できなくなります。 [!UICONTROL  オンタイム ] が未来の時間である場合、または [!UICONTROL  オフタイム ] が過去の時間である場合、API は 404 エラーを返します。
+* [!UICONTROL オフタイム]に達すると、アセットとそのレンディションは、[!DNL Assets] web インターフェイスと HTTP API 経由では使用できなくなります。[!UICONTROL オンタイム]が未来の場合や、[!UICONTROL オフタイム]が過去の場合、API は 404 エラーを返します。
 
-* Assets HTTP API は、メタデータのサブセットのみを返します。 名前空間はハードコードされ、これらの名前空間のみが返されます。完全なメタデータについては、アセットパス `/jcr_content/metadata.json` を参照してください。
+* Assets HTTP API は、メタデータのサブセットのみを返します。名前空間はハードコードされ、これらの名前空間のみが返されます。完全なメタデータについては、アセットパス `/jcr_content/metadata.json` を参照してください。
 
 * API を使用して更新された場合、フォルダーまたはアセットの一部のプロパティは、異なるプレフィックスにマップされます。`jcr:title`、`jcr:description`、`jcr:language` の `jcr` プレフィックスは `dc` プレフィックスに置き換えられます。したがって、返された JSON コードで、`dc:title`、`dc:description` にはそれぞれ `jcr:title`、`jcr:description` の値が含まれています。
 

@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 22a0f65a4136fcf90ff9c19825d6d2bf37578045
 workflow-type: tm+mt
 source-wordcount: '6098'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -865,7 +865,7 @@ ht-degree: 98%
       + [フォームのプレビュー](/help/forms/previewing-forms.md)
    + インタラクティブ通信 {#interactive-communocation}
       + [インタラクティブ通信の概要](/help/forms/introduction-to-interactive-communication.md)
-      + [最初のインタラクティブ通信を作成](/help/forms/create-your-first-communication.md)
+      + [最初のインタラクティブ通信の作成](/help/forms/create-your-first-communication.md)
       + [よくある質問](/help/forms/interactive-communications-faq.md)
    + Forms 中心のワークフロー {#create-form-centric-workflows}
       + [Forms 中心のワークフローの導入](/help/forms/aem-forms-workflow.md)

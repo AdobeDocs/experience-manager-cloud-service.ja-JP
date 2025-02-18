@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 52%
+ht-degree: 81%
 
 ---
 
@@ -36,9 +36,9 @@ ht-degree: 52%
 
 ## プロパティパネルでのコンポーネントを条件付きで表示および非表示にする {#conditionally-hide}
 
-1 つまたは複数のコンポーネントを一般的に作成者が利用できる場合がありますが、意味をなさない状況が発生する場合もあります。 その場合、`condition` 属性を [ コンポーネントモデルのフィールド ](/help/implementing/universal-editor/field-types.md#fields) に追加することで、プロパティパネルでコンポーネントを非表示にできます。
+1 つまたは複数のコンポーネントを一般的に作成者が利用できる場合がありますが、意味をなさない状況が発生する場合もあります。 このような場合、`condition` 属性を[コンポーネントモデルのフィールド](/help/implementing/universal-editor/field-types.md#fields)に追加することによって、プロパティパネルでコンポーネントを非表示にすることができます。
 
-条件は、[JsonLogic スキーマ ](https://jsonlogic.com/) を使用して定義できます。 条件が true の場合、フィールドが表示されます。 条件が false の場合、フィールドは非表示になります。
+条件は、[JsonLogic スキーマ](https://jsonlogic.com/)を使用して定義できます。条件が true の場合、フィールドが表示されます。条件が false の場合、フィールドは非表示になります。
 
 >[!BEGINTABS]
 
@@ -77,9 +77,9 @@ ht-degree: 52%
 
 ## カスタムプレビュー URL {#custom-preview-urls}
 
-カスタムプレビュー URL は、`urn:adobe:aue:config:preview` のメタ設定を使用して指定できます。この設定は、**エディターの右上のツールバー ](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar) にある「[ ページを開く** ボタンをクリックすると開きます。
+カスタムプレビュー URL は、`urn:adobe:aue:config:preview` メタ設定を使用して指定できます。この URL は、[エディターの右上のツールバー](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)にある「**ページを開く**」ボタンをクリックすると開きます。
 
-これは、[WYSIWYG オーサリングでEdge Delivery Servicesを使用する ](/help/edge/wysiwyg-authoring/authoring.md) など、特定のプレビュー要件を持つアプリケーションで特に役立ちます。
+これは、[WYSIWYG オーサリングを備えた Edge Delivery Services を使用](/help/edge/wysiwyg-authoring/authoring.md)するアプリケーションなど、特定のプレビュー要件を持つアプリケーションに特に役立ちます。
 
 これを行うには、次の例のように、実装されたアプリのメタタグに目的のプレビュー URL を含めるのみです。
 

@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 source-git-commit: d37bdc060ea569748745011346bc448a569ae91d
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 60%
+ht-degree: 65%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 60%
 
 ## 概要 {#overview}
 
-フロントエンドパイプラインは、[ サイトテーマ ](site-themes.md) と [ サイトテンプレート ](site-templates.md) に基づいて web サイトのフロントエンドコードだけを迅速にデプロイできるメカニズムです。
+フロントエンドパイプラインは、[サイトテーマ](site-themes.md)と[サイトテンプレート](site-templates.md)に基づいて web サイトのフロントエンドコードだけを迅速にデプロイできるメカニズムです。
 
 このパイプラインはフロントエンドコードのみを処理するので、フルスタックデプロイメントよりデプロイメントプロセスが高速になります。これにより、フロントエンド開発者は AEM の知識がなくても、サイトを簡単にカスタマイズできます。
 
@@ -44,7 +44,7 @@ AEM では、サイトがサイトテンプレートとテーマを使用して�
 
 ## 要件 {#requirements}
 
-AEM では、フロントエンドパイプラインを使用するように既存のサイトを自動的に適応させることができます。このワークフローを実行するには、サイトがコアコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/wcm-components/page) のページコンポーネント [v2 以降を使用している必要があります。
+AEM では、フロントエンドパイプラインを使用するように既存のサイトを自動的に適応させることができます。このワークフローを実行するには、サイトで[コアコンポーネントのページコンポーネント v2 以降](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/wcm-components/page)を使用する必要があります。
 
 ## フロントエンドパイプラインの有効化 {#enabling}
 

@@ -8,7 +8,7 @@ exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
 source-git-commit: 9daa4ea54e87694c297a42748aa8705eb712d182
 workflow-type: tm+mt
 source-wordcount: '1616'
-ht-degree: 74%
+ht-degree: 97%
 
 ---
 
@@ -24,8 +24,8 @@ ht-degree: 74%
 
 >[!TIP]
 >
->* ユニバーサルエディターを使用したオーサリングについて詳しくは、ドキュメント [ ユニバーサルエディターを使用したコンテンツのオーサリング ](/help/sites-cloud/authoring/universal-editor/authoring.md) を参照してください。
->* ユニバーサルエディターの詳細については、「[ ユニバーサルエディターの概要 ](/help/implementing/universal-editor/introduction.md)」を参照してください。
+>* ユニバーサルエディターを使用したオーサリングについて詳しくは、[ユニバーサルエディターを使用したコンテンツのオーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md)ドキュメントを参照してください。
+>* ユニバーサルエディターについて詳しくは、[ユニバーサルエディターの概要](/help/implementing/universal-editor/introduction.md)を参照してください。
 
 ## アプリを準備する {#prepare-app}
 
@@ -48,13 +48,13 @@ ht-degree: 74%
 
 >[!NOTE]
 >
->[**Sites** コンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) でページを編集する場合、コンソールは、ページの [ テンプレート ](/help/sites-cloud/authoring/page-editor/templates.md) このドキュメントで説明されているユニバーサルエディター、または [ ページエディター ](/help/sites-cloud/authoring/page-editor/introduction.md) に適したエディターを開きます。
+>[**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)でページを編集する際、コンソールはページの[テンプレート](/help/sites-cloud/authoring/page-editor/templates.md)に適したエディター（このドキュメントで説明するユニバーサルエディターや[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)）を開きます。
 
 ### 直接アクセス {#accessing-directly}
 
-1. ユニバーサルエディターにログインします。ログインして [ ユニバーサルエディターへのアクセス権を持つ ](/help/implementing/universal-editor/getting-started.md#request-access) には、Adobe IDが必要です。
+1. ユニバーサルエディターにログインします。ログインして[ユニバーサルエディターにアクセスする](/help/implementing/universal-editor/getting-started.md#request-access)には、Adobe ID が必要です。
 
-1. ログインしたら、編集するページの URL を [ ロケーションバー ](#location-bar) に入力して、テキストコンテンツやメディアコンテンツなどのコンテンツの編集を開始できるようにします。
+1. ログインしたら、編集するページの URL を[ロケーションバー](#location-bar)に入力すると、テキストコンテンツやメディアコンテンツなどのコンテンツの編集を開始できます。
 
 ## UI について {#ui}
 
@@ -75,7 +75,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 #### Experience Manager {#experience-manager}
 
-ヘッダーの左側にあるAdobe Experience Cloud リンクをクリックしてExperience Manager ソリューションのルートに移動し、[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)、ソフトウェア配布 [ などのツールにアクセス ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ja) ます。
+ヘッダーの左側にある Adobe Experience Cloud リンクを選択して Experience Manager ソリューションのルートに移動し、[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) および[ソフトウェア配布](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ja)といったツールにアクセスします。
 
 ![グローバルナビゲーションボタン](assets/global-navigation.png)
 
@@ -111,7 +111,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ### ユニバーサルエディターのツールバー {#universal-editor-toolbar}
 
-ユニバーサルエディターツールバーは、常に画面の上部 [Experience Cloud ヘッダー ](#experience-cloud-header) のすぐ下に表示されます。 このツールを使用すると、別のページに素早くアクセスして編集し、現在のページを公開できます。
+ユニバーサルエディターのツールバーは、常に画面の上部、[Experience Cloud ヘッダー](#experience-cloud-header)のすぐ下に表示されます。このツールを使用すると、別のページに素早くアクセスして編集したり、現在のページを公開したりできます。
 
 ![ユニバーサルエディターのツールバー](assets/universal-editor-toolbar.png)
 
@@ -127,7 +127,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 >[!NOTE]
 >
->ユニバーサルエディターで編集するページは、ユニバーサルエディターをサポートするために [ インストルメントを行 ](/help/implementing/universal-editor/getting-started.md) 必要があります。
+>ユニバーサルエディターで編集するページは、[ユニバーサルエディターをサポートするのに実装する](/help/implementing/universal-editor/getting-started.md)必要があります。
 
 #### ロケーションバー {#location-bar}
 
@@ -141,11 +141,11 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 >[!NOTE]
 >
->ユニバーサルエディターで編集するページは、ユニバーサルエディターをサポートするために [ インストルメントを行 ](/help/implementing/universal-editor/getting-started.md) 必要があります。
+>ユニバーサルエディターで編集するページは、[ユニバーサルエディターをサポートするのに実装する](/help/implementing/universal-editor/getting-started.md)必要があります。
 
 #### 認証ヘッダーの設定 {#authentication-settings}
 
-[ 認証目的でカスタム認証ヘッダーを設定する ](/help/implementing/universal-editor/developer-overview.md#auth-header) 必要がある場合は、「ローカル開発ヘッダー設定」アイコンを選択します。
+[ローカル開発目的でカスタム認証ヘッダーを設定](/help/implementing/universal-editor/developer-overview.md#auth-header)する必要がある場合は、認証ヘッダー設定アイコンを選択します。
 
 ![認証ヘッダー設定ボタン](assets/authentication-header-settings.png)
 
@@ -189,7 +189,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 >[!TIP]
 >
->アプリのプレビュー URL [ カスタマイズ可能 ](/help/implementing/universal-editor/customizing.md#custom-preview-urls)。
+>アプリのプレビュー URL は[カスタマイズできます](/help/implementing/universal-editor/customizing.md#custom-preview-urls)。
 
 #### 公開 {#publish}
 
@@ -214,7 +214,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 ユニバーサルエディターには、カスタマイズ可能で拡張性の高いオーサリングエクスペリエンスが用意されています。ツールバーにその他のボタンを表示する場合は、ユニバーサルエディターが拡張されています。
 
 * 拡張機能の可能性について詳しくは、[ ユニバーサルエディターの拡張 ](/help/implementing/universal-editor/extending.md) を参照してください。
-* 個々の拡張機能の仕組みについて詳しくは、[Extension Manager ドキュメント ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/) を参照してください。
+* 個別の拡張機能の動作について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)を参照してください。
 
 ### エディター {#editor}
 
@@ -222,7 +222,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ![エディター](assets/editor.png)
 
-エディターが [ プレビューモード ](#preview-mode) の場合、コンテンツはナビゲート可能で、リンクをたどることができますが、コンテンツを編集することはできません。
+エディターが[プレビューモード](#preview-mode)の場合、コンテンツに移動し、リンクをたどることはできますが、コンテンツは編集できません。
 
 ### プロパティパネル {#properties-rail}
 
@@ -280,7 +280,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ![追加アイコン](assets/ue-add-component-icon.png)
 
-追加ボタンをタップまたはクリックすると、[ 選択したコンテナに追加 ](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) できるコンポーネントのドロップダウンメニューが開きます。
+「追加」ボタンをタップまたはクリックすると、使用できるコンポーネントのドロップダウンメニューが開き、[選択したコンテナに追加](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)します。
 
 ![コンテキストメニューを追加](assets/add-context-menu.png)
 
@@ -294,7 +294,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ![複製アイコン](assets/duplicate.png)
 
-「複製」ボタンをタップまたはクリック [ 選択したコンポーネントを複製 ](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components) します。
+「複製」ボタンをタップまたはクリックすると、[選択したコンポーネントが複製されます](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)。
 
 ##### 削除 {#delete}
 
@@ -302,7 +302,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ![削除アイコン](assets/ue-delete-component-icon.png)
 
-「削除」ボタンをタップまたはクリック [ コンポーネントを削除 ](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)。
+「削除」ボタンをタップまたはクリックすると、[コンポーネントが削除されます](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)。
 
 >[!TIP]
 >
@@ -312,9 +312,9 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ユニバーサルエディターは、カスタマイズ可能で拡張可能なオーサリングエクスペリエンスを提供します。 プロパティパネルまたはツールバーに追加のボタンまたはオプションが表示される場合は、ユニバーサルエディターが拡張されています。
 
-* 拡張機能の設定について詳しくは、[ ユニバーサルエディターのカスタマイズと拡張 ](/help/implementing/universal-editor/customizing.md) を参照してください。
-* 個々の拡張機能の仕組みについて詳しくは、[Extension Manager ドキュメント ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/) を参照してください。
+* 拡張機能について詳しくは、[ユニバーサルエディターのカスタマイズと拡張](/help/implementing/universal-editor/customizing.md)を参照してください。
+* 個別の拡張機能の動作について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)を参照してください。
 
 ## 次の手順 {#next-steps}
 
-ユニバーサルエディターへのアクセスと操作の方法がわかったので、次は [ それを使用してコンテンツを作成する ](/help/sites-cloud/authoring/universal-editor/authoring.md) 準備が整いました。
+ユニバーサルエディターにアクセスして操作する方法について理解したので、[これを使用してコンテンツを作成](/help/sites-cloud/authoring/universal-editor/authoring.md)する準備が整いました。

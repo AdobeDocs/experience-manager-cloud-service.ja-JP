@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -69,7 +69,7 @@ AEM に既に精通している場合は、Sites コンソールを使用して�
 1. コンテンツ作成者は、直感的な WYSIWYG インターフェイスでページコンテンツを編集し、インプレースで編集します。
 1. ユニバーサルエディターは、変更を自動的にデータソースに保持します。
 
-ユニバーサルエディターのアーキテクチャについて詳しくは、「ユニバーサルエディターアーキテクチャ [ のドキュメントを参照してください ](/help/implementing/universal-editor/architecture.md)。
+ユニバーサルエディターのアーキテクチャについて詳しくは、[ユニバーサルエディターのアーキテクチャ](/help/implementing/universal-editor/architecture.md)ドキュメントを参照してください。
 
 ## ユニバーサルエディターの概念 {#concepts}
 
