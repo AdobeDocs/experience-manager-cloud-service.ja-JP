@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
+source-git-commit: 65347a1b1387d15ba419e386c2c05acfd238eaae
 workflow-type: tm+mt
-source-wordcount: '6080'
+source-wordcount: '6085'
 ht-degree: 99%
 
 ---
@@ -211,6 +211,8 @@ ht-degree: 99%
       + [バリエーションを生成の最新リリースノート](/help/generative-ai/release-notes-generate-variations.md)
    + ユニバーサルエディターのリリースノート {#univeral-editor}
       + [ユニバーサルエディターの最新リリースノート](/help/release-notes/universal-editor/current.md)
+      + 2025年度 {#2025}
+         + [リリースノート（2025.01.16）](/help/release-notes/universal-editor/2025/2025-01-16.md)
       + 2024年度 {#2024}
          + [リリースノート（2024.12.02）](/help/release-notes/universal-editor/2024/2024-12-02.md)
          + [リリースノート（2024.11.13）](/help/release-notes/universal-editor/2024/2024-11-13.md)
