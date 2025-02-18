@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9daa4ea54e87694c297a42748aa8705eb712d182
 workflow-type: tm+mt
-source-wordcount: '1613'
-ht-degree: 76%
+source-wordcount: '1616'
+ht-degree: 74%
 
 ---
 
@@ -75,7 +75,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 #### Experience Manager {#experience-manager}
 
-ヘッダーの左側にあるAdobe Experience Cloud リンクをクリックしてExperience Managerソリューションのルートに移動し、[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)、ソフトウェア配布 [ などのツールにアクセス ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ja) ます。
+ヘッダーの左側にあるAdobe Experience Cloud リンクをクリックしてExperience Manager ソリューションのルートに移動し、[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)、ソフトウェア配布 [ などのツールにアクセス ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ja) ます。
 
 ![グローバルナビゲーションボタン](assets/global-navigation.png)
 
@@ -111,7 +111,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ### ユニバーサルエディターのツールバー {#universal-editor-toolbar}
 
-ユニバーサルエディターツールバーは、常に画面の上部（Experience Cloudヘッダー [ のすぐ下に表示さ ](#experience-cloud-header) ます。 このツールを使用すると、別のページに素早くアクセスして編集し、現在のページを公開できます。
+ユニバーサルエディターツールバーは、常に画面の上部 [Experience Cloud ヘッダー ](#experience-cloud-header) のすぐ下に表示されます。 このツールを使用すると、別のページに素早くアクセスして編集し、現在のページを公開できます。
 
 ![ユニバーサルエディターのツールバー](assets/universal-editor-toolbar.png)
 
@@ -213,8 +213,8 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ユニバーサルエディターには、カスタマイズ可能で拡張性の高いオーサリングエクスペリエンスが用意されています。ツールバーにその他のボタンを表示する場合は、ユニバーサルエディターが拡張されています。
 
-* 拡張機能の設定について詳しくは、[ ユニバーサルエディターのカスタマイズと拡張 ](/help/implementing/universal-editor/customizing.md) を参照してください。
-* 個々の拡張機能の仕組みについて詳しくは、[Extension Managerドキュメント ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/) を参照してください。
+* 拡張機能の可能性について詳しくは、[ ユニバーサルエディターの拡張 ](/help/implementing/universal-editor/extending.md) を参照してください。
+* 個々の拡張機能の仕組みについて詳しくは、[Extension Manager ドキュメント ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/) を参照してください。
 
 ### エディター {#editor}
 
@@ -308,12 +308,12 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 >
 >ホットキー `Shift+Backspace` を使用して、選択したコンポーネントをコンテナから削除します。
 
-#### その他のボタン {#additional-properties-rail-buttons}
+## その他の機能 {#additional-features}
 
-ユニバーサルエディターには、カスタマイズ可能で拡張性の高いオーサリングエクスペリエンスが用意されています。プロパティパネルにその他のボタンを表示する場合は、ユニバーサルエディターが拡張されています。
+ユニバーサルエディターは、カスタマイズ可能で拡張可能なオーサリングエクスペリエンスを提供します。 プロパティパネルまたはツールバーに追加のボタンまたはオプションが表示される場合は、ユニバーサルエディターが拡張されています。
 
 * 拡張機能の設定について詳しくは、[ ユニバーサルエディターのカスタマイズと拡張 ](/help/implementing/universal-editor/customizing.md) を参照してください。
-* 個々の拡張機能の仕組みについて詳しくは、[Extension Managerドキュメント ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/) を参照してください。
+* 個々の拡張機能の仕組みについて詳しくは、[Extension Manager ドキュメント ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/) を参照してください。
 
 ## 次の手順 {#next-steps}
 

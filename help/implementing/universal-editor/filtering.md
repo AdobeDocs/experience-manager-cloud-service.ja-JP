@@ -4,10 +4,10 @@ description: コンポーネントフィルターを使用して、ユニバー�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 63%
+source-wordcount: '153'
+ht-degree: 62%
 
 ---
 
@@ -53,4 +53,7 @@ data-aue-filter="container-filter"
 
 >[!TIP]
 >
->ユニバーサルエディターで使用できるその他のカスタマイズおよび拡張オプションについては、ドキュメント [ ユニバーサルエディターのカスタマイズと拡張 ](/help/implementing/universal-editor/customizing.md) を参照してください。
+>ユニバーサルエディターで使用できるその他のカスタマイズおよび拡張オプションについては、次のドキュメントを参照してください。
+>
+>* [ ユニバーサルエディターのカスタマイズ ](/help/implementing/universal-editor/customizing.md)
+>* [ ユニバーサルエディターの拡張 ](/help/implementing/universal-editor/extending.md)

@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 73b1a318325e7641ee0fd7a76a3a73a7299c8b91
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 100%
+source-wordcount: '591'
+ht-degree: 88%
 
 ---
 
@@ -16,6 +16,16 @@ ht-degree: 100%
 # ユニバーサルエディターを使用したコンテンツの公開 {#publishing}
 
 ユニバーサルエディターでのコンテンツの公開方法と、アプリでの公開済みコンテンツの処理方法を説明します。
+
+## 作成者としてのコンテンツの公開 {#publishing-content}
+
+コンテンツ作成者としてコンテンツを公開する準備が整ったら、ユニバーサルエディターのツールバーにある [**公開** アイコンをタップまたはクリックするだけで済みます ](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)。
+
+[Sites コンソールから ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) 公開することもできます。これは、複数のページのコンテンツを公開する場合に便利です。
+
+>[!NOTE]
+>
+>ユニバーサルエディターは、ワークフローが公開プロセスをサポートできるように [ 拡張機能と UI 拡張機能 ](/help/implementing/universal-editor/extending.md) をサポートしています。
 
 ## AEM との類似点 {#similarities}
 
