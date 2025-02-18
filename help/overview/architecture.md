@@ -5,9 +5,9 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2713'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -180,7 +180,7 @@ AEM プロジェクトのコードと設定は、コードリポジトリに保�
    * AEMオーサー層とパブリッシュ層用のサーバー側 Java コードと OSGi 設定を保存する場合。
 * AEM フロントエンド：
    * AEM オーサー層とパブリッシュ層用のクライアント側 JS、CSS、およびHTMLコードを保存する場合。
-clientlibs について詳しくは、[AEM as a Cloud Serviceでのクライアントサイドライブラリの使用 ](/help/implementing/developing/introduction/clientlibs.md) を参照してください。
+clientlibs について詳しくは、[AEM as a Cloud Service でのクライアントサイドライブラリの使用](/help/implementing/developing/introduction/clientlibs.md)を参照してください。
 * AEM web 層：
    * AEM パブリッシュ層用の Dispatcher 設定ファイルを格納します。
 * AEM の設定：

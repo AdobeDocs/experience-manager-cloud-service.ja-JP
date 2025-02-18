@@ -5,9 +5,9 @@ exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 feature: Developing Screens
 role: Admin, Developer, User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2042'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 99%
 
 1. ローカル開発環境
 
-**CRXDE Lite** を使用して、チュートリアルの手順とスクリーンショットを実行します。IDE を使用してチュートリアルを完了することもできます。IDE を使用した [AEMを使用した）開発について詳しくは、こちらを参照してください ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=ja)。
+**CRXDE Lite** を使用して、チュートリアルの手順とスクリーンショットを実行します。IDE を使用してチュートリアルを完了することもできます。AEM での開発に IDE を使用する方法について詳しくは、[こちら](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=ja)を参照してください。
 
 
 ## プロジェクトのセットアップ {#project-setup}

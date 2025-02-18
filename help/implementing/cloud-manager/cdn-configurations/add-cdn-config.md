@@ -6,9 +6,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
 source-git-commit: 70ee0ca9e7bb37abc6b82413fc02e37347893011
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '453'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 98%
 >
 >[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)と [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)をそれぞれ行いましたか？そうでない場合は、CDN 設定を追加する前に、これらの 2 つのタスクを完了する必要があります。
 
-[Adobeの管理による CDN](https://www.aem.live/docs/byo-cdn-adobe-managed) も参照してください。
+詳しくは、[アドビが管理する CDN](https://www.aem.live/docs/byo-cdn-adobe-managed) も参照してください。
 
 **CDN 設定を追加するには：**
 

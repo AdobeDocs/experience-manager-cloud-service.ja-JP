@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1130'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Admin Console でユーザープロファイルを作成して重要なメール
 * **インシデント通知** - これらの通知は、インシデント発生時またはアドビが AEM as a Cloud Service 環境の可用性に関する潜在的な問題を特定した場合に送信されます。
 * **事前通知** - これらの通知は、アドビのサポートチームメンバーが、AEM as a Cloud Service 環境に役立つ、潜在的な最適化やレコメンデーションに関するガイダンスを提供したい場合に送信されます。
 
-また、ユーザーは、（カスタムグループ権限 [ に基づいて、特定のプログラムに対するこれらの通知を受け取るこ ](/help/implementing/cloud-manager/custom-permissions.md) もできます。
+また、ユーザーは、[カスタムグループ権限](/help/implementing/cloud-manager/custom-permissions.md)に基づいて、特定のプログラムに対するこれらの通知を受信することもできます。
 
 さらに、事前通知へのグループの割り当てがサポートされ、ユーザーとグループを製品プロファイルに直接割り当てることができます。
 
@@ -43,7 +43,7 @@ Admin Console でユーザープロファイルを作成して重要なメール
 
 通知の受信を適切に設定するには、2 つのユーザープロファイルを作成します。これらの手順は 1 回だけ実行されます。
 
-1. [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) からAdmin Consoleにログインします。
+1. [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) で Admin Console にログインします。
 
 1. 自分が正しい組織に属していることを確認します。
 
@@ -103,7 +103,7 @@ Federated ID がまだ設定されていないユーザーを追加するには�
 
    ![ユーザー](assets/product_services.png)
 
-1. チームメンバーの Federated ID がまだ設定されていない場合は、上部のナビゲーションから「**ユーザー**」タブを選択し、「**ユーザーを追加**」を選択します。それ以外の場合は、[ プロファイルに既存ユーザーを追加する ](#existing-users) の節にスキップします。
+1. チームメンバーの Federated ID がまだ設定されていない場合は、上部のナビゲーションから「**ユーザー**」タブを選択し、「**ユーザーを追加**」を選択します。それ以外の場合は、[プロファイルに既存ユーザーを追加する](#existing-users)の節にスキップします。
 
    ![ユーザー](assets/cloud_manager_add_user.png)
 
@@ -136,7 +136,7 @@ Federated ID が既に存在するユーザーを追加するには、次の手�
 
 1. 上部のナビゲーションから「**ユーザー**」タブを選択します。
 
-1. 通知プロファイルに追加するチームメンバーの Federated ID が既に存在する場合は、そのユーザーをリスト内で見つけて、クリックします。それ以外の場合は、[ プロファイルに新規ユーザーを追加する ](#add-user) の節にスキップします。
+1. 通知プロファイルに追加するチームメンバーの Federated ID が既に存在する場合は、そのユーザーをリスト内で見つけて、クリックします。それ以外の場合は、[プロファイルに新規ユーザーを追加する](#add-user)の節にスキップします。
 
 1. ユーザー詳細ウィンドウの「**製品**」セクションで、省略記号ボタンをクリックし、「**編集**」を選択します。
 

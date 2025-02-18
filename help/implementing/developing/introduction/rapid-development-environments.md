@@ -5,9 +5,9 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4990'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1062,7 +1062,7 @@ AEM as a Cloud Service での RDE について詳しくは、[設定方法、使
 
 ### 既存の RDE に対する最新の AEM バージョンを取得する方法 {#get-latest-aem-version}
 
-作成時に、RDE は使用可能な最新の Adobe Experience Manager（AEM）バージョンに設定されます。Cloud Managerまたは `aio aem:rde:reset` コマンドを使用して実行できる [RDE リセット ](#reset-rde) は、RDE を循環させ、使用可能な最新のAEM バージョンに設定します。
+作成時に、RDE は使用可能な最新の Adobe Experience Manager（AEM）バージョンに設定されます。Cloud Manager または `aio aem:rde:reset` コマンドを使用して実行できる [RDE のリセット](#reset-rde)は、RDE を循環させ、使用可能な最新の AEM バージョンに設定します。
 
 ## aio RDE プラグインのトラブルシューティング {#aio-rde-plugin-troubleshooting}
 

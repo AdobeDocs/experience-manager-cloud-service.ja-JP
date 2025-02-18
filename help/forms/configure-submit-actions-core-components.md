@@ -6,9 +6,9 @@ feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '699'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 97%
 * 「フォームデータモデル」タブ
 * 「送信」タブ
 
-設定ダイアログを使用して、フォームコンテナのプロパティを定義できます。フォームコンテナコンポーネントの設定ダイアログについて詳しくは、[ ここをクリック ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html) を参照してください。
+設定ダイアログを使用して、フォームコンテナのプロパティを定義できます。フォームコンテナコンポーネントの設定ダイアログについて詳しくは、[こちらをクリック](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)してください。
 
 ## アダプティブフォームの送信アクションの設定方法 {#select-and-configure-submit-action}
 

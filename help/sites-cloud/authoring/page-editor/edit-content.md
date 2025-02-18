@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1612'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ AEM ページエディターには、より高度な機能にアクセスでき�
 
   ![ページに新しいコンポーネントを追加する際のプレースホルダー](assets/edit-content-component-placeholder.png)
 
-* [ 既存のコンポーネントを移動 ](#movging-components) すると、青い四角形で表示されます。
+* [既存のコンポーネントを移動](#movging-components)すると、青色の正方形で表示されます。
 
   ![ページ上の既存のコンポーネントを移動する際のプレースホルダー](assets/edit-content-move-placeholder.png)
 
@@ -54,7 +54,7 @@ AEM ページエディターには、より高度な機能にアクセスでき�
 
 [コンポーネントブラウザー](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)を使用して、新しいコンポーネントを追加できます。[コンポーネントプレースホルダー](#component-placeholder)は、コンポーネントを配置している場所を示します。
 
-1. ページエディターが [**編集** モードになっていることを確認 ](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) ます。
+1. ページエディターが&#x200B;[**編集**&#x200B;モード](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)であることを確認します。
 1. [コンポーネントブラウザー](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)を開きます。
 1. 必要なコンポーネントを[必要な位置](#component-placeholder)までドラッグしてリリースします。
 1. 新しく配置したコンポーネントを[編集](#edit-content)します。
@@ -67,7 +67,7 @@ AEM ページエディターには、より高度な機能にアクセスでき�
 
 段落システムの「**ここにコンポーネントをドラッグ**」プレースホルダーを使用して、新しいコンポーネントを追加できます。
 
-1. ページエディターが [**編集** モードになっていることを確認 ](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) ます。
+1. ページエディターが&#x200B;[**編集**&#x200B;モード](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)であることを確認します。
 1. 段落システムから新しいコンポーネントを選択して追加するには、2 つの方法があります。
 
    * 既存のコンポーネントのツールバーまたは「**コンポーネントをここにドラッグ**」ボックスから「**コンポーネントを挿入**」オプション（+）を選択します。
@@ -133,7 +133,7 @@ AEM ページエディターには、より高度な機能にアクセスでき�
 
   ![「削除」ボタン](assets/edit-content-delete.png)
 
-* **コンポーネントを挿入** して、「新しいコンポーネントを追加 [ するためのダイアログを開き ](#adding-a-component-from-the-paragraph-system) す。
+* **コンポーネントを挿入**&#x200B;すると、[新しいコンポーネントを追加](#adding-a-component-from-the-paragraph-system)するダイアログが開きます。
 
   ![「挿入」ボタン](assets/edit-content-insert-component.png)
 
@@ -219,7 +219,7 @@ AEM ページエディターには、より高度な機能にアクセスでき�
 
    ![コンポーネントツールバーの「レイアウト」ボタン](assets/edit-content-layout.png)
 
-1. レイアウトアクションを選択すると、[ レイアウトモード ](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode) で行うようにコンポーネントのレイアウトを変更できます。
+1. レイアウトアクションを選択すると、[レイアウトモード](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)の場合と同様にコンポーネントのレイアウトを変更できます。
 
    * コンポーネントのサイズ変更ハンドルが表示されます。
    * エミュレーターツールバーが画面の上部に表示されます。

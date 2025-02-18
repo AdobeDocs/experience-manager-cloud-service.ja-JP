@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '322'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 93%
 
 ## パスブラウザー {#path-browser}
 
-パスブラウザーは、[**Sites** コンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) の [ 列表示 ](/help/sites-cloud/authoring/basic-handling.md#column-view) のように整理されており、リソースをより詳細に選択できます。
+パスブラウザーは、[**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)の[列表示](/help/sites-cloud/authoring/basic-handling.md#column-view)のように整理されており、リソースをより詳細に選択できます。
 
 ![パスブラウザー](/help/sites-cloud/authoring/assets/path-browser.png)
 

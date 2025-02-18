@@ -6,9 +6,9 @@ role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
 solution: Experience Manager Sites
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '288'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 87%
 
 >[!TIP]
 >
->コンテンツの翻訳を初めて行う場合は、[ サイト翻訳ジャーニー](/help/journey-sites/translation/overview.md) を参照してください。これは、AEMの強力な翻訳ツールを使用してAEM Sites コンテンツを翻訳する手順を示すガイドです。AEMや翻訳の経験がないユーザーに最適です。
+>コンテンツの翻訳を初めて行う場合は、[AEM Sites 翻訳ジャーニー](/help/journey-sites/translation/overview.md)を参照してください。これは、AEM の強力な翻訳ツールを使用して AEM Sites コンテンツを翻訳する手順を示すガイドです。AEM や翻訳の経験がないユーザーに最適です。
 
 コンテンツの翻訳には次の手順が含まれます。
 

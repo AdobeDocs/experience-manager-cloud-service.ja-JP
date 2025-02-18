@@ -5,20 +5,20 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1520'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # Cloud Manager 製品プロファイルへのチームメンバーの割り当て {#assign-team-members}
 
-[ オンボーディングジャーニー ](overview.md) のこのパートでは、チームメンバーをCloud Manager製品プロファイルに割り当てる方法を説明します。
+[オンボーディングジャーニー](overview.md)のこの部分では、チームメンバーを Cloud Manager 製品プロファイルに割り当てる方法を説明します。
 
 ## 目的 {#objective}
 
-このジャーニーの前のステップ [ システムへのアクセス ](admin-console.md) では、Admin Consoleにログインして、Admin Console管理者としての権限を確認することを理解しました。 これで、チームメンバーが Cloud Manager にアクセスできるようにする準備が整いました。これを行うには、製品プロファイルを割り当てます。
+このジャーニーの前のステップ、[Admin Console へのアクセス](admin-console.md)では、Admin Console にログインして、システム管理者としての自身の権限を確認する方法を学びました。これで、チームメンバーが Cloud Manager にアクセスできるようにする準備が整いました。これを行うには、製品プロファイルを割り当てます。
 
 アドビソリューションに対するアクセス権をユーザーに付与する場合、必ずしも完全なアクセス権を付与する必要はありません。製品プロファイルを使用すると、ソリューションごとに独自のユーザー権限を設定できます。製品プロファイルを割り当てるには、Admin Console を使用します。
 
@@ -166,7 +166,7 @@ Cloud Manager は、AEM as a Cloud Service の不可欠な部分であり、コ�
 
 **開発者**&#x200B;が割り当てられ、Cloud Manager にアクセスできるようになりました。 システム管理者は、今後の担務に応じて、自分自身を&#x200B;**開発者**&#x200B;のプロファイルに割り当てる必要がある場合とない場合があります。
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
 おめでとうございます。これで、新しく構築された Cloud Manager チーム（**ビジネスオーナー**&#x200B;のプロファイルに割り当てられた自分自身を含む）の設定が完了しました。**ビジネスオーナー**&#x200B;の役割で Cloud Manager にログインしてクラウドリソースを作成できるようになるまであと少しです。
 
@@ -177,7 +177,7 @@ Cloud Manager は、AEM as a Cloud Service の不可欠な部分であり、コ�
 * **ビジネスオーナー**、**デプロイメントマネージャー**、**開発者**&#x200B;という 3 種類の重要な Cloud Manager 製品プロファイルを理解する。
 * Cloud Manager 製品プロファイルにチームメンバーを割り当てることができる。
 
-これで、次にCloud Managerへのアクセスのドキュメントを確認して、オンボーディングジャーニーを続ける準備が整いました [ このドキュメントでは、Cloud Managerにアクセスしてプロジェクトリソースを作成する方法を説明しています ](cloud-manager.md)。
+これで、オンボーディングジャーニーを続ける準備が整いました。次は、[Cloud Manager へのアクセス](cloud-manager.md)のドキュメントを確認します。このドキュメントでは、Cloud Manager にアクセスしてプロジェクトリソースを作成する方法を説明します。
 
 ## その他のリソース {#additional-resources}
 

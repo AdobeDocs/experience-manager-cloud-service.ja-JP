@@ -5,9 +5,9 @@ exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3443'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -225,7 +225,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->グローバルフォルダーにテンプレートを作成する場合は、[ 設定ブラウザー ](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) でグローバルフォルダーを編集し「**編集可能テンプレート**」オプションをオンにします。ただし、これは推奨されるベストプラクティスではありません。
+>グローバルフォルダーにテンプレートを作成する場合は、[設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)でグローバルフォルダーを編集し、「**編集可能なテンプレート**」オプションをオンにします。ただし、これは推奨されるベストプラクティスではありません。
 
 ### ACL とグループ {#acls-and-groups}
 
@@ -467,7 +467,7 @@ GitHub のコード
 
 ### レイアウト {#layout}
 
-[ テンプレートを編集する際にレイアウトを定義できます ](/help/sites-cloud/authoring/page-editor/templates.md)、これには [ コンテンツ作成者がページ上で設定 ](/help/sites-cloud/administering/responsive-layout.md) できる [ 標準のレスポンシブレイアウト ](/help/sites-cloud/authoring/page-editor/responsive-layout.md) が使用されます。
+[テンプレートの編集時にレイアウトを定義できます](/help/sites-cloud/authoring/page-editor/templates.md)。レイアウトには[標準のレスポンシブレイアウト](/help/sites-cloud/administering/responsive-layout.md)（[コンテンツ作成者がページ上で設定できる](/help/sites-cloud/authoring/page-editor/responsive-layout.md)）を使用します。
 
 ### コンテンツポリシー {#content-policies}
 

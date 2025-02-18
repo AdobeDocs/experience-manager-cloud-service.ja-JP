@@ -5,9 +5,9 @@ exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2130'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ AEM は、拡張性が高く柔軟なテクノロジーに基づいて構築さ�
 
 >[!TIP]
 >
->AEMのコアテクノロジーの詳細に入る前に、Adobeでは [AEM Sitesの開発の手引き – WKND チュートリアル ](develop-wknd-tutorial.md) を完了することをお勧めします。
+>AEM のコアテクノロジーに進む前に、[AEM Sites の開発の手引き - WKND チュートリアル](develop-wknd-tutorial.md)を完了することを推奨します。
 
 ## 基本事項 {#fundamentals}
 

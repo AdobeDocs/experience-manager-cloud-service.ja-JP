@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1370'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -25,11 +25,11 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->このドキュメントは、ユニバーサルエディターへのアクセスと操作の方法を、ユーザーが既に理解していることを前提としています。そうでない場合は、[ ユニバーサルエディターへのアクセスとナビゲート ](/help/sites-cloud/authoring/universal-editor/navigation.md) を参照してください。
+>このドキュメントは、ユニバーサルエディターへのアクセスと操作の方法を、ユーザーが既に理解していることを前提としています。そうでない場合は、[ユニバーサルエディターへのアクセスと操作](/help/sites-cloud/authoring/universal-editor/navigation.md)を参照してください。
 
 >[!TIP]
 >
->ユニバーサルエディターの詳細については、「[ ユニバーサルエディターの概要 ](/help/implementing/universal-editor/introduction.md)」を参照してください。
+>ユニバーサルエディターについて詳しくは、[ユニバーサルエディターの概要](/help/implementing/universal-editor/introduction.md)を参照してください。
 
 ## コンテンツの編集 {#editing-content}
 
@@ -39,9 +39,9 @@ ht-degree: 88%
 
 >[!TIP]
 >
->デフォルトでは、コンテンツをタップまたはクリックすると、そのコンテンツが編集用に選択されます。リンクをたどってコンテンツを移動する場合は、[ プレビューモード ](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode) に切り替えます。
+>デフォルトでは、コンテンツをタップまたはクリックすると、そのコンテンツが編集用に選択されます。リンクをたどってコンテンツを移動する場合は、[プレビューモード](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)に切り替えます。
 
-選択するコンテンツに応じて、様々なインプレース編集オプションが用意されており、[ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) でそのコンテンツの追加情報やオプションを指定することができます。
+選択したコンテンツに応じて、異なるインプレース編集オプションが設定されている場合や、[プロパティパネル](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)にコンテンツの追加情報やオプションが表示される場合があります。
 
 ### プレーンテキストの編集 {#edit-plain-text}
 
@@ -51,7 +51,7 @@ ht-degree: 88%
 
 薄い青色のアウトラインは、選択を示す濃い青色のアウトラインに変わり、カーソルが表示されます。変更を行ったら、Enter キーまたは Return キーを押すか、テキストボックスの外側を選択して、変更を保存します。
 
-テキストコンポーネントを選択すると、その詳細が [ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) に表示されます。 また、パネル内のテキストを編集することもできます。
+テキストコンポーネントを選択すると、その詳細が[プロパティパネル](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)に表示されます。また、パネル内のテキストを編集することもできます。
 
 ![プロパティパネルでのテキストの編集](assets/ue-editing-text-component-rail.png)
 
@@ -83,7 +83,7 @@ ht-degree: 88%
 
 ### メディアの編集 {#edit-media}
 
-プロパティの詳細は、[ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) に表示されます。
+詳細は、[プロパティパネル](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)で確認できます。
 
 ![メディアの編集](assets/ue-edit-media.png)
 
@@ -96,7 +96,7 @@ ht-degree: 88%
 
 ### コンテンツフラグメントの編集 {#edit-content-fragment}
 
-[ コンテンツフラグメント ](/help/sites-cloud/administering/content-fragments/overview.md) を選択すると、その詳細を [ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) で編集できます。
+[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)を選択した場合、詳細は、[プロパティパネル](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)で編集できます。
 
 ![コンテンツフラグメントの編集](assets/ue-edit-cf.png)
 
@@ -163,7 +163,7 @@ ht-degree: 88%
 
 ### コンテナ内のコンポーネントの並べ替え {#reordering-components}
 
-1. [ コンテンツツリーモード ](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) にまだ切り替えていない場合は、切り替えます。
+1. [コンテンツツリーモード](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)でない場合はそれに切り替えます。
 1. コンテンツツリーまたはエディターでコンテナコンポーネントを選択します。
 1. コンテナの山形アイコンを選択して、コンテンツツリーでコンテンツを展開します。
 1. コンテナ内のコンポーネントの横にあるハンドルアイコンをドラッグすると、それらを並べ替えることができます。コンポーネントをドラッグして、コンテナ内で並べ替えます。
@@ -182,7 +182,7 @@ ht-degree: 88%
 
 コンテンツの編集が完了したら、他のページのコンテンツでコンテンツがどのように表示されるかを確認するためにコンテンツ内を移動したい場合がよくあります。[プレビューモード](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)でリンクをクリックして、読者と同じようにコンテンツ内を移動できます。コンテンツは、公開されるときと同じように、エディターでレンダリングされます。
 
-プレビューモードでは、コンテンツをタップまたはクリックすると、コンテンツの読者に対するように反応します。編集するコンテンツを選択する場合は、[ プレビューモード ](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode) を切り替えます。
+プレビューモードでは、コンテンツをタップまたはクリックすると、コンテンツの読者に対するように反応します。編集するコンテンツを選択する場合は、[プレビューモード](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)から切り替えます。
 
 ## その他のリソース {#additional-resources}
 
@@ -204,4 +204,4 @@ ht-degree: 88%
 
 ユニバーサルエディターを使用すると、コンテンツを更新するだけで、コンテンツの継承をキャンセルできます。エディターでは、そのページの作成者が行ったすべての変更の継承を自動的に無効にし、ブループリントから更新を同期した際に変更済みのコンテンツが保持されるようにします。
 
-ユニバーサルエディターを使用した継承の仕組みについて詳しくは、[ ユニバーサルエディターでのコンテンツの継承 ](/help/sites-cloud/authoring/universal-editor/inheritance.md) を参照してください。
+ユニバーサルエディターを使用した継承の仕組みについて詳しくは、[ユニバーサルエディターでのコンテンツの継承](/help/sites-cloud/authoring/universal-editor/inheritance.md)を参照してください。

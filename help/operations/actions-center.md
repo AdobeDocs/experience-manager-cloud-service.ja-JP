@@ -5,9 +5,9 @@ exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1116'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service の通知には複数のタイプがありますが、次
 | 無効な永続 GraphQL クエリ | インシデント | [永続 GraphQL クエリのトラブルシューティングドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=ja)を参照して、無効な GraphQL クエリを修正する |
 | オリジンでのトラフィックスパイク | インシデント | オリジンアラートでのデフォルトのトラフィックスパイクよりも低いしきい値でトリガーされるレート制限トラフィックフィルタールールを設定して、オリジンを保護します。  チュートリアルを参照しているトラフィックフィルタールールのドキュメントの[トラフィックルールを使用した DoS および DDoS 攻撃のブロック](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules)の節を参照してください。 |
 | トリガーされた CDN トラフィックフィルタールール | インシデント | 一致するトラフィックフィルタールールが攻撃を反映し、サイトがそのトラフィックをブロックしていない場合は、トラフィックフィルタールールをブロックモードで設定してサイトを保護します。チュートリアルを参照しているトラフィックフィルタールールのドキュメントの[トラフィックフィルタールール（WAF ルールを含む）による web サイトの保護](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites)の節を参照してください。 |
-| Splunk ログ転送エラー | インシデント | Splunk エンドポイントが機能し、AEM Cloud Service 環境からアクセスできることを確認します。ログ転送について詳しくは、[Splunk ログ転送ドキュメント ](/help/implementing/developing/introduction/logging.md#splunk-logs) を参照してください。 トラブルシューティングに関するサポートが必要な場合や、ログ設定に変更を加える必要がある場合は、Adobeとともにサポートチケットを発行します。 |
+| Splunk ログ転送エラー | インシデント | Splunk エンドポイントが機能し、AEM Cloud Service 環境からアクセスできることを確認します。ログ転送について詳しくは、[Splunk ログ転送ドキュメント](/help/implementing/developing/introduction/logging.md#splunk-logs)を参照してください。トラブルシューティングに関するサポートが必要な場合や、ログ設定を変更する必要がある場合は、アドビにサポートチケットを発行してください。 |
 | ページに多数のノードが含まれる | 事前対応 | ページ内のノードの合計数を減らします。 [ページの複雑さのドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/pcx)を参照してください | |
 | 実行中のワークフローインスタンスの数が多い | 事前対応 | 不要になった実行中のワークフローを終了します。 詳しくは、[パージジョブの設定](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/operations/maintenance)方法を参照してください |               |
 | S2S 証明書の有効期限が切れます | 事前対応 | [サーバーサイド API のアクセストークンの生成ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)で資格情報を更新する方法を説明します。 | 高い接続数 | 事前対応 | 接続プーリングについて詳しくは、[高度なネットワークとの接続プーリングに関するドキュメント](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking)を参照してください |

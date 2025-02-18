@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '949'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 85%
 
 ## これまでの説明内容 {#story-so-far}
 
-AEM クイックサイト作成ジャーニーの前のドキュメントである [ テンプレートからサイトを作成 ](create-site.md) では、サイトテンプレートを使用してAEM サイトをすばやく作成する方法を学び、フロントエンドツールを使用してさらにカスタマイズできるようになりました。ここまでの学習内容を以下にまとめます。
+AEM クイックサイト作成ジャーニーの前のドキュメントである[テンプレートからサイトを作成](create-site.md)では、サイトテンプレートを使用して AEM サイトをすばやく作成する方法を学び、フロントエンドツールを使用してさらにカスタマイズできるようになりました。ここまでの学習内容を以下にまとめます。
 
 * AEM Site テンプレートの取得方法を理解する。
 * テンプレートを使用して新しいサイトを作成する方法を学ぶ。
@@ -107,18 +107,18 @@ URL にアクセスまたはコピーしたプログラムの名前をメモし�
 >
 >AEMaaCS のパイプラインに精通しており、フロントエンドパイプラインの詳細を含む様々なタイプのパイプラインの違いを確認したい場合は、以下の[その他のリソース](#additional-resources)の節にリンクされている CI／CD パイプラインの設定 - Cloud Services を参照してください。
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 これで、AEM クイックサイト作成ジャーニーのこのステップが完了しました。次のことを行う必要があります。
 
 * フロントエンドパイプラインとは何かを理解する。
 * Cloud Manager でフロントエンドパイプラインを設定する方法を理解する。
 
-この知識をもとに、[ フロントエンド開発者へのアクセス権の付与 ](grant-access.md) のドキュメントを確認して、AEM クイックサイト作成ジャーニーを続行します。このドキュメントでは、Cloud Managerにフロントエンド開発者をオンボーディングして、AEM サイトの Git リポジトリとパイプラインにアクセスできるようにします。
+この知識をもとに、[フロントエンド開発者へのアクセス権の付与](grant-access.md)のドキュメントを確認して、AEM クイックサイト作成ジャーニーを続行します。このドキュメントでは、Cloud Manager にフロントエンド開発者をオンボーディングして、AEM サイトの Git リポジトリとパイプラインにアクセスできるようにします。
 
 ## その他のリソース {#additional-resources}
 
-[ サイトテーマのカスタマイズ ](customize-theme.md) のドキュメントを確認して、クイックサイト作成ジャーニーの次のパートに進むことをお勧めしますが、以下のリソースではこのドキュメントで取り上げた概念についてより詳しく説明しています。追加的なオプションであり、ジャーニーを続ける上で必須のリソースではありません。
+[サイトテーマのカスタマイズ](customize-theme.md)のドキュメントを確認して、クイックサイト作成ジャーニーの次のステップに進むことをお勧めします。次は追加的なオプションのリソースで、このドキュメントで取り上げた概念についてより詳しく説明していますが、ジャーニーを続ける上で必須ではありません。
 
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=ja) - Cloud Manager の機能について詳しくは、詳細な技術ドキュメントを直接参照してください。
 * [Cloud Manager リポジトリ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - AEMaaCS プロジェクトの Git リポジトリの設定および管理方法について詳しくは、このドキュメントを参照してください。

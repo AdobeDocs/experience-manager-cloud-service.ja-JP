@@ -5,9 +5,9 @@ exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1165'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -18,10 +18,10 @@ ht-degree: 77%
 
 >[!TIP]
 >
->このドキュメントでは、開発者向けのレスポンシブデザインの概要と、AEMでの機能の実現方法について説明します。 その他のリソースを利用できます。
+>このドキュメントでは、開発者向けのレスポンシブデザインの概要と、AEM での機能の実現方法について説明します。次のその他のリソースを使用できます。
 >
->* コンテンツ作成者がコンテンツページでレスポンシブデザイン機能を使用する方法の詳細については、ドキュメント [ レスポンシブレイアウト ](/help/sites-cloud/authoring/page-editor/responsive-layout.md) を参照してください。
->* サイト管理者に対してサイトのレイアウトコンテナを設定する方法の詳細については、[ レイアウトコンテナおよびレイアウトモードの設定 ](/help/sites-cloud/administering/responsive-layout.md) ドキュメントで説明しています。
+>* コンテンツ作成者の場合、コンテンツページでレスポンシブデザイン機能の使用方法について詳しくは、[レスポンシブレイアウト](/help/sites-cloud/authoring/page-editor/responsive-layout.md)ドキュメントを参照してください。
+>* サイト管理者向けに、サイトのレイアウトコンテナを設定する方法について詳しくは、[レイアウトコンテナおよびレイアウトモードの設定ドキュメント](/help/sites-cloud/administering/responsive-layout.md)を参照してください。
 
 ## 概要 {#overview}
 
@@ -85,7 +85,7 @@ CSS ファイルでは、ターゲットとしているデバイスのプロパ�
 
 ### AEM ページでのメディアクエリの使用 {#using-media-queries-with-aem-pages}
 
-[WKND サンプルプロジェクト ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) および [AEM プロジェクトアーキタイプ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) は、[ ページコアコンポーネント ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=ja) を使用します。これには、ページポリシーを介した clientlib が含まれます。
+[WKND サンプルプロジェクト](/help/implementing/developing/introduction/develop-wknd-tutorial.md)と [AEM Project アーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)は、ページポリシーを介した clientlibs を含む[ページコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=ja)を使用します。
 
 独自のページコンポーネントがページコアコンポーネントに基づいていない場合は、クライアントライブラリフォルダーをその HTL または JSP スクリプトに含めることもできます。これにより、レスポンシブグリッドが機能するために必要なメディアクエリを含む CSS ファイルが生成され、参照されます。
 
@@ -144,28 +144,28 @@ CSS ファイルでは、ターゲットとしているデバイスのプロパ�
 
 AEM レイアウトコンテナを使用すると、レスポンシブレイアウトを効率的かつ効果的に実装して、ページのサイズをクライアントビューポートに適応させることができます。
 
->レスポンシブグリッドの [GitHub ドキュメント ](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) は、フロントエンド開発者がAEM外でAEM グリッドを使用できるようにするための参照です。例えば、将来のAEM サイト用の静的HTMLのモックアップを作成する場合などに使用できます。
+>レスポンシブグリッドの [GitHub ドキュメント](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)は、フロントエンド開発者に提供できる参照です。フロントエンド開発者は AEM の外部で AEM グリッドを使用できます（例えば、今後の AEM サイト向けに静的 HTML モックアップを作成する場合）。
 
 >[!TIP]
 >
->レイアウトコンテナの仕組みと、コンテンツに対してレスポンシブレイアウトを有効にする方法について詳しくは、[レイアウトコンテナとレイアウトモードの設定](/help/sites-cloud/administering/responsive-layout.md)のドキュメントをご覧ください。
+>レイアウトコンテナの仕組みと、コンテンツに対してレスポンシブレイアウトを有効にする方法について詳しくは、[レイアウトコンテナとレイアウトモードの設定](/help/sites-cloud/administering/responsive-layout.md)のドキュメントを参照してください。
 
 ## ネストされたレスポンシブグリッド {#nested-responsive-grids}
 
-プロジェクトのニーズをサポートするために、レスポンシブグリッドをネストする必要がある場合があります。 ただし、Adobeが推奨するベストプラクティスは、構造をできるだけフラットに保つことです。
+プロジェクトのニーズをサポートする目的で、レスポンシブグリッドのネストが必要になる場合があります。ただし、アドビが推奨するベストプラクティスは、構造をできるだけフラットに保つことであることに注意してください。
 
-ネストされたレスポンシブグリッドの使用を避けることができない場合は、次の点を確認してください。
+ネストされたレスポンシブグリッドの使用を回避できない場合は、次の点を確認してください。
 
-* すべてのコンテナ（コンテナ、タブ、アコーディオンなど）にはプロパティ `layout = responsiveGrid` があります。
-* コンテナ階層にプロパティ `layout = simple` を混在させないでください。
+* すべてのコンテナ（コンテナ、タブ、アコーディオンなど）に `layout = responsiveGrid` プロパティがある。
+* コンテナ階層でプロパティ `layout = simple` を混在させない。
 
 これには、ページテンプレートのすべての構造コンテナが含まれます。
 
-内側のコンテナの列番号は、外側のコンテナの列番号より大きくしないでください。 次の例では、この条件を満たしています。 デフォルト（デスクトップ）の画面では外側のコンテナの列番号は 8 ですが、内側のコンテナの列番号は 4 です。
+内側のコンテナの列番号は、外側のコンテナの列番号より大きくしないでください。次の例では、この条件を満たしています。デフォルト（デスクトップ）画面では外側のコンテナの列番号は 8 ですが、内側のコンテナの列番号は 4 です。
 
 >[!BEGINTABS]
 
->[!TAB  ノード構造の例 ]
+>[!TAB ノード構造の例]
 
 ```text
 container
@@ -184,7 +184,7 @@ container
       @text =" Text Column 1"
 ```
 
->[!TAB  結果のHTML] 例
+>[!TAB 結果として得られる HTML の例]
 
 ```html
 <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">

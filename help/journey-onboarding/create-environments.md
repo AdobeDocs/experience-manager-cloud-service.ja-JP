@@ -5,19 +5,19 @@ role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
 feature: Onboarding
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '725'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # 環境の作成 {#create-environments}
 
-[ オンボーディングジャーニー ](overview.md) のこのパートでは、Cloud Managerを使用して最初の環境を作成する方法を説明します。
+[オンボーディングジャーニー](overview.md)のこのパートでは、Cloud Manager を使用して最初の環境を作成する方法を説明します。
 
 ## 目的 {#objective}
 
-オンボーディングジャーニーの前のドキュメント [ プログラムの作成 ](create-program.md) を読み、独自のCloud Manager プログラムを作成できました。 次に、Cloud Manager を使用して、そのプログラム用の最初の環境を作成する方法を説明します。
+オンボーディングジャーニーの前のドキュメント[プログラムの作成](create-program.md)を読み、独自の Cloud Manager プログラムを作成できました。次に、Cloud Manager を使用して、そのプログラム用の最初の環境を作成する方法を説明します。
 
 このドキュメントを読み終えると、次のことができるようになります。
 
@@ -69,7 +69,7 @@ ht-degree: 94%
 
 環境が使用可能になると、**開発者**&#x200B;製品プロファイルに割り当てられた組織のメンバーは、Cloud Manager にログインして、Cloud Manager Git リポジトリを管理できます。
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
 オンボーディングジャーニーのこのパートを読み終えたので、次のことをできるようになりました。
 

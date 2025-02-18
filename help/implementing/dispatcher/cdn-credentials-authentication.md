@@ -5,16 +5,16 @@ feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1497'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # CDN 資格情報および認証の設定 {#cdn-credentials-authentication}
 
-アドビが提供する CDN には様々な機能とサービスがあり、その一部は適切なレベルのエンタープライズセキュリティを確保する資格情報と認証に依存しています。Cloud Manager [config パイプライン ](/help/operations/config-pipeline.md) を使用してデプロイされた設定ファイルでルールを宣言すると、お客様はセルフサービス方式で以下を設定できます。
+アドビが提供する CDN には様々な機能とサービスがあり、その一部は適切なレベルのエンタープライズセキュリティを確保する資格情報と認証に依存しています。Cloud Manager [設定パイプライン](/help/operations/config-pipeline.md)を使用してデプロイした設定ファイルでルールを宣言すると、お客様はセルフサービス方式で次を設定できます。
 
 * 顧客管理 CDN からのリクエストを検証する Adobe CDN で使用される X-AEM-Edge-Key HTTP ヘッダー値。
 * CDN キャッシュ内のリソースのパージに使用される API トークン。

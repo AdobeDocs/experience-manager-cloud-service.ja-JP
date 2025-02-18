@@ -5,9 +5,9 @@ exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2337'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 99%
 
 >[!TIP]
 >
->このページは、ドキュメント [ コンテンツの再利用：マルチサイトマネージャー ](/help/sites-cloud/administering/msm/overview.md) のコンテキストでより簡単に理解できます。
+>このページは、[コンテンツの再利用：マルチサイトマネージャー](/help/sites-cloud/administering/msm/overview.md)のドキュメントを読んでおくとより簡単に理解できます。
 
 >[!CAUTION]
 >

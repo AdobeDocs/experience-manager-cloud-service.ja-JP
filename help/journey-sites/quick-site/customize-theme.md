@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '954'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 83%
 
 ## これまでの説明内容 {#story-so-far}
 
-AEM クイックサイト作成ジャーニーの前のドキュメントである [Git リポジトリのアクセス情報の取得 ](retrieve-access.md) では、フロントエンド開発者がCloud Managerを使用して Git リポジトリ情報にアクセスする方法を確認しました。次のことができるようになりました。
+AEM クイックサイト作成ジャーニーの前のドキュメントである [Git リポジトリのアクセス情報の取得](retrieve-access.md)では、フロントエンド開発者が Cloud Manager を使用して Git リポジトリ情報にアクセスする方法を確認しました。次のことができるようになりました。
 
 * Cloud Manager とは何かをハイレベルで理解します。
 * カスタマイズをコミットできるよう、AEM Git にアクセスするための資格情報を取得しました。
@@ -111,7 +111,7 @@ AEM 管理者から提供された要件に基づいて、テーマのカスタ�
 カスタマイズが完了したら、それらを AEM Git リポジトリにコミットできます。まず、リポジトリをローカルマシンにクローンする必要があります。
 
 1. コマンドラインで、リポジトリのクローン先に移動します。
-1. [ 以前にCloud Managerから取得した ](retrieve-access.md) コマンドを実行します。 `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/` のようになります。 [ このジャーニーの前の部分で取得した ](retrieve-access.md) Git ユーザー名とパスワードを使用します。
+1. [以前に Cloud Manager から取得した](retrieve-access.md)コマンドを実行します。`git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/` のようになります。[このジャーニーの前の部分で取得した](retrieve-access.md) Git ユーザー名とパスワードを使用します。
 
    ![リポジトリのクローン](assets/clone-repo.png)
 
@@ -130,7 +130,7 @@ AEM 管理者から提供された要件に基づいて、テーマのカスタ�
 
 これで、カスタマイズ内容が AEM Git リポジトリに安全に保存されました。
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 これで、AEM クイックサイト作成ジャーニーのこのステップが完了しました。次のことを行う必要があります。
 
@@ -138,11 +138,11 @@ AEM 管理者から提供された要件に基づいて、テーマのカスタ�
 * ローカルプロキシを介して実際の AEM コンテンツを使用してテーマのカスタマイズをテストする方法を参照する。
 * 変更を AEM Git リポジトリにコミットする方法を理解する。
 
-この知識に基づいて、次は [ カスタマイズしたテーマのデプロイ ](deploy-theme.md) のドキュメントを確認して、AEM クイックサイト作成ジャーニーを続行してください。そこでは、フロントエンドパイプラインを使用したテーマのデプロイ方法を習得します。
+この知識に基づき、次は[カスタマイズしたテーマのデプロイ](deploy-theme.md)のドキュメントを確認して、AEM クイックサイト作成ジャーニーを続行してください。そこでは、フロントエンドパイプラインを使用したテーマのデプロイ方法について説明します。
 
 ## その他のリソース {#additional-resources}
 
-[ カスタマイズしたテーマのデプロイ ](deploy-theme.md) のドキュメントを確認して、クイックサイト作成ジャーニーの次のパートに進むことをお勧めしますが、以下のリソースではこのドキュメントで取り上げた概念についてより詳しく説明しています。追加的なオプションであり、ジャーニーを続ける上で必須のリソースではありません。
+[カスタマイズしたテーマのデプロイ](deploy-theme.md)のドキュメントを確認して、クイックサイト作成ジャーニーの次のステップに進むことをお勧めします。次は追加的なオプションのリソースで、このドキュメントで取り上げた概念についてより詳しく説明していますが、ジャーニーを続ける上で必須ではありません。
 
 * [AEM サイトテーマ](https://github.com/adobe/aem-site-template-standard-theme-e2e) - これは AEM サイトテーマの GitHub リポジトリです。
 * [npm](https://www.npmjs.com) - サイトをすばやく作成するために使用される AEM テーマが npm に基づいている場合。

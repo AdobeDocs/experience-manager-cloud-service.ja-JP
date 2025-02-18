@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1936'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 ### ページエディターからの公開 {#publishing-from-the-page-editor}
 
-[ ページエディター ](/help/sites-cloud/authoring/page-editor/introduction.md) でページを編集している場合は、エディターから直接公開できます。
+[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)でページを編集している場合、エディターから直接ページを公開できます。
 
 1. **ページ情報**&#x200B;アイコンを選択してメニューを開き、「**ページを公開**」オプションを選択します。
 

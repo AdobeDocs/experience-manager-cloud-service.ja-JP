@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '827'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -108,11 +108,11 @@ AEM **Sites** コンソールのサイドパネルを使用して、コンテン
 
 ## サイト {#site}
 
-サイドパネルの **サイト** ビューには、（サイトテンプレートを使用して作成した [ サイトの詳細が表示され ](/help/sites-cloud/administering/site-creation/create-site.md) す。
+サイドパネルの&#x200B;**サイト**&#x200B;ビューには、[サイトテンプレートを使用して作成された](/help/sites-cloud/administering/site-creation/create-site.md)サイトの詳細が表示されます。
 
 ![サイトパネル](assets/console-side-panel-site-paenl.png)
 
-サイトパネルを使用して [ サイトのテーマ ](/help/sites-cloud/administering/site-creation/site-rail.md) を管理する方法について詳しくは、[ サイトパネルを使用したサイトテーマの管理 ](/help/sites-cloud/administering/site-creation/site-themes.md) のドキュメントを参照してください。
+サイトパネルを使用して[サイトのテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)を管理する方法について詳しくは、[サイトパネルを使用したサイトテーマの管理](/help/sites-cloud/administering/site-creation/site-rail.md)のドキュメントを参照してください。
 
 テーマベースのサイト作成を可能にするフロントエンドパイプラインをまだ設定していない場合は、サイドパネルにそのオプションが表示されます。
 

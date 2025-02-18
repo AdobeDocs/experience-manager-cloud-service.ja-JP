@@ -3,9 +3,9 @@ title: コンテンツハブに関するよくある質問（FAQ）
 description: コンテンツハブに関するよくある質問（FAQ）への回答を参照してください。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1112'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ AEM as a Cloud Service Assets で管理されているユーザー／実稼動�
 * Admin Console 管理者は、[選択した数名のユーザー](/help/assets/deploy-content-hub.md#onboard-content-hub-users)をコンテンツハブ製品プロファイルに追加して、評価を開始できるようにします。
 * 評価が完了すると、オーサーインスタンスの AEM ユーザーはテストアセットの承認を削除し、コンテンツハブの実稼動アセットを承認できます。その後、Admin Console 管理者はコンテンツハブと承認済みコンテンツへのアクセスが必要なすべてのユーザーを追加できます。これで完了です。コンテンツハブはライブになりました。
 
-サンドボックスプログラムとそのオーサー実稼動環境には、コンテンツハブへの早期アクセスプログラムがあります。詳しくは、[サンドボックスプログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)を参照してください。アーリーアクセスプログラムについて詳しくは、Adobeアカウントチームにお問い合わせください。
+サンドボックスプログラムとそのオーサー実稼動環境には、コンテンツハブへの早期アクセスプログラムがあります。詳しくは、[サンドボックスプログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)を参照してください。早期アクセスプログラムについて詳しくは、アドビアカウントチームにお問い合わせください。
 
 コンテンツハブは、実稼動以外の環境（ステージングおよび開発）ではまだ使用できません。Assets Ultimate のステージング／開発環境での提供開始は 2025年3月を予定しています。
 

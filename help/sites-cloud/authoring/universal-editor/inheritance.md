@@ -6,9 +6,9 @@ feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '475'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ MSM とローンチは、継承を使用してコンテンツを再利用する�
 
 ページが MSM またはローンチの一部であり、ユニバーサルエディターを使用してコンテンツを編集する場合、エディターでは、そのページの作成者が行ったすべての変更の継承を自動的に無効にし、ブループリントから更新を同期した際に変更済みのコンテンツが保持されるようにします。
 
-作成者は、ローカル編集を行う前に、ボタンをクリックするなどの手順を実行して継承を無効にする必要はありません。変更を行うとすぐに、継承は暗黙的にキャンセルされます。このワークフローは、[ ページエディター ](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components) とは対照的です。
+作成者は、ローカル編集を行う前に、ボタンをクリックするなどの手順を実行して継承を無効にする必要はありません。変更を行うとすぐに、継承は暗黙的にキャンセルされます。このワークフローは、[ページエディター](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components)とは対照的です。
 
 ユニバーサルエディターは、継承の基盤となるメカニズムには影響しません。継承の仕組みについて詳しくは、次のドキュメントを参照してください。
 
@@ -55,6 +55,6 @@ MSM とローンチは、継承を使用してコンテンツを再利用する�
    * 継承は、次の方法を使用して、ページ全体に対してのみ元に戻すことができます。
       * [ライブコピーの概要コンソール](/help/sites-cloud/administering/msm/live-copy-overview.md)
       * [ローンチコンソール](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-      * **ページのプロパティ** ウィンドウの **ライブコピー** タブにある [ リセット ](/help/sites-cloud/authoring/sites-console/page-properties.md) ボタンを使用します。
-* 作成者には、無効になっているコンポーネントの継承や、まだ保持されているコンポーネントの継承を確認するための視覚的なフィードバックが提供されていません。
-* これらの機能は現在、ページ内のコンポーネントに限定されており、MSM と Launch の機能も備えていますが、[ コンテンツフラグメント ](/help/sites-cloud/administering/content-fragments/overview.md) にはまだ適用されません。
+      * [ページプロパティウィンドウ](/help/sites-cloud/authoring/sites-console/page-properties.md)の「**ライブコピー**」タブにある「**リセット**」ボタンを使用する。
+* 作成者には、無効になっているコンポーネントの継承や、まだ保持されているコンポーネントの継承を確認する視覚的なフィードバックが提供されていません。
+* これらの機能は現在、ページ内のコンポーネントに制限されており、MSM およびローンチの機能も備えているにもかかわらず、[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)にはまだ適用されていません。

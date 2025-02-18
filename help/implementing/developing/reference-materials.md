@@ -5,9 +5,9 @@ exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '660'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -22,8 +22,8 @@ AEM の中核を成す API は次のとおりです。
 | API | 説明 |
 |---|---|
 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 製品の抽象概念（ページ、アセット、ワークフローなど）。 |
-| [Granite UI](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Adobeのオープン Web スタック。様々な必須コンポーネントを提供します（6.5 Granite の資料は AEMaaCS に当てはまります）。 |
-| [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) | Adobeエクスペリエンスの一貫性を保つように設計された、クラウド UI のビジュアルスタイル |
+| [Granite UI](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | 様々な必須コンポーネントを提供するアドビのオープン web スタック（6.5 Granite の資料が AEMaaCS に適用されます） |
+| [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) | ユーザーエクスペリエンスの一貫性を保つように設計された、アドビのクラウド UI 用のビジュアルスタイル |
 
 <!---
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
@@ -55,11 +55,11 @@ AEM は、優先順に次の 4 つの主要な Java API セットに基づいて
 | 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | データとコンテンツの抽象概念（ノード、プロパティ、セッションなど）。 |
 | 4 | [Apache Felix](https://felix.apache.org/) | OSGi アプリケーションコンテナの抽象概念（サービスや（OSGi）コンポーネントなど）。 |
 
-AEM が API を提供する場合は、それを Sling、JCR、OSGi よりも優先します。AEMが API を提供しない場合は、Sling を JCR や OSGi よりも優先します。
+AEM が API を提供する場合は、それを Sling、JCR、OSGi よりも優先します。AEM が API を提供しない場合は、Sling を JCR や OSGi よりも優先します。
 
 >[!TIP]
 >
->これらのガイドラインについて詳しくは、ドキュメント [Java API のベストプラクティスについて ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=ja) を参照してください。
+>これらのガイドラインについて詳しくは、[Java API のベストプラクティスについて](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=ja)ドキュメントを参照してください。
 
 ## AEM 配信およびコンテンツ管理サービスと API {#delivery-apis}
 

@@ -9,9 +9,9 @@ solution: Experience Manager Sites
 feature: Translation
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '491'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ AEM を使用すると、コンテンツの作成と管理が簡単になるだ�
 
 さらに、このジャーニーでは、AEM によるコンテンツの翻訳方法の詳細を順を追って説明します。
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 AEM Sites 翻訳ジャーニーを開始していただきありがとうございます。ドキュメントを読んだので、次を理解しているはずです。
 
@@ -63,7 +63,7 @@ AEM Sites 翻訳ジャーニーを開始していただきありがとうござ�
 
 ## その他のリソース {#additional-resources}
 
-[AEM Sites翻訳の基本を学ぶ ](getting-started.md) のドキュメントを確認して、サイト翻訳ジャーニーの次のステップに進むことをお勧めします。ジャーニーの続行に必須ではありませんが、この記事で取り上げたいくつかの概念について詳しく説明している追加のオプションリソースを以下に挙げておきます。
+[AEM Sites 翻訳の基本を学ぶ](getting-started.md)のドキュメントを確認して、サイト翻訳ジャーニーの次のパートに進むことをお勧めします。次は追加的なオプションのリソースで、このドキュメントで取り上げた概念についてより詳しく説明していますが、ジャーニーを続ける上で必須ではありません。
 
 * [ページのオーサリングのクイックスタートガイド](/help/sites-cloud/authoring/quick-start.md) - AEM Sites を使用してコンテンツを作成するうえで最も重要な概念の概要です。
 * [MSM と翻訳](/help/sites-cloud/administering/msm-and-translation.md) - AEM のマルチサイトマネージャーの詳細と翻訳ツールとの連携方法について説明します。

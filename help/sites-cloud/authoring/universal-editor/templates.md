@@ -6,9 +6,9 @@ feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->[ テンプレートは、ページエディターを使用して編集可能なページを作成する場合にも使用できます ](/help/sites-cloud/authoring/page-editor/templates.md)。
+>[ページエディターで編集可能なページを作成するテンプレートも使用できます](/help/sites-cloud/authoring/page-editor/templates.md)。
 
 ## ページテンプレートとは {#what-are}
 
@@ -33,17 +33,17 @@ ht-degree: 87%
 
 まず、サイトの設定用に編集可能テンプレートを有効にします。
 
-1. **Sites** コンソールを使用して [ サイトのルートを選択 ](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources) します。
+1. **Sites** コンソールを使用して、[サイトのルートを選択](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)します。
 1. サイトルートを選択したら、ツールバーの&#x200B;[**プロパティ**&#x200B;アイコン](/help/sites-cloud/authoring/sites-console/page-properties.md)をタップまたはクリックします。
 1. プロパティダイアログの「**詳細**」タブで、「**クラウド設定**」フィールドの値をメモします。
 1. メインナビゲーションから、**ツール**／**一般**／**設定ブラウザー**&#x200B;を選択します。
-1. **[設定ブラウザー](/help/implementing/developing/introduction/configurations.md)** で、前の手順でメモした設定を選択し、ツールバーの **プロパティ** をタップまたはクリックします。
+1. **[設定ブラウザー](/help/implementing/developing/introduction/configurations.md)**&#x200B;から、前の手順で書き留めた設定を選択し、ツールバーの「**プロパティ**」をタップまたはクリックします。
 1. **設定プロパティ**&#x200B;ウィンドウで、「**編集可能テンプレート**」オプションをオンにします。
 1. 「**保存して閉じる**」をタップまたはクリックします。
 
 設定を有効にしたら、サイトのテンプレートを許可する必要があります。
 
-1. **Sites** コンソールを使用して [ サイトのルートを選択 ](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources) します。
+1. **Sites** コンソールを使用して、[サイトのルートを選択](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)します。
 1. サイトルートを選択したら、ツールバーの&#x200B;[**プロパティ**&#x200B;アイコン](/help/sites-cloud/authoring/sites-console/page-properties.md)をタップまたはクリックします。
 1. 「**テンプレート設定**」セクションのプロパティダイアログの「**詳細**」タブで、「**追加**」ボタンをタップまたはクリックします。
 1. **許可されたテンプレート**&#x200B;に表示される新しい空のフィールドに、パス `/conf/<site>/settings/wcm/templates/.*` を追加します。
@@ -67,7 +67,7 @@ ht-degree: 87%
 
 ## テンプレートからのページの作成 {#creating-from-template}
 
-ユニバーサルエディターを使用して編集可能なテンプレートからページを作成する手順は、[ 他のページを作成する ](/help/sites-cloud/authoring/sites-console/creating-pages.md) 手順と同じです。
+ユニバーサルエディターで編集可能テンプレートからページを作成するワークフローは、[他のページを作成](/help/sites-cloud/authoring/sites-console/creating-pages.md)する場合と同じです。
 
 1. **Sites** コンソールを使用して、新しいページを作成する[場所に移動](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)します。
 
@@ -87,6 +87,6 @@ ht-degree: 87%
 
 ## 編集可能テンプレート {#editable-templates}
 
-[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)で作成したページは、テンプレートに基づいて作成することもできます。ユニバーサルエディターとページエディターのページを作成するためのテンプレートは、どちらもAEM [ 編集可能テンプレート ](/help/implementing/developing/components/templates.md) を活用しています。
+[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)で作成したページは、テンプレートに基づいて作成することもできます。ユニバーサルエディターとページエディターのページを作成するのに使用するテンプレートでは、どちらも AEM の[編集可能テンプレート](/help/implementing/developing/components/templates.md)を活用します。
 
 ページエディターで編集可能なページを作成するのに使用するテンプレートでは、編集可能なテンプレートのすべての機能を使用します。ユニバーサルエディターで編集可能なページを作成するのに使用するテンプレートでは、初期コンテンツ機能のみを使用します。

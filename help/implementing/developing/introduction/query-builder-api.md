@@ -5,9 +5,9 @@ exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1830'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -485,9 +485,9 @@ AEM Query Builder Debugger を使用して、説明可能な XPath クエリを�
 
 >[!NOTE]
 >
->ロガーの設定は、ドキュメント「[ロギング](/help/implementing/developing/introduction/logging.md)」に記述されています。
+>ロガーの設定について詳しくは、ドキュメント「[ログ](/help/implementing/developing/introduction/logging.md)」を参照してください。
 
-前の節（テストとデバッグ [ で説明したクエリの実行時における Query Builder 実装のログ出力（情報レベル ](#testing-and-debugging)
+前の[テストおよびデバッグ](#testing-and-debugging)の節に記述されたクエリを実行したときの Query Builder 実装のログ出力（情報レベル）
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):

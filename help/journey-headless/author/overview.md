@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '860'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -62,9 +62,9 @@ AEM を使用してヘッドレスビジネスケースを解決する方法を�
 | 3 | [コンテンツフラグメントでの参照の使用について](references.md) | コンテンツフラグメントでの参照の使用方法について説明します。また、ネストされたフラグメントを使用して、ヘッドレス CMS の複数レベルの構造を作成および管理することもできます。 |
 | 4 | [コンテンツフラグメントのメタデータとタグの定義について](metadata-tagging.md) | コンテンツフラグメントのメタデータとタグの定義について説明します。 |
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
-これで、Adobe ヘッドレスジャーニーを開始する準備が整いました。このジャーニーの次のステップに進み、「[AEM ヘッドレスas a Cloud Serviceのオーサリング – 概要 ](introduction.md) を読むことをお勧めします。
+これで、Adobe ヘッドレスジャーニーを開始する準備が整いました。このジャーニーの次のパートに進み、[AEM Headless as a Cloud Service のオーサリング - 概要](introduction.md)の記事を読むことをお勧めします。
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}

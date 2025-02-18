@@ -5,19 +5,19 @@ role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 feature: Onboarding
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '669'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # プログラムの作成 {#create-program}
 
-[ オンボーディングジャーニー ](overview.md) のこのパートでは、Cloud Managerを使用して最初のプログラムを作成する方法を説明します。
+[オンボーディングジャーニー](overview.md)のこのパートでは、Cloud Manager を使用して最初のプログラムを作成する方法を説明します。
 
 ## 目的 {#objective}
 
-オンボーディングジャーニーの前のドキュメント [Cloud Managerへのアクセス ](cloud-manager.md) を確認し、Cloud Managerへの適切なアクセス権があることを確認しました。 これで、最初のプログラムを作成できます。
+オンボーディングジャーニーの前のドキュメント（[Cloud Manager へのアクセス](cloud-manager.md)）を確認し、Cloud Manager への適切なアクセス権があることを確認しました。これで、最初のプログラムを作成できます。
 
 このドキュメントを読み終えると、次のことができるようになります。
 
@@ -66,9 +66,9 @@ Cloud Manager のプログラムは、Cloud Manager の一連の環境を表し�
 
 プログラムが完了すると、**開発者**&#x200B;製品プロファイルに割り当てられた組織のメンバーは、 Cloud Manager にログインして Cloud Manager の Git リポジトリを管理できるようになります。
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
-最初のプログラムを作成したので、そのプログラムの環境を作成できるようになりました。次に [ 環境の作成 ](create-environments.md) ドキュメントを確認し、オンボーディングジャーニーを続けます。
+最初のプログラムを作成したので、そのプログラムの環境を作成できるようになりました。次に、[環境の作成](create-environments.md)ドキュメントを確認し、オンボーディングジャーニーを続けてください。
 
 ## その他のリソース {#additional-resources}
 

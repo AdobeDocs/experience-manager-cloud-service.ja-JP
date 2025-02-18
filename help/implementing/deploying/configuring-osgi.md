@@ -5,7 +5,7 @@ feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3321'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ AEM コードプロジェクトに含まれる設定ファイルを使用して�
 
 >[!TIP]
 >
->Cloud Manager を使用して環境変数を設定できます。詳しくは、 [こちら](/help/implementing/cloud-manager/environment-variables.md) のドキュメントを参照してください。
+>Cloud Manager を使用して環境変数を設定できます。詳しくは、[こちら](/help/implementing/cloud-manager/environment-variables.md)のドキュメントを参照してください。
 
 ## OSGi の設定ファイル {#osgi-configuration-files}
 

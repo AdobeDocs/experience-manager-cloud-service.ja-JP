@@ -5,9 +5,9 @@ exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '766'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Edge Delivery Services は、プロジェクトの開始方法に応じて、様
 
 Cloud Manager の **Edge Delivery の TODO リスト**&#x200B;は、オンボーディング、Edge Delivery サイトの管理から[運用開始](/help/journey-onboarding/go-live-checklist.md)までガイドすることを目的としたオンボーディングタスクチェックリストです。
 
-![Cloud ManagerのEdge Delivery サイトの To-Do リスト。](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Cloud Manager の Edge Delivery サイトの TODO リスト。](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | タスク | 説明 |
 | --- | --- | --- |

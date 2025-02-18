@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: a91b15836d0ca0308fbc860ec57aacda908f610d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1088'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ SSL（Secure Socket Layer）証明書のインストールおよび管理にお�
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="SSL 証明書の管理"
->abstract="Cloud Managerに、SSL 証明書をインストールおよび管理するセルフサービスツールがあり、サイトをユーザーに対して保護する方法を説明します。 Cloud Manager は、プラットフォーム TLS サービスを使用して、SSL 証明書と、サードパーティの証明機関から取得され、顧客が所有する秘密鍵を管理します。"
+>abstract="Cloud Manager のセルフサービスツールで、SSL 証明書をインストールおよび管理し、ユーザーのためにサイトを保護する方法について説明します。Cloud Manager は、プラットフォーム TLS サービスを使用して、SSL 証明書と秘密鍵（顧客が所有し、サードパーティの証明機関から取得される鍵）を管理します。"
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="SSL 証明書の表示、更新、および置換"
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="SSL 証明書のステータスの確認"
 
@@ -40,8 +40,8 @@ Cloud Manager には、SSL 証明書をインストールおよび管理する�
 
 | | モデル | 説明 |
 | --- | --- | --- |
-| A | **[Adobe管理 SSL 証明書（DV）](#adobe-managed)** | Cloud Manager を使用すると、ユーザーはアドビが提供する DV（ドメイン検証）証明書を設定して、ドメインをすばやく設定できます。 |
-| B | **[顧客管理の SSL 証明書（OV/EV）](#customer-managed)** | Cloud Manager は、プラットフォーム TLS（Transport Layer Security）サービスを提供し、所有する OV および EV SSL 証明書と、サードパーティの証明機関からの秘密鍵（*Let&#39;s Encrypt* など）を管理できます。 |
+| A | **[アドビが管理する SSL 証明書（DV）](#adobe-managed)** | Cloud Manager を使用すると、ユーザーはアドビが提供する DV（ドメイン検証）証明書を設定して、ドメインをすばやく設定できます。 |
+| B | **[顧客が管理する SSL 証明書（OV/EV）](#customer-managed)** | Cloud Manager は、プラットフォーム TLS（Transport Layer Security）サービスを提供し、所有する OV および EV SSL 証明書と、サードパーティの証明機関からの秘密鍵（*Let&#39;s Encrypt* など）を管理できます。 |
 
 どちらのモデルも、証明書を管理する次の一般的な機能を提供します。
 
@@ -53,13 +53,13 @@ Cloud Manager には、SSL 証明書をインストールおよび管理する�
 >
 >[カスタムドメインを追加して環境に関連付けるには](/help/implementing/cloud-manager/custom-domain-names/introduction.md)、そのドメインを対象とする有効な SSL 証明書が必要です。
 
-### Adobe管理（DV） SSL 証明書 {#adobe-managed}
+### アドビが管理する（DV）SSL 証明書 {#adobe-managed}
 
 DV 証明書は、最も基本的なレベルの SSL 証明書で、多くの場合、テスト目的や、基本的な暗号化で web サイトを保護する目的で使用されます。DV 証明書は[実稼動プログラムとサンドボックスプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)の両方で利用できます。
 
 DV 証明書を作成すると、その証明書を削除しない限り、アドビが 3 か月ごとに自動的に更新します。
 
-### 顧客管理（OV/EV）の SSL 証明書 {#customer-managed}
+### 顧客が管理する（OV/EV）SSL 証明書 {#customer-managed}
 
 OV 証明書と EV 証明書は、CA で検証された情報を提供します。このような情報は、web サイト所有者、メール送信者、コードや PDF ドキュメントのデジタル署名者が信頼できるかどうかを評価するのに役立ちます。DV 証明書では、このような所有権の検証は許可されません。
 
@@ -73,24 +73,24 @@ OV 証明書と EV 証明書は、CA で検証された情報を提供します�
 >
 >複数のカスタムドメインがある場合は、新しいドメインを追加するたびに証明書をアップロードする必要がないことがあります。その場合、複数のドメインを対象とする単一の証明書を取得するとメリットが得られます。
 
-#### 顧客管理の OV/EV SSL 証明書の要件 {#requirements}
+#### 顧客が管理する OV/EV SSL 証明書の要件 {#requirements}
 
 顧客が管理する独自の SSL 証明書を追加する場合は、次の更新された要件を満たす必要があります。
 
 * ドメイン検証（DV）証明書および自己署名証明書はサポートされていません。
 * 証明書は、OV（組織検証）ポリシーまたは EV（拡張検証）ポリシーに準拠する必要があります。
-* 証明書は、信頼された証明機関（CA）によって発行された X.509 TLS 証明書である必要があります。
-* 次の暗号化キーの種類がサポートされています。
+* 証明書は、信頼された認証機関（CA）から発行されている X.509 TLS 証明書にする必要があります。
+* サポートされている暗号化キーのタイプは次のとおりです。
 
    * RSA 2048 ビット、標準サポート。
-2048 ビットを超える RSA キー（3072 ビットまたは 4096 ビットの RSA キーなど）は、現時点ではサポートされていません。
-   * 楕円曲線（EC）キー `prime256v1` （`secp256r1`）および `secp384r1`
-   * 楕円曲線デジタル署名アルゴリズム （ECDSA）証明書。 パフォーマンス、セキュリティ、効率性を向上させるために、RSA よりもAdobeが推奨する証明書です。
+現時点では、2048 ビットを超える RSA キー（3072 ビットまたは 4096 ビットの RSA キーなど）はサポートされていません。
+   * 楕円曲線（EC）キー `prime256v1`（`secp256r1`）および `secp384r1`
+   * 楕円曲線デジタル署名アルゴリズム（ECDSA）証明書。このような証明書は、パフォーマンス、セキュリティ、効率を向上させるために、RSA よりもアドビによって推奨されています。
 
-* 検証に合格するには、証明書を正しい形式にする必要があります。 秘密鍵は `PKCS#8` 形式にする必要があります。
+* 検証に合格するには、証明書を正しく書式設定する必要があります。秘密鍵は、`PKCS#8` 形式にする必要があります。
 
 >[!NOTE]
->3072 ビット RSA キーを使用してコンプライアンスを必要とする場合、Adobeが推奨する代替手段は ECDSA 証明書（`secp256r1` または `secp384r1`）を使用することです。
+>組織が 3072 ビット RSA キーを使用したコンプライアンスを必要とする場合、アドビが推奨する代替方法は、ECDSA 証明書（`secp256r1` または `secp384r1`）を使用することです。
 
 
 #### 証明書管理のベストプラクティス

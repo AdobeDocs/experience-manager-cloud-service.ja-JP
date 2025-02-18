@@ -6,9 +6,9 @@ role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '556'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ AEM サイトテンプレートを使用して、サイト構造と初期コン�
 
 一連の既存の標準に基づいて新しいサイトをすばやくデプロイするために、事前定義された構造を利用できると便利です。サイトテンプレートを使用すると、基本的なサイトコンテンツを組み合わせて、便利で再利用可能なパッケージを作成できます。
 
-サイトテンプレートには通常、新しいサイトをすばやく開始するために、ベースサイトのコンテンツと構造、および [ サイトテーマ ](site-themes.md) と呼ばれるサイトスタイル設定情報が含まれています。 管理者は、（サイト作成プロセス中に [ サイトのベースとなるサイトテンプレートを選択 ](create-site.md) ます。
+サイトテンプレートには通常、新しいサイトをすばやく開始するために、ベースサイトのコンテンツと構造、および[サイトテーマ](site-themes.md)と呼ばれるサイトスタイル設定情報が含まれています。管理者は、[サイト作成プロセス中に](create-site.md)サイトのベースとなるサイトテンプレートを選択します。
 
 テンプレートは再利用かつカスタマイズ可能なので、強力です。また、AEM インストールで複数のテンプレートを使用できるため、様々なビジネスニーズを満たすために異なるサイトを柔軟に作成できます。
 
@@ -67,7 +67,7 @@ AEM サイトテンプレートを使用して、サイト構造と初期コン�
 
 ## Standard Site Template {#standard-site-template}
 
-アドビは、独自のテンプレートを作成するための基礎として使用できるベストプラクティスの参照テンプレートを提供しています。[Standard Site Template は GitHub で入手できます ](https://github.com/adobe/aem-site-template-standard)。
+アドビは、独自のテンプレートを作成するための基礎として使用できるベストプラクティスの参照テンプレートを提供しています。[Standard Site Template は GitHub で入手できます](https://github.com/adobe/aem-site-template-standard)。
 
 [標準サイトテンプレートの最新リリース](https://github.com/adobe/aem-site-template-standard/releases)をダウンロードすると、[新しいサイトの作成](create-site.md)に直接使用できます。
 

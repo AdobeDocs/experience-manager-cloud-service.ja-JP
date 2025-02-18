@@ -5,19 +5,19 @@ exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '463'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # AEM as a Cloud Service の用語 {#terminology}
 
-[ オンボーディングジャーニー ](overview.md) のこのパートでは、AEM as a Cloud Serviceの用語と基本構造を説明します。
+[オンボーディングジャーニー](overview.md)のこの部分では、AEM as a Cloud Service の用語と基本構造を説明します。
 
 ## 目的 {#objective}
 
-[ オンボーディングの準備 ](preparation.md) のドキュメントを読んで、オンボーディングプロセスに至るまでの作業を理解したので、ログインする前に、システムの用語と基本構造を理解しておくと役に立ちます。
+これで、[オンボーディングの準備](preparation.md)のドキュメントを読んで、オンボーディングプロセスに至る流れを学習しました。ログインする前に、システムの用語と基本構造を理解しておくと役に立ちます。
 
 AEM as a Cloud Service は強力かつ柔軟なツールです。どのようなツールであれ、使用するには、ツールの構成とツールの説明に使用される用語および言語を理解しておく必要があります。このドキュメントでは、システムの使用を開始する前に理解しておく必要がある主な用語をまとめています。
 
@@ -48,7 +48,7 @@ AEM as a Cloud Service は強力かつ柔軟なツールです。どのような
 * **リポジトリ** は、WKND Magazine と WKND Media のカスタムコードおよびアプリケーションを維持管理するために使用されます。
 * 様々な&#x200B;**ツールとワークフロー**&#x200B;がリポジトリ全体で機能して、CI／CD パイプラインを使用したコードのデプロイ、ログへのアクセス、AEM へのアクセスなどを行います。
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 これで AEM オンボーディング ジャーニーのこの部分を完了したので、次のことを理解しました。
 

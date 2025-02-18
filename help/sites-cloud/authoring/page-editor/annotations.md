@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '676'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 97%
 
 1. 特定の注釈の編集が完了した後は、次の操作を実行できます。
 
-   * テキストマーカーを選択して注釈を開きます。注釈が開いたら、テキスト全体を表示して、注釈に変更を加えたり [ 削除 ](#deleting-annotations) することができます。
+   * テキストマーカーを選択して注釈を開きます。注釈が開いたら、テキスト全体を表示して、注釈に変更を加えたり、[削除](#deleting-annotations)したりすることができます。
    * テキストマーカーの位置を変更します。
    * スケッチ線を選択してそのスケッチを選択し、必要な位置までドラッグします。
    * コンポーネントの移動またはコピー

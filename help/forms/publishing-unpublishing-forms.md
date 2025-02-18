@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1328'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -122,7 +122,7 @@ ht-degree: 99%
 
 ## フォームとドキュメントの公開と非公開の自動化 {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
-[!DNL AEM Forms] では、フォームとドキュメントでアセットの公開と非公開をスケジュールできます。スケジュールはメタデータエディターで指定できます。フォームメタデータの管理について詳しくは、「[ フォームメタデータの管理 ](manage-form-metadata.md)」を参照してください。
+[!DNL AEM Forms] では、フォームとドキュメントでアセットの公開と非公開をスケジュールできます。スケジュールはメタデータエディターで指定できます。フォームメタデータの管理について詳しくは、[フォームメタデータの管理](manage-form-metadata.md)を参照してください。
 
 以下の手順に従って、フォームとドキュメントのアセットを公開および非公開する日時をスケジュールします。
 

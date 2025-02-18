@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4415'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->[ テンプレートは、ユニバーサルエディターで編集可能なページを作成する場合にも使用できます ](/help/sites-cloud/authoring/universal-editor/templates.md)。
+>[ユニバーサルエディターで編集可能なページを作成するテンプレートも使用できます](/help/sites-cloud/authoring/universal-editor/templates.md)。
 
 **テンプレートエディター**&#x200B;により、管理者以外でも、テンプレートを作成して管理できるようになります。「**テンプレート作成者**」タイプのパワーユーザーが、テンプレートを作成できます。環境の設定、クライアントライブラリの作成、使用されるコンポーネントの作成は開発者が行う必要がありますが、これら基本となる部分を一度設定するだけで、**テンプレート作成者**&#x200B;は開発者の関与なしで柔軟にテンプレートを作成、設定できます。
 
@@ -95,7 +95,7 @@ ht-degree: 98%
 >
 >[国際化](/help/implementing/developing/extending/i18n/dev.md)が必要な情報は、決してテンプレートに含めないようにしてください。
 >
->ヘッダーやフッターなどのテンプレート要素をローカライズする必要がある場合は、[ コアコンポーネントのローカライゼーション機能 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=ja) を使用します。
+>ローカライズが必要なヘッダーやフッターなどのテンプレート要素の場合は、[コアコンポーネントのローカライゼーション機能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=ja)を利用します。
 
 ### テンプレートフォルダーの作成 - 管理者 {#creating-a-template-folder-admin}
 
@@ -210,7 +210,7 @@ ht-degree: 98%
 
 ページがレンダリングされる際にテンプレートが参照されるので、テンプレートをパブリッシュ環境で使用できるようにするには、完全に設定されたテンプレートを公開する必要があります。
 
-**[テンプレートコンソール](/help/sites-cloud/administering/templates-console.md)** を使用したPublish テンプレート。
+**[テンプレートコンソール](/help/sites-cloud/administering/templates-console.md)**&#x200B;を使用して、テンプレートを公開します。
 
 ## テンプレートの編集 - テンプレート作成者 {#editing-templates-template-authors}
 
@@ -647,4 +647,4 @@ ht-degree: 98%
    >ドラフトでなくなったテンプレートのコンポーネントのロック状態を変更すると、AEM は明示的に警告を発します。
 
 1. サイト固有のテンプレートに[独自のフォルダーを作成](#creating-a-template-folder-admin)します。
-1. **[テンプレート コンソール ](#publishing-a-template-template-author) （/help/sites-cloud/administering/templates-console.md）から [ テンプレートをPublish]** ます。
+1. **[テンプレート]**&#x200B;コンソール（/help/sites-cloud/administering/templates-console.md）から[独自のテンプレートを公開](#publishing-a-template-template-author)します。

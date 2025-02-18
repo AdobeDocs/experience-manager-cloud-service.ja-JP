@@ -5,9 +5,9 @@ exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '630'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Externalizer サービスでは、プログラムでリソースパスにプレ�
 
 >[!NOTE]
 >
->[AEM as a Cloud Serviceの OSGi 設定 ](/help/implementing/deploying/overview.md#osgi-configuration) を適用する場合と同様に、ローカル開発者インスタンスで次の手順を実行し、デプロイメント用のプロジェクトコードにコミットする必要があります。
+>[AEM as a Cloud Service に OSGi 設定](/help/implementing/deploying/overview.md#osgi-configuration)を適用する場合と同様に、ローカル開発者インスタンスで次の手順を実行し、デプロイメント用のプロジェクトコードにコミットする必要があります。
 
 Externalizer サービスのドメインマッピングを定義するには：
 

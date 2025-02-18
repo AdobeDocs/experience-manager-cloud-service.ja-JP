@@ -5,7 +5,7 @@ exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '937'
 ht-degree: 100%
 
@@ -158,7 +158,7 @@ MSM レイヤーの定義（参照用）は、次のファイルにあります�
 
 このページのコードは [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor) にあります。
 
-## 新しいページアクションを追加する {#add-a-new-page-action}
+## 新しいページアクションの追加 {#add-a-new-page-action}
 
 **サイトに戻る**（コンソール）アクションなどの新しいページアクションを、ページツールバーに追加します。
 

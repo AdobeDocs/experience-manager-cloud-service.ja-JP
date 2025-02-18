@@ -5,9 +5,9 @@ exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '927'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 95%
 
 ## これまでの説明内容 {#story-so-far}
 
-AEM Reference Demo Add-On ジャーニーの前のドキュメントである [ サイトを作成 ](create-site.md) では、Reference Demo Add-On のテンプレートに基づいて新しいデモサイトを作成しました。 その結果、以下を習得しました。
+AEM Reference Demo Add-On ジャーニーの前のドキュメントである[サイトを作成](create-site.md)では、参照デモのアドオンのテンプレートに基づいて新しいデモサイトを作成しました。その結果、以下を習得しました。
 
 * AEM オーサリング環境へのアクセス方法の理解。
 * テンプレートに基づくサイトの作成方法の理解。
 * サイト構造内を移動し、ページを編集する際の基本事項の理解。
 
-また [ デモサイトに対してAEM Screensを有効にした ](screens.md) 場合、次のことも習得しました。
+また、[デモサイトに対して AEM Screens を有効にした場合](screens.md)、次のことも習得しました。
 
 * AEM Screens の基本的な知識。
 * We.Cafe デモコンテンツの理解。

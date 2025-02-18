@@ -6,9 +6,9 @@ role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '583'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 89%
 
 ## テーマソースのダウンロード {#downloading-theme-sources}
 
-AEMで [ サイトテンプレート ](site-templates.md) に基づいてサイトを作成する場合は、サイトパネルを使用して [ サイトテーマ ](site-themes.md) をダウンロードできます。
+AEM で[サイトテンプレート](site-templates.md)に基づいてサイトを作成する場合は、サイトパネルを使用して[サイトテーマ](site-themes.md)をダウンロードできます。
 
 Sites コンソールにサイトパネルが表示された状態で、サイトのルートを選択すると、そのサイトに関するテーマ情報が表示されます。
 
@@ -44,7 +44,7 @@ Sites コンソールにサイトパネルが表示された状態で、サイ�
 
 ## テンプレートリソースのダウンロード {#downloading-template-resources}
 
-[ サイトテンプレート ](site-templates.md) には、サイトコンテンツ構造や [ サイトテーマ ](site-themes.md) に加えて情報を含めることができます。 サイト テンプレートには、ワイヤフレーム設計やその他のサイト関連ファイルなどを含めることができます。
+[サイトテンプレート](site-templates.md)には、サイトコンテンツ構造や[サイトテーマ](site-themes.md)に加えて、情報を含めることができます。サイトテンプレートには、ワイヤーフレームデザインやその他のサイト関連ファイルなどを含めることができます。
 
 サイトテンプレートをベースにしたサイトの場合は、Sites コンソールにサイトパネルが表示された状態で、サイトのルートを選択すると、追加のサイトリソースなど、そのサイトに関するテーマ情報が表示されます。
 
@@ -84,4 +84,4 @@ Sites コンソールにサイトパネルが表示された状態で、サイ�
 
 ![フロントエンドパイプラインの有効化](/help/sites-cloud/administering/assets/enable-fep.png)
 
-詳しくは、ドキュメント [ フロントエンドパイプラインの有効化 ](enable-front-end-pipeline.md) を参照してください。
+詳しくは、[フロントエンドパイプラインの有効化](enable-front-end-pipeline.md)ドキュメントを参照してください。

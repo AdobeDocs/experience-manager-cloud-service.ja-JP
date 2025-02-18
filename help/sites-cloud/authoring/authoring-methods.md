@@ -6,9 +6,9 @@ exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ AEM の統合された拡張性のある特性により、プロジェクトの�
 
 AEM ページエディターは、WYSIWYG（見た通りの）インターフェイスを使用して、コンテンツをオーサリングするための統合環境を提供します。事前定義されたコンポーネントをドラッグ＆ドロップしてページを作成し、コンテンツをインプレースで編集します。
 
-AEM ページエディターについて詳しくは、AEM ページエディターのドキュメント [The Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md) を参照してください。
+AEM ページエディターについて詳しくは、[AEM ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)のドキュメントを参照してください。
 
 ## ユニバーサルエディターを使用した WYSIWYG オーサリング {#universal-editor}
 
@@ -47,17 +47,17 @@ AEM ページエディターについて詳しくは、AEM ページエディタ
 
 ユニバーサルエディターには AEM 内の Sites コンソールからアクセスしますが、そのパワーやコンテンツに依存しない柔軟性により、AEM コンテンツだけでなく、適切にインストルメント化された外部コンテンツも作成することができます。
 
-ユニバーサルエディターについて詳しくは、ドキュメント [ ユニバーサルエディターを使用したコンテンツのオーサリング ](/help/sites-cloud/authoring/universal-editor/authoring.md) を参照してください。
+ユニバーサルエディターについて詳しくは、[ユニバーサルエディターを使用したコンテンツのオーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md)のドキュメントを参照してください。
 
 ## ドキュメントベースのオーサリング  {#document-based}
 
-Edge Delivery サービスを使用する場合、[AEM **サイト** コンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) の外部で、Microsoft Word やGoogle Docsなどの従来のドキュメントとしてコンテンツを作成できます。
+Edge Delivery Services を使用する場合は、[AEM **Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)の完全な外部で、Microsoft Word や Google Docs などの従来のドキュメントとして、コンテンツを作成できます。
 
 ![ドキュメントベースのコンテンツの編集](assets/authoring-methods-document.jpg)
 
 ドキュメントベースのオーサリングでは、作成者は既に使い慣れたツールを使用して、AEM の Edge Delivery Services の速度とパフォーマンスのメリットを活用しながらコンテンツを公開できます。ドキュメントベースのオーサリングでは、AEM コンソールを使用する必要はありません。
 
-ドキュメントベースのオーサリングについて詳しくは、[ コンテンツのオーサリングと公開 ](/help/edge/docs/authoring.md) を参照してください。
+ドキュメントベースのオーサリングについて詳しくは、[コンテンツのオーサリングと公開](/help/edge/docs/authoring.md)を参照してください。
 
 ## AEM コンテンツフラグメントエディター {#cf-editor}
 

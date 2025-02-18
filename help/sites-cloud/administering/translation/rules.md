@@ -6,9 +6,9 @@ role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 solution: Experience Manager Sites
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1288'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 94%
 
 >[!TIP]
 >
->コンテンツの翻訳を初めて行う場合は、[ サイト翻訳ジャーニー](/help/journey-sites/translation/overview.md) を参照してください。これは、AEMの強力な翻訳ツールを使用してAEM Sites コンテンツを翻訳する手順を示すガイドです。AEMや翻訳の経験がないユーザーに最適です。
+>コンテンツの翻訳を初めて行う場合は、[AEM Sites 翻訳ジャーニー](/help/journey-sites/translation/overview.md)を参照してください。これは、AEM の強力な翻訳ツールを使用して AEM Sites コンテンツを翻訳する手順を示すガイドです。AEM や翻訳の経験がないユーザーに最適です。
 
 ## コンテンツフラグメントと翻訳ルール {#content-fragments}
 
-このドキュメントで説明されている翻訳ルールは、「翻訳統合フレームワークの設定レベル **で「翻訳用にコンテンツモデルフィールドを有効にする** オプションがアクティブになっていない場合にのみ [ コンテンツフラグメントに適用され ](integration-framework.md#assets-configuration-properties) す。
+このドキュメントで説明されている翻訳ルールは、[翻訳統合フレームワーク設定レベル](integration-framework.md#assets-configuration-properties)で「**翻訳用にコンテンツモデルフィールドを有効にする**」オプションをアクティブ化していない場合にのみ、コンテンツフラグメントに適用されます。
 
 「**翻訳用にコンテンツモデルフィールドを有効にする**」オプションがアクティブの場合、AEM は[コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)の&#x200B;**翻訳可能**&#x200B;フィールドを使用して、そのフィールドを翻訳するかどうかを判断し、それに応じて自動的に翻訳ルールを作成します。このオプションは、作成済みの翻訳ルールより優先され、介入や追加の手順は必要ありません。
 

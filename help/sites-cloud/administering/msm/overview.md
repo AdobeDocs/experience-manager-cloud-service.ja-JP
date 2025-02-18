@@ -6,9 +6,9 @@ role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2721'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -122,7 +122,7 @@ MSM は、該当するコンソールの UI から各種オプションを使用
 
 * **ライブコピーを作成**（**Sites**）
 
-   * MSM を使用すると [Web サイトの個々のページまたはサブブランチのアドホック（1 回限りの）ライブコピーを作成 ](creating-live-copies.md#creating-a-live-copy-of-a-page) できます。 例えば、サブブランチを複製して商品の新しいバージョンや更新されたバージョンに関する情報を提供する場合などです。 次の方法でライブコピーを作成します。
+   * MSM を使用すると、[web サイトの個々のページまたはサブブランチのアドホック（1 回限り）ライブコピーを作成](creating-live-copies.md#creating-a-live-copy-of-a-page)できます。例えば、サブブランチを複製して製品の新しいバージョンや更新されたバージョンに関する情報を提供することができます。次の方法でライブコピーを作成します。
       * アドホックライブコピーを作成します（ブループリント設定は不要）。
       * 任意のページまたはブランチのライブコピーを（即座に）作成できます。
       * **同期**&#x200B;が必要です（**ロールアウト**&#x200B;ボタンは提供されません）。
@@ -137,7 +137,7 @@ MSM は、該当するコンソールの UI から各種オプションを使用
 
 * **ライブコピーの概要**（**Sites**）
 
-   * このコンソールを使用すると [ ブループリントとそのライブコピーを表示および管理 ](live-copy-overview.md) できます。
+   * このコンソールを使用すると、[ブループリントとそのライブコピーを表示および管理](live-copy-overview.md)できます。
 
 * **ブループリント**（**ツール**／**Sites**）
 
@@ -293,7 +293,7 @@ AEM にライブコピーを作成すると、ライブコピーのブランチ�
 
 ### ロールアウトの競合 {#rollout-conflicts}
 
-特に作成者がソースとライブコピーの両方でコンテンツを編集している場合、ロールアウトは複雑になる場合があります。したがって、AEMがどのように処理するかを把握しておくと便利です [ ロールアウト中に発生する可能性のある競合 ](rollout-conflicts.md)。
+特に作成者がソースとライブコピーの両方でコンテンツを編集している場合、ロールアウトは複雑になる場合があります。したがって、[ロールアウト中に発生する可能性のある競合](rollout-conflicts.md)を AEM で処理する方法について認識しておくと役立ちます。
 
 ### 継承と同期の休止とキャンセル {#suspending-and-cancelling-inheritance-and-synchronization}
 
@@ -329,7 +329,7 @@ MSM を使用してコンテンツを再利用し、ライブコピーに対す�
 
 1. [使用するロールアウト設定を指定する](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)場所を決定し、必要に応じて設定を行います。
 1. 必要に応じて、ライブコピーのソースコンテンツを識別する[ブループリント設定を作成](creating-live-copies.md#creating-a-blueprint-configuration)します。
-1. [ ライブコピーを作成 ](creating-live-copies.md#creating-a-live-copy) します。
+1. [ライブコピーを作成](creating-live-copies.md#creating-a-live-copy)します。
 1. 必要に応じてソースコンテンツを変更します。組織で確立されている通常のコンテンツのレビューと承認プロセスを採用してください。
 1. ブループリントを[ロールアウト](creating-live-copies.md#rolling-out-a-blueprint)するか、変更内容と[ライブコピーを同期](creating-live-copies.md#synchronizing-a-live-copy)します。
 

@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2335'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ AEM には、提供されているワークフロー手順を使用してワー�
 1. メール通知を有効にします。OSGi でフォーム中心のワークフローを設定して、ユーザーまたは担当者にメール通知を送信できます。メール通知を有効にするには、以下の設定を実行します。
 
    1. AEM Configuration Manager（`https://[server]:[port]/system/console/configMgr`）に移動します。
-   1. **[!UICONTROL Day CQ メールサービス]**&#x200B;の設定を開きます。「**[!UICONTROL SMTP サーバーのホスト名]**」、「**[!UICONTROL SMTP サーバーポート]**」、「**[!UICONTROL 送信元アドレス]**」フィールドの値を指定します。 「**[!UICONTROL 保存]**」をクリックします。
+   1. **[!UICONTROL Day CQ メールサービス]**&#x200B;の設定を開きます。「**[!UICONTROL SMTP サーバーのホスト名]**」フィールド、「**[!UICONTROL SMTP サーバーポート]**」フィールド、「**[!UICONTROL 送信元アドレス]**」フィールドの値を指定します。「**[!UICONTROL 保存]**」をクリックします。
    1. 「**[!UICONTROL Day CQ Link Externalizer]**」の設定を開きます。「**[!UICONTROL ドメイン]**」フィールドで、ローカルインスタンス、オーサーインスタンス、発行インスタンスの実際のホスト名/ IP アドレスとポート番号を指定します。「**[!UICONTROL 保存]**」をクリックします。
 
 1. ワークフローステージを作成します。ワークフローには複数のステージが含まれることがあります。これらのステージは、AEM インボックスに表示され、ワークフローの進捗をレポートします。

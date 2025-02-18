@@ -7,9 +7,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1070'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -75,9 +75,9 @@ AEM のヘッドレス実装では、コンテンツフラグメントモデル�
 
 {style="table-layout:auto"}
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
-次の記事 [CMS ヘッドレス開発について学ぶ ](learn-about.md) を参照して開始します。
+次の記事、[CMS ヘッドレス開発について学ぶ](learn-about.md)から開始します。
 
 ### 自分の冒険を選ぶ {#choose-your-path}
 

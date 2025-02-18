@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1284'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ Edge Delivery Services を使用した AEM のサイトでは、キーと値の�
 
 >[!TIP]
 >
->一般的なスプレッドシートのEdge Delivery Servicesでの操作方法について詳しくは、[ スプレッドシートと JSON](/help/edge/developer/spreadsheets.md) を参照してください。
+>スプレッドシートの一般的な Edge Delivery Services の操作方法について詳しくは、[スプレッドシートと JSON](/help/edge/developer/spreadsheets.md) のドキュメントを参照してください。
 
 >[!TIP]
 >
->スプレッドシートは、表形式のデータの管理にのみ使用する必要があります。構造化データを保存する場合は、[AEM ヘッドレス機能を確認する ](/help/headless/introduction.md) を参照してください。
+>スプレッドシートは、表形式のデータの管理にのみ使用する必要があります。構造化データを保存する場合、[AEM のヘッドレス機能を確認してください](/help/headless/introduction.md)。
 
 ## 前提条件 {#prerequisites}
 
@@ -150,7 +150,7 @@ AEM でスプレッドシートのデータを公開するには、さらにプ�
 
    >[!NOTE]
    >
-   >この `paths.json` エントリは、表形式のデータを使用してリダイレクトを作成する例に基づいています。必ず、作成しているスプレッドシートのタイプ [ に適したパスを更新してください ](#other)。
+   >この `paths.json` エントリは、表形式のデータを使用してリダイレクトを作成する例に基づいています。[作成するスプレッドシートのタイプ](#other)に応じて適切なパスを更新します。
 
 1. 「**変更をコミット…**」をクリックして、変更を `main` に保存します。
 
@@ -174,7 +174,7 @@ AEM でスプレッドシートのデータを公開するには、さらにプ�
 
 >[!TIP]
 >
->Edge Delivery Servicesマッピングについて詳しくは、「パスのパスマッピング [ を参照してください ](/help/edge/wysiwyg-authoring/path-mapping.md)。
+>パスマッピングについて詳しくは、[Edge Delivery Services のパスマッピング](/help/edge/wysiwyg-authoring/path-mapping.md)ドキュメントを参照してください。
 
 ## その他のスプレッドシートタイプ {#other}
 
@@ -205,7 +205,7 @@ AEM でスプレッドシートのデータを公開するには、さらにプ�
 
 ## 独自のスプレッドシートの作成 {#own-spreadsheet}
 
-1. [ スプレッドシートの作成 ](#spreadsheet) の節と同じ手順に従います。
+1. [スプレッドシートの作成](#spreadsheet)の節と同じ手順に従います。
 
 1. テンプレートを選択する際に、「**スプレッドシート**」を選択します。
 

@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1390'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service では、受信リクエストまたは送信応答の特
 
 さらに、CDN でその接触チャネルに接続できない場合は、自己ホスト型のカスタムエラーページ（その後レンダリングされる）を参照するルールを書き込むことができます。詳しくは、[CDN エラーページの設定](/help/implementing/dispatcher/cdn-error-pages.md)の記事を参照してください。
 
-これらのすべてのルールは、ソース管理の設定ファイルで宣言され、Cloud Manager [config パイプライン ](/help/operations/config-pipeline.md) を使用してデプロイされます。 トラフィックフィルタールールを含む設定ファイルの累積サイズが 100KB を超えることはできません。
+すべてのルールは、ソース管理の設定ファイルで宣言され、Cloud Manager の[設定パイプライン](/help/operations/config-pipeline.md)を使用してデプロイされます。トラフィックフィルタールールを含む設定ファイルの累積サイズが 100KB を超えることはできません。
 
 ## 評価の順序 {#order-of-evaluation}
 

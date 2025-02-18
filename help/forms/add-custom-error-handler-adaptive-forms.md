@@ -8,7 +8,7 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2323'
 ht-degree: 100%
 
@@ -296,7 +296,7 @@ The created folder structure looks like:
     ```
 -->
 
-1. [パイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
+1. [パイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)します。
 
 パイプラインが正常に実行されると、カスタムエラーハンドラーがアダプティブフォームのルールエディターで使用できるようになります。次に、ルールエディターのサービスの呼び出しを AEM Forms で使用して、カスタムエラーハンドラーを設定して使用する方法を説明します。
 

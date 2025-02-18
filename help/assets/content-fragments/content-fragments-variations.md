@@ -6,9 +6,9 @@ feature: Content Fragments
 role: User
 solution: Experience Manager Sites
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2518'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -105,7 +105,7 @@ ht-degree: 99%
 
 全画面表示エディター（複数行テキスト）を開いている場合は、次のアクションも（すべての[形式](#formats)で）使用できます。
 
-* [format](#formats) （[ リッチテキスト ](#rich-text)、[ プレーンテキスト ](#plain-text)、[Markdown](#markdown)）を選択します。
+* [形式](#formats)（[リッチテキスト](#rich-text)、[プレーンテキスト](#plain-text)、[マークダウン](#markdown)）の選択
 
 * [コンテンツのアップロード](#uploading-content)
 

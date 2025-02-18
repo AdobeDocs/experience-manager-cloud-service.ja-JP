@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Administering
 role: Admin
 source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1377'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -19,14 +19,14 @@ ht-degree: 88%
 
 >[!TIP]
 >
->このドキュメントでは、レスポンシブ web デザインをサポートするようにサイト管理者がレイアウトコンテナを設定する方法について説明します。 その他のリソースを利用できます。
+>このドキュメントでは、サイト管理者がレイアウトコンテナを設定して、レスポンシブ web デザインをサポートする方法について説明します。次のその他のリソースを使用できます。
 >
->* コンテンツ作成者がコンテンツページでレスポンシブデザイン機能を使用する方法の詳細については、ドキュメント [ レスポンシブレイアウト ](/help/sites-cloud/authoring/page-editor/responsive-layout.md) を参照してください。
->* 開発者向けに、レイアウトコンテナとレスポンシブグリッドの詳細については、[ レスポンシブデザインドキュメント ](/help/implementing/developing/introduction/responsive-design.md) に説明されています。このドキュメントでは、サイトをデザインする際にレイアウトコンテナとレスポンシブグリッドを使用するためのヒントが提供されています。
+>* コンテンツ作成者の場合、コンテンツページでレスポンシブデザイン機能の使用方法について詳しくは、[レスポンシブレイアウト](/help/sites-cloud/authoring/page-editor/responsive-layout.md)ドキュメントを参照してください。
+>* 開発者向けに、レイアウトコンテナとレスポンシブグリッドについて詳しくは、[レスポンシブデザインドキュメント](/help/implementing/developing/introduction/responsive-design.md)を参照してください。このドキュメントには、サイトをデザインする際にレイアウトコンテナとレスポンシブグリッドを使用するためのヒントが記載されています。
 
 ## 概要 {#overview}
 
-レスポンシブレイアウトは、[ レスポンシブ web デザイン ](https://en.wikipedia.org/wiki/Responsive_web_design) を実現するためのメカニズムです。 これにより、コンテンツ作成者は、ユーザーが使用するデバイスのレイアウトとサイズに応じて web ページを作成できます。
+レスポンシブレイアウトは、[レスポンシブ web デザイン](https://en.wikipedia.org/wiki/Responsive_web_design)を実現するメカニズムです。レスポンシブレイアウトを使用すると、コンテンツ作成者は、ユーザーが使用するデバイスのレイアウトとサイズに応じて web ページを作成できます。
 
 AEM は、次のメカニズムを組み合わせて使用することにより、ページのレスポンシブレイアウトを実現します。
 
@@ -240,10 +240,10 @@ AEM では、必要な CSS の一部の生成に LESS を使用するため、�
 
 ### レイアウトコンテナのグリッドを設定する {#configure-the-grid-of-the-layout-container}
 
-レイアウトコンテナの特定のインスタンスごとに使用可能な列の数を設定するには [ ページテンプレートを編集します ](/help/sites-cloud/authoring/page-editor/templates.md)。
+[ページテンプレートを編集することで](/help/sites-cloud/authoring/page-editor/templates.md)、レイアウトコンテナの特定のインスタンスごとに、使用可能な列の数を設定できます。
 
 ### ネストされたレスポンシブグリッド {#nested-responsive-grids}
 
-Adobeが推奨するベストプラクティスは、構造をできるだけ平らにすることです。
+アドビが推奨するベストプラクティスは、構造をできるだけフラットに保つことです。
 
-ネストされたレスポンシブグリッドの使用が避けられない場合は、開発者用ドキュメント [ レスポンシブデザイン ](/help/implementing/developing/introduction/responsive-design.md#nested-responsive-grids) を参照してください。
+ネストされたレスポンシブグリッドの使用を回避できない場合は、開発者向けドキュメントの[レスポンシブデザイン](/help/implementing/developing/introduction/responsive-design.md#nested-responsive-grids)を参照してください。

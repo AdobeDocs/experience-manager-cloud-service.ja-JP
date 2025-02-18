@@ -6,9 +6,9 @@ exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
 role: User, Leader, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 98%
 
 ### フォルダー内の Dynamic Media アセットの再処理 {#reprocessing-dynamic-media}
 
-後で変更した既存の Dynamic Media イメージプロファイルまたは Dynamic Media ビデオプロファイルが存在するフォルダー内のアセットを再処理できます。詳しくは、[ フォルダー内のDynamic Media アセットの再処理 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ja) を参照してください。
+後で変更した既存の Dynamic Media イメージプロファイルまたは Dynamic Media ビデオプロファイルが存在するフォルダー内のアセットを再処理できます。詳しくは、[フォルダー内の Dynamic Media アセットの再処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ja)を参照してください。
 
 >[!NOTE]
 >

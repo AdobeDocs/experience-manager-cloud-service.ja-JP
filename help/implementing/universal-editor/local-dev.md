@@ -5,9 +5,9 @@ exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '932'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ UES_CORS_PRIVATE_NETWORK=true
 | `UES_SPLUNK_TOKEN` | あり | なし | Splunk トークン |
 | `UES_SPLUNK_INDEX` | あり | なし | ログを書き込むインデックス |
 | `UES_SPLUNK_SOURCE` | あり | `universal-editor-service` | Splunk ログでのソースの名前 |
-| `UES_CORS_PRIVATE_NETWORK` | あり | `false` | CORS ヘッダーの送信を有効にして [ プライベートネットワーク ](https://wicg.github.io/private-network-access/#private-network-request) を許可します。 Chrome バージョン 130 以降を使用する場合は必須です |
+| `UES_CORS_PRIVATE_NETWORK` | あり | `false` | [プライベートネットワーク](https://wicg.github.io/private-network-access/#private-network-request)を許可するには、CORS ヘッダーの送信を有効にします。Chrome バージョン 130 以降のユーザーに必須です |
 
 >[!NOTE]
 >
@@ -152,9 +152,9 @@ Universal Editor Service listening on port 8000 as HTTPS Server
 
 ## ローカルユニバーサルエディターサービスを使用したページの編集 {#editing}
 
-[ ユニバーサルエディターサービスがローカルで実行されている ](#running-ue) と、[ コンテンツページがローカルサービスを使用するようにインストルメントされている ](#using-loca-ue) ので、エディターを起動できるようになりました。
+[ローカルで実行されるユニバーサルエディターサービス](#running-ue)と[ローカルサービスを使用するのに実装されたコンテンツページ](#using-loca-ue)を使用して、エディターを起動できるようになりました。
 
 1. ブラウザーを `https://localhost:8000/ping` で開きます。
-1. ブラウザーで [ 自己署名証明書 ](#ue-https) を受け入れるよう指示します。
+1. [自己署名証明書](#ue-https)に同意するようダイレクトされます。
 1. 自己署名証明書が信頼されると、ローカルのユニバーサルエディターサービスを使用してページを編集できるようになります。
 

@@ -5,9 +5,9 @@ exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
 feature: Operations
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '562'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Cloud Manager を使用したログや監視など、他の種類の監視に関
 
 >[!NOTE]
 >
-> この機能は、実稼動環境および [ 高度なクラウドサポート ](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html?lang=ja#support-add-ons) を使用するお客様にのみ提供されます。 ご不明な点がある場合は、Adobeアカウントチームにお問い合わせください。
+> この機能は、[高度なクラウドサポート](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html?lang=ja#support-add-ons)を利用している実稼動環境および顧客にのみ提供されます。ご質問がある場合は、担当のアドビのアカウントチームにお問い合わせください。
 
 ## 内部モジュールの監視 {#module-monitoring}
 

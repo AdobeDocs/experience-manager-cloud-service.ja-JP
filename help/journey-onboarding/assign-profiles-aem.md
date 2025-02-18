@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '878'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 93%
 >title="AEM 製品プロファイルの割り当て"
 >abstract="Experience Manager Assets を使用する資格が付与されていません。システム管理者にお問い合わせください。"
 
-オンボーディングジャーニー [](overview.md) のこのパートでは、AEM製品プロファイルを使用して、AEMへのアクセス権をチームに付与する方法を説明します。
+[オンボーディングジャーニー](overview.md)のこのパートでは、AEM 製品プロファイルを使用して AEM へのアクセス権をチームに付与する方法を説明します。
 
 ## 目的 {#objective}
 
-オンボーディングジャーニーの前のドキュメント [ 環境の作成 ](create-environments.md) を読み、クラウドリソースを設定したら、AEM製品プロファイルを使用して、AEM自体へのアクセス権をチームに付与します。 これを行うには、システム管理者が AEM 製品プロファイルを割り当てます。
+オンボーディングジャーニーの前のドキュメント[環境の作成](create-environments.md)を読んでクラウドリソースを設定したら、AEM 製品プロファイルを使用して、AEM 自体へのアクセス権をチームに付与します。これを行うには、システム管理者が AEM 製品プロファイルを割り当てます。
 
 このドキュメントを読むと、次の点を理解できるようになります。
 
@@ -64,7 +64,7 @@ AEM を使用するには、チームメンバーが 1 つまたは複数の AEM
 
 次の手順に従って、Admin Console で AEM 製品プロファイルを表示します。
 
-1. [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) からAdmin Consoleにログインします。
+1. [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) で Admin Console にログインします。
 
 1. **概要**&#x200B;ページで、**製品とサービス**&#x200B;カードから「**Adobe Experience Manager as a Cloud Service**」を選択します。
 

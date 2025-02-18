@@ -6,9 +6,9 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1138'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -126,7 +126,7 @@ ht-degree: 99%
 レイアウトモードを無効にするには、以下の手順を実行します。
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL 一般]**／**[!UICONTROL テンプレート]**&#x200B;を選択し、フォームで使用するテンプレートを&#x200B;**[!UICONTROL 編集]**&#x200B;モードで開きます。
-1. 左側のウィンドウでフォームコンテナを選択し、「**[!UICONTROL ポリシー]**」を選択します。
+1. 左側のパネルでフォームコンテナを選択し、「**[!UICONTROL ポリシー]**」を選択します。
 
    ![レイアウトモードを無効にする](assets/policy_disable_layout_mode.png)
 

@@ -6,19 +6,19 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1431'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # AEM ページエディター {#editing-page-content}
 
-[**Sites** コンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) でページを作成したら、AEM ページエディターを使用してページのコンテンツを編集できます。このエディターは、コンテンツをオーサリングするための強力なツールです。
+[**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)でページを作成したら、AEM ページエディターを使用してページのコンテンツを編集できます。これは、コンテンツをオーサリングする強力なツールです。
 
 >[!NOTE]
 >
->[**Sites** コンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) でページを編集する場合、コンソールは、ページの [ テンプレート ](/help/sites-cloud/authoring/page-editor/templates.md) このドキュメントで説明されているページエディター、または [ ユニバーサルエディター ](/help/sites-cloud/authoring/universal-editor/authoring.md) に適したエディターを開きます。
+>[**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)でページを編集すると、コンソールはページの[テンプレート](/help/sites-cloud/authoring/page-editor/templates.md)に適したエディター（このドキュメントで説明するページエディターや、[ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md)）を開きます。
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ AEM ページエディターは、主に次の 3 つのセクションで構成�
 
 #### サイドパネル {#side-panel-button}
 
-[ サイドパネル ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) が開きます（または閉じます）。このパネルには、アセットブラウザー、コンポーネントブラウザーおよびコンテンツツリーが含まれています。
+[サイドパネル](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)が開きます（または閉じます）。このパネルには、アセットブラウザー、コンポーネントブラウザー、コンテンツツリーが含まれています。
 
 ![サイドパネルの切り替え](assets/page-editor-side-panel-toggle.png)
 
@@ -78,7 +78,7 @@ AEM ページエディターは、主に次の 3 つのセクションで構成�
 
 #### ContextHub {#context-hub}
 
-これにより、[ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md) が開きます。 **プレビュー** モードでのみ使用できます。
+これにより、[ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md) が開きます。**プレビュー**&#x200B;モードでのみ使用できます。
 
 ![Context Hub ボタン](assets/page-editor-context-hub.png)
 
@@ -114,7 +114,7 @@ AEM ページエディターは、主に次の 3 つのセクションで構成�
 
 #### プレビュー {#preview}
 
-「**プレビュー**」ボタンを使用すると [ プレビューモード ](#preview-mode) が有効になり、公開時に表示されるとおりにページを表示できます。
+「**プレビュー**」ボタンを使用すると、[プレビューモード](#preview-mode)が有効になり、公開時に表示されるとおりにページが表示されます。
 
 ![「プレビュー」ボタン](assets/page-editor-preview.png)
 

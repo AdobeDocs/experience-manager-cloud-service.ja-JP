@@ -6,9 +6,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2816'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Forms as Cloud Service が提供する、コアコンポーネントベースの
 
 * [Cloud Manager でのパイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)に慣れてください。また、パイプラインの設定方法に関する基本的な知識を持つことで、テーマのカスタマイズを効率的に管理およびデプロイできます。
 * [投稿者の役割を持つユーザーを設定する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html)方法を説明します。投稿者の役割を持つユーザーを設定する方法を理解すると、テーマのカスタマイズに必要な権限を付与できます。
-* 最新リリースの [Apache Maven](https://maven.apache.org/download.cgi) をインストールします。 Apache Maven は、主に Java™ プロジェクトで使用されるビルド自動化ツールです。最新のリリースをインストールすると、テーマのカスタマイズに必要な依存関係が確保されます。
+* [Apache Maven](https://maven.apache.org/download.cgi) の最新リリースのインストール。Apache Maven は、主に Java™ プロジェクトで使用されるビルド自動化ツールです。最新のリリースをインストールすると、テーマのカスタマイズに必要な依存関係が確保されます。
 * プレーンテキストエディターをインストールします。例えば Microsoft® Visual Studio Code などです。Microsoft® Visual Studio Code などのプレーンテキストエディターを使用すると、テーマファイルの編集と変更を行う際に使いやすい環境を利用できます。
 
 ### 環境の設定
@@ -373,7 +373,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ##### 5.3. フロントエンドパイプラインの実行 {#run-a-frontend-pipeline}
 
-テーマは、[ フロントエンドパイプライン ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=ja) を使用してデプロイされます。 テーマをデプロイするには、次の手順を実行します。
+テーマは、[フロントエンドパイプライン](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=ja)を使用してデプロイします。テーマをデプロイするには、次の手順を実行します。
 
 1. AEM Cloud Manager リポジトリにログインします。
 1. 「**[!UICONTROL パイプライン]**」セクションの「**[!UICONTROL 追加]**」ボタンをクリックします。

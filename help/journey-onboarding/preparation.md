@@ -5,15 +5,15 @@ exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '760'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # オンボーディングの準備 {#onboarding-preparation}
 
-[AEM as a Cloud Service オンボーディングのジャーニーの概要 ](overview.md) の記事を読み、オンボーディングプロセスの内容について理解したので、作業に取りかかる準備が整いました。 ただし、オンボーディングプロセスを開始する前に、システム管理者がシステムにログインする前に理解しておくべき準備手順がいくつかあります。
+[AEM as a Cloud Service オンボーディングジャーニーの概要](overview.md)の記事を読み、オンボーディングプロセスの内容について理解したので、作業に取りかかる準備が整いました。ただし、オンボーディングプロセスを開始する前に、システム管理者がシステムにログインする前に理解しておくべき準備手順がいくつかあります。
 
 ## 目的 {#objective}
 
@@ -81,7 +81,7 @@ AEM as a Cloud Service へのオンボーディングは、お客様の組織と
 >
 >ウェルカムメールが届いたがシステム管理者でない場合は、ウェルカム電話会議の際にアドビに知らせてください。または、このジャーニーを続けて、次のステップで別の担当者を自分でシステム管理者として指名する方法を確認することもできます。
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
 これで、次の基本を理解できました。
 

@@ -5,9 +5,9 @@ exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '864'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Cloud Manager は、AEM as a Cloud Service に不可欠なコンポーネント�
 
 次の手順に従って、 Cloud Manager に移動します。
 
-1. Cloud Managerのログインページ（[`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/)）に移動します。
+1. Cloud Manager のログインページ（[`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/)）に移動します。
 
 1. Cloud Manager の&#x200B;**プログラムと製品**&#x200B;ページでプログラムを選択して、**概要**&#x200B;ページを起動します。
 

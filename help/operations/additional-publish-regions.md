@@ -5,9 +5,9 @@ exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 feature: Operations
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '663'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ AEM Sites で設定されたプログラムでは、追加の公開地域のラ�
 >[!NOTE]
 >
 >* この機能は、Sites ソリューションと Forms ソリューションで使用できます。
->* この機能は [ サンドボックスプログラム ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) には適用できません。
+>* この機能は、[サンドボックスプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)には適用できません。
 >* この機能では、プログラムを AEM リリースバージョン 12142 以降に更新する必要があります。
 
 ## ユースケース {#use-cases}

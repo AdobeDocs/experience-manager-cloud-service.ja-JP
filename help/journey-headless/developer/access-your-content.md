@@ -6,15 +6,15 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1344'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # AEM Delivery API を使用してコンテンツにアクセスする方法 {#access-your-content}
 
-[AEM ヘッドレス開発者ジャーニー](overview.md) のこのパートでは、GraphQL クエリを使用してコンテンツフラグメントのコンテンツにアクセスし、アプリにフィード（ヘッドレス配信）する方法を説明します。
+[AEM ヘッドレスデベロッパージャーニー](overview.md)のこのパートでは、GraphQL クエリを使用してコンテンツフラグメントのコンテンツにアクセスし、アプリにコンテンツをフィードする方法（ヘッドレス配信）について説明します。
 
 ## これまでの説明内容 {#story-so-far}
 
@@ -353,7 +353,7 @@ AEM GraphQL API の使用と必要な要素の設定について詳しくは、�
 * サンプルコンテンツフラグメント構造
 * AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
 これで、AEM GraphQL API を使用してヘッドレスコンテンツにアクセスしクエリを実行する方法について説明します。次は、[REST API を使用してコンテンツフラグメントのコンテンツにアクセスしコンテンツを更新する方法](update-your-content.md)について説明します。
 

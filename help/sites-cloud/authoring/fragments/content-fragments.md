@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1267'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -129,8 +129,8 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 中間コンテンツの場合は、次のことができます。
 
-* [ コンポーネントブラウザー ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) からコンポーネントを追加する
-* [Assets ブラウザーからアセットを追加 ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* [コンポーネントブラウザー](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)からコンポーネントを追加する。
+* [Assets ブラウザー](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)からアセットを追加する。
 * [関連コンテンツ](#using-associated-content)を中間コンテンツのソースとして使用する。
 
 >[!CAUTION]

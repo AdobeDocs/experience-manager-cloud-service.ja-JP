@@ -5,9 +5,9 @@ exl-id: 604477c6-d96a-441f-b5fc-5def93832478
 feature: Developing, Personalization
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '289'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ContextHub では、次のことができます。
 
 ## プレゼンテーション {#presentation}
 
-マーケターと作成者は、[ContextHub ツールバー](/help/sites-cloud/authoring/personalization/contexthub.md)を使用してストアデータを表示および操作し、ページのオーサリング時にユーザーエクスペリエンスをシミュレートできます。ツールバーは、クライアント上の ContextHub データを保持する [ContextHub ストア ](#persistence) へのアクセスを提供する UI モジュールのグループで構成されます。
+マーケターと作成者は、[ContextHub ツールバー](/help/sites-cloud/authoring/personalization/contexthub.md)を使用してストアデータを表示および操作し、ページのオーサリング時にユーザーエクスペリエンスをシミュレートできます。ツールバーは、[ContextHub ストア](#persistence)へのアクセスを提供する UI モジュールのグループで構成されます。ContextHub ストアは、クライアント上で ContextHub データを保持します。
 
 各 ContextHub UI モジュールは、事前定義されたモジュールタイプのインスタンスです。
 

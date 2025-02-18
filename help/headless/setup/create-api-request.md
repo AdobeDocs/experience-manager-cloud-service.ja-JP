@@ -5,9 +5,9 @@ exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '677'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 ## GraphQL API と Assets REST API とは {#what-are-the-apis}
 
-[ コンテンツフラグメントはいくつか作成したので ](create-content-fragment.md)、AEM API を使用してそれらをヘッドレスで配信できます。
+[コンテンツフラグメントをいくつか作成したので](create-content-fragment.md)、AEM の API を使用してヘッドレスで配信できます。
 
 * [GraphQL](/help/headless/graphql-api/content-fragments.md) API を使用すると、コンテンツフラグメントにアクセスして配信するリクエストを作成できます。この API は、コンテンツフラグメントコンテンツのクエリと使用に最も堅牢な機能セットを提供します。
    * API を使用するには、[エンドポイントを AEM で定義して有効にし](/help/headless/graphql-api/graphql-endpoint.md)、必要に応じて [GraphiQL インターフェイスをインストール](/help/headless/graphql-api/graphiql-ide.md)します。

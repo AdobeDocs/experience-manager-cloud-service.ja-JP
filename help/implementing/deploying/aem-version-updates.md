@@ -5,9 +5,9 @@ feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '997'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -97,7 +97,7 @@ AEM のアップデートは、複数のステップを含む集中的かつ完�
 
 ## 複合ノードストア {#composite-node-store}
 
-ノードのクラスターであるオーサリングインスタンスの場合も含め、通常、アップデートでダウンタイムは発生しません。[Oakの複合ノードストア機能 ](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html) により、ローリングアップデートが可能です。
+ノードのクラスターであるオーサリングインスタンスの場合も含め、通常、アップデートでダウンタイムは発生しません。[Oak の複合ノードストア機能](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)により、ローリングアップデートが可能です。
 
 この機能を利用すると、AEM で複数のリポジトリを同時に参照できます。[ローリングデプロイメント](/help/implementing/deploying/overview.md#how-rolling-deployments-work)の場合、新しい AEM バージョンには独自の `/libs` （TarMK ベースの不変リポジトリ）が含まれます。古い AEM バージョンとは異なりますが、どちらも、`/content`、`/conf`、`/etc` などのエリアを含む共有 DocumentMK ベースの可変リポジトリを参照します。
 

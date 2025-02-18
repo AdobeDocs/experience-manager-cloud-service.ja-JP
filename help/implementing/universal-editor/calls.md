@@ -5,9 +5,9 @@ exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '615'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -150,7 +150,7 @@ ht-degree: 93%
 
 ペイロードには、コンテンツを追加する場所を含む `path` オブジェクトが含まれます。
 
-また、保存するコンテンツのエンドポイント固有の詳細 [ プラグインごとに ](/help/implementing/universal-editor/architecture.md) を表す追加のオブジェクトを持つ `content` オブジェクトも含まれます。 例えば、アプリがAEMとMagentoのコンテンツに基づいている場合、ペイロードには各システムのデータオブジェクトが含まれます。
+また、`content` オブジェクトと、[各プラグイン用](/help/implementing/universal-editor/architecture.md)に保存される、そのコンテンツのエンドポイント固有の詳細に関する追加オブジェクトも含まれます。例えば、アプリが AEM および Magento のコンテンツに基づいている場合、ペイロードには各システムのデータオブジェクトが含まれます。
 
 >[!BEGINTABS]
 

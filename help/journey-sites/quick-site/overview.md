@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1020'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ AEM クイックサイト作成ツールは、サイト作成に関する開発�
 
 ## ビデオの概要 {#video-overview}
 
-この機能の動作の概要については、[ この 5 分間の紹介ビデオをご覧ください ](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)。
+この機能の動作の概要については、[この 5 分間の紹介ビデオをご覧ください](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)。
 
 このドキュメントのジャーニーでは、ビデオのすべての機能を順を追って詳しく説明するため、ワークフローを理解し、独自の環境でプロセスを再作成できます。
 
@@ -64,13 +64,13 @@ AEM を使用してサイトのビジネスケースを解決する方法をア�
 | 6 | [サイトテーマをカスタマイズ](customize-theme.md) | サイトテーマの作成方法、カスタマイズ方法およびライブの AEM コンテンツを使用したテスト方法を説明します。 | フロントエンド開発者 |
 | 7 | [カスタマイズしたテーマのデプロイ](deploy-theme.md) | パイプラインを使用してサイトテーマをデプロイする方法を説明します。 | フロントエンド開発者 |
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 これで、アドビのクイックサイト作成ジャーニーを開始する準備が整いました。
 
 * AEM 管理者または Cloud Manager の管理者の場合、またはフロントエンド開発者と管理者の役割を両方担当している場合、または AEM のエンドツーエンドのプロセスを理解したい場合は、以下に示すように、[Cloud Manager について](cloud-manager.md)でジャーニーを最初から始めてください。
 * フロントエンド開発のみを担当し、AEM と Cloud Manager 管理者とやり取りする場合は、[Git リポジトリのアクセス情報を取得](retrieve-access.md)に直接スキップして、AEM Git リポジトリにアクセスしてカスタマイズを開始できます。
-* AEM SitesとCloud Managerが連携して動作することを既に理解していて、設定から直接開始する場合は [ テンプレートからサイトの作成に直接スキップ ](create-site.md) できます。
+* AEM Sites とCloud Manager が連携することを既に理解しているユーザーが、設定から直接開始するには、[テンプレートからサイトの作成に直接スキップ](create-site.md)できます。
 
 ## その他のリソース {#additional-resources}
 

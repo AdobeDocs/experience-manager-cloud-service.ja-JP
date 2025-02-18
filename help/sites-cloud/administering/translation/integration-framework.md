@@ -6,9 +6,9 @@ role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1447'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 95%
 
 翻訳統合フレームワークは、AEM コンテンツの翻訳を組織化するためにサードパーティの翻訳サービスと統合されます。これには 3 つの基本的な手順が必要です。
 
-1. [ 翻訳サービスプロバイダーに接続します ](#connecting-to-a-translation-service-provider)。
-1. [ 翻訳統合フレームワーク設定を作成 ](#creating-a-translation-integration-configuration) します。
-1. [ クラウド設定をページに関連付けます ](#configuring-pages-for-translation)。
+1. [翻訳サービスプロバイダーに接続します](#connecting-to-a-translation-service-provider)。
+1. [翻訳統合フレームワーク設定を作成します](#creating-a-translation-integration-configuration)。
+1. [クラウド設定をページに関連付けます](#configuring-pages-for-translation)。
 
 AEM のコンテンツ翻訳機能の概要については、[多言語サイトのコンテンツの翻訳](overview.md)を参照してください。
 
 >[!TIP]
 >
->コンテンツの翻訳を初めて行う場合は、[ サイト翻訳ジャーニー](/help/journey-sites/translation/overview.md) を参照してください。これは、AEMの強力な翻訳ツールを使用してAEM Sites コンテンツを翻訳する手順を示すガイドです。AEMや翻訳の経験がないユーザーに最適です。
+>コンテンツの翻訳を初めて行う場合は、[AEM Sites 翻訳ジャーニー](/help/journey-sites/translation/overview.md)を参照してください。これは、AEM の強力な翻訳ツールを使用して AEM Sites コンテンツを翻訳する手順を示すガイドで、AEM や翻訳の経験がないユーザーに最適です。
 
 ## 翻訳サービスプロバイダーへの接続 {#connecting-to-a-translation-service-provider}
 
@@ -58,7 +58,7 @@ Web サイトのセクションごとに翻訳要件が異なる場合は、そ�
 
 フレームワークの単一の設定によって、ページコンテンツとアセットの翻訳方法が制御されます。翻訳設定を作成するには、以下を実行します。
 
-1. [ グローバルナビゲーションメニュー ](/help/sites-cloud/authoring/basic-handling.md#global-navigation) で、**ツール/Cloud Serviceと翻訳のCloud Service** を選択します。
+1. [グローバルナビゲーションメニュー](/help/sites-cloud/authoring/basic-handling.md#global-navigation)で、**ツール／クラウドサービスと翻訳クラウドサービス**&#x200B;を選択します。
 1. コンテンツ構造内で設定を作成する場所に移動します。この場所は多くの場合、特定のサイトに基づいている場合もあれば、グローバルな場合もあります。
 1. フィールドに次の情報を入力し、「**作成**」を選択します。
    1. ドロップダウンで「**設定タイプ**」を選択します。

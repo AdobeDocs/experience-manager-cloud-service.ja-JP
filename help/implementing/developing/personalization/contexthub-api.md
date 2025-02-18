@@ -5,9 +5,9 @@ exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 feature: Developing, Personalization
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4602'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -483,7 +483,7 @@ JSONP サービスの URL を取得します。
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` は [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) を拡張したものなので、このクラスのすべての関数を継承しています。ただし、JSONP サービスから取得されるデータは、ContextHub の永続性に応じて保持されます（「永続モード [ を参照 ](adding-contexthub.md#persistence-modes)）。
+`ContextHub.Store.PersistedJSONPStore` は [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) を拡張したものなので、このクラスのすべての関数を継承しています。ただし、JSONP サービスから取得されるデータは、ContextHub の永続性に応じて保持されます。（[永続モード](adding-contexthub.md#persistence-modes)を参照）
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 

@@ -5,9 +5,9 @@ exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1415'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリン
 
 このガイドでは、Edge Delivery Services プロジェクトおよびユニバーサルエディターを使用した WYSIWYG オーサリングに関する既存の知識が必ず必要になります。このガイドを始める前に、Edge Delivery Services へのアクセス権を持ち、次の項目について基本事項を理解しておく必要があります。
 
-* [Edge Delivery サービスのチュートリアル ](/help/edge/developer/tutorial.md) が完了しました。
-* [AEM Cloud Service サンドボックス ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) にアクセスできます。
-* [ 同じサンドボックス環境上でユニバーサルエディターを有効にする ](/help/implementing/universal-editor/getting-started.md) 必要があります。
+* [Edge Delivery Service のチュートリアル](/help/edge/developer/tutorial.md)を完了していること。
+* [AEM Cloud Service サンドボックス](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)にアクセスできること。
+* [同じサンドボックス環境でユニバーサルエディターが有効になっている](/help/implementing/universal-editor/getting-started.md)こと。
 * [Edge Delivery Services を使用した WYSIWYG オーサリングの開発者向け入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)を完了していること。
 
 このガイドは、[Edge Delivery Services を使用した WYSIWYG オーサリングの開発者向け入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)で行った作業に基づいています。
@@ -155,7 +155,7 @@ Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリン
 
 基本的な引用ブロックが定義され、サンプルプロジェクトにコミットされたので、既存のページに引用ブロックを追加できます。
 
-1. ブラウザーで、AEM as a Cloud Service にログインします。[ サイトコンソールを使用 ](/help/sites-cloud/authoring/basic-handling.md) して、[Edge Delivery ServicesでのWYSIWYG オーサリング向け開発者向けスタートガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) ガイドで作成したサイトに移動し、ページを選択します。
+1. ブラウザーで、AEM as a Cloud Service にログインします。[Sites コンソールを使用して](/help/sites-cloud/authoring/basic-handling.md)、[Edge Delivery Services を使用した WYSIWYG オーサリングの開発者向け入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)で作成したサイトに移動し、ページを選択します。
 
    * この場合、説明のために `index` を使用しています。
 
@@ -281,7 +281,7 @@ export default function decorate(block) {
 
 ### ブロックオプション {#block-options}
 
-特定の状況に応じてブロックの外観や動作を少し変える必要があるものの、それ自体が新しいブロックになるほど異なっていない場合は、作成者が [ ブロックオプション ](content-modeling.md#type-inference) から選択できるようにします。
+特定の状況に基づいてブロックの外観や動作を少し変更する必要があるが、それ自体が新しいブロックになるほどの違いがない場合は、作成者が[ブロックオプション](content-modeling.md#type-inference)から選択できます。
 
 ブロックに `classes` プロパティを追加すると、このプロパティは、単純なブロックの場合はテーブルヘッダーに、コンテナブロック内にある項目の場合は値リストとしてレンダリングされます。
 
@@ -343,4 +343,4 @@ Edge Delivery プロジェクトでの WYSIWYG オーサリングにコンテン
 
 >[!TIP]
 >
->AEM as a Cloud Serviceをコンテンツソースとして使用したWYSIWYG オーサリングが可能な新しいEdge Delivery Servicesプロジェクトの作成に関するエンドツーエンドのチュートリアルについては、[ このAEM GEMs ウェビナー ](https://experienceleague.adobe.com/ja/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery) を参照してください。
+>コンテンツソースとして AEM as a Cloud Service を使用して WYSIWYG オーサリングを実行できる、新しい Edge Delivery Services プロジェクトの作成に関するエンドツーエンドのチュートリアルについて詳しくは、[この AEM GEM ウェビナー](https://experienceleague.adobe.com/ja/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)を参照してください。

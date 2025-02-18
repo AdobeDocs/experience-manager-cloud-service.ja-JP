@@ -5,9 +5,9 @@ exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1338'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Cloud Manager には、コンテンツを復元できる 2 種類のバックア
 
 >[!TIP]
 >
->（パブリック API を使用して [ バックアップを復元することもでき ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) す。
+>[パブリック API を使用](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)してバックアップを復元することもできます。
 
 >[!WARNING]
 >
@@ -43,10 +43,10 @@ Cloud Manager には、コンテンツを復元できる 2 種類のバックア
 
 コンテンツ全体の復元に復元する前に、コンテンツをより簡単に復元するための次のオプションを検討してください。
 
-* 削除したパスのパッケージが使用可能な場合は、[ パッケージマネージャー ](/help/implementing/developing/tools/package-manager.md) を使用してパッケージを再度インストールします。
-* 削除されたパスが Sites のページの場合は、[ ツリーを復元機能 ](/help/sites-cloud/authoring/sites-console/page-versions.md) を使用します。
-* 削除されたパスがアセットフォルダーで、元のファイルが使用可能な場合は、[Assets コンソール ](/help/assets/add-assets.md) から再アップロードします。
-* 削除の内容がアセットの場合は、[ アセットの以前のバージョンの復元 ](/help/assets/manage-digital-assets.md) を検討してください。
+* 削除されたパスのパッケージが使用可能な場合は、[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)を使用してパッケージを再度インストールします。
+* 削除されたパスが Sites 内のページであった場合は、[ツリーを復元機能](/help/sites-cloud/authoring/sites-console/page-versions.md)を使用します。
+* 削除されたパスがアセットフォルダーで、元のファイルが使用可能な場合は、[Assets コンソール](/help/assets/add-assets.md)から再度アップロードします。
+* 削除されたコンテンツがアセットであった場合は、[アセットの以前のバージョンを復元](/help/assets/manage-digital-assets.md)することを検討してください。
 
 上記のいずれのオプションも機能せず、削除されたパスのコンテンツが重要である場合は、以降の節の説明に従って、コンテンツの復元を実行します。
 
@@ -59,7 +59,7 @@ Cloud Manager には、コンテンツを復元できる 2 種類のバックア
 1. ユースケースに応じて、必要な環境またはプログラムのすべての環境に対する&#x200B;**コンテンツの復元**&#x200B;権限を付与します。
 1. ユーザーをこの製品プロファイルに割り当てます。
 
-権限の管理について詳しくは、[ カスタム権限 ](/help/implementing/cloud-manager/custom-permissions.md) ドキュメントを参照してください。
+権限の管理について詳しくは、[カスタム権限](/help/implementing/cloud-manager/custom-permissions.md)ドキュメントを参照してください。
 
 ## コンテンツの復元 {#restoring-content}
 
@@ -93,7 +93,7 @@ Cloud Manager には、コンテンツを復元できる 2 種類のバックア
 
    ![使用可能なバックアップ](assets/backup-available.png)
 
-1. 情報アイコンを使用して復元するバックアップを見つけ、そのバックアップに含まれるコードのバージョンとAEM リリースに関する情報を表示し、「バックアップを選択 [ 時に復元の影響を考慮し ](#choosing-the-right-backup) す。
+1. 情報アイコンを使用して復元するバックアップを見つけ、そのバックアップに含まれるコードのバージョンと AEM リリースに関する情報を表示し、[バックアップを選択](#choosing-the-right-backup)する際に復元の影響を考慮します。
 
    ![バックアップ情報](assets/backup-info.png)
 

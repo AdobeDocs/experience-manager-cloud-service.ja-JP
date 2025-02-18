@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '737'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ AEM によるコンテンツの翻訳方法について詳しくは、このジ�
 1. 翻訳プロジェクトを作成してコンテンツを収集し、翻訳サービスに送信して、結果を受け取ります。
 1. 翻訳済みコンテンツをレビューして公開します。
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 AEM ヘッドレス翻訳ジャーニーを開始していただきありがとうございます。ドキュメントを読んだので、次を理解しているはずです。
 
@@ -78,7 +78,7 @@ AEM ヘッドレス翻訳ジャーニーを開始していただきありがと�
 
 ## その他のリソース {#additional-resources}
 
-[AEM ヘッドレス翻訳の基本を学ぶ ](getting-started.md) のドキュメントを確認して、ヘッドレス翻訳ジャーニーの次のステップに進むことをお勧めします。ヘッドレスジャーニーの続行に必須ではありませんが、この記事で取り上げたいくつかの概念について詳しく説明している追加のオプションリソースを以下に挙げておきます。
+[AEM ヘッドレス翻訳の基本を学ぶ](getting-started.md)のドキュメントを確認して、ヘッドレス翻訳のジャーニーの次のパートに進むことをお勧めします。次は追加的なオプションのリソースで、このドキュメントで取り上げた概念についてより詳しく説明していますが、ヘッドレスジャーニーを続ける上で必須ではありません。
 
 * [MSM と翻訳](/help/sites-cloud/administering/msm-and-translation.md) - AEM のマルチサイトマネージャーの詳細と翻訳ツールとの連携方法について説明します。
 * [ヘッドレス CMS としての AEM の概要](/help/headless/introduction.md)

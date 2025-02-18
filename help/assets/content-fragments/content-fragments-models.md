@@ -6,15 +6,15 @@ feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3120'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # コンテンツフラグメントモデル {#content-fragment-models}
 
-AEMのコンテンツフラグメントモデルは、[ コンテンツフラグメント ](/help/assets/content-fragments/content-fragments.md) のコンテンツ構造を定義するもので、ヘッドレスコンテンツの基盤となります。
+AEM のコンテンツフラグメントモデルは、[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)のコンテンツ構造を定義するもので、ヘッドレスコンテンツの基盤となります。
 
 コンテンツフラグメントモデルを使用するには、以下を行います。
 

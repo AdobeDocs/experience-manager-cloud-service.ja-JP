@@ -5,9 +5,9 @@ exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '956'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 95%
 
 >[!TIP]
 >
->すぐに例を確認したい場合は、[GitHub のユニバーサルエディターサンプルアプリ ](https://github.com/adobe/universal-editor-sample-editable-app) を参照してください。
+>すぐに例を確認したい場合は、[GitHub のユニバーサルエディターサンプルアプリ](https://github.com/adobe/universal-editor-sample-editable-app)を参照してください。
 
 ユニバーサルエディターは任意のソースからコンテンツを編集できますが、このドキュメントでは AEM アプリを例として使用します。 このドキュメントでは、これらの手順を説明します。
 
@@ -122,7 +122,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 ## ユニバーサルエディターを開くコンテンツパスまたは `sling:resourceType` の定義 （オプション） {#content-paths}
 
-[ ページエディター ](/help/sites-cloud/authoring/page-editor/introduction.md) を使用して既存のAEM プロジェクトがある場合、コンテンツ作成者がページを編集すると、ページはページエディターで自動的に開きます。 コンテンツパスまたは `sling:resourceType` に基づいて AEM が開くエディターを定義できるので、選択したコンテンツに必要なエディターに関係なく、作成者にとってシームレスなエクスペリエンスを実現できます。
+[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)を使用する既存の AEM プロジェクトがある場合、コンテンツ作成者がページを編集する際に、ページはページエディターで自動的に開かれます。コンテンツパスまたは `sling:resourceType` に基づいて AEM が開くエディターを定義できるので、選択したコンテンツに必要なエディターに関係なく、作成者にとってシームレスなエクスペリエンスを実現できます。
 
 1. Configuration Manager を開きます。
 

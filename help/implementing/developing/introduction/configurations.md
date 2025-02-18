@@ -5,9 +5,9 @@ exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1482'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -200,7 +200,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 AEM の設定は、Sling コンテキスト対応設定に基づいています。Sling バンドルには、コンテキスト対応設定の取得に使用できるサービス API が用意されています。コンテキスト対応設定とは、[前の例で説明したように](#developer-example)、コンテンツリソースまたはリソースツリーに関連する設定です。
 
-コンテキスト対応設定、例、使用方法について詳しくは、[Sling のドキュメント ](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) を参照してください。
+コンテキスト対応設定、例、使用方法について詳しくは、[Sling のドキュメント](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)を参照してください。
 
 ### ConfMgr Web コンソール {#confmgr-web-console}
 

@@ -5,16 +5,16 @@ exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2497'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # AEM as a Cloud Service でのクライアントサイドライブラリの使用 {#using-client-side-libraries}
 
-デジタルエクスペリエンスは、複雑な JavaScript や CSS コードを利用したクライアントサイドの処理に大きく依存しています。AEM クライアントサイドライブラリ（clientlibs）を使用すると、これらのクライアントサイドライブラリをリポジトリー内に整理し、一元的に保存できます。AEM プロジェクトアーキタイプの [ フロントエンドビルドプロセス ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja) と組み合わせると、AEM プロジェクトのフロントエンドコードを簡単に管理できます。
+デジタルエクスペリエンスは、複雑な JavaScript や CSS コードを利用したクライアントサイドの処理に大きく依存しています。AEM クライアントサイドライブラリ（clientlibs）を使用すると、これらのクライアントサイドライブラリをリポジトリー内に整理し、一元的に保存できます。[AEM プロジェクトアーキタイプでフロントエンドビルドプロセスと組み合わせる](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja)と、AEM プロジェクトのフロントエンドコードの管理が簡単になります。
 
 AEM で clientlibs を使用する利点は次のとおりです。
 
@@ -27,7 +27,7 @@ Clientlibs は、AEM から CSS と JavaScript を配信するための組み込
 
 >[!TIP]
 >
->AEM プロジェクトの CSS とJavaScriptを作成するフロントエンド開発者は、[AEM プロジェクトアーキタイプとその自動フロントエンドビルドプロセス ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja) についても理解しておく必要があります。
+>AEM プロジェクト用に CSS と JavaScript を作成するフロントエンド開発者は、[AEM プロジェクトアーキタイプと、自動化されたフロントエンドビルドプロセス](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja)にも慣れ親しんでおく必要があります。
 
 ## クライアントサイドライブラリとは {#what-are-clientlibs}
 
@@ -37,7 +37,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルにまとめ�
 
 ## AEM as a Cloud Service 向けフロントエンド開発 {#fed-for-aemaacs}
 
-すべてのJavaScript、CSS、その他のフロントエンドアセットは、AEM プロジェクトアーキタイプの [ui.frontend モジュール ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja) に保存する必要があります。 アーキタイプが柔軟なので、これらのリソースを任意の最新の web ツールで作成および管理できます。
+すべての JavaScript、CSS およびその他のフロントエンドアセットは、[AEM プロジェクトアーキタイプの ui.frontend モジュール](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja)で管理する必要があります。アーキタイプの柔軟性により、最新の web ツールを使用して、これらのリソースを作成および管理できます。
 
 次に、アーキタイプは、リソースを単一の CSS ファイルと JS ファイルにコンパイルし、自動的にリポジトリーの `cq:clientLibraryFolder` に埋め込むことができます。
 
@@ -92,7 +92,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルにまとめ�
 1. 静的リソースを管理する必要がある場合は、クライアントライブラリフォルダーの `resources` の下にサブフォルダーを作成します。
    * フォルダー `resources` 以外の場所に静的リソースを格納した場合、静的リソースはパブリッシュインスタンスで参照できません。
 1. 追加ソースファイルをライブラリフォルダーに格納します。
-   * これは、通常、[AEM プロジェクトアーキタイプ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja) のフロントエンドビルドプロセスで行われます。
+   * これは、通常、[AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja)のフロントエンドビルドプロセスで行われます。
    * 必要に応じて、サブフォルダーを使用してソースファイルを整理できます。
 1. クライアントライブラリフォルダーを選択して、**作成／ファイルを作成**&#x200B;をクリックします。
 1. ファイル名ボックスに、次のいずれかのファイル名を入力して、「OK」をクリックします。
@@ -109,7 +109,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルにまとめ�
 
 ## クライアントサイドライブラリの提供 {#serving-clientlibs}
 
-クライアントライブラリフォルダーが [ 必要に応じて設定 ](#creating-clientlib-folders) されると、clientlibs をプロキシ経由でリクエストできるようになります。 次に例を示します。
+クライアントライブラリフォルダーを[必要に応じて設定](#creating-clientlib-folders)したら、clientlibs をプロキシ経由でリクエストできます。次に例を示します。
 
 * clientlib は `/apps/myproject/clientlibs/foo` にあります。
 * 静的画像は `/apps/myprojects/clientlibs/foo/resources/icon.png` にあります。
@@ -137,7 +137,7 @@ This is possible. Still need detail.
 
 ## オーサーのクライアントライブラリ対パブリッシュのクライアントライブラリ {#clientlibs-author-publish}
 
-ほとんどの clientlibs は、AEM パブリッシュインスタンスで必要です。つまり、clientlibs の大半の目的は、コンテンツのエンドユーザーエクスペリエンスを生み出すことです。パブリッシュインスタンス上の clientlib の場合、[ フロントエンドビルドツール ](#fed-for-aemaacs) は、[ 前述のようにクライアントライブラリフォルダー ](#creating-clientlib-folders) を介して使用およびデプロイできます。
+ほとんどの clientlibs は、AEM パブリッシュインスタンスで必要です。つまり、clientlibs の大半の目的は、コンテンツのエンドユーザーエクスペリエンスを生み出すことです。パブリッシュインスタンスの clientlibs の場合、[フロントエンドビルドツール](#fed-for-aemaacs)は、[前述のように、クライアントライブラリフォルダー](#creating-clientlib-folders)を介して使用およびデプロイできます。
 
 ただし、オーサリングエクスペリエンスのカスタマイズにクライアントライブラリが必要な場合があります。例えば、ダイアログのカスタマイズには、AEM オーサリングインスタンスに小さな CSS または JS のデプロイが必要になる場合があります。
 

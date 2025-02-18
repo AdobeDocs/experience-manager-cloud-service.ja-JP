@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1625'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 98%
 
 ![サイドパネルセレクターの例](assets/sites-console-side-panel-selector.png)
 
-サイドパネルについて詳しくは、[Sites コンソールのサイドパネル ](/help/sites-cloud/authoring/sites-console/console-side-panel.md) を参照してください。
+サイドパネルについて詳しくは、[Sites コンソールのサイドパネル](/help/sites-cloud/authoring/sites-console/console-side-panel.md)を参照してください。
 
 ### パンくずリスト {#breadcrumbs}
 
@@ -194,7 +194,7 @@ AEM ツールバーの右端にある&#x200B;**表示**&#x200B;アイコンは�
 ![リスト表示](assets/sites-console-list-view.png)
 
 * リソース名をタップまたはクリックしてツリーの下位に移動したり、[ヘッダーのパンくずリスト](#the-header)を使用して再度上位に移動したりできます。
-* リスト内のすべての項目を簡単に選択するには、ツールバーの [**すべてを選択** チェックボックスを使用し ](#select-all) す。
+* リスト内のすべての項目を簡単に選択するには、ツールバーの「[**すべてを選択**](#select-all)」チェックボックスを使用します。
 
 * 表示ボタンの下にある「**設定を表示**」オプションを使用して、表示する列を選択します。次の列を表示できます。
 

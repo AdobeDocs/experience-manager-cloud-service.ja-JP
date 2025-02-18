@@ -5,9 +5,9 @@ exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 feature: Headless
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '278'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -44,4 +44,4 @@ ht-degree: 94%
 
 ## 次の手順 {#next-step}
 
-詳細に入る準備ができましたか？それでは、まず、ヘッドレスセットアップの第 1 部である [ 設定の作成 ](create-configuration.md) に目を通しましょう。
+詳細に入る準備ができましたか？それでは、まず、ヘッドレスセットアップの第 1 部である[設定の作成](create-configuration.md)に目を通しましょう。

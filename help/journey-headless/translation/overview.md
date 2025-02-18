@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1024'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ AEM の強力な翻訳ツールを使用してヘッドレスコンテンツを�
 
 ヘッドレステクノロジー、AEM によるヘッドレスコンテンツの提供方法、ヘッドレスコンテンツの翻訳方法を読者が幅広く理解できるようにすることが、このジャーニーの目的です。これらのトピックのいずれかに詳しくない場合は、ここから始めるのが最適です。
 
-AEM、ヘッドレスおよび翻訳に精通している方は、このジャーニーの基礎知識を既にお持ちかもしれません。その場合は、[ 以下のその他のリソース ](#additional-resources) の節でリンクされているアドビの技術ドキュメントを参照してください。
+AEM、ヘッドレスおよび翻訳に精通している方は、このジャーニーの基礎知識を既にお持ちかもしれません。その場合は、最後の[その他のリソース](#additional-resources)の節でリンクされているアドビの技術ドキュメントを参照してください。
 
 ## AEM ドキュメントジャーニー {#documentation-journeys}
 
@@ -73,7 +73,7 @@ AEM を使用してヘッドレスビジネスケースを解決する方法を�
 | 4 | [コンテンツを翻訳](translate-content.md) | 翻訳統合およびルールを使用して、ヘッドレスコンテンツを翻訳します。 |
 | 5 | [翻訳済みコンテンツの公開](publish-content.md) | 翻訳済みコンテンツを公開し、基になるコンテンツの更新時に翻訳を更新する方法を説明します。 |
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 これで、アドビのヘッドレス翻訳ジャーニーを開始する準備が整いました。このジャーニーの次のステップに進み、「[ヘッドレスコンテンツの概要と AEM での翻訳方法について](learn-about.md)」を読むことをお勧めします。
 

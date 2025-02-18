@@ -6,15 +6,15 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1083'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # AEM Assets API を使用してコンテンツをアップデートする方法 {#update-your-content}
 
-[AEM ヘッドレスデベロッパージャーニー](overview.md) のこのパートでは、REST API を使用してコンテンツフラグメントのコンテンツにアクセスし、アップデートする方法について説明します。
+[AEM ヘッドレスデベロッパージャーニー](overview.md)のこの部分では、REST API を使用してコンテンツフラグメントのコンテンツにアクセスし、アップデートする方法について説明します。
 
 ## これまでの説明内容 {#story-so-far}
 
@@ -307,7 +307,7 @@ AEM Assets REST API の使用について詳しくは、以下を参照してく
 * Adobe Experience Manager Assets HTTP API（その他のリソース）
 * AEM Assets HTTP API でのコンテンツフラグメントのサポート（その他のリソース）
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
 これで、ここでの AEM ヘッドレスデベロッパージャーニーは完了です。次ができるようになったはずです。
 

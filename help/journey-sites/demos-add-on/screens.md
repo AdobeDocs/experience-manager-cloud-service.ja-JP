@@ -5,9 +5,9 @@ exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2666'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 95%
 
 ## これまでの説明内容 {#story-so-far}
 
-AEM Reference Demo Add-on ジャーニーの前のドキュメントである [ デモサイトを作成 ](create-site.md) では、Reference Demo Add-on のテンプレートに基づいてデモサイトを作成しました。 その結果、以下を習得しました。
+AEM 参照デモのアドオンジャーニーの前のドキュメントである[デモサイトの作成](create-site.md)では、参照デモのアドオンのテンプレートに基づいてデモサイトを作成しました。その結果、以下を習得しました。
 
 * AEM オーサリング環境へのアクセス方法の理解。
 * テンプレートに基づくサイトの作成方法の理解。
@@ -104,8 +104,8 @@ We.Cafe デモサイトをまだ作成していない場合は、[デモサイ�
 
 We.Cafe デモコンテンツが用意できたので、AEM Screens のテスト方法を選択します。
 
-* AEM Sites コンソール内のコンテンツのみを参照する場合は、[ その他のリソース ](#additional-resources) の節で詳細を参照および確認します。それ以上のアクションは必要ありません。
-* Screensのすべての動的機能を体験したい場合は、次の節 [AEM Screens コンテンツの動的な変更 ](#dynamically-change) に進みます。
+* AEM Sites コンソール内のコンテンツのみを参照する場合は、[その他のリソース](#additional-resources)の節で詳細を参照および確認します。
+* AEM Screens のすべての動的機能を体験する場合は、次の節 [Screens コンテンツの動的な変更](#dynamically-change)に進みます。
 
 ## Screens コンテンツの動的な変更 {#dynamically-change}
 
@@ -382,7 +382,7 @@ Player にディスプレイを割り当てると、AEM Screens as a Cloud Servi
 
 ![エントランス（横）](assets/entrance-landscape.jpg)
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 これで、AEM Reference Demo Add-On ジャーニーのこの手順が完了しました。この手順で学んだことは次のとおりです。
 
@@ -390,7 +390,7 @@ Player にディスプレイを割り当てると、AEM Screens as a Cloud Servi
 * We.Cafe デモコンテンツの理解。
 * We.Cafe 用の AEM Screens の設定方法。
 
-これで、独自のデモサイトを使用して AEM Screens の機能を試す準備が整いました。続いてジャーニーの次の節 [ デモサイトの管理 ](manage.md) に進んで、デモサイトの管理に役立つツールと、デモサイトを削除する方法を学びます。
+これで、独自のデモサイトを使用して AEM Screens の機能を試す準備が整いました。続いてジャーニーの次の節、[デモサイトの管理](manage.md)に進んで、デモサイトの管理に役立つツールと、デモサイトを削除する方法を学びます。
 
 また、このジャーニーで説明した機能について詳しくは、[その他のリソース](#additional-resources)の節で紹介しているその他のリソースを参照してください。
 

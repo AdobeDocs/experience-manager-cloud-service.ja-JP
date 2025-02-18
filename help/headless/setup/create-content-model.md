@@ -5,9 +5,9 @@ exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 86%
 
 ## コンテンツフラグメントモデルとは  {#what-are-content-fragment-models}
 
-[ 設定を作成したので ](create-configuration.md)、これを使用してコンテンツフラグメントモデルを作成できます。
+[設定を作成したので](create-configuration.md)、この設定を使用してコンテンツフラグメントモデルを作成できます。
 
 コンテンツフラグメントモデルは、AEM で作成および管理するデータとコンテンツの構造を定義するもので、コンテンツの一種の基礎として機能します。コンテンツの作成を選択すると、作成者はあなたが定義したコンテンツフラグメントモデルから選択します。これが、コンテンツの作成のガイドとなります。
 
@@ -67,8 +67,8 @@ ht-degree: 86%
 
 ## 次の手順 {#next-steps}
 
-モデルを作成してコンテンツフラグメントの構造を定義したので、「はじめる前に」の 3 番目のパートに進み、[ フラグメント自体を保存するフォルダーを作成 ](create-assets-folder.md) します。
+モデルを作成してコンテンツフラグメントの構造を定義したので、入門ガイドの第 3 部に進み、[フラグメント自体を保存するフォルダーを作成](create-assets-folder.md)します。
 
 >[!TIP]
 >
->コンテンツフラグメントモデルについて詳しくは、[ コンテンツフラグメントモデルのドキュメント ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) を参照してください。
+>コンテンツフラグメントモデルについて詳しくは、[コンテンツフラグメントモデルのドキュメント](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)を参照してください。

@@ -6,9 +6,9 @@ role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 solution: Experience Manager Sites
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '762'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -91,4 +91,4 @@ Adobe Experience Manager プリンシパル（ユーザーまたはグループ�
 
 ライブコピーサブツリー内のこのようなスタンドアロンページは通常、**分離**&#x200B;操作の結果として発生するか、以前のライブコピーページを作成者が手動で削除して、同じ名前で再作成した場合に発生します。
 
-これを回避するには、**分離**&#x200B;の代わりに、ライブコピーの&#x200B;**休止**&#x200B;機能を使用します。**分離** アクションについて詳しくは、[ この記事 ](creating-live-copies.md) を参照してください。
+これを回避するには、**分離**&#x200B;の代わりに、ライブコピーの&#x200B;**休止**&#x200B;機能を使用します。**分離**&#x200B;アクションについて詳しくは、[この記事](creating-live-copies.md)を参照してください。

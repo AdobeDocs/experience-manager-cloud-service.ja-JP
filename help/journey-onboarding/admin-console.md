@@ -5,15 +5,15 @@ exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1071'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Admin Console へのアクセス {#accessing-admin-console}
 
-[ オンボーディングジャーニー ](overview.md) のこの部分では、システムに初めてログインする前に必要な準備を説明します。
+[オンボーディングジャーニー](overview.md)のこの部分では、システムに初めてログインする前に必要な準備を説明します。
 
 ## 目的 {#objective}
 
@@ -94,7 +94,7 @@ AEM as a Cloud Service は IMS を使用することで、AEM と Adobe Experien
 
 このタブを使用すると、ケースの作成や管理、アドビカスタマーサポートの担当者との直接のチャット、エキスパートとのセッションの予約などを行うことができます。サポートケースとエキスパートセッションのオプションにアクセスするには、 システム管理者とサポート管理者としてログインする必要があります。
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
 このドキュメントを読み、次を理解できました。
 

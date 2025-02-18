@@ -5,9 +5,9 @@ exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1138'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ AEM Developer Tools を使用する前に、次の作業が必要です。
 
 ## AEM パースペクティブ {#the-aem-perspective}
 
-Eclipse では、パースペクティブによって、ウィンドウ内で使用可能なアクションやビューが決まり、Eclipse のリソースとのタスク指向のやり取りが可能になります。パースペクティブについて詳しくは、[Eclipse のドキュメント ](https://help.eclipse.org/latest/index.jsp) を参照してください。
+Eclipse では、パースペクティブによって、ウィンドウ内で使用可能なアクションやビューが決まり、Eclipse のリソースとのタスク指向のやり取りが可能になります。パースペクティブについて詳しくは、[Eclipse のドキュメント](https://help.eclipse.org/latest/index.jsp)を参照してください。
 
 _Experience Manager Development Tools for Eclipse_ には、AEM プロジェクトおよびインスタンスを完全にコントロールできる AEM パースペクティブが用意されています。AEM パースペクティブを開くには、次の操作を行います。
 
