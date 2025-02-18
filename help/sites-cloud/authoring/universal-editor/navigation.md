@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 9daa4ea54e87694c297a42748aa8705eb712d182
+source-git-commit: e87447922b856d4cbbd09fb4dcd4ae2b5da6ff50
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 97%
+source-wordcount: '1623'
+ht-degree: 95%
 
 ---
 
@@ -193,7 +193,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 #### 公開 {#publish}
 
-「公開」ボタンを選択すると、コンテンツへの変更がライブで公開され、読者が使用できるようにになります。
+「公開」ボタンを選択すると、変更をコンテンツのライブに公開して読者に利用してもらったり、プレビュー環境に公開してレビューしたりできます。
 
 ![「公開」ボタン](assets/publish.png)
 

@@ -4,9 +4,9 @@ description: コンポーネント定義とユニバーサルエディター間�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
@@ -33,35 +33,42 @@ ht-degree: 1%
 
 ```json
 {
-  "groups": [
+  "groups":[
     {
-      "title": "General Components",
-      "id": "general",
-      "components": [
+      "title":"General Components",
+      "id":"general",
+      "components":[
         {
-          "title": "Text",
-          "id": "text",
-          "plugins": {
-            "aem": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+          "title":"Text",
+          "id":"text",
+          "plugins":{
+            "aem":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             },
-            "aem65": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+            "aem65":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             }
           }
-        },
-      }
-   ]
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -100,11 +107,18 @@ ht-degree: 1%
 
 コンポーネントがページ上のコンテンツの場合は、次の情報を指定できます。
 
-* 新 `name` く作成されたコンポーネントの JCR に保存されるオプション名を定義します。
-   * 情報のみであり、通常、`title` のように UI に表示されません。
 * コンポ `resourceType` ネントのレンダリングに使用する [Sling](/help/implementing/developing/introduction/sling-cheatsheet.md) `resourceType` を定義します。
-* 新 `template` く作成されたコンポーネントに自動的に書き込まれるオプションのキーと値を定義します。
+* `template` は、新しく作成されたコンポーネントに自動的に書き込まれるオプションのキーや値を定義し、コンポーネントに適用するフィルターやモデルを定義します。
    * 説明用、サンプル用、プレースホルダーテキストに便利です。
+
+#### `template` {#template}
+
+オプションのキーと値のペアを指定 `template` ると、これらを新しいコンポーネントに自動的に書き込むことができます。 さらに、次のオプション値も指定できます。
+
+* コンポ `model` ネントで使用する [ モデル ](/help/implementing/universal-editor/field-types.md#model-structure) を定義します。
+   * これにより、モデルはコンポーネント定義内で一元的に管理され、実装を指定する必要は [ りません ](/help/implementing/universal-editor/field-types.md#instrumentation)。
+   * これにより、コンテナ間でコンポーネントを移動できます。
+* コンポ `filter` ネントで使用する [ フィルター ](/help/implementing/universal-editor/filtering.md) を定義します。
 
 ### `cf` {#cf}
 

@@ -4,7 +4,7 @@ description: ユニバーサルエディターは、マーケティング組織�
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ae962d89b842b0708c1ac8633bb49c86cb2edfda
+source-git-commit: c88aa13c6bc75c8f9cd624d00ef768290981c840
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 27%
@@ -51,7 +51,7 @@ ht-degree: 27%
 * AEM as a Cloud Service（リリース `2023.8.13099` 以降）
 * AEM 6.5 （サービスパック 21 または 22 と機能パック）
 
-このドキュメントは、AEM as a Cloud Serviceでユニバーサルエディターを使用する場合に使用します。 AEM 6.5 でユニバーサルエディターを使用するには、[AEM 6.5 のドキュメントを参照してください ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction?lang=en)。
+このドキュメントは、AEM as a Cloud Serviceでユニバーサルエディターを使用する場合に使用します。 AEM 6.5 でユニバーサルエディターを使用するには、[AEM 6.5 のドキュメントを参照してください ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)。
 
 ## 機能 {#features}
 

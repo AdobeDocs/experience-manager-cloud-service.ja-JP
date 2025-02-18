@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 73b1a318325e7641ee0fd7a76a3a73a7299c8b91
+source-git-commit: 64c257adc7e1f22531c0fe45b44b27ab4e0badb8
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 88%
+source-wordcount: '857'
+ht-degree: 56%
 
 ---
 
@@ -17,19 +17,46 @@ ht-degree: 88%
 
 ユニバーサルエディターでのコンテンツの公開方法と、アプリでの公開済みコンテンツの処理方法を説明します。
 
-## 作成者としてのコンテンツの公開 {#publishing-content}
-
-コンテンツ作成者としてコンテンツを公開する準備が整ったら、ユニバーサルエディターのツールバーにある [**公開** アイコンをタップまたはクリックするだけで済みます ](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)。
-
-[Sites コンソールから ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) 公開することもできます。これは、複数のページのコンテンツを公開する場合に便利です。
-
->[!NOTE]
+>[!TIP]
 >
->ユニバーサルエディターは、ワークフローが公開プロセスをサポートできるように [ 拡張機能と UI 拡張機能 ](/help/implementing/universal-editor/extending.md) をサポートしています。
+>ここで説明する公開プロセスは、ユニバーサルエディターの標準の標準標準機能です。
+>
+>ユニバーサルエディターは、ワークフローが公開プロセスをサポートできるように [ 拡張機能と UI 拡張機能 ](/help/implementing/universal-editor/extending.md) もサポートしているので、公開フローが異なる場合があります。
 
-## AEM との類似点 {#similarities}
+## ユニバーサルエディターからのコンテンツの公開 {#publishing-content}
 
-AEM のユーザーにとって、ユニバーサルエディターを使用してコンテンツを公開するプロセスは、通常どおりに動作します。つまり、AEM での公開時に、コンテンツがオーサー層からパブリッシュ層にレプリケートされます。
+コンテンツ作成者としてコンテンツを公開する準備が整ったら、ユニバーサルエディターのツールバーにある **公開** アイコンをタップまたはクリックするだけで済みます。
+
+![ ページの公開 ](assets/publish-menu.png)
+
+1. ユニバーサルエディターで、ユニバーサルエディターのツールバーにある [**公開** アイコン ](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) をタップまたはクリックします。
+1. [ プレビューサービス ](/help/sites-cloud/authoring/sites-console/previewing-content.md) を使用できる場合は、**プレビュー** または **公開** にコンテンツを公開する場所を選択できます。
+1. **Items** セクションには、パブリケーションに含まれる次のようなコンテンツがリストされます。
+   * **新規** まだ公開されていない項目。
+   * **変更** 公開されたが、前回の公開以降に変更されたコンテンツ。
+   * **公開済み** 公開済みで、その公開以降に変更されていないコンテンツ。
+
+   必要に応じて、公開に含めたり除外したりする項目の横にあるチェックボックスをタップまたはクリックします。 「**拡張**」をタップまたはクリックすると、3 つのカテゴリの合計に含まれる個々の項目が表示され、それらを個別に含めたり除外したりできます。
+
+   ![ アイテムの公開 ](assets/publish-items.png)
+
+   **項目** 見出しの横にある戻る矢印をタップまたはクリックして、概要に戻ります。
+
+1. **公開** をタップまたはクリックして公開するか、**キャンセル** をタップまたはクリックして中止します。
+
+## ユニバーサルエディターからコンテンツを非公開にする {#unpublishing-content}
+
+コンテンツの非公開は、コンテンツの公開と同様に機能します。 コンテンツ作成者として、コンテンツを公開から削除する準備が整ったら、ユニバーサルエディターのツールバーの省略記号アイコンをタップまたはクリックしてから **非公開** します。
+
+その後、コンテンツを [ 公開する場合と同じ方法でコンテンツを非公開にできます。プレビューインスタンスからの非公開を含める ](#publishing-content) 法と、非公開に含める項目。
+
+## サイトコンソールからの公開と非公開 {#publishing-sites-console}
+
+[Sites コンソールから ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) 公開することもできます。これは、複数ページのコンテンツを公開する場合や、公開または非公開をスケジュールする場合に便利です。
+
+## ページエディターとの類似点 {#similarities}
+
+[AEM ページエディターのユーザーの場合 ](/help/sites-cloud/authoring/page-editor/introduction.md) ユニバーサルエディターを使用してコンテンツを公開するプロセスは、通常どおりに動作します。つまり、AEMでの公開時に、コンテンツがオーサー層からパブリッシュ層にレプリケートされます。
 
 ## 違い {#differences}
 

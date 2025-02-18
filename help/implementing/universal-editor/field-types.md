@@ -4,10 +4,10 @@ description: ユニバーサルエディターがプロパティパネルで編�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a27da2d6d675d68d69071d0b393ad5e0f82bb7ae
-workflow-type: ht
-source-wordcount: '1353'
-ht-degree: 100%
+source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
+workflow-type: tm+mt
+source-wordcount: '1496'
+ht-degree: 90%
 
 ---
 
@@ -43,11 +43,41 @@ ht-degree: 100%
 
 `fields` 配列を定義する方法について詳しくは、このドキュメントの&#x200B;**[フィールド](#fields)**&#x200B;の節を参照してください。
 
+モデルをコンポーネントにリンクするには、[ コンポーネント定義 ](#component-definition) または [ 実装を使用 ](#instrumentation) の 2 つの方法があります。
+
+### コンポーネント定義を使用したリンク {#component-definition}
+
+モデルをコンポーネントにリンクするには、この方法をお勧めします。 これにより、コンポーネント定義内でリンクを一元的に維持でき、コンテナ間でコンポーネントをドラッグできるようになります。
+
+component-definition.json ファイルの `template` ディレクティブに `model` プロパティを含めるだけです。
+
+```json
+...
+"template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  ...
+           }
+...
+```
+
+詳しくは、「コンポーネント定義 [ を参照してください ](/help/implementing/universal-editor/component-definition.md)。
+
+### 計装を使用したリンク {#instrumentation}
+
 コンポーネントでモデル定義を使用するには、`data-aue-model` 属性を使用できます。
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
 ```
+
+>[!NOTE]
+>
+>ユニバーサルエディターは、最初にモデルが実装を介してリンクされているかどうかを確認し、コンポーネント定義を確認する前にモデルが使用されます。 つまり、
+>
+>* 実装を通じてモデルへのリンクを実装したプロジェクトは、変更を行わなくても、引き続きそのまま機能します。
+>* [ コンポーネント定義 ](#component-definition) と実装でモデルを定義する場合、実装は常に使用されます。
 
 ## モデル定義の読み込み {#loading-model}
 
