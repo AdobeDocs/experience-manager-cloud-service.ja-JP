@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 100%
+source-wordcount: '1542'
+ht-degree: 97%
 
 ---
 
@@ -127,9 +127,10 @@ PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider` 
       1. 環境（または実行モード）に基づいて `newURL` の値を変更します。
       1. 実行モードに応じてシークレット値を変更するには、[Cloud Manager API](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) を使用してシークレット変数を作成し、後で [OSGi 設定](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values)から参照することができます。
 このアーキタイププロジェクトが CM パイプラインを通じてデプロイされる場合、オーバーライドは異なる環境（または実行モード）で異なる値を提供します。
+
       >[!NOTE]
       >
-      >[サービスパック 6.5.13.0 でコンテキスト対応設定が利用可能](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config?lang=ja)になった後、[!DNL Adobe Managed Service] ユーザーは暗号化サポートを使用してシークレットの値を暗号化し（詳細は、[設定プロパティの暗号化サポート](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support?lang=ja)を参照）、値に暗号化テキストを配置できるようになりました。
+      >[!DNL Adobe Managed Service] サービスパック 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config?lang=ja) でコンテキスト対応設定が利用可能になった後、ユーザーは暗号化サポートを使用してシークレットの値を暗号化することができます。詳しくは、[ 設定プロパティの暗号化サポート ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support?lang=ja) を参照し、値に暗号化テキストを配置してください [。
 
 1. [フォームデータモデルエディター](#data-sources)のデータソース定義を更新するオプションを使用してデータソース定義を更新し、FDM UI を通じて FDM キャッシュを更新し、最新の設定を取得します。
 

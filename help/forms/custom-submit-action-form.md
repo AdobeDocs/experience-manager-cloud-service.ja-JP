@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 100%
+source-wordcount: '1705'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,8 @@ ht-degree: 100%
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
-| AEM as a Cloud Service | この記事 |
+| AEM as a Cloud Service（コアコンポーネント） | [ここをクリックしてください](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
+| AEM as a Cloud Service（基盤コンポーネント） | この記事 |
 
 アダプティブフォームでは、あらかじめ用意された複数の送信アクション（OOTB）を使用できます。送信アクションは、アダプティブフォームで収集されたデータに対して実行されるアクションの詳細を指定します。例えば、メールでのデータの送信などです。
 
@@ -73,7 +74,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 アダプティブフォームにファイルを添付する場合、サーバーはアダプティブフォームの送信後に添付ファイルを検証し、次の場合にエラーメッセージを返します。
 
-* ファイル名が（.）文字で開始するもの、\ / : * ? &quot; &lt; > | ; % $ 文字を含むもの、または `nul`、`prn`、`con`、`lpt`、`com` など、Windows オペレーティングシステム用に予約された特殊なファイル名を含む添付ファイル。
+* 添付ファイルには、（.）文字で始まり、\ / : *？を含むファイル名が含まれています。 &quot; &lt; > | ; % $ 文字を含むもの、または `nul`、`prn`、`con`、`lpt`、`com` など、Windows オペレーティングシステム用に予約された特殊なファイル名を含む添付ファイル。
 
 * 添付ファイルのサイズが 0 バイト。
 
@@ -108,25 +109,29 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 ## カスタム送信アクションの作成 {#creating-a-custom-submit-action}
 
+>[!NOTE]
+>
+> コアコンポーネントのカスタム送信アクションを作成する方法については、[ アダプティブForms（コアコンポーネント）のカスタム送信アクションの作成 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) を参照してください。
+
 CRX リポジトリーにデータを保存した後にメール送信を行うカスタム送信アクションを作成するには、次の手順を実行します。アダプティブフォームには、CRX リポジトリーにデータを保存する OOTB の送信アクション、コンテンツを格納アクション（非推奨）が含まれています。さらに、AEM には、メール送信に使用される [Mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API が含まれています。Mail API を使用する前に、システムコンソールを通して Day CQ Mail サービスを設定します。リポジトリーにデータを保存するには、コンテンツを格納アクション（非推奨）を再利用できます。コンテンツを格納アクション（非推奨）は、CRX リポジトリーの /libs/fd/af/components/guidesubmittype/store にあります。
 
 1. URL https://&lt;server>:&lt;port>/crx/de/index.jspから、CRXDE Lite にログインします。/apps/custom_submit_action フォルダー内に sling:Folder プロパティを持つノードを作成し、名前を store_and_mail に設定します。custom_submit_action フォルダーが存在しない場合は作成します。
 
    ![sling:Folder プロパティを持つノードの作成を示したスクリーンショット](assets/step1.png)
 
-1. **必須の設定フィールドを指定します。**
+2. **必須の設定フィールドを指定します。**
 
    格納アクションに必要な設定を追加します。/libs/fd/af/components/guidesubmittype/store から、格納アクションの **cq:dialog** ノードを、/apps/custom_submit_action/store_and_email のアクションフォルダーにコピーします。
 
    ![アクションフォルダーへのダイアログノードのコピーを示したスクリーンショット](assets/step2.png)
 
-1. **作成者にメール設定を促す設定フィールドを指定します。**
+3. **作成者にメール設定を促す設定フィールドを指定します。**
 
    アダプティブフォームには、ユーザーにメールを送信するメール送信アクションもあります。要件に応じて、このアクションをカスタマイズします。/libs/fd/af/components/guidesubmittype/email/dialog に移動します。cq:dialog ノード内のノードを、送信アクションの cq:dialog ノード（/apps/custom_submit_action/store_and_email/dialog）にコピーします。
 
    ![メール送信アクションのカスタマイズ](assets/step3.png)
 
-1. **アクションをアダプティブフォーム編集ダイアログで使用できるようにします。**
+4. **アクションをアダプティブフォーム編集ダイアログで使用できるようにします。**
 
    次のプロパティを store_and_email ノードに追加します。
 
@@ -138,11 +143,11 @@ CRX リポジトリーにデータを保存した後にメール送信を行う�
 
    * **文字列**&#x200B;型の **submitService** および値 **Store and Email**。詳しくは、「[カスタムアクション用にアダプティブフォームの送信をスケジュール](#schedule-adaptive-form-submission)」を参照してください。
 
-1. 任意のアダプティブフォームを開きます。「**開始**」の隣にある「**編集**」ボタンをクリックし、アダプティブフォームコンテナの **編集** ダイアログを開きます。新しいアクションが、「**送信アクション**」タブに表示されます。**格納およびメール送信アクション**&#x200B;を選択すると、ダイアログノードに追加された設定が表示されます。
+5. 任意のアダプティブフォームを開きます。「**開始**」の隣にある「**編集**」ボタンをクリックし、アダプティブフォームコンテナの **編集** ダイアログを開きます。新しいアクションが、「**送信アクション**」タブに表示されます。**格納およびメール送信アクション**&#x200B;を選択すると、ダイアログノードに追加された設定が表示されます。
 
    ![送信アクション設定ダイアログ](assets/store_and_email_submit_action_dialog.jpg)
 
-1. **アクションを使用してタスクを完了します。**
+6. **アクションを使用してタスクを完了します。**
 
    post.POST.jsp スクリプトをアクションに追加します（/apps/custom_submit_action/store_and_mail/）。
 

@@ -5,7 +5,7 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
-source-git-commit: eba6aec89e645e443ba6f4ca5aff66a39288ff1e
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 24%
@@ -29,7 +29,7 @@ AEM Forms as a Cloud Service は、次の CAPTCHA ソリューションをサポ
 
 ## AEM Forms環境と Turnstile Captcha の統合
 
-Cloudflare の Turnstile Captcha は、自動ボット、悪意のある攻撃、スパム、不要な自動トラフィックからフォームとサイトを保護することを目的としたセキュリティ対策です。 フォームの送信を許可する前に、人間であることを確認するためのチェックボックスがフォーム送信時に表示されます。 AEM Formsas a Cloud Serviceは、アダプティブ Forms コアコンポーネントでの Turnstile Captcha をサポートしています。
+Cloudflare の Turnstile Captcha は、自動ボット、悪意のある攻撃、スパム、不要な自動トラフィックからフォームとサイトを保護することを目的としたセキュリティ対策です。 フォームの送信を許可する前に、人間であることを確認するためのチェックボックスがフォーム送信時に表示されます。 AEM Forms as a Cloud Serviceは、アダプティブ Forms コアコンポーネントでの Turnstile Captcha をサポートします。
 
 ### AEM Forms環境と Turnstile Captcha を統合するための前提条件 {#prerequisite}
 
@@ -39,7 +39,7 @@ AEM Forms コアコンポーネントの Turnstile を設定するには、Turns
 
 AEM Formsを Turnstile サービスと統合するには、次の手順を実行します。
 
-1. AEM Formsas a Cloud Service環境で設定コンテナを作成します。 設定コンテナには、AEM を外部サービスに接続するために使用されるクラウド設定が格納されます。AEM Formsを Turnstile に接続するための設定コンテナを作成および設定するには、次の手順に従います。
+1. AEM Forms as a Cloud Service環境に設定コンテナを作成します。 設定コンテナには、AEM を外部サービスに接続するために使用されるクラウド設定が格納されます。AEM Formsを Turnstile に接続するための設定コンテナを作成および設定するには、次の手順に従います。
    1. AEM Forms as a Cloud Service インスタンスを開きます。
    1. **[!UICONTROL ツール／一般／設定ブラウザー]**&#x200B;に移動します。
    1. 設定ブラウザーで、新しいフォルダーを作成してそのフォルダーのクラウド設定を有効にするか、以下に説明するように既存のフォルダーのクラウド設定を有効にします。
@@ -54,7 +54,7 @@ AEM Formsを Turnstile サービスと統合するには、次の手順を実行
          1. **[!UICONTROL 保存して閉じる]** をクリックして、設定を保存して終了します。
 
 1. Cloud Service を設定：
-   1. AEM オーサーインスタンスで、![tools-1](assets/tools-1.png)/**[!UICONTROL Cloud Service]** に移動し、「**[!UICONTROL Turnstile]**」をクリックします。
+   1. AEM オーサーインスタンスで、![tools-1](assets/tools-1.png)/**[!UICONTROL Cloud Services]** に移動し、「**[!UICONTROL 自動スタイル]**」をクリックします。
       ![UI でのターンスタイル ](assets/turnstile-in-ui.png)
    1. 前の節で説明したように、作成または更新された設定コンテナを選択します。 「**[!UICONTROL 作成]**」を選択します。
       ![ 設定ターンスタイル ](assets/config-hcaptcha.png)
@@ -65,6 +65,7 @@ AEM Formsを Turnstile サービスと統合するには、次の手順を実行
       ![AEM Forms環境を Turnstile と連携させるためのCloud Serviceの設定 ](assets/config-turntstile-cc.png)
 
    >[!NOTE]
+   >
    > 自動スタイル検証用に既にクライアントサイドのJavaScript検証 URL とサーバーサイドの検証 URL が入力されているので、変更する必要はありません。
 
    Turnstile Captcha サービスを設定すると、[ コアコンポーネントに基づくアダプティブフォーム ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/introduction) で使用できるようになります。
@@ -90,13 +91,17 @@ AEM Formsを Turnstile サービスと統合するには、次の手順を実行
    * **[!UICONTROL 名前 ]:** Captcha コンポーネントの名前を指定すると、フォーム内とルールエディター内の両方で一意の名前を使用して、フォームコンポーネントを簡単に識別できます。
    * **[!UICONTROL タイトル ]:** Captcha コンポーネントのタイトルを指定します。 チェックボックスをオンにすることで、タイトルにリッチテキストを使用したり、タイトルを非表示にしたりできます。
    * **[!UICONTROL 設定 ]:** Turnstile Captcha サービス用に設定されたクラウド設定を選択します。
+
      >[!NOTE]
+     >
      >* 同様の目的のために、環境内に複数のクラウド設定を持つことができます。 そのため、サービスは慎重に選択してください。サービスがリストされない場合は、設定コンテナを作成してAEM Forms環境を Turnstile サービスと接続する方法について、[Turnstile の設定 ](#steps-to-configure-hcaptcha) の節を参照してください。
 
    * **[!UICONTROL 検証 ]:** Captcha 検証をエラーメッセージの形式で提供します。
 
       * **エラーメッセージ：** Captcha 送信が失敗した場合にユーザーに表示するエラーメッセージを指定します。
+
         >[!NOTE]
+        >
         >* エラーメッセージが表示されるのは、クライアント側の CAPTCHA が入力された場合のみです。
 
 1. 「**[!UICONTROL 完了]**」をクリックします。

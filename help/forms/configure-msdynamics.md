@@ -3,7 +3,8 @@ title: Microsoft Dynamics 365 の標準フォームデータモデルをアダ�
 description: Microsoft Dynamics 365 をアダプティブFormsと統合する方法を説明します。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: 25284474793742a1af28e3c81976a3061d9eaf3e
+exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 16%
@@ -51,6 +52,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
    * Microsoft Dynamics 365 アプリケーションの有効化
 
    ビデオの手順に従って、Power Platform Admin Center でアカウントを作成します。 このビデオでは、デモ目的で体験版アカウントを作成しています。
+
    >[!VIDEO](https://video.tv.adobe.com/v/3444388)
 
 1. **Azure Active Directory での [!DNL Microsoft® Dynamics 365] のアプリケーションの登録**

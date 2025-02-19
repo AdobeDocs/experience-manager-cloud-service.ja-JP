@@ -4,7 +4,7 @@ description: ブランド志向のパーソナライズされたコミュニケ�
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 100%
@@ -78,9 +78,10 @@ ht-degree: 100%
 * バッチデータストア設定の作成
 * テンプレートおよびその他のアセットの Experience Manager Forms Cloud Service インスタンスへのアップロード
 
-### 顧客データ（XML ファイル）の Azure ストレージへのアップロード {#upload-customer-data-to-Azure-Storage}
+### 顧客データ（XML ファイル）の Azure ストレージへのアップロード
 
 Microsoft Azure ストレージで、[コンテナ](https://docs.microsoft.com/ja-jp/azure/vs-azure-tools-storage-explorer-blobs)を作成し、コンテナ内の[フォルダー](https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-quickstart-blobs-portal)に[顧客データ（XML）をアップロード](https://docs.microsoft.com/ja-jp/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container)します。
+
 >[!NOTE]
 >
 >Microsoft Azure ストレージを設定して、スケジュールされた間隔で、入力フォルダーを自動的に消去したり、出力フォルダーのコンテンツを別の場所に移動したりできます。ただし、フォルダーを参照するバッチ操作がまだ実行中の場合に、フォルダーが消去されないようにしてください。

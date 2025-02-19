@@ -4,8 +4,8 @@ description: ここでは、アダプティブフォーム向けのレコード�
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+workflow-type: tm+mt
 source-wordcount: '4170'
 ht-degree: 100%
 
@@ -130,6 +130,7 @@ In the following video, Adaptive Form components are bound with corresponding Ac
 ![バインディングエラー](assets/we-retail-binding-error.png)
 
 フォーム開発者は、アダプティブフォームフィールドを、対応するレコードのドキュメントテンプレートとバインドします。
+
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 これで、アダプティブフォームが送信されると、更新されたレコードのレコードのドキュメントが作成されるようになりました。

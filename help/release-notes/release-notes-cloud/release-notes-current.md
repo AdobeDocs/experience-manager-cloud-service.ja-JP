@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 7c65208b948345ea185032a04595ffe65e95876d
+source-git-commit: f81e8434029ade26dd2c30b249537699971e9a4b
 workflow-type: tm+mt
 source-wordcount: '1750'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -128,7 +128,7 @@ Adobe Dynamic Media の AI 生成のビデオキャプションは、人工知�
 
 #### 公開を管理
 
-「公開を管理」ワークフローを使用すると、環境（通常はオーサーインスタンスからパブリッシュインスタンスおよびプレビューインスタンスまで）をまたいでフォームを公開または非公開にすることができます。これにより、ユーザーは効率的な方法でコンテンツの公開または非公開したり、公開のスケジュールを設定したりできます。
+[ 公開を管理 ](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option) ワークフローを使用して、通常はオーサーインスタンスからパブリッシュインスタンスとプレビューインスタンスに向けて、複数の環境にわたってフォームを公開または非公開にすることができます。 これにより、ユーザーは効率的な方法でコンテンツの公開または非公開したり、公開のスケジュールを設定したりできます。
 
 #### コアコンポーネントベースのアダプティブフォーム用ドラフトの自動保存
 

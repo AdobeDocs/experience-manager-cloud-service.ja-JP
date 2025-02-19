@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 5059437eca1dcfbfb26d1ff7b12d532472951568
+source-git-commit: 35834ba89d20d719a40b930ca672ec242d81d376
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 100%
+source-wordcount: '1130'
+ht-degree: 97%
 
 ---
 
@@ -27,47 +27,76 @@ ht-degree: 100%
 
 
 <div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+ <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/universal-editor-user-interface" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG インターフェイス"> 
     <h3>WYSIWYG インターフェイス</h3>
-    <p>ユニバーサルエディターでは、事前定義済みのコンポーネントライブラリ、レスポンシブデザイン、テンプレートベースの作成、リアルタイムのフィールド変更を備えたフォームデザイン用の WYSIWYG インターフェイスを提供します。
- </p>
+    <p>ユニバーサルエディターでは、事前定義済みのコンポーネントライブラリ、レスポンシブデザイン、テンプレートベースの作成、リアルタイムのフィールド変更を備えたフォームデザイン用の WYSIWYG インターフェイスを提供します。</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+</a>
+<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/rule-editor-universal-editor" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
     <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="ルールエディター">
     <h3>ルールエディター</h3>
     <p>ルールエディターを使用すると、ユーザーは、イベント駆動型ルール、即時検証、軽量の JavaScript と JSON によるエラー処理を使用して、動的なフォームインタラクションを作成できます。</p>
   </div>
+</a>
+<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="送信アクション">
+    <h3>送信アクション</h3>
+    <p>送信アクションは、バックエンド統合、条件付き送信ロジック、安全なエンドポイント、プリプロセッサーをサポートし、送信ワークフローを効率化します。</p>
+  </div>
+</a>
+<div>
+<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/publish-forms" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="公開／非公開">
+    <h3>公開／非公開</h3>
+    <p>フォームの表示を簡単に制御します。数回クリックするだけでエディターから直接フォームを公開または非公開にできるので、可用性とコンテンツの更新をリアルタイムで動的に管理できます。</p>
+  </div>
+</a>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="レスポンシブモード">
     <h3>レスポンシブモード </h3>
     <p>デバイス（デスクトップ、タブレット、モバイル）間でシームレスに適応するフォームを設計します。レスポンシブモードを使用して、様々な画面サイズのフォームをプレビューおよびテストします。</p>
   </div>
-</div>
-<div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="パーソナライゼーション"> 
-    <h3>パーソナライゼーション</h3>
-    <p>パーソナライゼーションでは、ユーザーデータを使用し、調整されたフォームエクスペリエンスを提供して、ユーザーの環境設定に基づいてコンテンツ、レイアウト、オプションを動的に調整します。</p>
+<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/create-custom-component" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="カスタムコンポーネント">
+    <h3>カスタムコンポーネント</h3>
+    <p>カスタムコンポーネントを使用すると、開発者は特定の組織のユースケースに合わせて独自の要素を作成して、フォームの機能を拡張できます。</p>
   </div>
+</a>
+</div>
+<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="スタイル設定">
+    <h3>スタイル設定</h3>
+    <p>CSS を使用したスタイル設定により、開発者はフォーム要素の外観をカスタマイズし、web サイトの美学に合わせて、視覚的に魅力的なデザインを作成できます。</p>
+  </div>
+</a>
     <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="事前入力サービス">
     <h3>事前入力サービス</h3>
     <p>事前入力サービスでは、様々なソースから関連するユーザーデータを自動的にフォームフィールドに入力し、手動入力を減らしてユーザーエクスペリエンスを向上させることができます。</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="ルールエディター">
+  <a href="https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="A/B テスト">
     <h3>A/B テスト</h3>
     <p>A/B テスト（実験）により、組織は様々なフォームのデザイン、レイアウト、機能を試して、最もパフォーマンスの高いバリアントを特定できます。</p>
   </div>
+</a>
 </div>
-
 <div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+  <a href="https://www.aem.live/developer/martech-integration" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
     <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="分析とトラッキング">
     <h3>分析とトラッキング</h3>
     <p>組み込みの分析とトラッキングを使用して、ユーザーの行動、フォームのインタラクション、送信率に関するインサイトを取得し、データ駆動型のフォーム最適化を実現します。</p>
   </div>
+</a>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="Adobe Workfront との統合">
     <h3> タスク管理 </h3>
@@ -82,24 +111,6 @@ ht-degree: 100%
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="国際化／ローカライゼーション">
-    <h3>公開／非公開</h3>
-    <p>フォームの表示を簡単に制御します。数回クリックするだけでエディターから直接フォームを公開または非公開にできるので、可用性とコンテンツの更新をリアルタイムで動的に管理できます。</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="送信アクション">
-    <h3>送信アクション</h3>
-    <p>送信アクションは、バックエンド統合、条件付き送信ロジック、安全なエンドポイント、プリプロセッサーをサポートし、送信ワークフローを効率化します。</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="タスク管理">
-    <h3>カスタムコンポーネント</h3>
-    <p>カスタムコンポーネントを使用すると、開発者は特定の組織のユースケースに合わせて独自の要素を作成して、フォームの機能を拡張できます。</p>
-  </div>
-</div>
-
-<div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="エディターのカスタマイズ">
     <h3>エディターのカスタマイズ</h3>
     <p>開発者は UI 拡張機能を通じてエディターの機能を拡張し、特定の組織のニーズに合わせて調整されたソリューションを実現できます。</p>
@@ -109,12 +120,13 @@ ht-degree: 100%
     <h3>埋め込みフォーム</h3>
     <p>ユニバーサルエディターの組み込みの埋め込みコンポーネントを使用して、フォームを Edge Delivery Services サイトページに直接埋め込み、シームレスなユーザーエクスペリエンスを実現します。</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="カスタムコンポーネント">
+  <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action#submit-action-message-ue" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="「ありがとうございます」設定">
     <h3>「ありがとうございます」設定</h3>
-    <p>フォームの送信が成功した後に、ユーザーに表示される感謝のメッセージまたはページを簡単にカスタマイズします。
-    </p>
+    <p>フォームの送信が成功した後に、ユーザーに表示される感謝のメッセージまたはページを簡単にカスタマイズします。</p>
   </div>
+</a>
 </div>
 </div>
 
