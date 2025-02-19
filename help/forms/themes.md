@@ -4,10 +4,10 @@ description: アダプティブフォームテーマを使用して、アダプ�
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
+source-git-commit: 449ff970f3b1e4479309e52d16aacf0979a0ec41
+workflow-type: tm+mt
 source-wordcount: '5558'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -486,7 +486,7 @@ Web サービスで利用可能なフォントをアダプティブフォーム<
 
 Experience Manager で Adobe Fonts を設定するには、次の手順を実行します。
 
-1. オーサーインスタンスで、![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL  をクリックし、Adobe Experience Manager ]**／**[!UICONTROL &#x200B;ツール&#x200B;]** ![ハンマー](assets/hammer.png)／**[!UICONTROL &#x200B;デプロイメント&#x200B;]**／**[!UICONTROL  Cloud Services ]** をクリックします。
+1. オーサーインスタンスで、![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager]**/**[!UICONTROL ツール]**![ ハンマー ](assets/hammer.png)/**[!UICONTROL デプロイメント]**/**[!UICONTROL Cloud Services]** をクリックしてください。
 1. **[!UICONTROL Cloud Services]** ページで、「**[!UICONTROL Adobe Fonts]**」オプションに移動して開きます。設定フォルダーを開き、「**[!UICONTROL 作成]**」をクリックします。
 1. **[!UICONTROL 設定を作成]**&#x200B;ダイアログで、新しい設定のタイトルと名前を指定し、「**[!UICONTROL 作成]**」をクリックします。
 
