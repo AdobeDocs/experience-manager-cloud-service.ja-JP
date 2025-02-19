@@ -5,10 +5,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 883eadc8ce2c84eba526b081ef90c678845989aa
+workflow-type: tm+mt
 source-wordcount: '3120'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -261,6 +261,7 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
 * **[フラグメント参照](#fragment-reference-nested-fragments)**（ネストされたフラグメント）
    * 指定した特定のモデルに応じて、他のフラグメントを参照します。
    * 構造化データを含めたり、取得したりできます。
+
      >[!NOTE]
      >
      この方法は、[GraphQL でコンテンツフラグメントを使用したヘッドレスコンテンツ配信](/help/assets/content-fragments/content-fragments-graphql.md)との関連で特に重要になります。
@@ -434,6 +435,7 @@ GraphQL にも、フラグメント参照の繰り返し防止機能がありま
 1. 変更内容を&#x200B;**保存**&#x200B;します。
 
 フォルダーに対して許可されるコンテンツフラグメントモデルは、次の順序で解決されます。
+
 * **許可されているコンテンツフラグメントモデル**&#x200B;の&#x200B;**ポリシー**。
 * 空の場合は、継承ルールを使用してポリシーの決定を試みます。
 * 継承チェーンを使用しても結果が得られない場合は、そのフォルダーの **Cloud Services** 設定を調べます（最初は直接、次に継承を使用して調べます）。
