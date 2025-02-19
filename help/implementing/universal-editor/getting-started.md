@@ -4,10 +4,10 @@ description: ユニバーサルエディターへのアクセス権を取得す�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0ee6689460ac0ecc5c025fb6a940d69a16699c85
+source-git-commit: 07a8ad6083dbb7cf69148773d266b33e8cf32a38
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 100%
+source-wordcount: '1018'
+ht-degree: 91%
 
 ---
 
@@ -124,7 +124,9 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 [ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)を使用する既存の AEM プロジェクトがある場合、コンテンツ作成者がページを編集する際に、ページはページエディターで自動的に開かれます。コンテンツパスまたは `sling:resourceType` に基づいて AEM が開くエディターを定義できるので、選択したコンテンツに必要なエディターに関係なく、作成者にとってシームレスなエクスペリエンスを実現できます。
 
-1. Configuration Manager を開きます。
+1. この設定機能を利用するには、Adobe カスタマーケアに問い合わせて、プログラムのユニバーサルエディター URL サービスへのアクセスを有効にしてもらってください。
+
+1. カスタマーケアがユニバーサルエディター URL サービスへのアクセスを有効にしたら、Configuration Manager を開きます。
 
    `http://<host>:<port>/system/console/configMgr`
 
@@ -137,7 +139,15 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 1. 「**保存**」をクリックします。
 
-AEM は、この設定に基づいて、次の順序でページのユニバーサルエディターを開きます。
+1. [externalizer 設定 ](/help/implementing/developing/tools/externalizer.md) を確認し、少なくともローカル、オーサー、パブリッシュ環境が次の例のように設定されていることを確認します。
+
+   ```text
+   "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
+   "author $[env:AEM_EXTERNALIZER_AUTHOR;default=http://localhost:4502]",
+   "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]"
+   ```
+
+これらの設定手順が完了すると、AEMは次の順序でページのユニバーサルエディターを開きます。
 
 1. AEM は `Universal Editor Opening Mapping` の下にあるマッピングを確認し、コンテンツがそこに定義されているパスの下にある場合は、ユニバーサルエディターが開かれます。
 1. `Universal Editor Opening Mapping` で定義されたパスの下にないコンテンツの場合、AEM はコンテンツの `resourceType` が、**ユニバーサルエディターで開かれる Sling:resourceTypes**&#x200B;で定義されたものと一致するかどうかを確認し、コンテンツがこれらのタイプのいずれかに一致する場合は、`${author}${path}.html` でユニバーサルエディターが開かれます。
