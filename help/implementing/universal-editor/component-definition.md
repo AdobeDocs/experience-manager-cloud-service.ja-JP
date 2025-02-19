@@ -4,7 +4,7 @@ description: コンポーネント定義とユニバーサルエディター間�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
+source-git-commit: afb59345b48b39376b62a13cce8910bc9bc42c38
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 1%
@@ -41,15 +41,15 @@ ht-degree: 1%
         {
           "title":"Text",
           "id":"text",
+          "model": "text",
+          "filter": "texts",
           "plugins":{
             "aem":{
               "page":{
                 "resourceType":"wknd/components/text",
                 "template":{
                   "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  "filter":"texts"
+                  "name":"Text"
                 }
               }
             },
@@ -58,9 +58,7 @@ ht-degree: 1%
                 "resourceType":"wknd/components/text",
                 "template":{
                   "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  "filter":"texts"
+                  "name":"Text"
                 }
               }
             }
@@ -87,6 +85,10 @@ ht-degree: 1%
 * コンポ `id` ネントを一意に識別します。
    * 同 `id` の [ コンポーネントモデル ](/help/implementing/universal-editor/field-types.md#model-structure) は、コンポーネントのフィールドを定義します。
    * 一意なので、例えば [ フィルター定義 ](/help/implementing/universal-editor/filtering.md) で使用して、コンテナに追加できるコンポーネントを決定できます。
+* コンポ `model` ネントで使用する [ モデル ](/help/implementing/universal-editor/field-types.md#model-structure) を定義します。
+   * これにより、モデルはコンポーネント定義内で一元的に管理され、実装を指定する必要は [ りません ](/help/implementing/universal-editor/field-types.md#instrumentation)。
+   * これにより、コンテナ間でコンポーネントを移動できます。
+* コンポ `filter` ネントで使用する [ フィルター ](/help/implementing/universal-editor/filtering.md) を定義します。
 
 ## `plugins` {#plugins}
 
@@ -114,11 +116,6 @@ ht-degree: 1%
 #### `template` {#template}
 
 オプションのキーと値のペアを指定 `template` ると、これらを新しいコンポーネントに自動的に書き込むことができます。 さらに、次のオプション値も指定できます。
-
-* コンポ `model` ネントで使用する [ モデル ](/help/implementing/universal-editor/field-types.md#model-structure) を定義します。
-   * これにより、モデルはコンポーネント定義内で一元的に管理され、実装を指定する必要は [ りません ](/help/implementing/universal-editor/field-types.md#instrumentation)。
-   * これにより、コンテナ間でコンポーネントを移動できます。
-* コンポ `filter` ネントで使用する [ フィルター ](/help/implementing/universal-editor/filtering.md) を定義します。
 
 ### `cf` {#cf}
 
