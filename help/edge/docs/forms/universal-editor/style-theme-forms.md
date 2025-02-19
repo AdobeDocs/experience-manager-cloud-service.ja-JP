@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: d055ac12b8f36deb4e0244df7b6d5df8ec627557
+source-git-commit: 7f4257433c441eb6b0109f22545b3ef708c9323b
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 87%
@@ -29,7 +29,7 @@ ht-degree: 87%
 
 ## フォームフィールドタイプについて
 
-スタイル設定を開始する前に、アダプティブフォームブロックでサポートされている一般的なフォームの[フィールドタイプ](/help/edge/docs/forms/form-components.md)を確認します。
+スタイル設定を開始する前に、アダプティブフォームブロックでサポートされている一般的なフォームの[フィールドタイプ](/help/edge/docs/forms/universal-editor/create-custom-component.md#supported-fieldtypes)を確認します。
 
 * 入力フィールド：テキスト入力、メール入力、パスワード入力などが含まれます。
 * チェックボックスグループ：複数のオプションを選択するために使用します。
@@ -57,17 +57,17 @@ ht-degree: 87%
 例：
 
   ```css
-  main .form form input {
-    /* Add styles specific to input fields inside the form */
-  }
+    main .form form input {
+        /* Add styles specific to input fields inside the form */
+    }
   
-  main .form form button {
-    /* Add styles specific to buttons inside the form */
-  }
+    main .form form button {
+        /* Add styles specific to buttons inside the form */
+    }
   
-  main .form form label {
-    /* Add styles specific to labels inside the form */
-  }
+    main .form form label {
+        /* Add styles specific to labels inside the form */
+    }
   
 ## コンポーネント構造
 
@@ -90,10 +90,10 @@ ht-degree: 87%
 ```
 
 * クラス：div 要素には、特定の要素とスタイル設定をターゲットにする、いくつかのクラスがあります。フォームフィールドをスタイル設定する CSS セレクターを開発するには、`{Type}-wrapper` または `field-{Name}` クラスが必要です。
-   * {Type}：フィールドタイプ別にコンポーネントを識別します。例えば、テキスト（text-wrapper）、数値（number-wrapper）、日付（date-wrapper）です。
-   * {Name}：名前別にコンポーネントを識別します。フィールドの名前に使用できる文字は英数字のみで、名前内の複数の連続するダッシュは 1 つのダッシュ `(-)` に置き換えられ、フィールド名の開始ダッシュと終了ダッシュは削除されます。例えば、名（field-first-name field-wrapper）です。
-   * {FieldId}：これは、自動的に生成されるフィールドの一意の ID です。
-   * {Required}：フィールドが必須かどうかを示すブール値です。
+* {Type}：フィールドタイプ別にコンポーネントを識別します。例えば、テキスト（text-wrapper）、数値（number-wrapper）、日付（date-wrapper）です。
+* {Name}：名前別にコンポーネントを識別します。フィールドの名前に使用できる文字は英数字のみで、名前内の複数の連続するダッシュは 1 つのダッシュ `(-)` に置き換えられ、フィールド名の開始ダッシュと終了ダッシュは削除されます。例えば、名（field-first-name field-wrapper）です。
+* {FieldId}：これは、自動的に生成されるフィールドの一意の ID です。
+* {Required}：フィールドが必須かどうかを示すブール値です。
 * ラベル：`label` 要素はフィールドの説明テキストを提供し、`for` 属性を使用して入力要素に関連付けます。
 * 入力：`input` 要素は、入力するデータのタイプを定義します。例えば、テキスト、番号、メールです。
 * 説明（オプション）：クラス `field-description` の `div` は、ユーザーに追加情報または手順を提供します。
