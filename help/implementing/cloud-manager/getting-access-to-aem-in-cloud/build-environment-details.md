@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e5404de6baae5373aefe5d03894864965b47b049
+source-git-commit: f37795b99f7c79aa73615748a0a7df61f9afbdb7
 workflow-type: tm+mt
-source-wordcount: '1526'
-ht-degree: 97%
+source-wordcount: '1551'
+ht-degree: 95%
 
 ---
 
@@ -114,6 +114,9 @@ Java 21 ランタイムは、Java 21 および Java 17 のビルドに使用さ�
 新しい JVM ランタイムのサポートを確保するには、Java パッケージ `org.apache.groovy` または `org.codehaus.groovy` の使用をバージョン 4.0.22 以降に更新します。
 
   このバンドルは、AEM Groovy コンソールなどのサードパーティの依存関係を追加することで間接的に含めることができます。
+
+* **Aries SPIFly の最小バージョン：**
+新しい JVM ランタイムがサポートされるように、Java パッケージ `org.apache.aries.spifly.dynamic.bundle` の使用状況をバージョン 1.3.6 以降に更新します。
 
 AEM Cloud Service SDKは Java 21 と互換性があり、Cloud Manager パイプラインを実行する前に、プロジェクトと Java 21 の互換性を検証するのに使用できます。
 
