@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 4828e1965514a5ce5cd6d8528c72af33b7b748ea
+source-git-commit: 5680e2381f5826a48e731906aa8aab9d06a0e944
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 84%
+source-wordcount: '1109'
+ht-degree: 85%
 
 ---
 
@@ -31,17 +31,17 @@ ht-degree: 84%
 
 | ![WYSIWYG インターフェイス ](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![ルールエディター](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![ 送信アクション ](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**WYSIWYG インターフェイス**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/universal-editor-user-interface) | [**ルールエディター**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/rule-editor-universal-editor) | [**送信アクション**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action) |
+| [**WYSIWYG インターフェイス**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | [**ルールエディター**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**送信アクション**](/help/edge/docs/forms/universal-editor/submit-action.md) |
 | ユニバーサルエディターでは、事前定義済みのコンポーネントライブラリ、レスポンシブデザイン、テンプレートベースの作成、リアルタイムのフィールド変更を備えたフォームデザイン用の WYSIWYG インターフェイスを提供します。 | ルールエディターを使用すると、ユーザーは、イベント駆動型ルール、即時検証、軽量の JavaScript と JSON によるエラー処理を使用して、動的なフォームインタラクションを作成できます。 | 送信アクションは、バックエンド統合、条件付き送信ロジック、安全なエンドポイント、プリプロセッサーをサポートし、送信ワークフローを効率化します。 |
 
 | ![ 公開/非公開 ](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![ レスポンシブモード ](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![ カスタムコンポーネント ](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**公開/非公開**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/publish-forms) | **レスポンシブモード** | [**カスタムコンポーネント**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/create-custom-component) |
+| [**公開/非公開**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**レスポンシブモード**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**カスタムコンポーネント**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 | フォームの表示を簡単に制御し、数回クリックするだけで、エディターから直接フォームを公開または非公開にできます。 | デバイス（デスクトップ、タブレット、モバイル）間でシームレスに適応するフォームを設計します。レスポンシブモードを使用して、様々な画面サイズのフォームをプレビューおよびテストします。 | カスタムコンポーネントを使用すると、開発者は特定の組織のユースケースに合わせて独自の要素を作成して、フォームの機能を拡張できます。 |
 
 | ![スタイル設定](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![ 事前入力サービス ](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B テスト ](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**スタイル設定**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms) | **事前入力サービス** （近日公開） | [**A/B テスト**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| [**スタイル設定**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **事前入力サービス** （近日公開） | [**A/B テスト**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | CSS を使用したスタイル設定により、開発者はフォーム要素の外観をカスタマイズし、web サイトの美学に合わせて、視覚的に魅力的なデザインを作成できます。 | 事前入力サービスでは、様々なソースから関連するユーザーデータを自動的にフォームフィールドに入力し、手動入力を減らしてユーザーエクスペリエンスを向上させることができます。 | A/B テストを使用すると、組織は様々なフォームデザイン、レイアウト、機能を試して、最もパフォーマンスの高いバリアントを特定できます。 |
 
 | ![ 分析とトラッキング ](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![ タスクの管理 ](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![ データ バインディング ](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
@@ -51,7 +51,7 @@ ht-degree: 84%
 
 | ![ エディターのカスタマイズ ](/help/edge/docs/forms/universal-editor/assets/editor-customization.svg) | ![Formsの埋め込み ](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Thank You 設定 ](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| **エディターのカスタマイズ** | **Formsの埋め込み** | [**Thank You 設定**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action#submit-action-message-ue) |
+| **エディターのカスタマイズ** | **Formsの埋め込み** | [**Thank You 設定**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | 開発者は UI 拡張機能を通じてエディターの機能を拡張し、特定の組織のニーズに合わせて調整されたソリューションを実現できます。 | ユニバーサルエディターの組み込み埋め込みコンポーネントを使用して、Edge Delivery Services Sites ページにフォームを直接埋め込むことができます。 | フォームの送信が成功した後に、ユーザーに表示される感謝のメッセージまたはページを簡単にカスタマイズします。 |
 
 
