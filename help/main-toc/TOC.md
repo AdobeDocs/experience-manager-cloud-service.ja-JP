@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e4398678566b53412ae0aeea0a18cd0172268ec1
+source-git-commit: 1f77a8adc461a78bb40efc608d39686e67a9811a
 workflow-type: tm+mt
 source-wordcount: '6083'
 ht-degree: 99%
@@ -1064,7 +1064,7 @@ ht-degree: 99%
          + [Sidekick ライブラリ](/help/edge/docs/sidekick-library.md)
       + [よくある質問](/help/edge/docs/faq.md)
       + [Admin API](https://www.aem.live/docs/admin.html)
-      + [AEM ステータス](https://www.aemstatus.net)
+      + [AEM ステータス](https://status.adobe.com)
       + ツール {#tools}
          + [AEM Sidekick Chrome 拡張機能](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Github ボット](https://github.com/apps/aem-code-sync)
