@@ -116,7 +116,6 @@ WYSIWYG オーサリングには、フォームを作成する WYSIWYG インタ
 ## Start creating forms
 
 <div>
-
   <style>
     .card-container {
         width: calc(33.33% - 10px);;
@@ -131,7 +130,6 @@ WYSIWYG オーサリングには、フォームを作成する WYSIWYG インタ
         background-color: #f0f0f0; /* Changing background color on hover */
     }
 </style>
-
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
