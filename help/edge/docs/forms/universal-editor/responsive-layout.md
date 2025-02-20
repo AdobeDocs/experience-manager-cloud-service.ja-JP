@@ -4,10 +4,10 @@ description: この記事では、ユニバーサルエディターで様々な�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: 222ee977f6ee76908fecf9cb3171287fddba8790
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 18%
+source-wordcount: '360'
+ht-degree: 2%
 
 ---
 
@@ -67,14 +67,7 @@ ht-degree: 18%
 
 ## 関連トピック
 
-* [AEM Forms の Edge Delivery Services の基本を学ぶ](/help/edge/docs/forms/tutorial.md)
-* [Google Sheet または Microsoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
-* [データの受け入れを開始するための Google Sheets または Microsoft Excel ファイルの設定](/help/edge/docs/forms/submit-forms.md)
-* [フォームを公開してデータの収集を開始](/help/edge/docs/forms/publish-forms.md)
-* [フォームの外観のカスタマイズ](/help/edge/docs/forms/style-theme-forms.md)
-* [繰り返し可能なセクションをフォームに追加する](/help/edge/docs/forms/repeatable-forms.md)
-* [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
-* [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
-* [実際の使用のモニタリング](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
+
 
 

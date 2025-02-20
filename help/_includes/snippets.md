@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 99%
+source-wordcount: '1392'
+ht-degree: 97%
 
 ---
 # スニペット {#snippets}
@@ -56,6 +56,17 @@ ht-degree: 99%
 * [Microsoft へのアダプティブフォームの接続](/help/forms/configure-msdynamics.md)
 * [Adobe Marketo Engage にアダプティブフォームを接続](/help/forms/integrate-form-to-marketo-engage.md)
 * [カスタム送信アクションの作成](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+
+## ユニバーサルエディター{#universal-editor-see-also}
+
+* [AEM Forms の Edge Delivery Services の基本を学ぶ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [フォームの公開](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [フォームを送信します](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [フォームの外観をカスタマイズ](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [フォームのルールの作成](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [フォームでの reCAPTCHA の使用](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [フォームのカスタムコンポーネントの作成](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [ レスポンシブモードでフォームをプレビューする ](/help/edge/docs/forms/universal-editor/responsive-layout.md)
 
 ## 関連トピック {#see-more-forms-eds}
 

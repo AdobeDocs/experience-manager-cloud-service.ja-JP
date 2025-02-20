@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: d48048ab130805d2be40ac3f7ee60e4269337cb5
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 1%
@@ -126,4 +126,5 @@ https://main--universaleditor--wkndforms.aem.live/content/forms/af/wknd-form
 
 ## 関連トピック
 
-{{see-more-forms-eds}}
+{{universal-editor-see-also}}
+

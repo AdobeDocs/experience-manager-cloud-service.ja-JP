@@ -4,13 +4,13 @@ description: このチュートリアルは、ユニバーサルエディター�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: f62bccacd3252422899a35d2b431450c919982de
+exl-id: 90321e81-bb55-48b2-b329-4944bf926309
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '1495'
-ht-degree: 5%
+source-wordcount: '1425'
+ht-degree: 1%
 
 ---
-
 
 # ユニバーサルエディター（WYSIWYG）インターフェイスの詳細
 
@@ -233,14 +233,4 @@ Experience Cloud ヘッダーは、コンソールの上部にあります。 Ex
 
 ## 関連トピック
 
-* [AEM Forms の Edge Delivery Services の基本を学ぶ](/help/edge/docs/forms/tutorial.md)
-* [Google Sheet または Microsoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
-* [データの受け入れを開始するための Google Sheets または Microsoft Excel ファイルの設定](/help/edge/docs/forms/submit-forms.md)
-* [フォームを公開してデータの収集を開始](/help/edge/docs/forms/publish-forms.md)
-* [フォームの外観のカスタマイズ](/help/edge/docs/forms/style-theme-forms.md)
-* [繰り返し可能なセクションをフォームに追加する](/help/edge/docs/forms/repeatable-forms.md)
-* [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
-* [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
-* [実際の使用のモニタリング](https://www.aem.live/developer/rum#authentication)
-
-
+{{universal-editor-see-also}}

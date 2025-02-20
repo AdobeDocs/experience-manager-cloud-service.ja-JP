@@ -6,7 +6,7 @@ hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: d5ba87ec6199522f026d572d1bdb1bfbeb9849ee
 workflow-type: tm+mt
 source-wordcount: '1725'
 ht-degree: 5%
@@ -510,4 +510,4 @@ const OOTBComponentDecorators = ['file-input',
 
 ## 関連トピック
 
-{{see-more-forms-eds}}
+{{universal-editor-see-also}}

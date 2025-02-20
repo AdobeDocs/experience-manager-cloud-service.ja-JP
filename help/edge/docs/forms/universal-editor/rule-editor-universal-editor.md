@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '2236'
-ht-degree: 77%
+source-wordcount: '2166'
+ht-degree: 76%
 
 ---
 
@@ -385,12 +385,4 @@ export { getFullName, days };
 
 ## 関連トピック
 
-* [AEM Forms の Edge Delivery Services の基本を学ぶ](/help/edge/docs/forms/tutorial.md)
-* [Google Sheet または Microsoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
-* [データの受け入れを開始するための Google Sheets または Microsoft Excel ファイルの設定](/help/edge/docs/forms/submit-forms.md)
-* [フォームを公開してデータの収集を開始](/help/edge/docs/forms/publish-forms.md)
-* [フォームの外観のカスタマイズ](/help/edge/docs/forms/style-theme-forms.md)
-* [繰り返し可能なセクションをフォームに追加する](/help/edge/docs/forms/repeatable-forms.md)
-* [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
-* [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
-* [実際の使用のモニタリング](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}

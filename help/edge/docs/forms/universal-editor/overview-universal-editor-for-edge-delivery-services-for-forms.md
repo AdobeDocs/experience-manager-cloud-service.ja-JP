@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 7a868ddc3d13eaf3b5352e130b2026db64a02723
+source-git-commit: 7d0b735b367189852e4897702738eefc1e87d892
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 78%
+source-wordcount: '1038'
+ht-degree: 84%
 
 ---
 
@@ -36,9 +36,8 @@ ht-degree: 78%
 
 | ![ 公開/非公開 ](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![ レスポンシブモード ](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![ カスタムコンポーネント ](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
 |:-------------:|:-------------:|:-------------:|
-
 | [**公開/非公開**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**レスポンシブモード**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**カスタムコンポーネント**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
-|フォームの表示を簡単に制御 – 数回クリックするだけで、エディターから直接フォームを公開または非公開にできます。 | デバイス（デスクトップ、タブレット、モバイル）間でシームレスに適応するフォームをデザインします。 レスポンシブモードを使用して、様々な画面サイズのフォームをプレビューおよびテストします。 | カスタムコンポーネントを使用すると、デベロッパーは特定の組織のユースケースに合わせて独自の要素を作成することで、フォーム機能を拡張できます。 |
+| フォームの表示を簡単に制御し、数回クリックするだけで、エディターから直接フォームを公開または非公開にできます。 | デバイス（デスクトップ、タブレット、モバイル）間でシームレスに適応するフォームを設計します。レスポンシブモードを使用して、様々な画面サイズのフォームをプレビューおよびテストします。 | カスタムコンポーネントを使用すると、開発者は特定の組織のユースケースに合わせて独自の要素を作成して、フォームの機能を拡張できます。 |
 
 | ![スタイル設定](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![ 事前入力サービス ](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B テスト ](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
@@ -52,9 +51,8 @@ ht-degree: 78%
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Formsの埋め込み ](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Thank You 設定 ](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-
-| **エディターのカスタマイズ** | **Formsの埋め込み** | [**ありがとう設定**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
-|開発者は、UI 拡張を通じてエディターの機能を拡張し、特定の組織ニーズに合わせてカスタマイズされたソリューションを実現できます。 | ユニバーサルエディターに組み込まれた埋め込みコンポーネントを使用して、フォームをEdge Delivery Services Sites ページに直接埋め込みます。 |フォームの送信が成功した後に、ユーザーに表示される確認メッセージまたはページを簡単にカスタマイズできます。 |
+| **エディターのカスタマイズ** | **Formsの埋め込み** | [**Thank You 設定**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| 開発者は UI 拡張機能を通じてエディターの機能を拡張し、特定の組織のニーズに合わせて調整されたソリューションを実現できます。 | ユニバーサルエディターの組み込み埋め込みコンポーネントを使用して、Edge Delivery Services Sites ページにフォームを直接埋め込むことができます。 | フォームの送信が成功した後に、ユーザーに表示される感謝のメッセージまたはページを簡単にカスタマイズします。 |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
@@ -246,13 +244,5 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## フォームの作成を開始
 
-* [AEM Forms の Edge Delivery Services の基本を学ぶ](/help/edge/docs/forms/tutorial.md)
-* [Google Sheet または Microsoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
-* [データの受け入れを開始するための Google Sheets または Microsoft Excel ファイルの設定](/help/edge/docs/forms/submit-forms.md)
-* [フォームを公開してデータの収集を開始](/help/edge/docs/forms/publish-forms.md)
-* [フォームの外観のカスタマイズ](/help/edge/docs/forms/style-theme-forms.md)
-* [繰り返し可能なセクションをフォームに追加する](/help/edge/docs/forms/repeatable-forms.md)
-* [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
-* [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
-* [実際の使用のモニタリング](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
 
