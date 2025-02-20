@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: e87447922b856d4cbbd09fb4dcd4ae2b5da6ff50
+source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 95%
+source-wordcount: '1660'
+ht-degree: 93%
 
 ---
 
@@ -66,6 +66,10 @@ UI は以下の主なエリアに分かれています。
 * [プロパティパネル](#properties-rail)
 
 ![ユニバーサルエディター UI](assets/ui.png)
+
+>[!TIP]
+>
+>ユニバーサルエディターには、エディターの機能を変更して追加できる [ カスタマイズオプション ](/help/implementing/universal-editor/customizing.md) および [ 拡張ポイント ](/help/implementing/universal-editor/extending.md) が多数用意されています。 このため、ここに記載されている標準のオプションとは異なるオプションが表示される場合があります。
 
 ### Experience Cloud ヘッダー {#experience-cloud-header}
 

@@ -4,10 +4,10 @@ description: コンテンツ作成者のニーズをサポートするために�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
+source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 81%
+source-wordcount: '334'
+ht-degree: 72%
 
 ---
 
@@ -28,6 +28,16 @@ ht-degree: 81%
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
+```
+
+## プレビューへの公開の無効化 {#publish-preview}
+
+オーサリングワークフローによっては、[ プレビューサービス ](/help/sites-cloud/authoring/sites-console/previewing-content.md) （使用可能な場合）への公開が妨げられることがあります。
+
+したがって、次のメタデータを追加することで、アプリ内で公開ウィンドウの「**プレビュー**」オプション全体を抑制できます。
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
 ```
 
 ## コンポーネントのフィルタリング {#filtering-components}
