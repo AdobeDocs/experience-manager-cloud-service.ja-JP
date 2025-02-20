@@ -4,9 +4,9 @@ description: この記事では、ユニバーサルエディターで様々な�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: 1abc1092872d4a3e0253ddf0388d23e39a6c2de9
+source-git-commit: 222ee977f6ee76908fecf9cb3171287fddba8790
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '430'
 ht-degree: 18%
 
 ---
@@ -28,11 +28,11 @@ ht-degree: 18%
 ユニバーサルエディターが様々な画面サイズでフォームをレンダリングする方法を確認するには、次の手順を実行します。
 
 1. フォームをユニバーサルエディターで編集用に開きます。
-2. ユニバーサルエディターツールバーで使用可能な ![ エミュレーターアイコン ](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} を選択し、エミュレーターアイコンをクリックしてオプションを表示します。
+1. ユニバーサルエディターツールバーで使用可能な ![ エミュレーターアイコン ](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} を選択し、エミュレーターアイコンをクリックしてオプションを表示します。
 
    ![ レスポンシブモード ](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
 
-3. モバイルデバイスをエミュレートするオプションとユニバーサルエディター内のオプションを選択します
+1. 選択したデバイスのユニバーサルエディターでフォームをエミュレートするためのオプションを選択します（デスクトップ、タブレット、モバイル）。
 
    ![ レスポンシブモード ](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png){width=40%,height=40%}
 
@@ -42,24 +42,24 @@ ht-degree: 18%
 
 <table border="1" style="text-align:" left; border-collapse: collapse;">
     <tr>
-        <th>エミュレーターのタイプ</th>
-        <th>デバイスの画像</th>
+        <th style="width: 20%">エミュレーターのタイプ</th>
+        <th style="width: 80%">デバイスの画像</th>
     </tr>
     <tr>
-        <td>デスクトップ</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="デスクトップエミュレーター" style="width: auto; height: auto"></td>
+        <td style="width: 20%">デスクトップ</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="デスクトップエミュレーター" style="width: auto; height: auto"></td>
     </tr>
     <tr>
-        <td>タブレットなど）のアクティブマーカーを確認する。</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="タブレットエミュレーター" style="width: auto; height: auto"></td>
+        <td style="width: 20%">タブレットなど）のアクティブマーカーを確認する。</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="タブレットエミュレーター" style="width: auto; height: auto"></td>
     </tr>
     <tr>
-        <td>モバイル</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="モバイルエミュレーター" style="width: auto; height: auto"></td>
+        <td style="width: 20%">モバイル</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="モバイルエミュレーター" style="width: auto; height: auto"></td>
     </tr>
     <tr>
-        <td>カスタムデバイス</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="カスタムデバイスエミュレーター" style="width: auto; height: auto"></td>
+        <td style="width: 20%">カスタムデバイス</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="カスタムデバイスエミュレーター" style="width: auto; height: auto"></td>
     </tr>
 </table>
 
