@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 7f4257433c441eb6b0109f22545b3ef708c9323b
+source-git-commit: b51be0344d0a7bc4958aee4c99e08630aec7ce41
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 87%
@@ -845,6 +845,9 @@ main .form form .field-otp input {
 この CSS は、クラス `field-otp` を持つ要素内にあるすべての入力要素をターゲットとします。フォームの HTML 構造はアダプティブフォームブロックの規則に従います。つまり、クラス「field-otp」でマークされたコンテナが「otp」という名前のフィールドを保持します。
 
 +++
+
+
+
 
 ## 関連トピック
 
