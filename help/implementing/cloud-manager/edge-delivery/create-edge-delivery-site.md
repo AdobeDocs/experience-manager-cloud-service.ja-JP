@@ -3,10 +3,10 @@ title: Cloud ManagerでEdge Delivery サイトを作成します
 description: ボタンをクリックするだけでCloud ManagerでEdge Delivery サイトをすばやく作成する方法を説明します。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0e1248ee8ceb324ee44dce296135d651d28c9f97
+source-git-commit: 1e4e07d2690bcbd44ffe994a571ffc0a8ae7eb50
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 26%
+source-wordcount: '1101'
+ht-degree: 24%
 
 ---
 
@@ -78,7 +78,7 @@ Cloud Managerによるサイトの準備と検証が完了すると、以前に�
    | サイトの GitHub リポジトリ | <ul><li>**Edge Delivery サイト** リストボックスの **リポジトリ** 列見出しの下で、作成したサイトの URL をクリックします。<br> 場合によっては、ユーザー名またはメールアドレスとパスワードを使用して GitHub にログインする必要があります。</li> |
    | サイトの公開 | <ul><li> **Edge Delivery サイト** リストボックスで、サイト名の右端にある ![ その他アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックして、ドロップダウンメニューを開きます。</li><li>ドロップダウンメニューの ![ 公開チェックアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PublishCheck_18_N.svg)**サイトを公開** をクリックします。<br> サイトの公開が正常に開始されたことを知らせるトーストメッセージが表示されます。</li></ul> |
    | 公開済みサイトのプレビュー | <ul><li>[**Edge Deliveryのサイト**] ボックスの [**サイト名** 列見出しの下で、作成して発行したサイトの URL をクリックします。<br> ブラウザーの URL アドレスバーに、サイトの URL が `.page` で終わり、サイトのプレビューが表示されていることを示していることに注意してください。</li><li>サイトをライブで表示するには、URL アドレスバーで `.page` を `.live` に手動で変更します。</li></ul> |
-   | Google Drive 上のコンテンツリポジトリへのアクセス権をユーザーに付与します | <ul><li> **Edge Delivery サイト** リストボックスで、サイト名の右端にある ![ その他アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックして、ドロップダウンメニューを開きます。</li><li>ドロップダウンメニューで ![ ユーザー追加アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg)**コンテンツリポジトリへのアクセス権を取得** をクリックします。</li><li>**サイトに共同作業者を追加** ダイアログボックスで、投稿者のメールアドレスを入力し、![ チェックマークアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg) をクリックします。</li><li>必要に応じて、コントリビューターメールの追加を続けます。</li><li>完了したら、「**共同作業者を追加**」をクリックします。</li><li>コンテンツ共同作業者とリンクを共有するには、「**Collaborationが正常に追加されました**」ダイアログボックスで **OK** をクリックします。<br> 共同作業者は、電子メール内の **開く** をクリックすると、共有Google Drive フォルダーへの投稿を促す電子メールを受け取ります。ログインの必要はありません。 前述のように、共有フォルダー内のファイルを編集および更新したあと、Cloud Managerで「**サイトを公開**」をクリックすることができます。 また、前述のように、変更をプレビューすることもできます。</li></ul> |
-   | GitHub のベースリポジトリへのアクセス権をユーザーに付与します | <ul><li> **Edge Delivery サイト** リストボックスで、サイト名の右端にある ![ その他アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックして、ドロップダウンメニューを開きます。</li><li>ドロップダウンメニューで ![ コードアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg)**ベースリポジトリへのアクセスを取得** をクリックします。</li><li>**サイトのベースリポジトリにアクセス** ダイアログボックスで、共同作業者の GitHub ユーザー名を入力し、![ チェックマークアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg) をクリックします。</li><li>必要に応じて、GitHub ユーザー名の追加を続行します。</li><li>完了したら、「**共同作業者を追加**」をクリックします。</li> |
+   | Google Drive 上のコンテンツリポジトリへのアクセス権をユーザーに付与します | <ul><li> **Edge Delivery サイト** リストボックスで、サイト名の右端にある ![ その他アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックして、ドロップダウンメニューを開きます。</li><li>ドロップダウンメニューで ![ ユーザー追加アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg)**コンテンツリポジトリへのアクセス権を取得** をクリックします。</li><li>**サイトに共同作業者を追加** ダイアログボックスで、投稿者のメールアドレスを入力し、![ チェックマークアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg) をクリックします。</li><li>必要に応じて、コントリビューターメールの追加を続けます。</li><li>完了したら、「**共同作業者を追加**」をクリックします。</li><li>コンテンツ共同作業者とリンクを共有するには、「**Collaborationが正常に追加されました**」ダイアログボックスで **OK** をクリックします。</li><li>Collaborationが正常に追加されましたダイアログボックスで、![ コピーアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) をクリックしてリンクをコピーし、共同作業者と共有します。<br> リンクを共有する前に、共同作業者が IMS アカウントに関連付けられたメールアドレスでログインしていることを確認します。 IMS メールアカウントを使用できない場合は、共同作業者として追加されたメールアドレスを使用する必要があります。 これにより、共同作業者がリンクにアクセスし、Google Drive 上で編集または更新するコンテンツを確認できるようになります。</li><li>編集が完了したら、前述の説明に従って、Cloud Managerで「**サイトを公開**」をクリックします。<br> または、上記のように変更をプレビューします。</li></ul> |
+   | GitHub のベースリポジトリへのアクセス権をユーザーに付与します | <ul><li> **Edge Delivery サイト** リストボックスで、サイト名の右端にある ![ その他アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックして、ドロップダウンメニューを開きます。</li><li>ドロップダウンメニューで ![ コードアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg)**ベースリポジトリへのアクセスを取得** をクリックします。</li><li>**サイトのベースリポジトリにアクセス** ダイアログボックスで、共同作業者の GitHub ユーザー名を入力し、![ チェックマークアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg) をクリックします。</li><li>必要に応じて、GitHub ユーザー名の追加を続行します。</li><li>完了したら、「**共同作業者を追加**」をクリックします。</li>ユーザーは、リポジトリを表示するために独自の GitHub ユーザー名へのアクセス権を付与する必要があります。 |
 
 
