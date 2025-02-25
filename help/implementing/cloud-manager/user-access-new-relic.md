@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 26a80ce68c5f6eee032ded355a8e5747ad6449a7
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 100%
+source-wordcount: '1809'
+ht-degree: 97%
 
 ---
 
@@ -179,7 +179,7 @@ New Relic One にユーザーを追加する場合は、次の制限が適用さ
 
 >[!NOTE]
 >
->New Relic One サブアカウントで 90日以上アクティビティが検出されなかった場合、APM エージェントは停止します。
+>New Relic One サブアカウントで 30日以上アクティビティが検出されなかった場合、APM エージェントは停止します。
 >
 >このドキュメントの [New Relic One サブアカウントのアクティベート](#activate-sub-account)の節と同じ手順に従って、New Relic One サブアカウントを再アクティベートします。
 
@@ -191,7 +191,7 @@ AEM as a Cloud Service プログラムの New Relic One 製品に関する詳細
 
 アドビは、New Relic One の Java プラグインを介して AEM as a Cloud Service のオーサー、パブリッシュ、プレビュー（利用可能な場合）サービスをモニタリングします。アドビは、カスタムの New Relic One APM テレメトリと、実稼動および実稼動以外の AEM as a Cloud Service 環境でのモニタリングを有効にします。
 
-New Relic One アカウントは、アドビが管理するプライマリアカウントに接続されており、複数のアプリケーションがレポートを作成します。AEM as a Cloud Service 環境ごとに 3 つあります。
+New Relic One アカウントは、Adobeが管理する主要なアカウントに接続されており、複数のアプリケーションがレポートを作成します。AEM as a Cloud Service環境ごとに 3 つあります。
 
 * 環境ごとにオーサーサービス用の 1 つのアプリケーション
 * 環境ごとに `Publish` サービス用の 1 つのアプリケーション（ゴールデンパブリッシュを含む）
@@ -201,7 +201,8 @@ New Relic One アカウントは、アドビが管理するプライマリアカ
 
 * 各アプリケーションは、1 つのライセンスキーを使用します。
 * AEM as a Cloud Service 環境は、1 つの New Relic One アカウントにのみレポートします。
-* 両方の New Relic One の完全なモニタリング指標およびイベントは、3 か月間保持されます。&lt;!-- CQDOC-22238 - 7 日間から 3 か月間に更新しました。>
+* 両方のNew Relic Oneの完全なモニタリング指標およびイベントは、3 か月間保持されます。
+
 +++
 
 +++**アドビは New Relic Oneからのアラート通知を送信しますか？** {#alerting-new-relic}
@@ -235,5 +236,5 @@ New Relic One を使用すると、ユーザーがアクセスできるすべて
 
 +++**New Relic One アカウントの APM エージェントが停止しました。なぜこうなったのでしょうか？** {#deactivated}
 
-90 日以上アクティビティが検出されなかった場合、[APM エージェントは停止します](#limitations)。このドキュメントの [New Relic One サブアカウントのアクティベート](#activate-sub-account)の節と同じ手順に従って、New Relic One サブアカウントを再アクティベートします。
+30 日以上アクティビティが検出されなかった場合、[APM エージェントは停止します](#limitations)。このドキュメントの [New Relic One サブアカウントのアクティベート](#activate-sub-account)の節と同じ手順に従って、New Relic One サブアカウントを再アクティベートします。
 +++
