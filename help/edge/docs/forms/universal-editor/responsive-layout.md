@@ -4,19 +4,20 @@ description: この記事では、ユニバーサルエディターで様々な�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+hidefromtoc: true
+source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 2%
 
 ---
 
-
 # WYSIWYG オーサリングのレスポンシブモード
 
 [ ユニバーサルエディター ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) を使用すると、様々なエミュレーターでEdge Delivery Services Formsをプレビューして、オーサリング中のフォームのルックアンドフィールを確認できます。
 
 レスポンシブモードを使用すると、開発者はデスクトップ、タブレット、モバイルデバイスなど、様々な画面サイズに自動的に適応するレイアウトをデザインできます。 ユニバーサルエディターは、デスクトップ、タブレットおよびモバイルデバイス用のエミュレーターをサポートします。 画面サイズに応じて高さと幅を設定し、次のアクションを実行できます。
+
 * 向きの設定
 * 幅と高さを指定
 * 向きを変更する
@@ -68,6 +69,3 @@ ht-degree: 2%
 ## 関連トピック
 
 {{universal-editor-see-also}}
-
-
-
