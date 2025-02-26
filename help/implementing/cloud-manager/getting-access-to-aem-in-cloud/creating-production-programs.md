@@ -5,23 +5,24 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: cb9707e4f53e32ed6e5aec244b1ef2240fcf376c
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 100%
+source-wordcount: '1098'
+ht-degree: 79%
 
 ---
 
 
 # 実稼動プログラムの作成 {#create-production-program}
 
-実稼動プログラムは、AEM と Cloud Manager に精通し、ライブトラフィックの処理にコードをデプロイすることを目的として、コードの記述、ビルド、テストを行う準備ができているユーザーを対象としています。
+実稼動プログラムは、Adobe Experience Manager（AEM）とCloud Managerに精通し、コードを記述、ビルド、テストする準備が整い、ライブトラフィックを処理するためにコードをデプロイすることを目標とするユーザー向けです。
 
 プログラムタイプについて詳しくは、[プログラムとプログラムタイプについて](program-types.md)のドキュメントを参照してください。
 
 ## 実稼動プログラムの作成 {#create}
 
-お客様の組織の使用権限に応じて、プログラムを追加する際に[その他のオプション](#options)が表示される場合があります。
+組織の使用権限によっては、プログラムを追加する際に追加の実稼動プログラムオプションが表示される場合があります。
+[ その他の実稼動プログラムオプション ](#options) を参照してください。
 
 **実稼動プログラムを作成するには：**
 
@@ -73,7 +74,7 @@ ht-degree: 100%
 
 ## その他の実稼動プログラムオプション {#options}
 
-組織が使用できる使用権限に応じて、実稼動用プログラムの作成時に追加のオプションを使用できる場合があります。
+組織で使用できる使用権限によっては、実稼動プログラムの作成時に次の追加オプションを使用できる場合があります。
 
 ### セキュリティ {#security}
 
@@ -98,23 +99,25 @@ ht-degree: 100%
 
 ![SLA オプション](assets/create-production-program-sla.png)
 
-AEM Sites および Forms は、標準の 99.9％のサービスレベル契約（SLA）を提供しています。「**99.99％のサービスレベル契約**」オプションを使用すると、Sites や Forms の実稼動環境で 99.99％の最小稼動時間の割合が有効になります。
+Sites とFormsでは、99.9% の標準service level agreement（SLA）を提供しています。 「**99.99% Service level agreement**」オプションは、Sites、Forms、Edge Delivery Services、その他の 3 つの環境のいずれについても、実稼動環境の最小アップタイムを 99.99% 保証します。
 
-99.99％の SLA には、可用性の向上や待ち時間の短縮を含むメリットがあり、プログラムの実稼動環境に[追加の公開地域](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)を適用する必要があります。
+99.99% SLAは、可用性の向上や待ち時間の短縮などのメリットを提供します。
 
-99.99％の SLA を有効にする[要件](#sla-requirements)が満たされたら、[フルスタックパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)を実行してアクティベートする必要があります。
+Sites とFormsのプログラムの場合、99.99% のSLAをプログラムの実稼動環境に適用するには、[ 追加の公開地域 ](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) が必要です。 99.99％の SLA を有効にする[要件](#sla-requirements)が満たされたら、[フルスタックパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)を実行してアクティベートする必要があります。
+
+Edge Delivery Servicesの場合、プログラムで 99.99% のSLA ライセンスを設定する以外に *要件はありません*。
 
 #### 99.99％の SLA の要件 {#sla-requirements}
 
-99.99％の SLA には、必要な使用権限以外にも、使用に関する追加の要件があります。
+必要な使用権限に加えて、99.99%SLAを Sites またはForms プログラムに使用する場合、次の追加要件があります。
 
 * 99.99％の SLA をプログラムに適用する際に、組織は 99.99％の SLA と追加の公開地域の使用権限を使用できる必要があります。
 * Cloud Manager では、99.99％の SLA をプログラムに適用する前に、未使用の[追加の公開地域](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)の使用権限が使用できることを確認します。
 * プログラムを編集する際、1 つ以上の追加の公開地域がある実稼動環境が既に含まれている場合、Cloud Manager では 99.99％の SLA 使用権限が使用可能かどうかのみを確認します。
 * 99.99％の SLA とレポートのアクティベーションの場合は、[実稼動環境／ステージ環境](/help/implementing/cloud-manager/manage-environments.md#adding-environments)が作成され、1 つ以上の追加の公開地域が実稼動環境／ステージ環境に適用されている必要があります。
    * [高度なネットワーク](/help/security/configuring-advanced-networking.md)を使用している場合は、地域に障害が発生した場合でも接続を維持できるように、[新しい環境への複数の公開地域の追加](/help/implementing/cloud-manager/manage-environments.md#adding-regions)ドキュメントで推奨事項を必ず確認してください。
-* 99.99％の SLA プログラムに 1 つ以上の追加の公開地域が維持する必要があります。ユーザーは、99.99％の SLA プログラムから最後の追加の公開地域を削除することは許可されていません。
-* Sites または Forms ソリューションが有効になっている実稼動プログラムでは、99.99％の SLA がサポートされます。
+* 99.99% SLA プログラムには、常に 1 つ以上の公開地域を含める必要があります。 ユーザーは、最後に残っている追加公開地域をプログラムから削除することはできません。
+* 99.99% SLAは、Sites またはForms ソリューションが有効になっている実稼動プログラムでサポートされています。
 * 99.99％の SLA は、[フルスタックパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)を実行してアクティベートするか、プログラム編集時にアクティベート解除します。
 
 ## プログラムへのアクセス {#accessing}
