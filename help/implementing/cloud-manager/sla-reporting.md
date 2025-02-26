@@ -5,9 +5,9 @@ exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
-workflow-type: ht
-source-wordcount: '477'
+source-git-commit: e6f5414454f79f46421593440587e81941a8f4c2
+workflow-type: tm+mt
+source-wordcount: '474'
 ht-degree: 100%
 
 ---
@@ -40,7 +40,7 @@ SLA レポートデータでは、オーサー層とパブリッシュ層とい�
 
 1. 「**SLA レポート**」をクリックします。
 
-   ![SLA レポートの折れ線グラフ](/help/implementing/cloud-manager/assets/cm-sla-report.png)
+   ![SLA レポートの折れ線グラフ](/help/implementing/cloud-manager/assets/cm-sla-report2.png)
 
 1. 目的の年をクリックして、SLA データの折れ線グラフを表示します。
 
@@ -49,8 +49,6 @@ SLA レポートデータでは、オーサー層とパブリッシュ層とい�
    * そのポイントの特定の値を表示するには、折れ線グラフのデータポイントにカーソルを合わせます。
    * 折れ線グラフの PNG 画像ファイルを保存するには、折れ線グラフの年の下にあるダウンロードアイコンをクリックします。
    * 指標のデータのみを表示するには、その指標名をクリックします。または、1 つ以上の指標名を選択または選択解除しながら、キーボードの `Shift` キーを押します。
-
-   ![詳細データの表示](/help/implementing/cloud-manager/assets/cm-sla-download.png)
 
 ## イベント分析 {#event-analysis}
 
@@ -70,3 +68,4 @@ SLA レポートには、AEM 実稼動環境のパフォーマンスに関する
 ## プレビュー環境 {#preview}
 
 プレビュー環境は、コンテンツ作成者が公開前にコンテンツの最終的なエクスペリエンスを検証するためのツールとして設計されています。この機能により、プレビュー環境は高可用性を備えた設計ではなく、SLA が関連付けられていません。
+
