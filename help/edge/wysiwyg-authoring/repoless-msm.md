@@ -1,31 +1,31 @@
 ---
 title: Repoless マルチサイト管理
-description: 1 つのコードベースを活用するローカライズされたサイトを使用してリポジトリ方式でプロジェクトを設定する方法に関するベストプラクティスの推奨事項を説明します。各サイトはEdge Delivery Servicesによって提供されます。
+description: 1 つのコードベースを活用するローカライズされたサイトを使用してプロジェクトをリポジトリ方式で設定する方法に関するベストプラクティスの推奨事項を説明します。各サイトは、Edge Delivery Servicesから提供されます。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1260'
 ht-degree: 2%
 
 ---
 
 # Repoless マルチサイト管理 {#repoless-msm}
 
-1 つのコードベースを活用するローカライズされたサイトを使用してリポジトリ方式でプロジェクトを設定する方法に関するベストプラクティスの推奨事項を説明します。各サイトはEdge Delivery Servicesによって提供されます。
+1 つのコードベースを活用するローカライズされたサイトを使用してプロジェクトをリポジトリ方式で設定する方法に関するベストプラクティスの推奨事項を説明します。各サイトは、Edge Delivery Servicesから提供されます。
 
 ## 概要 {#overview}
 
 [ マルチサイトマネージャー（MSM） ](/help/sites-cloud/administering/msm/overview.md) とそのライブコピー機能を使用すると、同じサイトコンテンツを複数の場所で使用できると同時に、バリエーションを作成することもできます。 コンテンツを 1 回作成してライブコピーを作成できます。 MSM では、ソースコンテンツとライブコピーの間にライブ関係を維持するので、ソースコンテンツを変更すると、ソースコピーとライブコピーを同期できます。
 
-MSM を使用すると、ロケールや言語をまたいでブランドのコンテンツ構造全体を作成し、コンテンツを一元的にオーサリングできます。 ローカライズされたサイトは、中央のコードベースを活用して、Edge Delivery Servicesで個別に配信できます。
+MSM を使用すると、ロケールや言語をまたいでブランドのコンテンツ構造全体を作成し、コンテンツを一元的にオーサリングできます。 ローカライズされたサイトは、一元化されたコードベースを活用して、Edge Delivery Servicesによって配信されます。
 
 ## 要件 {#requirements}
 
-リポジトリのユースケースで MSM を設定するには、まず複数のタスクを実行する必要があります。
+リポジトリのユースケースで MSM を設定するには、まず次のタスクを実行する必要があります。
 
-* このドキュメントは、[Edge Delivery ServicesでのWYSIWYG オーサリングのための開発者向けスタートガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) ガイドに基づいて、プロジェクトのサイトを既に作成していることを前提としています。
+* このドキュメントは、[Edge Delivery Servicesを使用したWYSIWYG オーサリングの開発者向けスタートガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) ガイドに基づいて、プロジェクトのサイトを既に作成していることを前提としています。
 * [ プロジェクトのリソース機能を有効にする ](/help/edge/wysiwyg-authoring/repoless.md) 必要があります。
 
 ## ユースケース {#use-case}
@@ -49,14 +49,14 @@ MSM を使用すると、ロケールや言語をまたいでブランドのコ�
 /content/wknd/de/en
 ```
 
-`language-masters` のコンテンツは、ローカライズされたサイトのライブコピーのソースです（ドイツ（`de`）およびスイス（`ch`））。 このドキュメントの目的は、ローカライズされたサイトごとに同じコードベースを使用するEdge Delivery Servicesサイトを作成することです。
+`language-masters` のコンテンツは、ローカライズされたサイトのライブコピーのソースです（ドイツ（`de`）およびスイス（`ch`））。 このドキュメントの目的は、ローカライズされたサイトごとに同じコードベースを使用するEdge Delivery Services サイトを作成することです。
 
 ## 設定 {#configuration}
 
 MSM リポジトリのユースケースを設定するには、いくつかの手順があります。
 
-1. [AEM サイト設定を更新します ](#update-aem-configurations)。
-1. [ ローカライズしたページ用に新しいEdge Delivery Servicesサイトを作成する ](#create-edge-sites)。
+1. [AEM サイト設定を更新 ](#update-aem-configurations) します。
+1. [ ローカライズしたページ用に新しいEdge Delivery Services サイトを作成する ](#create-edge-sites)。
 1. [ ローカライズしたサイト用にAEMのクラウド設定を更新します ](#update-cloud-configurations)。
 
 ### AEM サイト設定の更新 {#update-aem-configurations}
@@ -99,19 +99,19 @@ MSM リポジトリのユースケースを設定するには、いくつかの�
 
 追加のローカライズされたサイトにそれぞれの設定を割り当てます。 wknd の場合は、`/conf/wknd/de` 設定をドイツのサイトにも割り当てる必要があります。
 
-### ローカライズされたページ用に新しいEdge Delivery Servicesサイトを作成する {#create-edge-sites}
+### ローカライズされたページ用に新しいEdge Delivery Services サイトを作成する {#create-edge-sites}
 
-複数地域、複数言語のサイト設定でEdge Delivery Servicesにサイトを接続する場合は、AEM MSM サイトごとに新しい aem.live サイトを設定する必要があります。 共有 Git リポジトリとコードベースを持つAEM MSM サイトと aem.live サイトは、1 対 1 の関係にあります。
+複数地域、複数言語のサイト設定用にさらに多くのサイトをEdge Delivery Servicesに接続するには、AEM MSM サイトごとに新しい aem.live サイトを設定する必要があります。 共有 Git リポジトリとコードベースを持つAEM MSM サイトと aem.live サイトは、1 対 1 の関係にあります。
 
-この例では、wknd がスイス拠点に存在する場合のサイト `wknd-ch` を作成します。スイス拠点のローカライズされたコンテンツは、AEM パス `/content/wknd/ch` の配下に配置されます。
+この例では、wknd がスイス拠点にある場合にの `wknd-ch` サイトを作成します。この拠点のローカライズされたコンテンツは、AEMのパス `/content/wknd/ch` の配下に配置されます。
 
 1. 認証トークンとプログラムのテクニカルアカウントを取得します。
    * プログラムの **アクセストークンを取得** する方法と [ テクニカルアカウント [ について詳しくは ](/help/edge/wysiwyg-authoring/repoless.md#access-token) サイト間でのコードの再利用 ](/help/edge/wysiwyg-authoring/repoless.md#access-control) ドキュメントを参照してください。
 1. 設定サービスに対して次の呼び出しを実行して、新しいサイトを作成します。 次の点を考慮してください。
-   * POST URL のプロジェクト名は、新しく作成するサイト名にする必要があります。 この例では、`wknd-ch` です。
+   * POST URL のプロジェクト名は、作成する新しいサイト名にする必要があります。 この例では、`wknd-ch` です。
    * `code` の設定は、最初のプロジェクト作成に使用した設定と同じである必要があります。
    * `content`/`source`/`url` は、作成する新しいサイトの名前に合わせて変更する必要があります。 この例では、`wknd-ch` です。
-   * つまり、「POSTURL」のサイト名と「`content`/`source`/`url`」は同じにする必要があります。
+   * つまり、POST URL のサイト名と `content`/`source`/`url` は同じでなければなりません。
    * `admin` ブロックを調整して、サイトへの完全な管理アクセス権を持つユーザーを定義します。
       * これはメールアドレスの配列です。
       * ワイルドカード `*` を使用できます。
@@ -177,11 +177,11 @@ MSM リポジトリのユースケースを設定するには、いくつかの�
 
 手順を繰り返して、ローカライズされたサイトを追加で作成します。 wknd の場合は、ドイツ語プレゼンス用の `wknd-de` サイトも作成する必要があります。
 
-### ローカライズしたページへのAEM クラウド設定の更新 {#update-cloud-configurations}
+### ローカライズしたページへのAEMのクラウド設定の更新 {#update-cloud-configurations}
 
-AEMのページは、ローカライズされた表示域で、前の節で作成した新しいEdge Delivery Sites を使用するように設定する必要があります。 この例では、`/content/wknd/ch` の配下のコンテンツが、作成した `wknd-ch` サイトを使用することを知っている必要があります。 同様に、`/content/wknd/de` 下のコンテンツも `wknd-de` サイトを使用する必要があります。
+AEMのページは、ローカライズのために前の節で作成した新しいEdge Delivery Sites を使用するように設定する必要があります。 この例では、`/content/wknd/ch` の配下のコンテンツが、作成した `wknd-ch` サイトを使用することを知っている必要があります。 同様に、`/content/wknd/de` 下のコンテンツも `wknd-de` サイトを使用する必要があります。
 
-1. AEM オーサーインスタンスにログインし、**ツール**/**Cloud Service**/**Edge Delivery Services設定** に移動します。
+1. AEM オーサーインスタンスにサインインし、**ツール**/**Cloud Services**/**4}Edge Delivery Services Configuration} に移動します。**
 1. プロジェクト用に自動的に作成された設定を選択し、ローカライズされたページ用に作成されたフォルダーを選択します。 この場合、スイス（`ch`）になります。
 1. ツールバーで **作成**/**設定** をタップまたはクリックします。
 1. **Edge Delivery Services設定** ウィンドウで、次の操作を行います。

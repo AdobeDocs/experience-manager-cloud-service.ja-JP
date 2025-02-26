@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1e4e07d2690bcbd44ffe994a571ffc0a8ae7eb50
+source-git-commit: 3a3713cdf2910492385b96b89038095c3642a2ec
 workflow-type: tm+mt
-source-wordcount: '6091'
-ht-degree: 99%
+source-wordcount: '6094'
+ht-degree: 98%
 
 ---
 
@@ -990,10 +990,11 @@ ht-degree: 99%
       + [分類データの管理](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [WYSIWYG とドキュメントベースのブロック](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
       + [DAM アセットを使用したページ](/help/edge/wysiwyg-authoring/dam-assets.md)
-      + [WIP Sites 機能](/help/edge/wysiwyg-authoring/wip-features.md)
       + [サイト間でのコードの再利用](/help/edge/wysiwyg-authoring/repoless.md)
       + [Repoless マルチサイト管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
       + [Repoless ステージと実稼動環境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+      + [サイト認証の設定](/help/edge/wysiwyg-authoring/site-authentication.md)
+      + [WIP Sites 機能](/help/edge/wysiwyg-authoring/wip-features.md)
    + ドキュメントベースのオーサリング {#document-authoring}
       + [オーサリング](/help/edge/docs/authoring.md)
       + [一括メタデータ](/help/edge/docs/bulk-metadata.md)

@@ -4,9 +4,9 @@ description: ほぼ同じように見えて動作する類似サイトが多数�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '976'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 デフォルトでは、AEMはコードリポジトリに緊密に結び付けられており、ほとんどのユースケースを満たします。 ただし、コンテンツがほとんど異なるものの、同じコードベースを活用できる複数のサイトが存在する場合があります。
 
-AEMは、複数の GitHub リポジトリを作成し、各サイトを専用の GitHub リポジトリから同期を保ちながら実行するのではなく、同じコードベースから複数のサイトを実行することをサポートしています。
+AEMでは、複数の GitHub リポジトリーを作成し、各サイトを専用の GitHub リポジトリーから同期を保ちながら実行するのではなく、同じコードベースから複数のサイトを実行することをサポートしています。
 
 この簡略化された設定によって、コードを複製する必要がなくなるので、[ 「repoless」 ](https://www.aem.live/docs/repoless) とも呼ばれます。最初のサイト以外はすべて、GitHub リポジトリを必要としないからです。
 
@@ -31,14 +31,14 @@ AEMは、複数の GitHub リポジトリを作成し、各サイトを専用の
 
 この機能を利用するには、必ず次の手順を実行してください。
 
-* サイトは、[Edge Delivery Services WYSIWYG オーサリング開発者向け入門ガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) のドキュメントに従って、既に完全に設定されています。
+* サイトは、[Edge Delivery Servicesを使用したWYSIWYG オーサリングの開発者向けスタートガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) のドキュメントに従って、既に完全に設定されています。
 * 少なくともAEM as a Cloud Service 2024.08 を実行している。
 
-また、次の項目を設定するようAdobeに依頼する必要があります。 Slackチャネル経由でお問い合わせいただくか、サポートの問題を提起してAdobeをリクエストし、以下の変更を行ってください。
+また、次の項目の設定をAdobeに依頼する必要もあります。 Slack チャネル経由でお問い合わせいただくか、サポート問題を提起してAdobeに依頼し、以下の変更を行ってください。
 
 * お使いの環境と管理者として設定されている環境で [aem.live configuration サービス ](https://www.aem.live/docs/config-service-setup#prerequisites) をアクティブ化するように依頼します。
-* Adobeでプログラムの応答機能を有効にするように依頼します。
-* 組織を作成するようAdobeに依頼してください。
+* Adobeによるプログラムのリポート機能を有効にするように依頼します。
+* Adobeに組織の作成を依頼します。
 
 ## リポジトリ機能の有効化 {#activate}
 
@@ -47,7 +47,7 @@ AEMは、複数の GitHub リポジトリを作成し、各サイトを専用の
 1. [アクセストークンの取得](#access-token)
 1. [設定サービスの設定](#config-service)
 1. [サイト設定とテクニカルアカウントの追加](#access-control)
-1. [AEM設定を更新](#update-aem)
+1. [AEM設定の更新](#update-aem)
 1. [サイトの認証](#authenticate-site)
 
 これらの手順では、サイト `https://wknd.site` を例として使用します。 適当にあなた自身の物を入れ替えなさい。
@@ -155,15 +155,15 @@ AEMは、複数の GitHub リポジトリを作成し、各サイトを専用の
 >
 >設定サービスを使用し、`config.json` 経由でパスマッピングを公開すると、`path.json` ファイルは無視されます。
 
-AEMをリポジトリで使用するように設定したら、configuration サービスを使用して、パスのマッピングに有効な `config.json` を指定する必要があります。
+AEMをリポジトリで使用するように設定したら、configuration サービスを使用して、有効な `config.json` をパスマッピングに指定する必要があります。
 
 ### AEM設定の更新 {#update-aem}
 
 これで、AEMのEdge Delivery Servicesに必要な変更を加える準備が整いました。
 
-1. AEM オーサーインスタンスにサインインして **ツール**/**Cloud Service**/**Edge Delivery Services設定** に移動し、サイト用に自動的に作成された設定を選択して、ツールバーの **プロパティ** をタップまたはクリックします。
+1. AEM オーサーインスタンスにサインインして **ツール**/**クラウドサービス**/**Edge Delivery Services Configuration** に移動し、サイト用に自動的に作成された設定を選択して、ツールバーの **プロパティ** をタップまたはクリックします。
 1. **Edge Delivery Services設定** ウィンドウで、プロジェクトのタイプを **aem.live with repoless config setup** に変更し、「**保存して閉じる**」をタップまたはクリックします。
-   ![Edge Delivery Services設定 ](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
+   ![Edge Delivery Servicesの設定 ](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
 1. ユニバーサルエディターを使用してサイトに戻り、正しくレンダリングされていることを確認します。
 1. コンテンツの一部を変更し、再公開します。
 1. 公開済みサイト（`https://main--<your-aem-project>--<your-github-org>.aem.page/`）にアクセスして、変更が正しく反映されていることを確認します。
@@ -176,14 +176,15 @@ AEMをリポジトリで使用するように設定したら、configuration サ
 
 * [Repoless マルチサイト管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
 * [Repoless ステージと実稼動環境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [コンテンツオーサリングのサイト認証](/help/edge/wysiwyg-authoring/site-authentication.md)
 
 ## トラブルシューティング {#troubleshooting}
 
 レポートユースケースを設定した後に発生する最も一般的な問題は、ユニバーサルエディター内のページがレンダリングされなくなったり、白いページまたは一般的なAEM as a Cloud Serviceのエラーメッセージが表示されたりすることです。 この場合の解決策は、次のとおりです。
 
 * レンダリングされたページのソースの表示。
-   * 何かレンダリングされるもの（`scripts.js`、`aem.js` およびエディター関連の JSON ファイルを含んだ正しいHTMLヘッド）はありますか？
-* オーサーインスタンスのAEM `error.log` に例外がないか確認します。
+   * 何かレンダリングされるもの（`scripts.js`、`aem.js` およびエディター関連の JSON ファイルを使用してHTMLの head を修正してください）はありますか？
+* 例外については、オーサーインスタンスのAEM `error.log` を確認してください。
    * 最も一般的な問題は、ページコンポーネントが 404 エラーで失敗することです。
    * `config.json or paths.json` を読み込むことができません
    * `component-definition.json` 等 を読み込めません

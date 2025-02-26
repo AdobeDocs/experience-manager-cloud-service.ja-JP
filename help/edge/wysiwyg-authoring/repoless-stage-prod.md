@@ -4,9 +4,9 @@ description: 単一のコードベースをリポジトリで活用して、ス�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '747'
 ht-degree: 2%
 
 ---
@@ -21,6 +21,13 @@ ht-degree: 2%
 
 このドキュメントでは、個別のステージング環境と実稼動環境の典型的な例を使用します。 希望する任意の環境に対して、個別の環境を作成できます。
 
+## 要件 {#requirements}
+
+レポートステージ環境と実稼動環境を設定するには、まず次のタスクを実行する必要があります。
+
+* このドキュメントは、[Edge Delivery ServicesでのWYSIWYG オーサリングの開発者向けスタートガイド ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) に基づいて、プロジェクトのサイトを既に作成していることを前提としています。
+* [ プロジェクトのリソース機能を有効にする ](/help/edge/wysiwyg-authoring/repoless.md) 必要があります。
+
 ## 設定 {#configuration}
 
 このドキュメントでは、同じコードベースを使用して、プロジェクトに別の実稼動サイトを設定する方法について説明します。 以下の前提に基づいています。
@@ -33,18 +40,18 @@ ht-degree: 2%
 
 個別の実稼動サイトを設定するには、次の 2 つの手順があります。
 
-1. [ 実稼動環境用に新しいEdge Delivery Servicesサイトを作成します ](#create-edge-site)。
+1. [ 実稼動環境用の新しいEdge Delivery Services サイトの作成 ](#create-edge-site)。
 1. [ 実稼動サイト用にAEMのクラウド設定を更新します ](#update-cloud-configuration)。
 
-### 実稼動環境用の新しいEdge Delivery Servicesサイトの作成 {#create-edge-site}
+### 実稼動環境用の新しいEdge Delivery Services サイトの作成 {#create-edge-site}
 
 1. 認証トークンとプログラムのテクニカルアカウントを取得します。
    * プログラムの **アクセストークンを取得** する方法と [ テクニカルアカウント [ について詳しくは ](/help/edge/wysiwyg-authoring/repoless.md#access-token) サイト間でのコードの再利用 ](/help/edge/wysiwyg-authoring/repoless.md#access-control) ドキュメントを参照してください。
 1. 設定サービスに対して次の呼び出しを実行して、新しいサイトを作成します。 次の点を考慮してください。
-   * POST URL のプロジェクト名は、新しく作成するサイト名にする必要があります。 この例では、`wknd-prod` です。
+   * POST URL のプロジェクト名は、作成する新しいサイト名にする必要があります。 この例では、`wknd-prod` です。
    * `code` の設定は、最初のプロジェクト作成に使用した設定と同じである必要があります。
    * `content`/`source`/`url` は、作成する新しいサイトの名前に合わせて変更する必要があります。 この例では、`wknd-prod` です。
-   * つまり、「POSTURL」のサイト名と「`content`/`source`/`url`」は同じにする必要があります。
+   * つまり、POST URL のサイト名と `content`/`source`/`url` は同じでなければなりません。
    * `admin` ブロックを調整して、サイトへの完全な管理アクセス権を持つユーザーを定義します。
       * これはメールアドレスの配列です。
       * ワイルドカード `*` を使用できます。
@@ -108,11 +115,11 @@ ht-degree: 2%
 
 `https://main--wknd-prod--<your-github-org>.aem.page/config.json` を呼び出し、返される JSON のコンテンツを確認することで、新しいサイトのパブリック設定が機能していることを確認します。
 
-### 実稼動サイト用のAEMのクラウド設定の更新 {#update-cloud-configuration}
+### 実稼動サイト用AEMのクラウド設定の更新 {#update-cloud-configuration}
 
 実稼動用AEMは、専用の実稼動サイトに対して前の節で作成した新しいEdge Delivery サイトを使用するように設定されている必要があります。 この例では、実稼動環境の `/content/wknd` 下にあるコンテンツが、作成した `wknd-prod` サイトを使用することを知っている必要があります。
 
-1. AEM実稼動インスタンスにサインインし、**ツール**/**Cloud Service**/**Edge Delivery Services設定** に移動します。
+1. AEM実稼動インスタンスにサインインし、**ツール**/**Cloud Services**/**4}Edge Delivery Services Configuration} に移動します。**
 1. プロジェクトのために自動的に作成された設定を選択します。
 1. ツールバーの **プロパティ** をタップまたはクリックします。
 1. **Edge Delivery Services設定** ウィンドウで、次の操作を行います。
@@ -131,6 +138,6 @@ ht-degree: 2%
 1. ツールバーの **編集** をタップまたはクリックします。
 1. ページがユニバーサルエディターで適切にレンダリングされ、サイトルートと同じコードを使用していることを確認します。
 1. ページに変更を加えて、再公開します。
-1. そのページの新しいEdge Delivery Servicesサイト（`https://main--wknd-prod--<your-github-org>.aem.page`）にアクセスします。
+1. そのページの新しいEdge Delivery Services サイト（`https://main--wknd-prod--<your-github-org>.aem.page`）を参照してください。
 
 変更を加えた場合は、個別の実稼動サイト設定が正しく機能しています。
