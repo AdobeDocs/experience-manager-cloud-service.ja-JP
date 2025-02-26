@@ -3,18 +3,19 @@ title: ユニバーサルエディターでの AEM Forms の Edge Delivery Servi
 description: このチュートリアルは、新しい Adobe Experience Manager Forms（AEM）プロジェクトを起動および実行するのに役立ちます。10～20 分で、ユニバーサルエディターで独自の Edge Delivery Services フォームが作成されます。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '1778'
-ht-degree: 86%
+source-wordcount: '1826'
+ht-degree: 84%
 
 ---
 
 
 # ユニバーサルエディター（WYSIWYG）での AEM Forms の Edge Delivery Services の基本を学ぶ
+
+<span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に、GitHub の組織名とリポジトリ名を記載したメールを送信します。 例えば、リポジトリ URL がhttps://github.com/adobe/abcの場合、組織名は adobe で、リポジトリ名は abc.</span> です
+
 
 今日のデジタル時代では、ユーザーにわかりやすいフォームはすべての組織にとって不可欠です。Edge Delivery Services フォームは、WYSIWYG（見たままが得られる）機能を提供するユニバーサルエディターを使用して作成されます。最新の直感的なインターフェイスで、効率的なフォームオーサリングを実現します。
 

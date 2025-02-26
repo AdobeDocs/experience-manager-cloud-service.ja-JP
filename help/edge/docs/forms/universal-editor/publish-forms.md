@@ -3,17 +3,18 @@ title: Edge Delivery Services用のAEM Formsを公開します。
 description: Edge Delivery Services フォームを迅速かつシームレスに公開します。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 1%
+source-wordcount: '515'
+ht-degree: 0%
 
 ---
 
 # アダプティブフォームをEdge Delivery Servicesに公開する
+
+<span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に、GitHub の組織名とリポジトリ名を記載したメールを送信します。 例えば、リポジトリ URL がhttps://github.com/adobe/abcの場合、組織名は adobe で、リポジトリ名は abc.</span> です
+
 
 フォームが完成し、使用できる状態になったら、公開することで、顧客がデータの収集や送信にアクセスできるようになります。 公開すると、フォームをEdge Deliveryで使用できるようになり、ユーザーはシームレスに操作できます。 このプロセスにより、お客様はフォームにリアルタイムで入力して送信でき、効率的なデータキャプチャと効率化された処理が可能になります。
 

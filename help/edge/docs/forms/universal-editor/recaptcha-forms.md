@@ -4,18 +4,19 @@ description: AEM Forms の Edge Delivery Services 向けフォームでの Googl
 feature: Edge Delivery Services
 keywords: フォームの reCAPTCHA、ユニバーサルエディターの reCAPTCHA の使用、フォームの reCAPTCHA の追加
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 13%
+source-wordcount: '1273'
+ht-degree: 12%
 
 ---
 
 
 # WYSIWYG オーサリングでの reCAPTCHA の使用
+
+<span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に、GitHub の組織名とリポジトリ名を記載したメールを送信します。 例えば、リポジトリ URL がhttps://github.com/adobe/abcの場合、組織名は adobe で、リポジトリ名は abc.</span> です
+
 
 CAPTCHA （Completely Automated Public Turing test to tell Computers and Humans Apart）は、web サイトを不正行為、スパム、誤用から保護するために使用される一般的なツールです。
 

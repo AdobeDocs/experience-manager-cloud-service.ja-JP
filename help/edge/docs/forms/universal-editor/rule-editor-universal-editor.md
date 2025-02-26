@@ -3,18 +3,19 @@ title: ルールエディターを使用してルールをフォームフィー�
 description: ユニバーサルエディターのルールエディターを使用すると、コーディングやスクリプトを使用せずに、動的な動作を追加し、複雑なロジックをフォームに組み込むことができます。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '2166'
-ht-degree: 76%
+source-wordcount: '2214'
+ht-degree: 73%
 
 ---
 
 
 # WYSIWYG オーサリングでのルールエディターの概要
+
+<span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に、GitHub の組織名とリポジトリ名を記載したメールを送信します。 例えば、リポジトリ URL がhttps://github.com/adobe/abcの場合、組織名は adobe で、リポジトリ名は abc.</span> です
+
 
 ルールを作成できるルールエディターを使用して、動的なフォームの動作を追加できます。これらのルールにより、条件付きフィールドの表示が有効になり、ユーザー入力に基づいて計算が自動化され、全体的なユーザーエクスペリエンスが向上します。ルールエディターは、フォーム入力プロセスを効率化することで、正確性と効率性の両方を確保するのに役立ちます。
 
@@ -185,7 +186,7 @@ ht-degree: 76%
 
 ## ルールの記述
 
-ビジュアルルールエディターでルールを記述する方法を理解するには、税金計算フォームの簡単な例を考えます。
+ビジュアルルールエディターでルールを記述する方法を理解するために、税金計算フォームの簡単な例を見てみましょう。
 
 ![ルールエディターの例](/help/edge/docs/forms/assets/rule-editor-1.png)
 

@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3a3713cdf2910492385b96b89038095c3642a2ec
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '6094'
-ht-degree: 98%
+source-wordcount: '6193'
+ht-degree: 95%
 
 ---
 
@@ -1024,37 +1024,36 @@ ht-degree: 98%
    + フォームの作成 {#build-forms}
       + [概要](/help/edge/docs/forms/overview.md)
       + [Edge Delivery Services Formsの仕組み](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
-      + はじめに {#getting-started-edge-delivery-services-forms}
-         + [はじめに](/help/edge/docs/forms/tutorial.md)
-         + [Google Sheet または Microsoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
-         + [データの受け入れを開始するための Google Sheets または Microsoft Excel ファイルの設定](/help/edge/docs/forms/submit-forms.md)
-         + [フォームを公開してデータの収集を開始](/help/edge/docs/forms/publish-forms.md)
-         + [フォームフィールドへの検証機能の追加](/help/edge/docs/forms/validate-forms.md)
-         + [URL からフォームへのオプションの読み込み](/help/edge/docs/forms/load-options-from-url.md)
-         + [フォームの外観のカスタマイズ](/help/edge/docs/forms/style-theme-forms.md)
-         + [ルールを使用してフォームに動的な動作を追加](/help/edge/docs/forms/rules-forms.md)
-         + [検証用の正規表現](/help/edge/docs/forms/regex-forms.md)
-         + [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
-         + [フォーム送信サービスの使用](/help/forms/forms-submission-service.md)
+      + ドキュメントベースのオーサリング {#getting-started-edge-delivery-services-forms}
+         + [最初のフォームを作成：Google シートと Excel を使用したクイックスタートガイド](/help/edge/docs/forms/tutorial.md)
+         + [Google Sheets または Excel を使用してFormsを作成する方法：手順ガイド](/help/edge/docs/forms/create-forms.md)
+         + [フォームをGoogle Sheets に接続する：データ収集セットアップガイド](/help/edge/docs/forms/submit-forms.md)
+         + [フォームをライブにする：公開およびデータ収集ガイド](/help/edge/docs/forms/publish-forms.md)
+         + [フォームフィールドの検証：Formsにエラーチェックを追加する](/help/edge/docs/forms/validate-forms.md)
+         + [美しいFormsのデザイン：スタイル設定とカスタマイズガイド](/help/edge/docs/forms/style-theme-forms.md)
+         + [成功メッセージの作成：フォームの「ありがとうございます」ページのカスタマイズ](/help/edge/docs/forms/thank-you-page-form.md)
+         + [フォーム送信ガイド：Forms送信サービスの使用](/help/forms/forms-submission-service.md)
+         + [動的フォームフィールド：URL からのオプションの読み込み](/help/edge/docs/forms/load-options-from-url.md)
+         + [スマートな動作の追加：フォームルールとロジックガイド](/help/edge/docs/forms/rules-forms.md)
+         + [高度なフォームの検証：正規表現ガイド](/help/edge/docs/forms/regex-forms.md)
+         + [再利用可能なFormsの構築：フォームフラグメントに関するガイド](/help/edge/docs/forms/form-fragments.md)
+         + [動的Formsを作成：繰り返し可能なセクションの追加](/help/edge/docs/forms/repeatable-forms.md)
+         + [フォームをグローバルにする：フォーム翻訳ガイド](/help/edge/docs/forms/translate-forms.md)
+         + [Formsの保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/recaptacha-forms.md)
+         + [カスタムフォームコンポーネントの作成：開発者ガイド](/help/edge/docs/forms/custom-components-forms.md)
+         + [フォームのパフォーマンスの監視：実際の使用状況の監視ガイド](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [Forms on Edgeのデプロイ：Edge Delivery Servicesの公開ガイド](/help/edge/docs/forms/publishing-forms.md)
       + WYSIWYG {#universal-editor}
-         + [概要 - Forms の Edge Delivery Services のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [はじめに](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [WYSIWYG インターフェイスについて](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [ルールエディターを使用したへのルールの追加](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [カスタムコンポーネントの作成](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [フォームでの reCAPTCHA の使用](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [送信アクション](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [Formsの公開](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [フォームのスタイル設定のカスタマイズ](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [レスポンシブモード](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-      + 機能 {#advanced-features-edge-delivery-services-forms}
-         + [フォームフラグメントの使用](/help/edge/docs/forms/form-fragments.md)
-         + [繰り返し可能なセクションをフォームに追加する](/help/edge/docs/forms/repeatable-forms.md)
-         + [フォームの翻訳](/help/edge/docs/forms/translate-forms.md)
-         + [reCAPTCHA を使用してフォームを保護する](/help/edge/docs/forms/recaptacha-forms.md)
-         + [カスタムコンポーネント](/help/edge/docs/forms/custom-components-forms.md)
-         + [フォームの実際の使用のモニタリング](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [Edge Delivery Services 向けのフォームの公開](/help/edge/docs/forms/publishing-forms.md)
+         + [Forms Universal Editor for Edge Delivery Servicesの概要 – 完全なガイド](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [ユニバーサルエディターを使用して最初のフォームを作成する方法 – ステップバイステップチュートリアル](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [ユニバーサルエディターインターフェイスガイド：ツール、機能、ナビゲーション](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [Formsをモバイルに対応させる：ユニバーサルエディターのレスポンシブデザイン](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [美しいFormsのデザイン：ユニバーサルエディターのスタイル設定とテーマ設定ガイド](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Formsへの動的動作の追加：ルールエディターの完全なガイド](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [フォーム送信ガイド：フォーム送信アクションの設定とカスタマイズ](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [Formsをスパムから保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [Formsの公開およびデプロイ方法：ユニバーサルエディター公開ガイド](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [ カスタムフォームコンポーネントの作成：ユニバーサルエディター開発者ガイド ](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + 参照 {#forms-references}
          + [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
    + Edge Delivery リソース {#resources}
