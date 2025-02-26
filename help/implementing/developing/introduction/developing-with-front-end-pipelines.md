@@ -4,7 +4,7 @@ description: フロントエンドパイプラインは、開発者の独立性�
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 248c58c51864a2fead95064d30ea9f438f655eb6
+source-git-commit: 635fd7736d26b95acc4389c519edf495694b1a94
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 30%
@@ -94,5 +94,6 @@ HTMLまたは JSON 出力に変更を加える場合、特に両方の領域が�
 
 * アドビは、新しいサイトテーマを作成するための一連のスクリプトとして AEM Site Theme Builder を提供します。
 
-  [AEM Site Theme Builder](https://github.com/adobe/aem-site-theme-builder) を参照してください。
+  [AEM Site Theme Builder を参照してください ](https://github.com/adobe/aem-site-theme-builder)
+
 
