@@ -4,9 +4,9 @@ description: AEM as a Cloud Service での配布とレプリケーションの�
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 4e57908ceebc820b64ce0ec5f8e5ba01ee6f5eb2
+source-git-commit: 68b21abbc00b6c766fc33bf70e259c8ad9fc8e59
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: '1704'
 ht-degree: 99%
 
 ---
@@ -98,7 +98,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 | 名前 | 説明 |
 | ------------- | ------------------------------------------- |
-| onlyModified | 前回の公開以降に変更されたノード |
+| onlyModified | 前回のパブリッシュ以降に変更されたノード（新規および既存） |
 | onlyActivated | 以前に公開されたノード |
 
 
