@@ -2,7 +2,7 @@
 title: Content Hubを探索
 description: コンテンツハブの詳細、その主なメリット、アクセス方法、コンテンツハブで使用可能なオプションに関するフィードバックの提供方法について説明します。
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 88926df720df2aae74312998773069aa4c017c31
+source-git-commit: cccfddd6600358bc7bd4d000d760d62626107426
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 90%
@@ -84,7 +84,7 @@ AEM Assets は信頼できる唯一の情報源として機能し、すべての
 
 1. [DAM 作成者または管理者としてExperience Manager Assets内の承認されたアセット ](approve-assets.md)
 
-1. [ 管理者として他のユーザーのContent Hub ユーザーインターフェイスを設定する ](configure-content-hub-ui-options.md)..
+1. [ 管理者として他のユーザーのContent Hub ユーザーインターフェイスを設定する ](configure-content-hub-ui-options.md)。
 
 1. [チームからより多くのユーザーにコンテンツハブへのアクセス権を付与します](deploy-content-hub.md#onboard-content-hub-consumer-users)。
 
