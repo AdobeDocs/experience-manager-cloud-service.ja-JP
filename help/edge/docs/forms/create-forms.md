@@ -4,10 +4,10 @@ description: 完璧なフォームを素早く作成しましょう。 ⚡ AEM F
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 96%
+source-wordcount: '781'
+ht-degree: 98%
 
 ---
 
@@ -78,11 +78,11 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 1. [プロジェクトに指定された設定に従って](https://www.aem.live/docs/setup-customer-sharepoint)、シートが適切な AEM ユーザー（`forms@adobe.com` など）と共有されていることを確認します。 ユーザにシートの編集権限を付与します。
 
-1. 作成したスプレッドシートを開き、デフォルトシートの名前を「shared-aem」に変更します。
+1. 作成したスプレッドシートを開き、デフォルトのシートの名前を「shared-aem」に変更します。
 
    ![デフォルトのシート名を「shared-default」に変更](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. フォームフィールドを追加するには、行および列ヘッダーを「shared-aem」シートに挿入します。 各行は、[フォームフィールド](/help/edge/docs/forms/form-components.md#available-components)を表し、列ヘッダーが対応するフィールドの[プロパティ](/help/edge/docs/forms/form-components.md#components-properties)を定義する必要があります。
+1. フォームフィールドを追加するには、行と列のヘッダーを「shared-aem」シートに挿入します。各行は、[フォームフィールド](/help/edge/docs/forms/form-components.md#available-components)を表し、列ヘッダーが対応するフィールドの[プロパティ](/help/edge/docs/forms/form-components.md#components-properties)を定義する必要があります。
 
 
    すぐに開始するには、[照会スプレッドシート](/help/edge/assets/enquiry.xlsx)の内容を、お使いのスプレッドシートにコピーすることを検討してください。 内容をコピーした後、スプレッドシートを保存します。
@@ -108,12 +108,12 @@ Ensure a smooth GitHub build process by addressing potential issues:
    例えば、プロジェクトのリポジトリの名前が「wefinance」で、アカウント「wkndform」の下にあり、「main」分岐を使用している場合、URL は次のようになります。
 
 `https://main--wefinance--wkndform.aem.page/enquiry.json`
-&lt;! – （https://main--wefinance--wkndform.aem.page/enquiry.json)-->
+&lt;!--(https://main--wefinance--wkndform.aem.page/enquiry.json)-->
 
 
 +++
 
-+++ 手順 2：Edge Delivery Services（EDS）ページを使用してフォームをプレビュー
++++ 手順 2:Edge Delivery Servicesページを使用してフォームをプレビューする
 
 
 ここまでで、フォームの構造の準備が整いました。 フォームをプレビューする手順は次のとおりです。

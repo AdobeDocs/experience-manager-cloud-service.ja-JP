@@ -1,8 +1,8 @@
 ---
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: d06399fd63d38738e7aff8503aec9a72a2081b5c
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 97%
+source-wordcount: '1390'
+ht-degree: 96%
 
 ---
 # スニペット {#snippets}
@@ -59,14 +59,13 @@ ht-degree: 97%
 
 ## ユニバーサルエディター{#universal-editor-see-also}
 
-* [AEM Forms の Edge Delivery Services の基本を学ぶ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [フォームの公開](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [フォームを送信します](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [フォームの外観をカスタマイズ](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-* [フォームのルールの作成](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-* [フォームでの reCAPTCHA の使用](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-* [フォームのカスタムコンポーネントの作成](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [ レスポンシブモードでフォームをプレビューする ](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+* [ユニバーサルエディターを使用した最初のフォームの作成](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Formsへの動的な動作の追加](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [フォーム送信アクションの設定とカスタマイズ](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Formsの公開とデプロイ](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [美しいFormsのデザイン：スタイル設定とテーマ設定ガイド](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [カスタムフォームコンポーネントの作成](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Formsをスパムから保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## 関連トピック {#see-more-forms-eds}
 

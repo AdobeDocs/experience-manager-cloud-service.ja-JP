@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '6193'
+source-wordcount: '6195'
 ht-degree: 95%
 
 ---
@@ -1024,6 +1024,7 @@ ht-degree: 95%
    + フォームの作成 {#build-forms}
       + [概要](/help/edge/docs/forms/overview.md)
       + [Edge Delivery Services Formsの仕組み](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
+      + [よくある質問](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + ドキュメントベースのオーサリング {#getting-started-edge-delivery-services-forms}
          + [最初のフォームを作成：Google シートと Excel を使用したクイックスタートガイド](/help/edge/docs/forms/tutorial.md)
          + [Google Sheets または Excel を使用してFormsを作成する方法：手順ガイド](/help/edge/docs/forms/create-forms.md)
@@ -1043,7 +1044,7 @@ ht-degree: 95%
          + [カスタムフォームコンポーネントの作成：開発者ガイド](/help/edge/docs/forms/custom-components-forms.md)
          + [フォームのパフォーマンスの監視：実際の使用状況の監視ガイド](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
          + [Forms on Edgeのデプロイ：Edge Delivery Servicesの公開ガイド](/help/edge/docs/forms/publishing-forms.md)
-      + WYSIWYG {#universal-editor}
+      + WYSIWYG オーサリング {#universal-editor}
          + [Forms Universal Editor for Edge Delivery Servicesの概要 – 完全なガイド](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [ユニバーサルエディターを使用して最初のフォームを作成する方法 – ステップバイステップチュートリアル](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [ユニバーサルエディターインターフェイスガイド：ツール、機能、ナビゲーション](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)

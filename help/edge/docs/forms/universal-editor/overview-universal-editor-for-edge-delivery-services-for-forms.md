@@ -1,24 +1,24 @@
 ---
-title: Forms の Edge Delivery Services のユニバーサルエディター（EDS Forms ブロック）
-description: Forms の Edge Delivery Services のユニバーサルエディター（EDS Forms ブロック）を使用して、アダプティブフォームを作成します。
+title: Edge Delivery Services for Formsのユニバーサルエディター
+description: アダプティブFormsを作成するには、Edge Delivery Services for Formsのユニバーサルエディターを使用します。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 80%
+source-wordcount: '1077'
+ht-degree: 72%
 
 ---
 
 
-# Forms の Edge Delivery Services のユニバーサルエディター（EDS Forms ブロック）
+# Edge Delivery Services for Formsのユニバーサルエディター
 
 <span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に、GitHub の組織名とリポジトリ名を記載したメールを送信します。 例えば、リポジトリ URL がhttps://github.com/adobe/abcの場合、組織名は adobe で、リポジトリ名は abc.</span> です
 
-ユニバーサルエディターは、シンプルで視覚的かつ直感的な WYSIWYG（見たままが得られる）インターフェイスを提供することで、Adobe Edge Delivery Services（EDS）のフォーム作成に革命をもたらします。コンテンツ作成者とフォーム作成者向けに設計されており、従来のフォーム作成プロセスの複雑さを排除し、技術に詳しくないユーザーでもアクセスできます。
+ユニバーサルエディターは、シンプルで視覚的かつ直感的なWhat You See Is What You Get（WYSIWYG）インターフェイスを提供することで、Adobe Edge 配信サービスのフォーム作成に革命を起こしました。 コンテンツ作成者とフォーム作成者向けに設計されており、従来のフォーム作成プロセスの複雑さを排除し、技術に詳しくないユーザーでもアクセスできます。
 
 ユニバーサルエディターを使用すると、テキストフィールド、チェックボックス、ラジオボタンなどの事前定義済みコンポーネントを使用して、レスポンシブでインタラクティブなフォームをすばやく設計できます。その堅牢な機能セットは、動的なルール、シームレスなデータ統合、高度なパーソナライゼーションをサポートし、すべてのフォームをニーズに合わせて調整します。
 
@@ -26,7 +26,7 @@ ht-degree: 80%
 
 ![ユニバーサルエディター](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} -->
 
-## EDS Forms のユニバーサルエディターの主な機能
+## Edge Delivery Services for Formsのユニバーサルエディターの主な機能
 
 
 
@@ -49,13 +49,13 @@ ht-degree: 80%
 
 | ![ 分析とトラッキング ](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![ タスクの管理 ](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![ データ バインディング ](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**分析とトラッキング**](https://www.aem.live/developer/martech-integration) | **タスクの管理** | **データ バインディング** |
+| [**分析とトラッキング**](https://www.aem.live/developer/martech-integration) | **タスク管理** （近日公開） | **データバインディング** （近日公開） |
 | 組み込みの分析とトラッキングを使用して、ユーザーの行動、フォームのインタラクション、送信率に関するインサイトを取得し、データ駆動型のフォーム最適化を実現します。 | Adobe Workfront との統合により、チームはフォームの作成とメンテナンスのタスクを管理し、ワークフローを効率化できます。 | データバインディングにより、フォームフィールドとバックエンドデータソース間の直接接続が可能になり、リアルタイムの更新と高度なデータマッピングがサポートされます。 |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Formsの埋め込み ](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Thank You 設定 ](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| **エディターのカスタマイズ** | **Formsの埋め込み** | [**Thank You 設定**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
-| 開発者は UI 拡張機能を通じてエディターの機能を拡張し、特定の組織のニーズに合わせて調整されたソリューションを実現できます。 | ユニバーサルエディターの組み込み埋め込みコンポーネントを使用して、Edge Delivery Services Sites ページにフォームを直接埋め込むことができます。 | フォームの送信が成功した後に、ユーザーに表示される感謝のメッセージまたはページを簡単にカスタマイズします。 |
+| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Formsの埋め込み** | [**Thank You 設定**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| reCAPTCHA を使用すると、フォームを自動ボットから保護し、安全で信頼性の高いデータ収集を行うことができます。 | ユニバーサルエディターの組み込み埋め込みコンポーネントを使用して、Edge Delivery Services Sites ページにフォームを直接埋め込むことができます。 | フォームの送信が成功した後に、ユーザーに表示される感謝のメッセージまたはページを簡単にカスタマイズします。 |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.

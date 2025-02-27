@@ -4,16 +4,16 @@ description: このチュートリアルは、新しい Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 12ac8fd43d56fb95bf63b2ce92d1ec1a776e464a
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '1658'
-ht-degree: 99%
+source-wordcount: '1656'
+ht-degree: 97%
 
 ---
 
 # はじめに - 開発者向けチュートリアル
 
-今日のデジタル時代では、ユーザーにわかりやすいフォームを作成することはどの組織にとっても不可欠です。 AEM Forms の Edge Delivery Services（EDS）を使用すると、Google Docs や Microsoft Office などの使い慣れたツールを使用してフォームを作成できます。
+今日のデジタル時代では、ユーザーにわかりやすいフォームを作成することはどの組織にとっても不可欠です。 AEM Forms用Edge Delivery Servicesを使用すると、Google DocsやMicrosoft Office などの使い慣れたツールを使用してフォームを作成できます。
 
 これらのフォームは、Microsoft Excel または Google Sheets ファイルに直接データを送信します。これにより、Google Sheets、Microsoft Excel、Microsoft SharePoint の活発なエコシステムと堅牢な API を使用して、送信されたデータを簡単に処理したり、既存のビジネスワークフローを開始したりできます。
 
@@ -59,7 +59,7 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
    >[!NOTE]
    >
    >
-   > GitHub Enterprise で IP フィルタリングを使用している場合は、次の IP（3.227.118.73）を許可リストに追加できます。
+   > IP フィルタリングで GitHub Enterprise を使用している場合は、次の IP を許可リストに追加できます。3.227.118.73
 
    これで完了です。 `https://<branch>--<repo>--<owner>.aem.page/` で新しい web サイトを実行しています。
 

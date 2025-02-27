@@ -4,16 +4,16 @@ description: このチュートリアルは、ユニバーサルエディター�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1424'
 ht-degree: 1%
 
 ---
 
 # ユニバーサルエディター（WYSIWYG）インターフェイスの詳細
 
-[ ユニバーサルエディター ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) は、Adobe Edge 配信サービス（EDS）Forms用のシンプルで視覚的で直感的なWhat You See Is What You Get（WYSIWYG）インターフェイスを提供します。 これは、効率的なフォームオーサリングを行うためのドラッグ&amp;ドロップ機能を備えた最新のインターフェイスを提供します。
+[ ユニバーサルエディター ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) は、Adobe Edge 配信サービスForms用のシンプルで視覚的かつ直感的なWhat You See Is What You Get（WYSIWYG）インターフェイスを提供します。 これは、効率的なフォームオーサリングを行うためのドラッグ&amp;ドロップ機能を備えた最新のインターフェイスを提供します。
 
 ![ ユニバーサルエディターのユーザーインターフェイス ](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
