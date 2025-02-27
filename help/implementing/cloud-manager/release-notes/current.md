@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: aaef376b733c10643e44205e55a0921c22008990
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '639'
-ht-degree: 18%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 18%
 AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2025.2.0 のリリースについて説明します。
 
 
-[Adobe Experience Manager as a Cloud Serviceの最新のリリースノート ](/help/release-notes/release-notes-cloud/release-notes-current.md) も参照してください。
+[Adobe Experience Manager as a Cloud Service の最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)も参照してください。
 
 ## リリース日 {#release-date}
 
@@ -30,46 +30,46 @@ AEM as a Cloud Service の Cloud Manager 2025.2.0 のリリース日は 2025年2
 
 * **コード品質ルールの更新**
 
-  2025 年 2 月 13 日木曜日（PT）より、Cloud Managerのコード品質ステップで SonarQube 9.9.5.90363 が使用されるようになりました。
+  2025年2月13日木曜日（PT）以降、Cloud Manager コード品質ステップでは、SonarQube 9.9.5.90363 が使用されるようになりました。
 
-  [ このリンク ](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) でAEM as a Cloud Service上のCloud Managerで使用できる更新されたルールにより、Cloud Manager パイプラインのセキュリティスコアとコード品質が決定します。
+  [このリンク](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)の AEM as a Cloud Service での Cloud Manager に使用可能な更新されたルールにより、Cloud Manager パイプラインのセキュリティスコアとコード品質が決定されます。
 
 * SonarQube 9.9 は、すべてのお客様に対するデフォルトのコード品質スキャンエンジンになりました。
 
 * **Java 17 および Java 21 ビルドサポート**
 
-  お客様は Java 17 または Java 21 を使用してビルドできるようになり、パフォーマンスの強化や新しい言語機能にアクセスできます。 Maven プロジェクトとライブラリのバージョンのアップデートを含む設定手順について詳しくは、[ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)を参照してください。ビルドバージョンを Java 17 または Java 21 に設定した際、デプロイされるランタイムは Java 21 です。
+  お客様は、Java 17 または Java 21 を使用してビルドし、パフォーマンス強化と新しい言語機能にアクセスできます。Maven プロジェクトとライブラリのバージョンのアップデートを含む設定手順について詳しくは、[ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)を参照してください。ビルドバージョンを Java 17 または Java 21 に設定した際、デプロイされるランタイムは Java 21 です。
 
-* Edge Delivery ServicesのSLA稼動時間レポートの **99.99%**
+* **Edge Delivery Services の 99.99％の SLA 稼働率レポート**
 
-  対象となるEdge Delivery Services プログラムで、99.99% の高可用性の稼動時間レポートが利用できるようになりました。 この機能を有効にするには、Edge Delivery Services サイトを正常にオンボーディングし、99.99% Service level agreement（SLA）をCloud Manager内に適用する必要があります。
+  対象となる Edge Delivery Services プログラムでは、高可用性 99.99％稼働率レポートが使用できるようになりました。この機能を有効にするには、お客様は Edge Delivery Services サイトを正常にオンボードし、Cloud Manager 内で 99.99％のサービスレベル契約（SLA）を適用する必要があります。
 
   [SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) も参照してください。
 
-* **Edge Delivery Servicesのユーザー招待エクスペリエンスの向上**
+* **Edge Delivery Services のユーザー招待エクスペリエンスの向上**
 
-  Edge Delivery Servicesに関連付けられたコンテンツリポジトリーにユーザーを招待する際の操作性が向上しました。<!-- CMGR-65331 -->
+  Edge Delivery Services に関連付けられたコンテンツリポジトリにユーザーを招待する際のエクスペリエンスが向上しました。<!-- CMGR-65331 -->
 
 * **パブリッシュインスタンスでの管理者プロファイルの自動作成**
 
-  以前は、Cloud Managerでは、パブリッシュインスタンス上に管理者プロファイルを手動で作成できましたが、デフォルトでは自動作成はサポートされていませんでした。 この更新により、パブリッシュインスタンスで管理プロファイルが自動的に作成されるようになり、ユーザビリティが向上し、顧客の設定時間が短縮されました。
+  以前、Cloud Manager ではパブリッシュインスタンスで管理者プロファイルを手動で作成できましたが、デフォルトでは自動作成がサポートされていませんでした。この更新により、管理者プロファイルがパブリッシュインスタンスに自動的に作成され、使いやすさが向上し、お客様の設定時間が短縮されるようになりました。
 
-  詳しくは、[ カスタム権限 ](/help/implementing/cloud-manager/custom-permissions.md) を参照してください。
+  詳しくは、[カスタム権限](/help/implementing/cloud-manager/custom-permissions.md)を参照してください。
 
   ![パイプラインアクティビティフィルタリング](/help/implementing/cloud-manager/release-notes/assets/product-profiles.png)
 
-* **Cloud Service環境向けの OAuth への移行**
+* **Cloud Service 環境の OAuth への移行**
 
-  新しいCloud Service環境では、以前に使用されていた JWT 認証方法の代わりに、Adobe Developer Console統合プロジェクトに対して、OAuth ベースのサービス間認証を使用するようになりました。 JWT 認証は非推奨（廃止予定）となり、2025 年 6 月に提供終了になる予定です。
+  新しい Cloud Service 環境では、Adobe Developer Console 統合プロジェクトで、以前使用されていた JWT 認証方法の代わりに、OAuth ベースのサービス間認証が使用されるようになりました。JWT 認証は非推奨（廃止予定）であり、2025年6月に提供終了になる予定です。
 
-* **EC 秘密鍵（secp384r1）のサポート**
+* **EC（楕円曲線）秘密鍵（secp384r1）のサポート**
 
-  Cloud Managerは `secp384r1` 楕円曲線（EC）秘密鍵をサポートするようになり、顧客管理の OV/EV SSL 証明書のセキュリティとコンプライアンスを向上させます。
-詳しくは、[ 顧客が管理する OV/EV SSL 証明書の要件 ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements) を参照してください。<!-- CMGR-63636 -->
+  Cloud Manager が `secp384r1` 楕円曲線（EC）秘密鍵をサポートするようになり、お客様が管理する OV/EV SSL 証明書のセキュリティとコンプライアンスが向上しました。
+詳しくは、[顧客が管理する OV/EV SSL 証明書の要件](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)を参照してください。<!-- CMGR-63636 -->
 
 * **特殊なテスト環境**
 
-  リソースが強化された新しい開発環境は、2025 年 2 月 27 日（PT）以降、早期導入者が利用できるようになります。
+  リソースが強化された新しい開発環境は、2025年2月27日（PT）以降、早期導入者に提供される予定です。
 
 
 <!--
@@ -80,16 +80,16 @@ Be a part of Cloud Manager's early adoption program and have a chance to test up
 
 ## バグ修正
 
-* **（UI）Cloud Managerで、ドメインの CDN 設定ができない問題を修正しました。**
-Cloud Managerで CDN 設定を追加しようとすると、ドロップダウンメニューからドメインを選択した際に画面エラーが発生しました。 このユーザーインターフェイスのバグにより、実稼動環境でのドメインマッピングが妨げられ、設定プロセスがブロックされていました。
+* **（UI）Cloud Manager でドメインの CDN 設定ができない問題を修正しました。**
+お客様が Cloud Manager で CDN 設定を追加しようとすると、ドロップダウンメニューからドメインを選択した際に、画面エラーが発生していました。このユーザーインターフェイスのバグにより、本番環境でのドメインマッピングが妨げられ、設定プロセスがブロックされていました。
 
-  さらに、ユーザーインターフェイスから削除されているにもかかわらず、一部のドメインはバックエンドでアクセスできないままでした。 この問題は、既存の CDN 設定との競合を引き起こしました。
+  また、一部のドメインは、ユーザーインターフェイスから削除されたにもかかわらず、バックエンドではアクセスできないままでした。この問題により、既存の CDN 設定との競合が発生しました。
 
-  この修正により、エラーを発生させずに、ドロップダウンからドメインを正常に選択できるようになりました。 ドメインの再設定を妨げるバックエンドの不整合は解決されました。 最後に、検証の改善により、競合するドメインを再追加する前に、適切に削除できるようになりました。<!-- CMGR-64888 -->
-* **（バックエンド） SSL の有効期限通知が複数回送信される問題を修正しました。**
-午前 0 時に 1 日 1 回実行するように設計されている SSL 有効期限通知スケジューラーが、1 日 2 回、午前 0 時と午前 12 時 30 分に誤ってトリガーされていたバグが特定されました。 この問題により、SSL 証明書の有効期限に関する複数の冗長な通知が送信されていました。
+  今回の修正により、エラーが発生することなく、ドロップダウンからドメインを正常に選択できるようになりました。ドメインの再設定を妨げるバックエンドの不整合に対処しました。最後に、検証が改善され、競合するドメインが再度追加される前に適切に削除されるようになりました。<!-- CMGR-64888 -->
+* **（バックエンド）SSL 有効期限通知が複数回送信される問題を修正しました。**
+毎日午前 0 時に実行されるように設計された SSL 有効期限通知スケジューラーが、誤って 1 日に 2 回（午前 0 時に 1 回、午前 12:30 に 1 回）実行されるというバグが確認されました。この問題により、期限切れの SSL 証明書に関する複数の冗長な通知が送信されていました。
 
-  通知スケジューラーは、意図したとおりに 1 日に 1 回だけ正しく実行されるようになりました。 また、SSL の重複する有効期限切れ通知を受け取らなくなりました。<!-- CMGR-64748 -->
+  通知スケジューラーは、意図したとおりに 1 日に 1 回のみ正しく実行されるようになりました。また、SSL 有効期限通知を重複して受信することもなくなりました。<!-- CMGR-64748 -->
 
 
 
