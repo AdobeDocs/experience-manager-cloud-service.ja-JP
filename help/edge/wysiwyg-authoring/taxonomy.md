@@ -4,10 +4,10 @@ description: Edge Delivery Services サイトで、AEM でタグを使用する�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '974'
-ht-degree: 100%
+source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+workflow-type: tm+mt
+source-wordcount: '1003'
+ht-degree: 97%
 
 ---
 
@@ -23,6 +23,10 @@ Edge Delivery Services サイトで、AEM でタグを使用する分類デー�
 これらのタグは、コンテンツを整理する際にユーザーや作成者だけでなく、読者にとっても役立ちます。タグとその分類は、ページ上のコンポーネントで使用して、読者がコンテンツを移動するのに役立ちます。
 
 ユニバーサルエディターは、タグの ID でのみ機能します。コンテンツの分類ページを作成すると、これらのタグの説明がすべての言語でユニバーサルエディターに公開され、コンテンツをレンダリングする際にその情報を使用できます。
+
+>[!TIP]
+>
+>分類と連携できるユニバーサルエディターで使用できるAEM タグフィールドについて詳しくは、[ モデル定義、フィールド、コンポーネントタイプ ](/help/implementing/universal-editor/field-types.md) のドキュメントを参照してください。
 
 ## 分類ページの作成 {#creating}
 
