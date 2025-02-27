@@ -3,13 +3,11 @@ title: Edge Delivery Services for Formsのユニバーサルエディター
 description: アダプティブFormsを作成するには、Edge Delivery Services for Formsのユニバーサルエディターを使用します。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: 6b7ff166467a399502b63fd13b1f836213b7839b
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 72%
+source-wordcount: '1087'
+ht-degree: 70%
 
 ---
 
@@ -47,14 +45,14 @@ ht-degree: 72%
 | [**スタイル設定**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **事前入力サービス** （近日公開） | [**A/B テスト**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | CSS を使用したスタイル設定により、開発者はフォーム要素の外観をカスタマイズし、web サイトの美学に合わせて、視覚的に魅力的なデザインを作成できます。 | 事前入力サービスでは、様々なソースから関連するユーザーデータを自動的にフォームフィールドに入力し、手動入力を減らしてユーザーエクスペリエンスを向上させることができます。 | A/B テストを使用すると、組織は様々なフォームデザイン、レイアウト、機能を試して、最もパフォーマンスの高いバリアントを特定できます。 |
 
-| ![ 分析とトラッキング ](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![ タスクの管理 ](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![ データ バインディング ](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
+| ![ 分析とトラッキング ](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![ フォームフラグメント ](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![ データ バインディング ](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**分析とトラッキング**](https://www.aem.live/developer/martech-integration) | **タスク管理** （近日公開） | **データバインディング** （近日公開） |
-| 組み込みの分析とトラッキングを使用して、ユーザーの行動、フォームのインタラクション、送信率に関するインサイトを取得し、データ駆動型のフォーム最適化を実現します。 | Adobe Workfront との統合により、チームはフォームの作成とメンテナンスのタスクを管理し、ワークフローを効率化できます。 | データバインディングにより、フォームフィールドとバックエンドデータソース間の直接接続が可能になり、リアルタイムの更新と高度なデータマッピングがサポートされます。 |
+| [**分析とトラッキング**](https://www.aem.live/developer/martech-integration) | **フォームフラグメント** （近日公開） | **データバインディング** （近日公開） |
+| 組み込みの分析とトラッキングを使用して、ユーザーの行動、フォームのインタラクション、送信率に関するインサイトを取得し、データ駆動型のフォーム最適化を実現します。 | フォームフラグメントを使用すると、よく使用するセクションを一度作成したら、複数のフォームで再利用できるので、一貫性が確保され、メンテナンス作業が軽減され、再利用性が高まります。 | データバインディングにより、フォームフィールドとバックエンドデータソース間の直接接続が可能になり、リアルタイムの更新と高度なデータマッピングがサポートされます。 |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Formsの埋め込み ](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Thank You 設定 ](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Formsの埋め込み** | [**Thank You 設定**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Formsの埋め込み** （近日公開） | [**Thank You 設定**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | reCAPTCHA を使用すると、フォームを自動ボットから保護し、安全で信頼性の高いデータ収集を行うことができます。 | ユニバーサルエディターの組み込み埋め込みコンポーネントを使用して、Edge Delivery Services Sites ページにフォームを直接埋め込むことができます。 | フォームの送信が成功した後に、ユーザーに表示される感謝のメッセージまたはページを簡単にカスタマイズします。 |
 
 
