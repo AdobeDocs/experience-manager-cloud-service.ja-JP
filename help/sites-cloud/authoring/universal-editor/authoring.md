@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1370'
-ht-degree: 100%
+source-git-commit: fced4707e781242132a018d28d4dd121960469eb
+workflow-type: tm+mt
+source-wordcount: '1410'
+ht-degree: 98%
 
 ---
 
@@ -177,6 +177,14 @@ ht-degree: 100%
 >[!NOTE]
 >
 >ソースコンテナとターゲットコンテナ間で異なる[コンポーネントフィルター](/help/implementing/universal-editor/filtering.md)が設定されている場合、コンテナ間でコンポーネントを移動できません。
+
+### 「バリエーションを生成」で生成 AI を使用したバリエーションの作成 {#generate-variations-ai}
+
+生成バリエーションを使用して生成 AI を活用し、コンテンツ作成を高速化します。
+
+ユニバーサルエディターを開いて、「バリエーションを生成」のエントリポイントを見つけます。
+
+詳しくは、[ バリエーションの生成 – AEM エディターに統合 ](/help/generative-ai/generate-variations-integrated-editor.md) を参照してください。
 
 ## コンテンツのプレビュー {#previewing-content}
 
