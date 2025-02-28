@@ -4,10 +4,10 @@ description: 独自のプライベート GitHub リポジトリを操作する C
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
+source-git-commit: 7097ec755ff41d5440de62a757bf036ae336de67
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 97%
+source-wordcount: '940'
+ht-degree: 96%
 
 ---
 
@@ -37,6 +37,9 @@ Cloud Manager でのプライベート GitHub リポジトリの設定は、次�
 
 1. 選択したプログラムに[プライベート GitHub リポジトリを追加](#add-repo)します。
 1. 次に、[プライベート GitHub リポジトリの所有権を検証](#validate-ownership)します。
+
+>[!NOTE]
+>Cloud Managerは、GitHub Cloud （github.com）上のプライベートリポジトリのみをサポートしています。<!-- As per request in https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=DMSArchitecture&title=%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+-+Pull+Request+validator+for+multiple+vendors -->
 
 ### プログラムへのプライベート GitHub リポジトリの追加 {#add-repo}
 
@@ -68,7 +71,6 @@ Cloud Manager でのプライベート GitHub リポジトリの設定は、次�
 >[!TIP]
 >
 >Cloud Manager でのリポジトリ管理について詳しくは、[Cloud Manager リポジトリ](/help/implementing/cloud-manager/managing-code/managing-repositories.md)を参照してください。
-
 
 
 ### プライベート GitHub リポジトリの所有権の検証 {#validate-ownership}
