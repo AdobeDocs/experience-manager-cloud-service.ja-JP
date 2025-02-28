@@ -4,10 +4,10 @@ description: ベストプラクティスアナライザーを使用してアッ�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
-source-wordcount: '2724'
-ht-degree: 99%
+source-wordcount: '2796'
+ht-degree: 97%
 
 ---
 
@@ -79,6 +79,20 @@ ht-degree: 99%
 
    ![レポートを生成](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
+>[!NOTE]
+> BPA バージョン 2.1.54 以降、Lighthouse スコアを取得するための新機能が導入されました。
+1. **レポートを生成** をクリックすると、ポップアップが表示され、Lighthouse スコアのAEM公開サイト URL を要求します。 ユーザーは、指定されたフィールドに有効な URL を入力する必要があります。
+
+   ![画像](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
+
+   1. URL が有効な場合は、成功メッセージが表示されます。
+
+      ![画像](/help/journey-migration/best-practices-analyzer/assets/valid_url.png)
+
+   1. URL が無効な場合は、エラーメッセージが表示されます。
+
+      ![画像](/help/journey-migration/best-practices-analyzer/assets/invalid_url.png)
+
 1. BPA アップロードキーを指定して、生成した BPA レポートを [Cloud Acceleration Manager（CAM）](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)に自動的にアップロードします。アップロードキーを取得するには、[CAM のベストプラクティス分析](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)に移動します。
 
    ![BPA アップロードキーを設定](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
@@ -87,7 +101,7 @@ ht-degree: 99%
 >「**CAM へのレポートの自動アップロードをスキップ**」を選択すると、CAM への自動アップロードをスキップできます。スキップすることを選択した場合は、BPA レポートをコンマ区切り値ファイルとして手動でダウンロードし、そのファイルを CAM にアップロードする必要があります。操作を効率化するため、アップロードキーオプションを使用することをお勧めします。
 
 >[!IMPORTANT]
->CAM に手動でアップロードする場合、レポートのサイズは約 200 MB に制限されます。 大きなレポートの場合は、自動アップロードを利用する必要があります。
+>CAM に手動でアップロードする際、レポートのサイズは約 200 MB に制限されます。より大きなレポートの場合は、自動アップロードを活用する必要があります。
 
 1. 有効なキーを指定すると、「**生成**」ボタンがアクティブになります。「**生成**」をクリックして、レポートの生成を開始します。
 

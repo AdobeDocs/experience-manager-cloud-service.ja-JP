@@ -4,10 +4,10 @@ description: コンテンツ転送ツールの基本を学ぶ
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: d8730109f5cd7dab44f535b1de008ae09811f221
-workflow-type: ht
-source-wordcount: '1362'
-ht-degree: 100%
+source-git-commit: ccd96892ccce0ed896cd01978f07e2a556c18527
+workflow-type: tm+mt
+source-wordcount: '1572'
+ht-degree: 86%
 
 ---
 
@@ -131,26 +131,49 @@ Cloud Acceleration Manager で作成した移行セットを設定するには�
    >
    >抽出キーが有効で、有効期限に近づいていないことを確認します。抽出キーを貼り付けた後、この情報は、**移行セットを作成**&#x200B;ダイアログに表示されます。接続エラーが発生した場合は、[ソース環境の接続性](#source-environment-connectivity)を参照してください。
 
-   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
+   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/createMigrationSet.png)
 
 1. 次に、移行セットを作成するには、次のパラメータを選択します。
 
    1. **バージョンを含める**： 必要に応じて選択します。バージョンが含まれる場合は、監査イベントを移行するために、パス `/var/audit` が自動的に含まれます。
 
-      ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
+      ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/includeVersion.png)
 
       >[!NOTE]
       >バージョンを移行セットの一部に含める予定で、`wipe=false` を指定して追加を行う場合、コンテンツ転送ツールの現在の制限事項により、バージョンのパージを無効にする必要があります。バージョンのパージを有効にしたまま、移行セットへの追加を行う場合は、`wipe=true` を指定して取り込みを実行する必要があります。
 
+      >[!NOTE]
+      >CTT バージョン（3.0.24）以降、コンテンツ転送ツールに新機能が含まれ、パスの包含および除外プロセスが強化されました。 以前は、パスを 1 つずつ選択する必要があり、面倒で時間がかかっていました。 現在は、ユーザーは好みに応じて、UI から直接パスを含めたり、CSV ファイルをアップロードしたりできます。
 
-   1. **含めるパス**： パスブラウザーを使用して、移行する必要があるパスを選択します。パスピッカーは、キーボード入力または選択による入力を受け付けます。
-
+   1. **含めるパス**： パスブラウザーを使用して、移行する必要があるパスを選択します。パスピッカーは、入力または選択による入力を受け付けます。 ユーザーは、パスを含めるオプションを UI から、または CSV ファイルをアップロードして、1 つだけ選択できます。
       >[!IMPORTANT]
       >移行セットの作成時には、次のパスは制限されます。
       >* `/apps`
       >* `/libs`
       >* `/home`
       >* `/etc`（`/etc` の一部のパスは CTT で選択できます）
+
+      ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/includeAndExcludePath.png)
+
+      1. パスの選択のみが許可され、少なくとも 1 つのパスが存在する必要があります。パスが選択されていない場合、サーバーエラーが発生します。
+
+         ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ServerError.png)
+
+      1. **CSV アップロードオプション** を使用する場合、CSV ファイルに有効なパスが含まれている必要があります。
+
+         ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/validCsvUpload.png)
+
+      1. パスピッカーに戻すには、ページを更新してやり直す必要があります。
+
+      1. アップロードされた CSV に **無効なパス** が見つかった場合、無効なパスは別のダイアログに表示されます。
+
+         ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/invalidPathsInCsv.png)
+
+      1. ユーザーは、CSV ファイルを修正して再度アップロードするか、UI を更新して、パスピッカーを使用してパスを選択する必要があります。
+
+   1. **除外するパス**：新機能を使用すると、特定のパスを含めない場合に、そのパスを除外できます。 例えば、include セクションのパスが/content/dam の場合、/content/dam/catalogs などのパスを除外できるようになりました。
+
+      ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/excludePathHighlighted.png)
 
 1. **移行セットを作成**&#x200B;画面のすべてのフィールドに値を入力したら、「**保存**」をクリックします。
 
@@ -184,7 +207,7 @@ Cloud Acceleration Manager で作成した移行セットを設定するには�
 
 1. **サイズを確認**&#x200B;ダイアログが開きます。
 
-   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
+   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/checkMigrationSetSize.png)
 
 1. 「**サイズを確認**」をクリックして、プロセスを開始します。移行セットリスト表示に戻り、**サイズ確認**&#x200B;が実行中であることを示すメッセージが表示されます。
 
@@ -192,7 +215,7 @@ Cloud Acceleration Manager で作成した移行セットを設定するには�
 
 1. **サイズ確認**&#x200B;プロセスが完了したら、ステータスが&#x200B;**完了**&#x200B;に変わります。同じ移行セットを選択し、「**サイズを確認**」をクリックして結果を表示します。以下は、警告を含まない&#x200B;**サイズ確認**&#x200B;結果の例です。
 
-   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
+   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/checkSizeAfterFinished.png)
 
 1. **サイズ確認**&#x200B;の結果、空きディスク容量が不足しているか、移行セットが製品の制限を超えていることがわかった場合は、**警告**&#x200B;ステータスが表示されます。
 
