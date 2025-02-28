@@ -4,10 +4,10 @@ description: Cloud Manager に外部リポジトリを追加する方法につ�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
-workflow-type: ht
-source-wordcount: '740'
-ht-degree: 100%
+source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
+workflow-type: tm+mt
+source-wordcount: '763'
+ht-degree: 95%
 
 ---
 
@@ -49,7 +49,7 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
    | フィールド | 説明 |
    | --- | --- |
    | **リポジトリ名** | 必須。新しいリポジトリのわかりやすい名前。 |
-   | **リポジトリ URL** | 必須。リポジトリの URL。<br><br>GitHub でホストされているリポジトリを使用している場合は、パスの末尾を `.git` にする必要があります。<br>例：*`https://github.com/org-name/repo-name.git`*（URL パスは説明用です）。<br><br>外部リポジトリを使用している場合は、次の URL パス形式を使用する必要があります。<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> または <br>`https://self-hosted-domain/org-name/repo-name.git`<br>。Git ベンダーと一致させる必要があります。 |
+   | **リポジトリ URL** | 必須。リポジトリの URL。<br><br>GitHub でホストされるリポジトリーを使用している場合、パスは `.git` で終わる必要があります。<br>例：*`https://github.com/org-name/repo-name.git`*（URL パスは説明用です）。<br><br>外部リポジトリを使用している場合は、次の URL パス形式を使用する必要があります。<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> または <br>`https://self-hosted-domain/org-name/repo-name.git`<br>。Git ベンダーと一致させる必要があります。 |
    | **リポジトリタイプを選択** | 必須。使用するリポジトリタイプ（**GitHub**、**GitLab**、または **BitBucket**）を選択します。上記のリポジトリ URL パスに GitLab や Bitbucket などの Git ベンダー名が含まれている場合、リポジトリタイプは既に事前に選択されています。 |
    | **説明** | オプション。リポジトリの詳細な説明です。 |
 
@@ -64,7 +64,7 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
    | --- | --- |
    | **既存のアクセストークンを使用** | 組織にリポジトリアクセストークンを既に指定し、複数のリポジトリにアクセスできる場合は、既存のトークンを選択できます。**トークン名**&#x200B;ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。それ以外の場合は、新しいアクセストークンを追加します。 |
    | **新しいアクセストークンを追加** | **リポジトリタイプ：GitHub**<br>• 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<br>• [GitHub ドキュメント](https://docs.github.com/ja/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)の指示に従って、個人アクセストークンを作成します。<br>• 必要な権限：<br>  • `Read access to metadata`。<br>  • `Read and write access to code and pull requests`。<br>• 「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
-   |  | **リポジトリタイプ：GitLab**<br>• 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<br>• [GitLab ドキュメント](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)の指示に従って、個人アクセストークンを作成します。<br>• 必要な権限：<br>  • `api`<br>  • `read_api`<br>  • `read_repository`<br>  • `write_repository`<br>• 「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
+   |  | **リポジトリタイプ：GitLab**<br>• 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<br>• [GitLab ドキュメント](https://docs.gitlab.com/user/profile/personal_access_tokens/)の指示に従って、個人アクセストークンを作成します。<br>• 必要な権限：<br>  • `api`<br>  • `read_api`<br>  • `read_repository`<br>  • `write_repository`<br>• 「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
    |  | **リポジトリタイプ：Bitbucket**<br>• 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<br>• [Bitbucket ドキュメント](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)を使用して、リポジトリアクセストークンを作成します。<br>• 必要な権限：<br>  • `Read and write access to code and pull requests`。 |
 
    >[!NOTE]
@@ -99,7 +99,9 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
 
 ## 制限事項
 
-外部リポジトリは、設定パイプラインにリンクできません。
+* 外部リポジトリは、設定パイプラインにリンクできません。
+* 外部リポジトリ（GitHub でホストされていない）を使用したパイプラインと「Git の変更時」トリガーは自動的には開始されません。 これらは手動でのみ開始できます。
+
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
 * Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->

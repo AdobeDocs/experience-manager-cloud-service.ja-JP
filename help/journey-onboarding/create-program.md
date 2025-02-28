@@ -4,10 +4,10 @@ description: Cloud Manager で最初のプログラムを作成する方法を�
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 feature: Onboarding
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '669'
-ht-degree: 100%
+source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
+workflow-type: tm+mt
+source-wordcount: '671'
+ht-degree: 78%
 
 ---
 
@@ -31,14 +31,14 @@ ht-degree: 100%
 
 Cloud Manager のプログラムは、Cloud Manager の一連の環境を表します。 これらのプログラムは、論理的な一連のビジネスイニシアチブをサポートします。通常、ライセンス済みのサービスレベル契約（SLA）に対応しています。 例えば、あるプログラムが組織のグローバルなパブリック web サイトをサポートする Adobe Experience Manager（AEM）リソースを表す一方で、別のプログラムは社内の中核的 DAM を表す場合があります。
 
-旅行関連のメディアに焦点を当てたテナントである理論上の WKND Travel and Adventure Enterprises の例を思い出すと、2 つのプログラムが含まれています。WKND マガジン部門用の 1 つの AEM Sites プログラムと、WKND メディア部門用の 1 つの Assets プログラムです。そして、チームメンバーの分業の必要性によって、異なるメンバーが異なるプログラムにアクセスできるようになります。
+旅行関連のメディアを専門とするテナントである理論的な WKND Travel and Adventure Enterprises の例を考えてみましょう。 2 つのプログラムがある場合もあります。 WKND マガジン部門用の 1 つの AEM Sites プログラムと、WKND メディア部門用の 1 つの Assets プログラムです。そして、チームメンバーの分業の必要性によって、異なるメンバーが異なるプログラムにアクセスできるようになります。
 
 2 種類のプログラムがあります。
 
-* **実稼動プログラム**&#x200B;は、サイトのライブトラフィックを有効にするために作成されます。これは、「実際の」環境です。
+* **実稼動プログラム**&#x200B;は、サイトのライブトラフィックを有効にするために作成されます。このプログラムは、「実際の」環境です。
 * **サンドボックスプログラム**&#x200B;は、通常、トレーニング、デモの実行、イネーブルメント、POC またはドキュメントの目的にかなうように作成されます。
 
-様々な目的があるので、環境の違いによってオプションが異なります。 ただし、環境を作成するプロセスは似ています。 このオンボーディングジャーニーでは、サンドボックス環境を作成します。
+様々な目的があるので、環境の違いによってオプションが異なります。 ただし、それらを作成するプロセスは似ています。 このオンボーディングジャーニーでは、サンドボックス環境を作成します。
 
 >[!TIP]
 >
@@ -52,11 +52,11 @@ Cloud Manager のプログラムは、Cloud Manager の一連の環境を表し�
 
    ![Cloud Manager ランディングページ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. プログラム作成ウィザードで、「**サンドボックスを設定**」を選択し、プログラム名を入力して、「**続行**」を選択します。
+1. プログラム作成ウィザードで、「**サンドボックスをセットアップ**」を選択し、プログラム名を入力して、「**続行**」を選択します。
 
-   ![指定タイプのプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
+   ![プログラムタイプの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 
-1. **サンドボックスの設定**&#x200B;ダイアログボックスで、サンドボックスプログラムで有効にするソリューションを選択できます。**Sites** および **Assets** ソリューションは、常にサンドボックスプログラムに含まれ、自動的に選択されます。オンボーディングの例ではこれで十分です。「**作成**」をクリックします。
+1. **サンドボックスの設定** ダイアログボックスで、サンドボックスプログラムで有効にするソリューションを選択できます。 **Sites** および **Assets** ソリューションは、常にサンドボックスプログラムに含まれ、自動的に選択されます。これらのソリューションは、オンボーディングの例には十分です。 「**作成**」をクリックします。
 
    ![ソリューションの選択](assets/set-up-sandbox-onboarding.png)
 
@@ -64,18 +64,20 @@ Cloud Manager のプログラムは、Cloud Manager の一連の環境を表し�
 
 ![概要ページからのサンドボックスの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/program-create-setupdemo2.png)
 
-プログラムが完了すると、**開発者**&#x200B;製品プロファイルに割り当てられた組織のメンバーは、 Cloud Manager にログインして Cloud Manager の Git リポジトリを管理できるようになります。
+プログラムが完了すると、**開発者** 製品プロファイルに割り当てられた組織のメンバーは、Cloud Managerにログインして、Cloud Manager Git リポジトリを管理できるようになります。
 
-## 次のステップ {#whats-next}
+## 次の手順 {#whats-next}
 
-最初のプログラムを作成したので、そのプログラムの環境を作成できるようになりました。次に、[環境の作成](create-environments.md)ドキュメントを確認し、オンボーディングジャーニーを続けてください。
+最初のプログラムを作成したので、そのプログラムの環境を作成できるようになりました。 次に、[環境の作成](create-environments.md)ドキュメントを確認し、オンボーディングジャーニーを続けてください。
+
+[Edge Delivery Services サイトのオンボーディング ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md) も参照してください。
 
 ## その他のリソース {#additional-resources}
 
-オンボーディングジャーニーのコンテンツの範囲を超えてさらに詳しく知りたい場合に役立つ、追加のオプションリソースを次に示します。
+オンボーディングジャーニーのコンテンツの範囲を超えた情報について詳しくは、次の追加のオプションリソースを参照してください。
 
 * [プログラムとプラグラムの種類](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) - Cloud Manager の階層、その構造に様々な種類のプログラムが収まる仕組み、それらのプログラムの違いなどについて説明します。
 * [サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - Cloud Manager を使用して、トレーニング、デモ、POC などの実稼動以外の用途に使用する独自のサンドボックスプログラムを作成する方法を説明します。
 * [実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) - Cloud Manager を使用して、実トラフィックを取り扱う独自の実稼動プログラムを作成する方法について説明します。
-* [Adobe Cloud Manager の使用 - プログラム](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=ja) - Cloud Manager のプログラムは、論理的な一連のビジネスイニシアチブをサポートする一連の AEM 環境を表し、通常、購入したサービス契約（SLA）に対応しています。
+* [Adobe Cloud Manager の使用 - プログラム](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/programs) - Cloud Manager のプログラムは、論理的な一連のビジネスイニシアチブをサポートする一連の AEM 環境を表し、通常、購入したサービス契約（SLA）に対応しています。
 * [AEM as a Cloud Service のチームおよび製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md) - ライセンス取得済みのアドビソリューションに対するアクセスを AEM as a Cloud Service のチームおよび製品プロファイルで許可および制限する方法について説明します。
