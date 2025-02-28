@@ -4,10 +4,10 @@ description: AEM as a Cloud Service および Edge Delivery Services の Sidekic
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
-source-wordcount: '218'
-ht-degree: 100%
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 83%
 
 ---
 
@@ -21,7 +21,19 @@ ht-degree: 100%
 
 ## リリースのハイライト {#release-highlights}
 
-現在のリリースは、バージョン 2.2.0 です。
+現在のリリースは、バージョン 3.0.0 です。
+
+### 3.0.0 {#release-notes-3-0-0}
+
+以下のエディターから [ バリエーションを生成 ](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations) アクセスできます（[ 設定されたら ](#access-generate-variations)）。
+
+* [AEM Edge Delivery ServicesのSidekick内（ドキュメントベースのオーサリング用）](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
+* [ユニバーサルエディター内](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-universal-editor)
+* [コンテンツフラグメントエディター内](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-content-fragment-editor)
+
+>[!NOTE]
+>
+>以前のバージョンの [ バリエーションを生成 ](/help/generative-ai/generate-variations.md) には、引き続き直接アクセスできます。
 
 ### 2.2.0 {#release-notes-2-2-0}
 

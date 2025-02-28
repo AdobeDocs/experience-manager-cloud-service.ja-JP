@@ -4,10 +4,10 @@ description: AEM as a Cloud Service および Edge Delivery Services の Sidekic
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
-source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
-workflow-type: ht
-source-wordcount: '3262'
-ht-degree: 100%
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+workflow-type: tm+mt
+source-wordcount: '3272'
+ht-degree: 99%
 
 ---
 
@@ -25,6 +25,10 @@ ht-degree: 100%
 >[!NOTE]
 >
 >いずれの場合も、「バリエーションを生成」を使用するには、[アクセスの前提条件](#access-prerequisites)が満たされていることを確認する必要があります。
+
+>[!NOTE]
+>
+>また、[AEM エディターに統合されたバリエーションを生成 ](/help/generative-ai/generate-variations-integrated-editor.md) にアクセスすることもできます。
 
 これにより、以下のことが可能になります。
 
@@ -177,7 +181,7 @@ Adobe 生成 AI の温度を変更するのに使用します。
 
 >[!NOTE]
 >
->[コンテンツ資格情報](https://helpx.adobe.com/jp/creative-cloud/help/content-credentials.html)は、ドキュメントベースのオーサリングで使用する際、保持されません。
+>[Content Credentials](https://helpx.adobe.com/jp/creative-cloud/help/content-credentials.html) は、ドキュメントベースのオーサリングで使用する際、保持されません。
 
 ### コンテンツの使用 {#use-content}
 
