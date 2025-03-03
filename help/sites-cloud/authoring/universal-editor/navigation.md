@@ -8,7 +8,7 @@ exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
 source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
 workflow-type: tm+mt
 source-wordcount: '1660'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -217,7 +217,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ユニバーサルエディターには、カスタマイズ可能で拡張性の高いオーサリングエクスペリエンスが用意されています。ツールバーにその他のボタンを表示する場合は、ユニバーサルエディターが拡張されています。
 
-* 拡張機能の可能性について詳しくは、[ ユニバーサルエディターの拡張 ](/help/implementing/universal-editor/extending.md) を参照してください。
+* 拡張機能について詳しくは、[ユニバーサルエディターの拡張](/help/implementing/universal-editor/extending.md)を参照してください。
 * 個別の拡張機能の動作について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)を参照してください。
 
 ### エディター {#editor}
@@ -314,7 +314,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ## その他の機能 {#additional-features}
 
-ユニバーサルエディターは、カスタマイズ可能で拡張可能なオーサリングエクスペリエンスを提供します。 プロパティパネルまたはツールバーに追加のボタンまたはオプションが表示される場合は、ユニバーサルエディターが拡張されています。
+ユニバーサルエディターには、カスタマイズ可能で拡張性の高いオーサリングエクスペリエンスが用意されています。プロパティパネルやツールバーにその他のボタンやオプションを表示する場合は、ユニバーサルエディターが拡張されています。
 
 * 拡張機能について詳しくは、[ユニバーサルエディターのカスタマイズと拡張](/help/implementing/universal-editor/customizing.md)を参照してください。
 * 個別の拡張機能の動作について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)を参照してください。

@@ -1,24 +1,24 @@
 ---
 title: ユニバーサルエディターのカスタマイズ
-description: コンテンツ作成者のニーズをサポートするために、ユニバーサルエディターをカスタマイズする様々なオプションについて説明します。
+description: コンテンツ作成者のニーズに合わせてユニバーサルエディターをカスタマイズする様々なオプションについて説明します。
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 72%
+ht-degree: 88%
 
 ---
 
 
 # ユニバーサルエディターのカスタマイズ {#customizing}
 
-コンテンツ作成者のニーズをサポートするために、ユニバーサルエディターをカスタマイズする様々なオプションについて説明します。
+コンテンツ作成者のニーズに合わせてユニバーサルエディターをカスタマイズする様々なオプションについて説明します。
 
 >[!TIP]
 >
->また、ユニバーサルエディターには多くの [ 拡張ポイント ](/help/implementing/universal-editor/extending.md) も用意されているので、プロジェクトのニーズに合わせて機能を拡張できます。
+>ユニバーサルエディターには多くの[拡張ポイント](/help/implementing/universal-editor/extending.md)も用意されており、プロジェクトのニーズに合わせて機能を拡張できます。
 
 ## 公開の無効化 {#disable-publish}
 

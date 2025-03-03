@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: f37795b99f7c79aa73615748a0a7df61f9afbdb7
 workflow-type: tm+mt
 source-wordcount: '1551'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager のビルド環境と、コードを作成およびテストする
 
 >[!TIP]
 >
->このドキュメントでは、Cloud Manager プロジェクトを開発するためのAEM as a Cloud Service ビルド環境について説明します。 コンテンツオーサリングのためにAEM as a Cloud Serviceでサポートされているクライアントプラットフォームについて詳しくは、[ サポートされているクライアントプラットフォーム ](/help/overview/supported-platforms.md) を参照してください。
+>このドキュメントでは、AEM as a Cloud Service プロジェクトを開発する Cloud Manager のビルド環境について説明します。コンテンツオーサリング用の AEM as a Cloud Service でサポートされているクライアントプラットフォームについて詳しくは、[サポートされているクライアントプラットフォーム](/help/overview/supported-platforms.md)ドキュメントを参照してください。
 
 ## ビルド環境の詳細 {#build-environment-details}
 

@@ -741,7 +741,7 @@ ht-degree: 95%
          + [OAuth 2.0 クライアント資格情報フローを使用して、アダプティブフォームを Salesforce アプリケーションに接続](/help/forms/aem-forms-salesforce-integration.md)
          + [ [!DNL Azure]  ストレージの設定](/help/forms/configure-azure-storage.md)
          + [ [!DNL Microsoft Dynamics 365]  クラウドサービスの設定](/help/forms/configure-msdynamics.md)
-         + [Salesforce Cloud Services の設定](/help/forms/configure-salesforce.md)
+         + [Salesforce クラウドサービスの設定](/help/forms/configure-salesforce.md)
          + [フォームデータモデルの作成](/help/forms/create-form-data-models.md)
          + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
          + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
@@ -765,10 +765,10 @@ ht-degree: 95%
             + [アダプティブフォームの送信アクションの設定](/help/forms/configure-submit-actions-core-components.md)
             + [Azure Blob Storage にアダプティブフォームを送信する](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Microsoft へのアダプティブフォームの送信](/help/forms/configure-submit-action-onedrive.md)
-            + Microsoft® SharePointへのアダプティブフォームの接続 {#connect-to-sharepoint}
+            + Microsoft® SharePoint へのアダプティブフォームの接続{#connect-to-sharepoint}
                + [Microsoft へのアダプティブフォームの接続](/help/forms/configure-submit-action-sharepoint.md)
-               + [SharePoint Document Library への送信](/help/forms/connect-forms-to-sharepoint-document-library.md)
-               + [SharePoint リストに送信](/help/forms/connect-forms-to-sharepoint-list.md)
+               + [SharePoint ドキュメントライブラリへの送信](/help/forms/connect-forms-to-sharepoint-document-library.md)
+               + [SharePoint リストへの送信](/help/forms/connect-forms-to-sharepoint-list.md)
                + [認証範囲を使用した制限付きアクセスでの SharePoint サイトの設定](/help/forms/configure-sharepoint-site-limited-access.md)
             + [AEM アダプティブフォームと AEM ワークフローを統合する](/help/forms/configure-submit-action-workflow.md)
             + [アダプティブフォームの REST エンドポイント送信アクションへの送信を設定する](/help/forms/configure-submit-action-restpoint.md)
@@ -784,7 +784,7 @@ ht-degree: 95%
             + [カスタム送信アクションの作成](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [移行ユーティリティツールを使用した基盤コンポーネントベースのアダプティブフォームからコアコンポーネントベースのフォームへの変換](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [アダプティブフォームのメールテンプレート](/help/forms/html-email-templates-in-adaptive-forms.md)
-            + [&#x200B;Experience Manager Formsでの公開の管理](/help/forms/manage-publication.md)
+            + [Experience Manager Forms での公開の管理](/help/forms/manage-publication.md)
             + コアコンポーネントに基づくアダプティブフォームのルールエディターの概要{#rule-editor-core-components}
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターの概要](/help/forms/rule-editor-core-components.md)
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターのユーザーインターフェイス](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1024,7 +1024,7 @@ ht-degree: 95%
       + [リダイレクト](/help/edge/docs/redirects.md)
    + フォームの作成 {#build-forms}
       + [概要](/help/edge/docs/forms/overview.md)
-      + [Edge Delivery Services Formsの仕組み](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
+      + [Edge Delivery Services Forms の仕組み](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [よくある質問](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + ドキュメントベースのオーサリング {#getting-started-edge-delivery-services-forms}
          + [最初のフォームを作成：Google シートと Excel を使用したクイックスタートガイド](/help/edge/docs/forms/tutorial.md)
@@ -1297,7 +1297,7 @@ ht-degree: 95%
          + [イベント](/help/implementing/universal-editor/events.md)
          + [コンポーネントのフィルタリング](/help/implementing/universal-editor/filtering.md)
          + [カスタマイズ](/help/implementing/universal-editor/customizing.md)
-         + [ 拡張 ](/help/implementing/universal-editor/extending.md)
+         + [拡張](/help/implementing/universal-editor/extending.md)
          + [アーキテクチャ](/help/implementing/universal-editor/architecture.md)
          + [認証](/help/implementing/universal-editor/authentication.md)
          + [はじめに](/help/implementing/universal-editor/getting-started.md)

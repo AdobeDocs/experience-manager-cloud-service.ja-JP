@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: c88aa13c6bc75c8f9cd624d00ef768290981c840
 workflow-type: tm+mt
 source-wordcount: '949'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
@@ -18,67 +18,67 @@ ht-degree: 27%
 
 ## 概要 {#overview}
 
-ユニバーサルエディターは、Adobe Experience Manager Sites の一部である多用途のビジュアルエディターです。これにより、作成者は、ヘッドレスまたはヘッドフルエクスペリエンスに対して見たままが得られる（WYSIWYG）編集を実行できます。 次の機能があります。
+ユニバーサルエディターは、Adobe Experience Manager Sites の一部である多用途のビジュアルエディターです。作成者が、任意のヘッドレスエクスペリエンスまたはヘッドフルエクスペリエンスを見たとおりに編集できる（WYSIWYG）機能です。次の機能があります。
 
-* **インスタント編集**：作成者は、プレビューエクスペリエンス内で直接コンテンツを編集できるので、個々のコンテンツソースを見つけて移動する必要はありません。
-* **ビジュアル編集**：変更を加えると、作成者は実際の訪問者エクスペリエンスにどのような影響を与えるかを即座に確認でき、摩擦を最小限に抑えることができます。
-* **検出可能なオプション**：明確にラベル付けされたオプションと直感的な UI により、作成者はメタデータを設定して簡単にレイアウトを作成できます。
-* **技術者以外**：編集を行うのに特別な専門知識は必要なく、企業のブランドガイドラインが自動的に適用されるので、組織全体でのコンテンツタスクの拡大が容易になります。
-* **統合と拡張**: ユニバーサルエディターの柔軟な [ 拡張ポイント ](#extensibility) であるAEMと完全に統合されているので、基本的なすべてのツールを 1 つの包括的なインターフェイス内で統合できます。 AI を活用した機能から、独自のビジネスニーズに合わせたカスタム拡張機能まで、チームがワークフローを合理化し、生産性を簡単に向上できるようにします。
+* **即時編集**：作成者はプレビューエクスペリエンス内でコンテンツを直接編集できるので、個々のコンテンツソースを見つけて移動する必要がなくなります。
+* **ビジュアル編集**：変更を行っている間、作成者は実際の訪問者エクスペリエンスに影響を与える変更を即座に確認できるので、摩擦が最小限に抑えられます。
+* **検出可能なオプション**：明確にラベル付けされたオプションと直感的な UI により、作成者はメタデータを設定し、レイアウトを簡単に作成できます。
+* **技術者以外**：編集には専門知識は必要ありませんが、企業のブランドガイドラインが自動的に適用されるので、組織全体でのコンテンツタスクの拡張が容易になります。
+* **統合と拡張**：AEM と完全に統合されたユニバーサルエディターの柔軟な[拡張ポイント](#extensibility)により、すべての重要なツールを 1 つの包括的なインターフェイス内に統合できます。AI を活用した機能から、独自のビジネスニーズに合わせたカスタム拡張機能まで、チームがワークフローを効率化し、生産性を簡単に向上できるようにします。
 
-まとめ：
+概要：
 
-* **作成者** は、ユニバーサルエディターの柔軟性のメリットを享受できます。ユニバーサルエディターは、すべての形式のAEM コンテンツに対して同じ一貫性のあるビジュアル編集をサポートするからです。
-* 実装の真の分離をサポートするので、開発者はユニバーサルエディターの汎用性から **利益を得ます**。
+* ユニバーサルエディターはあらゆる形式の AEM コンテンツに対して同じ一貫したビジュアル編集をサポートしているので、**作成者はその柔軟性の恩恵を受けることができます**。
+* ユニバーサルエディターは実装の真の分離をサポートしているので、**開発者はユニバーサルエディターの汎用性の恩恵を受けることができます**。
 
-真のサービスとしてのエディターであり、全体的な柔軟性も高いことから、ユニバーサルエディターは最終的に [ ページエディター ](/help/sites-cloud/authoring/page-editor/introduction.md) に取って代わる予定です。
+ユニバーサルエディターは、サービスとしてのエディターの役割を真の意味で果たしており、全体的に柔軟性が向上しているので、最終的には[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)に取って代わる予定です。
 
-## サポートされるアーキテクチャ {#supported-architectures}
+## サポートされているアーキテクチャ {#supported-architectures}
 
-ユニバーサルエディターは、次の 2 つの主なAEM設定をサポートしています。
+ユニバーサルエディターは、次の 2 つのプライマリ AEM 設定をサポートしています。
 
-1. **[Edge Delivery Services](/help/edge/overview.md)**：これは、そのシンプルさ、価値実現までの時間の短縮、パフォーマンスの向上を実現するために推奨されるアプローチです。
-1. **[ヘッドレス実装](/help/headless/introduction.md)**：既存のヘッドレスプロジェクトがある場合や、分離されたレンダリングに特定の要件がある場合、ユニバーサルエディターを使用すると、プロジェクト全体をリファクタリングする必要なく、エンタープライズクラスのビジュアル編集が可能になります。 事実上あらゆるアーキテクチャ（SSR、CSR）、web フレームワーク（Next.js、React、Astro など）、ホスティングモデル（「独自のアプリを用意」など）と互換性があります。
+1. **[Edge Delivery Services](/help/edge/overview.md)**：これは、シンプルさ、価値実現までの時間の短縮、およびパフォーマンスの向上という点で推奨されるアプローチです。
+1. **[ヘッドレス実装](/help/headless/introduction.md)**：既存のヘッドレスプロジェクトがある場合や、分離されたレンダリングの特定の要件がある場合、ユニバーサルエディターを使用すると、プロジェクト全体をリファクタリングすることなく、エンタープライズグレードのビジュアル編集が可能になります。ほとんどすべてのアーキテクチャ（SSR、CSR）、web フレームワーク（Next.js、React、Astro など）、ホスティングモデル（「独自導入のアプリ」）と互換性があります。
 
 >[!TIP]
 >
->サポートされるアーキテクチャについて詳しくは、ドキュメント [ ユニバーサルエディターのユースケースと学習パス ](/help/implementing/universal-editor/use-cases.md) を参照してください。
+>サポートされているアーキテクチャについて詳しくは、[ユニバーサルエディターのユースケースと学習パス](/help/implementing/universal-editor/use-cases.md)ドキュメントを参照してください。
 
-## サポートされているAEMのバージョン {#aem-versions}
+## サポートされている AEM バージョン {#aem-versions}
 
-ユニバーサルエディターは次の方法でサポートされています。
+ユニバーサルエディターは、以下でサポートされています。
 
 * AEM as a Cloud Service（リリース `2023.8.13099` 以降）
-* AEM 6.5 （サービスパック 21 または 22 と機能パック）
+* AEM 6.5（サービスパック 21 または 22 と機能パック）
 
-このドキュメントは、AEM as a Cloud Serviceでユニバーサルエディターを使用する場合に使用します。 AEM 6.5 でユニバーサルエディターを使用するには、[AEM 6.5 のドキュメントを参照してください ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)。
+このドキュメントは、AEM as a Cloud Service でユニバーサルエディターを使用するためのものです。AEM 6.5 でのユニバーサルエディターの使用について詳しくは、[AEM 6.5 ドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)を参照してください。
 
 ## 機能 {#features}
 
-ユニバーサルエディターには、効率的なコンテンツ管理を行うための様々なユースケースをサポートする様々な機能が用意されています。
+ユニバーサルエディターには、効率的なコンテンツ管理を行う様々なユースケースをサポートする多くの機能が用意されています。
 
-* **[WYSIWYG](/help/sites-cloud/authoring/universal-editor/authoring.md)**: プレーンテキスト、リッチテキスト、メディア、メタデータなど、あらゆる形式の web コンテンツに対して見たままの編集を実行します。
-* **[コンポジション](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content)**：様々なタイプ（タイトル、ボタン、ティーザー、セクション、埋め込みなど）のコンテンツブロックを作成、編集、並べ替え、ネストまたは削除します。
-* **[レイアウト](/help/sites-cloud/authoring/universal-editor/templates.md)**：ページテンプレートの利用、表示スタイルの適用、列、カルーセル、アコーディオンなどのブロックを使用したレイアウトの作成をおこないます。
-* **[デバイスシミュレーション](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator)**：編集中に様々な訪問者デバイス用のコンテンツをプレビューして最適化します。
-* **オムニチャネル**：複数のチャネルにわたって、構造化コンテンツと非構造化コンテンツの両方を再利用します。
-* **[ローカライゼーション](/help/sites-cloud/authoring/universal-editor/inheritance.md)**：マルチサイトマネージャーにより、コンテンツ翻訳ワークフローが効率化され、ローカライズされたコンテンツの継承が効率的に処理されます。
-* **一貫性**：ブランドガイドラインへのコンプライアンスを確保し、すべてのコンテンツで均一性を維持します。
-* **セキュリティ**:[ アクセス制御の適用 ](/help/implementing/universal-editor/authentication.md)、コンテンツの整合性の保護、[ 堅牢なバージョン管理 ](/help/sites-cloud/authoring/sites-console/page-versions.md) による変更の追跡が可能です。
-* **[公開](/help/sites-cloud/authoring/universal-editor/publishing.md)**：レビュー、承認および公開のワークフローをエディター内に直接統合します。
-* **統合**:[Sites コンソール、](/help/sites-cloud/authoring/sites-console/introduction.md)[ コンテンツフラグメントエディター ](/help/sites-cloud/administering/content-fragments/overview.md) などのAEM ツールと完全に統合され、包括的なオーサリングエクスペリエンスを提供します。
+* **[WYSIWYG](/help/sites-cloud/authoring/universal-editor/authoring.md)**：プレーンテキスト、リッチテキスト、メディア、メタデータなど、あらゆる形式の web コンテンツに対して、見たとおりの編集を実行します。
+* **[構成](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content)**：様々なタイプのコンテンツブロック（タイトル、ボタン、ティーザー、セクション、埋め込みなど）を作成、編集、並べ替え、ネストまたは削除します。
+* **[レイアウト](/help/sites-cloud/authoring/universal-editor/templates.md)**：ページテンプレートを利用し、ビジュアルスタイルを適用し、列、カルーセル、アコーディオンなどのブロックを使用してレイアウトを作成します。
+* **[デバイスシミュレーション](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator)**：編集中に、様々な訪問者のデバイスに合わせてコンテンツをプレビューおよび最適化します。
+* **オムニチャネル**：構造化コンテンツと非構造化コンテンツの両方を複数のチャネルで再利用します。
+* **[ローカライゼーション](/help/sites-cloud/authoring/universal-editor/inheritance.md)**：Multi-Site Manager を使用して、コンテンツ翻訳ワークフローを効率化し、ローカライズされたコンテンツの継承を効率的に処理します。
+* **一貫性**：ブランドガイドラインに準拠し、すべてのコンテンツにわたって一貫性を維持します。
+* **セキュリティ**：[堅牢なバージョン管理](/help/sites-cloud/authoring/sites-console/page-versions.md)により、[アクセス制御を適用](/help/implementing/universal-editor/authentication.md)し、コンテンツの整合性を保護し、変更を追跡します。
+* **[公開](/help/sites-cloud/authoring/universal-editor/publishing.md)**：レビュー、承認および公開ワークフローをエディター内に直接統合します。
+* **統合**：[Sites コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)、[コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/overview.md)などの AEM ツールと完全に統合され、統一されたオーサリングエクスペリエンスを提供します。
 
 ## 拡張機能 {#extensibility}
 
-ユニバーサルエディターは非常に優れた機能を標準搭載しているだけでなく、様々な拡張機能を提供します。
+ユニバーサルエディターは、標準の優れた機能を備えているだけでなく、様々な拡張機能も提供します。
 
-* **拡張機能** は、ワークフローのサポート、バリエーションの生成、実験の有効化など、要件をサポートするための多数のすぐに使用できる機能です。
-* **拡張可能な UI** を使用すると、既製の拡張機能が活用するのと同じ基盤フレームワークを使用して、独自の拡張機能を作成でき、プロジェクトのニーズに合わせた究極の柔軟性が得られます。
-* **ブロック、カスタムデータタイプ、イベントなどの拡張ポイント** を使用すると、UI の他に、カスタムビジネス要件をシームレスに統合できます。
+* **拡張機能**&#x200B;は数多くあり、ワークフローのサポート、バリエーションの生成、実験の有効化などの要件をサポートするのにすぐに使用できます。
+* **拡張可能な UI** を使用すると、既製の拡張機能が活用する同じ基盤フレームワークを使用して独自の拡張機能を作成できるので、プロジェクトのニーズに適応する究極の柔軟性が得られます。
+* ブロック、カスタムデータタイプ、イベントなどの&#x200B;**拡張ポイント**&#x200B;により、UI を超えたカスタムビジネス要件のシームレスな統合が可能になります。
 
 >[!TIP]
 >
->ユニバーサルエディターの拡張機能について詳しくは、ドキュメント [ ユニバーサルエディターの拡張 ](/help/implementing/universal-editor/extending.md) を参照してください。
+>ユニバーサルエディターの拡張機能について詳しくは、[ユニバーサルエディターの拡張](/help/implementing/universal-editor/extending.md)ドキュメントを参照してください。
 
 ## ユニバーサルエディターとコンテンツフラグメントエディター {#universal-editor-content-fragment-editor}
 
@@ -102,9 +102,9 @@ ht-degree: 27%
 
 * 単一ページの実装として参照できる AEM リソース（コンテンツフラグメント、ページ、エクスペリエンスフラグメント、アセットなど）は 25 個以下にする必要があります。
 * サポートされている AEM バックエンドは、AEM as a Cloud Service と ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)AEM 6.5[ のみです。
-* AEM as a Cloud Serviceにはリリース `2023.8.13099` 以降が必要です。
+* AEM as a Cloud Service にはリリース `2023.8.13099` 以降が必要です。
 * コンテンツ作成者は、独自の Experience Cloud アカウントを持つ必要があります。
-* AEMの一部として、ユニバーサルエディター [AEMと同じデスクトップブラウザーをサポート ](/help/overview/supported-platforms.md) します。
+* AEM の一部として、ユニバーサルエディターは [AEM と同じデスクトップブラウザーをサポート](/help/overview/supported-platforms.md)します。
    * これらのブラウザーのモバイルバージョンはサポートされていません。
 
 {{ue-ip-allow-lists}}

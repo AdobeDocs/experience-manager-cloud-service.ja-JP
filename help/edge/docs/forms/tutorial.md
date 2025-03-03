@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
 source-wordcount: '1656'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 これらのフォームは、Microsoft Excel または Google Sheets ファイルに直接データを送信します。これにより、Google Sheets、Microsoft Excel、Microsoft SharePoint の活発なエコシステムと堅牢な API を使用して、送信されたデータを簡単に処理したり、既存のビジネスワークフローを開始したりできます。
 
-AEM Forms には、アダプティブフォームブロックと呼ばれるブロックが用意されており、データを取得して保存するフォームを簡単に作成できます。 [ アダプティブ AEM ブロックで事前設定された新しいForms プロジェクトを作成 ](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) できます <!--or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project)-->。
+AEM Forms には、アダプティブフォームブロックと呼ばれるブロックが用意されており、データを取得して保存するフォームを簡単に作成できます。 [アダプティブフォームブロックを使用して設定済みの新しい AEM プロジェクトを作成](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)<!--or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project)-->できます。
 
 この AEM Forms チュートリアルでは、新しい Adobe Experience Manager（AEM）Forms プロジェクトを使用して独自のカスタムフォームを作成、プレビュー、公開する方法について説明します。
 
@@ -59,7 +59,7 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
    >[!NOTE]
    >
    >
-   > IP フィルタリングで GitHub Enterprise を使用している場合は、次の IP を許可リストに追加できます。3.227.118.73
+   > GitHub Enterprise で IP フィルタリングを使用している場合は、IP（3.227.118.73）を許可リストに追加できます。
 
    これで完了です。 `https://<branch>--<repo>--<owner>.aem.page/` で新しい web サイトを実行しています。
 
