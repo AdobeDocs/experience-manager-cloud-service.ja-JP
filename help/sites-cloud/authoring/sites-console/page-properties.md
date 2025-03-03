@@ -5,10 +5,10 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2268'
-ht-degree: 100%
+source-git-commit: 8d4d60a2105915108393cc295949491e59e5fc2b
+workflow-type: tm+mt
+source-wordcount: '2296'
+ht-degree: 98%
 
 ---
 
@@ -119,6 +119,8 @@ ht-degree: 100%
 * **テンプレート設定**
 
    * **許可されたテンプレート** - このサブ分岐内で[使用できるテンプレートのリストを定義](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author)します。
+   * **ページをテンプレートとして使用** - [ 現在のページに基づいて新しいテンプレートを作成します。](/help/sites-cloud/authoring/universal-editor/templates.md)
+      * Edge Delivery Servicesを活用するユニバーサルエディターで使用するために作成されたページにのみ適用されます。
 
 * **認証要件**
 
