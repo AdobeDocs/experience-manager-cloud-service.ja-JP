@@ -5,9 +5,9 @@ exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '878'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -81,5 +81,5 @@ AEM に既に精通している場合は、Sites コンソールを使用して�
 
 また、ユニバーサルエディターは、プロジェクトのニーズに適応させることもできます。
 
-* [ ユニバーサルエディターのカスタマイズ ](/help/implementing/universal-editor/customizing.md) - ユニバーサルエディターのエクスペリエンスは、エディターの様々な側面をフィルタリングするか、エディターの機能を拡張することで適応させることができます。
-* [ ユニバーサルエディターの拡張 ](/help/implementing/universal-editor/extending.md) - ユニバーサルエディターの UI は、プロジェクトのニーズに合わせて機能を拡張するために拡張できます。
+* [ユニバーサルエディターのカスタマイズ](/help/implementing/universal-editor/customizing.md) - エディターの様々な側面をフィルタリングしたり、エディターの機能を拡張したりして、ユニバーサルエディターのエクスペリエンスを適応させることができます。
+* [ユニバーサルエディターの拡張](/help/implementing/universal-editor/extending.md) - ユニバーサルエディターの UI は、プロジェクトのニーズに合わせて機能を展開することを目的に拡張できます。

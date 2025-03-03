@@ -6,9 +6,9 @@ feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 source-git-commit: 3143ca304ec7ff56d45502a3fd5e49b3b9ed6ce4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1709'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 97%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
-## AEM [!DNL Assets] HTTP API の概要 {#overview}
+## AEM [!DNL Assets] HTTP API の基本を学ぶ {#overview}
 
-AEM [!DNL Assets] HTTP API を使用すると、/`api/assets` で使用可能な REST インターフェイスを介して、デジタルアセットに対する CRUD （作成、読み取り、更新、削除）操作を有効にできます。 これらの操作は、アセットのメタデータ、レンディションおよびコメントに適用されます。これには、[コンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)が含まれます。
+AEM [!DNL Assets] HTTP API を使用すると、/`api/assets` で使用可能な REST インターフェイスを通じて、デジタルアセットに対する CRUD（作成、読み取り、更新、削除）操作が可能になります。これらの操作は、アセットのメタデータ、レンディションおよびコメントに適用されます。これには、[コンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)が含まれます。
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 >
 >[コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
-## データモデルを調べる {#data-model}
+## データモデルについて {#data-model}
 
 [!DNL Assets] HTTP API は 、主にフォルダーと標準アセットの 2つの要素を公開します。また、コンテンツフラグメントで使用するカスタムデータモデルの詳細な要素も提供します。詳しくは、コンテンツフラグメントのデータモデルを参照してください。詳しくは、[コンテンツフラグメントのデータモデル](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)を参照してください。
 
@@ -301,7 +301,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 * API を使用して更新された場合、フォルダーまたはアセットの一部のプロパティは、異なるプレフィックスにマップされます。`jcr:title`、`jcr:description`、`jcr:language` の `jcr` プレフィックスは `dc` プレフィックスに置き換えられます。したがって、返された JSON コードで、`dc:title`、`dc:description` にはそれぞれ `jcr:title`、`jcr:description` の値が含まれています。
 
-**関連リソースの参照**
+**関連リソースの探索**
 
 * [アセットを翻訳](translate-assets.md)
 * [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)

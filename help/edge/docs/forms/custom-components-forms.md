@@ -5,10 +5,11 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d71c5d6488935de4a02c8d3828f287542b979d0f
-workflow-type: tm+mt
+exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
+source-git-commit: 62dfa8ad73bf6684bd93f6a26b98b1c193770214
+workflow-type: ht
 source-wordcount: '625'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +59,7 @@ CSS を使用してスタイルを追加したり、コンポーネントを装�
 カスタム関数を追加するには：
 
 1. `[../Form Block/components]` に移動します。
-1. `range.js` という名前のファイルを見つけます。 存在しない場合は作成します。
+1. `range.js` という名前のファイルを作成します。存在しない場合は作成します。
 1. 次のコード行を追加します。
 
    ```javascript
@@ -214,7 +215,7 @@ CSS ファイルでコンポーネントのスタイルを追加するには：
 
 ### AEM Sidekick を使用してフォームをプレビュー
 
-`range` コンポーネントをスタイル設定する新しく実装された関数を使用して、フォームをプレビューします。
+`range` コンポーネントをスタイル設定する、新しく実装された関数でフォームをプレビューします。
 
 ![カスタムコンポーネントフォーム](/help/edge/assets/custom-componet-form.png)
 
@@ -361,7 +362,3 @@ Now, you can see your custom component in the WYSIWYG based authoring:
 ## 関連トピック
 
 {{see-more-forms-eds}}
-
-
-
-

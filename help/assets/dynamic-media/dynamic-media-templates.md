@@ -5,9 +5,9 @@ hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
 source-git-commit: 2fcbcaf5fe4794d8ea52386583dc592c0c1983d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2801'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Dynamic Media テンプレートの主なメリットには、次のようなも
 * **一貫したオムニチャネルエクスペリエンスを確保：**&#x200B;チャネル全体でブランドの一貫性を維持します。
 * **コンテンツを効果的に再利用：** 1 回使用のコンテンツを避け、動的なパラメーター化されたテンプレートを使用して拡大します。
 * **リスクを軽減：**&#x200B;価格、割引、リンクをリアルタイムで更新します。
-* **顧客エンゲージメントの強化：** インタラクティブで文脈的に関連性の高いエクスペリエンスを促進します。
+* **顧客エンゲージメントを強化：**&#x200B;インタラクティブでコンテキストに関連のあるエクスペリエンスを推進します。
 
 >[!NOTE]
 >
@@ -46,8 +46,8 @@ Dynamic Media テンプレートを作成するには、次の操作が必要で
 1. Dynamic Media にアクセスします。
 1. [AEM Assets インスタンスで使用可能な画像を Dynamic Media と同期して、テンプレートの作成に使用します](/help/assets/dynamic-media/config-dm.md)。
 1. タッチ UI で次の内容を確認しました。
-   * **[!UICONTROL Dynamic Media 設定を編集ページ]** で、**[!UICONTROL Dynamic Media 同期モード]** が **[!UICONTROL デフォルトで無効]** に設定されている場合、一部のAEM フォルダーに適用されません（**[!UICONTROL すべてのコンテンツを同期]** がオフになります）。 詳しくは、[Dynamic Media Cloud Serviceの設定 ](/help/assets/dynamic-media/config-dm.md) を参照してください。
-   * **[!UICONTROL Dynamic Media 同期モード]** は、作成後にテンプレートを保存する宛先フォルダーまたはサブフォルダーに対して **[!UICONTROL サブフォルダーで有効]** に設定されます。 詳しくは、[Dynamic Media Cloud Serviceの設定 ](/help/assets/dynamic-media/config-dm.md) を参照してください。
+   * **[!UICONTROL Dynamic Media 設定を編集ページ]**&#x200B;で、**[!UICONTROL デフォルトで無効]**&#x200B;に設定されている **[!UICONTROL Dynamic Media 同期モード]**&#x200B;は、すべての AEM フォルダーに適用されません（「**[!UICONTROL すべてのコンテンツを同期]**」がオフになっています）。詳しくは、[Dynamic Media Cloud Service の設定](/help/assets/dynamic-media/config-dm.md)を参照してください。
+   * 作成後にテンプレートを保存する宛先フォルダーまたはサブフォルダーの **[!UICONTROL Dynamic Media 同期モード]**&#x200B;が&#x200B;**[!UICONTROL サブフォルダーに対して有効にする]**&#x200B;に設定されています。詳しくは、[Dynamic Media Cloud Service の設定](/help/assets/dynamic-media/config-dm.md)を参照してください。
 
 ## Dynamic Media WYSIWYG テンプレートの作成{#how-to-create-dynamic-media-wysiwyg-template}
 
