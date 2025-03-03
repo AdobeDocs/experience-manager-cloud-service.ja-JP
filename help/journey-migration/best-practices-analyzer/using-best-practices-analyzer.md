@@ -4,7 +4,7 @@ description: ベストプラクティスアナライザーを使用してアッ�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 951f7fb56d1d8a3285973fda945cbc21f310925f
 workflow-type: tm+mt
 source-wordcount: '2796'
 ht-degree: 97%
@@ -81,6 +81,8 @@ ht-degree: 97%
 
 >[!NOTE]
 > BPA バージョン 2.1.54 以降、Lighthouse スコアを取得するための新機能が導入されました。
+
+
 1. **レポートを生成** をクリックすると、ポップアップが表示され、Lighthouse スコアのAEM公開サイト URL を要求します。 ユーザーは、指定されたフィールドに有効な URL を入力する必要があります。
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
