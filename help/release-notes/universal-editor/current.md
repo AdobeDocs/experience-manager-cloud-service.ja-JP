@@ -5,16 +5,16 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: ad72a4a724cd69376a936a2beb4fc8fd9d7a730e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '101'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
 
 # ユニバーサルエディター 2025.02.25 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2025 年 2 月 25 日リリースのリリースノートです。
+ユニバーサルエディターの 2025年2月25日（PT）リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -22,5 +22,5 @@ ht-degree: 46%
 
 ## その他の改善点 {#other-improvements}
 
-* **AEM 6.5 のタグピッカー** - [AEM 6.5 でユニバーサルエディターを実行 ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) すると、タグピッカーが正しく開くようになりました
-* **AEM 6.5 のアセットセレクター** - [AEM 6.5 でユニバーサルエディターを実行 ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) すると、6.5 アセットセレクターが正しく開くようになりました
+* **AEM 6.5 のタグピッカー** - [AEM 6.5 でユニバーサルエディターを実行](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)すると、タグピッカーが適切に開くようになりました。
+* **AEM 6.5 のアセットセレクター** - [AEM 6.5 でユニバーサルエディターを実行](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)すると、6.5 アセットセレクターが適切に開くようになりました。

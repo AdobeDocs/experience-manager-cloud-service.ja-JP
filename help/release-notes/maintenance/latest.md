@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 6de7743992e65225d557775cbedde0ae3889b2c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '189'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 84%
 
 ## リリース 19687 {#19687}
 
-2025 年 2 月 26 日（PT）に公開された、メンテナンスリリース 19687 の継続的な改善点を以下にまとめます。 前回のメンテナンスリリースは、リリース 19586 でした。
+2025年2月26日（PT）に公開された、メンテナンスリリース 19687 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 19586 でした。
 
 2025.2.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
 
@@ -28,7 +28,7 @@ ht-degree: 84%
 
 ### 修正された問題 {#fixed-issues-19687}
 
-* SKYOPS-97524：機能の切り替え状態が間違っていて、様々なAEM機能に断続的に影響を与えている可能性があります。
+* SKYOPS-97524：機能の切替スイッチの状態が断続的に正しくなくなる可能性があり、様々な AEM 機能に与える影響。
 
 ### 既知の問題 {#known-issues-19687}
 
