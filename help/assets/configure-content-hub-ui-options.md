@@ -2,10 +2,10 @@
 title: コンテンツハブユーザーインターフェイスの設定
 description: コンテンツハブユーザーインターフェイスの設定
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 323fe1ba95b027f3c0d625e122b1885723e94b0f
-workflow-type: ht
-source-wordcount: '1718'
-ht-degree: 100%
+source-git-commit: e0c459ce360837fa0031278804d8e7b46b15d0e5
+workflow-type: tm+mt
+source-wordcount: '1668'
+ht-degree: 98%
 
 ---
 
@@ -122,7 +122,7 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
    >[!NOTE]
    >
-   >新しいフィルターは、リポジトリ内にフィルター条件に一致するアセットが 1 つ以上ある場合にのみ、検索ページに表示されます。
+   新しいフィルターは、リポジトリ内にフィルター条件に一致するアセットが 1 つ以上ある場合にのみ、検索ページに表示されます。
 
 同様に、使用可能な各フィルターの横にある ![編集アイコン](assets/do-not-localize/edit_icon.svg) をクリックしてラベルを編集したり、削除アイコンをクリックして既存のフィルターを削除したりできます。すべての変更を行ったら、「**[!UICONTROL 保存]**」をクリックして、変更を適用します。
 
@@ -229,19 +229,17 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 レンディションは、画像やドキュメントなどのデジタルアセットのカスタマイズバージョンで、最適なパフォーマンスを確保するために、様々なデバイスやプラットフォーム向けに設計されています。詳しくは、[Adobe Experience Manager Assets のレンディション](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)を参照してください。
 
-コンテンツハブでは、静的レンディションをダウンロードできます。静的レンディションは、ネイティブに生成されるアセットの元のファイルを様々に表現したものです。例には、サムネールやモバイルに最適化されたレンディションなどがあります。管理者は、アセットレンディションの可用性を管理および制御し、元のアセットをダウンロードできるかどうかを管理できます。
-
 これを行うには、次の手順を実行します。
 
 [設定](#access-configuration-options-content-hub)ユーザーインターフェイスで、「**[!UICONTROL レンディション]**」をクリックします。以下のオプションが利用できます。
 
-* 「[!UICONTROL 静的レンディションの可用性を有効にする]」切替スイッチを有効にして、すべての静的レンディションをコンテンツハブで表示します。
+* [!UICONTROL  レンディションの可用性を有効にする ] 切替スイッチを有効にして、Content Hubですべてのレンディションを表示します。
 
 * 「**[!UICONTROL ユーザーに元のアセットのダウンロードを許可]**」切替スイッチを有効または無効にして、元のアセットをダウンロードできるかどうかを制御します。
 
   ![コンテンツハブのレンディション設定](assets/config-renditions.png)
 
-コンテンツハブで静的レンディションを表示およびダウンロードする方法について詳しくは、[コンテンツハブでのアセットのダウンロード](/help/assets/download-assets-content-hub.md)を参照してください。
+Content Hubでレンディションを表示およびダウンロードする方法について詳しくは、[Content Hubでのアセットのダウンロード ](/help/assets/download-assets-content-hub.md) を参照してください。
 
 ### カスタムリンク {#configure-custom-links-content-hub}
 
