@@ -2,7 +2,8 @@
 title: カスタム検索フィルター
 description: 検索フィルターフォームのカスタマイズについて説明します
 role: User, Leader, Developer
-source-git-commit: 0f97264a3daf7a40ecbb619b5c686ffc279800fb
+exl-id: 383e8165-439e-447b-a19d-d5446238a13f
+source-git-commit: 8d3059f9cb92dc6c65eec33dcc69eed76b61546c
 workflow-type: tm+mt
 source-wordcount: '1279'
 ht-degree: 13%
@@ -375,7 +376,7 @@ Assets ビューには、要件に応じて再設定可能な次のカスタム�
         <ul>
         <li>「<b> 追加 </b>」をクリックして、新しい値を追加します。 
         <li><span>✎</span> をクリックしてラベルを編集します。 
-        <li>「<img src="assets/do-not-localize/delete.svg">」をクリックすると、オプション値が削除されます。 
+        <li>「<img src="assets/do-not-localize/delete-icon.png">」をクリックすると、オプション値が削除されます。 
         <li><b> 編集 </b> をクリックして、編集オプションを変更します。 
         <li>また、オプションのシーケンスを保持して変更することもできます。
         </td>
