@@ -3,10 +3,10 @@ title: コンテンツハブからのアセットのダウンロード
 description: コンテンツハブポータルからアセットをダウンロードする方法について説明します。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 07d533962ae2922c8a467924361fdfefc5c594eb
+source-git-commit: 523ba2ae59bfc0d35cca350a8daf3e20ac9e5332
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 50%
+source-wordcount: '778'
+ht-degree: 49%
 
 ---
 
@@ -128,7 +128,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 >[!NOTE]
 > 
-* Dynamic Media アカウントに早期にアクセスするには、[Adobe カスタマーサポートケースを作成して送信 ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) します。
+* 動的およびスマート切り抜きレンディション機能は、初期導入段階にあります。 機能にアクセスするには、[Adobe カスタマーサポートケースを作成して送信 ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) します。
 * [Dynamic Media Open API サービス ](/help/assets/dynamic-media-open-apis-overview.md) に新しくオンボーディングしたお客様は、既存の画像プリセットを承認用に変更する必要があります。
 
 
