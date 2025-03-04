@@ -2,9 +2,8 @@
 title: AEM Forms の Edge Delivery Services の基本を学ぶ。 フォームを作成します。
 description: 完璧なフォームを素早く作成しましょう。 ⚡ AEM Forms Edge Delivery ドキュメントベースのオーサリング = 超高速かつ SEO に対応したフォームで、高い顧客満足度と検索エンジンを実現。
 feature: Edge Delivery Services
-exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: 04fb65b4ec2d8bf6f54e1927469cda4bf94cbec8
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 98%

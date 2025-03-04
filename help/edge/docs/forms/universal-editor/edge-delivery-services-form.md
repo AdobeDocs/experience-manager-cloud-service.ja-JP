@@ -7,8 +7,8 @@ Role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: db58ce85-139a-4cc1-8e18-73da76357299
-source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
-workflow-type: ht
+source-git-commit: bb01a76ae2bfd78ae648e91545f34f20fabebd10
+workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 100%
 
@@ -63,7 +63,7 @@ Adobe Experience Manager では、フォームを作成する複数のエディ�
 
 ユニバーサルエディターは、WYSIWYG（見たままが得られる）機能を備えた多用途なビジュアルエディターであり、直感的なフォーム作成エクスペリエンスを実現します。 新しいフォームを作成する際は、最新の使いやすいデザインと便利なドラッグ＆ドロップインターフェイスを備えたユニバーサルエディターを使用することをお勧めします。
 
-ユニバーサルエディターを使用してフォームを作成するには、AEM 環境で使用可能な Edge Delivery Services テンプレートを使用します。 これらのフォームは、Edge Delivery Services GitHub リポジトリの設定からルックアンドフィールを継承します。 Edge Delivery Services でこれらのフォームを公開できるようにするために、[AEM 環境と Edge Delivery Services GitHub リポジトリの間で接続](/help/edge/docs/forms/publishing-forms.md)が確立されます。
+ユニバーサルエディターを使用してフォームを作成するには、AEM 環境で使用可能な Edge Delivery Services テンプレートを使用します。 これらのフォームは、Edge Delivery Services GitHub リポジトリの設定からルックアンドフィールを継承します。 Edge Delivery Services でこれらのフォームを公開できるようにするために、[AEM 環境と Edge Delivery Services GitHub リポジトリの間で接続](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)が確立されます。
 
 ユニバーサルエディターを使用したオーサリング方法の詳細な手順については、[ユニバーサルエディターを使用したコンテンツのオーサリング](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/universal-editor/authoring)の記事を参照してください。
 

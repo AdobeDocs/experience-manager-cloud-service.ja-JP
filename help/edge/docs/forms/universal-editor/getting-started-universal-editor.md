@@ -4,10 +4,10 @@ description: このチュートリアルは、新しい Adobe Experience Manager
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 964fd32a7dbcb97190d40cb42100d0d66e69a0c4
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 97%
+source-wordcount: '1846'
+ht-degree: 96%
 
 ---
 
@@ -20,6 +20,8 @@ ht-degree: 97%
 今日のデジタル時代では、ユーザーにわかりやすいフォームはすべての組織にとって不可欠です。Edge Delivery Services フォームは、WYSIWYG（見たままが得られる）機能を提供するユニバーサルエディターを使用して作成されます。最新の直感的なインターフェイスで、効率的なフォームオーサリングを実現します。
 
 AEM Forms には、アダプティブフォームブロックと呼ばれるブロックが用意されており、データを取得して保存する Edge Delivery Services フォームを簡単に作成できます。[アダプティブフォームブロックで事前設定済みの新しい AEM プロジェクトを作成](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)することも、[アダプティブフォームブロックを既存の AEM プロジェクトに追加](#add-adaptive-forms-block-to-your-existing-aem-project)することもできます。
+
+![Github リポジトリーワークフロー ](/help/edge/assets/repo-workflow.png)
 
 このチュートリアルでは、ユニバーサルエディターの WYSIWYG オーサリングを使用して、新規または既存の Adobe Experience Manager サイトプロジェクトで独自のフォームを作成、プレビュー、公開する方法について説明します。
 
@@ -252,6 +254,10 @@ WYSIWYG オーサリング用のユニバーサルエディターで AEM プロ�
    ![インデックスページ](/help/edge/docs/forms/assets/publish-index-page.png)
 
 アダプティブフォームブロックの `.css` ファイルと `.js` ファイルを編集し、[ローカル AEM 開発環境を設定](#set-up-local-aem-development-environment)して Edge Delivery Services フォームをスタイル設定すると、変更がブラウザーで即座に表示できます。
+
+>[!NOTE]
+>
+> また、[ ユニバーサルエディターでスタンドアロンフォームを作成して、Edge Delivery Servicesに公開する ](/help/edge/docs/forms/universal-editor/create-forms.md) こともできます。
 
 ## ローカル AEM 開発環境の設定
 

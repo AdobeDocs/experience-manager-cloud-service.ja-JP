@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0a30591ba4ad1c73e5e6ca794dc7b84fd050c456
+source-git-commit: 27270875d9f66a3613ac042a450347439bb3baab
 workflow-type: tm+mt
-source-wordcount: '6208'
+source-wordcount: '6205'
 ht-degree: 95%
 
 ---
@@ -1045,10 +1045,10 @@ ht-degree: 95%
          + [Formsの保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/recaptacha-forms.md)
          + [カスタムフォームコンポーネントの作成：開発者ガイド](/help/edge/docs/forms/custom-components-forms.md)
          + [フォームのパフォーマンスの監視：実際の使用状況の監視ガイド](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [Forms on Edgeのデプロイ：Edge Delivery Servicesの公開ガイド](/help/edge/docs/forms/publishing-forms.md)
       + WYSIWYG オーサリング {#universal-editor}
          + [Forms Universal Editor for Edge Delivery Servicesの概要 – 完全なガイド](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [ユニバーサルエディターを使用して最初のフォームを作成する方法 – ステップバイステップチュートリアル](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [ユニバーサルエディターを使用してオーサリングを開始する方法 – ステップバイステップのチュートリアル](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [ユニバーサルエディターを使用した最初のフォームの作成方法](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [ユニバーサルエディターインターフェイスガイド：ツール、機能、ナビゲーション](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [Formsをモバイルに対応させる：ユニバーサルエディターのレスポンシブデザイン](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [美しいFormsのデザイン：ユニバーサルエディターのスタイル設定とテーマ設定ガイド](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
