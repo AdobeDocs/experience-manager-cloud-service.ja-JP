@@ -1,20 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート。'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.1.0 リリースのリリースノート。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.1.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: 1105fedcf17cb74c9abec9de68485e1ef714ebbe
+source-git-commit: f899398182f9d0991123828ca217379653a4e397
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 60%
+source-wordcount: '1513'
+ht-degree: 87%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の 2025.1.0 リリースノート {#release-notes}
 
-以下のセクションでは、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンの機能リリースノートの概要について説明します。
+以下の節では、[!DNL Experience Manager] as a Cloud Service の 2025.1.0 バージョンの機能リリースノートの概要について説明します。
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ ht-degree: 60%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.2.0）のリリース日は、2025年3月4日（PT）です。次回の機能リリース（2025.3.0）は 2025年3月27日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.1.0）のリリース日は、2025年1月30日（PT）です。次回の機能リリース（2025.2.0）は 2025年3月4日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -38,7 +36,7 @@ ht-degree: 60%
 
 ## Release Video {#release-video}
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
+Have a look at the January 2025 Release Overview video for a summary of the features added in the 2025.1.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
@@ -46,60 +44,72 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
+**コンテンツフラグメントエディターのコメント機能が一般公開されました**
 
-### AEM Sitesの新機能 {#new-features-sites}
+AEM コンテンツフラグメントエディターの最新化された新しいコメントサービスを使用して、AEM コンテンツフラグメントをオーサリングする際に、同僚と簡単に共同作業できます。
+[詳細情報](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring?#commenting-on-your-fragment)。
 
-** コンテンツフラグメントの自動タグ付け**
+**コンテンツフラグメントエディターと管理ユーザーインターフェイスで、AEM as a Cloud Service バージョンのサポートが更新されました**
 
-コンテンツフラグメントの作成時に、コンテンツモデルに割り当てられたタグを自動的に継承できるようになりました。 これにより、コンテンツフラグメントに保存されたコンテンツを強力に自動分類できます。
+新しいコンテンツフラグメント管理およびエディターのユーザーインターフェイスでサポートされる AEM as a Cloud Service の最小バージョンが、2023.8.13099 になりました。新しいユーザーインターフェイスの一般提供リリース前のバージョンは、サポートされなくなりました
 
-** コンテンツフラグメント UUID のサポート **
+### 早期導入プログラム {#sites-early-adopter}
 
-コンテンツフラグメント UUID のサポートが一般提供（GA）されるようになりました。 この新しい機能は、AEM内のパスに基づく操作（移動、名前を変更、ロールアウトなど）の動作は変わりませんが、コンテンツフラグメントの外部使用をより簡単かつ安定させることができます。特に、ByPath クエリで個々のフラグメントを直接ターゲットにするGraphQL クエリを使用する場合に便利です。 このようなクエリは、フラグメントパスが変更されると壊れる可能性があります。 新しい ById クエリタイプを使用する場合、パスが変更されてもフラグメントの UUID は変化しないので、クエリは安定したままになります。
+**コンテンツフラグメントの強化**
 
-コンテンツフラグメントエディターおよびGraphQL **で OpenAPI をサポートする** Dynamic Media
+[一意の ID ベースの参照を用いたコンテンツフラグメント参照](/help/headless/graphql-api/uuid-reference-upgrade.md)の強化は、フラグメントを別の場所に移動した場合でも、個々のコンテンツフラグメントに対する GraphQL クエリが安定した状態を確保するのに役立ちます。これを、「ByID」クエリで実現できるようになりました。パスは変更され、「ByPath」クエリが壊れる可能性がありますが、UUID は安定します。また、新しい ID を、任意のクエリやその他の適用可能な API リクエストのプロパティとして返すこともできます。現在の制限事項（2025.1）：ページ参照は、一意の ID ではまだサポートされていません。コンテンツフラグメントでページが参照されている場合は、この機能を使用しないでください。この制限は、次回の AEM as a Cloud Service リリースで削除される予定です。
 
-コンテンツフラグメントとは異なるAEM as a Cloud Service プログラムに保存され、OpenAPI 機能を備えた新しい Dynamic Media で有効になっているAssetsを、コンテンツフラグメントで使用できるようになりました。 新しいコンテンツフラグメントエディターの画像セレクターで、フラグメントで参照する画像アセットのソースとして「リモート」リポジトリーを選択できるようになりました。 さらに、AEM GraphQLを使用してこのようなコンテンツフラグメントを配信する際に、リモートアセット（assetId、repositoryId）の必須プロパティが JSON 応答に含まれるようになりました。これにより、クライアントアプリケーションは、画像を取得する OpenAPI の URL で各 Dynamic Media を作成できます。
+**コンテンツフラグメント配信用の AEM REST OpenAPI**
 
-** Translation HTTP API **
+[コンテンツフラグメント配信用の AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) を、AEM as a Cloud Service で使用できるようになりました。
 
-しばらくの間アーリーアダプターモードであったAEM翻訳 HTTP REST API が一般提供（GA）されるようになりました。 ドキュメントは [ こちら ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) で参照できます。 API を使用すると、AEM内のコンテンツの翻訳管理プロセスで必要な手順を自動化できます。
+### 廃止される機能 {#sites-deprecated}
 
+#### SPA エディター {#spa-editor}
+
+[SPA エディター](/help/implementing/developing/hybrid/introduction.md)は、リリース 2025.1.0 以降の新しいプロジェクトでは廃止されました。SPA エディターは、既存のプロジェクトでは引き続きサポートされますが、新しいプロジェクトには使用しないでください。
+
+AEM でヘッドレスコンテンツの管理に推奨されるエディターは次のようになりました。
+
+* ビジュアル編集用の[ユニバーサルエディター](/help/edge/wysiwyg-authoring/authoring.md)。
+* フォームベース編集用の[コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md)。
+
+#### PWA の機能 {#pwa-features}
+
+AEM Sitesの [ プログレッシブ web アプリ（PWA）機能 ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) は、リリース 2025.1.0 以降の新しいプロジェクトで非推奨（廃止予定）になりました。この機能は、既存のプロジェクトでは引き続きサポートされますが、新規プロジェクトでは使用しないでください
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### AEM Assets の新機能 {#new-features-assets}
-
-**Dynamic Media の新しいパッケージ構造**
-
-Dynamic Media のパッケージ構造を刷新し、市場の期待に応え、追跡をサポートできるようになりました。 新しいパッケージ構造は、次の要素で構成されます。
-
-* Dynamic Media Prime（OpenAPI およびビデオを備えた Dynamic Media を含み、配信を強化）。
-
-* Dynamic Media Ultimateは、より厳しい使用要件に対応するために、配信および変換機能を追加します。
-
-新しいパッケージ構造のメリットを得るには、Assets as a Cloud Service PrimeまたはUltimateが必要です。
-
-**AI 生成のビデオキャプション**
-
-Adobe Dynamic Media の AI 生成のビデオキャプションは、人工知能を使用して、ビデオコンテンツのキャプションを自動的に生成します。 この機能は、正確なキャプションを提供することでアクセシビリティを向上し、ユーザーエクスペリエンスを強化するように設計されています。 キャプションは、元のオーディオ、追加のオーディオトラック、または追加のキャプションから生成され、ビデオのプロパティページの「キャプションとオーディオ」タブで提供されます。 60 を超える言語がサポートされているので、ビデオを公開する前にキャプションを確認およびプレビューできます。
+### AEM Assets ビューの新機能 {#new-features-assets}
 
 **検索フィルターのカスタマイズ**
 
 カスタム検索フィルターを使用すると、関連情報の検索の精度と効率が向上します。 これにより、ブランド、製品、カテゴリ、その他のキー識別子などの特定の属性に従ってデータをフィルタリングし、よりカスタマイズされた検索を行うことができます。 これにより、組織が改善され、無関係な結果の選別に費やす時間が短縮され、意思決定をより迅速に行うことができます。 また、大きなデータセットの移動や分析が容易になるので、スケーラビリティもサポートします。
 
-![ 検索フィルターのカスタマイズ ](/help/assets/assets/custom-search-filters.png)
+![ カスタム検索フィルター ](/help/assets/assets/custom-search-filters.png)
 
+### コンテンツハブの新機能 {#new-features-content-hub}
 
-### Content Hubの早期アクセス機能 {#early-access-content-hub}
+説明
 
-Content Hubでは、既存の静的レンディションに加え、動的レンディションとスマート切り抜きレンディションを表示およびダウンロードできるようになりました。 Content Hub管理者は、設定ユーザーインターフェイスを使用してレンディションの可用性を設定することもできます。
+### AEM Assets の早期アクセス機能 {#early-access-features-assets}
 
-![動的レンディション](/help/assets/assets/download-single-asset-renditions-dynamic.png)
+**AI 生成のビデオキャプション**
 
-
+Adobe Dynamic Media の AI 生成のビデオキャプションは、人工知能を使用して、ビデオコンテンツのキャプションを自動的に生成します。 この機能は、正確なリアルタイムのキャプションを提供することで、アクセシビリティを向上させ、ユーザーエクスペリエンスを強化するように設計されています。 キャプションは、元のオーディオ、追加のオーディオトラック、またはビデオプロパティページの「キャプションとオーディオ」タブで提供される追加のキャプションから生成されます。60 を超える言語がサポートされているので、ビデオを公開する前にキャプションを確認およびプレビューできます。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### AEM Forms の新機能 {#forms-new-features}
+
+* **公開を管理**: [ 公開を管理 ](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option)）ワークフローを使用して、通常はオーサーインスタンスからパブリッシュインスタンスとプレビューインスタンスに向けて、複数の環境にわたってフォームを公開または非公開にすることができます。 これにより、ユーザーは効率的な方法でコンテンツの公開、非公開、または公開のスケジュールを設定できます。
+
+* **[コアコンポーネントベースアダプティブフォームのドラフトの自動保存](/help/forms/save-core-component-based-form-as-draft.md)**：一部が完了したフォームを自動的にドラフトとして保存する、自動保存機能を利用できるようになりました。 後で戻って、同じデバイスまたは他のデバイスで入力を完了できます。 この機能により、ユーザーはフォームへの入力を最初からやり直す必要がなくなるので、フォームの放棄が減り、組織のコンバージョン率が向上します。
+
+* **[ルールエディターの機能強化](/help/forms/invoke-service-enhancements-rule-editor.md)**：コアコンポーネントに基づくアダプティブFormsの場合、サービスの呼び出しの出力を使用してドロップダウンオプションを入力し、繰り返し可能なパネルまたは個々のパネルを設定できます。 さらに、この出力は、他のフィールドを検証するためにも使用できます。
+
+* **[パネルレイアウトのナビゲーションボタンを使用したユーザーエクスペリエンスの向上](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**：水平タブ、垂直タブ、アコーディオン、ウィザードなどのナビゲーションボタンをパネルレイアウトに追加できるようになりました。 これらのボタンを使用すると、選択したパネルに焦点を当てて、パネル間の切り替えを簡素化し、ユーザーエクスペリエンスを向上させることができます。
+
 
 ### AEM Forms の早期アクセス機能 {#forms-new-early-access-features}
 
@@ -107,16 +117,15 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 
 このリリースノートでは、現在のリリースで提供されるイノベーションのリストを示します。 早期アクセスプログラムで利用可能なイノベーションの完全なリストについては、[AEM Forms 早期アクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
 
-#### アダプティブFormsのHTML メールテンプレート
+#### [ アダプティブFormsのHTML メールテンプレート ](/help/forms/html-email-templates-in-adaptive-forms.md)
 
-アダプティブFormsでは、[HTMLのメールテンプレート ](/help/forms/html-email-templates-in-adaptive-forms.md) を使用できます。 HTML メールテンプレートを使用すると、フォームの送信時に、リッチでパーソナライズされた、魅力的な外観のメールを送信できます。これらのメールは、フォームデータでカスタマイズしたり、画像やリンクなどの様々なメールタグを使用して強化したりできます。アダプティブフォームでは、HTML テンプレートを含むファイルをアップロードするか、プレーンテキストエディターを使用してこれらのテンプレートを作成できます。
+アダプティブFormsでは、HTMLのメールテンプレートを使用できます。 HTML メールテンプレートを使用すると、フォームの送信時に、リッチでパーソナライズされた、魅力的な外観のメールを送信できます。これらのメールは、フォームデータでカスタマイズしたり、画像やリンクなどの様々なメールタグを使用して強化したりできます。アダプティブフォームでは、HTML テンプレートを含むファイルをアップロードするか、プレーンテキストエディターを使用してこれらのテンプレートを作成できます。
 
 ![HTML メールテンプレート](/help/forms/assets/html-email.png)
 
 #### クラウドストレージのサポートの強化：Azure Blob Storage への直接 PDF アップロード
 
-AEM Forms Document Generation API で、Azure Blob ストレージに [ 生成されたPDF ドキュメントを直接アップロード ](/help/forms/early-access-ea-features.md#doc-generation-api) できるようになりました。 この機能強化により、ストレージと取得が合理化され、効率の向上やクラウドワークフローとの統合が促進されます。
-
+AEM Forms Document Generation API では、生成されたPDF ドキュメントの Azure Blob Storage への直接アップロードをサポートするようになりました。 この機能強化により、ストレージと取得が合理化され、効率の向上やクラウドワークフローとの統合が促進されます。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
