@@ -4,8 +4,8 @@ description: Adobe Experience Manager（AEM）設定と、AEM でのワークス
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ AEM 管理者と作成者は、設定をワークスペースとして見なす�
 設定は、AEM 内の多くの異なる機能に対して作成できます。
 
 * [ContextHub セグメント](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [編集可能なテンプレート](/help/sites-cloud/authoring/page-editor/templates.md)
 * 各種クラウド設定
 
@@ -82,7 +82,7 @@ WKND-General を WKND サイトのすべてのコンテンツに関連付ける�
       * 必要に応じて調整できます。
 1. 許可する設定のタイプを確認します。
    * [ContextHub セグメント](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
    * [編集可能なテンプレート](/help/sites-cloud/authoring/page-editor/templates.md)
    * 各種クラウド設定
 1. 「**作成**」を選択します。

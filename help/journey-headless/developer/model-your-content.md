@@ -5,7 +5,7 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 100%
@@ -181,7 +181,7 @@ AEM では、コンテンツをモデル化するために次のデータタイ�
 * 数値
 * ブール値
 * 日時
-* 列挙
+* 定義済みリスト
 * タグ
 * コンテンツ参照
 * フラグメント参照
@@ -267,7 +267,7 @@ tbc...
 
 * [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/overview.md) - コンテンツフラグメントのリードインページ
    * [設定ブラウザーのコンテンツフラグメント](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) - 設定ブラウザーでコンテンツフラグメント機能を有効にします。
-   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - コンテンツフラグメントモデルの作成と編集
+   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - コンテンツフラグメントモデルの作成と編集
    * [コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/managing.md) - コンテンツフラグメントを作成しオーサリングします。このページでは、その他の詳細な節を示します。
 * [AEM GraphQL スキーマ](access-your-content.md) - GraphQL によるモデルの実現方法
 * [サンプルコンテンツフラグメント構造](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)

@@ -4,7 +4,7 @@ description: モデラーフレームワークに基づいてコンテンツの 
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 100%
@@ -79,6 +79,6 @@ JSON エクスポーターフレームワークで認識されるようにする
 ## 関連ドキュメント {#related-documentation}
 
 * [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)
-* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [コンテンツフラグメントを使用したオーサリング](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)および[コンテンツフラグメントコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja)

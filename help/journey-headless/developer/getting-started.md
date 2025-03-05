@@ -5,8 +5,8 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+workflow-type: tm+mt
 source-wordcount: '3068'
 ht-degree: 100%
 
@@ -295,7 +295,7 @@ GraphQL は、AEM とヘッドレスコンテンツのコンシューマーの�
 * [マルチサイトマネージャーと翻訳](/help/sites-cloud/administering/msm-and-translation.md) - AEM の強力な翻訳機能に関する技術ドキュメント
 * [AEM ワークフロー](/help/sites-cloud/authoring/workflows/overview.md) - AEM でワークフローを自動化する方法に関する技術ドキュメント
 * [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md) - コンテンツフラグメントの技術ドキュメント
-* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - コンテンツフラグメントモデルの技術ドキュメント
+* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - コンテンツフラグメントモデルの技術ドキュメント
 * [GraphQL 技術ドキュメント](https://graphql.org) - GraphQL の定義（外部リンク）
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md) - コンテンツフラグメントにアクセスして配信するリクエストを作成する方法を説明する技術ドキュメント
 * [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) - コンテンツフラグメント（およびその他のアセット）を作成および変更する方法を説明する技術ドキュメント

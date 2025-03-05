@@ -4,8 +4,8 @@ description: AEM コンテンツサービスは、web ページだけに焦点�
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 100%
 
@@ -79,6 +79,6 @@ AEM 内では、セレクター `model` と `.json` 拡張機能を使用して�
 ## 関連ドキュメント {#related-documentation}
 
 * [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)
-* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [コンテンツフラグメントを使用したオーサリング](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)および[コンテンツフラグメントコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja)

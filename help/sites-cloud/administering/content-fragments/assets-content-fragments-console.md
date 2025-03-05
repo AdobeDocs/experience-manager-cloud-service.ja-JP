@@ -1,22 +1,35 @@
 ---
 title: コンテンツフラグメントコンソールでのアセットの表示と管理
-description: Adobe Experience Manager as a Cloud Service の **コンテンツフラグメントコンソール** でアセットを表示および管理する方法について説明します。
+description: Adobe Experience Manager as a Cloud ServiceのコンテンツフラグメントコンソールでAssetsを表示および管理する方法について説明します。
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: ht
-source-wordcount: '212'
-ht-degree: 100%
+source-git-commit: 175a7c069f57069b7a5ff1f0e5785147d9a4f6c9
+workflow-type: tm+mt
+source-wordcount: '277'
+ht-degree: 80%
 
 ---
 
 # コンテンツフラグメントコンソールでのアセットの表示と管理 {#viewing-managing-assets-content-fragments-console}
 
-デフォルトでは、Adobe Experience Manager as a Cloud Service の[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)に[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)が表示されます。
+デフォルトでは、Adobe Experience Manager as a Cloud Service の[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)に[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)が表示されます。
 
 ただし、この&#x200B;**コンテンツフラグメントコンソール**&#x200B;では、他のすべての種類の&#x200B;**アセット**&#x200B;を表示および管理することもできます。
+
+>[!IMPORTANT]
+>
+>早期導入プログラムを通じて、コンテンツフラグメントコンソールの様々な機能を利用できます。
+>
+>ステータスを確認し、興味がある場合に適用する方法について詳しくは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
+
+>[!NOTE]
+>
+>ここでは、Assetsを（のみ）表示するコンソールのセクションについて説明します。 その他のパネルについては、以下を参照してください。
+>
+>* [コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/managing.md)
+>* [ コンテンツフラグメントモデルの管理 ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
 >[!NOTE]
 >
@@ -42,6 +55,7 @@ ht-degree: 100%
 * [フォルダーの作成](/help/assets/manage-digital-assets.md#creating-folders)
 * [アセットのアップロード](/help/assets/add-delete-assets-view.md)
 * 表示タイプ（リスト、グリッド、ギャラリー、ウォーターフォール）を設定し、必要に応じて表示する列を設定します
+* このコンソールで使用できる[キーボード ショートカット](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)の選択
 
 また、選択した 1 つまたは複数のアセットに対してアクションを実行することもできます。
 

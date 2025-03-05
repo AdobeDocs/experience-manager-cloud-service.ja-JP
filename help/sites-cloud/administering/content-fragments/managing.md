@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: f5523968ef4548c287ec939b63db1cf914c7fbeb
+source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
-source-wordcount: '2686'
-ht-degree: 99%
+source-wordcount: '2629'
+ht-degree: 94%
 
 ---
 
@@ -22,9 +22,18 @@ ht-degree: 99%
 
 専用の [コンテンツフラグメントコンソール](#content-fragments-console)および [コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)から、Adobe Experience Manager (AEM) as a Cloud Serviceの&#x200B;**コンテンツフラグメント**&#x200B;の管理方法を説明します。これらのコンテンツフラグメントは、ヘッドレスコンテンツの基礎として、またはページオーサリングに使用できます。
 
+>[!IMPORTANT]
+>
+>早期導入プログラムを通じて、コンテンツフラグメントコンソールの様々な機能を利用できます。
+>
+>ステータスを確認し、興味がある場合に適用する方法について詳しくは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
+
 >[!NOTE]
 >
->必要に応じて、プロジェクトチームがコンソールとエディターをカスタマイズできます。詳しくは、[コンテンツフラグメントコンソールとエディターのカスタマイズ](/help/implementing/developing/extending/content-fragments-console-and-editor.md)を参照してください。
+>このページでは、コンテンツフラグメントを（のみ）表示するコンソールのセクションについて説明します。 その他のパネルについては、以下を参照してください。
+>
+>* [ コンテンツフラグメントモデルの管理 ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+>* [ コンテンツフラグメントコンソールでのAssetsの表示と管理 ](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
 [コンテンツフラグメントモデル](#creating-a-content-model)を定義した後、これらを使用して、次のことができます。
 
@@ -45,41 +54,13 @@ ht-degree: 99%
 >
 >コンテンツフラグメントは&#x200B;**アセット**&#x200B;として保存されます。これらは主に&#x200B;**コンテンツフラグメント**&#x200B;コンソールから管理しますが、[Assets](/help/assets/content-fragments/content-fragments-managing.md) コンソールからも管理できます。
 
-## コンテンツフラグメントコンソール {#content-fragments-console}
+## コンソールでのコンテンツフラグメントの基本構造と処理 {#basic-structure-handling-content-fragments-console}
 
-コンテンツフラグメントコンソールは、コンテンツフラグメントの管理、検索および作成専用です。ヘッドレスコンテキストでの使用に最適化されていますが、ページオーサリングで使用するコンテンツフラグメントを作成する際にも使用されます。
+[ コンテンツフラグメント コンソール ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) の左端のパネルを使用して、表示、参照、管理するリソースタイプとして **コンテンツフラグメント** を選択します。
 
-コンテンツフラグメントコンソールを使用すると、フラグメントおよび関連タスクに直接アクセスできます。コンソールは、グローバルナビゲーションの最上位レベルから直接アクセスできます。
-
-![グローバルナビゲーション - コンテンツフラグメントコンソール](assets/cf-managing-global-navigation.png)
-
-詳しくは、以下を参照してください。
-
-* [コンテンツフラグメントコンソールの基本構造と処理](#basic-structure-handling-content-fragments-console)
-
-* [コンテンツフラグメントに関して提供される情報](#information-content-fragments)
-
-* [コンテンツフラグメントコンソールでのコンテンツフラグメントのアクション](#actions-selected-content-fragment)
-
-* [コンソールに表示される列の選択](#select-columns-console)
-
-* [コンテンツフラグメントコンソールでの検索とフィルタリング](#filtering-fragments)
-
-* このコンソールで使用できる[キーボード ショートカット](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)の選択
-
->[!NOTE]
->
->このコンソールには、コンテンツフラグメントのみが表示されます。画像やビデオなど、他のアセットタイプは表示されません。
-
->[!CAUTION]
->
->このコンソールは、オンラインAdobe Experience Manager (AEM) as a Cloud Serviceで&#x200B;*のみ*&#x200B;利用できます。
-
-### コンソールの基本構造と基本操作 {#basic-structure-handling-content-fragments-console}
+![コンテンツフラグメントコンソール - ナビゲーション](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
 
 **コンテンツフラグメント**&#x200B;を選択すると、コンソールが新しいタブで開きます。
-
-<!-- CQDOC-21349: screenshot -->
 
 ![コンテンツフラグメントコンソール - 概要](assets/cf-managing-console-overview.png)
 
@@ -90,10 +71,11 @@ ht-degree: 99%
    * IMS 組織も表示します
    * 様々な[アクション](#actions-unselected)の提供
 * 左側のパネル
+   * パネルへのリンクを圧縮または展開できます
    * フォルダーツリーを表示したり非表示にしたりできます
    * ツリーの特定のブランチを選択できます
    * これは、ネストされたフォルダーを表示するようにサイズ変更できます
-   * コンテンツフラグメントまたは[アセット](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)の表示を選択できます
+   * [ コンテンツフラグメントモデル ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) または [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) は、コンテンツフラグメントだけでなく、パネルへのリンクを圧縮したり、展開したりすることもできます
 * 右側のメインパネル
    * 選択したツリーのブランチにあるすべてのコンテンツフラグメントのリストを表示します。
       * 選択したフォルダーのコンテンツフラグメントと、すべての子フォルダーが表示されます:
@@ -105,7 +87,7 @@ ht-degree: 99%
          * 参照に関する情報を表示
          * フラグメントの言語バージョンに関する情報を表示
       * コンテンツフラグメントについての[その他の特定の情報フィールド](#information-content-fragments)は、[高速フィルタリング](#fast-filtering)に使用できます。
-         * 列の値を選択すると、直ちにフィルターとして適用されます
+         * 列内の値を選択すると、フィルターとしてすぐに適用されます
          * 高速フィルターは、「**モデル**」、「**ステータス**」、「**変更者**」、「**タグ**」、「**公開者**」列のみに対応しています。
       * 列ヘッダーにマウスオーバーを使用すると、ドロップダウンアクションセレクターと幅スライダーが表示されます。これらを使用すると、次のことができます。
          * 並べ替え - 昇順または降順に適切なアクションを選択します。
@@ -114,58 +96,9 @@ ht-degree: 99%
       * さらに[アクション](#actions-selected-content-fragment)を実行するには、1 つ以上のフラグメントを選択します
    * 「[検索](#searching-fragments)」ボックスを使用します
    * 「[フィルターパネル](#filtering-fragments)」を開きます
+   * このコンソールで使用できる[キーボード ショートカット](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)の選択
 
-### アクション {#actions}
-
-コンソール内には、直接または特定のフラグメントを選択した後に使用できる様々なアクションがあります。
-
-* 様々なアクションを[コンソールから直接実行できます](#actions-unselected)
-* [1 つ以上のコンテンツフラグメントを選択して、適切なアクションを表示](#actions-selected-content-fragment)することができます。
-
-#### アクション（未選択） {#actions-unselected}
-
-特定のコンテンツフラグメントを選択しなくても、特定のアクションはコンソールから実行できます。
-
-* 新しいコンテンツフラグメントを&#x200B;**[作成](#creating-a-content-fragment)**&#x200B;します
-* 述語の選択に従ってコンテンツフラグメントを[フィルタリング](#filtering-fragments)し、今後の使用のためにフィルターを保存します
-* コンテンツフラグメントを[検索](#searching-fragments)します
-* [テーブル表示をカスタマイズして、選択した情報列を表示します](#select-columns-console)
-* **アセットで開く**&#x200B;を使用して、**アセット**&#x200B;コンソールで現在の場所を直接開きます
-
-  >[!NOTE]
-  >
-  >**Assets** のコンソールでは、画像やビデオなどのアセットにアクセスできます。このコンソールには、次の方法でアクセスできます。
-  >
-  >* **Assets で開く**&#x200B;のリンクを使用（コンテンツフラグメントコンソール内にあります
-  >* グローバル&#x200B;**ナビゲーション**&#x200B;パネルから直接
-
-#### （選択された）コンテンツフラグメントのアクション {#actions-selected-content-fragment}
-
-特定のフラグメントを選択するとツールバーが開き、そのフラグメントで使用可能なアクションが表示されます。複数のフラグメントを選択することもできます。それに応じて、焦点が当たるアクションも変化します。
-
-<!-- CQDOC-21349: screenshot -->
-
-![コンテンツフラグメントコンソール - 選択したフラグメントのツールバー](assets/cf-managing-console-fragment-toolbar.png)
-
-* **[新しいエディターで開く](#editing-the-content-of-your-fragment)**
-* （元のエディタで）**[開く](/help/assets/content-fragments/content-fragments-variations.md)**
-* **[公開](#publishing-and-previewing-a-fragment)**（および&#x200B;**[非公開](#unpublishing-a-fragment)**）
-* **[タグを管理](#manage-tags)**
-* **[コピー](/help/assets/manage-digital-assets.md)**
-* **[移動](/help/assets/manage-digital-assets.md)**
-* **[名前を変更](/help/assets/manage-digital-assets.md)**
-* **[削除](#deleting-a-fragment)**
-* **[置換](#find-and-replace)**
-
->[!NOTE]
->
->「**開く**」を使用し、選択したフラグメントを&#x200B;*元の*&#x200B;エディターで開きます。
-
->[!NOTE]
->
->公開、非公開、削除、移動、名前の変更、コピーなどのアクションは、非同期ジョブをトリガーします。そのジョブの進行状況は、AEM 非同期ジョブ UI で監視できます。
-
-### コンテンツフラグメントに関して提供される情報 {#information-content-fragments}
+## コンテンツフラグメントに関して提供される情報 {#information-content-fragments}
 
 コンソールのメインパネルや右パネル（テーブル表示）には、コンテンツフラグメントに関する様々な情報が表示されます。 また一部の項目には、その他のアクションや情報への直接リンクも含まれます。
 
@@ -214,6 +147,53 @@ ht-degree: 99%
 
      ![コンテンツフラグメントコンソール - 言語ダイアログ](assets/cf-managing-console-languages-dialog.png)
 
+## アクション {#actions}
+
+コンソール内には、直接または特定のフラグメントを選択した後に使用できる様々なアクションがあります。
+
+* 様々なアクションを[コンソールから直接実行できます](#actions-unselected)
+* [1 つ以上のコンテンツフラグメントを選択して、適切なアクションを表示](#actions-selected-content-fragment)することができます。
+
+### アクション（未選択） {#actions-unselected}
+
+特定のコンテンツフラグメントを選択しなくても、特定のアクションはコンソールから実行できます。
+
+* 新しいコンテンツフラグメントを&#x200B;**[作成](#creating-a-content-fragment)**&#x200B;します
+* 述語の選択に従ってコンテンツフラグメントを[フィルタリング](#filtering-fragments)し、今後の使用のためにフィルターを保存します
+* コンテンツフラグメントを[検索](#searching-fragments)します
+* [テーブル表示をカスタマイズして、選択した情報列を表示します](#select-columns-console)
+* **アセットで開く**&#x200B;を使用して、**アセット**&#x200B;コンソールで現在の場所を直接開きます
+
+  >[!NOTE]
+  >
+  >**Assets** のコンソールでは、画像やビデオなどのアセットにアクセスできます。このコンソールには、次の方法でアクセスできます。
+  >
+  >* **Assets で開く**&#x200B;のリンクを使用（コンテンツフラグメントコンソール内にあります
+  >* グローバル&#x200B;**ナビゲーション**&#x200B;パネルから直接
+
+### （選択された）コンテンツフラグメントのアクション {#actions-selected-content-fragment}
+
+特定のフラグメントを選択するとツールバーが開き、そのフラグメントで使用可能なアクションが表示されます。複数のフラグメントを選択することもできます。それに応じて、焦点が当たるアクションも変化します。
+
+![コンテンツフラグメントコンソール - 選択したフラグメントのツールバー](assets/cf-managing-console-fragment-toolbar.png)
+
+* **[新しいエディターで開く](#editing-the-content-of-your-fragment)**
+* （元のエディタで）**[開く](/help/assets/content-fragments/content-fragments-variations.md)**
+* **[公開](#publishing-and-previewing-a-fragment)**（および&#x200B;**[非公開](#unpublishing-a-fragment)**）
+* **[タグを管理](#manage-tags)**
+* **[コピー](/help/assets/manage-digital-assets.md)**
+* **[移動](/help/assets/manage-digital-assets.md)**
+* **[名前を変更](/help/assets/manage-digital-assets.md)**
+* **[削除](#deleting-a-fragment)**
+* **[置換](#find-and-replace)**
+
+>[!NOTE]
+>
+>「**開く**」を使用し、選択したフラグメントを&#x200B;*元の*&#x200B;エディターで開きます。
+
+>[!NOTE]
+>
+>公開、非公開、削除、移動、名前の変更、コピーなどのアクションは、非同期ジョブをトリガーします。そのジョブの進行状況は、AEM 非同期ジョブ UI で監視できます。
 
 ## コンテンツフラグメントの作成 {#creating-content-fragments}
 
@@ -221,7 +201,7 @@ ht-degree: 99%
 
 ### コンテンツモデルの作成 {#creating-a-content-model}
 
-構造化コンテンツを含むコンテンツフラグメントを作成する前に、[コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)を有効にして作成する必要があります。
+構造化コンテンツを含むコンテンツフラグメントを作成する前に、[コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)を有効にして作成する必要があります。
 
 ### コンテンツフラグメントの作成 {#creating-a-content-fragment}
 
@@ -248,7 +228,7 @@ ht-degree: 99%
 
 ## コンテンツフラグメントのステータス {#statuses-content-fragments}
 
-[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)と[コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md)に表示されるように、コンテンツフラグメントは、存在中、複数のステータスを持つことができます。
+[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)と[コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md)に表示されるように、コンテンツフラグメントは、存在中、複数のステータスを持つことができます。
 
 * **新規**（グレー）
 新しいコンテンツフラグメントは作成されましたが、コンテンツフラグメントエディターで編集も開いたこともないので、このコンテンツフラグメントはコンテンツを持ちません。
@@ -319,7 +299,7 @@ ht-degree: 99%
 
 >[!CAUTION]
 >
->フラグメントがモデルに基づいている場合、その[モデルが公開されている](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#publishing-a-content-fragment-model)ことを確認してください。
+>フラグメントがモデルに基づいている場合、その[モデルが公開されている](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)ことを確認してください。
 >
 >まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
 
@@ -382,8 +362,6 @@ ht-degree: 99%
 
 ## 検索と置換 {#find-and-replace}
 
-<!-- CQDOC-21349: screenshot -->
-
 **置換**&#x200B;アクション（上部のツールバーにある）を使用すると、選択したコンテンツフラグメント内の指定したテキストを検索して置換できます。
 
 ![検索と置換](assets/cf-managing-find-replace.png)
@@ -395,8 +373,6 @@ ht-degree: 99%
 >検索と置換アクションは、選択したコンテンツフラグメントに対して（一度に）最大 20 個のみ実行できます。
 >
 >20 個を超えるコンテンツフラグメントを選択すると、**検索と置換を実行できません**&#x200B;というメッセージが表示されます。
-
-<!-- CQDOC-21349: screenshot -->
 
 ![置換の確認](assets/cf-managing-confirm-replace.png)
 
@@ -464,8 +440,6 @@ ht-degree: 99%
 
 選択した後、「検索」ボックスの下に「**フィルター条件**」オプションが表示され、そこから選択を解除できます。次に例を示します。
 
-<!-- CQDOC-21349: screenshot -->
-
 ![コンテンツフラグメントコンソール - フィルタリング](assets/cf-managing-console-filter.png)
 
 ### 高速フィルタリング {#fast-filtering}
@@ -488,13 +462,9 @@ ht-degree: 99%
 
 検索ボックスは全文検索をサポートします。 検索ボックスに検索語句を入力します。
 
-<!-- CQDOC-21349: screenshot -->
-
 ![コンテンツフラグメントコンソール - 検索](assets/cf-managing-console-search-specification.png)
 
 選択した結果が表示されます。
-
-<!-- CQDOC-21349: screenshot -->
 
 ![コンテンツフラグメントコンソール - 検索結果](assets/cf-managing-console-search-results.png)
 

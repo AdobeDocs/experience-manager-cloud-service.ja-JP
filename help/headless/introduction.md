@@ -5,8 +5,8 @@ landing-page-description: Adobe Experience Manager as a Cloud Service でヘッ�
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 feature: Headless
 role: Admin, Developer
-source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
-workflow-type: ht
+source-git-commit: b155ea4734a86e6ca9151a89d3ac6f76c3ad6420
+workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 100%
 
@@ -44,7 +44,7 @@ AEM as a Cloud Service は、次の 3 つの強力な機能を提供すること
 1. **コンテンツフラグメント**
    * コンテンツフラグメントは、コンテンツフラグメントモデルに基づいて作成されます。
    * コンテンツフラグメントは、コンテンツ作成者によって AEM コンテンツフラグメントエディターで作成されます。
-   * コンテンツフラグメントは AEM Assets として保存されますが、Assets コンソールまたは [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)を使用して管理できます。
+   * コンテンツフラグメントは AEM Assets として保存されますが、Assets コンソールまたは [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)を使用して管理できます。
 1. **配信用のコンテンツ API**
    * 使用可能な様々な API の概要と、関連する概念のいくつかの比較について詳しくは、[構造化コンテンツの配信と管理用の AEM API](/help/headless/apis-headless-and-content-fragments.md) を参照してください。
 

@@ -5,8 +5,8 @@ exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+workflow-type: tm+mt
 source-wordcount: '1956'
 ht-degree: 100%
 
@@ -153,6 +153,6 @@ AEM でのヘッドレス開発に取りかかる前に、必要な機能がす�
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)（英語のみ）- この GitHub プロジェクトには、AEM の GraphQL API を紹介するためのサンプルアプリケーションが含まれています。
 * [Adobe Experience Manager as a Cloud Service のアーキテクチャの概要](/help/overview/architecture.md) - AEM のアーキテクチャの概要説明
 * [ヘッドレスセットアップ](/help/headless/introduction.md#getting-started) - AEM の知識が既にあるユーザーを対象とした、AEM のヘッドレス機能の簡単な紹介。
-* [コンテンツフラグメントモデルの作成](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - コンテンツフラグメントモデルに関する技術ドキュメント
+* [コンテンツフラグメントモデルの作成](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - コンテンツフラグメントモデルに関する技術ドキュメント
 * [コンテンツフラグメントの作成](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) - コンテンツフラグメントに関する技術ドキュメント
 * [GraphQL を使用したコンテンツのクエリ実行](/help/headless/graphql-api/content-fragments.md) - GraphQL API に関する技術ドキュメント

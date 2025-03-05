@@ -5,10 +5,10 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
+source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
 workflow-type: tm+mt
 source-wordcount: '1907'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 99%
 >
 >コンテンツフラグメントは Sites 機能ですが、**アセット**&#x200B;として保存されています。
 >
->引き続き **Assets** コンソールから管理できますが、現在は主に&#x200B;**[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;コンソールで管理します。このセクションでは、**Assets** コンソールでの管理を説明しています。
+>引き続き **Assets** コンソールから管理できますが、現在は主に&#x200B;**[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;コンソールで管理します。このセクションでは、**Assets** コンソールでの管理を説明しています。
 >
 >コンテンツフラグメントをオーサリングするエディターは 2 つあります。基本機能は同じですが、いくつか違いがあります。この節では、**Assets** コンソールから主にアクセスされるエディターについて説明します。（主に&#x200B;**コンテンツフラグメント**&#x200B;コンソールからアクセスされる）新しいエディターについて詳しくは、Sites のドキュメントの[コンテンツフラグメント - オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)を参照してください。どちらのエディターも、上部のツールバーに切り替えスイッチを使用して、他のエディターにすばやくアクセスできます。
 
@@ -198,7 +198,7 @@ ht-degree: 99%
    * **変更**：オレンジ
    * **アクティベートを解除済み**：赤
 
-* ボタンを使用すると、[コンテントフラグメントコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)からアクセスできる&#x200B;*新しい*[コンテントフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md)を直接開くことにより&#x200B;**新しいエディターを使える**&#x200B;ようになります。
+* ボタンを使用すると、[コンテントフラグメントコンソール](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)からアクセスできる&#x200B;*新しい*[コンテントフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md)を直接開くことにより&#x200B;**新しいエディターを使える**&#x200B;ようになります。
 
   >[!WARNING]
   >
@@ -313,9 +313,9 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 >* フラグメントエディターで入力
 >* フラグメント内の選択されたテキストセグメントに固有
 >
->どちらも、新しい [ コンテンツフラグメントエディター ](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment) に入力されたコメントを表示しません。
+>どちらも、新しい[コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment)に入力したコメントは表示されません。
 
-例：
+次に例を示します。
 
 ![タイムライン](assets/cfm-managing-05.png)
 

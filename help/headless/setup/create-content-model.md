@@ -4,8 +4,8 @@ description: コンテンツフラグメントモデルを使用して、AEM の
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: b76898409291fef85733e75405e65152424e2d41
+workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 100%
 
@@ -71,4 +71,4 @@ ht-degree: 100%
 
 >[!TIP]
 >
->コンテンツフラグメントモデルについて詳しくは、[コンテンツフラグメントモデルのドキュメント](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)を参照してください。
+>コンテンツフラグメントモデルについて詳しくは、[コンテンツフラグメントモデルのドキュメント](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)を参照してください。

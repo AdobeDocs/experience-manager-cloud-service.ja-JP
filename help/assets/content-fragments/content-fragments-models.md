@@ -5,10 +5,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 883eadc8ce2c84eba526b081ef90c678845989aa
+source-git-commit: 00b4fa64a2f5d7ddf7ea7af7350374a1f1bcb768
 workflow-type: tm+mt
-source-wordcount: '3120'
-ht-degree: 99%
+source-wordcount: '3175'
+ht-degree: 97%
 
 ---
 
@@ -22,6 +22,12 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
 1. コンテンツフラグメントモデルの[作成](#creating-a-content-fragment-model)と[設定](#defining-your-content-fragment-model)
 1. コンテンツフラグメントの作成時に使用するために、[コンテンツフラグメントモデルを有効にする](#enabling-disabling-a-content-fragment-model)
 1. **ポリシー**&#x200B;の設定による[必要なアセットフォルダーに対するコンテンツフラグメントモデルの許可](#allowing-content-fragment-models-assets-folder)
+
+>[!NOTE]
+>
+>コンテンツフラグメントは Sites 機能ですが、**Assets** として保存されます。
+>
+>コンテンツフラグメントとコンテンツフラグメントモデルは、主に **[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** コンソールで管理するようになりましたが、コンテンツフラグメントは **Assets** コンソールでも、コンテンツフラグメントモデルは **ツール** コンソールでも管理できます。 このセクションでは、**Assets** コンソールおよび **ツール** コンソールからの管理について説明します。
 
 ## コンテンツフラグメントモデルの作成 {#creating-a-content-fragment-model}
 
