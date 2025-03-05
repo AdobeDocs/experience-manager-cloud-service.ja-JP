@@ -5,35 +5,45 @@ feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
-exl-id: 2c071f3c-b74a-4efc-808d-6aba9f294663
-source-git-commit: cd106c1970bf26eb590a418e3e6b79e3d3d9b5fe
+source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
 
-# 価値実現ダッシュボードの理解：Formsを最大限に活用 {#value-realization-dashboard}
+
+# 価値実現ダッシュボードについて
+
+![ 価値実現ダッシュボード ](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
+
 
 <span class="preview"> この機能はベータ版機能で、選択した一部のお客様のみが使用できます。</span>
 
 フォームがもたらす価値を理解するためのワンストップショップへようこそ。 このダッシュボードを使用すると、フォームを最適化し、ワークフローを合理化し、最終的に目標をより迅速に達成するための貴重なインサイトを得ることができます。
 
+この記事では、価値実現ダッシュボードとそのメリットに関する概念的な概要を説明します。 使用手順と指標の解釈について詳しくは、[ 価値実現ダッシュボードを使用したフォーム使用インサイトの解釈 ](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md) を参照してください。
+
+
+![ 価値実現ダッシュボード ](/help/forms/assets/forms-usage-insights.png)
+
 ## ダッシュボードには何がありますか？ {#content-of-dashboard}
 
 このダッシュボードから、フォームの使用状況を確認できます。 主要なセクションの分類を次に示します。
 
-### フォームアクティビティの推移：
+### フォームとドキュメントのアクティビティの推移
 
 * **フォーム送信**：フォームの完了頻度の傾向を確認します。
 * **ドキュメントレンディション**：レンダリングされたドキュメントの数を経時的に追跡します。
 * **Formsが作成および公開されました**：新しいフォームがビルドおよびデプロイされる割合をモニタリングします。
 * **フォームの作成と公開の時間**：フォームの作成と公開の平均時間を分析して、改善する領域を特定します。
 
-### フラグメント使用状況：
+### フラグメント使用状況
 
 * **使用中のフォームフラグメントの数**：現在アクティブなフォームに組み込まれている再利用可能なフォームセクションの数を確認します。
-* **フォームフラグメントの再利用の数**：これらのフラグメントが異なるフォームをまたいで使用される頻度を測定します。
+* **フォームフラグメントの再利用**：これらのフラグメントが様々なフォームで使用される頻度を測定します。
+
+
 
 
 ## これにはどのようなメリットがありますか？ {#benefits-to-you}
@@ -62,3 +72,7 @@ ht-degree: 0%
 * **Experiment &amp; Refine:** 様々なフォームデザインやフラグメントの使用方法を試すことを恐れないでください。 ダッシュボードは、変更の有効性を測定するのに役立ちます。
 
 このダッシュボードは味方だぞ！ これを効果的に使用することで、フォームをシンプルなデータ収集ツールから、お客様およびビジネスの成功を推進する戦略的なアセットに変換できます。
+
+## 関連トピック
+
+* [使用状況インサイトの解釈](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)

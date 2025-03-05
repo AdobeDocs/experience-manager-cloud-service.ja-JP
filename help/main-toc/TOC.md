@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
 workflow-type: tm+mt
-source-wordcount: '6216'
+source-wordcount: '6222'
 ht-degree: 95%
 
 ---
@@ -892,7 +892,9 @@ ht-degree: 95%
    + トランザクションレポート {#using-communications}
       + [トランザクションレポート請求可能 API](/help/forms/transaction-reports-billable-apis.md)
       + [カスタム実装のトランザクションの記録](/help/forms/record-transaction-custom-implementation.md)
+   + 価値実現ダッシュボード {#vr-dashboard}
       + [価値実現ダッシュボードについて](/help/forms/aem-forms-value-realization-dashboard.md)
+      + [使用状況インサイトの解釈](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
    + 開発者 API リファレンス {#aem-forms-developer-api-reference}
       + [アダプティブフォーム API リファレンス](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms Cloud Service 通信 API リファレンス](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)

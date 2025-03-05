@@ -1,15 +1,15 @@
 ---
-title: 現在の  [!DNL Adobe Experience Manager Forms] as a Cloud Serviceの早期アクセス機能。
-description: 現在の  [!DNL Adobe Experience Manager Forms] as a Cloud Serviceの早期アクセス機能。
+title: 現在の  [!DNL Adobe Experience Manager Forms] as a Cloud Serviceのアーリーアクセス機能。
+description: 現在の  [!DNL Adobe Experience Manager Forms] as a Cloud Serviceのアーリーアクセス機能。
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
+source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
 workflow-type: tm+mt
-source-wordcount: '2056'
-ht-degree: 29%
+source-wordcount: '2155'
+ht-degree: 31%
 
 ---
 
@@ -74,9 +74,9 @@ Formsの対話型コンテンツは次のとおりです。
 会話型Formsは、単なる新しい外観ではなく、ユーザーエクスペリエンスを大きく変える要素です。  エンゲージメントを高め、フォームの放棄を減らし、web サイトとのやり取りを全員にとってより楽しいエクスペリエンスにします。
 
 
-### Edge Delivery Services向けのWYSIWYG オーサリング
+### Edge Delivery Services用のWYSIWYG オーサリング
 
-WYSIWYG オーサリングは、アダプティブフォームを作成してEdge Delivery Servicesに公開するためのWYSIWYG インターフェイス（ユニバーサルエディターとアダプティブFormsエディター）を提供します。 WYSIWYG オーサリングでは、[ ドキュメントベースのオーサリング ](/help/edge/docs/forms/overview.md#document-based-authoring-features) のすべての機能に加えて、次のような様々な機能を提供します。
+WYSIWYG オーサリングは、アダプティブフォームを作成してWYSIWYGに公開するためのForms インターフェイス（ユニバーサルエディターとアダプティブフォームエディター）を提供します。Edge Delivery Services WYSIWYG オーサリングでは、[ ドキュメントベースのオーサリング ](/help/edge/docs/forms/overview.md#document-based-authoring-features) のすべての機能に加えて、次のような様々な機能を提供します。
 
 * 複雑なロジックを作成する高度なルールエディター。
 * カスタム機能を実現するサーバーサイド拡張機能。
@@ -90,7 +90,7 @@ WYSIWYG オーサリングは、アダプティブフォームを作成してEdg
 
 ### AEM FormsからMarketoへのコネクタ
 
-[AEM Forms/Marketo コネクタ ](/help/forms/integrate-form-to-marketo-engage.md) は、Adobe Experience Manager（AEM）で作成された web フォーム（アダプティブForms）とマーケティング自動処理プラットフォームであるMarketoの間のギャップを埋めます。
+[AEM Forms/Marketo コネクタ ](/help/forms/integrate-form-to-marketo-engage.md) は、Adobe Experience Manager（AEM）で作成された web フォーム（アダプティブForms）とマーケティング自動処理プラットフォームのMarketoとの間のギャップを埋めます。
 
 AEM アダプティブFormsで作成された web サイト上のフォームが誰かに送信されると、コネクタは、送信されたデータがMarketoに自動的に送信されるようにします。 これにより、手動でのデータ入力が不要になり、エラーのリスクが軽減されます。
 
@@ -104,17 +104,39 @@ AEM アダプティブFormsで作成された web サイト上のフォームが
 
 * [Marketo Engage の AEM Forms への統合](/help/forms/integrate-form-to-marketo-engage.md)
 * [ アダプティブフォームとMarketo Engageの統合 ](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-* [既存のアダプティブFormsのMarketo Engageとデータソースの設定](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [既存のアダプティブFormsに対するMarketo Engageとデータソースの設定](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [Marketo Engageへの既存のアダプティブフォームの送信](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+
+### 価値実現ダッシュボード
+
+価値実現ダッシュボードを使用して、フォームのパフォーマンスを追跡および分析します。 この分析ツールは、フォーム戦略を最適化するためのデータに基づく意思決定を行うのに役立ちます。
+
+![Forms使用状況インサイトダッシュボード ](/help/forms/assets/forms-usage-insights.png)
+
+**主な特長：**
+
+* フォーム送信、ドキュメントレンディション、フォーム作成/公開指標の監視
+* 組織全体でのフォームフラグメントの使用と再利用を追跡する
+* 傾向、ピーク期間、改善機会を特定する
+
+ダッシュボードは、次の 2 つの主要セクションを通じてインサイトを提供します。
+
+* **フォームとドキュメントのアクティビティの推移**：送信、レンディション、フォームの作成/公開をトラッキングします
+* **フラグメントの使用状況**：フラグメントの採用と再利用を監視します
+
+詳しくは、以下を参照してください。
+
+* [価値実現ダッシュボードについて](/help/forms/aem-forms-value-realization-dashboard.md)
+* [フォームとドキュメントの使用状況インサイトの解釈](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
 
 ## その他の早期アクセス・イノベーション
 
-### アダプティブFormsのHTMLメールテンプレート
+### アダプティブフォームの HTML メールテンプレート
 
 
-アダプティブFormsでは、[HTMLのメールテンプレート ](/help/forms/html-email-templates-in-adaptive-forms.md) を使用できます。 HTML用のメールテンプレートを使用すると、フォームが送信される際に、リッチでパーソナライズされた、視覚的にアピールするメールを送信できます。 これらのメールは、フォームデータを使用してカスタマイズし、画像やリンクなどの様々なメールタグを使用して強化できます。 アダプティブFormsでは、HTMLテンプレートを含んだファイルをアップロードするか、プレーンテキストエディターを使用してこれらのテンプレートを作成できます。
+アダプティブフォームでは、[HTML メールテンプレート](/help/forms/html-email-templates-in-adaptive-forms.md)を使用できます。HTML メールテンプレートを使用すると、フォームの送信時に、リッチでパーソナライズされた、魅力的な外観のメールを送信できます。これらのメールは、フォームデータでカスタマイズしたり、画像やリンクなどの様々なメールタグを使用して強化したりできます。アダプティブフォームでは、HTML テンプレートを含むファイルをアップロードするか、プレーンテキストエディターを使用してこれらのテンプレートを作成できます。
 
-![HTMLのメールテンプレート ](/help/forms/assets/html-email.png)
+![HTML メールテンプレート](/help/forms/assets/html-email.png)
 
 ### RESTful Web サービス送信アクション
 
@@ -161,26 +183,26 @@ AEM Forms では、複数の CAPTCHA オプションを提供して、特定の�
 ### Doc Assurance API
 
 
-AEM Forms Doc Assurance API は、PDFドキュメントのセキュリティとユーザーインタラクションを管理できる、AEM Forms Cloud Service通信 API 内のツールセットです。
+AEM Forms Doc Assurance API は、PDF ドキュメントのセキュリティとユーザーインタラクションを管理できる、AEM Forms Cloud Service Communication API 内のツールセットです。
 
 Doc Assurance API で実行できる操作の概要を次に示します。
 
-* **ドキュメントの暗号化と復号化**：暗号化を使用してコンテンツを判読できないようにして、ドキュメントをProtectします。 ドキュメント全体、特定のコンテンツ、メタデータ、添付ファイルなど、PDFのどの部分を暗号化するかを制御できます。
+* **ドキュメントの暗号化と復号化**：暗号化を使用してコンテンツを読み取れなくすることでドキュメントを保護します。 ドキュメント全体、特定のコンテンツ、メタデータ、添付ファイルなど、PDFのどの部分を暗号化するかを制御できます。
 
 * **ドキュメントのデジタル署名**：ドキュメントにデジタル署名を追加して、検証と改ざん防止の検証を行います。 これは、認証目的またはドキュメントの整合性を確保するために使用できます
 
-* **Readerドキュメントを拡張する（PDFドキュメントの使用権限を適用または編集する）**：使用権限を追加してAdobe Readerの機能を拡張することで、組織内でインタラクティブPDFドキュメントを簡単に共有できるようにします。
+* **Reader ドキュメントを拡張する（PDF ドキュメントの使用権限を適用または編集する）**：使用権限を追加して Adobe Reader の機能を拡張することで、組織内でインタラクティブなPDF ドキュメントを簡単に共有できるようにします。
 
-  Reader拡張（使用権限） API は、PDFドキュメントに使用権限を追加します。 これにより、PDF ドキュメントを Adobe Reader で開いた場合には通常使用できない機能（ドキュメントへのコメントの追加、フォームへの入力、ドキュメントの保存など）がアクティブになります。サードパーティユーザーは、使用権限を付与されたドキュメントを扱うためにソフトウェアまたはプラグインを追加する必要はありません。
+  Reader Extension （使用権限） API は、PDF ドキュメントに使用権限を追加します。 これにより、PDF ドキュメントを Adobe Reader で開いた場合には通常使用できない機能（ドキュメントへのコメントの追加、フォームへの入力、ドキュメントの保存など）がアクティブになります。サードパーティユーザーは、使用権限を付与されたドキュメントを扱うためにソフトウェアまたはプラグインを追加する必要はありません。
 
-  PDFドキュメントに適切な使用権限が追加されている場合、受信者はAdobe Reader内から有効なアクティビティを実行できます。
+  PDF ドキュメントに適切な使用権限が追加されている場合、受信者は Adobe Reader 内から有効なアクティビティを実行できます。
 
 全体として、[Doc Assurance API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) は、制御レイヤーを追加することで、ドキュメントのセキュリティとコンプライアンスを向上させるのに役立ちます。
 
 
 ### Forms サービス API
 
-Forms サービスでは、データキャプチャ用のインタラクティブな PDF フォームを生成します。また、既存のインタラクティブPDFフォームとの間でデータのインポートやエクスポートを行い、送信されたデータを検証することもできます。 機能の分類を以下に示します。
+Forms サービスでは、データキャプチャ用のインタラクティブな PDF フォームを生成します。また、既存のインタラクティブ PDF フォームとの間でデータのインポートまたはエクスポートを行い、送信されたデータを検証することもできます。 機能の分類を以下に示します。
 
 * **Forms のレンダリング**：AEM Forms Designer を使用して作成したテンプレートからと、オプションで XML データから、インタラクティブな PDF フォームを生成します。これにより、基本的に、入力可能な PDF フォーム（オプションでデータを事前入力することもできます）が生成されます。
 
@@ -190,23 +212,23 @@ Forms サービスでは、データキャプチャ用のインタラクティ�
 
 ### Doc Generation API
 
-Document Generation API には、生成されたPDFを Azure Blob ストレージに直接アップロードできるオプション機能が含まれています。 Document Generation API を使用して Azure Blob Storage に直接PDFをアップロードする主なメリットには、次のようなものがあります。
+ドキュメント生成 API には、生成された PDF を Azure Blob ストレージに直接アップロードできるオプション機能が含まれています。 ドキュメント生成 API を使用して PDF を Azure Blob Storage に直接アップロードする主なメリットには、次のようなものがあります。
 
 * **クラウドストレージとのシームレスな統合**:
-生成されたPDFを Azure Blob Storage に直接アップロードすると、手動やプログラムによるファイル転送の追加手順が不要になり、ワークフローが効率化され、効率が向上します。
+生成された PDF を Azure Blob Storage に直接アップロードすると、ファイルを転送するための追加の手動またはプログラムの手順が不要になり、ワークフローが合理化され、効率が向上します。
 
 * **一元化されたドキュメント管理**:
-Azure Blob Storage にPDFを保存すると、ドキュメントを一元管理でき、様々なユースケースで生成されたファイルを簡単に整理、取得、管理できます。
+Azure Blob Storage に PDF を格納すると、ドキュメントを一元管理でき、様々なユースケースで生成されたファイルを簡単に整理、取得、管理できます。
 
 * **セキュリティの向上**：保存時の暗号化や役割ベースのアクセス制御（RBAC）など、Azure の組み込みセキュリティ機能を活用することで、機密ドキュメントはストレージ中に保護されたままになります。
 
-* **カスタマイズ可能なストレージパス**: カスタムディレクトリパスを定義する機能により、生成されたPDFが整理されたアプリケーション固有の場所に保存され、ファイル管理が強化されます。
+* **カスタマイズ可能なストレージパス**：カスタムディレクトリパスを定義する機能により、生成された PDF が整理されたアプリケーション固有の場所に保存され、ファイル管理が向上します。
 
 ## 関連トピック
 
 * [AEM Formsの最新イノベーション](/help/forms/latest-innovations.md)
 
-* [AEM Forms as a Cloud Serviceの機能](/help/forms/home.md)
+* [AEM Forms as a Cloud Services の機能](/help/forms/home.md)
 
-* [AEM 6.5 Forms（AMS およびオンプレミス）とAEM Forms as a Cloud Service（AEM CS Forms）の違い](/help/forms/notable-changes.md)
+* [AEM 6.5 Forms（AMS およびオンプレミス）とAEM Forms as a Cloud Services （AEM CS Forms）の違い](/help/forms/notable-changes.md)
 
