@@ -3,13 +3,13 @@ title: コンテンツオーサリングのためのサイト認証の設定
 description: AEM Live がトークンベースの認証をサポートする方法と、WYSIWYG オーサリングで認証を使用するようにAEMを設定する方法について説明します。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 6d28b831fb902173bb5fbadd4aa2a52ba58e0a3b
+exl-id: b2838da2-79c7-49b1-a101-15c21e80197e
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '324'
 ht-degree: 2%
 
 ---
-
 
 # コンテンツオーサリングのためのサイト認証の設定 {#site-authentication}
 
@@ -46,11 +46,13 @@ AEM Live は、トークンベースの認証をサポートしています。 �
 サイト認証を設定したら、AEM オーサリング環境で有効にすることができます。
 
 1. AEM オーサーインスタンスにサインインして **ツール**/**クラウドサービス**/**Edge Delivery Services Configuration** に移動し、サイト用に自動的に作成された設定を選択して、ツールバーの **プロパティ** をタップまたはクリックします。
-1. **Edge Delivery Services設定** ウィンドウで、「**認証**」タブを選択して次の値を指定します。これは、サイト認証を設定した際に確認しました。
-
-   * **テクニカルアカウント ID**
-   * **サイト認証トークン**
+1. **Edge Delivery Services設定** ウィンドウで、「**認証**」タブを選択し、以前にコピーした **サイト認証トークン** を指定します。
 
    ![Edge Delivery Servicesの設定 ](/help/edge/wysiwyg-authoring/assets/site-authentication/configure-aem-author.png)
+
+1. **テクニカルアカウント ID** が以前にコピーしたアカウントと一致することを確認します。
+
+   * このフィールドは読み取り専用で、事前定義されています。
+   * テクニカルアカウントは、1 つのAEM オーサー環境にあるすべてのサイトで同じです。
 
 1. 「**保存して閉じる**」をタップまたはクリックします。

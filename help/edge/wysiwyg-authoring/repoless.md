@@ -4,9 +4,9 @@ description: ほぼ同じように見えて動作する類似サイトが多数�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1039'
 ht-degree: 2%
 
 ---
@@ -99,30 +99,14 @@ AEMでは、複数の GitHub リポジトリーを作成し、各サイトを専
 
 サイト設定がマッピングされたら、公開権限を持つテクニカルアカウントを定義することで、アクセス制御を設定できます。
 
-1. ブラウザーで、次のリンクの応答にあるテクニカルアカウントを取得します。
+1. AEM オーサーインスタンスにサインインして **ツール**/**クラウドサービス**/**Edge Delivery Services Configuration** に移動し、サイト用に自動的に作成された設定を選択して、ツールバーの **プロパティ** をタップまたはクリックします。
 
-   ```text
-   https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
-   ```
+1. **Edge Delivery Services設定** ウィンドウで、「**認証**」タブを選択し、「**テクニカルアカウント ID**」の値をコピーします。
 
-1. 応答は次のようになります。
+   * `<tech-account-id>@techacct.adobe.com` のようになります
+   * テクニカルアカウントは、1 つのAEM オーサー環境にあるすべてのサイトで同じです。
 
-   ```json
-   {
-     "total": 1,
-     "offset": 0,
-     "limit": 1,
-     "data": [
-       {
-         "key": "admin.role.publish",
-         "value": "<tech-account-id>@techacct.adobe.com"
-       }
-     ],
-     ":type": "sheet"
-   }
-   ```
-
-1. 次のような cURL コマンドを使用して、設定にテクニカルアカウントを設定します。
+1. コピーしたテクニカルアカウント ID を使用して、次のような cURL コマンドでリクエスト設定のテクニカルアカウントを設定します。
 
    * `admin` ブロックを調整して、サイトへの完全な管理アクセス権を持つユーザーを定義します。
       * これはメールアドレスの配列です。
