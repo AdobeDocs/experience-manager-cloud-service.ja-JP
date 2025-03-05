@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
+source-git-commit: f5523968ef4548c287ec939b63db1cf914c7fbeb
 workflow-type: tm+mt
-source-wordcount: '2661'
+source-wordcount: '2686'
 ht-degree: 99%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->早期導入プログラムを通じて、コンテンツフラグメントおよびコンテンツフラグメントモデルの様々な機能を利用できます。
+>コンテンツフラグメントとコンテンツフラグメントモデルの様々な機能は、早期導入プログラムを通じて使用できます。
 >
 >ステータスを確認し、興味がある場合に適用する方法について詳しくは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
@@ -32,7 +32,7 @@ ht-degree: 99%
 * 次に、[コンテンツフラグメントエディター](#opening-the-fragment-editor) を開いて、[コンテンツを作成しバリエーションを管理します](#editing-the-content-of-your-fragment)。
 * [タグを管理](#manage-tags)
 * [プロパティ（メタデータ）を表示および編集する](#viewing-and-editing-properties)
-* [構造ツリーを表示](/help/sites-cloud/administering/content-fragments/authoring.md#structure-tree)
+* [構造ツリーの表示](/help/sites-cloud/administering/content-fragments/authoring.md#structure-tree)
 
 >[!NOTE]
 >
@@ -237,6 +237,7 @@ ht-degree: 99%
 
    * **場所** - 現在の場所がオートコンプリートされますが、必要に応じて別の場所を選択できます。
    * **コンテンツフラグメントモデル** - ドロップダウンリストからフラグメントの基礎として使用するモデルを選択します。
+   * **自動タグ** – このオプションを選択すると、コンテンツフラグメントモデルに割り当てられたすべてのタグが新しいコンテンツフラグメントに継承され、追加されます。
    * **タイトル**
    * **名前** - **タイトル**&#x200B;に基づいてオートコンプリートされますが、必要に応じて編集できます。
    * **説明**
