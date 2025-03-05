@@ -1,231 +1,205 @@
 ---
-title: AEM Forms as a Cloud Service の Edge Delivery Services での reCAPTCHA の使用
-description: AEM Forms の Edge Delivery Services 向けフォームでの Google reCAPTCHA の使用
+title: reCAPTCHA でFormsを保護 – ビジュアルガイド
+description: Google reCAPTCHA をEdge Delivery Services フォームに簡単に追加して、スパムやボットの送信を防ぐ方法を説明します
 feature: Edge Delivery Services
-keywords: フォームの reCAPTCHA, ユニバーサルエディターでの reCAPTCHA の使用, フォームでの reCAPTCHA の追加
-role: Admin, Architect, Developer
+keywords: フォームの reCAPTCHA、ユニバーサルエディターの reCAPTCHA の使用、フォームの reCAPTCHA の追加、フォームセキュリティ、スパム保護
+role: Developer
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 96%
+source-wordcount: '1085'
+ht-degree: 2%
 
 ---
 
 
-# WYSIWYG オーサリングでの reCAPTCHA の使用
+# Google reCAPTCHA でFormsをスパムから保護
 
-<span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に、GitHub の組織名とリポジトリ名を記載したメールを送信します。 例えば、リポジトリ URL がhttps://github.com/adobe/abcの場合、組織名は adobe で、リポジトリ名は abc.</span> です
+<span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に、GitHub の組織名とリポジトリ名を記載したメールを送信します。</span>
 
 
-CAPTCHA（コンピュータと人間を区別する完全に自動化された公開チューリングテスト）は、web サイトを不正行為、スパムおよび不正使用からの保護に使用される一般的なツールです。
 
-例えば、追加控除と税率に基づいて税金を計算するフォームを考えます。このような場合は、悪意のあるユーザーがフォームを悪用してフィッシングメールを送信したり、スパムボットを使用して無関係または有害なコンテンツを大量に送信したりするリスクがあります。CAPTCHA を統合すると、送信が本物のユーザーからのものであることを確認して、セキュリティを強化し、スパムエントリを最小限に抑える効果を得ることができます。
+## フォームで reCAPTCHA を使用する理由
 
-![Google reCAPTCHA](/help/edge/docs/forms/universal-editor/assets/google-recaptcha.png)
+| ![セキュリティ](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![ ボットの保護 ](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![ ユーザーエクスペリエンス ](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
+|:-------------:|:-------------:|:-------------:|
+| **セキュリティの強化** | **ボットおよびスパムの防止** | **シームレスなユーザーエクスペリエンス** |
+| 不正行為や悪意のある攻撃からフォームを保護 | 自動ボットが無関係または有害なコンテンツでフォームをあふれさせないようにする | 目に見えない reCAPTCHA は、正当なユーザーを妨げることなく、バックグラウンドで機能します |
 
-Edge Delivery Services Forms では、フォームブロックにより、**CAPTCHA（非表示）**&#x200B;コンポーネントを使用して [Google reCAPTCHA をフォームに接続](#connect-forms-with-recaptcha-service-by-google)し、人間とボットを区別できます。この機能は、作成者がフォームをスパムや不正使用から保護するのに役立ちます。
+例えば、機密性の高い財務情報を含む税金計算フォームは、誤用から保護する必要があります。 reCAPTCHA は、送信が自動システムではなく、正規のユーザーからのものであることを検証します。
 
-## Forms と Google による reCAPTCHA サービスとの接続
+## reCAPTCHA ソリューションの選択
 
-Edge Delivery Services フォームを作成して、Google が提供する reCAPTCHA サービスを実装できます。必要に応じて、Edge Delivery Services Forms に次のいずれかの reCAPTCHA サービスを設定できます。
+Edge Delivery Services Formsは、次の 2 つのGoogle reCAPTCHA オプションをサポートしています。
 
-* [reCAPTCHA Enterprise](#configure-recaptcha-enterprise)
-* [reCAPTCHA](#configure-recaptcha)
+| ![reCAPTCHA Enterprise](/help/edge/docs/forms/universal-editor/assets/enterprise.svg) | ![reCAPTCHA 標準 ](/help/edge/docs/forms/universal-editor/assets/standard.svg) |
+|:-------------:|:-------------:|
+| [**reCAPTCHA Enterprise**](#set-up-recaptcha-enterprise) | [**reCAPTCHA 標準**](#set-up-recaptcha-standard) |
+| 追加機能とカスタマイズを備えた、プレミアムでエンタープライズクラスの不正検出 | バックグラウンドで目に見えないように動作するスコアベースの検出を備えた無料サービス |
+| 次の用途に最適：複雑なセキュリティのニーズを持つ大企業 | 最適な用途：基本的な保護ニーズを持つ中小規模プロジェクト |
 
->[!NOTE]
+どちらのオプションも、スコアベースの検出（0.0 ～ 1.0）を使用して、ユーザーエクスペリエンスを中断することなく、人間によるインタラクションとボットによるインタラクションを識別します。
+
+## reCAPTCHA Enterprise の設定
+
+### 手順 1:Google Cloud の資格情報を取得する
+
+reCAPTCHA Enterprise を設定する前に、以下が必要です。
+
+- [ プロジェクト ID](https://support.google.com/googleapi/answer/7014113) が設定された ](https://cloud.google.com/recaptcha/docs/prepare-environment?hl=ja#before-you-begin)0}Google Cloud プロジェクト[
+- プロジェクトの [reCAPTCHA Enterprise API 有効 ](https://cloud.google.com/recaptcha/docs/prepare-environment?hl=ja#enable-api)
+- 認証用の [API キー ](https://console.cloud.google.com/apis/credentials)
+- ドメインの [ サイトキー ](https://console.cloud.google.com/security/recaptcha)
+
+### 手順 2：クラウド設定コンテナの作成
+
+![ クラウド設定のセットアップ手順 ](/help/edge/docs/forms/universal-editor/assets/recaptcha-general-configuration.png)
+
+1. AEM オーサーインスタンスにログインします
+2. **ツール**/**一般**/**設定ブラウザー** に移動します。
+3. フォームを見つけて、「**プロパティ**」を選択します
+4. ダイアログで **クラウド設定** を有効にします
+5. 設定を保存して公開します。
+
+### 手順 3:reCAPTCHA エンタープライズサービスの設定
+
+![reCAPTCHA エンタープライズ設定画面 ](/help/edge/docs/forms/universal-editor/assets/recaptcha-enterprise.png)
+
+1. **ツール**/**クラウドサービス**/**reCAPTCHA** に移動します
+2. フォームに移動し、「作成 **をクリックし** す
+3. ダイアログで、次の手順を実行します。
+   - **ReCAPTCHA Enterprise** バージョンの選択
+   - タイトルと名前を入力
+   - プロジェクト ID、サイトキー、API キーを追加します
+   - **スコアベースのサイトキー** をキータイプとして選択します
+   - 人間とボットを区別するしきい値スコア （0-1）を設定
+4. **作成** をクリックし、設定を公開します
+
+## reCAPTCHA 標準の設定
+
+### 手順 1:API キーを取得する
+
+開始する前に、Google reCAPTCHA コンソールから [reCAPTCHA API キーペアを取得 ](https://www.google.com/recaptcha/admin) （サイトキーと秘密鍵）します。
+
+>[!IMPORTANT]
 >
-> reCAPTCHA の仕組みについて詳しくは、[Google reCAPTCHA](https://developers.google.com/recaptcha/) を参照してください。
+>Edge Delivery Services Forms では、**reCAPTCHA スコアベース**&#x200B;のバージョンのみをサポートしています。
 
-### reCAPTCHA Enterprise の設定
+### 手順 2：クラウド設定コンテナの作成
 
-reCAPTCHA Enterprise は、Google が提供するプレミアムなエンタープライズグレードの不正検出および防止サービスです。これは、reCAPTCHA（スコアベース）の基盤に基づいて作成されていますが、ビジネスの複雑なニーズに合わせて、追加機能、スケーラビリティ、カスタマイズを提供します。
+Enterprise バージョンと同じ手順に従って、クラウド設定コンテナを作成し公開します。
 
-#### 始める前に
+### 手順 3:reCAPTCHA 標準サービスの設定
 
-Edge Delivery Services Forms 用に Google reCAPTCHA Enterprise を設定する前に、次の手順が完了していることを確認します。
+![reCAPTCHA 標準設定画面 ](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
 
-1. [Google Cloud プロジェクト](https://cloud.google.com/recaptcha/docs/prepare-environment?hl=ja#before-you-begin)を作成または選択し、[プロジェクト ID](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) を取得します。
+1. **ツール**/**クラウドサービス**/**reCAPTCHA** に移動します
+2. フォームに移動し、「作成 **をクリックし** す
+3. ダイアログで、次の手順を実行します。
+   - **ReCAPTCHA v2** バージョンの選択
+   - タイトルと名前を入力
+   - サイトキーと秘密鍵の追加
+4. **作成** をクリックし、設定を公開します
 
-1. Google Cloud プロジェクトで [reCAPTCHA Enterprise API を有効](https://cloud.google.com/recaptcha/docs/prepare-environment?hl=ja#enable-api)にし、[API キーを作成](https://console.cloud.google.com/apis/credentials)します。
+## reCAPTCHA のフォームへの追加
 
-1. [Google Cloud プロジェクトのサイトキー](https://console.cloud.google.com/security/recaptcha)を作成し、そのサイトキーをコピーします。
+reCAPTCHA を設定したので、次はフォームに追加します。
 
-これらの資格情報を取得したら、フォームの reCAPTCHA Enterprise の設定に進むことができます。
+![reCAPTCHA コンポーネントのフォームへの追加 ](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
 
-1. [クラウド設定コンテナの作成](#1-create-cloud-configuration-container)
-1. [reCAPTCHA Enterprise のクラウドサービス設定を作成](#2-create-the-cloud-service-configuration-for-recaptcha-enterprise)
+1. フォームをユニバーサルエディターで開きます
+2. コンテンツツリーのアダプティブフォームセクションに移動します
+3. **追加** アイコンをクリックし、アダプティブフォームコンポーネント リストから **Captcha （非表示）** を選択します
+   - *または、コンポーネントをフォームにドラッグ&amp;ドロップします*
+4. 「**公開**」をクリックして、reCAPTCHA 保護でフォームを更新します
 
-#### 1. クラウド設定コンテナを作成
+これで、フォームが保護されました。 次の場所で表示します。
+`https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form-name>`
 
-クラウド設定コンテナを作成するには、次の手順を実行します。
+![reCAPTCHA 保護が有効になっているフォーム ](/help/edge/docs/forms/universal-editor/assets/form-with-recaptcha.png)
 
-1. オーサーインスタンスにログインします。
-1. **[!UICONTROL ツール]** ![tools-1](/help/forms/assets/tools-1.png)／**[!UICONTROL 一般]**／**[!UICONTROL 設定ブラウザー]**&#x200B;に移動します。
+## reCAPTCHA 統合の検証
 
-   ![クラウド設定コンテナ](/help/edge/docs/forms/universal-editor/assets/recaptcha-general-configuration.png)
+reCAPTCHA をフォームに追加した後、正しく機能していることを確認する必要があります。 実装の検証方法を次に示します。
 
-1. **[!UICONTROL 設定ブラウザー]**&#x200B;で、フォームに移動し、「**[!UICONTROL プロパティ]**」を選択します。
+### 視覚的検証
 
-   ![クラウド設定プロパティ](/help/edge/docs/forms/universal-editor/assets/general-configuration-properties.png)
+reCAPTCHA v2 （スコアベース）は目に見えて動作しますが、次の方法で存在を確認できます。
 
-1. **[!UICONTROL 設定プロパティ]**&#x200B;ダイアログで、「**[!UICONTROL クラウド設定]**」を有効にします。
+1. **ページソースの検査**：フォームページを右クリックして、「ページのSourceを表示」を選択します
+   - サイトキーと共に reCAPTCHA スクリプトを追加する場所を探します
+   - 例：`<script src="https://www.google.com/recaptcha/api.js?render=YOUR_SITE_KEY"></script>`
 
-1. 「**[!UICONTROL 保存して閉じる]**」を選択して設定内容を保存し、ダイアログを閉じます。
+2. **ネットワークリクエストの確認**：ブラウザー開発者ツールの使用（F12）
+   - フォームを送信し、`google.com/recaptcha` へのネットワークリクエストを探します
+   - これらのリクエストは、フォーム上で reCAPTCHA がアクティブであることを示します
 
-   ![クラウド設定プロパティを有効にする](/help/edge/docs/forms/universal-editor/assets/enable-cloud-configurations.png)
-&#39;
-クラウド設定コンテナを作成したら、公開します。
+### 機能テスト
 
-   ![クラウド設定を公開](/help/edge/docs/forms/universal-editor/assets/publish-cloud-configuration.png)
+reCAPTCHA が実際にフォームを保護していることを検証するには：
 
-#### 2. reCAPTCHA Enterprise のクラウドサービス設定を作成
+1. **通常の送信テスト**:
+   - フォームに有効なデータを入力します
+   - 人間が通常使用するペースでフォームを送信します
+   - フォームが正常に送信されたことを確認します
 
-reCAPTCHA Enterprise のクラウドサービス設定を作成するには、次の手順を実行します。
+2. **ボット様動作テスト**:
+   - フォームを匿名/プライベートブラウジングウィンドウで開きます
+   - フォームに素早く入力する（自動タイプの動作）
+   - 連続して複数回送信
+   - reCAPTCHA が機能している場合、これらの送信はブロックされたりフラグが付けられたりする可能性があります
 
-1. オーサーインスタンスにログインします。
-1. **[!UICONTROL ツール]** ![tools-1](/help/forms/assets/tools-1.png)／**[!UICONTROL Cloud Services]**／**[!UICONTROL reCAPTCHA]** に移動します。
+3. **フォーム送信記録の確認**:
+   - フォーム送信データを確認する
+   - 各送信には、reCAPTCHA スコアを含める必要があります
+   - スコアが 1.0 に近い値は、人間が使用している可能性を示しています
+   - スコアが 0.0 に近い場合は、ボットアクティビティの可能性を示します
 
-   ![reCAPTCHA クラウド設定](/help/edge/docs/forms/universal-editor/assets/recaptcha-cloud-configuration.png)
+### Google reCAPTCHA Admin Console の使用
 
-   **設定**&#x200B;ダイアログが開きます。
+大規模法人ユーザーの場合、Google Cloud Console では詳細な分析を行うことができます。
 
-1. フォームに移動し、「**[!UICONTROL 作成]**」を選択します。
+1. [Google Cloud Console](https://console.cloud.google.com/) に移動します
+2. **セキュリティ**/**reCAPTCHA** に移動します
+3. サイトキーを選択
+4. 評価チャートと統計のレビュー
+5. 次を探します。
+   - トラフィックパターン
+   - スコア配分
+   - 潜在的に不正な活動
 
-   ![CAPTCHA 設定](/help/edge/docs/forms/universal-editor/assets/create-captcha-confguration.png)
+標準の reCAPTCHA ユーザーの場合、基本的な統計情報は [reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin/) で入手できます。
 
-   **[!UICONTROL reCAPTCHA 設定を作成]**&#x200B;ダイアログが開きます。
+### 実装の調整
 
-   ![reCAPTCHA Enterprise](/help/edge/docs/forms/universal-editor/assets/recaptcha-enterprise.png)
+検証結果に基づいて、以下を行います。
 
-1. [!DNL ReCAPTCHA Enterprise] としてバージョンを選択し、タイトル、名前、プロジェクト ID、サイトキー、API キーを指定します。
+- 適切なユーザーがブロックされている場合は、しきい値スコアを下げることを検討します
+- まだスパムを受信している場合は、しきい値スコアを増やすことを検討します
+- 永続的な問題の場合は、reCAPTCHA の設定を確認し、すべてのキーが正しく入力されていることを確認します
 
-   >[!NOTE]
-   >
-   > プロジェクト ID、サイトキー、API キーは、reCAPTCHA Enterprise の[事前準備](#before-you-start)の節から取得できます。
+reCAPTCHA は、機械学習を使用して時間の経過と共に改善を図るため、サイトのトラフィックパターンを学習すると、その有効性が高まる可能性があることに注意してください。
 
-1. **スコアベースのサイトキー**&#x200B;として&#x200B;**[!UICONTROL キータイプ]**&#x200B;を選択します。
-1. [0 ～ 1 の範囲のしきい値スコア](https://cloud.google.com/recaptcha/docs/interpret-assessment-website?hl=ja#interpret_scores)を指定します。スコアがしきい値以上になると、人間のインタラクションを識別し、それ以外の場合はボットのインタラクションとみなされます。
-1. 「**[!UICONTROL 作成]**」を選択して、クラウドサービス設定を作成します。
+## トラブルシューティングと FAQ
 
-   reCAPTCHA クラウド設定を作成したら、公開します。
+| ![ 質問 ](/help/edge/docs/forms/universal-editor/assets/question.svg) | ![回答](/help/edge/docs/forms/universal-editor/assets/answer.svg) |
+|:-------------:|:-------------:|
+| **reCAPTCHA 設定を作成しない場合はどうなりますか？** | グローバルコンテナ内で設定が検索されます。 何も存在しない場合は、エラーが発生します。 |
+| **複数の設定を作成するとどうなりますか？** | 最初に作成した設定が自動的に使用されます。 |
+| **公開済みの URL に変更が表示されないのはなぜですか？** | 変更を加えた後は、必ずフォームを再公開してください。 |
+| **サポートされている reCAPTCHA サービスはどれですか？** | Edge Delivery Services Formsは、スコアベースの reCAPTCHA サービスのみをサポートします。 |
 
-   ![reCAPTCHA 設定を公開](/help/edge/docs/forms/universal-editor/assets/publisg-recaptcha-configuration.png)
+## 次の手順
 
-これで、フォームを作成または編集し、WYSIWYG ベースのオーサリングを使用して reCAPTCHA コンポーネントを追加できます。Google reCAPTCHA をフォームに統合する手順について詳しくは、[フォームでの reCAPTCHA の使用](#use-recaptcha-in-your-form)を参照してください。
+reCAPTCHA でフォームを保護したので、
 
-## reCAPTCHA の設定
+- **実装の検証**:[ 検証手順 ](#-validating-your-recaptcha-integration) に従って、reCAPTCHA が正しく機能していることを確認します
+- **パフォーマンスの監視**：疑わしいアクティビティやスコアの分布についてGoogle reCAPTCHA ダッシュボードを定期的に確認します
+- **設定の微調整**：セキュリティニーズとユーザーエクスペリエンスのフィードバックに基づいてしきい値スコアを調整します
+- **最新情報を入手**:Googleの最新のセキュリティ推奨事項を使用して、reCAPTCHA 実装を最新の状態に保ちます
+- **チームの教育**:reCAPTCHA の仕組みと分析の解釈方法に関する知識を共有します
+- **フィードバックを収集**：ユーザーエクスペリエンスを監視して、正当なユーザーがブロックされないようにします
 
-reCAPTCHA は、ボットやスパムなどの不正なトラフィックを web サイトが検出して防止するのに役立つ、Google が提供する無料サービスです。背景で動作し、各ユーザーインタラクションにリスクスコア（0.0～1.0 の範囲）を割り当てるスコアベースのバージョンをサポートします。スコアがしきい値以上になると、人間のインタラクションを識別し、それ以外の場合はボットのインタラクションとみなされます。
+効果的なフォーム保護は、定期的な監視と調整を必要とする継続的なプロセスです。
 
-#### 始める前に
-
-Edge Delivery Services Forms 用に Google reCAPTCHA を設定する前に、[Google Console から reCAPTCHA API キーペア](https://www.google.com/recaptcha/admin)を取得します。ペアには、サイトキーと秘密鍵が含まれます。
-
->[!NOTE]
->
-> * Edge Delivery Services Forms では、**reCAPTCHA スコアベース**&#x200B;のバージョンのみをサポートしています。
-
-API キーペアを取得したら、フォームの reCAPTCHA の設定に進むことができます。
-
-1. [クラウド設定コンテナの作成](#1-create-cloud-configuration-container-1)
-1. [reCAPTCHA のクラウドサービス設定を作成](#2-create-the-cloud-service-configuration-for-recaptcha)
-
-#### 1. クラウド設定コンテナを作成
-
-クラウド設定コンテナを作成するには、次の手順を実行します。
-
-1. オーサーインスタンスにログインします。
-1. **[!UICONTROL ツール]** ![tools-1](/help/forms/assets/tools-1.png)／**[!UICONTROL 一般]**／**[!UICONTROL 設定ブラウザー]**&#x200B;に移動します。
-
-   ![クラウド設定コンテナ](/help/edge/docs/forms/universal-editor/assets/recaptcha-general-configuration.png)
-
-1. **[!UICONTROL 設定ブラウザー]**&#x200B;で、フォームに移動し、「**[!UICONTROL プロパティ]**」を選択します。
-
-   ![クラウド設定プロパティ](/help/edge/docs/forms/universal-editor/assets/general-configuration-properties.png)
-
-1. **[!UICONTROL 設定プロパティ]**&#x200B;ダイアログで、「**[!UICONTROL クラウド設定]**」を有効にします。
-
-1. 「**[!UICONTROL 保存して閉じる]**」を選択して設定内容を保存し、ダイアログを閉じます。
-
-   ![クラウド設定プロパティを有効にする](/help/edge/docs/forms/universal-editor/assets/enable-cloud-configurations.png)
-
-   クラウド設定コンテナを作成したら、公開します。
-
-   ![クラウド設定を公開](/help/edge/docs/forms/universal-editor/assets/publish-cloud-configuration.png)
-
-#### 2. reCAPTCHA のクラウドサービス設定を作成
-
-reCAPTCHA のクラウドサービス設定を作成するには、次の手順を実行します。
-
-1. オーサーインスタンスにログインします。
-1. **[!UICONTROL ツール]** ![tools-1](/help/forms/assets/tools-1.png)／**[!UICONTROL Cloud Services]**／**[!UICONTROL reCAPTCHA]** に移動します。
-
-   ![reCAPTCHA クラウド設定](/help/edge/docs/forms/universal-editor/assets/recaptcha-cloud-configuration.png)
-
-   **設定**&#x200B;ダイアログが開きます。
-
-1. フォームに移動し、「**[!UICONTROL 作成]**」を選択します。
-
-   ![CAPTCHA 設定](/help/edge/docs/forms/universal-editor/assets/create-captcha-confguration.png)
-
-   **[!UICONTROL reCAPTCHA 設定を作成]**&#x200B;ダイアログが開きます。
-
-   ![reCAPTCHA Enterprise](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
-
-1. [!DNL ReCAPTCHA v2] としてバージョンを選択し、タイトルと名前を指定します。
-1. サイトキーと秘密鍵を指定します。
-
-   >[!NOTE]
-   >
-   > サイトキーと秘密鍵は、reCAPTCHA の [始める前に](#before-you-begin)の節から取得できます。
-
-1. 「**[!UICONTROL 作成]**」を選択して、クラウドサービス設定を作成します。
-
-   reCAPTCHA クラウド設定を作成したら、公開します。
-
-   ![reCAPTCHA 設定を公開](/help/edge/docs/forms/universal-editor/assets/publisg-recaptcha-configuration.png)
-
-これで、フォームを作成および編集し、WYSIWYG ベースのオーサリングを使用して reCAPTCHA コンポーネントを追加できます。Google reCAPTCHA をフォームに統合する手順について詳しくは、[フォームでの reCAPTCHA の使用](#use-recaptcha-in-your-form)を参照してください。
-
-### フォームでの reCAPTCHA の使用
-
-フォームを作成して reCAPTCHA（非表示）コンポーネントを追加するには、次の手順を実行します。
-
-1. 編集用にユニバーサルエディターでフォームを開きます。
-1. コンテンツツリーで、追加した「アダプティブフォーム」セクションに移動します。
-1. 「**[!UICONTROL 追加]**」アイコンをクリックし、**アダプティブフォームコンポーネント**&#x200B;リストから **[!UICONTROL CAPTCHA（非表示）]**&#x200B;を追加します。
-
-   ![reCaptcha コンポーネントを追加](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
-
-   また、ユニバーサルエディターには直感的なドラッグ＆ドロップ機能が用意されているので、必要なアダプティブフォームコンポーネントをドラッグ＆ドロップすることもできます。
-
-1. **[!UICONTROL CAPTCHA（非表示）]**&#x200B;コンポーネントを追加した後、「**公開**」をクリックしてフォームを再度公開します。
-
-   ![フォームを再公開](/help/edge/docs/forms/universal-editor/assets/publish-form.png)
-
-次の URL で、reCAPTCHA サービスを使用してフォームを表示できるようになりました。
-`https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form-name`。
-
-![reCAPTCHA を使用したフォーム](/help/edge/docs/forms/universal-editor/assets/form-with-recaptcha.png)
-
-## よくある質問
-
-* **ユーザーが reCAPTCHA クラウド設定を作成しない場合はどうなりますか？**
-
-  **回答**：ユーザーが reCAPTCHA クラウド設定を作成しない場合、AEM サーバーはグローバル設定コンテナで reCAPTCHA クラウド設定を検索します。グローバル設定コンテナに設定が存在しない場合、AEM サーバーはエラーをスローします。
-
-* **ユーザーが複数の reCAPTCHA クラウド設定を作成するとどうなりますか？**
-  **回答**：ユーザーが複数の reCAPTCHA クラウド設定を作成した場合、最初に作成した reCAPTCHA 設定が自動的に選択されます。
-
-* **公開済みの URL に修正や変更が表示されないのはなぜですか？**
-公開済みの URL に修正や変更が表示されない場合は、フォームを再公開して更新を適用します。
-
-* **Edge Delivery Services Forms がサポートする reCAPTCHA サービスはどれですか？**
-  **回答**：Edge Delivery Services Forms は、Google が提供するスコアベースの reCAPTCHA サービスのみをサポートします。
-
-
-## 関連トピック
-
-{{universal-editor-see-also}}
 

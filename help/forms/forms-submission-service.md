@@ -5,14 +5,17 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '883'
 ht-degree: 1%
 
 ---
 
-# Edge Delivery Services FormsによるForms送信サービス
+# Edge Delivery Services Formsを使用したForms送信サービス
+
+<span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に、GitHub の組織名とリポジトリ名を記載したメールを送信します。 例えば、リポジトリ URL がhttps://github.com/adobe/abcの場合、組織名は adobe で、リポジトリ名は abc.</span> です
+
 
 Forms送信サービスを使用すると、フォーム送信データを OneDrive、SharePoint、Google Sheets などの任意のスプレッドシートに保存でき、目的のスプレッドシートプラットフォーム内でフォームデータに簡単にアクセスして管理できます。
 
@@ -35,7 +38,7 @@ Forms Submission サービスを使用するための前提条件を以下に示
 
 ## Forms送信サービスの設定
 
-アダプティブFormsブロックが設定された新しいAEM プロジェクトを作成します。 新しいAEM プロジェクトの作成方法については、[ はじめに – 開発者向けチュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) を参照してください。 プロジェクトの `fstab.yaml` ファイルを更新します。 既存の参照を、`forms@adobe.com` と共有したフォルダーのパスに置き換えます。
+アダプティブ AEM ブロックが設定された新しいForms プロジェクトを作成します。 新しいAEM プロジェクトの作成方法については、[ はじめに – 開発者向けチュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) を参照してください。 プロジェクトの `fstab.yaml` ファイルを更新します。 既存の参照を、`forms@adobe.com` と共有したフォルダーのパスに置き換えます。
 
 [Forms Submission サービスを手動で設定する ](#configuring-the-forms-submission-service-manually) または [API を使用するForms Submission サービスを設定する ](#configuring-the-forms-submission-service-using-api) ことができます。
 
@@ -84,7 +87,7 @@ Forms Submission サービスをGoogle Sheets またはMicrosoft Excel で設定
 
    ![ スプレッドシートをリンクする ](/help/forms/assets/form-submission-sheet-linking.png)
 
-1. 更新されたフォーム送信サービスで、[AEM Sidekick](https://www.aem.live/docs/sidekick) を使用してシートをプレビューして公開します。
+1. 更新されたフォーム送信サービスで [AEM Sidekick](https://www.aem.live/docs/sidekick) を使用して、シートをプレビューして公開します。
 
 >[!NOTE]
 >
@@ -92,7 +95,7 @@ Forms Submission サービスをGoogle Sheets またはMicrosoft Excel で設定
 
 ### API を使用したForms Submission サービスの設定
 
-また、**POST** リクエストをフォームに送信して、`incoming` シートをデータで更新することもできます。
+また、フォームに **POST** リクエストを送信して、`incoming` シートをデータで更新することもできます。
 
 >[!NOTE]
 >
@@ -100,9 +103,9 @@ Forms Submission サービスをGoogle Sheets またはMicrosoft Excel で設定
 > * `incoming` シートをAdobe Experience Manager `forms@adobe.com` と共有し、編集アクセス権を付与します。
 > * サイドキックで `incoming` シートをプレビューして公開します。
 
-シートを設定するためのPOSTリクエストのフォーマット方法については、[API ドキュメント ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/) を参照してください。 以下に例を示します。
+シート設定のための POST リクエストのフォーマット方法については、[API ドキュメント ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/) を参照してください。 以下に例を示します。
 
-以下に示すように、curl やPostmanなどのツールを使用してこのPOSTリクエストを実行できます。
+以下に示すように、curl やPostmanなどのツールを使用してこの POST リクエストを実行できます。
 
 * **Postmanを使用する場合**:
 
@@ -151,12 +154,12 @@ Postmanで「**送信**」ボタンをクリックすると、`201 Created` の�
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
     —header &quot;Content-Type: application/json&quot; \
     —header &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; \
-    —data &#39;{
+     – データ &#39;{
     &quot;data&quot;: {
-    &quot;startDate&quot;: &quot;2025-01-10&quot;,
+    &quot;startDate&quot;: &quot;2025-01-20&quot;,
     &quot;endDate&quot;: &quot;2025-01-25&quot;,
     &quot;destination&quot;: &quot;Australia&quot;,
-    &quot;class&quot;:&quot;First First First class&quot;,
+    &quot;class&quot;:&quot;First First class&quot;,
     &quot;budget&quot;: &quot;2000&quot;,
     &quot;amount&quot;: &quot;1000000&quot;,
     &quot;name&quot;: &quot;Joe&quot;,
@@ -173,15 +176,15 @@ Postmanで「**送信**」ボタンをクリックすると、`201 Created` の�
     &quot;&#39;json
     
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; ^
-    —header &quot;Content-Type: application/json&quot; ^
-    —header &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; ^
-    —data &quot;{\&quot;data\&quot;: {\&quot;startDate\&quot;: \&quot;2025-01-10\&quot;, \&quot;endDate\&quot;: \&quot;2025-01-25\&quot;, \&quot;destination\&quot;: \&quot;Australia\&quot;, \&quot;class\&quot;: \&quot;First Class\&quot;, \&quot;budget\&quot;: \&quot;2000\&quot;, \&quot;amount\&quot;: \&quot;1000000\&quot;, \&quot;name\&quot;: \&quot;Joe\&quot;, \&quot;age\&quot;: \&quot;35\&quot;, \&quot;subscribe\&quot;: null, \&quot;email\&quot;: \&quot;mary@gmail.com\&quot;}}&quot;
+     – ヘッダー&quot;Content-Type: application/json&quot; ^
+     – ヘッダー&quot;x-adobe-routing: tier=live,bucket=main—[ サイト/リポジトリ ]—[ 組織 ]&quot; ^
+     – データ &quot;{\&quot;data\&quot;: {\&quot;startDate\&quot;: \&quot;2025-01-10\&quot;, \&quot;endDate\&quot;: \&quot;2025-01-25\&quot;, \&quot;destination\&quot;: \&quot;Australia\&quot;, \&quot;class\&quot;: \&quot;First Class\&quot;, \&quot;budget\&quot;: \&quot;2000\&quot;, \&quot;amount\&quot;: \&quot;1000000\&quot;, \&quot;name\&quot;: \&quot;Joe\&quot;, \&quot;age\&quot;: \&quot;35\&quot;, \&quot;subscribe\&quot;: null, \&quot;email\&quot;: \&quot;mary@gmail.com\&quot;}}&quot;
     
     &quot;&#39;
 
 >[!ENDTABS]
 
-上記のPOSTリクエストは、`incoming` シートを更新して以下の応答を返します。
+上記の POST リクエストでは、`incoming` シートが下記の応答で更新されます。
 
 ```json
     < HTTP/1.1 201 Created

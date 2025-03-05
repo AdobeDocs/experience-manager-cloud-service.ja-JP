@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '2155'
-ht-degree: 31%
+source-wordcount: '2289'
+ht-degree: 29%
 
 ---
 
@@ -74,9 +74,9 @@ Formsの対話型コンテンツは次のとおりです。
 会話型Formsは、単なる新しい外観ではなく、ユーザーエクスペリエンスを大きく変える要素です。  エンゲージメントを高め、フォームの放棄を減らし、web サイトとのやり取りを全員にとってより楽しいエクスペリエンスにします。
 
 
-### Edge Delivery Services用のWYSIWYG オーサリング
+### Forms用Edge Delivery ServicesのWYSIWYG オーサリング（ユニバーサルエディター）
 
-WYSIWYG オーサリングは、アダプティブフォームを作成してWYSIWYGに公開するためのForms インターフェイス（ユニバーサルエディターとアダプティブフォームエディター）を提供します。Edge Delivery Services WYSIWYG オーサリングでは、[ ドキュメントベースのオーサリング ](/help/edge/docs/forms/overview.md#document-based-authoring-features) のすべての機能に加えて、次のような様々な機能を提供します。
+ユニバーサルエディターは、ビジュアルデザインのシンプルさと高度な機能を組み合わせて、[ アダプティブフォームをEdge Delivery Servicesに ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) 作成して公開するための強力なWYSIWYG インターフェイスを提供します。 WYSIWYG オーサリングでは、[ ドキュメントベースのオーサリング ](/help/edge/docs/forms/create-forms.md) のすべての機能に加えて、次のような様々な機能を提供します。
 
 * 複雑なロジックを作成する高度なルールエディター。
 * カスタム機能を実現するサーバーサイド拡張機能。
@@ -86,6 +86,26 @@ WYSIWYG オーサリングは、アダプティブフォームを作成してWYS
 * フォームの事前入力とデータの送信の様々なデータソースとの統合。
 * 様々なデータソースとのインタラクションとデータ構造を定義するフォームデータモデル（FDM）。
 * Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics、その他多くのデータソースへのデータの送信など、フォーム送信を処理するための複数の送信アクションから選択する機能。
+
+![ユニバーサルエディター](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
+
+**メリット：**
+
+* **価値実現までの時間の短縮（TTV）**：直感的なビジュアルオーサリングを使用して、複雑なコーディング要件を排除し、より迅速にフォームを起動します。
+* **開発コストの削減**：ビジネスユーザーが最小限の IT 関与でフォームを作成および変更できるようにすることで、総所有コストを削減します。
+* **開発の簡略化**:HTML、CSS、JavaScriptのみを使用してカスタムコンポーネントを作成します。フレームワークに関する専門的な知識は必要ありません。
+* **最新の Web スタック**：フロントエンド開発者になじみのある Web 標準と最新のテクノロジーに基づいて構築されています。
+* **迅速なプロトタイプ作成**：完全な開発に投資する前に、フォームの概念をすばやく作成およびテストします
+
+
+**詳細については、ドキュメントを参照してください。**
+
+| | | |
+|:----------------------:|:---------------------:|:----------------------:|
+| [**主な機能**](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md#key-features-of-universal-editor-for-edge-delivery-services-for-forms) | [**レスポンシブレイアウトの使用**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**送信アクションの設定**](/help/edge/docs/forms/universal-editor/submit-action.md) |
+| [**アダプティブForms用ユニバーサルエディターの概要**](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) | [**フォームのスタイル設定**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | [**reCAPTCHA セキュリティの追加**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) |
+| [**最初のフォームを作成する**](/help/edge/docs/forms/universal-editor/create-forms.md) | [**ルールエディターの使用**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**フォームの公開**](/help/edge/docs/forms/universal-editor/publish-forms.md) |
+| [**ユーザーインターフェイスについて**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | | [**カスタムコンポーネントの作成**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 
 
 ### AEM FormsからMarketoへのコネクタ

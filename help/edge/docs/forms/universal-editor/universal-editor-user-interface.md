@@ -1,15 +1,16 @@
 ---
-title: ユニバーサルエディターについて - 開発者向けチュートリアル
+title: ユニバーサルエディターについて
 description: このチュートリアルは、ユニバーサルエディターのインターフェイスを起動および実行するのに役立ちます。ユニバーサルエディターで独自の Edge Delivery Services フォームを作成するユーザーインターフェイスを理解できます。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '1424'
-ht-degree: 96%
+source-wordcount: '1706'
+ht-degree: 10%
 
 ---
+
 
 # ユニバーサルエディター（WYSIWYG）インターフェイスの詳細
 
@@ -17,9 +18,18 @@ ht-degree: 96%
 
 ![ユニバーサルエディターのユーザーインターフェイス](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-## ユニバーサルエディターのインターフェイスについて
+## 学習内容
 
-フォーム作成者がユニバーサルエディターを使用してフォームを編集すると、コンソールはインタラクティブな WYSIWYG インターフェイスを開き、ユーザーがフォームの編集を開始できます。
+このチュートリアルを終了すると、次のことができるようになります。
+
+- ユニバーサルエディターインターフェイスの主なコンポーネントについて
+- 様々なインターフェイスセクションを自信を持って移動します
+- フォーム作成に不可欠なツールへのアクセス方法と使用方法を理解する
+- 生産性を向上させるキーボードショートカットについて理解する
+
+## ユニバーサルエディターインターフェイスについて
+
+ユニバーサルエディターを使用してフォームを編集すると、コンソールが開き、すぐに編集を開始できるインタラクティブなWYSIWYG インターフェイスが表示されます。 このインターフェイスは、作業時に視覚的なフィードバックをリアルタイムで提供し、エンドユーザーに対してフォームがどのように表示されるかを正確に示します。
 
 >[!NOTE]
 >
@@ -27,209 +37,233 @@ ht-degree: 96%
 
 ![ユニバーサルエディターのユーザーインターフェイス](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface1.png)
 
-ユニバーサルエディターのインターフェイスは、次の 4 つの部分に分かれています。
+ユニバーサルエディターのインターフェイスは、次の 4 つの論理部分に分かれています。
 
-* **[A：Experience Cloud ヘッダー](#experience-cloud-header)**
-* **[B：ユニバーサルエディターのツールバー](#universal-editor-toolbar)**
-* **[C: プロパティパネル](#properties-panel)**
-* **[D：エディター](#editor)**
+- **[A：Experience Cloud ヘッダー](#experience-cloud-header)**
+- **[B：ユニバーサルエディターのツールバー](#universal-editor-toolbar)**
+- **[C: プロパティパネル](#properties-panel)**
+- **[D：エディター](#editor)**
+
+それぞれのセクションを詳しく見ていきましょう。
 
 ### Experience Cloud ヘッダー
 
-Experience Cloud ヘッダーは、コンソールの上部にあります。Experience Cloud 内の現在の場所に関する情報を提供します。また、他の Experience Cloud アプリケーションに移動することもできます。
+Experience Cloud ヘッダーは、コンソールの上部に表示され、より広範なAdobe Experience Cloud エコシステム内のナビゲーションコンテキストを提供します。 現在の場所が表示され、他のExperience Cloud アプリケーションにすばやくアクセスできます。
 
 ![ユニバーサルエディターの Experience Cloud ヘッダー](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager-header.png)
 
+次に、各コンポーネントについて説明します。
 
-それぞれのコンポーネントについて説明します。
+- **Adobe Experience Cloud**
 
-* **Adobe Experience Cloud**
+  画面左側の **Adobe Experience Cloud** リンクをクリックすると、Experience Manager ソリューションのルートに移動できます。 ここから、Experience Manager Sites、Experience Manager Assets、Experience Manager Guidesなどの他のツールにアクセスできます。
 
-  画面の左側にある **Adobe Experience Cloud** リンクをクリックすると、Experience Manager ソリューションのルートに移動し、Experience Manager Sites、Experience Manager Assets、Experience Manager Guides などのツールにアクセスできます。
+  ![Adobe Experience Manager](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager.png)
 
-  ![Adobe Experience Manager](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager.png){width=50%,height=50%}
+- **組織名**
 
-* **組織名**
+  **組織名** には、現在ログインしているIdentity Management System （IMS）組織の名前が表示されます。 複数の組織にアクセスできる場合は、このドロップダウンメニューを使用して組織を切り替えることができます。 例えば、スクリーンショットでは、現在選択されている IMS 組織は「AEM Forms Internal01」です。
 
-  **組織名**&#x200B;には、現在ログインしている IMS 組織の名前が表示されます。他の組織へのアクセス権がある場合は、ドロップダウンリストから選択して、別の IMS 組織に切り替えることができます。例えば、現在選択されている IMS 組織名は `AEM Forms Internal01` です。
+  ![ 組織 ](/help/edge/docs/forms/universal-editor/assets/universal-editor-organization.png)
 
-  ![組織](/help/edge/docs/forms/universal-editor/assets/universal-editor-organization.png){width=50%,height=50%}
+- **ヘルプ**
 
+  ヘルプアイコンを使用すると、学習リソースやサポートリソースにすばやくアクセスできます。 これは、課題が発生した場合や、特定の機能に関するガイダンスが必要な場合に特に役立ちます。 また、この節を通じてフィードバックを送信することもできます。
 
-* **ヘルプ**
+  ![ヘルプ](/help/edge/docs/forms/universal-editor/assets/ue-help.png)
 
-  ヘルプアイコンを使用すると、学習リソースやサポートリソースにクイックアクセスできます。フォーム作成者は、「**ヘルプ**」セクションにフィードバックを追加することもできます。
-  ![ヘルプ](/help/edge/docs/forms/universal-editor/assets/ue-help.png){width=50%,height=50%}
+- **通知**
 
+  「**通知**」セクションには、IMS 組織で現在割り当てられている未完了の通知、リクエストおよび現在のタスクの数が表示されます。 このセクションを監視することで、ワークフローを常に把握することができます。
 
-* **通知**
+  ![通知](/help/edge/docs/forms/universal-editor/assets/ue-notification.png)
 
-  「**通知**」セクションには、現在割り当てられている未完了の通知の数、リクエストおよび IMS 組織内の現在のタスクが表示されます。
+- **ソリューション**
 
-  ![通知](/help/edge/docs/forms/universal-editor/assets/ue-notification.png){width=50%,height=50%}
+  **ソリューション** メニューを使用すると、他のAdobe Experience Cloud ソリューションに切り替えることができ、ワークフロー内の様々なツールを簡単に移動できます。
 
+  ![ソリューション](/help/edge/docs/forms/universal-editor/assets/ue-solutions.png)
 
-* **ソリューション**
+- **ユーザープロファイル**
 
-  **ソリューション**リンクを使用して、他の Experience Cloud ソリューションに切り替えることができます。
-  ![ソリューション](/help/edge/docs/forms/universal-editor/assets/ue-solutions.png){width=50%,height=50%}
+  このアイコンは、プロファイル情報と、現在ログインしている IMS 組織の名前を表示します。 アカウント設定とサインアウトオプションにアクセスするには、このアイコンをクリックします。
 
-
-* **作成者**
-アイコンは、フォーム作成者の詳細と、作成者が現在ログインしている IMS 組織の名前を表します。
-  ![作成者](/help/edge/docs/forms/universal-editor/assets/ue-author.png){width=50%,height=50%}
+  ![作成者](/help/edge/docs/forms/universal-editor/assets/ue-author.png)
 
 ### ユニバーサルエディターのツールバー
 
-ツールバーを使用すると、他のフォームに移動して編集できます。また、フォームを公開または非公開にしたり、フォームのプロパティを編集したり、ルールエディターにアクセスしたりすることもできます。
+ツールバーには、基本的なナビゲーションおよび編集ツールが用意されています。 これを使用すると、フォーム間の移動、フォームの公開または非公開、フォームプロパティの編集、動的な動作を追加するためのルールエディターへのアクセスを行うことができます。
+
 ![ユニバーサルエディターのツールバー](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
 
-それぞれのコンポーネントについて説明します。
+各コンポーネントの機能は次のとおりです。
 
-* **「ホーム」ボタン**
-「ホーム」ボタンを使用すると、ユニバーサルエディターの開始ページに移動できます。また、ユニバーサルエディターを使用して、編集するフォームの URL を直接入力することもできます。
+- **ホームボタン**
+
+  「ホーム」ボタンをクリックすると、ユニバーサルエディターの開始ページに戻ります。 これは、別のフォームで作業を開始する必要がある場合に役立ちます。 また、ロケーションバーに URL を直接入力して、編集する任意のフォームに移動することもできます。
+
   ![ユニバーサルエディターのホーム](/help/edge/docs/forms/universal-editor/assets/ue-home.png)
 
+- **ロケーション バー**
 
+  **ロケーションバー** には、現在編集中のフォームのアドレスが表示されます。 別のフォームに切り替えるには、ロケーションバーをクリックして URL を入力します。 ロケーションバーにフォーカスするためのキーボードショートカットが `l` です。
 
-* **ロケーションバー**
-**ロケーションバー**&#x200B;には、作成者が編集しているフォームのアドレスが表示されます。また、ロケーションバーをクリックして、別のフォーム URL を入力することもできます。ロケーションバーを開くショートカットキーは `l` キーです。
-  ![ロケーションバー](/help/edge/docs/forms/universal-editor/assets/ue-locationbar.png){width=50%,height=50%}
+  ![ ロケーション バー ](/help/edge/docs/forms/universal-editor/assets/ue-locationbar.png)
 
+- **ルールエディター**
 
-
-* **ルールエディター**
-
-  **ルールエディター**&#x200B;には、ルールを作成および管理する直感的で視覚的なインターフェイスが用意されています。ルールエディターを使用して、動的なフォーム動作を追加できます。
+  **ルールエディター** を使用すると、直感的なビジュアルインターフェイスを通じて、フォームに動的な動作を追加できます。 これを使用すると、ユーザーの入力に応答する条件、検証、アクションを作成して、フォームをインタラクティブかつインテリジェントにすることができます。
 
   ![ルールエディター](/help/edge/docs/forms/universal-editor/assets/ue-ruleeditor.png)
 
   >[!NOTE]
   >
-  > * ユニバーサルエディターでは、ルールエディター拡張機能はデフォルトで有効になっていません。ルールエディター拡張機能を有効にするには、公式メール ID から [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) までご連絡ください。
-  > * ルールの作成方法について詳しくは、[WYSIWYG オーサリングのルールエディターの概要](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)の記事を参照してください。
+  > - ユニバーサルエディターでは、ルールエディター拡張機能はデフォルトでは有効になっていません。 この強力な機能を有効にするには、公式メールアドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にお問い合わせください。
+  > - ルールの作成および管理方法については、[WYSIWYG オーサリングでのルールエディターの概要 ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) を参照してください。
 
-* **フォームプロパティを編集**
-「**フォームプロパティを編集**」オプションをクリックすると、フォームデータモデルや公開日などのフォームプロパティを編集できます。
+- **フォームプロパティを編集**
+
+  **フォームプロパティを編集** オプションを使用すると、フォームデータモデル（FDM）や公開日などの重要なフォーム設定を設定できます。 これらのプロパティは、フォームの動作およびバックエンドシステムとの統合の方法に影響します。
+
   ![フォームプロパティを編集](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
 
+- **認証ヘッダー設定**
 
+  「**Authentication Header Settings**」オプションを使用すると、ローカル開発用のカスタム認証ヘッダーを設定できます。 これは、認証資格情報を必要とするフォームをテストする場合に特に便利です。
 
-* **認証ヘッダー設定**
-**認証ヘッダー設定**を使用すると、作成者はローカル開発目的でカスタム認証ヘッダーを設定できます。
-  ![認証ヘッダー](/help/edge/docs/forms/universal-editor/assets/ue-authenticationheader.png){width=50%,height=50%}
+  ![ 認証ヘッダー ](/help/edge/docs/forms/universal-editor/assets/ue-authenticationheader.png)
 
+- **レスポンシブモード**
 
+  **レスポンシブモード** 機能を使用すると、様々なデバイスでのフォームの表示方法をテストできます。 デフォルトでは、エディターはデスクトップレイアウトで開きますが、モバイルビューに切り替えて、フォームをより小さな画面で引き続き使用できて魅力的なものにすることができます。
 
-* **レスポンシブモード**
-  「**レスポンシブモード**」オプションを使用すると、ユニバーサルエディターによるフォームのレンダリング方法を定義できます。デフォルトでは、エディターはデスクトップレイアウトで開き、高さと幅はブラウザーで自動的に決定されます。または、モバイルデバイスをエミュレートして、フォームがモバイルデバイス上でどのように表示されるかを確認することもできます。
+  ![ レスポンシブモード ](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png)
 
-  ![レスポンシブモード](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png){width=50%,height=50%}
+- **プレビューモード**
 
+  **プレビューモード** では、公開時に表示されるとおりにフォームを表示します。 これにより、ユーザーと同様に、リンクやボタンをクリックしてフォームを操作できます。 これは、公開する前に、すべてが期待どおりに動作することを確認するための不可欠な手順です。 キーボードショートカットキーを使用して、編集モードとプレビューモードを切り替 `p` ます。
 
-* **プレビューモード**
-プレビューモードでは、フォームは公開されるときとまったく同じようにエディターに表示されます。これにより、作成者は、リンクやボタンをクリックしてフォーム内を移動できます。編集が完了したら、作成者はフォームをライブユーザー向けに公開できます。編集モードとプレビューモードを切り替えるショートカットキーは `p` です。
   ![プレビュー](/help/edge/docs/forms/universal-editor/assets/ue-preview.png)
 
-* **ページを開く**
-「**ページを開く**」オプションを選択すると、フォームがプレビュー用の新しいタブで開きます。新しいタブでプレビューモードでフォームを開くショートカットキーは `o` です。
+- **ページを開く**
+
+  **ページを開く** ボタンをクリックすると、フォームがプレビュー用の新しいブラウザータブで開きます。 これにより、エディターインターフェイスを使用せずにフォームを全画面表示できます。 このアクションのキーボードショートカットは `o` です。
+
   ![ページを開く](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
 
-* **公開**
+- **公開**
 
-  「**公開**」ボタンを使用すると、フォームをライブユーザーが使用できます。
-  ![公開](/help/edge/docs/forms/universal-editor/assets/ue-publish.png){width=50%,height=50%}
+  ユーザーがフォームを使用できる状態になったら、「**公開** ボタンを使用すると、フォームをライブにして、オーディエンスから使用できます。 これは、フォーム作成ワークフローの最後のステップです。
 
-* **省略記号**
-作成者が（...）省略記号オプションをクリックすると、「**非公開**」オプションが表示されます。フォームを非公開にするには、「**非公開**」オプションを使用します。
-  ![省略記号](/help/edge/docs/forms/universal-editor/assets/ue-ellipsis.png){width=50%,height=50%}
+  ![公開](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
+
+- **省略記号メニュー**
+
+  省略記号（...）をクリックすると、現在ライブになっているフォームの **非公開** 機能など、追加のオプションが表示されます。 これは、フォームを一時的に公開アクセスから削除する必要がある場合や、フォームを更新バージョンに置き換える必要がある場合に便利です。
+
+  ![ 省略記号 ](/help/edge/docs/forms/universal-editor/assets/ue-ellipsis.png)
 
 ### プロパティパネル
 
-**プロパティパネル**は、エディターの右側にあります。フォームの階層で選択したコンポーネントの詳細が表示されます。これは、コンポーネントが選択されていない場合のデフォルトの構造です。
-![UE プロパティパネル](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png){width=50%,height=50%}
+**プロパティパネル** は、インターフェイスの右側に表示され、フォームで選択した内容に基づいてコンテキスト情報を表示します。 コンポーネントが選択されていない場合、フォーム構造全体が表示されます。
 
+![ プロパティパネル ](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
 
-それぞれのコンポーネントについて説明します。
+その主要なコンポーネントを見てみましょう。
 
+- **プロパティモード**
 
-* **プロパティモード**
-「**プロパティ**」オプションでは、エディターで選択したコンポーネントのプロパティが表示されます。例えば、画像には、選択した数値入力コンポーネントのプロパティが表示されます。このオプションを使用して、コンポーネントのプロパティを変更できます。コンポーネントのプロパティを開くショートカット キーは `d` です。
+  **プロパティ** モードには、現在選択しているコンポーネントの設定とオプションが表示されます。 ここで、特定の要件に合わせてフォームの個々の要素をカスタマイズします。 選択したコンポーネントのプロパティを開くためのキーボードショートカットが `d` きます。
 
-  ![UE プロパティ](/help/edge/docs/forms/universal-editor/assets/ue-properties.png){width=50%,height=50%}
+  ![プロパティ](/help/edge/docs/forms/universal-editor/assets/ue-properties.png)
 
+- **コンテンツツリー**
 
-* **コンテンツツリー**
-「**コンテンツツリー**」オプションには、フォームの階層が表示されます。 作成者がコンテンツツリー内の項目をクリックすると、エディターはその項目を選択し、そのコンポーネントまでスクロールします。コンテンツツリービューを切り替えるショートカットキーは、`f` キーです。
+  **コンテンツツリー** には、フォームの階層構造が表示されます。 この視覚的表現は、コンポーネントが相互にどのようにネストされているかを理解するのに役立ちます。 ツリー内の項目をクリックすると、エディター内でその項目が選択され、スクロールしてその場所に移動します。 これは、特に複雑なフォームで役立ちます。 キーボードショートカット `f` ーを使用してコンテンツツリー表示を切り替えます。
 
-  ![コンテンツツリー](/help/edge/docs/forms/universal-editor/assets/ue-contenttree.png){width=50%,height=50%}
+  ![コンテンツツリー](/help/edge/docs/forms/universal-editor/assets/ue-contenttree.png)
 
+- **バリエーションを生成**
 
-* **バリエーションを生成**
-  **バリエーションを生成**&#x200B;は、人工知能を使用して、特定のプロンプトに基づいて様々なバージョンのフォームを生成します。これらのプロンプトは、アドビが提供するか、フォーム作成者が作成および管理できます。
+  **バリエーションの生成** 機能は、人工知能を利用して、特定のプロンプトに基づいてフォームの様々なバージョンを作成します。 これにより、各バリエーションを手動で作成することなく、様々なアプローチやデザインを試すことができます。 プロンプトは、Adobeから提供することも、ユーザーがカスタマイズすることもできます。
 
-  ![バリエーション](/help/edge/docs/forms/universal-editor/assets/ue-variations.png){width=50%,height=50%}
-
+  ![バリエーションを生成](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
 
   >[!NOTE]
   >
-  > フォームのバリエーションを生成を使用する手順について詳しくは、[バリエーションを生成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)の記事を参照してください
+  > フォームのバリエーションを生成するを使用する手順について詳しくは、[ バリエーションの生成 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) の記事を参照してください。
 
-* **実験**：
+- **実験**
 
-  **実験**とは、ユーザーエクスペリエンスとパフォーマンスを最適化することを目的に、フォームやレイアウトの様々なバリエーションのテストに使用されるテクニックを指します。
-  ![実験](/help/edge/docs/forms/universal-editor/assets/ue-experimentation.png){width=50%,height=50%}
+  **実験** 機能を使用すると、様々なフォームデザインとレイアウトを比較する制御されたテストを実行できます。 ユーザーが各バリアントとどのようにやり取りするかを分析することで、コンバージョン率とユーザーエクスペリエンスを最適化するためのデータに基づく意思決定を行うことができます。
 
+  ![ 実験 ](/help/edge/docs/forms/universal-editor/assets/ue-experimentation.png)
 
-* **パーソナライゼーション**
-「**パーソナライゼーション**」オプションは、Adobe エコシステムまたは外部アプリケーションの一部であるフォームと Adobe Experience Platform（AEP）間の接続を確立する設定を指定します。
-  ![パーソナライゼーション](/help/edge/docs/forms/universal-editor/assets/ue-personalizaton.png){width=50%,height=50%}
+- **パーソナライズ機能**
 
+  **Personalization** 設定を使用すると、フォームをAdobe Experience Platform（AEP）または外部アプリケーションと接続できます。 この接続により、ユーザーデータと行動に基づいてカスタマイズされたフォームエクスペリエンスを作成でき、関連性とエンゲージメントを高めることができます。
 
-* **A/B テスト**：
-  **A/B テスト**とは、ユーザーエクスペリエンスとパフォーマンスを最適化することを目的に、フォームとレイアウトの様々なバリエーションのテストに使用されるテクニックを指します。
-  ![A/B テスト](/help/edge/docs/forms/universal-editor/assets/ue-abtesting.png){width=50%,height=50%}
+  ![パーソナライズ機能](/help/edge/docs/forms/universal-editor/assets/ue-personalizaton.png)
 
+- **A/B テスト**
 
+  **A/B テスト** は、フォームの特定のバリエーションを比較して、パフォーマンスが優れたフォームを判断するのに役立ちます。 より広範な実験とは異なり、A/B テストは通常、特定の要素や変更の比較に焦点を当て、最も効果的なオプションを特定します。
 
-* **タスク管理**：
-**タスク管理**機能を使用すると、チームがフォームのカスタマイズと最適化に関連するタスクを管理、追跡、実行できるようにすることで、ワークフローを効率化し、共同作業を強化できます。
-  ![タスク管理](/help/edge/docs/forms/universal-editor/assets/ue-taskmanagement.png){width=50%,height=50%}
+  ![A/B テスト ](/help/edge/docs/forms/universal-editor/assets/ue-abtesting.png)
 
-。
-* **コンテンツドラフト**
+- **タスクの管理**
 
-  「**コンテンツドラフト**」オプションを使用すると、リッチテキスト要素のドラフトを作成できます。ドラフトは、既存のフォームテキストを使用して作成することも、ゼロから作成することもできます。必要に応じて、ドラフトを編集または削除できます。デフォルトでは 3 つのドラフトのみが表示されますが、「**すべて表示**」をクリックすると残りが表示されます。
+  **タスク管理** 機能を使用すると、チームがフォームの作成と最適化に関連するタスクを整理、追跡、完了するのに役立つことで、共同作業が効率化されます。 これにより、明確な説明責任を持って効率的にプロジェクトを進めることができます。
 
-  ![タスク管理](/help/edge/docs/forms/universal-editor/assets/ue-contentdraft.png){width=50%,height=50%}
+  ![ タスクの管理 ](/help/edge/docs/forms/universal-editor/assets/ue-taskmanagement.png)
 
+- **コンテンツドラフト**
 
-* **データソース**
+  **コンテンツドラフト** 機能を使用すると、フォームのテキスト要素の予備バージョンを作成して保存できます。 既存のフォームテキストを使用してドラフトを作成することも、最初からドラフトを作成することもできます。その後、必要に応じてドラフトを編集または削除します。 デフォルトでは 3 つのドラフトが表示されますが、「**すべて表示**」をクリックすると、追加のドラフトが表示されます。
 
-  「**データソース**」オプションを使用すると、フォームデータモデル（FDM）を作成する際に、データソースを設定および選択できます。この方法の場合、選択したデータソースのすべてのデータモデルオブジェクト、プロパティ、サービスを、フォームデータモデル内で使用できます。
-  ![データソース](/help/edge/docs/forms/universal-editor/assets/ue-datasource.png){width=50%,height=50%}
+  ![コンテンツドラフト](/help/edge/docs/forms/universal-editor/assets/ue-contentdraft.png)
 
-* **追加**
+- **データソース**
 
-  「**追加**」オプションを選択すると、選択したコンテナに追加できるコンポーネントのドロップダウンリストが開きます。例えば、「アダプティブフォーム」セクションでは、フォームに追加できる使用できるコンポーネントがリストに表示されます。コンポーネントのリストを開くショートカットキーは `a` です。
-  ![追加アイコン](/help/edge/docs/forms/universal-editor/assets/ue-add.png){width=50%,height=50%}
+  「**データSource**」オプションを使用すると、フォームデータモデル（FDM）のデータソースを設定および選択できます。 この統合により、選択したソースのすべてのデータモデルオブジェクト、プロパティ、サービスをフォーム内で使用できるようになり、動的なデータ取得と送信が可能になります。
 
-* **複製**
+  ![データソース](/help/edge/docs/forms/universal-editor/assets/ue-datasource.png)
 
-  「**複製**」オプションを選択すると、コンテンツツリーまたはエディターで選択したコンポーネントのコピーが作成されます。
-  ![複製アイコン](/help/edge/docs/forms/universal-editor/assets/ue-duplicate.png){width=50%,height=50%}
+- **追加**
 
+  **追加** ボタンをクリックすると、現在選択しているコンテナに追加できるコンポーネントのドロップダウンリストが表示されます。 例えば、アダプティブフォーム セクションを選択すると、そのセクションに追加できるすべてのコンポーネントがこのリストに表示されます。 このコンポーネントリストを開くためのキーボードショートカットは `a` です。
 
-* **削除**
-「**削除**」オプションを選択すると、コンテンツツリーまたはエディターで選択したコンポーネントが削除されます。
+  ![ アイコンを追加 ](/help/edge/docs/forms/universal-editor/assets/ue-add.png)
 
-  ![削除](/help/edge/docs/forms/universal-editor/assets/ue-delete.png){width=50%,height=50%}
+- **複製**
+
+  「**複製** オプションは、選択したコンポーネントの正確なコピーを作成します。 これにより、最初から作成するのではなく、複製してから変更できるので、複数の類似要素が必要な場合に時間を節約できます。
+
+  ![ 複製アイコン ](/help/edge/docs/forms/universal-editor/assets/ue-duplicate.png)
+
+- **削除**
+
+  **削除** オプションは、選択したコンポーネントをフォームから削除します。 このオプションを使用する場合は、確認プロンプトが表示されずに要素がすぐに削除されるので、注意が必要です。
+
+  ![削除](/help/edge/docs/forms/universal-editor/assets/ue-delete.png)
 
 ### エディター
 
-エディターを使用すると、フォームを編集でき、ロケーションバーで指定したフォームが編集領域にレンダリングされます。エディターがプレビューモードの場合、使用可能なボタンとリンクを使用してフォームを移動できます。
-![エディター](/help/edge/docs/forms/universal-editor/assets/ue-editor.png){width=50%,height=50%}
+エディターは、フォームを作成および変更する中心的なワークスペースです。 場所バーで指定されたフォームが表示され、フォームがユーザーにどのように表示されるかを正確に示すWYSIWYG エクスペリエンスが提供されます。 プレビューモードでは、ボタンやリンクを介したナビゲーションをテストして、ユーザーと同じようにフォームを操作できます。
 
-## 関連トピック
+![エディター](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
 
-{{universal-editor-see-also}}
+エディターでは、コンポーネントの追加、プロパティの設定および整理を行い、直感的で効果的なフォームエクスペリエンスを作成して、ほとんどの時間を費やすことができます。
+
+## キーボードショートカットの概要
+
+生産性を高めるために、次の重要なキーボードショートカットに注意してください。
+
+- `l` - ロケーションバーをフォーカスします
+- `p` – 編集モードとプレビューモードを切り替えます
+- `o` - フォームを新しいタブで開く
+- `d` – 選択したコンポーネントのプロパティを開く
+- `f` - コンテンツツリー表示を切り替えます
+- `a` – 追加するコンポーネントのリストを開きます
+
+

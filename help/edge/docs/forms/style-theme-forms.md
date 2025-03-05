@@ -1,60 +1,60 @@
 ---
-title: AEM Forms の Edge Delivery Services のテーマとスタイルのカスタマイズ
-description: AEM Forms の Edge Delivery Services のテーマとスタイルのカスタマイズ
+title: AEM Forms用Edge Delivery Servicesのテーマとスタイルのカスタマイズ
+description: AEM Forms用Edge Delivery Servicesのテーマとスタイルのカスタマイズ
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
-source-git-commit: 3b6ffd391b36f2f0d09fe054140b08bca6f0c941
-workflow-type: ht
-source-wordcount: '2016'
-ht-degree: 100%
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
+workflow-type: tm+mt
+source-wordcount: '1909'
+ht-degree: 72%
 
 ---
 
 
 # フォームの外観をカスタマイズ
 
-フォームは、web サイトでのユーザーのインタラクションに不可欠で、データを入力できるようにします。カスケーディングスタイルシート（CSS）を使用すると、フォームのフィールドのスタイル設定、フォームの視覚的表現の強化、ユーザーエクスペリエンスの向上を行うことができます。
+フォームは、web サイトでのユーザーのインタラクションに不可欠で、データを入力できるようにします。カスケーディングスタイルシート（CSS）を使用してフォームフィールドのスタイルを設定し、フォームの視覚的表現を強化し、ユーザーエクスペリエンスを向上させることができます。
 
-アダプティブフォームブロックを使用すると、すべてのフォームフィールドで一貫した構造を作成できます。一貫性のある構造により、フィールドタイプとフィールド名に基づいてフォームフィールドの選択とスタイル設定を行う、CSS セレクターの開発が容易になります。
+アダプティブフォームブロックを使用すると、すべてのフォームフィールドで一貫した構造を作成できます。この一貫した構造により、CSS セレクターを開発しやすくなります。これにより、フィールドタイプとフィールド名に基づいてフォームフィールドを選択し、スタイルを設定することができます。
 
-このドキュメントでは、様々なフォームコンポーネントの HTML 構造の概要を説明し、アダプティブフォームブロックのフォームフィールドのスタイルを設定する、様々なフォームフィールドの CSS セレクターの作成方法を理解するのに役立ちます。
+このドキュメントでは、様々なフォームコンポーネントのHTML構造の概要を説明し、様々なフォームフィールド用の CSS セレクターを作成してアダプティブFormsブロックのフォームフィールドのスタイルを設定する方法の理解を深めるのに役立ちます。
 
-記事を最後まで読むと、次の内容を理解できます。
+この記事を読み終えると、以下を達成できます。
 
-* アダプティブフォームブロックに含まれているデフォルトの CSS ファイルの構造を理解できます。
-* 一般的なコンポーネントや、特定のコンポーネント（ドロップダウン、ラジオグループ、チェックボックスグループなど）を含め、アダプティブフォームブロックが提供するフォームコンポーネントの HTML 構造を理解できます。
-* CSS セレクターを使用して、フィールドタイプとフィールド名に基づいてフォームフィールドのスタイルを設定し、要件に基づいて一貫したスタイルを設定したり、独自のスタイルを設定したりする方法を学びます。
+* アダプティブFormsブロックに含まれるデフォルト CSS ファイルの構造に関する理解を深める
+* 一般的なコンポーネントと、ドロップダウン、ラジオグループ、チェックボックスグループなどの特定のコンポーネントを含め、アダプティブ Forms ブロックによって提供されるフォームコンポーネントのHTML構造の理解を深めます
+* CSS セレクターを使用してフィールドタイプとフィールド名に基づいてフォームフィールドのスタイルを設定し、要件に基づいて一貫性のある一意のスタイルを設定する方法を説明します
 
 
 ## フォームフィールドタイプについて
 
 スタイル設定を開始する前に、アダプティブフォームブロックでサポートされている一般的なフォームの[フィールドタイプ](/help/edge/docs/forms/form-components.md)を確認します。
 
-* 入力フィールド：テキスト入力、メール入力、パスワード入力などが含まれます。
-* チェックボックスグループ：複数のオプションを選択するために使用します。
-* ラジオグループ：グループから 1 つのオプションのみを選択する場合に使用します。
-* ドロップダウン：選択ボックスとも呼ばれ、リストから 1 つのオプションを選択するのに使用します。
-* パネル／コンテナ：関連するフォーム要素をグループ化するのに使用します。
+* 入力フィールド：これには、テキスト入力、メール入力、パスワード入力などが含まれます
+* チェックボックスグループ：複数のオプションの選択に使用します
+* ラジオグループ：グループから 1 つのオプションのみを選択する場合に使用します
+* ドロップダウン：セレクトボックスとも呼ばれ、リストから 1 つのオプションを選択するために使用します
+* パネル/コンテナ：関連するフォーム要素をグループ化するために使用します
 
 ## 基本的なスタイル設定の原則
 
 特定のフォームフィールドのスタイルを設定する前に、[CSS の基本概念](https://www.w3schools.com/css/css_intro.asp)を理解することが重要です。
 
-* [セレクター](https://www.w3schools.com/css/css_selectors.asp)：CSS セレクターを使用すると、特定の HTML 要素をスタイル設定の対象にできます。要素セレクター、クラスセレクターまたは ID セレクターを使用できます。
-* [プロパティ](https://www.w3schools.com/css/css_syntax.asp)：CSS プロパティは、要素の外観を定義します。フォームフィールドのスタイル設定に関する一般的なプロパティには、色、背景色、境界線、パディング、余白などがあります。
-* [ボックスモデル](https://www.w3schools.com/css/css_boxmodel.asp)：CSS ボックスモデルは、パディング、境界線、余白で囲まれたコンテンツ領域として、HTML 要素の構造を記述します。
-* フレックスボックス／グリッド：CSS [フレックスボックス](https://www.w3schools.com/css/css3_flexbox.asp)および[グリッドレイアウト](https://www.w3schools.com/css/css_grid.asp)は、レスポンシブで柔軟なデザインを作成するのに強力なツールです。
+* [セレクター](https://www.w3schools.com/css/css_selectors.asp)：CSS セレクターを使用すると、特定の HTML 要素をスタイル設定の対象にできます。要素セレクター、クラスセレクター、ID セレクターのいずれかを使用できます
+* [プロパティ](https://www.w3schools.com/css/css_syntax.asp)：CSS プロパティは、要素の外観を定義します。フォームフィールドのスタイル設定に共通のプロパティには、色、背景色、境界線、パディング、余白などがあります
+* [ ボックスモデル ](https://www.w3schools.com/css/css_boxmodel.asp):CSS ボックスモデルは、HTML要素の構造を、パディング、境界線、余白で囲まれたコンテンツ領域として表します
+* Flexbox/Grid: CSS[Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) および [Grid レイアウト ](https://www.w3schools.com/css/css_grid.asp) は、レスポンシブで柔軟なデザインを作成するための強力なツールです
 
 ## アダプティブフォームブロックのフォームのスタイル設定
 
 アダプティブフォームブロックは、標準化された HTML 構造を提供し、フォームコンポーネントの選択とスタイル設定のプロセスを簡素化します。
 
-* **デフォルトのスタイルを更新**：`/blocks/form/form.css file` を編集することで、フォームのデフォルトのスタイルを変更できます。このファイルでは、複数手順のウィザードフォームをサポートする、フォームの包括的なスタイル設定を提供します。この例では、カスタム CSS 変数を使用することを重視しており、フォーム間でのカスタマイズ、メンテナンス、統一されたスタイル設定が容易になります。アダプティブフォームブロックをプロジェクトに追加する手順について詳しくは、[フォームの作成](/help/edge/docs/forms/create-forms.md)を参照してください。
+* **デフォルトスタイルを更新**:`/blocks/form/form.css` ファイルを編集して、フォームのデフォルトスタイルを変更できます。 このファイルでは、複数手順のウィザードフォームをサポートする、フォームの包括的なスタイル設定を提供します。この例では、カスタム CSS 変数を使用することを重視しており、フォーム間でのカスタマイズ、メンテナンス、統一されたスタイル設定が容易になります。アダプティブフォームブロックをプロジェクトに追加する手順について詳しくは、[フォームの作成](/help/edge/docs/forms/create-forms.md)を参照してください。
 
-* **カスタマイズ**：デフォルトの `forms.css` をベースとして使用して、フォームコンポーネントのルックアンドフィールを変更してカスタマイズし、視覚的に魅力があり、ユーザーに使いやすいものにします。このファイルの構造は、web サイト全体で一貫したデザインを推進し、フォームのスタイルを編成および維持することを推奨します。
+* **カスタマイズ**：デフォルトの `forms.css` をベースとして使用し、フォームコンポーネントのルックアンドフィールをカスタマイズして、視覚的に訴えかけ、使いやすくします。 このファイルの構造は、web サイト全体で一貫したデザインを推進し、フォームのスタイルを編成および維持することを推奨します。
 
-## forms.css の構造の分類
+## forms.css 構造の分類
 
 * **グローバル変数：**`:root` レベルで定義されているこれらの変数（`--variable-name`）には、一貫性を保ち、更新を容易にする、スタイルシート全体で使用される値が保存されます。これらの変数は、色、フォントサイズ、パディングなどのプロパティを定義します。独自のグローバル変数を宣言することも、既存のグローバル変数を変更してフォームのスタイルを変更することもできます。
 
@@ -66,7 +66,7 @@ ht-degree: 100%
 
 * **メディアクエリ：**&#x200B;これらは、様々な画面サイズに合わせてスタイルを提供し、それに応じてレイアウトとスタイルを調整します。
 
-* **その他のスタイル：**&#x200B;このセクションでは、成功メッセージまたはエラーメッセージ、ファイルのアップロード領域、フォーム内で発生する可能性のあるその他の要素のスタイルを対象としています。
+* **その他のスタイル設定：** この節では、成功またはエラーメッセージ、ファイルのアップロード領域、フォームで発生するその他の要素のスタイルについて説明します。
 
 
 ## コンポーネント構造
@@ -75,28 +75,28 @@ ht-degree: 100%
 
 ### 一般コンポーネント（ドロップダウン、ラジオグループ、チェックボックスグループを除く）：
 
-ドロップダウン、ラジオグループ、チェックボックスグループを除くすべてのフォームフィールドには、次の HTML 構造があります。
+すべてのフォームフィールド（ドロップダウン、ラジオグループ、チェックボックスグループを除く）は、次のHTML構造を持ちます。
 
 +++ 一般コンポーネントの HTML 構造
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
    <label for="{FieldId}" class="field-label">First Name</label>
-   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id="{FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - First name should be minimum 3 characters and a maximum of 10 characters.
+    Hint - First name should be a minimum of 3 characters and a maximum of 10 characters.
    </div>
 </div>
 ```
 
 * クラス：div 要素には、特定の要素とスタイル設定をターゲットにする、いくつかのクラスがあります。フォームフィールドをスタイル設定する CSS セレクターを開発するには、`{Type}-wrapper` または `field-{Name}` クラスが必要です。
-   * {Type}：フィールドタイプ別にコンポーネントを識別します。例えば、テキスト（text-wrapper）、数値（number-wrapper）、日付（date-wrapper）です。
-   * {Name}：名前別にコンポーネントを識別します。フィールドの名前に使用できる文字は英数字のみで、名前内の複数の連続するダッシュは 1 つのダッシュ `(-)` に置き換えられ、フィールド名の開始ダッシュと終了ダッシュは削除されます。例えば、名（field-first-name field-wrapper）です。
-   * {FieldId}：フィールドの一意の識別子で、自動的に生成されます。
-   * {Required}：フィールドが必須かどうかを示すブール値です。
-* ラベル：`label` 要素はフィールドの説明テキストを提供し、`for` 属性を使用して入力要素に関連付けます。
-* 入力：`input` 要素は、入力するデータのタイプを定義します。例えば、テキスト、番号、メールです。
-* 説明（オプション）：クラス `field-description` の `div` は、ユーザーに追加情報または手順を提供します。
+   * {Type}：フィールドタイプ別にコンポーネントを識別します。例えば、text （テキストラッパー）、number （number-wrapper）、date （date-wrapper）などです
+   * {Name}：名前別にコンポーネントを識別します。フィールド名には英数字のみを使用できます。名前に含まれる複数の連続するダッシュは、単一のダッシュ `(-)` に置き換えられ、フィールド名の先頭と末尾のダッシュは削除されます。 例えば、first-name （field-first-name field-wrapper）と指定します。
+   * {FieldId}：これは、自動的に生成されるフィールドの一意の ID です
+   * {Required}: フィールドが必須かどうかを示すブール値です
+* ラベル：`label` 要素は、フィールドの説明テキストを提供し、`for` 属性を使用して入力要素に関連付けます
+* 入力：`input` 要素は、入力するデータのタイプを定義します。例：text、number、email
+* 説明（オプション）: クラス `field-description` の `div` は、ユーザーに追加情報や手順を提供します
 
 **HTML 構造の例**
 
@@ -115,72 +115,64 @@ ht-degree: 100%
 +++ 一般コンポーネントの CSS セレクター
 
 ```CSS
-  
-  /* Target all input fields within any .{Type}-wrapper  */
-  .{Type}-wrapper  {
-    /* Add your styles here */
-    border: 1px solid #ccc;
-    padding: 8px;
-    border-radius: 4px;
-  }
-  
-  /* Target all input fields within any .{Type}-wrapper  */
-  .{Type}-wrapper input {
-    /* Add your styles here */
-    border: 1px solid #ccc;
-    padding: 8px;
-    border-radius: 4px;
-  }
-  
-  /* Target any element with the class field-{Name}  */
-  .field-{Name} {
-    /* Add your styles here */
-    /* This could be used for styles specific to all elements with   field-{Name} class, not just inputs */
-  }
-  
-  
+/* Target all input fields within any .{Type}-wrapper */
+.{Type}-wrapper {
+  /* Add your styles here */
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Target all input fields within any .{Type}-wrapper */
+.{Type}-wrapper input {
+  /* Add your styles here */
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Target any element with the class field-{Name} */
+.field-{Name} {
+  /* Add your styles here */
+  /* This could be used for styles specific to all elements with field-{Name} class, not just inputs */
+}
 ```
 
-* `.{Type}-wrapper`：フィールドタイプに基づいて、外側の `div` 要素をターゲットにします。例えば、`.text-wrapper` はすべてのテキストフィールドをターゲットにします。
-* `.field-{Name}`：さらに、特定のフィールド名に基づいて要素を選択します。例えば、`.field-first-name` は「名」テキストフィールドをターゲットにします。このセレクターは、field-{Name} クラスを持つ要素をターゲットにするのに使用できますが、注意することが重要です。この特定のケースでは、入力自体だけでなくラベルや説明要素もターゲットにするので、入力フィールドのスタイル設定には役に立ちません。テキスト入力フィールド（.text-wrapper input）をターゲットにするセレクターなど、より具体的なセレクターを使用することをお勧めします。
-
-
+* `.{Type}-wrapper`：フィールドタイプに基づいて外部 `div` 要素をターゲットに設定します。 例えば、`.text-wrapper` はすべてのテキストフィールドをターゲットにします
+* `.field-{Name}`：さらに、特定のフィールド名に基づいて要素を選択します。例えば、`.field-first-name` は「名」テキストフィールドをターゲットにします。このセレクターは、field-{Name} クラスを持つ要素をターゲットにするのに使用できますが、注意することが重要です。この特定のケースでは、入力自体だけでなくラベルや説明要素もターゲットにするので、入力フィールドのスタイル設定には役に立ちません。テキスト入力フィールド（.text-wrapper input）をターゲティングする場合のように、より具体的なセレクターを使用することをお勧めします
 
 **一般コンポーネントの CSS セレクターの例**
 
 ```CSS
-/*Target all text input fields */
-
-text-wrapper input {
+/* Target all text input fields */
+.text-wrapper input {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
 }
 
-/*Target all fields with name first-name*/
-
-first-name input {
+/* Target all fields with name first-name */
+.field-first-name input {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
 }
 ```
+
 +++
 
 ### ドロップダウンコンポーネント
 
 ドロップダウンメニューの場合、`input` 要素の代わりに `select` 要素を使用します。
 
-
-
 +++ ドロップダウンコンポーネントの HTML 構造
 
 ```HTML
-<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={required}>
-   <label for="{FieldId}" class="field-label">First Name</label>
+<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
+   <label for="{FieldId}" class="field-label">Country</label>
    <select id="{FieldId}" name="{Name}"><option></option><option></option></select>
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - First name should be minimum 3 characters and a maximum of 10 characters.
+    Please select your country from the list.
    </div>
 </div>
 ```
@@ -204,8 +196,6 @@ first-name input {
 +++
 
 +++ ドロップダウンコンポーネントの CSS セレクター
-
-次の CSS に、ドロップダウンコンポーネントの CSS セレクターの例をいくつか示します。
 
 ```CSS
 /* Target the outer wrapper */
@@ -241,22 +231,8 @@ first-name input {
 
 .drop-down-wrapper select::after {
   content: "\25BC";
-  font-size: 12px;
-  color: #ccc;
-  /* Adjust positioning as needed */
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 ```
-
-* ラッパーをターゲットにする：最初のセレクター（`.drop-down-wrapper`）は外側のラッパー要素をターゲットにし、スタイルがドロップダウンコンポーネント全体に適用されるようにします。
-* Flexbox レイアウト：Flexbox は、ラベル、ドロップダウン、説明を垂直に配置して、すっきりとしたレイアウトを実現します。
-* ラベルのスタイル設定：ラベルは太字のフォントとわずかな余白で目立ちます。
-* ドロップダウンのスタイル設定：`select` 要素には、境界線、パディング、丸い角が追加され、洗練された外観が得られます。
-* 背景色：視覚的な調和を図るために、一貫した背景色を設定します。
-* 矢印のカスタマイズ：オプションのスタイルでは、デフォルトのドロップダウン矢印を非表示にし、Unicode 文字と位置を使用してカスタム矢印を作成します。
 
 +++
 

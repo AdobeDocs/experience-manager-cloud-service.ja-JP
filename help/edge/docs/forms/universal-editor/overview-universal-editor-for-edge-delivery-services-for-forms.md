@@ -4,9 +4,9 @@ description: アダプティブFormsを作成するには、Edge Delivery Servic
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 6b7ff166467a399502b63fd13b1f836213b7839b
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1078'
 ht-degree: 70%
 
 ---
@@ -22,20 +22,18 @@ ht-degree: 70%
 
 軽量のクライアントサイドレンダリングの管理、ブラウザー間の互換性の確保、または厳密なアクセシビリティ標準の準拠のいずれであっても、ユニバーサルエディターはフォームの作成と管理の効率化されたソリューションを提供します。
 
-![ユニバーサルエディター](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} -->
+![ ユニバーサルエディター ](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 ## Edge Delivery Services for Formsのユニバーサルエディターの主な機能
 
 
-
-次に、幅が等しいカードのレイアウトを示します（固定幅の列を使用）。
 
 | ![WYSIWYG インターフェイス ](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![ルールエディター](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![ 送信アクション ](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) |
 |:-------------:|:-------------:|:-------------:|
 | [**WYSIWYG インターフェイス**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | [**ルールエディター**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**送信アクション**](/help/edge/docs/forms/universal-editor/submit-action.md) |
 | ユニバーサルエディターでは、事前定義済みのコンポーネントライブラリ、レスポンシブデザイン、テンプレートベースの作成、リアルタイムのフィールド変更を備えたフォームデザイン用の WYSIWYG インターフェイスを提供します。 | ルールエディターを使用すると、ユーザーは、イベント駆動型ルール、即時検証、軽量の JavaScript と JSON によるエラー処理を使用して、動的なフォームインタラクションを作成できます。 | 送信アクションは、バックエンド統合、条件付き送信ロジック、安全なエンドポイント、プリプロセッサーをサポートし、送信ワークフローを効率化します。 |
 
-| ![ 公開/非公開 ](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![ レスポンシブモード ](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![ カスタムコンポーネント ](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
+| ![ 公開/非公開 ](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![レスポンシブモード](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![ カスタムコンポーネント ](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
 |:-------------:|:-------------:|:-------------:|
 | [**公開/非公開**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**レスポンシブモード**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**カスタムコンポーネント**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 | フォームの表示を簡単に制御し、数回クリックするだけで、エディターから直接フォームを公開または非公開にできます。 | デバイス（デスクトップ、タブレット、モバイル）間でシームレスに適応するフォームを設計します。レスポンシブモードを使用して、様々な画面サイズのフォームをプレビューおよびテストします。 | カスタムコンポーネントを使用すると、開発者は特定の組織のユースケースに合わせて独自の要素を作成して、フォームの機能を拡張できます。 |

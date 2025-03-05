@@ -5,16 +5,16 @@ feature: Edge Delivery Services
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+exl-id: b39601a1-7f37-4a7d-a4c8-7e79dca074e5
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%
 
 ---
 
-
-
 # よくある質問（FAQ）
+
 
 ## 多言語サポートとグローバルな使用
 
@@ -55,4 +55,3 @@ ht-degree: 0%
 - Forms Crosswalk ドキュメント
 - 翻訳ワークフローに関する標準AEM Sites ドキュメント
 - フォームのオーサリングに関するユニバーサルエディタードキュメント
-

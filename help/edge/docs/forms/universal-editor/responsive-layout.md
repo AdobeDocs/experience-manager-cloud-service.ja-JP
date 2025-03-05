@@ -4,42 +4,41 @@ description: この記事では、ユニバーサルエディターで様々な�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 8f5b4d863ab469c44b4c221eab1fb128706b45c7
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 2%
+source-wordcount: '1285'
+ht-degree: 1%
 
 ---
+
 
 # WYSIWYG オーサリングのレスポンシブモード
 
 <span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に、GitHub の組織名とリポジトリ名を記載したメールを送信します。 例えば、リポジトリ URL がhttps://github.com/adobe/abcの場合、組織名は adobe で、リポジトリ名は abc.</span> です
 
+## レスポンシブFormsの概要
 
-[ ユニバーサルエディター ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) を使用すると、様々なエミュレーターでEdge Delivery Services Formsをプレビューして、オーサリング中のフォームのルックアンドフィールを確認できます。
+今日のマルチデバイスの世界では、デスクトップモニターからスマートフォンまで、あらゆるサイズの画面でフォームが見栄えがよく、適切に機能する必要があります。 ユニバーサルエディターのレスポンシブモードを使用すると、オーサリングプロセス中に様々なデバイスサイズでフォームをプレビューおよびテストできるので、これを支援できます。
 
-レスポンシブモードを使用すると、開発者はデスクトップ、タブレット、モバイルデバイスなど、様々な画面サイズに自動的に適応するレイアウトをデザインできます。 ユニバーサルエディターは、デスクトップ、タブレットおよびモバイルデバイス用のエミュレーターをサポートします。 画面サイズに応じて高さと幅を設定し、次のアクションを実行できます。
-
-* 向きの設定
-* 幅と高さを指定
-* 向きを変更する
+[ ユニバーサルエディター ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) を使用すると、様々な画面サイズに自動的に適応するフォームを作成でき、使用しているデバイスに関係なく、最適なユーザーエクスペリエンスが提供されます。
 
 ## 様々なデバイスのレスポンシブモードでのFormsのプレビュー
 
 ユニバーサルエディターでは、画面の右上隅にある **エミュレーター** アイコンを使用すると、様々なデバイスサイズでページをプレビューし、レスポンシブデザインの動作をテストして、ユーザーエクスペリエンスを向上させることができます。
 
-ユニバーサルエディターが様々な画面サイズでフォームをレンダリングする方法を確認するには、次の手順を実行します。
+レスポンシブモードでフォームをプレビューするには：
 
 1. フォームをユニバーサルエディターで編集用に開きます。
-1. ユニバーサルエディターツールバーで使用可能な ![ エミュレーターアイコン ](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} を選択し、エミュレーターアイコンをクリックしてオプションを表示します。
+2. ツールバーの ![ デバイスプレビューシンボルを表示しているエミュレーターアイコン ](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} アイコンをクリックします。
+3. デバイス形式を選択してください：
+   - デスクトップ（デフォルト）
+   - タブレットなど）のアクティブマーカーを確認する。
+   - モバイル
+   - カスタム （幅と高さを指定）
 
-   ![ レスポンシブモード ](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
+![ 様々なデバイスのレスポンシブモードオプションを示すユニバーサルエディターのスクリーンショット ](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
 
-1. 選択したデバイスのユニバーサルエディターでフォームをエミュレートするためのオプションを選択します（デスクトップ、タブレット、モバイル）。
-
-   ![ レスポンシブモード ](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png){width=40%,height=40%}
-
-   デフォルトでは、エディターはデスクトップレイアウトで開き、高さと幅はブラウザーによって自動的に決定されます。 または、モバイルデバイスまたはタブレットデバイス上のフォームをエミュレートすることもできます。 また、カスタムデバイスの画面の幅と高さをカスタマイズすることもできます。
+**スクリーンローテーター** アイコンを使用して、タブレットやモバイルデバイスでプレビューするときに縦向きと横向きを切り替えることもできます。
 
 ユニバーサルエディターには、様々なデバイスでフォームをプレビューするための様々なエミュレーターが用意されています。 次の表に、使用可能なエミュレータタイプと、対応するデバイス表現を示します。
 
@@ -50,49 +49,53 @@ ht-degree: 2%
     </tr>
     <tr>
         <td style="width: 20%">デスクトップ</td>
-        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="デスクトップエミュレーター" style="width: auto; height: auto"></td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="全幅レイアウトを表示するフォームのデスクトップビュー" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td style="width: 20%">タブレットなど）のアクティブマーカーを確認する。</td>
-        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="タブレットエミュレーター" style="width: auto; height: auto"></td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="調整済みコンポーネントを含む中幅のレイアウトを示す、フォームのタブレットビュー" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td style="width: 20%">モバイル</td>
-        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="モバイルエミュレーター" style="width: auto; height: auto"></td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="コンポーネントが積み重ねられた狭いレイアウトを示すフォームのモバイルビュー" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td style="width: 20%">カスタムデバイス</td>
-        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="カスタムデバイスエミュレーター" style="width: auto; height: auto"></td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="ユーザー指定のディメンションを含むフォームのカスタムデバイス表示" style="width: auto; height: auto"></td>
     </tr>
 </table>
-
-**スクリーンローテーター** アイコンを使用すると、異なるデバイスでフォームをプレビューする際に、縦向きと横向きを切り替えることができます。 これは、開発者が、レスポンシブデザインが様々なデバイスでの画面の回転にどのように適応するかをテストするのに役立ちます。
-
-ユニバーサルエディターは、様々なフォームレイアウトをサポートしています。 様々なレイアウトを探索するには、[ レイアウトの機能 ](#layout-capabilities) の節を参照してください。
 
 ## レイアウト機能
 
 ユニバーサルエディターを使用すると、簡単に使用できるフォームを作成して、エンドユーザーに動的なエクスペリエンスを提供できます。 フォームのレイアウトは、フォーム内での項目やコンポーネントの表示方法をコントロールします。
 
 ユニバーサルエディターは、フォームに対して次のタイプのレイアウトをサポートします。
-* [パネルレイアウト](#panel-layout)
-* [ウィザードレイアウト](#wizard-layout)
-* [アコーディオンレイアウト](#accordion-layout)
+
+- [パネルレイアウト](#panel-layout)
+- [ウィザードレイアウト](#wizard-layout)
+- [アコーディオンレイアウト](#accordion-layout)
 
 ### パネルレイアウト
 
-パネルレイアウトは、関連するフィールドを整理して、対応するコンテンツを簡単に移動および検索するのに役立ちます。 パネルレイアウトを使用すると、フォーム内の個別のパネル、セクションまたはパネル内にフォームコンポーネントを配置できます。
+パネルレイアウトは、関連するフィールドを整理して、対応するコンテンツを簡単に移動および検索するのに役立ちます。 パネルレイアウトを使用すると、フォーム内の個別のセクションまたはパネル内にフォームコンポーネントを配置できます。
 
-![ パネルレイアウト ](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
+![ フォーム内の複数の異なるセクションを表示するパネルレイアウト ](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
+
+**例：** 求人応募フォームでは、「個人情報」、「教育」、「職業体験」、「参照」を別個のセクションに分割するパネルを使用する場合があります。
+
+**レスポンシブ動作：** 小さい画面では、通常、パネルは縦に積み重ねられ、狭い幅に調整しながら個別のグループを維持します。
 
 [ パネルコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) を使用して、パネルレイアウトをフォームに追加できます。 パネルコンポーネントの様々なプロパティを設定する方法について詳しくは、[ パネルコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) の記事を参照してください。
 
 ### ウィザード レイアウト
 
+ウィザードレイアウトを使用すると、複雑なフォームを別個の手順に分割して簡素化できます。 各手順はプロセスの異なる部分を表し、ユーザーは多くの場合、「次へ **や「戻る** ボタンを使用して手順を順番に移動し **す**。 ウィザードレイアウトを使用すると、複数のセクションや手順を含むフォームを作成できます。
 
-ウィザードレイアウトは、複雑なフォームを明確な手順に分割してシンプル化するのに役立ちます。 各手順はプロセスの異なる部分を表し、ユーザーは多くの場合、「次へ **や「戻る** ボタンを使用して手順を順番に移動し **す**。 ウィザードレイアウトを使用すると、複数のセクションや手順を含むフォームを作成できます。
+![ ナビゲーションコントロールを含む複数ステップのフォームを示すウィザードレイアウト ](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
 
-![ ウィザードのレイアウト ](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
+**例：** 保険金請求フォームでは、ウィザードを使用して、インシデントの詳細の入力、証拠のアップロード、個人情報の入力、送信の確認を行い、ユーザーをガイドすることができます。
+
+**レスポンシブ動作：** モバイルデバイスでは、ウィザードは段階的なアプローチを維持しますが、画面が狭くなるように各手順でコンテンツが調整され、多くの場合、大きな画面に並べて表示される要素が積み重ねられます。
 
 [ ウィザードコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) を使用して、フォームにウィザードレイアウトを追加できます。 ウィザードコンポーネントの様々なプロパティを設定する方法について詳しくは、[ ウィザードコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) の記事を参照してください。
 
@@ -100,7 +103,11 @@ ht-degree: 2%
 
 アコーディオンレイアウトでは、アダプティブフォーム内の折りたたみ可能なセクションまたはパネルにコンテンツが表示されます。 セクションを展開すると、内にコンテンツが表示されますが、その他のセクションは折りたたまれたままです。 大量の情報をコンパクトに表示する場合に最適です。
 
-![ アコーディオンレイアウト ](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
+![ フォーム内で拡張可能なセクションを示すアコーディオンレイアウト ](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
+
+**例：** 製品設定フォームでは、「基本オプション」、「詳細機能」、「アクセサリ」、「支払いプラン」のアコーディオンセクションを使用すると、ユーザーは一度に 1 つの側面に集中できます。
+
+**レスポンシブ動作：** アコーディオンは、当然ながらコンテンツの展開部分のみを表示することで縦空間を節約するので、モバイルデバイスでは特に効果的で、小さい画面に最適です。
 
 [ アコーディオンコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) を使用して、フォームにアコーディオンレイアウトを追加できます。 アコーディオンコンポーネントの様々なプロパティを設定する方法について詳しくは、[ アコーディオンコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) の記事を参照してください。
 
@@ -115,7 +122,38 @@ ht-degree: 2%
 | **ナビゲーション** | パネルヘッダーをクリックして移動します |  – 進む：「次へ」ボタン <br> – 戻る：「戻る」ボタン <br>- オプションのスキップ手順 | ヘッダーをクリックしてセクションを展開/折りたたむ |
 | **ユーザーエクスペリエンス** | 管理しやすい方法で大量のコンテンツを整理する | ステップバイステップのガイダンス、負担の軽減 | セクションを展開/折りたたんだ状態のコンパクト ビュー |
 | **ユースケース** | セクションが分類された複雑なフォーム | セットアッププロセス、複雑なフォーム | FAQ、設定メニュー、詳細なコンテンツセクション |
+| **モバイルに最適** | 標準 – パネルが縦に積み重なります | 良好 – 現在の手順にのみ焦点を当てます | 優れた機能 – 折りたたみ可能なセクションでスペースを節約 |
+
+## レスポンシブ Formsのベストプラクティス
+
+フォームがすべてのデバイスで最高のエクスペリエンスを提供するようにするには、次のベストプラクティスに従います。
+
+1. **モバイル向けのデザイン：** まずモバイルデバイス用のフォームを設計し、次に、より大きな画面に向けてフォームを強化します。 このアプローチにより、コア機能が最小の画面で動作することが保証されます。
+
+2. **適切なフィールドタイプの使用：** タッチデバイスで適切に機能するフィールドタイプを選択します。
+   - オプションが多数ある場合に、ラジオボタンの代わりにドロップダウンを使用する
+   - タッチ入力用に設計された日付ピッカーを使用する
+   - ボタンとタッチターゲットが 44 ピクセル x 44 ピクセル以上であることを確認します
+
+3. **画面が小さい場合はシンプルにする：**
+   - モバイルデバイスで 1 行に表示するフィールド数を減らす
+   - 「さらに表示」オプションの背後にオプションフィールドを非表示にすることを検討します
+   - 複雑なフォームをモバイルでより多くのステップに分割
+
+4. **徹底的にテスト：** フォームを実際のデバイスで常にテストするか、ユニバーサルエディターのエミュレーターモードを使用して、画面サイズをまたいで正しく機能することを確認します。
+
+5. **読み込み時間の考慮：** 特に低速の接続を使用するモバイルユーザーの場合、画像サイズを最適化し、必要なリソースを最小限に抑えます。
+
+## レスポンシブ Formsのトラブルシューティング
+
+| 問題 | 考えられる原因 | 解決策 |
+|-------|---------------|----------|
+| モバイルデバイスでフォームが途切れて表示される | 固定幅の設定またはオーバーフローの問題 | ピクセルの代わりに相対単位（%、rem）を使用し、オーバーフロー：非表示のプロパティをチェックします。 |
+| 操作が困難な要素に触れる | ターゲットに触れるのが小さすぎる、または近すぎる | ボタン/入力サイズを 44 px x 44 px 以上に増やし、インタラクティブ要素間のスペースを広げます |
+| 小さな画面でのコンテンツのオーバーフロー | 小さいビューポート用のレスポンシブルールがありません | メディアクエリまたはレスポンシブクラスを追加して、異なる画面サイズに合わせてレイアウトを調整します |
+| モバイルデバイスでのフォームが遅すぎる | 大きな画像または過度のスクリプト | 画像を最適化し、JavaScriptを最小限に抑え、重要でない要素に対しては遅延読み込みを検討します |
+| エミュレーターと実際のデバイスで外観が異なる | ブラウザー固有のレンダリングまたはデバイスのバリエーション | エミュレーターだけでなく、可能であれば実際のデバイスでテストする |
 
 ## 関連トピック
 
-{{universal-editor-see-also}}
+{#see-more-eds-forms}
