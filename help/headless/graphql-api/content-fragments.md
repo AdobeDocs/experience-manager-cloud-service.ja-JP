@@ -4,10 +4,10 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: b1b28cdc5fd1b697a2c2cd2893340d3c6afc8562
+source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
 workflow-type: tm+mt
-source-wordcount: '5814'
-ht-degree: 97%
+source-wordcount: '6021'
+ht-degree: 96%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->コンテンツフラグメントで使用するGraphQL API の様々な機能は、早期導入プログラムを通じて利用できます。
+>コンテンツフラグメントで使用する GraphQL API の様々な機能は、早期導入プログラムを通じて利用できます。
 >
 >ステータスを確認し、興味がある場合に適用する方法について詳しくは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
@@ -263,14 +263,14 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 | 1 行のテキスト | `String`、`[String]` | 作成者名、場所名などの単純な文字列に使用します。 |
 | 複数行テキスト | `String`、`[String]` | 記事の本文などのテキストを出力するために使用します |
 | 数値 | `Float`、`[Float]` | 浮動小数点数と整数を表示するために使用します |
-| ブーリアン | `Boolean` | チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
+| ブール値 | `Boolean` | チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
 | 日時 | `Calendar` | 日時を ISO 8601 形式で表示するために使用します. 選択したタイプに応じて、AEM GraphQL で使用できるフレーバーは、`onlyDate`、`onlyTime`、`dateTime` の 3 つです。 |
 | 定義済みリスト | `String` | モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
 | タグ | `[String]` | AEM で使用されているタグを表す文字列のリストを表示するために使用します |
-| コンテンツ参照 | `String`、`[String]` | AEM 内の別のアセットへのパスを表示するために使用します |
-| コンテンツ参照 (UUID) | `String`、`[String]` | パスを表示するために使用します。パスは、AEMの別のアセットに対して UUID で表されます |
-| フラグメント参照 | *モデル型の*<br><br>単一のフィールド：`Model` - 直接参照されるモデル型 <br><br>マルチフィールド（1 つの参照タイプ）：`[Model]` - 型の配列 `Model`（配列から直接参照）<br><br>複数の参照型を持つマルチフィールド：`[AllFragmentModels]` - 和集合型を持つ配列から参照される、すべてのモデル型の配列 | モデルの作成時に定義された、特定のモデル型の 1 つ以上のコンテンツフラグメントの参照に使用します |
-| フラグメント参照 (UUID) | *モデル型の*<br><br>単一のフィールド：`Model` - 直接参照されるモデル型 <br><br>マルチフィールド（1 つの参照タイプ）：`[Model]` - 型の配列 `Model`（配列から直接参照）<br><br>複数の参照型を持つマルチフィールド：`[AllFragmentModels]` - 和集合型を持つ配列から参照される、すべてのモデル型の配列 | モデルの作成時に定義された、特定のモデル型の 1 つ以上のコンテンツフラグメントの参照に使用します |
+| コンテンツ参照 | `String`、`[String]` | AEM 内の別のアセットへのパスを表示するのに使用します。 |
+| コンテンツ参照（UUID） | `String`、`[String]` | AEM 内の別のアセットへのパスを UUID で表示するのに使用します。 |
+| フラグメント参照 | *モデル型の*<br><br>単一のフィールド：`Model` - 直接参照されるモデル型 <br><br>マルチフィールド（1 つの参照タイプ）：`[Model]` - 型の配列 `Model`（配列から直接参照）<br><br>複数の参照型を持つマルチフィールド：`[AllFragmentModels]` - 和集合型を持つ配列から参照される、すべてのモデル型の配列 | モデルの作成時に定義された、特定のモデル型の 1 つ以上のコンテンツフラグメントの参照に使用します。 |
+| フラグメント参照（UUID） | *モデル型の*<br><br>単一のフィールド：`Model` - 直接参照されるモデル型 <br><br>マルチフィールド（1 つの参照タイプ）：`[Model]` - 型の配列 `Model`（配列から直接参照）<br><br>複数の参照型を持つマルチフィールド：`[AllFragmentModels]` - 和集合型を持つ配列から参照される、すべてのモデル型の配列 | モデルの作成時に定義された、特定のモデル型の 1 つ以上のコンテンツフラグメントの参照に使用します。 |
 
 {style="table-layout:auto"}
 
@@ -315,15 +315,15 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 [サンプルクエリ - ある 1 つの特定の都市フラグメント](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)を参照してください。
 
-#### ID （UUID） {#id-uuid}
+#### ID（UUID） {#id-uuid}
 
-ID フィールドは、AEM GraphQLの識別子としても使用されます。 これは、AEM リポジトリ内のコンテンツフラグメントアセットのパスを表しますが、実際のパスを保持する代わりに、リソースを表す UUID を保持します。 これをコンテンツフラグメントの識別子として選択した理由は次のとおりです。
+ID フィールドは、AEM GraphQL で識別子としても使用されます。これは、AEM リポジトリ内のコンテンツフラグメントアセットのパスを表しますが、実際のパスを保持する代わりに、リソースを表す UUID を保持します。これをコンテンツフラグメントの識別子として選択した理由は次のとおりです。
 
 * AEM 内で一意である
-* 容易に取得でき、
-* リソースを移動しても変更されません。
+* 取得しやすい
+* リソースを移動しても変更されない
 
-コンテンツフラグメントおよび参照されるコンテンツフラグメントまたはアセットの UUID は、JSON プロパティリク `_id` ストを介して返すことができます。
+コンテンツフラグメントおよび参照されるコンテンツフラグメントまたはアセットの UUID は、JSON プロパティ `_id` を通じて返すことができます。
 
 ```graphql
 {
@@ -1085,6 +1085,110 @@ query allTeams {
 } 
 ```
 
+## Dynamic Media for OpenAPI アセットのサポート（リモート Assets） {#dynamic-media-for-openapi-asset-support}
+
+[ リモートアセット ](/help/sites-cloud/administering/content-fragments/authoring.md#reference-remote-assets) 統合により、現在のAssets インスタンスに対してローカルではないAEMを、コンテンツフラグメントエディターから参照できます。 コンテンツフラグメントエディターおよびGraphQL JSON での OpenAPI アセットのサポートのために、Dynamic Media によって実装されています。
+
+### Dynamic Media で OpenAPI アセットをサポートするためのサンプルクエリ（リモート Assets） {#sample-query-dynamic-media-for-openapi-asset-support}
+
+リクエストの例を次に示します。
+
+* リモートアセットの参照の概念を説明します
+
+  ```graphql
+  {
+    testModelList {
+      items {
+        remoteasset {
+          ... on RemoteRef {
+              repositoryId
+                  assetId
+          }
+        }
+        multiplecontent {
+          ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+        }
+      }
+      _references {
+        ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+      }
+    }
+  }
+  ```
+
+* 応答
+
+  ```graphql
+  {
+    "data": {
+      "testModelList": {
+        "items": [
+          {
+            "remoteasset": {
+              "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+              "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+            },
+            "multiplecontent": [
+              {
+                "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+                "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+              },
+              {
+                "_path": "/content/dam/test-folder/test.jpg",
+                "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+                "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+              }
+            ]
+          }
+        ],
+        "_references": [
+          {
+            "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+            "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+          },
+          {
+            "_path": "/content/dam/test-folder/test.jpg",
+            "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+            "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+          }
+        ]
+      }
+    }
+  }  
+  ```
+
+**制限事項**
+
+現在の制限事項は次のとおりです。
+
+* GraphQL配信は、`repositoryId` および `assetId` のみをサポートします（他のアセットメタデータは返されません）
+
+  >[!NOTE]
+  >
+  >次に、[ アセット配信 API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) に基づいて、完全な URL をクライアントサイドで作成する必要があります。
+
+* リモートリポジトリからの参照には、*承認済み* アセットのみを使用できます
+* 参照されているアセットがリモートリポジトリから削除されると、コンテンツフラグメントアセットの参照が壊れます。
+* ユーザーがアクセス権を持つすべての配信アセットリポジトリーが選択可能になります。利用可能なリストは制限できません。
+* AEM インスタンスとリモートアセットリポジトリーインスタンスは両方とも同じバージョンである必要があります。
+* [ 管理 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) および [ 配信 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/) 経由で公開されるアセットメタデータはありません。 アセットメタデータの詳細を取得するには、アセットメタデータ API を使用する必要があります。
+
 ## AEM 用の GraphQL - 拡張機能の概要 {#graphql-extensions}
 
 AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様に従います。AEM での GraphQL クエリには、次のような拡張機能があります。
@@ -1140,12 +1244,12 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
          * [モデルからのコンテンツフラグメントモデルのサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-wknd-content-fragment-model-from-model)を参照してください
 
       * `_path`：リポジトリ内のコンテンツフラグメントへのパス
-         * [サンプルクエリ - 1 つの特定の都市フラグメント](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)を参照してください
+         * 詳しくは、[サンプルクエリ - 1 つの特定の都市フラグメント](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)を参照してください。
 
       * `_id`：リポジトリ内のコンテンツフラグメントの UUID
 
-         * [UUID 参照を持つ特定モデルのコンテンツフラグメントのサンプルクエリ ](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references) を参照してください。
-         * [UUID リファレンスによるコンテンツフラグメントのサンプルクエリを参照してください。](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
+         * 詳しくは、[UUID 参照を含む特定モデルのコンテンツフラグメントのサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)を参照してください。
+         * [詳しくは、UUID 参照によるコンテンツフラグメントのサンプルクエリを参照してください。](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
 
       * `_reference`：参照（リッチテキストエディターでのインライン参照など）を表示します
          * [プリフェッチされた参照を含んだ複数のコンテンツフラグメントのサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)を参照してください

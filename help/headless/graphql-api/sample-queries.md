@@ -4,10 +4,10 @@ description: GraphQL を AEM と共に使用し、サンプルコンテンツと
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
+source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
 workflow-type: tm+mt
-source-wordcount: '1940'
-ht-degree: 94%
+source-wordcount: '1972'
+ht-degree: 98%
 
 ---
 
@@ -17,9 +17,9 @@ GraphQL を AEM と共に使用し、サンプルコンテンツとクエリを�
 
 >[!IMPORTANT]
 >
->コンテンツフラグメントで使用するGraphQL API の様々な機能は、早期導入プログラムを通じて利用できます。
+>コンテンツフラグメントで使用する GraphQL API の様々な機能は、早期導入プログラムを通じて利用できます。
 >
->ステータスと、関心のあるユーザーへの適用方法を確認するには、[ リリースノート ](/help/release-notes/release-notes-cloud/release-notes-current.md) を確認してください。
+>ステータスを確認し、興味がある場合に適用する方法について詳しくは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
 >[!NOTE]
 >
@@ -1199,7 +1199,7 @@ query {
 
 ### メタデータのサンプルクエリ {#sample-wknd-metadata}
 
-このクエリでは次のものを検索します。
+このクエリでは次のものを問い合わせます。
 
 * `adventure` タイプのすべてのコンテンツフラグメントについて
 * メタデータ
@@ -1319,7 +1319,7 @@ query {
 
 ### ネストされたコンテンツフラグメントのサンプルクエリ - 単一モデルタイプ{#sample-wknd-nested-fragment-single-model}
 
-このクエリでは次のものを検索します。
+このクエリでは次のものを問い合わせます。
 
 * 特定のパスにある `article` タイプの 1 つのコンテンツフラグメントについて
    * そのフラグメントの中の、参照されている（ネストされた）フラグメントのパスと作成者
@@ -1349,7 +1349,7 @@ query {
 
 #### 単一の参照モデルタイプ
 
-このクエリでは次のものを検索します。
+このクエリでは次のものを問い合わせます。
 
 * `bookmark` タイプの複数のコンテンツフラグメントについて
    * 特定のモデルタイプ `Article` の他のフラグメントへのフラグメント参照を含むもの
@@ -1373,7 +1373,7 @@ query {
 
 #### 複数の参照モデルタイプ
 
-このクエリでは次のものを検索します。
+このクエリでは次のものを問い合わせます。
 
 * `bookmark` タイプの複数のコンテンツフラグメントについて
    * 特定のモデルタイプ `Article` および `Adventure` の他のフラグメントへのフラグメント参照を含むもの
@@ -1492,14 +1492,14 @@ query {
 }
 ```
 
-### UUID 参照を使用した特定モデルのコンテンツフラグメントのサンプルクエリ {#sample-wknd-fragment-specific-model-uuid-references}
+### UUID 参照を使用した特定のモデルのコンテンツフラグメントのサンプルクエリ {#sample-wknd-fragment-specific-model-uuid-references}
 
 これらのクエリでは次のものを検索します。
 
 * コンテンツフラグメントの UUID、および参照されるコンテンツフラグメントまたはアセットの UUID
 * 結果は、JSON プロパティ `_id` を使用して返されます
 
-#### UUID 参照を使用した特定モデルのコンテンツフラグメントのサンプルクエリ {#sample-wknd-fragment-specific-model-using-a-uuid-reference}
+#### UUID 参照を使用した特定のモデルのコンテンツフラグメントのサンプルクエリ {#sample-wknd-fragment-specific-model-using-a-uuid-reference}
 
 次のクエリは、`_id` と `_path` を使用して、すべてのコンテンツ参照を返します。
 
@@ -1531,7 +1531,7 @@ query {
 }
 ```
 
-#### UUID リファレンスによるコンテンツフラグメントのサンプルクエリ {#sample-wknd-fragment-specific-model-by-uuid-reference}
+#### UUID 参照によるコンテンツフラグメントのサンプルクエリ {#sample-wknd-fragment-specific-model-by-uuid-reference}
 
 次のクエリは、特定の `_id` に関連するすべてのコンテンツ参照を返します。
 
@@ -1565,7 +1565,7 @@ query {
 
 ### RTE インライン参照を含んだ 1 つのコンテンツフラグメントのサンプルクエリ {#sample-wknd-single-fragment-rte-inline-reference}
 
-このクエリでは次のものを検索します。
+このクエリでは次のものを問い合わせます。
 
 * 特定のパスにある `bookmark` タイプの 1 つのコンテンツフラグメントについて
    * その中の RTE インライン参照
@@ -1613,7 +1613,7 @@ query {
 
 ### 特定モデルの 1 つのコンテンツフラグメントバリエーションのサンプルクエリ {#sample-wknd-single-fragment-given-model}
 
-このクエリでは次のものを検索します。
+このクエリでは次のものを問い合わせます。
 
 * 特定のパスにある `author` タイプの 1 つのコンテンツフラグメントについて
    * そのフラグメントの中の、バリエーション `another` に関するデータ
@@ -1636,7 +1636,7 @@ query {
 
 ### 特定モデルの複数のコンテンツフラグメントの名前付きバリエーションを取得するサンプルクエリ {#sample-wknd-variation-multiple-fragment-given-model}
 
-このクエリでは次のものを検索します。
+このクエリでは次のものを問い合わせます。
 
 * 特定のバリエーション `another` を持つ `author` タイプのコンテンツフラグメント
 
@@ -1662,7 +1662,7 @@ query {
 
 ### 特定モデルの複数のコンテンツフラグメントとそのバリエーションのサンプルクエリ {#sample-wknd-multiple-fragment-variations-given-model}
 
-このクエリでは次のものを検索します。
+このクエリでは次のものを問い合わせます。
 
 * `article` タイプのコンテンツフラグメントとすべてのバリエーション
 
@@ -1689,7 +1689,7 @@ query {
 
 ### 特定のタグが設定された特定モデルのコンテンツフラグメントバリエーションのサンプルクエリ{#sample-wknd-fragment-variations-given-model-specific-tag}
 
-このクエリでは次のものを検索します。
+このクエリでは次のものを問い合わせます。
 
 * タグ `WKND : Activity / Hiking` の付いた 1 つ以上のバリエーションを持つ `article` タイプのコンテンツフラグメント
 
@@ -1718,7 +1718,7 @@ query {
 
 ### 特定ロケールの複数のコンテンツフラグメントのサンプルクエリ {#sample-wknd-multiple-fragments-given-locale}
 
-このクエリでは次のものを検索します。
+このクエリでは次のものを問い合わせます。
 
 * `fr` ロケール内の `article` タイプのコンテンツフラグメント
 
@@ -1887,6 +1887,10 @@ Dynamic Media アセットへの URL 配信の場合
 
 * [URL による Dynamic Media アセット配信のサンプルクエリ - 複数の参照](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)を参照してください
 
+現在のAEM インスタンスに対してローカルではないリモートアセットを配信する場合は、コンテンツフラグメントエディターを使用します。
+
+* 詳しくは、[OpenAPI アセットをサポートする Dynamic Media のサンプルクエリ（リモート Assets） ](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-for-openapi-asset-support) を参照してください。
+
 ## GraphQL で使用するコンテンツフラグメント構造のサンプル {#content-fragment-structure-graphql}
 
 サンプルクエリは次の構造に基づいています。
@@ -1921,11 +1925,11 @@ Dynamic Media アセットへの URL 配信の場合
 
 | フィールド名 | データタイプ | 参照 |
 |--- |--- |--- |
-| name（氏名） | 1 行のテキスト | |
+| 名前 | 1 行のテキスト | |
 | 名 | 1 行のテキスト | |
 | 授賞歴 | フラグメント参照（複数フィールド） | [Award](#model-award) |
 
-#### Award（賞） {#model-award}
+#### 賞 {#model-award}
 
 賞を定義するフィールドは次のとおりです。
 
@@ -1940,7 +1944,7 @@ Dynamic Media アセットへの URL 配信の場合
 
 | フィールド名 | データタイプ | 参照 |
 |--- |--- |--- |
-| name（氏名） | 1 行のテキスト | |
+| 名前 | 1 行のテキスト | |
 | 国 | 1 行のテキスト | |
 | 人口 | 数値 | |
 | カテゴリ | タグ | |
@@ -1959,7 +1963,7 @@ Dynamic Media アセットへの URL 配信の場合
 
 #### Person（人物） {#fragment-person}
 
-| name | 名 | 授賞歴 |
+| 名前 | 名 | 授賞歴 |
 |--- |--- |--- |
 | Lincoln | Abe | |
 | Smith | Adam | |
@@ -1972,7 +1976,7 @@ Dynamic Media アセットへの URL 配信の場合
 
 #### 賞 {#fragment-award}
 
-| ショートカット／ID | title |
+| ショートカット／ID | タイトル |
 |--- |--- |
 | GB | Gameblitz |
 | GS | Gamestar |
@@ -1980,12 +1984,12 @@ Dynamic Media アセットへの URL 配信の場合
 
 #### 都市 {#fragment-city}
 
-| name | 国名 | 人口 | カテゴリ |
+| 名前 | 国 | 人口 | カテゴリ |
 |--- |--- |--- |--- |
-| Basel | Switzerland | 172258 | city:emea |
+| Basel | スイス | 172258 | city:emea |
 | Berlin | Germany | 3669491 | city:capital<br>city:emea |
 | Bucharest | Romania | 1821000 | city:capital<br>city:emea |
 | サンフランシスコ | 米国 | 883306 | city:beach<br>city:na |
-| サンノゼ | USA | 102635 | city:na |
+| サンノゼ | 米国 | 102635 | city:na |
 | シュトゥットガルト | ドイツ | 634830 | city:emea |
 | チューリッヒ | スイス | 415367 | city:capital<br>city:emea |
