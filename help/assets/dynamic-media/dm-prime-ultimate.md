@@ -2,10 +2,11 @@
 title: Dynamic Media PrimeとUltimate
 description: Dynamic Media PrimeとUltimateの詳細、その利点およびこれら 2 つの違いについて説明します。
 role: User
-source-git-commit: dce23f34cab2248d65e0e19d98fdfd529eadbdc6
+exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
+source-git-commit: 0c0d33b3e022ff0265220bf3106b888b83e8af99
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 15%
+source-wordcount: '417'
+ht-degree: 14%
 
 ---
 
@@ -44,18 +45,16 @@ Dynamic Media Primeのその他の主なメリットには、次のようなも�
 
 ## Dynamic Media Ultimate {#dynamic-media-ultimate}
 
-Dynamic Media Ultimateは、Experience Manager Assetsのアクティベーションサービスで、OpenAPI の基本機能と高度な機能を備えた Dynamic Media と、AEM as a Cloud Serviceの Dynamic Media ソリューションが含まれます。 これにより、パフォーマンスが最適化されスケーラビリティに優れたグローバルネットワーク経由で、様々なバリエーションのリッチコンテンツをリアルタイムで生成および配信できます。
+Dynamic Media Ultimateは、Experience Manager Assetsのアクティベーションサービスで、これには [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) の基本機能と高度な機能に加えて [Dynamic Media ソリューション in AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md) が含まれます。 これにより、パフォーマンスが最適化されスケーラビリティに優れたグローバルネットワーク経由で、様々なバリエーションのリッチコンテンツをリアルタイムで生成および配信できます。
 
 Dynamic Media Primeは、AEM AssetsとAdobeの統合またはAdobe以外のアプリケーションとの統合などの Dynamic Media Ultimate機能、変換（回転、切り抜き、反転、サイズ、優先 Web ページ、高さ、幅、画質）、最適化された配信に加えて、次の機能を提供します。
 
-* OpenAPI 機能を備えた Dynamic Media には、次のような高度な機能があります。
+* [OpenAPI を使用した Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) 機能は、次のような高度な機能を備えています。
 
    * アセットの安全な配信、
    * [ スマート切り抜き、スマートイメージング、画像プリセット、追加の画像修飾子 ](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/)。
 
 * [AEM as a Cloud Serviceの Dynamic Media ソリューション ](/help/assets/dynamic-media/dynamic-media.md) には、次の主な機能も含まれています。
-
-   * [コンテンツ自動化](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-automation/overview)
 
    * [Dynamic Media テンプレート](/help/assets/dynamic-media/dynamic-media-templates.md)
 
@@ -70,3 +69,6 @@ Dynamic Media Primeは、AEM AssetsとAdobeの統合またはAdobe以外のア�
 * [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
 
 機能の完全なリストについて詳しくは、[OpenAPI 機能を使用した Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) および [Dynamic Media の操作 ](/help/assets/dynamic-media/dynamic-media.md) を参照してください。
+
+AEM as a Cloud Service環境に対して Dynamic Media PrimeとUltimateを有効にする方法については、[Dynamic Media PrimeとUltimateの有効化 ](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md) を参照してください。
+
