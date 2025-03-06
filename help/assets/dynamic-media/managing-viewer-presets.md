@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: b4ffcddddfcd990c359380071f19b5442dee9eb2
 workflow-type: tm+mt
-source-wordcount: '4326'
-ht-degree: 100%
+source-wordcount: '4301'
+ht-degree: 99%
 
 ---
 
@@ -427,7 +427,7 @@ iOS、Android™ 2.x および Android™ 3.x デバイスでサポートされ�
 
      CSS ファイルを読み込むと、Visual Editor は、その CSS に正しいビューアマーカーが使用されているかを確認します。例えば、ズームビューアを作成している場合、読み込むすべての CSS ルールが、親のビューア要素に定義されているズームビューアのクラス名 `.s7mixedmediaviewer` を使用して定義されている必要があります。
 
-     指定ビューアの CSS マーカーが正しく定義された CSS であれば、自作した任意の CSS を読み込むことができます（CSS マーカーについては、『[ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=ja)』の「*&lt;viewer name>* ビューアのカスタマイズ」のヘルプトピックを参照してください。例えば、ズームビューアの CSS マーカーについては、[ズームビューアのカスタマイズ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=ja)を参照してください）。ただし、Visual Editor が一部の CSS 値を認識できない可能性もあります。そのような場合、Visual Editor は、CSS が正常に機能するように、エラーを上書きしようとします。
+     指定ビューアの CSS マーカーが正しく定義された CSS であれば、自作した任意の CSS を読み込むことができます（CSS マーカーについては、『[ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=ja)』の「*&lt;viewer name>* ビューアのカスタマイズ」のヘルプトピックを参照してください。例えば、ズームビューアの CSS マーカーについて読み上げる場合は、[ ズームビューアのカスタマイズ ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=ja) を参照してください。ただし、Visual Editor が一部の CSS 値を認識できない場合があります。 そのような場合、Visual Editor は、CSS が正常に機能するように、エラーを上書きしようとします。
 
    >[!NOTE]
    >
@@ -448,10 +448,6 @@ iOS、Android™ 2.x および Android™ 3.x デバイスでサポートされ�
       * ブラウザーが DASH をサポートしている場合は、最初に DASH ストリーミングが使用されます。
       * ブラウザーが DASH をサポートしていない場合は、次に HLS ストリーミングが使用されます。
       * ブラウザーが DASH も HLS もサポートしていない場合は、最後にプログレッシブ再生が使用されます。
-
-   >[!NOTE]
-   >
-   >**[!UICONTROL dash]**&#x200B;オプションを表示して使用するには、まずアドビテクニカルサポートでアカウントを有効にする必要があります。詳しくは、「[アカウントでの DASH の有効化](/help/assets/dynamic-media/video.md#enable-dash)」を参照してください。
 
 1. 「**[!UICONTROL 選択したタイプ]**」プルダウンメニューで、動作を変更するコンポーネントを選択します。
 

@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.2.0 リ�
 exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b4ffcddddfcd990c359380071f19b5442dee9eb2
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '716'
 ht-degree: 100%
 
 ---
@@ -49,7 +49,6 @@ ht-degree: 100%
 * Dynamic Media ビデオ配信でアダプティブストリーミング用に開始された新しいプロトコル（DASH - Dynamic Adaptive Streaming over HTTP）のサポート（CMAF を有効にした場合）:
    * アダプティブストリーミング（DASH／HLS）により、ユーザーがビデオを視聴する際の操作性が向上します
    * DASH はアダプティブビデオストリーミング用の国際標準プロトコルで、業界で広く採用されています
-   * NA で利用可能で、サポートチケットを介して有効にできます（APAC、EMEA で近日公開）
 
 * メタデータの自動抽出、サムネールおよびカスタムレンディションの生成を行う WebP 画像のサポートが追加されました。これらのファイルで、スマートタグおよびスマート切り抜き機能もサポートされるようになりました。
 
