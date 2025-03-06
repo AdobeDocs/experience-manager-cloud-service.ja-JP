@@ -4,9 +4,9 @@ description: リモートアプリのコンテンツや UI の変更に対応す
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '575'
+source-git-commit: fefbb01c786cc00a31602c4646ca8b015e16ed98
+workflow-type: tm+mt
+source-wordcount: '520'
 ht-degree: 100%
 
 ---
@@ -180,29 +180,6 @@ ht-degree: 100%
 
 ## UI イベント {#ui-events}
 
-### aue:ui-publish {#ui-publish}
-
-`aue:ui-publish` イベントは、コンテンツを公開した際に、（`BODY` レベルでの呼び出しにより）トリガーされます。
-
-ペイロードは、項目 ID とその公開ステータスのリストです。
-
-### aue:ui-select {#ui-select}
-
-`aue:ui-select` イベントは、コンポーネントを選択した際にトリガーされます。
-
-ペイロードは、選択したコンポーネントの項目 ID、項目プロパティおよび項目タイプです。
-
-```json
-{
-    details: {
-        resource: string;       // resource of the selected
-        prop: string;           // prop of the selected
-        type: string;           // type of the selected
-        selected: boolean;      // was selected or unselected
-    }
-}
-```
-
 ### aue:ui-preview {#ui-preview}
 
 `aue:ui-preview` イベントは、ページの編集モードを&#x200B;**プレビュー**&#x200B;に変更した際にトリガーされます。
@@ -271,7 +248,6 @@ ht-degree: 100%
 
 | イベント | 動作 |
 |---|---|
-| `aue:ui-publish` | 何もしない |
 | `aue:ui-select` | 選択した要素までスクロール |
 | `aue:ui-preview` | HTML タグに `class="adobe-ue-preview"` を追加 |
 | `aue:ui-edit` | HTML タグに `class=adobe-ue-edit"` を追加 |
