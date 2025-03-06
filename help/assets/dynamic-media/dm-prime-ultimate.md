@@ -3,7 +3,7 @@ title: Dynamic Media PrimeとUltimate
 description: Dynamic Media PrimeとUltimateの詳細、その利点およびこれら 2 つの違いについて説明します。
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 0c0d33b3e022ff0265220bf3106b888b83e8af99
+source-git-commit: 6ec63a4d1a1c0af71e597b18d5a52d0a53c94c8c
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 14%
@@ -28,13 +28,9 @@ AEM as a Cloud Serviceで Dynamic Media ソリューションに対して高度�
 Dynamic Media Primeのその他の主なメリットには、次のようなものがあります。
 
 * デジタルアセットの一元管理
-
 * リアルタイムの更新が配信 URL に反映される
-
 * ブランドの一貫性
-
 * Web に最適化された画像配信
-
 * アダプティブビデオストリーミング
 
 ### 前提条件 {#pre-requisites-dm-prime}
@@ -57,9 +53,7 @@ Dynamic Media Primeは、AEM AssetsとAdobeの統合またはAdobe以外のア�
 * [AEM as a Cloud Serviceの Dynamic Media ソリューション ](/help/assets/dynamic-media/dynamic-media.md) には、次の主な機能も含まれています。
 
    * [Dynamic Media テンプレート](/help/assets/dynamic-media/dynamic-media-templates.md)
-
    * [ テンプレートの基本 ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-
    * [ ビジュアル設定 ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### 前提条件 {#pre-requisites-dm-ultimate}
@@ -71,4 +65,3 @@ Dynamic Media Primeは、AEM AssetsとAdobeの統合またはAdobe以外のア�
 機能の完全なリストについて詳しくは、[OpenAPI 機能を使用した Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) および [Dynamic Media の操作 ](/help/assets/dynamic-media/dynamic-media.md) を参照してください。
 
 AEM as a Cloud Service環境に対して Dynamic Media PrimeとUltimateを有効にする方法については、[Dynamic Media PrimeとUltimateの有効化 ](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md) を参照してください。
-

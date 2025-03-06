@@ -4,7 +4,7 @@ description: ' [!DNL Dynamic Media] PrimeとUltimateの製品を有効にする�
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: 3962b687a7d0d3f5551b23fbe5c2ee2c21bd1d89
+source-git-commit: 6ec63a4d1a1c0af71e597b18d5a52d0a53c94c8c
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 2%
@@ -28,9 +28,11 @@ ht-degree: 2%
 1. [ 設定  [!DNL Dynamic Media]  ソリューション ](#configure-dynamic-media-solutions)
 1. [会社の作成  [!DNL Dynamic Media]  リスト化](#create-and-list-dynamic-media-companies)
 1. [ 配信層でのカスタムドメインの設定 ](#configure-custom-domain-in-delivery-tier)
+
 <!--
 1. [Onboard API keys using the [!DNL AEM] [!DNL Dynamic Media] API card](#onboarding-api-keys)
 -->
+
 [!DNL Dynamic Media Prime] を有効にする必要がある場合は、[ 有効  [!DNL Dynamic Media Prime]](#enable-dynamic-media-prime) に記載されているクイックリンクを参照してください。
 
 ### アクティベート [!DNL Dynamic Media with OpenAPI] {#activate-dynamic-media-with-openapi}
