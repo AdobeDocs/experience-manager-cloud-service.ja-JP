@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 1105fedcf17cb74c9abec9de68485e1ef714ebbe
+source-git-commit: edfec41a9e33fbe818cb19f878ac42d435d62419
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 60%
+source-wordcount: '1419'
+ht-degree: 48%
 
 ---
 
@@ -122,19 +122,27 @@ AEM Forms Document Generation API で、Azure Blob ストレージに [ 生成�
 
 ### Java 21 サポート {#java21}
 
-Java 21 を使用してコードをビルドできるようになりました。これには、新機能（switch ステートメントのパターンマッチング、sealed クラスなど）とパフォーマンスの向上が含まれ、Java 17 ビルドも新たにサポートされます。Maven プロジェクトとライブラリのバージョンのアップデートを含む設定手順について詳しくは、[ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)の記事を参照してください。
+1 月のリリースノートに記載されているように、Java 21 を使用してコードをビルドできるようになりました。この中には、新機能（スイッチステートメントのパターン照合、シールされたクラスなど）とパフォーマンスの向上が含まれています。Java 17 ビルドも新たにサポートされます。 Maven プロジェクトとライブラリのバージョンのアップデートを含む設定手順について詳しくは、[ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)の記事を参照してください。
 
 Java 17 または 21 ビルドが検出されると、より高パフォーマンスの Java 21 **ランタイム**&#x200B;が自動的にデプロイされます。ただし、Java 11 でビルドされた環境については、[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) にメールを送信して Java 21 ランタイムをオプトインすることをお勧めします。[Java 21 ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)について説明します。
 
 >[!IMPORTANT]
 >
-> Java 21 **ランタイム**&#x200B;は、2 月にサンドボックスと dev/RDE を開始し、4 月にステージング／実稼動を開始して、**すべて**&#x200B;の環境に徐々にデプロイされます（Java 17 または 21 で既にビルドされ、Java 21 ランタイムが存在する環境は除く）。
+> 2 月に、Java 21 **runtime** が開発/RDE 環境にデプロイされました（既に Java 17 または 21 でビルドされており、既に Java 21 ランタイムが含まれている環境は除く）。 Java 21 は、4 月にステージ/実稼動環境に適用されます。
 
-### サンドボックスプログラムは、設定パイプラインをサポートします {#sandbox-config-pipelines}
+### Edge コンピューティング - フィードバックのリクエスト {#edge-computing-feedback}
 
-サンドボックスプログラムで設定パイプラインがサポートされるようになりました。このパイプラインは、Git 内で保持される yaml ファイルをデプロイするように Cloud Manager で設定できます。
+Edge コンピューティングには、データ処理がブラウザーに近づくので、待ち時間が短縮されるなどのメリットがあります。 Adobeは、このテクノロジーがAEMの公開配信プロジェクトとEdge Delivery Services プロジェクトに役立つかどうかを聞きたいと考えています。 さらに、製品ロードマップへの入力として使用すると想定される内容をお知らせください。
 
-CDN、ログ転送、バージョンパージ／監査ログのパージメンテナンスタスクを設定できる設定パイプラインについて詳しくは、[こちら](/help/operations/config-pipeline.md)を参照してください。
+考えられるユースケースは次のとおりです。
+* コンテンツへのアクセスをゲートする IdP を使用した認証
+* 位置情報、デバイスタイプ、ユーザー属性などに基づく動的（パーソナライズされ、ローカライズされた）コンテンツのレンダリング
+* 高度な画像操作
+* CDN とオリジンの間のミドルウェア
+* ブラウザーとサードパーティ API の間のレイヤー（API 応答の再フォーマット用など）
+* 複数のオリジンからのデータを集計して、クライアントブラウザーでレンダリングしやすくする。
+
+ご質問やご意見がある場合は、[aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) までメールで送信してください。
 
 ### OpenAPI ベースの API - 早期導入プログラム {#open-apis-earlyadopter}
 
@@ -148,10 +156,6 @@ CDN、ログ転送、バージョンパージ／監査ログのパージメン�
 * [Assets API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * [Sites and Assets Folders API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
 * [Forms Communications API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-
-### Edge コンピューティング - フィードバックのリクエスト {#edge-computing-feedback}
-
-Edge コンピューティングには、データ処理がブラウザーに近づくので、待ち時間が短縮されるなどのメリットがあります。 このテクノロジーが AEM の配信を公開および Edge Delivery Services プロジェクトに役立つかどうかについて、ぜひお聞かせください。さらに、製品ロードマップへのインプットとして、お客様が何を想定されるかをお教えください。ご質問やご意見がある場合は、[aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) までメールで送信してください。
 
 ### 新しい AEM Developer Console（パブリックベータ版） {#aem-developer-console-beta}
 
