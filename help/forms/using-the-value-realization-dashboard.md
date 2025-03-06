@@ -6,20 +6,18 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 1%
 
 ---
 
-
 # 価値実現ダッシュボードを使用したフォームとドキュメントの使用状況トレンドの分析
 
 <span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、公式アドレスからaem-forms-ea@adobe.comにメールを送信します。<span>
 
 ![ 価値実現ダッシュボード ](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
-
 
 「Forms使用状況インサイト」ダッシュボードに表示される指標を定期的にモニタリングすることで、フォーム、ドキュメントおよびフォームフラグメントのパフォーマンスに関する有益なインサイトを得ることができます。 このデータを使用して、フォームデザイン、フラグメント管理およびフォーム戦略全体に関して十分な情報に基づいた意思決定を行います。
 
