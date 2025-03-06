@@ -4,7 +4,7 @@ description: Edge Delivery Services Forms をすばやくシームレスに公�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 87%
@@ -13,7 +13,7 @@ ht-degree: 87%
 
 # アダプティブフォームから Edge Delivery Services への公開
 
-<span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に、GitHub の組織名とリポジトリ名を記載したメールを送信します。 例えば、リポジトリ URL がhttps://github.com/adobe/abcの場合、組織名は adobe で、リポジトリ名は abc.</span> です
+<span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。 例えば、リポジトリ URL がhttps://github.com/adobe/abcの場合、組織名は adobe で、リポジトリ名は abc.</span> です
 
 
 フォームが完成し、使用できる状態になったら、公開して、顧客がデータの収集と送信にアクセスできます。公開すると、フォームが Edge Delivery で使用できるようになり、ユーザーがシームレスに操作できます。このプロセスにより、顧客はフォームにリアルタイムで入力して送信できるので、効率的なデータ取得と効率化された処理が確保されます。

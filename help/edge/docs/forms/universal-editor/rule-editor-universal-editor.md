@@ -4,7 +4,7 @@ description: ユニバーサルエディターのルールエディターを使�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '2214'
 ht-degree: 96%
@@ -14,7 +14,7 @@ ht-degree: 96%
 
 # WYSIWYG オーサリングのルールエディターの概要
 
-<span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に、GitHub の組織名とリポジトリ名を記載したメールを送信します。 例えば、リポジトリ URL がhttps://github.com/adobe/abcの場合、組織名は adobe で、リポジトリ名は abc.</span> です
+<span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。 例えば、リポジトリ URL がhttps://github.com/adobe/abcの場合、組織名は adobe で、リポジトリ名は abc.</span> です
 
 
 ルールを作成できるルールエディターを使用して、動的なフォームの動作を追加できます。これらのルールにより、条件付きフィールドの表示が有効になり、ユーザー入力に基づいて計算が自動化され、全体的なユーザーエクスペリエンスが向上します。ルールエディターは、フォーム入力プロセスを効率化することで、正確性と効率性の両方を確保するのに役立ちます。

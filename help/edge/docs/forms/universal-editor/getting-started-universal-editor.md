@@ -4,7 +4,7 @@ description: このチュートリアルは、新しい Adobe Experience Manager
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 964fd32a7dbcb97190d40cb42100d0d66e69a0c4
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1846'
 ht-degree: 96%
@@ -14,7 +14,7 @@ ht-degree: 96%
 
 # ユニバーサルエディター（WYSIWYG）での AEM Forms の Edge Delivery Services の基本を学ぶ
 
-<span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に、GitHub の組織名とリポジトリ名を記載したメールを送信します。 例えば、リポジトリ URL がhttps://github.com/adobe/abcの場合、組織名は adobe で、リポジトリ名は abc.</span> です
+<span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。 例えば、リポジトリ URL がhttps://github.com/adobe/abcの場合、組織名は adobe で、リポジトリ名は abc.</span> です
 
 
 今日のデジタル時代では、ユーザーにわかりやすいフォームはすべての組織にとって不可欠です。Edge Delivery Services フォームは、WYSIWYG（見たままが得られる）機能を提供するユニバーサルエディターを使用して作成されます。最新の直感的なインターフェイスで、効率的なフォームオーサリングを実現します。

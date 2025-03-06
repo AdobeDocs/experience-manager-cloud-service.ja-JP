@@ -5,17 +5,17 @@ feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d7e59c16e90e3632140eae08dc2c25b2dd1df5a7
+exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 49%
 
 ---
 
-
 # ユニバーサルエディターを使用したスタンドアロンフォームの作成（WYSIWYG）
 
-<span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に、GitHub の組織名とリポジトリ名を記載したメールを送信します。 例えば、リポジトリ URL がhttps://github.com/adobe/abcの場合、組織名は adobe で、リポジトリ名は abc.</span> です
+<span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。 例えば、リポジトリ URL がhttps://github.com/adobe/abcの場合、組織名は adobe で、リポジトリ名は abc.</span> です
 
 この記事では、フォーム作成ウィザードからEdge Delivery Servicesベースのテンプレートを選択してユニバーサルエディターを使用してスタンドアロンフォームを作成するプロセスについて説明します。 作成したフォームをユニバーサルエディターと共にAEM Edge Delivery Servicesに公開することもできます。
 
@@ -163,5 +163,3 @@ URL 構造は、ステージングされたバージョンとライブバージ�
 ## フォームの作成を開始
 
 {{universal-editor-see-also}}
-
-
