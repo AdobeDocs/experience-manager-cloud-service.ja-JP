@@ -9,10 +9,10 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 9d4c8946dcdf0e175a54a1dcf55513f01e5648aa
+source-git-commit: 6cc21d0e7330b3dd4254ad15b64dc94c065417f7
 workflow-type: tm+mt
-source-wordcount: '4114'
-ht-degree: 94%
+source-wordcount: '4071'
+ht-degree: 100%
 
 ---
 
@@ -198,9 +198,9 @@ Dynamic Media では、複数の静的アセットを必要とせずに、画像
 
 | タスク | 実行内容 |
 | --- | --- |
-| **元の画像をアップロードして公開** | <ul><li> まず、元の画像をDynamic Mediaにアップロードします。</li><li> 公開され、URL からアクセスできることを確認します。</li><li> この例では、背景が白い時計のストック画像（「画像 X」と呼びましょう）がDynamic Mediaにアップロードされています。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
-| **マスクを作成** | <ul><li> 被写体（エフェクトを適用する領域）と背景（変更する領域）を定義するマスクを作成します。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> マスクは通常、グレースケール画像です。白は被写体、黒は背景を表します。 Adobe Photoshop などのツールを使用してマスクを作成できます。<br>詳しくは、[Photoshop でのクイックマスクの作成と編集](https://helpx.adobe.com/jp/photoshop/using/create-temporary-quick-mask.html)を参照してください。</li><li> 「画像 X」は、強調したい被写体を的確に輪郭を描いたマスクを作成。 例えば、ユーザー、オブジェクトなどです。</li></ul> |
-| **Dynamic Media URL コマンドを効果に適用** | マスクを設定したら、URL コマンドを使用して、光彩（外側）などの効果を適用したり、背景色を「画像 X」に変更したりします。 次の 2 つの例があります。<ul><li> **光彩効果：**<br> 件名の境界に沿って光彩効果を追加するには、次のように URL を編集します。<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br> この URL では、`op_blur`、`op_grow` および `opac` パラメーターが光彩効果を作成します。</li><li> **背景色の変更：**<br> 背景色を変更するには、次のように異なる背景色の値を使用します。<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> この例では、`color=255,255,0` が背景色をイエローに設定しています。 視覚効果を得るために、背景を特定の色に編集します。</li></ul> |
+| **元の画像をアップロードして公開** | <ul><li> まず、元の画像を Dynamic Media にアップロードします。</li><li> その画像が公開されており、URL を通じてアクセスできることを確認します。</li><li> この例では、白い背景と時計のストック画像（「画像 X」と呼びます）が Dynamic Media にアップロードされます。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
+| **マスクを作成** | <ul><li> サブジェクト（効果を適用する領域）と背景（変更する領域）を定義するマスクを作成します。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> マスクは通常、グレースケール画像で、白はサブジェクト、黒は背景を表します。Adobe Photoshop などのツールを使用してマスクを作成できます。<br>詳しくは、[Photoshop でのクイックマスクの作成と編集](https://helpx.adobe.com/jp/photoshop/using/create-temporary-quick-mask.html)を参照してください。</li><li> 「画像 X」について、強調するサブジェクトの輪郭を正確に描くマスクを作成します。例えば、ユーザー、オブジェクトなどです。</li></ul> |
+| **Dynamic Media URL コマンドを効果に適用** | マスクを作成したら、URL コマンドを使用して光彩（外側）などの効果を適用したり、背景色を「画像 X」に変更したりします。次の 2 つの例があります。<ul><li> **光彩（外側）エフェクト：**<br>&#x200B;サブジェクトの境界に沿って光彩（外側）効果を追加するには、URL を次のように編集します。<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>この URL では、`op_blur`、`op_grow` および `opac` パラメーターによって光彩（外側）効果が作成されます。</li><li> **背景色の変更：**<br>&#x200B;背景色を変更するには、異なる背景色の値を持つ次の URL を使用します。<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br>この例では、`color=255,255,0` によって背景色が黄色に設定されます。視覚効果を得るために、背景を特定の色に編集します。</li></ul> |
 
 #### 画像の境界線の追加
 
@@ -222,7 +222,7 @@ Dynamic Media を使用すると、URL を通じて画像を直接操作でき�
 | --- | --- |
 | **ベース画像をアップロードして公開** | まず、ロゴやアイコンを重ねて表示するベース画像をアップロードして公開します。任意の画像をベースとして使用できます。<br>例えば、次にベース画像を示します。<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa)。 |
 | **ロゴやアイコン画像をアップロードして公開** | 次に、ベース画像の上に重ねて表示する画像をアップロードして公開します。この画像は、オーバーレイするロゴやアイコンを含む透明な PNG にする必要があります。<br>次に、重ねて表示する透明効果のある星形オブジェクトの透明な PNG 画像を示します。<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **Dynamic Media URL を適用** | 次に、ベース画像とロゴやアイコン画像を組み合わせた Dynamic Media URL を作成します。URL コマンドを使用すると、この効果を得ることができます。<br>URL 構造は次のようになります。<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br> ここで、アセットは<ul><li> `hotspotRetailBaseImage` は基本画像です。</li><li> `starxp` はロゴ / アイコンの画像です。</li><li> `layer=1` は、ロゴまたはアイコンを基本画像の上に重ねて表示するように指定します。</li><li> ロゴ `scale=1.25` アイコンのサイズを調整します。</li><li> ロゴ `posN=0.33,-.25` アイコンの基本画像を基準とした位置を決定します。</li><li> 出力 `fmt=png` 確実に PNG 形式になります。</li></ul> |
+| **Dynamic Media URL を適用** | 次に、ベース画像とロゴやアイコン画像を組み合わせた Dynamic Media URL を作成します。URL コマンドを使用すると、この効果を得ることができます。<br>URL 構造は次のようになります。<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>ここで、アセット<ul><li> `hotspotRetailBaseImage` は、ベース画像です。</li><li> `starxp` は、ロゴ／アイコンの画像です。</li><li> `layer=1` は、ロゴやアイコンをベース画像の上に重ねることを指定します。</li><li> `scale=1.25` は、ロゴ／アイコンのサイズを調整します。</li><li> `posN=0.33,-.25` は、ベース画像に対するロゴ／アイコンの位置を決定します。</li><li> `fmt=png` は、出力が PNG 形式になることを保証します。</li></ul> |
 
 詳しくは、[src](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) を参照して、`src` コマンドおよびその他の Dynamic Media URL コマンドの詳細を確認してください。
 
@@ -345,11 +345,6 @@ Dynamic Media のビデオプロファイルは、効率的なビデオ管理、
 アダプティブストリーミングは、ビューアのインターネット接続速度とデバイス機能に基づいてビデオ品質を調整します。
 HLS（HTTP ライブストリーミング）や DASH（`Dynamic Adaptive Streaming over HTTP`）などのプロトコルを使用して、最適な再生品質を実現します。
 ビデオを線形に配信するプログレッシブストリーミングとは異なり、アダプティブストリーミングはバッファリングを最小限に抑え、シームレスな視聴エクスペリエンスを提供します。
-
-* **アカウントで DASH を有効にする（HTTP でのデジタルアダプティブストリーミング）：**
-DASH は、アダプティブストリーミングを使用してビデオコンテンツを動的に提供します。
-DASH を有効にするには、環境のサポートチケットを作成します。
-詳しくは、[Dynamic Media アカウントで DASH を有効にする](/help/assets/dynamic-media/video.md#enable-dash)を参照してください。
 
 ### 多言語で利用できるようにビデオを国際化する
 
