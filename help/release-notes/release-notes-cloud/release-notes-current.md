@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: edfec41a9e33fbe818cb19f878ac42d435d62419
+source-git-commit: 896a2927c0f5733ab23ca9f6c9e975f8388daff9
 workflow-type: tm+mt
 source-wordcount: '1419'
 ht-degree: 48%
@@ -46,25 +46,23 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-
 ### AEM Sitesの新機能 {#new-features-sites}
 
-** コンテンツフラグメントの自動タグ付け**
+**コンテンツフラグメントの自動タギング**
 
 コンテンツフラグメントの作成時に、コンテンツモデルに割り当てられたタグを自動的に継承できるようになりました。 これにより、コンテンツフラグメントに保存されたコンテンツを強力に自動分類できます。
 
-** コンテンツフラグメント UUID のサポート **
+**コンテンツフラグメント UUID のサポート**
 
 コンテンツフラグメント UUID のサポートが一般提供（GA）されるようになりました。 この新しい機能は、AEM内のパスに基づく操作（移動、名前を変更、ロールアウトなど）の動作は変わりませんが、コンテンツフラグメントの外部使用をより簡単かつ安定させることができます。特に、ByPath クエリで個々のフラグメントを直接ターゲットにするGraphQL クエリを使用する場合に便利です。 このようなクエリは、フラグメントパスが変更されると壊れる可能性があります。 新しい ById クエリタイプを使用する場合、パスが変更されてもフラグメントの UUID は変化しないので、クエリは安定したままになります。
 
-コンテンツフラグメントエディターおよびGraphQL **で OpenAPI をサポートする** Dynamic Media
+**コンテンツフラグメントエディターとGraphQLで OpenAPI をサポートする Dynamic Media**
 
 コンテンツフラグメントとは異なるAEM as a Cloud Service プログラムに保存され、OpenAPI 機能を備えた新しい Dynamic Media で有効になっているAssetsを、コンテンツフラグメントで使用できるようになりました。 新しいコンテンツフラグメントエディターの画像セレクターで、フラグメントで参照する画像アセットのソースとして「リモート」リポジトリーを選択できるようになりました。 さらに、AEM GraphQLを使用してこのようなコンテンツフラグメントを配信する際に、リモートアセット（assetId、repositoryId）の必須プロパティが JSON 応答に含まれるようになりました。これにより、クライアントアプリケーションは、画像を取得する OpenAPI の URL で各 Dynamic Media を作成できます。
 
-** Translation HTTP API **
+**翻訳 HTTP API**
 
 しばらくの間アーリーアダプターモードであったAEM翻訳 HTTP REST API が一般提供（GA）されるようになりました。 ドキュメントは [ こちら ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) で参照できます。 API を使用すると、AEM内のコンテンツの翻訳管理プロセスで必要な手順を自動化できます。
-
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
