@@ -1,17 +1,17 @@
 ---
-title: データ保護およびデータプライバシーに関する規制 - Adobe Experience Manager as a Cloud Service Sites の対応
-description: EU 一般データ保護規則（GDPR）やカリフォルニア州消費者プライバシー法など、データ保護およびデータプライバシーに関する様々な規制に対する Adobe Experience Manager as a Cloud Service Sites のサポートと、新しい AEM as a Cloud Service プロジェクトを実装する際にこれらの規制に準拠する方法について説明します。
+title: データ保護およびデータプライバシーに関する規制 – AEM Sitesへの対応
+description: 様々なデータ保護およびデータプライバシー規則に対するExperience Manager as a Cloud Service Sites のサポートについて説明します。これには、EU 一般データ保護規則（GDPR）、カリフォルニア州消費者プライバシー法、および新しいAEM as a Cloud Service プロジェクトを実装する際に準拠する方法が含まれます。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 feature: Compliance
 role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 974f85b91a629ea6d4f34e2066d242c42a04015b
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 100%
+source-wordcount: '989'
+ht-degree: 93%
 
 ---
 
-# データ保護およびデータプライバシー規制に対する Adobe Experience Manager as a Cloud Service Sites の対応 {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# データ保護およびデータプライバシーに関する規制に対するExperience Manager Sitesの対応 {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
