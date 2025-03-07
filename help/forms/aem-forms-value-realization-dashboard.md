@@ -6,9 +6,9 @@ role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
+source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,6 @@ ht-degree: 0%
 * **フォーム送信**：フォームの完了頻度の傾向を確認します。
 * **ドキュメントレンディション**：レンダリングされたドキュメントの数を経時的に追跡します。
 * **Formsが作成および公開されました**：新しいフォームがビルドおよびデプロイされる割合をモニタリングします。
-* **フォームの作成と公開の時間**：フォームの作成と公開の平均時間を分析して、改善する領域を特定します。
 
 ### フラグメント使用状況
 

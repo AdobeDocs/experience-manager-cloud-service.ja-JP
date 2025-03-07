@@ -6,7 +6,7 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
+source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 1%
@@ -29,7 +29,7 @@ ht-degree: 1%
 Forms使用状況インサイトダッシュボードにアクセスするには：
 
 1. **Forms** / **Formsとドキュメント** に移動します
-1. **インサイトダッシュボード** をクリックします。 ダッシュボードが新しいウィンドウで開きます。
+1. **製品内ダッシュボード** をクリックします。 ダッシュボードが新しいウィンドウで開きます。
 
    ![ 価値実現ダッシュボード ](/help/forms/assets/forms-usage-insights.png)
 
