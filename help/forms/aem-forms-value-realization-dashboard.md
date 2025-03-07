@@ -1,14 +1,14 @@
 ---
 title: AEM Forms価値実現ダッシュボード
-description: 直観的なトラッキングダッシュボードを使用して、AEM Forms インスタンス上のフォーム送信を簡単に監視できます。
+description: 直感的なトラッキングダッシュボードを使用して、AEM Forms インスタンス上のフォーム送信を簡単に監視します。
 feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,7 @@ ht-degree: 0%
 
 フォームがもたらす価値を理解するためのワンストップショップへようこそ。 このダッシュボードを使用すると、フォームを最適化し、ワークフローを合理化し、最終的に目標をより迅速に達成するための貴重なインサイトを得ることができます。
 
-この記事では、価値実現ダッシュボードとそのメリットに関する概念的な概要を説明します。 使用手順と指標の解釈について詳しくは、[ 価値実現ダッシュボードを使用したフォーム使用インサイトの解釈 ](/help/forms/using-the-value-realization-dashboard.md) を参照してください。
-
-
+この記事では、価値実現ダッシュボードとそのメリットに関する概念的な概要を説明します。 使用手順と指標の解釈について詳しくは、[ 価値実現ダッシュボードを使用したフォームとドキュメントの使用状況のトレンド分析 ](/help/forms/using-the-value-realization-dashboard.md) を参照してください。
 
 
 ## ダッシュボードには何がありますか？ {#content-of-dashboard}
@@ -50,7 +48,7 @@ ht-degree: 0%
 
 このダッシュボードを使用すると、フォームに関するデータ駆動型の決定を行うことができます。 その方法を次に示します。
 
-* **人気のあるFormsを特定**：送信率が高いのは、貴重なフォームを示しています。 他の環境にレプリケートするベストプラクティスについては、これらを分析してください。
+* **人気のあるFormsを特定**：送信率が高いのは、貴重なフォームを示しています。 他のフォームにレプリケートするベストプラクティスについては、これらのフォームを分析してください。
 * **フォーム作成の最適化**：ボトルネックを特定して作成時間を短縮します。 事前定義済みのテンプレートやワークフローの合理化を探索します。
 * **フラグメントの再利用の促進**：再利用可能なフラグメントの共同作業と検出性を促進します。 適切に整理されたフラグメントライブラリを使用すると、効率を大幅に向上できます。
 
@@ -77,4 +75,4 @@ ht-degree: 0%
 
 ## 関連トピック
 
-* [ダッシュボードを使用したFormsとドキュメントの使用状況トレンドの分析](/help/forms/using-the-value-realization-dashboard.md)
+* [ダッシュボードを使用したForms &amp; Documents の使用状況のトレンドの分析](/help/forms/using-the-value-realization-dashboard.md)
