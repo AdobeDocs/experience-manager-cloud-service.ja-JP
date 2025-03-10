@@ -4,7 +4,7 @@ description: ' [!DNL Dynamic Media] PrimeとUltimateの製品を有効にする�
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: 6ec63a4d1a1c0af71e597b18d5a52d0a53c94c8c
+source-git-commit: e52e38eb5313f265d7e0765ea5b788b648d9710e
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 2%
@@ -47,7 +47,7 @@ Ultimateを有効にするプロセスの最初の手順 [!DNL Dynamic Media]、
 
 1. [Cloud Managerへのアクセス ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
 1. [ プログラムに  [!DNL Dynamic Media]  ソリューションが含まれています ](#configure-dynamic-media-solutions)。
-1. 組織が OpenAPI クレジットを [!DNL Dynamic Media] 用しています。
+1. PrimeまたはUltimate[!DNL Dynamic Media] ライセンスがある。
 
 #### Cloud Service環境での [!DNL Dynamic Media with OpenAPI] 機能の有効化 {#enable-dynamic-media-with-openapi-capabilites-in-your-CS-environment}
 
@@ -97,7 +97,7 @@ Cloud Managerで使用可能な既存または新規の環境で [Dynamic Media 
 [!UICONTROL Dynamic Media] ソリューションを設定するには、次のものが揃っていることを確認します。
 
 1. [Cloud Managerへのアクセス ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
-1. 組織に [!DNL Dynamic Media with OpenAPI] クレジットがあります。
+1. Ultimate ライセンス [!DNL Dynamic Media] 持っています。
 
 #### アセット配信用の [!DNL Dynamic Media] ソリューションの設定 {#configure-dynamic-media-solutions-for-asset-delivery}
 
