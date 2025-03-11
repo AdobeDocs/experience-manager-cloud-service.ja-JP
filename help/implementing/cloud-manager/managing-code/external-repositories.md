@@ -1,19 +1,19 @@
 ---
 title: Cloud Managerでの外部リポジトリーの追加 – 限定ベータ版
-description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub、GitLab、Bitbucket リポジトリとの統合をサポートしています。
+description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Managerは、GitHub Enterprise Server、GitLab、Bitbucket リポジトリとの統合をサポートしています。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 5e2db30d9a505000881a0781dd5c4c2412a17ca8
+source-git-commit: 7ce39020870943243e2d48aa66370f2cca9c2ac0
 workflow-type: tm+mt
-source-wordcount: '1614'
-ht-degree: 46%
+source-wordcount: '1618'
+ht-degree: 43%
 
 ---
 
 # Cloud Managerでの外部リポジトリーの追加 – 限定ベータ版 {#external-repositories}
 
-Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub、GitLab、Bitbucket リポジトリとの統合をサポートしています。
+Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Managerは、GitHub Enterprise Server、GitLab、Bitbucket リポジトリとの統合をサポートしています。
 
 >[!NOTE]
 >
@@ -64,9 +64,9 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
    | トークンタイプ | 説明 |
    | --- | --- |
    | **既存のアクセストークンを使用** | 組織にリポジトリアクセストークンを既に指定し、複数のリポジトリにアクセスできる場合は、既存のトークンを選択できます。**トークン名**&#x200B;ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。それ以外の場合は、新しいアクセストークンを追加します。 |
-   | **新しいアクセストークンを追加** | **リポジトリタイプ：GitHub**<br>• 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<br>• [GitHub ドキュメント](https://docs.github.com/ja/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)の指示に従って、個人アクセストークンを作成します。<br>・必要な権限については、[GitHub の新しい PAT の作成 ](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-github-pat) を参照してください。<br>• 「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
-   |  | **リポジトリタイプ：GitLab**<br>• 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<br>• [GitLab ドキュメント](https://docs.gitlab.com/user/profile/personal_access_tokens/)の指示に従って、個人アクセストークンを作成します。<br>・必要な権限については、[GitLab の新しい PAT の作成 ](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-gitlab-pat) を参照してください。<br>• 「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
-   |  | **リポジトリタイプ：Bitbucket**<br>• 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<br>• [Bitbucket ドキュメント](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)を使用して、リポジトリアクセストークンを作成します。<br>・必要な権限については、[Bitbucket の新しい PAT の作成 ](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-bitbucket-pat) を参照してください。 |
+   | **新しいアクセストークンを追加** | **リポジトリタイプ：GitHub**<br>• 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<br>• [GitHub ドキュメント](https://docs.github.com/ja/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)の指示に従って、個人アクセストークンを作成します。<br>・必要な権限については、次の情報を参照してください。![GitHub の新しい PAT の作成 ](/help/implementing/cloud-manager/managing-code/assets/webhook-github-enterprise-server.png)<br>・・ **アクセストークン** フィールドに、作成したトークンを貼り付けます。 |
+   |  | **リポジトリタイプ：GitLab**<br>• 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<br>• [GitLab ドキュメント](https://docs.gitlab.com/user/profile/personal_access_tokens/)の指示に従って、個人アクセストークンを作成します。<br>・必要な権限については、次の情報を参照してください。![GitLab の新しい PAT を作成する ](/help/implementing/cloud-manager/managing-code/assets/webhook-gitlab.png)<br>・ **アクセストークン** フィールドに、作成したトークンを貼り付けます。 |
+   |  | **リポジトリタイプ：Bitbucket**<br>• 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<br>• [Bitbucket ドキュメント](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)を使用して、リポジトリアクセストークンを作成します。<br>・必要な権限については、次の情報を参照してください ![Bitbucket の新しい PAT の作成 ](/help/implementing/cloud-manager/managing-code/assets/webhook-bitbucket.png)。 |
 
    >[!NOTE]
    >
