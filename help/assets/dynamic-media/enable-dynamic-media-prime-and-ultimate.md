@@ -4,7 +4,7 @@ description: ' [!DNL Dynamic Media] PrimeとUltimateの製品を有効にする�
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: e52e38eb5313f265d7e0765ea5b788b648d9710e
+source-git-commit: 42c90ae69af31b1b54f5b4ed01100df0cbe5dad2
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 2%
@@ -65,7 +65,7 @@ Ultimateを有効にするプロセスの最初の手順 [!DNL Dynamic Media]、
    1. **[!UICONTROL 環境ステージ]**:**[!UICONTROL 実行中]**
    1. ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  OpenAPI 機能がアクティブ化されます ]**
 
-      ![ アクティベーションに成功しました ](/help/assets/assets/activation-successful.png){width="700" align="center"}
+      ![ アクティベーションに成功しました ](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
 #### アクティベーションを再試行 {#retry-activation}
 
@@ -74,7 +74,7 @@ Ultimateを有効にするプロセスの最初の手順 [!DNL Dynamic Media]、
 * **[!UICONTROL 環境ステージ]**:OpenAPI を使用した **[!UICONTROL DM が失敗しました]**
 * ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  OpenAPI 機能をアクティブ化できませんでした ]**
 
-  ![ アクティベーションの再試行 ](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="center"}
+  ![ アクティベーションの再試行 ](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 
 「**[!UICONTROL クリックして再試行]**」を選択して、アクティベーションを再開します。
 
@@ -109,7 +109,7 @@ Cloud Managerで使用可能な既存または新規の環境で [Dynamic Media 
 
 1. **[!UICONTROL Dynamic Media]** ソリューションを選択し、「**[!UICONTROL 続行]**」をクリックして **[!UICONTROL Dynamic Media]** ソリューションをプログラムに追加します。 このアクションは、プログラム内の既存の環境をすべて再起動し、[!DNL Dynamic Media] のソリューションを追加します。 また、プログラムの下に作成した新しい環境も自動的に [!DNL Dynamic Media] きます。
 
-   ![ 実稼動の設定 ](/help/assets/assets/set-up-for-prod.png){width="500" align="center"}
+   ![ 実稼動の設定 ](/help/assets/assets/set-up-for-prod.png){width="500" align="left"}
 
 お使いの環境で [!DNL Dynamic Media] の機能を OpenAPI 機能と共に使用するには、[ アクティブ化  [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) を参照してください。
 
@@ -123,7 +123,7 @@ AEM AEM環境内で設定 [!DNL Dynamic Media] 管理するために、クラウ
 
 1. [Cloud Managerへのアクセス ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
 
-1. 組織の [!DNL Dynamic Media with OpenAPI] クレジット。
+1. Ultimate ライセンス [!DNL Dynamic Media] 持っています。
 
 #### IMS 組織 [!DNL Dynamic Media] 会社の作成とリスト {#create-and-list-dynamic-media-companies-in-your-ims-organisation}
 
@@ -135,7 +135,7 @@ AEM AEM環境内で設定 [!DNL Dynamic Media] 管理するために、クラウ
 
 1. 一意の [!DNL Dynamic Media] 社名を指定し、会社の地域を選択して、会社の管理者メール ID のリストをコンマで区切って追加します。
 
-   ![Dynamic Media の会社を作成 ](/help/assets/assets/create-dynamic-media-company.png){width="500" align="center"}
+   ![Dynamic Media の会社を作成 ](/help/assets/assets/create-dynamic-media-company.png){width="500" align="left"}
 
 1. 「**[!UICONTROL 作成]**」をクリックして、会社の作成を開始します。 このアクションにより、**[!UICONTROL [!DNL Dynamic Media]会社]** セクションに新しい行が追加され、会社の **[!UICONTROL ステータス]** として **[!UICONTROL 設定]** が表示されます。
 
@@ -155,11 +155,11 @@ AEM AEM環境内で設定 [!DNL Dynamic Media] 管理するために、クラウ
 
 1. **[!UICONTROL ステータス]** が保留中の場合は、問題をカスタマーサポートチームに提起して解決を求めます。
 
-   ![ 保留状態 ](/help/assets/assets/company-creation-pending-status.png){width="350" align="center"}
+   ![ 保留状態 ](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
 
 1. **[!UICONTROL ステータス]** が失敗した場合は、失敗の理由に基づいて再試行します。
 
-   ![ 失敗ステータス ](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
+   ![ 失敗ステータス ](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
 
 ### オプション：配信層でのカスタムドメインの設定 {#configure-custom-domain-in-delivery-tier}
 
@@ -196,7 +196,7 @@ Cloud Managerで次の手順を実行して、配信層にカスタムドメイ�
 
 1. **[!UICONTROL CNAME を設定]** 手順を実行して、DNS サービスプロバイダーの DNS レコードに [cdn.adobeaemcloud.com](http://cdn.adobeaemcloud.com/) （CNAME レコード）をマッピングします。 このマッピングにより、カスタムドメインで受信したリクエストがAdobeの CDN にリダイレクトされるようになります。
 
-   ![ 運用開始準備ダイアログ ](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="center"}
+   ![ 運用開始準備ダイアログ ](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="left"}
 
 1. **[!UICONTROL OK]** をクリックすると、**[!UICONTROL ステータス]** が **[!UICONTROL 検証済み]** に更新されます。 これで、カスタムドメインを配信 URL で使用する準備が整いました。
 
@@ -267,7 +267,7 @@ See [Search Assets API](https://experienceleague.adobe.com/en/docs/experience-ma
 
 ### Access Delivery tier backed Asset Selector {#access-delivery-tier-backed-asset-selector}
 
-TBD: Wiki in progress.
+TBD: Wiki in progress..
 -->
 
 ## [!DNL Dynamic Media] Primeを有効にする {#enable-dynamic-media-prime}
