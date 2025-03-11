@@ -4,10 +4,10 @@ description: Cloud Manager に外部リポジトリを追加する方法につ�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 7ce39020870943243e2d48aa66370f2cca9c2ac0
+source-git-commit: bfa059ed4e3f04ae6ee1e07910edc62635b03e5a
 workflow-type: tm+mt
-source-wordcount: '1618'
-ht-degree: 43%
+source-wordcount: '1597'
+ht-degree: 44%
 
 ---
 
@@ -136,6 +136,9 @@ URL をプレーンテキストファイルに貼り付けます。 コピーし
 秘密鍵をプレーンテキストファイルに貼り付けます。 コピーした秘密鍵は、Git ベンダーの Webhook 設定に必要です。
 1. 「**閉じる**」をクリックします。
 1. Git ベンダーソリューション（GitHub Enterprise、GitLab、Bitbucket）に移動します。
+
+   Webhook 設定と各ベンダーに必要なイベントのすべての詳細は、[ 外部リポジトリの追加 ](#add-ext-repo) を参照してください。 手順 8 の下で、表を参照してください。
+
 1. ソリューションの **Webhook** 設定セクションを見つけます。
 1. 前の手順でコピーした Webhook URL を「URL」テキストフィールドに貼り付けます。
    1. Webhook URL の `api_key` クエリパラメーターを独自の実際の API キーに置き換えます。
@@ -145,11 +148,6 @@ URL をプレーンテキストファイルに貼り付けます。 コピーし
 1. 前にコピーした Webhook 秘密鍵を **秘密鍵** （または **秘密鍵**、または **秘密鍵トークン**）テキストフィールドに貼り付けます。
 1. Webhook を設定して、Cloud Managerが想定する適切なイベントを送信します。
 
-   Webhook 設定と各ベンダーに必要なイベントに関する詳細は、以下で確認できます。
-
-   * [GitHub Enterprise Server の Webhook を設定します ](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-github-pat?id=webhook-events)。
-   * [GitLab の Webhook を設定します ](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-gitlab-pat?id=webhook-events)。
-   * [Bitbucket の Webhook を設定します ](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-bitbucket-pat?id=webhook-events)。
 
 ### Webhook を使用したプルリクエストの検証
 
