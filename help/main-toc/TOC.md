@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 6a907b3d3241010e152669a70dec405215fbc6b1
 workflow-type: tm+mt
 source-wordcount: '6239'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -1035,35 +1035,35 @@ ht-degree: 95%
       + [Edge Delivery Services Forms の仕組み](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [よくある質問](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + WYSIWYG オーサリング {#universal-editor}
-         + [Forms Universal Editor for Edge Delivery Servicesの概要 – 完全なガイド](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Edge Delivery Services のフォームのユニバーサルエディターの概要 - 完全ガイド](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [ユニバーサルエディターを使用してオーサリングを開始する方法 – ステップバイステップのチュートリアル](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [ユニバーサルエディターを使用した最初のフォームの作成方法](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [ユニバーサルエディターインターフェイスガイド：ツール、機能、ナビゲーション](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [Formsをモバイルに対応させる：ユニバーサルエディターのレスポンシブデザイン](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [美しいFormsのデザイン：ユニバーサルエディターのスタイル設定とテーマ設定ガイド](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [Formsへの動的動作の追加：ルールエディターの完全なガイド](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [ユニバーサルエディターインターフェイスガイド：ツール、機能およびナビゲーションについて](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [フォームのモバイル化：ユニバーサルエディターのレスポンシブデザイン](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [美しいフォームの設計：ユニバーサルエディターのスタイル設定とテーマ設定ガイド](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [フォームへの動的な動作の追加：ルールエディターの完全ガイド](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [フォーム送信ガイド：フォーム送信アクションの設定とカスタマイズ](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [Formsをスパムから保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [Formsの公開およびデプロイ方法：ユニバーサルエディター公開ガイド](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [ カスタムフォームコンポーネントの作成：ユニバーサルエディター開発者ガイド ](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+         + [スパムからのフォームの保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [フォームの公開およびデプロイ方法：ユニバーサルエディター公開ガイド](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [カスタムフォームコンポーネントの作成：ユニバーサルエディター開発者向けガイド](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + ドキュメントベースのオーサリング {#getting-started-edge-delivery-services-forms}
-         + [最初のフォームを作成：Google シートと Excel を使用したクイックスタートガイド](/help/edge/docs/forms/tutorial.md)
-         + [Google Sheets または Excel を使用してFormsを作成する方法：手順ガイド](/help/edge/docs/forms/create-forms.md)
+         + [最初のフォームの作成：Google Sheetsと Excel を使用したクイックスタートガイド](/help/edge/docs/forms/tutorial.md)
+         + [Google Sheets または Excel を使用したフォームの作成方法：ステップバイステップガイド](/help/edge/docs/forms/create-forms.md)
          + [アダプティブフォームブロックの様々なコンポーネント](/help/edge/docs/forms/form-components.md)
-         + [フォームをGoogle Sheets に接続する：データ収集セットアップガイド](/help/edge/docs/forms/submit-forms.md)
-         + [フォームをライブにする：公開およびデータ収集ガイド](/help/edge/docs/forms/publish-forms.md)
-         + [フォームフィールドの検証：Formsにエラーチェックを追加する](/help/edge/docs/forms/validate-forms.md)
-         + [美しいFormsのデザイン：スタイル設定とカスタマイズガイド](/help/edge/docs/forms/style-theme-forms.md)
+         + [Google Sheets へのフォームの接続：データ収集設定ガイド](/help/edge/docs/forms/submit-forms.md)
+         + [フォームの運用：公開およびデータ収集ガイド](/help/edge/docs/forms/publish-forms.md)
+         + [フォームフィールドの検証：フォームへのエラーチェックの追加](/help/edge/docs/forms/validate-forms.md)
+         + [美しいフォームの設計：スタイル設定とカスタマイズガイド](/help/edge/docs/forms/style-theme-forms.md)
          + [成功メッセージの作成：フォームの「ありがとうございます」ページのカスタマイズ](/help/edge/docs/forms/thank-you-page-form.md)
-         + [フォーム送信ガイド：Forms送信サービスの使用](/help/forms/forms-submission-service.md)
+         + [フォーム送信ガイド：フォーム送信サービスの使用](/help/forms/forms-submission-service.md)
          + [動的フォームフィールド：URL からのオプションの読み込み](/help/edge/docs/forms/load-options-from-url.md)
          + [スマートな動作の追加：フォームルールとロジックガイド](/help/edge/docs/forms/rules-forms.md)
          + [高度なフォームの検証：正規表現ガイド](/help/edge/docs/forms/regex-forms.md)
-         + [再利用可能なFormsの構築：フォームフラグメントに関するガイド](/help/edge/docs/forms/form-fragments.md)
-         + [動的Formsを作成：繰り返し可能なセクションの追加](/help/edge/docs/forms/repeatable-forms.md)
-         + [フォームをグローバルにする：フォーム翻訳ガイド](/help/edge/docs/forms/translate-forms.md)
-         + [Formsの保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/recaptacha-forms.md)
-         + [カスタムフォームコンポーネントの作成：開発者ガイド](/help/edge/docs/forms/custom-components-forms.md)
+         + [再利用可能なフォームの作成：フォームフラグメントに関するガイド](/help/edge/docs/forms/form-fragments.md)
+         + [動的なフォームの作成：繰り返し可能なセクションの追加](/help/edge/docs/forms/repeatable-forms.md)
+         + [フォームのグローバル化：フォーム翻訳ガイド](/help/edge/docs/forms/translate-forms.md)
+         + [フォームの保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/recaptacha-forms.md)
+         + [カスタムフォームコンポーネントの作成：開発者向けガイド](/help/edge/docs/forms/custom-components-forms.md)
          + [ フォームのパフォーマンスの監視：実際の使用状況に関する監視ガイド ](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
    + Edge Delivery リソース {#resources}
       + Sidekick {#sidekick}
@@ -1156,7 +1156,7 @@ ht-degree: 95%
          + [コンテンツフラグメントのメタデータとタグの定義について](/help/journey-headless/author/metadata-tagging.md)
 + 生成 AI {#generative-ai}
    + [バリエーションを生成](/help/generative-ai/generate-variations.md)
-   + [バリエーションを生成 – AEM エディターに統合](/help/generative-ai/generate-variations-integrated-editor.md)
+   + [バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)
    + [アシスタント（ベータ版限定）](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + 実装 {#implementing}
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
@@ -1216,7 +1216,7 @@ ht-degree: 95%
       + Edge Delivery サイト {#edge-delivery-sites}
          + [Cloud Manager の Edge Delivery Services の概要](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Cloud Manager への Edge Delivery サイトの追加](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
-         + [Cloud ManagerでEdge Delivery サイトを作成します](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+         + [Cloud Manager での Edge Delivery サイトの作成](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
          + [Edge Delivery サイト用のプッシュ検証の設定](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [Cloud Manager での Edge Delivery サイトの管理](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + ドメイン設定 {#custom-domain-names}
@@ -1245,7 +1245,7 @@ ht-degree: 95%
    + AEM as a Cloud Service 向けの開発 {#developing}
       + [AEM プロジェクトの構造](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [AEM プロジェクトリポジトリーの構造パッケージ](/help/implementing/developing/introduction/repository-structure-package.md)
-      + [AEM as a Cloud Service の SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+      + [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
       + [AEM の迅速な開発環境](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [AEM as a Cloud Service の開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md)
       + [AEM as a Cloud Service Developer Console（Beta）](/help/implementing/developing/introduction/aem-developer-console.md)

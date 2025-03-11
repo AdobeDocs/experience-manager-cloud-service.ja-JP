@@ -7,7 +7,7 @@ exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 source-git-commit: 5e2db30d9a505000881a0781dd5c4c2412a17ca8
 workflow-type: tm+mt
 source-wordcount: '1614'
-ht-degree: 43%
+ht-degree: 46%
 
 ---
 
@@ -50,7 +50,7 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
    | フィールド | 説明 |
    | --- | --- |
    | **リポジトリ名** | 必須。新しいリポジトリのわかりやすい名前。 |
-   | **リポジトリ URL** | 必須。リポジトリの URL。<br><br>GitHub でホストされるリポジトリーを使用している場合、パスは `.git` で終わる必要があります。<br>例：*`https://github.com/org-name/repo-name.git`*（URL パスは説明用です）。<br><br>外部リポジトリを使用している場合は、次の URL パス形式を使用する必要があります。<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> または <br>`https://self-hosted-domain/org-name/repo-name.git`<br>。Git ベンダーと一致させる必要があります。 |
+   | **リポジトリ URL** | 必須。リポジトリの URL。<br><br>GitHub でホストされているリポジトリを使用している場合は、パスの末尾を `.git` にする必要があります。<br>例：*`https://github.com/org-name/repo-name.git`*（URL パスは説明用です）。<br><br>外部リポジトリを使用している場合は、次の URL パス形式を使用する必要があります。<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> または <br>`https://self-hosted-domain/org-name/repo-name.git`<br>。Git ベンダーと一致させる必要があります。 |
    | **リポジトリタイプを選択** | 必須。使用するリポジトリタイプを選択します。<ul><li>**GitHub** （GitHub Enterprise Server および GitHub のセルフホストバージョン）</li><li>**GitLab** （`gitlab.com` と GitLab のセルフホストバージョンの両方） </li><li>**Bitbucket** （`bitbucket.org` と Bitbucket サーバーの両方、および Bitbucket の自己ホストバージョン）</li></ul>上記のリポジトリ URL パスに GitLab や Bitbucket などの Git ベンダー名が含まれている場合、リポジトリタイプは既に事前に選択されています。 |
    | **説明** | オプション。リポジトリの詳細な説明です。 |
 
@@ -210,7 +210,7 @@ Webhook が正しく設定されると、Cloud Managerは自動的に、リポ�
 ## 制限事項
 
 * 外部リポジトリは、設定パイプラインにリンクできません。
-* 外部リポジトリ（GitHub でホストされていない）を使用したパイプラインと「Git の変更時」トリガーは自動的には開始されません。 これらは手動でのみ開始できます。
+* 外部リポジトリ（GitHub でホストされていない）を使用したパイプラインと「Git 変更時」トリガーは自動的には開始されません。これらは手動でのみ開始できます。
 
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>

@@ -2,7 +2,7 @@
 source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
 source-wordcount: '1505'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 # スニペット {#snippets}
@@ -60,12 +60,12 @@ ht-degree: 94%
 ## ユニバーサルエディター{#universal-editor-see-also}
 
 * [ユニバーサルエディターを使用した最初のフォームの作成](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [Formsへの動的な動作の追加](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [フォームへの動的な動作の追加](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
 * [フォーム送信アクションの設定とカスタマイズ](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [Formsの公開とデプロイ](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [美しいFormsのデザイン：スタイル設定とテーマ設定ガイド](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [フォームの公開とデプロイ](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [美しいフォームの設計：スタイル設定とテーマ設定ガイド](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
 * [カスタムフォームコンポーネントの作成](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [Formsをスパムから保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [スパムからのフォームの保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## 関連トピック {#see-more-forms-eds}
 
@@ -256,12 +256,12 @@ ht-degree: 94%
 ## ユニバーサルエディター{#ue-see-also}
 
 * [ユニバーサルエディターを使用した最初のフォームの作成](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [Formsへの動的な動作の追加](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [フォームへの動的な動作の追加](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
 * [フォーム送信アクションの設定とカスタマイズ](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [Formsの公開とデプロイ](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [美しいFormsのデザイン：スタイル設定とテーマ設定ガイド](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [フォームの公開とデプロイ](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [美しいフォームの設計：スタイル設定とテーマ設定ガイド](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
 * [カスタムフォームコンポーネントの作成](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [Formsをスパムから保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [スパムからのフォームの保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## 関連トピック {#see-more-eds-forms}
 

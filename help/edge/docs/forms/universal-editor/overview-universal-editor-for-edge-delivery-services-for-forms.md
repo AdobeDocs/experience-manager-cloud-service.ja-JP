@@ -1,22 +1,22 @@
 ---
-title: Edge Delivery Services for Formsのユニバーサルエディター
-description: アダプティブFormsを作成するには、Edge Delivery Services for Formsのユニバーサルエディターを使用します。
+title: Forms の Edge Delivery Services のユニバーサルエディター
+description: Forms の Edge Delivery Services のユニバーサルエディターを使用して、アダプティブフォームを作成します。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1078'
-ht-degree: 70%
+ht-degree: 97%
 
 ---
 
 
-# Edge Delivery Services for Formsのユニバーサルエディター
+# Forms の Edge Delivery Services のユニバーサルエディター
 
-<span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。 例えば、リポジトリ URL がhttps://github.com/adobe/abcの場合、組織名は adobe で、リポジトリ名は abc.</span> です
+<span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセスをリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。 例えば、リポジトリ URL が https://github.com/adobe/abc の場合、組織名は adobe で、リポジトリ名は abc になります。</span>
 
-ユニバーサルエディターは、シンプルで視覚的かつ直感的なWhat You See Is What You Get（WYSIWYG）インターフェイスを提供することで、Adobe Edge 配信サービスのフォーム作成に革命を起こしました。 コンテンツ作成者とフォーム作成者向けに設計されており、従来のフォーム作成プロセスの複雑さを排除し、技術に詳しくないユーザーでもアクセスできます。
+ユニバーサルエディターは、シンプルで視覚的かつ直感的な WYSIWYG（見たままが得られる）インターフェイスを提供することで、Adobe Edge Delivery Services のフォーム作成に革命をもたらします。コンテンツ作成者とフォーム作成者向けに設計されており、従来のフォーム作成プロセスの複雑さを排除し、技術に詳しくないユーザーでもアクセスできます。
 
 ユニバーサルエディターを使用すると、テキストフィールド、チェックボックス、ラジオボタンなどの事前定義済みコンポーネントを使用して、レスポンシブでインタラクティブなフォームをすばやく設計できます。その堅牢な機能セットは、動的なルール、シームレスなデータ統合、高度なパーソナライゼーションをサポートし、すべてのフォームをニーズに合わせて調整します。
 
@@ -24,34 +24,34 @@ ht-degree: 70%
 
 ![ ユニバーサルエディター ](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
-## Edge Delivery Services for Formsのユニバーサルエディターの主な機能
+## Forms の Edge Delivery Services のユニバーサルエディターの主な機能
 
 
 
-| ![WYSIWYG インターフェイス ](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![ルールエディター](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![ 送信アクション ](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) |
+| ![WYSIWYG インターフェイス](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![ルールエディター](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![送信アクション](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) |
 |:-------------:|:-------------:|:-------------:|
 | [**WYSIWYG インターフェイス**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | [**ルールエディター**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**送信アクション**](/help/edge/docs/forms/universal-editor/submit-action.md) |
 | ユニバーサルエディターでは、事前定義済みのコンポーネントライブラリ、レスポンシブデザイン、テンプレートベースの作成、リアルタイムのフィールド変更を備えたフォームデザイン用の WYSIWYG インターフェイスを提供します。 | ルールエディターを使用すると、ユーザーは、イベント駆動型ルール、即時検証、軽量の JavaScript と JSON によるエラー処理を使用して、動的なフォームインタラクションを作成できます。 | 送信アクションは、バックエンド統合、条件付き送信ロジック、安全なエンドポイント、プリプロセッサーをサポートし、送信ワークフローを効率化します。 |
 
-| ![ 公開/非公開 ](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![レスポンシブモード](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![ カスタムコンポーネント ](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
+| ![公開／非公開](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![レスポンシブモード](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![カスタムコンポーネント](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**公開/非公開**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**レスポンシブモード**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**カスタムコンポーネント**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
-| フォームの表示を簡単に制御し、数回クリックするだけで、エディターから直接フォームを公開または非公開にできます。 | デバイス（デスクトップ、タブレット、モバイル）間でシームレスに適応するフォームを設計します。レスポンシブモードを使用して、様々な画面サイズのフォームをプレビューおよびテストします。 | カスタムコンポーネントを使用すると、開発者は特定の組織のユースケースに合わせて独自の要素を作成して、フォームの機能を拡張できます。 |
+| [**公開／非公開**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**レスポンシブモード**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**カスタムコンポーネント**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
+| フォームの表示を簡単に制御します。数回クリックするだけでエディターから直接フォームを公開または非公開にできます。 | デバイス（デスクトップ、タブレット、モバイル）間でシームレスに適応するフォームを設計します。レスポンシブモードを使用して、様々な画面サイズのフォームをプレビューおよびテストします。 | カスタムコンポーネントを使用すると、開発者は特定の組織のユースケースに合わせて独自の要素を作成して、フォームの機能を拡張できます。 |
 
-| ![スタイル設定](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![ 事前入力サービス ](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B テスト ](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
+| ![スタイル設定](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![事前入力サービス](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B テスト](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**スタイル設定**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **事前入力サービス** （近日公開） | [**A/B テスト**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
-| CSS を使用したスタイル設定により、開発者はフォーム要素の外観をカスタマイズし、web サイトの美学に合わせて、視覚的に魅力的なデザインを作成できます。 | 事前入力サービスでは、様々なソースから関連するユーザーデータを自動的にフォームフィールドに入力し、手動入力を減らしてユーザーエクスペリエンスを向上させることができます。 | A/B テストを使用すると、組織は様々なフォームデザイン、レイアウト、機能を試して、最もパフォーマンスの高いバリアントを特定できます。 |
+| [**スタイル設定**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **事前入力サービス**（近日公開） | [**A/B テスト**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| CSS を使用したスタイル設定により、開発者はフォーム要素の外観をカスタマイズし、web サイトの美観に合った視覚的に魅力的なデザインを作成できます。 | 事前入力サービスでは、様々なソースから関連するユーザーデータを自動的にフォームフィールドに入力し、手動入力を減らしてユーザーエクスペリエンスを向上させることができます。 | A/B テストにより、組織は様々なフォームのデザイン、レイアウト、機能を試して、最もパフォーマンスの高いバリアントを特定できます。 |
 
-| ![ 分析とトラッキング ](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![ フォームフラグメント ](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![ データ バインディング ](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
+| ![分析とトラッキング](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![フォームフラグメント](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![データバインディング](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**分析とトラッキング**](https://www.aem.live/developer/martech-integration) | **フォームフラグメント** （近日公開） | **データバインディング** （近日公開） |
-| 組み込みの分析とトラッキングを使用して、ユーザーの行動、フォームのインタラクション、送信率に関するインサイトを取得し、データ駆動型のフォーム最適化を実現します。 | フォームフラグメントを使用すると、よく使用するセクションを一度作成したら、複数のフォームで再利用できるので、一貫性が確保され、メンテナンス作業が軽減され、再利用性が高まります。 | データバインディングにより、フォームフィールドとバックエンドデータソース間の直接接続が可能になり、リアルタイムの更新と高度なデータマッピングがサポートされます。 |
+| [**分析とトラッキング**](https://www.aem.live/developer/martech-integration) | **フォームフラグメント**（近日公開） | **データバインディング**（近日公開） |
+| 組み込みの分析とトラッキングを使用して、ユーザーの行動、フォームのインタラクション、送信率に関するインサイトを獲得し、データ駆動型のフォーム最適化を実現します。 | フォームフラグメントを使用すると、よく使用するセクションを一度作成したら、複数のフォームで再利用できるので、一貫性が確保およびメンテナンス作業が軽減され、再利用性が高まります。 | データバインディングにより、フォームフィールドとバックエンドデータソース間の直接接続が可能になり、リアルタイムの更新と、高度なデータマッピングがサポートされます。 |
 
-| ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Formsの埋め込み ](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Thank You 設定 ](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
+| ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![埋め込みフォーム](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![「ありがとうございます」設定](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Formsの埋め込み** （近日公開） | [**Thank You 設定**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
-| reCAPTCHA を使用すると、フォームを自動ボットから保護し、安全で信頼性の高いデータ収集を行うことができます。 | ユニバーサルエディターの組み込み埋め込みコンポーネントを使用して、Edge Delivery Services Sites ページにフォームを直接埋め込むことができます。 | フォームの送信が成功した後に、ユーザーに表示される感謝のメッセージまたはページを簡単にカスタマイズします。 |
+| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **埋め込みフォーム**（近日公開） | [**「ありがとうございます」設定**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| reCAPTCHA を使用すると、フォームを自動ボットから保護し、安全で信頼性の高いデータ収集を行うことができます。 | ユニバーサルエディターの組み込みの埋め込みコンポーネントを使用して、フォームを Edge Delivery Services サイトページに直接埋め込みます。 | フォームの送信が成功した後に、ユーザーに表示される感謝のメッセージまたはページを簡単にカスタマイズします。 |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.

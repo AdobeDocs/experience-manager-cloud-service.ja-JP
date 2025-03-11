@@ -8,20 +8,20 @@ exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
 source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
 source-wordcount: '1085'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 
 # Google reCAPTCHA でFormsをスパムから保護
 
-<span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に、GitHub の組織名とリポジトリ名を記載したメールを送信します。</span>
+<span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセスをリクエストするには、公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に、GitHub の組織名とリポジトリ名を記載したメールを送信します。</span>
 
 
 
 ## フォームで reCAPTCHA を使用する理由
 
-| ![セキュリティ](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![ ボットの保護 ](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![ ユーザーエクスペリエンス ](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
+| ![セキュリティ](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![ ボットの保護 ](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![ユーザーエクスペリエンス](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
 |:-------------:|:-------------:|:-------------:|
 | **セキュリティの強化** | **ボットおよびスパムの防止** | **シームレスなユーザーエクスペリエンス** |
 | 不正行為や悪意のある攻撃からフォームを保護 | 自動ボットが無関係または有害なコンテンツでフォームをあふれさせないようにする | 目に見えない reCAPTCHA は、正当なユーザーを妨げることなく、バックグラウンドで機能します |

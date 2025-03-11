@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
 source-wordcount: '2847'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -174,9 +174,9 @@ ht-degree: 91%
 
 生成バリエーションを使用して生成 AI を活用し、コンテンツ作成を高速化します。
 
-コンテンツフラグメントエディターを開き、バリエーションを生成するためのエントリポイントを見つけます。
+コンテンツフラグメントエディターを開き、バリエーションを生成するエントリポイントを見つけます。
 
-詳しくは、[ バリエーションの生成 – AEM エディターに統合 ](/help/generative-ai/generate-variations-integrated-editor.md) を参照してください。
+詳しくは、[バリエーションを生成 – AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)を参照してください。
 
 ### バリエーションを削除 {#delete-variation}
 

@@ -1,5 +1,5 @@
 ---
-title: ユニバーサルエディターについて – レスポンシブモード
+title: ユニバーサルエディターについて - レスポンシブモード
 description: この記事では、ユニバーサルエディターで様々なエミュレーターを使用してフォームをプレビューし、オーサリング中のルックアンドフィールを視覚化する方法について説明します。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
@@ -7,14 +7,14 @@ exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1285'
-ht-degree: 1%
+ht-degree: 42%
 
 ---
 
 
 # WYSIWYG オーサリングのレスポンシブモード
 
-<span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。 例えば、リポジトリ URL がhttps://github.com/adobe/abcの場合、組織名は adobe で、リポジトリ名は abc.</span> です
+<span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセスをリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。 例えば、リポジトリ URL が https://github.com/adobe/abc の場合、組織名は adobe で、リポジトリ名は abc になります。</span>
 
 ## レスポンシブFormsの概要
 
@@ -22,17 +22,17 @@ ht-degree: 1%
 
 [ ユニバーサルエディター ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) を使用すると、様々な画面サイズに自動的に適応するフォームを作成でき、使用しているデバイスに関係なく、最適なユーザーエクスペリエンスが提供されます。
 
-## 様々なデバイスのレスポンシブモードでのFormsのプレビュー
+## 様々なデバイスのレスポンシブモードでのフォームのプレビュー
 
-ユニバーサルエディターでは、画面の右上隅にある **エミュレーター** アイコンを使用すると、様々なデバイスサイズでページをプレビューし、レスポンシブデザインの動作をテストして、ユーザーエクスペリエンスを向上させることができます。
+ユニバーサルエディターでは、画面の右上隅にある&#x200B;**エミュレーター**&#x200B;アイコンを使用して、様々なデバイスサイズでページをプレビューし、レスポンシブデザインの動作をテストして、ユーザーエクスペリエンスを向上させることができます。
 
 レスポンシブモードでフォームをプレビューするには：
 
-1. フォームをユニバーサルエディターで編集用に開きます。
+1. 編集用にユニバーサルエディターでフォームを開きます。
 2. ツールバーの ![ デバイスプレビューシンボルを表示しているエミュレーターアイコン ](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} アイコンをクリックします。
 3. デバイス形式を選択してください：
    - デスクトップ（デフォルト）
-   - タブレットなど）のアクティブマーカーを確認する。
+   - タブレット
    - モバイル
    - カスタム （幅と高さを指定）
 
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 **スクリーンローテーター** アイコンを使用して、タブレットやモバイルデバイスでプレビューするときに縦向きと横向きを切り替えることもできます。
 
-ユニバーサルエディターには、様々なデバイスでフォームをプレビューするための様々なエミュレーターが用意されています。 次の表に、使用可能なエミュレータタイプと、対応するデバイス表現を示します。
+ユニバーサルエディターには、様々なデバイスでフォームをプレビューする様々なエミュレーターが用意されています。次の表に、使用可能なエミュレータータイプと、対応するデバイス表現を示します。
 
 <table border="1" style="text-align:" left; border-collapse: collapse;">
     <tr>
@@ -52,7 +52,7 @@ ht-degree: 1%
         <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="全幅レイアウトを表示するフォームのデスクトップビュー" style="width: auto; height: auto"></td>
     </tr>
     <tr>
-        <td style="width: 20%">タブレットなど）のアクティブマーカーを確認する。</td>
+        <td style="width: 20%">タブレット</td>
         <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="調整済みコンポーネントを含む中幅のレイアウトを示す、フォームのタブレットビュー" style="width: auto; height: auto"></td>
     </tr>
     <tr>
@@ -67,9 +67,9 @@ ht-degree: 1%
 
 ## レイアウト機能
 
-ユニバーサルエディターを使用すると、簡単に使用できるフォームを作成して、エンドユーザーに動的なエクスペリエンスを提供できます。 フォームのレイアウトは、フォーム内での項目やコンポーネントの表示方法をコントロールします。
+ユニバーサルエディターでは、簡単に使用できるフォームを作成でき、エンドユーザーに動的なエクスペリエンスを提供します。フォームのレイアウトは、フォーム内での項目やコンポーネントの表示方法をコントロールします。
 
-ユニバーサルエディターは、フォームに対して次のタイプのレイアウトをサポートします。
+ユニバーサルエディターは、フォームに対して次のタイプのレイアウトをサポートしています。
 
 - [パネルレイアウト](#panel-layout)
 - [ウィザードレイアウト](#wizard-layout)
@@ -77,7 +77,7 @@ ht-degree: 1%
 
 ### パネルレイアウト
 
-パネルレイアウトは、関連するフィールドを整理して、対応するコンテンツを簡単に移動および検索するのに役立ちます。 パネルレイアウトを使用すると、フォーム内の個別のセクションまたはパネル内にフォームコンポーネントを配置できます。
+パネルレイアウトは、関連するフィールドを整理して、対応するコンテンツを簡単に移動および検索するのに役立ちます。パネルレイアウトを使用すると、フォーム内の個別のセクションまたはパネル内にフォームコンポーネントを配置できます。
 
 ![ フォーム内の複数の異なるセクションを表示するパネルレイアウト ](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
 
@@ -85,11 +85,11 @@ ht-degree: 1%
 
 **レスポンシブ動作：** 小さい画面では、通常、パネルは縦に積み重ねられ、狭い幅に調整しながら個別のグループを維持します。
 
-[ パネルコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) を使用して、パネルレイアウトをフォームに追加できます。 パネルコンポーネントの様々なプロパティを設定する方法について詳しくは、[ パネルコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) の記事を参照してください。
+[パネルコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)を使用して、フォームにパネルレイアウトをフォームに追加できます。パネルコンポーネントの様々なプロパティを設定する方法について詳しくは、[パネルコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)の記事を参照してください。
 
-### ウィザード レイアウト
+### ウィザードレイアウト
 
-ウィザードレイアウトを使用すると、複雑なフォームを別個の手順に分割して簡素化できます。 各手順はプロセスの異なる部分を表し、ユーザーは多くの場合、「次へ **や「戻る** ボタンを使用して手順を順番に移動し **す**。 ウィザードレイアウトを使用すると、複数のセクションや手順を含むフォームを作成できます。
+ウィザードレイアウトを使用すると、複雑なフォームを別個の手順に分割して簡素化できます。 各手順はプロセスの異なる部分を表し、ユーザーは多くの場合、「**次へ**」ボタンと「**戻る**」ボタンを使用して手順を順番に移動します。ウィザードレイアウトを使用して、複数のセクションや手順を含むフォームを作成できます。
 
 ![ ナビゲーションコントロールを含む複数ステップのフォームを示すウィザードレイアウト ](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
 
@@ -97,11 +97,11 @@ ht-degree: 1%
 
 **レスポンシブ動作：** モバイルデバイスでは、ウィザードは段階的なアプローチを維持しますが、画面が狭くなるように各手順でコンテンツが調整され、多くの場合、大きな画面に並べて表示される要素が積み重ねられます。
 
-[ ウィザードコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) を使用して、フォームにウィザードレイアウトを追加できます。 ウィザードコンポーネントの様々なプロパティを設定する方法について詳しくは、[ ウィザードコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) の記事を参照してください。
+[ウィザードコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)を使用して、フォームにウィザードレイアウトを追加できます。ウィザードコンポーネントの様々なプロパティを設定する方法について詳しくは、[ウィザードコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)の記事を参照してください。
 
 ### アコーディオンレイアウト
 
-アコーディオンレイアウトでは、アダプティブフォーム内の折りたたみ可能なセクションまたはパネルにコンテンツが表示されます。 セクションを展開すると、内にコンテンツが表示されますが、その他のセクションは折りたたまれたままです。 大量の情報をコンパクトに表示する場合に最適です。
+アコーディオンレイアウトでは、アダプティブフォーム内の折りたたみが可能なセクションまたはパネルにコンテンツが表示されます。セクションを展開すると、そのセクション内のコンテンツが表示されますが、他のセクションは折りたたまれたままになります。このレイアウトは、大量の情報をコンパクトなフォームで表示する場合に最適です。
 
 ![ フォーム内で拡張可能なセクションを示すアコーディオンレイアウト ](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
 
@@ -109,19 +109,19 @@ ht-degree: 1%
 
 **レスポンシブ動作：** アコーディオンは、当然ながらコンテンツの展開部分のみを表示することで縦空間を節約するので、モバイルデバイスでは特に効果的で、小さい画面に最適です。
 
-[ アコーディオンコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) を使用して、フォームにアコーディオンレイアウトを追加できます。 アコーディオンコンポーネントの様々なプロパティを設定する方法について詳しくは、[ アコーディオンコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) の記事を参照してください。
+[アコーディオンコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)を使用して、フォームにアコーディオンレイアウトを追加できます。アコーディオンコンポーネントの様々なプロパティを設定する方法について詳しくは、[アコーディオンコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)の記事を参照してください。
 
 ### 適切なレイアウトを選択する方法
 
-ユーザーエクスペリエンスとフォーム機能を最適化するには、適切なレイアウトを選択することが重要です。 この表を参照すると、使用可能な様々なレイアウトオプションを理解でき、特定のニーズやユースケースに基づいて最も適したレイアウトを選択する際に役立ちます。
+ユーザーエクスペリエンスとフォームの機能を最適化するには、適切なレイアウトを選択することが重要です。次の表は、使用可能な様々なレイアウトオプションを理解するのに役立ち、特定のニーズとユースケースに基づいて最適なレイアウトを選択できます。
 
-| 機能 | パネルレイアウト | ウィザード レイアウト | アコーディオンレイアウト |
+| 機能 | パネルレイアウト | ウィザードレイアウト | アコーディオンレイアウト |
 |----------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-| **目的** | 関連するコンテンツを個別のセクションにグループ化 | 複数の手順から成るプロセスまたはフォームのガイド | コンテンツを折りたたみ可能なセクションに整理します |
-| **構造** | 個別セクション | 順次ステップ/ページ | 折りたたみ可能なパネル/セクション |
-| **ナビゲーション** | パネルヘッダーをクリックして移動します |  – 進む：「次へ」ボタン <br> – 戻る：「戻る」ボタン <br>- オプションのスキップ手順 | ヘッダーをクリックしてセクションを展開/折りたたむ |
-| **ユーザーエクスペリエンス** | 管理しやすい方法で大量のコンテンツを整理する | ステップバイステップのガイダンス、負担の軽減 | セクションを展開/折りたたんだ状態のコンパクト ビュー |
-| **ユースケース** | セクションが分類された複雑なフォーム | セットアッププロセス、複雑なフォーム | FAQ、設定メニュー、詳細なコンテンツセクション |
+| **目的** | 関連するコンテンツを個別のセクションにグループ化 | 複数の手順で構成されるプロセスやフォームを通じてユーザーに説明 | コンテンツを折りたたみ可能なセクションに整理 |
+| **構造** | 個別のセクション | 順次手順／ページ | 折りたたみ可能なパネル／セクション |
+| **ナビゲーション** | パネルヘッダーをクリックして移動 |  – 進む：「次へ」ボタン <br> – 戻る：「戻る」ボタン <br>- オプションのスキップ手順 | ヘッダーをクリックしてセクションを展開／折りたたむ |
+| **ユーザーエクスペリエンス** | 管理しやすい方法で大量のコンテンツを整理 | ステップバイステップのガイダンスで負担を軽減 | セクションを展開／折りたたんだ状態のコンパクトビュー |
+| **ユースケース** | セクションが分類された複雑なフォーム | 設定プロセス、複雑なフォーム | よくある質問、設定メニュー、詳細なコンテンツセクション |
 | **モバイルに最適** | 標準 – パネルが縦に積み重なります | 良好 – 現在の手順にのみ焦点を当てます | 優れた機能 – 折りたたみ可能なセクションでスペースを節約 |
 
 ## レスポンシブ Formsのベストプラクティス

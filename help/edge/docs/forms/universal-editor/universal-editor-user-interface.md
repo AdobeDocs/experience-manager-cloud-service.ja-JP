@@ -7,14 +7,14 @@ exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
 source-wordcount: '1706'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
 
 # ユニバーサルエディター（WYSIWYG）インターフェイスの詳細
 
-[ ユニバーサルエディター ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) は、Adobe Edge 配信サービスForms用のシンプルで視覚的かつ直感的なWhat You See Is What You Get（WYSIWYG）インターフェイスを提供します。 ドラッグ＆ドロップ機能を備えた最新のインターフェイスで、効率的なフォームオーサリングを実現します。
+[ユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)は、Adobe Edge Delivery Services Forms 用のシンプルで視覚的かつ直感的な WYSIWYG（見たままが得られる）インターフェイスを提供します。ドラッグ＆ドロップ機能を備えた最新のインターフェイスで、効率的なフォームオーサリングを実現します。
 
 ![ユニバーサルエディターのユーザーインターフェイス](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
@@ -209,7 +209,7 @@ Experience Cloud ヘッダーは、コンソールの上部に表示され、よ
 
   **A/B テスト** は、フォームの特定のバリエーションを比較して、パフォーマンスが優れたフォームを判断するのに役立ちます。 より広範な実験とは異なり、A/B テストは通常、特定の要素や変更の比較に焦点を当て、最も効果的なオプションを特定します。
 
-  ![A/B テスト ](/help/edge/docs/forms/universal-editor/assets/ue-abtesting.png)
+  ![A/B テスト](/help/edge/docs/forms/universal-editor/assets/ue-abtesting.png)
 
 - **タスクの管理**
 

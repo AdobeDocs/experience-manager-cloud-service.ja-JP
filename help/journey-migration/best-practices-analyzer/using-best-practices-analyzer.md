@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 951f7fb56d1d8a3285973fda945cbc21f310925f
 workflow-type: tm+mt
 source-wordcount: '2796'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -80,10 +80,10 @@ ht-degree: 97%
    ![レポートを生成](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
 >[!NOTE]
-> BPA バージョン 2.1.54 以降、Lighthouse スコアを取得するための新機能が導入されました。
+> BPA バージョン 2.1.54 以降、Lighthouse スコアを取得する新機能が導入されました。
 
 
-1. **レポートを生成** をクリックすると、ポップアップが表示され、Lighthouse スコアのAEM公開サイト URL を要求します。 ユーザーは、指定されたフィールドに有効な URL を入力する必要があります。
+1. 「**レポートを生成**」をクリックすると、Lighthouse スコアの AEM 公開サイト URL を要求するポップアップが表示されます。ユーザーは、指定されたフィールドに有効な URL を入力する必要があります。
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
 

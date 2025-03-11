@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 source-git-commit: 00b4fa64a2f5d7ddf7ea7af7350374a1f1bcb768
 workflow-type: tm+mt
 source-wordcount: '3175'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -517,7 +517,7 @@ GraphQL にも、フラグメント参照の繰り返し防止機能がありま
 
 ### 要件 {#the-requirements}
 
-* ライブコンテンツ配信に既に使用されているモデル（つまり、公開済みのモデル）を編集する際のリスクをユーザーに認識させる。
+* ライブコンテンツ配信に既に使用されているモデル、つまり公開済みのモデルを編集する際のリスクをユーザーに認識させる。
 
 * 意図しない変更を避ける。
 
