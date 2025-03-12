@@ -4,10 +4,10 @@ description: コンテンツ転送ツールを使用してコンテンツ転送�
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 9b05ed38e8eb337b3a07ee2051c6a0d530088af2
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 100%
+source-wordcount: '1220'
+ht-degree: 96%
 
 ---
 
@@ -145,13 +145,14 @@ Migration validation took 0 minutes
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-概要情報を含むダイアログが表示されます。ヘルプアイコンを使用して、詳細な説明を参照します。「**レポートをダウンロード**」ボタンをクリックして、完全なコンマ区切り（CSV）レポートをダウンロードします。また、このレポートの末尾には、移行後のユーザー管理に使用できるユーザーレポートもあります。
+概要情報を含むダイアログが表示されます。ヘルプアイコンを使用して、詳細な説明を参照します。完全なコンマ区切り（CSV）プリンシパル移行レポートをダウンロードするには、「**ファイルをダウンロード…**」のドロップダウンリストから「**プリンシパル移行レポート**」を選択し、「**ダウンロード**」ボタンをクリックします。 また、このレポートの末尾には、移行後のユーザー管理に使用できるユーザーレポートもあります。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
 プリンシパルの移行レポートでは、次の情報が報告されます。
 
 * 移行された各グループと、そのグループの移行をトリガーした最初のコンテンツパス。グループは他のパス上にある場合もありますが、特定のグループに対して最初に見つかったパスのみが報告されます。また、ACL または CUG ポリシーで見つかったかどうかも報告されます。
+* ローカルグループとして移行された各グループには、グループの行に「local」という単語が示されます。
 * 移行されなかった各グループと、移行されなかった理由。通常は、次のいずれかの理由になります。
    * 組み込みのグループである
    * 既にターゲットシステム上にある

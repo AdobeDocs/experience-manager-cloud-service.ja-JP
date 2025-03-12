@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6a907b3d3241010e152669a70dec405215fbc6b1
+source-git-commit: 9b05ed38e8eb337b3a07ee2051c6a0d530088af2
 workflow-type: tm+mt
-source-wordcount: '6239'
+source-wordcount: '6247'
 ht-degree: 98%
 
 ---
@@ -320,6 +320,7 @@ ht-degree: 98%
          + [移行セットの削除](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [パブリッシュインスタンスでのコンテンツ転送ツールの実行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [移行後のプリンシパルの管理](/help/journey-migration/managing-principals-after-migration.md)
+         + [移行後の IMS へのプリンシパルの一括アップロード](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
          + [コンテンツトランスファーツールのトラブルシューティング](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + 従来のユーザーマッピングツール（従来）{#legacy-user-mapping-tool}
             + [概要](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
