@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe Cloud Manager では、次の理由により、カスタムドメイン名
 
 1. 「**編集**」をクリックします。
 
-1. **CDN 設定を編集**&#x200B;ダイアログボックスで、次の操作を行います。
+1. **ドメイン設定を編集** ダイアログボックスで以下を行います。
 
    * **階層**&#x200B;ドロップダウンリストで、使用する層（パブリッシュまたはプレビュー）を選択します。
    * **SSL 証明書**&#x200B;ドロップダウンリストで、使用する SSL 証明書を選択します。
@@ -112,7 +112,7 @@ Adobe Cloud Manager では、次の理由により、カスタムドメイン名
 
 1. **環境**&#x200B;ページから、対象となる環境の詳細画面に移動します。
 
-1. ドメイン名のテーブルで、削除するカスタムドメイン名の行を見つけます。
+1. ドメインマッピング テーブルで、削除するカスタムドメイン名の行を見つけます。
 
 1. 行の右端にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 

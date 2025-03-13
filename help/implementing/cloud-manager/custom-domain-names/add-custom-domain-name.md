@@ -5,15 +5,15 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b2852673ad313e5ea6be6dc0ed185d60a46fedeb
-workflow-type: ht
-source-wordcount: '1020'
-ht-degree: 100%
+source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+workflow-type: tm+mt
+source-wordcount: '1028'
+ht-degree: 96%
 
 ---
 
 
-# カスタムドメイン名の追加 {#adding-cdn}
+# カスタムドメイン名の追加 {#adding-custom-domain-name}
 
 Cloud Manager で&#x200B;**ドメイン設定**&#x200B;を使用してカスタムドメイン名を追加する方法について説明します。
 
@@ -29,7 +29,7 @@ Cloud Manager でカスタムドメイン名を追加する前に、次の要件
 >
 >アドビが管理する CDN を使用する場合でも、ドメインを Cloud Manager に追加する必要があります。
 
-## カスタムドメイン名の追加先 {#where-to-add-cdn}
+## カスタムドメイン名の追加先 {#where-to-add-custom-domain-name}
 
 Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカスタムドメイン名を追加できます。
 
@@ -37,7 +37,7 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 
 このドキュメントで説明するどちらの方法の手順も、Fastly に基づいています。別の CDN（コンテンツ配信ネットワーク）を使用した場合は、使用するように選択した CDN をドメインに設定します。
 
-## カスタムドメイン名の追加 {#adding-cdn-settings}
+## カスタムドメイン名の追加 {#adding-custom-domain-name-settings}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
@@ -75,7 +75,7 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 
    >[!NOTE]
    >
-   >顧客が管理する自社の（OV/EV または DV）SSL 証明書を使用し、顧客が管理する CDN ***プロバイダー***&#x200B;を使用する場合は、SSL 証明書の追加をスキップできます。代わりに、準備が整ったら [CDN 設定の追加](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)に直接進むことができます。
+   >顧客が管理する独自の（OV/EV または DV） SSL 証明書を使用する場合は、SSL 証明書を追加する必要はありません。 このルールは、顧客が管理する CDN （コンテンツ配信ネットワーク） ***プロバイダー*** を使用する予定の場合にも適用されます。 代わりに、準備が整ったら [CDN 設定の追加](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)に直接進むことができます。
 
 
 ### アドビが管理する証明書の手順 {#adobe-managed-cert-steps}
@@ -200,4 +200,5 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
 ><!-- The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS server, thus saving time. -->
 >
 ><!-- To do this, review the entire process of setting up a custom domain name as detailed in the document [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md) taking special note of the document [help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) and update your DNS settings appropriately. -->
+
 

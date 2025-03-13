@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
-workflow-type: ht
-source-wordcount: '846'
-ht-degree: 100%
+source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+workflow-type: tm+mt
+source-wordcount: '849'
+ht-degree: 96%
 
 ---
 
@@ -88,7 +88,7 @@ Fastly は、ドメインを先に登録したアカウントにロックしま�
 
 ## カスタムドメイン名の既存の CDN 設定 {#pre-existing-cdn}
 
-カスタムドメイン名の CDN 設定が既にある場合は、**カスタムドメイン名**&#x200B;ページと&#x200B;**環境**&#x200B;ページに情報メッセージが表示されます。これらの設定を UI を通じて追加し、Cloud Manager で表示および管理できるようにすることをお勧めします。
+カスタムドメイン名に既に CDN （コンテンツ配信ネットワーク）設定がある場合は、「**カスタムドメイン名**」ページと **環境** ページに情報メッセージが表示されます。 これらの設定を UI を通じて追加し、Cloud Manager で表示および管理できるようにすることをお勧めします。
 
 UI を使用して既存の環境設定をすべて移行すると、このメッセージは表示されなくなります。メッセージが表示されなくなるまでに 1～2 営業日かかる場合があります。
 
