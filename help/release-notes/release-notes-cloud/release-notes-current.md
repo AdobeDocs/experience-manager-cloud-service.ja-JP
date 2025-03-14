@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 896a2927c0f5733ab23ca9f6c9e975f8388daff9
+source-git-commit: a2f26e7befe4aa23350cfdca6a2c342500a909db
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 48%
+source-wordcount: '1493'
+ht-degree: 46%
 
 ---
 
@@ -59,6 +59,10 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 **コンテンツフラグメントエディターとGraphQLで OpenAPI をサポートする Dynamic Media**
 
 コンテンツフラグメントとは異なるAEM as a Cloud Service プログラムに保存され、OpenAPI 機能を備えた新しい Dynamic Media で有効になっているAssetsを、コンテンツフラグメントで使用できるようになりました。 新しいコンテンツフラグメントエディターの画像セレクターで、フラグメントで参照する画像アセットのソースとして「リモート」リポジトリーを選択できるようになりました。 さらに、AEM GraphQLを使用してこのようなコンテンツフラグメントを配信する際に、リモートアセット（assetId、repositoryId）の必須プロパティが JSON 応答に含まれるようになりました。これにより、クライアントアプリケーションは、画像を取得する OpenAPI の URL で各 Dynamic Media を作成できます。
+
+**コンテンツフラグメントエディターのロールアウト**
+
+引き続き、AEM as a Cloud Serviceで新しい Spectrum UI ベースのコンテンツフラグメントエディターを有効にします。 2024 年 11 月にすべてのCloud Service Developer 環境のデフォルトとなった後、2025 年 4 月 1 日にすべてのステージ環境で、2025 年 5 月 1 日にすべての実稼動環境でデフォルトとして設定されます。 どの場合でも、AEM タッチ UI で、従来のコンテンツフラグメントエディターに戻すオプションが引き続き用意されています。
 
 **翻訳 HTTP API**
 
