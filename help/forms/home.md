@@ -5,21 +5,24 @@ landing-page-description: AEM as a Cloud Service でのフォームの使用方�
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: f4b079837dee960401a16073293969954cad3e77
 workflow-type: tm+mt
-source-wordcount: '972'
-ht-degree: 100%
+source-wordcount: '1165'
+ht-degree: 70%
 
 ---
 
 
 # AEM Forms as a Cloud Service の概要 {#introduction}
 
-| バージョン | 記事リンク |
-| -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html) |
-| AEM as a Cloud Service | この記事 |
-
+<!-- Version Navigation -->
+<div class="version-selector">
+  <p><strong>別のバージョンのドキュメントをお探しですか？</strong></p>
+  <ul>
+    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html">AEM 6.5 Forms ドキュメント</a></li>
+    <li><strong>AEM Formsas a Cloud Service</strong> （最新）</li>
+  </ul>
+</div>
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] は、複雑なデジタルフォームを作成、管理、公開、更新しながら、送信データをバックエンドプロセス、ビジネスルール、外部データストアに保存する、クラウドネイティブのサービスとしてのプラットフォーム（PaaS）ソリューションを提供します。
 
@@ -57,16 +60,46 @@ AEM Forms を使用するビジネスユーザーは、ドキュメントテン�
 
 ## 今すぐ始める {#key-features}
 
-|  |  |
-|---|---|
-| アダプティブフォーム | Web サイト、アプリ、その他のデジタルチャネルや印刷チャネル向けの、インタラクティブかつ動的で、モバイルデバイスでも使いやすく、データドリブンなレスポンシブフォームを作成および管理します。次のトピックを参照して登録の概要を理解してから、登録を行ってください。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=ja">アダプティブフォームの作成 </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html">アダプティブフォームのスタイル設定</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=ja#enabling-server-side-validation-br">データストアまたはワークフローへのデータの送信</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja">長期保管用のフォームのレコードの作成</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=ja"> AEM Sites ページへのアダプティブフォームの追加</a></li></ul> |
-| 通信 API | RESTful API を使用して、パーソナライズされたデータドリブン型のコミュニケーションの、管理、配信をオンデマンドで、または月次明細書やアカウント通知などのスケジュールどおりに自動化します。基本を学んで理解し、作成するには、次のトピックを確認してください。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja#document-generation">パーソナライズされたコミュニケーションの生成</a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja#document-manipulation">PDF ドキュメントの組み立てまたは分解</a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang-ja#convert-to-and-validate-pdf%2Fa-compliant-documents">PDF/A 準拠ドキュメントの作成</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja#">DocAssurance API を使用したドキュメントを保護</a></li></ul> |
-| 自動フォーム変換サービス | 従来の PDF ベースのフォームを、オンラインで容易に管理および配布できるアダプティブフォームに変換します。まずは、以下を確認してください。 <ul><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=ja">フォームの自動変換サービスの設定</a></li><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ja">PDF forms をアダプティブフォームに変換</a></li></ul> |
-| Forms のワークフロー | フォームとドキュメントサービスに関するビジネスプロセスを自動化します。ビジネスプロセスのさまざまな段階を進めるうえで、フォームとドキュメントの割り当て、ルーティング、レビュー、承認を行います。まずは、以下を確認してください。  <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html?lang=ja">レビュー用のフォームやドキュメントの送信</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ja#assign-task-step">承認却下ワークフローの作成</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ja#generate-document-of-record-step">ビジネスワークフローにレコードのドキュメント </a> または <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ja#sign-document-step"> 電子サイン </a> の手順を追加</a></li></ul> |
-| 電子サイン | Adobe Sign や Adobe Sign Solutions for Government と統合して、ユーザーに電子サイン用のフォームやドキュメントを簡単に送信できます。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=ja">Adobe Sign によるアダプティブフォームの電子サイン</a></li><li></a> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ja#sign-document-step">Adobe Sign と AEM ワークフローを使用したドキュメントの電子サイン</a></li></ul> |
-| フォーム分析 | Adobe Analytics を使用して、ユーザーの行動や環境設定に関する貴重なインサイトを得ることができます。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html?lang=ja">アダプティブフォームと Adobe Analytics の接続</a></li></ul> |
-| データソース | 外部データソースにフォームやドキュメントを簡単に接続して、データを取得したり送信したりできます。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=ja">RDBMS や REST エンドポイントへの接続</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=ja">Microsoft® Dynamics 365 や Salesforce クラウドサービスに接続</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=ja">Microsoft® Azure Blob Storage に接続</a></li></ul> |
+AEM Forms as a Cloud Serviceには、次のカテゴリに分類された包括的な機能セットが用意されています。
 
+### フォームの作成とオーサリング {#form-creation}
+
+様々なオーサリングオプションを使用して、魅力的でレスポンシブなデータ駆動型のフォームを作成します。
+
+| 機能 | 説明 |
+|---|---|
+| アダプティブフォーム | Web サイト、アプリ、その他のデジタルチャネルや印刷チャネル向けの、インタラクティブで動的な、レスポンシブでモバイルに対応した、データ駆動型のフォームを作成および管理します。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=ja">アダプティブフォームの作成 </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html">アダプティブフォームのスタイル設定</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=ja"> AEM Sites ページへのアダプティブフォームの追加</a></li></ul> |
+| FormsのEdge Delivery Services | 優れたユーザーエクスペリエンスを備えた高パフォーマンスのフォームを作成して配信する： <ul><li><a href="/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md"> ユニバーサルエディターを使用したWYSIWYGオーサリング </a> - フォームを作成するための強力なビジュアルインターフェイス</li><li><a href="/help/edge/docs/forms/create-forms.md"> ドキュメントベースのオーサリング </a> - Microsoft Excel やGoogle シートなどの使い慣れたツールを使用してフォームを作成します</li><li>複雑なフォームロジックを作成するための高度なルールエディター</li><li>フォームの読み込みを最適化して、ほぼ完璧なGoogle Lighthouse スコアを達成します</li><li>最小限の開発時間でフォームをより迅速にデプロイ</li></ul> |
+| 自動フォーム変換サービス | 従来のPDF ベースのフォームを、オンラインで容易に管理および配布できるアダプティブFormsに変換します。 <ul><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=ja">フォームの自動変換サービスの設定</a></li><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ja">PDF forms をアダプティブフォームに変換</a></li></ul> |
+
+### ドキュメントの処理と通信 {#document-processing}
+
+パーソナライズされたコミュニケーションを生成、組み立て、配信：
+
+| 機能 | 説明 |
+|---|---|
+| 通信 API | オンデマンドまたはスケジュールされた間隔で、RESTful API を使用して、パーソナライズされたデータ駆動型のコミュニケーションの作成、管理および配信を自動化します。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja#document-generation">パーソナライズされたコミュニケーションの生成</a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja#document-manipulation">PDF ドキュメントの組み立てまたは分解</a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang-ja#convert-to-and-validate-pdf%2Fa-compliant-documents">PDF/A 準拠ドキュメントの作成</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja#">DocAssurance API を使用したドキュメントを保護</a></li></ul> |
+| レコードのドキュメント | アーカイブおよびコンプライアンスのために、送信済みフォームのレコードを作成および管理します。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja">長期保管用のフォームのレコードの作成</a></li><li>カスタム機能のサーバーサイド拡張</li><li>改ざん防止アーカイブ用のレコードのドキュメント機能</li></ul> |
+
+### ワークフローとプロセスの自動化 {#workflow}
+
+ビジネスプロセスとフォーム関連のワークフローを自動化します。
+
+| 機能 | 説明 |
+|---|---|
+| Forms のワークフロー | フォームとドキュメントサービスに関するビジネスプロセスを自動化します。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html?lang=ja">レビュー用のフォームやドキュメントの送信</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ja#assign-task-step">承認却下ワークフローの作成</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=ja#enabling-server-side-validation-br">データストアまたはワークフローへのデータの送信</a></li></ul> |
+| 電子サイン | Adobe Sign や Adobe Sign Solutions for Government と統合して、ユーザーに電子サイン用のフォームやドキュメントを簡単に送信できます。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=ja">Adobe Sign によるアダプティブフォームの電子サイン</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ja#generate-document-of-record-step">ビジネスワークフローにレコードのドキュメント </a> または <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ja#sign-document-step"> 電子サイン </a> の手順を追加</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ja#sign-document-step">Adobe Sign と AEM ワークフローを使用したドキュメントの電子サイン</a></li></ul> |
+
+### データ統合と分析 {#data-integration}
+
+フォームをデータソースに接続し、フォームのパフォーマンスに関するインサイトを取得します。
+
+| 機能 | 説明 |
+|---|---|
+| フォーム分析 | Adobe Analytics を使用して、ユーザーの行動や環境設定に関する貴重なインサイトを得ることができます。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html?lang=ja">アダプティブフォームと Adobe Analytics の接続</a></li></ul> |
+| Adobe統合 | フォームを他のAdobe ソリューションと接続する： <ul><li><a href="/help/forms/submit-adaptive-form-to-workfront-fusion.md">Adobe Workfront Fusion への接続 </a> とWorkfront シナリオへのデータの送信</li><li><a href="/help/forms/integrate-form-to-marketo-engage.md">Adobe Marketo Engageへの接続 </a> および <a href="/help/forms/submit-adaptive-form-to-marketo-engage.md">Marketoへのデータの送信 </a></li></ul> |
+| Microsoft統合 | フォームとMicrosoft サービスの接続： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=ja">Microsoftへの接続® Dynamics 365</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=ja">Microsoft®Azure Blob Storage に接続 </a> および <a href="/help/forms/configure-submit-action-azure-blob-storage.md">Azure Blob Storage にデータを送信 </a></li><li><a href="/help/forms/connect-forms-to-sharepoint-document-library.md">Microsoft®SharePoint Document Library に接続し </a><a href="/help/forms/configure-submit-action-sharepoint.md">SharePointにデータを送信する </a></li><li><a href="/help/forms/configure-submit-action-onedrive.md">Microsoft® OneDrive に接続し </a>OneDrive にデータを送信する</li><li><a href="/help/forms/forms-microsoft-power-automate-integration.md">Microsoftへの接続®Power Automate</a> およびフォーム送信時のトリガーフロー</li><li><a href="/help/forms/ms-dynamics-odata-configuration.md">Microsoft® Dynamics OData に接続 </a></li></ul> |
+| その他のデータソース | 追加のデータソースとエンドポイントに接続します。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=ja">RDBMS や REST エンドポイントへの接続</a></li><li><a href="/help/forms/aem-forms-salesforce-integration.md">Salesforceへの接続 </a> およびSalesforceへのデータの送信</li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-rest-endpoint">REST エンドポイントへの送信</a></li></ul> |
 
 >[!MORELIKETHIS]
 >
@@ -74,4 +107,3 @@ AEM Forms を使用するビジネスユーザーは、ドキュメントテン�
 >* [Cloud Service 環境へのオンボード](/help/forms/setup-forms-cloud-service.md)
 >* [ローカル開発環境をセットアップ](/help/forms/setup-local-development-environment.md)
 >* [AEM 6.5 Forms から Cloud Service に移行](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-

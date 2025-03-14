@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d4b8e0700f325b43f9142608641a75f9870c7784
+source-git-commit: f4b079837dee960401a16073293969954cad3e77
 workflow-type: tm+mt
-source-wordcount: '6064'
+source-wordcount: '6065'
 ht-degree: 98%
 
 ---
@@ -697,16 +697,14 @@ ht-degree: 98%
       + [既存のインストールの外部依存関係の削除](/help/assets/remove-external-dependencies.md)
       + [ [!DNL Workfront] 用の  [!DNL enhanced connector]  の設定](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-
    + Adobe Express との統合 {#integration-adobe-express}
       + [Adobe Express とのネイティブ統合](/help/assets/native-integration-adobe-express.md)
-
    + Creative Cloudとの統合 {#integration-creative-cloud}
       + [AEM Assets を Creative Cloud に接続](/help/assets/connect-assets-with-creative-cloud.md)
-
 + Forms {#forms}
    + 概要 {#forms-overview}
       + [はじめに](/help/forms/home.md)
+      + [概要](/help/forms/home2.md)
       + [トップ Adobe Experience Manager Forms イノベーション](/help/forms/latest-innovations.md)
       + [早期アクセス（EA）機能](/help/forms/early-access-ea-features.md)
       + [主要な変更点](/help/forms/notable-changes.md)
