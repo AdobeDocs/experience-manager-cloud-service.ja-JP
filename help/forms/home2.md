@@ -6,15 +6,15 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
-source-git-commit: f4b079837dee960401a16073293969954cad3e77
+source-git-commit: a9eed5b6219163e721d81c9d77a31604666a2ac5
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '796'
 ht-degree: 16%
 
 ---
 
 
-# AEM Forms as a Cloud Service の概要 {#introduction}
+# AEM Forms as a Cloud Service {#introduction}
 
 <!-- Version Navigation -->
 <div class="version-selector">
