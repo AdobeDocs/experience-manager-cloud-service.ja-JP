@@ -6,10 +6,10 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
-source-git-commit: a9eed5b6219163e721d81c9d77a31604666a2ac5
+source-git-commit: a5bbcd19b41b3aeff94f900da13e98de65651f8c
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 16%
+source-wordcount: '1059'
+ht-degree: 7%
 
 ---
 
@@ -25,534 +25,299 @@ ht-degree: 16%
   </ul>
 </div>
 
-<div class="aem-forms-hero">
-  <h2>AEM Forms as a Cloud Service</h2>
-  <p>インテリジェントなフォーム、自動ワークフロー、パーソナライズされたカスタマーコミュニケーションを作成、管理、提供するための、Adobeのクラウドネイティブなソリューションです。</p>
-</div>
+## AEM Forms as a Cloud Serviceとは
 
-<div class="solutions-grid">
-  <div class="solution-card">
-    <div class="solution-icon">??</div>
-    <h3>アダプティブフォーム</h3>
-    <p>エンドユーザーのデジタル登録プロセスにシームレスなフォーム入力エクスペリエンスを提供する</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">??</div>
-    <h3>ワークフロー</h3>
-    <p>ルーティングデータなどの設定可能なワークフローを使用して、ビジネス固有のプロセスを自動化します</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">??</div>
-    <h3>顧客とのコミュニケーション</h3>
-    <p>継続的にパーソナライズされたアウトバウンドコミュニケーションにより、顧客の忠誠度を高めます</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">??</div>
-    <h3>ヘッドレスForms</h3>
-    <p>あらゆるチャネルにわたる登録と登録をシームレスに</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">✍️</div>
-    <h3>Acrobat Signの統合</h3>
-    <p>法的拘束力があり、デバイス間でグローバルに安全な電子サインをキャプチャします</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">??</div>
-    <h3>フォームの自動変換</h3>
-    <p>従来のPDF ベースのフォームを、オンラインで容易に管理および配布できるアダプティブFormsに変換する</p>
-  </div>
+AEM Forms as a Cloud Serviceは、デジタルフォームとコミュニケーションを作成、管理、配信するための、Adobeのクラウドネイティブなソリューションです。 これにより、組織はカスタマージャーニー全体を通じて、複雑なトランザクションをシンプルでデジタルなエクスペリエンスに変換できます。
 
-</div>
-
-## 特長と機能 {#features}
-
-<div class="features-section">
-  <h3>フォームの作成とオーサリング {#form-creation}</h3>
-  <div class="feature-category">
-    <div class="feature-item">
-      <h4>アダプティブフォーム</h4>
-      <p>インタラクティブで、動的で、レスポンシブな、モバイルに対応した、データ駆動型のフォームを作成して管理します。</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=ja">アダプティブフォームを作成します</a></li>
-        <li><a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes">アダプティブフォームのスタイル設定</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=ja">AEM Sitesページへのアダプティブフォームの追加</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ja">すぐに使用できるテーマとテンプレートを使用する</a></li>
-      </ul>
+<div class="card-container">
+  <div class="card">
+    <div class="card-header">
+      <h3>アダプティブフォーム</h3>
     </div>
-
-<div class="feature-item">
-      <h4>ヘッドレスアダプティブフォーム</h4>
-      <p>Web サイト、アプリケーション、非ビジュアルインタラクションでフォームを作成し、ネイティブにレンダリングします。</p>
+    <div class="card-body">
+      <p>ユーザーの入力とデバイスタイプに適応する、レスポンシブな動的フォームを作成します。</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=ja">ヘッドレスアダプティブFormsの概要</a></li>
-        <li>好みのプログラミング言語（React など）でフォームを作成する</li>
-        <li>フォームをデスクトップアプリ、モバイルアプリ、web サイトおよびチャットアプリケーションにネイティブに統合する</li>
-        <li>独自の UI コンポーネントをフォームアプリケーションで再利用する</li>
-        <li>フロントエンドの柔軟性を確保しながらAdobe Experience Manager Formsの機能を活用する</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components"> アダプティブFormsの作成 </a> – 様々な画面サイズやユーザー入力に合わせて自動調整されるフォームを作成します。</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type"> リッチコンポーネントライブラリ </a> – 様々な入力フィールドと UI コンポーネントを使用します</li>
+        <li><a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components"> アダプティブFormsのスタイル設定 </a> – 一貫したブランディングとビジュアルデザインをフォームに適用します</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ja"> 事前定義済みのテーマとテンプレートを使用 </a> – すぐに使用できるコンポーネントを使用して開発を促進します</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/rule-editor-core-components/rule-editor-core-components"> フォームの検証 </a> - クライアントサイドおよびサーバーサイドの検証ルールを実装します</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html"> 送信アクション </a> - ユーザーがフォームを送信したときの動作を設定します</li>
+        <li><a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/generate-document-of-record-core-components"> レコードのドキュメント </a> – 送信されたフォームデータの永続的なレコードを作成します</li>
+        <li><a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page">AEM Sites ページへのFormsの追加 </a> - フォームを Web サイトにシームレスに統合します</li>
+        <li><a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-core-components-external-web-page"> サードパーティの Web サイトページへのFormsの追加 </a> - フォームを Web サイトにシームレスに統合します</li>
       </ul>
     </div>
   </div>
 
-<div class="feature-category">
-    <div class="feature-item">
-      <h4>FormsのEdge Delivery Services</h4>
-      <p>優れたユーザーエクスペリエンスを備えた高パフォーマンスのフォームを作成して配信する：</p>
-      <ul>
-        <li><a href="/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md"> ユニバーサルエディターを使用したWYSIWYGオーサリング </a> - フォームを作成するための強力なビジュアルインターフェイス</li>
-        <li><a href="/help/edge/docs/forms/create-forms.md"> ドキュメントベースのオーサリング </a> - Microsoft Excel やGoogle シートなどの使い慣れたツールを使用してフォームを作成します</li>
-        <li>複雑なフォームロジックを作成するための高度なルールエディター</li>
-        <li>フォームの読み込みを最適化して、ほぼ完璧なGoogle Lighthouse スコアを達成します</li>
-        <li>最小限の開発時間でフォームをより迅速にデプロイ</li>
-      </ul>
+<div class="card">
+    <div class="card-header">
+      <h3>FormsのEdge Delivery Services</h3>
     </div>
-
-<div class="feature-item">
-      <h4>自動フォーム変換サービス</h4>
-      <p>従来のPDF ベースのフォームをアダプティブFormsに変換する：</p>
+    <div class="card-body">
+      <p>Edge Delivery Servicesを使用したフォームの作成と配信：</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=ja">自動フォーム変換サービスの設定</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ja">PDF formsのアダプティブFormsへの変換</a></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/overview">Edge Delivery Formsの概要 </a> - Edge Delivery Servicesでのフォームについて</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/getting-started-universal-editor">Forms用ユニバーサルエディター </a> - WYSIWYG ユニバーサルエディターを使用したフォームの作成</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial"> ドキュメントベースのオーサリング </a> - Microsoft Word またはGoogle Docsを使用してフォームを作成します</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms">Edge Delivery Formsのスタイル設定 </a> - フォームにカスタムスタイルを適用します</li>
       </ul>
     </div>
   </div>
 
-
-<h3>ドキュメントの処理と通信 {#document-processing}</h3>
-  <div class="feature-category">
-    <div class="feature-item">
-      <h4>通信 API</h4>
-      <p>パーソナライズされたコミュニケーションの作成、管理、配信を自動化：</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja#document-generation">パーソナライズされたコミュニケーションの生成</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja#document-manipulation">PDF ドキュメントの組み立てまたは分解</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang-ja#convert-to-and-validate-pdf%2Fa-compliant-documents">PDF/A 準拠ドキュメントの作成</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja#">DocAssurance API でドキュメントを保護</a></li>
-      </ul>
+<div class="card">
+    <div class="card-header">
+      <h3>ヘッドレスForms</h3>
     </div>
-
-<div class="feature-item">
-      <h4>レコードのドキュメント</h4>
-      <p>アーカイブおよびコンプライアンスのために、送信済みフォームのレコードを作成および管理します。</p>
+    <div class="card-body">
+      <p>任意のチャネルまたはフロントエンドフレームワークをまたいでフォームエクスペリエンスを配信します。</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja">長期保管用のフォームのレコードの作成</a></li>
-        <li>カスタム機能のサーバーサイド拡張</li>
-        <li>改ざん防止アーカイブ用のレコードのドキュメント機能</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=ja"> ヘッドレスFormsの概要 </a> - フォームに対するヘッドレスアプローチについて説明します</li>
+        <li>React またはその他のフロントエンドフレームワークを使用したフォームの作成</li>
+        <li>モバイルアプリ、web サイトおよびチャットアプリケーションへのフォームの統合</li>
+        <li>フォーム機能で既存の UI コンポーネントを活用する</li>
+        <li>フロントエンドに柔軟性を持たせながら、バックエンドフォームのロジックを維持する</li>
       </ul>
     </div>
   </div>
 
-<h3>ワークフローとプロセスの自動化 {#workflow}</h3>
-  <div class="feature-category">
-    <div class="feature-item">
-      <h4>Forms のワークフロー</h4>
-      <p>フォームとドキュメントサービスに関するビジネスプロセスを自動化します。</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html?lang=ja">レビュー用のフォームやドキュメントの送信</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ja#assign-task-step">承認却下ワークフローの作成</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=ja#enabling-server-side-validation-br">データストアまたはワークフローへのデータの送信</a></li>
-      </ul>
+<div class="card">
+    <div class="card-header">
+      <h3>通信 API</h3>
     </div>
-
-<div class="feature-item">
-      <h4>電子サイン</h4>
-      <p>と Adobe Sign の統合（電子サイン用）:</p>
+    <div class="card-body">
+      <p>プログラムによるドキュメントの生成、操作、保護：</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=ja">Adobe Sign によるアダプティブフォームの電子サイン</a></li>
-        <li>ビジネスワークフローへの <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ja#generate-document-of-record-step"> レコードのドキュメントの追加 </a> または <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ja#sign-document-step"> 電子サイン </a> の手順</li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ja#sign-document-step">Adobe Sign とAEM ワークフローを使用したドキュメントの電子サイン</a></li>
-      </ul>
-    </div>
-  </div>
-
-<h3>データ統合と分析 {#data-integration}</h3>
-  <div class="feature-category">
-    <div class="feature-item">
-      <h4>フォーム分析</h4>
-      <p>Adobe Analyticsを使用して、ユーザーの行動に関する貴重なインサイトを得ることができます。</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html?lang=ja">アダプティブフォームに対してAdobe Analyticsを有効にする</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html?lang=ja">AEM FormsとAdobe Analyticsの統合（手動による方法）</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/view-understand-aem-forms-analytics-reports.html">アダプティブフォームの分析レポートの確認方法と詳細</a></li>
-      </ul>
-    </div>
-
-<div class="feature-item">
-      <h4>Adobe統合</h4>
-      <p>フォームを他のAdobe ソリューションと接続する：</p>
-      <ul>
-        <li><a href="/help/forms/submit-adaptive-form-to-workfront-fusion.md">Adobe Workfront Fusion への接続 </a> とWorkfront シナリオへのデータの送信</li>
-        <li><a href="/help/forms/integrate-form-to-marketo-engage.md">Adobe Marketo Engageへの接続 </a> および <a href="/help/forms/submit-adaptive-form-to-marketo-engage.md">Marketoへのデータの送信 </a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja#document-generation"> パーソナライズされたコミュニケーションの生成 </a> - テンプレートとデータに基づいてカスタマイズされたドキュメントを作成します</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja#document-manipulation">PDF のアセンブリと操作 </a> - PDF ドキュメントの結合、分割、変更</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#convert-to-and-validate-pdfa-compliant-documents">PDF/A ドキュメントの作成 </a> - アーカイブ品質のドキュメントの生成</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html#flatten-interactive-pdf-documents"> インタラクティブ PDF の統合 </a> - インタラクティブフィールドを非インタラクティブ要素に変換する</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#signature-apis"> 署名の適用 </a> – 署名を使用してドキュメントを保護します</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#encryption-apis">PDF の暗号化と復号化 </a> – 機密ドキュメントコンテンツを保護します</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#create-PS-PCL-ZPL-documents">XDP をPostScriptに変換 </a> - XDP ドキュメントをPostScript形式に変換します</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#create-PS-PCL-ZPL-documents">XDP を PCL に変換 </a> - XDP ドキュメントをプリンターコマンド言語に変換します</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#create-PS-PCL-ZPL-documents">XDP を ZPL に変換 </a> - XDP ドキュメントをゼブラプリント言語に変換します</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#convert-to-and-validate-pdfa-compliant-documents">PDFをPDF/A 標準に変換 </a> - アーカイブに準拠したPDF ドキュメントを作成します</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#convert-pdf-documents-to-pdf-x-standards"> デジタル署名の追加 </a> – 認証用のドキュメントにデジタル署名を行います</li>
       </ul>
     </div>
   </div>
 
-<div class="feature-category">
-    <div class="feature-item">
+<div class="card">
+    <div class="card-header">
+      <h3>ワークフローの自動化</h3>
+    </div>
+    <div class="card-body">
+      <p>フォームとドキュメントに関するビジネス・プロセスを自動化：</p>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference#assign-task-step"> ビジネスプロセスの作成 </a> – 登録処理を管理するための承認またはフィードバック、送信後のワークフロー、バックエンドワークフローのフォームをルーティングします。</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference#sign-document-step">AEM ワークフローでの Adobe Sign の使用 </a> – 署名用のドキュメントを送信します </li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference#generate-document-of-record-step"> レコードのドキュメントの生成 </a> - オンデマンドまたはフォーム送信時に生成します</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="card">
+    <div class="card-header">
+      <h3>電子サイン</h3>
+    </div>
+    <div class="card-body">
+      <p>フォームとドキュメントに法的拘束力のある電子署名を追加する：</p>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms">Adobe Sign 統合 </a> - アダプティブFormsでの電子サインの有効化</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ja#sign-document-step"> ワークフローへの電子サインの追加 </a> - ビジネスプロセスに署名ステップを含めます</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ja#generate-document-of-record-step"> 署名を含むレコードのドキュメント </a> - フォーム送信の署名済みレコードを生成します</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="card">
+    <div class="card-header">
+      <h3>分析とインサイト</h3>
+    </div>
+    <div class="card-body">
+      <p>フォームの使用状況とパフォーマンスに関するインサイトを取得します。</p>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html?lang=ja">Adobe Analyticsを有効にする </a> - フォームの使用状況とパフォーマンスを追跡します</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html?lang=ja"> 手動の Analytics 統合 </a> – 詳細なトラッキング用に Analytics を設定する</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/view-understand-aem-forms-analytics-reports.html"> 分析レポートの表示 </a> - フォームのパフォーマンスとユーザーの行動を分析します</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="card">
+    <div class="card-header">
+      <h3>データ統合</h3>
+    </div>
+    <div class="card-body">
+      <p>既存のデータソースとシステムにフォームを接続する：</p>
+      <h4>Adobeのエコシステム</h4>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign">Adobe Sign</a> - Adobe Sign で電子署名を送信します</li>
+        <li><a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-adaptive-form-with-market-engage/integrate-form-to-marketo-engage">Marketo Engage</a> - フォームとAdobe Marketo Engageの統合</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#invoke-an-aem-workflow">AEM ワークフロー </a> - AEM ワークフローとフォーム送信のトリガー付け</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions#workfront-fusion">Workfront</a> - Adobe Workfront Fusion にアダプティブフォームを送信します</li>
+      </ul>
       <h4>Microsoft統合</h4>
-      <p>フォームとMicrosoft サービスの接続：</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=ja">Microsoft® Dynamics 365 への接続</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=ja">Microsoft®Azure Blob Storage に接続 </a> および <a href="/help/forms/configure-submit-action-azure-blob-storage.md">Azure Blob Storage にデータを送信 </a></li>
-        <li><a href="/help/forms/connect-forms-to-sharepoint-document-library.md">Microsoft®SharePoint Document Library に接続し </a><a href="/help/forms/configure-submit-action-sharepoint.md">SharePointにデータを送信する </a></li>
-        <li><a href="/help/forms/configure-submit-action-onedrive.md">Microsoft® OneDrive に接続し </a>OneDrive にデータを送信する</li>
-        <li><a href="/help/forms/forms-microsoft-power-automate-integration.md">Microsoftへの接続®Power Automate</a> およびフォーム送信時のトリガーフロー</li>
-        <li><a href="/help/forms/ms-dynamics-odata-configuration.md">Microsoft® Dynamics OData に接続する</a></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics">Microsoft Dynamics 365</a> - Microsoft CRM との統合</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=ja">Azure Blob ストレージ </a> - フォームデータをMicrosoft クラウドストレージに保存します</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/connect-to-sharepoint/connect-forms-to-sharepoint-document-library">SharePoint ドキュメントライブラリ </a> - Microsoft SharePoint ドキュメントライブラリへの接続</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions#connect-af-sharepoint-list">SharePointリスト </a> - Microsoft SharePointに接続リスト</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions#submit-to-onedrive">OneDrive</a> - Microsoft OneDrive に接続します</li>
+        <li><a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/integrate/services/forms-microsoft-power-automate-integration">Microsoft Power Automate</a> - トリガー Microsoft Power Automate フロー</li>
       </ul>
-    </div>
-
-<div class="feature-item">
-      <h4>その他のデータソース</h4>
-      <p>追加のデータソースとエンドポイントに接続します。</p>
+      <h4>その他のデータソースとサービス</h4>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=ja">RDBMS や REST エンドポイントへの接続</a></li>
-        <li><a href="/help/forms/aem-forms-salesforce-integration.md">Salesforceへの接続 </a> およびSalesforceへのデータの送信</li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-rest-endpoint">REST エンドポイントに送信</a></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/aem-forms-salesforce-integration">Salesforce</a> - Salesforce CRM との統合</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-rest-endpoint">RESTful サービス </a> – 任意の REST API エンドポイントに接続します</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=ja">RDBMS データベース </a> - リレーショナルデータベースに接続します</li>
+        <li><a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions#send-email"> メール </a> - フォームデータをメールで送信します。</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/introduction-to-forms-portal/save-core-component-based-form-as-draft">Forms ポータル </a> - Forms ポータルに送信してドラフトを保存します</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#send-pdf-via-email"> メールでPDFを送信 </a> – 送信したフォームのPDF版をメールで送信します</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-using-form-data-model"> フォームデータモデルを使用して送信 </a> - フォームデータモデルを使用してデータを送信します。</li>
       </ul>
     </div>
   </div>
 </div>
 
+## AEM Forms as a Cloud Serviceの概要
 
-<!-- 
-## Start Quickly with AEM Forms {#quick-start}
-
-<div class="quick-start-grid">
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/create-form-icon.svg" alt="Create Form Icon">
+<div class="card-container">
+  <div class="card">
+    <div class="card-header">
+      <h3>ビジネスユーザー向け</h3>
     </div>
-    <h3>Create your first form</h3>
-    <p>Build an adaptive form in minutes using our step-by-step guide</p>
-    <a href="/help/forms/creating-adaptive-form-core-components.md" class="quick-start-link">Get Started</a>
-  </div>
-  
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/templates-icon.svg" alt="Templates Icon">
+    <div class="card-body">
+      <ol>
+        <li><strong> 基本を理解する </strong>: <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/introduction-forms-authoring.html"> アダプティブForms</a> と、それらがビジネスプロセスのデジタル化にどのように役立つかについて説明します。</li>
+        <li><strong> テンプレートを探索 </strong>:<a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ja"> 事前定義済みのテンプレートとテーマ </a> を参照して、フォームプロジェクトを素早く開始します。</li>
+        <li><strong> フォームオーサリングについて </strong>:<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html?lang=ja"> フォームオーサリングガイド </a> に従って、最初のフォームを作成します。</li>
+      </ol>
     </div>
-    <h3>Explore ready-to-use templates</h3>
-    <p>Browse our library of pre-built templates and themes to accelerate development</p>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html" class="quick-start-link">View Templates</a>
   </div>
-  
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/setup-icon.svg" alt="Setup Icon">
+
+<div class="card">
+    <div class="card-header">
+      <h3>開発者向け</h3>
     </div>
-    <h3>Set up your environment</h3>
-    <p>Configure your local or cloud environment for AEM Forms development</p>
-    <a href="/help/forms/setup-local-development-environment.md" class="quick-start-link">Configure Now</a>
-  </div>
-  
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/data-icon.svg" alt="Data Icon">
+    <div class="card-body">
+      <ol>
+        <li><strong> 環境の設定 </strong>:AEM Formsの <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment.html?lang=ja">ローカル開発環境を設定 </a> します。</li>
+        <li><strong> アーキテクチャについて </strong>:<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture">AEM Forms as a Cloud Serviceのアーキテクチャ </a></li>
+        <li><strong>API を探索 </strong>:Formsの拡張および統合に使用で <a href="https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/"> る API </a> および SDK について確認します。</li>
+      </ol>
     </div>
-    <h3>Connect to data sources</h3>
-    <p>Learn how to integrate forms with your existing data systems</p>
-    <a href="/help/forms/create-form-data-models.md" class="quick-start-link">Connect Data</a>
   </div>
-  
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/migrate-icon.svg" alt="Migrate Icon">
+
+<div class="card">
+    <div class="card-header">
+      <h3>管理者向け</h3>
     </div>
-    <h3>Migrate from AEM 6.5</h3>
-    <p>Follow our comprehensive guide to move from AEM 6.5 Forms to Cloud Service</p>
-    <a href="/help/forms/migrate-to-forms-as-a-cloud-service.md" class="quick-start-link">Migrate Now</a>
+    <div class="card-body">
+      <ol>
+        <li><strong>Cloud Serviceへのオンボード </strong>:<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html?lang=ja"> オンボーディングガイド </a> に従って、AEM Forms as a Cloud Serviceを設定します。</li>
+        <li><strong> サービスの設定 </strong>:Adobe Analyticsなどの他のAdobe サービスとの <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html?lang=ja"> 統合 </a> を設定します。</li>
+        <li><strong>AEM 6.5 から移行 </strong>:AEM 6.5 を使用している場合は、<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/migrate-to-forms-as-a-cloud-service.html"> 移行ガイド </a> に従って、Cloud Serviceに移行してください。</li>
+      </ol>
+    </div>
   </div>
-</div> 
-
--->
-
-## 早期導入者の機能 {#early-adopter-features}
-
-<div class="early-adopter-section">
-  <p><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms早期アクセスプログラム </a> では、次のような最先端の機能を、一般に利用する前に排他的に利用できます。</p>
-
-<ul class="early-adopter-list">
-    <li><strong>AEM Forms AI アシスタント（Gen AI） </strong> - AI を利用した提案でフォームをより迅速に作成します</li>
-    <li><strong>AEM Forms Workfront Fusion コネクタ </strong> - フォームの送信によってトリガーされるワークフローの自動化</li>
-    <li><strong> 対話型Forms</strong> – 任意のAEM Sites ページでチャットスタイルのフォームエクスペリエンスを作成します</li>
-    <li><strong>Edge DeliveryのWYSIWYG オーサリング </strong> - Edge Delivery Servicesのユニバーサルエディターを使用してフォームを作成します</li>
-    <li><strong>AEM FormsからMarketo コネクタへ </strong> - フォーム送信をMarketo Engageと統合します</li>
-  </ul>
-
-<p>早期アクセスの革新的な機能と詳細なドキュメントの一覧については、<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms早期アクセス プログラム ページ </a> を参照してください。</p>
 </div>
 
-## デジタルエクスペリエンスを変える準備はできていますか？ {#get-started}
+## 早期導入者の機能
 
-<div class="get-started-section">
-  <p>魅力的でレスポンシブなインテリジェントなフォームを、今すぐ作成しましょう。</p>
-  <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service" class="get-started-button">AEM Forms as a Cloud Service へのオンボーディング</a>
+<div class="card">
+  <div class="card-header">
+    <h3>AEM Forms アーリーアクセスプログラム</h3>
+  </div>
+  <div class="card-body">
+    <p><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms早期アクセスプログラム </a> では、次のような最先端の機能を、一般に利用する前に排他的に利用できます。</p>
+    <ul>
+      <li><strong>AEM Forms AI アシスタント（Gen AI） </strong> - AI を利用した提案でフォームをより迅速に作成します</li>
+      <li><strong>AEM Forms Workfront Fusion コネクタ </strong> - フォームの送信によってトリガーされるワークフローの自動化</li>
+      <li><strong> 対話型Forms</strong> – 任意のAEM Sites ページでチャットスタイルのフォームエクスペリエンスを作成します</li>
+      <li><strong>Edge DeliveryのWYSIWYG オーサリング </strong> - Edge Delivery Servicesのユニバーサルエディターを使用してフォームを作成します</li>
+      <li><strong>AEM FormsからMarketo コネクタへ </strong> - フォーム送信をMarketo Engageと統合します</li>
+    </ul>
+    <p>早期アクセスの革新的な機能と詳細なドキュメントの一覧については、<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms早期アクセス プログラム ページ </a> を参照してください。</p>
+  </div>
+</div>
+
+<div class="cta-card">
+  <h3>始める準備はよろしいでしょうか。</h3>
+  <p><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service">AEM Forms as a Cloud Serviceへのオンボード </a> 今すぐ、組織のデジタルフォームエクスペリエンスを変革してください。</p>
 </div>
 
 <style>
-/* Overall styling */
-body {
-  font-family: 'Adobe Clean', Arial, sans-serif;
-  line-height: 1.6;
-  color: #2c2c2c;
-}
-
-h2, h3, h4 {
-  font-weight: 600;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-h2 {
-  font-size: 1.8em;
-  border-bottom: 1px solid #eaeaea;
-  padding-bottom: 0.5em;
-}
-
-h3 {
-  font-size: 1.4em;
-  color: #2c2c2c;
-}
-
-h4 {
-  font-size: 1.2em;
-  color: #2c2c2c;
-}
-
-a {
-  color: #1473E6;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-ul {
-  padding-left: 1.5em;
-}
-
-li {
-  margin-bottom: 0.5em;
-}
-
-/* Hero section */
-.aem-forms-hero {
-  background-color: #f5f5f5;
-  padding: 2em;
-  border-radius: 8px;
-  margin-bottom: 2em;
-  text-align: center;
-}
-
-.aem-forms-hero h2 {
-  font-size: 2em;
-  margin-top: 0;
-  border-bottom: none;
-  color: #2c2c2c;
-}
-
-.aem-forms-hero p {
-  font-size: 1.2em;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Solutions grid */
-.solutions-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1.5em;
-  margin-bottom: 2em;
-}
-
-.solution-card {
-  background-color: #ffffff;
-  border: 1px solid #e1e1e1;
-  border-radius: 8px;
-  padding: 1.5em;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.solution-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.solution-icon {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-}
-
-.solution-card h3 {
-  margin-top: 0;
-  font-size: 1.2em;
-}
-
-.solution-card p {
-  margin-bottom: 0;
-  font-size: 0.95em;
-}
-
-/* Features section */
-.features-section {
+.card-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
+  margin-bottom: 30px;
 }
 
-.feature-category {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5em;
-  margin-bottom: 2em;
-}
-
-.feature-item {
-  background-color: #ffffff;
+.card {
+  flex: 1 1 calc(50% - 20px);
+  min-width: 300px;
   border: 1px solid #e1e1e1;
   border-radius: 8px;
-  padding: 1.5em;
-}
-
-.feature-item h4 {
-  margin-top: 0;
-  color: #2c2c2c;
-}
-
-.feature-item ul {
-  margin-bottom: 0;
-}
-
-/* Quick start grid */
-.quick-start-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1.5em;
-  margin: 2em 0;
-}
-
-.quick-start-card {
-  background-color: #ffffff;
-  border: 1px solid #e1e1e1;
-  border-radius: 8px;
-  padding: 1.5em;
-  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.quick-start-card:hover {
+.card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-.quick-start-icon {
-  margin-bottom: 1em;
-}
-
-.quick-start-icon img {
-  width: 50px;
-  height: 50px;
-}
-
-.quick-start-card h3 {
-  margin-top: 0;
-  font-size: 1.2em;
-}
-
-.quick-start-link {
-  display: inline-block;
-  margin-top: 1em;
-  font-weight: 600;
-}
-
-/* Early adopter section */
-.early-adopter-section {
+.card-header {
   background-color: #f5f5f5;
-  padding: 1.5em;
-  border-radius: 8px;
-  margin: 2em 0;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e1e1e1;
 }
 
-.early-adopter-list {
-  margin-bottom: 0;
+.card-header h3 {
+  margin: 0;
+  color: #2c2c2c;
+  font-size: 1.25rem;
 }
 
-/* Get started section */
-.get-started-section {
-  text-align: center;
-  margin: 3em 0 1em;
+.card-body {
+  padding: 20px;
+  background-color: #ffffff;
 }
 
-.get-started-section p {
-  font-size: 1.2em;
-  margin-bottom: 1em;
+.card-body ul, .card-body ol {
+  margin-top: 10px;
+  padding-left: 25px;
 }
 
-.get-started-button {
-  display: inline-block;
-  background-color: #1473E6;
-  color: white;
-  padding: 0.8em 1.5em;
+.card-body li {
+  margin-bottom: 8px;
+}
+
+.cta-card {
+  background-color: #f0f7ff;
+  border-left: 4px solid #1473e6;
+  padding: 20px;
+  margin: 30px 0;
   border-radius: 4px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
 }
 
-.get-started-button:hover {
-  background-color: #0d66d0;
-  text-decoration: none;
-}
-
-/* Version selector */
-.version-selector {
-  background-color: #f5f5f5;
-  padding: 1em;
-  border-radius: 8px;
-  margin-bottom: 2em;
-}
-
-.version-selector p {
+.cta-card h3 {
   margin-top: 0;
-  font-weight: 600;
+  color: #1473e6;
 }
 
-.version-selector ul {
-  margin-bottom: 0;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1200px) {
-  .feature-category {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .quick-start-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.cta-card a {
+  font-weight: bold;
+  color: #1473e6;
 }
 
 @media (max-width: 768px) {
-  .feature-category {
-    grid-template-columns: 1fr;
-  }
-  
-  .solutions-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .quick-start-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .card {
+    flex: 1 1 100%;
   }
 }
-
-@media (max-width: 480px) {
-  .solutions-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .quick-start-grid {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
 </style>
