@@ -6,7 +6,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
-source-git-commit: 2c41fae87821a28af1fd00701780e9fc52b5577d
+source-git-commit: 4b4bc6f754c6336136d409cf49617c7fafd4f4c3
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 12%
@@ -39,12 +39,12 @@ AEM Forms as a Cloud Serviceは、デジタルフォームとコミュニケー�
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] は、カスタマージャーニーのあらゆる段階をサポートする、顧客中心のソリューションです。
 
-<div class="card-container">
-  <div class="card">
-    <div class="card-header">
+<div class="card-container" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+  <div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>アダプティブフォーム</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>ユーザーの入力とデバイスタイプに適応する、レスポンシブな動的フォームを作成します。</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components"> アダプティブFormsの作成 </a> – 様々な画面サイズやユーザー入力に合わせて自動調整されるフォームを作成します。</li>
@@ -60,11 +60,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] は、カスタマー�
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>通信 API</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>プログラムによるドキュメントの生成、操作、保護：</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-generation"> パーソナライズされたコミュニケーションの生成 </a> - テンプレートとデータに基づいてカスタマイズされたドキュメントを作成します</li>
@@ -81,11 +81,26 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] は、カスタマー�
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
+      <h3>FormsのEdge Delivery Services</h3>
+    </div>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <p>Edge Delivery Servicesを使用したフォームの作成と配信：</p>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/overview">Edge Delivery Formsの概要 </a> - Edge Delivery Servicesでのフォームについて</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/getting-started-universal-editor">Forms用ユニバーサルエディター </a> - WYSIWYG ユニバーサルエディターを使用したフォームの作成</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial"> ドキュメントベースのオーサリング </a> - Microsoft Word またはGoogle Docsを使用してフォームを作成します</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms">Edge Delivery Formsのスタイル設定 </a> - フォームにカスタムスタイルを適用します</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>ヘッドレスForms</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>任意のチャネルまたはフロントエンドフレームワークをまたいでフォームエクスペリエンスを配信します。</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview"> ヘッドレスFormsの概要 </a> - フォームに対するヘッドレスアプローチについて説明します</li>
@@ -97,26 +112,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] は、カスタマー�
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
-      <h3>FormsのEdge Delivery Services</h3>
-    </div>
-    <div class="card-body">
-      <p>Edge Delivery Servicesを使用したフォームの作成と配信：</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/overview">Edge Delivery Formsの概要 </a> - Edge Delivery Servicesでのフォームについて</li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/getting-started-universal-editor">Forms用ユニバーサルエディター </a> - WYSIWYG ユニバーサルエディターを使用したフォームの作成</li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial"> ドキュメントベースのオーサリング </a> - Microsoft Word またはGoogle Docsを使用してフォームを作成します</li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms">Edge Delivery Formsのスタイル設定 </a> - フォームにカスタムスタイルを適用します</li>
-      </ul>
-    </div>
-  </div>
-
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>ワークフローの自動化</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>フォームとドキュメントに関するビジネス・プロセスを自動化：</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference#assign-task-step"> ビジネスプロセスの作成 </a> – 登録プロセスを管理するための承認またはフィードバック、送信後のワークフロー、バックエンドワークフローのフォームをルーティングします。</li>
@@ -126,11 +126,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] は、カスタマー�
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>電子サイン</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>フォームとドキュメントに法的拘束力のある電子署名を追加する：</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms">Adobe Sign 統合 </a> - アダプティブFormsでの電子サインの有効化</li>
@@ -140,11 +140,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] は、カスタマー�
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>分析とインサイト</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>フォームの使用状況とパフォーマンスに関するインサイトを取得します。</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation">Adobe Analyticsを有効にする </a> - フォームの使用状況とパフォーマンスを追跡します</li>
@@ -154,11 +154,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] は、カスタマー�
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>データ統合</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>既存のデータソースとシステムにフォームを接続する：</p>
       <h4>Adobeのエコシステム</h4>
       <ul>
@@ -192,42 +192,42 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] は、カスタマー�
 
 ## AEM Forms as a Cloud Serviceの概要
 
-<div class="card-container">
-  <div class="card">
-    <div class="card-header">
+<div class="card-container" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+  <div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>ビジネスユーザー向け</h3>
     </div>
-    <div class="card-body">
-      <ol>
-        <li><strong> 基本を理解する </strong>: <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components"> アダプティブForms</a> と、それらがビジネスプロセスのデジタル化にどのように役立つかについて説明します。</li>
-        <li><strong> テンプレートを探索 </strong>:<a href="https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components"> 事前定義済みのテンプレートとテーマ </a> を参照して、フォームプロジェクトを素早く開始します。</li>
-        <li><strong> フォームオーサリングについて </strong>:<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring"> フォームオーサリングガイド </a> に従って、最初のフォームを作成します。</li>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <ol style="margin-top: 10px; padding-left: 25px;">
+        <li style="margin-bottom: 8px;"><strong> 基本を理解する </strong>: <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components"> アダプティブForms</a> と、それらがビジネスプロセスのデジタル化にどのように役立つかについて説明します。</li>
+        <li style="margin-bottom: 8px;"><strong> テンプレートを探索 </strong>:<a href="https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components"> 事前定義済みのテンプレートとテーマ </a> を参照して、フォームプロジェクトを素早く開始します。</li>
+        <li style="margin-bottom: 8px;"><strong> フォームオーサリングについて </strong>:<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring"> フォームオーサリングガイド </a> に従って、最初のフォームを作成します。</li>
       </ol>
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>開発者向け</h3>
     </div>
-    <div class="card-body">
-      <ol>
-        <li><strong> 環境の設定 </strong>:AEM Formsの <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment">ローカル開発環境を設定 </a> します。</li>
-        <li><strong> アーキテクチャについて </strong>:<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture">AEM Forms as a Cloud Serviceのアーキテクチャ </a></li>
-        <li><strong>API を探索 </strong>:Formsの拡張および統合に使用でき <a href="https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/">API の </a> と SDK について理解します。</li>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <ol style="margin-top: 10px; padding-left: 25px;">
+        <li style="margin-bottom: 8px;"><strong> 環境の設定 </strong>:AEM Formsの <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment">ローカル開発環境を設定 </a> します。</li>
+        <li style="margin-bottom: 8px;"><strong> アーキテクチャについて </strong>:<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture">AEM Forms as a Cloud Serviceのアーキテクチャ </a></li>
+        <li style="margin-bottom: 8px;"><strong>API を探索 </strong>:Formsの拡張および統合に使用でき <a href="https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/">API の </a> と SDK について理解します。</li>
       </ol>
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>管理者向け</h3>
     </div>
-    <div class="card-body">
-      <ol>
-        <li><strong>Cloud Serviceへのオンボード </strong>:<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service"> オンボーディングガイド </a> に従って、AEM Forms as a Cloud Serviceを設定します。</li>
-        <li><strong> サービスの設定 </strong>:Adobe Analyticsなどの他のAdobe サービスとの <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation"> 統合 </a> を設定します。</li>
-        <li><strong>AEM 6.5 から移行 </strong>:AEM 6.5 を使用している場合は、<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html?lang=ja"> 移行ガイド </a> に従って、Cloud Serviceに移行してください。</li>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <ol style="margin-top: 10px; padding-left: 25px;">
+        <li style="margin-bottom: 8px;"><strong>Cloud Serviceへのオンボード </strong>:<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service"> オンボーディングガイド </a> に従って、AEM Forms as a Cloud Serviceを設定します。</li>
+        <li style="margin-bottom: 8px;"><strong> サービスの設定 </strong>:Adobe Analyticsなどの他のAdobe サービスとの <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation"> 統合 </a> を設定します。</li>
+        <li style="margin-bottom: 8px;"><strong>AEM 6.5 から移行 </strong>:AEM 6.5 を使用している場合は、<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html?lang=ja"> 移行ガイド </a> に従って、Cloud Serviceに移行してください。</li>
       </ol>
     </div>
   </div>
@@ -235,98 +235,24 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] は、カスタマー�
 
 ## 早期導入者の機能
 
-<div class="card">
-  <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; margin-bottom: 30px;">
+  <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
     <h3>AEM Forms アーリーアクセスプログラム</h3>
   </div>
-  <div class="card-body">
+  <div class="card-body" style="padding: 20px; background-color: #ffffff;">
     <p><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms早期アクセスプログラム </a> では、次のような最先端の機能を、一般に利用する前に排他的に利用できます。</p>
-    <ul>
-      <li><strong>AEM Forms AI アシスタント（Gen AI） </strong> - AI を利用した提案でフォームをより迅速に作成します</li>
-      <li><strong>AEM Forms Workfront Fusion コネクタ </strong> - フォームの送信によってトリガーされるワークフローの自動化</li>
-      <li><strong> 対話型Forms</strong> – 任意のAEM Sites ページでチャットスタイルのフォームエクスペリエンスを作成します</li>
-      <li><strong>Edge DeliveryのWYSIWYG オーサリング </strong> - Edge Delivery Servicesのユニバーサルエディターを使用してフォームを作成します</li>
-      <li><strong>AEM FormsからMarketo コネクタへ </strong> - フォーム送信をMarketo Engageと統合します</li>
+    <ul style="margin-top: 10px; padding-left: 25px;">
+      <li style="margin-bottom: 8px;"><strong>AEM Forms AI アシスタント（Gen AI） </strong> - AI を利用した提案でフォームをより迅速に作成します</li>
+      <li style="margin-bottom: 8px;"><strong>AEM Forms Workfront Fusion コネクタ </strong> - フォームの送信によってトリガーされるワークフローの自動化</li>
+      <li style="margin-bottom: 8px;"><strong> 対話型Forms</strong> – 任意のAEM Sites ページでチャットスタイルのフォームエクスペリエンスを作成します</li>
+      <li style="margin-bottom: 8px;"><strong>Edge DeliveryのWYSIWYG オーサリング </strong> - Edge Delivery Servicesのユニバーサルエディターを使用してフォームを作成します</li>
+      <li style="margin-bottom: 8px;"><strong>AEM FormsからMarketo コネクタへ </strong> - フォーム送信をMarketo Engageと統合します</li>
     </ul>
     <p>早期アクセスの革新的な機能と詳細なドキュメントの一覧については、<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms早期アクセス プログラム ページ </a> を参照してください。</p>
   </div>
 </div>
 
-<div class="cta-card">
-  <h3>始める準備はよろしいでしょうか。</h3>
-  <p><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service">AEM Forms as a Cloud Serviceへのオンボード </a> 今すぐ、組織のデジタルフォームエクスペリエンスを変革してください。</p>
+<div style="background-color: #f0f7ff; border-left: 4px solid #1473e6; padding: 20px; margin: 30px 0; border-radius: 4px;">
+  <h3 style="margin-top: 0; color: #1473e6;">始める準備はよろしいでしょうか。</h3>
+  <p><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service" style="font-weight: bold; color: #1473e6;">AEM Forms as a Cloud Serviceへのオンボード </a> 今すぐ、組織のデジタルフォームエクスペリエンスを変革してください。</p>
 </div>
-
-<style>
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-.card {
-  flex: 1 1 calc(50% - 20px);
-  min-width: 300px;
-  border: 1px solid #e1e1e1;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-.card-header {
-  background-color: #f5f5f5;
-  padding: 15px 20px;
-  border-bottom: 1px solid #e1e1e1;
-}
-
-.card-header h3 {
-  margin: 0;
-  color: #2c2c2c;
-  font-size: 1.25rem;
-}
-
-.card-body {
-  padding: 20px;
-  background-color: #ffffff;
-}
-
-.card-body ul, .card-body ol {
-  margin-top: 10px;
-  padding-left: 25px;
-}
-
-.card-body li {
-  margin-bottom: 8px;
-}
-
-.cta-card {
-  background-color: #f0f7ff;
-  border-left: 4px solid #1473e6;
-  padding: 20px;
-  margin: 30px 0;
-  border-radius: 4px;
-}
-
-.cta-card h3 {
-  margin-top: 0;
-  color: #1473e6;
-}
-
-.cta-card a {
-  font-weight: bold;
-  color: #1473e6;
-}
-
-@media (max-width: 768px) {
-  .card {
-    flex: 1 1 100%;
-  }
-}
-</style>
