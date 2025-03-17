@@ -1,19 +1,19 @@
 ---
 title: AEM Forms の Edge Delivery Services の基本を学ぶ - 開発者向けチュートリアル
-description: このチュートリアルは、新しい Adobe Experience Manager Forms（AEM）プロジェクトを起動および実行するのに役立ちます。 10～20 分で、独自のフォームが作成されます。
+description: このチュートリアルは、新しい Adobe Experience Manager Forms（AEM）プロジェクトを起動および実行するのに役立ちます。 10 分から 20 分で、独自のフォームを作成できます。
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: e2259e542df5a12748705af901d073e4486292c4
 workflow-type: tm+mt
-source-wordcount: '1656'
-ht-degree: 98%
+source-wordcount: '1907'
+ht-degree: 99%
 
 ---
 
 # はじめに - 開発者向けチュートリアル
 
-今日のデジタル時代では、ユーザーにわかりやすいフォームを作成することはどの組織にとっても不可欠です。 AEM Forms用Edge Delivery Servicesを使用すると、Google DocsやMicrosoft Office などの使い慣れたツールを使用してフォームを作成できます。
+今日のデジタル時代では、ユーザーにわかりやすいフォームを作成することはどの組織にとっても不可欠です。 AEM Forms の Edge Delivery Services を使用すると、Google Docs や Microsoft Office などの使い慣れたツールを使用してフォームを作成できます。
 
 これらのフォームは、Microsoft Excel または Google Sheets ファイルに直接データを送信します。これにより、Google Sheets、Microsoft Excel、Microsoft SharePoint の活発なエコシステムと堅牢な API を使用して、送信されたデータを簡単に処理したり、既存のビジネスワークフローを開始したりできます。
 
@@ -138,8 +138,6 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
 
       これにより、コンテンツフォルダーが web サイトに接続されます。 参照を更新した後、最初に「404 Not Found」というエラーが発生する場合があります。 これは、コンテンツがまだプレビューされていないためです。 次の節では、コンテンツのオーサリングとプレビューを開始する方法について説明します。
 
-
-
 ### コンテンツのプレビューと公開
 
 最後の手順を完了しても、新しいコンテンツソースは空にはなりませんが、プレビューまたはライブステージに昇格されるまで、web サイトには表示されません。 現在、これにより 404 エラーが発生する場合があります。
@@ -261,49 +259,47 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
 
 これで完了です。 ローカル開発環境が正常に設定され、変更がデプロイされました。
 
+## 既存の AEM プロジェクトへのアダプティブフォームブロックの追加
 
 <!--
-## Add Adaptive Forms Block to your existing AEM project
+>[!VIDEO](https://video.tv.adobe.com/v/3427789)-->
 
-
->[!VIDEO](https://video.tv.adobe.com/v/3427789)
-
-If you have an existing AEM Project, you can integrate the Adaptive Forms Block into your current project to get started on form creation. 
+既存の AEM プロジェクトがある場合は、アダプティブフォームブロックを現在のプロジェクトに統合して、フォームの作成を開始できます。
 
 >[!NOTE]
 >
 >
-> This step applies to projects built with the [AEM Boilerplate](https://github.com/adobe/aem-boilerplate). If you created your AEM project using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), you can skip this step.
+> この手順は、[AEM ボイラープレート](https://github.com/adobe/aem-boilerplate)を使用して作成したプロジェクトに適用されます。 [AEM Forms ボイラープレート](https://github.com/adobe-rnd/aem-boilerplate-forms)を使用して AEM プロジェクトを作成した場合は、この手順をスキップできます。
 
-To Integrate:
+統合するには：
 
-1. **Add required files and folders**
-   1. Copy and paste the following folders and files from the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) into your AEM Project:
+1. **必要なファイルとフォルダーを追加**
+   1. 次のフォルダーとファイルを [AEM Forms ボイラープレート](https://github.com/adobe-rnd/aem-boilerplate-forms)から AEM プロジェクトにコピー＆ペーストします。
 
-      * [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)  folder
-       * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)  folder
-       * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) folder
-       * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) file
-       * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) file
+      * [フォームブロック](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)フォルダー
+      * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) フォルダー
+      * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) フォルダー
+      * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) ファイル
+      * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) ファイル
 
-1. **Update component definitions and models files**
-    1. Navigate to the `../models/_component-definition.json` file in your AEM Project and update it with the changes from the [_component-definition.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
-    
-    1. Navigate to the `../models/_component-models.json` file in your AEM Project and update it with the changes from the [_component-models.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+1. **コンポーネント定義とモデルファイルを更新**
+   1. AEM プロジェクト内の `../models/_component-definition.json` ファイルに移動し、[AEM Forms ボイラープレート内の _component-definition.json ファイル](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48)からの変更を使用して更新します。
 
-1. **Add Form Editor in editor script**
-    1. Navigate to the `../scripts/editor-support.js` file in your AEM Project and update it with the changes from the [editor-support.js file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
-1. **Update ESLint configuration file**
-    1. Navigate to the `../.eslintignore` file in your AEM Project and add the following line of codes to prevent errors related to the Form Block rule engine:
-        ```
-            blocks/form/rules/formula/*
-            blocks/form/rules/model/*
-        ```
+   1. AEM プロジェクト内の `../models/_component-models.json` ファイルに移動し、[AEM Forms ボイラープレート内の _component-models.json ファイル](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)からの変更を使用して更新します。
 
-1. Commit and push these changes to your AEM Project repository on GitHub.
+1. **エディタースクリプトにフォームエディターを追加**
+   1. AEM プロジェクト内の `../scripts/editor-support.js` ファイルに移動し、[AEM Forms ボイラープレート内の editor-support.js file ファイル](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)からの変更を使用して更新します。
+1. **ESLint 設定ファイルを更新**
+   1. AEM プロジェクトの `../.eslintignore` ファイルに移動し、次のコード行を追加して、フォームブロックルールエンジンに関連するエラーを防ぎます。
 
-That's it! The Adaptive Forms Block is now part of your AEM project. You can start creating and adding forms to your AEM pages.
--->
+      ```
+          blocks/form/rules/formula/*
+          blocks/form/rules/model/*
+      ```
+
+1. これらの変更を GitHub 上の AEM プロジェクトリポジトリにコミットしてプッシュします。
+
+これで作業は完了です。アダプティブフォームブロックが AEM プロジェクトの一部になりました。 フォームの作成と AEM ページへの追加を開始できます。
 
 ## GitHub ビルドの問題のトラブルシューティング
 

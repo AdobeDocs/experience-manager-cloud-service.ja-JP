@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 7c30c56ca7a4d8dbdadb2e54a1b7320477556fa5
 workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -123,7 +123,7 @@ Edit Properties dialog for an interactive communication-->
 フォームデータモデル送信アクションを設定するには：
 
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
-1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。アダプティブフォームコンテナダイアログボックスが開きます。
+1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。 アダプティブフォームコンテナダイアログボックスが開きます。
 1. 「**[!UICONTROL 送信]**」タブをクリックします。
 1. **[!UICONTROL 送信アクション]**&#x200B;ドロップダウンリストから、「**[!UICONTROL フォームデータモデルを使用して送信]**」を選択します。
 

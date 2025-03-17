@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6d6b857bf36771b92b8f11db5ce6608023d1fac0
+source-git-commit: 86c5ab645df0d94d4f9d538e8044b9ee7433a61b
 workflow-type: tm+mt
-source-wordcount: '6067'
+source-wordcount: '6082'
 ht-degree: 98%
 
 ---
@@ -1037,7 +1037,7 @@ ht-degree: 98%
       + WYSIWYG オーサリング {#universal-editor}
          + [Edge Delivery Services のフォームのユニバーサルエディターの概要 - 完全ガイド](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [ユニバーサルエディターを使用してオーサリングを開始する方法 – ステップバイステップのチュートリアル](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [ユニバーサルエディターを使用した最初のフォームの作成方法](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [ユニバーサルエディターを使用した最初のフォーム作成方法 - ステップバイステップチュートリアル](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [ユニバーサルエディターインターフェイスガイド：ツール、機能およびナビゲーションについて](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [フォームのモバイル化：ユニバーサルエディターのレスポンシブデザイン](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [美しいフォームの設計：ユニバーサルエディターのスタイル設定とテーマ設定ガイド](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
@@ -1046,6 +1046,7 @@ ht-degree: 98%
          + [スパムからのフォームの保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [フォームの公開およびデプロイ方法：ユニバーサルエディター公開ガイド](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [カスタムフォームコンポーネントの作成：ユニバーサルエディター開発者向けガイド](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+         + [ フォームデータモデルの統合：Formsとフォームデータモデルの統合 ](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
       + ドキュメントベースのオーサリング {#getting-started-edge-delivery-services-forms}
          + [最初のフォームの作成：Google Sheetsと Excel を使用したクイックスタートガイド](/help/edge/docs/forms/tutorial.md)
          + [Google Sheets または Excel を使用したフォームの作成方法：ステップバイステップガイド](/help/edge/docs/forms/create-forms.md)
