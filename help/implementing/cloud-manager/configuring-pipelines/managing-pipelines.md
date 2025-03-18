@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+source-git-commit: fdf28905b16b4cc5c6947b8b216940b0c43b2a6a
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 98%
+source-wordcount: '1377'
+ht-degree: 85%
 
 ---
 
@@ -62,7 +62,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 ## アクティビティページ {#activity}
 
-**アクティビティ** ページには、選択したプログラムとその他の重要なプログラムイベントに対するすべてのパイプライン実行の完全なリストが表示されます。
+**アクティビティ**&#x200B;ページには、選択したプログラムのすべてのパイプライン実行とその他の重要なプログラムイベントの完全なリストが表示されます。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
@@ -95,6 +95,23 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 実行の詳細を確認するには、![省略記号 - その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をもう一度クリックし、「**[詳細を表示](#view-details)**」をクリックします。
 
 パイプラインのタイプによっては、![省略記号 - その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をもう一度クリックして「**キャンセル**」をクリックすると、実行をキャンセルできる場合があります。
+
+## 複数のパイプラインの実行 {#run-multiple-pipelines}
+
+Cloud Managerでは、複数のパイプラインを同時に実行できるので、AEM as a Cloud Serviceのお客様はデプロイメントを効率的に行えます。 **選択して実行** 機能を使用すると、複数のパイプラインを選択して、一度に実行するようにトリガーできます。 パイプラインを個別に実行する手動の手間を軽減し、ビルドおよびデプロイメントワークフローを最適化できます。
+
+**複数のパイプラインを実行するには：**
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
+1. 左側のメニューで、![ ワークフローアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **パイプライン** をクリックします。
+1. **パイプライン** ページのテーブルで、実行するパイプラインの横にあるチェックボックスをオンにします。
+必要に応じて、![ フィルターアイコン、ファネル ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)**フィルター** をクリックして、名前、環境、デプロイされたコードタイプ、またはこれら 3 つすべてを組み合わせてパイプラインを並べ替えます。
+1. ページの右上隅付近にある「**選択したファイル名を指定（x）**」をクリックします。
+1. **選択したパイプラインを実行（x）** ダイアログボックスで、「**実行（x）**」をクリックします。
+
+   「**実行**」ボタンには、続行できるパイプラインの数が反映されます。 例えば、4 つのパイプラインを選択したのに、1 つのパイプラインが既に実行されている場合などです。 または、選択したパイプラインにリンクされた環境が存在しない。 このような場合、システムはそれに応じて調整します。 ボタンが「実行（3）」に更新され、3 つのパイプラインを続行できることが示されます。
+
+1. パイプラインが実行を開始し、そのステータスが **パイプライン** リストに更新されます。
 
 ## パイプラインの編集 {#editing-pipelines}
 
