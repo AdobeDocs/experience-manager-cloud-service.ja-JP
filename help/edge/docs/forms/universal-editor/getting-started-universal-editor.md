@@ -4,9 +4,9 @@ description: このチュートリアルは、新しい Adobe Experience Manager
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 882e3e1340a6faaec8b4a8e26ff50007458b244a
+source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1857'
 ht-degree: 98%
 
 ---
@@ -195,7 +195,7 @@ GitHub プロジェクトが完成したら、AEM as a Cloud Service オーサ�
 
 これで作業は完了です。アダプティブフォームブロックが AEM プロジェクトの一部になりました。[フォームの作成と AEM プロジェクトへの追加を開始](#add-edge-delivery-services-forms-to-aem-site-project)できます。
 
-## WYSIWYG を使用した AEM Forms の作成
+## WYSIWYGを使用したFormsのオーサリング
 
 WYSIWYG オーサリング用のユニバーサルエディターで AEM プロジェクトを開き、プロジェクトを編集し、AEM プロジェクトページに Edge Delivery Services フォームを含める「アダプティブフォーム」セクションを追加できます。
 

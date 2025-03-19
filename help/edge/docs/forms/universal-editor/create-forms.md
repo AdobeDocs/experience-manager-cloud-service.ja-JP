@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: a95b0d4dd6db92e68bdb7059bdd4e0e5be936195
+source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 51%
+source-wordcount: '1215'
+ht-degree: 46%
 
 ---
 
@@ -52,8 +52,9 @@ AEM Forms には、アダプティブフォームブロックと呼ばれるブ�
 
 1. **AEM Forms オーサーインスタンスでのアダプティブフォームの作成**
 
-   1. AEM Forms as a Cloud Service オーサーインスタンスにアクセスします。
-   1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL フォーム]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。1. **[!UICONTROL 作成]**／**[!UICONTROL アダプティブフォーム]**&#x200B;を選択します。 ウィザードが開きます。
+   1. AEM Forms as a Cloud Service オーサーインスタンスにログインします。
+   1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
+   1. **[!UICONTROL 作成]**／**[!UICONTROL アダプティブフォーム]**&#x200B;を選択します。ウィザードが開きます。
    1. 「**Source**」タブで、Edge Delivery Services ベースのフォームテンプレートを選択します。
 
       ![EDS Formsの作成 ](/help/edge/assets/create-eds-forms.png)
@@ -150,6 +151,63 @@ Edge Delivery Services のフォームにアクセスする方法は、次のと
 URL 構造は、ステージングされたバージョンとライブバージョンの両方で同じままです。 ただし、表示されるコンテンツはコンテキストに基づいて異なります。
 
 ![ 公開されたフォームを表示 ](/help/edge/assets/eds-view-publish-form.png)
+
+## フォームの管理
+
+AEM Forms ユーザーインターフェイスを使用して、フォームに対して複数の操作を実行できます。
+
+1. AEM Forms as a Cloud Service オーサーインスタンスにログインします。
+1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
+
+1. フォームを選択すると、選択したフォームに対して実行できる次の操作がツールバーに表示されます。
+
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>操作</strong></p> </td>
+   <td><p><strong>説明</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>編集</p> </td>
+   <td><p>フォームを編集モードで開きます。<br /> <br /> </p> </td>
+  </tr>
+    <tr>
+   <td><p>プロパティ</p> </td>
+   <td><p>フォームのプロパティを変更するオプションを提供します。<br /> <br /> </p> </td>
+  </tr>
+  <td><p>コピー</p> </td>
+   <td><p> フォームをコピーして目的の場所に貼り付けるオプションが用意されています。<br /> <br /> </p> </td>
+  </tr>
+   <tr>
+   <td><p>プレビュー</p> </td>
+   <td><p>フォームをHTMLとしてプレビューするオプションや、XML ファイルからのデータをフォームと結合してカスタムプレビューを実行するオプションが用意されています。<br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>ダウンロード</p> </td>
+   <td><p>選択したフォームをダウンロードします。<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>レビューの開始／レビューの管理</p> </td>
+   <td><p>選択されたフォームのレビューを開始したり管理したりできます。<br /> <br /> </p> </td>
+  </tr>
+  <!--<tr>
+   <td><p>Add Dictionary</p> </td>
+   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
+  </tr>-->
+  <tr>
+   <td><p>公開／非公開</p> </td>
+   <td><p>選択されているフォームを公開/非公開します。<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>削除</p> </td>
+   <td><p>選択したフォームを削除します。<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>比較</p> </td>
+   <td><p>プレビュー用に 2 つの異なるフォームを比較します。<br /> <br /> </p> </td>
+  </tr>
+ </tbody>
+</table>
 
 ## トラブルシューティング
 

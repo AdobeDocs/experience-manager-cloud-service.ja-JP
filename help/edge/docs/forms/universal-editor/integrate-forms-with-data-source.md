@@ -1,17 +1,17 @@
 ---
-title: ユニバーサルエディターでフォームのフォームデータモデル（FDM）を作成する方法
+title: ユニバーサルエディターでフォームのフォームデータモデル（FDM）を統合する方法
 description: フォームデータモデル（FDM）に基づいてフォームを作成する方法を説明します。 FDM でデータモデルオブジェクトのサンプルデータを生成し、編集します。
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 hide: true
 hidefromtoc: true
-source-git-commit: e2259e542df5a12748705af901d073e4486292c4
+exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
+source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 11%
 
 ---
-
 
 # ユニバーサルエディターでのフォームとフォームデータモデルの統合
 
@@ -128,7 +128,7 @@ ht-degree: 11%
 
    ![ フォームを作成 ](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-   また、フォーム要素の **バインド参照** プロパティにデータ連結を指定することで、フォーム要素に手動でデータ連結を追加することもできます。
+   フォーム要素の **バインド参照** プロパティにデータ連結を指定するには、フォーム要素に手動でデータ連結を追加する必要があります。
 例えば、フォームに既に存在する **ペット名** テキストボックスに、データ連結参照を追加します。
 
    ![ フォームフィールドのデータディニングを手動で追加 ](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
