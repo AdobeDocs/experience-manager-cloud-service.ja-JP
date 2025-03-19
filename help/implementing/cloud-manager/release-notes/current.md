@@ -4,9 +4,9 @@ description: AEM as a Cloud Service の Cloud Manager 2025.3.0 のリリース�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 5983c8579dd8606bc8bedfe6fa2a3838493452cd
+source-git-commit: 663234640f16e6aa653251399751abf5daa17f82
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '329'
 ht-degree: 31%
 
 ---
@@ -33,6 +33,8 @@ AEM as a Cloud Service の Cloud Manager 2025.3.0 のリリース日は 2025年3
   パイプライン ページに複数のパイプラインを同時に実行する機能が導入されました。 ユーザーは、1 つ以上 10 以下のパイプラインを選択する必要があります。 パイプライン ページの右上隅付近にある「**選択した実行（x）**」をクリックします。 モーダルダイアログボックスが表示され、開始できないパイプラインが一覧表示されます。 **実行** をクリックして、有効なすべてのパイプラインを開始します。
 
   ![ 選択したパイプラインを実行ダイアログボックス ](/help/implementing/cloud-manager/release-notes/assets/run-selected-pipelines.png)
+
+  [ 複数のパイプラインの実行 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#run-multiple-pipelines) も参照してください。
 
 * **Node.js バージョンのサポートが拡張されました**
 
