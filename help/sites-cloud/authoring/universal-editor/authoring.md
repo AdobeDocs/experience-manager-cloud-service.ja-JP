@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fced4707e781242132a018d28d4dd121960469eb
+source-git-commit: 08bcf9a65854478d2ce057e31b4c27690d1bf240
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1405'
 ht-degree: 98%
 
 ---
@@ -161,7 +161,7 @@ ht-degree: 98%
 >
 >ホットキー `Shift+Backspace` を使用して、選択したコンポーネントをコンテナから削除します。
 
-### コンテナ内のコンポーネントの並べ替え {#reordering-components}
+### コンポーネントの並べ替え {#reordering-components}
 
 1. [コンテンツツリーモード](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)でない場合はそれに切り替えます。
 1. コンテンツツリーまたはエディターでコンテナコンポーネントを選択します。
@@ -176,15 +176,15 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->ソースコンテナとターゲットコンテナ間で異なる[コンポーネントフィルター](/help/implementing/universal-editor/filtering.md)が設定されている場合、コンテナ間でコンポーネントを移動できません。
+>コンポーネントは、ターゲットコンテナ [ コンポーネントフィルター ](/help/implementing/universal-editor/filtering.md) が選択したコンポーネントを許可している場合にのみ、コンテナ間で移動できます。
 
 ### 「バリエーションを生成」で生成 AI を使用したバリエーションの作成 {#generate-variations-ai}
 
 生成バリエーションを使用して生成 AI を活用し、コンテンツ作成を高速化します。
 
-ユニバーサルエディターを開いて、「バリエーションを生成」のエントリポイントを見つけます。
+ユニバーサルエディターを開き、バリエーションを生成するエントリポイントを見つけます。
 
-詳しくは、[ バリエーションの生成 – AEM エディターに統合 ](/help/generative-ai/generate-variations-integrated-editor.md) を参照してください。
+詳しくは、[バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)を参照してください。
 
 ## コンテンツのプレビュー {#previewing-content}
 
