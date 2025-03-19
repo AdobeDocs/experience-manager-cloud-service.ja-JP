@@ -4,10 +4,10 @@ description: AEM as a Cloud Service への移行の基本事項を把握して�
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 feature: Migration
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 08da72724fb8c6e8760ae8013dcf739585ac6903
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -39,11 +39,11 @@ Cloud Service への移行ジャーニーには、次の段階が含まれます
 
 次の図は AEM as a Cloud Service への移行プロセス概要を示しています。
 
-![AEM as a Cloud Serviceへの移行プロセス概要 ](/help/journey-migration/assets/move-aemcloud-process.png)
+![AEM as a Cloud Service への移行プロセス概要](/help/journey-migration/assets/move-aemcloud-process.png)
 
 移行ジャーニーのより詳細で詳細な表示については、以下の図も参照してください。
 
-![ 移行ジャーニーの詳細で詳細な表示 ](/help/journey-migration/assets/migration-process.png)
+![移行ジャーニーのより詳細で詳細な表示](/help/journey-migration/assets/migration-process.png)
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
 
@@ -56,7 +56,7 @@ Cloud Service への移行ジャーニーには、次の段階が含まれます
 
 このジャーニーで概要を説明する手順に加えて、アドビは、Cloud Service の計画から運用開始までの移行プロセスを通じて IT チームをガイドするクラウドベースのアプリケーションである Cloud Acceleration Manager を提供します。AEM as a Cloud Service への移行プロセスの各段階で役に立つアドビ推奨のベストプラクティス、ヒント、ドキュメントおよびツールを利用して移行を成功へ導くよう、チームをセットアップします。
 
-[Cloud Acceleration Manager のドキュメント](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) を参照するか、 [紹介ビデオ](https://experienceleague.adobe.com/?launch=ExperienceManager-A-1-2021.1.migration&amp;recommended=ExperienceManager-A-1-2021.1.migration&amp;lang=ja#dashboard/learning) を視聴して、移行ジャーニーを始めることができます。
+[Cloud Acceleration Manager のドキュメント](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) を参照するか、 [紹介ビデオ](https://experienceleague.adobe.com/en/playlists/experience-manager-all-move-to-cloud-service#dashboard/learning) を視聴して、移行ジャーニーを始めることができます。
 
 ## 次の手順 {#what-is-next}
 
