@@ -3,14 +3,51 @@ title: の名前変更と一括アセット名の変更  [!DNL Assets view]
 description: 新しいAssets UI （Assets ビュー）を使用して、アセットの名前を一括で変更する方法を説明します。 複数のアセットの名前を一度に変更できます。
 role: User
 exl-id: e041811b-0246-408f-9246-248da55f66a1
-source-git-commit: 97be9d7eafe5baa55c1314ca431cb0fabca06b5e
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 17%
+source-wordcount: '486'
+ht-degree: 19%
 
 ---
 
 # [!DNL Assets view] でのアセットまたはフォルダーの名前の変更 {#rename-single-asset-or-folder}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
+        </td>
+    </tr>
+</table>
 
 名前を変更すると、コンテンツや場所を変更せずにアセットを整理、分類および識別しやすくなります。 選択 [!DNL Assets view] たアセットまたはフォルダーの名前を変更できます。
 

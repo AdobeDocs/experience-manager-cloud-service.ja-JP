@@ -5,17 +5,51 @@ mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: f64f6d90c6ae2490be4be5067df0f96e9df6be38
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 98%
+source-wordcount: '1012'
+ht-degree: 97%
 
 ---
 
 # アセットビューの概要 {#assets-view}
 
-| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
+        </td>
+    </tr>
+</table>
 
 ![Assets Essentials のデプロイ](assets/banner-image.jpg)
 
@@ -68,7 +102,7 @@ Assets as a Cloud Service で利用可能なペルソナベースのエクスペ
 
 ![マイワークスペースの概要](assets/my-workspace-demo.gif)
 
-[![ ガイドを参照 ](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
+[![ガイドを参照](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
 ### データ駆動型の決定を行うためのインサイト {#insights-data}
 
@@ -76,7 +110,7 @@ Assets as a Cloud Service で利用可能なペルソナベースのエクスペ
 
 ![インサイトの概要](assets/insights-overview.gif)
 
-[![ ガイドを参照 ](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
+[![ガイドを参照](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
 
 ### 共同作業を加速する Adobe Photoshop Express の統合 {#accelerate-collaboration}
 
@@ -86,7 +120,7 @@ Assets as a Cloud Service で利用可能なペルソナベースのエクスペ
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420922)
 
-[![ ガイドを参照 ](assets/see-the-guide-sm.png)](edit-images-assets-view.md)
+[![ガイドを参照](assets/see-the-guide-sm.png)](edit-images-assets-view.md)
 
 Assets as a Cloud Service の今後のリリースには、[Adobe Express を介した Adobe Firefly の統合](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838)も含まれる予定です。
 
@@ -96,7 +130,7 @@ Assets as a Cloud Service の今後のリリースには、[Adobe Express を介
 
 ![フォルダーをアップロード](assets/folder-uploads.gif)
 
-[![ ガイドを参照 ](assets/see-the-guide-sm.png)](add-delete-assets-view.md)
+[![ガイドを参照](assets/see-the-guide-sm.png)](add-delete-assets-view.md)
 
 ### 効率を高めるための検索ファーストのアプローチ {#search-first}
 
@@ -110,7 +144,7 @@ Assets as a Cloud Service の今後のリリースには、[Adobe Express を介
 
 ![通知の受信](assets/notifications.gif)
 
-[![ ガイドを参照 ](assets/see-the-guide-sm.png)](manage-notifications-assets-view.md)
+[![ガイドを参照](assets/see-the-guide-sm.png)](manage-notifications-assets-view.md)
 
 ### 管理者がより細かく制御するためのアセットのソフト削除 {#soft-delete-assets}
 
@@ -118,7 +152,7 @@ Assets as a Cloud Service の今後のリリースには、[Adobe Express を介
 
 ![ソフト削除](assets/soft-delete.gif)
 
-[![ ガイドを参照 ](assets/see-the-guide-sm.png)](navigate-assets-view.md)
+[![ガイドを参照](assets/see-the-guide-sm.png)](navigate-assets-view.md)
 
 これらの機能に加えて、アセットビューでは、管理ビューでは使用できない次の機能も実行できます。
 

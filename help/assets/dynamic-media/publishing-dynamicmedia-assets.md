@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 100%
+source-wordcount: '536'
+ht-degree: 94%
 
 ---
 
-# Dynamic Media アセットの公開 {#publishing-dynamic-media-assets}
+# Dynamic Media アセットを公開 {#publishing-dynamic-media-assets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
+        </td>
+    </tr>
+</table>
 
 Dynamic Media アセットを公開するには、既にアップロード済みのアセットを選択し、「**[!UICONTROL 公開]**」または「**[!UICONTROL クイック公開]**」を選択します。Dynamic Media アセットを公開すると、URL として Web ページに含めることや、Web ページにコードを埋め込むことができます。
 

@@ -4,17 +4,51 @@ description: AEM Assets と Dynamic Media が静的および動的な画像レ�
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: eb5886b5ed6a6f5b52303b4fccf5c266178b36f8
-workflow-type: ht
-source-wordcount: '664'
-ht-degree: 100%
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+workflow-type: tm+mt
+source-wordcount: '692'
+ht-degree: 95%
 
 ---
 
 # Experience Manager Assets でのレンディションの表示と管理{#renditions}
 
-| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
+        </td>
+    </tr>
+</table>
 
 Adobe Experience Manager（AEM）のレンディションは、最適なパフォーマンスを確保することを目的に、様々なデバイスやプラットフォーム向けに設計された、画像などのデジタルアセットのカスタマイズされたバージョンです。AEM を使用すると、これらのレンディションを簡単に作成および管理し、ユーザーエクスペリエンスを向上させることができます。サムネールの作成、web またはモバイル用の画像の最適化、透かしの追加、動的レンディションやスマート切り抜きレンディションの表示とダウンロードなどを行うことができます。
 

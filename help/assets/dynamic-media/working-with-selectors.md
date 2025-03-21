@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Selectors,Interactive Images,Interactive Videos,Carousel Banners
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 100%
+source-wordcount: '791'
+ht-degree: 96%
 
 ---
 
 # Dynamic Media でセレクターを操作する {#working-with-selectors}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
+        </td>
+    </tr>
+</table>
 
 インタラクティブ画像、インタラクティブビデオ、カルーセルバナーを操作するときは、アセットを選択し、ホットスポットや画像マップのリンク先となるサイトや商品を選択します。画像セット、スピンセット、マルチメディアセットを操作するときは、アセットセレクターでアセットも選択します。
 

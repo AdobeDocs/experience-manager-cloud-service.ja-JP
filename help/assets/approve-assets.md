@@ -3,17 +3,51 @@ title: Experience Manager でのアセットの承認
 description: ' [!DNL Experience Manager] でアセットを承認する方法について説明します。'
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
-workflow-type: ht
-source-wordcount: '1115'
-ht-degree: 100%
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+workflow-type: tm+mt
+source-wordcount: '1143'
+ht-degree: 97%
 
 ---
 
 # [!DNL Experience Manager] でのアセットの承認
 
-| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
@@ -47,13 +81,13 @@ AEM Assets as a Cloud Service へのアクセス権と、アセットの&#x200B;
 
    >[!NOTE]
    >
-   >アセットビューを使用して承認ターゲットをコンテンツハブとして選択すると、アセットは同じ組織に属するユーザーがコンテンツハブで使用できるようになります。承認ターゲットを配信として選択すると、アセットはすべてのユーザーが使用できるようになります。
+   アセットビューを使用して承認ターゲットをコンテンツハブとして選択すると、アセットは同じ組織に属するユーザーがコンテンツハブで使用できるようになります。承認ターゲットを配信として選択すると、アセットはすべてのユーザーが使用できるようになります。
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
 >[!NOTE]
 >
->アセットまたはフォルダーのデフォルトのスキーマが異なる場合は、その特定のスキーマでこの更新を行います。
+アセットまたはフォルダーのデフォルトのスキーマが異なる場合は、その特定のスキーマでこの更新を行います。
 
 ## アセットの承認 {#approve-assets}
 
@@ -93,7 +127,7 @@ AEM Assets as a Cloud Service へのアクセス権と、アセットの&#x200B;
 
    >[!NOTE]
    >
-   >アセットビューを使用して承認ターゲットをコンテンツハブとして選択すると、アセットは同じ組織に属するユーザーがコンテンツハブで使用できるようになります。承認ターゲットを配信として選択すると、アセットはすべてのユーザーが使用できるようになります。
+   アセットビューを使用して承認ターゲットをコンテンツハブとして選択すると、アセットは同じ組織に属するユーザーがコンテンツハブで使用できるようになります。承認ターゲットを配信として選択すると、アセットはすべてのユーザーが使用できるようになります。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 1. **[!UICONTROL メタデータプロファイル]**&#x200B;ページで、新しく作成したメタデータプロファイルを選択します。
 1. 上部のアクションバーから「**[!UICONTROL フォルダーにメタ―データプロファイルを適用]**」をクリックします。
@@ -104,7 +138,7 @@ AEM Assets as a Cloud Service へのアクセス権と、アセットの&#x200B;
 
 >[!NOTE]
 > 
->このアプローチでは、フォルダー内に新しく作成したアセットが承認されます。フォルダー内の既存のアセットについては、手動で選択して承認する必要があります。<br>または、「**[!UICONTROL 再処理]**」オプションを使用して、メタデータプロファイルの変更を以前のアセットに適用することもできます。
+このアプローチでは、フォルダー内に新しく作成したアセットが承認されます。フォルダー内の既存のアセットについては、手動で選択して承認する必要があります。<br>または、「**[!UICONTROL 再処理]**」オプションを使用して、メタデータプロファイルの変更を以前のアセットに適用することもできます。
 
 同様に、アセットビューのフォルダー内でアセットを一括承認するには、次の手順を実行します。
 
@@ -123,7 +157,7 @@ AEM Assets as a Cloud Service へのアクセス権と、アセットの&#x200B;
 
    >[!NOTE]
    >
-   >組織内でアセットビューを使用して承認ターゲットを `Content Hub` として選択すると、アセットは同じ組織に属するユーザーがコンテンツハブで使用できるようになります。
+   組織内でアセットビューを使用して承認ターゲットを `Content Hub` として選択すると、アセットは同じ組織に属するユーザーがコンテンツハブで使用できるようになります。
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -144,6 +178,6 @@ AEM as a Cloud Service インスタンスで [!UICONTROL OpenAPI 機能を備え
 
    >[!NOTE]
    >
-   >承認済みアセットの配信 URL をコピーするオプションは、アセットビューでのみ使用できます。
+   承認済みアセットの配信 URL をコピーするオプションは、アセットビューでのみ使用できます。
 
 Dynamic Media パネル内に表示される他のレンディションについて詳しくは、[Dynamic Media レンディションの表示とダウンロード](/help/assets/renditions.md#view-download-dm-renditions)を参照してください。

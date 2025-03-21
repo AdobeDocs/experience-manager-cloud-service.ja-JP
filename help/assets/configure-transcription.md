@@ -9,17 +9,51 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1686'
-ht-degree: 99%
+source-wordcount: '1714'
+ht-degree: 98%
 
 ---
 
 # [!DNL Experience Manager Assets] のトランスクリプションの設定 {#configure-transcription-service}
 
-| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
+        </td>
+    </tr>
+</table>
 
 トランスクリプションとは、音声認識技術を使用して、オーディオまたはビデオファイル内の音声をテキストに変換するプロセス（音声テキスト変換）です。
 [!DNL Adobe Experience Manager Assets] には、[!DNL Azure Media Services] 設定されています。このサービスは、サポートされているオーディオまたはビデオファイルに含まれている音声言語のテキストトランスクリプトを WebVTT（.vtt）形式で自動的に生成します。オーディオまたはビデオアセットが [!DNL Experience Manager Assets] で処理される際に、トランスクリプションサービスによって、オーディオまたはビデオアセットのテキストトランスクリプトレンディションが自動的に生成され、オリジナルのアセットが存在する Assets リポジトリー内の場所に保存されます。[!DNL Experience Manager Assets] トランスクリプションサービスを使用すると、マーケターは、テキストコンテンツの検索効率を高めてオーディオおよびビデオコンテンツを効果的に管理できるほか、アクセシビリティやローカライゼーションに対応することで、これらのアセットの ROI を向上できます。

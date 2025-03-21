@@ -3,17 +3,51 @@ title: コンテンツハブからのアセットのダウンロード
 description: コンテンツハブポータルからアセットをダウンロードする方法について説明します。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 523ba2ae59bfc0d35cca350a8daf3e20ac9e5332
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 49%
+source-wordcount: '806'
+ht-degree: 96%
 
 ---
 
 # コンテンツハブからのアセットのダウンロード {#download-assets}
 
-| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
+        </td>
+    </tr>
+</table>
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![アセットのダウンロード](assets/download-asset-genstudio.jpeg)
@@ -28,7 +62,7 @@ ht-degree: 49%
 
 コンテンツハブを使用して、1 つまたは複数のアセットとその使用可能なレンディションをダウンロードできます。
 
-[Content Hubで使用できるレンディションのタイプ ](#types-of-renditions) を参照してください。
+[コンテンツハブでの使用可能なレンディションのタイプ](#types-of-renditions)を参照してください。
 
 ## アセットとそのレンディションのダウンロード {#download-asset-renditions}
 
@@ -36,12 +70,12 @@ ht-degree: 49%
 
 1. アセットをクリックして、そのプロパティを表示します。
 
-1. ![ダウンロード](/help/assets/assets/download-icon.svg) をクリックして、ダウンロードプロセスを開始します。ダウンロードパネルには、使用可能なすべてのアセットレンディションが一覧表示されます。
+1. ![ダウンロード](/help/assets/assets/download-icon.svg) をクリックして、ダウンロードプロセスを開始します。ダウンロードパネルには、使用可能なすべてのアセットレンディションがリストされます。
 
    >[!NOTE]
    >
    * レンディションは、[設定](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)ユーザーインターフェイスを使用して表示が有効になっている場合にのみ表示されます。
-   * アセットのダウンロード中に、すべての [ 静的、動的、スマート切り抜きレンディション ](#types-of-renditions) ダウンロードできます。
+   * アセットのダウンロード中に、すべての[静的、動的、スマート切り抜きレンディション](#types-of-renditions)をダウンロードできます。
 
 1. 1 つ以上のレンディションを選択し、「**[!UICONTROL ダウンロード]**」をクリックします。
 
@@ -52,7 +86,7 @@ ht-degree: 49%
 
 >[!NOTE]
 >
-[Open API 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) にアクセスできるユーザーは、動的およびスマート切り抜きレンディションを表示およびダウンロードできます。
+[Open API を備えた Dynamic Media 機能](/help/assets/dynamic-media-open-apis-overview.md)にアクセスできるユーザーは、動的およびスマート切り抜きレンディションを表示およびダウンロードできます。
 
 ## 複数のアセットとそのレンディションのダウンロード {#download-multiple-assets-renditions}
 
@@ -62,15 +96,15 @@ ht-degree: 49%
 1. 「**[!UICONTROL ダウンロード]**」をクリックして、様々なダウンロードオプションから選択し、ダウンロードを開始します。
 
    * **オリジナル[!UICONTROL をダウンロード]**：選択したアセットを元の形式でダウンロードするには、このオプションを選択します。
-   * **ダウンロード [!UICONTROL  静的レンディションのみ]**：アセットの使用可能なすべての静的レンディション（元のアセットを除く）をダウンロードする場合は、このオプションを選択します。
-   * **ダウンロード [!UICONTROL  オリジナルと静的レンディション]**：選択したアセットのオリジナルレンディションと静的レンディションの両方をダウンロードする場合は、このオプションを選択します。
+   * **静的レンディションのみ[!UICONTROL をダウンロード]**：元のアセットを除く、アセットの使用可能なすべての静的レンディションをダウンロードするには、このオプションを選択します。
+   * **オリジナルと静的レンディション[!UICONTROL をダウンロード]**：選択したアセットのオリジナルと静的レンディションの両方をダウンロードするには、このオプションを選択します。
 
      ![複数のレンディションをダウンロード](/help/assets/assets/download-multiple-renditions.png)
 
      >[!NOTE]
      >
      * レンディションは、[設定](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)ユーザーインターフェイスを使用して表示が有効になっている場合にのみ表示されます。
-     * 複数のアセットをダウンロードする場合にのみ、[ 静的レンディション ](#types-of-renditions) をダウンロードできます。
+     * 複数のアセットのダウンロード中にのみ、[静的レンディション](#types-of-renditions)をダウンロードできます。
 
    選択したアセットのいずれかがライセンス済みアセットである場合は、左側のパネルでアセットのライセンスをクリックしてプレビューを表示して、「**[!UICONTROL 上記のすべての利用条件を読み、同意しました]**」を選択し、「**[!UICONTROL ダウンロード]**」をクリックできます。ライセンスのプレビューは、アセットが Assets as a Cloud Service オーサリング環境を使用して承認された場合にのみ表示されます。詳しくは、[コンテンツハブのライセンス済みアセットの管理](/help/assets/manage-licensed-assets-on-content-hub.md)を参照してください。
 
@@ -111,25 +145,25 @@ The dialog box that displays depends on whether the download list includes expir
 
 ## レンディションのタイプ {#types-of-renditions}
 
-アセットレンディションは、アセットの元のファイルを表す異なる表現です。 サムネール、web やモバイル用に最適化されたバージョン、透かし入りまたは DRM で保護されたファイル、さらにはスマート切り抜きなどの動的要素を含めることができます。 元のファイルタイプと一致する必要はなく、代わりに、様々なユースケースでアセットを表すために機能します。
+アセットレンディションは、アセットの元のファイルを様々に表現したものです。これらには、サムネイル、web またはモバイル用に最適化されたバージョン、透かし入りまたは DRM で保護されたファイル、さらにはスマート切り抜きなどの動的要素を含めることができます。元のファイルタイプと一致する必要はなく、代わりに、様々なユースケースでアセットを表すために機能します。
 
-詳しくは、[Experience Manager Assetsでのレンディションの表示と管理 ](/help/assets/renditions.md) を参照してください。
+詳しくは、[Experience Manager Assets でのレンディションの表示と管理](/help/assets/renditions.md)を参照してください。
 
 [!DNL Experience Manager Assets] では、次のレンディションのタイプをサポートしています。
 
-* [ 静的レンディション ](/help/assets/renditions.md#static-renditions)：静的レンディションは、デジタルアセットの事前作成済みバージョンで、通常はアセットの取り込みまたは変更時に生成されます。 Web サムネール、レスポンシブデザインのモバイル対応の形式、印刷用の高解像度ファイルなど、特定の用途やプラットフォームに最適化され、合理化された一貫したエクスペリエンスを提供します。
+* [静的レンディション](/help/assets/renditions.md#static-renditions)：静的レンディションは、デジタルアセットの事前生成されたバージョンで、通常はアセットの取り込みまたは変更中に作成されます。これらは、web サムネイル、レスポンシブデザイン用のモバイルに対応した形式、印刷用の高解像度ファイルなど、特定の用途とプラットフォーム用に最適化され、効率化された一貫したエクスペリエンスを提供します。
 
-* [ 動的レンディション ](/help/assets/renditions.md#dynamic-renditions)：動的レンディションは、アセットをリアルタイムにカスタマイズしてバージョンし、様々なアクション（デバイス解像度に合わせた画像のサイズ変更や、様々な縦横比に合わせた切り抜きなど）を実行します。 これらのレンディションを使用すると、より広い要件に対して、パーソナライズされ最適化されたエクスペリエンスを提供できます。 アセットの動的レンディションは、オーサー環境 [!DNL Adobe Experience Manager Assets] 作成されます。
+* [動的レンディション](/help/assets/renditions.md#dynamic-renditions)：動的レンディションは、様々なデバイスの解像度に合わせた画像のサイズ変更や、様々な縦横比に合わせた切り抜きなど、様々なアクションを実行するために、リアルタイムでカスタマイズされたアセットバージョンです。これらのレンディションにより、より広範な要件に合わせて、パーソナライズされ最適化されたエクスペリエンスを提供できます。アセットの動的レンディションは、[!DNL Adobe Experience Manager Assets] オーサー環境で作成されます。
 
-* [ スマート切り抜き ](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：スマート切り抜きは、切り抜きプロセス中にアセットの重要な部分にのみ焦点を当てます。 の Dynamic Media スマート切り抜きは、Adobe Senseiを活用した人工知能を活用して、目標地点を追跡し、あらゆる画面サイズでアセットが最適に表示されるようにします。 スマート切り抜き [!DNL Adobe Experience Manager]、アセットレンディションの幅と高さがタイトルと共に表示されます。 詳しくは、[AEM Assets Dynamic Media でのスマート切り抜きの使用 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) を参照してください。
+* [スマート切り抜き](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：スマート切り抜きは、切り抜きプロセス中にアセットの重要な部分にのみ焦点を当てます。Dynamic Media のスマート切り抜きでは、Adobe Sensei を使用した人工知能を活用して目標地点を追跡し、アセットがすべての画面サイズで最適に表示されるようにします。[!DNL Adobe Experience Manager] のスマート切り抜きでは、タイトルと共にアセットレンディションの幅と高さが表示されます。詳しくは、[AEM Assets Dynamic Media でのスマート切り抜きの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)を参照してください。
 
-  ![ レンディションタイプ ](/help/assets/assets/renditions-types.png)
+  ![レンディションタイプ](/help/assets/assets/renditions-types.png)
 
 
 >[!NOTE]
 > 
-* 動的およびスマート切り抜きレンディション機能は、初期導入段階にあります。 機能にアクセスするには、[Adobe カスタマーサポートケースを作成して送信 ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) します。
-* [Dynamic Media Open API サービス ](/help/assets/dynamic-media-open-apis-overview.md) に新しくオンボーディングしたお客様は、既存の画像プリセットを承認用に変更する必要があります。
+* 動的およびスマート切り抜きレンディション機能は、早期導入フェーズにあります。機能へのアクセス権を取得するには、[アドビカスタマーサポートケースを作成および送信してください](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)。
+* [Dynamic Media Open API サービス](/help/assets/dynamic-media-open-apis-overview.md)に新しくオンボードしたお客様は、既存の画像プリセットを承認用に改訂する必要があります。
 
 
 

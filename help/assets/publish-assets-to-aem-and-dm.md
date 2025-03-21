@@ -4,17 +4,51 @@ description: アセットビューのクイック公開を使用すると、ア�
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, Dynamic Media
 role: User
-source-git-commit: 991888d532b3396054bd04c11c7257b61c337725
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 86%
+source-wordcount: '1240'
+ht-degree: 97%
 
 ---
 
 # AEM および Dynamic Media へのアセットの公開{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
-| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
+        </td>
+    </tr>
+</table>
 
 Experience Manager Assets では、アセットビューを使用して、Experience Manager および Dynamic Media にアセットをすばやく公開できます。これにより、[管理ビューに切り替えることなく、アセットビュー](/help/assets/overview.md##persona-based-experiences)を使用してアセットを管理し、公開できるようになります。
 
@@ -22,18 +56,18 @@ Experience Manager Assets ビューでは、アセットを AEM や Dynamic Medi
 
 ## 始める前に {#before-you-begin}
 
-これらの設定を構成して、AEMおよびDynamic Mediaの公開オプションを表示します。
+AEM および Dynamic Media の公開オプションを表示するには、次の設定を行います。
 
-* Dynamic Mediaの公開オプションを表示するには、「管理者」ビューを使用して次の設定を行います。
+* Dynamic Media の公開オプションを表示するには、管理ビューを使用して、次の設定を行います。
 
    * [Dynamic Media クラウド設定を作成します](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)。
    * フォルダーレベルで Dynamic Media 公開モードを設定します。これらの設定は、Dynamic Media クラウド設定の作成中にも設定できます。フォルダーレベルでこれらの設定を上書きする方法について詳しくは、[Dynamic Media のフォルダーレベルでの選択的公開の設定](/help/assets/dynamic-media/selective-publishing.md)を参照してください。
 
-* AEMの公開オプションを表示するには、ご利用の環境にAEM パブリッシュエンドポイントを設定する必要があります。
+* AEM の公開オプションを表示するには、環境に合わせて AEM パブリッシュエンドポイントを設定する必要があります。
 
 ## アップロード中のアセットの公開 {#piblish-assets-during-upload}
 
-アセットをフォルダーにアップロードしながら、AEM および Dynamic Media にアセットを公開できます。表示される公開オプションは、アセットのアップロード先フォルダーのDynamic Media公開モード設定によって異なります。 Dynamic Media 公開モードは、次のように設定できます。
+アセットをフォルダーにアップロードしながら、AEM および Dynamic Media にアセットを公開できます。表示される公開オプションは、アセットがアップロードされるフォルダーの Dynamic Media 公開モード設定によって異なります。Dynamic Media 公開モードは、次のように設定できます。
 
 * **アクティベーション時：**&#x200B;アセットをこのフォルダーにアップロードする際は、URL／埋め込みリンクが提供される前に、最初にアセットを明示的に公開する必要があります。
 
@@ -42,7 +76,7 @@ Experience Manager Assets ビューでは、アセットを AEM や Dynamic Medi
 
 ### アクティベーション時への Dynamic Media 公開モードの設定 {#dynamic-media-publish-mode-set-to-upon-activation}
 
-Dynamic Media Publish モードが **アクティベーション時** に設定されているフォルダーにアセットをアップロードする際にアセットを公開するには：
+**アクティベーション時**&#x200B;に Dynamic Media 公開モードを設定したフォルダーへのアップロード中にアセットを公開するには：
 
 1. **アセットを追加**／**参照**／**ファイルを参照**&#x200B;をクリックして、アセットをアップロードする適切なフォルダーに移動します。「**公開オプション**」セクションには、**DM 公開モード**&#x200B;が&#x200B;**アクティベーション時**として表示されます。
    ![アクティベーション時のアップロード画像](/help/assets/assets/upload-uactivation.svg)
@@ -50,15 +84,15 @@ Dynamic Media Publish モードが **アクティベーション時** に設定�
 
 ### Dynamic Media 公開モードを即時に設定 {#dynamic-media-publish-mode-set-to-immediate}
 
-Dynamic Media Publish モードが **即時** に設定されているフォルダーにアセットをアップロードしながら公開するには：
+Dynamic Media 公開モードを&#x200B;**即時**&#x200B;に設定したフォルダーへのアップロード中にアセットを公開するには：
 
-1. **アセットを追加**／**参照**／**ファイルを参照**&#x200B;をクリックして、アセットをアップロードする適切なフォルダーに移動します。「**Publishオプション**」セクションには、「**DM Publishモード** が **即時** と表示されます。
+1. **アセットを追加**／**参照**／**ファイルを参照**&#x200B;をクリックして、アセットをアップロードする適切なフォルダーに移動します。「**公開オプション**」セクションには、**DM 公開モード**&#x200B;が&#x200B;**即時**として表示されます。
    ![ファイルのアップロード画像 - 即時モード](/help/assets/assets/resized-image-pdf-svg-new.svg)
 
 
    Dynamic Media 公開モードは&#x200B;**即時**&#x200B;なので、「**アップロード**」をクリックすると、アップロードしたアセットは自動的に Dynamic Media に公開されます。
 
-2. **AEMにPublish** を選択して、アップロードしたアセットをAEMに公開し、「アップロード」をクリックします。
+2. アップロードしたアセットを AEM に公開するには、「**AEM に公開**」を選択し、「アップロード」をクリックします。
 
    「**AEM に公開**」を選択した場合、アセットは AEM と Dynamic Media に公開され、それ以外の場合はアセットは Dynamic Media に公開されます。
 
@@ -68,7 +102,7 @@ Dynamic Media Publish モードが **即時** に設定されているフォル�
 
 Dynamic Media 公開モードを&#x200B;**選択的公開**&#x200B;に設定したフォルダーへのアップロード中にアセットを公開するには：
 
-1. **アセットを追加**／**参照**／**ファイルを参照**&#x200B;をクリックして、アセットをアップロードする適切なフォルダーに移動します。「**Publishオプション**」セクションには、「**DM Publishモード** が **選択Publish** として表示されます。
+1. **アセットを追加**／**参照**／**ファイルを参照**&#x200B;をクリックして、アセットをアップロードする適切なフォルダーに移動します。「**公開オプション**」セクションには、**DM 公開モード**&#x200B;が&#x200B;**選択的公開**として表示されます。
    ![アップロード画像 - 選択的公開モード](/help/assets/assets/upload-selective.svg)
 
 2. 要件に応じて「**AEM に公開**」、「**Dynamic Media に公開**」、またはその両方を選択し、「**アップロード**」をクリックします。

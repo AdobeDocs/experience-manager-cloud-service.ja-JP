@@ -2,17 +2,51 @@
 title: コンテンツハブユーザーインターフェイスの設定
 description: コンテンツハブユーザーインターフェイスの設定
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: e0c459ce360837fa0031278804d8e7b46b15d0e5
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1696'
 ht-degree: 98%
 
 ---
 
 # コンテンツハブユーザーインターフェイスの設定 {#configure-content-hub-user-interface}
 
-| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"
@@ -233,13 +267,13 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 [設定](#access-configuration-options-content-hub)ユーザーインターフェイスで、「**[!UICONTROL レンディション]**」をクリックします。以下のオプションが利用できます。
 
-* [!UICONTROL  レンディションの可用性を有効にする ] 切替スイッチを有効にして、Content Hubですべてのレンディションを表示します。
+* 「[!UICONTROL レンディションの可用性を有効にする]」切替スイッチを有効にして、すべてのレンディションをコンテンツハブで表示します。
 
 * 「**[!UICONTROL ユーザーに元のアセットのダウンロードを許可]**」切替スイッチを有効または無効にして、元のアセットをダウンロードできるかどうかを制御します。
 
   ![コンテンツハブのレンディション設定](assets/config-renditions.png)
 
-Content Hubでレンディションを表示およびダウンロードする方法について詳しくは、[Content Hubでのアセットのダウンロード ](/help/assets/download-assets-content-hub.md) を参照してください。
+コンテンツハブでレンディションを表示およびダウンロードする方法について詳しくは、[コンテンツハブでのアセットのダウンロード](/help/assets/download-assets-content-hub.md)を参照してください。
 
 ### カスタムリンク {#configure-custom-links-content-hub}
 

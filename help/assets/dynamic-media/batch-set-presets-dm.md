@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
 role: User
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3434'
-ht-degree: 100%
+source-wordcount: '3480'
+ht-degree: 97%
 
 ---
 
 # バッチセットプリセットについて {#about-bsp}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
+        </td>
+    </tr>
+</table>
 
 **[!UICONTROL バッチセットプリセット]**&#x200B;を使用すると、アセットファイルをフォルダーに個別にアップロードする場合やバッチ取得を使用してアップロードする場合に、複数のアセットを画像セットまたはスピンセットとして簡単に作成および編成できます。プリセットは、[!DNL Dynamic Media] でスケジュール設定したアセット読み込みジョブと同時に実行できます。各プリセットは、プリセット手法で定義された命名規則に一致する画像を使用して画像セットまたはスピンセットの構成方法を定義する、固有の名前を持つ自己完結した命令のセットです。
 
@@ -44,7 +81,7 @@ ht-degree: 100%
 
 **[!UICONTROL バッチセットプリセット]**&#x200B;ページの「**[!UICONTROL アセットの命名規則]**」領域には、バッチセットプリセットの定義に使用できる、「**[!UICONTROL 一致]**」と「**[!UICONTROL ベース名]**」という 2 つの要素があります。これらの要素では、命名規則を定義し、セットの命名に使用される規則の一部を指定できます。<!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
 
-会社の個々の命名規則では、多くの場合、これら 2 つの要素のそれぞれに含まれている 1 行以上の定義を使用します。独自の定義行を必要なだけ使用して、メイン画像、カラー要素、代替表示要素およびスウォッチ要素などの個別の要素にグループ化できます。
+会社の個々の命名規則では、多くの場合、これら 2 つの要素のそれぞれに含まれている 1 行以上の定義を使用します。 独自の定義行を必要なだけ使用して、メイン画像、カラー要素、代替表示要素およびスウォッチ要素などの個別の要素にグループ化できます。
 
 例えば、リテラル一致正規表現の構文は次のようになります。
 
@@ -108,8 +145,8 @@ ht-degree: 100%
 | --- | --- |
 | プリセット名 | 読み取り専用。バッチセットを最初に作成したときに指定した名前。プリセットの名前を変更する必要がある場合は、既存のバッチセットプリセットをコピーし、新しい名前を指定できます。詳しくは、[既存のバッチセットプリセットをコピーする](#copy-bsp)を参照してください。 |
 | タイプ | 読み取り専用。バッチセットを最初に作成したときに指定したタイプです。既存のバッチセットプリセットをコピーしても、その[!UICONTROL タイプ]は変更できません。それには、プリセットを作成する必要があります。 |
-| 派生アセットを含める | オプション。スピンセットや画像セットと共に生成画像や「派生」画像を含めるように [!DNL Dynamic Media] の IPS（Image Production System）に指示するには、「**[!UICONTROL はい]**」（デフォルト）を選択します。派生アセットとは、ユーザーが直接アップロードしなかった画像です。代わりに、プライマリアセットがアップロードされたときに IPS によって生成されたアセットです。例えば、PDF が [!DNL Dynamic Media] にアップロードされたときに PDF のページから IPS によって生成された画像アセットは、派生アセットと見なされます。 |
-| 保存先フォルダー | オプション。多数の画像セットまたはスピンセットを定義する場合は、アセット自体を含むフォルダーとは別にこれらのセットを保存することをお勧めします。そのため、画像セットまたはスピンセット用のフォルダーを作成し、生成されたバッチセットをそこに格納するようにアプリケーションを設定し直すことを検討してください。<br>その場合、Adobe Experience Manager Assets フォルダー構造（`/content/dam`）内のどのフォルダーのバッチセットプリセットをアクティブにするかを指定します。そのフォルダーを保存先フォルダーとして使用できるように、フォルダーを [!DNL Dynamic Media] 同期に対して有効にします。詳しくは、[Dynamic Media のフォルダーレベルでの選択的公開を設定する](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)を参照してください。<br>フォルダーの&#x200B;**[!UICONTROL プロパティ]**&#x200B;を使用してプリセットを適用する場合は、複数のフォルダーに特定のバッチセットプリセットを割り当てることができます。詳しくは、[アセットフォルダーのプロパティページからバッチセットプリセットを適用する](#apply-bsp-to-folders-via-properties)を参照してください。<br>フォルダーを指定しない場合、バッチセットプリセットで生成された画像セットまたはスピンセットは、アップロード先のアセットフォルダーと同じフォルダーに作成されます。 |
+| 派生アセットを含める | オプション。スピンセットや画像セットと共に生成画像や「派生」画像を含めるように [!DNL Dynamic Media] の IPS （Image Production System）に指示するには、「はい **[!UICONTROL （デフォルト]**」を選択します。 派生アセットとは、ユーザーが直接アップロードしなかった画像です。代わりに、プライマリアセットがアップロードされたときに IPS によって生成されたアセットです。例えば、PDF が [!DNL Dynamic Media] にアップロードされたときに PDF のページから IPS によって生成された画像アセットは、派生アセットと見なされます。 |
+| 保存先フォルダー | オプション。多数の画像セットまたはスピンセットを定義する場合は、アセット自体を含むフォルダーとは別にこれらのセットを保存することをお勧めします。そのため、画像セットまたはスピンセット用のフォルダーを作成し、生成されたバッチセットをそこに格納するようにアプリケーションを設定し直すことを検討してください。<br>その場合、Adobe Experience Manager Assets フォルダー構造（`/content/dam`）内のどのフォルダーのバッチセットプリセットをアクティブにするかを指定します。そのフォルダーを保存先フォルダーとして使用できるように、フォルダーを [!DNL Dynamic Media] 同期に対して有効にします。詳しくは、[Dynamic Media のフォルダーレベルでの選択的公開を設定する](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)を参照してください。<br> フォルダーの **[!UICONTROL プロパティ]** を使用してプリセットを適用する場合は、複数のフォルダーに特定のバッチセットプリセットを割り当てることができます。 詳しくは、[アセットフォルダーのプロパティページからバッチセットプリセットを適用する](#apply-bsp-to-folders-via-properties)を参照してください。<br>フォルダーを指定しない場合、バッチセットプリセットで生成された画像セットまたはスピンセットは、アップロード先のアセットフォルダーと同じフォルダーに作成されます。 |
 | **[!UICONTROL 命名規則を設定]** |  |
 | プレフィックス<br>または<br>サフィックス | オプション。それぞれのフィールドにプレフィックス、サフィックス、またはその両方を入力します。<br>「プリフィックス」フィールドと「サフィックス」フィールドを使用すると、特定のコンテンツセットの代替カスタムファイル命名規則を使用して、バッチセットプリセットを必要なだけ作成できます。この方法は、会社に規定されているデフォルトの命名スキームの例外がある場合に特に役に立ちます。<br>プレフィックスやサフィックスは、「**[!UICONTROL アセットの命名規則]**」領域で定義した「**[!UICONTROL ベース名]**」に追加されます。プレフィックスやサフィックスを追加すると、画像セットやスピンセットを他のアセットとは無関係に排他的に作成できます。また、他のユーザーがファイルタイプを特定する際にも役に立ちます。例えば、使用するカラーモードを決定するには、プレフィックスまたはサフィックスとして `rgb` または `cmyk` を追加します。<br>バッチセットプリセット機能を使用する場合は、セット命名規則を指定する必要はありませんが、ベストプラクティスとしては、セット命名規則を使用することをお勧めします。それにより、命名規則の要素を必要なだけセットにまとめて定義し、バッチセットの作成を効率化できます。 |
 | **[!UICONTROL ルール結果 - RegX]** |  |

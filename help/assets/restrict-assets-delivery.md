@@ -3,17 +3,51 @@ title: OpenAPI 機能を備えた Dynamic Media を使用したアセットの�
 description: OpenAPI 機能を使用したアセットの配信の制限方法について説明します。
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1150'
-ht-degree: 100%
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+workflow-type: tm+mt
+source-wordcount: '1178'
+ht-degree: 97%
 
 ---
 
 # OpenAPI 機能を備えた Dynamic Media を使用したアセットの配信の制限 {#restrict-access-to-assets}
 
-| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
@@ -40,7 +74,7 @@ IMS ユーザーおよびグループ ID に基づいて、[!DNL Experience Mana
 
 >[!NOTE]
 >
->この機能は現在セルフサービスではありません。IMS [ユーザー](https://helpx.adobe.com/jp/enterprise/using/manage-directory-users.html)および[グループ](https://helpx.adobe.com/jp/enterprise/using/user-groups.html)に対するアセット配信を制限するには、エンタープライズサポートチームにお問い合わせください。[Adobe Admin Console](https://adminconsole.adobe.com/) ポータルからアクセスを制限するために必要な情報を取得する方法と、AEM as a Cloud Service オーサーサービスでアクセスを設定する方法を紹介します。
+この機能は現在セルフサービスではありません。IMS [ユーザー](https://helpx.adobe.com/jp/enterprise/using/manage-directory-users.html)および[グループ](https://helpx.adobe.com/jp/enterprise/using/user-groups.html)に対するアセット配信を制限するには、エンタープライズサポートチームにお問い合わせください。[Adobe Admin Console](https://adminconsole.adobe.com/) ポータルからアクセスを制限するために必要な情報を取得する方法と、AEM as a Cloud Service オーサーサービスでアクセスを設定する方法を紹介します。
 
 ### オン／オフの日時を使用したアセットの配信の制限 {#restrict-delivery-assets-date-time}
 
@@ -88,7 +122,7 @@ AEM Cloud Service オーサーサービスとアセットセレクターでは�
 
 >[!NOTE]
 >
->AEM アセットセレクターベースの統合で IMS 認証を有効にする方法について詳しくは、エンタープライズサポートにお問い合わせください
+AEM アセットセレクターベースの統合で IMS 認証を有効にする方法について詳しくは、エンタープライズサポートにお問い合わせください
 
 1. アセットセレクターベース以外のエクスペリエンスの場合、AEM as a Cloud Service および OpenAPI 機能を備えた Dynamic Media では現在、サーバーサイド API 統合をサポートし、IMS ベアラートークンを生成できます。
    * [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) を通じて IMS ベアラートークンを取得できるサービスとサーバー間の API 統合を実行するには、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow)の手順に従ってください。

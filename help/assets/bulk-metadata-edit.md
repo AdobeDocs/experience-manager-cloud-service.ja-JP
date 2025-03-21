@@ -1,15 +1,52 @@
 ---
-title: Assets ビューでのメタデータの一括編集
+title: アセットビューでの一括メタデータ編集
 description: Assets ビューで同時に使用できる複数アセットの事前定義済みの標準メタデータフィールドセットを更新する方法を説明します。
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: f986cbc979ecdb9e704257a8b94db9de0d67d4f1
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 0%
+source-wordcount: '503'
+ht-degree: 5%
 
 ---
 
-# Assets ビューでのメタデータの一括編集{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
+# アセットビューでの一括メタデータ編集{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
+        </td>
+    </tr>
+</table>
 
 Assets ビュー内の **メタデータ一括編集** 機能を使用すると、複数のアセットファイルに対して、事前に定義された一連の標準メタデータフィールドを同時に編集できます。 複数のアセットを選択し、各アセットの標準メタデータを個別に更新するのではなく、事前定義済みの標準メタデータのセットを一度に一括更新します。 この機能により、大規模なアセットのセット全体で標準メタデータプロパティの効率、一貫性および精度が向上し、アセットの検索性と編成性が向上します。
 

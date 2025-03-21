@@ -5,19 +5,53 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 99%
+source-wordcount: '1582'
+ht-degree: 98%
 
 ---
 
 # Experience Manager Assets での公開の管理 {#manage-publication-in-aem}
 
-| [ 検索のベストプラクティス ](/help/assets/search-best-practices.md) | [ メタデータのベストプラクティス ](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えたDynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets開発者向けドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
+        </td>
+    </tr>
+</table>
 
-[!DNL Adobe Experience Manager Assets] 管理者は、アセットやアセットを含んだフォルダーをオーサーインスタンスから [!DNL Experience Manager Assets]、[!DNL Dynamic Media] および [!DNL Brand Portal]. に公開できます。また、アセットやフォルダーを後の日時に公開するようにスケジューリングすることもできます。公開すると、ユーザーはアセットにアクセスでき、さらに他のユーザーにアセットを配布できます。デフォルトでは、アセットやフォルダーを [!DNL Experience Manager Assets] に公開できます。ただし、[!DNL Experience Manager Assets] を設定して [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=ja) と [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ja) への公開を有効にすることができます。
+[!DNL Adobe Experience Manager Assets] 管理者は、アセットやアセットを含んだフォルダーをオーサーインスタンスから [!DNL Experience Manager Assets]、[!DNL Dynamic Media] および [!DNL Brand Portal] に公開できます。また、アセットやフォルダーを後の日時に公開するようにスケジューリングすることもできます。公開すると、ユーザーはアセットにアクセスでき、さらに他のユーザーにアセットを配布できます。デフォルトでは、アセットやフォルダーを [!DNL Experience Manager Assets] に公開できます。ただし、[!DNL Experience Manager Assets] を設定して [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=ja) と [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ja) への公開を有効にすることができます。
 
 [!DNL Experience Manager Assets] インターフェイスで使用できる「**[!UICONTROL クイック公開]**」または「**[!UICONTROL 公開を管理]**」オプションを使用して、アセットレベルまたはフォルダーレベルでアセットを公開または非公開にすることができます。その後、[!DNL Experience Manager Assets] で元のアセットやフォルダーに変更を加えても、その変更は、[!DNL Experience Manager Assets] から再公開するまでパブリッシュインスタンスには反映されません。これにより、処理中の変更はパブリッシュインスタンスでは使用できなくなります。管理者が公開した承認済みの変更のみがパブリッシュインスタンスで提供されます。
 

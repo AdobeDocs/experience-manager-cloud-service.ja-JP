@@ -1,21 +1,55 @@
 ---
 title: 使用状況および共有に関するレポート
-description: デジタルアセットの使用状況  [!DNL Adobe Experience Manager Assets]  アクティビティ、共有を理解するのに役立つ、内のアセットに関するレポートです。
+description: デジタルアセットの使用状況、アクティビティ、共有を理解するのに役立つ、 [!DNL Adobe Experience Manager Assets]  でのアセットに関するレポートです。
 contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 6a03eb1a4ac8284299c1ffcf27d6a6c8a8b9abc4
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 90%
+source-wordcount: '1019'
+ht-degree: 97%
 
 ---
 
 # アセットレポート {#asset-reports}
 
-| [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
+        </td>
+    </tr>
+</table>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -26,7 +60,7 @@ ht-degree: 90%
 
 レポートの情報を使用して重要な成功指標を導き出し、企業やお客様における [!DNL Assets] の採用状況を測定することができます。
 
-[!DNL Assets] レポートフレームワークは、[!DNL Sling] ジョブを非同期で使用して、レポートリクエストを順番に処理します。 このフレームワークは大規模なリポジトリーに合わせて拡張することができます。レポートの非同期処理により、レポートの生成速度と効率が向上します。
+[!DNL Assets] のレポートフレームワークでは、[!DNL Sling] ジョブを利用して、レポートのリクエストが順序立てて非同期的に処理されます。このフレームワークは大規模なリポジトリーに合わせて拡張することができます。レポートの非同期処理により、レポートの生成速度と効率が向上します。
 
 レポート管理インターフェイスは直感的で、アーカイブされたレポートにアクセスし、レポートの実行ステータス（成功、失敗、待機中）を表示する、詳細なオプションとコントロールが含まれます。
 
@@ -69,11 +103,11 @@ ht-degree: 90%
 
    >[!NOTE]
    >
-   >**ダウンロード** レポートを作成するには、**AEM管理者製品プロファイル** の使用権限を付与します。 AEM管理者の製品プロファイルを使用する権限については、[AEM製品プロファイルの割り当て ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) を参照してください。
+   >**ダウンロード**&#x200B;レポートを作成するには、**AEM 管理者製品プロファイル**&#x200B;の資格を自分に付与します。AEM 管理者製品プロファイルの資格を自分に付与するには、[AEM 製品プロファイルの割り当て](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem)を参照してください。
 
    ![レポートタイプの選択](assets/choose_report.png)
 
-1. タイトル、説明、サムネール、フォルダーパスなど、レポートの詳細を設定します。 デフォルトでは、フォルダーパスは `/content/dam` です。別のパスを指定して、特定のフォルダーでレポートを実行できます。
+1. タイトル、説明、サムネール、フォルダーパスなど、レポートの詳細を設定します。デフォルトでは、フォルダーパスは `/content/dam` です。別のパスを指定して、特定のフォルダーでレポートを実行できます。
 
    ![レポートの詳細を追加するページ](assets/report_configuration.png)
 
@@ -112,7 +146,7 @@ ht-degree: 90%
    ![レポート列の選択または選択のキャンセル](assets/custom_columns.png)
 
 1. ツールバーから「**[!UICONTROL 作成]**」をクリックします。レポートの生成が開始されたことを通知するメッセージが表示されます。
-1. [!UICONTROL アセットレポート]ページのレポート生成ステータスは、レポートジョブの現在の状態（「[!UICONTROL 成功]」、「[!UICONTROL 失敗]」、「[!UICONTROL 待機中]」、「[!UICONTROL スケジュール済み]」など）に基づきます。通知インボックスにも同じステータスが表示されます。 レポートページを表示するには、レポートリンクをクリックします。 または、レポートを選択し、ツールバーの「**[!UICONTROL 表示]**」をクリックします。
+1. [!UICONTROL アセットレポート]ページのレポート生成ステータスは、レポートジョブの現在の状態（「[!UICONTROL 成功]」、「[!UICONTROL 失敗]」、「[!UICONTROL 待機中]」、「[!UICONTROL スケジュール済み]」など）に基づきます。同じステータスが通知インボックスにも表示されます。レポートページを表示するには、レポートのリンクをクリックします。または、レポートを選択し、ツールバーの「**[!UICONTROL 表示]**」をクリックします。
 
    <!--![A generated report](assets/report_page.png)-->
    ![生成されたレポートのステータス](assets/report-status.JPG)
