@@ -4,10 +4,10 @@ description: クライアントサイドのデータ収集を監視できる自�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: fbc3358f1be3ae7ce3142cdc84815d304a2d6c38
-workflow-type: ht
-source-wordcount: '1009'
-ht-degree: 100%
+source-git-commit: e6a610c56b9ad7a684ea9f5ef72199d3bed28cc0
+workflow-type: tm+mt
+source-wordcount: '1007'
+ht-degree: 96%
 
 ---
 
@@ -55,7 +55,7 @@ AEM の実際の使用のモニタリングサービスは、訪問者のプラ�
 * チェックポイント（ページの読み込みシーケンスまたは訪問者としてのページとのやり取りのシーケンスにおける特定のイベントの名前）。
 * ソース（上記のチェックポイントでユーザーがやり取りする DOM 要素の識別子）。例えば、これは画像の可能性があります
 * ターゲット（上記のチェックポイントでユーザーがやり取りする外部ページまたはリソースへのリンク）。例：`https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
-* 訪問者のエクスペリエンスの質を表す最大コンテンツの描画（LCP）、初回入力遅延（FID）、累積レイアウトシフト（CLS）および最初のバイトまでの時間（TTFB）が含まれるコア web バイタル（CWV）パフォーマンス指標。
+* 訪問者のエクスペリエンスの品質を表す [Core Web Vitals （CWV） ](https://web.dev/articles/lcp) パフォーマンス指標 [Largest Contentful Paint （LCP） ](https://web.dev/articles/lcp)、[Interaction to Next Paint （INP） ](https://web.dev/articles/inp) および [ 累積レイアウトシフト（CLS） ](https://web.dev/articles/cls)。
 
 ## お客様に対する実際の使用のモニタリングの仕組み {#how-rum-works-for-a-customer}
 
