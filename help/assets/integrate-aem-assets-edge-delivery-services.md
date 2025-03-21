@@ -2,9 +2,9 @@
 title: AEM Assets と Edge Delivery Services 向けコンテンツのオーサリングの統合
 description: AEM AssetsをEdge Delivery Servicesと統合する方法について説明します。 この統合により、AEM AssetsとMicrosoft Word およびGoogle Docsの統合、AEM Assetsと Universal Editor の統合、Dynamic Media と OpenAPI 機能と Universal Editor の統合、Dynamic Media と OpenAPI 機能とMicrosoft Word およびGoogle Docsの統合が可能になります。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 38d4ad078233fcb22422b8c771e7e553cc082c41
+source-git-commit: e4a71d1a513bebed67b9571a483871dc16c36daa
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '820'
 ht-degree: 3%
 
 ---
@@ -18,21 +18,21 @@ ht-degree: 3%
 次の場所でコンテンツを編集できます。
 
 * [Microsoft Word またはGoogle Docs](#integrate-aem-assets-with-document-based-authoring-tools)
-* [ユニバーサルエディター](#integrate-aem-assets-with-universal-editor)
+* [ユニバーサルエディター](#integrate-aem-assets-with-UE-universal-editor)
 
 編集したコンテンツは、Edge Delivery Servicesに公開できます。
 
 ## Edge Delivery ServicesのAEM Assetsとドキュメントベースのオーサリングフローとの統合 {#integrate-aem-assets-with-document-based-authoring-tools}
 
-AEM AssetsをMicrosoft Word やGoogle Docsなどのドキュメントベースのオーサリングツールと統合すると、エディターでアセットセレクターを直接使用できるようになります。 このアセットセレクターを使用してAEM Assetsにアクセスし、承認済みアセットをドキュメントに挿入します。
-
-既にEdge Delivery Servicesの web サイトがある場合は、[AEM Assets プラグイン ](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) を参照して、AEM Assetsを既存のAEM プロジェクトに統合します。 Edge Delivery Services Web サイトがない場合は、以下の [ 前提条件 ](#integrate-aem-assets-with-microsoft-word-and-google-docs) および [AEM Assetsとドキュメントベースのオーサリング環境の統合 ](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) の節を参照してください。
+AEM AssetsをMicrosoft Word やGoogle Docsなどのドキュメントベースのオーサリングツールと統合すると、エディターにアセットセレクターが表示されます。 このアセットセレクターを使用してAEM Assetsにアクセスし、承認済みアセットをドキュメントに挿入します。
+既にEdge Delivery Servicesの web サイトがある場合は、[AEM Assets プラグイン ](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) を参照して、AEM Assetsを既存のAEM プロジェクトと統合する方法を確認してください。
+ドキュメントベースのオーサリングツールで作成したAEM Assetsを含むコンテンツを公開するEdge Delivery Services Web サイトを持っていない場合は、次の [ 前提条件 ](#integrate-aem-assets-with-microsoft-word-and-google-docs) および [ ドキュメントベースのオーサリング環境とのAEM Assetsの統合 ](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) の節に従ってください。
 
 ### 前提条件{#integrate-aem-assets-with-microsoft-word-and-google-docs}
 
 開始する前に、ドキュメントベースのオーサリング環境が準備されていることを確認します。
 
-* AEMをドキュメントベースのオーサリングツールと統合して、オーサリング環境を設定します。 オーサリング環境を設定するには、[ はじめに – 開発者チュートリアル ](https://www.aem.live/developer/tutorial) を参照してください。
+* AEMをドキュメントベースのオーサリングツールと統合して、オーサリング環境を設定します。 オーサリング環境の設定方法については、[ はじめに – 開発者チュートリアル ](https://www.aem.live/developer/tutorial) を参照してください。
 
 ### AEM Assetsとドキュメントベースのオーサリング環境の統合{#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs}
 
@@ -65,23 +65,23 @@ OpenAPI 機能を備えた DM を使用して配信されたアセットを使�
 
 ### OpenAPI 機能を備えた Dynamic Media を使用して配信されるアセットを使用する{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
 
-コンテンツのオーサリング中に、Dynamic Media を使用して OpenAPI 機能で配信されるアセットを使用するには、以下を参照してください。
+次のリンクを選択して、Dynamic Media を OpenAPI 機能と共に使用して、画像、ビデオ、その他のアセットタイプをコンテンツに配信する方法について学習してください。
 
-* [ 画像参照の使用 ](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
-* [ ビデオリファレンスの使用 ](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
-* [PDF、Zip ファイルなど、画像以外のアセットおよびビデオアセットのアセットリファレンスの使用 ](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
+* [ コンテンツへの画像の追加 ](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
+* [ コンテンツへのビデオの追加 ](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
+* [PDF、Zip ファイルなど、画像以外のアセットやビデオアセットをコンテンツに追加します ](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
 
-OpenAPI 機能を備えた Dynamic Media を使用してアセットを配信する方法については、このビデオを参照してください。
+OpenAPI 機能を備えた Dynamic Media を使用してコンテンツ内のアセットを配信する方法については、このビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441155)
 
 ## Edge Delivery Services サイトのサンプル{#example-of-an-Edge-Delivery-Services-site}
 
-[WKND Travel](http://bit.ly/3DExLnf) を参照してください。 このサイトは、Edge Delivery Servicesのドキュメントベースのオーサリング機能を使用して構築されています。 サイトのコンテンツは、Dynamic Media と OpenAPI 機能をアセット配信に使用して、[Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) でオーサリングされます。 作成したコンテンツは、ドキュメントから直接公開されます。 このドキュメントベースのオーサリング設定の場合、すべての重要なファイル、フォルダー、設定、web サイトのスタイル設定および機能コードがこの [Git リポジトリ ](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) に保存されます。
+Edge Delivery Servicesのドキュメントベースのオーサリング機能を使用して構築されたサイトである [WKND Travel](http://bit.ly/3DExLnf) を参照してください。 サイトのコンテンツは [Google Docsで作成され ](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT)OpenAPI 機能を備えた Dynamic Media を使用してコンテンツ内にアセットが配信されます。 オーサリング後、コンテンツはドキュメントから直接公開されます。 この [Git リポジトリー ](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) を参照して、このEdge Delivery Services（EDS）サイト用の Document-Based Authoring 設定の作成に使用される、すべての重要なファイル、フォルダー、設定、web サイトのスタイル設定と機能コードについて知ります。
 
-## AEM AssetsとEdge Delivery Servicesのユニバーサルエディターベースのオーサリングフローの統合 {#integrate-aem-assets-with-universal-editor}
+## AEM AssetsとEdge Delivery Servicesのユニバーサルエディターベースのオーサリングフローの統合 {#integrate-aem-assets-with-UE-universal-editor}
 
 AEM Assetsと統合するためのユニバーサルエディターを設定します。 この統合により、Dynamic Media を OpenAPI 機能と共に使用してアセットを配信できるようになります。
 
-* ユニバーサルエディターにカスタムアセットピッカー機能を追加するには、[Edge Delivery サイトの設定 ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) を参照してください。 カスタムのアセットピッカーを使用すると、ユニバーサルエディターのコンテンツに直接アセットを挿入できます。
+* ユニバーサルエディターでカスタムのアセットピッカー機能を追加する方法については、[Edge Delivery サイトの設定 ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) を参照してください。 カスタムのアセットピッカーを使用すると、ユニバーサルエディターのコンテンツに直接アセットを挿入できます。
 * ユニバーサルエディターでのオーサリング中にAEM Assetsにアクセスしてアセットを挿入する方法については、[ 拡張機能の概要 ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) を参照してください。

@@ -4,7 +4,7 @@ description: Edge Delivery Services Forms をすばやくシームレスに公�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e4a71d1a513bebed67b9571a483871dc16c36daa
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 96%
