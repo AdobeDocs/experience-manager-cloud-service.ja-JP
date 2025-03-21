@@ -5,10 +5,10 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 99%
+source-wordcount: '636'
+ht-degree: 75%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 99%
 
 [AEM ヘッドレスコンテンツ作成者ジャーニー](overview.md)の冒頭の [AEM でのヘッドレスのコンテンツモデリングの基本について](basics.md)で、ヘッドレス向けのオーサリングに関連する基本概念と用語について説明しました。
 
-この記事では、これらに基づいて、AEM ヘッドレスプロジェクト用に独自のコンテンツフラグメントモデルを作成する方法を説明します。
+この記事では、これらの原則に基づいて、AEM ヘッドレスプロジェクト用に独自のコンテンツフラグメントモデルを作成する方法を説明します。
 
 ## 目的 {#objective}
 
@@ -42,17 +42,33 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## コンテンツフラグメントモデルの作成 {#creating-content-fragment-models}
 
-コンテンツフラグメントモデルを作成し、構造を定義します。これは、**ツール**／**一般**／**コンテンツフラグメントモデル**&#x200B;で実行できます。
+コンテンツフラグメントモデルを作成し、構造を定義します。
 
-![ツールのコンテンツフラグメントモデル](assets/cfm-tools.png)
+1. コンテンツフラグメントコンソールで、コンテンツフラグメントモデルのパネルを選択します。
 
-これを選択した後、モデルの場所に移動し、「**作成**」を選択します。ここでは、様々な主要情報を入力できます。
+1. 設定またはサブ設定に適したフォルダーに移動します。
 
-「**モデルを有効化**」オプションはデフォルトで有効になっています。つまり、モデルは、保存するとすぐに（コンテンツフラグメントの作成で）使用できます。必要に応じて、この機能を無効にすることができます。後で既存のモデルを有効（または無効）にすることができます。
+1. **作成** を使用して **新しいコンテンツフラグメントモデル** ダイアログを開きます。
 
-![コンテンツフラグメントモデルの作成](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
+   ![タイトルと説明](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
 
-「**作成**」で確定すると、モデルを&#x200B;**開いて**&#x200B;構造の定義を開始できます。
+1. 詳細を入力
+
+1. **作成** を使用して空のモデルを保存するか、**作成して開く** を使用します。
+
+<!--
+Then the Content Fragments Models can be created and the structure defined. This can be done under **Tools** > **General** > **Content Fragment Models**. 
+
+![Content Fragment Models in Tools](assets/cfm-tools.png)
+
+After selecting this you navigate to the location for your model and select **Create**. Here you can enter various key details.
+
+The option **Enable model** is activated by default. This means that your model is available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
+
+![Create Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
+
+Confirm with **Create** and you can then **Open** your model to start defining the structure.
+-->
 
 ## コンテンツフラグメントモデルの定義 {#defining-content-fragment-models}
 
@@ -66,7 +82,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ![フィールドの定義](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-データタイプを追加したら、そのフィールドの「**プロパティ**」を定義する必要があります。プロパティは、使用するタイプによって異なります。次に例を示します。
+データタイプを追加したら、そのフィールドの「**プロパティ**」を定義する必要があります。これらのプロパティは、使用するタイプによって異なります。 次に例を示します。
 
 ![データプロパティ](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -89,7 +105,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 コンテンツフラグメントモデルの管理には、以下の操作が必要になります。
 
 * モデルの有効化（または無効化） - コンテンツフラグメントの作成時に作成者がモデルを使用できるようになります（または使用できなくなります）。
-* モデルの削除 - 削除は必ず必要ですが、コンテンツフラグメント、特に公開済みのフラグメントに既に使用されているモデルの削除には注意する必要があります。
+* 削除 – 削除は必ず必要ですが、コンテンツフラグメント、特に公開済みのフラグメントに既に使用されているモデルの削除には注意する必要があります。
 
 ## 公開 {#publishing}
 
