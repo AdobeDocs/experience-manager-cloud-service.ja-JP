@@ -2,14 +2,48 @@
 title: 統合  [!DNL AEM Assets]  コンテンツのオーサリング中  [!DNL Edge Delivery Services]
 description: ' [!DNL AEM Assets] with [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] with [!DNL Microsoft Word] and [!DNL Google Docs], integrate [!DNL AEM Assets] with [!DNL Universal Editor], integrate [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Universal Editor] and integrate [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Microsoft Word] and [!DNL Google Docs] を統合する方法を説明します。'
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 491ba10214c704a4e0004df36142e270a49f65e0
+source-git-commit: 2de6352363959f4258c0786910eaef7babe68f15
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 0%
+source-wordcount: '668'
+ht-degree: 3%
 
 ---
 
 # [!DNL Edge Delivery Services] 用コンテンツのオーサリング時の [!DNL AEM Assets] の統合 {#integrate-aem-assets-while-authoring-for-edge-delivery-services}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+        </td>
+         <td>
+            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
+        </td>
+    </tr>
+</table>
 
 ![UE でAEM アセット ](/help/assets/assets/EDS2.png)
 
@@ -24,7 +58,7 @@ ht-degree: 0%
 
 ## [!DNL Edge Delivery Services] 向けの [!DNL AEM Assets] とドキュメントベースのオーサリングフローの統合 {#integrate-aem-assets-with-document-based-authoring-tools}
 
-[!DNL AEM Assets] を [!DNL Microsoft Word] や [!DNL Google Docs] などのドキュメントベースのオーサリングツールと統合すると、エディターにアセットセレクターが表示されます。 このアセットセレクターを使用してア [!DNL AEM Assets] ットにアクセスし、ドキュメントに承認済みのアセットを挿入します。
+[!DNL AEM Assets] が [!DNL Microsoft Word] や [!DNL Google Docs] などのドキュメントベースのオーサリングツールと統合されると、オーサリングツールでアセットセレクターが提供されます。 このアセットセレクターを使用してア [!DNL AEM Assets] ットにアクセスし、承認済みのアセットをコンテンツに挿入します。
 既に [!DNL Edge Delivery Services] web サイトがある場合は、[[!DNL AEM Assets]  プラグイン ](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) のドキュメントを参照して、既存の [!DNL AEM] プロジェクト [!DNL AEM Assets] 統合する方法を確認してください。
 ドキュメントベースのオーサリングツールで作成した包括的なコンテンツを公開する [!DNL Edge Delivery Services] web サイトがない場合は、次の [ 前提条件 ](#integrate-aem-assets-with-microsoft-word-and-google-docs) および [ [!DNL AEM Assets]  ドキュメントベースのオーサリング環境との統合 ](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) の節に従 [!DNL AEM Assets] ます。
 
@@ -60,7 +94,7 @@ ht-degree: 0%
 
 * [!DNL Dynamic Media with Open API capabilities] が有効になっているAssets Cloud Service環境の使用権限。
 * [!DNL Dynamic Media] ライセンス。
-* 画像アセットのコピー参照を有効にした [!DNL AEM Assets sidekick plugin]。 詳しくは、ドキュメントベースのオーサリングでは [this](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) を、ユニバーサルエディターベースのオーサリングでは [this](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) を参照してください。
+* 画像アセットのコピー参照を有効にした [!DNL AEM Assets sidekick plugin]。 詳しくは、ドキュメントベースのオーサリングについては [ このドキュメント ](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) を、ユニバーサルエディターベースのオーサリングについては [ このドキュメント ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) を参照してください。
 * 承認済みのAssets。 承認済みのアセットは、Assets Cloud Services のバックエンドまたは UI のアクションを介して `dam:status=Approved` 認されています。
 
 ### [!DNL Dynamic Media with OpenAPI capabilities] を使用して配信されるアセットの使用{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
