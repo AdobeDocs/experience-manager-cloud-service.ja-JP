@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: d693097226839c8d496c6a8b3466953b32eacac5
 workflow-type: tm+mt
 source-wordcount: '6103'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 98%
    + AEMaaCS 機能のリリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025年度 {#2025}
-         + [ リリースノート（2025.1.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md)）
+         + [2025.1.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md)
       + 2024年度 {#2024}
          + [2024.10.0 のリリースノート](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
          + [2024.9.0 のリリースノート](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
@@ -589,8 +589,8 @@ ht-degree: 98%
       + [Dynamic Media をセットアップする](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Dynamic Media の操作](/help/assets/dynamic-media/dynamic-media.md)
       + [Dynamic Media を構成する](/help/assets/dynamic-media/config-dm.md)
-      + [Dynamic Media PrimeとUltimate](/help/assets/dynamic-media/dm-prime-ultimate.md)
-      + [Dynamic Media PrimeとUltimateを有効にする](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)
+      + [Dynamic Media Prime と Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)
+      + [Dynamic Media Prime と Ultimate の有効化](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)
       + [オプション - Dynamic Media の設定、一般設定](/help/assets/dynamic-media/dm-general-settings.md)
       + [オプション - Dynamic Media の設定、公開設定](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Dynamic Media のトラブルシューティング](/help/assets/dynamic-media/troubleshoot-dm.md)
@@ -1037,7 +1037,7 @@ ht-degree: 98%
       + [よくある質問](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + WYSIWYG オーサリング {#universal-editor}
          + [Edge Delivery Services のフォームのユニバーサルエディターの概要 - 完全ガイド](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [ユニバーサルエディターを使用してオーサリングを開始する方法 – ステップバイステップのチュートリアル](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [ユニバーサルエディターを使用したオーサリングの開始方法 - ステップバイステップチュートリアル](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [ユニバーサルエディターを使用した最初のフォーム作成方法 - ステップバイステップチュートリアル](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [ユニバーサルエディターインターフェイスガイド：ツール、機能およびナビゲーションについて](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [フォームのモバイル化：ユニバーサルエディターのレスポンシブデザイン](/help/edge/docs/forms/universal-editor/responsive-layout.md)
@@ -1067,7 +1067,7 @@ ht-degree: 98%
          + [フォームのグローバル化：フォーム翻訳ガイド](/help/edge/docs/forms/translate-forms.md)
          + [フォームの保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/recaptacha-forms.md)
          + [カスタムフォームコンポーネントの作成：開発者向けガイド](/help/edge/docs/forms/custom-components-forms.md)
-         + [ フォームのパフォーマンスの監視：実際の使用状況に関する監視ガイド ](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [フォームのパフォーマンスの監視：実際の使用のモニタリングガイド](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
    + Edge Delivery リソース {#resources}
       + Sidekick {#sidekick}
          + [Sidekick の使用](/help/edge/docs/sidekick.md)

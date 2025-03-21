@@ -1,207 +1,207 @@
 ---
-title: ' [!DNL Dynamic Media] PrimeとUltimateを有効にする'
-description: ' [!DNL Dynamic Media] PrimeとUltimateの製品を有効にする方法を説明します。'
+title: ' [!DNL Dynamic Media]  Prime と Ultimate の有効化'
+description: ' [!DNL Dynamic Media]  Prime と Ultimate のサービスを有効にする方法について説明します。'
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
 source-git-commit: 42c90ae69af31b1b54f5b4ed01100df0cbe5dad2
 workflow-type: tm+mt
 source-wordcount: '1074'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# [!DNL Dynamic Media] PrimeとUltimateを有効にする {#enable-dynamic-media-prime-and-ultimate}
+# [!DNL Dynamic Media] Prime と Ultimate の有効化 {#enable-dynamic-media-prime-and-ultimate}
 
 | [検索のベストプラクティス](/help/assets/search-best-practices.md) | [メタデータのベストプラクティス](/help/assets/metadata-best-practices.md) | [コンテンツハブ](/help/assets/product-overview.md) | [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 開発者向けドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-[!DNL Adobe Experience Manager] as a Cloud Serviceを使用すると、PrimeやUltimateの製品 [!DNL Dynamic Media] アクセスして、デジタルワークフローを効率化しコンテンツ管理を最適化できます。 これらの利点と主な違いについて詳しくは、[Dynamic Media PrimeとUltimate](/help/assets/dynamic-media/dm-prime-ultimate.md) を参照してください。
+[!DNL Adobe Experience Manager] as a Cloud Service を使用すると、[!DNL Dynamic Media] Prime および Ultimate サービスにアクセスして、デジタルワークフローを効率化し、コンテンツ管理を最適化できます。これらのメリットと主な違いについて詳しくは、[Dynamic Media Prime と Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md) を参照してください。
 
-この記事では、[!DNL Dynamic Media] のPrimeおよびUltimate ソリューションを有効にするためのエンドツーエンドのワークフローについて説明します。
+この記事では、[!DNL Dynamic Media] Prime および Ultimate サービスを有効にするエンドツーエンドのワークフローについて説明します。
 
-## [!DNL Dynamic Media] Ultimateを有効にする {#enable-dynamic-media-ultimate}
+## [!DNL Dynamic Media] Ultimate を有効にする {#enable-dynamic-media-ultimate}
 
-クラウドサービス環境で次の手順を実行し、[!DNL Dynamic Media] Ultimateを有効にします。
+[!DNL Dynamic Media] Ultimate を有効にするには、Cloud Service 環境で次の手順を実行します。
 
 1. [アクティベート [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi)
-1. [ 設定  [!DNL Dynamic Media]  ソリューション ](#configure-dynamic-media-solutions)
-1. [会社の作成  [!DNL Dynamic Media]  リスト化](#create-and-list-dynamic-media-companies)
-1. [ 配信層でのカスタムドメインの設定 ](#configure-custom-domain-in-delivery-tier)
+1. [ [!DNL Dynamic Media]  ソリューションを設定](#configure-dynamic-media-solutions)
+1. [ [!DNL Dynamic Media]  会社を作成してリスト化](#create-and-list-dynamic-media-companies)
+1. [配信層でカスタムドメインを設定](#configure-custom-domain-in-delivery-tier)
 
 <!--
 1. [Onboard API keys using the [!DNL AEM] [!DNL Dynamic Media] API card](#onboarding-api-keys)
 -->
 
-[!DNL Dynamic Media Prime] を有効にする必要がある場合は、[ 有効  [!DNL Dynamic Media Prime]](#enable-dynamic-media-prime) に記載されているクイックリンクを参照してください。
+[!DNL Dynamic Media Prime] を有効にする必要がある場合は、[有効にする [!DNL Dynamic Media Prime]](#enable-dynamic-media-prime)に記載されているクイックリンクを参照してください。
 
 ### アクティベート [!DNL Dynamic Media with OpenAPI] {#activate-dynamic-media-with-openapi}
 
-OpenAPI 機能を備えた [!DNL Dynamic Media] は、DAM をアジャイルで効率的なコンテンツサプライチェーンエコシステムのコアに据え、アセットのガバナンスと配信を確保します。
+OpenAPI を備えた [!DNL Dynamic Media] 機能では、DAM をアジャイルで効率的なコンテンツサプライチェーンエコシステムのコアに置き、アセットのガバナンスと配信を確実に行います。
 
-Ultimateを有効にするプロセスの最初の手順 [!DNL Dynamic Media]、Cloud Service環境の [[!DNL Dynamic Media] OpenAPI を使用して ](/help/assets/dynamic-media-open-apis-overview.md) アクティブ化することです。
+[!DNL Dynamic Media] Ultimate を有効にするプロセスの最初の手順は、Cloud Service 環境の OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) を備えた [[!DNL Dynamic Media]  を使用してアクティベートすることです。
 
 #### 開始する準備を整える {#prerequisites}
 
 アクティベーションプロセスを開始する前に、次の要件を満たしていることを確認します。
 
-1. [Cloud Managerへのアクセス ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
-1. [ プログラムに  [!DNL Dynamic Media]  ソリューションが含まれています ](#configure-dynamic-media-solutions)。
-1. PrimeまたはUltimate[!DNL Dynamic Media] ライセンスがある。
+1. [Cloud Manager へのアクセス権](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
+1. [プログラムに  [!DNL Dynamic Media]  ソリューションが含まれている](#configure-dynamic-media-solutions)。
+1. [!DNL Dynamic Media] Prime または Ultimate ライセンスがある。
 
-#### Cloud Service環境での [!DNL Dynamic Media with OpenAPI] 機能の有効化 {#enable-dynamic-media-with-openapi-capabilites-in-your-CS-environment}
+#### Cloud Service 環境での [!DNL Dynamic Media with OpenAPI] 機能を有効にする。 {#enable-dynamic-media-with-openapi-capabilites-in-your-CS-environment}
 
-以下の手順を実行して、お使いのクラウドサービス環境で [!DNL Dynamic Media with OpenAPI] を有効にします。
+Cloud Service 環境で [!DNL Dynamic Media with OpenAPI] を有効にするには、次の手順を実行します。
 
-1. [Cloud Manager UI に移動します ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
+1. [Cloud Manager UI に移動します](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
 
-1. 既存の環境へのアクセス権がない場合は、[ 環境を作成 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments) します。
+1. 既存の環境にアクセスできない場合は、[環境を作成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments)します。
 
-1. 環境の詳細ページの **[!UICONTROL 環境情報]** セクションの **[!UICONTROL Dynamic Media]** 行で、**[!UICONTROL クリックしてアクティベート]** を選択します。
+1. 環境の詳細ページの「**[!UICONTROL 環境情報]**」セクションの **[!UICONTROL Dynamic Media]** 行で「**[!UICONTROL クリックしてアクティベート]**」を選択します。
 
-   ![OpenAPI 機能を使用した Dynamic Media のアクティブ化 ](/help/assets/assets/activate-adv-capabiliites-of-dm-openAPI.png)
+   ![OpenAPI を備えた Dynamic Media 機能をアクティベート](/help/assets/assets/activate-adv-capabiliites-of-dm-openAPI.png)
 
-1. 確認ダイアログで「**[!UICONTROL アクティベート]**」をクリックして、[!DNL Dynamic Media with OpenAPI] アクティベートプロセスを開始します。 アクティベーションに成功すると、Cloud Managerに次のステータス更新が表示されます。
-   1. **[!UICONTROL 環境ステージ]**:**[!UICONTROL 実行中]**
-   1. ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  OpenAPI 機能がアクティブ化されます ]**
+1. 確認ダイアログで「**[!UICONTROL アクティベート]**」をクリックして、[!DNL Dynamic Media with OpenAPI] アクティベーションプロセスを開始します。アクティベーションが成功すると、Cloud Manager に次のステータス更新が表示されます。
+   1. **[!UICONTROL 環境ステージ]**：**[!UICONTROL 実行中]**
+   1. ![DM のアクティベート](/help/assets/assets/Images_icon.svg)**[!UICONTROL  Dynamic Media ]**：**[!UICONTROL  OpenAPI 機能がアクティベートされています&#x200B;]**
 
-      ![ アクティベーションに成功しました ](/help/assets/assets/activation-successful.png){width="700" align="left"}
+      ![アクティベーション成功](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
-#### アクティベーションを再試行 {#retry-activation}
+#### アクティベーションの再試行 {#retry-activation}
 
-アクティベーションに失敗した場合、Cloud Managerに次のステータス更新が表示されます。
+アクティベーションに失敗した場合、Cloud Manager に次のステータス更新が表示されます。
 
-* **[!UICONTROL 環境ステージ]**:OpenAPI を使用した **[!UICONTROL DM が失敗しました]**
-* ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  OpenAPI 機能をアクティブ化できませんでした ]**
+* **[!UICONTROL 環境ステージ]**：**[!UICONTROL OpenAPI を使用した DM にエラーが発生しました]**
+* ![DM のアクティベート](/help/assets/assets/Images_icon.svg)**[!UICONTROL  Dynamic Media ]**：**[!UICONTROL  OpenAPI 機能のアクティベートに失敗しました&#x200B;]**
 
-  ![ アクティベーションの再試行 ](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
+  ![アクティベーションを再試行](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 
 「**[!UICONTROL クリックして再試行]**」を選択して、アクティベーションを再開します。
 
 または、以下の手順を実行してアクティベーションプロセスを再開します。
 
-1. すべての環境を一覧表示するページに移動します。
+1. すべての環境をリスト化するページに移動します。
 
-1. 環境の行の最後にある「その他のオプション ![ その他のオプション ](/help/assets/assets/three-dots.svg)）をクリックします。
+1. 環境行の最後にあるその他のオプション（![その他のオプション](/help/assets/assets/three-dots.svg)）をクリックします。
 
-1. 「**[!UICONTROL OpenAPI アクティベーションで DM を再試行]**」を選択して、アクティベーションを再開します。
+1. 「**[!UICONTROL OpenAPI を備えた DM のアクティベーションを再試行]**」を選択して、アクティベーションを再開します。
 
-   ![ 環境の詳細ページからアクティベーションを再試行 ](/help/assets/assets/restart-activation-process-from-list-environment-page.png)
+   ![環境の詳細ページからアクティベーションを再試行](/help/assets/assets/restart-activation-process-from-list-environment-page.png)
 
-### [!DNL Dynamic Media] ソリューションの設定 {#configure-dynamic-media-solutions}
+### [!DNL Dynamic Media] ソリューションを設定 {#configure-dynamic-media-solutions}
 
-Cloud Managerで使用可能な既存または新規の環境で [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) の基本機能と高度な機能を使用するように [!UICONTROL Dynamic Media] ソリューションを設定します。
+Cloud Manager で使用可能な既存の環境や新しい環境で [OpenAPI を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) の基本機能と高度な機能を使用するには、[!UICONTROL Dynamic Media] ソリューションを設定します。
 
 #### 開始する準備を整える {#prerequisites-to-configure-dynamic-media-solutions}
 
-[!UICONTROL Dynamic Media] ソリューションを設定するには、次のものが揃っていることを確認します。
+[!UICONTROL Dynamic Media] ソリューションを設定するには、次の要件を満たしていることを確認します。
 
-1. [Cloud Managerへのアクセス ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
-1. Ultimate ライセンス [!DNL Dynamic Media] 持っています。
+1. [Cloud Manager へのアクセス権](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
+1. [!DNL Dynamic Media] Ultimate ライセンスがある。
 
 #### アセット配信用の [!DNL Dynamic Media] ソリューションの設定 {#configure-dynamic-media-solutions-for-asset-delivery}
 
 次の手順を実行します。
 
-1. [ 新しいプログラムを作成するか ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program) 既存のプログラムに移動して **[!UICONTROL 編集]** をクリックします。 **[!UICONTROL 実稼動用に設定]** ページに、「ソリューションとアドオン **[!UICONTROL タブが表示さ]** ます。
+1. [新しいプログラムを作成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/create-program)するか、既存のプログラムに移動して「**[!UICONTROL 編集]**」をクリックします。**[!UICONTROL 実稼動環境用に設定]**&#x200B;ページに「**[!UICONTROL ソリューションとアドオン]**」タブが表示されます。
 
-1. **[!UICONTROL Assets]**、**[!UICONTROL Assets Prime]**、**[!UICONTROL Assets Ultimate]** または **[!UICONTROL サイト]** を選択して、**[!UICONTROL Dynamic Media]** ソリューションをプログラムに追加します。
+1. 「**[!UICONTROL Assets]**」、「**[!UICONTROL Assets Prime]**」、「**[!UICONTROL Assets Ultimate]**」または「**[!UICONTROL Sites]**」を選択して、**[!UICONTROL Dynamic Media]** ソリューションをプログラムに追加します。
 
-1. **[!UICONTROL Dynamic Media]** ソリューションを選択し、「**[!UICONTROL 続行]**」をクリックして **[!UICONTROL Dynamic Media]** ソリューションをプログラムに追加します。 このアクションは、プログラム内の既存の環境をすべて再起動し、[!DNL Dynamic Media] のソリューションを追加します。 また、プログラムの下に作成した新しい環境も自動的に [!DNL Dynamic Media] きます。
+1. **[!UICONTROL Dynamic Media]** ソリューションを選択し、「**[!UICONTROL 続行]**」をクリックして、**[!UICONTROL Dynamic Media]** ソリューションをプログラムに追加します。このアクションにより、プログラム内の既存の環境がすべて再起動され、[!DNL Dynamic Media] ソリューションが追加されます。また、プログラムで作成する新しい環境では、すべて自動的に [!DNL Dynamic Media] を取得します。
 
-   ![ 実稼動の設定 ](/help/assets/assets/set-up-for-prod.png){width="500" align="left"}
+   ![実稼動環境用に設定](/help/assets/assets/set-up-for-prod.png){width="500" align="left"}
 
-お使いの環境で [!DNL Dynamic Media] の機能を OpenAPI 機能と共に使用するには、[ アクティブ化  [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) を参照してください。
+お使いの環境で OpenAPI を備えた [!DNL Dynamic Media] の機能の使用を開始するには、[アクティベート [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi)を参照してください。
 
-### 会社の作成 [!DNL Dynamic Media] リスト {#create-and-list-dynamic-media-companies}
+### [!DNL Dynamic Media] 会社を作成してリスト化 {#create-and-list-dynamic-media-companies}
 
-AEM AEM環境内で設定 [!DNL Dynamic Media] 管理するために、クラウドサービス環境内で会社を作成してリストします。
+AEM Cloud Service 環境に [!DNL Dynamic Media] 会社を作成してリスト化し、AEM 環境内の設定を管理します。
 
 #### 開始する準備を整える {#prerequisites-to-create-and-list-dynamic-media-companies}
 
-既存の会社（アカウント）を表示するか、IMS 組織に新しい [!DNL Dynamic Media] 会社（アカウント）を追加するには、次が必要です。
+IMS 組織で既存の会社（アカウント）を表示するか、新しい [!DNL Dynamic Media] 会社（アカウント）を追加するには、次の要件を満たしていることを確認します。
 
-1. [Cloud Managerへのアクセス ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
+1. [Cloud Manager へのアクセス権](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
 
-1. Ultimate ライセンス [!DNL Dynamic Media] 持っています。
+1. [!DNL Dynamic Media] Ultimate ライセンスがある。
 
-#### IMS 組織 [!DNL Dynamic Media] 会社の作成とリスト {#create-and-list-dynamic-media-companies-in-your-ims-organisation}
+#### IMS 組織の [!DNL Dynamic Media] 会社の作成とリスト化 {#create-and-list-dynamic-media-companies-in-your-ims-organisation}
 
-[!DNL AEM] 環境内で設定できる新しい [!DNL Dynamic Media] 会社（アカウント）を作成およびリストに追加するには、次の手順を実行します。
+[!DNL AEM] 環境内で設定できる新しい [!DNL Dynamic Media] 会社（アカウント）を作成してリスト化するには、次の手順を実行します。
 
-1. [Cloud Manager ライセンスページ ](https://experience-stage.adobe.com/#/@ssahnichstage/cloud-manager/license) に移動します。
+1. [Cloud Manager ライセンスページ](https://experience-stage.adobe.com/#/@ssahnichstage/cloud-manager/license)に移動します。
 
-1. **[!UICONTROL 会社を追加]** をクリックすると、**[!UICONTROL Dynamic Media 会社を作成]** ダイアログボックスが表示されます。
+1. 「**[!UICONTROL 会社を追加]**」をクリックすると、**[!UICONTROL Dynamic Media 会社を作成]**&#x200B;ダイアログボックスが表示されます。
 
-1. 一意の [!DNL Dynamic Media] 社名を指定し、会社の地域を選択して、会社の管理者メール ID のリストをコンマで区切って追加します。
+1. 一意の [!DNL Dynamic Media] 会社名を指定し、会社の地域を選択して、会社の管理者のメール ID のリストをコンマで区切って追加します。
 
-   ![Dynamic Media の会社を作成 ](/help/assets/assets/create-dynamic-media-company.png){width="500" align="left"}
+   ![Dynamic Media 会社を作成](/help/assets/assets/create-dynamic-media-company.png){width="500" align="left"}
 
-1. 「**[!UICONTROL 作成]**」をクリックして、会社の作成を開始します。 このアクションにより、**[!UICONTROL [!DNL Dynamic Media]会社]** セクションに新しい行が追加され、会社の **[!UICONTROL ステータス]** として **[!UICONTROL 設定]** が表示されます。
+1. 「**[!UICONTROL 作成]**」をクリックして、会社の作成を開始します。このアクションにより、「**[!UICONTROL [!DNL Dynamic Media]会社]**」セクションに新しい行が追加され、会社の&#x200B;**[!UICONTROL ステータス]**&#x200B;に「**[!UICONTROL 設定中]**」と表示されます。
 
-   ![Dynamic Media 会社の作成を開始しました ](/help/assets/assets/dm-company-creation-initiated.png)
+   ![Dynamic Media 会社の作成の開始](/help/assets/assets/dm-company-creation-initiated.png)
 
-1. **オプション：** ![ 情報アイコン ](/help/assets/assets/info-icon-solid-black.svg) をクリックして、会社の詳細を表示します。 会社を作成すると、**[!UICONTROL ステータス]** が **[!UICONTROL 準備完了]** に更新されます。
+1. **オプション：**![情報アイコン](/help/assets/assets/info-icon-solid-black.svg) をクリックして、会社の詳細を表示します。会社を作成すると、**[!UICONTROL ステータス]**&#x200B;が&#x200B;**[!UICONTROL 準備完了]**&#x200B;に更新されます。
 
-   ![Dynamic Media 会社情報 ](/help/assets/assets/dm-company-information.png)
+   ![Dynamic Media 会社の情報](/help/assets/assets/dm-company-information.png)
 
-1. Dynamic Media の管理者は、使用を開始するために、[!DNL AEM] Cloud Service環境内の会社を [ 設定  [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#architecture-diagram-of-dynamic-media) するための手順が記載されたようこそメールをメールボックスで確認します。
+1. Dynamic Media 管理者は、[!DNL AEM] Cloud Service 環境で会社を[設定 [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#architecture-diagram-of-dynamic-media)する手順のリストを含むウェルカムメールをメールボックスで確認してから開始してください。
 
-   ![ お知らせメール ](/help/assets/assets/welcome-email.png)
+   ![ウェルカムメール](/help/assets/assets/welcome-email.png)
 
-#### 会社の作成を再試行 {#retry-company-creation}
+#### 会社の作成の再試行 {#retry-company-creation}
 
-会社 [!DNL Dynamic Media] 作成に失敗した場合は、失敗ステータスに基づいて次の手順を実行します。
+[!DNL Dynamic Media] 会社の作成に失敗した場合は、失敗ステータスに基づいて次の手順を実行します。
 
-1. **[!UICONTROL ステータス]** が保留中の場合は、問題をカスタマーサポートチームに提起して解決を求めます。
+1. **[!UICONTROL ステータス]**&#x200B;が保留中の場合、解決するにはカスタマーサポートチームに問題を報告してください。
 
-   ![ 保留状態 ](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
+   ![保留中ステータス](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
 
-1. **[!UICONTROL ステータス]** が失敗した場合は、失敗の理由に基づいて再試行します。
+1. **[!UICONTROL ステータス]**&#x200B;が失敗の場合は、失敗の理由に基づいて再試行します。
 
-   ![ 失敗ステータス ](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
+   ![失敗ステータス](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
 
-### オプション：配信層でのカスタムドメインの設定 {#configure-custom-domain-in-delivery-tier}
+### オプション：配信層でカスタムドメインを設定 {#configure-custom-domain-in-delivery-tier}
 
-AEM as a Cloud Serviceにはデフォルトドメインが付属していますが、必要に応じてカスタマイズできます。 Cloud Managerを使用して、配信層にカスタムドメインを添付します。
+AEM as a Cloud Service にはデフォルトのドメインが設定されていますが、必要に応じてカスタマイズできます。Cloud Manager を使用して、配信層にカスタムドメインを添付します。
 
 #### 開始する準備を整える {#prerequisites-to-configure-custom-domain-in-delivery-tier}
 
-設定プロセスを開始する前に、次の要件を満たしていることを確認してください。
+設定プロセスを開始する前に、次の要件を満たしていることを確認します。
 
-1. [Cloud Managerへのアクセス ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
-1. [ お使いの環境で既  [!DNL Dynamic Media with OpenAPI]  アクティブ化されています ](#activate-dynamic-media-with-openapi)。
-1. [!DNL Dynamic Media with OpenAPI] を準備完了状態で有効にしました。
-1. 配信層に使用するドメインの EV または OV タイプの証明書。 詳しくは、[SSL 証明書の概要 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) を参照してください。
+1. [Cloud Manager へのアクセス権](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
+1. [お使いの環境で  [!DNL Dynamic Media with OpenAPI]  が既にアクティベートされている](#activate-dynamic-media-with-openapi)。
+1. 準備完了状態で [!DNL Dynamic Media with OpenAPI] が有効になっている。
+1. 配信層に使用するドメインの EV または OV タイプの証明書。詳しくは、[SSL 証明書の概要](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates)を参照してください。
 
-#### Cloud Managerを使用した配信層でのカスタムドメインの設定 {#configure-custom-domain-in-delivery-tier-using-cloud-manager}
+#### Cloud Manager を使用した配信層でのカスタムドメインの設定 {#configure-custom-domain-in-delivery-tier-using-cloud-manager}
 
-Cloud Managerで次の手順を実行して、配信層にカスタムドメインを設定します。
+Cloud Manager で次の手順を実行して、配信層にカスタムドメインを設定します。
 
-1. [ 顧客管理 SSL 証明書の追加 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert)。
+1. [顧客が管理する SSL 証明書を追加](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert)します。
 
-1. [ カスタムドメイン名を追加します ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings)。
+1. [カスタムドメイン名を追加](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings)します。
 
-1. 環境の詳細ページに移動し [CDN 設定を追加 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cdn-configurations/add-cdn-config) します。 設定を追加する際に、「**[!UICONTROL CDN を設定]** ダイアログボックスの **[!UICONTROL 層]** フィールドで **[!UICONTROL 配信]** を選択します。
+1. 環境の詳細ページに移動して、[CDN 設定を追加](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cdn-configurations/add-cdn-config)します。設定を追加する際に、**[!UICONTROL CDN を設定]**&#x200B;ダイアログボックスの「**[!UICONTROL 層]**」フィールドで「**[!UICONTROL 配信]**」を選択します。
 
-   ![CDN の設定 ](/help/assets/assets/select-delivery-tier-in-configure-cdn-form.png)
+   ![CDN を設定](/help/assets/assets/select-delivery-tier-in-configure-cdn-form.png)
 
-   設定を追加すると、**[!UICONTROL CDN 設定]** の **[!UICONTROL ステータス]** が **[!UICONTROL 適用済み]** に更新されます。
+   設定を追加すると、**[!UICONTROL CDN 設定]**&#x200B;の&#x200B;**[!UICONTROL ステータス]**&#x200B;が「**[!UICONTROL 適用済み]**」に更新されます。
 
-   ![CDN デプロイメントステータスの設定 ](/help/assets/assets/cdn-configuration-deployment-status.png)
+   ![CDN デプロイメントステータスを設定](/help/assets/assets/cdn-configuration-deployment-status.png)
 
-1. 「その他のオプション」（![ その他のオプション ](/help/assets/assets/three-dots.svg)）をクリックし、「**[!UICONTROL 運用開始準備]**」を選択して **[!UICONTROL 運用開始準備]** ダイアログボックスを表示します。
+1. 「その他のオプション」（![その他のオプション](/help/assets/assets/three-dots.svg)）をクリックし、「**[!UICONTROL 実稼動対応]**」を選択して、**[!UICONTROL 実稼動対応]**&#x200B;ダイアログボックスを表示します。
 
-   ![ 運用開始準備オプション ](/help/assets/assets/go-live-readiness-option.png)
+   ![実稼動対応オプション](/help/assets/assets/go-live-readiness-option.png)
 
-1. **[!UICONTROL CNAME を設定]** 手順を実行して、DNS サービスプロバイダーの DNS レコードに [cdn.adobeaemcloud.com](http://cdn.adobeaemcloud.com/) （CNAME レコード）をマッピングします。 このマッピングにより、カスタムドメインで受信したリクエストがAdobeの CDN にリダイレクトされるようになります。
+1. **[!UICONTROL CNAME を設定]**&#x200B;手順を実行して、DNS サービスプロバイダーの DNS レコードに [cdn.adobeaemcloud.com](http://cdn.adobeaemcloud.com/)（CNAME レコード）をマッピングします。このマッピングにより、カスタムドメインで受信したリクエストがアドビの CDN にリダイレクトされるようになります。
 
-   ![ 運用開始準備ダイアログ ](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="left"}
+   ![実稼動対応ダイアログ](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="left"}
 
-1. **[!UICONTROL OK]** をクリックすると、**[!UICONTROL ステータス]** が **[!UICONTROL 検証済み]** に更新されます。 これで、カスタムドメインを配信 URL で使用する準備が整いました。
+1. 「**[!UICONTROL OK]**」をクリックすると、**[!UICONTROL ステータス]**&#x200B;が&#x200B;**[!UICONTROL 検証済み]**&#x200B;に更新されます。これで、カスタムドメインを配信 URL で使用する準備が整いました。
 
 
-   ![CDN の設定 ](/help/assets/assets/cdn-configurations-varified.png)
+   ![CDN を設定](/help/assets/assets/cdn-configurations-varified.png)
 
 
 
@@ -270,12 +270,12 @@ See [Search Assets API](https://experienceleague.adobe.com/en/docs/experience-ma
 TBD: Wiki in progress..
 -->
 
-## [!DNL Dynamic Media] Primeを有効にする {#enable-dynamic-media-prime}
+## [!DNL Dynamic Media] Prime を有効にする {#enable-dynamic-media-prime}
 
-クラウドサービス環境で次の手順を実行し、[!DNL Dynamic Media] Primeを有効にします。
+[!DNL Dynamic Media] Prime を有効にするには、Cloud Service 環境で次の手順を実行します。
 
-1. [OpenAPI を使用した Dynamic Media のアクティベーション ](#activate-dynamic-media-with-openapi)
-1. [ オプション：配信層でのカスタムドメインの設定 ](#configure-custom-domain-in-delivery-tier)
+1. [OpenAPI を備えた Dynamic Media をアクティベート](#activate-dynamic-media-with-openapi)
+1. [オプション：配信層でカスタムドメインを設定](#configure-custom-domain-in-delivery-tier)
 
 <!--
 1. [Onboard API keys using the AEM Dynamic Media API card](#onboarding-api-keys)

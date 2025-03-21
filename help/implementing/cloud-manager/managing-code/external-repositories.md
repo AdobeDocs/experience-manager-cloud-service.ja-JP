@@ -1,5 +1,5 @@
 ---
-title: Cloud Managerでの外部リポジトリーの追加 – 限定ベータ版
+title: Cloud Manager での外部リポジトリの追加 - ベータ版限定
 description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Managerは、GitHub Enterprise Server、GitLab、Bitbucket リポジトリとの統合をサポートしています。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
@@ -7,11 +7,11 @@ exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 source-git-commit: bfa059ed4e3f04ae6ee1e07910edc62635b03e5a
 workflow-type: tm+mt
 source-wordcount: '1597'
-ht-degree: 44%
+ht-degree: 92%
 
 ---
 
-# Cloud Managerでの外部リポジトリーの追加 – 限定ベータ版 {#external-repositories}
+# Cloud Manager での外部リポジトリの追加 - ベータ版限定 {#external-repositories}
 
 Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Managerは、GitHub Enterprise Server、GitLab、Bitbucket リポジトリとの統合をサポートしています。
 
@@ -35,7 +35,7 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
 
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、外部リポジトリをリンクするプログラムを選択します。
 
-1. サイドメニューの **サービス** で、![ フォルダーの概要アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg)**リポジトリ** をクリックします。
+1. サイドメニューの&#x200B;**サービス**&#x200B;で、![フォルダーアウトラインアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **リポジトリ**&#x200B;を選択します。
 
    ![リポジトリページ](/help/implementing/cloud-manager/managing-code/assets/repositories-tab.png)
 
@@ -51,7 +51,7 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
    | --- | --- |
    | **リポジトリ名** | 必須。新しいリポジトリのわかりやすい名前。 |
    | **リポジトリ URL** | 必須。リポジトリの URL。<br><br>GitHub でホストされているリポジトリを使用している場合は、パスの末尾を `.git` にする必要があります。<br>例：*`https://github.com/org-name/repo-name.git`*（URL パスは説明用です）。<br><br>外部リポジトリを使用している場合は、次の URL パス形式を使用する必要があります。<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> または <br>`https://self-hosted-domain/org-name/repo-name.git`<br>。Git ベンダーと一致させる必要があります。 |
-   | **リポジトリタイプを選択** | 必須。使用するリポジトリタイプを選択します。<ul><li>**GitHub** （GitHub Enterprise Server および GitHub のセルフホストバージョン）</li><li>**GitLab** （`gitlab.com` と GitLab のセルフホストバージョンの両方） </li><li>**Bitbucket** （`bitbucket.org` と Bitbucket サーバーの両方、および Bitbucket の自己ホストバージョン）</li></ul>上記のリポジトリ URL パスに GitLab や Bitbucket などの Git ベンダー名が含まれている場合、リポジトリタイプは既に事前に選択されています。 |
+   | **リポジトリタイプを選択** | 必須。使用するリポジトリタイプを選択します。<ul><li>**GitHub**（GitHub Enterprise Server と自己ホスト型バージョンの GitHub）</li><li>**GitLab**（`gitlab.com` と自己ホスト型バージョンの GitLab の両方） </li><li>**Bitbucket**（`bitbucket.org` と Bitbucket Server の両方および自己ホスト型バージョンの Bitbucket）</li></ul>上記のリポジトリ URL パスに GitLab や Bitbucket などの Git ベンダー名が含まれている場合、リポジトリタイプは既に事前に選択されています。 |
    | **説明** | オプション。リポジトリの詳細な説明です。 |
 
 1. 「**保存**」を選択して、リポジトリを追加します。
@@ -59,7 +59,7 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
 1. **プライベートリポジトリの所有権の検証**&#x200B;ダイアログボックスで、外部リポジトリの所有権を検証し、アクセスできるようにするアクセストークンを指定します。
 
    ![リポジトリの既存のアクセストークンの選択](/help/implementing/cloud-manager/managing-code/assets/repositories-exisiting-access-token.png)
-   *Bitbucket リポジトリの既存のアクセストークンの選択。*
+   *BitBucket リポジトリの既存のアクセストークンを選択します。*
 
    | トークンタイプ | 説明 |
    | --- | --- |
@@ -97,106 +97,106 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
 >
 >Cloud Manager でのリポジトリ管理について詳しくは、[Cloud Manager リポジトリ](/help/implementing/cloud-manager/managing-code/managing-repositories.md)を参照してください。
 
-## 外部リポジトリの Webhook の設定 {#configure-webhook}
+## 外部リポジトリの webhook の設定 {#configure-webhook}
 
-Cloud Managerでは、追加した外部 Git リポジトリの Webhook を設定できます。 [ 外部リポジトリの追加 ](#add-ext-repo) を参照してください。 これらの Webhook により、Cloud Managerは、Git ベンダーソリューション内の様々なアクションに関連するイベントを受け取ることができます。
+Cloud Manager では、追加した外部 Git リポジトリの webhook を設定できます。詳しくは、[外部リポジトリの追加](#add-ext-repo)を参照してください。これらの webhook により、Cloud Manager は Git ベンダーソリューション内の様々なアクションに関連するイベントを受信できます。
 
-例えば、Webhook を使用すると、Cloud Managerは、次のようなイベントに基づいてアクションをトリガー設定できます。
+例えば、webhook を使用すると、Cloud Manager は次のようなイベントに基づいてアクションをトリガーできます。
 
-* プルリクエスト（PR）の作成 – PR 検証機能を開始します。
-* プッシュイベント – 「Git コミット時」トリガーがオン（有効）になるとパイプラインを開始します。
-* 今後のコメントベースのアクション - PR から迅速な開発環境（RDE）への直接デプロイメントなどのワークフローを可能にします。
+* プルリクエスト（PR）の作成 - PR 検証機能を開始します。
+* プッシュイベント -「Git コミット時」トリガーがオン（有効）になると、パイプラインを開始します。
+* 今後のコメントベースのアクション - PR から高速開発環境（RDE）への直接デプロイメントなどのワークフローを可能にします。
 
-Cloud Managerは GitHub アプリを介して直接統合されるので、`GitHub.com` でホストされるリポジトリには Webhook 設定は必要ありません。
-アクセストークンを使用してオンボードされるその他すべての外部リポジトリ（GitHub Enterprise Server、GitLab、Bitbucket など）では、Webhook 設定を使用できるので、手動で設定する必要があります。
+Cloud Manager は GitHub アプリを通じて直接統合されるので、`GitHub.com` でホストされているリポジトリでは webhook 設定は必要ありません。
+GitHub Enterprise Server、GitLab、Bitbucket など、アクセストークンを使用してオンボードされる他のすべての外部リポジトリでは、webhook 設定が使用可能で、手動で設定する必要があります。
 
-**外部リポジトリの Webhook を設定するには：**
+**外部リポジトリの webhook を設定するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、外部 Git リポジトリの Webhook を設定するプログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、外部 Git リポジトリの webhook を設定するプログラムを選択します。
 
 1. ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左サイドメニューを表示します。
 
-1. 左側のメニューの「**プログラム**」見出しの下の「![ フォルダーアウトラインアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg)**リポジトリ**」をクリックします。
+1. 左側のサイドメニューの&#x200B;**プログラム**&#x200B;見出しで、![フォルダーアウトラインアイコ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **リポジトリ**&#x200B;をクリックします。
 
-1. **リポジトリ** ページで、「**タイプ**」列を使用して選択をガイドし、必要なリポジトリを見つけて、その横にある ![ 省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+1. **リポジトリ**&#x200B;ページで、**タイプ**&#x200B;列を使用して選択し、必要なリポジトリを見つけて、その横にある ![省略記号 - その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
-   ![ 選択したリポジトリーのドロップダウンメニューの「設定 Webhook」オプション ](/help/implementing/cloud-manager/managing-code/assets/repository-config-webhook.png)
+   ![ 選択したリポジトリのドロップダウンメニューの「Webhook を設定」オプション](/help/implementing/cloud-manager/managing-code/assets/repository-config-webhook.png)
 
-1. ドロップダウンメニューから、「**Config Webhook**」をクリックします。
+1. ドロップダウンメニューから、「**Webhook を設定**」をクリックします。
 
-   ![Webhook を設定ダイアログボックス ](/help/implementing/cloud-manager/managing-code/assets/config-webhook.png)
+   ![Webhook を設定ダイアログボックス](/help/implementing/cloud-manager/managing-code/assets/config-webhook.png)
 
-1. **Config Webhook** ダイアログボックスで、次の操作を行います。
+1. **Webhook を設定**&#x200B;ダイアログボックスで、次の操作を行います。
 
-   1. 「**Webhook URL**」フィールドの横にある「![ コピーアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)」をクリックします。
-URL をプレーンテキストファイルに貼り付けます。 コピーした URL は、Git ベンダーの Webhook 設定に必要です。
-   1. 「**Webhook 秘密鍵** トークン/キー」フィールドの横にある「**生成**」をクリックし、![ コピーアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) をクリックします。
-秘密鍵をプレーンテキストファイルに貼り付けます。 コピーした秘密鍵は、Git ベンダーの Webhook 設定に必要です。
+   1. 「**Webhook URL**」フィールドの横にある ![コピーアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) をクリックします。
+URL をプレーンテキストファイルにペーストします。コピーした URL は、Git ベンダーの webhook 設定に必要です。
+   1. 「**Webhook 秘密鍵**&#x200B;トークン／キー」フィールドの横にある「**生成**」をクリックし、![コピーアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) をクリックします。
+秘密鍵をプレーンテキストファイルにペーストします。コピーした秘密鍵は、Git ベンダーの webhook 設定に必要です。
 1. 「**閉じる**」をクリックします。
 1. Git ベンダーソリューション（GitHub Enterprise、GitLab、Bitbucket）に移動します。
 
    Webhook 設定と各ベンダーに必要なイベントのすべての詳細は、[ 外部リポジトリの追加 ](#add-ext-repo) を参照してください。 手順 8 の下で、表を参照してください。
 
-1. ソリューションの **Webhook** 設定セクションを見つけます。
-1. 前の手順でコピーした Webhook URL を「URL」テキストフィールドに貼り付けます。
+1. ソリューションの **webhook** 設定セクションを見つけます。
+1. 前の手順でコピーした webhook URL を「URL」テキストフィールドにペーストします。
    1. Webhook URL の `api_key` クエリパラメーターを独自の実際の API キーに置き換えます。
 
-      API キーを生成するには、Adobe Developer Consoleで統合プロジェクトを作成する必要があります。 詳しくは [API 統合プロジェクトの作成 ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) を参照してください。
+      API キーを生成するには、Adobe Developer Console で統合プロジェクトを作成する必要があります。詳しくは、[API 統合プロジェクトの作成](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)を参照してください。
 
-1. 前にコピーした Webhook 秘密鍵を **秘密鍵** （または **秘密鍵**、または **秘密鍵トークン**）テキストフィールドに貼り付けます。
-1. Webhook を設定して、Cloud Managerが想定する適切なイベントを送信します。
+1. 前の手順でコピーした webhook 秘密鍵を「**秘密鍵**」（または「**秘密鍵**」、あるいは「**秘密鍵トークン**」）テキストフィールドにペーストします。
+1. Webhook を設定して、Cloud Manager が想定する適切なイベントを送信します。
 
 
 ### Webhook を使用したプルリクエストの検証
 
-Webhook が正しく設定されると、Cloud Managerは自動的に、リポジトリに対するパイプライン実行または PR 検証チェックをトリガーします。
+Webhook を正しく設定すると、Cloud Manager ではリポジトリに対するパイプライン実行または PR 検証チェックを自動的にトリガーします。
 
 次の動作が適用されます。
 
-* **GitHub エンタープライズサーバー**
+* **GitHub Enterprise Server**
 
-  チェックを作成すると、次のスクリーンショットのように表示されます。 `GitHub.com` との主な違いは、`GitHub.com` がチェック実行を使用するのに対して、GitHub Enterprise Server （個人用アクセストークンを使用）はコミットステータスを生成することです。
+  チェックを作成すると、次のスクリーンショットのように表示されます。`GitHub.com` との主な違いは、`GitHub.com` はチェック実行を使用するのに対して、GitHub Enterprise Server（個人用アクセストークンを使用）はコミットステータスを生成することです。
 
-  ![GitHub Enterprise Server で PR 検証プロセスを示すコミットステータス ](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
+  ![GitHub Enterprise Server で PR 検証プロセスを示すコミットステータス](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 * **Bitbucket**
 
-  コード品質検証の実行中：
+  コード品質検証が実行中の場合：
 
-  ![ コード品質検証の実行中のステータス ](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket1.png)
+  ![コード品質検証が実行中のステータス](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket1.png)
 
-  PR 検証の進捗の追跡にコミットステータスを使用します。 次の場合、スクリーンショットは、お客様の問題が原因でコード品質の検証に失敗した場合の動作を示しています。 詳細なエラー情報を含んだコメントが追加され、コミットチェックが作成されます。このチェックでは、失敗が示されます（右側に表示）。
+  PR 検証の進行状況のトラッキングにコミットステータスを使用します。次の場合、スクリーンショットは、コード品質検証がお客様の問題により失敗した場合の動作を示しています。詳細なエラー情報を含むコメントが追加され、失敗を示すコミットチェックが作成されます（右側に表示）。
 
-  ![Bitbucket のプルリクエスト検証ステータス ](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket2.png)
+  ![Bitbucket のプルリクエスト検証ステータス](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket2.png)
 
 * **GitLab**
 
-  GitLab のやり取りは、コメントにのみ依存します。 検証が開始されると、コメントが追加されます。 検証が完了（成功または失敗）すると、最初のコメントが削除され、検証結果やエラーの詳細を含む新しいコメントに置き換えられます。
+  GitLab のインタラクションは、コメントにのみ依存します。検証を開始すると、コメントが追加されます。検証が完了すると（成功または失敗に関係なく）、最初のコメントは削除され、検証結果やエラーの詳細を含む新しいコメントに置き換えられます。
 
-  コード品質検証の実行中：
+  コード品質検証が実行中の場合：
 
-  ![ コード品質検証が実行中の場合 ](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab1.png)
+  ![コード品質検証が実行中の場合](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab1.png)
 
-  コールド品質の検証が終了した場合：
+  コード品質検証が終了した場合：
 
-  ![ コールド品質の検証が完了したとき ](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab2.png)
+  ![コード品質検証が終了した場合](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab2.png)
 
-  コード品質検証が次のエラーで失敗した場合：
+  コード品質検証がエラーで失敗した場合：
 
-  ![ エラーでコード品質検証が失敗した場合 ](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab3.png)
+  ![コード品質検証がエラーで失敗した場合](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab3.png)
 
-  お客様の問題が原因でコード品質の検証に失敗した場合：
+  コード品質検証が顧客の問題により失敗した場合：
 
-  ![ お客様の問題が原因でコード品質の検証に失敗した場合 ](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab4.png)
+  ![コード品質検証が顧客の問題により失敗した場合](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab4.png)
 
 
-## Webhook の問題のトラブルシューティング
+## Web フックの問題のトラブルシューティング
 
-* Webhook URL に有効な API キーが含まれていることを確認してください。
-* Git ベンダー設定で Webhook イベントが正しく設定されていることを確認します。
-* PR 検証またはパイプライントリガーが機能しない場合は、Cloud Managerと Git ベンダーの両方で Webhook の秘密鍵が最新であることを確認してください。
+* Web フック URL に有効な API キーが含まれていることを確認します。
+* Git ベンダー設定で web フックイベントが正しく設定されていることを確認します。
+* PR 検証またはパイプライントリガーが機能しない場合は、Cloud Manager と Git ベンダーの両方で web フックの秘密鍵が最新であることを確認します。
 
 
 

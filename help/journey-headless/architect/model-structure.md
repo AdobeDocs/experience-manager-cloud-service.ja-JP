@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
 workflow-type: tm+mt
 source-wordcount: '636'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -147,7 +147,7 @@ Confirm with **Create** and you can then **Open** your model to start defining t
 
       * [コンテンツフラグメントモデルを非公開にする](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#unpublishing-a-content-fragment-model)
 
-      * [ロックされたコンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#locked-content-fragment-models)
+      * [コンテンツフラグメントモデルのロック](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#locked-content-fragment-models)
 
 * はじめる前に
 
