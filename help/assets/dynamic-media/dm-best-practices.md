@@ -9,10 +9,10 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a495178529a0a4229095ea3a11f52b376c81715b
 workflow-type: tm+mt
-source-wordcount: '4117'
-ht-degree: 99%
+source-wordcount: '4095'
+ht-degree: 98%
 
 ---
 
@@ -354,8 +354,8 @@ Dynamic Media を通じて GIF をアップロードおよび配信できます�
 
    * **直接リンク：**
 指定された URL を使用して、ビデオに直接リンクします。マーケティングサイトで適切にハイパーリンクを設定します。
-   * **ビデオの埋め込み：**
-提供された埋め込みコードをコピーして、ビデオを表示する web ページの HTML に貼り付けます。これにより、ビデオをサイトで直接再生できます。
+   * **ビデオを埋め込む：**
+提供された埋め込みコードをコピーして、Web ページのHTMLでビデオを表示する場所に貼り付けます。 これにより、ビデオをサイトで直接再生できます。
 
 詳しくは、「[ビデオ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video)」に移動します。
 
@@ -399,7 +399,7 @@ HLS（HTTP ライブストリーミング）や DASH（`Dynamic Adaptive Streami
    * AEM 内でビデオアセットを整理、参照、検索します。
    * ビデオアセットをプレビューして公開します。
    * ソースビデオとそのエンコードされたレンディションを、関連するサムネールと共に表示します。
-   * タイトル、説明、タグなどのビデオプロパティを編集します。2
+   * タイトル、説明、タグ 2 など、ビデオのプロパティを編集します。
 
 * **ローカライゼーション：**
    * ターゲットとなる地域／言語ごとに、オーディオトラックとサブタイトルを作成します。
@@ -410,7 +410,7 @@ HLS（HTTP ライブストリーミング）や DASH（`Dynamic Adaptive Streami
    * Web コンテンツ管理（WCM）システムとして AEM を使用している場合は、web ページにビデオを直接追加できます。
    * サードパーティの WCM システムを使用している場合は、URL または埋め込みコードを使用して、web ページにビデオをリンクまたは埋め込むことができます。
 
-詳しくは、[Dynamic Media におけるビデオの複数のキャプションとオーディオトラックのサポートについて](/help/assets/dynamic-media/video.md#about-msma)を参照するか、[ビデオに複数のキャプションおよびオーディオトラックを追加](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play)（1 分 41 秒）をご覧ください。
+詳しくは、[Dynamic Media でのビデオの複数キャプションおよびオーディオトラックのサポートについて ](/help/assets/dynamic-media/video.md#about-msma) を参照してください。
 
 
 ## 顧客へのアセットの送信

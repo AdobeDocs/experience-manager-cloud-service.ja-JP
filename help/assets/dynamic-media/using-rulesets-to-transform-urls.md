@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Rulesets,Troubleshooting,Upload,Best Practices
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a495178529a0a4229095ea3a11f52b376c81715b
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 96%
+source-wordcount: '740'
+ht-degree: 92%
 
 ---
 
@@ -67,31 +67,29 @@ Dynamic Media でルールセットをデプロイして、URL を変換でき�
 
 * `$`、`{`、`}` などの特定の文字のエンコードと、ImageServer への特定の文字のデコードのリクエスト。例えば、Facebook は特殊文字を含む URL では正しく機能しません。
 
-  [URL からの特殊文字の削除](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html)を参照してください。
-
 Dynamic Media のコンテキストで、XML ベースのシステムを使用してアセット情報を管理する web サイトは、XML ファイルを Dynamic Media にアップロードできます。これらのファイルのいずれかを、Dynamic Media のアセットを処理するための前処理ルールセットファイルとして指定できます。このファイルは、Dynamic Media と統合するシステムの会社ロジックを満たすよう、標準 URL プロトコル形式を再構成します。XML ファイルをルールセット定義ファイルのパスとして指定します。
 
 >[!CAUTION]
 >
 >ルールセットを使用する場合は、Dynamic Media のコンテンツが Web サイトに表示されなくなる可能性があるので、注意してください。
 
-用意されているサンプルルールセットを使用して、独自のルールセットを作成できます。[ルールセットのリファレンス](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html?lang=ja)を参照してください。
+用意されているサンプルルールセットを使用して、独自のルールセットを作成できます。[ルールセットのリファレンス](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference)を参照してください。
 
-すべてのルールセットの作成と同様に、xmlvalid などの XML バリデータープログラムを使用して、XML ファイルが有効であることを確認してからアップロードしてください。[ルールセットのトラブルシューティング](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html)も参照してください。
+すべてのルールセットの作成と同様に、xmlvalid などの XML バリデータープログラムを使用して XML ファイルをアップロードする前に、XML ファイルが有効であることを確認します。
 
 また、最初は実稼動環境に影響を与えないステージング環境でルールセットをテストしてください。通常、実稼動環境とステージング環境では異なるログイン情報が必要となります。
 
-ログイン情報については、[Adobe Dynamic Media Classic へのログイン](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja)を参照してください。
+ログイン情報については、[Adobe Dynamic Media Classic へのログイン](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out)を参照してください。
 
 <!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
 * **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
-[ルールセットでの &#39;is&#39; イメージに代わる &#39;asset&#39; の使用](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html)も参照してください。
+
 
 ## XML ルールセットのデプロイ {#deploy-xml-rule-sets}
 
-1. [Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started)を開き、アカウントにログインします。
+1. [Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out)を開き、アカウントにログインします。
 
    資格情報とログオンの詳細は、プロビジョニング時にアドビから付与されたものです。この情報をお持ちでない場合は、カスタマーサポートにお問い合わせください。
 

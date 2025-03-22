@@ -6,10 +6,10 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a495178529a0a4229095ea3a11f52b376c81715b
 workflow-type: tm+mt
-source-wordcount: '3289'
-ht-degree: 99%
+source-wordcount: '3267'
+ht-degree: 98%
 
 ---
 
@@ -169,7 +169,7 @@ DPR とネットワーク帯域幅の値は、バンドルされた CDN のク�
 * Adobe Sensei テクノロジーを使用して、イメージリクエストで指定された品質（`qlt`）に従って変換します。
 * TTL（Time To Live）独立。以前は、スマートイメージングを機能させるには、最小 TTL 値 12 時間が必要でした。
 * 以前は、元の画像と派生画像の両方がキャッシュされていて、キャッシュを無効にする 2 つの手順がありました。最新のスマートイメージングでは、派生画像のみがキャッシュされ、1 ステップでキャッシュを無効化できます。
-* ルールセットでカスタムヘッダーを使用しているユーザーは、以前のバージョンのスマートイメージングとは異なってこれらのヘッダーがブロックされないので、最新のスマートイメージングのメリットが得られます。例えば、[画像応答へのカスタムヘッダー値の追加 | Dynamic Media Classic](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html) で推奨される「Timing Allow Origin」、「X-Robot」などです。
+* ルールセットでカスタムヘッダーを使用しているユーザーは、以前のバージョンのスマートイメージングとは異なってこれらのヘッダーがブロックされないので、最新のスマートイメージングのメリットが得られます。
 
 ## スマートイメージングの仕組み{#how-smart-imaging-works}
 
