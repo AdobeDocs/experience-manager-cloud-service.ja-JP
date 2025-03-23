@@ -1,7 +1,7 @@
 ---
 title: App Builder ストレージライブラリ
 description: App Builder アプリケーションの状態ストレージライブラリおよびファイルストレージライブラリについて説明します。
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
@@ -9,7 +9,7 @@ level: Beginner
 kt: 9457,9479,9480
 thumbnail: 339238.jpg
 exl-id: 3ddd452c-6291-4560-aabc-dcd6e628f7ab
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 100%

@@ -2,7 +2,7 @@
 title: AEM-CIF コアコンポーネントと Adobe Experience Platform の統合
 description: CIF - Experience Platform コネクタを使用して、AEM でレンダリングされた製品ページから Experience Platform にストアフロントイベントデータを送信する方法について説明します。
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 activity: setup
 feature: Commerce Integration Framework
 topic: Commerce
@@ -11,8 +11,8 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+workflow-type: tm+mt
 source-wordcount: '1868'
 ht-degree: 100%
 

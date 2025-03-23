@@ -6,10 +6,10 @@ index: y
 type: Documentation
 solution: Experience Manager, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager, Experience Manager Screens
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 cloud: Experience Cloud
 recommendations: noDisplay
-source-git-commit: d0e79edd83faafc1233b812019c877ec360e50c8
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 51%

@@ -3,7 +3,7 @@ title: Adobe Experience Manager CIF コアコンポーネントのスタイル�
 description: Adobe Experience Manager（AEM）CIF コアコンポーネントのスタイル設定方法を説明します。このチュートリアルでは、クライアントサイドライブラリ（clientlib）を使用して、AEM Commerce 実装の CSS と JavaScript をデプロイおよび管理する方法について説明します。また、このチュートリアルでは、ui.frontend モジュールと webpack プロジェクトがエンドツーエンドのビルドプロセスに統合される方法についても説明します。
 sub-product: Commerce
 topics: Development
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -12,8 +12,8 @@ kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+workflow-type: tm+mt
 source-wordcount: '2342'
 ht-degree: 100%
 

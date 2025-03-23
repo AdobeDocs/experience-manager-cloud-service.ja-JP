@@ -1,7 +1,7 @@
 ---
 title: App Builder の概要
 description: ビジネス価値からアーキテクチャーに至るまで、App Builder の基本を説明します。
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
@@ -9,7 +9,7 @@ level: Beginner
 kt: 9452, 9464, 9465, 9466
 thumbnail: 339158.jpg
 exl-id: c6fc96a0-ff95-4fb9-8674-71e60d23ef5c
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 100%

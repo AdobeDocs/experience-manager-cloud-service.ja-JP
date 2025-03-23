@@ -2,7 +2,7 @@
 title: 複数のコマースシステムでのAEMの設定
 description: 複数のコマースシステムを使用した AEM の設定方法を学びます。 これによりプロジェクトは、複数のブランド、複数地域の店舗向けに、複数のアドビまたはサードパーティのコマースバックエンドに接続する単一のエクスペリエンス管理レイヤーをサポートすることができます。
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: technical-video
 activity: setup
 feature: Commerce Integration Framework
@@ -12,7 +12,7 @@ level: Beginner
 kt: 10529
 thumbnail: 346811.jpeg
 exl-id: 5328fe30-79ca-4496-8ebd-f1ef51ccfccf
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 100%

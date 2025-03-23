@@ -2,7 +2,7 @@
 title: 高度な URL 設定
 description: 製品ページとカテゴリページの URL をカスタマイズする方法について説明します。カスタマイズすることで、実装を URL を検索エンジン向けに最適化し、検出を促進できます。
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator
@@ -11,7 +11,7 @@ kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 100%

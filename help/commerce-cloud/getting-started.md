@@ -3,13 +3,13 @@ title: AEM Commerce as a Cloud Service の基本を学ぶ
 description: Cloud Manager、CI/CD パイプラインおよび Venia 参照用ストアフロントを使用して、Adobe Experience Manager(AEM) コマースプロジェクトをデプロイする方法について説明します。
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '1066'
 ht-degree: 100%
