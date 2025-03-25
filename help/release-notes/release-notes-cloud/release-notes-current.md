@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: a2f26e7befe4aa23350cfdca6a2c342500a909db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1493'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 **コンテンツフラグメントエディターのロールアウト**
 
-引き続き、AEM as a Cloud Serviceで新しい Spectrum UI ベースのコンテンツフラグメントエディターを有効にします。 2024 年 11 月にすべてのCloud Service Developer 環境のデフォルトとなった後、2025 年 4 月 1 日にすべてのステージ環境で、2025 年 5 月 1 日にすべての実稼動環境でデフォルトとして設定されます。 どの場合でも、AEM タッチ UI で、従来のコンテンツフラグメントエディターに戻すオプションが引き続き用意されています。
+AEM as a Cloud Service では、新しい Spectrum UI ベースのコンテンツフラグメントエディターが引き続き有効になります。2024年11月にすべての Cloud Service 開発環境のデフォルトになった後、2025年4月1日（PT）にはすべてのステージング環境のデフォルト、2025年5月1日（PT）にはすべての実稼動環境のデフォルトとして設定される予定です。すべてのケースで、ユーザーは AEM タッチ UI で従来のコンテンツフラグメントエディターに戻すオプションを引き続き利用できます。
 
 **Translation HTTP API**
 

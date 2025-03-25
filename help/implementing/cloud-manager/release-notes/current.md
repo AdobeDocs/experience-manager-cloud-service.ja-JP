@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 663234640f16e6aa653251399751abf5daa17f82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '329'
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
@@ -30,21 +30,21 @@ AEM as a Cloud Service の Cloud Manager 2025.3.0 のリリース日は 2025年3
 
 * **複数のパイプラインの実行**
 
-  パイプライン ページに複数のパイプラインを同時に実行する機能が導入されました。 ユーザーは、1 つ以上 10 以下のパイプラインを選択する必要があります。 パイプライン ページの右上隅付近にある「**選択した実行（x）**」をクリックします。 モーダルダイアログボックスが表示され、開始できないパイプラインが一覧表示されます。 **実行** をクリックして、有効なすべてのパイプラインを開始します。
+  パイプラインページに、複数のパイプラインを同時に実行する機能が導入されました。ユーザーは 1 つの以上のパイプラインを選択する必要がありますが、最大 10 個まで選択できます。パイプラインページの右上隅付近にある「**選択されている実行（x）**」をクリックします。開始できないパイプラインを一覧表示するモーダルダイアログボックスが表示されます。「**実行**」をクリックして、すべての有効なパイプラインを開始します。
 
-  ![ 選択したパイプラインを実行ダイアログボックス ](/help/implementing/cloud-manager/release-notes/assets/run-selected-pipelines.png)
+  ![選択されているパイプラインを実行ダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/run-selected-pipelines.png)
 
-  [ 複数のパイプラインの実行 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#run-multiple-pipelines) も参照してください。
+  また、[複数のパイプラインの実行](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#run-multiple-pipelines)も参照してください。
 
-* **Node.js バージョンのサポートが拡張されました**
+* **Node.js バージョンに対して拡張されたサポート**
 
-  フロントエンドビルド環境で、次の `Node.js` バージョンがサポートされるようになりました。
+  フロントエンドビルド環境では、次の `Node.js` バージョンがサポートされるようになりました。
 
    * 23
    * 22
    * 20
 
-  [ フロントエンドパイプラインを使用したサイトの開発 ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md#node-versions) も参照してください。<!-- CMGR-65307 -->
+  また、[フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md#node-versions)も参照してください。<!-- CMGR-65307 -->
 
 <!--
 ## Early adoption program {#early-adoption}
@@ -54,13 +54,13 @@ Be a part of Cloud Manager's early adoption program and have a chance to test up
 
 ## バグ修正
 
-* Cloud Managerの「高度なネットワーク設定」アップデートの **（UI）修正**
+* **（UI）Cloud Manager の「高度なネットワーク設定」のアップデートの修正**
 
-  「利用可能な更新 **通知が存在する場合に** 高度なネットワーク設定」の更新が行えなかったまれな問題が解決されました。 以前は、更新中の競合を防ぐために、Cloud Managerによって、高度なネットワーク設定などの設定変更がロックされていました。 保留中の更新を手動でトリガーして、必要な変更を制限なく適用できるようになりました。<!-- CMGR-65913 and CMGR-65788 -->
+  「アップデートがあります」という通知が表示されている場合、まれに&#x200B;**高度なネットワーク設定**&#x200B;のアップデートが妨げられるという問題が解決されました。以前は、Cloud Manager では、アップデート中の競合を防ぐために、高度なネットワーク設定を含む設定の変更をロックしていました。お客様は保留中のアップデートを手動でトリガーして、制限なく必要な変更を適用できるようになりました。<!-- CMGR-65913 and CMGR-65788 -->
 
-* **（UI） IP許可リストの更新が「更新中」ステータスでスタックする問題を修正**
+* **（UI）IP 許可リストの更新が「更新中」状態で停止する問題の修正**
 
-  ある環境でアクティブなドメイン設定が重複していたことが原因で、Cloud Managerの IP 許可リストの更新が「更新中」ステータスのままになる、まれな問題が解決されました。 以前は、IP許可リストを更新する際に無限の処理遅延が発生し、必要なネットワークアクセスの調整が妨げられていました。 この修正により、IP 許可リストの更新が停止することなく正常に完了できるようになりました。<!-- CMGR-65786 -->
+  環境のアクティブなドメイン設定が重複していることが原因で、まれに Cloud Manager の IP 許可リストの更新が「更新中」状態で停止したままになる問題が解決されました。以前は、お客様は IP 許可リストを更新する際に無期限の処理遅延が発生し、必要なネットワークアクセス調整ができなくなりました。この修正により、IP 許可リストの更新が停止することなく正常に完了できるようになりました。<!-- CMGR-65786 -->
 
 
 
