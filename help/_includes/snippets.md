@@ -1,5 +1,5 @@
 ---
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
+source-git-commit: e4ceba6510992f82b97effca27a98f442fff8f5c
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 100%
@@ -248,7 +248,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->SPA エディターは、新しいプロジェクトでは[非推奨（廃止予定）になりました](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#spa-editor)。アドビでは既存のプロジェクトに対して引き続きサポートしますが、新しいプロジェクトには使用しないでください。AEM でヘッドレスコンテンツの管理に推奨されるエディターは次のようになりました。
+>SPA エディターは、新しいプロジェクトでは[非推奨（廃止予定）になりました](/help/implementing/developing/hybrid/spa-editor-deprecation.md)。アドビでは既存のプロジェクトに対して引き続きサポートしますが、新しいプロジェクトには使用しないでください。AEM でヘッドレスコンテンツの管理に推奨されるエディターは次のようになりました。
 >
 >* ヘッドレスコンテンツを視覚的に編集する[ユニバーサルエディター](/help/edge/wysiwyg-authoring/authoring.md)。
 >* ヘッドレスコンテンツをフォームベースで編集する[コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md)。

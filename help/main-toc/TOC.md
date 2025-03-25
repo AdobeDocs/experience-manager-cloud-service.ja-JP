@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d693097226839c8d496c6a8b3466953b32eacac5
+source-git-commit: 6e6e171bf0df7735da2b8ec26c46b9376faf81b1
 workflow-type: tm+mt
-source-wordcount: '6103'
+source-wordcount: '6106'
 ht-degree: 99%
 
 ---
@@ -1318,6 +1318,7 @@ ht-degree: 99%
       + ハイブリッドおよび SPA 開発 {#hybrid}
          + [AEM でのハイブリッドと SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=ja)
+         + [SPA エディターの廃止](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
          + [SPA の概要およびガイド](/help/implementing/developing/hybrid/introduction.md)
          + [SPA WKND チュートリアル](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [React の使用を開始する](/help/implementing/developing/hybrid/getting-started-react.md)
