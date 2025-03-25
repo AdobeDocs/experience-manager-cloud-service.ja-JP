@@ -5,10 +5,10 @@ feature: Integration
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d62ac2e60062d3559d6a877dc830b8106f4bd0f6
 workflow-type: tm+mt
 source-wordcount: '148'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -31,8 +31,7 @@ AEM as a Cloud Service との統合に対するサポートは、実装した Ca
 |---|---|
 | [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=ja) | サポート対象外 |
 | [Campaign v8（クライアントコンソール）](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=ja) | サポート対象外 |
-| Campaign web ユーザーインターフェイス | サポート対象[詳細情報](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-assets.html?lang=ja) |
-
+| Campaign web ユーザーインターフェイス | サポート対象[詳細情報](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem) |
 
 ## Adobe Campaign Standard との統合 {#acs}
 
