@@ -1,20 +1,20 @@
 ---
 title: CTT の使用後の IMS へのプリンシパルの一括アップロード
-description: グループおよびユーザーのバルクアップロードファイルの概要と、Admin Consoleでファイルを使用して IMS でグループとユーザーを作成する方法について説明します。
+description: グループとユーザーの一括アップロードファイルの概要と、Admin Console で使用して IMS でグループとユーザーを作成する方法。
 exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
 source-git-commit: b9c739a03b358de7c011e50ddbdd609c90f86b6f
 workflow-type: tm+mt
 source-wordcount: '2384'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# CTT の使用後の IMS へのプリンシパルの一括アップロード {#bulk-principal-uploading}
+# CTT 使用後にプリンシパルを IMS へ一括アップロードする {#bulk-principal-uploading}
 
 >[!CONTEXTUALHELP]
 >id="bulk-principal-uploading"
 >title="プリンシパルの一括アップロード"
->abstract="グループおよびユーザーのバルクアップロードファイルの概要と、Admin Consoleでファイルを使用して IMS でグループとユーザーを作成する方法について説明します。"
+>abstract="グループとユーザーの一括アップロードファイルの概要と、Admin Console で使用して IMS でグループとユーザーを作成する方法。"
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="AEM Admin Console ドキュメント"
 >additional-url="https://adminconsole.adobe.com/" text="AEM Admin Console"
 
