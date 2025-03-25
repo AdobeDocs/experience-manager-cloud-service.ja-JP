@@ -4,7 +4,7 @@ description: 特定のビジネスニーズに合わせてカスタム UI コン
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 1927a1147e4b33d6173f08953d64b5a91d3473d7
+source-git-commit: 969860593670ce490cc688a92c349addb952b3b4
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 4%
@@ -48,7 +48,7 @@ ht-degree: 4%
 </table>
 
 [!DNL AEM Assets View] は UI 拡張機能をサポートしており、[!DNL AEM Assets View] の標準機能では満たされない特定のワークフローおよびビジネス要件に対して、カスタム UI コンポーネントを [!DNL Assets View] UI に追加できます。 [!DNL AEM Assets View] の UI 拡張機能により柔軟性が向上し、組織は特定のワークフローと要件に合わせてインターフェイスを調整できます。\
-拡張機能は **アセット**、**フォルダー** および **コレクション** レベルに追加できます。 追加された拡張機能は、**アセット**、**コレクション** または **フォルダー****[!UICONTROL 詳細]** ページの専用パネルに表示されます。
+拡張機能は **アセット**、**フォルダー** および **コレクション** レベルに追加できます。 追加された拡張機能は、**アセット**、**コレクション** または **フォルダー** **[!UICONTROL 詳細]** ページの専用パネルに表示されます。
 
 >[!IMPORTANT]
 >

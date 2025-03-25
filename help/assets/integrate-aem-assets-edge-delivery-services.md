@@ -2,7 +2,7 @@
 title: 統合  [!DNL AEM Assets]  コンテンツのオーサリング中  [!DNL Edge Delivery Services]
 description: ' [!DNL AEM Assets] with [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] with [!DNL Microsoft Word] and [!DNL Google Docs], integrate [!DNL AEM Assets] with [!DNL Universal Editor], integrate [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Universal Editor] and integrate [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Microsoft Word] and [!DNL Google Docs] を統合する方法を説明します。'
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 1927a1147e4b33d6173f08953d64b5a91d3473d7
+source-git-commit: 969860593670ce490cc688a92c349addb952b3b4
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 3%
@@ -58,7 +58,7 @@ ht-degree: 3%
 
 ## [!DNL Edge Delivery Services] 向けの [!DNL AEM Assets] とドキュメントベースのオーサリングフローの統合 {#integrate-aem-assets-with-document-based-authoring-tools}
 
-[!DNL AEM Assets] が [!DNL Microsoft Word] や [!DNL Google Docs] などのドキュメントベースのオーサリングツールと統合されると、オーサリングツールでアセットセレクターが提供されます。 このアセットセレクターを使用して [!DNL AEM Assets] にアクセスし、承認済みのアセットをコンテンツに挿入します。
+[!DNL AEM Assets] が [!DNL Microsoft Word] や [!DNL Google Docs] などのドキュメントベースのオーサリングツールと統合されると、オーサリングツールでアセットセレクターが提供されます。 このアセットセレクターを使用してア [!DNL AEM Assets] ットにアクセスし、承認済みのアセットをコンテンツに挿入します。
 既に [!DNL Edge Delivery Services] web サイトがある場合は、[[!DNL AEM Assets]  プラグイン ](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) のドキュメントを参照して、既存の [!DNL AEM] プロジェクト [!DNL AEM Assets] 統合する方法を確認してください。
 ドキュメントベースのオーサリングツールで作成した包括的なコンテンツを公開する [!DNL Edge Delivery Services] web サイトがない場合は、次の [ 前提条件 ](#integrate-aem-assets-with-microsoft-word-and-google-docs) および [ [!DNL AEM Assets]  ドキュメントベースのオーサリング環境との統合 ](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) の節に従 [!DNL AEM Assets] ます。
 
