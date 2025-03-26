@@ -1,35 +1,25 @@
 ---
-title: ユニバーサルエディターを使用したスタンドアロンのアダプティブフォームの作成方法
-description: この記事では、AEM オーサーインスタンスのフォーム作成ウィザードを使用してアダプティブフォームを作成し、AEM Edge Delivery Services にフォームを公開する方法について説明します。
+title: ユニバーサルエディターを使用してEdge Delivery Services テンプレートに基づいたスタンドアロンフォームを作成する方法。
+description: ここでは、ユニバーサルエディターを使用して、フォーム作成ウィザードでEdge Delivery Services ベースのテンプレートを選択してフォームを作成する方法について説明します。 フォームをAEM Edge Delivery Servicesに公開することもできます。
 feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
+source-git-commit: 979aad24ebbd0ef1d4d1fc92d402fca20bc27a44
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 85%
+source-wordcount: '1078'
+ht-degree: 68%
 
 ---
 
-# ユニバーサルエディター（WYSIWYG）を使用したスタンドアロンのフォームの作成
+# ユニバーサルエディターでスタンドアロンフォームを作成するためのステップバイステップガイド
 
 <span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセス権をリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。例えば、リポジトリ URL が https://github.com/adobe/abc の場合、組織名は「adobe」、リポジトリ名は「abc」になります。</span>
 
-この記事では、フォーム作成ウィザードから Edge Delivery Services ベースのテンプレートを選択して、ユニバーサルエディターを使用してスタンドアロンのフォームを作成するプロセスについて説明します。また、ユニバーサルエディターを使用して作成したフォームを AEM Edge Delivery Services に公開することもできます。
+この記事では、フォーム作成ウィザードからEdge Delivery Services ベースのテンプレートを選択してユニバーサルエディターでスタンドアロンフォームを作成およびオーサリングするプロセスについて説明します。 また、ユニバーサルエディターを使用して作成したフォームを AEM Edge Delivery Services に公開することもできます。
 
-<!--To publish forms to Edge Delivery Services, you must first establish a connection between your AEM environment and your GitHub repository. Once connected, you can author the forms using the Universal Editor, which follows a WYSIWYG (What You See Is What You Get) approach for a seamless and consistent user experience with Sites.-->
-
-開始する前に、使用可能な Forms コンポーネントのタイプについて学びます。
-
-* [AEM Forms の Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) は、作成者がユニバーサルエディターを使用して新しいフォームを迅速に更新、公開、起動できる高速開発環境を可能にする、構成可能な一連のサービスです。ユニバーサルエディターは、ユーザーにわかりやすい視覚的な WYSIWYG インターフェイスを使用して、Adobe Edge Delivery Services のフォーム作成を簡素化します。
-
-* [アダプティブフォームコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)：標準化されたデータキャプチャコンポーネントです。 これらのコンポーネントは、デジタル登録エクスペリエンスのカスタマイズ機能を提供し、開発時間を短縮し、メンテナンスコストを削減します。 開発者は、これらのコンポーネントを簡単にカスタマイズし、スタイルを設定できます。 次にアクセスできます： [https://aemcomponents.dev/](https://aemcomponents.dev/) 使用可能なコアコンポーネントの動作を表示するには **Adobeでは、アダプティブFormsの開発に、最新の拡張可能なコンポーネントを使用することをお勧めします**.
-
-* [アダプティブフォーム基盤コンポーネント](/help/forms/creating-adaptive-form.md)：従来の（古い）データキャプチャコンポーネントです。 引き続きこれらを使用して、既存の基盤コンポーネントベースのアダプティブフォームを編集できます。 新しいフォームを作成する場合は、[アダプティブフォームコアコンポーネントを使用してアダプティブフォームを作成することをお勧めします。](#create-an-adaptive-form-core-components)
-
-AEM Forms には、アダプティブフォームブロックと呼ばれるブロックが用意されており、データを取得して保存する Edge Delivery Services フォームを簡単に作成できます。[アダプティブフォームブロックで事前設定済みの新しい AEM プロジェクトを作成](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)することも、[アダプティブフォームブロックを既存の AEM サイトプロジェクトに追加](#add-adaptive-forms-block-to-your-existing-aem-project)することもできます。
+AEM Forms には、アダプティブフォームブロックと呼ばれるブロックが用意されており、データを取得して保存する Edge Delivery Services フォームを簡単に作成できます。[アダプティブフォームブロックで事前設定済みの新しい AEM プロジェクトを作成](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)することも、[アダプティブフォームブロックを既存の AEM サイトプロジェクトに追加](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)することもできます。
 
 ![Github リポジトリのワークフロー](/help/edge/assets/repo-workflow.png)
 
@@ -40,67 +30,70 @@ AEM Forms には、アダプティブフォームブロックと呼ばれるブ�
 * AEM Forms オーサーインスタンスには、Edge Delivery Services に基づくテンプレートが含まれます。 使用する環境に[最新バージョンのコアコンポーネント](https://github.com/adobe/aem-core-forms-components)がインストールされていることを確認します。
 * AEM Forms as a Cloud Service オーサーインスタンスの URL と GitHub リポジトリをすぐに使用できる状態にします。
 
-## ユニバーサルエディターを使用したアダプティブフォームの作成
+## ユニバーサルエディターでのフォームの操作
 
-ユニバーサルエディターを使用すると、テキストフィールド、チェックボックス、ラジオボタンなどの既製のコンポーネントを使用して、レスポンシブでインタラクティブなスタンドアロンのフォームを簡単に作成できます。これにより、動的なルール、スムーズなデータ統合、カスタマイズオプションなどの強力な機能が提供され、正確な要件に応じてフォームを作成できます。
+ユニバーサルエディターを使用すると、テキストフィールド、チェックボックス、ラジオボタンなどの既製のコンポーネントを使用して、レスポンシブでインタラクティブなスタンドアロンのフォームを簡単に作成できます。動的ルール、スムーズなデータ統合、カスタマイズオプションなどの強力な機能を提供し、正確な要件に従ってフォームを作成できます。 フォームをAEM Edge Delivery Servicesに公開することもできます。 ユニバーサルエディターのフォームで、次のアクションを実行できます。
+* [フォームの作成](#create-a-form)
+* [フォームの作成](#author-a-form)
+* [フォームの公開](#publish-a-form)
+* [フォームの管理](#manage-a-form)
 
 >[!NOTE]
 >
 > また、[ユニバーサルエディターの Edge Delivery Services サイトテンプレートを使用して AEM サイトでフォームを作成し、Edge Delivery Services に公開](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project)することもできます。
 
-ユニバーサルエディターを使用してスタンドアロンのアダプティブフォームを作成するには、次の手順を実行します。
 
-1. **AEM Forms オーサーインスタンスでのアダプティブフォームの作成**
+### フォームの作成
 
-   1. AEM Forms as a Cloud Service オーサーインスタンスにログインします。
-   1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
-   1. **[!UICONTROL 作成]**／**[!UICONTROL アダプティブフォーム]**&#x200B;を選択します。ウィザードが開きます。
-   1. 「**ソース**」タブで、Edge Delivery Services ベースのフォームテンプレートを選択します。
+1. AEM Forms as a Cloud Service オーサーインスタンスにログインします。
+1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
+1. **[!UICONTROL 作成]**／**[!UICONTROL アダプティブフォーム]**&#x200B;を選択します。ウィザードが開きます。
+1. 「**ソース**」タブで、Edge Delivery Services ベースのフォームテンプレートを選択します。
 
-      ![EDS フォームを作成](/help/edge/assets/create-eds-forms.png)
+   ![EDS フォームを作成](/help/edge/assets/create-eds-forms.png)
 
 
-      Edge Delivery Servicesベースのテンプレートを選択すると、「**[!UICONTROL 作成]**」ボタンが有効になります。
-   1. （オプション） **[!UICONTROL データSource]** または **[!UICONTROL 送信]** タブで、データソースまたは送信アクションを選択することができます。
-   1. （オプション）「**[!UICONTROL 配信]**」タブで、アダプティブフォームの公開日または非公開日を指定することができます。
+   Edge Delivery Servicesベースのテンプレートを選択すると、「**[!UICONTROL 作成]**」ボタンが有効になります。
+1. （オプション） **[!UICONTROL データSource]** または **[!UICONTROL 送信]** タブで、データソースまたは送信アクションを選択することができます。
+1. （オプション）「**[!UICONTROL 配信]**」タブで、フォームの公開日または非公開日を指定することができます。
 
-   1. 「**[!UICONTROL 作成]**」をクリックすると、**フォームを作成**&#x200B;ウィザードが表示されます。
-   1. **名前** と **タイトル** を指定します。
-   1. **GitHub URL** を指定します。 例えば、GitHub リポジトリの名前が `edsforms` で、アカウント `wkndforms` の下にある場合、URL は次のようになります。
-      `https://github.com/wkndforms/edsforms`
-   1. 「**[!UICONTROL 作成]**」をクリックします。
+1. 「**[!UICONTROL 作成]**」をクリックすると、**フォームを作成**&#x200B;ウィザードが表示されます。
+1. **名前** と **タイトル** を指定します。
+1. **GitHub URL** を指定します。 例えば、GitHub リポジトリの名前が `edsforms` で、アカウント `wkndforms` の下にある場合、URL は次のようになります。
+   `https://github.com/wkndforms/edsforms`
+1. 「**[!UICONTROL 作成]**」をクリックします。
 
-      ![フォームを作成ウィザード](/help/edge/assets/create-form-wizard.png)
+   ![フォームを作成ウィザード](/help/edge/assets/create-form-wizard.png)
 
-      「**[!UICONTROL 作成]**」をクリックするとすぐに、フォームがオーサリング用のユニバーサルエディターで開きます。
+   「**[!UICONTROL 作成]**」をクリックするとすぐに、フォームがオーサリング用のユニバーサルエディターで開きます。
 
-      ![フォームを送信](/help/edge/assets/author-form.png)
+   ![フォームを送信](/help/edge/assets/author-form.png)
 
-      <!-- >[!NOTE]
+   <!-- >[!NOTE]
         >
         > The Edge Delivery Services configuration for the forms based on Edge Delivery Services template is created automatically at the form's configuration container.-->
 
-      「**[!UICONTROL 作成]**」をクリックすると、フォームがオーサリング用のユニバーサルエディターで開きます。
+   「**[!UICONTROL 作成]**」をクリックすると、フォームがオーサリング用のユニバーサルエディターで開きます。
 
-1. **ユニバーサルエディターでのフォームの作成**
+### フォームの作成
 
-   1. コンテンツブラウザーを開き、**コンテンツツリー**&#x200B;の&#x200B;**[!UICONTROL アダプティブフォーム]**&#x200B;コンポーネントに移動します。
+1. コンテンツブラウザーを開き、**コンテンツツリー**&#x200B;の&#x200B;**[!UICONTROL アダプティブフォーム]**&#x200B;コンポーネントに移動します。
 
-      ![コンテンツツリー](/help/edge/assets/content-tree.png)
+   ![コンテンツツリー](/help/edge/assets/content-tree.png)
 
-   1. 「**[!UICONTROL 追加]**」アイコンをクリックし、**アダプティブフォームコンポーネント**&#x200B;リストから目的のコンポーネントを追加します。
+1. 「**[!UICONTROL 追加]**」アイコンをクリックし、**アダプティブフォームコンポーネント**&#x200B;リストから目的のコンポーネントを追加します。
 
-      ![コンポーネントを追加](/help/edge/assets/add-component.png)
+   ![コンポーネントを追加](/help/edge/assets/add-component.png)
 
-   1. 追加されたアダプティブフォームコンポーネントを選択し、**[!UICONTROL プロパティ]**&#x200B;を使用して、そのプロパティを更新します。
+1. 追加されたアダプティブフォームコンポーネントを選択し、**[!UICONTROL プロパティ]**&#x200B;を使用して、そのプロパティを更新します。
 
-      ![プロパティを開く](/help/edge/assets/component-properties.png)
+   ![プロパティを開く](/help/edge/assets/component-properties.png)
 
-      以下のスクリーンショットは、ユニバーサルエディターで作成したシンプルな `Registration Form` フォームを示しています。
+   以下のスクリーンショットは、ユニバーサルエディターで作成したシンプルな `Registration Form` フォームを示しています。
 
-      ![お問い合わせフォーム](/help/edge/assets/contact-us.png)
+   ![お問い合わせフォーム](/help/edge/assets/contact-us.png)
 
-      これで、[フォームを送信アクションを設定およびカスタマイズ](/help/edge/docs/forms/universal-editor/submit-action.md)できます。
+   これで、[フォームを送信アクションを設定およびカスタマイズ](/help/edge/docs/forms/universal-editor/submit-action.md)できます。
 
 
 <!--
@@ -122,7 +115,7 @@ AEM Forms には、アダプティブフォームブロックと呼ばれるブ�
 
    1. Click **[!UICONTROL Save and Close]**. The configuration is saved. -->
 
-## フォームの公開
+### フォームの公開
 
 次に、ユニバーサルエディターの右上隅にある「**[!UICONTROL 公開]**」ボタンをクリックして、スタンドアロンのフォームを Edge Delivery Services に公開します。
 
@@ -152,7 +145,7 @@ URL 構造は、ステージングされたバージョンとライブバージ�
 
 ![公開済みフォームを表示](/help/edge/assets/eds-view-publish-form.png)
 
-## フォームの管理
+### フォームの管理
 
 AEM Forms ユーザーインターフェイスを使用して、フォームに対して複数の操作を実行できます。
 
