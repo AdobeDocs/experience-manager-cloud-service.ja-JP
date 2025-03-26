@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6e6e171bf0df7735da2b8ec26c46b9376faf81b1
+source-git-commit: 6bce8f33f6588b49fc9165eeeedc8f4057222eb0
 workflow-type: tm+mt
 source-wordcount: '6106'
 ht-degree: 99%
@@ -1323,7 +1323,7 @@ ht-degree: 99%
          + [SPA WKND チュートリアル](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [React の使用を開始する](/help/implementing/developing/hybrid/getting-started-react.md)
          + [Angular の使用を開始する](/help/implementing/developing/hybrid/getting-started-angular.md)
-         + [SPA の詳細](/help/implementing/developing/hybrid/deep-dives.md)
+         + [SPA の詳細](/help/implementing/developing/hybrid/deep-dives-gems.md)
          + [AEM 向け SPA の開発](/help/implementing/developing/hybrid/developing.md)
          + [SPA エディターの概要](/help/implementing/developing/hybrid/editor-overview.md)
          + [SPA ブループリント](/help/implementing/developing/hybrid/blueprint.md)
