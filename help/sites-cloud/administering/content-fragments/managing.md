@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
 workflow-type: tm+mt
 source-wordcount: '2629'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -24,16 +24,16 @@ ht-degree: 94%
 
 >[!IMPORTANT]
 >
->早期導入プログラムを通じて、コンテンツフラグメントコンソールの様々な機能を利用できます。
+>コンテンツフラグメントコンソールの様々な機能は、早期導入プログラムを通じて使用できます。
 >
 >ステータスを確認し、興味がある場合に適用する方法について詳しくは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
 >[!NOTE]
 >
->このページでは、コンテンツフラグメントを（のみ）表示するコンソールのセクションについて説明します。 その他のパネルについては、以下を参照してください。
+>このページでは、コンテンツフラグメント（のみ）を表示するコンソールのセクションについて説明します。その他のパネルについては、以下を参照してください。
 >
->* [ コンテンツフラグメントモデルの管理 ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
->* [ コンテンツフラグメントコンソールでのAssetsの表示と管理 ](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+>* [コンテンツフラグメントモデルの管理](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+>* [コンテンツフラグメントコンソールでのアセットの表示と管理](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
 [コンテンツフラグメントモデル](#creating-a-content-model)を定義した後、これらを使用して、次のことができます。
 
@@ -54,11 +54,11 @@ ht-degree: 94%
 >
 >コンテンツフラグメントは&#x200B;**アセット**&#x200B;として保存されます。これらは主に&#x200B;**コンテンツフラグメント**&#x200B;コンソールから管理しますが、[Assets](/help/assets/content-fragments/content-fragments-managing.md) コンソールからも管理できます。
 
-## コンソールでのコンテンツフラグメントの基本構造と処理 {#basic-structure-handling-content-fragments-console}
+## コンソールのコンテンツフラグメントの基本構造と基本操作 {#basic-structure-handling-content-fragments-console}
 
-[ コンテンツフラグメント コンソール ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) の左端のパネルを使用して、表示、参照、管理するリソースタイプとして **コンテンツフラグメント** を選択します。
+[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)の左端のパネルを使用して、表示、参照、管理するリソースタイプとして「**コンテンツフラグメント**」を選択できます。
 
-![コンテンツフラグメントコンソール - ナビゲーション](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+![コンテンツフラグメントコンソール - ナビゲーション](/help/sites-cloud/administering/content-fragments/assets/cf-console-fragments-navigation.png)
 
 **コンテンツフラグメント**&#x200B;を選択すると、コンソールが新しいタブで開きます。
 
@@ -75,7 +75,7 @@ ht-degree: 94%
    * フォルダーツリーを表示したり非表示にしたりできます
    * ツリーの特定のブランチを選択できます
    * これは、ネストされたフォルダーを表示するようにサイズ変更できます
-   * [ コンテンツフラグメントモデル ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) または [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) は、コンテンツフラグメントだけでなく、パネルへのリンクを圧縮したり、展開したりすることもできます
+   * コンテンツフラグメントだけでなく、[コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)や[アセット](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)も表示できます。また、パネルへのリンクを圧縮または展開することもできます。
 * 右側のメインパネル
    * 選択したツリーのブランチにあるすべてのコンテンツフラグメントのリストを表示します。
       * 選択したフォルダーのコンテンツフラグメントと、すべての子フォルダーが表示されます:
@@ -87,7 +87,7 @@ ht-degree: 94%
          * 参照に関する情報を表示
          * フラグメントの言語バージョンに関する情報を表示
       * コンテンツフラグメントについての[その他の特定の情報フィールド](#information-content-fragments)は、[高速フィルタリング](#fast-filtering)に使用できます。
-         * 列内の値を選択すると、フィルターとしてすぐに適用されます
+         * 列の値を選択すると、直ちにフィルターとして適用されます
          * 高速フィルターは、「**モデル**」、「**ステータス**」、「**変更者**」、「**タグ**」、「**公開者**」列のみに対応しています。
       * 列ヘッダーにマウスオーバーを使用すると、ドロップダウンアクションセレクターと幅スライダーが表示されます。これらを使用すると、次のことができます。
          * 並べ替え - 昇順または降順に適切なアクションを選択します。
@@ -96,7 +96,7 @@ ht-degree: 94%
       * さらに[アクション](#actions-selected-content-fragment)を実行するには、1 つ以上のフラグメントを選択します
    * 「[検索](#searching-fragments)」ボックスを使用します
    * 「[フィルターパネル](#filtering-fragments)」を開きます
-   * このコンソールで使用できる[キーボード ショートカット](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)の選択
+   * このコンソールで使用できる[キーボードショートカット](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)の選択
 
 ## コンテンツフラグメントに関して提供される情報 {#information-content-fragments}
 
@@ -217,7 +217,7 @@ ht-degree: 94%
 
    * **場所** - 現在の場所がオートコンプリートされますが、必要に応じて別の場所を選択できます。
    * **コンテンツフラグメントモデル** - ドロップダウンリストからフラグメントの基礎として使用するモデルを選択します。
-   * **自動タグ** – このオプションを選択すると、コンテンツフラグメントモデルに割り当てられたすべてのタグが新しいコンテンツフラグメントに継承され、追加されます。
+   * **自動タグ** - このオプションを選択すると、コンテンツフラグメントモデルに割り当てられたすべてのタグが新しいコンテンツフラグメントに継承され、追加されます。
    * **タイトル**
    * **名前** - **タイトル**&#x200B;に基づいてオートコンプリートされますが、必要に応じて編集できます。
    * **説明**
