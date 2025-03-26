@@ -4,10 +4,10 @@ description: Git パイプラインまたは Cloud Manager パイプラインに
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: 8f5dd529b5f317326d9742be1dd3a3104fe6957a
+source-git-commit: aee0aef912fd4c94c06251aa4424200a6ffd7ebc
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 94%
+source-wordcount: '781'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ AEM as a Cloud Service では、クライアントサイドリダイレクトを
 * リダイレクトの件数が数件から数万件に及ぶ場合。
 * カスタムプロジェクトとして作成する、または [ACS Commons リダイレクトマップマネージャー](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)や [ACS Commons リダイレクトマネージャー](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html)を使用して作成するユーザーインターフェイスのオプションが必要な場合。
 
-この機能の中核は、AEM Apache/Dispatcherが、公開リポジトリ内の指定された場所に配置された 1 つ以上の書き換えマップファイルを読み込む（または再読み込みする）機能です（AEM公開からダウンロードできます）。 ファイルがそこに到達する仕組みはこの機能の範囲外ですが、次のいずれかの方法を検討可能であると明記しておくことが重要です。
+この機能のコアとなるのは、AEM Apache／Dispatcher が、公開リポジトリ内の指定した場所に配置された 1 つ以上の書き換えマップファイルを読み込む（または再読み込みする）機能です（AEM パブリッシュからダウンロードできます）。ファイルがそこに到達する仕組みはこの機能の範囲外ですが、次のいずれかの方法を検討可能であると明記しておくことが重要です。
 
 * 書き換えマップをアセットとしてオーサーユーザーインターフェイスに取り込み、公開します。
 * [ACS Commons リダイレクトマップマネージャー](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)（[バージョン 6.7.0 以降](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)）をインストールします。これには、URL マッピングを管理するユーザーインターフェイスが含まれ、書き換えマップファイルを公開することもできます。
@@ -39,6 +39,8 @@ AEM as a Cloud Service では、クライアントサイドリダイレクトを
 
 >[!NOTE]
 > この機能でリダイレクトマップマネージャーを使用するには、ACS Commons バージョン **6.7.0 以降**&#x200B;が必要であり、リダイレクトマネージャーを使用するには、**バージョン 6.10.0 以降**&#x200B;が必要です。
+
+詳細な手順の実装ガイドについては、チュートリアル [ パイプラインを使用しない URL リダイレクトの実装 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects) を参照してください。
 
 ## 書き換えマップ {#rewrite-map}
 
@@ -75,7 +77,6 @@ RewriteCond ${map.foo:$1} !=""
 RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 ```
 
-
 ## 考慮事項 {#considerations}
 
 次の点に注意してください。
@@ -83,3 +84,8 @@ RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 * デフォルトでは、書き換えマップを読み込むする際、Apache は完全なマップファイルが読み込まれるのを待たずに起動するので、完全なマップが読み込まれるまで一時的に不整合が発生する可能性があります。この設定を変更すると、Apache は完全なマップコンテンツが読み込まれるまで待機しますが、Apache の起動により長い時間がかかります。Apache が待機するようにこの動作を変更するには、`managed-rewrite-maps.yaml` ファイルに `wait:true` を追加します。
 * 読み込み間の頻度を変更するには、`managed-rewrite-maps.yaml` ファイルに `ttl: <integer>` を追加します。例：`ttl: 120`。
 * Apache では、RewriteMap の単一エントリの長さに 1024 の制限があります。
+
+## チュートリアル {#tutorials}
+
+1. [ パイプラインを使用しない URL リダイレクトの実装 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
+1. [URL リダイレクト ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/administration/url-redirection)
