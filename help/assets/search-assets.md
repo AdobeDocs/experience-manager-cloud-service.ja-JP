@@ -6,12 +6,13 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 07cfbb643785127a45a1c7712a9f4ff81767b7e1
 workflow-type: tm+mt
-source-wordcount: '5552'
-ht-degree: 99%
+source-wordcount: '5931'
+ht-degree: 98%
 
 ---
+
 
 # AEM でのアセットの検索 {#search-assets-in-aem}
 
@@ -313,7 +314,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ## アセットセレクター {#asset-picker}
 
-アセットセレクター（以前のバージョンの [!DNL Adobe Experience Manager] ではアセットピッカーと呼ばれていました）を使用すると、DAM アセットの検索、フィルタリングおよび参照を特別な方法で行えます。アセットセレクターは、`https://[aem_server]:[port]/aem/assetpicker.html` で利用できます。アセットセレクターを使用して選択したアセットのメタデータを取得できます。アセットタイプ（画像、ビデオ、テキスト）や選択モード（単一選択または複数選択）など、サポートされているリクエストパラメーターを使用して、アセットセレクターを起動できます。これらのパラメーターは、特定の検索インスタンスのアセットセレクターのコンテキストを設定し、選択中もそのままの状態を維持します。
+[AEM アセットセレクター ](/help/assets/overview-asset-selector.md) （以前のバージョンの [!DNL Adobe Experience Manager] ではアセットピッカーと呼ばれていました）を使用すると、DAM アセットの検索、フィルタリングおよび参照を特別な方法でおこなえます。 アセットセレクターは、`https://[aem_server]:[port]/aem/assetpicker.html` で利用できます。アセットセレクターを使用して選択したアセットのメタデータを取得できます。アセットタイプ（画像、ビデオ、テキスト）や選択モード（単一選択または複数選択）など、サポートされているリクエストパラメーターを使用して、アセットセレクターを起動できます。これらのパラメーターは、特定の検索インスタンスのアセットセレクターのコンテキストを設定し、選択中もそのままの状態を維持します。
 
 アセットセレクターは、HTML5 `Window.postMessage` メッセージを使用して、選択したアセットのデータを受信者に送信します。参照モードのオムニサーチ結果ページでのみ機能します。
 
@@ -370,6 +371,8 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 * **インデックス作成**：インデックスが作成されたメタデータおよびアセットのみが検索結果に返されます。検索範囲とパフォーマンスを向上させるには、適切なインデックス作成を行い、ベストプラクティスに従ってください。詳しくは、[インデックス作成](#searchindex)を参照してください。
 
+詳細については、[ 検索のベストプラクティス ](search-best-practices.md) を参照してください。
+
 ## 検索の例 {#samples}
 
 ユーザーが指定したとおりの語句を含んだアセットを検索するには、キーワードを二重引用符で囲みます。
@@ -407,62 +410,56 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 *図：ダッシュを使用して、除外されたキーワードを含まないアセットを検索する*
 
-<!--
-## Configuration and administration tasks related to search functionality {#configadmin}
+## 検索機能に関連した設定タスクと管理タスク {#configadmin}
 
-### Search index configurations {#searchindex}
+### 検索インデックスの設定 {#searchindex}
 
-Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
--->
+アセットの検出は、メタデータを含む DAM コンテンツのインデックス作成に依存します。迅速で正確なアセット検出は、最適化されたインデックス作成と適切な設定に依存します。詳しくは、[インデックス作成](/help/operations/indexing.md)を参照してください。
 
-<!--
-### Visual or similarity search {#configvisualsearch}
+### ビジュアル検索または類似性検索 {#configvisualsearch}
 
-Visual search uses Smart Tags. After configuring smart tagging functionality, follow these steps.
+ビジュアル検索では、スマートタグを使用します。スマートタグ機能を設定したら、次の手順に従います。
 
-1. In [!DNL Experience Manager] CRXDE, in `/oak:index/lucene` node, add the following properties and values and save the changes.
+1. [!DNL Experience Manager] CRXDE の `/oak:index/lucene` ノードで、次のプロパティと値を追加し、変更を保存します。
 
-    * `costPerEntry` property of type `Double` with the value `10`.
+   * 値が `10` の `Double` 型の `costPerEntry` プロパティ。
 
-    * `costPerExecution` property of type `Double` with the value `2`.
+   * 値が `2` の `Double` 型の `costPerExecution` プロパティ。
 
-    * `refresh` property of type `Boolean` with the value `true`.
+   * 値が `true` の `Boolean` 型の `refresh` プロパティ。
 
-   This configuration allows searches from the appropriate index.
+   この設定を使用すると、適切なインデックスから検索できます。
 
-1. To create Lucene index, in CRXDE, at `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, create node named `imageFeatures` of type `nt-unstructured`. In `imageFeatures` node,
+1. Lucene インデックスを作成するには、CRXDE の `/oak:index/damAssetLucene/indexRules/dam:Asset/properties` で、`nt-unstructured` 型の名前が `imageFeatures` のノードを作成します。`imageFeatures` ノードで、
 
-    * Add `name` property of type `String` with the value `jcr:content/metadata/imageFeatures/haystack0`.
+   * 値が `jcr:content/metadata/imageFeatures/haystack0` の `String` 型の `name` プロパティを追加します。
 
-    * Add `nodeScopeIndex` property of type `Boolean` with the value of `true`.
+   * 値が `true` の `Boolean` 型の `nodeScopeIndex` プロパティを追加します。
 
-    * Add `propertyIndex` property of type `Boolean` with the value of `true`.
+   * 値が `true` の `Boolean` 型の `propertyIndex` プロパティを追加します。
 
-    * Add `useInSimilarity` property of type `Boolean` with the value `true`.
+   * 値が `true` の `Boolean` 型の `useInSimilarity` プロパティを追加します。
 
-   Save the changes.
+   変更を保存します。
 
-1. Access `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` and add `similarityTags` property of type `Boolean` with the value of `true`.
-1. Apply Smart Tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
-1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
-1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save the changes.
+1. `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` にアクセスして、値が `true` の `Boolean` 型の `similarityTags` プロパティを追加します。
+1. スマートタグを [!DNL Experience Manager] リポジトリーのアセットに適用します。詳しくは、 [スマートタグの設定方法](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=ja#configuring)を参照してください。
+1. CRXDE の `/oak-index/damAssetLucene` ノードで、`reindex` プロパティを `true` に設定します。変更を保存します。
+1. （オプション）検索フォームをカスタマイズしている場合は、 `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` ノードから `/conf/global/settings/dam/search/facets/assets/jcr:content/items` へコピーします。変更を保存します。
 
-For related information, see [understand smart tags in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html) and [how to manage smart tags](/help/assets/smart-tags.md).
--->
+関連情報については、 [Experience Manager のスマートタグについて](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=ja)および[スマートタグの管理方法](/help/assets/smart-tags.md)を参照してください。
 
-<!--
-### Mandatory metadata {#mandatorymetadata}
+### 必須メタデータ {#mandatorymetadata}
 
-Business users, administrators, or DAM librarians can define some metadata as mandatory metadata that is a must for the business processes to work. For various reasons, some assets may be missing this metadata, such as legacy assets or assets migrated in bulk. Assets with missing or invalid metadata are detected and reported based on the indexed metadata property. To configure it, see [mandatory metadata](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
+ビジネスユーザー、管理者または DAM ライブラリの担当者は、一部のメタデータを、ビジネスプロセスが機能するための必須のメタデータとして定義できます。様々な理由で、一部のアセットでこのメタデータが欠落している可能性があります（例えば、レガシーなアセットや一括で移行されたアセットなど）。メタデータが見つからないアセットやメタデータが無効なアセットは、インデックスで指定されたメタデータのプロパティに基づいて検出され、レポートされます。設定するには、[必須メタデータ](/help/assets/metadata-schemas.md#defining-mandatory-metadata)を参照してください。
 
-### Modify search facets {#searchfacets}
+### 検索ファセットの変更 {#searchfacets}
 
-To improve the speed of discovery, [!DNL Experience Manager Assets] offers search facets using which you can filter the search results. The Filters panel includes a few standard facets by default. Administrators can customize the Filters panel to modify the default facets using the in-built predicates. [!DNL Experience Manager] provides a good collection of in-built predicates and an editor to customize the facets. See [search facets](/help/assets/search-facets.md).
+検出速度を向上するために、[!DNL Experience Manager Assets] では検索結果をフィルタリングするための検索ファセットを提供します。フィルターパネルには、いくつかの標準ファセットが含まれています。管理者は、フィルターパネルをカスタマイズして、組み込みの述語を使用してデフォルトのファセットを変更できます。[!DNL Experience Manager] には、組み込みの述語の優れたコレクションと、ファセットをカスタマイズするためのエディターが用意されています。詳しくは、[検索ファセット](/help/assets/search-facets.md)を参照してください。
 
-### Extract text when uploading assets {#extracttextupload}
+### アセットのアップロード時にテキストを抽出 {#extracttextupload}
 
-You can configure [!DNL Experience Manager] to extract the text from the assets when users upload assets, such as PSD or PDF files. [!DNL Experience Manager] indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
--->
+PSD ファイルや PDF ファイルなどのアセットをユーザーがアップロードする際に、アセットからテキストを抽出するように [!DNL Experience Manager] を設定することができます。[!DNL Experience Manager] は、抽出されたテキストにインデックスを付け、抽出されたテキストに基づいてこれらのアセットをユーザーが検索できるようにします。[アセットのアップロード](/help/assets/manage-digital-assets.md#uploading-assets)を参照してください。
 
 ### 検索結果を絞り込むためのカスタム述語 {#custompredicates}
 
@@ -507,7 +504,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 リスト表示では、任意のフォルダー内のアセットを並べ替える場合と同じように、検索結果を並べ替えることができます。並べ替えは、「名前」、「タイトル」、「ステータス」、「寸法」、「サイズ」、「評価」、「使用状況」、「作成日」、「変更日」、「公開日」、「ワークフロー」、「チェックアウト済み」の各列で行われます。
 
-並べ替え機能の制限事項については、[制限事項](#limitations)を参照してください。
+<!--For limitations of sort functionality, see [limitations](#limitations).-->
 
 ### アセットの詳細情報の確認 {#checkinfo}
 
@@ -523,13 +520,13 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 ### 検索したアセットのダウンロード {#download}
 
-フォルダーから通常のアセットをダウンロードする場合と同じように、検索したアセットとそのレンディションをダウンロードできます。検索結果から 1 つ以上のアセットを選択し、ツールバーの「**[!UICONTROL ダウンロード]**」をクリックします。
+フォルダーから通常のアセットをダウンロードする場合と同じように、検索したアセットとそのレンディションをダウンロードできます。検索結果から 1 つ以上のアセットを選択し、ツールバーの **[!UICONTROL ダウンロード]** をクリックします。 [ アセットのダウンロード ](/help/assets/download-assets-from-aem.md) を参照してください。
 
 ### メタデータプロパティの一括更新 {#metadata-updates}
 
 複数アセットの共通のメタデータフィールドに対して一括更新を行うことができます。検索結果から、1 つ以上のアセットを選択します。ツールバーの「**[!UICONTROL プロパティ]**」をクリックし、必要に応じてメタデータを更新します。完了したら、「**[!UICONTROL 保存して閉じる]**」をクリックします。更新されたフィールド内の既存のメタデータが上書きされます。
 
-単一のフォルダーまたはコレクションで入手できるアセットの場合は、検索機能を使用せずに[メタデータを一括更新](/help/assets/manage-metadata.md#manage-assets-metadata)するほうが簡単です。複数のフォルダーをまたぐアセットや共通の条件に一致するアセットについては、検索を通じてメタデータを一括更新するほうが手軽です。
+単一のフォルダーまたはコレクションで入手できるアセットの場合は、検索機能を使用せずに[メタデータを一括更新](/help/assets/bulk-metadata-edit.md)するほうが簡単です。複数のフォルダーをまたぐアセットや共通の条件に一致するアセットについては、検索を通じてメタデータを一括更新するほうが手軽です。
 
 ### スマートコレクション {#smart-collections}
 
@@ -578,7 +575,6 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 * [検索のベストプラクティス](search-best-practices.md)
 * [アセットを翻訳](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
 * [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
 * [接続されたアセット](use-assets-across-connected-assets-instances.md)
 * [アセットレポート](asset-reports.md)
