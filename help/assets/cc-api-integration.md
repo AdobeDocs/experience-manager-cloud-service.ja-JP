@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 1d8136b761528fe927b467320ebc7363de0d8a37
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 96%
+source-wordcount: '847'
+ht-degree: 93%
 
 ---
 
@@ -137,6 +137,8 @@ Cloud Manager の既存の AEM as a Cloud Service プログラムにコンテン
 
 * [!DNL Experience Manager] では、アセット処理を環境ごとに 1 分あたり 300 リクエストまでに制限し、組織ごとに 1 分あたり 700 リクエストまでに制限しています。
 * [!DNL Adobe Photoshop] API 操作のファイルサイズは 4 GB までに制限され、[!DNL Adobe Lightroom] 操作では 1 GB までに制限されています。
+* Microsoft Office ドキュメントのPDF レンディション（「.docx」、「.doc」、「.ppt」、「.pptx」、「.xls」、「.xlsx」）は、100 MB 以下のファイルに制限されています。
+* ビデオのトランスコーディングは、入力ファイル 15 GB 以下に制限されています。
 
 **関連情報**
 
