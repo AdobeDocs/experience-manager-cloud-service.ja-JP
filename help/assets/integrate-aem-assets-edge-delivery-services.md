@@ -1,29 +1,29 @@
 ---
 title: 統合  [!DNL AEM Assets]  コンテンツのオーサリング中  [!DNL Edge Delivery Services]
-description: ' [!DNL AEM Assets] with [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] with [!DNL Microsoft Word] and [!DNL Google Docs], integrate [!DNL AEM Assets] with [!DNL Universal Editor], integrate [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Universal Editor] and integrate [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Microsoft Word] and [!DNL Google Docs] を統合する方法を説明します。'
+description: ' [!DNL AEM Assets] with [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] with [!DNL Microsoft Word] and [!DNL Google Docs], integrate [!DNL AEM Assets] with [!DNL Universal Editor], integrate [!DNL Dynamic Media] with [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Universal Editor] and integrate [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Microsoft Word] and [!DNL Google Docs] を統合する方法を説明します。'
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: fe3286bf792f387c2209d7b827ba195b50c586b5
+source-git-commit: 84fde065602d8303a03eb2c82bfa4c4bef0c1193
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 3%
+source-wordcount: '671'
+ht-degree: 6%
 
 ---
 
-# [!DNL Edge Delivery Services] 用コンテンツのオーサリング時の [!DNL AEM Assets] の統合 {#integrate-aem-assets-while-authoring-for-edge-delivery-services}
+# [!DNL Edge Delivery Services] 用コンテンツのオーサリング時の [!DNL AEM Assets] の統合 {#integrate-aem-assets-with-edge-delivery-services}
 
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
         </td>
          <td>
             <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
@@ -51,12 +51,12 @@ ht-degree: 3%
 
 次の場所でコンテンツを編集できます。
 
-* [[!DNL Microsoft Word] または  [!DNL Google Docs]](#integrate-aem-assets-with-document-based-authoring-tools)
-* [[!DNL Universal Editor]](#integrate-aem-assets-with-UE-universal-editor)
+* [[!DNL Microsoft Word] または  [!DNL Google Docs]](#integrate-dynamic-media-with-edge-delivery-services)
+* [[!DNL Universal Editor]](#integrate-aem-assets-with-universal-editor-UE)
 
 編集したコンテンツは、Edge Delivery Servicesに公開できます。
 
-## [!DNL Edge Delivery Services] 向けの [!DNL AEM Assets] とドキュメントベースのオーサリングフローの統合 {#integrate-aem-assets-with-document-based-authoring-tools}
+## [!DNL Edge Delivery Services] 向けの [!DNL AEM Assets] とドキュメントベースのオーサリングフローの統合 {#integrate-dynamic-media-with-edge-delivery-services}
 
 [!DNL AEM Assets] が [!DNL Microsoft Word] や [!DNL Google Docs] などのドキュメントベースのオーサリングツールと統合されると、オーサリングツールでアセットセレクターが提供されます。 このアセットセレクターを使用してア [!DNL AEM Assets] ットにアクセスし、承認済みのアセットをコンテンツに挿入します。
 既に [!DNL Edge Delivery Services] web サイトがある場合は、[[!DNL AEM Assets]  プラグイン ](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) のドキュメントを参照して、既存の [!DNL AEM] プロジェクト [!DNL AEM Assets] 統合する方法を確認してください。
@@ -88,7 +88,7 @@ ht-degree: 3%
 
 機能について詳しくは、ドキュメントを参照 [[!DNL Dynamic Media with OpenAPI capabilities]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) てください。
 
-### 前提条件 {#prerequisites-for-dm-with-openapi-capabilities-to-use-aem-assets}
+### 前提条件 {#dynamic-media-with-universal-editor-and-edge-delivery-services}
 
 アセット参照を使用するには、以下が必要です。
 
@@ -97,7 +97,7 @@ ht-degree: 3%
 * 画像アセットのコピー参照を有効にした [!DNL AEM Assets sidekick plugin]。 詳しくは、ドキュメントベースのオーサリングについては [ このドキュメント ](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) を、ユニバーサルエディターベースのオーサリングについては [ このドキュメント ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) を参照してください。
 * 承認済みのAssets。 承認済みのアセットは、Assets Cloud Services のバックエンドまたは UI のアクションを介して `dam:status=Approved` 認されています。
 
-### [!DNL Dynamic Media with OpenAPI capabilities] を使用して配信されるアセットの使用{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
+### [!DNL Dynamic Media with OpenAPI capabilities] を使用して配信されるアセットの使用{#Using-Dynamic-Media-with-edge-delivery-services}
 
 次のリンクを選択して、[!DNL Dynamic Media with OpenAPI capabilities] を使用してコンテンツに画像、ビデオ、その他のアセットタイプを配信する方法について確認してください。
 
@@ -109,11 +109,11 @@ OpenAPI 機能を備えた Dynamic Media を使用してコンテンツ内のア
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441155)
 
-## サンプル [!DNL Edge Delivery Services] サイト{#example-of-an-Edge-Delivery-Services-site}
+## サンプル [!DNL Edge Delivery Services] サイト{#dynamic-media-with-google-docs-and-ms-word}
 
 [!DNL Edge Delivery Services] のドキュメントベースのオーサリング機能を使用して構築されたサイトである [WKND Travel](http://bit.ly/3DExLnf) を参照してください。 サイトのコンテンツは [Google Docsで作成され ](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) コンテンツ内のアセットを配信するために使用さ [!DNL Dynamic Media with OpenAPI capabilities] ます。 オーサリング後、コンテンツはドキュメントから直接公開されます。 この [Git リポジトリー ](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) を参照して、この [!DNL Edge Delivery Services (EDS)] サイトのドキュメントベースのオーサリング設定の作成に使用される、すべての重要なファイル、フォルダー、設定、web サイトのスタイル設定および機能コードについて確認します。
 
-## [!DNL Edge Delivery Services] 用の [!DNL Universal Editor] ベースのオーサリングフローとの [!DNL AEM Assets] の統合 {#integrate-aem-assets-with-UE-universal-editor}
+## [!DNL Edge Delivery Services] 用の [!DNL Universal Editor] ベースのオーサリングフローとの [!DNL AEM Assets] の統合 {#integrate-aem-assets-with-universal-editor-UE}
 
 [!DNL AEM Assets] と統合する [!DNL Universal Editor] を設定します。 この統合により、[!DNL Dynamic Media with OpenAPI capabilities] を使用してアセットを配信できるようになります。
 
