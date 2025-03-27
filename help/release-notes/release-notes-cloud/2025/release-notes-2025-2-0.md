@@ -1,20 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート。'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.2.0 リリースのリリースノート。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.2.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: 1964d4a40d1272baf661473641381ace900407d1
+source-git-commit: 43a9b29132aca8f5231634b845c55538b59f5ee4
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 76%
+source-wordcount: '1500'
+ht-degree: 100%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の 2025.2.0 リリースノート {#release-notes}
 
-以下のセクションでは、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンの機能リリースノートの概要について説明します。
+以下の節では、[!DNL Experience Manager] as a Cloud Service の 2025.2.0 バージョンの機能リリースノートの概要について説明します。
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ ht-degree: 76%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.3.0）のリリース日は、2025年3月27日（PT）です。次回の機能リリース（2025.4.0）は 2025年4月24日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.2.0）のリリース日は、2025年3月4日（PT）です。次回の機能リリース（2025.3.0）は 2025年3月27日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -44,20 +42,59 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 -->
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### AEM Sites の新機能 {#new-features-sites}
+
+**コンテンツフラグメントの自動タグ付け**
+
+コンテンツフラグメントを作成する際に、コンテンツモデルに割り当てられたタグを自動的に継承できるようになりました。これにより、コンテンツフラグメントに保存されたコンテンツを強力に自動分類できます。
+
+**コンテンツフラグメントの UUID サポート**
+
+コンテンツフラグメントの UUID サポートが一般提供（GA）されるようになりました。この新しい機能は、移動、名前変更、ロールアウトなど、パスが自動的に調整される AEM 内の操作のパスベースの動作を変更するものではありませんが、特に ByPath クエリで個々のフラグメントを直接ターゲットにする GraphQL クエリを使用する場合に、コンテンツフラグメントの外部での使用をより簡単で安定させることができます。フラグメントパスを変更すると、このようなクエリが破損する場合があります。新しい ById クエリタイプを使用する際、パスを変更してもフラグメントの UUID は変更されないので、クエリは安定したままになります。
+
+**コンテンツフラグメントエディターと GraphQL での OpenAPI を備えた Dynamic Media のサポート**
+
+コンテンツフラグメントとは異なる AEM as a Cloud Service プログラムに保存され、新しい OpenAPI 機能を備えた Dynamic Media が有効になっているアセットを、コンテンツフラグメントで使用できるようになりました。新しいコンテンツフラグメントエディターの画像セレクターでは、フラグメントで参照される画像アセットのソースとして「リモート」リポジトリを選択できるようになりました。さらに、AEM GraphQL を使用してこのようなコンテンツフラグメントを配信すると、JSON 応答にリモートアセットの必須プロパティ（assetId、repositoryId）が含まれるようになったので、クライアントアプリケーションでは OpenAPI を備えた Dynamic Media の各 URL を作成し、画像を取得できるようになりました。
+
+**コンテンツフラグメントエディターのロールアウト**
+
+AEM as a Cloud Service では、新しい Spectrum UI ベースのコンテンツフラグメントエディターが引き続き有効になります。2024年11月にすべての Cloud Service 開発環境のデフォルトになった後、2025年4月1日（PT）にはすべてのステージング環境のデフォルト、2025年5月1日（PT）にはすべての実稼動環境のデフォルトとして設定される予定です。すべてのケースで、ユーザーは AEM タッチ UI で従来のコンテンツフラグメントエディターに戻すオプションを引き続き利用できます。
+
+**Translation HTTP API**
+
+しばらくの間、早期導入モードであった AEM Translation HTTP REST API が一般提供（GA）されるようになりました。ドキュメントについて詳しくは、[こちら](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/)を参照してください。API を使用すると、AEM 内のコンテンツの翻訳管理プロセスで必要な手順を自動化できます。
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Dynamic Media の新機能 {#new-features-dynamic-media}
+### AEM Assets の新機能 {#new-features-assets}
 
-**Open API を使用した Dynamic Media を使用して配信されるビデオのロングフォームサポート**
+**Dynamic Media の新しいパッケージ構造**
 
-OpenAPI を使用した Dynamic Media で長編ビデオがサポートされるようになりました。 長形式のビデオは、最大 50 GB と 2 時間をサポートできます。
+市場の期待に応え、トラッキングをサポートするために、更新された Dynamic Media のパッケージ構造が使用可能になりました。新しいパッケージ構造は、以下で構成されています。
 
-### アセットビューの新機能 {#new-features-assets-view}
+* Dynamic Media Prime：配信を強化する OpenAPI を備えた Dynamic Media とビデオが含まれます。
 
+* Dynamic Media Ultimate：より厳しい使用要件を満たすために配信機能と変換機能を追加します。
 
-**ルートタグのサポート**
+新しいパッケージ構造のメリットを得るには、Assets as a Cloud Service Prime または Ultimate が必要です。
 
-AEM Assetsは、メタデータフォームのタグプロパティとカスタムメタデータのマッピングをサポートするようになりました。 さらに、管理者は、特定のルートタグとその下に存在するタグへのアクセスを制限することで、ユーザーに対するタグの可用性を制限できます。
+**AI 生成のビデオキャプション**
+
+Adobe Dynamic Media の AI 生成のビデオキャプションは、人工知能を使用して、ビデオコンテンツのキャプションを自動的に生成します。 この機能は、正確なキャプションを提供することで、アクセシビリティを向上させ、ユーザーエクスペリエンスを強化するように設計されています。キャプションは、元のオーディオ、追加のオーディオトラック、またはビデオプロパティページの「キャプションとオーディオ」タブで提供される追加のキャプションから生成されます。60 を超える言語がサポートされているので、ビデオを公開する前にキャプションを確認およびプレビューできます。
+
+**検索フィルターのカスタマイズ**
+
+カスタム検索フィルターを使用すると、関連情報の検索の精度と効率が向上します。ブランド、製品、カテゴリ、その他の主要な識別子などの特定の属性に従ってデータをフィルタリングし、よりカスタマイズされた検索が可能になります。これにより、組織が改善され、無関係な結果の選別に費やす時間が短縮され、より迅速な意思決定を行うことができます。また、大規模なデータセットの移動や分析が簡単になるので、スケーラビリティもサポートされます。
+
+![検索フィルターのカスタマイズ](/help/assets/assets/custom-search-filters.png)
+
+### コンテンツハブの早期アクセス機能 {#early-access-content-hub}
+
+コンテンツハブでは、既存の静的レンディションに加えて、動的レンディションとスマート切り抜きレンディションを表示およびダウンロードできるようになりました。コンテンツハブ管理者は、設定ユーザーインターフェイスを使用して、これらのレンディションをユーザーが使用できるように設定することもできます。
+
+![動的レンディション](/help/assets/assets/download-single-asset-renditions-dynamic.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -87,15 +124,7 @@ Java 17 または 21 ビルドが検出されると、より高パフォーマ�
 
 >[!IMPORTANT]
 >
-> Java 21 **ランタイム** は、2 月に開発環境/RDE 環境にデプロイされました。これは、4 月 28 日と 29 日 **にステージング環境/実稼動環境に適用され** す。 Java 21 （または Java 17）を使用した **コードの構築** は Java 21 ランタイムとは独立しています。Java 21 （または Java 17）を使用してコードを構築する手順を明示的に実行する必要があります。
-
-### その他の宛先へのAEM ログ転送 – Beta プログラム {#log-forwarding-earlyadopter}
-
-ベータ版では、AEM ログを（HTTPS を使用して） New Relic、Amazon S3、Sumo Logic に転送できます。 なお、AEM ログ（Apache/Dispatcherを含む）はサポートされていますが、CDN ログはサポートされていません。 アクセスについては、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) にメールを送信します。
-
-ログはCloud Managerからダウンロードできますが、多くの組織では、これらのログを優先されるログ配信先にストリーミングすることが有益であると考えています。 AEMはすでに、Azure Blob Storage、Datadog、HTTPS、Elasticsearch（および OpenSearch）、Splunk へのAEMおよび CDN ログ転送（GA）をサポートしています。 この機能は、セルフサービス方式で設定され、設定パイプラインを使用してデプロイされます。
-
-詳しくは、[ ログ転送のドキュメント ](/help/implementing/developing/introduction/log-forwarding.md) を参照してください。
+> 2 月に、Java 21 **ランタイム**&#x200B;が dev/RDE 環境にデプロイされました（Java 17 または 21 で既にビルドされ、Java 21 ランタイムが存在する環境は除く）。Java 21 は、4 月にステージング／実稼動環境に適用されます。
 
 ### Edge コンピューティング - フィードバックのリクエスト {#edge-computing-feedback}
 
