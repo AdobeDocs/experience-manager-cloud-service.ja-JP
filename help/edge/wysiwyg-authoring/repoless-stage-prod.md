@@ -4,9 +4,9 @@ description: 単一のコードベースをリポジトリで活用して、ス�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: beda1168323d511cd7b89bb5d0a6eccb742de36f
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '799'
 ht-degree: 2%
 
 ---
@@ -141,3 +141,9 @@ ht-degree: 2%
 1. そのページの新しいEdge Delivery Services サイト（`https://main--wknd-prod--<your-github-org>.aem.page`）を参照してください。
 
 変更を加えた場合は、個別の実稼動サイト設定が正しく機能しています。
+
+## 使用方法 {#usage}
+
+リポジトリのステージング環境と実稼動環境でプロジェクトを設定したら、それらのコードを個別に管理できます。 次の図は、AEM、Edge Delivery Services サイトおよび GitHub リポジトリ内の様々な環境におけるコンテンツの関係を示しています。
+
+![AEM環境と実稼働/ステージ環境のリポジトリの図 ](assets/repoless/aem-edge-github.png)
