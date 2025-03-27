@@ -3,10 +3,10 @@ title: 配信 API
 description: 配信 API の使用方法について説明します。
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 95%
+source-wordcount: '634'
+ht-degree: 92%
 
 ---
 
@@ -75,11 +75,7 @@ Experience Manager Assets リポジトリで使用可能なすべての[承認�
 | [ビデオアセットのプレーヤーコンテナ](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | ビデオアセットのプレーヤーコンテナを返します。プレーヤーを iframe HTML 要素に埋め込んでビデオを再生できます。 |
 | [選択した出力形式の再生マニフェスト](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | 指定されたビデオアセットの再生マニフェストファイルを、選択した出力形式で返します。再生マニフェストファイルを取り込んでビデオを再生するには、HLS または DASH プロトコルを通じてアダプティブストリーミングが可能なカスタムプレーヤーを作成する必要があります。 |
 
-
->[!NOTE]
->
-* [画像プリセット、スマートイメージング、追加の画像の修飾子](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/)は、限定提供機能として使用できます。アクセス権を取得するには、[アドビカスタマーサポートケースを作成および送信してください](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)。
-* スマート切り抜きは、[Assets Prime](/help/assets/assets-ultimate-overview.md) では使用できません。
+使用可能な Dynamic Media 製品とその機能について詳しくは、[Dynamic Media PrimeとUltimate](/help/assets/dynamic-media/dm-prime-ultimate.md) を参照してください。
 
 ## 配信 API エンドポイント {#delivery-apis-endpoint}
 

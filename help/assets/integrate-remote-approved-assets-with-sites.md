@@ -2,10 +2,10 @@
 title: リモート AEM Assets と AEM Sites の統合
 description: AEM Sites を設定し、承認済み AEM Assets に接続する方法について説明します。
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 97%
+source-wordcount: '1085'
+ht-degree: 91%
 
 ---
 
@@ -178,4 +178,4 @@ AEM Sites インスタンスの AEM コンテンツフラグメント内でリ�
 
 ### Edge Delivery Services でのリモートアセットへのアクセス {#access-assets-eds}
 
-また、Edge Delivery Services でリモートアセットにアクセスすることもできます。詳しくは、[OpenAPI 機能を備えた Dynamic Media を使用して配信される Assets as a Cloud Service からのアセットの利用](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi)を参照してください。
+Microsoft Word、Google Docsまたはユニバーサルエディターでコンテンツを作成してEdge Delivery Servicesに公開する際に、リモートアセットにアクセスできます。 また、Dynamic Media を OpenAPI と共に使用して、ブランド承認済みのアセットを配信し、他にも多くの利点を利用できます。 詳しくは、[Edge Delivery Services用のコンテンツのオーサリング中のAEM Assetsの統合 ](/help/assets/integrate-aem-assets-edge-delivery-services.md) を参照してください。
