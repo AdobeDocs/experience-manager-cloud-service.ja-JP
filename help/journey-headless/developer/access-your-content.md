@@ -5,10 +5,10 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
 workflow-type: tm+mt
-source-wordcount: '1344'
-ht-degree: 100%
+source-wordcount: '1320'
+ht-degree: 98%
 
 ---
 
@@ -132,7 +132,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
 ### フラグメント参照 {#fragment-references}
 
-**フラグメント参照**&#x200B;は、
+**フラグメント参照** および **フラグメント参照 UUID**:
 
 * コンテンツフラグメントモデルの定義時に使用できる特定のデータタイプです。
 * 特定のコンテンツフラグメントモデルに依存する別のフラグメントを参照します。
@@ -140,11 +140,13 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
    * **マルチフィード**&#x200B;として定義した場合、複数のサブフラグメントをプライムフラグメントで参照（取得）できます。
 
-### JSON プレビュー {#json-preview}
+<!--
+### JSON Preview {#json-preview}
 
-コンテンツフラグメントモデルの設計と開発に役立てるため、コンテンツフラグメントエディターで JSON 出力をプレビューできます。
+To help with designing and developing your Content Fragment Models, you can preview JSON output in the Content Fragment Editor.
 
-![JSON プレビュー](assets/cfm-model-json-preview.png "JSON プレビュー")
+![JSON Preview](assets/cfm-model-json-preview.png "JSON Preview")
+-->
 
 <!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
