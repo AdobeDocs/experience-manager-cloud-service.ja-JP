@@ -4,10 +4,10 @@ description: この記事では、SPA エディターの包括的な概要と動
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 99c7e60976da540958b46cb24b2a470bcfd9e635
 workflow-type: tm+mt
 source-wordcount: '1633'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -188,6 +188,6 @@ AEM SPA エディター SDK はアドビで完全にサポートされており�
 * 設定の編集（例：リスナー）
 * 取り消し／やり直し
 * ページの差分とタイムワープ
-* リンクチェッカー、CDN リライターサービス、URL 短縮など、サーバー側で HTML の書き換えを実行する機能
+* [ リンクチェッカー、CDN リライターサービス ](/help/operations/link-checker.md)URL 短縮化など、HTML サーバーサイドの書き換えを実行する機能。
 * 開発者モード
 * AEM ローンチ

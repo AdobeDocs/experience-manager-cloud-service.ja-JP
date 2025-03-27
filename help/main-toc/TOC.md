@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6bce8f33f6588b49fc9165eeeedc8f4057222eb0
+source-git-commit: fc5983b42ee60971ace54a8fb54fdef29de5374d
 workflow-type: tm+mt
-source-wordcount: '6106'
+source-wordcount: '6108'
 ht-degree: 99%
 
 ---
@@ -1430,6 +1430,7 @@ ht-degree: 99%
    + [設定パイプラインの使用](/help/operations/config-pipeline.md)
    + [汎用 Lucene インデックスの削除](/help/operations/removal-generic-lucene-index.md)
    + [クエリとインデックス作成のベストプラクティス](/help/operations/query-and-indexing-best-practices.md)
+   + [ リンクチェッカー ](/help/operations/link-checker.md)
 + コンプライアンス {#compliance}
    + [AEM as a Cloud Service でのコンプライアンス](/help/compliance/home.md)
    + データのプライバシーと保護への対応 {#data-privacy}
