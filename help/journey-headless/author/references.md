@@ -5,10 +5,10 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 2c74a3a42dd21e2eaf71c1922931d5fa5149f7c5
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 100%
+source-wordcount: '791'
+ht-degree: 97%
 
 ---
 
@@ -44,6 +44,13 @@ ht-degree: 100%
 
 コンテンツ参照の役割は、他のコンテンツを参照できるようにすることです。これによって、コンテンツ項目を選択できるブラウザーが開きます。
 
+次の 2 つのタイプがあります。
+
+* **コンテンツ参照**
+   * 参照されるリソースへのパスを指定します
+* **コンテンツ参照（UUID）**
+   * エディターでは、参照は参照先リソースへのパスを指定します。内部的には、参照はリソースを参照する Universally Unique ID（UUID）として保持されます
+
 ## アセット／メディア参照 {#assets-media-references}
 
 アセット（画像やメディアなど）は、「**アセットを挿入**」オプションを使用して、テキストブロック内で参照することができます。この参照によって、ブラウザーが開き、アセットを選択できます。
@@ -75,6 +82,13 @@ ht-degree: 100%
 こうした相互関係は、作成者とヘッドレスアプリケーションの双方が理解できるように、フラグメント参照を使用して表すことができます。
 
 作成者は、これらの関係を定義するわけではありません（コンテンツフラグメントモデルの作成時にコンテンツアーキテクトが行います）が、参照を把握して編集する方法を理解しておく必要があります。
+
+次の 2 つの種類があります。
+
+* **フラグメント参照**
+   * 参照されるリソースへのパスを指定します
+* **フラグメント参照（UUID）**
+   * エディターでは、参照は参照先リソースへのパスを指定します。内部的には、参照はリソースを参照する Universally Unique ID（UUID）として保持されます
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
