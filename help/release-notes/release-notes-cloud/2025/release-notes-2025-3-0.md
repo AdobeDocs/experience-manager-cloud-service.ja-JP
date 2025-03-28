@@ -1,20 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート。'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.3.0 リリースのリリースノート。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.3.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: c5bf8f4f0ffa250bee9743bf1810abcf171f24d3
+source-git-commit: 4d7f72813a1806c7f20d5699f42170b9b49dbb3c
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1079'
 ht-degree: 76%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の 2025.3.0 リリースノート {#release-notes}
 
-以下のセクションでは、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンの機能リリースノートの概要について説明します。
+以下の節では、[!DNL Experience Manager] as a Cloud Service の 2025.3.0 バージョンの機能リリースノートの概要について説明します。
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ ht-degree: 76%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.4.0）のリリース日は、2025年4月24日（PT）です。次回の機能リリース（2025.5.0）は 2025年5月29日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.3.0）のリリース日は、2025年3月27日（PT）です。次回の機能リリース（2025.4.0）は 2025年4月24日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
