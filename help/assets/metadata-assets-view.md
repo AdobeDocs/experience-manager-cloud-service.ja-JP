@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 6d729c8e7f84dccce9c11f1ca13553763d0547f8
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 98%
+source-wordcount: '2124'
+ht-degree: 91%
 
 ---
 
@@ -17,19 +17,19 @@ ht-degree: 98%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
         </td>
     </tr>
     <tr>
@@ -217,6 +217,39 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
    * ![コピーアイコン](assets/do-not-localize/copy.svg) をクリックして、URL をコピーします。
    * ![編集アイコン](assets/do-not-localize/edit.svg) をクリックして、URL を編集します。
 1. 「**[!UICONTROL 保存]**」をクリックして、変更を保存します。
+
+
+### メタデータフォーム内のタグコンポーネントの操作 {#tag-component-metadata-form}
+
+ルート要素は、アセットに関連付けることができるタグのツリー構造を表します。これにより、割り当てられたタグに基づいてアセットを識別できます。 さらに、メタデータエディターでメタデータフォームを設定する際に、特定の分類へのアクセスを制限できます。
+
+#### タグコンポーネントの設定 {#tags-component-configuration}
+
+次の手順を実行して、タグコンポーネントを設定します。
+
+1. メタデータエディターに移動し、**[!UICONTROL タグ]** に移動してキャンバスに配置します。
+1. キャンバスのコンポーネントの名前を変更します。 これをおこなうには、設定パネルの **[!UICONTROL メタデータプロパティ]** の下の [!UICONTROL  ラベル ] に移動して、識別するテキストを追加します。
+1. 設定パネルの [!UICONTROL  メタデータプロパティ ] の下で、コンポーネントに割り当てるメタデータプロパティを検索します。
+1. **[!UICONTROL 特定の分類に制限]** をクリックして、分類のルートパスを制限します。 これを行うには、タグを参照し、特定のパスに対する分類を選択します。
+1. 「**[!UICONTROL 保存]**」をクリックして、変更を保存します。
+
+   ![ ルートタグの設定 ](assets/root-tag-config.png)
+
+1. [ メタデータフォームをフォルダーに割り当てます ](#assign-metadata-form-folder)。
+
+<!--
+#### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
+
+See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the steps below to perform mapping between folder and taxonomy:
+
+1. Go back to the Settings and click **[!UICONTROL Metadata forms]** 
+1. Select a Metadata form that needs mapping. 
+1. Click **[!UICONTROL Assign to folder(s)]**. **[!UICONTROL Select Folder(s)]** screen appears. 
+1. Navigate to the folder that you want to assign to the metadata form. You can select multiple folders.
+1. Click **[!UICONTROL Assign]**.
+-->
+
+設定済みのルートタグを表示するには、アセットの詳細ページに移動します。このページで、メタデータフォームとルートタグの間のマッピングが実行されます。
 
 ## 次の手順 {#next-steps}
 
