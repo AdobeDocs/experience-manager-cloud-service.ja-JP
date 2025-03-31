@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: 41155a724f48ad28a12aac615a3e9a13bb3afa26
+source-git-commit: e3a8afaee6c3baeb593eb69a46648b0a8d2a069f
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 100%
+source-wordcount: '1075'
+ht-degree: 77%
 
 ---
 
@@ -67,31 +67,33 @@ Adobe Cloud Manager では、いくつかの理由により、環境層（パブ
 
 1. 「**更新**」をクリックします。
 
-<!-- 
-## Go live readiness: Configure DNS settings for a custom domain {#go-live-readiness} 
 
-Before a custom domain can serve traffic in Adobe Cloud Manager, you must complete DNS configuration with your DNS provider. After deploying a domain mapping and clicking **Go live**, Cloud Manager displays a dialog box that guides you through the DNS record setup process. You have the option to go live by adding either a CNAME record type or an A record type representing Fastly's IPs, simplifying domain routing. This ability eliminates the restriction of relying solely on CNAME records for domain setup with Fastly.
+## 運用開始準備：カスタムドメインの DNS 設定の指定 {#go-live-readiness}
 
-MAYBE There is support for A record types to improve Go Live readiness for domains using CDN configurations in AEM Cloud Manager. MAYBE
+カスタムドメインがトラフィックを提供する前に、DNS プロバイダーとの DNS 設定を完了する必要があります。 ドメインマッピングをデプロイして **運用開始** をクリックすると、Cloud Managerにダイアログボックスが表示され、DNS レコードのセットアッププロセスを順を追って実行できます。 CNAME レコードタイプまたは A レコードタイプを追加して、実稼動環境に移行するオプションがあります。
 
-See also [APEX record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record#adobe-managed-cert-apex-record) and [CNAME record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record).
+<!-- See also [APEX record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record#adobe-managed-cert-apex-record) and [CNAME record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record). -->
 
-**To configure Go live readiness:**
+**運用開始準備を設定するには：**
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
+1. 左側のサイドメニューの&#x200B;**サービス**&#x200B;で、![ソーシャルネットワークアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg)「**ドメインマッピング**」をクリックします。
+1. ドメインマッピング テーブルで、設定する運用開始準備を持つ CDN に対応する行の末尾付近にある「**運用開始**」をクリックします。
 
-1. In the left side menu, under **Services**, click ![Social network icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Domain Mappings**.
+   ![ 運用開始準備ダイアログボックス ](/help/implementing/cloud-manager/assets/domain-mappings-go-live-readiness.png)
 
-1. In the Domain Mappings table, click **Go live** near the end of a row that corresponds to a CDN whose Go Live readiness you want to configure. 
+1. **運用開始準備** ダイアログボックスで、次のいずれかの操作を行います。
 
-1. In the Go live readiness dialog box, do one of the following:
+   | オプション | ステップ |
+   | --- | --- |
+   | A レコードを設定 | `example.com`<br> などのルートドメインに推奨<ol><li>DNS サービス・プロバイダのポータルにログインします。<li>DNS レコードセクションに移動します。<li>リストされているすべての IP アドレスを指すように A レコードを作成します。</li></ol> |
+   | CNAME を設定 | `www.example.com`<br> などのカスタムドメインにお勧め<ol><li>DMS サービス プロバイダのポータルにログインします。<li>DNS レコードセクションに移動します。<li>DNS サービスプロバイダー（カスタムドメイン）の DNS レコードに [cdn.adobeaemcloud.com](https://cdn.adobeaemcloud.com/) （CNAME レコード）をマッピングします。 このマッピングにより、カスタムドメインで受信したリクエストがアドビの CDN にリダイレクトされるようになります。</li></ol> |
 
-    | Configure  | Steps |
-    | --- | --- |
-    | A RECORD | Recommended for root domains like `example.com`<br><ol><li>Log in to your DNS service provider's portal.<li>Go to the DNS Records section.<li>Create an A record to point to all the listed IP addresses.<li>In the Go live readiness dialog box, click **OK**.<li>In the Domain Mappings table, under the **Status** column, click ![Refresh icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg).<br>The status is updated to **Verified** when the resolution is complete.</li></ol> |
-    | CNAME | Recommended for custom domains like `www.example.com`<br><ol><li>Log in to your DMS service provider's portal.<li>Go to the DNS Records section.<li>Map [cdn.adobeaemcloud.com](http://cdn.adobeaemcloud.com/) (CNAME record) in the DNS record of the DNS service provider (your custom domain). This mapping ensures that requests received at the custom domain are redirected to Adobe's CDN.<li>In the **Go live readiness** dialog box, click **OK** to save the record.<br>Wait for DNS propogation (may take several minutes to a few hours). When the **[!UICONTROL Status]** column in the Domamin Mappings table updates to **[!UICONTROL Verified]**, the custom domain is ready to use. You may need to click ![Refresh icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) to refresh the status.</li></ol> | 
-    
--->
+1. **運用開始準備** ダイアログボックスで、「**OK**」をクリックしてレコードを保存します。
+
+   DNS の伝達を待ちます。数分から数時間かかる場合があります。
+
+   ドメインマッピングテーブルの **[!UICONTROL ステータス]** 列が **[!UICONTROL 検証済み]** に更新されると、カスタムドメインを使用する準備が整います。 ![ 更新アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) をクリックして、ステータスを更新する必要がある場合があります。
 
 ## CDN 設定の削除 {#delete-cdn}
 
