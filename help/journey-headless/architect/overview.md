@@ -5,7 +5,7 @@ exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 0c1d930f3fcffc27b6564449db3ff1968b077720
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 100%
@@ -15,8 +15,6 @@ ht-degree: 100%
 # AEM ヘッドレスコンテンツアーキテクトジャーニー {#aem-headless-content-architect-journey}
 
 AEM の強力で柔軟なヘッドレス機能とその能力および初めてのヘッドレスプロジェクトでの活用方法を説明するガイド付きジャーニーは、こちらから始めてください。
-
-{{headless-trials-promotion}}
 
 ## はじめに {#introduction}
 
