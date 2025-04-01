@@ -6,8 +6,8 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: ae873f8d61f3f6b79f09df100d62714e41e3b849
+workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 100%
 
@@ -18,8 +18,6 @@ ht-degree: 100%
 Adobe Experience Manager ヘッドレス CMS を初めて使用する開発者向けドキュメントへようこそ。
 
 強力かつ柔軟なヘッドレス機能とその特長および最初のヘッドレス開発プロジェクトでの活用方法を説明します。このジャーニーでは、最初のヘッドレスアプリケーションの開発に必要なあらゆる情報を提供します。
-
-{{headless-trials-promotion}}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_developer_resources"
