@@ -1,15 +1,13 @@
 ---
-source-git-commit: e4ceba6510992f82b97effca27a98f442fff8f5c
+source-git-commit: 92ad3ce6c880664e42fce761ab52b21b94a25a5c
 workflow-type: tm+mt
-source-wordcount: '1505'
-ht-degree: 100%
+source-wordcount: '1497'
+ht-degree: 99%
 
 ---
 # スニペット {#snippets}
 
-## ヘッドレス体験版のプロモーション {#headless-trials-promotion}
-
-[![30 日間の体験版を使用してヘッドレス CMS を理解しましょう](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=ja)
+## ヘッドレス体験版（プログラムは廃止されました） {#headless-trials-promotion}
 
 ## Edge 配信サービスのオーサリング {#edge-delivery-authoring}
 
