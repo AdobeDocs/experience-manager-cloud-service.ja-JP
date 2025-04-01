@@ -1,38 +1,38 @@
 ---
-title: Adobe Experience Manager as a Cloud ServiceのExtension Managerについて説明します
-description: AEMのExtension Managerを使用すると、開発者や実務担当者は、App Builderで構築された拡張機能を使用してAEMの機能を強化できます。
+title: Adobe Experience Manager as a Cloud Service の Extension Manager について説明します。
+description: AEM の Extension Manager を使用すると、開発者や実務担当者は、App Builder で作成された拡張機能を使用して AEM の機能を強化できます。
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7d69112c5a1dd2256ed38b2cd01c84583f587912
-workflow-type: tm+mt
+exl-id: 8bc58d13-3c0f-4b09-a95a-f745114ceda1
+source-git-commit: 75865cc54795870a2aa1a06f25eb2148c2a6f4c7
+workflow-type: ht
 source-wordcount: '149'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
+# 拡張機能と Extension Manager {#extensions-and-the-extension-manager}
 
-# 拡張機能とExtension Manager {#extensions-and-the-extension-manager}
-
-Adobe Experience Manager（AEM）as a Cloud ServiceのExtension Managerを使用すると、開発者や実務担当者は、Adobe App Builderで構築された UI 拡張機能を使用してAEMの機能を強化できます。
+Adobe Experience Manager（AEM）as a Cloud Service の Extension Manager を使用すると、開発者や実務担当者は、Adobe App Builder で作成された UI 拡張機能を使用して AEM の機能を強化できます。
 
 Extension Manager で以下を実行できます。
 
-* インスタンスごとに拡張機能を有効または無効にする
-* 拡張機能パラメーターの設定
-* 拡張機能をプレビューし、共有可能なプレビューリンクを生成する
-* インタラクティブなデモを使用して UI 拡張機能を確認
-* ファーストパーティの拡張機能を使用してAdobeの実験的な機能にアクセス
+* インスタンス単位で拡張機能を有効または無効にする
+* 拡張パラメーターの設定
+* 拡張機能のプレビューと共有可能なプレビューリンクの生成
+* インタラクティブデモを介した UI 拡張機能の確認
+* ファーストパーティの拡張機能を使用した、アドビの実験機能へのアクセス
 
-![AEMのExtension Manager](/help/implementing/developing/extending/assets/homepage.png)
+![AEM の Extension Manager](/help/implementing/developing/extending/assets/homepage.png)
 
-詳しくは、以下を参照してください。
+詳しくは、次を参照してください。
 
-* Extension Manager:
+* Extension Manager：
 
-   * AEM Experience Managerの [Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)
-   * [Adobeが開発した拡張機能 ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+   * [AEM Experience Manager の Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)
+   * [アドビが開発した拡張機能](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
-* ザ AEM App Builder
+* AEM App Builder
 
-   * [Adobe Developer App Builderを使用したAEMの拡張](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
-   * [AEM UI 拡張機能 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)
+   * [Adobe Developer App Builder を使用した AEM の拡張](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
+   * [AEM UI 拡張機能](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)
