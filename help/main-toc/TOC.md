@@ -115,7 +115,7 @@ ht-degree: 99%
          + [メンテナンスリリースノート（2023.4.0）](/help/release-notes/maintenance/2023/2023-4-0.md)
          + [メンテナンスリリースノート（2023.2.0）](/help/release-notes/maintenance/2023/2023-2-0.md)
          + [メンテナンスリリースノート（2023.1.0）](/help/release-notes/maintenance/2023/2023-1-0.md)
-   + Cloud Manager リリースノート {#cloud-manager}
+   + Cloud Manager のリリースノート {#cloud-manager}
       + [現在](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025年度 {#2025}
          + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
@@ -707,7 +707,7 @@ ht-degree: 99%
 + Forms {#forms}
    + 概要 {#forms-overview}
       + [はじめに](/help/forms/home.md)
-      + [概要](/help/forms/home2.md)
+      + [はじめに](/help/forms/home2.md)
       + [トップ Adobe Experience Manager Forms イノベーション](/help/forms/latest-innovations.md)
       + [早期アクセス（EA）機能](/help/forms/early-access-ea-features.md)
       + [主要な変更点](/help/forms/notable-changes.md)
@@ -1048,8 +1048,8 @@ ht-degree: 99%
          + [スパムからのフォームの保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [フォームの公開およびデプロイ方法：ユニバーサルエディター公開ガイド](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [カスタムフォームコンポーネントの作成：ユニバーサルエディター開発者向けガイド](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [フォームデータモデルの統合：Formsとフォームデータモデルの統合](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-         + [ 再利用可能なモジュール型スタンドアロンセグメント：フォーム内でのフォームフラグメントの作成と使用 ](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [フォームデータモデルの統合：Forms とフォームデータモデルの統合](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [再利用可能なモジュール型スタンドアロンセグメント：フォーム内でのフォームフラグメントの作成と使用](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
       + ドキュメントベースのオーサリング {#getting-started-edge-delivery-services-forms}
          + [最初のフォームの作成：Google Sheetsと Excel を使用したクイックスタートガイド](/help/edge/docs/forms/tutorial.md)
          + [Google Sheets または Excel を使用したフォームの作成方法：ステップバイステップガイド](/help/edge/docs/forms/create-forms.md)
@@ -1391,7 +1391,7 @@ ht-degree: 99%
          + [UI 文字列の国際化](/help/implementing/developing/extending/i18n/dev.md)
          + [トランスレーターを使用した辞書の管理](/help/implementing/developing/extending/i18n/translator.md)
          + [翻訳のための文字列の抽出](/help/implementing/developing/extending/i18n/extract.md)
-      + [拡張機能とExtension Manager](/help/implementing/developing/extending/extension-manager.md)
+      + [拡張機能と Extension Manager](/help/implementing/developing/extending/extension-manager.md)
    + AEM as a Cloud Service へのデプロイ {#deploying}
       + [AEM as a Cloud Service へのデプロイ](/help/implementing/deploying/overview.md)
       + [AEM バージョンのアップデート](/help/implementing/deploying/aem-version-updates.md)

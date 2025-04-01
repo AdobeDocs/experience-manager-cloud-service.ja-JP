@@ -9,7 +9,7 @@ exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: c81698c2d424d39688d1c9fad6c085223f5854a5
 workflow-type: tm+mt
 source-wordcount: '1080'
-ht-degree: 67%
+ht-degree: 83%
 
 ---
 
@@ -46,20 +46,20 @@ AEM Forms には、アダプティブフォームブロックと呼ばれるブ�
 ### フォームの作成
 
 1. AEM Forms as a Cloud Service オーサーインスタンスにログインします。
-1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
+1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL フォーム]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
 1. **[!UICONTROL 作成]**／**[!UICONTROL アダプティブフォーム]**&#x200B;を選択します。ウィザードが開きます。
 1. 「**ソース**」タブで、Edge Delivery Services ベースのフォームテンプレートを選択します。
 
    ![EDS フォームを作成](/help/edge/assets/create-eds-forms.png)
 
 
-   Edge Delivery Servicesベースのテンプレートを選択すると、「**[!UICONTROL 作成]**」ボタンが有効になります。
-1. （オプション） **[!UICONTROL データSource]** または **[!UICONTROL 送信]** タブで、データソースまたは送信アクションを選択することができます。
+   Edge Delivery Services ベースのテンプレートを選択すると、「**[!UICONTROL 作成]**」ボタンが有効になります。
+1. （オプション）「**[!UICONTROL データソース]**」タブまたは「**[!UICONTROL 送信]**」タブで、データソースまたは送信アクションを選択できます。
 1. （オプション）「**[!UICONTROL 配信]**」タブで、フォームの公開日または非公開日を指定することができます。
 
 1. 「**[!UICONTROL 作成]**」をクリックすると、**フォームを作成**&#x200B;ウィザードが表示されます。
-1. **名前** と **タイトル** を指定します。
-1. **GitHub URL** を指定します。 例えば、GitHub リポジトリの名前が `edsforms` で、アカウント `wkndforms` の下にある場合、URL は次のようになります。
+1. 「**名前**」と「**タイトル**」を指定します。
+1. **GitHub URL** を指定します。例えば、GitHub リポジトリの名前が `edsforms` で、アカウント `wkndforms` の下にある場合、URL は次のようになります。
    `https://github.com/wkndforms/edsforms`
 1. 「**[!UICONTROL 作成]**」をクリックします。
 
@@ -150,7 +150,7 @@ URL 構造は、ステージングされたバージョンとライブバージ�
 AEM Forms ユーザーインターフェイスを使用して、フォームに対して複数の操作を実行できます。
 
 1. AEM Forms as a Cloud Service オーサーインスタンスにログインします。
-1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
+1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL フォーム]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
 
 1. フォームを選択すると、選択したフォームに対して実行できる次の操作がツールバーに表示されます。
 
@@ -166,22 +166,22 @@ AEM Forms ユーザーインターフェイスを使用して、フォームに�
   </tr>
     <tr>
    <td><p>プロパティ</p> </td>
-   <td><p>フォームのプロパティを変更するオプションを提供します。<br /> <br /> </p> </td>
+   <td><p>フォームのプロパティを変更するオプションを指定します。<br /> <br /> </p> </td>
   </tr>
   <td><p>コピー</p> </td>
-   <td><p> フォームをコピーして目的の場所に貼り付けるオプションが用意されています。<br /> <br /> </p> </td>
+   <td><p> フォームを目的の場所にコピー＆ペーストするオプションを指定します。<br /> <br /> </p> </td>
   </tr>
    <tr>
    <td><p>プレビュー</p> </td>
-   <td><p>フォームをHTMLとしてプレビューするオプションや、XML ファイルからのデータをフォームと結合してカスタムプレビューを実行するオプションが用意されています。<br /> </p> </td>
+   <td><p>フォームを HTML としてプレビューするか、XML ファイルのデータをフォームと結合してカスタムプレビューを実行するオプションを指定します。<br /> </p> </td>
   </tr>
   <tr>
    <td><p>ダウンロード</p> </td>
-   <td><p>選択したフォームをダウンロードします。<br /> <br /> </p> </td>
+   <td><p>選択されているフォームをダウンロードします。<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>レビューの開始／レビューの管理</p> </td>
-   <td><p>選択されたフォームのレビューを開始したり管理したりできます。<br /> <br /> </p> </td>
+   <td><p>選択されているフォームのレビューを開始したり管理したりできます。<br /> <br /> </p> </td>
   </tr>
   <!--<tr>
    <td><p>Add Dictionary</p> </td>
@@ -189,15 +189,15 @@ AEM Forms ユーザーインターフェイスを使用して、フォームに�
   </tr>-->
   <tr>
    <td><p>公開／非公開</p> </td>
-   <td><p>選択されているフォームを公開/非公開します。<br /> <br /> </p> </td>
+   <td><p>選択されているフォームを公開／非公開します。<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>削除</p> </td>
-   <td><p>選択したフォームを削除します。<br /> <br /> </p> </td>
+   <td><p>選択されているフォームを削除します。<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>比較</p> </td>
-   <td><p>プレビュー用に 2 つの異なるフォームを比較します。<br /> <br /> </p> </td>
+   <td><p>プレビュー目的で 2 つの異なるフォームを比較します。<br /> <br /> </p> </td>
   </tr>
  </tbody>
 </table>

@@ -1,19 +1,19 @@
 ---
 title: Cloud Manager での外部リポジトリの追加 - ベータ版限定
-description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Managerは、GitHub Enterprise Server、GitLab、Bitbucket リポジトリとの統合をサポートしています。
+description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise Server、GitLab、Bitbucket リポジトリとの統合をサポートしています。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 source-git-commit: 167e6f01cd9bca6191dd47c33561d37a0633be77
 workflow-type: tm+mt
 source-wordcount: '1932'
-ht-degree: 71%
+ht-degree: 74%
 
 ---
 
 # Cloud Manager での外部リポジトリの追加 - ベータ版限定 {#external-repositories}
 
-Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Managerは、GitHub Enterprise Server、GitLab、Bitbucket リポジトリとの統合をサポートしています。
+Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise Server、GitLab、Bitbucket リポジトリとの統合をサポートしています。
 
 >[!NOTE]
 >
@@ -137,7 +137,7 @@ URL をプレーンテキストファイルにペーストします。コピー�
 1. 「**閉じる**」をクリックします。
 1. Git ベンダーソリューション（GitHub Enterprise、GitLab、Bitbucket）に移動します。
 
-   Webhook 設定と各ベンダーに必要なイベントのすべての詳細は、[ 外部リポジトリの追加 ](#add-ext-repo) を参照してください。 手順 8 の下で、表を参照してください。
+   各ベンダーに必要な web フック設定とイベントについて詳しくは、[外部リポジトリの追加](#add-ext-repo)を参照してください。手順 8 の表を参照してください。
 
 1. ソリューションの **webhook** 設定セクションを見つけます。
 1. 前の手順でコピーした webhook URL を「URL」テキストフィールドにペーストします。
