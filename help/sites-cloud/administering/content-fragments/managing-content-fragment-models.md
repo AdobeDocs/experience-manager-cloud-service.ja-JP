@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
+source-git-commit: 3e4775df58a03136e925be73dab6faf673e7215e
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2290'
 ht-degree: 51%
 
 ---
@@ -95,7 +95,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 * **名前**
    * エディターでモデルを開くためのリンクを提供します。
-* ロック済み
+* **ロック済み** （南京錠アイコン）
    * モデルをロックすると、南京錠アイコンが表示されます。
 * **パス**
    * コンソールで設定を開くためのリンクとしてパスを提供します。
