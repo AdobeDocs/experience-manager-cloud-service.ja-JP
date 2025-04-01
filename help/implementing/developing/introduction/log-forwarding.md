@@ -4,9 +4,9 @@ description: AEM as a Cloud Serviceでのログのベンダーへの転送につ
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3727dc18b34f7a2eb307703c94fbc3a6ffe17437
+source-git-commit: d25c4aa5801d1ef2b746fc207d9c64ddf381bb8e
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: '2276'
 ht-degree: 3%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 3%
 
 ログベンダーのライセンスを持つお客様、またはログ製品をホストするお客様は、AEM ログ（Apache/Dispatcherを含む）および CDN ログを、関連するログ出力先に転送することができます。 AEM as a Cloud Serviceは、次のログ出力先をサポートしています。
 
-* Amazon S3 （プライベートベータ版、[^1] を参照）
+* Amazon S3 （プライベートベータ版、以下のメモを参照）
 * Azure Blob Storage
 * Datadog
 * Elasticsearchまたは OpenSearch
 * HTTPS
 * Splunk
-* Sumo ロジック（プライベートベータ版。[^1] を参照）
+* Sumo ロジック（プライベートベータ版、以下のメモを参照）
 
 ログ転送は、Git で設定を宣言することでセルフサービス方式で設定され、Cloud Manager設定パイプラインを介して開発環境、ステージング環境、実稼動環境の各タイプにデプロイできます。 設定ファイルは、コマンドラインツールを使用して迅速な開発環境（RDE）にデプロイできます。
 
@@ -33,7 +33,9 @@ AEMと Apache/DispatcherAEMのログを、専用のエグレス IP などの高�
 
 ログの宛先に送信されたログに関連付けられているネットワーク帯域幅は、組織のネットワーク I/O 使用の一部と見なされることに注意してください。
 
-[^1] Amazon S3 および Sumo Logic はPrivate Betaにあり、AEM ログ （Apache/Dispatcherを含む）のみをサポートします。  HTTPS を介したNew Relicはプライベートベータ版でもあります。 アクセスをリクエストするには、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) にメールを送信します。
+>[!NOTE]
+>
+>Amazon S3 および Sumo Logic はPrivate Betaにあり、AEM ログ （Apache/Dispatcherを含む）のみをサポートします。  HTTPS を介したNew Relicはプライベートベータ版でもあります。 アクセスをリクエストするには、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) にメールを送信します。
 
 ## この記事の編成方法 {#how-organized}
 
@@ -192,6 +194,7 @@ CDN ログの場合は、[Fastly ドキュメント – 公開 IP リスト ](ht
 
 ### Amazon S3 {#amazons3}
 
+>[!NOTE]
 >
 >S3 に定期的に書き込まれるログ。ログ ファイルの種類ごとに 10 分ごとに書き込まれます。  これにより、機能を切り替えると、ログが S3 に書き込まれるまでの初期遅延が発生する可能性があります。  この動作が存在する理由について詳しくは、[ こちら ](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs) を参照してください。
 
@@ -384,7 +387,7 @@ data:
 
 アクセスをリクエストするには、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) にメールを送信します。
 
->
+>[!NOTE]
 >New Relicは、New Relic アカウントがプロビジョニングされている場所に基づいて、地域固有のエンドポイントを提供します。  New Relicのドキュメントについては、[ こちら ](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) を参照してください。
 
 #### HTTPS CDN ログ {#https-cdn}
@@ -459,7 +462,7 @@ data:
       index: "aem-logs"
 ```
 
->
+>[!NOTE]
 > 「インデックス」フィールド機能を利用するには、Sumo Logic Enterprise サブスクリプションが必要です。  エンタープライズ以外のサブスクリプションの場合、ログは標準として `sumologic_default` パーティションにルーティングされます。  詳しくは、[Sumo Logic Partitioning ドキュメント ](https://help.sumologic.com/docs/search/optimize-search-partitions/) を参照してください。
 
 ## ログエントリの形式 {#log-formats}
