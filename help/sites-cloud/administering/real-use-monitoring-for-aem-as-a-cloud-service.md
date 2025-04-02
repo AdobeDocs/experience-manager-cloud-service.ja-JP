@@ -4,10 +4,10 @@ description: クライアントサイドのデータ収集を監視できる自�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: e6a610c56b9ad7a684ea9f5ef72199d3bed28cc0
+source-git-commit: f3091a3868ac57150afd6f1640709ce3e9566bac
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 96%
+source-wordcount: '913'
+ht-degree: 95%
 
 ---
 
@@ -27,13 +27,7 @@ RUM（実際の使用のモニタリング）サービスは、web サイトま�
 
 ## 実際の使用のモニタリングサービスは、どのようなユーザーにメリットがあるか？ {#who-can-benefit-from-rum-service}
 
-実際の使用のモニタリングは、エンドユーザーが AEM サイトでどのようなやり取りを行っているかをお客様とアドビが理解するのに役立ちます。実際の使用のモニタリングは、パフォーマンスの問題を診断し、実験の効果を測定します。実際の使用のモニタリングは、サンプリングを通じて訪問者のプライバシーを保護します。つまり、すべてのページビューのうちのごく一部のみが監視され、個人を特定できる情報（PII）は収集されません。
-
-## 実際の使用のモニタリングサービスとプライバシー {#rum-service-and-privacy}
-
-AEM の実際の使用のモニタリングサービスは、訪問者のプライバシーを保護し、データ収集を最小限に抑えます。つまり、訪問者として、訪問しているサイトや、アドビに提供されているサイトが個人情報を収集することはありません。
-
-サイトオペレーターとして、この機能を通じてモニタリングを有効にするオプトインを追加する必要はありません。RUM を有効にするのにエンドユーザーが同意する必要がある追加のポップアップや同意フォームはありません。
+実際の使用のモニタリングは、エンドユーザーが AEM サイトでどのようなやり取りを行っているかをお客様とアドビが理解するのに役立ちます。リアルタイムモニタリングは、限られたデータ収集とサンプリングを通じて訪問者のプライバシーを保持し、すべてのページビューのごく一部のみを監視します。
 
 ## 実際の使用のモニタリングサービスのデータサンプリング {#rum-service-data-sampling}
 
@@ -43,7 +37,7 @@ AEM の実際の使用のモニタリングサービスは、訪問者のプラ�
 
 ## 収集されるデータ {#what-data-is-being-collected}
 
-実際の使用のモニタリングサービスは、個人を特定できる情報の収集を防ぐように設計されています。RUM で収集される完全な情報セットを以下に示します。
+Real Use Monitoring サービスは、データ収集を最小限に抑えるように設計されています。 RUM で収集される完全な情報セットを以下に示します。
 
 * 訪問しているサイトのホスト名（例：`experienceleague.adobe.com`）
 * `desktop:windows` や `mobile:ios` など、ページの表示に使用される幅広いユーザーエージェントタイプとオペレーティングシステム
@@ -55,7 +49,7 @@ AEM の実際の使用のモニタリングサービスは、訪問者のプラ�
 * チェックポイント（ページの読み込みシーケンスまたは訪問者としてのページとのやり取りのシーケンスにおける特定のイベントの名前）。
 * ソース（上記のチェックポイントでユーザーがやり取りする DOM 要素の識別子）。例えば、これは画像の可能性があります
 * ターゲット（上記のチェックポイントでユーザーがやり取りする外部ページまたはリソースへのリンク）。例：`https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
-* 訪問者のエクスペリエンスの品質を表す [Core Web Vitals （CWV） ](https://web.dev/articles/lcp) パフォーマンス指標 [Largest Contentful Paint （LCP） ](https://web.dev/articles/lcp)、[Interaction to Next Paint （INP） ](https://web.dev/articles/inp) および [ 累積レイアウトシフト（CLS） ](https://web.dev/articles/cls)。
+* 訪問者のエクスペリエンスの質を表す[コア web バイタル（CWV）](https://web.dev/articles/lcp)パフォーマンス指標、[最大コンテンツの描画（LCP）](https://web.dev/articles/lcp)、[次のペイントまでのインタラクション（INP）](https://web.dev/articles/inp)および[累積レイアウトシフト（CLS）](https://web.dev/articles/cls)。
 
 ## お客様に対する実際の使用のモニタリングの仕組み {#how-rum-works-for-a-customer}
 
@@ -105,7 +99,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    RUM ライブラリと RUM コレクションはコンテンツリクエストとしてカウントされず、レポートされるページビュー数や API 呼び出し数は増加しません。さらに、AEM as a Cloud Service で標準の CDN を使用するお客様の場合、[サーバーサイドのコレクション](#serverside-collection)がコンテンツリクエストの基本となります。
 
-1. **オプトアウトするにはどうすればよいですか？**
+1. **RUM を無効にするにはどうすればよいですか？**
 
    アドビでは、実際の使用のモニタリング（RUM）の使用をお勧めします。これは、RUM には大きなメリットがあり、web サイトのパフォーマンスを改善することでデジタルエクスペリエンスを最適化できるようになるからです。このサービスは、シームレスに設計され、web サイトのパフォーマンスに影響を与えません。
 
