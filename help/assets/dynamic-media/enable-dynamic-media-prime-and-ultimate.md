@@ -4,10 +4,10 @@ description: ' [!DNL Dynamic Media]  Prime と Ultimate のサービスを有効
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 98%
+source-wordcount: '1077'
+ht-degree: 99%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 98%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
         </td>
         <td>
             <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
@@ -53,7 +53,7 @@ ht-degree: 98%
 
 ## [!DNL Dynamic Media] Ultimate を有効にする {#enable-dynamic-media-ultimate}
 
-[!DNL Dynamic Media] Ultimate を有効にするには、Cloud Service 環境で次の手順を実行します。
+[!DNL Dynamic Media] Ultimateを有効にするには：
 
 1. [アクティベート [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi)
 1. [ [!DNL Dynamic Media]  ソリューションを設定](#configure-dynamic-media-solutions)
@@ -186,11 +186,14 @@ IMS 組織で既存の会社（アカウント）を表示するか、新しい 
 
 1. **[!UICONTROL ステータス]**&#x200B;が保留中の場合、解決するにはカスタマーサポートチームに問題を報告してください。
 
-   ![保留中ステータス](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
+
+   ![保留中ステータス](/help/assets/assets/company-creation-pending-status.png){width="350" align="center"}
+
+
 
 1. **[!UICONTROL ステータス]**&#x200B;が失敗の場合は、失敗の理由に基づいて再試行します。
 
-   ![失敗ステータス](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
+   ![失敗ステータス](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
 
 ### オプション：配信層でカスタムドメインを設定 {#configure-custom-domain-in-delivery-tier}
 
@@ -303,7 +306,7 @@ TBD: Wiki in progress..
 
 ## [!DNL Dynamic Media] Prime を有効にする {#enable-dynamic-media-prime}
 
-[!DNL Dynamic Media] Prime を有効にするには、Cloud Service 環境で次の手順を実行します。
+[!DNL Dynamic Media] Primeを有効にするには：
 
 1. [OpenAPI を備えた Dynamic Media をアクティベート](#activate-dynamic-media-with-openapi)
 1. [オプション：配信層でカスタムドメインを設定](#configure-custom-domain-in-delivery-tier)

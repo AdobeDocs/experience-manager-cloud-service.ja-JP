@@ -3,10 +3,10 @@ title: 配信 API
 description: 配信 API の使用方法について説明します。
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 92%
+source-wordcount: '653'
+ht-degree: 94%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 92%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
         </td>
     </tr>
     <tr>
@@ -74,6 +74,8 @@ Experience Manager Assets リポジトリで使用可能なすべての[承認�
 | [アセットのメタデータ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) | タイトル、説明、CreateDate、ModifyDate など、アセットに関連付けられたプロパティを返します。 |
 | [ビデオアセットのプレーヤーコンテナ](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | ビデオアセットのプレーヤーコンテナを返します。プレーヤーを iframe HTML 要素に埋め込んでビデオを再生できます。 |
 | [選択した出力形式の再生マニフェスト](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | 指定されたビデオアセットの再生マニフェストファイルを、選択した出力形式で返します。再生マニフェストファイルを取り込んでビデオを再生するには、HLS または DASH プロトコルを通じてアダプティブストリーミングが可能なカスタムプレーヤーを作成する必要があります。 |
+
+OpenAPI 機能を備えた Dynamic Media は、長形式ビデオもサポートします。 ビデオは最大 50 GB と 2 時間をサポートできます。
 
 使用可能な Dynamic Media 製品とその機能について詳しくは、[Dynamic Media PrimeとUltimate](/help/assets/dynamic-media/dm-prime-ultimate.md) を参照してください。
 
