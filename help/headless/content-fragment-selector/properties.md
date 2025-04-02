@@ -2,13 +2,13 @@
 title: Adobe Experience Manager as a Cloud Service用マイクロフロントエンドコンテンツフラグメントセレクタープロパティ
 description: アプリケーションからコンテンツフラグメントを検索、検索、取得するようにマイクロフロントエンドコンテンツフラグメントセレクターを設定するためのプロパティ。
 role: Admin, User
-source-git-commit: 32e1b3cef768b420f32b70202ddadc80db2b74e8
+exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
+source-git-commit: a3d8961b6006903c42d983c82debb63ce8abe9ad
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '894'
 ht-degree: 48%
 
 ---
-
 
 # コンテンツフラグメントセレクター – 関連プロパティ {#content-fragment-selector-related-properties}
 
@@ -28,10 +28,10 @@ ht-degree: 48%
 | `filters` | FragmentFilter | なし | | コンテンツフラグメントのリストに適用するフィルター。 デフォルトでは、`/content/dam` 下のフラグメントが表示されます。 デフォルト値：`{ folder: "/content/dam" }` |
 | `isOpen` | ブール値 | あり | `false` | セレクターを開いたり閉じたりするトリガーを示すフラグ。 |
 | `onDismiss` | （） => 無効 | あり | | **解除** が選択されたときに呼び出される関数。 |
-| `onSubmit` | （{ contentFragments: `{id: string, path: string}[]`, domainNames: `string[]` }） => void | 1 つ以上のコンテンツフラグメントを選択した後に **Select** を使用した場合に呼び出される関数。 <br><br> 関数は次を受け取ります。<br><ul><li> 選択したコンテンツフラグメントの「`id`」フィールドと「`path`」フィールド</li><li>リポジトリのプログラム id と環境 id に関連するドメイン名（ステータス `ready` と `tier` パブリッシュを持つ）</li></ul><br> ドメイン名がない場合は、パブリッシュインスタンスがフォールバックドメインとして使用されます。 |
-| `theme` | 「光」 | 「ダーク」 | なし | | コンテンツフラグメントセレクターのテーマ。 デフォルトのテーマは、UnifiedShell 環境のテーマに設定されています。 |
-| `selectionType` | 「独身」 | 「複数」 | なし | `single` | FragmentSelector の選択制限に使用できる選択タイプ。 |
-| `dialogSize` | &quot;fullscreen&quot; | &quot;fullscreenTakeover&quot; | なし | `fullscreen` | ダイアログのサイズを制御するオプションのプロパティ。 |
+| `onSubmit` | （{ contentFragments: `{id: string, path: string}[]`, domainNames: `string[]` }） => void | あり | | 1 つ以上のコンテンツフラグメントを選択した後に **Select** を使用した場合に呼び出される関数。 <br><br> 関数は次を受け取ります。<br><ul><li> 選択したコンテンツフラグメントの「`id`」フィールドと「`path`」フィールド</li><li>リポジトリのプログラム id と環境 id に関連するドメイン名（ステータス `ready` と `tier` パブリッシュを持つ）</li></ul><br> ドメイン名がない場合は、パブリッシュインスタンスがフォールバックドメインとして使用されます。 |
+| `theme` | 「明るい」または「暗い」 | なし | | コンテンツフラグメントセレクターのテーマ。 デフォルトのテーマは、UnifiedShell 環境のテーマに設定されています。 |
+| `selectionType` | 「single」または「multiple」 | なし | `single` | FragmentSelector の選択制限に使用できる選択タイプ。 |
+| `dialogSize` | 「fullscreen」または「fullscreenTakeover」 | なし | `fullscreen` | ダイアログのサイズを制御するオプションのプロパティ。 |
 | `waitForImsToken` | ブール値 | いいえ | `false` | コンテンツフラグメントセレクターが SUSI フローのコンテキストでレンダリングされるかどうかを示し、コンテン `imsToken` が準備されるのを待つ必要があります。 |
 | `imsAuthInfo` | ImsAuthInfo | なし | | ログインしたユーザーの IMS 認証情報を含むオブジェクト。 |
 | `runningInUnifiedShell` | ブール値 | いいえ | | コンテンツフラグメントセレクターが UnifiedShell またはスタンドアロンのどちらで実行されているかを示します。 |
