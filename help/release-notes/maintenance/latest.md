@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 7d93af706d8b0556e9e26282d339794447eb0a41
+source-git-commit: 96084c84c45af54b1f152e22b8331f85dc6b583f
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1501'
 ht-degree: 21%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 21%
 ### 機能強化 {#enhancements-20133}
 
 * ASSETS-47850:AEM CS が ES 有効になっている場合、Scene7 設定の追加を制限する
-* CQ-4359547:https://git.corp.adobe.com/target-sdk/tsdk-core リポジトリから Guava が完全に削除される。
+* CQ-4359547:Git リポジトリから Guava が完全に削除される。
 * FORMS-17551:SharePoint リスト統合でレコードのドキュメント（DoR）がサポートされるようになりました。
 * FORMS-18432: フォーム固有の（正規表現ベースの）クライアントサイドの事前入力設定が実装されて、OSGI レベルを変更せずに選択的に事前入力機能が有効になりました。
 * FORMS-18513: AEP コネクタにデータツリー変換のサポートを実装して、ウィザード機能とデータ処理機能を強化しました。
@@ -57,16 +57,16 @@ ht-degree: 21%
 * SITES-28549:AEM層に基づいてドメイン ID を返す `/cf/domains` を作成します。
 * SITES-29026：言語と国コードを使用してコンテンツフラグメントのロケールを指定するオプションのパラメーターが追加されました。
 * SITES-29031: PATCH処理フラグメントのロジックが改善され、パフォーマンスが向上しました。
-* SITES-29169：移動、名前変更、または削除されたリソースを参照している場合、すべての公開済みリソースが（「公開済み」または「変更済み」ステータスであるかどうかに関係なく）再公開されます。
+* SITES-29169：移動、名前変更、または削除されたリソースを参照している場合、公開済みステータスのリソースが再公開されます。
 * SITES-29376：公開済みリソースの削除を検証するコード切り替えスイッチを追加。
-* SITES-29417：を含めるのではなく、jcr:content ノードにリクエストを転送するように、/libs/cq/Page/proxy.jspを更新します。
+* SITES-29417：リクエストを含める代わりに jcr:content ノードに転送するように、`/libs/cq/Page/proxy.jsp` を更新します。
 * SITES-2947:kibana ビジュアライゼーションを作成/変更して、公開ラップを比較します。
 * SITES-29733：コンテンツフラグメントのタグによるモデル検索のパフォーマンスが向上しました。
 * SITES-8316: コンテンツポリシー：ContentPolicyManager をキャッシュします。
-* SITES-24906：ユニバーサルエディターを使用したEdge Delivery：マッピングを使用せずに、作成者が作成したスプレッドシートをサポートする（アーリーアクセス）
-* SITES-24907：ユニバーサルエディターを使用したEdge Delivery:MSM のユースケース向けに、複数のサイトへのAssetsの公開をサポート（アーリーアクセス）
-* SITES-27956：ユニバーサルエディターを使用したEdge Delivery：公開スループットの向上（早期アクセス）
-* SITES-27956：ユニバーサルエディターを使用したEdge Delivery:Edge Delivery Servicesに公開する際のエラー処理の改善（アーリーアクセス）
+* SITES-24906：ユニバーサルエディターを使用したEdge Delivery：マッピングを使用せずに、作成者が作成したスプレッドシートをサポートします（アーリーアクセス）。
+* SITES-24907：ユニバーサルエディターを使用したEdge Delivery:MSM のユースケース（アーリーアクセス）向けに、複数のサイトへのAssetsの公開をサポートします。
+* SITES-27956：ユニバーサルエディターを使用したEdge Delivery：公開スループットの向上（早期アクセス）。
+* SITES-27956：ユニバーサルエディターを使用したEdge Delivery:Edge Delivery Servicesに公開する際のエラー処理を改善しました（アーリーアクセス）。
 
 ### 修正された問題 {#fixed-issues-20133}
 
