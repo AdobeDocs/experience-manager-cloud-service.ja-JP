@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: cd19612597d8f1841062bbc8de253ee7271adce3
+source-git-commit: 7d93af706d8b0556e9e26282d339794447eb0a41
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1514'
 ht-degree: 21%
 
 ---
@@ -36,13 +36,11 @@ ht-degree: 21%
 * SITES-25433：古いバージョンを比較する際のフルページレンダリングをサポートします。
 * SITES-25923:URL が保存されなくなった場合に、LinkInfoStorageImpl でブロックできるようになりました。
 * SITES-26208：ワークフローを使用してコンテンツフラグメントを削除すると、新しく削除されたフラグメントを削除することで、参照リソースを更新できるオプションが追加されました。
-* SITES-26400:Crosswalk の改善、簡素化、強化により、Edge Delivery サービスの導入に関する障壁が軽減される
 * SITES-26500：ワークフロー – `move-fragments` を使用してコンテンツフラグメントを移動するオプションを追加。
 * SITES-26711：ロールアウトトリガー- リンクが更新されない。
 * SITES-27583：移動後にバージョン履歴が失われるエクスペリエンスフラグメント。
 * SITES-27618：ページ内のフラグメントの参照を検索しても、必ずしもすべての結果が返されない。
 * SITES-27781：コンテンツフラグメント参照のモデルレベル検証が実装され、参照されるフラグメントをモデル制約および必要なタグに照らして検証できるようになりました。
-* SITES-27782:Crosswalk 固有のパブリッシャーおよびサブスクライバーエージェントを作成します。
 * SITES-27784: `jcr:path` の代わりに PATH 関数を使用するように SQL クエリの生成を更新します。
 * SITES-28040:Adobe Target ExperienceFragmentsReplicationListener が壊れている。
 * SITES-28051：コンテンツフラグメントに対する現在のユーザーの権限を取得します：GET /cf/fragments/{fragmentId}/permissions。
@@ -65,6 +63,10 @@ ht-degree: 21%
 * SITES-2947:kibana ビジュアライゼーションを作成/変更して、公開ラップを比較します。
 * SITES-29733：コンテンツフラグメントのタグによるモデル検索のパフォーマンスが向上しました。
 * SITES-8316: コンテンツポリシー：ContentPolicyManager をキャッシュします。
+* SITES-24906：ユニバーサルエディターを使用したEdge Delivery：マッピングを使用せずに、作成者が作成したスプレッドシートをサポートする（アーリーアクセス）
+* SITES-24907：ユニバーサルエディターを使用したEdge Delivery:MSM のユースケース向けに、複数のサイトへのAssetsの公開をサポート（アーリーアクセス）
+* SITES-27956：ユニバーサルエディターを使用したEdge Delivery：公開スループットの向上（早期アクセス）
+* SITES-27956：ユニバーサルエディターを使用したEdge Delivery:Edge Delivery Servicesに公開する際のエラー処理の改善（アーリーアクセス）
 
 ### 修正された問題 {#fixed-issues-20133}
 
@@ -90,7 +92,7 @@ ht-degree: 21%
 * SITES-26881:AEMaaCS アクセシビリティのバグ – コメント入力フィールドの横にある「3 つのドット」アイコンに対して、誤った役割が提供される。
 * SITES-26956: SITES-24920 のフォローアップ実稼動環境でページを移動できません。
 * SITES-27707：アセット名の問題（6.5 SP22 回帰）が原因で、コンテンツファインダーのアセットの表示が失敗する。
-* SITES-27757:helix-html-pipeline でアイコンの書き換えが正確ではありません。
+* SITES-27757：ユニバーサルエディターを使用したEdge Delivery:helix-html-pipeline セマンティクスに従ってアイコンを書き換えます。
 * SITES-27780:SP22 で、プレーンテキストの DefaultPasteMode を使用した RTE に予期しない &lt;br> タグが表示される。
 * SITES-27958:Linkchecker が「このセッションは閉じられました」エラーをスローする。
 * SITES-28149:Target への XF エクスポート中に、カスタム ExperienceFragmentLinkRewriterProvider がトリガーされない。
