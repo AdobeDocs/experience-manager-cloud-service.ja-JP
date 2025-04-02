@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
+source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 100%
+source-wordcount: '1048'
+ht-degree: 97%
 
 ---
 
@@ -39,6 +39,10 @@ Cloud Manager には、プログラムに対するすべての証明書のステ
 顧客が管理する証明書の有効期限が切れると、有効期限切れの証明書で使用されているドメインは機能しなくなります。証明書を更新すると、お使いのドメインが引き続き希望どおりに動作します。
 
 このタスクを完了するには、ユーザーが&#x200B;**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持つメンバーである必要があります。
+
+>[!IMPORTANT]
+>
+>SSL 証明書を追加または更新する場合は、新しい証明書を証明書チェーンに含めないでください。 含めると、アップロードが正常に完了しなくなります。
 
 **顧客が管理する期限切れの SSL 証明書を更新するには：**
 
