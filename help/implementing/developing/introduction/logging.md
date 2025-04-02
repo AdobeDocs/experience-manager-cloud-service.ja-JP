@@ -4,10 +4,10 @@ description: AEM as a Cloud Service のログを使用して一元的なログ�
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
-workflow-type: ht
-source-wordcount: '2376'
-ht-degree: 100%
+source-git-commit: 60bf6c6077ecfc6700ed9284834cf13e3772e25a
+workflow-type: tm+mt
+source-wordcount: '2364'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ AEM as a Cloud Service のログ設定とログレベルは、AEM プロジェ�
 
 * AEM ログ。AEM アプリケーションレベルでログを実行します。
 * Apache HTTPD Web サーバー／Dispatcher ログ。パブリッシュ層で Web サーバーと Dispatcher のログを実行します。
-* CDN ログは、その名前が示すように、CDN でログを実行します。この機能は、9 月上旬に徐々にお客様に提供されるようになっています。
+* CDN ログは、その名前が示すように、CDN でログを実行します。
 
 ## AEM ログ {#aem-logging}
 
