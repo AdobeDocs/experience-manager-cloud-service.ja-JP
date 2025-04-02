@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 53a28874de2dba193b37196de050871079b4d2a2
+source-git-commit: 97e0124303001757caef6420042b2652bb1593e0
 workflow-type: tm+mt
-source-wordcount: '6119'
+source-wordcount: '6132'
 ht-degree: 99%
 
 ---
@@ -1104,6 +1104,9 @@ ht-degree: 99%
          + [マークダウンエディター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=ja)
       + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=ja)
       + [JSON プレビュー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=ja)
+   + コンテンツフラグメントセレクター {#content-fragment-selector}
+      + [マイクロフロントエンドコンテンツフラグメントセレクター – 概要](/help/headless/content-fragment-selector/content-fragment-selector-overview.md)
+      + [コンテンツフラグメントセレクター – 関連プロパティ](/help/headless/content-fragment-selector/content-fragment-selector-properties.md)
    + [構造化コンテンツの配信と管理用の AEM API](/help/headless/apis-headless-and-content-fragments.md)
    + GraphQL API {#graphql-api}
       + [コンテンツフラグメント用 GraphQL API](/help/headless/graphql-api/content-fragments.md)
