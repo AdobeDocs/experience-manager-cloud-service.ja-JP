@@ -6,22 +6,24 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: c81698c2d424d39688d1c9fad6c085223f5854a5
+source-git-commit: b0cedf31a8759cdf403e1e7d6aadcab3bba03bab
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 83%
+source-wordcount: '1060'
+ht-degree: 78%
 
 ---
 
-# ユニバーサルエディターでスタンドアロンフォームを作成するためのステップバイステップガイド
+# ユニバーサルエディターを使用したアダプティブFormsの作成
 
 <span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセス権をリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。例えば、リポジトリ URL が https://github.com/adobe/abc の場合、組織名は「adobe」、リポジトリ名は「abc」になります。</span>
 
-この記事では、フォーム作成ウィザードからEdge Delivery Services ベースのテンプレートを選択してユニバーサルエディターでスタンドアロンフォームを作成およびオーサリングするプロセスについて説明します。 また、ユニバーサルエディターを使用して作成したフォームを AEM Edge Delivery Services に公開することもできます。
+ユニバーサルエディターは、フォームを編集するために、見たままが得られる（WYSIWYG）エクスペリエンスを提供する汎用性の高いビジュアルエディターです。 これにより、テキストボックス、ラジオボタン、チェックボックスなどのアダプティブ Formsの使用可能なコンポーネントを使用して、ドラッグ&amp;ドロップ機能で、レスポンシブで使いやすいフォームを簡単に作成できるようになります。
 
-AEM Forms には、アダプティブフォームブロックと呼ばれるブロックが用意されており、データを取得して保存する Edge Delivery Services フォームを簡単に作成できます。[アダプティブフォームブロックで事前設定済みの新しい AEM プロジェクトを作成](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)することも、[アダプティブフォームブロックを既存の AEM サイトプロジェクトに追加](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)することもできます。
+AEMには、ユニバーサルエディターを使用してデータを取得および保存するEdge Delivery Services Formsを簡単に作成するのに役立つ、アダプティブ Forms ブロックと呼ばれるブロックが用意されています。 [アダプティブフォームブロックで事前設定済みの新しい AEM プロジェクトを作成](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)することも、[アダプティブフォームブロックを既存の AEM サイトプロジェクトに追加](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)することもできます。
 
-![Github リポジトリワークフロー ](/help/edge/assets/repo-workflow.png){width=50%}
+![Github リポジトリのワークフロー](/help/edge/assets/repo-workflow.png)
+
+この記事では、フォーム作成ウィザードからEdge Delivery Services ベースのテンプレートを選択してユニバーサルエディターでスタンドアロンフォームを作成およびオーサリングするプロセスについて説明します。
 
 ## 前提条件
 
@@ -32,7 +34,7 @@ AEM Forms には、アダプティブフォームブロックと呼ばれるブ�
 
 ## ユニバーサルエディターでのフォームの操作
 
-ユニバーサルエディターを使用すると、テキストフィールド、チェックボックス、ラジオボタンなどの既製のコンポーネントを使用して、レスポンシブでインタラクティブなスタンドアロンのフォームを簡単に作成できます。動的ルール、スムーズなデータ統合、カスタマイズオプションなどの強力な機能を提供し、正確な要件に従ってフォームを作成できます。 フォームをAEM Edge Delivery Servicesに公開することもできます。 ユニバーサルエディターのフォームで、次のアクションを実行できます。
+ユニバーサルエディターを使用すると、レスポンシブでインタラクティブなスタンドアロンフォームを簡単に作成できます。 ユニバーサルエディターのフォームで、次のアクションを実行できます。
 * [フォームの作成](#create-a-form)
 * [フォームの作成](#author-a-form)
 * [フォームの公開](#publish-a-form)
@@ -93,7 +95,7 @@ AEM Forms には、アダプティブフォームブロックと呼ばれるブ�
 
    ![お問い合わせフォーム](/help/edge/assets/contact-us.png)
 
-   これで、[フォームを送信アクションを設定およびカスタマイズ](/help/edge/docs/forms/universal-editor/submit-action.md)できます。
+   これで [ フォームの送信アクションを設定およびカスタマイズ ](/help/edge/docs/forms/universal-editor/submit-action.md) できます。
 
 
 <!--
