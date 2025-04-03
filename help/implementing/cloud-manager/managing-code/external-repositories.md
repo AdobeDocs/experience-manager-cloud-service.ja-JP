@@ -4,10 +4,10 @@ description: Cloud Manager に外部リポジトリを追加する方法につ�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 4667a00a156b3a2f66ed87c64763f93397aad946
+source-git-commit: cc307e8fbe71b65e25c7184b0b720708bcb6405f
 workflow-type: tm+mt
-source-wordcount: '1890'
-ht-degree: 68%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -206,16 +206,9 @@ Webhook を正しく設定すると、Cloud Manager ではリポジトリに対�
 * PR 検証またはパイプライントリガーが機能しない場合は、Cloud Manager と Git ベンダーの両方で web フックの秘密鍵が最新であることを確認します。
 
 
-
-
-
-
-
-
 ## 制限事項
 
 * 外部リポジトリは、設定パイプラインにリンクできません。
-* 外部リポジトリ（GitHub でホストされていない）を使用したパイプラインと「Git 変更時」トリガーは自動的には開始されません。これらは手動でのみ開始できます。
 
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
