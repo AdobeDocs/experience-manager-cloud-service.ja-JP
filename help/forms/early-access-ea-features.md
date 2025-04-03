@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
 workflow-type: tm+mt
-source-wordcount: '2289'
+source-wordcount: '2286'
 ht-degree: 29%
 
 ---
@@ -74,9 +74,9 @@ Formsの対話型コンテンツは次のとおりです。
 会話型Formsは、単なる新しい外観ではなく、ユーザーエクスペリエンスを大きく変える要素です。  エンゲージメントを高め、フォームの放棄を減らし、web サイトとのやり取りを全員にとってより楽しいエクスペリエンスにします。
 
 
-### Forms用Edge Delivery ServicesのWYSIWYG オーサリング（ユニバーサルエディター）
+### Edge Delivery Services用のWYSIWYG オーサリング
 
-ユニバーサルエディターは、ビジュアルデザインのシンプルさと高度な機能を組み合わせて、[ アダプティブフォームをEdge Delivery Servicesに ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) 作成して公開するための強力なWYSIWYG インターフェイスを提供します。 WYSIWYG オーサリングでは、[ ドキュメントベースのオーサリング ](/help/edge/docs/forms/create-forms.md) のすべての機能に加えて、次のような様々な機能を提供します。
+WYSIWYG オーサリングは、アダプティブフォームを作成してWYSIWYGに公開するためのForms インターフェイス（ユニバーサルエディターとアダプティブフォームエディター）を提供します。Edge Delivery Services WYSIWYG オーサリングでは、[ ドキュメントベースのオーサリング ](/help/edge/docs/forms/overview.md#document-based-authoring-features) のすべての機能に加えて、次のような様々な機能を提供します。
 
 * 複雑なロジックを作成する高度なルールエディター。
 * カスタム機能を実現するサーバーサイド拡張機能。
@@ -86,26 +86,6 @@ Formsの対話型コンテンツは次のとおりです。
 * フォームの事前入力とデータの送信の様々なデータソースとの統合。
 * 様々なデータソースとのインタラクションとデータ構造を定義するフォームデータモデル（FDM）。
 * Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics、その他多くのデータソースへのデータの送信など、フォーム送信を処理するための複数の送信アクションから選択する機能。
-
-![ユニバーサルエディター](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
-
-**メリット：**
-
-* **価値実現までの時間の短縮（TTV）**：直感的なビジュアルオーサリングを使用して、複雑なコーディング要件を排除し、より迅速にフォームを起動します。
-* **開発コストの削減**：ビジネスユーザーが最小限の IT 関与でフォームを作成および変更できるようにすることで、総所有コストを削減します。
-* **開発の簡略化**:HTML、CSS、JavaScriptのみを使用してカスタムコンポーネントを作成します。フレームワークに関する専門的な知識は必要ありません。
-* **最新の Web スタック**：フロントエンド開発者になじみのある Web 標準と最新のテクノロジーに基づいて構築されています。
-* **迅速なプロトタイプ作成**：完全な開発に投資する前に、フォームの概念をすばやく作成およびテストします
-
-
-**詳細については、ドキュメントを参照してください。**
-
-| | | |
-|:----------------------:|:---------------------:|:----------------------:|
-| [**主な機能**](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md#key-features-of-universal-editor-for-edge-delivery-services-for-forms) | [**レスポンシブレイアウトの使用**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**送信アクションの設定**](/help/edge/docs/forms/universal-editor/submit-action.md) |
-| [**アダプティブForms用ユニバーサルエディターの概要**](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) | [**フォームのスタイル設定**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | [**reCAPTCHA セキュリティの追加**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) |
-| [**最初のフォームを作成する**](/help/edge/docs/forms/universal-editor/create-forms.md) | [**ルールエディターの使用**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**フォームの公開**](/help/edge/docs/forms/universal-editor/publish-forms.md) |
-| [**ユーザーインターフェイスについて**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | | [**カスタムコンポーネントの作成**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 
 
 ### AEM FormsからMarketoへのコネクタ
@@ -127,27 +107,38 @@ AEM アダプティブFormsで作成された web サイト上のフォームが
 * [既存のアダプティブFormsに対するMarketo Engageとデータソースの設定](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [Marketo Engageへの既存のアダプティブフォームの送信](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
-### 価値実現ダッシュボード
+### クラウド上のインタラクティブ通信
 
-価値実現ダッシュボードを使用して、フォームのパフォーマンスを追跡および分析します。 この分析ツールは、フォーム戦略を最適化するためのデータに基づく意思決定を行うのに役立ちます。
+Cloud 上のインタラクティブ通信は、業務上の書簡、ドキュメント、取引明細書、給付金通知、マーケティング用メール、請求書、ウェルカムキットなど、データ駆動型のインタラクティブ通信を作成および管理し、配信するための強力なソリューションです。
 
-![Forms使用状況インサイトダッシュボード ](/help/forms/assets/forms-usage-insights.png)
+![インタラクティブ通信エディター](/help/forms/assets/ic-editor.png)
 
-**主な特長：**
+#### 主な機能：
 
-* フォーム送信、ドキュメントレンディション、フォーム作成/公開指標の監視
-* 組織全体でのフォームフラグメントの使用と再利用を追跡する
-* 傾向、ピーク期間、改善機会を特定する
+* **クラウドベースのエディター**:Windows マシンにのみインストールできるAEM Forms デスクトップDesignerとは異なり、インタラクティブ通信エディターは、インストールの必要なく、最新のブラウザーのいずれかで実行されます。 このクラウドベースのアプローチにより、インストールの手間が省け、クロスプラットフォームのアクセシビリティが提供され、インターネットにアクセスできる状態で、あらゆる場所からの共同作業が可能になります。
 
-ダッシュボードは、次の 2 つの主要セクションを通じてインサイトを提供します。
+* **使いやすいデザイン**：技術的な知識を必要としない直感的なポイント&amp;クリックインターフェイス。
 
-* **フォームとドキュメントのアクティビティの推移**：送信、レンディション、フォームの作成/公開をトラッキングします
-* **フラグメントの使用状況**：フラグメントの採用と再利用を監視します
+* **データ統合**：動的コンテンツ生成のために、スキーマ、データベースおよび web サービスに接続します。
 
-詳しくは、以下を参照してください。
+* **リッチメディア**：テキスト、画像、インタラクティブ要素をシームレスに組み込みます。
 
-* [価値実現ダッシュボードについて](/help/forms/aem-forms-value-realization-dashboard.md)
-* [フォームとドキュメントの使用状況インサイトの解釈](/help/forms/using-the-value-realization-dashboard.md)
+* **ドキュメントフラグメント**：一貫性と効率を高めるために、複数のドキュメントでモジュール型コンテンツブロックを再利用します。
+
+* **マルチチャネル出力**：規制への準拠により、印刷形式とデジタル形式で統一されたエクスペリエンスを作成します。
+
+* **動的コンテンツ**：ビジネスロジックとデータバインディングを使用してパーソナライズされたコンテンツを生成します。
+
+* **柔軟なフォーマット**:PDF、HTML、PCL、PostScript®、ZPL の各フォーマットへの出力
+
+#### ユースケース：
+
+* 決算書を作成する金融機関
+* 年金通知を合理化する政府機関
+* 高品質で安全な、法的に準拠した通信の作成
+* データ駆動型インタラクティブ通信の作成、アセンブリおよび配信の管理
+
+開始する準備はできていますか？ インタラクティブ通信エディターは、Forms as a Cloud Service デプロイメントの早期アクセスプログラムで使用できます。 アクセスをリクエストするには、組織 ID とプログラムの詳細を公式アドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールで送信します。
 
 ## その他の早期アクセス・イノベーション
 
