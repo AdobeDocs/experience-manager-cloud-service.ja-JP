@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: deab7ac707527e62f7a0fa3581080171e499cd32
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 98%
+source-wordcount: '2258'
+ht-degree: 72%
 
 ---
 
@@ -17,19 +17,19 @@ ht-degree: 98%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
         </td>
     </tr>
     <tr>
@@ -51,45 +51,36 @@ ht-degree: 98%
     </tr>
 </table>
 
-| バージョン | 記事リンク |
+<!--
+| Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=ja) |
-| AEM as a Cloud Service | この記事 |
-
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+-->
 [!DNL Adobe Stock] サービスは、あらゆるクリエイティブプロジェクトに使用できる、適切にキュレーションされ、著作権使用料が不要で質の高い何百万点もの写真、ベクター、イラスト、ビデオ、テンプレートおよび 3D アセットを提供します。
 
 [!DNL Adobe Stock] エンタープライズ版の場合は、デフォルトで、組織全体での共有権限が含まれます。組織のユーザーがアセットのライセンスを取得すると、組織の他のユーザーがこのアセットを識別、ダウンロード、使用できるようになります。再度ライセンスを取得する必要はありません。組織でアセットのライセンスを取得すると、そのアセットの使用権限が永続的に有効になります。
 
 [!DNL Adobe Stock] エンタープライズ版プランと [!DNL Experience Manager Assets] を統合すると、[!DNL Experience Manager] の強力なアセット管理機能を使用して、ライセンスを取得したアセットをクリエイティブプロジェクトやマーケティングプロジェクトに幅広く活用できます。[!DNL Experience Manager] ユーザーは、[!DNL Experience Manager] に保存されている Adobe Stock アセットの検索、プレビューおよびライセンス取得を、[!DNL Experience Manager] インターフェイスから画面を切り替えることなく、すばやく実行できます。
 
-## [!DNL Experience Manager] と [!DNL Adobe Stock] の統合  {#integrate-aem-and-adobe-stock}
+## [!DNL Experience Manager] と [!DNL Adobe Stock] を統合するための前提条件 {#integrate-aem-and-adobe-stock}
 
 [!DNL Experience Manager Assets] を使用すると、ユーザーは [!DNL Experience Manager] から直接、[!DNL Adobe Stock] アセットの検索、プレビュー、保存、ライセンス取得を実行できます。
 
-**前提条件**
-
-統合には次の要件が必要です。
+この統合を有効にするには、次の要件を満たします。
 
 * 実行中の [!DNL Experience Manager Assets] as a [!DNL Cloud Service] インスタンス
 * [エンタープライズ [!DNL Adobe Stock] プラン](https://stockenterprise.adobe.com/jp/)
-* Admin Console でデフォルトの Stock 製品プロファイルにアクセスする権限を持つユーザー
-* Adobe Developer Console で統合を作成するための開発者アクセスプロファイルに対する権限を持つユーザー
+* デフォルトの Stock 製品プロファイルに [!DNL Admin Console] する権限を持つユーザー
+* [!DNL Adobe Developer Console] で統合を作成するための [!DNL Developer Access profile] への権限を持つユーザー
 
 [!DNL Adobe Stock] エンタープライズ版プラン
 
 * [!DNL Adobe Stock]（Experience Manager と統合された Stock）製品を使用するための権利付与
 * Stock の権利付与のために [!DNL Adobe Admin Console] で購入したクレジット
-* Stock の権利付与のために [!DNL Adobe Developer Console] 内でのサービスアカウント（JWT）認証を有効にする
 * [!DNL Adobe Admin Console] 内からのクレジットとライセンスのグローバルな管理を有効にする
 
 権利付与において、[!DNL Adobe Stock] のデフォルトの製品プロファイルは [!DNL Admin Console] に存在します。複数のプロファイルを作成でき、これらのプロファイルによって、誰が Stock アセットのライセンスを取得できるかが決まります。製品プロファイルに直接アクセスできるユーザーは、[https://stock.adobe.com/jp](https://stock.adobe.com/jp/) にアクセスして、Stock アセットのライセンスを取得できます。一方、Developer Access を使用して統合（API）を作成する方法もあります。この統合により、[!DNL Experience Manager Assets] と [!DNL Adobe Stock] 間の通信が認証されます。
-
->[!NOTE]
->
->Stock サービスアカウント（JWT）認証には、エンタープライズ Stock 使用権が付属しています。
->
->この統合では、Stock エンタープライズ版の権利付与のための OAuth 認証をサポートしていません。
-
 
 <!--
 ### Create an IMS configuration {#create-an-ims-configuration}
@@ -118,160 +109,215 @@ ht-degree: 98%
 >[!NOTE]
 >
 >If there are multiple [!DNL Adobe Stock] configurations, select the desired configuration in User Preferences panel. To access the panel from Experience Manager home page, click the user icon and then click **[!UICONTROL User Preferences]** > **[!UICONTROL Stock Configuration]**.
-
 -->
 
-## [!DNL Experience Manager] と [!DNL Adobe Stock] を統合する手順 {#integration-steps}
+## [!DNL Experience Manager] と [!DNL Adobe Stock] の統合  {#integrate-adobe-stock-with-aem-assets}
 
-[!DNL Experience Manager] と [!DNL Adobe Stock] を統合するには、リストに示された順序で次の手順を実行します。
+開発者は、次の手順を実行して [!DNL Adobe Experience Manager] と [!DNL Adobe Stock] を統合します。
 
-1. [公開証明書の取得](#public-certificate)
+<!--
+1. [Obtain public certificate](#public-certificate)
+   
+   In [!DNL Experience Manager], create an IMS account and generate a public certificate (public key).
 
-   [!DNL Experience Manager] で IMS アカウントを作成し、公開証明書（公開鍵）を生成します。
+1. [Create service account (JWT) connection](#createnewintegration) 
+   
+   In [!DNL Adobe Developer Console], create a project for your [!DNL Adobe Stock] organization. Under the project, configure an API using the public key to create a service account (JWT) connection. Get the service account credentials and JWT payload information.
 
-1. [サービスアカウント（JWT）接続の作成](#createnewintegration)
+1. [Configure IMS account](#create-ims-account-configuration)
 
-   [!DNL Adobe Developer Console] で、[!DNL Adobe Stock] 組織のプロジェクトを作成します。そのプロジェクトで、公開鍵を使用して API を設定し、サービスアカウント（JWT）接続を作成します。サービスアカウント資格情報と JWT ペイロード情報を取得します。
+   In [!DNL Experience Manager], configure the IMS account using the service account credentials and JWT payload.
 
-1. [IMS アカウントの設定](#create-ims-account-configuration)
+1. [Configure cloud service](#configure-the-cloud-service)
 
-   [!DNL Experience Manager] で、サービスアカウント資格情報と JWT ペイロードを使用して IMS アカウントを設定します。
-
-1. [Cloud Service の設定](#configure-the-cloud-service)
-
-   [!DNL Experience Manager] で、IMS アカウントを使用して [!DNL Adobe Stock] クラウドサービスを設定します。
+   In [!DNL Experience Manager], configure an [!DNL Adobe Stock] cloud service using the IMS account.
 
 
-### IMS 設定の作成 {#create-an-ims-configuration}
+### Create an IMS configuration {#create-an-ims-configuration}
 
-IMS 設定により [!DNL Experience Manager Assets] オーサーインスタンスが認証され、[!DNL Adobe Stock] が権利付与されます。
+The IMS configuration authenticates your [!DNL Experience Manager Assets] author instance with the [!DNL Adobe Stock] entitlement. 
 
-IMS 設定には、次の 2 つの手順が含まれます。
+IMS configuration includes two steps:
 
-* [公開証明書の取得](#public-certificate)
-* [IMS アカウントの設定](#create-ims-account-configuration)
+* [Obtain public certificate](#public-certificate) 
+* [Configure IMS account](#create-ims-account-configuration)
 
-### 公開証明書の取得 {#public-certificate}
+### Obtain public certificate {#public-certificate}
 
-公開鍵（証明書）は、Adobe 開発者コンソールでプロファイルを認証します。
+The public key (certificate) authenticates your product profile in Adobe Developer Console.
 
-1. [!DNL Experience Manager Assets] クラウドインスタンスにログインします。
+1. Log in to your [!DNL Experience Manager Assets] cloud instance.
 
-1. **[!UICONTROL ツール]**&#x200B;パネルで、**[!UICONTROL セキュリティ]**／**[!UICONTROL Adobe IMS 設定]**&#x200B;に移動します。
+1. From the **[!UICONTROL Tools]** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
-1. Adobe IMS 設定ページで、「**[!UICONTROL 作成]**」をクリックします。「**[!UICONTROL Adobe IMS テクニカルアカウント設定]**」ページが表示されます。
+1. In Adobe IMS Configurations page, click **[!UICONTROL Create]**. The **[!UICONTROL Adobe IMS Technical Account Configuration]** page opens. 
 
-1. 「**[!UICONTROL 証明書]**」タブで、**[!UICONTROL クラウドソリューション]**&#x200B;ドロップダウンリストから「**[!UICONTROL Adobe Stock]**」を選択します。
+1. In the **[!UICONTROL Certificate]** tab, select **[!UICONTROL Adobe Stock]** from the **[!UICONTROL Cloud Solution]** drop-down list.  
 
-1. 証明書を作成するか、既存の証明書を設定に再利用できます。
+1. You can create a certificate or reuse an existing certificate for the configuration. 
 
-   証明書を作成するには、「**[!UICONTROL 新しい証明書を作成]**」チェックボックスをオンにして、公開鍵の&#x200B;**エイリアス**&#x200B;を指定します。ここで入力したエイリアスが、公開鍵になります。
+   To create a certificate, select the **[!UICONTROL Create new certificate]** check box and specify an **alias** for the public key. The alias serves as name of the public key. 
 
-1. 「**[!UICONTROL 証明書を作成]**」をクリックします。「**[!UICONTROL OK]**」をクリックして公開証明書を生成します。
+1. Click **[!UICONTROL Create certificate]**. Then, click **[!UICONTROL OK]** to generate the public key.
 
-1. **[!UICONTROL 公開鍵をダウンロード]**&#x200B;アイコンをクリックして、公開鍵（.crt）ファイルをローカルマシンに保存します。この公開鍵を後で使用して、Brand Portal テナントの API を設定し、Adobe 開発者コンソールでサービスアカウント資格情報を生成します。
+1. Click the **[!UICONTROL Download Public Key]** icon and save the public key (.crt) file on your machine. The public key is used later to configure API for your Brand Portal tenant and generate service account credentials in Adobe Developer Console.
 
-   「**[!UICONTROL 次へ]**」をクリックします。
+   Click **[!UICONTROL Next]**.
 
    ![generate-certificate](assets/stock-integration-ims-account.png)
 
-1. 「**アカウント**」タブで、サービスアカウント資格情報を必要とする Adobe IMS アカウントが作成されます。
+1. In the **Account** tab, Adobe IMS account is created which requires the service account credentials.
 
-   新しいタブを開き、[Adobe 開発者コンソールでのサービスアカウント (JWT) 接続を作成します](#createnewintegration)。
+   Open a new tab and [create a service account (JWT) connection in Adobe Developer Console](#createnewintegration). 
 
-### サービスアカウント（JWT）接続の作成 {#createnewintegration}
+### Create service account (JWT) connection {#createnewintegration}
 
-Adobe 開発者コンソールで、プロジェクトと API を組織レベルで設定します。API を設定すると、サービスアカウント（JWT）接続が作成されます。API を設定するには、キーペア（秘密鍵と公開鍵）を生成する方法と、公開鍵をアップロードする方法の 2 とおりがあります。この例では、サービスアカウント資格情報は公開鍵をアップロードすることで生成されます。
+In Adobe Developer Console, projects and APIs are configured at organization level. Configuring an API creates a service account (JWT) connection. There are two methods to configure API, by generating a key pair (private and public keys) or by uploading a public key. In this example, the service account credentials are generated by uploading the public key.
 
-サービスアカウント資格情報と JWT ペイロードを生成するには、次の操作を実行します。
+To generate the service account credentials and JWT payload:
 
-1. システム管理者権限で Adobe 開発者コンソールにログインします。デフォルトの URL は [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui) です。
+1. Log in to Adobe Developer Console with system administrator privileges. The default URL is [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
-   ドロップダウン（組織）リストで正しい IMS 組織（Stock 使用権限）が選択されていることを確認します。
+   Ensure that you have selected the correct IMS organization (Stock entitlement) from the drop-down (organization) list.
 
-1. 「**[!UICONTROL 新規プロジェクトを作成]**」をクリックします。システムで生成された名前を持つ空のプロジェクトが組織に対して作成されます。
+1. Click **[!UICONTROL Create new project]**. A blank project with a system-generated name is created for your organization. 
 
-   **[!UICONTROL プロジェクトを編集]**&#x200B;をクリックします。**[!UICONTROL プロジェクトタイトル]**&#x200B;および&#x200B;**[!UICONTROL 説明]**&#x200B;を更新し、「**[!UICONTROL 保存]**」をクリックします。
+   Click **[!UICONTROL Edit project]**. Update the **[!UICONTROL Project Title]** and **[!UICONTROL Description]**, and then click **[!UICONTROL Save]**.
+   
+1. In the **[!UICONTROL Project overview]** tab, click **[!UICONTROL Add API]**.
 
-1. 「**[!UICONTROL プロジェクトの概要]**」タブで、「**[!UICONTROL API を追加]**」をクリックします。
+1. In the **[!UICONTROL Add an API window]**, select **[!UICONTROL Adobe Stock]**. Click **[!UICONTROL Next]**. 
 
-1. **[!UICONTROL API ウィンドウを追加ウィンドウ]**&#x200B;で、「**[!UICONTROL Adobe Stock]**」を選択します。「**[!UICONTROL 次へ]**」をクリックします。
-
-1. **[!UICONTROL API の設定]**&#x200B;ウィンドウで、「**[!UICONTROL サービスアカウント (JWT)]**」認証を選択します。「**[!UICONTROL 次へ]**」をクリックします。
+1. In the **[!UICONTROL Configure API]** window, select **[!UICONTROL Service Account (JWT)]** authentication. Click **[!UICONTROL Next]**.
 
    ![create-jwt-credentials](assets/aem-stock-jwt.png)
 
-1. 「**[!UICONTROL 公開鍵をアップロード]**」をクリックします。「**[!UICONTROL ファイルを選択]**」をクリックし、[公開証明書の取得](#public-certificate)節でダウンロードした公開鍵（.crt ファイル）をアップロードします。「**[!UICONTROL 次へ]**」をクリックします。
+1. Click **[!UICONTROL Upload your public key]**. Click **[!UICONTROL Select a File]** and upload the public key (.crt file) that you have downloaded in the [obtain public certificate](#public-certificate) section. Click **[!UICONTROL Next]**.
 
-1. 公開鍵を確認し、「**[!UICONTROL 次へ]**」をクリックします。
+1. Verify the public key and click **[!UICONTROL Next]**.
 
-1. デフォルトの **[!UICONTROL Adobe Stock]** 製品プロファイルを選択し、「**[!UICONTROL 設定済み API を保存]**」をクリックします。
+1. Select the default **[!UICONTROL Adobe Stock]** product profile and click **[!UICONTROL Save configured API]**. 
 
-1. API が設定されると、API の概要ページにリダイレクトされます。左側のナビゲーションで「**[!UICONTROL 資格情報]**」の下の「**[!UICONTROL サービスアカウント（JWT）]**」オプションをクリックします。ここで資格情報を表示し、JWT トークンの生成、資格情報の詳細のコピー、クライアントの秘密鍵の取得などのアクションを実行できます。
+1. Once the API is configured, you are redirected to the API overview page. From the left navigation under **[!UICONTROL Credentials]**, click the **[!UICONTROL Service Account (JWT)]** option. Here, you can view the credentials and perform actions such as generate JWT tokens, copy credential details, and retrieve client secret.
 
-1. 「**[!UICONTROL クライアント資格情報]**」タブから、**[!UICONTROL クライアント ID]** をコピーします。
+1. From the **[!UICONTROL Client Credentials]** tab, copy the **[!UICONTROL client ID]**. 
 
-   「**[!UICONTROL クライアント秘密鍵を取得]**」をクリックし、**[!UICONTROL クライアントの秘密鍵]**&#x200B;をコピーします。
+   Click **[!UICONTROL Retrieve Client Secret]** and copy the **[!UICONTROL client secret]**.
 
    ![generate-jwt-credentials](assets/aem-stock-jwt-credential.png)
 
-1. 「**[!UICONTROL JWT を生成]**」タブに移動し、**[!UICONTROL JWT ペイロード]**&#x200B;情報をコピーします。
+1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]** information. 
 
-[!DNL Experience Manager Assets] で [IMS アカウントを設定](#create-ims-account-configuration)をするためのクライアント ID（API キー）、クライアントの秘密鍵、JWT ペイロードを使用できるようになりました。
+You can now use the client ID (API key), client secret, and JWT payload to [configure the IMS account](#create-ims-account-configuration) in [!DNL Experience Manager Assets].
 
-### IMS アカウントの設定 {#create-ims-account-configuration}
+### Configure IMS account {#create-ims-account-configuration}
 
-IMS アカウントを設定するには、[証明書](#public-certificate)と[サービスアカウント（JWT）資格情報](#createnewintegration)が必要です。
+You must have the [certificate](#public-certificate) and [service account (JWT) credentials](#createnewintegration) to configure the IMS account.
 
-IMS アカウントを設定するには：
+To configure the IMS account: 
 
-1. IMS 設定を開き、「**[!UICONTROL アカウント]**」タブに移動します。[公開証明書の取得](#public-certificate)中も、ページは開いたままになっています。
+1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. You kept the page open while [obtaining the public certificate](#public-certificate).
 
-1. IMS アカウントの&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定します。
+1. Specify a **[!UICONTROL Title]** for the IMS account.
 
-   「**[!UICONTROL 認証サーバー]**」フィールドに、URL を [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/) と入力します。
+   In the **[!UICONTROL Authorization Server]** field, enter the URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/).  
 
-   [サービスアカウント（JWT）接続の作成](#createnewintegration)時にコピーしたクライアント ID を「**[!UICONTROL API キー]**」フィールド、**[!UICONTROL クライアントの秘密鍵]**&#x200B;および&#x200B;**[!UICONTROL ペイロード]**（JWT ペイロード）に入力します。
+   Enter the client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
 
-1. 「**[!UICONTROL 作成]**」をクリックします。IMS アカウントの設定が作成されます。
+1. Click **[!UICONTROL Create]**. An IMS account configuration is created. 
 
    ![configure-ims-acount](assets/aem-stock-ims-config.png)
+   
+1. Select the IMS account configuration and click **[!UICONTROL Check Health]**.
 
-1. その IMS アカウント設定を選択し、「**[!UICONTROL 正常性をチェック]**」をクリックします。
+   Click **[!UICONTROL Check]** in the dialog box. On successful configuration, a message appears that the *Token is retrieved successfully*.
 
-   ダイアログボックスの「**[!UICONTROL チェック]**」をクリックします。正常に設定されると、*トークンが正常に取得されました*&#x200B;というメッセージが表示されます。
+   ![health-check](assets/aem-stock-healthcheck.png)
+-->
 
-   ![ヘルスチェック](assets/aem-stock-healthcheck.png)
+1. [ [!DNL Developer Console] の場所でプログラムを設定します。](#set-up-a-program-in-developer-console)
+1. [オーサーインスタンスへの設  [!DNL AEM]  の追加](#add-configuration-in-the-aem-author-instance)
 
+### [!DNL Developer Console] でのプログラムの設定 {#set-up-a-program-in-developer-console}
 
-### Cloud Service の設定 {#configure-the-cloud-service}
+[!DNL Developer Console] でプログラムを設定するには、次の手順を実行します。
+1. [[!DNL Adobe Developer Console]](https://developer.adobe.com/console/14431/user/servicesandapis) に移動し、組織にログインします。
+1. **[!UICONTROL プロジェクト]** ダッシュボードで使用可能な **[!UICONTROL 新規プロジェクトを作成]** を選択します。
+   ![aem assets と adobe stock の統合 ](/help/assets/assets/create-new-project-in-adobe-dev-console.png)
+1. 「**[!UICONTROL プロジェクトに追加]**」をクリックし、「**[!UICONTROL API]**」を選択します。
+1. 「**[!UICONTROL Adobe Stock]**」を選択し、「**[!UICONTROL 次へ]** をクリックします。
+1. **[!UICONTROL 資格情報名]** を指定し、「**[!UICONTROL OAuth サーバー間]**」が選択されていることを確認して、「**[!UICONTROL 次へ]**」をクリックします。
+1. **[!UICONTROL AEM Assets]** **[!UICONTROL 製品プロファイル]** を選択し、「**[!UICONTROL 設定済み API を保存]**」をクリックします。 プロジェクトでプロジェクトが作成されたことを確認する成功メッセージが [!DNL Developer Console] 示されます。 プロジェクトのダッシュボードが開き、上部にプロジェクト名、{API ]**の下に]** 0}Adobe Stock ]****[!UICONTROL 、{ 製品プロファイル **[!UICONTROL の下に**[!UICONTROL  AEM Assets ]**、{ 接続された資格情報]** の下に **[!UICONTROL OAuth サーバー間]****[!UICONTROL 資格情報カードが表示されます。**[!UICONTROL 
+   ![aem assets と adobe stock の統合 ](/help/assets/assets/adc-project-name.png)
+1. **[!UICONTROL OAuth サーバー間]** 資格情報カードを選択すると **[!UICONTROL 資格情報の詳細]** が表示されます。 **[!UICONTROL クライアント ID]**、**[!UICONTROL クライアントシークレット]**、**[!UICONTROL 範囲]**、**[!UICONTROL 資格情報名]**、**[!UICONTROL テクニカルアカウント ID]**、**[!UICONTROL 組織 ID]** など、プロジェクトの [!DNL OAuth Server-to-Server] しい資格情報詳細を使用して、[AEM オーサーインスタンスに設定を追加 ](#add-configuration-in-the-aem-author-instance) します。
+   ![aem assets と adobe stock](/help/assets/assets/oauth-server-server-credentials-details-page.png)
 
-[!DNL Adobe Stock] Cloud Service を設定するには：
+### [!DNL AEM] オーサーインスタンスへの設定の追加 {#add-configuration-in-the-aem-author-instance}
 
-1. [!DNL Experience Manager] ユーザーインターフェイスで、**[!UICONTROL ツール]**／ **[!UICONTROL Cloud Services]** ／ **[!UICONTROL Adobe Stock]** に移動します。
+[!DNL AEM] オーサーインスタンスに設定を追加するには、次の手順を実行します。
 
-1. [!DNL Adobe Stock Configurations] ページで、「**[!UICONTROL 作成]**」をクリックします。
+1. [オーサーインスタンス  [!DNL Adobe Stock IMS configuration]  の新しい  [!DNL AEM]  定](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [接続先のクラウド設定を追加しま  [!DNL Adobe Stock]。](#add-cloud-configuration-to-connect-adobe-stock)
 
-1. クラウド設定の&#x200B;**[!UICONTROL タイトル]**&#x200B;を入力します。
+#### [!DNL AEM author] インスタンスでの新しい [!DNL Adobe Stock IMS configuration] の設定 {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
 
-   [IMS アカウントの設定](#create-ims-account-configuration)時に作成した IMS 設定を選択します。
+[!DNL AEM] オーサーインスタンスに新しい [!DNL Adobe Stock IMS configuration] をセットアップするには、次の手順を実行します。
+1. [!DNL AEM] オーサーインスタンスに移動します。
+1. ![aem assets と adobe stock](/help/assets/assets/Hammer.svg) をクリックし、「**[!UICONTROL セキュリティ]** を選択して、「**[!UICONTROL Adobe IMS設定]**」を選択します。
+1. **[!UICONTROL 作成]** をクリックして、新しい IMS 設定を作成します。 **[!UICONTROL Adobe IMSテクニカルアカウント設定]** ページには、「**[!UICONTROL クラウドソリューション]**」、「**[!UICONTROL タイトル]**」、「**[!UICONTROL 認証サーバー]**」、「**[!UICONTROL クライアント ID]**」、「**[!UICONTROL クライアントシークレット]**」、「**[!UICONTROL 範囲]**」、「**[!UICONTROL 組織 ID]** などの複数のフィールドが表示されます。 これらのフィールドに詳細を指定するには、次の手順に従います。
+   * **[!UICONTROL クラウドソリューション]**: **[!UICONTROL Adobe Stock]** を選択します。
+   * **[!UICONTROL タイトル]**：この統合の名前を指定します
+   * **[!UICONTROL 認証サーバー]**: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/) を認証サーバーとして追加します。
+   * **[!UICONTROL クライアント ID]**：プロジェクトの **[!UICONTROL OAuth サーバー間資格情報の詳細]** ページに移動し、**[!UICONTROL クライアント ID]** をコピーして、ここに貼り付けます（[Developer Consoleでのプログラムの設定 ](#set-up-a-program-in-developer-console) の節の手順 7 を参照）。
+   * **[!UICONTROL クライアント秘密鍵]**：プロジェクトの **[!UICONTROL OAuth サーバー間資格情報の詳細]** ページに移動し、**[!UICONTROL クライアント秘密鍵を取得]** をクリックして、**[!UICONTROL クライアント秘密鍵]** をコピーし、ここに貼り付けます（[Developer Consoleでのプログラムの設定 ](#set-up-a-program-in-developer-console) の節の手順 7 を参照）。
+   * **[!UICONTROL 範囲]**：プロジェクトの **[!UICONTROL OAuth サーバー間資格情報の詳細]** ページに移動し、**[!UICONTROL 範囲]** をコピーして、ここに貼り付けます（[Developer Consoleでのプログラムの設定 ](#set-up-a-program-in-developer-console) の節の手順 7 を参照）。
+   * **[!UICONTROL 組織 ID]**：プロジェクトの **[!UICONTROL OAuth サーバー間資格情報の詳細]** ページに移動し、**[!UICONTROL 組織 ID]** をコピーして、ここに貼り付けます（[Developer Consoleでのプログラムの設定 ](#set-up-a-program-in-developer-console) の節の手順 7 を参照）。
+     ![aem assets と adobe stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
+1. **[!UICONTROL 作成]** をクリックすると、**[!UICONTROL Adobe IMS設定]** ページが開き、作成した [!DNL Adobe Stock] 統合が表示されます。
 
-   ドロップダウンリストからご自身のロケールを選択します。
+#### [!DNL Adobe Stock] に接続するためのクラウド設定を追加します。 {#add-cloud-configuration-to-connect-adobe-stock}
+
+以下の手順を実行して、[!DNL Adobe Stock] に接続するクラウド設定を追加します。
+
+1. [!DNL AEM author] インスタンスに移動します。
+1. ![aem assets と adobe stock](/help/assets/assets/Hammer.svg) をクリックし、「**[!UICONTROL Cloud Services]**」を選択します。次に、**[!UICONTROL Adobe Stock]** を参照して選択します。
+   ![aem での adobe stock の使用 ](/help/assets/assets/adding-cloud-config-to-adobe-stock.png)
+1. **[!UICONTROL 作成]** をクリックすると、**[!UICONTROL Adobe Stock設定]** ページに複数のフィールドが表示されます。 これらのフィールドに詳細を指定するには、次の手順に従います。
+   * **[!UICONTROL タイトル]**:{AEM オーサーインスタンスでAdobe Stock IMS 設定をセットアップ ]**する際に、**[!UICONTROL  Adobe IMSのテクニカルアカウント設定 [ ページで使用したタイトルと同じ名前を指定し ](#set-up-adobe-stock-ims-configuration-in-aem-author-instance) す。
+   * **[!UICONTROL 関連するAdobe IMS設定]**：作成した [!DNL Adobe Stock] 統合を選択します。
+   * **[!UICONTROL ロケール]**：英語（米国） **[!UICONTROL 選択]** ます。
+1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。
+   ![aem での adobe stock の使用 ](/help/assets/assets/adobe-stock-config-page.png)
+
+<!--
+### Configure cloud service {#configure-the-cloud-service}
+
+To configure the [!DNL Adobe Stock] cloud service:
+
+1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
+
+1. In the [!DNL Adobe Stock Configurations] page, click **[!UICONTROL Create]**.
+
+1. Specify a **[!UICONTROL Title]** for the cloud configuration. 
+
+   Select the IMS configuration that you have created while [configuring the IMS account](#create-ims-account-configuration).
+
+   Select your locale from the drop-down list.
 
    ![aem-stock-cloud-config](assets/aem-stock-cloud-config.png)
 
-1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。
+1. Click **[!UICONTROL Save & Close]**. 
+-->
+お使いの[!DNL Experience Manager Assets]オーサーインスタンスは、[!DNL Adobe Stock] に統合されています。複数の [!DNL Adobe Stock] 設定（例えばロケールベースの設定など）を作成できます。これで、[!DNL Experience Manager] ユーザーインターフェイスの中から [!DNL Adobe Stock] アセットにアクセス、検索およびライセンス付与ができます。
 
-   お使いの[!DNL Experience Manager Assets]オーサーインスタンスは、[!DNL Adobe Stock] に統合されています。複数の [!DNL Adobe Stock] 設定（例えばロケールベースの設定など）を作成できます。これで、[!DNL Experience Manager] ユーザーインターフェイスの中から [!DNL Adobe Stock] アセットにアクセス、検索およびライセンス付与ができます。
+![search-stock-assets](assets/aem-stock-searchstocks.png)
 
-   ![search-stock-assets](assets/aem-stock-searchstocks.png)
-
-   >[!NOTE]
-   >
-   >統合の現段階で、[!DNL Adobe Stock] アセットへのアクセス、Stock アセットの検索（オムニサーチによる）および[!DNL Adobe Stock] アセットへのライセンス付与が許可されるのは、管理者のみです。
-   >
-   >管理者は、[!DNL Adobe Stock] Cloud Service に別のユーザーまたはグループを追加したり、[!DNL Experience Manager] で管理者以外のユーザーに Stock 設定にアクセスする権限を付与できます。
+>[!NOTE]
+>
+>統合の現段階で、[!DNL Adobe Stock] アセットへのアクセス、Stock アセットの検索（オムニサーチによる）および[!DNL Adobe Stock] アセットへのライセンス付与が許可されるのは、管理者のみです。
+>
+>管理者は、[!DNL Adobe Stock] Cloud Service に別のユーザーまたはグループを追加したり、[!DNL Experience Manager] で管理者以外のユーザーに Stock 設定にアクセスする権限を付与できます。
 
 1. ユーザーまたはグループを追加するには、[!DNL Adobe Stock]クラウド設定を選択し、「**[!UICONTROL プロパティ]**」をクリックします。
 
