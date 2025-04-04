@@ -4,10 +4,10 @@ description: ローカル開発用または独自のインフラストラクチ�
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '932'
-ht-degree: 100%
+source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
+workflow-type: tm+mt
+source-wordcount: '950'
+ht-degree: 98%
 
 ---
 
@@ -15,6 +15,10 @@ ht-degree: 100%
 # 独自のユニバーサルエディターサービスの実行 {#local-ue-service}
 
 ローカル開発用または独自のインフラストラクチャの一部として、独自のユニバーサルエディターサービスを実行する方法について説明します。
+
+>[!NOTE]
+>
+>Edge Delivery ServicesでAEMをオーサリングするプロジェクトでは、ローカルユニバーサルエディターサービスは必要ないか、サポートされていません。
 
 ## 概要 {#overview}
 
