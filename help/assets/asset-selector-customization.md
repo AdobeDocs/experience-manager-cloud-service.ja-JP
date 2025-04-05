@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセッ�
 description: 関数を使用して、アプリケーション内のアセットセレクターをカスタマイズします。
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
 workflow-type: tm+mt
-source-wordcount: '1289'
-ht-degree: 97%
+source-wordcount: '1293'
+ht-degree: 99%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 97%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
         </td>
     </tr>
     <tr>
@@ -57,6 +57,7 @@ ht-degree: 97%
 * [アセットの選択](#selection-of-assets)
 * [有効期限切れのアセットのカスタマイズ](#customize-expired-assets)
 * [コンテキスト呼び出しフィルター](#contextual-invocation-filter)
+* [dragOptions プロパティ](#drag-options-property)
 
 アプリケーション実装内の **index.html** ファイルまたは同様のファイルで前提条件を定義して、[!DNL Experience Manager Assets] リポジトリにアクセスする認証の詳細を定義する必要があります。完了したら、要件に応じてコードスニペットを追加できます。
 
@@ -641,6 +642,18 @@ const ControlledUploadExample = () => {
         </Flex>
     )
 }
+```
+
+### dragOptions プロパティ {#drag-options-property}
+
+```
+dragOptions: {
+            allowList: {
+                '*': true,          // allow all types to be dragged
+                'folder': false,    // except those explicitly set to disallow
+                'image/jpeg': false // or those with specific mimeTypes
+            },
+         }
 ```
 
 >[!MORELIKETHIS]

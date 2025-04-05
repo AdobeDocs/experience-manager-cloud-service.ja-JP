@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセッ�
 description: アセットセレクターを使用して、アプリケーション内のアセットのメタデータとレンディションを検索および取得します。
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 97%
+source-wordcount: '1427'
+ht-degree: 94%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 97%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
         </td>
     </tr>
     <tr>
@@ -81,7 +81,11 @@ ht-degree: 97%
 
 次の通信方法を確保する必要があります。
 
-* アプリケーションは HTTPS で実行されている。
+* ホストアプリケーションが HTTPS で実行されている。
+* `localhost` でアプリケーションを実行することはできません。 アセットセレクターをローカルマシンに統合する場合は、例えば `[https://<your_campany>.localhost.com:<port_number>]` というカスタムドメインを作成して、このカスタムドメインを `redirectUrl list` に追加する必要があります。
+* `ADOBE_PROVIDED_CLIENT_ID` れを設定し、それぞれの `imsClientId` を使用して AEM Cloud Service 環境変数に追加できます。
+  ![ アセットセレクター IMS クライアント ID 環境 ](assets/asset-selector-ims-client-id-env.png)
+* IMS 範囲のリストは、環境設定で定義する必要があります。
 * アプリケーションの URL は、IMS クライアントのリダイレクト URL の許可リストにある。
 * IMS ログインフローは、web ブラウザーのポップアップを使用して設定およびレンダリングされる。そのため、ターゲットブラウザーでポップアップを有効または許可する必要があります。
 
@@ -91,7 +95,7 @@ ht-degree: 97%
 
 * [アセットセレクターとアドビアプリの統合](/help/assets/integrate-asset-selector-adobe-app.md)
 * [アセットセレクターとアドビ以外のアプリの統合](/help/assets/integrate-asset-selector-non-adobe-app.md)
-* [アセットセレクターと Dynamic Media Open API の統合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+* [アセットセレクター Dynamic Media Open API の統合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!IMPORTANT]
@@ -197,9 +201,6 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 * ![グリッド表示](assets/do-not-localize/grid-view.png) [!UICONTROL **グリッド表示**]：グリッド表示では、スクロール可能なファイルとフォルダーは、行と列のグリッド形式で表示されます。
 * ![ギャラリー表示](assets/do-not-localize/gallery-view.png) [!UICONTROL **ギャラリー表示**]：ギャラリー表示では、ファイルやフォルダーは、中央に固定された水平リストに表示されます。
 * ![ウォーターフォール表示](assets/do-not-localize/waterfall-view.png) [!UICONTROL **ウォーターフォール**&#x200B;表示]：ウォーターフォール表示では、ファイルやフォルダーがブリッジ図形式で表示されます。
-
-**概要の図**
-
 
 ## 主な機能の詳細 {#key-capabilities-asset-selector}
 
