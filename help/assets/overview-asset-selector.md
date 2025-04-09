@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセッ�
 description: アセットセレクターを使用して、アプリケーション内のアセットのメタデータとレンディションを検索および取得します。
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
+source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1422'
 ht-degree: 94%
 
 ---
@@ -81,11 +81,12 @@ ht-degree: 94%
 
 次の通信方法を確保する必要があります。
 
-* ホストアプリケーションが HTTPS で実行されている。
-* `localhost` でアプリケーションを実行することはできません。 アセットセレクターをローカルマシンに統合する場合は、例えば `[https://<your_campany>.localhost.com:<port_number>]` というカスタムドメインを作成して、このカスタムドメインを `redirectUrl list` に追加する必要があります。
-* `ADOBE_PROVIDED_CLIENT_ID` れを設定し、それぞれの `imsClientId` を使用して AEM Cloud Service 環境変数に追加できます。
-  ![ アセットセレクター IMS クライアント ID 環境 ](assets/asset-selector-ims-client-id-env.png)
-* IMS 範囲のリストは、環境設定で定義する必要があります。
+* ホストアプリケーションは HTTPS で実行されています。
+* `localhost`でアプリケーションを実行することはできません。アセットセレクターをローカルマシンに統合する場合は、 `[https://<your_campany>.localhost.com:<port_number>]` などのカスタムドメインを作成し、このカスタムドメインを `redirectUrl list`に追加する必要があります。
+* それぞれの `imsClientId` で、clientID を設定して AEM Cloud Service 環境 変数に追加できます。
+<!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
+![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
+* IMS 有効範囲のリストは、環境構成で定義する必要があります。
 * アプリケーションの URL は、IMS クライアントのリダイレクト URL の許可リストにある。
 * IMS ログインフローは、web ブラウザーのポップアップを使用して設定およびレンダリングされる。そのため、ターゲットブラウザーでポップアップを有効または許可する必要があります。
 
@@ -95,7 +96,7 @@ ht-degree: 94%
 
 * [アセットセレクターとアドビアプリの統合](/help/assets/integrate-asset-selector-adobe-app.md)
 * [アセットセレクターとアドビ以外のアプリの統合](/help/assets/integrate-asset-selector-non-adobe-app.md)
-* [アセットセレクター Dynamic Media Open API の統合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+* [アセットセレクターダイナミックメディア 開く API の統合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!IMPORTANT]
