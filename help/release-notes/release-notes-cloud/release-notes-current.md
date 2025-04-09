@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: bbf66195593032eb2ccf073ec78685c9d9726235
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 65%
+ht-degree: 84%
 
 ---
 
@@ -48,17 +48,17 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ### Dynamic Media の新機能 {#new-features-dynamic-media}
 
-**Open API を使用した Dynamic Media を使用して配信されるビデオのロングフォームサポート**
+**Open API を備えた Dynamic Media で配信されるビデオのロングフォームのサポート**
 
-OpenAPI を使用した Dynamic Media で長編ビデオがサポートされるようになりました。 The long form videos can support up to 50GB and 2 hours.
+OpenAPI を備えた Dynamic Media で、ロングフォームのビデオがサポートされるようになりました。長形式のビデオは、最大 50 GB と 2 時間をサポートできます。
 
 ### Dynamic Media Classic {#dmc}
 
 <!-- CARRY OVER TO APRIL 2025 RELEASE NOTES -->
 
-The Bandwidth tab in the Dynamic Media Classic reporting dashboard is no longer supported as of April 2025.
+2025 年 4 月リリースより、Dynamic Media Classic レポートダッシュボードの「帯域幅」タブはサポートされなくなりました。
 
-See [Bandwidth and Storage, Types of reports](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
+[ 帯域幅とストレージ、レポートのタイプ ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports) を参照してください。
 
 
 ## アセットビューの新機能 {#new-features-assets-view}
@@ -66,7 +66,7 @@ See [Bandwidth and Storage, Types of reports](https://experienceleague.adobe.com
 
 **ルートタグのサポート**
 
-AEM Assetsは、メタデータフォームのタグプロパティとカスタムメタデータのマッピングをサポートするようになりました。 さらに、管理者は、特定のルートタグとその下に存在するタグへのアクセスを制限することで、ユーザーに対するタグの可用性を制限できます。
+AEM Assets では、カスタムメタデータへのメタデータフォームのタグプロパティのマッピングがサポートされるようになりました。さらに、管理者は、特定のルートタグと、このルートタグの下に存在するタグへのアクセスを制限して、ユーザーに対するタグの可用性を制限できます。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -84,27 +84,27 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 
 #### クラウドストレージのサポートの強化：Azure Blob Storage への直接 PDF アップロード
 
-AEM Forms Document Generation APIs now let you [directly upload generated PDF documents](/help/forms/early-access-ea-features.md#doc-generation-api) to Azure Blob Storage. この機能強化により、ストレージと取得が合理化され、効率の向上やクラウドワークフローとの統合が促進されます。
+AEM Forms Document Generation API を使用すると、Azure Blob ストレージに [ 生成されたPDF ドキュメントを直接アップロード ](/help/forms/early-access-ea-features.md#doc-generation-api) できるようになりました。 この機能強化により、ストレージと取得が合理化され、効率の向上やクラウドワークフローとの統合が促進されます。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
 ### Java 21 サポート {#java21}
 
-As of the January release, you can build code with Java 21 and Java 17. You gain access to new features like pattern matching, sealed classes, and various performance improvements. For configuration steps, including updating your Maven project and library versions, see the [Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) article.
+1 月リリースの時点で、Java 21 および Java 17 を使用してコードをビルドできます。 パターンマッチング、密封クラス、様々なパフォーマンス向上などの新機能にアクセスできます。 Maven プロジェクトとライブラリのバージョンの更新など、設定手順については、[ ビルド環境 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) の記事を参照してください。
 
-The more performant Java 21 **runtime** is automatically deployed when a Java 17 or 21 build is detected. However, Adobe also recommends opting into the Java 21 runtime for environments built with Java 11, by emailing [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). [Java 21 ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)について説明します。
+Java 17 または 21 ビルドが検出されると、よりパフォーマンスの高い Java 21 **runtime** が自動的にデプロイされます。 ただし、Adobeでは、Java 11 でビルドされた環境の場合は、[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) に電子メールで Java 21 ランタイムをオプトインすることをお勧めします。 [Java 21 ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)について説明します。
 
 >[!IMPORTANT]
 >
-> The Java 21 **runtime** was deployed to your dev/RDE environments in February; it will be applied to your stage/production environments on **April 28 and 29**. Java 21 （または Java 17）を使用した **コードの構築** は Java 21 ランタイムとは独立しています。Java 21 （または Java 17）を使用してコードを構築する手順を明示的に実行する必要があります。
+> Java 21 **ランタイム** は、2 月に開発環境/RDE 環境にデプロイされました。これは、**4 月 28 日と 29 日** にステージ環境/実稼動環境に適用されます。 Java 21（または Java 17）を使用した&#x200B;**コードのビルド**&#x200B;は、Java 21 ランタイムとは独立しています。Java 21（または Java 17）でコードをビルドする手順を明示的に実行する必要があります。
 
-### その他の宛先へのAEM ログ転送 – Beta プログラム {#log-forwarding-earlyadopter}
+### その他の宛先へのAEM ログ転送 - ベータ版プログラム {#log-forwarding-earlyadopter}
 
-ベータ版では、AEM ログを（HTTPS を使用して） New Relic、Amazon S3、Sumo Logic に転送できます。 なお、AEM ログ（Apache/Dispatcherを含む）はサポートされていますが、CDN ログはサポートされていません。 アクセスについては、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) にメールを送信します。
+現在のベータ版では、AEM ログを New Relic（HTTPS を使用）、Amazon S3、Sumo Logic に転送できます。AEM ログ（Apache／Dispatcher を含む）はサポートされていますが、CDN ログはサポートされていません。アクセスについて詳しくは、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) までメールで送信してください。
 
-ログはCloud Managerからダウンロードできますが、多くの組織では、これらのログを優先されるログ配信先にストリーミングすることが有益であると考えています。 AEMはすでに、Azure Blob Storage、Datadog、HTTPS、Elasticsearch（および OpenSearch）、Splunk へのAEMおよび CDN ログ転送（GA）をサポートしています。 この機能は、セルフサービス方式で設定され、設定パイプラインを使用してデプロイされます。
+ログは Cloud Manager からダウンロードできますが、多くの組織では、これらのログを優先されるログの宛先にストリームすると役立ちます。AEM では既に、Azure Blob Storage、Datadog、HTTPS、Elasticsearch（および OpenSearch）、Splunk への AEM および CDN ログ転送（GA）をサポートしています。この機能は、セルフサービス方式で設定し、設定パイプラインを使用してデプロイします。
 
-詳しくは、[ ログ転送のドキュメント ](/help/implementing/developing/introduction/log-forwarding.md) を参照してください。
+詳しくは、[ログ転送ドキュメント](/help/implementing/developing/introduction/log-forwarding.md)を参照してください。
 
 ### Edge コンピューティング - フィードバックのリクエスト {#edge-computing-feedback}
 
