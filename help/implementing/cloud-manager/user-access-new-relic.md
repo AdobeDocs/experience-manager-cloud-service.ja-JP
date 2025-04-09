@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 428c722ae65342a52339effe7c97fd6de10a4f58
+source-git-commit: 3323da83584c4511b15145c0106031df4597891c
 workflow-type: tm+mt
-source-wordcount: '1837'
-ht-degree: 91%
+source-wordcount: '1833'
+ht-degree: 99%
 
 ---
 
@@ -174,12 +174,12 @@ New Relic からメールが届かない場合は、次の操作を実行しま�
 New Relic One にユーザーを追加する場合は、次の制限が適用されます。
 
 * 最大 30 人のユーザーを追加できます。ユーザーの最大数に達した場合は、新しいユーザーを追加できるように、ユーザーを削除します。
-* New Relic に追加されたユーザーは、**制限付き**&#x200B;のタイプになります。詳しくは、[New Relic のドキュメント](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/introduction-managing-users/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)を参照してください。
-* AEM as a Cloud Serviceは **New Relic One APM** ソリューションのみを提供し、インフラストラクチャのモニタリング、アラート、ログ、API 統合のサポートは提供していません。
+* New Relicに追加されるユーザーのタイプは、**基本** です。 詳しくは、[New Relic のドキュメント](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/)を参照してください。
+* AEM as a Cloud Service は New Relic One APM ソリューションのみを提供し、アラート、ログ、API 統合のサポートは提供していません。
 
 >[!NOTE]
 >
->New Relic One サブアカウントで **ユーザーログイン** アクティビティが 30 日以上検出されない場合、APM エージェントは停止され、データは AEM Cloud Service からNew Relicに送信されません。  **サブアカウントが再アクティブ化されるまで、データは再送信されません。**
+>New Relic One サブアカウントで 30 日以上&#x200B;**ユーザーログイン**&#x200B;アクティビティが検出されなかった場合、APM エージェントは停止し、AEM Cloud Service から New Relic にデータは送信されません。**サブアカウントを再アクティブ化するまで、データは再送信されません。**
 >
 >このドキュメントの [New Relic One サブアカウントのアクティベート](#activate-sub-account)の節と同じ手順に従って、New Relic One サブアカウントを再アクティベートします。
 
@@ -187,11 +187,11 @@ AEM as a Cloud Service プログラムの New Relic One 製品に関する詳細
 
 ## よくある質問 {#faqs}
 
-+++**AdobeはNew Relic Oneで何をモニタリングしますか？**
++++**アドビが New Relic One でモニタリングするものは何ですか？**
 
 アドビは、New Relic One の Java プラグインを介して AEM as a Cloud Service のオーサー、パブリッシュ、プレビュー（利用可能な場合）サービスをモニタリングします。アドビは、カスタムの New Relic One APM テレメトリと、実稼動および実稼動以外の AEM as a Cloud Service 環境でのモニタリングを有効にします。
 
-New Relic One アカウントは、Adobeが管理する主要なアカウントに接続されており、複数のアプリケーションがレポートを作成します。AEM as a Cloud Service環境ごとに 3 つあります。
+New Relic One アカウントは、アドビが管理するプライマリアカウントに接続されており、複数のアプリケーションがレポートを作成します。AEM as a Cloud Service 環境ごとに 3 つあります。
 
 * 環境ごとにオーサーサービス用の 1 つのアプリケーション
 * 環境ごとに `Publish` サービス用の 1 つのアプリケーション（ゴールデンパブリッシュを含む）
@@ -201,16 +201,16 @@ New Relic One アカウントは、Adobeが管理する主要なアカウント�
 
 * 各アプリケーションは、1 つのライセンスキーを使用します。
 * AEM as a Cloud Service 環境は、1 つの New Relic One アカウントにのみレポートします。
-* 両方のNew Relic Oneの完全なモニタリング指標およびイベントは、3 か月間保持されます。
+* 両方の New Relic One の完全なモニタリング指標およびイベントは、3 か月間保持されます。
 
 +++
 
-+++**AdobeはNew Relic Oneからアラート通知を送信しますか？**
++++**アドビは New Relic Oneからのアラート通知を送信しますか？**
 
 アドビは、監視の目的でのみ New Relic One へのアクセスを提供します。お客様への警告や内部の運用アラートには使用しません。インシデントに関する通知は、[ユーザー通知プロファイル](/help/journey-onboarding/notification-profiles.md)を使用して送信されます。
 +++
 
-+++**New Relic One Cloud Service のデータにアクセスできるのは誰ですか？**
++++**New Relic One Cloud Service のデータへは、誰がアクセスできますか？**
 
 最大 30 人のチームメンバーに完全な読み取りアクセスが許可されます。読み取りアクセスには、New Relic One エージェントによって収集されたすべての APM 指標が含まれます。
 +++
@@ -220,7 +220,7 @@ New Relic One アカウントは、Adobeが管理する主要なアカウント�
 カスタム SSO 設定は、アドビがプロビジョニングした New Relic One アカウントではサポートされていません。
 +++
 
-+++**既にオンプレミスのNew Relic サブスクリプションがある場合はどうなりますか？**
++++**既にオンプレミスの New Relic サブスクリプションがある場合はどうなりますか？**
 
 New Relic One は、New Relic の新しい観測可能なプラットフォームであり、アドビサポートとお客様のチームが指標とイベントをすべて 1 か所で観測、監視、表示できます。
 
@@ -234,7 +234,7 @@ New Relic One を使用すると、ユーザーがアクセスできるすべて
 
 +++
 
-+++**New Relic One アカウントの APM エージェントが停止しました。何が起こった？**
++++**New Relic One アカウントの APM エージェントが停止しました。何が起きたのでしょうか？**
 
 30 日以上アクティビティが検出されなかった場合、[APM エージェントは停止します](#limitations)。このドキュメントの [New Relic One サブアカウントのアクティベート](#activate-sub-account)の節と同じ手順に従って、New Relic One サブアカウントを再アクティベートします。
 +++
