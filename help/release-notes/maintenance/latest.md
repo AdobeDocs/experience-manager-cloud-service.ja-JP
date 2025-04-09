@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 96084c84c45af54b1f152e22b8331f85dc6b583f
+source-git-commit: c8d7f23ef89de97ed656157ba628fd33206b4588
 workflow-type: tm+mt
-source-wordcount: '1501'
-ht-degree: 21%
+source-wordcount: '1577'
+ht-degree: 20%
 
 ---
 
@@ -67,6 +67,10 @@ ht-degree: 21%
 * SITES-24907：ユニバーサルエディターを使用したEdge Delivery:MSM のユースケース（アーリーアクセス）向けに、複数のサイトへのAssetsの公開をサポートします。
 * SITES-27956：ユニバーサルエディターを使用したEdge Delivery：公開スループットの向上（早期アクセス）。
 * SITES-27956：ユニバーサルエディターを使用したEdge Delivery:Edge Delivery Servicesに公開する際のエラー処理を改善しました（アーリーアクセス）。
+* SITES-29602:CIF:core-cif-components-core での Guava の使用の削除。
+* SITES-25785:CIF:CIFの商品参照データタイプに対する商品バリアントの選択の追加。
+* SITES-26392:CIF[ 試行用 ]:PDP のCIF コアコンポーネントにおける JSON+LD。
+* SITES-21278:CIF[ 試験的 ]:CIFでキャッシュをクリアする機能。
 
 ### 修正された問題 {#fixed-issues-20133}
 
@@ -111,6 +115,9 @@ ht-degree: 21%
 * SITES-29363：ネストされたライブコピーコンテンツ階層に対して「ライブコピーをリセット」ボタンが機能しない。
 * SITES-29369:AIO のAssets イベントの問題 | ページ公開済み/未公開イベントを誤ってトリガーする。
 * SITES-29972：削除アクションや名前変更アクションによって、誤ったワークフローコメントが生成されることがある。
+* SITES-24631:CIF：商品フィールドの検索の問題。
+* SITES-24902:CIF：製品の URL 形式が#variant_sku で期待どおりに動作しない。
+* SITES-29191:CIF：商品リストコンポーネントに 20 個を超える SKU を追加できない。
 
 ### 既知の問題 {#known-issues-20133}
 
