@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 5a1c951813e026806aa3b5b23a912a48681f4505
+source-git-commit: bbf66195593032eb2ccf073ec78685c9d9726235
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 76%
+source-wordcount: '1092'
+ht-degree: 65%
 
 ---
 
@@ -50,9 +50,18 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 **Open API を使用した Dynamic Media を使用して配信されるビデオのロングフォームサポート**
 
-OpenAPI を使用した Dynamic Media で長編ビデオがサポートされるようになりました。 長形式のビデオは、最大 50 GB と 2 時間をサポートできます。
+OpenAPI を使用した Dynamic Media で長編ビデオがサポートされるようになりました。 The long form videos can support up to 50GB and 2 hours.
 
-### アセットビューの新機能 {#new-features-assets-view}
+### Dynamic Media Classic {#dmc}
+
+<!-- CARRY OVER TO APRIL 2025 RELEASE NOTES -->
+
+The Bandwidth tab in the Dynamic Media Classic reporting dashboard is no longer supported as of April 2025.
+
+See [Bandwidth and Storage, Types of reports](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
+
+
+## アセットビューの新機能 {#new-features-assets-view}
 
 
 **ルートタグのサポート**
@@ -75,19 +84,19 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 
 #### クラウドストレージのサポートの強化：Azure Blob Storage への直接 PDF アップロード
 
-AEM Forms ドキュメント生成 API で、[生成された PDF ドキュメントを Azure Blob Storage に直接アップロード](/help/forms/early-access-ea-features.md#doc-generation-api)できるようになりました。この機能強化により、ストレージと取得が合理化され、効率の向上やクラウドワークフローとの統合が促進されます。
+AEM Forms Document Generation APIs now let you [directly upload generated PDF documents](/help/forms/early-access-ea-features.md#doc-generation-api) to Azure Blob Storage. この機能強化により、ストレージと取得が合理化され、効率の向上やクラウドワークフローとの統合が促進されます。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
 ### Java 21 サポート {#java21}
 
-1 月のリリースノートで説明したように、Java 21 を使用してコードをビルドできるようになりました。これには、新機能（switch ステートメントのパターンマッチング、sealed クラスなど）とパフォーマンスの向上が含まれ、Java 17 ビルドも新たにサポートされます。Maven プロジェクトとライブラリのバージョンのアップデートを含む設定手順について詳しくは、[ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)の記事を参照してください。
+As of the January release, you can build code with Java 21 and Java 17. You gain access to new features like pattern matching, sealed classes, and various performance improvements. For configuration steps, including updating your Maven project and library versions, see the [Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) article.
 
-Java 17 または 21 ビルドが検出されると、より高パフォーマンスの Java 21 **ランタイム**&#x200B;が自動的にデプロイされます。ただし、Java 11 でビルドされた環境については、[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) にメールを送信して Java 21 ランタイムをオプトインすることをお勧めします。[Java 21 ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)について説明します。
+The more performant Java 21 **runtime** is automatically deployed when a Java 17 or 21 build is detected. However, Adobe also recommends opting into the Java 21 runtime for environments built with Java 11, by emailing [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). [Java 21 ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)について説明します。
 
 >[!IMPORTANT]
 >
-> Java 21 **ランタイム** は、2 月に開発環境/RDE 環境にデプロイされました。これは、4 月 28 日と 29 日 **にステージング環境/実稼動環境に適用され** す。 Java 21 （または Java 17）を使用した **コードの構築** は Java 21 ランタイムとは独立しています。Java 21 （または Java 17）を使用してコードを構築する手順を明示的に実行する必要があります。
+> The Java 21 **runtime** was deployed to your dev/RDE environments in February; it will be applied to your stage/production environments on **April 28 and 29**. Java 21 （または Java 17）を使用した **コードの構築** は Java 21 ランタイムとは独立しています。Java 21 （または Java 17）を使用してコードを構築する手順を明示的に実行する必要があります。
 
 ### その他の宛先へのAEM ログ転送 – Beta プログラム {#log-forwarding-earlyadopter}
 
@@ -102,6 +111,7 @@ Java 17 または 21 ビルドが検出されると、より高パフォーマ�
 Edge コンピューティングには、データ処理がブラウザーに近づくので、待ち時間が短縮されるなどのメリットがあります。 このテクノロジーが AEM の配信を公開および Edge Delivery Services プロジェクトに役立つかどうかについて、ぜひお聞かせください。さらに、製品ロードマップへのインプットとして、お客様が何を想定されるかをお教えください。
 
 いくつかの考えられるユースケース：
+
 * コンテンツへのアクセスをゲートする IdP を使用した認証
 * 位置情報、デバイスタイプ、ユーザー属性などに基づく動的（パーソナライズされ、ローカライズされた）コンテンツのレンダリング。
 * 高度な画像操作
@@ -115,7 +125,7 @@ Edge コンピューティングには、データ処理がブラウザーに近
 
 開発者は、AEM as Cloud Service の機能を独自のアプリケーションやツールに深く統合できます。 新しい AEM as a Cloud Service API は、OpenAPI 仕様に従い、一貫性の確保、明確な文書化、使いやすさを目標とします。認証を必要とするエンドポイントの資格情報は、Adobe Developer Console プロジェクトを作成することによって生成されます。
 
-詳しくは、[OpenAPI ベースの AEM API](/help/implementing/developing/open-api-based-apis.md) を参照し、設定と使用方法を説明した[エンドツーエンドチュートリアル](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)を試してください。
+詳しくは、[OpenAPI ベースの AEM API](/help/implementing/developing/open-api-based-apis.md) を参照し、設定と使用方法を説明した[エンドツーエンドチュートリアル](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s)を試してください。
 
 具体的には、以下に示す API エンドポイントが早期導入プログラムの一部として使用可能です。 興味がある場合は、どのように活用する予定かを記載したメールを [aem-apis@adobe.com](mailto:aem-apis@adobe.com) まで送信してください。
 
@@ -132,7 +142,10 @@ Edge コンピューティングには、データ処理がブラウザーに近
 
 ## [!DNL Experience Manager] ガイド {#guides}
 
-Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0)を参照してください。
+Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0)を参照してください。
+
+<!-- THE FOLLOWING URL WAS USED ABOVE BUT IT WAS 404. IT WAS REPLACED WITH THE URL ABOVE 
+(https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0). -->
 
 ## Cloud Manager {#cloud-manager}
 
