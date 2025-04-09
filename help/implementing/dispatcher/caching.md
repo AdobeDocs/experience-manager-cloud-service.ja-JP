@@ -4,10 +4,10 @@ description: AEM as a Cloud Service でのキャッシュの基本について
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: fc555922139fe0604bf36dece27a2896a1a374d9
+source-git-commit: 4a586a0022682dadbc57bab1ccde0ba2afa78627
 workflow-type: tm+mt
-source-wordcount: '2924'
-ht-degree: 97%
+source-wordcount: '3071'
+ht-degree: 94%
 
 ---
 
@@ -20,7 +20,18 @@ Dispatcher 設定にルールを適用して、デフォルトのキャッシュ
 
 ## キャッシュ {#caching}
 
+Caching of HTTP responses in AEM as a Cloud Service’s CDN is controlled by the following HTTP response headers from the origin: `Cache-Control`, `Surrogate-Control`, or `Expires`.
+
+These cache headers are typically set in AEM Dispatcher vhost configurations using mod_headers, but can also be set in custom Java™ code running in AEM Publish itself (see [How to enable CDN caching](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)).
+
+The cache key for CDN resources contains the full request url, including query parameters, so every different query parameter will produce a different cache entry. Consider removing unwanted query parameters; [see below](#marketing-parameters) for improving cache hit ratio.
+
+Origin responses that contain `private`, `no-cache` or `no-store` in  `Cache-Control` are not cached by the AEM as a Cloud Service’s CDN (see [How to disable CDN caching
+](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) for more details).  Also, responses that are setting cookies, i.e. have a `Set-Cookie` response header are not cached by the CDN.
+
 ### HTML/Text {#html-text}
+
+Dispatcher configuration sets some default caching headers for `text/html` content type.
 
 * デフォルトでは、Apache レイヤーが送出する `cache-control` ヘッダーに基づいて、ブラウザーによって 5 分間キャッシュされます。CDN はこの値も順守します。
 * デフォルトの HTML/Text キャッシュ設定は、`global.vars` で `DISABLE_DEFAULT_CACHING` 変数を次のように定義することで無効にできます。
@@ -243,7 +254,7 @@ Web サイトの URL には、キャンペーンの成功をトラックする�
 ^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid|msclkid|ttclid)$
 ```
 
-この機能は、[CDN 設定 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations) の `requestTransformations` フラグを使用してオンとオフを切り替えることができます。
+この機能は、[CDN 設定](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations)の `requestTransformations` フラグを使用してオンとオフを切り替えることができます。
 
 例えば、CDN レベルでマーケティングパラメーターの削除を停止するには、次のセクションを含む設定を使用して `removeMarketingParams: false` をデプロイする必要があります。
 
@@ -257,7 +268,7 @@ data:
     removeMarketingParams: false
 ```
 
-`removeMarketingParams` の機能が CDN レベルで無効になっている場合は、Dispatcher設定の `ignoreUrlParams` プロパティを設定することをお勧めします。[Dispatcherの設定 – URL パラメーターの無視 ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#ignoring-url-parameters) を参照してください。
+`removeMarketingParams` 機能が CDN レベルで無効になっている場合でも、Dispatcher 設定の `ignoreUrlParams` プロパティを設定することをお勧めします。[Dispatcher の設定 - URL パラメーターの無視](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#ignoring-url-parameters)を参照してください。
 
 マーケティングパラメーターを無視する方法は 2 つあります。（最初のクエリは、クエリパラメーターを使用してキャッシュバスティングを無視する場合に推奨されます）。
 
@@ -291,7 +302,7 @@ data:
 以前のバージョンの AEM と同様に、ページを公開または非公開にすると、Dispatcher のキャッシュからコンテンツがクリアされます。キャッシュに問題があると疑われる場合は、該当するページを再度公開し、`ServerAlias` localhost に一致する仮想ホスト（Dispatcher キャッシュの無効化に必要）が使用可能であることを確認する必要があります。
 
 >[!NOTE]
->Dispatcher を適切に無効化するには、「127.0.0.1」「localhost」「\*.local」「\*.adobeaemcloud.com」「\*.adobeaemcloud.net」からのリクエストがすべて vhost 設定で一致し、処理されることを確認してください。この作業を行うには、[AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) の参照パターンに従って、キャッチオール vhost 設定で「*」をグローバルに一致させます。または、前述のリストがいずれかの vhost にキャッチされるようにすることもできます。
+>For proper Dispatcher invalidation, make sure that requests from &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;\*.local&quot;, &quot;\*.adobeaemcloud.com&quot;, and &quot;\*.adobeaemcloud.net&quot; are all matched and handled by a vhost configuration so the request can be served. この作業を行うには、[AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) の参照パターンに従って、キャッチオール vhost 設定で「*」をグローバルに一致させます。または、前述のリストがいずれかの vhost にキャッチされるようにすることもできます。
 
 パブリッシュインスタンスは、オーサーから新しいバージョンのページまたはアセットを受け取ると、フラッシュエージェントを使用して Dispatcher 上の該当するパスを無効にします。更新されたパスは、親と共に、Dispatcher キャッシュから削除されます（削除されるレベルは [statfilelevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#invalidating-files-by-folder-level) で設定できます）。
 
