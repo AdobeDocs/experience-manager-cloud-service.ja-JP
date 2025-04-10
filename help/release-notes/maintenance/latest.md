@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c8d7f23ef89de97ed656157ba628fd33206b4588
+source-git-commit: 3fb9e633da6269b5b9847a825951746ddeb532f9
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1589'
 ht-degree: 94%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 94%
 * SITES-27781：コンテンツフラグメント参照のモデルレベルの検証を実装し、モデル制約と必要なタグに対して参照されたフラグメントを検証できるようになる。
 * SITES-27784：`jcr:path` の代わりに PATH 関数を使用するように SQL クエリ生成を更新。
 * SITES-28040：Adobe Target ExperienceFragmentsReplicationListener が破損している。
-* SITES-28051：コンテンツフラグメントに対する現在のユーザーの権限を取得します：GET /cf/fragments/{fragmentId}/permissions。
+* SITES-28051：コンテンツフラグメントに対する現在のユーザーの権限を取得（GET /cf/fragments/{fragmentId}/permissions）。
 * SITES-28190：プレビュー統合テストの設定を行う。
 * SITES-28227：フラグメントへの参照としてアセットを追加する際、アセットが存在することを検証。
 * SITES-28248：OSGI 設定に基づいて Sites イベントを切り替える。
@@ -121,7 +121,7 @@ ht-degree: 94%
 
 ### 既知の問題 {#known-issues-20133}
 
-なし。
+* SITES-30727:AEM エディター内のサブコンポーネントのドラッグ&amp;ドロップが失敗する場合があります。
 
 ### 廃止された機能と API {#deprecated-20133}
 
