@@ -4,7 +4,7 @@ description: AEM as a Cloud Service の Cloud Manager 2025.4.0 のリリース�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 75afe77aa52c4c308dc1a611e4ce544a9c9c3da2
+source-git-commit: 6dc92a0f824ca9bc3726b48581ace232302691e5
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 63%
@@ -73,7 +73,6 @@ AEM ホームでは、Adobe Experience Manager 内でコンテンツ、アセッ
 * プロファイルに最適な役割：コンテンツ作成者、開発者、ビジネス所有者、管理者、その他（説明を入力）。
 * プライマリ AEM アクセスサーフェス：AEM Sites、AEM Assets、AEM Forms、Cloud Manager、その他（説明を入力）。
 
-
 ## バグ修正
 
 * **証明書に共通名（CN）フィールドがない問題**
@@ -90,3 +89,4 @@ AEM ホームでは、Adobe Experience Manager 内でコンテンツ、アセッ
 
 
 <!-- ## Known issues {#known-issues} -->
+
