@@ -4,10 +4,10 @@ description: ' [!DNL Assets view] のユーザーインターフェイスとナ�
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: f4d0364439d704d4f5611b5fa2f46428048005b0
 workflow-type: tm+mt
 source-wordcount: '1026'
-ht-degree: 97%
+ht-degree: 92%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 97%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
         </td>
     </tr>
     <tr>
@@ -113,7 +113,7 @@ ht-degree: 97%
 
 ![アセットをプレビュー](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**：リポジトリ内の現在のフォルダーまたは現在の検索結果に戻ります **B**：プレビューしているファイルの名前と形式 **C**：タスクを割り当てます **D**：高度なメタデータ **E**：キーワードとスマートタグ **F**：コメントと注釈 **G**：選択したアセットに関連するタスクを表示します **H**：バージョンを表示および管理します **I**：画像のレンディションを表示します **J**：画像を編集します **K**：スマート切り抜きレンディションと OpenAPI 機能を備えた Dynamic Media レンディションを含む Dynamic Media レンディションを表示します。**L**：基本メタデータ **M**：高度なメタデータ **N**：キーワードとスマートタグ **O**：フォルダーに戻ることなく、現在のフォルダー内の前または次のアセットに進みます **P**：より詳細にプレビューします。ズーム、全画面表示、その他のオプション。
+**A**：リポジトリー内の現在のフォルダーまたは現在の検索結果に戻る **B**：プレビューしているファイルの名前と形式 **C**：タスクを割り当て **D**：詳細メタデータ **E**：キーワードとスマートタグ **F**：コメントと注釈 **G**：選択したアセットに関連するタスクの表示 **H**:[ バージョンを表示とを管理 ](/help/assets/manage-organize-assets-view.md#versions-of-assets)**I** **** ****：画像のレンディションのを表示 K：動的を表示 openapi 機能レンディションを使用したスマート切り抜きや Dynamic Media などのメディアレンディション。 **L**：基本メタデータ **M**：高度なメタデータ **N**：キーワードとスマートタグ **O**：フォルダーに戻ることなく、現在のフォルダー内の前または次のアセットに進みます **P**：より詳細にプレビューします。ズーム、全画面表示、その他のオプション。
 
 また、ビデオをプレビューすることもできます。
 
