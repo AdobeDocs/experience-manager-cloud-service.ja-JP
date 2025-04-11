@@ -4,7 +4,7 @@ description: WYSIWYG テンプレートエディターを使用して Dynamic Me
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 3d0e3430b886cefb9b18188641483d23ce66d442
+source-git-commit: 362bbcf872a37781dfa849b703425f49c30660ac
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 92%
@@ -313,13 +313,15 @@ Dynamic Media テンプレートにターゲットページに誘導するCTA �
 1. テンプレートの場所に移動してテンプレートを選択し、![ 編集 ](/help/assets/assets/edit-pen-icon.svg)**[!UICONTROL テンプレートを編集]** をクリックします。 テンプレートがキャンバスに表示されます。
 1. テンプレートレイヤーを選択し [ そのプロパティパネルに移動 ](#edit-or-delete-a-layer)、そこにCTA リンクを追加します。
 1. プロパティパネルで「**[!UICONTROL CTAを追加]**」を選択し、「**[!UICONTROL URL]**」フィールドに公開先 URL を指定して、「**[!UICONTROL 保存]**」をクリックします。
-   ![CTAを追加 ](/help/assets/assets/add-cta.png){width="300" align="center"}
+
+![CTAを追加 ](/help/assets/assets/add-cta.png)
+
 1. **[!UICONTROL プレビュー]** をクリックして、テンプレートをプレビューし、定義されたパラメーターを確認します。
 1. **[!UICONTROL 公開]** をクリックし、**[!UICONTROL はい]** を選択してテンプレートを公開します（まだ公開していない場合）。
 1. このテンプレートが保存されているフォルダーに移動し、このテンプレートを選択して ![ 詳細ページ ](/help/assets/assets/details-page-icon.svg)**[!UICONTROL 詳細]** をクリックします。
 1. **[!UICONTROL コピーオプション]** をクリックし、「**[!UICONTROL 埋め込みコードをコピー]**」を選択します。
 
-   ![ 埋め込みコードのコピー ](/help/assets/assets/copy-options1.png){width="300" align="center"}
+   ![ 埋め込みコードのコピー ](/help/assets/assets/copy-options1.png)
 
    埋め込みコードの例を次に示します。
 
