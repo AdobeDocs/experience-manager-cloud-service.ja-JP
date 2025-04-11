@@ -4,7 +4,7 @@ description: WYSIWYG テンプレートエディターを使用して Dynamic Me
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 362bbcf872a37781dfa849b703425f49c30660ac
+source-git-commit: 7bb15e0b8aa24f9737f70f86c78dc09be1ea4750
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 92%
@@ -314,7 +314,7 @@ Dynamic Media テンプレートにターゲットページに誘導するCTA �
 1. テンプレートレイヤーを選択し [ そのプロパティパネルに移動 ](#edit-or-delete-a-layer)、そこにCTA リンクを追加します。
 1. プロパティパネルで「**[!UICONTROL CTAを追加]**」を選択し、「**[!UICONTROL URL]**」フィールドに公開先 URL を指定して、「**[!UICONTROL 保存]**」をクリックします。
 
-![CTAを追加 ](/help/assets/assets/add-cta.png)
+   ![CTAを追加 ](/help/assets/assets/add-cta.png)
 
 1. **[!UICONTROL プレビュー]** をクリックして、テンプレートをプレビューし、定義されたパラメーターを確認します。
 1. **[!UICONTROL 公開]** をクリックし、**[!UICONTROL はい]** を選択してテンプレートを公開します（まだ公開していない場合）。
@@ -327,7 +327,7 @@ Dynamic Media テンプレートにターゲットページに誘導するCTA �
 
    ```json
     <div class="adobe-dynamicmedia-template-embed-container">
-    <img id="adobe-dynamicmedia-template-image" src="http://s7ap1.scene7.com/is/image/abcd/dm-template-cta-v2?wid=800&hei=300&qlt=100&fit=constrain&cache=off" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
+    <img id="<Image ID>>" src="<Image Source>>" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
     <map name="adobe-dynamicmedia-template-map">
     <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
     <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
