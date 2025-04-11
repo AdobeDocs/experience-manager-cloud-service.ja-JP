@@ -4,10 +4,10 @@ description: WYSIWYG テンプレートエディターを使用して Dynamic Me
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a5626c531c4a21b9d88272e2c866721ee7be9aed
 workflow-type: tm+mt
-source-wordcount: '2834'
-ht-degree: 99%
+source-wordcount: '3050'
+ht-degree: 92%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 99%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
         </td>
     </tr>
     <tr>
@@ -305,6 +305,41 @@ URL 内でパラメーターを直接編集するのは面倒な場合があり�
 2. テンプレートの場所に移動します。
 3. テンプレートを選択します。
 4. 「**[!UICONTROL テンプレートを編集]**」をクリックします。テンプレートキャンバスには、テンプレートと、レイヤーパネル内のすべてのレイヤーのリストが表示されます。必要に応じて、テンプレートの編集を開始します。
+
+## テンプレートレイヤーへのコールトゥアクション リンクの追加{#add-CTA-in-dynamic-media-templates}
+
+Dynamic Media テンプレートにターゲットページに誘導するCTA リンクを追加して、テンプレートの画像やテキストレイヤーをハイパーリンクに変換します。 レイヤーにCTA リンクを追加するには、次の手順を実行します。
+
+1. テンプレートの場所に移動してテンプレートを選択し、![ 編集 ](/help/assets/assets/edit-pen-icon.svg)**[!UICONTROL テンプレートを編集]** をクリックします。 テンプレートがキャンバスに表示されます。
+1. テンプレートレイヤーを選択し [ そのプロパティパネルに移動 ](#edit-or-delete-a-layer)、そこにCTA リンクを追加します。
+1. プロパティパネルで「**[!UICONTROL CTAを追加]**」を選択し、「**[!UICONTROL URL]**」フィールドに公開先 URL を指定して、「**[!UICONTROL 保存]**」をクリックします。
+   ![CTAを追加 ](/help/assets/assets/add-cta.png){width="300" align="center"}
+1. **[!UICONTROL プレビュー]** をクリックして、テンプレートをプレビューし、定義されたパラメーターを確認します。
+1. **[!UICONTROL 公開]** をクリックし、**[!UICONTROL はい]** を選択してテンプレートを公開します（まだ公開していない場合）。
+1. このテンプレートが保存されているフォルダーに移動し、このテンプレートを選択して ![ 詳細ページ ](/help/assets/assets/details-page-icon.svg)**[!UICONTROL 詳細]** をクリックします。
+1. **[!UICONTROL コピーオプション]** をクリックし、「**[!UICONTROL 埋め込みコードをコピー]**」を選択します。
+
+   ![ 埋め込みコードのコピー ](/help/assets/assets/copy-options1.png){width="300" align="center"}
+
+   埋め込みコードの例を次に示します。
+
+   ```
+    <div class="adobe-dynamicmedia-template-embed-container">
+    <img id="adobe-dynamicmedia-template-image" src="http://s7ap1.scene7.com/is/image/abcd/dm-template-cta-v2?wid=800&hei=300&qlt=100&fit=constrain&cache=off" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
+    <map name="adobe-dynamicmedia-template-map">
+    <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    </map>
+    </div>
+   ```
+
+1. コピーした埋め込みコードをサイトのHTML ファイルに追加し、ブラウザーで実行してテンプレートを表示します。
+
+テンプレートのCTA要素をクリックして、移動先ページに移動します。
+
+テンプレートレイヤーにCTA リンクを追加する方法については、この手順のビデオをご覧ください。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457577)
 
 ## 重要な注意点 {#important-points-to-note}
 
