@@ -6,7 +6,7 @@ exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
 source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
 source-wordcount: '653'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -77,7 +77,7 @@ Experience Manager Assets リポジトリで使用可能なすべての[承認�
 
 OpenAPI 機能を備えた Dynamic Media は、長形式ビデオもサポートします。 ビデオは最大 50 GB と 2 時間をサポートできます。
 
-使用可能な Dynamic Media 製品とその機能について詳しくは、[Dynamic Media PrimeとUltimate](/help/assets/dynamic-media/dm-prime-ultimate.md) を参照してください。
+使用可能な Dynamic Media 製品とその機能について詳しくは、[Dynamic Media Prime と Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md) を参照してください。
 
 ## 配信 API エンドポイント {#delivery-apis-endpoint}
 

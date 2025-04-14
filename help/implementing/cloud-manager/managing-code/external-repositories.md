@@ -7,7 +7,7 @@ exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 source-git-commit: 9807e59dedd0be0655a5cb73e61233b4a2ba7a4c
 workflow-type: tm+mt
 source-wordcount: '1870'
-ht-degree: 67%
+ht-degree: 76%
 
 ---
 
@@ -36,7 +36,7 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
 
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、外部リポジトリをリンクするプログラムを選択します。
 
-1. サイドメニューの **プログラム** で、![ フォルダーアウトラインアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg)**リポジトリ** をクリックします。
+1. サイドメニューの&#x200B;**プログラム**&#x200B;で、![フォルダーアウトラインアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **リポジトリ**&#x200B;をクリックします。
 
    ![リポジトリページ](/help/implementing/cloud-manager/managing-code/assets/repositories-tab.png)
 
@@ -52,7 +52,7 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
    | --- | --- |
    | **リポジトリ名** | 必須。新しいリポジトリのわかりやすい名前。 |
    | **リポジトリ URL** | 必須。リポジトリの URL。<br><br>GitHub でホストされているリポジトリを使用している場合は、パスの末尾を `.git` にする必要があります。<br>例：*`https://github.com/org-name/repo-name.git`*（URL パスは説明用です）。<br><br>外部リポジトリを使用している場合は、次の URL パス形式を使用する必要があります。<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> または <br>`https://self-hosted-domain/org-name/repo-name.git`<br>。Git ベンダーと一致させる必要があります。 |
-   | **リポジトリタイプを選択** | 必須。使用するリポジトリタイプを選択します。<ul><li>**GitHub** （GitHub エンタープライズおよび GitHub のセルフホストバージョン）</li><li>**GitLab**（`gitlab.com` と自己ホスト型バージョンの GitLab の両方） </li><li>**Bitbucket** (only `bitbucket.org` (cloud version) is supported. Bitbucket のセルフホストバージョンは、2024 年 2 月 15 日（PT）以降に非推奨（廃止予定）になりました。）</li></ul>上記のリポジトリ URL パスに GitLab や Bitbucket などの Git ベンダー名が含まれている場合、リポジトリタイプは既に事前に選択されています。 |
+   | **リポジトリタイプを選択** | 必須。使用するリポジトリタイプを選択します。<ul><li>**GitHub** （GitHub エンタープライズおよび GitHub のセルフホストバージョン）</li><li>**GitLab**（`gitlab.com` と自己ホスト型バージョンの GitLab の両方） </li><li>**Bitbucket** （`bitbucket.org` （クラウドバージョン）のみサポートされています。 Bitbucket のセルフホストバージョンは、2024 年 2 月 15 日（PT）以降に非推奨（廃止予定）になりました。）</li></ul>上記のリポジトリ URL パスに GitLab や Bitbucket などの Git ベンダー名が含まれている場合、リポジトリタイプは既に事前に選択されています。 |
    | **説明** | オプション。リポジトリの詳細な説明です。 |
 
 1. 「**保存**」を選択して、リポジトリを追加します。
@@ -65,9 +65,9 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
    | トークンタイプ | 説明 |
    | --- | --- |
    | **既存のアクセストークンを使用** | 組織にリポジトリアクセストークンを既に指定し、複数のリポジトリにアクセスできる場合は、既存のトークンを選択できます。**トークン名**&#x200B;ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。それ以外の場合は、新しいアクセストークンを追加します。 |
-   | **新しいアクセストークンを追加** | **リポジトリタイプ：GitHub エンタープライズ**<br><ul><li> **トークン名** テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[GitHub ドキュメント ](https://docs.github.com/ja/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) の手順に従って、個人用アクセストークンを作成します。<li>GitHub Enterprise Personal Access Token （PAT）に必要な権限 <br> これらの権限により、Cloud Managerではプルリクエストの検証、コミットステータスチェックの管理、必要なリポジトリ詳細へのアクセスが可能になります。<br>GitHub Enterprise で PAT を生成する場合は、次のリポジトリ権限が含まれていることを確認します。<ul><li>プルリクエスト（読み取りおよび書き込み）<li>コミットステータス（読み取りおよび書き込み）<li>リポジトリメタデータ （読み取り専用）</li></li></ul></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
-   | | **リポジトリタイプ：GitLab**<ul><li>**トークン名** テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[GitLab ドキュメント ](https://docs.gitlab.com/user/profile/personal_access_tokens/) の指示に従って、個人用アクセストークンを作成します。<li>GitLab 個人アクセストークン（PAT）に必要な権限 <br> これらのスコープを使用すると、Cloud Managerは、検証と Webhook 統合のために必要に応じて、リポジトリデータとユーザー情報にアクセスできます。<br>GitLab で PAT を生成する場合、次のトークンスコープが含まれていることを確認します。<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
-   | | **リポジトリタイプ：Bitbucket**<ul><li>**トークン名** テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Bitbucket ドキュメント ](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/) を使用して、リポジトリアクセストークンを作成します。<li>Bitbucket 個人アクセストークン（PAT）に必要な権限 <br> これらの権限により、Cloud Managerはリポジトリコンテンツへのアクセス、プルリクエストの管理、Webhook イベントの設定または対応を行うことができます。<br>Bitbucket でアプリパスワードを作成する場合は、次の必須のアプリパスワード権限が含まれていることを確認します。<ul><li>リポジトリ （読み取り専用）<li>プルリクエスト（読み取りおよび書き込み）<li>Webhook （読み取りおよび書き込み）</li></li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
+   | **新しいアクセストークンを追加** | **リポジトリタイプ：GitHub エンタープライズ**<br><ul><li> 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[GitHub ドキュメント](https://docs.github.com/ja/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)の指示に従って、個人アクセストークンを作成します。<li>GitHub Enterprise Personal Access Token （PAT）に必要な権限 <br> これらの権限により、Cloud Managerではプルリクエストの検証、コミットステータスチェックの管理、必要なリポジトリ詳細へのアクセスが可能になります。<br>GitHub Enterprise で PAT を生成する場合は、次のリポジトリ権限が含まれていることを確認します。<ul><li>プルリクエスト（読み取りおよび書き込み）<li>コミットステータス（読み取りおよび書き込み）<li>リポジトリメタデータ（読み取り専用）</li></li></ul></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
+   | | **リポジトリタイプ：GitLab**<ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[GitLab ドキュメント](https://docs.gitlab.com/user/profile/personal_access_tokens/)の指示に従って、個人アクセストークンを作成します。<li>GitLab 個人アクセストークン（PAT）に必要な権限 <br> これらのスコープを使用すると、Cloud Managerは、検証と Webhook 統合のために必要に応じて、リポジトリデータとユーザー情報にアクセスできます。<br>GitLab で PAT を生成する場合、次のトークンスコープが含まれていることを確認します。<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
+   | | **リポジトリタイプ：Bitbucket**<ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Bitbucket ドキュメント](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)を使用して、リポジトリアクセストークンを作成します。<li>Bitbucket 個人アクセストークン（PAT）に必要な権限 <br> これらの権限により、Cloud Managerはリポジトリコンテンツへのアクセス、プルリクエストの管理、Webhook イベントの設定または対応を行うことができます。<br>Bitbucket でアプリパスワードを作成する場合は、次の必須のアプリパスワード権限が含まれていることを確認します。<ul><li>リポジトリ（読み取り専用）<li>プルリクエスト（読み取りおよび書き込み）<li>webhook（読み取りおよび書き込み）</li></li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
 
    >[!NOTE]
    >
@@ -152,9 +152,9 @@ URL をプレーンテキストファイルにペーストします。コピー�
 
    | リポジトリ | 必須の Webhook イベント |
    | --- | --- |
-   | GitHub エンタープライズ | これらのイベントを使用すると、Cloud Managerは、プルリクエストの検証、パイプラインのプッシュベースのトリガー、Edge Delivery Services コード同期などの GitHub アクティビティに応答できます。<br> 次の必要な Webhook イベントで、Webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト<li>プッシュ<li>問題のコメント</li></li></li></ul></ul></ul> |
+   | GitHub エンタープライズ | これらのイベントを使用すると、Cloud Managerは、プルリクエストの検証、パイプラインのプッシュベースのトリガー、Edge Delivery Services コード同期などの GitHub アクティビティに応答できます。<br> 次の必要な Webhook イベントで、Webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト<li>プッシュ<li>コメントを発行</li></li></li></ul></ul></ul> |
    | GitLab | これらの Webhook イベントを使用すると、コードがプッシュされたときや、結合リクエストが送信されたときに、Cloud Managerがパイプラインをトリガーできます。 また、プルリクエストの検証に関連するコメントも（メモイベントを通じて）追跡します。<br> 次の必要な Webhook イベントで Webhook がトリガーするように設定されていることを確認します<ul><li>プッシュイベント<li>結合リクエストイベント<li>メモイベント</li></li></li></ul></ul></ul> |
-   | Bitbucket | これらのイベントにより、Cloud Managerは、プルリクエストの検証、コードプッシュへの応答、パイプライン調整のためのコメントとのインタラクションができるようになります。<br> 次の必要な Webhook イベントで Webhook がトリガーするように設定されていることを確認します<ul><li>プル要求：作成済み<li>プル要求：更新済み<li>プルリクエスト：結合<li>プル要求：コメント<li>リポジトリ : プッシュ</li></li></li></ul></ul></ul> |
+   | Bitbucket | これらのイベントにより、Cloud Managerは、プルリクエストの検証、コードプッシュへの応答、パイプライン調整のためのコメントとのインタラクションができるようになります。<br> 次の必要な Webhook イベントで Webhook がトリガーするように設定されていることを確認します<ul><li>プルリクエスト：作成済み<li>プルリクエスト：更新済み<li>プルリクエスト：結合済み<li>プルリクエスト：コメント<li>リポジトリ：プッシュ</li></li></li></ul></ul></ul> |
 
 ### Webhook を使用したプルリクエストの検証
 

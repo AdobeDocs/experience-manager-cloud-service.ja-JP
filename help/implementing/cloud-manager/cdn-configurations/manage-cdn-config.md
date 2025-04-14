@@ -8,7 +8,7 @@ exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
 source-git-commit: a764a9d1e7d9fcd0be6abf9e2fb409346dc0f549
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 77%
+ht-degree: 98%
 
 ---
 
@@ -68,32 +68,32 @@ Adobe Cloud Manager では、いくつかの理由により、環境層（パブ
 1. 「**更新**」をクリックします。
 
 
-## 運用開始準備：カスタムドメインの DNS 設定の指定 {#go-live-readiness}
+## 実稼動対応：カスタムドメインの DNS 設定の指定 {#go-live-readiness}
 
-カスタムドメインがトラフィックを提供する前に、DNS プロバイダーとの DNS 設定を完了する必要があります。 ドメインマッピングをデプロイして **運用開始** をクリックすると、Cloud Managerにダイアログボックスが表示され、DNS レコードのセットアッププロセスを順を追って実行できます。 CNAME レコードタイプまたは A レコードタイプを追加して、実稼動環境に移行するオプションがあります。
+カスタムドメインでトラフィックを指定する前に、DNS プロバイダーで DNS 設定を完了する必要があります。ドメインマッピングをデプロイし、「**実稼動**」をクリックすると、Cloud Manager に DNS レコードの設定プロセスを順を追って進めるダイアログボックスが表示されます。CNAME レコードタイプまたは A レコードタイプのいずれかを追加して実稼動するオプションがあります。
 
 <!-- See also [APEX record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record#adobe-managed-cert-apex-record) and [CNAME record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record). -->
 
-**運用開始準備を設定するには：**
+**実稼動対応を設定するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 1. 左側のサイドメニューの&#x200B;**サービス**&#x200B;で、![ソーシャルネットワークアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg)「**ドメインマッピング**」をクリックします。
-1. ドメインマッピング テーブルで、設定する運用開始準備を持つ CDN に対応する行の末尾付近にある「**運用開始**」をクリックします。
+1. ドメインマッピングテーブルで、実稼動対応を設定する CDN に対応する行の末尾付近にある「**実稼動**」をクリックします。
 
-   ![ 運用開始準備ダイアログボックス ](/help/implementing/cloud-manager/assets/domain-mappings-go-live-readiness.png)
+   ![実稼動対応ダイアログボックス](/help/implementing/cloud-manager/assets/domain-mappings-go-live-readiness.png)
 
-1. **運用開始準備** ダイアログボックスで、次のいずれかの操作を行います。
+1. **実稼動対応**&#x200B;ダイアログボックスで、次のいずれかの操作を行います。
 
    | オプション | ステップ |
    | --- | --- |
-   | A レコードを設定 | `example.com`<br> などのルートドメインに推奨<ol><li>DNS サービス・プロバイダのポータルにログインします。<li>DNS レコードセクションに移動します。<li>リストされているすべての IP アドレスを指すように A レコードを作成します。</li></ol> |
-   | CNAME を設定 | `www.example.com`<br> などのカスタムドメインにお勧め<ol><li>DMS サービス プロバイダのポータルにログインします。<li>DNS レコードセクションに移動します。<li>DNS サービスプロバイダー（カスタムドメイン）の DNS レコードに `cdn.adobeaemcloud.com` （CNAME レコード）をマッピングします。 このマッピングにより、カスタムドメインで受信したリクエストがアドビの CDN にリダイレクトされるようになります。</li></ol> |
+   | A レコードを設定 | `example.com`<br> などのルートドメインにお勧めします。<ol><li>DNS サービスプロバイダーのポータルにログインします。<li>「DNS レコード」セクションに移動します。<li>リストされているすべての IP アドレスを指すように A レコードを作成します。</li></ol> |
+   | CNAME を設定 | `www.example.com`<br> などのカスタムドメインにお勧めします。<ol><li>DNS サービスプロバイダーのポータルにログインします。<li>「DNS レコード」セクションに移動します。<li>DNS サービスプロバイダー（カスタムドメイン）の DNS レコードに `cdn.adobeaemcloud.com` （CNAME レコード）をマッピングします。 このマッピングにより、カスタムドメインで受信したリクエストがアドビの CDN にリダイレクトされるようになります。</li></ol> |
 
-1. **運用開始準備** ダイアログボックスで、「**OK**」をクリックしてレコードを保存します。
+1. **実稼動対応**&#x200B;ダイアログボックスで、「**OK**」をクリックして、レコードを保存します。
 
-   DNS の伝達を待ちます。数分から数時間かかる場合があります。
+   DNS の生成を待機します。数分から数時間かかる場合があります。
 
-   ドメインマッピングテーブルの **[!UICONTROL ステータス]** 列が **[!UICONTROL 検証済み]** に更新されると、カスタムドメインを使用する準備が整います。 ![ 更新アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) をクリックして、ステータスを更新する必要がある場合があります。
+   ドメインマッピングテーブルの&#x200B;**[!UICONTROL ステータス]**&#x200B;列が&#x200B;**[!UICONTROL 検証済み]**&#x200B;に更新されると、カスタムドメインを使用する準備が整います。![更新アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) をクリックして、ステータスを更新する必要がある場合があります。
 
 ## CDN 設定の削除 {#delete-cdn}
 
