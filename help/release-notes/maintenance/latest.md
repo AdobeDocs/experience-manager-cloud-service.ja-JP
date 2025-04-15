@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 3fb9e633da6269b5b9847a825951746ddeb532f9
 workflow-type: tm+mt
-source-wordcount: '1589'
-ht-degree: 94%
+source-wordcount: '1588'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 94%
 * SITES-27781：コンテンツフラグメント参照のモデルレベルの検証を実装し、モデル制約と必要なタグに対して参照されたフラグメントを検証できるようになる。
 * SITES-27784：`jcr:path` の代わりに PATH 関数を使用するように SQL クエリ生成を更新。
 * SITES-28040：Adobe Target ExperienceFragmentsReplicationListener が破損している。
-* SITES-28051：コンテンツフラグメントに対する現在のユーザーの権限を取得（GET /cf/fragments/{fragmentId}/permissions）。
+* SITES-28051：コンテンツフラグメントに対する現在のユーザーの権限を取得します：GET /cf/fragments/{fragmentId}/permissions。
 * SITES-28190：プレビュー統合テストの設定を行う。
 * SITES-28227：フラグメントへの参照としてアセットを追加する際、アセットが存在することを検証。
 * SITES-28248：OSGI 設定に基づいて Sites イベントを切り替える。
@@ -67,10 +67,10 @@ ht-degree: 94%
 * SITES-24907：ユニバーサルエディターを使用した Edge Delivery：MSM のユースケース向けに複数のサイトへのアセットの公開をサポート（早期アクセス）。
 * SITES-27956：ユニバーサルエディターを使用した Edge Delivery：公開スループットを向上（早期アクセス）。
 * SITES-27956：ユニバーサルエディターを使用した Edge Delivery：Edge Delivery Services への公開に対するエラー処理を改善（早期アクセス）。
-* SITES-29602:CIF:core-cif-components-core での Guava の使用の削除。
-* SITES-25785:CIF:CIFの商品参照データタイプに対する商品バリアントの選択の追加。
-* SITES-26392:CIF[ 試行用 ]:PDP のCIF コアコンポーネントにおける JSON+LD。
-* SITES-21278:CIF[ 試験的 ]:CIFでキャッシュをクリアする機能。
+* SITES-29602：CIF：core-cif-components-core での Guava の使用の削除。
+* SITES-25785：CIF：CIF 製品参照データタイプに製品バリアント選択の追加。
+* SITES-26392：CIF [実験]：PDP の CIF コアコンポーネントの JSON+LD。
+* SITES-21278：CIF [実験]：キャッシュをクリアする CIF 機能。
 
 ### 修正された問題 {#fixed-issues-20133}
 
@@ -115,9 +115,9 @@ ht-degree: 94%
 * SITES-29363：ネストされたライブコピーコンテンツ階層に対して「ライブコピーをリセット」ボタンが機能しない。
 * SITES-29369：AIO のアセットイベントの問題 | ページ公開済み／未公開イベントが誤ってトリガーされる。
 * SITES-29972：削除および名前変更アクションにより、誤ったワークフローコメントが生成される場合がある。
-* SITES-24631:CIF：商品フィールドの検索の問題。
-* SITES-24902:CIF：製品の URL 形式が#variant_sku で期待どおりに動作しない。
-* SITES-29191:CIF：商品リストコンポーネントに 20 個を超える SKU を追加できない。
+* SITES-24631：CIF：製品フィールドでの検索の問題。
+* SITES-24902：CIF：製品 URL 形式が #variant_sku に対して期待どおりに機能しない。
+* SITES-29191：CIF：製品リストコンポーネントに 20 個を超える SKU を追加できない。
 
 ### 既知の問題 {#known-issues-20133}
 
