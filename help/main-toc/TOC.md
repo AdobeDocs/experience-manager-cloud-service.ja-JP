@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3a44b814ec29a31bc865e46f5eb8108e1c7f9265
+source-git-commit: 24ca1417c07747b310d3a33b018756862c076313
 workflow-type: tm+mt
-source-wordcount: '6136'
-ht-degree: 99%
+source-wordcount: '6146'
+ht-degree: 95%
 
 ---
 
@@ -32,10 +32,10 @@ ht-degree: 99%
    + [リリース情報](/help/release-notes/home.md)
    + AEMaaCS 機能のリリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
-      + 2025年度 {#2025}
+      + 2025 {#2025}
          + [2025.2.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-2-0.md)
          + [2025.1.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md)
-      + 2024年度 {#2024}
+      + 2024 {#2024}
          + [2024.11.0 のリリースノート](/help/release-notes/release-notes-cloud/2024/release-notes-2024-11-0.md)
          + [2024.10.0 のリリースノート](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
          + [2024.9.0 のリリースノート](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
@@ -46,7 +46,7 @@ ht-degree: 99%
          + [リリースノート（2024.4.0）](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
          + [2024.3.0 のリリースノート](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
          + [2024.1.0 のリリースノート](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
-      + 2023年度 {#2023}
+      + 2023 {#2023}
          + [2023.12.0 のリリースノート](/help/release-notes/release-notes-cloud/2023/release-notes-2023-12-0.md)
          + [リリースノート（2023.11.0）](/help/release-notes/release-notes-cloud/2023/release-notes-2023-11-0.md)
          + [2023.10.0 のリリースノート](/help/release-notes/release-notes-cloud/2023/release-notes-2023-10-0.md)
@@ -57,7 +57,7 @@ ht-degree: 99%
          + [リリースノート（2023.4.0）](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)
          + [リリースノート（2023.2.0）](/help/release-notes/release-notes-cloud/2023/release-notes-2023-2-0.md)
          + [リリースノート（2023.1.0）](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
-      + 2022年度 {#2022}
+      + 2022 {#2022}
          + [リリースノート（2022.10.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
          + [リリースノート（2022.8.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
          + [リリースノート（2022.7.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-7-0.md)
@@ -92,11 +92,12 @@ ht-degree: 99%
          + [リリースノート（2020.2.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + AEMaaCS メンテナンスリリースノート {#maintenance}
       + [最新のメンテナンスリリースノート](/help/release-notes/maintenance/latest.md)
-      + 2025年度 {#2025}
+      + 2025 {#2025}
+         + [メンテナンスリリースノート（2025.4.0）](/help/release-notes/maintenance/2025/2025-4-0.md)
          + [メンテナンスリリースノート（2025.3.0）](/help/release-notes/maintenance/2025/2025-3-0.md)
          + [メンテナンスリリースノート（2025.2.0）](/help/release-notes/maintenance/2025/2025-2-0.md)
          + [メンテナンスリリースノート（2025.1.0）](/help/release-notes/maintenance/2025/2025-1-0.md)
-      + 2024年度 {#2024}
+      + 2024 {#2024}
          + [メンテナンスリリースノート（2024.11.0）](/help/release-notes/maintenance/2024/2024-11-0.md)
          + [メンテナンスリリースノート（2024.10.0）](/help/release-notes/maintenance/2024/2024-10-0.md)
          + [メンテナンスリリースノート（2024.9.0）](/help/release-notes/maintenance/2024/2024-9-0.md)
@@ -106,7 +107,7 @@ ht-degree: 99%
          + [メンテナンスリリースノート（2024.5.0）](/help/release-notes/maintenance/2024/2024-5-0.md)
          + [メンテナンスリリースノート（2024.4.0）](/help/release-notes/maintenance/2024/2024-4-0.md)
          + [メンテナンスリリースノート（2024.3.0）](/help/release-notes/maintenance/2024/2024-3-0.md)
-      + 2023年度 {#2023}
+      + 2023 {#2023}
          + [メンテナンスリリースノート（2023.12.0）](/help/release-notes/maintenance/2023/2023-12-0.md)
          + [メンテナンスリリースノート（2023.11.0）](/help/release-notes/maintenance/2023/2023-11-0.md)
          + [メンテナンスリリースノート（2023.10.0）](/help/release-notes/maintenance/2023/2023-10-0.md)
@@ -117,13 +118,13 @@ ht-degree: 99%
          + [メンテナンスリリースノート（2023.4.0）](/help/release-notes/maintenance/2023/2023-4-0.md)
          + [メンテナンスリリースノート（2023.2.0）](/help/release-notes/maintenance/2023/2023-2-0.md)
          + [メンテナンスリリースノート（2023.1.0）](/help/release-notes/maintenance/2023/2023-1-0.md)
-   + Cloud Manager のリリースノート {#cloud-manager}
+   + Cloud Manager リリースノート {#cloud-manager}
       + [現在](/help/implementing/cloud-manager/release-notes/current.md)
-      + 2025年度 {#2025}
+      + 2025 {#2025}
          + [2025.3.0](/help/implementing/cloud-manager/release-notes/2025/2025-3-0.md)
          + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
          + [2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md)
-      + 2024年度 {#2024}
+      + 2024 {#2024}
          + [2024.12.0](/help/implementing/cloud-manager/release-notes/2024/2024-12-0.md)
          + [2024.11.0](/help/implementing/cloud-manager/release-notes/2024/2024-11-0.md)
          + [2024.10.0](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md)
@@ -136,7 +137,7 @@ ht-degree: 99%
          + [2024.3.0](/help/implementing/cloud-manager/release-notes/2024/2024-3-0.md)
          + [2024.2.0](/help/implementing/cloud-manager/release-notes/2024/2024-2-0.md)
          + [2024.1.0](/help/implementing/cloud-manager/release-notes/2024/2024-1-0.md)
-      + 2023年度 {#2023}
+      + 2023 {#2023}
          + [2023.12.0](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md)
          + [2023.11.0](/help/implementing/cloud-manager/release-notes/2023/2023-11-0.md)
          + [2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md)
@@ -149,7 +150,7 @@ ht-degree: 99%
          + [2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
-      + 2022年度 {#2022}
+      + 2022 {#2022}
          + [2022.12.0](/help/implementing/cloud-manager/release-notes/2022/2022-12-0.md)
          + [2022.11.0](/help/implementing/cloud-manager/release-notes/2022/2022-11-0.md)
          + [2022.10.0](/help/implementing/cloud-manager/release-notes/2022/2022-10-0.md)
@@ -162,7 +163,7 @@ ht-degree: 99%
          + [2022.3.0](/help/implementing/cloud-manager/release-notes/2022/2022-3-0.md)
          + [2022.2.0](/help/implementing/cloud-manager/release-notes/2022/2022-2-0.md)
          + [2022.1.0](/help/implementing/cloud-manager/release-notes/2022/2022-1-0.md)
-      + 2021年度 {#2021}
+      + 2021 {#2021}
          + [2021.12.0](/help/implementing/cloud-manager/release-notes/2021/2021-12-0.md)
          + [2021.11.0](/help/implementing/cloud-manager/release-notes/2021/2021-11-0.md)
          + [2021.10.0](/help/implementing/cloud-manager/release-notes/2021/2021-10-0.md)
@@ -175,7 +176,7 @@ ht-degree: 99%
          + [2021.3.0](/help/implementing/cloud-manager/release-notes/2021/2021-3-0.md)
          + [2021.2.0](/help/implementing/cloud-manager/release-notes/2021/2021-2-0.md)
          + [2021.1.0](/help/implementing/cloud-manager/release-notes/2021/2021-1-0.md)
-      + 2020年度 {#2020}
+      + 2020 {#2020}
          + [2020.12.0](/help/implementing/cloud-manager/release-notes/2020/2020-12-0.md)
          + [2020.11.0](/help/implementing/cloud-manager/release-notes/2020/2020-11-0.md)
          + [2020.10.0](/help/implementing/cloud-manager/release-notes/2020/2020-10-0.md)
@@ -189,18 +190,18 @@ ht-degree: 99%
          + [2020.2.0](/help/implementing/cloud-manager/release-notes/2020/2020-2-0.md)
    + 移行ツールのリリースノート {#migration-tools}
       + [最新のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-      + 2024年度 {#2024}
+      + 2024 {#2024}
          + [2024.01.0 のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-2024-01-0.md)
          + [2024.05.0 のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-2024-05-0.md)
          + [2024.07.0 のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-2024-07-0.md)
-      + 2023年度 {#2023}
+      + 2023 {#2023}
          + [2023.10.0 のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-2023-10-0.md)
          + [リリースノート（2023.9.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2023-09-0.md)
          + [リリースノート（2023.8.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2023-08-0.md)
          + [リリースノート（2023.7.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2023-07-0.md)
          + [リリースノート（2023.6.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2023-06-0.md)
          + [リリースノート（2023.3.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2023-03-0.md)
-      + 2022年度 {#2022}
+      + 2022 {#2022}
          + [リリースノート（2022.12.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-12-0.md)
          + [リリースノート（2022.9.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-09-0.md)
          + [リリースノート（2022.7.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-07-0.md)
@@ -213,17 +214,18 @@ ht-degree: 99%
          + [リリースノート（2021.12.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [リリースノート（2021.11.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [リリースノート（2021.10.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
-   + Workfront for Experience Manager 拡張コネクタのリリースノート{#workfront}
+   + Workfront for Experience Manager拡張コネクタのリリースノート{#workfront}
       + [Workfront for Experience Manager 拡張コネクタの最新リリースノート](/help/assets/release-notes-enhanced-connector-workfront.md)
    + 「バリエーションを生成」のリリースノート {#generate-variations}
       + [バリエーションを生成の最新リリースノート](/help/generative-ai/release-notes-generate-variations.md)
    + ユニバーサルエディターのリリースノート {#univeral-editor}
       + [ユニバーサルエディターの最新リリースノート](/help/release-notes/universal-editor/current.md)
-      + 2025年度 {#2025}
+      + 2025 {#2025}
+         + [リリースノート（2025.03.10）](/help/release-notes/universal-editor/2025/2025-03-10.md)
          + [リリースノート（2025.02.25）](/help/release-notes/universal-editor/2025/2025-02-25.md)
          + [リリースノート（2025.02.17）](/help/release-notes/universal-editor/2025/2025-02-17.md)
          + [リリースノート（2025.01.16）](/help/release-notes/universal-editor/2025/2025-01-16.md)
-      + 2024年度 {#2024}
+      + 2024 {#2024}
          + [リリースノート（2024.12.02）](/help/release-notes/universal-editor/2024/2024-12-02.md)
          + [リリースノート（2024.11.13）](/help/release-notes/universal-editor/2024/2024-11-13.md)
          + [リリースノート（2024.11.05）](/help/release-notes/universal-editor/2024/2024-11-05.md)
@@ -287,7 +289,7 @@ ht-degree: 99%
       + [GraphQL API を使用したコンテンツの抽出](/help/trials/headless/extract-content.md)
       + [JavaScript での JSON コンテンツの取得](/help/trials/headless/code-playground.md)
       + [ユニバーサルエディターを使用してインラインを編集](/help/trials/headless/universal-editor.md)
-+ AEM as a Cloud Service 移行ジャーニー {#migration-journey}
++ AEM as a Cloud Serviceの移行ジャーニー {#migration-journey}
    + [AEM as a Cloud Service の移動の概要](/help/journey-migration/getting-started.md)
    + [準備段階](/help/journey-migration/readiness.md)
    + [実装段階](/help/journey-migration/implementation.md)
@@ -295,7 +297,7 @@ ht-degree: 99%
    + [運用開始後](/help/journey-migration/post-go-live.md)
    + [Experience Manager as a Cloud Service への移行ガイド（パートナー向け）](/help/journey-migration/getting-started-partners.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
-      + Cloud Acceleration Manager {#introduction-cam} の概要
+      + Cloud Acceleration Manager の概要 {#introduction-cam}
          + [概要](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
          + [メリット](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
       + Cloud Acceleration Manager の使用 {#using-cam}
@@ -307,7 +309,7 @@ ht-degree: 99%
       + ベストプラクティスアナライザー {#best-practices-analyzer}
          + [概要](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [ベストプラクティスアナライザーの使用](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
-      + コンテンツ変換サービス {#content-transformer}
+      + コンテンツ変換 {#content-transformer}
          + [概要](/help/journey-migration/content-transformer/overview.md)
          + [コンテンツ変換サービスの使用](/help/journey-migration/content-transformer/using.md)
       + コンテンツ転送ツール {#content-transfer-tool}
@@ -408,7 +410,7 @@ ht-degree: 99%
          + [ワークフローの操作](/help/sites-cloud/authoring/workflows/overview.md)
          + [ページへのワークフローの適用](/help/sites-cloud/authoring/workflows/applying.md)
          + [ワークフローへの参加](/help/sites-cloud/authoring/workflows/participating.md)
-      + パーソナライズ機能 {#personalization}
+      + パーソナライゼーション {#personalization}
          + [パーソナライズ機能の概要](/help/sites-cloud/authoring/personalization/overview.md)
          + [ContextHub データを使用したページのプレビュー](/help/sites-cloud/authoring/personalization/contexthub.md)
          + [ターゲットモードを使用したターゲットコンテンツのオーサリング](/help/sites-cloud/authoring/personalization/targeted-content.md)
@@ -434,7 +436,7 @@ ht-degree: 99%
          + [構造の分析](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [コンテンツフラグメントコンソールのアセット](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [キーボードショートカット](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
-      + サイト作成 {#site-creation}
+      + サイトの作成 {#site-creation}
          + [新しいサイトの作成](/help/sites-cloud/administering/site-creation/create-site.md)
          + [フロントエンドパイプラインの有効化](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
          + [サイトパネルの使用](/help/sites-cloud/administering/site-creation/site-rail.md)
@@ -481,7 +483,7 @@ ht-degree: 99%
       + [タグの管理](/help/sites-cloud/administering/tags.md)
       + [ワークフローの管理](/help/sites-cloud/administering/workflows-administering.md)
       + [テンプレートコンソール](/help/sites-cloud/administering/templates-console.md)
-   + AEM as a Cloud Service との統合 {#integrations}
+   + AEM as a Cloud Serviceとの統合 {#integrations}
       + [Adobe Analytics との統合](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Adobe Analytics 自動設定との統合](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [Adobe Learning Manager との統合](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
@@ -503,7 +505,7 @@ ht-degree: 99%
    + [Assets 共同作業者ユーザー](/help/assets/assets-collaborator-users.md)
    + [AEM Assets と Edge Delivery Services 向けコンテンツのオーサリングの統合](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + デジタルアセットの管理 {#manage}
-      + マイクロフロントエンドのアセットセレクター {#asset-selector}
+      + マイクロフロントエンドアセットセレクター {#asset-selector}
          + [アセットセレクターの概要](/help/assets/overview-asset-selector.md)
          + アセットセレクターの統合 {#asset-selector-integration}
             + [アセットセレクターの統合の概要](/help/assets/integrate-asset-selector.md)
@@ -547,7 +549,7 @@ ht-degree: 99%
       + [ [!DNL Creative Cloud] API を使用してアセットを処理する](/help/assets/cc-api-integration.md)
       + [画像のカラータグ](/help/assets/color-tag-images.md)
       + [PDF ドキュメントの管理](/help/assets/manage-pdf-documents.md)
-   + [!DNL Assets] {#admin} の設定、管理、拡張
+   + [!DNL Assets] の設定、管理、拡張 {#admin}
       + [重複アセットの検出](/help/assets/detect-duplicate-assets.md)
       + [開発者向けドキュメントと API リファレンス](/help/assets/developer-reference-material-apis.md)
       + [フォルダーメタデータスキーマ](/help/assets/folder-metadata-schema.md)
@@ -584,7 +586,7 @@ ht-degree: 99%
       + [プレビュー - JSON 表現](/help/assets/content-fragments/content-fragments-json-preview.md)
       + [MSM（for Assets）を使用したコンテンツフラグメントの再利用](/help/assets/content-fragments/content-fragments-msm.md)
    + Dynamic Media {#dynamicmedia}
-      + Dynamic Media ジャーニー：基本知識 {#dm-journey}
+      + Dynamic Mediaジャーニー：基本知識 {#dm-journey}
          + [第 1 部：Dynamic Media とは - ユースケース - システム内でのアセットのフロー](/help/assets/dynamic-media/dm-journey-part1.md)
          + [第 2 部：Dynamic Media URL の分解 - 画像プリセットの基本 - 画像セット、スピンセットおよび混在メディアセットについて](/help/assets/dynamic-media/dm-journey-part2.md)
          + [Dynamic Media のベストプラクティス](/help/assets/dynamic-media/dm-best-practices.md)
@@ -651,7 +653,7 @@ ht-degree: 99%
          + [リモート AEM Assets と AEM Sites の統合](/help/assets/integrate-remote-approved-assets-with-sites.md)
          + [よくある質問](/help/assets/dynamic-media-open-apis-faqs.md)
          + [カスタムドメインの設定](/help/assets/configure-custom-domain.md)
-   + アセットビューの操作 {#assets-view}
+   + Assets ビューの操作 {#assets-view}
       + [はじめに](/help/assets/assets-view-introduction.md)
       + [はじめに](/help/assets/get-started-assets-view.md)
       + [マイワークスペース](/help/assets/my-workspace-assets-view.md)
@@ -709,7 +711,7 @@ ht-degree: 99%
       + [AEM Assets を Creative Cloud に接続](/help/assets/connect-assets-with-creative-cloud.md)
 + Forms {#forms}
    + 概要 {#forms-overview}
-      + [はじめに](/help/forms/home.md)
+      + [概要](/help/forms/home.md)
       + [はじめに](/help/forms/home2.md)
       + [トップ Adobe Experience Manager Forms イノベーション](/help/forms/latest-innovations.md)
       + [早期アクセス（EA）機能](/help/forms/early-access-ea-features.md)
@@ -728,7 +730,7 @@ ht-degree: 99%
    + はじめに {#getting-started-forms}
       + [ユースケースと開発環境の設定](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [ローン申し込みフォームの作成](/help/forms/create-adaptive-form-tutorial.md)
-   + {#integrate} の統合
+   + の統合 {#integrate}
       + サービス {#services}
          + [AEM Forms as a Cloud Service と Adobe Sign の統合](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [AEM Forms as a Cloud Service と DocuSign の統合](/help/forms/integrate-docusign-adaptive-forms.md)
@@ -740,7 +742,7 @@ ht-degree: 99%
          + [AEM Sites ページへのアダプティブフォームの埋め込み](/help/forms/embed-adaptive-form-aem-sites.md)
          + [コアコンポーネントに基づくアダプティブフォームを外部 web ページに埋め込む](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [基盤コンポーネントに基づくアダプティブフォームを外部 web ページに埋め込む](/help/forms/embed-adaptive-form-external-web-page.md)
-         + アダプティブフォームと Adobe Marketo Engage の統合{#integrate-adaptive-form-with-market-engage}
+         + アダプティブFormsとAdobe Marketo Engageの統合{#integrate-adaptive-form-with-market-engage}
             + [Adobe Marketo Engage と AEM Forms の統合](/help/forms/integrate-form-to-marketo-engage.md)
             + [Marketo Engage と統合する新しいフォームの設定](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
             + [既存のアダプティブフォーム用の Adobe Marketo Engage データソースの設定](/help/forms/use-marketo-engage-data-source-in-form.md)
@@ -762,7 +764,7 @@ ht-degree: 99%
       + [アダプティブフォームフラグメントの作成](/help/forms/adaptive-form-fragments.md)
       + [AEM Sites ページまたはエクスペリエンスフラグメントにアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + コアコンポーネント {#authoring-adaptive-forms-core-components}
-         + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
+         + アダプティブフォームを作成します {#create-an-adaptive-form-on-forms-cs}
             + [アダプティブフォームを作成します](/help/forms/creating-adaptive-form-core-components.md)
             + [コアコンポーネントに基づくアダプティブフォームのレイアウトの設定](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [アダプティブフォームフラグメントの作成](/help/forms/adaptive-form-fragments-core-components.md)
@@ -776,7 +778,7 @@ ht-degree: 99%
             + [アダプティブフォームの送信アクションの設定](/help/forms/configure-submit-actions-core-components.md)
             + [Azure Blob Storage にアダプティブフォームを送信する](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Microsoft へのアダプティブフォームの送信](/help/forms/configure-submit-action-onedrive.md)
-            + Microsoft® SharePoint へのアダプティブフォームの接続{#connect-to-sharepoint}
+            + アダプティブフォームを Microsoft® SharePoint に接続{#connect-to-sharepoint}
                + [Microsoft へのアダプティブフォームの接続](/help/forms/configure-submit-action-sharepoint.md)
                + [SharePoint ドキュメントライブラリへの送信](/help/forms/connect-forms-to-sharepoint-document-library.md)
                + [SharePoint リストへの送信](/help/forms/connect-forms-to-sharepoint-list.md)
@@ -809,17 +811,17 @@ ht-degree: 99%
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成と使用](/help/forms/custom-function-core-component-create-function.md)
                + [カスタム関数のスコープオブジェクト](/help/forms/custom-function-core-component-scope-function.md)
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の例](/help/forms/custom-function-core-components-use-cases.md)
-            + フォームポータルとそのコンポーネントの概要{#introduction-to-forms-portal}
+            + Forms ポータルとそのコンポーネントの概要{#introduction-to-forms-portal}
                + [フォームポータルコンポーネントの概要](/help/forms/configure-forms-portal.md)
                + [検索とリスターコンポーネントを使用した Sites ページでのフォームの一覧表示](/help/forms/list-forms-on-sites-page.md)
                + [下書きと送信コンポーネントを使用した Sites ページでの下書きとしてのフォームの保存と一覧表示](/help/forms/save-core-component-based-form-as-draft.md)
                + [リンクコンポーネントを使用した Sites ページへのフォームリンクの追加](/help/forms/add-form-link-to-aem-sites-page.md)
       + 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
-         + PDF フォームのアダプティブフォームへの変換 {#afcs}
+         + PDF formsのアダプティブFormsへの変換 {#afcs}
             + [自動フォーム変換サービスの概要](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja)
             + [既存の PDF フォームからアダプティブフォームへの変換](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ja)
             + [変換後のフォームのレビューと修正](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=ja#welcome-to-review-and-correct-editor)
-         + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
+         + アダプティブフォームを作成します {#create-an-adaptive-form-on-forms-cs}
             + [アダプティブフォームのオーサリングの概要](/help/forms/introduction-forms-authoring.md)
             + [フォームフィールドの文脈依存ヘルプの作成](/help/forms/authoring-in-field-help.md)
             + [アダプティブフォームを作成します](/help/forms/creating-adaptive-form.md)
@@ -853,7 +855,7 @@ ht-degree: 99%
             + [ルールエディターへのアクセスを許可してユーザーグループを選択](/help/forms/rule-editor-access-user-groups.md)
             + [アダプティブフォームでの SOM 式の使用](/help/forms/using-som-expressions-adaptive-forms.md)
             + [アダプティブフォームの式](/help/forms/adaptive-form-expressions.md)
-         + [!DNL Adobe Sign] の使用 {#use-adobe-sign}
+         + [!DNL Adobe Sign] 使用方法 {#use-adobe-sign}
             + [Adobe Sign を使用したアダプティブフォームの電子サイン](/help/forms/working-with-adobe-sign.md)
          + 送信アクションとメタデータ送信の設定 {#configure-submit-actions-and-metadata-submission}
             + [アダプティブフォームの送信アクションの設定](/help/forms/configuring-submit-actions.md)
@@ -875,11 +877,11 @@ ht-degree: 99%
          + [アダプティブフォームのレビューの作成と管理](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [アダプティブフォームのキーワード](/help/forms/adaptive-forms-keywords.md)
       + [フォームのプレビュー](/help/forms/previewing-forms.md)
-   + インタラクティブ通信 {#interactive-communocation}
+   + インタラクティブコミュニケーション {#interactive-communocation}
       + [インタラクティブ通信の概要](/help/forms/introduction-to-interactive-communication.md)
       + [最初のインタラクティブ通信の作成](/help/forms/create-your-first-communication.md)
       + [よくある質問](/help/forms/interactive-communications-faq.md)
-   + Forms 中心のワークフロー {#create-form-centric-workflows}
+   + Forms中心のワークフロー {#create-form-centric-workflows}
       + [Forms 中心のワークフローの導入](/help/forms/aem-forms-workflow.md)
       + [ワークフローでの Forms 中心のステップの使用 + ステップリファレンス](/help/forms/aem-forms-workflow-step-reference.md)
       + [Forms 中心のワークフローでの変数の使用](/help/forms/variable-in-aem-workflows.md)
@@ -899,7 +901,7 @@ ht-degree: 99%
    + トランザクションレポート {#using-communications}
       + [トランザクションレポート請求可能 API](/help/forms/transaction-reports-billable-apis.md)
       + [カスタム実装のトランザクションの記録](/help/forms/record-transaction-custom-implementation.md)
-   + 価値実現ダッシュボード {#vr-dashboard}
+   + 価値実現ダッシュボード  {#vr-dashboard}
       + [価値実現ダッシュボードについて](/help/forms/aem-forms-value-realization-dashboard.md)
       + [価値実現ダッシュボードを使用したフォームとドキュメントの使用状況トレンドの分析](/help/forms/using-the-value-realization-dashboard.md)
    + 開発者 API リファレンス {#aem-forms-developer-api-reference}
@@ -912,14 +914,14 @@ ht-degree: 99%
       + [Dispatcher と CDN のキャッシュ](/help/forms/troubleshooting-caching-performance.md)
       + [AEM SDK の再起動](/help/forms/restart-aem-sdk.md)
       + [フォーム作成エラーの解決](/help/forms/form-creation-failing.md)
-+ スクリーン {#screens-as-cloud-service}
-   + Screens as a Cloud Service の概要 {#overview}
++ Screens {#screens-as-cloud-service}
+   + Screens as a Cloud Serviceの概要 {#overview}
       + [はじめに](/help/screens-cloud/introduction/introduction.md)
       + [役割の定義について](/help/screens-cloud/introduction/personas-screens-cloud.md)
       + [Screens クラウドとの Adobe Analytics の統合](/help/screens-cloud/introduction/adobe-analytics-integration-with-screens.md)
-   + Screens as a Cloud Service のオンボーディング {#onboarding-screens-cloud}
+   + Screens as a Cloud Serviceのオンボーディング {#onboarding-screens-cloud}
       + [初回ログイン](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
-      + Cloud Manager におけるアドオンとしての Screens プログラムの追加 {#adding-screens-addon}
+      + Cloud ManagerにおけるアドオンとしてのScreens プログラムの追加 {#adding-screens-addon}
          + [新規プログラムに対するアドオンとしての Screens プログラムの追加](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md)
          + [既存プログラムに対するアドオンとしての Screens プログラムの追加](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md)
       + [ブランチの作成](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)
@@ -944,7 +946,7 @@ ht-degree: 99%
    + コア製品機能の使用 {#core-product-features}
       + [ビデオのサムネールサポート](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
       + [Screens 通知サービス](/help/screens-cloud/using-core-product-features/screens-notification-service.md)
-   + Screens as a Cloud Service {#developing-screens-cloud}での開発
+   + Screens as a Cloud Serviceでの開発 {#developing-screens-cloud}
       + [REST API](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
       + [コンポーネントの作成](/help/screens-cloud/developing/creating-components.md)
       + [Screens as a Cloud Service 用カスタムコンポーネントの開発](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
@@ -952,7 +954,7 @@ ht-degree: 99%
 + コンテンツとコマース {#content-and-commerce}
    + [概要](/help/commerce-cloud/introduction.md)
    + [AEM Content and Commerce as a Cloud Service の主な変更点](/help/commerce-cloud/changes.md)
-   + コマースジャーニー {#journeys}
+   + Commerceジャーニー {#journeys}
       + コンテンツ作成者ジャーニー {#author}
          + [AEM Content and Commerce コンテンツ作成者ジャーニー](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
          + [CIF オーサリングの概要](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
@@ -989,7 +991,7 @@ ht-degree: 99%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [移行](/help/commerce-cloud/migration.md)
    + [よくある質問](/help/commerce-cloud/faq.md)
-+ Edge 配信サービス {#edge-delivery}
++ Edge Delivery Services {#edge-delivery}
    + [Edge 配信サービスの概要](/help/edge/overview.md)
    + [AEM での Edge Delivery の使用](/help/edge/using.md)
    + [オーサリング方法の選択](/help/edge/authoring-methods.md)
@@ -1035,7 +1037,7 @@ ht-degree: 99%
       + [Akamai の設定](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Fastly の設定](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [リダイレクト](/help/edge/docs/redirects.md)
-   + フォームの作成 {#build-forms}
+   + Formsの構築 {#build-forms}
       + [概要](/help/edge/docs/forms/overview.md)
       + [Edge Delivery Services Forms の仕組み](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [よくある質問](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
@@ -1073,7 +1075,7 @@ ht-degree: 99%
          + [カスタムフォームコンポーネントの作成：開発者向けガイド](/help/edge/docs/forms/custom-components-forms.md)
          + [フォームのパフォーマンスの監視：実際の使用のモニタリングガイド](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
    + Edge Delivery リソース {#resources}
-      + Sidekick {#sidekick}
+      + サイドキック {#sidekick}
          + [Sidekick の使用](/help/edge/docs/sidekick.md)
          + [拡張機能のインストール](/help/edge/docs/sidekick-extension.md)
          + [プロジェクト設定](https://www.aem.live/tools/sidekick/)
@@ -1090,7 +1092,7 @@ ht-degree: 99%
    + [AEM ヘッドレスの概要](/help/headless/introduction.md)
    + [開発者ポータル（追加のリソース）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
    + [ベストプラクティス - 設定と使用](/help/headless/best-practices-setup-use.md)
-   + セットアップ {#setup}
+   + 設定 {#setup}
       + [はじめに](/help/headless/setup/introduction.md)
       + [設定](/help/headless/setup/create-configuration.md)
       + [コンテンツフラグメントモデル](/help/headless/setup/create-content-model.md)
@@ -1150,7 +1152,7 @@ ht-degree: 99%
          + [AEM でのヘッドレス向けコンテンツモデリング - 概要](/help/journey-headless/architect/introduction.md)
          + [AEM でのヘッドレス向けコンテンツモデリングの基本について](/help/journey-headless/architect/basics.md)
          + [AEM でのコンテンツフラグメントモデルの作成について](/help/journey-headless/architect/model-structure.md)
-      + ヘッドレス翻訳ジャーニー {#translation}
+      + ヘッドレス翻訳のジャーニー {#translation}
          + [AEM でのヘッドレス翻訳について](/help/journey-headless/translation/overview.md)
          + [AEM ヘッドレス翻訳の基本を学ぶ](/help/journey-headless/translation/getting-started.md)
          + [ヘッドレスコンテンツの概要と AEM での翻訳方法について](/help/journey-headless/translation/learn-about.md)
@@ -1164,13 +1166,13 @@ ht-degree: 99%
          + [AEM を使用したヘッドレスのオーサリングの基本](/help/journey-headless/author/basics.md)
          + [コンテンツフラグメントでの参照の使用について](/help/journey-headless/author/references.md)
          + [コンテンツフラグメントのメタデータとタグの定義について](/help/journey-headless/author/metadata-tagging.md)
-+ 生成 AI {#generative-ai}
++ ジェネレーティブ AI {#generative-ai}
    + [バリエーションを生成](/help/generative-ai/generate-variations.md)
    + [バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)
    + [アシスタント（ベータ版限定）](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + 実装 {#implementing}
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
-   + Cloud Manager の使用 {#using-cloud-manager}
+   + Cloud Managerの使用 {#using-cloud-manager}
       + [ナビゲーション](/help/implementing/cloud-manager/navigation.md)
       + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
       + プログラム {#programs}
@@ -1187,7 +1189,7 @@ ht-degree: 99%
          + [ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [環境の管理](/help/implementing/cloud-manager/manage-environments.md)
       + コードの管理 {#managing-code}
-         + [Maven プロジェクトバージョンの処理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+         + [Maven プロジェクトのバージョン処理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Cloud Managerでのリポジトリの管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Adobe リポジトリの追加](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [プライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)
@@ -1272,7 +1274,7 @@ ht-degree: 99%
       + [サイトのテンプレートとテーマのカスタマイズ](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
       + [AEM におけるヘッドフルとヘッドレス](/help/implementing/developing/headful-headless.md)
       + [Sling Model Exporter による ResourceResolvers のシリアル化を許可しない](/help/implementing/developing/disallow-resourceresolver-serialization.md)
-      + フルスタック AEM 開発 {#full-stack}
+      + フルスタック AEMの開発 {#full-stack}
          + [AEM Sites の開発の手引き - WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
          + [AEM UI の構造](/help/implementing/developing/introduction/ui-structure.md)
          + [Sling チートシート](/help/implementing/developing/introduction/sling-cheatsheet.md)
@@ -1353,7 +1355,7 @@ ht-degree: 99%
       + [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)
       + [Link Externalizer](/help/implementing/developing/tools/externalizer.md)
       + [リポジトリーブラウザー](/help/implementing/developing/tools/repository-browser.md)
-   + パーソナライズ機能 {#personalization}
+   + パーソナライゼーション {#personalization}
       + [ContextHub](/help/implementing/developing/personalization/contexthub.md)
       + [ContextHub の設定](/help/implementing/developing/personalization/configuring-contexthub.md)
       + [ページへの ContextHub の追加](/help/implementing/developing/personalization/adding-contexthub.md)
@@ -1363,8 +1365,8 @@ ht-degree: 99%
       + [ContextHub の拡張](/help/implementing/developing/personalization/extending-contexthub.md)
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
       + [ContextHub でのセグメント化の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=ja)
-   + AEM as a Cloud Service の設定と拡張 {#configuring-and-extending}
-      + App Builder を使用した AEM の拡張 {#app-builder}
+   + AEM as a Cloud Serviceの設定と拡張 {#configuring-and-extending}
+      + App Builderを使用したAEMの拡張 {#app-builder}
          + [Adobe Developer App Builder を使用した AEM の拡張](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [App Builder の概要](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe 開発者コンソール](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
@@ -1381,7 +1383,7 @@ ht-degree: 99%
       + [コンテンツフラグメントのカスタマイズと拡張](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [レンダリングコンポーネントのコンテンツフラグメントの設定](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
       + [コンテンツフラグメントコンソールおよびエディターのカスタマイズ](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
-      + 検索フォームの管理 {#manage-search-forms}
+      + 検索Formsの管理 {#manage-search-forms}
          + [検索フォームの設定](/help/implementing/developing/extending/search-forms.md)
          + [インボックス用の検索フィルターの設定](/help/implementing/developing/extending/configure-inbox-search-rail.md)
       + [リッチテキストエディターの設定](/help/implementing/developing/extending/rich-text-editor.md)
