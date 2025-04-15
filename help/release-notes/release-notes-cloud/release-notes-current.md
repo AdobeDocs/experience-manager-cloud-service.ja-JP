@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: bbf66195593032eb2ccf073ec78685c9d9726235
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1092'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -50,15 +50,15 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 **Open API を備えた Dynamic Media で配信されるビデオのロングフォームのサポート**
 
-OpenAPI を備えた Dynamic Media で、ロングフォームのビデオがサポートされるようになりました。長形式のビデオは、最大 50 GB と 2 時間をサポートできます。
+OpenAPI を備えた Dynamic Media で、ロングフォームのビデオがサポートされるようになりました。ロングフォームのビデオは、最大 50 GB および 2 時間をサポートできます。
 
 ### Dynamic Media Classic {#dmc}
 
 <!-- CARRY OVER TO APRIL 2025 RELEASE NOTES -->
 
-2025 年 4 月リリースより、Dynamic Media Classic レポートダッシュボードの「帯域幅」タブはサポートされなくなりました。
+Dynamic Media Classic レポートダッシュボードの「帯域幅」タブは、2025年4月以降サポートされなくなりました。
 
-[ 帯域幅とストレージ、レポートのタイプ ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports) を参照してください。
+[帯域幅とストレージ、レポートのタイプ](https://experienceleague.adobe.com/ja/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports)を参照してください。
 
 
 ## アセットビューの新機能 {#new-features-assets-view}
@@ -84,19 +84,19 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 
 #### クラウドストレージのサポートの強化：Azure Blob Storage への直接 PDF アップロード
 
-AEM Forms Document Generation API を使用すると、Azure Blob ストレージに [ 生成されたPDF ドキュメントを直接アップロード ](/help/forms/early-access-ea-features.md#doc-generation-api) できるようになりました。 この機能強化により、ストレージと取得が合理化され、効率の向上やクラウドワークフローとの統合が促進されます。
+AEM Forms ドキュメント生成 API で、Azure Blob Storage に[生成された PDF ドキュメントを直接アップロード](/help/forms/early-access-ea-features.md#doc-generation-api)できるようになりました。この機能強化により、ストレージと取得が合理化され、効率の向上やクラウドワークフローとの統合が促進されます。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
 ### Java 21 サポート {#java21}
 
-1 月リリースの時点で、Java 21 および Java 17 を使用してコードをビルドできます。 パターンマッチング、密封クラス、様々なパフォーマンス向上などの新機能にアクセスできます。 Maven プロジェクトとライブラリのバージョンの更新など、設定手順については、[ ビルド環境 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) の記事を参照してください。
+1月リリース以降、Java 21 および Java 17 を使用してコードをビルドできます。パターンマッチング、sealed クラス、様々なパフォーマンスの向上などの新しい機能にアクセスできます。Maven プロジェクトとライブラリのバージョンのアップデートを含む設定手順について詳しくは、[ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)の記事を参照してください。
 
-Java 17 または 21 ビルドが検出されると、よりパフォーマンスの高い Java 21 **runtime** が自動的にデプロイされます。 ただし、Adobeでは、Java 11 でビルドされた環境の場合は、[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) に電子メールで Java 21 ランタイムをオプトインすることをお勧めします。 [Java 21 ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)について説明します。
+Java 17 または 21 ビルドが検出されると、より高パフォーマンスの Java 21 **ランタイム**&#x200B;が自動的にデプロイされます。ただし、アドビでは、Java 11 でビルドされた環境については、[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) にメールを送信して Java 21 ランタイムをオプトインすることをお勧めします。[Java 21 ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)について説明します。
 
 >[!IMPORTANT]
 >
-> Java 21 **ランタイム** は、2 月に開発環境/RDE 環境にデプロイされました。これは、**4 月 28 日と 29 日** にステージ環境/実稼動環境に適用されます。 Java 21（または Java 17）を使用した&#x200B;**コードのビルド**&#x200B;は、Java 21 ランタイムとは独立しています。Java 21（または Java 17）でコードをビルドする手順を明示的に実行する必要があります。
+> Java 21 **ランタイム**&#x200B;は、2月に開発／RDE 環境にデプロイされました。**4月28日（PT）と29日（PT）**&#x200B;にステージ／実稼動環境に適用する予定です。Java 21（または Java 17）を使用した&#x200B;**コードのビルド**&#x200B;は、Java 21 ランタイムとは独立しています。Java 21（または Java 17）でコードをビルドする手順を明示的に実行する必要があります。
 
 ### その他の宛先へのAEM ログ転送 - ベータ版プログラム {#log-forwarding-earlyadopter}
 
@@ -125,7 +125,7 @@ Edge コンピューティングには、データ処理がブラウザーに近
 
 開発者は、AEM as Cloud Service の機能を独自のアプリケーションやツールに深く統合できます。 新しい AEM as a Cloud Service API は、OpenAPI 仕様に従い、一貫性の確保、明確な文書化、使いやすさを目標とします。認証を必要とするエンドポイントの資格情報は、Adobe Developer Console プロジェクトを作成することによって生成されます。
 
-詳しくは、[OpenAPI ベースの AEM API](/help/implementing/developing/open-api-based-apis.md) を参照し、設定と使用方法を説明した[エンドツーエンドチュートリアル](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s)を試してください。
+詳しくは、[OpenAPI ベースの AEM API](/help/implementing/developing/open-api-based-apis.md) を参照し、設定と使用方法を説明した[エンドツーエンドチュートリアル](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s)を試してください。
 
 具体的には、以下に示す API エンドポイントが早期導入プログラムの一部として使用可能です。 興味がある場合は、どのように活用する予定かを記載したメールを [aem-apis@adobe.com](mailto:aem-apis@adobe.com) まで送信してください。
 
@@ -142,7 +142,7 @@ Edge コンピューティングには、データ処理がブラウザーに近
 
 ## [!DNL Experience Manager] ガイド {#guides}
 
-Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0)を参照してください。
+Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0)を参照してください。
 
 <!-- THE FOLLOWING URL WAS USED ABOVE BUT IT WAS 404. IT WAS REPLACED WITH THE URL ABOVE 
 (https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0). -->
