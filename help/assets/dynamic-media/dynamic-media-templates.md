@@ -4,9 +4,9 @@ description: WYSIWYG テンプレートエディターを使用して Dynamic Me
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 7bb15e0b8aa24f9737f70f86c78dc09be1ea4750
+source-git-commit: 808ee16dbda140fe5bf64ecae249712b17f957db
 workflow-type: tm+mt
-source-wordcount: '3050'
+source-wordcount: '3071'
 ht-degree: 92%
 
 ---
@@ -87,6 +87,7 @@ Dynamic Media テンプレートを作成するには、次の操作が必要で
 
 DM テンプレートを作成するには、次の手順に従います。
 
+1. [!DNL AEM Assets] ホームページに移動して、画像を [ アップロードおよび  [!DNL AEM]  同時に公開 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) し、テンプレートの作成に使用します  [!DNL Dynamic Media] 。
 1. [空のキャンバスを作成](#create-a-canvas)
 1. [キャンバスに画像を追加](#add-images-to-the-canvas)
 1. [キャンバスにテキストレイヤーを追加](#add-text-to-the-canvas)
@@ -282,7 +283,7 @@ URL のパラメーター値を更新して、URL からテキスト、フォン
 1. 製品やサービスの迅速なマーチャンダイジングには、この URL を使用します。この URL を顧客と共有することや、web サイトやダウンストリームのサードパーティアプリケーションに統合してバナーを表示することや、継続的なオファーを反映するようにリアルタイムで更新することができます。
 
 このビデオでは、Dynamic Media テンプレートを段階的に作成する方法について説明します。
->[!VIDEO](https://video.tv.adobe.com/v/3443281)
+>[!VIDEO](https://video.tv.adobe.com/v/3457616)
 
 ## URL からテンプレートをリアルタイムで更新{#update-the-template-from-the-url}
 
