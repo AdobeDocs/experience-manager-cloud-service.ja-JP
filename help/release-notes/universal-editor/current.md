@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター 2025.03.10 リリースノート
-description: ユニバーサルエディターの 2025.03.10 リリースのリリースノートです。
+title: ユニバーサルエディター 2025.04.04 リリースノート
+description: ユニバーサルエディターの 2025.04.04 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: beab4f94dc6d78c2b1ad87a02b9fe46dd0438bcc
-workflow-type: ht
-source-wordcount: '295'
-ht-degree: 100%
+source-git-commit: e8e2563fc8536bd6ebd4239569c03b2287fc1fb6
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 46%
 
 ---
 
 
-# ユニバーサルエディター 2025.03.10 リリースノート {#release-notes}
+# ユニバーサルエディター 2025.04.04 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2025年3月10日（PT）リリースのリリースノートです。
+ユニバーサルエディターの 2025 年 4 月 4 日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -22,26 +22,10 @@ ht-degree: 100%
 
 ## 新機能 {#what-is-new}
 
-* **コンポーネントの移動：**[コンテナ間でコンポーネントを移動](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components)すると、ターゲットコンテナのコンポーネントフィルターが確認されるようになりました。
-   * コンテナ間でコンポーネントを移動するために、ターゲットコンテナーと宛先コンテナーの両方に同じ[フィルター定義](/help/implementing/universal-editor/filtering.md)を指定する必要がなくなりました。
-* **ロックされたページ**：ユニバーサルエディターサービスでは、[ページのロックステータス](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)を確認し、ロックされていないページや、ユーザーによってロックされているページにのみ書き込みを行います。
-
-## ユニバーサルエディターの新しい拡張機能 {#extensions}
-
-ユニバーサルエディターの [Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) で多数の新しい拡張機能がリリースされ、オーサリングエクスペリエンスが強化されました。
-
-* **MSM 拡張機能**：この拡張機能を使用して、コンポーネント／ブロックの継承を解除し、再インスタンス化できるようになりました。
-* **ページプロパティ拡張機能**：この拡張機能を使用して、ユニバーサルエディターからページのページプロパティウィンドウに直接アクセスします。
-* **ワークフロー拡張機能**：この拡張機能を使用して、ページ上に実装されたページおよびコンテンツフラグメントでワークフローを使用します。
-* **ページロック拡張機能**：この拡張機能を使用して、ユニバーサルエディターから直接ページをロックおよびロック解除できます。
+* **OpenAPI のサポートを含む Dynamic Media** - ユニバーサルエディターの [ アセットセレクター ](/help/assets/overview-asset-selector.md#repository-switcher) で、[OpenAPI とリモートアセットを含む Dynamic Media](/help/assets/integrate-remote-approved-assets-with-sites.md) がサポートされるようになりました。
 
 ## その他の改善点 {#other-improvements}
 
-* ヘッドレスキャンバスの検証を正しくするための修正を行いました。
-
-## 非推奨（廃止予定） {#deprecation}
-
-* npm または `https://unviersal-editor-service.experiencecloud.live/corslib/*` 経由で提供される `universal-editor-cors` ライブラリは使用しないでください。
-   * 代わりに、`https://universal-editor-service.adobe.io/cors.js` を指すスクリプトタグを使用してください。
-   * ユニバーサルエディターで使用するページを適切に実装する方法について詳しくは、[AEM 開発者向けのユニバーサルエディターの概要](/help/implementing/universal-editor/developer-overview.md)を参照してください。
-   * 間違った方法を使用した場合、ユーザーには 1 日に 1 回非推奨（廃止予定）メッセージが表示されます。
+* レイアウトコンテキストの削除が修正されました。
+* e2e テストが改善されました。
+* 依存関係の更新とコードのクリーンアップが実行されました。
