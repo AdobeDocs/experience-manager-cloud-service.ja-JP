@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.1.0 リ�
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: 7cc979148f6699cfbd4aaae228beb83527709fa1
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 93%
@@ -58,7 +58,7 @@ AEM コンテンツフラグメントエディターの最新化された新し�
 
 **コンテンツフラグメント配信用の AEM REST OpenAPI**
 
-[コンテンツフラグメント配信用の AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) を、AEM as a Cloud Service で使用できるようになりました。
+[コンテンツフラグメント配信用の AEM REST OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) を、AEM as a Cloud Service で使用できるようになりました。
 
 ### 廃止される機能 {#sites-deprecated}
 

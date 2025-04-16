@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 24ca1417c07747b310d3a33b018756862c076313
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
-source-wordcount: '6146'
+source-wordcount: '6152'
 ht-degree: 95%
 
 ---
@@ -1122,7 +1122,7 @@ ht-degree: 95%
       + [UUID 参照用のコンテンツフラグメントのアップグレード](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [GraphQL クエリの例](/help/headless/graphql-api/sample-queries.md)
       + [GraphQL クエリのトラブルシューティング](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [コンテンツフラグメント配信用の AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+   + [OpenAPI を使用したAEM コンテンツフラグメント配信](/help/headless/aem-content-fragment-delivery-with-openapi.md)
    + [コンテンツフラグメントとコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md)
    + [Assets HTTP API でのコンテンツフラグメントのサポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=ja)
    + セキュリティ {#security}
@@ -1308,6 +1308,7 @@ ht-degree: 95%
       + ユニバーサルエディター {#universal-editor}
          + [はじめに](/help/implementing/universal-editor/introduction.md)
          + [ユースケース](/help/implementing/universal-editor/use-cases.md)
+         + [ユニバーサルエディターとサイトエディター](/help/implementing/universal-editor/page-editor-universal-editor.md)
          + [属性と項目タイプ](/help/implementing/universal-editor/attributes-types.md)
          + [コンポーネント定義](/help/implementing/universal-editor/component-definition.md)
          + [モデル定義、フィールドおよびコンポーネントタイプ](/help/implementing/universal-editor/field-types.md)

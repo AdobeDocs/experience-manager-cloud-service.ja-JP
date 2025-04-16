@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.10.0 リ
 feature: Release Information
 role: Admin
 exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
-source-git-commit: bf3ccd88bc29db136ff5445f76e196b6ac8c52c7
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 100%
@@ -56,7 +56,7 @@ AEM の新機能を通じて GenAI を活用し、[バリエーションを生�
 
 **コンテンツフラグメント配信用の AEM REST OpenAPI**
 
-[コンテンツフラグメント配信用の AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) が AEM as a Cloud Service で使用できるようになりました。
+[コンテンツフラグメント配信用の AEM REST OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) が AEM as a Cloud Service で使用できるようになりました。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

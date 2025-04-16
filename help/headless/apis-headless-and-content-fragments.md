@@ -3,19 +3,19 @@ title: 構造化コンテンツの配信とコンテンツフラグメント管�
 description: 構造化コンテンツの配信とコンテンツフラグメント管理用に使用できる API について説明します。
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
-source-git-commit: 21599676916068f3529976410a93951b02f750b0
-workflow-type: ht
-source-wordcount: '592'
-ht-degree: 100%
+exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+workflow-type: tm+mt
+source-wordcount: '591'
+ht-degree: 98%
 
 ---
-
 
 # 構造化コンテンツの配信と管理用の AEM API {#aem-apis-structured-content-delivery-and-management}
 
 Adobe Experience Manager（AEM）as a Cloud Service では、コンテンツフラグメントからの構造化コンテンツ配信とコンテンツフラグメント管理の両方に対して複数の API を提供します。特定の API について詳しくは、個々のページを参照してください。
 
-* [コンテンツフラグメント配信用の AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+* [OpenAPI を使用したAEM コンテンツフラグメント配信](/help/headless/aem-content-fragment-delivery-with-openapi.md)
    * この API は、AEM のコンテンツフラグメントから構造化コンテンツを配信する JSON 応答を作成します。
    * エンドポイントとしてコンテンツフラグメントへのパスを使用します。
    * この API は REST ベースです。
