@@ -4,10 +4,10 @@ description: ユニバーサルエディターの 2025.04.04 リリースのリ�
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e8e2563fc8536bd6ebd4239569c03b2287fc1fb6
+source-git-commit: a016213f4bfb7826113317b2a5c7ac9ef92474c1
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 46%
+source-wordcount: '126'
+ht-degree: 37%
 
 ---
 
@@ -23,6 +23,7 @@ ht-degree: 46%
 ## 新機能 {#what-is-new}
 
 * **OpenAPI のサポートを含む Dynamic Media** - ユニバーサルエディターの [ アセットセレクター ](/help/assets/overview-asset-selector.md#repository-switcher) で、[OpenAPI とリモートアセットを含む Dynamic Media](/help/assets/integrate-remote-approved-assets-with-sites.md) がサポートされるようになりました。
+* **IP 許可リストへの登録** - ユニバーサルエディターで [IP許可リストがサポートされるようになりました。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) [ このエンドポイント ](http://universal-editor-service.adobe.io/ip-ranges) を使用して、ユニバーサルエディターサービスの IP を確認できます。
 
 ## その他の改善点 {#other-improvements}
 

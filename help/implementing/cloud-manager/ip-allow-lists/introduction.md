@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 93%
+source-wordcount: '446'
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ IP 許可リストを追加すれば、環境内のオーサーサービスと�
 
 ## 制限事項 {#limitations}
 
-IP許可リストを使用する前に、IP 拡張機能の機能、使用および他の機能への影響に関する次の制限事項を理解しておく必要があります。
+IP 許可リストを使用する前に、その機能、使用法、他の機能への影響に関する次の制限事項を理解しておいてください。
 
 ### IP 許可リストの一般的な制限事項 {#general}
 
@@ -80,8 +80,4 @@ IP許可リストを使用する前に、IP 拡張機能の機能、使用およ
 
 フロントエンドパイプラインの実行が中断されないようにするには、この Cloud Manager IP 許可リストを確実に追加します。次に、パイプラインを有効にする&#x200B;*前*&#x200B;に、リストをオーサー環境に適用します。
 
-詳しくは [IP許可リストを適用 ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) および [ フロントエンドパイプラインを有効にする ](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) を参照してください。
-
-### ユニバーサルエディターと IP 許可リスト {#universal-editor}
-
-{{ip-allow-lists-ue}}
+詳しくは、[IP 許可リストを適用](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)および[フロントエンドパイプラインを有効にする](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)を参照してください。
