@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.3.0 リ�
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 7f63f66cb1753fc32996e4672214eccc33ca8d92
 workflow-type: tm+mt
 source-wordcount: '2293'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -116,14 +116,14 @@ Assets Essentials では、管理者は、リポジトリで使用可能なプ�
 
 ### AEM Forms の新機能 {#forms-new-features}
 
-* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**: AEM Forms用Edge Delivery Servicesは、作成者が新しいフォームを迅速に更新、公開、開始できる、迅速な開発環境を可能にする構成可能なサービスセットです。 これらのサービスは、エンゲージメントとコンバージョンを促進する、優れた効果の高いフォームエクスペリエンスを提供します。これらのフォームエクスペリエンスは、簡単に作成および開発できます。
+* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**: Edge Delivery Services for AEM Forms is a composable set of services that enables a rapid development environment where authors can update, publish, and launch new forms rapidly. これらのサービスは、エンゲージメントとコンバージョンを促進する、優れた効果の高いフォームエクスペリエンスを提供します。これらのフォームエクスペリエンスは、簡単に作成および開発できます。
 
   ![EDS Forms の機能](/help/edge/assets/eds-forms-features.png)
 
 これらのサービスにより、次のことが可能になります。
 
 * 同じフォームサイト上で複数のコンテンツソースを操作し、Microsoft Excel、Google Sheets、アダプティブフォームエディターなどの推奨オーサリングツールを使用します。
-* RUM （Real Use Monitoring）を通じて、フォームのパフォーマンスを迅速かつ継続的に読み込み、レンダリングするデジタル登録エクスペリエンスを提供します。
+* Deliver Digital Enrollment experiences that load and render quickly and continuously monitor your forms performance through real use monitoring (RUM).
 * プレーン HTML、最新の CSS、Vanilla JavaScript を使用して優れたエクスペリエンスを作成し、特定のフレームワークの急な学習曲線を回避します。
 
 
@@ -186,10 +186,10 @@ Assets Essentials では、管理者は、リポジトリで使用可能なプ�
 
   公式メール ID から `aem-forms-ea@adobe.com` に送信して早期導入プログラムに参加し、機能へのアクセスをリクエストできます。
 
-* **[Real Use Monitoring （RUM） Data Service を利用すると](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**AEM as a Cloud Serviceのクライアントサイド収集を有効にできます。
+* **[You can leverage the Real Use Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** to enable client-side collection for AEM as a Cloud Service.
 実際の使用のモニタリング（RUM）データサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントの信頼性の高い測定を保証します。ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
 
-  この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから、RUM を有効にする各環境のドメイン名を添付して、`aemcs-rum-adopter@adobe.com` にメールを送信してください。Adobeのプロダクトチームが、Real Use Monitoring （RUM）データサービスを有効にします。
+  この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから、RUM を有効にする各環境のドメイン名を添付して、`aemcs-rum-adopter@adobe.com` にメールを送信してください。Adobe&#39;s product team will then enable the Real Use Monitoring (RUM) Data Service for you.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
@@ -205,7 +205,7 @@ Assets Essentials では、管理者は、リポジトリで使用可能なプ�
 
 オプションでライセンス可能な web アプリケーションファイアウォール（WAF）ルールを含む、最近リリースされた[トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)の他に、設定パイプラインを使用して、他のタイプの CDN 設定を宣言およびデプロイすることもできます。[詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md)を確認し、**<aemcs-cdn-config-adopter@adobe.com>** にメールを送信して早期導入プログラムに参加し、次の情報にアクセスしてください。
 
-* 301/302 クライアントサイドのリダイレクト
+* 301/302 server-side redirects
 * 任意の接触チャネルに対するエッジでのリクエストのプロキシ処理（AEM 以外のアプリケーションなど）
 * URL 変換
 * リクエストヘッダーまたは応答ヘッダーの設定または変更

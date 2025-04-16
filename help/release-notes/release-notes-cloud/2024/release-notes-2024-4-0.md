@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.4.0 リ�
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: bc0ae042c378f24b88da84768cdcc9573926ac89
+source-git-commit: 7069ee2453b0c589f92f9899db0b8307e4133756
 workflow-type: tm+mt
 source-wordcount: '2707'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -186,9 +186,9 @@ Experience Manager Assets では、[シングルクリックでアセットま�
 
 ### 早期導入プログラム {#foundation-early-adopter}
 
-#### クライアントサイドのリダイレクト（早期導入プログラム） {#client-side-redirects-early-adopter}
+#### サーバーサイドのリダイレクト（早期導入プログラム） {#server-side-redirects-early-adopter}
 
-ソース管理で 301/302 クライアントサイドのリダイレクトを設定し、CDN にデプロイします。[詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)を確認し、早期導入プログラムに参加するには、**<aemcs-cdn-config-adopter@adobe.com>** にメールを送信してください。
+ソース管理で 301/302 サーバーサイドのリダイレクトを設定し、CDN にデプロイします。 [詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors)を確認し、早期導入プログラムに参加するには、**<aemcs-cdn-config-adopter@adobe.com>** にメールを送信してください。
 
 #### トラフィックフィルタールールアラート（早期導入プログラム） {#traffic-filter-rules-alerts-early-adopter}
 

@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.5.0 リリー�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.5.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: d76f27e2b85cefe5e83f790a91466e94a619a077
+exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
+source-git-commit: a8c74573134597e83c2720de3b2a0f75ff7896a2
 workflow-type: tm+mt
 source-wordcount: '1949'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -213,9 +214,9 @@ CDN パージ API キーをセルフサービス方式で登録し、これを�
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### クライアントサイドのリダイレクト（早期導入プログラム） {#client-side-redirects-early-adopter}
+#### Server-side redirects (Early Adopter Program) {#server-side-redirects-early-adopter}
 
-ソース管理で 301/302 クライアントサイドのリダイレクトを設定し、CDN にデプロイします。[詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. -->リクエストと応答の変換、AEM 外のサイトへのトラフィックのルーティングなど、[CDN 設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)に関連して既に利用可能な他の機能がいくつかあります。
+Configure 301/302 server-side redirects in source control, and deploy to the CDN. [詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. -->リクエストと応答の変換、AEM 外のサイトへのトラフィックのルーティングなど、[CDN 設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)に関連して既に利用可能な他の機能がいくつかあります。
 
 #### トラフィックフィルタールールアラート（早期導入プログラム） {#traffic-filter-rules-alerts-early-adopter}
 

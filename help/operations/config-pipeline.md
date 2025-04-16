@@ -4,10 +4,10 @@ description: 設定パイプラインを使用して、ログ転送の設定、�
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 0b4ed7a99400bb5f91f513bbcd01862cdced03c5
+workflow-type: tm+mt
 source-wordcount: '991'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Cloud Manager 設定パイプラインでは、設定ファイル（YAML 形式�
 | [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | 悪意のあるトラフィックをブロックするルールを宣言します |
 | [リクエスト変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | トラフィックリクエストの形式を変換するルールを宣言します |
 | [応答変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | 特定のリクエストに対する応答の形式を変換するルールを宣言します。 |
-| [クライアントサイドのリダイレクト](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | 301/302 スタイルのクライアントサイドのリダイレクトを宣言します |
+| [ サーバーサイドのリダイレクト ](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) | `CDN` | 301/302 スタイルのサーバーサイドリダイレクトの宣言 |
 | [接触チャネルセレクター](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | アドビ以外のアプリケーションを含む様々なバックエンドにトラフィックをルーティングするルールを宣言します |
 | [CDN エラーページ](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | AEM オリジンに到達できない場合は、設定ファイルの自己ホスト型静的コンテンツの場所を参照して、デフォルトのエラーページを上書きします |
 | [CDN パージ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | CDN のパージに使用するパージ API キーを宣言します |

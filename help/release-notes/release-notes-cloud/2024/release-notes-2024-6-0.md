@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.6.0 リ�
 feature: Release Information
 role: Admin
 exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
-source-git-commit: 6d548f10caa32bb5a7a6b0afe762f60058eca2fe
+source-git-commit: 650014d0c093b9e7c1947a8fe870a5452f3083e5
 workflow-type: tm+mt
 source-wordcount: '1972'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 ### Experience Manager Sites の新機能 {#new-feature-sites}
 
-**実際の使用のモニタリング（RUM）データサービス** {#real-use-monitoring}
+**Real Use Monitoring (RUM) Data Service** {#real-use-monitoring}
 
 [実際の使用のモニタリング（RUM）データサービス](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)が一般提供され、AEM as a Cloud Service のクライアントサイドのデータコレクションを有効にすることができます。このサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントの信頼性の高い測定を保証します。ページトラフィックとパフォーマンスに関する高度なインサイトをお客様に提供し、ページのパフォーマンスを理解して強化する貴重な機会を提供します。
 
@@ -211,9 +211,9 @@ CDN パージ API キーをセルフサービス方式で登録し、これを�
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### クライアントサイドのリダイレクト（早期導入プログラム） {#client-side-redirects-early-adopter}
+#### Server-Side Redirects (Early Adopter Program) {#server-side-redirects-early-adopter}
 
-ソース管理で 301/302 クライアントサイドのリダイレクトを設定し、CDN にデプロイします。[詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. -->リクエストと応答の変換、AEM 外のサイトへのトラフィックのルーティングなど、[CDN 設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)に関連して既に利用可能な他の機能がいくつかあります。
+Configure 301/302 server-side redirects in source control, and deploy to the CDN. [詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. -->リクエストと応答の変換、AEM 外のサイトへのトラフィックのルーティングなど、[CDN 設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)に関連して既に利用可能な他の機能がいくつかあります。
 
 #### トラフィックフィルタールールアラート（早期導入プログラム） {#traffic-filter-rules-alerts-early-adopter}
 

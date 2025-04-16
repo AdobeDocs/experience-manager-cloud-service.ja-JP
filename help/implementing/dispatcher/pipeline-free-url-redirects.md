@@ -4,10 +4,10 @@ description: Git パイプラインまたは Cloud Manager パイプラインに
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: aee0aef912fd4c94c06251aa4424200a6ffd7ebc
+source-git-commit: 7a543c8fe63166ef34999f23ce9b05de8e8b0e9f
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 97%
 * 名前が変更された HTML ページ。
 * SEO の最適化。
 
-AEM as a Cloud Service では、クライアントサイドリダイレクトを実装するための[いくつかのアプローチ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/administration/url-redirection)が提供されますが、この記事で説明するパイプライン不要のリダイレクト戦略は、次の場合に適しています。
+AEM as a Cloud Serviceには、サーバーサイドのリダイレクトを実装する [ いくつかのアプローチ ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/administration/url-redirection) がありますが、この記事で説明する方法である、パイプラインを使用しないリダイレクトは、次の場合に適しています。
 
 * リダイレクトの管理をビジネスユーザーが担当し、ソース管理にファイルの変更をコミットするために必要なアクセス権や、Cloud Manager web 層設定パイプラインを実行する機能を持っていない場合。
 * リダイレクトの件数が数件から数万件に及ぶ場合。
@@ -40,7 +40,7 @@ AEM as a Cloud Service では、クライアントサイドリダイレクトを
 >[!NOTE]
 > この機能でリダイレクトマップマネージャーを使用するには、ACS Commons バージョン **6.7.0 以降**&#x200B;が必要であり、リダイレクトマネージャーを使用するには、**バージョン 6.10.0 以降**&#x200B;が必要です。
 
-詳細な手順の実装ガイドについては、チュートリアル [ パイプラインを使用しない URL リダイレクトの実装 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects) を参照してください。
+実装ガイドについて詳しくは、[パイプライン不要の URL リダイレクトの実装](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)チュートリアルを参照してください。
 
 ## 書き換えマップ {#rewrite-map}
 
@@ -87,5 +87,5 @@ RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 
 ## チュートリアル {#tutorials}
 
-1. [ パイプラインを使用しない URL リダイレクトの実装 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
-1. [URL リダイレクト ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/administration/url-redirection)
+1. [パイプライン不要の URL リダイレクトの実装](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
+1. [URL リダイレクト](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/administration/url-redirection)

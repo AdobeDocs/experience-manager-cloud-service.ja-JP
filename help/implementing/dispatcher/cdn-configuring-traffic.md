@@ -4,10 +4,10 @@ description: 設定ファイルでルールとフィルターを宣言し、Clou
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: a43fdc3f9b9ef502eb0af232b1c6aedbab159f1f
+workflow-type: tm+mt
 source-wordcount: '1390'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ AEM as a Cloud Service では、受信リクエストまたは送信応答の特
 
 * [リクエスト変換](#request-transformations) - ヘッダー、パスおよびパラメーターなど、受信リクエストの側面を変更します。
 * [応答変換](#response-transformations) - クライアント（web ブラウザーなど）に戻る途中のヘッダーを変更します。
-* [クライアントサイドのリダイレクト](#client-side-redirectors) - ブラウザーのリダイレクトをトリガーします。
+* [ サーバーサイドのリダイレクト ](#server-side-redirectors) - ブラウザーのリダイレクトをトリガーにします。
 * [接触チャネルセレクター](#origin-selectors) - 別の接触チャネルバックエンドにプロキシ処理します。
 
 また、CDN で許可または拒否するトラフィックを制御するトラフィックフィルタールール（WAF を含む）も CDN で設定できます。この機能は既にリリースされています。詳しくは、[WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)ページを参照してください。
@@ -393,7 +393,7 @@ data:
 > アドビが管理する CDN が使用されているので、Edge Delivery Service の[プッシュ無効化の設定ドキュメント](https://www.aem.live/docs/byo-dns#setup-push-invalidation)に従って、**管理対象**&#x200B;モードでプッシュ無効化を設定する必要があります。
 
 
-## クライアントサイドのリダイレクト {#client-side-redirectors}
+## サーバーサイドのリダイレクト {#server-side-redirectors}
 
 301、302 および同様のクライアントサイドリダイレクトに対して、クライアントサイドのリダイレクトルールを使用できます。ルールが一致する場合、CDN は応答として、ステータスコードとメッセージ（例：HTTP/1.1 301 Moved Permanently）、および場所ヘッダーセットを含むステータス行で応答します。
 
