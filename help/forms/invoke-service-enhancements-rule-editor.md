@@ -5,17 +5,15 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 keywords: vre のサービス拡張機能、呼び出しサービスを使用したドロップダウンオプションの入力、呼び出しサービスの出力を使用した繰り返し可能なパネルの設定、呼び出しサービスの出力を使用したパネルの設定、呼び出しサービスの出力パラメーターを使用した他のフィールドの検証。
-source-git-commit: f77e0cd03a63200cb86fada780f2fecff5fadf94
+exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1566'
 ht-degree: 3%
 
 ---
 
-
 # コアコンポーネントに基づくフォームのビジュアルルールエディターでの呼び出しサービスの使用
-
-<span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features). </span>
 
 アダプティブフォームのビジュアルルールエディターでは、**サービスの呼び出し** 機能がサポートされています。この機能を使用すると、インスタンスに設定されたフォームデータモデル（FDM）のリストからサービスを選択できます。 フォームフィールドをサービスの入力パラメーターに直接マッピングできます。 フォームフィールドを出力パラメーターにマッピングするには、指定したフォームデータモデルサービスのイベントペイロードオプションを使用します。 また、ビジュアルルールエディターでは、出力応答に基づいて、**サービスの呼び出し** 操作の成功ハンドラーと失敗ハンドラーのルールを作成できます。 サクセスハンドラーは、**サービスの呼び出し** 操作の正常な実行を管理し、エラーハンドラーは、発生したエラーに対処します。
 
@@ -63,7 +61,7 @@ ht-degree: 3%
 
 * データソースが設定されていることを確認します。 データソースの設定手順については、[ ここをクリック ](/help/forms/configure-data-sources.md) してください。
 * 設定済みのデータソースを使用して、フォームデータモデルを作成します。 フォームデータモデルの作成に関するガイダンスについては [ ここをクリック ](/help/forms/create-form-data-models.md) してください。
-* お使いの環境でコアコンポーネントが有効になっていることを確認します。 お使いの環境でコアコンポーネントを有効にする方法について詳しくは、[ ここをクリック ](/help/forms/enable-adaptive-forms-core-components.md) してください。
+* お使いの環境でコアコンポーネントが有効になっていることを確認します。 お使いの環境でコアコンポーネントを有効にする方法について詳しくは、[こちらをクリック](/help/forms/enable-adaptive-forms-core-components.md)してください。
 
 ## 様々なユースケースを通じたサービスの呼び出しの調査
 
@@ -242,4 +240,3 @@ ht-degree: 3%
 ## その他のリソース
 
 {{see-also-rule-editor}}
-

@@ -4,13 +4,13 @@ description: ビジュアルルールエディターでの非同期関数呼び�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
+exl-id: a240ba26-a6d8-4643-8acb-1d8812dac61f
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '1437'
-ht-degree: 2%
+source-wordcount: '1409'
+ht-degree: 7%
 
 ---
-
 
 # コアコンポーネントに基づくアダプティブフォームでの非同期関数の使用
 
@@ -38,8 +38,6 @@ ht-degree: 2%
 * [関数出力](#how-to-use-function-output-rule-type)
 
 ## 非同期関数呼び出しのルールタイプの使用方法は？
-
-<span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features). </span>
 
 非同期操作の [ カスタム関数 ](/help/forms/custom-function-core-component-create-function.md) を記述し、ルールエディターで **[!UICONTROL 非同期関数呼び出し]** ルールタイプを使用して非同期関数を設定できます。
 
@@ -149,7 +147,7 @@ OTP が値 `111` と一致する場合に、`userdetails` パネルを表示す�
 1. **[!UICONTROL アクションを選択]** ドロップダウンリストから **非表示** を選択します。 例えば、`error message` のテキストボックスを非表示にします。
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
-![ 成功呼び出し ](/help/forms/assets/rule-editor-success-callback.png){width=50%, height=50%}
+![ 成功コール ](/help/forms/assets/rule-editor-success-callback.png){width=50%, height=50%}
 
 以下のスクリーンショットを参照してください。ユーザーが `111` として OTP に入力し、「`Confirm`」ボタンをクリックすると、`User Details` パネルが表示されます。
 
@@ -211,15 +209,15 @@ OTP が値 `111` と一致しない場合に失敗メッセージを表示する
 }
 ```
 
-上記の例では、asyncFunction 関数は `asynchronous function` です。 `https://petstore.swagger.io/v2/store/inventory` に対して `GET` リクエストを実行することで、非同期操作を実行します。 `await` を使用して応答を待ち、`response.json()` を使用して応答本文を JSON として解析し、データを返します。 `callAsyncFunction` 関数は、`asyncFunction` 関数を呼び出してコンソールに応答データを表示する同期カスタム関数です。 `callAsyncFunction` 関数は同期していますが、非同期の asyncFunction 関数を呼び出し、`then` 文と `catch` 文で結果を処理します。
+上記の例では、asyncFunction 関数は `asynchronous function` です。`https://petstore.swagger.io/v2/store/inventory` に `GET` リクエストを送信して非同期操作を実行します。`await` を使用して応答を待機し、`response.json()` を使用して応答本文を JSON として解析し、データを返します。`callAsyncFunction` 関数は、`asyncFunction` 関数を呼び出してコンソールに応答データを表示する同期カスタム関数です。`callAsyncFunction` 関数は同期関数ですが、非同期の asyncFunction 関数を呼び出し、その結果を `then` および `catch` ステートメントで処理します。
 
 動作を確認するには、ボタンを追加し、ボタンがクリックされたときに非同期関数を呼び出すボタンのルールを作成します。
 
-![async 関数のルールを作成しています ](/help/forms/assets/rule-for-async-funct.png){width=50%}
+![非同期関数のルールの作成](/help/forms/assets/rule-for-async-funct.png){width=50%}
 
-ユーザーが「`Fetch`」ボタンをクリックすると、カスタム関数 `callAsyncFunction` が呼び出され、非同期関数 `asyncFunction` が呼び出されることを示すには、以下のコンソールウィンドウのスクリーンショットを参照してください。 コンソールウィンドウをInspectして、ボタンクリックに対する応答を表示します。
+ユーザーが「`Fetch`」ボタンをクリックすると、カスタム関数 `callAsyncFunction` が呼び出され、非同期関数 `asyncFunction` が呼び出されることを示すには、以下のコンソールウィンドウのスクリーンショットを参照してください。 コンソールウィンドウを調べて、ボタンクリックに対する応答を表示します。
 
-![ コンソールウィンドウ ](/help/forms/assets/async-custom-funct-console.png)
+![コンソールウィンドウ](/help/forms/assets/async-custom-funct-console.png)
 
 ## 関連トピック
 
