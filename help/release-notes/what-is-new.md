@@ -4,10 +4,10 @@ description: Adobe Experience Manager (AEM) as a Cloud Service の新機能。
 exl-id: f854aaf8-e84d-4904-832f-f72433590920
 feature: Release Information
 role: Admin
-source-git-commit: d0dec1917a67def8bc7cb1cb940ba214feb2ca28
+source-git-commit: d2d45a7889b94d3886c6fd539231b72c5b796755
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 93%
+source-wordcount: '183'
+ht-degree: 92%
 
 ---
 
@@ -19,7 +19,7 @@ Adobe Experience Manager as a Cloud Service の概要については、次を参
 * [AEM as a Cloud Service の概要](/help/overview/introduction.md)
 * Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/overview/architecture.md)
 * [AEM as a Cloud Service の概要 - 新機能と相違点](/help/overview/what-is-new-and-different.md)
-* [Assets as a Cloud Serviceの概要 ](/help/assets/overview.md)Assetsの概要
+* Assetsの概要については、[Assets as a Cloud Serviceの概要 ](/help/assets/overview.md) を参照してください
 
 AEM の以前のバージョンに習熟している場合は、以下で AEM as a Cloud Service の主な変更点の概要を参照してください。
 
