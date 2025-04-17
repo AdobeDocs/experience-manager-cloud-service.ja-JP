@@ -4,48 +4,52 @@ description: OpenAPI ベースの API のAEM as a Cloud Service サポートに�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 4aeafba9-8f9e-4ecb-9e37-8d048b0474cc
-source-git-commit: e735f7d2a39e3165907969d2e27565639499a636
+source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '522'
 ht-degree: 2%
 
 ---
 
 # OpenAPI ベースの API {#openapi-based-apis}
 
->[!NOTE]
->
->OpenAPI は、早期アクセスプログラムの一部として利用できます。 これらにアクセスすることに関心がある場合は、ユースケースの説明を記載した電子メール ](mailto:aem-apis@adobe.com)0}aem-apis@adobe.com} を送信することをお勧めします。[
-
-新しいAEM as a Cloud Service API は OpenAPI 仕様に従っているので、一貫性があり、適切にドキュメント化され、使いやすい API を作成します。 詳しくは、次のページを参照してください。
-
-* サーバー間認証を使用して OpenAPI ベースのAEM API を設定および呼び出す方法について説明する [ エンドツーエンドのチュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) です。
-* [API の概念と構文 ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/) を含む、情報提供のための [ ガイド ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/)。
-* API エンドポイント [ リファレンスドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/)。API の一部は OpenAPI ベースです（例：[this Sites API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)。 リファレンスドキュメントには、Adobe Developer Consoleで生成されたベアラートークンを使用してエンドポイントを簡単に試すことができる API プレイグラウンドも含まれています。
-
-一般的な API のユースケースは、CRM や PIM などのシステムとの統合に関連しています。AEM API を呼び出してデータを取得または保持します。 統合実装の一環として、アプリケーションは [AEMが発行するイベント ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-eventing/overview) をサブスクライブできます。これにより、Adobe App Builderまたは他のインフラストラクチャのビジネスロジックをトリガーにすることができます。
-
-サポートされている API 認証タイプはエンドポイントによって異なりますが、OAuth サーバー間、OAuth Web アプリ、OAuth 単一ページアプリ（SPA）の場合があります。
+新しいAEM as a Cloud Service API は OpenAPI 仕様に従っているので、一貫性があり、十分にドキュメント化されている API のセットを提供します。
 
 >[!NOTE]
 >
 > [ エンドツーエンドのチュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) は、OpenAPI ベースのAEM API を設定して呼び出す方法を学ぶための推奨リソースです。
 
+認証が必要なエンドポイントの場合、認証アプローチはエンドポイントによって異なりますが、OAuth サーバー間、OAuth Web アプリ、OAuth 単一ページアプリ（SPA）のいずれかを使用する場合があります。 資格情報は、[Adobe Developer Console](https://developer.adobe.com/developer-console/) のプロジェクトを通じて設定されます。
+
+一般的な API のユースケースは、CRM や PIM などのシステムとの統合です。AEM API を呼び出してデータを取得または保持します。 統合実装の一環として、アプリケーションは [AEMが発行するイベント ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-eventing/overview) をサブスクライブできます。これにより、Adobe App Builderまたは他のインフラストラクチャのビジネスロジックをトリガーにすることができます。
+
+このドキュメントは概要として機能しますが、より詳細なドキュメントは次のページで入手できます。
+
+* [ リファレンスドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) の OpenAPI ベースの API の節からのリンク。 各 API のリファレンスドキュメントには、API プレイグラウンドも含まれています。これにより、Adobe Developer Consoleで生成されたベアラートークンを使用してエンドポイントを簡単に試すことができます。
+
+* [API の概念と構文 ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/) を含む、情報提供のための [ ガイド ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/)。
+
+* [ 認証アプローチ ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/overview#authentication-support) やその他の概念について説明する最上位のチュートリアル。
+
+* [OpenAPI ベースの API の設定方法 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup) に重点を置いたビデオを含むチュートリアルです。
+
+* サーバー間認証戦略を使用した OpenAPI の設定と呼び出しについて ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) エンドツーエンドのチュートリアル [ を参照してください。 Web アプリとシングルページアプリケーションの認証アプローチについても、同様のチュートリアルが見つかります。
 
 ## API アクセスの設定 {#configuring-api-access}
 
-多くの OpenAPI ベースのAEM API には認証が必要で、[Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/) を使用して資格情報を生成する必要があります。 設定には次の手順が含まれます。
+一部の OpenAPI ベースのAEM API には認証が必要で、[Adobe Developer Console](https://developer.adobe.com/developer-console/) を使用して資格情報を生成する必要があります。 設定には次の手順が含まれます。
 
-1. AEM プログラムの [ 製品プロファイルが更新され ](/help/onboarding/aem-cs-team-product-profiles.md#aem-product-profiles) 目的の API にアクセスするための適切なサービスが有効になっていることを確認します。
-1. Adobe Developer Consoleで新しいプロジェクトを作成し、目的の API をプロジェクトに追加して、適切な認証タイプを選択します。
-1. 資格情報を生成します。これは、後で API の呼び出し時にベアラートークンと交換するために使用されます。
-1. 設定パイプライン（または RDE のコマンドライン）を使用してデプロイされた YAML ファイルを設定して、クライアント ID を環境に登録します。
+1. AEM as a Cloud Service環境の最新化。
+1. AEM API へのアクセスを有効にします [ 製品プロファイルを使用 ](/help/onboarding/aem-cs-team-product-profiles.md#aem-product-profiles)。
+1. Adobe Developer Console（ADC）プロジェクトを作成します。
+1. ADC プロジェクトの設定 これにより、API の呼び出し時にベアラートークンと交換するために後で使用される資格情報が生成されます。
+1. AEM インスタンスを設定して、ADC プロジェクト通信を有効にします。 これには、以下の [ クライアント ID の登録 ](#registering-a-client-id) の節で説明されているように、YAML ファイルを設定してデプロイすることでクライアント ID を環境に登録することが含まれます。
 
-詳細な手順については、[OpenAPI ベースの API の設定チュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/setup) を参照してください。
+詳細な手順については、[OpenAPI ベースの API の設定チュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup) を参照してください。
 
-## クライアント ID の登録 {#registering-a-client-id}
+### クライアント ID の登録 {#registering-a-client-id}
 
-クライアント ID では、Adobe Developer Console プロジェクト内のアプリを特定のAEM環境に対してスコープ化します。 これを行うには、以下の手順を実行します。
+クライアント ID によって、Adobe Developer Console プロジェクトの API が特定のAEM環境に対応するようになります。 これを行うには、以下の手順を実行します。
 
 1. `api.yaml` または同様の名前を持つファイルを、以下のスニペットのような設定（目的の層（オーサー、パブリッシュ、プレビュー）を含む）で作成します。 値 `Client_id`、Adobe Developer Console API プロジェクトから取得する必要があります。
 
