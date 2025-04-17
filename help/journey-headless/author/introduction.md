@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: cc2e73da123d3e0676a8e175a18c1dc0bdff1daa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '680'
 ht-degree: 100%
 

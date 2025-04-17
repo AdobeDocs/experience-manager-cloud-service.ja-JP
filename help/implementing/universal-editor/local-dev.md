@@ -5,9 +5,9 @@ exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '950'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->Edge Delivery ServicesでAEMをオーサリングするプロジェクトでは、ローカルユニバーサルエディターサービスは必要ないか、サポートされていません。
+>ローカルユニバーサルエディターサービスは、Edge Delivery Services で AEM オーサリングを使用するプロジェクトには必要なく、サポートされていません。
 
 ## 概要 {#overview}
 
@@ -94,18 +94,18 @@ UES_CORS_PRIVATE_NETWORK=true
 
 | 値 | オプション | デフォルト | 説明 |
 |---|---|---|---|
-| `UES_PORT` | あり | `8080` | サーバーが動作しているポート |
-| `UES_PRIVATE_KEY` | あり | なし | HTTPS サーバーの秘密鍵のパス |
-| `UES_CERT` | あり | なし | HTTPS サーバーの証明書ファイルのパス |
-| `UES_TLS_REJECT_UNAUTHORIZED` | あり | `true` | 許可されていない TLS 接続を拒否します |
-| `UES_DISABLE_IMS_VALIDATION` | あり | `false` | IMS 検証を無効にします |
-| `UES_ENDPOINT_MAPPING` | あり | 空白 | 内部書き換え用のエンドポイントのマッピング<br>例：`UES_ENDPOINT_MAPPING='[{"https://your-public-facing-author-domain.net": "http://10.0.0.1:4502"}]'`<br>結果：ユニバーサルエディターサービスは、指定された接続 `https://your-public-facing-author-domain.net` ではなく `http://10.0.0.1:4502` に接続します |
-| `UES_LOG_LEVEL` | あり | `info` | サーバーのログレベル。指定可能な値は、`silly`、`trace`、`debug`、`verbose`、`info`、`log`、`warn`、`error` および `fatal` です |
-| `UES_SPLUNK_HEC_URL` | あり | なし | Splunk エンドポイントへの HEC URL |
-| `UES_SPLUNK_TOKEN` | あり | なし | Splunk トークン |
-| `UES_SPLUNK_INDEX` | あり | なし | ログを書き込むインデックス |
-| `UES_SPLUNK_SOURCE` | あり | `universal-editor-service` | Splunk ログでのソースの名前 |
-| `UES_CORS_PRIVATE_NETWORK` | あり | `false` | [プライベートネットワーク](https://wicg.github.io/private-network-access/#private-network-request)を許可するには、CORS ヘッダーの送信を有効にします。Chrome バージョン 130 以降のユーザーに必須です |
+| `UES_PORT` | はい | `8080` | サーバーが動作しているポート |
+| `UES_PRIVATE_KEY` | はい | なし | HTTPS サーバーの秘密鍵のパス |
+| `UES_CERT` | はい | なし | HTTPS サーバーの証明書ファイルのパス |
+| `UES_TLS_REJECT_UNAUTHORIZED` | はい | `true` | 許可されていない TLS 接続を拒否します |
+| `UES_DISABLE_IMS_VALIDATION` | はい | `false` | IMS 検証を無効にします |
+| `UES_ENDPOINT_MAPPING` | はい | 空白 | 内部書き換え用のエンドポイントのマッピング<br>例：`UES_ENDPOINT_MAPPING='[{"https://your-public-facing-author-domain.net": "http://10.0.0.1:4502"}]'`<br>結果：ユニバーサルエディターサービスは、指定された接続 `https://your-public-facing-author-domain.net` ではなく `http://10.0.0.1:4502` に接続します |
+| `UES_LOG_LEVEL` | はい | `info` | サーバーのログレベル。指定可能な値は、`silly`、`trace`、`debug`、`verbose`、`info`、`log`、`warn`、`error` および `fatal` です |
+| `UES_SPLUNK_HEC_URL` | はい | なし | Splunk エンドポイントへの HEC URL |
+| `UES_SPLUNK_TOKEN` | はい | なし | Splunk トークン |
+| `UES_SPLUNK_INDEX` | はい | なし | ログを書き込むインデックス |
+| `UES_SPLUNK_SOURCE` | はい | `universal-editor-service` | Splunk ログでのソースの名前 |
+| `UES_CORS_PRIVATE_NETWORK` | はい | `false` | [プライベートネットワーク](https://wicg.github.io/private-network-access/#private-network-request)を許可するには、CORS ヘッダーの送信を有効にします。Chrome バージョン 130 以降のユーザーに必須です |
 
 >[!NOTE]
 >

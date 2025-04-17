@@ -1,8 +1,8 @@
 ---
 source-git-commit: 92ad3ce6c880664e42fce761ab52b21b94a25a5c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1497'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 # スニペット {#snippets}
@@ -11,7 +11,7 @@ ht-degree: 99%
 
 ## Edge 配信サービスのオーサリング {#edge-delivery-authoring}
 
-[!BADGE Edge 配信サービス向けの AEM コンテンツをオーサリングする場合は、こちらをクリックしてください。]{type=Positive url="/help/edge/overview.md" tooltip="Edge 配信サービス向けの AEM コンテンツのオーサリング"}
+[!BADGE Edge Delivery Services の AEM コンテンツをオーサリングする場合は、こちらをクリックします。]{type=Positive url="/help/edge/overview.md" tooltip="Edge 配信サービス向けの AEM コンテンツのオーサリング"}
 
 ## 関連トピック {#see-also}
 

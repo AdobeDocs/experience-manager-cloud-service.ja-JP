@@ -6,9 +6,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
 source-git-commit: a764a9d1e7d9fcd0be6abf9e2fb409346dc0f549
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1073'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Adobe Cloud Manager では、いくつかの理由により、環境層（パブ
    | オプション | ステップ |
    | --- | --- |
    | A レコードを設定 | `example.com`<br> などのルートドメインにお勧めします。<ol><li>DNS サービスプロバイダーのポータルにログインします。<li>「DNS レコード」セクションに移動します。<li>リストされているすべての IP アドレスを指すように A レコードを作成します。</li></ol> |
-   | CNAME を設定 | `www.example.com`<br> などのカスタムドメインにお勧めします。<ol><li>DNS サービスプロバイダーのポータルにログインします。<li>「DNS レコード」セクションに移動します。<li>DNS サービスプロバイダー（カスタムドメイン）の DNS レコードに `cdn.adobeaemcloud.com` （CNAME レコード）をマッピングします。 このマッピングにより、カスタムドメインで受信したリクエストがアドビの CDN にリダイレクトされるようになります。</li></ol> |
+   | CNAME を設定 | `www.example.com`<br> などのカスタムドメインにお勧めします。<ol><li>DNS サービスプロバイダーのポータルにログインします。<li>「DNS レコード」セクションに移動します。<li>DNS サービスプロバイダー（カスタムドメイン）の DNS レコードに `cdn.adobeaemcloud.com`（CNAME レコード）をマッピングします。このマッピングにより、カスタムドメインで受信したリクエストがアドビの CDN にリダイレクトされるようになります。</li></ol> |
 
 1. **実稼動対応**&#x200B;ダイアログボックスで、「**OK**」をクリックして、レコードを保存します。
 

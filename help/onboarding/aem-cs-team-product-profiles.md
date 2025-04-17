@@ -5,9 +5,9 @@ exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 86bb2e020a003fd418f8b1cf7bdf55987a2eaf3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2062'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service は、AEM をサービスとして提供する、完全�
 
 >[!NOTE]
 >
-> この記事で説明する製品インスタンスと製品プロファイルの一部は、新しく作成した環境にのみ表示される場合があります。環境を最新化する方法については、[ 既存環境の製品プロファイルの追加 ](#adding-product-profiles-for-existing-environments) の節を参照してください。
+> この記事で説明する製品インスタンスと製品プロファイルの一部は、新しく作成した環境にのみ表示される場合があります。環境を最新化する方法について詳しくは、[既存の環境に対する製品プロファイルの追加](#adding-product-profiles-for-existing-environments)の節を参照してください。
 
 アドビが初めて AEM ソリューションのライセンスを処理すると、Adobe Admin Console の Adobe Experience Manager as a Cloud Service 製品の下に次の 2 つの製品インスタンスが表示されます。
 
@@ -278,7 +278,7 @@ AEM Sites を含むプログラムで環境をプロビジョニングした組�
 
 ### 既存の環境に対する製品プロファイルの追加 {#adding-product-profiles-for-existing-environments}
 
-2024 年 4 月上旬より前に作成された環境では、上記の節で説明した組織レベルの製品インスタンスおよび特定の製品プロファイルが欠落している可能性があります。 また、既存の製品プロファイルの場合はサービス切替スイッチもありません。今後の API にアクセスするための前提条件となる、これらの製品プロファイルを更新することをお勧めします。
+2024年4月上旬より前に作成した環境では、上記の節で説明した組織レベルの製品インスタンスと特定の製品プロファイルが欠落している場合があります。また、既存の製品プロファイルの場合はサービス切替スイッチもありません。今後の API にアクセスするための前提条件となる、これらの製品プロファイルを更新することをお勧めします。
 
 プログラム内の 1 つ以上の環境で製品プロファイルを更新する必要がある場合、Cloud Manager に以下の通知が表示されます。製品プロファイルを更新する前に、環境を最新の AEM バージョンにする必要があります。
 

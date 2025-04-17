@@ -4,9 +4,9 @@ description: OpenAPI 機能を備えた Dynamic Media に関するよくある�
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1600'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -139,9 +139,9 @@ DAM ユーザーには、[アセットを承認](approve-assets.md#approve-asset
 
 +++
 
-+++**ビデオでサポートされているファイルサイズを教えてください。**
++++**サポートされているビデオのファイルサイズはどれくらいですか？**
 
-OpenAPI 機能を備えた Dynamic Media は、長編ビデオをサポートします。 ビデオは最大 50 GB と 2 時間をサポートできます。
+OpenAPI 機能を備えた Dynamic Media は、ロングフォームのビデオをサポートしています。ビデオは、最大 50 GB および 2 時間をサポートできます。
 
 +++
 

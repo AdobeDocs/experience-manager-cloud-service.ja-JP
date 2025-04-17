@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
 source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1077'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 99%
 
 ## [!DNL Dynamic Media] Ultimate を有効にする {#enable-dynamic-media-ultimate}
 
-[!DNL Dynamic Media] Ultimateを有効にするには：
+[!DNL Dynamic Media] Ultimate を有効にするには：
 
 1. [アクティベート [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi)
 1. [ [!DNL Dynamic Media]  ソリューションを設定](#configure-dynamic-media-solutions)
@@ -306,7 +306,7 @@ TBD: Wiki in progress..
 
 ## [!DNL Dynamic Media] Prime を有効にする {#enable-dynamic-media-prime}
 
-[!DNL Dynamic Media] Primeを有効にするには：
+[!DNL Dynamic Media] Prime を有効にするには：
 
 1. [OpenAPI を備えた Dynamic Media をアクティベート](#activate-dynamic-media-with-openapi)
 1. [オプション：配信層でカスタムドメインを設定](#configure-custom-domain-in-delivery-tier)

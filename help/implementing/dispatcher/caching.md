@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
 source-git-commit: 4a586a0022682dadbc57bab1ccde0ba2afa78627
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3071'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -20,18 +20,18 @@ Dispatcher 設定にルールを適用して、デフォルトのキャッシュ
 
 ## キャッシュ {#caching}
 
-Caching of HTTP responses in AEM as a Cloud Service’s CDN is controlled by the following HTTP response headers from the origin: `Cache-Control`, `Surrogate-Control`, or `Expires`.
+AEM as a Cloud Service CDN での HTTP 応答のキャッシュは、接触チャネルからの HTTP 応答ヘッダー `Cache-Control`、`Surrogate-Control` または `Expires` によって制御されます。
 
-These cache headers are typically set in AEM Dispatcher vhost configurations using mod_headers, but can also be set in custom Java™ code running in AEM Publish itself (see [How to enable CDN caching](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)).
+これらのキャッシュヘッダーは、通常、mod_headers を使用して、AEM Dispatcher vhost 設定で行われますが、AEM パブリッシュ自体で実行されるカスタム Java™ コードで設定することもできます（[CDN キャッシュを有効にする方法](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)を参照）。
 
-The cache key for CDN resources contains the full request url, including query parameters, so every different query parameter will produce a different cache entry. Consider removing unwanted query parameters; [see below](#marketing-parameters) for improving cache hit ratio.
+CDN リソースのキャッシュキーには、クエリパラメーターを含む完全なリクエスト URL が含まれているので、異なるクエリパラメーターごとに様々なキャッシュエントリが生成されます。不要なクエリパラメーターを削除することを考慮します。キャッシュヒット率の向上について詳しくは、[以下を参照](#marketing-parameters)してください。
 
-Origin responses that contain `private`, `no-cache` or `no-store` in  `Cache-Control` are not cached by the AEM as a Cloud Service’s CDN (see [How to disable CDN caching
-](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) for more details).  Also, responses that are setting cookies, i.e. have a `Set-Cookie` response header are not cached by the CDN.
+`Cache-Control` に `private`、`no-cache` または `no-store` が含まれる接触チャネル応答は、AEM as a Cloud Service の CDN によってキャッシュされません（詳しくは、[CDN キャッシュを無効にする方法
+](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)を参照してください）。また、Cookie を設定する応答、つまり `Set-Cookie` 応答ヘッダーを持つ応答は、CDN によってキャッシュされません。
 
 ### HTML/Text {#html-text}
 
-Dispatcher configuration sets some default caching headers for `text/html` content type.
+Dispatcher 設定では、`text/html` コンテンツタイプに対していくつかのデフォルトのキャッシュヘッダーが設定されます。
 
 * デフォルトでは、Apache レイヤーが送出する `cache-control` ヘッダーに基づいて、ブラウザーによって 5 分間キャッシュされます。CDN はこの値も順守します。
 * デフォルトの HTML/Text キャッシュ設定は、`global.vars` で `DISABLE_DEFAULT_CACHING` 変数を次のように定義することで無効にできます。
@@ -302,7 +302,7 @@ data:
 以前のバージョンの AEM と同様に、ページを公開または非公開にすると、Dispatcher のキャッシュからコンテンツがクリアされます。キャッシュに問題があると疑われる場合は、該当するページを再度公開し、`ServerAlias` localhost に一致する仮想ホスト（Dispatcher キャッシュの無効化に必要）が使用可能であることを確認する必要があります。
 
 >[!NOTE]
->For proper Dispatcher invalidation, make sure that requests from &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;\*.local&quot;, &quot;\*.adobeaemcloud.com&quot;, and &quot;\*.adobeaemcloud.net&quot; are all matched and handled by a vhost configuration so the request can be served. この作業を行うには、[AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) の参照パターンに従って、キャッチオール vhost 設定で「*」をグローバルに一致させます。または、前述のリストがいずれかの vhost にキャッチされるようにすることもできます。
+>Dispatcher を適切に無効化するには、「127.0.0.1」「localhost」「\*.local」「\*.adobeaemcloud.com」「\*.adobeaemcloud.net」からのリクエストがすべて vhost 設定で一致し、処理されることを確認してください。この作業を行うには、[AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) の参照パターンに従って、キャッチオール vhost 設定で「*」をグローバルに一致させます。または、前述のリストがいずれかの vhost にキャッチされるようにすることもできます。
 
 パブリッシュインスタンスは、オーサーから新しいバージョンのページまたはアセットを受け取ると、フラッシュエージェントを使用して Dispatcher 上の該当するパスを無効にします。更新されたパスは、親と共に、Dispatcher キャッシュから削除されます（削除されるレベルは [statfilelevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#invalidating-files-by-folder-level) で設定できます）。
 

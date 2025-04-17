@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1021'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ Cloud Manager に追加したら、アドビがユーザーに代わって DV SS
 
 >[!IMPORTANT]
 >
->SSL 証明書を追加または更新する場合は、新しい証明書を証明書チェーンに含めないでください。 含めると、アップロードが正常に完了しなくなります。
+>SSL 証明書を追加または更新する際は、新しい証明書を証明書チェーンに含めないでください。含めると、アップロードが正常に完了しなくなります。
 
 **顧客が管理する（OV/EV）SSL 証明書を追加するには：**
 

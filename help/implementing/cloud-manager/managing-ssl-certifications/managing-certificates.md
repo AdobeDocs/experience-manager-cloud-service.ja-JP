@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1048'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Cloud Manager には、プログラムに対するすべての証明書のステ
 
 >[!IMPORTANT]
 >
->SSL 証明書を追加または更新する場合は、新しい証明書を証明書チェーンに含めないでください。 含めると、アップロードが正常に完了しなくなります。
+>SSL 証明書を追加または更新する際は、新しい証明書を証明書チェーンに含めないでください。含めると、アップロードが正常に完了しなくなります。
 
 **顧客が管理する期限切れの SSL 証明書を更新するには：**
 
