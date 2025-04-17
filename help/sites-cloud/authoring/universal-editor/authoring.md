@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 08bcf9a65854478d2ce057e31b4c27690d1bf240
+source-git-commit: da14ed18b786c1f19d76926ed027d13a53275af3
 workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 98%
+source-wordcount: '1395'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 ## はじめに {#introduction}
 
-ユニバーサルエディターを使用すると、あらゆる実装、あらゆるコンテンツ、あらゆる側面を編集できるため、優れたエクスペリエンスを提供し、コンテンツベロシティを向上させ、最新のデベロッパーエクスペリエンスを提供できます。
+ユニバーサルエディターを使用すると、あらゆる実装、あらゆるコンテンツ、あらゆる側面を編集できるので、卓越したエクスペリエンスを提供し、コンテンツベロシティを向上できます。
 
 これを行うために、ユニバーサルエディターはコンテンツ作成者に、最小限のトレーニングで簡単にコンテンツの編集を開始できる直感的な UI を提供します。このドキュメントでは、ユニバーサルエディターのオーサリングエクスペリエンスについて説明します。
 
@@ -176,7 +176,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->コンポーネントは、ターゲットコンテナ [ コンポーネントフィルター ](/help/implementing/universal-editor/filtering.md) が選択したコンポーネントを許可している場合にのみ、コンテナ間で移動できます。
+>選択したコンポーネントがターゲットコンテナの[コンポーネントフィルター](/help/implementing/universal-editor/filtering.md)で許可されている場合にのみ、コンテナ間でコンポーネントを移動できます。
 
 ### 「バリエーションを生成」で生成 AI を使用したバリエーションの作成 {#generate-variations-ai}
 
@@ -200,7 +200,7 @@ ht-degree: 98%
 
 ユニバーサルエディターの技術的な詳細について詳しくは、次の開発者向けドキュメントを参照してください。
 
-* [ユニバーサルエディターの概要](/help/implementing/universal-editor/introduction.md) - ユニバーサルエディターを使用して、優れたエクスペリエンスを提供し、コンテンツベロシティを向上させ、最新のデベロッパーエクスペリエンスを提供するために、あらゆる実装、あらゆるコンテンツ、あらゆる側面の編集を可能にする方法を説明します。
+* [ ユニバーサルエディターの概要 ](/help/implementing/universal-editor/introduction.md) - ユニバーサルエディターを使用して、あらゆる実装において、あらゆるコンテンツのあらゆる側面を編集し、卓越したエクスペリエンスを提供し、コンテンツベロシティを向上させる方法を説明します。
 * [AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md) - ユニバーサルエディターへのアクセス権を取得する方法と、これを使用するために最初の AEM アプリのインストルメントを開始する方法について説明します。
 * [ユニバーサルエディターのアーキテクチャ](/help/implementing/universal-editor/architecture.md) - ユニバーサルエディターのアーキテクチャと、そのサービスとレイヤー間でのデータのフローについて説明します。
 * [属性とタイプ](/help/implementing/universal-editor/attributes-types.md) - ユニバーサルエディターで必要なデータ属性とデータ型について説明します。
