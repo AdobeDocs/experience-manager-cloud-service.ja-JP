@@ -4,8 +4,8 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 6d6e3e452b7910148e22d95a222c1a3b674ea83b
-workflow-type: ht
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 100%
 
@@ -60,7 +60,7 @@ Cloud Manager の早期導入プログラムに参加すると、一般リリー
 >
 >現在、標準のプルリクエストコード品質チェックは、GitHub でホストされるリポジトリ専用ですが、この機能を他の Git ベンダーに拡張する更新が進行中です。
 
-この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) にメールを送信します。 使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
+この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) にメールを送信します。 使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
 
 ### AEM ホーム {#aem-home}
 

@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3323da83584c4511b15145c0106031df4597891c
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 99%
+source-wordcount: '1820'
+ht-degree: 96%
 
 ---
 
@@ -169,9 +169,7 @@ New Relic からメールが届かない場合は、次の操作を実行しま�
 * 該当する場合、[メール許可リストに New Relic を追加](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist)します。
 * いずれの提案も役に立たない場合は、サポートチケットに関するフィードバックを提供してください。
 
-## 制限事項 {#limitations}
-
-New Relic One にユーザーを追加する場合は、次の制限が適用されます。
+## 使用上の注意 {#usage-notes}
 
 * 最大 30 人のユーザーを追加できます。ユーザーの最大数に達した場合は、新しいユーザーを追加できるように、ユーザーを削除します。
 * New Relicに追加されるユーザーのタイプは、**基本** です。 詳しくは、[New Relic のドキュメント](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/)を参照してください。
@@ -179,7 +177,7 @@ New Relic One にユーザーを追加する場合は、次の制限が適用さ
 
 >[!NOTE]
 >
->New Relic One サブアカウントで 30 日以上&#x200B;**ユーザーログイン**&#x200B;アクティビティが検出されなかった場合、APM エージェントは停止し、AEM Cloud Service から New Relic にデータは送信されません。**サブアカウントを再アクティブ化するまで、データは再送信されません。**
+>New Relic One サブアカウントで **ユーザーログイン** アクティビティが 30 日以上検出されない場合、APM エージェントは停止します。 AEM Cloud Service からNew Relicにデータが送信されることはありません。 *サブアカウントが再アクティブ化されるまで、データは再送信されません。*
 >
 >このドキュメントの [New Relic One サブアカウントのアクティベート](#activate-sub-account)の節と同じ手順に従って、New Relic One サブアカウントを再アクティベートします。
 

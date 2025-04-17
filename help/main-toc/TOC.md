@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: e470244d2b6e039f47d06c332a0fb98cff1b0433
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '6152'
+ht-degree: 99%
 
 ---
 
@@ -1193,7 +1193,7 @@ ht-degree: 0%
          + [Cloud Managerでのリポジトリの管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Adobe リポジトリの追加](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [プライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [外部リポジトリの追加（ベータ版限定）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [外部リポジトリの追加（早期導入）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [リポジトリへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git サブモジュールのサポート](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Cloud Manager での Git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

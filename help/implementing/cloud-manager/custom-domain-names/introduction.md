@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2724eaaaade94be89d33da5eecec4444cf851bd0
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 100%
+source-wordcount: '710'
+ht-degree: 99%
 
 ---
 
@@ -63,9 +63,7 @@ AEM as a Cloud Service にはビルトインの CDN（コンテンツ配信ネ�
 >
 >通常、AEM as a Cloud Service でのカスタムドメイン名の設定手順は簡単です。ただし、ドメインのデリゲーションに関する問題が発生した場合は、解決に 1～2 営業日かかる可能性があります。そのため、運用開始日の前にドメインを適切にインストールしておくことをお勧めします。詳しくは、[ドメイン名ステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)のドキュメントを参照してください。
 
-## 制限事項 {#limitations}
-
-AEMaaCS でカスタムドメイン名を使用する場合は、いくつかの制限があります。
+## 使用上の注意 {#usage-notes}
 
 * Cloud Manager では、Sites プログラムの公開サービスおよびプレビューサービスに対してのみカスタムドメイン名がサポートされています。
    * オーサーサービスでは、カスタムドメインがサポートされていません。

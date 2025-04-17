@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
+source-git-commit: e7c38b4103c3de4b794da3a6dfa26c6204e1c0c6
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 100%
+source-wordcount: '423'
+ht-degree: 99%
 
 ---
 
@@ -36,11 +36,7 @@ IP 許可リストを追加すれば、環境内のオーサーサービスと�
 >
 >IP 許可リストが適用されない場合、デフォルトでは、すべての IP アドレスが許可されます。IP 許可リストが適用されると、IP 許可リストに記載されている IP アドレス以外は禁止されます。
 
-## 制限事項 {#limitations}
-
-IP 許可リストを使用する前に、その機能、使用法、他の機能への影響に関する次の制限事項を理解しておいてください。
-
-### IP 許可リストの一般的な制限事項 {#general}
+## 使用上の注意 {#usage-notes}
 
 * プログラムに追加できる IP 許可リストは最大 50 個です。
 * 各 IP 許可リストに追加できる IP／CIDR アドレスは最大 50 個です。

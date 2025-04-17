@@ -1,23 +1,23 @@
 ---
-title: Cloud Manager での外部リポジトリの追加 - ベータ版限定
+title: Cloud Managerでの外部リポジトリの追加 – 早期導入
 description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise、GitLab、Bitbucket リポジトリとの統合をサポートしています。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 9807e59dedd0be0655a5cb73e61233b4a2ba7a4c
-workflow-type: ht
-source-wordcount: '1870'
-ht-degree: 100%
+source-git-commit: 186c4cfc11bcab38b0b9b74143cabbd2af317a81
+workflow-type: tm+mt
+source-wordcount: '2307'
+ht-degree: 80%
 
 ---
 
-# Cloud Manager での外部リポジトリの追加 - ベータ版限定 {#external-repositories}
+# Cloud Managerでの外部リポジトリの追加 – 早期導入 {#external-repositories}
 
 Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise、GitLab、Bitbucket リポジトリとの統合をサポートしています。
 
 >[!NOTE]
 >
->この機能は、早期導入プログラムを通じてのみ使用できます。詳細と早期導入者としての新規登録について詳しくは、[独自の Git の導入 - GitLab と Bitbucket をサポートするようになりました](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md#gitlab-bitbucket)を参照してください。
+>この記事で説明する機能は、早期導入プログラムでのみ利用できます。 詳細および早期導入者として登録する方法については、[ 独自の Git の取り込み ](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket) を参照してください。
 
 ## 外部リポジトリの設定
 
@@ -31,6 +31,14 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
 
 
 ## 外部リポジトリの追加 {#add-ext-repo}
+
+>[!NOTE]
+>
+>外部リポジトリは、設定パイプラインにリンクできません。
+
+<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
+* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
@@ -206,12 +214,88 @@ Webhook を正しく設定すると、Cloud Manager ではリポジトリに対�
 * PR 検証またはパイプライントリガーが機能しない場合は、Cloud Manager と Git ベンダーの両方で web フックの秘密鍵が最新であることを確認します。
 
 
-## 制限
+## 外部 Git プロバイダーからの迅速な開発環境へのデプロイ {#deploy-to-rde}
 
-* 外部リポジトリは、設定パイプラインにリンクできません。
+>[!NOTE]
+>
+>この機能は、早期導入プログラムを通じて利用できます。 この新機能のテストやフィードバックの提供に関心がある場合は、Adobe IDに関連付けられたメールアドレスから [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com) にメールを送信してください。 使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
+
+Cloud Managerでは、[ 独自の Git （BYOG）設定の導入 ](/help/implementing/cloud-manager/managing-code/external-repositories.md) を使用する場合、外部 Git プロバイダーからの迅速な開発環境（RDE）へのコードのデプロイをサポートしています。
+
+外部 Git リポジトリから RDE にデプロイするには、次の操作が必要です。
+
+* Cloud Managerと統合された外部 Git リポジトリの使用（BYOG 設定）。
+* プロジェクトには 1 つ以上の RDE 環境がプロビジョニングされている必要があります。
+* `github.com` を使用している場合は、更新された GitHub アプリのインストールを確認して同意し、必要な新しい権限を付与する必要があります。
+
+**使用上の注意**
+
+* RDE へのデプロイメントは現在、AEM コンテンツおよびDispatcher パッケージでのみサポートされています。
+* 他のパッケージタイプ（完全なAEM アプリケーションパッケージなど）のデプロイメントは、まだサポートされていません。
+* 現在、コメントを使用した RDE 環境のリセットはサポートされていません。 お客様は、[ ここで説明する ](/help/implementing/developing/introduction/rapid-development-environments.md) ように、既存の AIO CLI コマンドを使用する必要があります。
+
+**仕組み**
+
+1. **コード品質検証メッセージ。**
+
+   プルリクエスト（PR）がコード品質パイプラインの実行をトリガーする場合、検証結果は、デプロイメントが RDE 環境に進むことができるかどうかを示します。
+
+   GitHub Enterprise での表示：
+   ![GitHub エンタープライズのコード品質検証メッセージ ](/help/implementing/cloud-manager/managing-code/assets/rde-github-enterprise-code-quality-validation-message.png)
+
+   GitLab での表示：
+   ![GitLab でのコード品質検証メッセージ ](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-code-quality-validation-message.png)
+
+   Bitbucket での外観：
+   ![Bitbucket のコード品質検証メッセージ ](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-code-quality-validation-message.png)
+
+1. **コメントを使用したトリガーの展開。**
+
+   デプロイメントを開始するには、次の形式でコメントを PR に追加します。`deploy on rde-environment-<envName>`
+
+   ![ コメントを使用したトリガーのデプロイ ](/help/implementing/cloud-manager/managing-code/assets/rde-trigger-deployment-using-comment.png)
+
+   `<envName>` は、既存の RDE 環境の名前と一致する必要があります。 名前が見つからない場合は、環境が無効であることを示すコメントが返されます。
+
+   環境ステータスが準備完了でない場合は、次のコメントが表示されます。
+
+   ![ 環境のデプロイ準備が整っていない ](/help/implementing/cloud-manager/managing-code/assets/rde-environment-not-ready.png)
 
 
-<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
-* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
+
+1. **環境チェックとアーティファクトのデプロイメント**
+
+   RDE の準備が整うと、Cloud Managerは新しいチェックを PR に投稿します。
+
+   GitHub Enterprise での表示：
+
+   ![GitHub の環境のステータス ](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-status-is-ready.png)
+
+   GitLab での表示：
+
+   ![GitLab での環境のステータス ](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-1.png)
+
+   Bitbucket での外観：
+
+   ![Bitbucket の環境のステータス ](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-1.png)
+
+
+1. **デプロイメント成功のメッセージ**
+
+   デプロイメントが完了すると、Cloud Managerはターゲット環境にデプロイされたアーティファクトの概要を示す成功メッセージを投稿します。
+
+   GitHub Enterprise での表示：
+
+   ![GitHub での環境のデプロイメントステータス ](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-deployed-artifacts.png)
+
+   GitLab での表示：
+
+   ![GitLab での環境のデプロイメントステータス ](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-2.png)
+
+   Bitbucket での外観：
+
+   ![Bitbucket での環境のデプロイメントステータス ](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-2.png)
+
 
 
