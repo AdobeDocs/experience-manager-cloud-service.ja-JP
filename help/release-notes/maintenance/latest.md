@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: c5152543550b5f81bf0b79741f288b0c16648584
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 47%
+ht-degree: 50%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 47%
 * CQ-4355411：ツールチップが「ユーザーの環境設定」ダイアログに表示されたままになる。
 * GRANITE-57265：ドロップダウン選択値が選択されない。
 * GRANITE-57067 - UI に有効なポリシーがありません。
-* SITES-30727:AEM エディター内のサブコンポーネントのドラッグ&amp;ドロップが失敗する場合があります。
+* SITES-30727：AEM エディター内のサブコンポーネントのドラッグ＆ドロップが失敗する場合がある。
 * SKYOPS-90607:Sling ジョブが、非アクティブなデプロイメント/可変コンテンツで実行される。
 * SKYOPS-95722:AEM-SDK`MaxPermSize` クイックスタートフラグからサイズを削除します。
 * SKYOPS-103569:Java 21 で読み込めない画像があります：`javax.imageio.IIOException: Cannot create Sun JPEGImageReader backend`。
