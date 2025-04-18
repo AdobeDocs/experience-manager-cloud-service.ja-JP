@@ -4,15 +4,20 @@ description: AEM as a Cloud Service および Edge Delivery Services の Sidekic
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
 workflow-type: tm+mt
-source-wordcount: '3272'
+source-wordcount: '3287'
 ht-degree: 99%
 
 ---
 
 
 # バリエーションを生成 {#generate-variations}
+
+
+>[!NOTE]
+>
+>[AEM エディターに統合されたバリエーションを生成 ](/help/generative-ai/generate-variations-integrated-editor.md) にアクセスすることをお勧めします。このページで説明されているバージョンは、今後非推奨となる予定です。
 
 デジタルチャネルを最適化し、コンテンツ作成を高速化する方法を探している場合は、「バリエーションを生成」を使用できます。「バリエーションを生成」では、生成 AI（人工知能）を使用して、プロンプトに基づいてコンテンツのバリエーションを作成します。これらのプロンプトは、アドビが提供するか、ユーザーが作成および管理します。バリエーションを作成したら、そのコンテンツを web サイトで使用することや、[Edge Delivery Services](/help/edge/overview.md) の[実験](https://www.aem.live/docs/experimentation)機能を使用してその成功を測定することもできます。
 
@@ -25,10 +30,6 @@ ht-degree: 99%
 >[!NOTE]
 >
 >いずれの場合も、「バリエーションを生成」を使用するには、[アクセスの前提条件](#access-prerequisites)が満たされていることを確認する必要があります。
-
->[!NOTE]
->
->また、[AEM エディターに統合されたバリエーションを生成 ](/help/generative-ai/generate-variations-integrated-editor.md) にアクセスすることもできます。
 
 これにより、以下のことが可能になります。
 
@@ -122,7 +123,7 @@ Adobe 生成 AI の温度を変更するのに使用します。
 * **プロンプトの編集**
    * 基になる[プロンプトを編集](#edit-the-prompt)して、生成された結果を絞り込むことができます。
 
-### コピーの生成 {#generate-copy}
+### コピーを生成 {#generate-copy}
 
 入力フィールドに入力したり、プロンプトを変更したりすると、コンテンツを生成し、応答を確認する準備が整います。
 

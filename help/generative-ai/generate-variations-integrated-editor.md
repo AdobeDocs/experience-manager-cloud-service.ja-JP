@@ -1,33 +1,33 @@
 ---
 title: バリエーションを生成
-description: AEM as a Cloud Service内の様々なエディターからアクセスできる、バリエーションの生成について説明します
+description: AEM as a Cloud Service 内の様々なエディターからアクセス可能な「バリエーションを生成」について説明します
 feature: Generate Variations
 role: Admin, Architect, Developer, User
-source-git-commit: 257fcd8df8bf216deec1fe96e64dd38e52f3ebe1
+exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
+source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 34%
+source-wordcount: '1341'
+ht-degree: 97%
 
 ---
 
+# バリエーションを生成 - AEM エディターに統合済み {#generate-variations-integrated-in-aem-editors}
 
-# バリエーションを生成 – AEM エディターに統合 {#generate-variations-integrated-in-aem-editors}
+デジタルチャネルを最適化し、コンテンツ作成を高速化する方法を探している場合は、AEM エディターに統合済みの「バリエーションを生成」を使用できます。
 
-デジタルチャネルを最適化し、コンテンツの制作を迅速化する方法をお探しの場合は、AEMのエディターに統合されたバリエーションを生成を使用できます。
+「バリエーションを生成」では、生成 AI（人工知能）を使用して、入力に基づいてコンテンツのバリエーションを作成します。バリエーションを作成したら、そのコンテンツを web サイトで使用することや、[Edge Delivery Services](/help/edge/overview.md) の[実験](https://www.aem.live/docs/experimentation)機能を使用してその成功を測定することもできます。
 
-バリエーションを生成では、ジェネレーティブ人工知能（AI）を使用して、入力に基づくコンテンツのバリエーションを作成します。 バリエーションを作成したら、そのコンテンツを web サイトで使用することや、[Edge Delivery Services](/help/edge/overview.md) の[実験](https://www.aem.live/docs/experimentation)機能を使用してその成功を測定することもできます。
+これにより、ブランドコンテンツを数分ですばやく作成して、コンテンツの速度を向上できます。また、新しいコピーバリアントを使用したコンバージョンの向上にも役立ちます。
 
-これにより、ブランドコンテンツを数分で迅速に作成できるので、コンテンツベロシティを向上できます。 これにより、新しいコピーバリアントを使用したコンバージョンを改善できます。
+次のエディターから[「バリエーションを生成」にアクセス](#access-generate-variations)できます（[設定後](#access-generate-variations)）。
 
-以下のエディターから [ バリエーションを生成 ](#access-generate-variations) アクセスできます（[ 設定されたら ](#access-generate-variations)）。
-
-* [AEM Edge Delivery ServicesのSidekick内（ドキュメントベースのオーサリング用）](#access-aem-sidekick)
+* [AEM Edge Delivery Services の Sidekick 内（ドキュメントベースのオーサリング用）](#access-aem-sidekick)
 * [ユニバーサルエディター内](#access-aem-universal-editor)
 * [コンテンツフラグメントエディター内](#access-aem-content-fragment-editor)
 
 >[!IMPORTANT]
 >
->このページでは、例のベースとしてドキュメントベースのオーサリングを使用しますが、原則は他のエディターにも適用されます。
+>このページでは、例のベースとしてドキュメントベースのオーサリングを使用していますが、原則は他のエディターにも適用されます。
 
 >[!NOTE]
 >
@@ -35,17 +35,17 @@ ht-degree: 34%
 
 >[!NOTE]
 >
->スタンドアロンバージョンの [ バリエーションを生成 ](/help/generative-ai/generate-variations.md) には、引き続き直接アクセスできます。
+>このバージョンの使用をお勧めします。スタンドアロンバージョンの [ バリエーションを生成 ](/help/generative-ai/generate-variations.md) には引き続き直接アクセスできますが、今後非推奨となる予定です。
 
 これにより、以下のことが可能になります。
 
-* [ 操作するコンテンツを選択 ](#select-the-content) - コンテンツの既存のブロックから
+* [操作するコンテンツを選択](#select-the-content) - コンテンツの既存のブロックから
    * 選択したブロックによって、表示される内容と使用可能なアクションが変わります
-* [必要な変更の説明](#describe-the-changes-you-want)
-* [ コンテンツのバリエーションを生成 ](#generate-copy) してから [ 必要に応じてさらにアクションを実行 ](#take-further-action-on-a-variation)
-* [バリエーションの選択と使用](#use-a-generated-variation)
-* [ 履歴 ](#history) を確認
-* [ お気に入り ](#favorites) を表示する
+* [必要な変更を説明](#describe-the-changes-you-want)
+* [コンテンツの「バリエーションを生成」](#generate-copy)を実行し、[必要に応じて、さらにアクションを実行](#take-further-action-on-a-variation)
+* [バリエーションを選択および使用](#use-a-generated-variation)
+* [履歴](#history)を確認
+* [お気に入り](#favorites)を表示
 
 ## 法的事項および使用上の注意 {#legal-usage-note}
 
@@ -63,53 +63,53 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
 
 ## 概要 {#overview}
 
-エディターに統合されたバリエーションを生成を開くと、3 つのタブを持つフローティングパネルとして拡張機能が表示されます。
+エディターに統合された「バリエーションを生成」を開くと、3 つのタブを持つフローティングパネルとして拡張機能が表示されます。
 
-![ バリエーションの生成 – ドキュメントベースのオーサリングの概要 ](assets/generate-variations-doc-based-overview.png)
+![バリエーションを生成 - ドキュメントベースのオーサリングの概要](assets/generate-variations-doc-based-overview.png)
 
 * エディター：
    * エディターにコンテンツのフローが表示されます。
-   * ここでは、**バリエーションの生成** で使用するコンテンツのブロックを選択できます。
-* **バリエーションを生成**:
-   * 3 つのタブを持つフローティングパネルで、必要に応じて再配置できます
-   * [ 生成 ](#get-started-with-generate-variations):
-      * [ 選択したコンテンツ ](#select-the-content) が表示されます。
-      * 変更のサンプル **候補** を示します。
-      * [ 必要な変更を説明 ](#describe-the-changes-you-want) できます。
-      * 新しいバリエーションを [ 生成 ](#generate-copy) できます。
-      * 生成されたバリエーションを表示します。<!--, together with their [brand score](#the-brand-score).-->
-      * [ バリエーションに対してさらにアクションを実行します ](#take-further-action-on-a-variation)。
-      * [ 生成されたバリエーションを使用 ](#use-a-generated-variation)。
-   * [ 履歴 ](#history):
+   * ここでは、「**バリエーションを生成**」で使用するコンテンツのブロックを選択できます。
+* **バリエーションを生成**：
+   * 必要に応じて再配置できる、3 つのタブを持つフローティングパネルです
+   * [生成](#get-started-with-generate-variations)：
+      * [選択したコンテンツ](#select-the-content)を表示します。
+      * 変更のサンプル&#x200B;**候補**&#x200B;を示します。
+      * [必要な変更を説明](#describe-the-changes-you-want)できます。
+      * 新しいバリエーションを[生成](#generate-copy)できます。
+      * 生成したバリエーションを表示します。<!--, together with their [brand score](#the-brand-score).-->
+      * [バリエーションに対してさらにアクションを実行します](#take-further-action-on-a-variation)。
+      * [生成したバリエーションを使用します](#use-a-generated-variation)。
+   * [履歴](#history)：
       * 世代の最近の履歴を表示します。
-   * [ お気に入り ](#favorites):
-      * お気に入りとしてフラグを設定した、以前の世代の結果を表示します。
-   * **Adobe生成 AI 用語**: [Adobe Experience Cloud生成 AI ユーザーガイドライン ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) へのリンク。
+   * [お気に入り](#favorites)：
+      * お気に入りとしてフラグを付けた以前の世代の結果を表示します。
+   * **Adobe 生成 AI 用語**：[Adobe Experience Cloud 生成 AI ユーザーガイドライン](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)へのリンク。
 
-## バリエーション生成の基本を学ぶ {#get-started-with-generate-variations}
+## 「バリエーションを生成」の基本を学ぶ {#get-started-with-generate-variations}
 
-インターフェイスのガイドに従って、コンテンツの生成プロセスを進めます。インターフェイスを開いたら、使用するコンテンツブロックを選択します。
+インターフェイスのガイドに従って、コンテンツの生成プロセスを進めます。インターフェイスを開いた後、最初の手順は、使用するコンテンツのブロックを選択することです。
 
 ### コンテンツを選択 {#select-the-content}
 
-エディターのメインコンテンツフローから、バリエーションを生成するコンテンツを選択します。 この **選択** は、「**生成** タブに表示されます。
+エディターのメインコンテンツフローから、バリエーションを生成するコンテンツを選択します。この&#x200B;**選択**&#x200B;は「**生成**」タブに表示されます。
 
-### 必要な変更の説明 {#describe-the-changes-you-want}
+### 必要な変更を説明 {#describe-the-changes-you-want}
 
-コンテンツのバリエーションを生成するには、必要な変更を記述する必要があります。 提示された **候補** の 1 つを選択するか、独自の説明を入力できます。
+コンテンツのバリエーションを生成するには、必要な変更を説明する必要があります。提示された&#x200B;**候補**&#x200B;の 1 つを選択するか、独自の説明を入力できます。
 
-また、**修飾子** を指定して、より詳細なコンテキストを提供することもできます。
+また、**修飾子**&#x200B;を指定して、より詳細なコンテキストを入力することもできます。
 
-* **Web ページの参照**
-詳細コンテキストの URL を指定します。
-* **コンテンツ概要のアップロード**
-コンテンツブリーフの詳細（10 MB 以下）を含む `.docx` ファイルを更新します。
+* **Web ページを参照**
+詳細コンテキストの URL を入力します。
+* **コンテンツ概要をアップロード**
+コンテンツ概要の詳細（10 MB 以下）を含む `.docx` ファイルを更新します。
 
-### コピーの生成 {#generate-copy}
+### コピーを生成 {#generate-copy}
 
 必要な変更を説明したら、「**生成**」を選択して、生成 AI からの応答を確認します。
 
-![ バリエーションの生成 – ドキュメントベースのコピーを生成 ](assets/generate-variations-doc-based-generate-copy.png)
+![バリエーションを生成 - ドキュメントベースのコピーを生成](assets/generate-variations-doc-based-generate-copy.png)
 
 <!--
 ### The Brand Score {#the-brand-score}
@@ -117,46 +117,46 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
 The brand score shows you how on-brand the generated variation is.
 -->
 
-### バリエーションにさらにアクションを実行 {#take-further-action-on-a-variation}
+### バリエーションに対してさらにアクションを実行 {#take-further-action-on-a-variation}
 
-1 つのバリエーションを選択した場合、次の操作を使用できます。
+単一のバリエーションを選択した場合は、次のアクションを使用できます。
 
 * **編集**
    * 生成されたバリエーションのテキストを編集できます。
 
-      * 更新内容は web ページでプレビューできます。
+      * 更新は web ページでプレビューできます。
 
-   * 後で使用するために変更を保存します。
+   * 後で使用する変更を保存します。
 * **お気に入り**
-   * 今後の参照用にこのバリエーションにフラグを付けます。
-   * フラグが設定されると、「[ お気に入り ](#favorites) タブの下に表示されます。
-* **AI の根拠**
-   * 透明性を高めるために、生成 AI が特定のバリエーションを生成した理由を簡単に説明します。
+   * 今後の参照用に、このバリエーションにフラグを設定します。
+   * フラグを設定すると、「[お気に入り](#favorites)」タブの下に表示されます。
+* **AI の論理的根拠**
+   * 透明性を高める目的で、生成 AI が特定のバリエーションを生成した理由について簡単に説明します。
 
 ### 生成されたバリエーションを使用 {#use-a-generated-variation}
 
-生成 AI で生成されたコンテンツを使用するには、まず **CSV に書き出し** を選択する必要があります。
+生成 AI で生成されたコンテンツを使用するには、まず「**CSV に書き出し**」を選択する必要があります。
 
-書き出した後は、コンテンツを他の場所で使用できます。例えば、web サイトのコンテンツをオーサリングする場合などです。 また、[実験](https://www.aem.live/docs/experimentation)を実行することもできます。
+書き出した後は、web サイトのコンテンツをオーサリングする場合など、他の場所でコンテンツを使用できます。また、[実験](https://www.aem.live/docs/experimentation)を実行することもできます。
 
 >[!NOTE]
 >
->[AEM ユニバーサルエディター ](#access-aem-universal-editor) または [AEM コンテンツフラグメントエディター ](#access-aem-content-fragment-editor) のいずれかから「バリエーションを生成」にアクセスすると、選択した生成されたコンテンツがAEMに自動的に保存されます。
+>[AEM ユニバーサルエディター](#access-aem-universal-editor)または [AEM コンテンツフラグメントエディター](#access-aem-content-fragment-editor)から「バリエーションを生成」にアクセスすると、選択した生成済みコンテンツが自動的に AEM に保存されます。
 
 ## 履歴 {#history}
 
-このタブには、「**生成**」を選択した後の過去のアクティビティが表示されます。 **履歴** エントリが追加されます。
+このタブには、「**生成**」を選択した後の過去のアクティビティが表示されます。**履歴**&#x200B;エントリが追加されます。
 
-後でメインフローで同じコンテンツを選択して「**履歴**」タブを開くと、そのブロックに生成されたすべてのバリエーションが表示されます。
+後でメインフローで同じコンテンツを選択し、「**履歴**」タブを開くと、そのブロックに対して生成されたすべてのバリエーションが表示されます。
 
 ## お気に入り {#favorites}
 
 コンテンツを確認した後、選択したバリエーションをお気に入りとして保存できます。
 
-保存すると、「お気に入り **の下に表示さ** ます。 お気に入りは、（お気に入りから外す **か** ブラウザーのキャッシュをクリアするまで）保持されます。
+保存すると、**お気に入り**&#x200B;の下に表示されます。お気に入りは（**お気に入りを解除**&#x200B;するか、ブラウザーのキャッシュをクリアするまで）保持されます。
 
-* エントリの **編集**、**お気に入りから外す** または **AI 根拠** を表示できます。
-* バリエーションを選択すると、**CSV に書き出し** を実行することもできます。
+* エントリの&#x200B;**編集**、**お気に入りを解除**&#x200B;または **AI の論理的根拠**&#x200B;の表示を行うことができます。
+* バリエーションを選択すると、**CSV に書き出し**&#x200B;を実行することもできます。
 
 ## 生成アクションの使用 {#generative-action-usage}
 
@@ -192,9 +192,9 @@ The brand score shows you how on-brand the generated variation is.
 
 特定のユーザーにアクセス権を付与するには、そのユーザーアカウントをそれぞれの製品プロファイルに割り当てます。詳しくは、[AEM 製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-cloud-manager.md)を参照してください。
 
-### AEM Sidekickからアクセスして、ドキュメントベースのオーサリングを行う {#access-aem-sidekick}
+### ドキュメントベースのオーサリングの AEM Sidekick からのアクセス {#access-aem-sidekick}
 
-AEM Sidekickからのアクセスは、[ ドキュメントベースのオーサリング ](/help/edge/wysiwyg-authoring/authoring.md) に使用されます。
+AEM Sidekick からのアクセスは、[ドキュメントベースのオーサリング](/help/edge/wysiwyg-authoring/authoring.md)に使用されます。
 
 （Edge Delivery Services の）Sidekick から「バリエーションを生成」にアクセスするには、いくつかの設定が必要です。
 
@@ -202,7 +202,7 @@ AEM Sidekickからのアクセスは、[ ドキュメントベースのオーサ
 >
 >Sidekick のインストールおよび設定方法について詳しくは、[AEM Sidekick のインストール](https://www.aem.live/docs/sidekick-extension)ドキュメントを参照してください。
 
-（Edge Delivery Servicesの）Sidekickでバリエーションを生成を使用するには、Edge Delivery Services プロジェクトに次の設定を含めます。
+（Edge Delivery Services の）Sidekick で「バリエーションを生成」を使用するには、次の設定を Edge Delivery Services プロジェクトに含めます。
 
 1. アプリを次の場所で有効にします。
 
@@ -232,11 +232,11 @@ AEM Sidekickからのアクセスは、[ ドキュメントベースのオーサ
    }
    ```
 
-1. 作成：
+1. 次のファイルを作成します。
 
    * `/tools/sidekick/aem-genai-variations.js`
 
-   このファイルは、次の内容で作成する必要があります。
+   このファイルは、次の内容を含めて作成する必要があります。
 
    ```prompt
    (function () {
@@ -287,33 +287,33 @@ AEM Sidekickからのアクセスは、[ ドキュメントベースのオーサ
    }());
    ```
 
-1. 更新：
+1. 次のファイルを更新します。
 
    * `/scripts/scripts.js`
 
-   これを更新して、`loadLazy()`function に次のステートメントを含める必要があります。
+   このファイルを更新して、`loadLazy()` 関数に次のステートメントを含める必要があります。
 
    ```prompt
      import('../tools/sidekick/aem-genai-variations.js');
    ```
 
-   これにより、遅延読み込みプロセスの一環として `/tools/sidekick/aem-genai-variations.js` が読み込まれます。
+   これにより、`/tools/sidekick/aem-genai-variations.js` が遅延読み込みプロセスの一部として読み込まれるようになります。
 
-   ![ バリエーションの生成 – 遅延ローダー ](assets/generate-variations-sidekick-lazyloader.png)
+   ![バリエーションを生成 - 遅延ローダー](assets/generate-variations-sidekick-lazyloader.png)
 
 1. 次に、ユーザーが [Edge Delivery Services を使用して Experience Manager as a Cloud Service にアクセス](#access-to-aemaacs-with-edge-delivery-services)できることを確認する必要があります。
 
-1. その後、Sidekickのツールバーから **AI を使用して生成** を選択して、この機能にアクセスできます。
+1. 次に、Sidekick のツールバーから「**AI を使用して生成**」を選択して、この機能にアクセスできます。
 
    ![バリエーションを生成 - AEM Sidekick からのアクセス](assets/generate-variations-doc-based-sidekick.png)
 
-### AEM Universal Editor からのアクセス {#access-aem-universal-editor}
+### AEM ユニバーサルエディターからのアクセス {#access-aem-universal-editor}
 
-[AEM ユニバーサルエディター ](/help/sites-cloud/authoring/universal-editor/authoring.md) からのアクセスは、拡張機能として実装されます。 詳しくは、[AEM Experience ManagerのExtension Manager](https://developer.adobe.com/uix/docs/extension-manager/) を参照してください。
+[AEM ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md)からのアクセスは、拡張機能として実装されます。詳しくは、[AEM Experience Manager の Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) を参照してください。
 
 ### AEM コンテンツフラグメントエディターからのアクセス {#access-aem-content-fragment-editor}
 
-[AEM コンテンツフラグメントエディター ](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai) からのアクセスは、拡張機能として実装されます。 詳しくは、[AEM Experience ManagerのExtension Manager](https://developer.adobe.com/uix/docs/extension-manager/) を参照してください。
+[AEM コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai)からのアクセスは、拡張機能として実装されます。詳しくは、[AEM Experience Manager の Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) を参照してください。
 
 ## その他の情報 {#further-information}
 

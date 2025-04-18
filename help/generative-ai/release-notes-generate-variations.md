@@ -4,10 +4,10 @@ description: AEM as a Cloud Service および Edge Delivery Services の Sidekic
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 83%
+source-wordcount: '284'
+ht-degree: 89%
 
 ---
 
@@ -25,15 +25,15 @@ ht-degree: 83%
 
 ### 3.0.0 {#release-notes-3-0-0}
 
-以下のエディターから [ バリエーションを生成 ](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations) アクセスできます（[ 設定されたら ](#access-generate-variations)）。
+次のエディターから[「バリエーションを生成」にアクセス](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations)できます（[設定後](#access-generate-variations)）。
 
-* [AEM Edge Delivery ServicesのSidekick内（ドキュメントベースのオーサリング用）](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
+* [AEM Edge Delivery Services の Sidekick 内（ドキュメントベースのオーサリング用）](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
 * [ユニバーサルエディター内](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-universal-editor)
 * [コンテンツフラグメントエディター内](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-content-fragment-editor)
 
 >[!NOTE]
 >
->以前のバージョンの [ バリエーションを生成 ](/help/generative-ai/generate-variations.md) には、引き続き直接アクセスできます。
+>バージョン 3.0.0 を使用することをお勧めします。以前のバージョンの [ バリエーションを生成 ](/help/generative-ai/generate-variations.md) には引き続き直接アクセスできますが、今後非推奨となる予定です。
 
 ### 2.2.0 {#release-notes-2-2-0}
 
