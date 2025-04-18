@@ -1,5 +1,5 @@
 ---
-title: AEM Launchpad について&ndash；早期導入者
+title: AEM Launchpad について
 description: Adobe Experience Manager起動パッドページについて説明します。
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -7,18 +7,19 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 9368fb64b1dd9ce83094117e184b532119ce22e4
+source-git-commit: c389e136b315c8361d5b8c78bddba09968f68541
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 7%
+source-wordcount: '341'
+ht-degree: 9%
 
 ---
 
-# AEM Launchpad について – 早期導入 {#aem-launchpad}
+# AEM Launchpad について {#aem-launchpad}
 
 AEM Launchpad は、Adobe Experience Manager内のコンテンツ、アセット、サイトを一元的に管理するための出発点となります。 パーソナライズされたエクスペリエンスを提供するように設計されたAEM Launchpad を使用すると、役割と目標に従ってAEM エコシステムをシームレスに移動できます。 ガイドとして機能し、目的を効率的に達成するのに役立つ重要なインサイトと推奨されるアクションを提供します。ペルソナ主導型の明確なレイアウトにより、AEM Launchpad は重要なツールにすばやくアクセスでき、すべてのAEM機能で合理化された効果的なエクスペリエンスをサポートします。
 
-AEM Launchpad は、早期導入ユーザーが利用できる、ワークフローの改善、目標の優先順位付け、結果の提供に焦点を当てた最適化されたエクスペリエンスを提供します。 オプトインを選択すると、AEMの未来を形成し、AEM コミュニティ全体での価値を高めるのに役立つフィードバックを提供することで、Launchpad の開発に影響を与えることができます。
+<!--
+Available to early adopters, AEM Launchpad offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Launchpad's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
 
 ## AEM起動パッドを閉じる {#aem-launchpad-about}
 

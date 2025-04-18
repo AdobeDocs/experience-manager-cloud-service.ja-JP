@@ -1,13 +1,13 @@
 ---
 title: 迅速な開発環境
-description: クラウド環境で迅速な開発反復処理を行うために、迅速な開発環境を活用する方法について説明します。
+description: クラウド環境で迅速な開発反復を行うために、迅速な開発環境を使用する方法を説明します。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '4990'
-ht-degree: 100%
+source-git-commit: bd0c83098f19f8cf7cad41233f043c608be39a0c
+workflow-type: tm+mt
+source-wordcount: '5390'
+ht-degree: 52%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 100%
 
 変更をデプロイするために、現在のクラウド開発環境では、CI／CD パイプラインと呼ばれる広範なコードセキュリティと品質ルールを採用したプロセスを使用する必要があります。迅速かつ反復的な変更が必要な状況に対応するために、アドビは迅速な開発環境（RDE）を導入しました。
 
-RDE を使用すると、デベロッパーは、ローカル開発環境での動作が証明済みの機能に要するテスト時間を最小限に抑え、変更を迅速にデプロイおよび確認できます。
+RDE を使用すると、デベロッパーは、変更を迅速にデプロイしてレビューできるので、ローカル開発環境で動作することが証明されている機能をテストするために必要な時間を、最小限に抑えることができます。
 
 変更を RDE でテストしたら、Cloud Manager パイプラインを通じて通常のクラウド開発環境にデプロイできます。
 
 >[!NOTE]
-> [ディスコードチャネル](https://discord.com/channels/1131492224371277874/1245304281184079872)で RDE 開発者に連絡できます。RDE のトピックに関して、自由に質問したり、フィードバックを提供したりしてください。
+> Adobe[Discord チャンネル ](https://discord.com/channels/1131492224371277874/1245304281184079872) で RDE 開発者に連絡してください。 RDE のトピックに関して、自由に質問したり、フィードバックを提供したりしてください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-[設定方法](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html?lang=ja)、[使用方法](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=ja)、RDE を使用した[開発ライフサイクル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html?lang=ja)を示す追加のビデオを参照できます。
+[設定方法](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)、[使用方法](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)、RDE を使用した[開発ライフサイクル](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle)を示す追加のビデオを参照できます。
 
 ## はじめに {#introduction}
 
@@ -35,13 +35,11 @@ RDE は、コード、コンテンツ、Apache または Dispatcher の設定に
 
 作成時に、RDE は使用可能な最新の Adobe Experience Manager（AEM）バージョンに設定されます。Cloud Manager を使用して実行できる RDE のリセットは、RDE を循環させ、使用可能な最新の AEM バージョンに設定します。
 
-通常、特定の機能のテストとデバッグには、1 人のデベロッパーが任意の時点で RDE を使用します。開発セッションが完了すると、RDE は次の使用時にデフォルトの状態にリセットできます。
+通常、RDE は、特定の機能のテストとデバッグに、1 人のデベロッパーが任意の時点で使用します。 開発セッションが完了すると、RDE は次の使用時にデフォルトの状態にリセットできます。
 
 追加の RDE は、実稼動（非サンドボックス）プログラム用としてライセンス登録される場合があります。
 
 ## プログラムでの RDE の有効化 {#enabling-rde-in-a-program}
-
-Cloud Manager を使用してプログラムの RDE を作成するには、次の手順に従います。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
@@ -49,7 +47,7 @@ Cloud Manager を使用してプログラムの RDE を作成するには、次�
 
    * RDE は、[サンドボックスプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)および[実稼動プログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)の両方に追加できます。
 
-1. **プログラムの概要**&#x200B;ページで、**環境**&#x200B;カードの「**環境を追加**」をクリックして環境を追加します。
+1. **プログラムの概要** ページの **環境** カードで、「**環境を追加**」をクリックします。
 
    ![環境カード](/help/implementing/cloud-manager/assets/no-environments.png)
 
@@ -59,7 +57,7 @@ Cloud Manager を使用してプログラムの RDE を作成するには、次�
 
    * 「**環境を追加**」オプションは、権限がない場合やライセンスされているリソースによっては、無効になっている場合があります。
 
-1. 表示される&#x200B;**環境を追加**&#x200B;ダイアログで以下を行います。
+1. **環境を追加**&#x200B;ダイアログボックスで、次の操作を行います。
 
    * **環境タイプを選択**&#x200B;見出しの下にある「**迅速な開発**」を選択します。
       * 使用可能な環境または使用中の環境の数は、環境タイプの後ろの括弧内に表示されます。
@@ -75,7 +73,7 @@ Cloud Manager を使用してプログラムの RDE を作成するには、次�
 
 作成時に、RDE は使用可能な最新の AEM バージョンに設定されます。RDE リセット（Cloud Manager を使用して実行することも可能）は、RDE を循環させ、最新の AEM バージョンに設定します。
 
-Cloud Manager を使用した環境の作成、環境へのアクセス権のあるユーザーの管理、カスタムドメインの割り当てについて詳しくは、[Cloud Manager ドキュメント](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)を参照してください。
+Cloud Managerを使用した環境の作成、環境へのアクセス権のあるユーザーの管理、カスタムドメインの割り当てについて詳しくは、Cloud Manager ドキュメントの [ プログラムとプログラムタイプ ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) を参照してください。
 
 ## RDE コマンドラインツールのインストール {#installing-the-rde-command-line-tools}
 
@@ -102,10 +100,10 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
 
    ログイン情報（トークン）はグローバル aio 設定に保存されるので、1 つのログインと組織のみがサポートされます。異なるログインや組織を必要とする複数の RDE を使用する場合は、次の例に従ってコンテキストを導入します。
 
-   <details><summary>この例に従って、RDE ログインの 1 つにローカルコンテキストを設定します</summary>
-   特定のコンテキスト内の現在のディレクトリにある .aio ファイルにログイン情報をローカルに保存するには、次の手順に従います。また、コンテキストは、CI/CD 環境またはスクリプトを設定する賢明な方法です。この機能を利用するには、aio-cli バージョン 10.3.1 以上を使用する必要があります。「npm install -g @adobe/aio-cli」を使用して更新します。
+   <details><summary>次の例に従って、RDE ログインの 1 つにローカルコンテキストを設定します</summary>
+   特定のコンテキスト内でログイン情報を現在のディレクトリの「.aio」ファイルにローカルに保存するには、次の手順に従います。 コンテキストは、CI/CD 環境またはスクリプトをセットアップする優れた方法でもあります。  この機能を利用するには、少なくとも aio-cli バージョン 10.3.1 を使用してください。「npm install -g @adobe/aio-cli」を使用して更新します。
 
-   「mycontext」というコンテキストを作成し、ログインコマンドを呼び出す前に、認証プラグインを使用してデフォルトのコンテキストとして設定します。
+   ここで、login コマンドを呼び出す前に、認証プラグインを使用してデフォルトコンテキストとして設定した m`ycontext` というコンテキストを作成します。
 
    ```
    aio config set --json -l "ims.contexts.mycontext" "{ cli.bare-output: false }"
@@ -114,26 +112,26 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
    ```
 
    >[!NOTE]
-   > `--no-open` オプションを指定したログインコマンドでは、デフォルトのブラウザーを開く代わりに、ターミナルに URL を出力します。このように、ブラウザーの&#x200B;**匿名**&#x200B;ウィンドウでコピーして開くことができます。この方法では、通常のブラウザーウィンドウで現在ログインしているセッションはそのまま残り、コンテキストに必要な特定のログインと組織を使用できます。
+   > login コマンドに `--no-open` オプションを指定すると、デフォルトのブラウザーを開く代わりに、ターミナル内に URL が出力されます。 ブラウザーの **匿名** ウィンドウでコピーして開くことができます。 この機能により、メインブラウザーウィンドウの現在のセッションが影響を受けなくなり、タスクに必要な特定のアカウントと組織でログインできるようになります。
 
-   最初のコマンドでは、ローカルの .`.aio` 設定ファイルに、`mycontext` という新しいログインコンテキスト設定を作成します（ファイルは必要に応じて作成されます）。2 番目のコマンドでは、コンテキスト `mycontext` を「現在」のコンテキスト（デフォルト）に設定します。
+   最初のコマンドでは、ローカルの .`.aio` 設定ファイルに、`mycontext` という新しいログインコンテキスト設定を作成します（ファイルは必要に応じて作成されます）。2 番目のコマンドは、コンテキスト `mycontext` を「現在」のコンテキスト（デフォルト）に設定します。
 
    この設定を行うと、ログインコマンドではログイントークンをコンテキスト `mycontext` に自動的に保存し、ローカルに保持します。
 
    ローカル設定を複数のフォルダーに保存することで、複数のコンテキストを管理できます。または、1 つの設定ファイル内に複数のコンテキストを設定し、「現在」のコンテキストを変更することで切り替えることもできます。
    </details>
 
-1. ご自分の組織、プログラムおよび環境を使用するように RDE プラグインを設定します。以下の setup コマンドでは、組織内のプログラムのリストをインタラクティブにユーザーに提示し、そのプログラム内の選択可能な RDE 環境を表示します。
+1. 組織、プログラム、環境を使用するように RDE プラグインを設定します。 以下の setup コマンドは、組織内のプログラムのリストをユーザーにインタラクティブに提供し、そのプログラム内の RDE 環境を表示して選択できるようにします。
 
    ```
    aio aem:rde:setup
    ```
 
-   スクリプト環境を使用する場合は、このセットアップ手順をスキップしても構いません。その場合は、組織、プログラムおよび環境の値を各コマンドに含めることができます。[詳しくは、以下の RDE コマンドを参照してください。](#rde-cli-commands)
+   スクリプト環境を使用している場合は、設定手順をスキップできます。 その場合は、組織、プログラム、環境の値を各コマンドに直接含めます。 [ 詳しくは、以下の RDE コマンドを参照してください ](#rde-cli-commands)。
 
-### インタラクティブセットアップ {#installing-the-rde-command-line-tools-interactive}
+### インタラクティブ設定 {#installing-the-rde-command-line-tools-interactive}
 
-setup コマンドは、指定された設定をローカルに保存するかグローバルに保存するかを尋ねます。
+setup コマンドは、指定された設定をローカルに保存するか、グローバルに保存するかを尋ねます。
 
 ```
 Setup the CLI configuration necessary to use the RDE commands.
@@ -141,37 +139,37 @@ Setup the CLI configuration necessary to use the RDE commands.
 ```
 
 `no` を選択すると、
+
 * お使いの aio 設定に組織、プログラムおよび環境がグローバルに保存されます。
 * 単一の RDE のみを操作できます。
 
-`yes` を選択すると、
-* 現在のディレクトリ内の `.aio` ファイルに組織、プログラムおよび環境がローカルに保存されます。これは、ファイルをバージョン管理にコミットして、Git リポジトリをクローンする他のユーザーが使用できるようにする場合に便利です。
-* 多数の RDE を操作できるので、別のディレクトリに切り替えると、その設定が代わりに使用されます。
-* スクリプトのようなプログラムのコンテキストで設定を使用し、参照できます。
+次の操作を実行するには、`yes` を選択します。
+
+* 現在のディレクトリのローカルにある `.aio` ファイルに、組織、プログラム、および環境を格納します。 この方法は、ファイルをバージョン管理にコミットし、Git リポジトリをクローンする他のユーザーが使用できるようにする場合に便利です。
+* 多数の RDE を操作できるので、別のディレクトリに切り替えると、代わりにその設定が使用されます。
+* 設定は、スクリプトのようなプログラム的なコンテキストで使用し、スクリプトを参照できます。
 
 
-ローカル設定またはグローバル設定を選択すると、setup コマンドは現在のログインから組織 ID を読み取り、次に組織のプログラムを読み取ります。組織が見つからない場合は、ガイダンスに従って手動で入力できます。
+ローカル設定またはグローバル設定を選択すると、setup コマンドは現在のログインから組織 ID を読み取り、組織のプログラムを読み取ろうとします。 組織が見つからない場合は、ガイダンスに従って手動で入力できます。
 
 ```
 Selected only organization: XYXYXYXYXYXYXYXXYY
 retrieving programs of your organization ...
 ```
 
-プログラムを取得後、ユーザーはリストから選択したり、入力してフィルタリングしたりできます。
-プログラムを選択すると、選択可能な RDE 環境のリストが表示されます。
-使用可能なプログラムや RDE 環境が 1 つしかない場合は、そのプログラムが自動的に選択されます。
+プログラムを取得したら、ユーザーはリストから選択でき、フィルターを適用するように入力することもできます。 プログラムを選択すると、選択可能な RDE 環境のリストが表示されます。 プログラムが 1 つのみ、または RDE 環境が 1 つだけ、あるいはその両方の場合は、自動的に選択されます。
 
-現在の環境コンテキストを確認するには、次のコマンドを実行します。
+現在の環境コンテキストを確認するには、次を実行します。
 
 ```aio aem rde setup --show```
 
-コマンドは、次のような結果を返します。
+コマンドを実行すると、次のような結果が返されます。
 
 ```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)```
 
 ### 非インタラクティブ環境での手動設定手順 {#manual-setup}
 
-上記のように、ユーザーがインタラクティブに setup コマンドを実行できない環境（CI/CD やスクリプトなど）では、組織、プログラム、環境の 3 つのパラメーターを次の手順に従って手動で設定できます。
+ユーザーが設定コマンド（CI/CD やスクリプトなど）をインタラクティブに実行できない環境では、手動設定が必要になります。 組織、プログラム、環境のパラメーターは、次の手順で設定できます。
 
 
 <details>
@@ -181,7 +179,7 @@ retrieving programs of your organization ...
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * 独自の組織 ID は、[組織 ID の表示](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=ja#concept_EA8AEE5B02CF46ACBDAD6A8508646255)に記載されている方法を使用して検索できます。
+   * 独自の組織 ID は、[組織 ID の表示](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)に記載されている方法を使用して検索できます。
 
 1. 次に、以下のプログラム ID を設定します。
 
@@ -197,23 +195,31 @@ retrieving programs of your organization ...
 
    この手順では、Cloud Manager **デベロッパー - Cloud Service** 製品プロファイルのメンバーである必要があります。詳しくは、[Cloud Manager 製品プロファイルへのチームメンバーの割り当て - 開発者製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)を参照してください。
 
-詳細とデモンストレーションについては、[RDE の設定方法（06:24）](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html?lang=ja)のビデオチュートリアルを参照してください。
+詳細とデモンストレーションについては、[RDE の設定方法（06:24）](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)のビデオチュートリアルを参照してください。
 </details>
 
-## 新機能の開発時の RDE の使用 {#using-rde-while-developing-a-new-feature}
+## 新機能の開発時に RDE を使用 {#using-rde-while-developing-a-new-feature}
 
 アドビでは、新しい機能を開発する際に、次のワークフローを使用することをお勧めします。
 
-* 中間マイルストーンに達し、AEM as a Cloud Service SDK を使用してローカルで正常に検証されたら、コードを Git 機能ブランチにコミットします。ブランチは、Git へのコミットはオプションですが、まだメインラインに含めてはいけません。「中間マイルストーン」を構成するものは、チームの習慣に応じて異なります。例えば、数行の新しいコードや、半日の作業、サブ機能の完了といったものがあります。
+* 中間マイルストーンに達し、AEM as a Cloud Service SDKを使用してローカルで正常に検証されたら、コードを Git feature ブランチにコミットします。 ブランチは、Git へのコミットはオプションですが、まだメインラインに含めてはいけません。「中間マイルストーン」を構成するものは、チームの習慣に応じて異なります。例えば、数行の新しいコードや、半日の作業、サブ機能の完了といったものがあります。
 
 * RDE が別の機能で使用されていて、[デフォルトの状態にリセット](#reset-rde)したい場合は、RDE をリセットします。<!-- Alexandru: hiding for now, do not delete This can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). -->リセットには数分かかり、既存のコンテンツおよびコードはすべて削除されます。RDE ステータスコマンドを使用すると、RDE の準備が完了したことを確認できます。RDE は、最新の AEM リリースバージョンで復活します。
 
   >[!IMPORTANT]
   >
-  > ステージング環境と実稼動環境が AEM リリースの自動更新を受信しておらず、最新の AEM リリースバージョンから遅れている場合は、RDE で実行されているコードが、ステージング環境と実稼動環境でのコードの機能と一致しない可能性があります。その場合、実稼動環境にデプロイする前に、ステージングでコードのテストを徹底的に実行することが特に重要です。
+  >ステージング環境と実稼動環境がAEM リリースの自動更新を受け取っておらず、最新バージョンよりも遅れている場合、RDE は別のバージョンのAEMを実行する可能性があります。 その結果、RDE のコード動作が、ステージング環境と実稼動環境での機能と一致しない場合があります。 その場合、実稼動環境にデプロイする前に、ステージングでコードのテストを徹底的に実行することが重要です。
 
 
-* RDE コマンドラインインターフェイスを使用して、ローカルコードを RDE に同期します。 オプションには、コンテンツパッケージ、特定のバンドル、OSGi 設定ファイル、コンテンツファイル、Apache／Dispatcher 設定の zip ファイルのインストールが含まれます。 リモートコンテンツパッケージの参照も可能です。 詳しくは、[RDE コマンドラインツール](/help/implementing/developing/introduction/rapid-development-environments.md#rde-cli-commands)を参照してください。ステータスコマンドを使用すると、デプロイメントが成功したことを検証できます。必要に応じて、パッケージマネージャーを使用してコンテンツパッケージをインストールします。
+* RDE コマンドラインインターフェイスを使用して、ローカルコードを RDE に同期します。 次のような様々なタイプのファイルをインストールできます。
+
+   * コンテンツパッケージ
+   * 特定のバンドル
+   * OSGi 設定ファイル
+   * コンテンツファイル
+   * Apache/Dispatcher設定を含む ZIP ファイル
+
+  リモートコンテンツパッケージの参照も可能です。 詳しくは、[RDE コマンドラインツール](/help/implementing/developing/introduction/rapid-development-environments.md#rde-cli-commands)を参照してください。ステータスコマンドを使用すると、デプロイメントが成功したことを検証できます。必要に応じて、パッケージマネージャーを使用してコンテンツパッケージをインストールします。
 
 * RDE でコードをテストします。 Cloud Manager では、オーサー URL とパブリッシュ URL を使用できます。
 
@@ -221,7 +227,7 @@ retrieving programs of your organization ...
 
 * コードが期待どおりに動作したら、コードを Git feature ブランチにコミットします。
 
-* RDE に同期したコードは Cloud Manager パイプラインを使用しないので、Cloud Manager 非実稼動パイプラインを使用して、Git feature ブランチをクラウド開発環境にデプロイする必要があります。 これにより、コードが Cloud Manager 品質ゲートを通過するかどうかが検証され、後で Cloud Manager 実稼動パイプラインを使用してコードが正常にデプロイされることを確認できます。
+* RDE に同期したコードはCloud Manager パイプラインを使用しないので、Cloud Manager非実稼動パイプラインを使用して、Git feature ブランチをクラウド開発環境にデプロイする必要があります。 このプロセスでは、コードがCloud Manager品質ゲートを通過するかどうかが検証され、後でCloud Manager実稼動パイプラインを使用してコードが正常にデプロイされたことを確認できます。
 
 * 機能のすべてのコードの準備が整い、RDE とクラウド開発環境の両方で正常に動作するまで、各中間マイルストーンに対して上記の手順を繰り返します。
 
@@ -229,13 +235,13 @@ retrieving programs of your organization ...
 
 ## RDE を使用した既存機能のデバッグ {#use-rde-to-debug-an-existing-feature}
 
-このワークフローは、新規機能の開発に似ています。 違いは、RDE に同期されるコードは、問題が見つかった環境にプッシュされた内容の Git ラベルを反映している点です。 また、アップストリーム環境に合ったコンテンツをデプロイすると便利です。この操作は、コンテンツパッケージの書き出しと読み込みから行えます。
+このワークフローは、新規機能の開発に似ています。 違いは、RDE に同期されたコードが、問題が発生した環境にプッシュされた内容の Git ラベルを反映している点です。 このワークフローは、問題を調査または再現する際に一貫性を確保するのに役立ちます。 また、アップストリーム環境に合ったコンテンツをデプロイすると便利です。このアプローチは、コンテンツパッケージの書き出しと読み込みを通じて実現できます。
 
 ## 同じ RDE で共同作業する複数のデベロッパー {#multiple-developers-collaborating-on-the-same-rde}
 
 RDE は、一度に 1 つのプロジェクトをサポートします。コードはローカル開発環境から RDE 環境に同期されるので、1 人のデベロッパーが任意の時点で独自に使用するのが最も自然です。
 
-ただし、慎重に調整することで、複数のデベロッパーが特定の機能を検証したり、特定の問題をデバッグしたりできます。重要なのは、特定のデベロッパーが行ったコードの変更を他のデベロッパーが取り込めるように、各デベロッパーがローカルプロジェクトの同期を維持することです。さもないと、あるデベロッパーが誤って他のデベロッパーのコードを上書きしてしまう恐れがあります。 各デベロッパーに推奨される戦略は、RDE に同期する前に共有 Git ブランチに変更をコミットし、他のデベロッパーが変更を取り込んでから独自の変更を行えるようにすることです。
+ただし、慎重に調整することで、複数のデベロッパーが特定の機能を検証したり、特定の問題をデバッグしたりできます。重要なのは、特定のデベロッパーが行ったコードの変更を他のデベロッパーが取り込めるように、各デベロッパーがローカルプロジェクトの同期を維持することです。 そうしないと、あるデベロッパーが誤って他のデベロッパーのコードを上書きする可能性があります。 各デベロッパーに推奨される戦略は、RDE に同期する前に共有 Git ブランチに変更をコミットし、他のデベロッパーが変更を取り込んでから独自の変更を行えるようにすることです。
 
 ## RDE コマンドラインツールのコマンド {#rde-cli-commands}
 
@@ -255,23 +261,29 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 
   `aio aem rde <command> --quiet`
 
-  この場合は、スピナーやプログレスバーなどの特定の要素が削除され、ユーザー入力の必要性が制限されます。
+  このフラグは、スピナーやプログレスバーなどの特定の要素を削除し、ユーザー入力の必要性を制限します。
 
 * JSON に対しては、コンソールログ出力の代わりに、json フラグを使用します。
 
   `aio aem rde <command> --json`
 
-  この場合は、コンソール出力を抑制しながら、有効な JSON を返します。詳しくは、以下の JSON の例を参照してください。
+  このフラグは、コンソール出力を抑制しながら、有効な JSON を返します。 詳しくは、以下の JSON の例を参照してください。
 
 * setup コマンドを使用した RDE 接続情報の設定や aio 設定の作成を避けるには、組織、プログラム、環境の 3 つのフラグを使用します。
 
   `aio aem rde <command> --organizationId=<value> --programId=<value> --environmentId=<value>`
 
-  この場合もやはり、```aio login``` を実行する必要があります。
+  ```aio login``` の実行が必要です。
 
-### RDE へのデプロイ {#deploying-to-rde}
+### RDE にデプロイ {#deploying-to-rde}
 
-この節では、RDE CLI を使用して、バンドル、OSGi 設定、コンテンツパッケージ、個々のコンテンツファイル、Apache または Dispatcher 設定のデプロイ、インストールまたは更新する方法について説明します。
+この節では、RDE CLI を使用して様々なリソースをデプロイ、インストール、更新する方法について説明します。 これらのリソースには、次のものが含まれます。
+
+* コンテンツパッケージ
+* OSGi 設定
+* バンドル
+* コンテンツファイル
+* Apache またはDispatcherの設定
 
 一般的な使用パターンは `aio aem:rde:install <artifact>` です。
 
@@ -292,13 +304,13 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 
 `aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
-デフォルトでは、アーティファクトはオーサー層とパブリッシュ層の両方にデプロイされますが、「-s」フラグを使用して特定の層をターゲットにすることができます。
+デフォルトでは、アーティファクトはオーサー層とパブリッシュ層の両方にデプロイされますが、`-s` フラグを使用して特定の層をターゲットにすることができます。
 
 コードやコンテンツを含むパッケージ、[コンテナパッケージ](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages)（「all」パッケージとも呼ばれる）など、どの AEM パッケージもデプロイ可能です。
 
 >[!IMPORTANT]
 >
->WKND プロジェクトの Dispatcher 設定は、上記のコンテンツパッケージのインストールではデプロイされません。「Apache／Dispatcher 設定のデプロイ」の手順に従って、別途デプロイします。
+>上記のコンテンツパッケージのインストールでは、WKND プロジェクトのDispatcher設定はデプロイされません。 「Apache／Dispatcher 設定のデプロイ」の手順に従って、別途デプロイします。
 
 #### OSGi 設定のデプロイ {#deploy-OSGI-config}
 
@@ -311,7 +323,7 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 #2: deploy completed for osgi-config com.adobe.granite.demo.MyServlet.cfg.json on author,publish - done by 9E0725C05D54FE1A0B49431C@AdobeID at 2022-09-13T11:54:36.390Z
 ```
 
-#### バンドルのデプロイ {#deploy-bundle}
+#### バンドルをデプロイ {#deploy-bundle}
 
 バンドルをデプロイするには、次を使用します。
 
@@ -337,7 +349,7 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 #4: deploy completed for content-file world.txt on author,publish - done by 9E0729C05C54FE1A0B49431C@AdobeID at 2022-09-14T07:49:30.644Z
 ```
 
-#### Apache／Dispatcher 設定のデプロイ {#deploy-apache-config}
+#### Apache/Dispatcher設定のデプロイ {#deploy-apache-config}
 
 このタイプの設定では、フォルダー構造全体を zip ファイル形式にする必要があります。
 
@@ -359,7 +371,7 @@ AEM プロジェクトの `dispatcher` モジュールから、以下の maven �
 
 >[!NOTE]
 >
->RDE は、「フレキシブルモード」の Dispatcher 設定をサポートしていますが、「レガシーモード」の Dispatcher 設定はサポートしていません。2 つのモードについて詳しくは、[Dispatcher ドキュメント](/help/implementing/dispatcher/disp-overview.md#validation-debug)を参照してください。また、[フレキシブルモードへの移行](/help/implementing/dispatcher/validation-debug.md#migrating)に関するドキュメントをまだ確認していない場合は、そちらも参照してください。
+>RDE は、「フレキシブルモード」のDispatcher設定をサポートしていますが、「レガシーモード」のDispatcher設定はサポートしていません。 2 つのモードについて詳しくは、[Dispatcher ドキュメント](/help/implementing/dispatcher/disp-overview.md#validation-debug)を参照してください。また、[フレキシブルモードへの移行](/help/implementing/dispatcher/validation-debug.md#migrating)に関するドキュメントをまだ確認していない場合は、そちらも参照してください。
 
 デプロイメントが成功すると、次のような応答が生成されます。
 
@@ -389,18 +401,18 @@ The analyser found the following errors for publish :
 
 上記のコード例は、バンドルが解決されない場合の動作を示しています。この場合、バンドルは「ステージング済み」で、他のコードのインストールを通じて要件（この場合、読み込み不足）が満たされた場合にのみインストールされます。
 
-#### 設定パイプラインに関連する設定のデプロイ（yaml 設定） {#deploy-config-pipeline}
+#### 設定パイプラインに関連する設定（yaml 設定）のデプロイ {#deploy-config-pipeline}
 
 [設定パイプラインの使用](/help/operations/config-pipeline.md)の記事の説明に従って、環境固有の設定（1 つ以上の yaml ファイル）は、次のようにデプロイできます。
 
 `aio aem:rde:install -t env-config ./my-config-folder`
-ここで、my-config-folder は yaml 設定を含む親フォルダーです。
+ここで、`my-config-folder` は yaml 設定を含む親フォルダーです。
 
 または、config フォルダーツリーを含む zip ファイルをインストールすることもできます。
 
 `aio aem:rde:install -t env-config config.zip`
 
-次の例に示すように、yaml ファイルの envTypes 配列には、値 *rde* を含める必要があります。
+次の例に示すように、yaml ファイルの envTypes 配列には値 `rde` が含まれることに注意してください。
 
 ```
 kind: "CDN"
@@ -411,13 +423,13 @@ metadata:
 
 ### サイトテーマとサイトテンプレートに基づくフロントエンドコードのデプロイ {#deploying-themes-to-rde}
 
-RDE は、[サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)および[サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)に基づいてフロントエンドコードをサポートします。RDE を使用する場合、これは、他の環境タイプに使用される Cloud Manager [フロントエンドパイプライン](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)ではなく、コマンドラインのディレクティブを使用してフロンエンドパッケージをデプロイします。
+RDE は、[ サイトテーマ ](/help/sites-cloud/administering/site-creation/site-themes.md) および [ サイトテンプレート ](/help/sites-cloud/administering/site-creation/site-templates.md) で作成されたフロントエンドコードをサポートします。 他の環境タイプのようにCloud Manager[ フロントエンドパイプライン ](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) を使用する代わりに、RDE はコマンドラインディレクティブを使用してフロントエンドパッケージをデプロイします。
 
 通常どおり、npm を使用してフロントエンドパッケージを構築します。
 
 `npm run build`
 
-`dist/` フォルダーが生成され、フロントエンドパッケージフォルダーには、`package.json` ファイルと `dist` フォルダーが含められます。
+これにより `dist/` フォルダーが生成され、フロントエンドパッケージフォルダーには `package.json` ファイルと `dist` フォルダーが含まれます。
 
 ```
 ls ./path-to-frontend-pkg-folder/
@@ -425,7 +437,8 @@ ls ./path-to-frontend-pkg-folder/
 dist
 package.json
 ```
-これで、フロントエンドパッケージフォルダーを指すことで、RDE にフロントエンドパッケージをデプロイする準備が整いました。
+
+これで、次の方法でフロントエンドパッケージフォルダーを指して、フロントエンドパッケージを RDE にデプロイする準備が整いました。
 
 ```
 aio aem:rde:install -t frontend ./path-to-frontend-pkg-folder/
@@ -452,22 +465,103 @@ Logs:
 >[!NOTE]
 >
 >フロントエンドパッケージのファイルの命名は、次の命名規則に従う必要があります。
-> * npm ビルド出力パッケージフォルダー用の「dist」フォルダー
-> * npm 依存関係パッケージ用の「package.json」ファイル
+>
+> * `dist` フォルダー（npm ビルド出力パッケージフォルダー用）
+> * `package.json` ファイル（npm dependencies パッケージ用）
 
 >[!TIP]
 >
-> 2023年4月以前に RDE を作成し、フロントエンド機能を初めて試した際に「UNEXPECTED_API_ERROR」エラーが発生した場合は、環境を削除して再度作成してください。
+>2023 年 4 月以前に RDE を作成し、フロントエンド機能を初めて使用したときに `UNEXPECTED_API_ERROR` が発生した場合は、設定が古くなっていることが原因である可能性があります。 この問題を解決するには、環境を削除して新しく作成します。
 
-### RDE のステータス確認 {#checking-rde-status}
+## 外部 Git プロバイダーからの RDE へのデプロイ {#deploy-to-rde}
+
+>[!NOTE]
+>
+>この機能は、早期導入プログラムを通じて利用できます。 この新機能のテストやフィードバックの提供に関心がある場合は、Adobe IDに関連付けられたメールアドレスから [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com) にメールを送信してください。 使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
+
+Cloud Managerでは、[ 独自の Git （BYOG）設定を持ち込む ](/help/implementing/cloud-manager/managing-code/external-repositories.md) 設定を使用する場合、外部 Git プロバイダーから直接 RDE にコードをデプロイすることができます。
+
+外部 Git リポジトリから RDE にデプロイするには、次の操作が必要です。
+
+* Cloud Managerと統合された外部 Git リポジトリの使用（BYOG 設定）。
+* プロジェクトには 1 つ以上の RDE 環境がプロビジョニングされている必要があります。
+* `github.com` を使用する場合は、更新された GitHub アプリのインストールを確認して同意し、必要な新しい権限を付与する必要があります。
+
+**使用上の注意**
+
+* RDE へのデプロイメントは現在、AEM コンテンツおよびDispatcher パッケージでのみサポートされています。
+* 他のパッケージタイプ（完全なAEM アプリケーションパッケージなど）のデプロイメントは、まだサポートされていません。
+* 現在、コメントを使用した RDE 環境のリセットはサポートされていません。 お客様は、[ ここで説明する ](/help/implementing/developing/introduction/rapid-development-environments.md) ように、既存の AIO CLI コマンドを使用する必要があります。
+
+**仕組み**
+
+1. **コード品質検証メッセージ。**
+
+   プルリクエスト（PR）がコード品質パイプラインの実行をトリガーする場合、検証結果は、デプロイメントが RDE 環境に進むことができるかどうかを示します。
+
+   GitHub Enterprise での表示：
+   ![GitHub エンタープライズのコード品質検証メッセージ ](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
+
+   GitLab での表示：
+   ![GitLab でのコード品質検証メッセージ ](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
+
+   Bitbucket での外観：
+   ![Bitbucket のコード品質検証メッセージ ](/help/implementing/developing/introduction/assets/rde-bitbucket-code-quality-validation-message.png)
+
+1. **コメントを使用したトリガーの展開。**
+
+   デプロイメントを開始するには、次の形式でコメントを PR に追加します。`deploy on rde-environment-<envName>`
+
+   ![ コメントを使用したトリガーのデプロイ ](/help/implementing/developing/introduction/assets/rde-trigger-deployment-using-comment.png)
+
+   `<envName>` は、既存の RDE 環境の名前と一致する必要があります。 名前が見つからない場合は、環境が無効であることを示すコメントが返されます。
+
+   環境ステータスが準備完了でない場合は、次のコメントが表示されます。
+
+   ![ 環境のデプロイ準備が整っていない ](/help/implementing/developing/introduction/assets/rde-environment-not-ready.png)
+
+1. **環境チェックとアーティファクトのデプロイメント**
+
+   RDE の準備が整うと、Cloud Managerは新しいチェックを PR に投稿します。
+
+   GitHub Enterprise での表示：
+
+   ![GitHub の環境のステータス ](/help/implementing/developing/introduction/assets/rde-github-environment-status-is-ready.png)
+
+   GitLab での表示：
+
+   ![GitLab での環境のステータス ](/help/implementing/developing/introduction/assets/rde-gitlab-deployment-1.png)
+
+   Bitbucket での外観：
+
+   ![Bitbucket の環境のステータス ](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-1.png)
+
+1. **デプロイメント成功のメッセージ**
+
+   デプロイメントが完了すると、Cloud Managerはターゲット環境にデプロイされたアーティファクトの概要を示す成功メッセージを投稿します。
+
+   GitHub Enterprise での表示：
+
+   ![GitHub での環境のデプロイメントステータス ](/help/implementing/developing/introduction/assets/rde-github-environment-deployed-artifacts.png)
+
+   GitLab での表示：
+
+   ![GitLab での環境のデプロイメントステータス ](/help/implementing/developing/introduction/assets/rde-gitlab-deployment-2.png)
+
+   Bitbucket での外観：
+
+   ![Bitbucket での環境のデプロイメントステータス ](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-2.png)
+
+
+### RDE のステータスの確認 {#checking-rde-status}
 
 RDE CLI を使用すると、RDE プラグインを使用して実行されたデプロイメントなど、環境にデプロイする準備が整っているかどうかを確認できます。
 
-次のコードを実行すると、
+次を実行します。
 
 `aio aem:rde:status`
 
-次を返します。
+次を含むを返します。
 
 ```
 Info for cm-p12345-e987654
@@ -496,11 +590,11 @@ RDE に対して行われたデプロイメントの履歴を確認するには�
 
 ### RDE からの削除 {#deleting-from-rde}
 
-CLI ツールを使用すると、RDE に以前にデプロイされた設定やバンドルを削除できます。`status` コマンドを使用して、削除可能な項目のリストを取得できます。これには、DELETE コマンドで参照するバンドル用の `bsn` と設定用の `pid` が含まれます。
+CLI ツールを使用すると、以前に RDE にデプロイした設定やバンドルを削除できます。 `status` コマンドを使用して、削除可能な項目のリストを取得できます。これには、DELETE コマンドで参照するバンドルの `bsn` と設定の `pid` が含まれます。
 
 例えば、`com.adobe.granite.demo.MyServlet.cfg.json` がインストールされている場合、`bsn` は `com.adobe.granite.demo.MyServlet` のみ（**cfg.json** サフィックスなし）になります。
 
-コンテンツパッケージまたはコンテンツファイルは削除対象外です。 削除するには、RDE をリセットする必要があります。これにより、デフォルトの状態に戻ります。
+コンテンツパッケージまたはコンテンツファイルは削除対象外です。 削除するには、RDE をリセットします。これにより、デフォルトの状態に戻ります。
 
 詳しくは、以下の例を参照してください。
 
@@ -510,13 +604,13 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-詳細とデモンストレーションについては、[RDE コマンドの使用方法（10:01）](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=ja)のビデオチュートリアルを参照してください。
+詳細とデモンストレーションについては、[RDE コマンドの使用方法（10:01）](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)のビデオチュートリアルを参照してください。
 
 ## ログ {#rde-logging}
 
 他の環境タイプと同様に、ログレベルは OSGi 設定を変更することで設定できますが、上記のように、RDE のデプロイメントモデルには Cloud Manager のデプロイメントではなくコマンドラインが含まれます。ログの表示、ダウンロード、解釈の方法について詳しくは、[ログに関するドキュメント](/help/implementing/developing/introduction/logging.md)を確認してください。
 
-また、RDE CLI には独自の log コマンドもあり、これを使用して、クラスとパッケージをログレベルでログに記録する方法をすばやく設定できます。これらの設定は、バージョン管理の OSGI プロパティを変更しないので、一時的なものと見なすことができます。この機能は、遠い過去のログを検索するのではなく、リアルタイムでログを追跡することに焦点を当てています。
+また、RDE CLI には独自のログコマンドもあり、これを使用すると、ログに記録するクラスとパッケージ、およびログレベルをすばやく設定できます。 これらの設定は、バージョン管理の OSGI プロパティを変更しないので、一時的なものと見なすことができます。この機能は、遠い過去のログを検索するのではなく、リアルタイムでログを追跡することに焦点を当てています。
 
 次の例では、1 つのパッケージをデバッグログレベルに設定し、2 つのパッケージ（スペースで区切る）を情報デバッグレベルに設定して、オーサー層を末尾まで追跡する方法を示します。**認証**&#x200B;パッケージを含む出力がハイライト表示されます。
 
@@ -524,7 +618,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 >[!TIP]
 >
->オーサーサービスのログコマンドの実行中にエラー `RDECLI:UNEXPECTED_API_ERROR` が表示される場合は、環境をリセットして再試行してください。最新のリセット操作が 2024年5月末より前であった場合、このエラーがスローされます。
+>オーサーサービスのログコマンドの実行中にエラー `RDECLI:UNEXPECTED_API_ERROR` が表示される場合は、環境をリセットして再試行してください。最新のリセット操作が 2024 年 5 月末以前であった場合、このエラーがスローされます。
 >
 >```
 >aio aem:rde:reset
@@ -532,7 +626,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 コマンドラインオプションの完全なセットについては、`aio aem:rde:logs --help` を参照してください。
 
-次のような機能があります。
+機能には次のものがあります。
 
 * パッケージまたはクラスレベルごとのログレベルの宣言
 * ログ出力形式のカスタマイズ
@@ -542,17 +636,17 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 ログは RDE のメモリに保存され、これらのログはリサイクルされるので、末尾が追跡されない場合やネットワークが遅すぎる場合は破棄されます。
 
 
-## リセット {#reset-rde}
+## RDE をリセット {#reset-rde}
 
-RDE をリセットすると、すべてのカスタムコード、設定およびコンテンツが、オーサーインスタンスとパブリッシュインスタンスの両方から削除されます。このリセットは、例えば、RDE を使用して特定の機能をテストしていて、別の機能をテストするためにデフォルトの状態にリセットする場合に便利です。
+RDE をリセットすると、すべてのカスタムコード、設定およびコンテンツが、オーサーインスタンスとパブリッシュインスタンスの両方から削除されます。RDE のリセットは、ある機能のテストが完了し、別の機能をテストする前に環境をデフォルトの状態に戻す場合に役立ちます。
 
 リセットすると、RDE が使用可能な最新の AEM バージョンに設定されます。
 
-リセットは、[Cloud Manager](#reset-the-rde-cloud-manager) または [コマンドライン](#reset-the-rde-command-line) で行うことができます。リセットには数分かかり、既存のコンテンツおよびコードはすべて RDE から削除されます。
+[Cloud Manager](#reset-the-rde-cloud-manager) または [ コマンドライン ](#reset-the-rde-command-line) を使用して、RDE をリセットできます。 リセットには数分かかり、既存のコンテンツおよびコードはすべて RDE から削除されます。
 
->[メモ]
+>[!NOTE]
 >
->リセット機能を使用するには、Cloud Manager 開発者の役割が割り当てられている必要があります。そうでない場合、リセットアクションはエラーとなります。
+>リセット機能を使用する前に、Cloud Manager デベロッパーの役割が割り当てられていることを確認します。 それ以外の場合は、リセットアクションはエラーで失敗します。
 
 ### コマンドラインを使用した RDE のリセット {#reset-the-rde-command-line}
 
@@ -560,7 +654,7 @@ RDE をリセットすると、すべてのカスタムコード、設定およ�
 
 `aio aem:rde:reset`
 
-これには、通常数分かかり、成功した場合は ```Environment reset.```、エラーの場合は ```Failed to reset the environment.``` が報告されます。構造化された出力について詳しくは、以下の ```--json``` 出力に関する章を参照してください。
+このプロセスには通常は数分かかり、成功した場合やエラーが発生した場合に ```Environment reset.``` に報告さ ```Failed to reset the environment.``` ます。 構造化された出力について詳しくは、以下の ```--json``` 出力に関する章を参照してください。
 
 環境の準備が再び整ったことを確認するには、[ステータスコマンド](#checking-rde-status)を使用します。
 
@@ -596,7 +690,7 @@ RDE をリセットすると、すべてのカスタムコード、設定およ�
 
    ![バナー通知をリセット](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
 
-RDE のリセットプロセスが開始されると、通常、プロセスが完了して環境がデフォルトの状態に戻るまでに数分かかります。リセットプロセスのステータスは、**環境**&#x200B;カードの&#x200B;**ステータス**&#x200B;列、または&#x200B;**環境**&#x200B;ウィンドウでいつでも確認できます。
+RDE のリセットが開始されると、通常、環境が完了してデフォルトの状態に復元されるまでに数分かかります。 リセットステータスは、**環境** カードまたはウィンドウの **ステータス** 列でいつでも表示できます。
 
 ![RDE リセットステータス](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 
@@ -930,7 +1024,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 <details>
   <summary>展開してリセットの例を表示</summary>
 
-#### ファイアアンドフォーゲット、待機不要 {#fire-no-wait}
+#### 火と忘れて、待ちません {#fire-no-wait}
 
 ```$ aio aem rde reset --no-wait --json```
 
@@ -942,7 +1036,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 }
 ```
 
-#### 完了まで待機し、リセットに成功 {#wait-success}
+#### 完了するまで待ち、正常にリセットします {#wait-success}
 
 ```$ aio aem rde reset --json```
 
@@ -954,7 +1048,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 }
 ```
 
-#### 完了まで待機し、リセットに失敗 {#wait-failed}
+#### 完了まで待機、リセットに失敗しました {#wait-failed}
 
 ```$ aio aem rde reset --json```
 
@@ -971,7 +1065,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 ### やり直し {#restart}
 
 <details>
-  <summary>展開して再起動の例を表示</summary>
+  <summary>展開すると、再起動の例が表示されます</summary>
 
 ```$ aio aem rde restart --json```
 
@@ -999,15 +1093,15 @@ RDE 固有の OSGI 設定は、以下の例のように、フォルダー名に�
 >
 >RDE OSGI 設定は、バンドルの `dev` 実行モードによって宣言された OSGI プロパティの値を継承する点でユニークです。
 
-RDE は、/apps の下の install.rde フォルダー（または install.author.rde または install.publish.rde）にコンテンツをインストールできるという点で、他の環境とは異なります。これにより、コンテンツを Git にコミットし、コマンドラインツールを使用して RDE に配信できます。
+RDE は、`/apps` の下の `install.rde` フォルダー（`install.author.rde` または `install.publish.rde`）にコンテンツをインストールできるという点で、他の環境とは異なります。 この機能を使用すると、コンテンツを Git にコミットし、コマンドラインツールを使用して RDE に配信できます。
 
-## コンテンツへの入力 {#populating-content}
+## コンテンツの入力 {#populating-content}
 
 RDE がリセットされると、すべてのコンテンツが削除されるため、必要に応じて、コンテンツを追加するための明示的なアクションを実行する必要があります。ベストプラクティスとして、RDE の機能を検証またはデバッグするためのテストコンテンツとして使用する一連のコンテンツを組み立てることを検討してください。 RDE にそのコンテンツを入力する方法はいくつか考えられます。
 
 1. コマンドラインツールを使用したコンテンツパッケージの RDE への明示的な同期化
 
-1. /apps の下の install.rde フォルダー内の Git にサンプルコンテンツを配置してコミットし、コマンドラインツールを使用して包括的なコンテンツパッケージを RDE に同期します。
+1. `/apps` の下の `install.rde` フォルダー内の Git にサンプルコンテンツを配置してコミットし、コマンドラインツールを使用して包括的なコンテンツパッケージを RDE に同期します。
 
 1. [コンテンツコピーツール](/help/implementing/developing/tools/content-copy.md)を使用して、実稼動環境、ステージング環境、開発環境、または別の RDE から定義済みのコンテンツセットをコピーします。
 
@@ -1018,9 +1112,9 @@ RDE がリセットされると、すべてのコンテンツが削除される�
 
 ## RDE とクラウド開発環境の違いは何ですか？ {#how-are-rds-different-from-cloud-development-environments}
 
-RDE は多くの点でクラウド開発環境に似ていますが、コードを素早く同期できるように、アーキテクチャ上の小さな違いが若干あります。コードを RDE に取得するメカニズムは異なります。RDE の場合はローカル開発環境からコードを同期しますが、クラウド開発環境の場合は Cloud Manager を使用してコードをデプロイします。
+RDE は多くの点でクラウド開発環境に似ていますが、コードをすばやく同期できるように、アーキテクチャ上のわずかな違いがあります。 コードを RDE に取得するメカニズムが異なります。RDE の場合は開発環境からコードを同期し、クラウドローカル開発環境の場合はCloud Managerを介してコードをデプロイします。
 
-このような理由から、RDE 環境でコードを検証した後、実稼動以外のパイプラインを使用してコードをクラウド開発環境にデプロイすることをお勧めします。最後に、実稼動パイプラインでデプロイする前に、コードをテストします。
+このような理由から、RDE 環境でコードを検証した後、実稼動以外のパイプラインを使用してコードをクラウド開発環境にデプロイすることをお勧めします。 最後に、実稼動パイプラインでデプロイする前に、コードをテストします。
 
 また、次の考慮事項にも注意してください。
 
@@ -1032,15 +1126,15 @@ RDE は多くの点でクラウド開発環境に似ていますが、コード�
 
 RDE は、ライセンスが付与されている各ソリューションで使用でき、Adobeでは追加の RDE も提供されます。RDE は実稼動（サンドボックス以外）プログラム用としてライセンス登録できます。
 
-必要な RDE の数は、組織の構成とプロセスによって異なります。最も柔軟なモデルでは、組織が AEM Cloud Service の各デベロッパーに対して専用の RDE を購入できます。各デベロッパーはこのモデルで、RDE 環境が使用可能かどうかに関して他のチームメンバーと調整することなく、RDE でコードをテストできます。
+必要な RDE の数は、組織の構成とプロセスによって異なります。最も柔軟なモデルでは、組織が AEM Cloud Service の各デベロッパーに対して専用の RDE を購入できます。このモデルでは、RDE 環境が使用可能かどうかに関して他のチームメンバーと調整することなく、各開発者が RDE でコードをテストできます。
 
-もう 1 つの極端な例としては、1 つの RDE を持つチームが内部プロセスを使用して、特定の時間にどのデベロッパーが環境を使用できるかを調整する場合があります。これは、デベロッパーが中間機能のマイルストーンに達し、必要な変更をすばやく行えるクラウド環境で検証の準備を整えていることが条件となります。
+もう 1 つの極端な例としては、1 つの RDE のみを持つチームが、特定の時間にどのデベロッパーが環境を使用するかを決定するために、内部の調整に依存する場合があります。 このアプローチは、開発者が機能のマイルストーンに達し、すばやく変更を加える柔軟性を備えたクラウド環境での作業を検証する必要がある場合にうまく機能します。
 
 中間モデルとは、組織がいくつかの RDE を購入する場合に、未使用の RDE が使用可能になる可能性が高くなるモデルです。1 つの戦略は、スクラムチームまたは主要機能ごとに RDE を割り当てることです。内部プロセスを使用して、環境の使用状況を調整できます。
 
-## AEM FormsCloud Service の迅速な開発環境（RDE）は他の環境とどのように異なりますか？ {#how-are-forms-rds-different-from-cloud-development-environments}
+## AEM Forms Cloud Service RDE とその他の環境の違い {#how-are-forms-rds-different-from-cloud-development-environments}
 
-Forms のデベロッパーは、AEM FormsCloud Service の迅速な開発環境を使用して、アダプティブフォーム、ワークフロー、およびコアコンポーネントのカスタマイズ、サードパーティシステムとの統合などのカスタマイズを迅速に開発できます。AEM Forms Cloud Service の迅速な開発環境（RDE）は、通信 API をサポートしていません。また、アダプティブフォームの送信時にレコードのドキュメントを生成するなど、レコードのドキュメントを必要とする機能もサポートされていません。以下に示す AEM Forms の機能は、迅速な開発環境（RDE）では使用できません。
+Forms開発者は、AEM Forms Cloud Service Rapid Development Environment を使用して、コアコンポーネントのカスタマイズ、サードパーティ製システムとの統合など、アダプティブForms、ワークフロー、カスタマイズをすばやく開発できます。 AEM Forms Cloud Service の迅速な開発環境（RDE）は、通信 API をサポートしていません。また、アダプティブフォームの送信時にレコードのドキュメントを生成するなど、レコードのドキュメントを必要とする機能もサポートされていません。以下に示す AEM Forms の機能は、迅速な開発環境（RDE）では使用できません。
 
 * アダプティブフォーム用のレコードのドキュメントの設定
 * アダプティブフォームの送信時またはワークフローステップでのレコードのドキュメントの生成
@@ -1050,54 +1144,54 @@ Forms のデベロッパーは、AEM FormsCloud Service の迅速な開発環境
 
 >[!NOTE]
 >
-> 迅速な開発環境（RDE）の UI と Forms 向けの他の Cloud Service 環境の UI に違いはありません。アダプティブフォームのレコードテンプレートのドキュメントの選択など、オプション関連のレコードのすべてのドキュメントは UI に引き続き表示されます。これらの環境には、こうしたオプションをテストするためのレコードのドキュメント機能や通信 API がありません。そのため、通信 API またはレコードのドキュメント機能を必要とするオプションを選択した場合、アクションは実行されず、エラーメッセージが表示されます。
+> 迅速な開発環境（RDE）の UI と Forms 向けの他の Cloud Service 環境の UI に違いはありません。アダプティブフォームのレコードテンプレートのドキュメントの選択など、レコードのドキュメント関連のオプションはすべて UI に引き続き表示されます。 これらの環境には、こうしたオプションをテストするためのレコードのドキュメント機能や通信 API がありません。そのため、通信 API またはレコードのドキュメント機能を必要とするオプションを選択した場合、システムはアクションを実行しません。 代わりに、エラーメッセージが表示されます。
 
 ## RDE に関するチュートリアル
 
-AEM as a Cloud Service での RDE について詳しくは、[設定方法、使用方法、開発ライフサイクル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html?lang=ja)に関するビデオチュートリアル（01:25）を参照してください。
+AEM as a Cloud Service での RDE について詳しくは、[設定方法、使用方法、開発ライフサイクル](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/overview)に関するビデオチュートリアル（01:25）を参照してください。
 
-# トラブルシューティング {#troubleshooting}
+## トラブルシューティング {#troubleshooting}
 
-## RDE のトラブルシューティング（#rde-troubleshooting）
+### RDE のトラブルシューティング（#rde-troublehooting）
 
-### 既存の RDE に対する最新の AEM バージョンを取得する方法 {#get-latest-aem-version}
+#### 既存の RDE に対する最新の AEM バージョンを取得する方法 {#get-latest-aem-version}
 
-作成時に、RDE は使用可能な最新の Adobe Experience Manager（AEM）バージョンに設定されます。Cloud Manager または `aio aem:rde:reset` コマンドを使用して実行できる [RDE のリセット](#reset-rde)は、RDE を循環させ、使用可能な最新の AEM バージョンに設定します。
+作成時に、RDE は使用可能な最新の Adobe Experience Manager（AEM）バージョンに設定されます。Cloud Managerまたは `aio aem:rde:reset` コマンドを使用して実行できる [RDE リセット ](#reset-rde) は、RDE を循環させ、使用可能な最新のAEM バージョンに設定します。
 
-## aio RDE プラグインのトラブルシューティング {#aio-rde-plugin-troubleshooting}
+### aio RDE プラグインのトラブルシューティング {#aio-rde-plugin-troubleshooting}
 
-### 不十分な権限に関するエラー {#insufficient-permissions}
+#### 不十分な権限に関するエラー {#insufficient-permissions}
 
 RDE プラグインを使用するには、Cloud Manager **開発者 - Cloud Service** 製品プロファイルのメンバーである必要があります。詳しくは、[Cloud Manager 製品プロファイルへのチームメンバーの割り当て - 開発者製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)を参照してください。
 
-また、このデベロッパーの役割を持っていることを、以下のコマンドを実行して Developer Console にログインすることでも確認できます。
+または、次のコマンドを実行して Developer Console にログインした場合、このデベロッパーの役割を持っていることを確認できます。
 
 `aio cloudmanager:environment:open-developer-console`
 
 >[!TIP]
 >
->`Warning: cloudmanager:* is not a aio command.` エラーが表示された場合は、以下のコマンドを実行して [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) をインストールする必要があります。
+>`Warning: cloudmanager:* is not a aio command.` のエラーが表示された場合は、次のコマンドを実行して [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) をインストールする必要があります。
 >
 >```
 >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
 >```
 
-以下を実行して、ログインが正常に完了したことを確認します
+次のコマンドを実行して、ログインが正常に完了したことを確認します。
 
 `aio cloudmanager:list-programs`
 
-これにより、設定した組織の下にあるすべてのプログラムがリストされ、正しい役割が割り当てられていることを確認できます。
+このプロセスは、設定済みの組織の下にあるすべてのプログラムをリストし、正しい役割が割り当てられていることを確認します。
 
-### 廃止されたコンテキスト「aio-cli-plugin-cloudmanager」の使用 {#aio-rde-plugin-troubleshooting-deprecatedcontext}
+#### 非推奨（廃止予定）のコンテキスト `aio-cli-plugin-cloudmanager` を使用 {#aio-rde-plugin-troubleshooting-deprecatedcontext}
 
-「aio-cli-plugin-aem-rde」の履歴により、コンテキスト名「aio-cli-plugin-cloudmanager」がしばらくの間使用されていました。rde プラグインは、コンテキスト情報の処理に IMS 方式を使用するようになりました。つまり、コンテキスト情報をグローバルまたはローカルに保存するオプションがあり、必要に応じてすべての aio 呼び出しを設定済みのデフォルトにデフォルト設定することもできます。設定済みのデフォルトのコンテキストはローカルに保存され、開発者はフォルダー内の個々のコンテキストとその情報を追跡および使用できます。詳しくは、上記の[ローカルコンテキストの設定例](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools)を参照してください。
+`aio-cli-plugin-aem-rde` の履歴により、コンテキスト名 `aio-cli-plugin-cloudmanager` がしばらくの間使用されていました。 RDE プラグインでは、コンテキスト情報の管理に IMS メソッドを使用するようになり、コンテキストをグローバルまたはローカルに保存できるようになりました。 また、デフォルトのコンテキストを設定して、すべての AIO 呼び出しに自動的に適用することもできます。 設定済みのデフォルトのコンテキストはローカルに保存され、開発者はフォルダー内の個々のコンテキストとその情報を追跡および使用できます。詳しくは、上記 [ ローカルコンテキストの設定例 ](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) を参照してください。
 
-aio-cli-plugin-cloudmanager と aio-cli-plugin-aem-rde の両方のプラグインを使用し、すべての情報を同じコンテキストに保持する開発者は、現時点で次のオプションを選択する必要があります。
+両方のプラグイン、`aio-cli-plugin-cloudmanager`、`aio-cli-plugin-aem-rde` を使用し、すべての情報を同じコンテキストで保持したい開発者は、今すぐ次のオプションを選択する必要があります。
 
-#### コンテキスト「aio-cli-plugin-cloudmanager」を引き続き使用
+##### コンテキスト `aio-cli-plugin-cloudmanager` を使用し続ける
 
-コンテキストは引き続き使用できますが、RDE プラグインに非推奨（廃止予定）の警告が表示されます。この警告は、```--quiet``` モードを使用すると省略できます。RDE プラグインの最新バージョンでは、コンテキスト「aio-cli-plugin-cloudmanager」を読み取るためのフォールバックは提供されません。引き続き利用するには、デフォルトのコンテキストを「aio-cli-plugin-cloudmanager」に設定するだけです。上記の[ローカルコンテキストの設定例](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools)を参照してください。
+コンテキストは引き続き使用できます。 RDE プラグインに非推奨の警告が表示されます。 この警告は、```--quiet``` モードを使用して省略できます。 より新しいバージョンの RDE プラグインでは、コンテキストを読み取るためのフォールバック `aio-cli-plugin-cloudmanager` 提供されなくなりました。 引き続き使用するには、デフォルトのコンテキストを `aio-cli-plugin-cloudmanager` に設定するだけです。 前述の [ ローカルコンテキストの設定例 ](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) を参照してください。
 
-#### Cloud Manager プラグインにも他のコンテキスト名を使用
+##### Cloud Manager プラグインには、その他のコンテキスト名も使用します。
 
-Cloud Manager プラグインには、使用するコンテキストを定義するためのパラメーターが用意されています。IMS のデフォルトのコンテキスト設定は、まだサポートされていません。これを行うには、[ローカルコンテキストの設定例](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools)を参照して、RDE プラグインを設定し、Cloud Manager プラグインに対して、すべての呼び出しで ```--imsContextName=myContext``` のように「myContext」を使用するように指示します。
+Cloud Manager プラグインには、使用するコンテキストを定義するパラメーターがあります。 IMS のデフォルトのコンテキスト設定は、まだサポートされていません。これを行うには、[ ローカルコンテキストを設定する例 ](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) を使用して RDE プラグインを設定し、その呼び出しのたびに ```--imsContextName=myContext``` のように `myContext` を使用するようにCloud Manager プラグインに指示します。
