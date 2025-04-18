@@ -4,10 +4,10 @@ description: クラウド環境で迅速な開発反復を行うために、迅�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bd0c83098f19f8cf7cad41233f043c608be39a0c
+source-git-commit: 68937e844712ad639a495e87363d49a8bef25e05
 workflow-type: tm+mt
-source-wordcount: '5390'
-ht-degree: 52%
+source-wordcount: '5392'
+ht-degree: 51%
 
 ---
 
@@ -81,18 +81,18 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
 
 >[!IMPORTANT]
 >
->Adobe I/O CLI と関連プラグインが正しく動作するように、バージョン 20 の[ノードと NPM がインストールされている](https://nodejs.org/en/download/)ことを確認してください。
+>Adobe I/O（AIO） CLI と関連プラグインが正しく動作するように ](https://nodejs.org/en/download/) バージョン 20 の [ ノードと NPM がインストールされていることを確認してください。
 
 
-1. こちらの[手順](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/)に従って、Adobe I/O CLI ツールをインストールします。
-1. Adobe I/O CLI ツールの AEM RDE プラグインのインストール
+1. 次の [ 手順 ](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) に従って、AIO CLI ツールをインストールします。
+1. AIO CLI ツールのAEM RDE プラグインをインストールします。
 
    ```
    aio plugins:install @adobe/aio-cli-plugin-aem-rde
    aio plugins:update
    ```
 
-1. aio クライアントを使用してログインします。
+1. Adobe I/O（AIO）クライアントを使用してログインします。
 
    ```
    aio login
@@ -473,6 +473,60 @@ Logs:
 >
 >2023 年 4 月以前に RDE を作成し、フロントエンド機能を初めて使用したときに `UNEXPECTED_API_ERROR` が発生した場合は、設定が古くなっていることが原因である可能性があります。 この問題を解決するには、環境を削除して新しく作成します。
 
+### RDE のステータスの確認 {#checking-rde-status}
+
+RDE CLI を使用すると、RDE プラグインを使用して実行されたデプロイメントなど、環境にデプロイする準備が整っているかどうかを確認できます。
+
+次を実行します。
+
+`aio aem:rde:status`
+
+次を含むを返します。
+
+```
+Info for cm-p12345-e987654
+Environment: Ready
+- Bundles Author:
+ com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
+- Bundles Publish:
+ com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
+- Configurations Author:
+ com.adobe.granite.demo.MyServlet
+- Configurations Publish:
+ com.adobe.granite.demo.MyServlet
+```
+
+コマンドがデプロイ中のインスタンスに関するメモを返した場合でも、先に進んで次の更新を実行できますが、最終更新がまだインスタンス上に表示されていない可能性があります。
+
+### デプロイメント履歴の表示 {#show-deployment-history}
+
+RDE に対して行われたデプロイメントの履歴を確認するには、次のコマンドを実行します。
+
+`aio aem:rde:history`
+
+次の形式の応答が返されます。
+
+`#1: deploy completed for content-package aem-guides-wknd.all-2.1.0.zip on author,publish - done by 029039A55D4DE16A0A494025@AdobeID at 2022-09-12T14:41:55.393Z`
+
+### RDE から削除 {#deleting-from-rde}
+
+CLI ツールを使用すると、以前に RDE にデプロイした設定やバンドルを削除できます。 `status` コマンドを使用して、削除可能な項目のリストを取得できます。これには、DELETE コマンドで参照するバンドルの `bsn` と設定の `pid` が含まれます。
+
+例えば、`com.adobe.granite.demo.MyServlet.cfg.json` がインストールされている場合、`bsn` は `com.adobe.granite.demo.MyServlet` のみ（**cfg.json** サフィックスなし）になります。
+
+コンテンツパッケージまたはコンテンツファイルは削除対象外です。 削除するには、RDE をリセットします。これにより、デフォルトの状態に戻ります。
+
+詳しくは、以下の例を参照してください。
+
+```
+aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
+#13: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on author - done by karl at 2022-09-12T22:01:01.955Z
+#14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
+```
+
+詳細とデモンストレーションについては、[RDE コマンドの使用方法（10:01）](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)のビデオチュートリアルを参照してください。
+
+
 ## 外部 Git プロバイダーからの RDE へのデプロイ {#deploy-to-rde}
 
 >[!NOTE]
@@ -491,7 +545,7 @@ Cloud Managerでは、[ 独自の Git （BYOG）設定を持ち込む ](/help/im
 
 * RDE へのデプロイメントは現在、AEM コンテンツおよびDispatcher パッケージでのみサポートされています。
 * 他のパッケージタイプ（完全なAEM アプリケーションパッケージなど）のデプロイメントは、まだサポートされていません。
-* 現在、コメントを使用した RDE 環境のリセットはサポートされていません。 お客様は、[ ここで説明する ](/help/implementing/developing/introduction/rapid-development-environments.md) ように、既存の AIO CLI コマンドを使用する必要があります。
+* 現在、コメントを使用した RDE 環境のリセットはサポートされていません。 代わりに、既存の AIO CLI reset コマンドを使用する必要があります [ ここで説明します ](/help/implementing/developing/introduction/rapid-development-environments.md#reset-the-rde-command-line)。
 
 **仕組み**
 
@@ -553,58 +607,7 @@ Cloud Managerでは、[ 独自の Git （BYOG）設定を持ち込む ](/help/im
    ![Bitbucket での環境のデプロイメントステータス ](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-2.png)
 
 
-### RDE のステータスの確認 {#checking-rde-status}
 
-RDE CLI を使用すると、RDE プラグインを使用して実行されたデプロイメントなど、環境にデプロイする準備が整っているかどうかを確認できます。
-
-次を実行します。
-
-`aio aem:rde:status`
-
-次を含むを返します。
-
-```
-Info for cm-p12345-e987654
-Environment: Ready
-- Bundles Author:
- com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
-- Bundles Publish:
- com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
-- Configurations Author:
- com.adobe.granite.demo.MyServlet
-- Configurations Publish:
- com.adobe.granite.demo.MyServlet
-```
-
-コマンドがデプロイ中のインスタンスに関するメモを返した場合でも、先に進んで次の更新を実行できますが、最終更新がまだインスタンス上に表示されていない可能性があります。
-
-### デプロイメント履歴の表示 {#show-deployment-history}
-
-RDE に対して行われたデプロイメントの履歴を確認するには、次のコマンドを実行します。
-
-`aio aem:rde:history`
-
-次の形式の応答が返されます。
-
-`#1: deploy completed for content-package aem-guides-wknd.all-2.1.0.zip on author,publish - done by 029039A55D4DE16A0A494025@AdobeID at 2022-09-12T14:41:55.393Z`
-
-### RDE からの削除 {#deleting-from-rde}
-
-CLI ツールを使用すると、以前に RDE にデプロイした設定やバンドルを削除できます。 `status` コマンドを使用して、削除可能な項目のリストを取得できます。これには、DELETE コマンドで参照するバンドルの `bsn` と設定の `pid` が含まれます。
-
-例えば、`com.adobe.granite.demo.MyServlet.cfg.json` がインストールされている場合、`bsn` は `com.adobe.granite.demo.MyServlet` のみ（**cfg.json** サフィックスなし）になります。
-
-コンテンツパッケージまたはコンテンツファイルは削除対象外です。 削除するには、RDE をリセットします。これにより、デフォルトの状態に戻ります。
-
-詳しくは、以下の例を参照してください。
-
-```
-aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
-#13: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on author - done by karl at 2022-09-12T22:01:01.955Z
-#14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
-```
-
-詳細とデモンストレーションについては、[RDE コマンドの使用方法（10:01）](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)のビデオチュートリアルを参照してください。
 
 ## ログ {#rde-logging}
 
