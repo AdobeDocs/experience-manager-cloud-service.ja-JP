@@ -4,10 +4,10 @@ description: WYSIWYG テンプレートエディターを使用して  [!DNL Dyn
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 184149144d1f8d204241fcc477f937fa7c225895
+source-git-commit: c9a4a361561cb03b17e0b931b8946116791c62e1
 workflow-type: tm+mt
-source-wordcount: '3106'
-ht-degree: 55%
+source-wordcount: '3172'
+ht-degree: 53%
 
 ---
 
@@ -83,12 +83,13 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
    * **[!UICONTROL [!DNL Dynamic Media] 設定を編集ページ]****[!UICONTROL [!DNL Dynamic Media]で、同期モード]** が **[!UICONTROL デフォルトで無効]** に設定されている場合、すべてのAEM フォルダーに適用されるわけではありません（**[!UICONTROL すべてのコンテンツを同期]** がオフになっています）。 詳しくは、[Dynamic Media Cloud Service の設定](/help/assets/dynamic-media/config-dm.md)を参照してください。
    * 作成後 **[!UICONTROL [!DNL Dynamic Media]テンプレートを保存する宛先フォルダーまたはサブフォルダーに対して、同期モード]** が **[!UICONTROL サブフォルダーに対して有効にする]** に設定されています。 詳しくは、[Cloud Serviceの設定  [!DNL Dynamic Media] ](/help/assets/dynamic-media/config-dm.md) を参照してください。
 
-## WYSIWYG テンプレート [!DNL Dynamic Media] 作成{#how-to-create-dynamic-media-wysiwyg-template}
+## テンプレート [!DNL Dynamic Media] 作成{#how-to-create-dynamic-media-template}
 
 [!DNL Dynamic Media] テンプレートを作成するには、次の手順を実行します。
 
 1. [!DNL Assets View] に移動し、![Assets[4}Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) で「フォルダーを作成 ]**します。 ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** のフォルダーツリーは **[!UICONTROL Dynamic Media Assets]** にレプリケートされます。 [!DNL Dynamic Media] テンプレートをこの [!UICONTROL Dynamic Media Assets] フォルダーに保存します。
-1. 「![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**」を選択し、画像を [ アップロードして  [!DNL AEM]  および同時に公開 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) してテンプレートの作成に使用します  [!DNL Dynamic Media]  画像の公開は、ダウンストリームアプリケーションで使用できる、テンプレートの配信 URL を生成するために必要です。
+1. ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**を選択して [ 画像をアップロードおよび  [!DNL AEM]  と同時に公開 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) し、テンプレートの作成に使用します  [!DNL Dynamic Media]  テンプレートを作成した後にテンプレートの配信 URL を生成するには画像の公開が必要であり、ダウンストリームアプリケーションで使用できます。
+1. [ アセットのアップロード手順と公開手順を実行 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) して、フォントファイルをAEMと Dynamic Media に同時にアップロードおよび公開し、テキストレイヤーでデフォルトのAdobe Sans F2 フォントファミリー以外のフォントを使用する。 [ サポートされているフォントファイル形式は、AFM、OTF、PFB、PFM、PhotoFont、TTC、TTF です ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)。 テンプレートの作成に使用するには、古いフォントを [ 再処理 ](/help/assets/reprocessing-assets-view.md)[!DNL Assets View] します（ホームページで ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**をクリックし、フォントファイルの場所に移動して、フォントファイルを 1 つずつ選択し、![ 再処理 ](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL  再処理]**）をクリックします。 フォントについて詳しくは、[ フォント ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) を参照してください。
 1. [空のキャンバスを作成](#create-a-canvas)
 1. [キャンバスに画像を追加](#add-images-to-the-canvas)
 1. [キャンバスにテキストレイヤーを追加](#add-text-to-the-canvas)
@@ -158,11 +159,7 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 1. プロパティパネルの「**[!UICONTROL スマートテキストのサイズ変更]**」を選択すると、指定した領域に最適に収まるようにテキストの長さとフォントサイズが自動的に調整されます。
    ![カスタマイズ可能な最適なバナー](/help/assets/assets/add-text-layer.png)
 
-レイヤーの再配置、サイズ変更、回転または削除について詳しくは、[**[!UICONTROL プロパティパネル]**](#reposition-resize-delete-a-layer)を参照してください。パネルの「**[!UICONTROL テキスト]**」セクションの下にあるそれぞれのフィールドの値を変更して、必要なフォント、サイズ、色、スタイル、配置（レイヤー内）にテキストを書式設定します。
-
->[!NOTE]
->
-> デフォルトのAdobe Sans F2 フォントファミリー以外のフォントを使用するには、フォントファイルをアップロードして ]0}Assets} および [!DNL Dynamic Media] に公開する必要があります。 [!AEM インスタンスに古いフォントがある場合、テンプレートエディターで表示するには、必ず[再処理](/help/assets/reprocessing-assets-view.md)します。
+レイヤーの再配置、サイズ変更、回転または削除について詳しくは、[**[!UICONTROL プロパティパネル]**](#reposition-resize-delete-a-layer)を参照してください。パネルの「**[!UICONTROL テキスト]**」セクションの下にあるそれぞれのフィールドの値を変更して、必要なフォント、サイズ、色、スタイル、配置（レイヤー内）にテキストを書式設定します。 フォントに関する情報については、作成  [!DNL Dynamic Media]  テンプレート ](#how-to-create-dynamic-media-template) の [ 手順 3 の節を参照してください。
 
 ### レイヤーを編集または削除 {#edit-or-delete-a-layer}
 
@@ -361,3 +358,5 @@ URL 内でパラメーターを直接編集するのは面倒な場合があり�
 
 1. [[!DNL Dynamic Media]  とその機能 ](/help/assets/dynamic-media/dynamic-media.md) を探索
 1. [[!DNL Dynamic Media] OpenAPI 機能を使用 ](/help/assets/dynamic-media-open-apis-overview.md) て
+
+
