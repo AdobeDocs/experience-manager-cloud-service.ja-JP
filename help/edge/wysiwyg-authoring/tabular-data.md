@@ -4,10 +4,13 @@ description: スプレッドシートを使用して、Edge Delivery Services �
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: fcbe7d79958301c39c8f894ff03ad39af6aded5b
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '1294'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -180,10 +183,10 @@ AEM でスプレッドシートのデータを公開するには、さらにプ�
 
 リダイレクトスプレッドシートの作成方法がわかったので、他の標準的なスプレッドシートタイプを作成できます。
 
-* [ プレースホルダー ](https://www.aem.live/docs/placeholders)
+* [プレースホルダー](https://www.aem.live/docs/placeholders)
 * [メタデータ](https://www.aem.live/docs/bulk-metadata)
-* [ ヘッダー ](https://www.aem.live/docs/custom-headers)
-* [ 設定 ](https://www.aem.live/docs/configuration) - [ キャッシュ無効化など ](https://www.aem.live/docs/byo-cdn-adobe-managed#setup-push-invalidation)
+* [ヘッダー](https://www.aem.live/docs/custom-headers)
+* [設定](https://www.aem.live/docs/configuration) - [キャッシュ無効化](https://www.aem.live/docs/byo-cdn-adobe-managed#setup-push-invalidation)など
 * [分類](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 「[スプレッドシートを作成](#spreadsheet)」および「[paths.json を更新](#paths-json)」セクションと同じ手順に従い、適切なテンプレートを選択して、`paths.json` ファイルを適切に更新します。

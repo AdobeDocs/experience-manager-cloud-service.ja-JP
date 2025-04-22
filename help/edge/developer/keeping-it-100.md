@@ -4,7 +4,10 @@ title: 理想的な状態の維持、Web パフォーマンス
 feature: Edge Delivery Services
 exl-id: f808ae16-15b7-48ce-a477-76268ba005ec
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 1e69fd3abf8dad01886007bc16b2ed0d0df0777c
 workflow-type: tm+mt
 source-wordcount: '33'
 ht-degree: 100%

@@ -4,7 +4,10 @@ title: プレースホルダー
 feature: Edge Delivery Services
 exl-id: 392e2323-8d6f-40eb-a68e-51baeee7fc2d
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 1e69fd3abf8dad01886007bc16b2ed0d0df0777c
 workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 100%

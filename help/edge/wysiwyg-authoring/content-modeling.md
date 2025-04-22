@@ -4,8 +4,11 @@ description: Edge Delivery Services プロジェクトを使用した WYSIWYG �
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
+workflow-type: tm+mt
 source-wordcount: '2195'
 ht-degree: 100%
 

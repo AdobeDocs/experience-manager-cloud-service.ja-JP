@@ -4,7 +4,10 @@ title: ブロックコレクション
 feature: Edge Delivery Services
 exl-id: ea7c071a-1ce9-4af0-a6dc-a2ba9bdbbef0
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 1e69fd3abf8dad01886007bc16b2ed0d0df0777c
 workflow-type: tm+mt
 source-wordcount: '27'
 ht-degree: 100%

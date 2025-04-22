@@ -4,7 +4,10 @@ title: コンテンツのオーサリングとパブリッシング
 feature: Edge Delivery Services
 exl-id: 3fd37d7d-e8ce-48c7-8c2d-a564b24e2f4f
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 1e69fd3abf8dad01886007bc16b2ed0d0df0777c
 workflow-type: tm+mt
 source-wordcount: '24'
 ht-degree: 100%

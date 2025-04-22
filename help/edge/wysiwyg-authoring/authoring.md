@@ -4,8 +4,11 @@ description: コンテンツのオーサリングと Edge Delivery Services を�
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
+workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 100%
 

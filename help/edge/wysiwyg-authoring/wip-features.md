@@ -5,7 +5,10 @@ solution: Experience Manager Sites
 feature: Edge Delivery Services
 role: User
 exl-id: 21745f53-a7ef-4eec-9170-b267c2f4314e
-source-git-commit: 92da26452438f2b56cdec1aecc76587d4982f00e
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 100%

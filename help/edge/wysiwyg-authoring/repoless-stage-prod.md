@@ -4,7 +4,10 @@ description: 単一のコードベースをリポジトリで活用して、ス�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: beda1168323d511cd7b89bb5d0a6eccb742de36f
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 2%

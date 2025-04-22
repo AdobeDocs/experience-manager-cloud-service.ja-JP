@@ -4,7 +4,10 @@ title: Fastly の設定
 feature: Edge Delivery Services
 exl-id: 90986139-9c7f-4b63-b24d-c199b4d4dff0
 role: Admin, Architect, Developer
-source-git-commit: cdfd8d6afda5f92f782ffb3ada388c9ca3f56a49
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 1e69fd3abf8dad01886007bc16b2ed0d0df0777c
 workflow-type: tm+mt
 source-wordcount: '23'
 ht-degree: 100%

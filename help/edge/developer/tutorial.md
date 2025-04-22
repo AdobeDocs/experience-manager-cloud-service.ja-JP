@@ -4,8 +4,11 @@ title: はじめに - 開発者向けチュートリアル
 feature: Edge Delivery Services
 exl-id: f84a9584-0962-4d70-aedc-f7a130fd489b
 role: Admin, Architect, Developer
-source-git-commit: f5da387d598cfc35acb7e7d94573be4a41f3f197
-workflow-type: ht
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 1e69fd3abf8dad01886007bc16b2ed0d0df0777c
+workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 100%
 
