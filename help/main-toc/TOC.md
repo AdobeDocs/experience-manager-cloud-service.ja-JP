@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e470244d2b6e039f47d06c332a0fb98cff1b0433
+source-git-commit: e302cb6c85937755b7c9324dc1ee6c60a7562b80
 workflow-type: tm+mt
-source-wordcount: '6152'
+source-wordcount: '6135'
 ht-degree: 99%
 
 ---
@@ -1078,14 +1078,9 @@ ht-degree: 99%
       + サイドキック {#sidekick}
          + [Sidekick の使用](/help/edge/docs/sidekick.md)
          + [拡張機能のインストール](/help/edge/docs/sidekick-extension.md)
-         + [プロジェクト設定](https://www.aem.live/tools/sidekick/)
          + [Sidekick ライブラリ](/help/edge/docs/sidekick-library.md)
       + [よくある質問](/help/edge/docs/faq.md)
-      + [Admin API](https://www.aem.live/docs/admin.html)
-      + [AEM ステータス](https://status.adobe.com)
       + ツール {#tools}
-         + [AEM Sidekick Chrome 拡張機能](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
-         + [Github ボット](https://github.com/apps/aem-code-sync)
          + [監査ログ](/help/edge/docs/auditlog.md)
 + ヘッドレス {#headless}
    + [ヘッドレス CMS とは](/help/headless/what-is-headless.md)
