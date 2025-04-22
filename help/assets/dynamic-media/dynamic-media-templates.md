@@ -4,10 +4,10 @@ description: WYSIWYG テンプレートエディターを使用して  [!DNL Dyn
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 95873c3079efe91aedb049252435487a7ae646c8
+source-git-commit: b877c4385d68778d31f0174aa1d3d87548c6016a
 workflow-type: tm+mt
-source-wordcount: '3191'
-ht-degree: 53%
+source-wordcount: '3222'
+ht-degree: 51%
 
 ---
 
@@ -88,7 +88,7 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 [!DNL Dynamic Media] テンプレートを作成するには、次の手順を実行します。
 
 1. [!DNL Assets View] に移動し、![Assets[4}Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) で「フォルダーを作成 ]**します。 ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** のフォルダーツリーは **[!UICONTROL Dynamic Media Assets]** にレプリケートされます。 [!DNL Dynamic Media] テンプレートをこの [!UICONTROL Dynamic Media Assets] フォルダーに保存します。
-1. ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**を選択して [ 画像をアップロードおよび  [!DNL AEM]  と同時に公開 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) し、テンプレートの作成に使用します  [!DNL Dynamic Media]  テンプレートを作成した後にテンプレートの配信 URL を生成するには画像の公開が必要であり、ダウンストリームアプリケーションで使用できます。
+1. ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**を選択して [ 画像をアップロードおよび  [!DNL AEM]  と同時に公開 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) し、テンプレートの作成に使用します  [!DNL Dynamic Media]  テンプレートの作成後にテンプレートの配信 URL を生成するには、画像の公開が必要です。 配信 URL は、ダウンストリームアプリケーションで使用できます。
 1. [ アセットのアップロード手順と公開手順 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) を実行して、フォントファイルをAEMと Dynamic Media に同時にアップロードおよび公開し、テンプレートの作成に使用します。 [!UICONTROL Adobe Sans F2] は、テキストレイヤーで使用できる唯一のデフォルトのフォントです。 [ サポートされているフォントファイル形式は、AFM、OTF、PFB、PFM、PhotoFont、TTC、TTF です ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)。 テンプレートの作成に使用する既存のフォントを、必ず [ 再処理 ](/help/assets/reprocessing-assets-view.md)[!DNL Assets View] します（ホームページで ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**をクリックし、フォントファイルの場所に移動して、フォントファイルを 1 つずつ選択し、![ 再処理 ](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL  再処理]**）をクリックします。 フォントについて詳しくは、[ フォント ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) を参照してください。
 1. [空のキャンバスを作成](#create-a-canvas)
 1. [キャンバスに画像を追加](#add-images-to-the-canvas)
@@ -159,7 +159,7 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 1. プロパティパネルの「**[!UICONTROL スマートテキストのサイズ変更]**」を選択すると、指定した領域に最適に収まるようにテキストの長さとフォントサイズが自動的に調整されます。
    ![カスタマイズ可能な最適なバナー](/help/assets/assets/add-text-layer.png)
 
-レイヤーの再配置、サイズ変更、回転または削除について詳しくは、[**[!UICONTROL プロパティパネル]**](#reposition-resize-delete-a-layer)を参照してください。パネルの「**[!UICONTROL テキスト]**」セクションの下にあるそれぞれのフィールドの値を変更して、必要なフォント、サイズ、色、スタイル、配置（レイヤー内）にテキストを書式設定します。 **[!UICONTROL フォントファミリー]** フィールドには、再処理された既存のフォントと、新しくアップロードおよび公開されたフォントが表示されます。 詳しくは、前述の作成  [!DNL Dynamic Media]  テンプレート ](#how-to-create-dynamic-media-template) の節の [ 手順 3 を参照してください。
+レイヤーの再配置、サイズ変更、回転または削除について詳しくは、[**[!UICONTROL プロパティパネル]**](#reposition-resize-delete-a-layer)を参照してください。パネルの「**[!UICONTROL テキスト]**」セクションの下にあるそれぞれのフィールドの値を変更して、必要なフォント、サイズ、色、スタイル、配置（レイヤー内）にテキストを書式設定します。 **[!UICONTROL フォントファミリー]** フィールドには、[!UICONTROL Adobe Sans F2] のデフォルトフォント、再処理された既存のフォント、新しくアップロードおよび公開されたフォントが表示されます。 詳しくは、前述の作成  [!DNL Dynamic Media]  テンプレート ](#how-to-create-dynamic-media-template) の節の [ 手順 3 を参照してください。
 
 ### レイヤーを編集または削除 {#edit-or-delete-a-layer}
 
@@ -267,17 +267,19 @@ URL のパラメーター値を更新して、URL からテキスト、フォン
    ![その場でのコンテンツの作成](/help/assets/assets/dm-templates-publish-status.png)
 また、**[!UICONTROL すべてのパラメーターを含める]**を切り替えて、表示されているすべてのパラメーター値を編集し、テンプレートのプレビューで更新を確認することもできます。
    <br>
-1. プレビューページでテンプレートを公開するには、「**[!UICONTROL 公開]**」をクリックして公開を確定します。**[!UICONTROL 公開完了]** メッセージが表示され、公開ステータスが **[!UICONTROL 公開済み]** に更新されます。
+1. プレビューページからテンプレートを公開するには、「**[!UICONTROL 公開]** をクリックして、公開を確認します。 **[!UICONTROL 公開完了]** メッセージが表示され、公開ステータスが **[!UICONTROL 公開済み]** に更新されます。
 
->[!NOTE]
->
->テンプレートを公開するには、まずテンプレート画像を公開する必要があります。
+   >[!NOTE]
+   >
+   >テンプレートを公開するには、まずテンプレート画像を公開する必要があります。
 
 ### 配信 URL をコピー
 
 **[!UICONTROL プレビュー]**&#x200B;ページで選択したパラメーターは、テンプレートの URL の URL パラメーターになります。
 
-プレビューに表示されている公開済みテンプレートの URL をコピーするには：
+テンプレート内の画像がAEMと Dynamic Media に公開され、公開されたテンプレートの配信 URL が生成されることを確認します。
+
+次の手順を実行して、テンプレートの配信 URL をコピーします。
 
 1. 「**[!UICONTROL URL をコピー]**」をクリックします。**[!UICONTROL URL をコピー]**&#x200B;ダイアログボックスが表示されます。表示されている URL を選択してコピーします。URL の最初のパラメーターが疑問符 **（[!UICONTROL ?]）** キーと値のペアは **[!UICONTROL $]** で始まり、**[!UICONTROL &amp;]** で終わります。 キーと値は等号 **（[!UICONTROL =]）** で区切られ、キーは左側、値は右側に表示されます。
 1. この URL をブラウザーのタブにペーストして、ライブテンプレートを表示します。**プレビューと公開**&#x200B;の節の[手順 2](#preview-and-publish-template-and-copy-template-deliver-url) の説明に従って、URL の必要なパラメーターの値（キーの値）を直接更新して、テンプレートをリアルタイムでカスタマイズします。
