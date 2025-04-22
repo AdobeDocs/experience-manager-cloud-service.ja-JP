@@ -1,19 +1,19 @@
 ---
 title: ページエディターとユニバーサルエディター
-description: ページエディターはAdobeで引き続きサポートされますが、ユニバーサルエディターを使用すると、新しいプロジェクトに既存の機能が使用できます。
+description: ページエディターは引き続きAdobeでサポートされますが、ユニバーサルエディターは新しいプロジェクトに魅力的な可能性をもたらします。
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9fdc24600c9dd4ebf6a3d12462eb9bd387815360
+exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
+source-git-commit: 4956552ca93351a7b319bc808e0c5ec930bcbe28
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 16%
 
 ---
 
-
 # ページエディターとユニバーサルエディター {#page-editor-universal-editor}
 
-ページエディターはAdobeで引き続きサポートされますが、ユニバーサルエディターを使用すると、新しいプロジェクトに既存の機能が使用できます。
+ページエディターは引き続きAdobeでサポートされますが、ユニバーサルエディターは新しいプロジェクトに魅力的な可能性をもたらします。
 
 ## 背景 {#background}
 
@@ -56,7 +56,7 @@ AEMの長い歴史の中で [ ページエディター ](/help/sites-cloud/autho
 |  | ページエディター | メモ | ユニバーサルエディター | メモ |
 |---|---|---|---|---|
 | ページテンプレート | [!BADGE  使用可能 ]{type=Positive} |  | [!BADGE  使用可能 ]{type=Positive} | ユニバーサルエディターは、使用されるテンプレートシステムに依存しません。 ただし、最新のフロントエンドツールでは、開発者がコード内で直接テンプレートロジックを定義および管理しやすくなっているので、通常の実装パターンでは開発者が定義したテンプレートが優先されます。 |
-| WYSIWYGの編集 | [!BADGE  使用可能 ]{type=Positive} ページに制限 |  | [!BADGE  使用可能 ]{type=Positive} | ページとコンテンツフラグメントのサポート |
+| WYSIWYGの編集 | [!BADGE  使用可能 ]{type=Positive} | ページに制限 | [!BADGE  使用可能 ]{type=Positive} | ページとコンテンツフラグメントのサポート |
 | [バリエーションを生成](/help/generative-ai/generate-variations.md) | [!BADGE  利用不可 ]{type=Negative} |  | [!BADGE  使用可能 ]{type=Positive} | [ 拡張機能として使用できます ](/help/implementing/universal-editor/extending.md) |
 | 新しいブロックを挿入 | [!BADGE  使用可能 ]{type=Positive} |  | [!BADGE  使用可能 ]{type=Positive} |  |
 | ブロックを並べ替え | [!BADGE  使用可能 ]{type=Positive} | コンテキスト内ドラッグ&amp;ドロップでは可能ですが、「ツリー表示」サイドパネルでは不可能です | [!BADGE  使用可能 ]{type=Positive} | 「ツリー表示」サイドパネルでドラッグ&amp;ドロップすることで可能ですが、まだコンテキスト内（予定）ではありません |
