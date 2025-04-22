@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e7c38b4103c3de4b794da3a6dfa26c6204e1c0c6
+source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 99%
+source-wordcount: '515'
+ht-degree: 81%
 
 ---
 
@@ -77,3 +77,13 @@ IP 許可リストを追加すれば、環境内のオーサーサービスと�
 フロントエンドパイプラインの実行が中断されないようにするには、この Cloud Manager IP 許可リストを確実に追加します。次に、パイプラインを有効にする&#x200B;*前*&#x200B;に、リストをオーサー環境に適用します。
 
 詳しくは、[IP 許可リストを適用](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)および[フロントエンドパイプラインを有効にする](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)を参照してください。
+
+### ユニバーサルエディターと IP の許可リスト {#universal-editor}
+
+ユニバーサルエディターを使用してコンテンツを作成する場合は、ユニバーサルエディターサービスが使用する IP アドレスを許可リストに追加して適用する必要があります。
+
+1. ユニバーサルエディターサービスで使用される IP アドレスを、次の API エンドポイントから取得します：`http://universal-editor-service.adobe.io/ip-ranges`。
+1. これらの IP アドレスを使用して許可リストを作成し、名前を `Universal Editor Service` 等に設定します。
+1. `Universal Editor Service` 許可リストを適用します。
+
+ユニバーサルエディターサービスで使用される IP アドレスのリストは変更される場合があり、それに応じて許可リストを更新する必要があります。

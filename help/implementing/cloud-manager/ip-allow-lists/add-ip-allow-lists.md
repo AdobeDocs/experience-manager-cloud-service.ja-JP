@@ -5,7 +5,7 @@ exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
+source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 100%
@@ -20,6 +20,7 @@ Cloud Manager を使用して独自の IP 許可リストを追加する方法�
 **ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持つユーザーは、次の手順に従って IP 許可リストを追加できます。
 
 {{add-cm-allowlist-frontend-pipeline}}
+{{ip-allow-lists-ue}}
 
 **IP 許可リストを追加するには：**
 

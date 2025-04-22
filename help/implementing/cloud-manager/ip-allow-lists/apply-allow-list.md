@@ -5,7 +5,7 @@ exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
+source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 100%
@@ -18,6 +18,7 @@ ht-degree: 100%
 IP 許可リストを適用すると、リストの定義に含まれているすべての IP 範囲が環境内のオーサーサービスまたはパブリッシュサービスに関連付けられます。リストの適用を解除すると、この処理の逆になります。
 
 {{add-cm-allowlist-frontend-pipeline}}
+{{ip-allow-lists-ue}}
 
 ## IP 許可リストの適用 {#applying}
 

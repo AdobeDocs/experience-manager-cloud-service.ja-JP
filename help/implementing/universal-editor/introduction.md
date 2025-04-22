@@ -4,10 +4,10 @@ description: ユニバーサルエディターは、マーケティング組織�
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8d608d1ba00764613fbf4a5c1e1a0fcdc603283c
+source-git-commit: ae59b00e7e8149477a87d0b0b63493a6c2cfebe7
 workflow-type: tm+mt
 source-wordcount: '956'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 99%
 
 * AEM as a Cloud Service（リリース `2023.8.13099` 以降）
 * AEM 6.5（サービスパック 21 または 22 と機能パック）
-   * オンプレミスおよび AMS の両方のホスティングがサポートされています。
+   * オンプレミスと AMS ホスティングの両方がサポートされています。
 
 このドキュメントは、AEM as a Cloud Service でユニバーサルエディターを使用するためのものです。AEM 6.5 でのユニバーサルエディターの使用について詳しくは、[AEM 6.5 ドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)を参照してください。
 
@@ -108,7 +108,7 @@ ht-degree: 99%
 * AEM の一部として、ユニバーサルエディターは [AEM と同じデスクトップブラウザーをサポート](/help/overview/supported-platforms.md)します。
    * これらのブラウザーのモバイルバージョンはサポートされていません。
 
-{{ue-ip-allow-lists}}
+{{ip-allow-lists-ue}}
 
 ## 次の手順 {#next-steps}
 
