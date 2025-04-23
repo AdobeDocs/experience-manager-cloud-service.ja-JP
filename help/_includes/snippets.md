@@ -1,8 +1,8 @@
 ---
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
+source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 98%
+source-wordcount: '1467'
+ht-degree: 97%
 
 ---
 # スニペット {#snippets}
@@ -187,7 +187,7 @@ ht-degree: 98%
 
 >[!IMPORTANT]
 >
->[ コンテンツオーサリングにユニバーサルエディター ](/help/implementing/universal-editor/introduction.md) を使用する場合は、[ ユニバーサルエディターサービスの IP アドレスを含む許可リストを追加して適用する ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor) 必要もあります。
+>[ コンテンツオーサリングにユニバーサルエディター ](/help/implementing/universal-editor/introduction.md) を使用していて、[IP 許可リストも使用する場合 ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)、[ ユニバーサルエディターサービスの IP アドレスを許可リストに追加して適用する ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor) 必要もあります。
 
 ## Dynamic Media の操作 {#work-with-dynamic-media}
 
