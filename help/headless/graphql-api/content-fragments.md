@@ -4,21 +4,15 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
 workflow-type: tm+mt
-source-wordcount: '6021'
-ht-degree: 96%
+source-wordcount: '5993'
+ht-degree: 99%
 
 ---
 
 
 # コンテンツフラグメントと共に使用する AEM GraphQL API {#graphql-api-for-use-with-content-fragments}
-
->[!IMPORTANT]
->
->コンテンツフラグメントで使用する GraphQL API の様々な機能は、早期導入プログラムを通じて利用できます。
->
->ステータスを確認し、興味がある場合に適用する方法について詳しくは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
 Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 
@@ -1085,15 +1079,15 @@ query allTeams {
 } 
 ```
 
-## Dynamic Media for OpenAPI アセットのサポート（リモート Assets） {#dynamic-media-for-openapi-asset-support}
+## OpenAPI 用の Dynamic Media アセットのサポート（リモートアセット） {#dynamic-media-for-openapi-asset-support}
 
-[ リモートアセット ](/help/sites-cloud/administering/content-fragments/authoring.md#reference-remote-assets) 統合により、現在のAssets インスタンスに対してローカルではないAEMを、コンテンツフラグメントエディターから参照できます。 コンテンツフラグメントエディターおよびGraphQL JSON での OpenAPI アセットのサポートのために、Dynamic Media によって実装されています。
+[リモートアセット](/help/sites-cloud/administering/content-fragments/authoring.md#reference-remote-assets)統合により、コンテンツフラグメントエディターから、現在の AEM インスタンスに対してローカルではないアセットを参照できます。これは、コンテンツフラグメントエディターと GraphQL JSON での OpenAPI 用の Dynamic Media アセットのサポートによって実装されます。
 
-### Dynamic Media で OpenAPI アセットをサポートするためのサンプルクエリ（リモート Assets） {#sample-query-dynamic-media-for-openapi-asset-support}
+### OpenAPI 用の Dynamic Media アセットのサポート（リモートアセット）のサンプルクエリ {#sample-query-dynamic-media-for-openapi-asset-support}
 
-リクエストの例を次に示します。
+サンプルリクエストを次に示します。
 
-* リモートアセットの参照の概念を説明します
+* リモートアセットの参照の概念を説明しています。
 
   ```graphql
   {
@@ -1177,17 +1171,17 @@ query allTeams {
 
 現在の制限事項は次のとおりです。
 
-* GraphQL配信は、`repositoryId` および `assetId` のみをサポートします（他のアセットメタデータは返されません）
+* GraphQL 配信は、`repositoryId` と `assetId` のみをサポートします（他のアセットメタデータは返されません）
 
   >[!NOTE]
   >
-  >次に、[ アセット配信 API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) に基づいて、完全な URL をクライアントサイドで作成する必要があります。
+  >次に、[Asset delivery API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) に基づいて、クライアントサイドで完全な URL を構築する必要があります。
 
-* リモートリポジトリからの参照には、*承認済み* アセットのみを使用できます
-* 参照されているアセットがリモートリポジトリから削除されると、コンテンツフラグメントアセットの参照が壊れます。
-* ユーザーがアクセス権を持つすべての配信アセットリポジトリーが選択可能になります。利用可能なリストは制限できません。
-* AEM インスタンスとリモートアセットリポジトリーインスタンスは両方とも同じバージョンである必要があります。
-* [ 管理 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) および [ 配信 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/) 経由で公開されるアセットメタデータはありません。 アセットメタデータの詳細を取得するには、アセットメタデータ API を使用する必要があります。
+* リモートリポジトリから参照できるのは、*承認済み*&#x200B;アセットのみです。
+* 参照されているアセットをリモートリポジトリから削除すると、コンテンツフラグメントアセットの参照が破損します。
+* ユーザーがアクセス権を持つすべての配信アセットリポジトリが選択可能になりますが、使用可能なリストは制限できません。
+* AEM インスタンスとリモートアセットリポジトリインスタンスは、両方とも同じバージョンにする必要があります。
+* [Management Sites API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) および [OpenAPI を使用したAEM コンテンツフラグメント配信 ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/) 経由で公開されるアセットメタデータはありません。 アセットメタデータの詳細を取得するには、Asset Metadata API を使用する必要があります。
 
 ## AEM 用の GraphQL - 拡張機能の概要 {#graphql-extensions}
 

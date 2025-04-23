@@ -3,20 +3,15 @@ title: OpenAPI を使用したAEM コンテンツフラグメント配信
 description: OpenAPI を使用した AEM コンテンツフラグメント配信について説明します
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+exl-id: b298db37-1033-4849-bc12-7db29fb77777
+source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 89%
+source-wordcount: '313'
+ht-degree: 84%
 
 ---
 
 # OpenAPI を使用したAEM コンテンツフラグメント配信 {#aem-content-fragment-delivery-with-openapi}
-
->[!IMPORTANT]
->
->この API は、早期導入プログラムを通じて利用できます。
->
->ステータスを確認し、興味がある場合に適用する方法について詳しくは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
 Adobe Experience Manager（AEM）as a Cloud Serviceで、コンテンツフラグメント配信用のAEM OpenAPI を使用すると、
 
@@ -33,7 +28,7 @@ Adobe Experience Manager（AEM）as a Cloud Serviceで、コンテンツフラ�
 
 * [コンテンツフラグメントと共に使用する AEM GraphQL API](/help/headless/graphql-api/content-fragments.md) の代替となる HTTP REST です。
 
-完全なドキュメントについて詳しくは、[AEM Sites API スキーマ - コンテンツフラグメント配信 API（2024.07-試行用）](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/)を参照してください。
+完全なドキュメントについては、[OpenAPI を使用したAEM コンテンツフラグメント配信 ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/) を参照してください。
 
 >[!NOTE]
 >
