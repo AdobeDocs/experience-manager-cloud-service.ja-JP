@@ -4,10 +4,10 @@ description: Web アプリケーションファイアウォール（WAF）ルー
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: cdf15df0b8b288895db4db0032137c38994f4faf
-workflow-type: ht
-source-wordcount: '4215'
-ht-degree: 100%
+source-git-commit: 20d4ea369676baad28c43246fe399e2e2f4b1db7
+workflow-type: tm+mt
+source-wordcount: '4278'
+ht-degree: 98%
 
 ---
 
@@ -184,7 +184,7 @@ data:
 
 | **プロパティ** | **タイプ** | **説明** |
 |---|---|---|
-| reqProperty | `string` | リクエストプロパティ。<br><br>次のいずれか：<br><ul><li>`path`：URL のフルパスをクエリパラメーターなしで返します。（エスケープされていないバリアントには `pathRaw` を使用）</li><li>`url`：完全な URL をクエリパラメーターを含めて返します。（エスケープされていないバリアントには `urlRaw` を使用）</li><li>`queryString`：URL のクエリ部分を返します</li><li>`method`：リクエストで使用される HTTP メソッドを返します。</li><li>`tier`：`author`、`preview` または `publish` のいずれか 1 つを返します。</li><li>`domain`：小文字のドメインプロパティ（`Host` ヘッダーで定義）を返します</li><li>`clientIp`：クライアント IP を返します。</li><li>`forwardedDomain`：`X-Forwarded-Host` ヘッダーで定義されている最初のドメインを小文字で返します。</li><li>`forwardedIp`：`X-Forwarded-For` ヘッダーの最初の IP を返します。</li><li>`clientCountry`：クライアントがいる国を識別する 2 文字のコード（[地域指標記号](https://en.wikipedia.org/wiki/Regional_indicator_symbol)）を返します。</li></ul> |
+| reqProperty | `string` | リクエストプロパティ。<br><br>次のいずれか：<br><ul><li>`path`：URL のフルパスをクエリパラメーターなしで返します。（エスケープされていないバリアントには `pathRaw` を使用）</li><li>`url`：完全な URL をクエリパラメーターを含めて返します。（エスケープされていないバリアントには `urlRaw` を使用）</li><li>`queryString`：URL のクエリ部分を返します</li><li>`method`：リクエストで使用される HTTP メソッドを返します。</li><li>`tier`：`author`、`preview` または `publish` のいずれか 1 つを返します。</li><li>`domain`：小文字のドメインプロパティ（`Host` ヘッダーで定義）を返します</li><li>`clientIp`：クライアント IP を返します。</li><li>`forwardedDomain`：`X-Forwarded-Host` ヘッダーで定義されている最初のドメインを小文字で返します。</li><li>`forwardedIp`：`X-Forwarded-For` ヘッダーの最初の IP を返します。</li><li>`clientRegion`: [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) で説明されているように、クライアントが配置されている地域を識別する国の下位区分コードを返します。</li><li>`clientCountry`：クライアントがいる国を識別する 2 文字のコード（[地域指標記号](https://en.wikipedia.org/wiki/Regional_indicator_symbol)）を返します。</li><li>`clientContinent`: クライアントが配置されている大陸を識別する 2 文字のコード（AF、AN、AS、EU、NA、OC、SA）を返します。</li><li>`clientAsNumber`: クライアント IP に関連付けられた [Autonomous System](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) 番号を返します。</li><li>`clientAsName`：自律システム番号に関連付けられた名前を返します。</li></ul> |
 | reqHeader | `string` | 指定された名前のリクエストヘッダーを返します |
 | queryParam | `string` | 指定された名前のクエリパラメーターを返します |
 | reqCookie | `string` | 指定された名前の Cookie を返します |
