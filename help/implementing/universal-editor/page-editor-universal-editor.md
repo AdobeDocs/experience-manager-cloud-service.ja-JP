@@ -4,7 +4,7 @@ description: ページエディターは引き続きAdobeでサポートされ�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 4956552ca93351a7b319bc808e0c5ec930bcbe28
+source-git-commit: f21e21b0f7239ec9112d65b94b372344c4a07566
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 16%
