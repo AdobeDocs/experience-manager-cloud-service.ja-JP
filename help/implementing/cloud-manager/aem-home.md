@@ -1,27 +1,27 @@
 ---
-title: AEM Launchpad について
-description: Adobe Experience Manager起動パッドページについて説明します。
+title: Experience Hub について
+description: AEM Experience Hub ページについて説明します。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: c389e136b315c8361d5b8c78bddba09968f68541
+source-git-commit: ca046c1635e9de6b422e78fd7a87b8fd078a6bdc
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '340'
 ht-degree: 9%
 
 ---
 
-# AEM Launchpad について {#aem-launchpad}
+# Experience Hub について {#aem-experience-hub}
 
-AEM Launchpad は、Adobe Experience Manager内のコンテンツ、アセット、サイトを一元的に管理するための出発点となります。 パーソナライズされたエクスペリエンスを提供するように設計されたAEM Launchpad を使用すると、役割と目標に従ってAEM エコシステムをシームレスに移動できます。 ガイドとして機能し、目的を効率的に達成するのに役立つ重要なインサイトと推奨されるアクションを提供します。ペルソナ主導型の明確なレイアウトにより、AEM Launchpad は重要なツールにすばやくアクセスでき、すべてのAEM機能で合理化された効果的なエクスペリエンスをサポートします。
+Experience Hub では、Adobe Experience Manager内のコンテンツ、アセット、サイトを一元的に管理するための出発点が導入されています。 パーソナライズされたエクスペリエンスを提供するように設計された Experience Hub を使用すると、役割と目標に従ってAEM エコシステムをシームレスに移動できます。 ガイドとして機能し、目的を効率的に達成するのに役立つ重要なインサイトと推奨されるアクションを提供します。明確なペルソナ主導型のレイアウトにより、Experience Hub は不可欠なツールにすばやくアクセスでき、すべてのAEM機能で合理化された効果的なエクスペリエンスをサポートします。
 
 <!--
-Available to early adopters, AEM Launchpad offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Launchpad's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
+Available to early adopters, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
 
-## AEM起動パッドを閉じる {#aem-launchpad-about}
+## Experience Hub を閉じる {#aem-experience-hub-about}
 
 [Adobe Experience Managerページ ](https://experience.adobe.com/#/experiencemanager) が更新され、ナビゲーションの強化とインタラクティブウィジェットが追加されました。 以前のソリューションカードのコレクションでは、次のようなツールへのアクセスが可能でした。
 
@@ -34,25 +34,25 @@ Available to early adopters, AEM Launchpad offers an optimized experience focuse
 
 これらのソリューションは、「ツール **の下のメインナビゲーションに移動** ました。 さらに、{Sites **と** 2}Assets} の新しいナビゲーション要素により **Assets、コレクション、Sites、コンテンツフラグメントなどのAdobe Experience Managerの主要機能にすばやくアクセスできます。**&#x200B;これらの機能は、アクセス権のあるプライマリ実稼動環境で使用できます。
 
-![AEM起動パッド環境 ](/help/implementing/cloud-manager/assets/aem-launchpad-author-environments.png)
+![Experience Hub 環境 ](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
 
-Adobe Experience Managerの中央ハブとして機能するAEM Launchpad ページには、各ユーザーロールに合わせた追加のウィジェットとアクションが用意されています。 ページは完全にカスタマイズ可能で、画面に最適なレイアウトを選択できます。 ウィジェットをフィルタリングして、選択したウィジェットのみをメインページに表示し、パーソナライズされたエクスペリエンスを提供できます。
+Experience Hub ページは、Adobe Experience Managerの中央ハブとして機能し、各ユーザーの役割に合わせて調整された追加のウィジェットとアクションを備えるまで拡張されています。 ページは完全にカスタマイズ可能で、画面に最適なレイアウトを選択できます。 ウィジェットをフィルタリングして、選択したウィジェットのみをメインページに表示し、パーソナライズされたエクスペリエンスを提供できます。
 
-![ カスタマイズされたAEM起動パッド ](/help/implementing/cloud-manager/assets/aem-launchpad-custom.png)
+![ カスタマイズされた Experience Hub](/help/implementing/cloud-manager/assets/experience-hub-custom.png)
 
 ウィジェットは、ニーズや環境設定に合わせてサイズを変更したり、ページ上で再配置したりすることもできます。
 
-![AEM起動パッドウィジェット ](/help/implementing/cloud-manager/assets/aem-launchpad-widgets.png)
+![Experience Hub ウィジェット ](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
 
 「**オーサリング環境**」セクションには、アクセス可能なすべてのAEM環境が表示され、「**最近**」セクションには、AEM システム内で追跡された最近訪問したページのリストが表示されます。
 
 ナビゲーション要素にはAssets参照が含まれます。この参照は、ユーザーからアクセス可能な実稼動環境のリポジトリを読み込みます。
 
-![AEM起動パッドのナビゲーション要素 ](/help/implementing/cloud-manager/assets/aem-launchpad-navigation.png)
+![Experience Hub ナビゲーション要素 ](/help/implementing/cloud-manager/assets/experience-hub-navigation.png)
 
 使用可能な実稼動 AEM Cloud Service 環境がない場合、ユーザーのオプションはグレー表示（使用不可）になります。
 
-![AEMの起動パッドに実稼動環境がありません ](/help/implementing/cloud-manager/assets/aem-launchpad-no-prod-environs.png)
+![ 実稼動環境なしの Experience Hub](/help/implementing/cloud-manager/assets/experience-hub-no-prod-environs.png)
 
 
 

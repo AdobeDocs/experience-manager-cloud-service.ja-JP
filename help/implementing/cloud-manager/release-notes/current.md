@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: fcd9ead02ca5061778001d954ae9a9fc6088d5d1
+source-git-commit: 7ae9d2bb3cf6066d13567c54b18f21fd4b1eff9e
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
