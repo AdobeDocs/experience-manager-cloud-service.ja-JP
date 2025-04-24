@@ -4,10 +4,10 @@ description: AEM as a Cloud Service のログを使用して一元的なログ�
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 60bf6c6077ecfc6700ed9284834cf13e3772e25a
-workflow-type: ht
-source-wordcount: '2364'
-ht-degree: 100%
+source-git-commit: 7efbdecdddb66611cbde0dc23928a61044cc96d5
+workflow-type: tm+mt
+source-wordcount: '2377'
+ht-degree: 99%
 
 ---
 
@@ -411,7 +411,7 @@ Error、Warn、Info、Debug および Trace1～Trace8 に設定でき、デフ�
 
 ```
 Define REWRITE_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define REWRITE_LOG_LEVEL warn
@@ -489,7 +489,7 @@ Dispatcher ログはその他にも複数レベルのログ精度をサポート
 
 ```
 Define DISP_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define DISP_LOG_LEVEL warn
@@ -554,6 +554,7 @@ CDN ログは、json 形式に準拠しているという点で、他のログ�
 | *pop* | CDN キャッシュサーバーのデータセンターです。 |
 | *rules* | [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)と WAF フラグに一致する名前。一致がブロックされたかどうかも示します。一致するルールがない場合は空です。 |
 
+CDN ログは、[ リクエスト/応答の変換 ](/help/implementing/dispatcher/cdn-configuring-traffic.md#logproperty) を使用して独自のプロパティで拡張できます。
 
 ## ログのアクセス方法 {#how-to-access-logs}
 
@@ -581,7 +582,7 @@ AEM ログは `crx-quickstart/logs` フォルダー内にあり、次のログ�
 * AEM HTTP リクエストログ： `request.log`
 * AEM HTTP アクセスログ： `access.log`
 
-Dispatcher を含む Apache レイヤーログは、Dispatcher を保持する Docker コンテナにあります。Dispatcher の開始方法については、[Dispatcher のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=ja)を参照してください。
+Dispatcher を含む Apache レイヤーログは、Dispatcher を保持する Docker コンテナにあります。Dispatcher の開始方法については、[Dispatcher のドキュメント](/help/implementing/dispatcher/disp-overview.md)を参照してください。
 
 ログを取得するには、以下の手順に従います。
 

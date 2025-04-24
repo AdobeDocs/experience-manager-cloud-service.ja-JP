@@ -4,10 +4,10 @@ description: 設定ファイルでルールとフィルターを宣言し、Clou
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: a43fdc3f9b9ef502eb0af232b1c6aedbab159f1f
+source-git-commit: 9e0217a4cbbbca1816b47f74a9f327add3a8882d
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 99%
+source-wordcount: '1493'
+ht-degree: 89%
 
 ---
 
@@ -106,7 +106,6 @@ data:
         actions:
           - type: unset
             reqHeader: x-some-header
-
       - name: unset-matching-query-params-rule
         when:
           reqProperty: path
@@ -114,7 +113,6 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^removeMe_.*$
-
       - name: unset-all-query-params-except-exact-two-rule
         when:
           reqProperty: path
@@ -122,7 +120,6 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
-
       - name: multi-action
         when:
           reqProperty: path
@@ -134,7 +131,6 @@ data:
           - type: set
             reqHeader: x-header2
             value: '201'
-
       - name: replace-html
         when:
           reqProperty: path
@@ -145,6 +141,13 @@ data:
             op: replace
             match: \.html$
             replacement: ""
+      - name: log-on-request
+        when: "*"
+        actions:
+          - type: set
+            logProperty: forwarded_host
+            value:
+              reqHeader: x-forwarded-host
 ```
 
 **アクション**
@@ -153,12 +156,20 @@ data:
 
 | 名前 | プロパティ | 意味 |
 |-----------|--------------------------|-------------|
-| **set** | （reqProperty、reqHeader、queryParam、reqCookie のいずれか）、value | 指定されたリクエストパラメーター（「path」プロパティのみサポートされています）またはリクエストヘッダー、クエリパラメーター、Cookie のいずれかを、文字列リテラルまたはリクエストパラメーターの特定の値に設定します。 |
-|     | var、value | 指定されたリクエストプロパティを特定の値に設定します。 |
-| **unset** | reqProperty | 指定されたリクエストパラメーター（「path」プロパティのみサポートされています）またはリクエストヘッダー、クエリパラメーター、Cookie のいずれかを、文字列リテラルまたはリクエストパラメーターの特定の値に削除します。 |
-|         | var | 指定した変数を削除します。 |
-|         | queryParamMatch | 指定した正規表現に一致するすべてのクエリパラメーターを削除します。 |
-|         | queryParamDoesNotMatch | 指定した正規表現に一致しないすべてのクエリパラメーターを削除します。 |
+| **set** | reqProperty、値 | 指定されたリクエストパラメーターを設定します（「path」プロパティのみサポートされています） |
+|     | reqHeader、値 | 指定されたリクエストヘッダーを指定された値に設定します。 |
+|     | queryParam、値 | 指定されたクエリパラメーターを特定の値に設定します。 |
+|     | reqCookie、値 | 指定されたリクエスト cookie を指定された値に設定します。 |
+|     | logProperty、値#logProperty ツイカ# | 指定された CDN ログプロパティに指定された値を設定します。 |
+|     | var、値 | 指定された変数を特定の値に設定します。 |
+| **unset** | reqProperty | 指定されたリクエストパラメーターを削除します（「path」プロパティのみがサポートされています） |
+|     | reqHeader、値 | 指定されたリクエストヘッダーを削除します。 |
+|     | queryParam、値 | 指定されたクエリパラメーターを削除します。 |
+|     | reqCookie、値 | 指定した cookie を削除します。 |
+|     | logProperty、値#logProperty ツイカ# | 指定された CDN ログプロパティを削除します。 |
+|     | var | 指定した変数を削除します。 |
+|     | queryParamMatch | 指定した正規表現に一致するすべてのクエリパラメーターを削除します。 |
+|     | queryParamDoesNotMatch | 指定した正規表現に一致しないすべてのクエリパラメーターを削除します。 |
 | **transform** | op:replace、（reqProperty、reqHeader、queryParam、reqCookie、var のいずれか）、match、replacement | リクエストパラメーターの一部（「path」プロパティのみサポートされています）、またはリクエストヘッダー、クエリパラメーター、Cookie、変数のいずれかを新しい値に置き換えます。 |
 |              | op:tolower、（reqProperty、reqHeader、queryParam、reqCookie、var のいずれか） | リクエストパラメーター（「path」プロパティのみサポートされています）またはリクエストヘッダー、クエリパラメーター、Cookie、変数のいずれかを小文字の値に設定します。 |
 
@@ -240,9 +251,60 @@ data:
             value: some header value
 ```
 
+### ログプロパティ {#logproperty}
+
+リクエストと応答の変換を使用して、CDN ログに独自のログプロパティを追加できます。
+
+設定例：
+
+```
+requestTransformations:
+  rules:
+    - name: log-on-request
+      when: "*"
+      actions:
+        - type: set
+          logProperty: forwarded_host
+          value:
+            reqHeader: x-forwarded-host
+responseTransformations:
+  rules:
+    - name: log-on-response
+      when: '*'
+      actions:
+        - type: set
+          logProperty: cache_control
+          value:
+            respHeader: cache-control
+```
+
+ログ例：
+
+```
+{
+"timestamp": "2025-03-26T09:20:01+0000",
+"ttfb": 19,
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"rid": "974e67f6",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"host": "example.com",
+"url": "/content/hello.png",
+"method": "GET",
+"res_ctype": "image/png",
+"cache": "PASS",
+"status": 200,
+"res_age": 0,
+"pop": "PAR",
+"rules": "",
+"forwarded_host": "example.com",
+"cache_control": "max-age=300"
+}
+```
+
 ## 応答変換 {#response-transformations}
 
-応答変換ルールを使用すると、CDN の送信応答のヘッダーを設定および設定解除できます。また、リクエスト変換ルールで以前に設定された変数を参照するには、上記の例を参照してください。応答のステータスコードも設定できます。
+応答変換ルールを使用すると、CDN の送信応答のヘッダー、Cookie およびステータスを設定および設定解除できます。 また、リクエスト変換ルールで以前に設定された変数を参照するには、上記の例を参照してください。
 
 設定例：
 
@@ -262,7 +324,6 @@ data:
           - type: set
             value: value-set-by-resp-rule
             respHeader: x-resp-header
-
       - name: unset-response-header-rule
         when:
           reqProperty: path
@@ -270,8 +331,6 @@ data:
         actions:
           - type: unset
             respHeader: x-header1
-
-      # Example: Multi-action on response header
       - name: multi-action-response-header-rule
         when:
           reqProperty: path
@@ -283,7 +342,6 @@ data:
           - type: set
             respHeader: x-resp-header-2
             value: value-set-by-resp-rule-2
-      # Example: setting status code
       - name: status-code-rule
         when:
           reqProperty: path
@@ -291,7 +349,25 @@ data:
         actions:
           - type: set
             respProperty: status
-            value: '410'        
+            value: '410'
+      - name: set-response-cookie-with-attributes-as-object
+        when: '*'
+        actions:
+          - type: set
+            respCookie: first-name
+            value: first-value
+            attributes:
+              expires: '2025-08-29T10:00:00'
+              domain: example.com
+              path: /some-path
+              secure: true
+              httpOnly: true
+              extension: ANYTHING
+      - name: unset-response-cookie
+        when: '*'
+        actions:
+          - type: unset
+            respCookie: third-name
 ```
 
 **アクション**
@@ -300,9 +376,15 @@ data:
 
 | 名前 | プロパティ | 意味 |
 |-----------|--------------------------|-------------|
-| **set** | reqHeader、値 | 指定されたヘッダーを応答内の指定された値に設定します。 |
-|          | respProperty、値 | 応答プロパティを設定します。ステータスコードを設定するには、「status」プロパティのみをサポートします。 |
-| **設定解除** | respHeader | 指定したヘッダーを応答から削除します。 |
+| **set** | respProperty、値 | 応答プロパティを設定します。ステータスコードを設定するには、「status」プロパティのみをサポートします。 |
+|     | respHeader、値#respHeader# | 指定された応答ヘッダーを指定された値に設定します。 |
+|     | respCookie、属性（有効期限、ドメイン、パス、セキュア、httpOnly、拡張機能）、値 | 特定の属性を持つ指定されたリクエスト cookie を指定された値に設定します。 |
+|     | logProperty、値#logProperty ツイカ# | 指定された CDN ログプロパティに指定された値を設定します。 |
+|     | var、値 | 指定された変数を特定の値に設定します。 |
+| **unset** | respHeader | 指定したヘッダーを応答から削除します。 |
+|     | respCookie、値 | 指定した cookie を削除します。 |
+|     | logProperty、値#logProperty ツイカ# | 指定された CDN ログプロパティを削除します。 |
+|     | var | 指定した変数を削除します。 |
 
 ## 接触チャネルセレクター {#origin-selectors}
 
