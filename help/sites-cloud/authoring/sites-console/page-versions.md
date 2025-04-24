@@ -5,10 +5,10 @@ exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b39c455c9bd4b50eb3777cd1a4bdbada48786d62
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 100%
+source-wordcount: '1574'
+ht-degree: 96%
 
 ---
 
@@ -25,6 +25,13 @@ ht-degree: 100%
 * ページの現在のバージョンを以前のバージョンと比較する。
    * テキストと画像の差がハイライトされます。
 * タイムワープはページのバージョンを使用して、パブリッシュ環境の状態を判断します。
+
+>[!NOTE]
+>
+>AEM リポジトリでは、コンテンツのみがバージョン管理されます。 コード、CSS、JavaScriptなどの動的リソースは、バージョン管理されません。
+>
+>* バージョンを表示する場合、コンテンツは、リポジトリの現在のコード、CSS およびJavaScriptで表示されます。
+>* バージョンを復元すると、コンテンツのみが復元され、リポジトリの現在のコード、CSS およびJavaScriptが適用されます。
 
 ## 新しいバージョンの作成 {#creating-a-new-version}
 
