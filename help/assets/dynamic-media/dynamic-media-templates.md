@@ -4,9 +4,9 @@ description: WYSIWYG テンプレートエディターを使用して  [!DNL Dyn
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 5bdbd0c7273a1e8a650a87a7d0b0c9749f5e1030
+source-git-commit: f3dea4724f757090a504c3144e17fca7075acc52
 workflow-type: tm+mt
-source-wordcount: '3176'
+source-wordcount: '3165'
 ht-degree: 52%
 
 ---
@@ -322,8 +322,7 @@ URL 内でパラメーターを直接編集するのは面倒な場合があり�
 
    ![CTAを追加 ](/help/assets/assets/add-cta.png)
 
-1. **[!UICONTROL プレビュー]** をクリックして、テンプレートをプレビューし、定義されたパラメーターを確認します。
-1. **[!UICONTROL 公開]** をクリックし、**[!UICONTROL はい]** を選択してテンプレートを公開します（まだ公開していない場合）。
+1. **[!UICONTROL プレビュー]** をクリックし、「**[!UICONTROL 公開]**」を選択してテンプレートを公開します（まだ公開していない場合）。
 1. このテンプレートが保存されているフォルダーに移動し、このテンプレートを選択して ![ 詳細ページ ](/help/assets/assets/details-page-icon.svg)**[!UICONTROL 詳細]** をクリックします。
 1. **[!UICONTROL コピーオプション]** をクリックし、「**[!UICONTROL 埋め込みコードをコピー]**」を選択します。 埋め込みコードをコピーするには、[!DNL AEM and Dynamic Media] にテンプレート画像を必ず公開してください。
 
