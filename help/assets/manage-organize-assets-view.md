@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: b7f8b4886372e2210ca8899260b3eb11b75ee798
+source-git-commit: 89c47db38bf26f8c5984278e49ad7727a8ec03e5
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 89%
+source-wordcount: '1700'
+ht-degree: 88%
 
 ---
 
@@ -214,10 +214,6 @@ You can also create versions from the versions timeline. Select the latest versi
 
 
    使用できるオプションについて詳しくは、[承認済みアセットのデフォルトの承認ターゲットと公開先](#default-approval-target-options-publish-destinations)を参照してください。
-
-   >[!NOTE]
-   >
-   >承認ターゲットの設定は、使用できる機能が制限されています。サポートチケットを作成して、有効または無効にすることができます。OpenAPI を備えた Dynamic Media が有効になっている場合は、デフォルトで有効になります。
 
    ![承認ステータス](/help/assets/assets/approval-status-delivery.png)
 
