@@ -4,10 +4,10 @@ description: コンテンツ転送ツールの基本を学ぶ
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: ccd96892ccce0ed896cd01978f07e2a556c18527
+source-git-commit: 4dcfc36167a40b59e251750bb112b073beddc52f
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 86%
+source-wordcount: '1642'
+ht-degree: 94%
 
 ---
 
@@ -93,13 +93,15 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   次のダイアログボックスが表示されます。移行セットは、無操作状態が長時間続くと有効期限が切れます。警告がプロジェクトカードおよび移行ジョブテーブルの行に一定期間表示された後、移行セットは期限切れになり、そのデータは使用できなくなります。詳しくは、[移行セットの有効期限](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry)を参照してください。
+   次のダイアログボックスが表示されます。移行セットは、無操作状態が長時間続くと有効期限が切れます。警告がプロジェクトカードおよび移行ジョブテーブルの行に一定期間表示された後、移行セットは期限切れになり、そのデータは使用できなくなります。詳しくは、[移行セットの有効期限](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry)を確認してください。
+
+   移行セットの作成時に、一時的な移行データが保存される地域を選択できます。  取り込み時に最適なパフォーマンスを確保するために、ターゲットクラウド環境に最も近い地域を選択することをお勧めします。  移行セットの作成後に地域を変更することはできません。別の地域を使用するには、新しい移行セットを作成する必要があります。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
    >[!NOTE]
    >
-   >名前は、AEMノードと同じ規則に従う必要があるので、次の文字を含めることはできません。. / : [ ] | *
+   >名前はAEM ノードと同じ規則に従う必要があるので、次の文字を含めることはできません：&#39;. / : [ ] | * &lt; > ^ ? { } % # ``、異常な記号や絵文字はありません。
 
 1. これで、リスト表示に移行リストが表示されます。3 つのドット記号（**...**）をクリックして、ドロップダウンを開き、「**抽出キーをコピー**」を選択します。このキーは、抽出段階で必要になります。この抽出キーをコピーします。
 
@@ -143,9 +145,9 @@ Cloud Acceleration Manager で作成した移行セットを設定するには�
       >バージョンを移行セットの一部に含める予定で、`wipe=false` を指定して追加を行う場合、コンテンツ転送ツールの現在の制限事項により、バージョンのパージを無効にする必要があります。バージョンのパージを有効にしたまま、移行セットへの追加を行う場合は、`wipe=true` を指定して取り込みを実行する必要があります。
 
       >[!NOTE]
-      >CTT バージョン（3.0.24）以降、コンテンツ転送ツールに新機能が含まれ、パスの包含および除外プロセスが強化されました。 以前は、パスを 1 つずつ選択する必要があり、面倒で時間がかかっていました。 現在は、ユーザーは好みに応じて、UI から直接パスを含めたり、CSV ファイルをアップロードしたりできます。
+      >CTT バージョン（3.0.24）以降、コンテンツトランスファーツールに新機能が含まれ、パスの包含および除外プロセスが強化されました。以前は、パスを 1 つずつ選択する必要があり、面倒で時間がかかっていました。現在は、ユーザーは環境設定に応じて、UI から直接パスを含めたり、CSV ファイルをアップロードしたりできます。
 
-   1. **含めるパス**： パスブラウザーを使用して、移行する必要があるパスを選択します。パスピッカーは、入力または選択による入力を受け付けます。 ユーザーは、パスを含めるオプションを UI から、または CSV ファイルをアップロードして、1 つだけ選択できます。
+   1. **含めるパス**： パスブラウザーを使用して、移行する必要があるパスを選択します。パスピッカーは、タイピングまたは選択による入力を受け付けます。ユーザーは、UI から、または CSV ファイルをアップロードすることによって、パスを含めるオプションを 1 つだけ選択できます。
       >[!IMPORTANT]
       >移行セットの作成時には、次のパスは制限されます。
       >* `/apps`
@@ -155,27 +157,27 @@ Cloud Acceleration Manager で作成した移行セットを設定するには�
 
       ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/includeAndExcludePath.png)
 
-      1. パスの選択のみが許可され、少なくとも 1 つのパスが存在する必要があります。パスが選択されていない場合、サーバーエラーが発生します。
+      1. パスの選択のみが許可され、1 つ以上のパスが存在する必要があります。パスを選択していない場合は、サーバーエラーが発生します。
 
          ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ServerError.png)
 
-      1. **CSV アップロードオプション** を使用する場合、CSV ファイルに有効なパスが含まれている必要があります。
+      1. **CSV アップロードオプション**&#x200B;を使用する場合、CSV ファイルに有効なパスが含まれている必要があります。
 
          ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/validCsvUpload.png)
 
-      1. パスピッカーに戻すには、ページを更新してやり直す必要があります。
+      1. パスピッカーに戻すには、ユーザーはページを更新して最初からやり直す必要があります。
 
-      1. アップロードされた CSV に **無効なパス** が見つかった場合、無効なパスは別のダイアログに表示されます。
+      1. アップロードした CSV に&#x200B;**無効なパス**&#x200B;が見つかった場合、別のダイアログに無効なパスが表示されます。
 
          ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/invalidPathsInCsv.png)
 
-      1. ユーザーは、CSV ファイルを修正して再度アップロードするか、UI を更新して、パスピッカーを使用してパスを選択する必要があります。
+      1. ユーザーは CSV ファイルを修正して再びアップロードするか、UI を更新して、パスピッカーでパスを選択する必要があります。
 
-   1. **除外するパス**：新機能を使用すると、特定のパスを含めない場合に、そのパスを除外できます。 例えば、include セクションのパスが/content/dam の場合、/content/dam/catalogs などのパスを除外できるようになりました。
+   1. **除外するパス**：新機能を使用すると、ユーザーは特定のパスを含めない場合に除外できます。例えば、include セクションのパスが /content/dam の場合、ユーザーは /content/dam/catalogs などのパスを除外できるようになりました。
 
       ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/excludePathHighlighted.png)
 
-1. **移行セットを作成**&#x200B;画面のすべてのフィールドに値を入力したら、「**保存**」をクリックします。
+1. **移行セットを作成**&#x200B;画面のすべてのフィールドを入力したら、「**保存**」をクリックします。
 
 <!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
