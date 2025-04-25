@@ -4,10 +4,10 @@ description: アダプティブフォームコアコンポーネント用のレ�
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '3131'
-ht-degree: 100%
+source-git-commit: 2637adfbac0e266abe5a023b9253e7e702884709
+workflow-type: tm+mt
+source-wordcount: '3152'
+ht-degree: 99%
 
 ---
 
@@ -103,6 +103,9 @@ In the following video, Adaptive Form components are bound with corresponding Ac
 ![送信アクションの画像](/help/forms/assets/submit-actions-img.png)
 
 
+>[!NOTE]
+>
+> **[!UICONTROL レコードのドキュメントバインド参照フィールド]** プロパティを使用すると、任意のフォームデータモデルのレコードのドキュメントを保存できます。
 
 ## レコードのドキュメントテンプレートの増分更新 {#document-of-record-template-incremental-updates}
 

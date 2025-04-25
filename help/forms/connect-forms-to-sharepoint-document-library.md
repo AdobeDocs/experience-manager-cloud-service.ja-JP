@@ -4,13 +4,13 @@ Description: This article explains how to send data from your Adaptive Form to a
 keywords: アダプティブフォーム用にSharePoint ドキュメントライブラリを接続する方法、SharePointに送信する方法、SharePoint ドキュメントライブラリ設定を作成する方法、アダプティブフォームで「SharePointに送信」送信アクションを使用する方法、AEM Forms データモデル SharePoint ドキュメントライブラリ、Forms データモデル SharePoint ドキュメントライブラリ、Forms データモデルをSharePoint ドキュメントライブラリに統合する方法
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 55e8f142e242f5f4010653a155a241ffcf801470
+exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
+source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 82%
+source-wordcount: '635'
+ht-degree: 75%
 
 ---
-
 
 # Microsoft® SharePoint ドキュメントライブラリへのアダプティブフォームの接続 {#connect-af-sharepoint-doc-library}
 
@@ -75,8 +75,14 @@ AEM Forms を Microsoft® Sharepoint ドキュメントライブラリストレ�
 1. データを保存する場所に「**[!UICONTROL ストレージ設定]**」を選択します。
 1. 「**[!UICONTROL 保存]**」をクリックして、送信設定を保存します。
 
-フォームを送信すると、データは指定した Microsoft® Sharepoint ドキュメントライブラリストレージに保存されます。
-データを保存するフォルダー構造は `/folder_name/form_name/year/month/date/submission_id/data` です。
+>[!NOTE]
+>
+> フォームを送信すると、データは指定したMicrosoft® Sharepoint Document Library ストレージに保存されます。 データを保存するフォルダー構造は `/folder_name/form_name/year/month/date/submission_id/data` です。
+
+>[!NOTE]
+>
+> 添付ファイルも `/folder_name/form_name/year/month/date/submission_id/data` ディレクトリに保存されます。 ただし、「**添付ファイルを元の名前で保存**」を選択すると、添付ファイルは元のファイル名でフォルダーに保存されます。
+> ![画像 ](/help/forms/assets/sp-doc-attachment-af2.png){height=50%,width=50%}
 
 ## 関連記事
 

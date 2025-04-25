@@ -3,17 +3,19 @@ title: WYSIWYG ベースのオーサリング用のフォームフラグメン�
 description: ユニバーサルエディターでフォームフラグメントを作成し、フォームに追加する方法を説明します。
 feature: Edge Delivery Services
 role: Admin, User, Developer
-hide: true
-hidefromtoc: true
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 615f4686fed0d17b7d7aa5cd86c545b11952d792
-workflow-type: ht
-source-wordcount: '1324'
-ht-degree: 100%
+source-git-commit: 28a8ce3b3afbdc80d06b50bf4824d52cb81954fe
+workflow-type: tm+mt
+source-wordcount: '1355'
+ht-degree: 90%
 
 ---
 
-# ユニバーサルエディターでの Edge Delivery Services フォームフラグメントの作成と使用
+# ユニバーサルエディターでのフォームフラグメントの作成
+
+<span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセス権をリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。例えば、リポジトリ URL が https://github.com/adobe/abc の場合、組織名は「adobe」、リポジトリ名は「abc」になります。</span>
+
+<span class="preview">これはプレリリース機能で、[プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)を通してアクセスできます。</span>
 
 Forms には、多くの場合、連絡先情報、ID の詳細、同意契約などの共通セクションが含まれています。フォーム開発者は、新しいフォームを作成するたびに、これらのセクションを作成しますが、この作業は繰り返し行われ、時間がかかります。
 こうした作業の重複を排除するには、ユニバーサルエディターでは、パネルやフィールドのグループなどの再利用可能なフォームセグメントを 1 回だけ作成し、様々なフォームで再利用する方法を提供しています。この再利用可能で、モジュール化されたスタンドアロンのセグメントは、フォームフラグメントと呼ばれています。例えば、従業員や管理者の連絡先の詳細など、同じ緊急連絡先フラグメントを、フォームの異なるセクションで使用できます。
@@ -23,7 +25,11 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
 ## Edge Delivery Services フォームフラグメントの機能
 
 * **フォームフラグメントとの一貫性の維持**
-フラグメントを様々なフォームに統合して、一貫性のあるレイアウトと標準化されたコンテンツを維持できます。「1 回の変更でどこにでも反映」アプローチを使用すると、フラグメントに対する更新はすべてのフォームに自動的に適用されます。
+フラグメントを様々なフォームに統合して、一貫性のあるレイアウトと標準化されたコンテンツを維持できます。
+
+  >[!NOTE]
+  >
+  > 「1 回変更し、すべての場所を反映」アプローチを使用すると、フラグメントに対して行われた更新は、プレビューモードですべてのフォームに自動的に適用されます。 ただし、公開モードでは、変更を反映するために、フラグメントを公開するか、フォームを再公開する必要があります。
 
 * **フォーム内でフォームフラグメントを複数回追加**
 フォーム内でフォームフラグメントを複数回追加し、そのデータバインディングプロパティをデータソースまたはスキーマに設定できます。
@@ -38,13 +44,13 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
 ## Edge Delivery Services フォームフラグメント使用時の考慮事項
 
 * フラグメントと、フラグメントを使用するフォームの両方に、同じ GitHub URL を追加する必要があります。
-* 参照によって挿入されたフォームフラグメントをフォーム内から編集できません。編集するには、スタンドアロンのフォームフラグメントを変更します。
+* フォーム内でフォームフラグメントを編集することはできません。 変更を加えるには、スタンドアロンのフォームフラグメントを変更します。
 
-## Edge Delivery Services フォームフラグメントを作成する前提条件
+## 前提条件
 
 * [GitHub リポジトリを設定](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)して、AEM 環境と GitHub リポジトリの間の接続を確立します。
 * 既に Edge Delivery Services を使用している場合は、最新バージョンの[アダプティブフォームブロック](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)を GitHub リポジトリに追加します。
-* AEM Forms オーサーインスタンスには、Edge Delivery Services に基づくテンプレートが含まれます。 使用する環境に[最新バージョンのコアコンポーネント](https://github.com/adobe/aem-core-forms-components)がインストールされていることを確認します。
+* AEM Forms オーサーインスタンスには、Edge Delivery Servicesに基づくテンプレートが含まれています。
 * AEM Forms as a Cloud Service オーサーインスタンスの URL と GitHub リポジトリをすぐに使用できる状態にします。
 
 ## Edge Delivery Services フォームフラグメントの操作
@@ -108,7 +114,7 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
 
 ### フォームへのフォームフラグメントの追加
 
-従業員とスーパーバイザーの両方の情報を含むシンプルな `Employee Details` フォームを作成しましょう。`Contact Details` フラグメントは、従業員パネルとスーパーバイザーパネルの両方で使用できます。フォームフラグメントをフォームで使用するには、次の手順を実行します。
+従業員と管理者の両方の情報を含むシンプルな `Employee Details` フォームを作成しましょう。 `Contact Details` フラグメントは、従業員パネルとスーパーバイザーパネルの両方で使用できます。フォームフラグメントをフォームで使用するには、次の手順を実行します。
 
 1. フォームを編集モードで開きます。
 1. フォームフラグメントコンポーネントをフォームに追加します。
@@ -132,7 +138,7 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
 
 1. 「**[!UICONTROL 選択]**」をクリックします。
 
-   フォームフラグメントは、フォーム内の参照により追加され、スタンドアロンのフォームフラグメントと同期されたままとなります。つまり、フラグメントに加えた変更は、そのフラグメントがフォームに組み込まれるすべてのインスタンスに反映されます。
+   フォームフラグメントは、参照によってフォームに追加され、スタンドアロンのフォームフラグメントと同期されたままになります。
 
    ![フォーム内のフラグメント](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 

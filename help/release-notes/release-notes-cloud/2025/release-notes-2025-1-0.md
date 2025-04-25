@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.1.0 リ�
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: e178672b51ede70b10bb57f0d7ffb4d39279a84e
 workflow-type: tm+mt
-source-wordcount: '1740'
-ht-degree: 93%
+source-wordcount: '1703'
+ht-degree: 92%
 
 ---
 
@@ -97,9 +97,6 @@ CMAF が有効になっている Dynamic Media ビデオ配信で、アダプテ
 
 * DASH はアダプティブビデオストリーミング用の国際標準プロトコルで、業界で広く採用されています。
 
-**アセットの関連付け**
-
-アセットビューでは、簡素化されたアセットの詳細パネルでアセットの関係付けの表示と編集がサポートされるようになりました。ソースや派生などの関係をコンテンツに簡単に追加できるので、ユーザーは関連するヒーローコンテンツをより効果的に見つけることができます。
 
 **アセットの再処理**
 

@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: bbf66195593032eb2ccf073ec78685c9d9726235
-workflow-type: ht
-source-wordcount: '1092'
-ht-degree: 100%
+source-git-commit: 11d019e10dc9246e5560f7fe27472d047cdc7caa
+workflow-type: tm+mt
+source-wordcount: '1551'
+ht-degree: 48%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.3.0）のリリース日は、2025年3月27日（PT）です。次回の機能リリース（2025.4.0）は 2025年4月24日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.4.0）のリリース日は、2025年4月24日（PT）です。次回の機能リリース（2025.5.0）は 2025年5月29日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -44,49 +44,114 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 -->
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Experience Manager Sitesの新機能 {#enhancements-sites}
+
+**新しいコンテンツフラグメントモデル管理 UI**
+
+さらに、新しいクライアントサイドユーザーインターフェイスのリストを確認AEM コンテンツフラグメントを使用する場合、コンテンツフラグメントモデル用に新しい管理 UI が使用できるようになりました。 新しい UI は、フィルターを使用してモデルを検索でき、モデルタグと、特定のモデルに基づいて存在するコンテンツフラグメントを表示する、クリーンで最新のリスト表示を提供します。 ドキュメントは [ こちら ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) で参照できます。
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Dynamic Media の新機能 {#new-features-dynamic-media}
+### Dynamic Media （Scene7） {#dynamic-media-scene7}
 
-**Open API を備えた Dynamic Media で配信されるビデオのロングフォームのサポート**
+**Dynamic Media （Scene7）はセキュリティの強化環境ではサポートされていません**
 
-OpenAPI を備えた Dynamic Media で、ロングフォームのビデオがサポートされるようになりました。ロングフォームのビデオは、最大 50 GB および 2 時間をサポートできます。
+AEM as a Cloud Service上の Dynamic Media （Scene7）は HIPAA に対応しておらず、セキュリティの強化が有効になっているAEM環境では使用できません。
 
-### Dynamic Media Classic {#dmc}
+2025 年 4 月のAEM as a Cloud Service リリース以降、セキュリティが強化された環境では、技術的な制限により、Dynamic Media （Scene7）を設定できなくなります。 その結果、これらの環境では **ツール**/**クラウドサービス** の下の **Dynamic Media 設定** カードが表示されなくなります。
 
-<!-- CARRY OVER TO APRIL 2025 RELEASE NOTES -->
+さらに、AEM 6.5 を使用しているお客様は、Dynamic Media （Scene7）スタックが HIPAA に対応していないことに注意してください。
+
+### Dynamic Media Classic {#dynamic-media-classic}
+
+**レポート**
 
 Dynamic Media Classic レポートダッシュボードの「帯域幅」タブは、2025年4月以降サポートされなくなりました。
 
 [帯域幅とストレージ、レポートのタイプ](https://experienceleague.adobe.com/ja/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports)を参照してください。
 
 
-## アセットビューの新機能 {#new-features-assets-view}
+## Assets ビューの新機能 {#new-features-assets-view}
 
+**アセットの関連付け**
 
-**ルートタグのサポート**
+アセットビューでは、簡素化されたアセットの詳細パネルでアセットの関係付けの表示と編集がサポートされるようになりました。Sourceや派生などの関係をコンテンツに簡単に追加して、関連するヒーローコンテンツをより効果的に見つけられるようにします。
 
-AEM Assets では、カスタムメタデータへのメタデータフォームのタグプロパティのマッピングがサポートされるようになりました。さらに、管理者は、特定のルートタグと、このルートタグの下に存在するタグへのアクセスを制限して、ユーザーに対するタグの可用性を制限できます。
+![Assets関係の例 ](/help/assets/assets/asset-relations-example.png)
+
+**アセットのバージョンの比較**
+
+Assets ビューを使用して、アセットの任意のバージョンと最新のバージョンをすばやく選択および比較できるようになりました。
+
+![ アセットのバージョンの比較 ](/help/assets/assets/version-compare2.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### AEM Forms の早期アクセス機能 {#forms-new-early-access-features}
+### プレリリース機能
+
+* [ ユニバーサルエディター – フォームフラグメント ](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)：ユニバーサルエディターで、アダプティブForms用のフォームフラグメントを作成して再利用できるようになりました。 これらのフラグメントは、一度作成して、複数のフォームに適用できる再利用可能なフォームセクション（連絡先の詳細、同意フィールドなど）です。 この機能により、フォームの作成が合理化され、一貫性が確保され、オーサリングの効率が向上します。
+
+* [SharePoint ドキュメントライブラリ – 添付ファイルを元のファイル名で保存 ](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): SharePoint ドキュメントライブラリに添付ファイルを保存する際に、元のファイル名を使用してフォームの添付ファイルを保存するオプションが追加されました。 この機能強化により、アップロードされたファイルの識別と管理が簡素化されます。
+
+* **ルールエディター**:
+   * [ 「When」句内のクリックイベントを含むバイナリ条件 ](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor)：ルールエディターでは、ボタンクリックイベント（_クリックされた_）と「When」句内の他の条件を組み合わせることができるようになりました。 これにより、ユーザーの操作などに基づいて、ルールの実行をより正確に制御できます。 メモ：複数の条件を使用する場合、クリックイベントを最初の条件にする必要があります。
+   * [ フィールドおよびパネルの検証条件 ](/help/forms/rule-editor-core-components-usecases.md)：ルールエディターに _IsValid_ 条件と _IsNotValid_ 条件が含まれるようになりました。 これらを使用すると、特定のフィールドまたはパネル全体（水平タブ、垂直タブ、アコーディオン、ウィザードなどのレイアウトを含む）の検証ステータスを確認でき、検証結果に基づいてフォームのナビゲーションとユーザーエクスペリエンスを向上させることができます。
+* **SharePoint リストの範囲管理の向上**:SharePoint サイトでは、/sites や/teams などのすべての管理パスをサポートするようになりました。 この機能強化により、様々なSharePoint サイト構造にわたる統合が可能になり、組織のコンテンツへの柔軟な接続が可能になります。
+* **SharePoint リストへのレコードのドキュメントの保存のサポート**:SharePoint リストベースのフォームデータモデル（FDM）を使用して作成されたFormsでは、レコードのドキュメントバインド参照フィールドプロパティを設定することにより、レコードのドキュメント（DoR）をSharePoint リストに保存できるようになりました。 この機能強化により、サポートされているフォームデータとドキュメントをSharePoint ストレージとシームレスに統合できます。
+
+### AEM Formsの早期アクセス機能 {#forms-new-early-access-features}
 
 AEM Forms 早期アクセスプログラムでは、最先端のイノベーションに排他的にアクセスし、その開発に貢献できるユニークな機会を提供します。
 
 このリリースノートでは、現在のリリースで提供されるイノベーションのリストを示します。 早期アクセスプログラムで利用可能なイノベーションの完全なリストについては、[AEM Forms 早期アクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
 
-#### アダプティブフォームの HTML メールテンプレート
+#### Adobe Experience Platform（AEP）とFormsの統合
 
-アダプティブフォームでは、[HTML メールテンプレート](/help/forms/html-email-templates-in-adaptive-forms.md)を使用できます。HTML メールテンプレートを使用すると、フォームの送信時に、リッチでパーソナライズされた、魅力的な外観のメールを送信できます。これらのメールは、フォームデータでカスタマイズしたり、画像やリンクなどの様々なメールタグを使用して強化したりできます。アダプティブフォームでは、HTML テンプレートを含むファイルをアップロードするか、プレーンテキストエディターを使用してこれらのテンプレートを作成できます。
+FormsとAEPの統合機能が、早期導入ユーザー向けに提供されるようになりました。
 
-![HTML メールテンプレート](/help/forms/assets/html-email.png)
+## CIF アドオン {#cloud-services-cif}
 
-#### クラウドストレージのサポートの強化：Azure Blob Storage への直接 PDF アップロード
+### 機能強化 {#enhancements-cif}
 
-AEM Forms ドキュメント生成 API で、Azure Blob Storage に[生成された PDF ドキュメントを直接アップロード](/help/forms/early-access-ea-features.md#doc-generation-api)できるようになりました。この機能強化により、ストレージと取得が合理化され、効率の向上やクラウドワークフローとの統合が促進されます。
+* CIF製品リファレンスデータタイプの製品バリアントセレクションを追加
+* [ 試行用 ]:PDP のCIF コアコンポーネントにおける JSON+LD
+* [ 試行的 ]:CIFでキャッシュをクリアする機能
+
+### バグ修正 {#bug-fixes-cif}
+
+* 製品フィールドの検索問題を修正しました
+* 製品の URL 形式が#variant_sku で期待どおりに動作しない
+* 製品リストコンポーネントに 20 個を超える SKU を追加できない
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
+
+### OpenAPI ベースの API {#open-apis}
+
+開発者は、AEM as Cloud Service の機能を独自のアプリケーションやツールに深く統合できます。 新しい AEM as a Cloud Service API は、OpenAPI 仕様に従い、一貫性の確保、明確な文書化、使いやすさを目標とします。認証が必要なエンドポイントの資格情報は、Adobe Developer Console プロジェクトを作成することで生成され、OAuth サーバー間、web アプリ、シングルページアプリ（SPA）をサポートします。
+
+OpenAPI ベースの API の [ 完全なリストを参照 ](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis)、[ 詳細情報 ](/help/implementing/developing/open-api-based-apis.md) および設定と使用方法を説明した [ エンドツーエンドのチュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) を試してください。
+
+認証済み API を後で使用できるように設定する方法については、このビデオをご覧ください。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
+
+### CDN 設定関連の機能強化 {#cdn-enhancements}
+
+Adobeが管理する CDN は、[ 設定パイプラインの記事 ](/help/operations/config-pipeline.md#configurations) で説明されているように、柔軟な設定オプションを提供します。 最近の機能を次に示します。
+
+#### CDN ログに追加のプロパティを含める {#props-in-cdnlogs}
+
+デバッグやデータ分析などのシナリオで役立つ場合、[ リクエストと応答の変換 ](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) で `logProperty` アクションを設定することで、デフォルトのプロパティ以外の詳細を CDN ログに含めることができます。
+
+#### 一致条件としての地域、大陸、および組織プロパティ {#matching-conditions}
+
+CDN ルールが、地域、大陸、組織に基づいて、トラフィックのブロックやリダイレクトなどのユースケースで一致するようになりました。 `clientRegion` と `clientContinent` は、既にサポートされている `clientCountry` を地域に基づいて照合するように強化し、`clientAsName` と `clientAsNumber` は Autonomous Systems と照合して、大規模な ISP、企業、クラウドプロバイダーを特定します。 これらの [ 新しく公開されたリクエストプロパティ ](/help/security/traffic-filter-rules-including-waf.md#condition-structure) について説明します。
+
+#### Cookie の値を設定 {#cookie-attributes}
+
+cookie の属性は [ 応答の変換 ](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) で設定できます。
 
 ### Java 21 サポート {#java21}
 
@@ -98,7 +163,7 @@ Java 17 または 21 ビルドが検出されると、より高パフォーマ�
 >
 > Java 21 **ランタイム**&#x200B;は、2月に開発／RDE 環境にデプロイされました。**4月28日（PT）と29日（PT）**&#x200B;にステージ／実稼動環境に適用する予定です。Java 21（または Java 17）を使用した&#x200B;**コードのビルド**&#x200B;は、Java 21 ランタイムとは独立しています。Java 21（または Java 17）でコードをビルドする手順を明示的に実行する必要があります。
 
-### その他の宛先へのAEM ログ転送 - ベータ版プログラム {#log-forwarding-earlyadopter}
+### その他の宛先へのAEM ログ転送 – Beta プログラム {#log-forwarding-earlyadopter}
 
 現在のベータ版では、AEM ログを New Relic（HTTPS を使用）、Amazon S3、Sumo Logic に転送できます。AEM ログ（Apache／Dispatcher を含む）はサポートされていますが、CDN ログはサポートされていません。アクセスについて詳しくは、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) までメールで送信してください。
 
@@ -113,7 +178,7 @@ Edge コンピューティングには、データ処理がブラウザーに近
 いくつかの考えられるユースケース：
 
 * コンテンツへのアクセスをゲートする IdP を使用した認証
-* 位置情報、デバイスタイプ、ユーザー属性などに基づく動的（パーソナライズされ、ローカライズされた）コンテンツのレンダリング。
+* 位置情報、デバイスタイプ、ユーザー属性などに基づいて動的コンテンツをレンダリングすることによるPersonalization
 * 高度な画像操作
 * CDN とオリジンの間のミドルウェア
 * ブラウザーとサードパーティ API の間のレイヤー（API 応答の再フォーマット用など）
@@ -121,31 +186,9 @@ Edge コンピューティングには、データ処理がブラウザーに近
 
 ご質問やご意見がある場合は、[aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) までメールで送信してください。
 
-### OpenAPI ベースの API - 早期導入プログラム {#open-apis-earlyadopter}
-
-開発者は、AEM as Cloud Service の機能を独自のアプリケーションやツールに深く統合できます。 新しい AEM as a Cloud Service API は、OpenAPI 仕様に従い、一貫性の確保、明確な文書化、使いやすさを目標とします。認証を必要とするエンドポイントの資格情報は、Adobe Developer Console プロジェクトを作成することによって生成されます。
-
-詳しくは、[OpenAPI ベースの AEM API](/help/implementing/developing/open-api-based-apis.md) を参照し、設定と使用方法を説明した[エンドツーエンドチュートリアル](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s)を試してください。
-
-具体的には、以下に示す API エンドポイントが早期導入プログラムの一部として使用可能です。 興味がある場合は、どのように活用する予定かを記載したメールを [aem-apis@adobe.com](mailto:aem-apis@adobe.com) まで送信してください。
-
-* [Sites Content Fragments API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
-* [Assets API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
-* [Sites and Assets Folders API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
-* [Forms Communications API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-
-### 新しい AEM Developer Console（パブリックベータ版） {#aem-developer-console-beta}
-
-クラウド環境でのコードのデバッグに対して、よりインタラクティブなエクスペリエンスを提供する、刷新された [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) を試してください。
-
-現在の AEM Developer Console の「*新しいコンソールが使用可能*」ボタンをクリックすると、誰でもパブリックベータ版にアクセスできます。 アドビでは、フィードバックを大切にしています。[aemcs-new-devconsole-ui-beta@adobe.com](mailto:aemcs-new-devconsole-ui-beta@adobe.com) までメールで送信してください。
-
 ## [!DNL Experience Manager] ガイド {#guides}
 
-Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0)を参照してください。
-
-<!-- THE FOLLOWING URL WAS USED ABOVE BUT IT WAS 404. IT WAS REPLACED WITH THE URL ABOVE 
-(https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0). -->
+Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 

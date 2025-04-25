@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
+source-git-commit: 321116ce8d6da53c431f68f437cbf7c0050a47e8
 workflow-type: tm+mt
-source-wordcount: '2171'
-ht-degree: 57%
+source-wordcount: '2333'
+ht-degree: 50%
 
 ---
 
@@ -26,17 +26,21 @@ AEM Forms as a Cloud では、複雑な条件やアクションを簡単に定�
 
 ルールエディターでは、次のような論理演算子やイベントを使用してルールを作成することができます。
 
-* **Is Equal To（次と等しい）**
-* **Is Not Equal To（次の値と等しくない）**
-* **Starts With（次の値で始まる）**
-* **Ends With（次の値で終わる）**
-* **Contains（次を含む）**
-* **Does not contain（次の値を含まない）**
-* **Is Empty（空である）**
-* **Is Not Empty（空ではない）**
-* **Has Selected（選択済み）：**&#x200B;チェックボックス、ドロップダウン、ラジオボタンの特定のオプションをユーザーが選択した場合に true を返します。
-* **Is Initialized (event)（初期化（イベント型））：**&#x200B;フォームオブジェクトがブラウザーでレンダリングされたときに true を返します。
-* **Is Changed (event)（変更（イベント型））：**&#x200B;フォームオブジェクトに入力された値または選択したオプションをユーザーが変更したときに true を返します。
+* **次と等しい** - フォームオブジェクトが指定した値と一致するかどうかを確認します。
+* **次に等しくない** - フォームオブジェクトが指定した値に一致するかどうかを確認します。
+* **次で始まる** - フォームオブジェクトが指定した文字列で始まるかどうかを確認します。
+* **次で終わる** - フォームオブジェクトが指定した文字列で終わるかどうかを確認します。
+* **Contains** - フォームオブジェクトに指定された部分文字列が含まれているかどうかを確認します。
+* **次を含まない** - フォームオブジェクトに指定された部分文字列が含まれていないかどうかを確認します。
+* **Is Empty** - フォームオブジェクトが空かどうかを確認します。
+* **Is Not Empty** - フォームオブジェクトが存在し、空でないかどうかを確認します。
+* **選択済み** - ユーザーが特定のチェックボックス、ドロップダウン、ラジオボタンオプションを選択した場合に true を返します。
+* **Is Initialized （event）** - フォームオブジェクトがブラウザーでレンダリングされたときに true を返します。
+* **Is Changed （event）** - フォームオブジェクトの値または選択範囲を変更したときに true を返します。
+* **クリック済み（イベント）** - ユーザーがフォームオブジェクト（ボタンなど）をクリックすると、true を返します。 ユーザーは [ ボタンのクリックに複数の条件を追加 ](/help/forms/rule-editor-core-components-usecases.md#set-focus-to-another-panel-on-button-click-if-the-first-panel-is-valid) できます。
+* **有効** - フォームオブジェクトが検証条件を満たしているかどうかを確認します。
+* **無効** - フォームオブジェクトが検証条件に失敗するかどうかを確認します。
+
 
 <!--
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
@@ -112,6 +116,10 @@ _
 * ルールエディターでこの機能を使用するには ](https://github.com/adobe/aem-core-forms-components)[ コアコンポーネントがバージョン 3.0.14 以降に設定されていることを確認します。
 * ルールが When 条件内の異なるフィールドに適用されている場合、これらのフィールドの 1 つのみを変更した場合でも、ルールはトリガーします。
 * **AND** ルールの **When** 条件に追加できるフィールドは複数のみです。 **OR** ルールには使用できません。
+
+>[!NOTE]
+>
+> ボタンクリックを含む複数の条件を追加するには、ボタンクリックイベントが最初の条件として配置されていることを確認します。 例：`When button is clicked AND text input equals '5'` は有効ですが、`When text input equals '5' AND button is clicked` はサポートされていません。
 
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.

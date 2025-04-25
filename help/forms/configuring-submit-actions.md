@@ -4,10 +4,10 @@ description: アダプティブフォームには、複数の送信アクショ�
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
-source-git-commit: db0487ab11f48690cb36b410b895324e0d4cf684
+source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
 workflow-type: tm+mt
-source-wordcount: '3929'
-ht-degree: 100%
+source-wordcount: '3957'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 | AEM as a Cloud Service（コアコンポーネント） | [ここをクリックしてください](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service（基盤コンポーネント） | この記事 |
 
-**適用先**: ✔️アダプティブフォームの基盤コンポーネント。 ❌ [アダプティブフォーム (コアコンポーネント](/help/forms/configure-submit-actions-core-components.md). Adobeでは、コアコンポーネントを次のように使用することをお勧めします。 [AEM SitesページへのアダプティブFormsの追加](create-or-add-an-adaptive-form-to-aem-sites-page.md) または [スタンドアロンのアダプティブFormsを作成する](creating-adaptive-form-core-components.md).
+**適用先**: ✔️アダプティブフォームの基盤コンポーネント。 ❌ [アダプティブフォーム (コアコンポーネント)](/help/forms/configure-submit-actions-core-components.md). Adobeでは、コアコンポーネントを次のように使用することをお勧めします。 [AEM SitesページへのアダプティブFormsの追加](create-or-add-an-adaptive-form-to-aem-sites-page.md) または [スタンドアロンのアダプティブFormsを作成する](creating-adaptive-form-core-components.md).
 
 送信アクションは、ユーザーがアダプティブフォームの「**[!UICONTROL 送信]**」ボタンをクリックするときにトリガーされます。Forms as a Cloud Serviceでは、次の送信アクションが初期設定で提供されています。
 
@@ -239,6 +239,11 @@ AEM Forms を Microsoft® Sharepoint ドキュメントライブラリストレ�
 フォームを送信すると、データは指定した Microsoft® Sharepoint ドキュメントライブラリストレージに保存されます。
 データを保存するフォルダー構造は `/folder_name/form_name/year/month/date/submission_id/data` です。
 
+>[!NOTE]
+>
+> 添付ファイルも `/folder_name/form_name/year/month/date/submission_id/data` ディレクトリに保存されます。 ただし、「**添付ファイルを元の名前で保存**」を選択すると、添付ファイルは元のファイル名でフォルダーに保存されます。
+> ![画像 ](/help/forms/assets/sp-doc-attachment-af1.png){height=50%,width=50%}
+
 ### アダプティブフォームを Microsoft® SharePoint リストに接続 {#connect-af-sharepoint-list}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
@@ -255,7 +260,7 @@ AEM Forms を Microsoft® Sharepoint リストに接続するには、次の手�
 1. **[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Microsoft® SharePoint]** に移動します。
 1. **設定コンテナ**&#x200B;を選択します。設定は、選択した設定コンテナに保存されます。
 1. クリック **[!UICONTROL 作成]** > **[!UICONTROL SharePoint List]** 」をドロップダウンリストから選択します。 SharePoint 設定ウィザードが表示されます。
-1. 「**[!UICONTROL タイトル]**」、「**[!UICONTROL クライアント ID]**」、「**[!UICONTROL クライアント秘密鍵]**」および「**[!UICONTROL OAuth URL]**」を指定します。OAuth URL のクライアント ID、クライアントの秘密鍵、テナント ID を取得する方法について詳しくは、[Microsoft® のドキュメント](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)を参照してください。
+1. 「**[!UICONTROL タイトル]**」、「**[!UICONTROL クライアント ID]**」、「**[!UICONTROL クライアント秘密鍵]**」および「**[!UICONTROL OAuth URL]**」を指定します。OAuth URL のクライアント ID、クライアントの秘密鍵、テナント ID を取得する方法について詳しくは、[Microsoft® のドキュメント](https://learn.microsoft.com/ja-jp/graph/auth-register-app-v2)を参照してください。
    * アプリの `Client ID` と `Client Secret` は Microsoft® Azure Portal から取得できます。
    * Microsoft® Azure Portal で、リダイレクト URI を `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html` として追加します。`[author-instance]` をオーサーインスタンスの URL に置き換えます。
    * API 権限の追加 `offline_access` および `Sites.Manage.All` （内） **Microsoft® Graph** タブを使用して、読み取り/書き込み権限を設定します。 追加 `AllSites.Manage` の権限 **SharePoint** タブをクリックして、SharePointデータをリモートで操作します。
@@ -274,7 +279,7 @@ AEM Forms を Microsoft® Sharepoint リストに接続するには、次の手�
 
 作成した SharePoint リスト設定をアダプティブフォーム内で使用すると、データや生成済みのレコードのドキュメントを SharePoint リストに保存できます。アダプティブフォームで SharePoint リストストレージ設定を使用するには、次の手順を実行します。
 
-1. [Microsoft® SharePoint リスト設定を使用してフォームデータモデル（FDM）を作成します](/help/forms/create-form-data-models.md)
+1. [Microsoft を使用してフォームデータモデル（FDM）を作成する](/help/forms/create-form-data-models.md)
 1. [データを取得して送信するためのフォームデータモデル（FDM）を設定する](/help/forms/work-with-form-data-model.md#configure-services)
 1. [アダプティブフォームを作成します](/help/forms/creating-adaptive-form.md)
 1. [フォームデータモデル（FDM）を使用して送信アクションを設定する](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
@@ -438,7 +443,7 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
 * 検証パターン形式文字列
 * 検証式
 
-### サーバー側検証の有効化 {#enabling-server-side-validation-br}
+### サーバーサイド検証の有効化 {#enabling-server-side-validation-br}
 
 サイドバーにある「アダプティブフォームコンテナ」の「**[!UICONTROL サーバー側で再検証]**」を使用して、現在のフォームのサーバーサイド検証を有効または無効にします。
 

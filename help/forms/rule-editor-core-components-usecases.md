@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: e5f22d925f9b9ec3a5f80f9506353e42e8879da3
+source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
 workflow-type: tm+mt
-source-wordcount: '1384'
-ht-degree: 47%
+source-wordcount: '1561'
+ht-degree: 42%
 
 ---
 
@@ -17,6 +17,21 @@ ht-degree: 47%
 この記事では、コアコンポーネントに基づくアダプティブフォームのルールエディターの詳細な例を示し、様々なシナリオで適切に実装されているかについてインサイトを提供します。 ルールエディターを使用すると、開発者は、フォームの動作を制御するロジックを定義および管理できます。
 次に、ルールエディターの様々な実装について説明します。
 
+## 最初のパネルが有効な場合は、ボタンをクリックしたときに別のパネルにフォーカスを設定します
+
+<span class="preview">これはプレリリース機能で、[プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)を通してアクセスできます。</span>
+
+ルールエディターを使用すると、水平タブ、垂直タブ、アコーディオン、またはボタンクリック時のウィザードなどのパネルレイアウトを検証し、別のパネル内のフォームオブジェクトにフォーカスを設定できます。 この機能を使用すると、フォームのナビゲーションとユーザーエクスペリエンスを向上させることができます。
+
+ウィザードのレイアウトを使用して複数の手順を持つアプリケーションフォームを想像します。 `Employment Details` に移動する前に、`Personal Information` のパネルを完了する必要があります。 「`Next`」ボタンをクリックすると、ルールエディターによって `Personal Information` ールパネルが検証されます。 すべての必須フィールドが正しく入力されている場合、フォームは自動的に `Employment Details` ントロールパネルにフォーカスを移動します。 それ以外の場合は、ユーザーに不足しているフィールドに入力するよう促すエラーメッセージが表示されます。
+
+`Next` ボタンでルールを作成して、最初のパネルを検証できます。
+
+![ 「次へ」ボタンのルール ](/help/forms/assets/next-rule.png){width=50%}
+
+「**次へ**」ボタンをクリックすると、**個人情報** パネルが検証されます。 入力した詳細が正しい場合は、フォーカスが **アカウントセキュリティ** パネルに移動します。正しくない場合は、見つからない詳細の入力を求めるエラーメッセージが表示されます。
+
+<!--![Video]()-->
 
 ## ボタンを使用したパネル間の移動
 
