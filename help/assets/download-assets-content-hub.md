@@ -3,10 +3,10 @@ title: コンテンツハブからのアセットのダウンロード
 description: コンテンツハブポータルからアセットをダウンロードする方法について説明します。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: e108d25f3cdc025e0fbe8010854f245f62786baf
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 96%
+source-wordcount: '938'
+ht-degree: 80%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 96%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
         </td>
     </tr>
     <tr>
@@ -74,8 +74,8 @@ ht-degree: 96%
 
    >[!NOTE]
    >
-   * レンディションは、[設定](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)ユーザーインターフェイスを使用して表示が有効になっている場合にのみ表示されます。
-   * アセットのダウンロード中に、すべての[静的、動的、スマート切り抜きレンディション](#types-of-renditions)をダウンロードできます。
+   >* レンディションは、[設定](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)ユーザーインターフェイスを使用して表示が有効になっている場合にのみ表示されます。
+   >* アセットのダウンロード中に、すべての[静的、動的、スマート切り抜きレンディション](#types-of-renditions)をダウンロードできます。
 
 1. 1 つ以上のレンディションを選択し、「**[!UICONTROL ダウンロード]**」をクリックします。
 
@@ -86,7 +86,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
-[Open API を備えた Dynamic Media 機能](/help/assets/dynamic-media-open-apis-overview.md)にアクセスできるユーザーは、動的およびスマート切り抜きレンディションを表示およびダウンロードできます。
+> [Open API を備えた Dynamic Media 機能](/help/assets/dynamic-media-open-apis-overview.md)にアクセスできるユーザーは、動的およびスマート切り抜きレンディションを表示およびダウンロードできます。
 
 ## 複数のアセットとそのレンディションのダウンロード {#download-multiple-assets-renditions}
 
@@ -103,8 +103,8 @@ ht-degree: 96%
 
      >[!NOTE]
      >
-     * レンディションは、[設定](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)ユーザーインターフェイスを使用して表示が有効になっている場合にのみ表示されます。
-     * 複数のアセットのダウンロード中にのみ、[静的レンディション](#types-of-renditions)をダウンロードできます。
+     >* レンディションは、[設定](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)ユーザーインターフェイスを使用して表示が有効になっている場合にのみ表示されます。
+     >* 複数のアセットのダウンロード中にのみ、[静的レンディション](#types-of-renditions)をダウンロードできます。
 
    選択したアセットのいずれかがライセンス済みアセットである場合は、左側のパネルでアセットのライセンスをクリックしてプレビューを表示して、「**[!UICONTROL 上記のすべての利用条件を読み、同意しました]**」を選択し、「**[!UICONTROL ダウンロード]**」をクリックできます。ライセンスのプレビューは、アセットが Assets as a Cloud Service オーサリング環境を使用して承認された場合にのみ表示されます。詳しくは、[コンテンツハブのライセンス済みアセットの管理](/help/assets/manage-licensed-assets-on-content-hub.md)を参照してください。
 
@@ -153,17 +153,35 @@ The dialog box that displays depends on whether the download list includes expir
 
 * [静的レンディション](/help/assets/renditions.md#static-renditions)：静的レンディションは、デジタルアセットの事前生成されたバージョンで、通常はアセットの取り込みまたは変更中に作成されます。これらは、web サムネイル、レスポンシブデザイン用のモバイルに対応した形式、印刷用の高解像度ファイルなど、特定の用途とプラットフォーム用に最適化され、効率化された一貫したエクスペリエンスを提供します。
 
-* [動的レンディション](/help/assets/renditions.md#dynamic-renditions)：動的レンディションは、様々なデバイスの解像度に合わせた画像のサイズ変更や、様々な縦横比に合わせた切り抜きなど、様々なアクションを実行するために、リアルタイムでカスタマイズされたアセットバージョンです。これらのレンディションにより、より広範な要件に合わせて、パーソナライズされ最適化されたエクスペリエンスを提供できます。アセットの動的レンディションは、[!DNL Adobe Experience Manager Assets] オーサー環境で作成されます。
+* [動的レンディション](/help/assets/renditions.md#dynamic-renditions)：動的レンディションは、様々なデバイスの解像度に合わせた画像のサイズ変更や、様々な縦横比に合わせた切り抜きなど、様々なアクションを実行するために、リアルタイムでカスタマイズされたアセットバージョンです。これらのレンディションにより、より広範な要件に合わせて、パーソナライズされ最適化されたエクスペリエンスを提供できます。アセットの動的レンディションは、オーサー環境 [!DNL Adobe Experience Manager Assets] 作成されます。 動的レンディションを有効にするために必要な手順について詳しくは、[ 動的レンディションの有効化 ](#enable-dynamic-media-renditions) を参照してください。
 
 * [スマート切り抜き](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：スマート切り抜きは、切り抜きプロセス中にアセットの重要な部分にのみ焦点を当てます。Dynamic Media のスマート切り抜きでは、Adobe Sensei を使用した人工知能を活用して目標地点を追跡し、アセットがすべての画面サイズで最適に表示されるようにします。[!DNL Adobe Experience Manager] のスマート切り抜きでは、タイトルと共にアセットレンディションの幅と高さが表示されます。詳しくは、[AEM Assets Dynamic Media でのスマート切り抜きの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)を参照してください。
 
+  スマート切り抜きレンディションは、[OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) にアクセスできる場合にのみ表示され、ダウンロードできます。 スマート切り抜きレンディションは、画像アセットでのみ使用できます。
+
   ![レンディションタイプ](/help/assets/assets/renditions-types.png)
 
+### 動的レンディションの有効化 {#enable-dynamic-media-renditions}
 
->[!NOTE]
-> 
-* 動的およびスマート切り抜きレンディション機能は、早期導入フェーズにあります。機能へのアクセス権を取得するには、[アドビカスタマーサポートケースを作成および送信してください](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)。
-* [Dynamic Media Open API サービス](/help/assets/dynamic-media-open-apis-overview.md)に新しくオンボードしたお客様は、既存の画像プリセットを承認用に改訂する必要があります。
+動的レンディションを有効にするには：
+
+1. [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) にアクセスできることを確認します。
+
+   OpenAPI 機能で Dynamic Media にアクセスできるようになると、`Approved` としてマークされたすべてのアセットは Dynamic Media を使用して公開配信できます。
+
+1. Content Hubに対してのみアセットを承認する場合は、「[ アセットの承認ターゲット ](/help/assets/approve-assets-content-hub.md#set-approval-target)」を「Content Hub」に設定します。
+
+1. **[!UICONTROL 設定]** ユーザーインターフェイスの **[!UICONTROL レンディション]** タブで使用可能な [ レンディションの可用性を有効にする ](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub) トグルを有効にします。
+
+1. 既存の画像プリセットを再保存して、Content Hubで使用できるようにします。 OpenAPI を使用して Dynamic Media に新しくオンボーディングした場合にのみ適用されます。
+
+   既存の画像プリセットを再度保存するには、管理者ビューに移動し、**[!UICONTROL ツール]**/**[!UICONTROL Assets]**/ **[!UICONTROL 画像プリセット]** を選択します。 プリセットを選択し、「**[!UICONTROL 編集]**」をクリックしてから、「**[!UICONTROL 保存]** をクリックします。
+
+
+
+   >[!NOTE]
+   > 
+   > 動的レンディションは、画像アセットでのみ使用できます。
 
 
 
