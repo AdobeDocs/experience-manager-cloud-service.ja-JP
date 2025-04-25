@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 11d019e10dc9246e5560f7fe27472d047cdc7caa
+source-git-commit: 32aaabb3f47d2352245ab69f68a6ac98b9828449
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 48%
+source-wordcount: '1713'
+ht-degree: 43%
 
 ---
 
@@ -162,6 +162,20 @@ Java 17 または 21 ビルドが検出されると、より高パフォーマ�
 >[!IMPORTANT]
 >
 > Java 21 **ランタイム**&#x200B;は、2月に開発／RDE 環境にデプロイされました。**4月28日（PT）と29日（PT）**&#x200B;にステージ／実稼動環境に適用する予定です。Java 21（または Java 17）を使用した&#x200B;**コードのビルド**&#x200B;は、Java 21 ランタイムとは独立しています。Java 21（または Java 17）でコードをビルドする手順を明示的に実行する必要があります。
+
+### AEMのログ設定ポリシーの適用 {#logconfig-policy}
+
+お客様の環境を効果的に監視するには、AEM Java ログが一貫した形式を維持する必要があり、カスタム設定で上書きしてはなりません。 ログ出力は、デフォルトのファイルにダイレクトされたままにする必要があります。 AEMの商品コードの場合、デフォルトのログレベルを保持する必要があります。 ただし、顧客開発コードのログレベルを調整することは可能です。
+
+このためには、次の OSGi プロパティは変更しないでください。
+* **Apache Sling ログ設定** （PID:`org.apache.sling.commons.log.LogManager`） — *すべてのプロパティ*
+* **Apache Sling Logging Logger Configuration** （ファクトリ PID:`org.apache.sling.commons.log.LogManager.factory.config`）:
+   * `org.apache.sling.commons.log.file`
+   * `org.apache.sling.commons.log.pattern`
+
+5 月中旬、AEMは、これらのプロパティへのカスタム変更が無視されるポリシーを適用します。 ダウンストリームプロセスを確認し、それに応じて調整してください。 例えば、ログ転送機能を使用する場合は、次のようになります。
+* ログ宛先でカスタム（デフォルト以外）のログ形式を使用したい場合は、取り込みルールを更新する必要がある可能性があります。
+* ログレベルを変更するとログの冗長性が低下する場合は、デフォルトのログレベルを使用すると、ログのボリュームが大幅に増加する可能性があります。
 
 ### その他の宛先へのAEM ログ転送 – Beta プログラム {#log-forwarding-earlyadopter}
 
