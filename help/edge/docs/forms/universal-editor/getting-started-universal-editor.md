@@ -4,10 +4,10 @@ description: このチュートリアルは、新しい Adobe Experience Manager
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
+source-git-commit: 2b936b2495eb63defdb184320ae866bbecbe7546
 workflow-type: tm+mt
 source-wordcount: '1857'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,8 +26,7 @@ ht-degree: 99%
 
 AEM Forms には、アダプティブフォームブロックと呼ばれるブロックが用意されており、データを取得して保存する Edge Delivery Services フォームを簡単に作成できます。[アダプティブフォームブロックで事前設定済みの新しい AEM プロジェクトを作成](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)することも、[アダプティブフォームブロックを既存の AEM プロジェクトに追加](#add-adaptive-forms-block-to-your-existing-aem-project)することもできます。
 
-<!-->
-![Github リポジトリワークフロー ](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}—>
+![Github リポジトリのワークフロー](/help/edge/assets/repo-workflow.png){width=auto}
 
 このチュートリアルでは、ユニバーサルエディターの WYSIWYG オーサリングを使用して、新規または既存の Adobe Experience Manager サイトプロジェクトで独自のフォームを作成、プレビュー、公開する方法について説明します。
 

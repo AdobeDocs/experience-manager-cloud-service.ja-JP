@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
+source-git-commit: e10451553692b6ad957421783e176409b36b642b
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 42%
@@ -31,7 +31,8 @@ ht-degree: 42%
 
 「**次へ**」ボタンをクリックすると、**個人情報** パネルが検証されます。 入力した詳細が正しい場合は、フォーカスが **アカウントセキュリティ** パネルに移動します。正しくない場合は、見つからない詳細の入力を求めるエラーメッセージが表示されます。
 
-<!--![Video]()-->
+>[!VIDEO](https://video.tv.adobe.com/v/3457767)
+
 
 ## ボタンを使用したパネル間の移動
 
