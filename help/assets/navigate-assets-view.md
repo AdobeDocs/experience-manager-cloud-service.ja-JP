@@ -5,9 +5,9 @@ role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: f4d0364439d704d4f5611b5fa2f46428048005b0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1026'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -113,7 +113,7 @@ ht-degree: 92%
 
 ![アセットをプレビュー](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**：リポジトリー内の現在のフォルダーまたは現在の検索結果に戻る **B**：プレビューしているファイルの名前と形式 **C**：タスクを割り当て **D**：詳細メタデータ **E**：キーワードとスマートタグ **F**：コメントと注釈 **G**：選択したアセットに関連するタスクの表示 **H**:[ バージョンを表示とを管理 ](/help/assets/manage-organize-assets-view.md#versions-of-assets)**I** **** ****：画像のレンディションのを表示 K：動的を表示 openapi 機能レンディションを使用したスマート切り抜きや Dynamic Media などのメディアレンディション。 **L**：基本メタデータ **M**：高度なメタデータ **N**：キーワードとスマートタグ **O**：フォルダーに戻ることなく、現在のフォルダー内の前または次のアセットに進みます **P**：より詳細にプレビューします。ズーム、全画面表示、その他のオプション。
+**A**：リポジトリ内の現在のフォルダーまたは現在の検索結果に戻ります **B**：プレビューしているファイルの名前と形式 **C**：タスクを割り当てます **D**：高度なメタデータ **E**：キーワードとスマートタグ **F**：コメントと注釈 **G**：選択したアセットに関連するタスクを表示します **H**：[バージョンを表示および管理します](/help/assets/manage-organize-assets-view.md#versions-of-assets) **I**：画像のレンディションを表示します **J**：画像を編集します **K**：スマート切り抜きレンディションと OpenAPI 機能を備えた Dynamic Media レンディションを含む Dynamic Media レンディションを表示します。**L**：基本メタデータ **M**：高度なメタデータ **N**：キーワードとスマートタグ **O**：フォルダーに戻ることなく、現在のフォルダー内の前または次のアセットに進みます **P**：より詳細にプレビューします。ズーム、全画面表示、その他のオプション。
 
 また、ビデオをプレビューすることもできます。
 

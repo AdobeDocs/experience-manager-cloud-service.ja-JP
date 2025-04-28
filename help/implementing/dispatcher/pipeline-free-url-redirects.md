@@ -5,9 +5,9 @@ feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
 source-git-commit: 7a543c8fe63166ef34999f23ce9b05de8e8b0e9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '781'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 96%
 * 名前が変更された HTML ページ。
 * SEO の最適化。
 
-AEM as a Cloud Serviceには、サーバーサイドのリダイレクトを実装する [ いくつかのアプローチ ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/administration/url-redirection) がありますが、この記事で説明する方法である、パイプラインを使用しないリダイレクトは、次の場合に適しています。
+AEM as a Cloud Service では、サーバーサイドリダイレクトを実装する[いくつかのアプローチ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/administration/url-redirection)が提供されますが、この記事で説明するパイプライン不要のリダイレクト戦略は、次の場合に適しています。
 
 * リダイレクトの管理をビジネスユーザーが担当し、ソース管理にファイルの変更をコミットするために必要なアクセス権や、Cloud Manager web 層設定パイプラインを実行する機能を持っていない場合。
 * リダイレクトの件数が数件から数万件に及ぶ場合。

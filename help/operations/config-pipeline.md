@@ -1,19 +1,19 @@
 ---
 title: 設定パイプラインの使用
-description: 設定パイプラインを使用して、ログ転送の設定、パージ関連のメンテナンスタスク、様々な CDN 設定など、AEM as a Cloud Serviceの様々な設定をデプロイする方法を説明します。
+description: 設定パイプラインを使用して、ログ転送の設定、パージ関連のメンテナンスタスク、様々な CDN 設定など、様々な設定の AEM as a Cloud Service をデプロイする方法について説明します。
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
 source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1024'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # 設定パイプラインの使用 {#config-pipelines}
 
-設定パイプラインを使用して、ログ転送の設定、パージ関連のメンテナンスタスク、様々な CDN 設定など、AEM as a Cloud Serviceの様々な設定をデプロイする方法を説明します。
+設定パイプラインを使用して、ログ転送の設定、パージ関連のメンテナンスタスク、様々な CDN 設定など、様々な設定の AEM as a Cloud Service をデプロイする方法について説明します。
 
 ## 概要 {#overview}
 
@@ -38,7 +38,7 @@ Cloud Manager 設定パイプラインでは、設定ファイル（YAML 形式�
 | [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | 悪意のあるトラフィックをブロックするルールを宣言します |
 | [リクエスト変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | トラフィックリクエストの形式を変換するルールを宣言します |
 | [応答変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | 特定のリクエストに対する応答の形式を変換するルールを宣言します。 |
-| [ サーバーサイドのリダイレクト ](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) | `CDN` | 301/302 スタイルのサーバーサイドリダイレクトの宣言 |
+| [サーバーサイドのリダイレクト](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) | `CDN` | 301/302 スタイルのサーバーサイドのリダイレクトを宣言します。 |
 | [接触チャネルセレクター](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | アドビ以外のアプリケーションを含む様々なバックエンドにトラフィックをルーティングするルールを宣言します |
 | [CDN エラーページ](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | AEM オリジンに到達できない場合は、設定ファイルの自己ホスト型静的コンテンツの場所を参照して、デフォルトのエラーページを上書きします |
 | [CDN パージ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | CDN のパージに使用するパージ API キーを宣言します |
@@ -46,8 +46,8 @@ Cloud Manager 設定パイプラインでは、設定ファイル（YAML 形式�
 | [基本認証](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | 特定の URL を保護する基本認証ダイアログのユーザー名とパスワードを宣言します。 |
 | [バージョンのパージメンテナンスタスク](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | コンテンツのバージョンをパージするタイミングに関するルールを宣言して、AEM リポジトリを最適化します |
 | [監査ログのパージメンテナンスタスク](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | ログをパージするタイミングに関するルールを宣言して、AEM 監査ログを最適化し、パフォーマンスを向上させます |
-| [ログ転送](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Azure Blob Storage、Datadog、HTTPS、Elasticsearch、Splunk など、様々な宛先にログを転送するためのエンドポイントと資格情報を設定します。 |
-| [ クライアント ID の登録 ](/help/implementing/developing/open-api-based-apis.md) | `API` | クライアント ID を登録して、Adobe Developer Console API プロジェクトの範囲を特定のAEM環境に限定します。 これは、認証が必要な OpenAPI ベースの API を使用する場合に必要です |
+| [ログ転送](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Azure Blob Storage、Datadog、HTTPS、Elasticsearch、Splunk など、様々な宛先にログを転送するエンドポイントと資格情報を設定します。 |
+| [クライアント ID の登録](/help/implementing/developing/open-api-based-apis.md) | `API` | クライアント ID を登録して、Adobe Developer Console API プロジェクトの範囲を特定の AEM 環境に設定します。これは、認証を必要とする OpenAPI ベースの API を使用する場合に必要です。 |
 
 ## 設定パイプラインの作成と管理 {#creating-and-managing}
 

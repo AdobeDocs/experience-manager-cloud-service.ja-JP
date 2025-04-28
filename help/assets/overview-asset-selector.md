@@ -4,9 +4,9 @@ description: アセットセレクターを使用して、アプリケーショ�
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1422'
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 * ホストアプリケーションは HTTPS で実行されている。
 * アプリケーションは `localhost` で実行できない。ローカルマシンにアセットセレクターを統合する場合は、カスタムドメイン（例：`[https://<your_campany>.localhost.com:<port_number>]`）を作成し、このカスタムドメインを `redirectUrl list` に追加する必要があります。
-* それぞれの `imsClientId` を使用して、clientID を設定し、AEM Cloud Service 環境変数に追加できます。
+* それぞれの `imsClientId` を使用して、clientID を AEM Cloud Service 環境変数に設定および追加できる。
 <!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
 ![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
 * IMS 範囲のリストは、環境設定で定義する必要がある。
