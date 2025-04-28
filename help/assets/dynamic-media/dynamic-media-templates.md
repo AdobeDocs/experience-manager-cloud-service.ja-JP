@@ -1,13 +1,13 @@
 ---
-title: テンプレート  [!DNL Dynamic Media]  管理方法
-description: WYSIWYG テンプレートエディターを使用して  [!DNL Dynamic Media]  テンプレートを作成する方法と、複数の画像やテキストレイヤーを含めて、バナーやチラシをすばやく作成し、下流のアプリケーションで使用する方法について説明します。
+title: ' [!DNL Dynamic Media]  テンプレートを管理する方法？'
+description: WYSIWYG テンプレートエディターを使用して  [!DNL Dynamic Media]  テンプレートを作成し、複数の画像とテキストレイヤーを含めてバナーやチラシをすばやく作成し、ダウンストリームアプリケーションで使用する方法について説明します。
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
 source-git-commit: e1c571c4798152732d78b8a2c823d5da9664cb9e
 workflow-type: tm+mt
 source-wordcount: '3165'
-ht-degree: 52%
+ht-degree: 81%
 
 ---
 
@@ -50,17 +50,17 @@ ht-degree: 52%
     </tr>
 </table>
 
-WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テンプレートを使用して、バナーやチラシ用にリアルタイムのカスタマイズ可能なテンプレートを作成します。 [!DNL Dynamic Media] テンプレートを公開し、ダウンストリームアプリケーションで使用します。 [!DNL Dynamic Media] テンプレートには、画像レイヤーとテキストレイヤーが含まれます。 テンプレートの画像レイヤーとテキストレイヤーにパラメーターを追加し、[[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) を使用してリアルタイムにレイヤーの位置やサイズを変更し、コンテンツを更新します。
+WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テンプレートを使用して、バナーやチラシ用のリアルタイムでカスタマイズ可能なテンプレートを作成します。[!DNL Dynamic Media] テンプレートを公開し、ダウンストリームアプリケーションで使用します。 [!DNL Dynamic Media] テンプレートには、画像レイヤーとテキストレイヤーが含まれます。テンプレートの画像とテキストレイヤーにパラメーターを追加し、[[!DNL Dynamic Media]  URL](https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) を使用してレイヤーの位置とサイズを変更し、コンテンツをリアルタイムで更新します。
 
 主な機能は次のとおりです。
 
-* **[!DNL Dynamic Media]WYSIWYG テンプレートエディター：** 画像レイヤーとテキストレイヤーを使用してカスタマイズ可能なバナーを作成します。
+* **[!DNL Dynamic Media]WYSIWYG テンプレートエディター：**&#x200B;画像とテキストレイヤーを使用してカスタマイズ可能なバナーを作成します。
 * **レイヤーのパラメーター化：**&#x200B;レイヤーの動的なキーと値のペアを定義して、リアルタイム更新を実現します。
-* **[!DNL Dynamic Media]URL サポート：** テンプレートに [!DNL Dynamic Media] URL を使用して、ファーストパーティアプリケーションまたはサードパーティアプリケーションからパーソナライズされた値を統合します。
+* **[!DNL Dynamic Media]URL のサポート：**&#x200B;テンプレートに [!DNL Dynamic Media] URL を使用し、ファーストパーティまたはサードパーティのアプリケーションからのパーソナライズされた値を統合します。
 * **レイヤー表示コントロール：**&#x200B;必要に応じて、レイヤーを動的に非表示または表示します。
 * **スマートテキストのサイズ変更：**&#x200B;指定された領域に合わせて、テキストのサイズを自動的に調整します。
 
-[!DNL Dynamic Media] のテンプレートの主なメリットには、次のようなものがあります。
+[!DNL Dynamic Media] テンプレートの主なメリットには、次のようなものがあります。
 
 * **1:1 パーソナライゼーションを最適化：**&#x200B;リアルタイムの顧客シグナルに合わせて、コンテンツを調整します。
 * **手作業を削減：**&#x200B;コンテンツの作成と管理を自動化および高速化します。
@@ -71,23 +71,23 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
 >[!NOTE]
 >
->セキュリティ強化 SKU を購読しているお客様は、[!DNL Dynamic Media] テンプレートを含む [!DNL Dynamic Media] の機能を Cloud Services プログラムで使用できません。
+>セキュリティの強化の SKU を購読しているお客様は、そのクラウドサービスプログラムで [!DNL Dynamic Media] テンプレートを含む [!DNL Dynamic Media] 機能を使用できません。
 
-このビデオでは、[!DNL Dynamic Media] テンプレートの作成方法を手順を追って説明します。
+このビデオでは、[!DNL Dynamic Media] テンプレートを段階的に作成する方法について説明します。
 >[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## 始める前に{#prerequisites-for-dynamic-media-wysiwyg-template}
 
 [!DNL Dynamic Media] テンプレートを作成し、その配信 URL を生成するには、次の要件を満たします。
 
-1. [!DNL Dynamic Media] へのアクセス。
-1. [!DNL Assets View] ホームページには、テンプレートを保存するためのフォルダーが **[!UICONTROL Dynamic Media Assets]** にあります。 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) で [ フォルダーを作成 ]**し、そのフォルダーを**[!UICONTROL  Dynamic Media Assets ]**にレプリケートします。
+1. [!DNL Dynamic Media] にアクセスします。
+1. [!DNL Assets View] ホームページには、テンプレートを保存するためのフォルダーが **[!UICONTROL Dynamic Media Assets]** にあります。 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) で [ フォルダーを作成 ]**し、そのフォルダーを**[!UICONTROL  Dynamic Media Assets ]**にレプリケートします。
 1. [ インスタンスで使用可能な画像を  [!DNL AEM Assets]  と同期して  [!DNL Dynamic Media]  テンプレートの作成に使用する ](/help/assets/dynamic-media/config-dm.md)
 1. テンプレートの作成に使用する画像を公開して、テンプレートの作成後に配信 URL を生成します。 配信 URL は、ダウンストリームアプリケーションで使用できます。
 1. テンプレートのテキストレイヤーでデフォルトの [!UICONTROL Adobe Sans F2] フォント以外のフォントを使用するには、[ フォントファイルをアップロードしてAEMと Dynamic Media に同時に公開します ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation)。 [ サポートされているフォントファイル形式は、AFM、OTF、PFB、PFM、PhotoFont、TTC、TTF です ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)。 また、既存のフォントを使用するには、必ず [ 再処理 ](/help/assets/reprocessing-assets-view.md) してください。 詳しくは、[ フォント ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) を参照してください。<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
 1. タッチ UI で次の点を確認します。
-   * **[!UICONTROL [!DNL Dynamic Media] 設定を編集ページ]****[!UICONTROL [!DNL Dynamic Media]で、同期モード]** が **[!UICONTROL デフォルトで無効]** に設定されている場合、すべてのAEM フォルダーに適用されるわけではありません（**[!UICONTROL すべてのコンテンツを同期]** がオフになっています）。 詳しくは、[Dynamic Media Cloud Service の設定](/help/assets/dynamic-media/config-dm.md)を参照してください。
-   * 作成後 **[!UICONTROL [!DNL Dynamic Media]テンプレートを保存する宛先フォルダーまたはサブフォルダーに対して、同期モード]** が **[!UICONTROL サブフォルダーに対して有効にする]** に設定されています。 詳しくは、[Cloud Serviceの設定  [!DNL Dynamic Media] ](/help/assets/dynamic-media/config-dm.md) を参照してください。
+   * **[!UICONTROL [!DNL Dynamic Media] 設定を編集ページ]**&#x200B;で、**[!UICONTROL デフォルトで無効]**&#x200B;に設定されている **[!UICONTROL [!DNL Dynamic Media]同期モード]**&#x200B;は、すべての AEM フォルダーに適用されません（「**[!UICONTROL すべてのコンテンツを同期]**」がオフになっています）。詳しくは、[Dynamic Media Cloud Service の設定](/help/assets/dynamic-media/config-dm.md)を参照してください。
+   * 作成後にテンプレートを保存する宛先フォルダーまたはサブフォルダーの **[!UICONTROL [!DNL Dynamic Media]同期モード]**&#x200B;が&#x200B;**[!UICONTROL サブフォルダーに対して有効にする]**&#x200B;に設定されています。詳しくは、[ [!DNL Dynamic Media]  Cloud Service の設定](/help/assets/dynamic-media/config-dm.md)を参照してください。
 
 ## テンプレート [!DNL Dynamic Media] 作成{#how-to-create-dynamic-media-template}
 
@@ -107,15 +107,15 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
 空のキャンバスを作成するには、次の手順を実行します。
 
-1. [!DNL Assets View] に移動し、左側のパネルで使用可能な **[!UICONTROL Dynamic Media Assets]** を選択し、フォルダーに移動してそのフォルダーにテンプレートを保存します。
+1. [!DNL Assets View] に移動し、左側のパネルで使用可能な **[!UICONTROL Dynamic Media アセット]**&#x200B;を選択してフォルダーに移動し、そのフォルダーにテンプレートを保存します。
 
    ![Dynamic Media テンプレート](/help/assets/assets/DM-Assets1.png)
 
-1. 「**[!UICONTROL テンプレートを作成]**」を選択します。 **[!UICONTROL 新規テンプレート]**ダイアログボックスが表示されます。
-   ![ リアルタイムでカスタマイズできる動的テンプレートの作成方法 ](/help/assets/assets/new-template.png)
+1. 「**[!UICONTROL テンプレートを作成]**」を選択します。**[!UICONTROL 新規テンプレート]**ダイアログボックスが表示されます。
+   ![リアルタイムでカスタマイズできる動的テンプレートの作成方法](/help/assets/assets/new-template.png)
    >[!NOTE]
    >
-   >  テンプレートは、作成した場所に保存されます。 ホ [!DNL Assets View] ムページで **[!UICONTROL Dynamic Media Assets]** を選択し、**[!UICONTROL テンプレートを作成]** をクリックして、**[!UICONTROL Dynamic Media Assets]** ルートフォルダーにテンプレートを保存します。
+   >  テンプレートは、作成した場所に保存されます。[!DNL Assets View] ホームページで、「**[!UICONTROL Dynamic Media アセット]**」を選択し、「**[!UICONTROL テンプレートを作成]**」をクリックして、テンプレートを **[!UICONTROL Dynamic Media アセット]**&#x200B;ルートフォルダーに保存します。
 
 1. テンプレート名を指定し、キャンバスの幅と高さを定義して、「**[!UICONTROL 作成]**」をクリックします。空白のキャンバスが表示され、テンプレートの作成に使用するメニューオプションが両側に表示されます。メニューオプションにポインタを合わせると、ツールチップが表示されます。
    ![リアルタイムのカスタマイズ可能なテンプレート](/help/assets/assets/blank-canvas-page.png)
@@ -152,7 +152,7 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
 キャンバスに画像を追加するには、次の手順を実行します。
 
-1. ![ すぐにバナーを作成 ](/help/assets/assets/add-image.svg) をクリックして [ アセットセレクター ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) パネルを開きます。 このパネルには、[!DNL Dynamic Media] に同期されたAEM Assets インスタンス内の画像が表示されます。
+1. ![ すぐにバナーを作成 ](/help/assets/assets/add-image.svg) をクリックして [ アセットセレクター ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) パネルを開きます。 パネルには、[!DNL Dynamic Media] に同期される AEM Assets インスタンス内の画像が表示されます。
 1. パネルを参照するか、検索バーでキーワードを使用して、特定の画像を見つけます。
 1. 画像をキャンバス上にドラッグ＆ドロップして使用します。キャンバス上のレイヤーのサイズ変更や再配置について詳しくは、[**[!UICONTROL プロパティパネル]**](#reposition-resize-delete-a-layer)を参照してください。
    ![数秒以内にバナーを作成](/help/assets/assets/add-image-to-canvas.png)
@@ -163,7 +163,7 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
 1. 「![新しいバナーをすばやく作成](/help/assets/assets/add-text.svg)」をクリックして、キャンバスにテキストレイヤーを追加し、プロパティパネルを開きます。
 1. レイヤーを選択し、テキストをクリックして更新します。
-1. プロパティパネルの「**[!UICONTROL スマートテキストのサイズ変更]**」を選択すると、指定した領域に最適に収まるようにテキストの長さとフォントサイズが自動的に調整されます。
+1. プロパティパネルで「**[!UICONTROL スマートテキストのサイズ変更]**」を選択すると、テキストの長さとフォントサイズが自動的に調整され、指定された領域に最適に収まります。
    ![カスタマイズ可能な最適なバナー](/help/assets/assets/add-text-layer.png)
 
 レイヤーの再配置、サイズ変更、回転または削除について詳しくは、[**[!UICONTROL プロパティパネル]**](#reposition-resize-delete-a-layer)を参照してください。パネルの「**[!UICONTROL テキスト]**」セクションの下にあるそれぞれのフィールドの値を変更して、必要なフォント、サイズ、色、スタイル、配置（レイヤー内）にテキストを書式設定します。 **[!UICONTROL フォントファミリー]** フィールドには、[!UICONTROL Adobe Sans F2] のデフォルトフォント、再処理された既存のフォント、新しくアップロードおよび公開されたフォントが表示されます。 詳しくは、前述の [ 始める前に ](#prerequisites-for-dynamic-media-wysiwyg-template) の節のポイント 5 を参照してください。
@@ -203,8 +203,8 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
 #### テキストの書式設定オプション{#text-formatting-options-on-properties-panel}
 
-パネルの「**[!UICONTROL テキスト]**」セクションの下にあるそれぞれのフィールドの値を変更して、必要なフォント、サイズ、色、スタイル、配置（レイヤー内）にテキストを書式設定します。
-**[!UICONTROL スマートテキストのサイズ変更]** を必ず含めてください。 [!UICONTROL  スマートテキストのサイズ変更 ] は、[ 自動調整 ](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) アルゴリズムを使用してテキスト領域のテキストを最適に埋め込み、テキストのオーバーフローを防いで、テキスト下部の余分なスペースを最小限に抑えます。
+パネルの「**[!UICONTROL テキスト]**」セクションの下にある各フィールドの値を変更して、テキストを必須のフォント、サイズ、カラー、スタイル、位置（レイヤー内）に書式設定します。
+**[!UICONTROL スマートテキストのサイズ変更]**&#x200B;を含めます。[!UICONTROL スマートテキストのサイズ変更]は、[コピーフィット](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)アルゴリズムに基づいて動作し、テキスト領域内のテキストを最適に埋め込み、テキストのオーバーフローを防ぎ、テキストの下部の余分なスペースを最小限に抑えます。
 
 ![すぐにコンテンツを作成](/help/assets/assets/smart-text-resize.png)
 
@@ -215,7 +215,7 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 レイヤーをパラメーター化するには：
 
 1. 「![即時コンテンツ作成](/help/assets/assets/show-layers-list.svg)」をクリックし、レイヤーを選択して「**[!UICONTROL パラメーター]**」をクリックします。**[!UICONTROL パラメーター]**&#x200B;パネルが表示されます。
-1. **[!UICONTROL パラメーターを含める]**&#x200B;を切り替えて、プロパティをパラメーター化します。パラメーター化後のプロパティの動作については、[ パラメーターパネルオプション ](#parameterisation-options-or-allowed-parameters) を参照してください。
+1. **[!UICONTROL パラメーターを含める]**&#x200B;を切り替えて、プロパティをパラメーター化します。パラメーター化後のプロパティの動作について詳しくは、[パラメーターパネルオプション](#parameterisation-options-or-allowed-parameters)を参照してください。
 1. **オプション：**&#x200B;パラメーター名を変更します。パラメーター名には、レイヤー名の後に接尾辞が続きます。選択したレイヤーでは、そのすべてのパラメーター化されたプロパティは同じレイヤー名を共有し、その後に様々な接尾辞が続きます。セマンティックの命名規則に従ってレイヤー名を変更すると、URL にパラメーターを含める際に、パラメーター名自体がレイヤーのコンテンツや目的についての説明となります。
 1. 「**[!UICONTROL 保存]**」をクリックします。
    ![即時コンテンツ作成](/help/assets/assets/parameterise-a-layer.png)
@@ -227,21 +227,21 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
 **画像パラメーター：**
 
-**[!UICONTROL X]:** URL のパラメーターの値を変更することで、テンプレート平面の X 軸に平行な中心線に沿ってレイヤーを水平方向に移動するには、このプロパティを含めます。
-**[!UICONTROL Y]:** URL のパラメーターの値を変更することで、テンプレート平面の Y 軸に平行な中心線に沿ってレイヤーを垂直に移動するには、これを含めます。
-**[!UICONTROL 幅 ]:** URL のパラメーターの値を変更してレイヤーの幅を調整する場合に含めます。
-**[!UICONTROL 高さ ]:**URL のパラメーターの値を変更してレイヤーの高さを調整する場合に含めます。
-**[!UICONTROL 非表示 ]:**0 （表示）と 1 （非表示）を使用して、テンプレート内のレイヤーの表示と非表示を切り替えるには、含めます。
-**[!UICONTROL Source]:** URL のパラメーターの値の画像パスを変更することで、レイヤーの画像を新しい画像に置き換える場合に含めます。
+**[!UICONTROL X]：**URL のパラメーターの値を変更して、テンプレートプレーンの X 軸に平行な中心線に沿ってレイヤーを水平方向に移動する場合に含めます。
+**[!UICONTROL Y]：**URL のパラメーターの値を変更して、テンプレートプレーンの Y 軸に平行な中心線に沿ってレイヤーを垂直方向に移動する場合に含めます。
+**[!UICONTROL 幅]：**URL のパラメーターの値を変更して、レイヤーの幅を調整する場合に含めます。
+**[!UICONTROL 高さ]：**URL のパラメーターの値を変更して、レイヤーの高さを調整する場合に含めます。
+**[!UICONTROL 非表示]：**0（表示）と 1（非表示）を使用して、テンプレートのレイヤーを非表示または表示する場合に含めます。
+**[!UICONTROL ソース]：** URL のパラメーターの値の画像パスを変更して、レイヤーの画像を新しい画像に置き換える場合に含めます。
 
 **テキストの書式設定パラメーター：**
 
 URL のパラメーター値を更新して、URL からテキスト、フォント、カラー、サイズを編集するには、以下のパラメーターを含めます。
 
-**[!UICONTROL テキスト ]:**URL からテキストを更新する場合に含めます。
-**[!UICONTROL フォントファミリー ]:**URL からテキストのフォントを更新する場合に含めます。
-**[!UICONTROL フォントサイズ ]:**URL からテキストのフォントサイズを更新する場合に含めます。
-**[!UICONTROL テキストカラー ]:** URL からテキストのフォントカラーを更新する場合に含めます。
+**[!UICONTROL テキスト]：**URL からテキストを更新する場合に含めます。
+**[!UICONTROL フォントファミリー]：**URL からテキストのフォントを更新する場合に含めます。
+**[!UICONTROL フォントサイズ]：**URL からテキストのフォントサイズを更新する場合に含めます。
+**[!UICONTROL テキストカラー]：** URL からテキストのフォントカラーを更新する場合に含めます。
 
 ### レイヤーをグループ化して同時に表示をコントロール{#group-layers}
 
@@ -251,8 +251,8 @@ URL のパラメーター値を更新して、URL からテキスト、フォン
 
 1. レイヤーの[**[!UICONTROL プロパティパネル]**](#parameterise-a-layer)に移動します。
 1. 以前にパラメーター化していない場合は、**[!UICONTROL 非表示]**&#x200B;パラメーターを切り替えます。
-1. **オプション：** **[!UICONTROL Hide]** パラメーターの名前を変更します。
-1. **[!UICONTROL 非表示]** パラメーター名をコピーします。
+1. **オプション：****[!UICONTROL 非表示]**&#x200B;パラメーターの名前を変更します。
+1. **[!UICONTROL 非表示]**&#x200B;パラメーターの名前をコピーします。
 1. キャンバスから他のレイヤーを選択して、そのレイヤーのパラメーターパネルに移動し、パラメーター化されていない場合は、**[!UICONTROL 非表示]**&#x200B;パラメーターを切り替えます。
 1. **[!UICONTROL 非表示パラメーター]**&#x200B;の名前を、コピーした名前に置き換えます。
 1. 「**[!UICONTROL 保存]**」をクリックして、レイヤーをグループ化します。
@@ -268,8 +268,8 @@ URL のパラメーター値を更新して、URL からテキスト、フォン
    1. 画像レイヤーを選択し、「![その場でコンテンツを作成](/help/assets/assets/add-image.svg)」をクリックし、アセットセレクターから画像を選択して、「**[!UICONTROL 更新]**」をクリックします。
 
    テンプレートはすぐに更新され、編集されたテキストが表示され、以前の画像が新しい画像に置き換えられます。また、画像パラメーターの値には、新しい画像のパスが反映されます。同様に、レイヤーの値を調整してサイズ変更すると、その変更がリアルタイムでテンプレートに適用されます。
-1. リストから **[!UICONTROL グループ化されたレイヤー ](#group-layers) の [ 非表示]** パラメーターを選択して、テンプレート内でそれらを表示または非表示にします。
-1. **オプション：****[!UICONTROL 非表示]**&#x200B;パラメーターの値を 0 と 1 の間で変更し、「**[!UICONTROL 更新]**」をクリックして変更を確認します。同じ **[!UICONTROL Hide]** パラメーターを持つレイヤーは、非表示または同時に表示されます。 同様に、URL からレイヤーの表示をコントロールできます。
+1. リストから[グループ化されたレイヤー](#group-layers)の&#x200B;**[!UICONTROL 非表示]**&#x200B;パラメーターを選択して、テンプレート内でまとめて表示または非表示にします。
+1. **オプション：****[!UICONTROL 非表示]**&#x200B;パラメーターの値を 0 と 1 の間で変更し、「**[!UICONTROL 更新]**」をクリックして変更を確認します。同じ&#x200B;**[!UICONTROL 非表示]**&#x200B;パラメーターを持つレイヤーは、まとめて非表示または表示されます。同様に、URL からレイヤーの表示をコントロールできます。
 
    ![その場でのコンテンツの作成](/help/assets/assets/dm-templates-publish-status.png)
 また、**[!UICONTROL すべてのパラメーターを含める]**を切り替えて、表示されているすべてのパラメーター値を編集し、テンプレートのプレビューで更新を確認することもできます。
@@ -284,7 +284,7 @@ URL のパラメーター値を更新して、URL からテキスト、フォン
 
 次の手順を実行して、テンプレートの配信 URL をコピーします。
 
-1. 「**[!UICONTROL URL をコピー]**」をクリックします。**[!UICONTROL URL をコピー]**&#x200B;ダイアログボックスが表示されます。表示されている URL を選択してコピーします。URL の最初のパラメーターが疑問符 **（[!UICONTROL ?]）** キーと値のペアは **[!UICONTROL $]** で始まり、**[!UICONTROL &amp;]** で終わります。 キーと値は等号 **（[!UICONTROL =]）** で区切られ、キーは左側、値は右側に表示されます。
+1. 「**[!UICONTROL URL をコピー]**」をクリックします。**[!UICONTROL URL をコピー]**&#x200B;ダイアログボックスが表示されます。表示されている URL を選択してコピーします。URL の最初のパラメーターが疑問符&#x200B;**（[!UICONTROL ?]）**&#x200B;の後から始まり、キーと値のペアが **[!UICONTROL $]** で始まり **[!UICONTROL &amp;]** で終わります。キーと値は等号&#x200B;**（[!UICONTROL =]）**&#x200B;で区切られ、キーが左側、値が右側になります。
 1. この URL をブラウザーのタブにペーストして、ライブテンプレートを表示します。**プレビューと公開**&#x200B;の節の[手順 2](#preview-and-publish-template-and-copy-template-deliver-url) の説明に従って、URL の必要なパラメーターの値（キーの値）を直接更新して、テンプレートをリアルタイムでカスタマイズします。
 1. 製品やサービスの迅速なマーチャンダイジングには、この URL を使用します。この URL を顧客と共有することや、web サイトやダウンストリームのサードパーティアプリケーションに統合してバナーを表示することや、継続的なオファーを反映するようにリアルタイムで更新することができます。
 
@@ -294,8 +294,8 @@ URL 内でパラメーターを直接編集するのは面倒な場合があり�
 
 1. URL をコピーして、メモ帳にペーストします。
 1. Cmd + F キー（Mac）または Ctrl + F キー（Windows）を使用して、パラメーター値を見つけて編集します。例：
-   * 画像レイヤーの画像パスを検索して置換します。
-   * レイヤーの [ パラメーター化 ](#parameterise-a-layer) 座標、幅および高さを検索して、値を調整します。
+   * 画像レイヤーの画像パスを検索して置き換えます。
+   * レイヤーの[パラメーター化](#parameterise-a-layer)された座標、幅、高さを検索して、その値を調整します。
    * テキストレイヤーのテキスト、フォント、カラー、サイズ、位置を編集します。
    * 表示値を 0 と 1 の間で変更します。
 
@@ -305,28 +305,28 @@ URL 内でパラメーターを直接編集するのは面倒な場合があり�
 
 テンプレートを編集するには、次の手順に従います。
 
-1. [!DNL Assets view] で、「**[!UICONTROL Dynamic Media Assets]**」をクリックします。
+1. [!DNL Assets view] で、「**[!UICONTROL Dynamic Media アセット]**」をクリックします。
 2. テンプレートの場所に移動します。
 3. テンプレートを選択します。
 4. 「**[!UICONTROL テンプレートを編集]**」をクリックします。テンプレートキャンバスには、テンプレートと、レイヤーパネル内のすべてのレイヤーのリストが表示されます。必要に応じて、テンプレートの編集を開始します。
 
-## テンプレートレイヤーにコールトゥアクション（CTA）リンクを追加します{#add-CTA-in-dynamic-media-templates}
+## テンプレートレイヤーにコールトゥアクション（CTA）リンクを追加{#add-CTA-in-dynamic-media-templates}
 
 [!DNL Dynamic Media] テンプレートにターゲットページに誘導するCTA リンクを追加して、テンプレートの画像やテキストレイヤーをハイパーリンクに変換します。
 
-レイヤーにCTA リンクを追加するには、次の手順を実行します。
+レイヤーに CTA リンクを追加するには、次の手順を実行します。
 
-1. テンプレートの場所に移動してテンプレートを選択し、![ 編集 ](/help/assets/assets/edit-pen-icon.svg)**[!UICONTROL テンプレートを編集]** をクリックします。 テンプレートがキャンバスに表示されます。
-1. テンプレートレイヤーを選択し [ そのプロパティパネルに移動 ](#edit-or-delete-a-layer)、そこにCTA リンクを追加します。
-1. プロパティパネルで「**[!UICONTROL CTAを追加]**」を選択し、「**[!UICONTROL URL]**」フィールドに公開先 URL を指定して、「**[!UICONTROL 保存]**」をクリックします。
+1. テンプレートの場所に移動し、テンプレートを選択して「![編集](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL テンプレートを編集]**」をクリックします。テンプレートがキャンバスに表示されます。
+1. テンプレートレイヤーを選択し、[そのプロパティパネルに移動](#edit-or-delete-a-layer)して、CTA リンクを追加します。
+1. プロパティパネルで「**[!UICONTROL CTA を追加]**」を選択し、「**[!UICONTROL URL]**」フィールドに宛先 URL を指定して、「**[!UICONTROL 保存]**」をクリックします。
 
-   ![CTAを追加 ](/help/assets/assets/add-cta.png)
+   ![CTA を追加](/help/assets/assets/add-cta.png)
 
 1. **[!UICONTROL プレビュー]** をクリックし、「**[!UICONTROL 公開]**」を選択してテンプレートを公開します（まだ公開していない場合）。
-1. このテンプレートが保存されているフォルダーに移動し、このテンプレートを選択して ![ 詳細ページ ](/help/assets/assets/details-page-icon.svg)**[!UICONTROL 詳細]** をクリックします。
+1. このテンプレートが保存されているフォルダーに移動し、このテンプレートを選択して「![詳細ページ](/help/assets/assets/details-page-icon.svg) **[!UICONTROL 詳細]**」をクリックします。
 1. **[!UICONTROL コピーオプション]** をクリックし、「**[!UICONTROL 埋め込みコードをコピー]**」を選択します。 埋め込みコードをコピーするには、[!DNL AEM and Dynamic Media] にテンプレート画像を必ず公開してください。
 
-   ![ 埋め込みコードのコピー ](/help/assets/assets/copy-options1.png)
+   ![埋め込みコードをコピー](/help/assets/assets/copy-options1.png)
 
    埋め込みコードの例を次に示します。
 
@@ -340,11 +340,11 @@ URL 内でパラメーターを直接編集するのは面倒な場合があり�
     </div>
    ```
 
-1. コピーした埋め込みコードをサイトのHTML ファイルに追加し、ブラウザーで実行してテンプレートを表示します。
+1. コピーした埋め込みコードをサイトの HTML ファイルに追加します。ブラウザーで実行すると、テンプレートが表示されます。
 
-テンプレートのCTA要素をクリックして、移動先ページに移動します。
+テンプレートの CTA 要素をクリックして、宛先ページに移動します。
 
-テンプレートレイヤーにCTA リンクを追加する方法については、この手順のビデオをご覧ください。
+テンプレートレイヤーに CTA リンクを追加する方法について詳しくは、このステップバイステップビデオを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457616)
 
@@ -352,12 +352,12 @@ URL 内でパラメーターを直接編集するのは面倒な場合があり�
 
 * 動的更新用にパラメーター化された画像レイヤーを含むテンプレートを作成したら、今後の更新を予定している画像がパラメーター化された画像と同じ寸法を共有していることを確認します。これにより、画像がオーバーフローしたり、空のスペースが残ったりすることなく、レイヤー内に完全に収まります。現在、テンプレートは、画像をレイヤーに収める自動寸法調整をサポートしていません。
 * テキストレイヤーでは、部分文字列はサポートされません。ユーザーは、テキストレイヤーの部分文字列に異なるフォントプロパティを適用できません。
-* 現在、[!DNL Dynamic Media] テンプレートでは複数の [!DNL Dynamic Media] 会社をサポートしていません。
-* コピーまたは移動の場合、宛先セレクターにすべてのフォルダー（[!DNL Dynamic Media] 以外の同期フォルダーを含む）が表示されます。 また、現在のところ、[!DNL Dynamic Media] テンプレートアセットは表示されません（どちらも宛先セレクターの制限です）。
-* Assets セクションからフォルダー（公開、削除など）に対して行う更新処理は、そのフォルダー内で使用可能な [!DNL Dynamic Media] テンプレートに影響します。
-* ごみ箱は、[!DNL Dynamic Media] のテンプレートでは機能しません。 アセットがごみ箱に移動された後に復元された場合、そのアセットはAEMで復元されますが、[!DNL Dynamic Media] では復元されません。 同じことが [!DNL Dynamic Media] テンプレートにも有効です。
+* 現在、[!DNL Dynamic Media] テンプレートでは複数の [!DNL Dynamic Media] 会社のサポートを使用できません。
+* コピーまたは移動の場合、宛先セレクターにはすべてのフォルダー（[!DNL Dynamic Media] 以外の同期フォルダーを含む）が表示されます。また、現在、[!DNL Dynamic Media] テンプレートアセットは表示されません（これらは両方とも宛先セレクターの制限です）。
+* 「アセット」セクションからのフォルダーに対する更新操作（公開や削除など）は、そのフォルダー内で使用可能な [!DNL Dynamic Media] テンプレートに影響を与えます。
+* ごみ箱は、[!DNL Dynamic Media] テンプレートでは機能しません。アセットをごみ箱に移動してから復元すると、アセットは AEM では復元されますが、[!DNL Dynamic Media] では復元されません。[!DNL Dynamic Media] テンプレートも同様です。
 
 ## 関連トピック
 
-1. [[!DNL Dynamic Media]  とその機能 ](/help/assets/dynamic-media/dynamic-media.md) を探索
-1. [[!DNL Dynamic Media] OpenAPI 機能を使用 ](/help/assets/dynamic-media-open-apis-overview.md) て
+1. [[!DNL Dynamic Media]  とその機能](/help/assets/dynamic-media/dynamic-media.md)の探索
+1. OpenAPI 機能を備えた [[!DNL Dynamic Media] ](/help/assets/dynamic-media-open-apis-overview.md) の探索

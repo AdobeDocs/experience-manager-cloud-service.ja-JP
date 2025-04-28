@@ -18,7 +18,7 @@ AEM as a Cloud Service では、受信リクエストまたは送信応答の特
 
 * [リクエスト変換](#request-transformations) - ヘッダー、パスおよびパラメーターなど、受信リクエストの側面を変更します。
 * [応答変換](#response-transformations) - クライアント（web ブラウザーなど）に戻る途中のヘッダーを変更します。
-* [ サーバーサイドのリダイレクト ](#server-side-redirectors) - ブラウザーのリダイレクトをトリガーにします。
+* [サーバーサイドのリダイレクト](#server-side-redirectors) - ブラウザーのリダイレクトをトリガーします。
 * [接触チャネルセレクター](#origin-selectors) - 別の接触チャネルバックエンドにプロキシ処理します。
 
 また、CDN で許可または拒否するトラフィックを制御するトラフィックフィルタールール（WAF を含む）も CDN で設定できます。この機能は既にリリースされています。詳しくは、[WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)ページを参照してください。

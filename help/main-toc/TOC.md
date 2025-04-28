@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 2f79251471d9ec3f586f838c737cde3533874b02
 workflow-type: tm+mt
 source-wordcount: '6134'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -493,7 +493,7 @@ ht-degree: 99%
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
    + [AEM as a Cloud Service の実際の使用のモニタリング](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
-+ アセット {#assets}
++ Assets {#assets}
    + [概要と新機能](/help/assets/overview.md)
    + [ [!DNL Assets] as a [!DNL Cloud Service] の主な変更点](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] アーキテクチャ](/help/assets/architecture.md)
@@ -712,7 +712,7 @@ ht-degree: 99%
       + [AEM Assets を Creative Cloud に接続](/help/assets/connect-assets-with-creative-cloud.md)
 + Forms {#forms}
    + 概要 {#forms-overview}
-      + [概要](/help/forms/home.md)
+      + [はじめに](/help/forms/home.md)
       + [はじめに](/help/forms/home2.md)
       + [トップ Adobe Experience Manager Forms イノベーション](/help/forms/latest-innovations.md)
       + [早期アクセス（EA）機能](/help/forms/early-access-ea-features.md)
@@ -1117,7 +1117,7 @@ ht-degree: 99%
       + [UUID 参照用のコンテンツフラグメントのアップグレード](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [GraphQL クエリの例](/help/headless/graphql-api/sample-queries.md)
       + [GraphQL クエリのトラブルシューティング](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [OpenAPI を使用したAEM コンテンツフラグメント配信](/help/headless/aem-content-fragment-delivery-with-openapi.md)
+   + [OpenAPI を備えた AEM コンテンツフラグメント配信](/help/headless/aem-content-fragment-delivery-with-openapi.md)
    + [コンテンツフラグメントとコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md)
    + [Assets HTTP API でのコンテンツフラグメントのサポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=ja)
    + セキュリティ {#security}
@@ -1303,7 +1303,7 @@ ht-degree: 99%
       + ユニバーサルエディター {#universal-editor}
          + [はじめに](/help/implementing/universal-editor/introduction.md)
          + [ユースケース](/help/implementing/universal-editor/use-cases.md)
-         + [ユニバーサルエディターとサイトエディター](/help/implementing/universal-editor/page-editor-universal-editor.md)
+         + [ユニバーサルエディターと Sites エディター](/help/implementing/universal-editor/page-editor-universal-editor.md)
          + [属性と項目タイプ](/help/implementing/universal-editor/attributes-types.md)
          + [コンポーネント定義](/help/implementing/universal-editor/component-definition.md)
          + [モデル定義、フィールドおよびコンポーネントタイプ](/help/implementing/universal-editor/field-types.md)
@@ -1422,7 +1422,7 @@ ht-degree: 99%
    + [AEM コネクタの実装](/help/connectors/implement.md)
    + [AEM コネクタの登録](/help/connectors/submit.md)
    + [AEM コネクタの保守](/help/connectors/maintain.md)
-+ 運用 {#operations}
++ 操作 {#operations}
    + [AEM as a Cloud Service の運用と保守](/help/operations/home.md)
    + [アクションセンター](/help/operations/actions-center.md)
    + [コンテンツの検索とインデックス作成](/help/operations/indexing.md)

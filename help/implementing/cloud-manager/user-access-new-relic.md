@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
 source-wordcount: '1820'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -172,7 +172,7 @@ New Relic からメールが届かない場合は、次の操作を実行しま�
 ## 使用上の注意 {#usage-notes}
 
 * 最大 30 人のユーザーを追加できます。ユーザーの最大数に達した場合は、新しいユーザーを追加できるように、ユーザーを削除します。
-* New Relicに追加されるユーザーのタイプは、**基本** です。 詳しくは、[New Relic のドキュメント](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/)を参照してください。
+* New Relic に追加されたユーザーは、**基本**&#x200B;のタイプになります。詳しくは、[New Relic のドキュメント](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/)を参照してください。
 * AEM as a Cloud Service は New Relic One APM ソリューションのみを提供し、アラート、ログ、API 統合のサポートは提供していません。
 
 >[!NOTE]

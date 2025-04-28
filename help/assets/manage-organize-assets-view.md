@@ -8,7 +8,7 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: 89c47db38bf26f8c5984278e49ad7727a8ec03e5
 workflow-type: tm+mt
 source-wordcount: '1700'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -137,27 +137,27 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 ### アセットのバージョンの表示と比較 {#view-and-compare-versions}
 
-アセットの複製コピーまたは変更済みコピーをアップロードして、そのバージョンを作成する。 バージョン管理を使用すると、アセットの変更を経時的に追跡し、必要に応じて以前のバージョンに戻すことができます。
+アセットの複製コピーや変更済みコピーをアップロードして、そのコピーのバージョンを作成します。バージョン管理により、アセットへの変更を時間の経過と共に追跡し、必要に応じて以前のバージョンに戻すことができます。
 
 バージョンを表示および比較するには：
 
 1. アセットの詳細ページに移動します。
-1. 右側のペインで ![ バージョン ](/help/assets/assets/Clock.svg) をクリックし、**[!UICONTROL バージョン]** パネルを表示します。 オリジナルアセットとそのアップロードされたバージョンのサムネールがこのパネルに表示されます。
+1. 右側のパネルで ![バージョン](/help/assets/assets/Clock.svg) をクリックし、**[!UICONTROL バージョン]**&#x200B;パネルを表示します。このパネルには、元のアセットとそのアップロードしたバージョンのサムネールが表示されます。
 1. パネルでバージョンを選択して、プレビュー領域でプレビューします。
-1. 最新以外のバージョンを選択し、「最新にする **[!UICONTROL をクリックして]** 最新バージョンとして設定します。
-1. プレビューのスライダーを左右にドラッグすると、選択した画像のバージョンと最新のバージョンが 1 つのプレビューですばやく確認できます。 これにより、選択した画像のバージョンと最新のバージョンをすばやく比較できます。
+1. 最新以外のバージョンを選択し、「**[!UICONTROL 最新にする]**」をクリックして、最新バージョンとして設定します。
+1. プレビューのスライダーを左右にドラッグして、選択したバージョンの画像とその最新バージョンを 1 つのプレビューですばやく確認します。これにより、選択したバージョンの画像を最新バージョンと簡単に比較できます。
 
    >[!NOTE]
    >
    > バージョン比較は、画像アセットに対してのみ有効です。
 
-   ![ アセットのバージョンの比較 ](/help/assets/assets/version-compare2.png)
+   ![アセットのバージョンを比較](/help/assets/assets/version-compare2.png)
 
 <!-- old content
 To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**. 
 -->
 
-最新バージョンを選択し、「**[!UICONTROL 新しいバージョン]**」をクリックして、アセットの新しいコピーをローカルファイルシステムからアップロードして、アセットのバージョンを作成します。
+最新バージョンを選択し、「**[!UICONTROL 新しいバージョン]**」をクリックして、ローカルファイルシステムからアセットの新しいコピーをアップロードし、アセットバージョンを作成します。
 
 <!-- old content
 You can also create versions from the versions timeline. Select the latest version, click **[!UICONTROL New Version]**, and upload a new copy of the asset from your local file system.
