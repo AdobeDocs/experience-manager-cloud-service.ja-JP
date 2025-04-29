@@ -5,24 +5,18 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 806f6bb210a04a4c0512414e0550c64640ebe8b6
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2260'
-ht-degree: 95%
+source-wordcount: '2230'
+ht-degree: 100%
 
 ---
 
 # コンテンツフラグメントモデルの定義 {#defining-content-fragment-models}
 
->[!IMPORTANT]
->
->コンテンツフラグメントモデルの様々な機能は、早期導入プログラムを通じて使用できます。
->
->ステータスを確認し、興味がある場合に適用する方法について詳しくは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
-
 Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントモデルでは、[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)のコンテンツの構造を定義します。これらのフラグメントは、ページオーサリングまたはヘッドレスコンテンツの基盤として使用できます。
 
-このページでは、専用のエディターを使用してコンテンツフラグメントモデルを定義する方法について説明します。 [ コンテンツフラグメントコンソールから使用できるアクション ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)、[ フォルダーにモデルを許可 ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions)、[ モデルの公開 ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model) など、フラグメントの作成後に使用できるタスクやオプションについて詳しくは、[ コンテンツフラグメントモデルの管理 ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder) を参照してください。
+このページでは、専用のエディターを使用してコンテンツフラグメントモデルを定義する方法について説明します。[コンテンツフラグメントコンソールから実行できるアクション](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions)、[フォルダーでのモデルの許可](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder)、[モデルの公開](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)など、フラグメントの作成後に実行できるタスクとオプションについて詳しくは、[コンテンツフラグメントモデルの管理](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)を参照してください。
 
 >[!CAUTION]
 >
@@ -38,11 +32,11 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 >
 >既存のコンテンツフラグメントで既に使用されているモデルを編集すると、それらの依存フラグメントに影響を与える可能性があります。
 
-1. コンテンツフラグメントコンソールで、[ コンテンツフラグメントモデル ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#basic-structure-handling-content-fragment-models-console) のパネルを選択し、コンテンツフラグメントモデルが含まれているフォルダーに移動します。
+1. コンテンツフラグメントコンソールで、[コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#basic-structure-handling-content-fragment-models-console)のパネルを選択し、コンテンツフラグメントモデルが格納されているフォルダーに移動します。
 
    >[!NOTE]
    >
-   >[ 作成 ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model) した直後にモデルを開くこともできます。
+   >また、モデルを[作成](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)した後に直接開くこともできます。
 
 1. 必要なモデルを **編集** 用に開きます。クイック操作を使用するか、モデルを選択してツールバーから操作を選択します。
 
@@ -65,7 +59,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
    * フィールドがモデルに追加されると、その特定のデータタイプに対して定義できる&#x200B;**プロパティ**&#x200B;が右側のパネルに表示されます。ここで、そのフィールドに必要な項目を定義することができます。
 
-      * プロパティの多くは自明であり、詳しくは [ プロパティ（データタイプ） ](#properties) を参照してください。
+      * 多くのプロパティは自明です。詳しくは、[プロパティ（データタイプ）](#properties)を参照してください。
       * 「**フィールドラベル**」を入力すると、「**プロパティ名**」が空欄の場合は自動入力され、後で手動で更新できます。
 
         >[!CAUTION]
@@ -169,7 +163,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 ## プロパティ（データタイプ） {#properties}
 
-多くのプロパティは自明です。プロパティによっては次に示す追加の詳細情報があります。
+多くのプロパティは一目瞭然です。プロパティによっては、次に示す追加の詳細情報があります。
 
 * **プロパティ名**
 

@@ -4,20 +4,14 @@ description: ヘッドレスコンテンツ配信の Adobe Experience Manager as
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 exl-id: 004d1340-8e3a-4e9a-82dc-fa013cea45a7
-source-git-commit: f740301df609e534f1ef770921ea9431de17f846
-workflow-type: ht
-source-wordcount: '1157'
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+workflow-type: tm+mt
+source-wordcount: '1123'
 ht-degree: 100%
 
 ---
 
 # UUID 参照用のコンテンツフラグメントのアップグレード {#upgrade-content-fragments-for-UUID-references}
-
->[!IMPORTANT]
->
->コンテンツフラグメントで使用する GraphQL API の様々な機能は、早期導入プログラムを通じて利用できます。
->
->ステータスを確認し、興味がある場合に適用する方法について詳しくは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
 GraphQL フィルターの安定性を最適化するには、コンテンツフラグメント内のコンテンツとフラグメント参照をアップグレードして、Universally Unique Identifier（UUID）を使用するようにします。
 

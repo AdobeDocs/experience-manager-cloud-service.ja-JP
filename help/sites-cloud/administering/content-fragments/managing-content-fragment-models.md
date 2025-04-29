@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: 3e4775df58a03136e925be73dab6faf673e7215e
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2290'
+source-wordcount: '2260'
 ht-degree: 51%
 
 ---
@@ -17,12 +17,6 @@ ht-degree: 51%
 コンテンツフラグメントコンソールから、コンテンツフラグメントモデルを管理し、[ エディターを開いて ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) 構造を定義できます。
 
 Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントモデルでは、[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)のコンテンツの構造を定義します。これらのフラグメントは、ヘッドレスコンテンツやページオーサリングの基盤として使用できます。
-
->[!IMPORTANT]
->
->コンテンツフラグメントコンソールの様々な機能は、早期導入プログラムを通じて使用できます。
->
->ステータスを確認し、興味がある場合に適用する方法について詳しくは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
 >[!NOTE]
 >
@@ -255,7 +249,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
    ![タイトルと説明](assets/cf-managing-content-fragment-models-create.png)
 
-1. **作成** を使用して空のモデルを保存するか、**作成して開く** を使用します。
+1. 「**作成**」を使用して空のモデルを保存するか、「**作成して開く**」を使用します。
 
 ### コンテンツフラグメントモデルの有効化 {#enabling-a-content-fragment-model}
 

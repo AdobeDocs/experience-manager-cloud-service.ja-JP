@@ -5,20 +5,14 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2847'
-ht-degree: 92%
+source-wordcount: '2817'
+ht-degree: 100%
 
 ---
 
 # コンテンツフラグメントのオーサリング {#authoring-content-fragments}
-
->[!IMPORTANT]
->
->コンテンツフラグメントエディターの様々な機能は、早期導入プログラムを通じて使用できます。
->
->ステータスを確認し、興味がある場合に適用する方法について詳しくは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
 コンテンツフラグメントのオーサリングは、ヘッドレス配信とページオーサリングの両方に焦点を当てています。
 
@@ -312,11 +306,11 @@ ht-degree: 92%
 
 #### 参照画像 {#reference-images}
 
-**コンテンツ参照** フィールドでは、次の操作を実行できます。
+「**コンテンツ参照**」フィールドでは、次の操作を実行できます。
 
-* ローカルリポジトリーに既に存在する参照アセット
-* リモートリポジトリーにある参照アセット
-* アセットをフィールドに直接アップロードします。これにより、**Assets** コンソールを使用してアップロードする必要がなくなります
+* ローカルリポジトリに既に存在するアセットを参照する。
+* リモートリポジトリに存在するアセットを参照する。
+* アセットをフィールドに直接アップロードするので、**アセット**&#x200B;コンソールを使用せずにアップロードする。
 
   >[!NOTE]
   >
@@ -325,7 +319,7 @@ ht-degree: 92%
   >* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)に&#x200B;**ルートパス**&#x200B;が定義されていること 画像を保存する場所を指定します。
   >* 許可されたコンテンツタイプのリストに&#x200B;**画像**&#x200B;が含められていること
 
-##### 参照ローカルAssets {#reference-local-assets}
+##### ローカルアセットの参照 {#reference-local-assets}
 
 ローカルアセットを参照するには、次のいずれかを実行します。
 
@@ -334,39 +328,39 @@ ht-degree: 92%
 
   ![コンテンツフラグメントエディター - アセットオプションの追加](assets/cf-authoring-add-asset-options.png)
 
-##### 参照リモートAssets {#reference-remote-assets}
+##### リモートアセットの参照 {#reference-remote-assets}
 
 リモートアセットを参照するには：
 
-1. アセットを参照する際にリモートの **リポジトリ** を指定します。
+1. アセットを参照する際にリモート&#x200B;**リポジトリ**&#x200B;を指定します。
 
-   ![ コンテンツフラグメントエディター – リモートからアセットを選択 ](assets/cf-authoring-remote-asset-01.png)
+   ![コンテンツフラグメントエディター - リモートからアセットを選択](assets/cf-authoring-remote-asset-01.png)
 
 2. 選択後、アセット情報内に場所が表示されます。
 
-   ![ コンテンツフラグメントエディター – リモートリポジトリからのアセット ](assets/cf-authoring-remote-asset-02.png)
+   ![コンテンツフラグメントエディター - リモートリポジトリからのアセット](assets/cf-authoring-remote-asset-02.png)
 
-###### リモートAssets – 制限 {#remote-assets-limitations}
+###### リモートアセット - 制限事項 {#remote-assets-limitations}
 
-リモートアセットを参照する場合は、いくつかの制限があります。
+リモートアセットを参照する際、いくつかの制限事項があります。
 
-* リモートアセットリポジトリからの参照には、[ 承認済み ](/help/assets/approve-assets.md) アセットのみを使用できます。
+* リモートアセットリポジトリから参照できるのは、[承認済み](/help/assets/approve-assets.md)アセットのみです。
 
-* 参照されているアセットがリモートリポジトリーから削除されると、コンテンツ参照が破損します。
+* 参照されているアセットをリモートリポジトリから削除すると、コンテンツ参照が破損します。
 
-* ユーザーがアクセス権を持つすべての配信アセットリポジトリーを選択できますが、使用可能リストは制限できません。
+* ユーザーがアクセス権を持つすべての配信アセットリポジトリが選択可能になりますが、使用可能なリストは制限できません。
 
-* AEM インスタンスとリモートアセットリポジトリーインスタンスは、両方とも同じバージョンである必要があります。
+* AEM インスタンスとリモートアセットリポジトリインスタンスは、両方とも同じバージョンにする必要があります。
 
-* 管理 API または配信 API 経由で公開されるアセットメタデータがありません。 アセットメタデータの詳細を取得するには、Asset Metadata API を使用する必要があります。
+* アセットメタデータは、Management API および Delivery API 経由では公開されません。アセットメタデータの詳細を取得するには、Asset Metadata API を使用する必要があります。
 
    * 個々のアセットメタデータ：[https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
 
-   * 検索 API を使用して一括メタデータ情報を取得（試行用）: [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+   * 検索 API を使用して一括メタデータ情報を取得（実験用）：[https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
 
 >[!NOTE]
 >
->コンテンツフラグメントと共に使用する [AEM GraphQL API - Dynamic Media for OpenAPI asset support （リモート Assets）も参照してください ](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
+>詳しくは、[コンテンツフラグメントと共に使用する AEM GraphQL API - OpenAPI 用の Dynamic Media アセットのサポート（リモートアセット）](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)も参照してください。
 
 #### 参照ページ {#reference-pages}
 

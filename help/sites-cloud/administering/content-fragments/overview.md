@@ -5,20 +5,14 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2010'
-ht-degree: 94%
+source-wordcount: '1977'
+ht-degree: 100%
 
 ---
 
 # コンテンツフラグメントの操作の概要 {#overview-working-with-content-fragments}
-
->[!IMPORTANT]
->
->コンテンツフラグメントとコンテンツフラグメントモデルの様々な機能は、早期導入プログラムを通じて使用できます。
->
->ステータスを確認し、興味がある場合に適用する方法について詳しくは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
 Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツを設計、作成、キュレーション、公開できます。複数の場所、複数のチャネル上で使用可能なコンテンツを用意でき、[ヘッドレス配信](/help/headless/what-is-headless.md)や[ページオーサリング](/help/sites-cloud/authoring/fragments/content-fragments.md)に理想的です。
 
@@ -40,7 +34,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 コンテンツフラグメントには、構造化されたコンテンツが含まれます。
 
 * 各フラグメントは、[コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)に基づいています。
-   * [ コンテンツフラグメントモデルは、生成されるフラグメントの構造を定義 ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) します。
+   * [コンテンツフラグメントモデルは、生成されるフラグメントの構造を定義](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)します。
 * すべてのフラグメントは、次の要素で構成されます。
    * **[メイン](#main-and-variations)** - コアコンテンツを保持するフラグメントの不可欠な部分であり、常に存在し、削除できません
    * **[バリエーション](#main-and-variations)** - オーサーが作成したコンテンツの 1 つまたは複数の配列
@@ -92,7 +86,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 このページおよび次のページでは、コンテンツフラグメントを作成、設定、維持管理および使用するためのタスクについて説明します。
 
 * [お使いのインスタンスでコンテンツフラグメント機能を有効にする](/help/sites-cloud/administering/content-fragments/setup.md)
-* [ コンテンツフラグメントモデル ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - モデルを有効化、作成および [ 定義 ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) します
+* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - モデルを有効化、作成および[定義](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)します
 * [コンテンツフラグメントを作成](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)（コンテンツフラグメントコンソールを使用）
 
 フラグメントが作成されたら、次の操作を実行できます。
@@ -211,7 +205,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 * **フラグメントの要素**
 
    * 要素は、コンテンツを含むデータフィールドと相関関係にあります。
-   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)を使用して、コンテンツフラグメントを作成します。モデルで指定された要素 [ フィールド）は、フラグメントの構造を定義します ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)。 このような要素（フィールド）には様々なデータタイプがあります。
+   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)を使用して、コンテンツフラグメントを作成します。[モデルで指定された要素（フィールド）は、フラグメントの構造を定義します](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)。このような要素（フィールド）には様々なデータタイプがあります。
 
 * **フラグメントの段落**
 
@@ -247,7 +241,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 * **コンテンツモデル**
 
    * ](/help/sites-cloud/administering/content-fragments/setup.md)設定ブラウザーを使用して有効化[されます。
-   * [ コンテンツフラグメントコンソールを使用して作成 ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model) されます。
+   * [コンテンツフラグメントコンソールを使用して作成](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)されます。
    * [フラグメントを作成](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments)するために必要です。
    * フラグメントの構造（タイトル、コンテンツ要素、タグ定義）を定義します。
    * コンテンツフラグメントモデル定義にはタイトルと 1 つのデータ要素が必要です。その他すべてはオプションです。
@@ -277,13 +271,13 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 ## コンテンツフラグメントコンソール {#content-fragments-console}
 
-コンテンツフラグメントコンソールは、{ コンテンツフラグメント [、{ コンテンツフラグメントモデル ](/help/sites-cloud/administering/content-fragments/managing.md) および [4}Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) の管理、検索および作成専用 ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) す。 [ヘッドレスコンテキストでの使用に最適化されていますが、ページオーサリングで使用するコンテンツフラグメントとコンテンツフラグメントモデルを作成する際にも使用されます。
+コンテンツフラグメントコンソールは、[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/managing.md)、[コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)および[アセット](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)の管理、検索および作成専用です。ヘッドレスコンテキストでの使用に最適化されていますが、ページオーサリングで使用するコンテンツフラグメントとコンテンツフラグメントモデルを作成する際にも使用されます。
 
 コンソールは、グローバルナビゲーションの最上位レベルから直接アクセスできます。
 
 ![グローバルナビゲーション - コンテンツフラグメントコンソール](assets/cf-managing-global-navigation.png)
 
-左端のパネルを使用して、表示、参照、および管理するリソースタイプを選択できます。
+左端のパネルを使用して、表示、参照、管理するリソースタイプを選択できます。
 
 ![コンテンツフラグメントコンソール - ナビゲーション](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
 
@@ -293,7 +287,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [アセット](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
-* このコンソールで使用できる[キーボード ショートカット](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)の選択
+* このコンソールで使用できる[キーボードショートカット](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)の選択
 
 >[!CAUTION]
 >

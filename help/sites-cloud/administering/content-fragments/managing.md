@@ -5,28 +5,16 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2629'
+source-wordcount: '2566'
 ht-degree: 100%
 
 ---
 
 # コンテンツフラグメントの管理 {#managing-content-fragments}
 
->[!IMPORTANT]
->
->コンテンツフラグメントとコンテンツフラグメントモデルの様々な機能は、早期導入プログラムを通じて使用できます。
->
->ステータスを確認し、興味がある場合に適用する方法について詳しくは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
-
 専用の [コンテンツフラグメントコンソール](#content-fragments-console)および [コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)から、Adobe Experience Manager (AEM) as a Cloud Serviceの&#x200B;**コンテンツフラグメント**&#x200B;の管理方法を説明します。これらのコンテンツフラグメントは、ヘッドレスコンテンツの基礎として、またはページオーサリングに使用できます。
-
->[!IMPORTANT]
->
->コンテンツフラグメントコンソールの様々な機能は、早期導入プログラムを通じて使用できます。
->
->ステータスを確認し、興味がある場合に適用する方法について詳しくは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
 >[!NOTE]
 >

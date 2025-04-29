@@ -4,22 +4,16 @@ description: GraphQL を AEM と共に使用し、サンプルコンテンツと
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '1972'
-ht-degree: 98%
+source-wordcount: '1938'
+ht-degree: 100%
 
 ---
 
 # AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ {#learn-graphql-with-aem-sample-content-queries}
 
 GraphQL を AEM と共に使用し、サンプルコンテンツとクエリを調べて、コンテンツをヘッドレスに提供する方法を説明します。
-
->[!IMPORTANT]
->
->コンテンツフラグメントで使用する GraphQL API の様々な機能は、早期導入プログラムを通じて利用できます。
->
->ステータスを確認し、興味がある場合に適用する方法について詳しくは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
 >[!NOTE]
 >
@@ -1887,9 +1881,9 @@ Dynamic Media アセットへの URL 配信の場合
 
 * [URL による Dynamic Media アセット配信のサンプルクエリ - 複数の参照](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)を参照してください
 
-現在のAEM インスタンスに対してローカルではないリモートアセットを配信する場合は、コンテンツフラグメントエディターを使用します。
+コンテンツフラグメントエディターから、現在の AEM インスタンスに対してローカルではないリモートアセットを配信する場合
 
-* 詳しくは、[OpenAPI アセットをサポートする Dynamic Media のサンプルクエリ（リモート Assets） ](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-for-openapi-asset-support) を参照してください。
+* 詳しくは、[OpenAPI アセットサポートの Dynamic Media のサンプルクエリ（リモートアセット）](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-for-openapi-asset-support)を参照してください
 
 ## GraphQL で使用するコンテンツフラグメント構造のサンプル {#content-fragment-structure-graphql}
 
