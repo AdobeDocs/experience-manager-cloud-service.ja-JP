@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 05c34d45e27a8ef22c1ebca72d362529669339fa
+source-git-commit: 31fac8e421e58146977222d699bac1c7cf3ee4e5
 workflow-type: tm+mt
 source-wordcount: '1713'
 ht-degree: 43%
@@ -98,8 +98,8 @@ Assets ビューを使用して、アセットの任意のバージョンと最�
 * **ルールエディター**:
    * [ 「When」句内のクリックイベントを含むバイナリ条件 ](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor)：ルールエディターでは、ボタンクリックイベント（_クリックされた_）と「When」句内の他の条件を組み合わせることができるようになりました。 これにより、ユーザーの操作などに基づいて、ルールの実行をより正確に制御できます。 メモ：複数の条件を使用する場合、クリックイベントを最初の条件にする必要があります。
    * [ フィールドおよびパネルの検証条件 ](/help/forms/rule-editor-core-components-usecases.md)：ルールエディターに _IsValid_ 条件と _IsNotValid_ 条件が含まれるようになりました。 これらを使用すると、特定のフィールドまたはパネル全体（水平タブ、垂直タブ、アコーディオン、ウィザードなどのレイアウトを含む）の検証ステータスを確認でき、検証結果に基づいてフォームのナビゲーションとユーザーエクスペリエンスを向上させることができます。
-* **SharePoint リストの範囲管理の向上**:SharePoint サイトでは、/sites や/teams などのすべての管理パスをサポートするようになりました。 この機能強化により、様々なSharePoint サイト構造にわたる統合が可能になり、組織のコンテンツへの柔軟な接続が可能になります。
-* **SharePoint リストへのレコードのドキュメントの保存のサポート**:SharePoint リストベースのフォームデータモデル（FDM）を使用して作成されたFormsでは、レコードのドキュメントバインド参照フィールドプロパティを設定することにより、レコードのドキュメント（DoR）をSharePoint リストに保存できるようになりました。 この機能強化により、サポートされているフォームデータとドキュメントをSharePoint ストレージとシームレスに統合できます。
+* [SharePoint リストの範囲管理の向上 ](/help/forms/connect-forms-to-sharepoint-list.md):SharePoint サイトでは、/sites や/teams などのすべての管理パスをサポートするようになりました。 この機能強化により、様々なSharePoint サイト構造にわたる統合が可能になり、組織のコンテンツへの柔軟な接続が可能になります。
+* [SharePoint リストへのレコードのドキュメントの保存のサポート ](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields):SharePoint リストベースのフォームデータモデル（FDM）を使用して作成されたFormsでは、レコードのドキュメントバインド参照フィールドプロパティを設定することにより、レコードのドキュメント（DoR）をSharePoint リストに保存できるようになりました。 この機能強化により、サポートされているフォームデータとドキュメントをSharePoint ストレージとシームレスに統合できます。
 
 ### AEM Formsの早期アクセス機能 {#forms-new-early-access-features}
 
