@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
+source-git-commit: 4144c726a6f8551df9497732c2ca95b8eec5c63a
 workflow-type: tm+mt
-source-wordcount: '2286'
-ht-degree: 29%
+source-wordcount: '2356'
+ht-degree: 28%
 
 ---
 
@@ -139,6 +139,12 @@ Cloud 上のインタラクティブ通信は、業務上の書簡、ドキュ�
 * データ駆動型インタラクティブ通信の作成、アセンブリおよび配信の管理
 
 開始する準備はできていますか？ インタラクティブ通信エディターは、Forms as a Cloud Service デプロイメントの早期アクセスプログラムで使用できます。 アクセスをリクエストするには、組織 ID とプログラムの詳細を公式アドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールで送信します。
+
+### AEM FormsとAdobe Experience Platformの統合（AEP）
+
+AEM FormsをAdobe Experience Platform（AEP）と接続して、顧客プロファイルとデータを活用し、パーソナライズされたフォームエクスペリエンスと、フォーム送信に基づくトリガーのダウンストリームワークフローを実現できます。 フォームデータをAEP データセットに直接送信することで、顧客プロファイルをエンリッチメントし、ユーザーのインタラクションに関するより深いインサイトを得ることができます。
+
+開始する準備はできていますか？ [AEM FormsとAdobe Experience Platform（AEP）の統合の詳細 ](/help/forms/aem-forms-aep-connector.md)
 
 ## その他の早期アクセス・イノベーション
 
