@@ -4,9 +4,9 @@ description: この記事では、フォーム作成ウィザードでコアコ�
 feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: c68e98cfe442d0b5a928fde596e193073d5cac21
+source-git-commit: e2ea802856a2fbab90d4ddb1ecf7280ce789d59c
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1626'
 ht-degree: 29%
 
 ---
@@ -97,13 +97,13 @@ AEM インスタンス上にフォームを作成し、Edge Delivery Servicesに
 1. **[!UICONTROL 作成]**／**[!UICONTROL アダプティブフォーム]**&#x200B;を選択します。ウィザードが開きます。
 1. 「**Source**」タブで **コアコンポーネントベースのテンプレート** と **テーマ** を選択すると、「**[!UICONTROL 作成]**」ボタンが有効になります。
 
-![ コアコンポーネントベースのテンプレート ](/help/forms/assets/core-component-based-template.png)
+   ![ コアコンポーネントベースのテンプレート ](/help/forms/assets/core-component-based-template.png)
 
 1. （オプション）「**[!UICONTROL データソース]**」タブまたは「**[!UICONTROL 送信]**」タブで、データソースまたは送信アクションを選択できます。
 1. （オプション）「**[!UICONTROL 配信]**」タブで、フォームの公開日または非公開日を指定できます。
 1. 「**[!UICONTROL 作成]**」をクリックすると、**フォームを作成** ウィザードが次の項目に対して表示されます。
    1. 「**名前**」と「**タイトル**」を指定します。
-   2. アダプティブフォームを保存する場所を「**パス**」フィールドで指定します。
+   1. アダプティブフォームを保存する場所を「**パス**」フィールドで指定します。
 
    ![ フォーム作成ウィザード ](/help/forms/assets/create-cc-form.png)
 
@@ -174,30 +174,30 @@ Edge Delivery Servicesでアダプティブフォームを公開するには、[
 Edge Delivery Services設定を作成するには、以下の手順を実行します。
 
 >[!BEGINTABS]
->[!TAB Edge Delivery Servicesベースのテンプレートを使用して作成されたフォームの場合 ]
+>[!TAB Edge Delivery Servicesベースのテンプレート ]
 
 
 Edge Delivery Services ベースのテンプレートをベースとするフォームのEdge Delivery Services設定は、フォームの設定コンテナに自動的に作成されます。
 
 ![Edge Delivery Servicesの設定 ](/help/edge/assets/aem-instance-eds-configuration.png)
 
->[!TAB  コアコンポーネントベースのテンプレートを使用して作成されたフォームの場合 ]
+>[!TAB  コアコンポーネントベースのテンプレート ]
 
 1. AEM Forms as a Cloud Service オーサーインスタンスで、**[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Edge Delivery Services 設定]**&#x200B;に移動します。
 
    ![Edge Delivery Services設定を選択 ](/help/edge/assets/select-eds-conf.png)
 
-1. フォームの名前に一致するフォルダーを選択します。 例えば、フォームの名前が `enrollment-form` の場合は、フォルダー `forms/enrollment-form` を選択し、**[!UICONTROL 作成]**/**[!UICONTROL 設定]** をクリックします。
+2. フォームの名前に一致するフォルダーを選択します。 例えば、フォームの名前が `enrollment-form` の場合は、フォルダー `forms/enrollment-form` を選択し、**[!UICONTROL 作成]**/**[!UICONTROL 設定]** をクリックします。
 
    ![Edge Delivery Servicesの設定 ](/help/forms/assets/create-eds-conf.png)
 
-1. **[!UICONTROL Edge Delivery Services設定]** をクリックし、**[!UICONTROL プロパティ]** をクリックしてプロパティを開きます。
+3. **[!UICONTROL Edge Delivery Services設定]** をクリックし、**[!UICONTROL プロパティ]** をクリックしてプロパティを開きます。
 
    ![ 自動作成された設定 ](/help/forms/assets/eds-conf.png)
 
    Edge Delivery Services設定が表示されます。
 
-1. Edge Delivery Services設定で、以下を指定します。
+4. Edge Delivery Services設定で、以下を指定します。
 
    * **組織**:GitHub の組織名を指定します。
 
@@ -206,7 +206,7 @@ Edge Delivery Services ベースのテンプレートをベースとするフォ
    * **（オプション）Edge ホスト**:「Edge ホスト」オプションはそのままにしておきます。 フォームはプレビュー（.page）環境とライブ（.live）環境の両方に公開されます。
    * **（オプション）サイト認証トークン**：サイト認証トークンを使用して、AEM インスタンスとEdge Delivery Servicesの間のリクエストを安全に認証します。
 
-1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。 設定が作成されます。
+5. 「**[!UICONTROL 保存して閉じる]**」をクリックします。 設定が作成されます。
 
 >[!ENDTABS]
 
@@ -254,7 +254,7 @@ Edge Delivery Servicesでフォームにアクセスするには、フォーム�
 以下のスクリーンショットでは、Edge Delivery Servicesベースおよびコアコンポーネントベースのテンプレートを使用して作成されたフォームのステージング済みフォーム URL とライブフォーム URL およびビジュアルプレビューを比較しています。
 
 >[!BEGINTABS]
->[!TAB Edge Delivery Servicesベースのテンプレートを使用して作成されたフォームへのアクセス ]
+>[!TAB Edge Delivery Servicesベースのテンプレート ]
 
 <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
     <thead>
@@ -275,7 +275,7 @@ Edge Delivery Servicesでフォームにアクセスするには、フォーム�
     </tbody>
   </table>
 
->[!TAB  コアコンポーネントベースのテンプレートを使用して作成されたフォームへのアクセス ]
+>[!TAB  コアコンポーネントベースのテンプレート ]
 
 <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
   <thead>
