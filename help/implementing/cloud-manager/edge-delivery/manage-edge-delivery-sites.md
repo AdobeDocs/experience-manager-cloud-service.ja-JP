@@ -4,7 +4,7 @@ description: Edge Delivery サイトに CDN 設定を追加する方法や、Edg
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: f8135fea6cb1e43ec27a250d4664b12fa577ed4b
+source-git-commit: 8e4d988934b927ecbbb29277acdd373a87193ea9
 workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 76%
