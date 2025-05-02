@@ -4,10 +4,10 @@ description: Edge Delivery サイトに CDN 設定を追加する方法や、Edg
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: f8135fea6cb1e43ec27a250d4664b12fa577ed4b
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 100%
+source-wordcount: '712'
+ht-degree: 76%
 
 ---
 
@@ -61,6 +61,109 @@ Edge Delivery Services サイトを削除すると、関連付けられている
 Edge Delivery サイトテーブルで、削除するサイトの行の末尾にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。![Edge Delivery サイトを削除アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)「**削除**」をクリックし、もう一度「**削除**」をクリックして、サイトの削除を確認します。
 
      ![「Edge Delivery サイト」ボタンからの Edge Delivery サイトの追加](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
+
+## ヘリックス 4 とヘリックス 5 の間のEdge Delivery サイトの管理
+
+`/program/{programId}/site/{siteId}` API エンドポイントを使用して、Helix 4 と Helix 5 の間でEdge Delivery サイトを移行します。
+
+Helix 4 web サイトの CDN 設定は、Helix 5 に自動的に移行することはできません。 この制限は、お客様の本番サイトが Helix 4 上で稼働する一方で、Helix 5 のバージョンは開発中であるためです。
+
+**前提条件**
+
+* `sitename` が既に存在している必要があります。
+* 適切な `branchName`、Helix `version` および `repo` の値を把握する。
+* 移行では、`branchName`、Helix `version`、`repo` のみが変更されます。 所有者フィールドは変更できません。
+
+**API 形式**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**リクエスト本文のパラメーター**
+リクエスト本文で指定されたオリジンを適用するために、Edge Delivery サイトのオーバーライドを作成します。
+
+```json
+{
+  "sitename": "<required site name>",
+  "branchName": "<git branch>",
+  "version": "v4" | "v5",
+  "repo": "<git repository name>"
+}
+```
+
+### 例 1: Helix 5 への移行
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**json**
+
+```json
+{
+  "sitename": "test-site-new-helix5",
+  "branchName": "branch",
+  "version": "v5",
+  "repo": "my-website"
+}
+```
+
+**オリジン URL の結果**
+次のオリジン URL を持つEdge Delivery サイトを返します。
+
+`"origin": "branch--my-website–Teo48.aem.live"`
+
+
+### 例 2: Helix 4 に移行する
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**json**
+
+```json
+{
+  "sitename": "test-site-new-helix4",
+  "branchName": "branch",
+  "version": "v4",
+  "repo": "my-website"
+}
+```
+
+**オリジン URL の結果**
+次のオリジン URL を持つEdge Delivery サイトを返します。
+
+`"origin": "branch--my-website--Teo48.hlx.live"`
+
+### 例 3: Helix 5 へのリポジトリ サイトの移行
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**json**
+
+```json
+{
+  "sitename": "test-reposless-website",
+  "branchName": "main",
+  "version": "v5",
+  "repo": "my-reposless-website"
+}
+```
+
+**オリジン URL の結果**
+次のオリジン URL を持つEdge Delivery サイトを返します。
+
+`"origin": "main--my-repoless-website--Teo48.aem.live"`
 
 ## サポートチケットのログ {#eds-support-ticket}
 
