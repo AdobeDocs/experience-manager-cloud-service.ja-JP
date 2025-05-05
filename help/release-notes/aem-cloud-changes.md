@@ -19,7 +19,7 @@ Adobe Experience Manager（AEM）Cloud Service は、AEM プロジェクトを�
 >id="aem_cloud_notable_changes"
 >title="AEM as a Cloud Service の主要な変更点"
 >abstract="このタブでは、AEM as a Cloud Service と比較して、オンプレミスまたは Adobe Managed Services での AEM の違いを理解するのに役立つコンテンツを確認できます。"
->additional-url="https://video.tv.adobe.com/v/346176?captions=jpn" text="AEM as a Cloud Service の進化"
+>additional-url="https://video.tv.adobe.com/v/330543" text="AEM as a Cloud Service の進化"
 
 
 >[!NOTE]

@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2770'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >id="development_guidelines"
 >title="AEM as a Cloud Service の開発ガイドライン"
 >abstract="AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスでの AEM および AMS での AEM との重要な違いについて説明します。"
->additional-url="https://video.tv.adobe.com/v/345904/?captions=jpn" text="パッケージ構造のデモ"
+>additional-url="https://video.tv.adobe.com/v/330555/?captions=jpn" text="パッケージ構造のデモ"
 
 このドキュメントでは、AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスおよび AMS の AEM とは異なる重要な方法について説明します。
 
@@ -111,7 +111,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 ローカル開発の場合、ログエントリは `/crx-quickstart/logs` フォルダーのローカルファイルに書き込まれます。
 
-クラウド環境では、開発者は Cloud Manager を使用してログをダウンロードするか、コマンドラインツールを使用してログを追跡することができます。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+クラウド環境では、開発者は Cloud Manager を使用してログをダウンロードするか、コマンドラインツールを使用してログを追跡することができます。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **ログレベルの設定**
 

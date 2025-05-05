@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2713'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >id="intro_aem_cloudservice_architecture"
 >title="AEM as a Cloud Service アーキテクチャの概要"
 >abstract="ここでは、AEM as a Cloud Service の新しいアーキテクチャを概観し、変更点を理解します。AEM は、画像の数が変化する動的アーキテクチャを実現したので、時間をかけてクラウドアーキテクチャを理解することが重要です。"
->additional-url="https://video.tv.adobe.com/v/346183?captions=jpn" text="アーキテクチャの概要"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="アーキテクチャの概要"
 
 Adobe Experience Manager（AEM）as a Cloud Service は、影響の大きいエクスペリエンスを作成および管理するための、構成可能な一連のサービスを提供します。
 
