@@ -32,7 +32,7 @@ AEM as a Cloud Service は、多数のソリューション、アドオン、デ
 
 次のビデオは、このジャーニーで説明するオンボーディングプロセスの概要であり、オプションとして概要を示すことを目的としています。ビデオ内のすべてのトピックは、ジャーニー内で詳しく説明しています。
 
->[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431504/?quality=12&learn=on&captions=jpn)
 
 ## 契約 {#contract}
 

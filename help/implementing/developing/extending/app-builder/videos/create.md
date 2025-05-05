@@ -22,22 +22,22 @@ ht-degree: 100%
 
 最初の App Builder プロジェクトの作成するための基本を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339168/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342306/?quality=12&learn=on&captions=jpn)
 
 ## ローカル開発環境を設定します。
 
 App Builder 開発用にローカル環境を設定する方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339169/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342280/?quality=12&learn=on&captions=jpn)
 
 ## 最初のプロジェクトの初期化
 
 App Builder プロジェクトを初期化する方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339170/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342245/?quality=12&learn=on&captions=jpn)
 
 ## アプリケーションのビルド、実行、テスト
 
 App Builder アプリケーションをビルド、実行、テストする方法について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339171/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342237/?quality=12&learn=on&captions=jpn)

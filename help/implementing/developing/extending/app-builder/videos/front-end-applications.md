@@ -22,10 +22,10 @@ ht-degree: 100%
 
 プロジェクト初期化オプションや Adobe Spectrum などのフロントエンド App Builder アプリケーションを説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339247/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346317/?quality=12&learn=on&captions=jpn)
 
 ## フロントエンド App Builder アプリケーションの作成
 
 React を使用し、アプリケーション内から Adobe ランタイムアクションを使用して、フロントエンド App Builder アプリケーションを作成する方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339248/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3409739/?quality=12&learn=on&captions=jpn)

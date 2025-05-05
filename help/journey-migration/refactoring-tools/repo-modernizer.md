@@ -32,7 +32,7 @@ Repository Modenizer は、次のデプロイメント構造を作成するこ�
 
 ## Repository Modernizer の使用 {#using-repo-modernizer}
 
->[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412961/?quality=12&learn=on&captions=jpn)
 
 * Adobe I/O CLI 経由：`aio-cli-plugin-aem-cloud-service-migration`（AEM as a Cloud Service の Adobe I/O CLI 用のコードリファクタリングプラグイン）を介して Repository Modenizer を使用することをお勧めします。
 

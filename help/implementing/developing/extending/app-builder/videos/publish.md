@@ -20,4 +20,4 @@ ht-degree: 100%
 
 App Builder アプリケーションを送信してレビューおよび承認する方法と、新しく公開されたアプリケーションを実行する方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339251/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343285/?quality=12&learn=on&captions=jpn)

@@ -186,7 +186,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ターゲットを絞ったキーワードの検索結果で一部のアセットのランクを上げることで、この機能をうまく利用できます。以下の例（ビデオ）を参照してください。詳しくは、「[ での検索](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ja)」を参照してください。 [!DNL Experience Manager]
 
->[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/3410338/?quality=6&captions=jpn)
 
 *ビデオ：検索結果のランク付けの方法とランクへの影響について*
 

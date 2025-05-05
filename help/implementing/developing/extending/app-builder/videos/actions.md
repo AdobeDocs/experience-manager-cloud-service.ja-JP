@@ -22,22 +22,22 @@ ht-degree: 100%
 
 Adobe I/O Runtime とアクションの概要、およびアクションの作成方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339192/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343436/?quality=12&learn=on&captions=jpn)
 
 ## アクティベーション、シーケンス、トリガー、ルール
 
 アクティベーション、web アクション、トリガー、ルールに関連するアクションを説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339193/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343442/?quality=12&learn=on&captions=jpn)
 
 ## App Builder アプリケーションのアクション
 
 App Builder アプリケーションとして使用できるアクションの作成方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339194/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343439/?quality=12&learn=on&captions=jpn)
 
 ## アクションの作成
 
 App Builder アクションの作成方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339195/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343445/?quality=12&learn=on&captions=jpn)

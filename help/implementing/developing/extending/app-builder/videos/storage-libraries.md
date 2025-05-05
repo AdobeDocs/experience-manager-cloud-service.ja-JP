@@ -22,16 +22,16 @@ ht-degree: 100%
 
 App Builder のストレージオプションと、App Builder アプリケーションでストレージが重要な理由について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339238/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343548/?quality=12&learn=on&captions=jpn)
 
 ## 状態ストレージライブラリの使用
 
 App Builder アプリケーションに状態ストレージライブラリをインストールし、それを使用して状態を管理する方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339240/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343555/?quality=12&learn=on&captions=jpn)
 
 ## ファイルストレージライブラリの使用
 
 データを保存、取得および削除するために、App Builder アプリケーションにファイルストレージライブラリをインストールする方法について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339239/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343562/?quality=12&learn=on&captions=jpn)
