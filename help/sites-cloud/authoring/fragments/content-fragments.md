@@ -5,10 +5,10 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+source-git-commit: 369f0be002413d164911515349b3e25d33eb8b2f
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 100%
+source-wordcount: '1272'
+ht-degree: 95%
 
 ---
 
@@ -24,12 +24,11 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 >
 >コンテンツフラグメントは **Sites** 機能ですが、**Assets** として保存されます。
 >
->引き続き **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** コンソールから管理できますが、現在は主に&#x200B;**[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;コンソールで管理されています。
+>引き続き **[Assets](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** コンソールから管理できますが、主に **[コンテンツフラグメント](/help/assets/content-fragments/content-fragments-managing.md)** コンソールで管理します。
 >
->コンテンツフラグメントをオーサリングするエディターは 2 つあります。
+>[ コンテンツフラグメント – オーサリング ](/help/sites-cloud/administering/content-fragments/authoring.md) のデフォルトのエディターは、新しいエディターです。**コンテンツフラグメント** コンソールと **Assets** コンソールの両方からアクセスできます。
 >
->* [コンテンツフラグメント - オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)の新しいエディターには、主に&#x200B;**コンテンツフラグメント**&#x200B;コンソールからアクセスします。
->* [オリジナルエディター](/help/assets/content-fragments/content-fragments-variations.md)には、主に **Assets** コンソールからアクセスします。
+>[ 元のエディター ](/help/assets/content-fragments/content-fragments-variations.md) を使用するには、まず新しいエディターを開いてから **新しいエディター** スイッチを非アクティブにします。
 
 >[!NOTE]
 >

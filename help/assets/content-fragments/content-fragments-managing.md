@@ -5,10 +5,10 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
+source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 100%
+source-wordcount: '1925'
+ht-degree: 91%
 
 ---
 
@@ -37,11 +37,19 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->コンテンツフラグメントは Sites 機能ですが、**アセット**&#x200B;として保存されています。
+>コンテンツフラグメントは **Sites** 機能ですが、**Assets** として保存されます。
 >
->引き続き **Assets** コンソールから管理できますが、現在は主に&#x200B;**[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;コンソールで管理します。このセクションでは、**Assets** コンソールでの管理を説明しています。
+>引き続き **[Assets](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** コンソールから管理できますが、主に **[コンテンツフラグメント](/help/assets/content-fragments/content-fragments-managing.md)** コンソールで管理します。
 >
->コンテンツフラグメントをオーサリングするエディターは 2 つあります。基本機能は同じですが、いくつか違いがあります。この節では、**Assets** コンソールから主にアクセスされるエディターについて説明します。（主に&#x200B;**コンテンツフラグメント**&#x200B;コンソールからアクセスされる）新しいエディターについて詳しくは、Sites のドキュメントの[コンテンツフラグメント - オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)を参照してください。どちらのエディターも、上部のツールバーに切り替えスイッチを使用して、他のエディターにすばやくアクセスできます。
+>コンテンツフラグメントのオーサリングには、新しいエディターと元のエディターの 2 つのエディターがあります。 新しいエディターがデフォルトです。 基本機能は同じですが、いくつかの違いがあります。
+>
+>この節では、元のエディターについて説明します。
+>
+>[ コンテンツフラグメント – オーサリング ](/help/sites-cloud/administering/content-fragments/authoring.md) のデフォルトのエディターは、**コンテンツフラグメント** コンソールと **Assets** コンソールの両方からアクセスできる新しいエディターです。 新しいエディターについて詳しくは、Sites のドキュメント [ コンテンツフラグメント – オーサリング ](/help/sites-cloud/administering/content-fragments/authoring.md) を参照してください。
+>
+>[ 元のエディター ](/help/assets/content-fragments/content-fragments-variations.md) を使用するには、まず新しいエディターを開いてから **新しいエディター** スイッチを非アクティブにします。
+>
+>どちらのエディターも、上部のツールバーに切り替えスイッチを使用して、他のエディターにすばやくアクセスできます。
 
 ## コンテンツフラグメントの作成 {#creating-content-fragments}
 
@@ -132,23 +140,23 @@ ht-degree: 100%
 
 ## フラグメントエディターを開く {#opening-the-fragment-editor}
 
-編集するためにフラグメントを開くには：
+編集用のフラグメントを元のエディターで開くには：
 
 >[!CAUTION]
 >
 >コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
 
-1. **Assets** コンソールを使用して、コンテンツフラグメントの場所に移動します。
-1. 次のいずれかの方法で、フラグメントを編集用に開きます。
+1. コンテンツフラグメントの場所に移動します。
 
-   * フラグメントまたはフラグメントリンク（コンソール表示によって異なる）をクリックまたはタップします。
-   * フラグメントを選択してから、ツールバーの「**編集**」を選択。
+1. 編集するフラグメントを開きます。
 
-1. フラグメントエディターが開きます。必要に応じて変更を加えます。
+1. フラグメントが新しいエディターで開きます。 **新規エディター** スイッチ（右上）を非アクティブにして、元のエディターを開きます。
 
    ![フラグメントエディター](assets/cfm-managing-03.png)
 
-1. 変更を加えた後、必要に応じて「**保存**」、「**保存して閉じる**」、「**閉じる**」のいずれかを使用します。
+1. 必要に応じて変更を加えます。
+
+1. 準備ができたら、必要に応じて **保存**、**保存して閉じる** または **閉じる** を使用します。
 
    >[!NOTE]
    >

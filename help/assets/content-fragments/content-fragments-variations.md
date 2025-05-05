@@ -5,10 +5,10 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2518'
-ht-degree: 100%
+source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
+workflow-type: tm+mt
+source-wordcount: '2530'
+ht-degree: 96%
 
 ---
 
@@ -20,9 +20,13 @@ ht-degree: 100%
 >
 >コンテンツフラグメントは Sites 機能ですが、**Assets** として保存されます。
 >
->コンテンツフラグメントをオーサリングするエディターは 2 つあります。基本機能は同じですが、いくつか違いがあります。この節では、**Assets** コンソールから主にアクセスされるエディターを説明します。（主に&#x200B;**コンテンツフラグメント**&#x200B;コンソールからアクセスされる）新しいエディターについて詳しくは、Sites のドキュメントの[コンテンツフラグメント - オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)を参照してください。
+>コンテンツフラグメントのオーサリングには、新しいエディターと元のエディターの 2 つのエディターがあります。 新しいエディターがデフォルトです。 基本機能は同じですが、いくつかの違いがあります。
+>
+>この節では、元のエディターについて説明します。 これは [ 新しいエディターで開く ](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) ことができます。
+>
+>新しいエディターについて詳しくは、Sites のドキュメント [ コンテンツフラグメント – オーサリング ](/help/sites-cloud/administering/content-fragments/authoring.md) を参照してください。
 
-次から： **バリエーション** 「 」タブでは、次の操作を実行できます。
+「**バリエーション**」タブから、次の操作を実行できます。
 
 * フラグメントの[コンテンツの入力](#authoring-your-content)
 * **プライマリ**&#x200B;コンテンツの[バリエーションの作成および管理](#managing-variations)
@@ -47,7 +51,7 @@ ht-degree: 100%
 
 ## コンテンツのオーサリング {#authoring-your-content}
 
-コンテンツフラグメントを編集用に開くと、デフォルトで「**バリエーション**」タブが開きます。このタブで、プライマリまたはバリエーション（ある場合）のコンテンツをオーサリングできます。構造化されたフラグメントには、コンテンツモデルで定義された、様々なデータタイプの各種フィールドが含まれています。
+コンテンツフラグメントを編集用に元のエディターで開くと、デフォルトで「**バリエーション**」タブが開きます。 このタブで、プライマリまたはバリエーション（ある場合）のコンテンツをオーサリングできます。構造化されたフラグメントには、コンテンツモデルで定義された、様々なデータタイプの各種フィールドが含まれています。
 
 次に例を示します。
 
