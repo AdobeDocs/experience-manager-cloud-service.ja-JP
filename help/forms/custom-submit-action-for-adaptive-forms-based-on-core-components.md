@@ -44,6 +44,7 @@ ht-degree: 24%
    ```
    git clone https://git.cloudmanager.adobe.com/<organization-name>/<app-id>/
    ```
+
    **この情報はどこにありますか？**
 
    これらの詳細を見つける手順について詳しくは、Adobe Experience League の記事「[Git へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#accessing-git)」を参照してください。
@@ -67,6 +68,7 @@ ht-degree: 24%
    ```
    /ui.apps/src/main/content/jcr_root/apps/<app-id>/
    ```
+
    **重要**：`<app-id>` を実際のアプリケーション ID に置き換えます。
 
 1. カスタム送信アクション用の新しいフォルダーを作成し、任意の名前を付けます。 例えば、フォルダーに `customsubmitaction` という名前を付けます。
@@ -79,7 +81,7 @@ ht-degree: 24%
 
    `/ui.apps/src/main/content/jcr_root/apps/<app-id>/customsubmitaction/`
 
-   `Important`：置換 <app-id> 実際のアプリケーション ID を使用します。
+   `Important`：置換 &lt;app-id> 実際のアプリケーション ID を使用します。
 
 1. 新しい設定ファイルを作成します。
 `customsubmitaction` フォルダー内に、`.content.xml` という名前の新しいファイルを作成します。
@@ -117,6 +119,7 @@ ht-degree: 24%
    ```
    <filter root="/apps/<app-id>/[customsubmitaction-folder]"/>
    ```
+
    例えば、次のコード行を追加して、`filter.xml` ファイルに `customsubmitaction` フォルダーを追加します。
 
    ```
@@ -131,7 +134,7 @@ ht-degree: 24%
 
 1. `[AEMaaCS project directory]` ージ内の次のディレクトリに移動します。
    `/core/src/main/java/com/<app-id>/core/service/`
-   `Important`：置換 <app-id> 実際のアプリケーション ID を使用します。
+   `Important`：置換 &lt;app-id> 実際のアプリケーション ID を使用します。
 1. 新しい Java ファイルを作成して、追加した送信アクションのサービスを実装します。 例えば、`CustomSubmitService.java` のように新しい Java ファイルを追加します。
 
    ![ カスタム送信アクションフォルダー ](/help/forms/assets/custom-submit-action-custom-submit-folder.png)
@@ -198,6 +201,7 @@ ht-degree: 24%
       ```
       mvn -PautoInstallPackage clean install
       ```
+
       ![ ローカルデプロイメント ](/help/forms/assets/custom-submit-action-local-deployment.png)
 
 **Cloud Service環境用のコードのデプロイ**

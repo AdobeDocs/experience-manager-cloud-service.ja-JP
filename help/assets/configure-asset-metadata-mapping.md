@@ -127,7 +127,8 @@ Experience Manager Assets as a Cloud Service で、新しいメタデータフ�
 
    1. `Project Name` を&#x200B;**[!UICONTROL フィールドラベル]**&#x200B;フィールドに入力します。
 
-   1. `./jcr:content/metadata/wm:projectName` を&#x200B;**[!UICONTROL プロパティにマッピング]**フィールドに入力します。ガイドラインとして、次のテンプレートを使用して Experience Manager Assets のフィールドマッピングを定義します。
+   1. `./jcr:content/metadata/wm:projectName` を&#x200B;**[!UICONTROL プロパティにマッピング]**&#x200B;フィールドに入力します。ガイドラインとして、次のテンプレートを使用して Experience Manager Assets のフィールドマッピングを定義します。
+
       `./jcr:content/metadata/<mapping defined for the field in workfront>`。
 
       Workfront でマッピングを設定する際に、`wm:projectName` Experience Manager Assets フィールドをプロジェクト／名前 Workfront フィールドにマッピングしました。
@@ -140,14 +141,14 @@ Experience Manager Assets as a Cloud Service で、新しいメタデータフ�
 
    1. `Document Name` を&#x200B;**[!UICONTROL フィールドラベル]**&#x200B;フィールドに入力します。
 
-   1. `./jcr:content/metadata/wm:documentName` を&#x200B;**[!UICONTROL プロパティにマッピング]**フィールドに入力します。
+   1. `./jcr:content/metadata/wm:documentName` を&#x200B;**[!UICONTROL プロパティにマッピング]**&#x200B;フィールドに入力します。
 Workfront でマッピングを設定する際に、`wm:documentName` Experience Manager Assets フィールドをドキュメント／名前 Workfront フィールドにマッピングしました。
 
 1. 「**[!UICONTROL フォームを作成]**」タブをクリックし、**[!UICONTROL 複数行テキスト]**&#x200B;コンポーネントをフォームにドラッグします。フォームのコンポーネントをクリックします。「**[!UICONTROL フォームを作成]**」タブで、次の手順に従います。
 
    1. `Document Description` を&#x200B;**[!UICONTROL フィールドラベル]**&#x200B;フィールドに入力します。
 
-   1. `./jcr:content/metadata/dc:description` を&#x200B;**[!UICONTROL プロパティにマッピング]**フィールドに入力します。
+   1. `./jcr:content/metadata/dc:description` を&#x200B;**[!UICONTROL プロパティにマッピング]**&#x200B;フィールドに入力します。
 Workfront でマッピングを設定する際に、`dc:description` Experience Manager Assets フィールドをドキュメント／説明 Workfront フィールドにマッピングしました。
 
 1. 「**[!UICONTROL 保存]**」をクリックして、変更を保存します。

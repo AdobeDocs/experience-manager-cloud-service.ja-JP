@@ -49,7 +49,7 @@ ht-degree: 2%
 ### 実稼動環境用の新しいEdge Delivery Services サイトの作成 {#create-edge-site}
 
 1. 認証トークンとプログラムのテクニカルアカウントを取得します。
-   * プログラムの **アクセストークンを取得** する方法と [ テクニカルアカウント [ について詳しくは ](/help/edge/wysiwyg-authoring/repoless.md#access-token) サイト間でのコードの再利用 ](/help/edge/wysiwyg-authoring/repoless.md#access-control) ドキュメントを参照してください。
+   * プログラムの **アクセストークンを取得** する方法と [&#128279;](/help/edge/wysiwyg-authoring/repoless.md#access-control) テクニカルアカウント [ について詳しくは ](/help/edge/wysiwyg-authoring/repoless.md#access-token) サイト間でのコードの再利用  ドキュメントを参照してください。
 1. 設定サービスに対して次の呼び出しを実行して、新しいサイトを作成します。 次の点を考慮してください。
    * POST URL のプロジェクト名は、作成する新しいサイト名にする必要があります。 この例では、`wknd-prod` です。
    * `code` の設定は、最初のプロジェクト作成に使用した設定と同じである必要があります。
@@ -122,7 +122,7 @@ ht-degree: 2%
 
 実稼動用AEMは、専用の実稼動サイトに対して前の節で作成した新しいEdge Delivery サイトを使用するように設定されている必要があります。 この例では、実稼動環境の `/content/wknd` 下にあるコンテンツが、作成した `wknd-prod` サイトを使用することを知っている必要があります。
 
-1. AEM実稼動インスタンスにサインインし、**ツール**/**Cloud Services**/**4}Edge Delivery Services Configuration} に移動します。**
+1. AEM実稼動インスタンスにサインインし、**ツール**/**Cloud Services**/**4&rbrace;Edge Delivery Services Configuration&rbrace; に移動します。**
 1. プロジェクトのために自動的に作成された設定を選択します。
 1. ツールバーの **プロパティ** をタップまたはクリックします。
 1. **Edge Delivery Services設定** ウィンドウで、次の操作を行います。

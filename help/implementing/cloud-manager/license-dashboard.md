@@ -34,7 +34,7 @@ Cloud Manager ライセンスダッシュボードを使用すると、使用済
 >ライセンスダッシュボードを表示するには、**ビジネスオーナー** の役割を持つユーザーがログインする必要があります。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
-1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、{4![Cloud Managerヘッダーの ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) メニューアイコンを表示 ](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) をクリックします。 [このアクションにより、タブが表示されます。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、&lbrace;4![Cloud Managerヘッダーの ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) メニューアイコンを表示 [&#128279;](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) をクリックします。 このアクションにより、タブが表示されます。
 1. タブの「**ライセンス**」オプションをクリックします。
 
 ![ライセンスダッシュボード](assets/license-dashboard.png)

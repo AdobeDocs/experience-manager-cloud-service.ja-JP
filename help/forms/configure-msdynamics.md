@@ -80,7 +80,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
 [!DNL Microsoft® Dynamics 365] クラウドサービス設定を指定するには、以下の手順を実行します。
 
-1. オーサーインスタンスで、**[!UICONTROL ツール]**![ ハンマー ](assets/hammer.png)/**[!UICONTROL クラウドサービス]**/**[!UICONTROL データソース]**[!DNL AEM Forms] 移動します。
+1. オーサーインスタンスで、**[!UICONTROL ツール]**![ ハンマー ](assets/hammer.png)/**[!UICONTROL クラウドサービス]**/**[!UICONTROL データソース]**&#x200B;[!DNL AEM Forms] 移動します。
 
    ![ クラウドデータSourceを選択 ](/help/forms/assets/dynamics-data-source.png)
 1. 設定コンテナを選択します。 設定は、選択した設定コンテナに保存されます。

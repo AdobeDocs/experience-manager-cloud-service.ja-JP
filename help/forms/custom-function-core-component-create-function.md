@@ -109,6 +109,7 @@ ht-degree: 56%
          #base=js
        function.js
    ```
+
 1. `js` フォルダーで、カスタム関数を含む JavaScript ファイルを `function.js` として追加します。
 
    ```javascript
@@ -133,6 +134,7 @@ ht-degree: 56%
     return age;
     }
    ```
+
 1. ファイルを保存します。
 
 ![カスタム関数のフォルダー構造](/help/forms/assets/custom-function-added-files.png)
@@ -187,7 +189,7 @@ AEM as a Cloud Service の [AEMaaCS プロジェクトディレクトリ]を Clo
 
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
-カスタム関数は、[JavaScript注釈 [ を使用して ](/help/forms/rule-editor-core-components.md) アダプティブフォームのルールエディター ](##js-annotations) で使用できます。
+カスタム関数は、[&#128279;](##js-annotations)JavaScript注釈 [ を使用して ](/help/forms/rule-editor-core-components.md) アダプティブフォームのルールエディター  で使用できます。
 
 ## アダプティブフォームでのカスタム関数の使用
 

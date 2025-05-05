@@ -12,7 +12,7 @@ ht-degree: 79%
 
 ---
 
-# アダプティブフォームと Salesforce {#configure-salesforce-with-ouath-2.0-client-credential} の統合
+# アダプティブフォームと Salesforce の統合 {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |

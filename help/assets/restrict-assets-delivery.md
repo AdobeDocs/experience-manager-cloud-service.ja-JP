@@ -74,7 +74,7 @@ IMS ユーザーおよびグループ ID に基づいて、[!DNL Experience Mana
 
 >[!NOTE]
 >
-この機能は現在セルフサービスではありません。IMS [ユーザー](https://helpx.adobe.com/jp/enterprise/using/manage-directory-users.html)および[グループ](https://helpx.adobe.com/jp/enterprise/using/user-groups.html)に対するアセット配信を制限するには、エンタープライズサポートチームにお問い合わせください。[Adobe Admin Console](https://adminconsole.adobe.com/) ポータルからアクセスを制限するために必要な情報を取得する方法と、AEM as a Cloud Service オーサーサービスでアクセスを設定する方法を紹介します。
+>この機能は現在セルフサービスではありません。IMS [ユーザー](https://helpx.adobe.com/jp/enterprise/using/manage-directory-users.html)および[グループ](https://helpx.adobe.com/jp/enterprise/using/user-groups.html)に対するアセット配信を制限するには、エンタープライズサポートチームにお問い合わせください。[Adobe Admin Console](https://adminconsole.adobe.com/) ポータルからアクセスを制限するために必要な情報を取得する方法と、AEM as a Cloud Service オーサーサービスでアクセスを設定する方法を紹介します。
 
 ### オン／オフの日時を使用したアセットの配信の制限 {#restrict-delivery-assets-date-time}
 
@@ -122,7 +122,7 @@ AEM Cloud Service オーサーサービスとアセットセレクターでは�
 
 >[!NOTE]
 >
-AEM アセットセレクターベースの統合で IMS 認証を有効にする方法について詳しくは、エンタープライズサポートにお問い合わせください
+>AEM アセットセレクターベースの統合で IMS 認証を有効にする方法について詳しくは、エンタープライズサポートにお問い合わせください
 
 1. アセットセレクターベース以外のエクスペリエンスの場合、AEM as a Cloud Service および OpenAPI 機能を備えた Dynamic Media では現在、サーバーサイド API 統合をサポートし、IMS ベアラートークンを生成できます。
    * [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) を通じて IMS ベアラートークンを取得できるサービスとサーバー間の API 統合を実行するには、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow)の手順に従ってください。

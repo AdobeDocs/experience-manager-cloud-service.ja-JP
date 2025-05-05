@@ -54,7 +54,7 @@ ht-degree: 4%
 >
 > * [[!DNL Assets Ultimate]](/help/assets/assets-ultimate-overview.md) で [!DNL AEM Assets View]UI 拡張機能を使用できます。
 > * UI 拡張機能 [!DNL Assets view] アクセスするには、[ カスタマーサポートケースを作成して送信  [!DNL Adobe]  を行います ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)。
-> * 「詳細なフィードバックオプション **[!UICONTROL を展開し、「**[!UICONTROL  問題を報告 ]**」をクリックすることで、ドキュメントに関するフィードバックを提供でき]** す。
+> * 「詳細なフィードバックオプション **[!UICONTROL を展開し、「**&#x200B;[!UICONTROL &#x200B; 問題を報告 &#x200B;]&#x200B;**」をクリックすることで、ドキュメントに関するフィードバックを提供でき]** す。
 
 ## Assets ビューへの <a id="1"></a> アクセス{#add-UI-Extensibility-in-AEM-Assets-View}
 

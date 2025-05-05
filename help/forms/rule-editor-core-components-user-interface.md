@@ -139,7 +139,7 @@ Users in the forms-power-users group can access code editor. For other users, co
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
 
    次に、この条件が False の場合に実行するアクションを定義します。
-1. 「Marital Status （配偶者の有無）」を「Single （独身） ]**として選択した場合に、「**[!UICONTROL  Spouse Salary （配偶者の給与） **[!UICONTROL 」フィールドに別の条件を追加するには、「Add Else Section （その他のセクションを追加）」をクリックします]**。
+1. 「Marital Status （配偶者の有無）」を「Single （独身） **として選択した場合に、「** Spouse Salary （配偶者の給与） **[!UICONTROL 」フィールドに別の条件を追加するには、「Add Else Section （その他のセクションを追加）」をクリックします]**。
 
    ![when-else](assets/when-else.png)
 
@@ -185,7 +185,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    * 「**[!UICONTROL 演算子を選択]**」フィールドから「**[!UICONTROL プラス]**」を選択します。
 
-   * 「フォームオブジェクト」タブから、他の&#x200B;**[!UICONTROL ドロップオブジェクトの「**[!UICONTROL  Spouse Salary （配偶者の給与）]**」フィールドを選択またはドラッグ＆ドロップするか、「ここ」]**&#x200B;フィールドを選択します。
+   * 「フォームオブジェクト」タブから、他の&#x200B;**[!UICONTROL ドロップオブジェクトの「**&#x200B;[!UICONTROL &#x200B; Spouse Salary （配偶者の給与）]&#x200B;**」フィールドを選択またはドラッグ＆ドロップするか、「ここ」]**&#x200B;フィールドを選択します。
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 

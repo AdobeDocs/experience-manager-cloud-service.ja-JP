@@ -81,7 +81,7 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
 
 >[!IMPORTANT]
 >
->Adobe I/O（AIO） CLI と関連プラグインが正しく動作するように ](https://nodejs.org/en/download/) バージョン 20 の [ ノードと NPM がインストールされていることを確認してください。
+>Adobe I/O（AIO） CLI と関連プラグインが正しく動作するように [&#128279;](https://nodejs.org/en/download/) バージョン 20 の  ノードと NPM がインストールされていることを確認してください。
 
 
 1. 次の [ 手順 ](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) に従って、AIO CLI ツールをインストールします。

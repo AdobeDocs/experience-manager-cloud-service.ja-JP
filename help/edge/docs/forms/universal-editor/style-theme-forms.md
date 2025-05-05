@@ -81,13 +81,15 @@ ht-degree: 98%
 +++ 一般コンポーネントの HTML 構造
 
 ```HTML
+
   <div class="{Type}-wrapper field-{Name}   field-wrapper" data-required={Required}>
-     <label for="{FieldId}" class="field-label">First   Name</label>
-     <input type="{Type}" placeholder="{Placeholder}"   maxlength="{Max}" id={FieldId}" name="{Name}"   aria-describedby="{FieldId}-description">
+     &lt;label for="{FieldId}" class="field-label">First   Name&lt;/label>
+     &lt;input type="{Type}" placeholder="{Placeholder}"   maxlength="{Max}" id={FieldId}" name="{Name}"   aria-describedby="{FieldId}-description">
      <div class="field-description" aria-live="polite"  id="{FieldId}-description">
       Hint - First name should be minimum 3 characters  and a maximum of 10 characters.
      </div>
   </div>
+
 ```
 
 * クラス：div 要素には、特定の要素とスタイル設定をターゲットにする、いくつかのクラスがあります。フォームフィールドをスタイル設定する CSS セレクターを開発するには、`{Type}-wrapper` または `field-{Name}` クラスが必要です。
@@ -102,13 +104,15 @@ ht-degree: 98%
 **HTML 構造の例**
 
 ```HTML
+
 <div class="text-wrapper field-first-name field-wrapper" data-required="true">
-  <label for="firstName" class="field-label">First Name</label>
-  <input type="text" placeholder="Enter your first name" maxlength="50" id="firstName" name="firstName" aria-describedby="firstName-description">
+  &lt;label for="firstName" class="field-label">First Name&lt;/label>
+  &lt;input type="text" placeholder="Enter your first name" maxlength="50" id="firstName" name="firstName" aria-describedby="firstName-description">
   <div class="field-description" aria-live="polite" id="firstName-description">
     Please enter your legal first name.
   </div>
 </div>
+
 ```
 
 +++
@@ -116,28 +120,29 @@ ht-degree: 98%
 +++ 一般コンポーネントの CSS セレクター
 
 ```CSS
+
   
   /* Target all input fields within any .{Type}-wrapper  */
-  main .form form .{Type}-wrapper  {
+  main .form form .{Type}-wrapper  &lbrace;
     /* Add your styles here */
     border: 1px solid #ccc;
     padding: 8px;
     border-radius: 4px;
-  }
+  &rbrace;
   
   /* Target all input fields within any .{Type}-wrapper  */
-  main .form form .{Type}-wrapper input {
+  main .form form .{Type}-wrapper input &lbrace;
     /* Add your styles here */
     border: 1px solid #ccc;
     padding: 8px;
     border-radius: 4px;
-  }
+  &rbrace;
   
   /* Target any element with the class field-{Name}  */
-  main .form form .field-{Name} {
+  main .form form .field-{Name} &lbrace;
     /* Add your styles here */
     /* This could be used for styles specific to all elements with   field-{Name} class, not just inputs */
-  }
+  &rbrace;
   
 ```
 * `.{Type}-wrapper`：フィールドタイプに基づいて、外側の `div` 要素をターゲットにします。例えば、`.text-wrapper` はすべてのテキストフィールドをターゲットにします。
@@ -146,20 +151,22 @@ ht-degree: 98%
 **一般コンポーネントの CSS セレクターの例**
 
 ```CSS
+
 /*Target all text input fields */
-main .form form .text-wrapper input {
+main .form form .text-wrapper input &lbrace;
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
   color: red;
-}
+&rbrace;
 
 /*Target all fields with name first-name*/
-main .form form .field-first-name input {
+main .form form .field-first-name input &lbrace;
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
-}
+&rbrace;
+
 ```
 
 +++
@@ -171,29 +178,33 @@ main .form form .field-first-name input {
 +++ ドロップダウンコンポーネントの HTML 構造
 
 ```HTML
+
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
-   <label for="{FieldId}" class="field-label">First Name</label>
-   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
+   &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
     Hint - First name should be minimum 3 characters and a maximum of 10 characters.
    </div>
 </div>
+
 ```
 
 **HTML 構造の例**
 
 ```HTML
+
 <div class="drop-down-wrapper field-country field-wrapper" data-required="true">
-  <label for="country" class="field-label">Country</label>
-  <select id="country" name="country">
-    <option value="">Select Country</option>
-    <option value="US">United States</option>
-    <option value="CA">Canada</option>
-  </select>
+  &lt;label for="country" class="field-label">Country&lt;/label>
+  &lt;select id="country" name="country">
+    &lt;option value="">Select Country&lt;/option>
+    &lt;option value="US">United States&lt;/option>
+    &lt;option value="CA">Canada&lt;/option>
+  &lt;/select>
   <div class="field-description" aria-live="polite" id="country-description">
     Please select your country of residence.
   </div>
 </div>
+
 ```
 
 +++
@@ -203,19 +214,21 @@ main .form form .field-first-name input {
 次の CSS に、ドロップダウンコンポーネントの CSS セレクターの例をいくつか示します。
 
 ```CSS
+
 /* Target the outer wrapper */
-main .form form .drop-down-wrapper {
+main .form form .drop-down-wrapper &lbrace;
   /* Add your styles here */
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
-}
+&rbrace;
 
 /* Style the label */
-main .form form .drop-down-wrapper .field-label {
+main .form form .drop-down-wrapper .field-label &lbrace;
   margin-bottom: 5px;
   font-weight: bold;
-}
+&rbrace;
+
 ```
 * ラッパーをターゲットにする：最初のセレクター（`.drop-down-wrapper`）は外側のラッパー要素をターゲットにし、スタイルがドロップダウンコンポーネント全体に適用されるようにします。
 * Flexbox レイアウト：Flexbox は、ラベル、ドロップダウン、説明を垂直に配置して、すっきりとしたレイアウトを実現します。
@@ -235,37 +248,41 @@ main .form form .drop-down-wrapper .field-label {
 +++ ラジオグループの HTML 構造
 
 ```HTML
-<fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
-   <legend for="{FieldId}" class="field-label">....</legend>
+
+&lt;fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
+   &lt;legend for="{FieldId}" class="field-label">....&lt;/legend>
    <% for each radio in Group %>
    <div class="radio-wrapper field-{Name}">
-      <input type="radio" value="" id="{UniqueId}" data-field-type="radio-group" name="{FieldId}">
-      <label for="{UniqueId}" class="field-label">...</label>
+      &lt;input type="radio" value="" id="{UniqueId}" data-field-type="radio-group" name="{FieldId}">
+      &lt;label for="{UniqueId}" class="field-label">...&lt;/label>
    </div>
    <% end for %>
-</fieldset>
+&lt;/fieldset>
+
 ```
 
 **HTML 構造の例**
 
 ```HTML
-<fieldset class="radio-group-wrapper field-color field-wrapper" id="color_preference" name="color_preference" data-required="true">
-  <legend for="color_preference" class="field-label">Favorite Color:</legend>
+
+&lt;fieldset class="radio-group-wrapper field-color field-wrapper" id="color_preference" name="color_preference" data-required="true">
+  &lt;legend for="color_preference" class="field-label">Favorite Color:&lt;/legend>
   <% for each radio in Group %>
     <div class="radio-wrapper field-color">
-      <input type="radio" value="red" id="color_red" data-field-type="radio-group" name="color_preference">
-      <label for="color_red" class="field-label">Red</label>
+      &lt;input type="radio" value="red" id="color_red" data-field-type="radio-group" name="color_preference">
+      &lt;label for="color_red" class="field-label">Red&lt;/label>
     </div>
     <div class="radio-wrapper field-color">
-      <input type="radio" value="green" id="color_green" data-field-type="radio-group" name="color_preference">
-      <label for="color_green" class="field-label">Green</label>
+      &lt;input type="radio" value="green" id="color_green" data-field-type="radio-group" name="color_preference">
+      &lt;label for="color_green" class="field-label">Green&lt;/label>
     </div>
     <div class="radio-wrapper field-color">
-      <input type="radio" value="blue" id="color_blue" data-field-type="radio-group" name="color_preference">
-      <label for="color_blue" class="field-label">Blue</label>
+      &lt;input type="radio" value="blue" id="color_blue" data-field-type="radio-group" name="color_preference">
+      &lt;label for="color_blue" class="field-label">Blue&lt;/label>
     </div>
   <% end for %>
-</fieldset>
+&lt;/fieldset>
+
 ```
 
 +++
@@ -275,28 +292,34 @@ main .form form .drop-down-wrapper .field-label {
 * フィールドセットのターゲティング
 
 ```CSS
-  main .form form .radio-group-wrapper {
+
+  main .form form .radio-group-wrapper &lbrace;
     border: 1px solid #ccc;
     padding: 10px;
-  }
+  &rbrace;
+
 ```
 このセレクターは、クラス radio-group-wrapper を持つフィールドセットをターゲットにします。これは、ラジオグループ全体に一般的なスタイルを適用する場合に便利です。
 
 * ラジオボタンラベルのターゲティング
 
 ```CSS
-main .form form .radio-wrapper label {
+
+main .form form .radio-wrapper label &lbrace;
     font-weight: normal;
     margin-right: 10px;
-  }
+  &rbrace;
+
 ```
 
 * 名前に基づいて、特定のフィールドセット内のすべてのラジオボタンラベルをターゲットにする
 
 ```CSS
-main .form form .field-color .radio-wrapper label {
+
+main .form form .field-color .radio-wrapper label &lbrace;
   /* Your styles here */
-}
+&rbrace;
+
 ```
 
 +++
@@ -306,35 +329,39 @@ main .form form .field-color .radio-wrapper label {
 +++ チェックボックスグループの HTML 構造
 
 ```HTML
-<fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
-   <legend for="{FieldId}" class="field-label">....</legend>
+
+&lt;fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
+   &lt;legend for="{FieldId}" class="field-label">....&lt;/legend>
    <% for each radio in Group %>
    <div class="radio-wrapper field-{Name}">
-      <input type="checkbox" value="" id="{UniqueId}" data-field-type="checkbox-group" name="{FieldId}">
-      <label for="{UniqueId}" class="field-label">...</label>
+      &lt;input type="checkbox" value="" id="{UniqueId}" data-field-type="checkbox-group" name="{FieldId}">
+      &lt;label for="{UniqueId}" class="field-label">...&lt;/label>
    </div>
    <% end for %>
-</fieldset>
+&lt;/fieldset>
+
 ```
 
 **HTML 構造の例**
 
 ```HTML
-<fieldset class="checkbox-group-wrapper field-topping field-wrapper" id="topping_preference" name="topping_preference" data-required="false">
-  <legend for="topping_preference" class="field-label">Pizza Toppings:</legend>
+
+&lt;fieldset class="checkbox-group-wrapper field-topping field-wrapper" id="topping_preference" name="topping_preference" data-required="false">
+  &lt;legend for="topping_preference" class="field-label">Pizza Toppings:&lt;/legend>
   <div class="checkbox-wrapper field-topping">
-    <input type="checkbox" value="pepperoni" id="topping_pepperoni" data-field-type="checkbox-group" name="topping_preference">
-    <label for="topping_pepperoni" class="field-label">Pepperoni</label>
+    &lt;input type="checkbox" value="pepperoni" id="topping_pepperoni" data-field-type="checkbox-group" name="topping_preference">
+    &lt;label for="topping_pepperoni" class="field-label">Pepperoni&lt;/label>
   </div>
   <div class="checkbox-wrapper field-topping">
-    <input type="checkbox" value="mushrooms" id="topping_mushrooms" data-field-type="checkbox-group" name="topping_preference">
-    <label for="topping_mushrooms" class="field-label">Mushrooms</label>
+    &lt;input type="checkbox" value="mushrooms" id="topping_mushrooms" data-field-type="checkbox-group" name="topping_preference">
+    &lt;label for="topping_mushrooms" class="field-label">Mushrooms&lt;/label>
   </div>
   <div class="checkbox-wrapper field-topping">
-    <input type="checkbox" value="onions" id="topping_onions" data-field-type="checkbox-group" name="topping_preference">
-    <label for="topping_onions" class="field-label">Onions</label>
+    &lt;input type="checkbox" value="onions" id="topping_onions" data-field-type="checkbox-group" name="topping_preference">
+    &lt;label for="topping_onions" class="field-label">Onions&lt;/label>
   </div>
-</fieldset>
+&lt;/fieldset>
+
 ```
 
 +++
@@ -344,78 +371,86 @@ main .form form .field-color .radio-wrapper label {
 * 外側のラッパーのターゲティング：これらのセレクターは、ラジオグループとチェックボックスグループの両方の最も外側にあるコンテナをターゲットにし、グループ構造全体に一般的なスタイルを適用できます。これは、間隔、整列、その他のレイアウト関連のプロパティを設定する場合に便利です。
 
 ```CSS
+
   
   /* Targets radio group wrappers */
-  main .form form .radio-group-wrapper {
+  main .form form .radio-group-wrapper &lbrace;
     margin-bottom: 20px; /* Adds space between radio groups */  
-  }
+  &rbrace;
 
   /* Targets checkbox group wrappers */
-  main .form form .checkbox-group-wrapper {
+  main .form form .checkbox-group-wrapper &lbrace;
     margin-bottom: 20px; /* Adds space between checkbox groups */
-  }
+  &rbrace;
+
 ```
 
 * ターゲットグループラベル：このセレクターは、ラジオとチェックボックスの両方のグループラッパー内の`.field-label` 要素をターゲットとします。これにより、これらのグループ専用のラベルのスタイルを設定でき、グループがさらに目立つようになります。
 
 ```CSS
+
 main .form form .radio-group-wrapper legend,
-main .form form .checkbox-group-wrapper legend {
+main .form form .checkbox-group-wrapper legend &lbrace;
   font-weight: bold; /* Makes the group label bold */
-}
+&rbrace;
+
 ```
 
 * 個々の入力とラベルのターゲティング：これらのセレクターは、個々のラジオボタン、チェックボックスおよび関連するラベルをより詳細に制御できます。これらを使用して、サイズ調整や間隔の調整を行ったり、より明確な視覚スタイルを適用したりできます。
 
 ```CSS
+
 /* Styling radio buttons */
-main .form form .radio-group-wrapper input[type="radio"] {
+main .form form .radio-group-wrapper input[type="radio"] &lbrace;
   margin-right: 5px; /* Adds space between the input and its label */
-}
+&rbrace;
 
 /* Styling radio button labels */
-main .form form .radio-group-wrapper label {
+main .form form .radio-group-wrapper label &lbrace;
   font-size: 15px; /* Changes the label font size */
-}
+&rbrace;
 
 /* Styling checkboxes */
-main .form form .checkbox-group-wrapper input[type="checkbox"] {
+main .form form .checkbox-group-wrapper input[type="checkbox"] &lbrace;
   margin-right: 5px; /* Adds space between the input and its label */
-}
+&rbrace;
 
 /* Styling checkbox labels */
-main .form form .checkbox-group-wrapper label {
+main .form form .checkbox-group-wrapper label &lbrace;
   font-size: 15px; /* Changes the label font size */
-}
+&rbrace;
+
 ```
 
 * ラジオボタンとチェックボックスの外観のカスタマイズ：この方法では、デフォルトの入力を非表示にし、`:before` および `:after` 擬似要素を使用して、「チェック済み」状態に基づいて外観を変更するカスタムビジュアルを作成します。
 
 ```CSS
+
 /* Hide the default radio button or checkbox */
 main .form form .radio-group-wrapper input[type="radio"],
-main .form form .checkbox-group-wrapper input[type="checkbox"] {
+main .form form .checkbox-group-wrapper input[type="checkbox"] &lbrace;
   opacity: 0;
   position: absolute;
-}
+&rbrace;
 
 /* Create a custom radio button */
-main .form form .radio-group-wrapper input[type="radio"] + label::before {
+main .form form .radio-group-wrapper input[type="radio"] + label::before &lbrace;
   /* ... styles for custom radio button ... */
-}
+&rbrace;
 
-main .form form .radio-group-wrapper input[type="radio"]:checked + label::before {
+main .form form .radio-group-wrapper input[type="radio"]:checked + label::before &lbrace;
   /* ... styles for checked radio button ... */
-}
+&rbrace;
 
 /* Create a custom checkbox */
-main .form form .checkbox-group-wrapper input[type="checkbox"] + label::before {
+main .form form .checkbox-group-wrapper input[type="checkbox"] + label::before &lbrace;
   /* ... styles for custom checkbox ... */
-}
+&rbrace;
 
-main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::before {
+main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::before &lbrace;
   /* ... styles for checked checkbox ... */
-}
+&rbrace;
+
 ```
 
 +++
@@ -425,38 +460,42 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 +++ パネル／コンテナコンポーネントの HTML 構造
 
 ```HTML
-<fieldset class="panel-wrapper field-{PanelName} field-wrapper">
-  <legend for="{id}" class="field-label" data-visible="false">bannerComponent</legend>
+
+&lt;fieldset class="panel-wrapper field-{PanelName} field-wrapper">
+  &lt;legend for="{id}" class="field-label" data-visible="false">bannerComponent&lt;/legend>
   <div class="{Type}-wrapper field-{Name} field-wrapper">
-    <label for="{FieldId}" class="field-label">First Name</label>
-    <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}">
+    &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
+    &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}">
     <div class="field-description" aria-live="polite" id="{FieldId}-description">
       Hint - First name should be minimum 3 characters and a maximum of 10 characters.
     </div>
   </div>
-</fieldset>
+&lt;/fieldset>
+
 ```
 
 **HTML 構造の例**
 
 ```HTML
-<fieldset class="panel-wrapper field-login field-wrapper">
-  <legend for="login" class="field-label" data-visible="false">Login Information</legend>
+
+&lt;fieldset class="panel-wrapper field-login field-wrapper">
+  &lt;legend for="login" class="field-label" data-visible="false">Login Information&lt;/legend>
   <div class="text-wrapper field-username field-wrapper">
-    <label for="username" class="field-label">Username</label>
-    <input type="text" placeholder="Enter your username" maxlength="50" id="username" name="username">
+    &lt;label for="username" class="field-label">Username&lt;/label>
+    &lt;input type="text" placeholder="Enter your username" maxlength="50" id="username" name="username">
     <div class="field-description" aria-live="polite" id="username-description">
       Please enter your username or email address.
     </div>
   </div>
   <div class="password-wrapper field-password field-wrapper">
-    <label for="password" class="field-label">Password</label>
-    <input type="password" placeholder="Enter your password" maxlength="20" id="password" name="password">
+    &lt;label for="password" class="field-label">Password&lt;/label>
+    &lt;input type="password" placeholder="Enter your password" maxlength="20" id="password" name="password">
     <div class="field-description" aria-live="polite" id="password-description">
       Your password must be at least 8 characters long.
     </div>
   </div>
-</fieldset>
+&lt;/fieldset>
+
 ```
 
 * fieldset 要素は、パネルコンテナとして機能し、クラス panel-wrapper と、パネル名（field-login）に基づいてスタイル設定する追加クラスがあります。
@@ -471,14 +510,16 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 1. パネルのターゲティング：
 
 ```CSS
+
   /* Target the entire panel container */
-  main .form form .panel-wrapper {
+  main .form form .panel-wrapper &lbrace;
     /* Add your styles here (e.g., border, padding, background color) */
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 4px;
     margin-bottom: 20px;
- }
+ &rbrace;
+
 ```
 
 * `.panel-wrapper` セレクターは、クラス panel-wrapper を使用してすべての要素のスタイルを設定し、すべてのパネルに一貫した外観を作成します。
@@ -486,15 +527,17 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 1. パネルタイトルのターゲティング：
 
 ```CSS
+
   /* Target the legend element (panel title) */
-  .panel-wrapper legend {
+  .panel-wrapper legend &lbrace;
     /* Add your styles here (e.g., font-weight, font-size) */
     font-weight: bold;
     font-size: 16px;
     padding-bottom: 5px;
     margin-bottom: 10px;
     border-bottom: 1px solid #ddd; /* Optional: create a separation line */
-  }
+  &rbrace;
+
 ```
 
 * `.panel-wrapper legend` セレクターは、パネル内の凡例要素のスタイルを設定し、タイトルを視覚的に目立たせます。
@@ -503,11 +546,13 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 1. パネル内の個々のフィールドのターゲティング：　
 
 ```CSS
+
 /* Target all form field wrappers within a panel */
-main .form form .panel-wrapper .{Type}-wrapper {
+main .form form .panel-wrapper .{Type}-wrapper &lbrace;
   /* Add your styles here (e.g., margin) */
   margin-bottom: 10px;
-}
+&rbrace;
+
 ```
 
 * `.panel-wrapper .{Type}-wrapper` セレクターは、パネル内の `.{Type}-wrapper` クラスを使用してすべてのラッパーをターゲットにし、フォームフィールド間の間隔をスタイル設定できるようにします。
@@ -515,15 +560,17 @@ main .form form .panel-wrapper .{Type}-wrapper {
 1. 特定のフィールドのターゲティング（オプション）：
 
 ```CSS
+
   /* Target the username field wrapper */
-  main .form form .panel-wrapper .text-wrapper.field-username {
+  main .form form .panel-wrapper .text-wrapper.field-username &lbrace;
     /* Add your styles here (specific to username field) */
-  }
+  &rbrace;
 
   /* Target the password field wrapper */
-  main .form form .panel-wrapper .password-wrapper.field-password {
+  main .form form .panel-wrapper .password-wrapper.field-password &lbrace;
     /* Add your styles here (specific to password field) */
-  }
+  &rbrace;
+
 ```
 
 * これらのオプションのセレクターを使用すると、パネル内の特定のフィールドラッパーをターゲットにして、ユーザー名フィールドをハイライト表示するなど、独自のスタイルを設定できます。
@@ -535,55 +582,59 @@ main .form form .panel-wrapper .{Type}-wrapper {
 +++ 繰り返し可能なパネルの HTML 構造
 
 ```HTML
-<fieldset class="panel-wrapper field-{PanelName} field-wrapper">
-  <legend for="{id}" class="field-label" data-visible="false">bannerComponent</legend>
+
+&lt;fieldset class="panel-wrapper field-{PanelName} field-wrapper">
+  &lt;legend for="{id}" class="field-label" data-visible="false">bannerComponent&lt;/legend>
   <div class="{Type}-wrapper field-{Name} field-wrapper">
-    <label for="{FieldId}" class="field-label">First Name</label>
-    <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}">
+    &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
+    &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}">
     <div class="field-description" aria-live="polite" id="{FieldId}-description">
       Hint - First name should be minimum 3 characters and a maximum of 10 characters.
     </div>
-</fieldset>
+&lt;/fieldset>
+
 ```
 
 **HTML 構造の例**
 
 ```HTML
-<fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
-  <legend for="contact-1" class="field-label" data-visible="false">Contact Information</legend>
+
+&lt;fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
+  &lt;legend for="contact-1" class="field-label" data-visible="false">Contact Information&lt;/legend>
   <div class="text-wrapper field-name field-wrapper">
-    <label for="name-1" class="field-label">Name</label>
-    <input type="text" placeholder="Enter your name" maxlength="50" id="name-1" name="contacts[0].name">
+    &lt;label for="name-1" class="field-label">Name&lt;/label>
+    &lt;input type="text" placeholder="Enter your name" maxlength="50" id="name-1" name="contacts[0].name">
     <div class="field-description" aria-live="polite" id="name-1-description">
       Please enter your full name.
     </div>
   </div>
   <div class="email-wrapper field-email field-wrapper">
-    <label for="email-1" class="field-label">Email</label>
-    <input type="email" placeholder="Enter your email address" maxlength="100" id="email-1" name="contacts[0].email">
+    &lt;label for="email-1" class="field-label">Email&lt;/label>
+    &lt;input type="email" placeholder="Enter your email address" maxlength="100" id="email-1" name="contacts[0].email">
     <div class="field-description" aria-live="polite" id="email-1-description">
       Please enter a valid email address.
     </div>
   </div>
-</fieldset>
+&lt;/fieldset>
 
-<fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
-  <legend for="contact-2" class="field-label" data-visible="false">Contact Information</legend>
+&lt;fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
+  &lt;legend for="contact-2" class="field-label" data-visible="false">Contact Information&lt;/legend>
   <div class="text-wrapper field-name field-wrapper">
-    <label for="name-2" class="field-label">Name</label>
-    <input type="text" placeholder="Enter your name" maxlength="50" id="name-2" name="contacts[1].name">
+    &lt;label for="name-2" class="field-label">Name&lt;/label>
+    &lt;input type="text" placeholder="Enter your name" maxlength="50" id="name-2" name="contacts[1].name">
     <div class="field-description" aria-live="polite" id="name-2-description">
       Please enter your full name.
     </div>
   </div>
   <div class="email-wrapper field-email field-wrapper">
-    <label for="email-2" class="field-label">Email</label>
-    <input type="email" placeholder="Enter your email address" maxlength="100" id="email-2" name="contacts[1].email">
+    &lt;label for="email-2" class="field-label">Email&lt;/label>
+    &lt;input type="email" placeholder="Enter your email address" maxlength="100" id="email-2" name="contacts[1].email">
     <div class="field-description" aria-live="polite" id="email-2-description">
       Please enter a valid email address.
     </div>
   </div>
-</fieldset>
+&lt;/fieldset>
+
 ```
 
 各パネルの構造は単一パネルの例と同じですが、次の追加の属性があります。
@@ -599,14 +650,16 @@ main .form form .panel-wrapper .{Type}-wrapper {
 * すべての繰り返し可能なパネルのターゲティング：
 
 ```CSS
+
   /* Target all panels with the repeatable attribute */
- main .form form .panel-wrapper[data-repeatable="true"] {
+ main .form form .panel-wrapper[data-repeatable="true"] &lbrace;
     /* Add your styles here (e.g., border, margin) */
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 4px;
     margin-bottom: 20px;
-  }
+  &rbrace;
+
 ```
 
 セレクターを使用すると、繰り返し可能なすべてのパネルのスタイルが設定され、一貫したルックアンドフィールが保証されます。
@@ -615,23 +668,27 @@ main .form form .panel-wrapper .{Type}-wrapper {
 * パネル内の個々のフィールドのターゲティング：
 
 ```CSS
+
 /* Target all form field wrappers within a repeatable panel */
-main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
+main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper &lbrace;
   /* Add your styles here (e.g., margin) */
   margin-bottom: 10px;
-}
+&rbrace;
+
 ```
 このセレクターを使用すると、繰り返し可能なパネル内のすべてのフィールドラッパーのスタイルが設定され、フィールド間の一貫した間隔が維持されます。
 
 * （パネル内の）特定のフィールドのターゲティング：
 
 ```CSS
+
 /* Target the name field wrapper within the first panel */
-main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wrapper.field-name {
+main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wrapper.field-name &lbrace;
   /* Add your styles here (specific to first name field) */
-}
+&rbrace;
 
 /* Target all
+
 ```
 
 +++
@@ -641,40 +698,44 @@ main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wra
 +++ 添付ファイルの HTML 構造
 
 ```HTML
+
 <div class="file-wrapper field-{FileName} field-wrapper">
-  <legend for="{id}" class="field-label" data-visible="false"> File Attachment </legend>
+  &lt;legend for="{id}" class="field-label" data-visible="false"> File Attachment &lt;/legend>
   <div class="file-drag-area">
     <div class="file-dragIcon"></div>
     <div class="file-dragText">Drag and Drop To Upload</div>
-    <button class="file-attachButton" type="button">Attach</button>
-    <input type="file" accept="audio/*, video/*, image/*, text/*, application/pdf" id="{id}" name="{FileName}" autocomplete="off" multiple="" required="required">
+    &lt;button class="file-attachButton" type="button">Attach&lt;/button>
+    &lt;input type="file" accept="audio/*, video/*, image/*, text/*, application/pdf" id="{id}" name="{FileName}" autocomplete="off" multiple="" required="required">
   </div>
   <div class="files-list">
     <div data-index="0" class="file-description">
       <span class="file-description-name">ClaimForm.pdf</span>
       <span class="file-description-size">26 kb</span>
-      <button class="file-description-remove" type="button"></button>
+      &lt;button class="file-description-remove" type="button">&lt;/button>
     </div>
   </div>
 </div>
+
 ```
 
 **HTML 構造の例**
 
 
 ```HTML
+
 <div class="file-wrapper field-claim_form field-wrapper">
-  <legend for="claim_form" class="field-label" data-visible="false">File Attachment</legend>
+  &lt;legend for="claim_form" class="field-label" data-visible="false">File Attachment&lt;/legend>
   <div class="file-drag-area">
     <div class="file-dragIcon"></div>
     <div class="file-dragText">Drag and Drop To Upload</div>
-    <button class="file-attachButton" type="button">Attach</button>
+    &lt;button class="file-attachButton" type="button">Attach&lt;/button>
   </div>
   <input type="file" accept="audio/*, video/*, image/*, text/*, application/pdf" id="claim_form"
          name="claim_form" autocomplete="off" multiple="" required="required" data-max-file-size="2MB">
   <div class="files-list">
     </div>
 </div>
+
 ```
 
 * class 属性は、添付ファイル（claim_form）の指定された名前を使用します。
@@ -688,14 +749,16 @@ main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wra
 * 添付ファイルコンポーネント全体のターゲティング：
 
 ```CSS
+
 /* Target the entire file attachment component */
-main .form form .file-wrapper {
+main .form form .file-wrapper &lbrace;
   /* Add your styles here (e.g., border, padding) */
   border: 1px solid #ccc;
   padding: 15px;
   border-radius: 4px;
   margin-bottom: 20px;
-}
+&rbrace;
+
 ```
 
 このセレクターでは、凡例、ドラッグ領域、入力フィールド、リストを含む添付ファイルコンポーネント全体をスタイル設定します。
@@ -703,34 +766,36 @@ main .form form .file-wrapper {
 * 特定の要素のターゲティング：
 
 ```CSS
+
 /* Target the drag and drop area */
-main .form form .file-wrapper .file-drag-area {
+main .form form .file-wrapper .file-drag-area &lbrace;
   /* Add your styles here (e.g., background color, border) */
   background-color: #f0f0f0;
   border: 1px dashed #ddd;
   padding: 10px;
   text-align: center;
-}
+&rbrace;
 
 /* Target the file input element */
-main .form form .file-wrapper input[type="file"] {
+main .form form .file-wrapper input[type="file"] &lbrace;
   /* Add your styles here (e.g., hide the default input) */
   display: none;
-}
+&rbrace;
 
 /* Target individual file descriptions within the list (populated dynamically) */
-main .form form .file-wrapper .files-list .file-description {
+main .form form .file-wrapper .files-list .file-description &lbrace;
   /* Add your styles here (e.g., margin, display) */
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
-}
+&rbrace;
 
 /* Target the file name within the description */
-main .form form .file-wrapper .files-list .file-description .file-description-name {
+main .form form .file-wrapper .files-list .file-description .file-description-name &lbrace;
   /* Add your styles here (e.g., font-weight) */
   font-weight: bold;
-}
+&rbrace;
+
 ```
 
 これらのセレクターでは、添付ファイルコンポーネントの様々な部分を個別にスタイル設定できます。スタイルは、デザインの好みに合わせて調整できます。
@@ -749,32 +814,36 @@ CSS セレクターを使用すると、特定のフィールドタイプをタ�
 +++ HTML 構造
 
 ```HTML
+
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
-   <label for="{FieldId}" class="field-label">First Name</label>
-   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
+   &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
     Hint - First name should be minimum 3 characters and a maximum of 10 characters.
    </div>
 </div>
+
 ```
 
 **HTML 構造の例**
 
 ```HTML
+
 <div class="text-wrapper field-name field-wrapper" data-required="true">
-  <label for="name" class="field-label">Name</label>
-  <input type="text" placeholder="Enter your name" maxlength="50" id="name" name="name">
+  &lt;label for="name" class="field-label">Name&lt;/label>
+  &lt;input type="text" placeholder="Enter your name" maxlength="50" id="name" name="name">
 </div>
 
 <div class="number-wrapper field-age field-wrapper" data-required="true">
-  <label for="age" class="field-label">Age</label>
-  <input type="number" placeholder="Enter your age" id="age" name="age">
+  &lt;label for="age" class="field-label">Age&lt;/label>
+  &lt;input type="number" placeholder="Enter your age" id="age" name="age">
 </div>
 
 <div class="email-wrapper field-email field-wrapper" data-required="true">
-  <label for="email" class="field-label">Email Address</label>
-  <input type="email" placeholder="Enter your email" id="email" name="email">
+  &lt;label for="email" class="field-label">Email Address&lt;/label>
+  &lt;input type="email" placeholder="Enter your email" id="email" name="email">
 </div>
+
 ```
 
 * 各フィールドは、いくつかのクラスを持つ `div` 要素でラップされます。
@@ -791,16 +860,18 @@ CSS セレクターを使用すると、特定のフィールドタイプをタ�
 +++ CSS セレクターの例
 
 ```CSS
+
 /* Target all text input fields */
-main .form form .text-wrapper input {
+main .form form .text-wrapper input &lbrace;
   /* Add your styles here */
-}
+&rbrace;
 
 /* Target all number input fields */
-main .form form .number-wrapper input {
+main .form form .number-wrapper input &lbrace;
   /* Add your styles here */
   letter-spacing: 2px; /* Example for adding letter spacing to all number fields */
-}
+&rbrace;
+
 ```
 
 +++
@@ -812,25 +883,29 @@ main .form form .number-wrapper input {
 +++ HTML 構造
 
 ```HTML
+
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
-   <label for="{FieldId}" class="field-label">First Name</label>
-   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id="{FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
+   &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id="{FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
     Hint - Enter the 6 digit number sent to your mobile number.
    </div>
 </div>
+
 ```
 
 **HTML 構造の例**
 
 ```HTML
+
 <div class="number-wrapper field-otp field-wrapper" data-required="true">
-  <label for="otp" class="field-label">OTP</label>
-  <input type="number" placeholder="Enter your OTP" maxlength="6" id="otp" name="otp" aria-describedby="otp-description">
+  &lt;label for="otp" class="field-label">OTP&lt;/label>
+  &lt;input type="number" placeholder="Enter your OTP" maxlength="6" id="otp" name="otp" aria-describedby="otp-description">
   <div class="field-description" aria-live="polite" id="otp-description">
     Hint - Enter the 6 digit number sent to your mobile number.
    </div>
 </div>
+
 ```
 
 +++
@@ -838,9 +913,11 @@ main .form form .number-wrapper input {
 +++ CSS セレクターの例
 
 ```CSS
-main .form form .field-otp input {
+
+main .form form .field-otp input &lbrace;
    letter-spacing: 2px
-}
+&rbrace;
+
 ```
 
 この CSS は、クラス `field-otp` を持つ要素内にあるすべての入力要素をターゲットとします。フォームの HTML 構造はアダプティブフォームブロックの規則に従います。つまり、クラス「field-otp」でマークされたコンテナが「otp」という名前のフィールドを保持します。

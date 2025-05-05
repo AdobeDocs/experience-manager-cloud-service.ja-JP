@@ -46,7 +46,7 @@ Edge Delivery Services Formsは、次の 2 つのGoogle reCAPTCHA オプショ�
 
 reCAPTCHA Enterprise を設定する前に、以下が必要です。
 
-- [ プロジェクト ID](https://support.google.com/googleapi/answer/7014113) が設定された ](https://cloud.google.com/recaptcha/docs/prepare-environment?hl=ja#before-you-begin)0}Google Cloud プロジェクト[
+- [ プロジェクト ID](https://support.google.com/googleapi/answer/7014113) が設定された [&#128279;](https://cloud.google.com/recaptcha/docs/prepare-environment?hl=ja#before-you-begin)0&rbrace;Google Cloud プロジェクト
 - プロジェクトの [reCAPTCHA Enterprise API 有効 ](https://cloud.google.com/recaptcha/docs/prepare-environment?hl=ja#enable-api)
 - 認証用の [API キー ](https://console.cloud.google.com/apis/credentials)
 - ドメインの [ サイトキー ](https://console.cloud.google.com/security/recaptcha)

@@ -116,14 +116,14 @@ AEMと Apache/DispatcherAEMのログを、専用のエグレス IP などの高�
 一部の組織は、ログ宛先で受信できるトラフィックを制限し、他の組織は HTTPS （443）以外のポートを使用する必要がある場合があります。  その場合は、ログ転送設定をデプロイする前に [ 詳細ネットワーク ](/help/security/configuring-advanced-networking.md) を設定する必要があります。
 
 次の表を使用して、ポート 443 を使用しているかどうか、および固定 IP アドレスからログを表示する必要があるかどうかに基づいて、高度なネットワーク設定とログ設定の要件を確認してください。
-<html>
-<style>
-table, th, td {
+&lt;html>
+&lt;style>
+table, th, td &lbrace;
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
-}
-</style>
+&rbrace;
+&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -155,7 +155,7 @@ table, th, td {
       <td>あり</td>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >ログが 1 つの IP アドレスから表示されるかどうかは、高度なネットワーク設定の選択によって決まります。  これを容易にするには、専用のエグレスを使用する必要があります。
@@ -446,7 +446,7 @@ data:
 
 `https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
 
-URL の最後のセクション（先頭の `/` を除く）をコピーし、それを前述の [ 設定 ](#setup) の節で説明されているように ](/help/operations/config-pipeline.md#secret-env-vars)[CloudManager シークレット環境変数）として追加してから、設定でその変数を参照する必要があります。  以下に例を示します。
+URL の最後のセクション（先頭の `/` を除く）をコピーし、それを前述の [ 設定 ](#setup) の節で説明されているように [&#128279;](/help/operations/config-pipeline.md#secret-env-vars)CloudManager シークレット環境変数）として追加してから、設定でその変数を参照する必要があります。  以下に例を示します。
 
 ```yaml
 kind: "LogForwarding"

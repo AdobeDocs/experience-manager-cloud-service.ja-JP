@@ -30,7 +30,7 @@ ht-degree: 62%
 
 ## リリースビデオ {#release-video}
 
-追加された機能の概要については、 ](https://video.tv.adobe.com/v/337381)2021年9月リリースの概要[ ビデオをご覧ください。
+追加された機能の概要については、 [&#128279;](https://video.tv.adobe.com/v/337381)2021年9月リリースの概要 ビデオをご覧ください。
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 

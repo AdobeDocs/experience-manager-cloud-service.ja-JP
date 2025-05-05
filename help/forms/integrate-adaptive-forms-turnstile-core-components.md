@@ -55,8 +55,10 @@ AEM Formsを Turnstile サービスと統合するには、次の手順を実行
 
 1. Cloud Service を設定：
    1. AEM オーサーインスタンスで、![tools-1](assets/tools-1.png)/**[!UICONTROL Cloud Services]** に移動し、「**[!UICONTROL 自動スタイル]**」をクリックします。
+
       ![UI でのターンスタイル ](assets/turnstile-in-ui.png)
    1. 前の節で説明したように、作成または更新された設定コンテナを選択します。 「**[!UICONTROL 作成]**」を選択します。
+
       ![ 設定ターンスタイル ](assets/config-hcaptcha.png)
    1. **[!UICONTROL ウィジェットタイプ]** を管理対象、非インタラクティブ、非表示のいずれかに指定します。 ウィジェットのタイプについて詳しくは、[Turnstile Widget](https://developers.cloudflare.com/turnstile/concepts/widget/) を参照してください。
    1. 自動スタイルサービス用に **[!UICONTROL タイトル]**、**[!UICONTROL 名前]**、**[!UICONTROL サイトキー]** および **[!UICONTROL 秘密鍵]** を指定します [ 前提条件で取得 ](#prerequisite)。
@@ -88,15 +90,15 @@ AEM Formsを Turnstile サービスと統合するには、次の手順を実行
 
    ![ ターンスタイル v2](assets/turnstile-settings-for-v2.png)
 
-   * **[!UICONTROL 名前 ]:** Captcha コンポーネントの名前を指定すると、フォーム内とルールエディター内の両方で一意の名前を使用して、フォームコンポーネントを簡単に識別できます。
-   * **[!UICONTROL タイトル ]:** Captcha コンポーネントのタイトルを指定します。 チェックボックスをオンにすることで、タイトルにリッチテキストを使用したり、タイトルを非表示にしたりできます。
-   * **[!UICONTROL 設定 ]:** Turnstile Captcha サービス用に設定されたクラウド設定を選択します。
+   * **[!UICONTROL 名前 &#x200B;]:** Captcha コンポーネントの名前を指定すると、フォーム内とルールエディター内の両方で一意の名前を使用して、フォームコンポーネントを簡単に識別できます。
+   * **[!UICONTROL タイトル &#x200B;]:** Captcha コンポーネントのタイトルを指定します。 チェックボックスをオンにすることで、タイトルにリッチテキストを使用したり、タイトルを非表示にしたりできます。
+   * **[!UICONTROL 設定 &#x200B;]:** Turnstile Captcha サービス用に設定されたクラウド設定を選択します。
 
      >[!NOTE]
      >
      >* 同様の目的のために、環境内に複数のクラウド設定を持つことができます。 そのため、サービスは慎重に選択してください。サービスがリストされない場合は、設定コンテナを作成してAEM Forms環境を Turnstile サービスと接続する方法について、[Turnstile の設定 ](#steps-to-configure-hcaptcha) の節を参照してください。
 
-   * **[!UICONTROL 検証 ]:** Captcha 検証をエラーメッセージの形式で提供します。
+   * **[!UICONTROL 検証 &#x200B;]:** Captcha 検証をエラーメッセージの形式で提供します。
 
       * **エラーメッセージ：** Captcha 送信が失敗した場合にユーザーに表示するエラーメッセージを指定します。
 

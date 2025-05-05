@@ -514,7 +514,7 @@ Experience Platform タグのプロパティは、すべての設定をまとめ
 1. Experience Platform タグで、「**[!UICONTROL 新しいプロパティ]**」をクリックします。
 1. **[!UICONTROL プロパティを作成]**&#x200B;ダイアログボックスの「**[!UICONTROL 名前]**」フィールドに、Web サイトのタイトルなど、わかりやすい名前を入力します。例：`DynamicMediaViewersProp.`
 1. 「**[!UICONTROL ドメイン]**」フィールドに、Web サイトのドメインを入力します。
-1. 使用したい拡張機能（この場合は **[!UICONTROL ダイナミックメディアビューア *）がまだリリースされていない場合、**[!UICONTROL 詳細オプション&#x200B;]**ドロップダウンで]**「拡張機能の開発用に設定（後で変更できません）* を有効にします。
+1. 使用したい拡張機能（この場合は **[!UICONTROL ダイナミックメディアビューア *）がまだリリースされていない場合、**&#x200B;[!UICONTROL 詳細オプション&#x200B;]&#x200B;**ドロップダウンで]**「拡張機能の開発用に設定（後で変更できません）* を有効にします。
 
    ![image2019-7-8_16-3-47](assets/image2019-7-8_16-3-47.png)
 
@@ -689,7 +689,7 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
 
    >[!NOTE]
    >
-   >この時点で、**[!UICONTROL Adobe IMSテクニカルアカウント設定 ***ページを*** 開いたままにして]** ください。***このページを閉じないで******次へ*** をクリックしてください ****。 このページには、手順の後半で戻ってきます。
+   >この時点で、**[!UICONTROL Adobe IMSテクニカルアカウント設定 &#x200B;***ページを&#x200B;*** 開いたままにして]** ください。***このページを閉じないで**&#x200B;**&#x200B;**&#x200B;次へ&#x200B;*** をクリックしてください &#x200B;**&#x200B;**。 このページには、手順の後半で戻ってきます。
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
@@ -749,7 +749,7 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
    * **[!UICONTROL タイトル]** - 説明的なアカウントのタイトルを入力します。
    * **[!UICONTROL 認証サーバー]** - 以前に開いた統合の詳細ページに戻ります。「**[!UICONTROL JWT]**」タブを選択します。次に示すように、サーバー名（パスを除く）をコピーします。
 
-   **[!UICONTROL アカウント]**ページに戻り、その名前を各フィールドに貼り付けます。
+   **[!UICONTROL アカウント]**&#x200B;ページに戻り、その名前を各フィールドに貼り付けます。
 例：`https://ims-na1.adobelogin.com/`（サーバー名の例は説明用です）。
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
@@ -785,7 +785,7 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
 
 ## 統合用の Experience Platform タグクラウドの設定 {#configuring-adobe-launch-cloud-for-the-integration}
 
-1. Experience Manager オーサーモードで、左上隅付近の ![ ハンマーアイコン、ツール ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) **ツール** をクリックし、{Cloud Services ]**/**[!UICONTROL  6}Experience Platform タグの設定 ]**に移動します。**[!UICONTROL 
+1. Experience Manager オーサーモードで、左上隅付近の ![ ハンマーアイコン、ツール ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) **ツール** をクリックし、{Cloud Services **/**&#x200B;[!UICONTROL &#x200B; 6}Experience Platform タグの設定 &#x200B;]&#x200B;**に移動します。**
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 

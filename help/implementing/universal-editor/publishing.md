@@ -21,7 +21,7 @@ ht-degree: 45%
 
 ## サイトコンソールプロセスとの類似点 {#similarities}
 
-[AEM ページエディター ](/help/sites-cloud/authoring/page-editor/introduction.md) および [ サイトコンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) のユーザーの場合、ユニバーサルエディターを使用してコンテンツを公開するプロセスは、通常どおりに動作します。AEMでの公開時に、コンテンツがオーサーサービスからパブリッシュサービス（または可能な場合はプレビューサービス ](/help/sites-cloud/authoring/sites-console/previewing-content.md) にレプリケートされます [ 公開時に作成者が選択したオプションによって異なります）。
+[AEM ページエディター ](/help/sites-cloud/authoring/page-editor/introduction.md) および [ サイトコンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) のユーザーの場合、ユニバーサルエディターを使用してコンテンツを公開するプロセスは、通常どおりに動作します。AEMでの公開時に、コンテンツがオーサーサービスからパブリッシュサービス（または可能な場合はプレビューサービス [&#128279;](/help/sites-cloud/authoring/sites-console/previewing-content.md) にレプリケートされます  公開時に作成者が選択したオプションによって異なります）。
 
 ## 違い {#differences}
 

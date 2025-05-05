@@ -60,6 +60,7 @@ ht-degree: 99%
    * ビデオアセットをプレビューして公開します。
 
       * ソースビデオとビデオのエンコードされたレンディションを、関連するサムネールと共に表示します。
+
         [ビデオをプレビュー](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)するか[アセットをプレビュー](/help/assets/dynamic-media/previewing-assets.md)します。
         [ビデオレンディションを管理します](/help/assets/manage-digital-assets.md#managing-renditions)。
 
@@ -69,6 +70,7 @@ ht-degree: 99%
    * ビデオのメタデータを操作します。
 
       * タイトル、説明、タグ、カスタムメタデータフィールドなど、ビデオのプロパティを編集します。
+
         [ビデオのプロパティを編集します](/help/assets/manage-digital-assets.md#editing-properties)。
 
       * [デジタルアセットのメタデータの管理](/help/assets/manage-metadata.md)
@@ -93,9 +95,11 @@ ht-degree: 99%
    * サードパーティの WCM システムを使用している場合、web ページにビデオをリンクするか、ビデオを埋め込むことができます。
 
       * URL を使用したビデオの統合：
+
         [Web アプリケーションに URL をリンクします](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。
 
       * Web ページの埋め込みコードを使用したビデオの統合：
+
         [Web ページにビデオビューアを埋め込みます](/help/assets/dynamic-media/embed-code.md)。
 
    * [ビデオレポートを生成します](#viewing-video-reports)。

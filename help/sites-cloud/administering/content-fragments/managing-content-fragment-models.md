@@ -27,7 +27,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 >[!NOTE]
 >
->コンテンツフラグメントは、**Assets** として保存されます。コンテンツフラグメントモデルは主に **コンテンツフラグメント** コンソールから管理しますが、[Assets](/help/assets/content-fragments/content-fragments-managing.md) コンソールおよび **ツール** ～ **一般** のオプション ](/help/assets/content-fragments/content-fragments-models.md) コンテンツフラグメントモデル [ からも管理できます。
+>コンテンツフラグメントは、**Assets** として保存されます。コンテンツフラグメントモデルは主に **コンテンツフラグメント** コンソールから管理しますが、[Assets](/help/assets/content-fragments/content-fragments-managing.md) コンソールおよび **ツール** ～ **一般** のオプション [&#128279;](/help/assets/content-fragments/content-fragments-models.md) コンテンツフラグメントモデル  からも管理できます。
 
 ## コンテンツフラグメントモデルの操作方法 {#how-to-work-with-content-fragment-models}
 
@@ -169,7 +169,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 特定のモデルを選択すると、そのモデルで使用可能なアクションに焦点を当てたツールバーが開きます。 複数のモデルを選択することもできます。使用可能なアクションはそれに応じて調整されます。
 
 * **[編集](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)**：コンテンツフラグメントモデルを定義します。
-* **パブリッシュ**[ パブリッシュ ](/help/implementing/cloud-manager/manage-environments.md#environment-types) 層または [ プレビュー ](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) 層のいずれかに適用されます。
+* **パブリッシュ**&#x200B;[ パブリッシュ ](/help/implementing/cloud-manager/manage-environments.md#environment-types) 層または [ プレビュー ](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) 層のいずれかに適用されます。
 * **ロック**/**ロック解除**：ユーザーがモデルを変更できるかどうかを制御します。
 * **[Enable](#enabling-a-content-fragment-model)**/**[Disable](#disabling-a-content-fragment-model)**：このモデルに基づいて、ユーザーがコンテンツフラグメントの作成を許可されるかどうかを制御します。
 
@@ -198,7 +198,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 * the option to retrieve a saved search filter for reuse
 -->
 
-選択すると、（メインパネルの上部に **** フィルター条件」オプションが表示されます。 そこから選択を解除できます。次に例を示します。
+選択すると、（メインパネルの上部に **&#x200B;**&#x200B;フィルター条件」オプションが表示されます。 そこから選択を解除できます。次に例を示します。
 
 ![ コンテンツフラグメントコンソール – コンテンツフラグメントモデルのフィルタリング ](assets/cf-managing-content-fragment-models-filter.png)
 

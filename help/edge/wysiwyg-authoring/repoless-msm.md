@@ -109,7 +109,7 @@ MSM リポジトリのユースケースを設定するには、いくつかの�
 この例では、wknd がスイス拠点にある場合にの `wknd-ch` サイトを作成します。この拠点のローカライズされたコンテンツは、AEMのパス `/content/wknd/ch` の配下に配置されます。
 
 1. 認証トークンとプログラムのテクニカルアカウントを取得します。
-   * プログラムの **アクセストークンを取得** する方法と [ テクニカルアカウント [ について詳しくは ](/help/edge/wysiwyg-authoring/repoless.md#access-token) サイト間でのコードの再利用 ](/help/edge/wysiwyg-authoring/repoless.md#access-control) ドキュメントを参照してください。
+   * プログラムの **アクセストークンを取得** する方法と [&#128279;](/help/edge/wysiwyg-authoring/repoless.md#access-control) テクニカルアカウント [ について詳しくは ](/help/edge/wysiwyg-authoring/repoless.md#access-token) サイト間でのコードの再利用  ドキュメントを参照してください。
 1. 設定サービスに対して次の呼び出しを実行して、新しいサイトを作成します。 次の点を考慮してください。
    * POST URL のプロジェクト名は、作成する新しいサイト名にする必要があります。 この例では、`wknd-ch` です。
    * `code` の設定は、最初のプロジェクト作成に使用した設定と同じである必要があります。
@@ -184,7 +184,7 @@ MSM リポジトリのユースケースを設定するには、いくつかの�
 
 AEMのページは、ローカライズのために前の節で作成した新しいEdge Delivery Sites を使用するように設定する必要があります。 この例では、`/content/wknd/ch` の配下のコンテンツが、作成した `wknd-ch` サイトを使用することを知っている必要があります。 同様に、`/content/wknd/de` 下のコンテンツも `wknd-de` サイトを使用する必要があります。
 
-1. AEM オーサーインスタンスにサインインし、**ツール**/**Cloud Services**/**4}Edge Delivery Services Configuration} に移動します。**
+1. AEM オーサーインスタンスにサインインし、**ツール**/**Cloud Services**/**4&rbrace;Edge Delivery Services Configuration&rbrace; に移動します。**
 1. プロジェクト用に自動的に作成された設定を選択し、ローカライズされたページ用に作成されたフォルダーを選択します。 この場合、スイス（`ch`）になります。
 1. ツールバーで **作成**/**設定** をタップまたはクリックします。
 1. **Edge Delivery Services設定** ウィンドウで、次の操作を行います。

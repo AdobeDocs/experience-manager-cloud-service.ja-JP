@@ -30,13 +30,13 @@ ht-degree: 69%
 
 ## リリースビデオ {#release-video}
 
-追加された機能の概要については、](https://video.tv.adobe.com/v/335580)2021 年 7 月リリースの概要ビデオ[をご覧ください。
+追加された機能の概要については、[&#128279;](https://video.tv.adobe.com/v/335580)2021 年 7 月リリースの概要ビデオをご覧ください。
 
 ## Experience Manager Foundation as a Cloud Service {#foundation}
 
 ### 新機能 {#what-is-new-foundation}
 
-* より柔軟なDispatcher設定：プロジェクトをより簡単に整理できます。 例えば、サイト構造を反映した複数の書き換えルールファイルを含めることができるようになりました。Dispatcher設定を活用できるよう ](/help/implementing/dispatcher/disp-overview.md#validation-debug) 設定する方法など、この柔軟なモードについて [ ご確認ください。
+* より柔軟なDispatcher設定：プロジェクトをより簡単に整理できます。 例えば、サイト構造を反映した複数の書き換えルールファイルを含めることができるようになりました。Dispatcher設定を活用できるよう [&#128279;](/help/implementing/dispatcher/disp-overview.md#validation-debug) 設定する方法など、この柔軟なモードについて  ご確認ください。
 * レプリケーションエージェントの「配布」タブにあるツリーレプリケーション UI は、非推奨（廃止予定）と見なされ、2021 年 9 月 30 日（PT）以降に削除されました。 代替レプリケーション戦略について[ご確認](/help/operations/replication.md#tree-activation)ください。
 * Sling 用 `org.apache.sling.datasource-1.0.4.jar` データソースサポート用バンドルは、機能が古く、顧客に使用されていないので、削除されました。
 
@@ -110,7 +110,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` は、[!DNL Experience Manag
    * オーサリングモードでのステージングされた製品データの視覚的インジケーターにより、今後の変更の可視性が向上
    * コンテンツページとコマースページ用の新しいサイトマップコンポーネント
 
-* 事前定義済みのレコメンデーションまたはオンザフライで作成されたレコメンデーションを使用した、AEM Storefront の Adobe Sensei](https://business.adobe.com/jp/products/magento/product-recommendations.html) による [Adobe Commerce Sensei 製品レコメンデーションのサポート
+* 事前定義済みのレコメンデーションまたはオンザフライで作成されたレコメンデーションを使用した、AEM Storefront の Adobe Sensei[&#128279;](https://business.adobe.com/jp/products/magento/product-recommendations.html) による Adobe Commerce Sensei 製品レコメンデーションのサポート
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 

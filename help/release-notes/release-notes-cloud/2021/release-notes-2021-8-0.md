@@ -30,7 +30,7 @@ ht-degree: 58%
 
 ## リリースビデオ {#release-video}
 
-追加された機能の概要については、](https://video.tv.adobe.com/v/336277)2021年8月リリースの概要ビデオ[をご覧ください。
+追加された機能の概要については、[&#128279;](https://video.tv.adobe.com/v/336277)2021年8月リリースの概要ビデオをご覧ください。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -56,7 +56,7 @@ ht-degree: 58%
 ### [!DNL Assets] で修正されたバグ  {#assets-bugs-fixed}
 
 * 投稿者グループのメンバーが [!DNL Assets] Console に移動すると、追加の `POST` リクエストが生成されて、コレクションが作成されます。 このリクエストは必須ではありません。権限の問題が原因で失敗し、ログに多くのエラーが記録されます。 （CQ-4328856）
-* ユーザーがアセットを表示し、左パネルのポップアップメニューから [!UICONTROL  タイムライン ] を選択すると、エラーが表示されます。 ログには、無効なクエリが原因で多数の警告が記録されます。（CQ-4328919）
+* ユーザーがアセットを表示し、左パネルのポップアップメニューから [!UICONTROL &#x200B; タイムライン &#x200B;] を選択すると、エラーが表示されます。 ログには、無効なクエリが原因で多数の警告が記録されます。（CQ-4328919）
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

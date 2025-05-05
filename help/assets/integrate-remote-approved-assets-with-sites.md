@@ -77,6 +77,7 @@ OpenAPI 機能を備えた Dynamic Media を使用したリモートアセット
 * AEM as a Cloud Service に次の[環境変数](/help/implementing/cloud-manager/environment-variables.md#add-variables)を設定します。
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyyyy.adobeaemcloud.com&quot; <br>
+
      `pXXXX` はプログラム ID を参照します<br>。
      `eYYYY` は環境 ID を参照します。
 
@@ -161,7 +162,7 @@ AEM Sites インスタンスの AEM コンテンツフラグメント内でリ�
 
    >[!NOTE]
    >
-   AEM コンテンツフラグメントモデルがない場合は、[作成](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=ja)する必要があります。
+   >AEM コンテンツフラグメントモデルがない場合は、[作成](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=ja)する必要があります。
 
 1. テキストコンポーネントの横にある ![チェックマークアイコン](/help/assets/assets/do-not-localize/checkmark-icon.svg) アイコンをクリックします。
 1. 「**[!UICONTROL リモート]**」を選択して、リモート DAM からアセットを取得します。<br>

@@ -64,7 +64,7 @@ Adobe Express および[コンテンツハブにアクセスする権限を持�
 
 >[!NOTE]
 >
-[!DNL Adobe Express] を使用すると、PNG および JPG／JPEG ファイルタイプの画像を編集できます。
+>[!DNL Adobe Express] を使用すると、PNG および JPG／JPEG ファイルタイプの画像を編集できます。
 
 ## [!DNL Adobe Express] を使用した画像の編集 {#edit-images-using-content-hub}
 

@@ -39,7 +39,7 @@ ht-degree: 62%
 ### の新機能[!DNL Sites] {#sites-features}
 
 * メール コンポーネントを使用すると、AEMでコンテンツを作成し、そのコンテンツをCampaign Classic経由でメールとして配信できます。 コアメールコンポーネント：
-   * 編集可能テンプレートとスタイルシステムをサポートする ](https://github.com/adobe/aem-core-wcm-components) コア WCM コンポーネント [ をベースにしています。
+   * 編集可能テンプレートとスタイルシステムをサポートする [&#128279;](https://github.com/adobe/aem-core-wcm-components) コア WCM コンポーネント  をベースにしています。
    * メール用に最適化され、実稼動ですぐに使える 10 個のコンポーネント（ページ、コンテナ、タイトル、テキスト、画像、ボタン、ティーザー、エクスペリエンスフラグメント、コンテンツフラグメント、セグメント化）を提供します。
    * ほとんどのダイアログフィールドに [Campaign 変数の挿入 ](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) と、柔軟な [ セグメント化コンポーネント ](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)) により、高度なパーソナライゼーションとセグメント化を提供します。
    * [CSS スタイルインライナー ](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)、[HTML属性インライナー ](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)、[HTMLサニタイザー ](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation) により、メールに最適なHTML出力を提供します。

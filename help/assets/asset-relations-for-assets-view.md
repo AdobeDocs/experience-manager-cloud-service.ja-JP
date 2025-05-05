@@ -42,7 +42,7 @@ ht-degree: 59%
 
    ![Assets関係の例 ](assets/asset-relations-example.png)
 
-1. 各セクションのすべての関連アセットで使用できる **[!UICONTROL 関連付けを解除]**![ アセットの関連付けを解除 ](assets/do-not-localize/link-unrelate-icon.png)、（[!UICONTROL Source]、[!UICONTROL  派生 ]、（その他 ]） [!UICONTROL  をクリックして、アセットの関連付けを解除します。
+1. 各セクションのすべての関連アセットで使用できる **[!UICONTROL 関連付けを解除]**![ アセットの関連付けを解除 ](assets/do-not-localize/link-unrelate-icon.png)、（[!UICONTROL Source]、[!UICONTROL &#x200B; 派生 &#x200B;]、（その他 ）  をクリックして、アセットの関連付けを解除します。
 
 ## 関連アセットの翻訳 {#translating-related-assets}
 

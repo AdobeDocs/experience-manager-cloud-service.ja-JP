@@ -102,7 +102,7 @@ AEM as a Cloud Service で OpenAPI 機能を備えた Dynamic Media を有効に
 
   >[!NOTE]
   >
-  アドビ以外のアプリケーションと統合するには、アプリケーションがホストされている場所の許可リストにドメイン名を指定します。
+  >アドビ以外のアプリケーションと統合するには、アプリケーションがホストされている場所の許可リストにドメイン名を指定します。
 
 * 統合プロジェクトに関与する主要な顧客連絡先の詳細。
 
@@ -112,7 +112,7 @@ AEM as a Cloud Service で OpenAPI 機能を備えた Dynamic Media を有効に
 
 >[!NOTE]
 >
-OpenAPI 機能を備えた Dynamic Media の非アクティブ化を回避するには、任意のコンテンツパッケージから `/conf/global/settings/dam/assets-configurations/assetdelivery` を除外します。
+>OpenAPI 機能を備えた Dynamic Media の非アクティブ化を回避するには、任意のコンテンツパッケージから `/conf/global/settings/dam/assets-configurations/assetdelivery` を除外します。
 
 ## 主な機能の詳細 {#learn-more-key-capabilities}
 

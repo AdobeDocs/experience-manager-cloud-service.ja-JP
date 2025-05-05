@@ -41,7 +41,7 @@ SharePoint サイトへの限定的なアクセスを提供するメリット：
 
 ### Azure portal で、制限付き権限のアプリケーションを作成します
 
-Microsoft Graph API の `Sites.Selected` 権限範囲を使用して ](https://portal.azure.com/#home)0}Microsoft Azure Portal} でアプリケーションを作成します。[
+Microsoft Graph API の `Sites.Selected` 権限範囲を使用して [&#128279;](https://portal.azure.com/#home)0&rbrace;Microsoft Azure Portal&rbrace; でアプリケーションを作成します。
 
 ![SharePointが選択したサイト ](/help/forms/assets/sharepoint-selected-site.png)
 

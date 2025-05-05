@@ -87,7 +87,7 @@ AEM SDK とローカル開発することで、時間が節約され、開発プ
    1. AEM Forms アドオン（.far）ファイルを `AEM SDK/crx-quickstart/install` フォルダーに追加します。
    1. AEM SDK を再起動します。
 
-+++
+   +++
 
 1. [ ユーザー権限の設定 ](/help/forms/setup-local-development-environment.md#configure-users-and-permissions)：開発、オーサリングなどの権限を持つユーザーを作成し、これらのユーザーを事前定義済みのフォームグループに追加します。
 
@@ -116,7 +116,7 @@ AEM SDK とローカル開発することで、時間が節約され、開発プ
 
    AEM プロジェクトをデプロイすると、お使いの環境でアダプティブFormsテンプレートを表示できます。
 
-+++
+   +++
 
 
 AEM Formsのローカル開発環境を設定する手順とガイドについて詳しくは、「AEM Formsのローカル開発環境の設定 [ を参照してください ](/help/forms/setup-local-development-environment.md)。

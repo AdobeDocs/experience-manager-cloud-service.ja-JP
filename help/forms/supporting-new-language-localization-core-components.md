@@ -228,7 +228,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
       ![clientlib-it-custom-locale のペースト](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
-1. `languageinit.js``aemLangUrl` パスを更新
+1. `languageinit.js` `aemLangUrl` パスを更新
 
    1. [AEMaaCS プロジェクトディレクトリ]内の次のディレクトリに移動します。
 

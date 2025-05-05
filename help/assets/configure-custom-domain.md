@@ -65,7 +65,7 @@ Adobe Cloud Manager では、カスタムドメインを追加して web サイ�
 
 ## パブリッシュ層のカスタムドメインの設定
 
-1. **[!UICONTROL Adobe Cloud Manager]**／**[!UICONTROL プログラムの概要]**／**[!UICONTROL SSL 証明書]**に移動し、SSL 証明書を追加します。
+1. **[!UICONTROL Adobe Cloud Manager]**／**[!UICONTROL プログラムの概要]**／**[!UICONTROL SSL 証明書]**&#x200B;に移動し、SSL 証明書を追加します。
    ![画像](/help/assets/assets/ssl-certificate.png)
 詳しくは、Adobe Cloud Manager で [SSL 証明書](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)を追加する方法を参照してください。
 
@@ -79,4 +79,4 @@ DNS の生成遅延が原因で、DNS 検証の処理に数時間かかる場合
 
 >[!NOTE]
 >
-許可されたリダイレクト URL リストにカスタムドメインを追加します。リストは、アセットセレクターの IMS クライアントにあります。<br>カスタムドメイン文字列を指定して、このタスクを実行するには、それぞれのアドビチームと調整してください。
+>許可されたリダイレクト URL リストにカスタムドメインを追加します。リストは、アセットセレクターの IMS クライアントにあります。<br>カスタムドメイン文字列を指定して、このタスクを実行するには、それぞれのアドビチームと調整してください。

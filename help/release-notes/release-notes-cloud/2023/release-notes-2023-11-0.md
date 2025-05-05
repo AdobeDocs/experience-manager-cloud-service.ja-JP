@@ -135,7 +135,7 @@ WAF を含む [ トラフィックフィルタールール ](/help/security/traf
 * ユーザー名/パスワードによる認証
 * その他の便利な CDN 設定
 
-公式メール ID からフィードバックを記載したメールを **0}aemcs-cdn-config-adopter@adobe.com} に送信します。**
+公式メール ID からフィードバックを記載したメールを **0&rbrace;aemcs-cdn-config-adopter@adobe.com&rbrace; に送信します。**
 
 ## Cloud Manager {#cloud-manager}
 

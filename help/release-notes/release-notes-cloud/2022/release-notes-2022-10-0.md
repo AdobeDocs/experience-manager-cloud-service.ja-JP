@@ -89,7 +89,7 @@ ht-degree: 78%
 
 * AEM as a Cloud Service（オーサーサービス）が統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべての Experience Cloud アプリケーションと統合されました。詳しくは、統合シェルの [Cloud ServiceとしてのAEM](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
 
-* リリースノートで前述したように、レプリケーションエージェントの管理画面またはレプリケーション API を使用して 10 MB を超えるコンテンツパッケージ（バイナリを含まないプロパティを持つノード）を配布することは、非推奨（廃止予定）になり実施されるようになりました。 これらの大きなコンテンツ パッケージをレプリケートするための推奨アプローチについて詳しくは、[ 公開の管理 ](/help/operations/replication.md#manage-publication) または ](/help/operations/replication.md#publish-content-tree-workflow)2}Publish コンテンツツリーのワークフロー } を参照してください。[
+* リリースノートで前述したように、レプリケーションエージェントの管理画面またはレプリケーション API を使用して 10 MB を超えるコンテンツパッケージ（バイナリを含まないプロパティを持つノード）を配布することは、非推奨（廃止予定）になり実施されるようになりました。 これらの大きなコンテンツ パッケージをレプリケートするための推奨アプローチについて詳しくは、[ 公開の管理 ](/help/operations/replication.md#manage-publication) または [&#128279;](/help/operations/replication.md#publish-content-tree-workflow)2&rbrace;Publish コンテンツツリーのワークフロー &rbrace; を参照してください。
 
 * Dispatcher 設定で、一般的なマーケティングキャンペーンのクエリパラメーターをリストするファイルが参照されるようになりました。顧客が関連するパラメーターのコメント解除を選択できるので、キャッシュが改善されました。詳しくは、[ マーケティングキャンペーンパラメーター ](/help/implementing/dispatcher/caching.md#marketing-parameters) を参照してください。
 

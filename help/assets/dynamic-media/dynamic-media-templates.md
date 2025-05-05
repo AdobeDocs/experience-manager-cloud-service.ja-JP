@@ -81,7 +81,7 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 [!DNL Dynamic Media] テンプレートを作成し、その配信 URL を生成するには、次の要件を満たします。
 
 1. [!DNL Dynamic Media] にアクセスします。
-1. [!DNL Assets View] ホームページには、テンプレートを保存するためのフォルダーが **[!UICONTROL Dynamic Media Assets]** にあります。 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) で [ フォルダーを作成 ]**し、そのフォルダーを**[!UICONTROL  Dynamic Media Assets ]**にレプリケートします。
+1. [!DNL Assets View] ホームページには、テンプレートを保存するためのフォルダーが **[!UICONTROL Dynamic Media Assets]** にあります。 ![Assets](/help/assets/assets/Asset-icon.svg)**[[!UICONTROL Assets]](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) で [ フォルダーを作成 ]**&#x200B;し、そのフォルダーを&#x200B;**[!UICONTROL &#x200B; Dynamic Media Assets &#x200B;]**&#x200B;にレプリケートします。
 1. [ インスタンスで使用可能な画像を  [!DNL AEM Assets]  と同期して  [!DNL Dynamic Media]  テンプレートの作成に使用する ](/help/assets/dynamic-media/config-dm.md)
 1. テンプレートの作成に使用する画像を公開して、テンプレートの作成後に配信 URL を生成します。 配信 URL は、ダウンストリームアプリケーションで使用できます。
 1. テンプレートのテキストレイヤーでデフォルトの [!UICONTROL Adobe Sans F2] フォント以外のフォントを使用するには、[ フォントファイルをアップロードしてAEMと Dynamic Media に同時に公開します ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation)。 [ サポートされているフォントファイル形式は、AFM、OTF、PFB、PFM、PhotoFont、TTC、TTF です ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)。 また、既存のフォントを使用するには、必ず [ 再処理 ](/help/assets/reprocessing-assets-view.md) してください。 詳しくは、[ フォント ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) を参照してください。<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
@@ -111,7 +111,7 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
    ![Dynamic Media テンプレート](/help/assets/assets/DM-Assets1.png)
 
-1. 「**[!UICONTROL テンプレートを作成]**」を選択します。**[!UICONTROL 新規テンプレート]**ダイアログボックスが表示されます。
+1. 「**[!UICONTROL テンプレートを作成]**」を選択します。**[!UICONTROL 新規テンプレート]**&#x200B;ダイアログボックスが表示されます。
    ![リアルタイムでカスタマイズできる動的テンプレートの作成方法](/help/assets/assets/new-template.png)
    >[!NOTE]
    >
@@ -133,8 +133,8 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 **左側のウィンドウのメニューオプション：** これらのオプションは、次の一般的なエディターアクションに使用します。
 
 * ![DM テンプレート ](/help/assets/assets/layer-selector.svg): ![DM テンプレート ](/help/assets/assets/layer-selector.svg) を選択し、キャンバス上のレイヤーをクリックして選択します。
-* ![ カスタマイズをサポートするテンプレート ](/help/assets/assets/bring-forward.svg): クリック ![ カスタマイズをサポートするテンプレート ](/help/assets/assets/bring-forward.svg) またはキーボードショートカット **Ctrl** + **]** （Windows）または **Cmd** + **]** （Mac）を使用して、選択したレイヤーを前面に移動します。
-* ![ 簡単にカスタマイズできるテンプレートを作成する方法 ](/help/assets/assets/send-backward.svg): ![ 簡単にカスタマイズできるテンプレートを作成する方法 ](/help/assets/assets/send-backward.svg) をクリックするか、キーボードショートカット、**Ctrl** + **[** （Windows）または **Cmd** + **[** （Mac））を使用して、選択したレイヤーを後方に移動します。
+* ![ カスタマイズをサポートするテンプレート ](/help/assets/assets/bring-forward.svg): クリック ![ カスタマイズをサポートするテンプレート ](/help/assets/assets/bring-forward.svg) またはキーボードショートカット **Ctrl** + **&rbrack;** （Windows）または **Cmd** + **&rbrack;** （Mac）を使用して、選択したレイヤーを前面に移動します。
+* ![ 簡単にカスタマイズできるテンプレートを作成する方法 ](/help/assets/assets/send-backward.svg): ![ 簡単にカスタマイズできるテンプレートを作成する方法 ](/help/assets/assets/send-backward.svg) をクリックするか、キーボードショートカット、**Ctrl** + **&lbrack;** （Windows）または **Cmd** + **&lbrack;** （Mac））を使用して、選択したレイヤーを後方に移動します。
 * ![ すぐにカスタマイズできるテンプレートを作成 ](/help/assets/assets/undo.svg):「![ すぐにカスタマイズできるテンプレートを作成 ](/help/assets/assets/undo.svg)」をクリックするか、キーボードショートカットを使用して、**Ctrl**+**Z** （Windows）または **Cmd**+**Z** （Mac）を使用して最後の操作を元に戻します。
 * ![ テンプレートを使用して横断幕をすばやく作成 ](/help/assets/assets/redo.svg):![ テンプレートをクリックして横断幕をすばやく作成 ](/help/assets/assets/redo.svg) するか、キーボードショートカット **Ctrl** + **Y** （Windows）または **Cmd** + **Y** （Mac）を使用して最後の操作をやり直します。
 * ![ テンプレートを使用すると、チラシをすばやく作成できます ](/help/assets/assets/zoom-in.svg):![ テンプレートをクリックすると ](/help/assets/assets/zoom-in.svg) チラシをすばやく作成できます。または、キーボードショートカット **Ctrl** + **+** （Windows）または **Cmd** + **+** （Mac）を使用してキャンバスをズームします。
@@ -227,20 +227,20 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
 **画像パラメーター：**
 
-**[!UICONTROL X]：**URL のパラメーターの値を変更して、テンプレートプレーンの X 軸に平行な中心線に沿ってレイヤーを水平方向に移動する場合に含めます。
-**[!UICONTROL Y]：**URL のパラメーターの値を変更して、テンプレートプレーンの Y 軸に平行な中心線に沿ってレイヤーを垂直方向に移動する場合に含めます。
-**[!UICONTROL 幅]：**URL のパラメーターの値を変更して、レイヤーの幅を調整する場合に含めます。
-**[!UICONTROL 高さ]：**URL のパラメーターの値を変更して、レイヤーの高さを調整する場合に含めます。
-**[!UICONTROL 非表示]：**0（表示）と 1（非表示）を使用して、テンプレートのレイヤーを非表示または表示する場合に含めます。
+**[!UICONTROL X]：**&#x200B;URL のパラメーターの値を変更して、テンプレートプレーンの X 軸に平行な中心線に沿ってレイヤーを水平方向に移動する場合に含めます。
+**[!UICONTROL Y]：**&#x200B;URL のパラメーターの値を変更して、テンプレートプレーンの Y 軸に平行な中心線に沿ってレイヤーを垂直方向に移動する場合に含めます。
+**[!UICONTROL 幅]：**&#x200B;URL のパラメーターの値を変更して、レイヤーの幅を調整する場合に含めます。
+**[!UICONTROL 高さ]：**&#x200B;URL のパラメーターの値を変更して、レイヤーの高さを調整する場合に含めます。
+**[!UICONTROL 非表示]：**&#x200B;0（表示）と 1（非表示）を使用して、テンプレートのレイヤーを非表示または表示する場合に含めます。
 **[!UICONTROL ソース]：** URL のパラメーターの値の画像パスを変更して、レイヤーの画像を新しい画像に置き換える場合に含めます。
 
 **テキストの書式設定パラメーター：**
 
 URL のパラメーター値を更新して、URL からテキスト、フォント、カラー、サイズを編集するには、以下のパラメーターを含めます。
 
-**[!UICONTROL テキスト]：**URL からテキストを更新する場合に含めます。
-**[!UICONTROL フォントファミリー]：**URL からテキストのフォントを更新する場合に含めます。
-**[!UICONTROL フォントサイズ]：**URL からテキストのフォントサイズを更新する場合に含めます。
+**[!UICONTROL テキスト]：**&#x200B;URL からテキストを更新する場合に含めます。
+**[!UICONTROL フォントファミリー]：**&#x200B;URL からテキストのフォントを更新する場合に含めます。
+**[!UICONTROL フォントサイズ]：**&#x200B;URL からテキストのフォントサイズを更新する場合に含めます。
 **[!UICONTROL テキストカラー]：** URL からテキストのフォントカラーを更新する場合に含めます。
 
 ### レイヤーをグループ化して同時に表示をコントロール{#group-layers}
@@ -251,7 +251,7 @@ URL のパラメーター値を更新して、URL からテキスト、フォン
 
 1. レイヤーの[**[!UICONTROL プロパティパネル]**](#parameterise-a-layer)に移動します。
 1. 以前にパラメーター化していない場合は、**[!UICONTROL 非表示]**&#x200B;パラメーターを切り替えます。
-1. **オプション：****[!UICONTROL 非表示]**&#x200B;パラメーターの名前を変更します。
+1. **オプション：**&#x200B;**[!UICONTROL 非表示]**&#x200B;パラメーターの名前を変更します。
 1. **[!UICONTROL 非表示]**&#x200B;パラメーターの名前をコピーします。
 1. キャンバスから他のレイヤーを選択して、そのレイヤーのパラメーターパネルに移動し、パラメーター化されていない場合は、**[!UICONTROL 非表示]**&#x200B;パラメーターを切り替えます。
 1. **[!UICONTROL 非表示パラメーター]**&#x200B;の名前を、コピーした名前に置き換えます。
@@ -262,17 +262,17 @@ URL のパラメーター値を更新して、URL からテキスト、フォン
 
 テンプレートをプレビューおよび公開し、配信 URL をコピーするには、次の手順を実行します。
 
-1. キャンバスページで、「**[!UICONTROL プレビュー]**」をクリックします。また、**[!UICONTROL アセットビュー]****／****[!UICONTROL Dynamic Media アセット]****に移動して、**&#x200B;テンプレートを見つけて選択し&#x200B;**、**「**[!UICONTROL テンプレートを編集]**」をクリックして&#x200B;**、**「**[!UICONTROL プレビュー]**」をクリックすることもできます。プレビューページには、テンプレート、そのパラメーター（パラメーター化されたレイヤとプロパティ）、公開ステータスおよび「**[!UICONTROL 公開]**」オプションが表示されます。
+1. キャンバスページで、「**[!UICONTROL プレビュー]**」をクリックします。また、**[!UICONTROL アセットビュー]**&#x200B;**／**&#x200B;**[!UICONTROL Dynamic Media アセット]**&#x200B;**に移動して、**&#x200B;テンプレートを見つけて選択し&#x200B;**、**「**[!UICONTROL テンプレートを編集]**」をクリックして&#x200B;**、**「**[!UICONTROL プレビュー]**」をクリックすることもできます。プレビューページには、テンプレート、そのパラメーター（パラメーター化されたレイヤとプロパティ）、公開ステータスおよび「**[!UICONTROL 公開]**」オプションが表示されます。
 1. **[!UICONTROL テンプレートパラメーター]**&#x200B;パネルからパラメーターを選択して値を編集すると、プレビューの対応するテンプレートレイヤーのコンテンツ、サイズ、位置、またはテキストの書式設定が即座に更新されます。例：
    1. テキストレイヤーを選択してテキストを編集するか、
    1. 画像レイヤーを選択し、「![その場でコンテンツを作成](/help/assets/assets/add-image.svg)」をクリックし、アセットセレクターから画像を選択して、「**[!UICONTROL 更新]**」をクリックします。
 
    テンプレートはすぐに更新され、編集されたテキストが表示され、以前の画像が新しい画像に置き換えられます。また、画像パラメーターの値には、新しい画像のパスが反映されます。同様に、レイヤーの値を調整してサイズ変更すると、その変更がリアルタイムでテンプレートに適用されます。
 1. リストから[グループ化されたレイヤー](#group-layers)の&#x200B;**[!UICONTROL 非表示]**&#x200B;パラメーターを選択して、テンプレート内でまとめて表示または非表示にします。
-1. **オプション：****[!UICONTROL 非表示]**&#x200B;パラメーターの値を 0 と 1 の間で変更し、「**[!UICONTROL 更新]**」をクリックして変更を確認します。同じ&#x200B;**[!UICONTROL 非表示]**&#x200B;パラメーターを持つレイヤーは、まとめて非表示または表示されます。同様に、URL からレイヤーの表示をコントロールできます。
+1. **オプション：**&#x200B;**[!UICONTROL 非表示]**&#x200B;パラメーターの値を 0 と 1 の間で変更し、「**[!UICONTROL 更新]**」をクリックして変更を確認します。同じ&#x200B;**[!UICONTROL 非表示]**&#x200B;パラメーターを持つレイヤーは、まとめて非表示または表示されます。同様に、URL からレイヤーの表示をコントロールできます。
 
    ![その場でのコンテンツの作成](/help/assets/assets/dm-templates-publish-status.png)
-また、**[!UICONTROL すべてのパラメーターを含める]**を切り替えて、表示されているすべてのパラメーター値を編集し、テンプレートのプレビューで更新を確認することもできます。
+また、**[!UICONTROL すべてのパラメーターを含める]**&#x200B;を切り替えて、表示されているすべてのパラメーター値を編集し、テンプレートのプレビューで更新を確認することもできます。
    <br>
 1. プレビューページからテンプレートを公開するには、「**[!UICONTROL 公開]** をクリックして、公開を確認します。 **[!UICONTROL 公開完了]** メッセージが表示され、公開ステータスが **[!UICONTROL 公開済み]** に更新されます。
 

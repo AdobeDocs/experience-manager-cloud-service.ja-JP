@@ -67,6 +67,6 @@ API を使用すると、AEM Assets リポジトリから承認済みアセッ�
 
 >[!MORELIKETHIS]
 >
-* [アセットセレクターと様々なアプリケーションの統合](/help/assets/integrate-asset-selector.md)
-* [アセットセレクターのプロパティ](/help/assets/asset-selector-properties.md)
-* [アセットセレクターのカスタマイズ](/help/assets/asset-selector-customization.md)
+>* [アセットセレクターと様々なアプリケーションの統合](/help/assets/integrate-asset-selector.md)
+>* [アセットセレクターのプロパティ](/help/assets/asset-selector-properties.md)
+>* [アセットセレクターのカスタマイズ](/help/assets/asset-selector-customization.md)

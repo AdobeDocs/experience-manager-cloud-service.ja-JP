@@ -37,7 +37,7 @@ ht-degree: 32%
 
 ## 環境変数の追加 {#add-variables}
 
-Adobe複数の変数を追加する場合は、最初の変数を追加してから、「![Environment Configuration](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)」ダイアログの「**Add icon****Add**」を使用してその他の変数を追加することをお勧めします。 つまり、1 回の更新で環境に追加できます。
+Adobe複数の変数を追加する場合は、最初の変数を追加してから、「![Environment Configuration](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)」ダイアログの「**Add icon**&#x200B;**Add**」を使用してその他の変数を追加することをお勧めします。 つまり、1 回の更新で環境に追加できます。
 
 環境変数を追加、更新、削除するには、[**デプロイメントマネージャー** 役割 ](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) のメンバーである必要があります。
 
