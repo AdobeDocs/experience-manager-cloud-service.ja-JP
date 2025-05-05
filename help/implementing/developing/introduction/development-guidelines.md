@@ -17,7 +17,7 @@ ht-degree: 100%
 >id="development_guidelines"
 >title="AEM as a Cloud Service の開発ガイドライン"
 >abstract="AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスでの AEM および AMS での AEM との重要な違いについて説明します。"
->additional-url="https://video.tv.adobe.com/v/330555/?captions=jpn" text="パッケージ構造のデモ"
+>additional-url="https://video.tv.adobe.com/v/345904/?captions=jpn" text="パッケージ構造のデモ"
 
 このドキュメントでは、AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスおよび AMS の AEM とは異なる重要な方法について説明します。
 
