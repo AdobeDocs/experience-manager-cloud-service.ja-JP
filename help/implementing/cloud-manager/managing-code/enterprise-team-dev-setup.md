@@ -93,7 +93,7 @@ Cloud Manager Git リポジトリの設定には、2 つのブランチがあり
 
 >[!TIP]
 >
->この設定について詳しくは、[ 複数のSource Git リポジトリの操作 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) を参照してください。
+>この設定について詳しくは、[ 複数のSource Git リポジトリの操作 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) を参照してください。
 
 ### マルチチーム設定での考慮事項 {#considerations}
 

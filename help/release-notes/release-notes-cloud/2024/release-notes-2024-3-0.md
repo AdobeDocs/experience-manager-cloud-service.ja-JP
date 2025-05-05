@@ -49,7 +49,7 @@ AEM Sites を Edge Delivery Services のコンテンツソースとして使用�
 
 ![AEM オーサリング](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-詳しくは、[ドキュメント](/help/edge/overview.md)および [AEM Gems - AEM オーサリングと Edge Delivery Services の概要](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)を参照してください。
+詳しくは、[ドキュメント](/help/edge/overview.md)および [AEM Gems - AEM オーサリングと Edge Delivery Services の概要](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694?profile.language=ja#M43905)を参照してください。
 
 **ヘッドレス実装用のユニバーサルエディター**
 

@@ -18,7 +18,7 @@ ht-degree: 20%
 
 ![ワークフロー](/help/forms/assets/workflow-marketo-3.png)
 
-アダプティブFormsエディターには、アダプティブFormsデータをAdobe Marketo Engageに送信して処理するための **送信Marketo Engage** 送信アクションが用意されています。 送信時にデータを [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) に送信するように、既存のアダプティブフォームを設定できます。
+アダプティブFormsエディターには、アダプティブFormsデータをAdobe Marketo Engageに送信して処理するための **送信Marketo Engage** 送信アクションが用意されています。 送信時にデータを [Adobe Marketo Engage](https://experienceleague.adobe.com/ja/docs/marketo/using/home) に送信するように、既存のアダプティブフォームを設定できます。
 
 フォームの送信を処理するための、すぐに使用できる様々な送信アクションを使用できます。 これらのオプションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)の記事を参照してください。
 
@@ -56,7 +56,7 @@ Marketo Engageへの送信アクションを設定するための前提条件は
 
 ## 次の手順
 
-また、アダプティブフォームを [Munchkin ライブラリ ](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) に接続して、訪問数、クリック数、フォーム送信数をトラッキングすることもできます。
+また、アダプティブフォームを [Munchkin ライブラリ ](https://experienceleague.adobe.com/ja/docs/marketo/using/product-docs/administration/setup/munchkin) に接続して、訪問数、クリック数、フォーム送信数をトラッキングすることもできます。
 
 ## 関連記事
 

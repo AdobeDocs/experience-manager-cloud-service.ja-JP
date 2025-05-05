@@ -44,7 +44,7 @@ AEMでは、様々なユーザーのニーズ、技術的なスキルレベル�
 * [Edge Delivery Services Forms](/help/edge/docs/forms/overview.md): Edge Delivery Services Formsは、フォームの作成、実行、処理の方法を変えます。 Edge Delivery Services を活用することで、組織は高速で安全な、可用性の高いデジタルフォームを作成し、高速開発環境でユーザーエクスペリエンスと運用効率を向上させることができます。Edge Delivery Services Formsは、次の 2 つの方法でオーサリングできます。
    * [WYSIWYG オーサリング ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：技術的な知識が限られたコンテンツ作成者に最適な、ビジュアルでのドラッグ&amp;ドロップによるフォーム作成にユニバーサルエディターを使用します。 ユニバーサルエディターで作成されたFormsは、Edge Delivery Servicesを使用して配信されるので、高速で軽量なレンダリングが可能です。
    * [ ドキュメントベースのオーサリング ](/help/edge/docs/forms/tutorial.md):Microsoft Excel やGoogle シートなどのツールを使用して、フォーム構造とコンテンツを定義します。 この方法は、スプレッドシート主導の入力を好むビジネスユーザーに役立ちます。 これらのフォームは、通常、Edge Delivery Servicesを通じて公開され、軽量で大量のユースケースに適しています。
-* [ ヘッドレスオーサリング ](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service):API を使用して、AEMに依存せずに、任意のフロントエンド（React、Angular、モバイルアプリ、キオスクなど）のフォームを JSON としてレンダリングします。 現在、ヘッドレス配信をサポートしているのはコアコンポーネントのみです。 ヘッドレスフォームは、オムニチャネルのユースケースに最適で、AEMのページレンダリングとは独立して使用されるので、カスタムフロントエンドデプロイメントに対して柔軟です。
+* [ ヘッドレスオーサリング ](https://experienceleague.adobe.com/ja/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service):API を使用して、AEMに依存せずに、任意のフロントエンド（React、Angular、モバイルアプリ、キオスクなど）のフォームを JSON としてレンダリングします。 現在、ヘッドレス配信をサポートしているのはコアコンポーネントのみです。 ヘッドレスフォームは、オムニチャネルのユースケースに最適で、AEMのページレンダリングとは独立して使用されるので、カスタムフロントエンドデプロイメントに対して柔軟です。
 
 ### AEM フォームのオーサリングメソッドの比較分析
 

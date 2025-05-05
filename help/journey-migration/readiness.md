@@ -219,7 +219,7 @@ AEM as a Cloud Service に移行するために必要な変更の範囲を確認
 ## その他のリソース {#additional-resources}
 
 * [Cloud Acceleration Manager の概要](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) - Cloud Acceleration Manager を使用してクラウドへの移行を迅速に行う方法に関する包括的なガイド
-* [AEM as a Cloud Service：概要、アーキテクチャ、考え方の変革](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=ja#dashboard/learning)
+* [AEM as a Cloud Service：概要、アーキテクチャ、考え方の変革](https://experienceleague.adobe.com/ja?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=ja#dashboard/learning)
 * [AEM a Cloud Service ホーム](/help/overview/introduction.md) - Experience Manager as a Cloud Service ドキュメントの概要については、まずこちらを参照してください。
 * [AEM as a Cloud Service の概要](/help/overview/introduction.md) - このガイドでは、基礎知識、用語、アーキテクチャなど、Experience Manager as a Cloud service の概要を説明します。
 * [オンボーディングジャーニー](/help/journey-onboarding/overview.md) - このガイドでは、アクセス方法やチームの設定方法など、Experience Manager as a Cloud Service の基本について概要を説明します。

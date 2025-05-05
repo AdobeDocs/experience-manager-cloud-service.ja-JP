@@ -31,7 +31,7 @@ AEM as a Cloud Service との統合に対するサポートは、実装した Ca
 |---|---|
 | [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=ja) | サポート対象外 |
 | [Campaign v8（クライアントコンソール）](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=ja) | サポート対象外 |
-| Campaign web ユーザーインターフェイス | サポート対象[詳細情報](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem) |
+| Campaign web ユーザーインターフェイス | サポート対象[詳細情報](https://experienceleague.adobe.com/ja/docs/campaign/campaign-v8/connect/ac-aem) |
 
 ## Adobe Campaign Standard との統合 {#acs}
 

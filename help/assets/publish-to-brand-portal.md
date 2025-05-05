@@ -197,7 +197,7 @@ AEM Assets から Brand Portal にアセットを公開する手順を次に示�
 
 1. リスト表示 ![リスト表示](assets/list-view.svg) に切り替えて、アセットの現在の公開ステータスを確認します。
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![生成されたレポートのステータス](assets/report-status.JPG)
 

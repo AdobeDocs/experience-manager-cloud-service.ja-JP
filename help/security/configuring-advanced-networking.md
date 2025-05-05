@@ -22,7 +22,7 @@ ht-degree: 73%
 >
 >AEM as a Cloud Serviceの高度なネットワーク機能は、Cloud Manager UI から設定することも、Cloud Manager API （cURL など）を使用して設定することもできます。
 >
->この記事では、UI メソッドの使用に焦点を当てています。 API を使用して設定を自動化する場合は、[ 仮想プライベートネットワーク（VPN）のチュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn) を参照してください。
+>この記事では、UI メソッドの使用に焦点を当てています。 API を使用して設定を自動化する場合は、[ 仮想プライベートネットワーク（VPN）のチュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/networking/vpn) を参照してください。
 >
 >**API を使用した高度なネットワーク機能の自動化**
 >高度なネットワーク設定（VPN の作成など）を自動化するには、Cloud Manager API を使用します。
@@ -44,7 +44,7 @@ ht-degree: 73%
 >   }'
 >```
 >
->[ 仮想プライベートネットワーク（VPN）チュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn) の完全なチュートリアルとその他の API の例を参照してください。
+>[ 仮想プライベートネットワーク（VPN）チュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/networking/vpn) の完全なチュートリアルとその他の API の例を参照してください。
 >
 
 ## 概要 {#overview}

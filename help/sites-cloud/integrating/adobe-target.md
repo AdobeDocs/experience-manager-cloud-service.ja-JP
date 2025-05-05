@@ -32,7 +32,7 @@ Target に統合するには、次のタスクを実行します。
 * Experience Platform Launch は、Target 機能（JS ライブラリ）を備えた AEM サイトを実装するための事実上の標準ツールになっています。したがって、AEM as a Cloud Service を Launch や Adobe Target と統合すると、連携が強化されます（以下のリンクを参照）。
 
 <!--   
-  * [Integration with Adobe Target using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html)
+  * [Integration with Adobe Target using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html?lang=ja)
 -->
 
 * [Launch by Adobe の統合](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=ja)
@@ -47,7 +47,7 @@ Target に統合するには、次のタスクを実行します。
 
 >[!CAUTION]
 >
->AEM as a Cloud Service では、AEM から Adobe Target にオファーとアクティビティを同期するレプリケーションエージェントは、デフォルトで無効になっています。レプリケーションエージェントを再度有効にする必要がある場合は、[アドビサポート](https://experienceleague.adobe.com/?support-solution=General&amp;lang=ja#support)チームにお問い合わせください。
+>AEM as a Cloud Service では、AEM から Adobe Target にオファーとアクティビティを同期するレプリケーションエージェントは、デフォルトで無効になっています。レプリケーションエージェントを再度有効にする必要がある場合は、[アドビサポート](https://experienceleague.adobe.com/ja?support-solution=General&amp;lang=ja#support)チームにお問い合わせください。
 
 >[!NOTE]
 >

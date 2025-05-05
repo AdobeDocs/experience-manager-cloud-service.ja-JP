@@ -76,7 +76,7 @@ AEM as a Cloud Service 2021.1.0 Cloud Manager のリリース日は 2021 年 1 �
 
 ### [!DNL Code Refactoring Tools] の新機能  {#what-is-new-crt}
 
-* AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンには、AEM Dispatcher コンバーターと Repository Modenizer のバグ修正が含まれ、新しいユーティリティインデックスコンバーターもサポートされています。このプラグインについて詳しくは、[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) を参照してください。
+* AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンには、AEM Dispatcher コンバーターと Repository Modenizer のバグ修正が含まれ、新しいユーティリティインデックスコンバーターもサポートされています。このプラグインについて詳しくは、[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=ja#benefits) を参照してください。
 
 * インデックスコンバーターは、顧客のカスタム OAK インデックス定義を AEM as a Cloud Service 互換の OAK インデックス定義に変換するために使用できるユーティリティです。詳しくは、[ インデックスコンバーター ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) を参照してください。
 

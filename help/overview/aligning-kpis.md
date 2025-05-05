@@ -42,4 +42,4 @@ ht-degree: 100%
 
 >[!TIP]
 >
->[**KPI 手法テンプレートのダウンロード**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png)
+>[**KPI 手法テンプレートのダウンロード**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png?lang=ja)

@@ -36,13 +36,13 @@ Dynamic Media のコンテキストで、XML ベースのシステムを使用�
 >
 >ルールセットを使用する場合は、Dynamic Media のコンテンツが Web サイトに表示されなくなる可能性があるので、注意してください。
 
-用意されているサンプルルールセットを使用して、独自のルールセットを作成できます。[ルールセットのリファレンス](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference)を参照してください。
+用意されているサンプルルールセットを使用して、独自のルールセットを作成できます。[ルールセットのリファレンス](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference)を参照してください。
 
 すべてのルールセットの作成と同様に、xmlvalid などの XML バリデータープログラムを使用して XML ファイルをアップロードする前に、XML ファイルが有効であることを確認します。
 
 また、最初は実稼動環境に影響を与えないステージング環境でルールセットをテストしてください。通常、実稼動環境とステージング環境では異なるログイン情報が必要となります。
 
-ログイン情報については、[Adobe Dynamic Media Classic へのログイン](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out)を参照してください。
+ログイン情報については、[Adobe Dynamic Media Classic へのログイン](https://experienceleague.adobe.com/ja/docs/dynamic-media-classic/using/getting-started/signing-out)を参照してください。
 
 <!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -52,7 +52,7 @@ Dynamic Media のコンテキストで、XML ベースのシステムを使用�
 
 ## XML ルールセットのデプロイ {#deploy-xml-rule-sets}
 
-1. [Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out)を開き、アカウントにログインします。
+1. [Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/ja/docs/dynamic-media-classic/using/getting-started/signing-out)を開き、アカウントにログインします。
 
    資格情報とログオンの詳細は、プロビジョニング時にアドビから付与されたものです。この情報をお持ちでない場合は、カスタマーサポートにお問い合わせください。
 

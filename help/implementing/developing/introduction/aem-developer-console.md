@@ -106,5 +106,5 @@ There are multiple ways of accessing it:
 
 実稼動プログラムの場合、Adobe Admin Consoleの「Cloud Manager – 開発者ロール」がAEM as a Cloud Service Developer Consoleへのアクセスを制御します。 サンドボックスプログラムの場合、AEM アクセス権を付与する製品プロファイルを持つすべてのユーザーがDeveloper Consoleを使用できます。 すべてのプログラムで、ステータスダンプとリポジトリブラウザーへのアクセスに「Cloud Manager - デベロッパーロール」が必要です。 オーサーサービスとパブリッシュサービスの両方のデータを表示するには、ユーザーを両方のサービスの「AEM ユーザー」または「AEM管理者」製品プロファイルに割り当てる必要もあります。
 
-ユーザー権限の設定について詳しくは、 [Cloud Manager のドキュメント](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles) を参照してください。
+ユーザー権限の設定について詳しくは、 [Cloud Manager のドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/requirements/users-and-roles) を参照してください。
 

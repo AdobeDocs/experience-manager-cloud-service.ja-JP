@@ -159,7 +159,7 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 ### コードリファクタリングツールの新機能 {#what-is-new-crt}
 
 * AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンでは、Repository Modernizer のいくつかのバグが修正されています。
-このプラグインについて詳しくは、[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) を参照してください。
+このプラグインについて詳しくは、[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=ja#benefits) を参照してください。
 
 ### バグの修正 {#bug-fixes-crt}
 

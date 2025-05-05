@@ -66,11 +66,11 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms-sep-2021}
 
-* **アダプティブフォームでのAdobe Signの役割の使用** - Adobe Sign for business および enterprise サービスレベルでは、ワークフロー要件に適切に合致するように、契約書受信者の役割を署名者以外にも拡大できます。 [ 契約書の受信者ごとに、アダプティブフォームでの自分の役割を設定できる ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform) ようになりました。デフォルトの役割は署名者です。
+* **アダプティブフォームでのAdobe Signの役割の使用** - Adobe Sign for business および enterprise サービスレベルでは、ワークフロー要件に適切に合致するように、契約書受信者の役割を署名者以外にも拡大できます。 [ 契約書の受信者ごとに、アダプティブフォームでの自分の役割を設定できる ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=ja#addsignerstoanadaptiveform) ようになりました。デフォルトの役割は署名者です。
 
 * **Analytics for Adaptive Forms** - Adobe Analytics for Adaptive Formsを使用してエンドユーザーの行動をキャプチャおよび追跡し、エンドユーザーに関するインサイトを収集できるようになりました。 十分な情報に基づいて決定を行い、エンドユーザーエクスペリエンスを向上させるのに役立ちます。
 
-* **Adobe Experience Manager（AEM）FormsをMicrosoft® Dynamics および Salesforce に簡単に接続** – このサービスは、Microsoft® Dynamics および Salesforce 用の標準のデータソース設定とデータモデルを提供します。 これにより [ 開発者は、アダプティブフォームのデータソースとしてMicrosoft® Dynamics および Salesforce をすばやく簡単に設定 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html) できます。
+* **Adobe Experience Manager（AEM）FormsをMicrosoft® Dynamics および Salesforce に簡単に接続** – このサービスは、Microsoft® Dynamics および Salesforce 用の標準のデータソース設定とデータモデルを提供します。 これにより [ 開発者は、アダプティブフォームのデータソースとしてMicrosoft® Dynamics および Salesforce をすばやく簡単に設定 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=ja) できます。
 
 * **DocuSign を使用したアダプティブフォームへの電子サイン** - DocuSign を使用してアダプティブフォームに電子サインすることができます。 このサービスでは、アダプティブフォームで DocuSign を使用するためのカスタム送信アクションを提供します。ソフトウェア配布ポータルで入手可能なパッケージをインストールして、送信アクションをインポートすることができます。
 
@@ -80,7 +80,7 @@ CQ-4328183 was not reported on CS so not documented here.
    * フォームポータルの保存および再開機能を有効にし、顧客が管理するデータリポジトリにアダプティブフォームのドラフトを格納する
    * 個人の機密情報（SPD）を含んだ処理中の AEM ワークフローデータ（AEM ワークフロー変数データ）を、顧客側で管理されるリポジトリに格納する
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]** - [ 通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) を使用すると、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。 このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]** - [ 通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ja) を使用すると、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。 このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
    * テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成します。
    * 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
    * XFA フォーム PDF および Adobe Acrobat フォームから印刷用 PDF ファイルを生成します。
@@ -114,10 +114,10 @@ CQ-4328183 was not reported on CS so not documented here.
 ### 新機能 {#what-is-new-screens}
 
 * Screens as a Cloud Service で、基本的な再生モニタリングがサポートされるようになりました。プレーヤーでは、各 ping（デフォルトは 30 秒）で様々な再生指標がレポートされるようになりました。指標に基づいて、様々なエッジケース（動きのないエクスペリエンス、空白の画面、スケジュールの問題など）を検出できます。 この機能を使用すると、プレーヤーがコンテンツを適切に再生しているかどうかをチームがリモートで監視できます。 フィールド内の空白の画面や壊れたエクスペリエンスに対する反応性が向上し、壊れたエクスペリエンスがユーザーに表示されるリスクが低くなります。
-詳しくは、[基本的な再生モニタリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html#playback-monitoring)を参照してください。
+詳しくは、[基本的な再生モニタリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=ja#playback-monitoring)を参照してください。
 
 * ビデオのサムネールが Screens as a Cloud Service でサポートされるようになりました。コンテンツ作成者は、ビデオのサムネールを定義して、その画像をプレースホルダーとして使用できるようにし、実際のビデオを担当チームが仕上げている間に、コンテンツの再生とターゲティングを適切にテストすることができます。その画像は、ビデオの再生に失敗した場合でも使用できます。
-詳しくは、[ビデオのサムネールサポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html)を参照してください。
+詳しくは、[ビデオのサムネールサポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html?lang=ja)を参照してください。
 
 ### バグの修正 {#bug-fixes-screens}
 
@@ -194,7 +194,7 @@ Cloud Acceleration Manager のリリース日は 2021年10月4日です。
 
 ### 新機能 {#what-is-new-ctt}
 
-* 以下に一覧表示されている機能を含め、ユーザーエクスペリエンスがシンプルになり、ユーザーマッピングが改善されました。詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html#using-user-mapping-tool)を参照してください。
+* 以下に一覧表示されている機能を含め、ユーザーエクスペリエンスがシンプルになり、ユーザーマッピングが改善されました。詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=ja#using-user-mapping-tool)を参照してください。
    * ユーザーマッピングを実行する前に、User Management API への接続をテストできます
    * エラーを適切にスキップし、「ユーザーマッピング」アクティビティを続行できます
    * アクセストークンの有効期限が 24 時間後に切れても、ユーザーマッピングが失敗しなくなりました。 最後に停止した位置からユーザーマッピングを再実行できます。

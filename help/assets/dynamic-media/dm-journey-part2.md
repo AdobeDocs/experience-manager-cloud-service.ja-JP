@@ -216,7 +216,7 @@ Flyout ビューアは、既定の標準提供ビューアで、プロパティ�
 _Dynamic Media Help topics_
 
 * [How to create image presets](/help/assets/dynamic-media/image-presets.md)
-* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=ja) that you can use in the Image Modifier field when you create an image preset
 * [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
@@ -226,7 +226,7 @@ _Dynamic Media Help topics_
 _Dynamic Media チュートリアル_
 
 * [Experience Manager Assets での Dynamic Media の使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=pt-BR)
-* [Adobe Experience Manager コンテンツライブラリ](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/experience-manager)（_Dynamic Media_ で検索）
+* [Adobe Experience Manager コンテンツライブラリ](https://experienceleague.adobe.com/ja?lang=ja#recommended/solutions/experience-manager)（_Dynamic Media_ で検索）
 
 _Dynamic Media ビューア_
 

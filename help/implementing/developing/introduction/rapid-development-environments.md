@@ -25,7 +25,7 @@ RDE を使用すると、デベロッパーは、変更を迅速にデプロイ�
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-[設定方法](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)、[使用方法](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)、RDE を使用した[開発ライフサイクル](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle)を示す追加のビデオを参照できます。
+[設定方法](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)、[使用方法](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)、RDE を使用した[開発ライフサイクル](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle)を示す追加のビデオを参照できます。
 
 ## はじめに {#introduction}
 
@@ -179,7 +179,7 @@ retrieving programs of your organization ...
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * 独自の組織 ID は、[組織 ID の表示](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)に記載されている方法を使用して検索できます。
+   * 独自の組織 ID は、[組織 ID の表示](https://experienceleague.adobe.com/ja/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)に記載されている方法を使用して検索できます。
 
 1. 次に、以下のプログラム ID を設定します。
 
@@ -195,7 +195,7 @@ retrieving programs of your organization ...
 
    この手順では、Cloud Manager **デベロッパー - Cloud Service** 製品プロファイルのメンバーである必要があります。詳しくは、[Cloud Manager 製品プロファイルへのチームメンバーの割り当て - 開発者製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)を参照してください。
 
-詳細とデモンストレーションについては、[RDE の設定方法（06:24）](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)のビデオチュートリアルを参照してください。
+詳細とデモンストレーションについては、[RDE の設定方法（06:24）](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)のビデオチュートリアルを参照してください。
 </details>
 
 ## 新機能の開発時に RDE を使用 {#using-rde-while-developing-a-new-feature}
@@ -524,7 +524,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-詳細とデモンストレーションについては、[RDE コマンドの使用方法（10:01）](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)のビデオチュートリアルを参照してください。
+詳細とデモンストレーションについては、[RDE コマンドの使用方法（10:01）](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)のビデオチュートリアルを参照してください。
 
 
 ## 外部 Git プロバイダーからの RDE へのデプロイ {#deploy-to-rde}

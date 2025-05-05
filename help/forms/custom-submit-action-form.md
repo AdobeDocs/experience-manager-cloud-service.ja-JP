@@ -16,8 +16,8 @@ ht-degree: 97%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
-| AEM as a Cloud Service（コアコンポーネント） | [ここをクリックしてください](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html?lang=ja) |
+| AEM as a Cloud Service（コアコンポーネント） | [ここをクリックしてください](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
 | AEM as a Cloud Service（基盤コンポーネント） | この記事 |
 
 アダプティブフォームでは、あらかじめ用意された複数の送信アクション（OOTB）を使用できます。送信アクションは、アダプティブフォームで収集されたデータに対して実行されるアクションの詳細を指定します。例えば、メールでのデータの送信などです。
@@ -111,7 +111,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 >[!NOTE]
 >
-> コアコンポーネントのカスタム送信アクションを作成する方法については、[ アダプティブForms（コアコンポーネント）のカスタム送信アクションの作成 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) を参照してください。
+> コアコンポーネントのカスタム送信アクションを作成する方法については、[ アダプティブForms（コアコンポーネント）のカスタム送信アクションの作成 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) を参照してください。
 
 CRX リポジトリーにデータを保存した後にメール送信を行うカスタム送信アクションを作成するには、次の手順を実行します。アダプティブフォームには、CRX リポジトリーにデータを保存する OOTB の送信アクション、コンテンツを格納アクション（非推奨）が含まれています。さらに、AEM には、メール送信に使用される [Mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API が含まれています。Mail API を使用する前に、システムコンソールを通して Day CQ Mail サービスを設定します。リポジトリーにデータを保存するには、コンテンツを格納アクション（非推奨）を再利用できます。コンテンツを格納アクション（非推奨）は、CRX リポジトリーの /libs/fd/af/components/guidesubmittype/store にあります。
 

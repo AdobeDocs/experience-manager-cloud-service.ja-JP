@@ -16,7 +16,7 @@ ht-degree: 100%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html?lang=ja) |
 | AEM as a Cloud Service（コアコンポーネント） | この記事 |
 
 フォームポータルは、AEM Sites ページでアダプティブフォームを効率的に表示および一覧表示する方法を提供します。これは、様々なフォームを体系的にユーザーに示すプラットフォームを必要とする組織に役立ちます。

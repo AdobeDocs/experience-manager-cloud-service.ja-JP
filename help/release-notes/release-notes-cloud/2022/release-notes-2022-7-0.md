@@ -118,7 +118,7 @@ Adobe Experience Manager Assetsを設定して [ ユーザーがアップロー�
 
 ## Adobe Learning Manager コネクタ {#learn-manage}
 
-* 新しいAdobe Learning Managerには、Adobe Experience Manager Sites、Marketo EngageおよびAdobe Commerceへのコネクタが含まれています。 詳しくは、[Adobe Learning Manager ユーザーガイド ](https://helpx.adobe.com/learning-manager/user-guide.html) を参照してください。
+* 新しいAdobe Learning Managerには、Adobe Experience Manager Sites、Marketo EngageおよびAdobe Commerceへのコネクタが含まれています。 詳しくは、[Adobe Learning Manager ユーザーガイド ](https://helpx.adobe.com/jp/learning-manager/user-guide.html) を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 

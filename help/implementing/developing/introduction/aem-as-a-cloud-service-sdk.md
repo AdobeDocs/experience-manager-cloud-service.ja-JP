@@ -31,7 +31,7 @@ AEM as a Cloud Service SDK は、次のアーティファクトで構成され�
 
 ## SDK を使用する場合のビルド {#building-for-the-sdk}
 
-AEM as a Cloud Service SDK は、カスタムコードのビルドとデプロイに使用されます。[AEM プロジェクトアーキタイプドキュメント](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using)を参照してください。実行する手順の概要は次のとおりです。
+AEM as a Cloud Service SDK は、カスタムコードのビルドとデプロイに使用されます。[AEM プロジェクトアーキタイプドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/using)を参照してください。実行する手順の概要は次のとおりです。
 
 * **コードのコンパイル** - Source コードがコンパイルされ、結果として生成されるコンテンツパッケージが生成されます。
 * **アーティファクトを作成** - アーティファクトはこのプロセス中に作成されます。

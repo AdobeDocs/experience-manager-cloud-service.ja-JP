@@ -21,11 +21,11 @@ AEM Forms as a Cloud Service offers various built-in fonts that can be seamlessl
 
 AEM Forms offers various OOTB supported fonts that can be seamlessly used within a Document of Recordhttps://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms] and communication APIs[]. The OOTB supported fonts are available for PDF generation in Forms as a Cloud Service for any use cases such as:
 
-* To combine a template (XFA or PDF) with customer data (XML) to generate documents in various formats ([Click to know more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-generation)).
+* To combine a template (XFA or PDF) with customer data (XML) to generate documents in various formats ([Click to know more](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-generation)).
 
-* To manipulate the PDFs by combining, rearranging, or merging PDF or XDP files ([Click to know more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-manipulation)).
+* To manipulate the PDFs by combining, rearranging, or merging PDF or XDP files ([Click to know more](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-manipulation)).
 
-* To generate Document of Record to archive AEM forms and content together in PDF format ([Click to know more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms)).
+* To generate Document of Record to archive AEM forms and content together in PDF format ([Click to know more](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms)).
 -->
 
 ## 標準（OOTB）でサポートされるフォント {#ootb-supported-fonts}

@@ -37,7 +37,7 @@ AEM ワークフローモデルでは、次のことができます。
 変数は、ワークフローモデルのサイドキックにある「変数」セクションを使用して作成します。AEM ワークフロー変数は、次のデータタイプをサポートしています。
 
 * **プリミティブデータタイプ**：Long、Double、Boolean、Date、String
-* **複雑なデータタイプ**：[ドキュメント](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html)、[XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html?lang=ja)、[JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html?lang=ja)、フォームデータモデルインスタンス。
+* **複雑なデータタイプ**：[ドキュメント](https://helpx.adobe.com/jp/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html)、[XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html?lang=ja)、[JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html?lang=ja)、フォームデータモデルインスタンス。
 
 >[!NOTE]
 >

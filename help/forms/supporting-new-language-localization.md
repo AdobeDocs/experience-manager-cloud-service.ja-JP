@@ -56,7 +56,7 @@ AEM Forms が標準でサポートしているロケールは、英語（en）�
 #### 1. リポジトリのクローンを作成する {#clone-the-repository}
 
 1. コマンドラインで、Forms Cloud Service リポジトリのクローン先に移動します。
-1. [Cloud Manager から取得](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)したコマンドを実行します。`git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/` のようになります。
+1. [Cloud Manager から取得](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#accessing-git)したコマンドを実行します。`git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/` のようになります。
 1. git のユーザー名とパスワードを使用して、リポジトリのクローンを作成します。
 1. 任意のエディターで、クローン作成された FormsCloud Service リポジトリフォルダーを開きます。
 

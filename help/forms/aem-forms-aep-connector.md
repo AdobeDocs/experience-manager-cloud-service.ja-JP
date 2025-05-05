@@ -56,16 +56,16 @@ Adobe Experience Platform（AEP）用AEM Forms コネクタは、AEM Formsが提
 AEM FormsでAEP コネクタを設定する前に、Adobe Experience Platformで次の手順を完了していることを確認してください。
 
 1. スキーマの設定
-   * [XDM スキーマの作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui)
-   * [ プロファイル用にスキーマを有効にする ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
-   * [ID フィールドを定義 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [XDM スキーマの作成 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/create-schema-ui)
+   * [ プロファイル用にスキーマを有効にする ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [ID フィールドを定義 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
 
 2. データ設定
-   * [ データセットの作成 ](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
-   * [ ストリーミング接続の設定 ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/create-streaming-connection) （ストリーミングエンドポイント URL は後で必要になるので、今すぐメモを取ります）。
+   * [ データセットの作成 ](https://experienceleague.adobe.com/ja/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
+   * [ ストリーミング接続の設定 ](https://experienceleague.adobe.com/ja/docs/experience-platform/ingestion/tutorials/create-streaming-connection) （ストリーミングエンドポイント URL は後で必要になるので、今すぐメモを取ります）。
 
 3. 認証
-   * Adobe Developer Consoleから [API 資格情報を生成 ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) （クライアント ID およびクライアント秘密鍵）
+   * Adobe Developer Consoleから [API 資格情報を生成 ](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) （クライアント ID およびクライアント秘密鍵）
 
 
 ## 実装手順
@@ -195,8 +195,8 @@ AEM FormsとAdobe Experience Platformの統合により、企業はフォーム�
 * [AEM Forms as a Cloud Service ドキュメント ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=ja)
 * [Adobe Experience Platform ドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=ja)
 * [XDM システムの概要 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)
-* [Adobe Experience Platformでのストリーミング取得 ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
-* [ リアルタイム顧客プロファイルの概要 ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
+* [Adobe Experience Platformでのストリーミング取得 ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=ja)
+* [ リアルタイム顧客プロファイルの概要 ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)
 * [AEM Formsの早期アクセス機能](/help/forms/early-access-ea-features.md)
 * [コアコンポーネントを使用したアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md)
 * [AEM Formsでのフォームデータモデルの使用](/help/forms/using-form-data-model.md)

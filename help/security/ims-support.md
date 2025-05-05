@@ -21,7 +21,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->Adobe IMS を使用した AEM as a Cloud のユーザー認証の概要については、[AEM のアクセスの設定（管理者向け）](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)を参照してください。また、Adobe IMS ユーザー、ユーザーグループ、製品プロファイルを使用して、AEM とその機能のアクセス権を制御する方法についても説明します。Adobe ID が必要です。
+>Adobe IMS を使用した AEM as a Cloud のユーザー認証の概要については、[AEM のアクセスの設定（管理者向け）](https://experienceleague.adobe.com/?lang=ja&recommended=ExperienceManager-A-1-2020.1.aem)を参照してください。また、Adobe IMS ユーザー、ユーザーグループ、製品プロファイルを使用して、AEM とその機能のアクセス権を制御する方法についても説明します。Adobe ID が必要です。
 
 ## 主なハイライト {#key-highlights}
 

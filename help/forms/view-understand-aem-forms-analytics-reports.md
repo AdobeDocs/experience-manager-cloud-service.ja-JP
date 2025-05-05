@@ -19,7 +19,7 @@ ht-degree: 100%
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | この記事 |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=ja) |
 
 急速に進化するデジタル分析の状況では、十分な情報に基づく意思決定を行い、デジタルエクスペリエンスを最適化するために、グローバルなトレンドに常に従うことが不可欠です。これに対応するため、Adaptive Forms は Adobe Analytics とシームレスに統合して、公開済みのフォームやドキュメントのパフォーマンス指標を取得し、追跡します。これらの指標の分析の目的は、指標と分析を使用してフォームの使いやすさと効果を高め、データ主導型の意思決定を行うことです。
 
@@ -52,7 +52,7 @@ Adobe Analytics は、フォームの使用状況に関する貴重なインサ�
 
 * **検証エラー数**：検証エラー数は、フォームのフィールドで発生した検証関連のエラーの合計数を表示します。
 
-* **ユニーク訪問者数**：ユニーク訪問者数は、訪問者がフォームをレンダリングした回数を表します。ユニーク訪問者について詳しくは、[ユニーク訪問者、訪問、顧客の行動](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html)を参照してください。
+* **ユニーク訪問者数**：ユニーク訪問者数は、訪問者がフォームをレンダリングした回数を表します。ユニーク訪問者について詳しくは、[ユニーク訪問者、訪問、顧客の行動](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=ja)を参照してください。
 
   ![フォームのパフォーマンス](assets/forms-performance.png){width="100%"}
 
@@ -60,8 +60,8 @@ Adobe Analytics は、フォームの使用状況に関する貴重なインサ�
 
 これにより、フォーム上の訪問者のアクティビティに関する有益なインサイトを得ることができます。
 
-* **訪問と送信**：これには、特定の日付範囲におけるフォームへの訪問頻度と、それに対応するフォーム送信数が記載されています。詳しくは、「[訪問](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html)」をクリックしてください。
-* **ユニーク訪問者数と合計訪問数**：新しい訪問者と再訪問者を区別します。例えば、ある訪問者が 1 か月間毎日サイトを訪問しても、1 人のユニーク訪問者としてカウントすることができます。詳しくは、[ユニーク訪問者数](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html)を参照してください。
+* **訪問と送信**：これには、特定の日付範囲におけるフォームへの訪問頻度と、それに対応するフォーム送信数が記載されています。詳しくは、「[訪問](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=ja)」をクリックしてください。
+* **ユニーク訪問者数と合計訪問数**：新しい訪問者と再訪問者を区別します。例えば、ある訪問者が 1 か月間毎日サイトを訪問しても、1 人のユニーク訪問者としてカウントすることができます。詳しくは、[ユニーク訪問者数](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=ja)を参照してください。
 
   ![フォーム訪問者数](assets/forms-visitors.png){width="100%"}
 

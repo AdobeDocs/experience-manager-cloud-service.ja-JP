@@ -159,8 +159,8 @@ Web ページにアダプティブフォームを埋め込む場合、次のベ�
 
 * Web ページの CSS で定義されたスタイルルールが、フォームオブジェクトの CSS と競合しないようにします。競合を避けるには、AEM クライアントライブラリを使用して、アダプティブフォームテーマの web ページ CSS を再利用します。アダプティブフォームテーマでクライアントライブラリを使用する方法については、[AEM Forms のテーマ](/help/forms/themes.md)を参照してください。
 * Web ページのフォームコンテナで、ウィンドウの幅全体を使用するようにします。これにより、モバイルデバイス用に設定された CSS ルールが、変更なしで確実に機能するようになります。フォームコンテナがウィンドウの幅全体を取らない場合、フォームを様々なモバイルデバイスに適応させるために、カスタム CSS を記述する必要があります。
-* `[getData](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` API を使用して、クライアントのフォームデータの XML または JSON 表現を取得してください。
-* `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` API を使用して、HTML DOM からアダプティブフォームをアンロードします。
+* `[getData](https://helpx.adobe.com/jp/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` API を使用して、クライアントのフォームデータの XML または JSON 表現を取得してください。
+* `[unloadAdaptiveForm](https://helpx.adobe.com/jp/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` API を使用して、HTML DOM からアダプティブフォームをアンロードします。
 * AEM サーバーから応答を送信するときは、access-control-origin ヘッダーを設定します。
 
 ## AEM Forms がクロスドメインサイトに対してアダプティブフォームをサーブできるようにする {#cross-site}

@@ -31,7 +31,7 @@ ht-degree: 47%
 
 * [!DNL Dynamic Media] の機能に、AEM [!DNL Sites] 画像ベースのコアコンポーネントからアクセスできるようになりました。 作成者は、Web ページの作成時に画像プリセット、スマート切り抜き、画像修飾子を使用するように、コンポーネントをすばやく設定できます。[コアコンポーネント 2.13.0 リリース](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0)を参照してください。
 
-* [!DNL Experience Manager] デスクトップアプリケーションを使用すると、デスクトップアプリケーションインターフェイス上の Windows エクスプローラーまたはMac Finder からファイルをドラッグして、ファイルやフォルダーをアップロードできます。 [ デスクトップアプリケーションを使用したアセットの追加 ](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem) を参照してください。
+* [!DNL Experience Manager] デスクトップアプリケーションを使用すると、デスクトップアプリケーションインターフェイス上の Windows エクスプローラーまたはMac Finder からファイルをドラッグして、ファイルやフォルダーをアップロードできます。 [ デスクトップアプリケーションを使用したアセットの追加 ](https://experienceleague.adobe.com/ja/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem) を参照してください。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -65,7 +65,7 @@ Adobe Experience Manager（AEM as a Cloud Service）のCloud Manager 2020.12.0 �
 
 ### [!DNL Code Refactoring Tools] の新機能  {#what-is-new-crt}
 
-* AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンは、AEM Dispatcher コンバーターと Repository Modernizer のバグ修正を含んでいるほか、新しいユーティリティであるインデックスコンバーターもサポートしています。 このプラグインの詳細については、[ 統合エクスペリエンス ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) を参照してください。
+* AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンは、AEM Dispatcher コンバーターと Repository Modernizer のバグ修正を含んでいるほか、新しいユーティリティであるインデックスコンバーターもサポートしています。 このプラグインの詳細については、[ 統合エクスペリエンス ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) を参照してください。
 
 * インデックスコンバーターは、顧客のカスタム Oak インデックス定義をAEM as a Cloud Service互換のOak インデックス定義に変換するために使用できるユーティリティです。 詳しくは、[ インデックスコンバーター ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) を参照してください。
 

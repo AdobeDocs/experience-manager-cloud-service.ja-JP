@@ -18,8 +18,8 @@ Designer は、XDP フォームテンプレートを簡単に作成できるポ�
 次のドキュメントでは、Designer を使用して XDP テンプレートと PDF フォームを作成する手順について説明します。
 
 + [Designer の使用](assets/using-designer-cs.pdf)
-+ [Designer クイックスタートチュートリアル](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/designer-quickstart.pdf)
-+ [Designer サンプル](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/designer-samples.pdf)
-+ [Designer スクリプティング基礎](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/scripting-basics.pdf)
-+ [Designer スクリプティングリファレンス](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/scripting-reference.pdf)
-+ [Designer FormCalc リファレンス](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/formcalc-reference.pdf)
++ [Designer クイックスタートチュートリアル](https://helpx.adobe.com/content/dam/help/ja/experience-manager/6-5/forms/pdf/designer-quickstart.pdf)
++ [Designer サンプル](https://helpx.adobe.com/content/dam/help/ja/experience-manager/6-5/forms/pdf/designer-samples.pdf)
++ [Designer スクリプティング基礎](https://helpx.adobe.com/content/dam/help/ja/experience-manager/6-5/forms/pdf/scripting-basics.pdf)
++ [Designer スクリプティングリファレンス](https://helpx.adobe.com/content/dam/help/ja/experience-manager/6-5/forms/pdf/scripting-reference.pdf)
++ [Designer FormCalc リファレンス](https://helpx.adobe.com/content/dam/help/ja/experience-manager/6-5/forms/pdf/formcalc-reference.pdf)
