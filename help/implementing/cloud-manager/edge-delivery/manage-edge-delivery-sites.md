@@ -4,7 +4,7 @@ description: Edge Delivery サイトに CDN 設定を追加する方法や、Edg
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: 8e4d988934b927ecbbb29277acdd373a87193ea9
+source-git-commit: 4fa8c65d9744b9451089423de0da63b39530973e
 workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 76%
@@ -66,7 +66,9 @@ Edge Delivery サイトテーブルで、削除するサイトの行の末尾に
 
 `/program/{programId}/site/{siteId}` API エンドポイントを使用して、Helix 4 と Helix 5 の間でEdge Delivery サイトを移行します。
 
-Helix 4 web サイトの CDN 設定は、Helix 5 に自動的に移行することはできません。 この制限は、お客様の本番サイトが Helix 4 上で稼働する一方で、Helix 5 のバージョンは開発中であるためです。
+>[!IMPORTANT]
+>
+>Helix 4 web サイトの CDN 設定は、Helix 5 に自動的に移行することはできません。 この制限は、お客様の本番サイトが Helix 4 上で稼働する一方で、Helix 5 のバージョンは開発中であるためです。
 
 **前提条件**
 
