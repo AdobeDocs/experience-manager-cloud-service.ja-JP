@@ -79,6 +79,7 @@ AEM インスタンス上にフォームを作成し、Edge Delivery Servicesに
 
    1. 「**名前**」と「**タイトル**」を指定します。
    1. **GitHub URL** を指定します。例えば、GitHub リポジトリの名前が `edsforms` で、アカウント `wkndforms` の下にある場合、URL は次のようになります。
+
       `https://github.com/wkndforms/edsforms`
 
    ![フォームを作成ウィザード](/help/edge/assets/create-form-wizard.png)
@@ -130,7 +131,7 @@ Edge Delivery Servicesベースのテンプレート用のユニバーサルエ�
 
    ![コンテンツツリー](/help/edge/assets/content-tree.png)
 
-1. 「**[!UICONTROL 追加]**」アイコンをクリックし、**アダプティブフォームコンポーネント**リストから目的のコンポーネントを追加します。
+1. 「**[!UICONTROL 追加]**」アイコンをクリックし、**アダプティブフォームコンポーネント**&#x200B;リストから目的のコンポーネントを追加します。
    ![コンポーネントを追加](/help/edge/assets/add-component.png)
 
    以下のスクリーンショットは、ユニバーサルエディターで作成した `Registration Form` を示しています。
