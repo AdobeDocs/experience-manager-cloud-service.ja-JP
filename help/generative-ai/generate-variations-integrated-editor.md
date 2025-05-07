@@ -325,9 +325,9 @@ AEM Sidekick からのアクセスは、[ドキュメントベースのオーサ
 
 * [GitHub での生成 AI による「バリエーションを生成」](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services の実験](https://www.aem.live/docs/experimentation)
-* [Experience Cloud製品のジェネレーティブ AI](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
+* [Experience Cloud製品のジェネレーティブ AI](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/generative-ai)
 
-   * [Experience Cloud製品のジェネレーティブ AI - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
+   * [Experience Cloud製品のジェネレーティブ AI - Adobe Experience Manager](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/generative-ai#aem)
 
 ## リリース履歴 {#release-history}
 
