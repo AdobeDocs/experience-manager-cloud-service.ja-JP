@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: eddccf5a9d5c6be8d07120ea2f9e36007f7f909f
+source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 96%
+source-wordcount: '1729'
+ht-degree: 92%
 
 ---
 
@@ -219,9 +219,9 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ユニバーサルエディターには、カスタマイズ可能で拡張性の高いオーサリングエクスペリエンスが用意されています。ツールバーにその他のボタンを表示する場合は、ユニバーサルエディターが拡張されています。
 
-* 個々の拡張機能の仕組みについて詳しくは、[ ユニバーサルエディターのオーサリングドキュメントを参照してください ](/help/sites-cloud/authoring/universal-editor/authoring.md#managing-page-content)。
-* 拡張機能について詳しくは、[ユニバーサルエディターの拡張](/help/implementing/universal-editor/extending.md)を参照してください。
-* 個々の拡張機能のインストール方法について詳しくは、[Extension Manager ドキュメント ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/) を参照してください。
+* 個々の拡張機能の仕組みについて詳しくは、[ ユニバーサルエディターのオーサリングドキュメントを参照してください ](/help/sites-cloud/authoring/universal-editor/authoring.md#toolbar-options)。
+* 拡張の可能性について詳しくは、[ ユニバーサルエディターの拡張 ](/help/implementing/universal-editor/extending.md) を参照してください。
+* 個々の拡張機能のインストール方法について詳しくは、[Extension Managerのドキュメントを参照してください。](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ### エディター {#editor}
 
@@ -236,6 +236,8 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 プロパティパネルは、エディターの右側に常に表示されます。モードに応じて、コンテンツ内で選択されたコンポーネントの詳細またはページコンテンツの階層を表示できます。
 
 ![プロパティパネル](assets/properties-rail.png)
+
+プログラムの設定によっては、[ 管理者によって拡張機能として有効にされている追加機能 ](#additional-properties-panel-buttons) が表示される場合もあります。
 
 #### プロパティモード {#properties-mode}
 
@@ -315,12 +317,13 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 >
 >ホットキー `Shift+Backspace` を使用して、選択したコンポーネントをコンテナから削除します。
 
-## その他の機能 {#additional-features}
+#### その他のボタン {#additional-properties-panel-buttons}
 
-ユニバーサルエディターには、カスタマイズ可能で拡張性の高いオーサリングエクスペリエンスが用意されています。プロパティパネルやツールバーにその他のボタンやオプションを表示する場合は、ユニバーサルエディターが拡張されています。
+ユニバーサルエディターには、カスタマイズ可能で拡張性の高いオーサリングエクスペリエンスが用意されています。プロパティパネルにその他のボタンを表示する場合は、ユニバーサルエディターが拡張されています。
 
-* 拡張機能について詳しくは、[ユニバーサルエディターのカスタマイズと拡張](/help/implementing/universal-editor/customizing.md)を参照してください。
-* 個別の拡張機能の動作について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)を参照してください。
+* 個々の拡張機能の仕組みについて詳しくは、[ ユニバーサルエディターのオーサリングドキュメントを参照してください ](/help/sites-cloud/authoring/universal-editor/authoring.md#properties-panel-options)。
+* 拡張の可能性について詳しくは、[ ユニバーサルエディターの拡張 ](/help/implementing/universal-editor/extending.md) を参照してください。
+* 個々の拡張機能のインストール方法について詳しくは、[Extension Managerのドキュメントを参照してください。](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ## 次の手順 {#next-steps}
 

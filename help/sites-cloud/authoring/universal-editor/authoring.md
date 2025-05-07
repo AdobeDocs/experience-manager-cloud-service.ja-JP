@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a2039c99cd1c7e163086ba20af3b41b48fa93683
+source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
 workflow-type: tm+mt
-source-wordcount: '2133'
-ht-degree: 65%
+source-wordcount: '2222'
+ht-degree: 61%
 
 ---
 
@@ -178,14 +178,6 @@ ht-degree: 65%
 >
 >選択したコンポーネントがターゲットコンテナの[コンポーネントフィルター](/help/implementing/universal-editor/filtering.md)で許可されている場合にのみ、コンテナ間でコンポーネントを移動できます。
 
-### 「バリエーションを生成」で生成 AI を使用したバリエーションの作成 {#generate-variations-ai}
-
-生成バリエーションを使用して生成 AI を活用し、コンテンツ作成を高速化します。
-
-ユニバーサルエディターを開き、バリエーションを生成するエントリポイントを見つけます。
-
-詳しくは、[バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)を参照してください。
-
 ## コンテンツのプレビュー {#previewing-content}
 
 コンテンツの編集が完了したら、他のページのコンテンツでコンテンツがどのように表示されるかを確認するためにコンテンツ内を移動したい場合がよくあります。[プレビューモード](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)でリンクをクリックして、読者と同じようにコンテンツ内を移動できます。コンテンツは、公開されるときと同じように、エディターでレンダリングされます。
@@ -202,8 +194,7 @@ ht-degree: 65%
 
 ユニバーサルエディターを使用した継承の仕組みについて詳しくは、[ユニバーサルエディターでのコンテンツの継承](/help/sites-cloud/authoring/universal-editor/inheritance.md)を参照してください。
 
-
-## オプションのツールバーオプション{#toolbar-options}
+## オプションのツールバー機能 {#toolbar-options}
 
 ページやコンテンツをさらに管理するのに役立つ追加機能が、ユニバーサルエディターの拡張機能として使用できます。 [ これらの拡張機能は ](/help/implementing/universal-editor/extending.md) コンテンツ作成者としてユニバーサルエディターツールバーに表示される前に [ 管理者がプログラムで有効にする必要があります ](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)。
 
@@ -305,6 +296,20 @@ ht-degree: 65%
 ユニバーサルエディターツールバーの「**開発者ログオン**」アイコンをタップまたはクリックして、ローカルのAEM SDKにログインするためのローカルログイン資格情報を指定します。
 
 ![ 開発者ログインモーダル ](assets/developer-login.png)
+
+この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/)。
+
+## オプションのプロパティパネル機能 {#properties-panel-options}
+
+ページコンテンツをさらに管理しやすくするために、ユニバーサルエディターの拡張機能として追加機能を使用できます。 [ これらの拡張機能は、コンテンツ作成者として [ ユニバーサルエディターのプロパティパネル ](/help/implementing/universal-editor/extending.md) に表示される前に、管理者がプログラムで有効にする必要があります ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)。
+
+### バリエーションを生成 {#generate-variations}
+
+**バリエーションを生成** 拡張機能を使用すると、生成人工知能（AI）を使用して、プロパティパネルでコンテンツのバリエーションを直接作成できます。
+
+![ バリエーションを生成アイコン ](assets/generate-variations-icon.png)
+
+ユニバーサルエディターのプロパティパネルにある「**バリエーションを生成**」アイコンをタップまたはクリックして、レコメンデーションを受け取り、バリエーションを作成します。 バリエーションの生成の仕組みについて詳しくは、[ バリエーションの生成 – AEM エディターに統合 ](/help/generative-ai/generate-variations-integrated-editor.md) ドキュメントを参照してください。
 
 この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/)。
 

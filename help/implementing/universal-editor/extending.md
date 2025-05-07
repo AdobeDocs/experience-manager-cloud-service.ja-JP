@@ -4,10 +4,10 @@ description: コンテンツ作成者のニーズをサポートするために�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: ff8025914a7ece20211ee154e03ce2cd602f81b6
+source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 17%
+source-wordcount: '559'
+ht-degree: 16%
 
 ---
 
@@ -29,6 +29,7 @@ Adobe Experience Cloud サービスとして、ユニバーサルエディター
 * **[AEM ページロック拡張機能](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: ユニバーサルエディターでページロックステータスを表示して変更できます
 * **[AEM ワークフロー拡張機能](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: ページおよびページコンテンツでユニバーサルエディターからワークフローを開始します
 * **[AEM Universal Editor Dev Login Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**: ローカルで開発する場合、ローカルのAEM SDKへの認証が容易になります
+* **[バリエーションの生成](/help/generative-ai/generate-variations-integrated-editor.md)**：生成人工知能（AI）を使用して、プロパティパネルでコンテンツのバリエーションを直接作成します。
 * **[ユニバーサルエディター用のAEM製品ピッカー ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**: エディターで製品データを選択または削除して、Adobe Commerce データを統合します。
 * **[ユニバーサルエディターのコンテンツドラフト ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**：複数のコンテンツのドラフトを作成、編集、管理します。
 * **[設定可能なアセットピッカー ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/)**：編集されたページで使用されているリポジトリ以外のリポジトリからのアセット選択を有効にします。

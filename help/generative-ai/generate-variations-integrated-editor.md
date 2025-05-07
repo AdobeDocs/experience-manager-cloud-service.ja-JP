@@ -4,10 +4,10 @@ description: AEM as a Cloud Service 内の様々なエディターからアク�
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 056ad9a00ad725d2c10a17a5feff06126eb3c30b
+source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
 workflow-type: tm+mt
-source-wordcount: '1372'
-ht-degree: 98%
+source-wordcount: '1401'
+ht-degree: 95%
 
 ---
 
@@ -313,7 +313,10 @@ AEM Sidekick からのアクセスは、[ドキュメントベースのオーサ
 
 ### AEM ユニバーサルエディターからのアクセス {#access-aem-universal-editor}
 
-[AEM ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md)からのアクセスは、拡張機能として実装されます。詳しくは、[AEM Experience Manager の Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) を参照してください。
+[AEM ユニバーサルエディター ](/help/sites-cloud/authoring/universal-editor/authoring.md) からのアクセスは、拡張機能として実装されます。
+
+* ユニバーサルエディターからバリエーションを生成にアクセスする方法について詳しくは、ドキュメント [ ユニバーサルエディターを使用したコンテンツのオーサリング ](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations) を参照してください。
+* 拡張機能を有効にする方法について詳しくは、AEM Experience Managerのドキュメント [Extension Managerを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/)。
 
 ### AEM コンテンツフラグメントエディターからのアクセス {#access-aem-content-fragment-editor}
 
@@ -325,9 +328,9 @@ AEM Sidekick からのアクセスは、[ドキュメントベースのオーサ
 
 * [GitHub での生成 AI による「バリエーションを生成」](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services の実験](https://www.aem.live/docs/experimentation)
-* [Experience Cloud製品のジェネレーティブ AI](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/generative-ai)
+* [Experience Cloud製品のジェネレーティブ AI](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
-   * [Experience Cloud製品のジェネレーティブ AI - Adobe Experience Manager](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/generative-ai#aem)
+   * [Experience Cloud製品のジェネレーティブ AI - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
 
 ## リリース履歴 {#release-history}
 
