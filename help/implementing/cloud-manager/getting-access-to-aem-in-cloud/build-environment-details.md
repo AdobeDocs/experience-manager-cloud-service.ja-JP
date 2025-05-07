@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 83def24319831c3f14f396f2f6b92b053a9d46a9
+source-git-commit: f102cdbab6b38ffabc370691e507754227b91f4e
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 88%
+source-wordcount: '1595'
+ht-degree: 94%
 
 ---
 
@@ -49,7 +49,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 >[!NOTE]
 >
->Cloud Managerでは `jacoco-maven-plugin` の特定のバージョンは指定されませんが、必要なバージョンはプロジェクトの Java バージョンによって異なります。 Java 8 の場合、プラグインバージョンは `0.7.5.201505241946` 以上である必要がありますが、新しい Java バージョンでは、より新しいリリースが必要になる場合があります。
+>Cloud Manager では、`jacoco-maven-plugin` の特定のバージョンは指定されませんが、必要なバージョンはプロジェクトの Java バージョンによって異なります。Java 8 の場合、プラグインのバージョンは `0.7.5.201505241946` 以降にする必要がありますが、新しい Java バージョンではより新しいリリースが必要になることがあります。
 
 ## HTTPS Maven リポジトリ {#https-maven}
 
@@ -84,15 +84,15 @@ Maven 実行 JDK を設定するには、パイプラインで使用される Gi
 
 #### Java 21 または Java 17 を使用したビルドへの移行の前提条件 {#prereq-for-building}
 
-Java 21 または Java 17 を使用したビルドに移行するには、まず最新の SonarQube バージョンにアップグレードする必要があります。詳しくは、[Cloud Manager 2025.1.0 のリリースノート](/help/implementing/cloud-manager/release-notes/current.md#what-is-new)を参照してください。
+Java 21 または Java 17 でビルドするために、Cloud Managerは、これらの Java バージョンと互換性のある SonarQube 9.9 を使用するようになりました。 この変更は、Cloud Manager リリース 2025.1.0 で導入されました。SonarQube をアップグレードするためにお客様が行うアクションは必要ありません。 詳細および変更点については、[Cloud Manager 2025.1.0 のリリースノート ](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md) を参照してください。
 
 アプリケーションを新しい Java ビルドバージョンとランタイムバージョンに移行する場合は、実稼動環境にデプロイする前に、開発環境とステージ環境で徹底的にテストします。
 
-Adobeでは、次のデプロイメント戦略を推奨します。
+次のデプロイメント戦略をお勧めします。
 
-1. https://experience.adobe.com/#/downloads からダウンロードできる Java 21 を使用してローカル SDK を実行し、アプリケーションをデプロイして機能を検証します。エラーがないことをログで確認します。これは、クラスの読み込みまたはバイトコードの織り込みに関する問題を示します。
-1. ビルド時の Java バージョンとして Java 21 を使用するようにCloud Manager リポジトリにブランチを設定し、このブランチを使用するように開発パイプラインを設定してパイプラインを実行します。 検証テストを実行します。
-1. 問題がないようであれば、ステージ/実稼動パイプラインを設定して、ビルド時の Java バージョンとして Java 21 を使用し、パイプラインを実行します。
+1. https://experience.adobe.com/#/downloads からダウンロードできる Java 21 を使用してローカル SDK を実行し、アプリケーションをデプロイして機能を検証します。ログを確認して、クラスロードまたはバイトコードウィービングの問題を示すエラーがないことを確認します。
+1. Cloud Manager リポジトリ内の分岐を、ビルド時の Java バージョンとして Java 21 を使用するように設定し、この分岐を使用するように開発パイプラインを設定して、パイプラインを実行します。検証テストを実行します。
+1. 問題がなければ、ビルド時の Java バージョンとして Java 21 を使用するようにステージ／実稼動パイプラインを設定して、パイプラインを実行します。
 
 ##### 一部の翻訳機能について {#translation-features}
 
@@ -103,12 +103,12 @@ Java 21 ランタイムにデプロイすると、次の機能が正しく機能
 
 #### ランタイム要件 {#runtime-requirements}
 
-Java 21 ランタイムは、Java 21 および Java 17 のビルドに使用され、Java 11 ビルドにも段階的に適用される予定です（以下のメモを参照）。Java 21 アップデートを受信するには、環境を AEM リリース 17098 以降にする必要があります。互換性を確保するには、次の調整が必要です。
+Java 21 ランタイムは、Java 21 および Java 17 を使用したビルドに使用され、Java 11 ビルドにも徐々に適用されます（以下のメモを参照）。 Java 21 アップデートを受信するには、環境を AEM リリース 17098 以降にする必要があります。互換性を確保するには、次の調整が必要です。
 
 ライブラリの更新は、古い Java バージョンとの互換性が維持されるので、いつでも適用できます。
 
 * **ASM の最小バージョン：**
-新しい JVM ランタイムのサポートを確保するために `org.objectweb.asm` 多くの場合 `org.ow2.asm.*` アーティファクトにバンドルされている Java パッケージの使用状況をバージョン 9.5 以降に更新します。
+新しい JVM ランタイムのサポートを確保するには、多くの場合、`org.ow2.asm.*` アーティファクトにバンドルされている Java パッケージ `org.objectweb.asm` の使用をバージョン 9.5 以降に更新します。
 
 * **Groovy の最小バージョン：**
 新しい JVM ランタイムのサポートを確保するには、Java パッケージ `org.apache.groovy` または `org.codehaus.groovy` の使用をバージョン 4.0.22 以降に更新します。
@@ -118,7 +118,7 @@ Java 21 ランタイムは、Java 21 および Java 17 のビルドに使用さ�
 * **Aries SPIFly の最小バージョン：**
 新しい JVM ランタイムのサポートを確保するには、Java パッケージ `org.apache.aries.spifly.dynamic.bundle` の使用をバージョン 1.3.6 以降に更新します。
 
-AEM Cloud Service SDKは Java 21 をサポートしており、Cloud Manager パイプラインを実行する前にプロジェクトの Java 21 との互換性を確認できます。
+AEM Cloud Service SDK は、Java 21 をサポートしています。これにより、Cloud Manager パイプラインを実行する前にプロジェクトと Java 21 の互換性を確認できます。
 
 * **ランタイムパラメーターの編集：**
 Java 21 を使用して AEM をローカルで実行すると、`MaxPermSize` パラメーターにより起動スクリプト（`crx-quickstart/bin/start` または `crx-quickstart/bin/start.bat`）が失敗します。対処方法としては、スクリプトから `-XX:MaxPermSize=256M` を削除するか、環境変数 `CQ_JVM_OPTS` を定義して `-Xmx1024m -Djava.awt.headless=true` に設定します。
@@ -127,7 +127,7 @@ Java 21 を使用して AEM をローカルで実行すると、`MaxPermSize` �
 
 >[!IMPORTANT]
 >
->`.cloudmanager/java-version` を `21` または `17` に設定すると、Java 21 ランタイムがデプロイされます。Java 21 ランタイムは、2025年2月4日木曜日（PT）から、すべての環境（コードが Java 11 でビルドされている環境だけでなく）に段階的にロールアウトされる予定です。ロールアウトは、サンドボックスと開発環境で始まり、その後 2025 年 4 月にすべての実稼動環境が続きます。 Java 21 ランタイムを&#x200B;*早期に*&#x200B;導入するお客様は、アドビ（[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)）にお問い合わせください。
+>`.cloudmanager/java-version` を `21` または `17` に設定すると、Java 21 ランタイムがデプロイされます。Java 21 ランタイムは、2025年2月4日木曜日（PT）から、すべての環境（コードが Java 11 でビルドされている環境だけでなく）に段階的にロールアウトされる予定です。ロールアウトは、サンドボックス環境と開発環境で始まり、2025年4月にすべての実稼動環境が続きます。Java 21 ランタイムを&#x200B;*早期に*&#x200B;導入するお客様は、アドビ（[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)）にお問い合わせください。
 
 
 #### ビルド時間の要件 {#build-time-reqs}
