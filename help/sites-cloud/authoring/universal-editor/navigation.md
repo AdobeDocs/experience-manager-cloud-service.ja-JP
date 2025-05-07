@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
+source-git-commit: eddccf5a9d5c6be8d07120ea2f9e36007f7f909f
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1698'
 ht-degree: 96%
 
 ---
@@ -69,7 +69,7 @@ UI は以下の主なエリアに分かれています。
 
 >[!TIP]
 >
->ユニバーサルエディターには、エディターの機能を変更して追加できる [ カスタマイズオプション ](/help/implementing/universal-editor/customizing.md) および [ 拡張ポイント ](/help/implementing/universal-editor/extending.md) が多数用意されています。 このため、ここに記載されている標準のオプションとは異なるオプションが表示される場合があります。
+>ユニバーサルエディターには、エディターの機能を変更して追加できる[カスタマイズオプション](/help/implementing/universal-editor/customizing.md)と[拡張ポイント](/help/implementing/universal-editor/extending.md)が多数用意されています。このため、ここに記載されている標準のオプションとは異なるオプションが表示される場合があります。
 
 ### Experience Cloud ヘッダー {#experience-cloud-header}
 
@@ -116,6 +116,8 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 ### ユニバーサルエディターのツールバー {#universal-editor-toolbar}
 
 ユニバーサルエディターのツールバーは、常に画面の上部、[Experience Cloud ヘッダー](#experience-cloud-header)のすぐ下に表示されます。このツールを使用すると、別のページに素早くアクセスして編集したり、現在のページを公開したりできます。
+
+プログラムの設定によっては、[ 管理者によって拡張機能として有効にされている追加機能 ](#additional-toolbar-buttons) が表示される場合もあります。
 
 ![ユニバーサルエディターのツールバー](assets/universal-editor-toolbar.png)
 
@@ -197,7 +199,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 #### 公開 {#publish}
 
-「公開」ボタンを選択すると、変更をコンテンツのライブに公開して読者に利用してもらったり、プレビュー環境に公開してレビューしたりできます。
+「公開」ボタンを選択すると、コンテンツへの変更を消費者が利用できるようライブに公開したり、レビュー用にプレビュー環境に公開したりできます。
 
 ![「公開」ボタン](assets/publish.png)
 
@@ -217,8 +219,9 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ユニバーサルエディターには、カスタマイズ可能で拡張性の高いオーサリングエクスペリエンスが用意されています。ツールバーにその他のボタンを表示する場合は、ユニバーサルエディターが拡張されています。
 
+* 個々の拡張機能の仕組みについて詳しくは、[ ユニバーサルエディターのオーサリングドキュメントを参照してください ](/help/sites-cloud/authoring/universal-editor/authoring.md#managing-page-content)。
 * 拡張機能について詳しくは、[ユニバーサルエディターの拡張](/help/implementing/universal-editor/extending.md)を参照してください。
-* 個別の拡張機能の動作について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)を参照してください。
+* 個々の拡張機能のインストール方法について詳しくは、[Extension Manager ドキュメント ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/) を参照してください。
 
 ### エディター {#editor}
 

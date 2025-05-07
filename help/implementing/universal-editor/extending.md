@@ -3,13 +3,13 @@ title: ユニバーサルエディターの拡張
 description: コンテンツ作成者のニーズをサポートするために、ユニバーサルエディターの機能を拡張する様々なオプションについて説明します。
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0cab4a807be4aa402667feddb6a948f0d2db371f
+exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
+source-git-commit: ff8025914a7ece20211ee154e03ce2cd602f81b6
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 6%
+source-wordcount: '541'
+ht-degree: 17%
 
 ---
-
 
 # ユニバーサルエディターの拡張 {#extending}
 
@@ -23,6 +23,12 @@ ht-degree: 6%
 
 Adobe Experience Cloud サービスとして、ユニバーサルエディターの UI は、App BuilderとExperience Managerを使用して拡張できます。 Adobeには、プロジェクトに使用できる既製の拡張機能が多数用意されています。
 
+* **[AEM Multi-Site-Management （MSM）拡張機能](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)**: コンポーネントレベルでの継承の解除または復元
+* **[AEMのページプロパティ拡張機能](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)**: ユニバーサルエディターでページのページプロパティウィンドウにアクセスします
+* **[AEM Site Admin Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)**: Sites コンソールを開いて、ユニバーサルエディターでページの場所を指定します
+* **[AEM ページロック拡張機能](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: ユニバーサルエディターでページロックステータスを表示して変更できます
+* **[AEM ワークフロー拡張機能](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: ページおよびページコンテンツでユニバーサルエディターからワークフローを開始します
+* **[AEM Universal Editor Dev Login Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**: ローカルで開発する場合、ローカルのAEM SDKへの認証が容易になります
 * **[ユニバーサルエディター用のAEM製品ピッカー ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**: エディターで製品データを選択または削除して、Adobe Commerce データを統合します。
 * **[ユニバーサルエディターのコンテンツドラフト ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**：複数のコンテンツのドラフトを作成、編集、管理します。
 * **[設定可能なアセットピッカー ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/)**：編集されたページで使用されているリポジトリ以外のリポジトリからのアセット選択を有効にします。
@@ -42,9 +48,9 @@ Adobe Experience Cloud サービスとして、ユニバーサルエディター
 
 >[!TIP]
 >
->例によって学びたい場合は、[AEM UI 拡張機能のチュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) を参照してください。 コンテンツフラグメントコンソールの拡張に重点を置いていますが、ユニバーサルエディターで UI 拡張機能を実装する場合の概念は同じです。
+>例について詳しくは、[AEM UI 拡張チュートリアル](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)を参照してください。コンテンツフラグメントコンソールの拡張に重点を置いていますが、ユニバーサルエディターで UI 拡張機能を実装する場合の概念は同じです。
 
-[AEM SitesでExtension Managerを使用 ](https://developer.adobe.com/uix/docs/extension-manager/) すると、インスタンスごとに拡張機能を有効または無効にしたり、ユニバーサルエディター用の拡張機能を含むAdobeのファーストパーティ拡張機能にアクセスしたりできます。
+[AEM Sites の Extension Manager を使用](https://developer.adobe.com/uix/docs/extension-manager/)すると、拡張機能をインスタンスごとに有効または無効にしたり、ユニバーサルエディターを含むアドビのファーストパーティ拡張機能にアクセスしたりできます。
 
 ## 拡張ポイント {#extension-points}
 

@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: da14ed18b786c1f19d76926ed027d13a53275af3
-workflow-type: ht
-source-wordcount: '1395'
-ht-degree: 100%
+source-git-commit: a2039c99cd1c7e163086ba20af3b41b48fa93683
+workflow-type: tm+mt
+source-wordcount: '2133'
+ht-degree: 65%
 
 ---
 
@@ -192,6 +192,122 @@ ht-degree: 100%
 
 プレビューモードでは、コンテンツをタップまたはクリックすると、コンテンツの読者に対するように反応します。編集するコンテンツを選択する場合は、[プレビューモード](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)から切り替えます。
 
+## コンポーネントの継承の編集 {#inheritance}
+
+継承とは、一方を変更するともう一方も自動的に変更されるようにコンテンツをリンクできるメカニズムです。
+
+ユニバーサルエディターを使用すると、コンテンツを更新するだけで、コンテンツの継承をキャンセルできます。エディターでは、そのページの作成者が行ったすべての変更の継承を自動的に無効にし、ブループリントから更新を同期した際に変更済みのコンテンツが保持されるようにします。
+
+**AEM Multi-Site-Management （MSM）拡張機能** がプログラムに対して有効になっている場合、ユニバーサルエディター内の個々のコンポーネントの継承ステータスを表示および変更するための [ 追加のツールバーオプション ](#inheritance-extension) が表示されます。
+
+ユニバーサルエディターを使用した継承の仕組みについて詳しくは、[ユニバーサルエディターでのコンテンツの継承](/help/sites-cloud/authoring/universal-editor/inheritance.md)を参照してください。
+
+
+## オプションのツールバーオプション{#toolbar-options}
+
+ページやコンテンツをさらに管理するのに役立つ追加機能が、ユニバーサルエディターの拡張機能として使用できます。 [ これらの拡張機能は ](/help/implementing/universal-editor/extending.md) コンテンツ作成者としてユニバーサルエディターツールバーに表示される前に [ 管理者がプログラムで有効にする必要があります ](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)。
+
+### 継承 {#inheritance-extension}
+
+**AEM Multi-Site-Management （MSM）拡張機能** には、選択したコンポーネントの現在の継承ステータスが表示され、継承を [ 解除または復元 ](/help/sites-cloud/authoring/universal-editor/inheritance.md) できます。
+
+ユニバーサルエディターツールバーの **継承がインストール済み** アイコンは、選択したコンポーネントの継承が引き続きアクティブであることを示します。
+
+![ 継承がインストールされたアイコン ](assets/inheritance-installed-icon.png)
+
+アイコンをタップまたはクリックすると、選択したコンポーネントの継承が解除されます。 コンポーネントを編集すると、継承が自動的に解除されます。
+
+**継承が壊れている** アイコンは、選択したコンポーネントの継承が壊れていることを示しています。
+
+![ 継承が壊れているアイコン ](assets/inheritance-broken-icon.png)
+
+アイコンをタップまたはクリックして、選択したコンポーネントの継承を復元します。 継承されたコンテンツを表示するには、ページをリロードしてコンテンツを更新する必要があります。
+
+この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/)。
+
+>[!NOTE]
+>
+>**インストール済みの継承** および **壊れた継承** アイコンは、コンポーネントが選択され、ページがブループリントに基づいている場合にのみ表示されます。
+
+>[!NOTE]
+>
+>**AEM マルチサイト管理（MSM）拡張機能は** ページに対してのみ機能し、コンテンツフラグメントには機能しません。
+
+### ページプロパティへのアクセス {#page-properties}
+
+**AEMのページプロパティ拡張機能** を使用すると、現在編集中のページの [ ページプロパティ ](/help/sites-cloud/authoring/sites-console/page-properties.md) ウィンドウにすばやくアクセスできます。
+
+![ ページプロパティアイコン ](assets/page-properties-icon.png)
+
+ユニバーサルエディターツールバーの **ページプロパティ** アイコンをタップまたはクリックして、新しいブラウザータブでページのページプロパティを開きます。
+
+この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/)。
+
+>[!NOTE]
+>
+>**AEMのページプロパティ拡張機能は** ページに対してのみ機能し、コンテンツフラグメントには機能しません。
+
+### Sites コンソールへのアクセス {#sites-console}
+
+**AEM サイト管理拡張機能** を使用すると、AEMの [Sites コンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) で編集中のページにすばやくアクセスでき、サイトツリーを移動したり、コンソールでページレベルのアクションを実行したりできます。
+
+![ サイト管理で開くアイコン ](assets/open-in-site-admin-icon.png)
+
+アイコンをタップまたはクリックすると、新しいブラウザータブで Sites コンソールが開き、エディターで現在表示されているページに移動します。
+
+この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/)。
+
+### ページのロックとロック解除 {#locking-pages}
+
+**AEMページロック拡張機能** は、ページの現在のロックステータスをエディターに表示し、ページを [ ロックまたはロック解除 ](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) できます。
+
+ユニバーサルエディターツールバーの **ロック解除** アイコンは、現在エディターにあるページがロックされていないことを示しています。
+
+![ ロック解除アイコン ](assets/unlocked-icon.png)
+
+ページをロックするには、アイコンをタップまたはクリックします。
+
+ユニバーサルエディターツールバーの **ロック済み** アイコンは、現在エディターにあるページがロックされていることを示します。 アイコンの上にマウスポインターを置くと、ページをロックしたユーザーを示すツールヒントが表示されます。
+
+![ ロック済みアイコン ](assets/locked-icon.png)
+
+ユーザーがページをロックした場合は、アイコンをタップまたはクリックしてページのロックを解除します。
+
+この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/)。
+
+>[!NOTE]
+>
+>**AEM ページロック拡張機能は** ページに対してのみ機能し、コンテンツフラグメントには機能しません。
+
+### ワークフロー {#workflows}
+
+**AEM ワークフロー拡張機能** を使用すると、現在エディターにあるページで [ ワークフローを開始 ](/help/sites-cloud/authoring/workflows/overview.md) できます。
+
+![ ワークフローアイコン ](assets/workflows-icon.png)
+
+ユニバーサルエディターツールバーの **ワークフロー** アイコンをタップまたはクリックして **ワークフローを開始** モーダルを開きます。 ウィンドウには、ワークフローを適用できるコンテンツのリストが表示されます。
+
+![ ワークフローモーダルの開始 ](assets/start-a-workflow.png)
+
+1. **ワークフローモデル** ドロップダウンで、適用するワークフローを選択します。
+1. 「**名前**」フィールドにワークフローの説明を入力します。
+1. **ワークフローに含めるコンテンツ** リストで、チェックボックスを使用して、ワークフローに含めるコンテンツを定義します。
+1. **ワークフローを開始** をタップまたはクリックしてワークフローを開始するか、**閉じる** をタップまたはクリックして中止します。
+
+この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/)。
+
+### 開発者ログイン {#developer-login}
+
+**AEM Universal Editor Dev Login Extension** は、ローカルで開発する開発者が便利な方法で、テスト目的でローカルのAEM SDKに対する認証を行うことができます。
+
+![ 開発者ログインアイコン ](assets/developer-login-icon.png)
+
+ユニバーサルエディターツールバーの「**開発者ログオン**」アイコンをタップまたはクリックして、ローカルのAEM SDKにログインするためのローカルログイン資格情報を指定します。
+
+![ 開発者ログインモーダル ](assets/developer-login.png)
+
+この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/)。
+
 ## その他のリソース {#additional-resources}
 
 ユニバーサルエディターを使用してコンテンツを公開する方法については、このドキュメントを参照してください。
@@ -205,11 +321,3 @@ ht-degree: 100%
 * [ユニバーサルエディターのアーキテクチャ](/help/implementing/universal-editor/architecture.md) - ユニバーサルエディターのアーキテクチャと、そのサービスとレイヤー間でのデータのフローについて説明します。
 * [属性とタイプ](/help/implementing/universal-editor/attributes-types.md) - ユニバーサルエディターで必要なデータ属性とデータ型について説明します。
 * [ユニバーサルエディターの認証](/help/implementing/universal-editor/authentication.md) - ユニバーサルエディターの認証方法について説明します。
-
-## コンポーネントの継承の編集 {#inheritance}
-
-継承とは、一方を変更するともう一方も自動的に変更されるようにコンテンツをリンクできるメカニズムです。
-
-ユニバーサルエディターを使用すると、コンテンツを更新するだけで、コンテンツの継承をキャンセルできます。エディターでは、そのページの作成者が行ったすべての変更の継承を自動的に無効にし、ブループリントから更新を同期した際に変更済みのコンテンツが保持されるようにします。
-
-ユニバーサルエディターを使用した継承の仕組みについて詳しくは、[ユニバーサルエディターでのコンテンツの継承](/help/sites-cloud/authoring/universal-editor/inheritance.md)を参照してください。
