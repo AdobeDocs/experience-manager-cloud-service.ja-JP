@@ -4,10 +4,10 @@ description: AEM as a Cloud Service チームおよび製品プロファイル�
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 86bb2e020a003fd418f8b1cf7bdf55987a2eaf3d
-workflow-type: ht
-source-wordcount: '2062'
-ht-degree: 100%
+source-git-commit: b9cc5450effb70afcb67725fe38826646d947da9
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -143,11 +143,10 @@ AEM Sites を含むプログラムで環境をプロビジョニングした組�
         <td>AEM Assets 共同作業者ユーザー</td>
         <td>
         <ul>
-                <li>DAM への読み取り専用アクセスを目的としています。この製品プロファイルのユーザーは、AEM で自動的に作成される「寄稿者」AEM グループのメンバーになります。
+                <li>組織で使用可能な他のアドビ製品やアドビ以外のアプリケーションでの Assets の統合を通じて、Experience Manager のアセットを操作する。
                 </li>
-                <li>
-                また、アセットのバリエーションを作成する Adobe Express 権限も提供します。
-                </li>
+                <li>組み込みの Adobe Express と Firefly を使用して、プロフェッショナルがデザインしたテンプレート、ブランドキット、Adobe Stock アセットなどを活用し、アセットを作成および編集する。</li>
+                <li>AEM Assets コンテンツハブポータルを使用して、組織から承認済みアセットにアクセスし、活用する。</li>
           <ul>
     </tr>
     <tr>
@@ -156,11 +155,11 @@ AEM Sites を含むプログラムで環境をプロビジョニングした組�
         <td>AEM Assets パワーユーザー</td>
 <td>
         <ul>
-                <li>DAM への読み取り専用アクセスを目的としています。この製品プロファイルのユーザーは、AEM で自動的に作成される「寄稿者」AEM グループのメンバーになります。
+                <li>アセット、メタデータ、デジタルアセットに関する全体的なガバナンスと自動化の管理を含む、AEM Assets のすべての機能にアクセスする。</li>
+                <li>組織で使用可能な他のアドビ製品やアドビ以外のアプリケーションでの Assets の統合を通じて、Experience Manager のアセットを操作する。
                 </li>
-                <li>
-                また、アセットのバリエーションを作成する Adobe Express 権限も提供します。
-                </li>
+                <li>組み込みの Adobe Express と Firefly を使用して、プロフェッショナルがデザインしたテンプレート、ブランドキット、Adobe Stock アセットなどを活用し、アセットを作成および編集する。</li>
+                <li>AEM Assets コンテンツハブポータルを使用して、組織から承認済みアセットにアクセスし、活用する。</li>
           <ul>
 </td>
     </tr>
