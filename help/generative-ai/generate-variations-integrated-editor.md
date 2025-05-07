@@ -7,7 +7,7 @@ exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: 056ad9a00ad725d2c10a17a5feff06126eb3c30b
 workflow-type: tm+mt
 source-wordcount: '1372'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->このバージョンの使用をお勧めします。スタンドアロンバージョンの [ バリエーションを生成 ](/help/generative-ai/generate-variations.md) には引き続き直接アクセスできますが、今後非推奨となる予定です。
+>スタンドアロンバージョンの[「バリエーションを生成」は引き続き直接アクセスできます](/help/generative-ai/generate-variations.md)が、今後非推奨となる予定なので、このバージョンを使用することをお勧めします。
 
 これにより、以下のことが可能になります。
 
@@ -63,7 +63,7 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
 
 >[!NOTE]
 >
->AEMでのバリエーションの生成に関して詳しくは、[ セキュリティファクトシート ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf) を参照してください。
+>[AEM での「バリエーションを生成」について詳しくは、セキュリティファクトシート](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf)を参照してください。
 
 ## 概要 {#overview}
 
@@ -325,9 +325,9 @@ AEM Sidekick からのアクセスは、[ドキュメントベースのオーサ
 
 * [GitHub での生成 AI による「バリエーションを生成」](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services の実験](https://www.aem.live/docs/experimentation)
-* [Experience Cloud製品のジェネレーティブ AI](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/generative-ai)
+* [Experience Cloud製品のジェネレーティブ AI](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
-   * [Experience Cloud製品のジェネレーティブ AI - Adobe Experience Manager](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/generative-ai#aem)
+   * [Experience Cloud製品のジェネレーティブ AI - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
 
 ## リリース履歴 {#release-history}
 

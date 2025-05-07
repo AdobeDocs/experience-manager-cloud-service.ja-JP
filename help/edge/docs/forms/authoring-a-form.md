@@ -1,63 +1,63 @@
 ---
-title: AEMでのフォームの作成方法
-description: Adobe Experience Manager（AEM）で使用可能な様々なフォームオーサリングプラットフォームと、要件に基づいて適切なフォームオーサリングプラットフォームを選択する方法について説明します。
+title: AEM でのフォームの作成方法
+description: Adobe Experience Manager（AEM）で使用可能な様々なフォームオーサリングプラットフォームと、要件に基づいて適切なプラットフォームを選択する方法について説明します。
 feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: ec5d15d6ca0e4dc75d1f8abbbd6f794534d8bed7
+exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
+source-git-commit: a2f85b844aaff1642340250c5d8a755c80b9373d
 workflow-type: tm+mt
 source-wordcount: '1176'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
+# Adobe Experience Manager（AEM）でのフォームの作成方法
 
-# Adobe Experience Manager（AEM）でのFormsの作成方法
-
-Adobe Experience Manager（AEM）は、魅力的でレスポンシブ、かつ動的でアダプティブなフォームを作成するための柔軟なプラットフォームを提供します。 直感的なユーザーインターフェイスに加え、アダプティブ Formsを作成および管理するための豊富な既製のコンポーネント群が用意されています。 Formsは、要件に応じて、フォームモデルやスキーマを使用せずにオーサリングすることもできます。
+Adobe Experience Manager（AEM）では、魅力的でレスポンシブ、かつ動的でアダプティブなフォームを作成するための柔軟なプラットフォームを提供します。これには、直感的なユーザーインターフェイスと、アダプティブフォームを作成および管理するための豊富なセットの標準コンポーネントが用意されています。フォームは、必要に応じて、フォームモデルやスキーマの有無にかかわらず作成できます。
 
 ## オーサリングプラットフォームを選択する際の主な考慮事項
 
-AEMには、インタラクティブで魅力的なフォームを作成するための複数のフォームオーサリングオプションが用意されています。 フォームオーサリング環境を選択する際には、次の要因を考慮してください。
+AEM では、インタラクティブで魅力的なフォームを作成するための複数のフォームオーサリングオプションを提供します。フォームオーサリング環境を選択する際は、次の要因を考慮します。
 
-| ??**配慮等** | ??**質問** |
+| ?? **考慮事項** | ?? **質問事項** |
 |----------------------|--------------------|
-| **ユーザーの専門知識** | 開発者、ビジネスユーザー、コンテンツ作成者など、フォームの作成者は誰ですか？ |
-| **フォームの複雑さ** | フォームに高度なルール、動的セクションまたは統合が必要かどうか。 |
-| **再利用性の必要性** | フォームの一部が様々なフォームやプロジェクトで再利用されますか？ |
-| **柔軟な設計** | レイアウト、テーマ、スタイル設定を完全に制御する必要がありますか？ |
-| **統合要件** | フォームは、データモデル、ワークフロー、外部システムのいずれかに接続する必要がありますか？ |
-| **使いやすさ** | プラットフォームは、チームの技術スキルレベルに応じて直感的ですか？ |
-| **パフォーマンスと拡張性** | フォームは大規模または高トラフィック環境で使用されますか？ |
-| **オムニチャネル配信** | フォームは web サイト、モバイルアプリ、キオスク、または複数のチャネルで使用しますか？ |
-| **柔軟な公開** | フォームは、AEM、Edge Delivery、カスタムアプリのどこに公開されますか？ |
+| **ユーザーの専門知識** | フォームを作成するのは、開発者、ビジネスユーザー、コンテンツ作成者の誰ですか？ |
+| **フォームの複雑さ** | フォームには、高度なルール、動的セクションまたは統合が必要ですか？ |
+| **再利用性のニーズ** | フォームの一部は、異なるフォームやプロジェクト間で再利用されますか？ |
+| **デザインの柔軟性** | レイアウト、テーマ、スタイル設定を完全に制御する必要がありますか？ |
+| **統合要件** | フォームは、データモデル、ワークフローまたは外部システムに接続する必要がありますか？ |
+| **使いやすさ** | プラットフォームは、チームの技術スキルレベルに対して直感的ですか？ |
+| **パフォーマンスとスケーラビリティ** | フォームは、大規模な環境や高トラフィック環境で使用されますか？ |
+| **オムニチャネル配信** | フォームは、web サイト、モバイルアプリ、キオスクまたは複数のチャネルで使用されますか？ |
+| **公開の柔軟性** | フォームは、AEM、Edge Delivery またはカスタムアプリのどこに公開されますか？ |
 
-## AEMのフォームオーサリングメソッドの概要
+## AEM のフォームオーサリング方法の概要
 
-AEMでは、様々なユーザーのニーズ、技術的なスキルレベル、公開先に適した複数のオーサリング方法をサポートしています。
+AEM では、様々なユーザーのニーズ、技術スキルレベル、公開の宛先に適した複数のオーサリング方法をサポートしています。
 
-* [ 基盤コンポーネント ](/help/forms/create-adaptive-form-tutorial.md)：基盤コンポーネントを使用して、従来のインタラクティブなフォームを構築します。 レガシーシステムと統合するフォームや、長年のワークフローに依存するフォームに最適です。 基盤コンポーネントを使用して作成されたFormsは、AEMでのみ公開でき、Edge Delivery Servicesとは互換性がありません。
+* [基盤コンポーネント](/help/forms/create-adaptive-form-tutorial.md)：基盤コンポーネントを使用して、従来のインタラクティブなフォームを作成します。レガシーシステムと統合されるフォームや、長年確立されたワークフローに依存するフォームに最適です。基盤コンポーネントを使用して作成したフォームは、AEM でのみ公開でき、Edge Delivery Services とは互換性がありません。
 
-* [ コアコンポーネント ](/help/forms/creating-adaptive-form-core-components.md)：コアコンポーネントを使用して、レスポンシブで拡張性の高い最新のフォームを作成します。 再利用性、アクセシビリティ、パフォーマンスの向上をサポートします。 コアコンポーネントを使用して作成されたFormsは、AEMとEdge Delivery Servicesの両方で公開でき、プラットフォーム間の柔軟性を提供します。
+* [コアコンポーネント](/help/forms/creating-adaptive-form-core-components.md)：コアコンポーネントを使用して、最新でレスポンシブかつスケーラブルなフォームを作成します。再利用性、アクセシビリティ、パフォーマンスの向上をサポートします。コアコンポーネントを使用して作成したフォームは、AEM と Edge Delivery Services の両方で公開できるので、プラットフォーム間で柔軟性が得られます。
 
-* [Edge Delivery Services Forms](/help/edge/docs/forms/overview.md): Edge Delivery Services Formsは、フォームの作成、実行、処理の方法を変えます。 Edge Delivery Services を活用することで、組織は高速で安全な、可用性の高いデジタルフォームを作成し、高速開発環境でユーザーエクスペリエンスと運用効率を向上させることができます。Edge Delivery Services Formsは、次の 2 つの方法でオーサリングできます。
-   * [WYSIWYG オーサリング ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：技術的な知識が限られたコンテンツ作成者に最適な、ビジュアルでのドラッグ&amp;ドロップによるフォーム作成にユニバーサルエディターを使用します。 ユニバーサルエディターで作成されたFormsは、Edge Delivery Servicesを使用して配信されるので、高速で軽量なレンダリングが可能です。
-   * [ ドキュメントベースのオーサリング ](/help/edge/docs/forms/tutorial.md):Microsoft Excel やGoogle シートなどのツールを使用して、フォーム構造とコンテンツを定義します。 この方法は、スプレッドシート主導の入力を好むビジネスユーザーに役立ちます。 これらのフォームは、通常、Edge Delivery Servicesを通じて公開され、軽量で大量のユースケースに適しています。
-* [ ヘッドレスオーサリング ](https://experienceleague.adobe.com/ja/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service):API を使用して、AEMに依存せずに、任意のフロントエンド（React、Angular、モバイルアプリ、キオスクなど）のフォームを JSON としてレンダリングします。 現在、ヘッドレス配信をサポートしているのはコアコンポーネントのみです。 ヘッドレスフォームは、オムニチャネルのユースケースに最適で、AEMのページレンダリングとは独立して使用されるので、カスタムフロントエンドデプロイメントに対して柔軟です。
+* [Edge Delivery Services Forms](/help/edge/docs/forms/overview.md)：Adobe Edge Delivery Services Forms は、フォームの作成、実行、処理の方法を変革します。Edge Delivery Services を活用することで、組織は高速で安全な、可用性の高いデジタルフォームを作成し、高速開発環境でユーザーエクスペリエンスと運用効率を向上させることができます。Edge Delivery Services Forms は、次の 2 つの方法で作成できます。
+   * [WYSIWYG オーサリング](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：技術的な知識が限られているコンテンツ作成者に最適で、視覚的なドラッグ＆ドロップフォームの作成には、ユニバーサルエディターを使用します。ユニバーサルエディターで作成したフォームは、高速で軽量なレンダリングを実現する Edge Delivery Services を使用して配信します。
+   * [ドキュメントベースのオーサリング](/help/edge/docs/forms/tutorial.md)：フォームの構造とコンテンツを定義するには、Microsoft Excel や Google Sheets などのツールを使用します。この方法は、スプレッドシート主導の入力を行うビジネスユーザーに役立ちます。これらのフォームは通常、Edge Delivery Services を通じて公開され、軽量で大量のユースケースに適しています。
+* [ヘッドレスオーサリング](https://experienceleague.adobe.com/ja/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)：AEM に依存せずに、React、Angular、モバイルアプリ、キオスクなどの任意のフロントエンドのフォームを JSON としてレンダリングするには、API を使用します。現在、コアコンポーネントのみがヘッドレス配信をサポートしています。ヘッドレスフォームはオムニチャネルのユースケースに最適で、AEM のページレンダリングとは独立して使用されるので、カスタムフロントエンドのデプロイメントに柔軟に対応できます。
 
-### AEM フォームのオーサリングメソッドの比較分析
+### AEM フォームオーサリング方法の比較分析
 
-&#x200B;次の表は様々なAEM フォームのオーサリング方法を簡潔に比較し、アプローチ、機能、公開オプションおよび理想的なユースケースをハイライト表示して、ニーズに最も適した方法を選択する際に役立ちます。
+次の表は、様々な AEM フォームオーサリング方法の簡潔な比較を示し、ニーズに最も適した方法を選択する際に役立つ、アプローチ、機能、公開オプション、理想的なユースケースをハイライト表示しています。
 
-| **配慮等** | **基盤コンポーネント** | **コアコンポーネント** | **ユニバーサルエディター（WYSIWYG）** | **ドキュメントベースのオーサリング** | **ヘッドレスオーサリング** |
+| **考慮事項** | **基盤コンポーネント** | **コアコンポーネント** | **ユニバーサルエディター（WYSIWYG）** | **ドキュメントベースのオーサリング** | **ヘッドレスオーサリング** |
 |--------------------------|---------------------------------------------------------------------|------------------------------------------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| **次に最適** | AEM内での従来のフォームおよびワークフローの維持 | 複雑なワークフローと統合を備えた、スケーラブルで最新のフォーム | 複雑な要件を持つEdge Delivery サービスサイト向けフォームの作成 | 高度な送信サービスを使用しないクイックプロトタイプまたは基本フォーム | プラットフォーム（web、モバイル、キオスクなど）をまたいだオムニチャネルエクスペリエンス |
-| **ユーザーの専門知識** | 開発者、コンテンツ作成者 | 開発者、上級作成者 | ビジネスユーザー、コンテンツ作成者 | ビジネスユーザー | デベロッパー向け |
-| **フォームの複雑さ** | 基本フォーム | 動的セクションを含む複雑なフォーム | カスタムアクションを含む複雑なフォーム | 単純なフォーム | 非常に複雑な API 駆動型フォーム |
-| **柔軟な設計** | 限定的 | 高（CSS/JS のカスタマイズ） | 中程度（テンプレートに基づく） | 限定的 | 高（フロントエンドフレームワーク制御） |
-| **統合機能** | AEMの基本的なワークフロー | 詳細（データモデル、ワークフロー） | 外部システムとの統合 | 基本（Google シート、Excel） | API を介したフルコントロール |
-| **公開方法** | AEMのみ | AEM と Edge 配信サービス | Edge Delivery Services | Edge Delivery Services | API を介した任意のフロントエンド |
-| **パフォーマンスと SEO** | 標準 | 基盤コンポーネントよりも改善される | レンダリングの高速化と SEO の向上を実現する高いGoogle Lighthouse スコア | レンダリングの高速化と SEO の向上を実現する高いGoogle Lighthouse スコア | 実装に依存 |
-| **オムニチャネル配信** | 限定的 | モデレート | モデレート | 限定的 | 高 |
+| **次に最適** | AEM 内でのレガシーフォームとワークフローの維持 | 複雑なワークフローと統合を備えたスケーラブルな最新フォーム | 複雑な要件を持つ Edge Delivery Service サイト用のフォームの作成 | 迅速なプロトタイプ作成や、高度な送信サービスのない基本フォーム | プラットフォーム（web、モバイル、キオスクなど）をまたいだオムニチャネルエクスペリエンス |
+| **ユーザーの専門知識** | 開発者、コンテンツ作成者 | 開発者、高度な作成者 | ビジネスユーザー、コンテンツ作成者 | ビジネスユーザー | デベロッパー向け |
+| **フォームの複雑さ** | 基本フォーム | 動的セクションを備えた複雑なフォーム | カスタムアクションを備えた複雑なフォーム | シンプルなフォーム | 非常に複雑な API 駆動型フォーム |
+| **デザインの柔軟性** | 限定的 | 高（CSS／JS のカスタマイズ） | 中（テンプレートに基づく） | 限定的 | 高（フロントエンドフレームワークコントロール） |
+| **統合機能** | AEM の基本的なワークフロー | 高度（データモデル、ワークフロー） | 外部システムとの統合 | 基本（Google Sheets、Excel） | API を介した完全なコントロール |
+| **公開方法** | AEM のみ | AEM と Edge Delivery Services | Edge Delivery Services | Edge Delivery Services | API を介した任意のフロントエンド |
+| **パフォーマンスと SEO** | 標準 | 基盤コンポーネントの改善 | レンダリングの高速化と SEO の向上を実現する Google Lighthouse の高いスコア | レンダリングの高速化と SEO の向上を実現する Google Lighthouse の高いスコア | 実装に依存 |
+| **オムニチャネル配信** | 限定的 | 中 | 中 | 限定的 | 高 |
 
 <!--
 | **Form authoring methods** | **Key Approach** | **Features** | **Publishing Method** | **Use Cases** |
@@ -68,38 +68,38 @@ AEMでは、様々なユーザーのニーズ、技術的なスキルレベル�
 | **Document-based Authoring** | Uses familiar tools like Google Docs and Microsoft Office for form creation. | Forms are designed using spreadsheets, with data directly submitted to Google Sheets or Microsoft Excel. These forms are faster to create and deploy. No prior knowledge of AEM is required to develop custom components and styles for these forms. | Published on Edge Delivery Services, achieving high Google Lighthouse scores for faster rendering and better SEO. | Ideal for quick prototyping or basic forms where advanced submission services are not needed. Well-suited for surveys, registration, or feedback forms requiring data storage in spreadsheets. |
 | **Headless Authoring** | Enables API-driven content creation for omnichannel delivery. | Full control via frontend frameworks, allowing content delivery across various platforms through APIs. | Can be integrated with any frontend via APIs. | Ideal for omnichannel experiences across platforms, suitable for web, mobile, kiosks, and more. |-->
 
-### AEM フォームオーサリングメソッドの機能比較
+### AEM フォームオーサリング方法の機能比較
 
-次の表は、様々なAEM フォームオーサリング方法での主な機能の詳細な比較を示しており、要件に最も適したアプローチの選択に役立ち&#x200B;す。
+次の表は、様々な AEM フォームオーサリング方法の主な機能の詳細な比較を示し、要件に最も適したアプローチを選択するのに役立ちます。
 
 | **機能** | **基盤コンポーネント** | **コアコンポーネント** | **ユニバーサルエディター（WYSIWYG）** | **ドキュメントベースのオーサリング** | **ヘッドレスオーサリング** |
 |-----------------------------------------|---------------------------|---------------------|-------------------------------|-----------------------------|------------------------|
-| **Sites との統合コンポジション** | ❌ | ✅ | ✅ | ❌ | ❌ |
+| **Sites との統合構成** | ❌ | ✅ | ✅ | ❌ | ❌ |
 | **埋め込みフォームのサポート** | ✅ | ✅ | ✅ | ✅ | ✅ |
-| **ルール（動的動作）** | カスタム関数を備えた高度なルールエディター | カスタム関数を備えた高度なルールエディター | カスタム関数を備えた高度なルールエディター | 制限：表示/非表示、値を計算、カスタム関数 | 制限付き：カスタム実装が必要 |
-| **アタッチメント サポート** | ✅ | ✅ | ✅ | ℹ️（アーリーアクセス） | ❌ |
-| **CAPTCHA のサポート** | reCAPTCHA v2/エンタープライズ、hCaptcha （EA）、Turnstile （EA） | reCAPTCHA v2/Enterprise、hCaptcha （EA） | reCAPTCHA Enterprise | reCAPTCHA Enterprise | カスタム統合が必要 |
-| **送信機能** | REST エンドポイント、メール、フォームデータモデル（FDM）、AEM ワークフローの呼び出し、SharePoint、OneDrive、Azure Blob Storage、Power Automate、Workfront Fusion （EA） | REST エンドポイント、メール、フォームデータモデル（FDM）、AEM ワークフローの呼び出し、SharePoint、OneDrive、Azure Blob Storage、Power Automate、Workfront Fusion （EA） | REST エンドポイント、メール、フォームデータモデル（FDM）、AEM ワークフローの呼び出し、SharePoint、OneDrive、Azure Blob Storage、Power Automate、Workfront Fusion （EA） | スプレッドシートのみ | カスタム API エンドポイント |
+| **ルール（動的動作）** | カスタム関数を備えた高度なルールエディター | カスタム関数を備えた高度なルールエディター | カスタム関数を備えた高度なルールエディター | 限定的：表示／非表示、値を計算、カスタム関数 | 限定的：カスタム実装が必要 |
+| **添付ファイルのサポート** | ✅ | ✅ | ✅ | ℹ️（早期アクセス） | ❌ |
+| **CAPTCHA サポート** | reCAPTCHA v2／Enterprise、hCaptcha（EA）、Turnstile（EA） | reCAPTCHA v2／Enterprise、hCaptcha（EA） | reCAPTCHA Enterprise | reCAPTCHA Enterprise | カスタム統合が必要 |
+| **送信機能** | REST エンドポイント、メール、フォームデータモデル（FDM）、AEM ワークフローを呼び出し、SharePoint、OneDrive、Azure Blob Storage、Power Automate、Workfront Fusion（EA） | REST エンドポイント、メール、フォームデータモデル（FDM）、AEM ワークフローを呼び出し、SharePoint、OneDrive、Azure Blob Storage、Power Automate、Workfront Fusion（EA） | REST エンドポイント、メール、フォームデータモデル（FDM）、AEM ワークフローを呼び出し、SharePoint、OneDrive、Azure Blob Storage、Power Automate、Workfront Fusion（EA） | スプレッドシートのみ | カスタム API エンドポイント |
 | **データスキーマ** | FDM、カスタム | FDM、カスタム | FDM、カスタム | カスタム | カスタム |
-| **事前入力** | ✅ | ✅ | ??（ウィザードを使用） | ✅ | カスタム実装 |
+| **事前入力** | ✅ | ✅ | ??（ウィザード経由） | ✅ | カスタム実装 |
 | **フラグメント** | ✅ | ✅ | ✅ | ✅ | ❌ |
 | **ビジュアルルールエディター** | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **ローカライゼーション** | ✅ | ✅ | ??（サイト経由） | ℹ️ （Excel – 手動，Google Sheets 関数） | カスタム実装 |
-| **データスキーマ（データツリー）** | ✅ | ✅ | ??（UI 拡張機能を使用） | ❌ | カスタム実装 |
+| **ローカライゼーション** | ✅ | ✅ | ??（Sites 経由） | ℹ️（Excel - 手動、Google Sheets 関数） | カスタム実装 |
+| **データスキーマ（データツリー）** | ✅ | ✅ | ??（UI 拡張機能経由） | ❌ | カスタム実装 |
 | **テンプレートのサポート** | ✅ | ✅ | 初期コンテンツのみ、ポリシーなし | ❌ | カスタム実装 |
 | **ポータル** | ✅ | ✅ | ❌ | ❌ | ❌ |
-| **DoR オーサリング** | ✅ | ✅ | ??（Derlina より） | ❌ | ❌ |
+| **DoR オーサリング** | ✅ | ✅ | ??（Derlina 経由） | ❌ | ❌ |
 | **DoR の生成** | ✅ | ✅ | ??（FORMS-2475 新規） | ❌ | ❌ |
-| **テーマ** | ✅ | ✅ | ℹ️（プロジェクトレベル） | ℹ️（プロジェクトレベル） | カスタム実装 |
+| **テーマ** | ✅ | ✅ | ℹ️（プロジェクトレベルで） | ℹ️（プロジェクトレベルで） | カスタム実装 |
 | **カスタムコンポーネント** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **OOTB およびカスタム関数** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **フラグメント参照** | ✅ | ❌ | ❌ | ❌ | ❌ |
-| **Sign 統合** | ✅ | ❌ | ❌ | ❌ | ❌ |
+| **Sign との統合** | ✅ | ❌ | ❌ | ❌ | ❌ |
 | **RTL サポート** | ❌ | ✅ | ?? | ?? | カスタム実装 |
 | **実験** | ❌ | ❌ | ✅ | ✅ | カスタム実装 |
-| **Workfrontによるタスクの管理** | ❌ | ❌ | ✅ | ❌ | ❌ |
-| **Personalization拡張機能** | ❌ | ❌ | ?? | ❌ | カスタム実装 |
-| **エディターのカスタマイズ** | ❌ | ❌ | ✅（UI 拡張機能を使用） | ❌ | カスタム実装 |
+| **Workfront 経由でのタスク管理** | ❌ | ❌ | ✅ | ❌ | ❌ |
+| **パーソナライゼーション拡張機能** | ❌ | ❌ | ?? | ❌ | カスタム実装 |
+| **エディターのカスタマイズ** | ❌ | ❌ | ✅（UI 拡張機能経由） | ❌ | カスタム実装 |
 | **送信アクション** | ✅ | ✅ | ✅ | スプレッドシートのみ | カスタム実装 |
 
 
