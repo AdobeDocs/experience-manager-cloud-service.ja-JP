@@ -5,9 +5,9 @@ exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
 source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '284'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->バージョン 3.0.0 を使用することをお勧めします。以前のバージョンの [ バリエーションを生成 ](/help/generative-ai/generate-variations.md) には引き続き直接アクセスできますが、今後非推奨となる予定です。
+>以前のバージョンの[「バリエーションを生成」は引き続き直接アクセスできます](/help/generative-ai/generate-variations.md)が、今後非推奨となる予定なので、バージョン 3.0.0 を使用することをお勧めします。
 
 ### 2.2.0 {#release-notes-2-2-0}
 

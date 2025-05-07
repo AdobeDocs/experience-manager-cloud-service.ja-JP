@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '503'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 99%
 
 サンドボックスプログラムには、開発環境が 1 つだけあります。
 
-## 使用状況に関するメモと条件 {#usage-notes-conditions}
+## 使用上のメモと条件 {#usage-notes-conditions}
 
 サンドボックスプログラムはライブトラフィック向けのものではないので、使用に関して一定の制限事項と条件があります。これが、実稼動プログラムとの違いです。
 

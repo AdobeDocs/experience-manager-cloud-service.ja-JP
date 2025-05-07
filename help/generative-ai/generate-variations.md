@@ -5,9 +5,9 @@ exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
 source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3287'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->[AEM エディターに統合されたバリエーションを生成 ](/help/generative-ai/generate-variations-integrated-editor.md) にアクセスすることをお勧めします。このページで説明されているバージョンは、今後非推奨となる予定です。
+>このページで説明されているバージョンは今後非推奨となる予定なので、[AEM エディターに統合済みの「バリエーションを生成」](/help/generative-ai/generate-variations-integrated-editor.md)にアクセスすることをお勧めします。
 
 デジタルチャネルを最適化し、コンテンツ作成を高速化する方法を探している場合は、「バリエーションを生成」を使用できます。「バリエーションを生成」では、生成 AI（人工知能）を使用して、プロンプトに基づいてコンテンツのバリエーションを作成します。これらのプロンプトは、アドビが提供するか、ユーザーが作成および管理します。バリエーションを作成したら、そのコンテンツを web サイトで使用することや、[Edge Delivery Services](/help/edge/overview.md) の[実験](https://www.aem.live/docs/experimentation)機能を使用してその成功を測定することもできます。
 

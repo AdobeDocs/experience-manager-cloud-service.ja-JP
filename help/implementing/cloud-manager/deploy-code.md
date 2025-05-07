@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1185'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -134,7 +134,7 @@ AEM サイト訪問者への影響を最小限に抑えるために、実稼動�
 >
 >再実行の場合、ビルドステップには UI でラベルが付けられて、アーティファクトを再ビルドではなくコピーしていることが示されます。
 
-### 使用上の注意 {#usage-notes}
+### 使用上のメモ {#usage-notes}
 
 * 実稼動デプロイメントステップの再実行は、最後の実行に対してのみ使用できます。
 * プッシュ更新の実行に対しては、再実行を使用できません。最後の実行がプッシュ更新実行の場合、再実行はできません。

@@ -1,5 +1,5 @@
 ---
-description: '**メモ**:Adobe Sharepoint （&lt;https://adobe.sharepoint.com&gt;）を使用しているプロジェクトの場合は、こちらをクリックしてください。'
+description: '''**メモ**：アドビの SharePoint（&lt;https://adobe.sharepoint.com&gt;）を使用するプロジェクトの場合は、こちらから続けてください。'
 title: Sharepoint の使用方法
 feature: Edge Delivery Services
 exl-id: c0feb7bc-5418-4f93-bcfc-072cfe2e97bd
@@ -8,9 +8,9 @@ index: false
 hide: true
 hidefromtoc: true
 source-git-commit: 1e69fd3abf8dad01886007bc16b2ed0d0df0777c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '20'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 

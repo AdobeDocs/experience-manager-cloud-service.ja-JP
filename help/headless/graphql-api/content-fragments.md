@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
 source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5993'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1181,7 +1181,7 @@ query allTeams {
 * 参照されているアセットをリモートリポジトリから削除すると、コンテンツフラグメントアセットの参照が破損します。
 * ユーザーがアクセス権を持つすべての配信アセットリポジトリが選択可能になりますが、使用可能なリストは制限できません。
 * AEM インスタンスとリモートアセットリポジトリインスタンスは、両方とも同じバージョンにする必要があります。
-* [Management Sites API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) および [OpenAPI を使用したAEM コンテンツフラグメント配信 ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/) 経由で公開されるアセットメタデータはありません。 アセットメタデータの詳細を取得するには、Asset Metadata API を使用する必要があります。
+* アセットメタデータは、[Management Sites API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) および [OpenAPI を備えた AEM コンテンツフラグメント配信](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/)経由では公開されません。アセットメタデータの詳細を取得するには、Asset Metadata API を使用する必要があります。
 
 ## AEM 用の GraphQL - 拡張機能の概要 {#graphql-extensions}
 

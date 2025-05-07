@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
 source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3957'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -241,8 +241,8 @@ AEM Forms を Microsoft® Sharepoint ドキュメントライブラリストレ�
 
 >[!NOTE]
 >
-> 添付ファイルも `/folder_name/form_name/year/month/date/submission_id/data` ディレクトリに保存されます。 ただし、「**添付ファイルを元の名前で保存**」を選択すると、添付ファイルは元のファイル名でフォルダーに保存されます。
-> ![画像 ](/help/forms/assets/sp-doc-attachment-af1.png){height=50%,width=50%}
+> 添付ファイルは、`/folder_name/form_name/year/month/date/submission_id/data` ディレクトリにも保存されます。ただし、「**添付ファイルを元の名前で保存**」を選択した場合、添付ファイルは元のファイル名を使用してフォルダーに保存されます。
+> ![画像](/help/forms/assets/sp-doc-attachment-af1.png){height=50%,width=50%}
 
 ### アダプティブフォームを Microsoft® SharePoint リストに接続 {#connect-af-sharepoint-list}
 

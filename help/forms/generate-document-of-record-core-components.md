@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
 source-git-commit: 2637adfbac0e266abe5a023b9253e7e702884709
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3152'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 99%
 * [AcroForm（Acrobat フォーム PDF）に基づくレコードのドキュメントの生成](#generate-an-Acroform-based-document-of-record)
 * [レコードのドキュメントの自動生成](#auto-generate-a-document-of-record)
 
-## 事前準備 {#components-to-automatically-generate-a-document-of-record}
+## 開始する前に {#components-to-automatically-generate-a-document-of-record}
 
 本題に入る前に、レコードのドキュメントに必要な次のアセットを理解し準備します。
 
@@ -105,7 +105,7 @@ In the following video, Adaptive Form components are bound with corresponding Ac
 
 >[!NOTE]
 >
-> **[!UICONTROL レコードのドキュメントバインド参照フィールド]** プロパティを使用すると、任意のフォームデータモデルのレコードのドキュメントを保存できます。
+> **[!UICONTROL レコードのドキュメントのバインド参照フィールド]**&#x200B;プロパティを使用すると、任意のフォームデータモデルのレコードのドキュメントを保存できます。
 
 ## レコードのドキュメントテンプレートの増分更新 {#document-of-record-template-incremental-updates}
 

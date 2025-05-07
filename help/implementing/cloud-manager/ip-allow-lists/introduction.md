@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '515'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ IP 許可リストを追加すれば、環境内のオーサーサービスと�
 >
 >IP 許可リストが適用されない場合、デフォルトでは、すべての IP アドレスが許可されます。IP 許可リストが適用されると、IP 許可リストに記載されている IP アドレス以外は禁止されます。
 
-## 使用上の注意 {#usage-notes}
+## 使用上のメモ {#usage-notes}
 
 * プログラムに追加できる IP 許可リストは最大 50 個です。
 * 各 IP 許可リストに追加できる IP／CIDR アドレスは最大 50 個です。
@@ -78,12 +78,12 @@ IP 許可リストを追加すれば、環境内のオーサーサービスと�
 
 詳しくは、[IP 許可リストを適用](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)および[フロントエンドパイプラインを有効にする](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)を参照してください。
 
-### ユニバーサルエディターと IP の許可リスト {#universal-editor}
+### ユニバーサルエディターと IP 許可リスト {#universal-editor}
 
 ユニバーサルエディターを使用してコンテンツを作成する場合は、ユニバーサルエディターサービスが使用する IP アドレスを許可リストに追加して適用する必要があります。
 
-1. ユニバーサルエディターサービスで使用される IP アドレスを、次の API エンドポイントから取得します：`http://universal-editor-service.adobe.io/ip-ranges`。
-1. これらの IP アドレスを使用して許可リストを作成し、名前を `Universal Editor Service` 等に設定します。
+1. `http://universal-editor-service.adobe.io/ip-ranges` の API エンドポイントから、ユニバーサルエディターサービスで使用される IP アドレスを取得します。
+1. これらの IP アドレスを含む許可リストを作成し、`Universal Editor Service` などの名前を付けます。
 1. `Universal Editor Service` 許可リストを適用します。
 
-ユニバーサルエディターサービスで使用される IP アドレスのリストは変更される場合があり、それに応じて許可リストを更新する必要があります。
+ユニバーサルエディターサービスで使用される IP アドレスのリストは変更される可能性があり、それに応じて許可リストを更新する必要があります。

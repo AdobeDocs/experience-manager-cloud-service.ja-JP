@@ -3,7 +3,7 @@ title: コンテンツハブ向けアセットの承認
 description: Assets as a Cloud Service でアセットを承認して、コンテンツハブで使用できるようにする方法について説明します。
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
 source-git-commit: ba73cc52c337d16a2cd33438eb568adcabd492dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1276'
 ht-degree: 100%
 
@@ -60,7 +60,7 @@ ht-degree: 100%
 
 AEM Assets as a Cloud Service を使用してアセットを承認すると、アセット管理が効率化され、アセットを処理するための制御された効率的なプロセスが確保されます。
 
-## 始める前に {#pre-requisites}
+## 開始する前に {#pre-requisites}
 
 開始する前に、次のものが必要です。
 

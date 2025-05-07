@@ -6,9 +6,9 @@ feature: Configuration,Dynamic Media
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 source-git-commit: 2ca425f9a142432a5d3bcce8ce522c97e4c2cf2d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3721'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -18,17 +18,17 @@ ht-degree: 86%
 
 開発、ステージング、実稼動など、様々な環境で Adobe Experience Manager as a Cloud Service を使用する場合は、環境ごとに Dynamic Media Cloud Services を設定します。
 
-[Dynamic Media の会社エイリアスアカウントの設定 ](/help/assets/dynamic-media/dm-alias-account.md) も参照してください。
+[Dynamic Media の会社エイリアスアカウントの設定](/help/assets/dynamic-media/dm-alias-account.md)も参照してください
 
 >[!IMPORTANT]
 >
->**Dynamic Media （Scene7）はセキュリティの強化環境ではサポートされていません**
+>**Dynamic Media（Scene7）はセキュリティの強化環境ではサポートされません**
 >
->AEM as a Cloud Service上の Dynamic Media （Scene7）は HIPAA に対応しておらず、セキュリティの強化が有効になっているAEM環境では使用できません。
+>AEM as a Cloud Service 上の Dynamic Media （Scene7）は HIPAA に対応していないので、セキュリティの強化が有効になっている AEM 環境では使用できません。
 >
->2025 年 4 月のAEM as a Cloud Service リリース以降、セキュリティが強化された環境では、技術的な制限により、Dynamic Media （Scene7）を設定できなくなります。 その結果、これらの環境では **ツール**/**クラウドサービス** の下の **Dynamic Media 設定** カードが表示されなくなります。
+>2025年4月の AEM as a Cloud Service リリース以降、技術的な制限により、セキュリティの強化環境では Dynamic Media（Scene7）を設定できなくなります。その結果、これらの環境では、**ツール**／**Cloud Services** の **Dynamic Media 設定**&#x200B;カードが表示されなくなります。
 >
->さらに、AEM 6.5 を使用しているお客様は、Dynamic Media （Scene7）スタックが HIPAA に対応していないことに注意してください。
+>さらに、AEM 6.5 を使用しているお客様は、Dynamic Media（Scene7）スタックが HIPAA に対応していないことに注意する必要があります。
 
 ## Dynamic Media のアーキテクチャ図 {#architecture-diagram-of-dynamic-media}
 
@@ -75,7 +75,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ## Cloud Services での Dynamic Media 設定の作成 {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. Experience Manager as a Cloud Service で、Experience Manager as a Cloud Service ロゴを選択し、グローバルナビゲーションコンソールにアクセスします。
 1. コンソールの左側にあるツールアイコンを選択したあと、**[!UICONTROL Cloud Services／Dynamic Media 設定]**&#x200B;に移動します。
@@ -105,11 +105,11 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | Property | 説明 |
    |---|---|
-   | 会社情報 | Dynamic Media アカウントの名前です。<br>**重要**：Experience Manager の 1 つのインスタンスでサポートされる、Cloud Services の Dynamic Media 設定は 1 つだけです。複数の設定を追加しないでください。 Adobeは、1 つのExperience Manager インスタンスで複数の Dynamic Media 設定をサポートしたり、設定することを *推奨しません*。<!-- CQDOC-19579 and CQDOC-19612 --><br>[Dynamic Media の会社エイリアスアカウントの設定 ](/help/assets/dynamic-media/dm-alias-account.md) も参照してください。 |
+   | 会社情報 | Dynamic Media アカウントの名前です。<br>**重要**：Experience Manager の 1 つのインスタンスでサポートされる、Cloud Services の Dynamic Media 設定は 1 つだけです。複数の設定を追加しないでください。 アドビでは、単一の Experience Manager インスタンスで複数の Dynamic Media 設定を指定することをサポートまたは推奨して&#x200B;*いません*。<!-- CQDOC-19579 and CQDOC-19612 --><br>[Dynamic Media の会社エイリアスアカウントの設定](/help/assets/dynamic-media/dm-alias-account.md)も参照してください。 |
    | 会社のルートフォルダーのパス | 会社のルートフォルダーパスです。 |
-   | アセットの公開 | 次の 3 つのオプションから選択できます。<br>**[!UICONTROL 即時&#x200B;]**：アセットがアップロードされると、システムによってアセットが取り込まれ、URL／埋め込みがすぐに提供されます。アセットを公開するためにユーザーが操作する必要はありません。<br>**[!UICONTROL アクティベーション時]**：URL／埋め込みリンクの提供の前に、最初にアセットを明示的に公開する必要があります。<br>**[!UICONTROL 選択的公開&#x200B;]**：アセットは、セキュリティで保護されたプレビューのみを目的として自動公開されます。また、パブリックドメインでの配信用に DMS7 に公開することなく、Experience Manager as a Cloud Service に明示的に公開することもできます。将来的には、このオプションでアセットを相互排他的に Experience Manager as a Cloud Service に公開したり、Dynamic Media に公開したりするようになります。つまり、アセットを DMS7 に公開して、スマート切り抜きや動的レンディションなどの機能を使用できます。または、Experience Manager as a Cloud Serviceでのみプレビュー用にアセットを公開できます。 これらの同じアセットは、パブリックドメインで配信するために DMS7 で公開されません。 |
-   | プレビューサーバーを保護 | これにより、セキュアなレンディションプレビューサーバーへの URL パスを指定できます。 つまり、レンディションが生成されると、AEM as a Cloud Serviceは、リモート Dynamic Media レンディションに安全にアクセスしてプレビューできます（バイナリがExperience Manager as a Cloud Service インスタンスに送り返されることはありません）。<br>自社のサーバーまたは特別なサーバーを使用する特別な取り決めがない限り、アドビでは、この設定を指定されたとおりにしておくことをお勧めします。 |
-   | すべてのコンテンツを同期 | デフォルトで選択されています。Dynamic Media との同期にアセットを選択的に含めたり除外したりする場合は、このオプションの選択を解除します。 このオプションの選択を解除すると、次の 2 つの Dynamic Media 同期モードから選択できます。<br>**[!UICONTROL Dynamic Media 同期モード &#x200B;]**<br>**[!UICONTROL &#x200B; デフォルトで有効 &#x200B;]**- フォルダーを特別に除外するようにマークしない限り、設定はすべてのフォルダーにデフォルトで適用されます。 <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL デフォルトで無効]** - 選択したフォルダーを Dynamic Media と同期するように明示的にマークしない限り、設定はどのフォルダーにも適用されません。<br>選択したフォルダーを Dynamic Media と同期するようにマークするには、アセットフォルダーを選択した後、ツールバーで「**[!UICONTROL プロパティ]**」を選択します。「**[!UICONTROL 詳細]**」タブの **[!UICONTROL Dynamic Media 同期モード]**&#x200B;ドロップダウンリストで、次の 3 つのオプションから選択します。完了したら、「**[!UICONTROL 保存]**」を選択します。_注意：以前に「**すべてのコンテンツを同期**」を選択した場合、これら 3 つのオプションは使用できません。_[Dynamic Media のフォルダーレベルでの選択的公開の設定](/help/assets/dynamic-media/selective-publishing.md)も参照してください。<br>**[!UICONTROL 継承&#x200B;]**- フォルダーに明示的な同期値はなく、代わりに、上位フォルダーの 1 つまたはクラウド設定のデフォルトモードから同期値を継承します。継承された詳細なステータスは、ツールチップで表示されます。<br>**[!UICONTROL サブフォルダーで有効にする]** - このサブツリー内のすべての項目を Dynamic Media との同期に含めます。フォルダー固有の設定は、クラウド設定内のデフォルトモードよりも優先されます。<br>**[!UICONTROL サブフォルダーで無効にする&#x200B;]**- このサブツリー内のすべての項目を Dynamic Media との同期から除外します。 |
+   | アセットの公開 | 次の 3 つのオプションから選択できます。<br>**[!UICONTROL 即時&#x200B;]**：アセットがアップロードされると、システムによってアセットが取り込まれ、URL／埋め込みがすぐに提供されます。アセットを公開するためにユーザーが操作する必要はありません。<br>**[!UICONTROL アクティベーション時]**：URL／埋め込みリンクの提供の前に、最初にアセットを明示的に公開する必要があります。<br>**[!UICONTROL 選択的公開&#x200B;]**：アセットは、セキュリティで保護されたプレビューのみを目的として自動公開されます。また、パブリックドメインでの配信用に DMS7 に公開することなく、Experience Manager as a Cloud Service に明示的に公開することもできます。将来的には、このオプションでアセットを相互排他的に Experience Manager as a Cloud Service に公開したり、Dynamic Media に公開したりするようになります。つまり、アセットを DMS7 に公開して、スマート切り抜きや動的レンディションなどの機能を使用できます。または、プレビュー用にアセットを Experience Manager as a Cloud Service でのみ公開することもできます。これらの同じアセットは、パブリックドメインで配信するために DMS7 で公開されません。 |
+   | セキュアプレビューサーバー | セキュアなレンディションプレビューサーバーへの URL パスを指定できます。つまり、レンディションが生成されると、AEM as a Cloud Service は、リモート Dynamic Media レンディションに安全にアクセスしてプレビューできます（バイナリが Experience Manager as a Cloud Service インスタンスに送り返されることはありません）。<br>自社のサーバーまたは特別なサーバーを使用する特別な取り決めがない限り、アドビでは、この設定を指定されたとおりにしておくことをお勧めします。 |
+   | すべてのコンテンツを同期 | デフォルトで選択されています。Dynamic Media との同期で、選択したアセットを含めるまたは除外する場合は、このオプションを選択解除します。このオプションの選択を解除すると、次の 2 つの Dynamic Media 同期モードから選択できます。<br>**[!UICONTROL Dynamic Media 同期モード]**<br>**[!UICONTROL デフォルトで有効&#x200B;]**- フォルダーを除外対象として特別にマークしない限り、設定はデフォルトですべてのフォルダーに適用されます。<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL デフォルトで無効]** - 選択したフォルダーを Dynamic Media と同期するように明示的にマークしない限り、設定はどのフォルダーにも適用されません。<br>選択したフォルダーを Dynamic Media と同期するようにマークするには、アセットフォルダーを選択した後、ツールバーで「**[!UICONTROL プロパティ]**」を選択します。「**[!UICONTROL 詳細]**」タブの **[!UICONTROL Dynamic Media 同期モード]**&#x200B;ドロップダウンリストで、次の 3 つのオプションから選択します。完了したら、「**[!UICONTROL 保存]**」を選択します。_注意：以前に「**すべてのコンテンツを同期**」を選択した場合、これら 3 つのオプションは使用できません。_[Dynamic Media のフォルダーレベルでの選択的公開の設定](/help/assets/dynamic-media/selective-publishing.md)も参照してください。<br>**[!UICONTROL 継承&#x200B;]**- フォルダーに明示的な同期値はなく、代わりに、上位フォルダーの 1 つまたはクラウド設定のデフォルトモードから同期値を継承します。継承された詳細なステータスは、ツールチップで表示されます。<br>**[!UICONTROL サブフォルダーで有効にする]** - このサブツリー内のすべての項目を Dynamic Media との同期に含めます。フォルダー固有の設定は、クラウド設定内のデフォルトモードよりも優先されます。<br>**[!UICONTROL サブフォルダーで無効にする&#x200B;]**- このサブツリー内のすべての項目を Dynamic Media との同期から除外します。 |
 
    >[!NOTE]
    >
@@ -130,10 +130,10 @@ To migrate any custom viewer presets and configurations that you have created fr
    >このインボックス通知は、設定が成功したかどうかを知らせるものです。
    > 詳しくは、[新しい Dynamic Media 設定のトラブルシューティング](#troubleshoot-dm-config)と[インボックス](/help/sites-cloud/authoring/inbox.md)を参照してください。
 
-1. 公開前に Dynamic Media コンテンツを安全にプレビューするには、Experience Manager as a Cloud Serviceではトークンベースの検証が使用されるので、Experience Manager オーサーは、Dynamic Media コンテンツをデフォルトでプレビューできます。 ただし、IP を増やして *0&rbrace;許可リスト&rbrace; ユーザーがコンテンツを安全にプレビューできるようにすることができます。* Experience Manager as a Cloud Serviceでこのアクションを設定するには、[Image Server 用 Dynamic Media 公開設定 – 「セキュリティ」タブ ](/help/assets/dynamic-media/dm-publish-settings.md#security-tab) を参照してください。<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. 公開前に Dynamic Media コンテンツを安全にプレビューするには、Experience Manager as a Cloud Service はトークンベースの検証を使用しているので、Experience Manager オーサーで Dynamic Media コンテンツをデフォルトでプレビューできます。IP を&#x200B;*許可リスト*&#x200B;に登録することで、ユーザーはコンテンツを安全にプレビューできるようになります。このアクションを Experience Manager as a Cloud Service で設定するには、[Image Server 用 Dynamic Media 公開設定 -「セキュリティ」タブ](/help/assets/dynamic-media/dm-publish-settings.md#security-tab)を参照してください。<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
 <!--
-    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
+    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
     * On the navigation bar near the upper right corner of the page, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
     * On the Image Server Publish page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
     * For the Client Address Filter, select **[!UICONTROL Add]**.
@@ -142,7 +142,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 これで基本設定は完了です。Dynamic Media を使用する準備が整いました。
 
-ACL （アクセス制御リスト）権限など、さらに設定をカスタマイズする場合は、[Dynamic Media の詳細設定 ](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode) で示す任意のタスクを実行できます。
+ACL（アクセス制御リスト）権限など、さらに設定をカスタマイズする場合は、[Dynamic Media の詳細設定](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)で示す任意のタスクを実行できます。
 
 ### 新しい Dynamic Media 設定のトラブルシューティング {#troubleshoot-dm-config}
 
@@ -198,7 +198,7 @@ Dynamic Media でのパスワードの有効期限は、現在のシステム日
 
 ## （オプション）Dynamic Media での詳細設定{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-Dynamic Media のセットアップと設定をさらにカスタマイズしたり、パフォーマンスを最適化したりする場合は、次の _オプション_ タスクを 1 つまたは複数実行できます。
+Dynamic Media のセットアップと設定をさらにカスタマイズしたり、パフォーマンスを最適化したりするには、次の&#x200B;_オプション_&#x200B;タスクを 1 つまたは複数実行できます。
 
 * [（オプション）Dynamic Media での ACL 権限の有効化](#optional-enable-acl)
 * [（オプション）Dynamic Media 設定のセットアップと設定](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
@@ -244,7 +244,7 @@ When you run Dynamic Media on AEM as a Cloud Service, it currently forwards `/is
 
 Dynamic Media Classic のユーザーインターフェイスを使用し、Dynamic Media の設定を変更します。
 
-<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started), then sign in to your account. -->
+<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. -->
 
 セットアップおよび設定タスクには、次のものが含まれます。
 
@@ -302,7 +302,7 @@ Dynamic Media カラーマネジメントを使用すると、アセットをカ
 
 #### サポートされている形式の MIME タイプの編集 {#editing-mime-types-for-supported-formats}
 
-Dynamic Media が処理するアセットタイプを指定し、高度なアセット処理パラメーターをカスタマイズできます。 例えば、アセット処理パラメーターを指定して次のことができます。
+Dynamic Media が処理するアセットタイプを指定し、高度なアセット処理パラメーターをカスタマイズできます。例えば、アセット処理パラメーターを指定して次のことができます。
 
 * Adobe PDF を eCatalog アセットに変換する。
 * Adobe Photoshop ドキュメント（.PSD）をパーソナライズ用のバナーテンプレートアセットに変換する。
@@ -339,7 +339,7 @@ Dynamic Media が処理するアセットタイプを指定し、高度なアセ
 
 #### サポートされていない形式の MIME タイプの追加 {#adding-mime-types-for-unsupported-formats}
 
-Experience Manager Assets でサポートされていない形式のカスタム MIME タイプを追加できます。CRXDE Liteに新しく追加したノードがExperience Managerによって削除されないようにするには、MIME タイプを `image_` の前に移動します。 また、有効な値が **[!UICONTROL false]** に設定されていることを確認します。
+Experience Manager Assets でサポートされていない形式のカスタム MIME タイプを追加できます。CRXDE Lite に追加した新しいノードが Experience Manager によって削除されないようにするには、MIME タイプを `image_` の前に移動します。また、有効な値が **[!UICONTROL false]** に設定されていることを確認します。
 
 **サポートされていない形式のカスタム MIME タイプを追加するには:**
 
@@ -352,7 +352,7 @@ Experience Manager Assets でサポートされていない形式のカスタム
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
-1. ページで、下にスクロールして、名前 *Adobe CQ Scene7 asset MIME type Service* を表示します（次のスクリーンショットを参照）。 名前の右側にある&#x200B;**[!UICONTROL 設定値を編集]**（鉛筆アイコン）を選択します。
+1. ページ上で、*Adobe CQ Scene7 asset MIME type Service* という名前まで下にスクロールします。次のスクリーンショットを参照してください。名前の右側にある&#x200B;**[!UICONTROL 設定値を編集]**（鉛筆アイコン）を選択します。
 
    ![設定値を編集](assets/2019-08-02_16-44-56.png)
 
@@ -394,7 +394,7 @@ Experience Manager Assets でサポートされていない形式のカスタム
 
 ### （オプション）Dynamic Media のパフォーマンスの調整 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-Dynamic Media のスムーズな実行を維持するために、Adobeでは、次の同期パフォーマンス/拡張性の微調整のヒントをお勧めします。
+Dynamic Media のスムーズな実行を維持するために、アドビでは、以下の同期パフォーマンス／スケーラビリティの微調整のヒントをお勧めします。
 
 * [様々なファイル形式の処理に対応する定義済みジョブパラメーターの更新](#update-job-para)。
 * [事前定義済みの Granite のワークフローキュー（ビデオアセット）ワーカースレッドの更新](#update-granite-workflow-queue-worker-threads-video)
@@ -425,7 +425,7 @@ PDF ファイル、PostScript® ファイル、PSD ファイルには、以下�
 
 #### 事前定義済みの Granite のワークフローキュー（ビデオアセット）ワーカースレッドの更新 {#update-granite-workflow-queue-worker-threads-video}
 
-Granite のワークフローキューは、一時的でないワークフローに使用されます。Dynamic Media では、「Dynamic Media エンコーディングビデオ **[!UICONTROL ワークフローでビデオを処理するために使用さ]** ます。
+Granite のワークフローキューは、一時的でないワークフローに使用されます。Dynamic Media では、**[!UICONTROL Dynamic Media エンコーディングビデオ]**&#x200B;ワークフローでビデオを処理するために使用されます。
 
 >[!NOTE]
 >
@@ -470,7 +470,7 @@ Granite の一時的なワークフローキューは、**[!UICONTROL DAM アセ
 
 1. 「**[!UICONTROL 並列ジョブの最大数]**」フィールドで、目的の値に数値を変更します。
 
-   **[!UICONTROL 並列ジョブの最大数]** を増やすと、Dynamic Media へのファイルの大量アップロードを適切にサポートできます。 正確な値は、ハードウェアの容量に依存します。初回移行や 1 回限りのバルクアップロードなど、特定のシナリオでは、大きな値を使用できます。ただし、大きな値（コア数の 2 倍など）を使用すると、他の同時アクティビティに悪影響を及ぼす可能性があることに注意してください。そのため、特定事例で値をテストして整する必要があります。
+   **[!UICONTROL 並列ジョブの最大数]**&#x200B;を増やすと、Dynamic Media へのファイルの大量アップロードを適切にサポートできます。正確な値は、ハードウェアの容量に依存します。初回移行や 1 回限りのバルクアップロードなど、特定のシナリオでは、大きな値を使用できます。ただし、大きな値（コア数の 2 倍など）を使用すると、他の同時アクティビティに悪影響を及ぼす可能性があることに注意してください。そのため、特定事例で値をテストして整する必要があります。
 
 <!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
@@ -495,7 +495,7 @@ Dynamic Media Classic（Scene7）アップロード接続の設定では、Exper
 
    「**[!UICONTROL 接続数]**」設定は、Experience Manager が Dynamic Media へのアップロードに使用できる HTTP 接続の最大数を制御します。通常は、事前定義の 10 個で十分です。
 
-   **[!UICONTROL アクティブなジョブのタイムアウト]** 設定は、配信サーバーがアップロードされた Dynamic Media アセットを公開するまでシステムが待つ時間を定義します。 デフォルトでは、この値は 2100 秒または 35 分です。
+   **[!UICONTROL ジョブのタイムアウトをアクティブ化]**&#x200B;設定では、アップロードした Dynamic Media アセットが配信サーバーで公開されるまでの待機時間を定義します。デフォルトでは、この値は 2100 秒または 35 分です。
 
    ほとんどの事例では、2100 の設定で十分です。
 

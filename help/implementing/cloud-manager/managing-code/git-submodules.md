@@ -5,9 +5,9 @@ exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '391'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 Git サブモジュールについて詳しくは、[Git リファレンスマニュアル](https://git-scm.com/book/ja/v2/Git-Tools-Submodules)も参照してください。
 
-## 使用上の注意 {#usage-notes}
+## 使用上のメモ {#usage-notes}
 
 * Git の URL は、前述の節で説明した構文に正確に一致している必要があります。
 * 分岐のルートにあるサブモジュールのみがサポートされます。
@@ -90,7 +90,7 @@ Git サブモジュールについて詳しくは、[Git リファレンスマ�
 
 ![集積](assets/aggregator.png)
 
-### 使用上の注意 {#usage-notes-recommendations-private-repos}
+### 使用上のメモ {#usage-notes-recommendations-private-repos}
 
 * サブモジュール Git の URL は、HTTPS 形式または SSH 形式にすることができますが、GitHub.com リポジトリを指す必要があります。Adobe リポジトリサブモジュールを GitHub 集積リポジトリに追加すること、またはその逆はサポートされていません。
 * GitHub サブモジュールには、Adobe GitHub アプリからアクセスできる必要があります。

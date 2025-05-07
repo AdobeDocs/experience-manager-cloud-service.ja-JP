@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
 source-git-commit: 9e0217a4cbbbca1816b47f74a9f327add3a8882d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1493'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -157,16 +157,16 @@ data:
 | 名前 | プロパティ | 意味 |
 |-----------|--------------------------|-------------|
 | **set** | reqProperty、値 | 指定されたリクエストパラメーターを設定します（「path」プロパティのみサポートされています） |
-|     | reqHeader、値 | 指定されたリクエストヘッダーを指定された値に設定します。 |
+|     | reqHeader、値 | 指定されたリクエストヘッダーを特定の値に設定します。 |
 |     | queryParam、値 | 指定されたクエリパラメーターを特定の値に設定します。 |
-|     | reqCookie、値 | 指定されたリクエスト cookie を指定された値に設定します。 |
-|     | logProperty、値#logProperty ツイカ# | 指定された CDN ログプロパティに指定された値を設定します。 |
+|     | reqCookie、値 | 指定されたリクエスト cookie を特定の値に設定します。 |
+|     | logProperty、値 | 指定された CDN ログプロパティを特定の値に設定します。 |
 |     | var、値 | 指定された変数を特定の値に設定します。 |
-| **unset** | reqProperty | 指定されたリクエストパラメーターを削除します（「path」プロパティのみがサポートされています） |
+| **unset** | reqProperty | 指定されたリクエストパラメーターを削除します（「path」プロパティのみサポートされています） |
 |     | reqHeader、値 | 指定されたリクエストヘッダーを削除します。 |
 |     | queryParam、値 | 指定されたクエリパラメーターを削除します。 |
-|     | reqCookie、値 | 指定した cookie を削除します。 |
-|     | logProperty、値#logProperty ツイカ# | 指定された CDN ログプロパティを削除します。 |
+|     | reqCookie、値 | 指定された cookie を削除します。 |
+|     | logProperty、値 | 指定された CDN ログプロパティを削除します。 |
 |     | var | 指定した変数を削除します。 |
 |     | queryParamMatch | 指定した正規表現に一致するすべてのクエリパラメーターを削除します。 |
 |     | queryParamDoesNotMatch | 指定した正規表現に一致しないすべてのクエリパラメーターを削除します。 |
@@ -304,7 +304,7 @@ responseTransformations:
 
 ## 応答変換 {#response-transformations}
 
-応答変換ルールを使用すると、CDN の送信応答のヘッダー、Cookie およびステータスを設定および設定解除できます。 また、リクエスト変換ルールで以前に設定された変数を参照するには、上記の例を参照してください。
+応答変換ルールを使用すると、CDN の送信応答のヘッダー、Cookie、ステータスを設定および設定解除できます。また、リクエスト変換ルールで以前に設定された変数を参照するには、上記の例を参照してください。
 
 設定例：
 
@@ -377,13 +377,13 @@ data:
 | 名前 | プロパティ | 意味 |
 |-----------|--------------------------|-------------|
 | **set** | respProperty、値 | 応答プロパティを設定します。ステータスコードを設定するには、「status」プロパティのみをサポートします。 |
-|     | respHeader、値#respHeader# | 指定された応答ヘッダーを指定された値に設定します。 |
-|     | respCookie、属性（有効期限、ドメイン、パス、セキュア、httpOnly、拡張機能）、値 | 特定の属性を持つ指定されたリクエスト cookie を指定された値に設定します。 |
-|     | logProperty、値#logProperty ツイカ# | 指定された CDN ログプロパティに指定された値を設定します。 |
+|     | respHeader、値 | 指定された応答ヘッダーを特定の値に設定します。 |
+|     | respCookie、属性（有効期限、ドメイン、パス、セキュア、httpOnly、拡張子）、値 | 特定の属性を持つ指定されたリクエスト cookie を特定の値に設定します。 |
+|     | logProperty、値 | 指定された CDN ログプロパティを特定の値に設定します。 |
 |     | var、値 | 指定された変数を特定の値に設定します。 |
 | **unset** | respHeader | 指定したヘッダーを応答から削除します。 |
-|     | respCookie、値 | 指定した cookie を削除します。 |
-|     | logProperty、値#logProperty ツイカ# | 指定された CDN ログプロパティを削除します。 |
+|     | respCookie、値 | 指定された cookie を削除します。 |
+|     | logProperty、値 | 指定された CDN ログプロパティを削除します。 |
 |     | var | 指定した変数を削除します。 |
 
 ## 接触チャネルセレクター {#origin-selectors}

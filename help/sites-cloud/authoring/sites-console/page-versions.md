@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: b39c455c9bd4b50eb3777cd1a4bdbada48786d62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1574'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -28,10 +28,10 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->AEM リポジトリでは、コンテンツのみがバージョン管理されます。 コード、CSS、JavaScriptなどの動的リソースは、バージョン管理されません。
+>AEM リポジトリでは、コンテンツのみがバージョン管理されます。コード、CSS、JavaScript などの動的リソースはバージョン管理されません。
 >
->* バージョンを表示する場合、コンテンツは、リポジトリの現在のコード、CSS およびJavaScriptで表示されます。
->* バージョンを復元すると、コンテンツのみが復元され、リポジトリの現在のコード、CSS およびJavaScriptが適用されます。
+>* バージョンを表示すると、リポジトリの現在のコード、CSS、JavaScript を使用してコンテンツが表示されます。
+>* バージョンを復元すると、コンテンツのみが復元され、リポジトリの現在のコード、CSS、JavaScript が適用されます。
 
 ## 新しいバージョンの作成 {#creating-a-new-version}
 

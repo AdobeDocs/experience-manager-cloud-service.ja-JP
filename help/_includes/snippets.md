@@ -1,8 +1,8 @@
 ---
 source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1467'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 # スニペット {#snippets}
@@ -169,7 +169,7 @@ ht-degree: 97%
 >[!IMPORTANT]
 >
 >フロントエンドパイプラインでは、以下の IP 許可リストを事前に Cloud Manager に追加する必要があります。
->必要に応じて、以下のアドレスのブロックをコピーして [&#128279;](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)IP 許可リストを追加します。 各アドレスはコンマで区切ります。 このブロックを **IP 許可リストを追加**&#x200B;ダイアログボックスの「**IP アドレス / CIDR**」フィールドにペーストします。 アドレスリストの最初のコンマの直後にカーソルを置き、**Enter** キーを押します。 リストを保存します。
+>必要に応じて、以下のアドレスのブロックをコピーして ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)IP 許可リストを追加[します。 各アドレスはコンマで区切ります。 このブロックを **IP 許可リストを追加**&#x200B;ダイアログボックスの「**IP アドレス / CIDR**」フィールドにペーストします。 アドレスリストの最初のコンマの直後にカーソルを置き、**Enter** キーを押します。 リストを保存します。
 >フロントエンドパイプラインの実行が中断されないようにするには、パイプラインを有効にする&#x200B;*前に*、この IP 許可リストを Cloud Manager に確実に追加します。
 >
 >**Cloud Manager の IP 許可リスト**
@@ -187,7 +187,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->[ コンテンツオーサリングにユニバーサルエディター ](/help/implementing/universal-editor/introduction.md) を使用していて、[IP 許可リストも使用する場合 ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)、[ ユニバーサルエディターサービスの IP アドレスを許可リストに追加して適用する ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor) 必要もあります。
+>[コンテンツのオーサリングにユニバーサルエディター](/help/implementing/universal-editor/introduction.md)を使用し、[IP 許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)も使用する場合は、[ユニバーサルエディターサービスの IP アドレスを含む許可リストも追加して適用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)する必要があります。
 
 ## Dynamic Media の操作 {#work-with-dynamic-media}
 
@@ -222,7 +222,7 @@ ht-degree: 97%
 
 **サポートチケットをログに記録するには：**
 
-1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/ja?support-tab=home#support)チケットを作成します。
+1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/?support-tab=home#support)チケットを作成します。
 1. チケットのタイトルに「**Edge Delivery**」を追加します。
 1. 説明では、問題の説明に加えて、次の詳細を入力します。
 

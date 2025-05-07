@@ -4,9 +4,9 @@ description: コンテンツハブポータルからアセットをダウンロ�
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
 source-git-commit: e108d25f3cdc025e0fbe8010854f245f62786baf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '938'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -153,11 +153,11 @@ The dialog box that displays depends on whether the download list includes expir
 
 * [静的レンディション](/help/assets/renditions.md#static-renditions)：静的レンディションは、デジタルアセットの事前生成されたバージョンで、通常はアセットの取り込みまたは変更中に作成されます。これらは、web サムネイル、レスポンシブデザイン用のモバイルに対応した形式、印刷用の高解像度ファイルなど、特定の用途とプラットフォーム用に最適化され、効率化された一貫したエクスペリエンスを提供します。
 
-* [動的レンディション](/help/assets/renditions.md#dynamic-renditions)：動的レンディションは、様々なデバイスの解像度に合わせた画像のサイズ変更や、様々な縦横比に合わせた切り抜きなど、様々なアクションを実行するために、リアルタイムでカスタマイズされたアセットバージョンです。これらのレンディションにより、より広範な要件に合わせて、パーソナライズされ最適化されたエクスペリエンスを提供できます。アセットの動的レンディションは、オーサー環境 [!DNL Adobe Experience Manager Assets] 作成されます。 動的レンディションを有効にするために必要な手順について詳しくは、[ 動的レンディションの有効化 ](#enable-dynamic-media-renditions) を参照してください。
+* [動的レンディション](/help/assets/renditions.md#dynamic-renditions)：動的レンディションは、様々なデバイスの解像度に合わせた画像のサイズ変更や、様々な縦横比に合わせた切り抜きなど、様々なアクションを実行するために、リアルタイムでカスタマイズされたアセットバージョンです。これらのレンディションにより、より広範な要件に合わせて、パーソナライズされ最適化されたエクスペリエンスを提供できます。アセットの動的レンディションは、[!DNL Adobe Experience Manager Assets] オーサー環境で作成されます。動的レンディションを有効にするために必要な手順について詳しくは、[動的レンディションの有効化](#enable-dynamic-media-renditions)を参照してください。
 
 * [スマート切り抜き](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：スマート切り抜きは、切り抜きプロセス中にアセットの重要な部分にのみ焦点を当てます。Dynamic Media のスマート切り抜きでは、Adobe Sensei を使用した人工知能を活用して目標地点を追跡し、アセットがすべての画面サイズで最適に表示されるようにします。[!DNL Adobe Experience Manager] のスマート切り抜きでは、タイトルと共にアセットレンディションの幅と高さが表示されます。詳しくは、[AEM Assets Dynamic Media でのスマート切り抜きの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)を参照してください。
 
-  スマート切り抜きレンディションは、[OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) にアクセスできる場合にのみ表示され、ダウンロードできます。 スマート切り抜きレンディションは、画像アセットでのみ使用できます。
+  スマート切り抜きレンディションは、[OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) にアクセスできる場合にのみ表示され、ダウンロードできます。スマート切り抜きレンディションは、画像アセットに対してのみ使用できます。
 
   ![レンディションタイプ](/help/assets/assets/renditions-types.png)
 
@@ -167,21 +167,21 @@ The dialog box that displays depends on whether the download list includes expir
 
 1. [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) にアクセスできることを確認します。
 
-   OpenAPI 機能で Dynamic Media にアクセスできるようになると、`Approved` としてマークされたすべてのアセットは Dynamic Media を使用して公開配信できます。
+   OpenAPI 機能を備えた Dynamic Media にアクセスできると、`Approved` としてマークされたすべてのアセットを Dynamic Media を使用して公開配信できます。
 
-1. Content Hubに対してのみアセットを承認する場合は、「[ アセットの承認ターゲット ](/help/assets/approve-assets-content-hub.md#set-approval-target)」を「Content Hub」に設定します。
+1. コンテンツハブのアセットのみを承認するには、[アセットの承認ターゲット](/help/assets/approve-assets-content-hub.md#set-approval-target)をコンテンツハブに設定します。
 
-1. **[!UICONTROL 設定]** ユーザーインターフェイスの **[!UICONTROL レンディション]** タブで使用可能な [ レンディションの可用性を有効にする ](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub) トグルを有効にします。
+1. [設定](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)ユーザーインターフェイスの「**[!UICONTROL レンディション]**」タブにある「**[!UICONTROL レンディションの可用性を有効にする]**」切替スイッチを有効にします。
 
-1. 既存の画像プリセットを再保存して、Content Hubで使用できるようにします。 OpenAPI を使用して Dynamic Media に新しくオンボーディングした場合にのみ適用されます。
+1. 既存の画像プリセットを再保存して、コンテンツハブで使用できるようにします。これは、OpenAPI を備えた Dynamic Media に新しくオンボードした場合にのみ適用されます。
 
-   既存の画像プリセットを再度保存するには、管理者ビューに移動し、**[!UICONTROL ツール]**/**[!UICONTROL Assets]**/ **[!UICONTROL 画像プリセット]** を選択します。 プリセットを選択し、「**[!UICONTROL 編集]**」をクリックしてから、「**[!UICONTROL 保存]** をクリックします。
+   既存の画像プリセットを再保存するには、管理ビューに移動し、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL 画像プリセット]**&#x200B;を選択します。プリセットを選択し、「**[!UICONTROL 編集]**」をクリックして、「**[!UICONTROL 保存]**」をクリックします。
 
 
 
    >[!NOTE]
    > 
-   > 動的レンディションは、画像アセットでのみ使用できます。
+   > 動的レンディションは、画像アセットに対してのみ使用できます。
 
 
 

@@ -5,9 +5,9 @@ feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
 source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '313'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Experience Manager（AEM）as a Cloud Service では、コンテンツフ�
 
 * [コンテンツフラグメントと共に使用する AEM GraphQL API](/help/headless/graphql-api/content-fragments.md) の代替となる HTTP REST です。
 
-完全なドキュメントについては、[OpenAPI を使用したAEM コンテンツフラグメント配信 ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/) を参照してください。
+詳細なドキュメントについて詳しくは、[OpenAPI を備えた AEM コンテンツフラグメント配信](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/)を参照してください。
 
 >[!NOTE]
 >

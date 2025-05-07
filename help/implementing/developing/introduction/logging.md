@@ -5,9 +5,9 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
 source-git-commit: 7efbdecdddb66611cbde0dc23928a61044cc96d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2377'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -554,7 +554,7 @@ CDN ログは、json 形式に準拠しているという点で、他のログ�
 | *pop* | CDN キャッシュサーバーのデータセンターです。 |
 | *rules* | [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)と WAF フラグに一致する名前。一致がブロックされたかどうかも示します。一致するルールがない場合は空です。 |
 
-CDN ログは、[ リクエスト/応答の変換 ](/help/implementing/dispatcher/cdn-configuring-traffic.md#logproperty) を使用して独自のプロパティで拡張できます。
+CDN ログは、[リクエスト／応答の変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#logproperty)を使用して独自のプロパティで拡張できます。
 
 ## ログのアクセス方法 {#how-to-access-logs}
 

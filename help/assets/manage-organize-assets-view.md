@@ -6,7 +6,7 @@ contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: 89c47db38bf26f8c5984278e49ad7727a8ec03e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1700'
 ht-degree: 100%
 
