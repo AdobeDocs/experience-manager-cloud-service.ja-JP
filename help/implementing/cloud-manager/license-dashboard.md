@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e25e337e4b71ed6c0d15bddcb306be243d970501
+source-git-commit: 6b3e2b960869786427a22d077216aa75a5ca0717
 workflow-type: tm+mt
 source-wordcount: '890'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
@@ -100,7 +100,7 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ## よくある質問 {#faq}
 
-+++**コンテンツリクエストとは**{#what-is-a-content-request}
+### コンテンツリクエストとは？{#what-is-a-content-request}
 
 コンテンツリクエストとは、AEM Sites またはコンテンツ配信ネットワークなどの顧客提供のキャッシュシステムに向けられたリクエストです。ページビューの場合は、HTML 形式でコンテンツまたはデータを取得します。API 呼び出しの場合は、JSON 形式で取得します。
 
@@ -109,29 +109,25 @@ The right side of the window presents an area chart showing the usage broken dow
 コンテンツリクエストは、製品やサービスを提供することのみを目的とし、アドビが開始した、またはアドビに代わって開始されたリクエストやアクティビティを除外します。一般的な検索エンジンやソーシャルメディアサービスに関連する、ボット、クローラー、スパイダーからのアドビが特定したユーザーエージェントトラフィックも除外されます。
 
 詳しくは、[Cloud Service コンテンツリクエストについて](/help/implementing/cloud-manager/content-requests.md)も参照してください。
-+++
 
-+++**Adobe Experience Managerではコンテンツリクエストをどのように測定しますか？**{#how-are-content-requests-measured}
+### Adobe Experience Manager はコンテンツリクエストをどのように測定しますか？{#how-are-content-requests-measured}
 
 コンテンツリクエストは、AEM as a Cloud Service のエッジサーバーで追跡されます。元のトラフィックは、コンテンツリクエストにはカウントされません。AEM as a Cloud Service に組み込まれた CDN は、有効な HTML リクエストと JSON リクエストを追跡します。
 
 AEM には、よく知られているボットを除外するルールも用意されています。これには、検索インデックスまたはサービスを更新するためにサイトに定期的にアクセスするよく知られているサービスも含まれます。
 
 [Cloud Service コンテンツリクエストについて](/help/implementing/cloud-manager/content-requests.md)も参照してください。
-+++
 
-+++**Analytics レポートにAEM コンテンツリクエストと異なる結果が表示されるのはなぜですか？**{#why-are-reports-different}
+### Analytics レポートにAEM コンテンツリクエストと異なる結果が表示されるのはなぜですか？{#why-are-reports-different}
 
 コンテンツリクエストは、組織の Analytics レポートツールと異なる場合があります。詳しくは、[Cloud Service コンテンツリクエストについて](/help/implementing/cloud-manager/content-requests.md)を参照してください。
-+++
 
-+++**コンテンツリクエスト量の詳細を把握したい場合はどうすればよいですか？**{#current-request-volumes}
+### コンテンツリクエスト量の詳細を把握したい場合はどうすればよいですか？{#current-request-volumes}
 
 ライセンスダッシュボードに表示されるコンテンツリクエスト量について詳しい情報が必要な場合は、コンテンツリクエスト量を増やす最大要因を示すレポートを、担当のアドビチームから提供することができます。アドビチームまたはアドビカスタマーサポートに問い合わせて、上位使用状況レポートをご依頼ください。
-+++
 
-+++**独自の CDN を使用している場合はどうなりますか？**{#using-own-cdn}
+### 独自の CDN を使用している場合はどうなりますか？{#using-own-cdn}
 
 ライセンスダッシュボードには、Cloud Service CDN で追跡されたデータのみが表示されます。独自の CDN を導入（BYOCDN）する場合は、契約に従い、コンテンツリクエスト量を年単位でAdobeに報告します。
-+++
+
 
