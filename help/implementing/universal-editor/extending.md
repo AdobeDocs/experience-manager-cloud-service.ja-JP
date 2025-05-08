@@ -4,9 +4,9 @@ description: コンテンツ作成者のニーズをサポートするために�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '580'
 ht-degree: 16%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 16%
 
 ## 拡張子 {#extensions}
 
-Adobe Experience Cloud サービスとして、ユニバーサルエディターの UI は、App BuilderとExperience Managerを使用して拡張できます。 Adobeには、プロジェクトに使用できる既製の拡張機能が多数用意されています。
+Adobe Experience Cloud サービスとして、ユニバーサルエディターの UI は、App BuilderとExperience Managerを使用して拡張できます。 Adobeでは、[Extension Manager](https://experience.adobe.com/aem/extension-manager) を通じて使用できる、プロジェクトに対応した多くの既製の拡張機能を提供しています。
 
 * **[AEM Multi-Site-Management （MSM）拡張機能](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)**: コンポーネントレベルでの継承の解除または復元
 * **[AEMのページプロパティ拡張機能](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)**: ユニバーサルエディターでページのページプロパティウィンドウにアクセスします
@@ -36,6 +36,8 @@ Adobe Experience Cloud サービスとして、ユニバーサルエディター
 * **Forms ルールエディター**：コーディングを行わずに、AEM Forms フィールドに動的な動作を視覚的に追加します。
 * **[コンテンツフラグメントをAdobe Targetに書き出し ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/exporting-content-fragment-to-adobe-target/)**:Adobe Experience Manager as a Cloud Serviceで作成されたコンテンツフラグメントをAdobe Targetに書き出して、Target アクティビティでオファーとして使用し、エクスペリエンスを大規模にテストおよびパーソナライズします。
 * **[コンテンツフラグメントワークフロー ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/content-fragments-workflows/)**：選択したコンテンツフラグメントのAEM ワークフローを開始します。
+
+これらの拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)。
 
 ## UI の拡張 {#extending-ui}
 

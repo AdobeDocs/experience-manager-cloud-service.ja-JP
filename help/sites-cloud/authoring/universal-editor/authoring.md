@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
 source-wordcount: '2222'
 ht-degree: 61%
@@ -214,7 +214,7 @@ ht-degree: 61%
 
 アイコンをタップまたはクリックして、選択したコンポーネントの継承を復元します。 継承されたコンテンツを表示するには、ページをリロードしてコンテンツを更新する必要があります。
 
-この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/)。
+この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)。
 
 >[!NOTE]
 >
@@ -232,7 +232,7 @@ ht-degree: 61%
 
 ユニバーサルエディターツールバーの **ページプロパティ** アイコンをタップまたはクリックして、新しいブラウザータブでページのページプロパティを開きます。
 
-この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/)。
+この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)。
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ ht-degree: 61%
 
 アイコンをタップまたはクリックすると、新しいブラウザータブで Sites コンソールが開き、エディターで現在表示されているページに移動します。
 
-この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/)。
+この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)。
 
 ### ページのロックとロック解除 {#locking-pages}
 
@@ -264,7 +264,7 @@ ht-degree: 61%
 
 ユーザーがページをロックした場合は、アイコンをタップまたはクリックしてページのロックを解除します。
 
-この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/)。
+この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)。
 
 >[!NOTE]
 >
@@ -285,7 +285,7 @@ ht-degree: 61%
 1. **ワークフローに含めるコンテンツ** リストで、チェックボックスを使用して、ワークフローに含めるコンテンツを定義します。
 1. **ワークフローを開始** をタップまたはクリックしてワークフローを開始するか、**閉じる** をタップまたはクリックして中止します。
 
-この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/)。
+この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)。
 
 ### 開発者ログイン {#developer-login}
 
@@ -297,11 +297,11 @@ ht-degree: 61%
 
 ![ 開発者ログインモーダル ](assets/developer-login.png)
 
-この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/)。
+この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)。
 
 ## オプションのプロパティパネル機能 {#properties-panel-options}
 
-ページコンテンツをさらに管理しやすくするために、ユニバーサルエディターの拡張機能として追加機能を使用できます。 [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) これらの拡張機能は、コンテンツ作成者として [ ユニバーサルエディターのプロパティパネル ](/help/implementing/universal-editor/extending.md) に表示される前に、管理者がプログラムで有効にする必要があります 。
+ページコンテンツをさらに管理しやすくするために、ユニバーサルエディターの拡張機能として追加機能を使用できます。 [ これらの拡張機能は、コンテンツ作成者として [ ユニバーサルエディターのプロパティパネル ](/help/implementing/universal-editor/extending.md) に表示される前に、管理者がプログラムで有効にする必要があります ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)。
 
 ### バリエーションを生成 {#generate-variations}
 
@@ -311,7 +311,7 @@ ht-degree: 61%
 
 ユニバーサルエディターのプロパティパネルにある「**バリエーションを生成**」アイコンをタップまたはクリックして、レコメンデーションを受け取り、バリエーションを作成します。 バリエーションの生成の仕組みについて詳しくは、[ バリエーションの生成 – AEM エディターに統合 ](/help/generative-ai/generate-variations-integrated-editor.md) ドキュメントを参照してください。
 
-この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/)。
+この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)。
 
 ## その他のリソース {#additional-resources}
 

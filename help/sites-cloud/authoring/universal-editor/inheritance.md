@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 20f57e2b1b502f48f54e8a03d35a231d0c905739
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 82%
+source-wordcount: '549'
+ht-degree: 79%
 
 ---
 
@@ -59,7 +59,9 @@ MSM とローンチは、継承を使用してコンテンツを再利用する�
 
 インストールされている場合、**AEM Multi-Site-Management （MSM）拡張では** 選択されたコンポーネントの現在の継承ステータスが表示され、コンポーネントレベルで継承を解除または復元することができます。
 
-詳しくは、[ オーサリングのドキュメント ](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance) を参照してください。
+この拡張機能の使用方法について詳しくは、[ オーサリングのドキュメント ](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance) を参照してください。
+
+この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)。
 
 ## 制限事項 {#limitations}
 
