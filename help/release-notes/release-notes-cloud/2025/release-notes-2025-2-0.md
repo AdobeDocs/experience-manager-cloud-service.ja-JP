@@ -3,9 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.2.0 リリー�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.2.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: 43a9b29132aca8f5231634b845c55538b59f5ee4
+exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
+source-git-commit: 3e0afac8f2f81f9ceae1cbfa456f1e747f2bdb06
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1524'
 ht-degree: 100%
 
 ---
@@ -32,15 +33,11 @@ ht-degree: 100%
 
 最新のメンテナンスリリースノートについては、[こちら](/help/release-notes/maintenance/latest.md)をご覧ください。
 
-<!-- 
+## リリースビデオ {#release-video}
 
-## Release Video {#release-video}
+2025.2.0 リリースで追加された機能の概要については、2025年2月リリースの概要ビデオをご覧ください。
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440921?quality=12&captions=jpn)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3458080?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -142,7 +139,7 @@ Edge コンピューティングには、データ処理がブラウザーに近
 
 ### OpenAPI ベースの API - 早期導入プログラム {#open-apis-earlyadopter}
 
-開発者は、AEM as Cloud Service の機能を独自のアプリケーションやツールに深く統合できます。 新しい AEM as a Cloud Service API は、OpenAPI 仕様に従い、一貫性の確保、明確な文書化、使いやすさを目標とします。認証を必要とするエンドポイントの資格情報は、Adobe Developer Console プロジェクトを作成することによって生成されます。
+開発者は、AEM as Cloud Service の機能を、自分たちのアプリケーションやツールに深く統合できます。新しい AEM as a Cloud Service API は、OpenAPI 仕様に従い、一貫性の確保、明確な文書化、使いやすさを目標とします。認証を必要とするエンドポイントの資格情報は、Adobe Developer Console プロジェクトを作成することによって生成されます。
 
 詳しくは、[OpenAPI ベースの AEM API](/help/implementing/developing/open-api-based-apis.md) を参照し、設定と使用方法を説明した[エンドツーエンドチュートリアル](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)を試してください。
 
