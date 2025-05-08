@@ -1,8 +1,8 @@
 ---
-source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
-workflow-type: ht
-source-wordcount: '1467'
-ht-degree: 100%
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+workflow-type: tm+mt
+source-wordcount: '1491'
+ht-degree: 98%
 
 ---
 # スニペット {#snippets}
@@ -222,7 +222,7 @@ ht-degree: 100%
 
 **サポートチケットをログに記録するには：**
 
-1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/ja?support-tab=home#support)チケットを作成します。
+1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/?support-tab=home#support)チケットを作成します。
 1. チケットのタイトルに「**Edge Delivery**」を追加します。
 1. 説明では、問題の説明に加えて、次の詳細を入力します。
 
@@ -259,3 +259,9 @@ ht-degree: 100%
 * [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
 * [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
 * [フォーム送信サービスの使用](/help/forms/forms-submission-service.md)
+
+## ユニバーサルエディターのヘッドレス認証 {#ue-headless-auth}
+
+>[!NOTE]
+>
+>ヘッドレスユースケースでユニバーサルエディターを使用している場合、ヘッドレスアプリは独自の認証を管理する必要があります。

@@ -4,8 +4,8 @@ description: ユニバーサルエディターの主なユースケース、そ�
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
-workflow-type: ht
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 100%
 
@@ -55,6 +55,8 @@ AEM に既に精通している場合は、Sites コンソールを使用して�
 * [ユニバーサルエディター用 SecurBank サンプルアプリ](/help/implementing/universal-editor/securbank.md)
 
 ドキュメントを参照したら、このページに戻って、WYSIWYG オーサリングのユースケースとユニバーサルエディターの一般的な仕組みについて学ぶことができます。
+
+{{ue-headless-auth}}
 
 ## ユニバーサルエディターの仕組み {#how-ue-works}
 

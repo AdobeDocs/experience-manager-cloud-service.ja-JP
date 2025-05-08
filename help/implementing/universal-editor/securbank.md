@@ -4,8 +4,8 @@ description: ユニバーサルエディターの概要と、SecurBank アプリ
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 100%
 
@@ -137,3 +137,6 @@ Cloud Manager とローカルの両方ですべてを設定すると、SecurBank
 コンテンツがまだ表示されない場合は、実行した&#x200B;**開発環境にデプロイ**&#x200B;パイプラインが正常に完了したことを確認してください。
 
 ![ブラウザーの SecurBank アプリ](assets/securbank.png)
+
+{{ue-headless-auth}}
+

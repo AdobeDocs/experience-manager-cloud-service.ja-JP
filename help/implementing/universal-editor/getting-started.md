@@ -4,8 +4,8 @@ description: ユニバーサルエディターへのアクセス権を取得す�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 722d9a14ccac2f9f1c6dd32455935bafc4897a68
-workflow-type: ht
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 100%
 
@@ -178,6 +178,8 @@ data-aue-resource="urn:<referenceName>:<resource>"
 ユニバーサルエディターを使用するようにアプリのインストルメントが行われました。
 
 コンテンツ作成者が簡単かつ直感的にユニバーサルエディターを使用してコンテンツを作成する方法について詳しくは、[ユニバーサルエディターを使用したコンテンツの作成](/help/sites-cloud/authoring/universal-editor/authoring.md)を参照してください。
+
+{{ue-headless-auth}}
 
 ## その他のリソース {#additional-resources}
 
