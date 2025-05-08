@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 437125b6819edf70539ebacb4a8beddb755fcb7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '568'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
@@ -24,42 +24,42 @@ ht-degree: 39%
 
 ### 機能強化 {#enhancements-20626}
 
-* ASSETS-46413、ASSETS-46580：新しいレビューステータス「プレビュー」が追加されました。
-* ASSETS-49542：映像・音声のトランスクリプションと翻訳に対応した言語を拡充
-* ASSETS-48264：レンディションに対する PNG 品質サポートの拡張。
+* ASSETS-46413、ASSETS-46580：新しいレビュステータス「プレビュー」を追加。
+* ASSETS-49542：ビデオとオーディオの文字起こしと翻訳でサポートされる言語の拡張。
+* ASSETS-48264：レンディションの PNG 画質サポートの拡張。
 
 ### 修正された問題 {#fixed-issues-20626}
 
-* ASSETS-50387:GenStudioで使用するために、コンテンツフラグメントのデフォルトのサムネールを修正する。
-* ASSETS-49006：書き込み権限がない場合にビデオのプロパティを表示します。
-* ASSETS-46757、ASSETS-46997: スマート切り抜きエディターでアクセシビリティを向上しました。
-* ASSETS-48018:Assets公開レポートのアセット参照のトラッキング機能が向上しました。
-* ASSETS-35846：オーサー層と配信層の間でアクセスの一貫性を向上させます。
-* ASSETS-48171：キャンバスを使用した Dynamic Media テンプレートの一貫性を向上させます。
-* ASSETS-49813：有効期限通知の改善。
-* ASSETS-47768、ASSETS-49825、ASSETS-49008、ASSETS-48287：一括操作の管理と可視性を向上させます。
-* ASSETS-50003、ASSETS-50004: アセットのダウンロードに含まれるレンディションの命名と制御を改善します。
-* ASSETS-47939:Content Hubの対応の編成を改善します。
-* ASSETS-46738：非常に大きなコレクションのパフォーマンスを向上させます。
-* ASSETS-50121：アセット公開イベントの信頼性を向上します。
-* ASSETS-48490：画像取得中の自動処理の回復性が向上します。
-* ASSETS-28106、ASSETS-49404：フルテキスト検索の堅牢性を向上します。
-* ASSETS-50006、ASSETS-50423：大きなフォルダー内での検索とトラバーサルのパフォーマンスを向上させます。
-* ASSETS-46021:Safari およびモバイルブラウザーのビデオ表示が改善されました。
-* ASSETS-49002:Dynamic Media テンプレートの編集処理を改善しました。
-* ASSETS-48376:Content Hub UI のその他の機能強化。
-* ASSETS-48504、ASSETS-49378:UI の動作のその他の改善点。
-* ASSETS-49540:Asset Relations OpenAPI を実験段階から移動しました。
-* ASSETS-40284:Adobe Stock統合に関するドキュメントの更新。
-* ASSETS-49739：アセットセレクターから Figma を統合する作業をします。
+* ASSETS-50387：GenStudio で使用するコンテンツフラグメントのデフォルトのサムネールを修正。
+* ASSETS-49006：ユーザーに書き込み権限がない場合でもビデオのプロパティを表示。
+* ASSETS-46757、ASSETS-46997：スマート切り抜きエディターのアクセシビリティを向上。
+* ASSETS-48018：アセット公開レポートでのアセット参照トラッキングを改善。
+* ASSETS-35846：オーサー層と配信層間のアクセスの一貫性を向上。
+* ASSETS-48171：キャンバスを使用した Dynamic Media テンプレートの一貫性を向上。
+* ASSETS-49813：有効期限通知を改善。
+* ASSETS-47768、ASSETS-49825、ASSETS-49008、ASSETS-48287：一括操作の管理と視認性を向上。
+* ASSETS-50003、ASSETS-50004：アセットのダウンロードに含まれるレンディションの命名と制御を改善。
+* ASSETS-47939：コンテンツハブの応答の編成を改善。
+* ASSETS-46738：非常に大規模なコレクションのパフォーマンスを向上。
+* ASSETS-50121：アセット公開イベントの信頼性を向上。
+* ASSETS-48490：画像取り込み中の自動処理の回復性を向上。
+* ASSETS-28106、ASSETS-49404：フルテキスト検索の堅牢性を向上。
+* ASSETS-50006、ASSETS-50423：大きなフォルダー内での検索とトラバーサルのパフォーマンスを向上。
+* ASSETS-46021：Safari およびモバイルブラウザーのビデオ表示を改善。
+* ASSETS-49002：Dynamic Media テンプレートの編集処理を改善。
+* ASSETS-48376：コンテンツハブ UI のその他の改善。
+* ASSETS-48504、ASSETS-49378：UI の動作に対するその他の改善。
+* ASSETS-49540：アセットの関連付け OpenAPI を実験段階から移行。
+* ASSETS-40284：Adobe Stock 統合に関するドキュメントを更新。
+* ASSETS-49739：アセットセレクターから Figma を統合。
 
 #### AEM ガイド {#guides}
 
-* GUIDES-21734：スニペットを使用して追加された場合、またはテンプレートを使用して作成された場合は、XMLEditorConfig で「ID を自動生成」オプションが有効になっている場合でも、要素の新しい ID を生成できません。
-* GUIDES-25969: DITA トピック内の外部リンクに `scope=external` 属性がない場合、特にマイクロサービスが有効な場合に、HTML5 への公開が失敗し、エラーログにこの属性がないことが示されません。
-* GUIDES-27288：新しいAEM Sites公開を使用して生成されたランディングページをマッピングするためにメタデータプロパティを渡すことができない。
+* GUIDES-21734：XMLEditorConfig で「ID を自動生成」オプションが有効になっている場合でも、スニペット経由で要素を追加したり、テンプレート経由で要素を作成したりすると、その要素に対して新しい ID が生成されない。
+* GUIDES-25969：DITA トピックの外部リンクに `scope=external` 属性が欠落している場合、特にマイクロサービスが有効になっている場合に、この属性が欠落しているファイルがエラーログに示されずに HTML5 の公開が失敗する。
+* GUIDES-27288：新しい AEM Sites 公開を使用して生成されたマップランディングページにメタデータプロパティを渡すことができない。
 
-このリリースの新機能および機能強化と修正された問題について詳しくは、[Experience Manager Guides リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)をご覧ください。
+このリリースの新機能および機能強化と修正された問題について詳しくは、[Experience Manager Guides リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)を参照してください。
 
 ### 既知の問題 {#known-issues-20626}
 
@@ -71,7 +71,7 @@ AEM as a Cloud Service で廃止および削除された機能と API につい�
 
 ### セキュリティ修正 {#security-20626}
 
-AEM as a Cloud Service では、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。 このメンテナンスリリースでは、特定された 11 つの脆弱性に対処し、堅牢なシステム保護に対する取り組みを強化しています。
+AEM as a Cloud Service では、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。 このメンテナンスリリースでは、特定された 11 個の脆弱性に対処し、堅牢なシステム保護に対する取り組みを強化しています。
 
 ### 組み込みテクノロジー {#embedded-tech-20626}
 

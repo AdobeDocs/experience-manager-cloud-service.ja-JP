@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: e0286ed9aad7ce8c6d4d1f254f6f8a602b4216fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2537'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -237,10 +237,10 @@ ht-degree: 98%
 </table>
 </details>
 
-以下は、削除されたAEM API の広範なリストです。
+削除された AEM API の広範なリストを次に示します。
 
 <details>
-  <summary>展開して、削除された API のリストを確認します。</summary>
+  <summary>展開して、削除された API のリストを表示します。</summary>
 <table style="table-layout:auto">
   <tr>
     <th>パッケージ／クラス</th>
@@ -296,7 +296,7 @@ ht-degree: 98%
     <td>AEM as a Cloud Service は、この内部ログバック API をサポートしていません。</td>
   </tr>
   <tr>
-    <td>com.github.jcotness.handlebars.js</td>
+    <td>com.github.jknack.handlebars.js</td>
     <td>セキュリティの脆弱性により、Handlebars を 4.0.5 から 4.3.0 にアップグレードする必要があります。このパッケージは、アップグレードされたハンドルバーには存在しません。</td>
   </tr>
 </tbody>
@@ -338,7 +338,7 @@ Mongo client API をプロジェクトに追加します。
 * このバンドルをプロジェクトに追加
    * `org.mongodb:mongo-java-driver:3.12.7`
 
-### `org.apache.abdera*` と `org.apache.sling.atom.taglib` の使用 {#org.apache.abdera_or_org.apache.sling.atom.taglib}
+### `org.apache.abdera*` および `org.apache.sling.atom.taglib` の使用 {#org.apache.abdera_or_org.apache.sling.atom.taglib}
 
 `org.apache.abdera` および `org.apache.sling.atom.taglib` のパッケージの使用を、同様の機能を備えたサードパーティライブラリまたは独自のコードに置き換えます。
 
