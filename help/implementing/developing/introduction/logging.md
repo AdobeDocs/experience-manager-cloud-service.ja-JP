@@ -4,10 +4,10 @@ description: AEM as a Cloud Service のログを使用して一元的なログ�
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7efbdecdddb66611cbde0dc23928a61044cc96d5
-workflow-type: ht
-source-wordcount: '2377'
-ht-degree: 100%
+source-git-commit: f799dd9a4a2e5138776eb57a04c116df49d28030
+workflow-type: tm+mt
+source-wordcount: '2546'
+ht-degree: 94%
 
 ---
 
@@ -99,6 +99,10 @@ Java ログはその他にも複数レベルのログ精度をサポートして
 
 AEM ログレベルは、OSGi 設定を介して環境の種類ごとに設定され、次に Git にコミットされて、Cloud Manager を介して AEM as a Cloud Service にデプロイされます。そのため、更新されたログレベル設定でアプリケーションを再デプロイすることなく、AEM as a Cloud Service 経由で利用可能なログを最適なログレベルで使用できるように、ログステートメントの一貫性と環境の種類を把握することをお勧めします。
 
+>[!NOTE]
+>
+>お客様の環境を効果的に監視するため、デフォルトのログレベルは変更しないでください。 また、デフォルトのログ形式は変更しないでください。 ログ出力は、デフォルトのファイルに出力されたままにする必要があります。具体的なガイドラインについては、[ 以下の節 ](#configuration-loggers) を参照してください。
+
 **ログ出力の例**
 
 ```
@@ -153,6 +157,19 @@ Sling LogManager ファクトリの OSGi 設定を使用して、カスタム Ja
 | `org.apache.sling.commons.log.file` | 出力のターゲットを `logs/error.log` に指定します |
 
 その他の LogManager OSGi 設定プロパティを変更すると、AEM as a Cloud Service での可用性の問題が発生する場合があります。
+
+前の節で述べたように、お客様の環境を効果的に監視するには、次の手順を実行します。
+* AEM製品コードの Java ログは、デフォルトのログレベル「INFO」を保持する必要があります。また、カスタム設定で上書きしてはなりません。
+* 製品コードのログレベルをデバッグに設定しても構いませんが、パフォーマンスの低下を防ぐために慎重に使用し、不要になったら INFO に戻します。
+* お客様が開発したコードのログレベルを調整することもできます。
+* すべてのログ（AEM製品コードとお客様開発コードの両方）は、デフォルトのログフォーマットを維持する必要があります。
+* ログ出力は、デフォルトのファイル「logs/error.log」にダイレクトされたままにする必要があります。
+
+このためには、次の OSGi プロパティは変更しないでください。
+* **Apache Sling ログ設定**（PID：`org.apache.sling.commons.log.LogManager`）- *すべてのプロパティ*
+* **Apache Sling Logging Logger Configuration**（ファクトリー PID：`org.apache.sling.commons.log.LogManager.factory.config`）：
+   * `org.apache.sling.commons.log.file`
+   * `org.apache.sling.commons.log.pattern`
 
 3 つの AEM as a Cloud Service 環境で推奨されるログの設定（Java パッケージ `com.example` のプレースホルダーを使用）の例を次に示します。
 
