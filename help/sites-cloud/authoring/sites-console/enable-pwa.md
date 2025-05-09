@@ -5,10 +5,10 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: dfa378e6ff8d0295a1e59cbf2cc71ca1a3eae9cb
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 99%
+source-wordcount: '1896'
+ht-degree: 100%
 
 ---
 
@@ -27,11 +27,7 @@ ht-degree: 99%
 >
 >この機能を使用する前に、開発チームに相談して、プロジェクトに最適な利用方法を定義することをお勧めします。
 
->[!IMPORTANT]
->
->AEM Sitesのプログレッシブ web アプリケーション（PWA）機能 [ 非推奨 ](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features) になりました。
->
->この機能を使用している既存のプロジェクトは引き続きサポートされますが、新しいプロジェクトではこの機能を使用しないでください。
+{{pwa-deprecation}}
 
 ## はじめに {#introduction}
 

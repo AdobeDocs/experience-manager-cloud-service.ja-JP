@@ -5,10 +5,10 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 8d4d60a2105915108393cc295949491e59e5fc2b
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '2296'
-ht-degree: 98%
+source-wordcount: '2454'
+ht-degree: 93%
 
 ---
 
@@ -119,8 +119,8 @@ ht-degree: 98%
 * **テンプレート設定**
 
    * **許可されたテンプレート** - このサブ分岐内で[使用できるテンプレートのリストを定義](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author)します。
-   * **ページをテンプレートとして使用** - [ 現在のページに基づいて新しいテンプレートを作成します。](/help/sites-cloud/authoring/universal-editor/templates.md)
-      * Edge Delivery Servicesを活用するユニバーサルエディターで使用するために作成されたページにのみ適用されます。
+   * **ページをテンプレートとして使用** - [現在のページに基づいて新しいテンプレートを作成します。](/help/sites-cloud/authoring/universal-editor/templates.md)
+      * Edge Delivery Services を活用するユニバーサルエディターで使用するために作成されたページにのみ適用されます。
 
 * **認証要件**
 
@@ -242,7 +242,9 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->[プログレッシブ web アプリ機能の有効化](/help/sites-cloud/authoring/sites-console/enable-pwa.md)を参照してください。
+>詳しくは [ プログレッシブ web アプリ機能を有効にする ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) を参照してください。
+
+{{pwa-deprecation}}
 
 * **インストール可能なエクスペリエンスを設定**
 
@@ -337,3 +339,35 @@ ht-degree: 98%
       * 新しい値は、「**完了**」を選択したときに、選択したすべてのページに適用されます。
       * フィールドが複数値（タグなど）の場合は、新しい値を追加するか、共通の値を削除できます。
    * 共通のフィールドに、ページによって異なる値が設定されている場合、それらのフィールドは特別な値（「`<Mixed Entries>`」というテキストなど）で示されます。
+
+## プロパティの継承 {#inheritance}
+
+ページがブループリントに基づいている場合や、別のページからコンテンツを継承する場合、継承は個々のフィールドの **ページのプロパティ** ウィンドウに反映されます。
+
+![ 継承されたプロパティ ](assets/property-inhertiance.png)
+
+継承されたプロパティは編集できません。 特定のフィールドの横にある **継承をキャンセル** アイコンをタップまたはクリックして、継承を解除します。
+
+![継承のキャンセル](assets/cancel-inheritance.png)
+
+**継承をキャンセル** モーダルでキャンセルを確定します。
+
+![ 継承のキャンセル確認モーダル ](assets/cancel-inheriance-confirmation.png)
+
+フィールドの継承をキャンセルすると、そのフィールドが編集可能になります。
+
+![ キャンセルされた継承 ](assets/property-inheritance-broken.png)
+
+継承を元に戻すには、フィールドの横にある **継承を元に戻す** アイコンをタップまたはクリックします。
+
+![ 継承を元に戻す ](assets/revert-inheritance.png)
+
+**継承を元に戻す** モーダルで復帰を確定します。
+
+![ 継承確認モーダルを元に戻す ](assets/revert-inhertiance-confirmation.png)
+
+「**継承を元に戻した後にページを同期**」を選択し、ブループリントの最新の値でフィールドを更新します。 同期しない場合、ライブコピーが次回同期されるときに値が更新されます。
+
+>[!TIP]
+>
+>継承について詳しくは、[ マルチサイトマネージャーと翻訳 ](/help/sites-cloud/administering/msm-and-translation.md) を参照してください
