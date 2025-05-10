@@ -4,20 +4,18 @@ description: 実稼動プログラムまたはサンドボックスプログラ�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 54ea92b53d97be314dcef1ed3afbde35b16f9949
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 100%
+source-wordcount: '473'
+ht-degree: 94%
 
 ---
 
 # Cloud Manager への Edge Delivery サイトの追加 {#adding}
 
-実稼動プログラムに Edge Delivery サイトを追加すると、Edge Delivery Services ライセンスがそのサイトに適用されます。
-
-[Edge Delivery プロジェクトのサポートチケットを登録](/help/edge/overview.md##support-ticket)するには、Cloud Manager に Edge Delivery サイトを追加する必要があります。
-
-詳しくは、[Cloud Manager の Edge Delivery Services の概要](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)も参照してください。
+>[!IMPORTANT]
+>
+>Cloud ManagerにEdge Deliver Services サイトをオンボーディングする必要がある理由を説明します。 [Edge Delivery ServicesにAdobeの推奨パスを使用するメリット ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds) を参照してください。
 
 **Cloud Manager に Edge Delivery サイトを追加するには：**
 
