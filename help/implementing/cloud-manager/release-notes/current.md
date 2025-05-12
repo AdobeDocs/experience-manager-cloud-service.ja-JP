@@ -1,93 +1,209 @@
 ---
-title: Cloud Manager 2025.4.0 のリリースノート
-description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.4.0 のリリースについて説明します。
+title: Cloud Manager 2025.5.0 のリリースノート
+description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.5.0 のリリースについて説明します。
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 7ae9d2bb3cf6066d13567c54b18f21fd4b1eff9e
-workflow-type: ht
-source-wordcount: '614'
-ht-degree: 100%
+source-git-commit: effa19a98d59993e330e925fb933a436ff9d20d7
+workflow-type: tm+mt
+source-wordcount: '781'
+ht-degree: 21%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.4.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.5.0 のリリースノート {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
 
-AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2025.4.0 のリリースについて説明します。
-
+AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2025.5.0 のリリースについて説明します。
 
 [Adobe Experience Manager as a Cloud Service の最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)も参照してください。
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service の Cloud Manager 2025.4.0 のリリース日は 2025年4月10日木曜日（PT）です。
+AEM as a Cloud Service の Cloud Manager 2025.5.0 のリリース日は 2025年5月8日木曜日（PT）です。
 
-次回のリリース予定は 2025年5月8日木曜日（PT）です。
+次回のリリース予定は 2025年6月5日木曜日（PT）です。
 
 ## 新機能 {#what-is-new}
 
-* **（UI）デプロイメントの表示の向上**
+### Edge Delivery Servicesでコンテンツソースをワンクリックで変更する方法
 
-  Cloud Manager のパイプライン実行の詳細ページに、デプロイメントが別のデプロイメントの完了を待機している際に、ステータスメッセージ（「*待機中 - その他の更新中*」）が表示されるようになりました。このワークフローにより、環境のデプロイメント中にシーケンスの理解が容易になります。<!-- CMGR-66890 -->
+Adobe Experience Manager（AEM）Edge Delivery Servicesを使用すると、高速でグローバルに分散したエッジネットワークを使用して、Google Drive、SharePoint、AEM自体など複数のソースからコンテンツを配信できます。
 
-  ![詳細と分類を表示する開発デプロイメントダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
+コンテンツソースの設定は、次のように Helix 4 と Helix 5 で異なります。
 
-* **（UI）ドメイン検証の機能強化**
+| バージョン | 設定方法 |
+| --- | --- |
+| ヘリックス 4 | YAML ファイル （`fstab.yaml`） |
+| ヘリックス 5 | 設定サービス API （`fstab.yaml`** なし） |
 
-  ドメインを追加する際に、ドメインが既に Fastly アカウントにインストールされている場合、Cloud Manager に次のエラーが表示されるようになりました。「*ドメインは既に Fastly アカウントにインストールされています。Cloud Service に追加する前に、まずここから削除してください。*」
+この記事では、両方のバージョンに対する包括的な設定手順、例および検証手順を説明します。
+
+B **事前準備**
+
+[Cloud ManagerでEdge Deliveryを 1 回クリック ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site) を使用する場合、サイトは 1 つのリポジトリーを持つ Helix 5 になります。 Helix 5 の手順に従い、提供された Helix 4 YAML バージョンをフォールバックとして使用します。
+
+**Helix のバージョンの確認**
+
+* ヘリックス 4 - プロジェクトに `fstab.yaml` ファイルが含まれています。
+* ヘリックス 5 - プロジェクトは `fstab.yaml` を使用しており *Edge Delivery Services UI または API を使用して設定されています* 使用していません）。
+
+それでも不明な場合は、リポジトリメタデータを確認するか、管理者に問い合わせてください。
+
+#### コンテンツソースの設定（Helix 4）
+
+Helix 4 では、コンテンツソースは、GitHub リポジトリのルートにある `fstab.yaml` という名前の YAML 設定ファイルで定義されます。
+
+##### YAML ファイル形式
+
+`fstab.yaml` ファイルでは、次の例のように、マウントポイント（コンテンツソース URL にマッピングされた URL パスのプレフィックス）を定義します（説明用のみ）。
+
+```yaml
+mountpoints:
+  /: https://drive.google.com/drive/folders/your-folder-id
+```
+
+##### コンテンツソースを変更
+
+手順は、使用するソースシステムによって異なります。
+
+* **Google Drive**
+
+   1. Google Drive フォルダーを作成します。
+   1. フォルダーを `helix@adobe.com` と共有します。
+   1. 共有可能なフォルダーリンクを取得します。
+   1. 次に示すように、`fstab.yaml` を更新します。
+
+      ```yaml
+      mountpoints: 
+          /: https://drive.google.com/drive/folders/<folder-id>
+      ```
+
+   1. 変更をコミットして GitHub にプッシュします。
+
+* **SharePoint**
+
+   1. SharePoint フォルダーまたはドキュメントライブラリを作成します。
+   1. `helix@adobe.com` とアクセスを共有します。
+   1. フォルダーの URL を取得します。
+   1. 次に示すように、`fstab.yaml` を更新します。
+
+      ```yaml
+      mountpoints:
+        /: https://<tenant>.sharepoint.com/sites/<site>/Shared%20Documents/<folder>
+      ```
+
+   1. 変更をコミットして GitHub にプッシュします。
+
+* **AEM**
+
+   1. AEM コンテンツのパスを特定します。
+   1. 次に示すように、AEM コンテンツの書き出し URL を使用します。
+
+      ```yaml
+      mountpoints:
+        /: https://author.<your-aem-instance>.com/bin/franklin.delivery/<org>/<repo>/main
+      ```
+
+   1. 変更をコミットして GitHub にプッシュします。
+
+##### 検証
+
+* AEM Sidekick Chrome拡張機能を使用して、**プレビュー**/**公開**/**ライブサイトをテスト** をクリックします。
+* URL を検証：`https://main--<repo>--<org>.hlx.page/`
+
+#### コンテンツソースの設定（Helix 5）
+
+ヘリックス 5 は repoless であり、`fstab.yaml` を使用せず、同じディレクトリを共有する複数のサイトをサポートします。 設定は、Configuration Service API またはEdge Delivery Services UI を通じて管理されます。 設定は、リポジトリーレベルではなく、サイトレベルで行います。
+
+##### 概念の違い
+
+| 項目 | ヘリックス 4 | ヘリックス 5 |
+| --- | --- | --- |
+| 設定ファイル | `fstab.yaml` | API または UI 設定 |
+| マウントポイント | YAML 定義 | 不要（暗黙ルート） |
+
+##### コンテンツソースを変更
+
+Configuration Service API を使用します。
+
+1. API キーまたはアクセストークンを使用した認証。
+1. 次の `PUT` API 呼び出しを行います。
+
+   ```bash
+   PUT /api/{program}/{programId}/site/{siteId}
+   Content-Type: application/json
+   
+   {
+     "sitename": "my-site",
+     "branchName": "main",
+     "version": "v5",
+     "repo": "my-content-repo-link"
+   }
+   ```
+
+1. 応答を検証します（想定：HTTP 200 OK）。
+
+##### 検証
+
+* AEM Sidekick Chrome拡張機能を使用して、**プレビュー**/**公開**/**ライブサイトをテスト** をクリックします。
+* URL を検証：`https://main--<repo>--<org>.aem.page/`
+* （オプション）次の `GET` API 呼び出しを使用して、現在の設定を調べます。
+
+  ```bash
+  GET /api/{program}/{programId}/site/{siteId}
+  ```
+
+<!--
+* **AI-powered build summaries now available for internal use**
+
+    Internal users can now use AI-powered build summaries to simplify build log analysis. The feature provides actionable recommendations and helps identify the root causes of build failures.
+
+    ![Build Summary dialog box](/help/implementing/cloud-manager/release-notes/assets/build-summary.png)
+-->
+
 
 ## 早期導入プログラム {#early-adoption}
 
-Cloud Manager の早期導入プログラムに参加すると、一般リリース前に今後の機能に排他的にアクセスできます。
+Cloud Managerの早期導入プログラムに参加すると、一般リリース前に今後の機能を独占的に利用できます。
 
-現在、次の早期導入の機会が利用可能です。
+現在、次の早期導入の機会があります。
 
-### 独自の Git の導入 - GitLab と Bitbucket をサポートするようになりました。 {#gitlab-bitbucket}
+### Edge Delivery パイプラインを追加 {#add-eds-pipeline}
+
+Edge Delivery Servicesで作成されたサイトで **パイプライン** がサポートされるようになり、Cloud Service環境だけでなく、この機能が拡張されました。 **パイプライン** を使用して、トラフィックフィルタリングルールや Web アプリケーションファイアウォール（WAF）設定などの設定を管理できます（該当する場合）。 [ サポートされる設定 ](/help/operations/config-pipeline.md#configurations) を参照してください。
+
+<!-- ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png) -->
+
+この新機能のテストやフィードバックの提供に関心がある場合は、Adobe IDに関連付けられたメールアドレスから [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) にメールを送信してください。
+
+### 独自の Git の導入 – Azure DevOps をサポート {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
-**独自の Git の導入**&#x200B;機能が拡張され、GitLab や Bitbucket などの外部リポジトリのサポートが含まれるようになりました。 この新しいサポートは、プライベートおよびエンタープライズ GitHub リポジトリに対する既存のサポートに追加されます。 これらの新しいリポジトリを追加すると、パイプラインに直接リンクすることもできます。 これらのリポジトリは、パブリッククラウドプラットフォーム上や、プライベートクラウドまたはインフラストラクチャ内でホストできます。 また、この統合により、Adobe リポジトリと常にコード同期を行う必要がなくなり、プルリクエストをメイン分岐に結合する前に検証できるようになります。
+最新の Azure DevOps リポジトリと従来の VSTS （Visual Studio Team Services）リポジトリの両方をサポートすることで、Azure DevOps Git リポジトリをCloud Managerにオンボーディングできるようになりました。
 
-外部リポジトリ（GitHub でホストされているリポジトリを除く）を使用するパイプラインと、**Git 変更時**&#x200B;に設定した&#x200B;**デプロイメントトリガー**&#x200B;が自動的に開始されるようになりました。
+* Edge Delivery Servicesのユーザーは、オンボーディングされたリポジトリーを使用して、サイトコードを同期およびデプロイできます。
+* AEM as a Cloud ServiceおよびAdobe Managed Services（AMS）のユーザーは、リポジトリをフルスタックパイプラインとフロントエンドパイプラインの両方にリンクできます。
+
+コード品質パイプラインを通じた追加のパイプラインタイプとプルリクエスト検証のサポートは、近日中に提供されます。
 
 [Cloud Manager でのプライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/external-repositories.md)を参照してください。
 
-![リポジトリを追加ダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
-
->[!NOTE]
->
->現在、標準のプルリクエストコード品質チェックは、GitHub でホストされるリポジトリ専用ですが、この機能を他の Git ベンダーに拡張する更新が進行中です。
+![リポジトリを追加ダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
 
 この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) にメールを送信します。 使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
 
 <!--
-### AEM Home {#aem-home}
+## Bug fixes
 
-AEM Home introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, AEM Home lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, AEM Home ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
+* Issue
 
-Available to early adopters, AEM Home offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Home's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
+* Issue
 
-If you are interested in testing this new capability and sharing your feedback, send an email to [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) from your email address associated with your Adobe ID. Be sure to include the following information:
-
-* The role that best fits your profile: Content author, Developer, Business owner, Admin, or Other (provide a description).
-* Your primary AEM access surface: AEM Sites, AEM Assets, AEM Forms, Cloud Manager, or Other (provide a description). -->
-
-## バグ修正
-
-* **証明書に「共通名（CN）」フィールドが欠落している問題**
-
-  Cloud Manager では、「サブジェクト」フィールドに共通名（CN）が含まれていない EV/OV 証明書を処理する際に、NullPointerException（NPE）および 500 HTTP 応答をスローしなくなりました。最新の証明書では、多くの場合、CN が省略され、代わりにサブジェクト代替名（SAN）が使用されます。この修正により、SAN が存在する場合に CN が存在しないことで設定ビルドプロセス中に障害が発生しなくなりました。<!-- CMGR-67548 -->
-
-* **証明書の一致が正しくない場合のドメイン検証の問題**
-
-  Cloud Manager では、間違った証明書を使用してドメインを誤って検証しなくなりました。以前は、検証ロジックで完全一致ではなくパターンベースの一致が使用されていたので、`should-not-be-verified.example.com` などのドメインは `example.com` の有効な証明書との重複により検証済みとして表示されていました。この修正により、ドメイン検証で完全一致が確認され、エラーのある証明書の関連付けが防止されるようになりました。<!-- CMGR-67225 -->
-
-* **高度なネットワークポート転送名の一意性の適用**
-
-  Cloud Manager では、高度なネットワークポート転送に一意の名前が適用されるようになりました。以前は、重複する名前が許可されていたので、競合が発生する可能性がありました。この修正により、ネットワーク設定の整合性に関するベストプラクティスに合わせて、各ポート転送エントリに個別の名前が付けられます。<!-- CMGR-67082 -->
-
+* Issue
+-->
 
 <!-- ## Known issues {#known-issues} -->
 
