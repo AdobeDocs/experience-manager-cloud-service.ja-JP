@@ -4,10 +4,10 @@ description: ここでは、Cloud Manager で Screens as a Cloud Service 用の�
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
 feature: Screens Deployments
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 66cb3b49836d9bb52d7955edcf1f0b7f87b22802
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 100%
+source-wordcount: '193'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 次の節では、Cloud Manager でプログラムの環境を作成する方法について説明します。
 
-## Cloud Manager で Screens プロジェクトの環境を作成する手順 {#steps-branch-creation}
+## Cloud Managerでプロジェクトの環境を作成する手順 {#steps-branch-creation}
 
 プロジェクトの作成が正常に完了したら、Cloud Manager の概要ページのコールトゥアクションカードが更新されます。
 
