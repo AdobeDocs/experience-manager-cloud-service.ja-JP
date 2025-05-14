@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: 8dfcec0648f5b474113325b6cc6cffc754e21ec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1355'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
    ![フラグメントの作成](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
 
    **アダプティブフォームフラグメントを作成**&#x200B;ウィザードが表示されます。
-1. **テンプレートを選択** タブからEdge Delivery Servicesベースのテンプレートを選択し、「次へ **[!UICONTROL をクリックし]** す。
+1. 「**テンプレートを選択**」タブから、Edge Delivery Services ベースのテンプレートを選択し、「**[!UICONTROL 次へ]**」をクリックします。
    ![Edge Delivery Services テンプレートを選択](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
 1. フラグメントのタイトル、名前、説明およびタグを指定します。フラグメントには一意の名前を指定してください。同じ名前を持つ別のフラグメントが存在する場合、フラグメントの作成は失敗します。
@@ -123,7 +123,7 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
 
    ![セクションに移動](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
 
-1. 「**[!UICONTROL 追加]**」アイコンをクリックし、**アダプティブフォームコンポーネント**&#x200B;リストから&#x200B;**[!UICONTROL フォームフラグメント]**&#x200B;を追加します。
+1. 「**[!UICONTROL 追加]**」アイコンをクリックし、**アダプティブフォームコンポーネント**&#x200B;リストから&#x200B;**[!UICONTROL フォームフラグメント]**を追加します。
    ![フォームフラグメントを追加](/help/edge/docs/forms/universal-editor/assets/add-fragment.png)
 
    **[!UICONTROL フォームフラグメント]**&#x200B;コンポーネントを選択すると、フラグメントがフォームに追加されます。追加したフラグメントのプロパティは、この&#x200B;**プロパティ**&#x200B;を開いて設定できます。例えば、フラグメントのタイトルをこの&#x200B;**プロパティ**&#x200B;から非表示にします。

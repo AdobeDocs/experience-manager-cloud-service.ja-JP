@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
 source-git-commit: 4fa8c65d9744b9451089423de0da63b39530973e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '712'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -62,19 +62,19 @@ Edge Delivery サイトテーブルで、削除するサイトの行の末尾に
 
      ![「Edge Delivery サイト」ボタンからの Edge Delivery サイトの追加](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
-## ヘリックス 4 とヘリックス 5 の間のEdge Delivery サイトの管理
+## Helix 4 と Helix 5 間の Edge Delivery サイトの管理
 
-`/program/{programId}/site/{siteId}` API エンドポイントを使用して、Helix 4 と Helix 5 の間でEdge Delivery サイトを移行します。
+`/program/{programId}/site/{siteId}` API エンドポイントを使用して、Edge Delivery サイトを Helix 4 と Helix 5 間で移行します。
 
 >[!IMPORTANT]
 >
->Helix 4 web サイトの CDN 設定は、Helix 5 に自動的に移行することはできません。 この制限は、お客様の本番サイトが Helix 4 上で稼働する一方で、Helix 5 のバージョンは開発中であるためです。
+>Helix 4 web サイトの CDN 設定は、Helix 5 に自動的に移行できません。この制限が存在するのは、お客様の実稼動サイトが Helix 5 バージョンの開発中であっても、引き続き Helix 4 で稼動している場合があるからです。
 
 **前提条件**
 
 * `sitename` が既に存在している必要があります。
-* 適切な `branchName`、Helix `version` および `repo` の値を把握する。
-* 移行では、`branchName`、Helix `version`、`repo` のみが変更されます。 所有者フィールドは変更できません。
+* 適切な `branchName`、Helix `version` および `repo` の値を把握します。
+* 移行では、`branchName`、Helix `version` および `repo` のみが変更されます。所有者フィールドは変更できません。
 
 **API 形式**
 
@@ -82,8 +82,8 @@ Edge Delivery サイトテーブルで、削除するサイトの行の末尾に
 PUT /api/program/{programId}/site/{siteId}
 ```
 
-**リクエスト本文のパラメーター**
-リクエスト本文で指定されたオリジンを適用するために、Edge Delivery サイトのオーバーライドを作成します。
+**リクエスト本文パラメーター**
+リクエスト本文で指定された接触チャネルを適用するために、Edge Delivery サイトの上書きを作成します。
 
 ```json
 {
@@ -94,7 +94,7 @@ PUT /api/program/{programId}/site/{siteId}
 }
 ```
 
-### 例 1: Helix 5 への移行
+### 例 1：Helix 5 への移行
 
 **http**
 
@@ -113,13 +113,13 @@ PUT /api/program/{programId}/site/{siteId}
 }
 ```
 
-**オリジン URL の結果**
-次のオリジン URL を持つEdge Delivery サイトを返します。
+**接触チャネル URL の結果**
+次の接触チャネル URL を持つ Edge Delivery サイトを返します。
 
 `"origin": "branch--my-website–Teo48.aem.live"`
 
 
-### 例 2: Helix 4 に移行する
+### 例 2：Helix 4 への移行
 
 **http**
 
@@ -138,12 +138,12 @@ PUT /api/program/{programId}/site/{siteId}
 }
 ```
 
-**オリジン URL の結果**
-次のオリジン URL を持つEdge Delivery サイトを返します。
+**接触チャネル URL の結果**
+次の接触チャネル URL を持つ Edge Delivery サイトを返します。
 
 `"origin": "branch--my-website--Teo48.hlx.live"`
 
-### 例 3: Helix 5 へのリポジトリ サイトの移行
+### 例 3：Helix 5 への repoless サイトの移行
 
 **http**
 
@@ -162,8 +162,8 @@ PUT /api/program/{programId}/site/{siteId}
 }
 ```
 
-**オリジン URL の結果**
-次のオリジン URL を持つEdge Delivery サイトを返します。
+**接触チャネル URL の結果**
+次の接触チャネル URL を持つ Edge Delivery サイトを返します。
 
 `"origin": "main--my-repoless-website--Teo48.aem.live"`
 

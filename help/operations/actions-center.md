@@ -5,9 +5,9 @@ exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
 source-git-commit: 821dd9f172ea286a7a3de74cf8dec8001e9afee9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1133'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -88,4 +88,4 @@ AEM as a Cloud Service の通知には複数のタイプがありますが、次
 | 完了したワークフローがパージされない | 事前対応 | 90 日以上経過したワークフローインスタンスをパージして、ワークフローインスタンスの数を最小限に抑え、パフォーマンスを向上させます。 詳しくは、[メンテナンスタスクの設定](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/operations/maintenance)方法を参照してください | |
 | ページに Sling リソースが欠落している | 事前対応 | 欠落している Sling リソースタイプノードを追加します。 [Assets のコンテンツバリデーターのドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/acv)を参照してください | |
 | 処理に時間のかかるクエリ | 事前対応 | [JCQ クエリチートシート](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=ja)で推奨されているように、正しいインデックス定義を定義して、処理に時間のかかるクエリを修正します | |
-| インデックスのないクエリ | 事前対応 | インデックスを使用しないクエリは実行しないでください。[ インデックス作成に関するドキュメントへのリンク ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/operations/indexing) |
+| インデックスのないクエリ | 事前対応 | インデックスを使用しないクエリの実行を回避します -[インデックス作成に関するドキュメントへのリンク](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/operations/indexing) |

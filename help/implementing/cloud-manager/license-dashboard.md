@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 6b3e2b960869786427a22d077216aa75a5ca0717
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '890'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Cloud Manager ライセンスダッシュボードを使用すると、すべて
 * **アドオン** - 使用可能なライセンス済みソリューションに対するアドオン。
 * **その他の使用権限** - テナント内で使用できるサンドボックス、開発環境およびその他の使用権限。
 
-各セクションでは、利用可能な項目と使用方法をまとめています。現在、テナントに他のソリューションが存在する場合でも、Sites およびAssets ソリューションのみが表示されます。
+各セクションでは、利用可能な項目と使用方法をまとめています。現在、テナントに他のソリューションが存在する場合でも、Sites および Assets ソリューションのみが表示されます。
 
 * **ステータス**&#x200B;列には、未使用の使用権限の数と、テナントで使用可能な合計が表示されます。
 * **設定済み**&#x200B;列には、ソリューションの使用権限が適用されたプログラムが示されます。
@@ -118,7 +118,7 @@ AEM には、よく知られているボットを除外するルールも用意�
 
 [Cloud Service コンテンツリクエストについて](/help/implementing/cloud-manager/content-requests.md)も参照してください。
 
-### Analytics レポートにAEM コンテンツリクエストと異なる結果が表示されるのはなぜですか？{#why-are-reports-different}
+### Analytics レポートに AEM コンテンツリクエストと異なる結果が表示されるのはなぜですか？{#why-are-reports-different}
 
 コンテンツリクエストは、組織の Analytics レポートツールと異なる場合があります。詳しくは、[Cloud Service コンテンツリクエストについて](/help/implementing/cloud-manager/content-requests.md)を参照してください。
 
@@ -128,6 +128,6 @@ AEM には、よく知られているボットを除外するルールも用意�
 
 ### 独自の CDN を使用している場合はどうなりますか？{#using-own-cdn}
 
-ライセンスダッシュボードには、Cloud Service CDN で追跡されたデータのみが表示されます。独自の CDN を導入（BYOCDN）する場合は、契約に従い、コンテンツリクエスト量を年単位でAdobeに報告します。
+ライセンスダッシュボードには、Cloud Service CDN で追跡されたデータのみが表示されます。独自の CDN（BYOCDN）を導入する場合は、契約に従い、コンテンツリクエスト量を年単位でアドビに報告します。
 
 

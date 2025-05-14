@@ -6,9 +6,9 @@ feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
 source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1925'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -39,15 +39,15 @@ ht-degree: 91%
 >
 >コンテンツフラグメントは **Sites** 機能ですが、**Assets** として保存されます。
 >
->引き続き **[Assets](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** コンソールから管理できますが、主に **[コンテンツフラグメント](/help/assets/content-fragments/content-fragments-managing.md)** コンソールで管理します。
+>引き続き **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** コンソールから管理できますが、主に&#x200B;**[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;コンソールで管理されています。
 >
->コンテンツフラグメントのオーサリングには、新しいエディターと元のエディターの 2 つのエディターがあります。 新しいエディターがデフォルトです。 基本機能は同じですが、いくつかの違いがあります。
+>コンテンツフラグメントをオーサリングするエディターは、新しいエディターと元のエディターの 2 つがあります。新しいエディターがデフォルトです。基本機能は同じですが、いくつか違いがあります。
 >
 >この節では、元のエディターについて説明します。
 >
->[ コンテンツフラグメント – オーサリング ](/help/sites-cloud/administering/content-fragments/authoring.md) のデフォルトのエディターは、**コンテンツフラグメント** コンソールと **Assets** コンソールの両方からアクセスできる新しいエディターです。 新しいエディターについて詳しくは、Sites のドキュメント [ コンテンツフラグメント – オーサリング ](/help/sites-cloud/administering/content-fragments/authoring.md) を参照してください。
+>[コンテンツフラグメント - オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)のデフォルトのエディターは、新しいエディターで、**コンテンツフラグメント**&#x200B;コンソールと **Assets** コンソールの両方からアクセスできます。新しいエディターについて詳しくは、Sites のドキュメントの[コンテンツフラグメント - オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)を参照してください。
 >
->[ 元のエディター ](/help/assets/content-fragments/content-fragments-variations.md) を使用するには、まず新しいエディターを開いてから **新しいエディター** スイッチを非アクティブにします。
+>[元のエディター](/help/assets/content-fragments/content-fragments-variations.md)を使用するには、まず新しいエディターを開いてから、**新しいエディター**&#x200B;のスイッチをアクティベート解除します。
 >
 >どちらのエディターも、上部のツールバーに切り替えスイッチを使用して、他のエディターにすばやくアクセスできます。
 
@@ -148,15 +148,15 @@ ht-degree: 91%
 
 1. コンテンツフラグメントの場所に移動します。
 
-1. 編集するフラグメントを開きます。
+1. フラグメントを編集用に開きます。
 
-1. フラグメントが新しいエディターで開きます。 **新規エディター** スイッチ（右上）を非アクティブにして、元のエディターを開きます。
+1. フラグメントが新しいエディターで開きます。**新しいエディター**&#x200B;スイッチ（右上）をアクティベート解除して、元のエディターを開きます。
 
    ![フラグメントエディター](assets/cfm-managing-03.png)
 
 1. 必要に応じて変更を加えます。
 
-1. 準備ができたら、必要に応じて **保存**、**保存して閉じる** または **閉じる** を使用します。
+1. 準備が整ったら、必要に応じて「**保存**」、「**保存して閉じる**」または「**閉じる**」を使用します。
 
    >[!NOTE]
    >
