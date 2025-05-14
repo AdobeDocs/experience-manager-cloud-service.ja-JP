@@ -4,14 +4,14 @@ description: ボタンをクリックするだけで Cloud Manager で Edge Deli
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: 59743546b5e057599f60a76d3087d7c5b6423b2e
+source-git-commit: 767b1f89f42340cc9307a43ff9e97e9a074e592e
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 98%
+source-wordcount: '948'
+ht-degree: 97%
 
 ---
 
-# Cloud Manager での Edge Delivery サイトの作成について {#about-one-click-edge-delivery-site}
+# ワンクリックでCloud ManagerのEdge Delivery サイトを作成する方法について{#about-one-click-edge-delivery-site}
 
 Edge Delivery サイトの作成機能は、Cloud Manager 内での Edge Delivery サイトのオンボーディングとデプロイメントを自動処理できるように設計されています。ボタン 1 回をクリックするだけで、プロセスが大幅に簡素化されます。この 1 回のクリックで、必要なインフラストラクチャがプロビジョニングされ、GitHub と統合してバージョン管理を行い、Google Drive でドキュメントとアセットのストレージが設定されます。
 

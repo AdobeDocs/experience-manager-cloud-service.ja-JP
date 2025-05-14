@@ -1,19 +1,19 @@
 ---
-title: CDN 設定の追加
-description: Edge Delivery サイトまたは Cloud Manager 環境の CDN 設定を追加する方法について説明します。
+title: ドメインマッピングの追加
+description: Edge Delivery サイトまたはCloud Manager環境用のドメインマッピングを追加する方法について説明します。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 70ee0ca9e7bb37abc6b82413fc02e37347893011
-workflow-type: ht
+source-git-commit: b3254d0a2194cb90d9eafd39978dcbdbd5e93610
+workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
 
-# CDN 設定の追加 {#add-cdn}
+# ドメインマッピングの追加 {#add-cdn}
 
 プログラム内でアドビが管理する CDN の SSL 証明書を持つドメインをリンクするには、CDN（コンテンツ配信ネットワーク）設定を追加する必要があります。
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 詳しくは、[アドビが管理する CDN](https://www.aem.live/docs/byo-cdn-adobe-managed) も参照してください。
 
-**CDN 設定を追加するには：**
+**ドメインマッピングを追加するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
