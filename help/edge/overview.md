@@ -4,10 +4,10 @@ description: AEM as a Cloud Service を使用して、Edge Delivery Services で
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
-workflow-type: ht
-source-wordcount: '1281'
-ht-degree: 100%
+source-git-commit: bf0e840fb3cd1ea5bc832823c522415c066f0018
+workflow-type: tm+mt
+source-wordcount: '1286'
+ht-degree: 76%
 
 ---
 
@@ -19,7 +19,7 @@ Edge Delivery により、AEM はエンゲージメントとコンバージョ�
 Edge 配信サービスを使用すると、次の操作を実行できます。
 
 * 申し分ない Lighthouse スコアの高速サイトを作成し、実際の使用のモニタリング（RUM）を通じてサイトのパフォーマンスを継続的に監視します。
-* コンテンツソースを分離することでオーサリング効率を向上させます。標準では、WYSIWYG とドキュメントベースのオーサリングの両方を使用できます。したがって、同じ web サイト上で複数のコンテンツソースを操作できます。
+* コンテンツソースを分離することでオーサリング効率を向上させます。すぐに使用できる状態で、ユニバーサルエディターを使用したAEM オーサリングと、ドキュメントベースのオーサリングの両方を使用できます。 したがって、同じ web サイト上で複数のコンテンツソースを操作できます。
 * 迅速なテスト作成、パフォーマンスに影響を与えない実行およびテスト勝者の実稼動環境への迅速なリリースが可能になる組み込みの実験フレームワークを使用します。
 
 ## ビジネスニーズに対するアジャイルな対応 {#agile-reaction}
@@ -46,9 +46,9 @@ Edge 配信サービスを使用すると、次の操作を実行できます。
 
 ## コンテンツ作成者向けの柔軟なオーサリングツール {#overview}
 
-Edge Delivery Services は、web サイト上のコンテンツの柔軟なオーサリングを実現する、構成可能なサービスセットです。[AEM コンテンツ管理](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/author-publish)と[ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md)を使用した WYSIWYG オーサリングと、[ドキュメントベースのオーサリング](https://www.aem.live/docs/authoring)の両方を使用できます。
+Edge Delivery Services は、web サイト上のコンテンツの柔軟なオーサリングを実現する、構成可能なサービスセットです。[ ユニバーサルエディター ](/help/sites-cloud/authoring/author-publish.md) を使用した [AEM コンテンツ管理とコンテンツオーサリング、および [ ドキュメントベースのオーサリング ](/help/sites-cloud/authoring/universal-editor/authoring.md) の両方を使用 ](https://www.aem.live/docs/authoring) きます。
 
-次の図は、Microsoft Word でコンテンツを編集して（ドキュメントベースのオーサリング）、Edge Delivery Services に公開する方法を示しています。また、ユニバーサルエディターを使用した WYSIWYG の編集も示しています。
+次の図は、Microsoft Word （ドキュメントベースのオーサリング）でコンテンツを編集し、ユニバーサルエディターを使用したAEM コンテンツのオーサリングと共にEdge Delivery Servicesに公開する方法を示しています。
 
 ![Edge Delivery のアーキテクチャ](assets/AEM-with-EDS-publishing-simple2.png)
 
@@ -67,25 +67,25 @@ Edge Delivery Services では GitHub を利用しているので、自身の Git
 
 ドキュメントベースのオーサリングに関するドキュメントの詳細な説明：
 
-* Edge Delivery の使用を開始する方法について詳しくは、[作成](https://www.aem.live/docs/#build)の節を参照してください。
-* Edge 配信を使用してコンテンツをオーサリングおよび公開する方法について詳しくは、[セクションの公開](https://www.aem.live/docs/authoring)を参照してください。
-* Web サイトプロジェクトを適切にローンチする方法については、[ローンチ](https://www.aem.live/docs/#launch)の節を参照してください。
+* aem の使用を開始する方法について詳しくは、Edge Delivery.live ドキュメントの [ ビルドの節 ](https://www.aem.live/docs/#build) を参照してください。
+* Edge Deliveryを使用してコンテンツを作成および公開する方法については、[aem.live ドキュメントの公開の節 ](https://www.aem.live/docs/authoring) を参照してください。
+* Web サイトプロジェクトを適切に起動する方法については、aem.live ドキュメントの [Launch」の節を参照してください ](https://www.aem.live/docs/#launch)
 
-### WYSIWYG オーサリング {#wysiwyg-authoring}
+### ユニバーサルエディターを使用したAEMオーサリング{#wysiwyg-authoring}
 
-見たとおりに編集できる（WYSIWYG）オーサリングでは、ユニバーサルエディターを活用します。このエディターは、カスタマイズ可能なワンストッププレースで、視覚的なプレビューを使用してコンテンツをライブおよびコンテキスト内で編集します。
+WYSIWYG ユニバーサルエディターはカスタマイズ可能なワンストッププレースで、プレビューを表示しながらコンテンツをライブおよびコンテキスト内で編集できます。
 
-* WYSIWYG オーサリングでは、ヘッドレスでもヘッドフルでも作成者の効率が向上します。
+* ユニバーサルエディターを使用したAEM オーサリングにより、ヘッドレスかヘッドフルかに関わらず、作成者の効率が向上します。
 * ワークフローやガバナンスを含む AEM の包括的なコンテンツ管理機能を活用できます。
 * 多数の拡張ポイントを活用して、独自のプロセスと統合をサポートします。
 * サイトの機能は、GitHub で CSS と JavaScript を使用して開発できます。
 
-![WYSIWYG オーサリング](assets/wysiwyg-authoring.png)
+![ ユニバーサルエディターを使用したAEMのオーサリング ](assets/wysiwyg-authoring.png)
 
-WYSIWYG オーサリングに関するドキュメントの詳細な説明：
+ユニバーサルエディターとEdge Delivery Servicesを使用したAEM オーサリングの概要：
 
-* ユニバーサルエディターと WYSIWYG オーサリングの概要については、[Edge Delivery Services 向けの WYSIWYG コンテンツのオーサリング](/help/edge/wysiwyg-authoring/authoring.md)を参照してください。
-* 開発者向けの概要については、[Edge Delivery Services を使用した WYSIWYG オーサリングの開発者向け入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)を参照してください。
+* ユニバーサルエディターを使用したAEMのオーサリングの概要については、aem.live ドキュメントの [AEM for Edge Delivery Servicesを使用したオーサリング ](https://www.aem.live/docs/aem-authoring) を参照してください。
+* 開発者の概要については、aem.live ドキュメントのドキュメント [ はじめに – ユニバーサルエディターの開発者チュートリアル ](https://www.aem.live/developer/ue-tutorial) を参照してください。
 
 ### オーサリング方法の決定 {#authoring-method}
 
@@ -96,19 +96,13 @@ AEM の柔軟性により、オーサリングのニーズを確実に満たす�
 * オーサリング方法は、後からいつでも変更できます。
 * 実装前ではなく、実装の一環として決定する必要があります。
 
-詳しくは、[オーサリング方法の選択](authoring-methods.md)を参照してください。
-
 ## Edge Delivery Services と他の Adobe Experience Cloud 製品 {#edge-other-products}
 
 Edge Delivery Services は、Adobe Experience Manager の一部です。そのため、Edge Delivery Services と AEM Sites は、同じドメイン上に共存できます。これは、大規模な web サイトでの一般的なユースケースです。さらに、AEM Sites ページでは、Edge Delivery Services のコンテンツをシームレスに使用でき、その逆も同様です。
 
-AEM と Edge Delivery Services を使用してオーサリングする独自のプロジェクトを開始する方法について詳しくは、[Edge Delivery Services を使用した WYSIWYG の開発者向け入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)を参照してください。
+AEMとEdge Delivery Servicesを使用して独自のプロジェクトを作成する方法については、aem.live ドキュメントの [ はじめに – ユニバーサルエディターの開発者用チュートリアル ](https://www.aem.live/developer/ue-tutorial) を参照してください。
 
-Edge Delivery Services は [Adobe Target](https://www.aem.live/developer/target-integration)、[実際の使用のモニタリング（RUM）](https://www.aem.live/developer/rum)と共に使用して Sites の使用状況とパフォーマンスを診断したり、[Launch](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/home) で使用することもできます。
-
-## Edge Delivery Services の概要 {#getting-started}
-
-[はじめに - 開発者向けチュートリアル](https://www.aem.live/developer/tutorial)に従って、Edge Delivery Services を簡単に使い始めることができます。
+また、[Adobe Target](https://www.aem.live/developer/target-integration)、[Real Use Monitoring （RUM） ](https://www.aem.live/developer/rum) および [Launch](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/home) と共にEdge Delivery Servicesを使用して、サイトの使用状況とパフォーマンスを診断することもできます。
 
 ## アドビからのヘルプの入手 {#getting-help}
 
@@ -120,7 +114,7 @@ Edge Delivery Services は [Adobe Target](https://www.aem.live/developer/target-
 
 ### コミュニティリソースへのアクセス {#community-resources}
 
-アドビは、Edge Delivery Services、WYSIWYG、ドキュメントベースのオーサリングに関する最高クラスのコミュニティエンゲージメントとサポートを提供しています。
+Adobeは、Edge Delivery Services、ユニバーサルエディターを使用したAEM オーサリング、ドキュメントベースのオーサリングに対する最高のコミュニティエンゲージメントとサポートでユーザーを支援することに全力を注いでいます。
 
 * [Experience League コミュニティ](https://adobe.ly/3Q6kTKl)に参加して、質問をしたり、意見を共有したり、ディスカッションを始めたり、アドビの専門家や AEM アドバイザー／チャンプにサポートを求めたり、同じ意見を持つユーザーとリアルタイムでつながりを持つことができます。
 * リアルタイムのインタラクションと迅速なアイデア交換を実現する一層カジュアルなプラットフォーム、[ディスコードチャネル](https://discord.gg/aem-live)に参加してください。
@@ -136,7 +130,3 @@ Edge Delivery Services は [Adobe Target](https://www.aem.live/developer/target-
 ### サポートチケットのログ {#support-ticket}
 
 {{support-ticket}}
-
-## 次の手順 {#whats-next}
-
-まず、[Edge 配信サービスの使用](/help/edge/using.md)を確認します。

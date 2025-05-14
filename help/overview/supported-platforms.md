@@ -5,13 +5,13 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 22d4e6b5f87221b2739cf1dd9d59b4652a014316
+exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
+source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 26%
 
 ---
-
 
 # サポートされているクライアントプラットフォーム {#supported-platforms}
 
@@ -35,11 +35,11 @@ Adobeは、AEM クライアントプラットフォームに対して次のレ�
 
 AEMのユーザーインターフェイスは、ノートブック、デスクトップコンピューター、タブレットデバイス（Apple iPadやMicrosoft Surface など）で見つかる大きな画面に最適化されています。 電話のフォームファクターは、オーサリングのユースケースではサポートされていません。
 
-Adobe Experience Manager ユーザーインターフェイスは、[ オーサリング方法 ](/help/edge/authoring-methods.md) に応じて、次のクライアントプラットフォームで機能します。
+Adobe Experience Manager ユーザーインターフェイスは、[ オーサリング方法 ](/help/edge/overview.md#authoring-method) に応じて、次のクライアントプラットフォームで機能します。
 
 * [ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)
-* [2&rbrace;Sidekickを使用した ](/help/edge/docs/authoring.md) ドキュメントベースのオーサリング [&#128279;](/help/edge/docs/sidekick.md)
+* [2}Sidekickを使用した ](/help/edge/docs/authoring.md) ドキュメントベースのオーサリング ](/help/edge/docs/sidekick.md)[
 
 すべてのブラウザーは、デフォルトのプラグインとアドオンのセットを使用してテストされます。
 

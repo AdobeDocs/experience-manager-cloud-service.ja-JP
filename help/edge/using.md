@@ -4,8 +4,11 @@ description: AEM as a Cloud Service を Edge Delivery Services と併用する�
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 role: Admin, Architect, Developer
-source-git-commit: 16531cf084ad1b9619f4dffc6d028c7df4002ff5
-workflow-type: ht
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
+workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 100%
 

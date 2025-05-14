@@ -7,10 +7,10 @@ role: User
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
-workflow-type: ht
+source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
+workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -59,4 +59,4 @@ AEM と Edge Delivery Services を使用してオーサリングする独自の�
 
 WYSIWYG オーサリングは、コンテンツ作成者向けの強力で直感的なツールです。ただし、オーサリングのユースケースは多種多様なので、AEM では追加のオーサリングソリューションを提供しています。
 
-ドキュメントベースのオーサリングやヘッドレスなど、AEM が提供するオーサリングソリューションについて詳しくは、[オーサリング方法の選択](/help/edge/authoring-methods.md)ドキュメントを参照してください。
+ドキュメントベースのオーサリングやヘッドレスなど、Edge Delivery Servicesが提供するオーサリングソリューションについて詳しくは、[AEMの概要 ](/help/edge/overview.md#authoring-method) を参照してください。
