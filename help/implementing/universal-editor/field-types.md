@@ -6,8 +6,8 @@ feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 9327bc51ba170971bde8ce8e338c9a42ac5cbe82
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -703,7 +703,7 @@ AEM コンテンツコンポーネントタイプでは、AEM コンテンツピ
 
 #### リッチテキスト {#rich-text}
 
-リッチテキスト複数行のリッチテキスト入力が可能です。
+リッチテキストを使用すると、複数行のリッチテキスト入力が可能になります。
 
 >[!BEGINTABS]
 

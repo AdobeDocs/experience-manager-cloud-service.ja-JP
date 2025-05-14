@@ -7,8 +7,8 @@ feature: Authoring
 role: User
 source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 61%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -190,118 +190,118 @@ ht-degree: 61%
 
 ユニバーサルエディターを使用すると、コンテンツを更新するだけで、コンテンツの継承をキャンセルできます。エディターでは、そのページの作成者が行ったすべての変更の継承を自動的に無効にし、ブループリントから更新を同期した際に変更済みのコンテンツが保持されるようにします。
 
-**AEM Multi-Site-Management （MSM）拡張機能** がプログラムに対して有効になっている場合、ユニバーサルエディター内の個々のコンポーネントの継承ステータスを表示および変更するための [ 追加のツールバーオプション ](#inheritance-extension) が表示されます。
+**AEM マルチサイト管理（MSM）拡張機能**&#x200B;がプログラムに対して有効な場合は、ユニバーサルエディター内で個々のコンポーネントの継承ステータスを表示および変更する[追加のツールバーオプション](#inheritance-extension)があります。
 
 ユニバーサルエディターを使用した継承の仕組みについて詳しくは、[ユニバーサルエディターでのコンテンツの継承](/help/sites-cloud/authoring/universal-editor/inheritance.md)を参照してください。
 
 ## オプションのツールバー機能 {#toolbar-options}
 
-ページやコンテンツをさらに管理するのに役立つ追加機能が、ユニバーサルエディターの拡張機能として使用できます。 [ これらの拡張機能は ](/help/implementing/universal-editor/extending.md) コンテンツ作成者としてユニバーサルエディターツールバーに表示される前に [ 管理者がプログラムで有効にする必要があります ](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)。
+ページとコンテンツをさらに管理するのに役立つ追加機能が、ユニバーサルエディターの拡張機能として使用できます。[ユニバーサルエディターのツールバー](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)にコンテンツ作成者が表示する前に、[これらの拡張機能は、管理者がプログラムで有効にする必要があります](/help/implementing/universal-editor/extending.md)。
 
 ### 継承 {#inheritance-extension}
 
-**AEM Multi-Site-Management （MSM）拡張機能** には、選択したコンポーネントの現在の継承ステータスが表示され、継承を [ 解除または復元 ](/help/sites-cloud/authoring/universal-editor/inheritance.md) できます。
+**AEM マルチサイト管理（MSM）拡張機能**&#x200B;では、選択したコンポーネントの現在の継承ステータスが表示され、[継承を解除または復元](/help/sites-cloud/authoring/universal-editor/inheritance.md)できます。
 
-ユニバーサルエディターツールバーの **継承がインストール済み** アイコンは、選択したコンポーネントの継承が引き続きアクティブであることを示します。
+ユニバーサルエディターツールバーの&#x200B;**インストール済み継承**&#x200B;アイコンは、選択したコンポーネントの継承が引き続きアクティブであることを示します。
 
-![ 継承がインストールされたアイコン ](assets/inheritance-installed-icon.png)
+![インストール済み継承アイコン](assets/inheritance-installed-icon.png)
 
-アイコンをタップまたはクリックすると、選択したコンポーネントの継承が解除されます。 コンポーネントを編集すると、継承が自動的に解除されます。
+選択したコンポーネントの継承を解除するには、アイコンをタップまたはクリックします。コンポーネントを編集すると、継承は自動的に解除されます。
 
-**継承が壊れている** アイコンは、選択したコンポーネントの継承が壊れていることを示しています。
+**解除済み継承**&#x200B;アイコンは、選択したコンポーネントの継承が解除済みであることを示します。
 
-![ 継承が壊れているアイコン ](assets/inheritance-broken-icon.png)
+![解除済み継承アイコン](assets/inheritance-broken-icon.png)
 
-アイコンをタップまたはクリックして、選択したコンポーネントの継承を復元します。 継承されたコンテンツを表示するには、ページをリロードしてコンテンツを更新する必要があります。
+アイコンをタップまたはクリックすると、選択したコンポーネントの継承が復元されます。継承済みコンテンツを表示するには、ページをリロードしてコンテンツを更新する必要があります。
 
-この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)。
-
->[!NOTE]
->
->**インストール済みの継承** および **壊れた継承** アイコンは、コンポーネントが選択され、ページがブループリントに基づいている場合にのみ表示されます。
+この拡張機能を有効にする方法について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)を参照してください。
 
 >[!NOTE]
 >
->**AEM マルチサイト管理（MSM）拡張機能は** ページに対してのみ機能し、コンテンツフラグメントには機能しません。
+>**インストール済み継承**&#x200B;アイコンと&#x200B;**解除済み継承**&#x200B;アイコンは、コンポーネントを選択し、ページがブループリントに基づいている場合にのみ表示されます。
+
+>[!NOTE]
+>
+>**AEM マルチサイト管理（MSM）拡張機能**&#x200B;はページに対してのみ機能し、コンテンツフラグメントには機能しません。
 
 ### ページプロパティへのアクセス {#page-properties}
 
-**AEMのページプロパティ拡張機能** を使用すると、現在編集中のページの [ ページプロパティ ](/help/sites-cloud/authoring/sites-console/page-properties.md) ウィンドウにすばやくアクセスできます。
+**AEM ページプロパティ拡張機能**&#x200B;を使用すると、現在編集中のページの[ページプロパティウィンドウ](/help/sites-cloud/authoring/sites-console/page-properties.md)にすばやくアクセスできます。
 
-![ ページプロパティアイコン ](assets/page-properties-icon.png)
+![ページプロパティアイコン](assets/page-properties-icon.png)
 
-ユニバーサルエディターツールバーの **ページプロパティ** アイコンをタップまたはクリックして、新しいブラウザータブでページのページプロパティを開きます。
+ユニバーサルエディターツールバーの&#x200B;**ページプロパティ**&#x200B;アイコンをタップまたはクリックすると、新しいブラウザータブでページのページプロパティが開きます。
 
-この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)。
+この拡張機能を有効にする方法について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)を参照してください。
 
 >[!NOTE]
 >
->**AEMのページプロパティ拡張機能は** ページに対してのみ機能し、コンテンツフラグメントには機能しません。
+>**AEM ページプロパティ拡張機能**&#x200B;ページに対してのみ機能し、コンテンツフラグメントには機能しません。
 
 ### Sites コンソールへのアクセス {#sites-console}
 
-**AEM サイト管理拡張機能** を使用すると、AEMの [Sites コンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) で編集中のページにすばやくアクセスでき、サイトツリーを移動したり、コンソールでページレベルのアクションを実行したりできます。
+**AEM サイト管理拡張機能**&#x200B;を使用すると、[AEM の Sites コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)内で編集中のページにすばやくアクセスでき、サイトツリーを移動することや、コンソールでページレベルのアクションを実行することができます。
 
-![ サイト管理で開くアイコン ](assets/open-in-site-admin-icon.png)
+![サイト管理者で開くアイコン](assets/open-in-site-admin-icon.png)
 
-アイコンをタップまたはクリックすると、新しいブラウザータブで Sites コンソールが開き、エディターで現在表示されているページに移動します。
+アイコンをタップまたはクリックすると、新しいブラウザータブで Sites コンソールが開き、現在エディターにあるページに移動します。
 
-この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)。
+この拡張機能を有効にする方法について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)を参照してください。
 
 ### ページのロックとロック解除 {#locking-pages}
 
-**AEMページロック拡張機能** は、ページの現在のロックステータスをエディターに表示し、ページを [ ロックまたはロック解除 ](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) できます。
+**AEM ページロック拡張機能**&#x200B;を使用すると、エディターのページの現在のロック状態が表示され、[ページをロックまたはロック解除](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)できます。
 
-ユニバーサルエディターツールバーの **ロック解除** アイコンは、現在エディターにあるページがロックされていないことを示しています。
+ユニバーサルエディターツールバーの&#x200B;**ロック解除済み**&#x200B;アイコンは、エディターのページが現在ロックされていないことを示します。
 
-![ ロック解除アイコン ](assets/unlocked-icon.png)
+![ロック解除済みアイコン](assets/unlocked-icon.png)
 
-ページをロックするには、アイコンをタップまたはクリックします。
+アイコンをタップまたはクリックすると、ページがロックされます。
 
-ユニバーサルエディターツールバーの **ロック済み** アイコンは、現在エディターにあるページがロックされていることを示します。 アイコンの上にマウスポインターを置くと、ページをロックしたユーザーを示すツールヒントが表示されます。
+ユニバーサルエディターツールバーの&#x200B;**ロック済み**&#x200B;アイコンは、エディターのページが現在ロックされていることを示します。アイコンにポインターを合わせると、ページをロックしたユーザーを示すツールチップが表示されます。
 
-![ ロック済みアイコン ](assets/locked-icon.png)
+![ロック済みアイコン](assets/locked-icon.png)
 
 ユーザーがページをロックした場合は、アイコンをタップまたはクリックしてページのロックを解除します。
 
-この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)。
+この拡張機能を有効にする方法について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)を参照してください。
 
 >[!NOTE]
 >
->**AEM ページロック拡張機能は** ページに対してのみ機能し、コンテンツフラグメントには機能しません。
+>**AEM ページロック拡張機能**&#x200B;はページに対してのみ機能し、コンテンツフラグメントには機能しません。
 
 ### ワークフロー {#workflows}
 
-**AEM ワークフロー拡張機能** を使用すると、現在エディターにあるページで [ ワークフローを開始 ](/help/sites-cloud/authoring/workflows/overview.md) できます。
+**AEM ワークフロー拡張機能**&#x200B;を使用すると、現在エディターにあるページで[ワークフローを開始](/help/sites-cloud/authoring/workflows/overview.md)できます。
 
-![ ワークフローアイコン ](assets/workflows-icon.png)
+![ワークフローアイコン](assets/workflows-icon.png)
 
-ユニバーサルエディターツールバーの **ワークフロー** アイコンをタップまたはクリックして **ワークフローを開始** モーダルを開きます。 ウィンドウには、ワークフローを適用できるコンテンツのリストが表示されます。
+ユニバーサルエディターツールバーの&#x200B;**ワークフロー**&#x200B;アイコンをタップまたはクリックして、**ワークフローを開始**&#x200B;モーダルを開きます。ウィンドウには、ワークフローを適用できるコンテンツのリストが表示されます。
 
-![ ワークフローモーダルの開始 ](assets/start-a-workflow.png)
+![ワークフローを開始モーダル](assets/start-a-workflow.png)
 
-1. **ワークフローモデル** ドロップダウンで、適用するワークフローを選択します。
-1. 「**名前**」フィールドにワークフローの説明を入力します。
-1. **ワークフローに含めるコンテンツ** リストで、チェックボックスを使用して、ワークフローに含めるコンテンツを定義します。
-1. **ワークフローを開始** をタップまたはクリックしてワークフローを開始するか、**閉じる** をタップまたはクリックして中止します。
+1. **ワークフローモデル**&#x200B;ドロップダウンで、適用するワークフローを選択します。
+1. 「**名前**」フィールドのワークフローに説明を入力します。
+1. **ワークフローに含めるコンテンツ**&#x200B;リストで、チェックボックスを使用して、ワークフローに含めるコンテンツを定義します。
+1. **ワークフローを開始**&#x200B;をタップまたはクリックしてワークフローを開始し、「**閉じる**」をタップまたはクリックして中止します。
 
-この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)。
+この拡張機能を有効にする方法について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)を参照してください。
 
 ### 開発者ログイン {#developer-login}
 
-**AEM Universal Editor Dev Login Extension** は、ローカルで開発する開発者が便利な方法で、テスト目的でローカルのAEM SDKに対する認証を行うことができます。
+**AEM ユニバーサルエディター開発者ログイン拡張機能**&#x200B;は、ローカルで開発する開発者にとって便利で、テスト目的でローカルの AEM SDK に対する認証を行うことができます。
 
-![ 開発者ログインアイコン ](assets/developer-login-icon.png)
+![開発者ログインアイコン](assets/developer-login-icon.png)
 
-ユニバーサルエディターツールバーの「**開発者ログオン**」アイコンをタップまたはクリックして、ローカルのAEM SDKにログインするためのローカルログイン資格情報を指定します。
+ユニバーサルエディターツールバーの&#x200B;**開発者ログオン**&#x200B;アイコンをタップまたはクリックして、ローカルの AEM SDK にサインインするためのローカルログイン資格情報を入力します。
 
-![ 開発者ログインモーダル ](assets/developer-login.png)
+![開発者ログインモーダル](assets/developer-login.png)
 
-この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)。
+この拡張機能を有効にする方法について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)を参照してください。
 
 ## オプションのプロパティパネル機能 {#properties-panel-options}
 
-ページコンテンツをさらに管理しやすくするために、ユニバーサルエディターの拡張機能として追加機能を使用できます。 [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) これらの拡張機能は、コンテンツ作成者として [ ユニバーサルエディターのプロパティパネル ](/help/implementing/universal-editor/extending.md) に表示される前に、管理者がプログラムで有効にする必要があります 。
+ページコンテンツをさらに管理しやすくするために、ユニバーサルエディターの拡張機能として追加機能を使用できます。 [ これらの拡張機能は、コンテンツ作成者として [ ユニバーサルエディターのプロパティパネル ](/help/implementing/universal-editor/extending.md) に表示される前に、管理者がプログラムで有効にする必要があります ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)。
 
 ### バリエーションを生成 {#generate-variations}
 
@@ -311,7 +311,7 @@ ht-degree: 61%
 
 ユニバーサルエディターのプロパティパネルにある「**バリエーションを生成**」アイコンをタップまたはクリックして、レコメンデーションを受け取り、バリエーションを作成します。 バリエーションの生成の仕組みについて詳しくは、[ バリエーションの生成 – AEM エディターに統合 ](/help/generative-ai/generate-variations-integrated-editor.md) ドキュメントを参照してください。
 
-この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)。
+この拡張機能を有効にする方法について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)を参照してください。
 
 ## その他のリソース {#additional-resources}
 

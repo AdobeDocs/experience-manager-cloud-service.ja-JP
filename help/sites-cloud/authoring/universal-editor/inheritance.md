@@ -7,8 +7,8 @@ role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
 source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 79%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +44,7 @@ MSM とローンチは、継承を使用してコンテンツを再利用する�
 
 作成者は、ローカル編集を行う前に、ボタンをクリックするなどの手順を実行して継承を無効にする必要はありません。変更を行うとすぐに、継承は暗黙的にキャンセルされます。このワークフローは、[ページエディター](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components)とは対照的です。
 
-ページ全体の継承は、次の方法で元に戻すことができます。
+継承は、次の方法を使用して、ページ全体に対して元に戻すことができます。
 
 * [ライブコピーの概要コンソール](/help/sites-cloud/administering/msm/live-copy-overview.md)
 * [ローンチコンソール](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
@@ -55,16 +55,16 @@ MSM とローンチは、継承を使用してコンテンツを再利用する�
 * [マルチサイト管理（MSM）](/help/sites-cloud/administering/msm/overview.md)
 * [ローンチ](/help/sites-cloud/authoring/launches/overview.md)
 
-### AEM Multi-Site-Management （MSM）拡張機能 {#msm-extension}
+### AEM マルチサイト管理（MSM）拡張機能 {#msm-extension}
 
-インストールされている場合、**AEM Multi-Site-Management （MSM）拡張では** 選択されたコンポーネントの現在の継承ステータスが表示され、コンポーネントレベルで継承を解除または復元することができます。
+**AEM マルチサイト管理（MSM）拡張機能**&#x200B;をインストールすると、選択したコンポーネントの現在の継承ステータスが表示されるだけでなく、コンポーネントレベルで継承を解除または復元することもできます。
 
 この拡張機能の使用方法について詳しくは、[ オーサリングのドキュメント ](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance) を参照してください。
 
-この拡張機能を有効にする方法については、[Extension Managerのドキュメントを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)。
+この拡張機能を有効にする方法について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)を参照してください。
 
 ## 制限事項 {#limitations}
 
-* 単一のコンポーネントの継承を元に戻すには、**AEM Multi-Site-Management （MSM）拡張機能** を有効にする必要があります。
-* 視覚的なフィードバックによって、継承が無効になっているコンポーネントと保持されているコンポーネントを確認するには、**AEM Multi-Site-Management （MSM）拡張機能** を有効にする必要があります。
+* 単一コンポーネントの継承を元に戻すには、**AEM マルチサイト管理（MSM）拡張機能**&#x200B;を有効にする必要があります。
+* 無効になっているコンポーネントの継承や、まだ保持されているコンポーネントの継承を確認する視覚的なフィードバックを提供する場合は、**AEM マルチサイト管理（MSM）拡張機能**&#x200B;を有効にする必要があります。
 * これらの機能は現在、ページ内のコンポーネントに制限されており、MSM およびローンチの機能も備えているにもかかわらず、[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)にはまだ適用されていません。
