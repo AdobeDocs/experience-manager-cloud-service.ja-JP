@@ -301,7 +301,7 @@ ht-degree: 0%
 
 ## オプションのプロパティパネル機能 {#properties-panel-options}
 
-ページコンテンツをさらに管理しやすくするために、ユニバーサルエディターの拡張機能として追加機能を使用できます。 [ これらの拡張機能は、コンテンツ作成者として [ ユニバーサルエディターのプロパティパネル ](/help/implementing/universal-editor/extending.md) に表示される前に、管理者がプログラムで有効にする必要があります ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)。
+ページコンテンツをさらに管理しやすくするために、ユニバーサルエディターの拡張機能として追加機能を使用できます。 [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) これらの拡張機能は、コンテンツ作成者として [ ユニバーサルエディターのプロパティパネル ](/help/implementing/universal-editor/extending.md) に表示される前に、管理者がプログラムで有効にする必要があります 。
 
 ### バリエーションを生成 {#generate-variations}
 
