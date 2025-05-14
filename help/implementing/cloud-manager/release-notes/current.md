@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: f9f4226bff8a0772878c144773eb8ff841a0a8d0
+source-git-commit: 3db5ee2852fadc9c86b3a7979ce40296bbaca858
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 20%
+source-wordcount: '1038'
+ht-degree: 16%
 
 ---
 
@@ -60,7 +60,7 @@ mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-この例は説明用です。 実際の URL は、具体的なGoogle ドライブフォルダー、SharePoint ディレクトリ、AEM パスなど、コンテンツソースを指している必要があります。
+この例は説明用です。 実際の URL は、Google ドライブフォルダー、SharePoint ディレクトリ、AEM パスなどのコンテンツソースを指している必要があります。
 
 **ヘリックス 4 のコンテンツソースを設定するには：**
 
@@ -190,6 +190,16 @@ Edge Delivery Servicesで作成されたサイトで **パイプライン** が�
 ![リポジトリを追加ダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
 
 この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) にメールを送信します。 使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
+
+#### 独自の Git の導入に関するよくある質問（FAQ）
+
+| 質問 | 回答 |
+|---|---|
+| *必要に応じてプロジェクトをAdobeの管理による Git リポジトリに戻すには、どうすればよいですか？* | 切り替えは簡単です。 Adobe リポジトリを指すように [ パイプラインを更新 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) し、外部リポジトリが不要になった場合は削除します。 |
+| *異なる環境（実稼動以外と実稼動など）に異なるリポジトリーを設定して、最初に実稼動以外の環境でテストできるようにすることはできますか？* | はい。個別の環境用に異なるリポジトリを設定できます。 例えば、開発パイプラインまたはコード品質パイプラインは外部リポジトリーを指し、実稼動パイプラインはAdobe リポジトリーに接続されたままにすることができます。 この設定中は、2 つのリポジトリ間の同期ジョブがアクティブのままであることを確認してください。 |
+| *IP許可リストなどの既存の設定は引き続き機能しますか？* | はい、既存の IP許可リストは引き続き通常どおり機能します。 ただし、外部 Git リポジトリがファイアウォールで保護されている場合は、必要な [Adobe IP アドレスを許可リストに追加する必要があります ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。 |
+| *すべての GitLab リポジトリ URL が機能しますか？ 使用するリポジトリ URL は、形式 `https://gitlab_dedicated_url.com/path/repo-name.git` に従いますが、この形式はドキュメントの例とは異なります。* | はい。API V3 または V4 をサポートする任意の GitLab リポジトリーがサポートされます。これには、[Cloud Managerへの外部リポジトリーの追加 ](/help/implementing/cloud-manager/managing-code/external-repositories.md) （`https://git-vendor-name.com/org-name/repo-name.git`）に記載されているように、セルフホスト型の GitLab URL が含まれます。 |
+
 
 <!--
 ## Bug fixes
