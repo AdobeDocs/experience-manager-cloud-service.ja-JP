@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 158b808c2f97bea52d285d4f2611c6e297375ca1
+source-git-commit: d3a935a061831befaebd2ce25c00f8bf10522f6c
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1553'
 ht-degree: 14%
 
 ---
@@ -33,9 +33,8 @@ ht-degree: 14%
 * SITES-27775：公開中の参照検索が最適化されました。
 * SITES-30885：永続クエリでの JSON 処理を最適化しました。
 * SITES-25433：ユニバーサルエディターを使用したEdge Delivery：古いバージョンを比較する際のフルページレンダリングをサポートします。
-* SITES-27792: ユニバーサルエディターを使用したEdge Delivery: EDS 設定を完全に CA 設定に移動します。
+* SITES-27792：ユニバーサルエディターを使用したEdge Delivery: Edge Delivery サービス設定用の特定のテンプレートを追加
 * SITES-19754：ユニバーサルエディターを使用したEdge Delivery：設定が壊れている場合に表示される、説得力のあるエラーメッセージ。
-* SITES-30267：ユニバーサルエディターを使用したEdge Delivery：シート V2 （アーリーアクセス）。
 * SITES-30328：ユニバーサルエディターを使用したEdge Delivery:Sidekick サポートからのプレビュー。
 * SITES-23499：ユニバーサルエディターを使用したEdge Delivery：ブロックオプションに複数のフィールドを使用できます。
 * SITES-29987：コンテンツフラグメントモデルの作成時に `previewUrlPattern` を設定する機能を追加しました。
