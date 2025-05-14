@@ -46,7 +46,7 @@ Edge 配信サービスを使用すると、次の操作を実行できます。
 
 ## コンテンツ作成者向けの柔軟なオーサリングツール {#overview}
 
-Edge Delivery Services は、web サイト上のコンテンツの柔軟なオーサリングを実現する、構成可能なサービスセットです。[ ユニバーサルエディター ](/help/sites-cloud/authoring/author-publish.md) を使用した [AEM コンテンツ管理とコンテンツオーサリング、および [ ドキュメントベースのオーサリング ](/help/sites-cloud/authoring/universal-editor/authoring.md) の両方を使用 ](https://www.aem.live/docs/authoring) きます。
+Edge Delivery Services は、web サイト上のコンテンツの柔軟なオーサリングを実現する、構成可能なサービスセットです。[ ユニバーサルエディター ](/help/sites-cloud/authoring/author-publish.md) を使用した [&#128279;](https://www.aem.live/docs/authoring)AEM コンテンツ管理とコンテンツオーサリング、および [ ドキュメントベースのオーサリング ](/help/sites-cloud/authoring/universal-editor/authoring.md) の両方を使用  きます。
 
 次の図は、Microsoft Word （ドキュメントベースのオーサリング）でコンテンツを編集し、ユニバーサルエディターを使用したAEM コンテンツのオーサリングと共にEdge Delivery Servicesに公開する方法を示しています。
 

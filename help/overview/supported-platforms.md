@@ -39,7 +39,7 @@ Adobe Experience Manager ユーザーインターフェイスは、[ オーサ�
 
 * [ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)
-* [2}Sidekickを使用した ](/help/edge/docs/authoring.md) ドキュメントベースのオーサリング ](/help/edge/docs/sidekick.md)[
+* [2&rbrace;Sidekickを使用した ](/help/edge/docs/authoring.md) ドキュメントベースのオーサリング [&#128279;](/help/edge/docs/sidekick.md)
 
 すべてのブラウザーは、デフォルトのプラグインとアドオンのセットを使用してテストされます。
 
