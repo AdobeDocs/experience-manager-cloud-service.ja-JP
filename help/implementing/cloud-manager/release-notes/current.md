@@ -4,9 +4,9 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3db5ee2852fadc9c86b3a7979ce40296bbaca858
+source-git-commit: 12388df411b9bf0693358a82de17fec90d83877a
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1050'
 ht-degree: 16%
 
 ---
@@ -166,11 +166,11 @@ Cloud Managerの早期導入プログラムに参加すると、一般リリー�
 
 現在、次の早期導入の機会があります。
 
-### Edge Delivery パイプラインを追加 {#add-eds-pipeline}
+### Edge Delivery設定パイプラインを追加 {#add-eds-pipeline}
 
-Edge Delivery Servicesで作成されたサイトで **パイプライン** がサポートされるようになり、Cloud Service環境だけでなく、この機能が拡張されました。 **パイプライン** を使用して、トラフィックフィルタリングルールや Web アプリケーションファイアウォール（WAF）設定などの設定を管理できます（該当する場合）。 [ サポートされる設定 ](/help/operations/config-pipeline.md#configurations) を参照してください。
+Edge Delivery Servicesで作成されたサイトで Config パイプラインがサポートされるようになり、Cloud Service環境だけでなく、この機能が拡張されました。 **設定パイプライン** を使用して、トラフィックフィルタリングルールや Web アプリケーションファイアウォール（WAF）設定などの設定を管理できます（該当する場合）。 [ サポートされる設定 ](/help/operations/config-pipeline.md#configurations) を参照してください。
 
-<!-- ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png) -->
+![ パイプラインを追加ドロップダウンリストでEdge Delivery パイプラインを追加 ](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png)
 
 この新機能のテストやフィードバックの提供に関心がある場合は、Adobe IDに関連付けられたメールアドレスから [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) にメールを送信してください。
 
