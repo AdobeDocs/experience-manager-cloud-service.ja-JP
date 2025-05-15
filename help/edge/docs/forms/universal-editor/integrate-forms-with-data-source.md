@@ -3,13 +3,11 @@ title: ユニバーサルエディターでフォームのフォームデータ�
 description: フォームデータモデル（FDM）に基づいたフォームの作成方法について説明します。FDM でデータモデルオブジェクトのサンプルデータを生成し、編集します。
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
-hide: true
-hidefromtoc: true
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
-source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
-workflow-type: ht
-source-wordcount: '1036'
-ht-degree: 100%
+source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
+workflow-type: tm+mt
+source-wordcount: '1207'
+ht-degree: 82%
 
 ---
 
@@ -18,6 +16,12 @@ ht-degree: 100%
 ユニバーサルエディターでフォームをフォームデータモデル（FDM）と統合すると、様々なバックエンドデータソースを使用してフォームデータモデル（FDM）を作成できます。フォームデータモデル（FDM）を様々なフォームワークフローのスキーマとして使用できます。データソースを設定し、データソースで使用可能なデータモデルオブジェクトとサービスに基づいて、フォームデータモデル（FDM）を作成します。
 
 ## 考慮事項
+
+* ユニバーサルエディターインターフェイスの **データソース** アイコンや、右側のプロパティパネルの **バインド参照** プロパティが表示されない場合は、**Extension Manager** で **データソース** 拡張機能を有効にします。
+
+  ![ 拡張機能マネージャー ](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+
+  ユニバーサルエディターで拡張機能を有効または無効にする方法については ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)[Extension Manager機能のハイライト } の記事を参照してください。
 
 * ユニバーサルエディターのフォームの事前入力サービスは、現在サポートされていません。
 
@@ -32,6 +36,7 @@ ht-degree: 100%
 ## ユニバーサルエディターでのフォームデータモデルを使用したフォームの作成
 
 ユニバーサルエディターでは、次の項目を作成できます。
+
 * [スキーマベースのフォーム](#schema-based-form)：スキーマベースのフォームでは、フォーム作成時に「**データ**」タブで設定したデータソースが使用され、データがフォームフィールドに自動的にバインドされます。
 * [スキーマベース以外のフォーム](#non-schema-based-form)：スキーマベース以外のフォームでは、データソースを手動で追加し、コンテンツツリーから各フィールドをバインドする必要があります。
 
@@ -44,14 +49,14 @@ ht-degree: 100%
 スキーマベースのフォームを作成すると、データソースを使用して自動的に設定され、フォームフィールドはデータバインディングを通じて既にデータにリンクされています。フォーム作成ウィザードを使用してスキーマベースのフォームを作成するには、次の手順を実行します。
 
 1. [!DNL Experience Manager Forms] オーサーインスタンスにログインします。
-2. Experience Manager のログインページに資格情報を入力します。 ログイン後、左上隅の **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
-3. **[!UICONTROL 作成]**／**[!UICONTROL アダプティブフォーム]**&#x200B;を選択します。 ウィザードが開きます。 「**ソース**」タブで、テンプレートを選択します。
+1. Experience Manager のログインページに資格情報を入力します。 ログイン後、左上隅の **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
+1. **[!UICONTROL 作成]**／**[!UICONTROL アダプティブフォーム]**&#x200B;を選択します。 ウィザードが開きます。 「**ソース**」タブで、テンプレートを選択します。
 
    ![Edge Delivery Services テンプレート](/help/edge/assets/create-eds-forms.png)
 
    Edge Delivery Services ベースのテンプレートを選択すると、「**[!UICONTROL 作成]**」ボタンが有効になります。「**[!UICONTROL データソース]**」タブまたは「**[!UICONTROL 送信]**」タブに移動して、データソースを選択したり、アクションを送信したりできます。
 
-4. 「**データ**」タブで、次のいずれかのデータモデルを選択できます。
+1. 「**データ**」タブで、次のいずれかのデータモデルを選択できます。
 
    * **フォームデータモデル（FDM）**：データソースからのデータモデルオブジェクトとサービスをフォームに統合します。フォームで複数のソースからのデータの読み取りと書き込みが必要な場合は、フォームデータモデル（FDM）を選択します。
 
@@ -64,11 +69,11 @@ ht-degree: 100%
 
      デフォルトでは、関連付けられた JSON スキーマまたはフォームデータモデル（FDM）のすべてのフィールドが自動的に選択され、対応するフォームコンポーネントに変換されるので、オーサリングプロセスが簡素化されます。また、ウィザードでは、チェックボックスを使用して、フォームに含めるフィールドを個別に選択することもできます。
 
-5. 「**[!UICONTROL 作成]**」をクリックすると、**フォームを作成**&#x200B;ウィザードが表示されます。
-6. **名前**&#x200B;と&#x200B;**タイトル**&#x200B;を指定します。
-7. **GitHub URL** を指定します。例えば、GitHub リポジトリの名前が `edsforms` で、アカウント `wkndforms` の下にある場合、URL は次のようになります。
+1. 「**[!UICONTROL 作成]**」をクリックすると、**フォームを作成**&#x200B;ウィザードが表示されます。
+1. 「**名前**」と「**タイトル**」を指定します。
+1. **GitHub URL** を指定します。例えば、GitHub リポジトリの名前が `edsforms` で、アカウント `wkndforms` の下にある場合、URL は次のようになります。
    `https://github.com/wkndforms/edsforms`
-8. 「**[!UICONTROL 作成]**」をクリックします。
+1. 「**[!UICONTROL 作成]**」をクリックします。
 
    ![スキーマベースのフォームを作成](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form.png)
 
@@ -128,11 +133,29 @@ ht-degree: 100%
 
    ![フォームの作成](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-   フォーム要素の&#x200B;**バインド参照**&#x200B;プロパティにデータバインディングを指定するには、フォーム要素にデータバインディングを手動で追加する必要があります。例えば、フォームに既に存在する&#x200B;**ペット名**&#x200B;テキストボックスに、データバインディング参照を追加してみましょう。
+**連結参照** プロパティから選択して、フォームフィールドにデータ連結を追加できます。 例えば、フォームに既に存在する **Id** テキストボックスに、データ連結参照を追加します。
+データソースツリーでフォームフィールドのデータ連結を選択するには、次の手順を実行します。
+
+1. データバインド参照を追加するフォームフィールドのプロパティを開きます。
+1. 「**バインド参照**」プロパティに移動し、「**参照** アイコンをクリックします。
 
    ![フォームフィールドのデータバインディングを手動で追加](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
 
-   これで、フォームに[送信アクション](/help/edge/docs/forms/universal-editor/submit-action.md)を追加して設定できるようになりました。
+1. **連結参照を選択** ウィザードで、データソースツリーからデータ連結参照を選択します。
+
+   ![ データ バインド リファレンスの選択 ](/help/edge/docs/forms/universal-editor/assets/select-bind-reference.png)
+
+1. フォームフィールドにバインドするデータ要素をデータソースツリーから選択し、「**選択** をクリックします。
+
+   ![ データ要素を選択 ](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
+
+   フォームフィールドはデータ要素にバインドされ、「バインド参照 **プロパティに表示さ** ます。
+
+   ![自動データバインディング](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding.png)
+
+   また、フォームフィールドの **バインド参照** プロパティを手動で編集することもできます。
+
+これで、フォームに[送信アクション](/help/edge/docs/forms/universal-editor/submit-action.md)を追加して設定できるようになりました。
 
 ## 関連トピック
 
