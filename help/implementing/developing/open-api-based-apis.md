@@ -33,7 +33,7 @@ ht-degree: 1%
 
 * [OpenAPI ベースの API の設定方法 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup) に重点を置いたビデオを含むチュートリアルです。
 
-* サーバー間認証戦略を使用した OpenAPI の設定と呼び出しについて ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) エンドツーエンドのチュートリアル [ を参照してください。 Web アプリとシングルページアプリケーションの認証アプローチについても、同様のチュートリアルが見つかります。
+* サーバー間認証戦略を使用した OpenAPI の設定と呼び出しについて [&#128279;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) エンドツーエンドのチュートリアル  を参照してください。 Web アプリとシングルページアプリケーションの認証アプローチについても、同様のチュートリアルが見つかります。
 
 ## API アクセスの設定 {#configuring-api-access}
 
