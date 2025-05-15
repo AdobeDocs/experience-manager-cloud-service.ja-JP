@@ -71,6 +71,7 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
       ![fstab.yaml ファイルを開く](/help/edge/docs/forms/assets/open-fstab.png)
 
    1. **fstab.yaml** ファイルを編集して、プロジェクトのマウントポイントを更新します。URL を AEM as a Cloud Service オーサリングインスタンスの URL に置き換えます。
+
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![fstab.yaml ファイルを編集](/help/edge/docs/forms/assets/edit-fstab-file.png)
@@ -344,7 +345,7 @@ WYSIWYG オーサリング用のユニバーサルエディターで AEM プロ�
        npm install -g @adobe/aem-cli
    ```
 
-1. **GitHub プロジェクトのクローンを作成します**。次のコマンドを使用して、GitHub から AEM プロジェクトリポジトリのクローンを作成します。 <owner> リポジトリの所有者と <repo> リポジトリ名を置き換えます。
+1. **GitHub プロジェクトのクローンを作成します**。次のコマンドを使用して、GitHub から AEM プロジェクトリポジトリのクローンを作成します。 &lt;owner> リポジトリの所有者と &lt;repo> リポジトリ名を置き換えます。
 
    ```
    git clone https://github.com/<owner>/<repo>

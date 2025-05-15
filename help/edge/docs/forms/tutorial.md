@@ -237,7 +237,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
        npm install -g @adobe/aem-cli
    ```
 
-1. GitHub プロジェクトのクローンを作成します。次のコマンドを使用して、GitHub からプロジェクトリポジトリのクローンを作成します。 <owner> リポジトリの所有者と <repo> リポジトリ名を置き換えます。
+1. GitHub プロジェクトのクローンを作成します。次のコマンドを使用して、GitHub からプロジェクトリポジトリのクローンを作成します。 &lt;owner> リポジトリの所有者と &lt;repo> リポジトリ名を置き換えます。
 
    ```
    git clone https://github.com/<owner>/<repo>
