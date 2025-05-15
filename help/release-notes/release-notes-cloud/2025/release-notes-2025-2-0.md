@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.2.0 リ�
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: 3e0afac8f2f81f9ceae1cbfa456f1e747f2bdb06
+source-git-commit: 7eabd6199467d4e42f6bf7914de0d7ba7a3f9733
 workflow-type: tm+mt
 source-wordcount: '1524'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -61,7 +61,7 @@ AEM as a Cloud Service では、新しい Spectrum UI ベースのコンテン�
 
 **Translation HTTP API**
 
-しばらくの間、早期導入モードであった AEM Translation HTTP REST API が一般提供（GA）されるようになりました。ドキュメントについて詳しくは、[こちら](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/)を参照してください。API を使用すると、AEM 内のコンテンツの翻訳管理プロセスで必要な手順を自動化できます。
+しばらくの間、早期導入モードであった AEM Translation HTTP REST API が一般提供（GA）されるようになりました。ドキュメントは [ こちら」で参照できます。](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/translation/) API を使用すると、AEM内のコンテンツの翻訳管理プロセスで必要な手順を自動化できます。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
