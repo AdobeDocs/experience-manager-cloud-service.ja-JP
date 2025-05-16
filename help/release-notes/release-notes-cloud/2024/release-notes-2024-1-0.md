@@ -37,7 +37,7 @@ ht-degree: 96%
 
 2024.1.0 リリースで追加された機能の概要については、2024年1月のリリースに関する概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3427041?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3448930?quality=12&captions=jpn)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
