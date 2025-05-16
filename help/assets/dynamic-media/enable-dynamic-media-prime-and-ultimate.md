@@ -70,7 +70,7 @@ ht-degree: 99%
 
 OpenAPI を備えた [!DNL Dynamic Media] 機能では、DAM をアジャイルで効率的なコンテンツサプライチェーンエコシステムのコアに置き、アセットのガバナンスと配信を確実に行います。
 
-[!DNL Dynamic Media] Ultimate を有効にするプロセスの最初の手順は、Cloud Service 環境の OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) を備えた [[!DNL Dynamic Media]  を使用してアクティベートすることです。
+[!DNL Dynamic Media] Ultimate を有効にするプロセスの最初の手順は、Cloud Service 環境の OpenAPI[&#128279;](/help/assets/dynamic-media-open-apis-overview.md) を備えた [!DNL Dynamic Media]  を使用してアクティベートすることです。
 
 #### 開始する準備を整える {#prerequisites}
 
@@ -94,7 +94,7 @@ Cloud Service 環境で [!DNL Dynamic Media with OpenAPI] を有効にするに�
 
 1. 確認ダイアログで「**[!UICONTROL アクティベート]**」をクリックして、[!DNL Dynamic Media with OpenAPI] アクティベーションプロセスを開始します。アクティベーションが成功すると、Cloud Manager に次のステータス更新が表示されます。
    1. **[!UICONTROL 環境ステージ]**：**[!UICONTROL 実行中]**
-   1. ![DM のアクティベート](/help/assets/assets/Images_icon.svg)**[!UICONTROL  Dynamic Media ]**：**[!UICONTROL  OpenAPI 機能がアクティベートされています&#x200B;]**
+   1. ![DM のアクティベート](/help/assets/assets/Images_icon.svg)**[!UICONTROL &#x200B; Dynamic Media &#x200B;]**：**[!UICONTROL &#x200B; OpenAPI 機能がアクティベートされています&#x200B;]**
 
       ![アクティベーション成功](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
@@ -103,7 +103,7 @@ Cloud Service 環境で [!DNL Dynamic Media with OpenAPI] を有効にするに�
 アクティベーションに失敗した場合、Cloud Manager に次のステータス更新が表示されます。
 
 * **[!UICONTROL 環境ステージ]**：**[!UICONTROL OpenAPI を使用した DM にエラーが発生しました]**
-* ![DM のアクティベート](/help/assets/assets/Images_icon.svg)**[!UICONTROL  Dynamic Media ]**：**[!UICONTROL  OpenAPI 機能のアクティベートに失敗しました&#x200B;]**
+* ![DM のアクティベート](/help/assets/assets/Images_icon.svg)**[!UICONTROL &#x200B; Dynamic Media &#x200B;]**：**[!UICONTROL &#x200B; OpenAPI 機能のアクティベートに失敗しました&#x200B;]**
 
   ![アクティベーションを再試行](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 
