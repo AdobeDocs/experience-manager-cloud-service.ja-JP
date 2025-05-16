@@ -5,14 +5,18 @@ feature: Integration
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4a3e65ef6a8aa08c8bc78db31f94272334994ac5
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 100%
+source-wordcount: '727'
+ht-degree: 98%
 
 ---
 
 # Adobe Analytics と Experience Cloud 設定自動化を統合する {#integrate-adobe-analytics-automation-setup}
+
+>[!CAUTION]
+>
+>Experience Cloud設定の自動化機能は廃止されました。
 
 Experience Cloud 設定自動化を使用すると、シンプルな UI ウィザードインターフェイスを介して、わかりやすく自動化された方法で、Experience Manager Sites を Experience Platform タグおよび Adobe Analytics と統合してツール化することができます。
 
