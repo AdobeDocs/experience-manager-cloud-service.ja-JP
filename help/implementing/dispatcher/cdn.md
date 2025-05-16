@@ -4,7 +4,7 @@ description: AEM の管理による CDN を使用する方法と、独自の CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 100%
@@ -37,7 +37,7 @@ Cloud Manager のセルフサービス UI を通じて AEM の組み込み CDN �
 * [Cloud Manager の Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [カスタムドメイン名の概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [SSL 証明書の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
-* [CDN の設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+* [CDN の設定](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
 
 **トラフィックの制限**
 

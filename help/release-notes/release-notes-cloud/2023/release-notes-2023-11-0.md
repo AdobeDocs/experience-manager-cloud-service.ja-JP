@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.11.0 リ
 exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 56%
+ht-degree: 57%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 56%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.11.0）のリリース日は 2023年11月30日です。次回の機能リリース（2023.12.0）は 2023年12月14日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.11.0）のリリース日は、2023年11月30日（PT）です。 次回の機能リリース（2023.12.0）は 2023年12月14日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -35,7 +35,7 @@ ht-degree: 56%
 
 ## リリースビデオ {#release-video}
 
-2023.11.0 リリースで追加された機能の概要については、2023 年 11 月リリースの概要ビデオをご覧ください。
+2023.11.0 リリースで追加された機能の概要については、2023年11月リリースの概要ビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
 
@@ -53,7 +53,7 @@ ht-degree: 56%
 
 ### Assets ビューの新機能 {#assets-view-features}
 
-* **AEM Assetsの組み込みAdobe Expressエディター**:Express にアクセスできるユーザーは、AEM Assets内で直接、Adobe ExpressとAdobe Fireflyの統合画像編集ツールと作成ツールを使用して、コンテンツの再利用を促進し、コンテンツベロシティを向上させることができます。
+* **AEM Assetsの組み込みAdobe Express エディター**:Express にアクセスできるユーザーは、Adobe ExpressおよびAdobe Fireflyの画像編集および作成ツールを統合して、AEM Assets内で直接使用できるようになりました。これにより、コンテンツの再利用が促進され、コンテンツベロシティが向上します。
 
   ![フォルダーにメタデータフォームの割り当て](/help/assets/assets/adobe-express-aem-assets.png)
 
@@ -118,15 +118,15 @@ ht-degree: 56%
 
 ### WAF トラフィックフィルタールールのライセンスを取得できるようになりました {#cdn-waf-license}
 
-トラフィックフィルタールールは 10 月にリリースされ、Sites とFormsのお客様が既に利用できるルールを補完するために、今年後半に web Application Firewall （WAF）の特別なカテゴリのルールが利用可能になるという注記が含まれています。 更新として、WAF-DDoS 保護製品のライセンスを取得できるようになりました。
+トラフィックフィルタールールは 10 月にリリースされ、Sites とFormsのお客様が既に利用できるルールを補完するために、今年後半に web アプリケーションファイアウォール（WAF）の特別なカテゴリのルールが利用可能になる予定であることが記載されました。 更新として、WAF-DDoS Protection 製品のライセンスを取得できるようになりました。
 
-ライセンスが取得されると、これらの高度な WAF ルールをCloud Manager設定パイプラインを使用して CDN にデプロイし、web 攻撃に対する保護をさらに強化できます。
+ライセンスが取得されると、これらの高度なWAF ルールをCloud Manager設定パイプラインを使用して CDN にデプロイし、web 攻撃に対する保護をさらに強化できます。
 
-WAF を含む [ トラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md) を参照してください。 WAF-DDoS Protection または Enhanced Security のライセンスについては、AEM アカウントチームにお問い合わせください。
+WAFなど、[ トラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md) を参照してください。 WAF-DDoS Protection または Enhanced Security のライセンスについては、AEM アカウントチームにお問い合わせください。
 
-### CDN 設定の早期導入プログラム {#cdn-config-early-adopter}
+### ドメインマッピング早期導入プログラム {#cdn-config-early-adopter}
 
-最近リリースされた [ トラフィックフィルタールール（WAF を含む） ](/help/security/traffic-filter-rules-including-waf.md) に加えて、設定パイプラインを使用して、他のタイプの CDN 設定を宣言およびデプロイすることもできます。 次のようなユースケースについてお聞かせください。
+最近リリースされた [ トラフィックフィルタールール（WAFを含む） ](/help/security/traffic-filter-rules-including-waf.md) に加えて、設定パイプラインを使用して、他の種類の CDN 設定を宣言およびデプロイすることもできます。 次のようなユースケースについてお聞かせください。
 * 301/302 クライアントサイドのリダイレクト
 * 任意の接触チャネルに対するエッジでのリクエストのプロキシ処理
 * URL 変換
@@ -135,7 +135,7 @@ WAF を含む [ トラフィックフィルタールール ](/help/security/traf
 * ユーザー名/パスワードによる認証
 * その他の便利な CDN 設定
 
-公式メール ID からフィードバックを記載したメールを **0&rbrace;aemcs-cdn-config-adopter@adobe.com&rbrace; に送信します。**
+公式メール ID からフィードバックを記載したメールを **0}aemcs-cdn-config-adopter@adobe.com} に送信します。**
 
 ## Cloud Manager {#cloud-manager}
 
@@ -149,4 +149,4 @@ Cloud Manager の月次リリースの完全なリストは、[こちら](/help/
 
 * コアコンポーネントに基づくアダプティブ Formsを送信できない。 この問題は、コアコンポーネントバージョン 2.0.38～2.0.60 を使用して作成されたアダプティブFormsで発生します。
 
-  問題を解決する方法は次のとおりです。 アダプティブフォームのコアコンポーネントバージョン 2.0.62 以降に移行できます。 お使いの環境でアダプティブ Formsのコアコンポーネントのバージョンを設定するには、[core.forms.components.version、core.forms.components.af.version、core.wcm.components.version コンポーネントのバージョンを設定 ](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository)Formsas a Cloud ServiceリポジトリーまたはAEM アーキタイプベースのプロジェクトで依存関係を設定し、[ 変更内容をFormsas a Cloud Service環境にデプロイします ](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment)。 アダプティブForms コアコンポーネントの依存関係の最新バージョンは、[ アダプティブForms コアコンポーネント Git リポジトリ ](https://github.com/adobe/aem-core-forms-components#system-requirements) で確認できます。
+  問題を解決する方法は次のとおりです。 アダプティブフォームのコアコンポーネントバージョン 2.0.62 以降に移行できます。 お使いの環境でアダプティブ Forms コアコンポーネントのバージョンを設定するには、[core.forms.components.version、core.forms.components.af.version、core.wcm.components.version コンポーネントのバージョンを設定 ](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository)Forms as a Cloud Service リポジトリまたはAEM アーキタイプベースのプロジェクトで依存関係を設定し、[ 変更内容をForms as a Cloud Service環境にデプロイします ](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment)。 アダプティブForms コアコンポーネントの依存関係の最新バージョンは、[ アダプティブForms コアコンポーネント Git リポジトリ ](https://github.com/adobe/aem-core-forms-components#system-requirements) で確認できます。

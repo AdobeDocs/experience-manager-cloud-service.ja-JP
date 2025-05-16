@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.12.0 リ
 exl-id: b36add58-a2ba-4299-94be-e0026e9c553c
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 74%
@@ -27,7 +27,7 @@ ht-degree: 74%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.12.0）のリリース日は 2023年12月14日です。次回の機能リリース（2024.1.0）は 2023年1月25日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.12.0）のリリース日は、2023年12月14日（PT）です。次回の機能リリース（2024.1.0）は 2023年1月25日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -51,7 +51,7 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 実際の使用のモニタリング（RUM）データサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントの信頼性の高い測定を保証します。ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
 
-この新機能のテストやフィードバックの送信に関心がある場合は、Adobe IDに関連付けられたメールアドレスから、実稼動、ステージ、開発環境のドメイン名と共に `aemcs-rum-adopter@adobe.com` にメールを送信してください。 Adobeのプロダクトチームが、Real Use Monitoring （RUM）データサービスを有効にします。
+この新機能のテストやフィードバックの送信に関心がある場合は、Adobe IDに関連付けられたメールアドレスから、実稼動、ステージ、開発環境のドメイン名と共に `aemcs-rum-adopter@adobe.com` にメールを送信してください。 Adobeの製品チームが、Real Use Monitoring （RUM）データサービスを有効にします。
 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -105,9 +105,9 @@ Adobe Firefly のテキストから画像生成機能を統合して、検索ク
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
-### CDN 設定の早期導入プログラム {#cdn-config-early-adopter}
+### ドメインマッピング早期導入プログラム {#cdn-config-early-adopter}
 
-オプションでライセンス利用可能な Web アプリケーションファイアウォール（WAF）ルールを含む、最近リリースされた [ トラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md) に加えて、設定パイプラインを使用して、他のタイプの CDN 設定を宣言およびデプロイすることもできます。 次のようなユースケースについてお聞かせください。
+オプションでライセンス利用可能な Web Application Firewall （WAF）ルールを含む、最近リリースされた [ トラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md) に加えて、設定パイプラインを使用して、他のタイプの CDN 設定を宣言およびデプロイすることもできます。 次のようなユースケースについてお聞かせください。
 * 301/302 クライアントサイドのリダイレクト
 * 任意の接触チャネルに対するエッジでのリクエストのプロキシ処理
 * URL 変換
@@ -116,7 +116,7 @@ Adobe Firefly のテキストから画像生成機能を統合して、検索ク
 * ユーザー名/パスワードによる認証
 * その他の便利な CDN 設定
 
-公式メール ID からフィードバックを記載したメールを **0&rbrace;aemcs-cdn-config-adopter@adobe.com&rbrace; に送信します。**
+公式メール ID からフィードバックを記載したメールを **0}aemcs-cdn-config-adopter@adobe.com} に送信します。**
 
 ## Cloud Manager {#cloud-manager}
 

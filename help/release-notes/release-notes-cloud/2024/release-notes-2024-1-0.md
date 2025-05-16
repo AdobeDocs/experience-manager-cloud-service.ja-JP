@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.1.0 リ�
 exl-id: 9f5d97c6-6536-4593-acbf-cbe8bf9b5eeb
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 96%
@@ -37,7 +37,7 @@ ht-degree: 96%
 
 2024.1.0 リリースで追加された機能の概要については、2024年1月のリリースに関する概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3448930?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3427041?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -95,10 +95,10 @@ Assets Essentials では、ブロックリストを定義できるようにな�
 
   公式メール ID から `aem-forms-early-adopter-program@adobe.com` に送信して早期導入プログラムに参加し、機能へのアクセスをリクエストできます。
 
-* **[Real Use Monitoring （RUM） Data Service を利用すると](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;AEM as a Cloud Serviceのクライアントサイド収集を有効にできます。
+* **[Real Use Monitoring （RUM） Data Service を利用すると](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**AEM as a Cloud Serviceのクライアントサイド収集を有効にできます。
 実際の使用のモニタリング（RUM）データサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントの信頼性の高い測定を保証します。ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
 
-  この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから、RUM を有効にする各環境のドメイン名を添付して、`aemcs-rum-adopter@adobe.com` にメールを送信してください。Adobeのプロダクトチームが、Real Use Monitoring （RUM）データサービスを有効にします。
+  この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから、RUM を有効にする各環境のドメイン名を添付して、`aemcs-rum-adopter@adobe.com` にメールを送信してください。Adobeの製品チームが、Real Use Monitoring （RUM）データサービスを有効にします。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
@@ -110,7 +110,7 @@ Dynatrace のお客様は、AEM の使用状況を監視できます。アプリ
 
 [迅速な開発環境（RDE）](/help/implementing/developing/introduction/rapid-development-environments.md)は、早期導入者向けに、[サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)と[サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)に基づいたフロントエンドコードをサポートするようになりました。RDE では、[フロントエンドパイプライン](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)ではなくコマンドラインディレクティブを使用して行われます。試してフィードバックを提供するには、**aemcs-rde-support@adobe.com** までご連絡ください。
 
-### CDN 設定の早期導入プログラム {#cdn-config-early-adopter}
+### ドメインマッピング早期導入プログラム {#cdn-config-early-adopter}
 
 オプションでライセンス可能な web アプリケーションファイアウォール（WAF）ルールを含む、最近リリースされた[トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)に加えて、設定パイプラインを使用して[他のタイプの CDN 設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)を宣言およびデプロイする機会があります。**aemcs-cdn-config-adopter@adobe.com** にメールを送信して早期導入プログラムに参加し、以下へのアクセス権を取得します。
 * 301/302 クライアントサイドのリダイレクト

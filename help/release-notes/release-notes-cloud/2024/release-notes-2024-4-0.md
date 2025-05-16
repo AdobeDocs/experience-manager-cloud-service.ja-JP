@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.4.0 リ�
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: 7069ee2453b0c589f92f9899db0b8307e4133756
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '2707'
 ht-degree: 97%
@@ -37,7 +37,7 @@ ht-degree: 97%
 
 2024.4.0 リリースで追加された機能の概要については、2024年4月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3446303?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -163,14 +163,14 @@ Experience Manager Assets では、[シングルクリックでアセットま�
 
   公式メール ID から `aem-forms-ea@adobe.com` に送信して早期導入プログラムに参加し、機能へのアクセスをリクエストできます。
 
-* **[Real Use Monitoring （RUM） Data Service を利用すると](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;AEM as a Cloud Serviceのクライアントサイド収集を有効にできます。
+* **[Real Use Monitoring （RUM） Data Service を利用すると](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**AEM as a Cloud Serviceのクライアントサイド収集を有効にできます。
 実際の使用のモニタリング（RUM）データサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントの信頼性の高い測定を保証します。ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
 
   この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから、RUM を有効にする各環境のドメイン名を添付して、`aemcs-rum-adopter@adobe.com` にメールを送信してください。Adobeの製品チームが、Real Use Monitoring （RUM）データサービスを有効にします。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
-### CDN 設定 {#cdn-config}
+### ドメインマッピング {#cdn-config}
 
 次の方法で、アドビの CDN でのトラフィックを設定します。
 

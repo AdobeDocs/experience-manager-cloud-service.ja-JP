@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
-workflow-type: ht
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+workflow-type: tm+mt
 source-wordcount: '1021'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->顧客が管理する（OV/EV）SSL 証明書および CDN プロバイダーを使用している場合は、SSL 証明書の追加をスキップして、準備ができたら [CDN 設定の追加](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)に直接進むことができます。
+>顧客管理（OV/EV）の SSL 証明書と顧客管理の CDN プロバイダーを使用する場合は、SSL 証明書の追加をスキップし、準備が整ったら [ ドメインマッピングの追加 ](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) に直接進むことができます。
 
 証明書のプロビジョニングには、数日かかる場合があります。したがって、アドビでは、遅延を避けるために、期限や運用開始日に先立って独自の証明書をプロビジョニングすることをお勧めします。
 
@@ -85,7 +85,7 @@ Cloud Manager に追加したら、アドビがユーザーに代わって DV SS
 
 これで、アドビが管理する有効な DV SSL 証明書がプロジェクトに追加されました。この手順は、多くの場合、カスタムドメイン名を設定する最初の手順となります。
 
-これで、[CDN 設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)を追加する準備が整いました。
+これで、[CDN 設定](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)を追加する準備が整いました。
 
 ## 顧客が管理する（OV/EV）SSL 証明書の追加 {#add-customer-managed-ssl-cert}
 
@@ -132,7 +132,7 @@ Cloud Manager に追加したら、アドビがユーザーに代わって DV SS
 
 これで、プロジェクトに機能する SSL 証明書が追加されました。この手順は、多くの場合、カスタムドメイン名を設定する最初の手順となります。
 
-これで、[CDN 設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)を追加する準備が整いました。
+これで、[CDN 設定](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)を追加する準備が整いました。
 
 
 

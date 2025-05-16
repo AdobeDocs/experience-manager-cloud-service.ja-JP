@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7e4e35a6618f12757a3be5ea793d183fe31f48fe
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '6157'
 ht-degree: 99%
@@ -1242,8 +1242,8 @@ ht-degree: 99%
          + [SSL 証明書エラーのトラブルシューティング](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + ドメインマッピング {#cdn-configurations}
-         + [ドメインマッピングの追加](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [ドメインマッピングの管理](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
+         + [ドメインマッピングの追加](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
+         + [ドメインマッピングの管理](/help/implementing/cloud-manager/domain-mappings/manage-domain-mappings.md)
       + IP 許可リスト {#ip-allow-lists}
          + [IP 許可リストの概要](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [IP 許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)

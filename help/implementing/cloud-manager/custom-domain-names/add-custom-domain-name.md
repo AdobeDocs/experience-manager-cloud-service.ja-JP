@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -75,7 +75,7 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 
    >[!NOTE]
    >
-   >顧客が管理する独自の（OV/EV または DV） SSL 証明書を使用する場合は、SSL 証明書を追加する必要はありません。 このルールは、顧客が管理する CDN （コンテンツ配信ネットワーク） ***プロバイダー*** を使用する予定の場合にも適用されます。 代わりに、準備が整ったら [CDN 設定の追加](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)に直接進むことができます。
+   >顧客が管理する自社の（OV/EV または DV）SSL 証明書を使用する場合は、SSL 証明書を追加する必要はありません。このルールは、顧客が管理する CDN（コンテンツ配信ネットワーク）***プロバイダー***&#x200B;を使用する予定の場合にも適用されます。準備ができたら、代わりに、[ ドメインマッピングを追加 ](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) に直接移動します。
 
 
 ### アドビが管理する証明書の手順 {#adobe-managed-cert-steps}
