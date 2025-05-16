@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
-workflow-type: ht
-source-wordcount: '2566'
-ht-degree: 100%
+source-git-commit: c6ba1c2bcf7db8c406350c81c51639dc5bc8843f
+workflow-type: tm+mt
+source-wordcount: '2567'
+ht-degree: 99%
 
 ---
 
@@ -166,14 +166,14 @@ ht-degree: 100%
 ![コンテンツフラグメントコンソール - 選択したフラグメントのツールバー](assets/cf-managing-console-fragment-toolbar.png)
 
 * **[新しいエディターで開く](#editing-the-content-of-your-fragment)**
-* （元のエディタで）**[開く](/help/assets/content-fragments/content-fragments-variations.md)**
 * **[公開](#publishing-and-previewing-a-fragment)**（および&#x200B;**[非公開](#unpublishing-a-fragment)**）
 * **[タグを管理](#manage-tags)**
-* **[コピー](/help/assets/manage-digital-assets.md)**
-* **[移動](/help/assets/manage-digital-assets.md)**
-* **[名前を変更](/help/assets/manage-digital-assets.md)**
-* **[削除](#deleting-a-fragment)**
+* **コピー**
 * **[置換](#find-and-replace)**
+* **移動**
+* **名前の変更**
+* **[削除](#deleting-a-fragment)** （非公開のフラグメントでのみ使用できます）
+
 
 >[!NOTE]
 >
