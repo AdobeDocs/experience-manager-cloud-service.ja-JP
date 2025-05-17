@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 41f4619728e7c9a964f38c0d96b3cb88969c31b8
+source-git-commit: c2229d040c8df7c9089d141d57ca59ff2f4ce8a7
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 93%
@@ -13,7 +13,7 @@ ht-degree: 93%
 ---
 
 
-# ドメインマッピングの追加 {#add-cdn}
+# ドメインマッピングの追加 {#add-domain-mapping}
 
 プログラム内でアドビが管理する CDN の SSL 証明書を持つドメインをリンクするには、CDN（コンテンツ配信ネットワーク）設定を追加する必要があります。
 
