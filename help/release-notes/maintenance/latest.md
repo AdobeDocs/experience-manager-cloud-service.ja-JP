@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 6493c48797c09fa4598c2c0ff86c9cc1fafa758c
+source-git-commit: 53a2dd005de075c0f1e4bf83675995608e5f785d
 workflow-type: tm+mt
-source-wordcount: '1448'
-ht-degree: 15%
+source-wordcount: '1482'
+ht-degree: 14%
 
 ---
 
@@ -16,13 +16,17 @@ ht-degree: 15%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 20783 {#20783}
+## リリース 20936 {#20936}
 
-2025年5月13日（PT）に公開された、メンテナンスリリース 20783 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 20626 でした。
+2025年5月19日（PT）に公開された、メンテナンスリリース 20936 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 20626 でした。
 
 2025.5.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
 
-### 機能強化 {#enhancements-20783}
+>[!NOTE]
+>
+>リリース 20783 は 5 月 19 日に非公開になり、リリース 20936 に置き換えられました。
+
+### 機能強化 {#enhancements-20936}
 
 * FORMS-19125: コアコンポーネントのアダプティブフォームエディターが強化され、データソースツリーの対応するセクションがフォームキャンバスにドロップされたときに、使用可能なアダプティブフォームフラグメントの自動マッピングをサポートするようになりました。 これにより、生産性向上のための主要な機能が基盤エディターからコアコンポーネントに提供されます。
 * FORMS-17107:AEM Formsで、クライアントサイドのカスタム関数の解析が強化されました。 これには、オプションの連結などの最新のJavaScript機能（ECMAScript ES10 以降）のサポートが含まれ、カスタム関数スクリプト内で静的読み込みを使用する機能が導入されています。 これにより、開発者は、コアコンポーネントおよびEdge Delivery Servicesに基づくアダプティブFormsで、コードをより適切に整理し、ESM モジュールを利用し、カスタム関数に発生していた以前の制限を削除できます。特に、以前にこれらの機能に対する回避策を必要としたユーザー向けです。
@@ -46,7 +50,7 @@ ht-degree: 15%
 * SITES-26711:RTE テキストフィールドのリンクが、MSM ロールアウト上のライブコピーを指すように更新されない。
 * SITES-25976:MSM ロールアウト後にエクスペリエンスフラグメント内のリンクが適応しない。
 
-### 修正された問題 {#fixed-issues-20783}
+### 修正された問題 {#fixed-issues-20936}
 
 * ASSETS-50994:AemRequestEventFilter でブロックされた受信トラフィック。
 * CQ-4358591:「翻訳プロジェクトを作成」オプションを使用してサイト参照パネルから言語コピーを作成する際に、少数の言語のプロジェクトが見つからない。
@@ -92,21 +96,22 @@ ht-degree: 15%
 * SITES-31020: ライブコピージョブ UI の作成を強化して、顧客に進行状況を表示します。
 * SITES-29816：エクスペリエンスフラグメントのライブコピーの作成中に「リソースが見つかりません」エラーが発生する。
 * SITES-29363：ネストされたライブコピーコンテンツ階層に対して「ライブコピーをリセット」ボタンが機能しない。
+* SITES-31467：ページエディターの `contexthub.authoring-hook.js` の JS エラー。
 * SKYOPS-106509:Java 21 での GSON 反射アクセスをサポートするために、補足の add-opens フラグを追加しました。
 
-### 既知の問題 {#known-issues-20783}
+### 既知の問題 {#known-issues-20936}
 
-なし。
+* SITES-28030：ターゲティングオプションを選択すると、「ターゲットを開始」オプションが表示されない。
 
-### 廃止された機能と API {#deprecated-20783}
+### 廃止された機能と API {#deprecated-20936}
 
 AEM as a Cloud Service で廃止および削除された機能と API について詳しくは、[廃止および削除された機能と API](/help/release-notes/deprecated-removed-features.md) ドキュメントを参照してください。
 
-### セキュリティ修正 {#security-20783}
+### セキュリティ修正 {#security-20936}
 
 AEM as a Cloud Service では、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。 このメンテナンスリリースでは、特定された 19 個の脆弱性に対処し、堅牢なシステム保護に対する取り組みを強化しています。
 
-### 組み込みテクノロジー {#embedded-tech-20783}
+### 組み込みテクノロジー {#embedded-tech-20936}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
