@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9bf64836c2f769c31017d7f9df6bc26b280606a0
+source-git-commit: 8696cf8a7e7cfc439450b34fa6fda10b38cd415e
 workflow-type: tm+mt
-source-wordcount: '6157'
+source-wordcount: '6162'
 ht-degree: 99%
 
 ---
@@ -1227,8 +1227,9 @@ ht-degree: 99%
       + Edge Delivery サイト {#edge-delivery-sites}
          + [Cloud Manager の Edge Delivery Services の概要](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Cloud Manager への Edge Delivery サイトの追加](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
-         + [Cloud Manager での Edge Delivery サイトの作成](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+         + [ワンクリックで最初のEdge Delivery サイトを作成](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
          + [Edge Delivery サイト用のプッシュ検証の設定](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
+         + [コンテンツSourceの設定](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
          + [Cloud Manager での Edge Delivery サイトの管理](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + ドメイン設定 {#custom-domain-names}
          + [ドメイン設定の概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
