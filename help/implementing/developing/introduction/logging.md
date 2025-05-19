@@ -4,9 +4,9 @@ description: AEM as a Cloud Service のログを使用して一元的なログ�
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: f799dd9a4a2e5138776eb57a04c116df49d28030
+source-git-commit: 783210b4b72cf6efbdb4cf8c8cab08dbcd3004c6
 workflow-type: tm+mt
-source-wordcount: '2546'
+source-wordcount: '2540'
 ht-degree: 94%
 
 ---
@@ -154,7 +154,6 @@ Sling LogManager ファクトリの OSGi 設定を使用して、カスタム Ja
 |---|---|
 | `org.apache.sling.commons.log.names` | ログステートメントを収集する Java パッケージです。 |
 | `org.apache.sling.commons.log.level` | Java パッケージをログに記録するログレベルです（`org.apache.sling.commons.log.names` で指定） |
-| `org.apache.sling.commons.log.file` | 出力のターゲットを `logs/error.log` に指定します |
 
 その他の LogManager OSGi 設定プロパティを変更すると、AEM as a Cloud Service での可用性の問題が発生する場合があります。
 
