@@ -1,11 +1,12 @@
 ---
 title: コンテンツSourceの設定
-description: Helix 4 の fstab.yaml または Helix 5 のEdge Delivery UI （または Configuration Service API）を使用して、Edge Delivery Services サイトのコンテンツソースを設定する方法を説明します。
+description: Helix 4 の fstab.yaml または Helix 5 のCloud Manager（または Configuration Service API）のガイド付きウィザードを使用して、Edge Delivery サイトのコンテンツソースを設定する方法を説明します。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8696cf8a7e7cfc439450b34fa6fda10b38cd415e
+exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
+source-git-commit: 56ab7a402a2fa7bdcf30bd66045b04e9314bed64
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '520'
 ht-degree: 2%
 
 ---
@@ -30,7 +31,7 @@ Adobe Experience Manager（AEM）Edge Delivery Servicesを使用すると、高�
 **Helix のバージョンの確認**
 
 * ヘリックス 4 - プロジェクトに `fstab.yaml` ファイルが含まれています。
-* ヘリックス 5 - プロジェクト *使用していない*`fstab.yaml` で、[Edge Delivery Services UI](#config-helix5) または API を使用して設定されています。
+* らせん 5 - プロジェクト *使用していません*`fstab.yaml` および [Cloud Managerを通じて、ガイド付きウィザード ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) または API を使用して設定されました。
 
 それでも不明な場合は、リポジトリメタデータを確認するか、管理者に問い合わせてください。
 
