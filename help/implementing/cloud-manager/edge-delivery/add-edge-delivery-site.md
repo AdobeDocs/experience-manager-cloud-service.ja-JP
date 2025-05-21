@@ -4,10 +4,10 @@ description: 実稼動プログラムまたはサンドボックスプログラ�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: 54ea92b53d97be314dcef1ed3afbde35b16f9949
+source-git-commit: a7e8e340355d85236a0997b28e0a04296b2ef5b4
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 94%
+source-wordcount: '502'
+ht-degree: 89%
 
 ---
 
@@ -15,10 +15,13 @@ ht-degree: 94%
 
 >[!IMPORTANT]
 >
->Cloud ManagerにEdge Deliver Services サイトをオンボーディングする必要がある理由を説明します。 [Edge Delivery ServicesにAdobeの推奨パスを使用するメリット ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds) を参照してください。
+>Edge Delivery Services サイトをCloud Managerにオンボーディングする必要がある理由を説明します。
+>[Edge Delivery ServicesにAdobeの推奨パスを使用するメリット ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds) を参照してください。
 
 **Cloud Manager に Edge Delivery サイトを追加するには：**
 
+1. Cloud ManagerでEdge Delivery サイトにオンボーディングする前に、まずEdge Delivery Services ライセンスを使用してプログラムを作成していることを確認してください。
+[ 実稼動プログラムの作成 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) を参照してください。
 1. [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切なプログラムを選択します。
 1. 次のいずれかの操作を行います。
 
