@@ -1,19 +1,21 @@
 ---
-title: アダプティブフォームと Microsoft® Power Automate の統合方法
-description: アダプティブフォームを Microsoft® Power Automate と統合します。
+title: アダプティブフォームをMicrosoft&reg; Power Automate と統合する方法
+description: アダプティブフォームとMicrosoft&reg; Power Automate の統合。
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: AEM forms を Power Automate に接続、Power Automate による AEM Forms の自動処理、Power Automate を AEM Forms に統合、アダプティブフォームから Power Automate にデータを送信
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: ae2815a49a674521344ded8da009290c4d999fdf
-workflow-type: ht
-source-wordcount: '1209'
-ht-degree: 100%
+source-git-commit: 8d0814642fa0e5eb3f92a499202d0b79d90f91e3
+workflow-type: tm+mt
+source-wordcount: '1243'
+ht-degree: 95%
 
 ---
 
 
 # アダプティブフォームと Microsoft® Power Automate の接続 {#connect-adaptive-form-with-power-automate}
+
+<span class="preview"> GovCloud を使用していて、GCC （Government Cloud Computing）テナントに接続する必要がある場合は、公式アドレスからaem-forms-ea@adobe.comにメールを送信して、早期導入プログラムを通じてアクセスをリクエストします。</span>
 
 送信時に Microsoft® Power Automate のクラウドフローを実行するように、アダプティブフォームを設定できます。設定済みのアダプティブフォームは、キャプチャされたデータ、添付ファイルおよびレコードのドキュメントを Power Automate クラウドフローに送信して処理します。 Microsoft® Power Automate の機能を活用して、キャプチャされたデータを中心にビジネスロジックを構築し、顧客のワークフローを自動化しながら、カスタムのデータキャプチャエクスペリエンスを構築するのに役立ちます。
 
@@ -215,7 +217,7 @@ Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接
 * [Create an Adaptive Form](creating-adaptive-form-core-components.md)
 * [Configure a Submit Action](configure-submit-actions-core-components.md)
 * [Adobe Experience Manager Connector for Microsoft&reg; Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
-* [Connect Adaptive Form to Microsoft® Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+* [Connect Adaptive Form to Microsoft&reg; Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
 -->
 
 
