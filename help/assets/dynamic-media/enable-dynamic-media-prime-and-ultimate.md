@@ -216,7 +216,7 @@ Cloud Manager で次の手順を実行して、配信層にカスタムドメイ
 
 1. [カスタムドメイン名を追加](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings)します。
 
-1. 環境の詳細ページに移動して、[CDN 設定を追加](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping)します。設定を追加する際に、**[!UICONTROL CDN を設定]**&#x200B;ダイアログボックスの「**[!UICONTROL 層]**」フィールドで「**[!UICONTROL 配信]**」を選択します。
+1. 環境の詳細ページに移動して、[CDN 設定を追加](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping)します。設定を追加する際に、**[!UICONTROL CDN を設定]**&#x200B;ダイアログボックスの「**[!UICONTROL 層]**」フィールドで「**[!UICONTROL 配信]**」を選択します。
 
    ![CDN を設定](/help/assets/assets/select-delivery-tier-in-configure-cdn-form.png)
 
