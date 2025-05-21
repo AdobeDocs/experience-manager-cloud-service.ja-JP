@@ -4,10 +4,10 @@ description: OpenAPI を活用した AEM コンテンツフラグメント配信
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
-workflow-type: ht
-source-wordcount: '313'
-ht-degree: 100%
+source-git-commit: 7f7ed3adcbd01f688f48f3ba4a0c25293b8b1551
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 94%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Adobe Experience Manager（AEM）as a Cloud Service では、コンテンツフラグメント配信用の AEM OpenAPI には次の特徴があります。
 
-* [AEM Edge Delivery Services](/help/edge/overview.md) 上の HTTP REST API で、コンテンツフラグメントから構造化コンテンツを JSON 形式で配信するように設計されています。
+* は、JSON 形式のAEM コンテンツフラグメントのライブ配信用に最適化された OpenAPI です
 * アクティブコンテンツの無効化を可能にする最新の CDN 統合を提供します。
 * コンテンツ配信（パフォーマンス、スケーラビリティ、CDN 統合、最適化された JSON 制御と出力）に焦点を合わせています。
 * 参照されたフラグメントとアセットの JSON を改善する機能が含まれます。
