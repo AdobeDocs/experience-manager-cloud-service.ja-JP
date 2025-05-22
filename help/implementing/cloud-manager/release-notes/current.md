@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 8696cf8a7e7cfc439450b34fa6fda10b38cd415e
 workflow-type: tm+mt
 source-wordcount: '640'
-ht-degree: 24%
+ht-degree: 52%
 
 ---
 
@@ -21,15 +21,15 @@ AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2025.5.0 �
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service の Cloud Manager 2025.5.0 のリリース日は 2025年5月8日木曜日（PT）です。
+AEM as a Cloud Service の Cloud Manager 2025.5.0 のリリース日は 2025年5月8日 木曜日（PT）です。
 
-次回のリリース予定は 2025年6月5日木曜日（PT）です。
+次回のリリース予定は 2025年6月5日 木曜日（PT）です。
 
 ## 新機能 {#what-is-new}
 
 ### Edge Delivery Services用にワンクリックでコンテンツソースを設定
 
-Adobe Experience Manager（AEM）Edge Delivery Servicesを使用すると、高速でグローバルに分散したエッジネットワークを使用して、Google Drive、SharePoint、AEM自体など複数のソースからコンテンツを配信できます。
+Adobe Experience Manager（AEM）Edge Delivery Services を使用すると、高速でグローバルに分散した Edge Network を使用して、Google Drive、SharePoint、AEM 自体などの複数のソースからコンテンツを配信できます。
 
 コンテンツソースの設定は、Helix 4 と Helix 5 で異なります。 両方のバージョンの違いを説明し、包括的な設定手順、例、検証手順に従います。
 
@@ -38,28 +38,28 @@ Adobe Experience Manager（AEM）Edge Delivery Servicesを使用すると、高�
 
 ## 早期導入プログラム {#early-adoption}
 
-Cloud Managerの早期導入プログラムに参加すると、一般リリース前に今後の機能を独占的に利用できます。
+Cloud Manager の早期導入プログラムに参加すると、一般リリース前の新機能に特別にアクセスできます。
 
-現在、次の早期導入の機会があります。
+現在利用可能な早期導入プログラムの機会は、次のとおりです。
 
 ### Edge Delivery設定パイプラインを追加 {#add-eds-pipeline}
 
-Edge Delivery Servicesで作成されたサイトで Config パイプラインがサポートされるようになり、Cloud Service環境だけでなく、この機能が拡張されました。 **設定パイプライン** を使用して、トラフィックフィルタリングルールや Web アプリケーションファイアウォール（WAF）設定などの設定を管理できます（該当する場合）。 [ サポートされる設定 ](/help/operations/config-pipeline.md#configurations) を参照してください。
+Edge Delivery Servicesで作成されたサイトで Config パイプラインがサポートされるようになり、Cloud Service環境だけでなく、この機能が拡張されました。 **設定パイプライン** を使用して、トラフィックフィルタリングルールや Web アプリケーションファイアウォール（WAF）設定などの設定を管理できます（該当する場合）。 [サポートされている設定](/help/operations/config-pipeline.md#configurations)を参照してください。
 
 ![ パイプラインを追加ドロップダウンリストでEdge Delivery パイプラインを追加 ](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png)
 
-この新機能のテストやフィードバックの提供に関心がある場合は、Adobe IDに関連付けられたメールアドレスから [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) にメールを送信してください。
+この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) にメールを送信します。
 
-### 独自の Git の導入 – Azure DevOps をサポート {#gitlab-bitbucket-azure-vsts}
+### 独自の Git の導入 - Azure DevOps のサポート開始 {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
-最新の Azure DevOps リポジトリと従来の VSTS （Visual Studio Team Services）リポジトリの両方をサポートすることで、Azure DevOps Git リポジトリをCloud Managerにオンボーディングできるようになりました。
+Azure DevOps Git リポジトリを Cloud Manager にオンボードできるようになりました。これは、最新の Azure DevOps リポジトリとレガシー VSTS（Visual Studio Team Services）リポジトリの両方に対応しています。
 
-* Edge Delivery Servicesのユーザーは、オンボーディングされたリポジトリーを使用して、サイトコードを同期およびデプロイできます。
-* AEM as a Cloud ServiceおよびAdobe Managed Services（AMS）のユーザーは、リポジトリをフルスタックパイプラインとフロントエンドパイプラインの両方にリンクできます。
+* Edge Delivery Services のユーザーは、オンボードされたリポジトリを使用して、サイトコードを同期およびデプロイできます。
+* AEM as a Cloud Service および Adobe Managed Services（AMS）のユーザーは、リポジトリをフルスタックパイプラインとフロントエンドパイプラインの両方にリンクできます。
 
-コード品質パイプラインを通じた追加のパイプラインタイプとプルリクエスト検証のサポートは、近日中に提供されます。
+追加のパイプラインタイプと、コード品質パイプラインを通じたプルリクエスト検証のサポートは、近日リリース予定です。
 
 [Cloud Manager でのプライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/external-repositories.md)を参照してください。
 
