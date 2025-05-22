@@ -14,7 +14,7 @@ ht-degree: 98%
 
 # Adobe Target との統合{#integrating-with-adobe-target}
 
-Adobe Marketing Cloud の一部である [Adobe Target](https://experienceleague.adobe.com/en/docs/target) を使用すると、あらゆるチャネルにわたってターゲティングと測定を行い、コンテンツの適切さを向上できます。Adobe Target と AEM as a Cloud Service の統合には、次のものが必要です。
+Adobe Marketing Cloud の一部である [Adobe Target](https://experienceleague.adobe.com/ja/docs/target) を使用すると、あらゆるチャネルにわたってターゲティングと測定を行い、コンテンツの適切さを向上できます。Adobe Target と AEM as a Cloud Service の統合には、次のものが必要です。
 
 * タッチ操作対応 UI を使用して、AEM as a Cloud Service で Target 設定を作成します（IMS 設定が必要）。
 * [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=ja) の拡張機能として Adobe Target を追加し、設定する方法について説明します。
@@ -29,7 +29,7 @@ Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／
 
 >[!NOTE]
 >
->Adobe Targetのドキュメント [Target とAdobe Experience Managerの統合（AEM） ](https://experienceleague.adobe.com/en/docs/target/using/integrate/aem/aem-target-integration) も参照してください。
+>Adobe Targetのドキュメント [Target とAdobe Experience Managerの統合（AEM） ](https://experienceleague.adobe.com/ja/docs/target/using/integrate/aem/aem-target-integration) も参照してください。
 
 ## Adobe Target 設定の作成 {#create-configuration}
 
