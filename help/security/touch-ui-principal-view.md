@@ -63,7 +63,7 @@ CRXDE に移動する必要がなくなります。同じビューに統合さ�
 
 >[!NOTE]
 >
->権限と説明の詳細なリストについては、[ユーザー、グループおよびアクセス権限の管理](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management)を参照してください。
+>権限と説明の詳細なリストについては、[ユーザー、グループおよびアクセス権限の管理](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management)を参照してください。
 
 ![特定のパスの権限の検索](assets/image2019-3-21_0-5-47.png) ![選択したパスの表示に従い、「dam-users」の新しいエントリを垂直列に追加します。](assets/image2019-3-21_0-6-53.png)
 
