@@ -3,10 +3,10 @@ title: AEM as a Cloud Serviceのジェネレーティブ AI
 description: Adobe Experience Manager as a Cloud Serviceのジェネレーティブ AI について学ぶ
 feature: Generative AI
 role: Admin, Architect, Developer, User
-source-git-commit: 137f39e4706ee431e1773024595887e3f0aa34e5
+source-git-commit: 2eb6e9e06df282b28f7f977ce51accf5d686245b
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 28%
+source-wordcount: '292'
+ht-degree: 32%
 
 ---
 
@@ -44,3 +44,7 @@ Adobe Experience Manager（AEM）as a Cloud ServiceのAdobe生成 AI を使用�
 ## その他の情報 {#further-information}
 
 * [Adobe AI の概要 ](https://www.adobe.com/ai/overview.html)
+
+* [Experience Cloud 製品の生成 AI](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/generative-ai)
+
+   * [Experience Cloud 製品の生成 AI - Adobe Experience Manager](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/generative-ai#aem)
