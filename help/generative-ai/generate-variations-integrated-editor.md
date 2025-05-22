@@ -4,9 +4,9 @@ description: AEM as a Cloud Service 内の様々なエディターからアク�
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 743f9c43b90a6ad9c9fd41f4089680da44a9c8ff
+source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1416'
 ht-degree: 95%
 
 ---
@@ -333,6 +333,8 @@ AEM Sidekick からのアクセスは、[ドキュメントベースのオーサ
    * [Experience Cloud 製品の生成 AI - Adobe Experience Manager](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/generative-ai#aem)
 
 * [Experience Cloudのバリエーションのランディングページを生成 ](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
+
+* [AEM as a Cloud Serviceで生成](/help/generative-ai/generative-ai-in-aem.md)
 
 ## リリース履歴 {#release-history}
 
