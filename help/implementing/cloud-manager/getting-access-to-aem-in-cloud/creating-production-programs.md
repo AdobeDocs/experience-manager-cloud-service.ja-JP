@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
+source-git-commit: 8ca3546725f2a95d233497a899afe3b4f6036775
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 98%
+source-wordcount: '1079'
+ht-degree: 95%
 
 ---
 
@@ -48,13 +48,18 @@ ht-degree: 98%
 1. **ソリューションとアドオン**&#x200B;リストボックスで、プログラムに含めるソリューションを 1 つ以上選択します。
 
    * 利用可能な様々なソリューションに対して 1 つ以上のプログラムが必要かどうかが不明な場合は、最も興味のあるプログラムを選択します。後で[プログラムを編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)することで、追加のソリューションをアクティブ化することができます。プログラム設定の推奨事項について詳しくは、[実稼動プログラムの概要ドキュメント](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)を参照してください。
-   * プログラムを作成するには、少なくとも 1 つのソリューションが必要です。
-   * デジタルエクスペリエンスを最適化する完全マネージド CDN ソリューションには **0&rbrace;Edge Delivery Services&rbrace; を選択します。**&#x200B;詳しくは、[Edge Delivery Services を使用した Cloud Manager プロジェクトの配信について](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)を参照してください。
-   * 「**[セキュリティの強化を有効にする](#security)**」オプションを選択した場合は、HIPAA 資格が使用可能なソリューションのみを選択できます。
+   * プログラムを作成するには、少なくとも 1 つのソリューションを選択する必要があります。 例えば、デジタルエクスペリエンスを最適化する完全に管理された CDN ソリューションとして **0}Edge Delivery Services} を選択できます。**&#x200B;詳しくは、[Edge Delivery Services を使用した Cloud Manager プロジェクトの配信について](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)を参照してください。
 
-     ![ソリューションの選択](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
+   ![ソリューションの選択](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/add-production-program-with-edge-v2.png)
 
-   * ソリューション名の左にある ![山形サイズ 300 アイコン](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) をクリックすると、オプションのアドオンが表示されます（**Sites** の下の「**Commerce**」アドオンオプションなど）。
+
+
+
+   <!-- * If you selected the **[Enable Enhanced Security](#security)** option, you can select only as many solutions for which HIPAA entitlements are available. -->
+
+
+
+   * ソリューション名の左側にある ![ 山形サイズ 300 アイコン ](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) をクリックして、オプションのアドオンを表示します。<!-- such as the **Commerce** add-on option under **Sites**. -->
 
    ![アドオンを選択](assets/setup-prod-commerce.png)
 
