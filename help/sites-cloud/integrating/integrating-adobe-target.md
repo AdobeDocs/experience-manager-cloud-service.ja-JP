@@ -33,7 +33,7 @@ Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／
 
 ## Adobe Target 設定の作成 {#create-configuration}
 
-1. **ツール**／**クラウドサービス**に移動します。
+1. **ツール**／**クラウドサービス**&#x200B;に移動します。
    ![ナビゲーション](assets/cloudservice1.png "ナビゲーション")
 2. 「**Adobe Target**」を選択します。
 3. 「**作成**」ボタンを選択します。
