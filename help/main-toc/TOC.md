@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8c53a27f7b4c076b92cf62df184018fd4b949656
+source-git-commit: b246b1729d7e598dc593ecce05bd8975d4752f5a
 workflow-type: tm+mt
-source-wordcount: '6175'
+source-wordcount: '6173'
 ht-degree: 99%
 
 ---
@@ -495,7 +495,7 @@ ht-degree: 99%
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
-   + [AEM as a Cloud Service の実際の使用のモニタリング](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
+   + [AEM as a Cloud Serviceの運用上のテレメトリ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概要と新機能](/help/assets/overview.md)
    + [ [!DNL Assets] as a [!DNL Cloud Service] の主な変更点](/help/assets/assets-cloud-changes.md)
@@ -1078,7 +1078,7 @@ ht-degree: 99%
          + [フォームのグローバル化：フォーム翻訳ガイド](/help/edge/docs/forms/translate-forms.md)
          + [フォームの保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/recaptacha-forms.md)
          + [カスタムフォームコンポーネントの作成：開発者向けガイド](/help/edge/docs/forms/custom-components-forms.md)
-         + [フォームのパフォーマンスの監視：実際の使用のモニタリングガイド](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [ フォームのパフォーマンスの監視：運用テレメトリガイド ](/help/edge/docs/forms/operational-telemetry-for-forms.md)
    + Edge Delivery リソース {#resources}
       + サイドキック {#sidekick}
          + [Sidekick の使用](/help/edge/docs/sidekick.md)

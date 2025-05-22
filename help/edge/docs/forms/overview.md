@@ -4,10 +4,10 @@ description: AEM Forms の Edge Delivery Services
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '1037'
-ht-degree: 100%
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ AEM Forms の Edge Delivery Services は、作成者が新しいフォームを�
 
 * **選択したツールを使用して登録エクスペリエンスを作成：**&#x200B;コンテンツソースを分離することでオーサリングの効率を高めます。標準では、ドキュメントベースのオーサリング（Microsoft SharePoint または Google Drive）と WYSIWYG オーサリング（ユニバーサルエディターまたはアダプティブフォームエディター）を使用できます。同じフォームサイト上で複数のコンテンツソースを操作し、Microsoft Excel、Google Sheets、ユニバーサルエディター、アダプティブフォームエディターなどの推奨オーサリングツールを使用できます。
 
-* **優れたデジタル登録エクスペリエンスを提供：**&#x200B;迅速な読み込みとレンダリングを行うデジタル登録エクスペリエンスを提供し、実際の使用のモニタリング（RUM）を通じてフォームのパフォーマンスを継続的に監視します。読み込み時間の短縮とユーザーエクスペリエンスの最適化により、フォームの完成率とコンバージョン率が向上します。
+* **優れたデジタル登録エクスペリエンスの提供：** 運用テレメトリを通じて、フォームのパフォーマンスを迅速かつ継続的に読み込み、レンダリングするデジタル登録エクスペリエンスを提供します。 読み込み時間の短縮とユーザーエクスペリエンスの最適化により、フォームの完成率とコンバージョン率が向上します。
 
 * **開発者にわかりやすいツールセットを使用：**AEM Forms の Edge Delivery Services は、
 プレーン HTML、最新の CSS、Vanilla JavaScript を使用して優れたエクスペリエンスを作成し、特定のフレームワークの急な学習曲線を回避します。基本的な web 開発スキルを持つ開発者は、フォームコンポーネントとエクスペリエンスをカスタマイズして簡単に作成できます。パイプラインの実行を待機する必要はありません。コードを GitHub にチェックインするだけで、変更が公開されます。
@@ -64,7 +64,7 @@ AEM Forms の Edge Delivery Services では GitHub を利用しているので�
 * スパム保護を実現する Google reCAPTCHA 統合。
 * 特定のニーズに合わせてカスタムフォームコンポーネントを作成する機能。
 * フォームデータを Microsoft Excel、Google Sheets、メールアドレスに直接送信します。
-* 実際の使用のモニタリング（RUM）を通じたフォームのパフォーマンスの監視
+* 運用上の遠隔測定によるフォームのパフォーマンスの監視
 
 #### WYSIWYG オーサリング機能
 
@@ -116,6 +116,7 @@ WYSIWYG オーサリングには、フォームを作成する WYSIWYG インタ
 ## Start creating forms
 
 <div>
+
   <style>
     .card-container {
         width: calc(33.33% - 10px);;
@@ -130,6 +131,7 @@ WYSIWYG オーサリングには、フォームを作成する WYSIWYG インタ
         background-color: #f0f0f0; /* Changing background color on hover */
     }
 </style>
+
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">

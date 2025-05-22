@@ -4,10 +4,10 @@ description: AEM as a Cloud Service を使用して、Edge Delivery Services で
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: bf0e840fb3cd1ea5bc832823c522415c066f0018
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 76%
+source-wordcount: '1282'
+ht-degree: 75%
 
 ---
 
@@ -18,7 +18,7 @@ Edge Delivery により、AEM はエンゲージメントとコンバージョ�
 
 Edge 配信サービスを使用すると、次の操作を実行できます。
 
-* 申し分ない Lighthouse スコアの高速サイトを作成し、実際の使用のモニタリング（RUM）を通じてサイトのパフォーマンスを継続的に監視します。
+* 完璧な Lighthouse スコアで迅速なサイトを作成し、運用上のテレメトリを通じてサイトのパフォーマンスを継続的に監視します。
 * コンテンツソースを分離することでオーサリング効率を向上させます。すぐに使用できる状態で、ユニバーサルエディターを使用したAEM オーサリングと、ドキュメントベースのオーサリングの両方を使用できます。 したがって、同じ web サイト上で複数のコンテンツソースを操作できます。
 * 迅速なテスト作成、パフォーマンスに影響を与えない実行およびテスト勝者の実稼動環境への迅速なリリースが可能になる組み込みの実験フレームワークを使用します。
 
@@ -46,7 +46,7 @@ Edge 配信サービスを使用すると、次の操作を実行できます。
 
 ## コンテンツ作成者向けの柔軟なオーサリングツール {#overview}
 
-Edge Delivery Services は、web サイト上のコンテンツの柔軟なオーサリングを実現する、構成可能なサービスセットです。[ ユニバーサルエディター ](/help/sites-cloud/authoring/author-publish.md) を使用した [&#128279;](https://www.aem.live/docs/authoring)AEM コンテンツ管理とコンテンツオーサリング、および [ ドキュメントベースのオーサリング ](/help/sites-cloud/authoring/universal-editor/authoring.md) の両方を使用  きます。
+Edge Delivery Services は、web サイト上のコンテンツの柔軟なオーサリングを実現する、構成可能なサービスセットです。[ ユニバーサルエディター ](/help/sites-cloud/authoring/author-publish.md) を使用した [AEM コンテンツ管理とコンテンツオーサリング、および [ ドキュメントベースのオーサリング ](/help/sites-cloud/authoring/universal-editor/authoring.md) の両方を使用 ](https://www.aem.live/docs/authoring) きます。
 
 次の図は、Microsoft Word （ドキュメントベースのオーサリング）でコンテンツを編集し、ユニバーサルエディターを使用したAEM コンテンツのオーサリングと共にEdge Delivery Servicesに公開する方法を示しています。
 
@@ -102,7 +102,7 @@ Edge Delivery Services は、Adobe Experience Manager の一部です。その�
 
 AEMとEdge Delivery Servicesを使用して独自のプロジェクトを作成する方法については、aem.live ドキュメントの [ はじめに – ユニバーサルエディターの開発者用チュートリアル ](https://www.aem.live/developer/ue-tutorial) を参照してください。
 
-また、[Adobe Target](https://www.aem.live/developer/target-integration)、[Real Use Monitoring （RUM） ](https://www.aem.live/developer/rum) および [Launch](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/home) と共にEdge Delivery Servicesを使用して、サイトの使用状況とパフォーマンスを診断することもできます。
+また、[Adobe Target](https://www.aem.live/developer/target-integration)、[ 運用上のテレメトリ ](https://www.aem.live/developer/rum)、[Launch](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/home) と共にEdge Delivery Servicesを使用して、サイトの使用状況とパフォーマンスを診断することもできます。
 
 ## アドビからのヘルプの入手 {#getting-help}
 

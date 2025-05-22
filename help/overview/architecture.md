@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service のアーキテクチ�
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '2713'
-ht-degree: 100%
+source-wordcount: '2712'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >id="intro_aem_cloudservice_architecture"
 >title="AEM as a Cloud Service アーキテクチャの概要"
 >abstract="ここでは、AEM as a Cloud Service の新しいアーキテクチャを概観し、変更点を理解します。AEM は、画像の数が変化する動的アーキテクチャを実現したので、時間をかけてクラウドアーキテクチャを理解することが重要です。"
->additional-url="https://video.tv.adobe.com/v/346183?captions=jpn" text="アーキテクチャの概要"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="アーキテクチャの概要"
 
 Adobe Experience Manager（AEM）as a Cloud Service は、影響の大きいエクスペリエンスを作成および管理するための、構成可能な一連のサービスを提供します。
 
@@ -138,7 +138,7 @@ web コンテンツを管理するための web ベースのインターフェ�
 * データサービス：
    * ライセンス指標（コンテンツリクエスト、ストレージ、ユーザーなど）や使用状況レポート（アップロード数、ダウンロード数など）などの顧客データを公開します。
    * 顧客データは、API を介して、および製品ユーザーインターフェイス（Cloud Manager など）内で公開できます。
-* Real-User Metric（RUM）サービス：
+* 運用上のテレメトリサービス：
    * カスタマーエクスペリエンス（ページビュー数、コア web バイタル、コンバージョンイベントなど）から主要指標を収集し、関連するクエリ（過去 7 日間の特定のドメインの上位ページビュー数など）に対応します。
 * Assets Compute サービス：
    * アップロードされた画像、ビデオ、ドキュメント（PDF、Adobe Photoshop ファイルなど）の処理を担当します。処理では、Adobe Sensei を使用して画像およびビデオのメタデータ（説明タグや主要な色調など）を抽出し、レンディション（様々なサイズや形式など）を生成し、Adobe Photoshop や Adobe Lightroom API などの API にアクセスできます。

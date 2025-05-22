@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.5.0 リ�
 feature: Release Information
 role: Admin
 exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
-source-git-commit: a8c74573134597e83c2720de3b2a0f75ff7896a2
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 99%
+source-wordcount: '1943'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 99%
 
 2024.5.0 リリースで追加された機能の概要については、2024年5月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3448063?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -59,9 +59,9 @@ ht-degree: 99%
 * `TRANSLATION_JOB_CANCELLED`
 * `TRANSLATION_JOB_ERROR`
 
-#### 実際の使用のモニタリング（RUM）データサービス {#real-use-monitoring}
+#### 運用上のテレメトリサービス {#real-use-monitoring}
 
-* **[実際の使用のモニタリング（RUM）データサービスが GA になり](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**、AEM as a Cloud Service のクライアントサイドのデータコレクションを有効にすることができます。
+* **[運用上のテレメトリサービスが GA になり](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**AEM as a Cloud Serviceのクライアントサイドのデータ収集が可能になりました。
 クライアントサイドのコレクションである実際の使用のモニタリングサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントを信頼性の高い方法で測定できるようにします。これにより、お客様はページのトラフィックとパフォーマンスに関する高度なインサイトを取得できます。ページのパフォーマンスについて詳しく知り、改善するためのインサイトを得る絶好の機会です。
 
 #### Edge Delivery Services 用の AEM オーサリング {#edge-enhancements}
@@ -214,9 +214,9 @@ CDN パージ API キーをセルフサービス方式で登録し、これを�
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Server-side redirects (Early Adopter Program) {#server-side-redirects-early-adopter}
+#### サーバーサイドのリダイレクト（早期導入プログラム） {#server-side-redirects-early-adopter}
 
-Configure 301/302 server-side redirects in source control, and deploy to the CDN. [詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. -->リクエストと応答の変換、AEM 外のサイトへのトラフィックのルーティングなど、[CDN 設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)に関連して既に利用可能な他の機能がいくつかあります。
+ソース管理で 301/302 サーバーサイドのリダイレクトを設定し、CDN にデプロイします。 [詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. -->リクエストと応答の変換、AEM 外のサイトへのトラフィックのルーティングなど、[CDN 設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)に関連して既に利用可能な他の機能がいくつかあります。
 
 #### トラフィックフィルタールールアラート（早期導入プログラム） {#traffic-filter-rules-alerts-early-adopter}
 

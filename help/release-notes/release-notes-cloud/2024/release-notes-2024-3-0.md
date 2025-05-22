@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.3.0 リ�
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '2293'
-ht-degree: 95%
+source-wordcount: '2283'
+ht-degree: 93%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 95%
 
 2024.3.0 リリースで追加された機能の概要については、2024年3月のリリースに関する概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3450360?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -49,7 +49,7 @@ AEM Sites を Edge Delivery Services のコンテンツソースとして使用�
 
 ![AEM オーサリング](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-詳しくは、[ドキュメント](/help/edge/overview.md)および [AEM Gems - AEM オーサリングと Edge Delivery Services の概要](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694?profile.language=ja#M43905)を参照してください。
+詳しくは、[ドキュメント](/help/edge/overview.md)および [AEM Gems - AEM オーサリングと Edge Delivery Services の概要](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)を参照してください。
 
 **ヘッドレス実装用のユニバーサルエディター**
 
@@ -123,7 +123,7 @@ Assets Essentials では、管理者は、リポジトリで使用可能なプ�
 これらのサービスにより、次のことが可能になります。
 
 * 同じフォームサイト上で複数のコンテンツソースを操作し、Microsoft Excel、Google Sheets、アダプティブフォームエディターなどの推奨オーサリングツールを使用します。
-* RUM （Real Use Monitoring）を通じて、フォームのパフォーマンスを迅速かつ継続的に読み込み、レンダリングするデジタル登録エクスペリエンスを提供します。
+* 運用テレメトリを通じて、フォームのパフォーマンスを迅速かつ継続的に読み込み、レンダリングするデジタル登録エクスペリエンスを提供します。
 * プレーン HTML、最新の CSS、Vanilla JavaScript を使用して優れたエクスペリエンスを作成し、特定のフレームワークの急な学習曲線を回避します。
 
 
@@ -186,10 +186,10 @@ Assets Essentials では、管理者は、リポジトリで使用可能なプ�
 
   公式メール ID から `aem-forms-ea@adobe.com` に送信して早期導入プログラムに参加し、機能へのアクセスをリクエストできます。
 
-* **[Real Use Monitoring （RUM） Data Service を利用すると](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;AEM as a Cloud Serviceのクライアントサイド収集を有効にできます。
-実際の使用のモニタリング（RUM）データサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントの信頼性の高い測定を保証します。ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
+* **[運用上のテレメトリサービスを利用](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** して、AEM as a Cloud Serviceのクライアントサイド収集を有効にできます。
+運用上のテレメトリサービスは、ユーザーのインタラクションをより正確に反映し、web サイトのエンゲージメントの信頼性の高い測定値を保証します。 ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
 
-  この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから、RUM を有効にする各環境のドメイン名を添付して、`aemcs-rum-adopter@adobe.com` にメールを送信してください。Adobeの製品チームが、Real Use Monitoring （RUM）データサービスを有効にします。
+  この新機能のテストやフィードバックの提供に関心がある場合は、Adobe IDに関連付けられたメールアドレスから、運用上のテレメトリを有効にする各環境のドメイン名と共に、`aemcs-rum-adopter@adobe.com` にメールを送信してください。 Adobeの製品チームが、運用上のテレメトリサービスを有効にします。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 

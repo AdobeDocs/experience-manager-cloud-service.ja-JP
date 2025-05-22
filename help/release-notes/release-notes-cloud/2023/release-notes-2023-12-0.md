@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.12.0 リ
 exl-id: b36add58-a2ba-4299-94be-e0026e9c553c
 feature: Release Information
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 74%
+source-wordcount: '828'
+ht-degree: 72%
 
 ---
 
@@ -47,11 +47,11 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### 早期導入プログラム {#sites-early-adopter}
 
-**[Real Use Monitoring （RUM） Data Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** を利用すると、AEM as a Cloud Serviceのクライアントサイド収集を有効にできます。
+**運用上のテレメトリサービス [ を利用して、AEM as a Cloud Serviceのクライアントサイド収集を有効にすることもできます](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**。
 
-実際の使用のモニタリング（RUM）データサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントの信頼性の高い測定を保証します。ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
+運用上のテレメトリデータサービスは、ユーザーのインタラクションをより正確に反映し、web サイトエンゲージメントの信頼性の高い測定を保証します。 ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
 
-この新機能のテストやフィードバックの送信に関心がある場合は、Adobe IDに関連付けられたメールアドレスから、実稼動、ステージ、開発環境のドメイン名と共に `aemcs-rum-adopter@adobe.com` にメールを送信してください。 Adobeの製品チームが、Real Use Monitoring （RUM）データサービスを有効にします。
+この新機能のテストやフィードバックの送信に関心がある場合は、Adobe IDに関連付けられたメールアドレスから、実稼動、ステージ、開発環境のドメイン名と共に `aemcs-rum-adopter@adobe.com` にメールを送信してください。 Adobeの製品チームが、運用上のテレメトリデータサービスを有効にします。
 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -116,7 +116,7 @@ Adobe Firefly のテキストから画像生成機能を統合して、検索ク
 * ユーザー名/パスワードによる認証
 * その他の便利な CDN 設定
 
-公式メール ID からフィードバックを記載したメールを **0&rbrace;aemcs-cdn-config-adopter@adobe.com&rbrace; に送信します。**
+公式メール ID からフィードバックを記載したメールを **0}aemcs-cdn-config-adopter@adobe.com} に送信します。**
 
 ## Cloud Manager {#cloud-manager}
 
