@@ -37,7 +37,7 @@ ht-degree: 98%
 
 2024.5.0 リリースで追加された機能の概要については、2024年5月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3448063?quality=12&captions=jpn)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
