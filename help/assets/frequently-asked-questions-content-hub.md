@@ -113,7 +113,7 @@ AEM as a Cloud Service 環境でコンテンツハブを使用してアップロ
 
 ## アセットを混在させて新しいバリエーションを作成できるように、アセットカードに「Adobe Expressを使用して編集」オプションが表示されるのはなぜですか。 {#edit-using-express-not-available}
 
-アセットカードに「**Adobe Expressを使用して編集**」オプションが表示されるには、[Content Hub ユーザーの権限（アセットを新しいバリエーションにリミックスする権限を持つ）に加えて、Adobe Express Enterprise または Teams の使用権限（[ プラン ](https://www.adobe.com/express/pricing) を参照）が必要 ](#onboard-content-hub-users-add-assets) す。
+アセットカードに「**Adobe Expressを使用して編集**」オプションが表示されるには、[&#128279;](#onboard-content-hub-users-add-assets)Content Hub ユーザーの権限（アセットを新しいバリエーションにリミックスする権限を持つ）に加えて、Adobe Express Enterprise または Teams の使用権限（[ プラン ](https://www.adobe.com/express/pricing) を参照）が必要  す。
 
 ユーザーを [!DNL Content Hub] および [!DNL Adobe Express] に割り当てる方法に関する設定がいくつかあります。
 
@@ -127,7 +127,7 @@ AEM as a Cloud Service 環境でコンテンツハブを使用してアップロ
    >
    >2 つの Admin Console で Express およびAssetsの製品プロファイルに割り当てられたユーザーは、同じメールアドレスを持ち、**個人** アカウントではなく、ビジネス **エンタープライズまたはスクール** アカウントを使用する必要があります。 理想的な設定は、両方の Admin Console を **Federated ID** として設定し、それらの間にトラスト関係を設定して、シームレスなシングルサインオンエクスペリエンスを実現することです。 一部の Express プラン（Express Teams など）では、Federated ID / シングルサインオンがサポートされていません。
 
-適切な製品の使用権限に加えて、Content HubのAdobe Express統合では、割り当てられたユーザーが、Content Hubを動作させるAssets オーサー環境（少なくとも **[#UICONTROL /content/dam/hydrated-assets/]** フォルダー階層）で [!UICONTROL  編集可能 ] 以上の権限を持っている必要があります。このフォルダー階層では、Content Hub ユーザーが Express を使用して作成したコンテンツを保存できます。 詳しくは、管理ビュー（タッチ UI）の [ 権限管理 ](/help/security/touch-ui-principal-view.md) またはシンプル化された [Assets ビューの権限管理 ](https://experienceleague.adobe.com/ja/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) を参照してください。
+適切な製品の使用権限に加えて、Content HubのAdobe Express統合では、割り当てられたユーザーが、Content Hubを動作させるAssets オーサー環境（少なくとも **[!UICONTROL # /content/dam/hydrated-assets/]** フォルダー階層）で [!UICONTROL &#x200B; 編集可能 &#x200B;] 以上の権限を持っている必要があります。このフォルダー階層では、Content Hub ユーザーが Express を使用して作成したコンテンツを保存できます。 詳しくは、管理ビュー（タッチ UI）の [ 権限管理 ](/help/security/touch-ui-principal-view.md) またはシンプル化された [Assets ビューの権限管理 ](https://experienceleague.adobe.com/ja/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) を参照してください。
 
 ## 組織のブランドガイドラインがホームページのリンクとして表示されるようにコンテンツハブを設定できますか？ {#content-hub-setup-brand-guidelines}
 
