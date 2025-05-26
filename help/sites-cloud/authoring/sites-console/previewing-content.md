@@ -5,10 +5,10 @@ exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b93bcb5d26a63babf0b81c92a4fd85d358bfbea7
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 100%
+source-wordcount: '306'
+ht-degree: 82%
 
 ---
 
@@ -19,11 +19,15 @@ AEM は、web サイトがパブリッシュ環境になって一般公開され
 
 これにより、ページトランジションやその他のパブリッシュ側のコンテンツなど、オーサー環境からは見えないページエクスペリエンスのプレビューが容易になります。
 
+>[!IMPORTANT]
+>
+>プレビュー環境にアクセスするには、IP許可リストを設定する必要があります。 詳しくは、[ プレビューサービスへのアクセス ](/help/implementing/cloud-manager/manage-environments.md#access-preview-service#access-preview-service) を参照してください。
+>
+>すべての環境について詳しくは、[ 環境の管理 ](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) を参照してください。
+
 >[!NOTE]
 >
->プレビュー環境に&#x200B;*公開済み*&#x200B;のコンテンツにアクセスするには、URL を使用します（AEM にアクセスする必要はありません）。
-
-プレビュー環境について詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)のドキュメントを参照してください。
+>コンテンツはプレビュー環境に *公開* されるため、URL でアクセスできます。
 
 ## プレビュー用のコンテンツの公開 {#publishing-content-to-preview}
 
@@ -48,7 +52,7 @@ AEM は、web サイトがパブリッシュ環境になって一般公開され
 https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.html
 ```
 
-お使いの環境の URL を取得する方法について詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md)のドキュメントを参照してください。
+お使いの環境の URL を取得する方法について詳しくは、[ 環境の管理 ](/help/implementing/cloud-manager/manage-environments.md) を参照してください。
 
 コンテンツをプレビューに公開するには、`agentId` パラメーターを `preview` に設定した[コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow)を使用するか、`AgentFilter` をプレビュー用に設定した[レプリケーション API](/help/operations/replication.md#replication-api) を使用することもできます。
 
