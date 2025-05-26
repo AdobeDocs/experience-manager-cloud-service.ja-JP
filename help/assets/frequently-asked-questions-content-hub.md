@@ -2,10 +2,10 @@
 title: コンテンツハブに関するよくある質問（FAQ）
 description: コンテンツハブに関するよくある質問（FAQ）への回答を参照してください。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 95c643151e4828fa2eae0725dc1081aeeabc42fb
 workflow-type: tm+mt
-source-wordcount: '1140'
-ht-degree: 97%
+source-wordcount: '1367'
+ht-degree: 77%
 
 ---
 
@@ -14,19 +14,19 @@ ht-degree: 97%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
         </td>
     </tr>
     <tr>
@@ -111,9 +111,23 @@ AEM as a Cloud Service 環境でコンテンツハブを使用してアップロ
 
 1. 「**[!UICONTROL 変更日]**」フィールドを使用して、アセットを並べ替えます。
 
-## アセットをリミックスして新しいバリエーションを作成できるように、アセットカードで Adobe Express オプションを使用して編集を表示できないのはなぜですか？ {#edit-using-express-not-available}
+## アセットを混在させて新しいバリエーションを作成できるように、アセットカードに「Adobe Expressを使用して編集」オプションが表示されるのはなぜですか。 {#edit-using-express-not-available}
 
-アセットカードで Adobe Express オプションを使用して編集内容を表示するには、[アセットを新しいバリエーションにリミックスする権限を持つコンテンツハブユーザー](#onboard-content-hub-users-add-assets)の権限に加えて、Adobe Express 権限も必要です。Adobe Express は、Adobe Experience Manager がデプロイされている Adobe Admin Console の同じ組織にデプロイする必要があります。
+アセットカードに「**Adobe Expressを使用して編集**」オプションが表示されるには、[Content Hub ユーザーの権限（アセットを新しいバリエーションにリミックスする権限を持つ）に加えて、Adobe Express Enterprise または Teams の使用権限（[ プラン ](https://www.adobe.com/express/pricing) を参照）が必要 ](#onboard-content-hub-users-add-assets) す。
+
+ユーザーを [!DNL Content Hub] および [!DNL Adobe Express] に割り当てる方法に関する設定がいくつかあります。
+
+1. 組織には [Assets Ultimate](/help/assets/assets-ultimate-overview.md) または [Assets Prime](/help/assets/assets-prime.md) のライセンスがあり、Adobe Expressの使用権限（共同作業者またはパワーユーザー）を含む Admin Console のExperience Manager プロファイルの 1 つにユーザーが割り当てられています。 この統合は、追加の設定を行わなくても機能します。
+
+1. [!DNL Adobe Express] は、[!DNL Content Hub] を使用して [!DNL Experience Manager Assets] と同じ [!DNL Adobe Admin Console] にデプロイされます。 この統合は、追加の設定を行わなくても機能します。
+
+1. [!DNL Adobe Express] は、[!DNL Content Hub] を使用する [!DNL Experience Manager Assets] とは異なる [!DNL Adobe Admin Console] にデプロイされます。 この場合、[!DNL Assets] 管理者は、統合が機能するように統合を設定できます（[ ドキュメント ](/help/assets/connect-assets-with-creative-cloud.md) を参照）。
+
+   >[!NOTE]
+   >
+   >2 つの Admin Console で Express およびAssetsの製品プロファイルに割り当てられたユーザーは、同じメールアドレスを持ち、**個人** アカウントではなく、ビジネス **エンタープライズまたはスクール** アカウントを使用する必要があります。 理想的な設定は、両方の Admin Console を **Federated ID** として設定し、それらの間にトラスト関係を設定して、シームレスなシングルサインオンエクスペリエンスを実現することです。 一部の Express プラン（Express Teams など）では、Federated ID / シングルサインオンがサポートされていません。
+
+適切な製品の使用権限に加えて、Content HubのAdobe Express統合では、割り当てられたユーザーが、Content Hubを動作させるAssets オーサー環境（少なくとも **[#UICONTROL /content/dam/hydrated-assets/]** フォルダー階層）で [!UICONTROL  編集可能 ] 以上の権限を持っている必要があります。このフォルダー階層では、Content Hub ユーザーが Express を使用して作成したコンテンツを保存できます。 詳しくは、管理ビュー（タッチ UI）の [ 権限管理 ](/help/security/touch-ui-principal-view.md) またはシンプル化された [Assets ビューの権限管理 ](https://experienceleague.adobe.com/ja/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) を参照してください。
 
 ## 組織のブランドガイドラインがホームページのリンクとして表示されるようにコンテンツハブを設定できますか？ {#content-hub-setup-brand-guidelines}
 
