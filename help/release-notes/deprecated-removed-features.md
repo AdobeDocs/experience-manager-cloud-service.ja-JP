@@ -4,10 +4,10 @@ description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 6b9ac17640c0a470cb175748564ccb72bed4affd
+source-git-commit: 3d294b2b4fbd11f16ee8b0fbb5a9a46ab039dbae
 workflow-type: tm+mt
-source-wordcount: '2560'
-ht-degree: 97%
+source-wordcount: '2858'
+ht-degree: 89%
 
 ---
 
@@ -103,24 +103,24 @@ ht-degree: 97%
   </tr>
   <tr>
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 はメンテナンスモードになっています。 Commons Lang 3 を代わりに使用してください。</td>
+    <td>Commons Lang 2 はメンテナンスモードになっています。 Commons Lang 3 を代わりに使用してください。 <a href="#apache.commons">以下の削除に関するメモを参照してください。</a></td>
     <td>4/30/2021</td>
     <td>12/31/2021</td>
   </tr>
   <tr>
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 はメンテナンスモードになっています。 Commons Collections 4 を代わりに使用してください。</td>
+    <td>Commons Collections 3 はメンテナンスモードになっています。 Commons Collections 4 を代わりに使用してください。 <a href="#apache.commons">以下の削除に関するメモを参照してください。</a></td>
     <td>4/30/2021</td>
     <td>12/31/2021</td>
   </tr>
   <tr>
     <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
-    <td>Felix web コンソールはクラウド環境ではサポートされていません。</td>
+    <td>Felix web コンソールはクラウド環境ではサポートされていません。 <a href="#org.apache.felix.webconsole">以下の削除に関するメモを参照してください。</a></td>
     <td>4/30/2021</td>
     <td>8/31/2025</td>
   </tr>
   <tr>
-<td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>   
+<td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>
     <td>Eclipse Jetty パッケージと Felix Http Jetty パッケージはサポートされなくなりました。 <a href="#org.eclipse.jetty">以下の削除に関するメモを参照してください。</a></td>
     <td>5/27/2021</td>
     <td>8/31/2025</td>
@@ -138,7 +138,7 @@ ht-degree: 97%
   </tr>
   <tr>
     <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
-    <td>Apache Abdera が 2017年以降廃止されたプロジェクトなので、この API は廃止されました。</td>
+    <td>Apache Abdera が 2017年以降廃止されたプロジェクトなので、この API は廃止されました。 <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">以下の削除に関するメモを参照してください。</a></td>
     <td>4/8/2019</td>
     <td>8/31/2025</td>
   </tr>
@@ -156,19 +156,19 @@ ht-degree: 97%
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
-    <td>AEM as a Cloud Service は、この内部ログバック API をサポートしていません。</td>
+    <td>AEM as a Cloud Serviceは、この内部ログバック API をサポートしていません。 <a href="#ch.qos.logback">以下の削除に関するメモを参照してください。</a></td>
     <td>2022年1月27日（PT）</td>
     <td>8/31/2025</td>
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
-    <td>AEM as a Cloud Service は、この内部 log4j API をサポートしていません。</td>
+    <td>AEM as a Cloud Serviceは、この内部 log4j API をサポートしていません。 <a href="#org.slf4j">以下の削除に関するメモを参照してください。</a></td>
     <td>2022年1月27日（PT）</td>
     <td>8/31/2025</td>
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
-    <td>Apache Log4j 1 は 2015年に提供が終了し、サポートは終了しました。</td>
+    <td>Apache Log4j 1 は 2015 年に提供が終了し、サポートは終了しました。 <a href="#org.apache.log4j">以下の削除に関するメモを参照してください。</a></td>
     <td>2022年1月27日（PT）</td>
     <td>8/31/2025</td>
   </tr>
@@ -189,7 +189,7 @@ ht-degree: 97%
   </tr>
   <tr>
     <td>org.slf4j.event</td>
-    <td>AEM as a Cloud Service は、この内部 slf4j API をサポートしていません。</td>
+    <td>AEM as a Cloud Serviceは、この内部 slf4j API をサポートしていません。 <a href="#org.slf4j">以下の削除に関するメモを参照してください。</a></td>
     <td>2022/4/11</td>
     <td>8/31/2025</td>
   </tr>
@@ -204,7 +204,7 @@ ht-degree: 97%
     <td>代わりに、org.apache.sling.xss を使用します。</td>
     <td>2023年12月12日（PT）</td>
     <td>2024年6月30日（PT）</td>
-  </tr>  
+  </tr>
   <tr>
     <td>com.drew.*</td>
     <td>画像やビデオからのメタデータの抽出には、Cloud Service の Asset Compute、Apache POI または Apache Tika を使用する必要があります。</td>
@@ -216,13 +216,19 @@ ht-degree: 97%
     <td>この API は内部でのみ使用されます。</td>
     <td>2024年9月23日（PT）</td>
     <td>8/31/2025</td>
-  </tr>       
+  </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.memory</td>
     <td>この API は内部でのみ使用されます。</td>
     <td>2024年9月23日（PT）</td>
     <td>8/31/2025</td>
-  </tr>       
+  </tr>
+  <tr>
+    <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
+    <td>この API の使用は、AEM as a Cloud Service ではサポートされていません。</td>
+    <td>2022/10/31</td>
+    <td>8/31/2025</td>
+  </tr>
 </tbody>
 </table>
 </details>
@@ -259,7 +265,7 @@ ht-degree: 97%
   </tr>
   <tr> <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml</td>
     <td>Eclipse Jetty パッケージと Felix Http Jetty パッケージはサポートされなくなりました。</td>
-  </tr>  
+  </tr>
   <tr>
     <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>org.apache.felix.scr.component</td>
     <td>Apache Felix メタタイプと SCR API は非推奨（廃止予定）です。  OSGi メタタイプおよび Declarative Service API を代わりに使用してください。</td>
@@ -314,8 +320,16 @@ ht-degree: 97%
 
 アクションリスト：
 
-* ACS AEM Commons を最新バージョンに更新
+* ACS AEM Commons を最新バージョン（6.11.0 以降）に更新します。
 * `org.apache.sling.commons.auth` や `org.apache.sling.commons.auth.spi` から `org.apache.sling.auth` または `org.apache.sling.auth.spi` にそれぞれ移行します。
+
+### `org.apache.felix.webconsole*` の削除 {#org.apache.felix.webconsole}
+
+`org.apache.felix.webconsole*` のパッケージを使用する場合は、このコードをプロジェクトから削除します。 Cloud Serviceから web コンソールにアクセスできません。
+
+アクションリスト：
+
+* `org.apache.felix.webconsole*` のパッケージを使用したコードの削除
 
 ### `org.eclipse.jetty*` の削除 {#org.eclipse.jetty}
 
@@ -343,6 +357,16 @@ Mongo client API をプロジェクトに追加します。
 * このバンドルをプロジェクトに追加
    * `org.mongodb:mongo-java-driver:3.12.7`
 
+### `Apache Commons Lang 2 and Apache Commons Collections 3` の削除 {#apache.commons}
+
+メンテナンスされていない Apache Commons ライブラリの使用を削除し、サポートバージョンの使用に置き換えます。 ほとんどの場合、これはパッケージの読み込みを調整する必要があり、クラスやメソッドの名前が変更された場合のみです。 古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
+
+アクションリスト：
+
+* ACS AEM Commons を最新バージョン（6.11.0 以降）に更新します。
+* `org.apache.commons.lang*` のインポートを `org.apache.commons.lang3` に置き換えます
+* `org.apache.commons.collections*` のインポートを `org.apache.commons.collecitons4` に置き換えます
+
 ### `org.apache.abdera*` および `org.apache.sling.atom.taglib` の使用 {#org.apache.abdera_or_org.apache.sling.atom.taglib}
 
 `org.apache.abdera` および `org.apache.sling.atom.taglib` のパッケージの使用を、同様の機能を備えたサードパーティライブラリまたは独自のコードに置き換えます。
@@ -358,6 +382,32 @@ Mongo client API をプロジェクトに追加します。
 アクションリスト：
 
 * `org.apache.felix.http.whiteboard` の使用を [OSGi Http ホワイトボード](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)に置き換える
+
+### `ch.qos.logback*` の使用 {#ch.qos.logback}
+
+Cloud Serviceではログバックはサポートされていません。ログバックのすべての使用方法を削除してください。 古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
+
+アクションリスト：
+
+* ACS AEM Commons を最新バージョン（6.11.0 以降）に更新します。
+* `ch.qos.logback` のパッケージを使用したコードの削除
+
+### `org.slf4j.event and org.slf4j.spi` の使用 {#org.slf4j}
+
+`org.slf4j.event` または `org.slf4j.spi` を使用している場合は、その使用をすべて削除します。 古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
+
+アクションリスト：
+
+* ACS AEM Commons を最新バージョン（6.11.0 以降）に更新します。
+* `org.slf4j.event` と `org.slf4j.spi` を使用してコードを削除します
+
+### `org.apache.log4j` の使用 {#org.apache.log4j}
+
+を使用してい `org.apache.log4j` 場合は、SLF4J （`org.slf4j`）または Log4J 2.x （`org.apache.logging.log4j`）に切り替えます。
+
+アクションリスト：
+
+* `org.apache.log4j` の使用を `org.slf4j` （推奨）または `org.apache.logging.log4j` の使用に置き換える
 
 ## OSGi 設定 {#osgi-configuration}
 
@@ -542,7 +592,7 @@ Update the usage of maven-bundle-plugin to version 5.1.5 or higher to ensure sup
 
 #### Update dependencies in maven-scr-plugin  {#maven-scr-plugin}
 
-The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, it is possible to generate the descriptor files by updating the ASM dependency version within the plugin configuration, similar to the snippet below: 
+The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, it is possible to generate the descriptor files by updating the ASM dependency version within the plugin configuration, similar to the snippet below:
 
 ```
 [source,xml]
