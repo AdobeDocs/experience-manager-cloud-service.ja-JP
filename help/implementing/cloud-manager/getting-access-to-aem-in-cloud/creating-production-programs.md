@@ -48,7 +48,7 @@ ht-degree: 95%
 1. **ソリューションとアドオン**&#x200B;リストボックスで、プログラムに含めるソリューションを 1 つ以上選択します。
 
    * 利用可能な様々なソリューションに対して 1 つ以上のプログラムが必要かどうかが不明な場合は、最も興味のあるプログラムを選択します。後で[プログラムを編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)することで、追加のソリューションをアクティブ化することができます。プログラム設定の推奨事項について詳しくは、[実稼動プログラムの概要ドキュメント](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)を参照してください。
-   * プログラムを作成するには、少なくとも 1 つのソリューションを選択する必要があります。 例えば、デジタルエクスペリエンスを最適化する完全に管理された CDN ソリューションとして **0}Edge Delivery Services} を選択できます。**&#x200B;詳しくは、[Edge Delivery Services を使用した Cloud Manager プロジェクトの配信について](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)を参照してください。
+   * プログラムを作成するには、少なくとも 1 つのソリューションを選択する必要があります。 例えば、デジタルエクスペリエンスを最適化する完全に管理された CDN ソリューションとして **0&rbrace;Edge Delivery Services&rbrace; を選択できます。**&#x200B;詳しくは、[Edge Delivery Services を使用した Cloud Manager プロジェクトの配信について](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)を参照してください。
 
    ![ソリューションの選択](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/add-production-program-with-edge-v2.png)
 
