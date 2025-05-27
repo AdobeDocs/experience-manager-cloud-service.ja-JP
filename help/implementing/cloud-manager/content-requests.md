@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 23ee3857bb0440ba9f386002b859217d0b5f8f37
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1476'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->コンテンツリクエスト ビューに表示されるデータは、24 時間ごとに更新されます。
+>コンテンツリクエストビューに表示されるデータは、24 時間ごとに更新されます。
 
 ## Cloud Service コンテンツリクエストについて {#understanding-cloud-service-content-requests}
 

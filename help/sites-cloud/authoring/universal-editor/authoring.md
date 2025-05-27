@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2222'
+ht-degree: 100%
 
 ---
 
@@ -299,17 +299,17 @@ ht-degree: 0%
 
 この拡張機能を有効にする方法について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)を参照してください。
 
-## オプションのプロパティパネル機能 {#properties-panel-options}
+## オプションのプロパティパネルの機能 {#properties-panel-options}
 
-ページコンテンツをさらに管理しやすくするために、ユニバーサルエディターの拡張機能として追加機能を使用できます。 [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) これらの拡張機能は、コンテンツ作成者として [ ユニバーサルエディターのプロパティパネル ](/help/implementing/universal-editor/extending.md) に表示される前に、管理者がプログラムで有効にする必要があります 。
+ページのコンテンツをさらに管理するのに役立つ追加機能が、ユニバーサルエディターの拡張機能として使用できます。これらの拡張機能が[ユニバーサルエディターのプロパティパネル](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)でコンテンツ作成者に表示されるには、[管理者がプログラムでこれらの拡張機能を有効にする必要があります](/help/implementing/universal-editor/extending.md)。
 
 ### バリエーションを生成 {#generate-variations}
 
-**バリエーションを生成** 拡張機能を使用すると、生成人工知能（AI）を使用して、プロパティパネルでコンテンツのバリエーションを直接作成できます。
+**バリエーションを生成**&#x200B;拡張機能を使用すると、生成 AI を使用して、プロパティパネルでコンテンツのバリエーションを直接作成できます。
 
-![ バリエーションを生成アイコン ](assets/generate-variations-icon.png)
+![「バリエーションを生成」アイコン](assets/generate-variations-icon.png)
 
-ユニバーサルエディターのプロパティパネルにある「**バリエーションを生成**」アイコンをタップまたはクリックして、レコメンデーションを受け取り、バリエーションを作成します。 バリエーションの生成の仕組みについて詳しくは、[ バリエーションの生成 – AEM エディターに統合 ](/help/generative-ai/generate-variations-integrated-editor.md) ドキュメントを参照してください。
+ユニバーサルエディターのプロパティパネルにある「**バリエーションを生成**」アイコンをタップまたはクリックして、レコメンデーションを受け取り、バリエーションを作成します。バリエーションの生成の仕組みについて詳しくは、[バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)ドキュメントを参照してください。
 
 この拡張機能を有効にする方法について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)を参照してください。
 

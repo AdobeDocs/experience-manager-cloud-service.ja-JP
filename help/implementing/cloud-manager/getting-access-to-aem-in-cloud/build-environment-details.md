@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: f102cdbab6b38ffabc370691e507754227b91f4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1595'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Maven 実行 JDK を設定するには、パイプラインで使用される Gi
 
 #### Java 21 または Java 17 を使用したビルドへの移行の前提条件 {#prereq-for-building}
 
-Java 21 または Java 17 でビルドするために、Cloud Managerは、これらの Java バージョンと互換性のある SonarQube 9.9 を使用するようになりました。 この変更は、Cloud Manager リリース 2025.1.0 で導入されました。SonarQube をアップグレードするためにお客様が行うアクションは必要ありません。 詳細および変更点については、[Cloud Manager 2025.1.0 のリリースノート ](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md) を参照してください。
+Java 21 または Java 17 でビルドするために、Cloud Manager は、これらの Java バージョンと互換性のある SonarQube 9.9 を使用するようになりました。この変更は、Cloud Manager リリース 2025.1.0 で導入されました。SonarQube のアップグレードにお客様によるアクションは必要ありません。詳細および変更点については、[Cloud Manager 2025.1.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md)を参照してください。
 
 アプリケーションを新しい Java ビルドバージョンとランタイムバージョンに移行する場合は、実稼動環境にデプロイする前に、開発環境とステージ環境で徹底的にテストします。
 
@@ -103,7 +103,7 @@ Java 21 ランタイムにデプロイすると、次の機能が正しく機能
 
 #### ランタイム要件 {#runtime-requirements}
 
-Java 21 ランタイムは、Java 21 および Java 17 を使用したビルドに使用され、Java 11 ビルドにも徐々に適用されます（以下のメモを参照）。 Java 21 アップデートを受信するには、環境を AEM リリース 17098 以降にする必要があります。互換性を確保するには、次の調整が必要です。
+Java 21 ランタイムは、Java 21 および Java 17 のビルドに使用され、Java 11 ビルドにも段階的に適用される予定です（以下のメモを参照）。Java 21 アップデートを受信するには、環境を AEM リリース 17098 以降にする必要があります。互換性を確保するには、次の調整が必要です。
 
 ライブラリの更新は、古い Java バージョンとの互換性が維持されるので、いつでも適用できます。
 

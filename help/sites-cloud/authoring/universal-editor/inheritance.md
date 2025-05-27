@@ -6,9 +6,9 @@ feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
 source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '549'
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ MSM とローンチは、継承を使用してコンテンツを再利用する�
 
 **AEM マルチサイト管理（MSM）拡張機能**&#x200B;をインストールすると、選択したコンポーネントの現在の継承ステータスが表示されるだけでなく、コンポーネントレベルで継承を解除または復元することもできます。
 
-この拡張機能の使用方法について詳しくは、[ オーサリングのドキュメント ](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance) を参照してください。
+[この拡張機能の使用方法について詳しくは、オーサリングのドキュメント](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)を参照してください。
 
 この拡張機能を有効にする方法について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)を参照してください。
 

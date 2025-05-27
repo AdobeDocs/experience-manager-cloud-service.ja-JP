@@ -6,9 +6,9 @@ feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
 source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1729'
+ht-degree: 100%
 
 ---
 
@@ -220,8 +220,8 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 ユニバーサルエディターには、カスタマイズ可能で拡張性の高いオーサリングエクスペリエンスが用意されています。ツールバーにその他のボタンを表示する場合は、ユニバーサルエディターが拡張されています。
 
 * 個別の拡張機能の動作について詳しくは、[ユニバーサルエディターオーサリングドキュメント](/help/sites-cloud/authoring/universal-editor/authoring.md#toolbar-options)を参照してください。
-* 拡張の可能性について詳しくは、[ ユニバーサルエディターの拡張 ](/help/implementing/universal-editor/extending.md) を参照してください。
-* 個々の拡張機能のインストール方法について詳しくは、[Extension Managerのドキュメントを参照してください。](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* 拡張機能について詳しくは、[ユニバーサルエディターの拡張](/help/implementing/universal-editor/extending.md)を参照してください。
+* 個別の拡張機能のインストール方法について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)を参照してください。
 
 ### エディター {#editor}
 
@@ -321,9 +321,9 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ユニバーサルエディターには、カスタマイズ可能で拡張性の高いオーサリングエクスペリエンスが用意されています。プロパティパネルにその他のボタンを表示する場合は、ユニバーサルエディターが拡張されています。
 
-* 個別の拡張機能の動作について詳しくは、[ユニバーサルエディターオーサリングドキュメント](/help/sites-cloud/authoring/universal-editor/authoring.md#properties-panel-options)を参照してください。
-* 拡張の可能性について詳しくは、[ ユニバーサルエディターの拡張 ](/help/implementing/universal-editor/extending.md) を参照してください。
-* 個々の拡張機能のインストール方法について詳しくは、[Extension Managerのドキュメントを参照してください。](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* 個別の拡張機能の動作について詳しくは、[ユニバーサルエディターオーサリングのドキュメント](/help/sites-cloud/authoring/universal-editor/authoring.md#properties-panel-options)を参照してください。
+* 拡張機能について詳しくは、[ユニバーサルエディターの拡張](/help/implementing/universal-editor/extending.md)を参照してください。
+* 個別の拡張機能のインストール方法について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)を参照してください。
 
 ## 次の手順 {#next-steps}
 

@@ -1,13 +1,13 @@
 ---
-title: アダプティブ Forms ブロックを使用したフォームの作成
-description: Edge Delivery Services for AEM Formsの基本を学びます。 完璧なフォームを素早く作成しましょう。 AEM Forms Edge Deliveryのドキュメントベースのオーサリング =かつてないスピードと SEO に対応したフォームで、よりハッピーなユーザーと検索エンジンを実現。
+title: アダプティブフォームブロックを使用したフォームの作成
+description: AEM Forms の Edge Delivery Services の基本について学びます。完璧なフォームを素早く作成しましょう。AEM Forms Edge Delivery ドキュメントベースのオーサリング = 超高速かつ SEO に対応したフォームで、高い顧客満足度と検索エンジンを実現します。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 source-git-commit: efd4fbb38724632865d87b80827611899e2c6d1f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '784'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 

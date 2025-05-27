@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2454'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -242,7 +242,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->詳しくは [ プログレッシブ web アプリ機能を有効にする ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) を参照してください。
+>詳しくは、[プログレッシブ web アプリ機能の有効化](/help/sites-cloud/authoring/sites-console/enable-pwa.md)を参照してください。
 
 {{pwa-deprecation}}
 
@@ -342,32 +342,32 @@ ht-degree: 93%
 
 ## プロパティの継承 {#inheritance}
 
-ページがブループリントに基づいている場合や、別のページからコンテンツを継承する場合、継承は個々のフィールドの **ページのプロパティ** ウィンドウに反映されます。
+ページがブループリントを基にしている場合や、別のページからコンテンツを継承している場合、継承は各フィールドの&#x200B;**ページのプロパティ**&#x200B;ウィンドウに反映されます。
 
-![ 継承されたプロパティ ](assets/property-inhertiance.png)
+![継承されたプロパティ](assets/property-inhertiance.png)
 
-継承されたプロパティは編集できません。 特定のフィールドの横にある **継承をキャンセル** アイコンをタップまたはクリックして、継承を解除します。
+継承されたプロパティは編集できません。特定のフィールドの横にある「**継承をキャンセル**」アイコンをタップまたはクリックすると、継承が解除されます。
 
-![継承のキャンセル](assets/cancel-inheritance.png)
+![継承をキャンセル](assets/cancel-inheritance.png)
 
-**継承をキャンセル** モーダルでキャンセルを確定します。
+**継承をキャンセル**&#x200B;モーダルでキャンセルを確定します。
 
-![ 継承のキャンセル確認モーダル ](assets/cancel-inheriance-confirmation.png)
+![継承をキャンセル確認モーダル](assets/cancel-inheriance-confirmation.png)
 
 フィールドの継承をキャンセルすると、そのフィールドが編集可能になります。
 
-![ キャンセルされた継承 ](assets/property-inheritance-broken.png)
+![キャンセルされた継承](assets/property-inheritance-broken.png)
 
-継承を元に戻すには、フィールドの横にある **継承を元に戻す** アイコンをタップまたはクリックします。
+継承を元に戻すには、フィールドの横にある「**継承を元に戻す**」アイコンをタップまたはクリックします。
 
-![ 継承を元に戻す ](assets/revert-inheritance.png)
+![継承を元に戻す](assets/revert-inheritance.png)
 
-**継承を元に戻す** モーダルで復帰を確定します。
+**継承を元に戻す**&#x200B;モーダルで、元に戻す操作を確定します。
 
-![ 継承確認モーダルを元に戻す ](assets/revert-inhertiance-confirmation.png)
+![継承を元に戻す確認モーダル](assets/revert-inhertiance-confirmation.png)
 
-「**継承を元に戻した後にページを同期**」を選択し、ブループリントの最新の値でフィールドを更新します。 同期しない場合、ライブコピーが次回同期されるときに値が更新されます。
+「**継承を元に戻した後にページを同期**」を選択すると、ブループリントの最新の値でフィールドが更新されます。同期しない場合、ライブコピーが次回同期されるときに値が更新されます。
 
 >[!TIP]
 >
->継承について詳しくは、[ マルチサイトマネージャーと翻訳 ](/help/sites-cloud/administering/msm-and-translation.md) を参照してください
+>継承について詳しくは、[マルチサイトマネージャーと翻訳](/help/sites-cloud/administering/msm-and-translation.md)を参照してください。

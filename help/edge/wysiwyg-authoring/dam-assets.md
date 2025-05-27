@@ -1,6 +1,6 @@
 ---
-title: Edge Delivery Servicesを使用した DAM Assetsでのページの公開
-description: ページの DAM アセットをEdge Delivery Servicesにシームレスに公開するために必要な設定について説明します。
+title: Edge Delivery Services による DAM アセットを使用したページの公開
+description: ページの DAM アセットを Edge Delivery Services にシームレスに公開するために必要な設定について説明します。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 160f0474-a72d-4183-a2b2-2f8ba177605d
@@ -8,53 +8,53 @@ index: false
 hide: true
 hidefromtoc: true
 source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '433'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Edge Delivery Servicesを使用した DAM Assetsでのページの公開 {#dam-assets}
+# Edge Delivery Services による DAM アセットを使用したページの公開 {#dam-assets}
 
-ページの DAM アセットをEdge Delivery Servicesにシームレスに公開するために必要な設定について説明します。
+ページの DAM アセットを Edge Delivery Services にシームレスに公開するために必要な設定について説明します。
 
-## ユニバーサルエディター、DAM AssetsおよびEdge Delivery {#overview}
+## ユニバーサルエディター、DAM アセットおよび Edge Delivery {#overview}
 
-ユニバーサルエディターのコンテンツを編集する場合、もちろん、DAM からアセットを選択できます。 コンテンツをEdge Delivery Servicesに公開すると、関連する DAM コンテンツも公開されます。
+ユニバーサルエディターのコンテンツを編集する場合、DAM からアセットを選択できます。コンテンツを Edge Delivery Services に公開すると、関連する DAM コンテンツも公開されます。
 
-このシームレスな動作を確実に行うには、AEMとEdge Delivery Servicesが公開するために DAM への適切なアクセス権を持っている必要があります。 これには次が含まれます。
+この動作をシームレスに行うには、AEM と Edge Delivery Services が、公開に必要な DAM への適切なアクセス権を持っている必要があります。これには次が含まれます。
 
-* [ アセットフォルダーへのアクセスの確保 ](#accessible)
-* [ 必要に応じて、アセットフォルダーに適切な設定が割り当てられていることを確認する ](#configuration)
+* [アセットフォルダーをアクセス可能にする](#accessible)。
+* [必要に応じて、アセットフォルダーに適切な設定が割り当てられていることを確認する](#configuration)。
 
-## Assets フォルダーへのアクセスの確保 {#accessible}
+## アセットフォルダーへのアクセスの確保 {#accessible}
 
-AEMからEdge Delivery Servicesにページを公開する場合、[ テクニカルアカウント ](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) が使用されます。 このアカウントは、`<hash>@techacct.adobe.com` 形式の名前で、ユニバーサルエディターで作成されたページを最初に公開するたびに、Cloud ManagerによってAEMで自動的に作成されます。
+AEM から Edge Delivery Services にページを公開する場合、[テクニカルアカウント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)が使用されます。このアカウントの名前は `<hash>@techacct.adobe.com` という形式です。このアカウントは、ユニバーサルエディターで作成されたページを最初に公開するたびに、Cloud Manager によって AEM で自動的に作成されます。
 
-![ テクニカルアカウント ](/help/edge/wysiwyg-authoring/assets/dam-assets/technical-account.png)
+![テクニカルアカウント](/help/edge/wysiwyg-authoring/assets/dam-assets/technical-account.png)
 
-このテクニカルアカウントは、コンテンツを公開するためにすべての DAM フォルダーへのアクセス権を持っている必要があります。 次のいずれかを実行できます。
+このテクニカルアカウントは、コンテンツを公開するためにすべての DAM フォルダーへのアクセス権を持っている必要があります。次のいずれかを実行できます。
 
-* プライベート DAM フォルダーは使用しません。
-* テクニカルアカウントのユーザーに DAM フォルダーへのアクセス権を付与します。
+* プライベート DAM フォルダーを使用しない。
+* テクニカルアカウントのユーザーに DAM フォルダーへのアクセス権を付与する。
 
-## Assets フォルダーに適切な設定が割り当てられていることの確認 {#configuration}
+## アセットフォルダーに適切な設定が割り当てられていることを確認する {#configuration}
 
-通常は、ページと共にアセットをEdge Delivery Servicesに公開する場合は、テクニカルアカウントに DAM のアセットにアクセスできることを確認すれば十分です。
+通常、ページとアセットを Edge Delivery Services に公開する場合は、テクニカルアカウントが DAM のアセットにアクセスできるようにすれば十分です。
 
-ただし、次の 2 つの追加のケースでは、追加の設定が必要です。
+ただし、次の 2 通りの場合では、追加の設定が必要です。
 
-* PDF やビデオなどの画像以外のアセットを含むページをEdge Delivery Servicesに公開する場合。
-* ページとは独立して画像アセットをEdge Delivery Servicesに公開する場合。
+* PDF やビデオなどの画像以外のアセットを含むページを Edge Delivery Services に公開する場合。
+* ページから独立して画像アセットを Edge Delivery Services に公開する場合。
 
-これらの両方のユースケースをサポートするには、[ 設定 ](/help/implementing/developing/introduction/configurations.md) を DAM フォルダーに割り当てる必要があります。
+これらの両方のユースケースをサポートするには、[設定](/help/implementing/developing/introduction/configurations.md)を DAM フォルダーに割り当てる必要があります。
 
 1. AEM オーサリング環境にログインします。
-1. **サイト** で、アセットを公開するサイトまたはアセットを関連付けるサイトを選択します。
-1. ツールバーの **プロパティ** をタップまたはクリックします。
+1. **Sites** で、アセットを公開するサイト、またはアセットを関連付けるサイトを選択します。
+1. ツールバーの「**プロパティ**」をタップまたはクリックします。
 1. プロパティウィンドウの「**詳細**」タブで、「**クラウド設定**」フィールドの設定をメモします。
-   * これは、`/conf/<site-name>` の形式でサイトを作成すると、自動的に作成されます。
-1. プロパティウィンドウで **キャンセル** をタップまたはクリックし、**Assets**/**ファイル** に移動して、DAM フォルダーを選択します。
-1. ツールバーの **プロパティ** をタップまたはクリックします。
-1. プロパティウィンドウの「**クラウドサービス**」タブで、「**クラウド設定**」フィールドで前述のと同じ設定を選択します。
+   * この設定は、サイトを `/conf/<site-name>` の形式で作成すると自動的に作成されます。
+1. プロパティウィンドウで「**キャンセル**」をタップまたはクリックし、**アセット**／**ファイル**&#x200B;に移動して、DAM フォルダーを選択します。
+1. ツールバーの「**プロパティ**」をタップまたはクリックします。
+1. プロパティウィンドウの「**クラウドサービス**」タブにある「**クラウド設定**」フィールドで、メモした内容と同じ設定を選択します。
 1. 「**保存して閉じる**」をタップまたはクリックします。

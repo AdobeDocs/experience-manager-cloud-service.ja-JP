@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
 source-git-commit: ccd2334528ed7309c271d069209adec333de356c
-workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 94%
+workflow-type: ht
+source-wordcount: '882'
+ht-degree: 100%
 
 ---
 
@@ -138,6 +138,6 @@ Assets as a Cloud Service には、4 つのユーザータイプがあります�
 | AEM／実稼動オーサーインスタンス／AEM 管理者 | − | − | − | ✓ |
 | **詳細情報** | [コンテンツハブの有効化](/help/assets/enable-assets-ultimate.md##enable-assets-ultimate-new-users)を参照してください。 | [共同作業者ユーザーのオンボード](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users)を参照してください。 | [パワーユーザーのオンボード](/help/assets/enable-assets-ultimate.md#onboard-power-users)を参照してください。 | - |
 
-AEM Assets Ultimateの使用を開始する方法について詳しくは、[Assets Ultimateの有効化 ](/help/assets/enable-assets-ultimate.md) を参照してください。 既存のAEM Assets ユーザーがAssets Ultimateへのアップグレード時期について質問がある場合は、Adobe アカウント担当者にお問い合わせください。 詳しくは、[ 既存のお客様に対してAssets Ultimateを有効にする ](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers) も参照してください。
+AEM Assets Ultimate の基本を学ぶ方法について詳しくは、[Assets Ultimate の有効化](/help/assets/enable-assets-ultimate.md)を参照してください。既存の AEM Assets ユーザーが Assets Ultimate へのアップグレード時期について質問がある場合は、アドビアカウント担当者にお問い合わせください。詳しくは、[既存のお客様に対する Assets Ultimate の有効化](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers)も参照してください。
 
 また、AEM Assets は、UI 拡張機能、API 駆動型自動化、カスタムコードのデプロイメントなどの高度な要件を持たないお客様向けに、より軽量な DAM も提供します。詳しくは、[AEM Assets Prime](/help/assets/assets-prime.md) を参照してください。

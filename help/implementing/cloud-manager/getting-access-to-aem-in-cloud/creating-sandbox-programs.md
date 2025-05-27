@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '455'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 95%
 1. **ソリューションとアドオン**&#x200B;リストボックスで、プログラムに含める 1 つ以上のソリューションを選択します。
 
    * ソリューション名の左側にある山形をクリックすると、選択したソリューションに含める使用可能なオプションのアドオンが表示されます。
-   * **Sites**、**Assets**、**Edge Delivery Services** の各ソリューションは、サンドボックスプログラムを作成する際に、デフォルトで常に選択されます。 選択を解除することはできません。
+   * **Sites**、**Assets**、**Edge Delivery Services** の各ソリューションは、サンドボックスプログラムの作成時に、デフォルトで常に選択されます。選択を解除することはできません。
 
    ![サンドボックス用のソリューションとアドオンを選択](assets/sandbox-solutions-add-ons.png)
 

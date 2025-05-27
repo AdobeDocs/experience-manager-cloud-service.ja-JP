@@ -5,9 +5,9 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
 source-git-commit: 30386a3117f241d81eed5e55f6c6e97bbe4084f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3467'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -259,7 +259,7 @@ MongoDB に保存されるノードプロパティの値は、16 MB 未満にす
 * `Atlas prescale timeout error` - 取り込みフェーズでは、取り込まれる移行セットのコンテンツのサイズに合わせて、ターゲットクラウドデータベースを適切なサイズにプリスケールしようとします。まれに、この操作は予想された期間内に完了しません。
 * `Exhausted mongo restore retries` - 取り込まれた移行セットのコンテンツのローカルダンプをクラウドデータベースに復元する試みが失敗しました。これは、MongoDB の全体的なヘルス／ネットワークの問題を示し、多くの場合、数分後には修復されます。
 * `Mongo network error` - 場合によっては、MongoDB への接続の確立に失敗し、取り込みプロセスが早期に終了し、失敗として報告されることがあります。取り込みを単純に再試行する必要があります。
-* `Mongo server selection error` – これは、基になる様々な理由で発生する可能性がある、まれな mongo クライアントサイドのタイムアウトエラーです。 その後の再試行で、ほとんどの場合は問題が修正されます。
+* `Mongo server selection error` - これは Mongo クライアントサイドでまれに起こるタイムアウトエラーで、根本原因はいくつか考えられます。その後の再試行で、ほとんどの場合は問題が修正されます。
 
 ### 取り込みの取り消し {#ingestion-rescinded}
 

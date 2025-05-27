@@ -1,14 +1,14 @@
 ---
 title: Cloud Manager での外部リポジトリの追加
-description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Managerは、GitHub Enterprise、GitLab、Bitbucket、Azure DevOps リポジトリとの統合をサポートしています。
+description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise、GitLab、Bitbucket、 Azure DevOps リポジトリとの統合をサポートしています。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="早期導入者" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 source-git-commit: d0cf86d429c7374ad12f6eeb9f287b0ace3406ec
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2074'
+ht-degree: 100%
 
 ---
 
@@ -16,11 +16,10 @@ ht-degree: 0%
 
 Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise、GitLab、Bitbucket リポジトリとの統合をサポートしています。
 
-お客様は、最新の Azure DevOps リポジトリと従来の VSTS （Visual Studio Team Services）リポジトリの両方をサポートすることで、Azure DevOps Git リポジトリをCloud Managerにオンボーディングできるようになりました。
+また、Azure DevOps Git リポジトリを Cloud Manager にオンボードできるようになりました。これは、最新の Azure DevOps リポジトリとレガシー VSTS（Visual Studio Team Services）リポジトリの両方に対応しています。
 
-* Edge Delivery Servicesのユーザーは、オンボーディングされたリポジトリーを使用して、サイトコードを同期およびデプロイできます。
-* AEM as a Cloud ServiceおよびAdobe Managed Services（AMS）のユーザーは、リポジトリをフルスタックパイプラインとフロントエンドパイプラインの両方にリンクできます。
-&#39;
+* Edge Delivery Services のユーザーは、オンボードされたリポジトリを使用して、サイトコードを同期およびデプロイできます。
+* AEM as a Cloud Service および Adobe Managed Services（AMS）のユーザーは、リポジトリをフルスタックパイプラインとフロントエンドパイプラインの両方にリンクできます。&#39;
 >[!NOTE]
 >
 >この記事で説明する機能は、早期導入プログラムを通じてのみ使用できます。詳細と早期導入者としての新規登録について詳しくは、[独自の Git の導入](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)を参照してください。
@@ -65,7 +64,7 @@ Cloud Manager での外部リポジトリの設定は、次の手順で構成さ
    | --- | --- |
    | **リポジトリ名** | 必須。新しいリポジトリのわかりやすい名前。 |
    | **リポジトリ URL** | 必須。リポジトリの URL。<br><br>GitHub でホストされているリポジトリを使用している場合は、パスの末尾を `.git` にする必要があります。<br>例：*`https://github.com/org-name/repo-name.git`*（URL パスは説明用です）。<br><br>外部リポジトリを使用している場合は、次の URL パス形式を使用する必要があります。<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> または <br>`https://self-hosted-domain/org-name/repo-name.git`<br>。Git ベンダーと一致させる必要があります。 |
-   | **リポジトリタイプを選択** | 必須。使用するリポジトリタイプを選択します。 リポジトリ URL のパスに Git ベンダー名（GitLab や Bitbucket など）が含まれている場合、リポジトリタイプは既に選択されています。：<ul><li>**GitHub**（GitHub Enterprise と自己ホスト型バージョンの GitHub）</li><li>**GitLab**（`gitlab.com` と自己ホスト型バージョンの GitLab の両方） </li><li>**Bitbucket** （`bitbucket.org` - クラウドバージョンのみ）がサポートされています。 Bitbucket の自己ホスト型バージョンは、2024年2月15日（PT）以降に非推奨（廃止予定）になりました。）</li><li>**Azure DevOps** （`dev.azure.com`） </ul> |
+   | **リポジトリタイプを選択** | 必須。使用するリポジトリタイプを選択します。リポジトリ URL パスに GitLab や Bitbucket などの Git ベンダー名が含まれている場合、リポジトリタイプは既に事前に選択されています。：<ul><li>**GitHub**（GitHub Enterprise と自己ホスト型バージョンの GitHub）</li><li>**GitLab**（`gitlab.com` と自己ホスト型バージョンの GitLab の両方） </li><li>**Bitbucket**（`bitbucket.org`（クラウドバージョン））のみがサポートされています。Bitbucket の自己ホスト型バージョンは、2024年2月15日（PT）以降に非推奨（廃止予定）になりました。）</li><li>**Azure DevOps**（`dev.azure.com`） </ul> |
    | **説明** | オプション。リポジトリの詳細な説明です。 |
 
 1. 「**保存**」を選択して、リポジトリを追加します。
@@ -81,11 +80,11 @@ Cloud Manager での外部リポジトリの設定は、次の手順で構成さ
    | **新しいアクセストークンを追加** | **リポジトリタイプ：GitHub Enterprise**<br><ul><li> 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[GitHub ドキュメント](https://docs.github.com/ja/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)の指示に従って、個人アクセストークンを作成します。<li>GitHub Enterprise 個人アクセストークン（PAT）に必須の権限<br>これらの権限により、Cloud Manager でプルリクエストの検証、コミットステータスチェックの管理、必要なリポジトリ詳細へのアクセスが可能になります。<br>GitHub Enterprise で PAT を生成する場合は、次のリポジトリ権限が含まれていることを確認します。<ul><li>プルリクエスト（読み取りおよび書き込み）<li>コミットステータス（読み取りおよび書き込み）<li>リポジトリメタデータ（読み取り専用）</li></li></ul></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
    | | **リポジトリタイプ：GitLab**<ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[GitLab ドキュメント](https://docs.gitlab.com/user/profile/personal_access_tokens/)の指示に従って、個人アクセストークンを作成します。<li>GitLab 個人アクセストークン（PAT）に必須の権限<br>これらのスコープにより、Cloud Manager で検証と webhook 統合の必要に応じてリポジトリデータとユーザー情報へのアクセスが可能になります。<br>GitLab で PAT を生成する場合、次のトークンスコープが含まれていることを確認します。<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
    | | **リポジトリタイプ：Bitbucket**<ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Bitbucket ドキュメント](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)を使用して、リポジトリアクセストークンを作成します。<li>Bitbucket 個人アクセストークン（PAT）に必須の権限<br>これらの権限により、Cloud Manager でリポジトリコンテンツへのアクセス、プルリクエストの管理、webhook イベントの構成または反応が可能になります。<br>Bitbucket でアプリパスワードを作成する場合は、次の必須のアプリパスワード権限が含まれていることを確認します。<ul><li>リポジトリ（読み取り専用）<li>プルリクエスト（読み取りおよび書き込み）<li>webhook（読み取りおよび書き込み）</li></li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
-   | | **リポジトリタイプ：Azure DevOps**<ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Azure DevOps ドキュメント ](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&amp;tabs=Windows) を使用して、リポジトリアクセストークンを作成します。<li>Azure DevOps 個人アクセストークン（PAT）に必要な権限。<br> これらの権限により、Cloud Managerは、リポジトリコンテンツへのアクセス、プルリクエストの管理、Webhook イベントの設定または対応を行うことができます。<br>Azure DevOps でアプリパスワードを作成する場合、次の必要なアプリパスワード権限が含まれていることを確認します。<ul><li>リポジトリ（読み取り専用）</li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
+   | | **リポジトリタイプ：Azure DevOps**<ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Azure DevOps ドキュメント](https://learn.microsoft.com/ja-jp/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&amp;tabs=Windows)を使用して、リポジトリアクセストークンを作成します。<li>Azure DevOps 個人アクセストークン（PAT）に必須の権限。<br>これらの権限により、Cloud Manager でリポジトリコンテンツへのアクセス、プルリクエストの管理、webhook イベントを構成または反応できるようになります。<br>Azure DevOps でアプリパスワードを作成する場合は、次の必須のアプリパスワード権限が含まれていることを確認します。<ul><li>リポジトリ（読み取り専用）</li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
 
    >[!IMPORTANT]
    >
-   >**新しいアクセストークンの追加** 機能は、現在、早期導入段階にあります。 さらに機能の追加が予定されています。その結果、アクセストークンに必要な権限が変更される場合があります。また、トークンを管理するユーザーインターフェイスが更新され、トークンの有効期限などの機能が含まれる可能性もあります。さらに、リポジトリにリンクされたトークンが有効なままであることを確認する自動チェックが行われます。
+   >**新しいアクセストークンを追加**&#x200B;機能は現在、早期導入フェーズにあります。さらに機能の追加が予定されています。その結果、アクセストークンに必要な権限が変更される場合があります。また、トークンを管理するユーザーインターフェイスが更新され、トークンの有効期限などの機能が含まれる可能性もあります。さらに、リポジトリにリンクされたトークンが有効なままであることを確認する自動チェックが行われます。
 
 1. 「**検証**」をクリックします。
 

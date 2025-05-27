@@ -1,54 +1,54 @@
 ---
 title: コンテンツフラグメントモデルの管理
-description: コンテンツフラグメントモデルを管理する方法を説明します。コンテンツフラグメントモデルは、AEMのコンテンツフラグメントの基盤として機能し、ヘッドレス配信やページオーサリングで使用する構造化コンテンツを作成できます。
+description: コンテンツフラグメントモデルの管理方法について説明します。これらのモデルは、AEM におけるコンテンツフラグメントの基盤となっていて、ヘッドレス配信やページオーサリングで使用する構造化コンテンツを作成できます。
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
 source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2260'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
 # コンテンツフラグメントモデルの管理 {#managing-content-fragment-models}
 
-コンテンツフラグメントコンソールから、コンテンツフラグメントモデルを管理し、[ エディターを開いて ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) 構造を定義できます。
+コンテンツフラグメントコンソールでは、コンテンツフラグメントモデルを管理でき、さらに[エディターを開いて](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)構造を定義できます。
 
-Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントモデルでは、[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)のコンテンツの構造を定義します。これらのフラグメントは、ヘッドレスコンテンツやページオーサリングの基盤として使用できます。
+Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントモデルでは、[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)のコンテンツの構造を定義します。これらのコンテンツフラグメントは、ヘッドレスコンテンツの基礎として、またはページオーサリングに使用できます。
 
 >[!NOTE]
 >
->このページでは、コンテンツフラグメントモデルを（のみ）表示するコンソールのセクションについて説明します。 その他のパネルについては、以下を参照してください。
+>このページでは、コンテンツフラグメントモデル（のみ）を表示するコンソールのセクションについて説明します。その他のパネルについては、以下を参照してください。
 >
 >* [コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/managing.md)
 >* [コンテンツフラグメントコンソールでのアセットの表示と管理](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
 >[!NOTE]
 >
->コンテンツフラグメントは、**Assets** として保存されます。コンテンツフラグメントモデルは主に **コンテンツフラグメント** コンソールから管理しますが、[Assets](/help/assets/content-fragments/content-fragments-managing.md) コンソールおよび **ツール** ～ **一般** のオプション [&#128279;](/help/assets/content-fragments/content-fragments-models.md) コンテンツフラグメントモデル  からも管理できます。
+>コンテンツフラグメントは、**アセット**&#x200B;として保存されます。コンテンツフラグメントモデルは主に&#x200B;**コンテンツフラグメント**&#x200B;コンソールから管理しますが、[アセット](/help/assets/content-fragments/content-fragments-managing.md)コンソールおよび **ツール**／**一般**&#x200B;の「](/help/assets/content-fragments/content-fragments-models.md)コンテンツフラグメントモデル[」オプションからも管理できます。
 
 ## コンテンツフラグメントモデルの操作方法 {#how-to-work-with-content-fragment-models}
 
-非常に簡単な概要として、コンテンツフラグメントモデルを操作するには、次の操作を行います。
+簡単にまとめると、コンテンツフラグメントモデルを操作するには、次の手順を実行します。
 
-1. [インスタンスに対するコンテンツフラグメントモデル機能の有効化](/help/sites-cloud/administering/content-fragments/setup.md)
-1. コンテンツフラグメントモデルを [ 作成 ](#creating-a-content-fragment-model) します。
-   * この時点で、モデルを **有効** にすることもできます（コンテンツフラグメントの作成時に使用します）。
-1. モデルの構造を [ 定義 ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model) します。
-1. [ コンテンツフラグメントモデルを有効にする ](#enabling-a-content-fragment-model) （まだ行っていない場合）。
-1. **ポリシー**&#x200B;の設定による[必要なアセットフォルダーに対するコンテンツフラグメントモデルの許可](#allowing-content-fragment-models-assets-folder)
+1. [インスタンスに対するコンテンツフラグメントモデル機能を有効化します](/help/sites-cloud/administering/content-fragments/setup.md)
+1. コンテンツフラグメントモデルを[作成](#creating-a-content-fragment-model)します。
+   * この時点で、モデルを&#x200B;**有効にする**&#x200B;こともできます（コンテンツフラグメントの作成時に使用します）。
+1. モデルの構造を[定義](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model)します。
+1. [コンテンツフラグメントモデルを有効にします](#enabling-a-content-fragment-model)（まだの場合）。
+1. **ポリシー**&#x200B;を設定して、[必要なアセットフォルダーでコンテンツフラグメントモデルを許可します](#allowing-content-fragment-models-assets-folder)。
 
-## コンソールでのコンテンツフラグメントモデルの基本構造と処理 {#basic-structure-handling-content-fragment-models-console}
+## コンソールのコンテンツフラグメントモデルの基本構造と基本操作 {#basic-structure-handling-content-fragment-models-console}
 
-[ コンテンツフラグメントコンソール ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) の左端のパネルを使用して、表示、参照および管理するリソースタイプとして **コンテンツフラグメントモデル** を選択します。
+[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)の左端のパネルを使用して、表示、参照、管理するリソースタイプで「**コンテンツフラグメントモデル**」を選択できます。
 
 ![コンテンツフラグメントコンソール - ナビゲーション](/help/sites-cloud/administering/content-fragments/assets/cf-console-models-navigation.png)
 
 これにより、コンテンツフラグメントモデルのビューが開きます。
 
-![ コンテンツフラグメントコンソール – コンテンツフラグメントモデルの管理 ](assets/cf-managing-content-fragment-models.png)
+![コンテンツフラグメントコンソール – コンテンツフラグメントモデルの管理](assets/cf-managing-content-fragment-models.png)
 
 主な領域が 3 つあります。
 
@@ -57,42 +57,42 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
    * IMS 組織も表示します
    * 様々な[アクション](#actions-unselected)の提供
 * 左側のパネル
-   * フォルダーとしてリストされた [ すべての設定へのパス ](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) を表示します
+   * フォルダーとしてリストされた[すべての設定へのパス](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)を表示します
    * フォルダーツリーを表示したり非表示にしたりできます
    * ツリーの特定のフォルダーを選択できます
-   * ネストされたフォルダー（サブ設定）を表示するようにサイズ変更できます
-   * コンテンツフラグメントモデルと同様に、[ コンテンツフラグメント ](/help/sites-cloud/administering/content-fragments/managing.md) または [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) を表示できます。パネルへのリンクを圧縮または展開することもできます
-* 右側のメインパネル
-   * 選択したフォルダーの下に保持されているすべてのコンテンツフラグメントモデルのリストを確認します。
-      * 選択したフォルダーのコンテンツフラグメントモデルと、すべてのサブフォルダーが表示されます。
-         * 場所はパンくずリストで示されます。これを使用して、場所を変更することもできます:
-      * [各モデルについての情報が表示されます](#information-content-fragment-models)
+   * ネストされたフォルダー（サブ設定）が表示されるようにサイズ変更できます
+   * コンテンツフラグメントモデルだけでなく、[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/managing.md)や[アセット](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)も表示できます。また、パネルへのリンクを圧縮または展開することもできます
+* 右側のメインパネルでは、次のことが可能です。
+   * 選択したフォルダーの下にあるすべてのコンテンツフラグメントモデルのリストを確認します。
+      * 選択したフォルダーのコンテンツフラグメントモデルと、すべての子フォルダーが表示されます。
+         * 場所はパンくずリストで示されます。これを使用して、場所を変更することもできます。
+      * [各モデルに関する情報が表示されます](#information-content-fragment-models)
          * [表示する列を選択できます](#select-columns-console)
-      * コンテンツフラグメントモデルに関する [ 様々な情報フィールド ](#information-content-fragment-models) のリンクは、フィールドに応じて、次のことが可能です。
-         * エディターで適切なモデルを開きます
-         * 設定へのパスに関する情報を表示
-         * モデルの状態に関する情報を表示します
-      * コンテンツフラグメントモデルに関する [ その他の特定の情報フィールド ](#information-content-fragments) を使用して [ 高速フィルタリング ](#fast-filtering) を行うことができます。
+      * コンテンツフラグメントにモデル関する[様々な情報フィールド](#information-content-fragment-models)にリンクがあります。このリンクは、フィールドに応じて、次のような機能があります。
+         * エディターで適切なフラグメントを開く
+         * 設定へのパスに関する情報を表示する
+         * モデルのステータスに関する情報を表示する
+      * コンテンツフラグメントモデルについての[その他の特定の情報フィールド](#information-content-fragments)は、[高速フィルタリング](#fast-filtering)に使用できます。
          * 列の値を選択すると、直ちにフィルターとして適用されます
-         * 高速フィルタリングは、**変更者**、**公開者** および **ステータス** 列でサポートされています。
+         * 高速フィルタリングは、**変更者**、**公開者**、**ステータス**&#x200B;の各列でサポートされています。
       * 列ヘッダーにマウスオーバーを使用すると、ドロップダウンアクションセレクターと幅スライダーが表示されます。これらを使用すると、次のことができます。
          * 並べ替え - 昇順または降順に適切なアクションを選択します。
 これにより、テーブル全体がその列に従って並べ替えられます。並べ替えは、適切な列でのみ使用できます。
          * 列のサイズを変更 - アクションまたは幅スライダーを使用します。
-      * 詳細な [ アクション ](#actions-selected-content-fragment-models) を実行する 1 つ以上のモデルを選択
+      * さらに[アクション](#actions-selected-content-fragment-models)を実行するには、1 つ以上のフラグメントを選択します
    * 「[フィルターパネル](#filter-content-fragment-models)」を開きます
    * このコンソールで使用できる[キーボードショートカット](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)の選択
 
 ## コンテンツフラグメントモデルに関して提供される情報 {#information-content-fragment-models}
 
-コンソールのメインパネルや右パネル（テーブル表示）には、コンテンツフラグメントモデルに関する様々な情報が表示されます。 また一部の項目には、その他のアクションや情報への直接リンクも含まれます。
+コンソールのメインパネルや右パネル（テーブル表示）には、コンテンツフラグメントモデルに関する様々な情報が表示されます。また一部の項目には、その他のアクションや情報への直接リンクも含まれます。
 
 * **名前**
    * エディターでモデルを開くためのリンクを提供します。
-* **ロック済み** （南京錠アイコン）
-   * モデルをロックすると、南京錠アイコンが表示されます。
+* **ロック済み**（南京錠アイコン）
+   * モデルがロックされている場合、南京錠アイコンが表示されます。
 * **パス**
-   * コンソールで設定を開くためのリンクとしてパスを提供します。
+   * コンソールでフォルダーを開くためのリンクが表示されます。
 フォルダー名にカーソルを合わせると、JCR パスが表示されます。
 * **ステータス**
    * 情報提供のみ。
@@ -110,13 +110,13 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
    * 情報提供のみ。
 * **公開者**
    * 情報提供のみ。
-   * [高速フィルタリング](#fast-filtering)に使用可能
+   * [高速フィルタリング](#fast-filtering)に使用可能。
 
-## モデルプロパティ {#model-properties}
+## モデルのプロパティ {#model-properties}
 
-特定のモデルを選択すると、そのモデルのプロパティが（[ モデルの作成 ](#creating-a-content-fragment-model) 時に定義したとおりに）表示されます。 モデルが **ロック済み** でない場合、一部の項目は更新できます。 また、モデル（タイトル **の横にある情報アイコンを使用して、この情報パネルを開いたり閉じたりするこ** もできます。
+特定のモデルを選択すると、そのモデルのプロパティが（[モデルの作成](#creating-a-content-fragment-model)時に定義したとおりに）表示されます。モデルが&#x200B;**ロック**&#x200B;されていないでない場合、一部の項目は更新できます。また、情報アイコン（モデルの&#x200B;**タイトル**&#x200B;の横）を使用して、この情報パネルの開閉ができます。
 
-![ コンテンツフラグメントコンソール – 選択したコンテンツフラグメントモデルの情報 ](assets/cf-managing-content-fragment-models-selected.png)
+![コンテンツフラグメントコンソール – 選択したコンテンツフラグメントモデルの情報](assets/cf-managing-content-fragment-models-selected.png)
 
 * **[パス](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
 * **[ステータス](#enabling-a-content-fragment-model)**
@@ -125,7 +125,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 * **説明**
 * **プレビュー URL パターン**
 
-  コンテンツフラグメントモデルを使用すると、作成者は外部フロントエンドアプリケーションでコンテンツを **プレビュー** できます。 **プレビューサービス**&#x200B;を設定したら、フロントエンドアプリケーションの URL を追加します。
+  コンテンツフラグメントモデルを使用すると、作成者は外部フロントエンドアプリケーションでコンテンツを&#x200B;**プレビュー**&#x200B;できます。**プレビューサービス**&#x200B;を設定したら、フロントエンドアプリケーションの URL を追加します。
 
   プレビュー URL は次のパターンに従う必要があります。
     `https://<preview_url>?param=${expression}`
@@ -153,27 +153,27 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 ## アクション {#actions}
 
-（左側のパネルで）フォルダーを選択すると、直接または特定のモデルを選択した後に使用できる様々なアクションがあります。
+フォルダーを（左側のパネルで）選択した後、そのまま直接できるアクション、または特定のモデルを選択した後にできる様々なアクションがあります。
 
 * 様々なアクションを[コンソールから直接実行できます](#actions-unselected)
-* [1 つ以上のコンテンツフラグメントモデルを選択して、適切なアクションを表示する ](#actions-selected-content-fragment) とができます。
+* [1 つ以上のコンテンツフラグメントを選択して所定のアクションを表示](#actions-selected-content-fragment)できます
 
 ### アクション（未選択） {#actions-unselected}
 
 フォルダーの選択後、特定のコンテンツフラグメントモデルを選択しなくても、コンソールから特定のアクションを実行できます。
 
-* **[作成](#creating-a-content-fragment-model)** 新しい（空の）モデル
+* 新しいワークフローモデルを&#x200B;**[作成](#creating-a-content-fragment-model)**&#x200B;します
 
 ### コンテンツフラグメントコンソールでのコンテンツフラグメントモデルのアクション {#actions-selected-content-fragment-models}
 
-特定のモデルを選択すると、そのモデルで使用可能なアクションに焦点を当てたツールバーが開きます。 複数のモデルを選択することもできます。使用可能なアクションはそれに応じて調整されます。
+特定のモデルを選択するとツールバーが開き、そのモデルで使用可能なアクションが表示されます。複数のモデルを選択することもできます。それに応じて、使用可能なアクションも変化します。
 
 * **[編集](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)**：コンテンツフラグメントモデルを定義します。
-* **パブリッシュ**&#x200B;[ パブリッシュ ](/help/implementing/cloud-manager/manage-environments.md#environment-types) 層または [ プレビュー ](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) 層のいずれかに適用されます。
-* **ロック**/**ロック解除**：ユーザーがモデルを変更できるかどうかを制御します。
-* **[Enable](#enabling-a-content-fragment-model)**/**[Disable](#disabling-a-content-fragment-model)**：このモデルに基づいて、ユーザーがコンテンツフラグメントの作成を許可されるかどうかを制御します。
+* **パブリッシュ**：[パブリッシュ](/help/implementing/cloud-manager/manage-environments.md#environment-types)層または[プレビュー](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)層のいずれかに適用されます。
+* **ロック**／**ロック解除**：ユーザーのモデルの変更を許可するかどうかを制御します。
+* **[有効化](#enabling-a-content-fragment-model)**／**[無効化](#disabling-a-content-fragment-model)**：ユーザーがこのモデルを基にコンテンツフラグメントを作成することを許可するかどうかを制御します。
 
-1 つのモデルを選択すると、右側のパネルに [ モデルのプロパティ ](#properties) も表示されます。
+1 つのモデルを選択すると、右側のパネルに[モデルのプロパティ](#properties)も表示されます。
 
 ## コンソールに表示される列の選択 {#select-columns-console}
 
@@ -185,12 +185,12 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 ![コンテンツフラグメントコンソール - 列の設定](assets/cf-managing-content-fragment-models-column-selection.png)
 
-## コンテンツフラグメントモデルのフィルタリング {#filter-content-fragment-models}
+## コンテンツフラグメントモデルのフィルター {#filter-content-fragment-models}
 
 フィルターパネルには、次の機能があります。
 
 * 一連の述語
-   * ステータスフィールド、タグ、ユーザーなどを含む
+   * ステータスフィールド、タグ、ユーザーなど
    * 1 つ以上の述語を選択して組み合わせ、フィルターを作成できます
 
 <!--
@@ -198,37 +198,37 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 * the option to retrieve a saved search filter for reuse
 -->
 
-選択すると、（メインパネルの上部に **&#x200B;**&#x200B;フィルター条件」オプションが表示されます。 そこから選択を解除できます。次に例を示します。
+選択した後、メインパネルの上部に「**フィルター条件**」オプションが表示され、そこから選択を解除できます。次に例を示します。
 
-![ コンテンツフラグメントコンソール – コンテンツフラグメントモデルのフィルタリング ](assets/cf-managing-content-fragment-models-filter.png)
+![コンテンツフラグメントコンソール – コンテンツフラグメントモデルのフィルタリング](assets/cf-managing-content-fragment-models-filter.png)
 
 ### 高速フィルタリング {#fast-filtering}
 
 リスト内の特定の列の値をクリックして、述語を選択することもできます。1 つ以上の値を選択して、述語を組み合わせることができます。
 
-例えば、「**ステータス**」列の「**有効**」を選択します。 選択すると、フィルターの述語として表示され、それに応じてリストがフィルターされます。
+例えば、**ステータス**&#x200B;列の「**公開済み**」を選択します。選択すると、フィルターの述語として表示され、それに応じてリストがフィルターされます。
 
 >[!NOTE]
 >
->高速フィルターは、**ステータス**、**変更者**、**タグ**、**公開者** 列のみサポートしています。
+>高速フィルターが対応しているのは、「**ステータス**」、「**変更者**、「**タグ**」、「**公開者**」の各列のみです。
 
 >[!NOTE]
 >
->高速フィルタリングは、コンソールでの [ コンテンツフラグメント ](/help/sites-cloud/administering/content-fragments/managing.md#fast-filtering) と同じ方法で動作します。
+>高速フィルタリングは、コンソールでの[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/managing.md#fast-filtering)と同じ方法で動作します。
 
 ## コンテンツフラグメントモデルの作成 {#creating-a-content-fragment-model}
 
 1. 目的の[設定またはサブ設定](/help/sites-cloud/administering/content-fragments/setup.md)に適したフォルダーに移動します。
-1. **作成** を使用してダイアログを開きます。
+1. 「**作成**」を使用してダイアログを開きます。
 
    >[!CAUTION]
    >
-   >**作成** オプションは、次の場合にのみ使用できます。
+   >「**作成**」オプションは、次の場合にのみ使用できます。
    >
-   >* [ コンテンツフラグメントモデルの使用が有効になっている ](/help/sites-cloud/administering/content-fragments/setup.md) 合
-   >* モデルを作成するフォルダーを選択している場合。
+   >* [コンテンツフラグメントモデルの使用が有効になっている場合](/help/sites-cloud/administering/content-fragments/setup.md)
+   >* モデルを作成するフォルダーが選択されている場合。
 
-1. 設定の **パス** を選択し、**名前** を指定します。
+1. 設定の&#x200B;**パス**&#x200B;を選択し、**名前**&#x200B;を指定します。
 
    >[!NOTE]
    >
@@ -239,9 +239,9 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
    様々なプロパティも定義できます。
 
    * **タイトル**
-最初に **タイトル** を入力すると、そこから **名前** が生成されます。
+最初に**タイトル**&#x200B;を入力すると、そこから&#x200B;**名前**&#x200B;が生成されます。
    * **説明**
-   * **モデルを有効にする** モデルを有効にする [ 有効にする ](#enabling-disabling-a-content-fragment-model)
+   * **モデルを有効にする**&#x200B;で[モデルを有効にします](#enabling-disabling-a-content-fragment-model)
 
    >[!NOTE]
    >
@@ -259,12 +259,12 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 * コンテンツフラグメントモデル内から参照する
 * GraphQL で使用する（スキーマが生成される）
 
-モデルは次の **うに有効化** できます。
+モデルは次の場合に&#x200B;**有効**&#x200B;にできます。
 
-* 新しいモデルの作成時
+* モデルを作成するとき
    * オプションがダイアログに表示されます。
-* モデルが明確に **無効** されたとき
-   * 必要なモデルを選択すると、上部のツールバーで **有効にする** アクションを使用できます。
+* モデルが明確に&#x200B;**無効**&#x200B;になったとき
+   * 必要なモデルを選択すると、上部のツールバーで「**有効にする**」アクションを使用できます。
 
 ### コンテンツフラグメントモデルの無効化 {#disabling-a-content-fragment-model}
 
@@ -276,9 +276,9 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
    * モデルに基づくコンテンツフラグメントは、引き続き GraphQL エンドポイントからクエリして返すことができます。
 * モデルは参照できなくなりますが、既存の参照は変更されず、引き続き GraphQL エンドポイントからクエリして返すことができます。
 
-**有効** フラグが設定されているモデルを無効にするには、次の場所から **無効** オプションを使用します。
+「**有効**」としてフラグ付けされたモデルを無効にするには、次のいずれかの「**無効にする**」オプションを使用します。
 
-* 上部のツールバー（必要なモデルが選択されている場合）
+* 上部のツールバー（必要なモデルが選択されている場合）。
 
 ## アセットフォルダーでのコンテンツフラグメントモデルの許可 {#allowing-content-fragment-models-assets-folder}
 
@@ -341,16 +341,16 @@ To delete a Content Fragment model:
 
 コンテンツフラグメントモデルを公開するには：
 
-1. コンテンツフラグメントモデルに移動して選択します。 複数のモデルを選択できます。
+1. コンテンツフラグメントモデルに移動して選択します。複数のモデルを選択できます。
 
-1. ツールバーの **公開** を選択します。
+1. ツールバーの「**公開**」を選択します。
 
 1. 公開ダイアログで、「**宛先**」を選択します。
 
    * **パブリッシュサービス**
    * **プレビューサービス**
 
-1. 選択したモデルとその参照を公開するワークフローが開始されます。 公開ステータスがコンソールに表示されます。
+1. 選択したモデルとその参照を公開するワークフローが開始されます。公開ステータスがコンソールに示されます。
 
 <!--
 ## Unpublishing a Content Fragment Model {#unpublishing-a-content-fragment-model}
@@ -374,7 +374,7 @@ The message suggests that you check the [References](/help/sites-cloud/authoring
 
 ## コンテンツフラグメントモデルのロック {#locked-content-fragment-models}
 
-この機能を使用すると、モデルを更新できるかどうかを制御できますが、公開済みのコンテンツフラグメントモデルに対するガバナンスも提供されます。
+この機能を使用すると、モデルを更新できるかどうかを制御できますが、公開済みのコンテンツフラグメントモデルに対するガバナンスもできるようになります。
 
 ### 課題 {#the-challenge}
 
@@ -398,7 +398,7 @@ The message suggests that you check the [References](/help/sites-cloud/authoring
 
 ### 解決策 {#the-solution}
 
-これらの問題に対処するために、コンテンツフラグメントモデルは、公開され次第、オーサー環境では読み取り専用モードに&#x200B;*ロック*&#x200B;されます。このステータスは **ロック済み** と表示されます。
+これらの問題に対処するために、コンテンツフラグメントモデルは、公開され次第、オーサー環境では読み取り専用モードに&#x200B;*ロック*&#x200B;されます。このステータスは、**ロック済み**&#x200B;と表示されます。
 
 モデルが&#x200B;**ロック済み**（読み取り専用モード）の場合、モデルの内容と構造は表示できますが、モデルを編集することはできません。
 
@@ -406,7 +406,7 @@ The message suggests that you check the [References](/help/sites-cloud/authoring
 
 * コンソール
 
-  コンソールで、ツールバーの「**ロック解除**」および「**ロック** アクションを使用して、読み取り専用モードを管理できます。
+  コンソールで、ツールバーの「**ロック解除**」および「**ロック**」アクションを使用して、読み取り専用モードを管理できます。
 
    * モデルを&#x200B;**ロック解除**&#x200B;して編集を有効にすることができます。
 
@@ -419,9 +419,9 @@ The message suggests that you check the [References](/help/sites-cloud/authoring
 
 * モデルエディター
 
-   * ロックされているモデルを開くと、警告が表示され、「**キャンセル**」、「**読み取り専用で表示**」、「**編集** の 3 つのアクションが提示されます。
+   * ロックされているモデルを開くと、警告が表示され、「**キャンセル**」、「**読み取り専用で表示**」、「**編集**」の 3 つのアクションが提示されます。
 
-   * **読み取り専用で表示** を選択した場合、モデルの内容と構造を表示できます。
+   * 「**読み取り専用で表示**」を選択した場合、モデルの内容と構造が表示されます。
 
    * 「**編集**」を選択すると、更新内容を編集して保存できます。
 
