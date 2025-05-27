@@ -1013,8 +1013,8 @@ ht-degree: 99%
       + [WYSIWYG とドキュメントベースのブロック](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
       + [DAM アセットを使用したページ](/help/edge/wysiwyg-authoring/dam-assets.md)
       + [サイト間でのコードの再利用](/help/edge/wysiwyg-authoring/repoless.md)
-      + [Repoless マルチサイト管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
-      + [Repoless ステージと実稼動環境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+      + [repoless マルチサイト管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
+      + [repoless のステージ環境と実稼働環境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
       + [サイト認証の設定](/help/edge/wysiwyg-authoring/site-authentication.md)
       + [WIP Sites 機能](/help/edge/wysiwyg-authoring/wip-features.md)
    + ドキュメントベースのオーサリング {#document-authoring}

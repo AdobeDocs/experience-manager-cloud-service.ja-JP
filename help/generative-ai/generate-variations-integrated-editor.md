@@ -7,7 +7,7 @@ exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
 workflow-type: tm+mt
 source-wordcount: '1416'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -313,10 +313,10 @@ AEM Sidekick からのアクセスは、[ドキュメントベースのオーサ
 
 ### AEM ユニバーサルエディターからのアクセス {#access-aem-universal-editor}
 
-[AEM ユニバーサルエディター ](/help/sites-cloud/authoring/universal-editor/authoring.md) からのアクセスは、拡張機能として実装されます。
+[AEM ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md)からのアクセスは、拡張機能として実装されます。
 
-* ユニバーサルエディターからバリエーションを生成にアクセスする方法について詳しくは、ドキュメント [ ユニバーサルエディターを使用したコンテンツのオーサリング ](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations) を参照してください。
-* 拡張機能を有効にする方法について詳しくは、AEM Experience Managerのドキュメント [Extension Managerを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/)。
+* ユニバーサルエディターから「バリエーションを生成」にアクセスする方法について詳しくは、[ユニバーサルエディターを使用したコンテンツのオーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations)ドキュメントを参照してください。
+* 拡張機能を有効にする方法について詳しくは、[AEM Experience Manager の Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) のドキュメントを参照してください。
 
 ### AEM コンテンツフラグメントエディターからのアクセス {#access-aem-content-fragment-editor}
 

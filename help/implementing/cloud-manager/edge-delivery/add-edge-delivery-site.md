@@ -7,7 +7,7 @@ exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 source-git-commit: a7e8e340355d85236a0997b28e0a04296b2ef5b4
 workflow-type: tm+mt
 source-wordcount: '502'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 89%
 >[!IMPORTANT]
 >
 >Edge Delivery Services サイトをCloud Managerにオンボーディングする必要がある理由を説明します。
->[Edge Delivery ServicesにAdobeの推奨パスを使用するメリット ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds) を参照してください。
+>[アドビが推奨する Edge Delivery Services のパスを使用するメリット](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)を参照してください。
 
 **Cloud Manager に Edge Delivery サイトを追加するには：**
 
