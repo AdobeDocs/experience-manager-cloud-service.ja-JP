@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a91b15836d0ca0308fbc860ec57aacda908f610d
+source-git-commit: b0c8769b5941ed772a91cf189e8c7355d1db766b
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 100%
+source-wordcount: '1160'
+ht-degree: 93%
 
 ---
 
@@ -58,6 +58,10 @@ Cloud Manager には、SSL 証明書をインストールおよび管理する�
 DV 証明書は、最も基本的なレベルの SSL 証明書で、多くの場合、テスト目的や、基本的な暗号化で web サイトを保護する目的で使用されます。DV 証明書は[実稼動プログラムとサンドボックスプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)の両方で利用できます。
 
 DV 証明書を作成すると、その証明書を削除しない限り、アドビが 3 か月ごとに自動的に更新します。
+
+>[!IMPORTANT]
+>
+>環境で CNAME ベースの検証を使用して（DV） SSL 証明書を使用する場合は、証明書の自動更新前に CNAME レコードを削除すると、更新が失敗する可能性があることに注意してください。 この削除により、証明書の有効期限が切れ、サービスが中断される可能性があります。 この問題を回避するには、完全な更新プロセスを通じて CNAME レコードが適切に保持されていることを確認してください。 更新プロセスは、ドメイン所有権の検証に CNAME レコードが存在するかどうかによって異なります。
 
 ### 顧客が管理する（OV/EV）SSL 証明書 {#customer-managed}
 
