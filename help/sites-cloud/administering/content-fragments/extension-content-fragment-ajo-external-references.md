@@ -30,7 +30,7 @@ AJOの外部参照拡張機能は、事前定義済みのタグに関連付け�
 
 >[!NOTE]
 >
->[AJO統合 ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments) も参照してください。
+>[AJO統合 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/integrations/aem-fragments) も参照してください。
 
 1. [ コンテンツフラグメントコンソール ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) を開きます。
 
