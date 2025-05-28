@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b246b1729d7e598dc593ecce05bd8975d4752f5a
+source-git-commit: 35d50bc3c2663ff9113ed89dbaeb9b9a82cd9bb1
 workflow-type: tm+mt
-source-wordcount: '6173'
+source-wordcount: '6185'
 ht-degree: 99%
 
 ---
@@ -439,6 +439,8 @@ ht-degree: 99%
          + [削除に関する考慮事項](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [構造の分析](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [コンテンツフラグメントコンソールのアセット](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+         + [Adobe Journey Optimizerのコンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
+         + [コンテンツフラグメントAJO外部参照拡張機能](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
          + [キーボードショートカット](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + サイト作成 {#site-creation}
          + [新しいサイトの作成](/help/sites-cloud/administering/site-creation/create-site.md)
