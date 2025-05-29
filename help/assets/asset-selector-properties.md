@@ -1,12 +1,12 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセットセレクター'
+title: カスタマイズ用のアセットセレクターのプロパティ
 description: アセットセレクターを使用して、アプリケーション内のアセットのメタデータとレンディションを検索および取得します。
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
-workflow-type: ht
-source-wordcount: '1326'
-ht-degree: 100%
+source-git-commit: 89a7346f5b6bc1d65524c5ead935aa4a2a764ebb
+workflow-type: tm+mt
+source-wordcount: '1403'
+ht-degree: 91%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 100%
 | *imsToken* | 文字列 | いいえ | | 認証に使用される IMS ベアラートークンです。統合に [!DNL Adobe] アプリケーションを使用している場合、`imsToken` は必須です。 |
 | *apiKey* | 文字列 | いいえ | | AEM Discovery サービスへのアクセスに使用する API キーです。[!DNL Adobe] アプリケーション統合を使用している場合、`apiKey` は必須です。 |
 | *filterSchema* | 配列 | いいえ | | フィルタープロパティの設定に使用するモデルです。これは、アセットセレクターで特定のフィルターオプションを制限する場合に便利です。 |
-| *filterFormProps* | オブジェクト | いいえ | | 検索を絞り込むために使用する必要があるフィルタープロパティを指定します。（例：MIME タイプの JPG、PNG、GIF） |
+| *filterForm Props* | オブジェクト | いいえ | | 検索を絞り込むために使用する必要があるフィルタープロパティを指定します。（例：MIME タイプの JPG、PNG、GIF） |
 | *selectedAssets* | 配列 `<Object>` | いいえ |                 | アセットセレクターがレンダリングされる際に、選択したアセットを指定します。アセットの ID プロパティを含むオブジェクトの配列が必要です。（例：`[{id: 'urn:234}, {id: 'urn:555'}]`）アセットは、現在のディレクトリで使用できる必要があります。別のディレクトリを使用する必要がある場合は、`path` プロパティの値も指定します。 |
 | *acvConfig* | オブジェクト | いいえ | | デフォルトを上書きするカスタム設定が含まれているオブジェクトを含む、アセットコレクション表示プロパティです。また、このプロパティは、アセットビューアのパネルビューを有効にするために `rail` プロパティと共にに使用されます。 |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | いいえ |                 | OOTB 翻訳がアプリケーションのニーズを満たさない場合は、独自のローカライズされたカスタム値を `i18nSymbols` プロップ経由で渡すことができるインターフェイスを表示できます。このインターフェイスを介して値を渡すと、提供されたデフォルトの翻訳が上書きされ、代わりに独自の翻訳が使用されます。上書きを実行するには、上書きしたい `i18nSymbols` のキーに有効な[メッセージ記述子](https://formatjs.io/docs/react-intl/api/#message-descriptor)オブジェクトを渡す必要があります。 |
@@ -66,7 +66,7 @@ ht-degree: 100%
 | *repositoryId* | 文字列 | いいえ | &#39;&#39; | アセットセレクターがコンテンツを読み込む元のリポジトリです。 |
 | *additionalAemSolutions* | `Array<string>` | いいえ | [ ] | 追加の AEM リポジトリのリストを追加できます。このプロパティで情報が指定されない場合、メディアライブラリまたは AEM Assets リポジトリのみが考慮されます。 |
 | *hideTreeNav* | ブール値 | いいえ |  | アセットツリーのナビゲーションサイドバーを表示するか非表示にするかを指定します。このプロパティはモーダルビューでのみ使用されるので、パネルビューではこのプロパティの影響はありません。 |
-| *onDrop* | 関数 | いいえ | | このプロパティで、アセットのドロップ機能を許可することができます。 |
+| *onDrop* | 関数 | いいえ | | オンドロップ機能は、アセットをドラッグして指定されたドロップ領域にリリースするために使用されます。 アセットをシームレスに移動および処理できる、インタラクティブなユーザーインターフェイスを提供します。 |
 | *dropOptions* | `{allowList?: Object}` | いいえ | | 「allowList」を使用してドロップオプションを設定します。 |
 | *colorScheme* | 文字列 | いいえ | | アセットセレクターのテーマ（`light` または `dark`）を設定します。 |
 | *テーマ* | 文字列 | いいえ | デフォルト | アセットセレクターアプリケーションに、`default` と `express` の間のテーマを適用します。また、`@react-spectrum/theme-express` もサポートしています。 |
@@ -94,11 +94,20 @@ ht-degree: 100%
 | *onFilesChange* | 関数 | いいえ | | これは、ファイルを変更した際のアップロードの動作を示すのに使用されるコールバック関数です。アップロード保留中のファイルの新しい配列とアップロードのソースタイプを渡します。エラーの場合、ソースタイプは null になることがあります。構文は `(newFiles: File[], uploadType: UploadType) => void` です。 |
 | *uploadingPlaceholder* | 文字列 | | | これは、アセットのアップロードを開始した際にメタデータフォームを置き換えるプレースホルダー画像です。構文は `{ href: string; alt: string; } ` です。 |
 | *uploadConfig* | オブジェクト | | | これは、アップロード用にカスタマイズされた設定を含むオブジェクトです。 |
-| *featureSet* | 配列 | 文字列 | | `featureSet:[ ]` プロパティは、アセットセレクターアプリケーションで特定の機能を有効または無効にするのに使用されます。コンポーネントまたは機能を有効にするには、配列に文字列値を渡すか、配列を空のままにして、そのコンポーネントを無効にします。例えば、アセットセレクターでアップロード機能を有効にするには、構文 `featureSet:[0:"upload"]` を使用します。 |
+| *featureSet* | 配列 | 文字列 | | `featureSet:[ ]` プロパティは、アセットセレクターアプリケーションで特定の機能を有効または無効にするのに使用されます。コンポーネントまたは機能を有効にするには、配列に文字列値を渡すか、配列を空のままにして、そのコンポーネントを無効にします。  例えば、アセットセレクターでアップロード機能を有効にするには、構文 `featureSet:[0:"upload"]` を使用します。 同様に、`featureSet:[0:"collections"]` を使用してアセットセレクターでコレクションを有効にすることができます。 さらに、`featureSet:[0:"detail-panel"]` を使用してアセットの [ 詳細パネル ](overview-asset-selector.md#asset-details-and-metadata) を有効にします。 これらの機能を一緒に使用するには、構文を `featureSet:["upload", "collections", "detail-panel"]` します。 |
 
 <!--
+| *selectedRendition* | Object | | | This property allows users to define and control which renditions of an asset are displayed when the panel is accessed. This customization enhances user experience by filtering out unnecessary renditions and showcasing only the most relevant renditions. For example, `CopyUrlHref` allows you to use Dynamic Media renditions in your Asset Selector application (delivery URL). |
+| *featureSet* | Array | String | | The `featureSet:[ ]` property is used to enable or disable a particular functionaly in the Asset Selector application. To enable the component or a feature, you can pass a string value in the array or leave the array empty to disable that component. For example, you want to enable upload functionality in the Asset Selector, use the syntax `featureSet:[0:"upload"]`. Similarly, you can use `featureSet:[0:"collections"]` to enable collections in the Asset Selector. Addidionally, use `featureSet:[0:"detail-panel"]` to enable [details panel](overview-asset-selector.md#asset-details-and-metadata) of an asset. Also, `featureSet:[0:"dm-renditions"]` to show Dynamic Media renditions of an asset.|
 | *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
 | *path* | String | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
 | *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](/help/assets/asset-selector-customization.md#customize-expired-assets). |
 -->
+
+>[!MORELIKETHIS]
+>
+>* [アセットセレクターのカスタマイズ](/help/assets/asset-selector-customization.md)
+>* [アセットセレクターと様々なアプリケーションの統合](/help/assets/integrate-asset-selector.md)
+>* [OpenAPI 機能を備えた Dynamic Media とのアセットセレクターの統合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [ アセットセレクターとサードパーティアプリケーションの統合 ](/help/assets/integrate-asset-selector-non-adobe-app.md)

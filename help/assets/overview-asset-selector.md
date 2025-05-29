@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセッ�
 description: アセットセレクターを使用して、アプリケーション内のアセットのメタデータとレンディションを検索および取得します。
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
-workflow-type: ht
-source-wordcount: '1422'
-ht-degree: 100%
+source-git-commit: fb1e73b24e0717998a69132cc8f196193c87bab4
+workflow-type: tm+mt
+source-wordcount: '1598'
+ht-degree: 88%
 
 ---
 
@@ -203,6 +203,46 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 * ![ギャラリー表示](assets/do-not-localize/gallery-view.png) [!UICONTROL **ギャラリー表示**]：ギャラリー表示では、ファイルやフォルダーは、中央に固定された水平リストに表示されます。
 * ![ウォーターフォール表示](assets/do-not-localize/waterfall-view.png) [!UICONTROL **ウォーターフォール**&#x200B;表示]：ウォーターフォール表示では、ファイルやフォルダーがブリッジ図形式で表示されます。
 
+### アセットの詳細とメタデータ {#asset-details-and-metadata}
+
+アセットの詳細ページは、特定のアセットの包括的なビューを提供し、すべての主要な情報を 1 か所に統合します。 名前、ファイル形式、ステータス、簡単な説明の概要と、視覚的に簡単に識別できるプレビューまたはサムネールが含まれています。 また、作成日、作成者、サイズ、カラースキームなど、アセットのメタデータも含まれます。 これらの属性は、アセットの検索、フィルタリングおよび分類を効率的に行うのに役立ちます。 アセットの詳細パネルは、アセットセレクターのパネルとモーダル表示の両方で使用できます。 パネルビューでは、プロパティを有効にして、アセットを返すよう `onDrop` 設定する必要があります。 または、モーダルビューでは、プロパティ `handleSelection` アセットを返します。 [ アセットセレクターのプロパティ ](asset-selector-properties.md) を参照してください。
+
+アセットとメタデータの詳細を表示するには、次の手順を実行します。
+
+1. アセットセレクター MFE を開き、アセットに移動します。
+1. アセットにポインタを合わせ、![ 情報アイコン ](/help/assets/assets/info-icon-solid-black.svg) をクリックします。
+1. 「**[!UICONTROL 情報]**」タブに移動して、アセットの詳細を表示します。<!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
+
+アセットの詳細ビューパネルをカスタマイズするには、[ モーダルビューでの情報のカスタマイズ ](asset-selector-customization.md#customize-info-in-modal-view) を参照してください。
+
+![ 資産の詳細 ](assets/asset-details.png)
+
+<!--
+
+#### Asset renditions {#asset-renditions}
+
+Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. See [Dynamic Media renditions](/help/assets/renditions.md#dynamic-media-renditions).
+
+>[!NOTE]
+>
+>* Prerequisites to [Dynamic Media with OpenAPI Capabilities renditions](/help/assets/renditions.md##prereqs-dm-with-openapi-renditions).
+>* Renditions tab in the details panel of an asset shows up if `featureSet`  props is set to `['detail-panel', 'dm-renditions']`.
+>* An asset should be approved to see Dynamic Media with OpenAPI renditions and/or ensure processing/publishing of the asset to Dynamic Media is complete (for images only).
+
+![Asset details dynamic media renditions](assets/asset-details-dm-renditions.png)
+
+For assets that are approved and have renditions enabled, you see the **Dynamic Media with Open API** badge. 
+
+![Dynamic Media Open API stamp](assets/dm-open-api-stamp.png)
+
+Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI capabilities](integrate-asset-selector-dynamic-media-open-api.md##interface-dynamic-media-open-api).
+
+##### Add modifiers {#modifiers-dm-media-renditions}
+
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+
+-->
+
 ## 主な機能の詳細 {#key-capabilities-asset-selector}
 
 <table>
@@ -216,39 +256,39 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
      </td>
     <td>
         <img src="assets/with-adobe-app.gif" width="70px" height="70px" alt="アセットセレクターとアドビアプリケーションの統合の図"><br/>
-        <a href="integrate-asset-selector.md">アセットセレクターとアドビアプリケーションの統合</a>
+        <a href="integrate-asset-selector-adobe-app.md">アセットセレクターとアドビアプリケーションの統合</a>
         <p>
         <em>アセットセレクターを様々なアドビアプリケーションと統合する方法について説明します。</em>
         </p>
     </td>
     <td>
         <img src="assets/third-party-app.gif" width="70px" height="70px" alt="アセットセレクターの統合の図"><br/>
-        <a href="integrate-asset-selector.md">アセットセレクターとサードパーティアプリケーションの統合</a>
+        <a href="integrate-asset-selector-non-adobe-app.md">アセットセレクターとサードパーティアプリケーションの統合</a>
         <p>
         <em>アセットセレクターをアドビ以外のアプリケーションと統合する機能について説明します。</em>
         </p>
     </td>
     <td>
         <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="アセットセレクターの統合の図"><br/>
-        <a href="integrate-asset-selector.md">アセットセレクターと Dynamic Media Open API の統合</a>
+        <a href="integrate-asset-selector-dynamic-media-open-api.md">アセットセレクターと Dynamic Media Open API の統合</a>
         <p>
         <em>アセットセレクターと Dynamic Media Open API を統合する方法について説明します。</em>
         </p>
      </td>
      <td>
-        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="アセットセレクターのプロパティの図"><br/>
-        <a href="asset-selector-customization.md">アセットセレクターのプロパティ</a>
+        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="アセットセレクターの例の図"><br/>
+        <a href="asset-selector-properties.md">アセットセレクターのプロパティ</a>
         <p>
-        <em>フィルター、アセットの選択、有効期限切れのアセットなど、アセットセレクターの様々なコンポーネントをカスタマイズする基本について説明します。</em>
+        <em>実際的な方法でプロパティの使用方法について説明します。</em>
         </p>
     </td>
 </tr>
 <tr>
     <td>
-        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="アセットセレクターの例の図"><br/>
-        <a href="asset-selector-customization.md">アセットセレクターの例</a>
+        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="アセットセレクターのプロパティの図"><br/>
+        <a href="asset-selector-examples.md">アセットセレクターの例</a>
         <p>
-        <em>実際的な方法でプロパティの使用方法について説明します。</em>
+        <em>フィルター、アセットの選択、有効期限切れのアセットなど、アセットセレクターの様々なコンポーネントをカスタマイズする基本について説明します。</em>
         </p>
     </td>
     <td>
@@ -269,7 +309,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
         <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="アセットセレクターのコレクションの図"><br/>
         <a href="asset-selector-collections.md">アセットセレクターのコレクション</a>
         <p>
-        <em>Experience Manager リポジトリを使用してアセットセレクター内でコレクションを使用する方法について説明します。</em>
+        <em>Experience Manager リポジトリを使用してアセットセレクター内でコレクションを使用する方法を説明します。</em>
         </p>
     </td>
     <td>
