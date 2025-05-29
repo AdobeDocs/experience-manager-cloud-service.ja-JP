@@ -5,14 +5,18 @@ keywords: Experience Cloud 設定自動化を使用してアダプティブフ�
 feature: Adaptive Forms
 role: Admin, User
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: a23576b5dc6d78a29fe19cd23f3c4788f2bee23e
+source-git-commit: 56a3d50d7cc8db532097b97f0898f87fc6ba0b3d
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 100%
+source-wordcount: '1596'
+ht-degree: 99%
 
 ---
 
 # Experience Cloud 設定自動化を使用してアダプティブフォームの Adobe Analytics を有効にする {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
+
+>[!CAUTION]
+>
+>Experience Cloud設定の自動化機能は廃止されました。
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -71,7 +75,7 @@ Forms as a Cloud Service 環境で上記の機能が使用可能であること�
 > If you have an active licenses for Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API, you should verify their availability within your developer console.
 -->
 
-<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=ja)
+<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html)
 -->
 
 ## Adobe Analytics の設定 {#configure-adobe-analytics}
