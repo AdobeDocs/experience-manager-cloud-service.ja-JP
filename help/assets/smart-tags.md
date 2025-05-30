@@ -74,7 +74,7 @@ ht-degree: 24%
 
 ## 標準搭載のスマートタグ付け用のアセットの準備
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] に [ アセットをアップロード ](add-assets.md#upload-assets) すると、アップロードされたアセットが処理されます。 処理が完了したら、アセット[!UICONTROL プロパティ]ページの「[!UICONTROL 基本]」タブを参照してください。スマートタグは、「スマートタグ [!UICONTROL  の下のアセットに自動的に追加さ ] ます。 アセットマイクロサービスは、[!DNL Adobe Sensei] を使用してこれらのスマートタグを作成します。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] に [ アセットをアップロード ](add-assets.md#upload-assets) すると、アップロードされたアセットが処理されます。 処理が完了したら、アセット[!UICONTROL プロパティ]ページの「[!UICONTROL 基本]」タブを参照してください。スマートタグは、「スマートタグ [!UICONTROL &#x200B; の下のアセットに自動的に追加さ &#x200B;] ます。 アセットマイクロサービスは、[!DNL Adobe Sensei] を使用してこれらのスマートタグを作成します。
 
 ![スマートタグはビデオに追加され、アセットプロパティの「基本」タブに表示されます](assets/smart-tags-added-to-videos.png)
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM でタグなしのAssets {#smart-tag-existing-assets}
 
-DAM 内の既存または古いアセットは、自動的にスマートタグが付けられません。 Assetsのスマートタグを生成するには、手動で [ 再処理 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) する必要があります。 プロセスが完了したら、フォルダー内の任意のアセットの [!UICONTROL  プロパティ ] ページに移動します。 自動的に追加されたタグは、「[!UICONTROL 基本]」タブの[!UICONTROL スマートタグ]セクションに表示されます。これらの適用されたスマートタグは、[ 信頼性スコア ](#confidence-score) の降順で並べ替えられます。
+DAM 内の既存または古いアセットは、自動的にスマートタグが付けられません。 Assetsのスマートタグを生成するには、手動で [ 再処理 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) する必要があります。 プロセスが完了したら、フォルダー内の任意のアセットの [!UICONTROL &#x200B; プロパティ &#x200B;] ページに移動します。 自動的に追加されたタグは、「[!UICONTROL 基本]」タブの[!UICONTROL スマートタグ]セクションに表示されます。これらの適用されたスマートタグは、[ 信頼性スコア ](#confidence-score) の降順で並べ替えられます。
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -188,19 +188,19 @@ In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, 
 アセットの自動タグ付けがサムネールの作成やメタデータの抽出などの他のアセット処理タスクと並行して実行されるので、時間がかかる場合があります。 アセットの処理を迅速に行うために、アップロード時にフォルダーレベルでスマートタグのオプトアウトを行うことができます。 特定のフォルダーにアップロードされたアセットの自動スマートタグ生成をオプトアウトするには：
 
 1. フォルダー[!UICONTROL プロパティ]の「[!UICONTROL アセット処理]」タブを開きます。
-1. [!UICONTROL  ビデオのスマートタグ ] メニュー（例：[!UICONTROL  継承 ] オプションは、デフォルトで選択されており、ビデオスマートタグが有効になっています。
+1. [!UICONTROL &#x200B; ビデオのスマートタグ &#x200B;] メニュー（例：[!UICONTROL &#x200B; 継承 &#x200B;] オプションは、デフォルトで選択されており、ビデオスマートタグが有効になっています。
 
    「[!UICONTROL 継承]」オプションが選択されている場合、継承されたフォルダーのパスは、「[!UICONTROL 有効化]」と「[!UICONTROL 無効化]」のどちらに設定されているかという情報と共に表示されます。
 
    ![ スマートタグを無効にする ](assets/disable-tagging.png)
 
-1. フォルダーにアップロードされたスマートタグのオプトアウトを行うには、「[!UICONTROL  無効 ]」を選択します。
+1. フォルダーにアップロードされたスマートタグのオプトアウトを行うには、「[!UICONTROL &#x200B; 無効 &#x200B;]」を選択します。
 
-1. 同様に、[!UICONTROL  テキストのスマートタグ ]、[!UICONTROL  画像のスマートタグ ]、および [!UICONTROL  画像のカラータグ ] のスマートタグをオプトアウトできます。
+1. 同様に、[!UICONTROL &#x200B; テキストのスマートタグ &#x200B;]、[!UICONTROL &#x200B; 画像のスマートタグ &#x200B;]、および [!UICONTROL &#x200B; 画像のカラータグ &#x200B;] のスマートタグをオプトアウトできます。
 
 >[!IMPORTANT]
 >
->アップロード時にフォルダーのタグ付けをオプトアウトし、アップロード後にスマートタグを使用する場合は、フォルダー ]**プロパティ [!UICONTROL  の「[!UICONTROL  アセット処理 ]」タブで**[!UICONTROL  スマートタグを有効にする ] と、[[!UICONTROL  アセットを再処理 ] オプション ](#smart-tag-existing-assets) を使用して、アセットにスマートタグを追加します。
+>アップロード時にフォルダーのタグ付けをオプトアウトし、アップロード後にスマートタグを使用する場合は、フォルダー **プロパティ  の「[!UICONTROL &#x200B; アセット処理 &#x200B;]」タブで**&#x200B;[!UICONTROL &#x200B; スマートタグを有効にする &#x200B;] と、[[!UICONTROL &#x200B; アセットを再処理 &#x200B;] オプション ](#smart-tag-existing-assets) を使用して、アセットにスマートタグを追加します。
 
 <!--
 ## Benefits of Smart Tags to your assets {#benefits-of-smart-tags}
@@ -234,9 +234,9 @@ AI は、手動の入力に依存するのではなく、デジタルアセッ�
 
 1. 「**[!UICONTROL AI で生成]**」タブに移動します。 互換性 [!DNL Experience Manager] ないバージョンや更新されていないバージョンの場合、このタブは表示されません。 必要なAEMの最小リリースバージョンは `20626` です。 次のフィールドがあります。
 
-   * **[!UICONTROL 生成されたタイトル ]:** このタイトルは、アップロードされたアセットの中心的概念を捕捉する明確で簡潔な見出しを提供し、一目でわかりやすくします。 アセットを追加する際に、（`dc:title` で）タイトルを指定すると、アセットの参照表示に表示されます。 空白の場合、AI で生成されたタイトルが自動的に割り当てられます。
-   * **[!UICONTROL 生成された説明 ]:** 説明では、アセットの概要を簡潔にしながら情報を提供し、ユーザーや検索モジュールが関連性をすばやく把握できるようにします。
-   * **[!UICONTROL 生成されたキーワード ]:** キーワードは、アセットの主なテーマを表すターゲット用語で、タグ付けやコンテンツのフィルタリングに役立ちます。
+   * **[!UICONTROL 生成されたタイトル &#x200B;]:** このタイトルは、アップロードされたアセットの中心的概念を捕捉する明確で簡潔な見出しを提供し、一目でわかりやすくします。 アセットを追加する際に、（`dc:title` で）タイトルを指定すると、アセットの参照表示に表示されます。 空白の場合、AI で生成されたタイトルが自動的に割り当てられます。
+   * **[!UICONTROL 生成された説明 &#x200B;]:** 説明では、アセットの概要を簡潔にしながら情報を提供し、ユーザーや検索モジュールが関連性をすばやく把握できるようにします。
+   * **[!UICONTROL 生成されたキーワード &#x200B;]:** キーワードは、アセットの主なテーマを表すターゲット用語で、タグ付けやコンテンツのフィルタリングに役立ちます。
 
 1. [ オプション ] 関連するタグが欠落していると思われる場合は、追加のタグを追加するか、独自のタグを作成できます。 これを行うには、「**[!UICONTROL 生成されたキーワード]**」フィールドにタグを入力し、「**[!UICONTROL 保存]** をクリックします。
 
