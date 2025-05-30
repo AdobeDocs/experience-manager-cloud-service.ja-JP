@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: e1fa4b3bcb04ab3e834b34f507f1350fb536b513
+source-git-commit: 6884e33a922a7147e3a6a3f3ddb3dd3b2da85fbf
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '562'
 ht-degree: 52%
 
 ---
@@ -58,6 +58,7 @@ ht-degree: 52%
 * GRANITE-54164：パブリック API から `org.apache.jackrabbit.oak.plugins.blob` を削除しました。
 * GRANITE-54280：パブリック API から `org.apache.jackrabbit.oak.cache` を削除しました。
 * GRANITE-58332：パブリック API の非推奨（廃止予定）の `org.apache.jackrabbit.oak.plugins.memory` です。
+* JavaScript 用の YUI 圧縮は非推奨（廃止予定）になりました。
 * [Experience Cloud設定の自動化 ](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) 機能は廃止されました。
 
 AEM as a Cloud Service で廃止および削除された機能と API について詳しくは、[廃止および削除された機能と API](/help/release-notes/deprecated-removed-features.md) ドキュメントを参照してください。

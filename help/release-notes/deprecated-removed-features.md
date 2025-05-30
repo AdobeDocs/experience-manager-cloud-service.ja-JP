@@ -4,10 +4,10 @@ description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 3d294b2b4fbd11f16ee8b0fbb5a9a46ab039dbae
+source-git-commit: 55b7029ccdd0da08566066c02c8f7b8eff1e032f
 workflow-type: tm+mt
-source-wordcount: '2858'
-ht-degree: 89%
+source-wordcount: '2889'
+ht-degree: 88%
 
 ---
 
@@ -39,6 +39,7 @@ ht-degree: 89%
 | Sites | [SPA Editor](/help/implementing/developing/hybrid/introduction.md) | AEM でヘッドレスコンテンツの管理に推奨されるエディターは次のとおりです。<br>- ビジュアル編集用の[ユニバーサルエディター](/help/edge/wysiwyg-authoring/authoring.md)。<br>- フォームベース編集用の[コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md)。 |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/ja/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **ソーシャルメディアのステータス** のエクスペリエンスフラグメントのプロパティ。 | この機能は間もなく削除される予定です。 |
+| Sites | [Experience Cloud設定自動処理 ](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | なし |
 | [!DNL Sites] | テンプレートベースのシンプルなコンテンツフラグメント。 | 現在は[モデルベースの構造化コンテンツフラグメント](/help/assets/content-fragments/content-fragments-models.md)。 |
 | [!DNL Assets] | 取り込んだ画像を処理する `DAM Asset Update` ワークフロー | 現在は、アセットの取り込みで[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が使用されています。 |
 | [!DNL Assets] | [!DNL Experience Manager] へのアセットの直接アップロード。 [非推奨（廃止予定）のアセットアップロード API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api) を参照してください。 | [直接バイナリアップロード](/help/assets/add-assets.md)を使用。 技術的な詳細については、[直接アップロード API](/help/assets/developer-reference-material-apis.md#upload-binary) を参照してください。 |
@@ -48,8 +49,7 @@ ht-degree: 89%
 | [!DNL Foundation] | レプリケーションエージェントの管理画面の「配布」タブとレプリケーション API では、10 MB を超えるコンテンツパッケージをレプリケートできません。 | [パブリケーションの管理](/help/operations/replication.md#manage-publication)または[ツリーアクティベーションワークフローステップ](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Adobe Developer Console プロジェクトから生成された資格情報を使用した統合では、サービスアカウント（JWT）資格情報のサポートが段階的に失われます。2024年5月1日（PT）以降、Adobe Developer Console で新しいサービスアカウント（JWT）資格情報を作成できなくなります。既存のサービスアカウント（JWT）資格情報は、2025年1月1日（PT）まで引き続き、設定済みの統合に使用できますが、それ以降は機能しなくなり、お客様は OAuth サーバー間の資格情報に移行する必要があります。[詳細情報](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | OAuth サーバー間の資格情報に[移行](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)します。 |
 | [!DNL Foundation] | コンテンツツリーを公開ワークフローと、コンテンツの階層のレプリケーションに使用された関連するコンテンツツリーを公開ワークフローステップ。 | よりパフォーマンスの高い[ツリーアクティベーションワークフローステップ](/help/operations/replication.md#tree-activation)を使用します。 |
-| Sites | [Experience Cloud設定自動処理 ](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | なし |
-
+| [!DNL Foundation] | YUI を使用した JavaScript クライアントライブラリの圧縮／軽量化。Adobeでは、YUI ライブラリを今後更新する予定はありません。 | Adobeでは、実装をGoogle Closure Compiler （GCC）に切り替えることをお勧めします。 |
 
 ## 削除された機能 {#removed-features}
 
