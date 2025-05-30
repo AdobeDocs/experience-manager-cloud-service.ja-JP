@@ -1,79 +1,55 @@
 ---
-title: AEM でアセットにスマートタグを追加する方法？
-description: コンテキストに沿った説明的なビジネスタグを適用する人工知能サービスを使用して、AEM 内のアセットにスマートタグを追加します。
-contentOwner: AG
-feature: Smart Tags
-role: Admin, User
-exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+title: ' [!DNL Adobe Sensei] スマートサービスを使用したアセットの自動タグ付け'
+description: コンテキストタグと説明的なビジネスタグを適用する人工知能サービスを使用したアセットのタグ付け。
+feature: Smart Tags,Tagging
+role: Admin,User
+source-git-commit: 9af552b17421e320b6139d6bd6ecaa42428de397
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 98%
+source-wordcount: '2406'
+ht-degree: 24%
 
 ---
 
 
-# AEM でアセットへスマートタグを追加 {#smart-tags-assets-aem}
+# AEM Assetsのスマートタグ {#using-smart-tags}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-        </td>
-    </tr>
-</table>
+組織は数多くのデジタルアセットを保有しており、その数は急速に増加し続けています。 このような大量のデータの中から特定のアセットを検索することは、重大な課題となります。 この問題に対処するために、`metadata` と `tags` を使用して、デジタルアセットの検索性を向上させます。 組織は、アセットメタデータ内で分類に基づく統制語彙を使用します。 通常は、従業員、パートナー、顧客がデジタルアセットを参照して見つけるために一般的に使用するキーワードリストで構成されます。
 
-| バージョン | 記事リンク |
-| -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/enhanced-smart-tags.html?lang=ja) |
-| AEM as a Cloud Service | この記事 |
+スマートタグは、テキスト内に表示されるだけでなく、アセットを最も的確に表現するキーワードです。 分類に基づく統制語彙を使用してアセットをタグ付けすると、検索を通じてアセットを特定し、取得することが容易になります。
 
-デジタルアセットを扱う組織では、アセットメタデータで分類に基づく統制語彙を使用することがますます多くなっています。これには、基本的に、従業員、パートナーおよび顧客がデジタルアセットを参照したり、検索したりする場合によく使用するキーワードのリストが含まれます。分類に基づく統制語彙を使用してアセットをタグ付けすると、検索でアセットを特定し、取得することが容易になります。
+例えば、辞書の中でアルファベット順に並べられている単語は、ランダムに散らばっている単語よりも見つけやすい。 タグ付けは同様の目的で使用されます。 ビジネス上の分類に従ってアセットが整理され、最も関連性の高いアセットが検索結果に表示されます。 例えば、自動車メーカーでは、プロモーションキャンペーンの設計時に関連する画像のみが表示されるように、モデル名を使用して車の画像にタグを付けることができます。 「ランナー」や「ランニングシューズ」のタグ付けであっても、ユーザーは入力ミス、スペルのバリエーション、代替検索用語について心配する必要はありません。スマートタグはそれらをすべて認識します。
 
-自然言語語彙と比較して、ビジネス上の分類に基づいたタグ付けでは、デジタルアセットを会社のビジネスと容易に連携させることができ、関連性の最も高いアセットが検索で表示されるようになります。例えば、自動車メーカーでは、プロモーションキャンペーンを計画するために様々なモデルの画像を検索する際、関連性の高い画像のみが表示されるように、モデル名を使用して車の画像をタグ付けすることができます。
+そのバックグラウンドで、[Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html) の人工知能フレームワークが使用され、ビジネス上の分類に関連付けられたテキストと共に、アップロードされたアセットにスマートタグが自動的に（デフォルトで）適用されます。
 
-そのバックグラウンドで、機能は [Adobe Sensei](https://business.adobe.com/jp/why-adobe/experience-cloud-artificial-intelligence.html) の人工知能フレームワークを使用して、タグ構造とビジネス上の分類に基づいて画像認識アルゴリズムのトレーニングを行います。その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。デフォルトでは、AEM は、アップロードされたアセットにスマートタグを自動的に適用します。
+## 前提条件と設定 {#smart-tags-prereqs-config}
 
-<!-- TBD: Create a flowchart for how training works in CS.
-![flowchart](assets/flowchart.gif) 
--->
+スマートタグは [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 用に自動的にプロビジョニングされるので、設定は必要ありません。
 
-## AEM でスマートタグでサポートされるアセットタイプ {#smart-tags-supported-file-formats}
+## スマートタグのワークフロー {#smart-tags-workflow}
 
-次のタイプのアセットにタグを付けることができます。
+[!DNL Adobe Sensei] を活用したスマートタグ付けでは、人工知能モデルを使用してコンテンツを分析し、アセットにタグを追加します。 これにより、DAM ユーザーが顧客に豊富なエクスペリエンスを提供する時間を短縮できます。 スマートタグは、アセットプロパティで [ 信頼性スコア ](#confidence-score) の降順で表示されます。
 
-* **画像**：多くの形式の画像が、Adobe Sensei のスマートコンテンツサービスを使用してタグ付けされます。[トレーニングモデルを作成](#train-model)した後、アップロードされた画像が自動的にタグ付けされられます。スマートタグは、JPG および PNG 形式のレンディションを生成する、サポートされるファイル形式に適用されます。
-* **テキストベースのアセット**： [!DNL Experience Manager Assets] は、アップロード時に、サポートされているテキストベースのアセットに自動タグ付けを行います。
-* **ビデオアセット**：ビデオタグ付けは、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ではデフォルトで有効になっています。新しいビデオをアップロードする場合や、既存のビデオを再処理する場合、[ビデオは自動的にタグ付けされます](/help/assets/smart-tags-video-assets.md)。
+* **画像ベースのアセット**
+画像の場合、スマートタグは視覚的な観点に基づいて設定されます。 多くの形式の画像は、スマートコンテンツサービスを使用してタグ付けされます。 スマートタグは、JPGと PNG 形式のレンディションを生成する [ サポートされているファイルタイプ ](#supported-file-formats) に適用されます。
+
+  <!-- ![Image Smart Tag](assets/image-smart-tag.png)-->
+
+* **ビデオベースのアセット**
+ビデオベースのアセットの場合、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、タグ付けはデフォルトで有効になっています。 同様に、画像およびテキストベースのタグでは、新しいビデオをアップロードする場合や既存のビデオを再処理する場合にも、ビデオは自動タグ付けされます。 ビデオに 2 つのタグのセット [!DNL Adobe Sensei] 生成されます。1 つのセットは、そのビデオのオブジェクト、シーン、アトリビュートに対応し、もう 1 つのセットは、飲酒、ランニング、ジョギングなどのアクションに関連しています。 [ ビデオスマートタグのオプトアウト ](#opt-out-video-smart-tagging) も確認します。
+
+* **テキストベースのアセット**
+サポートされているアセットの場合、[!DNL Experience Manager] はすでにテキストを抽出し、その後、インデックスを作成してアセットの検索に使用します。 ただし、テキスト内のキーワードに基づくスマートタグには、構造化された、より優先度の高い専用の検索ファセットが用意されています。後者は、検索インデックスと比較して、アセット検出の向上に役立ちます。
+テキストベースのアセットの場合、スマートタグの有効性は、アセット内のテキストの量に依存するのではなく、アセットのテキスト内に存在する関連キーワードまたは関連エンティティに依存します。
+
+  ![ スマートタグタイプ ](assets/smart-tags-types.png)
+
+スマートタグは次のワークフローを使用してAEM Assetsに実装されます。
+
+1. AEMでアセットを作成またはアップロードします。 標準搭載のタグは、画像、ビデオおよびテキストベースのAssetsに対して生成されます。
+
+1. 特定のタグが生成されていない場合は、それに応じて画像タイプのタグのトレーニングを行うことができます。 [ スマートタグのトレーニング ](#smart-tags-training.md) を参照してください。
+
+## スマートタグでサポートされるファイル形式 {#supported-file-formats}
 
 | 画像（MIME タイプ） | テキストベースのアセット（ファイル形式） | ビデオアセット（ファイル形式とコーデック） |
 |----|-----|------|
@@ -96,153 +72,88 @@ ht-degree: 98%
 | image/psd |  |  |
 | image/vnd.adobe.photoshop |  |  |
 
-AEM ではデフォルトで、スマートタグがテキストベースのアセットとビデオに自動的に追加されます。画像にスマートタグを自動追加するには、次のタスクを実行します。
+## 標準搭載のスマートタグ付け用のアセットの準備
 
-* [タグモデルとガイドラインの理解](#understand-tag-models-guidelines)。
-* [モデルのトレーニング](#train-model)。
-* [デジタルアセットのタグ付け](#tag-assets)。
-* [タグと検索の管理](#manage-smart-tags-and-searches)。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] に [ アセットをアップロード ](add-assets.md#upload-assets) すると、アップロードされたアセットが処理されます。 処理が完了したら、アセット[!UICONTROL プロパティ]ページの「[!UICONTROL 基本]」タブを参照してください。スマートタグは、「スマートタグ [!UICONTROL  の下のアセットに自動的に追加さ ] ます。 アセットマイクロサービスは、[!DNL Adobe Sensei] を使用してこれらのスマートタグを作成します。
 
-## タグモデルとガイドラインの理解 {#understand-tag-models-guidelines}
-
-タグモデルは、タグ付けされる画像の様々な視覚要素に関連付けられた、関連タグのグループです。タグは、画像の明確に異なる視覚的要素と関連付けられるので、タグを適用すると、特定のタイプの画像を検索するのに役立ちます。例えば、靴のコレクションは異なるタグを持つことができますが、すべてのタグは靴に関連し、同じタグモデルに属します。タグを適用すると、デザイン別や使用方法別など、様々なタイプの靴を探すのに役立ちます。[!DNL Experience Manager] でトレーニングモデルのコンテンツ表現を理解するには、各タグに対して手動で追加されたタグと例として用いる画像のグループから構成されるトップレベルのエンティティとして、トレーニングモデルを視覚化します。各タグは、画像にのみ適用できます。
-
-タグモデルを作成してサービスをトレーニングする前に、自社ビジネスのコンテキストでイメージ内のオブジェクトを最もよく説明する一意のタグのセットを特定します。キュレーション後のセット内のアセットが、[トレーニングガイドライン](#training-guidelines)に従っていることを確認してください。
-
-### トレーニングガイドライン {#training-guidelines}
-
-トレーニングセット内の画像が次のガイドラインに従っていることを確認します。
-
-**数量とサイズ：**&#x200B;タグ 1 つにつき画像は最小 10 個、最大 50 個。
-
-**コヒーレンス**：タグの画像の見た目が似ていることを確認します。同じ視覚的要素（画像内の同じタイプのオブジェクトなど）に関するタグを 1 つのタグモデルにまとめるのが最適です。例えば、以下の画像は似ていないので、これらの画像を `my-party`（トレーニング用）としてタグ付けするのは適切ではありません。
-
-![トレーニングガイドラインの例を示すイラスト](assets/do-not-localize/coherence.png)
-
-**対象範囲**：トレーニングの画像には十分な多様性が必要です。[!DNL Experience Manager] が適切に焦点を当てることを学習できるよう、数は少なくても多様性の高い例を提供します。見た目が似ていない画像に同じタグを適用する場合は、各種類の例を 5 個以上含めてください。例えば、*model-down-pose* というタグの場合、タグ付け時、類似する画像をより正確に識別できるよう、以下のハイライト表示された画像に似たトレーニング画像を増やします。
-
-![トレーニングガイドラインの例を示すイラスト](assets/do-not-localize/coverage_1.png)
-
-**妨害物と障害物**：サービスのトレーニングには、障害物（目立つ背景、メインとなる対象と一緒に含まれる物や人物などの関連性のない付随物）が少ない画像のほうが効果的です。例えば、*casual-shoe* というタグの場合、2 つ目の画像はトレーニングの候補として適切ではありません。
-
-![トレーニングガイドラインの例を示すイラスト](assets/do-not-localize/distraction.png)
-
-**完全性**：画像が複数のタグの対象となる場合は、適用可能なすべてのタグを追加してから、画像をトレーニングに含めます。例えば、*raincoat* と *model-side-view* などのタグの場合、対象となるアセットに両方のタグを追加してから、そのアセットをトレーニングに含めます。
-
-![トレーニングガイドラインの例を示すイラスト](assets/do-not-localize/completeness.png)
-
-**タグ数**：各タグに少なくとも 2 つの個別タグと、少なくとも 10 の異なる画像を使用して、モデルのトレーニングを行うことをお勧めします。単一のタグモデルでは、50 個を超えるタグを追加しないでください。
-
-**例の数**：各タグに対して、少なくとも 10 個の例を追加します。ただし、アドビでは約 30 個の例を使用することをお勧めしています。1 つのタグにつき最大 50 個の例がサポートされます。
-
-**偽陽性や競合を回避**：単一の視覚的要素に対応した単一のタグモデルを作成することをお勧めします。モデル間でタグが重なり合うのを避けるように、タグモデルを構築します。例えば、`shoes` と `footwear` の 2 つの異なるタグモデル名で、`sneakers` のような共通タグは使用しないでください。トレーニングプロセスは、共通のキーワードに関して、トレーニングを受けた 1 つのタグモデルをもう 1 つで上書きします。
-
-**例**：ガイダンスのさらなる例を以下に示します。
-
-* 以下のみを含むタグモデルを作成します。
-
-   * 車種に関するタグ
-   * 大人と子供のジャケットに関するタグ
-
-* 次のようなタグモデルは作成しません。
-
-   * 2019 年と 2020 年にリリースされた車種を含むタグモデル
-   * 同じ車種をいくつか含む複数のタグモデル
-
-**トレーニングに使用する画像**：同じ画像を使用して、異なるタグモデルをトレーニングできます。ただし、画像をタグモデル内の複数のタグに関連付けることはできません。異なるタグモデルに属する異なるタグを、同じ画像にタグ付けすることができます。
-
-トレーニングを取り消すことはできません。上記のガイドラインは、トレーニングに適した画像を選択する際に役立ちます。
-
-## カスタムタグに合わせたモデルのトレーニング {#train-model}
-
-ビジネス固有のタグに合わせてモデルを作成してトレーニングするには、次の手順に従います。
-
-1. 必要なタグと適切なタグ構造を作成します。DAM リポジトリーに関連する画像をアップロードします。
-1. [!DNL Experience Manager] ユーザーインターフェイスで、**[!UICONTROL Assets]**／**[!UICONTROL スマートタグトレーニング]**&#x200B;にアクセスします。
-1. 「**[!UICONTROL 作成]**」をクリックします。「**[!UICONTROL タイトル]**」、「**[!UICONTROL 説明]**」を入力します。
-1. 「**[!UICONTROL タグ]**」フィールドのフォルダーアイコンをクリックします。ポップアップウィンドウが開きます。
-1. モデルに追加する適切なタグを検索するか、`cq-tags` 内の既存のタグから選択します。「**[!UICONTROL 次へ]**」をクリックします。
-
-   >[!NOTE]
-   >
-   >タグの構造は、**[!UICONTROL 名前]**（アルファベット順）、**[!UICONTROL 作成]**&#x200B;日、**[!UICONTROL 変更]**&#x200B;日を基準に、昇順または降順に並べ替えることができます。
-
-
-1. **[!UICONTROL アセットを選択]**&#x200B;ダイアログで、各タグに対して「**[!UICONTROL アセットを追加]**」をクリックします。DAM リポジトリー内を検索するか、リポジトリーを参照して、画像を 10 個以上、最大で 50 個選択します。フォルダーではなくアセットを選択します。画像を選択したら、「**[!UICONTROL 選択]**」をクリックします。
-
-   ![トレーニング状況を表示](assets/smart-tags-training-status.png)
-
-1. 選択した画像のサムネールをプレビューするには、タグの前にあるアコーディオンをクリックします。「**[!UICONTROL アセットを追加]**」をクリックして、選択内容を変更できます。選択が完了したら、「**[!UICONTROL 送信]**」をクリックします。ユーザーインターフェイスに、トレーニングが開始されたことを示す通知がページの下部に表示されます。
-1. 各タグモデルの「**[!UICONTROL ステータス]**」列で、トレーニングのステータスを確認します。可能なステータスは、「[!UICONTROL 保留]」、「[!UICONTROL トレーニング済み]」、「[!UICONTROL 失敗]」です。
-
-![スマートタグ用のタグ付けモデルをトレーニングするワークフロー](assets/smart-tag-model-training-flow.png)
-
-*図：タグ付けモデルをトレーニングするトレーニングワークフロー手順。*
-
-### トレーニングのステータスとレポートの表示 {#training-status}
-
-アセットのトレーニングセット内のタグに関するスマートタグサービスのトレーニングが実施されたかどうかを確認するには、レポートコンソールでトレーニングワークフローレポートを調べます。
-
-1. [!DNL Experience Manager] インターフェイスで、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL レポート]**&#x200B;に移動します。
-1. **[!UICONTROL アセットレポート]**&#x200B;ページで、「**[!UICONTROL 作成]**」をクリックします。
-1. 「**[!UICONTROL スマートタグトレーニング]**」レポートを選択し、ツールバーで「**[!UICONTROL 次へ]**」をクリックします。
-1. レポートのタイトルと説明を指定します。「**[!UICONTROL レポートをスケジュール]**」で、「**[!UICONTROL 今すぐ]**」オプションを選択したままにします。レポートを後で生成するようにスケジュールするには、「**[!UICONTROL 後で]**」を選択し、日時を指定します。次に、ツールバーの「**[!UICONTROL 作成]**」をクリックします。
-1. **[!UICONTROL アセットレポート]**&#x200B;ページで、生成したレポートを選択します。レポートを表示するには、ツールバーの「**[!UICONTROL 表示]**」アイコンをクリックします。
-1. レポートの詳細をレビューします。レポートには、トレーニングしたタグのトレーニングステータスが表示されます。「**[!UICONTROL トレーニングステータス]**」列の緑色は、そのタグについてスマートタグサービスのトレーニングが実施されたことを示します。黄色は、特定のタグに関するサービスのトレーニングが部分的に実施されていることを示します。タグに関するサービスのトレーニングを完全に実施するには、特定のタグを含む画像をさらに追加し、トレーニングワークフローを実行します。このレポートにタグが表示されない場合は、それらのタグに関するトレーニングワークフローを再度実行してください。
-1. レポートをダウンロードするには、リストから対象のレポートを選択し、ツールバーの「**[!UICONTROL ダウンロード]**」をクリックします。レポートはスプレッドシートとしてダウンロードされます。
+![スマートタグはビデオに追加され、アセットプロパティの「基本」タブに表示されます](assets/smart-tags-added-to-videos.png)
 
 <!--
-### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
+The applied smart tags are sorted in descending order of [confidence score](#confidence-score), combined for object and action tags, within [!UICONTROL Smart Tags].
+-->
 
-1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
+>[!IMPORTANT]
+>
+>自動生成されたタグが、ブランドとその内容に適合するかどうか確認してください。
 
-   ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
+## DAM でタグなしのAssets {#smart-tag-existing-assets}
 
-1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder containing assets on which you want to apply your tags automatically.
-1. Specify a title for the workflow and an optional comment. Click **[!UICONTROL Run]**.
+DAM 内の既存または古いアセットは、自動的にスマートタグが付けられません。 Assetsのスマートタグを生成するには、手動で [ 再処理 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) する必要があります。 プロセスが完了したら、フォルダー内の任意のアセットの [!UICONTROL  プロパティ ] ページに移動します。 自動的に追加されたタグは、「[!UICONTROL 基本]」タブの[!UICONTROL スマートタグ]セクションに表示されます。これらの適用されたスマートタグは、[ 信頼性スコア ](#confidence-score) の降順で並べ替えられます。
 
-   ![tagging_dialog](assets/tagging_dialog.png)
+<!--
+To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
 
-   *Figure: Navigate to the asset folder and review the tags to verify whether your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).*
+1. Select the [!DNL Adobe Experience Manager] logo and then select assets from the [!UICONTROL Navigation] page.
 
-### Tag assets from the timeline {#tagging-assets-from-the-timeline}
+1. Select [!UICONTROL Files] to display the Assets interface.
 
-1. From the [!DNL Assets] user interface, select the folder containing assets or specific assets to which you want to apply smart tags.
-1. From upper-left corner, open the **[!UICONTROL Timeline]**.
-1. Open actions from the bottom of the left sidebar and click **[!UICONTROL Start Workflow]**.
+1. Navigate to the folder to which you want to apply Smart Tags.
 
-   ![start_workflow](assets/start_workflow.png)
+1. Select the assets and click ![Reprocess assets icon](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocess Assets] icon and select the [!UICONTROL Full Process] option.
 
-1. Select the **[!UICONTROL DAM Smart Tag Assets]** workflow, and specify a title for the workflow.
-1. Click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify that your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).
+![Reprocess assets to add tags to videos existing DAM repository](assets/reprocess.gif)-->
+
+## 信頼スコア {#confidence-score}
+
+アセット検索結果は、信頼性スコアに基づいてランク付けされます。これにより、通常、アセットの割り当て済みタグの検査で示唆される以上の検索結果が得られます。 不正確なタグは信頼スコアが低いことが多いため、アセットのスマートタグリストの最上位に表示されることはめったにありません。
+<!--
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] applies a minimum confidence threshold for object and action-smart tags to avoid having too many tags for each asset, which slows down indexing. 
+
+The default threshold for action and object tags in [!DNL Adobe Experience Manager] for an image is 0.5 and for video it is 0.7 (should be value from 0 through 1). If some assets are not tagged by a specific tag, then it indicates that the algorithm is less than 70% confident in the predicted tags. The default threshold might not always be optimal for all the users. You can, therefore, change the confidence score value in OSGI configuration.
+
+To add the confidence score OSGI configuration to the project deployed to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] through [!DNL Cloud Manager]:
+
+In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, or previously `ui.apps`) the `config.author` OSGi configuration, include a config file named `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` with the following contents:
+
+```json
+{
+  "minVideoActionConfidenceScore":0.5,
+  "minVideoObjectConfidenceScore":0.5,
+}
+```
+-->
 
 >[!NOTE]
 >
->In the subsequent tagging cycles, only the modified assets are tagged again with newly trained tags. However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours. For periodic tagging workflows, unaltered assets are tagged when the time gap exceeds six months.
+>手動タグには信頼性 100%（最大の信頼性）が割り当てられます。したがって、検索クエリに一致する手動タグを持つアセットがある場合、それらは検索クエリに一致するスマートタグの前に表示されます。
 
-### Tag uploaded assets {#tag-uploaded-assets}
+## スマートタグのモデレート {#moderate-smart-tags}
 
-[!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
--->
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] を使用すると、スマートタグをキュレーションして次の操作を行うことができます。
 
-## AEM におけるスマートタグを使用したアセットのタグ付け {#tag-assets}
+* ブランドアセットに割り当てられている不正確なタグを削除します。
 
-サポートされているすべてのタイプのアセットは、アップロード時に [!DNL Experience Manager Assets] によって自動的にタグ付けされます。タグ付けはデフォルトで有効になっており、機能します。AEM は、ほぼリアルタイムで適切なスマートタグを適用します。<!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+* 最も関連性の高いタグの検索結果にアセットが表示されるように、タグベースのアセット検索を絞り込みます。 そのため、関連のないアセットが検索結果に表示される可能性がなくなります。
 
-* 画像およびビデオの場合、スマートタグは視覚的な観点に基づいて生成されます。
+* タグに高いランクを割り当てて、アセットに対する関連性を高めます。 アセットのタグのランクを高くすることで、そのタグに基づいて検索が実行されたときに、特定のアセットが検索結果に表示される可能性が高くなります。
 
-* テキストベースのアセットの場合、スマートタグの有効性は、アセット内のテキストの量に依存するのではなく、アセットのテキスト内に存在する関連キーワードまたは関連エンティティに依存します。テキストベースのアセットの場合、スマートタグはテキストに表示されるキーワードですが、アセットを説明するのに最適なキーワードです。サポートされているアセットの場合、[!DNL Experience Manager] は既にテキストを抽出しており、インデックス化してアセットの検索に使用しています。ただし、テキスト内のキーワードに基づくスマートタグには、構造化された、より優先度の高い専用の検索ファセットが用意されています。後者は、検索インデックスと比較して、アセット検出の向上に役立ちます。
+アセットのスマートタグをモデレートする方法について詳しくは、[ スマートタグの管理 ](smart-tags.md#manage-smart-tags-and-searches) を参照してください。
+
+![ ビデオスマートタグのモデレート ](assets/manage-video-smart-tags.png)
+
+>[!NOTE]
+>
+>[ スマートタグを管理 ](smart-tags.md#manage-smart-tags-and-searches) の手順を使用してモデレートされたタグは、アセットの再処理時に記憶されません。 元のタグセットが再び表示されます。
 
 ## スマートタグとアセット検索の管理 {#manage-smart-tags-and-searches}
 
-関連性の高いタグのみが表示されるようにするために、スマートタグを整理し、ブランドアセットに割り当てられた可能性のある不正確なタグを削除することができます。
+関連性の高いタグのみが表示されるように、スマートタグを整理し、ブランドアセットに割り当てられている可能性のある不正確なタグを削除することができます。
 
-また、スマートタグをモデレートすると、アセットが最も関連性の高いタグの検索結果に表示されるようになるので、アセットのタグベース検索の精度が向上します。実質的には、検索結果に関連性のないアセットが表示されないようにすることができます。
+スマートタグをモデレートすると、最も関連性の高いタグの検索結果にアセットが表示されるため、タグベースのアセット検索を絞り込むこともできます。 実質的には、検索結果に関連性のないアセットが表示されないようにすることができます。
 
 また、タグに上位のランクを割り当てて、タグのアセットに対する関連性を高めることもできます。アセットのタグのランクを高くすることで、特定のタグに基づいて検索が実行されたときに、そのアセットが検索結果に表示される可能性が高くなります。
 
-デジタルアセットのスマートタグをモデレートするには、以下を行います。
+デジタルアセットのスマートタグをモデレートするには：
 
 1. 検索フィールドで、タグに基づいてデジタルアセットを検索します。
 
@@ -250,68 +161,146 @@ AEM ではデフォルトで、スマートタグがテキストベースのア�
 
 1. アセットを選択し、ツールバーの ![タグを管理アイコン](assets/do-not-localize/manage-tags-icon.png) をクリックします。
 
-1. **[!UICONTROL タグを管理]**&#x200B;ページで、タグを調査します。特定のタグに基づいてアセットを検索しない場合は、タグを選択し、ツールバーから![削除アイコン](assets/do-not-localize/delete-icon.png)を選択します。または、ラベルの横の `X` 記号を選択します。
+1. **[!UICONTROL タグを管理]**&#x200B;ページで、タグを調査します。特定のタグに基づいてアセットを検索しない場合は、タグを選択し、ツールバーから![削除アイコン](assets/do-not-localize/delete-icon.svg)を選択します。または、ラベルの横にある ![ 閉じるアイコン ](assets/do-not-localize/close_icon.svg) を選択します。
 
-1. タグに高いランクを割り当てるには、タグを選択し、ツールバーの![昇格アイコン](assets/do-not-localize/promote-icon.png)をクリックします。昇格したタグは「**[!UICONTROL タグ]**」セクションに移動されます。
+1. タグに高いランクを割り当てるには、タグを選択し、ツールバーの![昇格アイコン](assets/do-not-localize/promote-icon.svg)をクリックします。昇格したタグは「**[!UICONTROL タグ]**」セクションに移動されます。
 
 1. 「**[!UICONTROL 保存]**」、「**[!UICONTROL OK]**」の順に選択して、[!UICONTROL 成功]ダイアログを閉じます。
 
-1. アセットの[!UICONTROL プロパティ]ページに移動します。昇格したタグに高い関連性が割り当てられていること、その結果として検索結果の上位に表示されることを確認します。
+1. アセットの[!UICONTROL プロパティ]ページに移動します。昇格したタグに高い関連度が割り当てられているため、検索結果の上位に表示されることを確認します。
 
-### スマートタグ付き [!DNL Experience Manager] 検索結果について {#understand-search}
+### スマートタグ付 [!DNL Experience Manager] 検索結果について {#understand-search}
 
-デフォルトでは、検索用語同士を `AND` 句で組み合わせて [!DNL Experience Manager] 検索が行われます。スマートタグを使用しても、このデフォルトの動作は変わりません。スマートタグを使用すると、適用されたスマートタグ内にある検索用語のいずれかを探すための `OR` 句が追加されます。例えば、「`woman running`」を検索する場合を考えます。デフォルトでは、「`woman`」のみ、または「`running`」のみがメタデータに含まれているアセットは、検索結果に表示されません。しかし、スマートタグを使って「`woman`」または「`running`」のどちらかがタグ付けされているアセットは、そうした検索クエリに表示されます。つまり、検索結果は、以下を組み合わせたものになります。
+デフォルトでは、検索用語同士を `AND` 句 [!DNL Experience Manager] たは `OR` 句で組み合わせて、適用されたスマートタグ内の検索用語を検索します。 スマートタグを使用しても、このデフォルトの動作は変更されません。 例えば、「`woman running`」を検索する場合を考えます。デフォルトでは、「`woman`」のみ、または「`running`」のみがメタデータに含まれているアセットは、検索結果に表示されません。ただし、スマートタグを使用して `woman` または `running` のどちらかがタグ付けされているアセットは、このような検索クエリで表示されます。 検索結果は、以下を組み合わせたものになります。
 
 * 「`woman`」と「`running`」の両方のキーワードがメタデータ内にあるアセット
 
 * 上記のどちらかのキーワードがメタデータ内にあるアセット
 
-メタデータフィールド内のすべての検索語句に一致する検索結果がまず表示され、次にスマートタグ内のいずれかの検索語句に一致する検索結果が表示されます。上記の例では、検索結果の表示順序は次のようになります。
+メタデータフィールド内のすべての検索語句に一致する検索結果がまず表示され、次にスマートタグ内のいずれかの検索語句に一致する検索結果が表示されます。 上記の例では、検索結果の表示順序は次のようになります。
 
 1. 各種メタデータフィールド内の「`woman running`」に一致するもの。
-1. スマートタグ内の「`woman running`」に一致するもの。
-1. スマートタグ内の「`woman`」または「`running`」に一致するもの。
+1. スマートタグ内の `woman running` と一致します。
+1. スマートタグ内の `woman` または `running` と一致します。
 
-## タグ付けに関連する制限事項とベストプラクティス {#limitations}
+## スマートタグのオプトアウト {#opt-out-smart-tagging}
 
-拡張スマートタグは、画像とそのタグの学習モデルに基づいています。これらのモデルは、タグを識別するうえで常に完璧であるわけではありません。スマートタグの現行バージョンには次の制限事項があります。
+アセットの自動タグ付けがサムネールの作成やメタデータの抽出などの他のアセット処理タスクと並行して実行されるので、時間がかかる場合があります。 アセットの処理を迅速に行うために、アップロード時にフォルダーレベルでスマートタグのオプトアウトを行うことができます。 特定のフォルダーにアップロードされたアセットの自動スマートタグ生成をオプトアウトするには：
+
+1. フォルダー[!UICONTROL プロパティ]の「[!UICONTROL アセット処理]」タブを開きます。
+1. [!UICONTROL  ビデオのスマートタグ ] メニュー（例：[!UICONTROL  継承 ] オプションは、デフォルトで選択されており、ビデオスマートタグが有効になっています。
+
+   「[!UICONTROL 継承]」オプションが選択されている場合、継承されたフォルダーのパスは、「[!UICONTROL 有効化]」と「[!UICONTROL 無効化]」のどちらに設定されているかという情報と共に表示されます。
+
+   ![ スマートタグを無効にする ](assets/disable-tagging.png)
+
+1. フォルダーにアップロードされたスマートタグのオプトアウトを行うには、「[!UICONTROL  無効 ]」を選択します。
+
+1. 同様に、[!UICONTROL  テキストのスマートタグ ]、[!UICONTROL  画像のスマートタグ ]、および [!UICONTROL  画像のカラータグ ] のスマートタグをオプトアウトできます。
+
+>[!IMPORTANT]
+>
+>アップロード時にフォルダーのタグ付けをオプトアウトし、アップロード後にスマートタグを使用する場合は、フォルダー ]**プロパティ [!UICONTROL  の「[!UICONTROL  アセット処理 ]」タブで**[!UICONTROL  スマートタグを有効にする ] と、[[!UICONTROL  アセットを再処理 ] オプション ](#smart-tag-existing-assets) を使用して、アセットにスマートタグを追加します。
+
+<!--
+## Benefits of Smart Tags to your assets {#benefits-of-smart-tags}
+
+Following are the benefits of using Smart Tags in your AEM Assets:
+*  Makes an asset searchable.
+*  Smart Tags are generated automatically to your assets, thus, it minimizes your effort to perform tagging manually.
+*  It allows the usage of the same vocabulary, tag structure, and taxonomy so that you need not to worry about tagging if by chance you miss tagging at first.
+*  Whether you are tagging "runners" or "running" shoes, you do not need to worry about typos, wrong spellings, or alternative search terms as Smart Tags know it already!
+*  Helps your assets to become organized and categorized.
+-->
+
+## AI で生成されたスマートタグによるコンテンツ検出の強化 {#ai-smart-tags}
+
+AI は、手動の入力に依存するのではなく、デジタルアセットに説明的なタグを自動的に割り当てます。 これらの AI で生成されるタグは、メタデータの品質を向上させ、アセットの検索、分類およびレコメンデーションを容易にします。 このアプローチは、手動でのタグ付けを排除することで効率を向上させるだけでなく、大量のデジタルコンテンツ間の一貫性と拡張性も確保します。 例えば、アセットが画像の場合、AI はアセット内のオブジェクト、シーン、感情、さらにはブランドロゴを識別し、「サンセット」、「ビーチ」、「休暇」、「笑顔」など、関連するタグを生成できます。 AI で生成されたコンテンツは、意味論的検索と辞書的検索の両方の手法を活用することで、アセットの検索を強化できます。 詳しくは、[Assetsを検索 ](search-assets.md) を参照してください。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
+
+![ 拡張スマートタグ ](assets/enhanced-smart-tags1.png)
+
+### AI が生成したスマートタグの使用 {#using-ai-generated-smart-tags}
+
+<!--[!NOTE]
+>
+>The enhanced smart tags capability is available only for the newly uploaded assets.
+-->
+
+拡張スマートタグ機能を使用するには、次の手順を実行します。
+
+1. [!DNL Experience Manager] インターフェイスで、目的のフォルダーに移動し、「**[!UICONTROL Assetsを追加]**」をクリックします。 <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.--> 互換性のある画像ファイル形式は、`png`、`jpg`、`jpeg`、`psd`、`tiff`、`gif`、`webp`、`crw`、`cr2`、`3fr`、`nef`、`arw` および `bmp` です。
+
+1. 新しくアップロードされたアセットが処理されるまで待ちます。 完了したら、アセットプロパティに移動します。
+
+1. 「**[!UICONTROL AI で生成]**」タブに移動します。 互換性 [!DNL Experience Manager] ないバージョンや更新されていないバージョンの場合、このタブは表示されません。 必要なAEMの最小リリースバージョンは `20626` です。 次のフィールドがあります。
+
+   * **[!UICONTROL 生成されたタイトル ]:** このタイトルは、アップロードされたアセットの中心的概念を捕捉する明確で簡潔な見出しを提供し、一目でわかりやすくします。 アセットを追加する際に、（`dc:title` で）タイトルを指定すると、アセットの参照表示に表示されます。 空白の場合、AI で生成されたタイトルが自動的に割り当てられます。
+   * **[!UICONTROL 生成された説明 ]:** 説明では、アセットの概要を簡潔にしながら情報を提供し、ユーザーや検索モジュールが関連性をすばやく把握できるようにします。
+   * **[!UICONTROL 生成されたキーワード ]:** キーワードは、アセットの主なテーマを表すターゲット用語で、タグ付けやコンテンツのフィルタリングに役立ちます。
+
+1. [ オプション ] 関連するタグが欠落していると思われる場合は、追加のタグを追加するか、独自のタグを作成できます。 これを行うには、「**[!UICONTROL 生成されたキーワード]**」フィールドにタグを入力し、「**[!UICONTROL 保存]** をクリックします。
+
+## スマートタグに関する制限事項とベストプラクティス {#limitations-best-practices-smart-tags}
+
+これらのモデルは、タグを識別するうえで常に完璧であるわけではありません。スマートタグの現行バージョンには次の制限事項があります。
 
 * 画像内の細かい違いを認識することはできません。例えば、シャツのサイズが細身か標準かなどです。
 * 画像の細かい模様や部分に基づいてタグを識別することはできません。例えば、シャツのロゴなどです。
-* タグ付けは、[!DNL Experience Manager] がサポートする言語でサポートされています。
 * 処理されないタグは、次のものに関係しています。
 
    * 視覚的でない、抽象的な側面。製品のリリースの年や季節、画像によって誘発されるムードや感情、ビデオの主観的な意味などがその例です。
    * シャツの襟の有無や、製品に埋め込まれた小さな製品ロゴなど、製品の視覚的な細かい違い。
 
-モデルをトレーニングするには、最も適切な画像を使用します。トレーニング状態を元に戻すことも、トレーニングモデルを削除することもできません。タグ付けの精度は現在のトレーニングによって決まるので、慎重に行います。
+* ファイルサイズが 300 MB 未満のビデオのみ自動的にタグ付けされます。[!DNL Adobe Sensei] サービスは、サイズが大きいビデオファイルをスキップします。
+* スマートタグ（通常または拡張）付きのファイルを検索するには、[!DNL Assets] 検索（全文検索）を使用します。 スマートタグには個別の検索用述語はありません。
+* 一般的なタグと比較して、ビジネス分類を使用してタグ付けされたアセットは、タグベースの検索で識別および取得が容易になります。
 
-<!-- TBD: Add limitations related to text files. -->
+## よくある質問{#faq-smart-tags}
 
-スマートタグ（通常または拡張）付きのファイルを検索するには、[!DNL Assets] 検索（全文検索）を使用します。スマートタグには個別の検索用述語はありません。
++++**スマートタグを使用してアセットの検索エクスペリエンスを向上させるにはどうすればよいですか？**
 
->[!NOTE]
->
->スマートタグでタグのトレーニングを実施し、それらのタグを他の画像に適用できるかどうかは、トレーニングで使用する画像の質によって決まります。
->最適な結果を得るには、視覚的に似ている画像を使用し、それぞれのタグについてサービスのトレーニングを実施することをお勧めします。
+Sensei[!DNL Adobe]、アップロードするとアセットに自動的にタグ付けされます。 自動プロセスはバックエンドで非常に高速に実行されるので、アップロードが完了してから数秒後にアセットにタグが追加されます。
 
-**関連情報**
++++
 
-* [アセットを翻訳](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットを検索](search-assets.md)
-* [接続されたアセット](use-assets-across-connected-assets-instances.md)
-* [アセットレポート](asset-reports.md)
-* [メタデータスキーマ](metadata-schemas.md)
-* [アセットをダウンロード](download-assets-from-aem.md)
-* [メタデータを管理](manage-metadata.md)
-* [検索ファセット](search-facets.md)
-* [コレクションを管理](manage-collections.md)
-* [メタデータの一括読み込み](metadata-import-export.md)
-* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
++++**スマートタグリストが不正確な場合や、不要なタグが表示される場合はどうなりますか？**
 
->[!MORELIKETHIS]
->
->* [スマートタグによるデジタルファイル管理の仕組み](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
->* [ビデオへのスマートタグの使用](smart-tags-video-assets.md)
+不正確なタグや不要なタグは、リストから削除できます。 例えば、自動車ディーラーの場合、リストから「破損した」タグを削除するとよいでしょう。
+
++++
+
++++**同じタグを含むアセットに優先順位を付けるにはどうすればよいですか？**
+
+はい。同じタグを含むアセットに優先順位を付けることができます。 タグをアセットのスマートタグリストに昇格させて、優先順位付けを実行することができます。 タグのプロモーションを行うと、その特定のタグの検索結果に表示される画像に優先順位を付けることができます。
+
++++
+
++++**スマートタグの適用は特定のフォルダーに制限されていますか？**
+
+スマートタグは設定可能で、DAM 内の任意のフォルダーに適用できます。
+
++++
+
++++**タグ付けにトレーニングが必要であることがどうすれば分かりますか？**
+
+[ スマートタグトレーニングの要件の決定 ](#smart-tags-training.md#smart-tag-training-requirement) を参照してください。
+
++++
+
++++**アセットのタグ付けでサポートされるファイル形式は何ですか？**
+
+[ サポートされるファイル形式 ](#supported-file-formats) を参照してください。
+
++++
+
++++**生成される言語スマートタグ**
+
+スマートタグは英語でのみ生成されます。 メタデータを含むアセット全体を翻訳することで、他の言語に翻訳できます。
+
++++
+
++++**スマートタグはもう使用しません。**
+
+中断する場合はいつでも [ スマートタグ付けをオプトアウト ](#opt-out-smart-tagging) できます。
+
++++

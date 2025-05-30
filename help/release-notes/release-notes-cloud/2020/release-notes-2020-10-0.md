@@ -4,7 +4,7 @@ description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 の�
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9af552b17421e320b6139d6bd6ecaa42428de397
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 90%
@@ -25,13 +25,13 @@ ht-degree: 90%
 
 * **[コアコンポーネント 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)**：Adobe Experience Manager as a Cloud Service には、コアコンポーネントの最新リリースへの自動アップデート機能があります。リリース 2.12.0 には、最新の機能改善がコミュニティからの貢献として含まれています。例えば、[新しい POST フォームハンドラー](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html?lang=ja#post-data)、カスタムの CSS タグ、JavaScript タグ、メタデータタグを[コンテキスト対応の設定](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=ja#context-aware-loading)で組み込む機能、カスタムコンポーネントで Adobe データレイヤーとの統合を簡単に行うための [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html?lang=ja#enabling-custom-components) ユーティリティなどです。リリース 2.12.0 の[変更点の一覧](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0)を参照してください。
 
-* **[プロジェクトアーキタイプ 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)**：新規 Experience Manager プロジェクトを開始する際の推奨される基盤が改善されました。新しい [Adobeクライアントデータレイヤー ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ja)、[AMP でサイトを配信 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ja) するオプション、プロジェクトの CSS/JS を追加するための新しい [ 拡張ポイント ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=ja#context-aware-loading) が含まれるようになりました。
+* **[プロジェクトアーキタイプ 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)**：新規 Experience Manager プロジェクトを開始する際の推奨される基盤が改善されました。新しい [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ja)、[AMP でサイトを配信 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ja) するオプション、プロジェクトの CSS/JS を追加するための新しい [ 拡張ポイント ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=ja#context-aware-loading) が含まれるようになりました。
 
 * **[ContextHub フォルダー](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**：ContextHub オファーターゲティング機能に使用するオーディエンスセグメントを容易に整理、検索、選択するためのオーディエンスフォルダーを作成できます。
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-* **[!DNL Adobe Sensei]を活用したビデオスマートタグ付け**：AI モデルを適用してオブジェクトおよびアクション固有のタグのビデオコンテンツを分析することで、DAM ユーザーはタグ付けに費やす時間を短縮し、公開された豊富な情報の利用に割く時間を増やすことができます。その結果、顧客に適したエクスペリエンスを提供できるようになります。[ビデオアセットのスマートタグ](/help/assets/smart-tags-video-assets.md)を参照してください。
+* **[!DNL Adobe Sensei]を活用したビデオスマートタグ付け**：AI モデルを適用してオブジェクトおよびアクション固有のタグのビデオコンテンツを分析することで、DAM ユーザーはタグ付けに費やす時間を短縮し、公開された豊富な情報の利用に割く時間を増やすことができます。その結果、顧客に適したエクスペリエンスを提供できるようになります。[ビデオアセットのスマートタグ](/help/assets/smart-tags-for-videos.md)を参照してください。
 
 * **Brand Portal の機能強化**：次の新機能などが [!DNL Brand Portal] で利用できます。詳しくは、[[!DNL Brand Portal] リリースノート](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html?lang=ja)を参照してください。
 
@@ -54,9 +54,9 @@ ht-degree: 90%
 
 * **安全な処理のための AEM ワークフローデータの外部化**：機密個人データ（SPD）要素を含んだインプロセス AEM ワークフロー変数データを、安全な処理のために、顧客が管理するリポジトリに保存できます。ワークフローの処理中、ワークフロー変数に保存されたデータは AEM リポジトリには保持されません。顧客が管理するリポジトリからオンデマンドで取得されます。
 
-### [!DNL Forms] のベータ版機能 {#sep-what-is-new-forms-oct-prerelease}
+### [!DNL Forms] のベータ版機能  {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ja) を使用すると、テンプレートと XML データを組み合わせて、様々な形式のドキュメントを生成できます。このサービスを使用すると、同期および一括モードでドキュメントを生成できます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) を使用すると、テンプレートと XML データを組み合わせて、様々な形式のドキュメントを生成できます。このサービスを使用すると、同期および一括モードでドキュメントを生成できます。
 
 ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てにメールを送信します。
 

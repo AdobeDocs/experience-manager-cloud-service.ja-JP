@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 35d50bc3c2663ff9113ed89dbaeb9b9a82cd9bb1
+source-git-commit: e44c109a8e64c2162f209bcf85b81336764ee9fe
 workflow-type: tm+mt
-source-wordcount: '6185'
+source-wordcount: '6184'
 ht-degree: 99%
 
 ---
@@ -534,7 +534,7 @@ ht-degree: 99%
       + [公開を管理](/help/assets/manage-publication.md)
       + [3D アセットのプレビュー](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [画像のスマートタグ付け](/help/assets/smart-tags.md)
-      + [ビデオアセットのスマートタグ](/help/assets/smart-tags-video-assets.md)
+      + [ビデオのスマートタグ](/help/assets/smart-tags-for-videos.md)
       + [アセットの整理方法](/help/assets/organize-assets.md)
       + [ [!DNL Adobe Stock] アセットを使用する](/help/assets/aem-assets-adobe-stock.md)
       + [コレクションを管理](/help/assets/manage-collections.md)

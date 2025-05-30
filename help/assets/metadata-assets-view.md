@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 6d729c8e7f84dccce9c11f1ca13553763d0547f8
+source-git-commit: 932f4b864e179760c9f4cbcf5ce1ea74764df5c4
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 91%
+source-wordcount: '2448'
+ht-degree: 86%
 
 ---
 
@@ -219,23 +219,23 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 1. 「**[!UICONTROL 保存]**」をクリックして、変更を保存します。
 
 
-### メタデータフォーム内のタグコンポーネントの操作 {#tag-component-metadata-form}
+### メタデータフォームでのタグコンポーネントの操作 {#tag-component-metadata-form}
 
-ルート要素は、アセットに関連付けることができるタグのツリー構造を表します。これにより、割り当てられたタグに基づいてアセットを識別できます。 さらに、メタデータエディターでメタデータフォームを設定する際に、特定の分類へのアクセスを制限できます。
+ルート要素は、アセットに関連付けることができるタグのツリー構造を表し、割り当てられたタグに基づいてアセットを識別するのに役立ちます。さらに、メタデータエディターでメタデータフォームを設定する際に、特定の分類のアクセスを制限できます。
 
 #### タグコンポーネントの設定 {#tags-component-configuration}
 
-次の手順を実行して、タグコンポーネントを設定します。
+タグコンポーネントを設定するには、次の手順を実行します。
 
-1. メタデータエディターに移動し、**[!UICONTROL タグ]** に移動してキャンバスに配置します。
-1. キャンバスのコンポーネントの名前を変更します。 これをおこなうには、設定パネルの **[!UICONTROL メタデータプロパティ]** の下の [!UICONTROL &#x200B; ラベル &#x200B;] に移動して、識別するテキストを追加します。
-1. 設定パネルの [!UICONTROL &#x200B; メタデータプロパティ &#x200B;] の下で、コンポーネントに割り当てるメタデータプロパティを検索します。
-1. **[!UICONTROL 特定の分類に制限]** をクリックして、分類のルートパスを制限します。 これを行うには、タグを参照し、特定のパスに対する分類を選択します。
+1. メタデータエディターに移動し、**[!UICONTROL タグ]**&#x200B;に移動して、キャンバスに配置します。
+1. キャンバス上のコンポーネントの名前を変更します。これを行うには、設定パネルの「[!UICONTROL メタデータプロパティ]」の下にある「**[!UICONTROL ラベル]**」に移動し、識別用のテキストを追加します。
+1. 設定パネルの「[!UICONTROL メタデータプロパティ]」で、コンポーネントに割り当てるメタデータプロパティを検索します。
+1. 「**[!UICONTROL 特定の分類に制限]**」をクリックして、分類のルートパスを制限します。これを行うには、タグを参照して、特定のパスに対する分類を選択します。
 1. 「**[!UICONTROL 保存]**」をクリックして、変更を保存します。
 
-   ![ ルートタグの設定 ](assets/root-tag-config.png)
+   ![ルートタグの設定](assets/root-tag-config.png)
 
-1. [ メタデータフォームをフォルダーに割り当てます ](#assign-metadata-form-folder)。
+1. [フォルダーにメタデータフォームを割り当てます](#assign-metadata-form-folder)。
 
 <!--
 #### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
@@ -249,7 +249,34 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 1. Click **[!UICONTROL Assign]**.
 -->
 
-設定済みのルートタグを表示するには、アセットの詳細ページに移動します。このページで、メタデータフォームとルートタグの間のマッピングが実行されます。
+設定済みのルートタグを表示するには、メタデータフォームとルートタグ間のマッピングが実行されるアセットの詳細ページに移動します。
+
+## AI で生成されたスマートタグによるコンテンツ検出の強化 {#ai-smart-tags}
+
+AI は、手動の入力に依存するのではなく、デジタルアセットに説明的なタグを自動的に割り当てます。 これらの AI で生成されるタグは、メタデータの品質を向上させ、アセットの検索、分類およびレコメンデーションを容易にします。 このアプローチは、手動でのタグ付けを排除することで効率を向上させるだけでなく、大量のデジタルコンテンツ間の一貫性と拡張性も確保します。 例えば、アセットが画像の場合、AI はアセット内のオブジェクト、シーン、感情、さらにはブランドロゴを識別し、「サンセット」、「ビーチ」、「休暇」、「笑顔」など、関連するタグを生成できます。 AI で生成されたコンテンツは、意味論的検索と辞書的検索の両方の手法を活用することで、アセットの検索を強化できます。 詳しくは、[Assetsを検索 ](search-assets-view.md) を参照してください。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
+
+![ 拡張スマートタグ ](assets/enhanced-smart-tags.png)
+
+### AI が生成したスマートタグの使用 {#using-ai-generated-smart-tags}
+
+<!--[!NOTE]
+>
+>The enhanced smart tags capability is available only for the newly uploaded assets.
+-->
+
+拡張スマートタグ機能を使用するには、次の手順を実行します。
+
+1. [!DNL Experience Manager] インターフェイスで、目的のフォルダーに移動し、「**[!UICONTROL Assetsを追加]**」をクリックします。 <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.--> 互換性のある画像ファイル形式は、`png`、`jpg`、`jpeg`、`psd`、`tiff`、`gif`、`webp`、`crw`、`cr2`、`3fr`、`nef`、`arw` および `bmp` です。
+
+1. 新しくアップロードされたアセットが処理されるまで待ちます。 完了したら、アセットの詳細に移動します。
+
+1. 「**[!UICONTROL AI で生成]**」タブに移動します。 互換性 [!DNL Experience Manager] ないバージョンや更新されていないバージョンの場合、このタブは表示されません。 必要なAEMの最小リリースバージョンは `20626` です。 次のフィールドがあります。
+
+   * **[!UICONTROL 生成されたタイトル ]:** このタイトルは、アップロードされたアセットの中心的概念を捕捉する明確で簡潔な見出しを提供し、一目でわかりやすくします。 アセットを追加する際に、（`dc:title` で）タイトルを指定すると、アセットの参照表示に表示されます。 空白の場合、AI で生成されたタイトルが自動的に割り当てられます。
+   * **[!UICONTROL 生成された説明 ]:** 説明では、アセットの概要を簡潔にしながら情報を提供し、ユーザーや検索モジュールが関連性をすばやく把握できるようにします。
+   * **[!UICONTROL 生成されたキーワード ]:** キーワードは、アセットの主なテーマを表すターゲット用語で、タグ付けやコンテンツのフィルタリングに役立ちます。
+
+1. [ オプション ] 関連するタグが欠落していると思われる場合は、追加のタグを追加するか、独自のタグを作成できます。 これを行うには、「**[!UICONTROL 生成されたキーワード]**」フィールドにタグを入力し、「**[!UICONTROL 保存]** をクリックします。
 
 ## 次の手順 {#next-steps}
 
@@ -259,7 +286,7 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
-* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&amp;lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General#support)に問い合わせる
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
