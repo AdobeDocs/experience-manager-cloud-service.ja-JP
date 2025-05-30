@@ -5,24 +5,25 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d4b579e817831945f46b06d9c271c8e671958bed
+source-git-commit: eea0ac03cf2da9cd8508b6df9242dfe67b67c9f9
 workflow-type: tm+mt
-source-wordcount: '1534'
-ht-degree: 97%
+source-wordcount: '1529'
+ht-degree: 91%
 
 ---
 
 
 # エクスペリエンス監査ダッシュボード {#experience-audit-dashboard}
 
-エクスペリエンス監査でデプロイメントプロセスを検証して、変更内容がパフォーマンス、アクセシビリティ、ベストプラクティスおよび SEO のベースライン標準を満たしていることを確認する方法について説明します。これらの指標を追跡するための、明確で有益なダッシュボードインターフェイスが用意されています。
+<!-- Engineer architect over this feature was Bogdan Anton; scrum master Alexandru Nica -->
+
+エクスペリエンス監査でデプロイメントプロセスを検証し、パフォーマンス、アクセシビリティ、ベストプラクティス、SEO （検索エンジン最適化）のベースライン標準を変更が満たしていることを確認する方法について説明します。 これらの指標を追跡するための、明確で有益なダッシュボードインターフェイスが用意されています。
 
 ## 概要 {#overview}
 
 エクスペリエンス監査により、デプロイメントプロセスが検証され、次の変更がデプロイされていることを確認できます。
 
-1. パフォーマンス、アクセシビリティ、ベストプラクティス、SEO（検索エンジン最適化）のベースライン標準を満たしている。
-
+1. パフォーマンス、アクセシビリティ、ベストプラクティス、SEO のベースライン標準を満たす。
 1. リグレッションを導入しない。
 
 Cloud Manager のエクスペリエンス監査を使用すると、サイト上でのユーザーのエクスペリエンスが最も高い標準に準拠します。
@@ -35,9 +36,9 @@ Cloud Manager のエクスペリエンス監査を使用すると、サイト上
 
 エクスペリエンス監査は、Cloud Manager で使用できます。
 
-* （デフォルト）Sites 実稼動パイプライン
-* （オプション）フルスタックパイプラインの開発
-* （オプション）フロントエンドパイプラインの開発
+* （デフォルト） Sites 実稼動パイプライン。
+* （オプション）フルスタックパイプラインの開発。
+* （オプション）フロントエンドパイプラインの開発。
 
 オプション環境の監査を設定する方法について詳しくは、[設定の節](#configuration)を参照してください。
 
@@ -49,9 +50,9 @@ Cloud Manager のエクスペリエンス監査を使用すると、サイト上
 
 1. 設定するパイプラインのタイプに応じて、次のいずれかの操作を行います。
 
-   * 新しい[実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)を追加して、監査で評価するパスを定義します。
-   * フロントエンドまたは開発フルスタックパイプラインで監査を有効にする場合は、新しい[実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)を追加します。
-   * または、[既存のパイプラインを編集](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)し、既存のオプションを更新することもできます。
+   * [ 実稼動パイプラインを追加 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 監査で評価するパスを定義します。
+   * フロントエンドパイプラインまたは開発用フルスタックパイプラインで監査を有効にする場合は、[ 実稼動以外のパイプラインを追加 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) します。
+   * [ 既存のパイプラインを編集 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) して、既存のオプションを更新します。
 
 1. 実稼動以外のパイプラインを追加または編集する際にエクスペリエンス監査を使用するには、「**エクスペリエンス監査**」チェックボックスをオンにします。このオプションは「**ソースコード**」タブにあります。
 
@@ -80,7 +81,7 @@ Cloud Manager のエクスペリエンス監査を使用すると、サイト上
 
 ## エクスペリエンス監査結果 {#results}
 
-エクスペリエンス監査の結果は、[実稼動パイプラインの実行ページ](/help/implementing/cloud-manager/deploy-code.md)を介した実稼動パイプラインの&#x200B;**ステージテスト**&#x200B;フェーズで表示されます。
+エクスペリエンス監査の結果は、**実稼動パイプラインの実行ページ** を通じて、実稼動パイプラインの [ ステージテスト ](/help/implementing/cloud-manager/deploy-code.md) フェーズに表示されます。
 
 ![パイプライン内のダッシュボード](assets/experience-audit-dashboard.png)
 
@@ -148,17 +149,17 @@ Cloud Manager の「**レポート**」タブが開き、**エクスペリエン
 
 ![トレンドの詳細](assets/experience-audit-trend-details.png)
 
-特定の時点でチャートをクリックすると、ポップオーバーが開き、そのスキャンの詳細が表示されます。**開いているエクスペリエンス監査スキャン**&#x200B;をクリックすると、そのスキャン結果が「**[エクスペリエンス監査スキャン結果](#scan-results)**」セクションに読み込まれます。
+ある時点でグラフをクリックすると、そのスキャンの詳細を示すポップアップが開きます。 **開いているエクスペリエンス監査スキャン**&#x200B;をクリックすると、そのスキャン結果が「**[エクスペリエンス監査スキャン結果](#scan-results)**」セクションに読み込まれます。
 
 ![別のスキャンを選択](assets/experience-audit-open-scan.png)
 
 #### エクスペリエンス監査スキャン結果 {#scan-results}
 
-「**エクスペリエンス監査スキャン結果**」セクションには、スキャンされたすべてのページに関するスコアの詳細が表示されます。 「**前へ**」ボタンと「**次へ**」ボタンを使用すると、結果のページを移動したり、表示のページ番号を選択したりできます。
+「**エクスペリエンス監査スキャン結果**」セクションには、スキャンされたすべてのページのスコアの詳細が表示されます。「**前へ**」ボタンと「**次へ**」ボタンを使用すると、結果のページを移動したり、表示のページ番号を選択したりできます。
 
 ![スキャンされたページ](assets/experience-audit-scanned-pages.png)
 
-特定のページのリンクをクリックすると、「[**ページスコア – トレンド**」セクションの **選択** フィルターが更新され ](#trend) 「**生のレポート**」タブにページのすべての監査のスコアが表示されます。 **Lighthouse レポート**&#x200B;列のレポート日付をクリックして、生データの JSON ファイルを取得します。
+特定のページのリンクをクリックすると、「[**ページスコア - トレンド**」セクション](#trend)の「**選択**」フィルターが更新され、ページの各監査のスコアを示す「**生のレポート**」タブが表示されます。**Lighthouse レポート**&#x200B;列のレポート日付をクリックして、生データの JSON ファイルを取得します。
 
 ![生レポート](assets/experience-audit-raw-reports.png)
 
