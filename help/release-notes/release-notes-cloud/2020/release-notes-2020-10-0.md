@@ -56,7 +56,7 @@ ht-degree: 90%
 
 ### [!DNL Forms] のベータ版機能  {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) を使用すると、テンプレートと XML データを組み合わせて、様々な形式のドキュメントを生成できます。このサービスを使用すると、同期および一括モードでドキュメントを生成できます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ja) を使用すると、テンプレートと XML データを組み合わせて、様々な形式のドキュメントを生成できます。このサービスを使用すると、同期および一括モードでドキュメントを生成できます。
 
 ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てにメールを送信します。
 

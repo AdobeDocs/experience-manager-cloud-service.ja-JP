@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM でタグなしのAssets {#smart-tag-existing-assets}
 
-DAM 内の既存または古いアセットは、自動的にスマートタグが付けられません。 Assetsのスマートタグを生成するには、手動で [ 再処理 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) する必要があります。 プロセスが完了したら、フォルダー内の任意のアセットの [!UICONTROL &#x200B; プロパティ &#x200B;] ページに移動します。 自動的に追加されたタグは、「[!UICONTROL 基本]」タブの[!UICONTROL スマートタグ]セクションに表示されます。これらの適用されたスマートタグは、[ 信頼性スコア ](#confidence-score) の降順で並べ替えられます。
+DAM 内の既存または古いアセットは、自動的にスマートタグが付けられません。 Assetsのスマートタグを生成するには、手動で [ 再処理 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ja#adjusting-load) する必要があります。 プロセスが完了したら、フォルダー内の任意のアセットの [!UICONTROL &#x200B; プロパティ &#x200B;] ページに移動します。 自動的に追加されたタグは、「[!UICONTROL 基本]」タブの[!UICONTROL スマートタグ]セクションに表示されます。これらの適用されたスマートタグは、[ 信頼性スコア ](#confidence-score) の降順で並べ替えられます。
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
