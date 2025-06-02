@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3ecb3f0f49160536ba9abd1261477b0985a03c07
+source-git-commit: 68da11037cb3572a6f869fe8bd6a898e0aad87ec
 workflow-type: tm+mt
 source-wordcount: '863'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -58,7 +58,7 @@ Cloud Manager は、顧客が管理する（OV/EV）SSL 証明書を使用して
 
 ## ドメイン名エラー {#domain-error}
 
-次に、一般的なドメイン名の検証エラーとその一般的な解決方法を示します。
+次に、一般的なドメイン名の検証エラーとその一般的な解決策を示します。
 
 ### エラー : ドメインがインストールされていません {#domain-not-installed}
 
