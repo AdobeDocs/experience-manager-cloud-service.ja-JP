@@ -37,7 +37,7 @@ Forms Submission サービスを使用するための前提条件を以下に示
 
 ## Forms送信サービスの設定
 
-アダプティブ AEM ブロックが設定された新しいForms プロジェクトを作成します。 新しいAEM プロジェクトの作成方法については、[ はじめに – 開発者向けチュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) を参照してください。 プロジェクトの `fstab.yaml` ファイルを更新します。 既存の参照を、`forms@adobe.com` と共有したフォルダーのパスに置き換えます。
+アダプティブ AEM ブロックが設定された新しいForms プロジェクトを作成します。 新しいAEM プロジェクトの作成方法については、[ はじめに – 開発者向けチュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) を参照してください。 プロジェクトの `fstab.yaml` ファイルを更新します。 既存の参照を、`forms@adobe.com` と共有したフォルダーのパスに置き換えます。
 
 [Forms Submission サービスを手動で設定する ](#configuring-the-forms-submission-service-manually) または [API を使用するForms Submission サービスを設定する ](#configuring-the-forms-submission-service-using-api) ことができます。
 
@@ -47,7 +47,7 @@ Forms Submission サービスを使用するための前提条件を以下に示
 
 #### &#x200B;1. フォーム定義を使用してフォームを作成する
 
-Google シートまたはMicrosoft Excel を使用してフォームを作成します。 Microsoft Excel またはGoogle Sheets のフォーム定義を使用してフォームを作成する方法については、[ ここをクリック ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms) してください。
+Google シートまたはMicrosoft Excel を使用してフォームを作成します。 Microsoft Excel またはGoogle Sheets のフォーム定義を使用してフォームを作成する方法については、[ ここをクリック ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms) してください。
 
 次のスクリーンショットは、フォームの作成に使用されたフォーム定義を示しています。
 
@@ -59,7 +59,7 @@ Google シートまたはMicrosoft Excel を使用してフォームを作成し
 
 #### &#x200B;2. スプレッドシートを有効にしてデータを受け入れます。
 
-フォームを作成してプレビューしたら、対応するスプレッドシートを有効にしてデータの受信を開始します。 新しいシートを `incoming` のように追加します。 [ スプレッドシートを手動で有効にしてデータを受け入れる ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data) ことができます。
+フォームを作成してプレビューしたら、対応するスプレッドシートを有効にしてデータの受信を開始します。 新しいシートを `incoming` のように追加します。 [ スプレッドシートを手動で有効にしてデータを受け入れる ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data) ことができます。
 
 ![ 受信シート ](/help/forms/assets/form-submission-incoming-sheet.png)
 
