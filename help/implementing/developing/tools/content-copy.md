@@ -4,10 +4,10 @@ description: コンテンツコピーツールを使用すると、可変コン�
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fef97af53726d45cae36e2c9c6a5d82aa2f872c2
+source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 100%
+source-wordcount: '1321'
+ht-degree: 97%
 
 ---
 
@@ -200,3 +200,4 @@ ht-degree: 100%
 * コンテンツのコピーツールにはバージョン管理機能がなく、前回のコンテンツのコピー操作以降にコンテンツセット内のソース環境で変更されたコンテンツや作成されたコンテンツを自動的に検出できません。
    * 前回のコンテンツのコピー操作以降のコンテンツの変更のみで宛先環境を更新する場合は、コンテンツセットを作成する必要があります。それから、前回のコンテンツコピー操作以降に変更が加えられたソースインスタンス上のパスを指定します。
 * バージョン情報は、コンテンツコピーに含まれていません。
+* [ コンテンツフラグメントモデル ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) では、ユニバーサル固有 ID （UUID）に基づいて参照フィールドを指定できます。 このような UUID はリポジトリに固有なので、コンテンツフラグメントをコピーする際、コンテンツのコピーツールは、ターゲット環境でこれらの UUID を再計算します。
