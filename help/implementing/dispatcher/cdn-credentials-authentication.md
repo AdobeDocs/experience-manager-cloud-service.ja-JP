@@ -4,10 +4,10 @@ description: 設定ファイルでルールを宣言し、Cloud Manager 設定�
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1497'
-ht-degree: 100%
+source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
+workflow-type: tm+mt
+source-wordcount: '1712'
+ht-degree: 85%
 
 ---
 
@@ -23,6 +23,12 @@ ht-degree: 100%
 上記のそれぞれについては、設定の構文を含めて、以下の該当する節で説明します。
 
 優れたセキュリティ対策である[キーのローテーション](#rotating-secrets)の方法に関する節があります。
+
+>[!NOTE]
+> 環境変数として定義された秘密鍵は、不変と見なす必要があります。 値を変更する代わりに、新しい名前で新しい秘密鍵を作成し、設定内でその秘密鍵を参照する必要があります。 これを行わないと、シークレットの更新が信頼できなくなります。
+
+>[!WARNING]
+>CDN 設定で参照される環境変数を削除しないでください。 これにより、CDN 設定の更新に失敗する場合があります（例えば、ルール、カスタムドメインおよび証明書の更新）。
 
 ## 顧客管理 CDN の HTTP ヘッダー値 {#CDN-HTTP-value}
 
@@ -216,7 +222,9 @@ data:
 
 ## 秘密鍵のローテーション {#rotating-secrets}
 
-1. 優れたセキュリティ対策として、資格情報を時々変更することをお勧めします。これは、エッジキーの例を使用して以下に示すように実現できますが、パージキーにも同じ戦略が使用されます。
+認証情報を定期的に変更することは、セキュリティ上適切です。 環境変数は直接変更せずに、新しいシークレットを作成し、設定で新しい名前を参照する必要があります。
+
+このユースケースについては、以下でエッジキーの例を使用して例を示しますが、同じ方法をキーのパージにも使用できます。
 
 1. 最初は `edgeKey1` のみが定義され、この場合は `${{CDN_EDGEKEY_052824}}` として参照されます。これは、推奨される規則として、作成日を反映しています。
 
@@ -260,3 +268,47 @@ data:
          edgeKey2: ${{CDN_EDGEKEY_041425}}
          edgeKey1: ${{CDN_EDGEKEY_031426}}
    ```
+
+バックエンドに対する認証など、リクエストヘッダーで設定された秘密鍵を回転させる場合、一時的なギャップなしでヘッダー値が切り替わることを保証するために、2 つの手順で回転を実行することをお勧めします。
+
+1. ローテーション前の初期設定。 この状態で、古いキーがバックエンドに送信されます。
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_1}}
+   ```
+
+1. 同じヘッダーを 2 回設定して、新しいキー `API_KEY_2` を導入します（新しいキーは古いキーの後に設定する必要があります）。 デプロイすると、バックエンドに新しいキーが表示されます。
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_1}}
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_2}}
+   ```
+
+1. 設定から古いキー `API_KEY_1` を削除します。 これをデプロイすると、バックエンドに新しいキーが表示され、古いキーの環境変数を安全に削除できます。
+
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_2}}
+   ```
+
+
