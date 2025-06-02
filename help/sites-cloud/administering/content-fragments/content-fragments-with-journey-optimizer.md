@@ -14,19 +14,19 @@ ht-degree: 6%
 
 # Adobe Journey Optimizerのコンテンツフラグメント {#content-fragments-with-journey-optimizer}
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/get-started) は、顧客とのつながり、コンテキスト、パーソナライズされたエクスペリエンスを提供するのに役立ちます。 Adobe Experience Manager（AEM）as a Cloud ServiceをAdobe Journey Optimizer（AJO）と統合すると、web、SMS、メールなどのAJO アウトバウンドチャネルでAEM コンテンツを再利用できます。
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/get-started/get-started) は、顧客とのつながり、コンテキスト、パーソナライズされたエクスペリエンスを提供するのに役立ちます。 Adobe Experience Manager（AEM）as a Cloud ServiceをAdobe Journey Optimizer（AJO）と統合すると、web、SMS、メールなどのAJO アウトバウンドチャネルでAEM コンテンツを再利用できます。
 
 例えば、次のことができます。
 
-* [AEM コンテンツフラグメント ](/help/sites-cloud/administering/content-fragments/overview.md) を [Journey Optimizer メール ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/get-started-email) コンテンツにシームレスに組み込みます
+* [AEM コンテンツフラグメント ](/help/sites-cloud/administering/content-fragments/overview.md) を [Journey Optimizer メール ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/channels/email/get-started-email) コンテンツにシームレスに組み込みます
 * AEMからのAJO エクスペリエンスの直接プレビュー
 
 コンテンツフラグメントとAJOを結び付けることで、AEM コンテンツへのアクセスおよび活用のプロセスが簡略化され、パーソナライズされた動的なキャンペーンやジャーニーを作成できます。
 
 詳しくは、AJOのドキュメントを参照してください。
 
-* [AJOでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html#integrations)
-* [AJO オファーとコンテンツフラグメントの統合 ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
+* [AJOでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html?lang=ja#integrations)
+* [AJO オファーとコンテンツフラグメントの統合 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
 
 ## その他の情報 {#further-information}
 
