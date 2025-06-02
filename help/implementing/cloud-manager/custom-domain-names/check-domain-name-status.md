@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: d9e067ec7aa9226721853a3e35a8863445a5002e
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 96%
+source-wordcount: '920'
+ht-degree: 89%
 
 ---
 
@@ -62,7 +62,13 @@ Cloud Manager は、顧客が管理する（OV/EV）SSL 証明書を使用して
 
 ### エラー : ドメインがインストールされていません {#domain-not-installed}
 
-このエラーは、証明書が適切にアップデートされたことを確認した後でも、EV／OV 証明書のドメイン検証中に発生する可能性があります。
+<!-- This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately. -->
+
+Cloud Managerでドメインマッピングを追加すると、次のエラーメッセージが表示される場合があります。
+
+*ドメインは既に Fastly アカウントにインストールされています。 Cloud Serviceに追加する前に、まずここから削除してください。*
+
+このメッセージは、ドメインが現在、別の Fastly アカウント（通常はAdobeの制御外）に関連付けられていることを示しています。 続行するには、ドメインをAdobeの管理によるCloud Serviceに追加する前に、ドメインと他のアカウントの関連付けを解除する必要があります。 この問題は通常、Adobe以外の Fastly 設定で、同じドメインが既に別のオリジンにマッピングされている場合に発生します。
 
 #### エラーの原因 {#cause}
 
@@ -88,7 +94,7 @@ Fastly は、ドメインを先に登録したアカウントにロックしま�
 
 ## カスタムドメイン名の既存の CDN 設定 {#pre-existing-cdn}
 
-カスタムドメイン名に既に CDN （コンテンツ配信ネットワーク）設定がある場合は、「**カスタムドメイン名**」ページと **環境** ページに情報メッセージが表示されます。 これらの設定を UI を通じて追加し、Cloud Manager で表示および管理できるようにすることをお勧めします。
+カスタムドメイン名の CDN（コンテンツ配信ネットワーク）設定が既にある場合は、**カスタムドメイン名**&#x200B;ページと&#x200B;**環境**&#x200B;ページに情報メッセージが表示されます。これらの設定を UI を通じて追加し、Cloud Manager で表示および管理できるようにすることをお勧めします。
 
 UI を使用して既存の環境設定をすべて移行すると、このメッセージは表示されなくなります。メッセージが表示されなくなるまでに 1～2 営業日かかる場合があります。
 
