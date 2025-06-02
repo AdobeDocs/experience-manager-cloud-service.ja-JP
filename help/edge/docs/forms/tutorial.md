@@ -4,10 +4,10 @@ description: このチュートリアルは、新しい Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 91%
+source-wordcount: '1922'
+ht-degree: 90%
 
 ---
 
@@ -189,6 +189,10 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
 
 ![お問い合わせフォーム](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
+>[!IMPORTANT]
+>
+>**フォームを作成するシートには、名前の付け方に制限があります。 シート名として使用できるのは `helix-default` と `shared-aem` のみです。**
+
 まず、フィールドラベルの更新から始めましょう。 編集用に「お問い合わせ」シートを開き、送信ボタンのラベルを「`Let's Talk`」に変更し、AEM Sidekick を使用してファイルをプレビューして公開します。
 
 ![お問い合わせフォーム](/help/edge/assets/enquiry-form-preview-publish.png)
@@ -237,7 +241,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
        npm install -g @adobe/aem-cli
    ```
 
-1. GitHub プロジェクトのクローンを作成します。次のコマンドを使用して、GitHub からプロジェクトリポジトリのクローンを作成します。 &lt;owner> リポジトリの所有者と &lt;repo> リポジトリ名を置き換えます。
+1. GitHub プロジェクトのクローンを作成します。次のコマンドを使用して、GitHub からプロジェクトリポジトリのクローンを作成します。 <owner> リポジトリの所有者と <repo> リポジトリ名を置き換えます。
 
    ```
    git clone https://github.com/<owner>/<repo>

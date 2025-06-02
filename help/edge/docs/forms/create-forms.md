@@ -4,10 +4,10 @@ description: AEM Forms の Edge Delivery Services の基本について学びま
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: efd4fbb38724632865d87b80827611899e2c6d1f
-workflow-type: ht
-source-wordcount: '784'
-ht-degree: 100%
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
+workflow-type: tm+mt
+source-wordcount: '807'
+ht-degree: 97%
 
 ---
 
@@ -81,6 +81,10 @@ Ensure a smooth GitHub build process by addressing potential issues:
 1. 作成したスプレッドシートを開き、デフォルトのシートの名前を「shared-aem」に変更します。
 
    ![デフォルトのシート名を「shared-default」に変更](/help/edge/assets/rename-sheet-to-shared-default.png)
+
+   >[!IMPORTANT]
+   >
+   >**フォームを作成するシートには、名前の付け方に制限があります。 シート名として使用できるのは `helix-default` と `shared-aem` のみです。**
 
 1. フォームフィールドを追加するには、行と列のヘッダーを「shared-aem」シートに挿入します。各行は、[フォームフィールド](/help/edge/docs/forms/form-components.md#available-components)を表し、列ヘッダーが対応するフィールドの[プロパティ](/help/edge/docs/forms/form-components.md#components-properties)を定義する必要があります。
 
