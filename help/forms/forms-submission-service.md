@@ -33,7 +33,7 @@ Forms送信サービスを使用すると、フォーム送信データを OneDr
 Forms Submission サービスを使用するための前提条件を以下に示します。
 
 * AEM プロジェクトに最新のアダプティブフォームブロックが含まれていることを確認します。
-* Forms送信サービスを使用するには、Git リポジトリが許可リストに追加されていることを確認してください。 Forms送信サービスを使用する ](mailto:aem-forms-ea@adobe.com)許可リストに追加するには、[mailto:aem-forms-ea@adobe.com} と、GitHub の組織名およびリポジトリ名を入力してください。
+* Forms送信サービスを使用するには、Git リポジトリが許可リストに追加されていることを確認してください。 Forms送信サービスを使用する [&#128279;](mailto:aem-forms-ea@adobe.com)許可リストに追加するには、mailto:aem-forms-ea@adobe.com&rbrace; と、GitHub の組織名およびリポジトリ名を入力してください。
 
 ## Forms送信サービスの設定
 
@@ -157,8 +157,8 @@ Postmanで「**送信**」ボタンをクリックすると、`201 Created` の�
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
     —header &quot;Content-Type: application/json&quot; \
     —header &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; \
-     – データ &#39;{
-    &quot;data&quot;: {
+     – データ &#39;&lbrace;
+    &quot;data&quot;: &lbrace;
     &quot;startDate&quot;: &quot;2025-01-20&quot;,
     &quot;endDate&quot;: &quot;2025-01-25&quot;,
     &quot;destination&quot;: &quot;Australia&quot;,
@@ -169,11 +169,11 @@ Postmanで「**送信**」ボタンをクリックすると、`201 Created` の�
     &quot;age&quot;: &quot;35&quot;,
     &quot;subscribe&quot;: null,
     &quot;email&quot;: &quot;mary@gmail.com&quot;
-    }
+    &rbrace;
      
     
      
-}&#39;s
+&rbrace;&#39;s
 >[!TAB Windows OS の場合 ]
 
     &quot;&#39;json
