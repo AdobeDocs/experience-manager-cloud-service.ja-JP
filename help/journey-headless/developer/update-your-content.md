@@ -5,10 +5,10 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments, GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 04d1f4f312c9cd256430a2134b308e45dde2c4d7
+source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 93%
+source-wordcount: '503'
+ht-degree: 94%
 
 ---
 
@@ -50,7 +50,7 @@ Adobe Experience Manager（AEM）as a Cloud Service では、コンテンツフ�
 
 >[!NOTE]
 >
->[Assets HTTP API でのコンテンツフラグメントのサポート ](/help/assets/content-fragments/assets-api-content-fragments.md) が [ 非推奨 ](/help/release-notes/deprecated-removed-features.md) になりました。 これは、[OpenAPI によるコンテンツフラグメント配信 ](/help/headless/aem-content-fragment-delivery-with-openapi.md) と [ コンテンツフラグメントおよびコンテンツフラグメントモデル管理 OpenAPI](/help/headless/content-fragment-openapis.md) に置き換えられました。
+>[Assets HTTP API でのコンテンツフラグメントのサポート ](/help/assets/content-fragments/assets-api-content-fragments.md) が [ 非推奨 ](/help/release-notes/deprecated-removed-features.md) になりました。 [OpenAPI を使用したコンテンツフラグメント配信 ](/help/headless/aem-content-fragment-delivery-with-openapi.md) および [ コンテンツフラグメントおよびコンテンツフラグメントモデル管理 OpenAPI](/help/headless/content-fragment-openapis.md) に置き換えられました。
 
 ## 次のステップ {#whats-next}
 
