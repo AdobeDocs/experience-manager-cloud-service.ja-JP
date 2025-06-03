@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f102cdbab6b38ffabc370691e507754227b91f4e
-workflow-type: ht
-source-wordcount: '1595'
-ht-degree: 100%
+source-git-commit: 1df836c55e7276cf05a84e5512220b51de7131a8
+workflow-type: tm+mt
+source-wordcount: '1547'
+ht-degree: 94%
 
 ---
 
@@ -103,9 +103,7 @@ Java 21 ランタイムにデプロイすると、次の機能が正しく機能
 
 #### ランタイム要件 {#runtime-requirements}
 
-Java 21 ランタイムは、Java 21 および Java 17 のビルドに使用され、Java 11 ビルドにも段階的に適用される予定です（以下のメモを参照）。Java 21 アップデートを受信するには、環境を AEM リリース 17098 以降にする必要があります。互換性を確保するには、次の調整が必要です。
-
-ライブラリの更新は、古い Java バージョンとの互換性が維持されるので、いつでも適用できます。
+Java 21 ランタイムは、すべての対象環境（AEM リリース 17098 以降で以下の条件を満たす環境）に適用されています。 環境が条件を満たさない場合は、パフォーマンス、可用性、セキュリティを確保するために調整を行うことが重要です。
 
 * **ASM の最小バージョン：**
 新しい JVM ランタイムのサポートを確保するには、多くの場合、`org.ow2.asm.*` アーティファクトにバンドルされている Java パッケージ `org.objectweb.asm` の使用をバージョン 9.5 以降に更新します。
@@ -127,8 +125,7 @@ Java 21 を使用して AEM をローカルで実行すると、`MaxPermSize` �
 
 >[!IMPORTANT]
 >
->`.cloudmanager/java-version` を `21` または `17` に設定すると、Java 21 ランタイムがデプロイされます。Java 21 ランタイムは、2025年2月4日木曜日（PT）から、すべての環境（コードが Java 11 でビルドされている環境だけでなく）に段階的にロールアウトされる予定です。ロールアウトは、サンドボックス環境と開発環境で始まり、2025年4月にすべての実稼動環境が続きます。Java 21 ランタイムを&#x200B;*早期に*&#x200B;導入するお客様は、アドビ（[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)）にお問い合わせください。
-
+>環境が Java 21 ランタイムにまだ自動更新されていない場合は、Java 17 または 21 を使用してビルドすることでトリガーを設定できます。 これを行うには、`.cloudmanager/java-version` を `21` または `17` に設定します。 ご不明な点については、Adobe（[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) までお問い合わせください。
 
 #### ビルド時間の要件 {#build-time-reqs}
 
