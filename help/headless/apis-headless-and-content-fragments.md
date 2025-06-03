@@ -4,10 +4,10 @@ description: 構造化コンテンツの配信とコンテンツフラグメン�
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
-source-git-commit: e427bd34867974c663e67a2124f257cd12e946ae
+source-git-commit: 243adc6f6428cea23c04ca788bd8ad0bda7e4501
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '516'
+ht-degree: 94%
 
 ---
 
@@ -27,12 +27,10 @@ Adobe Experience Manager（AEM）as a Cloud Service では、コンテンツフ�
    * これらの API は、構造化コンテンツ管理を目的としています。
    * それぞれの GET 演算子は、コンテンツ配信用に最適化されていません。
    * この API は REST ベースです。
-* [AEM Assets HTTP API での コンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)
-   * AEM の構造化コンテンツ配信用の JSON 出力の元の API。
-      * この API は堅牢で実証済みですが、*完全にハイドレート*&#x200B;された JSON 出力を提供しません。参照はパスとしてのみ出力されるので、さらにコンテンツを取得するには 2 番目の API リクエストが必要になります。
-   * また、Assets HTTP API は、コンテンツフラグメントおよびコンテンツフラグメントモデル（CRUD）の管理にも使用できます。
-   * この API は REST ベースです。
-   * Assets HTTP API のコンテンツフラグメントサポートは、Edge Delivery Services JSON REST API によって継承されるので、今後、廃止される予定です。時間スケールは、まだ決定されていません。
+
+>[!NOTE]
+>
+>[Assets HTTP API でのコンテンツフラグメントのサポート ](/help/assets/content-fragments/assets-api-content-fragments.md) が [ 非推奨 ](/help/release-notes/deprecated-removed-features.md) になりました。 [OpenAPI を使用したコンテンツフラグメント配信 ](/help/headless/aem-content-fragment-delivery-with-openapi.md) および [ コンテンツフラグメントおよびコンテンツフラグメントモデル管理 OpenAPI](/help/headless/content-fragment-openapis.md) に置き換えられました。
 
 ## REST と GraphQL {#rest-vs-graphql}
 
