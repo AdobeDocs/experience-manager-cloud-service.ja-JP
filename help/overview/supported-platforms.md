@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
-source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
-workflow-type: ht
-source-wordcount: '425'
-ht-degree: 100%
+source-git-commit: d53bfe103ff8e40c8221805a2d66faf3c5cd3823
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 99%
 
 ---
 
@@ -50,10 +50,9 @@ Adobe Experience Manager のユーザーインターフェイスは、[オーサ
 | Mozilla Firefox（エバーグリーン） | A：サポート対象 | A：サポート対象 | Z：サポート対象外 |
 | Mozilla Firefox 最新 ESR [1] | A：サポート対象 | A：サポート対象 | Z：サポート対象外 |
 | macOS の Safari（エバーグリーン） | A：サポート対象 | A：サポート対象 | Z：サポート対象外 |
-| iOS の Safari（エバーグリーン）[2] | Z：サポート対象外 | A：サポート対象 | Z：サポート対象外 |
+| iPadOS の Safari （エバーグリーン） | Z：サポート対象外 | A：サポート対象 | Z：サポート対象外 |
 
 1. Firefox の拡張サポートリリース（[詳しくは mozilla.org を参照してください](https://www.mozilla.org/ja-JP/firefox/enterprise/)）
-1. Apple iPad でのみサポート
 
 >[!NOTE]
 >
