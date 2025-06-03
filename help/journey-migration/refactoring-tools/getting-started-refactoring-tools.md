@@ -17,7 +17,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_upload"
 >title="Download"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=ja" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 -->
@@ -35,7 +35,7 @@ ht-degree: 2%
 
    ![画像](/help/journey-migration/refactoring-tools/assets/rscam2.png)
 
-&#x200B;---
+---
 
 ## Source コードのアップロード {#uploading}
 
@@ -72,7 +72,7 @@ ht-degree: 2%
 >[!NOTE]
 >リファクタリングジョブは、ソースコードのアップロードが成功した場合にのみ実行できます。
 
-&#x200B;---
+---
 
 ## リファクタリングジョブ {#refactoring-jobs}
 
@@ -91,7 +91,7 @@ ht-degree: 2%
 >[!NOTE]
 >個々のリファクタリングジョブをトリガーするか、「すべてのツールを統合 **オプションを使用して使用可能なすべてのツールを一度に実行** きます。
 
-&#x200B;---
+---
 
 ### 2.ジョブのステータス
 
