@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 1%
@@ -49,7 +49,7 @@ AI アシスタントの現在の対象範囲は、Adobe Experience Manager as a
 
 ## AEM Forms用 AI アシスタント（Forms Experience Builder） {#ai-forms-builder}
 
-AEMでは、製品に関する一般的な知識の AI アシスタントに加えて、専用の **AEM Forms用 AI アシスタント（Forms Experience Builder）** も提供しています。 この拡張アシスタントは、自然言語プロンプトを通じてフォームを作成および設定し、フォームに固有の質問に答えるのに積極的に役立ちます。
+AEMでは、製品に関する一般的な知識の AI アシスタントに加えて、専用の **[AEM Forms用 AI アシスタント（Forms Experience Builder）](/help/edge/docs/forms/forms-ai-assistant.md)** も提供しています。 この拡張アシスタントは、自然言語プロンプトを通じてフォームを作成および設定し、フォームに固有の質問に答えるのに積極的に役立ちます。
 
 ### 主な機能
 
@@ -76,7 +76,7 @@ AEM Forms用 AI アシスタントは、次の場所で使用できます。
 >
 > AEM Forms用 AI アシスタント（Forms Experience Builder）は、早期導入プログラムで利用できます。 勤務先のアドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールを送信して、アクセスをリクエストします。
 
-詳細な例やベストプラクティスなど、AEM Formsの AI アシスタントの使用について詳しくは、AEM Formsの AI アシスタントのドキュメントを参照してください。
+詳細な例やベストプラクティスなど、AEM Formsの AI アシスタントの使用について詳しくは、[AEM Formsの AI アシスタントのドキュメント ](/help/edge/docs/forms/forms-ai-assistant.md) を参照してください。
 
 ### 使用例
 

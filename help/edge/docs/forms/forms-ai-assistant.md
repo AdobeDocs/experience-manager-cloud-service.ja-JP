@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2354'
 ht-degree: 2%
 
 ---
@@ -232,6 +232,69 @@ AI アシスタントの継続的な改善に役立つ情報をお寄せくだ�
 - **フィードバックを提供：** AI アシスタントのインターフェイス内で組み込みの **[ フィードバックを提供 ] コマンドまたはボタン** を使用して、エクスペリエンスの共有、問題の報告、機能強化の提案を行います。 （例：`/feedback` と入力するか、フィードバックアイコンを探します）。
 - **公式サポート：** 重要な問題やその他のサポートについては、Adobeの公式サポートチャネルまたは組織の指定されたサポート連絡先からお問い合わせください。
 
+
+
+## 添付ファイルの操作
+
+AI アシスタントは、フォームの作成および設定操作を拡張するために、添付ファイルをサポートします。 様々なファイルタイプを添付して、変換する視覚的なコンテキスト、デザイン参照、既存のフォームを提供できます。
+
+### サポートされる添付ファイルタイプ
+
+| ファイルタイプ | ユースケース | 添付ファイルをサポートするコマンド | 例 |
+|-----------|-----------|-----------------------------------|----------|
+| **画像** （PNG、JPG、JPEG、GIF） | フォームレイアウト参照、UI モックアップ、紙のフォームスキャン | /create-form, /add-form, /create-panel, /add-panel, /update-field | 目的のレイアウトのスクリーンショットをアップロード |
+| **PDF ファイル** | 変換する既存のフォーム、設計仕様 | /create-form, /add-form, /create-panel, /add-panel | PDF アプリケーションフォームの変換 |
+| **Figma ファイル** | システム参照、UI プロトタイプの設計 | /create-form, /add-form, /create-panel | Figma デザインフレームの読み込み |
+| **デザインファイル** （スケッチ、Adobe XDの書き出し） | ビジュアルデザインリファレンス | /create-form, /add-form, /create-panel | リファレンスデザインのシステムコンポーネント |
+
+### 添付ファイルの使用方法
+
+1. **コマンドの前またはコマンドを使用してアタッチ：**
+
+   - AI アシスタント インターフェイスの添付ファイルアイコンをクリックします
+   - デバイスからファイルを選択
+   - 添付ファイルを参照するコマンドを入力してください
+
+2. **コマンドの参照添付ファイル：**
+
+   ```
+   /create-form based on the attached PDF application form
+   /add-panel using the layout shown in the uploaded image
+   /create-panel following the design in the attached Figma file
+   /update-field @email to match the style in the attached screenshot
+   ```
+
+3. **複数の添付ファイル：**
+
+   - 比較や参照のために複数のファイルを添付できます
+   - 使用する添付ファイルを「最初に添付された画像を使用」または「PDF ファイルに基づく」から指定します
+
+### 添付のベストプラクティス
+
+- **クリアで高品質な画像：** アップロードした画像をクリアで読みやすくし、AI 分析を向上
+- **関連するファイル名：** AI がコンテキストを理解しやすくするために、わかりやすいファイル名を使用します
+- **単一のフォーカス：** 各添付ファイルは、1 つの特定の側面（レイアウト、フィールドデザインなど）にフォーカスする必要があります。
+- **サポートされている形式：** 互換性を最大限に高めるために、一般的な形式（PNG、JPG、PDF）にスティックします
+- **ファイルサイズ：** 最適な処理速度を実現するために、添付ファイルのサイズを 10 MB 未満に抑える
+
+### 添付ワークフローの例
+
+**用紙フォームの変換：**
+
+1. 用紙をはっきりとスキャンまたは写真に収める
+2. 画像ファイルのアップロード
+3. 次のコマンドを使用します：`/create-form based on the attached form image, converting all fields to digital equivalents`
+
+**デザインシステムのマッチング：**
+
+1. 関連するデザインコンポーネントの書き出しまたはスクリーンショット
+2. デザイン参照をアタッチする
+3. 次のコマンドを使用します：`/create-panel following the visual style and layout shown in the attached design`
+
+**フィールドのスタイル設定の参照：**
+
+1. 目的のフィールド表示のスクリーンショットを添付
+2. 次のコマンドを使用します：`/update-field @email to match the styling and layout shown in the attached image`
 
 ## 関連するコンテンツ
 
