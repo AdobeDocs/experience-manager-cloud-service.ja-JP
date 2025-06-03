@@ -4,10 +4,10 @@ description: OpenAPI を活用した AEM コンテンツフラグメント配信
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 7f7ed3adcbd01f688f48f3ba4a0c25293b8b1551
+source-git-commit: 163964a7183996226b14f3c803afa4c5bd58f848
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 94%
+source-wordcount: '475'
+ht-degree: 60%
 
 ---
 
@@ -34,6 +34,14 @@ Adobe Experience Manager（AEM）as a Cloud Service では、コンテンツフ�
 >
 >使用可能な様々な API の概要と、関連する概念のいくつかの比較について詳しくは、[構造化コンテンツの配信と管理用の AEM API](/help/headless/apis-headless-and-content-fragments.md) を参照してください。
 
+>[!IMPORTANT]
+>
+>AEM as a Cloud Serviceで OpenAPI を使用したコンテンツフラグメント配信を有効にするには、まだ有効になっていないことを確認してから、「**OpenAPI を使用してコンテンツフラグメント配信を有効にする** というタイトルを持つAdobe サポートチケットを送信し、次を指定します。
+>
+>* Cloud Service プログラム ID と環境 ID
+>* コンテンツフラグメント配信 OpenAPI で解決するユースケースの詳細
+>* Adobeが対応する必要のあるすべての連絡先の詳細、およびリクエストやプロジェクトについて情報を保持（必要な場合）
+
 ## キャッシュ {#caching}
 
 AEM は AEM CDN Fastly と統合されます。つまり、パブリッシュ層で提供される JSON 応答は Fastly レベルでキャッシュされます。
@@ -49,4 +57,28 @@ AEM は AEM CDN Fastly と統合されます。つまり、パブリッシュ層
 * 古いコンテンツは、エラーにより最大 1 日間提供される場合があります。
    * `stale-on-error`=`86400`
 
-AEM には、アクティブな CDN キャッシュ無効化機能も備わっています。つまり、コンテンツを更新または公開するたびに、対応する JSON OpenAPI 応答は Fastly へのソフトパージリクエストを通じて自動的に無効化されます。これにより、実際の CDN キャッシュの有効期間（`s-maxage`）に達する前に、JSON 出力に反映された変更を確認できます。
+OpenAPI を使用したコンテンツフラグメント配信では、アクティブな CDN キャッシュの無効化をサポートしています。 つまり、コンテンツを更新または公開するたびに、対応する JSON OpenAPI 応答は Fastly へのソフトパージリクエストを通じて自動的に無効化されます。これにより、実際の CDN キャッシュの有効期間（`s-maxage`）に達する前に、JSON 出力に反映された変更を確認できます。
+
+## 入手方法 {#availability}
+
+OpenAPI を使用したコンテンツフラグメント配信は、プレビュー層とパブリッシュ層で使用できます。 OpenAPI は、プレビューとライブ配信の両方に JSON 形式でコンテンツフラグメントを配信します。
+
+OpenAPI を使用したコンテンツフラグメント配信をプレビューするには、次の操作を行います。
+
+* プレビューに公開
+* ip許可リストによるプレビューへのアクセスを有効にする
+* プレビュー URL を取得
+
+## CORS {#cors}
+
+[CORS 許可オリジン ](/help/headless/deployment/cross-origin-resource-sharing.md) API を呼び出せるオリジンを定義します。
+
+Dispatcher 設定側で定義された CORS 許可されたオリジン（特にGraphQL用）は、この API では考慮されません。
+
+<!-- 
+## API Rate Limits {#api-rate-limits}
+-->
+
+<!-- 
+## Limitations {#limitations}
+-->
