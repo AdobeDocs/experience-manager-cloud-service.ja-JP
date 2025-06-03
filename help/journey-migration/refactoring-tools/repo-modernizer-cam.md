@@ -40,7 +40,7 @@ Repository Modernizer では、次のプロジェクトタイプもサポート�
 
 ## Repository Modernizer の使用 {#using-repo-modernizer}
 
->[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412961/?quality=12&learn=on&captions=jpn)
 
 - 「リファクタリングジョブ」タブの下のリファクタリングサービスによって、Repository Modernizer が自動的に呼び出されるようになりました。 お客様は、プロジェクトをアップロードしてリファクタリングジョブをトリガーするだけで済み、追加の設定は必要ありません。
 
