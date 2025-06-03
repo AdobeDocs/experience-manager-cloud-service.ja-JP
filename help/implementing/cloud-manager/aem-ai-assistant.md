@@ -6,19 +6,20 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
-source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
+exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
+source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '1122'
 ht-degree: 1%
 
 ---
 
 # Adobe Experience Managerの AI アシスタントについて {#aem-home}
 
-AEM（Adobe Experience Manager）の AI アシスタントは、Adobe Experience Manager関連のクエリに対する回答の検索を合理化するように設計された対話型インターフェイスを提供します。 製品に関する知識へのアクセス、問題のトラブルシューティングおよびExperience Leagueで使用可能な情報の調査に役立ちます。 Betaの限定プログラム中、AI アシスタントは、Sites、Assets、Forms、Cloud ManagerなどのAdobe Experience Manager as a Cloud Serviceをサポートします。
+AEM（Adobe Experience Manager）の AI アシスタントは、Adobe Experience Manager関連のクエリに対する回答の検索を合理化するように設計された対話型インターフェイスを提供します。 Experience Leagueの製品情報へのアクセス、問題のトラブルシューティングおよび情報探索に役立ちます。 Betaの限定プログラム中、AI アシスタントは、Sites、Assets、Forms、Cloud ManagerなどのAdobe Experience Manager as a Cloud Serviceをサポートします。
 
 >[!IMPORTANT]
->Adobeが AI アシスタント機能を有効にしてBeta プログラムをテストし、参加できるように、使用許諾契約書を確認して送信していることを確認してください。
+>Adobeで AI アシスタント機能を有効にして、Beta プログラムをテストし、参加できるようにするため、使用許諾契約書を確認して送信してください。
 >
 >ご不明な点は、Adobe IDに関連付けられたメールアドレスから [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) までお問い合わせください。
 
@@ -36,7 +37,7 @@ AEMの AI アシスタントは、プライバシー、セキュリティ、ガ�
 
 ## 製品に関する知識を得るための AI アシスタントの基本を学ぶ {#ai-prod-insights}
 
-商品情報には、Adobe Experience Leagueのドキュメントから派生した概念とトピックが含まれます。 これらの質問は、次のサブグループに分類できます。
+製品知識には、Adobe Experience League ドキュメントから派生した概念とトピックが含まれます。 これらの質問は、次のサブグループに分類できます。
 
 | 製品に関する知識 | 例 |
 | --- | --- |
@@ -45,6 +46,46 @@ AEMの AI アシスタントは、プライバシー、セキュリティ、ガ�
 | トラブルシューティング | <ul><li>ユニバーサルエディターにアクセスできないのはなぜですか？</li><li>パイプラインが失敗する理由</li></ul> |
 
 AI アシスタントの現在の対象範囲は、Adobe Experience Manager as a Cloud Serviceの製品ナレッジの問題への対処に重点を置いています。 これには、Sites、Assets、Forms、Cloud Managerなど、主要な領域に対する包括的なサポートが含まれます。
+
+## AEM Forms用 AI アシスタント（Forms Experience Builder） {#ai-forms-builder}
+
+AEMでは、製品に関する一般的な知識の AI アシスタントに加えて、専用の **AEM Forms用 AI アシスタント（Forms Experience Builder）** も提供しています。 この拡張アシスタントは、自然言語プロンプトを通じてフォームを作成および設定し、フォームに固有の質問に答えるのに積極的に役立ちます。
+
+### 主な機能
+
+AEM Forms用 AI アシスタントの主な機能を次に示します。
+
+* **フォームの作成**：自然言語の説明を使用してゼロから新しいフォームを作成する
+* **デザインの読み込み**：既存のデザイン（PDF、Figma、画像）を機能的なAEM フォームに変換する
+* **フォーム設定**：フィールド、パネル、検証ルール、条件付きロジックを追加する
+* **レイアウト管理**：フォーム構造を整理し、異なるデバイス向けに最適化する
+* **統合設定**：フォーム送信とデータ処理の設定
+* **製品知識**:AEM Formsの機能とベストプラクティスに関する質問に回答します
+
+### アクセス先
+
+AEM Forms用 AI アシスタントは、次の場所で使用できます。
+
+* **ユニバーサルエディター**：ビジュアル編集機能を備えたEdge Delivery Services フォーム用
+* **アダプティブFormsエディター**：詳細なフォーム設定と高度な機能のため
+* **Forms Management UI**: フォームの作成および管理タスクの概要
+
+### はじめに
+
+>[!NOTE]
+>
+> AEM Forms用 AI アシスタント（Forms Experience Builder）は、早期導入プログラムで利用できます。 勤務先のアドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールを送信して、アクセスをリクエストします。
+
+詳細な例やベストプラクティスなど、AEM Formsの AI アシスタントの使用について詳しくは、AEM Formsの AI アシスタントのドキュメントを参照してください。
+
+### 使用例
+
+* **「名前、メール、評価、コメントのフィールドを含んだ顧客フィードバックフォームの作成」**
+* **「アップロードしたPDF アプリケーションフォームをデジタルアダプティブフォームに変換する」**
+* **「配偶者の有無が「既婚」の場合にのみ配偶者の情報を表示する条件付きロジックを追加」**
+* **「CRM システムにデータを送信するようにこのフォームを設定する」**
+
+この特化したForms AI アシスタントは、AI の機能をAEMの堅牢なフォーム機能と組み合わせて、フォーム作成ワークフローを合理化し、フォーム作成の次の進化を表します。
 
 ## 効果的な質問の作成方法 {#ai-craft-questions}
 
@@ -108,13 +149,10 @@ AI アシスタントには、サポートされているトピックとカテ�
 ここでは、AI アシスタントに関するよくある質問に対する回答を示します。
 
 * **AI アシスタントから提供される情報はリアルタイムですか？**\
-  いいえ。AI Assistant は、Adobe Experience Leagueのドキュメントからコンテンツを取得します。 コンテンツの更新が応答に反映されるまでに時間がかかる場合があります。
-* **AI アシスタントはどのAdobeアプリケーションをサポートしていますか？**\
+  いいえ。AI Assistant は、Adobe Experience League のドキュメントからコンテンツを入手します。 コンテンツの更新が応答に反映されるまでに時間がかかる場合があります。
+* **AI アシスタントがサポートするAdobeのアプリケーションは何ですか？**\
   現在、AI アシスタントは、Sites、Assets、Forms、Cloud ManagerなどのAEM as a Cloud Serviceをサポートしています。特に、製品に関する知識の問い合わせ用です。
 * **AI アシスタントの機能は何ですか？**\
   AI アシスタントは、Adobe製品の知識に関する質問に回答するように設計されています。
 * **AI アシスタントは個人情報をデータのトレーニングに使用しますか？**\
   いいえ。AI アシスタントは、トレーニング目的で個人情報を使用しません。 名前や連絡先の詳細など、自分自身や他人に関する個人情報を AI アシスタントと共有しないでください。
-
-
-
