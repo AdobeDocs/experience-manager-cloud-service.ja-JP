@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
+exl-id: a8d64082-a23f-4919-ad66-042faad77d29
+source-git-commit: ab071b9159f3d4db275313080d7c14a46096c4de
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '1141'
 ht-degree: 2%
 
 ---
-
 
 # AEM Forms用 AI アシスタント（Forms Experience Builder）
 
@@ -24,11 +24,17 @@ ht-degree: 2%
 >
 > **ドキュメントは変更される場合があります**：このドキュメントは現在製品に対してテスト中であり、更新および改訂される可能性があります。 AEM Forms用 AI アシスタントが早期導入プログラム中に進化し続けると、機能、コマンド、例が変わる場合があります。
 
-AEM Forms用 AI アシスタント（Forms Experience Builder）は、自然言語プロンプトを通じて、一般的なフォーム作成タスクを合理化することで、オーサリングエクスペリエンスを強化します。 Forms Management UI、アダプティブFormsエディター、ユニバーサルエディターで使用でき、作成と設定の両方のアクションをサポートすることで、よりスマートで迅速な構築を可能にします。 このガイドは、基本を学び、その機能を最大限に活用するのに役立ちます。
+AEM Forms用 AI アシスタントは、フォームの作成方法を変革します。自然言語で必要なものを簡単に説明し、フォームが実現するのを見守るだけです。 Forms Management UI、アダプティブFormsエディター、ユニバーサルエディターで使用でき、意図を理解し、探しているものを正確に構築します。
 
-## はじめに
+## はじめに：話しかけるだけです
 
-詳しく説明する前に、AI アシスタントにアクセスしてやり取りする際の基本について説明します。
+AI アシスタントは、知識のある同僚と会話するようなものです。 複雑なメニューや設定を学習する代わりに、作成したいものを記述するだけです。
+
+### クイックスタート
+
+紹介ビデオを視聴して、すぐに使い始めます。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463164/)
 
 ### AI アシスタントへのアクセス
 
@@ -39,14 +45,14 @@ AI アシスタントには、AEM Formsの 3 つの異なる場所からアク�
    - インターフェイスの左側にある「AI アシスタント」アイコンを探します
    - アイコンをクリックして、AI アシスタント パネルを開きます
 
-   ![AI アシスタント アイコン*](/help/edge/docs/forms/assets/forms-manager.gif)
+   ![AI アシスタント アイコン*](/help/edge/docs/forms/assets/forms-manager.gif){width="50%"}
 
 2. **アダプティブFormsエディター**
    - Adobe Experience Manager/Forms/Formsとドキュメントに移動します。
    - フォームを選択して編集用に開きます
    - エディターインターフェイスで AI アシスタント アイコンをクリックします
 
-   ![AI アシスタント アイコン*](/help/edge/docs/forms/assets/adaptive-forms-editor.gif)
+   ![AI アシスタント アイコン*](/help/edge/docs/forms/assets/adaptive-forms-editor.gif){width="75%"}
 
 3. **ユニバーサルエディター**
 
@@ -54,70 +60,230 @@ AI アシスタントには、AEM Formsの 3 つの異なる場所からアク�
    - インターフェイスの左側にある「AI アシスタント」アイコンを探します
    - エディターインターフェイスで AI アシスタント アイコンをクリックします
 
-AI アシスタントは、現在の場所とタスクに基づいて機能を調整し、各コンテキストに関連する支援を提供します。
+### 使い方：簡単な会話
 
-### 操作方法：
+AI アシスタントの使用を開始する最適な方法は、自然言語を使用することです。 その方法を次に示します。
 
-- リクエストを自然言語で入力するだけです。
-- `/` を使用して、使用可能なコマンドまたはクイックアクションのリストを表示します。
-- アシスタントで特定のフィールドを設定または更新する場合は、`@fieldName` を使用して特定のフォームフィールド（`@firstName`、`@emailAddress` など）を参照します。
-- 画像、PDF、Figma ファイル、またはその他のデザインアセットをアップロードすると、AI アシスタントが要件をより深く理解するのに役立ちます。
+**必要なものを記述してください：**
 
+- 「Web サイトの連絡先フォームを作成する」
+- 「評価尺度を含むカスタマーフィードバックフォームが必要です」
+- 「今後のイベントの登録フォームを作成する」
+- 「製品満足度に関する簡単な調査の作成」
 
-### クイックスタート
+**詳細を追加する：**
 
-紹介ビデオを視聴して、すぐに使い始めます。
+- 「名前、メール、電話、メッセージのフィールドを使用して連絡先フォームを作成する」
+- 「会議には複数のステップから成る登録フォームが必要です」
+- 「5 つ星の評価とコメントセクションを使用した顧客フィードバックフォームの作成」
 
->[!VIDEO](https://video.tv.adobe.com/v/3463164/)
+**既存のフィールドを参照：**
 
+- 「メールフィールドを必須にする」（@email）
+- 「電話番号フィールドに検証を追加」（@phoneNumber:）
+- 「既婚の場合にのみ配偶者の情報を表示する」（@spouseInfo および@maritalStatus）
 
-このビデオでは、すべての環境でのアシスタントの起動、基本的なインタラクション、その機能の概要について説明します。
+### あなたにもできること
 
-## AI アシスタントのコマンド リファレンス
+自然言語以外にも、AI アシスタントは以下の方法でやり取りすることができます。
 
-| コマンド | 説明 | 目的 | 使用コンテキスト | 例 | 主な機能 |
-|---------|-------------|---------|---------------|----------|--------------|
-| /create-form | Forms Management UI またはForms エディターで新しいフォームを開始する | 完全に新しいフォームの作成をゼロから開始します | Forms Management UI、アダプティブFormsエディター | /create-form 添付のPDFに基づくカスタマーフィードバック調査 | フォーム構造のオプションを提供し、フォームを作成します。 デザイン参照の **添付ファイルをサポート** |
-| /add-form | ユニバーサルエディターでの新しいフォームの追加 | ユニバーサルエディター内に新しいフォームブロックまたはコンポーネントを追加します | Edge Delivery Services用ユニバーサルエディター | /add-form 名前とメールアドレスを指定した連絡先フォーム | フォームブロックを挿入し、ブロックベースの編集を行います。 レイアウトガイダンス用 **添付ファイルをサポート** |
-| /update-layout | フォームのレイアウトをアコーディオン、タブベース、ウィザードまたは単一ページレスポンシブデザインに変更する | 全体的な構造レイアウトおよびナビゲーション パターンを修正します。 | すべての編集環境 | 3 つのステップを持つ/update-layout ウィザード | アコーディオン、タブ、ウィザード、単一ページレスポンシブオプション |
-| /update-field | 既存のフォームフィールドのプロパティと設定の変更 | ラベル、検証、書式設定、動作などのフィールド属性を変更します | すべての編集環境 | 検証では/update-field@email 必須です | ラベル、検証ルール、フィールドタイプ、デフォルト、表示。 フィールドデザインの例に使用できる **添付ファイルをサポート** |
-| /create-rule | フォームの動的動作と条件付きロジックの作成 | ビジネスロジック、計算、条件付きインタラクションを実装 | すべての編集環境 | /create-rule @maritalStatus が「既婚」に等しい場合に@spouseName を表示する | 条件付き表示、計算、検証、値設定 |
-| /create-panel | 新しいパネルを作成（関連するフィールドをグループ化するためのコンテナ） | 構造コンテナを追加して、フォームフィールドを論理的に整理します | すべての編集環境 | /create-panel 名前、電子メール、電話を使用した個人情報 | フィールドグループ、タイトル、レイアウトオプション、折りたたみ可能なセクション。 パネルレイアウト参照の **添付ファイルをサポート** |
-| /add-panel | ユニバーサルエディターのフォームパネルへの画像の変換 | アップロードされた画像を AI を使用して分析し、構造化されたフォームパネルに変換します | ユニバーサルエディター | アップロードされたフォーム画像から/add-panel | 画像認識、ビジュアルから機能への変換、レイアウトの保持。 画像解析用 **添付ファイルが必要** |
-| /configure-submit | フォーム送信アクションとデータ処理の設定 | ユーザーが入力済みフォームを送信したときの動作を定義します | すべての編集環境 | `support@company.com` にメールを送信する/configure-submit | メール，REST API, ワークフロー，スプレッドシート，データベース，Power Automate |
-| /help | AI アシスタント内のアクセス支援およびドキュメント | AEM Formsに関するコンテキストヘルプ、ガイダンス、回答を提供します。 | すべての編集環境 | /help 複数手順のフォームを作成するにはどうすればよいですか？ | 機能の説明、ガイド、ベストプラクティス、トラブルシューティング |
+- **ファイルのアップロード**：イメージ、PDF、Figma デザインを添付して、想定している AI を表示します
+- **クイックコマンドの使用**:`/` と入力すると、一般的なアクションに使用できるショートカットが表示されます
+- **参照固有のフィールド**:`@fieldName` を使用して、既存のフォームフィールド（`@firstName`、`@emailAddress` など）を変更します
 
-### コマンド カテゴリ
+## 作成できる内容：有効な例
 
-| カテゴリ | コマンド | プライマリのユースケース |
-|----------|----------|-------------------|
-| フォームの作成 | /create-form, /add-form | 新しいフォームの開始、フォームブロックの追加 |
-| 構造とレイアウト | /update-layout, /create-panel, /add-panel | フォーム構造の整理、ビジュアルデザイン |
-| フィールド管理 | /update-field | 個々のフォーム要素の設定 |
-| ロジックとルール | /create-rule | 動的な動作と検証の追加 |
-| 送信 | /configure-submit | データ処理とワークフローの設定 |
-| サポート | /help | お問い合わせとドキュメント |
+次に、シンプルな自然言語を使用して実行できる実際の例を示します。
 
-### 構文ガイドライン
+### 新しいフォームの開始
 
-| 要素 | 形式 | 例 | メモ |
-|---------|--------|---------|-------|
-| コマンド | /command-name | /create-form | 常にスラッシュで開始 |
-| フィールド参照 | @fieldName | @email, @firstName | 既存のフィールドに@記号を使用する |
-| 自然言語 | Command +説明 | /create-rule if 条件のフィールドを表示 | コマンドと説明テキストの組み合わせ |
-| 複数のアクション | 別のコマンド | /create-panel then /update-layout | 一度に 1 つのコマンドを適用 |
+**シンプルアプローチ：**
 
+```
+"Create a contact form"
+```
 
-### 環境固有の機能
+**より詳細なアプローチ：**
 
-| 環境 | 使用可能なコマンド | 特別な機能 |
-|-------------|-------------------|------------------|
-| Forms Management UI | /create-form, /help | フォームレベルの作成と管理 |
-| アダプティブFormsエディターとユニバーサルエディター | すべてのコマンド | フル機能セット、詳細構成 |
+```
+"Create a professional contact form for a law firm with fields for name, email, phone, case type, and message. Make it mobile-friendly."
+```
 
+**デザインリファレンスを使用：**
 
+```
+"Create a contact form based on the attached design mockup. Include all the fields shown in the layout."
+```
 
-### フィールドリファレンスの構文（コンテキスト要素）
+### フォーム要素の追加
+
+**基本追加：**
+
+```
+"Add a section for personal information"
+"Include a file upload for resume"
+"Add a dropdown for country selection"
+```
+
+**詳細仕様：**
+
+```
+"Add a personal information panel with fields for full name, date of birth, phone number, and email address"
+"Include a secure file upload component for documents, limited to PDF files under 5MB"
+"Add a country dropdown with options for USA, Canada, UK, and Germany"
+```
+
+### 動的動作の作成
+
+**シンプルなロジック：**
+
+```
+"Show additional fields when 'Other' is selected"
+"Make the email field required"
+"Calculate the total automatically"
+```
+
+**複雑なビジネス・ルール：**
+
+```
+"Show the spouse information fields only when marital status is set to 'Married'"
+"Calculate the total cost by multiplying quantity and price, then add 10% tax"
+"Enable the submit button only when all required fields are completed and terms are accepted"
+```
+
+### フォームのレイアウトとデザイン
+
+**レイアウトの変更：**
+
+```
+"Make this a multi-step form"
+"Organize fields in two columns"
+"Convert to an accordion layout"
+```
+
+**デザインの改良：**
+
+```
+"Create a wizard-style form with 3 steps: personal info, preferences, and review"
+"Arrange the address fields in a compact two-column layout"
+"Update the layout to match the attached wireframe"
+```
+
+### 送信と統合
+
+**基本送信：**
+
+```
+"Send form data to our email"
+"Save responses to a spreadsheet"
+"Redirect to a thank you page"
+```
+
+**高度な統合：**
+
+```
+"Send form submissions to hr@company.com and create a case in our CRM system"
+"Submit data to our REST API endpoint and trigger the new customer workflow"
+"Email responses to the sales team and add the lead to our marketing automation platform"
+```
+
+## 添付ファイルの操作
+
+AI が探しているものを正確に理解できるように、ファイルをアップロードします。
+
+### サポートされているファイルタイプ
+
+| ファイルタイプ | に最適 | 使用例 |
+|-----------|----------|-------------|
+| **画像** （PNG、JPG、GIF） | フォームレイアウト、UI モックアップ、紙のフォームスキャン | 「このレイアウトに一致するフォームを作成する」 |
+| **PDF ファイル** | 変換する既存のフォーム、仕様 | 「このPDF フォームをデジタルに変換する」 |
+| **Figma ファイル** | プロトタイプの設計、ブランドガイドライン | 「Figma デザインからこのフォームを作成」 |
+| **設計ファイル** | ビジュアル参照、スタイルガイド | 「このデザインのスタイル設定に合わせる」 |
+
+### 添付ファイルの使用方法
+
+1. AI アシスタント インターフェイスの **添付ファイルアイコンをクリック**
+2. デバイスから **ファイルを選択** します
+3. 添付ファイルを参照する **必要な内容を記述**:
+   - 「添付されたこのPDFに基づいてフォームを作成する」
+   - 「この画像のレイアウトに合わせて連絡先フォームを作成する」
+   - 「この紙の用紙をデジタル版に変換する」
+
+### 添付ファイルを使用したベストプラクティス
+
+- **クリアで高品質な画像を使用** して AI 解析を改善
+- **添付ファイルごとに 1 つの概念（レイアウト** スタイル設定など）に焦点を当てる
+- **望むものを添付ファイルと共に記述**
+- 最適な処理のために **ファイルを 10 MB 未満に保つ**
+
+## 最良の結果を得るためのヒント
+
+### シンプルな作業から開始し、構築する
+
+- 基本的なリクエストから開始する：「お問い合わせフォームを作成する」
+- 詳細を徐々に追加する：「メールフィールドに検証を追加します」
+- テストと調整：「電話フィールドをオプションにする」
+
+### 必要に応じて具体的に指定
+
+- 代わりに、「美しくする」
+- 試す：「プロのカラーとクリーンなタイポグラフィを使用する」
+
+### 自然言語を使用
+
+- 代わりに、「テキスト入力コンポーネントを追加」を使用します
+- 試す：「名のフィールドを追加」
+
+### 既存の要素の参照
+
+- 既存のフィールドに `@fieldName` を使用：「@email を必須にする」
+- フィールド名については、「@phoneNumber フィールドを更新」と明記してください。
+
+### 複雑なリクエストの分類
+
+- 大きなリクエストを 1 つするのではなく、小さなリクエストを複数試します
+- ステップごとにフォームを作成する
+- 次の変更に移動する前に各変更をテスト
+
+## 製品ヘルプとラーニング
+
+AI アシスタントから、AEM Formsの機能について学習することもできます。
+
+### 次のような質問をします。
+
+- 複数手順フォームを作成するにはどうすればよいですか？
+- 「パネルとセクションの違いは何ですか？」
+- 「メール通知を設定するにはどうすればよいですか？」
+- 「モバイル対応フォームのベストプラクティスは何ですか？」
+- 「フォームにテーマを適用するにはどうすればよいですか？」
+
+### ヘルプ情報：
+
+- AEM Formsの概念と用語
+- 複雑な機能の手順
+- ベストプラクティスと推奨事項
+- 一般的な問題のトラブルシューティング
+
+## 高度な機能リファレンス
+
+高度な機能を試してみたいユーザー向け：
+
+### クイックコマンド
+
+`/` と入力して、使用可能なショートカットを確認します：
+
+| コマンド | 目的 | 例 |
+|---------|---------|---------|
+| `/create-form` | 新しいフォームを開始 | `/create-form customer survey` |
+| `/add-form` | ユニバーサルエディターでのフォームの追加 | `/add-form contact form` |
+| `/update-layout` | フォーム構造の変更 | `/update-layout wizard with 3 steps` |
+| `/update-field` | フィールドプロパティの変更 | `/update-field @email to be required` |
+| `/create-rule` | 動的動作の追加 | `/create-rule show @spouse if married` |
+| `/create-panel` | フィールドコンテナの追加 | `/create-panel Personal Information` |
+| `/configure-submit` | フォーム送信の設定 | `/configure-submit to email support` |
+| `/help` | お問い合わせ | `/help multi-step forms` |
+
+### フィールドリファレンスの構文
 
 `@fieldName` を使用して既存のフィールドを参照します。
 
@@ -128,7 +294,7 @@ AI アシスタントは、現在の場所とタスクに基づいて機能を�
 
 ### コンポーネントタイプ
 
-このリストでは、一般的なコンポーネントタイプについて説明します。 AI は、バリエーションやより特殊なタイプを認識する場合がありますが、これらの正確な用語を使用すると最適な結果が得られます。
+最適な結果を得るには、次の用語を使用します。
 
 - `text input` - 1 行のテキストフィールド
 - `text area` – 複数行テキストフィールド
@@ -140,224 +306,42 @@ AI アシスタントは、現在の場所とタスクに基づいて機能を�
 - `file upload` - ファイル添付
 - `panel` - フィールドをグループ化するためのコンテナ
 
+## トラブルシューティング
 
-## コア機能と拡張されたプロンプトの例
+### よくある問題と解決策
 
-AI アシスタントは、幅広いコマンドを理解できます。 次に、その機能を示すいくつかの例を示します。 「パネル」、「テキスト入力」、「チェックボックス」などのコンポーネントに対して正確な用語を使用することを忘れないでください。
+**AI アシスタントが応答しません：**
 
-| 機能カテゴリ | 説明 | プロンプトの例 |
-| ------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **フォームの作成** | ゼロから、または説明に基づいて新しいフォームを開始します。 | `Create a new form titled 'Employee Onboarding'.` <br> `Generate a customer feedback form with fields for name, email, rating (1-5 stars), and comments.` <br> `Start a simple contact form with name, email, and message fields.` <br> `Design a multi-page registration form for an event.` <br> `Create a form based on the attached PDF template.` |
-| **読み込み設計** | 既存のデザイン（画像、Figma、PDF）をAEM フォームに変換する。 | `Import the form design from this uploaded PDF file.` <br> `Convert the uploaded Figma design into an adaptive form, focusing on the 'User Profile' frame.` <br> `Use this JPEG image of our old paper form to create a new digital version.` <br> `Create a form based on the layout of the attached PNG.` <br> `Recreate the form shown in the attached screenshot with modern styling.` |
-| **コンポーネントとパネルの追加** | 様々なフォームフィールドや構造コンテナ（パネル）を追加します。 | `Add a text input field for 'First Name'.` <br> `Add a 'Personal Details' panel with fields for full name, date of birth, and phone number.` <br> `Insert a checkbox group for 'Interests' with options: Technology, Sports, Music.` <br> `Add a file upload component for 'Resume'.` <br> `Create a repeatable panel named 'WorkExperience' with fields for company, title, and dates.` <br> `Add a panel matching the layout shown in the attached design mockup.` |
-| **レイアウトの調整** | フォームのレイアウトの構造と外観を変更します。 | `Change the 'Personal Details' panel to a two-column layout.` <br> `Set the overall form layout to a wizard (multi-step) navigation.` <br> `Make the header section span the full width of the form.` <br> `Adjust the spacing between fields in the 'Address' panel to be compact.` <br> `Align all field labels to the left.` <br> `Update the form layout to match the attached wireframe.` |
-| **ルールの作成とロジック** | 動的動作、計算および条件付き表示を実装します。 | `Make the 'Spouse Name' field visible only if 'Marital Status' is selected as 'Married'.` <br> `Calculate the 'Total Amount' by multiplying @quantity and @price.` <br> `Enable the submit button only when the @termsAndConditions checkbox is checked.` <br> `Set the value of @countryCode to '+1' if @country is 'United States'.` <br> `If @age is less than 18, show a message 'Must be 18 or older'.` |
-| **フィールドプロパティの更新** | ラベル、プレースホルダーなど、特定のフォームフィールドの属性を変更します。 | `Change the label of @email to 'Primary Email Address'.` <br> `Set the @comment field to be a multi-line text area.` <br> `Make the @phoneNumber field mandatory.` <br> `Add placeholder text 'Enter your ZIP code' to the @zipCode field.` <br> `Change the @country field to a dropdown and populate it with: USA, Canada, UK, Germany.` <br> `Update the help description for @password to 'Must include an uppercase letter, a number, and be at least 8 characters long.'` <br> `Set the maximum length of the @username field to 15 characters.` <br> `Configure the @dateOfBirth field to use a date picker.` <br> `Style the @email field to match the design shown in the attached image.` |
-| **送信アクション** | ユーザーがフォームを送信したときの動作を定義します。 | `Configure the form to submit data to the REST endpoint /api/v2/application-submit.` <br> `Set up an email submission to hr@example.com and sales@example.com on successful submission.` <br> `Trigger an AEM workflow named 'NewLeadProcessing' when this form is submitted.` <br> `On submit, redirect the user to a thank you page at /content/thankyou.html.` |
-| **テーマ設定** | 既存のAEM Forms テーマを適用して、フォームのスタイルを設定します。 | `Apply the 'Modern Business' theme to this form.` <br> `Switch to the 'Accessible Dark' theme.` <br> `Revert to the default canvas theme.` <br> `Apply styling that matches the brand guidelines shown in the attached style guide.` |
-| **ナビゲーションと構造** | ナビゲーション要素を追加するか、フォームの一部を再編成します。 | `Add a 'Next' button to the current panel and a 'Previous' button to the next panel.` <br> `Create a Table of Contents based on the form's panels.` <br> `Move the 'Address' panel to be before the 'Contact Information' panel.` |
-| **検証** | フィールドに特定の検証ルールを設定します。 | `Set a regex pattern for the @employeeID field to be 'EMP\d{5}'.` <br> `Ensure the @age field only accepts numeric values between 18 and 99.` <br> `Validate the @email field to ensure it is a valid email format.` |
-| **プランのレビュー** （ユニバーサルエディター） | 実行前に、アシスタントが提案した変更をプレビューします。 | `Add a contact form with fields for name, email, subject, and message.` （アシスタントが作成するコンポーネントとプロパティのプランを表示し、[ 適用 ] をクリックします）。<br> `Create a form based on the attached design file.` （アシスタントが添付ファイルを分析し、実装前に詳細な計画を表示します）。 |
+- インターネット接続の確認
+- サポート対象の環境にいることを確認する
+- AI アシスタント パネルを閉じて再度開きます
 
-## 最適な結果を得るためのベストプラクティス
+**予期しない結果：**
 
-AI アシスタントを最大限に活用するには、次のヒントに留意してください。
+- より具体的に要求を言い換えてみてください
+- 複雑なリクエストをより小さな手順に分割
+- 標準のAEM Forms用語の使用
 
-- **シンプルなビルドを増分的に開始：** 最初は複雑な複数ステップのリクエストではなく、小さく具体的なコマンド（「名」のテキスト入力を追加など）から始めます。
-- **AEM Formsの用語を使用：** アシスタントがより深く理解できるように、「パネル」、「テキスト入力フィールド」、「チェックボックスグループ」、「送信アクション」、「ルール」などの用語を使用します。
-- **フィールドを明確に参照：** 既存のフィールドを設定する場合は、`@fieldName` の表記（`Make @firstName mandatory` など）を使用します。
-- **計画のレビュー** 「適用」をクリックする前に、ユニバーサルエディターでアシスタントが提案した変更について、常に慎重に計画をレビューします。
-- **手動による検証：** アシスタントが変更を加えた後は、常にフォームをプレビューおよびテストして、動作が期待どおりに表示されることを確認します。 AI は強力なツールですが、最終的な検証が重要です。
-- **繰り返し処理と絞り込み：** 最初のプロンプトで正確な結果が得られない場合は、リクエストの言い換えまたは分割を小さなステップに分割してみてください。
-- **フィードバックの提供：** 組み込みのフィードバックメカニズムを使用して、アシスタントが学習および改善するのを支援します（「フィードバックとサポート」の節を参照）。
+**フィールド参照が機能しない：**
 
-## AI アシスタントの製品ヘルプ
+- チェックフィールド名は、表示されるとおりに正確に入力されます
+- 既存 `@fieldName` フィールドに構文を使用する
+- フィールドを参照する前に、そのフィールドが存在することを確認します
 
-AEM Forms用 AI アシスタントは、ビルドだけでなく、AEM Formsの様々な機能を学習、理解、使用するのにも役立ちます。
+**設計インポートの問題：**
 
-### サポートされるヘルプトピック
-
-アシスタントに次のような質問をすることができます。
-
-- 「アダプティブフォームをゼロから新規作成するにはどうすればよいですか？」
-- アダプティブFormsのパネルとは何ですか？また、どのように使用されますか？
-- 「テーマをフォームに適用する方法を説明する。」
-- 「フォームとパネルでサポートされているレイアウトタイプは何ですか？」
-- 「メールの送信など、様々な送信アクションを設定するにはどうすればよいですか？」
-- 「Figma デザインを使用してフォームを作成する方法を説明できますか？」
-- 「複数手順のフォームを作成する最善の方法は何ですか？」
-
-### ヘルプの要求方法：
-
-1. AI アシスタントをForms Management UI またはアダプティブFormsエディターで開きます。
-2. 自然言語で質問を入力します（例：「繰り返し可能なパネルを追加するには？」）。
-3. アシスタントは次のように応答します。
-   - 詳しい手順。
-   - AEM Formsの概念の説明。
-   - 関連する Adobe Experience League ドキュメントへのリンク（該当する場合）。
-
-### より良いヘルプを得るためのヒント：
-
-- **具体的：** 明確な質問を 1 つずつ尋ねます。
-- **キーワードを使用：** AEM Formsの機能または UI 要素に関連するキーワードを含みます（「アダプティブフォームエディター」、「ルールエディター」、「テーマ」など）。
-- **必要に応じてフレーズを変更：** アシスタントが必要な情報を理解できない、または提供できない場合は、質問を簡略化するか、別の用語を使用してみてください。
-
-
-## よくある問題のトラブルシューティング
-
-- **アシスタントが応答しません：**
-   - サポートされる環境（Forms管理 UI、アダプティブFormsエディター、ユニバーサルエディター）でアクティブに作業していることを確認します。
-   - インターネット接続を確認してください。
-   - [AI アシスタント ] パネルを閉じてから、もう一度開いてみてください。
-
-- **不正確または予期しない応答：**
-   - より具体的または単純にするために、リクエストのフレーズを変更します。
-   - 複雑なリクエストを小さな個々のコマンドに分類します。
-   - 標準のAEM Forms用語を使用していることを確認します。
-
-- **デザインの読み込み問題（PDF/Figma/Image）:**
-   - デザインファイルが明確で、適切に構造化され、読みやすいことを確認します。
-   - ファイル形式がサポートされていることを確認します（PDF、Figma リンク、一般的な画像タイプ（PNG、JPGなど）。
-   - Figma の場合、ターゲットにするフレームが明確に定義され、アクセス可能であることを確認します。
-
-- **フィールド `@fieldName` が認識されません：**
-   - フォーム内のフィールドの正確な名前を再度確認します。 フィールド名は大文字と小文字が区別され、正確に一致する必要があります。
-   - 変更しようとしている場合は、フィールドが既に存在することを確認します。
-
+- ファイルが明確かつ適切に構造化されていることを確認する
+- サポートされている形式（PDF、PNG、JPG、Figma）を使用する
+- ファイルサイズは 10 MB 未満にしてください
 
 ## フィードバックとサポート
 
-AI アシスタントの継続的な改善に役立つ情報をお寄せください。
+AI アシスタントの改善にご協力ください。
 
-- **フィードバックを提供：** AI アシスタントのインターフェイス内で組み込みの **[ フィードバックを提供 ] コマンドまたはボタン** を使用して、エクスペリエンスの共有、問題の報告、機能強化の提案を行います。 （例：`/feedback` と入力するか、フィードバックアイコンを探します）。
-- **公式サポート：** 重要な問題やその他のサポートについては、Adobeの公式サポートチャネルまたは組織の指定されたサポート連絡先からお問い合わせください。
+- **フィードバックを提供**:AI Assistant インターフェイスの [ フィードバック ] ボタンを使用します
+- **問題を報告**：公式チャネルからAdobe サポートにお問い合わせください
+- **エクスペリエンスを共有**：入力した内容は、すべてのユーザーにとってアシスタントをより良いものにするのに役立ちます
 
-
-
-## 添付ファイルの操作
-
-AI アシスタントは、フォームの作成および設定操作を拡張するために、添付ファイルをサポートします。 様々なファイルタイプを添付して、変換する視覚的なコンテキスト、デザイン参照、既存のフォームを提供できます。
-
-### サポートされる添付ファイルタイプ
-
-| ファイルタイプ | ユースケース | 添付ファイルをサポートするコマンド | 例 |
-|-----------|-----------|-----------------------------------|----------|
-| **画像** （PNG、JPG、JPEG、GIF） | フォームレイアウト参照、UI モックアップ、紙のフォームスキャン | /create-form, /add-form, /create-panel, /add-panel, /update-field | 目的のレイアウトのスクリーンショットをアップロード |
-| **PDF ファイル** | 変換する既存のフォーム、設計仕様 | /create-form, /add-form, /create-panel, /add-panel | PDF アプリケーションフォームの変換 |
-| **Figma ファイル** | システム参照、UI プロトタイプの設計 | /create-form, /add-form, /create-panel | Figma デザインフレームの読み込み |
-| **デザインファイル** （スケッチ、Adobe XDの書き出し） | ビジュアルデザインリファレンス | /create-form, /add-form, /create-panel | リファレンスデザインのシステムコンポーネント |
-
-### 添付ファイルの使用方法
-
-1. **コマンドの前またはコマンドを使用してアタッチ：**
-
-   - AI アシスタント インターフェイスの添付ファイルアイコンをクリックします
-   - デバイスからファイルを選択
-   - 添付ファイルを参照するコマンドを入力してください
-
-2. **コマンドの参照添付ファイル：**
-
-   ```
-   /create-form based on the attached PDF application form
-   /add-panel using the layout shown in the uploaded image
-   /create-panel following the design in the attached Figma file
-   /update-field @email to match the style in the attached screenshot
-   ```
-
-3. **複数の添付ファイル：**
-
-   - 比較や参照のために複数のファイルを添付できます
-   - 使用する添付ファイルを「最初に添付された画像を使用」または「PDF ファイルに基づく」から指定します
-
-### 添付のベストプラクティス
-
-- **クリアで高品質な画像：** アップロードした画像をクリアで読みやすくし、AI 分析を向上
-- **関連するファイル名：** AI がコンテキストを理解しやすくするために、わかりやすいファイル名を使用します
-- **単一のフォーカス：** 各添付ファイルは、1 つの特定の側面（レイアウト、フィールドデザインなど）にフォーカスする必要があります。
-- **サポートされている形式：** 互換性を最大限に高めるために、一般的な形式（PNG、JPG、PDF）にスティックします
-- **ファイルサイズ：** 最適な処理速度を実現するために、添付ファイルのサイズを 10 MB 未満に抑える
-
-### 添付ワークフローの例
-
-**用紙フォームの変換：**
-
-1. 用紙をはっきりとスキャンまたは写真に収める
-2. 画像ファイルのアップロード
-3. 次のコマンドを使用します：`/create-form based on the attached form image, converting all fields to digital equivalents`
-
-**デザインシステムのマッチング：**
-
-1. 関連するデザインコンポーネントの書き出しまたはスクリーンショット
-2. デザイン参照をアタッチする
-3. 次のコマンドを使用します：`/create-panel following the visual style and layout shown in the attached design`
-
-**フィールドのスタイル設定の参照：**
-
-1. 目的のフィールド表示のスクリーンショットを添付
-2. 次のコマンドを使用します：`/update-field @email to match the styling and layout shown in the attached image`
-
-## 関連するコンテンツ
+## 関連リソース
 
 [AEM Forms AI アシスタント – プロンプトライブラリ](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-
-## 添付ファイルの操作
-
-AI アシスタントは、フォームの作成および設定操作を拡張するために、添付ファイルをサポートします。 様々なファイルタイプを添付して、変換する視覚的なコンテキスト、デザイン参照、既存のフォームを提供できます。
-
-### サポートされる添付ファイルタイプ
-
-| ファイルタイプ | ユースケース | 添付ファイルをサポートするコマンド | 例 |
-|-----------|-----------|-----------------------------------|----------|
-| **画像** （PNG、JPG、JPEG、GIF） | フォームレイアウト参照、UI モックアップ、紙のフォームスキャン | /create-form, /add-form, /create-panel, /add-panel, /update-field | 目的のレイアウトのスクリーンショットをアップロード |
-| **PDF ファイル** | 変換する既存のフォーム、設計仕様 | /create-form, /add-form, /create-panel, /add-panel | PDF アプリケーションフォームの変換 |
-| **Figma ファイル** | システム参照、UI プロトタイプの設計 | /create-form, /add-form, /create-panel | Figma デザインフレームの読み込み |
-| **デザインファイル** （スケッチ、Adobe XDの書き出し） | ビジュアルデザインリファレンス | /create-form, /add-form, /create-panel | リファレンスデザインのシステムコンポーネント |
-
-### 添付ファイルの使用方法
-
-1. **コマンドの前またはコマンドを使用してアタッチ：**
-
-   - AI アシスタント インターフェイスの添付ファイルアイコンをクリックします
-   - デバイスからファイルを選択
-   - 添付ファイルを参照するコマンドを入力してください
-
-2. **コマンドの参照添付ファイル：**
-
-   ```
-   /create-form based on the attached PDF application form
-   /add-panel using the layout shown in the uploaded image
-   /create-panel following the design in the attached Figma file
-   /update-field @email to match the style in the attached screenshot
-   ```
-
-3. **複数の添付ファイル：**
-
-   - 比較や参照のために複数のファイルを添付できます
-   - 使用する添付ファイルを「最初に添付された画像を使用」または「PDF ファイルに基づく」から指定します
-
-### 添付のベストプラクティス
-
-- **クリアで高品質な画像：** アップロードした画像をクリアで読みやすくし、AI 分析を向上
-- **関連するファイル名：** AI がコンテキストを理解しやすくするために、わかりやすいファイル名を使用します
-- **単一のフォーカス：** 各添付ファイルは、1 つの特定の側面（レイアウト、フィールドデザインなど）にフォーカスする必要があります。
-- **サポートされている形式：** 互換性を最大限に高めるために、一般的な形式（PNG、JPG、PDF）にスティックします
-- **ファイルサイズ：** 最適な処理速度を実現するために、添付ファイルのサイズを 10 MB 未満に抑える
-
-### 添付ワークフローの例
-
-**用紙フォームの変換：**
-
-1. 用紙をはっきりとスキャンまたは写真に収める
-2. 画像ファイルのアップロード
-3. 次のコマンドを使用します：`/create-form based on the attached form image, converting all fields to digital equivalents`
-
-**デザインシステムのマッチング：**
-
-1. 関連するデザインコンポーネントの書き出しまたはスクリーンショット
-2. デザイン参照をアタッチする
-3. 次のコマンドを使用します：`/create-panel following the visual style and layout shown in the attached design`
-
-**フィールドのスタイル設定の参照：**
-
-1. 目的のフィールド表示のスクリーンショットを添付
-2. 次のコマンドを使用します：`/update-field @email to match the styling and layout shown in the attached image`
