@@ -4,10 +4,10 @@ description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: f595cb1030f49e3213b93cac897de9598060131d
+source-git-commit: aaa0d9c547af360aff4cabb2ce024b586a3870df
 workflow-type: tm+mt
-source-wordcount: '2912'
-ht-degree: 87%
+source-wordcount: '3028'
+ht-degree: 71%
 
 ---
 
@@ -18,20 +18,19 @@ ht-degree: 87%
 >title="AEM as a Cloud Service の廃止された機能と削除された機能"
 >abstract="AEM as a Cloud Service には、クラウドネイティブなデプロイメントモデルがあります。このタブには、クラウドネイティブな機能に置き換えられた機能がハイライト表示されます。"
 
-アドビでは、製品の機能を絶えず評価して、常に後方互換性を慎重に考慮しながら、古い機能を作り直したり、新たな機能に置き換えて、お客様にとっての全体的な価値を向上させます。[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] はクラウドネイティブのデプロイメントモデルを使用し、特定の機能をクラウドネイティブの対応する機能に置き換えます。
+Adobeでは、AEM as a Cloud Serviceのパフォーマンス、セキュリティ、全体的な価値に関する進化する標準を満たすように、API や設定などの機能を定期的にレビューしています。 これらの評価に基づいて、特定の機能が非推奨（廃止予定）としてマークされる場合があります。 可能であれば、Adobeが適切な代替手段を提供します。
 
-近い将来行われる [!DNL Experience Manager] 機能の削除や置換を通知するため、次のルールが適用されます。
+廃止が発表された場合、この機能は限られた期間のみ利用可能であり、お客様は指定された削除日より前にすべての使用を削除する必要があります。 Adobeは、スムーズな移行をサポートするための合理的な通知とガイダンスを提供します。
 
-1. まず、非推奨（廃止予定）の発表が行われます。 廃止される機能は引き続き使用できますが、それ以上改善されません。
-1. 廃止予定と発表された機能は、早ければ後続のメジャーリリースで削除されます。 削除の実際の目標日が通知されます。
+廃止期間中、Adobeでは、メール通知、アクションセンターのアラートまたはCloud Managerのリマインダーを通じて、機能の使用から移行するために必要なアクションを顧客に通知します。
 
-このプロセスにより、機能が実際に削除されるまでに、非推奨（廃止予定）の機能の新しいバージョンまたは後継機能にお客様が実装を合わせるためのリリースサイクルが少なくとも 1 回あります。
+>[!WARNING]
+>
+>新しいCloud Manager ビルドをデプロイする前やAEM as a Cloud Serviceの最新バージョンにアップグレードする前に、機能を削除する必要が生じる場合があります。
 
-## 廃止される機能 {#deprecated-features}
+## 非推奨（廃止予定）の機能 {#deprecated-features}
 
-ここでは、[!DNL Experience Manager] as a [!DNL Cloud Service] で廃止予定の機能について説明します。 通常、将来のリリースで削除される機能は、最初に非推奨（廃止予定）に設定されて代替の機能が提供されます。
-
-現在のデプロイメントでその機能を利用しているかどうかを確認し、提示される代替手段を使用するために実装の変更を計画するようにお勧めします。
+以下の表に示す機能は、非推奨として発表されていますが、まだ削除されていません。  削除予定日までに機能の使用を中止する必要があります。そうしないと、パフォーマンス、可用性、セキュリティに関連する問題が発生する可能性があります。
 
 | 機能 | 非推奨（廃止予定）の機能 | 代替手段 |
 | ------------ | ------------------ | ----------- |
@@ -54,7 +53,7 @@ ht-degree: 87%
 
 ## 削除された機能 {#removed-features}
 
-ここでは、[!DNL Experience Manager] as a [!DNL Cloud Service] の導入で [!DNL Experience Manager] から削除された機能の一覧を示します。
+この節では、削除された機能の一覧を示します。
 
 | 領域 | 機能 | 代替手段 | 削除予定日 |
 | ------------ | ------------------ | ----------- | ------------------- |
@@ -68,11 +67,11 @@ ht-degree: 87%
 | [!DNL Foundation] | Apache Felix Http Whiteboard のサポート | OSGi Http Whiteboard | 2022年3月 |
 | [!DNL Foundation] | com.adobe.granite.oauth.server のサポート | Adobe IMS 統合 | 2023年3月 |
 | [!DNL Foundation] | [サービスユーザー ID を取得](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-)するための org.apache.sling.serviceusermapping 機能のサポート | 該当なし | 2024年8月30日（PT） |
+| [!DNL Foundation] | Java 11 ランタイムは非推奨（廃止予定）で、Adobeが Java 21 ランタイムに置き換わりました。 コードが Java 11 でビルドされたままでも構いません（他に Java 17 と 21 もあります） | Java 21 ランタイムが適用されます。 互換性を確保するには、[ ランタイム要件 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) に示すように、ライブラリバージョンを更新することが不可欠です。 | 3 月 5 日/29/25 |
 
+## 非推奨（廃止予定）の API {#aem-apis}
 
-## AEM API {#aem-apis}
-
-非推奨（廃止予定）の AEM API とそれらの削除予定日の一覧を以下に示します。 お客様は、削除予定日までに、これらの API をコードから削除する必要があります。 該当する API を削除日以降に使用すると、ローカル SDK／開発環境および Cloud Manager ビルドプロセスでエラーが発生する場合があります。
+以下の表の API （クリックして展開して確認）は、非推奨と発表されましたが、まだ削除されていません。  これらの API の使用は、削除予定日までに中止する必要があります。さもないと、パフォーマンス、可用性、セキュリティに関連するリスクが生じます。 一部の API については、以下の API 削除ガイダンスの節を参照しています。
 
 <details>
   <summary>展開して、非推奨（廃止予定）の API のリストを確認します。</summary>
@@ -91,47 +90,17 @@ ht-degree: 87%
     <td>8/31/2025</td>
   </tr>
   <tr>
-    <td>org.apache.sling.runmode</td>
-    <td></td>
-    <td>2015</td>
-    <td>7/30/2021</td>
-  </tr>
-  <tr>
-    <td>org.json</td>
-    <td><a href="https://johnzon.apache.org/index.html">javax.json</a> の Apache Johnzon 実装の使用をお勧めします。 </td>
-    <td>4/30/2021</td>
-    <td>12/31/2021</td>
-  </tr>
-  <tr>
-    <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 はメンテナンスモードになっています。 Commons Lang 3 を代わりに使用してください。 <a href="#apache.commons">以下の削除に関するメモを参照してください。</a></td>
-    <td>4/30/2021</td>
-    <td>12/31/2021</td>
-  </tr>
-  <tr>
-    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 はメンテナンスモードになっています。 Commons Collections 4 を代わりに使用してください。 <a href="#apache.commons">以下の削除に関するメモを参照してください。</a></td>
-    <td>4/30/2021</td>
-    <td>12/31/2021</td>
-  </tr>
-  <tr>
-    <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
-    <td>Felix web コンソールはクラウド環境ではサポートされていません。 <a href="#org.apache.felix.webconsole">以下の削除に関するメモを参照してください。</a></td>
-    <td>4/30/2021</td>
-    <td>8/31/2025</td>
-  </tr>
-  <tr>
 <td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>
     <td>Eclipse Jetty パッケージと Felix Http Jetty パッケージはサポートされなくなりました。 <a href="#org.eclipse.jetty">以下の削除に関するメモを参照してください。</a></td>
     <td>5/27/2021</td>
     <td>8/31/2025</td>
   </tr>
-  <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
+ <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
     <td>この API の使用は、AEM as a Cloud Service ではサポートされていません。 <a href="#com.mongodb">以下の削除に関するメモを参照してください。</a></td>
     <td>5/27/2021</td>
     <td>8/31/2025</td>
   </tr>
-  <tr>
+   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
     <td>Apache Abdera が 2017年以降廃止されたプロジェクトなので、この API は廃止されました。 <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">以下の削除に関するメモを参照してください。</a></td>
     <td>7/29/2021</td>
@@ -173,17 +142,7 @@ ht-degree: 87%
     <td>2022年1月27日（PT）</td>
     <td>8/31/2025</td>
   </tr>
-  <tr>
-    <td>com.day.cq.contentsync.handler.util</td>
-    <td>この API は非推奨（廃止予定）です。代わりに、Apache Sling のビルダーを使用します。</td>
-    <td>2022/10/31</td>
-    <td>2023年1月1日（PT）</td>
-  </tr>
-  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
-    <td>AEM as a Cloud Service は、この API をサポートしていません。</td>
-    <td>2023/05/15</td>
-    <td>2023/06/15</td>
-  </tr><td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
+  <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
     <td>Google Guava コアライブラリは非推奨です。</td>
     <td>2023/05/15</td>
     <td>8/31/2025</td>
@@ -193,20 +152,8 @@ ht-degree: 87%
     <td>AEM as a Cloud Serviceは、この内部 slf4j API をサポートしていません。 <a href="#org.slf4j">以下の削除に関するメモを参照してください。</a></td>
     <td>2022/4/11</td>
     <td>8/31/2025</td>
-  </tr>
-  <tr>
-    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
-    <td>代わりに、org.apache.sling.xss を使用します。</td>
-    <td>2023年12月12日（PT）</td>
-    <td>2024年6月30日（PT）</td>
-  </tr>
-  <tr>
-    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
-    <td>代わりに、org.apache.sling.xss を使用します。</td>
-    <td>2023年12月12日（PT）</td>
-    <td>2024年6月30日（PT）</td>
-  </tr>
-  <tr>
+  </tr> 
+    <tr>
     <td>com.drew.*</td>
     <td>画像やビデオからのメタデータの抽出には、Cloud Service の Asset Compute、Apache POI または Apache Tika を使用する必要があります。</td>
     <td>2024年9月17日（PT）</td>
@@ -225,16 +172,70 @@ ht-degree: 87%
     <td>8/31/2025</td>
   </tr>
   <tr>
-    <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
+<td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
+    <td>Felix web コンソールはクラウド環境ではサポートされていません。 <a href="#org.apache.felix.webconsole">以下の削除に関するメモを参照してください。</a></td>
+    <td>4/30/2021</td>
+    <td>8/31/2025</td>
+  </tr>
+<td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>この API の使用は、AEM as a Cloud Service ではサポートされていません。</td>
     <td>2022/10/31</td>
     <td>8/31/2025</td>
+  </tr>  
+  <tr>
+    <td>org.apache.sling.runmode</td>
+    <td></td>
+    <td>2015</td>
+    <td>未定</td>
   </tr>
-</tbody>
+  <tr>
+    <td>org.json</td>
+    <td><a href="https://johnzon.apache.org/index.html">javax.json</a> の Apache Johnzon 実装の使用をお勧めします。 </td>
+    <td>4/30/2021</td>
+    <td>未定</td>
+  </tr>
+  <tr>
+<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
+    <td>Commons Lang 2 はメンテナンスモードになっています。 Commons Lang 3 を代わりに使用してください。 <a href="#apache.commons">以下の削除に関するメモを参照してください。</a></td>
+    <td>4/30/2021</td>
+    <td>未定</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
+    <td>Commons Collections 3 はメンテナンスモードになっています。 Commons Collections 4 を代わりに使用してください。 <a href="#apache.commons">以下の削除に関するメモを参照してください。</a></td>
+    <td>4/30/2021</td>
+    <td>未定</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.contentsync.handler.util</td>
+    <td>この API は非推奨（廃止予定）です。代わりに、Apache Sling のビルダーを使用します。</td>
+    <td>2022/10/31</td>
+    <td>未定</td>
+  </tr>
+  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
+    <td>AEM as a Cloud Service は、この API をサポートしていません。</td>
+    <td>2023/05/15</td>
+    <td>未定</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
+    <td>代わりに、org.apache.sling.xss を使用します。</td>
+    <td>2023年12月12日（PT）</td>
+    <td>未定</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
+    <td>代わりに、org.apache.sling.xss を使用します。</td>
+    <td>2023年12月12日（PT）</td>
+    <td>未定</td>
+  </tr>
+  </tbody>
 </table>
 </details>
 
-削除された AEM API の広範なリストを次に示します。
+## 削除された API {#removed-apis}
+
+この節では、非推奨（廃止予定）および削除された API を一覧表示します。 一部の API については、以下の API 削除ガイダンスの節を参照しています。
 
 <details>
   <summary>展開して、削除された API のリストを表示します。</summary>
@@ -314,6 +315,10 @@ ht-degree: 87%
 </tbody>
 </table>
 </details>
+
+## API 削除ガイダンス {#api-removal-guidance}
+
+この節では、上記の表に示した様々な API の API 削除ガイダンスを反映しています。
 
 ### `org.apache.sling.commons.auth*` の削除 {#org.apache.sling.commons.auth}
 
@@ -412,7 +417,7 @@ Cloud Serviceではログバックはサポートされていません。ログ�
 
 ## OSGi 設定 {#osgi-configuration}
 
-次の 2 つのリストは、AEM as a Cloud Service の OSGi 設定サーフェスを反映しており、顧客が設定できる内容を示しています。
+以下の節では、AEM as a Cloud Serviceの OSGi 設定サーフェスを反映し、お客様が設定できる内容を説明します。
 
 1. 顧客コードでは、リストされた OSGi 設定を行わないでください。
 1. プロパティを設定できるが、示されている検証ルールに従う必要がある OSGi 設定のリスト。 これらのルールには、プロパティの宣言が必須かどうか、プロパティの型、場合によっては許容される値の範囲が許可されます。
@@ -423,212 +428,115 @@ Cloud Serviceではログバックはサポートされていません。ログ�
 
 OSGI 設定に関する追加情報は、[この場所](/help/implementing/deploying/configuring-osgi.md)にあります。
 
-+++変更できない OSGi 設定。
+### 非推奨（廃止予定）の OSGi プロパティ（変更できなくなります） {#deprecated-osgi-properties}
 
-* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`**（発表日：4/30/2021、施行日：7/31/2021）
-* **`com.day.cq.auth.impl.cug.CugSupportImpl`**（発表日：4/30/2021、施行日：7/31/2021）
-* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`**（発表日：4/30/2021、施行日：7/31/2021）
-* **`org.apache.felix.http (Factory)`**（発表日：4/30/2021、施行日：7/31/2021）
-* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`**（発表日：8/25/2021、施行日：11/26/2021）
-+++
+次の OSGi コンポーネント PID の一部のプロパティは、変更できなくなりました。 これは、以下に説明する期間内に適用されます。
 
-+++ビルド検証ルールの対象となる OSGi 設定。
+| **OSGI コンポーネント ID** | **変更不能プロパティ** | **廃止** | **実施** |
+|---|---|---|---|
+| **`org.apache.sling.commons.log.LogManager`** | すべて | 4/24/25 | 2025/8/31 （設定は 6 月には無視されます） |
+| **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern | 4/24/25 | 2025/8/31 （設定は 6 月には無視されます） |
+| **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** | すべて | 2024 | 8/31/25 |
+| **`com.day.cq.auth.impl.cug.CugSupportImpl`** | すべて | 2024 |
+| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | すべて | 2024 | 8/31/25 |
+| **`org.apache.felix.http (Factory)`** | すべて | 2024 | 8/31/25 |
+| **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | すべて | 2024 | 8/31/25 |
+| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | すべて | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | すべて | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.feature.apiregions.impl`** | すべて | 6/3/25 | 8/31/25 |
+| **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | すべて | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | すべて | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | すべて | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | すべて | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | すべて | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | すべて | 6/3/25 | 8/31/25 |
+| **`org.apache.http.proxyconfigurator`** | すべて | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.feature.apiregions.factory`** | すべて | 6/3/25 | 8/31/25 |
+| **`com.adobe.granite.toggle.monitor.systemproperty`** | すべて | 6/3/25 | 8/31/25 |
 
-* **`org.apache.felix.eventadmin.impl.EventAdmin`**（発表日：4/30/2021、施行日：7/31/2021）
-* `org.apache.felix.eventadmin.ThreadPoolSize`
-   * 型：integer
-   * 要求範囲：2 ～ 100
-* `org.apache.felix.eventadmin.AsyncToSyncThreadRatio`
-   * 型：double
-* `org.apache.felix.eventadmin.Timeout`
-   * 型：integer
-* `org.apache.felix.eventadmin.RequireTopic`
-   * 型：boolean
-* `org.apache.felix.eventadmin.IgnoreTimeout`
-   * 必須
-   * 型：文字列の配列
-   * 要求範囲：少なくとも `org.apache.felix*`、`org.apache.sling*`、`come.day*`、`com.adobe*` をすべてを含める必要があります。
-* `org.apache.felix.eventadmin.IgnoreTopic`
-   * 型：文字列の配列
-* **`org.apache.felix.http`**（発表日：4/30/2021、施行日：7/31/2021）
-   * `org.apache.felix.http.timeout`
-      * 型：integer
-   * `org.apache.felix.http.session.timeout`
-      * 型：integer
-   * `org.apache.felix.http.jetty.threadpool.max`
-      * 型：integer
-   * `org.apache.felix.http.jetty.headerBufferSize`
-      * 型：integer
-   * `org.apache.felix.http.jetty.requestBufferSize`
-      * 型：integer
-   * `org.apache.felix.http.jetty.responseBufferSize`
-      * 型：integer
-   * `org.apache.felix.http.jetty.maxFormSize`
-      * 型：integer
-   * `org.apache.felix.https.jetty.session.cookie.httpOnly`
-      * 型：boolean
-   * `org.apache.felix.https.jetty.session.cookie.secure`
-      * 型：boolean
-   * `org.eclipse.jetty.servlet.SessionIdPathParameterName`
-      * 型：string
-   * `org.eclipse.jetty.servlet.CheckingRemoteSessionIdEncoding`
-      * 型：boolean
-   * `org.eclipse.jetty.servlet.SessionCookie`
-      * 型：string
-   * `org.eclipse.jetty.servlet.SessionDomain`
-      * 型：string
-   * `org.eclipse.jetty.servlet.SessionPath`
-      * 型：string
-   * `org.eclipse.jetty.servlet.MaxAge`
-      * 型：integer
-   * `org.eclipse.jetty.servlet.SessionScavengingInterval`
-      * 型：integer
-   * `org.apache.felix.jetty.gziphandler.enable`
-      * 型：boolean
-   * `org.apache.felix.jetty.gzip.minGzipSize`
-      * 型：integer
-   * `org.apache.felix.jetty.gzip.compressionLevel`
-      * 型：integer
-   * `org.apache.felix.jetty.gzip.inflateBufferSize`
-      * 型：integer
-   * `org.apache.felix.jetty.gzip.syncFlush`
-      * 型：boolean
-   * `org.apache.felix.jetty.gzip.excludedUserAgents`
-      * 型：string
-   * `org.apache.felix.jetty.gzip.includedMethods`
-      * 型：文字列の配列
-   * `org.apache.felix.jetty.gzip.excludedMethods`
-      * 型：文字列の配列
-   * `org.apache.felix.jetty.gzip.includedPaths`
-      * 型：文字列の配列
-   * `org.apache.felix.jetty.gzip.excludedPaths`
-      * 型：文字列の配列
-   * `org.apache.felix.jetty.gzip.includedMimeTypes`
-      * 型：文字列の配列
-   * `org.apache.felix.jetty.gzip.excludedMimeTypes`
-      * 型：文字列の配列
-   * `org.apache.felix.http.session.invalidate`
-      * 型：boolean
-   * `org.apache.felix.http.session.container.attribute`
-      * 型：文字列の配列
-   * `org.apache.felix.http.session.uniqueid`
-      * 型：boolean
-* **`org.apache.sling.scripting.cache`**（発表日：4/30/2021、施行日：7/31/2021）
-   * `org.apache.sling.scripting.cache.size`
-      * 型：integer
-      * 要求範囲：>= 2048
-   * `org.apache.sling.scripting.cache.additional_extensions`
-      * 必須
-      * 型：文字列の配列
-      * 要求範囲：js を含める必要があります
-* **`com.day.cq.mailer.DefaultMailService`**（発表日：4/30/2021、施行日：7/31/2021）
-   * `smtp.host`
-      * 型：string
-   * `smtp.port`
-      * 型：integer
-      * 要求範囲：465、587、25 のいずれか
-   * `smtp.user`
-      * 型：string
-   * `smtp.password`
-      * 型：string
-   * `from.address`
-      * 型：string
-   * `smtp.ssl`
-      * 型：string
-   * `smtp.starttls`
-      * 型：boolean
-   * `smtp.requiretls`
-      * 型：boolean
-   * `debug.email`
-      * 型：boolean
-   * `oauth.flow`
-      * 型：boolean
-* **`org.apache.sling.commons.log.LogManager.factory.config`**（発表日：21/11/16、施行日：21/2/16）
-   * `org.apache.sling.commons.log.level`
-      * タイプ：列挙
-      * 必須範囲：情報、デバッグ、TRACE
-   * `org.apache.sling.commons.log.names`
-      * 型：string
-   * `org.apache.sling.commons.log.file`
-      * 型：string
-   * `org.apache.sling.commons.log.additiv`
-      * 型：boolean
-+++
+<!--
+### Unmodifiable OSGi properties {#unmodifiable-osgi-properties}
+
+Properties for the following OSGi component PIDs cannot be modified, as described below.
+-->
+
+### OSGi プロパティの制限 {#restrictions-osgi-properties}
+
+一部の OSGi プロパティの値は、以下に説明するルールに制限されています。
+
+| OSGi コンポーネントの PID |   | 必須 | タイプ | 制限（該当する場合） |
+|---|---|---|---|---|
+| `org.apache.felix.eventadmin.impl.EventAdmin` | `org.apache.felix.eventadmin.ThreadPoolSize` | はい | 整数 | 2-100 |
+|   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | 二重線 | -- |
+|   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | 整数 | -- |
+|   | `org.apache.felix.eventadmin.RequireTopic` |   | ブール値 | -- |
+|   | `org.apache.felix.eventadmin.IgnoreTimeout` | はい | 文字列の配列 | `org.apache.felix*`、`org.apache.sling*`、`come.day*`、`com.adobe*` を少なくともすべて含める必要があります |
+|   | `org.apache.felix.eventadmin.IgnoreTopic` |   | 文字列の配列 | -- |
+| `org.apache.felix.http` | `org.apache.felix.http.timeout` |   | 整数 |   |
+|   | `org.apache.felix.http.session.timeout` |   | 整数 |   |
+|   | `org.apache.felix.http.jetty.threadpool.max` |   | 整数 |   |
+|   | `org.apache.felix.http.jetty.headerBufferSize` |   | 整数 |   |
+|   | `org.apache.felix.http.jetty.requestBufferSize` |   | 整数 |   |
+|   | `org.apache.felix.http.jetty.responseBufferSize` |   | 整数 |   |
+|   | `org.apache.felix.http.jetty.maxFormSize` |   | 整数 |   |
+|   | `org.apache.felix.https.jetty.session.cookie.httpOnly` |   | ブール値 |   |
+|   | `org.apache.felix.https.jetty.session.cookie.secure` |   | ブール値 |   |
+|   | `org.eclipse.jetty.servlet.SessionIdPathParameterName` |   | 文字列 |   |
+|   | `org.eclipse.jetty.servlet.CheckingRemoteSessionIdEncoding` |   | ブール値 |   |
+|   | `org.eclipse.jetty.servlet.SessionCookie` |   | 文字列 |   |
+|   | `org.eclipse.jetty.servlet.SessionDomain` |   | 文字列 |   |
+|   | `org.eclipse.jetty.servlet.SessionPath` |   | 文字列 |   |
+|   | `org.eclipse.jetty.servlet.MaxAge` |   | 整数 |   |
+|   | `org.eclipse.jetty.servlet.SessionScavengingInterval` |   | 整数 |   |
+|   | `org.apache.felix.jetty.gziphandler.enable` |   | ブール値 |   |
+|   | `org.apache.felix.jetty.gzip.minGzipSize` |   | 整数 |   |
+|   | `org.apache.felix.jetty.gzip.compressionLevel` |   | 整数 |   |
+|   | `org.apache.felix.jetty.gzip.inflateBufferSize` |   | 整数 |   |
+|   | `org.apache.felix.jetty.gzip.syncFlush` |   | ブール値 |   |
+|   | `org.apache.felix.jetty.gzip.excludedUserAgents` |   | 文字列 |   |
+|   | `org.apache.felix.jetty.gzip.includedMethods` |   | 文字列の配列 |   |
+|   | `org.apache.felix.jetty.gzip.excludedMethods` |   | 文字列の配列 |   |
+|   | `org.apache.felix.jetty.gzip.includedPaths` |   | 文字列の配列 |   |
+|   | `org.apache.felix.jetty.gzip.excludedPaths` |   | 文字列の配列 |   |
+|   | `org.apache.felix.jetty.gzip.includedMimeTypes` |   | 文字列の配列 |   |
+|   | `org.apache.felix.http.session.invalidate` |   | ブール値 |   |
+|   | `org.apache.felix.http.session.container.attribute` |   | 文字列の配列 |   |
+|   | `org.apache.felix.http.session.uniqueid` |   | ブール値 |   |
+| `org.apache.sling.scripting.cache` | `org.apache.sling.scripting.cache.size` | はい | 整数 | >= 2048 |
+|   | `org.apache.sling.scripting.cache.additional_extensions` | はい | 文字列の配列 | 「js」を含める必要があります |
+| `com.day.cq.mailer.DefaultMailService` | `smtp.host` |   | 文字列 |   |
+|   | `smtp.port` | はい | 整数 | 「465」、「587」または「25」のいずれか |
+|   | `smtp.user` |   | 文字列 |   |
+|   | `smtp.password` |   | 文字列 |   |
+|   | `from.address` |   | 文字列 |   |
+|   | `smtp.ssl` |   | 文字列 |   |
+|   | `smtp.starttls` |   | ブール値 |   |
+|   | `smtp.requiretls` |   | ブール値 |   |
+|   | `debug.email` |   | ブール値 |   |
+|   | `oauth.flow` |   | ブール値 |   |
+| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | はい | 文字列 | 「情報」、「デバッグ」、「TRACE」のいずれかです |
+|   | `org.apache.sling.commons.log.names` |   | 文字列の配列 |   |
+|   | `org.apache.sling.commons.log.additiv` |   | ブール値 |   |
+| `org.apache.sling.engine.impl.log.RequestLogger` | `request.log.output` | いいえ | 文字列 |   |
+|   | `request.log.outputtype` | いいえ | 文字列 |   |
+|   | `request.log.entry.format` | いいえ | 文字列 |   |
+|   | `request.log.exit.format` | いいえ | 文字列 |   |
+|   | `request.log.enabled` | いいえ | 文字列 |   |
+|   | `access.log.output` | いいえ | 文字列 |   |
+|   | `access.log.outputtype` | いいえ | 文字列 |   |
+|   | `access.log.enabled` | いいえ | 文字列 |   |
+| `org.apache.sling.servlets.resolver.SlingServletResolver` | `servletresolver.servletRoot` | いいえ | 文字列 |   |
+|   | `servletresolver.cacheSize` | いいえ | 整数 |   |
+|   | `servletresolver.paths` | いいえ | 文字列[] |   |
+|   | `servletresolver.defaultExtensions` | いいえ | 文字列 |   |
+|   | `servletresolver.mountProviders` | いいえ | ブール値 |   |
+|   | `servletresolver.scriptUser` | いいえ | 文字列 | 非推奨（廃止予定）、使用しない |
+| `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | いいえ | 文字列[] |   |
+|   | `externalizer.encodedpath` | いいえ | ブール値 |   |
+|   | `externalizer.host` | いいえ | 文字列 |   |
+|   | `externalizer.contextpath` | いいえ | 文字列 |   |
 
 ## Java ランタイムのバージョン 21 へのアップデート {#java-runtime-update-21}
 
-Adobe Experience Manager as a Cloud Service は、Java 21 ランタイムに移行しています。互換性を確保するには、[ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)の説明に従って、ライブラリバージョンをアップデートすることが不可欠です。
+Adobe Experience Manager as a Cloud Serviceは Java 21 ランタイムに移行しました。 互換性を確保するには、[ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)の説明に従って、ライブラリバージョンをアップデートすることが不可欠です。
 
-<!-- (OLD Removed from here to end of topic 1/16/25 as per instruction in https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3359689801) AEM as a Cloud Service will be moving to Java 21 runtime. In order to ensure compatibility, it is essential to make the following adjustments:
-
-### Runtime Requirements
-
-These adjustments are required to ensure compatibility with the Java 21 runtime. The libraries can be updated at any time as they are compatible with older versions of Java.
-
-#### Minimum version of org.objectweb.asm {#org.objectweb.asm}
-
-Update the usage of org.objectweb.asm to version 9.5 or higher to ensure support for newer JVM runtimes.
-
-#### Minimum version of org.apache.groovy {#org.apache.groovy}
-
-Update the usage of org.apache.groovy to version 4.0.22 or higher to ensure support for newer JVM runtimes.
-
-This bundle can be indirectly included by adding third party dependencies such as the AEM Groovy Console.
-
-### Build-time Requirements
-
-These adjustments are required to allow building the project with newer versions of Java but not required for runtime compatibility. The Maven plug-ins can be updated at any time as they are compatible with older versions of Java.
-
-#### Minimum version of bnd-maven-plugin {#bnd-maven-plugin}
-
-Update the usage of bnd-maven-plugin to version 6.4.0 to ensure support for newer JVM runtimes. Versions 7 or higher are not compatible with Java 11 or lower so an upgrade to that version is not recommended at this time.
-
-#### Minimum version of aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
-
-Update the usage of aemanalyser-maven-plugin to version 1.6.6 or higher to ensure support for newer JVM runtimes.
-
-#### Minimum version of maven-bundle-plugin  {#maven-bundle-plugin}
-
-Update the usage of maven-bundle-plugin to version 5.1.5 or higher to ensure support for newer JVM runtimes.
-
-#### Update dependencies in maven-scr-plugin  {#maven-scr-plugin}
-
-The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, it is possible to generate the descriptor files by updating the ASM dependency version within the plugin configuration, similar to the snippet below:
-
-```
-[source,xml]
- <project>
-   ...
-   <build>
-     ...
-     <plugins>
-       ...
-       <plugin>
-         <groupId>org.apache.felix</groupId>
-         <artifactId>maven-scr-plugin</artifactId>
-         <version>1.26.4</version>
-         <executions>
-           <execution>
-             <id>generate-scr-scrdescriptor</id>
-             <goals>
-               <goal>scr</goal>
-             </goals>
-           </execution>
-         </executions>
-         <dependencies>
-           <dependency>
-             <groupId>org.ow2.asm</groupId>
-             <artifactId>asm-analysis</artifactId>
-             <version>9.7.1</version>
-             <scope>compile</scope>
-           </dependency>
-         </dependencies>
-       </plugin>
-       ...
-     </plugins>
-     ...
-   </build>
-   ...
- </project>
-```
--->
