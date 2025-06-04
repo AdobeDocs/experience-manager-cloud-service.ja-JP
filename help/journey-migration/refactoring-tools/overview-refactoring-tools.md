@@ -1,28 +1,29 @@
 ---
 title: リファクタリングツールの概要
 description: AEM リファクタリングツールの基本を学ぶ
-exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: fa65b489d54d5333811145a1875a8f6fc89317bc
+source-git-commit: a77dfef8dce9f4ed549135087f7b63f6d46a4ea1
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 2%
+source-wordcount: '338'
+ht-degree: 1%
 
 ---
 
 
+<!-- Alexandru: temporarily commeting this out, since it breaks validation
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_overview"
->title="概要"
->abstract="リファクタリングツールは、Adobeが開発したソリューションで、AEM as a Cloud Serviceとの互換性を保つために既存のAEM プロジェクトをリファクタリングするのに役立ちます。 これらのツールは、Cloud Acceleration Manager（CAM）を使用して実行され、主要な最新化タスクを自動化します。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja" text="ガイドラインとベストプラクティス"
+>title="Overview"
+>abstract="Refactoring Tools is a solution developed by Adobe to help refactor existing AEM projects for compatibility with AEM as a Cloud Service. The tools are executed via Cloud Acceleration Manager (CAM) and automate key modernization tasks."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Guidelines and Best Practices"
 
-# リファクタリングツールの概要 {#getting-started-refactoring-tools}
+-->
+
+# リファクタリングツールの概要 {#refactoring-tools-overview}
 
 **リファクタリングツール** は、**AEM as a Cloud Service（AEMaaCS）** と互換性を持たせるために、既存のAEM プロジェクトを更新するプロセスを合理化します。 これらのツールは、一般的なリファクタリングおよび最新化タスクを自動化し、**Cloud Acceleration Manager（CAM）** と統合して、シームレスなエクスペリエンスを実現します。
 
 以前は CLI ユーティリティとしてのみ利用可能だったリファクタリングツールは、自動化された検査、設定の生成、ジョブの実行などの機能を備えた統合インターフェイスを提供するようになり、手動のオーバーヘッドを削減し、可視性を向上させます。
-
-&#x200B;---
 
 ## 検査ワークフロー {#inspection-workflow}
 
@@ -34,8 +35,6 @@ ht-degree: 2%
 * **設定の生成** - ツールは、アップロードされたソースコードを検査し、必要な設定を生成します。
 * **ペイロード送信** – これらの設定は、選択したツールに直接渡されて実行されます。
 
-&#x200B;---
-
 ## 使用可能なリファクタリングツール
 
 ### リポジトリモダナイザー {#repo-modernizer}
@@ -45,8 +44,6 @@ ht-degree: 2%
 ### コード変換サービス {#code-transformer}
 
 **コードトランスフォーマー** は、インテリジェントパターン認識と AI 駆動の分析を使用して、AEMaaCS と互換性のないコードセグメントを検出および更新します。 このツールにより、移行作業が簡素化され、手動でのコード変更が減ります。
-
-&#x200B;---
 
 ## リファクタリングのワークフローフェーズ {#phases-in-refactoring-tools}
 
@@ -59,8 +56,6 @@ ht-degree: 2%
 
 >[!NOTE]
 >検査プロセス中は、別のプロジェクトのアップロードは許可されません。
-
-&#x200B;---
 
 ### フェーズ 2：リファクタリングジョブのトリガー
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
+source-git-commit: 4b5d2213750ea1b96f7315a8b8b426a97b3041f3
 workflow-type: tm+mt
-source-wordcount: '6208'
+source-wordcount: '6211'
 ht-degree: 98%
 
 ---
@@ -340,6 +340,7 @@ ht-degree: 98%
             + [ユーザーマッピングツールの使用](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + コードリファクタリングツール {#refactoring-tools}
       + [リファクタリングツールの概要](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
+      + [リファクタリングツールの概要](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
       + [Unified Experience](/help/journey-migration/unified-experience.md)
       + [Repository Modernizer](/help/journey-migration/refactoring-tools/repo-modernizer.md)
       + [Repository Modernizer （CAM）](/help/journey-migration/refactoring-tools/repo-modernizer-cam.md)
