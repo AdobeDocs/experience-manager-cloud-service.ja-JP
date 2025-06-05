@@ -219,9 +219,9 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 管理者は、ブランディング要件に合わせて [!DNL Content Hub] ポータルをカスタマイズします。 ![ ブランディング ](/help/assets/assets/ColorPalette.svg)**[!UICONTROL ブランディング]** ページでは、**[!UICONTROL バナー]**、**[!UICONTROL カラー]** および **[!UICONTROL バナー画像]** の各セクションを使用して、次のカスタマイズを実行します。
 
-1. [「バナー画像 [!UICONTROL  セクションからバナー画像 ] 変更する](#Change-the-banner-image)
-1. [バナーのタイトルと本文テキストを更新し、「[!UICONTROL  バナー ]」セクションからテキストの色を変更します](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
-1. [ 「[!UICONTROL  カラー ]」セクションでプライマリカラーとセカンダリカラーを変更して、ブランドのテーマに合ったカラースキームを適用します ](#Change-the-primary-and-secondary-color)
+1. [「バナー画像 [!UICONTROL &#x200B; セクションからバナー画像 &#x200B;] 変更する](#Change-the-banner-image)
+1. [バナーのタイトルと本文テキストを更新し、「[!UICONTROL &#x200B; バナー &#x200B;]」セクションからテキストの色を変更します](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
+1. [ 「[!UICONTROL &#x200B; カラー &#x200B;]」セクションでプライマリカラーとセカンダリカラーを変更して、ブランドのテーマに合ったカラースキームを適用します ](#Change-the-primary-and-secondary-color)
 
 「**[!UICONTROL デフォルトにリセット]**」オプションを選択して変更を元に戻し、デフォルトのテーマに戻します。
 
@@ -241,9 +241,9 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 ![ ブランディング ](/help/assets/assets/ColorPalette.svg)**[!UICONTROL ブランディング]** ページでは、「**[!UICONTROL カラー]**」セクションを使用して、カラーピッカーを使用して選択するか、カラーの 16 進数コードを定義することによって、プライマリカラーとセカンダリカラーを設定します。 これらのカラーは、UI 要素の背景、テキスト、アイコンのカラーを設定して、[!DNL Content Hub] UI をブランドのテーマに合わせます。
 
-**[!UICONTROL プライマリの色 ]:** プライマリの色設定は、ホーム ページおよび [!UICONTROL  構成 ] ページを含む [!DNL Content Hub] ージ全体で、選択アクション、チェック ボックスなどのインタラクティブ要素、検索バー、およびトグル スイッチ [!DNL Content Hub] 適用されます。 また、**[!UICONTROL すべてのAssets]** ページや **[!UICONTROL コレクション]** ページで使用できるオプションなど、プライマリ [!DNL Content Hub] インターフェイスで使用できるアクションオプションにも適用されます。
+**[!UICONTROL プライマリの色 &#x200B;]:** プライマリの色設定は、ホーム ページおよび [!UICONTROL &#x200B; 構成 &#x200B;] ページを含む [!DNL Content Hub] ージ全体で、選択アクション、チェック ボックスなどのインタラクティブ要素、検索バー、およびトグル スイッチ [!DNL Content Hub] 適用されます。 また、**[!UICONTROL すべてのAssets]** ページや **[!UICONTROL コレクション]** ページで使用できるオプションなど、プライマリ [!DNL Content Hub] インターフェイスで使用できるアクションオプションにも適用されます。
 
-**[!UICONTROL セカンダリの色 ]:** [!DNL Content Hub] ホーム ページでは、ダイアログ ボックス内で使用可能な UI オプションおよび入力フィールドに第 2 の配色が適用されます。 選択アクション、チェックボックス、検索バー、トグルスイッチを除く、[!UICONTROL  設定 ] ページで使用可能なすべての設定メニューオプションに適用されます。
+**[!UICONTROL セカンダリの色 &#x200B;]:** [!DNL Content Hub] ホーム ページでは、ダイアログ ボックス内で使用可能な UI オプションおよび入力フィールドに第 2 の配色が適用されます。 選択アクション、チェックボックス、検索バー、トグルスイッチを除く、[!UICONTROL &#x200B; 設定 &#x200B;] ページで使用可能なすべての設定メニューオプションに適用されます。
 
 ### 有効期限切れのアセット{#expired-assets-content-hub}
 
