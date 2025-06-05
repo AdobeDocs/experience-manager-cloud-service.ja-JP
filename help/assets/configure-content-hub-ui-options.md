@@ -2,10 +2,10 @@
 title: コンテンツハブユーザーインターフェイスの設定
 description: コンテンツハブユーザーインターフェイスの設定
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: c27c78cbe21c9a02c4075ca7eade9853082fe211
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 98%
+source-wordcount: '1987'
+ht-degree: 78%
 
 ---
 
@@ -14,19 +14,19 @@ ht-degree: 98%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
         </td>
     </tr>
     <tr>
@@ -156,7 +156,7 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
    >[!NOTE]
    >
-   >新しいフィルターは、リポジトリ内にフィルター条件に一致するアセットが 1 つ以上ある場合にのみ、検索ページに表示されます。
+   >新しいフィルターは、フィルター条件に一致するアセットがリポジトリーに 1 つ以上ある場合にのみ、検索ページに表示されます。
 
 同様に、使用可能な各フィルターの横にある ![編集アイコン](assets/do-not-localize/edit_icon.svg) をクリックしてラベルを編集したり、削除アイコンをクリックして既存のフィルターを削除したりできます。すべての変更を行ったら、「**[!UICONTROL 保存]**」をクリックして、変更を適用します。
 
@@ -190,7 +190,7 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 ### アセットカード {#asset-card}
 
-**アセットカード**&#x200B;に表示する必要がある主なメタデータフィールドを最大 6 個まで設定することもできます。これを行うには、次の手順を実行します。
+**アセットカード** に表示する必要がある主要なメタデータフィールドを、最大 6 つのフィールドまで設定できます。 これを行うには、次の手順を実行します。
 
 ![アセットカードの主なメタデータ](/help/assets/assets/asset-card-key-metadata.png)
 
@@ -212,26 +212,38 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 1. 「**[!UICONTROL 保存]**」をクリックして変更を適用し、新しいメタデータプロパティがメタデータフィールドのリストに表示されるようにします。
 
-同様に、使用可能な各メタデータプロパティの横にある ![編集アイコン](assets/do-not-localize/edit_icon.svg) をクリックしてプロパティを編集したり、削除アイコンをクリックして既存のプロパティを削除したりできます。すべての変更を行ったら、「**[!UICONTROL 保存]**」をクリックして、変更を適用します。
-
+同様に、使用可能な各メタデータプロパティの横にある ![編集アイコン](assets/do-not-localize/edit_icon.svg) をクリックしてプロパティを編集したり、削除アイコンをクリックして既存のプロパティを削除したりできます。すべての変更を加えた後で **[!UICONTROL 保存]** をクリックして、変更を適用します。
 ![コンテンツハブの設定 UI の検索](assets/configuration-ui-metadata-search.png)
-
 
 ### ブランディング {#configure-branding-content-hub}
 
-管理者は、ブランド要件に応じて、コンテンツハブポータルのバナーのタイトルと本文をパーソナライズすることもできます。これを行うには、次の手順を実行します。
+管理者は、ブランディング要件に合わせて [!DNL Content Hub] ポータルをカスタマイズします。 ![ ブランディング ](/help/assets/assets/ColorPalette.svg)**[!UICONTROL ブランディング]** ページでは、**[!UICONTROL バナー]**、**[!UICONTROL カラー]** および **[!UICONTROL バナー画像]** の各セクションを使用して、次のカスタマイズを実行します。
 
-1. [設定](#access-configuration-options-content-hub)ユーザーインターフェイスで、「**[!UICONTROL ブランディング]**」をクリックします。
+1. [「バナー画像 [!UICONTROL  セクションからバナー画像 ] 変更する](#Change-the-banner-image)
+1. [バナーのタイトルと本文テキストを更新し、「[!UICONTROL  バナー ]」セクションからテキストの色を変更します](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
+1. [ 「[!UICONTROL  カラー ]」セクションでプライマリカラーとセカンダリカラーを変更して、ブランドのテーマに合ったカラースキームを適用します ](#Change-the-primary-and-secondary-color)
 
-1. 「**[!UICONTROL バナーのタイトルテキスト]**」フィールドと「**[!UICONTROL バナーの本文]**」フィールドにテキストを指定します。
+「**[!UICONTROL デフォルトにリセット]**」オプションを選択して変更を元に戻し、デフォルトのテーマに戻します。
 
-1. 「**[!UICONTROL 保存]**」をクリックして、変更内容を適用します。
+#### バナー画像の変更{#Change-the-banner-image}
 
-![コンテンツハブの設定 UI のブランディング](assets/configuration-ui-branding.png)
+![ ブランディング ](/help/assets/assets/ColorPalette.svg)**[!UICONTROL ブランディング]** ページで次の手順を実行して、[!DNL Content Hub] デプロイメントのバナー画像を変更します。
 
-設定ユーザーインターフェイスで有効になっているブランディングの更新は、コンテンツハブポータルバナーに表示されます。
+1. ![ 画像を選択 ](/help/assets/assets/Browse.svg)**[!UICONTROL ギャラリーから選択]** をクリックし、アセットセレクターダイアログボックスを使用してバナー画像を選択します。 アセットセレクターには、承認済みの画像のみが表示されます。
+1. 画像を選択し、**[!UICONTROL 選択]**、**[!UICONTROL 保存]** の順にクリックして、[!DNL Content Hub] デプロイメントのバナー画像として表示します。
 
-![コンテンツハブの設定 UI のブランディング](assets/configuration-ui-branding-updates.png)
+#### タイトルと本文テキストをバナーに追加し、テキストカラーを変更します{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
+
+![ ブランディング ](/help/assets/assets/ColorPalette.svg)**[!UICONTROL ブランディング]** ページで、「**[!UICONTROL バナー]**」セクションの各フィールドを使用して、タイトルと本文のテキストをバナーに追加します。
+**[!UICONTROL バナーテキストのカラー]** の横にある正方形ボックスをクリックして、バナーテキストのカラーピッカーからテキストカラーを選択するか、カラーピッカーの正方形ボックスの横のフィールドにカラーの 16 進コードを指定します。
+
+#### プライマリカラーとセカンダリカラーの変更{#Change-the-primary-and-secondary-color}
+
+![ ブランディング ](/help/assets/assets/ColorPalette.svg)**[!UICONTROL ブランディング]** ページでは、「**[!UICONTROL カラー]**」セクションを使用して、カラーピッカーを使用して選択するか、カラーの 16 進数コードを定義することによって、プライマリカラーとセカンダリカラーを設定します。 これらのカラーは、UI 要素の背景、テキスト、アイコンのカラーを設定して、[!DNL Content Hub] UI をブランドのテーマに合わせます。
+
+**[!UICONTROL プライマリの色 ]:** プライマリの色設定は、ホーム ページおよび [!UICONTROL  構成 ] ページを含む [!DNL Content Hub] ージ全体で、選択アクション、チェック ボックスなどのインタラクティブ要素、検索バー、およびトグル スイッチ [!DNL Content Hub] 適用されます。 また、**[!UICONTROL すべてのAssets]** ページや **[!UICONTROL コレクション]** ページで使用できるオプションなど、プライマリ [!DNL Content Hub] インターフェイスで使用できるアクションオプションにも適用されます。
+
+**[!UICONTROL セカンダリの色 ]:** [!DNL Content Hub] ホーム ページでは、ダイアログ ボックス内で使用可能な UI オプションおよび入力フィールドに第 2 の配色が適用されます。 選択アクション、チェックボックス、検索バー、トグルスイッチを除く、[!UICONTROL  設定 ] ページで使用可能なすべての設定メニューオプションに適用されます。
 
 ### 有効期限切れのアセット{#expired-assets-content-hub}
 
