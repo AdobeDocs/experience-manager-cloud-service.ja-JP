@@ -1,39 +1,55 @@
 ---
-title: Cloud Manager 2025.5.0 のリリースノート
-description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.5.0 のリリースについて説明します。
+title: Cloud Manager 2025.6.0 のリリースノート
+description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.6.0 のリリースについて説明します。
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 8696cf8a7e7cfc439450b34fa6fda10b38cd415e
+source-git-commit: 2d0153d9a7c18097266d94575c2a61e471ccd536
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 52%
+source-wordcount: '961'
+ht-degree: 33%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.5.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.6.0 のリリースノート {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
 
-AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2025.5.0 のリリースについて説明します。
+AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2025.6.0 のリリースについて説明します。
 
 [Adobe Experience Manager as a Cloud Service の最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)も参照してください。
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service の Cloud Manager 2025.5.0 のリリース日は 2025年5月8日 木曜日（PT）です。
+AEM as a Cloud Service の Cloud Manager 2025.6.0 のリリース日は 2025年6月5日（PT）です。
 
-次回のリリース予定は 2025年6月5日 木曜日（PT）です。
+次回のリリース予定は 2025年7月10日（PT）です。
 
 ## 新機能 {#what-is-new}
 
-### Edge Delivery Services用にワンクリックでコンテンツソースを設定
+* **（UI）ライセンスダッシュボードにEdge Delivery Services ライセンスが含まれるようになりました**
 
-Adobe Experience Manager（AEM）Edge Delivery Services を使用すると、高速でグローバルに分散した Edge Network を使用して、Google Drive、SharePoint、AEM 自体などの複数のソースからコンテンツを配信できます。
+  Edge Delivery Services ライセンスの使用状況がライセンスダッシュボードに表示され、使用権限とステータスをより明確に把握できるようになりました。<!-- CMGR-67686 -->
 
-コンテンツソースの設定は、Helix 4 と Helix 5 で異なります。 両方のバージョンの違いを説明し、包括的な設定手順、例、検証手順に従います。
+  ![ライセンスダッシュボード](/help/implementing/cloud-manager/assets/license-dashboard.png)
 
-[ コンテンツソースの設定 ](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md) を参照してください。
+  [ ライセンスダッシュボード ](/help/implementing/cloud-manager/license-dashboard.md) を参照してください。
+
+* **（UI）Edge Delivery サイト設定が更新されました**
+
+  **リポジトリー URL** ではなく **Edge Delivery オリジン** をリクエストすることで、Edge Delivery サイトを追加するフローが簡略化され、オンボーディングと設定がより迅速かつ直感的になり <!-- CMGR-67686 --> した
+
+  ![Edge Delivery サイトを追加ダイアログボックス ](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-site.png)
+
+  [Edge Delivery サイトの追加 ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) を参照してください。
+
+* **（UI）パイプラインのお気に入り**
+
+  このリリースでは、Cloud Managerでお気に入りのパイプラインをピン留めし、特定のパイプラインをお気に入りとしてマークして、「**パイプライン**」ページのリストの上部に表示できるようになりました。 この機能強化により、頻繁にアクセスするパイプラインを見つけて実行しやすくなります。<!-- CMGR-68293 -->
+
+  ![ お気に入りとしてマークされたパイプライン ](/help/implementing/cloud-manager/release-notes/assets/pipeline-favorites.png)*お気に入りとしてマークされた 2 つのパイプライン。*
+
+  [ パイプラインのお気に入りをマーク ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites) を参照してください。
 
 
 ## 早期導入プログラム {#early-adoption}
@@ -42,13 +58,26 @@ Cloud Manager の早期導入プログラムに参加すると、一般リリー
 
 現在利用可能な早期導入プログラムの機会は、次のとおりです。
 
-### Edge Delivery設定パイプラインを追加 {#add-eds-pipeline}
 
-Edge Delivery Servicesで作成されたサイトで Config パイプラインがサポートされるようになり、Cloud Service環境だけでなく、この機能が拡張されました。 **設定パイプライン** を使用して、トラフィックフィルタリングルールや Web アプリケーションファイアウォール（WAF）設定などの設定を管理できます（該当する場合）。 [サポートされている設定](/help/operations/config-pipeline.md#configurations)を参照してください。
+### アクセストークンを管理{#manage-access-tokens}
 
-![ パイプラインを追加ドロップダウンリストでEdge Delivery パイプラインを追加 ](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png)
+Cloud Managerの **アクセストークンの管理** を使用して、外部の Bring Your Own Git リポジトリ（GitHub Enterprise、GitLab、Bitbucket、Azure DevOps など）に関連付けられたアクセストークンを表示、名前変更および削除します。
 
-この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) にメールを送信します。
+[ アクセストークンの管理 ](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md) を参照してください。
+
+この新機能をテストし、フィードバックを共有することに関心がある場合は、Adobe IDに関連付けられたメールアドレスからにメールを送信します。
+
+
+### 特殊なテスト環境 {#specialized-test-environment}
+
+Cloud Managerでは、「Specialized Testing Environment **という新しい環境タイプの追加をサポートするよ** になりました。 この環境は、運用開始前に、チームが実稼動環境に近い条件下で機能を検証するのに役立つように設計されています。 この環境タイプは、*実稼動環境とステージング環境*、*開発環境* または *迅速な開発* 環境とは異なり、高度な検証シナリオを実行するための焦点を当てたスペースを提供します。
+
+[ 専用のテスト環境の追加 ](/help/implementing/cloud-manager/specialized-test-environment.md) を参照してください。
+
+![ 「特殊なテスト環境」ラジオボタンが選択された環境を追加ダイアログボックス ](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
+
+この新機能のテストやフィードバックの提供に関心がある場合は、Adobe IDに関連付けられたメールアドレスから [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) にメールを送信してください。
+
 
 ### 独自の Git の導入 - Azure DevOps のサポート開始 {#gitlab-bitbucket-azure-vsts}
 
@@ -67,6 +96,7 @@ Azure DevOps Git リポジトリを Cloud Manager にオンボードできるよ
 
 この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) にメールを送信します。 使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
 
+
 #### 独自の Git の導入に関するよくある質問（FAQ）
 
 | 質問 | 回答 |
@@ -77,15 +107,22 @@ Azure DevOps Git リポジトリを Cloud Manager にオンボードできるよ
 | *すべての GitLab リポジトリ URL が機能しますか？ 使用するリポジトリ URL は、形式 `https://gitlab_dedicated_url.com/path/repo-name.git` に従いますが、この形式はドキュメントの例とは異なります。* | はい。API V3 または V4 をサポートする任意の GitLab リポジトリーがサポートされます。これには、[Cloud Managerへの外部リポジトリーの追加 ](/help/implementing/cloud-manager/managing-code/external-repositories.md) （`https://git-vendor-name.com/org-name/repo-name.git`）に記載されているように、セルフホスト型の GitLab URL が含まれます。 |
 
 
-<!--
-## Bug fixes
+### Edge Delivery設定パイプラインを追加 {#add-eds-pipeline}
 
-* Issue
+Edge Delivery Servicesで作成されたサイトで Config パイプラインがサポートされるようになり、Cloud Service環境だけでなく、この機能が拡張されました。 **設定パイプライン** を使用して、トラフィックフィルタリングルールや Web アプリケーションファイアウォール（WAF）設定などの設定を管理できます（該当する場合）。 [サポートされている設定](/help/operations/config-pipeline.md#configurations)を参照してください。
 
-* Issue
+![ パイプラインを追加ドロップダウンリストの「Edge Delivery パイプラインを追加」 ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***プログラムの概要**ページ、「**パイプライン**」カードからのEdge Delivery パイプラインの追加*
 
-* Issue
--->
+![Edge Delivery パイプラインを追加ダイアログボックス ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png)*Edge Delivery パイプラインを追加ダイアログボックス*
+
+この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) にメールを送信します。
+
+
+## バグ修正
+
+* 以前に `HIBERNATED` とマークされたサンドボックス環境は、その状態のままではなくなり、パイプラインの実行やデプロイメントを期待どおりに続行できます。<!-- CMGR-67705 -->
+* AEM Cloud Managerは、お客様のアーティファクトを取得する際に、409 エラー（競合）が原因で発生した Maven ビルドエラーをお客様が原因のエラーに正しくマッピングするようになりました。 この変更により、内部エラーとお客様の環境の設定に関連する問題が区別され、エラーメッセージが改善されます。<!-- CMGR-66673 -->
+
 
 <!-- ## Known issues {#known-issues} -->
 
