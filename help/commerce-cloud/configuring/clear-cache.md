@@ -27,6 +27,7 @@ ht-degree: 2%
 * 次に示すように、リスナーを有効にして、プロジェクトに `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` 設定を追加することで、AEM（公開およびオーサー）の各インスタンスからキャッシュをクリアします [ こちら ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json)。
    * 設定は、オーサーインスタンスとパブリッシュインスタンスの両方で有効にする必要があります。
    * Dispatcherのキャッシュを有効にする（オプション）：上記の設定で `enableDispatcherCacheInvalidation` プロパティを true に設定することで、Dispatcher のキャッシュの消去設定を有効にできます。 これにより、Dispatcher からキャッシュをクリアする機能が提供されます。
+
   >[!NOTE]
   >
   > これは、パブリッシュインスタンスでのみ機能します。
@@ -59,6 +60,7 @@ ht-degree: 2%
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
+
 すべてが正常に動作すると、新しい変更がすべてのインスタンスに反映されます。 パブリッシュインスタンスに変更が反映されていない場合は、プライベートウィンドウで対応する PLP および PDP ページを確認してください。
 
 >[!NOTE]
