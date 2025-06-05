@@ -1,12 +1,12 @@
 ---
 title: コンテンツハブからのアセットのダウンロード
-description: コンテンツハブポータルからアセットをダウンロードする方法について説明します。
+description: 1 つまたは複数のアセットとそのレンディションをContent Hub ポータルからダウンロードする方法について説明します。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: e108d25f3cdc025e0fbe8010854f245f62786baf
-workflow-type: ht
-source-wordcount: '938'
-ht-degree: 100%
+source-git-commit: 809c0e780959340964933b13c8a347157f1dc17e
+workflow-type: tm+mt
+source-wordcount: '888'
+ht-degree: 50%
 
 ---
 
@@ -54,61 +54,86 @@ ht-degree: 100%
 
 >[!AVAILABILITY]
 >
->コンテンツハブガイドを PDF 形式で利用できるようになりました。ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えてください。
+> ガ [!DNL Content Hub] ドがPDF形式で利用できるようになりました。 ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えてください。
 >
 >[!BADGE コンテンツハブガイドの PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-コンテンツハブでは、アセットをダウンロードして共有できます。コンテンツハブのユーザーインターフェイスには、承認済みアアセットのみが表示されます。これらのアセットには、画像、ビデオ、またはその他のデジタルコンテンツが含まれる場合があります。コンテンツハブでは、効果的なアセット配布用のアクセシビリティと適応性が強化されます。
+[!DNL Content Hub] を使用すると、アセットをダウンロードして共有できます。 [!DNL Content Hub] ユーザーインターフェイスには、承認済みアセットのみが表示されます。 これらのアセットには、画像、ビデオ、またはその他のデジタルコンテンツが含まれる場合があります。この [!DNL Content Hub] により、アクセシビリティと適応性が向上し、効果的なアセット配布が可能になります。
 
-コンテンツハブを使用して、1 つまたは複数のアセットとその使用可能なレンディションをダウンロードできます。
+[!DNL Content Hub] を使用すると、1 つまたは複数のアセットとその使用可能なレンディションをダウンロードできます。
 
-[コンテンツハブでの使用可能なレンディションのタイプ](#types-of-renditions)を参照してください。
+詳しくは、[Content Hubで使用できるレンディションのタイプ ](#types-of-renditions) を参照してください。
 
-## アセットとそのレンディションのダウンロード {#download-asset-renditions}
+## 1 つ以上のアセットとそのレンディションのダウンロード {#download-asset-renditions}
 
-アセットとそのレンディションをダウンロードするには、次の手順を実行します。
+1 つ以上のアセットとそのレンディションをダウンロードするには、次の手順を実行します。
 
-1. アセットをクリックして、そのプロパティを表示します。
+1. アセットをダウンロードするには、アセットカードで「![ ダウンロード ](/help/assets/assets/download-icon.svg)」を選択し、アセットのプレビューを表示します。次に、ダイアログボックスの使用可能なレンディションを選択し、「**[!UICONTROL ダウンロード]**」オプションをクリックして、選択したレンディションを ZIP ファイルとしてダウンロードします。 ダイアログボックスに（ライセンスされたアセットの）アセットライセンスが表示された場合は、ライセンス条件に同意し、「**[!UICONTROL ダウンロード]**」をクリックします。
+   ![](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
 
-1. ![ダウンロード](/help/assets/assets/download-icon.svg) をクリックして、ダウンロードプロセスを開始します。ダウンロードパネルには、使用可能なすべてのアセットレンディションがリストされます。
+   または、アセットのサムネールをクリックして「![ ダウンロード ](/help/assets/assets/download-icon.svg)」を選択し、ダイアログボックスで使用可能なレンディションを選択して表示してからダウンロードすることもできます。
+
+1. 複数のアセットをダウンロードするには、アセットを選択し、![ ダウンロード ](/help/assets/assets/download-icon.svg)**[!UICONTROL ダウンロード]** をクリックして、**[!UICONTROL アセットをダウンロード]** ダイアログボックスで選択したアセットのリストを確認します。 アセットの横にある ![ 選択解除 ](/help/assets/assets/Close.svg) をクリックして、リストから選択を解除します。 1 つ以上のレンディションを選択し、「**[!UICONTROL ダウンロード]**」をクリックして、単一の ZIP ファイルとしてダウンロードします。 **[!UICONTROL スマート切り抜き]** および **[!UICONTROL 静的レンディション]** を選択すると、選択した各アセットの使用可能なすべての静的およびスマート切り抜きレンディションがダウンロードされます。
+   ![ 複数のアセットのダウンロード ](/help/assets/assets/download-multiple-assets-CH.png)
+ダウンロードの進行中も [!DNL Content Hub] を引き続き使用できます。 Content Hubは、ダウンロードプロセス中にワークフローを中断しません。
+   ![ 複数のアセットのダウンロード ](/help/assets/assets/download-assets-notification-ch.png)
+**[!UICONTROL アセットをダウンロード]** ダイアログボックスにアセットライセンスが表示されている場合、左側のウィンドウ（「[!UICONTROL T&amp;C ドキュメント ]」セクション）から各ライセンスを選択してライセンスをプレビューし、ダイアログボックスの中央のウィンドウに、ライセンスに関連付けられた選択したアセットを表示します。 各ライセンスを確認したら、レンディションを選択し、「**[!UICONTROL 上記の利用条件を読んで同意しました]**」をクリックし、「**[!UICONTROL ダウンロード]**」を選択してダウンロードします。
+   ![ 複数のアセットのダウンロード ](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
    >[!NOTE]
    >
-   >* レンディションは、[設定](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)ユーザーインターフェイスを使用して表示が有効になっている場合にのみ表示されます。
-   >* アセットのダウンロード中に、すべての[静的、動的、スマート切り抜きレンディション](#types-of-renditions)をダウンロードできます。
+   >* レンディションは、[!UICONTROL [Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) ユーザーインターフェイスで表示が有効になっている場合にのみ表示されます。
+   >* [!DNL [Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) へのアクセス権を持つユーザーは、動的およびスマート切り抜きレンディションを表示およびダウンロードできます。
+   >* ライセンスのプレビューは、オーサリング環境でアセットが承認された場合 [!DNL Assets as a Cloud Service] のみ表示されます。 詳しくは、[コンテンツハブのライセンス済みアセットの管理](/help/assets/manage-licensed-assets-on-content-hub.md)を参照してください。
 
-1. 1 つ以上のレンディションを選択し、「**[!UICONTROL ダウンロード]**」をクリックします。
+<!--
 
-   ![1 つのアセットレンディションをダウンロード](/help/assets/assets/download-single-asset-renditions.png)
+## Download an asset and its renditions {#download-asset-renditions} 
+
+To download an asset and its renditions, execute the following steps: 
+
+1. Click the asset to view its properties.
+
+1. Click ![download](/help/assets/assets/download-icon.svg) to see the list of available asset renditions in the **[!UICONTROL Download]** panel.
+
+   >[!NOTE]
+   >
+   >* The renditions display only if their visibility is enabled using the [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
+   >* You can download all [static, dynamic, and smart crop renditions](#types-of-renditions) while downloading an asset.
+
+1. Select one or more renditions and click **[!UICONTROL Download]** to download the selected renditions as a zip file. 
+While downloading a licensed asset, select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** before clicking **[!UICONTROL Download]**. You can also click **[!UICONTROL terms & conditions]** to view the asset license. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+
+   ![Download single asset renditions](/help/assets/assets/download-single-asset-renditions.png)
 
 
-ライセンス済みアセットをダウンロードする場合は、「**[!UICONTROL 上記のすべての利用条件を読み、同意しました]**」を選択し、「**[!UICONTROL ダウンロード]**」をクリックします。また、「**[!UICONTROL 利用条件]**」をクリックしてアセットライセンスを表示することもできます。ライセンスのプレビューは、アセットが Assets as a Cloud Service オーサリング環境を使用して承認された場合にのみ表示されます。詳しくは、[コンテンツハブのライセンス済みアセットの管理](/help/assets/manage-licensed-assets-on-content-hub.md)を参照してください。
+If you are downloading a licensed asset, select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and then click **[!UICONTROL Download]**. You can also click **[!UICONTROL terms & conditions]** to view the asset license. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 >[!NOTE]
 >
-> [Open API を備えた Dynamic Media 機能](/help/assets/dynamic-media-open-apis-overview.md)にアクセスできるユーザーは、動的およびスマート切り抜きレンディションを表示およびダウンロードできます。
+> The users with access to [Dynamic Media with Open API capabilities](/help/assets/dynamic-media-open-apis-overview.md) can view and download dynamic and smart crop renditions.
 
-## 複数のアセットとそのレンディションのダウンロード {#download-multiple-assets-renditions}
+## Download multiple assets and their renditions {#download-multiple-assets-renditions} 
 
-複数のアセットとそのレンディションをダウンロードするには、次の手順を実行します。
+To download multiple assets and their renditions, execute the following steps: 
 
-1. アセットを選択し、![ダウンロード](/help/assets/assets/download-icon.svg)「**[!UICONTROL ダウンロード]**」をクリックします。[!UICONTROL アセットをダウンロード]画面に、選択したすべてのアセットがリストされます。
-1. 「**[!UICONTROL ダウンロード]**」をクリックして、様々なダウンロードオプションから選択し、ダウンロードを開始します。
+1. Select the assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]**. The [!UICONTROL Download assets] screen displays listing all the selected assets. 
+1. Click **[!UICONTROL Download]** to select from the various download options to begin download:
 
-   * **オリジナル[!UICONTROL をダウンロード]**：選択したアセットを元の形式でダウンロードするには、このオプションを選択します。
-   * **静的レンディションのみ[!UICONTROL をダウンロード]**：元のアセットを除く、アセットの使用可能なすべての静的レンディションをダウンロードするには、このオプションを選択します。
-   * **オリジナルと静的レンディション[!UICONTROL をダウンロード]**：選択したアセットのオリジナルと静的レンディションの両方をダウンロードするには、このオプションを選択します。
+    * **Download [!UICONTROL Originals]**: Select this option to download the selected assets in the original form.
+    * **Download [!UICONTROL Static Renditions only]**: Select this option to download all available static renditions of assets except the original assets.
+    * **Download [!UICONTROL Originals & Static Renditions]**: Select this option to download both original and static renditions of the selected assets. 
 
-     ![複数のレンディションをダウンロード](/help/assets/assets/download-multiple-renditions.png)
+      ![Download multiple renditions](/help/assets/assets/download-multiple-renditions.png)
 
-     >[!NOTE]
-     >
-     >* レンディションは、[設定](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)ユーザーインターフェイスを使用して表示が有効になっている場合にのみ表示されます。
-     >* 複数のアセットのダウンロード中にのみ、[静的レンディション](#types-of-renditions)をダウンロードできます。
+      >[!NOTE]
+      >
+      >* The renditions display only if their visibility is enabled using the [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
+      >* You can only download [static renditions](#types-of-renditions) while downloading multiple assets.
 
-   選択したアセットのいずれかがライセンス済みアセットである場合は、左側のパネルでアセットのライセンスをクリックしてプレビューを表示して、「**[!UICONTROL 上記のすべての利用条件を読み、同意しました]**」を選択し、「**[!UICONTROL ダウンロード]**」をクリックできます。ライセンスのプレビューは、アセットが Assets as a Cloud Service オーサリング環境を使用して承認された場合にのみ表示されます。詳しくは、[コンテンツハブのライセンス済みアセットの管理](/help/assets/manage-licensed-assets-on-content-hub.md)を参照してください。
+    If any of the selected asset is a licensed asset, click the license of the asset in left pane to see its preview, which enables you to select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and then click **[!UICONTROL Download]**. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
-   <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
+    <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
 
 <!--1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
 1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The license PDF preview is displayed only if the license is approved in your Assets as a Cloud Service environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets to see their previews.
@@ -142,20 +167,19 @@ The dialog box that displays depends on whether the download list includes expir
 
  To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
 
-
 ## レンディションのタイプ {#types-of-renditions}
 
 アセットレンディションは、アセットの元のファイルを様々に表現したものです。これらには、サムネイル、web またはモバイル用に最適化されたバージョン、透かし入りまたは DRM で保護されたファイル、さらにはスマート切り抜きなどの動的要素を含めることができます。元のファイルタイプと一致する必要はなく、代わりに、様々なユースケースでアセットを表すために機能します。
 
-詳しくは、[Experience Manager Assets でのレンディションの表示と管理](/help/assets/renditions.md)を参照してください。
+詳しくは、[ でのレンディションの表示と管理  [!DNL Experience Manager Assets]](/help/assets/renditions.md) を参照してください。
 
 [!DNL Experience Manager Assets] では、次のレンディションのタイプをサポートしています。
 
 * [静的レンディション](/help/assets/renditions.md#static-renditions)：静的レンディションは、デジタルアセットの事前生成されたバージョンで、通常はアセットの取り込みまたは変更中に作成されます。これらは、web サムネイル、レスポンシブデザイン用のモバイルに対応した形式、印刷用の高解像度ファイルなど、特定の用途とプラットフォーム用に最適化され、効率化された一貫したエクスペリエンスを提供します。
 
-* [動的レンディション](/help/assets/renditions.md#dynamic-renditions)：動的レンディションは、様々なデバイスの解像度に合わせた画像のサイズ変更や、様々な縦横比に合わせた切り抜きなど、様々なアクションを実行するために、リアルタイムでカスタマイズされたアセットバージョンです。これらのレンディションにより、より広範な要件に合わせて、パーソナライズされ最適化されたエクスペリエンスを提供できます。アセットの動的レンディションは、[!DNL Adobe Experience Manager Assets] オーサー環境で作成されます。動的レンディションを有効にするために必要な手順について詳しくは、[動的レンディションの有効化](#enable-dynamic-media-renditions)を参照してください。
+* [動的レンディション](/help/assets/renditions.md#dynamic-renditions)：動的レンディションは、様々なデバイスの解像度に合わせた画像のサイズ変更や、様々な縦横比に合わせた切り抜きなど、様々なアクションを実行するために、リアルタイムでカスタマイズされたアセットバージョンです。これらのレンディションを使用すると、より広い要件に対して、パーソナライズされ最適化されたエクスペリエンスを提供できます。 アセットの動的レンディションは、[!DNL Adobe Experience Manager Assets] オーサー環境で作成されます。動的レンディションを有効にするために必要な手順について詳しくは、[動的レンディションの有効化](#enable-dynamic-media-renditions)を参照してください。
 
-* [スマート切り抜き](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：スマート切り抜きは、切り抜きプロセス中にアセットの重要な部分にのみ焦点を当てます。Dynamic Media のスマート切り抜きでは、Adobe Sensei を使用した人工知能を活用して目標地点を追跡し、アセットがすべての画面サイズで最適に表示されるようにします。[!DNL Adobe Experience Manager] のスマート切り抜きでは、タイトルと共にアセットレンディションの幅と高さが表示されます。詳しくは、[AEM Assets Dynamic Media でのスマート切り抜きの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)を参照してください。
+* [スマート切り抜き](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：スマート切り抜きは、切り抜きプロセス中にアセットの重要な部分にのみ焦点を当てます。Dynamic Media のスマート切り抜きは、Adobe Senseiを活用した人工知能を活用して目標地点を追跡し、あらゆる画面サイズでアセットが最適に表示されるようにします。 [!DNL Adobe Experience Manager] のスマート切り抜きでは、タイトルと共にアセットレンディションの幅と高さが表示されます。詳しくは、[AEM Assets Dynamic Media でのスマート切り抜きの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)を参照してください。
 
   スマート切り抜きレンディションは、[OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) にアクセスできる場合にのみ表示され、ダウンロードできます。スマート切り抜きレンディションは、画像アセットに対してのみ使用できます。
 
@@ -175,7 +199,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 1. 既存の画像プリセットを再保存して、コンテンツハブで使用できるようにします。これは、OpenAPI を備えた Dynamic Media に新しくオンボードした場合にのみ適用されます。
 
-   既存の画像プリセットを再保存するには、管理ビューに移動し、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL 画像プリセット]**&#x200B;を選択します。プリセットを選択し、「**[!UICONTROL 編集]**」をクリックして、「**[!UICONTROL 保存]**」をクリックします。
+   既存の画像プリセットを再度保存するには、管理者ビューに移動し、**[!UICONTROL ツール]**/**[!UICONTROL Assets]**/{ 画像プリセット **[!UICONTROL を選択し]** す。 プリセットを選択し、「**[!UICONTROL 編集]**」をクリックして、「**[!UICONTROL 保存]**」をクリックします。
 
 
 
