@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4b5d2213750ea1b96f7315a8b8b426a97b3041f3
+source-git-commit: be4c57c1703831b8c71fc722761515b32cfc0683
 workflow-type: tm+mt
-source-wordcount: '6211'
+source-wordcount: '6240'
 ht-degree: 98%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 98%
    + AEMaaCS 機能のリリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
+         + [2025.4.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-4-0.md)
          + [2025.3.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-3-0.md)
          + [2025.2.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-2-0.md)
          + [2025.1.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md)
@@ -123,6 +124,7 @@ ht-degree: 98%
    + Cloud Manager のリリースノート {#cloud-manager}
       + [現在](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
+         + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
          + [2025.4.0](/help/implementing/cloud-manager/release-notes/2025/2025-4-0.md)
          + [2025.3.0](/help/implementing/cloud-manager/release-notes/2025/2025-3-0.md)
          + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
@@ -697,6 +699,7 @@ ht-degree: 98%
       + [コンテンツハブ向けアセットの承認](/help/assets/approve-assets-content-hub.md)
       + [コンテンツハブでアセットを検索する](/help/assets/search-assets-content-hub.md)
       + [アセットのプロパティ](/help/assets/asset-properties-content-hub.md)
+      + [属性ベースのアクセス制御](/help/assets/attribute-based-access-control.md)
       + [コンテンツハブでのアセットの共有](/help/assets/share-assets-content-hub.md)
       + [コンテンツハブを使用したアセットのダウンロード](/help/assets/download-assets-content-hub.md)
       + [コンテンツハブでのライセンス済みアセットの管理](/help/assets/manage-licensed-assets-on-content-hub.md)
@@ -993,12 +996,14 @@ ht-degree: 98%
          + [キャッシュオプション](/help/commerce-cloud/configuring/caching.md)
          + [カスタム HTTP ヘッダー](/help/commerce-cloud/configuring/custom-http-headers.md)
          + [買い物かごおよび Dispatcher の設定](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
+         + [コンポーネントとGraphQLのキャッシュのクリア](/help/commerce-cloud/configuring/clear-cache.md)
       + 開発 {#developing}
          + [AEM Cloud Service SDK を使用した開発](/help/commerce-cloud/develop.md)
          + [CIF コンポーネントのスタイル設定](/help/commerce-cloud/customizing/style-cif-component.md)
          + [CIF コンポーネントのカスタマイズ](/help/commerce-cloud/customizing/customize-cif-components.md)
          + [CIF カタログピッカーの使用](/help/commerce-cloud/customizing/use-cif-pickers.md)
          + [CIF 製品カルーセルに対するカスタム属性](/help/commerce-cloud/customizing/product-carousel.md)
+         + [JSON-LD メタデータ](/help/commerce-cloud/customizing/json-ld.md)
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [移行](/help/commerce-cloud/migration.md)
    + [よくある質問](/help/commerce-cloud/faq.md)
@@ -1196,12 +1201,14 @@ ht-degree: 98%
          + [プロジェクトのセットアップ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [環境の管理](/help/implementing/cloud-manager/manage-environments.md)
+      + [特殊なテスト環境（早期導入者）](/help/implementing/cloud-manager/specialized-test-environment.md)
       + コードの管理 {#managing-code}
          + [Maven プロジェクトのバージョン処理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Cloud Managerでのリポジトリの管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Adobe リポジトリの追加](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [プライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [外部リポジトリの追加（早期導入）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [外部リポジトリのアクセストークンの管理（早期導入）](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
          + [リポジトリへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git サブモジュールのサポート](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Cloud Manager での Git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
