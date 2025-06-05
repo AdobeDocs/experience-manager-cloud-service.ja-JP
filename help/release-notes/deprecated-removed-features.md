@@ -4,9 +4,9 @@ description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: aaa0d9c547af360aff4cabb2ce024b586a3870df
+source-git-commit: 569ab7cfab02cfc5d5ad1c8f402a51df34f4bac6
 workflow-type: tm+mt
-source-wordcount: '3028'
+source-wordcount: '3039'
 ht-degree: 71%
 
 ---
@@ -428,41 +428,65 @@ Cloud Serviceではログバックはサポートされていません。ログ�
 
 OSGI 設定に関する追加情報は、[この場所](/help/implementing/deploying/configuring-osgi.md)にあります。
 
-### 非推奨（廃止予定）の OSGi プロパティ（変更できなくなります） {#deprecated-osgi-properties}
+### 非推奨（廃止予定）の OSGi プロパティ（近日中に変更不可） {#deprecated-unmodifiable-osgi-properties}
 
-次の OSGi コンポーネント PID の一部のプロパティは、変更できなくなりました。 これは、以下に説明する期間内に適用されます。
+次の OSGi コンポーネント PID のプロパティは非推奨（廃止予定）となっており、施行日までに使用を停止する必要があります。
 
 | **OSGI コンポーネント ID** | **変更不能プロパティ** | **廃止** | **実施** |
 |---|---|---|---|
 | **`org.apache.sling.commons.log.LogManager`** | すべて | 4/24/25 | 2025/8/31 （設定は 6 月には無視されます） |
 | **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern | 4/24/25 | 2025/8/31 （設定は 6 月には無視されます） |
-| **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** | すべて | 2024 | 8/31/25 |
-| **`com.day.cq.auth.impl.cug.CugSupportImpl`** | すべて | 2024 |
-| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | すべて | 2024 | 8/31/25 |
-| **`org.apache.felix.http (Factory)`** | すべて | 2024 | 8/31/25 |
 | **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | すべて | 2024 | 8/31/25 |
-| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | すべて | 6/3/25 | 8/31/25 |
-| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | すべて | 6/3/25 | 8/31/25 |
-| **`org.apache.sling.feature.apiregions.impl`** | すべて | 6/3/25 | 8/31/25 |
 | **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | すべて | 6/3/25 | 8/31/25 |
-| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | すべて | 6/3/25 | 8/31/25 |
-| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | すべて | 6/3/25 | 8/31/25 |
-| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | すべて | 6/3/25 | 8/31/25 |
-| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | すべて | 6/3/25 | 8/31/25 |
-| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | すべて | 6/3/25 | 8/31/25 |
 | **`org.apache.http.proxyconfigurator`** | すべて | 6/3/25 | 8/31/25 |
-| **`org.apache.sling.feature.apiregions.factory`** | すべて | 6/3/25 | 8/31/25 |
-| **`com.adobe.granite.toggle.monitor.systemproperty`** | すべて | 6/3/25 | 8/31/25 |
 
-<!--
-### Unmodifiable OSGi properties {#unmodifiable-osgi-properties}
+### 変更不能な OSGi プロパティ {#unmodifiable-osgi-properties}
 
-Properties for the following OSGi component PIDs cannot be modified, as described below.
--->
+次の OSGi コンポーネント PID のプロパティは、以下に説明するように変更することはできません。
+
+| **OSGI コンポーネント ID** | **変更不能プロパティ** |
+|---|---|
+| **`com.day.cq.auth.impl.cug.CugSupportImpl`** |
+| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | すべて |
+| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | すべて |
+| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | すべて |
+| **`org.apache.sling.feature.apiregions.impl`** | すべて |
+| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | すべて |
+| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | すべて |
+| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | すべて |
+| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | すべて |
+| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | すべて |
+| **`org.apache.sling.feature.apiregions.factory`** | すべて |
+| **`com.adobe.granite.toggle.monitor.systemproperty`** | すべて |
+
+
+### 将来的に適用される OSGi プロパティの制限 {#future-restrictions-osgi-properties}
+
+今後、Adobeは次の OSGi プロパティ制限を適用するので、使用を停止する必要があります。
+
+| OSGi コンポーネントの PID |   | 必須 | タイプ | 制限（該当する場合） |
+|---|---|---|---|---|
+| `com.day.cq.mailer.DefaultMailService` | `smtp.host` |   | 文字列 |   |
+|   | `smtp.port` | はい | 整数 | 「465」、「587」または「25」のいずれか |
+|   | `smtp.user` |   | 文字列 |   |
+|   | `smtp.password` |   | 文字列 |   |
+|   | `from.address` |   | 文字列 |   |
+|   | `smtp.ssl` |   | 文字列 |   |
+|   | `smtp.starttls` |   | ブール値 |   |
+|   | `smtp.requiretls` |   | ブール値 |   |
+|   | `debug.email` |   | ブール値 |   |
+|   | `oauth.flow` |   | ブール値 |   |
+| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | はい | 文字列 | 「情報」、「デバッグ」、「TRACE」のいずれかです |
+|   | `org.apache.sling.commons.log.names` |   | 文字列の配列 |   |
+|   | `org.apache.sling.commons.log.additiv` |   | ブール値 |   |
+| `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | いいえ | 文字列[] |   |
+|   | `externalizer.encodedpath` | いいえ | ブール値 |   |
+|   | `externalizer.host` | いいえ | 文字列 |   |
+|   | `externalizer.contextpath` | いいえ | 文字列 |   |
 
 ### OSGi プロパティの制限 {#restrictions-osgi-properties}
 
-一部の OSGi プロパティの値は、以下に説明するルールに制限されています。
+これらの OSGi プロパティの値は、以下に説明するルールに制限されています。
 
 | OSGi コンポーネントの PID |   | 必須 | タイプ | 制限（該当する場合） |
 |---|---|---|---|---|
@@ -504,19 +528,6 @@ Properties for the following OSGi component PIDs cannot be modified, as describe
 |   | `org.apache.felix.http.session.uniqueid` |   | ブール値 |   |
 | `org.apache.sling.scripting.cache` | `org.apache.sling.scripting.cache.size` | はい | 整数 | >= 2048 |
 |   | `org.apache.sling.scripting.cache.additional_extensions` | はい | 文字列の配列 | 「js」を含める必要があります |
-| `com.day.cq.mailer.DefaultMailService` | `smtp.host` |   | 文字列 |   |
-|   | `smtp.port` | はい | 整数 | 「465」、「587」または「25」のいずれか |
-|   | `smtp.user` |   | 文字列 |   |
-|   | `smtp.password` |   | 文字列 |   |
-|   | `from.address` |   | 文字列 |   |
-|   | `smtp.ssl` |   | 文字列 |   |
-|   | `smtp.starttls` |   | ブール値 |   |
-|   | `smtp.requiretls` |   | ブール値 |   |
-|   | `debug.email` |   | ブール値 |   |
-|   | `oauth.flow` |   | ブール値 |   |
-| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | はい | 文字列 | 「情報」、「デバッグ」、「TRACE」のいずれかです |
-|   | `org.apache.sling.commons.log.names` |   | 文字列の配列 |   |
-|   | `org.apache.sling.commons.log.additiv` |   | ブール値 |   |
 | `org.apache.sling.engine.impl.log.RequestLogger` | `request.log.output` | いいえ | 文字列 |   |
 |   | `request.log.outputtype` | いいえ | 文字列 |   |
 |   | `request.log.entry.format` | いいえ | 文字列 |   |
@@ -531,10 +542,6 @@ Properties for the following OSGi component PIDs cannot be modified, as describe
 |   | `servletresolver.defaultExtensions` | いいえ | 文字列 |   |
 |   | `servletresolver.mountProviders` | いいえ | ブール値 |   |
 |   | `servletresolver.scriptUser` | いいえ | 文字列 | 非推奨（廃止予定）、使用しない |
-| `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | いいえ | 文字列[] |   |
-|   | `externalizer.encodedpath` | いいえ | ブール値 |   |
-|   | `externalizer.host` | いいえ | 文字列 |   |
-|   | `externalizer.contextpath` | いいえ | 文字列 |   |
 
 ## Java ランタイムのバージョン 21 へのアップデート {#java-runtime-update-21}
 
