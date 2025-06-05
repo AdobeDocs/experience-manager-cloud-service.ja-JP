@@ -245,7 +245,7 @@ Edge コンピューティングを使用すると、CDN レイヤーでJavaScri
 * ブラウザーに配信する前に、サードパーティの API からの応答を再フォーマットする（および複数の API 応答を集計する）
 * 様々なバックエンドからステッチされたコンテンツを使用して、サーバーレンダリングされたHTMLをエッジで作成および提供する
 
-AEM パブリッシュ配信またはライブ実稼動サイトのEdge Delivery Services プロジェクトで利用できる機会の数は限られています。 参加に関心がある場合や、詳細を確認したい場合は、ユースケースの簡単な説明を添えて ](mailto:aemcs-edgecompute-feedback@adobe.com)0}aemcs-edgecompute-feedback@adobe.com} までメールでお問い合わせください。[
+AEM パブリッシュ配信またはライブ実稼動サイトのEdge Delivery Services プロジェクトで利用できる機会の数は限られています。 参加に関心がある場合や、詳細を確認したい場合は、ユースケースの簡単な説明を添えて [&#128279;](mailto:aemcs-edgecompute-feedback@adobe.com)0&rbrace;aemcs-edgecompute-feedback@adobe.com&rbrace; までメールでお問い合わせください。
 
 ### Edge Delivery Servicesの CDN 設定（Beta プログラム） {#cdn-eds-beta}
 
