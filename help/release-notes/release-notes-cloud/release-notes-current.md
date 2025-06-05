@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 949a3956a88ae8075e1c518e50400f81b603924d
+source-git-commit: f01e5f505074ea32f313ba781ddb4e026cd47888
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 32%
@@ -41,7 +41,7 @@ ht-degree: 32%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -245,7 +245,7 @@ Edge コンピューティングを使用すると、CDN レイヤーでJavaScri
 * ブラウザーに配信する前に、サードパーティの API からの応答を再フォーマットする（および複数の API 応答を集計する）
 * 様々なバックエンドからステッチされたコンテンツを使用して、サーバーレンダリングされたHTMLをエッジで作成および提供する
 
-AEM パブリッシュ配信またはライブ実稼動サイトのEdge Delivery Services プロジェクトで利用できる機会の数は限られています。 参加に関心がある場合や、詳細を確認したい場合は、ユースケースの簡単な説明を添えて [&#128279;](mailto:aemcs-edgecompute-feedback@adobe.com)0&rbrace;aemcs-edgecompute-feedback@adobe.com&rbrace; までメールでお問い合わせください。
+AEM パブリッシュ配信またはライブ実稼動サイトのEdge Delivery Services プロジェクトで利用できる機会の数は限られています。 参加に関心がある場合や、詳細を確認したい場合は、ユースケースの簡単な説明を添えて ](mailto:aemcs-edgecompute-feedback@adobe.com)0}aemcs-edgecompute-feedback@adobe.com} までメールでお問い合わせください。[
 
 ### Edge Delivery Servicesの CDN 設定（Beta プログラム） {#cdn-eds-beta}
 
