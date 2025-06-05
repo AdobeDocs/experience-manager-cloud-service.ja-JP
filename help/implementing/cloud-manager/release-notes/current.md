@@ -4,9 +4,9 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 2d0153d9a7c18097266d94575c2a61e471ccd536
+source-git-commit: 6365b1c4109c2f2a77fbc332d11e1a8906d2cc6d
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '958'
 ht-degree: 33%
 
 ---
@@ -27,7 +27,7 @@ AEM as a Cloud Service の Cloud Manager 2025.6.0 のリリース日は 2025年6
 
 ## 新機能 {#what-is-new}
 
-* **（UI）ライセンスダッシュボードにEdge Delivery Services ライセンスが含まれるようになりました**
+* **ライセンスダッシュボードにEdge Delivery Services ライセンスが含まれるようになりました**
 
   Edge Delivery Services ライセンスの使用状況がライセンスダッシュボードに表示され、使用権限とステータスをより明確に把握できるようになりました。<!-- CMGR-67686 -->
 
@@ -35,7 +35,7 @@ AEM as a Cloud Service の Cloud Manager 2025.6.0 のリリース日は 2025年6
 
   [ ライセンスダッシュボード ](/help/implementing/cloud-manager/license-dashboard.md) を参照してください。
 
-* **（UI）Edge Delivery サイト設定が更新されました**
+* **Edge Delivery サイト設定が更新されました**
 
   **リポジトリー URL** ではなく **Edge Delivery オリジン** をリクエストすることで、Edge Delivery サイトを追加するフローが簡略化され、オンボーディングと設定がより迅速かつ直感的になり <!-- CMGR-67686 --> した
 
@@ -43,7 +43,7 @@ AEM as a Cloud Service の Cloud Manager 2025.6.0 のリリース日は 2025年6
 
   [Edge Delivery サイトの追加 ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) を参照してください。
 
-* **（UI）パイプラインのお気に入り**
+* **パイプラインのお気に入り**
 
   このリリースでは、Cloud Managerでお気に入りのパイプラインをピン留めし、特定のパイプラインをお気に入りとしてマークして、「**パイプライン**」ページのリストの上部に表示できるようになりました。 この機能強化により、頻繁にアクセスするパイプラインを見つけて実行しやすくなります。<!-- CMGR-68293 -->
 
@@ -111,7 +111,7 @@ Azure DevOps Git リポジトリを Cloud Manager にオンボードできるよ
 
 Edge Delivery Servicesで作成されたサイトで Config パイプラインがサポートされるようになり、Cloud Service環境だけでなく、この機能が拡張されました。 **設定パイプライン** を使用して、トラフィックフィルタリングルールや Web アプリケーションファイアウォール（WAF）設定などの設定を管理できます（該当する場合）。 [サポートされている設定](/help/operations/config-pipeline.md#configurations)を参照してください。
 
-![ パイプラインを追加ドロップダウンリストの「Edge Delivery パイプラインを追加」 ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***プログラムの概要**&#x200B;ページ、「**パイプライン**」カードからのEdge Delivery パイプラインの追加*
+![ パイプラインを追加ドロップダウンリストの「Edge Delivery パイプラインを追加」 ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***プログラムの概要**ページ、「**パイプライン**」カードからのEdge Delivery パイプラインの追加*
 
 ![Edge Delivery パイプラインを追加ダイアログボックス ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png)*Edge Delivery パイプラインを追加ダイアログボックス*
 
