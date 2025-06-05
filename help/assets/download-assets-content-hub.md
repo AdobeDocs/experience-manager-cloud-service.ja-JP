@@ -77,13 +77,13 @@ ht-degree: 50%
    ![ 複数のアセットのダウンロード ](/help/assets/assets/download-multiple-assets-CH.png)
 ダウンロードの進行中も [!DNL Content Hub] を引き続き使用できます。 Content Hubは、ダウンロードプロセス中にワークフローを中断しません。
    ![ 複数のアセットのダウンロード ](/help/assets/assets/download-assets-notification-ch.png)
-**[!UICONTROL アセットをダウンロード]** ダイアログボックスにアセットライセンスが表示されている場合、左側のウィンドウ（「[!UICONTROL T&amp;C ドキュメント ]」セクション）から各ライセンスを選択してライセンスをプレビューし、ダイアログボックスの中央のウィンドウに、ライセンスに関連付けられた選択したアセットを表示します。 各ライセンスを確認したら、レンディションを選択し、「**[!UICONTROL 上記の利用条件を読んで同意しました]**」をクリックし、「**[!UICONTROL ダウンロード]**」を選択してダウンロードします。
+**[!UICONTROL アセットをダウンロード]** ダイアログボックスにアセットライセンスが表示されている場合、左側のウィンドウ（「[!UICONTROL T&amp;C ドキュメント &#x200B;]」セクション）から各ライセンスを選択してライセンスをプレビューし、ダイアログボックスの中央のウィンドウに、ライセンスに関連付けられた選択したアセットを表示します。 各ライセンスを確認したら、レンディションを選択し、「**[!UICONTROL 上記の利用条件を読んで同意しました]**」をクリックし、「**[!UICONTROL ダウンロード]**」を選択してダウンロードします。
    ![ 複数のアセットのダウンロード ](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
    >[!NOTE]
    >
-   >* レンディションは、[!UICONTROL [Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) ユーザーインターフェイスで表示が有効になっている場合にのみ表示されます。
-   >* [!DNL [Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) へのアクセス権を持つユーザーは、動的およびスマート切り抜きレンディションを表示およびダウンロードできます。
+   >* レンディションは、[[!UICONTROL [Configuration]]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) ユーザーインターフェイスで表示が有効になっている場合にのみ表示されます。
+   >* [[!DNL [Dynamic Media with Open API capabilities]]](/help/assets/dynamic-media-open-apis-overview.md) へのアクセス権を持つユーザーは、動的およびスマート切り抜きレンディションを表示およびダウンロードできます。
    >* ライセンスのプレビューは、オーサリング環境でアセットが承認された場合 [!DNL Assets as a Cloud Service] のみ表示されます。 詳しくは、[コンテンツハブのライセンス済みアセットの管理](/help/assets/manage-licensed-assets-on-content-hub.md)を参照してください。
 
 <!--
@@ -199,7 +199,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 1. 既存の画像プリセットを再保存して、コンテンツハブで使用できるようにします。これは、OpenAPI を備えた Dynamic Media に新しくオンボードした場合にのみ適用されます。
 
-   既存の画像プリセットを再度保存するには、管理者ビューに移動し、**[!UICONTROL ツール]**/**[!UICONTROL Assets]**/{ 画像プリセット **[!UICONTROL を選択し]** す。 プリセットを選択し、「**[!UICONTROL 編集]**」をクリックして、「**[!UICONTROL 保存]**」をクリックします。
+   既存の画像プリセットを再度保存するには、管理者ビューに移動し、**[!UICONTROL ツール]**/**[!UICONTROL Assets]**/&lbrace; 画像プリセット **[!UICONTROL を選択し]** す。 プリセットを選択し、「**[!UICONTROL 編集]**」をクリックして、「**[!UICONTROL 保存]**」をクリックします。
 
 
 
