@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 58514d9f55eaaa35801380648831ad6d13cf1529
+source-git-commit: 52c8745d3a3cc4bc41003a258a85a817e7ccb48b
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 33%
+source-wordcount: '954'
+ht-degree: 32%
 
 ---
 
@@ -59,15 +59,6 @@ Cloud Manager の早期導入プログラムに参加すると、一般リリー
 現在利用可能な早期導入プログラムの機会は、次のとおりです。
 
 
-### アクセストークンを管理{#manage-access-tokens}
-
-Cloud Managerの **アクセストークンの管理** を使用して、外部の Bring Your Own Git リポジトリ（GitHub Enterprise、GitLab、Bitbucket、Azure DevOps など）に関連付けられたアクセストークンを表示、名前変更および削除します。
-
-[ アクセストークンの管理 ](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md) を参照してください。
-
-この新機能をテストし、フィードバックを共有することに関心がある場合は、Adobe IDに関連付けられたメールアドレスからにメールを送信します。
-
-
 ### 特殊なテスト環境 {#specialized-test-environment}
 
 Cloud Managerでは、「Specialized Testing Environment **という新しい環境タイプの追加をサポートするよ** になりました。 この環境は、運用開始前に、チームが実稼動環境に近い条件下で機能を検証するのに役立つように設計されています。 この環境タイプは、*実稼動環境とステージング環境*、*開発環境* または *迅速な開発* 環境とは異なり、高度な検証シナリオを実行するための焦点を当てたスペースを提供します。
@@ -79,7 +70,7 @@ Cloud Managerでは、「Specialized Testing Environment **という新しい環
 この新機能のテストやフィードバックの提供に関心がある場合は、Adobe IDに関連付けられたメールアドレスから [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) にメールを送信してください。
 
 
-### 独自の Git の導入 - Azure DevOps のサポート開始 {#gitlab-bitbucket-azure-vsts}
+### 独自の Git （BYOG）の導入 – Azure DevOps をサポート {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -97,7 +88,7 @@ Azure DevOps Git リポジトリを Cloud Manager にオンボードできるよ
 この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) にメールを送信します。 使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
 
 
-#### 独自の Git の導入に関するよくある質問（FAQ）
+**BYOG に関するよくある質問**
 
 | 質問 | 回答 |
 |---|---|
@@ -107,11 +98,20 @@ Azure DevOps Git リポジトリを Cloud Manager にオンボードできるよ
 | *すべての GitLab リポジトリ URL が機能しますか？ 使用するリポジトリ URL は、形式 `https://gitlab_dedicated_url.com/path/repo-name.git` に従いますが、この形式はドキュメントの例とは異なります。* | はい。API V3 または V4 をサポートする任意の GitLab リポジトリーがサポートされます。これには、[Cloud Managerへの外部リポジトリーの追加 ](/help/implementing/cloud-manager/managing-code/external-repositories.md) （`https://git-vendor-name.com/org-name/repo-name.git`）に記載されているように、セルフホスト型の GitLab URL が含まれます。 |
 
 
+#### アクセストークンを管理{#manage-access-tokens}
+
+Cloud Managerで **アクセストークンの管理** を使用して、外部 BYOG リポジトリ（GitHub Enterprise、GitLab、Bitbucket、Azure DevOps など）に関連付けられたアクセストークンを表示、名前変更および削除します。
+
+[ アクセストークンの管理 ](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md) を参照してください。
+
+この新機能のテストやフィードバックの提供に関心がある場合は、Adobe IDに関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) にメールを送信してください。
+
+
 ### Edge Delivery設定パイプラインを追加 {#add-eds-pipeline}
 
 Edge Delivery Servicesで作成されたサイトで Config パイプラインがサポートされるようになり、Cloud Service環境だけでなく、この機能が拡張されました。 **設定パイプライン** を使用して、トラフィックフィルタリングルールや Web アプリケーションファイアウォール（WAF）設定などの設定を管理できます（該当する場合）。 [サポートされている設定](/help/operations/config-pipeline.md#configurations)を参照してください。
 
-![ パイプラインを追加ドロップダウンリストの「Edge Delivery パイプラインを追加」 ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***プログラムの概要**&#x200B;ページ、「**パイプライン**」カードからのEdge Delivery パイプラインの追加*
+![ パイプラインを追加ドロップダウンリストの「Edge Delivery パイプラインを追加」 ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***プログラムの概要**ページ、「**パイプライン**」カードからのEdge Delivery パイプラインの追加*
 
 ![Edge Delivery パイプラインを追加ダイアログボックス ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png)*Edge Delivery パイプラインを追加ダイアログボックス*
 
