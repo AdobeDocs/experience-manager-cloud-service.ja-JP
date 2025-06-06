@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service の生成 AI につい�
 feature: Generative AI
 role: Admin, Architect, Developer, User
 exl-id: 740d9a5b-bd83-4723-a43e-0ead475c3392
-source-git-commit: df463616bcc85fc0065fb708e69d4f7bd5bac131
+source-git-commit: 8e3b3ffed97336580a17ad572cc1793c690a8a7d
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 36%
+source-wordcount: '350'
+ht-degree: 30%
 
 ---
 
@@ -37,6 +37,10 @@ Adobe Experience Manager（AEM）as a Cloud ServiceのAdobe生成 AI を使用�
 * [コンテンツハブの概要](/help/assets/product-overview.md)
 
   コンテンツハブを使用すると、Adobe Express を使用して新しいコンテンツを作成できます（Adobe Express 権限がある場合）。使いやすいツールを使用して既存のコンテンツを編集し、テンプレートとブランド要素を使用してオンブランドのバリエーションを作成し、Adobe Firefly の最新の生成 AI 機能を使用して新しいコンテンツを作成できます。
+
+* [AI で生成されたスマートタグ](/help/assets/metadata-assets-view.md#ai-smart-tags)
+
+  デジタルAssetsの場合、手動入力に依存するのではなく、AI を使用して記述的タグを自動的に割り当てることができます。 これらの AI で生成されるタグは、メタデータの品質を向上させ、アセットの検索、分類およびレコメンデーションを容易にします。 このアプローチは、手動のタグ付けを排除することで効率を向上させるだけでなく、大量のデジタルコンテンツ間の一貫性と拡張性も確保します。
 
 <!-- 
   * [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/aem-ai-assistant.md)
