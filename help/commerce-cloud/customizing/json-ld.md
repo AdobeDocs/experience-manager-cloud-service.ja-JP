@@ -22,8 +22,8 @@ ht-degree: 5%
 ## CIF設定で JSON+LD を有効にする {#enabling}
 
 デフォルトでは、「**JSON+LD を有効にする**」チェックボックスはCIF設定に表示されません。 この機能を有効にするには、必要な OSGi 設定がプロジェクトに含まれている必要があります。これにより、チェックボックスを表示できます。 この設定により、ユーザーは製品ページで JSON+LD スクリプトのサポートを切り替えることができます。
-**JSON+LD を有効にする** チェックボックスをCIF設定で使用できるようにするには、次の OSGi 設定をプロジェクトに追加します：`
-com.adobe.cq.cif.components.models.JsonLdFeatureEnable`。
+**JSON+LD を有効にする** チェックボックスをCIF設定で使用できるようにするには、次の OSGi 設定をプロジェクトに追加します：&grave;
+com.adobe.cq.cif.components.models.JsonLdFeatureEnable&grave;。
 この設定の追加について詳しくは、公開 aem-cif-guides-venia リポジトリの [Json-Ld の設定を追加 ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.cif.components.models.JsonLdFeatureEnable.cfg.json) を参照してください。
 
 この設定を追加してデプロイすると、CIFの設定に「」チェックボックスが表示されます。**JSON+LD** を有効にする手順は次のとおりです。
