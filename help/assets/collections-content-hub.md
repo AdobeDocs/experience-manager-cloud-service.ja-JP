@@ -13,77 +13,41 @@ ht-degree: 57%
 # [!DNL Content Hub] でのコレクションの管理 {#manage-collections}
 
 <table>
-
     <tr>
-
         <td>
-
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
-
         </td>
-
         <td>
-
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-
         </td>
-
         <td>
-
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
-
         </td>
-
         <td>
-
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
-
         </td>
-
           <td>
-
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
-
         </td>
-
     </tr>
-
     <tr>
-
         <td>
-
             <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-
         </td>
-
         <td>
-
             <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
-
         </td>
-
         <td>
-
             <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-
         </td>
-
         <td>
-
             <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-
         </td>
-
         <td>
-
             <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-
         </td>
-
     </tr>
-
 </table>
-
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
 ![コレクションの管理](assets/manage-collection.png)
 
