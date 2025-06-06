@@ -48,6 +48,7 @@ ht-degree: 57%
         </td>
     </tr>
 </table>
+
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
 ![コレクションの管理](assets/manage-collection.png)
 
