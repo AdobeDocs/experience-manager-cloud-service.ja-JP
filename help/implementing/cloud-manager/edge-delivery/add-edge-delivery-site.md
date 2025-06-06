@@ -4,10 +4,10 @@ description: 実稼動プログラムまたはサンドボックスプログラ�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: 88c1712e2021eda2ea66304c65f6d96a1a8155be
+source-git-commit: e99bec4515c79e181ce38b94b1ea327fd99d2695
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 82%
 >[!IMPORTANT]
 >
 >Edge Delivery Services サイトをCloud Managerにオンボーディングする必要がある理由を説明します。
->&#x200B;>[アドビが推奨する Edge Delivery Services のパスを使用するメリット](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)を参照してください。
+>>[アドビが推奨する Edge Delivery Services のパスを使用するメリット](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)を参照してください。
 
 **Cloud Manager に Edge Delivery サイトを追加するには：**
 
@@ -40,7 +40,7 @@ ht-degree: 82%
    | テキストフィールド | 説明 |
    | - | --- |
    | サイト名 | 追加する Edge Delivery サイトの名前を入力します。<br>名前は、Cloud Manager 内でサイトの一意の ID として機能します。 |
-   | Edge Delivery生成元 | この値は、Edge Delivery Servicesのサイトのコンテンツソースへの URL パスを指定します。 また、Cloud Managerをライブサイトにリンクします。<br>URL には通常、*branch*、*project* および *tenant* が含まれます。以下に例を示します（説明用のみ）。<br>`https://main--projectname--tenant.aem.live` |
+   | Edge Delivery オリジン | この値は、Edge Delivery Servicesのサイトのコンテンツソースへの URL パスを指定します。 また、Cloud Managerをライブサイトにリンクします。<br>URL には通常、*branch*、*project* および *tenant* が含まれます。以下に例を示します（説明用のみ）。<br>`https://main--{site}--{org}.aem.live` |
    | サイトの説明（オプション） | 追加する Edge Delivery サイトの簡単な説明を入力します。<br>説明は、サイトを識別して区別するのに役立ち、追加した他のサイトの中で管理および認識しやすくなります。 |
 
 1. ダイアログボックスの右下隅にある「**追加**」をクリックします。
