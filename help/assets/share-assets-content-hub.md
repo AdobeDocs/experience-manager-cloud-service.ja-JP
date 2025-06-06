@@ -3,10 +3,10 @@ title: ' [!DNL the Content Hub] でのアセットの共有'
 description: ' [!DNL the Content Hub] でのアセットの共有'
 role: User
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 0e66b355d09e2fd2c4c8a5ddacc9b2d033b41bf2
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 94%
+source-wordcount: '486'
+ht-degree: 19%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 94%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
         </td>
     </tr>
     <tr>
@@ -57,50 +57,47 @@ ht-degree: 94%
 >
 >[!BADGE コンテンツハブガイドの PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-リンクを通じたアセットの共有は、[!DNL the Content Hub] ユーザーがリソースを利用できるようにする便利な方法です。この機能を使用すると、許可されたユーザーは、自分と共有されているアセットにアクセスしてダウンロードできます。共有リンクからアセットをダウンロードする場合、[!DNL the Content Hub] は、より高速で中断のないダウンロードを提供する非同期サービスを使用します。
+選択したアセットへのリンクを作成して、他のユーザーと簡単に共有できるようにします。 認証済みの [!DNL Content Hub] ユーザーとして、[!DNL Content Hub] 環境で使用可能な 1 つ以上のアセットを選択し、リンクを生成して、他のプライベートまたはパブリックのユーザーに送信します。
 
 ## 前提条件 {#prerequisites}
 
-[コンテンツハブユーザー](deploy-content-hub.md#onboard-content-hub-users)は、この記事で説明されているアクションを実行できます。
+[Content Hub ユーザー ](deploy-content-hub.md#onboard-content-hub-users) 選択したアセットへのリンクを作成し、他のユーザーと共有できます。
 
-## 1 つのアセットの共有 {#share-a-single-asset}
+## アセットを共有する {#share-assets}
 
-1 つのアセットを共有するには、次の手順を実行します。
+1 つ以上のアセットをプライベートユーザーまたはパブリックユーザーと共有するには、次の手順を実行します。
+1. [!DNL Content Hub] ホームページに移動し、1 つ以上のアセットを選択して、![ 共有 ](/help/assets/assets/share.svg) **[!UICONTROL 共有]** をクリックして、**[!UICONTROL アセットを共有]** ダイアログボックスに 1 つの選択したアセットを表示するか、複数の選択したアセットのリストを表示します。
+また、![collections](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections]** で使用可能なアセットを選択して共有することもできます。
+1. **[!UICONTROL アセットを共有]** ダイアログボックスで、アセットを表示するか、使用可能なアセットのリストを確認します。 アセットの横にある ![ 選択解除 ](/help/assets/assets/Close.svg) をクリックして、リストから選択を解除します。
+1. **[!UICONTROL 有効期限]** を選択し、「**[!UICONTROL プライベートリンクを生成]**」をクリックして、プライベートユーザーと共有するリンクを生成します。 プライベートユーザーが自分の [!DNL Content Hub] 環境にログインして、共有アセットページにアクセスします。
+   ![ プライベートリンクとパブリックリンク ](/help/assets/assets/private-and-public-link.png)
+**[!UICONTROL 公開リンク]** 切り替えスイッチを有効にし、**[!UICONTROL 有効期限]** を選択して **[!UICONTROL 公開リンクを生成]** をクリックして、公開ユーザーと共有するリンクを生成します。 公開ユーザーはゲストとして、[!DNL Content Hub] にログインせずに共有アセットページにアクセスします。
+   ![ プライベートリンクとパブリックリンク ](/help/assets/assets/public-and-private-link.png)
 
-1. アセットを選択し、![共有アイコン](assets/share.svg) アイコンをクリックして、アセットを共有します。
+   >[!NOTE]
+   > 
+   > [ アセットを共有 ](/help/assets/configure-content-hub-ui-options.md#enable-public-link-sharing) ダイアログボックスに **[!UICONTROL 公開リンク]** を表示するには、**[!UICONTROL 設定ページから公開リンク共有を有効にする]** を有効にします。
 
-   ![1 つのアセットの共有](assets/sharing-single-asset.png)
+## プレビューページからのアセットの共有 {#share-asset-from-preview-page}
 
-1. 「**[!UICONTROL 有効期限]**」フィールドを使用して、リンクの有効期限を指定します。24 時間、1 週間、30 日、90 日、1 年などの使用可能なオプションの 1 つを選択するか、カスタム日付を指定します。
+アセットをプレビューしながら共有するには、次の手順を実行します。
 
-1. 「**[!UICONTROL 共有リンクをコピー]**」をクリックします。コピーしたリンクを受信者と共有できます。
-
-## 複数のアセットの共有 {#share-multiple-assets}
-
-[!DNL The Content Hub] では、共有リンクを通じて複数のアセットを共有できます。次の手順を実行します。
-
-1. 承認済み受信者と共有する必要があるアセットを選択します。複数のアセットを 1 つずつ選択することも、「**[!UICONTROL すべて選択]**」をクリックして使用可能なすべてのアセットを一度に選択することもできます。「**[!UICONTROL すべて選択]**」オプションは、1 つ以上のアセットを選択した場合にのみ表示されます。
-
-1. ![共有アイコン](assets/share.svg) アイコンをクリックします。
-
-   ![複数のアセットの共有](assets/sharing-multiple-assets.png)
-
-1. プレビューセクションでは、要件に応じてアセットを削除することもできます。「**[!UICONTROL 有効期限]**」フィールドを使用して、リンクの有効期限を指定します。24 時間、1 週間、30 日、90 日、1 年などの使用可能なオプションの 1 つを選択するか、カスタム日付を指定します。
-
-1. 「**[!UICONTROL 共有リンクをコピー]**」をクリックします。コピーしたリンクを受信者と共有できます。
-
-## アセットのプレビューと共有 {#preview-assets}
-
-リンクの受信者と共有する前に、共有するデジタルアセットの外観をプレビューして確認できます。プレビューする必要があるアセットをクリックします。[!DNL Content Hub] には、[アセットの詳細ビュー](asset-properties-content-hub.md)が表示されます。
-
-![共有アイコン](assets/share.svg) アイコンをクリックして、アセットを共有します。「**[!UICONTROL 有効期限]**」フィールドを使用して、リンクの有効期限を指定します。24 時間、1 週間、30 日、90 日、1 年などの使用可能なオプションの 1 つを選択するか、カスタム日付を指定します。「**[!UICONTROL 共有リンクをコピー]**」をクリックします。コピーしたリンクを受信者と共有できます。
-
-![コンテンツハブでのアセットのプレビュー](assets/preview-assets-content-hub.png)
+1. [!DNL Content Hub] ホームページに移動し、アセットのサムネールをクリックしてアセットをプレビューし、ダイアログボックスの右側のパネルにメニューオプションを表示します。
+1. ![ 共有 ](/help/assets/assets/share.svg) を選択して **[!UICONTROL 共有]** パネルを表示します。
+   ![ プレビュー中にアセットを共有 ](/help/assets/assets/share-assets-from-share-panel.png)
+1. [ アセットを共有 ](#share-assets) セクションの手順 3 に従って、この **[!UICONTROL 共有]** パネルからアセットリンク（プライベートまたはパブリック）を生成して共有します。
 
 ## 共有アセットにアクセス {#access-shared-assets}
 
-許可された受信者は、アセットのリンクを共有した後、リンクをクリックし、web ブラウザーで共有アセットをプレビューまたはダウンロードできます。
+リンクから共有アセットページにアクセスし、次の手順を実行します。
 
-共有リンクをクリックし、アセットカードにあるダウンロードアイコンをクリックして、アセットをダウンロードします。また、複数のアセットを選択して、「**[!UICONTROL ダウンロード]**」をクリックすることもできます。<!--You can either download original assets or Original+Renditions of an asset.--> [!DNL The Content Hub] では、各アセットを 1 つずつローカルファイルシステムにダウンロードします。
+* 1 つ以上のアセットを選択し、「![ ダウンロード ](/help/assets/assets/download-icon.svg)**[!UICONTROL ダウンロード]**」をクリックして、利用可能なダウンロードオプションから **[!UICONTROL オリジナル]**、**[!UICONTROL 静的]** または両方のレンディションを選択します。
+  ![](/help/assets/assets/download-shared-assets.png)
+* アセットのサムネールをクリックして、アセットのメタデータを表示します。
+* 共有アセットページ（[ プライベートリンクを使用してアクセス ](#share-assets)）でアセットのサムネールをクリックし、![ ダウンロード ](/help/assets/assets/download-icon.svg) を選択して、アセットを選択およびダウンロードする前に、**[!UICONTROL ダウンロード]** パネルでアセットの使用可能な動的レンディションを選択して表示します。
+  ![](/help/assets/assets/download-renditions-shared-assets-page.png)
 
-![共有リンクへのアクセス](assets/content-hub-access-shared-links.png)
+
+
+
+

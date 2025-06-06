@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="早期導入者" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: d0cf86d429c7374ad12f6eeb9f287b0ace3406ec
-workflow-type: ht
-source-wordcount: '2074'
-ht-degree: 100%
+source-git-commit: e881c3d8af7127e030aa9a0a2c163eaf04870c2b
+workflow-type: tm+mt
+source-wordcount: '2079'
+ht-degree: 99%
 
 ---
 
@@ -19,10 +19,12 @@ Cloud Manager に外部リポジトリを追加する方法について説明し
 また、Azure DevOps Git リポジトリを Cloud Manager にオンボードできるようになりました。これは、最新の Azure DevOps リポジトリとレガシー VSTS（Visual Studio Team Services）リポジトリの両方に対応しています。
 
 * Edge Delivery Services のユーザーは、オンボードされたリポジトリを使用して、サイトコードを同期およびデプロイできます。
-* AEM as a Cloud Service および Adobe Managed Services（AMS）のユーザーは、リポジトリをフルスタックパイプラインとフロントエンドパイプラインの両方にリンクできます。&#39;
+* AEM as a Cloud Service および Adobe Managed Services（AMS）のユーザーは、リポジトリをフルスタックパイプラインとフロントエンドパイプラインの両方にリンクできます。
+
 >[!NOTE]
 >
 >この記事で説明する機能は、早期導入プログラムを通じてのみ使用できます。詳細と早期導入者としての新規登録について詳しくは、[独自の Git の導入](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)を参照してください。
+
 
 ## 外部リポジトリの設定
 
@@ -82,13 +84,16 @@ Cloud Manager での外部リポジトリの設定は、次の手順で構成さ
    | | **リポジトリタイプ：Bitbucket**<ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Bitbucket ドキュメント](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)を使用して、リポジトリアクセストークンを作成します。<li>Bitbucket 個人アクセストークン（PAT）に必須の権限<br>これらの権限により、Cloud Manager でリポジトリコンテンツへのアクセス、プルリクエストの管理、webhook イベントの構成または反応が可能になります。<br>Bitbucket でアプリパスワードを作成する場合は、次の必須のアプリパスワード権限が含まれていることを確認します。<ul><li>リポジトリ（読み取り専用）<li>プルリクエスト（読み取りおよび書き込み）<li>webhook（読み取りおよび書き込み）</li></li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
    | | **リポジトリタイプ：Azure DevOps**<ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Azure DevOps ドキュメント](https://learn.microsoft.com/ja-jp/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&amp;tabs=Windows)を使用して、リポジトリアクセストークンを作成します。<li>Azure DevOps 個人アクセストークン（PAT）に必須の権限。<br>これらの権限により、Cloud Manager でリポジトリコンテンツへのアクセス、プルリクエストの管理、webhook イベントを構成または反応できるようになります。<br>Azure DevOps でアプリパスワードを作成する場合は、次の必須のアプリパスワード権限が含まれていることを確認します。<ul><li>リポジトリ（読み取り専用）</li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
 
+   [ アクセストークンの管理 ](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md) も参照してください。
+
    >[!IMPORTANT]
    >
    >**新しいアクセストークンを追加**&#x200B;機能は現在、早期導入フェーズにあります。さらに機能の追加が予定されています。その結果、アクセストークンに必要な権限が変更される場合があります。また、トークンを管理するユーザーインターフェイスが更新され、トークンの有効期限などの機能が含まれる可能性もあります。さらに、リポジトリにリンクされたトークンが有効なままであることを確認する自動チェックが行われます。
 
 1. 「**検証**」をクリックします。
 
-検証後、外部リポジトリを使用してパイプラインにリンクする準備が整います。
+   検証後、外部リポジトリを使用してパイプラインにリンクする準備が整います。
+
 
 ## 検証済みの外部リポジトリのパイプラインへのリンク {#validate-ext-repo}
 
@@ -112,6 +117,7 @@ Cloud Manager での外部リポジトリの設定は、次の手順で構成さ
 >[!TIP]
 >
 >Cloud Manager でのリポジトリ管理について詳しくは、[Cloud Manager リポジトリ](/help/implementing/cloud-manager/managing-code/managing-repositories.md)を参照してください。
+
 
 ## 外部リポジトリの webhook の設定 {#configure-webhook}
 
@@ -171,6 +177,7 @@ URL をプレーンテキストファイルにペーストします。コピー�
    | GitLab | これらの webhook イベントにより、コードをプッシュした際や結合リクエストを送信した際に、Cloud Manager でパイプラインをトリガーできます。また、プルリクエストの検証に関連するコメントも（メモイベントを通じて）追跡します。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プッシュイベント<li>結合リクエストイベント<li>メモイベント</li></li></li></ul></ul></ul> |
    | Bitbucket | これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト：作成済み<li>プルリクエスト：更新済み<li>プルリクエスト：結合済み<li>プルリクエスト：コメント<li>リポジトリ：プッシュ</li></li></li></ul></ul></ul> |
    | Azure DevOps | これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>リポジトリ：プッシュ</li></li></ul></ul></ul> |
+
 
 ### Webhook を使用したプルリクエストの検証
 

@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fdf28905b16b4cc5c6947b8b216940b0c43b2a6a
+source-git-commit: 4ddca61044d7923db9fd08b96cb18cedfd71cf70
 workflow-type: tm+mt
-source-wordcount: '1377'
-ht-degree: 85%
+source-wordcount: '1493'
+ht-degree: 94%
 
 ---
 
@@ -60,6 +60,19 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 ![パイプラインアクション](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
+### パイプラインのお気に入りのマーク{#pipeline-favorites}
+
+特定のパイプラインをお気に入りとしてマークして、「**パイプライン**」ページのリストの上部に表示できます。 この機能により、頻繁にアクセスするパイプラインを見つけて実行しやすくなります。
+
+**パイプラインのお気に入りをマークするには：**
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
+1. **プログラムの概要**&#x200B;ページで、![パイプラインタブ - ワークフローアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)「**パイプライン**」タブをクリックします。
+1. パイプライン ページのパイプライン名とタイプの左側で、![ お気に入りのないパイプラインの場合は星形アウトラインアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg) をクリックして、お気に入りリストに追加します。
+または、![ お気に入りのパイプラインのスターアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg) をクリックして、お気に入りリストからパイプラインを削除します。
+
+
 ## アクティビティページ {#activity}
 
 **アクティビティ**&#x200B;ページには、選択したプログラムのすべてのパイプライン実行とその他の重要なプログラムイベントの完全なリストが表示されます。
@@ -98,20 +111,20 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 ## 複数のパイプラインの実行 {#run-multiple-pipelines}
 
-Cloud Managerでは、複数のパイプラインを同時に実行できるので、AEM as a Cloud Serviceのお客様はデプロイメントを効率的に行えます。 **選択して実行** 機能を使用すると、複数のパイプラインを選択して、一度に実行するようにトリガーできます。 パイプラインを個別に実行する手動の手間を軽減し、ビルドおよびデプロイメントワークフローを最適化できます。
+Cloud Manager を使用すると、複数のパイプラインを同時に実行できるので、AEM as a Cloud Service のお客様のデプロイメント効率が向上します。**選択されている実行**&#x200B;機能を使用すると、複数のパイプラインを選択し、一度に実行するようにトリガーできます。これにより、パイプラインを個別に実行する必要がある手動の作業が軽減され、ビルドとデプロイメントのワークフローが最適化されます。
 
 **複数のパイプラインを実行するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
-1. 左側のメニューで、![ ワークフローアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **パイプライン** をクリックします。
-1. **パイプライン** ページのテーブルで、実行するパイプラインの横にあるチェックボックスをオンにします。
-必要に応じて、![ フィルターアイコン、ファネル ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)**フィルター** をクリックして、名前、環境、デプロイされたコードタイプ、またはこれら 3 つすべてを組み合わせてパイプラインを並べ替えます。
-1. ページの右上隅付近にある「**選択したファイル名を指定（x）**」をクリックします。
-1. **選択したパイプラインを実行（x）** ダイアログボックスで、「**実行（x）**」をクリックします。
+1. 左側のサイドメニューから、![ワークフローアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **パイプライン**&#x200B;をクリックします。
+1. **パイプライン**ページのテーブルで、実行するパイプラインの横にあるチェックボックスをオンにします。
+必要に応じて、![フィルターアイコン、ファネル](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **フィルター**&#x200B;をクリックして、パイプラインを名前、環境、デプロイされたコードタイプ、またはこれら 3 つすべての組み合わせで並べ替えます。
+1. ページの右上隅付近にある「**選択されている実行（x）**」をクリックします。
+1. **選択されているパイプラインを実行（x）**&#x200B;ダイアログボックスで、「**実行（x）**」をクリックします。
 
-   「**実行**」ボタンには、続行できるパイプラインの数が反映されます。 例えば、4 つのパイプラインを選択したのに、1 つのパイプラインが既に実行されている場合などです。 または、選択したパイプラインにリンクされた環境が存在しない。 このような場合、システムはそれに応じて調整します。 ボタンが「実行（3）」に更新され、3 つのパイプラインを続行できることが示されます。
+   「**実行**」ボタンには、実行できるパイプラインの数が反映されます。例えば、4 つのパイプラインを選択したが、1 つが既に実行されている場合があります。または、選択したパイプラインにリンクされた環境が存在しなくなりました。このような場合、システムはそれに応じて調整します。ボタンが「実行（3）」に更新され、3 つのパイプラインが続行できることが示されます。
 
-1. パイプラインが実行を開始し、そのステータスが **パイプライン** リストに更新されます。
+1. パイプラインの実行が開始され、**パイプライン**&#x200B;リストにそのステータスが更新されます。
 
 ## パイプラインの編集 {#editing-pipelines}
 
@@ -209,3 +222,4 @@ Cloud Managerでは、複数のパイプラインを同時に実行できるの�
    ![パイプラインの詳細をキャンセル](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
 
 1. 「**キャンセル**」をクリックします。
+
