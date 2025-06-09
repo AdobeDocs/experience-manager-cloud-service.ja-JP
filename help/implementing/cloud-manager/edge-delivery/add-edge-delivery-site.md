@@ -16,7 +16,7 @@ ht-degree: 91%
 >[!IMPORTANT]
 >
 >Cloud Manager に Edge Deliver Services サイトをオンボーディングする必要がある理由について説明します。
->>[アドビが推奨する Edge Delivery Services のパスを使用するメリット](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)を参照してください。
+>&#x200B;>[アドビが推奨する Edge Delivery Services のパスを使用するメリット](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)を参照してください。
 
 **Cloud Manager に Edge Delivery サイトを追加するには：**
 
