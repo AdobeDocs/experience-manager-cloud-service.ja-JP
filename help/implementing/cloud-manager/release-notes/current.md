@@ -111,7 +111,7 @@ Cloud Managerで **アクセストークンの管理** を使用して、外部 
 
 Edge Delivery Services を使用して作成されたサイトで設定パイプラインがサポートされるようになりました。これにより、Cloud Service 環境以外でもこの機能を利用できます。**設定パイプライン**&#x200B;を使用すると、トラフィックフィルタリングルールや web アプリケーションファイアウォール（WAF）設定などの設定を管理できます（該当する場合）。[サポートされている設定](/help/operations/config-pipeline.md#configurations)を参照してください。
 
-![ パイプラインを追加ドロップダウンリストの「Edge Delivery パイプラインを追加」 ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***プログラムの概要**ページ、「**パイプライン**」カードからのEdge Delivery パイプラインの追加*
+![ パイプラインを追加ドロップダウンリストの「Edge Delivery パイプラインを追加」 ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***プログラムの概要**&#x200B;ページ、「**パイプライン**」カードからのEdge Delivery パイプラインの追加*
 
 ![Edge Delivery パイプラインを追加ダイアログボックス ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png)*Edge Delivery パイプラインを追加ダイアログボックス*
 
