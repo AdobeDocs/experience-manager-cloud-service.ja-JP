@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1853'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,6 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
       ![fstab.yaml ファイルを開く](/help/edge/docs/forms/assets/open-fstab.png)
 
    1. **fstab.yaml** ファイルを編集して、プロジェクトのマウントポイントを更新します。URL を AEM as a Cloud Service オーサリングインスタンスの URL に置き換えます。
-
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![fstab.yaml ファイルを編集](/help/edge/docs/forms/assets/edit-fstab-file.png)
@@ -166,18 +165,18 @@ GitHub プロジェクトが完成したら、AEM as a Cloud Service オーサ�
 >[!NOTE]
 >
 >
-> この手順は、[AEM ボイラープレート XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk) で作成されたプロジェクトに適用されます。 [AEM Forms ボイラープレート](https://github.com/adobe-rnd/aem-boilerplate-forms)を使用して AEM プロジェクトを作成した場合は、この手順をスキップできます。
+> この手順は、[AEM ボイラープレート XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk) を使用して作成したプロジェクトに適用されます。[AEM Forms ボイラープレート](https://github.com/adobe-rnd/aem-boilerplate-forms)を使用して AEM プロジェクトを作成した場合は、この手順をスキップできます。
 
 統合するには：
 
-1. ローカルシステム上のAEM プロジェクトリポジトリーフォルダーに移動します。
+1. ローカルシステム上の AEM プロジェクトリポジトリフォルダーに移動します。
 
 1. 次のフォルダーとファイルを [AEM Forms ボイラープレート](https://github.com/adobe-rnd/aem-boilerplate-forms)から AEM プロジェクトにコピー＆ペーストします。
 
-   * [ フォームブロック ](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) フォルダー
+   * [フォームブロック](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)フォルダー
    * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) ファイル
    * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) ファイル
-1. AEM プロジェクトの `/scripts/editor-support.js` ファイルに移動し、AEM Forms Boilerplate の [editor-support.js ファイルで更新し ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js) す。
+1. AEM プロジェクトの `/scripts/editor-support.js` ファイルに移動し、[AEM Forms ボイラープレート内の editor-support.js ファイル](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)で更新します。
 1. AEM プロジェクトの `/models/_section.json` に移動し、「form」と「embed-adaptive-form」を `filters` オブジェクトのコンポーネント配列に追加します。
 
    ```
@@ -194,7 +193,7 @@ GitHub プロジェクトが完成したら、AEM as a Cloud Service オーサ�
     }]
    ```
 
-1. （オプション）AEM プロジェクトの `/.eslintignore` に移動して、次のコード行を追加します。
+1. （オプション）AEM プロジェクトの `/.eslintignore` に移動し、次のコード行を追加します。
 
    ```
    blocks/form/rules/formula/*
@@ -246,7 +245,7 @@ GitHub プロジェクトが完成したら、AEM as a Cloud Service オーサ�
 
    >[!NOTE]
    >
-   > 変更内容を GitHub のAEM プロジェクトリポジトリにプッシュする前に、AEM プロジェクトのルートレベルにある `component-definition.json`、`component-models.json`、`component-filters.json` の各ファイルがフォーム関連オブジェクトで更新されていることを確認してください。
+   > 変更内容を GitHub の AEM プロジェクトリポジトリにプッシュする前に、AEM プロジェクトのルートレベルにある `component-definition.json`、`component-models.json`、`component-filters.json` の各ファイルがフォーム関連オブジェクトで更新されていることを確認してください。
 
 1. これらの変更を GitHub 上の AEM プロジェクトリポジトリにコミットしてプッシュします。
 
@@ -345,7 +344,7 @@ WYSIWYG オーサリング用のユニバーサルエディターで AEM プロ�
        npm install -g @adobe/aem-cli
    ```
 
-1. **GitHub プロジェクトのクローンを作成します**。次のコマンドを使用して、GitHub から AEM プロジェクトリポジトリのクローンを作成します。 &lt;owner> リポジトリの所有者と &lt;repo> リポジトリ名を置き換えます。
+1. **GitHub プロジェクトのクローンを作成します**。次のコマンドを使用して、GitHub から AEM プロジェクトリポジトリのクローンを作成します。 <owner> リポジトリの所有者と <repo> リポジトリ名を置き換えます。
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -374,8 +373,8 @@ WYSIWYG オーサリング用のユニバーサルエディターで AEM プロ�
 * **lint エラーの処理：**
 lint エラーが発生した場合は、回避できます。 [EDS プロジェクト]/package.json ファイルを開き、「lint」スクリプトを `"lint": "npm run lint:js && npm run lint:css"` から `"lint": "echo 'skipping linting for now'"` に変更します。 ファイルを保存し、変更を GitHub プロジェクトにコミットします。
 
-* **モジュール パス解決エラー：**
-「モジュール「/scripts/lib-franklin.js」へのパスを解決できません」というエラーが発生した場合は、[EDS Project]/blocks/forms/form.js ファイルに移動します。 lib-franklin.js ファイルを aem.js ファイルに置き換えて、読み込みステートメントを更新します。
+* **モジュールパスエラーの解決：**
+「モジュール &#39;/scripts/lib-franklin.js&#39; へのパスを解決できません」というエラーが発生した場合は、[EDS プロジェクト]/blocks/forms/form.js ファイルに移動します。lib-franklin.js ファイルを aem.js ファイルに置き換えて、読み込みステートメントを更新します。
 
 ## 関連トピック
 

@@ -3,9 +3,9 @@ title: コンテンツハブに関するよくある質問（FAQ）
 description: コンテンツハブに関するよくある質問（FAQ）への回答を参照してください。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 95c643151e4828fa2eae0725dc1081aeeabc42fb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1367'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -111,23 +111,23 @@ AEM as a Cloud Service 環境でコンテンツハブを使用してアップロ
 
 1. 「**[!UICONTROL 変更日]**」フィールドを使用して、アセットを並べ替えます。
 
-## アセットを混在させて新しいバリエーションを作成できるように、アセットカードに「Adobe Expressを使用して編集」オプションが表示されるのはなぜですか。 {#edit-using-express-not-available}
+## アセットをリミックスして新しいバリエーションを作成できるように、アセットカードで Adobe Express オプションを使用している際に「編集」が表示されないのはなぜですか？ {#edit-using-express-not-available}
 
-アセットカードに「**Adobe Expressを使用して編集**」オプションが表示されるには、[&#128279;](#onboard-content-hub-users-add-assets)Content Hub ユーザーの権限（アセットを新しいバリエーションにリミックスする権限を持つ）に加えて、Adobe Express Enterprise または Teams の使用権限（[ プラン ](https://www.adobe.com/express/pricing) を参照）が必要  す。
+アセットカードで「**Adobe Express を使用して編集**」オプションを表示するには、[コンテンツハブユーザーの権限（アセットを新しいバリエーションにリミックスする権限）](#onboard-content-hub-users-add-assets)に加えて、Adobe Express または Teams の使用権限（[プラン](https://www.adobe.com/jp/express/pricing)を参照）も必要です。
 
-ユーザーを [!DNL Content Hub] および [!DNL Adobe Express] に割り当てる方法に関する設定がいくつかあります。
+ユーザーを [!DNL Content Hub] および [!DNL Adobe Express] に割り当てるには、いくつかの設定方法があります。
 
-1. 組織には [Assets Ultimate](/help/assets/assets-ultimate-overview.md) または [Assets Prime](/help/assets/assets-prime.md) のライセンスがあり、Adobe Expressの使用権限（共同作業者またはパワーユーザー）を含む Admin Console のExperience Manager プロファイルの 1 つにユーザーが割り当てられています。 この統合は、追加の設定を行わなくても機能します。
+1. 組織が [Assets Ultimate](/help/assets/assets-ultimate-overview.md) または [Assets Prime](/help/assets/assets-prime.md) のライセンスを保有し、Adobe Express のエンタイトルメント（共同作業者またはパワーユーザー）を含む Admin Consoleで、Experience Manager プロファイルの 1 つにユーザーが割り当てられている。この統合は、追加の設定を行わなくても機能します。
 
-1. [!DNL Adobe Express] は、[!DNL Content Hub] を使用して [!DNL Experience Manager Assets] と同じ [!DNL Adobe Admin Console] にデプロイされます。 この統合は、追加の設定を行わなくても機能します。
+1. [!DNL Adobe Express] が、[!DNL Content Hub] を使用して [!DNL Experience Manager Assets] と同じ [!DNL Adobe Admin Console] にデプロイされている。この統合は、追加の設定を行わなくても機能します。
 
-1. [!DNL Adobe Express] は、[!DNL Content Hub] を使用する [!DNL Experience Manager Assets] とは異なる [!DNL Adobe Admin Console] にデプロイされます。 この場合、[!DNL Assets] 管理者は、統合が機能するように統合を設定できます（[ ドキュメント ](/help/assets/connect-assets-with-creative-cloud.md) を参照）。
+1. [!DNL Adobe Express] が、[!DNL Content Hub] を使用して [!DNL Experience Manager Assets] とは異なる [!DNL Adobe Admin Console] にデプロイされている。この場合、[!DNL Assets] 管理者は、統合が機能するように設定できます（[ドキュメント](/help/assets/connect-assets-with-creative-cloud.md)を参照）。
 
    >[!NOTE]
    >
-   >2 つの Admin Console で Express およびAssetsの製品プロファイルに割り当てられたユーザーは、同じメールアドレスを持ち、**個人** アカウントではなく、ビジネス **エンタープライズまたはスクール** アカウントを使用する必要があります。 理想的な設定は、両方の Admin Console を **Federated ID** として設定し、それらの間にトラスト関係を設定して、シームレスなシングルサインオンエクスペリエンスを実現することです。 一部の Express プラン（Express Teams など）では、Federated ID / シングルサインオンがサポートされていません。
+   >2 つの Admin Console で Express および Assets の製品プロファイルに割り当てられたユーザーは、同一のメールアドレスと、**個人**&#x200B;アカウントではなく、ビジネス&#x200B;**エンタープライズまたはスクール**&#x200B;アカウントを使用する必要があります。理想的な設定は、両方の Admin Console を **Federated ID** として設定し、コンソール間の信頼関係を確立し、シームレスなシングルサインオンエクスペリエンスを実現することです。一部の Express プラン（Express Teams など）では、Federated ID／シングルサインオンはサポートされていません。
 
-適切な製品の使用権限に加えて、Content HubのAdobe Express統合では、割り当てられたユーザーが、Content Hubを動作させるAssets オーサー環境（少なくとも **[!UICONTROL # /content/dam/hydrated-assets/]** フォルダー階層）で [!UICONTROL &#x200B; 編集可能 &#x200B;] 以上の権限を持っている必要があります。このフォルダー階層では、Content Hub ユーザーが Express を使用して作成したコンテンツを保存できます。 詳しくは、管理ビュー（タッチ UI）の [ 権限管理 ](/help/security/touch-ui-principal-view.md) またはシンプル化された [Assets ビューの権限管理 ](https://experienceleague.adobe.com/ja/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) を参照してください。
+コンテンツハブの Adobe Express 統合では、適切な製品の使用権限に加えて、割り当てられたユーザーが、コンテンツハブを動作させる Assets オーサー環境（少なくとも **[#UICONTROL /content/dam/hydrated-assets/]** フォルダー階層）で[!UICONTROL 編集可能]の権限を持っている必要があります。このフォルダー階層では、コンテンツハブユーザーは Express を使用して作成したコンテンツを保存できます。詳しくは、管理ビュー（タッチ UI）の [権限管理](/help/security/touch-ui-principal-view.md)または簡易版の [アセットビューの権限管理](https://experienceleague.adobe.com/ja/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)を参照してください。
 
 ## 組織のブランドガイドラインがホームページのリンクとして表示されるようにコンテンツハブを設定できますか？ {#content-hub-setup-brand-guidelines}
 

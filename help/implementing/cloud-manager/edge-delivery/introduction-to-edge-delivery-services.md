@@ -5,9 +5,9 @@ exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '798'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 89%
 Edge Delivery Services は、web サイト上のコンテンツの柔軟なオーサリングを実現する、合成可能なサービスセットです。この機能では、次の操作を実行できます。
 
 * 完璧な Lighthouse スコアで高速なサイトを作成する。
-* 運用上のテレメトリにより、パフォーマンスを継続的に監視します。
+* 運用テレメトリを通じて、パフォーマンスを継続的に監視します。
 * コンテンツソースを分離することでオーサリング効率を向上させる。
 
 ユニバーサルエディターを使用した AEM コンテンツ管理および WYSIWYG オーサリングと、ドキュメントベースのオーサリングの両方を使用できます。
@@ -43,9 +43,9 @@ Cloud Manager を通じて Edge Delivery Services ライセンスにアクセス
 * [SLA レポートへのアクセス](/help/implementing/cloud-manager/sla-reporting.md)（*近日公開予定*）
 * 登録済みの実稼動プログラムに関する[アドビサポートにアクセス](/help/edge/overview.md#support-ticket)できます。
 
-Edge Delivery Services（EDS）ライセンスをお持ちの場合、Edge Delivery サイトに [Adobe管理の CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) を使用し、セルフサービス CDN 管理や、DV 証明書が削除されない限り、3 か月ごとに自動更新などの機能を利用できます。
+Edge Delivery Services（EDS）ライセンスをお持ちの場合、Edge Delivery サイトで[アドビが管理する CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) を使用し、セルフサービス CDN 管理や、DV 証明書の 3 か月ごとの自動更新（削除された場合を除く）機能を利用できます。
 
-また、CDN （Adobeの管理による CDN 以外の CDN）を使用する場合は、Edge Delivery Servicesのライセンスに関係なく、`aem.live` プラットフォームで設定する必要があります。 [BYO CDN 設定 ](https://www.aem.live/docs/byo-cdn-setup) を参照してください。
+または、自分の CDN （アドビが管理する CDN 以外の CDN）を使用する場合は、Edge Delivery Services　のライセンスに関係なく、CDN を `aem.live` プラットフォームで設定する必要があります。[BYO CDN 設定](https://www.aem.live/docs/byo-cdn-setup)を参照してください。
 
 
 ## 実稼動プログラムまたはサンドボックスプログラムへの Edge Delivery Services の追加について
@@ -82,11 +82,11 @@ Cloud Manager の **Edge Delivery の TODO リスト**&#x200B;は、オンボー
 | 3 | Edge Delivery サイトを追加または<br>今すぐサイトを作成 | [Edge Delivery サイトの追加](#eds-add-site)を参照してください。<br>[Cloud Manager での Edge Delivery サイトの作成](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)を参照してください。 |
 | 4 | ドメインを追加 | [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。 |
 | 5 | SSL 証明書を追加 | [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)を参照してください。 |
-| 6 | Edge Delivery サイトの CDN を設定 | [ ドメインマッピングの追加 ](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) を参照してください。 |
+| 6 | Edge Delivery サイトの CDN を設定 | [ドメインマッピングの追加](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)を参照してください。 |
 | 7 | プッシュ検証を設定 | [Edge Delivery サイト用のプッシュ検証の設定](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)を参照してください。 |
 | 8 | 運用開始 | [運用開始チェックリスト](/help/edge/docs/go-live-checklist.md)を参照してください。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441562?learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## サポートチケットのログ {#eds-support-ticket}
 

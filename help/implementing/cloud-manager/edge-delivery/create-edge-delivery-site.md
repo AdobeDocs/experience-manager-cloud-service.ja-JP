@@ -1,19 +1,19 @@
 ---
-title: ワンクリックで最初のEdge Delivery サイトを作成
+title: 最初の Edge Delivery サイトをワンクリックで作成
 description: ボタンをクリックするだけで Cloud Manager で Edge Delivery サイトをすばやく作成する方法について説明します。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
 source-git-commit: 0c4ef0eb5bb7caa5cd68dac6c788b37f564e1770
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '945'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# ワンクリックで最初のEdge Delivery サイトを作成{#about-one-click-edge-delivery-site}
+# 最初の Edge Delivery サイトをワンクリックで作成{#about-one-click-edge-delivery-site}
 
-最初のEdge Delivery サイトをワンクリックで作成すると、Cloud Manager内でEdge Delivery サイトのオンボーディングとデプロイを自動化するのに役立ちます。 ボタン 1 回をクリックするだけで、プロセスが大幅に簡素化されます。この 1 回のクリックで、必要なインフラストラクチャがプロビジョニングされ、GitHub と統合してバージョン管理を行い、Google Drive でドキュメントとアセットのストレージが設定されます。
+最初の Edge Delivery サイトをワンクリックで作成する機能は、Cloud Manager 内で Edge Delivery サイトのオンボーディングとデプロイメントを自動処理できるように設計されています。ボタン 1 回をクリックするだけで、プロセスが大幅に簡素化されます。この 1 回のクリックで、必要なインフラストラクチャがプロビジョニングされ、GitHub と統合してバージョン管理を行い、Google Drive でドキュメントとアセットのストレージが設定されます。
 
 この自動処理により、最初のサイトを設定するのに必要な手作業の労力が軽減されます。エッジでのコンテンツ管理に関して、シームレスなワークフローとスケーラビリティが確保され、チームのパフォーマンスが向上します。
 

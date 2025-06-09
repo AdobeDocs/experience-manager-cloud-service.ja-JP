@@ -5,9 +5,9 @@ feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
 source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1207'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 82%
 
 ## 考慮事項
 
-* ユニバーサルエディターインターフェイスの **データソース** アイコンや、右側のプロパティパネルの **バインド参照** プロパティが表示されない場合は、**Extension Manager** で **データソース** 拡張機能を有効にします。
+* ユニバーサルエディターインターフェイスの「**データソース**」アイコンや、右側のプロパティパネルの&#x200B;**連結参照**&#x200B;プロパティが表示されない場合は、**Extension Manager** で&#x200B;**データソース**&#x200B;拡張機能を有効にします。
 
-  ![ 拡張機能マネージャー ](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+  ![Extension Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
-  ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
+  ユニバーサルエディターで拡張機能を有効または無効にする方法については、](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager 機能のハイライト[の記事を参照してください。
 
 * ユニバーサルエディターのフォームの事前入力サービスは、現在サポートされていません。
 
@@ -133,27 +133,26 @@ ht-degree: 82%
 
    ![フォームの作成](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-**連結参照** プロパティから選択して、フォームフィールドにデータ連結を追加できます。 例えば、フォームに既に存在する **Id** テキストボックスに、データ連結参照を追加します。
-データソースツリーでフォームフィールドのデータ連結を選択するには、次の手順を実行します。
+データ連結は、**連結参照**&#x200B;プロパティから選択してフォームフィールドに追加できます。例えば、フォームに既に存在する **ID** テキストボックスにデータ連結参照を追加してみましょう。データソースツリーからフォームフィールドのデータ連結を選択するには、次の手順を実行します。
 
-1. データバインド参照を追加するフォームフィールドのプロパティを開きます。
-1. 「**バインド参照**」プロパティに移動し、「**参照** アイコンをクリックします。
+1. データ連結参照を追加するフォームフィールドのプロパティを開きます。
+1. **連結参照**&#x200B;プロパティに移動し、「**参照**」アイコンをクリックします。
 
-   ![フォームフィールドのデータバインディングを手動で追加](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
+   ![フォームフィールドのデータ連結を手動で追加](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
 
-1. **連結参照を選択** ウィザードで、データソースツリーからデータ連結参照を選択します。
+1. **連結参照を選択**&#x200B;ウィザードで、データソースツリーからデータ連結参照を選択します。
 
-   ![ データ バインド リファレンスの選択 ](/help/edge/docs/forms/universal-editor/assets/select-bind-reference.png)
+   ![データ連結参照を選択](/help/edge/docs/forms/universal-editor/assets/select-bind-reference.png)
 
-1. フォームフィールドにバインドするデータ要素をデータソースツリーから選択し、「**選択** をクリックします。
+1. フォームフィールドに連結するデータ要素をデータソースツリーから選択し、「**選択**」をクリックします。
 
-   ![ データ要素を選択 ](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
+   ![データ要素を選択](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
 
-   フォームフィールドはデータ要素にバインドされ、「バインド参照 **プロパティに表示さ** ます。
+   フォームフィールドはデータ要素に連結され、**連結参照**&#x200B;プロパティに表示されます。
 
-   ![自動データバインディング](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding.png)
+   ![自動データ連結](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding.png)
 
-   また、フォームフィールドの **バインド参照** プロパティを手動で編集することもできます。
+   また、フォームフィールドの&#x200B;**連結参照**&#x200B;プロパティを手動で編集することもできます。
 
 これで、フォームに[送信アクション](/help/edge/docs/forms/universal-editor/submit-action.md)を追加して設定できるようになりました。
 

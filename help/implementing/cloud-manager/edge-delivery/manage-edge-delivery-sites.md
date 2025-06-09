@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
 source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '712'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 97%
 
 Cloud Manager で Edge Delivery サイトを管理するために、既存のサイトに CDN 設定を追加する方法や、Edge Delivery サイトを削除する方法について説明します。
 
-## 既存のEdge Delivery サイトへのドメインマッピングの追加 {#add-cdn-to-edge-delivery-site}
+## 既存の Edge Delivery サイトへのドメインマッピングの追加 {#add-cdn-to-edge-delivery-site}
 
-[ ドメインマッピングの追加 ](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) を参照してください。
+[ドメインマッピングの追加](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)を参照してください。
 
 ## Edge Delivery サイト（#rename-edge-delivery-site）の名前の変更
 

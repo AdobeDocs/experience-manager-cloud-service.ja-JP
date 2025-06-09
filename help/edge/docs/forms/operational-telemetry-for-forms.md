@@ -1,23 +1,23 @@
 ---
-title: Edge Delivery Services for AEM Forms as a Cloud Serviceの運用上のテレメトリ
-description: AEM Forms as a Cloud ServiceのEdge Delivery Servicesの運用上のテレメトリには、フォームとのユーザーインタラクションの継続的なトラッキングと分析が含まれます。
+title: AEM Forms as a Cloud Service 向け Edge Delivery Services の運用テレメトリ
+description: AEM Forms as a Cloud Service 向け Edge Delivery Services の運用テレメトリは、フォームでのユーザーインタラクションの継続的なトラッキングと分析を行います。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '789'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-# Edge Delivery Services for AEM Forms as a Cloud Serviceの運用上のテレメトリ
+# AEM Forms as a Cloud Service 向け Edge Delivery Services の運用テレメトリ
 
-運用上のテレメトリを使用すると、訪問者がAdobe Experience Manager（AEM） web サイトとやり取りする方法に関する実際のインサイトを得ることができます。 この組み込みツールには、ユーザーの行動を理解し、パフォーマンスの問題を診断し、web サイトの実験の効果を測定するための貴重なデータが用意されています。運用上のテレメトリは、実際の使用状況のインタラクションをキャプチャすることで、合成テストを超え、サイトのパフォーマンスをより正確に把握できます。
+運用テレメトリを使用すると、訪問者が Adobe Experience Manager（AEM）の web サイトでどのようなインタラクションを行っているかについて、現実的なインサイトを得ることができます。この組み込みツールには、ユーザーの行動を理解し、パフォーマンスの問題を診断し、web サイトの実験の効果を測定するための貴重なデータが用意されています。運用テレメトリは、実際の使用のインタラクションを取り込み、サイトのパフォーマンスをより正確に把握することによって、合成テストよりも優れた性能を発揮します。
 
-ただし、運用テレメトリでは、訪問者のプライバシーが優先されます。 サンプリング技術を利用してユーザーの代表的なサブセットからデータを収集し、個人を特定できる情報（PII）が一切取り込まれないようにします。さらに、運用テレメトリは、データの最小化を念頭に置いて設計されており、パフォーマンス分析に必要な基本的な指標のみを収集します。 このアプローチにより、ユーザーの信頼を維持しながら AEM サイトを最適化できます。
+ただし、運用テレメトリは訪問者のプライバシーを優先します。サンプリング技術を利用してユーザーの代表的なサブセットからデータを収集し、個人を特定できる情報（PII）が一切取り込まれないようにします。また、運用テレメトリはデータの最小化を念頭に設計されているため、パフォーマンス分析に必須の重要な指標のみを収集します。このアプローチにより、ユーザーの信頼を維持しながら AEM サイトを最適化できます。
 
 
 ## 前提条件
@@ -26,7 +26,7 @@ ht-degree: 83%
 
 https://data.aem.live/?ext=forms
 
-![FormsのEdge Delivery Servicesの運用上のテレメトリログイン画面 ](/help/edge/assets/rum-login-screen.png)
+![Forms 向け Edge Delivery Service の運用テレメトリログイン画面](/help/edge/assets/rum-login-screen.png)
 
 AEM Forms as a Cloud Service の Edge Delivery のモニタリングダッシュボードにログインするには、以下を入力します。
 
@@ -40,7 +40,7 @@ AEM Forms as a Cloud Service の Edge Delivery のモニタリングダッシュ
 
 AEM Forms as a Cloud Service の Edge Delivery Services のダッシュボードを次の図に示します。
 
-![ 運用上のテレメトリFormsダッシュボード ](/help/edge/assets/rum-forms-dashboard.png)
+![運用テレメトリ Forms のダッシュボード](/help/edge/assets/rum-forms-dashboard.png)
 
 ### Forms のダッシュボードの様々な主要指標 {#different-metrics-operational-telemetry-dashboard-forms}
 

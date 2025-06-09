@@ -6,9 +6,9 @@ role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
 source-git-commit: c6ba1c2bcf7db8c406350c81c51639dc5bc8843f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2567'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -110,7 +110,7 @@ ht-degree: 99%
    * 情報提供のみ。
 * **変更者**
    * 情報提供のみ。
-   * [高速フィルタリング](#fast-filtering)に使用可能
+   * [高速フィルタリング](#fast-filtering)に使用可能。
 * **タグ**
    * 情報提供のみ。
    * コンテンツフラグメントに関連するすべてのタグ（メインとバリエーションの両方）を表示します。
@@ -119,7 +119,7 @@ ht-degree: 99%
    * 情報提供のみ。
 * **公開者**
    * 情報提供のみ。
-   * [高速フィルタリング](#fast-filtering)に使用可能
+   * [高速フィルタリング](#fast-filtering)に使用可能。
 * **参照元**:
    * フラグメントのすべての[親参照](#parent-references-fragment)を一覧表示するダイアログを開くリンクを提供します。コンテンツフラグメント、エクスペリエンスフラグメント、ページの参照が含まれます。特定の参照を開くには、ダイアログで「**タイトル**」をクリックします。
 
@@ -172,7 +172,7 @@ ht-degree: 99%
 * **[置換](#find-and-replace)**
 * **移動**
 * **名前の変更**
-* **[削除](#deleting-a-fragment)** （非公開のフラグメントでのみ使用できます）
+* **[削除](#deleting-a-fragment)**（非公開のフラグメントでのみ使用できます）
 
 
 >[!NOTE]
