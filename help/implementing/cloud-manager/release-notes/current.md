@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 52c8745d3a3cc4bc41003a258a85a817e7ccb48b
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 32%
+ht-degree: 57%
 
 ---
 
@@ -92,10 +92,10 @@ Azure DevOps Git リポジトリを Cloud Manager にオンボードできるよ
 
 | 質問 | 回答 |
 |---|---|
-| *必要に応じてプロジェクトをAdobeの管理による Git リポジトリに戻すには、どうすればよいですか？* | 切り替えは簡単です。 Adobe リポジトリを指すように [ パイプラインを更新 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) し、外部リポジトリが不要になった場合は削除します。 |
-| *異なる環境（実稼動以外と実稼動など）に異なるリポジトリーを設定して、最初に実稼動以外の環境でテストできるようにすることはできますか？* | はい。個別の環境用に異なるリポジトリを設定できます。 例えば、開発パイプラインまたはコード品質パイプラインは外部リポジトリーを指し、実稼動パイプラインはAdobe リポジトリーに接続されたままにすることができます。 この設定中は、2 つのリポジトリ間の同期ジョブがアクティブのままであることを確認してください。 |
-| *IP許可リストなどの既存の設定は引き続き機能しますか？* | はい、既存の IP許可リストは引き続き通常どおり機能します。 ただし、外部 Git リポジトリがファイアウォールで保護されている場合は、必要な [Adobe IP アドレスを許可リストに追加する必要があります ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。 |
-| *すべての GitLab リポジトリ URL が機能しますか？ 使用するリポジトリ URL は、形式 `https://gitlab_dedicated_url.com/path/repo-name.git` に従いますが、この形式はドキュメントの例とは異なります。* | はい。API V3 または V4 をサポートする任意の GitLab リポジトリーがサポートされます。これには、[Cloud Managerへの外部リポジトリーの追加 ](/help/implementing/cloud-manager/managing-code/external-repositories.md) （`https://git-vendor-name.com/org-name/repo-name.git`）に記載されているように、セルフホスト型の GitLab URL が含まれます。 |
+| *必要に応じてプロジェクトを Adobe の管理による Git リポジトリに戻すには、どうすれば良いですか？* | 戻すのは簡単です。[パイプラインを更新](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)して Adobe リポジトリを指し、外部リポジトリが不要になった場合は削除します。 |
+| *異なる環境（実稼動と実稼動以外など）に異なるリポジトリを設定して、最初に実稼動以外の環境でテストできるようにすることはできますか？* | はい、個別の環境用に異なるリポジトリを設定できます。例えば、開発パイプラインまたはコード品質パイプラインは外部リポジトリを指し、実稼動パイプラインは Adobe リポジトリに接続されたままにすることができます。この設定中は、2 つのリポジトリ間の同期ジョブがアクティブのままであることを確認してください。 |
+| *IP 許可リストなどの既存の設定は引き続き機能しますか？* | はい、既存の IP 許可リストは引き続き通常どおり機能します。ただし、外部 Git リポジトリがファイアウォールで保護されている場合は、必要な [Adobe IP アドレスを許可リストに追加する必要があります](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。 |
+| *すべての GitLab リポジトリ URL が機能しますか？使用するリポジトリ URL は、形式 `https://gitlab_dedicated_url.com/path/repo-name.git` に従いますが、この形式はドキュメントの例とは異なります。* | はい、API V3 または V4 をサポートするどの GitLab リポジトリもサポートされます。これには、[Cloud Manager への外部リポジトリの追加 ](/help/implementing/cloud-manager/managing-code/external-repositories.md)（`https://git-vendor-name.com/org-name/repo-name.git`）に記載されているようなセルフホスト型の GitLab URL が含まれます。 |
 
 
 #### アクセストークンを管理{#manage-access-tokens}
@@ -107,11 +107,11 @@ Cloud Managerで **アクセストークンの管理** を使用して、外部 
 この新機能のテストやフィードバックの提供に関心がある場合は、Adobe IDに関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) にメールを送信してください。
 
 
-### Edge Delivery設定パイプラインを追加 {#add-eds-pipeline}
+### Edge Delivery 設定パイプラインを追加する {#add-eds-pipeline}
 
-Edge Delivery Servicesで作成されたサイトで Config パイプラインがサポートされるようになり、Cloud Service環境だけでなく、この機能が拡張されました。 **設定パイプライン** を使用して、トラフィックフィルタリングルールや Web アプリケーションファイアウォール（WAF）設定などの設定を管理できます（該当する場合）。 [サポートされている設定](/help/operations/config-pipeline.md#configurations)を参照してください。
+Edge Delivery Services を使用して作成されたサイトで設定パイプラインがサポートされるようになりました。これにより、Cloud Service 環境以外でもこの機能を利用できます。**設定パイプライン**&#x200B;を使用すると、トラフィックフィルタリングルールや web アプリケーションファイアウォール（WAF）設定などの設定を管理できます（該当する場合）。[サポートされている設定](/help/operations/config-pipeline.md#configurations)を参照してください。
 
-![ パイプラインを追加ドロップダウンリストの「Edge Delivery パイプラインを追加」 ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***プログラムの概要**&#x200B;ページ、「**パイプライン**」カードからのEdge Delivery パイプラインの追加*
+![ パイプラインを追加ドロップダウンリストの「Edge Delivery パイプラインを追加」 ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***プログラムの概要**ページ、「**パイプライン**」カードからのEdge Delivery パイプラインの追加*
 
 ![Edge Delivery パイプラインを追加ダイアログボックス ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png)*Edge Delivery パイプラインを追加ダイアログボックス*
 
