@@ -7,7 +7,7 @@ exl-id: b298db37-1033-4849-bc12-7db29fb77777
 source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 60%
+ht-degree: 63%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 60%
 
 Adobe Experience Manager（AEM）as a Cloud Service では、コンテンツフラグメント配信用の AEM OpenAPI には次の特徴があります。
 
-* は、JSON 形式のAEM コンテンツフラグメントのライブ配信用に最適化された OpenAPI です
+* JSON 形式の AEM コンテンツフラグメントのライブ配信用に最適化された OpenAPI です
 * アクティブコンテンツの無効化を可能にする最新の CDN 統合を提供します。
 * コンテンツ配信（パフォーマンス、スケーラビリティ、CDN 統合、最適化された JSON 制御と出力）に焦点を合わせています。
 * 参照されたフラグメントとアセットの JSON を改善する機能が含まれます。

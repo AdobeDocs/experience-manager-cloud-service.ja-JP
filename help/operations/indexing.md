@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 8d881caf5181e9c3cdc6dcb69f0deabc2d5eeed8
 workflow-type: tm+mt
 source-wordcount: '2918'
-ht-degree: 72%
+ht-degree: 75%
 
 ---
 
@@ -31,7 +31,7 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 制限事項：
 
-* 現在、AEM as a Cloud Serviceのインデックス管理は、`lucene` 型のインデックスに対してのみサポートされています。 つまり、すべてのインデックスのカスタマイズは `lucene` 型である必要があります。 `async` プロパティには、`[async]`、`[async,nrt]`、`[fulltext-async]` のいずれかを指定できます。
+* 現在、AEM as a Cloud Service でのインデックス管理は、`lucene` 型のインデックスに対してのみサポートされています。つまり、インデックスのカスタマイズはすべて `lucene` 型である必要があります。`async` プロパティには、`[async]`、`[async,nrt]`、`[fulltext-async]` のいずれかを指定できます。
 * 内部的には、他のインデックスがクエリに設定され使用される可能性があります。例えば、`damAssetLucene` インデックスに対して書き込まれるクエリは、AEM as a Cloud Serviceでは実際には、このインデックスのElasticsearch バージョンに対して実行される場合があります。 この違いは、ユーザーには表示されません。 ただし、`explain` 機能など、特定のツールでは異なるインデックスがレポートされます。 Lucene インデックスと Elasticsearch インデックスの違いについては、[Apache Jackrabbit Oak の Elastic 関連ドキュメント](https://jackrabbit.apache.org/oak/docs/query/elastic.html)を参照してください。顧客は、Elasticsearch インデックスを直接設定する必要はなく、また設定できません。
 * 標準のアナライザー（製品に付属しているアナライザー）のみサポートされています。カスタムアナライザーはサポートされていません。
 * 類似の機能ベクトル（`useInSimilarity = true`）による検索はサポートされていません。
@@ -79,8 +79,8 @@ OOTB インデックスをカスタマイズする場合は、カスタマイズ
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
-制限の節で説明したように、パッケージマネージャーを使用して抽出されたインデックス定義のタイプが異なる場合（例：`elasticsearch`）でも、カスタマイズされたインデックス定義の `type` を常に `lucene` に設定する必要があります。
-抽出されたインデックス定義が `elastic-async` に設定されている場合は、`async` プロパティも変更する必要があります。 カスタマイズされたインデックス定義には、`async` プロパティを `[async]`、`[async,nrt]`、`[fulltext-async]` のいずれかに設定する必要があります。
+制限の節で説明したように、パッケージマネージャーを使用して抽出されたインデックス定義のタイプが異なる場合（例：`elasticsearch`）であっても、カスタマイズされたインデックス定義の `type` を常に `lucene` に設定する必要があります。
+抽出されたインデックス定義が `elastic-async` に設定されている場合は、`async` プロパティも変更する必要があります。カスタマイズされたインデックス定義は、`async` プロパティを `[async]`、`[async,nrt]`、`[fulltext-async]` のいずれかに設定する必要があります。
 
 <!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
 

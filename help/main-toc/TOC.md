@@ -502,7 +502,7 @@ ht-degree: 98%
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
-   + [AEM as a Cloud Serviceの運用上のテレメトリ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
+   + [AEM as a Cloud Service の運用テレメトリ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概要と新機能](/help/assets/overview.md)
    + [ [!DNL Assets] as a [!DNL Cloud Service] の主な変更点](/help/assets/assets-cloud-changes.md)
@@ -1088,7 +1088,7 @@ ht-degree: 98%
          + [フォームのグローバル化：フォーム翻訳ガイド](/help/edge/docs/forms/translate-forms.md)
          + [フォームの保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/recaptacha-forms.md)
          + [カスタムフォームコンポーネントの作成：開発者向けガイド](/help/edge/docs/forms/custom-components-forms.md)
-         + [ フォームのパフォーマンスの監視：運用テレメトリガイド ](/help/edge/docs/forms/operational-telemetry-for-forms.md)
+         + [フォームのパフォーマンスの監視：運用テレメトリのガイド](/help/edge/docs/forms/operational-telemetry-for-forms.md)
    + Edge Delivery リソース {#resources}
       + サイドキック {#sidekick}
          + [Sidekick の使用](/help/edge/docs/sidekick.md)
@@ -1177,7 +1177,7 @@ ht-degree: 98%
          + [コンテンツフラグメントでの参照の使用について](/help/journey-headless/author/references.md)
          + [コンテンツフラグメントのメタデータとタグの定義について](/help/journey-headless/author/metadata-tagging.md)
 + 生成 AI {#generative-ai}
-   + [AEM as a Cloud Serviceのジェネレーティブ AI](/help/generative-ai/generative-ai-in-aem.md)
+   + [AEM as a Cloud Service の生成 AI](/help/generative-ai/generative-ai-in-aem.md)
    + [バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)
    + [バリエーションを生成](/help/generative-ai/generate-variations.md)
    + [アシスタント（ベータ版限定）](/help/implementing/cloud-manager/aem-ai-assistant.md)
@@ -1243,9 +1243,9 @@ ht-degree: 98%
       + Edge Delivery サイト {#edge-delivery-sites}
          + [Cloud Manager の Edge Delivery Services の概要](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Cloud Manager への Edge Delivery サイトの追加](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
-         + [ワンクリックで最初のEdge Delivery サイトを作成](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+         + [最初の Edge Delivery サイトをワンクリックで作成](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
          + [Edge Delivery サイト用のプッシュ検証の設定](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
-         + [コンテンツSourceの設定](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
+         + [コンテンツのソースの設定](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
          + [Cloud Manager での Edge Delivery サイトの管理](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + ドメイン設定 {#custom-domain-names}
          + [ドメイン設定の概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)

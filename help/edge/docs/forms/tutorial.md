@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
 workflow-type: tm+mt
 source-wordcount: '1922'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
@@ -241,7 +241,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
        npm install -g @adobe/aem-cli
    ```
 
-1. GitHub プロジェクトのクローンを作成します。次のコマンドを使用して、GitHub からプロジェクトリポジトリのクローンを作成します。 &lt;owner> リポジトリの所有者と &lt;repo> リポジトリ名を置き換えます。
+1. GitHub プロジェクトのクローンを作成します。次のコマンドを使用して、GitHub からプロジェクトリポジトリのクローンを作成します。 <owner> リポジトリの所有者と <repo> リポジトリ名を置き換えます。
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -273,18 +273,18 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
 >[!NOTE]
 >
 >
-> この手順は、[AEM ボイラープレート XWalk](https://github.com/adobe/aem-boilerplate) で作成されたプロジェクトに適用されます。 [AEM Forms ボイラープレート](https://github.com/adobe-rnd/aem-boilerplate-forms)を使用して AEM プロジェクトを作成した場合は、この手順をスキップできます。
+> この手順は、[AEM ボイラープレート XWalk](https://github.com/adobe/aem-boilerplate) を使用して作成したプロジェクトに適用されます。[AEM Forms ボイラープレート](https://github.com/adobe-rnd/aem-boilerplate-forms)を使用して AEM プロジェクトを作成した場合は、この手順をスキップできます。
 
 統合するには：
 
-1. ローカルシステム上のAEM プロジェクトリポジトリーフォルダーに移動します。
+1. ローカルシステム上の AEM プロジェクトリポジトリフォルダーに移動します。
 
 1. 次のフォルダーとファイルを [AEM Forms ボイラープレート](https://github.com/adobe-rnd/aem-boilerplate-forms)から AEM プロジェクトにコピー＆ペーストします。
 
-   * [ フォームブロック ](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) フォルダー
+   * [フォームブロック](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)フォルダー
    * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) ファイル
    * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) ファイル
-1. AEM プロジェクトの `/scripts/editor-support.js` ファイルに移動し、AEM Forms Boilerplate の [editor-support.js ファイルで更新し ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js) す。
+1. AEM プロジェクトの `/scripts/editor-support.js` ファイルに移動し、[AEM Forms ボイラープレート内の editor-support.js file ファイル](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)を使用して更新します。
 1. AEM プロジェクトの `/models/_section.json` に移動し、「form」と「embed-adaptive-form」を `filters` オブジェクトのコンポーネント配列に追加します。
 
    ```
@@ -301,7 +301,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
     }]
    ```
 
-1. （オプション）AEM プロジェクトの `/.eslintignore` に移動して、次のコード行を追加します。
+1. （オプション）AEM プロジェクトの `/.eslintignore` に移動し、次のコード行を追加します。
 
    ```
    blocks/form/rules/formula/*
@@ -311,7 +311,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
    scripts/editor-support-rte.js
    ```
 
-1. （オプション）AEM プロジェクトの `/.eslintrc.js` に移動して、`rules` オブジェクトに次のコード行を追加します。
+1. （オプション）AEM プロジェクトの `/.eslintrc.js` に移動し、`rules` オブジェクトに次のコード行を追加します。
 
    ```
    'xwalk/max-cells': ['error', {
@@ -353,7 +353,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
 
    >[!NOTE]
    >
-   > 変更内容を GitHub のAEM プロジェクトリポジトリにプッシュする前に、AEM プロジェクトのルートレベルにある `component-definition.json`、`component-models.json`、`component-filters.json` の各ファイルがフォーム関連オブジェクトで更新されていることを確認してください。
+   > 変更内容を GitHub の AEM プロジェクトリポジトリにプッシュする前に、AEM プロジェクトのルートレベルにある `component-definition.json`、`component-models.json`、`component-filters.json` の各ファイルがフォーム関連オブジェクトで更新されていることを確認してください。
 
 1. これらの変更を GitHub 上の AEM プロジェクトリポジトリにコミットしてプッシュします。
 
@@ -363,8 +363,8 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
 
 潜在的な問題に対処することで、GitHub ビルドプロセスがスムーズに行われるようにします。
 
-* **モジュール パス解決エラー：**
-「モジュール「/scripts/lib-franklin.js」へのパスを解決できません」というエラーが発生した場合は、[EDS Project]/blocks/forms/form.js ファイルに移動します。 lib-franklin.js ファイルを aem.js ファイルに置き換えて、読み込みステートメントを更新します。
+* **モジュールパスエラーの解決：**
+「モジュール &#39;/scripts/lib-franklin.js&#39; へのパスを解決できません」というエラーが発生した場合は、[EDS プロジェクト]/blocks/forms/form.js ファイルに移動します。lib-franklin.js ファイルを aem.js ファイルに置き換えて、読み込みステートメントを更新します。
 
 * **lint エラーの処理：**
 lint エラーが発生した場合は、回避できます。 [EDS プロジェクト]/package.json ファイルを開き、「lint」スクリプトを `"lint": "npm run lint:js && npm run lint:css"` から `"lint": "echo 'skipping linting for now'"` に変更します。 ファイルを保存し、変更を GitHub プロジェクトにコミットします。
