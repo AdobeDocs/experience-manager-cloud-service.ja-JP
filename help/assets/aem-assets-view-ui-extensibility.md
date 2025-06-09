@@ -4,10 +4,10 @@ description: UI 拡張機能について説明します。 [!DNL AEM Assets View
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 969860593670ce490cc688a92c349addb952b3b4
-workflow-type: ht
-source-wordcount: '542'
-ht-degree: 100%
+source-git-commit: 50477660e50db13cd279a56a1f1b3ddc118a0aad
+workflow-type: tm+mt
+source-wordcount: '633'
+ht-degree: 85%
 
 ---
 
@@ -85,3 +85,11 @@ ht-degree: 100%
 1. ローカル環境を設定し、最初の UI 拡張機能を作成して、[!DNL Assets View] で UI 拡張機能を開発するプロセスを直接体験してください。詳しくは、[AEM Assets View 拡張機能の開発手順](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/)を参照してください。
 1. AIO CLI を使用してアプリケーションを設定し、基本的な拡張機能構造と必要なコードを生成します。詳しくは、[ [!DNL AEM Assets View] のコード生成](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/)を参照してください。
 1. 拡張機能をローカルでテストして、想定どおりに動作することをデプロイメント前に確認します。完全に分離された環境または部分的に分離された環境で拡張機能を実行し、テスト用に拡張機能を [!DNL AEM Assets View] の本番環境に接続します。詳しくは、[トラブルシューティング -  [!DNL AEM Assets View]  の拡張機能](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/)を参照してください。
+
+## Assets ビューのクイックアクションバーとアクションバーのカスタマイズ {#customize-quick-actions-and-actions-bar}
+
+Assets ビューで 1 つ以上のアセットを選択したときに表示されるアクション（アクションバー）をカスタマイズできます。 Assets表示を使用すると、アセットカードで「その他のオプション」（...）をクリックしたときに表示されるアクションをカスタマイズすることもできます。 詳細については、「[ 参照ビュー ](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/)」を参照してください。
+
+## Assets ビューでカスタムダイアログを開く {#open-custom-dialogs-assets-view}
+
+Assets ビューでは、選択したテキストでカスタムダイアログを開く機能も提供されます。 テキストにリンクを追加することもできます。 詳しくは、[ モーダル API](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/#modal-api) を参照してください。
