@@ -49,7 +49,7 @@ ht-degree: 96%
 ユニバーサルエディターは、以下でサポートされています。
 
 * AEM as a Cloud Service（リリース `2023.8.13099` 以降）
-* [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
+* [AEM 6.5 LTS](https://experienceleague.adobe.com/ja/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
    * オンプレミスと AMS ホスティングの両方がサポートされています。
 * [AEM 6.5](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
    * オンプレミスと AMS ホスティングの両方がサポートされています。
@@ -104,7 +104,7 @@ ht-degree: 96%
 ユニバーサルエディターを探索し、独自のプロジェクトへの実装を進める際には、次の制限事項に留意してください。
 
 * 単一ページの実装として参照できる AEM リソース（コンテンツフラグメント、ページ、エクスペリエンスフラグメント、アセットなど）は 25 個以下にする必要があります。
-* AEM as a Cloud Service、[AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction) および [AEM 6.5](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) が、サポートされているAEM バックエンドです。
+* AEM as a Cloud Service、[AEM 6.5 LTS](https://experienceleague.adobe.com/ja/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction) および [AEM 6.5](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) が、サポートされているAEM バックエンドです。
 * AEM as a Cloud Service にはリリース `2023.8.13099` 以降が必要です。
 * コンテンツ作成者は、独自の Experience Cloud アカウントを持つ必要があります。
 * AEM の一部として、ユニバーサルエディターは [AEM と同じデスクトップブラウザーをサポート](/help/overview/supported-platforms.md)します。
