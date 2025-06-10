@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
-workflow-type: ht
-source-wordcount: '1729'
-ht-degree: 100%
+source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
+workflow-type: tm+mt
+source-wordcount: '1756'
+ht-degree: 96%
 
 ---
 
@@ -183,9 +183,9 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 >
 >ホットキー `p` を使用してプレビューモードを切り替えます。
 
-#### アプリのプレビューを開く {#open-app-preview}
+#### ページを開く {#open-page}
 
-「アプリのプレビューを開く」アイコンを選択すると、現在編集中のページをエディターなしで独自のブラウザーで開いて、内容をプレビューできます。
+「ページを開く」アイコンを選択すると、現在編集中のページをエディターなしで独自のブラウザータブで開いて、コンテンツをプレビューできます。
 
 ![アプリのプレビューを開く](assets/open-app-preview.png)
 
@@ -197,6 +197,10 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 >
 >アプリのプレビュー URL は[カスタマイズできます](/help/implementing/universal-editor/customizing.md#custom-preview-urls)。
 
+>[!NOTE]
+>
+>「ページを開く」ボタン [ 無効にすることができます ](/help/implementing/universal-editor/customizing.md#open-page) が、エディターに表示されない場合があります。
+
 #### 公開 {#publish}
 
 「公開」ボタンを選択すると、コンテンツへの変更を消費者が利用できるようライブに公開したり、レビュー用にプレビュー環境に公開したりできます。
@@ -206,6 +210,10 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 >[!TIP]
 >
 >ユニバーサルエディターを使用した公開について詳しくは、[ユニバーサルエディターを使用したコンテンツの公開](publishing.md)のドキュメントを参照してください。
+
+>[!NOTE]
+>
+>「公開」ボタン [ 無効にすることができます ](/help/implementing/universal-editor/customizing.md#disable-publish) は、エディターに表示されない場合があります。
 
 #### 省略記号 {#ellipsis}
 
@@ -219,7 +227,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ユニバーサルエディターには、カスタマイズ可能で拡張性の高いオーサリングエクスペリエンスが用意されています。ツールバーにその他のボタンを表示する場合は、ユニバーサルエディターが拡張されています。
 
-* 個別の拡張機能の動作について詳しくは、[ユニバーサルエディターオーサリングドキュメント](/help/sites-cloud/authoring/universal-editor/authoring.md#toolbar-options)を参照してください。
+* 個別の拡張機能の動作について詳しくは、[ユニバーサルエディターオーサリングのドキュメント](/help/sites-cloud/authoring/universal-editor/authoring.md#toolbar-options)を参照してください。
 * 拡張機能について詳しくは、[ユニバーサルエディターの拡張](/help/implementing/universal-editor/extending.md)を参照してください。
 * 個別の拡張機能のインストール方法について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)を参照してください。
 

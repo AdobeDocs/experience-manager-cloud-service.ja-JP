@@ -4,10 +4,10 @@ description: コンテンツ作成者のニーズに合わせてユニバーサ�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
+source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 88%
+source-wordcount: '353'
+ht-degree: 94%
 
 ---
 
@@ -32,12 +32,20 @@ ht-degree: 88%
 
 ## プレビューへの公開の無効化 {#publish-preview}
 
-オーサリングワークフローによっては、[ プレビューサービス ](/help/sites-cloud/authoring/sites-console/previewing-content.md) （使用可能な場合）への公開が妨げられることがあります。
+オーサリングワークフローによっては、[プレビューサービス](/help/sites-cloud/authoring/sites-console/previewing-content.md)（使用可能な場合）への公開が妨げられることがあります。
 
-したがって、次のメタデータを追加することで、アプリ内で公開ウィンドウの「**プレビュー**」オプション全体を抑制できます。
+次のメタデータを追加することで、公開ウィンドウの「**プレビュー**」オプションを完全にアプリ内で抑制できます。
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+```
+
+## ページを開く機能の無効化 {#open-page}
+
+「**ページを開く**」ボタンは、次のメタデータを追加することで、アプリ内で完全に抑制できます。
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
 ```
 
 ## コンポーネントのフィルタリング {#filtering-components}

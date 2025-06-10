@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター 2025.04.04 リリースノート
-description: ユニバーサルエディターの 2025.04.04 リリースのリリースノートです。
+title: ユニバーサルエディター 2025.05.21 リリースノート
+description: ユニバーサルエディターの 2025.05.21 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
-workflow-type: ht
-source-wordcount: '126'
-ht-degree: 100%
+source-git-commit: 34b83022f3bcc8b6111b83fee207b337f6d4fed2
+workflow-type: tm+mt
+source-wordcount: '72'
+ht-degree: 62%
 
 ---
 
 
-# ユニバーサルエディター 2025.04.04 リリースノート {#release-notes}
+# ユニバーサルエディター 2025.05.21 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2025年4月4日（PT）リリースのリリースノートです。
+ユニバーサルエディターの 2025 年 5 月 21 日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -22,11 +22,4 @@ ht-degree: 100%
 
 ## 新機能 {#what-is-new}
 
-* **OpenAPI を備えた Dynamic Media** - ユニバーサルエディターの[アセットセレクター](/help/assets/overview-asset-selector.md#repository-switcher)で、[OpenAPI を備えた Dynamic Media とリモートアセット](/help/assets/integrate-remote-approved-assets-with-sites.md)がサポートされるようになりました。
-* **IP 許可リストへの登録** - ユニバーサルエディターは IP 許可リストをサポートするようになりました。[](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#universal-editor)[このエンドポイント](http://universal-editor-service.adobe.io/ip-ranges)を使用して、ユニバーサルエディターサービスの IP を確認できます。
-
-## その他の改善点 {#other-improvements}
-
-* 「レイアウトコンテキストを削除」を修正しました。
-* e2e テストを改善しました。
-* 依存関係のアップデートとコードのクリーンアップを実行しました。
+* **「ページを開く」ボタンを無効にする** - 「ページを開く」ボタン [ 無効にできるようになりました ](/help/implementing/universal-editor/customizing.md#open-page)
