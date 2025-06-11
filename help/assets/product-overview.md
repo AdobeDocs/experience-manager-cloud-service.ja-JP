@@ -2,10 +2,10 @@
 title: コンテンツハブの概要
 description: コンテンツハブの詳細、その主なメリット、アクセス方法、コンテンツハブで使用可能なオプションに関するフィードバックの提供方法について説明します。
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: ecbc1783e6327b7d187eba01b698948111c3a2d3
+source-git-commit: cc6c227a566c4d4fd8c9a20d1bb39020974f494f
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 100%
+source-wordcount: '753'
+ht-degree: 97%
 
 ---
 
@@ -54,6 +54,10 @@ ht-degree: 100%
 コンテンツハブは、Experience Manager Assets as a Cloud Service の一部として使用でき、組織とそのビジネスパートナーがオンブランドのコンテンツに簡単にアクセスできます。これは、大規模なアクティベーション用のアセットの配布と、マーケティングの俊敏性を向上させるオンブランドのコンテンツバリアントの作成に焦点を当てています。
 
 ## コンテンツハブのデモ {#content-hub-demo}
+
+>[!IMPORTANT]
+>
+>[Assets Ultimate](/help/assets/assets-ultimate-overview.md) およびAssets as a Cloud Serviceには、250 人のContent Hub ユーザーが含まれます。 [Assets Prime](/help/assets/assets-prime.md) には、50 人のContent Hub ユーザーが含まれます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463712)
 
