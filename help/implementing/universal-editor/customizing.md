@@ -4,10 +4,10 @@ description: コンテンツ作成者のニーズに合わせてユニバーサ�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
+source-git-commit: c2f1660552d32f3dae9418e7dfc2d4f1ab8cc3c3
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 94%
+source-wordcount: '429'
+ht-degree: 84%
 
 ---
 
@@ -47,6 +47,18 @@ ht-degree: 94%
 ```html
 <meta name="urn:adobe:aue:config:disable" content="header-open-page" />
 ```
+
+## 「複製」ボタンの無効化 {#duplicate-button}
+
+オーサリングワークフローによっては、コンテンツ作成者の機能をコンポーネントの重複に制限する必要が生じる場合があります。 [ 複製 ](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) アイコンを無効にするには、次のメタデータを追加します。
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
+```
+
+## エンドポイントの変更 {#custom-endpoint}
+
+アドビがホストするユニバーサルエディターサービスを使用しない場合は、これはメタタグで設定できます。 詳しくは、ドキュメント [AEMのユニバーサルエディターの概要 ](/help/implementing/universal-editor/getting-started.md##configuration-settings) を参照してください。
 
 ## コンポーネントのフィルタリング {#filtering-components}
 
