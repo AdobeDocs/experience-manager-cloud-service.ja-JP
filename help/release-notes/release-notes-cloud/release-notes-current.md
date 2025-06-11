@@ -78,7 +78,7 @@ AEM Assetsは Figma とネイティブに統合されているので、デザイ
 
 **UI ブランディング**
 
-Content Hubでは、プライマリ色とセカンダリ色に加え、バナー画像、バナータイトル、本文テキストなど ](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub) ブランド固有の要素を使用してユーザーインターフェイスをカスタマイズ [ できます。 これらの機能強化により、ブランドの一貫性の確保、ユーザーのオンボーディングの簡素化、信頼の構築が可能になります。
+Content Hubでは、プライマリ色とセカンダリ色に加え、バナー画像、バナータイトル、本文テキストなど [&#128279;](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub) ブランド固有の要素を使用してユーザーインターフェイスをカスタマイズ  できます。 これらの機能強化により、ブランドの一貫性の確保、ユーザーのオンボーディングの簡素化、信頼の構築が可能になります。
 
 ![UI ブランディング ](/help/assets/assets/content-hub-ui-branding.png)
 
@@ -100,7 +100,7 @@ Content Hubでは、[ 作成時のコレクションへのアクセスを制御�
 
 **複数のアセットを ZIP としてダウンロードする**
 
-また、Content Hubでは、ファイル管理を簡単にする個別のファイルとして使用するのではなく ](/help/assets/download-assets-content-hub.md#download-asset-renditions) 選択したアセットとそのレンディションを ZIP ファイルでダウンロード [ できるようになりました。
+また、Content Hubでは、ファイル管理を簡単にする個別のファイルとして使用するのではなく [&#128279;](/help/assets/download-assets-content-hub.md#download-asset-renditions) 選択したアセットとそのレンディションを ZIP ファイルでダウンロード  できるようになりました。
 
 **Content Hubの Dynamic Media レンディション**
 
@@ -245,7 +245,7 @@ Edge コンピューティングを使用すると、CDN レイヤーでJavaScri
 * ブラウザーに配信する前に、サードパーティの API からの応答を再フォーマットする（および複数の API 応答を集計する）
 * 様々なバックエンドからステッチされたコンテンツを使用して、サーバーレンダリングされたHTMLをエッジで作成および提供する
 
-AEM パブリッシュ配信またはライブ実稼動サイトのEdge Delivery Services プロジェクトで利用できる機会の数は限られています。 参加に関心がある場合や、詳細を確認したい場合は、ユースケースの簡単な説明を添えて ](mailto:aemcs-edgecompute-feedback@adobe.com)0}aemcs-edgecompute-feedback@adobe.com} までメールでお問い合わせください。[
+AEM パブリッシュ配信またはライブ実稼動サイトのEdge Delivery Services プロジェクトで利用できる機会の数は限られています。 参加に関心がある場合や、詳細を確認したい場合は、ユースケースの簡単な説明を添えて [&#128279;](mailto:aemcs-edgecompute-feedback@adobe.com)0&rbrace;aemcs-edgecompute-feedback@adobe.com&rbrace; までメールでお問い合わせください。
 
 ### Edge Delivery Servicesの CDN 設定（Beta プログラム） {#cdn-eds-beta}
 
