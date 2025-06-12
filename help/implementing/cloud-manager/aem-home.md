@@ -47,7 +47,7 @@ Adobe Experience Managerページが更新され、ナビゲーションが強�
 * Extension Manager
 * Brand Portal
 
-これらのソリューションは、「ツール **の下のメインナビゲーションに移動** ました。 さらに、{Sites **と** 2}Assets} の新しいナビゲーション要素により **Assets、コレクション、Sites、コンテンツフラグメントなどのAdobe Experience Managerの主要機能にすばやくアクセスできます。**&#x200B;これらの機能は、アクセス権のあるプライマリ実稼動環境で使用できます。
+これらのソリューションは、「ツール **の下のメインナビゲーションに移動** ました。 さらに、{Sites **と** 2}Assets&rbrace; の新しいナビゲーション要素により **Assets、コレクション、Sites、コンテンツフラグメントなどのAdobe Experience Managerの主要機能にすばやくアクセスできます。**&#x200B;これらの機能は、アクセス権のあるプライマリ実稼動環境で使用できます。
 
 ![Experience Hub環境 ](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
 
