@@ -41,7 +41,7 @@ ht-degree: 31%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440921?quality=12&captions=jpn)
 
 -->
 
@@ -114,7 +114,7 @@ Content Hubでは、[ 作成時のコレクションへのアクセスを制御�
 
 [Experience Manager（AEM） Dynamic Media とJourney Optimizer（AJO） B2C](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/combine/aem-dynamic) のネイティブ統合により、マーケターはAEM Dynamic Media アセット（レンディションおよび DM テンプレート）をAJO コンテンツに簡単に埋め込み、チャネル間でリアルタイムに更新され、高度にパーソナライズされたエクスペリエンスを提供できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3463783/?learn=on&enablevpops=&autoplay=true&captions=jpn)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
