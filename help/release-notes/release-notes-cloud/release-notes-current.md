@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 5e90d3fb650106f31630c0297e55b4e9da201ba5
+source-git-commit: 75816f35a8bca8356e17b13341c2ddbd850f8eff
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2077'
 ht-degree: 31%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 31%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -78,7 +78,7 @@ AEM Assetsは Figma とネイティブに統合されているので、デザイ
 
 **UI ブランディング**
 
-Content Hubでは、プライマリ色とセカンダリ色に加え、バナー画像、バナータイトル、本文テキストなど [&#128279;](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub) ブランド固有の要素を使用してユーザーインターフェイスをカスタマイズ  できます。 これらの機能強化により、ブランドの一貫性の確保、ユーザーのオンボーディングの簡素化、信頼の構築が可能になります。
+Content Hubでは、プライマリ色とセカンダリ色に加え、バナー画像、バナータイトル、本文テキストなど ](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub) ブランド固有の要素を使用してユーザーインターフェイスをカスタマイズ [ できます。 これらの機能強化により、ブランドの一貫性の確保、ユーザーのオンボーディングの簡素化、信頼の構築が可能になります。
 
 ![UI ブランディング ](/help/assets/assets/content-hub-ui-branding.png)
 
@@ -100,7 +100,7 @@ Content Hubでは、[ 作成時のコレクションへのアクセスを制御�
 
 **複数のアセットを ZIP としてダウンロードする**
 
-また、Content Hubでは、ファイル管理を簡単にする個別のファイルとして使用するのではなく [&#128279;](/help/assets/download-assets-content-hub.md#download-asset-renditions) 選択したアセットとそのレンディションを ZIP ファイルでダウンロード  できるようになりました。
+また、Content Hubでは、ファイル管理を簡単にする個別のファイルとして使用するのではなく ](/help/assets/download-assets-content-hub.md#download-asset-renditions) 選択したアセットとそのレンディションを ZIP ファイルでダウンロード [ できるようになりました。
 
 **Content Hubの Dynamic Media レンディション**
 
@@ -112,9 +112,9 @@ Content Hubでは、[ 作成時のコレクションへのアクセスを制御�
 
 **AJO B2C と Dynamic Media のネイティブ統合&#x200B;**
 
-[Experience Manager（AEM） Dynamic Media とJourney Optimizer（AJO） B2C](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/combine/aem-dynamic) のネイティブ統合により、マーケターはAEM Dynamic Media アセット（レンディションおよび DM テンプレート）をAJO コンテンツに簡単に埋め込み、チャネル間でリアルタイムに更新され、高度にパーソナライズされたエクスペリエンスを提供できます。
+[Experience Manager（AEM） Dynamic Media とJourney Optimizer（AJO） B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic) のネイティブ統合により、マーケターはAEM Dynamic Media アセット（レンディションおよび DM テンプレート）をAJO コンテンツに簡単に埋め込み、チャネル間でリアルタイムに更新され、高度にパーソナライズされたエクスペリエンスを提供できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3463783/?learn=on&enablevpops=&autoplay=true&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -201,7 +201,7 @@ OSGi プロパティ：
 
 ### 古いバージョンと監査ログのデフォルトのパージ {#mt-defaults}
 
-現在、コンテンツバージョンおよび監査ログは、関連する *パージメンテナンスタスク* がデフォルトで無効になっているので、それぞれの OSGi プロパティで明示的に設定されない限り、データは削除されません。
+現在、コンテンツバージョンと監査ログは、関連付けられた *パージメンテナンスタスク* をデフォルトで無効にしているので、明示的に設定されない限り、データは削除されません。
 
 ただし、リポジトリのパフォーマンスを最適化するために、**2025 年 6 月下旬** 以降、次のガイドラインに従って、デフォルトでパージが有効になります。
 
@@ -245,7 +245,7 @@ Edge コンピューティングを使用すると、CDN レイヤーでJavaScri
 * ブラウザーに配信する前に、サードパーティの API からの応答を再フォーマットする（および複数の API 応答を集計する）
 * 様々なバックエンドからステッチされたコンテンツを使用して、サーバーレンダリングされたHTMLをエッジで作成および提供する
 
-AEM パブリッシュ配信またはライブ実稼動サイトのEdge Delivery Services プロジェクトで利用できる機会の数は限られています。 参加に関心がある場合や、詳細を確認したい場合は、ユースケースの簡単な説明を添えて [&#128279;](mailto:aemcs-edgecompute-feedback@adobe.com)0&rbrace;aemcs-edgecompute-feedback@adobe.com&rbrace; までメールでお問い合わせください。
+AEM パブリッシュ配信またはライブ実稼動サイトのEdge Delivery Services プロジェクトで利用できる機会の数は限られています。 参加に関心がある場合や、詳細を確認したい場合は、ユースケースの簡単な説明を添えて ](mailto:aemcs-edgecompute-feedback@adobe.com)0}aemcs-edgecompute-feedback@adobe.com} までメールでお問い合わせください。[
 
 ### Edge Delivery Servicesの CDN 設定（Beta プログラム） {#cdn-eds-beta}
 
