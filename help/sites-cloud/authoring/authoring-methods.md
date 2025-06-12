@@ -5,10 +5,10 @@ feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '567'
-ht-degree: 100%
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
+workflow-type: tm+mt
+source-wordcount: '569'
+ht-degree: 96%
 
 ---
 
@@ -20,24 +20,14 @@ AEM でコンテンツを作成する様々な方法、その違い、どのよ�
 
 AEM as a Cloud Service には、各種コンテンツを編集するための様々なエディターが用意されており、様々なオーサリングの使用例もサポートしています。
 
-* [ページエディターを使用した WYSIWYG オーサリング](#page-editor)：ページエディターは、AEM でのコンテンツのオーサリングに使用されている従来のエディターであり、何千もの web サイトで実証され、信頼されています。
 * [ユニバーサルエディターを使用した WYSIWYG オーサリング](#universal-editor)：ユニバーサルエディターは、コンテンツに依存しない方法で AEM コンテンツを作成できる最新の UI であり、Edge Delivery Services を活用した AEM プロジェクトで使用できます。
+* [ページエディターを使用した WYSIWYG オーサリング](#page-editor)：ページエディターは、AEM でのコンテンツのオーサリングに使用されている従来のエディターであり、何千もの web サイトで実証され、信頼されています。
 * [ドキュメントベースのオーサリング](#document-based)：Edge Delivery Services を使用する場合、AEM コンソールの完全な外部で、Microsoft Word ドキュメントや Google ドキュメントなどの従来のドキュメントとしてコンテンツを作成することもできます。
 * [AEM コンテンツフラグメントエディタ ](#cf-editor)：ヘッドレスコンテンツを作成する場合に最適なエディターです。
 
 AEM の統合された拡張性のある特性により、プロジェクトのニーズに応じて、これらの方法を単独で使用することも、相互に組み合わせて使用することもできます。
 
 使用可能なオーサリングオプションが不明な場合や、コンテンツのオーサリング用の新しいオプションを検討したい場合は、システム管理者またはプロジェクトマネージャーにお問い合わせください。
-
-## ページエディターを使用した WYSIWYG オーサリング {#page-editor}
-
-これは、AEM でコンテンツをオーサリングするための従来のエディターです。何千もの web サイトで実証され、信頼されています。
-
-![AEM ページエディター](assets/authoring-methods-page-editor.png)
-
-AEM ページエディターは、WYSIWYG（見た通りの）インターフェイスを使用して、コンテンツをオーサリングするための統合環境を提供します。事前定義されたコンポーネントをドラッグ＆ドロップしてページを作成し、コンテンツをインプレースで編集します。
-
-AEM ページエディターについて詳しくは、[AEM ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)のドキュメントを参照してください。
 
 ## ユニバーサルエディターを使用した WYSIWYG オーサリング {#universal-editor}
 
@@ -48,6 +38,16 @@ AEM ページエディターについて詳しくは、[AEM ページエディ�
 ユニバーサルエディターには AEM 内の Sites コンソールからアクセスしますが、そのパワーやコンテンツに依存しない柔軟性により、AEM コンテンツだけでなく、適切にインストルメント化された外部コンテンツも作成することができます。
 
 ユニバーサルエディターについて詳しくは、[ユニバーサルエディターを使用したコンテンツのオーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md)のドキュメントを参照してください。
+
+## ページエディターを使用した WYSIWYG オーサリング {#page-editor}
+
+これは、何千もの web サイトで試され、信頼されてきた、従来のAEM プロジェクトのコンテンツをオーサリングするための従来のエディターです。
+
+![AEM ページエディター](assets/authoring-methods-page-editor.png)
+
+AEM ページエディターは、WYSIWYG（見た通りの）インターフェイスを使用して、コンテンツをオーサリングするための統合環境を提供します。事前定義されたコンポーネントをドラッグ＆ドロップしてページを作成し、コンテンツをインプレースで編集します。
+
+AEM ページエディターについて詳しくは、[AEM ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)のドキュメントを参照してください。
 
 ## ドキュメントベースのオーサリング  {#document-based}
 

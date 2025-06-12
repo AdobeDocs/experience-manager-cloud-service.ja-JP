@@ -4,12 +4,14 @@ description: AEM SPA エディター SDK は、一連の AEM Gems セッショ�
 exl-id: 93c950be-be80-42d5-93eb-805a91b6ebba
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6bce8f33f6588b49fc9165eeeedc8f4057222eb0
-workflow-type: ht
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 100%
 
 ---
+
 
 # SPA の詳細 {#spa-deep-dives}
 

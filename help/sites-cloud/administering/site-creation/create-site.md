@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 100%
@@ -13,6 +13,8 @@ ht-degree: 100%
 ---
 
 # 新しいサイトの作成 {#creating-site}
+
+{{traditional-aem}}
 
 AEM でサイトテンプレートを使用してサイトを作成し、サイトのスタイルと構造を定義する方法を説明します。
 

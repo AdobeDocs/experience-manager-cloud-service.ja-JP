@@ -1,19 +1,20 @@
 ---
-title: エディターの制限事項
-description: タッチ操作対応 UI のエディターでは、オーバーレイを使用して iframe 内に含まれるコンテンツを操作します。この操作には、エディターの使用と開発者に対していくつかの制限事項があります。
+title: ページエディターの制限事項
+description: ページエディターは、オーバーレイを利用して iframe 内に閉じ込められたコンテンツを操作します。 この操作には、エディターの使用と開発者に対していくつかの制限事項があります。
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 8b38e26b16c1fb565f122777f0577d332f62c39c
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 100%
+source-wordcount: '312'
+ht-degree: 88%
 
 ---
 
-# エディターの制限事項 {#editor-limitations}
 
-タッチ操作対応 UI のエディターでは、オーバーレイを使用して iframe 内に含まれるコンテンツを操作します。この操作には、エディターの使用と開発者に対していくつかの制限事項があります。このページでは、これらの制限事項をまとめ、可能な限り解決策や回避策を提供します。
+# ページエディターの制限事項 {#editor-limitations}
+
+[ ページエディター ](/help/sites-cloud/authoring/page-editor/introduction.md) は、オーバーレイを利用して iframe 内に閉じ込められたコンテンツを操作します。 この操作には、エディターの使用と開発者に対していくつかの制限事項があります。このページでは、これらの制限事項をまとめ、可能な限り解決策や回避策を提供します。
 
 ## 機能の制限事項 {#functional-limitations}
 

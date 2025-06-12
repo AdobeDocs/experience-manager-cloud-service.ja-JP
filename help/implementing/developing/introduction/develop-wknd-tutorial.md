@@ -4,7 +4,7 @@ description: AEM の開発が初めての方や、最新のベストプラクテ
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 # AEM Sites の開発の手引き - WKND チュートリアル{#getting-started-developing-aem-sites-wknd-tutorial}
 
 ## 概要 {#overview}
+
+{{traditional-aem}}
 
 Adobe Experience Manager as a Cloud Service を使用した開発が初めての場合や、最新のベストプラクティスに関する情報が必要な場合は、まず、このチュートリアルを試してください。
 

@@ -4,12 +4,14 @@ description: このドキュメントでは、AEM 内に編集可能な SPA コ�
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 100%
 
 ---
+
 
 # SPA ブループリント {#spa-blueprint}
 
@@ -242,9 +244,9 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 次のフラグメントは、ページコンテンツ構造の代表的な HTML 表現です。重要なポイントをいくつか示します。
 
-* レスポンシブグリッド要素には、`aem-Grid--` というプレフィックスが付いたクラス名が含まれます
-* レスポンシブ列要素には、`aem-GridColumn--` というプレフィックスが付いたクラス名が含まれます
-* 親グリッドの列でもあるレスポンシブグリッドは前述の 2 つのプレフィックスが同一の要素上に表示されないようにラップされます
+* レスポンシブグリッド要素には、`aem-Grid--` という接頭辞が付いたクラス名が含まれます
+* レスポンシブ列要素には、`aem-GridColumn--` という接頭辞が付いたクラス名が含まれます
+* 親グリッドの列でもあるレスポンシブグリッドは前述の 2 つの接頭辞が同一の要素上に表示されないようにラップされます
 * 編集可能リソースに対応する要素には、`data-cq-data-path` プロパティが含まれます。このドキュメントの[ページエディターとの契約](#contract-with-the-page-editor)の節を参照してください。
 
 ```javascript

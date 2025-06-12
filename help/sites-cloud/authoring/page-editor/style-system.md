@@ -5,18 +5,25 @@ exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1305'
-ht-degree: 100%
+source-git-commit: d2cd112de034ca6ea22590245fb480622acf258a
+workflow-type: tm+mt
+source-wordcount: '1338'
+ht-degree: 97%
 
 ---
 
-# スタイルシステム{#style-system}
+
+# スタイルシステム {#style-system}
 
 スタイルシステムを使用すると、テンプレート作成者がコンポーネントのコンテンツポリシーのスタイルクラスを定義し、コンテンツ作成者がページでのコンポーネントの編集時にそのスタイルクラスを選択できます。これらのスタイルは、1 つのコンポーネントの別の視覚的バリエーションとして使用することができるので、コンポーネントがより柔軟で扱いやすいものになります。
 
 これにより、各スタイルのカスタムコンポーネントを開発したり、そのようなスタイル機能を有効にするためにコンポーネントダイアログをカスタマイズしたりする必要がなくなります。AEM のバックエンド開発を行わなくても、コンテンツ作成者のニーズに迅速かつ容易に適応できる再利用可能なコンポーネントの増加につながります。
+
+>[!NOTE]
+>
+>スタイルシステムは、ページエディターで作成されたページにのみ適用されます。
+>
+>[ ユニバーサルエディター ](/help/implementing/universal-editor/introduction.md) で作成され、[Edge Delivery Services](/help/edge/overview.md) で提供されたページのスタイル設定は、GitHub プロジェクトを通じて完全に行うことができます。
 
 ## ユースケース {#use-case}
 

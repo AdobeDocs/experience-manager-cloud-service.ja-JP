@@ -5,14 +5,16 @@ exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 100%
 
 ---
 
 # Cloud Manager とクイックサイト作成ワークフローについて {#understand-cloud-manager}
+
+{{traditional-aem}}
 
 Cloud Manager と、新しいクイックサイト作成プロセスとの結び付けを説明します。
 

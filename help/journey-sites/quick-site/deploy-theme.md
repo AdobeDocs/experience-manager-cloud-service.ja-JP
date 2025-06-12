@@ -5,14 +5,16 @@ exl-id: fe065972-39db-4074-a802-85895c701efd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 100%
 
 ---
 
 # カスタマイズしたテーマのデプロイ {#deploy-your-customized-theme}
+
+{{traditional-aem}}
 
 パイプラインを使用してサイトテーマをデプロイする方法を説明します。
 

@@ -4,7 +4,7 @@ description: クイックサイト作成ツールでサイトテンプレート�
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 100%
@@ -12,6 +12,8 @@ ht-degree: 100%
 ---
 
 # サイトのクイック作成とフロントエンドのカスタマイズ {#quick-site-creation}
+
+{{traditional-aem}}
 
 クイックサイト作成ツールでサイトテンプレート、テーマ、フロントエンドパイプラインを使用して、新しいサイトの迅速なデプロイを可能にし、フロントエンド開発を切り離す方法を説明します。
 

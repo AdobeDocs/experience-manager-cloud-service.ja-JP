@@ -4,10 +4,10 @@ description: AEM as a Cloud Service を使用して、Edge Delivery Services で
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: ad9592c705c7b26292a29b43997edadfa01ccb65
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 96%
+source-wordcount: '1321'
+ht-degree: 94%
 
 ---
 
@@ -21,6 +21,12 @@ Edge 配信サービスを使用すると、次の操作を実行できます。
 * 完璧な Lighthouse スコアで迅速なサイトを作成し、運用上のテレメトリを通じてサイトのパフォーマンスを継続的に監視します。
 * コンテンツソースを分離することでオーサリング効率を向上させます。標準では、ユニバーサルエディターを使用した AEM オーサリングとドキュメントベースのオーサリングの両方を使用できます。したがって、同じ web サイト上で複数のコンテンツソースを操作できます。
 * 迅速なテスト作成、パフォーマンスに影響を与えない実行およびテスト勝者の実稼動環境への迅速なリリースが可能になる組み込みの実験フレームワークを使用します。
+
+>[!TIP]
+>
+>**すぐに実践してみませんか？**
+>
+>すぐに実践したい場合は、[aem.live のチュートリアルをチェックアウト ](https://www.aem.live/developer/ue-tutorial) することにより、30 分以内にAEM オーサリングを使用して独自のEdge Delivery Services プロジェクトを開始できます。
 
 ## ビジネスニーズに対するアジャイルな対応 {#agile-reaction}
 
@@ -54,6 +60,22 @@ Edge Delivery Services は、web サイト上のコンテンツの柔軟なオ�
 
 Edge Delivery Services では GitHub を利用しているので、自身の GitHub リポジトリから直接コードを管理およびデプロイできます。新しいコンテンツは、再作成プロセスなしで即座に追加されます。
 
+### ユニバーサルエディターを使用した AEM オーサリング{#wysiwyg-authoring}
+
+ユニバーサルエディターは、見たままを得られる（WYSIWYG）、カスタマイズ可能なワンストッププレースで、視覚的なプレビューを表示しながらコンテンツをライブおよびコンテキスト内で編集できます。
+
+* ユニバーサルエディターを使用した AEM オーサリングにより、ヘッドレスでもヘッドフルでも作成者の効率が向上します。
+* ワークフローやガバナンスを含む AEM の包括的なコンテンツ管理機能を活用できます。
+* 多数の拡張ポイントを活用して、独自のプロセスと統合をサポートします。
+* サイトの機能は、GitHub で CSS と JavaScript を使用して開発できます。
+
+![ユニバーサルエディターを使用した AEM オーサリング](assets/wysiwyg-authoring.png)
+
+ユニバーサルエディターと Edge Delivery Services を使用した AEM オーサリングの概要：
+
+* ユニバーサルエディターを使用した AEM のオーサリングの概要については、aem.live ドキュメントの [Edge Delivery Services 向けの AEM を使用したオーサリング](https://www.aem.live/docs/aem-authoring)を参照してください。
+* 開発者向けの概要については、aem.live ドキュメントの[はじめに - ユニバーサルエディターの開発者向けチュートリアル](https://www.aem.live/developer/ue-tutorial)を参照してください。
+
 ### ドキュメントベースのオーサリング {#document-based}
 
 ドキュメントベースのオーサリングでは、Microsoft Word または Google Docs から直接コンテンツを使用して、それらのソースを web サイト上のページにすることができます。見出し、リスト、画像、フォント要素、ビデオはすべて、初期ソースから web サイトに転送できます。
@@ -70,22 +92,6 @@ Edge Delivery Services では GitHub を利用しているので、自身の Git
 * Edge Delivery の開始方法について詳しくは、[aem.live ドキュメントの「ビルド」セクション](https://www.aem.live/docs/#build)を参照してください。
 * Edge Delivery を使用してコンテンツをオーサリングおよび公開する方法については、[aem.live ドキュメントの「公開」セクション](https://www.aem.live/docs/authoring)を参照してください。
 * Web サイトプロジェクトを適切にローンチする方法については、[aem.live ドキュメントの「ローンチ」セクション](https://www.aem.live/docs/#launch)を参照してください
-
-### ユニバーサルエディターを使用した AEM オーサリング{#wysiwyg-authoring}
-
-ユニバーサルエディターは、見たままを得られる（WYSIWYG）、カスタマイズ可能なワンストッププレースで、視覚的なプレビューを表示しながらコンテンツをライブおよびコンテキスト内で編集できます。
-
-* ユニバーサルエディターを使用した AEM オーサリングにより、ヘッドレスでもヘッドフルでも作成者の効率が向上します。
-* ワークフローやガバナンスを含む AEM の包括的なコンテンツ管理機能を活用できます。
-* 多数の拡張ポイントを活用して、独自のプロセスと統合をサポートします。
-* サイトの機能は、GitHub で CSS と JavaScript を使用して開発できます。
-
-![ユニバーサルエディターを使用した AEM オーサリング](assets/wysiwyg-authoring.png)
-
-ユニバーサルエディターと Edge Delivery Services を使用した AEM オーサリングの概要：
-
-* ユニバーサルエディターを使用した AEM のオーサリングの概要については、aem.live ドキュメントの [Edge Delivery Services 向けの AEM を使用したオーサリング](https://www.aem.live/docs/aem-authoring)を参照してください。
-* 開発者向けの概要については、aem.live ドキュメントの[はじめに - ユニバーサルエディターの開発者向けチュートリアル](https://www.aem.live/developer/ue-tutorial)を参照してください。
 
 ### オーサリング方法の決定 {#authoring-method}
 

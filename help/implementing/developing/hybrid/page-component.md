@@ -4,12 +4,14 @@ description: SPA では、ページコンポーネントは子コンポーネン
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 100%
 
 ---
+
 
 # SPA ページコンポーネント {#spa-page-component}
 

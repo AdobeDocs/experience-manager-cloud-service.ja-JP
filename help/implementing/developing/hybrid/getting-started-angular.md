@@ -4,12 +4,14 @@ description: この記事では、SPA アプリケーションの例とその設
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 100%
 
 ---
+
 
 # Angular を使用した AEM での SPA の概要 {#getting-started-with-spas-in-aem-using-angular}
 

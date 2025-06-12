@@ -4,12 +4,14 @@ description: 単一ページアプリケーション API リファレンスと�
 exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 100%
 
 ---
+
 
 # SPA 参照資料 {#spa-reference-materials}
 

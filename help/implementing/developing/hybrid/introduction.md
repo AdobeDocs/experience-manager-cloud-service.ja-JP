@@ -4,12 +4,14 @@ description: この記事では、SPA の概念を説明し、基本的な SPA �
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 100%
 
 ---
+
 
 # SPA の概要およびガイド {#spa-introduction}
 

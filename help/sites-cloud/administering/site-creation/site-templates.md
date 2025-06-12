@@ -5,14 +5,16 @@ feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 100%
 
 ---
 
 # サイトテンプレート {#site-templates}
+
+{{traditional-aem}}
 
 AEM サイトテンプレートを使用して、サイト構造と初期コンテンツを事前に定義し、サイトをすばやく作成する方法を説明します。
 

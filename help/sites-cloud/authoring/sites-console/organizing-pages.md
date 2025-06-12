@@ -5,8 +5,8 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
+workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 100%
 
@@ -16,8 +16,6 @@ ht-degree: 100%
 # ページの整理 {#creating-and-organizing-pages}
 
 AEM で web サイトを整理する方法について説明します。ページをどのように整理する必要があるかを理解したら、[新しいページを作成](/help/sites-cloud/authoring/sites-console/creating-pages.md)し、[既存のページを管理](/help/sites-cloud/authoring/sites-console/managing-pages.md)できます。
-
-{{edge-delivery-authoring}}
 
 ## サイトの管理 {#organizing-your-site}
 

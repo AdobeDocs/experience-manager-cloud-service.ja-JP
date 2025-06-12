@@ -5,14 +5,16 @@ exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 100%
 
 ---
 
 # テンプレートからサイトを作成 {#create-site-from-template}
+
+{{traditional-aem}}
 
 サイトテンプレートを使用して新しい AEM サイトをすばやく作成する方法を説明します。
 

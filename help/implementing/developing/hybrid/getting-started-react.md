@@ -4,12 +4,14 @@ description: この記事では、サンプルの SPA アプリケーション�
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 100%
 
 ---
+
 
 # React を使用した AEM での SPA の概要 {#getting-started-with-spas-in-aem-using-react}
 

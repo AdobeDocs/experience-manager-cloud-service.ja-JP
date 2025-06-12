@@ -4,7 +4,7 @@ description: フロントエンドパイプラインを使用すると、開発�
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5983c8579dd8606bc8bedfe6fa2a3838493452cd
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 100%
@@ -13,6 +13,8 @@ ht-degree: 100%
 
 
 # フロントエンドパイプラインを使用したサイトの開発 {#developing-site-with-front-end-pipeline}
+
+{{traditional-aem}}
 
 [フロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)を使用すると、フロントエンド開発者の作業の独立性が高まるほか、開発を大幅に速めることができます。この記事では、プロセスの仕組みについて説明し、プロセスを最大限に活用できるように主な考慮事項に焦点を当てます。
 

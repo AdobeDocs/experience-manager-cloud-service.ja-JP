@@ -5,8 +5,8 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
+workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 100%
 
@@ -23,6 +23,8 @@ ht-degree: 100%
 >[!NOTE]
 >
 >アカウントには、ページを編集するための適切なアクセス権と権限が必要です。権限がない場合は、システム管理者にお問い合わせください。
+
+{{traditional-aem}}
 
 ## オリエンテーション {#orientation}
 

@@ -5,14 +5,16 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 100%
 
 ---
 
 # パイプラインの設定 {#set-up-your-pipeline}
+
+{{traditional-aem}}
 
 フロントエンドパイプラインを作成して、サイトのテーマのカスタマイズを管理します。
 

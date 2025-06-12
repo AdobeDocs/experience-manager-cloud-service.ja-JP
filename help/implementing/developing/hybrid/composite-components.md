@@ -4,12 +4,14 @@ description: AEM 単一ページアプリケーション（SPA）エディター
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 100%
 
 ---
+
 
 # SPA の複合コンポーネント {#composite-components-in-spas}
 

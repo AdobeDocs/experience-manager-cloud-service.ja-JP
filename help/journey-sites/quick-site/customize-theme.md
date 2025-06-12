@@ -5,14 +5,16 @@ exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 100%
 
 ---
 
 # サイトテーマのカスタマイズ {#customize-the-site-theme}
+
+{{traditional-aem}}
 
 サイトテーマの作成方法、カスタマイズ方法、および AEM のライブコンテンツを使用したテスト方法を説明します。
 

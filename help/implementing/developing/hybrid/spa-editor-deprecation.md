@@ -4,12 +4,13 @@ description: SPA エディターは、アドビで引き続きサポートしま
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
-source-git-commit: ab35ff2cab9ad47935d90339bcf96c72e9db6b9a
-workflow-type: ht
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+workflow-type: tm+mt
 source-wordcount: '914'
 ht-degree: 100%
 
 ---
+
 
 # SPA エディターの廃止 {#spa-editor-deprecation}
 
