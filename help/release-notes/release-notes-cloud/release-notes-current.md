@@ -112,7 +112,7 @@ Content Hubでは、[ 作成時のコレクションへのアクセスを制御�
 
 **AJO B2C と Dynamic Media のネイティブ統合&#x200B;**
 
-[Experience Manager（AEM） Dynamic Media とJourney Optimizer（AJO） B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic) のネイティブ統合により、マーケターはAEM Dynamic Media アセット（レンディションおよび DM テンプレート）をAJO コンテンツに簡単に埋め込み、チャネル間でリアルタイムに更新され、高度にパーソナライズされたエクスペリエンスを提供できます。
+[Experience Manager（AEM） Dynamic Media とJourney Optimizer（AJO） B2C](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/combine/aem-dynamic) のネイティブ統合により、マーケターはAEM Dynamic Media アセット（レンディションおよび DM テンプレート）をAJO コンテンツに簡単に埋め込み、チャネル間でリアルタイムに更新され、高度にパーソナライズされたエクスペリエンスを提供できます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
