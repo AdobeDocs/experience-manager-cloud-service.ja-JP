@@ -3,12 +3,12 @@ title: Cloud Managerでの外部リポジトリのアクセストークンの管
 description: AEM Cloud Managerで独自の Git を取り込むために使用されるアクセストークンを表示、編集、削除する方法を説明します。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="早期導入者" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
+badge: label="プライベートベータ版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 9f9f931a233320014675c6aac86a2cc65f6909c6
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 14%
+ht-degree: 6%
 
 ---
 
@@ -22,7 +22,7 @@ Cloud Managerはアクセストークンを使用して、外部 Git プラッ�
 
 >[!NOTE]
 >
->この記事で説明する機能は、早期導入プログラムを通じてのみ使用できます。詳細と早期導入者としての新規登録について詳しくは、[独自の Git の導入](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)を参照してください。
+>この記事で説明する機能は、非公開のベータ版プログラムでのみ使用できます。 詳細およびプライベートベータ版にサインアップするには、[ 独自の Git の取り込み ](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket) を参照してください。
 
 ## アクセストークンの表示 {#view-access-tokens}
 

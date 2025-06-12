@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 52c8745d3a3cc4bc41003a258a85a817e7ccb48b
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 57%
+ht-degree: 54%
 
 ---
 
@@ -52,11 +52,11 @@ AEM as a Cloud Service の Cloud Manager 2025.6.0 のリリース日は 2025年6
   [ パイプラインのお気に入りをマーク ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites) を参照してください。
 
 
-## 早期導入プログラム {#early-adoption}
+## プライベートベータプログラム {#private-beta-program}
 
-Cloud Manager の早期導入プログラムに参加すると、一般リリース前の新機能に特別にアクセスできます。
+Cloud Managerの非公開Beta プログラムに参加すると、一般リリース前に、今後の機能に排他的にアクセスできます。
 
-現在利用可能な早期導入プログラムの機会は、次のとおりです。
+現在、次のプライベートベータ版の機会を利用できます。
 
 
 ### 特殊なテスト環境 {#specialized-test-environment}
@@ -111,7 +111,7 @@ Cloud Managerで **アクセストークンの管理** を使用して、外部 
 
 Edge Delivery Services を使用して作成されたサイトで設定パイプラインがサポートされるようになりました。これにより、Cloud Service 環境以外でもこの機能を利用できます。**設定パイプライン**&#x200B;を使用すると、トラフィックフィルタリングルールや web アプリケーションファイアウォール（WAF）設定などの設定を管理できます（該当する場合）。[サポートされている設定](/help/operations/config-pipeline.md#configurations)を参照してください。
 
-![ パイプラインを追加ドロップダウンリストの「Edge Delivery パイプラインを追加」 ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***プログラムの概要**&#x200B;ページ、「**パイプライン**」カードからのEdge Delivery パイプラインの追加*
+![ パイプラインを追加ドロップダウンリストの「Edge Delivery パイプラインを追加」 ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***プログラムの概要**ページ、「**パイプライン**」カードからのEdge Delivery パイプラインの追加*
 
 ![Edge Delivery パイプラインを追加ダイアログボックス ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png)*Edge Delivery パイプラインを追加ダイアログボックス*
 

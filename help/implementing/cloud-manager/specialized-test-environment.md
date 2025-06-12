@@ -3,9 +3,9 @@ title: 専用のテスト環境の追加
 description: Cloud Managerの専用テスト環境が、実稼動環境に近い条件下で機能を検証する専用のスペースを提供し、ストレステストや高度なデプロイメント前のチェックに最適な方法を説明します。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="早期導入者" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+badge: label="プライベートベータ版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 58514d9f55eaaa35801380648831ad6d13cf1529
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 34%
@@ -16,7 +16,7 @@ ht-degree: 34%
 
 >[!NOTE]
 >
->&#x200B;>この記事で説明している機能は、早期導入プログラムでのみ利用できます。 早期導入ユーザーとして登録するには、[ 専用テスト環境 ](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment) を参照してください。
+>>この記事で説明している機能は、非公開のベータ版プログラムでのみ使用できます。 プライベートベータ版に新規登録するには、[ 専用テスト環境 ](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment) を参照してください。
 
 専用テスト環境（DevXL）は、新しく作成できるタイプのCloud Manager環境です。 ユーザー受け入れテスト（UAT）やパフォーマンス検証などの高度なユースケースをサポートするように設計されています。 従来の開発環境、迅速な開発環境、ステージング環境とは異なり、DevXL 環境は実稼動デプロイメントパイプラインの外部で動作します。 したがって、厳密な分離を維持しながら、実稼動ワークフローへの干渉を防ぎながら、より高い柔軟性を提供します。
 

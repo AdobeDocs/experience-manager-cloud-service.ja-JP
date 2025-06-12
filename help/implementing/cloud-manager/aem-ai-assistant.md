@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Managerの AI アシスタント（Beta限定）
+title: Adobe Experience Managerの AI アシスタント（プライベートベータ版）
 description: Adobe Experience Managerの AI アシスタントを使用すると、回答の検索、トラブルシューティングおよび Sites、Assets、Forms、Cloud Managerの探索を行えます。
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -7,19 +7,19 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1124'
 ht-degree: 1%
 
 ---
 
 # Adobe Experience Managerの AI アシスタントについて {#aem-home}
 
-AEM（Adobe Experience Manager）の AI アシスタントは、Adobe Experience Manager関連のクエリに対する回答の検索を合理化するように設計された対話型インターフェイスを提供します。 Experience Leagueの製品情報へのアクセス、問題のトラブルシューティングおよび情報探索に役立ちます。 Betaの限定プログラム中、AI アシスタントは、Sites、Assets、Forms、Cloud ManagerなどのAdobe Experience Manager as a Cloud Serviceをサポートします。
+AEM（Adobe Experience Manager）の AI アシスタントは、Adobe Experience Manager関連のクエリに対する回答の検索を合理化するように設計された対話型インターフェイスを提供します。 Experience Leagueの製品情報へのアクセス、問題のトラブルシューティングおよび情報探索に役立ちます。 プライベートベータプログラム中、AI アシスタントは、Sites、Assets、Forms、Cloud ManagerなどのAdobe Experience Manager as a Cloud Serviceをサポートします。
 
 >[!IMPORTANT]
->Adobeで AI アシスタント機能を有効にして、Beta プログラムをテストし、参加できるようにするため、使用許諾契約書を確認して送信してください。
+>Adobeで AI アシスタント機能を有効にしてプライベートベータプログラムをテストし、利用できるようにするため、利用許諾契約書を確認して送信する必要があります。
 >
 >ご不明な点は、Adobe IDに関連付けられたメールアドレスから [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) までお問い合わせください。
 
@@ -74,7 +74,7 @@ AEM Forms用 AI アシスタントは、次の場所で使用できます。
 
 >[!NOTE]
 >
-> AEM Forms用 AI アシスタント（Forms Experience Builder）は、早期導入プログラムで利用できます。 勤務先のアドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールを送信して、アクセスをリクエストします。
+> AEM Forms用 AI アシスタント（Forms Experience Builder）は、非公開のベータ版プログラムで利用できます。 勤務先のアドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールを送信して、アクセスをリクエストします。
 
 詳細な例やベストプラクティスなど、AEM Formsの AI アシスタントの使用について詳しくは、[AEM Formsの AI アシスタントのドキュメント ](/help/edge/docs/forms/forms-ai-assistant.md) を参照してください。
 

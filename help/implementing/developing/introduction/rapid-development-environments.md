@@ -4,10 +4,10 @@ description: クラウド環境で迅速な開発反復処理を行うために�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 68937e844712ad639a495e87363d49a8bef25e05
-workflow-type: ht
-source-wordcount: '5392'
-ht-degree: 100%
+source-git-commit: c31b7afe4e563bd0de7aa481f6a90cd8eada0f1e
+workflow-type: tm+mt
+source-wordcount: '5391'
+ht-degree: 99%
 
 ---
 
@@ -531,7 +531,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 >[!NOTE]
 >
->この機能は、早期アクセスプログラムを通じて使用できます。この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com) にメールを送信します。使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
+>この機能は、Beta プログラムを通じて使用できます。 この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com) にメールを送信します。使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
 
 Cloud Manager では、[独自の Git の導入（BYOG）設定](/help/implementing/cloud-manager/managing-code/external-repositories.md)を使用する場合に、外部 Git プロバイダーから RDE へのコードの直接デプロイをサポートします。
 

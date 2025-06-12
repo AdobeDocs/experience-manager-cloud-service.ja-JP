@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0ce7d395c7c63f92e77769301c085fd917b869b4
+source-git-commit: c31b7afe4e563bd0de7aa481f6a90cd8eada0f1e
 workflow-type: tm+mt
-source-wordcount: '6242'
+source-wordcount: '6239'
 ht-degree: 98%
 
 ---
@@ -1201,14 +1201,14 @@ ht-degree: 98%
          + [プロジェクトのセットアップ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [環境の管理](/help/implementing/cloud-manager/manage-environments.md)
-      + [特殊なテスト環境（早期導入者）](/help/implementing/cloud-manager/specialized-test-environment.md)
+      + [専用テスト環境（Beta）](/help/implementing/cloud-manager/specialized-test-environment.md)
       + コードの管理 {#managing-code}
          + [Maven プロジェクトのバージョン処理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Cloud Managerでのリポジトリの管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Adobe リポジトリの追加](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [プライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [外部リポジトリの追加（早期導入）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
-         + [外部リポジトリのアクセストークンの管理（早期導入）](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+         + [外部リポジトリの追加（Beta）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [外部リポジトリのアクセストークンの管理（Beta）](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
          + [リポジトリへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git サブモジュールのサポート](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Cloud Manager での Git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
