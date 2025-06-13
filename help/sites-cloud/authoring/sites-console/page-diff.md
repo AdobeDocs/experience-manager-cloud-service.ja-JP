@@ -1,14 +1,14 @@
 ---
-title: ページの差分
+title: 'ページの差分 '
 description: ページの差分機能を使用すると、2 つのページを並べて比較し、違いを強調表示するのに便利です。
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: ae1dedc3d0533205decc08d396c5a844c4525ba2
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 100%
+source-wordcount: '635'
+ht-degree: 95%
 
 ---
 
@@ -90,6 +90,7 @@ ht-degree: 100%
 
 ページの差分によって、期待どおりに差分が検出されない場合があります。
 
+* [Edge Delivery Servicesで使用するために作成されたページを区別する場合 ](/help/edge/overview.md) 比較しやすいように、ページを並べて表示しますが、ページの違いは強調表示されません。
 * バージョンおよびローンチが異なる場合、差分は、パンくずリスト、メニュー、製品リストまたはロゴ（コンテンツのレンダリングでサイト構造に依存するコンポーネント）などの動的コンポーネントは考慮されません。
 * バージョンの差分表示では、アクセスコントロールポリシーおよびライブコピー関係は再現されません。
 * ページを移動すると、移動前に作成したバージョンとの差分を実行できなくなります。
