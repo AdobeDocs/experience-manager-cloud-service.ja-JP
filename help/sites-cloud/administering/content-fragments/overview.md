@@ -5,16 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 3950df27533bf545d33da39a9f5fe9819820134a
+source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
 workflow-type: tm+mt
-source-wordcount: '1987'
-ht-degree: 99%
+source-wordcount: '2014'
+ht-degree: 98%
 
 ---
 
 # コンテンツフラグメントの操作の概要 {#overview-working-with-content-fragments}
 
 Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツを設計、作成、キュレーション、公開できます。複数の場所、複数のチャネル上で使用可能なコンテンツを用意でき、[ヘッドレス配信](/help/headless/what-is-headless.md)や[ページオーサリング](/help/sites-cloud/authoring/fragments/content-fragments.md)に理想的です。
+
+>[!IMPORTANT]
+>
+>この節で説明する多くの機能は *統合シェル [ で使用できます*。つまり *オンライン ](/help/overview/aem-cloud-service-on-unified-shell.md)Adobe Experience Manager（AEM）as a Cloud Serviceであり* ローカルインスタンスではありません。
 
 >[!IMPORTANT]
 >
@@ -241,7 +245,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 * **コンテンツモデル**
 
-   * [&#128279;](/help/sites-cloud/administering/content-fragments/setup.md)設定ブラウザーを使用して有効化されます。
+   * ](/help/sites-cloud/administering/content-fragments/setup.md)設定ブラウザーを使用して有効化[されます。
    * [コンテンツフラグメントコンソールを使用して作成](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)されます。
    * [フラグメントを作成](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments)するために必要です。
    * フラグメントの構造（タイトル、コンテンツ要素、タグ定義）を定義します。

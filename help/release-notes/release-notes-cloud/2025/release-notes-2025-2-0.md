@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.2.0 リ�
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: 7eabd6199467d4e42f6bf7914de0d7ba7a3f9733
+source-git-commit: 403ffbede5438131d0b0e770215b990e2d16c018
 workflow-type: tm+mt
-source-wordcount: '1524'
-ht-degree: 98%
+source-wordcount: '1527'
+ht-degree: 96%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 98%
 
 **コンテンツフラグメントエディターのロールアウト**
 
-AEM as a Cloud Service では、新しい Spectrum UI ベースのコンテンツフラグメントエディターが引き続き有効になります。2024年11月にすべての Cloud Service 開発環境のデフォルトになった後、2025年4月1日（PT）にはすべてのステージング環境のデフォルト、2025年5月1日（PT）にはすべての実稼動環境のデフォルトとして設定される予定です。すべてのケースで、ユーザーは AEM タッチ UI で従来のコンテンツフラグメントエディターに戻すオプションを引き続き利用できます。
+今後も、[ 統合シェル ](/help/sites-cloud/administering/content-fragments/authoring.md) （Spectrum-UI 使用）を使用して、AEM as a Cloud Serviceで新しい [ コンテンツフラグメントエディター ](/help/overview/aem-cloud-service-on-unified-shell.md) を有効にします。 2024年11月にすべての Cloud Service 開発環境のデフォルトになった後、2025年4月1日（PT）にはすべてのステージング環境のデフォルト、2025年5月1日（PT）にはすべての実稼動環境のデフォルトとして設定される予定です。すべてのケースで、ユーザーは AEM タッチ UI で従来のコンテンツフラグメントエディターに戻すオプションを引き続き利用できます。
 
 **Translation HTTP API**
 
@@ -147,7 +147,7 @@ Edge コンピューティングには、データ処理がブラウザーに近
 
 * [Sites Content Fragments API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [Assets API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
-* [Sites and Assets Folders API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
+* Sites およびAssets Folders API
 * [Forms Communications API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### 新しい AEM Developer Console（パブリックベータ版） {#aem-developer-console-beta}
@@ -158,7 +158,7 @@ Edge コンピューティングには、データ処理がブラウザーに近
 
 ## [!DNL Experience Manager] ガイド {#guides}
 
-Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0)を参照してください。
+Adobe Experience Manager Guides の最新リリースの新機能と強化機能の完全なリストについては、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0)を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 

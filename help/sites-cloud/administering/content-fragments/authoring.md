@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
-workflow-type: ht
-source-wordcount: '2817'
-ht-degree: 100%
+source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
+workflow-type: tm+mt
+source-wordcount: '2824'
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 >[!WARNING]
 >
->この節で説明するエディターは、*オンライン*&#x200B;の Adobe Experience Manager（AEM）as a Cloud Service で&#x200B;*のみ*&#x200B;使用できます。
+>この節で説明しているエディターは *統合シェル* 内で [ のみ ](/help/overview/aem-cloud-service-on-unified-shell.md) 使用できます。つまり *オンライン* Adobe Experience Manager（AEM）as a Cloud Serviceは、ローカルインスタンスではありません。
 
 ## コンテンツフラグメントエディター {#content-fragment-editor}
 
