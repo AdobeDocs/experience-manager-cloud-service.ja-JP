@@ -40,47 +40,47 @@ AEMの長い歴史の中で [ ページエディター ](/help/sites-cloud/autho
 
 |  | ページエディター | メモ | ユニバーサルエディター | メモ |
 |---|---|---|---|---|
-| [ 配信を公開 ](/help/sites-cloud/authoring/author-publish.md) | [!BADGE  使用可能 ]{type=Positive} | コアコンポーネントおよび従来のAEM プロジェクトでの使用に推奨 | [!BADGE  利用不可 ]{type=Negative} | 従来のAEM ページは、通常、ユニバーサルエディターでそのままレプリケートするのが難しい、いくつかのページエディター固有の機能に依存します。 |
-| [Edge Delivery](/help/edge/overview.md) | [!BADGE  利用不可 ]{type=Negative} |  | [!BADGE  使用可能 ]{type=Positive} |  |
-| [ ヘッドレス配信 ](/help/headless/introduction.md) | [!BADGE  一部利用可能 ]{type=Caution} | ユニバーサルエディターに置き換えて [ 非推奨 ](/help/implementing/developing/hybrid/spa-editor-deprecation.md) となった [SPA エディター ](/help/implementing/developing/hybrid/introduction.md) でのみ | [!BADGE  使用可能 ]{type=Positive} | ユニバーサルエディターを使用すると、開発者は、特定のフレームワーク要件や実装制約を課すことなく、独自の web アプリを持ち込むことができます。 |
+| [ 配信を公開 ](/help/sites-cloud/authoring/author-publish.md) | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | コアコンポーネントおよび従来のAEM プロジェクトでの使用に推奨 | [!BADGE &#x200B; 利用不可 &#x200B;]{type=Negative} | 従来のAEM ページは、通常、ユニバーサルエディターでそのままレプリケートするのが難しい、いくつかのページエディター固有の機能に依存します。 |
+| [Edge Delivery](/help/edge/overview.md) | [!BADGE &#x200B; 利用不可 &#x200B;]{type=Negative} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  |
+| [ ヘッドレス配信 ](/help/headless/introduction.md) | [!BADGE &#x200B; 一部利用可能 &#x200B;]{type=Caution} | ユニバーサルエディターに置き換えて [ 非推奨 ](/help/implementing/developing/hybrid/spa-editor-deprecation.md) となった [SPA エディター ](/help/implementing/developing/hybrid/introduction.md) でのみ | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | ユニバーサルエディターを使用すると、開発者は、特定のフレームワーク要件や実装制約を課すことなく、独自の web アプリを持ち込むことができます。 |
 
 ### 永続性 {#persistence}
 
 |  | ページエディター | メモ | ユニバーサルエディター | メモ |
 |---|---|---|---|---|
-| ページコンポーネントの編集 | [!BADGE  使用可能 ]{type=Positive} |  | [!BADGE  使用可能 ]{type=Positive} |  |
-| 編集 [ コンテンツフラグメント ](/help/assets/content-fragments/content-fragments.md) | [!BADGE  利用不可 ]{type=Negative} |  | [!BADGE  使用可能 ]{type=Positive} | 新しいフラグメントの挿入やフラグメントの並べ替えを含める |
+| ページコンポーネントの編集 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  |
+| 編集 [ コンテンツフラグメント ](/help/assets/content-fragments/content-fragments.md) | [!BADGE &#x200B; 利用不可 &#x200B;]{type=Negative} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | 新しいフラグメントの挿入やフラグメントの並べ替えを含める |
 
 ### 機能 {#capabilities}
 
 |  | ページエディター | メモ | ユニバーサルエディター | メモ |
 |---|---|---|---|---|
-| ページテンプレート | [!BADGE  使用可能 ]{type=Positive} |  | [!BADGE  使用可能 ]{type=Positive} | ユニバーサルエディターは、使用されるテンプレートシステムに依存しません。 ただし、最新のフロントエンドツールでは、開発者がコード内で直接テンプレートロジックを定義および管理しやすくなっているので、通常の実装パターンでは開発者が定義したテンプレートが優先されます。 |
-| WYSIWYGの編集 | [!BADGE  使用可能 ]{type=Positive} | ページに制限 | [!BADGE  使用可能 ]{type=Positive} | ページとコンテンツフラグメントのサポート |
-| [バリエーションを生成](/help/generative-ai/generate-variations.md) | [!BADGE  利用不可 ]{type=Negative} |  | [!BADGE  使用可能 ]{type=Positive} | [ 拡張機能として使用できます ](/help/implementing/universal-editor/extending.md) |
-| 新しいブロックを挿入 | [!BADGE  使用可能 ]{type=Positive} |  | [!BADGE  使用可能 ]{type=Positive} |  |
-| ブロックを並べ替え | [!BADGE  使用可能 ]{type=Positive} | コンテキスト内ドラッグ&amp;ドロップでは可能ですが、「ツリー表示」サイドパネルでは不可能です | [!BADGE  使用可能 ]{type=Positive} | 「ツリー表示」サイドパネルでドラッグ&amp;ドロップすることで可能ですが、まだコンテキスト内（予定）ではありません |
-| ブロックの切り取り/コピー/貼り付け | [!BADGE  使用可能 ]{type=Positive} |  | [!BADGE  利用不可 ]{type=Negative} | 計画済み |
-| スタイルの適用 | [!BADGE  使用可能 ]{type=Positive} | スタイルは、[ スタイルシステム ](/help/sites-cloud/authoring/page-editor/style-system.md) を使用してコンポーネントに適用できます。 | [!BADGE  使用可能 ]{type=Positive} | スタイルは、通常のコンポーネント（またはコンテンツフラグメント）プロパティを使用して適用できます。 ユニバーサルエディターでは同じスタイルピッカーは使用できませんが、複数選択ウィジェットを使用すると、非常に類似した UX を実現できます。 |
-| レイアウトの適用 | [!BADGE  使用可能 ]{type=Positive} | サイトでは、[AEM レスポンシブグリッド ](/help/implementing/developing/introduction/responsive-design.md) を実装して、作成者が 3 つの事前定義済みブレークポイントにわたってコンポーネントのサイズを変更できるようにする必要があります。 | [!BADGE  使用可能 ]{type=Positive} | レイアウトは通常のコンポーネント（またはコンテンツフラグメント）プロパティを使用して適用できますが、レスポンシブグリッドはサポートされていません。 |
-| 取り消し/やり直し | [!BADGE  使用可能 ]{type=Positive} |  | [!BADGE  利用不可 ]{type=Negative} | 計画済み |
-| 公開（プレビューにも対応） | [!BADGE  使用可能 ]{type=Positive} |  | [!BADGE  使用可能 ]{type=Positive} |  |
-| [ワークフローを開始](/help/sites-cloud/authoring/workflows/overview.md) | [!BADGE  使用可能 ]{type=Positive} |  | [!BADGE  使用可能 ]{type=Positive} | 拡張機能として使用できます |
-| コメント中 | [!BADGE  使用可能 ]{type=Positive} | [ 注釈 ](/help/sites-cloud/authoring/page-editor/annotations.md) の使用 | [!BADGE  利用不可 ]{type=Negative} | 計画済み |
-| Workfront の統合 | [!BADGE  利用不可 ]{type=Negative} |  | [!BADGE  使用可能 ]{type=Positive} | 拡張機能として使用できます |
-| [MSM とローンチ ](/help/sites-cloud/administering/msm-and-translation.md) | [!BADGE  使用可能 ]{type=Positive} |  | [!BADGE  使用可能 ]{type=Positive} | ページに拡張機能として使用できます |
-| 実験とパーソナライゼーション | [!BADGE  使用可能 ]{type=Positive} | [ ターゲットモード ](/help/sites-cloud/authoring/personalization/targeted-content.md) の使用 | [!BADGE  使用可能 ]{type=Positive} | Edge Delivery Servicesの拡張機能として使用できます |
-| コンテンツツリー | [!BADGE  使用可能 ]{type=Positive} |  | [!BADGE  使用可能 ]{type=Positive} | ツリー内で並べ替えることもできます |
-| 医療機器シミュレーション | [!BADGE  使用可能 ]{type=Positive} | [ 設定されたデバイスをシミュレートできます ](/help/sites-cloud/administering/responsive-layout.md) が、ユーザーがシミュレートするために別の画面サイズを手動で入力することはできません。 | [!BADGE  使用可能 ]{type=Positive} | [ シミュレーションする画面のサイズは手動で入力できますが ](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) デフォルトのブレークポイントは設定できません。 |
-| [ ページロック ](/help/sites-cloud/authoring/sites-console/managing-pages.md) | [!BADGE  使用可能 ]{type=Positive} |  | [!BADGE  使用可能 ]{type=Positive} | エディターでページのロック/ロック解除に使用できる拡張機能を使用して、サイトコンソールのロックステータス設定を尊重します |
-| [ ページプロパティ ](/help/sites-cloud/authoring/sites-console/page-properties.md) | [!BADGE  使用可能 ]{type=Positive} |  | [!BADGE  使用可能 ]{type=Positive} | サイト管理から使用でき、エディターからページのプロパティにアクセスすることもできます。 |
-| 複数フィールドのプロパティ | [!BADGE  使用可能 ]{type=Positive} |  | [!BADGE  利用不可 ]{type=Negative} | 計画済み |
-| [ リモート DAM](/help/assets/dynamic-media-open-apis-overview.md) | [!BADGE  使用可能 ]{type=Positive} |  | [!BADGE  使用可能 ]{type=Positive} |  |
-| [ ページバージョン管理 ](/help/sites-cloud/authoring/sites-console/page-versions.md) | [!BADGE  使用可能 ]{type=Positive} |  | [!BADGE  使用可能 ]{type=Positive} |  |
-| [TimeWarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) と [ 差分表示 ](/help/sites-cloud/authoring/sites-console/page-diff.md) | [!BADGE  使用可能 ]{type=Positive} |  | [!BADGE  利用不可 ]{type=Negative} | 計画済み |
-| 管理画面で表示 | [!BADGE  使用可能 ]{type=Positive} |  | [!BADGE  使用可能 ]{type=Positive} | ページの拡張機能として使用できます |
-| ページステータスの表示 | [!BADGE  使用可能 ]{type=Positive} |  | [!BADGE  利用不可 ]{type=Negative} | サイトコンソールで使用可能 |
-| 拡張機能 | [!BADGE  使用可能 ]{type=Positive} | AEMのオーバーレイとして | [!BADGE  使用可能 ]{type=Positive} | App Builderを使用し、AEM固有の知識をほとんど使用せずに、明確に定義された拡張ポイント |
+| ページテンプレート | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | ユニバーサルエディターは、使用されるテンプレートシステムに依存しません。 ただし、最新のフロントエンドツールでは、開発者がコード内で直接テンプレートロジックを定義および管理しやすくなっているので、通常の実装パターンでは開発者が定義したテンプレートが優先されます。 |
+| WYSIWYGの編集 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | ページに制限 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | ページとコンテンツフラグメントのサポート |
+| [バリエーションを生成](/help/generative-ai/generate-variations.md) | [!BADGE &#x200B; 利用不可 &#x200B;]{type=Negative} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | [ 拡張機能として使用できます ](/help/implementing/universal-editor/extending.md) |
+| 新しいブロックを挿入 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  |
+| ブロックを並べ替え | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | コンテキスト内ドラッグ&amp;ドロップでは可能ですが、「ツリー表示」サイドパネルでは不可能です | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | 「ツリー表示」サイドパネルでドラッグ&amp;ドロップすることで可能ですが、まだコンテキスト内（予定）ではありません |
+| ブロックの切り取り/コピー/貼り付け | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 利用不可 &#x200B;]{type=Negative} | 計画済み |
+| スタイルの適用 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | スタイルは、[ スタイルシステム ](/help/sites-cloud/authoring/page-editor/style-system.md) を使用してコンポーネントに適用できます。 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | スタイルは、通常のコンポーネント（またはコンテンツフラグメント）プロパティを使用して適用できます。 ユニバーサルエディターでは同じスタイルピッカーは使用できませんが、複数選択ウィジェットを使用すると、非常に類似した UX を実現できます。 |
+| レイアウトの適用 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | サイトでは、[AEM レスポンシブグリッド ](/help/implementing/developing/introduction/responsive-design.md) を実装して、作成者が 3 つの事前定義済みブレークポイントにわたってコンポーネントのサイズを変更できるようにする必要があります。 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | レイアウトは通常のコンポーネント（またはコンテンツフラグメント）プロパティを使用して適用できますが、レスポンシブグリッドはサポートされていません。 |
+| 取り消し/やり直し | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 利用不可 &#x200B;]{type=Negative} | 計画済み |
+| 公開（プレビューにも対応） | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  |
+| [ワークフローを開始](/help/sites-cloud/authoring/workflows/overview.md) | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | 拡張機能として使用できます |
+| コメント中 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | [ 注釈 ](/help/sites-cloud/authoring/page-editor/annotations.md) の使用 | [!BADGE &#x200B; 利用不可 &#x200B;]{type=Negative} | 計画済み |
+| Workfront の統合 | [!BADGE &#x200B; 利用不可 &#x200B;]{type=Negative} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | 拡張機能として使用できます |
+| [MSM とローンチ ](/help/sites-cloud/administering/msm-and-translation.md) | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | ページに拡張機能として使用できます |
+| 実験とパーソナライゼーション | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | [ ターゲットモード ](/help/sites-cloud/authoring/personalization/targeted-content.md) の使用 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | Edge Delivery Servicesの拡張機能として使用できます |
+| コンテンツツリー | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | ツリー内で並べ替えることもできます |
+| 医療機器シミュレーション | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | [ 設定されたデバイスをシミュレートできます ](/help/sites-cloud/administering/responsive-layout.md) が、ユーザーがシミュレートするために別の画面サイズを手動で入力することはできません。 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | [ シミュレーションする画面のサイズは手動で入力できますが ](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) デフォルトのブレークポイントは設定できません。 |
+| [ ページロック ](/help/sites-cloud/authoring/sites-console/managing-pages.md) | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | エディターでページのロック/ロック解除に使用できる拡張機能を使用して、サイトコンソールのロックステータス設定を尊重します |
+| [ ページプロパティ ](/help/sites-cloud/authoring/sites-console/page-properties.md) | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | サイト管理から使用でき、エディターからページのプロパティにアクセスすることもできます。 |
+| 複数フィールドのプロパティ | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 利用不可 &#x200B;]{type=Negative} | 計画済み |
+| [ リモート DAM](/help/assets/dynamic-media-open-apis-overview.md) | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  |
+| [ ページバージョン管理 ](/help/sites-cloud/authoring/sites-console/page-versions.md) | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  |
+| [TimeWarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) と [ 差分表示 ](/help/sites-cloud/authoring/sites-console/page-diff.md) | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 利用不可 &#x200B;]{type=Negative} | 計画済み |
+| 管理画面で表示 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | ページの拡張機能として使用できます |
+| ページステータスの表示 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 利用不可 &#x200B;]{type=Negative} | サイトコンソールで使用可能 |
+| 拡張機能 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | AEMのオーバーレイとして | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | App Builderを使用し、AEM固有の知識をほとんど使用せずに、明確に定義された拡張ポイント |
 
 ## ユニバーサルエディターの採用 {#adopt-ue}
 
