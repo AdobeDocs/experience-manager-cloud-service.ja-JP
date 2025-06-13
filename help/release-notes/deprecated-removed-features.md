@@ -4,10 +4,10 @@ description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 569ab7cfab02cfc5d5ad1c8f402a51df34f4bac6
+source-git-commit: c7615247be1e237c72508ae4dfc3156fdcde9905
 workflow-type: tm+mt
-source-wordcount: '3039'
-ht-degree: 72%
+source-wordcount: '3181'
+ht-degree: 70%
 
 ---
 
@@ -143,7 +143,7 @@ Adobeでは、AEM as a Cloud Serviceのパフォーマンス、セキュリテ�
     <td>2025/8/31</td>
   </tr>
   <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
-    <td>Google Guava コアライブラリは非推奨です。</td>
+    <td>Google Guava コアライブラリはCloud Serviceで非推奨（廃止予定）となりました。 <a href="#com.google.common">以下の削除に関するメモを参照してください。</a></td>
     <td>2023/05/15</td>
     <td>2025/8/31</td>
   </tr>
@@ -362,6 +362,19 @@ Mongo client API をプロジェクトに追加します。
 
 * このバンドルをプロジェクトに追加
    * `org.mongodb:mongo-java-driver:3.12.7`
+
+必要に応じて、別のバージョンを選択することもできます。
+
+### `com.google.common*` の削除 {#com.google.common}
+
+Google Guava コアライブラリの使用を中止するか、プロジェクトに適切なバージョンを含めます。 多くの場合、このライブラリの使用方法は、JDK のコレクションクラスまたは Apache Commons Collections4 に置き換えることができます。 置き換えるバージョンが見つからない場合は、プロジェクトに最新バージョンのGoogle Guave コアライブラリを含めます。 古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
+
+アクションリスト：
+
+* ACS AEM Commons を最新バージョン（6.11.0 以降）に更新します。
+* Google Guava コアライブラリの使用を JDK コレクションまたは Apache Commons Collections4 に置き換えます。
+* それでも必要な場合は、このバンドルをプロジェクトに追加します（バージョンを利用可能な最新のものに置き換えてください）。
+   * `com.google.guava:guava:33.4.8-jre`
 
 ### `Apache Commons Lang 2 and Apache Commons Collections 3` の削除 {#apache.commons}
 
