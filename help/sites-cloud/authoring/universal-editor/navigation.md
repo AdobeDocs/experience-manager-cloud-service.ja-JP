@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
+source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
 workflow-type: tm+mt
-source-wordcount: '1756'
-ht-degree: 96%
+source-wordcount: '1782'
+ht-degree: 95%
 
 ---
 
@@ -269,7 +269,8 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ![コンテンツツリーモード](assets/content-tree-mode.png)
 
-コンテンツツリー内の項目を選択する場合、エディターはそのコンテンツまでスクロールして選択します。
+* コンテンツツリー内の項目を選択する場合、エディターはそのコンテンツまでスクロールして選択します。
+* コンテンツツリーで項目をダブルクリックすると、エディターがそのコンテンツまでスクロールして選択し、関連するプロパティも [ プロパティモード ](#properties-mode) で開きます。
 
 ![コンテンツツリー](assets/content-tree.png)
 
