@@ -3,7 +3,7 @@ title: 統合  [!DNL AEM Assets]  コンテンツのオーサリング中  [!DNL
 description: ' [!DNL AEM Assets] with [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] with [!DNL Microsoft Word] and [!DNL Google Docs], integrate [!DNL AEM Assets] with [!DNL Universal Editor], integrate [!DNL Dynamic Media] with [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Universal Editor] and integrate [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Microsoft Word] and [!DNL Google Docs] を統合する方法を説明します。'
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: fecaefbb6a02e944be38c3dfaa3baea5691219cd
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 6%
@@ -113,7 +113,7 @@ OpenAPI 機能を備えた Dynamic Media を使用してコンテンツ内のア
 
 ## サンプル [!DNL Edge Delivery Services] サイト{#dynamic-media-with-google-docs-and-ms-word}
 
-[!DNL Edge Delivery Services] のドキュメントベースのオーサリング機能を使用して構築されたサイトである [WKND Travel](http://bit.ly/3DExLnf) を参照してください。 サイトのコンテンツは [Google Docsで作成され ](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) コンテンツ内のアセットを配信するために使用さ [!DNL Dynamic Media with OpenAPI capabilities] ます。 オーサリング後、コンテンツはドキュメントから直接公開されます。 この [Git リポジトリー ](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) を参照して、この [!DNL Edge Delivery Services (EDS)] サイトのドキュメントベースのオーサリング設定の作成に使用される、すべての重要なファイル、フォルダー、設定、web サイトのスタイル設定および機能コードについて確認します。
+[!DNL Edge Delivery Services] のドキュメントベースのオーサリング機能を使用して構築されたサイトである [WKND Travel](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-hospitality/wknd-trvl-home) を参照してください。 サイトのコンテンツは [Google Docsで作成され ](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) コンテンツ内のアセットを配信するために使用さ [!DNL Dynamic Media with OpenAPI capabilities] ます。 オーサリング後、コンテンツはドキュメントから直接公開されます。 この [Git リポジトリー ](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) を参照して、この [!DNL Edge Delivery Services (EDS)] サイトのドキュメントベースのオーサリング設定の作成に使用される、すべての重要なファイル、フォルダー、設定、web サイトのスタイル設定および機能コードについて確認します。
 
 ## [!DNL Edge Delivery Services] 用の [!DNL Universal Editor] ベースのオーサリングフローとの [!DNL AEM Assets] の統合 {#integrate-aem-assets-with-universal-editor-UE}
 

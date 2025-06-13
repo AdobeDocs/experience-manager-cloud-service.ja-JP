@@ -4,10 +4,10 @@ description: Apache Sling 用の Eclipse プラグインに基づく Eclipse プ
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+workflow-type: tm+mt
 source-wordcount: '1138'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ _Experience Manager Developer Tools for Eclipse_ は、Apache License 2 に従�
 AEM Developer Tools を使用する前に、次の作業が必要です。
 
 * [Eclipse IDE for Enterprise Java™ Developers](https://www.eclipse.org/downloads/packages/) をダウンロードしてインストールします。
-* [Eclipse に関する FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse) の説明に従って、`eclipse.ini` 設定ファイルを編集し、ヒープメモリが 1 GB 以上になるように Eclipse を設定します。
+* [Eclipse に関する FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) の説明に従って、`eclipse.ini` 設定ファイルを編集し、ヒープメモリが 1 GB 以上になるように Eclipse を設定します。
 
 >[!NOTE]
 >

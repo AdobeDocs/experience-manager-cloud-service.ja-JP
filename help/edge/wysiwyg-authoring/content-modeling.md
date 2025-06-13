@@ -7,9 +7,9 @@ role: Admin, Architect, Developer
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
-workflow-type: ht
-source-wordcount: '2195'
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+workflow-type: tm+mt
+source-wordcount: '2160'
 ht-degree: 100%
 
 ---
@@ -645,8 +645,3 @@ AEM で使用できるデフォルトのページプロパティの多くは、�
 Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリングで、ユニバーサルエディターで使用するために実装されたブロックを作成する方法について詳しくは、[ユニバーサルエディターで使用するために実装されたブロックの作成](/help/edge/wysiwyg-authoring/create-block.md)ドキュメントを参照してください。
 
 ブロックの作成に慣れている場合は、[Edge Delivery Services を使用した WYSIWYG オーサリングの開発者向け入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)ドキュメントを参照して、Edge Delivery Services とコンテンツオーサリング用のユニバーサルエディターを使用し、新しい Adobe Experience Manager サイトを立ち上げて実行します。
-
->[!TIP]
->
->コンテンツソースとして AEM as a Cloud Service を使用して WYSIWYG オーサリングを実行できる、新しい Edge Delivery Services プロジェクトの作成に関するエンドツーエンドのチュートリアルについて詳しくは、[この AEM GEM ウェビナー](https://experienceleague.adobe.com/ja/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)を参照してください。
-

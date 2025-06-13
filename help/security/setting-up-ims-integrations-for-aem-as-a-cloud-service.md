@@ -4,7 +4,7 @@ description: AEM as a Cloud Service の IMS 統合の設定方法について説
 exl-id: 72fb1ea1-355c-4faa-a733-77bc7de75ed5
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 00a05b3bdc1a689947c1507847da99b54c94dcac
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 100%
@@ -49,7 +49,7 @@ Adobe Experience Manager（AEM）as a Cloud Service は、他の多くの Adobe 
 
 * 新しい OAuth 資格情報の作成：
 
-   * [OAuth サーバー間資格情報実装ガイド](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+   * [OAuth サーバー間資格情報実装ガイド](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
 * 既存の JWT 資格情報の OAuth 資格情報への移行：
 
@@ -67,7 +67,7 @@ OAuth を使用して新しい Adobe IMS 統合を作成するには：
 
 1. 「**作成**」を選択します。
 
-1. [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/) の詳細に基づいて設定を完了します。次に例を示します。
+1. [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) の詳細に基づいて設定を完了します。次に例を示します。
 
    ![OAuth 設定の作成](assets/ims-create-oauth-configuration.png)
 

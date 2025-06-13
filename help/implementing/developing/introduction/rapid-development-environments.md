@@ -4,7 +4,7 @@ description: クラウド環境で迅速な開発反復処理を行うために�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c31b7afe4e563bd0de7aa481f6a90cd8eada0f1e
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
 workflow-type: tm+mt
 source-wordcount: '5391'
 ht-degree: 99%
@@ -84,7 +84,7 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
 >Adobe I/O（AIO）CLI と関連プラグインが正しく動作するように、バージョン 20 の[ノードと NPM がインストールされている](https://nodejs.org/en/download/)ことを確認してください。
 
 
-1. こちらの[手順](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/)に従って、AIO CLI ツールをインストールします。
+1. こちらの[手順](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/tools/cli-install)に従って、AIO CLI ツールをインストールします。
 1. AIO CLI ツールの AEM RDE プラグインをインストールします。
 
    ```

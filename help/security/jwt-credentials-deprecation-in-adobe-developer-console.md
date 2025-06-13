@@ -4,10 +4,10 @@ description: AEM の Adobe Developer Console での JWT 資格情報の廃止の
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: 957dedd81d14e921aa8a64de80ef21fd11f713ab
-workflow-type: ht
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
+workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 主なポイントは、AEM で AEM as a Cloud Service の新しい OAuth サーバー間資格情報をサポートするようになったということです。JWT 資格情報を移行する手順が記載されたメールを受信した場合は、この移行を今すぐ実行できます。
 
-以下の節では、AEM でサポートするようになり、お客様がサービスアカウント（JWT）資格情報を OAuth サーバー間資格情報に置き換える必要がある（場合によっては置き換えてはいけない）シナリオを示します。資格情報を移行する方法については、[こちら](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)を参照してください。
+以下の節では、AEM でサポートするようになり、お客様がサービスアカウント（JWT）資格情報を OAuth サーバー間資格情報に置き換える必要がある（場合によっては置き換えてはいけない）シナリオを示します。資格情報を移行する方法については、[こちら](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview)を参照してください。
 
 >[!NOTE]
 >

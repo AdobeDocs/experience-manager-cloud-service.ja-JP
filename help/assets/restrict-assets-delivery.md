@@ -3,10 +3,10 @@ title: OpenAPI 機能を備えた Dynamic Media を使用したアセットの�
 description: OpenAPI 機能を使用したアセットの配信の制限方法について説明します。
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
 workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 97%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
         </td>
     </tr>
     <tr>
@@ -74,7 +74,7 @@ IMS ユーザーおよびグループ ID に基づいて、[!DNL Experience Mana
 
 >[!NOTE]
 >
->この機能は現在セルフサービスではありません。IMS [ユーザー](https://helpx.adobe.com/jp/enterprise/using/manage-directory-users.html)および[グループ](https://helpx.adobe.com/jp/enterprise/using/user-groups.html)に対するアセット配信を制限するには、エンタープライズサポートチームにお問い合わせください。[Adobe Admin Console](https://adminconsole.adobe.com/) ポータルからアクセスを制限するために必要な情報を取得する方法と、AEM as a Cloud Service オーサーサービスでアクセスを設定する方法を紹介します。
+> この機能は現在セルフサービスではありません。IMS [ユーザー](https://helpx.adobe.com/jp/enterprise/using/manage-directory-users.html)および[グループ](https://helpx.adobe.com/jp/enterprise/using/user-groups.html)に対するアセット配信を制限するには、エンタープライズサポートチームにお問い合わせください。[Adobe Admin Console](https://adminconsole.adobe.com/) ポータルからアクセスを制限するために必要な情報を取得する方法と、AEM as a Cloud Service オーサーサービスでアクセスを設定する方法を紹介します。
 
 ### オン／オフの日時を使用したアセットの配信の制限 {#restrict-delivery-assets-date-time}
 
@@ -113,7 +113,7 @@ DAM 作成者は、アセットプロパティで使用可能なアクティベ�
 
 ## 制限付きアセットの配信 {#delivery-restricted-assets}
 
-制限付きアセットの配信は、アセットへのアクセスに対する正常な認証に基づいています。認証は、[IMS ベアラートークン](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/)（[AEM アセットセレクター](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)から開始されたリクエストの申請）またはセキュア Cookie（AEM パブリッシュ／プレビューサービスにカスタム ID プロバイダーが設定され、ページでの Cookie の作成と組み込みが設定されている場合）を通じて行われます。
+制限付きアセットの配信は、アセットへのアクセスに対する正常な認証に基づいています。認証は、[IMS ベアラートークン](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/)（[AEM アセットセレクター](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)から開始されたリクエストの申請）またはセキュア Cookie（AEM パブリッシュ／プレビューサービスにカスタム ID プロバイダーが設定され、ページでの Cookie の作成と組み込みが設定されている場合）を通じて行われます。
 
 ### AEM オーサーリクエストまたはアセットセレクターリクエストの配信 {#delivery-aem-author-asset-selector}
 
@@ -128,7 +128,7 @@ AEM Cloud Service オーサーサービスとアセットセレクターでは�
    * [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) を通じて IMS ベアラートークンを取得できるサービスとサーバー間の API 統合を実行するには、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow)の手順に従ってください。
    * 期間限定のローカル開発者アクセス（実稼動ユースケースを意図したものではない）の場合、[AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) で認証されたユーザー用の短時間のみ有効な IMS ベアラートークンは、[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)の手順に従って生成できます。
 
-1. [検索](search-assets-api.md)および[配信](deliver-assets-apis.md)の API リクエストを行う際に、取得した IMS ベアラートークンを HTTP リクエストの&#x200B;**[!UICONTROL 認証]**&#x200B;ヘッダーに追加します（その値の先頭に&#x200B;**[!UICONTROL ベアラー]**&#x200B;が付いていることを確認します）。
+1. [検索](search-assets-api.md)および[配信](deliver-assets-apis.md)の API リクエストを行う際に、取得した IMS ベアラートークンを HTTP リクエストの&#x200B;**[!UICONTROL 認証]**&#x200B;ヘッダーに追加します（その値の接頭辞として&#x200B;**[!UICONTROL ベアラー]**&#x200B;が付いていることを確認します）。
 
 1. アクセス制限を検証するには、**[!UICONTROL 認証]**&#x200B;ヘッダーの有無にかかわらず、配信の API リクエストを開始します。
    * IMS ベアラートークンが存在しない場合や、指定した IMS ベアラートークンがアセットへのアクセス権を付与されたユーザー（直接またはグループメンバーシップを通じて）に属していない場合、応答では `404` エラーステータスコードが生成されます。

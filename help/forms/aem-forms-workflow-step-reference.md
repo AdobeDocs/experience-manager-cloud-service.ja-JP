@@ -6,10 +6,10 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: タスクの割り当て手順の使用、PDF/A ステップへの変換、レコードステップのドキュメントの生成、ワークフローの使用、ドキュメントに署名ステップ、印刷出力ステップの生成、非インタラクティブPDF出力の生成
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '7379'
-ht-degree: 100%
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+workflow-type: tm+mt
+source-wordcount: '7370'
+ht-degree: 99%
 
 ---
 
@@ -121,7 +121,7 @@ Forms 中心のワークフローステップは、AEM ワークフローで AEM
     -->
 
 * **[!UICONTROL 割り当て先]**／**[!UICONTROL 割り当てオプション]**：タスクをユーザーに割り当てる方法を指定します。参加者選択スクリプトを使用してタスクを動的にユーザーまたはグループに割り当てることも、タスクを特定の AEM ユーザーまたはグループに割り当てることもできます。
-* **[!UICONTROL 参加者選択]**：このオプションは、「割り当てオプション」フィールドで「**[!UICONTROL ユーザーまたはグループに動的に割り当て]**」オプションを選択した場合に使用できます。ユーザーまたはグループを動的に選択するには、ECMAScript またはサービスを使用できます。詳しくは、[ユーザーへのワークフローの動的な割り当て](https://helpx.adobe.com/jp/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)および[カスタムの Adobe Experience Manager 動的参加者ステップの作成](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja&amp;CID=RedirectAEMCommunityKautuk)を参照してください。
+* **[!UICONTROL 参加者選択]**：このオプションは、「割り当てオプション」フィールドで「**[!UICONTROL ユーザーまたはグループに動的に割り当て]**」オプションを選択した場合に使用できます。ユーザーまたはグループを動的に選択するには、ECMAScript またはサービスを使用できます。詳しくは、[ カスタムのAdobe Experience Manager動的参加者ステップの作成 ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja&CID=RedirectAEMCommunityKautuk) を参照してください。
 
 * **[!UICONTROL 参加者]**：このオプションは、「**[!UICONTROL 参加者選択]**」フィールドで「**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**」オプションが選択されている場合に使用できます。このフィールドでは、「RandomParticipantChooser」オプションのユーザーまたはグループを選択できます。
 
@@ -408,7 +408,7 @@ DDX を呼び出しステップには次のプロパティがあります。
 
 * **[!UICONTROL 署名者を選択するスクリプトまたはサービス]**：このオプションを使用できるのは、「署名者を選択」フィールドで「動的」オプションが選択されている場合のみです。ECMAScript またはサービスを指定して、ドキュメントの署名者と検証オプションを選択することができます。
 * **[!UICONTROL 署名者の詳細]**：このオプションを使用できるのは、「署名者を選択」フィールドで「手動」オプションが選択されている場合のみです。メールアドレスを指定し、オプションの検証メカニズムを選択します。2 段階認証メカニズムを選択する前に、設定済みの [!DNL Adobe Sign] アカウントに対して対応する認証オプションが有効になっていることを確認してください。文字列データ型の変数を使用して、「メール」、「国コード」、「電話番号」の各フィールドの値を定義できます。「国コード」と「電話番号」フィールドは、「2 段階認証」ドロップダウンリストから「電話の検証」を選択した場合にのみ表示されます。
-* **[!UICONTROL 署名済みドキュメント]**：署名済みドキュメントのステータスを変数に保存できます。 電子署名監査証跡を追加して、よりセキュリティと合法性を確保するには、監査レポートを含めます。 変数フォルダーまたはペイロードフォルダーを使用して、署名済みドキュメントを保存できます。
+* **[!UICONTROL 署名済みドキュメント]**：署名済みドキュメントのステータスを変数に保存できます。 電子署名監査記録を追加して、よりセキュリティと合法性を確保するには、監査レポートを含めます。変数フォルダーまたはペイロードフォルダーを使用して、署名済みドキュメントを保存できます。
 
   >[!NOTE]
   >

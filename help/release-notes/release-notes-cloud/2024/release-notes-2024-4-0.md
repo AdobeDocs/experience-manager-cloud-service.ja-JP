@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.4.0 リ�
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '2699'
+source-wordcount: '2689'
 ht-degree: 95%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 95%
 
 2024.4.0 リリースで追加された機能の概要については、2024年4月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3446303?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -238,9 +238,6 @@ Experience Manager Guides では、言語グループを作成し、コンテン
 
 
 全体として、言語グループを作成すると、翻訳プロジェクトの効率と生産性が向上し、最終的には複数の言語にわたるローカライゼーションプロセスが向上します。
-
-
-[Web エディターからドキュメントを翻訳](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)する方法を参照してください
 
 ### リポジトリビューでファイルを検索およびフィルタリングするためのエクスペリエンスの刷新
 

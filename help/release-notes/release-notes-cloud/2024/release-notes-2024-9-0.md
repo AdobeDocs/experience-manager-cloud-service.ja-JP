@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.9.0 リ�
 feature: Release Information
 role: Admin
 exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
-source-git-commit: 1481983bde41bda51e725930bae492aa599b6c93
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 91%
+source-wordcount: '1312'
+ht-degree: 90%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 91%
 
 #### 翻訳管理 {#translation-management}
 
-AEM 翻訳ワークフローと API アクションが、翻訳ジョブの状態の変化に関するインサイトを提供するイベントをトリガーするようになりました。ユーザーは、Adobe Developer Console を通じてこれらのイベントを購読できます。AEM Translation Management API について詳しくは、[こちら](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/)を参照してください。
+AEM 翻訳ワークフローと API アクションが、翻訳ジョブの状態の変化に関するインサイトを提供するイベントをトリガーするようになりました。ユーザーは、Adobe Developer Consoleを通じてこれらのイベントを購読できます。
 
 ### 早期導入プログラム {#sites-early-adopter}
 
@@ -116,15 +116,15 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 
 ### 機能改善 {#improvements-fixes-cif}
 
-* 制限カテゴリカスタマイズ可能にします。
+* カテゴリ制限をカスタマイズ可能にします。
 
 ### バグ修正 {#bug-fixes-cif}
 
 * Commerce のフィールドが、Assets メタデータスキーマエディターと適切に統合されていない。
 * カルーセル製品のマルチフィールドでのドラッグ＆ドロップの問題。
 * カルーセルカテゴリのマルチフィールドでのドラッグ＆ドロップの問題。
-* On-clickは、カテゴリ &amp; product 編集者 ページのページ情報のメニューでは機能しません。
-* 注文数字は注文の確認ページに表示されません。
+* カテゴリおよび製品エディターページのページ情報のメニューで、クリックは機能しません。
+* 注文番号が注文確認ページに表示されません。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
@@ -134,11 +134,11 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 
 ### CDN での基本認証 {#basicauth-cdn}
 
-ユーザー名とパスワードの入力を求める基本認証ダイアログを表示して、特定のコンテンツリソースを保護します。この機能は、エンドユーザーのアクセス権に対する包括的なソリューションとして機能するのではなく、主にビジネス関係者によるコンテンツのレビューなど、簡易な認証ユースケースを対象としています。ユーザー名とパスワードのリストは、シークレットタイプの Cloud Manager 環境変数を参照して、設定パイプラインを介してデプロイされる Git の設定ファイルによって管理されます。 [詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth)。
+ユーザー名とパスワードの入力を求める基本認証ダイアログを表示して、特定のコンテンツリソースを保護します。この機能は、エンドユーザーのアクセス権に対する包括的なソリューションとして機能するのではなく、主にビジネス関係者によるコンテンツのレビューなど、簡易な認証ユースケースを対象としています。ユーザー名とパスワードのリストは、設定パイプラインを介してデプロイされた Git の設定ファイルを通じて、秘密鍵タイプのCloud Manager環境変数への参照を使用して管理されます。 [詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth)。
 
-### サーバー側リダイレクト {#server-side-redirects}
+### サーバーサイドのリダイレクト {#server-side-redirects}
 
-CDN にデプロイされブラウザー CDN で評価される構成ファイル Git で [リダイレクト](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) を宣言します。 これは、ページの削除、サイト構造の変更、SEOの最適化などのシナリオに役立ちます。
+CDN にデプロイされ CDN で評価される設定ファイル Git で [ ブラウザーリダイレクト ](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) を宣言する。 これは、ページの削除、変更されたサイト構造、SEO の最適化などのシナリオで役立ちます。
 
 ### 新しい AEM Developer Console（パブリックベータ版） {#aem-developer-console-beta}
 
@@ -154,7 +154,7 @@ AEM 6.5 と同様に、Apache／Dispatcher は、web 階層パイプラインの
 
 ### RDE 用の設定パイプライン（早期導入プログラム） {#config-pipeline-rdes-early-adopter}
 
-[構成パイプライン](/help/operations/config-pipeline.md)は、CDN オプション (トラフィックフィルター ルール、リクエスト/応答変換など) を含む yaml ファイル構成デプロイために使用されます。早期導入プログラムに参加するには、**<aemcs-cdn-config-adopter@adobe.com>** にメールを送信し、CLI を使用する RDE（迅速な開発環境）にこれらの同じ設定をデプロイします。
+[ 設定パイプライン ](/help/operations/config-pipeline.md) は、CDN オプション（トラフィックフィルタールール、リクエスト/応答の変換など）を含む yaml ファイル設定をデプロイするために使用します。 早期導入プログラムに参加するには、**<aemcs-cdn-config-adopter@adobe.com>** にメールを送信し、CLI を使用する RDE（迅速な開発環境）にこれらの同じ設定をデプロイします。
 
 ## [!DNL Experience Manager] ガイド {#guides}
 

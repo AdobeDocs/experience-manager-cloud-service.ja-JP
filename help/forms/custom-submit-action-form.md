@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
+source-git-commit: 82a3016149645701abe829ad89c493f480956267
 workflow-type: tm+mt
 source-wordcount: '1705'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html?lang=ja) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/customize-aem-forms/custom-submit-action-form) |
 | AEM as a Cloud Service（コアコンポーネント） | [ここをクリックしてください](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
 | AEM as a Cloud Service（基盤コンポーネント） | この記事 |
 
@@ -74,7 +74,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 アダプティブフォームにファイルを添付する場合、サーバーはアダプティブフォームの送信後に添付ファイルを検証し、次の場合にエラーメッセージを返します。
 
-* 添付ファイルには、（.）文字で始まり、\ / : *？を含むファイル名が含まれています。 &quot; &lt; > | ; % $ 文字を含むもの、または `nul`、`prn`、`con`、`lpt`、`com` など、Windows オペレーティングシステム用に予約された特殊なファイル名を含む添付ファイル。
+* 添付ファイルには、\ / : * ? を含む（.）文字で開始するファイル名が含まれます。&quot; &lt; > | ; % $ 文字を含むもの、または `nul`、`prn`、`con`、`lpt`、`com` など、Windows オペレーティングシステム用に予約された特殊なファイル名を含む添付ファイル。
 
 * 添付ファイルのサイズが 0 バイト。
 
@@ -111,7 +111,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 >[!NOTE]
 >
-> コアコンポーネントのカスタム送信アクションを作成する方法については、[ アダプティブForms（コアコンポーネント）のカスタム送信アクションの作成 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) を参照してください。
+> コアコンポーネントのカスタム送信アクションを作成する方法について詳しくは、[アダプティブフォーム（コアコンポーネント）用のカスタム送信アクションの作成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components)を参照してください。
 
 CRX リポジトリーにデータを保存した後にメール送信を行うカスタム送信アクションを作成するには、次の手順を実行します。アダプティブフォームには、CRX リポジトリーにデータを保存する OOTB の送信アクション、コンテンツを格納アクション（非推奨）が含まれています。さらに、AEM には、メール送信に使用される [Mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API が含まれています。Mail API を使用する前に、システムコンソールを通して Day CQ Mail サービスを設定します。リポジトリーにデータを保存するには、コンテンツを格納アクション（非推奨）を再利用できます。コンテンツを格納アクション（非推奨）は、CRX リポジトリーの /libs/fd/af/components/guidesubmittype/store にあります。
 
@@ -161,7 +161,7 @@ CRX リポジトリーにデータを保存した後にメール送信を行う�
 
    `String mailTo = properties.get("mailTo");`
 
-   最後に、CQ Mail API を使用してメールを送信します。[SimpleEmail](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) クラスを使って、次に示すとおりに Email Object を作成します。
+   最後に、CQ Mail API を使用してメールを送信します。[SimpleEmail](https://commons.apache.org/proper/commons-email/commons-email2-javax/apidocs/org/apache/commons/mail2/javax/SimpleEmail.html) クラスを使って、次に示すとおりに Email Object を作成します。
 
    >[!NOTE]
    >

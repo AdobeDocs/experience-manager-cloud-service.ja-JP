@@ -10,10 +10,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 92130660-9942-426f-ae2f-4f3300f9735c
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
-workflow-type: ht
-source-wordcount: '1084'
-ht-degree: 100%
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+workflow-type: tm+mt
+source-wordcount: '1083'
+ht-degree: 98%
 
 ---
 
@@ -153,4 +153,4 @@ AEM インボックスでは、アクティブなタスクのみが表示され�
 
 1. [プロパティインデックスを作成し、true に設定します](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=ja#the-property-index)。
 
-1. CRX DE でインデックスを設定するか、パッケージを介してデプロイした後、[リポジトリーのインデックスを再作成します](https://helpx.adobe.com/jp/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex)。
+1. CRX DE でインデックスを設定するか、パッケージを介してデプロイした後、リポジトリのインデックスを再作成します。

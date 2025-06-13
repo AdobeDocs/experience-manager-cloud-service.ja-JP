@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 07cfbb643785127a45a1c7712a9f4ff81767b7e1
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '5931'
-ht-degree: 98%
+source-wordcount: '5926'
+ht-degree: 100%
 
 ---
 
@@ -19,19 +19,19 @@ ht-degree: 98%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
         </td>
     </tr>
     <tr>
@@ -90,9 +90,9 @@ AEM は次のユースケースをサポートしています。この記事で�
 ![Experience Manager Assets 検索結果インターフェイスについて](assets/aem-search-interface.png)
 *図：[!DNL Experience Manager Assets] 検索結果インターフェイスについて理解する。*
 
-**A：**&#x200B;検索をスマートコレクションとして保存。
-**B：**&#x200B;検索結果を絞り込むフィルターまたは述語。
-**C：**&#x200B;ファイル、フォルダー、またはその両方を表示。
+**A：**検索をスマートコレクションとして保存。
+**B：**検索結果を絞り込むフィルターまたは述語。
+**C：**ファイル、フォルダー、またはその両方を表示。
 **D.** 検索場所は DAM です。
 **E.** 保存済みの検索結果にアクセスします。
 **F.** 「フィルター」をクリックして、左側のパネルを開閉します。
@@ -186,7 +186,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ターゲットを絞ったキーワードの検索結果で一部のアセットのランクを上げることで、この機能をうまく利用できます。以下の例（ビデオ）を参照してください。詳しくは、「[ での検索](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ja)」を参照してください。 [!DNL Experience Manager]
 
->[!VIDEO](https://video.tv.adobe.com/v/3410338/?quality=6&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *ビデオ：検索結果のランク付けの方法とランクへの影響について*
 
@@ -314,7 +314,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ## アセットセレクター {#asset-picker}
 
-[AEM アセットセレクター ](/help/assets/overview-asset-selector.md) （以前のバージョンの [!DNL Adobe Experience Manager] ではアセットピッカーと呼ばれていました）を使用すると、DAM アセットの検索、フィルタリングおよび参照を特別な方法でおこなえます。 アセットセレクターは、`https://[aem_server]:[port]/aem/assetpicker.html` で利用できます。アセットセレクターを使用して選択したアセットのメタデータを取得できます。アセットタイプ（画像、ビデオ、テキスト）や選択モード（単一選択または複数選択）など、サポートされているリクエストパラメーターを使用して、アセットセレクターを起動できます。これらのパラメーターは、特定の検索インスタンスのアセットセレクターのコンテキストを設定し、選択中もそのままの状態を維持します。
+[AEM アセットセレクター](/help/assets/overview-asset-selector.md)（以前のバージョンの [!DNL Adobe Experience Manager] バージョンではアセットピッカーと呼ばれていました）を使用すると、特別な方法で DAM アセットを検索、フィルタリング、参照できます。アセットセレクターは、`https://[aem_server]:[port]/aem/assetpicker.html` で利用できます。アセットセレクターを使用して選択したアセットのメタデータを取得できます。アセットタイプ（画像、ビデオ、テキスト）や選択モード（単一選択または複数選択）など、サポートされているリクエストパラメーターを使用して、アセットセレクターを起動できます。これらのパラメーターは、特定の検索インスタンスのアセットセレクターのコンテキストを設定し、選択中もそのままの状態を維持します。
 
 アセットセレクターは、HTML5 `Window.postMessage` メッセージを使用して、選択したアセットのデータを受信者に送信します。参照モードのオムニサーチ結果ページでのみ機能します。
 
@@ -371,7 +371,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 * **インデックス作成**：インデックスが作成されたメタデータおよびアセットのみが検索結果に返されます。検索範囲とパフォーマンスを向上させるには、適切なインデックス作成を行い、ベストプラクティスに従ってください。詳しくは、[インデックス作成](#searchindex)を参照してください。
 
-詳細については、[ 検索のベストプラクティス ](search-best-practices.md) を参照してください。
+詳しくは、[検索のベストプラクティス](search-best-practices.md)を参照してください。
 
 ## 検索の例 {#samples}
 
@@ -520,7 +520,7 @@ PSD ファイルや PDF ファイルなどのアセットをユーザーがア�
 
 ### 検索したアセットのダウンロード {#download}
 
-フォルダーから通常のアセットをダウンロードする場合と同じように、検索したアセットとそのレンディションをダウンロードできます。検索結果から 1 つ以上のアセットを選択し、ツールバーの **[!UICONTROL ダウンロード]** をクリックします。 [ アセットのダウンロード ](/help/assets/download-assets-from-aem.md) を参照してください。
+フォルダーから通常のアセットをダウンロードする場合と同じように、検索したアセットとそのレンディションをダウンロードできます。検索結果から 1 つ以上のアセットを選択し、ツールバーから「**[!UICONTROL ダウンロード]**」をクリックします。詳しくは、[アセットのダウンロード](/help/assets/download-assets-from-aem.md)を参照してください。
 
 ### メタデータプロパティの一括更新 {#metadata-updates}
 
@@ -590,4 +590,3 @@ PSD ファイルや PDF ファイルなどのアセットをユーザーがア�
 >
 >* [[!DNL Experience Manager] 検索実装ガイド](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=ja)
 >* [検索結果を高めるための詳細設定](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ja)
->* [スマート翻訳検索の設定](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html?lang=ja)
