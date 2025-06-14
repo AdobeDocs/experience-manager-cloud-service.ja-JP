@@ -58,9 +58,9 @@ ht-degree: 11%
 
 * [!DNL AEM Assets] を [!DNL Figma] と統合するには、有効な [!DNL AEM Assets] ライセンスと [!DNL Figma] ライセンスが必要です。
 
-## [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタへのアクセス ]{#access-aem-assets-connector}
+## [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタへのアクセス &#x200B;]{#access-aem-assets-connector}
 
-次の手順を実行して、[!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ ] にアクセスします。
+次の手順を実行して、[!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ &#x200B;] にアクセスします。
 
 1. [!DNL Figma] ホームページで、キャンバスの下部にあるツールバーの **[!UICONTROL アクション]** をクリックし、ダイアログボックスで使用できる検索バーで [!DNL Adobe Experience Manager (AEM) Assets Connector] を検索します。
 1. 「[!DNL Adobe Experience Manager (AEM) Assets Connector]」を選択すると、[!DNL Adobe Experience Manager (AEM) Assets Connector] パネルが表示されます。 このパネルを使用して [ [!DNL AEM]  アセットをキャンバスに読み込み ](#import-aem-assets-into-figma-workflow) す  [!DNL Figma] 。
@@ -74,9 +74,9 @@ ht-degree: 11%
 
 ## [!DNL AEM] アセットのキャンバスへ [!DNL Figma] 読み込み{#import-aem-assets-into-figma-workflow}
 
-[!DNL Figma] デザインインターフェイス内の [1}Adobe Experience Manager（AEM）Assets Connector] パネルにアクセス ](#access-aem-assets-connector) て、次の手順を実行します。[!UICONTROL 
+[!DNL Figma] デザインインターフェイス内の [1&rbrace;Adobe Experience Manager（AEM）Assets Connector] パネルにアクセス (#access-aem-assets-connector) て、次の手順を実行します。
 
-1. [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ ] パネルでアセットを検索します。 詳しくは、[ アセットセレクターの使用 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector) を参照してください。
+1. [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ &#x200B;] パネルでアセットを検索します。 詳しくは、[ アセットセレクターの使用 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector) を参照してください。
 
 1. アセットをキャンバスにドラッグ&amp;ドロップするか、アセットを選択して **[!UICONTROL 選択]** をクリックして、アセットをキャンバスに移動します。
 
