@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c31b7afe4e563bd0de7aa481f6a90cd8eada0f1e
+source-git-commit: db545a7bef1b23caf735445abb7efab42d307913
 workflow-type: tm+mt
-source-wordcount: '6239'
+source-wordcount: '6253'
 ht-degree: 98%
 
 ---
@@ -514,7 +514,6 @@ ht-degree: 98%
    + [Assets as a Cloud Service Ultimate の有効化](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [Assets 共同作業者ユーザー](/help/assets/assets-collaborator-users.md)
-   + [AEM Assets と Edge Delivery Services 向けコンテンツのオーサリングの統合](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + デジタルアセットの管理 {#manage}
       + マイクロフロントエンドアセットセレクター {#asset-selector}
          + [アセットセレクターの概要](/help/assets/overview-asset-selector.md)
@@ -710,6 +709,9 @@ ht-degree: 98%
    + ベストプラクティス{#best-practices}
       + [検索のベストプラクティス](/help/assets/search-best-practices.md)
       + [メタデータの管理とベストプラクティス](/help/assets/metadata-best-practices.md)
+
+   + Figma との統合 {#integration-figma}
+      + [Figma とのネイティブ統合 ](/help/assets/Integrate-aem-assets-with-figma.md)
    + Adobe Workfront との統合 {#integrations}
       + [ [!DNL Adobe Workfront] との統合](/help/assets/workfront-integrations.md)
       + [アセットメタデータマッピングの設定](/help/assets/configure-asset-metadata-mapping.md)
@@ -721,6 +723,8 @@ ht-degree: 98%
       + [Adobe Express とのネイティブ統合](/help/assets/native-integration-adobe-express.md)
    + Creative Cloud との統合 {#integration-creative-cloud}
       + [AEM Assets を Creative Cloud に接続](/help/assets/connect-assets-with-creative-cloud.md)
+   + AEM AssetsとEdge Delivery Servicesの統合 {#integrate-aem-assets-edge-delivery-services}
+      + [Edge Delivery Services用のコンテンツのオーサリング時のAEM Assetsの統合 ](/help/assets/integrate-aem-assets-edge-delivery-services.md)
 + Forms {#forms}
    + 概要 {#forms-overview}
       + [はじめに](/help/forms/home.md)
