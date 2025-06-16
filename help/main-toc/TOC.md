@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: db545a7bef1b23caf735445abb7efab42d307913
+source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
 workflow-type: tm+mt
-source-wordcount: '6253'
+source-wordcount: '6263'
 ht-degree: 98%
 
 ---
@@ -1073,7 +1073,8 @@ ht-degree: 98%
          + [フォームの公開およびデプロイ方法：ユニバーサルエディター公開ガイド](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [カスタムフォームコンポーネントの作成：ユニバーサルエディター開発者向けガイド](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [フォームデータモデルの統合：Forms とフォームデータモデルの統合](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-         + [再利用可能なモジュール型スタンドアロンセグメント：フォーム内でのフォームフラグメントの作成と使用](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [再利用可能なモジュール型およびスタンドアロンのセグメント：フォーム内でのフォームフラグメントの作成と使用](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [Edge Delivery Services フォーム送信での 403 Forbidden エラーのトラブルシューティング ](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + ドキュメントベースのオーサリング {#getting-started-edge-delivery-services-forms}
          + [最初のフォームの作成：Google Sheetsと Excel を使用したクイックスタートガイド](/help/edge/docs/forms/tutorial.md)
          + [Google Sheets または Excel を使用したフォームの作成方法：ステップバイステップガイド](/help/edge/docs/forms/create-forms.md)

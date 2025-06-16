@@ -1,9 +1,9 @@
 ---
 title: Edge Delivery Services フォーム送信での 403 Forbidden エラーのトラブルシューティング
 description: Edge Delivery ServicesからAEM Publish にフォームを送信する際に 403 Forbidden エラーを診断し、解決する方法を説明します。 このガイドでは、CORS、Dispatcher ルール、リファラーフィルターの問題など、一般的な原因について説明します。
-feature: Edge Delivery Services, Forms
+feature: Edge Delivery Services
 role: Admin, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 3%
@@ -197,7 +197,7 @@ AEM エラーログでリファラーフィルターの却下メッセージを�
 4. 失敗したリクエストの詳細の確認
 5. 応答ヘッダーとステータスの確認
 
-**リクエストがサーバーに到達しない場合：**&#x200B;Dispatcherの問題である可能性があります。
+**リクエストがサーバーに到達しない場合：**Dispatcherの問題である可能性があります。
 **リクエストがサーバーに到達したが失敗した場合：** リファラーフィルターの問題である可能性があります。
 
 ### 手順 3:AEM ログの確認
