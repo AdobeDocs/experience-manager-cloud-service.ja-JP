@@ -4,10 +4,10 @@ description: UI 拡張機能について説明します。 [!DNL AEM Assets View
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 50477660e50db13cd279a56a1f1b3ddc118a0aad
+source-git-commit: a03e6cf842f95f8799f23ed5c7e3b563b092b4e5
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 85%
+source-wordcount: '641'
+ht-degree: 83%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 85%
 
 ## [!DNL Assets View] での UI 拡張機能の表示 {#ui-extensibility-panel-assets-view}
 
-[!DNL Assets View] 内で、アセット、フォルダーまたはコレクションの&#x200B;**[!UICONTROL 詳細]**&#x200B;ページに移動します。**[!UICONTROL 詳細]**&#x200B;ページの専用パネルには、追加された UI 拡張機能が表示されます。
+[!DNL Assets View] 内で、アセット、フォルダーまたはコレクションの&#x200B;**[!UICONTROL 詳細]**&#x200B;ページに移動します。**[!UICONTROL 詳細]**ページの専用パネルには、追加された UI 拡張機能が表示されます。
 ![マイワークスペース](/help/assets/assets/my-workspace-assets-view3.png)
 
 ## 拡張コンポーネントを追加するための前提条件{#assets-view-ui-extensibility}
@@ -73,7 +73,7 @@ ht-degree: 85%
 * [ [!DNL Assets View]](#1) にアクセスします。
 * [[!DNL Adobe app builder] にアクセスします](https://developer.adobe.com/app-builder/docs/overview/)。
 * 組織内に開発者またはシステム管理者の役割が存在する。詳しくは、[このドキュメント](https://developer.adobe.com/uix/docs/guides/get-access/)を参照してください。
-* [!DNL Adobe IO command line tool (AIO CLI)] がローカルマシンにインストールされている。このツールは、拡張プロジェクトの作成とデプロイに不可欠です。詳しくは、[このドキュメント](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up)を参照してください。
+* [!DNL Adobe IO command line tool (AIO CLI)] がローカルマシンにインストールされている。このツールは、拡張プロジェクトの作成とデプロイに不可欠です。詳しくは、[ 最初のApp Builder アプリケーションを作成 ](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#local-environment-set-up) （アクセスには認証が必要）を参照してください。
 * [!DNL JavaScript]、[!DNL Node.js]、[!DNL React] のテクノロジーを十分に理解している。
 
 ## UI 拡張機能コンポーネントを [!DNL Assets View] に追加 {#ui-extensibility-in-assets-view}
