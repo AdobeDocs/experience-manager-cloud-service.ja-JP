@@ -4,8 +4,8 @@ description: ローカル開発用または独自のインフラストラクチ�
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
-workflow-type: ht
+source-git-commit: 5435f776e38abf5245c58985e747ce05443f3c2a
+workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 100%
 
@@ -156,7 +156,7 @@ Universal Editor Service listening on port 8000 as HTTPS Server
 
 ## ローカルユニバーサルエディターサービスを使用したページの編集 {#editing}
 
-[ローカルで実行されるユニバーサルエディターサービス](#running-ue)と[ローカルサービスを使用するのに実装されたコンテンツページ](#using-loca-ue)を使用して、エディターを起動できるようになりました。
+[ローカルで実行されるユニバーサルエディターサービス](#running-ue)と[ローカルサービスを使用するのに実装されたコンテンツページ](/help/implementing/universal-editor/getting-started.md)を使用して、エディターを起動できるようになりました。
 
 1. ブラウザーを `https://localhost:8000/ping` で開きます。
 1. [自己署名証明書](#ue-https)に同意するようダイレクトされます。
