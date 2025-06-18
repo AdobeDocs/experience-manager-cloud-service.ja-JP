@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="プライベートベータ版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: 6ca65f5833dc26043a27945ae02aac6e29ad62d2
 workflow-type: tm+mt
-source-wordcount: '2077'
-ht-degree: 97%
+source-wordcount: '2292'
+ht-degree: 90%
 
 ---
 
@@ -30,9 +30,10 @@ Cloud Manager に外部リポジトリを追加する方法について説明し
 
 Cloud Manager での外部リポジトリの設定は、次の手順で構成されます。
 
-1. 選択したプログラムに[外部リポジトリを追加](#add-external-repo)します。
-1. 外部リポジトリへのアクセストークンを指定します。
-1. プライベート GitHub リポジトリの所有権の検証。
+1. 選択したプログラムへの [ 外部リポジトリの追加 ](#add-external-repo)
+1. [検証済みの外部リポジトリのパイプラインへのリンク](#validate-ext-repo)
+   <!-- 1. Provide an access token to the external repository.
+    1. Validate ownership of the private GitHub repository. -->
 1. 外部リポジトリに [webhook を設定](#configure-webhook)します。
 
 
@@ -71,28 +72,60 @@ Cloud Manager での外部リポジトリの設定は、次の手順で構成さ
 
 1. 「**保存**」を選択して、リポジトリを追加します。
 
-1. **プライベートリポジトリの所有権の検証**&#x200B;ダイアログボックスで、外部リポジトリの所有権を検証し、アクセスできるようにするアクセストークンを指定します。
+   次に、外部リポジトリの所有権を検証するアクセストークンを提供します。
+
+1. **プライベートリポジトリ所有権検証** ダイアログボックスで、外部リポジトリの所有権を検証してアクセスできるようにするためのアクセストークンを指定し、「**検証**」をクリックします。
 
    ![リポジトリの既存のアクセストークンの選択](/help/implementing/cloud-manager/managing-code/assets/repositories-exisiting-access-token.png)
-   *BitBucket リポジトリの既存のアクセストークンを選択します。*
+   *Bitbucket リポジトリ用の既存のアクセストークンの選択（説明用のみ）*
 
-   | トークンタイプ | 説明 |
-   | --- | --- |
-   | **既存のアクセストークンを使用** | 組織にリポジトリアクセストークンを既に指定し、複数のリポジトリにアクセスできる場合は、既存のトークンを選択できます。**トークン名**&#x200B;ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。それ以外の場合は、新しいアクセストークンを追加します。 |
-   | **新しいアクセストークンを追加** | **リポジトリタイプ：GitHub Enterprise**<br><ul><li> 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[GitHub ドキュメント](https://docs.github.com/ja/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)の指示に従って、個人アクセストークンを作成します。<li>GitHub Enterprise 個人アクセストークン（PAT）に必須の権限<br>これらの権限により、Cloud Manager でプルリクエストの検証、コミットステータスチェックの管理、必要なリポジトリ詳細へのアクセスが可能になります。<br>GitHub Enterprise で PAT を生成する場合は、次のリポジトリ権限が含まれていることを確認します。<ul><li>プルリクエスト（読み取りおよび書き込み）<li>コミットステータス（読み取りおよび書き込み）<li>リポジトリメタデータ（読み取り専用）</li></li></ul></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
-   | | **リポジトリタイプ：GitLab**<ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[GitLab ドキュメント](https://docs.gitlab.com/user/profile/personal_access_tokens/)の指示に従って、個人アクセストークンを作成します。<li>GitLab 個人アクセストークン（PAT）に必須の権限<br>これらのスコープにより、Cloud Manager で検証と webhook 統合の必要に応じてリポジトリデータとユーザー情報へのアクセスが可能になります。<br>GitLab で PAT を生成する場合、次のトークンスコープが含まれていることを確認します。<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
-   | | **リポジトリタイプ：Bitbucket**<ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Bitbucket ドキュメント](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)を使用して、リポジトリアクセストークンを作成します。<li>Bitbucket 個人アクセストークン（PAT）に必須の権限<br>これらの権限により、Cloud Manager でリポジトリコンテンツへのアクセス、プルリクエストの管理、webhook イベントの構成または反応が可能になります。<br>Bitbucket でアプリパスワードを作成する場合は、次の必須のアプリパスワード権限が含まれていることを確認します。<ul><li>リポジトリ（読み取り専用）<li>プルリクエスト（読み取りおよび書き込み）<li>webhook（読み取りおよび書き込み）</li></li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
-   | | **リポジトリタイプ：Azure DevOps**<ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Azure DevOps ドキュメント](https://learn.microsoft.com/ja-jp/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)を使用して、リポジトリアクセストークンを作成します。<li>Azure DevOps 個人アクセストークン（PAT）に必須の権限。<br>これらの権限により、Cloud Manager でリポジトリコンテンツへのアクセス、プルリクエストの管理、webhook イベントを構成または反応できるようになります。<br>Azure DevOps でアプリパスワードを作成する場合は、次の必須のアプリパスワード権限が含まれていることを確認します。<ul><li>リポジトリ（読み取り専用）</li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
+>[!BEGINTABS]
 
-   [ アクセストークンの管理 ](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md) も参照してください。
+>[!TAB GitHub Enterprise]
 
-   >[!IMPORTANT]
-   >
-   >**新しいアクセストークンを追加** 機能は現在、プライベートベータ版です。 さらに機能の追加が予定されています。その結果、アクセストークンに必要な権限が変更される場合があります。また、トークンを管理するユーザーインターフェイスが更新され、トークンの有効期限などの機能が含まれる可能性もあります。さらに、リポジトリにリンクされたトークンが有効なままであることを確認する自動チェックが行われます。
+| アクセストークンオプション | 説明 |
+| --- | --- |
+| **既存のアクセストークンを使用** | 組織にリポジトリアクセストークンを既に指定し、複数のリポジトリにアクセスできる場合は、既存のトークンを選択できます。**トークン名**&#x200B;ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。それ以外の場合は、新しいアクセストークンを追加します。 |
+| **新しいアクセストークンを追加** | <ul><li> 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[GitHub ドキュメント](https://docs.github.com/ja/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)の指示に従って、個人アクセストークンを作成します。<li>GitHub Enterprise 個人アクセストークン（PAT）に必須の権限<br>これらの権限により、Cloud Manager でプルリクエストの検証、コミットステータスチェックの管理、必要なリポジトリ詳細へのアクセスが可能になります。<br>GitHub Enterprise で PAT を生成する場合は、次のリポジトリ権限が含まれていることを確認します。<ul><li>プルリクエスト（読み取りおよび書き込み）<li>コミットステータス（読み取りおよび書き込み）<li>リポジトリメタデータ（読み取り専用）</li></li></ul></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
 
-1. 「**検証**」をクリックします。
+検証後、外部リポジトリを使用してパイプラインにリンクする準備が整います。
 
-   検証後、外部リポジトリを使用してパイプラインにリンクする準備が整います。
+[ アクセストークンの管理 ](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md) も参照してください。
+
+>[!TAB GitLab]
+
+| アクセストークンオプション | 説明 |
+| --- | --- |
+| **既存のアクセストークンを使用** | 組織にリポジトリアクセストークンを既に指定し、複数のリポジトリにアクセスできる場合は、既存のトークンを選択できます。**トークン名**&#x200B;ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。それ以外の場合は、新しいアクセストークンを追加します。 |
+| **新しいアクセストークンを追加** | <ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[GitLab ドキュメント](https://docs.gitlab.com/user/profile/personal_access_tokens/)の指示に従って、個人アクセストークンを作成します。<li>GitLab 個人アクセストークン（PAT）に必須の権限<br>これらのスコープにより、Cloud Manager で検証と webhook 統合の必要に応じてリポジトリデータとユーザー情報へのアクセスが可能になります。<br>GitLab で PAT を生成する場合、次のトークンスコープが含まれていることを確認します。<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
+
+検証後、外部リポジトリを使用してパイプラインにリンクする準備が整います。
+
+[ アクセストークンの管理 ](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md) も参照してください。
+
+>[!TAB Bitbucket]
+
+| アクセストークンオプション | 説明 |
+| --- | --- |
+| **既存のアクセストークンを使用** | 組織にリポジトリアクセストークンを既に指定し、複数のリポジトリにアクセスできる場合は、既存のトークンを選択できます。**トークン名**&#x200B;ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。それ以外の場合は、新しいアクセストークンを追加します。 |
+| **新しいアクセストークンを追加** | <ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Bitbucket ドキュメント](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)を使用して、リポジトリアクセストークンを作成します。<li>Bitbucket 個人アクセストークン（PAT）に必須の権限<br>これらの権限により、Cloud Manager でリポジトリコンテンツへのアクセス、プルリクエストの管理、webhook イベントの構成または反応が可能になります。<br>Bitbucket でアプリパスワードを作成する場合は、次の必須のアプリパスワード権限が含まれていることを確認します。<ul><li>リポジトリ（読み取り専用）<li>プルリクエスト（読み取りおよび書き込み）<li>webhook（読み取りおよび書き込み）</li></li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
+
+検証後、外部リポジトリを使用してパイプラインにリンクする準備が整います。
+
+[ アクセストークンの管理 ](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md) も参照してください。
+
+>[!TAB Azure DevOps]
+
+| アクセストークンオプション | 説明 |
+| --- | --- |
+| **既存のアクセストークンを使用** | 組織にリポジトリアクセストークンを既に指定し、複数のリポジトリにアクセスできる場合は、既存のトークンを選択できます。**トークン名**&#x200B;ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。それ以外の場合は、新しいアクセストークンを追加します。 |
+| **新しいアクセストークンを追加** | <ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Azure DevOps ドキュメント](https://learn.microsoft.com/ja-jp/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)を使用して、リポジトリアクセストークンを作成します。<li>Azure DevOps 個人アクセストークン（PAT）に必須の権限。<br>これらの権限により、Cloud Manager でリポジトリコンテンツへのアクセス、プルリクエストの管理、webhook イベントを構成または反応できるようになります。<br>Azure DevOps でアプリパスワードを作成する場合は、次の必須のアプリパスワード権限が含まれていることを確認します。<ul><li>リポジトリ（読み取り専用）</li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
+
+検証後、外部リポジトリを使用してパイプラインにリンクする準備が整います。
+
+[ アクセストークンの管理 ](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md) も参照してください。
+
+>[!ENDTABS]
 
 
 ## 検証済みの外部リポジトリのパイプラインへのリンク {#validate-ext-repo}
@@ -131,7 +164,7 @@ Cloud Manager では、追加した外部 Git リポジトリの webhook を設�
 
 Cloud Manager は GitHub アプリを通じて直接統合されるので、`GitHub.com` でホストされているリポジトリでは webhook 設定は必要ありません。
 
-GitHub Enterprise、GitLab、Bitbucket など、アクセストークンを使用してオンボードされる他のすべての外部リポジトリでは、webhook 設定が使用可能で、手動で設定する必要があります。
+アクセストークン（GitHub Enterprise、GitLab、Bitbucket、Azure DevOps など）でオンボードされているその他すべての外部リポジトリの場合、Webhook 設定を使用できるので、手動で設定する必要があります。
 
 **外部リポジトリの webhook を設定するには：**
 
@@ -158,9 +191,9 @@ URL をプレーンテキストファイルにペーストします。コピー�
    1. 「**Webhook 秘密鍵**&#x200B;トークン／キー」フィールドの横にある「**生成**」をクリックし、![コピーアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) をクリックします。
 秘密鍵をプレーンテキストファイルにペーストします。コピーした秘密鍵は、Git ベンダーの webhook 設定に必要です。
 1. 「**閉じる**」をクリックします。
-1. Git ベンダーソリューション（GitHub Enterprise、GitLab、Bitbucket）に移動します。
+1. Git ベンダーソリューション（GitHub Enterpriser、GitLab、Bitbucket、Azure DevOps）に移動します。
 
-   各ベンダーに必要な web フック設定とイベントについて詳しくは、[外部リポジトリの追加](#add-ext-repo)を参照してください。手順 8 の表を参照してください。
+   各ベンダーに必要な web フック設定とイベントについて詳しくは、[外部リポジトリの追加](#add-ext-repo)を参照してください。手順 8 の下で、タブ付き表を参照してください。
 
 1. ソリューションの **webhook** 設定セクションを見つけます。
 1. 前の手順でコピーした webhook URL を「URL」テキストフィールドにペーストします。
@@ -169,57 +202,87 @@ URL をプレーンテキストファイルにペーストします。コピー�
       API キーを生成するには、Adobe Developer Console で統合プロジェクトを作成する必要があります。詳しくは、[API 統合プロジェクトの作成](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)を参照してください。
 
 1. 前の手順でコピーした webhook 秘密鍵を「**秘密鍵**」（または「**秘密鍵**」、あるいは「**秘密鍵トークン**」）テキストフィールドにペーストします。
-1. Webhook を設定して、Cloud Manager が想定する必須のイベントを送信します。
+1. Webhook を設定して、Cloud Managerが必要とするイベントを送信します。 次の表を使用して、Git プロバイダーの正しいイベントを判断します。
 
-   | リポジトリ | 必須の webhook イベント |
-   | --- | --- |
-   | GitHub Enterprise | これらのイベントにより、Cloud Manager でプルリクエストの検証、パイプラインのプッシュベースのトリガー、Edge Delivery Services のコード同期などの GitHub アクティビティに応答できます。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト<li>プッシュ<li>コメントを発行</li></li></li></ul></ul></ul> |
-   | GitLab | これらの webhook イベントにより、コードをプッシュした際や結合リクエストを送信した際に、Cloud Manager でパイプラインをトリガーできます。また、プルリクエストの検証に関連するコメントも（メモイベントを通じて）追跡します。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プッシュイベント<li>結合リクエストイベント<li>メモイベント</li></li></li></ul></ul></ul> |
-   | Bitbucket | これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト：作成済み<li>プルリクエスト：更新済み<li>プルリクエスト：結合済み<li>プルリクエスト：コメント<li>リポジトリ：プッシュ</li></li></li></ul></ul></ul> |
-   | Azure DevOps | これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>リポジトリ：プッシュ</li></li></ul></ul></ul> |
+>[!BEGINTABS]
+
+>[!TAB GitHub Enterprise]
+
+| 必須の webhook イベント |
+| --- |
+| これらのイベントにより、Cloud Manager でプルリクエストの検証、パイプラインのプッシュベースのトリガー、Edge Delivery Services のコード同期などの GitHub アクティビティに応答できます。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト<li>プッシュ<li>コメントを発行</li></li></li></ul></ul></ul> |
+
+>[!TAB GitLab]
+
+| 必須の webhook イベント |
+| --- |
+| これらの webhook イベントにより、コードをプッシュした際や結合リクエストを送信した際に、Cloud Manager でパイプラインをトリガーできます。また、プルリクエストの検証に関連するコメントも（メモイベントを通じて）追跡します。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プッシュイベント<li>結合リクエストイベント<li>メモイベント</li></li></li></ul></ul></ul> |
+
+>[!TAB Bitbucket]
+
+| 必須の webhook イベント |
+| --- |
+| これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト：作成済み<li>プルリクエスト：更新済み<li>プルリクエスト：結合済み<li>プルリクエスト：コメント<li>リポジトリ：プッシュ</li></li></li></ul></ul></ul> |
+
+>[!TAB Azure DevOps]
+
+| 必須の webhook イベント |
+| --- |
+| これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>リポジトリ：プッシュ</li></li></ul></ul></ul> |
+
+>[!ENDTABS]
 
 
 ### Webhook を使用したプルリクエストの検証
 
 Webhook を正しく設定すると、Cloud Manager ではリポジトリに対するパイプライン実行または PR 検証チェックを自動的にトリガーします。
 
-次の動作が適用されます。
+以下に説明するように、動作は使用する Git プロバイダーによって異なります。
 
-* **GitHub Enterprise**
+>[!BEGINTABS]
 
-  チェックを作成すると、次のスクリーンショットのように表示されます。`GitHub.com` との主な違いは、`GitHub.com` はチェック実行を使用するのに対して、GitHub Enterprise（個人用アクセストークンを使用）はコミットステータスを生成することです。
 
-  ![GitHub Enterprise で PR 検証プロセスを示すコミットステータス](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
+>[!TAB GitHub Enterprise]
 
-* **Bitbucket**
+チェックを作成すると、次のスクリーンショットのように表示されます。`GitHub.com` との主な違いは、`GitHub.com` はチェック実行を使用するのに対して、GitHub Enterprise（個人用アクセストークンを使用）はコミットステータスを生成することです。
 
-  コード品質検証が実行中の場合：
+![GitHub Enterprise で PR 検証プロセスを示すコミットステータス](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
-  ![コード品質検証が実行中のステータス](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket1.png)
 
-  PR 検証の進行状況のトラッキングにコミットステータスを使用します。次の場合、スクリーンショットは、コード品質検証がお客様の問題により失敗した場合の動作を示しています。詳細なエラー情報を含むコメントが追加され、失敗を示すコミットチェックが作成されます（右側に表示）。
+>[!TAB GitLab]
 
-  ![Bitbucket のプルリクエスト検証ステータス](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket2.png)
+GitLab のインタラクションは、コメントにのみ依存します。検証を開始すると、コメントが追加されます。検証が完了すると（成功または失敗に関係なく）、最初のコメントは削除され、検証結果やエラーの詳細を含む新しいコメントに置き換えられます。
 
-* **GitLab**
+コード品質検証が実行中の場合：
 
-  GitLab のインタラクションは、コメントにのみ依存します。検証を開始すると、コメントが追加されます。検証が完了すると（成功または失敗に関係なく）、最初のコメントは削除され、検証結果やエラーの詳細を含む新しいコメントに置き換えられます。
+![コード品質検証が実行中の場合](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab1.png)
 
-  コード品質検証が実行中の場合：
+コード品質検証が終了した場合：
 
-  ![コード品質検証が実行中の場合](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab1.png)
+![コード品質検証が終了した場合](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab2.png)
 
-  コード品質検証が終了した場合：
+コード品質検証がエラーで失敗した場合：
 
-  ![コード品質検証が終了した場合](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab2.png)
+![コード品質検証がエラーで失敗した場合](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab3.png)
 
-  コード品質検証がエラーで失敗した場合：
+コード品質検証が顧客の問題により失敗した場合：
 
-  ![コード品質検証がエラーで失敗した場合](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab3.png)
+![コード品質検証が顧客の問題により失敗した場合](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab4.png)
 
-  コード品質検証が顧客の問題により失敗した場合：
 
-  ![コード品質検証が顧客の問題により失敗した場合](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab4.png)
+>[!TAB Bitbucket]
+
+コード品質検証が実行中の場合：
+
+![コード品質検証が実行中のステータス](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket1.png)
+
+PR 検証の進行状況のトラッキングにコミットステータスを使用します。次の場合、スクリーンショットは、コード品質検証がお客様の問題により失敗した場合の動作を示しています。詳細なエラー情報を含むコメントが追加され、失敗を示すコミットチェックが作成されます（右側に表示）。
+
+![Bitbucket のプルリクエスト検証ステータス](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket2.png)
+
+
+
+>[!ENDTABS]
 
 
 ## Web フックの問題のトラブルシューティング
