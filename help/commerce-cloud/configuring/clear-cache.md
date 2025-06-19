@@ -4,9 +4,9 @@ description: AEM CIFでキャッシュ消去機能を有効にし検証する方
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: 27d8b5f6f358176c828d01f2ff51886d0433017c
+source-git-commit: fb8b2645c0401d1358c7751db03a138dc2de2664
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '883'
 ht-degree: 2%
 
 ---
@@ -31,14 +31,13 @@ ht-degree: 2%
 * 次に示すように、リスナーを有効にして、プロジェクトに `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` 設定を追加することで、AEM（公開およびオーサー）の各インスタンスからキャッシュをクリアします [ こちら ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json)。
    * 設定は、オーサーインスタンスとパブリッシュインスタンスの両方で有効にする必要があります。
    * Dispatcherのキャッシュを有効にする（オプション）：上記の設定で `enableDispatcherCacheInvalidation` プロパティを true に設定することで、Dispatcher のキャッシュの消去設定を有効にできます。 これにより、Dispatcher からキャッシュをクリアする機能が提供されます。
-
      >[!NOTE]
      >
      > これは、パブリッシュインスタンスでのみ機能します。
 
    * また、上記の設定ファイルに商品、カテゴリ、CMSページに適したパターンを追加して、Dispatcher のキャッシュから削除する必要があります。
 
-* 製品およびカテゴリに関連する対応するページを見つけるために SQL クエリのパフォーマンスを向上させるには、プロジェクトに対応するインデックスを追加します（推奨）。 詳しくは、[cifCacheInvalidationSupport/] （link https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml）を参照してください。
+* 製品およびカテゴリに関連する対応するページを見つけるために SQL クエリのパフォーマンスを向上させるには、プロジェクトに対応するインデックスを追加します（推奨）。 詳しくは、[cifCacheInvalidationSupport](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml) を参照してください。
 
 ## キャッシュ消去機能の確認 {#verify-clear-cache}
 
@@ -64,8 +63,7 @@ ht-degree: 2%
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
-すべてが正常に動作すると、新しい変更がすべてのインスタンスに反映されます。 パブリッシュインスタンスに変更が反映されていない場合は、プライベートウィンドウで対応する PLP および PDP ページを確認してください。
+すべてが正常に動作すると、新しい変更がすべてのインスタンスに反映されます。 変更がパブリッシュインスタンスに表示されない場合は、関連する PLP および PDP ページにプライベート/匿名ブラウザーウィンドウでアクセスしてみてください。
 
 >[!NOTE]
 >
