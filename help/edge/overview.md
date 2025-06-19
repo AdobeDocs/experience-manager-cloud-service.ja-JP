@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: ad9592c705c7b26292a29b43997edadfa01ccb65
 workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ Edge Delivery により、AEM はエンゲージメントとコンバージョ�
 
 Edge 配信サービスを使用すると、次の操作を実行できます。
 
-* 完璧な Lighthouse スコアで迅速なサイトを作成し、運用上のテレメトリを通じてサイトのパフォーマンスを継続的に監視します。
+* 申し分ない Lighthouse スコアの高速サイトを作成し、Operational Telemetry を通じてサイトのパフォーマンスを継続的に監視します。
 * コンテンツソースを分離することでオーサリング効率を向上させます。標準では、ユニバーサルエディターを使用した AEM オーサリングとドキュメントベースのオーサリングの両方を使用できます。したがって、同じ web サイト上で複数のコンテンツソースを操作できます。
 * 迅速なテスト作成、パフォーマンスに影響を与えない実行およびテスト勝者の実稼動環境への迅速なリリースが可能になる組み込みの実験フレームワークを使用します。
 
@@ -108,7 +108,7 @@ Edge Delivery Services は、Adobe Experience Manager の一部です。その�
 
 AEM と Edge Delivery Services を使用してオーサリングする独自のプロジェクトを開始する方法について詳しくは、[はじめに - ユニバーサルエディターの開発者向けチュートリアル](https://www.aem.live/developer/ue-tutorial)を参照してください。
 
-また、[Adobe Target](https://www.aem.live/developer/target-integration)、[ 運用上のテレメトリ ](https://www.aem.live/developer/rum)、[Launch](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/home) と共にEdge Delivery Servicesを使用して、サイトの使用状況とパフォーマンスを診断することもできます。
+Edge Delivery Services を [Adobe Target](https://www.aem.live/developer/target-integration)、[Operational Telemetry](https://www.aem.live/developer/rum) と併用して Sites の使用状況とパフォーマンスを診断したり、[Launch.](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/home) で使用したりすることもできます。
 
 ## アドビからのヘルプの入手 {#getting-help}
 
