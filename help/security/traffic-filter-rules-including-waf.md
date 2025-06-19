@@ -4,9 +4,9 @@ description: Web アプリケーションファイアウォール（WAF）ルー
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 20d4ea369676baad28c43246fe399e2e2f4b1db7
-workflow-type: ht
-source-wordcount: '4278'
+source-git-commit: 70ba91e83ce2395e748ff8bdbecfc4d4fc04250b
+workflow-type: tm+mt
+source-wordcount: '4262'
 ht-degree: 100%
 
 ---
@@ -48,8 +48,6 @@ ht-degree: 100%
 * **ダッシュボードツール：** CDN ログを分析して、新しいトラフィックフィルタールールを作成する方法を説明します。
 * **推奨されるスタータールール：**&#x200B;使用を開始するための一連のルール。
 * **チュートリアル：**&#x200B;ダッシュボードツールを使用して適切なルールを宣言する方法など、機能に関する実用的な知識を説明します。
-
-トラフィックフィルタールールに関するフィードバックまたはご質問は、**aemcs-waf-adopter@adobe.com** にメールでお問い合わせください。
 
 ## トラフィック保護の概要 {#traffic-protection-overview}
 
