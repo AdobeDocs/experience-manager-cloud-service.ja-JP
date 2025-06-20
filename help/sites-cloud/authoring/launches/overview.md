@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 4c75904958f7faf91173cb8a37d5be5b3048cfae
+source-git-commit: 3859393b94680ac1c786bfe31950e6073650167f
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 83%
+source-wordcount: '977'
+ht-degree: 85%
 
 ---
 
@@ -77,7 +77,7 @@ Adobe Experience Manager（AEM）as a Cloud Serviceでは、ローンチを使�
    * 自動 - これには次の要素が関与します。
       * 「**ローンチ日**（**ライブ日付**）」**フィールド**：ローンチを作成または編集するときに設定できます。
       * 「**実稼動準備完了**」フラグ：ローンチを編集するときにのみ設定できます。
-      * 「**実稼動準備完了**」フラグが設定されると、ローンチは指定の「**ローンチ**&#x200B;**日**（**開始日**）」に実稼動ページに自動的に昇格されます。昇格後、実稼働ページは自動的に公開されます。\
+      * 「**実稼動準備完了**」フラグが設定されると、ローンチは指定の「**ローンチ****日**（**開始日**）」に実稼動ページに自動的に昇格されます。昇格後、実稼働ページは自動的に公開されます。\
         日付が設定されていない場合、フラグの効果はありません。
 * ソースの更新とページのローンチを並行して行うことができます。
    * ソースページに対する変更は、ローンチコピーに自動的に反映されます（ライブコピーなど、継承するように設定されている場合）。
@@ -115,11 +115,13 @@ Adobe Experience Manager（AEM）as a Cloud Serviceでは、ローンチを使�
 
 ## ローンチコンソール {#the-launches-console}
 
+<!--
 >[!NOTE]
 >
->このコンソールはページのローンチ専用です。
+>This console is only for Launches for Pages. 
 >
->コンテンツフラグメントを管理するには、[ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) を参照してください。
+>To manage your Content Fragments see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+-->
 
 ローンチコンソールを使用すると、ローンチの概要を確認し、リストされたローンチに対して処理を実行できます。
 
