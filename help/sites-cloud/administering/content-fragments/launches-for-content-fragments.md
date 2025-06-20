@@ -7,13 +7,13 @@ hide: true
 hidefromtoc: true
 index: false
 solution: Experience Manager Sites
-source-git-commit: f2adbc7fd92e846c6e09e52644f45c720c04dc4e
+exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
+source-git-commit: 231ce792429347882c93804d370e7a99111ec916
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 1%
 
 ---
-
 
 # コンテンツフラグメントのローンチ {#launches-for-content-fragments}
 
