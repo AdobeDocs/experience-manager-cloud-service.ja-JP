@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="プライベートベータ版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 54f86f7bc204c6171fb031ecb94dd3da0379dacf
+source-git-commit: 26892959443a16203184f4a0798d9c7fdc75dd8f
 workflow-type: tm+mt
-source-wordcount: '2298'
+source-wordcount: '2292'
 ht-degree: 90%
 
 ---
@@ -216,8 +216,7 @@ URL をプレーンテキストファイルにペーストします。コピー�
 
 >[!TAB GitHub Enterprise]
 
-<!-->
-https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github —>
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
 | 必須の webhook イベント |
 | --- |
@@ -261,8 +260,7 @@ Webhook を正しく設定すると、Cloud Manager ではリポジトリに対�
 
 >[!TAB GitHub Enterprise]
 
-<!-->
-https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github —>
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
 チェックを作成すると、次のスクリーンショットのように表示されます。`GitHub.com` との主な違いは、`GitHub.com` はチェック実行を使用するのに対して、GitHub Enterprise（個人用アクセストークンを使用）はコミットステータスを生成することです。
 
