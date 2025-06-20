@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 72f6a0597b59efd9bf17fba0ea286e14cfa5903d
+source-git-commit: ea0b204111a852a0243febbcf3f403987a6bfcc9
 workflow-type: tm+mt
-source-wordcount: '6267'
-ht-degree: 98%
+source-wordcount: '6281'
+ht-degree: 97%
 
 ---
 
@@ -372,6 +372,7 @@ ht-degree: 98%
          + [ページの作成](/help/sites-cloud/authoring/sites-console/creating-pages.md)
          + [ページの管理](/help/sites-cloud/authoring/sites-console/managing-pages.md)
          + [ページプロパティ](/help/sites-cloud/authoring/sites-console/page-properties.md)
+         + [ページプロパティの編集](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
          + [ページのプレビュー](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [ページの公開](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
          + [ページのバージョン](/help/sites-cloud/authoring/sites-console/page-versions.md)
@@ -384,6 +385,7 @@ ht-degree: 98%
          + [ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)
          + [エディターサイドパネル](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
          + [ページの編集](/help/sites-cloud/authoring/page-editor/edit-content.md)
+         + [ページエディターからのページの公開](/help/sites-cloud/authoring/page-editor/publishing.md)
          + [ページテンプレート](/help/sites-cloud/authoring/page-editor/templates.md)
          + [ページ注釈の追加](/help/sites-cloud/authoring/page-editor/annotations.md)
          + [リッチテキストエディター](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
@@ -397,7 +399,7 @@ ht-degree: 98%
       + ユニバーサルエディター {#universal-editor}
          + [ナビゲーション](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [オーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md)
-         + [公開](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [ユニバーサルエディターからのページの公開](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [継承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
          + [ページテンプレート](/help/sites-cloud/authoring/universal-editor/templates.md)
       + フラグメント {#fragments}

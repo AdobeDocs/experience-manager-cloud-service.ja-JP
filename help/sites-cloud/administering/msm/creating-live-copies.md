@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+workflow-type: tm+mt
 source-wordcount: '4270'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -212,7 +212,7 @@ ht-degree: 100%
 
 ### ブループリントページのライブコピーの確認 {#seeing-the-live-copies-of-a-blueprint-page}
 
-（ブループリント設定で参照される）ブループリントのページには、現在の（ブループリント）ページをソースとして使用するライブコピーページのリストが表示されます。このリストを使用してライブコピーを追跡します。このリストは[ページプロパティ](/help/sites-cloud/authoring/sites-console/page-properties.md)の「**ブループリント**」タブに表示されます。
+（ブループリント設定で参照される）ブループリントのページには、現在の（ブループリント）ページをソースとして使用するライブコピーページのリストが表示されます。このリストを使用してライブコピーを追跡します。このリストは [ ページプロパティ ](/help/sites-cloud/authoring/sites-console/page-properties.md) の「**ブループリント**」タブに表示されます。
 
 ![ページプロパティの「ブループリント」タブ](../assets/live-copy-blueprint-tab.png)
 

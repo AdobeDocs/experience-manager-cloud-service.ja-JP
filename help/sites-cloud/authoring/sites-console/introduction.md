@@ -5,8 +5,8 @@ exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+workflow-type: tm+mt
 source-wordcount: '1625'
 ht-degree: 100%
 
@@ -238,7 +238,7 @@ AEM ツールバーの右端にある&#x200B;**表示**&#x200B;アイコンは�
 * **編集** - 選択したページの作成方法に応じて、**編集**&#x200B;アクションを実行すると、該当するエディターが開きます
    * [ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md) - AEM ページエディターで作成されたページの場合
    * [ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md) - ユニバーサルエディターで作成されたページの場合
-* [**プロパティ**](/help/sites-cloud/authoring/sites-console/page-properties.md) - ページのプロパティウィンドウを開きます
+* [**プロパティ**](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) - ページのプロパティウィンドウを開きます
 * [**ロック**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - 他のユーザーがページを変更できないようにページをロックします
 * [**コピー**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - ページをコピーします
 * [**移動**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - ページの移動や名前変更を行います

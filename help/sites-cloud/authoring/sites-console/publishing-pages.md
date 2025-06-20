@@ -1,50 +1,49 @@
 ---
-title: ページの公開
-description: AEM の様々なメカニズムを使用して、ページを公開および非公開にする方法について説明します。
+title: Sites コンソールからのページの公開
+description: Sites コンソールを使用してページを公開および非公開にする方法について説明します。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c738a123eccbb9b8c011f75ac60d79aba7a2a2d8
+source-git-commit: 5ad91a32d705ef61e8b9799bf7fb1e136bb8bfa0
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 90%
+source-wordcount: '1635'
+ht-degree: 89%
 
 ---
 
-# ページの公開 {#publishing-pages}
+
+# Sites コンソールからのページの公開 {#publishing-pages}
 
 オーサー環境でコンテンツを作成およびレビューした後は、[公開 web サイト（パブリッシュ環境）でコンテンツを利用できるようにする](/help/sites-cloud/authoring/author-publish.md)ことが目標となります。
 
-この操作は、ページの公開と呼ばれます。パブリッシュ環境からページを削除する場合は、ページの非公開と呼ばれます。公開や非公開を行う場合、ページを削除するまでは、オーサー環境でページに引き続き変更を加えることができます。
+この操作は、ページの公開と呼ばれます。パブリッシュ環境からページを削除する場合は、ページの非公開と呼ばれます。ページは、公開／非公開を切り替えても、削除するまでは、さらなる変更に備えてオーサー環境で使用できます。
 
-ページの公開または非公開は、即座に行うことも、後で事前定義済みの日時に行うことができます。
+[**Sites** コンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) を使用して、ページを直ちに公開/非公開にすることも、後で事前定義済みの日時に公開/非公開にすることもできます。
 
->[!NOTE]
+>[!TIP]
 >
->[ エクスペリエンスフラグメント ](/help/sites-cloud/authoring/fragments/experience-fragments.md) の公開は、エクスペリエンスフラグメントコンソールまたはエディターを使用しますが、基本的にはページ公開の場合と同じ手順に従います。
+>Sites コンソール以外の場所から公開できます。
+>
+>* [ ページエディターから ](/help/sites-cloud/authoring/page-editor/publishing.md)
+>* [ ユニバーサルエディターから ](/help/sites-cloud/authoring/universal-editor/publishing.md)
+>* [ エクスペリエンスフラグメントから ](/help/sites-cloud/authoring/fragments/experience-fragments.md) コンソールまたはエディター
+>
+>これらの場所から公開する場合は、提供されるオプションは異なりますが、ここで説明する同様の手順と一般的なアイデアに従います。
 
 ## 用語 {#terminology}
 
 Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公開に関連する様々な用語を目にするかもしれません。
 
 * **公開／非公開**
-   * これらは、コンテンツをパブリッシュ環境やプレビュー環境で公開するアクションを表す主な用語です。
+   * パブリッシュ環境やプレビュー環境でコンテンツを公開する（または非公開にする）アクションに対して主に使用される用語です。
    * これらは AEM のドキュメントで使用される用語です。
 * **アクティブ化／非アクティブ化**
    * 公開／非公開と同義です。
    * これらの用語は、以前のバージョンの AEM で使用されていました。
 * **レプリケート／レプリケーション**
-   * ページを公開する際（オーサーからプレビューなど）、あるサービスから別のサービスへのデータ（ページコンテンツ、ファイル、コード、ユーザーコメントなど）の移動を表す技術用語です。
+   * ページを公開する際（例：オーサーからプレビューへ）に行われる、環境間でのデータ（ページコンテンツ、ファイル、コード、ユーザーコメントなど）の移動を表す技術用語です。
    * これらの用語は主に開発者が使用します。
-
-## ページの公開 {#publishing-pages-1}
-
-場所に応じて、次から公開できます。
-
-* [ページエディターから](#publishing-from-the-page-editor)
-* [次から： ](#publishing-from-the-sites-console)
-* [ユニバーサルエディターから](/help/sites-cloud/authoring/universal-editor/publishing.md)
 
 >[!NOTE]
 >
@@ -60,50 +59,17 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 >
 >次の場合、ページの順序は保証されません:。
 >
->* （順序情報は親ページに保持されるので）子ページのみを公開用に選択する場合
->* 親ページと子ページを別のアクションで公開する場合
+>* 子ページのみが公開用に選択されている場合（注文情報が親ページに保持されるので）
+>* 親ページと子ページが別々のアクションで公開される場合
 
-### ページエディターからの公開 {#publishing-from-the-page-editor}
-
-[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)でページを編集している場合、エディターから直接ページを公開できます。
-
-1. **ページ情報**&#x200B;アイコンを選択してメニューを開き、「**ページを公開**」オプションを選択します。
-
-   ![ページオプションを使用したページの公開](/help/sites-cloud/authoring/assets/publishing-page-options.png)
-
-1. 公開が必要な参照がページに含まれているかどうかに応じて、次の操作を行います。
-
-   * 公開する参照がない場合、ページが直接公開されます。
-   * 公開が必要な参照がページに含まれている場合は、それらのリストが&#x200B;**公開**&#x200B;ウィザードに表示され、ウィザードで次のいずれかを実行できます。
-      * ページと一緒に公開するアセットやタグなどを指定し、「**公開**」を使用してプロセスを完了します。
-      * 「**キャンセル**」を使用してアクションを中止します。
-
-   ![ページでの参照の公開](/help/sites-cloud/authoring/assets/publishing-references.png)
-
-1. 「**公開**」を選択して、パブリッシュ環境にページをレプリケートします。ページエディターに、公開アクションを確認する情報バナーが表示されます。
-
-   ![公開ステータス情報バナー](/help/sites-cloud/authoring/assets/publishing-info.png)
-
-   コンソールで同じページを表示すると、更新された公開ステータスが表示されます。
-
-   ![サイトコンソールの列表示でのページ公開ステータス](/help/sites-cloud/authoring/assets/publishing-status-console-column.png)
-
->[!NOTE]
->
->ページエディターからの公開は、浅い公開です。つまり、選択したページ（1 ページまたは複数ページ）だけが公開され、子ページ（1 ページまたは複数ページ）は公開されません。
-
->[!NOTE]
->
->エディターで[エイリアス](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)を使用してアクセスしたページは公開できません。エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
-
-### サイトコンソールからの公開 {#publishing-from-the-sites-console}
+## Sites コンソールからのページの公開 {#publishing-from-the-sites-console}
 
 **サイト**&#x200B;コンソールには、2 つの公開オプションがあります。
 
 * [クイック公開](#quick-publish)
 * [公開を管理](#manage-publication)
 
-#### クイック公開 {#quick-publish}
+### クイック公開 {#quick-publish}
 
 **クイック公開**&#x200B;は単純なケースに使用します。他の操作を行わなくても、選択したページが即座に公開されます。このため、すべての非公開の参照も自動的に公開されます。
 
@@ -123,9 +89,9 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 >
 >クイック公開は、浅い公開です。つまり、選択したページだけが公開され、子ページは公開されません。
 
-#### 公開を管理 {#manage-publication}
+### 公開を管理 {#manage-publication}
 
-**公開を管理** には、**クイック公開** よりも多くのオプションがあります。子ページを含めたり、参照をカスタマイズしたり、プレビューサービス（使用可能な場合）に公開したり、使用可能なワークフローを開始したり、後日公開するためのオプションを提供したりします。
+**公開を管理**&#x200B;には、**クイック公開**&#x200B;よりも多くのオプションがあります。子ページの追加、参照のカスタマイズ、プレビューサービスへの公開（使用可能な場合）、該当するワークフローの開始を可能にし、後日公開するオプションを提供します。
 
 公開を管理を使用してページを公開または非公開にするには、次の手順を実行します。
 
@@ -141,7 +107,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
    * **宛先**
 
-     パブリッシュサービス（デフォルト）またはプレビューサービスのどちらで公開するかを選択します。 [ プレビューサービスが設定されている場合にのみ使用できます。](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+     パブリッシュサービス（デフォルト）またはプレビューサービスのどちらで公開するかを選択します。[プレビューサービスが設定](/help/sites-cloud/authoring/sites-console/previewing-content.md)されている場合にのみ使用できます。
 
    * **スケジュール設定**
 
@@ -149,13 +115,13 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
      後日公開にすると、選択したページを指定した時間に公開するワークフローが開始します。逆に、後で非公開にすると、特定の時間に選択したページを非公開にするワークフローが開始します。
 
-     >[!NOTE]
+     >[!TIP]
      >
      >公開／非公開を後からキャンセルする場合は、[ワークフローコンソール](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)に移動して、対応するワークフローを終了します。
 
-     >[!NOTE]
+     >[!TIP]
      >
-     >コンテンツの公開用スケジュールを設定する方法は、ページプロパティで使用できる [**オンタイム** や **オフタイム** のスケジュールとは異なりますが ](/help/sites-cloud/authoring/sites-console/page-properties.md#basic) 同様の状況で使用することができます。
+     >公開するコンテンツをスケジュールすると、コンテンツがレプリケートされ、公開ワークフローに従います。 既に公開済みのコンテンツを非公開にせずに一時的に非表示にする場合は、ページプロパティで [**オンタイム** と **オフタイム** を使用できることを検討してください。](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
    ![公開を管理でのオプション](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -230,26 +196,9 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 1. 「**公開**」または「**後で公開する**」をクリックして、公開を完了します。
 
-
-
 ## ページを非公開にする {#unpublishing-pages}
 
-ページを非公開にすると、そのページが公開または[プレビュー](/help/sites-cloud/authoring/sites-console/previewing-content.md)環境から削除され、読者からアクセスできなくなります。
-
-[公開と同様の方法](#publishing-pages)で、目的の宛先から 1 つ以上のページを非公開にすることができます。
-
-* [ページエディターから](#unpublishing-from-the-editor)
-* [サイトコンソールから](#unpublishing-from-the-console)
-
-### エディターから非公開にする {#unpublishing-from-the-editor}
-
-ページを編集する際に、そのページを非公開にする場合、**ページを公開**&#x200B;する際と同じように、**ページ情報**&#x200B;メニューで「[ページを非公開](#publishing-from-the-editor)」を選択します。
-
->[!NOTE]
->
->エディターで[エイリアス](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)を使用してアクセスしたページは、非公開にすることができません。エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
-
-### コンソールから非公開にする {#unpublishing-from-the-console}
+ページを非公開にすると、そのページが公開または [ プレビュー ](/help/sites-cloud/authoring/sites-console/previewing-content.md) 環境から削除され、読者からアクセスできなくなります。
 
 [「公開を管理」オプションを使用して公開する](#manage-publication)場合と同様に、「公開を管理」オプションを使用して非公開にできます。
 

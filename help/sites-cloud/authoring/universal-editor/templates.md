@@ -5,8 +5,8 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: bcf0940d3365ecde6788772d28d32f22f367816d
-workflow-type: ht
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ ht-degree: 100%
 
 1. **Sites** コンソールを使用して、テンプレートとして使用する[新規ページまたは既存のページに移動](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)し、タップまたはクリックして選択します。
 
-1. ページを選択したら、ツールバーの&#x200B;[**プロパティ**&#x200B;アイコン](/help/sites-cloud/authoring/sites-console/page-properties.md)をタップまたはクリックします。
+1. ページを選択したら、ツールバーの&#x200B;[**プロパティ**&#x200B;アイコン](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)をタップまたはクリックします。
 
 1. 「**テンプレート設定**」セクションのプロパティダイアログの「**詳細**」タブで、**ページをテンプレートとして使用**&#x200B;切替スイッチを選択します。
 
