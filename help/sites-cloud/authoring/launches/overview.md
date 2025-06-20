@@ -1,22 +1,30 @@
 ---
-title: ローンチ
-description: ローンチを使用すると、今後のリリース用にコンテンツを効率的に開発できます。現在のページを維持しながら、今後のパブリケーションに合わせて変更を加えることができます。
+title: ページのローンチ
+description: Adobe Experience Manager as a Cloud Serviceでページにローンチを使用する方法を説明します。 ローンチを使用すると、現在のページを維持しながら、将来のリリース向けにコンテンツを効率的に開発できます。
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 9ddda040eda85b29c86a4940cb656f26073b0f12
-workflow-type: ht
-source-wordcount: '957'
-ht-degree: 100%
+source-git-commit: 4c75904958f7faf91173cb8a37d5be5b3048cfae
+workflow-type: tm+mt
+source-wordcount: '995'
+ht-degree: 83%
 
 ---
 
-# ローンチ {#launches}
+# ページのローンチ {#launches-for-pages}
 
-ローンチを使用すると、今後のリリース用にコンテンツを効率的に開発できます。
+Adobe Experience Manager（AEM）as a Cloud Serviceでは、ローンチを使用すると、将来のリリース向けにコンテンツを効率的に開発できます。
 
-*ローンチ*&#x200B;を作成すると、現在のページを維持しながら、今後の公開に備えて変更を加えることができます。つまり、現在公開されているページと、今後公開される予定のページのバージョンの 2 つのバージョンを同時に効果的に編集していることになります。公開予定の時期が来たら、元のページを置き換えて新しいバージョンを公開できます。
+*ローンチ* が作成され、現在のコンテンツを維持しながら、今後の公開に備えて変更を加えることができます。 AEM ページの場合は、現在公開されているページと、今後公開されるページのバージョンの 2 つを同時に効果的に編集することになります。 その時間が来たら、元のページを置き換えて、新しいバージョンを公開できます。
+
+<!--
+>[!NOTE]
+>
+>Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
+>
+>For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+-->
 
 *ローンチ*&#x200B;を作成し、*ローンチ*&#x200B;ページを編集および更新した後、*ソース*&#x200B;に&#x200B;*昇格*&#x200B;して戻します。その後、これらの&#x200B;*ソース*&#x200B;ページ（上位レベル）をアクティブ化できます。昇格により、ローンチコンテンツを複製してソースページに戻します。これは、手動または自動で行うことができます（ローンチを作成および編集するときに設定されるフィールドに依存します）。
 
@@ -28,7 +36,7 @@ ht-degree: 100%
 また、次のことを実行できます。
 
 * ローンチブランチのコンテンツをナビゲートします。必要に応じて、ページを追加または削除します。
-* 公開済みコンテンツが将来の特定の日付／時間をどのように見るかに関するプレビューです。
+* 公開済みのコンテンツが将来の特定の日付にどのように表示されるかをプレビューします。
 
 次の四半期が始まるとき、ローンチページを昇格させて（更新されたコンテンツを保持している）ソースページを公開できます。すべてのページを昇格させるか、変更したページのみを昇格させることができます。
 
@@ -106,6 +114,12 @@ ht-degree: 100%
    ![サイトコンソールでローンチに対して実行可能なアクション](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
 ## ローンチコンソール {#the-launches-console}
+
+>[!NOTE]
+>
+>このコンソールはページのローンチ専用です。
+>
+>コンテンツフラグメントを管理するには、[ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) を参照してください。
 
 ローンチコンソールを使用すると、ローンチの概要を確認し、リストされたローンチに対して処理を実行できます。
 
