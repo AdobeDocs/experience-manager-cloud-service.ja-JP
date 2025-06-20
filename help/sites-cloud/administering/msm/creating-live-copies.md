@@ -54,7 +54,7 @@ ht-degree: 99%
 
 ブループリント設定を作成するには、以下を実行します。
 
-1. [](/help/sites-cloud/authoring/basic-handling.md#global-navigation)**ツール**&#x200B;メニューに移動し、**Sites** メニューを選択します。
+1. [&#128279;](/help/sites-cloud/authoring/basic-handling.md#global-navigation)**ツール**&#x200B;メニューに移動し、**Sites** メニューを選択します。
 1. 「**ブループリント**」を選択し、**ブループリント設定**&#x200B;コンソールを開きます。
 
    ![ブループリント設定](../assets/blueprint-configurations.png)
@@ -73,7 +73,7 @@ ht-degree: 99%
 
 以下の手順で、既存のブループリント設定を編集または削除できます。
 
-1. [](/help/sites-cloud/authoring/basic-handling.md#global-navigation)**ツール**&#x200B;メニューに移動し、**Sites** メニューを選択します。
+1. [&#128279;](/help/sites-cloud/authoring/basic-handling.md#global-navigation)**ツール**&#x200B;メニューに移動し、**Sites** メニューを選択します。
 1. 「**ブループリント**」を選択し、**ブループリント設定**&#x200B;コンソールを開きます。
 
    ![ブループリント設定](../assets/blueprint-configurations.png)
@@ -208,7 +208,7 @@ ht-degree: 99%
 
    ![ページプロパティの「ライブコピー」タブ](../assets/live-copy-inherit.png)
 
-   詳しくは、「ライブコピーの概要コンソール」の記事の、](live-copy-overview.md#using-the-live-copy-overview)ライブコピーの概要の使用[を参照してください。
+   詳しくは、「ライブコピーの概要コンソール」の記事の、[&#128279;](live-copy-overview.md#using-the-live-copy-overview)ライブコピーの概要の使用を参照してください。
 
 ### ブループリントページのライブコピーの確認 {#seeing-the-live-copies-of-a-blueprint-page}
 
