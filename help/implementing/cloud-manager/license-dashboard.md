@@ -6,16 +6,16 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 6c36e45dc5437f34b26732a34e9bda38deac56b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '909'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
 # ライセンスダッシュボード {#license-dashboard}
 
-Cloud Managerには、組織またはテナントが使用できるAdobe Experience Manager as a Cloud Service（AEMaaCS）製品の使用権限を簡単に表示できるダッシュボードが用意されています。
+Cloud Manager には、組織またはテナントが使用できる Adobe Experience Manager as a Cloud Service（AEMaaCS）製品の使用権限を容易に確認できるダッシュボードが用意されています。
 
 >[!IMPORTANT]
 >
@@ -41,9 +41,10 @@ Cloud Manager ライセンスダッシュボードを使用すると、すべて
 
 ダッシュボードは、次の 3 つのセクションに分かれています。
 
-* **ソリューション** - ライセンスを取得したソリューション。 例えば、Sites、Edge Delivery Services、Assetsなどです。
+* **ソリューション** - ライセンスを取得したソリューション。
+例えば、Sites、Edge Delivery Services、Assetsなどです。
 
-  ![ ソリューションリスト ](assets/solutions.png)
+  ![ソリューションリスト](assets/solutions.png)
 
 * **アドオン** - 使用可能なライセンス済みソリューションに対するアドオン。
 * **その他の使用権限** - テナント内で使用できるサンドボックス、開発環境およびその他の使用権限。

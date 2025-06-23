@@ -1,38 +1,37 @@
 ---
 title: AEM Forms AI アシスタント – プロンプトライブラリ
-description: Forms Management UI、アダプティブFormsエディター、ユニバーサルエディターをまたいで、AI を利用してフォームを作成するための実証済みのプロンプトパターンと例を集めました。
+description: Forms Management UI、アダプティブフォームエディター、ユニバーサルエディターで、AI を利用してフォームを作成するための実証済みのプロンプトパターンと例のコレクション。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
-workflow-type: tm+mt
+exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
+source-git-commit: abcd5be06b0bf24ebe8737827fb4abdbf148b1b0
+workflow-type: ht
 source-wordcount: '1613'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-
-
 # AEM Forms AI アシスタント – プロンプトライブラリ
 
-再利用可能なプロンプトパターンと、一般的なフォーム作成シナリオの例のコレクション。 特定のニーズに合わせて調整できるテンプレートと考えてください。 各セクションでは、特定のユースケースと、それを使用するタイミング、実証済みの例について説明します。
+再利用可能なプロンプトパターンと、一般的なフォーム作成シナリオの例のコレクション。特定のニーズに合わせて調整できるテンプレートと考えてください。各セクションでは、特定のユースケースと、それを使用するタイミング、実証済みの例について説明します。
 
 >[!NOTE]
 >
-> AEM Formsの AI アシスタントは、早期導入プログラムで利用できます。 勤務先のアドレスからmailto:aem-forms-ea@adobe.comにメールを送信して、アクセスをリクエストします。
+> AEM Forms の AI アシスタントは、早期導入プログラムで利用できます。勤務先のアドレスから mailto:aem-forms-ea@adobe.com にメールを送信して、アクセスをリクエストします。
 
 >[!IMPORTANT]
 >
-> **ドキュメントは変更される場合があります**：このプロンプトライブラリは現在製品に対してテスト中であり、更新および改訂される可能性があります。 早期導入プログラム中にAEM Forms用 AI アシスタントが進化し続けると、プロンプト、例、ベストプラクティスが変わる可能性があります。
+> **ドキュメントは変更される場合があります**：このプロンプトライブラリは現在製品に対してテスト中であり、更新および改訂される可能性があります。早期導入プログラム中に AEM Forms 用 AI アシスタントが進化し続けると、プロンプト、例、ベストプラクティスが変わる可能性があります。
 
 ## 最適な結果を得るためのベストプラクティス
 
 AI アシスタントを最大限に活用するには、次のヒントに留意してください。
 
-### シンプルなビルドから開始し、段階的にビルドする
+### シンプルに開始し、段階的にビルドする
 
-最初は過度に複雑な複数ステップのリクエストではなく、小さく具体的なコマンド（「名」のテキスト入力の追加など）から始めます。 このアプローチは、精度を確保するのに役立ち、何かが期待どおりに動作しない場合のトラブルシューティングが容易になります。
+最初は過度に複雑な複数ステップのリクエストではなく、小さく具体的なコマンド（「『名』のテキスト入力の追加」など）から始めます。このアプローチは、精度を確保するのに役立ち、何かが期待どおりに動作しない場合のトラブルシューティングが容易になります。
 
 **シンプルな開始の例：**
 
@@ -40,15 +39,15 @@ AI アシスタントを最大限に活用するには、次のヒントに留�
 Add a text input field for "First Name" with placeholder "Enter your first name"
 ```
 
-**さらにビルドします：**
+**そして段階的にビルド：**
 
 ```
 Make @firstName mandatory and add validation message "First name is mandatory"
 ```
 
-### AEM Formsの用語の使用
+### AEM Forms 用語を使用する
 
-「パネル」、「テキスト入力フィールド」、「チェックボックスグループ」、「送信アクション」、「ルール」などの用語を使用して、アシスタントの理解を深めます。 これにより、AI がAEM Forms コンテキスト内でリクエストを正しく解釈します。
+「パネル」、「テキスト入力フィールド」、「チェックボックスグループ」、「送信アクション」、「ルール」などの用語を使用して、アシスタントの理解を深めます。これにより、AI が AEM Forms コンテキスト内でリクエストを正しく解釈します。
 
 **優先用語：**
 
@@ -61,7 +60,7 @@ Make @firstName mandatory and add validation message "First name is mandatory"
 
 ### フィールドを明確に参照
 
-既存のフィールドを設定する場合は、@fieldName の表記を使用します（例：「Make @firstName mandatory」）。 これは、特に、多くのフィールドを含む複雑なフォームで、AI が参照しているフィールドを正確に識別するのに役立ちます。
+既存のフィールドを設定する場合は、@fieldName の表記を使用します（例：「@firstName を必須にする」）。 これは、特に、多くのフィールドを含む複雑なフォームで、AI が参照しているフィールドを正確に識別するのに役立ちます。
 
 **例：**
 
@@ -71,11 +70,11 @@ Make @firstName mandatory and add validation message "First name is mandatory"
 
 ### 計画を常に確認する
 
-ユニバーサルエディターでアシスタントが提案した変更については、常に慎重に計画を確認してから、「適用」をクリックしてください。 AI は、計画内容を示します。この情報が期待に沿っていることを確認してください。
+ユニバーサルエディターでアシスタントが提案した変更については、常に慎重に計画を確認してから、「適用」をクリックしてください。AI は、計画内容を示します。この情報が期待に沿っていることを確認してください。
 
 ### 手動で検証
 
-アシスタントが変更を加えた後は、常にフォームをプレビューおよびテストして、動作が期待どおりに表示されることを確認します。 AI は強力なツールですが、最終的な検証は品質を確保するための鍵です。
+アシスタントが変更を加えた後は、常にフォームをプレビューおよびテストして、期待どおり動作して、表示されることを確認します。AI は強力なツールですが、最終的な検証は品質を確保するための鍵です。
 
 **検証チェックリスト：**
 
@@ -87,31 +86,31 @@ Make @firstName mandatory and add validation message "First name is mandatory"
 
 ### 繰り返して調整
 
-最初のプロンプトで正確な結果が得られない場合は、リクエストを言い換えるか、小さな手順に分割してみてください。 AI はコンテキストから学習するので、より具体的な詳細を提供すると結果が向上する場合が多いです。
+最初のプロンプトで正確な結果が得られない場合は、リクエストを言い換えるか、小さな手順に分割してみてください。AI はコンテキストから学習するので、より具体的な詳細を提供すると結果が向上する場合が多くみられます。
 
 **イテレーションの例：**
 
 1. 1 回目：「フォームをモバイル対応にする」
 2. 改善：「1 列レイアウトで大きなタッチターゲットを使用し、768 px 未満のモバイル画面用のフォームレイアウトを最適化」
 
-### Provide Feedback
+### フィードバックの提供
 
-組み込みのフィードバックメカニズムを使用して、アシスタントが学習したり改善したりできるようにします。 フィードバックは、すべてのユーザーの AI をより良いものにするのに役立ちます。
+組み込みのフィードバックメカニズムを使用して、アシスタントが学習し改善できるようにします。フィードバックは、すべてのユーザーにとって AI をより良いものにするのに役立ちます。
 
 
-## 増分開発の例
+## 漸進型開発の例
 
-これらの例では、シンプルなフォームから徐々に複雑さを増しながら、フォームを順を追って作成する方法を示しています。
+これらの例では、最初は簡単なものから始めて徐々に複雑なものを追加し、段階的にフォームを作成する方法を示しています。
 
-### 例 1：連絡先フォームを増分的に作成する
+### 例 1：連絡先フォームを漸進的に作成する
 
-**手順 1 - シンプルなワークフローの開始：**
+**手順 1 - シンプルに開始：**
 
 ```
 Create a basic contact form with name, email, and message fields
 ```
 
-**手順 2 – 検証を追加：**
+**手順 2 - 検証の追加：**
 
 ```
 Make @name and @email mandatory fields with appropriate validation
@@ -135,21 +134,21 @@ Add a dropdown @inquiryType with options: "General Question", "Support Request",
 Show @urgencyLevel dropdown (Low, Medium, High) only when @inquiryType equals "Support Request"
 ```
 
-### 例 2：登録フォームの増分作成
+### 例 2：登録フォームの段階的作成
 
-**手順 1 – 基本構造：**
+**手順 1 - 基本構造：**
 
 ```
 Create a user registration form with personal information panel
 ```
 
-**手順 2 - コアフィールドを追加：**
+**手順 2 - コアフィールドの追加：**
 
 ```
 Add text input fields: @firstName, @lastName, @email, @phone to the personal information panel
 ```
 
-**手順 3 – 検証を追加：**
+**手順 3 - 検証の追加：**
 
 ```
 Make @firstName, @lastName, and @email mandatory with real-time validation
@@ -167,7 +166,7 @@ Create a new panel "Account Information" with @username and @password fields
 Add password confirmation field @confirmPassword with validation to match @password
 ```
 
-**手順 6 – 環境設定を追加：**
+**手順 6 - 環境設定の追加：**
 
 ```
 Create "Preferences" panel with @newsletter checkbox and @communicationMethod radio group (Email, SMS, Phone)
@@ -175,18 +174,18 @@ Create "Preferences" panel with @newsletter checkbox and @communicationMethod ra
 
 この増分的なアプローチにより、次のことができるようになります。
 
-- 問題が発生する前に問題を早期に検出
-- 各機能を徹底的にテスト
+- 問題が発生する前に問題を早期検出できる
+- 各機能を徹底的にテストする
 - ユーザーのフィードバックに基づいて調整を行う
 - 開発プロセスをより適切に制御できる
 
-## 新しいFormsの開始
+## 新しいフォームの開始
 
-**使用するタイミング：** フォームプロジェクトの開始時。 このプロンプトは、AI が要件を理解し、基盤構造を構築するのに役立ちます。
+**用途：**&#x200B;フォームプロジェクトの開始時。このプロンプトは、AI が要件を理解し、基盤構造を構築するのに役立ちます。
 
-**使用方法：** 基本構造とコア要件から始めます。 フォームタイプ、ターゲットオーディエンス、および主な目的を指定します。 後続のプロンプトで複雑さを追加します。
+**使用方法：**&#x200B;基本構造とコア要件から始めます。フォームタイプ、ターゲットオーディエンス、および主な目的を指定します。後続のプロンプトに複雑さを追加します。
 
-**プロンプトの例 – シンプルな文字列の開始：**
+**プロンプトの例 - 簡単に開始：**
 
 ```
 Create a **customer onboarding form** for new bank account applications with:
@@ -199,7 +198,7 @@ Create a **customer onboarding form** for new bank account applications with:
 Start with a simple layout that we can enhance step by step.
 ```
 
-**さらにビルドします：**
+**次に段階的に作成：**
 
 ```
 Add an address panel to @customerOnboardingForm with street address, city, state, and zip code fields
@@ -229,9 +228,9 @@ Design a basic **feedback survey** with rating scale and comments field
 
 ## フォームの構造とレイアウト
 
-**用途：** 複雑なフォームを整理する必要がある場合や、レイアウトデザインを改善してユーザーエクスペリエンスを向上させる必要がある場合。
+**用途：**&#x200B;複雑なフォームを整理する必要がある場合や、レイアウトデザインを改善してユーザーエクスペリエンスを向上させる必要がある場合。
 
-**使用方法：** ユーザージャーニーと情報の論理的なグループ化に焦点を当てます。 レイアウトの環境設定とナビゲーションパターンを指定します。
+**使用方法：**&#x200B;ユーザージャーニーと情報の論理的なグループ化に焦点を当てます。レイアウトの環境設定とナビゲーションパターンを指定します。
 
 **プロンプトの例 – 複数ステップのフォーム構造：**
 
@@ -274,11 +273,11 @@ Create a **vertical tabbed interface** for this form with tabs for: Basic Info, 
 
 ## フィールド管理と検証
 
-**使用すべき状況：** 特定の検証ルールおよび動作を使用して、フォームフィールドを追加、変更、拡張する必要がある場合。
+**用途：**&#x200B;特定の検証ルールおよび動作を使用して、フォームフィールドを追加、変更、拡張する必要がある場合。
 
-**使用方法：** フィールドのタイプ、検証要件およびユーザーエクスペリエンスの期待について、具体的に説明します。 @fieldName 構文を使用して既存のフィールドを参照します。
+**使用方法：**&#x200B;フィールドのタイプ、検証要件およびユーザーエクスペリエンスの期待について、具体的に説明します。@fieldName 構文を使用して既存のフィールドを参照します。
 
-**プロンプトの例 – フィールドの機能強化：**
+**プロンプトの例 - フィールドの機能強化：**
 
 ```
 Enhance the form fields with these specific requirements:
@@ -321,11 +320,11 @@ Build a **repeatable panel** for work experience where users can add/remove mult
 
 ## 条件付きロジックとルール
 
-**用途：** ユーザー入力またはビジネスルールに基づいて動的なフォームの動作が必要な場合。
+**用途：**&#x200B;ユーザー入力またはビジネスルールに基づいて動的なフォームの動作が必要な場合。
 
-**使用方法：** 条件と結果のアクションを明確に定義します。 特定のフィールド参照と論理演算子を使用します。
+**使用方法：**&#x200B;条件と結果のアクションを明確に定義します。特定のフィールド参照と論理演算子を使用します。
 
-**プロンプトの例 – 複雑な条件付きロジック：**
+**プロンプトの例 - 複雑な条件付きロジック：**
 
 ```
 Implement these conditional rules for the application form:
@@ -373,11 +372,11 @@ Implement **smart defaults** where @country selection auto-sets related fields. 
 
 ## データ統合と送信
 
-**用途：** バックエンドシステム、データベース、または外部サービスにフォームを接続する必要がある場合。
+**用途：**&#x200B;バックエンドシステム、データベース、または外部サービスにフォームを接続する必要がある場合。
 
-**使用方法：** 基本的な送信設定から始めて、さらに統合を追加します。 統合タイプ、データ形式要件およびエラー処理の環境設定を指定します。
+**使用方法：**&#x200B;基本的な送信設定から始めて、段階的に統合を追加します。統合タイプ、データ形式要件、エラー処理の環境設定を指定します。
 
-**プロンプトの例 – 基本送信から開始：**
+**プロンプトの例 - 基本送信から開始：**
 
 ```
 Configure basic form submission for @applicationForm:
@@ -389,7 +388,7 @@ Configure basic form submission for @applicationForm:
 - Show error message if submission fails: "Submission failed, please try again"
 ```
 
-**次に、セカンダリのアクションを増分的に追加します：**
+**次に、二次的なアクションを段階的に追加：**
 
 ```
 Add email notification to @applicationForm: Send confirmation email to @email address with application reference number
@@ -399,7 +398,7 @@ Add email notification to @applicationForm: Send confirmation email to @email ad
 Add CRM integration to @applicationForm: Create new lead record with @firstName, @lastName, @email, and set Status to "New Application"
 ```
 
-**プロンプトの例 – 高度なマルチチャネル送信：**
+**プロンプトの例 - 高度なマルチチャネル送信：**
 
 ```
 Configure form submission with multiple data destinations:
@@ -442,13 +441,13 @@ Set up **workflow trigger** when form is submitted. Pass all form data and trigg
 Configure **database integration** to save form submissions as records. Create new folder for each submission with uploaded documents.
 ```
 
-## デザインインポートとコンバージョン
+## デザインの読み込みと変換
 
-**用途：** 既存のフォームデザイン（PDF、Figma、画像）を機能的なAEM フォームに変換する必要がある場合。
+**用途：**&#x200B;既存のフォームデザイン（PDF、Figma、画像）を機能的な AEM フォームに変換する必要がある場合。
 
-**使用方法：** ソースデザインに関する明確なコンテキストを提供し、必要な変更や機能強化を指定します。
+**使用方法：**&#x200B;ソースデザインに関する明確なコンテキストを提供し、必要な変更や機能強化を指定します。
 
-**プロンプトの例 – PDF フォームの変換：**
+**プロンプトの例 - PDF フォームの変換：**
 
 ```
 Convert this uploaded **PDF application form** into a functional AEM adaptive form:
@@ -480,7 +479,7 @@ Convert this uploaded **PDF application form** into a functional AEM adaptive fo
 Preserve all original field labels and help text, but improve the user experience with modern form interactions.
 ```
 
-**設計の読み込みプロンプト：**
+**デザインの読み込みプロンプト：**
 
 ```
 Import this **design mockup** and convert it into an adaptive form. Maintain the exact visual design but add proper validation and mobile responsiveness.
@@ -496,11 +495,11 @@ Convert this **existing HTML form** to AEM adaptive form format. Preserve all fu
 
 ## モバイルの最適化と応答性
 
-**用途：** あらゆるデバイスタイプや画面サイズにわたってシームレスにフォームを操作する必要がある場合。
+**用途：**&#x200B;あらゆるデバイスタイプや画面サイズにわたってシームレスにフォームを操作する必要がある場合。
 
-**使い方：** 基本的なモバイル最適化から始めて、高度な機能で強化します。 モバイルファーストのアプローチを重視し、ブレークポイントの動作を段階的に指定します。
+**使用方法：**&#x200B;基本的なモバイル最適化から始めて、高度な機能で強化します。モバイルファーストのアプローチを重視し、ブレークポイントの動作を段階的に指定します。
 
-**プロンプトの例 – 基本的なモバイル最適化で開始：**
+**プロンプトの例 - 基本的なモバイル最適化から開始：**
 
 ```
 Make @contactForm mobile-friendly with:
@@ -511,7 +510,7 @@ Make @contactForm mobile-friendly with:
 - Responsive design that works on phones and tablets
 ```
 
-**次に、高度なモバイル機能を追加します。**
+**次に、高度なモバイル機能の追加：**
 
 ```
 Enhance @contactForm mobile experience with:
@@ -520,7 +519,7 @@ Enhance @contactForm mobile experience with:
 - Swipe gestures for multi-step navigation
 ```
 
-**プロンプトの例 – 包括的なモバイルファーストの最適化：**
+**プロンプトの例 - 包括的なモバイルファーストの最適化：**
 
 ```
 Optimize this form for **mobile-first responsive design**:
@@ -573,11 +572,11 @@ Enable offline functionality for @applicationForm with local data saving
 
 ## アクセシビリティとコンプライアンス
 
-**使用するタイミング：** フォームがアクセシビリティ標準（WCAG 2.1 AA）またはコンプライアンス要件を満たす必要がある場合。
+**用途：**&#x200B;フォームがアクセシビリティ標準（WCAG 2.1 AA）またはコンプライアンス要件を満たす必要がある場合。
 
-**使用方法：** 満たす必要のあるアクセシビリティ要件とコンプライアンス標準を指定します。
+**使用方法：**&#x200B;満たす必要のあるアクセシビリティ要件とコンプライアンス標準を指定します。
 
-**プロンプトの例 – アクセシビリティの実装：**
+**プロンプトの例 - アクセシビリティの実装：**
 
 ```
 Make this form **WCAG 2.1 AA compliant** with these accessibility features:
@@ -633,13 +632,13 @@ Make this **financial form PCI DSS compliant** with secure payment field handlin
 Create a **government form meeting Section 508 standards** with full accessibility and plain language requirements.
 ```
 
-## テストと品質のAssurance
+## テストと品質保証
 
-**用途：** フォームの機能、ユーザーエクスペリエンス、技術的なパフォーマンスを検証する必要がある場合。
+**用途：**&#x200B;フォームの機能、ユーザーエクスペリエンス、技術的なパフォーマンスを検証する必要がある場合。
 
-**使用方法：** 検証が必要なテストシナリオ、エッジケースおよび品質条件を指定します。
+**使用方法：**&#x200B;検証が必要なテストシナリオ、エッジケースおよび品質条件を指定します。
 
-**プロンプトの例 – 包括的なフォームテスト：**
+**プロンプトの例 - 包括的なフォームテスト：**
 
 ```
 Create a **comprehensive testing plan** for this application form:
@@ -705,9 +704,9 @@ Set up **performance monitoring** to track form completion rates, abandonment po
 
 **用途：** AI 支援、高度なワークフロー、複雑な統合などの高度なフォーム機能が必要な場合。
 
-**使用方法：** 高度な機能と統合要件を明確に定義します。
+**使用方法：**&#x200B;高度な機能と統合要件を明確に定義します。
 
-**プロンプトの例 – AI 拡張フォーム：**
+**プロンプトの例 - AI 拡張フォーム：**
 
 ```
 Add **AI-powered features** to enhance this application form:
@@ -765,11 +764,11 @@ Implement **blockchain verification** for document authenticity, immutable audit
 
 ## トラブルシューティングと最適化
 
-**用途：** フォームのパフォーマンスやユーザーエクスペリエンスの問題、技術的な問題が発生した場合。
+**用途：**&#x200B;フォームのパフォーマンスやユーザーエクスペリエンスの問題、技術的な問題が発生した場合。
 
-**使い方：** 具体的な問題と望ましい結果を明確に説明します。
+**使用方法：**&#x200B;具体的な問題と望ましい結果を明確に説明します。
 
-**プロンプトの例 – パフォーマンスの最適化：**
+**プロンプトの例 - パフォーマンスの最適化：**
 
 ```
 Optimize this form for **better performance and user experience**:
@@ -809,7 +808,7 @@ Optimize this form for **better performance and user experience**:
 - A/B test improvements with real users
 ```
 
-**トラブルシューティングプロンプト：**
+**トラブルシューティングのプロンプト：**
 
 ```
 **Debug this form submission error:** Users report getting "500 Internal Server Error" when submitting. Check validation logic, server endpoints, and data formatting.
@@ -827,15 +826,15 @@ Optimize this form for **better performance and user experience**:
 
 ### Forms Management UI
 
-**用途：** フォームの作成および管理の大まかなタスクの場合。
+**用途：**&#x200B;大まかなフォームの作成および管理向け。
 
 ```
 In Forms Management UI, create a new **customer survey template** that can be reused across different departments. Include standard branding, common field types, and configurable sections.
 ```
 
-### アダプティブFormsエディター
+### アダプティブフォームエディター
 
-**用途：** フォームの設定や複雑なルールの作成について詳しく説明します。
+**用途：**&#x200B;フォームの設定や複雑なルールの作成について詳しく説明します。
 
 ```
 In the Adaptive Forms Editor, configure **advanced business rules** for this loan application: calculate debt-to-income ratio, determine eligibility, and show appropriate next steps.
@@ -843,15 +842,15 @@ In the Adaptive Forms Editor, configure **advanced business rules** for this loa
 
 ### ユニバーサルエディター
 
-**用途：** ビジュアルエディット機能を備えたEdge Delivery Services フォームの場合。
+**用途：**&#x200B;ビジュアルエディット機能を備えた Edge Delivery Services フォーム向け。
 
 ```
 In Universal Editor, create a **responsive contact form** for the company website. Ensure it matches the site design and integrates with the existing content management workflow.
 ```
 
-## コマンド リファレンス クイック ガイド
+## コマンドリファレンスクイックガイド
 
-| コマンド | 最適なユースケース | 例 |
+| コマンド | ベストユースケース | 例 |
 |---------|---------------|---------|
 | `/create-form` | 新しいフォームの開始 | `/create-form employee onboarding with personal info and benefits selection` |
 | `/add-form` | ページへのフォームの追加 | `/add-form newsletter signup with email and preferences` |
@@ -861,35 +860,35 @@ In Universal Editor, create a **responsive contact form** for the company websit
 | `/create-panel` | フォームセクションの整理 | `/create-panel Employment Details with job title, company, salary fields` |
 | `/add-panel` | デザインの変換 | `/add-panel from uploaded form image with field recognition` |
 | `/configure-submit` | データ処理の設定 | `/configure-submit to CRM and send confirmation email` |
-| `/help` | お問い合わせ | `/help how to implement multi-step validation?` |
+| `/help` | ヘルプ | `/help how to implement multi-step validation?` |
 
 ## サポートされるコンポーネントのプロパティリファレンス
 
 ### ユニバーサルプロパティ（すべてのコンポーネント）
 
-- **タイプ**：コンポーネントタイプ（テキスト、メール、数値、電話、日付、チェックボックス、ラジオ、ドロップダウン、ファイルなど）
-- **名前**：フォーム送信用のフィールド ID
-- **ラベル**：フィールドのテキストを表示します
-- **説明**: フィールドのヘルプテキスト
-- **表示**：最初の表示のブール値
-- **必須**：必須フィールドのブール値
+- **Type**：コンポーネントタイプ（テキスト、メール、数値、電話番号、日付、チェックボックス、ラジオ、ドロップダウン、ファイルなど）
+- **Name**：フォーム送信用のフィールド ID
+- **Labe**：フィールドのテキストを表示します
+- **Description**：フィールドのヘルプテキスト
+- **Visible**：最初の表示のブール値
+- **Mandatory**：必須フィールドのブール値
 
-### 入力フィールドのプロパティ
+### 入力フィールドプロパティ
 
-- **値**：デフォルト/初期値
-- **プレースホルダー**：入力フィールドのヒントテキスト
+- **Value**：デフォルト/初期値
+- **Placeholder**：入力フィールドのヒントテキスト
 - **Min**：最小値（数値/日付）
-- **Max**：最大値（数値/日付用）
+- **Max**：最大値（数値/日付）
 
-### ファイルのアップロードプロパティ
+### ファイルアップロードプロパティ
 
-- **許可**：ファイルタイプ（.pdf、.doc、.docx、.jpg、.png など）
+- **Accept**：ファイル形式（.pdf、.doc、.docx、.jpg、.png など）
 - **Multiple**：複数のファイルを選択する場合はブール値
 
-### 選択コントロールのプロパティ
+### 選択コントロールプロパティ
 
-- **オプション**：ドロップダウンの選択肢（コンマ区切りリスト）
-- **オン**：チェックボックス/ラジオのデフォルト選択
+- **Options**：ドロップダウンの選択肢（コンマ区切りリスト）
+- **Checked**：チェックボックス/ラジオのデフォルト選択
 
 ### コンテナプロパティ
 
@@ -898,46 +897,46 @@ In Universal Editor, create a **responsive contact form** for the company websit
 
 ### 詳細プロパティ
 
-- **表示式**：条件付き表示の数式（=数式）
-- **値式**：計算値の数式（=数式）
+- **Visible Expression**：条件付き表示の数式（=数式）
+- **Value Expression**：計算値の数式（=数式）
 
 ## ベストプラクティスのまとめ
 
 ### 技術的ガイドライン
 
-- 公式のAEM Forms コンポーネント仕様の **サポートされているプロパティのみを使用**
-- フィールド参照（@fieldName）および式（=数式）の **正しい構文に従う**
-- 変更のたびに **増分的にテスト** して、問題を早期に発見します
-- 後で考えるのではなく、最初から **アクセシビリティのプラン** を立てます
-- 設計のあらゆる決定において **モバイルユーザーを考慮**
+- **公式の AEM Forms コンポーネント仕様**&#x200B;でサポートされているプロパティのみを使用します。
+- フィールド参照（@フィールド名）や式（=数式）には、**正しい構文を使用します**。
+- 変更のたびに&#x200B;**段階的にテスト**&#x200B;を行い、問題を早期に発見してください。
+- **アクセシビリティへの対応**&#x200B;は、後回しにせず最初から計画します。
+- すべての設計判断において&#x200B;**モバイルユーザーを考慮します**
 - 今後のメンテナンスおよびチームの共同作業に備えた **複雑なルールの文書化**
 
 ### 戦略的アプローチ
 
 - **ユーザニーズから始める** – 技術的な機能だけでなく、ユーザーが達成する必要があるものに焦点を当てます
-- **完了に向けたデザイン** - フォームデザインでの摩擦と認知負荷を最小限に抑える
-- **データフローの計画** 早期 – データの処理、保存および使用方法を検討します
-- **規模に合わせた構築** – 予想されるユーザー数とデータの増加に対応できるフォームを設計します。
+- **完了に向けたデザイン** - フォームデザインでのフリクションと認知的負荷を最小限に抑えます
+- 早期の&#x200B;**データフローの計画** – データの処理、保存および使用方法を検討します
+- **規模に合わせた構築** – 予想されるユーザー数とデータの増加に対応できるフォームを設計します
 - **プログレッシブ拡張の実装** – 基本機能が機能することを確認してから、高度な機能を追加します
 
 ### 回避すべき一般的な落とし穴
 
-- **過度に複雑な初期リクエスト** – 大規模なタスクをより小さく管理しやすいステップに分割する
-- **サポートされていないプロパティを使用** AEM Formsの仕様にはない
-- 開発プロセスの後半まで **モバイルエクスペリエンスを無視**
-- 実際のシナリオとエッジケースでの **ユーザーテストをスキップ**
-- **明確で具体的な指示を提供することなく** AI がコンテキストを理解していると仮定
-- **アクセシビリティおよびコンプライアンス要件** 忘れる
-- 次の手順に進む前に **変更を検証しない**
+- **過度に複雑な初期リクエスト** – 大規模なタスクをより小さく管理しやすい手順に分割します
+- AEM Forms 仕様で&#x200B;**サポートされていないプロパティの使用**
+- 開発プロセスの後半まで&#x200B;**モバイルエクスペリエンスを無視**
+- 実際のシナリオとエッジケースでの&#x200B;**ユーザーテストをスキップ**
+- 明確で具体的な指示を出さずに **AI がコンテキストを理解していると仮定**
+- **アクセシビリティとコンプライアンス要件を忘れる**
+- 次の手順に進む前に&#x200B;**変更を検証しない**
 
-### 高品質のAssuranceのアプローチ
+### 品質保証アプローチ
 
-1. **頻繁にプレビューする** – 重要な変更が行われるたびに、プレビューモードで作業を確認します
-2. **テストエッジケース** – 異常な入力、長いテキスト、特殊文字を試します
-3. **デバイス間での検証** - モバイル、タブレット、デスクトップでテストします
+1. **頻繁にプレビュー** - 重要な変更が行われるたびに、プレビューモードで作業を確認する
+2. **テストエッジケース** - 異常な入力、長いテキスト、特殊文字を試す
+3. **デバイス間での検証** - モバイル、タブレット、デスクトップでテストする
 4. **アクセシビリティの確認** - キーボードナビゲーションとスクリーンリーダーの互換性の確認
-5. **パフォーマンステスト** - フォームの迅速な読み込みとスムーズな応答を実現
-6. **ユーザー受け入れテスト** - デプロイメント前に、実際のユーザーにフォームをテストしてもらいます。
+5. **パフォーマンステスト** - フォームの迅速な読み込みとスムーズな応答を確認する
+6. **ユーザー受け入れテスト** - デプロイメント前に、実際のユーザーにフォームをテストしてもらう
 
 
-*このプロンプト ライブラリは、ユーザ フィードバックと新しい AI アシスタント機能に基づいて継続的に更新されます。 最新の機能と例については、[AEM Formsのドキュメント ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=ja).* を参照してください。
+*このプロンプトライブラリは、ユーザーフィードバックと新しい AI アシスタント機能に基づいて継続的に更新されます。最新の機能と例については、[AEM Forms のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=ja)を参照してください。*

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: eea0ac03cf2da9cd8508b6df9242dfe67b67c9f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1529'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 91%
 
 <!-- Engineer architect over this feature was Bogdan Anton; scrum master Alexandru Nica -->
 
-エクスペリエンス監査でデプロイメントプロセスを検証し、パフォーマンス、アクセシビリティ、ベストプラクティス、SEO （検索エンジン最適化）のベースライン標準を変更が満たしていることを確認する方法について説明します。 これらの指標を追跡するための、明確で有益なダッシュボードインターフェイスが用意されています。
+エクスペリエンス監査でデプロイメントプロセスを検証して、変更内容がパフォーマンス、アクセシビリティ、ベストプラクティスおよび SEO（検索エンジン最適化）のベースライン標準を満たしていることを確認する方法について説明します。これらの指標を追跡するための、明確で有益なダッシュボードインターフェイスが用意されています。
 
 ## 概要 {#overview}
 
 エクスペリエンス監査により、デプロイメントプロセスが検証され、次の変更がデプロイされていることを確認できます。
 
-1. パフォーマンス、アクセシビリティ、ベストプラクティス、SEO のベースライン標準を満たす。
+1. パフォーマンス、アクセシビリティ、ベストプラクティス、SEO のベースライン標準を満たしている。
 1. リグレッションを導入しない。
 
 Cloud Manager のエクスペリエンス監査を使用すると、サイト上でのユーザーのエクスペリエンスが最も高い標準に準拠します。
@@ -32,11 +32,11 @@ Cloud Manager のエクスペリエンス監査を使用すると、サイト上
 
 エクスペリエンス監査は、Google のオープンソースツールである [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) を活用し、すべての Cloud Manager 実稼動パイプラインで有効になります。
 
-## 可用性 {#availability}
+## 入手方法 {#availability}
 
 エクスペリエンス監査は、Cloud Manager で使用できます。
 
-* （デフォルト） Sites 実稼動パイプライン。
+* （デフォルト）Sites 実稼動パイプライン。
 * （オプション）フルスタックパイプラインの開発。
 * （オプション）フロントエンドパイプラインの開発。
 
@@ -50,9 +50,9 @@ Cloud Manager のエクスペリエンス監査を使用すると、サイト上
 
 1. 設定するパイプラインのタイプに応じて、次のいずれかの操作を行います。
 
-   * [ 実稼動パイプラインを追加 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 監査で評価するパスを定義します。
-   * フロントエンドパイプラインまたは開発用フルスタックパイプラインで監査を有効にする場合は、[ 実稼動以外のパイプラインを追加 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) します。
-   * [ 既存のパイプラインを編集 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) して、既存のオプションを更新します。
+   * [実稼動パイプラインを追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)して、監査で評価するパスを定義します。
+   * フロントエンドまたは開発フルスタックパイプラインで監査を有効にする場合は、[実稼動以外のパイプラインを追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)します。
+   * [既存のパイプラインを編集](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)し、既存のオプションを更新します。
 
 1. 実稼動以外のパイプラインを追加または編集する際にエクスペリエンス監査を使用するには、「**エクスペリエンス監査**」チェックボックスをオンにします。このオプションは「**ソースコード**」タブにあります。
 
@@ -81,7 +81,7 @@ Cloud Manager のエクスペリエンス監査を使用すると、サイト上
 
 ## エクスペリエンス監査結果 {#results}
 
-エクスペリエンス監査の結果は、**実稼動パイプラインの実行ページ** を通じて、実稼動パイプラインの [ ステージテスト ](/help/implementing/cloud-manager/deploy-code.md) フェーズに表示されます。
+エクスペリエンス監査の結果は、[実稼動パイプラインの実行ページ](/help/implementing/cloud-manager/deploy-code.md)を介した実稼動パイプラインの&#x200B;**ステージテスト**&#x200B;フェーズで表示されます。
 
 ![パイプライン内のダッシュボード](assets/experience-audit-dashboard.png)
 
@@ -149,7 +149,7 @@ Cloud Manager の「**レポート**」タブが開き、**エクスペリエン
 
 ![トレンドの詳細](assets/experience-audit-trend-details.png)
 
-ある時点でグラフをクリックすると、そのスキャンの詳細を示すポップアップが開きます。 **開いているエクスペリエンス監査スキャン**&#x200B;をクリックすると、そのスキャン結果が「**[エクスペリエンス監査スキャン結果](#scan-results)**」セクションに読み込まれます。
+特定の時点でチャートをクリックすると、ポップが開き、そのスキャンの詳細が表示されます。**開いているエクスペリエンス監査スキャン**&#x200B;をクリックすると、そのスキャン結果が「**[エクスペリエンス監査スキャン結果](#scan-results)**」セクションに読み込まれます。
 
 ![別のスキャンを選択](assets/experience-audit-open-scan.png)
 

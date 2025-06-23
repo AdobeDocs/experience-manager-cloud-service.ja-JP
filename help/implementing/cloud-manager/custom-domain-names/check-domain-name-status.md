@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 68da11037cb3572a6f869fe8bd6a898e0aad87ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '863'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -58,27 +58,27 @@ Cloud Manager は、顧客が管理する（OV/EV）SSL 証明書を使用して
 
 ## ドメイン名エラー {#domain-error}
 
-次に、一般的なドメイン名の検証エラーとその一般的な解決策を示します。
+次に、一般的なドメイン名の検証エラーとその一般的な解決方法を示します。
 
 ### エラー : ドメインがインストールされていません {#domain-not-installed}
 
 <!-- This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately. -->
 
-Cloud Managerでドメインマッピングを追加しようとすると、次のエラーメッセージが表示される場合があります。
+Cloud Manager でドメインマッピングを追加しようとすると、次のエラーメッセージが表示される場合があります。
 
-*ドメインは既に Fastly アカウントにインストールされています。 Cloud Serviceに追加する前に、まずここから削除してください。*
+*ドメインは既に Fastly アカウントにインストールされています。Cloud Service に追加する前に、まずここから削除してください。*
 
 <!-- This message indicates that the domain is currently associated with a different Fastly account—typically outside of Adobe's control. To proceed, the domain must be disassociated from the other account before it can be added to the Adobe-managed Cloud Service. This issue usually occurs when the same domain is already mapped to a different origin in a non-Adobe Fastly configuration. -->
 
 **エラーの原因**
-Fastly は、ドメインをまず登録したアカウントにロックします。他のアカウントは、サブドメインを登録する権限をリクエストする必要があります。 さらに、Fastly では、apex ドメインと関連するサブドメインを 1 つの Fastly サービスおよびアカウントに割り当てることができます。AEM Cloud Service ドメインで使用されるのと同じ apex およびサブドメインをリンクする既存の Fastly アカウントがある場合、このエラーが表示されます。
+Fastly は、ドメインを先に登録したアカウントにロックします。他のアカウントは、サブドメインを登録する権限をリクエストする必要があります。さらに、Fastly では、apex ドメインと関連するサブドメインを 1 つの Fastly サービスおよびアカウントに割り当てることができます。AEM Cloud Service ドメインで使用されるのと同じ apex およびサブドメインをリンクする既存の Fastly アカウントがある場合、このエラーが表示されます。
 
 **エラーの解決**
 エラーは次のように修正されます。
 
 * Cloud Manager にドメインをインストールする前に、既存のアカウントから apex とサブドメインを削除します。
 
-* apex ドメインとすべてのサブドメインを AEM as a Cloud Service Fastly アカウントにリンクするには、このオプションを使用します。詳しくは、Fastly のドキュメントの [ ドメインの使用 ](https://www.fastly.com/documentation/guides/getting-started/domains/working-with-domains/working-with-domains/) を参照してください。
+* apex ドメインとすべてのサブドメインを AEM as a Cloud Service Fastly アカウントにリンクするには、このオプションを使用します。詳しくは、[Fastly でのドメインの使用](https://www.fastly.com/documentation/guides/getting-started/domains/working-with-domains/working-with-domains/)ドキュメントを参照してください。
 
 * 異なる Fastly アカウントにリンクする必要がある AEM as a Cloud Service および非 AEM サイト用の複数のサブドメインが apex ドメインにある場合は、Cloud Manager でドメインをインストールしてみてください。このプロセスは、異なる Fastly アカウントにまたがるサブドメイン接続の管理に役立ちます。ドメインのインストールに失敗した場合は、Fastly でカスタマーサポートチケットを作成し、お客様に代わってアドビが Fastly でフォローアップを行えるようにします。
 

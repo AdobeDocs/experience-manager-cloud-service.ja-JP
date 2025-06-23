@@ -1,12 +1,12 @@
 ---
-title: アセットセレクターでのアセットのアップロード
+title: アセットセレクターでアセットをアップロードする
 description: アップロード機能を使用したアセットセレクター MFE へのアセットのアップロード
 role: Admin,User
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
 source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '556'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

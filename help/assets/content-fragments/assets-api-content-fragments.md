@@ -5,9 +5,9 @@ feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
 source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1857'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->Assets HTTP API でのコンテンツフラグメントのサポートが [ 非推奨 ](/help/release-notes/deprecated-removed-features.md) になりました。
+>Assets HTTP API でのコンテンツフラグメントのサポートが[廃止](/help/release-notes/deprecated-removed-features.md)されました。
 >
->[OpenAPI を使用したコンテンツフラグメント配信 ](/help/headless/aem-content-fragment-delivery-with-openapi.md) および [ コンテンツフラグメントおよびコンテンツフラグメントモデル管理 OpenAPI](/help/headless/content-fragment-openapis.md) に置き換えられました。
+>[OpenAPI を使用したコンテンツフラグメント配信](/help/headless/aem-content-fragment-delivery-with-openapi.md)および[コンテンツフラグメントおよびコンテンツフラグメントモデル管理 OpenAPI](/help/headless/content-fragment-openapis.md) に置き換えられました。
 
-AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API でのコンテンツフラグメントのサポートについて学びます。
+Adobe Experience Manager（AEM）のヘッドレス配信機能の重要な部分である、Assets HTTP API におけるコンテンツフラグメントのサポートについて学びます。
 
 >[!NOTE]
 >

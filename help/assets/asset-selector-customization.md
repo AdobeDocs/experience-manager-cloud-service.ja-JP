@@ -4,9 +4,9 @@ description: 関数を使用して、アプリケーション内のアセット�
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
 source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1292'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

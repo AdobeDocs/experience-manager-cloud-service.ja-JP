@@ -7,9 +7,9 @@ feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
 source-git-commit: d53bfe103ff8e40c8221805a2d66faf3c5cd3823
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '419'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Adobe Experience Manager のユーザーインターフェイスは、[オーサ
 | Mozilla Firefox（エバーグリーン） | A：サポート対象 | A：サポート対象 | Z：サポート対象外 |
 | Mozilla Firefox 最新 ESR [1] | A：サポート対象 | A：サポート対象 | Z：サポート対象外 |
 | macOS の Safari（エバーグリーン） | A：サポート対象 | A：サポート対象 | Z：サポート対象外 |
-| iPadOS の Safari （エバーグリーン） | Z：サポート対象外 | A：サポート対象 | Z：サポート対象外 |
+| iPadOS 版 Safari（エバーグリーン） | Z：サポート対象外 | A：サポート対象 | Z：サポート対象外 |
 
 1. Firefox の拡張サポートリリース（[詳しくは mozilla.org を参照してください](https://www.mozilla.org/ja-JP/firefox/enterprise/)）
 

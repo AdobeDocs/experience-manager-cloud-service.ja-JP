@@ -1,12 +1,12 @@
 ---
-title: アセットセレクターとAdobe以外のアプリケーションまたはサードパーティアプリケーションとの統合
+title: アセットセレクターと、アドビ以外のアプリケーションまたはサードパーティアプリケーションとの統合
 description: アセットセレクターを様々なアドビ、アドビ以外、サードパーティのアプリケーションと統合します。
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
 source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '474'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

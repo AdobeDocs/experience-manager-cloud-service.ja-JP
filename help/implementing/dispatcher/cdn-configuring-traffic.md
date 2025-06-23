@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
 source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1508'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -60,11 +60,11 @@ CDN でトラフィックを設定する前に、次のことを行う必要が�
 
 ルールは、名前、条件付きの「when 句」およびアクションで参照されます。
 
-「when」句は、ドメイン、パス、クエリ文字列、ヘッダー、cookie などのプロパティに基づいてルールを評価するかどうかを決定します。 構文は、すべてのルールタイプで共通です。詳しくは、「トラフィックフィルタールール」記事の[条件の構造](/help/security/traffic-filter-rules-including-waf.md#condition-structure)の節を参照してください。
+when 句は、ドメイン、パス、クエリ文字列、ヘッダー、Cookie などのプロパティに基づいて、ルールを評価するかどうかを決定します。構文は、すべてのルールタイプで共通です。詳しくは、「トラフィックフィルタールール」記事の[条件の構造](/help/security/traffic-filter-rules-including-waf.md#condition-structure)の節を参照してください。
 
 アクションノードの詳細は、ルールタイプによって異なります。概要については、以下の個々の節で説明します。
 
-設定ルールでは、環境変数として定義された秘密鍵を参照できます（[ 設定秘密鍵 ](/help/implementing/dispatcher/cdn-credentials-authentication.md) を参照）。
+設定ルールでは、環境変数として定義された秘密鍵を参照できます（[設定秘密鍵](/help/implementing/dispatcher/cdn-credentials-authentication.md)を参照してください）。
 
 ## リクエスト変換 {#request-transformations}
 

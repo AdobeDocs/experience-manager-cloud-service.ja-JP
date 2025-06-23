@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 source-git-commit: e99bec4515c79e181ce38b94b1ea327fd99d2695
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '521'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 >[!IMPORTANT]
 >
 >Cloud Manager に Edge Deliver Services サイトをオンボーディングする必要がある理由について説明します。
->&#x200B;>[アドビが推奨する Edge Delivery Services のパスを使用するメリット](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)を参照してください。
+>>[アドビが推奨する Edge Delivery Services のパスを使用するメリット](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)を参照してください。
 
 **Cloud Manager に Edge Delivery サイトを追加するには：**
 
@@ -40,7 +40,7 @@ ht-degree: 91%
    | テキストフィールド | 説明 |
    | - | --- |
    | サイト名 | 追加する Edge Delivery サイトの名前を入力します。<br>名前は、Cloud Manager 内でサイトの一意の ID として機能します。 |
-   | Edge Delivery オリジン | この値は、Edge Delivery Servicesのサイトのコンテンツソースへの URL パスを指定します。 また、Cloud Managerをライブサイトにリンクします。<br>URL には通常、*branch*、*project* および *tenant* が含まれます。以下に例を示します（説明用のみ）。<br>`https://main--{site}--{org}.aem.live` |
+   | Edge Delivery オリジン | この値は、Edge Delivery Services のサイトのコンテンツソースへの URL パスを指定します。また、Cloud Manager をライブサイトにリンクします。<br>URL には通常、*分岐*、*プロジェクト*&#x200B;および&#x200B;*テナント*&#x200B;が含まれます。以下に例を示します（説明用のみ）。<br>`https://main--{site}--{org}.aem.live` |
    | サイトの説明（オプション） | 追加する Edge Delivery サイトの簡単な説明を入力します。<br>説明は、サイトを識別して区別するのに役立ち、追加した他のサイトの中で管理および認識しやすくなります。 |
 
 1. ダイアログボックスの右下隅にある「**追加**」をクリックします。

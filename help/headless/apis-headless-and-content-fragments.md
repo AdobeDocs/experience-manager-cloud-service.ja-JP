@@ -5,9 +5,9 @@ feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
 source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '516'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Experience Manager（AEM）as a Cloud Service では、コンテンツフ�
 
 >[!NOTE]
 >
->[Assets HTTP API でのコンテンツフラグメントのサポート ](/help/assets/content-fragments/assets-api-content-fragments.md) が [ 非推奨 ](/help/release-notes/deprecated-removed-features.md) になりました。 [OpenAPI を使用したコンテンツフラグメント配信 ](/help/headless/aem-content-fragment-delivery-with-openapi.md) および [ コンテンツフラグメントおよびコンテンツフラグメントモデル管理 OpenAPI](/help/headless/content-fragment-openapis.md) に置き換えられました。
+>[Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)が[非推奨](/help/release-notes/deprecated-removed-features.md)になりました。[コンテンツフラグメントとコンテンツフラグメントモデル管理 OpenAPI](/help/headless/content-fragment-openapis.md) が [OpenAPI を使用したコンテンツフラグメント配信](/help/headless/aem-content-fragment-delivery-with-openapi.md)に置き換えられました。
 
 ## REST と GraphQL {#rest-vs-graphql}
 

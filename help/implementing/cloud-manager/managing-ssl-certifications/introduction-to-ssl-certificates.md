@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: b0c8769b5941ed772a91cf189e8c7355d1db766b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1160'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ DV 証明書を作成すると、その証明書を削除しない限り、ア�
 
 >[!IMPORTANT]
 >
->環境で CNAME ベースの検証を使用して（DV） SSL 証明書を使用する場合は、証明書の自動更新前に CNAME レコードを削除すると、更新が失敗する可能性があることに注意してください。 この削除により、証明書の有効期限が切れ、サービスが中断される可能性があります。 この問題を回避するには、完全な更新プロセスを通じて CNAME レコードが適切に保持されていることを確認してください。 更新プロセスは、ドメイン所有権の検証に CNAME レコードが存在するかどうかによって異なります。
+>環境で CNAME ベースの検証を使用して（DV）SSL 証明書を使用する場合は、証明書の自動更新前に CNAME レコードを削除すると、更新が失敗する可能性があることに注意してください。この削除により、証明書の有効期限が切れ、サービスが中断される可能性があります。この問題を回避するには、完全な更新プロセスを通じて CNAME レコードが適切に保持されていることを確認してください。更新プロセスでは、ドメイン所有権の検証に CNAME レコードの存在が不可欠です。
 
 ### 顧客が管理する（OV/EV）SSL 証明書 {#customer-managed}
 

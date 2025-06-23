@@ -4,49 +4,84 @@ description: コンテンツハブでのコレクションの管理方法につ�
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
 source-git-commit: 6bc838ff76edda3e03cbde8da4a28f65cba3b36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1055'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
 # [!DNL Content Hub] でのコレクションの管理 {#manage-collections}
 
 <table>
+
     <tr>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
+
         </td>
+
           <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
+
         </td>
+
     </tr>
+
     <tr>
+
         <td>
+
             <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
+
         </td>
+
         <td>
+
             <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
+
         </td>
+
     </tr>
+
 </table>
 
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
@@ -73,37 +108,37 @@ ht-degree: 57%
 
 ## 前提条件 {#prerequisites}
 
-[Content Hub ユーザー ](deploy-content-hub.md#onboard-content-hub-users) は、この記事で説明されるアクションを実行できます。
+[Content Hub ユーザー](deploy-content-hub.md#onboard-content-hub-users)は、この記事で説明されているアクションを実行できます。
 
 ## コレクションの作成{#create-collections}
 
-ガバナンスを管理しながら、[ 新しいコレクションを作成 ](#create-new-collection) または [ 既存のコレクションにアセットを追加 ](#add-assets-to-existing-collection) を選択できます。
+ガバナンスを管理しながら、[新しいコレクションを作成](#create-new-collection)するか、[既存のコレクションにアセットを追加](#add-assets-to-existing-collection)するかを選択できます。
 
 ### 新しいコレクションの作成{#create-new-collection}
 
 コレクションの作成時にアクセスを制御するには、次の手順を実行します。
 
-1. 「**[!DNL Collections]**」タブに移動し、「**[!UICONTROL コレクションを作成]** をクリックします。 新規コレクション ウィンドウが表示されます。
+1. 「**[!DNL Collections]**」タブに移動し、「**[!UICONTROL コレクションを作成]**」をクリックします。新しいコレクションウィンドウが表示されます。
 
-1. コレクションに **[!UICONTROL タイトル]** と **[!UICONTROL 説明]** を追加します。
+1. コレクションに「**[!UICONTROL タイトル]**」と「**[!UICONTROL 説明]**」を追加します。
 
-   ![ コレクション権限 ](assets/collection-permissions.png)
+   ![コレクション権限](assets/collection-permissions.png)
 
-1. **[!UICONTROL アクセスできるユーザー]** ドロップダウンで、アクセス制御のタイプを選択します。 以下のオプションが利用できます。
+1. **[!UICONTROL アクセスできるユーザー]**&#x200B;ドロップダウンで、アクセス制御のタイプを選択します。以下のオプションが利用できます。
 
    | アクセス方法 | アクセスタイプ | 説明 |
    |---|---|---|
-   | **自分と管理者のみがアクセスできます** | プライベート | このコレクションを編集してアクセスできるのは、作成者と管理者のみです。 |
-   | **誰でもアクセス可能** | Public | すべてのユーザーがこのコレクションにアクセスできますが、編集できるのは作成者と管理者のみです。 |
-   | **誰でもアクセスして編集できます** | Public | このコレクションは誰でも利用でき、制限なくフルアクセスと編集権限が付与されます。 |
+   | **自分と管理者のみがアクセス可能** | プライベート | このコレクションを編集してアクセスできるのは、作成者と管理者のみです。 |
+   | **誰でもアクセス可能** | パブリック | すべてのユーザーがこのコレクションにアクセスできますが、編集できるのは作成者と管理者のみです。 |
+   | **誰でもアクセスして編集可能** | パブリック | このコレクションは誰でも利用でき、制限なくフルアクセスと編集権限が付与されます。 |
 
-1. 「**[!UICONTROL 作成]**」をクリックします。 完了したら、[ コレクションにアセットを追加 ](#add-assets-to-existing-collection) できます。
+1. 「**[!UICONTROL 作成]**」をクリックします。完了したら、[コレクションにアセットを追加](#add-assets-to-existing-collection)できます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
 >[!NOTE]
 >
->コレクションガバナンスは限定提供の機能です。 有効にするには、サポートチケットを作成します。 有効にしたら、[Content Hubでコレクションを設定 ](configure-content-hub-ui-options.md#configure-collections-content-hub) する必要があります。
+>コレクションガバナンスは限定提供の機能です。サポートチケットを作成して、有効または無効にすることができます。有効にしたら、[Content Hub でコレクションを設定](configure-content-hub-ui-options.md#configure-collections-content-hub)する必要があります。
 
 <!--To create a new collection, navigate to the **[!UICONTROL Collections]** tab and click **[!UICONTROL Create new collection]**. Enter the **[!UICONTROL Title]** and provide an optional **[!UICONTROL Description]** for the assets. Click **[!UICONTROL Create]**.
 ![Create collection](assets/add-assets-collection.jpg)          
@@ -115,34 +150,34 @@ ht-degree: 57%
 
 ![新しいコレクションの作成](assets/create-add-collection.jpg)
 
-アセットを追加する必要があるコレクションを選択します。また、検索バーを使用して既存のコレクションを検索することもできます。<br> アセットを追加する必要があるコレクションを選択し、**[!UICONTROL コレクションに追加]** をクリックします。
+アセットを追加する必要があるコレクションを選択します。また、検索バーを使用して既存のコレクションを検索することもできます。<br>アセットを追加するコレクションを選択し、「**[!UICONTROL コレクションに追加]**」をクリックします。
 
 ## コレクションの表示{#view-collections}
 
 「**[!UICONTROL コレクション]**」タブに移動し、コレクション名を検索します。フィルターを使用すると、特定の条件を選択して検索結果を絞り込み、最も関連性の高いコレクションをすばやく見つけることができます。
 
-コレクションで使用可能なアセットのリストを表示するには、コレクション名をクリックします。コレクション内でフィルターを適用して、アセットの結果を絞り込むこともできます。 コレクション内で表示する必要があるアセットをクリックします。[!DNL Content Hub] には、アセットの詳細ビューが表示されます。[詳しくは、アセットの詳細を参照してください](asset-properties-content-hub.md)。
+コレクションで使用可能なアセットのリストを表示するには、コレクション名をクリックします。また、コレクション内でフィルターを適用して、アセットの結果を絞り込むこともできます。コレクション内で表示する必要があるアセットをクリックします。[!DNL Content Hub] には、アセットの詳細ビューが表示されます。[詳しくは、アセットの詳細を参照してください](asset-properties-content-hub.md)。
 
 ### コレクション表示のフィルタリング {#filter-collections-view}
 
-Content Hubでは、環境設定に基づいてオプションを絞り込むことで、コレクションビューをフィルタリングして、探しているものを正確に簡単に見つけることができます。 [Content Hub内のコレクションの設定 ](configure-content-hub-ui-options.md#configure-collections-content-hub) を確認します。
+Content Hub では、環境設定に基づいてオプションを絞り込み、コレクションビューをフィルタリングして、探しているものを正確に簡単に見つけることができます。[Content Hub 内のコレクションの設定](configure-content-hub-ui-options.md#configure-collections-content-hub)を確認します。
 
-コレクションビューをフィルタリングするには、「」タブ **[!DNL Collections]** 移動し、「コレクション」ドロップダウンに移動します。 次のいずれかのオプションを選択します。
+コレクションビューをフィルタリングするには、「**[!DNL Collections]**」タブに移動し、「コレクション」ドロップダウンに移動します。次のいずれかのオプションを選択します。
 
-* **[!UICONTROL すべてのコレクション &#x200B;]:** 非公開で共有されているすべてのコレクションを表示するには、このオプションを選択します。
-* **[!UICONTROL 自分のみ &#x200B;]:** アクセス可能なコレクションを表示する場合は、このオプションを選択します。
-* **[!UICONTROL すべてのユーザーが表示 &#x200B;]:** すべてのユーザーがアクセスできるが、作成者のみが編集できるコレクションをフィルタリングできます。
-* **[!UICONTROL すべてのユーザーが編集できます &#x200B;]:** すべてのユーザーがアクセス可能かつ編集可能なコレクションをフィルタリングする場合は、このオプションを選択します。
+* **[!UICONTROL すべてのコレクション]：**&#x200B;非公開で共有されているすべてのコレクションを表示するには、このオプションを選択します。
+* **[!UICONTROL 自分のみ]：**&#x200B;アクセス可能なコレクションを表示する場合は、このオプションを選択します。
+* **[!UICONTROL すべてのユーザーが表示可能]：**&#x200B;このオプションでは、すべてのユーザーがアクセス可能で作成者のみが編集できるコレクションをフィルタリングできます。
+* **[!UICONTROL すべてのユーザーが編集可能]：**&#x200B;すべてのユーザーがアクセス可能かつ編集可能なコレクションをフィルタリングする場合は、このオプションを選択します。
 
-  ![ コレクション表示のフィルタリング ](assets/filter-collection-view.png)
+  ![コレクション表示のフィルタリング](assets/filter-collection-view.png)
 
 さらに、アクセス権限に基づいてコレクションビューをフィルタリングするには、「**[!DNL Collections]**」タブに移動し、次のいずれかのオプションに移動します。
 
-* **[!UICONTROL 任意のユーザーが作成 &#x200B;]:** このフィルターを使用すると、任意のユーザーが作成したコレクションを表示できます。
+* **[!UICONTROL 任意のユーザーが作成]：**&#x200B;このフィルターを使用すると、任意のユーザーが作成したコレクションを表示できます。
 
-* **[!UICONTROL 自分で作成 &#x200B;]:** このフィルターは、自分が作成したコレクションを表示するように制限します。
+* **[!UICONTROL 自分で作成]:**&#x200B;このフィルターは、自分が作成したコレクションを表示するように制限します。
 
-  ![ コレクション表示のフィルタリング ](assets/filter-collection-view1.png)
+  ![コレクション表示のフィルタリング](assets/filter-collection-view1.png)
 
 <!--
 ![Asset details](assets/view-collection.jpg)
@@ -172,9 +207,9 @@ Content Hubでは、環境設定に基づいてオプションを絞り込むこ
 
 ## コレクション内での使用可能なアセットの共有 {#share-assets-available-within-collection}
 
-コレクション内で使用可能なアセットを共有することもできます。必ず [Content Hubで公開リンク共有を有効にする ](configure-content-hub-ui-options.md#enable-public-link-sharing) ようにします。 「**[!UICONTROL コレクション]**」タブに移動します。コレクションカードの ![共有アイコン](assets/share.svg) アイコンを選択します。共有リンクがコピーされます。コピーしたリンクを受信者と共有できます。詳しくは、[ [!DNL Content Hub]](share-assets-content-hub.md) でのアセットの共有を参照してください。
+コレクション内で使用可能なアセットを共有することもできます。必ず [Content Hub で公開リンク共有を有効にする](configure-content-hub-ui-options.md#enable-public-link-sharing)ようにします。「**[!UICONTROL コレクション]**」タブに移動します。コレクションカードの ![共有アイコン](assets/share.svg) アイコンを選択します。共有リンクがコピーされます。コピーしたリンクを受信者と共有できます。詳しくは、[ [!DNL Content Hub]](share-assets-content-hub.md) でのアセットの共有を参照してください。
 
-Content Hubでコレクションを共有する際に、システム内のデジタルリソースに対して受信者が実行できるアクセス範囲とアクションを定義できます。 Content Hub Collections には、カスタマイズ可能な共有権限や共同作業機能など、効果的なアセット管理を行うための包括的なガバナンスツールが用意されています。 読み取り専用アクセスから完全な管理制御に至るまで、これらの設定はアセット配布に対する微調整のガバナンスをサポートします。
+Content Hub でコレクションを共有する際に、システム内のデジタルリソースに対して受信者が実行できるアクセス範囲とアクションを定義できます。Content Hub コレクションには、カスタマイズ可能な共有権限や共同作業機能など、効果的なアセット管理を行うための包括的なガバナンスツールが用意されています。読み取り専用アクセスから完全な管理制御に至るまで、これらの設定はアセット配布に対する微調整のガバナンスをサポートします。
 
 ## コレクションの詳細の編集 {#edit-details-of-collection}
 

@@ -4,9 +4,9 @@ description: アセットセレクターを使用して、アプリケーショ�
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: fb1e73b24e0717998a69132cc8f196193c87bab4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1598'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -205,17 +205,17 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 ### アセットの詳細とメタデータ {#asset-details-and-metadata}
 
-アセットの詳細ページは、特定のアセットの包括的なビューを提供し、すべての主要な情報を 1 か所に統合します。 名前、ファイル形式、ステータス、簡単な説明の概要と、視覚的に簡単に識別できるプレビューまたはサムネールが含まれています。 また、作成日、作成者、サイズ、カラースキームなど、アセットのメタデータも含まれます。 これらの属性は、アセットの検索、フィルタリングおよび分類を効率的に行うのに役立ちます。 アセットの詳細パネルは、アセットセレクターのパネルとモーダル表示の両方で使用できます。 パネルビューでは、プロパティを有効にして、アセットを返すよう `onDrop` 設定する必要があります。 または、モーダルビューでは、プロパティ `handleSelection` アセットを返します。 [ アセットセレクターのプロパティ ](asset-selector-properties.md) を参照してください。
+アセットの詳細ページは、特定のアセットに関するすべての重要な情報を一か所に集約し、包括的なビューを提供します。このページには、名前、ファイル形式、ステータス、簡単な説明を含む概要に加えて、視覚的に識別しやすいプレビューやサムネイルも含まれています。また、作成日、作成者、サイズ、カラースキームなど、アセットのメタデータも含まれています。これらの属性は、アセットの検索、フィルタリングおよび分類を効率的に行うのに役立ちます。アセットの詳細パネルは、アセットセレクターのパネルビューとモーダルビューの両方で使用できます。レールビューでは、アセットを返すために `onDrop` プロパティを有効にして構成する必要があります。または、モーダルビューでは、`handleSelection` プロパティがアセットを返します。[アセットセレクターのプロパティ](asset-selector-properties.md)を参照してください。
 
-アセットとメタデータの詳細を表示するには、次の手順を実行します。
+アセットおよびメタデータの詳細を表示するには、次の手順を実行します。
 
 1. アセットセレクター MFE を開き、アセットに移動します。
-1. アセットにポインタを合わせ、![ 情報アイコン ](/help/assets/assets/info-icon-solid-black.svg) をクリックします。
-1. 「**[!UICONTROL 情報]**」タブに移動して、アセットの詳細を表示します。<!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
+1. アセットにポインタを合わせ、![情報アイコン](/help/assets/assets/info-icon-solid-black.svg)をクリックします。
+1. 「**[!UICONTROL 情報]**」タブに移動して、アセットの詳細を参照してください。<!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
 
-アセットの詳細ビューパネルをカスタマイズするには、[ モーダルビューでの情報のカスタマイズ ](asset-selector-customization.md#customize-info-in-modal-view) を参照してください。
+アセットの詳細ビューパネルをカスタマイズするには、[モーダルビューでの情報のカスタマイズ](asset-selector-customization.md#customize-info-in-modal-view)を参照してください。
 
-![ 資産の詳細 ](assets/asset-details.png)
+![アセットの詳細](assets/asset-details.png)
 
 <!--
 
@@ -239,7 +239,7 @@ Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI 
 
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
-Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
 
 -->
 
@@ -279,7 +279,7 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
         <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="アセットセレクターの例の図"><br/>
         <a href="asset-selector-properties.md">アセットセレクターのプロパティ</a>
         <p>
-        <em>実際的な方法でプロパティの使用方法について説明します。</em>
+        <em>プロパティの実用的な使用方法について説明します。</em>
         </p>
     </td>
 </tr>
@@ -309,7 +309,7 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
         <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="アセットセレクターのコレクションの図"><br/>
         <a href="asset-selector-collections.md">アセットセレクターのコレクション</a>
         <p>
-        <em>Experience Manager リポジトリを使用してアセットセレクター内でコレクションを使用する方法を説明します。</em>
+        <em>Experience Manager リポジトリを使用してアセットセレクター内でコレクションを使用する方法について説明します。</em>
         </p>
     </td>
     <td>

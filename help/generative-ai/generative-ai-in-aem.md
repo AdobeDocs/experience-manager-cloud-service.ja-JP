@@ -5,9 +5,9 @@ feature: Generative AI
 role: Admin, Architect, Developer, User
 exl-id: 740d9a5b-bd83-4723-a43e-0ead475c3392
 source-git-commit: 8e3b3ffed97336580a17ad572cc1793c690a8a7d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '350'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ AEM 全体における生成 AI の使用用途は、以下のとおりです。
 
 * [AI で生成されたスマートタグ](/help/assets/metadata-assets-view.md#ai-smart-tags)
 
-  デジタルAssetsの場合、手動入力に依存するのではなく、AI を使用して記述的タグを自動的に割り当てることができます。 これらの AI で生成されるタグは、メタデータの品質を向上させ、アセットの検索、分類およびレコメンデーションを容易にします。 このアプローチは、手動のタグ付けを排除することで効率を向上させるだけでなく、大量のデジタルコンテンツ間の一貫性と拡張性も確保します。
+  デジタルアセットの場合、手動入力に依存するのではなく、AI を使用して記述的タグを自動的に割り当てることができます。これらの AI で生成されたタグは、メタデータの品質を向上させ、アセットの検索、分類および推奨を容易にします。このアプローチは、手動のタグ付けを排除し、効率を向上させるだけでなく、大量のデジタルコンテンツ間の一貫性とスケーラビリティも確保します。
 
 <!-- 
   * [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/aem-ai-assistant.md)

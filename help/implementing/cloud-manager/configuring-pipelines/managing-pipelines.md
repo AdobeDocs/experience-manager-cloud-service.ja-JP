@@ -7,9 +7,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 4ddca61044d7923db9fd08b96cb18cedfd71cf70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1493'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -60,17 +60,16 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 ![パイプラインアクション](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
-### パイプラインのお気に入りのマーク{#pipeline-favorites}
+### パイプラインのお気に入りをマークする{#pipeline-favorites}
 
-特定のパイプラインをお気に入りとしてマークして、「**パイプライン**」ページのリストの上部に表示できます。 この機能により、頻繁にアクセスするパイプラインを見つけて実行しやすくなります。
+特定のパイプラインをお気に入りとしてマークして、**パイプライン**&#x200B;ページのリストの上部に表示できます。この機能により、頻繁にアクセスされるパイプラインを見つけて実行しやすくなります。
 
 **パイプラインのお気に入りをマークするには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 1. **プログラムの概要**&#x200B;ページで、![パイプラインタブ - ワークフローアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)「**パイプライン**」タブをクリックします。
-1. パイプライン ページのパイプライン名とタイプの左側で、![ お気に入りのないパイプラインの場合は星形アウトラインアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg) をクリックして、お気に入りリストに追加します。
-または、![ お気に入りのパイプラインのスターアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg) をクリックして、お気に入りリストからパイプラインを削除します。
+1. パイプラインページのパイプライン名とタイプの左側で、![星型のアウトラインアイコン（お気に入り登録されていないパイプライン用）](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg)をクリックすると、そのパイプラインをお気に入りリストに追加できます。または、![お気に入りのパイプラインの星型アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg) をクリックして、お気に入りリストからパイプラインを削除します。
 
 
 ## アクティビティページ {#activity}
@@ -117,7 +116,7 @@ Cloud Manager を使用すると、複数のパイプラインを同時に実行
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 1. 左側のサイドメニューから、![ワークフローアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **パイプライン**&#x200B;をクリックします。
-1. **パイプライン**&#x200B;ページのテーブルで、実行するパイプラインの横にあるチェックボックスをオンにします。
+1. **パイプライン**ページのテーブルで、実行するパイプラインの横にあるチェックボックスをオンにします。
 必要に応じて、![フィルターアイコン、ファネル](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **フィルター**&#x200B;をクリックして、パイプラインを名前、環境、デプロイされたコードタイプ、またはこれら 3 つすべての組み合わせで並べ替えます。
 1. ページの右上隅付近にある「**選択されている実行（x）**」をクリックします。
 1. **選択されているパイプラインを実行（x）**&#x200B;ダイアログボックスで、「**実行（x）**」をクリックします。

@@ -5,9 +5,9 @@ feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
 source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '475'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -37,11 +37,11 @@ Adobe Experience Manager（AEM）as a Cloud Service では、コンテンツフ�
 
 >[!IMPORTANT]
 >
->AEM as a Cloud Serviceで OpenAPI を使用したコンテンツフラグメント配信を有効にするには、まだ有効になっていないことを確認してから、「**OpenAPI を使用してコンテンツフラグメント配信を有効にする** というタイトルを持つAdobe サポートチケットを送信し、次を指定します。
+>AEM as a Cloud Service で OpenAPI を使用したコンテンツフラグメント配信を有効にするには、まだ有効になっていないことを確認してから、「**OpenAPI を使用したコンテンツフラグメント配信を有効にする**」というタイトルで次の内容を指定してアドビサポートチケットを送信してください。
 >
 >* Cloud Service プログラム ID と環境 ID
 >* コンテンツフラグメント配信 OpenAPI で解決するユースケースの詳細
->* Adobeが対応する必要のあるすべての連絡先の詳細、およびリクエストやプロジェクトについて情報を保持（必要な場合）
+>* アドビが対応する必要のあるすべての連絡先の詳細、およびリクエストやプロジェクトについて情報を保持（必要な場合）
 
 ## キャッシュ {#caching}
 
@@ -58,23 +58,23 @@ AEM は AEM CDN Fastly と統合されます。つまり、パブリッシュ層
 * 古いコンテンツは、エラーにより最大 1 日間提供される場合があります。
    * `stale-on-error`=`86400`
 
-OpenAPI を使用したコンテンツフラグメント配信では、アクティブな CDN キャッシュの無効化をサポートしています。 つまり、コンテンツを更新または公開するたびに、対応する JSON OpenAPI 応答は Fastly へのソフトパージリクエストを通じて自動的に無効化されます。これにより、実際の CDN キャッシュの有効期間（`s-maxage`）に達する前に、JSON 出力に反映された変更を確認できます。
+OpenAPI を使用したコンテンツフラグメント配信では、アクティブな CDN キャッシュの無効化をサポートしています。つまり、コンテンツを更新または公開するたびに、対応する JSON OpenAPI 応答は Fastly へのソフトパージリクエストを通じて自動的に無効化されます。これにより、実際の CDN キャッシュの有効期間（`s-maxage`）に達する前に、JSON 出力に反映された変更を確認できます。
 
 ## 入手方法 {#availability}
 
-OpenAPI を使用したコンテンツフラグメント配信は、プレビュー層とパブリッシュ層で使用できます。 OpenAPI は、プレビューとライブ配信の両方に JSON 形式でコンテンツフラグメントを配信します。
+OpenAPI を使用したコンテンツフラグメント配信は、プレビュー層とパブリッシュ層で使用できます。OpenAPI は、プレビューとライブ配信の両方に JSON 形式でコンテンツフラグメントを配信します。
 
 OpenAPI を使用したコンテンツフラグメント配信をプレビューするには、次の操作を行います。
 
-* プレビューに公開
-* ip許可リストによるプレビューへのアクセスを有効にする
-* プレビュー URL を取得
+* プレビューへの公開
+* IP 許可リストによるプレビューへのアクセスを有効にする
+* プレビュー URL の取得
 
 ## CORS {#cors}
 
-[CORS 許可オリジン ](/help/headless/deployment/cross-origin-resource-sharing.md) API を呼び出せるオリジンを定義します。
+[CORS 許可オリジン](/help/headless/deployment/cross-origin-resource-sharing.md)は、API を呼び出すことができるオリジンを定義します。
 
-Dispatcher 設定側で定義された CORS 許可されたオリジン（特にGraphQL用）は、この API では考慮されません。
+Dispatcher 設定側で定義された CORS 許可されたオリジン（特に GraphQL 用）は、この API では考慮されません。
 
 <!-- 
 ## API Rate Limits {#api-rate-limits}

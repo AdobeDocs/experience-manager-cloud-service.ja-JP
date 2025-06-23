@@ -5,7 +5,7 @@ exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
 source-git-commit: b6c753ec581a80991f0f79134bec019c3ad6d1d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '692'
 ht-degree: 100%
 
