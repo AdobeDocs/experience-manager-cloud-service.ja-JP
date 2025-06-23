@@ -63,7 +63,7 @@ ht-degree: 97%
 
 ## [!DNL Assets View] での UI 拡張機能の表示 {#ui-extensibility-panel-assets-view}
 
-[!DNL Assets View] 内で、アセット、フォルダーまたはコレクションの&#x200B;**[!UICONTROL 詳細]**&#x200B;ページに移動します。**[!UICONTROL 詳細]**ページの専用パネルには、追加された UI 拡張機能が表示されます。
+[!DNL Assets View] 内で、アセット、フォルダーまたはコレクションの&#x200B;**[!UICONTROL 詳細]**&#x200B;ページに移動します。**[!UICONTROL 詳細]**&#x200B;ページの専用パネルには、追加された UI 拡張機能が表示されます。
 ![マイワークスペース](/help/assets/assets/my-workspace-assets-view3.png)
 
 ## 拡張コンポーネントを追加するための前提条件{#assets-view-ui-extensibility}
