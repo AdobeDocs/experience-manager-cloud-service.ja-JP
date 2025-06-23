@@ -5,9 +5,9 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '13685'
+source-git-commit: da192447ddc6edbca339c9a985f95dc063183cd3
+workflow-type: tm+mt
+source-wordcount: '13672'
 ht-degree: 100%
 
 ---
@@ -184,7 +184,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 #### 目的 - キャプション（収録済み）（1.2.2） {#purpose-captions-prerecorded}
 
-聴覚障害のある人は、オーディオコンテンツにアクセスすることができない、または非常に困難であったりします。キャプションは、適切なタイミングで画面に表示される、ビデオの会話および会話以外のオーディオに相当するテキストです。オーディオを聞くことができない人々が、起こっていることについて理解するのに役立ちます。
+耳が不自由なユーザーは、オーディオコンテンツにアクセスできないか、アクセスするのが非常に困難です。キャプションは、ビデオの適切なタイミングで画面に表示される、音声や、音声以外のオーディオの代わりとなるテキストです。オーディオを聞くことができない人々が、起こっていることについて理解するのに役立ちます。
 
 #### 達成方法 - キャプション（収録済み）（1.2.2） {#how-to-meet-captions-prerecorded}
 
@@ -201,12 +201,12 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 #### 詳細情報 - キャプション（収録済み）（1.2.2） {#more-information-captions-prerecorded}
 
-* [達成基準 1.2.2 について](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)。
-* [達成基準 1.2.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)。
+* [達成基準 1.2.2 について](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
+* [達成基準 1.2.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
-c
-* [W3C：同期されたマルチメディア](https://www.w3.org/AudioVideo/)。
-* [キャプション、トランスクリプトおよび音声解説（WebAIM）](https://webaim.org/techniques/captions/)。
+<!--
+* [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/).
+* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
 -->
 
 ### 音声解説または代替メディア（収録済み）（1.2.3） {#audio-description-or-media-alternative-prerecorded}
