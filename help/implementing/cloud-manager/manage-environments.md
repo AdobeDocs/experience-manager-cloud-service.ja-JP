@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '2430'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -26,13 +26,14 @@ ht-degree: 95%
 | **実稼動 + ステージ** | 実稼動環境とステージング環境はペアとして使用でき、それぞれ実稼動およびテストに使用されます。ステージ環境でパフォーマンスとセキュリティのテストを実施します。 規模は実稼動と同じです。 |
 | **開発** | 開発環境は、開発およびテストの目的で構築でき、実稼動以外のパイプラインにのみ関連付けることができます。開発環境は、ステージング環境や実稼動環境と同じ規模ではないので、パフォーマンスおよびセキュリティのテストの実行には使用しないでください。 |
 | **高速開発** | 高速開発環境（RDE）を使用すると、開発者は変更を迅速にデプロイしてレビューできます。この機能により、ローカル開発環境で既に検証済みの機能のテストに必要な時間が短縮されます。RDE の使用方法について詳しくは、[高速開発環境ドキュメント](/help/implementing/developing/introduction/rapid-development-environments.md)を参照してください。 |
-| **特殊試験環境** | 専用のテスト環境は、ほぼ実稼動状態で機能を検証する専用のスペースを提供し、ストレステストや高度なデプロイメント前のチェックに最適です。 [ 専用のテスト環境の追加 ](/help/implementing/cloud-manager/specialized-test-environment.md) を参照してください。 |
+| **特殊なテスト環境** | 専用のテスト環境は、ほぼ実稼動状態で機能を検証する専用のスペースを提供し、ストレステストや高度なデプロイメント前のチェックに最適です。 [専用のテスト環境の追加](/help/implementing/cloud-manager/specialized-test-environment.md)を参照してください。 |
 
 >[!NOTE]
 >
 >**専用テスト環境** 機能は、現在、非公開のベータプログラムでのみ使用できます。 プライベートベータ版に新規登録するには、[ 専用テスト環境 ](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment) を参照してください。
 
-個々の環境の機能は、その環境の [ プログラム ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) で有効になっているソリューションによって異なります。
+各環境の機能は、その環境の[プログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)で有効になっているソリューションによって異なります。
+
 
 * [Sites](/help/overview/introduction.md)
 * [Assets](/help/assets/overview.md)
@@ -110,9 +111,9 @@ ht-degree: 95%
 
 ### 複数の公開地域の編集 {#edit-regions}
 
-最初に追加の地域を指定しなかった場合は、環境の作成後、必要な使用権限が付与された後で指定できます。
+最初に追加の地域を指定しなかった場合、環境が作成され、必要な権限が付与された後に指定できます。
 
-また、追加の公開地域を削除することもできます。 ただし、1 つのトランザクションで行えるのは、地域の追加または削除のいずれかのみとなります。1 つの地域を追加し、1 つの地域を削除する必要がある場合は、まず追加して、変更を保存してから、削除します（または逆の順序）。
+また、追加の公開地域を削除することもできます。ただし、1 つのトランザクションで行えるのは、地域の追加または削除のいずれかのみとなります。1 つの地域を追加し、1 つの地域を削除する必要がある場合は、まず追加して、変更を保存してから、削除します（または逆の順序）。
 
 1. プログラムのプログラム概要コンソールから、実稼動環境の ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、メニューの「**編集**」を選択します。
 

@@ -11,7 +11,7 @@ hidefromtoc: true
 source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '529'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 
 # Edge Delivery パイプラインの追加 {#configure-production-pipeline}
 
-コードをビルドして実稼動環境にデプロイするためのEdge Delivery パイプラインを設定する方法について説明します。 本番パイプラインは、最初にコードをステージング環境にデプロイします。承認時に、同じコードが本番環境にデプロイされます。
+Edge Delivery パイプラインを設定し、コードをビルドして本番環境にデプロイする方法について説明します。本番パイプラインは、最初にコードをステージング環境にデプロイします。承認時に、同じコードが本番環境にデプロイされます。
 
 本番パイプラインを設定するには、ユーザーに&#x200B;**[デプロイメントマネージャー](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**&#x200B;の役割が必要です。
 
@@ -37,7 +37,7 @@ ht-degree: 94%
 >
 >初期設定後に、[パイプライン設定を編集](managing-pipelines.md)できます。
 
-## 新しいEdge Delivery パイプラインを追加します {#adding-production-pipeline}
+## 新しいEdge Delivery パイプラインを追加する {#adding-production-pipeline}
 
 [!UICONTROL Cloud Manager] UI を使用してプログラムをセットアップし、1 つ以上の環境を用意したら、次の手順に従って本番パイプラインを追加する準備が整います。
 

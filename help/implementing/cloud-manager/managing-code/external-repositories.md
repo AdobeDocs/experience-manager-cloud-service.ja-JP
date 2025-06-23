@@ -8,7 +8,7 @@ exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 source-git-commit: 26892959443a16203184f4a0798d9c7fdc75dd8f
 workflow-type: tm+mt
 source-wordcount: '2292'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -92,7 +92,7 @@ Cloud Manager での外部リポジトリの設定は、次の手順で構成さ
 
 検証後、外部リポジトリを使用してパイプラインにリンクする準備が整います。
 
-[ アクセストークンの管理 ](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md) も参照してください。
+[アクセストークンの管理](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)も参照してください。
 
 >[!TAB GitLab]
 
@@ -105,7 +105,7 @@ Cloud Manager での外部リポジトリの設定は、次の手順で構成さ
 
 検証後、外部リポジトリを使用してパイプラインにリンクする準備が整います。
 
-[ アクセストークンの管理 ](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md) も参照してください。
+[アクセストークンの管理](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)も参照してください。
 
 >[!TAB Bitbucket]
 
@@ -118,7 +118,7 @@ Cloud Manager での外部リポジトリの設定は、次の手順で構成さ
 
 検証後、外部リポジトリを使用してパイプラインにリンクする準備が整います。
 
-[ アクセストークンの管理 ](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md) も参照してください。
+[アクセストークンの管理](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)も参照してください。
 
 >[!TAB Azure DevOps]
 
@@ -131,7 +131,7 @@ Cloud Manager での外部リポジトリの設定は、次の手順で構成さ
 
 検証後、外部リポジトリを使用してパイプラインにリンクする準備が整います。
 
-[ アクセストークンの管理 ](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md) も参照してください。
+[アクセストークンの管理](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)も参照してください。
 
 >[!ENDTABS]
 

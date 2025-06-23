@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: ea0b204111a852a0243febbcf3f403987a6bfcc9
 workflow-type: tm+mt
 source-wordcount: '6281'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -341,11 +341,11 @@ ht-degree: 97%
             + [重要な検討事項](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [ユーザーマッピングツールの使用](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + コードリファクタリングツール {#refactoring-tools}
-      + [リファクタリングツールの概要](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
+      + [リファクタリングツール入門](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
       + [リファクタリングツールの概要](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
       + [Unified Experience](/help/journey-migration/unified-experience.md)
       + [Repository Modernizer](/help/journey-migration/refactoring-tools/repo-modernizer.md)
-      + [Repository Modernizer （CAM）](/help/journey-migration/refactoring-tools/repo-modernizer-cam.md)
+      + [Repository Modernizer（CAM）](/help/journey-migration/refactoring-tools/repo-modernizer-cam.md)
       + [インデックスコンバーター](/help/journey-migration/refactoring-tools/index-converter.md)
       + [アセットワークフローの移行](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
       + [AEM Dispatcher コンバーター](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
@@ -447,8 +447,8 @@ ht-degree: 97%
          + [構造の分析](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [コンテンツフラグメントのローンチ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
          + [コンテンツフラグメントコンソールのアセット](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
-         + [Adobe Journey Optimizerのコンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
-         + [コンテンツフラグメントAJO外部参照拡張機能](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
+         + [Adobe Journey Optimizer のコンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
+         + [コンテンツフラグメント AJO 外部参照拡張機能](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
          + [キーボードショートカット](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + サイト作成 {#site-creation}
          + [新しいサイトの作成](/help/sites-cloud/administering/site-creation/create-site.md)
@@ -1003,7 +1003,7 @@ ht-degree: 97%
          + [キャッシュオプション](/help/commerce-cloud/configuring/caching.md)
          + [カスタム HTTP ヘッダー](/help/commerce-cloud/configuring/custom-http-headers.md)
          + [買い物かごおよび Dispatcher の設定](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
-         + [コンポーネントとGraphQLのキャッシュのクリア](/help/commerce-cloud/configuring/clear-cache.md)
+         + [コンポーネントと GraphQL のキャッシュのクリア](/help/commerce-cloud/configuring/clear-cache.md)
       + 開発 {#developing}
          + [AEM Cloud Service SDK を使用した開発](/help/commerce-cloud/develop.md)
          + [CIF コンポーネントのスタイル設定](/help/commerce-cloud/customizing/style-cif-component.md)
@@ -1189,7 +1189,7 @@ ht-degree: 97%
    + [バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)
    + [バリエーションを生成](/help/generative-ai/generate-variations.md)
    + [アシスタント（ベータ版限定）](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [AEM Forms用 AI アシスタント（Forms Experience Builder）（早期導入）](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [AEM Forms 用 AI アシスタント（Forms Experience Builder）（早期導入）](/help/edge/docs/forms/forms-ai-assistant.md)
    + [AEM Forms AI アシスタント – プロンプトライブラリ](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + 実装 {#implementing}
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
