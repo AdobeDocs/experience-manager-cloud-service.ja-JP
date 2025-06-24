@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="プライベートベータ版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: 52e05be90dc1a4997c6b65306bc646d03456c971
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 82%
+source-wordcount: '403'
+ht-degree: 81%
 
 ---
 
@@ -45,11 +45,9 @@ Cloud Managerはアクセストークンを使用して、外部 Git プラッ�
 1. **アクセストークンの管理**&#x200B;ダイアログボックスで、トークン名の右側にある![編集アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)をクリックします。
 1. **アクセストークンを編集** ダイアログボックスで、**トークン名** または **アクセストークン** の値、あるいはその両方を更新します。
 
-   **アクセストークン** が現在使用中の場合は、関連するすべてのリポジトリが更新後に自動的に再検証されることを警告する通知が表示されます。
-
    ![アクセストークンの編集ダイアログボックス](/help/implementing/cloud-manager/managing-code/assets/access-tokens-edit.png)
 
-1. トークンが使用中の場合は、関連するすべてのリポジトリーが自動的に再検証されることを警告する通知が表示されます。
+1. **アクセストークン** が現在使用中の場合は、関連するすべてのリポジトリが更新後に自動的に再検証されることを警告する通知が表示されます。
 
 1. 「**更新**」をクリックして、変更を保存します。
 
