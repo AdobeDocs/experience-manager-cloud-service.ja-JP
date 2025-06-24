@@ -4,9 +4,9 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
-workflow-type: ht
-source-wordcount: '5993'
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
+workflow-type: tm+mt
+source-wordcount: '5981'
 ht-degree: 100%
 
 ---
@@ -375,7 +375,7 @@ ID フィールドは、AEM GraphQL で識別子としても使用されます�
 >[!NOTE]
 >
 >**標準メタデータと配列メタデータの違い**：
->`StringMetadata` と `StringArrayMetadata` はどちらも、リポジトリに格納されているものについての指定であり、その取得手段についての指定ではありません。
+>>`StringMetadata` と `StringArrayMetadata` はどちらも、リポジトリに格納されているものについての指定であり、その取得手段についての指定ではありません。
 >
 >例えば、`stringMetadata` フィールドを呼び出すと、リポジトリに `String` として格納されているすべてのメタデータの配列を受け取ることになります。一方、`stringArrayMetadata` を呼び出すと、リポジトリに `String[]` として格納されているすべてのメタデータの配列を受け取ります。
 
@@ -795,7 +795,6 @@ GraphQL のソリューションでは、次のことが可能です。
 * `flip`：HORIZONTAL、VERTICAL、HORIZONTAL_AND_VERTICAL の列挙
 * `quality`：画質の割合を示す 1～100 の整数
 * `width`：出力画像の幅を定義する整数ですが、画像ジェネレーターでは無視されます
-* `preferWebp`：webp が優先されるかどうかを示すブール値（デフォルト値は false）
 
 URL 変換は、パス別、リスト別またはページ分割別のすべてのクエリタイプで使用できます。
 
@@ -823,7 +822,6 @@ URL 変換は、パス別、リスト別またはページ分割別のすべて�
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -862,7 +860,6 @@ query ($seoName: String!) {
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -901,7 +898,6 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -1302,7 +1298,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
       * `_operator`：特定の演算子（`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`、`STARTS_WITH`）を適用します
          * [サンプルクエリ - 「Jobs」という名前を持たないすべての人物](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)を参照してください
-         * [サンプルクエリ - `_path` が特定のプレフィックスで始まるすべてのアドベンチャーを参照してください](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
+         * [サンプルクエリ - `_path` が特定の接頭辞で始まるすべてのアドベンチャーを参照してください](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
 
       * `_apply`：特定の条件（例：`AT_LEAST_ONCE`）を適用します
          * [サンプルクエリ - 少なくとも 1 回は現れる項目を含んだ配列をフィルタリング](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)を参照してください

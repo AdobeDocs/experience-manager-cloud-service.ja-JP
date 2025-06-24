@@ -3,10 +3,10 @@ title: Dynamic Media Prime と Ultimate
 description: Dynamic Media Prime と Ultimate の詳細、そのメリットおよび 2 つの違いについて説明します。
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 3d198ef51c399093da35a9d5821ee16e03fb0543
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 100%
+source-wordcount: '395'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Experience Manager as a Cloud Service を使用すると、Dynamic Media P
 
 ## Dynamic Media Prime {#dynamic-media-prime}
 
-Dynamic Media Prime は、Experience Manager Assets のアクティベーションサービスで、[OpenAPI を備えた Dynamic Media の基本機能](/help/assets/dynamic-media-open-apis-overview.md)を提供し、組織が AEM Assets をアドビまたはアドビ以外のアプリケーションと統合できるようにします。変換（回転、切り抜き、反転、サイズ、優先 WebP、高さ、幅、画質）と最適化された配信をサポートします。
+Dynamic Media Prime は、Experience Manager Assets のアクティベーションサービスで、[OpenAPI を備えた Dynamic Media の基本機能](/help/assets/dynamic-media-open-apis-overview.md)を提供し、組織が AEM Assets をアドビまたはアドビ以外のアプリケーションと統合できるようにします。変換（回転、切り抜き、反転、高さ、幅、品質）と最適化された配信をサポートしています。
 
 Dynamic Media の基本機能および高度な機能と、AEM as a Cloud Service の Dynamic Media ソリューションへのアクセスが必要な場合は、[Dynamic Media Ultimate](#dynamic-media-ultimate) を参照してください。
 
@@ -40,7 +40,7 @@ Dynamic Media Prime の他の主なメリットには、次のようなものが
 
 Dynamic Media Ultimate は、Experience Manager Assets のアクティベーションサービスであり、[OpenAPI を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) の基本機能および高度な機能と、[AEM as a Cloud Service の Dynamic Media ソリューション](/help/assets/dynamic-media/dynamic-media.md)が含まれています。これにより、組織は、グローバルでスケーラブルな、パフォーマンスが最適化されたネットワークを通じて、様々なバリエーションのリッチコンテンツをリアルタイムで生成し、配信できます。
 
-AEM Assets とアドビまたはアドビ 以外のアプリケーションの統合、変換（回転、切り抜き、反転、サイズ、優先 WebP、高さ、幅、画質）、最適化された配信などの Dynamic Media Prime の機能に加えて、Dynamic Media Ultimate では次の機能も提供します。
+Dynamic Media Ultimateは、AEM AssetsとAdobeまたはAdobe以外のアプリケーションとの統合、変換（回転、切り抜き、反転、高さ、幅、画質）、最適化された配信などの Dynamic Media Prime機能に加えて、次の機能も提供します。
 
 * [OpenAPI を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) 機能には、次のような高度な機能が含まれています。
 
