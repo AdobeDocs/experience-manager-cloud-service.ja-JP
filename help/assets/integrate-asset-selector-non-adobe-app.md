@@ -3,8 +3,8 @@ title: アセットセレクターと、アドビ以外のアプリケーショ�
 description: アセットセレクターを様々なアドビ、アドビ以外、サードパーティのアプリケーションと統合します。
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
-workflow-type: ht
+source-git-commit: 19a7d8089a3c33f2d066bcbb4b7a99e77777eb91
+workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 100%
 
@@ -150,7 +150,7 @@ Admin Console を使用してサポートチケットを記録する手順は次
             const container = document.getElementById('asset-selector');
 
             /// Use the PureJSSelectors in globals to render the AssetSelector/DestinationSelector component
-            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () => {
+            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () =>
                 const assetSelectorDialog = document.getElementById('asset-selector-dialog');
                 assetSelectorDialog.showModal();
             });
