@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
 source-git-commit: ad9592c705c7b26292a29b43997edadfa01ccb65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1321'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Edge 配信サービスを使用すると、次の操作を実行できます。
 >
 >**すぐに実践してみませんか？**
 >
->すぐに実践したい場合は、[aem.live のチュートリアルをチェックアウト ](https://www.aem.live/developer/ue-tutorial) することにより、30 分以内にAEM オーサリングを使用して独自のEdge Delivery Services プロジェクトを開始できます。
+>すぐに実践したい場合は、[aem.live のチュートリアルを参照する](https://www.aem.live/developer/ue-tutorial)ことにより、30 分以内にAEM オーサリングを使用して独自のEdge Delivery Services プロジェクトを開始できます。
 
 ## ビジネスニーズに対するアジャイルな対応 {#agile-reaction}
 
