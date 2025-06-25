@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '954'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -52,11 +52,11 @@ AEM as a Cloud Service の Cloud Manager 2025.6.0 のリリース日は 2025年6
   [パイプラインのお気に入りをマークする](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites)を参照してください。
 
 
-## プライベートベータプログラム {#private-beta-program}
+## Private Beta プログラム {#private-beta-program}
 
-Cloud Managerの非公開Beta プログラムに参加すると、一般リリース前に、今後の機能に排他的にアクセスできます。
+Cloud Manager の Private Beta プログラムに参加すると、一般リリース前の新機能に特別にアクセスできます。
 
-現在、次のプライベートベータ版の機会を利用できます。
+現在利用可能な Private Beta プログラムの機会は、次のとおりです。
 
 
 ### 特殊なテスト環境 {#specialized-test-environment}
