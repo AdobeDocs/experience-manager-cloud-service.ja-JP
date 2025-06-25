@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: d3cdc3d69c0002c5b124150050f905123457331c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '380'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -25,21 +25,21 @@ ht-degree: 53%
 ### 機能強化 {#enhancements-21193}
 
 * ASSETS-51245：タッチ UI の大規模なフォルダーリストのパフォーマンスが向上しました。
-* ASSETS-51686：簡単なジョブキャンセル、拡張ログ、大きな結果を得るための監査ダウンロードなど、一括操作ジョブの改善。
-* CQ-4360131:OpenAPI エンドポイントのエラー応答が改善され、API クライアントが正しい構造化エラー情報を受信できるようになりました。
+* ASSETS-51686：ジョブのキャンセルの簡素化、拡張ログ、大きな結果を得るための監査ダウンロードなど、一括操作ジョブの改善。
+* CQ-4360131：OpenAPI エンドポイントのエラー応答が改善され、API クライアントが正しい構造化エラー情報を受信できるようになりました。
 
 ### 修正された問題 {#fixed-issues-21193}
 
-* ASSETS-41007：削除されたアセットがContent Hubに表示されたままになる場合があります。
-* ASSETS-50994:AemRequestEventFilter が、過剰な Jetty スレッドの競合を引き起こしている。
+* ASSETS-41007：削除されたアセットが Content Hub に表示されたままになる場合がある。
+* ASSETS-50994：AemRequestEventFilter が、過剰な Jetty スレッドの競合を引き起こしている。
 * ASSETS-50155：重複メタデータの変更イベントがトリガーされる。
-* ASSETS-50716:Assets リスト表示でタイトルで並べ替えると、期待どおりに動作しません。
-* ASSETS-50820:Asset Relations API への無効なリクエストが 400 エラーで適切に却下されることを確認します。
-* ASSETS-50562：名前の競合が発生した場合、Asset Upload API はデフォルトでバージョンを作成する。
-* ASSETS-50992:Assets API initiateUpload.json エンドポイントは、「application/json」のコンテンツタイプを返す必要があります。
-* ASSETS-51322：非同期バリケードが、ジョブの失敗後も無期限に保持される場合、このバリケードの自動削除と期限切れ。
+* ASSETS-50716：Assets リスト表示でタイトルで並べ替えると、期待どおりに動作しない。
+* ASSETS-50820：Asset Relations API への無効なリクエストが 400 エラーで適切に却下されることを確認します。
+* ASSETS-50562：名前の競合が発生した場合、Asset Upload API はデフォルトの動作でバージョンを作成する必要があります。
+* ASSETS-50992：Assets API initiateUpload.json エンドポイントは、「application/json」のコンテンツタイプを返す必要があります。
+* ASSETS-51322：失敗したジョブの後に無期限に残る非同期バリケードを、自動的に削除して期限切れにします。
 * ASSETS-51809：ブラウザーのキャッシュが原因で、CSV エディターに最近保存された変更が表示されなかった。
-* SITES-31678：コンテキスト対応参照を含むエクスペリエンスフラグメント（XF）が、XF 公開 API で正しい言語ルートを解決しなかった。
+* SITES-31678：コンテキスト対応参照を含むエクスペリエンスフラグメント（XF）が、XF Publishing API で正しい言語ルートを解決しなかった。
 
 
 ### 既知の問題 {#known-issues-21193}
