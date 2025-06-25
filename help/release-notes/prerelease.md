@@ -4,10 +4,10 @@ description: プレリリースチャネルを使用して、AEM as a Cloud Serv
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
-source-git-commit: 36da09746f02daad82875329b0aa53ee4eb7c074
-workflow-type: ht
-source-wordcount: '889'
-ht-degree: 100%
+source-git-commit: e6567c965a026967e7a5baa67050eb5615979531
+workflow-type: tm+mt
+source-wordcount: '893'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Experience Manager as a Cloud Service では、定期的に新機能が提
 
 今後提供予定の機能は、通常、次の 2 つの方法のいずれかで利用できます。
 
-* 早期導入プログラムの一環として
+* Alpha、Betaまたは限定提供プログラムの一環として
 * プレリリースチャンネルの一部として
 
 このドキュメントでは、プレリリースチャンネルを有効にする方法について説明しています。プレリリースチャンネルでは、今後の AEM の機能リリースで導入予定の新機能を早期に利用することができます。これにより、新機能を事前に検証し、将来のリリースに備えて導入計画を立てることができます。AEMのリリーススケジュールについて詳しくは、[Adobe Experience Manager（AEM）as a Cloud Serviceのリリースノート ](/help/release-notes/home.md) を参照してください。
