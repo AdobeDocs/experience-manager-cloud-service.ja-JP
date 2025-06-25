@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 75816f35a8bca8356e17b13341c2ddbd850f8eff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2077'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 95%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -55,7 +55,7 @@ AEM Assets では [AI を使用して、タイトル、説明、キーワード�
 
 **Figma との統合**
 
-AEM Assets は Figma とネイティブに統合されているので、AEM Assets に保存されているアセットに Figma ユーザーインターフェイスから直接アクセスできます。AEM Assetsで管理されているコンテンツを Figma キャンバスに配置してから、新しいコンテンツや編集したコンテンツをAEM Assets リポジトリに保存することができます。 Figma コミュニティページで利用可能なAEM Assets コネクタにアクセスするには、[ ここ ](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector) をクリックします。
+AEM Assets は Figma とネイティブに統合されているので、AEM Assets に保存されているアセットに Figma ユーザーインターフェイスから直接アクセスできます。AEM Assets で管理されているコンテンツを Figma キャンバスに配置し、新しいコンテンツや編集したコンテンツを AEM Assets リポジトリに保存できます。Figma コミュニティページで利用可能な AEM Assets コネクタにアクセスするには、[ここ](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)をクリックします。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463828)
 
@@ -112,9 +112,9 @@ AEM Assets は Figma とネイティブに統合されているので、AEM Asse
 
 **AJO B2C と Dynamic Media のネイティブ統合&#x200B;**
 
-[Experience Manager (AEM) Dynamic Media とJourney Optimizer (AJO) B2C のネイティブ統合](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/combine/aem-dynamic)により、マーケターは AEM Dynamic Media アセット (レンディションおよび DM テンプレート) を AJO コンテンツに簡単に埋め込んで、チャネル間でのリアルタイムの更新と高度にパーソナライズされたエクスペリエンスを提供できます。
+[Experience Manager (AEM) Dynamic Media とJourney Optimizer (AJO) B2C のネイティブ統合](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic)により、マーケターは AEM Dynamic Media アセット (レンディションおよび DM テンプレート) を AJO コンテンツに簡単に埋め込んで、チャネル間でのリアルタイムの更新と高度にパーソナライズされたエクスペリエンスを提供できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3463783/?learn=on&enablevpops=&autoplay=true&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -201,7 +201,7 @@ OSGi プロパティ：
 
 ### 古いバージョンと監査ログのデフォルトのパージ {#mt-defaults}
 
-現在、コンテンツバージョンと監査ログは、関連付けられた *パージメンテナンスタスク* をデフォルトで無効にしているので、明示的に設定されない限り、データは削除されません。
+現在、コンテンツバージョンおよび監査ログは、関連する&#x200B;*パージメンテナンスタスク*&#x200B;がデフォルトで無効になっているので、明示的に設定されない限り、データは削除されません。
 
 ただし、リポジトリのパフォーマンスを最適化するために、**2025 年 6 月下旬**&#x200B;から次のガイドラインに従って、デフォルトでパージが有効になります。
 
@@ -216,12 +216,12 @@ OSGi プロパティ：
    * 過去 7 年間のすべてのバージョンが保持されます。
    * このデフォルトの高いしきい値によって、最近のデータが意図せずに削除されるのを防ぎます。ただし、リポジトリのパフォーマンスを最適化するには、小さい値を設定することをお勧めします。
 
-* 設定パイプラインを使用してデプロイされた YAML 設定を通じて、これらのデフォルトを変更できます。
+* これらのデフォルトは、設定パイプラインを使用してデプロイされた YAML 設定を通じて変更できます。
 
 #### 監査ログ {#mt-auditlogs}
 
 * **新しい環境** （今後作成され、個別に通知されます）：
-   * **7 日**&#x200B;より古いレプリケーション、DAM、ページ監査のログは、定期的に削除されます。
+   * **7 日**より古いレプリケーション、DAM、ページ監査のログは、定期的に削除されます。
 
    * デフォルトでは、すべてのイベントがログに記録されます。
 
@@ -230,7 +230,7 @@ OSGi プロパティ：
    * デフォルトでは、すべてのイベントがログに記録されます。
    * このデフォルトの高いしきい値によって、最近のデータが意図せずに削除されるのを防ぎます。ただし、リポジトリのパフォーマンスを最適化するには、小さい値を設定することをお勧めします。
 
-* 設定パイプラインを使用してデプロイされた YAML 設定を通じて、これらのデフォルトを変更できます。
+* これらのデフォルトは、設定パイプラインを使用してデプロイされた YAML 設定を通じて変更できます。
 
 詳しくは、[メンテナンスタスクに関する記事](/help/operations/maintenance.md#defaults)を参照してください。
 
