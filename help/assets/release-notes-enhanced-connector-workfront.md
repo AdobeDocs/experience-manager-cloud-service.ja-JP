@@ -4,10 +4,10 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] のリ
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
-workflow-type: ht
-source-wordcount: '1724'
-ht-degree: 100%
+source-git-commit: cb06380e4d3977f4f70a6444923cda2b0566d173
+workflow-type: tm+mt
+source-wordcount: '1761'
+ht-degree: 98%
 
 ---
 
@@ -52,13 +52,17 @@ ht-degree: 100%
 
 以下の節では、[!DNL Workfront for Experience Manager enhanced connector] の一般リリースノートの概要を説明します。
 
-[!DNL Workfront for Experience Manager enhanced connector] の最新バージョン 1.9.20 のリリース日は 2024年9月6日（PT）です。
+[!DNL Workfront for Experience Manager enhanced connector] の最新バージョン 1.9.21 のリリース日は 2025年6月25日（PT）です。
 
 ## リリースのハイライト {#release-highlights}
 
-[!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次のバグ修正が含まれています。
+[!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次の機能強化とバグ修正が含まれています。
 
-* 既存のアセットの新しいバージョンをアップロードして作成する際に、MIME タイプが失われます。
+* API リクエストのログ機能を改善して、認証エラーの偽陽性ログを回避しました。
+
+* Workfront API 呼び出しでの接続リークを修正しました。
+
+* Java 17 および Java 21 バージョンの 6.5 LTS でWorkfront拡張コネクタをサポート。
 
 >[!NOTE]
 >
@@ -75,6 +79,10 @@ ht-degree: 100%
 * 従来の Workfront エクスペリエンスを使用している場合、**[!UICONTROL 詳細]**&#x200B;ドロップダウンリストで選択できる「**[!UICONTROL 送信先]**」オプションでは、Experience Manager 内のターゲット宛先を選択できません。「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストを使用する場合、「**[!UICONTROL 送信先]**」オプションは正常に機能します。新しい Workfront エクスペリエンスの「**[!UICONTROL 詳細]**」ドロップダウンリストと「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストでは、「**[!UICONTROL 送信先]**」オプションは正常に機能します。
 
 ## 以前のリリース {#previous-releases}
+
+### 2024年9月リリース {#september-2024-release}
+
+* 既存のアセットの新しいバージョンをアップロードして作成する際に、MIME タイプが失われます。
 
 ### 2024年4月リリース {#april-2024-release}
 
