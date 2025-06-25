@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 1f6aabc76551340ed296571e14daf2a1ef557717
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3181'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -143,7 +143,7 @@ ht-degree: 96%
     <td>2025/8/31</td>
   </tr>
   <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
-    <td>Google Guava コアライブラリはCloud Serviceで非推奨（廃止予定）となりました。 <a href="#com.google.common">以下の削除に関するメモを参照してください。</a></td>
+    <td>Google Guava コアライブラリは Cloud Service で廃止されました。<a href="#com.google.common">以下の削除に関するメモを参照してください。</a></td>
     <td>2023/5/15</td>
     <td>2025/8/31</td>
   </tr>
@@ -363,16 +363,16 @@ Mongo client API をプロジェクトに追加します。
 * このバンドルをプロジェクトに追加
    * `org.mongodb:mongo-java-driver:3.12.7`
 
-必要に応じて、別のバージョンを選択することもできます。
+要件に応じて、別のバージョンを選択することもできます。
 
 ### `com.google.common*` の削除 {#com.google.common}
 
-Google Guava コアライブラリの使用を中止するか、プロジェクトに適切なバージョンを含めます。 多くの場合、このライブラリの使用方法は、JDK のコレクションクラスまたは Apache Commons Collections4 に置き換えることができます。 置き換えるバージョンが見つからない場合は、プロジェクトに最新バージョンのGoogle Guave コアライブラリを含めます。 古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
+Google Guava コアライブラリの使用を中止するか、プロジェクトに適切なバージョンを含めます。多くの場合、このライブラリの使用方法は、JDK のコレクションクラスまたは Apache Commons Collections4 に置き換えることができます。置き換えるバージョンが見つからない場合は、プロジェクトに最新バージョンの Google Guave コアライブラリを含めます。古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
 
 アクションリスト：
 
 * ACS AEM Commons を最新バージョン（6.11.0 以降）にアップデート
-* Google Guava コアライブラリの使用を JDK コレクションまたは Apache Commons Collections4 に置き換えます。
+* Google Guava コアライブラリの使用を JDK コレクションまたは Apache Commons Collections4 に置き換える
 * それでも必要な場合は、このバンドルをプロジェクトに追加します（バージョンを利用可能な最新のものに置き換えてください）。
    * `com.google.guava:guava:33.4.8-jre`
 
