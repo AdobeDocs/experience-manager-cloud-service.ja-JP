@@ -2,10 +2,10 @@
 title: コンテンツハブユーザーインターフェイスの設定
 description: コンテンツハブユーザーインターフェイスの設定
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: b12c650719ac6bcaed1e6181688e89df482132ad
-workflow-type: ht
-source-wordcount: '2110'
-ht-degree: 100%
+source-git-commit: fd45c1aadbbab7475becb94f9df27bbd5a1c165b
+workflow-type: tm+mt
+source-wordcount: '2121'
+ht-degree: 95%
 
 ---
 
@@ -113,7 +113,9 @@ Experience Manager Assets を使用すると、管理者はコンテンツハブ
 
 * [カスタムリンク](#configure-custom-links-content-hub)
 
-* [コレクションと共有](#configure-collections-sharing-content-hub)
+* [コレクションと共有](#configure-collections-content-hub)
+
+<!--* [Enable public link sharing](#enable-public-link-sharing)-->
 
 ### 読み込み {#configure-import-options-content-hub}
 
@@ -311,21 +313,33 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 ![コンテンツハブの設定 UI の「カスタムリンク」タブ](assets/configuration-ui-custom-link-tab.png)
 
-### コレクションと共有 {#configure-collections-sharing-content-hub}
+### コレクションと共有 {#configure-collections-content-hub}
 
-管理者は、コレクションを作成する際にユーザー権限を定義し、Content Hub ユーザーが公開リンクを生成できるようにします。これらの設定を有効にするには、次の手順に従います。
+管理者は、コレクションの作成時にユーザー権限を定義できます。 これらの設定を有効にするには、次の手順に従います。
 
-1. [設定](#access-configuration-options-content-hub)ユーザーインターフェイスで、「**[!UICONTROL コレクションと共有]**」をクリックします。
+1. [ 設定 ](#access-configuration-options-content-hub) ユーザーインターフェイスで、「**[!UICONTROL コレクション]**」をクリックします。
 
-1. **[!UICONTROL 読み取り専用コレクション]**&#x200B;切替スイッチを有効にすると、すべてのユーザーがアクセス可能ですが、作成者と管理者のみが編集できるコレクションを許可します。
+1. **[!UICONTROL 公開リンクを有効にする]** 切替スイッチを有効にして、外部ユーザーがContent Hubにログインせずにアセットにアクセスしてダウンロードするために使用できる公開リンクの作成を許可します。
 
-1. **[!UICONTROL 公開コレクション]**&#x200B;切替スイッチを有効にして、すべてのユーザーがアクセスおよび編集できるコレクションを許可します。
+1. **[!UICONTROL コレクションのみを表示]** 切替スイッチを有効にして、すべてのユーザーがアクセスできるが、作成者と管理者のみが編集できるコレクションを許可します。
 
-1. **[!UICONTROL 公開リンクを有効にする]**&#x200B;切替スイッチを有効にして、コンテンツハブユーザーが公開リンクを生成できるようにします。
+1. **[!UICONTROL 公開コレクション]** 切替スイッチを有効にして、すべてのユーザーがアクセスおよび編集できるコレクションを許可します。 **[!UICONTROL コレクションのみを表示]** および **[!UICONTROL 公開コレクション]** の切り替えが無効になっている場合、デフォルトでは、管理者以外のユーザーは非公開コレクションのみを作成できます。
 
 1. 「**[!UICONTROL 保存]**」をクリックして、変更内容を適用します。
 
-   ![コンテンツハブの「コレクションの設定」タブ](assets/collections-link-sharing.png)
+   ![コンテンツハブの「コレクションの設定」タブ](assets/collections-and-sharing.png)
 
+<!--
+### Enable public link sharing {#enable-public-link-sharing}
 
-   コレクションとアセットの共有について詳しくは、[Content Hubでのコレクションの管理 ](/help/assets/collections-content-hub.md) および [ でのアセットの共有  [!DNL Content Hub]](share-assets-content-hub.md) を参照してください。
+Enable the following setting on the Configurations user interface to allow Content Hub users to generate a public link:
+
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Collections and Sharing]**.
+
+1. Enable the **[!UICONTROL Enable Public Link]** toggle and click **[!UICONTROL Save]** to apply the changes.
+
+    ![Enable public link sharing in Content Hub](assets/enable-public-link-sharing-tab.png)
+
+-->
+
+詳しくは、[ [!DNL Content Hub]](share-assets-content-hub.md) でのアセットの共有を参照してください。
