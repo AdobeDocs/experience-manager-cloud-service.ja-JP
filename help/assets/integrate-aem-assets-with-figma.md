@@ -4,7 +4,7 @@ description: ' [!DNL AEM Assets]  と  [!DNL Figma]  を統合して、デザイ
 hide: false
 role: User
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: 41fc6cc1c852c25215a804c2d1f9c5872a46e0a4
+source-git-commit: 2644c849df32af14c70e686a803b690996812046
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 11%
@@ -58,9 +58,9 @@ ht-degree: 11%
 
 * [!DNL AEM Assets] を [!DNL Figma] と統合するには、有効な [!DNL AEM Assets] ライセンスと [!DNL Figma] ライセンスが必要です。
 
-## [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタへのアクセス &#x200B;]{#access-aem-assets-connector}
+## [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタへのアクセス ]{#access-aem-assets-connector}
 
-次の手順を実行して、[!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ &#x200B;] にアクセスします。
+次の手順を実行して、[!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ ] にアクセスします。
 
 1. [!DNL Figma] ホームページで、キャンバスの下部にあるツールバーの **[!UICONTROL アクション]** をクリックし、ダイアログボックスで使用できる検索バーで [!DNL Adobe Experience Manager (AEM) Assets Connector] を検索します。
 1. 「[!DNL Adobe Experience Manager (AEM) Assets Connector]」を選択すると、[!DNL Adobe Experience Manager (AEM) Assets Connector] パネルが表示されます。 このパネルを使用して [ [!DNL AEM]  アセットをキャンバスに読み込み ](#import-aem-assets-into-figma-workflow) す  [!DNL Figma] 。
@@ -74,9 +74,9 @@ ht-degree: 11%
 
 ## [!DNL AEM] アセットのキャンバスへ [!DNL Figma] 読み込み{#import-aem-assets-into-figma-workflow}
 
-[!DNL Figma] デザインインターフェイス内の [1&rbrace;Adobe Experience Manager（AEM）Assets Connector] パネルにアクセス (#access-aem-assets-connector) て、次の手順を実行します。
+[!DNL Figma] デザインインターフェイス内の [1}Adobe Experience Manager（AEM）Assets Connector] パネルにアクセス ](#access-aem-assets-connector) て、次の手順を実行します。[!UICONTROL 
 
-1. [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ &#x200B;] パネルでアセットを検索します。 詳しくは、[ アセットセレクターの使用 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector) を参照してください。
+1. [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ ] パネルでアセットを検索します。 詳しくは、[ アセットセレクターの使用 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector) を参照してください。
 
 1. アセットをキャンバスにドラッグ&amp;ドロップするか、アセットを選択して **[!UICONTROL 選択]** をクリックして、アセットをキャンバスに移動します。
 
@@ -101,4 +101,3 @@ Figma デザインの準備が整ったら、[ アセットをAEM Assets リポ�
 
 * [!DNL AEM] アセットを Figma に読み込む場合、サポートされる形式は **JPEG**、**PNG** です。
 * [!DNL Figma] から [!DNL AEM Assets] にデザインを書き出す場合、サポートされている形式は **PNG**、**PDF**、**JPG**、**SVG** です。
-
