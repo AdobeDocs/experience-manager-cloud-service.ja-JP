@@ -69,15 +69,17 @@ ht-degree: 8%
    >[!NOTE]
    > 
    > **[!UICONTROL メタデータのインポートForms]** で、フォーム名の横にあるテーブル **[!UICONTROL 複製]** ラベルは、フォームが [!DNL Assets View] 内のフォルダーに既に適用されていることを示します。 重複したフォームを読み込むと、フォルダーに適用されている既存のフォームが上書きされます。 この上書きを回避するには、フォームを読み込む前に名前を変更します。 フォーム名をクリックして名前を変更します。
-1. （[!UICONTROL  フォルダー関連付け ] の下にある）フォルダー名の横の ![ フォルダーを選択 ](/help/assets/assets/x.svg)」をクリックして、フォームとのフォルダーの関連付けを削除します。
+1. （[!UICONTROL &#x200B; フォルダー関連付け &#x200B;] の下にある）フォルダー名の横の ![ フォルダーを選択 ](/help/assets/assets/x.svg)」をクリックして、フォームとのフォルダーの関連付けを削除します。
 1. ![ フォルダーを選択 ](/help/assets/assets/add-to-folder.svg) をクリックして、対応するメタデータフォームを割り当てるフォルダーを選択します。
 1. 赤い円をクリックすると、インポートから除外されたサポートされていないメタデータコンポーネントまたはフォーム内のマッピングに関する詳細が表示されます。
    ![ メタデータFormsの読み込みページ ](/help/assets/assets/unsupported-import-elements.png)
 1. テーブル内の 1 つ以上のフォームを選択し、**[!UICONTROL 読み込みの開始]** をクリックして、メタデータフォームとそれに関連するフォルダーを [!DNL Assets View] に読み込みます。 処理メッセージが表示されます（例：3 つのメタデータフォームの *読み込み。 お待ちください。*）。読み込みが完了すると、フォームが正常に読み込まれたことを示す成功メッセージが表示され、（[!DNL Assets View] の） **[!UICONTROL メタデータForms]** ページには、最近読み込まれたフォームと、[!DNL Assets View] で使用可能な既存のフォームの両方が表示されます。 このページでは、次の操作を実行できます。
-   * 列見出しをクリックして、[!UICONTROL  名前 ]、[!UICONTROL  変更済み ]、または [!UICONTROL  作成者 ] でテーブルを並べ替えます。
+   * 列見出しをクリックして、[!UICONTROL &#x200B; 名前 &#x200B;]、[!UICONTROL &#x200B; 変更済み &#x200B;]、または [!UICONTROL &#x200B; 作成者 &#x200B;] でテーブルを並べ替えます。
    * 読み込んだフォームを選択し、「**[!UICONTROL フォルダーから削除]**」をクリックしてフォルダーパスのフォルダー名を確認し、フォルダーが正しく移植されていることを確認します。
+
      ![ メタデータフォームページの確認 ](/help/assets/assets/confirm-ported-folder.png)
    * 読み込んだフォームを選択し、**[!UICONTROL 編集]** をクリックして、メタデータフォームのサポート対象のすべての設定を表示します。 メタデータフォーム、そのコンポーネントおよびフィールドについて詳しくは、[ メタデータFormsの設定 ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) を参照してください。
+
      ![ メタデータフォームページの確認 ](/help/assets/assets/verify-metadata-forms-page.png)
 
 ## 読み込んだメタデータフォームの確認{#Verify-the-imported-metadata-forms}
