@@ -1,20 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート。'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.5.0 リリースのリリースノート。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.5.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: ad23b8328f155ac56b4163ce90f3f0818e7e76c9
+source-git-commit: df16d5c7ee666f563cf4bbc861df4210318f7f36
 workflow-type: tm+mt
-source-wordcount: '1332'
-ht-degree: 89%
+source-wordcount: '2108'
+ht-degree: 98%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の 2025.5.0 リリースノート {#release-notes}
 
-以下のセクションでは、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンの機能リリースノートの概要について説明します。
+以下の節では、[!DNL Experience Manager] as a Cloud Service の 2025.5.0 バージョンの機能リリースノートの概要について説明します。
 
 >[!NOTE]
 >
@@ -28,37 +26,112 @@ ht-degree: 89%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.6.0）のリリース日は 2025年6月26日です。次回の機能リリース（2025.7.0）は 2025年7月31日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.5.0）のリリース日は 2025年6月5日です。次回の機能リリース（2025.6.0）は 2025年6月26日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
 最新のメンテナンスリリースノートについては、[こちら](/help/release-notes/maintenance/latest.md)をご覧ください。
 
-<!-- 
+## リリースビデオ {#release-video}
 
-## Release Video {#release-video}
+2025.5.0 リリースで追加された機能の概要については、2025年5月リリースの概要ビデオをご覧ください。
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Assets ビューでのメタデータフォーム管理の強化**
+**AI 生成のメタデータ**
 
-管理者ビューからAssets ビューにメタデータフォームを直接読み込めるようになりました。 Assets ビューでこれらのフォームに更新を加えると、管理ビューに自動的に反映され、両方のエクスペリエンスで一貫性が保たれます。 この機能を使用すると、既存のメタデータ設定の継続性を維持しながら、新しいAssets ビューにシームレスに移行できます。
+AEM Assets では [AI を使用して、タイトル、説明、キーワードなどのメタデータが自動生成されるようになりました ](/help/assets/metadata-assets-view.md#ai-smart-tags)。これらの AI で生成されたフィールドは、メタデータの精度を高め、アセットの検索、分類および推奨を容易にします。このアプローチでは、手動でのタグ付けが不要なために効率が向上するだけでなく、大量のデジタルコンテンツ間の一貫性とスケーラビリティも確保できます。
 
-![AI 生成のメタデータ](/help/assets/assets/import-metadata-forms-page.png)
+![AI 生成のメタデータ](/help/assets/assets/enhanced-smart-tags.png)
+
+**Figma との統合**
+
+AEM Assets は Figma とネイティブに統合されているので、AEM Assets に保存されているアセットに Figma ユーザーインターフェイスから直接アクセスできます。AEM Assets で管理されているコンテンツを Figma キャンバスに配置し、新しいコンテンツや編集したコンテンツを AEM Assets リポジトリに保存できます。Figma コミュニティページで利用可能な AEM Assets コネクタにアクセスするには、[ここ](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)をクリックします。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463828)
+
 
 ### コンテンツハブの新機能 {#new-features-content-hub}
+
+**属性ベースのアクセス制御の概要（ABAC）**
+
+[コンテンツハブで、アセットへのアクセスについてルールベースの制限を適用できるようになりました](/help/assets/attribute-based-access-control.md)。アセット権限によりガバナンスが確保され、関連するアセットのみがユーザーからアクセスできるようになります。
+
+アセット制限ルールはメタデータに基づいており、ルールで定義された条件がアセットメタデータに一致する場合、アセットはユーザーグループに表示されます。
+
+属性ベースのアクセス制御の主なメリットには、次のようなものがあります。
+
+* 権限に対するフォルダー構造への依存が排除される
+
+* 管理者がアセットをアップロードし、遡及的に権限構造を決定できる
+
+* 重複の数を減らす – アセットの整合性を向上させます。同じアセットが異なるグループと共有される場合は、フォルダーベースの権限で重複が必要になります。
+
+**UI ブランディング**
+
+コンテンツハブでは、管理者がプライマリカラーとセカンダリカラーに加え、バナー画像、バナータイトル、本文などの[ブランド固有の要素を使用してユーザーインターフェイスをカスタマイズ](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub)できます。これらの機能強化により、ブランドの一貫性の確保、ユーザーのオンボーディングの簡素化、信頼の構築が可能になります。
+
+![UI ブランディング](/help/assets/assets/content-hub-ui-branding.png)
+
+**公開リンクの共有**
+
+コンテンツハブでは、外部のユーザーがアプリケーションにアクセスすることなくアセットのメタデータを表示したり、アセットをダウンロードしたりできるように[共有可能なリンクを生成](/help/assets/share-assets-content-hub.md##share-assets)できるようになりました。
+
+![UI ブランディング](/help/assets/assets/public-and-private-link.png)
 
 **コレクションに関するガバナンス**
 
 コンテンツハブでは、[作成中のコレクションへのアクセスを制御し、許可されたユーザーのみがグループ化されたアセットを表示または管理できるようになりました](/help/assets/collections-content-hub.md##create-collections)。これにより、セキュリティの強化、共同作業の向上、アセットの組織的な管理、ガバナンスの効率化が実現します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
+
+>[!NOTE]
+>
+>コレクションに関するガバナンスは提供が限定される機能です。サポートチケットを作成して、有効にすることができます。
+
+**複数のアセットを ZIP としてダウンロードする**
+
+また、Content Hubではファイル管理を簡単にする個別のファイルとしてではなく、[選択したアセットとそのレンディションを ZIP ファイルでダウンロード](/help/assets/download-assets-content-hub.md#download-asset-renditions) できるようになりました。
+
+**コンテンツハブにおける Dynamic Media のレンディション**
+
+すべての [Dynamic Media プリセットレンディションおよびダウンロード用のスマート切り抜きには、コンテンツハブのユーザーインターフェイス内から直接アクセスできます](/help/assets/download-assets-content-hub.md#download-asset-renditions)。
+
+![Dynamic Media レンディション](/help/assets/assets/dm-renditions-content-hub.png)
+
+### Dynamic Media の新機能 {#new-features-dynamic-media}
+
+**AJO B2C と Dynamic Media のネイティブ統合&#x200B;**
+
+[Experience Manager (AEM) Dynamic Media とJourney Optimizer (AJO) B2C のネイティブ統合](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic)により、マーケターは AEM Dynamic Media アセット (レンディションおよび DM テンプレート) を AJO コンテンツに簡単に埋め込んで、チャネル間でのリアルタイムの更新と高度にパーソナライズされたエクスペリエンスを提供できます。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
+
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### プレリリース機能
+
+* [ユニバーサルエディター - フォームフラグメント](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)：ユニバーサルエディターでは、アダプティブフォームのフォームフラグメントを作成して再利用できるようになりました。これらのフラグメントは、一度作成したら複数のフォームに適用できる、再利用可能なフォームセクション（連絡先の詳細、同意フィールドなど）です。この機能により、フォームの作成が効率化され、一貫性が確保され、オーサリングの効率が向上します。
+
+* [SharePoint ドキュメントライブラリ - 添付ファイルを元のファイル名で保存](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library)：フォームの添付ファイルを SharePoint ドキュメントライブラリに保存する際に、元のファイル名を使用して保存するオプションが追加されました。この機能強化により、アップロードしたファイルの識別と管理が簡素化されます。
+
+* **ルールエディター**：
+   * [「When」句のクリックイベントを含むバイナリ条件](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor)：ルールエディターでは、ボタンクリックイベント（_Is Clicked_）を「When」句内の他の条件と組み合わせることができるようになりました。これにより、ユーザーの操作やその他の要因に基づいて、ルールの実行をより正確に制御できます。メモ：複数の条件を使用する場合、クリックイベントを最初の条件としてリストする必要があります。
+   * [フィールドとパネルの検証条件](/help/forms/rule-editor-core-components-usecases.md)：ルールエディターに _IsValid_ 条件と _IsNotValid_ 条件が含まれるようになりました。これらを使用すると、特定のフィールドまたはパネル全体（水平タブ、垂直タブ、アコーディオン、ウィザードなどのレイアウトを含む）の検証ステータスを確認できるので、検証結果に基づいてフォームのナビゲーションとユーザーエクスペリエンスが向上します。
+* [SharePoint リストの範囲管理の改善](/help/forms/connect-forms-to-sharepoint-list.md)：SharePoint サイトでは、/sites や /teams などのすべての管理パスをサポートするようになりました。この機能強化により、様々な SharePoint サイト構造をまたいで幅広い統合が可能になり、組織のコンテンツに接続する際の柔軟性が向上します。
+* [SharePoint リストへのレコードのドキュメントの保存のサポート](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields)：SharePoint リストベースのフォームデータモデル（FDM）を使用して作成したフォームでは、レコードのドキュメントのバインド参照フィールドプロパティを設定して、レコードのドキュメント（DoR）を SharePoint リストに保存できるようになりました。この機能強化により、サポートされているフォームデータとドキュメントの SharePoint ストレージとのシームレスな統合が可能になります。
+
+### AEM Forms の早期アクセス機能 {#forms-new-early-access-features}
+
+AEM Forms 早期アクセスプログラムでは、最先端のイノベーションに排他的にアクセスし、その開発に貢献できるユニークな機会を提供します。
+
+このリリースノートでは、現在のリリースで提供されるイノベーションのリストを示します。 早期アクセスプログラムで利用可能なイノベーションの完全なリストについては、[AEM Forms 早期アクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
+
+#### Adobe Experience Platform（AEP）と Forms の統合
+
+Forms と AEP 間の統合機能が、早期導入者向けに提供されるようになりました。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
@@ -104,7 +177,7 @@ OSGi プロパティ：
 
 **Java 11 ランタイム** は廃止となり、大半の環境はよりパフォーマンスの高い **Java 21 ランタイム**&#x200B;にアップグレードされています。
 
-サポートされていない依存関係が原因で、環境をアップグレードできなかった場合（[Java 21 ランタイム要件 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) を参照）、次の具体的な手順を記載したメールがAdobeから届いています。 **2025 年 8 月 28 日**&#x200B;までに必要な更新がすべて完了していることを確認してください。これにより、中断することなく環境をアップグレードできます。
+サポートされていない依存関係が原因で環境をアップグレードできなかった場合 ([Java 21 ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)を参照) は、次の具体的な手順を記載したメールが Adobeから届いているはずです。**2025 年 8 月 28 日**&#x200B;までに必要な更新がすべて完了していることを確認してください。これにより、中断することなく環境をアップグレードできます。
 
 注：ランタイムバージョンは、コードのビルドバージョンとは別のものです。Java 21 を使用してビルドすることをお勧めしますが、Java 11 ビルドは引き続きサポートされています。Java 11 ビルドの廃止に関する通知は、今後共有される予定です。
 
@@ -112,7 +185,7 @@ OSGi プロパティ：
 
 4 月のリリースノートに記載されているように、AEMの Java ログは、すべてのお客様の環境で信頼性の高い監視を確実に行うために、標準に従う必要があります。ログ形式、出力ファイル、デフォルトログレベルの変更といったカスタムログ設定は、サポートされなくなりました。ログはデフォルトファイルにダイレクトされ続け、AEM 製品コードのデフォルトログレベルは保持される必要があります。 詳しくは、[ログに関する記事](/help/implementing/developing/introduction/logging.md#configuration-loggers)を参照してください。
 
-**8 月下旬**&#x200B;から、サポートされていないカスタムログの上書きは無視されるようになります。アドビの分析に基づけば、ほとんどのお客様に影響はなく、現在の設定が影響を受ける可能性があるお客様にはAdobeから連絡しています。
+**8 月下旬**&#x200B;から、サポートされていないカスタムログの上書きは無視されるようになります。Adobe の分析によると、ほとんどのお客様は影響を受けることはありません。現在の設定が影響を受ける可能性があるお客様には直接連絡します。
 
 カスタムログ動作に依存するダウンストリームプロセスを確認し、更新してください。例：
 
@@ -123,7 +196,7 @@ OSGi プロパティ：
 
 現在、コンテンツバージョンおよび監査ログは、関連する&#x200B;*パージメンテナンスタスク*&#x200B;がデフォルトで無効になっているので、明示的に設定されない限り、データは削除されません。
 
-ただし、リポジトリのパフォーマンスを最適化するために、**2025 年 7 月上旬** 以降、次のガイドラインに従って、デフォルトでパージが有効になります。
+ただし、リポジトリのパフォーマンスを最適化するために、**2025 年 6 月下旬**&#x200B;から次のガイドラインに従って、デフォルトでパージが有効になります。
 
 #### コンテンツのバージョン {#mt-content}
 
