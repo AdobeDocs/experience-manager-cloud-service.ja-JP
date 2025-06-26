@@ -3,8 +3,8 @@ title: Content Hub からのアセットのダウンロード
 description: 1 つまたは複数のアセットとそのレンディションを Content Hub ポータルからダウンロードする方法について説明します。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 809c0e780959340964933b13c8a347157f1dc17e
-workflow-type: ht
+source-git-commit: 9636fbf2ca78f001e08ef281f3d7ea3bfc212387
+workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 100%
 
@@ -83,7 +83,7 @@ ht-degree: 100%
    >[!NOTE]
    >
    >* レンディションは、[[!UICONTROL 設定]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)ユーザーインターフェイスを使用して表示が有効になっている場合にのみ表示されます。
-   >* [!DNL [Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) へのアクセス権を持つユーザーは、動的およびスマート切り抜きレンディションを表示およびダウンロードできます。
+   >* [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) へのアクセス権を持つユーザーは、動的およびスマート切り抜きレンディションを表示およびダウンロードできます。
    >* ライセンスのプレビューは、アセットが [!DNL Assets as a Cloud Service] オーサリング環境を使用して承認された場合にのみ表示されます。詳しくは、[コンテンツハブのライセンス済みアセットの管理](/help/assets/manage-licensed-assets-on-content-hub.md)を参照してください。
 
 <!--
