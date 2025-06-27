@@ -6,10 +6,10 @@ docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 0656e923c4b50d0554780ecf56dd08302a165fa9
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 100%
+source-wordcount: '1113'
+ht-degree: 88%
 
 ---
 
@@ -30,7 +30,6 @@ AEM Forms as a Cloud Service のアダプティブフォームのコアコンポ
 
 * 既存の Cloud Service 環境に[コアコンポーネントベースのアダプティブフォームを作成](creating-adaptive-form-core-components.md)するオプションがある場合、アダプティブフォームのコアコンポーネントとヘッドレスアダプティブフォームはお使いの環境で既に有効になっています。また、コアコンポーネントベースのアダプティブフォームを、アダプティブフォームのヘッドレス表現を必要とするチャネル（モバイル、web、ネイティブアプリ、サービスなど）に、ヘッドレスフォームとして提供できます。
 
-
 ## アダプティブフォームコアコンポーネントとヘッドレスアダプティブフォームを有効にする {#enable-headless-forms}
 
 AEM Forms as a Cloud Service 環境でアダプティブフォームコアコンポーネントとヘッドレスアダプティブフォームを有効にするには、以下の手順をリスト順に実行します。
@@ -39,7 +38,7 @@ AEM Forms as a Cloud Service 環境でアダプティブフォームコアコン
 ![コアコンポーネントとヘッドレスアダプティブフォームの有効化](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 
-## 1. AEM Forms as a Cloud Service Git リポジトリを複製 {#clone-git-repository}
+## &#x200B;1. AEM Forms as a Cloud Service Git リポジトリを複製 {#clone-git-repository}
 
 1. [Cloud Manager](https://my.cloudmanager.adobe.com/) にログインし、組織とプログラムを選択します。
 
@@ -59,7 +58,7 @@ AEM Forms as a Cloud Service 環境でアダプティブフォームコアコン
    プロンプトが表示されたら、資格情報を入力します。リポジトリがローカルコンピューターに複製されます。
 
 
-## 2. Git リポジトリにアダプティブフォームコアコンポーネントの依存関係を追加 {#add-adaptive-forms-core-components-dependencies}
+## &#x200B;2. Git リポジトリにアダプティブフォームコアコンポーネントの依存関係を追加 {#add-adaptive-forms-core-components-dependencies}
 
 1. プレーンテキストコードエディターで Git リポジトリフォルダーを開きます。例：VS Code。
 1. `[AEM Repository Folder]\pom.xml` ファイルを編集用に開きます。
@@ -276,7 +275,7 @@ AEM Forms as a Cloud Service 環境でアダプティブフォームコアコン
 
 1. ファイルを保存して閉じます。
 
-## 3. 更新したコードをビルドしてデプロイ
+## &#x200B;3. 更新したコードをビルドしてデプロイ
 
 更新したコードをローカルの開発環境と Cloud Service 環境にデプロイして、両方の環境でコアコンポーネントを有効にします。
 
@@ -357,6 +356,13 @@ AEM Forms as a Cloud Service 環境でアダプティブフォームコアコン
 
    依存関係が存在する場合、お使いの環境でアダプティブフォームのコアコンポーネントが有効になります。
 
+### コアコンポーネントベースのフォームがプロジェクトでレンダリングに失敗するのはなぜですか？
+
+コアコンポーネントベースのフォームは、Forms コアコンポーネントパッケージとプロジェクトアーキタイプに含まれるバージョンの間のバージョン不一致が原因でレンダリングに失敗する場合があります。 この問題は、通常、プロジェクトアーキタイプで指定されたバージョンが、Forms コアコンポーネントパッケージにバンドルされているバージョン以上である場合に発生します。 この問題を解決するには、次のいずれかの操作を行います。
+
+* プロジェクトアーキタイプでは、Forms コアコンポーネントパッケージの下位バージョンを使用します。
+* 必要なバージョンが既にFormsに含まれているので、AEM as a Cloud Service コアコンポーネントの依存関係をプロジェクトアーキタイプから削除します。 Forms コアコンポーネントパッケージは、リリース 20133 以降のAEM as a Cloud SDKにバンドルされています（例：`AEM SDK v2025.3.20133.20250325T063357Z-250300`）。
+
 >[!MORELIKETHIS]
 >
->* [アダプティブフォームを作成](/help/forms/creating-adaptive-form-core-components.md)
+>* [アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
