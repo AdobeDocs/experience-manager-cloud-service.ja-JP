@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 23ee3857bb0440ba9f386002b859217d0b5f8f37
-workflow-type: ht
-source-wordcount: '1476'
-ht-degree: 100%
+source-git-commit: fddd57877f2e4e98f0b89b496eedc25ce741d8f1
+workflow-type: tm+mt
+source-wordcount: '1574'
+ht-degree: 93%
 
 ---
 
@@ -101,3 +101,4 @@ AEM as a Cloud Service では、サーバーサイドルールを適用すると
 | コマース統合フレームワーク呼び出しの除外 | 除外済み | 二重カウントを避けるために、AEM に対して行われたリクエストで、Commerce Integration Framework に転送されます（URL は `/api/graphql` で始まります）。これらは Cloud Service の請求対象ではありません。 |
 | `manifest.json` を除外 | 除外済み | マニフェストは API 呼び出しではありません。ここでは、デスクトップまたは携帯電話に web サイトをインストールする方法に関する情報を提供します。アドビは `/etc.clientlibs/*/manifest.json` に対する JSON リクエストをカウントするべきではありません |
 | `favicon.ico` を除外 | 除外済み | 返されるコンテンツを HTML や JSON にしないでください。ただし、SAML 認証フローなどの特定のシナリオでは、favicon が HTML として返されることが確認されています。その結果、favicon はカウントから明示的に除外されます。 |
+| エクスペリエンスフラグメント（XF） – 同じドメインの再利用 | 除外済み | 同じドメインでホストされるページから XF パス（`/content/experience-fragments/...` など）に対して行われるリクエスト（リクエストホストに一致するリファラーヘッダーで識別される）。例え <br><br>、同じドメインからバナーまたはカードの XF を取り込む `aem.customer.com` 上のホームページ。<br><br>・ URL が/content/experience-fragments/...<br> と一致します・ リファラードメインが一致します `request_x_forwarded_host`<br><br>**注意：** エクスペリエンスフラグメントのパスがカスタマイズされている場合（例えば、`/XFrags/...` や `/content/experience-fragments/` 以外のパスを使用している場合）、リクエストは除外されず、同じドメインであってもカウントされる場合があります。 Adobeの標準 XF パス構造を使用して、除外ロジックが正しく適用されるようにすることをお勧めします。 |
