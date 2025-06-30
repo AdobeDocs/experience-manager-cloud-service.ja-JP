@@ -5,9 +5,9 @@ exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: c2f1660552d32f3dae9418e7dfc2d4f1ab8cc3c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '429'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -40,9 +40,9 @@ ht-degree: 84%
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
 ```
 
-## ページを開く機能の無効化 {#open-page}
+## 「ページを開く」の無効化 {#open-page}
 
-「**ページを開く**」ボタンは、次のメタデータを追加することで、アプリ内で完全に抑制できます。
+次のメタデータを追加することで、「**ページを開く**」ボタンを完全にアプリ内で抑制できます。
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="header-open-page" />
@@ -50,7 +50,7 @@ ht-degree: 84%
 
 ## 「複製」ボタンの無効化 {#duplicate-button}
 
-オーサリングワークフローによっては、コンテンツ作成者の機能をコンポーネントの重複に制限する必要が生じる場合があります。 [ 複製 ](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) アイコンを無効にするには、次のメタデータを追加します。
+オーサリングワークフローによっては、コンテンツ作成者がコンポーネントを複製する機能を制限する必要がある可能性があります。次のメタデータを追加することで、[複製アイコン](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)を無効にすることができます。
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="duplicate"/>
@@ -58,7 +58,7 @@ ht-degree: 84%
 
 ## エンドポイントの変更 {#custom-endpoint}
 
-アドビがホストするユニバーサルエディターサービスを使用しない場合は、これはメタタグで設定できます。 詳しくは、ドキュメント [AEMのユニバーサルエディターの概要 ](/help/implementing/universal-editor/getting-started.md##configuration-settings) を参照してください。
+アドビがホストするユニバーサルエディターサービスではなく、独自にホストするバージョンを使用する場合は、メタタグでこれを設定できます。詳しくは、[AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md##configuration-settings)ドキュメントを参照してください。
 
 ## コンポーネントのフィルタリング {#filtering-components}
 

@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 3288edacba909335f8109eee7e1e793abe5a8343
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '555'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -30,10 +30,10 @@ ht-degree: 90%
 ![ページの公開](assets/publish-menu.png)
 
 1. ユニバーサルエディターで、[ユニバーサルエディターのツールバーにある「**公開**」アイコン](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)をタップまたはクリックします。
-1. [ プレビューサービス ](/help/sites-cloud/authoring/sites-console/previewing-content.md) を使用できる場合は、**[プレビュー](/help/sites-cloud/authoring/sites-console/previewing-content.md)** （使用可能な場合）または **公開** にコンテンツを公開する場所を選択できます。
+1. [プレビューサービス](/help/sites-cloud/authoring/sites-console/previewing-content.md)が使用可能な場合は、コンテンツを公開する場所として「**[プレビュー](/help/sites-cloud/authoring/sites-console/previewing-content.md)**」（使用可能な場合）または「**公開**」を選択できます。
 1. 「**項目**」セクションには、公開に含まれる次のコンテンツが一覧表示されます。
    * **新規**：まだ公開されていない項目。
-   * **変更済み** 公開されたが、前回の公開以降に変更されたコンテンツ。
+   * **変更済み**：公開されたが、前回の公開以降に変更されたコンテンツ。
    * **公開済み**：公開済みで、その公開以降に変更されていないコンテンツ。
 
    必要に応じて、これらの項目の横にあるチェックボックスをタップまたはクリックして、公開対象に含めるか除外します。「**拡張**」をタップまたはクリックすると、3 つのカテゴリの合計に含まれる個々の項目が表示され、個別に含めたり除外したりできます。
@@ -46,7 +46,7 @@ ht-degree: 90%
 
 >[!NOTE]
 >
->プレビュー用に公開するオプション [ 無効にすることができます ](/help/implementing/universal-editor/customizing.md#publish-preview) は、エディターに表示されない場合があります。
+>「プレビューへの公開」オプションは[無効にすることができ](/help/implementing/universal-editor/customizing.md#publish-preview)、その場合はエディターに表示されない可能性があります。
 
 ## ユニバーサルエディターからのコンテンツの非公開 {#unpublishing-content}
 

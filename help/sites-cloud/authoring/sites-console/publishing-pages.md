@@ -1,14 +1,14 @@
 ---
 title: Sites コンソールからのページの公開
-description: Sites コンソールを使用してページを公開および非公開にする方法について説明します。
+description: Sites コンソールを使用して、ページを公開および非公開にする方法について説明します。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 5ad91a32d705ef61e8b9799bf7fb1e136bb8bfa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1635'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -19,17 +19,17 @@ ht-degree: 89%
 
 この操作は、ページの公開と呼ばれます。パブリッシュ環境からページを削除する場合は、ページの非公開と呼ばれます。ページは、公開／非公開を切り替えても、削除するまでは、さらなる変更に備えてオーサー環境で使用できます。
 
-[**Sites** コンソール ](/help/sites-cloud/authoring/sites-console/introduction.md) を使用して、ページを直ちに公開/非公開にすることも、後で事前定義済みの日時に公開/非公開にすることもできます。
+[**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)を使用して、ページの公開または非公開は、即座に行うこともできますし、後で定義済みの日時に行うこともできます。
 
 >[!TIP]
 >
 >Sites コンソール以外の場所から公開できます。
 >
->* [ ページエディターから ](/help/sites-cloud/authoring/page-editor/publishing.md)
->* [ ユニバーサルエディターから ](/help/sites-cloud/authoring/universal-editor/publishing.md)
->* [ エクスペリエンスフラグメントから ](/help/sites-cloud/authoring/fragments/experience-fragments.md) コンソールまたはエディター
+>* [ページエディターから](/help/sites-cloud/authoring/page-editor/publishing.md)
+>* [ユニバーサルエディターから](/help/sites-cloud/authoring/universal-editor/publishing.md)
+>* [エクスペリエンスフラグメント](/help/sites-cloud/authoring/fragments/experience-fragments.md)コンソールまたはエディターから
 >
->これらの場所から公開する場合は、提供されるオプションは異なりますが、ここで説明する同様の手順と一般的なアイデアに従います。
+>これらの場所からの公開では様々なオプションが提供されますが、こちらで説明する同様の手順と一般的な考え方に従います。
 
 ## 用語 {#terminology}
 
@@ -59,8 +59,8 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 >
 >次の場合、ページの順序は保証されません:。
 >
->* 子ページのみが公開用に選択されている場合（注文情報が親ページに保持されるので）
->* 親ページと子ページが別々のアクションで公開される場合
+>* （順序情報は親ページに保持されるので）子ページのみを公開用に選択する場合
+>* 親ページと子ページを別のアクションで公開する場合
 
 ## Sites コンソールからのページの公開 {#publishing-from-the-sites-console}
 
@@ -121,7 +121,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
      >[!TIP]
      >
-     >公開するコンテンツをスケジュールすると、コンテンツがレプリケートされ、公開ワークフローに従います。 既に公開済みのコンテンツを非公開にせずに一時的に非表示にする場合は、ページプロパティで [**オンタイム** と **オフタイム** を使用できることを検討してください。](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
+     >コンテンツの公開をスケジュール設定すると、コンテンツがレプリケートされ、公開ワークフローが考慮されます。既に公開済みのコンテンツを非公開にせずに一時的に非表示にする場合は、ページプロパティで使用可能な&#x200B;[**オンタイム**&#x200B;と&#x200B;**オフタイム**&#x200B;が考慮されます。](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
    ![公開を管理でのオプション](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -198,7 +198,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 ## ページを非公開にする {#unpublishing-pages}
 
-ページを非公開にすると、そのページが公開または [ プレビュー ](/help/sites-cloud/authoring/sites-console/previewing-content.md) 環境から削除され、読者からアクセスできなくなります。
+ページを非公開にすると、そのページが公開または[プレビュー](/help/sites-cloud/authoring/sites-console/previewing-content.md)環境から削除され、読者からアクセスできなくなります。
 
 [「公開を管理」オプションを使用して公開する](#manage-publication)場合と同様に、「公開を管理」オプションを使用して非公開にできます。
 

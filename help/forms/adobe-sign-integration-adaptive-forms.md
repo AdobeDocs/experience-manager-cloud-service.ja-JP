@@ -6,9 +6,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
 source-git-commit: 82a3016149645701abe829ad89c493f480956267
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2195'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=ja) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms#adobe-acrobat-sign-for-government) |
 | AEM as a Cloud Service | この記事 |
 
 [!DNL Adobe Acrobat Sign] により、アダプティブフォームや AEM ワークフローの電子サインワークフローを有効にできます。電子サインを使用すると、法務、販売、給与、人事管理など、様々な分野におけるドキュメント処理ワークフローが改善されます。
@@ -34,7 +34,7 @@ ht-degree: 99%
 
 [!DNL Adobe Acrobat Sign] を [!DNL AEM Forms] に統合するには、以下の設定が必要になります。
 
-1. 有効な [Adobe Acrobat Sign開発者アカウント。](https://www.adobe.com/acrobat/business/developer-form.html)
+1. アクティブな [Adobe Acrobat Sign 開発者アカウント](https://www.adobe.com/acrobat/business/developer-form.html)。
 1. [Adobe Acrobat Sign API アプリケーション](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)。
 1. [!DNL Adobe Acrobat Sign] API アプリケーションの資格情報（クライアント ID およびクライアントの秘密鍵）。
 1. （行政 ID に基づいた認証の場合のみ）行政 ID 認証による[認証方法を有効にします](https://helpx.adobe.com/jp/sign/using/adobesign-authentication-government-id.html#AuditReport)。
@@ -84,7 +84,7 @@ ht-degree: 99%
 
    各パラメーターの意味は次のとおりです。
 
-   **na1** は、デフォルトのデータベースシャードを参照します。データベースシャードの値を更新することができます。[!DNL &#x200B; Adobe Acrobat Sign] クラウド設定で、[正しいシャード](https://helpx.adobe.com/jp/sign/using/identify-account-shard.html)をポイントしていることを確認します。
+   **na1** は、デフォルトのデータベースシャードを参照します。データベースシャードの値を更新することができます。[!DNL  Adobe Acrobat Sign] クラウド設定で、[正しいシャード](https://helpx.adobe.com/jp/sign/using/identify-account-shard.html)をポイントしていることを確認します。
 
    >[!NOTE]
    >
@@ -225,7 +225,7 @@ Adobe Acrobat Sign for Government Solutions チームには、AEM Forms と Adob
 
    各パラメーターの意味は次のとおりです。
 
-   **na1** は、デフォルトのデータベースシャードを参照します。データベースシャードの値を更新することができます。[!DNL &#x200B; Adobe Acrobat Sign] クラウド設定で、[正しいシャード](https://helpx.adobe.com/jp/sign/using/identify-account-shard.html)をポイントしていることを確認します。
+   **na1** は、デフォルトのデータベースシャードを参照します。データベースシャードの値を更新することができます。[!DNL  Adobe Acrobat Sign] クラウド設定で、[正しいシャード](https://helpx.adobe.com/jp/sign/using/identify-account-shard.html)をポイントしていることを確認します。
 
    >[!NOTE]
    >

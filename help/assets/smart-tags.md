@@ -5,9 +5,9 @@ feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 source-git-commit: e253445d04889390ea9bf34df4ab14a9583d78aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2457'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM でタグ付けなしのアセット {#smart-tag-existing-assets}
 
-DAM 内の既存または古いアセットに対しては、スマートタグが自動的には付けられません。手動でアセットを[再処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ja#adjusting-load)して、スマートタグを生成する必要があります。プロセスが完了したら、フォルダー内の任意のアセットの[!UICONTROL プロパティ]ページに移動します。自動的に追加されたタグは、「[!UICONTROL 基本]」タブの[!UICONTROL スマートタグ]セクションに表示されます。適用されたこれらのスマートタグは、[信頼性スコア](#confidence-score)の降順で並べ替えられます。
+DAM 内の既存または古いアセットに対しては、スマートタグが自動的には付けられません。手動でアセットを[再処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load)して、スマートタグを生成する必要があります。プロセスが完了したら、フォルダー内の任意のアセットの[!UICONTROL プロパティ]ページに移動します。自動的に追加されたタグは、「[!UICONTROL 基本]」タブの[!UICONTROL スマートタグ]セクションに表示されます。適用されたこれらのスマートタグは、[信頼性スコア](#confidence-score)の降順で並べ替えられます。
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -212,7 +212,7 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 *  Helps your assets to become organized and categorized.
 -->
 
-## AI で生成されたメタデータを使用したコンテンツ検出の強化 {#ai-smart-tags}
+## AI で生成されたメタデータによるコンテンツ検出の強化 {#ai-smart-tags}
 
 AI は、手動の入力に依存するのではなく、デジタルアセットに説明的なタグを自動的に割り当てます。これらの AI で生成されたタグは、メタデータの品質を向上させ、アセットの検索、分類および推奨を容易にします。このアプローチでは、手動でのタグ付けが不要なために効率が向上するだけでなく、大量のデジタルコンテンツ間の一貫性とスケーラビリティも確保できます。例えば、アセットが画像の場合、AI はアセット内のオブジェクト、シーン、感情、さらにはブランドロゴを識別し、「夕日」、「ビーチ」、「休暇」、「笑顔」など、関連するタグを生成できます。 AI が生成するコンテンツは、セマンティック検索とレキシカル検索の両方の技術を活用することで、アセットの検索精度を向上させることができます。詳しくは、[Assets の検索](search-assets.md)を参照してください。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
@@ -222,15 +222,15 @@ AI は、手動の入力に依存するのではなく、デジタルアセッ�
 
 AI で生成されたメタデータを有効にするには：
 
-* 最低限必要なAEMのリリースバージョンは `20626` です。
+* AEM のリリースバージョン `20626` 以上が必要です。
 
-* GenAI Rider 契約に署名する必要があります。 詳しくは、Adobe担当者にお問い合わせください。
+* GenAI Rider 契約に署名する必要があります。詳しくは、アドビ担当者にお問い合わせください。
 
   >[!IMPORTANT]
   >
-  > AI が生成したアセットのタイトルは、アセットのタイトルを定義していない場合にのみ、アセットカードに表示されます。 指定したアセットタイトルは上書きされません。
+  > アセットのタイトルを定義していない場合にのみ、AI で生成されたアセットのタイトルがアセットカードに表示されます。指定したアセットタイトルは上書きされません。
 
-### AI が生成したメタデータの使用 {#using-ai-generated-smart-tags}
+### AI で生成されたメタデータの使用 {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >

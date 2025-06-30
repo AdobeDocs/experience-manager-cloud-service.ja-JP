@@ -6,9 +6,9 @@ exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
 source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '569'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ AEM の統合された拡張性のある特性により、プロジェクトの�
 
 ## ページエディターを使用した WYSIWYG オーサリング {#page-editor}
 
-これは、何千もの web サイトで試され、信頼されてきた、従来のAEM プロジェクトのコンテンツをオーサリングするための従来のエディターです。
+これは、従来の AEM プロジェクトでコンテンツをオーサリングするための従来のエディターです。何千もの web サイトで実証され、信頼されています。
 
 ![AEM ページエディター](assets/authoring-methods-page-editor.png)
 

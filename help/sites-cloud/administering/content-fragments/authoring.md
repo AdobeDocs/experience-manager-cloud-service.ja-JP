@@ -6,9 +6,9 @@ role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
 source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2824'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 99%
 
 >[!WARNING]
 >
->この節で説明しているエディターは *統合シェル* 内で [ のみ ](/help/overview/aem-cloud-service-on-unified-shell.md) 使用できます。つまり *オンライン* Adobe Experience Manager（AEM）as a Cloud Serviceは、ローカルインスタンスではありません。
+>この節で説明するエディターは、[統合シェル](/help/overview/aem-cloud-service-on-unified-shell.md)、つまり、ローカルインスタンスではなく、*オンライン*&#x200B;の Adobe Experience Manager（AEM）as a Cloud Service で&#x200B;*のみ*&#x200B;使用できます。
 
 ## コンテンツフラグメントエディター {#content-fragment-editor}
 
@@ -267,7 +267,7 @@ ht-degree: 99%
 
   >[!CAUTION]
   >
-  >同期を使用できるのは、***メイン**&#x200B;からバリエーションに*&#x200B;変更内容をコピーする場合のみです。
+  >同期を使用できるのは、***メイン**からバリエーションに*&#x200B;変更内容をコピーする場合のみです。
   >
   >*バリエーションから&#x200B;**メイン***への変更内容を転送することはオプションとして使用できません。
 

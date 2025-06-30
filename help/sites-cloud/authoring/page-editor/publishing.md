@@ -1,20 +1,20 @@
 ---
 title: ページエディターを使用したコンテンツの公開
-description: ページエディターによるコンテンツの公開方法を説明します。
+description: ページエディターでのコンテンツの公開方法について説明します。
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 5871e04d3bd78bdd8df55d42e7619c98ea3f38ca
-workflow-type: tm+mt
+exl-id: dc11ac02-2a8d-4d82-ae10-e0fb97025063
+source-git-commit: 0fcdea7803110156d589ab6bbf960373f212747d
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
+# Sites エディターを使用したコンテンツの公開 {#publishing}
 
-# サイトエディターを使用したコンテンツの公開 {#publishing}
-
-ページエディターによるコンテンツの公開方法を説明します。
+ページエディターでのコンテンツの公開方法について説明します。
 
 ## ページエディターからの公開 {#publishing-from-the-page-editor}
 
@@ -47,15 +47,15 @@ ht-degree: 82%
 
 >[!NOTE]
 >
->エディターで[エイリアス](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)を使用してアクセスしたページは公開できません。エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
+>エディターで[エイリアス](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)を使用してアクセスしたページは公開できません。エディターの「公開」オプションは、実際のパスを介してアクセスしたページでのみ使用できます。
 
-## ページエディターから非公開にする {#unpublishing}
+## ページエディターからの非公開 {#unpublishing}
 
-ページエディターを使用してページを編集する際に、そのページを非公開にする場合、**ページを公開** する際と同じように **ページ情報** メニューで [ ページを非公開 ](#publishing-from-the-editor) を選択します。
+ページエディターを使用してページを編集する際に、そのページを非公開にする場合、[ページを公開](#publishing-from-the-editor)する際と同じように、**ページ情報**&#x200B;メニューで「**ページを非公開**」を選択します。
 
 >[!NOTE]
 >
->エディターで[エイリアス](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)を使用してアクセスしたページは、非公開にできません。エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
+>エディターで[エイリアス](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)を使用してアクセスしたページは、非公開にできません。エディターの「公開」オプションは、実際のパスを介してアクセスしたページでのみ使用できます。
 
 ## Sites コンソールからの公開と非公開 {#publishing-sites-console}
 

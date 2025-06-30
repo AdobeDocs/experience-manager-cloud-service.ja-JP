@@ -5,9 +5,9 @@ exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1138'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ _Experience Manager Developer Tools for Eclipse_ は、Apache License 2 に従�
 AEM Developer Tools を使用する前に、次の作業が必要です。
 
 * [Eclipse IDE for Enterprise Java™ Developers](https://www.eclipse.org/downloads/packages/) をダウンロードしてインストールします。
-* [Eclipse に関する FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) の説明に従って、`eclipse.ini` 設定ファイルを編集し、ヒープメモリが 1 GB 以上になるように Eclipse を設定します。
+* [Eclipse に関する FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) の説明に従って、`eclipse.ini` 設定ファイルを編集し、ヒープメモリが 1 GB 以上になるように Eclipse インストールを設定します。
 
 >[!NOTE]
 >

@@ -1,20 +1,20 @@
 ---
 title: ページエディターの制限事項
-description: ページエディターは、オーバーレイを利用して iframe 内に閉じ込められたコンテンツを操作します。 この操作には、エディターの使用と開発者に対していくつかの制限事項があります。
+description: ページエディターでは、オーバーレイを使用して iframe 内に含まれるコンテンツを操作します。この操作には、エディターの使用と開発者に対していくつかの制限事項があります。
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 8b38e26b16c1fb565f122777f0577d332f62c39c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '312'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
 # ページエディターの制限事項 {#editor-limitations}
 
-[ ページエディター ](/help/sites-cloud/authoring/page-editor/introduction.md) は、オーバーレイを利用して iframe 内に閉じ込められたコンテンツを操作します。 この操作には、エディターの使用と開発者に対していくつかの制限事項があります。このページでは、これらの制限事項をまとめ、可能な限り解決策や回避策を提供します。
+[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)では、オーバーレイを使用して iframe 内に含まれるコンテンツを操作します。この操作には、エディターの使用と開発者に対していくつかの制限事項があります。このページでは、これらの制限事項をまとめ、可能な限り解決策や回避策を提供します。
 
 ## 機能の制限事項 {#functional-limitations}
 

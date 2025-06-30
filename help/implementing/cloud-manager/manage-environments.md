@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2430'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->**専用テスト環境** 機能は、現在、非公開のベータプログラムでのみ使用できます。 プライベートベータ版に新規登録するには、[ 専用テスト環境 ](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment) を参照してください。
+>**特殊なテスト環境**&#x200B;機能は現在、Private Beta プログラムでのみ使用できます。Private Beta に新規登録するには、[特殊なテスト環境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)を参照してください。
 
 各環境の機能は、その環境の[プログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)で有効になっているソリューションによって異なります。
 

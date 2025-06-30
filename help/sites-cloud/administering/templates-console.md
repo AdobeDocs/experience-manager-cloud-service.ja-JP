@@ -6,9 +6,9 @@ feature: Administering
 role: User
 exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
 source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '857'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ ht-degree: 97%
 
 ## プロパティ {#properties}
 
-テンプレートの [ プロパティ ](/help/sites-cloud/authoring/page-editor/templates.md) は、ページプロパティを [ 編集するのと同じ方法で編集できます。テンプレ ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) トのプロパティには次のものがあります。
+[テンプレートのプロパティ](/help/sites-cloud/authoring/page-editor/templates.md)は、ページプロパティの編集と同じ方法で編集できます。[](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)テンプレートのプロパティには次のようなものがあります。
 
 * テンプレートのタイトル
 * 説明

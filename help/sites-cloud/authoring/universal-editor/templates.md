@@ -6,7 +6,7 @@ feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
 source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
 ht-degree: 100%
 

@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: ae1dedc3d0533205decc08d396c5a844c4525ba2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '635'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ ht-degree: 95%
 
 ページの差分によって、期待どおりに差分が検出されない場合があります。
 
-* [Edge Delivery Servicesで使用するために作成されたページを区別する場合 ](/help/edge/overview.md) 比較しやすいように、ページを並べて表示しますが、ページの違いは強調表示されません。
+* [Edge Delivery Services](/help/edge/overview.md) で使用するために作成されたページを比較する場合、比較しやすいようにページが並べて表示されますが、差分はハイライト表示されません。
 * バージョンおよびローンチが異なる場合、差分は、パンくずリスト、メニュー、製品リストまたはロゴ（コンテンツのレンダリングでサイト構造に依存するコンポーネント）などの動的コンポーネントは考慮されません。
 * バージョンの差分表示では、アクセスコントロールポリシーおよびライブコピー関係は再現されません。
 * ページを移動すると、移動前に作成したバージョンとの差分を実行できなくなります。

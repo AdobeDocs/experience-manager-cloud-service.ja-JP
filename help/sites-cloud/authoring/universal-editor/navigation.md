@@ -6,9 +6,9 @@ feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
 source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1782'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -185,7 +185,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 #### ページを開く {#open-page}
 
-「ページを開く」アイコンを選択すると、現在編集中のページをエディターなしで独自のブラウザータブで開いて、コンテンツをプレビューできます。
+「ページを開く」アイコンを選択すると、現在編集中のページをエディターを使用せずに独自のブラウザーで開き、内容をプレビューできます。
 
 ![アプリのプレビューを開く](assets/open-app-preview.png)
 
@@ -199,7 +199,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 >[!NOTE]
 >
->「ページを開く」ボタン [ 無効にすることができます ](/help/implementing/universal-editor/customizing.md#open-page) が、エディターに表示されない場合があります。
+>「ページを開く」ボタンは[無効にすることができ](/help/implementing/universal-editor/customizing.md#open-page)、その場合はエディターに表示されない可能性があります。
 
 #### 公開 {#publish}
 
@@ -213,7 +213,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 >[!NOTE]
 >
->「公開」ボタン [ 無効にすることができます ](/help/implementing/universal-editor/customizing.md#disable-publish) は、エディターに表示されない場合があります。
+>「公開」ボタンは[無効にすることができ](/help/implementing/universal-editor/customizing.md#disable-publish)、その場合はエディターに表示されない可能性があります。
 
 #### 省略記号 {#ellipsis}
 
@@ -270,7 +270,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 ![コンテンツツリーモード](assets/content-tree-mode.png)
 
 * コンテンツツリー内の項目を選択する場合、エディターはそのコンテンツまでスクロールして選択します。
-* コンテンツツリーで項目をダブルクリックすると、エディターがそのコンテンツまでスクロールして選択し、関連するプロパティも [ プロパティモード ](#properties-mode) で開きます。
+* コンテンツツリー内の項目をダブルクリックする場合、エディターはそのコンテンツまでスクロールして選択し、関連するプロパティを[プロパティモード](#properties-mode)で開きます。
 
 ![コンテンツツリー](assets/content-tree.png)
 

@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: d2cd112de034ca6ea22590245fb480622acf258a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1338'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->スタイルシステムは、ページエディターで作成されたページにのみ適用されます。
+>スタイルシステムは、ページエディターで作成したページにのみ適用されます。
 >
->[ ユニバーサルエディター ](/help/implementing/universal-editor/introduction.md) で作成され、[Edge Delivery Services](/help/edge/overview.md) で提供されたページのスタイル設定は、GitHub プロジェクトを通じて完全に行うことができます。
+>[ユニバーサルエディター](/help/implementing/universal-editor/introduction.md)で作成され、[Edge Delivery Services](/help/edge/overview.md) で提供されるページのスタイル設定は、すべて GitHub プロジェクトを通じて行うことができます。
 
 ## ユースケース {#use-case}
 

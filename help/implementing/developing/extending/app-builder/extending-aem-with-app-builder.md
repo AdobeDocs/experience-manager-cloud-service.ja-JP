@@ -5,9 +5,9 @@ exl-id: 50d82745-5deb-4bfa-961b-714842403601
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 00a05b3bdc1a689947c1507847da99b54c94dcac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '488'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -33,18 +33,18 @@ App Builder を使用すると、次のような様々なユースケースで A
 
 標準のソリューションではなく、Adobe Developer App Builder では、AEM などのアドビクラウドソリューションを拡張するための、一貫性のある標準化された共通の開発プラットフォームを提供します。例えば、次のようなものがありす。
 
-* Adobe Developer Console - カスタムマイクロサービスおよび拡張機能の開発の場合、開発者は、必要なすべてのツールや API にアクセスしながら、プロジェクトを構築および管理して、プラグインや統合を作成できます。
-* 開発者ツール – 開発者がカスタムの拡張機能や統合を簡単に構築できるオープンソースツール、SDK およびライブラリです。 React Spectrum（アドビの UI ツールキット）を使用すると、すべてのアドビアプリに共通の 1 つのユーザーインターフェイスを利用できます。
-* サービス - Adobeのサーバーレスプラットフォームでインフラストラクチャをホスティングするための I/O Runtime や、イベントベースの統合用の I/O Events があります。 また、データやファイルの保存も標準でサポートされています。
-* Adobe Experience Cloud – 開発者は、拡張機能や統合機能を送信して、Experience Cloud組織内で公開できます。その後、システム管理者がこれらの拡張機能を確認、管理および承認できます。 App Builder のカスタム拡張機能およびツールは、公開されると、他の Adobe Experience Cloud アプリと一緒に表示されます。
+* Adobe Developer Console - カスタムマイクロサービスおよび拡張機能の開発の場合、開発者は、プラグインや統合の作成に必要なすべてのツールと API を利用しながら、プロジェクトを構築および管理できます。
+* 開発者ツール - 開発者がカスタムの拡張機能や統合を容易に構築できるオープンソースのツール、SDK およびライブラリです。React Spectrum（アドビの UI ツールキット）を使用すると、すべてのアドビアプリに共通の 1 つのユーザーインターフェイスを利用できます。
+* サービス - アドビのサーバーレスプラットフォーム上でインフラストラクチャをホスティングするための I/O Runtime や、イベントベースの統合のための I/O Events があります。また、データやファイルの保存も標準でサポートされています。
+* Adobe Experience Cloud - 開発者は、拡張機能や統合を送信して Experience Cloud 組織内で公開できます。その後、システム管理者がこれらの拡張機能を審査、管理および承認できます。App Builder のカスタム拡張機能およびツールは、公開されると、他の Adobe Experience Cloud アプリと一緒に表示されます。
 
 次の図は、Application Builder 上で構築された標準アプリケーションでこれらの機能がどのように利用されているかを示しています。
 
 ![アーキテクチャ](/help/implementing/developing/extending/assets/appbuilder-architecture.jpg)
 
-App Builderのアーキテクチャについて詳しくは、[ アーキテクチャの概要 ](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview) を参照してください。
+App Builder のアーキテクチャについて詳しくは、[アーキテクチャの概要](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview)を参照してください。
 
-## App Builder の基本を学ぶ {#additional-resources}
+## App Builder の概要 {#additional-resources}
 
 アドビが作成した入門ドキュメントを使用して、Application Builder の基本を学ぶことができます。
 

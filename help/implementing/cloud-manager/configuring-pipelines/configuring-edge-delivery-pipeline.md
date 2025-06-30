@@ -5,13 +5,13 @@ index: false
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="プライベートベータ版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 hide: true
 hidefromtoc: true
 source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '529'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

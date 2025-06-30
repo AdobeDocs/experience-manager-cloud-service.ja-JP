@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
 source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '395'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 96%
 
 アダプティブフォームフラグメントは、フォームの作成時に使用できるフィールドのグループまたはフィールドのグループを含むパネルです。これを使用してフォームを簡単にすばやく作成できます。サイドバーのアセットブラウザーを使用して、アダプティブフォームフラグメントをフォームにドラッグ＆ドロップし、それをフォームエディターで編集できます。
 
-アダプティブ Formsの作成者に向けて、[!DNL AEM Forms] パッケージには REFERENCE FRAGMENTS という参照用のフラグメント [!DNL AEM FORMS] 用意されています。 次のフラグメントが含まれています。
+アダプティブフォームの作成者に向けて、[!DNL AEM Forms] パッケージ [!DNL AEM FORMS] REFERENCE FRAGMENTS で参照用のフラグメントが提供されています。次のフラグメントが含まれています。
 
 * アドレス
 * 連絡先情報
