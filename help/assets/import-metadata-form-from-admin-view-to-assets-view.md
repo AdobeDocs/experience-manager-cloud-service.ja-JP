@@ -48,7 +48,7 @@ ht-degree: 0%
    * 読み込んだフォームを選択し、「**[!UICONTROL フォルダーから削除]**」をクリックしてフォルダーパスのフォルダー名を確認し、フォルダーが正しく移植されていることを確認します。
 
      ![ メタデータフォームページの確認 ](/help/assets/assets/confirm-ported-folder.png)
-   * 読み込んだフォームを選択し、**[!UICONTROL 編集]** をクリックして、メタデータフォームのサポート対象のすべての設定を表示します。 メタデータフォーム、そのコンポーネントおよびフィールドについて詳しくは、[ メタデータFormsの設定 ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) を参照してください。
+   * 読み込んだフォームを選択し、**[!UICONTROL 編集]** をクリックして、メタデータフォームのサポート対象のすべての設定を表示します。 メタデータフォーム、そのコンポーネントおよびフィールドについて詳しくは、[ メタデータFormsの設定 ](https://experienceleague.adobe.com/ja/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) を参照してください。
 
    ![ メタデータフォームページの確認 ](/help/assets/assets/verify-metadata-forms-page.png)
 
@@ -57,8 +57,8 @@ ht-degree: 0%
 メタデータフォームを [!DNL Admin View] から [!DNL Assets View] に読み込んだ後、次の手順に従って読み込みを検証します。
 
 1. 読み込んだメタデータフォームに関連付けられている任意のフォルダーに移動します。
-1. [ アセットの詳細ページに移動し ](/help/assets/navigate-assets-view.md#preview-assets) サポートされているメタデータコンポーネント、コンポーネントフィールド、フィールド値が [!DNL Admin View] から同期されていることを確認します。 メタデータコンポーネント、コンポーネントフィールド、フィールド値について詳しくは、[Assets Essentials のメタデータ ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata) の記事を参照してください。
+1. [ アセットの詳細ページに移動し ](/help/assets/navigate-assets-view.md#preview-assets) サポートされているメタデータコンポーネント、コンポーネントフィールド、フィールド値が [!DNL Admin View] から同期されていることを確認します。 メタデータコンポーネント、コンポーネントフィールド、フィールド値について詳しくは、[Assets Essentials のメタデータ ](https://experienceleague.adobe.com/ja/docs/experience-manager-assets-essentials/help/metadata) の記事を参照してください。
 
    >[!NOTE]
    >
-   > [[!DNL Assets View]  詳細ページ ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) または [[!DNL Admin View]  プロパティページ ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/metadata-schemas) では、メタデータプロパティの値の変更は、2 つのインターフェイス間で自動的に同期されます。 ただし、フィールドの追加や削除、その他の変更など、フォームの構造の変更は同期されません。
+   > [[!DNL Assets View]  詳細ページ ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) または [[!DNL Admin View]  プロパティページ ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/administer/metadata-schemas) では、メタデータプロパティの値の変更は、2 つのインターフェイス間で自動的に同期されます。 ただし、フィールドの追加や削除、その他の変更など、フォームの構造の変更は同期されません。
