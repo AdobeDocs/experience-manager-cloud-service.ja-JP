@@ -3,51 +3,14 @@ title: アセットセレクターと  [!DNL Adobe]  アプリケーションの
 description: アセットセレクターを様々なアドビ、アドビ以外、サードパーティのアプリケーションと統合します。
 role: Admin, User
 exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
-source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
-workflow-type: ht
-source-wordcount: '813'
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+workflow-type: tm+mt
+source-wordcount: '767'
 ht-degree: 100%
 
 ---
 
 # アセットセレクターとアドビアプリケーションの統合 {#integrate-asset-selector-with-adobe-app}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-        </td>
-    </tr>
-</table>
 
 アセットセレクターを使用すると、様々なアドビアプリケーションを統合して、シームレスに連携できます。
 

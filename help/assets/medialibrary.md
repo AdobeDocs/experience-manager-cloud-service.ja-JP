@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Publishing
 role: User, Architect, Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 95%
+source-wordcount: '585'
+ht-degree: 100%
 
 ---
 
@@ -22,43 +22,6 @@ Define what is not included
 -->
 
 # 基本的なアセット管理での Media Library の使用 {#manage-assets-using-media-library}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-        </td>
-    </tr>
-</table>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |

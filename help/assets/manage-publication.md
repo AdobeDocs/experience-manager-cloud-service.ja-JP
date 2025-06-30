@@ -5,51 +5,14 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1582'
-ht-degree: 98%
+source-wordcount: '1536'
+ht-degree: 100%
 
 ---
 
 # Experience Manager Assets での公開の管理 {#manage-publication-in-aem}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL Adobe Experience Manager Assets] 管理者は、アセットやアセットを含んだフォルダーをオーサーインスタンスから [!DNL Experience Manager Assets]、[!DNL Dynamic Media] および [!DNL Brand Portal] に公開できます。また、アセットやフォルダーを後の日時に公開するようにスケジューリングすることもできます。公開すると、ユーザーはアセットにアクセスでき、さらに他のユーザーにアセットを配布できます。デフォルトでは、アセットやフォルダーを [!DNL Experience Manager Assets] に公開できます。ただし、[!DNL Experience Manager Assets] を設定して [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=ja) と [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ja) への公開を有効にすることができます。
 
@@ -219,7 +182,7 @@ Only the selected folder content and references are published.
 
 「公開をリクエスト」オプションは、次のユーザーが使用できます。
 
-* **投稿者：**&#x200B;[!DNL AEM] Assets に投稿できるユーザーの場合、[!DNL AEM] Assets ワークフローへのアクセスが制限されています。「`Manage publication`」ボタンが非表示になっています。投稿者は、アセットを追加することによって投稿のみできますが、アセットを公開したり、ワークフローへの読み取りアクセス権を持つことはできません。
+* **投稿者：**[!DNL AEM] Assets に投稿できるユーザーの場合、[!DNL AEM] Assets ワークフローへのアクセスが制限されています。「`Manage publication`」ボタンが非表示になっています。投稿者は、アセットを追加することによって投稿のみできますが、アセットを公開したり、ワークフローへの読み取りアクセス権を持つことはできません。
 
 * **ワークフローユーザー：**&#x200B;このユーザーはアセットを公開できませんが、ワークフローに対する読み取りアクセス権があります。ワークフローユーザーは、次の操作を実行できます。
    * 公開をリクエスト

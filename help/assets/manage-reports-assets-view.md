@@ -4,51 +4,14 @@ description: アセットビューの「レポート」セクションのデー�
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 98%
+source-wordcount: '1522'
+ht-degree: 100%
 
 ---
 
 # レポートの管理 {#manage-reports}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-        </td>
-    </tr>
-</table>
 
 アセットレポートを使用すると、管理者は Adobe Experience Manager Assets ビュー環境のアクティビティを視覚的に確認できます。このデータは、ユーザーがコンテンツや製品とどのようにやり取りするかについての有用な情報を提供します。 すべてのユーザーが Insights ダッシュボードにアクセスでき、管理者の製品プロファイルに割り当てられたユーザーはユーザー定義レポートを作成できます。
 
@@ -77,17 +40,16 @@ AEM Assets ビュー環境では、レポートダッシュボードを通じて
 
 **レポートを作成するには：**
 
-1. **レポート**&#x200B;に移動し、「**レポートを作成**」（右上から）をクリックします。 **レポートを作成**&#x200B;ダイアログボックスには、以下のフィールドが表示されます。
+1. **レポート**&#x200B;に移動し、「**レポートを作成**」（右上から）をクリックします。 **レポートを作成**ダイアログボックスには、以下のフィールドが表示されます。
    ![create-report](/help/assets/assets/executed-reports1.svg)
 
    **「設定」タブ：**
 
-   1. **レポートタイプ：**&#x200B;[!UICONTROL アップロード]、[!UICONTROL ダウンロード]、[Dynamic Media 配信レポート](#dynamic-media-delivery-reports)タイプから選択します。
+   1. **レポートタイプ：**[!UICONTROL アップロード]、[!UICONTROL ダウンロード]、[Dynamic Media 配信レポート](#dynamic-media-delivery-reports)タイプから選択します。
    1. **タイトル：**&#x200B;レポートにタイトルを追加します。
    1. **説明：**&#x200B;レポートにオプションの説明を追加します。
    1. **フォルダーパスを選択：**&#x200B;フォルダーパスを選択すると、その特定のフォルダー内でアップロードおよびダウンロードされたアセットのレポートが生成されます。 例えば、フォルダーにアップロードされたアセットのレポートが必要な場合は、そのフォルダーへのパスを指定します。
    1. **日付間隔を選択：**&#x200B;フォルダー内のアップロードまたはダウンロードのアクティビティを表示するには、日付範囲を選択します。
-
    <br>
 
    >[!NOTE]
@@ -178,7 +140,7 @@ AEM Assets ビュー環境では、レポートダッシュボードを通じて
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### 前提条件 {#prereqs-dynamic-media-delivery-reports}
@@ -239,8 +201,7 @@ AEM Assets ビュー UI の「**レポートをスケジュール**」では、�
    1. **タイトル：**&#x200B;レポートにタイトルを追加します。
    1. **説明**：レポートにオプションの説明を追加します。
    1. **フォルダーパスを選択：**&#x200B;フォルダーパスを選択すると、今後のその特定のフォルダーにアップロードされるか、その特定のフォルダーからダウンロードされるアセットのレポートが生成されます。
-   1. **「レポートをスケジュール」を切り替え：**&#x200B;レポートを後で実行するようにスケジュールするか、繰り返し実行するように切り替えます。
-
+   1. **「レポートをスケジュール」を切り替え：**レポートを後で実行するようにスケジュールするか、繰り返し実行するように切り替えます。
       ![レポートのスケジュール](/help/assets/assets/schedule-reports1.svg)
 
    1. **頻度を選択：**&#x200B;レポートを生成する間隔（例えば、日別、週別、月別、年別、1 回限り）を指定し、レポートを実行する日時と繰り返しの終了日を設定します。 1 回限りのレポートの場合は、AEM 環境で選択したアクティビティタイプに関するレポートの日付範囲を選択します。 例えば、特定の月の 10日から 29日（今後の日付）までにダウンロードされたアセットに関するレポートが必要な場合は、「**日付間隔を選択**」フィールドでこれらの日付を選択します。
@@ -298,7 +259,7 @@ AEM Assets ビュー UI の「**レポートをスケジュール**」では、�
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
-* **サイズ別のアセットカウント：**&#x200B;アセットビュー環境の合計アセット数を様々なサイズ範囲にセグメント化し、各サイズ範囲内のアセットの数と割合をハイライト表示し、ドーナツグラフで表します。
+* **サイズ別のアセットカウント：**アセットビュー環境の合計アセット数を様々なサイズ範囲にセグメント化し、各サイズ範囲内のアセットの数と割合をハイライト表示し、ドーナツグラフで表します。
   ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
-* **アセットタイプ別のアセットカウント：**&#x200B;アセットビュー環境の合計アセット数をセグメント化し、ファイルタイプに基づいてアセットの数と割合をハイライト表示し、ドーナツグラフで表します。
+* **アセットタイプ別のアセットカウント：**アセットビュー環境の合計アセット数をセグメント化し、ファイルタイプに基づいてアセットの数と割合をハイライト表示し、ドーナツグラフで表します。
   ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)

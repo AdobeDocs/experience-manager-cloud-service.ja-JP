@@ -2,57 +2,14 @@
 title: リモート AEM Assets と AEM Sites の統合
 description: AEM Sites を設定し、承認済み AEM Assets に接続する方法について説明します。
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 91%
+source-wordcount: '1005'
+ht-degree: 100%
 
 ---
 
 # リモート AEM Assets と AEM Sites の統合  {#integrate-approved-assets}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-        </td>
-    </tr>
-</table>
-
->[!AVAILABILITY]
->
->OpenAPI 機能搭載 Dynamic Media のガイドを、PDF 形式で利用できるようになりました。ガイド全体をダウンロードし、Adobe Acrobat AI アシスタントを使用して質問に答えてください。
->
->[!BADGE OpenAPI 機能搭載 Dynamic Media ガイドの PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 デジタルアセットを効果的に管理することは、様々なオンラインプラットフォームにわたって魅力的で一貫性のあるブランドエクスペリエンスを提供するのに重要です。OpenAPI 機能を備えた Dynamic Media は、AEM Sites と AEM Assets as a Cloud Service 間のシームレスな統合を有効にして、デジタルアセット管理を強化します。この革新的な機能により、複数の AEM 環境間で様々なタイプの承認済みデジタルアセットを簡単に共有および管理でき、サイト作成者とコンテンツ編集者のワークフローが効率化されます。
 
@@ -77,7 +34,6 @@ OpenAPI 機能を備えた Dynamic Media を使用したリモートアセット
 * AEM as a Cloud Service に次の[環境変数](/help/implementing/cloud-manager/environment-variables.md#add-variables)を設定します。
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyyyy.adobeaemcloud.com&quot; <br>
-
      `pXXXX` はプログラム ID を参照します<br>。
      `eYYYY` は環境 ID を参照します。
 
@@ -179,4 +135,4 @@ AEM Sites インスタンスの AEM コンテンツフラグメント内でリ�
 
 ### Edge Delivery Services でのリモートアセットへのアクセス {#access-assets-eds}
 
-Microsoft Word、Google Docsまたはユニバーサルエディターでコンテンツを作成してEdge Delivery Servicesに公開する際に、リモートアセットにアクセスできます。 また、Dynamic Media を OpenAPI と共に使用して、ブランド承認済みのアセットを配信し、他にも多くの利点を利用できます。 詳しくは、[Edge Delivery Services用のコンテンツのオーサリング中のAEM Assetsの統合 ](/help/assets/integrate-aem-assets-edge-delivery-services.md) を参照してください。
+Microsoft Word、Google Docs またはユニバーサルエディターでのコンテンツの作成中にリモートアセットにアクセスし、そのコンテンツを Edge Delivery Services に公開できます。また、OpenAPI を備えた Dynamic Media を使用して、ブランド承認済みのアセットを配信し、用意されている他の多くのメリットを利用することもできます。詳しくは、[AEM Assets と Edge Delivery Services 向けコンテンツのオーサリングの統合](/help/assets/integrate-aem-assets-edge-delivery-services.md)を参照してください。

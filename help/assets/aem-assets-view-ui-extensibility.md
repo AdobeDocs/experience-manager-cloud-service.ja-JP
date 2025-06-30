@@ -4,48 +4,14 @@ description: UI 拡張機能について説明します。 [!DNL AEM Assets View
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: a03e6cf842f95f8799f23ed5c7e3b563b092b4e5
+source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '598'
 ht-degree: 97%
 
 ---
 
 # [!DNL AEM Assets View] の UI 拡張機能の有効化 {#AEM-Assets-View-UI-Extensibility}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL AEM Assets View] は UI 拡張機能をサポートしており、[!DNL AEM Assets View] の標準機能では満たされない特定のワークフローやビジネス要件に対して、カスタム UI コンポーネントを [!DNL Assets View] の UI に追加できます。[!DNL AEM Assets View] の UI 拡張機能により柔軟性が向上し、組織は特定のワークフローと要件に合わせてインターフェイスを調整できるようになります。\
 拡張機能は&#x200B;**アセット**&#x200B;レベル、**フォルダー**&#x200B;レベル、および&#x200B;**コレクション**&#x200B;レベルに追加できます。追加された拡張機能は、**アセット**、**コレクション**、または&#x200B;**フォルダー**&#x200B;の&#x200B;**[!UICONTROL 詳細]**&#x200B;ページの専用パネルに表示されます。
@@ -63,7 +29,7 @@ ht-degree: 97%
 
 ## [!DNL Assets View] での UI 拡張機能の表示 {#ui-extensibility-panel-assets-view}
 
-[!DNL Assets View] 内で、アセット、フォルダーまたはコレクションの&#x200B;**[!UICONTROL 詳細]**&#x200B;ページに移動します。**[!UICONTROL 詳細]**&#x200B;ページの専用パネルには、追加された UI 拡張機能が表示されます。
+[!DNL Assets View] 内で、アセット、フォルダーまたはコレクションの&#x200B;**[!UICONTROL 詳細]**&#x200B;ページに移動します。**[!UICONTROL 詳細]**ページの専用パネルには、追加された UI 拡張機能が表示されます。
 ![マイワークスペース](/help/assets/assets/my-workspace-assets-view3.png)
 
 ## 拡張コンポーネントを追加するための前提条件{#assets-view-ui-extensibility}

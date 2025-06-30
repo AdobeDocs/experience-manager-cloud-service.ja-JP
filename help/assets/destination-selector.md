@@ -5,51 +5,14 @@ contentOwner: Adobe
 role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1933'
-ht-degree: 98%
+source-wordcount: '1887'
+ht-degree: 100%
 
 ---
 
 # マイクロフロントエンドの宛先セレクター {#Overview}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-        </td>
-    </tr>
-</table>
 
 マイクロフロントエンドの宛先セレクターには、アプリケーション内に [!DNL Experience Manager Assets as a Cloud Service] リポジトリと簡単に統合できるユーザーインターフェイスがあります。[!DNL Experience Manager Assets as a Cloud Service] リポジトリ内の適切なフォルダーを検索または参照して、アプリケーションからアセットをアップロードできます。
 
@@ -231,17 +194,17 @@ interface SelectedDestination {
 | *imsToken* | 文字列 | いいえ | | 認証に使用される IMS ベアラートークンです。SUSI フローを使用している場合、`imsToken` は必須ではありません。ただし、非 SUSI フローを使用している場合は必須です。 |
 | *apiKey* | 文字列 | いいえ | | AEM Discovery サービスへのアクセスに使用する API キーです。SUSI フローを使用している場合、`apiKey` は必須ではありません。ただし、非 SUSI フローの場合は必須です。 |
 | *rootPath* | 文字列 | いいえ | /content/dam/ | 宛先セレクターがアセットを表示する元のフォルダーパスです。`rootPath` はカプセル化の形式でも使用できます。例えば、次のパス `/content/dam/marketing/subfolder/` を指定すると、宛先セレクターでは親フォルダーをトラバースできず、子フォルダーのみが表示されます。 |
-| *hasMore* | ブール値 | いいえ | | アプリケーションに表示するコンテンツが増えたら、このプロパティを使用して、コンテンツを読み込んでアプリケーションに表示するローダーを追加できます。コンテンツの読み込みが進行中であることを示すインジケーターです。 |
-| *orgName* | ブール値 | いいえ | | AEM に関連付けられている組織の名前（おそらく orgID）です。 |
-| *initRepoID* | 文字列 | いいえ | | デフォルトの初期ビューで使用するアセットリポジトリのパスです |
-| *onCreateFolder* | 文字列 | いいえ | | この `onCreateFolder` プロパティを使用すると、アプリケーションに新しいフォルダーを追加するアイコンを追加できます。 |
-| *onConfirm* | 文字列 | いいえ | | 「確認」ボタンを押したときのコールバックです。 |
-| *confirmDisabled* | 文字列 | いいえ | | このプロパティは、「確認」ボタンの切り替えを制御します。 |
-| *viewType* | 文字列 | いいえ | | `viewType` プロパティは、アセットの表示に使用するビューの指定に使用します。 |
-| *viewTypeOptions* | 文字列 | いいえ | | このプロパティは、`viewType` プロパティに関連付けられています。アセットを表示する 1 つ以上のビューを指定できます。使用可能な viewTypeOptions は、リスト表示、グリッド表示、ギャラリー表示、ウォーターフォール表示、ツリー表示です。 |
-| *itemNameFormatter* | 文字列 | いいえ | | このプロパティを使用すると、項目名を書式設定できます |
+| *hasMore* | ブーリアン | 不要 | | アプリケーションに表示するコンテンツが増えたら、このプロパティを使用して、コンテンツを読み込んでアプリケーションに表示するローダーを追加できます。コンテンツの読み込みが進行中であることを示すインジケーターです。 |
+| *orgName* | ブーリアン | 不要 | | AEM に関連付けられている組織の名前（おそらく orgID）です。 |
+| *initRepoID* | 文字列 | 不要 | | デフォルトの初期ビューで使用するアセットリポジトリのパスです |
+| *onCreateFolder* | 文字列 | 不要 | | この `onCreateFolder` プロパティを使用すると、アプリケーションに新しいフォルダーを追加するアイコンを追加できます。 |
+| *onConfirm* | 文字列 | 不要 | | 「確認」ボタンを押したときのコールバックです。 |
+| *confirmDisabled* | 文字列 | 不要 | | このプロパティは、「確認」ボタンの切り替えを制御します。 |
+| *viewType* | 文字列 | 不要 | | `viewType` プロパティは、アセットの表示に使用するビューの指定に使用します。 |
+| *viewTypeOptions* | 文字列 | 不要 | | このプロパティは、`viewType` プロパティに関連付けられています。アセットを表示する 1 つ以上のビューを指定できます。使用可能な viewTypeOptions は、リスト表示、グリッド表示、ギャラリー表示、ウォーターフォール表示、ツリー表示です。 |
+| *itemNameFormatter* | 文字列 | 不要 | | このプロパティを使用すると、項目名を書式設定できます |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | いいえ |  | OOTB 翻訳がアプリケーションのニーズを満たさない場合は、独自のローカライズされたカスタム値を `i18nSymbols` プロップ経由で渡すことができるインターフェイスを表示できます。このインターフェイスを介して値を渡すと、提供されたデフォルトの翻訳が上書きされ、代わりに独自の翻訳が使用されます。上書きを実行するには、上書きしたい `i18nSymbols` のキーに有効な[メッセージ記述子](https://formatjs.io/docs/react-intl/api/#message-descriptor)オブジェクトを渡す必要があります。 |
-| *inlineAlertSetup* | 文字列 | いいえ | | アプリケーションに渡す警告メッセージを追加します。例えば、「このフォルダーにアクセスする権限がありません」という警告メッセージを追加します。 |
+| *inlineAlertSetup* | 文字列 | 不要 | | アプリケーションに渡す警告メッセージを追加します。例えば、「このフォルダーにアクセスする権限がありません」という警告メッセージを追加します。 |
 | *intl* | オブジェクト | いいえ | | 宛先セレクターはデフォルトの OOTB 翻訳を提供します。`intl.locale` プロップを介して有効なロケール文字列を指定することで、翻訳言語を選択できます。（例：`intl={{ locale: "es-es" }}` </br></br>）サポートされているロケール文字列は、言語名の標準規格を表す [ISO 639 - コード](https://www.iso.org/iso-639-language-codes.html)に従います。</br></br> サポートされているロケールの一覧：英語 - &#39;en-us&#39;（デフォルト）スペイン語 - &#39;es-es&#39; ドイツ語 - &#39;de-de&#39; フランス語 - &#39;fr-fr&#39; イタリア語 - &#39;it-it&#39; 日本語 - &#39;ja-jp&#39; 韓国語 - &#39;ko-kr&#39; ポルトガル語 - &#39;pt-br&#39; 中国語（簡体字） - &#39;zh-cn&#39; 中国語（繁体字） - &#39;zh-tw&#39; |
 
 ## 宛先セレクターのプロパティの使用例 {#usage-examples}

@@ -4,51 +4,14 @@ description: ' [!DNL Assets view]  のクイック公開を使用すると、ア
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, [!DNL Dynamic Media]
 role: User
-source-git-commit: 138f7ef2023399ce5da9fe80447ac45fd9542064
-workflow-type: ht
-source-wordcount: '1099'
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+workflow-type: tm+mt
+source-wordcount: '1053'
 ht-degree: 100%
 
 ---
 
 # [!DNL AEM and Dynamic Media] へのアセットの公開{#Publish-Assets-to-AEM-and-Dynamic-Media}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL Experience Manager Assets] を使用すると、[!DNL Assets view] を使用して [!DNL Experience Manager] と [!DNL Dynamic Media] にアセットをすばやく公開できます。これにより、 [!DNL Admin view]](/help/assets/overview.md##persona-based-experiences) に切り替えることなく、[[!DNL Assets view]  を使用してアセットを管理し、公開できるようになります。
 

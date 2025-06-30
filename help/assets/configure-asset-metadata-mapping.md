@@ -4,51 +4,14 @@ description: Adobe Workfront と Experience Manager as a Cloud Service のアプ
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 97%
+source-wordcount: '1012'
+ht-degree: 100%
 
 ---
 
 # Adobe Workfront と Experience Manager Assets 間のアセットメタデータのマッピング設定 {#asset-metadata-mapping-workfront-aem-assets}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-        </td>
-    </tr>
-</table>
 
 Adobe Workfrontと Experience Manager as a Cloud Service のアプリケーション間でアセットメタデータのフィールドをマッピングできます。 メタデータフィールドをマッピングした結果、アセットを Workfront から Experience Manager Assets に送信すると、マッピングされたアセットメタデータを Experience Manager Assets で表示できます。
 
@@ -127,9 +90,8 @@ Experience Manager Assets as a Cloud Service で、新しいメタデータフ�
 
    1. `Project Name` を&#x200B;**[!UICONTROL フィールドラベル]**&#x200B;フィールドに入力します。
 
-   1. `./jcr:content/metadata/wm:projectName` を&#x200B;**[!UICONTROL プロパティにマッピング]**&#x200B;フィールドに入力します。ガイドラインとして、次のテンプレートを使用して Experience Manager Assets のフィールドマッピングを定義します。
-
-      `./jcr:content/metadata/<mapping defined for the field in workfront>`。
+   1. `./jcr:content/metadata/wm:projectName` を&#x200B;**[!UICONTROL プロパティにマッピング]**フィールドに入力します。ガイドラインとして、次のテンプレートを使用して Experience Manager Assets のフィールドマッピングを定義します。
+      `./jcr:content/metadata/<mapping defined for the field in workfront>`
 
       Workfront でマッピングを設定する際に、`wm:projectName` Experience Manager Assets フィールドをプロジェクト／名前 Workfront フィールドにマッピングしました。
 
@@ -141,14 +103,14 @@ Experience Manager Assets as a Cloud Service で、新しいメタデータフ�
 
    1. `Document Name` を&#x200B;**[!UICONTROL フィールドラベル]**&#x200B;フィールドに入力します。
 
-   1. `./jcr:content/metadata/wm:documentName` を&#x200B;**[!UICONTROL プロパティにマッピング]**&#x200B;フィールドに入力します。
+   1. `./jcr:content/metadata/wm:documentName` を&#x200B;**[!UICONTROL プロパティにマッピング]**フィールドに入力します。
 Workfront でマッピングを設定する際に、`wm:documentName` Experience Manager Assets フィールドをドキュメント／名前 Workfront フィールドにマッピングしました。
 
 1. 「**[!UICONTROL フォームを作成]**」タブをクリックし、**[!UICONTROL 複数行テキスト]**&#x200B;コンポーネントをフォームにドラッグします。フォームのコンポーネントをクリックします。「**[!UICONTROL フォームを作成]**」タブで、次の手順に従います。
 
    1. `Document Description` を&#x200B;**[!UICONTROL フィールドラベル]**&#x200B;フィールドに入力します。
 
-   1. `./jcr:content/metadata/dc:description` を&#x200B;**[!UICONTROL プロパティにマッピング]**&#x200B;フィールドに入力します。
+   1. `./jcr:content/metadata/dc:description` を&#x200B;**[!UICONTROL プロパティにマッピング]**フィールドに入力します。
 Workfront でマッピングを設定する際に、`dc:description` Experience Manager Assets フィールドをドキュメント／説明 Workfront フィールドにマッピングしました。
 
 1. 「**[!UICONTROL 保存]**」をクリックして、変更を保存します。

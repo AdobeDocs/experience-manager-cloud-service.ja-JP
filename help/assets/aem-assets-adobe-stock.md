@@ -5,51 +5,14 @@ contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: fecaefbb6a02e944be38c3dfaa3baea5691219cd
-workflow-type: ht
-source-wordcount: '2254'
+source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+workflow-type: tm+mt
+source-wordcount: '2208'
 ht-degree: 100%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets] での [!DNL Adobe Stock] アセットの使用 {#use-adobe-stock-assets-in-aem-assets}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-        </td>
-    </tr>
-</table>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -73,10 +36,10 @@ ht-degree: 100%
 * [!DNL Admin Console] でデフォルトの Stock 製品プロファイルに対する権限を持つユーザー。
 * [!DNL Adobe Developer Console] で統合を作成するための [!DNL Developer Access profile] に対する権限を持つユーザー。
 
-[!DNL Adobe Stock] エンタープライズ版プラン
+[!DNL Adobe Stock] エンタープライズ版プラン。
 
 * [!DNL Adobe Stock]（Experience Manager に接続されている Stock）の製品使用権を提供します。
-* Stock の使用権が購入されていることを [!DNL Adobe Admin Console] にクレジットします。
+* Stock の使用権に対して [!DNL Adobe Admin Console] にクレジットが購入されました。
 * [!DNL Adobe Admin Console] でクレジットとライセンスをグローバルに管理できるようになります。
 
 権利付与において、[!DNL Adobe Stock] のデフォルトの製品プロファイルは [!DNL Admin Console] に存在します。複数のプロファイルを作成でき、これらのプロファイルによって、誰が Stock アセットのライセンスを取得できるかが決まります。製品プロファイルに直接アクセスできるユーザーは、[https://stock.adobe.com/jp](https://stock.adobe.com/jp/) にアクセスして、Stock アセットのライセンスを取得できます。一方、Developer Access を使用して統合（API）を作成する方法もあります。この統合により、[!DNL Experience Manager Assets] と [!DNL Adobe Stock] 間の通信が認証されます。
@@ -264,8 +227,8 @@ To configure the IMS account:
 
 [!DNL AEM] オーサーインスタンスで新しい [!DNL Adobe Stock IMS configuration] を設定するには、次の手順を実行します。
 1. [!DNL AEM] オーサーインスタンスに移動します。
-1. ![AEM Assets と Adobe Stock](/help/assets/assets/Hammer.svg) をクリックし、「**[!UICONTROL セキュリティ]**」を選択して、「**[!UICONTROL Adobe IMS 設定]**」を選択します。
-1. 「**[!UICONTROL 作成]**」をクリックして、新しい AEM 設定を作成します。**[!UICONTROL Adobe IMS テクニカルアカウント設定]**&#x200B;ページには、「**[!UICONTROL クラウドソリューション]**」、「**[!UICONTROL タイトル]**」、「**[!UICONTROL 認証サーバー]**」、「**[!UICONTROL クライアント ID]**」、「**[!UICONTROL クライアント秘密鍵]**」、「**[!UICONTROL 範囲]**」、「**[!UICONTROL 組織 ID]**」などの複数のフィールドが表示されます。これらのフィールドの詳細を指定するには、次の手順に従います。
+1. 「![AEM Assets と Adobe Stock](/help/assets/assets/Hammer.svg)」をクリックし、「**[!UICONTROL セキュリティ]**」、「**[!UICONTROL Adobe IMS 設定]**」の順に選択します。
+1. 「**[!UICONTROL 作成]**」をクリックして、新しい IMS 設定を作成します。**[!UICONTROL Adobe IMS テクニカルアカウント設定]**&#x200B;ページには、「**[!UICONTROL クラウドソリューション]**」、「**[!UICONTROL タイトル]**」、「**[!UICONTROL 認証サーバー]**」、「**[!UICONTROL クライアント ID]**」、「**[!UICONTROL クライアント秘密鍵]**」、「**[!UICONTROL 範囲]**」、「**[!UICONTROL 組織 ID]**」などの複数のフィールドが表示されます。これらのフィールドの詳細を指定するには、次の手順に従います。
    * **[!UICONTROL クラウドソリューション]**：「**[!UICONTROL Adobe Stock]**」を選択します。
    * **[!UICONTROL タイトル]**：この統合の名前を指定します。
    * **[!UICONTROL 認証サーバー]**：[https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/) を認証サーバーとして追加します。
@@ -275,7 +238,7 @@ To configure the IMS account:
 
    * **[!UICONTROL 範囲]**：プロジェクトダッシュボードに移動し、左側のパネルにある「**[!UICONTROL OAuth サーバー間]**」オプションをクリックし、「**[!UICONTROL 資格情報の詳細]**」を選択して、**[!UICONTROL 範囲]**&#x200B;をコピーしてここにペーストします（[手順 7](#set-up-a-program-in-developer-console) を参照）。
 
-   * **[!UICONTROL 組織 ID]**：プロジェクトダッシュボードに移動し、左側のパネルにある「**[!UICONTROL OAuth サーバー間]**」オプションをクリックし、「**[!UICONTROL 資格情報の詳細]**」を選択して、**[!UICONTROL 組織 ID]** をコピーしてここにペーストします（[手順 7](#set-up-a-program-in-developer-console) を参照）。
+   * **[!UICONTROL 組織 ID]**：プロジェクトダッシュボードに移動し、左側のパネルにある「**[!UICONTROL OAuth サーバー間]**」オプションをクリックし、「**[!UICONTROL 資格情報の詳細]**」を選択、**[!UICONTROL 組織 ID]** をコピーしてここにペーストします（[手順 7](#set-up-a-program-in-developer-console) を参照）。
      ![AEM Assets と Adobe Stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
 1. 「**[!UICONTROL 作成]**」をクリックすると、**[!UICONTROL Adobe IMS 設定]**&#x200B;ページが開き、作成した [!DNL Adobe Stock] 統合が表示されます。
 

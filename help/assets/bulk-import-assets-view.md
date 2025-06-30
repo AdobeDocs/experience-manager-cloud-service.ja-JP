@@ -4,51 +4,14 @@ description: 新しい Assets UI（Assets ビュー）を使用してアセッ�
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 98%
+source-wordcount: '1881'
+ht-degree: 100%
 
 ---
 
 # Assets ビューを使用したアセットの一括読み込み  {#bulk-import-assets-view}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-        </td>
-    </tr>
-</table>
 
 AEM Assets ビューの一括読み込みを使用すると、管理者はデータソースから AEM Assets に大量のアセットを読み込むことができます。管理者は、個々のアセットやフォルダーを AEM Assets にアップロードする必要がなくなりました。
 
@@ -209,7 +172,7 @@ OneDrive アカウントから AEM Assets にアセットを読み込む前に�
 ## 既存の一括読み込み設定を表示 {#view-import-configuration}
 
 既存の一括読み込みを表示するには、左側のパネルで「**[!UICONTROL 一括読み込み]**」オプションを選択します。一括読み込みページが表示され、**[!UICONTROL 実行された読み込み]**&#x200B;のリストが表示されます。<br>
-また、ドロップダウンオプションから&#x200B;**[!UICONTROL 保存された読み込み]**&#x200B;および&#x200B;**[!UICONTROL スケジュールされた読み込み]**&#x200B;を表示することもできます。
+また、ドロップダウンオプションから**[!UICONTROL 保存された読み込み]**&#x200B;および&#x200B;**[!UICONTROL スケジュールされた読み込み]**&#x200B;を表示することもできます。
 
 ![一括読み込み設定を保存](assets/bulk-import-options.png)
 

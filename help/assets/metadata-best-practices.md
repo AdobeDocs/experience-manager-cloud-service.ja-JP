@@ -4,10 +4,10 @@ description: デジタルアセットを効果的に管理するためのメタ�
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 98%
+source-wordcount: '1384'
+ht-degree: 100%
 
 ---
 
@@ -17,40 +17,6 @@ aem metadata
 experience manager metadata-->
 
 # メタデータの管理とベストプラクティス {#metadata-best-practices}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-        </td>
-    </tr>
-</table>
 
 ビジネスを際立たせ、より多くのお客様を引き付けるには、画像、ビデオ、その他のデジタルアセットなどの高品質のビジュアルを活用することが重要です。これを実現するには、すべてのデジタルアセットにメタデータを追加して、簡単に検索できるようにするプロセスが必要です。メタデータは、アセットの名前、タイプ、リポジトリ内の場所、変更日、関連するタグなど、デジタルアセットに関する基本的な詳細を提供するデータです。メタデータは、アセット管理を効率化し、検索性とアクセシビリティを強化して、効果的なバージョン管理を実現します。
 
@@ -147,7 +113,7 @@ experience manager metadata-->
 * **統制語彙を効果的に使用する：**&#x200B;タグに標準化された用語を使用して、制御語彙を実装します。[AEM タグ付けフレームワーク](/help/implementing/developing/introduction/tagging-framework.md)を効果的に実装する方法を説明します。<br>
 例えば、*product_launch* または *event_promotion* などの用語を一貫して使用し、画像にテーマを付けてタグ付けし、体系的なシーケンスを維持する場合です。
 
-* **正確性と完全性の維持：**&#x200B;メタデータの一貫性を保つためには、様々なソース間での正確性、完全性、アラインメントが重要です。
+* **正確性と完全性の維持：**メタデータの一貫性を保つためには、様々なソース間での正確性、完全性、アラインメントが重要です。
 例えば、PDF ドキュメントにメタデータを追加する場合は、作成者名やキーワードなどの詳細が正確で、完全であることを確認します。
 
 #### ビデオ：アセットへの一括メタデータの追加

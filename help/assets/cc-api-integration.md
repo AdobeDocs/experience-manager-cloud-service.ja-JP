@@ -5,51 +5,14 @@ contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 1d8136b761528fe927b467320ebc7363de0d8a37
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 93%
+source-wordcount: '801'
+ht-degree: 100%
 
 ---
 
 # [!DNL Adobe Creative Cloud] 統合を使用したアセットバリエーションの生成 {#content-automation}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-        </td>
-    </tr>
-</table>
 
 コンテンツ自動処理アドオンは、[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] API と [!DNL Adobe Creative Cloud] API を統合して、大規模なアセットをクリエイティブに処理します。[!DNL Experience Manager] では、クラウドベースの[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)を利用して、[!DNL Adobe Creative Cloud] 機能を使用し、アセットの作成とメディアの処理を自動化します。
 
@@ -137,8 +100,8 @@ Cloud Manager の既存の AEM as a Cloud Service プログラムにコンテン
 
 * [!DNL Experience Manager] では、アセット処理を環境ごとに 1 分あたり 300 リクエストまでに制限し、組織ごとに 1 分あたり 700 リクエストまでに制限しています。
 * [!DNL Adobe Photoshop] API 操作のファイルサイズは 4 GB までに制限され、[!DNL Adobe Lightroom] 操作では 1 GB までに制限されています。
-* Microsoft Office ドキュメントのPDF レンディション（「.docx」、「.doc」、「.ppt」、「.pptx」、「.xls」、「.xlsx」）は、100 MB 以下のファイルに制限されています。
-* ビデオのトランスコーディングは、入力ファイル 15 GB 以下に制限されています。
+* Microsoft Office ドキュメントの PDF レンディション（「.docx」、「.doc」、「.ppt」、「.pptx」、「.xls」、「.xlsx」）は、100 MB 以下のファイルに制限されています。
+* ビデオのトランスコーディングは、15 GB 以下の入力ファイルに制限されています。
 
 **関連情報**
 

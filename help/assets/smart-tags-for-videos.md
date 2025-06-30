@@ -3,51 +3,15 @@ title: ビデオアセットのスマートタグ
 description: Adobe Experience Manager では、 [!DNL Adobe Sensei] を使用して、状況に応じた説明的なスマートタグをビデオに自動的に追加します。
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: fac18920ef0fdaa36a7547bd4f652829366dcc47
+exl-id: 87d0eea2-83a1-4cfa-a4a5-425d0e8abba6
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1189'
 ht-degree: 100%
 
 ---
 
 # ビデオアセットのスマートタグ {#video-smart-tags}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-        </td>
-    </tr>
-</table>
 
 新しいコンテンツに対するニーズが高まる中で、人手による作業を減らしつつ、人を惹きつけるデジタルエクスペリエンスをすぐに届ける必要があります。[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、人工知能を使用したビデオアセットの自動タグ付けをサポートしています。ビデオの手動のタグ付けには時間がかかる場合があります。しかし、[!DNL Adobe Sensei] を活用したビデオスマートタグ付け機能では、人工知能モデルを使用してビデオコンテンツを分析し、ビデオアセットにタグを追加します。DAM ユーザーが顧客に豊富なエクスペリエンスを提供するまでの時間を短縮できます。Adobe の機械学習サービスは、ビデオに対して 2 組のタグを生成します。1 組は、そのビデオ内のオブジェクト、シーンおよび属性に対応し、もう 1 組は、飲む、走る、ジョギングするなどのアクションに対応します。
 
@@ -99,7 +63,7 @@ DAM 内の既存のビデオアセットに対しては、スマートタグが�
 
 検索結果には、指定したタグに基づいてビデオアセットが表示されます。
 
-検索結果は、メタデータ内の検索されたキーワードを含むビデオアセットと、検索されたキーワードでスマートタグ付けされたビデオアセットを組み合わせたものです。ただし、メタデータフィールド内のすべての検索用語に一致する検索結果が最初に表示され、スマートタグ内の検索用語のいずれかに一致する検索結果はその後に表示されます。詳しくは、「[スマートタグを使用した [!DNL Experience Manager] 検索結果について](smart-tags.md#understand-search)」を参照してください。
+検索結果は、メタデータ内の検索されたキーワードを含むビデオアセットと、検索されたキーワードでスマートタグ付けされたビデオアセットを組み合わせたものです。ただし、メタデータフィールド内のすべての検索語に一致する検索結果が最初に表示され、スマートタグ内の検索語のいずれかに一致する検索結果はその後に表示されます。詳しくは、「[スマートタグを使用した [!DNL Experience Manager] 検索結果について](smart-tags.md#understand-search)」を参照してください。
 
 ## ビデオスマートタグのモデレート {#moderate-video-smart-tags}
 

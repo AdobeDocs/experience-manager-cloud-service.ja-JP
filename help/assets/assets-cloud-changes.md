@@ -4,51 +4,14 @@ description: ' [!DNL Adobe Experience Manager]  6.5 と比較した、  [!DNL Ex
 feature: Release Information
 role: User, Leader, Architect, Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 97%
+source-wordcount: '1006'
+ht-degree: 100%
 
 ---
 
 # 主な変更点：[!DNL Experience Manager Assets]as a [!DNL Cloud Service] {#notable-changes}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] は、Adobe Experience Manager プロジェクトを管理するための様々な新機能と可能性を提供します。オンプレミスまたは Adobe Managed Service としてホストされている [!DNL Experience Manager Assets] と [!DNL Experience Manager] as a [!DNL Cloud Service] には様々な違いがあります。この記事では、[!DNL Assets] 機能の重要な違いについて説明します。
 
@@ -95,7 +58,7 @@ ht-degree: 97%
 | MIME タイプの検出 | 非対応 | 拡張子のないデジタルアセットや誤った拡張子のデジタルアセットをアップロードした場合は、希望どおりには処理されない可能性があります。それでも、ユーザーは、拡張子のないバイナリファイルを DAM に保存できます。[Adobe  [!DNL Experience Manager] 6.5 の MIME タイプ検出](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/administer/detect-asset-mime-type-with-tika)を参照してください。 |
 | 複合アセットのサブアセットの生成 | 非対応 | 注釈などの従属ユースケースが実行されない可能性があります。[Adobe  [!DNL Experience Manager] 6.5 でのサブアセットの作成](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/managing/managing-linked-subassets#generate-subassets)を参照してください。[2021.7.0 リリース](/help/release-notes/release-notes-cloud/release-notes-current.md)以降、一部のファイルタイプの PDF プレビューが使用可能になりました。 |
 | 画像の編集 | サポート対象外 | アセットの編集は、Experience Manager as a Cloud Service ではサポートされていません。詳しくは、 [Experience Manager 6.5 での仕組み](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/managing/manage-assets#editing-images) を参照してください。 |
-| ホームページ | サポート対象外 |  [!DNL Experience Manager]  6.5 [&#128279;](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/using/assets-home-page) の [!DNL Assets]  ホームページエクスペリエンスを参照 |
+| ホームページ | サポート対象外 |  [!DNL Experience Manager]  6.5 ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/using/assets-home-page) の [[!DNL Assets]  ホームページエクスペリエンスを参照 |
 | ZIP アーカイブからのアセットの抽出 | サポート対象外 | [ [!DNL Experience Manager]  6.5 の ZIP 抽出](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/managing/manage-assets#extractzip) を参照してください。 |
 | アセット評価 | サポート対象外 | メタデータスキーマエディターの評価ウィジェットはサポートされていません。 |
 | Content Disposition フィルター | サポート対象外 | `ContentDispositionFilter` の一般的なユースケースは、管理者が HTML ファイルを提供し、PDF ファイルをダウンロードする代わりにインラインで開くように [!DNL Experience Manager] を設定できるようにすることです。パブリッシュインスタンスでは、Dispatcher 設定を使用して配置を管理できます。オーサーインスタンスでは、アドビは Content Disposition ヘッダーの変更をお勧めしません。[Content Disposition フィルター： [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/security/content-disposition-filter) を参照してください。 |

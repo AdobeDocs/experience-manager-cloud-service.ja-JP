@@ -3,50 +3,13 @@ title: カスタム検索フィルター
 description: 検索フィルターフォームのカスタマイズについて説明します
 role: User, Leader, Developer
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 5d155ab940da84561ea52396e410b0cc15395310
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 14%
+source-wordcount: '1294'
+ht-degree: 13%
 
 ---
 
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-        </td>
-    </tr>
-</table>
 
 # 検索フィルターのカスタマイズ {#customize-search-filters}
 
@@ -60,7 +23,7 @@ ht-degree: 14%
 
    ![ カスタム検索フィルターの設定 ](assets/custom-search-filter.png)
 
-1. [!UICONTROL &#x200B; フィルターの設定 &#x200B;] フォームが表示されます。 テンプレートに変更を加えることができるように、編集モードになっていることを確認します。 [!UICONTROL &#x200B; プレビューモード &#x200B;] に切り替えて、既存の検索フォームのプレビューを表示できます。
+1. [!UICONTROL  フィルターの設定 ] フォームが表示されます。 テンプレートに変更を加えることができるように、編集モードになっていることを確認します。 [!UICONTROL  プレビューモード ] に切り替えて、既存の検索フォームのプレビューを表示できます。
 1. キャンバスの [ カスタムフィルター ](#available-custom-filters) からフィルター要素をドロップします。 必要に応じて、コンポーネントをドラッグ&amp;ドロップして並べ替えることができます。
 
    >[!VIDEO](https://video.tv.adobe.com/v/3443080)
@@ -111,7 +74,7 @@ Assets ビューには、要件に応じて再設定可能な次のカスタム�
         </td>
     </tr>
     <tr>
-        <td>ブール値</td>
+        <td>ブーリアン</td>
         <td>ブール値は 1 つの true 値を表します。 特定のオプションを選択したい場所で使用できます。</td>
         <td>
             <ul>
@@ -351,7 +314,7 @@ Assets ビューには、要件に応じて再設定可能な次のカスタム�
         </td>
     </tr>
     <tr>
-        <td>タグ（分類）</td>
+        <td>タグ (分類)</td>
         <td>タグを使用してデジタルアセットを整理、分類するシステムで、基本的にはキーワードの階層構造を作成し、ユーザーがアセットごとに特定のタグを適用することで、関連するコンテンツを簡単に検索できるようにします。 </td>
         <td>
             <ul>
@@ -448,7 +411,7 @@ Assets ビューには、要件に応じて再設定可能な次のカスタム�
 
 1. **[!UICONTROL 設定]**／**[!UICONTROL 一般設定]**&#x200B;に移動します。
 1. 「**[!UICONTROL 検索]** タブに移動します。 **[!UICONTROL カスタマイズ]** をクリックして、検索フォームを設定します。
-1. [!UICONTROL &#x200B; フィルターの設定 &#x200B;] フォームが表示されます。 テンプレートに変更を加えることができるように、編集モードになっていることを確認します。
+1. [!UICONTROL  フィルターの設定 ] フォームが表示されます。 テンプレートに変更を加えることができるように、編集モードになっていることを確認します。
 1. 削除するフィルター要素を選択します。 例えば、「**[!UICONTROL 画像の高さ]** を選択します。
 1. **[!UICONTROL カテゴリを削除]** をクリックして、フィルター要素を削除します。 **[!UICONTROL 画像の高さ]** 要素がキャンバスから削除されます。
 1. **[!UICONTROL 確認]**」をクリックして、フォームを保存します。
