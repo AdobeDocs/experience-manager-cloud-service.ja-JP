@@ -52,7 +52,7 @@ ht-degree: 99%
    >
    >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >
+   >    
    >    ```
 
 1. 次のオーバーレイが [!DNL Experience Manager] リポジトリに存在しないことを確認してください。これらのパスに既にオーバーレイが存在する場合は、オーバーレイを削除するか、2 つのパス間の変更の差分を結合する必要があります。

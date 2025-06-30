@@ -23,7 +23,7 @@ Adobe Experience Manager Assets Brand Portal を設定すると、承認済み�
 
 >[!IMPORTANT]
 >
-> * Brand Portalはメンテナンスモードになっています。 すべての新製品が ](/help/assets/product-overview.md)0}Content Hub} で利用可能です。[
+> * Brand Portalはメンテナンスモードになっています。 すべての新製品が [&#128279;](/help/assets/product-overview.md)0&rbrace;Content Hub&rbrace; で利用可能です。
 > * それでもBrand Portalをアクティブ化する必要がある場合は、ユースケースとその他の具体的な要件の詳細をAdobe担当者にお問い合わせください。
 > * Brand Portalは、[Assets Prime](/help/assets/assets-prime.md) または [Assets Ultimate](/help/assets/assets-ultimate-overview.md) では使用できません。 ただし、既にAssetsへのアクセス権を持つ既存のAssets as a Cloud Service ユーザーは、Brand Portal Ultimateに移行する際に引き続き使用できます。
 
@@ -201,7 +201,7 @@ Along with the automation workflow to activate Brand Portal on Experience Manage
 >[!NOTE]
 >
 > 2024年6月以降は、新しい JWT 資格情報を作成できません。今後は、OAuth 資格情報のみが作成されます。
-> > 詳しくは、[OAuth 設定の作成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a)を参照してください。
+> &#x200B;> 詳しくは、[OAuth 設定の作成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a)を参照してください。
 
 次の節では、Adobe Developer Console を使用して Experience Manager Assets as a [!DNL Cloud Service] と Brand Portal の連携を手動で設定する方法について説明します。
 
