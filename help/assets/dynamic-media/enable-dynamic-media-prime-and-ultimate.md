@@ -7,7 +7,7 @@ exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
 source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
 workflow-type: tm+mt
 source-wordcount: '1036'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 98%
 
 OpenAPI を備えた [!DNL Dynamic Media] 機能では、DAM をアジャイルで効率的なコンテンツサプライチェーンエコシステムのコアに置き、アセットのガバナンスと配信を確実に行います。
 
-[!DNL Dynamic Media] Ultimate を有効にするプロセスの最初の手順は、Cloud Service 環境の OpenAPI[&#128279;](/help/assets/dynamic-media-open-apis-overview.md) を備えた [!DNL Dynamic Media]  を使用してアクティベートすることです。
+[!DNL Dynamic Media] Ultimate を有効にするプロセスの最初の手順は、Cloud Service 環境の OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) を備えた [[!DNL Dynamic Media]  を使用してアクティベートすることです。
 
 #### 開始する準備を整える {#prerequisites}
 
@@ -60,7 +60,7 @@ Cloud Service 環境で [!DNL Dynamic Media with OpenAPI] を有効にするに�
 
 1. 確認ダイアログで「**[!UICONTROL アクティベート]**」をクリックして、[!DNL Dynamic Media with OpenAPI] アクティベーションプロセスを開始します。アクティベーションが成功すると、Cloud Manager に次のステータス更新が表示されます。
    1. **[!UICONTROL 環境ステージ]**：**[!UICONTROL 実行中]**
-   1. ![DM のアクティベート](/help/assets/assets/Images_icon.svg)**[!UICONTROL &#x200B; Dynamic Media &#x200B;]**：**[!UICONTROL &#x200B; OpenAPI 機能がアクティベートされています&#x200B;]**
+   1. ![DM のアクティベート](/help/assets/assets/Images_icon.svg)**[!UICONTROL  Dynamic Media ]**：**[!UICONTROL  OpenAPI 機能がアクティベートされています&#x200B;]**
 
       ![アクティベーション成功](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
@@ -69,7 +69,7 @@ Cloud Service 環境で [!DNL Dynamic Media with OpenAPI] を有効にするに�
 アクティベーションに失敗した場合、Cloud Manager に次のステータス更新が表示されます。
 
 * **[!UICONTROL 環境ステージ]**：**[!UICONTROL OpenAPI を使用した DM にエラーが発生しました]**
-* ![DM のアクティベート](/help/assets/assets/Images_icon.svg)**[!UICONTROL &#x200B; Dynamic Media &#x200B;]**：**[!UICONTROL &#x200B; OpenAPI 機能のアクティベートに失敗しました&#x200B;]**
+* ![DM のアクティベート](/help/assets/assets/Images_icon.svg)**[!UICONTROL  Dynamic Media ]**：**[!UICONTROL  OpenAPI 機能のアクティベートに失敗しました&#x200B;]**
 
   ![アクティベーションを再試行](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 
@@ -194,7 +194,7 @@ Cloud Manager で次の手順を実行して、配信層にカスタムドメイ
 
    ![実稼動対応オプション](/help/assets/assets/go-live-readiness-option.png)
 
-1. **[!UICONTROL CNAME を設定]** 手順を実行して、DNS サービスプロバイダーの DNS レコードに `cdn.adobeaemcloud.com` （CNAME レコード）をマッピングします。 このマッピングにより、カスタムドメインで受信したリクエストがアドビの CDN にリダイレクトされるようになります。
+1. **[!UICONTROL CNAME を設定]**&#x200B;手順を実行して、DNS サービスプロバイダーの DNS レコードに `cdn.adobeaemcloud.com`（CNAME レコード）をマッピングします。このマッピングにより、カスタムドメインで受信したリクエストがアドビの CDN にリダイレクトされるようになります。
 
    ![実稼動対応ダイアログ](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="left"}
 
@@ -214,9 +214,9 @@ Create an API key to access [!DNL Dynamic Media] with OpenAPIs and the delivery 
 
 To start the API keys onboarding process, ensure you have:
 
-1. [Access to Cloud Manager](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
+1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [Activated [!DNL Dynamic Media with OpenAPI] in your environment](#activate-dynamic-media-with-openapi).
-1. [Access to the Adobe Developer Console](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#create-adobe-developer-console-adc-project).
+1. [Access to the Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#create-adobe-developer-console-adc-project).
 
 #### Onboard the API keys using [!DNL AEM Dynamic Media] API card {#onboarding-api-keys-using-aem-dynamic-media-api-card}
 
@@ -239,7 +239,7 @@ Execute the following steps to create an API key to access [!DNL Dynamic Media] 
    >
    >This delivery instance is common for [!DNL Content Hub] and [!DNL Dynamic Media] with OpenAPI capabilities.
 
-1. Navigate to the [Adobe Developer console](https://developer.adobe.com/console) and [create a new project](https://developer.adobe.com/dep/guides/dev-console/create-project/). See [Invoke OpenAPI-based AEM APIs for server to server authentication](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) to learn about creating a new project.
+1. Navigate to the [Adobe Developer console](https://developer.adobe.com/console) and [create a new project](https://developer.adobe.com/dep/guides/dev-console/create-project/). See [Invoke OpenAPI-based AEM APIs for server to server authentication](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) to learn about creating a new project.
 1. Select **[!UICONTROL AEM Dynamic Media API]** to access to the [!DNL Dynamic Media with OpenAPI capabilities] and click **[!UICONTROL Next]**.
 ![adobe developer console](/help/assets/assets/adobe-developer-console.png)
 1. Select **[!UICONTROL Server-to-Server Authentication]** and click **[!UICONTROL Next]**. See [Server to Server authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) to learn more about this authentication type.
@@ -263,7 +263,7 @@ headers: {
       'X-Api-Key': 'YOUR_API_KEY_HERE'
     `},
 ```
-See [Search Assets API](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/search-assets-api#search-assets-api-header) for more information.
+See [Search Assets API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/search-assets-api#search-assets-api-header) for more information.
 
 ### Access Delivery tier backed Asset Selector {#access-delivery-tier-backed-asset-selector}
 

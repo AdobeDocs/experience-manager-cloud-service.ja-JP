@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 924fa9e731935ca43387801d10ddd339929cc3d4
 workflow-type: tm+mt
 source-wordcount: '6320'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -730,8 +730,8 @@ ht-degree: 98%
       + [Adobe Express とのネイティブ統合](/help/assets/native-integration-adobe-express.md)
    + Creative Cloud との統合 {#integration-creative-cloud}
       + [AEM Assets を Creative Cloud に接続](/help/assets/connect-assets-with-creative-cloud.md)
-   + AEM AssetsとEdge Delivery Servicesの統合 {#integrate-aem-assets-edge-delivery-services}
-      + [Edge Delivery Services用のコンテンツのオーサリング時のAEM Assetsの統合 ](/help/assets/integrate-aem-assets-edge-delivery-services.md)
+   + AEM Assets と Edge Delivery Services の統合 {#integrate-aem-assets-edge-delivery-services}
+      + [AEM Assets と Edge Delivery Services 向けコンテンツのオーサリングの統合](/help/assets/integrate-aem-assets-edge-delivery-services.md)
 + Forms {#forms}
    + 概要 {#forms-overview}
       + [はじめに](/help/forms/home.md)
@@ -1081,8 +1081,8 @@ ht-degree: 98%
          + [フォームの公開およびデプロイ方法：ユニバーサルエディター公開ガイド](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [カスタムフォームコンポーネントの作成：ユニバーサルエディター開発者向けガイド](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [フォームデータモデルの統合：Forms とフォームデータモデルの統合](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-         + [再利用可能なモジュール型およびスタンドアロンのセグメント：フォーム内でのフォームフラグメントの作成と使用](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
-         + [Edge Delivery Services フォーム送信での 403 Forbidden エラーのトラブルシューティング ](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
+         + [再利用可能なモジュール型スタンドアロンセグメント：フォーム内でのフォームフラグメントの作成と使用](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [Edge Delivery Services フォーム送信での 403 Forbidden エラーのトラブルシューティング](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + ドキュメントベースのオーサリング {#getting-started-edge-delivery-services-forms}
          + [最初のフォームの作成：Google Sheetsと Excel を使用したクイックスタートガイド](/help/edge/docs/forms/tutorial.md)
          + [Google Sheets または Excel を使用したフォームの作成方法：ステップバイステップガイド](/help/edge/docs/forms/create-forms.md)
@@ -1214,14 +1214,14 @@ ht-degree: 98%
          + [プロジェクトのセットアップ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [環境の管理](/help/implementing/cloud-manager/manage-environments.md)
-      + [専用テスト環境（Beta）](/help/implementing/cloud-manager/specialized-test-environment.md)
+      + [特殊なテスト環境（ベータ版）](/help/implementing/cloud-manager/specialized-test-environment.md)
       + コードの管理 {#managing-code}
          + [Maven プロジェクトのバージョン処理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Cloud Managerでのリポジトリの管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Adobe リポジトリの追加](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [プライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [外部リポジトリの追加（Beta）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
-         + [外部リポジトリのアクセストークンの管理（Beta）](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+         + [外部リポジトリの追加（ベータ版）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [外部リポジトリのアクセストークンの管理（ベータ版）](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
          + [リポジトリへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git サブモジュールのサポート](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Cloud Manager での Git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
