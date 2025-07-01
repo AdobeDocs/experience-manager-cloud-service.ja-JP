@@ -2,10 +2,10 @@
 title: コンテンツハブに関するよくある質問（FAQ）
 description: コンテンツハブに関するよくある質問（FAQ）への回答を参照してください。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '1293'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## コンテンツハブとは何ですか？ {#what-is-content-hub}
 
-コンテンツハブは、Adobe Experience Manager Assets as a Cloud Service の機能です。
+Content Hubは、Adobe Experience Manager Assets as a Cloud Serviceの機能です。
 
 コンテンツハブを使用すると、より広範なチームが直感的なポータルを通じて関連性のある承認済みアセットを簡単に見つけて、ニーズに迅速に適応させることができます。さらに、コンテンツハブは、ユーザーがアセットを DAM にアップロードする際に簡単にセルフサービスできる取り込みメカニズムを提供します。これにより、ブランドの一貫性と適切な保護措置への準拠を維持しながら、コンテンツ作成速度の向上に対する組織のニーズに直接対応できます。
 

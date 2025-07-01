@@ -3,10 +3,10 @@ title: Content Hub からのアセットのダウンロード
 description: 1 つまたは複数のアセットとそのレンディションを Content Hub ポータルからダウンロードする方法について説明します。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '814'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 [!DNL Content Hub] を使用して、1 つまたは複数のアセットとその使用可能なレンディションをダウンロードできます。
 
-[Content Hub での使用可能なレンディションのタイプ](#types-of-renditions)を参照してください。
+詳しくは、[Content Hubで使用できるレンディションのタイプ ](#types-of-renditions) を参照してください。
 
 ## 1 つ以上のアセットとそのレンディションのダウンロード {#download-asset-renditions}
 

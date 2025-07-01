@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '1654'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 

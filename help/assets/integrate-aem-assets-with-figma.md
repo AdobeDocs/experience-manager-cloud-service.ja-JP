@@ -4,12 +4,13 @@ description: ' [!DNL AEM Assets]  と  [!DNL Figma]  を統合して、デザイ
 hide: false
 role: User
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 3603a98dfee62db49f3201c8d75aa8eee4909cc1
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
+
 
 # [!DNL AEM Assets] と [!DNL Figma] の統合{#integrate-aem-assets-with-figma}
 
@@ -17,13 +18,13 @@ ht-degree: 2%
 
 ## 開始する前に{#prerequisites-for-aem-assets-and-figma-integration}
 
-* 最低限必要なAEMのリリースバージョンは `19149` です。
+* AEM のリリースバージョン `19149` 以上が必要です。
 
 * [!DNL AEM Assets] を [!DNL Figma] と統合するには、有効な [!DNL AEM Assets] ライセンスと [!DNL Figma] ライセンスが必要です。
 
-## [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタへのアクセス &#x200B;]{#access-aem-assets-connector}
+## [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタへのアクセス ]{#access-aem-assets-connector}
 
-次の手順を実行して、[!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ &#x200B;] にアクセスします。
+次の手順を実行して、[!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ ] にアクセスします。
 
 1. [!DNL Figma] ホームページで、キャンバスの下部にあるツールバーの **[!UICONTROL アクション]** をクリックし、ダイアログボックスで使用できる検索バーで [!DNL Adobe Experience Manager (AEM) Assets Connector] を検索します。
 1. 「[!DNL Adobe Experience Manager (AEM) Assets Connector]」を選択すると、[!DNL Adobe Experience Manager (AEM) Assets Connector] パネルが表示されます。 このパネルを使用して [ [!DNL AEM]  アセットをキャンバスに読み込み ](#import-aem-assets-into-figma-workflow) す  [!DNL Figma] 。
@@ -37,9 +38,9 @@ ht-degree: 2%
 
 ## [!DNL AEM] アセットのキャンバスへ [!DNL Figma] 読み込み{#import-aem-assets-into-figma-workflow}
 
-[!DNL Figma] デザインインターフェイス内の [1&rbrace;Adobe Experience Manager（AEM）Assets Connector] パネルにアクセス (#access-aem-assets-connector) て、次の手順を実行します。
+[!DNL Figma] デザインインターフェイス内の [1}Adobe Experience Manager（AEM）Assets Connector] パネルにアクセス ](#access-aem-assets-connector) て、次の手順を実行します。[!UICONTROL 
 
-1. [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ &#x200B;] パネルでアセットを検索します。 詳しくは、[ アセットセレクターの使用 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector) を参照してください。
+1. [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ ] パネルでアセットを検索します。 詳しくは、[ アセットセレクターの使用 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector) を参照してください。
 
 1. アセットをキャンバスにドラッグ&amp;ドロップするか、アセットを選択して **[!UICONTROL 選択]** をクリックして、アセットをキャンバスに移動します。
 

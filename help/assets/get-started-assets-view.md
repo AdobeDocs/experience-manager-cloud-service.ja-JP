@@ -4,10 +4,10 @@ description: ' [!DNL Assets View] のアクセス方法、ログイン操作、�
 role: User, Leader
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 100%
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
-* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&lang=ja#support)に問い合わせる
 
 
 <!--TBD: Merge the below rows in the table when the use cases are documented/available.

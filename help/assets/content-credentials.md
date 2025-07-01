@@ -3,16 +3,16 @@ title: Content Credentials の統合
 description: AEM Assets に統合され、アセットビュー内に表示される Content Credentials を使用すると、アセットの作成方法や作成に関わったユーザーなど、アセットの履歴に関するコンテキストを提供できます。デジタルコンテンツの栄養ラベルと同様に、Content Credentials は透明性を高め、オーディエンスとの信頼関係を構築するのに役立ちます。
 role: User
 exl-id: 27c25ae0-4477-40c3-85c8-3e0aa725aba7
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
 # Content Credentials {#content-credentials}
 
-ブランドは、コンテンツの透明性、AI の開示、アセットの改ざん防止について、これまで以上に関心を寄せています。アドビのコンテンツ認証イニシアチブ（CAI）は、[Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model)（C2PA）技術標準に準拠したツールを作成しています。新しい種類の暗号化された改ざん防止メタデータである Content Credentials は、閲覧者がコンテンツの系統を理解し、ブランドアセットの整合性を確保するのに役立ちます。これらには、デジタルアセットの履歴に関するインサイトを提供する様々な来歴データを含めることができます。
+ブランドは、コンテンツの透明性、AI の開示、アセットの改ざん防止について、これまで以上に関心を寄せています。アドビのコンテンツ認証イニシアチブ（CAI）は、[Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model)（C2PA）技術標準に準拠したツールを作成しています。新しい種類の暗号化された改ざん防止メタデータである Content Credentials は、閲覧者がコンテンツの系統を理解し、ブランドアセットの整合性を確保するのに役立ちます。これには、insightをデジタルアセットの履歴に提供する様々な出所データを含めることができます。
 
 この情報には次が含まれる場合があります。
 
