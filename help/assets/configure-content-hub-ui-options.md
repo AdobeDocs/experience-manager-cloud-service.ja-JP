@@ -2,10 +2,10 @@
 title: コンテンツハブユーザーインターフェイスの設定
 description: コンテンツハブユーザーインターフェイスの設定
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a60b0e8ccba2680b0f053f3349adca21b65c3045
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 95%
+source-wordcount: '2089'
+ht-degree: 81%
 
 ---
 
@@ -96,11 +96,10 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 すべての変更を行ったら、「**[!UICONTROL 保存]**」をクリックして、変更を適用します。
 
-![コンテンツハブの設定 UI のアップロードの詳細](assets/configuration-ui-upload-details.png)
+![コンテンツハブの設定 UI のアップロードの詳細](/help/assets/assets/import-content-hub.png)
 
-設定ユーザーインターフェイスで有効になっているメタデータは、アセットアップロードページに表示されます。
-
-![コンテンツハブのメタデータのアップロード](assets/configuration-ui-add-assets.png)
+設定ユーザーインターフェイスで有効にしたメタデータは、アセットのアップロードページに表示されます。
+![Content Hubへのメタデータのアップロード ](assets/add-assets-for-approval.png)
 
 ### フィルター {#configure-filters-content-hub}
 
@@ -120,12 +119,10 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
    >新しいフィルターは、リポジトリ内にフィルター条件に一致するアセットが 1 つ以上ある場合にのみ、検索ページに表示されます。
 
 同様に、使用可能な各フィルターの横にある ![編集アイコン](assets/do-not-localize/edit_icon.svg) をクリックしてラベルを編集したり、削除アイコンをクリックして既存のフィルターを削除したりできます。すべての変更を行ったら、「**[!UICONTROL 保存]**」をクリックして、変更を適用します。
-
-![コンテンツハブの設定 UI のフィルター](assets/configuration-ui-filters.png)
+![コンテンツハブの設定 UI のフィルター](assets/configuration-filter.png)
 
 設定ユーザーインターフェイスで有効になっているフィルターは、検索ページに表示されます。
-
-![コンテンツハブの検索](assets/filters-for-search.png)
+![Content Hubで検索 ](assets/content-hub-filters.png)
 
 
 ### アセットの詳細 {#configure-asset-details-content-hub}
@@ -143,25 +140,24 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 同様に、使用可能な各プロパティの横にある ![編集アイコン](assets/do-not-localize/edit_icon.svg) をクリックしてラベルを編集したり、削除アイコンをクリックして既存のアセットの詳細を削除したりできます。すべての変更を行ったら、「**[!UICONTROL 保存]**」をクリックして、変更を適用します。
 
-![コンテンツハブの設定 UI のアセットの詳細](assets/configuration-ui-asset-details.png)
+![コンテンツハブの設定 UI のアセットの詳細](assets/configuration-asset-details.png)
 
 設定ユーザーインターフェイスで有効になっているプロパティは、アセットの詳細ページに表示されます。
 
-![コンテンツハブのアセットプロパティ](assets/config-ui-asset-properties.png)
+![コンテンツハブのアセットプロパティ](assets/asset-details-page-content-hub.png)
 
 ### アセットカード {#asset-card}
 
-**アセットカード**&#x200B;に表示する必要がある主なメタデータフィールドを最大 6 個まで設定することもできます。これを行うには、次の手順を実行します。
-
-![アセットカードの主なメタデータ](/help/assets/assets/asset-card-key-metadata.png)
+**アセットカード** に表示する必要がある主要なメタデータプロパティを、最大 6 つのフィールドまで設定できます。
+![ アセットカード上の主要なメタデータ ](/help/assets/assets/asset-card-metadata.png)
+次の手順を実行して、メタデータプロパティを設定し、**[!UICONTROL アセットカード]** に表示します。
 
 1. [設定](#access-configuration-options-content-hub)ユーザーインターフェイスで、「**アセットカード**」をクリックします。
 2. 「**メタデータを追加**」をクリックします。**アセットカードメタデータを追加**&#x200B;ダイアログボックスが表示されます。
 3. 「**ラベル**」フィールドでメタデータ名を指定し、「**メタデータ**」フィールドでメタデータプロパティを選択します。
 4. 「**確認**」をクリックし、「**保存**」をクリックして変更を適用し、新しいプロパティがアセットの詳細ページに表示されるようにします。
-   ![アセットカード](/help/assets/assets/asset-card.png)
-
-同様に、使用可能な各プロパティの横にある ![編集](/help/assets/assets/edit-content-hub.svg) をクリックして必要な変更を行うか、![削除](/help/assets/assets/delete-content-hub.svg) をクリックして既存のメタデータプロパティを削除します。すべての変更を行ったら、「**保存**」をクリックして、変更を適用します。
+   ![ アセットカード ](/help/assets/assets/configuration-asset-card.png)
+同様に、使用可能な各プロパティの横にある「![ 編集 ](/help/assets/assets/edit-content-hub.svg)」をクリックして必要な変更を加えるか、「![ 削除 ](/help/assets/assets/delete-content-hub.svg)」をクリックして既存のメタデータプロパティを削除します。 すべての変更を行ったら、「**保存**」をクリックして、変更を適用します。
 
 ### 検索 {#configure-metadata-search-content-hub}
 
@@ -174,11 +170,13 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 1. 「**[!UICONTROL 保存]**」をクリックして変更を適用し、新しいメタデータプロパティがメタデータフィールドのリストに表示されるようにします。
 
 同様に、使用可能な各メタデータプロパティの横にある ![編集アイコン](assets/do-not-localize/edit_icon.svg) をクリックしてプロパティを編集したり、削除アイコンをクリックして既存のプロパティを削除したりできます。すべての変更を行ったら、「**[!UICONTROL 保存]**」をクリックして、変更を適用します。
-![コンテンツハブの設定 UI の検索](assets/configuration-ui-metadata-search.png)
+![コンテンツハブの設定 UI の検索](assets/configuration-search.png)
 
 ### ブランディング {#configure-branding-content-hub}
 
-管理者は、ブランディング要件に合わせて [!DNL Content Hub] ポータルをカスタマイズできます。![ブランディング](/help/assets/assets/ColorPalette.svg) **[!UICONTROL ブランディング]** ページでは、「**[!UICONTROL バナー]**」、「**[!UICONTROL カラー]**」および「**[!UICONTROL バナー画像]**」の各セクションを使用して、次のカスタマイズを実行します。
+管理者は、ブランディング要件に合わせて [!DNL Content Hub] ポータルをカスタマイズします。
+![ デフォルトにリセット ](/help/assets/assets/reset-default-content-hub.png)
+![ ブランディング ](/help/assets/assets/ColorPalette.svg)**[!UICONTROL ブランディング]** ページでは、**[!UICONTROL バナー]**、**[!UICONTROL カラー]** および **[!UICONTROL バナー画像]** の各セクションを使用して、次のカスタマイズを実行します。
 
 1. [「[!UICONTROL バナー画像]」セクションからバナー画像を変更する](#Change-the-banner-image)
 1. [バナーのタイトルと本文を更新し、「[!UICONTROL バナー]」セクションからテキストカラーを変更します](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
@@ -192,21 +190,23 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 1. ![画像を選択](/help/assets/assets/Browse.svg) **[!UICONTROL ギャラリーから選択]**&#x200B;をクリックし、アセットセレクターダイアログボックスを使用してバナー画像を選択します。アセットセレクターには、承認済みの画像のみが表示されます。
 1. 画像を選択し、**[!UICONTROL 選択]**、**[!UICONTROL 保存]**&#x200B;の順にクリックして、[!DNL Content Hub] デプロイメントのバナー画像として表示します。
+   ![ バナー画像 ](/help/assets/assets/banner-image-content-hub.png)
 
 #### タイトルと本文をバナーに追加し、テキストカラーを変更します{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
 ![ブランディング](/help/assets/assets/ColorPalette.svg) **[!UICONTROL ブランディング]** ページで、「**[!UICONTROL バナー]**」セクションの各フィールドを使用して、タイトルと本文をバナーに追加します。
-**[!UICONTROL バナーテキストのカラー]**&#x200B;の横にある正方形ボックスをクリックして、バナーテキストのカラーピッカーからテキストカラーを選択するか、カラーピッカーの正方形ボックスの横のフィールドにカラーの 16 進コードを指定します。
+**[!UICONTROL バナーテキストのカラー]** の横にある正方形ボックスをクリックして、バナーテキストのカラーピッカーからテキストカラーを選択するか、カラーピッカーの正方形ボックスの横のフィールドにカラーの 16 進コードを指定します。
+![ バナーテキストコンテンツハブ ](/help/assets/assets/banner-text-content-hub.png)
 
 #### プライマリカラーとセカンダリカラーの変更{#Change-the-primary-and-secondary-color}
 
 ![ ブランディング](/help/assets/assets/ColorPalette.svg) **[!UICONTROL ブランディング]** ページでは、「**[!UICONTROL カラー]**」セクションを使用して、カラーピッカーを使用して選択するか、カラーの 16 進数コードを定義することによって、プライマリカラーとセカンダリカラーを設定します。これらのカラーは、UI 要素の背景、テキスト、アイコンのカラーを設定して、[!DNL Content Hub] UI をブランドのテーマに合わせます。
+![ プライマリ カラーとセカンダリ カラー ](/help/assets/assets/primary-secondary-color-content-hub.png)
+**[!UICONTROL プライマリの色 ]:** プライマリの色の設定は、ホーム ページおよび [!UICONTROL  構成 ] ページを含む [!DNL Content Hub] ージ全体で、選択アクション、チェックボックスなどのインタラクティブ要素、検索バー、およびトグル スイッチ [!DNL Content Hub] 適用されます。 また、**[!UICONTROL すべてのアセット]**&#x200B;ページや&#x200B;**[!UICONTROL コレクション]**&#x200B;ページで使用できるオプションなど、プライマリ [!DNL Content Hub] インターフェイスで使用できるアクションオプションにも適用されます。
 
-**[!UICONTROL プライマリカラー]：**&#x200B;プライマリカラースキームは、[!DNL Content Hub] ホーム ページや[!UICONTROL 設定]ページを含む [!DNL Content Hub] 全体の選択アクション、チェックボックスなどのインタラクティブ要素、検索バー、切り替えスイッチに適用されます。また、**[!UICONTROL すべてのアセット]**&#x200B;ページや&#x200B;**[!UICONTROL コレクション]**&#x200B;ページで使用できるオプションなど、プライマリ [!DNL Content Hub] インターフェイスで使用できるアクションオプションにも適用されます。
+**[!UICONTROL セカンダリカラー]：**[!DNL Content Hub] ホームページでは、ダイアログボックス内で使用可能な UI オプションおよび入力フィールドにセカンダリカラースキームが適用されます。選択アクション、チェックボックス、検索バー、切り替えスイッチを除く、[!UICONTROL 設定]ページで使用可能なすべての設定メニューオプションに適用されます。
 
-**[!UICONTROL セカンダリカラー]：**&#x200B;[!DNL Content Hub] ホームページでは、ダイアログボックス内で使用可能な UI オプションおよび入力フィールドにセカンダリカラースキームが適用されます。選択アクション、チェックボックス、検索バー、切り替えスイッチを除く、[!UICONTROL 設定]ページで使用可能なすべての設定メニューオプションに適用されます。
-
-### 有効期限切れのアセット{#expired-assets-content-hub}
+### アセットの表示{#asset-visibility-content-hub}
 
 管理者は、有効期限切れのアセットをコンテンツハブに表示する必要があるかどうかを制御できます。有効期限切れのアセットを表示する場合は、ユーザーがこれらをダウンロードできるかどうかも定義できます。
 
@@ -214,15 +214,15 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 これを行うには、次の手順を実行します。
 
-1. [設定](#access-configuration-options-content-hub)ユーザーインターフェイスで、「**[!UICONTROL 有効期限切れのアセット]**」をクリックします。
+1. [ 設定 ](#access-configuration-options-content-hub) ユーザーインターフェイスで、「**[!UICONTROL アセットの表示]**」をクリックします。
 
 1. 「**[!UICONTROL 表示]**」セクションで、「**[!UICONTROL ユーザーが有効期限切れのアセットを表示することを許可]**」切替スイッチを有効にし、有効期限切れのアセットがすべてコンテンツハブに表示されるようにします。
 
 1. アセットの表示を有効にした後、「**[!UICONTROL ユーザーが有効期限切れのアセットをダウンロードすることを許可]**」切替スイッチを使用して、有効期限切れのアセットをダウンロードする機能を有効または無効にすることができます。
-
+1. **[!UICONTROL 配信の承認されたアセットの表示をユーザーに許可]** を有効にして、Content Hubで配信の承認されたすべてのアセットを表示するように切り替えます。
 1. 「**[!UICONTROL 保存]**」をクリックして、変更内容を適用します。
 
-   ![コンテンツハブの有効期限切れのアセット](assets/expired-assets-content-hub.png)
+   ![コンテンツハブの有効期限切れのアセット](assets/asset-visibility-content-hub.png)
 
 アセットの表示を有効にすると、次の画像に示すように、コンテンツハブで有効期限切れのアセットを表示できます。
 
@@ -244,7 +244,7 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 * 「**[!UICONTROL ユーザーに元のアセットのダウンロードを許可]**」切替スイッチを有効または無効にして、元のアセットをダウンロードできるかどうかを制御します。
 
-  ![コンテンツハブのレンディション設定](assets/config-renditions.png)
+  ![コンテンツハブのレンディション設定](assets/configuration-renditions.png)
 
 コンテンツハブでレンディションを表示およびダウンロードする方法について詳しくは、[コンテンツハブでのアセットのダウンロード](/help/assets/download-assets-content-hub.md)を参照してください。
 
@@ -263,11 +263,9 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 1. 「**[!UICONTROL 保存]**」をクリックして、変更内容を適用します。
 
 同様に、各 URL の横にある ![編集アイコン](assets/do-not-localize/edit_icon.svg) をクリックしてリンクを編集したり、削除アイコンをクリックして既存の URL を削除したりできます。すべての変更を行ったら、「**[!UICONTROL 保存]**」をクリックして、変更を適用します。
+![コンテンツハブの設定 UI のカスタムリンク](assets/configuration-custom-links.png)
 
-![コンテンツハブの設定 UI のカスタムリンク](assets/configuration-ui-custom-links.png)
-
-カスタムリンクは、コンテンツハブのホームページの「インサイト」タブの横に新規タブとして表示されます。
-
+カスタムリンクは、Content Hub ホームページで「インサイト」タブの横に新しいタブとして表示されます。
 ![コンテンツハブの設定 UI の「カスタムリンク」タブ](assets/configuration-ui-custom-link-tab.png)
 
 ### コレクションと共有 {#configure-collections-content-hub}
