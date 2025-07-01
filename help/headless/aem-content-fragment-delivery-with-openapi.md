@@ -4,10 +4,10 @@ description: OpenAPI を活用した AEM コンテンツフラグメント配信
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
-workflow-type: ht
-source-wordcount: '475'
-ht-degree: 100%
+source-git-commit: 28d0d6bdfd9e6f1c1483bed7c5e65df340e8b559
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 90%
 
 ---
 
@@ -76,9 +76,11 @@ OpenAPI を使用したコンテンツフラグメント配信をプレビュー
 
 Dispatcher 設定側で定義された CORS 許可されたオリジン（特に GraphQL 用）は、この API では考慮されません。
 
-<!-- 
-## API Rate Limits {#api-rate-limits}
--->
+## API レート制限 {#api-rate-limits}
+
+この API を使用すると、環境ごとに最大 200 リクエスト/秒のレートで新規リクエストを許可します。
+
+この制限を超えると、API は 429 エラーの送信を開始します。 これらのエラーはクライアントアプリケーションで処理する必要があり、失敗したリクエストは指数バックオフの再試行後に再試行されます。
 
 <!-- 
 ## Limitations {#limitations}
