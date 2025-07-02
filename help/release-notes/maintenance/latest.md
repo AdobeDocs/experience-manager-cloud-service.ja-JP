@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 467e21aff1c2164be729598d03f30f6a9e90c8aa
+source-git-commit: 080a79cdc0e48a54570ea53618b1f0be164d5156
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1768'
 ht-degree: 83%
 
 ---
@@ -46,11 +46,11 @@ ht-degree: 83%
 * SITES-27775：公開中に最適化された参照検索（メタデータの遅延読み込み）。
 * SITES-27782：ユニバーサルエディターを使用したEdge Delivery：特定のパブリッシャー/サブスクライバー実装を追加して、コンテンツをEdge Deliveryに公開する（早期アクセス）。
 * SITES-27792：ユニバーサルエディターを使用したEdge Delivery：専用のEdge Delivery サービス設定テンプレートを追加する。
-* SITES-28557：コンテンツフラグメント Rest API: `references=direct` を使用して `/cf/fragments/{fragmentId}` を呼び出し、コンテンツフラグメントにパッチを適用することで取得した ETag の使用を許可します。
+* SITES-28557：コンテンツフラグメント Rest API: `/cf/fragments/{fragmentId}` を使用して `references=direct` を呼び出し、コンテンツフラグメントにパッチを適用することで取得した ETag の使用を許可します。
 * SITES-28683：MSM LiveRelationship 検索で詳細ステータスをスキップできるようにする。
 * SITES-29601：コンテンツフラグメント Rest API：長いテキストフィールドのコンテンツフラグメント参照の検証。
 * SITES-29614：コンテンツフラグメント Rest API:`/cf/workflows/{workflowInstanceId}` エンドポイントを使用してワークフローを取得します。workflowInstanceIda は、公開リクエストによって返された ID です。
-* SITES-29615：コンテンツフラグメント Rest API:`GET /cf/batch` を使用して POST リク `/cf/batch` ストで作成されたすべてのバッチリクエストをリストします。
+* SITES-29615：コンテンツフラグメント Rest API:`/cf/batch` を使用して POST リク `GET /cf/batch` ストで作成されたすべてのバッチリクエストをリストします。
 * SITES-29874：コンテンツフラグメント Rest API：コンテンツフラグメントの長いテキストフィールドからの参照を取得し、ハイドレートするようになりました。
 * SITES-29930：コンテンツフラグメント Rest API：コンテンツフラグメント公開ワークフローの指標を追加する。
 * SITES-29986：コンテンツフラグメント Rest API：CF モデルの技術的な命名をサポートする。
@@ -124,7 +124,7 @@ ht-degree: 83%
 * SITES-30899：「後で」ロールアウトオプションを使用すると、日付を選択せずに続行できます。
 * SITES-30947：ロールアウト時にブループリントに「behavior」プロパティがないことが原因で、ヌルポインター例外が発生する。
 * SITES-31157：コンテンツフラグメント Rest API：パッチが失敗するという特殊なケースです。
-* SITES-31162：コンテンツフラグメント Rest API:`ModelFieldMapper` の `DateTimeField` フィールドのキャストの問題を修正しました。
+* SITES-31162：コンテンツフラグメント Rest API:`DateTimeField` の `ModelFieldMapper` フィールドのキャストの問題を修正しました。
 * SITES-31174：コンテンツフラグメント Rest API：公開リクエストと共にタグが公開されませんでした。
 * SITES-31272：PageManager.copy から Assets 言語コピーを作成できない。
 * SITES-31327：コンテンツフラグメント Rest API：GET フラグメントリクエストで ETag 検証を削除します。
@@ -146,7 +146,7 @@ ht-degree: 83%
 
 ### 既知の問題 {#known-issues-21331}
 
-なし。
+* SITES-33177：コンマ区切りの文字列として保存されたセクションスタイルが壊れている。
 
 ### 廃止された機能と API {#deprecated-21331}
 
