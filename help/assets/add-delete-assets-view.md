@@ -4,10 +4,10 @@ description: ' [!DNL Assets view] へのアセットのアップロード、ア�
 role: User
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 次の方法を使用して、1 つ以上のアセットまたはアセットを含んだフォルダーをアップロードできます。
 
 * ユーザーインターフェイス上でアセットまたはフォルダーをドラッグし、画面の指示に従って操作します。
-* ツールバーの「**[!UICONTROL Assetsを追加]**」オプションをクリックし、ファイルをいくつかアップロードダイアログに追加します。
+* ツールバーの「**[!UICONTROL アセットを追加]**」オプションをクリックし、ファイルをいくつかアップロードダイアログに追加します。
 
 <!-- TBD: Update this GIF
 ![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif) -->
@@ -108,4 +108,4 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
-* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&lang=ja#support)に問い合わせる

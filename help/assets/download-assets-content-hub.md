@@ -3,10 +3,10 @@ title: Content Hub からのアセットのダウンロード
 description: 1 つまたは複数のアセットとそのレンディションを Content Hub ポータルからダウンロードする方法について説明します。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '814'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 [!DNL Content Hub] を使用して、1 つまたは複数のアセットとその使用可能なレンディションをダウンロードできます。
 
-詳しくは、[Content Hubで使用できるレンディションのタイプ ](#types-of-renditions) を参照してください。
+[Content Hub での使用可能なレンディションのタイプ](#types-of-renditions)を参照してください。
 
 ## 1 つ以上のアセットとそのレンディションのダウンロード {#download-asset-renditions}
 
@@ -27,7 +27,7 @@ ht-degree: 98%
 
    または、アセットのサムネイルをクリックして「![ダウンロード](/help/assets/assets/download-icon.svg)」を選択し、ダイアログボックスで使用可能なレンディションを選択して表示してからダウンロードすることもできます。
 
-1. 複数のアセットをダウンロードするには、アセットを選択し、![ダウンロード](/help/assets/assets/download-icon.svg) **[!UICONTROL ダウンロード]** をクリックして、**[!UICONTROL アセットをダウンロード]**&#x200B;ダイアログボックスで選択したアセットのリストを確認します。アセットの横にある「![選択解除](/help/assets/assets/Close.svg)」をクリックして、リストから選択を解除します。1 つ以上のレンディションを選択し、「**[!UICONTROL ダウンロード]**」をクリックして、単一の ZIP ファイルとしてダウンロードします。**[!UICONTROL スマート切り抜き]**&#x200B;および&#x200B;**[!UICONTROL 静的レンディション]**&#x200B;を選択すると、選択した各アセットの使用可能なすべての静的およびスマート切り抜きレンディションがダウンロードされます。
+1. 複数のアセットをダウンロードするには、アセットを選択し、![ダウンロード](/help/assets/assets/download-icon.svg) **[!UICONTROL ダウンロード]** をクリックして、**[!UICONTROL アセットをダウンロード]**&#x200B;ダイアログボックスで選択したアセットのリストを確認します。アセットの横にある「![選択解除](/help/assets/assets/Close.svg)」をクリックして、リストから選択を解除します。1 つ以上のレンディションを選択し、「**[!UICONTROL ダウンロード]**」をクリックして、単一の ZIP ファイルとしてダウンロードします。**[!UICONTROL スマート切り抜き]**&#x200B;および&#x200B;**[!UICONTROL 静的レンディション]**を選択すると、選択した各アセットの使用可能なすべての静的およびスマート切り抜きレンディションがダウンロードされます。
    ![複数のアセットのダウンロード](/help/assets/assets/download-multiple-assets-CH.png)
 ダウンロードの進行中も [!DNL Content Hub] を引き続き使用できます。Content Hub は、ダウンロードプロセス中にワークフローを中断しません。
    ![複数のアセットのダウンロード](/help/assets/assets/download-assets-notification-ch.png)
