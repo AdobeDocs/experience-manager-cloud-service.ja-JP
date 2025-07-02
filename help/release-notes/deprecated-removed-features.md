@@ -4,10 +4,10 @@ description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 1f6aabc76551340ed296571e14daf2a1ef557717
-workflow-type: ht
-source-wordcount: '3181'
-ht-degree: 100%
+source-git-commit: 67a69970399298c3d35f1851111a0e586f32ab4b
+workflow-type: tm+mt
+source-wordcount: '3193'
+ht-degree: 98%
 
 ---
 
@@ -453,9 +453,9 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
 | **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | すべて | 2025/06/03 | 2025/08/31 |
 | **`org.apache.http.proxyconfigurator`** | すべて | 2025/06/03 | 2025/08/31 |
 
-### 変更不能な OSGi プロパティ {#unmodifiable-osgi-properties}
+### 変更不能な OSGi 設定 {#unmodifiable-osgi-properties}
 
-次の OSGi コンポーネント PID のプロパティは、以下に説明するように変更することはできません。
+次の OSGi コンポーネント PID のプロパティは変更できないので、設定しないでください。
 
 | **OSGI コンポーネント ID** | **変更不能プロパティ** |
 |---|---|
@@ -475,7 +475,7 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
 
 ### 将来的に適用される OSGi プロパティの制限 {#future-restrictions-osgi-properties}
 
-今後、Adobeは次の OSGi プロパティ制限を適用するため、使用を停止する必要があります。
+今後、Adobeは次の OSGi プロパティ制限を適用します。 上記の PID の場合、リストに表示されているプロパティのみを設定できます。
 
 | OSGi コンポーネントの PID |   | 必須 | タイプ | 制限 (該当する場合) |
 |---|---|---|---|---|
