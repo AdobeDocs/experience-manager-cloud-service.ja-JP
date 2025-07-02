@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 88b9686a1ceec6729d9657d4bb6f458d9c411065
+source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 0%
+source-wordcount: '2184'
+ht-degree: 34%
 
 ---
 
@@ -56,9 +56,9 @@ ht-degree: 0%
 
 カスタム関数でフィールドおよびグローバルオブジェクトを使用する方法を、`Contact Us` フォームを使用して説明します。
 
-![ お問い合わせフォーム ](/help/forms/assets/contact-us-form.png)
+![お問い合わせフォーム](/help/forms/assets/contact-us-form.png)
 
-[create-custom-function](/help/forms/custom-function-core-component-create-function.md) の節で説明したように、カスタム関数に次のコードを追加して、フォームフィールドを `Required` として設定します。
+フォームフィールドを `Required` として設定するには、[カスタム関数の作成](/help/forms/custom-function-core-component-create-function.md)の節の説明に従って、カスタム関数に次のコードを追加します。
 
 ```javascript
     
@@ -81,28 +81,28 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> * `[form-path]/jcr:content/guideContainer.model.json` にある使用可能なプロパティを使用して、フィールドのプロパティを設定できます。
-> * Globals オブジェクトの `setProperty` メソッドを使用してフォームに加えられた変更は、本質的に非同期であり、カスタム関数の実行中には反映されません。
+> * `[form-path]/jcr:content/guideContainer.model.json` にある使用可能なプロパティを使用して、フィールドプロパティを設定できます。
+> * Globals オブジェクトの `setProperty` メソッドを使用してフォームに行った変更は、本質的に非同期で、カスタム関数の実行中には反映されません。
 
-この例では、ボタンをクリックすると `personaldetails` パネルの検証が行われます。 パネルでエラーが検出されない場合は、ボタンをクリックすると、`feedback` のパネルが表示されます。
+この例では、ボタンをクリックすると `personaldetails` パネルの検証が行われます。パネルでエラーが検出されない場合は、ボタンをクリックすると別のパネルである `feedback` パネルが表示されます。
 
-`Next` ボタンのルールを作成してみましょう。このルールは、`personaldetails` パネルを検証し、ユーザーが `Next` ボタンをクリックすると `feedback` パネルが表示されるようにします。
+`personaldetails` パネルを検証し、ユーザーが `Next` ボタンをクリックした際に `feedback` パネルが表示されるようにする `Next` ボタンのルールを作成しましょう。
 
-![プロパティを設定](/help/forms/assets/custom-function-set-property.png)
+![プロパティの設定](/help/forms/assets/custom-function-set-property.png)
 
-「`Next`」ボタンをクリックしたときに `personaldetails` パネルが検証される場所を示すには、以下の図を参照してください。 `personaldetails` ージ内のすべてのフィールドが検証されると、`feedback` のパネルが表示されます。
+`Next` ボタンをクリックすると、`personaldetails` パネルが検証される場所を示す次のイラストを参照してください。`personaldetails` 内のすべてのフィールドを検証すると、`feedback` パネルが表示されます。
 
-![ プロパティを設定フォームのプレビュー ](/help/forms/assets/set-property-form-preview.png)
+![プロパティフォームのプレビューを設定](/help/forms/assets/set-property-form-preview.png)
 
-`personaldetails` パネルのフィールドにエラーがある場合、エラーは「`Next`」ボタンをクリックするとフィールドレベルに表示され、`feedback` パネルは非表示のままになります。
+`personaldetails` パネルのフィールドにエラーがある場合は、`Next` ボタンをクリックする際にフィールドレベルでエラーが表示され、`feedback` パネルは非表示のままになります。
 
-![ プロパティを設定フォームのプレビュー ](/help/forms/assets/set-property-panel.png)
+![プロパティフォームのプレビューを設定](/help/forms/assets/set-property-panel.png)
 
 ## フィールドを検証
 
 カスタム関数がフィールドオブジェクトとグローバルオブジェクトを使用して、`Contact Us` フォームを使用してフィールドを検証する方法を説明します。
 
-[create-custom-function](/help/forms/custom-function-core-component-create-function.md) の節で説明したように、カスタム関数に次のコードを追加して、フィールドを検証します。
+フィールドを検証するには、[カスタム関数の作成](/help/forms/custom-function-core-component-create-function.md)の節の説明に従って、カスタム関数に次のコードを追加します。
 
 ```javascript
     /**
@@ -121,29 +121,29 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> `validate()` 関数で引数が渡されない場合は、フォームが検証されます。
+> `validate()` 関数に引数が渡されない場合は、フォームが検証されます。
 
-この例では、「`contact`」フィールドにカスタムの検証パターンが適用されます。 ユーザーは、`10` で始まり、その後 `8` 桁が続く電話番号を入力する必要があります。 ユーザーが `10` で始まらない電話番号や、`8` 桁以下の電話番号を入力した場合、ボタンをクリックすると検証エラーメッセージが表示されます。
+この例では、カスタム検証パターンが `contact` フィールドに適用されます。ユーザーは、`10` で始まり `8` 桁の電話番号を入力する必要があります。ユーザーが `10` で始まらない電話番号、または `8` 桁以上または未満の電話番号を入力した場合、ボタンをクリックすると検証エラーメッセージが表示されます。
 
-![ メールアドレスの検証パターン ](/help/forms/assets/custom-function-validation-pattern.png)
+![メールアドレスの検証パターン](/help/forms/assets/custom-function-validation-pattern.png)
 
-次の手順では、ボタンクリック時に `contact` フィールドを検証する `Next` ボタンのルールを作成します。
+次の手順では、ボタンのクリック時に `contact` フィールドを検証する `Next` ボタンのルールを作成します。
 
-![ 検証パターン ](/help/forms/assets/custom-function-validate.png)
+![検証パターン](/help/forms/assets/custom-function-validate.png)
 
-次の図を参照して、ユーザーが `10` で始まらない電話番号を入力した場合、フィールドレベルにエラーメッセージが表示されることを示してください。
+ユーザーが `10` で始まらない電話番号を入力すると、フィールドレベルでエラーメッセージが表示されることを示す次のイラストを参照してください。
 
-![ メールアドレスの検証パターン ](/help/forms/assets/custom-function-validate-error-message.png)
+![メールアドレスの検証パターン](/help/forms/assets/custom-function-validate-error-message.png)
 
-ユーザーが有効な電話番号を入力し、`personaldetails` ントロールパネル内のすべてのフィールドが検証されると、`feedback` ントロールパネルが画面に表示されます。
+ユーザーが有効な電話番号を入力し、`personaldetails` パネルのすべてのフィールドが検証されると、`feedback` パネルが画面に表示されます。
 
-![ メールアドレスの検証パターン ](/help/forms/assets/validate-form-preview-form.png)
+![メールアドレスの検証パターン](/help/forms/assets/validate-form-preview-form.png)
 
 ## パネルのリセット
 
 カスタム関数がフィールドとグローバルオブジェクトを使用して、`Contact Us` フォームを使用してフィールドをリセットする方法を説明します。
 
-[create-custom-function](/help/forms/custom-function-core-component-create-function.md) の節で説明したように、カスタム関数に次のコードを追加して、パネルをリセットします。
+パネルをリセットするには、[カスタム関数の作成](/help/forms/custom-function-core-component-create-function.md)の節の説明に従って、カスタム関数に次のコードを追加します。
 
 ```javascript
     /**
@@ -163,21 +163,21 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> `reset()` 関数で引数が渡されない場合は、フォームが検証されます。
+> `reset()` 関数で引数を渡さない場合は、フォームが検証されます。
 
-この例では、「`Clear`」ボタンをクリックすると、`personaldetails` パネルがリセットされます。 次の手順では、ボタンクリック時にパネルをリセットする `Clear` ボタンのルールを作成します。
+この例では、`Clear` ボタンをクリックすると `personaldetails` パネルがリセットされます。次のステップでは、ボタンのクリック時にパネルをリセットする `Clear` ボタンのルールを作成します。
 
-![ 消去ボタン ](/help/forms/assets/custom-function-reset-field.png)
+![クリアボタン](/help/forms/assets/custom-function-reset-field.png)
 
-ユーザーが「`clear`」ボタンをクリックすると、`personaldetails` パネルがリセットされることを示す次の図を参照してください。
+ユーザーが `clear` ボタンをクリックすると、`personaldetails` パネルがリセットされることを示す次のイラストを参照してください。
 
-![ リセットフォーム ](/help/forms/assets/custom-function-reset-form.png)
+![フォームをリセット](/help/forms/assets/custom-function-reset-form.png)
 
 ## フィールドレベルでカスタムメッセージを表示し、フィールドを無効としてマークするには
 
 カスタム関数で、フィールドとグローバルオブジェクトを使用して、フィールドレベルでカスタムメッセージを表示し、`Contact Us` フォームを使用してフィールドを無効としてマークする方法を説明します。
 
-`markFieldAsInvalid()` 関数を使用して、フィールドを無効として定義し、フィールドレベルでカスタムのエラーメッセージを設定できます。 `fieldIdentifier` の値は、`fieldId`、`field qualifiedName`、`field dataRef` のいずれかです。 `option` という名前のオブジェクトの値は、`{useId: true}`、`{useQualifiedName: true}`、`{useDataRef: true}` のいずれかです。
+`markFieldAsInvalid()` 関数を使用すると、フィールドを無効として定義し、フィールドレベルでカスタムエラーメッセージを設定できます。`fieldIdentifier` の値は、`fieldId`、`field qualifiedName` または `field dataRef` に指定できます。`option` という名前のオブジェクトの値は、`{useId: true}`、`{useQualifiedName: true}` または `{useDataRef: true}` に指定できます。
 フィールドを無効としてマークし、カスタムメッセージを設定するために使用される構文は次のとおりです。
 
 * `globals.functions.markFieldAsInvalid(field.$id,"[custom message]",{useId: true});`
@@ -202,19 +202,19 @@ ht-degree: 0%
 }
 ```
 
-この例では、ユーザーがコメント テキストボックスに 15 文字未満で入力すると、カスタムメッセージがフィールドレベルに表示されます。
+この例では、ユーザーがコメントテキストボックスに 15 文字未満を入力すると、フィールドレベルでカスタムメッセージが表示されます。
 
-次に、`comments` フィールドのルールを作成します。
+次の手順では、`comments` フィールドのルールを作成します。
 
-![ フィールドを無効としてマーク ](/help/forms/assets/custom-function-invalid-field.png)
+![フィールドを無効としてマーク](/help/forms/assets/custom-function-invalid-field.png)
 
-`comments` のフィールドに負のフィードバックを入力すると、フィールドレベルでのカスタムメッセージの表示がトリガーされることを示す、以下のデモを参照してください。
+`comments` フィールドに否定的なフィードバックを入力すると、フィールドレベルでカスタムメッセージが表示されることを示す次のデモを参照してください。
 
-![ フィールドを無効なプレビューフォームとしてマーク ](/help/forms/assets/custom-function-invalidfield-form.png)
+![フィールドを無効なプレビューフォームとしてマーク](/help/forms/assets/custom-function-invalidfield-form.png)
 
 ユーザーが「コメント」テキストボックスに 15 文字を超えて入力すると、フィールドが検証され、フォームが送信されます。
 
-![ フィールドを有効なプレビューフォームとしてマーク ](/help/forms/assets/custom-function-validfield-form.png)
+![フィールドを有効なプレビューフォームとしてマーク](/help/forms/assets/custom-function-validfield-form.png)
 
 ## 変更したデータをサーバーに送信
 
@@ -223,10 +223,10 @@ ht-degree: 0%
 次のコード行：
 `globals.functions.submitForm(globals.functions.exportData(), false);` は、操作後にフォームデータを送信するために使用されます。
 * 最初の引数は、送信するデータです。
-* 2 番目の引数は、送信前にフォームを検証するかどうかを表します。 このプロパティは `optional` であり、デフォルトでは `true` として設定されます。
-* 3 番目の引数は送信 `contentType` です。デフォルト値を `multipart/form-data` にした場合もオプションとなります。 その他の値は、`application/json` と `application/x-www-form-urlencoded` です。
+* 2 番目の引数は、フォームを送信する前に検証するかどうかを表します。これは `optional` であり、デフォルトでは `true` に設定されています。
+* 3 番目の引数は送信の `contentType` です。これもオプションで、デフォルト値は `multipart/form-data` です。その他の値は、`application/json` と `application/x-www-form-urlencoded` に指定できます。
 
-[create-custom-function](/help/forms/custom-function-core-component-create-function.md) の節で説明したように、カスタム関数に次のコードを追加して、操作されたデータをサーバーで送信します。
+操作したデータをサーバーに送信するには、[カスタム関数の作成](/help/forms/custom-function-core-component-create-function.md)の節の説明に従って、カスタム関数に次のコードを追加します。
 
 ```javascript
     /**
@@ -247,19 +247,19 @@ ht-degree: 0%
     }
 ```
 
-この例では、ユーザーが `comments` テキストボックスを空のままにした場合、`NA` ータはフォームの送信時にサーバーに送信されます。
+この例では、ユーザーが `comments` テキストボックスを空のままにすると、フォームの送信時に `NA` がサーバーに送信されます。
 
 次に、データを送信する `Submit` ボタンのルールを作成します。
 
-![ データの送信 ](/help/forms/assets/custom-function-submit-data.png)
+![データを送信](/help/forms/assets/custom-function-submit-data.png)
 
-ユーザーが `comments` テキストボックスを空のままにした場合、`NA` の値がサーバーで送信されることを示すには、以下の `console window` の図を参照してください。
+ユーザーが `comments` テキストボックスを空のままにすると、サーバーに `NA` の値が送信されることを示す次の `console window` のイラストを参照してください。
 
-![ コンソールウィンドウでのデータの送信 ](/help/forms/assets/custom-function-submit-data-form.png)
+![コンソールウィンドウでデータを送信](/help/forms/assets/custom-function-submit-data-form.png)
 
 また、コンソールウィンドウを調べて、サーバーに送信されたデータを表示することもできます。
 
-![ コンソール ウィンドウのInspect データ ](/help/forms/assets/custom-function-submit-data-console-data.png)
+![ コンソール ウィンドウのデータを調べる](/help/forms/assets/custom-function-submit-data-console-data.png)
 
 ## フォーム送信の成功およびエラーハンドラーのオーバーライド
 
@@ -370,7 +370,7 @@ function showModal(type, message) {
 
 フォーム送信の成功と失敗をデフォルトの方法で表示するには、`Default submit Form Success Handler` 関数と `Default submit Form Error Handler` 関数を標準で使用できます。
 
-既存のAEM プロジェクトまたはフォームでカスタム送信ハンドラーが期待どおりに実行されない場合は、[ トラブルシューティング ](#troubleshooting) の節を参照してください。
+既存のAEM プロジェクトまたはフォームでカスタム送信ハンドラーが期待どおりに動作しない場合は、[ トラブルシューティング ](#troubleshooting) の節を参照してください。
 
 ## 繰り返し可能なパネルの特定のインスタンスでのアクションの実行
 
@@ -513,15 +513,24 @@ function testRemoveInstance(globals)
 
 ![ パネルを削除 ](/help/forms/assets/custom-function-delete-panel.gif)
 
+## 既知の問題
+
+* カスタム関数は、JavaScriptの正規表現リテラルをサポートしていません。 カスタム関数で正規表現リテラルを使用すると、実行中にエラーが発生します。 例：
+  `const pattern = /^abc$/;`
+
+  互換性を確保するには、カスタム関数で RegExp コンストラクターを使用します。
+
+  `const pattern = new RegExp("^abc$");`
+正規表現をリファクタリングして、RegExp コンストラクターを使用し、一貫性のある信頼性の高い実行を確保します。
 
 ## トラブルシューティング
 
-* 既存のAEM プロジェクトまたはフォームでカスタム送信ハンドラーが期待どおりに実行できない場合は、次の手順を実行します。
-   * [ コアコンポーネントのバージョンが 3.0.18 以降 ](https://github.com/adobe/aem-core-forms-components) に更新されていることを確認します。 ただし、既存のAEM プロジェクトとフォームの場合は、さらに次の手順に従う必要があります。
+* 既存のAEM プロジェクトまたはフォームでカスタム送信ハンドラーが期待どおりに動作しない場合は、次の手順を実行します。
+   * [ コアコンポーネントのバージョンが 3.0.18 以降 ](https://github.com/adobe/aem-core-forms-components) に更新されていることを確認します。 ただし、既存のAEM プロジェクトおよびフォームの場合は、さらに次の手順に従う必要があります。
 
    * AEM プロジェクトの場合、`submitForm('custom:submitSuccess', 'custom:submitError')` のすべてのインスタンスを `submitForm()` に置き換え、Cloud Manager パイプラインを通じてプロジェクトをデプロイする必要があります。
 
-   * 既存のフォームで、カスタム送信ハンドラーが正しく機能しない場合は、ユーザーがルールエディターを使用して **送信** ボタンで `submitForm` ルールを開いて保存する必要があります。 この操作を実行すると、既存のルールが `submitForm('custom:submitSuccess', 'custom:submitError')` からフォーム内の `submitForm()` に置き換えられます。
+   * 既存のフォームについて、カスタム送信ハンドラーが正しく機能していない場合は、ユーザーはルールエディターを使用して「**送信**」ボタンの `submitForm` ルールを開いて保存する必要があります。このアクションは、フォーム内の既存のルールを `submitForm('custom:submitSuccess', 'custom:submitError')` から `submitForm()` に置き換えます。
 
 ## 関連トピック
 

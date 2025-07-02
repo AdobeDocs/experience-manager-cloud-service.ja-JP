@@ -7,10 +7,10 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 54%
+source-wordcount: '1336'
+ht-degree: 53%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 54%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | この記事 |
 
 AEM Formsはカスタム関数をサポートし、複雑なビジネスルールを実装するためのJavaScript関数を定義できます。 これらのカスタム関数は、入力されたデータの操作や処理を容易にし、指定された要件を満たすことで、フォームの機能を拡張します。 定義済みの条件に基づいてフォームの動作を動的に変更できます。 また、カスタム関数を使用すると、デベロッパーは、複雑な検証ロジックの適用、動的計算の実行、ユーザーの操作または事前に定義された条件に基づくフォーム要素の表示と動作の制御を行うこともできます。
@@ -214,6 +214,16 @@ jsdoc コメントを含むまたは含まないカスタム関数を作成で�
 ```
 
 ユーザーがカスタム関数に JavaScript 注釈を追加しない場合、カスタム関数はアダプティブフォームのルールエディターにリストされません。
+
+## 既知の問題
+
+* カスタム関数は、JavaScriptの正規表現リテラルをサポートしていません。 カスタム関数で正規表現リテラルを使用すると、実行中にエラーが発生します。 例：
+  `const pattern = /^abc$/;`
+
+  互換性を確保するには、カスタム関数で RegExp コンストラクターを使用します。
+
+  `const pattern = new RegExp("^abc$");`
+正規表現をリファクタリングして、RegExp コンストラクターを使用し、一貫性のある信頼性の高い実行を確保します。
 
 ## 次の手順
 
