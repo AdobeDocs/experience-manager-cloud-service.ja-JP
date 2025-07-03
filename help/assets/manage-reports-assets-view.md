@@ -140,7 +140,7 @@ AEM Assets ビュー環境では、レポートダッシュボードを通じて
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### 前提条件 {#prereqs-dynamic-media-delivery-reports}
