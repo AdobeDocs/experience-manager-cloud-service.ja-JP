@@ -4,8 +4,9 @@ description: AEM CIF で JSON+LD 機能を有効にして検証する方法を�
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 547d3721-e094-4a42-8a7c-27e4ef97ea9c
-source-git-commit: 6ee09ab274e26f6972a81e662b78030a71b3fc9b
-workflow-type: ht
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 100%
 

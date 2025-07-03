@@ -4,8 +4,9 @@ description: AEM CIF でキャッシュ消去機能を有効にし、検証す�
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: fb8b2645c0401d1358c7751db03a138dc2de2664
-workflow-type: ht
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+workflow-type: tm+mt
 source-wordcount: '883'
 ht-degree: 100%
 

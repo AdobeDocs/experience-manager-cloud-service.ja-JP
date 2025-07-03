@@ -12,7 +12,8 @@ kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '2342'
 ht-degree: 100%
@@ -250,7 +251,7 @@ ht-degree: 100%
    </html>
    ```
 
-   クライアントライブラリは、ページに配信される際に `/etc.clientlibs` プレフィックスが付けられ、[プロキシ](/help/implementing/developing/introduction/clientlibs.md)経由で提供され、`/apps` や `/libs` で機密事項が公開されないようになります。
+   クライアントライブラリは、ページに配信される際に `/etc.clientlibs` 接頭辞が付けられ、[プロキシ](/help/implementing/developing/introduction/clientlibs.md)経由で提供され、`/apps` や `/libs` で機密事項が公開されないようになります。
 
    `venia/clientlibs/clientlib-site.min.css` と `venia/clientlibs/clientlib-site.min.js` に注意してください。これらのファイルは、`ui.frontend` モジュールから派生したコンパイル済みの CSS ファイルと JavaScript ファイルです。
 

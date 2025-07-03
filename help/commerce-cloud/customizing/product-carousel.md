@@ -3,7 +3,9 @@ title: CIF 製品カルーセルに対するカスタム属性
 description: Sling モデルを更新し、マークアップをカスタマイズして、AEM CIF 製品カルーセルコンポーネントを拡張する方法について説明します。
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 594f0e6ec88851c86134be8d5d7f1719f74ddf4f
+exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 100%

@@ -11,7 +11,8 @@ kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 100%
@@ -26,7 +27,7 @@ ht-degree: 100%
 
 [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)を使用すると、コンテンツ作成者は、追加のカテゴリページや製品ページを作成できます。これらのページは、追加のマーケティングコンテンツで強化し、特定のカテゴリや製品をターゲットするように設定できます。次のビデオでは、この機能の設定について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/34058/?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
 特定の製品ページは、SKU または製品のカテゴリで選択できます。後者は、カテゴリ情報を製品 URL にエンコードする必要があるので、使用可能なデフォルトの製品ページ URL 形式の一部でのみサポートされます。
 

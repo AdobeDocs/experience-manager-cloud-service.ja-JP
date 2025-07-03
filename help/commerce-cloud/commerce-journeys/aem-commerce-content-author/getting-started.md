@@ -4,7 +4,8 @@ description: CIF オーサリングの概要
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 100%

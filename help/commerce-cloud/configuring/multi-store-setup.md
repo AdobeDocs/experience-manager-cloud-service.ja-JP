@@ -11,7 +11,8 @@ kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 100%
@@ -24,7 +25,7 @@ AEM CIF コアコンポーネントは複数の AEM サイト構造で使用で�
 
 複数の Adobe Commerce ストア表示を Adobe Experience Manager Sites と統合するためのオプションについて詳しく説明するビデオチュートリアルです。
 
->[!VIDEO](https://video.tv.adobe.com/v/34097/?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
 AEM マルチサイト管理のライブコピー機能および言語コピー機能を Commerce Integration Framework と組み合わせて使用すると、地域とロケールをまたいでサイトをグローバルに管理することができます。
 

@@ -4,8 +4,9 @@ description: AEM CIF コアコンポーネントをカスタマイズする方�
 feature: Commerce Integration Framework
 role: Admin
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+workflow-type: tm+mt
 source-wordcount: '2300'
 ht-degree: 100%
 
