@@ -685,7 +685,7 @@ ht-degree: 99%
       + [ビデオの編集](/help/assets/edit-videos-assets-view.md)
       + [レンディションの表示と管理](/help/assets/renditions.md)
       + [アセットメタデータの管理](/help/assets/metadata-assets-view.md)
-      + [管理ビューからAssets ビューへのメタデータフォームの読み込み](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md)
+      + [管理ビューからアセットビューへのメタデータフォームの読み込み](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md)
       + [名前を一括変更](/help/assets/bulk-rename-assets-view.md)
       + [一括メタデータ編集](/help/assets/bulk-metadata-edit.md)
       + [アセットを共有する](/help/assets/share-links-for-assets-view.md)
@@ -751,7 +751,7 @@ ht-degree: 99%
       + [as a Cloud Service の移行元 [!DNL AEM 6.5 Forms] または以前のバージョン [!DNL AEM Forms] ](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
       + [アダプティブフォーム、PDF フォームおよびその他のアセットの読み込み、書き出し、整理](/help/forms/import-export-forms-templates.md)
-      + [Adobe Experience Software Development Kit （AEM SDK）の機能を有効にする切り替え](/help/forms/enable-feature-toggle.md)
+      + [Adobe Experience Software Development Kit（AEM SDK）の機能切替スイッチを有効にする](/help/forms/enable-feature-toggle.md)
    + はじめに {#getting-started-forms}
       + [ユースケースと開発環境の設定](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [ローン申し込みフォームの作成](/help/forms/create-adaptive-form-tutorial.md)

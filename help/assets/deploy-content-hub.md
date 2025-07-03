@@ -6,7 +6,7 @@ exl-id: 58194858-6e1c-460b-bab3-3496176b2851
 source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -53,13 +53,13 @@ Experience Manager Assets as a Cloud Service で承認済みとしてマーク�
 ## 手順 1：Cloud Manager を使用して Experience Manager Assets のコンテンツハブを有効にする {#enable-content-hub}
 
 
-Content Hub ポータルにアクセスするには、管理者はまずCloud Managerを使用してContent Hub for Experience Manager Assets as a Cloud Serviceを有効にする必要があります。
+コンテンツハブポータルにアクセスするには、管理者はまず Cloud Manager を使用して、Experience Manager Assets as a Cloud Service のコンテンツハブを有効にする必要があります。
 
 ### 権限 {#permissions-edit-program}
 
-Cloud Managerでプログラムを編集するには、ビジネスオーナーの役割が必要です。 詳細については、「[ プログラムの編集 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)」を参照してください。
+Cloud Manager でプログラムを編集するには、ビジネスオーナーの役割が必要です。詳しくは、[プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)を参照してください。
 
-Experience Manager Assets用のContent Hubを有効にするには：
+Experience Manager Assets 用のコンテンツハブを有効にするには、以下の手順を実行します。
 
 1. Cloud Manager にログインします。ログイン時に正しい組織を選択していることを確認します。Cloud Manager に、すべてのプログラムがリストされます。
 
