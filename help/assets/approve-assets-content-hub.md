@@ -3,7 +3,7 @@ title: コンテンツハブ向けアセットの承認
 description: Assets as a Cloud Service でアセットを承認して、コンテンツハブで使用できるようにする方法について説明します。
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
 source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1230'
 ht-degree: 100%
 

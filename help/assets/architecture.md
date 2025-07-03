@@ -6,7 +6,7 @@ feature: Asset Management, Asset Compute Microservices
 role: Architect
 exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
 source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '125'
 ht-degree: 100%
 

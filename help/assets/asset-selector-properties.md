@@ -4,7 +4,7 @@ description: アセットセレクターを使用して、アプリケーショ�
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
 source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1357'
 ht-degree: 100%
 

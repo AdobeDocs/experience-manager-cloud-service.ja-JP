@@ -5,7 +5,7 @@ exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1739'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: リモート AEM Assets と AEM Sites の統合
 description: AEM Sites を設定し、承認済み AEM Assets に接続する方法について説明します。
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1005'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: パブリッシュ層のカスタムドメインの設定
 description: Adobe Cloud Manager でパブリッシュ層のカスタムドメインを設定する方法について説明します。
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
 ht-degree: 100%
 

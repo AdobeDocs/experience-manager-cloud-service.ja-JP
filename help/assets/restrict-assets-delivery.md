@@ -4,7 +4,7 @@ description: OpenAPI 機能を使用したアセットの配信の制限方法�
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1098'
 ht-degree: 100%
 

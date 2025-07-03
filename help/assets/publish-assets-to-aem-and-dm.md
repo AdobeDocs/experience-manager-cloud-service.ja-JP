@@ -5,7 +5,7 @@ exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, [!DNL Dynamic Media]
 role: User
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1053'
 ht-degree: 100%
 

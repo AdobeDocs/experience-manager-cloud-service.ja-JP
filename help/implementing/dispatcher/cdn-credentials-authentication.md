@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
 source-git-commit: bfe0538660474d445a60fa1c8174d7a690b1dc4c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1939'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -119,7 +119,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-H
 
 テストが正常に完了したら、追加条件を削除して設定を再デプロイできます。
 
-### Adobe サポートが以前に `X-AEM-Edge-Key` HTTP ヘッダー値を生成した場合の移行プロセス {#migrating-legacy}
+### アドビサポートが以前に `X-AEM-Edge-Key` HTTP ヘッダー値を生成した場合の移行プロセス {#migrating-legacy}
 
 >[!NOTE]
 >移行を進める前に、ステージング環境でのテスト移行をスケジュールして、戦略を検証します。
@@ -127,20 +127,20 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-H
 >[!WARNING]
 > 手順 4 まで、顧客が管理する CDN のキーを変更しないでください。
 
-以前は、顧客の管理による CDN と統合するプロセスでは、顧客自身で値を定義するのではなく、Adobe サポートから X-AEM-Edge-Key HTTP Header 値をリクエストする必要がありました。 独自のエッジキー値を定義する新しいセルフサービスアプローチに移行するには、次の手順に従って、ダウンタイムなしでスムーズに移行します。
+以前は、顧客が管理する CDN と統合するプロセスでは、顧客自身で値を定義するのではなく、アドビサポートから X-AEM-Edge-Key HTTP ヘッダー値をリクエストする必要がありました。独自のエッジキー値を定義する新しいセルフサービスアプローチに移行するには、ダウンタイムなしでスムーズに移行できるように次の手順に従ってください。
 
-1. `edgeKey1` および `edgeKey2` として指定された新しい（顧客が生成した）秘密鍵と古い（Adobeが生成した）秘密鍵の両方を使用して CDN 設定を指定します。 これは、[ 秘密鍵の回転 ](/help/implementing/dispatcher/cdn-credentials-authentication.md#rotating-secrets) ドキュメントのバリエーションです。
+1. `edgeKey1` および `edgeKey2` として指定された新しい（顧客が生成した）秘密鍵と古い（アドビが生成した）秘密鍵の両方を使用して CDN 設定を指定します。これは、[秘密鍵のローテーション](/help/implementing/dispatcher/cdn-credentials-authentication.md#rotating-secrets)のドキュメントのバリエーションです。
 
-2. シークレットとセルフサービス CDN 設定をデプロイします。 プロセスのこの時点では、古いAdobe定義の秘密鍵は、お客様が管理する CDN から渡される X-AEM-Edge-Key 値のままです。
+2. 秘密鍵とセルフサービス CDN 設定をデプロイします。プロセスのこの時点では、古いアドビ定義の秘密鍵は、顧客が管理する CDN から渡される X-AEM-Edge-Key 値のままです。
 
-3. Adobe サポートに連絡し、Adobeがセルフサービス設定を使用するように切り替えるようにリクエストし、既にデプロイされていることを指定します。
+3. アドビサポートに連絡し、セルフサービス設定を既にデプロイ済みであることを明記して、アドビにセルフサービス設定の使用に切り替えるよう依頼します。
 
-4. Adobeがそのアクションを実行したことを確認したら、お客様が管理する CDN を設定して、`X-AEM-Edge-Key` HTTP ヘッダー値に新しいお客様が定義したキーを使用するようにします。
+4. アドビがそのアクションを実行したことを確認したら、`X-AEM-Edge-Key` HTTP ヘッダー値に新しい顧客定義キーを使用するように、顧客が管理する CDN を設定します。
 
 5. CDN 設定から古いキーを削除し、設定パイプラインを再度デプロイします。
 
 >[!WARNING]
->両方のキーを同時に設定したフォールバックがない場合は、移行中にダウンタイムが発生する可能性があります。
+>両方のキーを同時に設定してフォールバックを行わない場合、移行中にダウンタイムが発生する可能性があります。
 
 ## API トークンのパージ {#purge-API-token}
 
@@ -258,7 +258,6 @@ data:
          type: edge
          edgeKey1: ${{CDN_EDGEKEY_052824}}
    ```
-
 1. キーをローテーションする際は、新しい Cloud Manager 秘密鍵（例：`${{CDN_EDGEKEY_041425}}`）を作成します。
 1. 設定では、`edgeKey2` から参照してデプロイします。
 
@@ -280,7 +279,6 @@ data:
          type: edge
          edgeKey2: ${{CDN_EDGEKEY_041425}}
    ```
-
 1. Cloud Manager から古い秘密鍵参照（`${{CDN_EDGEKEY_052824}}`）を削除してデプロイします。
 
 1. 次のローテーションの準備が整ったら、同じ手順に従いますが、今回は `edgeKey1` を設定に追加し、例えば、`${{CDN_EDGEKEY_031426}}` という名前の新しい Cloud Manager 環境の秘密鍵を参照します。

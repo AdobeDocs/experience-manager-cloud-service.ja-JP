@@ -10,7 +10,7 @@ feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1668'
 ht-degree: 100%
 
@@ -124,7 +124,7 @@ ht-degree: 100%
 
 関連トピック：
 
-* [Dynamic Media ビデオに CC クローズドキャプションを追加する方法に関するビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=ja#add-cc-closed-captioning-to-dynamic-media-video)
+* [Dynamic Media ビデオに CC クローズドキャプションを追加する方法に関するビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html#add-cc-closed-captioning-to-dynamic-media-video)
 * [YouTube への Dynamic Media ビデオの公開](/help/assets/dynamic-media/video.md#publishing-videos-to-youtube)
 
 次の図の URL は、トランスクリプト（.vtt ファイル）を参照するキャプション部分を表しています。このビデオでは、ビデオ内の指定されたタイムスタンプにおける音声言語（トランスクリプトテキスト）を&#x200B;**[!UICONTROL クローズドキャプション]**&#x200B;として表示しています。ユーザーは、「**[!UICONTROL CC]**」ボタンを使用して、キャプションを有効または無効にすることができます。

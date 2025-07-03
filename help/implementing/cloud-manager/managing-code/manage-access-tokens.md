@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
 source-git-commit: 52e05be90dc1a4997c6b65306bc646d03456c971
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '403'
 ht-degree: 100%
 

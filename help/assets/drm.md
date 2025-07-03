@@ -6,7 +6,7 @@ feature: Asset Management,DRM
 role: User, Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1368'
 ht-degree: 100%
 

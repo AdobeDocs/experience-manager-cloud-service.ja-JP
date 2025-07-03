@@ -5,9 +5,9 @@ role: Admin
 feature: Workfront Integrations and Apps
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '764'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 99%
    >
    >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >    
+   >
    >    ```
 
 1. 次のオーバーレイが [!DNL Experience Manager] リポジトリに存在しないことを確認してください。これらのパスに既にオーバーレイが存在する場合は、オーバーレイを削除するか、2 つのパス間の変更の差分を結合する必要があります。

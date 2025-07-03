@@ -4,7 +4,7 @@ description: アセットセレクターを様々なアドビ、アドビ以外�
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '428'
 ht-degree: 100%
 

@@ -4,7 +4,7 @@ description: アップロード機能を使用したアセットセレクター 
 role: Admin,User
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '510'
 ht-degree: 100%
 

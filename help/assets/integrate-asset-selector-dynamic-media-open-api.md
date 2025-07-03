@@ -4,9 +4,9 @@ description: アセットセレクターを様々なアドビ、アドビ以外�
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '936'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -74,12 +74,12 @@ URL 形式：
 * ホストは `https://delivery-pxxxxx-exxxxxx.adobe.com` です
 * API ルートは `"/adobe/assets"` です
 * `<asset-id>` はアセット識別子です
-* `as` は、アセットを何と呼ぶかを示す、オープン API 仕様の定数部分です
+* `as` は、オープン API 仕様の定数部分で、アセットが何と呼ばれるかを示します
 * `<seo-name>` はアセットの名前です
 * `<format>` は出力形式です
-* 承認済みアセットの配信 API 仕様でサポートされている `<image modification query parameters>`
+* `<image modification query parameters>` は、承認済みアセットの配信 API 仕様でサポートされています
 
-#### 承認されたアセットオリジナルレンディション配信 API {#approved-assets-delivery-api}
+#### 承認されたアセットの元のレンディション配信 API {#approved-assets-delivery-api}
 
 動的配信 URL の構文は次のとおりです。
 `https://<delivery-api-host>/adobe/assets/<asset-id>/original/as/<seo-name>`、ここで、
@@ -87,8 +87,8 @@ URL 形式：
 * ホストは `https://delivery-pxxxxx-exxxxxx.adobe.com` です
 * 元のレンディション配信の API ルートは `"/adobe/assets"` です。
 * `<asset-id>` はアセット識別子です
-* `/original/as` は、元のレンディションが何と呼ばれるかを示す、オープン API 仕様の定数部分です
-* `<seo-name>` は、拡張子がある場合とない場合があるアセットの名前です。
+* `/original/as` は、オープン API 仕様の定数部分で、元のレンディションが何と呼ばれるかを示します
+* `<seo-name>` はアセットの名前で、拡張子はある場合もない場合もあります
 
 ### 動的配信 URL を選択する準備の完了 {#ready-to-pick-dynamic-delivery-url}
 
@@ -105,7 +105,7 @@ JSON オブジェクトをトラバースする 2 つの方法を以下に示し
 
 ![動的配信 URL](assets/dynamic-delivery-url.png)
 
-* **サムネール：**&#x200B;サムネールは画像にすることができ、アセットは PDF、ビデオ、画像などです。ただし、アセットのサムネールの高さと幅の属性を動的配信レンディションとして使用できます。
+* **サムネール：**サムネールは画像にすることができ、アセットは PDF、ビデオ、画像などです。ただし、アセットのサムネールの高さと幅の属性を動的配信レンディションとして使用できます。
 PDF タイプのアセットには、次のレンディションセットを使用できます。
 サイドキックで PDF を選択すると、選択コンテキストに以下の情報が表示されます。JSON オブジェクトをトラバースする方法を以下に示します。
 
@@ -124,7 +124,7 @@ PDF タイプのアセットには、次のレンディションセットを使�
 
 上記のスクリーンショットでは、PDF が必要でサムネールは不要な場合は、PDF の元のレンディションの配信 URL をターゲットエクスペリエンスに組み込む必要があります。例えば、`https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf` のように指定します。
 
-* **ビデオ：**&#x200B;埋め込み iFrame を使用するビデオタイプのアセットには、ビデオプレーヤーの URL を使用できます。ターゲットエクスペリエンスでは、次の配列レンディションを使用できます。
+* **ビデオ：**埋め込み iFrame を使用するビデオタイプのアセットには、ビデオプレーヤーの URL を使用できます。ターゲットエクスペリエンスでは、次の配列レンディションを使用できます。
   <!--![Video dynamic delivery url](image.png)-->
 
   ```
@@ -162,10 +162,10 @@ OpenAPI 機能を備えた Dynamic Media のアセットセレクターを使用
 
 ![OpenAPI 機能を備えた Dynamic Media の UI](assets/polaris-ui.png)
 
-* **A**：パネルの非表示/表示
-* **B**:Assets
+* **A**：パネルの非表示／表示
+* **B**：アセット
 * **C**：並べ替え
-* **D**: フィルター
+* **D**：フィルター
 * **E**：検索バー
 * **F**：昇順または降順での並べ替え
 * **G**：選択をキャンセル

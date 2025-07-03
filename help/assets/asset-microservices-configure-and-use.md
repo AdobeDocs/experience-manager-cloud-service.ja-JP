@@ -6,7 +6,7 @@ feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2891'
 ht-degree: 100%
 
@@ -90,7 +90,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 The following video demonstrates the usefulness and usage of standard profile.
 
->[!VIDEO](https://video.tv.adobe.com/v/34689?quality=9&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
 -->
 
 <!-- This image was removed per cqdoc-15624, as requested by engineering.

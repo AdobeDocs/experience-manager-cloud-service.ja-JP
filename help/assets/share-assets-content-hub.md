@@ -4,7 +4,7 @@ description: ' [!DNL the Content Hub] でのアセットの共有'
 role: User
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '408'
 ht-degree: 100%
 

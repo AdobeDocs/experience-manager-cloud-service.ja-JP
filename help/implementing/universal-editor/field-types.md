@@ -5,9 +5,9 @@ exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 584dba3fb28c54d19d8a4162a3879ff30f7fe352
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1542'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -91,7 +91,7 @@ ht-degree: 96%
 | 設定 | 値タイプ | 説明 | 必須 |
 |---|---|---|---|
 | `component` | `ComponentType` | コンポーネントのレンダラー | あり |
-| `name` | `string` | データを保持するプロパティ [ またはパス ](#nesting) | あり |
+| `name` | `string` | データが保存されるプロパティ[またはパス](#nesting) | あり |
 | `label` | `FieldLabel` | フィールドのラベル | あり |
 | `description` | `FieldDescription` | フィールドの説明 | いいえ |
 | `placeholder` | `string` | フィールドのプレースホルダー | いいえ |
@@ -107,7 +107,7 @@ ht-degree: 96%
 
 ### 名前フィールドとネスト {#nesting}
 
-`name` フィールドは、現在のリソースのプロパティを直接指すことができます。または、`cq:Pages` のコンポーネントの場合は、ネストされたプロパティへのパスを使用することもできます。 例：
+`name` フィールドは、現在のリソースのプロパティを直接指すことができます。または、`cq:Pages` のコンポーネントの場合は、ネストされたプロパティへのパスを使用することもできます。例：
 
 ```json
 "name": "teaser/image/fileReference"
@@ -289,7 +289,7 @@ AEM コンテンツコンポーネントタイプでは、AEM コンテンツピ
 
 #### コンテナ {#container}
 
-コンテナコンポーネントタイプを使用すると、マルチフィールドサポートを含むコンポーネントをグループ化できます。 追加の設定を提供します。
+コンテナコンポーネントタイプを使用すると、複数のサポートなどコンポーネントをグループ化できます。追加の設定を提供します。
 
 | 設定 | 値タイプ | 説明 | 必須 |
 |---|---|---|---|
@@ -332,7 +332,7 @@ AEM コンテンツコンポーネントタイプでは、AEM コンテンツピ
 
 ![コンテナコンポーネントタイプのスクリーンショット](assets/component-types/container.png)
 
->[!TAB  マルチフィールドサポート ]
+>[!TAB マルチフィールドのサポート]
 
 ```json
 {

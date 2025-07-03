@@ -6,7 +6,7 @@ contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '366'
 ht-degree: 100%
 
@@ -63,7 +63,7 @@ ht-degree: 100%
 | ビデオ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | CC ライブラリ | − | − | − | − | − | ✓ | ✓ |
 | PDF | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
-| PSD および PSB | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
+| PSD と PSB | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | AI と INDD | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 | その他のバイナリファイル | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 
@@ -100,7 +100,7 @@ ht-degree: 100%
 | CC ライブラリ | ✓ | − | − | − | − |
 | PDF | ✓ | − | ✓ | ✓ | ✓ |
 | AI と INDD | ✓ | − | ✓ | ✓ | ✓ |
-| PSD および PSB | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PSD と PSB | ✓ | ✓ | ✓ | ✓ | ✓ |
 | その他のバイナリファイル | ✓ | − | ✓ | ✓ | ✓ |
 
 [!DNL Adobe Asset Link] のユーザーは、サポート対象の [!DNL Adobe Creative Cloud] デスクトップアプリケーションから [!DNL Assets view] リポジトリにファイルをアップロードしてチェックイン（新しいバージョンをアップロード）できます。

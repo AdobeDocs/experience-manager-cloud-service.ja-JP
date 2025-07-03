@@ -4,7 +4,7 @@ description: ' [!DNL Content Hub] でのアセットの検索方法について�
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '630'
 ht-degree: 100%
 

@@ -4,7 +4,7 @@ description: OpenAPI 機能を備えた Dynamic Media に関するよくある�
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1520'
 ht-degree: 100%
 

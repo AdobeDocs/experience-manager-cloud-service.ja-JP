@@ -4,7 +4,7 @@ description: ' [!DNL Experience Manager] でアセットを承認する方法に
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
 source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1063'
 ht-degree: 100%
 

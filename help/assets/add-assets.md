@@ -5,7 +5,7 @@ feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3144'
 ht-degree: 100%
 
@@ -146,7 +146,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 このツールは、Azure または S3 データストアからのアセットの大規模な取り込みに使用する目的で管理者グループにのみ提供されます。設定と取り込みの手順を紹介するビデオを参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/341389/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 次の図は、データストアから Experience Manager にアセットを取り込む際の様々な段階を示しています。
 

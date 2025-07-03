@@ -6,7 +6,7 @@ feature: Metadata
 role: User, Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1066'
 ht-degree: 100%
 
