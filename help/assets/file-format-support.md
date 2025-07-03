@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 0129bf13301a208b777b61f65623222cdf2b4b18
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 100%
+source-wordcount: '1082'
+ht-degree: 94%
 
 ---
 
@@ -33,6 +33,12 @@ ht-degree: 100%
 | ✓ | サポート対象 |
 | * | 表の下の備考を参照 |
 | - | 適用なし |
+
+>[!IMPORTANT]
+>
+>[!DNL Adobe Experience Manager Assets] は、この記事にリストされているファイル形式のみをサポートしています。
+>>一部の機能は他の形式でも動作するように見えるかもしれませんが、これらの形式は正式にはサポートされていません。 結果に一貫性がなく、機能が期待どおりに動作しない場合があります。
+>>一貫した信頼性の高い結果を得るには、サポートされている形式のみを使用します。
 
 ## Adobe 形式 {#adobe-formats}
 
@@ -237,7 +243,7 @@ ht-degree: 100%
 | PICT | ✓ | − | − | − | − | − |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/dynamic-media/image-sets.md), [混在メディア](/help/assets/dynamic-media/mixed-media-sets.md)および [スピン](/help/assets/dynamic-media/spin-sets.md) |
 | PSD ‡ | ✓ | − | − | − | − | − |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/dynamic-media/image-sets.md)、[混在メディア](/help/assets/dynamic-media/mixed-media-sets.md)および [スピン](/help/assets/dynamic-media/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/dynamic-media/image-sets.md)、[混在メディア](/help/assets/dynamic-media/mixed-media-sets.md)および[スピン](/help/assets/dynamic-media/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
 
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
