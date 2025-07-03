@@ -5,9 +5,9 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1715'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 98%
 
 [!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次の機能強化とバグ修正が含まれています。
 
-* API リクエストのログ機能を改善して、認証エラーの偽陽性ログを回避しました。
+* 認証失敗の誤検出を防ぐために、API リクエストのログ記録を改善しました。
 
 * Workfront API 呼び出しでの接続リークを修正しました。
 
-* Java 17 および Java 21 バージョンの 6.5 LTS でWorkfront拡張コネクタをサポート。
+* Java 17 および Java 21 バージョン向けに、6.5 LTS における Workfront 拡張 コネクタをサポートしました。
 
 >[!NOTE]
 >

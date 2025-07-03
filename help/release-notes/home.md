@@ -5,9 +5,9 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
 source-git-commit: ccf148d66fbee68e057b05afc69e4bf9eef65c77
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '630'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 93%
 
 今後提供予定の機能の公開方法については、[リリースノート](#release-notes)を参照してください。
 
-* Alpha、Betaまたは限定提供プログラムの一部である場合は、リリースノートに記載されているように有効にするために、通常はAdobeに連絡する必要があります。
+* それがAlphba、ベータ版、または限定提供プログラムの一部である場合、リリースノートに記載されているように、通常、アドビに連絡して有効にする必要があります。
 * プレリリースチャネルの一部である場合は、[開発環境またはサンドボックス環境でプレリリースチャネルを有効にする](/help/release-notes/prerelease.md)必要があります。
 
 ## ユーザーのトレーニング {#train-users}
