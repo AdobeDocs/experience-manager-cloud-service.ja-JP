@@ -4,10 +4,10 @@ description: Cloud Manager を使用して、AEM as a Cloud Service のコンテ
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1338'
-ht-degree: 100%
+source-git-commit: fee4921b7087fd64b2f65b086998aedde8aaafb0
+workflow-type: tm+mt
+source-wordcount: '1339'
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ Cloud Manager には、コンテンツを復元できる 2 種類のバックア
 
 1. コンテンツの復元を参照するわかりやすい名前を使用して、製品プロファイルを作成します。
 1. 必要なプログラムに対する&#x200B;**プログラムアクセス**&#x200B;権限を付与します。
-1. ユースケースに応じて、必要な環境またはプログラムのすべての環境に対する&#x200B;**コンテンツの復元**&#x200B;権限を付与します。
+1. 使用例に応じて、プログラムの必要な環境またはすべての環境に対して **環境の復元の作成** 権限を付与します。
 1. ユーザーをこの製品プロファイルに割り当てます。
 
 権限の管理について詳しくは、[カスタム権限](/help/implementing/cloud-manager/custom-permissions.md)ドキュメントを参照してください。

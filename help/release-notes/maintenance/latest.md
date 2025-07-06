@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 080a79cdc0e48a54570ea53618b1f0be164d5156
+source-git-commit: 26c42152bdebc069dd60cc4f5f070276eb1a1f46
 workflow-type: tm+mt
-source-wordcount: '1768'
-ht-degree: 99%
+source-wordcount: '1780'
+ht-degree: 98%
 
 ---
 
@@ -147,6 +147,7 @@ ht-degree: 99%
 ### 既知の問題 {#known-issues-21331}
 
 * SITES-33177：コンマ区切りの文字列として保存されたセクションスタイルが壊れている。
+* SITES-33262：名前プロパティのないブロックが、ページのレンダリングと公開に失敗する。
 
 ### 廃止された機能と API {#deprecated-21331}
 
