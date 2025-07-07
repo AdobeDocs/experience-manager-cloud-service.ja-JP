@@ -27,7 +27,7 @@ AEM as a Cloud Service 用の Commerce Integration Framework（CIF）に基づ�
 
 ## AEM as a Cloud Service SDK を使用したローカル開発 {#local}
 
->[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/347038/?quality=12&learn=on&captions=jpn)
 
 CIF プロジェクトを使用する場合は、ローカル開発環境を使用することをお勧めします。AEM as a Cloud Service 用に提供された CIF アドオンは、ローカル開発にも使用できます。このファイルは、[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)からダウンロードできます。
 

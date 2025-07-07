@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Adobe Commerce には、Adobe Sensei を利用したレコメンデーションエンジンが備わっています。これらの製品レコメンデーションを Adobe Experience Manager（AEM）ストアフロントに動的に挿入する方法について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/340130/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342993/?learn=on&captions=jpn)
