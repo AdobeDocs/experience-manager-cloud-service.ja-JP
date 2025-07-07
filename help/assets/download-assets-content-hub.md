@@ -4,7 +4,7 @@ description: 1 つまたは複数のアセットとそのレンディション�
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
 source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '814'
 ht-degree: 100%
 

@@ -7,9 +7,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service の仕組み
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 source-git-commit: c23a9512f8599394ee589ce249cc566f85606456
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6325'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -700,7 +700,7 @@ ht-degree: 99%
       + [AEM Assets ビュー UI 拡張機能](/help/assets/aem-assets-view-ui-extensibility.md)
    + コンテンツハブ {#content-hub}
       + [概要](/help/assets/product-overview.md)
-      + [Content Hubの新機能](/help/assets/whats-new.md)
+      + [コンテンツハブの新機能](/help/assets/whats-new.md)
       + [コンテンツハブのデプロイ](/help/assets/deploy-content-hub.md)
       + [コンテンツハブへのブランド承認済みアセットのアップロードまたは読み込み](/help/assets/upload-brand-approved-assets.md)
       + [コンテンツハブユーザーインターフェイスの設定](/help/assets/configure-content-hub-ui-options.md)

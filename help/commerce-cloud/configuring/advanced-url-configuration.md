@@ -13,7 +13,7 @@ exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
 role: Admin
 index: false
 source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2059'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)は、製品ページとカテゴリページの URL をカスタマイズする高度な設定を提供します。多くの実装では、検索エンジン最適化（SEO）用にこれらの URL をカスタマイズします。次のビデオでは、`UrlProvider` サービスと [Sling マッピング](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)の機能を設定して、製品ページとカテゴリページの URL をカスタマイズする方法について詳しく説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/38583/?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## 設定 {#configuration}
 

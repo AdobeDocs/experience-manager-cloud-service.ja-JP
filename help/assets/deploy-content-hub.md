@@ -4,7 +4,7 @@ description: コンテンツハブを展開してアクティブ化し、様々�
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
 source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1572'
 ht-degree: 100%
 

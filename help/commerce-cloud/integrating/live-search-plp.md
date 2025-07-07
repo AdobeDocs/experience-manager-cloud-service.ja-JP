@@ -1,14 +1,14 @@
 ---
-title: '[!DNL Live Search] 製品リストページのCIFコンポーネント'
+title: '[!DNL Live Search] 製品リストページの CIF コンポーネント'
 description: CIF コンポーネントを使用して AEM サイトで [!DNL Live Search] 製品リストページコンポーネントを有効にします
 exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
 index: false
 source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '433'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

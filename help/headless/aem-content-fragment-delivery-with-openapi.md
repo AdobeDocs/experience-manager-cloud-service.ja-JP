@@ -5,9 +5,9 @@ feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
 source-git-commit: dd7d2b5553e4ecac7a9955e83da1cab077c74127
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '551'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Dispatcher 設定側で定義された CORS 許可されたオリジン（特に
 
 この API を使用すると、環境ごとに最大 200 リクエスト/秒のレートで新規リクエストを許可します。
 
-この制限を超えると、API は [429 error](https://www.rfc-editor.org/rfc/rfc6585#section-4) 応答の送信を開始します。 これらのエラーはクライアントアプリケーションで処理する必要があり、失敗したリクエストは指数バックオフの再試行後に再試行されます。 HTTP 応答には特定のヘッダー `Retry-After` が付属しており、リクエストを再度送信するまで待機する必要がある時間をクライアントに示します。
+この制限を超えると、API は [429 エラー](https://www.rfc-editor.org/rfc/rfc6585#section-4)応答の送信を開始します。これらのエラーはクライアントアプリケーションで処理する必要があり、失敗したリクエストは指数バックオフの再試行後に再試行する必要があります。HTTP 応答には特定のヘッダー `Retry-After` が付属しており、リクエストを再度送信するまでどれぐらい待機する必要があるかをクライアントに示します。
 
 <!-- 
 ## Limitations {#limitations}
