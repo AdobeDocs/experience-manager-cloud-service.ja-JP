@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 67a69970399298c3d35f1851111a0e586f32ab4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3193'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -475,7 +475,7 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
 
 ### 将来的に適用される OSGi プロパティの制限 {#future-restrictions-osgi-properties}
 
-今後、Adobeは次の OSGi プロパティ制限を適用します。 上記の PID の場合、リストに表示されているプロパティのみを設定できます。
+今後、アドビは次の OSGi プロパティ制限を適用します。上記の PID の場合、リストに表示されているプロパティのみを設定できます。
 
 | OSGi コンポーネントの PID |   | 必須 | タイプ | 制限 (該当する場合) |
 |---|---|---|---|---|
