@@ -5,10 +5,10 @@ exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1612'
-ht-degree: 100%
+source-git-commit: 9a798be41cb3bcf08b6841d236379bf861ff5510
+workflow-type: tm+mt
+source-wordcount: '1628'
+ht-degree: 99%
 
 ---
 
@@ -31,6 +31,10 @@ AEM ページエディターには、より高度な機能にアクセスでき�
 * [コンポーネントを移動](#moving-components)
 * [コンポーネントのレイアウトを編集](#editing-component-layout)
 * [コンポーネントの継承を編集](#inherited-components)
+
+>[!NOTE]
+>
+>必要に応じて、プロジェクトチームはエディターをカスタマイズできます。 詳しくは、[ ページオーサリングのカスタマイズ ](/help/implementing/developing/extending/page-authoring.md) を参照してください。
 
 ## コンポーネントの追加 {#adding-components}
 
