@@ -57,7 +57,7 @@ Edge Delivery Services サイト用のフォームを作成する方法はいく
 * 単純なフォームから適度に複雑なフォームをすばやく作成します。
 * スプレッドシートまたはメールへの簡単なデータ収集。
 
-ドキュメントベースのフォームからの送信は、通常、データを設定済みのスプレッドシートまたはメールアドレスにルーティングする [0}AEM Forms送信サービス } で処理されます。](/help/forms/forms-submission-service.md)
+ドキュメントベースのフォームからの送信は、通常、データを設定済みのスプレッドシートまたはメールアドレスにルーティングする [0&rbrace;AEM Forms送信サービス &rbrace; で処理されます。](/help/forms/forms-submission-service.md)
 
 ### ユニバーサルエディターのオーサリング
 
@@ -77,7 +77,7 @@ Edge Delivery Services サイト用のフォームを作成する方法はいく
 * ビジュアルツールを好むチーム（マーケター、ビジネスユーザーなど）。
 * データ処理およびワークフローのためにAEM バックエンドとの強力な統合が必要なプロジェクト。
 
-ユニバーサルエディターで作成されたFormsは、[Forms送信サービスを使用するか ](/help/forms/forms-submission-service.md)[ AEM ワークフロー、REST エンドポイントまたはデータベースへのデータの送信など、高度なデータ処理のために OOTB から提供される送信アクション ](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md) を使用するように設定できます。
+ユニバーサルエディターで作成されたFormsは、[Forms送信サービスを使用するか ](/help/forms/forms-submission-service.md) [ AEM ワークフロー、REST エンドポイントまたはデータベースへのデータの送信など、高度なデータ処理のために OOTB から提供される送信アクション ](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md) を使用するように設定できます。
 
 ### ドキュメントオーサリングページへのFormsの埋め込み
 
