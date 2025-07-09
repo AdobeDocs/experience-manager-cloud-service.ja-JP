@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c23a9512f8599394ee589ce249cc566f85606456
-workflow-type: ht
-source-wordcount: '6325'
-ht-degree: 100%
+source-git-commit: 82367f603eede5de4cdca25bb2ef11650a0df41d
+workflow-type: tm+mt
+source-wordcount: '6337'
+ht-degree: 99%
 
 ---
 
@@ -1068,7 +1068,9 @@ ht-degree: 100%
       + [リダイレクト](/help/edge/docs/redirects.md)
    + フォームの作成 {#build-forms}
       + [概要](/help/edge/docs/forms/overview.md)
+      + [Edge Delivery Services Forms用の送信設定](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [よくある質問](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
+      + [ フォーム作成のベストプラクティス ](/help/edge/docs/forms/universal-editor/best-pratices-eds-forms.md)
       + WYSIWYG オーサリング {#universal-editor}
          + [Edge Delivery Services のフォームのユニバーサルエディターの概要 - 完全ガイド](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [ユニバーサルエディターを使用したオーサリングの開始方法 - ステップバイステップチュートリアル](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)

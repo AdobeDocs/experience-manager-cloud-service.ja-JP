@@ -4,10 +4,12 @@ description: Adobe Experience Manager（AEM）で使用可能な様々なフォ�
 feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
-source-git-commit: a2f85b844aaff1642340250c5d8a755c80b9373d
-workflow-type: ht
-source-wordcount: '1176'
-ht-degree: 100%
+hide: true
+hidefromToC: true
+source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
+workflow-type: tm+mt
+source-wordcount: '1075'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +21,7 @@ Adobe Experience Manager（AEM）では、魅力的でレスポンシブ、か�
 
 AEM では、インタラクティブで魅力的なフォームを作成するための複数のフォームオーサリングオプションを提供します。フォームオーサリング環境を選択する際は、次の要因を考慮します。
 
-| ?? **考慮事項** | ?? **質問事項** |
+| 📝**配慮** | 💡 **What to Ask** |
 |----------------------|--------------------|
 | **ユーザーの専門知識** | フォームを作成するのは、開発者、ビジネスユーザー、コンテンツ作成者の誰ですか？ |
 | **フォームの複雑さ** | フォームには、高度なルール、動的セクションまたは統合が必要ですか？ |
@@ -81,25 +83,25 @@ AEM では、様々なユーザーのニーズ、技術スキルレベル、公�
 | **CAPTCHA サポート** | reCAPTCHA v2／Enterprise、hCaptcha（EA）、Turnstile（EA） | reCAPTCHA v2／Enterprise、hCaptcha（EA） | reCAPTCHA Enterprise | reCAPTCHA Enterprise | カスタム統合が必要 |
 | **送信機能** | REST エンドポイント、メール、フォームデータモデル（FDM）、AEM ワークフローを呼び出し、SharePoint、OneDrive、Azure Blob Storage、Power Automate、Workfront Fusion（EA） | REST エンドポイント、メール、フォームデータモデル（FDM）、AEM ワークフローを呼び出し、SharePoint、OneDrive、Azure Blob Storage、Power Automate、Workfront Fusion（EA） | REST エンドポイント、メール、フォームデータモデル（FDM）、AEM ワークフローを呼び出し、SharePoint、OneDrive、Azure Blob Storage、Power Automate、Workfront Fusion（EA） | スプレッドシートのみ | カスタム API エンドポイント |
 | **データスキーマ** | FDM、カスタム | FDM、カスタム | FDM、カスタム | カスタム | カスタム |
-| **事前入力** | ✅ | ✅ | ??（ウィザード経由） | ✅ | カスタム実装 |
+| **事前入力** | ✅ | ✅ | 💡 （ウィザード経由） | ✅ | カスタム実装 |
 | **フラグメント** | ✅ | ✅ | ✅ | ✅ | ❌ |
 | **ビジュアルルールエディター** | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **ローカライゼーション** | ✅ | ✅ | ??（Sites 経由） | ℹ️（Excel - 手動、Google Sheets 関数） | カスタム実装 |
-| **データスキーマ（データツリー）** | ✅ | ✅ | ??（UI 拡張機能経由） | ❌ | カスタム実装 |
+| **ローカライゼーション** | ✅ | ✅ | 💡 （Sites 経由） | ℹ️（Excel - 手動、Google Sheets 関数） | カスタム実装 |
+| **データスキーマ（データツリー）** | ✅ | ✅ | 💡 （UI 拡張機能を使用） | ❌ | カスタム実装 |
 | **テンプレートのサポート** | ✅ | ✅ | 初期コンテンツのみ、ポリシーなし | ❌ | カスタム実装 |
 | **ポータル** | ✅ | ✅ | ❌ | ❌ | ❌ |
-| **DoR オーサリング** | ✅ | ✅ | ??（Derlina 経由） | ❌ | ❌ |
-| **DoR の生成** | ✅ | ✅ | ??（FORMS-2475 新規） | ❌ | ❌ |
+| **DoR オーサリング** | ✅ | ✅ | 💡 （Derlina より） | ❌ | ❌ |
+| **DoR の生成** | ✅ | ✅ | 💡 （FORMS-2475 新規） | ❌ | ❌ |
 | **テーマ** | ✅ | ✅ | ℹ️（プロジェクトレベルで） | ℹ️（プロジェクトレベルで） | カスタム実装 |
 | **カスタムコンポーネント** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **OOTB およびカスタム関数** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **フラグメント参照** | ✅ | ❌ | ❌ | ❌ | ❌ |
 | **Sign との統合** | ✅ | ❌ | ❌ | ❌ | ❌ |
-| **RTL サポート** | ❌ | ✅ | ?? | ?? | カスタム実装 |
+| **RTL サポート** | ❌ | ✅ | 💡 | 💡 | カスタム実装 |
 | **実験** | ❌ | ❌ | ✅ | ✅ | カスタム実装 |
 | **Workfront 経由でのタスク管理** | ❌ | ❌ | ✅ | ❌ | ❌ |
-| **パーソナライゼーション拡張機能** | ❌ | ❌ | ?? | ❌ | カスタム実装 |
-| **エディターのカスタマイズ** | ❌ | ❌ | ✅（UI 拡張機能経由） | ❌ | カスタム実装 |
+| **パーソナライゼーション拡張機能** | ❌ | ❌ | 💡 | ❌ | カスタム実装 |
+| **エディターのカスタマイズ** | ❌ | ❌ | ✅ （UI 拡張機能を使用） | ❌ | カスタム実装 |
 | **送信アクション** | ✅ | ✅ | ✅ | スプレッドシートのみ | カスタム実装 |
 
 
