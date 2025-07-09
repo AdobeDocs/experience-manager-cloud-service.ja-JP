@@ -46,6 +46,7 @@ ht-degree: 1%
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
+
 ![Formsの送信 ](/help/forms/assets/eds-fss.png)
 
 このフローチャートは、Forms送信サービスが送信されたデータを取得して、設定済みのスプレッドシートまたはメールに送信する方法を示しています。
@@ -144,6 +145,7 @@ ht-degree: 1%
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
+
 ![ 埋め込みフォームアーキテクチャ ](/help/forms/assets/eds-embedded-form.png)
 次の図は、フォームSourceからフォームHTMLを取得して表示するホストページを示しています。 送信では、元のフォームの設定済みエンドポイントが使用されます。
 
