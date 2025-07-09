@@ -4,9 +4,9 @@ description: コンテンツ作成者のニーズに合わせてユニバーサ�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c2f1660552d32f3dae9418e7dfc2d4f1ab8cc3c3
-workflow-type: ht
-source-wordcount: '429'
+source-git-commit: 32b3a125d6370dd591252fde342843d5f9e33cf1
+workflow-type: tm+mt
+source-wordcount: '409'
 ht-degree: 100%
 
 ---
@@ -108,8 +108,6 @@ ht-degree: 100%
 ## カスタムプレビュー URL {#custom-preview-urls}
 
 カスタムプレビュー URL は、`urn:adobe:aue:config:preview` メタ設定を使用して指定できます。この URL は、[エディターの右上のツールバー](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)にある「**ページを開く**」ボタンをクリックすると開きます。
-
-これは、[WYSIWYG オーサリングを備えた Edge Delivery Services を使用](/help/edge/wysiwyg-authoring/authoring.md)するアプリケーションなど、特定のプレビュー要件を持つアプリケーションに特に役立ちます。
 
 これを行うには、次の例のように、実装されたアプリのメタタグに目的のプレビュー URL を含めるのみです。
 
