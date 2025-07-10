@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6c36e45dc5437f34b26732a34e9bda38deac56b1
-workflow-type: ht
-source-wordcount: '909'
-ht-degree: 100%
+source-git-commit: b5987ce142a92fee8fff30fbe66d147cd68bdb21
+workflow-type: tm+mt
+source-wordcount: '938'
+ht-degree: 96%
 
 ---
 
@@ -78,6 +78,8 @@ Cloud Manager のライセンス領域にある「**使用状況の詳細を表�
 ウィンドウの左側には、**契約年を表示**&#x200B;ドロップダウンで選択した契約年の契約の分類を示す円グラフが表示されます。
 
 ウィンドウの右側には、選択した契約年についてプログラムごとに時間の経過と共に分類された使用状況を示す面グラフが表示されます。カーソルを合わせると、選択した時点のプログラムごとの詳細を示すポップアップが表示されます。
+
+ダッシュボードページの右上隅付近にある **レポートをダウンロード** をクリックして、データを CSV ファイルとして書き出すことができます。 このダウンロードにより、使用状況のトレンドの分析と共有が簡単になります。
 
 <!-- REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}

@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 26fbc60b1348e8c5f42adc8fd0e596b639fe9b44
+source-git-commit: cf36a5f22132695be47c3d52292f59f785a0fd52
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 66%
+source-wordcount: '1198'
+ht-degree: 60%
 
 ---
 
@@ -37,34 +37,50 @@ AEM as a Cloud Service の Cloud Manager 2025.7.0 のリリース日は 2025年7
 
   ![ サイトの使用状況の詳細ページ ](/help/implementing/cloud-manager/release-notes/assets/sites-license-usage-page.png)
 
+  [ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md)をご覧ください。
+
 ## 早期導入プログラム {#private-beta-program}
 
 Cloud Managerのアルファおよびベータ版プログラムに参加すると、一般リリース前に、今後の機能に早期に排他的にアクセスできます。
 
 現在、次のオポチュニティを利用できます。
 
-
 ### パイプラインデプロイメントのロールバックをワンクリックで実行できます {#one-click-rollback}
 
-最新のコードが期待どおりに動作しない場合は、すばやく以前のデプロイメントに戻すことができます。パイプライン全体を再実行したり、コミットを手動で戻したりする必要はありません。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
+最新の顧客ソースコードが期待どおりに動作しない場合は、すばやく以前のデプロイメントに戻すことができます。パイプライン全体を再実行したり、コミットを手動で戻したりする必要はありません。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-<!-- Add link to topic within the affected article ==>
-
-
-### Specialized Testing Environment {#specialized-test-environment}
-
-Cloud Manager now supports the addition of a new environment type called **Specialized Testing Environment**. The environment is designed to help teams validate features under near-production conditions before going live. This environment type is distinct from *Production + Stage*, *Development*, or *Rapid Development* environments and offers a focused space for running advanced validation scenarios.
-
-Recent enhancement: You can now configure specialized testing environments on a non-production pipeline through a simpler, more intuitive workflow. The streamlined setup speeds completion and reduces configuration errors.
-
-See [Add a Specialized Testing Environment](/help/implementing/cloud-manager/specialized-test-environment.md).
-
-![Add environment dialog box with Specialized Testing Environment radio button selected](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
-
-If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID.
+![ 環境カードから顧客ソースコードを復元 ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*選択した環境の上に&#x200B;**復元**/**以前にデプロイされたコード**オプションが表示されている環境カード*
 
 
-### Bring Your Own Git (BYOG) - now with support for Azure DevOps {#gitlab-bitbucket-azure-vsts}
+![ 以前にデプロイしたコードを復元ダイアログボックス ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
+***以前にデプロイしたコードを復元**ダイアログボックスで、現在デプロイされているバージョンと復元するバージョンを確認し、「**確認***」をクリックします。
+
+
+![ アクティベーションの復元 ](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
+*Cloud Managerは、環境を以前のビルドにロールバックし、コンテンツと設定はそのままの状態に保ち、デプロイメントが完了するまで環境に&#x200B;**復元中**マークを付けます。*
+
+
+![ 使用中のSource コードバージョン ](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png)*環境の詳細ビューには、前述のように、使用中のアクティブなソースコードバージョンも表示されるようになりました。*
+
+この新機能のテストやフィードバックの提供に関心がある場合は、Adobe IDに関連付けられたメールアドレスから [restorecode@adobe.com](mailto:restorecode@adobe.com) にメールを送信してください。
+
+[AEM as a Cloud Serviceでのコンテンツの復元 ](/help/operations/restore.md) も参照してください。
+
+
+### 特殊なテスト環境 {#specialized-test-environment}
+
+Cloud Manager は、**専用のテスト環境**&#x200B;という新しい追加の環境タイプをサポートするようになりました。この環境は、運用開始前に、チームが実稼動環境に近い条件下で機能を検証するのに役立つように設計されています。この環境タイプは、*実稼動環境とステージング環境*、*開発環境*&#x200B;または&#x200B;*迅速な開発環境*&#x200B;環境とは異なり、高度な検証シナリオを実行することに焦点を当てたスペースが提供されます。
+
+最近の機能強化：よりシンプルで直感的なワークフローにより、実稼動以外のパイプラインで専用のテスト環境を設定できるようになりました。 合理化されたセットアップにより、完了が迅速化され、設定エラーが削減されます。
+
+[専用のテスト環境の追加](/help/implementing/cloud-manager/specialized-test-environment.md)を参照してください。
+
+![「専用のテスト環境」ラジオボタンが選択された「環境を追加」ダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
+
+この新機能をテストしてフィードバックを共有することに関心がある場合は、Adobe ID に関連付けられたメールアドレスから [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com)にメールを送信してください。
+
+
+### Bring Your Own Git (BYOG) - Azure DevOps でサポート開始 {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 

@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
-workflow-type: ht
-source-wordcount: '2430'
-ht-degree: 100%
+source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
+workflow-type: tm+mt
+source-wordcount: '2474'
+ht-degree: 95%
 
 ---
 
@@ -131,26 +131,29 @@ ht-degree: 100%
 
 プログラムの[高度なネットワーク](/help/security/configuring-advanced-networking.md)をプロビジョニングする場合は、追加の公開地域を環境に追加する前に、このプロビジョニングを行うことをお勧めします。 そうしないと、追加の公開地域のトラフィックがプライマリ地域のプロキシを通過します。
 
-## 環境の詳細へのアクセス {#viewing-environment}
+## 環境の詳細の表示 {#viewing-environment}
 
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 環境の詳細にアクセスするには、次のいずれかの操作を行います。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、環境の詳細を表示するプログラムをクリックします。
 
-   * **概要**&#x200B;ページの左側のサイドメニューで、![データアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)「**環境**」をクリックします。
+1. 次のいずれかの操作を行って、プログラムのすべての環境をリストします。
 
-   ![「環境」タブ](assets/environments-tab2.png)
+   * 左側のメニューの **サービス** で、![ データアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**環境** をクリックします。
 
-   * **環境**&#x200B;カードから、![ワークフローアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)「**すべて表示**」をクリックします。
+   ![「環境」タブ](assets/environments-1.png)
 
-     ![「すべて表示」オプション](assets/environment-showall.png)
+   * 左側のメニューの **プログラム** で **概要** をクリックし、**環境** カードで ![ ワークフローアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)**すべて表示** をクリックします。
 
-   **環境**&#x200B;ページが開いて、プログラムのすべての環境が一覧表示されます。
+     ![「すべて表示」オプション](assets/environments-2.png)
 
-   ![「環境」タブ](assets/environments-tab2.png)
+   >[!NOTE]
+   >
+   >**環境** カードには 3 つの環境のみ表示されます。 カードの **すべて表示** をクリックすると、プログラムの *すべて* の環境が表示されます。
 
 1. 環境ページで、次のいずれかの操作を行います。
 
-   * リスト内の環境をクリックすると、その環境の詳細が表示されます。
+   * リストで環境をクリックすると、その環境の詳細が表示されます。
 
    ![環境の詳細](assets/environ-preview1.png)
 
@@ -158,9 +161,11 @@ ht-degree: 100%
 
    ![環境の詳細を表示](assets/view-environment-details.png)
 
->[!NOTE]
->
->**環境**&#x200B;カードには 3 つの環境のみ表示されます。 カードの「**すべて表示**」をクリックすると、プログラムのすべての環境が表示されます。
+
+## 環境のコンテンツの復元（Alpha） {#restore-environment}
+
+[AEM as a Cloud Serviceでのコンテンツの復元 ](/help/operations/restore.md) を参照してください。
+
 
 ### プレビューサービスへのアクセス {#access-preview-service}
 
