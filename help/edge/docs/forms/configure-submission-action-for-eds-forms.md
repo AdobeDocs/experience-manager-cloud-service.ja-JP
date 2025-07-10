@@ -3,13 +3,13 @@ title: Edge Delivery Servicesを使用したAEM Formsの送信アクションの
 description: Edge Delivery Servicesを使用してAEM Formsで送信アクションを設定する方法を説明します。 Forms送信サービスとAEM公開送信アクションのどちらかを選択して、フォームデータを安全かつ効率的に処理します。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: bca160763fdd1e96f1350ac74eb76ff7c26ac00b
+exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
+source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 1%
 
 ---
-
 
 # フォーム送信の設定：データはどこに送信されますか？
 
@@ -46,7 +46,6 @@ ht-degree: 1%
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
-
 ![Formsの送信 ](/help/forms/assets/eds-fss.png)
 
 このフローチャートは、Forms送信サービスが送信されたデータを取得して、設定済みのスプレッドシートまたはメールに送信する方法を示しています。
@@ -74,7 +73,7 @@ ht-degree: 1%
 * [Azure Blob Storage に送信](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Microsoft Power Automate への送信](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Adobe Workfront Fusion への送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Adobe Marketo Engageへの送信](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [Adobe Marketo Engageへの送信 ](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 >[!NOTE]
 >
@@ -145,7 +144,6 @@ ht-degree: 1%
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
-
 ![ 埋め込みフォームアーキテクチャ ](/help/forms/assets/eds-embedded-form.png)
 次の図は、フォームSourceからフォームHTMLを取得して表示するホストページを示しています。 送信では、元のフォームの設定済みエンドポイントが使用されます。
 

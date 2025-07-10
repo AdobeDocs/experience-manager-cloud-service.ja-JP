@@ -3,7 +3,8 @@ title: 高パフォーマンスのFormsを設計する際のベストプラク�
 description: AEM Formsを使用して、使いやすく、アクセスしやすく、パフォーマンスの高いフォームを作成するための基本的なベストプラクティスについて説明します。 データ品質、ユーザーエクスペリエンス、送信の成功率を向上させます。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: bca160763fdd1e96f1350ac74eb76ff7c26ac00b
+exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
+source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -64,4 +65,4 @@ ht-degree: 0%
 * [Edge Delivery Services Formsによるドキュメントベースのオーサリング](/help/edge/docs/forms/tutorial.md)
 * [Edge Delivery Services Formsを使用したユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
 * [ ドキュメントオーサリング（DA）とコンテンツの埋め込み ](https://www.aem.live/developer/da-tutorial)
-* [AEM Forms送信サービス](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+* [AEM Forms送信サービス ](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
