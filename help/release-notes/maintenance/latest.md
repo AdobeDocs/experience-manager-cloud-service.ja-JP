@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: ff500e08e31e53f5452eed6cfe06539cabe2ecdd
+source-git-commit: 17064d27dd34bbd5aad89f814481c29b0f6a7fe1
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 62%
@@ -18,7 +18,7 @@ ht-degree: 62%
 
 ## リリース 21484 {#21484}
 
-2025年7月8日（PT）に公開された、メンテナンスリリース 21484 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 21331 でした。
+2025年7月10日（PT）に公開された、メンテナンスリリース 21484 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 21331 でした。
 
 2025.7.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
 
