@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 9a798be41cb3bcf08b6841d236379bf861ff5510
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1628'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ AEM ページエディターには、より高度な機能にアクセスでき�
 
 >[!NOTE]
 >
->必要に応じて、プロジェクトチームはエディターをカスタマイズできます。 詳しくは、[ ページオーサリングのカスタマイズ ](/help/implementing/developing/extending/page-authoring.md) を参照してください。
+>必要に応じて、プロジェクトチームはエディターをカスタマイズできます。詳しくは、[ページオーサリングのカスタマイズ](/help/implementing/developing/extending/page-authoring.md)を参照してください。
 
 ## コンポーネントの追加 {#adding-components}
 
