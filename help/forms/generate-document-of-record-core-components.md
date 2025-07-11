@@ -4,10 +4,10 @@ description: アダプティブフォームコアコンポーネント用のレ�
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2637adfbac0e266abe5a023b9253e7e702884709
-workflow-type: ht
-source-wordcount: '3152'
-ht-degree: 100%
+source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
+workflow-type: tm+mt
+source-wordcount: '3207'
+ht-degree: 98%
 
 ---
 
@@ -346,7 +346,7 @@ When you select a form model, configure Document of Record using options availab
 
    1. **フォームフィールドのプロパティ**:
       * **チェックボックスおよびラジオボタンのコンポーネントには、選択した値のみを表示**：このプロパティを設定すると、チェックボックスとラジオボタンの選択された値のみが[!UICONTROL レコードのドキュメント]に表示されます。
-      * **複数の値の区切り文字**：複数の値を表示する場合は、カンマや改行などの任意の区切り文字を選択できます。
+      * **複数の値の区切り記号**：複数の値を表示する場合は、カンマや改行などの任意の区切り記号を選択できます。
       * **オプションの位置揃え**：目的の整列（水平、垂直、アダプティブフォームと同じ）を選択して、[!UICONTROL レコードのドキュメント]に表示するチェックボックスやラジオボタンなどのフィールドの整列を設定することができます。デフォルトでは、垂直揃えが[!UICONTROL レコードのドキュメント]のフィールドに設定されています。DoR の[!UICONTROL フォームフィールドのプロパティ]からプロパティを設定すると、アダプティブフォームのフィールドの[!UICONTROL 項目の整列]で設定されたプロパティが上書きされます。例えば「[!UICONTROL アダプティブフォームと同じ]」オプションを使用する場合は、アダプティブフォームのオーサーインスタンスで設定された整列が[!UICONTROL レコードのドキュメント]のフィールドに使用されます。
       * **水平揃えのオプション数**：水平揃えの場合にレコードのドキュメントに表示するオプションの数を設定できます。
 
@@ -380,7 +380,13 @@ When you select a form model, configure Document of Record using options availab
 
 1. ブランディングの変更内容を保存するには、「**[!UICONTROL 完了]**」を選択します。
 
-
+>[!NOTE]
+> 
+> レコードのドキュメントにカスタムフォームタイトルを表示するには、**レコードのドキュメントのプロパティ**>**マスターページのプロパティ** で **カスタムフォームタイトル** を編集します。 このカスタム タイトル：
+> 
+> * 生成されたPDFのヘッダーに表示されます
+> * PDFのドキュメントプロパティで、タイトルとして表示される
+> * PDFを開いたときに、最初の表示タイトルとして表示されます
 
 ## レコードのドキュメントのパネルに表示される表と列のレイアウト {#table-and-column-layouts-for-panels-in-document-of-record}
 

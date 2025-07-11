@@ -6,10 +6,10 @@ keywords: アダプティブフォームフラグメントを追加、アダプ�
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: a99bd181a079713571fd659ec2a04207c5eeee90
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 100%
+source-wordcount: '1479'
+ht-degree: 93%
 
 ---
 
@@ -119,15 +119,14 @@ Perform the following steps to show complete fragments in forms:
 
 ![アダプティブフォームでの複数のフラグメントの使用](/help/forms/assets/using-multiple-fragment-af.gif)
 
-<!--
+## アダプティブフォーム内のフラグメントの自動マッピングサポート
 
-## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
+JSON スキーマ定義に基づいてアダプティブフォームフラグメントを作成すると、同じスキーマから作成されたフォームで自動的に再利用できます。
+アダプティブフォームフラグメントの JSON スキーマ定義マッピングに一致するスキーマオブジェクトまたはネストされたオブジェクトをドラッグ&amp;ドロップすると、オブジェクトは一致したアダプティブフォームフラグメントに置き換えられます。 個々のフィールドを含むパネルを追加する代わりに、フォームは、マッピングされたアダプティブフォームフラグメントを挿入します。
 
-When you create an Adaptive Form fragment using an XFA form template or XSD complex type and drag-drop the fragment to an Adaptive Form, the XFA fragment or the XSD complex type is automatically replaced by the corresponding Adaptive Form fragment whose fragment model root is mapped to the XFA fragment or XSD complex Type.
+![ フラグメントをドラッグ&amp;ドロップ ](/help/forms/assets/fragment.png)
 
-You can change the fragment asset and its bindings from the Edit component dialog.
-
-You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragment library in AEM content finder and provide the correct bind reference from the Edit component dialog of the Adaptive Form fragment panel. -->
+また、AEM コンテンツファインダーのアダプティブフォームフラグメントライブラリからバインドされたアダプティブフォームフラグメントをドラッグアンドドロップし、アダプティブフォームフラグメントパネルのコンポーネントの編集ダイアログから正しいバインド参照を与えることもできます。
 
 ## フラグメントの管理 {#manage-fragments}
 

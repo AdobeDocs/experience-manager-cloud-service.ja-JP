@@ -1,8 +1,8 @@
 ---
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
-source-wordcount: '1556'
-ht-degree: 100%
+source-git-commit: 6af7e8caa7be93da60e660468dd7d4f02a7e2c47
+workflow-type: tm+mt
+source-wordcount: '1560'
+ht-degree: 97%
 
 ---
 # スニペット {#snippets}
@@ -111,9 +111,9 @@ ht-degree: 100%
    </td>
    </tr>
    <tr>
-    <td>ES10 サポート </td>
-    <td>ES10 はまだサポートされていません。 ES5 JavaScript 機能のみをサポートします。 </td>
-    <td>カスタム関数内の let 関数や arrow 関数（ES10 サポート）などの最新の JavaScript 機能をサポートします。 
+    <td>ES2022 のサポート </td>
+    <td>ES2022 はまだサポートされていません。サポートは、ES5 JavaScript機能に制限されています。 </td>
+    <td>最新のJavaScript機能（最大 ES2022 のレット関数と矢印関数など）は、カスタム関数でサポートされています。 
    </td>
    </tr>
    </tr>
@@ -222,7 +222,7 @@ ht-degree: 100%
 
 **サポートチケットをログに記録するには：**
 
-1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/ja?support-tab=home#support)チケットを作成します。
+1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/?support-tab=home#support)チケットを作成します。
 1. チケットのタイトルに「**Edge Delivery**」を追加します。
 1. 説明では、問題の説明に加えて、次の詳細を入力します。
 
@@ -278,6 +278,6 @@ ht-degree: 100%
 
 >[!TIP]
 >
->**AEM 向け Edge Delivery Servicesについて検討したことはありますか？**
+>**AEM 向け Edge Delivery Services について検討したことはありますか？**
 >
 >既存のプロジェクトでは、このドキュメントで説明されている方法を引き続き使用できます。ただし、新規プロジェクトの場合は、[Edge Delivery Services](/help/edge/overview.md) を利用することをお勧めします

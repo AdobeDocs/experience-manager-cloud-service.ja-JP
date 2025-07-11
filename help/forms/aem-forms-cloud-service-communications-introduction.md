@@ -1,14 +1,14 @@
 ---
 title: AEM Forms as a Cloud Service 通信 API
-description: クラウド内のAEM Forms Communication API を使用してドキュメントを生成、操作、保護する
+description: クラウド内の AEM Forms 通信 API を使用してドキュメントを生成、操作、保護します。
 Keywords: document generation, PDF manipulation, document security, batch processing, document conversion, PDF/A compliance
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: a5bbcd19b41b3aeff94f900da13e98de65651f8c
+source-git-commit: 8803896bf728524833a0dde004ddaa2e8b6bb103
 workflow-type: tm+mt
-source-wordcount: '2497'
-ht-degree: 90%
+source-wordcount: '2663'
+ht-degree: 89%
 
 ---
 
@@ -17,34 +17,34 @@ ht-degree: 90%
 
 > **バージョンの可用性**
 >
-> * **AEM 6.5**: [AEM ドキュメントサービスの概要 ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=ja)
+> * **AEM 6.5**：[AEM ドキュメントサービスの概要](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**：この記事
 
 ## はじめに
 
-AEM Forms as a Cloud Serviceの通信 API を使用すると、ビジネスニーズに合わせて、ブランド承認済みのパーソナライズされた標準化されたドキュメントを作成できます。 これらの強力な API を使用すると、ドキュメントをプログラムで生成、操作、保護できます。ドキュメントは、オンデマンドの場合でも、大量のバッチプロセスの場合でも同様です。
+AEM Forms as a Cloud Service の通信 API は、ビジネスニーズに合わせてブランド承認、パーソナライズおよび標準化されたドキュメントを作成するのに役立ちます。これらの強力な API を使用すると、オンデマンドでも大量のバッチプロセスでも、プログラムでドキュメントを生成、操作、保護できます。
 
 ### 主なメリット
 
-* **効率的なドキュメント生成** - テンプレートを顧客データと結合して、パーソナライズされたドキュメントを作成します
-* **強力なドキュメント操作** - PDF ドキュメントをプログラムで結合、並べ替えおよび検証します
-* **柔軟なデプロイメントオプション** – 低レイテンシのニーズに対してオンデマンド API を使用し、高スループットの操作に対してバッチ API を使用します
-* **セキュリティの強化** - デジタル署名、証明書、暗号化を適用して、機密ドキュメントを保護します
-* **クラウドネイティブアーキテクチャ** - メンテナンスのオーバーヘッドなしで、スケーラブルで安全なクラウドインフラストラクチャを活用
+* **効率化されたドキュメント生成** - テンプレートと顧客データを結合して、パーソナライズされたドキュメントを作成します。
+* **強力なドキュメント操作** - プログラムで PDF ドキュメントを組み合わせ、並べ替え、検証します。
+* **柔軟なデプロイメントオプション** - 低遅延のニーズにはオンデマンド API を使用し、高スループット操作にはバッチ API を使用します。
+* **強化されたセキュリティ** - 電子署名、証明書、暗号化を適用して機密ドキュメントを保護します。
+* **クラウドネイティブアーキテクチャ** - メンテナンスのオーバーヘッドなしで、スケーラブルで安全なクラウドインフラストラクチャを活用します。
 
 ## API 機能の概要
 
-通信 API は、次の機能領域に整理されたドキュメント処理機能の包括的なセットを提供します。
+通信 API では、次の機能領域に整理された包括的なドキュメント処理機能セットを提供します。
 
 | ドキュメント生成 | ドキュメント操作 | ドキュメント抽出 | ドキュメントのコンバージョン | ドキュメント保証 |
 |---------------------|----------------------|---------------------|---------------------|-------------------|
-| PDFや印刷形式など、様々な形式のデータを使用してテンプレートを結合し、パーソナライズされたドキュメントを生成する。 | PDF ドキュメントをプログラムで組み合わせ、並べ替え、検証して、新しいドキュメントパッケージを作成します。 | さらに処理するために、PDF ドキュメントからプロパティ、メタデータおよびコンテンツを抽出する。 | アーカイブのニーズに応じてPDF/A のコンプライアンス検証を含め、複数のフォーマット間でドキュメントを変換できます。 | デジタル署名、証明書、暗号化を適用して、ドキュメントの保護と保護を行います。 |
+| PDF や印刷形式など、様々な形式のデータとテンプレートを結合して、パーソナライズされたドキュメントを生成します。 | PDF ドキュメントをプログラムで組み合わせ、並べ替え、検証して、新しいドキュメントパッケージを作成します。 | PDF ドキュメントからプロパティ、メタデータ、コンテンツを抽出し、さらに処理します。 | アーカイブのニーズに合わせた PDF/A コンプライアンス検証を含む、様々な形式間でドキュメントを変換します。 | 電子署名、証明書、暗号化を適用して、ドキュメントを安全に保護します。 |
 
 API から提供されるすべてのパラメーター、認証方法および各種サービスの詳細については、[API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)を参照してください。API リファレンスドキュメントは、.yaml 形式でも入手できます。.yaml ファイルをダウンロードし、Postman にアップロードして API の機能を確認できます。
 
 ## ドキュメント生成
 
-コミュニケーションドキュメント生成 API は、テンプレート（XFA または PDF）と顧客データ（XML）を組み合わせて、PDF 形式や PS、PCL、DPL、IPL、ZPL 形式などの印刷形式でドキュメントを生成するのに役立ちます。これらの API は、[XML データ](communications-known-issues-limitations.md#form-data)を含んだ PDF および XFA テンプレートを利用して、単一のドキュメントをオンデマンドで生成したり、複数のドキュメントをバッチジョブで生成したりすることができます。
+通信機能の Document Generation API は、テンプレート（XFA またはPDF）と顧客データ（XML）を組み合わせて、PDF、AFP （Advanced Function Presentation）、および PS、PCL、DPL、IPL、ZPL 形式などの印刷形式でドキュメントを生成するのに役立ちます。 これらの API は、[XML データ ](communications-known-issues-limitations.md#form-data) を含んだPDFおよび XFA テンプレートを使用して、1 つのドキュメントをオンデマンドで生成したり、複数のドキュメントをバッチジョブで生成したりすることができます。
 
 通常、[Designer](use-forms-designer.md) を使用してテンプレートを作成し、通信 API を使用してテンプレートにデータを結合します。アプリケーションは、出力ドキュメントをネットワークプリンター、ローカルプリンター、またはアーカイブ用のストレージシステムに送信できます。標準ワークフローとカスタムワークフローの例を次に示します。
 
@@ -54,14 +54,28 @@ API から提供されるすべてのパラメーター、認証方法および�
 
 ### 主なドキュメント生成機能
 
-#### PDF ドキュメントの作成 {#create-pdf-documents}
+#### PDF/AFP 電子フォーマットのドキュメント作成
 
-ドキュメント生成 API を使用すると、フォームデザインと XML フォームデータに基づく PDF ドキュメントを作成できます。結果として出力されるのは非インタラクティブ PDF ドキュメントです。つまり、ユーザーはフォームデータの入力や変更はできません。基本ワークフローは、XML フォームデータをフォームデザインと結合して PDF ドキュメントを作成することです。次の図は、フォームデザインと XML フォームデータを結合して PDF ドキュメントを生成するところを示しています。
+Document Generation API を使用すると、フォームデザインと XML フォームデータに基づくドキュメントをPDF形式または AFP 形式で作成できます。 出力されるのは非インタラクティブドキュメントです。 つまり、ユーザーはフォームデータの入力や変更はできません。基本的なワークフローは、XML フォームデータをフォームデザインと結合してドキュメントを作成することです。 次の図は、フォームデザインと XML フォームデータを結合して PDF ドキュメントを生成するところを示しています。
 
-![PDF ドキュメントの作成](assets/outPutPDF_popup.png)
-図：PDF ドキュメントを作成するための一般的なワークフロー
+![PDF ドキュメントの作成 ](assets/outPutPDF_popup.png)
+図：ドキュメントを作成するための一般的なワークフロー
 
-ドキュメント生成 API は、生成された PDF ドキュメントを返します。また、オプションで、生成された PDF を Azure Blob Storage にアップロードすることもできます。
+AFP 形式とPDF形式の違いを次の表に示します。
+
+| **機能** | **AFP （Advanced Function Presentation）** | **PDF（Portable Document Format）** |
+|---------------------------|--------------------------------------------------------------------|-------------------------------------------------------------|
+| **目的** | トランザクション・ドキュメントの大量の印刷と生成 | 汎用ドキュメントの共有と表示 |
+| **ユースケース** | 銀行明細書、請求書、請求書、保険書類 | 電子書籍、フォーム、レポート、履歴書、マニュアル |
+| **Platform オリジン** | IBMにより開発 | アドビ開発 |
+| **構造** | 構造化されたフィールドとオブジェクトを使用したページ指向の形式 | ページ指向だが固定されたレイアウト |
+| **編集可能** | 実稼動用に設計されており、ほとんど編集されません | 様々なツール（Adobe Acrobatなど）を使用して編集できます |
+| **ファイルサイズとパフォーマンス** | 高速印刷環境でのパフォーマンスに最適化 | 一括出力には大きく、最適化されていない可能性があります |
+| **インタラクティブ機能** | 最小からなし、静的ページ | フォーム、リンク、JavaScriptなどのインタラクティブ要素をサポート |
+| **出力制御** | プリンタのレイアウトをきめ細かく制御 | 画面および印刷用に最適化されたビジュアルレイアウト |
+| **フォントとグラフィック** | フォントとリソースの参照を使用します。レンダリングの解釈が必要です。 | フォントと画像をファイルに直接埋め込みます |
+
+ドキュメント生成 API は、生成されたPDF ドキュメントまたは AFP ドキュメントを返します。 また、オプションで、生成された PDF を Azure Blob Storage にアップロードすることもできます。
 
 <span class="preview">ドキュメント生成 API を使用して生成された PDF を Azure Blob Storage 機能にアップロードすることは、[早期導入プログラム](/help/forms/early-access-ea-features.md)で行うことができます。早期導入プログラムに登録し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
 
@@ -77,7 +91,7 @@ API から提供されるすべてのパラメーター、認証方法および�
 
 ## ドキュメント操作
 
-通信機能のドキュメント操作（ドキュメント変換）API は、PDF ドキュメントを組み合わせたり並べ替えたりするのに役立ちます。通常は、DDX を作成し、それをドキュメント操作 API に送信して、ドキュメントをアセンブリしたり並べ替えたりします。[DDX ドキュメント](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)には、ソースドキュメントを使用して 1 組の必要なドキュメントを生成する方法についての指示が記述されています。DDX リファレンスドキュメントは、サポートされているすべての操作に関する詳細な情報を提供します。
+通信機能のドキュメント操作（ドキュメント変換）API は、PDF ドキュメントを組み合わせたり並べ替えたりするのに役立ちます。通常は、DDX を作成し、それをドキュメント操作 API に送信して、ドキュメントをアセンブリしたり並べ替えたりします。[DDX ドキュメント](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)には、ソースドキュメントを使用して 1 組の必要なドキュメントを生成する方法についての指示が記述されています。DDX リファレンスドキュメントには、サポートされているすべての操作に関する詳細情報が記述されています。
 
 ### 主なドキュメント操作機能
 
@@ -257,6 +271,6 @@ PDF Reader サービスを拡張する様々な使用権限の機能を次に示
 
 * [通信処理 - 同期 API](/help/forms/aem-forms-cloud-service-communications.md)
 * [通信処理 - バッチ API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-* [AEM Forms as a Cloud Serviceのアーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
-* [API リファレンスドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-* [早期導入プログラムの機能](/help/forms/early-access-ea-features.md)
+* [AEM Forms as a Cloud Service アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
+* [API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
+* [早期導入プログラム機能](/help/forms/early-access-ea-features.md)

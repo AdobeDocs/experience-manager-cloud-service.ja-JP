@@ -4,10 +4,10 @@ description: ここでは、アダプティブフォーム向けのレコード�
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
 workflow-type: tm+mt
-source-wordcount: '4170'
-ht-degree: 100%
+source-wordcount: '4225'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 * [AcroForm（Acrobat フォーム PDF）に基づくレコードのドキュメントの生成](#generate-an-Acroform-based-document-of-record)
 * [レコードのドキュメントの自動生成](#auto-generate-a-document-of-record)
 
-## 事前準備 {#components-to-automatically-generate-a-document-of-record}
+## 開始する前に {#components-to-automatically-generate-a-document-of-record}
 
 本題に入る前に、レコードのドキュメントに必要な次のアセットを理解し準備します。
 
@@ -361,7 +361,7 @@ When you select a form model, configure Document of Record using options availab
 
    2. **フォームフィールドのプロパティ**:
       * **チェックボックスおよびラジオボタンのコンポーネントには、選択した値のみを表示**：このプロパティを設定すると、チェックボックスとラジオボタンの選択された値のみが[!UICONTROL レコードのドキュメント]に表示されます。
-      * **複数の値の区切り文字**：複数の値を表示する場合は、カンマや改行などの任意の区切り文字を選択できます。
+      * **複数の値の区切り記号**：複数の値を表示する場合は、カンマや改行などの任意の区切り記号を選択できます。
       * **オプションの位置揃え**：目的の整列（水平、垂直、アダプティブフォームと同じ）を選択して、[!UICONTROL レコードのドキュメント]に表示するチェックボックスやラジオボタンなどのフィールドの整列を設定することができます。デフォルトでは、垂直揃えが[!UICONTROL レコードのドキュメント]のフィールドに設定されています。DoR の[!UICONTROL フォームフィールドのプロパティ]からプロパティを設定すると、アダプティブフォームのフィールドの[!UICONTROL 項目の整列]で設定されたプロパティが上書きされます。例えば「[!UICONTROL アダプティブフォームと同じ]」オプションを使用する場合は、アダプティブフォームのオーサーインスタンスで設定された整列が[!UICONTROL レコードのドキュメント]のフィールドに使用されます。
       * **水平揃えのオプション数**：水平揃えの場合にレコードのドキュメントに表示するオプションの数を設定できます。
 
@@ -394,6 +394,14 @@ When you select a form model, configure Document of Record using options availab
    ```
 
 1. ブランディングの変更内容を保存するには、「**[!UICONTROL 完了]**」を選択します。
+
+>[!NOTE]
+> 
+> レコードのドキュメントにカスタムフォームタイトルを表示するには、**レコードのドキュメントのプロパティ**>**マスターページのプロパティ** で **カスタムフォームタイトル** を編集します。 このカスタム タイトル：
+> 
+> * 生成されたPDFのヘッダーに表示されます
+> * PDFのドキュメントプロパティで、タイトルとして表示される
+> * PDFを開いたときに、最初の表示タイトルとして表示されます
 
 ## アダプティブフォームエディターでのレコードのドキュメントのサポート {#dor-support-in-adaptiveform}
 

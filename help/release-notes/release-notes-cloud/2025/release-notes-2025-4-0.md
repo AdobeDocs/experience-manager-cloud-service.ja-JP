@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.4.0 リ�
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: c1ff27a76309628f1fb7b816092172aca7c6a738
+source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 99%
+source-wordcount: '1828'
+ht-degree: 91%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 99%
 
 2025.4.0 リリースで追加された機能の概要については、2025年4月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3464003?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -81,19 +81,21 @@ Dynamic Media Classic レポートダッシュボードの「帯域幅」タブ�
 
 ![アセットのバージョンを比較](/help/assets/assets/version-compare2.png)
 
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### プレリリース機能
 
-* [ユニバーサルエディター - フォームフラグメント](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)：ユニバーサルエディターでは、アダプティブフォームのフォームフラグメントを作成して再利用できるようになりました。これらのフラグメントは、一度作成したら複数のフォームに適用できる、再利用可能なフォームセクション（連絡先の詳細、同意フィールドなど）です。この機能により、フォームの作成が効率化され、一貫性が確保され、オーサリングの効率が向上します。
+* [ アダプティブFormsおよびフォームフラグメント用のユニバーサルエディター ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：ユニバーサルエディターでは、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成を促進し、一貫性を高め、スパムや自動不正使用に対する保護を向上させることができます。
 
 * [SharePoint ドキュメントライブラリ - 添付ファイルを元のファイル名で保存](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library)：フォームの添付ファイルを SharePoint ドキュメントライブラリに保存する際に、元のファイル名を使用して保存するオプションが追加されました。この機能強化により、アップロードしたファイルの識別と管理が簡素化されます。
 
 * **ルールエディター**：
    * [「When」句のクリックイベントを含むバイナリ条件](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor)：ルールエディターでは、ボタンクリックイベント（_Is Clicked_）を「When」句内の他の条件と組み合わせることができるようになりました。これにより、ユーザーの操作やその他の要因に基づいて、ルールの実行をより正確に制御できます。メモ：複数の条件を使用する場合、クリックイベントを最初の条件としてリストする必要があります。
    * [フィールドとパネルの検証条件](/help/forms/rule-editor-core-components-usecases.md)：ルールエディターに _IsValid_ 条件と _IsNotValid_ 条件が含まれるようになりました。これらを使用すると、特定のフィールドまたはパネル全体（水平タブ、垂直タブ、アコーディオン、ウィザードなどのレイアウトを含む）の検証ステータスを確認できるので、検証結果に基づいてフォームのナビゲーションとユーザーエクスペリエンスが向上します。
-* **SharePoint リストの範囲管理の改善**：SharePoint サイトでは、/sites や /teams などのすべての管理パスをサポートするようになりました。この機能強化により、様々な SharePoint サイト構造をまたいで幅広い統合が可能になり、組織のコンテンツに接続する際の柔軟性が向上します。
-* **SharePoint リストへのレコードのドキュメントの保存のサポート**：SharePoint リストベースのフォームデータモデル（FDM）を使用して作成したフォームでは、レコードのドキュメントのバインド参照フィールドプロパティを設定して、レコードのドキュメント（DoR）を SharePoint リストに保存できるようになりました。この機能強化により、サポートされているフォームデータとドキュメントの SharePoint ストレージとのシームレスな統合が可能になります。
+* [SharePoint リストの範囲管理の改善](/help/forms/connect-forms-to-sharepoint-list.md)：SharePoint サイトでは、/sites や /teams などのすべての管理パスをサポートするようになりました。この機能強化により、様々な SharePoint サイト構造をまたいで幅広い統合が可能になり、組織のコンテンツに接続する際の柔軟性が向上します。
+* [SharePoint リストへのレコードのドキュメントの保存のサポート](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields)：SharePoint リストベースのフォームデータモデル（FDM）を使用して作成したフォームでは、レコードのドキュメントのバインド参照フィールドプロパティを設定して、レコードのドキュメント（DoR）を SharePoint リストに保存できるようになりました。この機能強化により、サポートされているフォームデータとドキュメントの SharePoint ストレージとのシームレスな統合が可能になります。
+* [ アダプティブフォームフラグメントの自動マッピングのサポート ](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form)：アダプティブFormsでは、スキーマオブジェクトが定義済みのフラグメント構造に一致する場合の、マッチングフラグメントの自動挿入をサポートするようになりました。これにより、フォームの作成が合理化され、再利用が促進されます。
 
 ### AEM Forms の早期アクセス機能 {#forms-new-early-access-features}
 
@@ -103,7 +105,7 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 
 #### Adobe Experience Platform（AEP）と Forms の統合
 
-Forms と AEP 間の統合機能が、早期導入者向けに提供されるようになりました。
+* [AEM FormsとAdobe Experience Platformの統合 ](/help/forms/aem-forms-aep-connector.md):AEM Forms to Adobe Experience Platform Connector を使用すると、Adaptive FormsとAdobe Experience Platformをシームレスに統合できます。 この機能を使用すると、フォームデータを XDM スキーマにマッピングし、リアルタイムでAEPに直接送信できます。 Adobe Experience Cloud ソリューション全体で、パーソナライゼーションおよびアクティベーションのユースケースのためのデータキャプチャを効率化します。
 
 ## CIF アドオン {#cloud-services-cif}
 

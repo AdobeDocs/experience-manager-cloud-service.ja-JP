@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 54fedd6eb2abe4f60af20c39ac70e21378687b45
+source-git-commit: abee266772fc2b09d59a2fa4dcc6a60ba3fe1752
 workflow-type: tm+mt
-source-wordcount: '6343'
+source-wordcount: '6351'
 ht-degree: 99%
 
 ---
@@ -908,6 +908,7 @@ ht-degree: 99%
    + インタラクティブなコミュニケーション {#interactive-communocation}
       + [インタラクティブ通信の概要](/help/forms/introduction-to-interactive-communication.md)
       + [最初のインタラクティブ通信の作成](/help/forms/create-your-first-communication.md)
+      + [AEM Forms API を使用した AFP 出力の生成](/help/forms/document-generation-afp-api.md)
       + [よくある質問](/help/forms/interactive-communications-faq.md)
    + Forms 中心のワークフロー {#create-form-centric-workflows}
       + [Forms 中心のワークフローの導入](/help/forms/aem-forms-workflow.md)

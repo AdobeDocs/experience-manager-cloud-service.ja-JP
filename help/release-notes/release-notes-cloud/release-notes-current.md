@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: ad23b8328f155ac56b4163ce90f3f0818e7e76c9
-workflow-type: ht
-source-wordcount: '1332'
-ht-degree: 100%
+source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
+workflow-type: tm+mt
+source-wordcount: '1810'
+ht-degree: 90%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -59,6 +59,33 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 コンテンツハブでは、[作成中のコレクションへのアクセスを制御し、許可されたユーザーのみがグループ化されたアセットを表示または管理できるようになりました](/help/assets/collections-content-hub.md##create-collections)。これにより、セキュリティの強化、共同作業の向上、アセットの組織的な管理、ガバナンスの効率化が実現します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
+
+
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+* [ アダプティブFormsおよびフォームフラグメント用のユニバーサルエディター ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：ユニバーサルエディターでは、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成を促進し、一貫性を高め、スパムや自動不正使用に対する保護を向上させることができます。
+
+### プレリリース機能
+
+* [ アダプティブFormsからの AFP レンディションの生成と同期 ](/help/forms/document-generation-afp-api.md): AFP Output Sync API を使用すると、管理者とユーザーはアダプティブFormsから AFP （Advanced Function Presentation）出力を生成し、出力を外部システムやストレージの場所と同期できます。 AFP は印刷に最適化された高性能なドキュメント形式で、大規模なエンタープライズ環境でよく使用されます。
+
+* [SharePoint ドキュメントライブラリ - 添付ファイルを元のファイル名で保存](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library)：フォームの添付ファイルを SharePoint ドキュメントライブラリに保存する際に、元のファイル名を使用して保存するオプションが追加されました。この機能強化により、アップロードしたファイルの識別と管理が簡素化されます。
+
+* **ルールエディター**：
+   * [「When」句のクリックイベントを含むバイナリ条件](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor)：ルールエディターでは、ボタンクリックイベント（_Is Clicked_）を「When」句内の他の条件と組み合わせることができるようになりました。これにより、ユーザーの操作やその他の要因に基づいて、ルールの実行をより正確に制御できます。メモ：複数の条件を使用する場合、クリックイベントを最初の条件としてリストする必要があります。
+   * [フィールドとパネルの検証条件](/help/forms/rule-editor-core-components-usecases.md)：ルールエディターに _IsValid_ 条件と _IsNotValid_ 条件が含まれるようになりました。これらを使用すると、特定のフィールドまたはパネル全体（水平タブ、垂直タブ、アコーディオン、ウィザードなどのレイアウトを含む）の検証ステータスを確認できるので、検証結果に基づいてフォームのナビゲーションとユーザーエクスペリエンスが向上します。
+* [SharePoint リストの範囲管理の改善](/help/forms/connect-forms-to-sharepoint-list.md)：SharePoint サイトでは、/sites や /teams などのすべての管理パスをサポートするようになりました。この機能強化により、様々な SharePoint サイト構造をまたいで幅広い統合が可能になり、組織のコンテンツに接続する際の柔軟性が向上します。
+* [SharePoint リストへのレコードのドキュメントの保存のサポート](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields)：SharePoint リストベースのフォームデータモデル（FDM）を使用して作成したフォームでは、レコードのドキュメントのバインド参照フィールドプロパティを設定して、レコードのドキュメント（DoR）を SharePoint リストに保存できるようになりました。この機能強化により、サポートされているフォームデータとドキュメントの SharePoint ストレージとのシームレスな統合が可能になります。
+
+### AEM Forms の早期アクセス機能 {#forms-new-early-access-features}
+
+AEM Forms 早期アクセスプログラムでは、最先端のイノベーションに排他的にアクセスし、その開発に貢献できるユニークな機会を提供します。
+
+このリリースノートでは、現在のリリースで提供されるイノベーションのリストを示します。 早期アクセスプログラムで利用可能なイノベーションの完全なリストについては、[AEM Forms 早期アクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
+
+#### Adobe Experience Platform（AEP）と Forms の統合
+
+* [AEM FormsとAdobe Experience Platformの統合 ](/help/forms/aem-forms-aep-connector.md):AEM Forms to Adobe Experience Platform Connector を使用すると、Adaptive FormsとAdobe Experience Platformをシームレスに統合できます。 この機能を使用すると、フォームデータを XDM スキーマにマッピングし、リアルタイムでAEPに直接送信できます。 Adobe Experience Cloud ソリューション全体で、パーソナライゼーションおよびアクティベーションのユースケースのためのデータキャプチャを効率化します。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
