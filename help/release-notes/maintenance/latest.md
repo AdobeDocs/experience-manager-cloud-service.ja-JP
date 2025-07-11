@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 17064d27dd34bbd5aad89f814481c29b0f6a7fe1
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -32,11 +32,11 @@ ht-degree: 62%
 
 #### AEM ガイド {#guides-21484}
 
-* GUIDES-29781:Source ビューの要素内に XML コメントが追加されると、ビューを切り替えるとコメントの前後のスペースが失われます。
+* GUIDES-29781：Source ビューの要素内に XML コメントが追加されると、ビューを切り替えるとコメントの前後のスペースが失われます。
 * GUIDES-29078：ブラウザーの更新後にオーサービューでトピックを開くと、以前にファイルプロパティパネルで適用したタグが保持されず、特に多数のタグを選択できる場合に、新しいタグを追加すると既存のタグが上書きされます。
-* GUIDES-28214：レビューノードが作成されていないので、AEM ワークフローを使用してレビュータスクを作成しようとすると、一貫して失敗する。
-* GUIDES-28104:`chunk=to-content` 属性を持つ DITA マップを公開すると、新しいAEM Sites出力に重複した JCR ノードが作成され、AEM Sitesのコンテンツ構造が冗長になる。
-* GUIDES-29065、GUIDES-28793：大きなコレクションを操作する場合、読み込み時間の延長や断続的なタイムアウトなどのパフォーマンスの問題が発生します。
+* GUIDES-28214：AEM ワークフローを使用してレビュータスクを作成しようとしても、レビュー用ノードが作成されないため、作成が常に失敗します。
+* GUIDES-28104：`chunk=to-content` 属性を使用して DITA マップを公開すると、新しい AEM Sites の出力で JCR ノードが重複して作成され、AEM Sites 内に冗長なコンテンツ構造が発生します。
+* GUIDES-29065、GUIDES-28793：大規模なコレクションを操作する際に、読み込み時間の長期化や断続的なタイムアウトなどのパフォーマンス問題が発生します。
 
 このリリースの新機能および機能強化と修正された問題について詳しくは、[Experience Manager Guides リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)を参照してください。
 
