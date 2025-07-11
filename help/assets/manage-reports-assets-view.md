@@ -6,10 +6,10 @@ feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 132f601e1bbeeea59dc6a14392a9f6c786b20682
+source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1504'
+ht-degree: 100%
 
 ---
 
@@ -42,17 +42,16 @@ AEM Assets ビュー環境では、レポートダッシュボードを通じて
 
 **レポートを作成するには：**
 
-1. **レポート**&#x200B;に移動し、「**レポートを作成**」（右上から）をクリックします。 **レポートを作成**&#x200B;ダイアログボックスには、以下のフィールドが表示されます。
+1. **レポート**&#x200B;に移動し、「**レポートを作成**」（右上から）をクリックします。 **レポートを作成**ダイアログボックスには、以下のフィールドが表示されます。
    ![create-report](/help/assets/assets/executed-reports1.svg)
 
    **「設定」タブ：**
 
-   1. **レポートタイプ：**&#x200B;[!UICONTROL アップロード]、[!UICONTROL ダウンロード]、[Dynamic Media 配信レポート](#dynamic-media-delivery-reports)タイプから選択します。
+   1. **レポートタイプ：**[!UICONTROL アップロード]、[!UICONTROL ダウンロード]、[Dynamic Media 配信レポート](#dynamic-media-delivery-reports)タイプから選択します。
    1. **タイトル：**&#x200B;レポートにタイトルを追加します。
    1. **説明：**&#x200B;レポートにオプションの説明を追加します。
    1. **フォルダーパスを選択：**&#x200B;フォルダーパスを選択すると、その特定のフォルダー内でアップロードおよびダウンロードされたアセットのレポートが生成されます。 例えば、フォルダーにアップロードされたアセットのレポートが必要な場合は、そのフォルダーへのパスを指定します。
    1. **日付間隔を選択：**&#x200B;フォルダー内のアップロードまたはダウンロードのアクティビティを表示するには、日付範囲を選択します。
-
    <br>
 
    >[!NOTE]
@@ -143,7 +142,7 @@ AEM Assets ビュー環境では、レポートダッシュボードを通じて
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### 前提条件 {#prereqs-dynamic-media-delivery-reports}
@@ -204,8 +203,7 @@ AEM Assets ビュー UI の「**レポートをスケジュール**」では、�
    1. **タイトル：**&#x200B;レポートにタイトルを追加します。
    1. **説明**：レポートにオプションの説明を追加します。
    1. **フォルダーパスを選択：**&#x200B;フォルダーパスを選択すると、今後のその特定のフォルダーにアップロードされるか、その特定のフォルダーからダウンロードされるアセットのレポートが生成されます。
-   1. **「レポートをスケジュール」を切り替え：**&#x200B;レポートを後で実行するようにスケジュールするか、繰り返し実行するように切り替えます。
-
+   1. **「レポートをスケジュール」を切り替え：**レポートを後で実行するようにスケジュールするか、繰り返し実行するように切り替えます。
       ![レポートのスケジュール](/help/assets/assets/schedule-reports1.svg)
 
    1. **頻度を選択：**&#x200B;レポートを生成する間隔（例えば、日別、週別、月別、年別、1 回限り）を指定し、レポートを実行する日時と繰り返しの終了日を設定します。 1 回限りのレポートの場合は、AEM 環境で選択したアクティビティタイプに関するレポートの日付範囲を選択します。 例えば、特定の月の 10日から 29日（今後の日付）までにダウンロードされたアセットに関するレポートが必要な場合は、「**日付間隔を選択**」フィールドでこれらの日付を選択します。
@@ -249,11 +247,11 @@ AEM Assets ビュー UI の「**レポートをスケジュール**」では、�
 
 * **アップロード**：過去 30 日間または 12 か月間に Assets ビュー環境にアップロードされたアセットの数が、折れ線グラフで表されます。
   ![インサイトのアップロード](/help/assets/assets/insights-uplods2.svg)
-  <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.
 
-* **ストレージ使用量**：Assets ビュー環境のストレージ使用量（バイト）が、棒グラフで表されます。
-  ![インサイトのアップロード](/help/assets/assets/insights-storage-usage1.svg)
-  <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
+* **Storage usage**: The storage usage, in bytes, for the Assets view environment represented using a bar chart.
+![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+<!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
@@ -263,7 +261,7 @@ AEM Assets ビュー UI の「**レポートをスケジュール**」では、�
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
-* **サイズ別のアセットカウント：**&#x200B;アセットビュー環境の合計アセット数を様々なサイズ範囲にセグメント化し、各サイズ範囲内のアセットの数と割合をハイライト表示し、ドーナツグラフで表します。
+* **サイズ別のアセットカウント：**アセットビュー環境の合計アセット数を様々なサイズ範囲にセグメント化し、各サイズ範囲内のアセットの数と割合をハイライト表示し、ドーナツグラフで表します。
   ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
-* **アセットタイプ別のアセットカウント：**&#x200B;アセットビュー環境の合計アセット数をセグメント化し、ファイルタイプに基づいてアセットの数と割合をハイライト表示し、ドーナツグラフで表します。
+* **アセットタイプ別のアセットカウント：**アセットビュー環境の合計アセット数をセグメント化し、ファイルタイプに基づいてアセットの数と割合をハイライト表示し、ドーナツグラフで表します。
   ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
