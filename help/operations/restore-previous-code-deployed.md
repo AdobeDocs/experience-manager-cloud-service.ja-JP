@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->>この記事で説明する機能は、早期導入アルファプログラムでのみ使用できます。 アルファ版にサインアップするには、[ パイプラインデプロイメントのワンクリックロールバック ](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback) を参照してください。
+>&#x200B;>この記事で説明する機能は、早期導入アルファプログラムでのみ使用できます。 アルファ版にサインアップするには、[ パイプラインデプロイメントのワンクリックロールバック ](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback) を参照してください。
 
 **デプロイされた以前のコードを復元** を使用して、環境を最後に成功したビルドに即座にロールバックできます。パイプラインを実行する必要はありません。
 
