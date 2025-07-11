@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
-workflow-type: ht
-source-wordcount: '2222'
-ht-degree: 100%
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
+workflow-type: tm+mt
+source-wordcount: '2252'
+ht-degree: 98%
 
 ---
 
@@ -129,6 +129,8 @@ ht-degree: 100%
 1. 次に、プロパティパネルで追加アイコンを選択します。
 
    ![追加アイコンの選択](assets/add-icon.png)
+
+1. コンテナに複数のコンポーネントを使用できる場合は、挿入するコンポーネントをドロップダウンから選択します。 許可されるコンポーネントが 1 つだけの場合は、自動的に挿入されます。
 
 コンポーネントがコンテナに挿入され、エディターで編集できます。
 
