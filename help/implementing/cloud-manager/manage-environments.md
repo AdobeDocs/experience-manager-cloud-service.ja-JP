@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
+source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2488'
 ht-degree: 95%
 
 ---
@@ -162,9 +162,13 @@ ht-degree: 95%
    ![環境の詳細を表示](assets/view-environment-details.png)
 
 
-## 環境のコンテンツの復元（Alpha） {#restore-environment}
+## 環境のコンテンツの復元 {#restore-environment}
 
-[AEM as a Cloud Serviceでのコンテンツの復元 ](/help/operations/restore.md) を参照してください。
+[AEM as a Cloud Serviceのコンテンツの復元 ](/help/operations/restore.md) を参照してください。
+
+## デプロイされた以前のコードを復元 {#restore-previous-code-deployed}
+
+[AEM as a Cloud Serviceにデプロイされた以前のコードの復元 ](/help/operations/restore-previous-code-deployed.md) を参照してください。
 
 
 ### プレビューサービスへのアクセス {#access-preview-service}

@@ -4,9 +4,9 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: cf36a5f22132695be47c3d52292f59f785a0fd52
+source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1210'
 ht-degree: 60%
 
 ---
@@ -49,20 +49,22 @@ Cloud Managerのアルファおよびベータ版プログラムに参加する�
 
 最新の顧客ソースコードが期待どおりに動作しない場合は、すばやく以前のデプロイメントに戻すことができます。パイプライン全体を再実行したり、コミットを手動で戻したりする必要はありません。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![ 環境カードから顧客ソースコードを復元 ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*選択した環境の上に&#x200B;**復元**/**以前にデプロイされたコード**&#x200B;オプションが表示されている環境カード*
+![ 環境カードから顧客ソースコードを復元 ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*選択した環境の上に&#x200B;**復元**/**以前にデプロイされたコード**オプションが表示されている環境カード*
 
 
 ![ 以前にデプロイしたコードを復元ダイアログボックス ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-***以前にデプロイしたコードを復元**&#x200B;ダイアログボックスで、現在デプロイされているバージョンと復元するバージョンを確認し、「**確認***」をクリックします。
+***以前にデプロイしたコードを復元**ダイアログボックスで、現在デプロイされているバージョンと復元するバージョンを確認し、「**確認***」をクリックします。
 
 
 ![ アクティベーションの復元 ](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Managerは、環境を以前のビルドにロールバックし、コンテンツと設定はそのままの状態に保ち、デプロイメントが完了するまで環境に&#x200B;**復元中**&#x200B;マークを付けます。*
+*Cloud Managerは、環境を以前のビルドにロールバックし、コンテンツと設定はそのままの状態に保ち、デプロイメントが完了するまで環境に&#x200B;**復元中**マークを付けます。*
 
 
 ![ 使用中のSource コードバージョン ](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png)*環境の詳細ビューには、前述のように、使用中のアクティブなソースコードバージョンも表示されるようになりました。*
 
 この新機能のテストやフィードバックの提供に関心がある場合は、Adobe IDに関連付けられたメールアドレスから [restorecode@adobe.com](mailto:restorecode@adobe.com) にメールを送信してください。
+
+[AEM as a Cloud Serviceにデプロイされた以前のコードの復元 ](/help/operations/restore-previous-code-deployed.md) を参照してください。
 
 [AEM as a Cloud Serviceでのコンテンツの復元 ](/help/operations/restore.md) も参照してください。
 
