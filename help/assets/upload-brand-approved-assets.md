@@ -3,9 +3,9 @@ title: ' [!DNL Content Hub] へのブランド承認済みアセットのアッ�
 description: コンテンツハブへのブランド承認済みアセットのアップロード方法について説明します。
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '940'
+source-git-commit: dc0f6b5faf75fb7303611e3f25febe89b43a834d
+workflow-type: tm+mt
+source-wordcount: '761'
 ht-degree: 100%
 
 ---
@@ -61,21 +61,6 @@ Assets as a Cloud Service で `Approved` としてマークされたアセット
 1. 「**[!UICONTROL アップロード]**」をクリックして、コンテンツハブにアセットをアップロードします。[!UICONTROL レビューの詳細]確認ボックスが表示されます。「[!UICONTROL 続行]」をクリックします。
 
 1. アセットのアップロードが開始されます。「[!UICONTROL 新規アップロード]」をクリックして、アップロード手順を再開します。「[!UICONTROL 完了]」をクリックして、アップロードを完了します。
-
-また、管理者は、キャンペーン名、キーワード、チャネルなど、アセットのアップロード中に表示される必須フィールドとオプションフィールドを設定することもできます。詳しくは、[コンテンツハブユーザーインターフェイスの設定](configure-content-hub-ui-options.md#configure-upload-options-content-hub)を参照してください。
-
-
-## OneDrive または Dropbox のデータソースからコンテンツハブへのアセットの追加 {#add-assets-onedrive-dropbox}
-
-OneDrive または Dropbox のデータソースからコンテンツハブにアセットを追加するには：
-
-1. 「**[!UICONTROL アセットを追加]**」をクリックし、OneDrive または Dropbox からアセットを読み込むことができる&#x200B;**[!UICONTROL 承認済みアセットを追加]**&#x200B;ダイアログボックスを表示します。
-
-1. 「**[!UICONTROL OneDrive]**」または「**[!UICONTROL Dropbox]**」をクリックして、読み込みプロセスを開始します。コンテンツハブでは、OneDrive または Dropbox アカウントへのログオンを求めるプロンプトが表示され、OneDrive または Dropbox のフォルダー構造が左側のパネルに表示されます。
-
-1. ファイルまたはフォルダー名の横にある「+」アイコンをクリックして、選択した項目のリストに項目を表示します。コンテンツハブポータルに追加する必要があるすべてのファイルを選択したら、[ローカルファイルシステムからコンテンツハブへのアセットの追加](#add-assets-local-file-system)の手順 3～6 を繰り返して、アップロードプロセスを完了します。
-
-   ![OneDrive または Dropbox からコンテンツハブへのアセットのアップロード](assets/add-assets-onedrive-dropbox.png)
 
 また、管理者は、キャンペーン名、キーワード、チャネルなど、アセットのアップロード中に表示される必須フィールドとオプションフィールドを設定することもできます。詳しくは、[コンテンツハブユーザーインターフェイスの設定](configure-content-hub-ui-options.md#configure-upload-options-content-hub)を参照してください。
 
