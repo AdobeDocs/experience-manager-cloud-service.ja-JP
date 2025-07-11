@@ -106,7 +106,7 @@ AEM Assets は Figma とネイティブに統合されているので、AEM Asse
 
 **AJO B2C と Dynamic Media のネイティブ統合&#x200B;**
 
-[Experience Manager (AEM) Dynamic Media とJourney Optimizer (AJO) B2C のネイティブ統合](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic)により、マーケターは AEM Dynamic Media アセット (レンディションおよび DM テンプレート) を AJO コンテンツに簡単に埋め込んで、チャネル間でのリアルタイムの更新と高度にパーソナライズされたエクスペリエンスを提供できます。
+[Experience Manager (AEM) Dynamic Media とJourney Optimizer (AJO) B2C のネイティブ統合](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/combine/aem-dynamic)により、マーケターは AEM Dynamic Media アセット (レンディションおよび DM テンプレート) を AJO コンテンツに簡単に埋め込んで、チャネル間でのリアルタイムの更新と高度にパーソナライズされたエクスペリエンスを提供できます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
