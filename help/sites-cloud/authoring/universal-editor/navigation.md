@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
+source-git-commit: afae63ae84d3807cc3563f6b0fbff73931ff051b
 workflow-type: tm+mt
 source-wordcount: '1820'
 ht-degree: 97%
@@ -153,7 +153,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 [ローカル開発目的でカスタム認証ヘッダーを設定](/help/implementing/universal-editor/developer-overview.md#auth-header)する必要がある場合は、認証ヘッダー設定アイコンを選択します。
 
-![認証ヘッダー設定ボタン](assets/authentication-header-settings.png)
+![ 認証ヘッダー設定ボタン ](assets/authentication-header-settings.png)
 
 >[!NOTE]
 >
