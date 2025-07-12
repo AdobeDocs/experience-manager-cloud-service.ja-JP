@@ -1,12 +1,12 @@
 ---
-title: AEM as a Cloud Serviceにデプロイされた以前のSource コードを復元する
+title: デプロイされた以前のSource コードを復元します
 description: パイプラインの実行を必要とせずに、環境を最後に成功したビルド&ndash；に復元する方法を説明します。
 feature: Operations
 role: Admin
 badge: label="アルファ" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-source-git-commit: d5a740aa3133504f394933bc77a735f7d14230ba
+source-git-commit: ae90f527d398af40cf9e6963d2e27de3368f2e8f
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '523'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->&#x200B;>この記事で説明する機能は、早期導入アルファプログラムでのみ使用できます。 アルファ版にサインアップするには、[ パイプラインデプロイメントのワンクリックロールバック ](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback) を参照してください。
+>>この記事で説明する機能は、早期導入アルファプログラムでのみ使用できます。 アルファ版にサインアップするには、[ パイプラインデプロイメントのワンクリックロールバック ](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback) を参照してください。
 
 **デプロイされた以前のコードを復元** を使用して、環境を最後に成功したビルドに即座にロールバックできます。パイプラインを実行する必要はありません。
 
