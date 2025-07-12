@@ -4,9 +4,10 @@ description: パイプラインの実行を必要とせずに、環境を最後�
 feature: Operations
 role: Admin
 badge: label="アルファ" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-source-git-commit: ae90f527d398af40cf9e6963d2e27de3368f2e8f
+exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
+source-git-commit: 19e23785f2c4fbfa5a244864fe16500c1e7e128b
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '522'
 ht-degree: 7%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->&#x200B;>この記事で説明する機能は、早期導入アルファプログラムでのみ使用できます。 アルファ版にサインアップするには、[ パイプラインデプロイメントのワンクリックロールバック ](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback) を参照してください。
+>この記事で説明する機能は、早期導入アルファプログラムでのみ使用できます。 アルファ版にサインアップするには、[ パイプラインデプロイメントのワンクリックロールバック ](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback) を参照してください。
 
 **デプロイされた以前のコードを復元** を使用して、環境を最後に成功したビルドに即座にロールバックできます。パイプラインを実行する必要はありません。
 
@@ -29,12 +30,12 @@ ht-degree: 7%
 
 **以前にデプロイしたコードを復元** 機能は、以下の **すべて** 条件が true の場合にのみ使用できます。
 
-* **環境の復元の作成** 権限を保持しています。 権限の管理について詳しくは、[ カスタム権限 ](/help/implementing/cloud-manager/custom-permissions.md) を参照してください。
+* **環境の復元の作成** 権限を保持します。 権限の管理について詳しくは、[ カスタム権限 ](/help/implementing/cloud-manager/custom-permissions.md) を参照してください。
 * 組織が早期導入プログラムに登録され、機能フラグがオンになっています。
-* プログラムは **AEM as a Cloud Service** で実行されます。
-* 選択した環境は **DEV** 環境です（Alphaの一時的な制限）。
-* その環境の最後のパイプラインは終了し **正常に**、**10 日未満** 前に実行されました。
-* 環境のステータスは **実行中** で、進行中のパイプラインはありません。
+* プログラムはAEM as a Cloud Serviceで実行されます。
+* 選択した環境は `Development` 環境です（Alphaの一時的な制限）。
+* その環境の最後のパイプラインは正常に終了し、**10 日未満** 前に実行されました。
+* 環境のステータスは *実行中* で、進行中のパイプラインはありません。
 * 復元するターゲットソースコードバージョンが **30 日以内に** デプロイされました。
 
 いずれかのチェックが失敗した場合、Cloud Managerでは次のダイアログボックスが開き、1 つ以上の未適合の条件が一覧表示されます。このダイアログボックスは無効になり **確認**、復元できません。
