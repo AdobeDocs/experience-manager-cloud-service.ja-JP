@@ -3,10 +3,10 @@ title: アセットセレクターアプリケーションのカスタマイズ
 description: 関数を使用して、アプリケーション内のアセットセレクターをカスタマイズします。
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
-source-wordcount: '1246'
-ht-degree: 100%
+source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
+workflow-type: tm+mt
+source-wordcount: '1261'
+ht-degree: 97%
 
 ---
 
@@ -408,9 +408,10 @@ const filterSchema = useMemo ((); => {
 
 ## アセットセレクターでのアップロード {#upload-in-asset-selector}
 
-ローカルファイルシステムからアセットセレクターにファイルまたはフォルダーをアップロードできます。ローカルファイルシステムを使用してファイルをアップロードするには、通常、アセットセレクターのマイクロフロントエンドアプリケーションによって提供されるアップロード機能を使用する必要があります。アセットセレクターでアップロードを呼び出すのに必要な様々なコードスニペットには、次が含まれます。
+ローカルファイルシステムからアセットセレクターにファイルまたはフォルダーをアップロードできます。ローカルファイルシステムを使用してファイルをアップロードするには、通常、アセットセレクターのマイクロフロントエンドアプリケーションによって提供されるアップロード機能を使用する必要があります。`upload` アセットセレクターでアップロードを呼び出すために必要な、様々なコードスニペットを以下に示します。
 
 * [基本アップロードフォームのコードスニペット](#basic-upload)
+* [設定をアップロード](#upload-config)
 * [メタデータを使用したアップロード](#upload-with-metadata)
 * [カスタマイズされたアップロード](#customized-upload)
 * [サードパーティのソースを使用したアップロード](#upload-using-third-party-source)
@@ -449,6 +450,25 @@ export const UploadExample = () => {
     )
 }
 ```
+
+### 設定をアップロード {#upload-config}
+
+```
+uploadConfig: {
+        onUploadStart: action('onUploadStart'),
+        onUploadComplete: action('onUploadComplete'),
+        metadataSchema: [
+            {
+                mapToProperty: 'dam:assetStatus',
+                value: 'approved',
+                element: 'hidden',
+            },
+        ],
+        ... more properties
+     }, 
+```
+
+*その他のプロパティには、`metadataSchema`、`onMetadataFormChange`、`targetUploadPath`、`hideUploadButton`、`onUploadStart`、`importSettings` `onUploadComplete`、`onFilesChange`、`uploadingPlaceholder`* などがあります。 詳しくは、[ アセットセレクターのプロパティ ](#asset-selector-properties.md) を参照してください。
 
 ### メタデータを使用したアップロード {#upload-with-metadata}
 

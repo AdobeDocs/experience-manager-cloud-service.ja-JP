@@ -3,10 +3,10 @@ title: カスタマイズ用のアセットセレクターのプロパティ
 description: アセットセレクターを使用して、アプリケーション内のアセットのメタデータとレンディションを検索および取得します。
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
-source-wordcount: '1357'
-ht-degree: 100%
+source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
+workflow-type: tm+mt
+source-wordcount: '1420'
+ht-degree: 93%
 
 ---
 
@@ -47,16 +47,16 @@ ht-degree: 100%
 | *filterRepoList* | 関数 | いいえ |  | Experience Manager リポジトリを呼び出し、フィルタリングされたリポジトリのリストを返す `filterRepoList` コールバック関数を使用できます。 |
 | *expiryOptions* | 関数 | | | 次の 2 つのプロパティ間で使用できます。**getExpiryStatus** では、有効期限切れのアセットのステータスが表示されます。関数は、指定したアセットの有効期限に基づいて、`EXPIRED`、`EXPIRING_SOON` または `NOT_EXPIRED` を返します。[有効期限切れのアセットのカスタマイズ](/help/assets/asset-selector-customization.md#customize-expired-assets)を参照してください。さらに、**allowSelectionAndDrag** を使用できます。この場合、関数の値は `true` または `false` のいずれかになります。値が `false` に設定されている場合、有効期限切れのアセットはキャンバス上で選択またはドラッグできません。 |
 | *showToast* | | いいえ | | これにより、アセットセレクターで、有効期限切れのアセットに対してカスタマイズされたトーストメッセージを表示できます。 |
-| *metadataSchema* | 配列 | いいえ | | ユーザーからメタデータを収集するのに指定するフィールドの配列を追加します。このプロパティを使用すると、アセットに自動的に割り当てられるが、ユーザーには表示されない非表示のメタデータも使用できます。 |
-| *onMetadataFormChange* | コールバック関数 | いいえ | | これは、`property` と `value` から構成されます。`Property` は、値を更新する *metadataSchema* から渡されたフィールドの *mapToProperty* と等しくなります。一方、`value` は、入力として指定する新しい値と等しくなります。 |
-| *targetUploadPath* | 文字列 |  | `"/content/dam"` | ファイルのターゲットアップロードパスで、デフォルトは、アセットリポジトリのルートです。 |
-| *hideUploadButton* | ブーリアン | | False | これは、内部アップロードボタンを非表示にするかどうかを確認します。 |
-| *onUploadStart* | 関数 | いいえ |  | これは、Dropbox、OneDrive、ローカル間でアップロードソースを渡すのに使用されるコールバック関数です。構文は `(uploadInfo: UploadInfo) => void` です。 |
-| *importSettings* | 関数 | | | これにより、サードパーティソースからのアセットの読み込みのサポートが有効になります。`sourceTypes` は、有効にする読み込みソースの配列を使用します。サポートされているソースは、Onedrive と Dropbox です。構文は `{ sourceTypes?: ImportSourceType[]; apiKey?: string; }` です。 |
-| *onUploadComplete* | 関数 | いいえ | | これは、成功、失敗、重複の中からファイルアップロードステータスを渡すのに使用されるコールバック関数です。構文は `(uploadStats: UploadStats) => void` です。 |
-| *onFilesChange* | 関数 | いいえ | | これは、ファイルを変更した際のアップロードの動作を示すのに使用されるコールバック関数です。アップロード保留中のファイルの新しい配列とアップロードのソースタイプを渡します。エラーの場合、ソースタイプは null になることがあります。構文は `(newFiles: File[], uploadType: UploadType) => void` です。 |
-| *uploadingPlaceholder* | 文字列 | | | これは、アセットのアップロードを開始した際にメタデータフォームを置き換えるプレースホルダー画像です。構文は `{ href: string; alt: string; } ` です。 |
-| *uploadConfig* | オブジェクト | | | これは、アップロード用にカスタマイズされた設定を含むオブジェクトです。 |
+| *uploadConfig* | オブジェクト | | | これは、アップロード用にカスタマイズされた設定を含むオブジェクトです。 ユーザビリティについては、[ 設定のアップロード ](#asset-selector-customization.md#upload-config) を参照してください。 |
+| *metadataSchema* | 配列 | いいえ | | このプロパティは、`uploadConfig` のプロパティの下にネストされています。 ユーザーからメタデータを収集するのに指定するフィールドの配列を追加します。このプロパティを使用すると、アセットに自動的に割り当てられるが、ユーザーには表示されない非表示のメタデータも使用できます。 |
+| *onMetadataFormChange* | コールバック関数 | いいえ | | このプロパティは、`uploadConfig` のプロパティの下にネストされています。 これは、`property` と `value` から構成されます。`Property` は、値を更新する *metadataSchema* から渡されたフィールドの *mapToProperty* と等しくなります。一方、`value` は、入力として指定する新しい値と等しくなります。 |
+| *targetUploadPath* | 文字列 |  | `"/content/dam"` | このプロパティは、`uploadConfig` のプロパティの下にネストされています。 ファイルのターゲットアップロードパスで、デフォルトは、アセットリポジトリのルートです。 |
+| *hideUploadButton* | ブーリアン | | False | 内部のアップロードボタンを非表示にするかどうかを確認します。 このプロパティは、`uploadConfig` のプロパティの下にネストされています。 |
+| *onUploadStart* | 関数 | いいえ |  | これは、Dropbox、OneDrive、ローカル間でアップロードソースを渡すのに使用されるコールバック関数です。構文は `(uploadInfo: UploadInfo) => void` です。 このプロパティは、`uploadConfig` のプロパティの下にネストされています。 |
+| *importSettings* | 関数 | | | これにより、サードパーティソースからのアセットの読み込みのサポートが有効になります。`sourceTypes` は、有効にする読み込みソースの配列を使用します。サポートされているソースは、Onedrive と Dropbox です。構文は `{ sourceTypes?: ImportSourceType[]; apiKey?: string; }` です。 さらに、このプロパティは `uploadConfig` プロパティの下にネストされます。 |
+| *onUploadComplete* | 関数 | いいえ | | これは、成功、失敗、重複の中からファイルアップロードステータスを渡すのに使用されるコールバック関数です。構文は `(uploadStats: UploadStats) => void` です。 さらに、このプロパティは `uploadConfig` プロパティの下にネストされます。 |
+| *onFilesChange* | 関数 | いいえ | | このプロパティは、`uploadConfig` のプロパティの下にネストされています。 これは、ファイルを変更した際のアップロードの動作を示すのに使用されるコールバック関数です。アップロード保留中のファイルの新しい配列とアップロードのソースタイプを渡します。エラーの場合、ソースタイプは null になることがあります。構文は `(newFiles: File[], uploadType: UploadType) => void` です。 |
+| *uploadingPlaceholder* | 文字列 | | | これは、アセットのアップロードを開始した際にメタデータフォームを置き換えるプレースホルダー画像です。構文は `{ href: string; alt: string; }` です。さらに、このプロパティは `uploadConfig` プロパティの下にネストされます。 |
 | *featureSet* | 配列 | 文字列 | | `featureSet:[ ]` プロパティは、アセットセレクターアプリケーションで特定の機能を有効または無効にするのに使用されます。コンポーネントまたは機能を有効にするには、配列に文字列値を渡すか、配列を空のままにして、そのコンポーネントを無効にします。例えば、アセットセレクターでアップロード機能を有効にするには、構文 `featureSet:[0:"upload"]` を使用します。同様に、`featureSet:[0:"collections"]` を使用してアセットセレクターでコレクションを有効にすることができます。 さらに、`featureSet:[0:"detail-panel"]` を使用してアセットの [詳細パネル](overview-asset-selector.md#asset-details-and-metadata) を有効にします。 これらの機能を一緒に使用するには、構文を `featureSet:["upload", "collections", "detail-panel"]` にします。 |
 
 <!--
