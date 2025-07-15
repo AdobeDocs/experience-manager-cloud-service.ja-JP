@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 4144c726a6f8551df9497732c2ca95b8eec5c63a
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '2356'
+source-wordcount: '2219'
 ht-degree: 28%
 
 ---
@@ -73,21 +73,6 @@ Formsの対話型コンテンツは次のとおりです。
 
 会話型Formsは、単なる新しい外観ではなく、ユーザーエクスペリエンスを大きく変える要素です。  エンゲージメントを高め、フォームの放棄を減らし、web サイトとのやり取りを全員にとってより楽しいエクスペリエンスにします。
 
-
-### Edge Delivery Services用のWYSIWYG オーサリング
-
-WYSIWYG オーサリングは、アダプティブフォームを作成してWYSIWYGに公開するためのForms インターフェイス（ユニバーサルエディターとアダプティブフォームエディター）を提供します。Edge Delivery Services WYSIWYG オーサリングでは、[ ドキュメントベースのオーサリング ](/help/edge/docs/forms/overview.md#document-based-authoring-features) のすべての機能に加えて、次のような様々な機能を提供します。
-
-* 複雑なロジックを作成する高度なルールエディター。
-* カスタム機能を実現するサーバーサイド拡張機能。
-* 簡単なフォームを作成し視覚化する WYSIWYG 編集エクスペリエンス。
-* 送信されたデータの改ざん防止アーカイブを作成するレコードのドキュメント機能。
-* 電子署名を行う Adobe Sign との統合。
-* フォームの事前入力とデータの送信の様々なデータソースとの統合。
-* 様々なデータソースとのインタラクションとデータ構造を定義するフォームデータモデル（FDM）。
-* Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics、その他多くのデータソースへのデータの送信など、フォーム送信を処理するための複数の送信アクションから選択する機能。
-
-
 ### AEM FormsからMarketoへのコネクタ
 
 [AEM Forms/Marketo コネクタ ](/help/forms/integrate-form-to-marketo-engage.md) は、Adobe Experience Manager（AEM）で作成された web フォーム（アダプティブForms）とマーケティング自動処理プラットフォームのMarketoとの間のギャップを埋めます。
@@ -140,7 +125,7 @@ Cloud 上のインタラクティブ通信は、業務上の書簡、ドキュ�
 
 開始する準備はできていますか？ インタラクティブ通信エディターは、Forms as a Cloud Service デプロイメントの早期アクセスプログラムで使用できます。 アクセスをリクエストするには、組織 ID とプログラムの詳細を公式アドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールで送信します。
 
-### AEM FormsとAdobe Experience Platformの統合（AEP）
+### AEM Forms と Adobe Experience Platform（AEP）の統合
 
 AEM FormsをAdobe Experience Platform（AEP）と接続して、顧客プロファイルとデータを活用し、パーソナライズされたフォームエクスペリエンスと、フォーム送信に基づくトリガーのダウンストリームワークフローを実現できます。 フォームデータをAEP データセットに直接送信することで、顧客プロファイルをエンリッチメントし、ユーザーのインタラクションに関するより深いインサイトを得ることができます。
 

@@ -4,16 +4,16 @@ description: EDS フォームのカスタムコンポーネントの作成
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1773'
-ht-degree: 98%
+source-wordcount: '1841'
+ht-degree: 95%
 
 ---
 
 # WYSIWYG オーサリングでのカスタムコンポーネントの作成
 
-<span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセスをリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。 例えば、リポジトリ URL が https://github.com/adobe/abc の場合、組織名は adobe で、リポジトリ名は abc になります。</span>
+<span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセス権をリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。例えば、リポジトリ URL が https://github.com/adobe/abc の場合、組織名は「adobe」、リポジトリ名は「abc」になります。</span>
 
 
 Edge Delivery Services Forms には、カスタマイズ機能が用意されているので、フロントエンド開発者は調整されたフォームコンポーネントを作成できます。これらのカスタムコンポーネントは WYSIWYG オーサリングエクスペリエンスにシームレスに統合されるので、フォーム作成者はフォームエディター内で簡単に追加、設定、管理できます。カスタムコンポーネントを使用すると、作成者はスムーズで直感的なオーサリングプロセスを確保しながら機能を強化できます。
@@ -39,11 +39,11 @@ Edge Delivery Services Forms には、カスタマイズ機能が用意されて
 
 **範囲**&#x200B;と呼ばれる新しいカスタムコンポーネントを作成する例を見てみましょう。範囲コンポーネントは直線として表示され、最小値、最大値、選択した値などの値が表示されます。
 
-![範囲コンポーネントスタイル](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+![ 最小値と最大値を持つスライダー、および選択された値インジケーターを表示する範囲コンポーネントの視覚的表現 ](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
 
 この記事を最後まで読むと、カスタムコンポーネントをゼロから作成する方法を理解できるようになります。
 
-### 1. 新しいカスタムコンポーネントの構造の追加
+### &#x200B;1. 新しいカスタムコンポーネントの構造の追加
 
 カスタムコンポーネントを使用する前に、ユニバーサルエディターで使用可能なオプションとして認識されるように登録する必要があります。これは、一意の識別子、デフォルトのプロパティおよびコンポーネントの構造を含むコンポーネント定義を通じて実現されます。カスタムコンポーネントをフォームオーサリングに使用できるようにするには、次の手順を実行します。
 
@@ -60,7 +60,7 @@ AEM プロジェクトに新しいカスタムコンポーネント用の新し�
 
         >[!NOTE]
         >
-        > JSON ファイルのファイル名に、プレフィックスとしてアンダースコア（_）が含まれていることを確認します。
+        > JSON ファイルのファイル名に、接頭辞としてアンダースコア（_）が含まれていることを確認します。
 
 1. `/blocks/form/components/range/_range.json` ファイルに移動し、カスタムコンポーネントのコンポーネント定義を追加します。
 
@@ -106,7 +106,7 @@ AEM プロジェクトに新しいカスタムコンポーネント用の新し�
 >
 > フォーム関連のすべてのコンポーネントは、ユニバーサルエディターにブロックを追加する際に、Sites と同じアプローチに従います。詳しくは、[ユニバーサルエディターで使用するために実装されたブロックの作成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block)の記事を参照してください。
 
-### 2. オーサリング用のカスタムコンポーネントのプロパティの定義
+### &#x200B;2. オーサリング用のカスタムコンポーネントのプロパティの定義
 
 カスタムコンポーネントには、フォーム作成者が設定できるプロパティを指定するコンポーネントモデルが含まれます。これらのプロパティは、ユニバーサルエディターの&#x200B;**プロパティ**&#x200B;ダイアログに表示され、作成者はラベル、検証ルール、スタイル、その他の属性などの設定を調整できます。プロパティを定義するには：
 
@@ -253,7 +253,7 @@ JSON スニペットは、**範囲**&#x200B;コンポーネントの&#x200B;**�
 ![コンポーネントの定義とモデル](/help/edge/docs/forms/universal-editor/assets/custom-component-json-file.png)
 
 
-### 3. WYSIWYGコンポーネントリストでのカスタムコンポーネントの表示
+### &#x200B;3. WYSIWYGコンポーネントリストでのカスタムコンポーネントの表示
 
 フィルターは、ユニバーサルエディターでカスタムコンポーネントを使用できるセクションを定義します。これにより、コンポーネントは適切なセクションでのみ使用でき、構造と使いやすさが確保されます。
 
@@ -299,7 +299,7 @@ WYSIWYG でのフォームオーサリング中に、カスタムコンポーネ
 
 ![コンポーネントフィルター](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
 
-### 4. カスタムコンポーネントの登録
+### &#x200B;4. カスタムコンポーネントの登録
 
 フォームブロックがカスタムコンポーネントを認識し、フォーム作成中にコンポーネントモデルで定義されたプロパティを読み込むことができるようにするには、コンポーネント定義の `fd:viewType` 値を `mappings.js` ファイルに追加します。
 コンポーネントを登録するには：
@@ -324,15 +324,15 @@ const OOTBComponentDecorators = ['file-input',
 
 上記の手順を完了すると、カスタムコンポーネントがユニバーサルエディター内のフォームのコンポーネントリストに表示されます。その後、フォームセクションにドラッグ＆ドロップできます。
 
-![範囲コンポーネント](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+![ フォームへのドラッグ&amp;ドロップに使用できるカスタム範囲コンポーネントを示す、ユニバーサルエディターコンポーネントパレットのスクリーンショット ](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
 
 以下のスクリーンショットは、コンポーネントモデルに追加された `range` コンポーネントのプロパティを示しています。このプロパティは、フォーム作成者が設定できるプロパティを指定します。
 
-![範囲コンポーネントのプロパティ](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
+![ 基本プロパティ、検証ルール、スタイルオプションなど、範囲コンポーネントの設定可能な設定を表示するユニバーサルエディタープロパティパネルのスクリーンショット ](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 これで、スタイル設定と機能を追加して、カスタムコンポーネントの実行時の動作を定義できます。
 
-### 5. カスタムコンポーネントの実行時の動作の追加
+### &#x200B;5. カスタムコンポーネントの実行時の動作の追加
 
 [フォームフィールドのスタイル設定](/help/edge/docs/forms/style-theme-forms.md)に従って、事前定義済みのマークアップを使用してカスタムコンポーネントを変更できます。これは、コンポーネントの外観を向上させるカスタム CSS（カスケーディングスタイルシート）とカスタムコードを使用して実現できます。コンポーネントの実行時の動作を追加するには：
 
@@ -392,7 +392,6 @@ const OOTBComponentDecorators = ['file-input',
    float: right;
    }
    ```
-
    このコードは、カスタムコンポーネントのスタイル設定と外観を定義するのに役立ちます。
 
 1. 機能を追加するには、`/blocks/form/components/range/range.js` ファイルに移動して次のコード行を追加します。
@@ -457,7 +456,7 @@ const OOTBComponentDecorators = ['file-input',
    カスタムのスタイル設定と機能を組み込むと、範囲コンポーネントの外観と動作が強化されます。更新されたデザインは適用されたスタイルを反映し、追加された機能は、より動的でインタラクティブなユーザーエクスペリエンスを実現します。
 以下のスクリーンショットは、更新された範囲コンポーネントを示しています。
 
-![範囲コンポーネントスタイル](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
+![ 値バブル表示とユニバーサルエディターのインタラクティブ機能を備えたスタイル設定されたスライダーを表示する、アクションの最後の範囲コンポーネント ](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
 
 ## よくある質問
 

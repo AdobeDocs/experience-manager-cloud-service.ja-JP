@@ -4,10 +4,10 @@ description: ユニバーサルエディターでフォームフラグメント�
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 8dfcec0648f5b474113325b6cc6cffc754e21ec2
-workflow-type: ht
-source-wordcount: '1355'
-ht-degree: 100%
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+workflow-type: tm+mt
+source-wordcount: '1401'
+ht-degree: 96%
 
 ---
 
@@ -108,7 +108,7 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
 
    次のスクリーンショットは、ユニバーサルエディターで作成した `contact fragment` を示しています。
 
-   ![連絡先フラグメント](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+   ![ ユニバーサルエディターで入力済みの連絡先詳細フォームフラグメントのスクリーンショット。複数のフォームで再利用できる名前、電話、メール、住所のフィールドを表示します ](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
    フラグメントを作成したら、[作成したフラグメントを Edge Delivery Services Forms に追加](#adding-form-fragments-in-forms)できます。
 
@@ -140,7 +140,7 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
 
    フォームフラグメントは、フォームへの参照により追加され、スタンドアロンのフォームフラグメントと同期を維持します。
 
-   ![フォーム内のフラグメント](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+   ![ 連絡先詳細フラグメントがユニバーサルエディター内の従業員フォームに正常に統合されたことを示すスクリーンショット。フラグメントが再利用時に構造を維持する方法を示している ](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
    **プレビュー**&#x200B;モードでフォームをプレビューして、フォームがどのように表示されるかを確認できます。
 

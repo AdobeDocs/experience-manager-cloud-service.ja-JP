@@ -4,17 +4,17 @@ description: Forms の Edge Delivery Services のユニバーサルエディタ�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 97%
+source-wordcount: '1049'
+ht-degree: 99%
 
 ---
 
 
 # Forms の Edge Delivery Services のユニバーサルエディター
 
-<span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセスをリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。 例えば、リポジトリ URL が https://github.com/adobe/abc の場合、組織名は adobe で、リポジトリ名は abc になります。</span>
+<span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセス権をリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。例えば、リポジトリ URL が https://github.com/adobe/abc の場合、組織名は「adobe」、リポジトリ名は「abc」になります。</span>
 
 ユニバーサルエディターは、シンプルで視覚的かつ直感的な WYSIWYG（見たままが得られる）インターフェイスを提供することで、Adobe Edge Delivery Services のフォーム作成に革命をもたらします。コンテンツ作成者とフォーム作成者向けに設計されており、従来のフォーム作成プロセスの複雑さを排除し、技術に詳しくないユーザーでもアクセスできます。
 
@@ -22,9 +22,9 @@ ht-degree: 97%
 
 軽量のクライアントサイドレンダリングの管理、ブラウザー間の互換性の確保、または厳密なアクセシビリティ標準の準拠のいずれであっても、ユニバーサルエディターはフォームの作成と管理の効率化されたソリューションを提供します。
 
-![ ユニバーサルエディター ](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
+![ユニバーサルエディター](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
-## Forms の Edge Delivery Services のユニバーサルエディターの主な機能
+## Forms 向け Edge Delivery Services のユニバーサルエディターの主な機能
 
 
 
@@ -45,7 +45,7 @@ ht-degree: 97%
 
 | ![分析とトラッキング](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![フォームフラグメント](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![データバインディング](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**分析とトラッキング**](https://www.aem.live/developer/martech-integration) | **フォームフラグメント**（近日公開） | **データバインディング**（近日公開） |
+| [**分析とトラッキング**](https://www.aem.live/developer/martech-integration) | **フォームフラグメント**（近日公開） | [**データバインディング**](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) |
 | 組み込みの分析とトラッキングを使用して、ユーザーの行動、フォームのインタラクション、送信率に関するインサイトを獲得し、データ駆動型のフォーム最適化を実現します。 | フォームフラグメントを使用すると、よく使用するセクションを一度作成したら、複数のフォームで再利用できるので、一貫性が確保およびメンテナンス作業が軽減され、再利用性が高まります。 | データバインディングにより、フォームフィールドとバックエンドデータソース間の直接接続が可能になり、リアルタイムの更新と、高度なデータマッピングがサポートされます。 |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![埋め込みフォーム](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![「ありがとうございます」設定](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
@@ -217,7 +217,7 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## オンボーディング
 
-ユニバーサルエディターおよび高度な機能（ルールエディターなど）を有効にするには、公式メール ID から aem-forms-ea@adobe.com までご連絡ください。フォーム作成エクスペリエンスを変えられるよう、アドビチームが支援します。
+<span class="preview"> これは、アドビの <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features"> プレリリースチャネル </a> で利用できるプレリリース機能です。</span>
 
 ## よくある質問（FAQ）
 
@@ -241,7 +241,7 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 ユニバーサルエディターには、ユーザーのインタラクション、フォーム送信率およびコンバージョン指標を監視する組み込みの分析およびトラッキングツールが含まれています。これらのインサイトは、フォームを最適化してパフォーマンスを向上させるのに役立ちます。
 
 
-## フォームの作成を開始
+## フォームの作成の開始
 
 {{universal-editor-see-also}}
 
