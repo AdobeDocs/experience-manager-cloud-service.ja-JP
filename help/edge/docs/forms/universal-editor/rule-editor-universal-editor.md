@@ -278,6 +278,7 @@ ht-degree: 98%
    * 「**[!UICONTROL 演算子を選択]**」フィールドから「**[!UICONTROL 減算]**」を選択します。
 
    * 他の「**[!UICONTROL オブジェクトをドロップまたは次から選択]**」フィールドの「**[!UICONTROL 追加控除]**」フィールドで、「フォームオブジェクト」タブから選択またはドラッグ＆ドロップします。
+
      ![ルールエディターの例 15](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. 「**[!UICONTROL 完了]**」を選択し、ルールを保存します。
@@ -295,6 +296,7 @@ ht-degree: 98%
    * 「**[!UICONTROL 演算子を選択]**」フィールドから「**[!UICONTROL 乗算]**」を選択します。
 
    * 「**[!UICONTROL オプションを選択**」フィールドから「**数値]**」を選択し、「**[!UICONTROL 数値を入力]**」フィールドに `10` のように値を入力します。
+
      ![ルールエディターの例 18](/help/edge/docs/forms/assets/rule-editor21.png)
 1. 次に、式フィールドの周りのハイライト表示された領域を選択し、「**[!UICONTROL 拡張式]**」を選択します。
    ![ルールエディターの例 19](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -360,6 +362,7 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
+
 ![カスタム関数の追加](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### ルールエディターでのカスタム関数の使用
