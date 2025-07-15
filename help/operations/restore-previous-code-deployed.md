@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 badge: label="アルファ" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 19e23785f2c4fbfa5a244864fe16500c1e7e128b
+source-git-commit: 72b80f411ee39674530c1c41349329604e127e1e
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '507'
 ht-degree: 7%
 
 ---
@@ -34,9 +34,8 @@ ht-degree: 7%
 * 組織が早期導入プログラムに登録され、機能フラグがオンになっています。
 * プログラムはAEM as a Cloud Serviceで実行されます。
 * 選択した環境は `Development` 環境です（Alphaの一時的な制限）。
-* その環境の最後のパイプラインは正常に終了し、**10 日未満** 前に実行されました。
+* その環境の最後のパイプラインは正常に終了し、**30 日未満** 前に実行されました。
 * 環境のステータスは *実行中* で、進行中のパイプラインはありません。
-* 復元するターゲットソースコードバージョンが **30 日以内に** デプロイされました。
 
 いずれかのチェックが失敗した場合、Cloud Managerでは次のダイアログボックスが開き、1 つ以上の未適合の条件が一覧表示されます。このダイアログボックスは無効になり **確認**、復元できません。
 
