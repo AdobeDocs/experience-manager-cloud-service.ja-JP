@@ -4,16 +4,16 @@ description: Edge Delivery Services 経由で配信される AEM Forms のテー
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 95%
+source-wordcount: '1833'
+ht-degree: 94%
 
 ---
 
 # フォームの外観をカスタマイズ
 
-<span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセス権をリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。例えば、リポジトリ URL が https://github.com/adobe/abc の場合、組織名は「adobe」、リポジトリ名は「abc」になります。</span>
+<span class="preview"> これは、アドビの <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features"> プレリリースチャネル </a> で利用できるプレリリース機能です。</span>
 
 
 フォームは、web サイトでのユーザーのインタラクションに不可欠で、データを入力できるようにします。カスケーディングスタイルシート（CSS）を使用すると、フォームのフィールドのスタイル設定、フォームの視覚的表現の強化、ユーザーエクスペリエンスの向上を行うことができます。
@@ -142,7 +142,6 @@ ht-degree: 95%
   }
   
 ```
-
 * `.{Type}-wrapper`：フィールドタイプに基づいて、外側の `div` 要素をターゲットにします。例えば、`.text-wrapper` はすべてのテキストフィールドをターゲットにします。
 * `.field-{Name}`：さらに、特定のフィールド名に基づいて要素を選択します。例えば、`.field-first-name` は「名」テキストフィールドをターゲットにします。このセレクターは field-{Name} クラスを持つ要素をターゲティングするために使用できますが、注意が必要です。 この特定のケースでは、入力自体だけでなくラベルや説明要素もターゲットにするので、入力フィールドのスタイル設定には役に立ちません。テキスト入力フィールド（.text-wrapper input）をターゲットにするセレクターなど、より具体的なセレクターを使用することをお勧めします。
 
@@ -220,7 +219,6 @@ main .form form .drop-down-wrapper .field-label {
   font-weight: bold;
 }
 ```
-
 * ラッパーをターゲットにする：最初のセレクター（`.drop-down-wrapper`）は外側のラッパー要素をターゲットにし、スタイルがドロップダウンコンポーネント全体に適用されるようにします。
 * Flexbox レイアウト：Flexbox は、ラベル、ドロップダウン、説明を垂直に配置して、すっきりとしたレイアウトを実現します。
 * ラベルのスタイル設定：ラベルは太字のフォントとわずかな余白で目立ちます。
@@ -230,7 +228,7 @@ main .form form .drop-down-wrapper .field-label {
 
 +++
 
-&#x200B;---
+---
 
 ### ラジオグループ
 
@@ -284,7 +282,6 @@ main .form form .drop-down-wrapper .field-label {
     padding: 10px;
   }
 ```
-
 このセレクターは、クラス radio-group-wrapper を持つフィールドセットをターゲットにします。これは、ラジオグループ全体に一般的なスタイルを適用する場合に便利です。
 
 * ラジオボタンラベルのターゲティング
@@ -465,7 +462,7 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 ```
 
 * fieldset 要素は、パネルコンテナとして機能し、クラス panel-wrapper と、パネル名（field-login）に基づいてスタイル設定する追加クラスがあります。
-* 凡例要素（&lt;legend>）は、「ログイン情報」というテキストとクラスフィールドラベルを持つパネルタイトルとして機能します。data-visible=&quot;false&quot; 属性を JavaScript で使用すると、タイトルの表示／非表示を制御できます。
+* 凡例要素（<legend>）は、「ログイン情報」というテキストとクラスフィールドラベルを持つパネルタイトルとして機能します。data-visible=&quot;false&quot; 属性を JavaScript で使用すると、タイトルの表示／非表示を制御できます。
 * フィールドセット内では、複数。{Type} ラッパー要素（この場合は.text-wrapper と.password-wrapper）は、パネル内の個々のフォームフィールドを表します。
 * 各ラッパーには、前の例と同様にラベル、入力フィールド、説明が含まれています。
 
@@ -626,7 +623,6 @@ main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
   margin-bottom: 10px;
 }
 ```
-
 このセレクターを使用すると、繰り返し可能なパネル内のすべてのフィールドラッパーのスタイルが設定され、フィールド間の一貫した間隔が維持されます。
 
 * （パネル内の）特定のフィールドのターゲティング：

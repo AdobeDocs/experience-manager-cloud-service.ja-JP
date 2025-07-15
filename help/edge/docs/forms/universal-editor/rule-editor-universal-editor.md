@@ -4,17 +4,17 @@ description: ユニバーサルエディターのルールエディターを使�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 98%
+source-wordcount: '2216'
+ht-degree: 97%
 
 ---
 
 
 # WYSIWYG オーサリングのルールエディターの概要
 
-<span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセス権をリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。例えば、リポジトリ URL が https://github.com/adobe/abc の場合、組織名は「adobe」、リポジトリ名は「abc」になります。</span>
+<span class="preview"> これは、アドビの <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features"> プレリリースチャネル </a> で利用できるプレリリース機能です。</span>
 
 
 ルールを作成できるルールエディターを使用して、動的なフォームの動作を追加できます。これらのルールにより、条件付きフィールドの表示が有効になり、ユーザー入力に基づいて計算が自動化され、全体的なユーザーエクスペリエンスが向上します。ルールエディターは、フォーム入力プロセスを効率化することで、正確性と効率性の両方を確保するのに役立ちます。
@@ -278,7 +278,6 @@ ht-degree: 98%
    * 「**[!UICONTROL 演算子を選択]**」フィールドから「**[!UICONTROL 減算]**」を選択します。
 
    * 他の「**[!UICONTROL オブジェクトをドロップまたは次から選択]**」フィールドの「**[!UICONTROL 追加控除]**」フィールドで、「フォームオブジェクト」タブから選択またはドラッグ＆ドロップします。
-
      ![ルールエディターの例 15](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. 「**[!UICONTROL 完了]**」を選択し、ルールを保存します。
@@ -296,7 +295,6 @@ ht-degree: 98%
    * 「**[!UICONTROL 演算子を選択]**」フィールドから「**[!UICONTROL 乗算]**」を選択します。
 
    * 「**[!UICONTROL オプションを選択**」フィールドから「**数値]**」を選択し、「**[!UICONTROL 数値を入力]**」フィールドに `10` のように値を入力します。
-
      ![ルールエディターの例 18](/help/edge/docs/forms/assets/rule-editor21.png)
 1. 次に、式フィールドの周りのハイライト表示された領域を選択し、「**[!UICONTROL 拡張式]**」を選択します。
    ![ルールエディターの例 19](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -362,7 +360,6 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
-
 ![カスタム関数の追加](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### ルールエディターでのカスタム関数の使用

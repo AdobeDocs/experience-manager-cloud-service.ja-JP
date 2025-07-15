@@ -4,17 +4,17 @@ description: Forms の Edge Delivery Services のユニバーサルエディタ�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 99%
+source-wordcount: '1012'
+ht-degree: 98%
 
 ---
 
 
 # Forms の Edge Delivery Services のユニバーサルエディター
 
-<span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセス権をリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。例えば、リポジトリ URL が https://github.com/adobe/abc の場合、組織名は「adobe」、リポジトリ名は「abc」になります。</span>
+<span class="preview"> これは、アドビの <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features"> プレリリースチャネル </a> で利用できるプレリリース機能です。</span>
 
 ユニバーサルエディターは、シンプルで視覚的かつ直感的な WYSIWYG（見たままが得られる）インターフェイスを提供することで、Adobe Edge Delivery Services のフォーム作成に革命をもたらします。コンテンツ作成者とフォーム作成者向けに設計されており、従来のフォーム作成プロセスの複雑さを排除し、技術に詳しくないユーザーでもアクセスできます。
 

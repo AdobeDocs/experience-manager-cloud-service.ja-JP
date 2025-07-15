@@ -4,16 +4,16 @@ description: EDS フォームのカスタムコンポーネントの作成
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1804'
 ht-degree: 95%
 
 ---
 
 # WYSIWYG オーサリングでのカスタムコンポーネントの作成
 
-<span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセス権をリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。例えば、リポジトリ URL が https://github.com/adobe/abc の場合、組織名は「adobe」、リポジトリ名は「abc」になります。</span>
+<span class="preview"> これは、アドビの <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features"> プレリリースチャネル </a> で利用できるプレリリース機能です。</span>
 
 
 Edge Delivery Services Forms には、カスタマイズ機能が用意されているので、フロントエンド開発者は調整されたフォームコンポーネントを作成できます。これらのカスタムコンポーネントは WYSIWYG オーサリングエクスペリエンスにシームレスに統合されるので、フォーム作成者はフォームエディター内で簡単に追加、設定、管理できます。カスタムコンポーネントを使用すると、作成者はスムーズで直感的なオーサリングプロセスを確保しながら機能を強化できます。
@@ -392,7 +392,6 @@ const OOTBComponentDecorators = ['file-input',
    float: right;
    }
    ```
-
    このコードは、カスタムコンポーネントのスタイル設定と外観を定義するのに役立ちます。
 
 1. 機能を追加するには、`/blocks/form/components/range/range.js` ファイルに移動して次のコード行を追加します。
