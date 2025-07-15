@@ -1,8 +1,8 @@
 ---
-source-git-commit: 6af7e8caa7be93da60e660468dd7d4f02a7e2c47
+source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 97%
+source-wordcount: '1637'
+ht-degree: 93%
 
 ---
 # スニペット {#snippets}
@@ -169,11 +169,11 @@ ht-degree: 97%
 >[!IMPORTANT]
 >
 >フロントエンドパイプラインでは、以下の IP 許可リストを事前に Cloud Manager に追加する必要があります。
->&#x200B;>必要に応じて、以下のアドレスのブロックをコピーして [&#128279;](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)IP 許可リストを追加します。 各アドレスはコンマで区切ります。 このブロックを **IP 許可リストを追加**&#x200B;ダイアログボックスの「**IP アドレス / CIDR**」フィールドにペーストします。 アドレスリストの最初のコンマの直後にカーソルを置き、**Enter** キーを押します。 リストを保存します。
->&#x200B;>フロントエンドパイプラインの実行が中断されないようにするには、パイプラインを有効にする&#x200B;*前に*、この IP 許可リストを Cloud Manager に確実に追加します。
+>>必要に応じて、以下のアドレスのブロックをコピーして ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)IP 許可リストを追加[します。 各アドレスはコンマで区切ります。 このブロックを **IP 許可リストを追加**&#x200B;ダイアログボックスの「**IP アドレス / CIDR**」フィールドにペーストします。 アドレスリストの最初のコンマの直後にカーソルを置き、**Enter** キーを押します。 リストを保存します。
+>>フロントエンドパイプラインの実行が中断されないようにするには、パイプラインを有効にする&#x200B;*前に*、この IP 許可リストを Cloud Manager に確実に追加します。
 >
 >**Cloud Manager の IP 許可リスト**
->&#x200B;>52.254.106.192/28、20.186.185.181、52.254.106.240/28、52.254.107.128/28、52.254.105.192/28、52.254.106.176/28、20.186.185.227、52.254.106.144/28、52.254.107.64/28、20.186.185.239、20.22.83.112、52.254.107.80/28、52.254.107.144/28、52.254.106.224/28、20.14.241.153、52.254.107.0/28、52.254.107.32/28、52.254.106.208/28、40.70.154.136/29、52.254.106.160/28、52.254.107.16/28、52.254.106.0/28、4.152.211.251
+>>52.254.106.192/28、20.186.185.181、52.254.106.240/28、52.254.107.128/28、52.254.105.192/28、52.254.106.176/28、20.186.185.227、52.254.106.144/28、52.254.107.64/28、20.186.185.239、20.22.83.112、52.254.107.80/28、52.254.107.144/28、52.254.106.224/28、20.14.241.153、52.254.107.0/28、52.254.107.32/28、52.254.106.208/28、40.70.154.136/29、52.254.106.160/28、52.254.107.16/28、52.254.106.0/28、4.152.211.251
 >   
 
 ## Cloud Manager の IP 許可リストとフロントエンドパイプラインの追加 {#add-cm-allowlist-frontend-pipeline}
@@ -181,7 +181,7 @@ ht-degree: 97%
 >[!IMPORTANT]
 >
 >フロントエンドパイプラインを使用してサイトを開発する場合や、使用する予定がある場合は、事前に Cloud Manager IP 許可リストを追加する必要があります。
->&#x200B;>詳しくは、[フロントエンドパイプラインでの Cloud Manager IP 許可リストの使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)を参照してください。
+>>詳しくは、[フロントエンドパイプラインでの Cloud Manager IP 許可リストの使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)を参照してください。
 
 ## IP 許可リストとユニバーサルエディター {#ip-allow-lists-ue}
 
@@ -222,7 +222,7 @@ ht-degree: 97%
 
 **サポートチケットをログに記録するには：**
 
-1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/ja?support-tab=home#support)チケットを作成します。
+1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/?support-tab=home#support)チケットを作成します。
 1. チケットのタイトルに「**Edge Delivery**」を追加します。
 1. 説明では、問題の説明に加えて、次の詳細を入力します。
 
@@ -281,3 +281,11 @@ ht-degree: 97%
 >**AEM 向け Edge Delivery Services について検討したことはありますか？**
 >
 >既存のプロジェクトでは、このドキュメントで説明されている方法を引き続き使用できます。ただし、新規プロジェクトの場合は、[Edge Delivery Services](/help/edge/overview.md) を利用することをお勧めします
+
+## Adobeが提供するサイトテンプレート {#adobe-templates}
+
+サイトをすばやく作成できるように、Adobeには様々な目的に適した多数のテンプレートが用意されています。
+
+* [Edge Delivery Servicesを使用したAEM サイト ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) - ユニバーサルエディターを使用してAEM ページをオーサリングし、[ エッジ配信 ](/help/edge/overview.md) を通じて配信します
+* [Commerce用AEM オーサリングのEdge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases) - [ エッジ配信 ](/help/edge/overview.md) を介したコマースプロジェクトおよび配信用のユニバーサルエディターを使用してAEM ページをオーサリングします
+* [ 標準AEM サイトテンプレート ](https://github.com/adobe/aem-site-template-standard/releases) – 従来のAEM ページをオーサリングし、[ パブリッシュ配信 ](/help/sites-cloud/authoring/author-publish.md) を通じて配信します。

@@ -1,14 +1,14 @@
 ---
 title: サイトパネルを使用したサイトテーマの管理
-description: サイトテーマを簡単にカスタマイズおよび管理できる、サイトパネルの強力な機能について説明します。
+description: 公開配信を使用した従来のAEM オーサリングプロジェクト用にサイトテーマを簡単にカスタマイズおよび管理するのに役立つ、サイトパネルの強力な機能について説明します。
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
-source-wordcount: '583'
-ht-degree: 100%
+source-git-commit: 076005e1ed1ca3303ed5843a3f27e0d707df5022
+workflow-type: tm+mt
+source-wordcount: '607'
+ht-degree: 82%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 100%
 
 {{traditional-aem}}
 
-サイトテーマを簡単にカスタマイズおよび管理できる、サイトパネルの強力な機能について説明します。
+公開配信を使用した従来のAEM オーサリングプロジェクト用にサイトテーマを簡単にカスタマイズおよび管理するのに役立つ、サイトパネルの強力な機能について説明します。
 
 ## 概要 {#overview}
 
-サイトパネルを使用すると、サイトのテーマおよびテンプレートリソースを管理できます。コンテンツツリーパネル、参照パネル、タイムラインパネルなどの[他のパネルと同様に](/help/sites-cloud/authoring/sites-console/console-side-panel.md)、サイトパネルは、Sites コンソールの左端のパネルとして表示され、選択した項目に関する情報を示します。他のパネルとは異なり、サイトパネルはサイトルートにのみ適用されます。
+サイトパネルを使用すると、[ パブリッシュ配信を使用した従来のAEM オーサリングプロジェクト用に、サイトのテーマとテンプレートのリソースを管理できます。コンテンツツリーパネル、参照パネル、タイムラインパネルなどの ](/help/sites-cloud/authoring/author-publish.md)[ 他のパネルと同様 ](/help/sites-cloud/authoring/sites-console/console-side-panel.md)、サイトパネルは、Sites コンソールの左端のパネルとして表示され、選択した項目に関する情報が表示されます。 他のパネルとは異なり、サイトパネルはサイトルートにのみ適用されます。
 
 サイトパネルは、次のように、サイトのテーマおよびテンプレートに関連する情報の管理に使用します。
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 
 ## テーマソースのダウンロード {#downloading-theme-sources}
 
-AEM で[サイトテンプレート](site-templates.md)に基づいてサイトを作成する場合は、サイトパネルを使用して[サイトテーマ](site-themes.md)をダウンロードできます。
+AEMで[サイトテンプレート](site-templates.md)に基づいてサイトを作成する場合は、サイトパネルを使用して[サイトテーマ](site-themes.md)をダウンロードできます。
 
 Sites コンソールにサイトパネルが表示された状態で、サイトのルートを選択すると、そのサイトに関するテーマ情報が表示されます。
 
@@ -46,7 +46,7 @@ Sites コンソールにサイトパネルが表示された状態で、サイ�
 
 ## テンプレートリソースのダウンロード {#downloading-template-resources}
 
-[サイトテンプレート](site-templates.md)には、サイトコンテンツ構造や[サイトテーマ](site-themes.md)に加えて、情報を含めることができます。サイトテンプレートには、ワイヤーフレームデザインやその他のサイト関連ファイルなどを含めることができます。
+[サイトテンプレート](site-templates.md)には、サイトコンテンツ構造や[サイトテーマ](site-themes.md)に加えて、ワイヤフレーム設計やその他のサイト関連ファイルなどの情報を含めることができます。
 
 サイトテンプレートをベースにしたサイトの場合は、Sites コンソールにサイトパネルが表示された状態で、サイトのルートを選択すると、追加のサイトリソースなど、そのサイトに関するテーマ情報が表示されます。
 
@@ -86,4 +86,4 @@ Sites コンソールにサイトパネルが表示された状態で、サイ�
 
 ![フロントエンドパイプラインの有効化](/help/sites-cloud/administering/assets/enable-fep.png)
 
-詳しくは、[フロントエンドパイプラインの有効化](enable-front-end-pipeline.md)ドキュメントを参照してください。
+詳しくは、[フロントエンドパイプラインの有効化](enable-front-end-pipeline.md)のドキュメントを参照してください。
