@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
 workflow-type: tm+mt
 source-wordcount: '6362'
 ht-degree: 99%
@@ -1075,7 +1075,6 @@ ht-degree: 99%
       + [概要](/help/edge/docs/forms/overview.md)
       + [Edge Delivery Services Forms用の送信設定](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [よくある質問](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
-      + [ フォーム作成のベストプラクティス ](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
       + WYSIWYG オーサリング {#universal-editor}
          + [Edge Delivery Services のフォームのユニバーサルエディターの概要 - 完全ガイド](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [ユニバーサルエディターを使用したオーサリングの開始方法 - ステップバイステップチュートリアル](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
@@ -1110,6 +1109,7 @@ ht-degree: 99%
          + [フォームの保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/recaptacha-forms.md)
          + [カスタムフォームコンポーネントの作成：開発者向けガイド](/help/edge/docs/forms/custom-components-forms.md)
          + [フォームのパフォーマンスの監視：運用テレメトリのガイド](/help/edge/docs/forms/operational-telemetry-for-forms.md)
+   + [ フォーム作成のベストプラクティス ](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
    + Edge Delivery リソース {#resources}
       + サイドキック {#sidekick}
          + [Sidekick の使用](/help/edge/docs/sidekick.md)

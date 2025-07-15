@@ -4,10 +4,10 @@ description: ユニバーサルエディターのオーサリングアプロー�
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 48%
+source-wordcount: '890'
+ht-degree: 50%
 
 ---
 
@@ -23,7 +23,7 @@ AEM Forms の Edge Delivery Services は、作成者が新しいフォームを�
 
 * **優れたデジタル登録エクスペリエンスを提供：**&#x200B;迅速な読み込みとレンダリングを行うデジタル登録エクスペリエンスを提供し、運用テレメトリによってフォームのパフォーマンスを継続的に監視します。読み込み時間の短縮とユーザーエクスペリエンスの最適化により、フォームの完成率とコンバージョン率が向上します。
 
-* **開発者にわかりやすいツールセットを使用：**&#x200B;AEM Forms の Edge Delivery Services は、
+* **開発者にわかりやすいツールセットを使用：**AEM Forms の Edge Delivery Services は、
 プレーン HTML、最新の CSS、Vanilla JavaScript を使用して優れたエクスペリエンスを作成し、特定のフレームワークの急な学習曲線を回避します。基本的な web 開発スキルを持つ開発者は、フォームコンポーネントとエクスペリエンスをカスタマイズして簡単に作成できます。パイプラインの実行を待機する必要はありません。コードを GitHub にチェックインするだけで、変更が公開されます。
 
 ## オーサリング方法の選択
@@ -31,14 +31,11 @@ AEM Forms の Edge Delivery Services は、作成者が新しいフォームを�
 
 Adobe Experience Manager（AEM）Edge Delivery Services（EDS）を使用すると、非常に高速で拡張性の高い web エクスペリエンスをエッジから提供できます。 このガイドでは、**これらのエクスペリエンス用のフォームを作成して公開する方法** を、明確なレコメンデーション階層を使用して説明します。
 
-1. **ユニバーサルエディター（UE） – ほとんどのチームに最適**
-2. **ドキュメントベースのオーサリング（ドキュメント/シート） – 迅速でシンプルなフォームに最適**
-3. **ドキュメントオーサリング （DA） - DA で作成されたページにフォームを埋め込むために使用します**
+* **ユニバーサルエディター（UE） – ほとんどのチームに最適**
+* **ドキュメントベースのオーサリング（ドキュメント/シート） – 迅速でシンプルなフォームに最適**
+* **ドキュメントオーサリング （DA） - DA で作成されたページにフォームを埋め込むために使用します**
 
 最終的には、適切なオーサリング方法を選択し、送信オプションを理解して、次の手順に従って実稼動対応のフォームを作成できるようになります。
-
-
-
 
 
 | チームと要件 | 推奨される方法 | 理由 |
@@ -54,7 +51,7 @@ Adobe Experience Manager（AEM）Edge Delivery Services（EDS）を使用する�
 
 <span class="preview"> これは、アドビの <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features"> プレリリースチャネル </a> で利用できるプレリリース機能です。</span>
 
-ユニバーサルエディターは、マーケターやデザイナー向けの視覚的なドラッグ&amp;ドロップオーサリングツールで、スピードとエンタープライズクラスの機能を組み合わせています。
+[ ユニバーサルエディター ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) は、マーケターやデザイナー向けの視覚的なドラッグ&amp;ドロップオーサリングツールで、スピードとエンタープライズクラスの機能を組み合わせています。
 
 * リアルタイムのWYSIWYG編集とデバイスのプレビュー。
 * AEMのアセット、ワークフロー、フォームデータモデル（FDM）との直接統合。
@@ -70,12 +67,12 @@ Adobe Experience Manager（AEM）Edge Delivery Services（EDS）を使用する�
 * Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics、その他多くのデータソースへのデータ送信を含む、フォーム送信を処理する複数の送信アクションから選択する機能。
 * Forms Submission Service （FSS）またはAEM公開送信アクションを使用して送信します
 
-> **推奨事項**：チームが 100 % ドキュメント中心で、フォームが非常に基本的でない限り、新しいフォームプロジェクトをすべてユニバーサルエディターで開始します。
+**推奨事項**：チームが 100 % ドキュメント中心で、フォームが非常に基本的でない限り、新しいフォームプロジェクトをすべてユニバーサルエディターで開始します。
 
 
 ### ドキュメントベースのオーサリング（Microsoft ドキュメントまたはGoogle シートを使用）
 
-ドキュメントベースのオーサリングは、Microsoft Word、Google Docs、Google Sheets などの使い慣れたツールを使用して、シンプルで複雑の少ないフォームを作成する場合に適しています。 この方法は、フォームをすばやく簡単に作成する必要があるコンテンツチームに最適です。
+[ ドキュメントベースのオーサリング ](/help/edge/docs/forms/tutorial.md) は、Microsoft Word、Google Docs、Google Sheets などの使い慣れたツールを使用して、シンプルで複雑の少ないフォームを作成する場合に適しています。 この方法は、フォームをすばやく簡単に作成する必要があるコンテンツチームに最適です。
 
 * ユーザーにわかりやすいエクスペリエンスを実現するアクセシブルなコンポーネント。
 * 一貫性のあるレンダリングを行う標準化された HTML 構造。
@@ -116,9 +113,11 @@ Microsoft Excel または Google Sheets（ドキュメントベースのオー�
 
 ## 次の手順
 
-1. **ユニバーサルエディターで開始：** フォームのオーサリングを開始するには、[ ユニバーサルエディター入門ガイド ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) を参照してください。
-1. **ドキュメントベースのオーサリングを使用：** Microsoft Excel またはGoogle Sheets でフォームを作成するには、[ ドキュメントベースのオーサリングのチュートリアル ](/help/edge/docs/forms/tutorial.md) に従います。
-1. **ドキュメントオーサリングへのFormsの埋め込み：** ドキュメントオーサリングでページを作成する場合は、**ユニバーサルエディター** （推奨）またはドキュメントベースのオーサリングを使用してフォームを作成し、フォームを [DA ページに埋め込みます ](https://www.aem.live/developer/da-tutorial)。
+* [Edge Delivery Services for Formsのユニバーサルエディターの機能と特徴](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [ユニバーサルエディターを使用した最初のフォームの作成](/help/edge/docs/forms/universal-editor/create-forms.md)
+* [Google シートまたはMicrosoft Excel を使用して最初のフォームを作成します ](/help/edge/docs/forms/tutorial.md)。
+* [Formsをドキュメントオーサリング（DA）に埋め込む ](https://www.aem.live/developer/da-tutorial)
+
 
 これで、AEM Edge Delivery Servicesを使用して最初の高性能なフォームを作成する準備が整いました。
 
