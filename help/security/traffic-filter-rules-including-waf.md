@@ -4,10 +4,10 @@ description: Web アプリケーションファイアウォール（WAF）ルー
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 70ba91e83ce2395e748ff8bdbecfc4d4fc04250b
-workflow-type: ht
-source-wordcount: '4262'
-ht-degree: 100%
+source-git-commit: c54f77a7e0a034bab5eeddcfe231973575bf13f4
+workflow-type: tm+mt
+source-wordcount: '4582'
+ht-degree: 82%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 100%
 * ボリューム DoS 攻撃の影響を受けにくくするようにレート制限を設定
 * 悪意のある IP アドレスからページをターゲティングされるのを防止する
 
-これらのトラフィックフィルタールールのほとんどは、AEM as a Cloud Service サイトおよび Forms のすべてのお客様が利用できます。主に、IP、ホスト名、パス、ユーザーエージェントなど、リクエストのプロパティとリクエストヘッダーで動作します。
+これらのトラフィックフィルタールールの多くは、すべてのAEM as a Cloud Service Sites およびFormsのお客様が利用できます。 *標準トラフィックフィルタールール* と呼ばれ、主にリクエストプロパティとリクエストヘッダー（IP、ホスト名、パス、ユーザーエージェントなど）に対して動作します。 標準のトラフィックフィルタールールには、トラフィックスパイクを防ぐためのレート制限ルールが含まれています。
 
-トラフィックフィルター規則のサブカテゴリには、拡張セキュリティライセンスまたは WAF-DDoS 保護ライセンスが必要です。これらの強力なルールは、WAF（web アプリケーションファイアウォール）トラフィックフィルタールール（または WAF ルール）と呼ばれ、この記事で後述される [WAF フラグ](#waf-flags-list)にアクセスできます。
+トラフィックフィルター規則のサブカテゴリには、拡張セキュリティライセンスまたは WAF-DDoS 保護ライセンスが必要です。これらの強力なルールは、WAF（Web Application Firewall）トラフィックフィルタールール（または略して *WAF ルール）と呼ばれ* この記事で後述する [WAF フラグ ](#waf-flags-list) へのアクセス権を持ちます。
 
 トラフィックフィルタールールは、Cloud Manager 設定パイプラインを通じて、開発環境、ステージ環境および実稼動環境のタイプにデプロイできます。設定ファイルは、コマンドラインツールを使用して迅速な開発環境（RDE）にデプロイできます。
 
@@ -61,23 +61,23 @@ ht-degree: 100%
 
 例えば、Apache レイヤーでは、お客様が [Dispatcher モジュール](https://experienceleague.adobe.com/ja/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)または [ModSecurity](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) を設定して、特定のコンテンツへのアクセスを制限できます。
 
-この記事で説明するように、トラフィックフィルタールールは、Cloud Manager の[設定パイプライン](/help/operations/config-pipeline.md)を使用して、アドビが管理する CDN にデプロイできます。IP アドレス、パス、ヘッダーなどのプロパティに基づくトラフィックフィルタールールおよびレート制限の設定に基づくルールに加えて、お客様は、WAF ルールと呼ばれる強力なトラフィックフィルタールールのサブカテゴリをライセンスできます。
+この記事で説明するように、トラフィックフィルタールールは、Cloud Manager の[設定パイプライン](/help/operations/config-pipeline.md)を使用して、アドビが管理する CDN にデプロイできます。IP アドレス、パス、ヘッダーなどのプロパティに基づく *標準のトラフィックフィルタールール* や、レート制限の設定に基づくルールに加えて、お客様は、*WAF ルール* と呼ばれるトラフィックフィルタールールの強力なサブカテゴリのライセンスを取得することもできます。
 
 ## 推奨プロセス {#suggested-process}
 
 適切なトラフィックフィルタールールを検討するための、エンドツーエンドで推奨される概要プロセスを次に示します。
 
 1. 実稼動環境以外および実稼動環境の設定パイプラインの指定について詳しくは、[設定](#setup)の節を参照してください。
-1. WAF トラフィックフィルタールールのサブカテゴリに対するライセンスを持つお客様は、Cloud Manager でそのサブカテゴリを有効にする必要があります。
+1. *WAF トラフィックフィルタールールのライセンスを取得しているお客様は* それらをCloud Managerで有効にする必要があります。
 1. このチュートリアルを読んで、ライセンスを取得している場合は WAF ルールを含むトラフィックフィルタールールの使用方法を具体的に学びます。このチュートリアルでは、開発環境にルールのデプロイ、悪意のあるトラフィックのシミュレート、[CDN ログ](#cdn-logs)のダウンロード、[ダッシュボードツール](#dashboard-tooling)での分析を行う方法を説明します。
-1. 推奨されるスタータールールを `cdn.yaml` にコピーして、ログモードで実稼動環境に設定をデプロイします。
-1. トラフィックを収集した後、[ダッシュボードツール](#dashboard-tooling)を使用して結果を分析し、一致の有無を確認します。誤検知に注意し、必要な調整を行って、最終的にブロックモードでスタータールールを有効にします。
-1. CDN ログの分析に基づいてカスタムルールを追加します。まず、開発環境でシミュレートされたトラフィックを使用してテストしてから、ログモード、次にブロックモードでステージ環境および実稼動環境にデプロイします。
+1. 推奨されるスタータールールを `cdn.yaml` にコピーし、一部のルールをログモードにして、設定を実稼動環境にデプロイします。
+1. トラフィックを収集した後、[ダッシュボードツール](#dashboard-tooling)を使用して結果を分析し、一致の有無を確認します。偽陽性を探し、必要な調整を行って、最終的にブロックモードですべてのスタータールールを有効にします。
+1. 必要に応じて、CDN ログの分析に基づいてカスタムルールを追加します。まず、開発環境でシミュレーショントラフィックを使用してテストしてから、ログモードでステージ環境と実稼動環境にデプロイし、次にブロックモードでデプロイします。
 1. トラフィックを継続的に監視し、脅威の状況の進化に応じてルールを変更します。
 
 ## 設定 {#setup}
 
-1. WAF ルールなどトラフィックフィルタールールのセットを含むファイル `cdn.yaml` を作成します。
+1. WAF ルールを含む一連のトラフィックフィルタールールを含んだファイル `cdn.yaml` を作成します。 例：
 
    ```
    kind: "CDN"
@@ -107,13 +107,13 @@ ht-degree: 100%
 
    1. 既存のプログラムで WAF を設定するには、[プログラムを編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)し、任意の時点で「**セキュリティ**」タブで「**WAF-DDOS**」オプションをオフまたはオンにします。
 
-1. [設定パイプラインの記事](/help/operations/config-pipeline.md#managing-in-cloud-manager)の説明に従って、Cloud Manager で設定パイプラインを作成します。パイプラインは、`cdn.yaml` ファイルが下の任意の場所に配置された最上位レベルの `config` フォルダーを参照します。詳しくは、[設定パイプラインの使用](/help/operations/config-pipeline.md#folder-structure)を参照してください。
+1. [config パイプラインの記事 ](/help/operations/config-pipeline.md#managing-in-cloud-manager) の説明に従って、Cloud Managerで config パイプラインを作成します。 パイプラインは、`cdn.yaml` ファイルが下の任意の場所に配置された最上位レベルの `config` フォルダーを参照します。詳しくは、[設定パイプラインの使用](/help/operations/config-pipeline.md#folder-structure)を参照してください。
 
 ## トラフィックフィルタールールの構文 {#rules-syntax}
 
 *トラフィックフィルタールール* を設定して、IP、ユーザーエージェント、リクエストヘッダー、ホスト名、地域、url などのパターンを照合できます。
 
-また、拡張セキュリティや WAF-DDoS 保護セキュリティの機能のライセンスが付与されているお客様は、1 つ以上の [WAF フラグ](#waf-flags-list)を参照する *WAF トラフィックフィルタールール*（略称：WAF ルール）と呼ばれる特別なカテゴリのトラフィックフィルタールールを設定することもできます。
+Enhanced Security またはWAF-DDoS Protection Security 製品のライセンスを取得しているお客様は、*WAF トラフィックフィルタールール* （略して *WAF ルール*）と呼ばれる、1 つ以上の [WAF フラグ ](#waf-flags-list) を参照する特別なカテゴリのトラフィックフィルタールールも設定できます。
 
 WAF ルールも含む一連のトラフィックフィルタールールの例を以下に示します。
 
@@ -237,8 +237,8 @@ when:
 
 | **フラグ ID** | **フラグ名** | **説明** |
 |---|---|---|
-| ATTACK | 攻撃 | そのテーブルにリストされている 1 つ以上の攻撃の種類を含むリクエストを識別するフラグ |
-| ATTACK-FROM-BAD-IP | 不正 IP からの攻撃 | `BAD-IP` からのリクエストで、そのテーブルにリストされている 1 つ以上の攻撃の種類を含むリクエストを識別するフラグ |
+| ATTACK | 攻撃 | 悪意のあるトラフィック （SQLI、CMDXE、XSS など）に関連するフラグの集計。 このフラグを効果的に使用する方法については、[ 推奨されるWAF ルールの節 ](#recommended-waf-starter-rules) を参照してください。 |
+| ATTACK-FROM-BAD-IP | 不正 IP からの攻撃 | ATTACK フラグと似ていますが、「LOGICAL AND-ed」が `BAD-IP` フラグ付きなので、ATTACK と BAD-IP の両方に一致する場合はリクエストがフラグ付けされます。 このフラグを効果的に使用する方法については、[ 推奨されるWAF ルールの節 ](#recommended-waf-starter-rules) を参照してください。 |
 | SQLI | SQL インジェクション | SQL インジェクションとは、任意のデータベースクエリを実行して、アプリケーションへのアクセス権や権限情報を取得したりしようとする試みです。 |
 | バックドア | バックドア | バックドア信号は、共通のバックドアファイルがシステム上に存在するかどうかの判断を試みるリクエストです。 |
 | CMDEXE | コマンドの実行 | コマンドの実行とは、ユーザー入力による任意のシステムコマンドを通じて、ターゲットシステムを制御したり損傷したりしようとする試みです。 |
@@ -254,7 +254,7 @@ when:
 | **フラグ ID** | **フラグ名** | **説明** |
 |---|---|---|
 | ABNORMALPATH | 異常なパス | 異常なパスは、元のパスが正規化されたパスと異なることを示します（例えば、`/foo/./bar` は `/foo/bar` に正規化されます） |
-| BAD-IP | 不正な IP | 悪意のあるソース（`SANS`、`TORNODE`）として識別されている IP や、WAF で過去に悪意のあるリクエストを多数送信したと判断された IP からのリクエストを識別するフラグ |
+| BAD-IP | 不正な IP | `SANS` や `TORNODE` などのデータセットに含まれるか、WAFによって以前に悪意のある動作が検出されたことにより、悪意のあることが判明している IP アドレスからのリクエストを特定します |
 | BHH | 不正なホップヘッダー | 不正なホップヘッダーは、不正な形式の Transfer-Encoding（TE）ヘッダーまたは Content-Length（CL）ヘッダー、適切な形式の TE および CL ヘッダーを介した HTTP スマグリングの試みを示します |
 | CODEINJECTION | コードインジェクション | コードインジェクションとは、ユーザー入力による任意のアプリケーションコードコマンドを通じて、ターゲットシステムを制御したり損傷したりしようとする試みです。 |
 | COMPRESSED | 検出された圧縮 | POST リクエスト本文が圧縮されており、検査できません。例えば、`Content-Encoding: gzip` リクエストヘッダーが指定され、POST 本文がプレーンテキストではない場合です。 |
@@ -661,11 +661,20 @@ CDN ログで使用されるフィールド名と、それらの簡単な説明�
 
 ダッシュボードツールでは、[AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) Github リポジトリから直接クローンを作成できます。
 
-ダッシュボードツールの具体的な使用方法については、[チュートリアル](#tutorial)を参照してください。
+ダッシュボードツールの使用方法に関する具体的な手順については、[ チュートリアル ](#tutorial) を参照してください。
 
 ## 推奨されるスタータールール {#recommended-starter-rules}
 
-以下の推奨ルールを `cdn.yaml` にコピーして開始できます。ログモードで開始してトラフィックを分析し、満たしたらブロックモードに変更します。Web サイトのライブトラフィックの一意の特性に基づいてルールを変更することが必要な場合があります。
+Adobeでは、以下のトラフィックフィルタールールから始めて、時間の経過と共に絞り込むことをお勧めします。 *標準規則* は Sites またはForms ライセンスで使用できますが、*WAF規則* には Enhanced Security またはWAF-DDoS Protection ライセンスが必要です。
+
+### 推奨される標準規則 {#recommended-nonwaf-starter-rules}
+
+次のルールから開始します。
+
+1. レート制限（ログモード）:
+   * 特定の IP からのトラフィックがレート制限を超えた場合にログに記録します。 アラートを受信していないことを検証した後、ブロックモードに変更します。アラートを受信した場合、制限値が低すぎることを示します。
+2. 特定の国（ブロックモード）:
+   * 特定の国からのトラフィックをブロックします（ビジネス要件に基づいて国コードを変更します）
 
 ```
 kind: "CDN"
@@ -701,8 +710,9 @@ data:
         groupBy:
           - reqProperty: clientIp
       action: log
+      alert: true
     # Block requests coming from OFAC countries
-    - name: block-ofac-countries
+    - name: ofac-countries
       when:
         allOf:
           - { reqProperty: tier, in: ["author", "publish"] }
@@ -720,7 +730,53 @@ data:
               - ZW
               - CU
               - CI
-      action: log
+      action: block
+```
+
+### 推奨されるWAF ルール {#recommended-waf-starter-rules}
+
+既存の設定に次のルールを追加します。
+
+1. ATTACK-FROM-BAD-IP フラグ（ブロック モード）:
+   * 疑わしいパターン （[WAF フラグ リスト ](#waf-flags-list) の一部を含む）に一致し、悪意のあることが判明している IP アドレスからのトラフィックを直ちにブロックします。
+   * ATTACK-FROM-BAD-IP フラグは本質的に両方の条件（パターン一致と既知の悪意のある IP）を満たし、誤検知のリスクを最小限に抑えます。 したがって、このルールをすぐにブロッキングモードで安全に適用できます。
+2. 攻撃フラグ （ログ モード）:
+   * 最初は、疑わしいパターンに一致するが、既知の悪意のある IP アドレスから発信されていないトラフィックを（ブロックではなく）ログに記録します。 このようにブロックではなく慎重にログに記録するアプローチを使用すると、正当なトラフィックを誤ってブロックする（誤検知する）のを回避できます。
+   * このルールをデプロイした後は、CDN ログを慎重に分析し、正当な要求が正しくフラグ付けされていないことを確認します。 正当なトラフィックが影響を受けていないことを確認したら、ブロックモードに切り替えます。
+
+>[!NOTE]
+> 私たちの経験によると、ATTACK フラグに関連する誤検出はまれです。 したがって、IP アドレスが悪意のあるものではないことがわかっている場合でも、疑わしいトラフィックをすべて直ちにブロックし、その後 CDN ログ分析を使用して正当なトラフィックの許可ルールを特定して導入することは、実用的な戦略です。 各組織は、リスクに対する独自の許容度を評価し、より大きな保護のメリットと、正当なリクエストを誤ってブロックするリスクを比較検討する必要があります。
+>
+
+```
+    # blocks likely attack traffic, which also comes from suspected IPs
+    - name: attacks-from-bad-ips-globally
+      when:
+        reqProperty: tier
+        in: ["author", "publish"]
+      action:
+        type: block
+        wafFlags:
+          - ATTACK-FROM-BAD-IP
+    # log likely attack traffic, and later switch to block mode if false positives aren't observed
+    - name: attacks-from-any-ips-globally
+      when:
+        reqProperty: tier
+        in: ["author", "publish"]
+      action:
+        type: log
+        wafFlags:
+          - ATTACK
+```
+
+### 従来の推奨WAF ルール {#previous-waf-starter-rules}
+
+2025 年 7 月より、Adobeは、悪意のあるトラフィックに対する防御において引き続き有効かつ効果的である、以下に示すWAFの規則を推奨しています。 新しい推奨ルールへの移行に関する考慮事項については、チュートリアルを参照してください。
+
+<details>
+  <summary>を展開して、従来の推奨されるWAF ルールを表示します。</summary>
+
+```
     # Enable recommended WAF protections (only works if WAF is licensed enabled for your environment)
     - name: block-waf-flags-globally
       when:
@@ -743,32 +799,21 @@ data:
           - PRIVATEFILE
           - NULLBYTE
 ```
+</details>
 
 ## チュートリアル {#tutorial}
 
-2 つのチュートリアルが利用可能です。
+[ 一連のチュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) を通じて、WAFのルールを含むトラフィックフィルタールールに関する実践的な知識と経験を得ます。
 
-### トラフィックフィルタールール（WAF ルールを含む）による web サイトの保護 {#tutorial-protecting-websites}
+このチュートリアルには次が含まれます。
 
-WAF ルールを含むトラフィックフィルタールールに関する一般的で実用的な知識とエクスペリエンスの取得については、[チュートリアルを参照](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)してください。
-
-チュートリアルでは、次の方法について説明します。
-
-* Cloud Manager 設定パイプラインの設定
-* ツールを使用した悪意のあるトラフィックのシミュレート
-* WAF ルールを含むトラフィックフィルタールールの宣言
-* ダッシュボードツールを使用した結果の分析
+* 標準およびWAF トラフィックフィルタールールの概要
+* DoS （Denial of Service）などの攻撃をブロックするための推奨される標準およびWAF トラフィックフィルタールールの設定
+* Cloud Manager設定パイプラインを使用したルールのデプロイ
+* 悪意のあるトラフィックをシミュレートするツールを使用したルールのテスト
+* ログ分析ツールを使用した結果の分析
 * ベストプラクティス
 
-### トラフィックフィルタールールを使用した DoS 攻撃と DDoS 攻撃のブロック {#tutorial-blocking-DDoS-with-rules}
-
-レート制限トラフィックフィルタールールやその他の戦略を使用して、サービス拒否（DoS）および分散型サービス拒否（DDoS）攻撃を[ブロックする方法について詳しく説明します](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules)。
-
-チュートリアルでは、次の方法について説明します。
-
-* 保護について
-* レート制限を超えた場合のアラートの受信
-* ダッシュボードツールを使用したトラフィックパターンの分析し、レート制限トラフィックフィルタールールのしきい値を設定する
 
 
 
