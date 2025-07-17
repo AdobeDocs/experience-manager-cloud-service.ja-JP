@@ -34,7 +34,7 @@ ht-degree: 5%
 
 「**スプレッドシートのダウンロード**」をクリックし、スプレッドシートのルールをダウンロードして定義します。 Adobe サポートチケットを作成し、スプレッドシートで定義したルールをAdobeに提供します。
 
-[!BADGE  スプレッドシートのダウンロード ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+[!BADGE &#x200B; スプレッドシートのダウンロード &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
 
 
 この記事で定義したガイドラインを使用して、スプレッドシートでルールを定義します。
