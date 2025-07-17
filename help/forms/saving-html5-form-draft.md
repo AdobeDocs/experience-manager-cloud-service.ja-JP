@@ -75,4 +75,4 @@ AEM Forms では初期状態で「**ドラフトとして保存**」プロファ
  </tbody>
 </table>
 
-デフォルトでは、AEM Forms はフォームのドラフトと送信に関連付けられたユーザーデータをパブリッシュインスタンスの /content/forms/fp ノードに保存します。カスタムのストレージプロバイダーを追加できます。詳細は、[ドラフトと送信コンポーネントのカスタムストレージ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms)を参照してください。
+デフォルトでは、AEM Forms はフォームのドラフトと送信に関連付けられたユーザーデータをパブリッシュインスタンスの /content/forms/fp ノードに保存します。カスタムのストレージプロバイダーを追加できます。詳細は、[ドラフトと送信コンポーネントのカスタムストレージ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms)を参照してください。

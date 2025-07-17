@@ -79,7 +79,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### XFA スクリプティングエンジンでのカスタムウィジェットの登録 {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-カスタムウィジェットのコードが準備されたら、[Form Bridge](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis) の `registerConfig` API を使用して、スクリプトエンジンにウィジェットを登録します。それは widgetConfigObject を入力として受け取ります。
+カスタムウィジェットのコードが準備されたら、[Form Bridge](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis) の `registerConfig` API を使用して、スクリプトエンジンにウィジェットを登録します。それは widgetConfigObject を入力として受け取ります。
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",
