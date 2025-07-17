@@ -4,10 +4,10 @@ description: AEM as a Cloud Service へのデプロイの基本とベストプ�
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: d6c5c70e8b6565a20866d392900aef219d3fd09d
+workflow-type: tm+mt
 source-wordcount: '3440'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -41,7 +41,7 @@ AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Ma
 
 次のビデオでは、AEM as a Cloud Service にコードをデプロイする方法の概要を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/34668?quality=9&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
@@ -189,7 +189,7 @@ above appears to be internal, to confirm with Brian -->
 >
 >この時間は、インストールのエラーではなく、すべての要求に対して Cloud Service が持つタイムアウトによるものです。
 >
->このようなエラーが表示された場合は、インストールを再試行しないでください。インストールはバックグラウンドで正しく進行しています。インストールを再開すると、複数の同時読み込みプロセスによって競合が発生する可能性があります。
+>このようなエラーが表示された場合は、インストールを再試行しないでください。インストールはバックグラウンドで正しく進行しています。インストールを再起動すると、複数の同時読み込みプロセスによって競合が発生する可能性があります。
 
 Cloud Manager を使用してインストールされたコンテンツパッケージ（可変および不変）は、AEM パッケージマネージャーのユーザーインターフェイスにフリーズ状態で表示されます。これらのパッケージは再インストールや再ビルド、さらにはダウンロードもできません。また、「**cp2fm**」というサフィックス付きで表示され、そのインストールが Cloud Manager で管理されていることを示します。
 
@@ -279,7 +279,7 @@ AEM のアップデートと同様に、お客様向けリリースも、適切�
 
 ### インデックスの変更 {#index-changes}
 
-インデックスに変更を加えた場合、新しいバージョンは終了するまで現在のインデックスを引き続き使用するのに対して、古いバージョンは自分自身の変更済みのインデックスセットを使用します。開発者は、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)で説明されているインデックス管理手法に従う必要があります。
+インデックスに変更を加える場合は、古いバージョンが終了するまでインデックスを使用し続ける一方で、新しいバージョンでは独自に変更されたインデックスのセットを使用することが重要です。 開発者は、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)で説明されているインデックス管理手法に従う必要があります。
 
 ### ロールバックに備えた保守的なコーディング {#conservative-coding-for-rollbacks}
 
