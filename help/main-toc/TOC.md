@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
+source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
 workflow-type: tm+mt
-source-wordcount: '6362'
+source-wordcount: '6521'
 ht-degree: 99%
 
 ---
@@ -908,6 +908,35 @@ ht-degree: 99%
          + [アダプティブフォームのレビューの作成と管理](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [アダプティブフォームのキーワード](/help/forms/adaptive-forms-keywords.md)
       + [フォームのプレビュー](/help/forms/previewing-forms.md)
+   + HTML5 Forms {#html5-forms}
+      + [HTML5 フォームの概要](/help/forms/introductionhtml5.md)
+      + [HTML5 forms の概要](/help/forms/get-started.md)
+      + [HTML5 フォームのアーキテクチャ](/help/forms/html5-forms-architecture.md)
+      + [HTML5 フォームと PDF フォームの機能の違い](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)
+      + [HTML5 フォームに関するよくある質問（FAQ）](/help/forms/faqhtml5.md)
+      + [HTML5 フォーム用のフォームテンプレートのデザイン](/help/forms/designing-form-template.md)
+      + [HTML5 フォームのベストプラクティス](/help/forms/best-practices-for-html5-forms.md)
+      + [アクセス可能な HTML5 フォームの設計](/help/forms/design-accessible-html5-forms.md)
+      + [XDP フォームの HTML5 プレビューの生成](/help/forms/preview-xdp-forms-html.md)
+      + [HTML5 forms 用のフォームテンプレートのレンダリング](/help/forms/rendering-form-template.md)
+      + [HTML5フォームの添付ファイルの有効化](/help/forms/enabling-attachments-html5-form.md)
+      + [HTML5 forms サービスプロキシ](/help/forms/service-proxy.md)
+      + [HTML5 フォームの最適化](/help/forms/optimize-html5-forms.md)
+      + [HTML5 フォーム向けのスクリーンリーダー](/help/forms/screen-readers.md)
+      + [HTML5 フォームのカスタムプロファイルの作成](/help/forms/custom-profile.md)
+      + [HTML5 フォームでの右から左に書く言語](/help/forms/right-left-languages.md)
+      + [Form Bridge と HTML5 フォームのカスタムポータルの統合](/help/forms/integrate-form-bridge-forms-portal.md)
+      + [HTML5 フォームのカスタム外観の作成](/help/forms/custom-widgets.md)
+      + [HTML5 フォームのデフォルトスタイルの変更](/help/forms/changing-default-styles.md)
+      + [HTML5 フォームにおけるパターン形式文字列サポート](/help/forms/picture-clause-support.md)
+      + [アクセス可能な複雑なテーブルを HTML5 フォームで作成する](/help/forms/accessible-tables.md)
+      + [HTML5 フォームのための CSS スタイルの作成](/help/forms/css-styles.md)
+      + [HTML5 フォームのエラーメッセージのカスタマイズ](/help/forms/customzing-errors-html5-forms.md)
+      + [HTML5 フォームのドラフトでの保存](/help/forms/saving-html5-form-draft.md)
+      + [HTML5 フォーム内でのログの有効化](/help/forms/enable-logs.md)
+      + [HTML5 フォーム のデバッグ](/help/forms/debug.md)
+      + [HTML5 フォームのスクリプティングのサポート](/help/forms/scripting-support.md)
+      + [AEM Forms におけるフォームセット](/help/forms/formset-in-aem-forms.md)
    + インタラクティブなコミュニケーション {#interactive-communocation}
       + [インタラクティブ通信の概要](/help/forms/introduction-to-interactive-communication.md)
       + [最初のインタラクティブ通信の作成](/help/forms/create-your-first-communication.md)

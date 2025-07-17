@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
 workflow-type: tm+mt
-source-wordcount: '2219'
-ht-degree: 28%
+source-wordcount: '2467'
+ht-degree: 25%
 
 ---
 
@@ -130,6 +130,30 @@ Cloud 上のインタラクティブ通信は、業務上の書簡、ドキュ�
 AEM FormsをAdobe Experience Platform（AEP）と接続して、顧客プロファイルとデータを活用し、パーソナライズされたフォームエクスペリエンスと、フォーム送信に基づくトリガーのダウンストリームワークフローを実現できます。 フォームデータをAEP データセットに直接送信することで、顧客プロファイルをエンリッチメントし、ユーザーのインタラクションに関するより深いインサイトを得ることができます。
 
 開始する準備はできていますか？ [AEM FormsとAdobe Experience Platform（AEP）の統合の詳細 ](/help/forms/aem-forms-aep-connector.md)
+
+### AEM FORMS HTML5 FORMS
+
+AEM Forms HTML5 Formsを使用すると、既存の XFA （XML Forms Architecture）フォームテンプレートをHTML5 形式でレンダリングし、XFA ベースのPDFがサポートされていない最新のブラウザーやモバイルデバイスでアクセスできるようにします。 この機能は、従来のPDF formsと最新の web エクスペリエンスのギャップを埋めます。
+
+![HTML5 Formsのプレビュー ](/help/forms/assets/mobile_form_on_an_ipad_date_14.png)
+
+**主な機能：**
+
+* **XFA フォームテンプレートのHTML5 ベースのレンダリング**：既存の XFA ベースのフォームをHTML5 形式でレンダリングして、HTML5 をサポートはするものの、XFA Formsで Adobe Reader をサポートしないモバイルデバイス（Apple iPad、Android タブレット、スマートフォンなど）にクライアントプラットフォームを拡張します。
+
+* **モバイル対応フォーム**:HTML5 Formsには、モバイル対応の多数の機能が備わっており、HTML5 ブラウザーを使用するタブレットやスマートフォンに現在のソリューションとワークフローを拡張するのに役立ちます。
+
+* **アクセシビリティサポート**:HTML5 Formsは、ARIA HTML5 アクセシビリティ標準を使用し、タブナビゲーションをサポートして、JAWS や VoiceOver などの一般的なスクリーンリーダーと互換性を持たせます。
+
+* **カスタマイズ機能**：既存のウィジェットの外観をカスタマイズしたり、独自のカスタムウィジェットを作成したり、CSS やJavaScriptなどの標準の web テクノロジーを使用したフォームのカスタムスタイルを使用したりできます。
+
+* **右から左に筆記する言語のサポート**:HTML5 Formsは、ヘブライ語などの右から左に筆記する言語をサポートしており、RTL 言語でフォームを表示および入力できます。
+
+* **添付ファイルのサポート**:HTML5 Forms で添付ファイルをアップロード、プレビューおよび送信し、データ収集を強化。
+
+* **ドラフトの保存**:HTML5 フォームをドラフトとして保存し、後の段階でフォームへの入力を再開します。
+
+開始する準備はできていますか？ [HTML5 Forms の概要 ](/help/forms/introductionhtml5.md) ドキュメントでは、この新機能の包括的な概要とはじめる前にを説明しています。
 
 ## その他の早期アクセス・イノベーション
 
