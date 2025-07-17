@@ -56,8 +56,8 @@ AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Ma
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-お客様は、Cloud Manager を使用してカスタムコードをクラウド環境にデプロイします。Cloud Manager は、ローカルでアセンブルされたコンテンツパッケージを Sling Feature Model に準拠したアーティファクトに変換します（このモデルは、クラウド環境で動作する際の AEM as a Cloud Service 上のアプリケーションを記述するものです）。その結果、クラウド環境の[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)でパッケージを調べると、名前に「cp2fm」が含まれており、変換後のパッケージではすべてのメタデータが削除されています。これらを操作することはできません。つまり、ダウンロードしたり、複製したり、開いたりすることはできません。コンバーターに関するドキュメントについて詳しくは、[
-GitHub の sling-org-apache-sling-feature-cpconverter](https://github.com/apache/sling-org-apache-sling-feature-cpconverter) を参照してください。
+お客様は、Cloud Manager を使用してカスタムコードをクラウド環境にデプロイします。Cloud Manager は、ローカルでアセンブルされたコンテンツパッケージを Sling Feature Model に準拠したアーティファクトに変換します（このモデルは、クラウド環境で動作する際の AEM as a Cloud Service 上のアプリケーションを記述するものです）。その結果、クラウド環境の[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)でパッケージを調べると、名前に「cp2fm」が含まれており、変換後のパッケージではすべてのメタデータが削除されています。これらを操作することはできません。つまり、ダウンロードしたり、複製したり、開いたりすることはできません。コンバーターに関するドキュメントについて詳しくは、[&#128279;](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)
+GitHub の sling-org-apache-sling-feature-cpconverter を参照してください。
 
 AEM as a Cloud Service 上のアプリケーション用に作成されたコンテンツパッケージでは、不変コンテンツと可変コンテンツを明確に分離する必要があります。Cloud Manager は可変コンテンツのみインストールし、次のようなメッセージも出力します。
 
