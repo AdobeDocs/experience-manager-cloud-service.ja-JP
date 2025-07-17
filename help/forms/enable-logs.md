@@ -172,9 +172,9 @@ ht-degree: 96%
 >[!NOTE]
 >
 >a（xfa）、b（xfaView）、および c（xfaPerf）のそれぞれのログカテゴリに対するデフォルトログレベルは 2（エラー）です。そのため、ログ設定 2-b6 では、異なるカテゴリのログレベルは：
->>a（xfa）：2（デフォルトレベルのエラー）
->>b（xfaView）：6（ユーザー指定トレース）
->>a（xfaPerf）：2（デフォルトレベルのエラー）
+>&#x200B;>a（xfa）：2（デフォルトレベルのエラー）
+>&#x200B;>b（xfaView）：6（ユーザー指定トレース）
+>&#x200B;>a（xfaPerf）：2（デフォルトレベルのエラー）
 
 ### Configuration Manager の使用によるログの有効化 {#enabling-logging-using-configuration-manager}
 
