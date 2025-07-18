@@ -81,7 +81,7 @@ AEM AI アシスタントを使用するには、Admin Console レベルでオ�
 
 ![Admin ConsoleのAEM AI アシスタントでのテクニカルサポートチケットの作成 ](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-AEM as a Cloud Serviceでのユーザーとグループの設定に関するガイド付きのチュートリアルについては、[AEM as a Cloud Serviceへのアクセスの設定 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview) を参照してください。
+AEM as a Cloud Serviceでのユーザーとグループの設定に関するガイド付きのチュートリアルについては、[AEM as a Cloud Serviceへのアクセスの設定 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/accessing/overview) を参照してください。
 
 [ カスタム権限 ](/help/implementing/cloud-manager/custom-permissions.md) も参照してください。
 
