@@ -9,12 +9,15 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+hide: true
+hidefromtoc: true
+source-git-commit: 81a6c2b942df0e72a0b7d359f29c615a44640396
 workflow-type: tm+mt
-source-wordcount: '2806'
+source-wordcount: '2803'
 ht-degree: 99%
 
 ---
+
 
 # AEM Forms におけるフォームセット{#form-set-in-aem-forms}
 
@@ -34,7 +37,7 @@ AEM Forms では、フォームセットを作成、設定、管理するため�
 
 複数の XDP ファイルや Designer を使用して作成したフォームテンプレートを一つのフォームセットに関連付けることができます。それから、フォームセットを使用して、ユーザーが最初にフォームに入力した値やプロフィールを基に、必要な情報のみを含む XDP ファイルを生成できます。
 
-[AEM Forms ユーザーインターフェイス](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms)を使用して、すべてのフォームやフォームセット、および関連アセットを一元的に管理できます。
+[AEM Forms ユーザーインターフェイス](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms)を使用して、すべてのフォームやフォームセット、および関連アセットを一元的に管理できます。
 
 ### フォームセットを管理 {#create-a-form-set}
 
@@ -65,7 +68,7 @@ AEM Forms では、フォームセットを作成、設定、管理するため�
 
    * Form Order：フォームをドラッグ＆ドロップして順番を並べ替えます。このフォームの順番により、AEM Forms アプリと Stand Alone Rendition でエンドユーザーに表示されるフォームの順番が決定します。
    * フォーム識別子：適格性の式で使用するための一意の ID をフォームに設定します。
-   * データルート：フォームセットの各フォームに対して、作成者は送信済みの XML で特定のフォームのデータが配置される場所を XPATH で設定できます。デフォルト値は「/」です。フォームセットにあるすべてのフォームがスキーマバインドされており、同じ XML スキーマを共有している場合、作成者はこの値を変更できます。フォーム内の各フィールドに、XDP で指定された適切なデータバインディングを持たせることをお勧めします。2 つの異なるフォームの 2 つのフィールドが共通のデータバインディングを共有している場合、2 番目のフォームのフィールドは、1 番目のフォームで取り込んだ値を事前入力した状態で表示されます。同じ内部コンテンツを持つ 2 つのサブフォームを同じ XML ノードに結合しないでください。XML の構造についての詳細は、「[フォームセットに対する XML の事前入力](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set)」を参照してください。
+   * データルート：フォームセットの各フォームに対して、作成者は送信済みの XML で特定のフォームのデータが配置される場所を XPATH で設定できます。デフォルト値は「/」です。フォームセットにあるすべてのフォームがスキーマバインドされており、同じ XML スキーマを共有している場合、作成者はこの値を変更できます。フォーム内の各フィールドに、XDP で指定された適切なデータバインディングを持たせることをお勧めします。2 つの異なるフォームの 2 つのフィールドが共通のデータバインディングを共有している場合、2 番目のフォームのフィールドは、1 番目のフォームで取り込んだ値を事前入力した状態で表示されます。同じ内部コンテンツを持つ 2 つのサブフォームを同じ XML ノードに結合しないでください。XML の構造についての詳細は、「[フォームセットに対する XML の事前入力](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set)」を参照してください。
    * 適格性の式：ブーリアンを評価し、フォームセット内のフォームが入力用に適格であるかどうかを示す JavaScript 式を指定します。この結果が「false」の場合、ユーザーは入力を要求されないか、場合によってはフォームが表示されません。この式は通常、このフォームの前に取り込まれたフィールドの値に基づいています。この式にはフォームセット API fs.valueOf に対する呼び出しも含まれており、フォームセットにあるフォームのフィールドにユーザーが入力した値を抽出します。
 
    *fs.valueOf(&lt;Form Identifier>, &lt;fieldSom expression>) > &lt;value>*
@@ -139,7 +142,7 @@ AEM Forms では、フォームセットを作成、設定、管理するため�
 
 通常の JavaScript 関数に加えて、フォームセットは、フォームセット内のフォームのフィールドの値にアクセスできる fs.valueOf API も公開します。フォームセットの中のフォームフィールドの値にアクセスするには、この API を使用します。API 構文は fs.valueOf（formUid、fieldSOM）であり、ここでは、
 
-* formUid (string)：フォームセット内のフォームの固有 ID です。Forms Manager ユーザーインターフェイスでフォームセットを作成するときに指定できます。デフォルトでは、フォーム名です。
+* formUid (string)：フォームセット内のフォームの固有 ID です。Forms Manager ユーザーインターフェイスでフォームセットを作成するときに指定できます。デフォルトでは、これはフォーム名です。
 * fieldSOM (string)：formUid によって指定されたフォーム内のフィールドの SOM 式。SOM 式（スクリプティングオブジェクトモデル式）とは、特定のドキュメントオブジェクトモデル（DOM）内の値、プロパティ、メソッドを参照するときに使う式です。フィールドを選択しているときに Form Designer の「スクリプト」タブの下で表示できます。
 
 >[!NOTE]
@@ -338,7 +341,7 @@ prefillXML：O
 
 「rootElement」という名前はプレースホルダーでしかありません。実際の名前はフォームセットで使用されているフォームから選択されます。「rootElement」で始まるサブツリーは、フォームセットのフォーム内にフィールドのデータとサブフォームを含んでいます。rootElement とその子の構造を決定する複数の要因があります。
 
-事前入力 XML ではこのタグはオプションです。ただし、このタグがない場合、XML 全体が無視されます。
+事前入力 XML では、このタグはオプションですが、ない場合は、XML 全体が無視されます。
 
 ルート要素タグの名前
 
