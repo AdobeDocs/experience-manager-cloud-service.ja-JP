@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1810'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 90%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -63,11 +63,11 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [ アダプティブFormsおよびフォームフラグメント用のユニバーサルエディター ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：ユニバーサルエディターでは、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成を促進し、一貫性を高め、スパムや自動不正使用に対する保護を向上させることができます。
+* [ アダプティブFormsおよびフォームフラグメント用のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：ユニバーサルエディターでは、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成が迅速化され、一貫性が高まり、ススパムや自動化による悪用からの保護が強化されます。
 
 ### プレリリース機能
 
-* [ アダプティブFormsからの AFP レンディションの生成と同期 ](/help/forms/document-generation-afp-api.md): AFP Output Sync API を使用すると、管理者とユーザーはアダプティブFormsから AFP （Advanced Function Presentation）出力を生成し、出力を外部システムやストレージの場所と同期できます。 AFP は印刷に最適化された高性能なドキュメント形式で、大規模なエンタープライズ環境でよく使用されます。
+* [アダプティブフォームからの AFP レンディションの生成と同期](/help/forms/document-generation-afp-api.md)：AFP Output Sync API を使用すると、管理者とユーザーはアダプティブフォームから AFP （Advanced Function Presentation）出力を生成し、出力を外部システムやストレージの場所と同期できます。 AFP は印刷に最適化された高性能なドキュメント形式で、大規模なエンタープライズ環境でよく使用されます。
 
 * [SharePoint ドキュメントライブラリ - 添付ファイルを元のファイル名で保存](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library)：フォームの添付ファイルを SharePoint ドキュメントライブラリに保存する際に、元のファイル名を使用して保存するオプションが追加されました。この機能強化により、アップロードしたファイルの識別と管理が簡素化されます。
 
@@ -85,7 +85,7 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 
 #### Adobe Experience Platform（AEP）と Forms の統合
 
-* [AEM FormsとAdobe Experience Platformの統合 ](/help/forms/aem-forms-aep-connector.md):AEM Forms to Adobe Experience Platform Connector を使用すると、Adaptive FormsとAdobe Experience Platformをシームレスに統合できます。 この機能を使用すると、フォームデータを XDM スキーマにマッピングし、リアルタイムでAEPに直接送信できます。 Adobe Experience Cloud ソリューション全体で、パーソナライゼーションおよびアクティベーションのユースケースのためのデータキャプチャを効率化します。
+* [AEM FormsとAdobe Experience Platformの統合](/help/forms/aem-forms-aep-connector.md)：AEM Forms to Adobe Experience Platform Connector を使用すると、アダプティブフォームとAdobe Experience Platformをシームレスに統合できます。 この機能を使用すると、フォームデータを XDM スキーマにマッピングし、リアルタイムで AEP に直接送信できます。 Adobe Experience Cloud ソリューション全体で、パーソナライゼーションおよびアクティベーションのユースケースのためのデータキャプチャを効率化します。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
@@ -168,7 +168,7 @@ OSGi プロパティ：
 #### 監査ログ {#mt-auditlogs}
 
 * **新しい環境** （今後作成され、個別に通知されます）：
-   * **7 日**&#x200B;より古いレプリケーション、DAM、ページ監査のログは、定期的に削除されます。
+   * **7 日**より古いレプリケーション、DAM、ページ監査のログは、定期的に削除されます。
 
    * デフォルトでは、すべてのイベントがログに記録されます。
 
