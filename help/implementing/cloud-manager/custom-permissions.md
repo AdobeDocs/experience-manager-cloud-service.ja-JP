@@ -5,10 +5,10 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
-workflow-type: ht
-source-wordcount: '1492'
-ht-degree: 100%
+source-git-commit: 0afd74120380c9ae3d02db9fb684189c2f19648f
+workflow-type: tm+mt
+source-wordcount: '1490'
+ht-degree: 99%
 
 ---
 
@@ -48,7 +48,7 @@ Cloud Manager には、Cloud Manager の様々な機能へのアクセスを制�
 
 ### 新しい製品プロファイルの作成 {#create}
 
-まず、カスタム権限を割り当てる製品プロファイルを作成する必要があります。
+まず、カスタム権限を割り当てることができる製品プロファイルを作成します。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインします。
 
@@ -174,7 +174,7 @@ Admin Console の使用方法について詳しくは、[エンタープライ�
 
 | 権限項目タイプ | 例 | 説明 |
 | --- | --- | --- |
-| 組織 | 組織：会社 A | 組織の適用可能なすべてのリソース。リソースには、プログラム、環境、パイプラインなどがあります。ユーザーが任意の権限を得るために組織を追加すると、その組織内のすべての新しいリソースにもその権限が付与されます。 |
+| 組織 | 組織 :companyA | 組織の適用可能なすべてのリソース。リソースには、プログラム、環境、パイプラインなどがあります。ユーザーが任意の権限を得るために組織を追加すると、その組織内のすべての新しいリソースにもその権限が付与されます。 |
 | プログラム | プログラム A | プログラムの適用可能なすべてのリソース。 |
 | 環境 | プログラム A：環境 | 特定の環境に適用可能です。 |
 | パイプライン | プログラム A：パイプライン | 特定のパイプラインに適用可能です。 |
