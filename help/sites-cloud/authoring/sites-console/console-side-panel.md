@@ -5,10 +5,10 @@ exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 45805d4baa8b93df2225b44152fee1457b421150
+workflow-type: tm+mt
 source-wordcount: '827'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -99,8 +99,8 @@ AEM **Sites** コンソールのサイドパネルを使用して、コンテン
 
 適切な参照タイプを選択すると、詳細情報が表示されます。状況によっては、特定の参照を選択すると、次のような追加のアクションが使用可能です。
 
-* **被リンク**&#x200B;は、当該ページを参照するページのリストと、特定のリンクを選択したときにそれらのページのいずれかを&#x200B;**編集**&#x200B;できる直接アクセスを提供します。
-   * これにより、静的リンクのみが表示され、動的に生成されるリンク（リストコンポーネントからのリンクなど）は表示されません。
+* **着信リンク** は、選択したページを直接参照するページのリストと、特定のリンクを選択したときにこれらのページのいずれかに直接アクセスする **編集** ページを提供します。
+   * これは、静的リンクのみを表示し、リストコンポーネントからなどの動的に生成されたリンクは表示しません。
 * [ローンチ](/help/sites-cloud/authoring/launches/overview.md)（関連するローンチへのアクセスを提供）
 * [ライブコピー](/help/sites-cloud/administering/msm/overview.md)（選択したリソースに基づくすべてのライブコピーのパスを表示）
 * [ブループリント](/help/sites-cloud/administering/msm/best-practices.md)（詳細と各種アクションを提供）

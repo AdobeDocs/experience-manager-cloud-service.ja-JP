@@ -5,10 +5,10 @@ exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1271'
-ht-degree: 100%
+source-git-commit: 45805d4baa8b93df2225b44152fee1457b421150
+workflow-type: tm+mt
+source-wordcount: '1329'
+ht-degree: 94%
 
 ---
 
@@ -106,7 +106,7 @@ AEM では、名前変更または移動が行われるページへの内部リ�
 
    ![「移動」ボタン](/help/sites-cloud/authoring/assets/move.png)
 
-1. ウィザードの&#x200B;**名前の変更**&#x200B;ステップで、次のいずれかを実行できます。
+1. ウィザードの **名前を変更** 手順には、作成日、パス、直接参照の数など、ページに関する **情報** が表示されます。 ここから、次のいずれかを実行できます。
 
    * 移動後にページに表示する名前を指定し、「**次へ**」を選択して続行します。
    * 「**キャンセル**」を使用してプロセスを中止します。
@@ -144,7 +144,8 @@ AEM では、名前変更または移動が行われるページへの内部リ�
 
    >[!NOTE]
    >
-   >ページがリンクも参照もされていない場合は、このステップは使用できません。
+   >* ページがリンクも参照もされていない場合は、このステップは使用できません。
+   >* この手順では、直接参照と間接参照の両方を一覧表示します。 これは、ウィザードの **名前を変更** ステップで報告される量や、参照レールで報告される参照とは異なる場合があります。参照レールでは、パフォーマンス上の理由から、直接参照のみが報告されます。
 
    ![移動時のページ再公開](/help/sites-cloud/authoring/assets/move-page-republish.png)
 
