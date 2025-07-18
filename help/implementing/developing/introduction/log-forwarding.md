@@ -4,10 +4,10 @@ description: AEM as a Cloud Serviceでのログのベンダーへの転送につ
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d25c4aa5801d1ef2b746fc207d9c64ddf381bb8e
+source-git-commit: 7094ac805e2b66813797fbbc7863870f18632cdc
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 3%
+source-wordcount: '2409'
+ht-degree: 5%
 
 ---
 
@@ -19,23 +19,107 @@ ht-degree: 3%
 
 ログベンダーのライセンスを持つお客様、またはログ製品をホストするお客様は、AEM ログ（Apache/Dispatcherを含む）および CDN ログを、関連するログ出力先に転送することができます。 AEM as a Cloud Serviceは、次のログ出力先をサポートしています。
 
-* Amazon S3 （プライベートベータ版、以下のメモを参照）
-* Azure Blob Storage
-* Datadog
-* Elasticsearchまたは OpenSearch
-* HTTPS
-* Splunk
-* Sumo ロジック（プライベートベータ版、以下のメモを参照）
+<html>
+<style>
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  table-layout: fixed;
+}
+th, td {
+  width: 5%;
+  max-width: 100%;
+  border: 1px solid black;
+  padding: 8px;
+  word-wrap: break-word;
+}
+</style>
+<table>
+  <tbody>
+    <tr>
+      <th>ログ技術</th>
+      <th>Private Beta*</th>
+      <th>AEM</th>
+      <th>Dispatcher</th>
+      <th>CDN</th>
+    </tr>
+    <tr>
+      <td>Amazon S3</td>
+      <td style="background-color: #ffb3b3;">はい</td>
+      <td>はい</td>
+      <td>はい</td>
+      <td style="background-color: #ffb3b3;">いいえ</td>
+    </tr>
+    <tr>
+      <td>Azure Blob Storage</td>
+      <td>いいえ</td>
+      <td>はい</td>
+      <td>はい</td>
+      <td>はい</td>
+    </tr>
+    <tr>
+      <td>DataDog</td>
+      <td>いいえ</td>
+      <td>はい</td>
+      <td>はい</td>
+      <td>はい</td>
+    </tr>
+    <tr>
+      <td>Dynatrace</td>
+      <td style="background-color: #ffb3b3;">はい</td>
+      <td>はい</td>
+      <td>はい</td>
+      <td style="background-color: #ffb3b3;">いいえ</td>
+    </tr>
+    <tr>
+      <td>Elasticsearch<br>OpenSearch</td>
+      <td>いいえ</td>
+      <td>はい</td>
+      <td>はい</td>
+      <td>はい</td>
+    </tr>
+    <tr>
+      <td>HTTPS</td>
+      <td>いいえ</td>
+      <td>はい</td>
+      <td>はい</td>
+      <td>はい</td>
+    </tr>
+    <tr>
+      <td>New Relic</td>
+      <td style="background-color: #ffb3b3;">はい</td>
+      <td>はい</td>
+      <td>はい</td>
+      <td style="background-color: #ffb3b3;">いいえ</td>
+    </tr>
+    <tr>
+      <td>Splunk</td>
+      <td>いいえ</td>
+      <td>はい</td>
+      <td>はい</td>
+      <td>はい</td>
+    </tr>
+    <tr>
+      <td>相撲論理</td>
+      <td style="background-color: #ffb3b3;">はい</td>
+      <td>はい</td>
+      <td>はい</td>
+      <td style="background-color: #ffb3b3;">いいえ</td>
+    </tr>
+  </tbody>
+</table>
+</html>
+
+>[!NOTE]
+>
+> Private Betaのテクノロジーについては、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) にメールを送信してアクセスをリクエストしてください。
 
 ログ転送は、Git で設定を宣言することでセルフサービス方式で設定され、Cloud Manager設定パイプラインを介して開発環境、ステージング環境、実稼動環境の各タイプにデプロイできます。 設定ファイルは、コマンドラインツールを使用して迅速な開発環境（RDE）にデプロイできます。
 
 AEMと Apache/DispatcherAEMのログを、専用のエグレス IP などの高度なネットワークインフラストラクチャを介してルーティングするオプションがあります。
 
 ログの宛先に送信されたログに関連付けられているネットワーク帯域幅は、組織のネットワーク I/O 使用の一部と見なされることに注意してください。
-
->[!NOTE]
->
->Amazon S3 および Sumo Logic はPrivate Betaにあり、AEM ログ （Apache/Dispatcherを含む）のみをサポートします。  HTTPS を介したNew Relicはプライベートベータ版でもあります。 アクセスをリクエストするには、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) にメールを送信します。
 
 ## この記事の編成方法 {#how-organized}
 
@@ -49,7 +133,7 @@ AEMと Apache/DispatcherAEMのログを、専用のエグレス IP などの高�
 
 ## 設定 {#setup}
 
-1. `logForwarding.yaml` という名前のファイルを作成します。[ 設定パイプラインの記事 ](/help/operations/config-pipeline.md#common-syntax) で説明しているように、メタデータ（**kind** を `LogForwarding` に、バージョンを「1」に設定する必要があります）と、次のような設定を含める必要があります（例として Splunk を使用します）。
+1. `logForwarding.yaml` という名前のファイルを作成します。[ 設定パイプライン ](/help/operations/config-pipeline.md#common-syntax) の記事（**kind** は `LogForwarding` に、バージョンは「1」に設定する必要があります）で説明しているように、次のような設定でメタデータが含まれている必要があります（例として Splunk を使用）。
 
    ```yaml
    kind: "LogForwarding"
@@ -116,14 +200,14 @@ AEMと Apache/DispatcherAEMのログを、専用のエグレス IP などの高�
 一部の組織は、ログ宛先で受信できるトラフィックを制限し、他の組織は HTTPS （443）以外のポートを使用する必要がある場合があります。  その場合は、ログ転送設定をデプロイする前に [ 詳細ネットワーク ](/help/security/configuring-advanced-networking.md) を設定する必要があります。
 
 次の表を使用して、ポート 443 を使用しているかどうか、および固定 IP アドレスからログを表示する必要があるかどうかに基づいて、高度なネットワーク設定とログ設定の要件を確認してください。
-&lt;html>
-&lt;style>
-table, th, td &lbrace;
+<html>
+<style>
+table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
-&rbrace;
-&lt;/style>
+}
+</style>
 <table>
   <tbody>
     <tr>
@@ -133,29 +217,29 @@ table, th, td &lbrace;
       <th>LogForwarding.yaml ポート定義が必要です</th>
     </tr>
     <tr>
-      <td rowspan="2">HTTPS （443）</td>
-      <td>不可</td>
-      <td>不可</td>
+      <td rowspan="2" ro>HTTPS （443）</td>
+      <td>いいえ</td>
+      <td>いいえ</td>
       <td>いいえ</td>
     </tr>
     <tr>
       <td>はい</td>
       <td>対応 <a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address"> 専用エグレス </a></td>
-      <td>なし</td>
+      <td>いいえ</td>
     <tr>
     <tr>
       <td rowspan="2">非標準ポート （例：8088）</td>
-      <td>なし</td>
+      <td>いいえ</td>
       <td>対応 <a href="/help/security/configuring-advanced-networking.md#flexible-port-egress-flexible-port-egress"> 柔軟なエグレス </a></td>
       <td>はい</td>
     </tr>
     <tr>
       <td>はい</td>
       <td>対応 <a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address"> 専用エグレス </a></td>
-      <td>あり</td>
+      <td>はい</td>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >ログが 1 つの IP アドレスから表示されるかどうかは、高度なネットワーク設定の選択によって決まります。  これを容易にするには、専用のエグレスを使用する必要があります。
@@ -194,13 +278,17 @@ CDN ログの場合は、[Fastly ドキュメント – 公開 IP リスト ](ht
 
 ### Amazon S3 {#amazons3}
 
+Amazon S3 へのログ転送では、AEMとDispatcherのログがサポートされていますが、CDN ログはまだサポートされていません。
+
 >[!NOTE]
 >
->S3 に定期的に書き込まれるログ。ログ ファイルの種類ごとに 10 分ごとに書き込まれます。  これにより、機能を切り替えると、ログが S3 に書き込まれるまでの初期遅延が発生する可能性があります。  この動作が存在する理由について詳しくは、[ こちら ](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs) を参照してください。
+>S3 に定期的に書き込まれるログ。ログ ファイルの種類ごとに 10 分ごとに書き込まれます。  これにより、機能を切り替えると、ログが S3 に書き込まれるまでの初期遅延が発生する可能性があります。  [ この動作に関する詳細情報 ](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs)。
 
 ```yaml
 kind: "LogForwarding"
 version: "1.0"
+metadata:
+  envTypes: ["dev"]
 data:
   awsS3:
     default:
@@ -211,7 +299,7 @@ data:
       secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
 ```
 
-S3 ログフォワーダーを使用するには、AWS IAM ユーザーに S3 バケットにアクセスするための適切なポリシーを事前設定する必要があります。  IAM ユーザー資格情報の作成方法については、[ こちら ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) を参照してください。
+S3 ログフォワーダーを使用するには、AWS IAM ユーザーに S3 バケットにアクセスするための適切なポリシーを事前設定する必要があります。  IAM ユーザー資格情報の作成方法については、[AWS IAM ユーザードキュメント ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) を参照してください。
 
 IAM ポリシーでは、ユーザーが `s3:putObject` を使用できるようにする必要があります。  例：
 
@@ -228,7 +316,7 @@ IAM ポリシーでは、ユーザーが `s3:putObject` を使用できるよう
 }
 ```
 
-AWS バケットポリシーの実装について詳しくは、[ こちら ](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) を参照してください。
+実装方法について詳しくは、[AWS バケットポリシーのドキュメント ](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) を参照してください。
 
 ### Azure Blob Storage {#azureblob}
 
@@ -298,7 +386,7 @@ AEM ログ（Apache/Dispatcherを含む）は、次の命名規則でフォル�
 
 各フォルダーに 1 つのファイルが作成され、に追加されます。 お客様は、このファイルが大きくなりすぎないよう、ファイルの処理と管理を行います。
 
-[AEM as a Cloud Serviceのログ ](/help/implementing/developing/introduction/logging.md) のログエントリフォーマットを参照してください。 ログエントリには、以下の [ ログエントリの形式 ](#log-formats) の節で説明する追加のプロパティも含まれます。
+[AEM as a Cloud Service のログ ](/help/implementing/developing/introduction/logging.md) のログエントリ形式を参照してください。 ログエントリには、以下の [ ログエントリの形式 ](#log-formats) の節で説明する追加のプロパティも含まれます。
 
 ### Datadog {#datadog}
 
@@ -319,7 +407,7 @@ data:
       
 ```
 
-考慮事項：
+#### 考慮事項
 
 * 特定のクラウドプロバイダーとの統合を行わずに、API キーを作成します。
 * タグプロパティはオプションです
@@ -345,7 +433,7 @@ data:
       pipeline: "ingest pipeline name"
 ```
 
-考慮事項：
+#### 考慮事項
 
 * デフォルトでは、ポートは 443 です。 オプションで、`port` というプロパティで上書きすることもできます
 * 資格情報には、アカウントの資格情報ではなく、必ずデプロイメントの資格情報を使用します。 これらは、次の画像に似た画面で生成される資格情報です。
@@ -378,17 +466,10 @@ data:
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
-考慮事項：
+#### 考慮事項
 
 * URL 文字列には **https://** を含める必要があります。含めない場合、検証が失敗します。
-* URL にはポートを含めることができます。 例えば、`https://example.com:8443/aem_logs/aem` のようになります。URL 文字列にポートが含まれていない場合、ポート 443 （デフォルトの HTTPS ポート）が想定されます。
-
-#### New Relic ログ API {#newrelic-https}
-
-アクセスをリクエストするには、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) にメールを送信します。
-
->[!NOTE]
->New Relicは、New Relic アカウントがプロビジョニングされている場所に基づいて、地域固有のエンドポイントを提供します。  New Relicのドキュメントについては、[ こちら ](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) を参照してください。
+* URL にはポートを含めることができます。 例えば、`https://example.com:8443/aem_logs/aem` のようになります。 URL 文字列にポートが含まれていない場合、ポート 443 （デフォルトの HTTPS ポート）が想定されます。
 
 #### HTTPS CDN ログ {#https-cdn}
 
@@ -413,6 +494,52 @@ AEM ログ（apache/dispatcher を含む）の場合、web リクエスト（POS
 * aemhttpdaccess
 * aemhttpderror
 
+### New Relic ログ API {#newrelic-https}
+
+New Relicへのログ転送では、New Relic HTTPS API を取り込みに利用します。  現在は、AEMとDispatcherからのログのみをサポートしています。CDN ログはまだサポートされていません。
+
+```yaml
+  kind: "LogForwarding"
+  version: "1"
+  metadata:
+    envTypes: ["dev"]
+  data:
+    newRelic:
+      default:
+        enabled: true
+        uri: "https://log-api.newrelic.com/log/v1"
+        apiKey: "${{NR_API_KEY}}"
+```
+
+>[!NOTE]
+>New Relicへのログ転送は、顧客が所有するNew Relic アカウントでのみ使用できます。
+>
+>アクセスをリクエストするには、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) にメールを送信します。
+>
+>New Relicは、New Relic アカウントがプロビジョニングされている場所に基づいて、地域固有のエンドポイントを提供します。  詳しくは、[New Relic ドキュメント ](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) を参照してください。
+
+### Dynatrace ログ API {#dynatrace-https}
+
+Dynatraceへのログ転送では、Dynatrace HTTPS API を取り込みに利用します。  現在は、AEMとDispatcherからのログのみをサポートしています。CDN ログはまだサポートされていません。
+
+トークンには、「ログの取り込み」スコープ属性が必要です。
+
+```yaml
+  kind: "LogForwarding"
+  version: "1"
+  metadata:
+    envTypes: ["dev"]
+  data:
+    dynatrace:
+      default:
+        enabled: true
+        environmentId: "${{DYNATRACE_ENVID}}"
+        token: "${{DYNATRACE_TOKEN}}"  
+```
+
+>[!NOTE]
+> アクセスをリクエストするには、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) にメールを送信します。
+
 ### Splunk {#splunk}
 
 ```yaml
@@ -429,7 +556,7 @@ data:
       index: "aemaacs"
 ```
 
-考慮事項：
+#### 考慮事項
 
 * デフォルトでは、ポートは 443 です。 オプションで、`port` という名前のプロパティで上書きできます。
 * sourcetype フィールドには、特定のログに応じて、*aemaccess*、*aemerror* のいずれかの値が表示されます。
@@ -442,11 +569,13 @@ data:
 
 ### 相撲論理 {#sumologic}
 
+Sumo Logic へのログ転送では、AEMとDispatcherのログがサポートされています。CDN ログはまだサポートされていません。
+
 データ取得のために Sumo ロジックを設定すると、host、receiverURI、および private key を 1 つの文字列で提供する「HTTP Source アドレス」が表示されます。  例：
 
 `https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
 
-URL の最後のセクション（先頭の `/` を除く）をコピーし、それを前述の [ 設定 ](#setup) の節で説明されているように [&#128279;](/help/operations/config-pipeline.md#secret-env-vars)CloudManager シークレット環境変数）として追加してから、設定でその変数を参照する必要があります。  以下に例を示します。
+URL の最後のセクション（先頭の `/` を除く）をコピーし、それを前述の [ 設定 ](/help/operations/config-pipeline.md#secret-env-vars) の節で説明されているように [](#setup)CloudManager シークレット環境変数）として追加してから、設定でその変数を参照する必要があります。  以下に例を示します。
 
 ```yaml
 kind: "LogForwarding"
