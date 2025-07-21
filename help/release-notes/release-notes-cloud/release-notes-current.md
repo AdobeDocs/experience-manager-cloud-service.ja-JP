@@ -5,8 +5,8 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
-workflow-type: ht
+source-git-commit: 83aceb71ead66763b94ec523c9d9c76c4286c762
+workflow-type: tm+mt
 source-wordcount: '1810'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.6.0）のリリース日は 2025年6月26日です。次回の機能リリース（2025.7.0）は 2025年7月31日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.6.0）のリリース日は 2025年6月26日です。次回の機能リリース（2025.7.0）は、2025年8月7日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
