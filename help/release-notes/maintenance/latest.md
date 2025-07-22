@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 13124956fcce105ad42767f67b700284c8250012
+source-git-commit: a4e023ca44c93124627912bae08dc3535d48400c
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '622'
 ht-degree: 34%
 
 ---
@@ -61,9 +61,9 @@ ht-degree: 34%
 * CQ-4359863：コンテンツフラグメントエディター/アセットエディターでキーワードのタグ検索が異常に壊れる。
 * CQ-4359958:openapi-support をAEM 6.5.22.0 以降と互換性のあるものにします。
 * CQ-4360256:`/adobe` サーブレットコンテキストを介して処理される HTTP 要求のリクエストパスに、サーブレットのコンテキストパスを含めます。
-* CQ-4360317：応答を作成する際にサンセット日ヘッダーを設定する方法を追加。
+* CQ-4360317：応答を作成する際にサンセット日ヘッダーを設定するメソッドを追加。
 * GRANITE-60311:AEM SDK Quickstart - NPE （「OSGi Installer Configuration Printer」を参照）
-* GS-15285：ユーザーのアクティベートが解除されたとして表示されています。
+* GS-15285：ユーザーは、非アクティブ化された状態で表示されます。
 
 ### 既知の問題 {#known-issues-21644}
 
@@ -81,7 +81,7 @@ AEM as a Cloud Service では、プラットフォームのセキュリティと
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
-| AEM Oak | 1.80.0 | [Oak API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80.0/index.html) |
+| AEM Oak | 1.80.0 | [Oak API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80/index.html) |
 | AEM SLING API | 2.27.6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28-1.4.0 | [HTML テンプレート言語仕様](https://github.com/adobe/htl-spec) |
 | Apache HTTP サーバー | 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
