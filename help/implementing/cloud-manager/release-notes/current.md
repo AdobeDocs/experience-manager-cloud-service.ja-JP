@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
+source-git-commit: f3e31d1f17283086cd6fe9e73d67feac938d6567
 workflow-type: tm+mt
-source-wordcount: '1210'
-ht-degree: 99%
+source-wordcount: '1209'
+ht-degree: 97%
 
 ---
 
@@ -39,9 +39,9 @@ AEM as a Cloud Service の Cloud Manager 2025.7.0 のリリース日は 2025年7
 
   [ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md)をご覧ください。
 
-## 早期導入プログラム {#private-beta-program}
+## Alpha/Beta プログラム {#private-beta-program}
 
-Cloud Manager の Alpha および Beta プログラムに参加すると、一般リリース前の新機能に特別早期アクセスできます。
+Cloud Managerのアルファおよびベータ版プログラムに参加すると、一般リリース前に、今後の機能を独占的に利用できます。
 
 現在、以下の機能が利用可能です。
 
@@ -49,15 +49,15 @@ Cloud Manager の Alpha および Beta プログラムに参加すると、一�
 
 最新の顧客ソースコードが期待どおりに動作しない場合は、以前のデプロイメントに迅速に戻すことができます。パイプライン全体を再実行したり、コミットを手動で元に戻したりする必要はありません。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![環境カードから顧客ソースコードを復元](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上記の環境カードには、選択した環境の&#x200B;**復元**／**以前にデプロイされたコード**&#x200B;オプションが表示されています。*
+![環境カードから顧客ソースコードを復元](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上記の環境カードには、選択した環境の&#x200B;**復元**／**以前にデプロイされたコード**オプションが表示されています。*
 
 
 ![以前にデプロイしたコードを復元ダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-***以前にデプロイしたコードを復元**&#x200B;ダイアログボックスで、現在デプロイされているバージョンと復元するバージョンを確認し、「**確認***」をクリックします。
+***以前にデプロイしたコードを復元**ダイアログボックスで、現在デプロイされているバージョンと復元するバージョンを確認し、「**確認***」をクリックします。
 
 
 ![アクティベーションの復元](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager は、環境を以前のビルドにロールバックし、コンテンツと設定をそのままの状態に保ち、デプロイメントが完了するまで環境に&#x200B;**復元中**&#x200B;とマークを付けます。*
+*Cloud Manager は、環境を以前のビルドにロールバックし、コンテンツと設定をそのままの状態に保ち、デプロイメントが完了するまで環境に&#x200B;**復元中**とマークを付けます。*
 
 
 ![使用中のソースコードバージョン](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *環境の詳細ビューには、前述のように、使用中のアクティブなソースコードバージョンも表示されるようになりました。*

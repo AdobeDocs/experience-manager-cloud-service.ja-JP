@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 badge: label="アルファ" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 72b80f411ee39674530c1c41349329604e127e1e
+source-git-commit: f3e31d1f17283086cd6fe9e73d67feac938d6567
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '504'
 ht-degree: 7%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->この記事で説明する機能は、早期導入アルファプログラムでのみ使用できます。 アルファ版にサインアップするには、[ パイプラインデプロイメントのワンクリックロールバック ](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback) を参照してください。
+>この記事で説明する機能は、アルファプログラムでのみ使用できます。 アルファ版にサインアップするには、[ パイプラインデプロイメントのワンクリックロールバック ](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback) を参照してください。
 
 **デプロイされた以前のコードを復元** を使用して、環境を最後に成功したビルドに即座にロールバックできます。パイプラインを実行する必要はありません。
 
@@ -31,7 +31,7 @@ ht-degree: 7%
 **以前にデプロイしたコードを復元** 機能は、以下の **すべて** 条件が true の場合にのみ使用できます。
 
 * **環境の復元の作成** 権限を保持します。 権限の管理について詳しくは、[ カスタム権限 ](/help/implementing/cloud-manager/custom-permissions.md) を参照してください。
-* 組織が早期導入プログラムに登録され、機能フラグがオンになっています。
+* 組織がアルファプログラムに登録され、機能フラグがオンになっている。
 * プログラムはAEM as a Cloud Serviceで実行されます。
 * 選択した環境は `Development` 環境です（Alphaの一時的な制限）。
 * その環境の最後のパイプラインは正常に終了し、**30 日未満** 前に実行されました。
