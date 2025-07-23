@@ -17,7 +17,7 @@ ht-degree: 100%
 
 > **バージョンの可用性**
 >
-> * **AEM 6.5**：[AEM ドキュメントサービスの概要](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
+> * **AEM 6.5**：[AEM ドキュメントサービスの概要](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=ja)
 > * **AEM as a Cloud Service**：この記事
 
 ## はじめに
