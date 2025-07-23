@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
 workflow-type: tm+mt
 source-wordcount: '2488'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -135,25 +135,25 @@ ht-degree: 95%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、環境の詳細を表示するプログラムをクリックします。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、環境の詳細を表示するプログラムをクリックします。
 
 1. 次のいずれかの操作を行って、プログラムのすべての環境をリストします。
 
-   * 左側のメニューの **サービス** で、![ データアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**環境** をクリックします。
+   * 左側のサイドメニューの&#x200B;**サービス**&#x200B;で、![データアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)「**環境**」をクリックします。
 
    ![「環境」タブ](assets/environments-1.png)
 
-   * 左側のメニューの **プログラム** で **概要** をクリックし、**環境** カードで ![ ワークフローアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)**すべて表示** をクリックします。
+   * 左側のサイドメニューの&#x200B;**プログラム**&#x200B;で「**概要**」をクリックし、**環境**&#x200B;カードから ![ワークフローアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)「**すべて表示**」をクリックします。
 
      ![「すべて表示」オプション](assets/environments-2.png)
 
    >[!NOTE]
    >
-   >**環境** カードには 3 つの環境のみ表示されます。 カードの **すべて表示** をクリックすると、プログラムの *すべて* の環境が表示されます。
+   >**環境**&#x200B;カードには、3 つの環境のみがリストされます。 カードの「**すべて表示**」をクリックすると、プログラムの&#x200B;*すべて*&#x200B;の環境が表示されます。
 
 1. 環境ページで、次のいずれかの操作を行います。
 
-   * リストで環境をクリックすると、その環境の詳細が表示されます。
+   * リスト内の環境をクリックすると、その環境の詳細が表示されます。
 
    ![環境の詳細](assets/environ-preview1.png)
 
@@ -166,7 +166,7 @@ ht-degree: 95%
 
 [AEM as a Cloud Serviceのコンテンツの復元 ](/help/operations/restore.md) を参照してください。
 
-## デプロイされた以前のコードを復元 {#restore-previous-code-deployed}
+## デプロイした以前のコードを復元 {#restore-previous-code-deployed}
 
 [AEM as a Cloud Serviceにデプロイされた以前のコードの復元 ](/help/operations/restore-previous-code-deployed.md) を参照してください。
 

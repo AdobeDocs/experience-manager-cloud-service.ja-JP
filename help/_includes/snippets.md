@@ -2,7 +2,7 @@
 source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
 workflow-type: tm+mt
 source-wordcount: '1637'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 # スニペット {#snippets}
@@ -44,7 +44,7 @@ ht-degree: 93%
 * [SharePoint ドキュメントライブラリへの送信](/help/forms/connect-forms-to-sharepoint-document-library.md)
 * [SharePoint リストへの送信](/help/forms/connect-forms-to-sharepoint-list.md)
 * [フォームデータモデルを使用して送信](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
-* [Azure Blob Storage に送信](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [Azure Blob Storage への送信](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [REST エンドポイントに送信](/help/forms/configure-submit-action-restpoint.md)
 * [OneDrive に送信](/help/forms/configure-submit-action-onedrive.md)
 * [AEM ワークフローを起動](/help/forms/configure-submit-action-workflow.md)
@@ -111,9 +111,9 @@ ht-degree: 93%
    </td>
    </tr>
    <tr>
-    <td>ES2022 のサポート </td>
-    <td>ES2022 はまだサポートされていません。サポートは、ES5 JavaScript機能に制限されています。 </td>
-    <td>最新のJavaScript機能（最大 ES2022 のレット関数と矢印関数など）は、カスタム関数でサポートされています。 
+    <td>ES2022 サポート </td>
+    <td>ES2022 はまだサポートされていません。サポートは、ES5 JavaScript 機能に制限されています。 </td>
+    <td>最新の JavaScript 機能（let 関数やアロー関数など、ES2022 まで）は、カスタム関数でサポートされています。 
    </td>
    </tr>
    </tr>
@@ -169,11 +169,11 @@ ht-degree: 93%
 >[!IMPORTANT]
 >
 >フロントエンドパイプラインでは、以下の IP 許可リストを事前に Cloud Manager に追加する必要があります。
->&#x200B;>必要に応じて、以下のアドレスのブロックをコピーして [&#128279;](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)IP 許可リストを追加します。 各アドレスはコンマで区切ります。 このブロックを **IP 許可リストを追加**&#x200B;ダイアログボックスの「**IP アドレス / CIDR**」フィールドにペーストします。 アドレスリストの最初のコンマの直後にカーソルを置き、**Enter** キーを押します。 リストを保存します。
->&#x200B;>フロントエンドパイプラインの実行が中断されないようにするには、パイプラインを有効にする&#x200B;*前に*、この IP 許可リストを Cloud Manager に確実に追加します。
+>>必要に応じて、以下のアドレスのブロックをコピーして ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)IP 許可リストを追加[します。 各アドレスはコンマで区切ります。 このブロックを **IP 許可リストを追加**&#x200B;ダイアログボックスの「**IP アドレス / CIDR**」フィールドにペーストします。 アドレスリストの最初のコンマの直後にカーソルを置き、**Enter** キーを押します。 リストを保存します。
+>>フロントエンドパイプラインの実行が中断されないようにするには、パイプラインを有効にする&#x200B;*前に*、この IP 許可リストを Cloud Manager に確実に追加します。
 >
 >**Cloud Manager の IP 許可リスト**
->&#x200B;>52.254.106.192/28、20.186.185.181、52.254.106.240/28、52.254.107.128/28、52.254.105.192/28、52.254.106.176/28、20.186.185.227、52.254.106.144/28、52.254.107.64/28、20.186.185.239、20.22.83.112、52.254.107.80/28、52.254.107.144/28、52.254.106.224/28、20.14.241.153、52.254.107.0/28、52.254.107.32/28、52.254.106.208/28、40.70.154.136/29、52.254.106.160/28、52.254.107.16/28、52.254.106.0/28、4.152.211.251
+>>52.254.106.192/28、20.186.185.181、52.254.106.240/28、52.254.107.128/28、52.254.105.192/28、52.254.106.176/28、20.186.185.227、52.254.106.144/28、52.254.107.64/28、20.186.185.239、20.22.83.112、52.254.107.80/28、52.254.107.144/28、52.254.106.224/28、20.14.241.153、52.254.107.0/28、52.254.107.32/28、52.254.106.208/28、40.70.154.136/29、52.254.106.160/28、52.254.107.16/28、52.254.106.0/28、4.152.211.251
 >   
 
 ## Cloud Manager の IP 許可リストとフロントエンドパイプラインの追加 {#add-cm-allowlist-frontend-pipeline}
@@ -181,7 +181,7 @@ ht-degree: 93%
 >[!IMPORTANT]
 >
 >フロントエンドパイプラインを使用してサイトを開発する場合や、使用する予定がある場合は、事前に Cloud Manager IP 許可リストを追加する必要があります。
->&#x200B;>詳しくは、[フロントエンドパイプラインでの Cloud Manager IP 許可リストの使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)を参照してください。
+>>詳しくは、[フロントエンドパイプラインでの Cloud Manager IP 許可リストの使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)を参照してください。
 
 ## IP 許可リストとユニバーサルエディター {#ip-allow-lists-ue}
 
@@ -222,7 +222,7 @@ ht-degree: 93%
 
 **サポートチケットをログに記録するには：**
 
-1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/ja?support-tab=home#support)チケットを作成します。
+1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/?support-tab=home#support)チケットを作成します。
 1. チケットのタイトルに「**Edge Delivery**」を追加します。
 1. 説明では、問題の説明に加えて、次の詳細を入力します。
 
