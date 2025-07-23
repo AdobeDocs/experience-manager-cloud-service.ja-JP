@@ -5,7 +5,7 @@ exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 32b3a125d6370dd591252fde342843d5f9e33cf1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '409'
 ht-degree: 100%
 
@@ -109,7 +109,7 @@ ht-degree: 100%
 
 カスタムプレビュー URL は、`urn:adobe:aue:config:preview` メタ設定を使用して指定できます。この URL は、[エディターの右上のツールバー](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)にある「**ページを開く**」ボタンをクリックすると開きます。
 
-これを行うには、次の例のように、実装されたアプリのメタタグに目的のプレビュー URL を含めるのみです。
+これを行うには、次の例のように、実装されたアプリのメタタグに目的のプレビュー URL を含めます。
 
 ```html
 <meta name="urn:adobe:aue:config:preview" content="https://wknd.site"/>

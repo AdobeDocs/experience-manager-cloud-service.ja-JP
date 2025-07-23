@@ -4,7 +4,7 @@ description: コンテンツハブへのブランド承認済みアセットの�
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
 source-git-commit: dc0f6b5faf75fb7303611e3f25febe89b43a834d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '761'
 ht-degree: 100%
 

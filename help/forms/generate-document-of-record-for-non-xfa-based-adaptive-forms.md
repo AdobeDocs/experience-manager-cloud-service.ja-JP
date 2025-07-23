@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
 source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4225'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -397,10 +397,10 @@ When you select a form model, configure Document of Record using options availab
 
 >[!NOTE]
 > 
-> レコードのドキュメントにカスタムフォームタイトルを表示するには、**レコードのドキュメントのプロパティ**>**マスターページのプロパティ** で **カスタムフォームタイトル** を編集します。 このカスタム タイトル：
+> レコードのドキュメントにカスタムフォームタイトルを表示するには、**レコードのドキュメントのプロパティ**／**マスターページのプロパティ**&#x200B;で&#x200B;**カスタムフォームのタイトル**&#x200B;を編集します。 このカスタムタイトル：
 > 
 > * 生成されたPDFのヘッダーに表示されます
-> * PDFのドキュメントプロパティで、タイトルとして表示される
+> * PDFのドキュメントプロパティで、タイトルとして表示されます
 > * PDFを開いたときに、最初の表示タイトルとして表示されます
 
 ## アダプティブフォームエディターでのレコードのドキュメントのサポート {#dor-support-in-adaptiveform}

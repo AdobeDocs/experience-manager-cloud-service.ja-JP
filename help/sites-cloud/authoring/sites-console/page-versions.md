@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: ebbf38563be65c28384276f7a0baa100f9f384b2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1620'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -213,7 +213,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->タイムワープは、AEMページ（履歴のバージョンと将来のコンテンツの状態のローンチ）で機能し、使用することを目的としています。
+>タイムワープは、AEM ページ (履歴のバージョンと将来のコンテンツの状態のローンチ) で機能し、このージでの使用を目的としています。
 >
 >ネストされたローンチやエクスペリエンスフラグメントを使用する場合には機能しません。
 
