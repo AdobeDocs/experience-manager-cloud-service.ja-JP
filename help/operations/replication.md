@@ -4,10 +4,10 @@ description: AEM as a Cloud Service での配布とレプリケーションの�
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 9dac0b63fec56bede7db9331d47ef479b29e67d0
+source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
 workflow-type: tm+mt
 source-wordcount: '1711'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 >[!NOTE]
 >
 >コンテンツの一括公開に興味がある場合は、大きなペイロードを効率的に処理できる[ツリーアクティベーションワークフローステップ](#tree-activation)を使用してワークフローを作成します。
->独自の一括公開カスタムコードを作成することはお勧めできません。
->何らかの理由でカスタマイズする必要がある場合は、既存のワークフロー API を使用して、このステップをトリガーできます。
->常に、公開する必要のあるコンテンツのみを公開することをお勧めします。また、必要がない場合は、大量のコンテンツを公開しないようにしてください。ただし、ツリーアクティベーションワークフローステップを使用したワークフローを通じて送信できるコンテンツの量に制限はありません。
+>>独自の一括公開カスタムコードを作成することはお勧めできません。
+>>何らかの理由でカスタマイズする必要がある場合は、既存のワークフロー API を使用して、このステップをトリガーできます。
+>>常に、公開する必要のあるコンテンツのみを公開することをお勧めします。また、必要がない場合は、大量のコンテンツを公開しないようにしてください。ただし、ツリーアクティベーションワークフローステップを使用したワークフローを通じて送信できるコンテンツの量に制限はありません。
 
 ### クイック公開／非公開 - 計画的公開／非公開 {#publish-unpublish}
 
@@ -98,8 +98,8 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 | 名前 | 説明 |
 | ------------- | ------------------------------------------- |
-| onlyModified | ノード：新規および前回のパブリッシュ以降に変更された既存の両方 |
-| onlyActivated | ノード：前回のパブリッシュより前にパブリッシュされたノード |
+| onlyModified | ノード：新しいノードと、前回のパブリッシュ以降に変更された既存のノードの両方 |
+| onlyActivated | ノード：前回のパブリッシュ前にパブリッシュされたノード |
 
 
 **サポートの再開**
@@ -193,7 +193,6 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
-
 </details>
 
 ### レプリケーション API {#replication-api}
@@ -272,7 +271,7 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 レプリケーションのトラブルシューティングを行うには、AEM オーサーサービス Web UI のレプリケーションキューに移動します。
 
-1. AEM 開始メニューで&#x200B;**ツール**／**デプロイメント**／**配布**&#x200B;に移動します。
+1. AEM[ グローバルナビゲーション ](/help/sites-cloud/authoring/basic-handling.md#global-navigation) から、**ツール**/**デプロイメント**/**配布** に移動します。
 1. **公開**&#x200B;カードを選択します。
 
    ![ステータス](assets/publish-status.png "ステータス")
