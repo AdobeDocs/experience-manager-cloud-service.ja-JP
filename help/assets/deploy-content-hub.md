@@ -3,10 +3,10 @@ title: デプロイ [!DNL Content Hub]
 description: コンテンツハブを展開してアクティブ化し、様々なタイプの権限（アセットのアップロード、Adobe Express ユーザー）を持つユーザーにアクセス権を付与する方法と、ユーザーに管理者権限を付与する方法について説明します。
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
-workflow-type: ht
-source-wordcount: '1572'
-ht-degree: 100%
+source-git-commit: 367406ff325eb71a4c75018c4440eae6535f20dc
+workflow-type: tm+mt
+source-wordcount: '1586'
+ht-degree: 99%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 100%
 Experience Manager Assets as a Cloud Service で承認済みとしてマークされたアセットは、コンテンツハブでのアセット配布に使用できます。
 
 この記事では、ユーザーのニーズに基づいた権限のバリエーションを含む、ユーザーにコンテンツハブへのアクセスを提供するエンドツーエンドのワークフローについて説明します。
+
+Experience Manager Assets用にContent Hubを有効にする方法については、次のビデオを参照してください。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469851)
 
 コンテンツハブでの権限のバリエーションには、次が含まれます。
 
