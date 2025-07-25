@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 83aceb71ead66763b94ec523c9d9c76c4286c762
+source-git-commit: b4aec70b13575366c1d40ccf935481580a1fb6d8
 workflow-type: tm+mt
 source-wordcount: '1810'
 ht-degree: 100%
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -63,9 +63,11 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [ アダプティブFormsおよびフォームフラグメント用のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：ユニバーサルエディターでは、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成が迅速化され、一貫性が高まり、ススパムや自動化による悪用からの保護が強化されます。
+
 
 ### プレリリース機能
+
+* [ アダプティブFormsおよびフォームフラグメント用のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：ユニバーサルエディターでは、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成が迅速化され、一貫性が高まり、ススパムや自動化による悪用からの保護が強化されます。
 
 * [アダプティブフォームからの AFP レンディションの生成と同期](/help/forms/document-generation-afp-api.md)：AFP Output Sync API を使用すると、管理者とユーザーはアダプティブフォームから AFP （Advanced Function Presentation）出力を生成し、出力を外部システムやストレージの場所と同期できます。 AFP は印刷に最適化された高性能なドキュメント形式で、大規模なエンタープライズ環境でよく使用されます。
 
