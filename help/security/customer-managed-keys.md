@@ -6,14 +6,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
-source-git-commit: eb38369ee918851a9f792af811bafff9b2e49a53
-workflow-type: ht
-source-wordcount: '1167'
-ht-degree: 100%
+source-git-commit: 06bd37146cafaadeb5c4bed3f07ff2a38c548000
+workflow-type: tm+mt
+source-wordcount: '1290'
+ht-degree: 69%
 
 ---
 
-# AEM as a Cloud Service の顧客管理キーの設定 {#cusomer-managed-keys-for-aem-as-a-cloud-service}
+# AEM as a Cloud Service の顧客管理キーの設定 {#customer-managed-keys-for-aem-as-a-cloud-service}
 
 AEM as a Cloud Service は現在、顧客データを Azure Blob Storage と MongoDB に保存し、デフォルトでプロバイダー管理の暗号化キーを使用してデータを保護します。この設定は多くの組織のセキュリティニーズを満たしますが、規制の厳しい業界の企業や強化されたデータセキュリティを必要とする企業は、より厳密な暗号化の制御を求める場合があります。データのセキュリティ、コンプライアンス、暗号化キーの管理機能を優先する組織にとって、顧客管理キー（CMK）ソリューションは重要な機能強化を提供します。
 
@@ -42,8 +42,8 @@ AEM as a Cloud Service を使用すると、保存データを暗号化するた
 1. 環境の設定
 1. アドビからのアプリケーション ID の取得
 1. 新しいリソースグループの作成
-1. キーコンテナの作成
-1. キーコンテナに対して Adobe アクセス権を付与する
+1. Key Vault の作成
+1. Key Vault へのAdobe アクセスの許可
 1. 暗号化キーの作成
 
 キーコンテナの URL、暗号化キー名、およびキーコンテナに関する情報をアドビと共有する必要があります。
@@ -58,9 +58,24 @@ Azure コマンドラインインターフェイス（CLI）は、このガイ�
 >
 >このガイドでは Azure CLI を使用しますが、Azure コンソール経由で同じ操作を実行することもできます。Azure コンソールを使用する場合は、以下のコマンドを参考にしてください。
 
+
+## AEM as a Cloud Serviceの CMK 設定プロセスの開始 {#request-cmk-for-aem-as-a-cloud-service}
+
+AEM as a Cloud Service環境の顧客管理キー（CMK）設定を UI を使用してリクエストする必要があります。 これをおこなうには、AEM ホームセキュリティ UI の「**顧客管理キー** セクションに移動します。
+その後、「オンボーディングを開始 **ボタンをクリックして、オンボーディングプロセスを開始** きます。
+
+![CMK UI を使用した web サイトのオンボーディングの開始 ](./assets/cmk/step1.png)
+
+
 ## アドビからのアプリケーション ID の取得 {#obtain-an-application-id-from-adobe}
 
-アドビでは、このガイドの残りの部分で必要になる Entra アプリケーション ID を提供します。アプリケーション ID をまだお持ちでない場合は、アドビに問い合わせて取得してください。
+オンボーディングプロセスを開始すると、Adobeから Entra アプリケーション ID が提供されます。 このアプリケーション ID は、ガイドの残りの部分で必要であり、Adobeが Key Vault にアクセスできるようにするサービスプリンシパルの作成に使用されます。 アプリケーション ID がまだない場合は、Adobeから提供されるまで待つ必要があります。
+
+![ リクエストは処理中です。Adobeが Entra アプリケーション ID を提供するのを待ちます ](./assets/cmk/step2.png)
+
+リクエストが完了すると、CMK UI でアプリケーション ID を確認できるようになります。
+
+![Entra Application ID はAdobeから提供されます ](./assets/cmk/step3.png)
 
 ## 新しいリソースグループの作成 {#create-a-new-resource-group}
 
@@ -79,7 +94,7 @@ az group create --location $location --resource-group $resourceGroup
 
 ## キーコンテナの作成 {#create-a-key-vault}
 
-暗号化キーを格納するには、キーコンテナを作成する必要があります。キーコンテナでは、パージ保護が有効になっている必要があります。他の Azure サービスからの保存データを暗号化するには、パージ保護が必要です。アドビのテナントがキーコンテナにアクセスできることを確認するには、パブリックネットワークアクセスも有効にする必要があります。
+暗号化キーを格納するには、キーコンテナを作成する必要があります。キーコンテナでは、パージ保護が有効になっている必要があります。他の Azure サービスからの保存データを暗号化するには、パージ保護が必要です。Adobe サービスが Key Vault にアクセスできるようにするには、公開ネットワークアクセスを有効にする必要があります。
 
 >[!IMPORTANT]
 >パブリックネットワークアクセスを無効にしてキーコンテナを作成すると、キーの作成やローテーションなどのすべてのキーコンテナ関連の操作は、キーコンテナへのネットワークアクセス権を持つ環境（キーコンテナにアクセスできる VM など）から実行する必要があります。
@@ -97,7 +112,7 @@ az keyvault create `
   --location $location `
   --resource-group $resourceGroup `
   --name $keyVaultName `
-  --default-action=Deny `
+  --default-action=Allow `
   --enable-purge-protection `
   --enable-rbac-authorization `
   --public-network-access Enabled
@@ -107,7 +122,7 @@ az keyvault create `
 
 この手順では、アドビが Entra アプリケーションを通じてキーコンテナにアクセスできるようにします。Entra アプリケーションの ID は、アドビから既に提供されている必要があります。
 
-まず、Entra アプリケーションにアタッチされたサービスプリンシパルを作成し、それに **Key Vault Reader** の役割と **Key Vault Crypto User** の役割を割り当てる必要があります。役割は、このガイドで作成したキーコンテナに限定されます。
+まず、Entra アプリケーションに接続されたサービスプリンシパルを作成し、それに **Key Vault Reader** ロールと **Key Vault Crypto User** ロールを割り当てる必要があります。 役割は、このガイドで作成したキーコンテナに限定されます。
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -128,7 +143,7 @@ az role assignment create --assignee $servicePrincipalId --role "Key Vault Reade
 az role assignment create --assignee $servicePrincipalId --role "Key Vault Crypto User" --scope $keyVaultId
 ```
 
-## 暗号化キーの作成 {#create-an-ecryption-key}
+## 暗号化キーの作成 {#create-an-encryption-key}
 
 最後に、キーコンテナで暗号化キーを作成できます。この手順を完了するには、**Key Vault Crypto Officer** の役割が必要です。ログインしたユーザーにこの役割がない場合は、システム管理者に問い合わせて、この役割を付与してもらうか、既にその役割を持っているユーザーにこの手順を完了するよう依頼してください。
 
@@ -138,7 +153,7 @@ az role assignment create --assignee $servicePrincipalId --role "Key Vault Crypt
 # Reuse this information from the previous steps.
 $keyVaultName="<KEY VAULT NAME>"
 
-# Chose a name for your key.
+# Choose a name for your key.
 $keyName="<KEY NAME>"
 
 # Create the key.
@@ -147,7 +162,7 @@ az keyvault key create --vault-name $keyVaultName --name $keyName
 
 ## キーコンテナ情報の共有 {#share-the-key-vault-information}
 
-この時点で、すべての準備が整いました。必要な情報をアドビにお伝えいただければ、アドビがお使いの環境の設定を行います。
+この時点で、すべての準備が整いました。必要な情報を CMK UI を使用して共有するだけで、環境設定プロセスが開始されます。
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -167,7 +182,8 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
-
+CMK UI でこの情報を指定します。
+![UI への情報の入力 ](./assets/cmk/step3a.png)
 
 ## キーアクセスの取り消しの影響 {#implications-of-revoking-key-access}
 
@@ -177,27 +193,16 @@ $subscriptionId="<Subscription ID>"
 
 ## 次の手順 {#next-steps}
 
-アドビに連絡して以下を共有します。
+CMK UI で必要な情報を指定すると、AdobeはAEM as a Cloud Service環境の設定プロセスを開始します。 この処理には時間がかかる場合があり、完了すると通知が表示されます。
 
-* キーコンテナの URL。この手順で取得し、`$keyVaultUri` 変数に保存しました。
-* 暗号化キーの名前。前の手順でキーを作成し、`$keyName` 変数に保存しました。
-* キーコンテナへの接続を設定するために必要な `$resourceGroup`、`$subscriptionId`、`$tenantId`。
+![Adobeが環境を設定するのを待ちます。](./assets/cmk/step4.png)
 
-<!-- Alexandru: hiding this for now
 
-### Private Link Approvals {#private-link-approvals}
+## CMK の設定の完了 {#complete-the-cmk-setup}
 
->[!TIP]
->You can also consult the [Azure Documentation](https://learn.microsoft.com/en-us/azure/key-vault/general/private-link-service?tabs=portal#how-to-manage-a-private-endpoint-connection-to-key-vault-using-the-azure-portal) on how to approve a Private Endpoint Connection.
+設定プロセスが完了すると、UI で CMK 設定のステータスを確認できるようになります。 Key Vault と暗号化キーも確認できます。
+![ のプロセスが完了しました ](./assets/cmk/step5.png)
 
-Afterwards, an Adobe Engineer assigned to you will contact you to confirm the creation of the private endpoints, and will request you to approve a set of required Connection Requests. The requests can be approved either using the Azure Portal UI, where you can go to **KeyVault > Settings > Networking > Private Endpoint Connections** and approve the requests with names similar to these: 
+## 質問とサポート {#questions-and-support}
 
-`mongodb-atlas-<REGION>-<NUMBER>`, `storage-account-private-endpoint` and `backup-storage-account-private-endpoint`. 
-
-Notify the Adobe Engineer once this process is complete and the Private Endpoints show up as **Approved**. -->
-
-## Private Beta の顧客管理キー {#customer-managed-keys-in-private-beta}
-
-アドビのエンジニアリングチームは現在、Azure のプライベートリンクを活用した CMK の拡張実装に取り組んでいます。新しい実装では、アドビのテナントとお使いのキーコンテナ間を直接プライベートリンクで接続し、Azure バックボーンを通じてキーを共有できます。
-
-この強化された実装は、現在 Private Beta であり、Private Beta プログラムに登録し、アドビのエンジニアリングチームと緊密に連携することに同意した一部のお客様にご利用いただけます。プライベートリンクを使用した CMK の Private Beta に興味がある場合、詳しくは、アドビにお問い合わせください。
+AEM as a Cloud Serviceの顧客管理キー設定に関するご質問、お問い合わせ、サポートが必要な場合は、お問い合わせください。 Adobe サポートは、ご質問がある場合にお手伝いします。
