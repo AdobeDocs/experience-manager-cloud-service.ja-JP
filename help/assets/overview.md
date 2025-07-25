@@ -57,11 +57,11 @@ Adobe Experience Manager では、Web ブラウザーユーザーインターフ
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
+   <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-desktop-app/using/using">
    <img alt="AEM デスクトップアプリケーションの使用" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
+      <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-desktop-app/using/using">
       <strong>AEM デスクトップアプリケーションの使用 </strong>
       </a>
    </div>
@@ -267,11 +267,11 @@ AEM Assetsには、AI 生成のタグ付け（スマートタグ）、カスタ�
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ja">
    <img alt="メタデータ管理のベストプラクティス" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ja">
       <strong> メタデータ管理のベストプラクティス </strong>
       </a>
    </div>
@@ -583,11 +583,11 @@ AEM Assetsは、様々なAdobe アプリケーションやAdobe以外のアプ�
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
+   <a href="https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/combine/assets">
    <img alt="Adobe Journey Optimizer との統合" src="./assets/integration-figma.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
+      <a href="https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/combine/assets">
       <strong>Adobe Journey Optimizerとの統合 </strong>
       </a>
    </div>
@@ -596,11 +596,11 @@ AEM Assetsは、様々なAdobe アプリケーションやAdobe以外のアプ�
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+   <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
    <img alt="Commerceとの統合" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+      <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
       <strong>Commerceとの統合 </strong>
       </a>
    </div>
