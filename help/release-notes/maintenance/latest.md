@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 3686697c85273ccc13e80b8d7f4ad1ff3c79845d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '632'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
@@ -28,46 +28,46 @@ ht-degree: 33%
 
 ### 機能強化 {#enhancements-21706}
 
-* ASSETS-39377:Assets Bulk Importer でリモートストレージからの 429 の処理を改善しました。
+* ASSETS-39377：Assets Bulk Importer でのリモートストレージからの 429 の処理を改善。
 * ASSETS-46026：メタデータエクスポーターの設定可能な最大深度。
-* ASSETS-49172:Dynamic Media テンプレートアセットは、フォルダーからメタデータを継承する必要がある。
-* ASSETS-50209:DM テンプレートでの部分文字列のサポート。
-* ASSETS-52326:Assetsのタイトルの表示環境設定を行うAEM Assets設定ページ
-* ASSETS-52805：一括操作ジョブの CSV 出力/ダウンロードのサポートを追加。
-* ASSETS-52873：フォルダーのプロパティに新しい設定を追加して、そのフォルダーの AI 処理を無効にします。
-* ASSETS-53535:YouTube ビデオのアップロードパフォーマンスが向上しました。
-* ASSETS-53612:Assets オムニサーチでのハイブリッド検索のコントロール。
-* GRANITE-60183: commons-fileupload の依存関係を 1.6.0 に更新します。
-* GRANITE-60287:QS を Jackrabbit 2.22.1 に更新します。
-* SITES-30452:ASO を使用したコンテンツ API - タイトルと説明の提案。
+* ASSETS-49172：Dynamic Media テンプレートアセットは、フォルダーからメタデータを継承する必要がある。
+* ASSETS-50209：DM テンプレートでの部分文字列のサポート。
+* ASSETS-52326：Assets のタイトル表示環境設定を指定する AEM Assets 設定ページ。
+* ASSETS-52805：一括操作ジョブに CSV 出力／ダウンロードのサポートを追加。
+* ASSETS-52873：フォルダーのプロパティに新しい設定を追加して、そのフォルダーの AI 処理を無効にする。
+* ASSETS-53535：YouTube ビデオのアップロードパフォーマンスを改善済み。
+* ASSETS-53612：Assets オムニサーチでのハイブリッド検索のコントロール。
+* GRANITE-60183：commons-fileupload 依存関係を 1.6.0 にアップデート。
+* GRANITE-60287：QS を Jackrabbit 2.22.1 にアップデート。
+* SITES-30452：ASO を使用した Content API - タイトルと説明の提案。
 * SITES-31677：カスタムワークスペースは、Target への AEM コンテンツフラグメントの書き出しをサポートします。
-* SKYOPS-112741:AEM-CS SDKから `com.adobe.granite.product.support` バンドルを削除します。
+* SKYOPS-112741：AEM-CS SDK から `com.adobe.granite.product.support` バンドルを削除。
 
 ### 修正された問題 {#fixed-issues-21706}
 
-* ASSETS-12882：ビューアプリセットを開いた後の UI の関連付けの問題。
-* ASSETS-48958:Sites ローカル AEMでアセット同期が公開済みステータスを変更する際の問題。
-* ASSETS-50856:completeUpload でリセットされな `dam:processingAttempts`。
-* ASSETS-51604：リンク共有レポート CSV に「Shared With」データが見つからない。
-* ASSETS-51783：検索クエリで設定が見つからない場合は、`/conf/global` の DM 設定にフォールバックします。
-* ASSETS-51857：アセットテーブル項目を並べ替えることができません。
-* ASSETS-52169：新しいBATのマシンレンディションがアセットのダウンロードに誤って含まれる。
-* ASSETS-52229:AEM as a Cloud Serviceのアセットレポートにインボックス通知がない。
-* ASSETS-52399:com.day.cq.dam.api のバージョンが大幅に上昇すると、カスタマーコードが破損する可能性があります。
-* ASSETS-52780：切り替えを有効にしなくても、アセットをプレビュー用にマークできます。
-* ASSETS-52866：移行された DM ビデオは、DM 同期が無効なフォルダーの下で処理中の状態のままになります。
+* ASSETS-12882：ビューアプリセットを開いた後の UI 配置の問題。
+* ASSETS-48958：アセット同期により Sites のローカル AEM で公開ステータスが変更される問題。
+* ASSETS-50856：completeUpload で `dam:processingAttempts` がリセットされない。
+* ASSETS-51604：リンク共有レポート CSV に「共有先」データがない。
+* ASSETS-51783：検索クエリを使用して設定が見つからない場合に、`/conf/global` の下にある DM 設定にフォールバック。
+* ASSETS-51857：アセットテーブル項目を並べ替えることができない。
+* ASSETS-52169：新しい BAT マシンレンディションがアセットのダウンロードに誤って含まれる。
+* ASSETS-52229：AEM as a Cloud Service のアセットレポートにインボックス通知がない。
+* ASSETS-52399：com.day.cq.dam.api のバージョンが上がると、顧客コードが破損する可能性がある。
+* ASSETS-52780：有効に切り替えなくても、アセットをプレビュー用にマークできる。
+* ASSETS-52866：移行した DM ビデオが、DM 同期が無効になっているフォルダーの下で処理状態のままになる。
 * ASSETS-53237：画像プリセットエディターのカラープロファイルドロップダウンが空白になる。
-* ASSETS-53240：アセットレポート - Dynamic Media からアセットレンディションサイズを取得する際に、ディスク使用量が失敗する。
-* ASSETS-53446:NPE が原因で、YouTube認証トークンの更新が断続的に失敗する。
-* ASSETS-53827：混在メディアセットを保存する際に、ACL 検証がブロックされる。
-* ASSETS-5403：公開インスタンスで使用される Dynamicmedia clientlibs には、`allowProxy=true` が必要です。
-* ASSETS-54261：ファイルのダウンロードに失敗すると、メタデータの読み込みによって接続がリークし、ブロックされます。
-* CQ-4359863：コンテンツフラグメントエディター/アセットエディターでキーワードのタグ検索が異常に壊れる。
-* CQ-4359958:openapi-support をAEM 6.5.22.0 以降と互換性のあるものにします。
-* CQ-4360256:`/adobe` サーブレットコンテキストを介して処理される HTTP 要求のリクエストパスに、サーブレットのコンテキストパスを含めます。
-* CQ-4360317：応答を作成する際にサンセット日ヘッダーを設定するメソッドを追加。
-* GRANITE-60311:AEM SDK Quickstart - NPE （「OSGi Installer Configuration Printer」を参照）
-* GS-15285：ユーザーは、非アクティブ化された状態で表示されます。
+* ASSETS-53240：アセットレポート - Dynamic Media からアセットレンディションサイズを取得する際に、ディスクの使用に失敗する。
+* ASSETS-53446：NPE により、YouTube 認証トークンの更新が断続的に失敗する。
+* ASSETS-53827：ACL 検証により、混合メディアセットの保存がブロックされる。
+* ASSETS-5403：パブリッシュインスタンスで使用される Dynamicmedia clientlibs には `allowProxy=true` が必要である。
+* ASSETS-54261：メタデータの読み込みで接続がリークされ、ファイルのダウンロードに失敗するとブロックされる。
+* CQ-4359863：コンテンツフラグメントエディター／アセットエディターで、キーワードの順序が正しくないとタグ検索が破損する。
+* CQ-4359958：openapi-support を AEM 6.5.22.0 以降と互換性のあるものにする。
+* CQ-4360256：`/adobe` サーブレットコンテキスト経由で処理される HTTP リクエストのリクエストパスにサーブレットコンテキストパスが含まれる。
+* CQ-4360317：応答を作成する際に、Sunset 日付ヘッダーを設定するメソッドが追加される。
+* GRANITE-60311：AEM SDK Quickstart - 「OSGi インストーラー設定プリンター」の NPE。
+* GS-15285：ユーザーが非アクティブとして表示される。
 
 ### 既知の問題 {#known-issues-21706}
 
