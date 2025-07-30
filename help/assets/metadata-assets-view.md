@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '2453'
-ht-degree: 100%
+source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
+workflow-type: tm+mt
+source-wordcount: '2430'
+ht-degree: 97%
 
 ---
 
@@ -130,10 +130,10 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 | チェックボックス | ブール値を追加します。値を保存すると、TRUE または FALSE として保存されます。 |
 | 日付 | 日付コンポーネントを追加します。 |
 | ドロップダウン | ドロップダウンリストを追加します。 |
-| State | リポジトリの状態プロパティを追加します（repo:state にマッピング）。 |
-| アセットのステータス | デフォルトのアセットステータスプロパティを追加します（dam:assetStatus にマッピング）。 |
-| タグ | 分類管理に保存されている値からタグを追加します（xcm:tags にマッピング）。 |
-| キーワード | フリーフォームキーワードを追加します（dc:subject にマッピング）。 |
+| State | リポジトリ状態プロパティを追加します（repo:state にマッピング）。 |
+| アセットのステータス | デフォルトの「アセットステータス」プロパティを追加します（dam:assetStatus にマッピングされる）。 |
+| タグ | 分類管理（xcm:tags にマッピング）に保存された値からタグを追加します。 |
+| キーワード | 自由形式のキーワードを追加します（dc:subject にマッピング）。 |
 | スマートタグ | メタデータタグを自動的に追加して、検索機能を強化します。 |
 
 ### フォルダーにメタデータフォームの割り当て {#assign-metadata-form-folder}
@@ -214,7 +214,7 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 設定済みのルートタグを表示するには、メタデータフォームとルートタグ間のマッピングが実行されるアセットの詳細ページに移動します。
 
-## AI で生成されたメタデータによるコンテンツ検出の強化 {#ai-smart-tags}
+## AI で生成されたメタデータを使用したコンテンツ検出の強化 {#ai-smart-tags}
 
 AI は、手動の入力に依存するのではなく、デジタルアセットに説明的なタグを自動的に割り当てます。これらの AI で生成されたタグは、メタデータの品質を向上させ、アセットの検索、分類および推奨を容易にします。このアプローチでは、手動でのタグ付けが不要なために効率が向上するだけでなく、大量のデジタルコンテンツ間の一貫性とスケーラビリティも確保できます。例えば、アセットが画像の場合、AI はアセット内のオブジェクト、シーン、感情、さらにはブランドロゴを識別し、「夕日」、「ビーチ」、「休暇」、「笑顔」など、関連するタグを生成できます。 AI が生成するコンテンツは、セマンティック検索とレキシカル検索の両方の技術を活用することで、アセットの検索精度を向上させることができます。詳しくは、[Assets の検索](search-assets-view.md)を参照してください。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
@@ -228,11 +228,8 @@ AI で生成されたメタデータを有効にするには：
 
 * GenAI Rider 契約に署名する必要があります。詳しくは、アドビ担当者にお問い合わせください。
 
-  >[!IMPORTANT]
-  >
-  > アセットのタイトルを定義していない場合にのみ、AI で生成されたアセットのタイトルがアセットカードに表示されます。指定したアセットタイトルは上書きされません。
 
-### AI で生成されたメタデータの使用 {#using-ai-generated-smart-tags}
+### AI が生成したメタデータの使用 {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -252,6 +249,8 @@ AI で生成されたメタデータを有効にするには：
    * **[!UICONTROL 生成されたキーワード]：**&#x200B;キーワードは、アセットの主なテーマを表すターゲット用語で、タグ付けやコンテンツのフィルタリングに役立ちます。
 
 1. [オプション]：関連するタグが欠落していると思われる場合は、追加のタグを追加するか、独自のタグを作成できます。これを行うには、「**[!UICONTROL 生成されたキーワード]**」フィールドにタグを入力し、「**[!UICONTROL 保存]**」をクリックします。
+
+AI 生成メタデータを無効にする方法について詳しくは、[AI 生成メタデータの無効化 ](/help/assets/smart-tags.md#disable-ai-generated-metadata) を参照してください。
 
 ## 次の手順 {#next-steps}
 

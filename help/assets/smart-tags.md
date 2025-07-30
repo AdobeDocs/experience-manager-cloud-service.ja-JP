@@ -4,10 +4,10 @@ description: コンテキストタグと説明的なビジネスタグを適用�
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: e253445d04889390ea9bf34df4ab14a9583d78aa
-workflow-type: ht
-source-wordcount: '2457'
-ht-degree: 100%
+source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
+workflow-type: tm+mt
+source-wordcount: '2696'
+ht-degree: 91%
 
 ---
 
@@ -87,7 +87,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM でタグ付けなしのアセット {#smart-tag-existing-assets}
 
-DAM 内の既存または古いアセットに対しては、スマートタグが自動的には付けられません。手動でアセットを[再処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ja#adjusting-load)して、スマートタグを生成する必要があります。プロセスが完了したら、フォルダー内の任意のアセットの[!UICONTROL プロパティ]ページに移動します。自動的に追加されたタグは、「[!UICONTROL 基本]」タブの[!UICONTROL スマートタグ]セクションに表示されます。適用されたこれらのスマートタグは、[信頼性スコア](#confidence-score)の降順で並べ替えられます。
+DAM 内の既存または古いアセットに対しては、スマートタグが自動的には付けられません。手動でアセットを[再処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load)して、スマートタグを生成する必要があります。プロセスが完了したら、フォルダー内の任意のアセットの[!UICONTROL プロパティ]ページに移動します。自動的に追加されたタグは、「[!UICONTROL 基本]」タブの[!UICONTROL スマートタグ]セクションに表示されます。適用されたこれらのスマートタグは、[信頼性スコア](#confidence-score)の降順で並べ替えられます。
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -226,9 +226,23 @@ AI で生成されたメタデータを有効にするには：
 
 * GenAI Rider 契約に署名する必要があります。詳しくは、アドビ担当者にお問い合わせください。
 
-  >[!IMPORTANT]
-  >
-  > アセットのタイトルを定義していない場合にのみ、AI で生成されたアセットのタイトルがアセットカードに表示されます。指定したアセットタイトルは上書きされません。
+### AI で生成されたタイトルの設定 {#configure-ai-generated-titles}
+
+AEMでは、アセットの参照ページのカード表示またはリスト表示でのアセットタイトルの表示を設定できます。 定義したアセットタイトル、AI を使用して生成されたタイトル、またはアセットに既存のタイトルがない場合にのみ AI 生成のタイトルを使用して、アセットのタイトルを表示するように選択できます。
+
+AI で生成されたタイトルを設定するには：
+
+1. **[!UICONTROL ツール/Assets/Assets設定/スマートタグ機能強化の設定]** に移動します。
+
+1. 次のいずれかのオプションを選択します。
+
+   * **DC タイトルを表示（デフォルト）**：アセットプロパティで使用可能な **[!UICONTROL タイトル]** フィールドにタイトルを指定し、カード表示またはリスト表示で表示します。 アセットタイトルが定義されていない場合、AEM Assetsにはファイル名が表示されます。
+
+   * **AI 生成のタイトルを表示**: AI 生成のタイトルを表示し、アセットプロパティで指定したタイトルを無視します。 AI で生成されたタイトルがアセットに使用できない場合、AEM Assetsは、プロパティで使用できるデフォルトのアセットタイトルを表示します。
+
+   * **DC タイトルが存在しない場合にのみ、AI で生成されたタイトルを表示する**:AEM Assetsでは、アセットのタイトルが定義されていない場合にのみ、AI で生成されたタイトルを表示します。
+
+     ![AI で生成されたタイトルの設定 ](assets/configure-title-ai-generated.png)
 
 ### AI で生成されたメタデータの使用 {#using-ai-generated-smart-tags}
 
@@ -249,7 +263,27 @@ AI で生成されたメタデータを有効にするには：
    * **[!UICONTROL 生成された説明]：**&#x200B;説明には、アセットの内容に関する簡潔でわかりやすい概要が記載されており、ユーザーや検索モジュールがその関連性をすばやく把握できるようにします。
    * **[!UICONTROL 生成されたキーワード]：**&#x200B;キーワードは、アセットの主なテーマを表すターゲット用語で、タグ付けやコンテンツのフィルタリングに役立ちます。
 
-1. [オプション]：関連するタグが欠落していると思われる場合は、追加のタグを追加するか、独自のタグを作成できます。これを行うには、**[!UICONTROL 生成されたキーワード]**&#x200B;フィールドにタグを入力し、「**[!UICONTROL 保存]**」をクリックします。
+1. [オプション]：関連するタグが欠落していると思われる場合は、追加のタグを追加するか、独自のタグを作成できます。これを行うには、「**[!UICONTROL 生成されたキーワード]**」フィールドにタグを入力し、「**[!UICONTROL 保存]**」をクリックします。
+
+### AI で生成されたメタデータを無効にする {#disable-ai-generated-metadata}
+
+AI で生成されたメタデータは、フォルダーレベルで無効にすることができます。 すべての子フォルダーは親フォルダーのプロパティを継承します。
+
+AI で生成されたメタデータをフォルダーレベルで無効にするには：
+
+1. **[!UICONTROL Adobe Experience Manager／Assets／ファイル]**&#x200B;に移動します。
+
+1. フォルダーを選択し、「**[!UICONTROL プロパティ]**」をクリックします。
+
+1. 「**[!UICONTROL アセット処理]**」タブで、「**[!UICONTROL 画像のスマートタグ拡張機能]** フォルダーに移動します。 ドロップダウンリストから次のいずれかの値を選択します。
+
+   * 継承 - フォルダーは親フォルダーから有効または無効のオプションを継承します。
+
+   * 有効にする – 選択したフォルダーの AI 生成メタデータを有効にします。
+
+   * 無効 – 選択したフォルダーの AI 生成メタデータを無効にします。
+
+     ![AI で生成されたメタデータを無効にする ](assets/disable-ai-generated-metadata.png)
 
 ## スマートタグに関する制限事項とベストプラクティス {#limitations-best-practices-smart-tags}
 
