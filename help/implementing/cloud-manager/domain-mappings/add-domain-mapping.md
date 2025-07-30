@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: c2229d040c8df7c9089d141d57ca59ff2f4ce8a7
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 93%
+source-wordcount: '542'
+ht-degree: 78%
 
 ---
 
@@ -53,3 +53,22 @@ ht-degree: 93%
    | その他 CDN プロバイダー | 使用可能なアドビが管理する CDN ではなく、独自の CDN プロバイダーを使用している場合は、このオプションを選択します。<br>**設定の詳細**&#x200B;の&#x200B;**ドメイン**&#x200B;ドロップダウンリストで、使用するドメイン名を選択します。<br>ドロップダウンリストに使用可能な検証済みドメインがありませんか？詳しくは、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。 |
 
 1. 「**保存**」をクリックします。
+
+   Adobeでは、ドメインマッピングをテストすることをお勧めします。
+
+## ドメインマッピングのテスト {#test-domain-mapping}
+
+パブリック DNS の伝達を待たずに、Adobeが管理する CDN に新しいドメインマッピングが有効であることを確認できます。
+
+DNS の解決を上書きし、CDN エッジを直接指す **curl** コマンドを実行します。
+
+```bash
+curl -svo /dev/null https://www.example.com \
+--resolve www.example.com:443:151.101.3.10
+```
+
+* **`www.example.com`** を自分のドメインに置き換えます。
+* このマッピング用に、**151.101.3.10** をCloud Managerに表示されるEdge IP アドレスに置き換えます。
+
+`--resolve` フラグは、ドメインの証明書とルーティングが正しくインストールされた後にのみ、指定された IP への要求を強制し、成功を返します。
+

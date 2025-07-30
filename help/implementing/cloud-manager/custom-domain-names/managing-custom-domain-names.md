@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 96%
+source-wordcount: '833'
+ht-degree: 95%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe Cloud Manager では、次の理由により、カスタムドメイン名
 
 1. 「**編集**」をクリックします。
 
-1. **ドメイン設定を編集** ダイアログボックスで以下を行います。
+1. **ドメイン設定を編集**&#x200B;ダイアログボックスで、次の操作を行います。
 
    * **階層**&#x200B;ドロップダウンリストで、使用する層（パブリッシュまたはプレビュー）を選択します。
    * **SSL 証明書**&#x200B;ドロップダウンリストで、使用する SSL 証明書を選択します。
@@ -106,13 +106,19 @@ Adobe Cloud Manager では、次の理由により、カスタムドメイン名
 
 ### 特定の環境からカスタムドメイン名の削除 {#delete-cdn-specific}
 
+>[!WARNING]
+>
+>Cloud Managerでドメインを削除する *前に*、お使いの DNS プロバイダーでドメインの DNS レコードを削除します。 放棄された（ダングリングされた） DNS エントリは、ハイジャックされる可能性があり、セキュリティリスクの原因となる可能性があります。
+
+**特定の環境からカスタムドメイン名を削除するには：**
+
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
 1. **概要**&#x200B;ページの&#x200B;**環境**&#x200B;画面に移動します。
 
 1. **環境**&#x200B;ページから、対象となる環境の詳細画面に移動します。
 
-1. ドメインマッピング テーブルで、削除するカスタムドメイン名の行を見つけます。
+1. ドメインマッピングのテーブルで、削除するカスタムドメイン名の行を見つけます。
 
 1. 行の右端にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
