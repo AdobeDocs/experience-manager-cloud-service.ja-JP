@@ -1,29 +1,48 @@
 ---
-title: Adobe Experience Managerの AI アシスタント（プライベートベータ版）
-description: Adobe Experience Managerの AI アシスタントを使用すると、回答の検索、トラブルシューティングおよび Sites、Assets、Dynamic Media、Cloud Manager、Formsの探索を行えます。
+title: Adobe Experience Managerの AI アシスタント（Beta）
+description: AI アシスタントを使用して回答を見つけ、Adobe Experience Managerで使用可能なソリューションのトラブルシューティングを行います。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: 0afd74120380c9ae3d02db9fb684189c2f19648f
+source-git-commit: 577e15165057fcf6537b4b0b738a1f45e5feb097
 workflow-type: tm+mt
-source-wordcount: '1394'
-ht-degree: 1%
+source-wordcount: '1308'
+ht-degree: 2%
 
 ---
 
-# Adobe Experience ManagerのAEM AI アシスタントについて {#aem-home}
+# Adobe Experience Managerの AI アシスタント {#aem-home}
 
-AEM（Adobe Experience Manager）の AI アシスタントは、Adobe Experience Manager関連のクエリに対する回答の検索を合理化するように設計された対話型インターフェイスを提供します。 Experience Leagueの製品情報へのアクセス、問題のトラブルシューティングおよび情報探索に役立ちます。 プライベートベータ版プログラム中、AEM AI アシスタントは、Sites、Assets、Dynamic Media、Cloud Manager、FormsなどのAdobe Experience Manager as a Cloud Serviceをサポートします。
+AEM（Adobe Experience Manager） AI アシスタントは、Adobe Experience Manager関連のクエリに対する回答の検索を合理化するように設計された対話型インターフェイスを提供します。 AEM製品に関する質問に即座に回答したり（*すべてのユーザーが利用できます*）、サポートチケットの自動作成を行ったり（*サポート管理者が利用できます*。
+
+プライベートベータ版では、AEM AI アシスタントは、次のソリューションを含むAEM as a Cloud Serviceをサポートします。
+
+* Sites
+* Assets
+* Dynamic Media
+* Edge Delivery Services
+* Cloud Manager
+* Forms
+
+AEMに直接埋め込まれ、AEM Experience Hub、Cloud Managerおよびオーサー UI からアクセスできます。
 
 >[!IMPORTANT]
->Adobeで AI アシスタント機能を有効にしてプライベートベータプログラムをテストし、利用できるようにするため、利用許諾契約書を確認して送信する必要があります。
+>Adobeで AI アシスタント機能を有効にしてプライベートベータプログラムをテストし、利用できるようにするため、利用許諾契約書を確認して送信してください。
 >
 >ご不明な点は、Adobe IDに関連付けられたメールアドレスから [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) までお問い合わせください。
 
-## プライバシー、セキュリティ、ガバナンス
+## 範囲 {#scope}
+
+AEM AI アシスタントの現在の対象範囲は、Adobe Experience Manager as a Cloud Serviceの製品ナレッジの問題への対処に重点を置いています。 これには、Sites、Assets、Forms、Edge Delivery Services、Cloud Managerなど、主要な領域に対する包括的なサポートが含まれます。
+
+* **サーフェス**:AEM Experience Hub、オーサー UI、Cloud Managerで使用可能です。
+* **機能**：トラブルシューティングとガイダンスのための製品知識とファーストストップ、サポートチケットの自動作成とルックアップ。
+* **価値**：時間を節約し、学習と価値を生み出すまでの時間を短縮し、サポートチケットを手動で作成する必要性を減らし、サポートチケットの作成を効率化します。
+
+## プライバシー、セキュリティ、ガバナンス{#privacy-security-governance}
 
 AEM AI アシスタントは、プライバシー、セキュリティ、ガバナンスに重点を置いて設計されています。
 
@@ -37,30 +56,35 @@ AEM AI アシスタントは、プライバシー、セキュリティ、ガバ�
 <!-- See also [Security at Adobe whitepaper](). NEED ACTIVE LINK FROM ADRIAN NICOLAE TANASE. CURRENTLY 404. -->
 
 
-## AEM AI アシスタントの製品知識を学ぶ {#ai-prod-insights}
+## AEM AI アシスタントの製品知識と自動サポートチケット作成機能について説明します {#ai-prod-insights}
 
 製品知識には、Adobe Experience League ドキュメントから派生した概念とトピックが含まれます。 これらの質問は、次のサブグループに分類できます。
 
-| 製品に関する知識 | 例 |
-| --- | --- |
+
+| 製品に関する知識 | すべてのユーザーが利用できる <br> 例 |
+| :--- | :--- |
 | 先を見越した学習 | <ul><li>ユニバーサルエディターとは</li><li>Cloud Managerでプログラムを作成するにはどうすればよいですか？</li></ul> |
 | 検出を開く | <ul><li>ユニバーサルエディターの使用方法</li><li>環境間でコンテンツをコピーする方法はありますか？</li></ul> |
 | トラブルシューティング | <ul><li>ユニバーサルエディターにアクセスできないのはなぜですか？</li><li>パイプラインが失敗する理由</li></ul> |
+| **サポートチケットの作成** | **管理者のみをサポートできます&#x200B;**<br>**例** |
+| AI アシスタントのチャット履歴とコンテキストをキャプチャする自動サポートチケット作成 | <ul><li>サポートチケットを作成する</li></ul> |
+| サポートチケットのステータスの取得 | <ul><li>オープンしたサポートチケットを全て見せてください。</li><li>チケット「E---------- –」のステータスを表示</li></ul> |
 
-AEM AI アシスタントの現在の対象範囲は、Adobe Experience Manager as a Cloud Serviceの製品ナレッジの問題への対処に重点を置いています。 これには、Sites、Assets、Forms、Cloud Managerなど、主要な領域に対する包括的なサポートが含まれます。
+{style="table-layout:auto"}
+
 
 ## 効果的な質問の作成方法 {#ai-craft-questions}
 
-AEM AI アシスタントから最も正確な回答を受け取るには、質問に明確なコンテキストでフレーズを使用することが重要です。 次のヒントを使用して、クエリが明確で適切に構造化されていることを確認します。
+AEM AI アシスタントから最も正確な回答を受け取るには、質問に明確でコンテキストのあるフレーズを使用することが重要です。 次のヒントを使用して、クエリが明確で適切に構造化されていることを確認します。
 
 * タスクまたは質問を簡潔に明確に述べます。
 * あいまいな表現や複雑すぎる構文を避けて、理解を深めます。
 * このアプローチは、AEM AI アシスタントがより正確で関連性の高い回答を提供するのに役立つので、タスクや質問に関する関連するコンテキストを含めます。
-例えば、プロンプトでは、使用しているAEM ソリューション（Sites、Assets、Dynamic Media、Cloud Manager、Forms）に名前を付けるのに役立ちます。
+例えば、プロンプトでは、使用しているAEM ソリューション（Sites、Assets、Dynamic Media、Edge Delivery Services、Cloud Manager、Forms）に名前を付けるのに役立ちます。
 
 ### サポートされていない質問の例 {#ai-unsupported-questions}
 
-| 領域グラフ | 例 |
+| 領域 | 例 |
 | --- | --- |
 | 運用インサイト | <ul><li>テナントに存在する開発環境の数</li><li>最後の実稼動パイプラインを開始したのは誰ですか？</li></ul> |
 | トラブルシューティング | <ul><li>実稼動パイプラインが失敗する理由</li></ul> |
@@ -69,21 +93,22 @@ AEM AI アシスタントから最も正確な回答を受け取るには、質�
 
 ## AEM AI アシスタントの使用 {#ai-use}
 
-### Admin Consoleを使用してAEM AI アシスタントのアクセスを有効にする
+<!-- UNHIDE AFTER BETA or at GA
+### Enable AEM AI Assistant access through Admin Console 
 
-AEM AI アシスタントを使用するには、Admin Console レベルでオプトインする必要があります。 製品管理者がユーザーグループを作成（または選択）し、新しい「AI アシスタント」権限を付与します。 そのグループに追加されたユーザーは誰でも、AEM全体でアシスタントにすぐにアクセスできます。 企業全体での可用性が目標の場合、管理者はそのグループにすべてのユーザーを割り当てるだけです。
+To use the AEM AI Assistant, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
 
-![Admin ConsoleのAEM AI アシスタント ](/help/implementing/cloud-manager/assets/ai-assistant-admin-console.png)
+![AEM AI Assistant in the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console.png)
 
-従業員の観点からは、組織内のAdobe Experience Managerの製品管理者を特定して、AI 対応のユーザーグループに追加するようリクエストするプロセスは簡単です。 そのグループに表示されると、次回ログインしたときにアシスタント アイコンが自動的に表示されます。
+From an employee's perspective, the process is straightforward: identify the product administrator for Adobe Experience Manager in your organization and request to be added to the AI-enabled user group. Once you appear in that group, the Assistant icon shows up automatically the next time you sign in.
 
-管理者は、通常のCloud Manager ガバナンスを念頭に置く必要があります。 プロファイルの作成、ユーザーグループの管理、権限の編集を行うには、Admin Consoleの製品管理者権限を保持している必要があります。 ユーザーがアシスタントの組み込みの **サポートチケットを作成** 機能も必要な場合は、同じ個人またはグループに標準の **サポート管理者** ロール（標準のAdmin Console ロール）を追加します。
+Administrators should keep normal Cloud Manager governance in mind. Hold product administrator rights in the Admin Console to create profiles, manage user groups, or edit permissions. If users also need the Assistant's built-in **Create Support Ticket** feature, add the standard **Support Admin** role (standard Admin Console role) to the same individuals or group.
 
-![Admin ConsoleのAEM AI アシスタントでのテクニカルサポートチケットの作成 ](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
+![Technical support ticket creation in the AEM AI Assistant of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-AEM as a Cloud Serviceでのユーザーとグループの設定に関するガイド付きのチュートリアルについては、[AEM as a Cloud Serviceへのアクセスの設定 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/accessing/overview) を参照してください。
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
-[ カスタム権限 ](/help/implementing/cloud-manager/custom-permissions.md) も参照してください。
+See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
 
 ### 会話の開始またはリセット
