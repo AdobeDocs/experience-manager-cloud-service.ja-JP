@@ -5,9 +5,9 @@ feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
 source-git-commit: d6c5c70e8b6565a20866d392900aef219d3fd09d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3440'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Ma
 
 次のビデオでは、AEM as a Cloud Service にコードをデプロイする方法の概要を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/34668?quality=9&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
@@ -56,8 +56,8 @@ AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Ma
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-お客様は、Cloud Manager を使用してカスタムコードをクラウド環境にデプロイします。Cloud Manager は、ローカルでアセンブルされたコンテンツパッケージを Sling Feature Model に準拠したアーティファクトに変換します（このモデルは、クラウド環境で動作する際の AEM as a Cloud Service 上のアプリケーションを記述するものです）。その結果、クラウド環境の[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)でパッケージを調べると、名前に「cp2fm」が含まれており、変換後のパッケージではすべてのメタデータが削除されています。これらを操作することはできません。つまり、ダウンロードしたり、複製したり、開いたりすることはできません。コンバーターに関するドキュメントについて詳しくは、[&#128279;](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)
-GitHub の sling-org-apache-sling-feature-cpconverter を参照してください。
+お客様は、Cloud Manager を使用してカスタムコードをクラウド環境にデプロイします。Cloud Manager は、ローカルでアセンブルされたコンテンツパッケージを Sling Feature Model に準拠したアーティファクトに変換します（このモデルは、クラウド環境で動作する際の AEM as a Cloud Service 上のアプリケーションを記述するものです）。その結果、クラウド環境の[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)でパッケージを調べると、名前に「cp2fm」が含まれており、変換後のパッケージではすべてのメタデータが削除されています。これらを操作することはできません。つまり、ダウンロードしたり、複製したり、開いたりすることはできません。コンバーターに関するドキュメントについて詳しくは、[
+GitHub の sling-org-apache-sling-feature-cpconverter](https://github.com/apache/sling-org-apache-sling-feature-cpconverter) を参照してください。
 
 AEM as a Cloud Service 上のアプリケーション用に作成されたコンテンツパッケージでは、不変コンテンツと可変コンテンツを明確に分離する必要があります。Cloud Manager は可変コンテンツのみインストールし、次のようなメッセージも出力します。
 
@@ -279,7 +279,7 @@ AEM のアップデートと同様に、お客様向けリリースも、適切�
 
 ### インデックスの変更 {#index-changes}
 
-インデックスに変更を加える場合は、古いバージョンが終了するまでインデックスを使用し続ける一方で、新しいバージョンでは独自に変更されたインデックスのセットを使用することが重要です。 開発者は、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)で説明されているインデックス管理手法に従う必要があります。
+インデックスに変更を加えた場合、古いバージョンは終了するまで現在のインデックスを引き続き使用するのに対して、新しいバージョンは自分自身の変更済みのインデックスセットを使用します。開発者は、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)で説明されているインデックス管理手法に従う必要があります。
 
 ### ロールバックに備えた保守的なコーディング {#conservative-coding-for-rollbacks}
 

@@ -5,9 +5,9 @@ exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '554'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -52,6 +52,6 @@ ht-degree: 94%
 * `data-aue-type` が設定されているタグに直接指定する必要はありません。
 * 設定されていない場合は、一番近い親の `data-aue-resource` 属性が使用されます。
 
-`data-aue-prop` は、オプションであるコンテナを除き、コンテキストで編集する場合は常に必須です（コンテナがコンテンツフラグメントであり、prop が複数参照フィールドを指している場合）。
+コンテキスト内で編集を行う場合には、`data-aue-prop` は必須です。ただし、オプションであるコンテナを除きます（コンテナがコンテンツフラグメントで、prop が複数参照フィールドを指すように設定されている場合）。
 
 * `data-aue-prop` は、`data-aue-resource` のプライマリキーに対して更新する属性です。

@@ -5,9 +5,9 @@ feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
 source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1271'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 94%
 
 * ユニバーサルエディターインターフェイスの「**データソース**」アイコンや、右側のプロパティパネルの&#x200B;**連結参照**&#x200B;プロパティが表示されない場合は、**Extension Manager** で&#x200B;**データソース**&#x200B;拡張機能を有効にします。
 
-  ![ フォーム統合を有効にできるデータソース拡張機能など、使用可能な拡張機能を示すユニバーサルエディターExtension Manager インターフェイスのスクリーンショット ](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+  ![フォーム統合に有効にできるデータソース拡張機能など、使用できる拡張機能を示すユニバーサルエディター Extension Manager インターフェイスのスクリーンショット](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
-  ユニバーサルエディターで拡張機能を有効または無効にする方法については、[&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager 機能のハイライトの記事を参照してください。
+  ユニバーサルエディターで拡張機能を有効または無効にする方法については、](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager 機能のハイライト[の記事を参照してください。
 
 * ユニバーサルエディターのフォームの事前入力サービスは、現在サポートされていません。
 
@@ -79,7 +79,7 @@ ht-degree: 94%
 
    「**[!UICONTROL 作成]**」をクリックするとすぐに、フォームがオーサリング用のユニバーサルエディターで開きます。
 
-   ![ 事前入力されたフォームフィールドを含むスキーマベースのフォームと、使用可能なデータソース要素を表示するコンテンツブラウザーを示すユニバーサルエディターのスクリーンショット ](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
+   ![事前入力されたフォームフィールドを持つスキーマベースのフォームと、使用可能なデータソース要素を表示するコンテンツブラウザーを示すユニバーサルエディターのスクリーンショット](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
 
    フォームは、関連付けられたデータソースのデータ要素を使用して作成され、フォームフィールドには、事前設定済みのデータバインディングが含まれています。
 
@@ -131,7 +131,7 @@ ht-degree: 94%
 
    これらの要素をドラッグ＆ドロップして、アダプティブフォームを作成することもできます。「**[!UICONTROL 追加]**」をクリックすると、「**[!UICONTROL データソース]**」タブで選択した要素がフォームに追加され、追加した要素の前にチェックマークが表示されます。
 
-   ![ 「データSource」タブからフォーム構造にデータ要素をドラッグ&amp;ドロップして作成された、スキーマ以外のフォームを含むユニバーサルエディターを示すスクリーンショット ](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
+   ![「データソース」タブからフォーム構造にデータ要素をドラッグ＆ドロップしてスキーマ以外のフォームを作成しているユニバーサルエディターを示すスクリーンショット](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
 データ連結は、**連結参照**&#x200B;プロパティから選択してフォームフィールドに追加できます。例えば、フォームに既に存在する **ID** テキストボックスにデータ連結参照を追加してみましょう。データソースツリーからフォームフィールドのデータ連結を選択するには、次の手順を実行します。
 

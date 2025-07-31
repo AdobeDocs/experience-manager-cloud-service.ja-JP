@@ -6,7 +6,7 @@ exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
 source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '966'
 ht-degree: 100%
 
@@ -79,7 +79,7 @@ Assets as a Cloud Service で利用可能なペルソナベースのエクスペ
 
 ### 共同作業を加速する Adobe Photoshop Express の統合 {#accelerate-collaboration}
 
-新しいエクスペリエンスは、組み込みの Adobe Photoshop 機能によるリアルタイム編集、バージョン管理、注釈ツールなど、堅牢な共同作業機能セットを提供します。これにより、デザイン、クリエイティブ、ブランディング、マーケティングの各チーム間でのシームレスな共同作業が可能になり、ボトルネックを克服してマーケティング運用プロセスを迅速化できるようになります。マーケターは、プロジェクトの配信を高速化し、全体的な生産性を向上させるための強力なツールを自由に使用できるようになりました。
+新しいエクスペリエンスは、ビルトインの Adobe Photoshop 機能によるリアルタイム編集、バージョン管理、注釈ツールなど、堅牢な共同作業機能セットを提供します。これにより、デザイン、クリエイティブ、ブランディング、マーケティングの各チーム間でのシームレスな共同作業が可能になり、ボトルネックを克服してマーケティング運用プロセスを迅速化できるようになります。マーケターは、プロジェクトの配信を高速化し、全体的な生産性を向上させるための強力なツールを自由に使用できるようになりました。
 
 アセットビューと Adobe Photoshop Express の統合の機能については、このビデオをご覧ください。
 

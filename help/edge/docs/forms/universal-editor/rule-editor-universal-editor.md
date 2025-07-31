@@ -5,16 +5,16 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2216'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # WYSIWYG オーサリングのルールエディターの概要
 
-<span class="preview"> これは、アドビの <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features"> プレリリースチャネル </a> で利用できるプレリリース機能です。</span>
+<span class="preview">これは、<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features">プレリリースチャネル</a>を通じて使用できるプレリリース機能です。</span>
 
 
 ルールを作成できるルールエディターを使用して、動的なフォームの動作を追加できます。これらのルールにより、条件付きフィールドの表示が有効になり、ユーザー入力に基づいて計算が自動化され、全体的なユーザーエクスペリエンスが向上します。ルールエディターは、フォーム入力プロセスを効率化することで、正確性と効率性の両方を確保するのに役立ちます。
@@ -77,7 +77,7 @@ ht-degree: 97%
     </tr>
     <tr>
       <td>2. フォームオブジェクトと関数</td>
-      <td>「<b>フォームオブジェクト</b>」タブには、フォームに含まれているコンポーネントがすべて階層表示されます。「<b>関数</b>」タブには、ルールエディターの一連の組み込み関数が含まれます。</td>
+      <td>「<b>フォームオブジェクト</b>」タブには、フォームに含まれているコンポーネントがすべて階層表示されます。「<b>関数</b>」タブには、ルールエディターの一連のビルトインの関数が含まれます。</td>
     </tr>
     <tr>
       <td>3. フォームオブジェクトと関数の切り替え</td>
@@ -188,7 +188,7 @@ ht-degree: 97%
 
 ビジュアルルールエディターでルールを記述する方法を理解するには、税金計算フォームの簡単な例を考えます。
 
-![ フォームフィールド表示の「When-Then」ロジックを含む条件付きルールの作成を示すルールエディターインターフェイスのスクリーンショット ](/help/edge/docs/forms/assets/rule-editor-1.png)
+![フォームフィールドの表示に関する When-Then ロジックを使用した条件付きルールの作成を示すルールエディタインターフェイスのスクリーンショット](/help/edge/docs/forms/assets/rule-editor-1.png)
 
 上記のフォームでは、ユーザーは総給与を入力します。この入力に基づいて条件付きフィールドが表示され、支払税が計算されます。
 
@@ -223,7 +223,7 @@ ht-degree: 97%
    * 送信（「送信」ボタン）
 1. `Properties` を開いて、`Additional Deduction` フォームフィールドを非表示にします。
 
-   ![ 総給与、婚姻ステータス、扶養子の入力フィールドを含む税金計算フォームのスクリーンショット。ルールが適用される前のフォーム構造を示しています ](/help/edge/docs/forms/assets/rule-editor2.png)
+   ![ルールが適用される前のフォーム構造を示す、総給与、婚姻ステータス、扶養子の入力フィールドを備えた税金計算フォームのスクリーンショット](/help/edge/docs/forms/assets/rule-editor2.png)
 
 ### &#x200B;2. フォームフィールドの条件付きルールを追加
 
@@ -278,7 +278,6 @@ ht-degree: 97%
    * 「**[!UICONTROL 演算子を選択]**」フィールドから「**[!UICONTROL 減算]**」を選択します。
 
    * 他の「**[!UICONTROL オブジェクトをドロップまたは次から選択]**」フィールドの「**[!UICONTROL 追加控除]**」フィールドで、「フォームオブジェクト」タブから選択またはドラッグ＆ドロップします。
-
      ![ルールエディターの例 15](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. 「**[!UICONTROL 完了]**」を選択し、ルールを保存します。
@@ -296,7 +295,6 @@ ht-degree: 97%
    * 「**[!UICONTROL 演算子を選択]**」フィールドから「**[!UICONTROL 乗算]**」を選択します。
 
    * 「**[!UICONTROL オプションを選択**」フィールドから「**数値]**」を選択し、「**[!UICONTROL 数値を入力]**」フィールドに `10` のように値を入力します。
-
      ![ルールエディターの例 18](/help/edge/docs/forms/assets/rule-editor21.png)
 1. 次に、式フィールドの周りのハイライト表示された領域を選択し、「**[!UICONTROL 拡張式]**」を選択します。
    ![ルールエディターの例 19](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -362,7 +360,6 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
-
 ![カスタム関数の追加](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### ルールエディターでのカスタム関数の使用

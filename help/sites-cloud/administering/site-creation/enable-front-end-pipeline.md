@@ -1,14 +1,14 @@
 ---
 title: フロントエンドパイプラインを有効にする
-description: サイトテーマを使用してサイトをより迅速にカスタマイズするために、パブリッシュ配信を使用した既存のAEM オーサリングサイトのフロントエンドパイプラインを有効にする方法を説明します。
+description: 既存の従来の AEM オーサリングサイトに対してフロントエンドパイプラインを有効にし、パブリッシュ配信でサイトテーマを使用して、サイトをより迅速にカスタマイズする方法について説明します。
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
 source-git-commit: 6ee55bed8ca09470291e0488321732beed7bab42
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '930'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 90%
 
 {{traditional-aem}}
 
-サイトテーマを使用してサイトをより迅速にカスタマイズするために、パブリッシュ配信を使用した既存のAEM オーサリングサイトのフロントエンドパイプラインを有効にする方法を説明します。
+既存の従来の AEM オーサリングサイトに対してフロントエンドパイプラインを有効にし、パブリッシュ配信でサイトテーマを使用して、サイトをより迅速にカスタマイズする方法について説明します。
 
 ## 概要 {#overview}
 
-フロントエンドパイプラインは、[ パブリッシュ配信 ](/help/sites-cloud/authoring/author-publish.md) を使用した従来のAEM オーサリングプロジェクトのメカニズムであり、[ サイトテーマ ](site-themes.md) および [ サイトテンプレート ](site-templates.md) に基づいて web サイトのフロントエンドコードのみを迅速にデプロイできます。
+フロントエンドパイプラインは、[パブリッシュ配信](/help/sites-cloud/authoring/author-publish.md)を使用した従来のAEM オーサリングプロジェクトのメカニズムであり、[サイトテーマ](site-themes.md)および [サイトテンプレート](site-templates.md)に基づいて web サイトのフロントエンドコードのみを迅速にデプロイできます。
 
 このパイプラインはフロントエンドコードのみを処理するので、フルスタックデプロイメントよりデプロイメントプロセスが高速になります。これにより、フロントエンド開発者は AEM の知識がなくても、サイトを簡単にカスタマイズできます。
 

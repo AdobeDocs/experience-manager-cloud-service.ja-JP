@@ -5,9 +5,9 @@ exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1568'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ ht-degree: 97%
 | `readOnly` | `boolean` | フィールド読み取り専用です | いいえ |
 | `hidden` | `boolean` | デフォルトで非表示になっているフィールドです | いいえ |
 | `condition` | `RulesLogic` | [条件](/help/implementing/universal-editor/customizing.md#conditionally-hide)に基づいてフィールドの表示／非表示を切り替えるルール | いいえ |
-| `multi` | `boolean` | フィールドが複数フィールドである <br/> コンテナのネストは、プロパティ パネルの複数フィールドに対して許可されていません | いいえ |
+| `multi` | `boolean` | このフィールドはマルチフィールドですか？<br/>プロパティパネルのマルチフィールドでは、コンテナーのネストは許可されていない点に注意してください。 | いいえ |
 | `validation` | `ValidationType` | フィールドの検証ルール | いいえ |
 | `raw` | `unknown` | コンポーネントで使用できる生データ | いいえ |
 
@@ -289,7 +289,7 @@ AEM コンテンツコンポーネントタイプでは、AEM コンテンツピ
 
 #### コンテナ {#container}
 
-コンテナコンポーネントタイプを使用すると、複数のサポートなどコンポーネントをグループ化できます。追加の設定を提供します。 プロパティパネルの複数フィールドに対しては、コンテナのネストは許可されていません
+コンテナコンポーネントタイプを使用すると、複数のサポートなどコンポーネントをグループ化できます。追加の設定を提供します。プロパティパネルの複数フィールドでは、コンテナのネストは許可されていません
 
 | 設定 | 値タイプ | 説明 | 必須 |
 |---|---|---|---|

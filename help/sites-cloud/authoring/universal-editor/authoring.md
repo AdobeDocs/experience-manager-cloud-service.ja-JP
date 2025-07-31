@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2252'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -130,7 +130,7 @@ ht-degree: 98%
 
    ![追加アイコンの選択](assets/add-icon.png)
 
-1. コンテナに複数のコンポーネントを使用できる場合は、挿入するコンポーネントをドロップダウンから選択します。 許可されるコンポーネントが 1 つだけの場合は、自動的に挿入されます。
+1. コンテナに複数のコンポーネントを使用できる場合は、挿入するコンポーネントをドロップダウンから選択します。許可されるコンポーネントが 1 つだけの場合は、自動的に挿入されます。
 
 コンポーネントがコンテナに挿入され、エディターで編集できます。
 

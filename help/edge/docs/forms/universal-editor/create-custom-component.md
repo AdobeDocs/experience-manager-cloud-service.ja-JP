@@ -5,15 +5,15 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '1802'
+ht-degree: 100%
 
 ---
 
 # WYSIWYG オーサリングでのカスタムコンポーネントの作成
 
-<span class="preview"> これは、アドビの <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features"> プレリリースチャネル </a> で利用できるプレリリース機能です。</span>
+<span class="preview">これは、<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features">プレリリースチャネル</a>を通じて使用できるプレリリース機能です。</span>
 
 
 Edge Delivery Services Forms には、カスタマイズ機能が用意されているので、フロントエンド開発者は調整されたフォームコンポーネントを作成できます。これらのカスタムコンポーネントは WYSIWYG オーサリングエクスペリエンスにシームレスに統合されるので、フォーム作成者はフォームエディター内で簡単に追加、設定、管理できます。カスタムコンポーネントを使用すると、作成者はスムーズで直感的なオーサリングプロセスを確保しながら機能を強化できます。
@@ -39,7 +39,7 @@ Edge Delivery Services Forms には、カスタマイズ機能が用意されて
 
 **範囲**&#x200B;と呼ばれる新しいカスタムコンポーネントを作成する例を見てみましょう。範囲コンポーネントは直線として表示され、最小値、最大値、選択した値などの値が表示されます。
 
-![ 最小値と最大値を持つスライダー、および選択された値インジケーターを表示する範囲コンポーネントの視覚的表現 ](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+![最小値と最大値を持つスライダーと選択した値インジケーターを示す範囲コンポーネントの視覚的表現](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
 
 この記事を最後まで読むと、カスタムコンポーネントをゼロから作成する方法を理解できるようになります。
 
@@ -324,11 +324,11 @@ const OOTBComponentDecorators = ['file-input',
 
 上記の手順を完了すると、カスタムコンポーネントがユニバーサルエディター内のフォームのコンポーネントリストに表示されます。その後、フォームセクションにドラッグ＆ドロップできます。
 
-![ フォームへのドラッグ&amp;ドロップに使用できるカスタム範囲コンポーネントを示す、ユニバーサルエディターコンポーネントパレットのスクリーンショット ](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+![ フォームへのドラッグ＆ドロップに使用できるカスタム範囲コンポーネントを示すユニバーサルエディターコンポーネントパレットのスクリーンショット](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
 
 以下のスクリーンショットは、コンポーネントモデルに追加された `range` コンポーネントのプロパティを示しています。このプロパティは、フォーム作成者が設定できるプロパティを指定します。
 
-![ 基本プロパティ、検証ルール、スタイルオプションなど、範囲コンポーネントの設定可能な設定を表示するユニバーサルエディタープロパティパネルのスクリーンショット ](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
+![ 基本プロパティ、検証ルール、スタイルオプションなど、範囲コンポーネントの設定可能な設定を表示するユニバーサルエディタープロパティパネルのスクリーンショット](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 これで、スタイル設定と機能を追加して、カスタムコンポーネントの実行時の動作を定義できます。
 
@@ -392,7 +392,6 @@ const OOTBComponentDecorators = ['file-input',
    float: right;
    }
    ```
-
    このコードは、カスタムコンポーネントのスタイル設定と外観を定義するのに役立ちます。
 
 1. 機能を追加するには、`/blocks/form/components/range/range.js` ファイルに移動して次のコード行を追加します。
@@ -457,7 +456,7 @@ const OOTBComponentDecorators = ['file-input',
    カスタムのスタイル設定と機能を組み込むと、範囲コンポーネントの外観と動作が強化されます。更新されたデザインは適用されたスタイルを反映し、追加された機能は、より動的でインタラクティブなユーザーエクスペリエンスを実現します。
 以下のスクリーンショットは、更新された範囲コンポーネントを示しています。
 
-![ 値バブル表示とユニバーサルエディターのインタラクティブ機能を備えたスタイル設定されたスライダーを表示する、アクションの最後の範囲コンポーネント ](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
+![ユニバーサルエディターでの値のバブル表示とインタラクティブ機能を備えた、スタイル設定されたスライダーを示すアクションの最終的な範囲コンポーネント](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
 
 ## よくある質問
 

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1401'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
 
    次のスクリーンショットは、ユニバーサルエディターで作成した `contact fragment` を示しています。
 
-   ![ ユニバーサルエディターで入力済みの連絡先詳細フォームフラグメントのスクリーンショット。複数のフォームで再利用できる名前、電話、メール、住所のフィールドを表示します ](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+   ![複数のフォームをまたいで再利用できる名前、電話番号、メール、住所のフィールドを示す、ユニバーサルエディターで入力済みの連絡先詳細フォームフラグメントのスクリーンショット](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
    フラグメントを作成したら、[作成したフラグメントを Edge Delivery Services Forms に追加](#adding-form-fragments-in-forms)できます。
 
@@ -123,7 +123,7 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
 
    ![セクションに移動](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
 
-1. 「**[!UICONTROL 追加]**」アイコンをクリックし、**アダプティブフォームコンポーネント**&#x200B;リストから&#x200B;**[!UICONTROL フォームフラグメント]**&#x200B;を追加します。
+1. 「**[!UICONTROL 追加]**」アイコンをクリックし、**アダプティブフォームコンポーネント**&#x200B;リストから&#x200B;**[!UICONTROL フォームフラグメント]**を追加します。
    ![フォームフラグメントを追加](/help/edge/docs/forms/universal-editor/assets/add-fragment.png)
 
    **[!UICONTROL フォームフラグメント]**&#x200B;コンポーネントを選択すると、フラグメントがフォームに追加されます。追加したフラグメントのプロパティは、この&#x200B;**プロパティ**&#x200B;を開いて設定できます。例えば、フラグメントのタイトルをこの&#x200B;**プロパティ**&#x200B;から非表示にします。
@@ -140,7 +140,7 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
 
    フォームフラグメントは、フォームへの参照により追加され、スタンドアロンのフォームフラグメントと同期を維持します。
 
-   ![ 連絡先詳細フラグメントがユニバーサルエディター内の従業員フォームに正常に統合されたことを示すスクリーンショット。フラグメントが再利用時に構造を維持する方法を示している ](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+   ![ユニバーサルエディター内の従業員フォームに連絡先詳細フラグメントが正常に統合され、フラグメントの構造が再利用時にどのように維持されるかを示すスクリーンショット](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
    **プレビュー**&#x200B;モードでフォームをプレビューして、フォームがどのように表示されるかを確認できます。
 

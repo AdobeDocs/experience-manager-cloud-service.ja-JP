@@ -7,7 +7,7 @@ role: User, Admin, Developer
 hide: true
 hidefromtoc: true
 source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1504'
 ht-degree: 100%
 
@@ -142,7 +142,7 @@ AEM Assets ビュー環境では、レポートダッシュボードを通じて
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### 前提条件 {#prereqs-dynamic-media-delivery-reports}

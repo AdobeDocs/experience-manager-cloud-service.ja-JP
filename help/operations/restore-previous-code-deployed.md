@@ -1,49 +1,49 @@
 ---
-title: デプロイされた以前のSource コードを復元します
-description: パイプラインの実行を必要とせずに、環境を最後に成功したビルド&ndash；に復元する方法を説明します。
+title: 以前にデプロイされたソースコードを復元
+description: パイプラインの実行を必要とせずに、環境を最後の正常なビルドに復元する方法を説明します。
 feature: Operations
 role: Admin
 badge: label="アルファ" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
 source-git-commit: f3e31d1f17283086cd6fe9e73d67feac938d6567
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '504'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
-# AEM as a Cloud Serviceにデプロイされた以前のソースコードを復元します {#restore-previous-code-deployed}
+# AEM as a Cloud Service で以前にデプロイされたソースコードを復元する {#restore-previous-code-deployed}
 
 >[!NOTE]
 >
->この記事で説明する機能は、アルファプログラムでのみ使用できます。 アルファ版にサインアップするには、[ パイプラインデプロイメントのワンクリックロールバック ](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback) を参照してください。
+>この記事で説明する機能は、Alpha プログラムを通じてのみ使用できです。Alpha に新規登録するには、[パイプラインデプロイメントのワンクリックロールバック](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)を参照してください。
 
-**デプロイされた以前のコードを復元** を使用して、環境を最後に成功したビルドに即座にロールバックできます。パイプラインを実行する必要はありません。
+**デプロイした以前のコードを復元**&#x200B;を使用すると、パイプラインの実行を必要とせずに、環境を最後に成功したビルドに即座にロールバックできます。
 
-選択した環境の ![ 詳細アイコンまたは省略記号メニューアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) メニューを開き、**復元**/**以前にデプロイされたコード** を選択するだけで、最新にデプロイされたソースコードを秒単位でロールバックできます。
+選択した環境の ![詳細アイコンまたは省略記号メニューアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) メニューを開き、**復元**／**デプロイした以前のコード**&#x200B;を選択するだけで、秒単位で最後にデプロイしたソースコードをロールバックできます。
 
 >[!TIP]
 >
->環境の詳細ビューの「**一般**」タブで、使用中のアクティブなソースコードバージョンを確認できます。 [ 環境の詳細を表示 ](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) を参照してください。
+>使用中のアクティブなソースコードのバージョンは、環境の詳細ビューの「**一般**」タブで確認できます。[環境の詳細の表示](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)を参照してください。
 >
->![ 使用中のSource コード バージョン ](/help/operations/assets/environments-view-details-sourcecodeversion.png)
+>![使用中のソースコードバージョン](/help/operations/assets/environments-view-details-sourcecodeversion.png)
 
-**以前にデプロイしたコードを復元** 機能は、以下の **すべて** 条件が true の場合にのみ使用できます。
+**デプロイした以前のコードを復元**&#x200B;機能は、以下の&#x200B;**すべて**&#x200B;の条件が true の場合にのみ使用可能です。
 
-* **環境の復元の作成** 権限を保持します。 権限の管理について詳しくは、[ カスタム権限 ](/help/implementing/cloud-manager/custom-permissions.md) を参照してください。
-* 組織がアルファプログラムに登録され、機能フラグがオンになっている。
-* プログラムはAEM as a Cloud Serviceで実行されます。
-* 選択した環境は `Development` 環境です（Alphaの一時的な制限）。
-* その環境の最後のパイプラインは正常に終了し、**30 日未満** 前に実行されました。
-* 環境のステータスは *実行中* で、進行中のパイプラインはありません。
+* **環境の復元の作成**&#x200B;権限を保持している。権限の管理について詳しくは、[カスタム権限](/help/implementing/cloud-manager/custom-permissions.md)を参照してください。
+* 組織が Alpha プログラムに登録され、機能フラグがオンになっている。
+* プログラムが AEM as a Cloud Service で実行されている。
+* 選択した環境が `Development` 環境（一時的な Alpha 制限）である。
+* この環境の最後のパイプラインが正常に完了し、実行から **30 日未満**&#x200B;である。
+* 環境のステータスが&#x200B;*実行中*&#x200B;で、進行中のパイプラインがない。
 
-いずれかのチェックが失敗した場合、Cloud Managerでは次のダイアログボックスが開き、1 つ以上の未適合の条件が一覧表示されます。このダイアログボックスは無効になり **確認**、復元できません。
+いずれかの確認に失敗した場合、Cloud Manager では、次のダイアログボックスが開き、満たされていない条件が 1 つ以上リストされ、**確認**&#x200B;が無効になり、復元が防止されます。
 
-![ 以前にデプロイしたコードを復元できませんでしたダイアログボックス ](/help/operations/assets/restore-previous-code-deployment-not-allowed.png)。
+![デプロイした以前のコードを復元エラーダイアログボックス](/help/operations/assets/restore-previous-code-deployment-not-allowed.png)。
 
-失われた、破損した、または誤って削除されたデータを元の状態に復元するだけの場合は、[AEM as a Cloud Serviceのコンテンツを復元 ](/help/operations/restore.md) を使用できます。 この復元プロセスが影響するのはコンテンツのみで、ソースコードとAEMのバージョンは変更されません。
+紛失したデータ、破損したデータ、誤って削除されたデータを元の状態に復元する場合は、[AEM as a Cloud Service でのコンテンツ復元](/help/operations/restore.md)を使用できます。この復元プロセスが影響するのはコンテンツのみで、AEM のソースコードとバージョンは変更されません。
 
-**デプロイされた以前のコードを復元するには：**
+**デプロイした以前のコードを復元するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
@@ -51,26 +51,26 @@ ht-degree: 7%
 
 1. 次のいずれかの操作を行って、プログラムのすべての環境をリストします。
 
-   * 左側のメニューの **サービス** で、![ データアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**環境** をクリックします。
+   * 左側のサイドメニューの&#x200B;**サービス**&#x200B;で、![データアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)「**環境**」をクリックします。
 
      ![「環境」タブ](assets/environments-1.png)
 
-   * 左側のメニューの **プログラム** で **概要** をクリックし、**環境** カードで ![ ワークフローアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)**すべて表示** をクリックします。
+   * 左側のサイドメニューの&#x200B;**プログラム**&#x200B;で「**概要**」をクリックし、**環境**&#x200B;カードから ![ワークフローアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)「**すべて表示**」をクリックします。
 
      ![「すべて表示」オプション](assets/environments-2.png)
 
      >[!NOTE]
      >
-     >**環境** カードには 3 つの環境のみ表示されます。 カードの **すべて表示** をクリックすると、プログラムの *すべて* の環境が表示されます。
+     >**環境**&#x200B;カードには、3 つの環境のみがリストされます。 カードの「**すべて表示**」をクリックすると、プログラムの&#x200B;*すべて*&#x200B;の環境が表示されます。
 
-1. 環境テーブルで、ソースコードを復元する環境の右側にある ![ 詳細アイコンまたは省略記号メニューアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、**復元**/**以前にデプロイされたコード** をクリックします。
+1. 環境テーブルで、ソースコードを復元する環境の右側にある ![詳細アイコンまたは省略記号メニューアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、次に&#x200B;**復元**／**デプロイした以前のコード**&#x200B;をクリックします。
 
-   ![ 省略記号メニューから「以前にデプロイしたコードを復元」オプションを選択 ](/help/operations/assets/restore-previous-code-deployed-menu.png)
+   ![省略記号メニューからの「デプロイした以前のコードを復元」オプション](/help/operations/assets/restore-previous-code-deployed-menu.png)
 
-1. **以前にデプロイしたコードを復元** ダイアログボックスで、現在デプロイされているバージョンと復元するバージョンを確認し、「**確認**」をクリックします。
+1. **デプロイした以前のコードを復元ダイアログボックス**&#x200B;で、現在デプロイされているバージョンと復元するバージョンを確認し、「**確認**」をクリックします。
 
-   ![ 以前にデプロイしたコードを復元ダイアログボックス ](/help/operations/assets/restore-previous-code-deployed-dialogbox.png)
+   ![デプロイした以前のコードを復元ダイアログボックス](/help/operations/assets/restore-previous-code-deployed-dialogbox.png)
 
-1. Cloud Managerは、環境を以前のビルドにロールバックし、コンテンツと設定を元の状態に保ち、デプロイメントが完了するまで環境ページに環境をマーク **復元** します。
+1. Cloud Manager は、環境を以前のビルドにロールバックし、コンテンツと設定をそのままの状態に保ち、デプロイメントが完了するまで環境ページで環境に&#x200B;**復元中**&#x200B;とマークを付けます。
 
-   ![ アクティベーションの復元 ](/help/operations/assets/restore-previous-code-deployed-restoring.png)
+   ![アクティベーションの復元](/help/operations/assets/restore-previous-code-deployed-restoring.png)

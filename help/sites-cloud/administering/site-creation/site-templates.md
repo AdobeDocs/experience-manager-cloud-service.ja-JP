@@ -6,9 +6,9 @@ role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
 source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -29,9 +29,9 @@ AEM サイトテンプレートを使用して、サイト構造と初期コン�
 >
 >AEM サイトテンプレートを[ページテンプレート](/help/sites-cloud/authoring/page-editor/templates.md)と混同しないでください。サイトテンプレートは、サイトの全体的な構造を定義します。ページテンプレートは、個々のページの構造と初期コンテンツを定義します。
 >
->AEM サイトテンプレートを [AEM サイトテーマと混同しないでください。](site-themes.md) AEM サイトテーマには、AEM サイトのスタイル設定情報のみが含まれています。AEM サイトテンプレートは、サイト構造と初期コンテンツを定義します。また、「クイックサイト作成 [ を可能にするAEM サイトテーマが含まれ ](create-site.md) います。
+>AEM サイトテンプレートを [AEM サイトテーマと混同しないでください。](site-themes.md) AEM サイトテーマには、AEM サイトのスタイル設定情報のみが含まれています。AEM サイトテンプレートは、サイト構造と初期コンテンツを定義し、[クイックサイト作成](create-site.md)を可能にする AEM サイトテーマを含んでいます。
 
-### Adobeが提供するサイトテンプレート {#adobe-templates}
+### アドビ提供のサイトテンプレート {#adobe-templates}
 
 {{adobe-templates}}
 
@@ -72,4 +72,4 @@ AEM サイトテンプレートを使用して、サイト構造と初期コン�
 
 ## サイトテンプレートの開発 {#developing-templates}
 
-Adobeは、新しいサイトテンプレートを作成するための一連のスクリプトとしてAEM サイトテンプレートビルダーを提供しています。 [AEM サイトテンプレートビルダーは、GitHub の使用方法に関するドキュメントと共に利用できます。](https://github.com/adobe/aem-site-template-builder)
+アドビは、新しいサイトテンプレートを作成するための一連のスクリプトとして AEM サイトテンプレートビルダーを提供しています。[AEM サイトテンプレートビルダーは、GitHub の使用方法に関するドキュメントと共に利用できます。](https://github.com/adobe/aem-site-template-builder)

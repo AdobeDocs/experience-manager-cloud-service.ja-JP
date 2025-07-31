@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2488'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -164,11 +164,11 @@ ht-degree: 98%
 
 ## 環境のコンテンツの復元 {#restore-environment}
 
-[AEM as a Cloud Serviceのコンテンツの復元 ](/help/operations/restore.md) を参照してください。
+[AEM as a Cloud Service でのコンテンツ復元](/help/operations/restore.md)を参照してください。
 
 ## デプロイした以前のコードを復元 {#restore-previous-code-deployed}
 
-[AEM as a Cloud Serviceにデプロイされた以前のコードの復元 ](/help/operations/restore-previous-code-deployed.md) を参照してください。
+[AEM as a Cloud Service に以前にデプロイしたコードの復元](/help/operations/restore-previous-code-deployed.md)を参照してください。
 
 
 ### プレビューサービスへのアクセス {#access-preview-service}

@@ -5,16 +5,16 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1012'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # Forms の Edge Delivery Services のユニバーサルエディター
 
-<span class="preview"> これは、アドビの <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features"> プレリリースチャネル </a> で利用できるプレリリース機能です。</span>
+<span class="preview">これは、<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features">プレリリースチャネル</a>を通じて使用できるプレリリース機能です。</span>
 
 ユニバーサルエディターは、シンプルで視覚的かつ直感的な WYSIWYG（見たままが得られる）インターフェイスを提供することで、Adobe Edge Delivery Services のフォーム作成に革命をもたらします。コンテンツ作成者とフォーム作成者向けに設計されており、従来のフォーム作成プロセスの複雑さを排除し、技術に詳しくないユーザーでもアクセスできます。
 
@@ -46,12 +46,12 @@ ht-degree: 98%
 | ![分析とトラッキング](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![フォームフラグメント](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![データバインディング](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
 | [**分析とトラッキング**](https://www.aem.live/developer/martech-integration) | **フォームフラグメント**（近日公開） | [**データバインディング**](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) |
-| 組み込みの分析とトラッキングを使用して、ユーザーの行動、フォームのインタラクション、送信率に関するインサイトを獲得し、データ駆動型のフォーム最適化を実現します。 | フォームフラグメントを使用すると、よく使用するセクションを一度作成したら、複数のフォームで再利用できるので、一貫性が確保およびメンテナンス作業が軽減され、再利用性が高まります。 | データバインディングにより、フォームフィールドとバックエンドデータソース間の直接接続が可能になり、リアルタイムの更新と、高度なデータマッピングがサポートされます。 |
+| ビルトインの分析とトラッキングを使用して、ユーザーの行動、フォームのインタラクション、送信率に関するインサイトを獲得し、データ駆動型のフォーム最適化を実現します。 | フォームフラグメントを使用すると、よく使用するセクションを一度作成したら、複数のフォームで再利用できるので、一貫性が確保およびメンテナンス作業が軽減され、再利用性が高まります。 | データバインディングにより、フォームフィールドとバックエンドデータソース間の直接接続が可能になり、リアルタイムの更新と、高度なデータマッピングがサポートされます。 |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![埋め込みフォーム](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![「ありがとうございます」設定](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
 | [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **埋め込みフォーム**（近日公開） | [**「ありがとうございます」設定**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
-| reCAPTCHA を使用すると、フォームを自動ボットから保護し、安全で信頼性の高いデータ収集を行うことができます。 | ユニバーサルエディターの組み込みの埋め込みコンポーネントを使用して、フォームを Edge Delivery Services サイトページに直接埋め込みます。 | フォームの送信が成功した後に、ユーザーに表示される感謝のメッセージまたはページを簡単にカスタマイズします。 |
+| reCAPTCHA を使用すると、フォームを自動ボットから保護し、安全で信頼性の高いデータ収集を行うことができます。 | ユニバーサルエディターのビルトインの埋め込みコンポーネントを使用して、フォームを Edge Delivery Services サイトページに直接埋め込みます。 | フォームの送信が成功した後に、ユーザーに表示される感謝のメッセージまたはページを簡単にカスタマイズします。 |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
@@ -217,7 +217,7 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## オンボーディング
 
-<span class="preview"> これは、アドビの <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features"> プレリリースチャネル </a> で利用できるプレリリース機能です。</span>
+<span class="preview">これは、<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features">プレリリースチャネル</a>を通じて使用できるプレリリース機能です。</span>
 
 ## よくある質問（FAQ）
 
@@ -238,7 +238,7 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 ユニバーサルエディターは、WCAG（Web コンテンツアクセシビリティガイドライン）を含むアクセシビリティ標準に厳密に準拠して設計されています。これにより、障がい者でもフォームを使用できるので、包括的なエクスペリエンスを提供できます。
 
 **Q：フォームからどのような分析を取得できますか？**
-ユニバーサルエディターには、ユーザーのインタラクション、フォーム送信率およびコンバージョン指標を監視する組み込みの分析およびトラッキングツールが含まれています。これらのインサイトは、フォームを最適化してパフォーマンスを向上させるのに役立ちます。
+ユニバーサルエディターには、ユーザーのインタラクション、フォーム送信率およびコンバージョン指標を監視するビルトインの分析およびトラッキングツールが含まれています。これらのインサイトは、フォームを最適化してパフォーマンスを向上させるのに役立ちます。
 
 
 ## フォームの作成の開始

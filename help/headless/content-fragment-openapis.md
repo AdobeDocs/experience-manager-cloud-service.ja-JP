@@ -5,9 +5,9 @@ exl-id: 077eed73-a066-4273-b2f5-da4bf5cd900c
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: d683051387af5c0de45917a50003c2194d887bc4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '190'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ ht-degree: 86%
 
 >[!CAUTION]
 >
->デフォルトでは、公開時にコンテンツフラグメント管理の OpenAPI は無効になります。 これではなく、配信指向のユースケースでは、[ コンテンツフラグメント配信 OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) を使用することをお勧めします。
+>デフォルトでは、コンテンツフラグメント管理 OpenAPI は公開時に無効になっています。この代わりに、配信指向のユースケースでは、[コンテンツフラグメント配信 OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) を使用することをお勧めします。
 
 >[!NOTE]
 >
->使用可能な様々な API の概要と、関連する概念のいくつかの比較について詳しくは、[構造化コンテンツの配信と管理用の AEM API](/help/headless/apis-headless-and-content-fragments.md) を参照してください。
+>使用できる様々な API の概要と、関連する概念のいくつかの比較について詳しくは、[構造化コンテンツの配信と管理用の AEM API](/help/headless/apis-headless-and-content-fragments.md) を参照してください。

@@ -1,14 +1,14 @@
 ---
 title: サイトテーマ
-description: AEM サイトテーマを使用して、従来のAEM オーサリングプロジェクト（公開配信）用にサイトのスタイルとデザインをカスタマイズする方法を説明します。
+description: AEM サイトテーマを使用して、公開配信を使用した従来の AEM オーサリングプロジェクトのサイトのスタイルとデザインをカスタマイズする方法について説明します。
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
 source-git-commit: 9efba01add46c09e9839da6bb96b138d48018e54
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '388'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -17,17 +17,17 @@ ht-degree: 75%
 
 {{traditional-aem}}
 
-AEM サイトテーマを使用して、従来のAEM オーサリングプロジェクト（公開配信）用にサイトのスタイルとデザインをカスタマイズする方法を説明します。
+AEM サイトテーマを使用して、公開配信を使用した従来の AEM オーサリングプロジェクトのサイトのスタイルとデザインをカスタマイズする方法について説明します。
 
 ## 概要 {#overview}
 
 AEM サイトテーマは、AEM サイトのスタイルを定義し、AEM サイトテーマの構造に準拠する CSS、JavaScript および静的リソースを含むパッケージです。
 
-AEM サイトテンプレートを使用して作成されたサイトでは、従来のAEM オーサリングプロジェクトのテーマを [ 公開配信 ](/help/sites-cloud/authoring/author-publish.md) と簡単にダウンロード、カスタマイズ、再デプロイできます。
+AEM サイトテンプレートを使用して作成したサイトでは、[公開配信](/help/sites-cloud/authoring/author-publish.md)を使用した従来の AEM オーサリングプロジェクトのテーマを簡単にダウンロード、カスタマイズ、再デプロイできます。
 
 >[!NOTE]
 >
->AEM サイトテーマを [AEM サイトテンプレート](site-templates.md)と混同しないでください。 AEM サイトテーマには、AEM サイトのスタイル設定情報のみが含まれています。AEM サイトテンプレートは、サイト構造と初期コンテンツを定義します。また、「クイックサイト作成 [ を可能にするAEM サイトテーマが含まれ ](create-site.md) います。
+>AEM サイトテーマを [AEM サイトテンプレート](site-templates.md)と混同しないでください。 AEM サイトテーマには、AEM サイトのスタイル設定情報のみが含まれています。AEM サイトテンプレートは、サイト構造と初期コンテンツを定義し、[クイックサイト作成](create-site.md)を可能にする AEM サイトテーマを含んでいます。
 
 ## サイトテーマの使用 {#using-themes}
 

@@ -1,18 +1,18 @@
 ---
-title: AEM as a Cloud Serviceでコンテンツを復元
+title: AEM as a Cloud Service でのコンテンツ復元
 description: Cloud Manager を使用して、AEM as a Cloud Service のコンテンツをバックアップから復元する方法を説明します。
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
 source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1359'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
-# AEM as a Cloud Serviceでのコンテンツの復元 {#content-restore}
+# AEM as a Cloud Service でのコンテンツ復元 {#content-restore}
 
 Cloud Manager を使用して、AEM as a Cloud Service のコンテンツをバックアップから復元することができます。
 
@@ -20,7 +20,7 @@ Cloud Manager を使用して、AEM as a Cloud Service のコンテンツをバ�
 
 Cloud Manager のセルフサービス復元プロセスでは、アドビシステムのバックアップからデータをコピーし、元の環境に復元します。復元は、失われたデータ、破損したデータまたは誤って削除されたデータを元の状態に戻すために実行します。
 
-復元プロセスが影響するのはコンテンツのみで、AEM のコードとバージョンは変更されません。個々の環境の復元操作はいつでも開始できます。 （新しいパイプライン実行を開始することなく、以前にデプロイしたソースコードを簡単かつ迅速に復元する必要がある場合は、[ デプロイした以前のコードを復元 ](/help/operations/restore-previous-code-deployed.md)）を使用できます。
+復元プロセスが影響するのはコンテンツのみで、AEM のコードとバージョンは変更されません。個々の環境の復元操作はいつでも開始できます。（新しいパイプライン実行を開始することなく、以前にデプロイしたソースコードを簡単かつ迅速に復元する必要がある場合は、[以前にデプロイされたコードを復元](/help/operations/restore-previous-code-deployed.md)を使用できます。)
 
 Cloud Manager には、コンテンツを復元できる 2 種類のバックアップが用意されています。
 
@@ -87,7 +87,7 @@ Cloud Manager には、コンテンツを復元できる 2 種類のバックア
      >
      >**環境**&#x200B;カードには、3 つの環境のみがリストされます。 カードの「**すべて表示**」をクリックすると、プログラムの&#x200B;*すべて*&#x200B;の環境が表示されます。
 
-1. 環境テーブルで、コンテンツを復元する環境の右側にある ![ 詳細アイコンまたは省略記号メニューアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、**コンテンツを復元** をクリックします。
+1. 「環境」テーブルで、コンテンツを復元したい環境の右側にある![詳細アイコンまたは省略記号メニューアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックし、次に&#x200B;**「コンテンツを復元」**&#x200B;をクリックします。
 
    ![省略記号メニューの「コンテンツを復元」オプション](/help/operations/assets/environments-ellipsis-menu.png)
 
