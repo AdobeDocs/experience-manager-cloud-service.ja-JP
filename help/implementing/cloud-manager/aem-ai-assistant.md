@@ -7,9 +7,9 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: 577e15165057fcf6537b4b0b738a1f45e5feb097
+source-git-commit: 71041c9e4d4afe964f549f193daf8ec72bd97a41
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1322'
 ht-degree: 2%
 
 ---
@@ -28,6 +28,10 @@ AEM（Adobe Experience Manager） AI アシスタントは、Adobe Experience Ma
 * Forms
 
 AEMに直接埋め込まれ、AEM Experience Hub、Cloud Managerおよびオーサー UI からアクセスできます。
+
+次の 3 分 39 秒のビデオでは、AEM AI アシスタントの手順を順を追って説明します。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 >[!IMPORTANT]
 >Adobeで AI アシスタント機能を有効にしてプライベートベータプログラムをテストし、利用できるようにするため、利用許諾契約書を確認して送信してください。
@@ -54,7 +58,6 @@ AEM AI アシスタントは、プライバシー、セキュリティ、ガバ�
 * ユーザー指定のプロンプト（質問、クエリなど）は、他の顧客と共有されません。
 
 <!-- See also [Security at Adobe whitepaper](). NEED ACTIVE LINK FROM ADRIAN NICOLAE TANASE. CURRENTLY 404. -->
-
 
 ## AEM AI アシスタントの製品知識と自動サポートチケット作成機能について説明します {#ai-prod-insights}
 
@@ -106,7 +109,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in the AEM AI Assistant of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
