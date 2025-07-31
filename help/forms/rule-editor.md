@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
-source-wordcount: '6492'
-ht-degree: 100%
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+workflow-type: tm+mt
+source-wordcount: '6727'
+ht-degree: 99%
 
 ---
 
@@ -363,7 +363,7 @@ When （オプション）：
 
 1 つ以上の有効なルールが適用されているフォームオブジェクトには、緑のドットが付いています。フォームオブジェクトに適用されているルールのいずれかが無効な場合、フォームオブジェクトには黄色のドットが付きます。
 
-「関数」タブには、「合計」、「最小」、「最大」、「平均」、「回数」や「フォームを検査」などの組み込み関数のセットが含まれています。これらの関数をルールに記述することで、繰り返しパネルや表の行の値を計算し、計算結果をアクションや条件文の中で使用することができます。また、[カスタム関数](#custom-functions)を作成することもできます。
+「関数」タブには、「合計」、「最小」、「最大」、「平均」、「回数」や「フォームを検査」などのビルトインの関数のセットが含まれています。これらの関数をルールに記述することで、繰り返しパネルや表の行の値を計算し、計算結果をアクションや条件文の中で使用することができます。また、[カスタム関数](#custom-functions)を作成することもできます。
 
 ![関数タブ](assets/functions1.png)
 
@@ -477,7 +477,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. 「**[!UICONTROL オプションの選択]**」を選択し、「**[!UICONTROL 数式]**」を選択します。数式記述用のフィールドが表示されます。
+1. 「**[!UICONTROL オプションの選択]**」を選択し、「**[!UICONTROL 数式]**」を選択します。数式記述用のフィールドが開きます。
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -537,7 +537,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/jp/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -600,7 +600,8 @@ While writing JavaScript code in the rule editor, the following visual cues help
 * **戻り値のタイプ**
 構文：`@return {type}`
 または、`@returns {type}` を使用できます。
-目的などの、関数に関する情報を追加します。{type} は、関数の戻り値のタイプを表します。許可されている戻り値のタイプは次のとおりです。
+目的などの、関数に関する情報を追加します。
+  {type} は、関数の戻り値のタイプを表します。許可されている戻り値のタイプは次のとおりです。
 
    1. 文字列
    1. 数値
@@ -729,6 +730,22 @@ var c = {
 >[!NOTE]
 >
 >カスタム関数では、必ず `jsdoc` を使用します。`jsdoc` 型のコメントが奨励されていますが、カスタム関数として区別できるよう、空の `jsdoc` 型コメントを含めてください。これにより、カスタム関数のデフォルト処理が可能になります。
+
+### 検証式でのカスタム関数のサポート {#supporting-custom-functions-in-validation-expressions-br}
+
+**複雑な検証ルール**&#x200B;がある場合、正確な検証スクリプトがカスタム関数の中に存在し、作成者がこれらのカスタム関数をフィールド検証式から呼び出すことがあります。このカスタム関数ライブラリをサーバーサイド検証中に認識させ、利用可能にするために、フォーム作成者は、「アダプティブフォームコンテナ」プロパティの「**[!UICONTROL 基本]**」タブで、AEM クライアントライブラリの名前を設定できます（下記画像を参照）。
+
+![検証式でのカスタム関数のサポート](assets/clientlib-cat.png)
+
+検証式でのカスタム関数のサポート
+
+作成者は、アダプティブフォームごとにカスタム JavaScript ライブラリを設定できます。ライブラリには、jQuery および underscore.js サードパーティライブラリに依存する、再利用可能な関数のみを保持します。
+
+## 送信アクションに対するエラー処理 {#error-handling-on-submit-action}
+
+AEM セキュリティおよび堅牢化ガイドラインの一環として、400.jsp、404.jsp、500.jsp などのカスタムエラーページを設定します。これらのハンドラーは、フォーム送信時に 400、404 または 500 エラーが表示される場合に呼び出されます。また、これらのハンドラーは、公開ノードでこれらのエラーコードがトリガーされる場合にも呼び出されます。他の HTTP エラーコード用の JSP ページを作成することもできます。
+
+フォームデータモデル（FDM）またはスキーマベースのアダプティブフォームを、スキーマに準拠した XML データや JSON データを使用して事前入力する、つまりデータが `<afData>`、`<afBoundData>`、`</afUnboundData>` のタグを含まない場合、アダプティブフォームの連結されていないフィールドのデータは失われます。スキーマには、XML スキーマ、JSON スキーマ、フォームデータモデル（FDM）を使用できます。境界なしのフィールドは、`bindref` プロパティを持たないアダプティブフォームフィールドです。
 
 ## ルール管理 {#manage-rules}
 
@@ -880,7 +897,7 @@ Rule in the code editor -->
 
 ### 式を使用してフィールド値を検証する {#validating-a-field-value-using-expression}
 
-前の例で説明した発注書フォームでは、価格が 10000 を超える商品については、ユーザーが複数個発注することを制限します。この検証を行うには、以下に示すように検証ルールを記述します。
+上の例で説明した注文書フォームでは、価格が 10000 を超える商品について、1 個を超える数量は発注が制限されています。この検証を行うには、以下に示すように検証ルールを記述します。
 
 ![Example-validate](assets/example-validate.png)
 

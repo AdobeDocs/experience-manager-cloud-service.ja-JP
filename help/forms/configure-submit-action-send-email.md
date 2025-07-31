@@ -2,14 +2,14 @@
 Title: How to send an email on submission of an Adaptive Form?
 Description: Explore the process to set up email notifications when submitting an Adaptive Form.
 keywords: アダプティブフォーム用のメールの送信方法、メール送信アクション、アダプティブフォームメール、フォーム送信メール、メールの送信ガイド
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
-title: 「アダプティブフォームの送信アクションの設定方法」
+title: アダプティブフォームの送信アクションの設定方法
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 100%
+source-wordcount: '827'
+ht-degree: 87%
 
 ---
 
@@ -29,9 +29,7 @@ ht-degree: 100%
     
     よろしくお願いいたします。
     WKND
-    
     ```
-
 
 ## メリット
 
@@ -41,12 +39,33 @@ ht-degree: 100%
 * これにより、フォーム送信をメール通知に直接統合することで、ワークフローを合理化できます。
 * これは、組織がメールのコンテンツをカスタマイズするのに役立ち、特定のコミュニケーションニーズに適したものにすることができます。
 
-## 「メールを送信」送信アクションを設定する {#steps-to-configure-send-email-submit-action}
+>[!BEGINTABS]
 
-送信アクションを設定するには：
+>[!TAB 基盤コンポーネント]
+
+基盤コンポーネントのメール送信アクションを設定するには：
+
+1. 編集用にアダプティブフォームを開き、アダプティブフォームのコンテナプロパティの「**[!UICONTROL 送信]**」セクションに移動します。
+1. **[!UICONTROL 送信アクション]**&#x200B;ドロップダウンリストから「**[!UICONTROL メールを送信]**」を選択します。
+
+   ![「メールを送信」のアクション設定](/help/forms/assets/send-email-fc.png)
+
+1. **[!UICONTROL 送信者]**&#x200B;テキストボックスで送信者のメール ID を指定します。
+1. **[!UICONTROL 宛先]**&#x200B;テキストボックスに受信者のメール ID を追加します。複数の受信者を追加するには「**[!UICONTROL 追加]**」ボタンをクリックします。
+1. [オプション] CC および BCC の受信者を追加するには、「**[!UICONTROL 追加]**」ボタンをクリックします。
+1. **[!UICONTROL 件名]**&#x200B;テキストボックスで件名行を指定します。
+1. メールテンプレートを追加して「メールを送信」送信アクションを設定します。
+   * **[!UICONTROL 外部テンプレートのパス]**&#x200B;オプションを使用して、AEM アセットに保存されている外部メールテンプレートのパスを指定できます。
+   * また、**[!UICONTROL メールテンプレート]**&#x200B;テキストボックスで、フォーム送信用のカスタムメールテンプレートを追加できます。
+1. [オプション] **[!UICONTROL 「メールを送信」]**&#x200B;送信アクションには、メールに添付ファイルと[レコードのドキュメント（DoR）](generate-document-of-record-core-components.md)を含めるオプションが用意されています。
+1. 「**[!UICONTROL 完了]**」をクリックします。
+
+>[!TAB コアコンポーネント]
+
+コアコンポーネントのメール送信アクションを設定するには：
 
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
-1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。アダプティブフォームコンテナダイアログボックスが開きます。
+1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。 アダプティブフォームコンテナダイアログボックスが開きます。
 1. 「**[!UICONTROL 送信]**」タブをクリックします。
 1. **[!UICONTROL 送信アクション]**&#x200B;ドロップダウンリストから「**[!UICONTROL メールを送信]**」を選択します。
 
@@ -61,12 +80,41 @@ ht-degree: 100%
 1. [オプション] **[!UICONTROL 「メールを送信」]**&#x200B;送信アクションには、メールに添付ファイルと[レコードのドキュメント（DoR）](generate-document-of-record-core-components.md)を含めるオプションが用意されています。
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
+>[!TAB ユニバーサルエディター]
+
+ユニバーサルエディターでメールを送信アクションを設定するには：
+
+1. アダプティブフォームを編集用に開きます。
+1. エディターで **フォームプロパティを編集** 拡張機能をクリックします。
+**フォームのプロパティ** ダイアログが表示されます。
+
+   >[!NOTE]
+   >
+   > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Managerで **フォームプロパティを編集** 拡張機能を有効にします。
+   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト } の記事を参照してください。
+
+
+1. 「**送信**」タブをクリックし、「**[!UICONTROL メールを送信]**」送信アクションを選択します。
+
+   ![ メールユニバーサルエディターを送信 ](/help/forms/assets/send-email-ue.png)
+
+1. **[!UICONTROL 送信者]**&#x200B;テキストボックスで送信者のメール ID を指定します。
+1. **[!UICONTROL 宛先]**&#x200B;テキストボックスに受信者のメール ID を追加します。複数の受信者を追加するには「**[!UICONTROL 追加]**」ボタンをクリックします。
+1. [オプション] CC および BCC の受信者を追加するには、「**[!UICONTROL 追加]**」ボタンをクリックします。
+1. **[!UICONTROL 件名]**&#x200B;テキストボックスで件名行を指定します。
+1. メールテンプレートを追加して「メールを送信」送信アクションを設定します。
+   * **[!UICONTROL 外部テンプレートのパス]**&#x200B;オプションを使用して、AEM アセットに保存されている外部メールテンプレートのパスを指定できます。
+   * また、**[!UICONTROL メールテンプレート]**&#x200B;テキストボックスで、フォーム送信用のカスタムメールテンプレートを追加できます。
+1. [オプション] **[!UICONTROL 「メールを送信」]**&#x200B;送信アクションには、メールに添付ファイルと[レコードのドキュメント（DoR）](generate-document-of-record-core-components.md)を含めるオプションが用意されています。
+1. **[!UICONTROL 保存して閉じる]** をクリックします。
+
+>[!ENDTABS]
+
 ## ベストプラクティス {#best-practices}
 
 * メールの内容は明確かつ簡潔にすることをお勧めします。ユーザーは、メールの目的と、実行する必要があるアクションを理解する必要があります。
 * フォームフィールドがアダプティブフォーム内の別のパネルに配置されている場合でも、すべてのフォームフィールドに一意の要素名を付けることをお勧めします。
 * AEM as a Cloud Serviceを使用する場合、送信電子メールでは暗号化が必要です。 デフォルトでは、送信メールは無効になっています。それを有効にするには、[利用申請](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja#sending-email)にサポートチケットを送信します。
-
 
 ## 関連記事
 

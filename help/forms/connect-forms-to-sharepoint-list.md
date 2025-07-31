@@ -2,16 +2,16 @@
 Title: How to send data to a SharePoint List storage on submission of an Adaptive Form?
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list when you submit the form.
 keywords: アダプティブフォームでSharePoint リストを接続する方法、SharePointに送信する方法、SharePoint リスト設定を作成する方法、アダプティブフォームで「SharePointに送信」送信アクションを使用する方法、アダプティブフォームをMicrosoft&reg; SharePoint リストに接続する方法を説明します。
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 title: アダプティブフォームの送信アクションの設定方法
 role: User, Developer
-source-git-commit: 55e8f142e242f5f4010653a155a241ffcf801470
+exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
+source-git-commit: 64edcfe1bf94638ae5d9510a5a6ac660cf1bcd0a
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 87%
 
 ---
-
 
 # アダプティブフォームを Microsoft® SharePoint リストに接続 {#connect-af-sharepoint-list}
 
@@ -22,7 +22,7 @@ ht-degree: 87%
 1. [SharePoint リスト設定を作成](#1-create-a-sharepoint-list-configuration)：AEM Forms を Microsoft® Sharepoint リストストレージに接続します。
 1. [アダプティブフォームで「フォームデータモデル（FDM）を使用して送信」を使用](#2-use-the-submit-using-form-data-model-fdm-in-an-adaptive-form-use-submit-using-fdm)：アダプティブフォームを設定済みの Microsoft® SharePoint に接続します。
 
-## 1. SharePoint リスト設定の作成
+## &#x200B;1. SharePoint リスト設定の作成
 
 AEM Forms を Microsoft® Sharepoint リストに接続するには、次の手順に従います。
 
@@ -44,7 +44,7 @@ AEM Forms を Microsoft® Sharepoint リストに接続するには、次の手�
 1. 「**[!UICONTROL 作成]**」を選択して、Microsoft® SharePointList 用のクラウド設定を作成します。
 
 
-## 2. アダプティブフォームでフォームデータモデル（FDM）を使用して送信を使用する {#use-submit-using-fdm}
+## &#x200B;2. アダプティブフォームでフォームデータモデル（FDM）を使用して送信を使用する {#use-submit-using-fdm}
 
 作成した SharePoint リスト設定をアダプティブフォーム内で使用すると、データや生成済みのレコードのドキュメントを SharePoint リストに保存できます。アダプティブフォームで SharePoint リストを使用するには、次の手順を実行します。
 

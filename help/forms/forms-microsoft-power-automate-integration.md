@@ -1,27 +1,27 @@
 ---
-title: アダプティブフォームをMicrosoft&reg; Power Automate と統合する方法
-description: アダプティブフォームとMicrosoft&reg; Power Automate の統合。
+title: アダプティブフォームと Microsoft® Power Automate はどのように統合されますか？
+description: アダプティブフォームを Microsoft® Power Automate と統合します。
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: AEM forms を Power Automate に接続、Power Automate による AEM Forms の自動処理、Power Automate を AEM Forms に統合、アダプティブフォームから Power Automate にデータを送信
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: 8d0814642fa0e5eb3f92a499202d0b79d90f91e3
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '1243'
-ht-degree: 95%
+source-wordcount: '1531'
+ht-degree: 93%
 
 ---
 
 
 # アダプティブフォームと Microsoft® Power Automate の接続 {#connect-adaptive-form-with-power-automate}
 
-<span class="preview"> GovCloud を使用していて、GCC （Government Cloud Computing）テナントに接続する必要がある場合は、公式アドレスからaem-forms-ea@adobe.comにメールを送信して、早期導入プログラムを通じてアクセスをリクエストします。</span>
+<span class="preview">GovCloud を使用中に GCC （Government Cloud Computing）テナントに接続する必要がある場合は、公式アドレスから aem-forms-ea@adobe.com にメールを送信して、早期導入プログラムを介したアクセスをリクエストします。</span>
 
 送信時に Microsoft® Power Automate のクラウドフローを実行するように、アダプティブフォームを設定できます。設定済みのアダプティブフォームは、キャプチャされたデータ、添付ファイルおよびレコードのドキュメントを Power Automate クラウドフローに送信して処理します。 Microsoft® Power Automate の機能を活用して、キャプチャされたデータを中心にビジネスロジックを構築し、顧客のワークフローを自動化しながら、カスタムのデータキャプチャエクスペリエンスを構築するのに役立ちます。
 
 アダプティブフォームエディターには「**Microsoft® Power Automate フローの呼び出し**」送信アクションが用意されており、アダプティブフォームのデータ、添付ファイル、レコードのドキュメントを Power Automate クラウドフローに送信できます。
 
-AEM as a Cloud Service では、フォーム送信を処理するための様々な送信アクションが標準で提供されます。これらのオプションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)の記事をご覧ください。
+AEM as a Cloud Service では、フォーム送信を処理するための様々な送信アクションが標準で提供されます。これらのオプションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/aem-forms-submit-action.md)の記事を参照してください。
 
 
 ## メリット
@@ -140,12 +140,17 @@ Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接
 
 [Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接続](#connect-forms-server-with-power-automate)した後、次の操作を実行して、フォーム送信時に、キャプチャしたデータを Microsoft® フローに送信するようアダプティブフォームを設定します。
 
+>[!BEGINTABS]
+
+>[!TAB 基盤コンポーネント]
+
 1. オーサーインスタンスにログインし、アダプティブフォームを選択して、「**[!UICONTROL プロパティ]**」をクリックします。
 1. 設定コンテナで、[Microsoft® Power Automate Dataverse クラウド設定を作成](#microsoft-power-automate-dataverse-cloud-configuration)セクションで作成したコンテナを参照して選択し、「**[!UICONTROL 保存して閉じる]**」を選択します。
 1. 編集用にアダプティブフォームを開き、アダプティブフォームのコンテナプロパティの「**[!UICONTROL 送信]**」セクションに移動します。
 1. プロパティコンテナで、**[!UICONTROL 送信アクション]**&#x200B;に「**[!UICONTROL Power Automate フローを呼び出す]**」オプションを選択し、「**[!UICONTROL Power Automate フロー]**」を選択します。必要なフローを選択すると、送信時にアダプティブフォームデータが送信されます。
 
    ![送信アクションの設定](assets/submission.png)
+1. 「**[!UICONTROL 完了]**」をクリックします。
 
 >[!NOTE]
 >
@@ -210,6 +215,167 @@ Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接
             }
         }
 ```
+
+>[!TAB コアコンポーネント]
+
+1. オーサーインスタンスにログインし、アダプティブフォームを選択して、「**[!UICONTROL プロパティ]**」をクリックします。
+1. 設定コンテナで、[Microsoft® Power Automate Dataverse クラウド設定を作成](#microsoft-power-automate-dataverse-cloud-configuration)セクションで作成したコンテナを参照して選択し、「**[!UICONTROL 保存して閉じる]**」を選択します。
+1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
+1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。 アダプティブフォームコンテナダイアログボックスが開きます。
+1. 「**[!UICONTROL 送信]**」タブをクリックします。
+1. 「送信アクション」ドロップダウンリストから「**[!UICONTROL Power Automate フローを呼び出す]**」オプションを選択し、「**[!UICONTROL Power Automate フロー]**」を選択します。 必要なフローを選択すると、送信時にアダプティブフォームデータが送信されます。
+
+   ![送信アクションの設定](/help/forms/assets/power-automate-cc.png)
+1. 「**[!UICONTROL 完了]**」をクリックします。
+
+>[!NOTE]
+>
+> アダプティブフォームを送信する前に、以下の JSON スキーマを持つ `When an HTTP Request is received` トリガーが Power Automate フローに追加されていることを確認してください。
+
+```
+        {
+            "type": "object",
+            "properties": {
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "filename": {
+                                "type": "string"
+                            },
+                            "data": {
+                                "type": "string"
+                            },
+                            "contentType": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "filename",
+                            "data",
+                            "contentType",
+                            "size"
+                        ]
+                    }
+                },
+                "templateId": {
+                    "type": "string"
+                },
+                "templateType": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "document": {
+                    "type": "object",
+                    "properties": {
+                        "filename": {
+                            "type": "string"
+                        },
+                        "data": {
+                            "type": "string"
+                        },
+                        "contentType": {
+                            "type": "string"
+                        },
+                        "size": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+```
+
+>[!TAB ユニバーサルエディター]
+
+1. オーサーインスタンスにログインし、アダプティブフォームを選択します。
+1. 設定コンテナで、[Microsoft® Power Automate Dataverse クラウド設定を作成](#microsoft-power-automate-dataverse-cloud-configuration)セクションで作成したコンテナを参照して選択し、「**[!UICONTROL 保存して閉じる]**」を選択します。
+1. アダプティブフォームを編集用に開きます。
+1. エディターで **フォームプロパティを編集** 拡張機能をクリックします。
+**フォームのプロパティ** ダイアログが表示されます。
+
+   >[!NOTE]
+   >
+   > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Managerで **フォームプロパティを編集** 拡張機能を有効にします。
+   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト } の記事を参照してください。
+
+
+1. 「**送信**」タブをクリックし、「**[!UICONTROL Power Automate フローの呼び出し]** 送信アクションを選択します。 必要なフローを選択すると、送信時にアダプティブフォームデータが送信されます。
+
+   ![送信アクションの設定](/help/forms/assets/power-automate-ue.png)
+1. **[!UICONTROL 保存して閉じる]** をクリックします。
+
+>[!NOTE]
+>
+> アダプティブフォームを送信する前に、以下の JSON スキーマを持つ `When an HTTP Request is received` トリガーが Power Automate フローに追加されていることを確認してください。
+
+```
+        {
+            "type": "object",
+            "properties": {
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "filename": {
+                                "type": "string"
+                            },
+                            "data": {
+                                "type": "string"
+                            },
+                            "contentType": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "filename",
+                            "data",
+                            "contentType",
+                            "size"
+                        ]
+                    }
+                },
+                "templateId": {
+                    "type": "string"
+                },
+                "templateType": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "document": {
+                    "type": "object",
+                    "properties": {
+                        "filename": {
+                            "type": "string"
+                        },
+                        "data": {
+                            "type": "string"
+                        },
+                        "contentType": {
+                            "type": "string"
+                        },
+                        "size": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+```
+
+>[!ENDTABS]
 
 <!--
 ## See also

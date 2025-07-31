@@ -1,21 +1,21 @@
 ---
 title: アダプティブフォームの送信アクションの設定方法
-description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自のアクションを作成できます。
+description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。ビルトインの送信アクションを使用するか、独自のアクションを作成できます。
 keywords: アダプティブフォームの送信アクションの選択、アダプティブフォームの SharePoint リストへの接続、アダプティブフォームの SharePoint ドキュメントライブラリへの接続、アダプティブフォームのフォームデータモデル（FDM）への接続の方法
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '699'
-ht-degree: 100%
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+workflow-type: tm+mt
+source-wordcount: '347'
+ht-degree: 67%
 
 ---
 
 
-# アダプティブフォーム送信アクション {#configuring-the-submit-action}
+# コアコンポーネントに基づくアダプティブFormsでサポートされている送信アクション
 
-<span class="preview"> Adobeでは、コアコンポーネントを次のように使用することをお勧めします。 [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) または [スタンドアロンのアダプティブFormsを作成する](/help/forms/creating-adaptive-form-core-components.md). </span>
+<span class="preview">アドビでは、コアコンポーネントを使用して、[AEM Sites ページへのアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)や[スタンドアロンのアダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)を行うことをお勧めします。</span>
 
 
 | バージョン | 記事リンク |
@@ -23,63 +23,63 @@ ht-degree: 100%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=ja) |
 | AEM as a Cloud Service（基盤コンポーネント） | [ここをクリックしてください](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service（コアコンポーネント） | この記事 |
+| AEM as a Cloud Service（Edge Delivery Services） | [ここをクリックしてください](/help/forms/configure-submit-action-eds-forms.md) |
 
-送信アクションを使用すると、アダプティブフォーム経由で取り込んだデータの送信先を選択できます。送信アクションは、ユーザーがアダプティブフォームの「**[!UICONTROL 送信]** button on an Adaptive Form. 」ボタンをクリックするとトリガーされます。Formsas a Cloud Serviceのは、コアコンポーネントに基づくアダプティブFormsの場合、事前に作成された送信アクションの配列を提供します。 標準のこれらの送信アクションを使用すると、次のことができます。
+送信アクションを使用すると、アダプティブフォーム経由で取り込んだデータの送信先を選択できます。送信アクションは、ユーザーがアダプティブフォームの「**[!UICONTROL 送信]** button on an Adaptive Form. 」ボタンをクリックするとトリガーされます。コアコンポーネントに基づくアダプティブFormsは、様々な [ 標準の送信アクション ](#submit-actions-supported-by-adaptive-forms-based-on-core-components) をサポートしています。
 
-* フォームデータを E メールで簡単に送信できます。
-* データの送信中に、Microsoft® Power Automate のフローまたは AEM ワークフローを開始します。
-* フォームデータを Microsoft® SharePoint Server、Microsoft® Azure Blob Storage、または Microsoft® OneDrive に直接送信します。
-* フォームデータモデル（FDM）を使用して、設定済みのデータソースにデータをシームレスに送信します。
-* データを REST エンドポイントに送信すると便利です。
+<!--You can also configure different actions for an Adaptive Form submissions.
 
-[デフォルトの送信アクションを拡張](custom-submit-action-form.md)することができます。また、組織固有の要件に合わせて送信アクションをカスタマイズすることもできます。
+* **Redirect URL/Path** - This option allows user to configure a page for each form, to which the form users are redirected after submitting an Adaptive Form. 
+* **Show Message** - This option allows users to add a message that is displayed when the Adaptive Form is successfully submitted. The predefined text is included in the dialog box and it can be modified by the user. -->
 
-アダプティブの送信アクションを定義するには、**アダプティブフォームコンテナ**&#x200B;コンポーネントの設定ダイアログを使用します。**アダプティブフォームコンテナ**&#x200B;コンポーネントの設定ダイアログには次が含まれます。
+## コアコンポーネントに基づくFormsの送信アクション
 
-* 「基本」タブ
-* 「フォームデータモデル」タブ
-* 「送信」タブ
-
-設定ダイアログを使用して、フォームコンテナのプロパティを定義できます。フォームコンテナコンポーネントの設定ダイアログについて詳しくは、[こちらをクリック](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html?lang=ja)してください。
-
-## アダプティブフォームの送信アクションの設定方法 {#select-and-configure-submit-action}
-
-フォームの送信アクションを設定するには、次の手順を実行します。
-
-1. コンテンツブラウザーを開き、「 **[!UICONTROL ガイドコンテナ]** アダプティブフォームのコンポーネント
-1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。 アダプティブフォームコンテナダイアログボックスが開きます。
-
-1. 「**[!UICONTROL 送信]**」タブをクリックします。
-
-   ![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、送信アクションを設定します](/help/forms/assets/adaptive-forms-submit-message.png)
-
-1. 必要に応じて、「**[!UICONTROL 送信アクション]**」を選択して設定します。
-
-ユーザーは、アダプティブフォームの送信に対して様々なアクションを設定できます。
-* **リダイレクト URL／パス** - このオプションを使用すると、ユーザーはアダプティブフォームの送信後にユーザーがリダイレクトされる各フォームのページを設定できます。
-* **メッセージを表示** - このオプションを使用すると、ユーザーはアダプティブフォームが正常に送信されたときに表示されるメッセージを追加できます。定義済みのテキストはダイアログボックスに含まれ、ユーザーが変更できます。
-
-次の送信アクションの詳細については、以下をご覧ください。
+コアコンポーネントに基づくアダプティブFormsでは、次の送信アクションがサポートされています。
 
 * [メールを送信](/help/forms/configure-submit-action-send-email.md)
 * [Power Automate フローを呼び出す](/help/forms/forms-microsoft-power-automate-integration.md)
 * [SharePoint に送信](/help/forms/configure-submit-action-sharepoint.md)
 * [Workfront Fusion を起動する](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [フォームデータモデル（FDM）を使用して送信](/help/forms/using-form-data-model.md)
-* [Azure Blob Storage に送信](/help/forms/configure-submit-action-azure-blob-storage.md)
-* [REST エンドポイントへの送信](/help/forms/configure-submit-action-restpoint.md)
+* [Azure Blob Storage への送信](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [REST エンドポイントに送信](/help/forms/configure-submit-action-restpoint.md)
 * [OneDrive に送信](/help/forms/configure-submit-action-onedrive.md)
 * [AEM ワークフローを起動](/help/forms/configure-submit-action-workflow.md)
 * [Marketo Engage に送信](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [Adobe Experience Platform（AEP）への送信 ](/help/forms/aem-forms-aep-connector.md)
 
-アダプティブフォームを他のストレージ設定に送信することもできます。
+また、コアコンポーネントに基づくアダプティブフォームを他のストレージ設定に送信することもできます。
 
 * [Salesforce アプリケーションにアダプティブフォームを接続](/help/forms/aem-forms-salesforce-integration.md)
 * [Microsoft へのアダプティブフォームの接続](/help/forms/ms-dynamics-odata-configuration.md)
-* [Adobe Marketo Engage にアダプティブフォームを接続](/help/forms/integrate-form-to-marketo-engage.md)
 
-[デフォルトの送信アクションをカスタマイズ](custom-submit-action-form.md)できます。さらに、送信アクションをカスタマイズして、特定の組織要件に合わせることができます。
+さらに、特定の組織要件に合わせて [ デフォルトの送信アクションをカスタマイズ ](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md) することもできます。
 
+
+### コアコンポーネントに基づくアダプティブフォームの送信アクションの設定
+
+<!--To define a Submit action for an Adaptive Form, use the Configure Dialog of an **Adaptive Form Container** component. The configure dialog of a **Adaptive Form Container** component includes:
+
+* Basic Tab
+* Form Data Model Tab
+* Submission Tab
+  ![AEM Forms Submit action](/help/forms/assets/aem-forms-submit-action.png)
+  -->
+
+設定ダイアログの「送信」タブを使用して、フォームコンテナのプロパティを定義できます。 フォームコンテナコンポーネントの設定ダイアログについて詳しくは、[こちらをクリック](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)してください。
+
+![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、送信アクションを設定します](/help/forms/assets/adaptive-forms-submit-message.png)
+
+<!--To select and configure a Submit Action for your form:
+
+1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
+1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 
+
+1. Click the  **[!UICONTROL Submission]** tab. 
+
+    ![Click the Wrench icon to open Adaptive Form Container dialog box to configure a submit action](/help/forms/assets/adaptive-forms-submit-message.png)
+
+1. Select and configure a **[!UICONTROL Submit action]**, based on your requirements. -->
 
 <!--
 ## Send Email {#send-email}
@@ -87,7 +87,7 @@ ht-degree: 100%
 To send an email to one or more recipients upon successful submission of the form, you can use the **[!UICONTROL Send Email]** Submit Action. 
 
 Refer to [configure the send email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md) to learn how to set up an Adaptive Form to send an email upon successful submission.
-[!NOTE]
+>[!NOTE]
 >
 >Send PDF via Email Submit Action is applicable only to Adaptive Forms that use XFA template as form model. 
 
@@ -125,7 +125,7 @@ For a comprehensive guide on the detailed steps to post or submit data to a REST
 
 ## Invoke an AEM Workflow {#invoke-an-aem-workflow}
 
-The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem). When a form is submitted, the selected workflow starts automatically. 
+The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). When a form is submitted, the selected workflow starts automatically. 
 
  [Integrate AEM Adaptive Form with AEM Workflow: Streamlining Business Processes](/help/forms/configure-submit-action-workflow.md) provides step-by-step instructions to seamlessly integrate AEM Workflow with Adaptive Forms, optimizing business processes and enhancing workflow automation.
 
@@ -141,7 +141,7 @@ The **[!UICONTROL Submit to Azure Blob Storage]** Submit Action connects an Adap
 
 AEM as a Cloud Service allows submitting data to Azure Storage from AEM Adaptive Forms. Learn how to [create and use Azure Blob Storage configuration in AEM Forms](/help/forms/configure-submit-action-azure-blob-storage.md) for efficient data storage. 
 
-To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja#deployment-process) to your Cloud Service instance.
+To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
 ## Submit to Power Automate {#microsoft-power-automate}
 
@@ -211,18 +211,14 @@ If end-user bypass those validations and submit the forms, the server again perf
 >[!NOTE]
 >
 >Server-side validation validates the form model. You are recommended to create a separate client library for validations and not mix it with other things like HTML styling and DOM manipulation in the same client library.
--->
 
-## 送信アクションに対するエラー処理 {#error-handling-on-submit-action}
+## Error handling on Submit Action {#error-handling-on-submit-action}
 
-AEM セキュリティおよび堅牢化ガイドラインの一環として、400.jsp、404.jsp、500.jsp などのカスタムエラーページを設定します。これらのハンドラーは、フォーム送信時に 400、404 または 500 エラーが表示される場合に呼び出されます。また、これらのハンドラーは、公開ノードでこれらのエラーコードがトリガーされる場合にも呼び出されます。他の HTTP エラーコード用の JSP ページを作成することもできます。
+As a part of AEM security and hardening guidelines, configure custom error pages such as 400.jsp, 404.jsp, and 500.jsp. These handlers are called, when on submitting a form 400, 404, or 500 errors appear. The handlers are also called when these error codes are triggered on the Publish node. You can also create JSP pages for other HTTP error codes.
 
-フォームデータモデル（FDM）またはスキーマベースのアダプティブフォームを、スキーマに準拠した XML データや JSON データを使用して事前入力する、つまりデータが `<afData>`、`<afBoundData>`、`</afUnboundData>` のタグを含まない場合、アダプティブフォームの連結されていないフィールドのデータは失われます。スキーマには、XML スキーマ、JSON スキーマ、フォームデータモデル（FDM）を使用できます。境界なしのフィールドは、`bindref` プロパティを持たないアダプティブフォームフィールドです。
+When you prefill a form data model (FDM), or schema based Adaptive Form with XML or JSON data complaint to a schema that is data does not contain `<afData>`, `<afBoundData>`, and `</afUnboundData>` tags, then the data of unbounded fields of the Adaptive Form is lost. The schema can be an XML schema, JSON schema, or a Form Data Model (FDM). Unbounded fields are Adaptive Form fields without the `bindref` property.
 
-<!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
-
-
-<!--
+<!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). 
 ## See next
 
 * [Create style or themes for your forms](using-themes-in-core-components.md)
@@ -233,5 +229,5 @@ AEM セキュリティおよび堅牢化ガイドラインの一環として、4
 
 ## 関連トピック {#see-also}
 
-{{see-also}}
+{{af-submit-action}}
 

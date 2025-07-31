@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b61ffc522b6666a0f4b7fdb450d382b7231951cb
+source-git-commit: 504c89b2906478980f3e004aa40f098ffdfc687b
 workflow-type: tm+mt
-source-wordcount: '6522'
+source-wordcount: '6551'
 ht-degree: 99%
 
 ---
@@ -766,17 +766,9 @@ ht-degree: 99%
          + [AEM Forms as a Cloud Service と Adobe Analytics の統合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [アダプティブフォームと Adobe Analytics の統合](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [アダプティブフォーム分析レポートの表示と理解](/help/forms/view-understand-aem-forms-analytics-reports.md)
-         + [Adobe Workfront Fusion へのアダプティブフォームの送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-         + [アダプティブフォームと Microsoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
          + [AEM Sites ページへのアダプティブフォームの埋め込み](/help/forms/embed-adaptive-form-aem-sites.md)
          + [コアコンポーネントに基づくアダプティブフォームを外部 web ページに埋め込む](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
-         + [AEM Forms と Adobe Experience Platform（AEP）の統合](/help/forms/aem-forms-aep-connector.md)
          + [基盤コンポーネントに基づくアダプティブフォームを外部 web ページに埋め込む](/help/forms/embed-adaptive-form-external-web-page.md)
-         + アダプティブフォームと Adobe Marketo Engage の統合{#integrate-adaptive-form-with-market-engage}
-            + [Adobe Marketo Engage と AEM Forms の統合](/help/forms/integrate-form-to-marketo-engage.md)
-            + [Marketo Engage と統合する新しいフォームの設定](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-            + [既存のアダプティブフォーム用の Adobe Marketo Engage データソースの設定](/help/forms/use-marketo-engage-data-source-in-form.md)
-            + [既存のフォーム用の Marketo Engage に対する送信アクションの設定](/help/forms/submit-adaptive-form-to-marketo-engage.md)
       + フォームデータモデル {#use-form-data-model}
          + [AEM Forms をデータベースまたはデータソースに接続](/help/forms/data-integration.md)
          + [データソースの設定](/help/forms/configure-data-sources.md)
@@ -789,6 +781,29 @@ ht-degree: 99%
          + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
          + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
          + [アダプティブフォームの XML スキーマのデザイン](/help/forms/adaptive-form-xml-schema-form-model.md)
+      + アダプティブフォームの送信アクションの設定 {#set-submit-action}
+         + [アダプティブFormsでサポートされている送信アクション](/help/forms/aem-forms-submit-action.md)
+         + [基盤コンポーネントに基づいたアダプティブフォームの送信アクションの設定](/help/forms/configuring-submit-actions.md)
+         + [コアコンポーネントに基づくアダプティブフォームの送信アクションを設定する](/help/forms/configure-submit-actions-core-components.md)
+         + [Edge Delivery Services Formsの送信アクションを設定する](/help/forms/configure-submit-action-eds-forms.md)
+         + [アダプティブフォームのメール送信アクションの送信を設定する](/help/forms/configure-submit-action-send-email.md)
+         + [アダプティブフォームと Microsoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
+         + アダプティブフォームを Microsoft® SharePoint に接続{#connect-to-sharepoint}
+            + [Microsoft へのアダプティブフォームの接続](/help/forms/configure-submit-action-sharepoint.md)
+            + [SharePoint ドキュメントライブラリへの送信](/help/forms/connect-forms-to-sharepoint-document-library.md)
+            + [SharePoint リストへの送信](/help/forms/connect-forms-to-sharepoint-list.md)
+            + [認証範囲を使用した制限付きアクセスでの SharePoint サイトの設定](/help/forms/configure-sharepoint-site-limited-access.md)
+         + [Adobe Workfront Fusion へのアダプティブフォームの送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+         + [Azure Blob Storage にアダプティブフォームを送信する](/help/forms/configure-submit-action-azure-blob-storage.md)
+         + [アダプティブフォームの REST エンドポイント送信アクションへの送信を設定する](/help/forms/configure-submit-action-restpoint.md)
+         + [Microsoft へのアダプティブフォームの送信](/help/forms/configure-submit-action-onedrive.md)
+         + [AEM アダプティブフォームと AEM ワークフローを統合する](/help/forms/configure-submit-action-workflow.md)
+         + [AEM Forms と Adobe Experience Platform（AEP）の統合](/help/forms/aem-forms-aep-connector.md)
+         + アダプティブフォームと Adobe Marketo Engage の統合{#integrate-adaptive-form-with-market-engage}
+            + [Adobe Marketo Engage と AEM Forms の統合](/help/forms/integrate-form-to-marketo-engage.md)
+            + [Marketo Engage と統合する新しいフォームの設定](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [既存のアダプティブフォーム用の Adobe Marketo Engage データソースの設定](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [既存のフォーム用の Marketo Engage に対する送信アクションの設定](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + アダプティブフォーム {#adaptive-forms-authoring}
       + [アダプティブフォームの作成](/help/forms/create-an-adaptive-form.md)
       + [最適なアダプティブフォームの種類](/help/edge/docs/forms/authoring-a-form.md)
@@ -806,17 +821,6 @@ ht-degree: 99%
             + [機械翻訳または人間による翻訳を使用したアダプティブフォームの翻訳](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [リダイレクトページまたはお礼メッセージの設定](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [繰り返し可能なセクションを使用したフォームの作成](/help/forms/create-forms-repeatable-sections.md)
-            + [アダプティブフォームの送信アクションの設定](/help/forms/configure-submit-actions-core-components.md)
-            + [Azure Blob Storage にアダプティブフォームを送信する](/help/forms/configure-submit-action-azure-blob-storage.md)
-            + [Microsoft へのアダプティブフォームの送信](/help/forms/configure-submit-action-onedrive.md)
-            + アダプティブフォームを Microsoft® SharePoint に接続{#connect-to-sharepoint}
-               + [Microsoft へのアダプティブフォームの接続](/help/forms/configure-submit-action-sharepoint.md)
-               + [SharePoint ドキュメントライブラリへの送信](/help/forms/connect-forms-to-sharepoint-document-library.md)
-               + [SharePoint リストへの送信](/help/forms/connect-forms-to-sharepoint-list.md)
-               + [認証範囲を使用した制限付きアクセスでの SharePoint サイトの設定](/help/forms/configure-sharepoint-site-limited-access.md)
-            + [AEM アダプティブフォームと AEM ワークフローを統合する](/help/forms/configure-submit-action-workflow.md)
-            + [アダプティブフォームの REST エンドポイント送信アクションへの送信を設定する](/help/forms/configure-submit-action-restpoint.md)
-            + [アダプティブフォームのメール送信アクションの送信を設定する](/help/forms/configure-submit-action-send-email.md)
             + [アダプティブフォームでの Google reCAPTCHA の使用](/help/forms/captcha-adaptive-forms-core-components.md)
             + [アダプティブフォームコアコンポーネントでの hCaptcha の使用](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
             + [アダプティブフォームコアコンポーネントでの Turnstile Captcha の使用](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
@@ -889,7 +893,6 @@ ht-degree: 99%
          + [!DNL Adobe Sign] の使用 {#use-adobe-sign}
             + [Adobe Sign を使用したアダプティブフォームの電子サイン](/help/forms/working-with-adobe-sign.md)
          + 送信アクションとメタデータ送信の設定 {#configure-submit-actions-and-metadata-submission}
-            + [アダプティブフォームの送信アクションの設定](/help/forms/configuring-submit-actions.md)
             + [リダイレクトページの設定](/help/forms/configuring-redirect-page.md)
             + [アダプティブフォームの非同期送信を設定](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [カスタム送信アクションの作成](/help/forms/custom-submit-action-form.md)
