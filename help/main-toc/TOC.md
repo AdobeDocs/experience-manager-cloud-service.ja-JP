@@ -1233,7 +1233,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service の生成 AI](/help/generative-ai/generative-ai-in-aem.md)
    + [バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)
    + [バリエーションを生成](/help/generative-ai/generate-variations.md)
-   + [AEM AI アシスタント（Beta限定）](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [AEM AI アシスタント（Beta 限定）](/help/implementing/cloud-manager/aem-ai-assistant.md)
    + [AEM Forms AI アシスタント（Forms Experience Builder）（早期導入）](/help/edge/docs/forms/forms-ai-assistant.md)
    + [AEM Forms AI アシスタント – プロンプトライブラリ](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + 実装 {#implementing}
@@ -1505,7 +1505,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service のインフラストラクチャとサービスモニタリング](/help/operations/monitoring.md)
    + [メンテナンスタスク](/help/operations/maintenance.md)
    + [コンテンツを復元](/help/operations/restore.md)
-   + [以前にデプロイしたコードを復元（Alpha）](/help/operations/restore-previous-code-deployed.md)
+   + [デプロイした以前のコードを復元（Alpha）](/help/operations/restore-previous-code-deployed.md)
    + [非同期ジョブ](/help/operations/asynchronous-jobs.md)
    + [設定パイプラインの使用](/help/operations/config-pipeline.md)
    + [汎用 Lucene インデックスの削除](/help/operations/removal-generic-lucene-index.md)
