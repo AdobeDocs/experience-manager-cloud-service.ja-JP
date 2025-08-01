@@ -4,10 +4,10 @@ description: このチュートリアルは、新しい Adobe Experience Manager
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: ht
-source-wordcount: '1853'
-ht-degree: 100%
+source-git-commit: 0e7375adb146c370a189127838d736290d1860ad
+workflow-type: tm+mt
+source-wordcount: '1849'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,6 @@ AEM Forms には、アダプティブフォームブロックと呼ばれるブ�
 ![Github リポジトリのワークフロー](/help/edge/assets/repo-workflow.png){width=auto}
 
 このチュートリアルでは、ユニバーサルエディターの WYSIWYG オーサリングを使用して、新規または既存の Adobe Experience Manager サイトプロジェクトで独自のフォームを作成、プレビュー、公開する方法について説明します。
-
 
 ## 前提条件
 
@@ -66,16 +65,16 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
 1. 次に、AEM Forms ボイラープレートを使用して作成した GitHub リポジトリを AEM プロジェクトオーサリング環境にリンクします。接続する手順は、次のとおりです。
 
    1. AEM Forms ボイラープレートを使用して以前に作成した GitHub リポジトリに移動します。
-   1. **fstab.yaml** ファイルを編集用に開きます。
+   1. **fstab.yaml** ファイルをルートフォルダーに追加します。
 
       ![fstab.yaml ファイルを開く](/help/edge/docs/forms/assets/open-fstab.png)
 
-   1. **fstab.yaml** ファイルを編集して、プロジェクトのマウントポイントを更新します。URL を AEM as a Cloud Service オーサリングインスタンスの URL に置き換えます。
+   1. プロジェクトのマウントポイントを **fstab.yaml** ファイルに追加します。 AEM as a Cloud Service オーサリングインスタンスの URL を追加します。
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![fstab.yaml ファイルを編集](/help/edge/docs/forms/assets/edit-fstab-file.png)
 
-   1. 参照を更新し、すべてが正しく表示されたら、更新された **fstab.yaml** ファイルをコミットします。
+   1. **fstab.yaml** ファイルをコミットします。参照を追加すると、問題なく表示されます。
 
       ![変更をコミット](/help/edge/docs/forms/assets/commit-fstab-changes.png)
 
@@ -176,7 +175,7 @@ GitHub プロジェクトが完成したら、AEM as a Cloud Service オーサ�
    * [フォームブロック](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)フォルダー
    * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) ファイル
    * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) ファイル
-1. AEM プロジェクトの `/scripts/editor-support.js` ファイルに移動し、[AEM Forms ボイラープレート内の editor-support.js ファイル](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)で更新します。
+1. AEM プロジェクトの `/scripts/editor-support.js` ファイルに移動し、[AEM Forms ボイラープレート内の editor-support.js file ファイル](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)を使用して更新します。
 1. AEM プロジェクトの `/models/_section.json` に移動し、「form」と「embed-adaptive-form」を `filters` オブジェクトのコンポーネント配列に追加します。
 
    ```
@@ -203,7 +202,7 @@ GitHub プロジェクトが完成したら、AEM as a Cloud Service オーサ�
    scripts/editor-support-rte.js
    ```
 
-1. （オプション）AEM プロジェクトの `/.eslintrc.js` に移動して、`rules` オブジェクトに次のコード行を追加します。
+1. （オプション）AEM プロジェクトの `/.eslintrc.js` に移動し、`rules` オブジェクトに次のコード行を追加します。
 
    ```
    'xwalk/max-cells': ['error', {
