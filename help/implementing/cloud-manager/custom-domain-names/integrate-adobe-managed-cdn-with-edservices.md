@@ -74,9 +74,9 @@ Edge Delivery Servicesは、次の 2 つのオプションのいずれかを使�
  – 両方のデプロイメントモデルで必須。 AEM サイトでオンボーディングを行います。
 
 2. 独自の Git の取り込み（BYOG）（オプション）
-- Adobe Git の外部にサイトコードを保存する場合は、BYOG のオンボーディングを実施します。
+&#x200B;- Adobe Git の外部にサイトコードを保存する場合は、BYOG のオンボーディングを実施します。
 
 3. Edge Delivery ライセンス
-- プログラムがEdge Delivery Servicesのライセンスを取得していることを確認します。
+&#x200B;- プログラムがEdge Delivery Servicesのライセンスを取得していることを確認します。
 
 
