@@ -5,10 +5,10 @@ exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 58a0cb3fab9f3be1ff431aa5814797b6e6675265
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 100%
+source-wordcount: '1997'
+ht-degree: 95%
 
 ---
 
@@ -16,8 +16,7 @@ ht-degree: 100%
 
 >[!CAUTION]
 >
->* AEM コンテンツフラグメントは、Adobe Target のデフォルトのワークスペースに書き出されます。
->* [Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)で説明されている手順に従って、AEM と Adobe Target を統合する必要があります。
+>[Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)で説明されている手順に従って、AEM と Adobe Target を統合する必要があります。
 
 Adobe Experience Manager as a Cloud Service（AEM）で作成された[コンテンツフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)を Adobe Target（Target）に書き出すことができます。書き出したエクスペリエンスフラグメントは、Target アクティビティのオファーとして使用し、幅広くエクスペリエンスをテストおよびパーソナライズできます。
 
@@ -70,50 +69,24 @@ AEM コンテンツフラグメントを Adobe Target に書き出すための�
 
 * 書き出しに使用する形式オプションを指定する
 * Target ワークスペースを宛先として選択する
-* コンテンツフラグメントに含まれる参照を書き換えるための Externalizer ドメインを選択する（オプション）
 
-必要なオプションは、必要なフォルダーやフラグメント、または両方の&#x200B;**ページのプロパティ**&#x200B;で選択できます。仕様は必要に応じて継承されます。
+必要なオプションは、必要なフォルダーの **プロパティ** で選択できます。仕様は必要に応じて継承されます。
 
 1. **Assets** コンソールに移動します。
 
-1. 適切なフォルダーまたはフラグメントの&#x200B;**ページのプロパティ**&#x200B;を開きます。
+1. 適切なフォルダーの **プロパティ** を開きます。
 
    >[!NOTE]
    >
    >クラウド設定をコンテンツフラグメントの親フォルダーに追加した場合、設定はすべての子に継承されます。
-   >
-   >クラウド設定をコンテンツフラグメント自体に追加した場合、設定はすべてのバリエーションに継承されます。
 
 1. 「**クラウドサービス**」タブを選択します。
 
-1. **クラウドサービス設定**&#x200B;で、ドロップダウンリストから「**Adobe Target**」を選択します。
+1. **Cloud Service設定** で、ドロップダウンリストからターゲット設定を選択します。
 
-   <!-- is this note appropriate? -->
+1. Adobe Target Workspace を選択します。
 
-   >[!NOTE]
-   >
-   >コンテンツフラグメントオファーの JSON 形式はカスタマイズできます。それには、顧客のコンテンツフラグメントコンポーネントを定義したあと、そのコンポーネントのプロパティを書き出す方法についてコンポーネントの Sling Model に注釈を付けます。
-   >
-   >詳しくは、コアコンポーネントガイドの[コアコンポーネント - コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ja)を参照してください。
-
-1. **Adobe Target** で以下を選択します。
-
-   * 適切な設定
-   * 必要な形式オプション
-   * Adobe Target ワークスペース
-   * Externalizer ドメイン（必要な場合）
-
-   >[!CAUTION]
-   >
-   >Externalizer ドメインはオプションです。
-   >
-   > AEM Externalizer を設定するのは、コンテンツの書き出し先を特定の&#x200B;*パブリッシュ*&#x200B;ドメインに指定する場合です。詳しくは、[AEM Link Externalizer の設定](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer)を参照してください。
-   >
-   > また、Externalizer ドメインは、Target に送信されるコンテンツフラグメントのコンテンツにのみ関連し、「オファーコンテンツを表示」などのメタデータとは関係ありません。
-
-   例えば、フォルダーの場合は下図のようになります。
-
-   <!-- need a new screenshot -->
+   例：
 
    ![フォルダー - Cloud Services](assets/cf-target-integration-01.png "フォルダー - Cloud Services")
 
@@ -139,7 +112,7 @@ AEM が Adobe Target とやり取りできるようにするには、Target ク�
 
 AEMで Target クラウド設定を作成するには、以下の手順を実行します。
 
-1. **AEM ロゴ**／**ツール**／**クラウドサービス**／**従来のクラウドサービス**&#x200B;を使用して、**従来のクラウドサービス**&#x200B;に移動します。（例：[http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)）
+1. **AEM ロゴ**／**ツール**／**クラウドサービス**／**従来のクラウドサービス**&#x200B;を使用して、**従来のクラウドサービス**&#x200B;に移動します。例：（[http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)）
 
    **Adobe Experience Cloud** の概要ページが開きます。
 
@@ -220,7 +193,7 @@ AEMで Target クラウド設定を作成するには、以下の手順を実行
      >
      >正確なターゲティングとは、クラウドサービスの設定が、コンテキストの読み込みを待ってからコンテンツを読み込むことを意味します。その結果、パフォーマンスに関しては、正確なターゲティングによって、コンテンツを読み込む前に数ミリ秒の遅延が生じる場合があります。
      >
-     >正確なターゲティングは、オーサーインスタンスで常に有効になっています。ただし、パブリッシュインスタンスでは、クラウドサービス設定（**http://localhost:4502/etc/cloudservices.html**）の「正確なターゲティング」の横にあるチェックマークをオフにすることで、正確なターゲティングをグローバルにオフにできますまた、クラウドサービス設定での設定に関係なく、個々のコンポーネントに対して正確なターゲティングのオン／オフを切り替えることもできます。
+     >正確なターゲティングは、オーサーインスタンスで常に有効になっています。ただし、パブリッシュインスタンスでは、クラウドサービス設定（**http://localhost:4502/etc/cloudservices.html**）の「正確なターゲティング」の横にあるチェックマークをオフにすることで、正確なターゲティングをグローバルにオフにできます また、クラウドサービス設定での設定に関係なく、個々のコンポーネントに対して正確なターゲティングのオン／オフを切り替えることもできます。
      >
      >この設定を変更しても、作成済みの対象コンポーネントには影響しません&#x200B;***。***&#x200B;これらのコンポーネントには直接変更を加える必要があります。
 
@@ -267,7 +240,7 @@ Target クラウド設定を設定したら、Target フレームワークを追
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=ja).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >
