@@ -2,8 +2,8 @@
 title: コンテンツハブユーザーインターフェイスの設定
 description: コンテンツハブユーザーインターフェイスの設定
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 4fb2ca8123dfd5a0d3244b9d5966cd8bb7eeaf09
-workflow-type: ht
+source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
+workflow-type: tm+mt
 source-wordcount: '2089'
 ht-degree: 100%
 

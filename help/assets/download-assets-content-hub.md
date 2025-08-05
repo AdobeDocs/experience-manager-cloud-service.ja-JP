@@ -3,10 +3,10 @@ title: Content Hub からのアセットのダウンロード
 description: 1 つまたは複数のアセットとそのレンディションを Content Hub ポータルからダウンロードする方法について説明します。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
-workflow-type: ht
-source-wordcount: '814'
-ht-degree: 100%
+source-git-commit: 37b5404f0814abb3605a26e7933cc3a01ebcf96e
+workflow-type: tm+mt
+source-wordcount: '831'
+ht-degree: 97%
 
 ---
 
@@ -138,6 +138,10 @@ The dialog box that displays depends on whether the download list includes expir
   スマート切り抜きレンディションは、[OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) にアクセスできる場合にのみ表示され、ダウンロードできます。スマート切り抜きレンディションは、画像アセットに対してのみ使用できます。
 
   ![レンディションタイプ](/help/assets/assets/renditions-types.png)
+
+  >[!NOTE]
+  > 
+  > ダウンロードパネルには、カスタムの静的レンディションのみが表示されます。 デフォルトの `cq5dam.*` サムネールがContent Hubに表示されません。
 
 ### 動的レンディションの有効化 {#enable-dynamic-media-renditions}
 

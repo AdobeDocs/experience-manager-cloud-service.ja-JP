@@ -2,10 +2,10 @@
 title: コンテンツハブに関するよくある質問（FAQ）
 description: コンテンツハブに関するよくある質問（FAQ）への回答を参照してください。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
-workflow-type: ht
-source-wordcount: '1496'
-ht-degree: 100%
+source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
+workflow-type: tm+mt
+source-wordcount: '1669'
+ht-degree: 90%
 
 ---
 
@@ -134,5 +134,29 @@ AEM as a Cloud Service 環境でコンテンツハブを使用してアップロ
 |  | 管理者によってピン留めされたコレクション | ✓ | − |
 |  | セマンティック検索 | ✓ | − |
 |  | ローカライズされた検索とメタデータの表示 | ✓ | − |
+
+## 選択した環境のアセットのみを表示するリポジトリーを選択するにはどうすればよいですか？ {#select-repository-multiple-environments}
+
+Content Hubを実稼動用に設定し、他の下位環境に同じプログラムを設定した場合は、リポジトリーを選択し、選択した環境用のアセットを表示できます。 次の手順を実行します。
+
+1. 右側のパネルでユーザーアイコンをクリックします。
+
+1. 「**[!UICONTROL 製品設定]**」セクションで、「**[!UICONTROL リポジトリを選択]**」を選択します。
+
+1. **[!UICONTROL リポジトリ]** ドロップダウンメニューからリポジトリを選択し、「**[!UICONTROL OK]**」をクリックして確定します。
+
+   選択した環境のアセットがContent Hubに表示されるようになりました。
+
+## Content Hubで.ZIP ファイルタイプのサムネールプレビューを表示する方法 {#thumbnail-preview-zip-file}
+
+Content Hubで.ZIP などのファイルタイプのサムネールプレビューを提供するには、.ZIP が使用可能なAEM as a Cloud Service オーサリング環境のパスのルートに、`cq5dam.preview.jpg` または `cq5dam.preview.png` という名前のレンディションを追加します。
+
+レンディションとして追加する画像：
+
+* JPG、JPEG、PNG のいずれかの形式です。
+
+* 50 MB 未満である必要があります
+
+使用可能な場合、Content Hubはこの画像をContent Hub上の.ZIP ファイルのプレビューサムネールとして表示します。
 
 
