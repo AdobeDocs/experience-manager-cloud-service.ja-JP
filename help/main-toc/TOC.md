@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 504c89b2906478980f3e004aa40f098ffdfc687b
+source-git-commit: 0e55162f7faf34f6bedf4e25dba9e1e91396fb8d
 workflow-type: tm+mt
-source-wordcount: '6551'
+source-wordcount: '6553'
 ht-degree: 99%
 
 ---
@@ -1017,6 +1017,7 @@ ht-degree: 99%
    + [Screens as a Cloud Service の FAQ](/help/screens-cloud/screens-cloud-faqs.md)
 + コンテンツとコマース {#content-and-commerce}
    + [概要](/help/commerce-cloud/introduction.md)
+   + [CIFについて](/help/commerce-cloud/cif-introduction.md)
    + [AEM Content and Commerce as a Cloud Service の主な変更点](/help/commerce-cloud/changes.md)
    + コマースジャーニー {#journeys}
       + コンテンツ作成者ジャーニー {#author}

@@ -1,87 +1,64 @@
 ---
 title: 概要
-description: Experience Manager Content and Commerce as a Cloud Service の使用方法と管理方法について説明します。
+description: 様々なストアフロントオプションについて
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 145cd4961bd9c0c7bb7e39a1d6dae67f240ecb4d
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 100%
+source-wordcount: '635'
+ht-degree: 1%
 
 ---
 
 
 # コンテンツとコマース {#content-commerce}
 
-Adobe Experience Manager の Content and Commerce を使用すると、ブランドはスケーリングとイノベーションをより迅速に行って、コマースエクスペリエンスを差別化し、加速するオンライン消費支出に対応できます。AEM Content and Commerce は、Experience Manager で提供される没入感のあるパーソナライズされたオムニチャネルエクスペリエンスを任意の数のコマースソリューションと組み合わせて、差別化されたエクスペリエンスをショッピングジャーニーのあらゆる部分に提供し、価値創出までの時間を短縮すると共にコンバージョンの向上を促します。
+インテントベースの高パフォーマンスなコマースエクスペリエンスに対する顧客の期待が高まるにつれ、ブランドは品質を犠牲にすることなく、より多くのコンテンツをより迅速に提供しなければならないというプレッシャーにさらされています。 Adobe Experience Managerを使用すると、ブランドはスケーリングとイノベーションをより迅速に行い、臨場感のあるコマースエクスペリエンスを作成し、より多くのトラフィックを取り込み、増加するオンライン支出を獲得できます。
 
-## AEM Content and Commerce が顧客の成功にどのように役立つか {#successful}
+Adobe Experience Managerには、コンテンツに富み、パーソナライズされたカスタマーエクスペリエンスを作成および管理する強力なツールが用意されています。 AEMをAdobe Commerce、Salesforce Commerce、SAP Commerce Cloudなどのコマースソリューションと統合することで、ブランドはコンテンツとコマースを統合し、あらゆるチャネルにわたってシームレスなショッピングジャーニーを実現できます。
 
-オンラインコマースエクスペリエンスに対する顧客の期待がますます高まる中、ブランドは差別化されたエクスペリエンスとより多くのコンテンツをより迅速に提供しなければならないというプレッシャーにさらされています。ただし、コンテンツ管理プラットフォームの実装には、多くの場合、カスタムコンポーネントやオーサリングツールなどの基礎的要素の開発に多くの時間と予算投資が必要で、メンテナンスやアップグレードのコストが発生します。Experience Manager Sites は、Adobe Experience Manager as a Cloud Service のアドオンモジュールとして Content and Commerce を提供します。このアドオンは、標準搭載のコマースコアコンポーネント、オーサリングツール、参照ストアフロントを提供して、運用開始を早め、チーム間のシームレスなコラボレーションを可能にし、コンバージョンを促進します。
+## ストアフロントのアプローチの概要 {#overview}
 
-ブランドでは、Experience Manager を、Adobe Experience Cloud の一部である Adobe Commerce のほか任意のコマースエンジンと統合できます。Experience Manager Content and Commerce の利用で、ブランドは以下を実現できます。
+AEMは、状況と好みに基づいてお客様をサポートできます。 次のガイダンスを使用して、適切なアプローチを選択してください。
 
-* スケーリングとイノベーションの迅速化
-* エクスペリエンスのパーソナライズによるコンバージョンの促進
-* 1 回の作成であらゆる場所に公開
-* 顧客のエクスペリエンスの拡充と差別化
-* コマースデータへのアクセスによるオーサリングの効率化
+* [Edge Delivery Servicesの使用（推奨）](#edge)
+* [独自のストアフロントの使用（ヘッドレス AEM統合）](#own-storefront)
+* [AEM CIF ストアフロントの使用](#cif)
 
-## AEM Commerce Integration Framework（CIF）の概要  {#cif-intro}
+### Edge Delivery Servicesの使用（推奨） {#edge}
 
-これらのプロジェクトは、コマースソリューションの統合の複雑さに対処する必要があります。コマースソリューションは、Adobe Commerce Cloud などの商用ソリューションから一連のカスタムコマースサービスまで、何でもかまいません。この統合は、ユースケースとエコシステムに大きく依存しています。通常は、次のように、様々な場所に影響し、様々な種類があります。
+企業が Web 上で最も速く、AI に優しいストアフロントを求めており、開発者が最先端の開発者向けエクスペリエンスを求めている場合は、[Edge Delivery Servicesを使用してください。Edge Delivery Services](../edge/overview.md)、今日および将来の要件をすべて満たしています。 バックエンドとソリューションによっては、次のように異なるオプションがあります。
 
-* 複雑で動的なエコシステムの統合（例：製品カタログ）
-* 製品コンテンツを独自のライフサイクルで効率的かつオムニチャネル方式で管理する必要性
-* 様々な個人に対応する複雑でパーソナライズされたショッピングジャーニーの構築
-* バックエンドとフロントエンドで迅速に適応および革新できる能力
-* ピークパフォーマンス（フラッシュセールやブラックフライデーなど）に対応できる、拡張性と安定性に優れた E2E インフラストラクチャの稼働。これには、統合検索やキャッシュ管理などが含まれます。
+#### &#x200B;1. Adobe Commerce as a Cloud Serviceとの統合 {#acaacs}
 
-こうした複雑が、潜在的な障害点、TCO の増加、遅延、価値実現の低下の原因になります。これらの理由により、Experience Manager のアドオンである Commerce Integration Framework（CIF）が開発されました。CIF は、Experience Manager にコマース機能を追加するもので、コマースエンジンとの統合を標準化します。その結果、安定性と拡張性に優れ TCO が少なく将来性の確かなソリューションを実現できるようになりました。それを利用すれば、俊敏性の高いツールおよびシームレスに統合された機能で技術とビジネスのイノベーションを切り拓いて、魅力的なコマースエクスペリエンスを構築できます。
+これは、Edge Deliveryと [0}Adobe Commerce ストアフロント } を出発点として使用する場合に最適なソリューションです。 ](https://experienceleague.adobe.com/developer/commerce/storefront/)ストアフロントには、Adobe Commerce サービス、API と事前統合されたボイラープレートが付属しており、ストアフロントを迅速に構築するための様々なCommerce ドロップインコンポーネントを提供します。
 
-![CIF 要素](./assets/CIF/CIF_Overview.png)
+サイズの適合：Adobe Commerce as a Cloud Serviceでの一般的なストアフロントのエクスペリエンス
 
-## 2013 年以降の CIF による顧客サポートの成功 {#support}
+#### &#x200B;2. Adobe Commerce Optimizerとの統合（サードパーティ製ソリューションの場合） {#aco}
 
-200 社を超える顧客とのコラボレーションを通じて、CIF は、コンテンツおよびコマースプロジェクトを成功に導くための構成要素としての地位を確立しました。これにより、現在および将来にわたって IT とビジネスに価値がもたらされます。最近の顧客プロジェクトでは、CIF を「プロセスの促進と時間の節約に大きく貢献し多大な価値をもたらすもの」と説明しています。
+既存のコマースソリューションを統合してカタログのパフォーマンスを高める場合、Adobeでは、[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview) を最新の統合レイヤーとして使用することをお勧めします。 Commerce Optimizerは、カタログおよびマーチャンダイジング向けの高性能な SaaS サービスを提供することで、コマースソリューションを強化します。 Adobe Commerce as a Cloud Serviceと同様、[Adobe Commerce ストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/) もすぐに使用できます。
 
-## CIF の利点 {#cif-benefits}
+Salesforce Commerceなどの商用コマースソリューションとの統合が可能です。 Adobe担当者にお問い合わせください。
 
-CIF には、カスタムコードの必要性を軽減する標準搭載のコマースコアコンポーネントが用意されているので、ブランドが市場投入までの時間を短縮できます。すべてのコアコンポーネントは、アドビのクライアントサイドデータレイヤーと標準で統合されており、統合プロファイルなどの顧客プロファイルを改善します。このプロファイルには、訪問者の行動が詳細にとらえられているので、カスタマージャーニーをリアルタイムで予測およびパーソナライズする目的で使用できます。
+最適：既存のコマースソリューションを使用した一般的なストアフロントのエクスペリエンス
 
-CIF アドオンは、Experience Manager に製品コンテキストを導入し、製品コンソールや製品／カテゴリピッカーなどのオーサリングツールを提供します。これらのツールをマーケターが利用すれば、開発者に頼らずに Experience Manager でショッパブルエクスペリエンスを作成して提供できます。以下のような利点があります。
+#### &#x200B;3. カスタム統合 {#custom}
 
-### エクスペリエンス {#experiences}
+Adobeでは、カスタム統合を構築する場合に、Edge Delivery Servicesを使用することをお勧めします。 最初から開始するか、Edge Delivery ストアフロントで既存の JS-framework コマースコンポーネント（トランザクション部分の場合など）を再利用できます。 これにより、顧客は代理店に優しい超高速のショッピングエクスペリエンスを得ることができますが、既存の投資を再利用して TTV を増やすことができます。 開始点はデフォルトの [Edge Delivery ボイラープレート ](https://www.aem.live/developer/tutorial) です。
 
-AEM の強力な CIF ツールを使用すると、コンテンツ作成者は、配信にとらわれない拡張可能な形で、機能豊富なパーソナライズされたコマースエクスペリエンスを迅速に構築して、ビジネスチャンスを十分に生かすことができます。
+適切なサイズ：Edge配信ストアフロントの価値が低い
 
-![CIF 要素](./assets/CIF/CIF_Product_Experience_Management.png)
+### 独自のストアフロントの使用（ヘッドレス AEM統合） {#own-storefront}
 
-### 価値創出までの時間（TTV） {#ttv}
+既存のストアフロント（React JS で構築など）があり、コンテンツの管理と配信（コンテンツフラグメント）、アセットおよびコンテキスト内編集（ユニバーサルエディター）にAdobe Experience Managerを使用する場合。 統合の出発点は、[Adobe Experience Manager as a ヘッドレス CMSの概要 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/introduction) および [CIF アドオン ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content) です。 CIF アドオンを使用すると、商品データをAEM（AEM UI 内で商品を検索、参照、検索する）にシームレスに統合し、コマース固有のエクスペリエンスを構築できます。
 
-[AEM コアコンポーネント](https://www.aemcomponents.dev/)、[AEM Venia 参照ストアフロント](https://github.com/adobe/aem-cif-guides-venia)、[AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)、PWA（プログレッシブ Web アプリ）の統合パターン（ヘッドレスコンテンツおよびコマース）などで、プロジェクトの開発を促進します。
+### AEM CIF ストアフロント {#cif}
 
-CIF は、常に最新のアドオンを使用した継続的なイノベーションを目的として構築されており、顧客は新機能や改善された機能にアクセスできます。
+Adobeの推奨事項と参照アーキテクチャは、Edge Delivery Servicesを使用することです。 AEM CIF コアコンポーネントを含むCIF ストアフロントは、現在メンテナンスモードになっており、新しいプロジェクトでは使用しないでください。 参照については、[CIFのドキュメントを参照してください。](/help/commerce-cloud/cif-introduction.md)
 
-### 統合 {#integrations}
-
-[Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html)、マイクロサービスベースのサーバーレス PaaS、[CIF の参照実装](https://github.com/adobe/commerce-cif-graphql-integration-reference)などを使用して、エコシステム（例：コマースソリューション）を Experience Cloud に接続します。
-
-## 実証済みのパターンとベストプラクティス {#proven}
-
-CIF は、ベストプラクティスに基づく標準化された統合パターンで顧客をサポートします。顧客の現在の成功に役立つほか、顧客と共に成長し将来の要件にも対応できる柔軟性を備えています。具体的には次のとおりです。
-
-* 製品カタログの統合に関して発生する可能性のある典型的な問題を排除します。例：
-   * カタログの量や複雑さの増大に伴ってパフォーマンスが低下
-   * ステージング済みデータにアクセスできない
-   * リアルタイムの製品データおよびエクスペリエンスが必要
-* デジタル成熟度が高まると、エクスペリエンス管理が必要になります。CIF には、追加の IT 作業を行わずに増分的に組み込むことができる製品エクスペリエンス管理機能が付属しています。
-* オムニチャネルに対応：CIF は、パターン、アクセラレーター、コアコンポーネントで様々なタッチポイントテクノロジー（サーバーサイド、ハイブリッド、クライアントサイド）をサポートしています。
-
-## ジャーニー {#journey}
-
-コマースジャーニーを続けている場合は、次の手順に進んでください。
-
-* [AEM コンテンツ作成者ジャーニー](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
+>[!NOTE]
+>
+>AEMまたはCommerceの新しい機能の活用を検討している既存のお客様は、web サイトをEdge Deliveryに移行する必要があります。 一般的なパターンは、ページのサブセットのみをEdge Deliveryに移動し、Edge Deliery ページとCIF ページを並べて実行することから始めます。 また、新しいCommerce機能を活用するために、AEM CIF コンポーネントを新しい [Commerce ドロップインコンポーネント ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) に置き換えることもできます。
