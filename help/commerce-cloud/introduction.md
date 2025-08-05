@@ -33,13 +33,13 @@ AEMは、状況と好みに基づいてお客様をサポートできます。 �
 
 #### &#x200B;1. Adobe Commerce as a Cloud Serviceとの統合 {#acaacs}
 
-これは、Edge Deliveryと [0&rbrace;Adobe Commerce ストアフロント &rbrace; を出発点として使用する場合に最適なソリューションです。 ](https://experienceleague.adobe.com/developer/commerce/storefront/)ストアフロントには、Adobe Commerce サービス、API と事前統合されたボイラープレートが付属しており、ストアフロントを迅速に構築するための様々なCommerce ドロップインコンポーネントを提供します。
+これは、Edge Deliveryと [0&rbrace;Adobe Commerce ストアフロント &rbrace; を出発点として使用する場合に最適なソリューションです。 ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)ストアフロントには、Adobe Commerce サービス、API と事前統合されたボイラープレートが付属しており、ストアフロントを迅速に構築するための様々なCommerce ドロップインコンポーネントを提供します。
 
 サイズの適合：Adobe Commerce as a Cloud Serviceでの一般的なストアフロントのエクスペリエンス
 
 #### &#x200B;2. Adobe Commerce Optimizerとの統合（サードパーティ製ソリューションの場合） {#aco}
 
-既存のコマースソリューションを統合してカタログのパフォーマンスを高める場合、Adobeでは、[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview) を最新の統合レイヤーとして使用することをお勧めします。 Commerce Optimizerは、カタログおよびマーチャンダイジング向けの高性能な SaaS サービスを提供することで、コマースソリューションを強化します。 Adobe Commerce as a Cloud Serviceと同様、[Adobe Commerce ストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/) もすぐに使用できます。
+既存のコマースソリューションを統合してカタログのパフォーマンスを高める場合、Adobeでは、[Adobe Commerce Optimizer](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview) を最新の統合レイヤーとして使用することをお勧めします。 Commerce Optimizerは、カタログおよびマーチャンダイジング向けの高性能な SaaS サービスを提供することで、コマースソリューションを強化します。 Adobe Commerce as a Cloud Serviceと同様、[Adobe Commerce ストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) もすぐに使用できます。
 
 Salesforce Commerceなどの商用コマースソリューションとの統合が可能です。 Adobe担当者にお問い合わせください。
 
@@ -53,7 +53,7 @@ Adobeでは、カスタム統合を構築する場合に、Edge Delivery Service
 
 ### 独自のストアフロントの使用（ヘッドレス AEM統合） {#own-storefront}
 
-既存のストアフロント（React JS で構築など）があり、コンテンツの管理と配信（コンテンツフラグメント）、アセットおよびコンテキスト内編集（ユニバーサルエディター）にAdobe Experience Managerを使用する場合。 統合の出発点は、[Adobe Experience Manager as a ヘッドレス CMSの概要 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/introduction) および [CIF アドオン ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content) です。 CIF アドオンを使用すると、商品データをAEM（AEM UI 内で商品を検索、参照、検索する）にシームレスに統合し、コマース固有のエクスペリエンスを構築できます。
+既存のストアフロント（React JS で構築など）があり、コンテンツの管理と配信（コンテンツフラグメント）、アセットおよびコンテキスト内編集（ユニバーサルエディター）にAdobe Experience Managerを使用する場合。 統合の出発点は、[Adobe Experience Manager as a ヘッドレス CMSの概要 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/headless/introduction) および [CIF アドオン ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content) です。 CIF アドオンを使用すると、商品データをAEM（AEM UI 内で商品を検索、参照、検索する）にシームレスに統合し、コマース固有のエクスペリエンスを構築できます。
 
 ### AEM CIF ストアフロント {#cif}
 
@@ -61,4 +61,4 @@ Adobeの推奨事項と参照アーキテクチャは、Edge Delivery Services�
 
 >[!NOTE]
 >
->AEMまたはCommerceの新しい機能の活用を検討している既存のお客様は、web サイトをEdge Deliveryに移行する必要があります。 一般的なパターンは、ページのサブセットのみをEdge Deliveryに移動し、Edge Deliery ページとCIF ページを並べて実行することから始めます。 また、新しいCommerce機能を活用するために、AEM CIF コンポーネントを新しい [Commerce ドロップインコンポーネント ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) に置き換えることもできます。
+>AEMまたはCommerceの新しい機能の活用を検討している既存のお客様は、web サイトをEdge Deliveryに移行する必要があります。 一般的なパターンは、ページのサブセットのみをEdge Deliveryに移動し、Edge Deliery ページとCIF ページを並べて実行することから始めます。 また、新しいCommerce機能を活用するために、AEM CIF コンポーネントを新しい [Commerce ドロップインコンポーネント ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=ja) に置き換えることもできます。
