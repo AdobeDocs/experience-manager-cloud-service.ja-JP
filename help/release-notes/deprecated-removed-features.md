@@ -1,11 +1,11 @@
 ---
 title: 廃止される機能および削除された機能
 description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の非推奨（廃止予定）の機能と削除された機能）。
-mini-toc-levels: 2
+mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 6c7d7823fbe8440d414461c61d37681c5f205418
+source-git-commit: fbe20eb0e57be3a6d02d163d92b13be060ac8ba6
 workflow-type: tm+mt
 source-wordcount: '3193'
 ht-degree: 100%
