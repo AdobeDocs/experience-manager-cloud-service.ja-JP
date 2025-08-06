@@ -3,22 +3,21 @@ title: OpenAPI 機能を備えた Dynamic Media に関するよくある質問
 description: OpenAPI 機能を備えた Dynamic Media に関するよくある質問
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1520'
-ht-degree: 100%
+source-git-commit: 4c346ea4bd3ddea7f5f9f14af56a0b3ec779f9f9
+workflow-type: tm+mt
+source-wordcount: '1572'
+ht-degree: 87%
 
 ---
 
 # OpenAPI 機能を備えた Dynamic Media に関するよくある質問 {#new-dynaminc-media-apis-frequently-asked-questions}
 
-+++**Experience Manager Assets as a Cloud Service リポジトリ内のすべてのアセットは、OpenAPI 機能を備えた Dynamic Media を使用した検索および配信で使用できますか？**
+## Experience Manager Assets as a Cloud Service リポジトリー内のすべてのアセットは、OpenAPI 機能を備えた Dynamic Media を使用して検索および配信できますか？ {#assets-available-for-search}
 
 いいえ、OpenAPI 機能を備えた Dynamic Media を使用した検索および配信に使用できるのは、[承認済みの最新バージョンのアセット](/help/assets/approve-assets.md)のみで、すべてのチャネルとアプリケーションでブランドの一貫性が確保されます。
 
-+++
 
-+++**管理者は、フォルダーに追加された新規および既存のアセットを承認済みとしてマークするにはどうすればよいですか？**
+## 管理者は、フォルダーに追加された新規アセットや既存のアセットをどのように承認済みとしてマークできますか？ {#add-assets-to-folder-as-approved}
 
 Experience Manager Assets 内のアセットのステータスは、`jcr:content/metadata/dam:status` プロパティによって管理されます。このプロパティの値は次のとおりです。
 
@@ -50,15 +49,12 @@ Experience Manager Assets では、次の管理ビューとアセットビュー
 ![アセットビューの却下アセット](/help/assets/assets/rejected-assets-admin-view.png)
 
 
-+++
-
-+++**配信と検索のエクスペリエンスの保護で、Experience Manager 管理ビューでアセットの役割を設定するために使用する Adobe IMS（Adobe Identity Management サービス）ユーザー ID またはグループ ID を取得するにはどうすればよいですか？**
+## 配信や検索のエクスペリエンスを保護するために、Adobe IMS（Adobe Identity Management Services）のユーザーまたはグループ ID をExperience Managerの管理者表示でアセットのロールを設定するために使用するにはどうすればよいですか？ {#set-roles-secure-delivery-search}
 
 Experience Manager オーサー環境へのアクセスを必要とするユーザーは、アドビの Admin Console の Adobe IMS ユーザーとして管理されます。Adobe IMS ユーザーの概要と、Admin Console でのアクセスと管理の方法について詳しくは、[Adobe IMS ユーザー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=ja)を参照してください。
 
-+++
 
-+++**フォルダー内で複数のアセットを同時に承認できますか？**
+## 1 つのフォルダー内で複数のアセットを同時に承認することはできますか？ {#approve-multiple-assets-in-folder}
 
 はい、フォルダー内の複数のアセットを同時に承認できます。
 
@@ -78,9 +74,7 @@ Experience Manager オーサー環境へのアクセスを必要とするユー�
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
 
-+++
-
-+++**アセット配信のセキュリティを確保して Dynamic Media OpenAPI を検索するにはどうすればよいですか？**
+## アセット配信のセキュリティを確保して Dynamic Media OpenAPI を検索するにはどうすればよいですか？ {#secure-asset-delivery}
 
 Experience Manager のアセットガバナンスを一元化すると、DAM 管理者またはブランド管理者はアセットへのアクセスを管理できます。役割を設定するか、オーサリング側、具体的には AEM as a Cloud Service オーサーインスタンスで承認済みアセットのアクティブ化と非アクティブ化の時間を設定して、アクセスを制限できます。
 
@@ -88,21 +82,18 @@ Experience Manager のアセットガバナンスを一元化すると、DAM 管
 
 詳しくは、[Experience Manager でのアセットへのアクセスの制限](restrict-assets-delivery.md#authoring)を参照してください。
 
-+++
 
-+++**アセットの承認ステータスを編集する権限を取得するにはどうすればよいですか？**
+## アセットの承認ステータスを編集する権限を取得するにはどうすればよいですか？ {#permissions-edit-approval-status}
 
 DAM ユーザーには、[アセットを承認](approve-assets.md#approve-assets)する権限がない可能性があります。アセットの承認ステータスを編集する権限を取得するには、管理者はアセットフォルダーに適用されているデフォルトまたはその他のメタデータスキーマを編集して、「**[!UICONTROL レビューステータス]**」フィールドに編集権限を付与できます。詳しくは、[レビューステータスの編集を無効にする方法](approve-assets.md#configuration)フィールドを参照してください。
 
-+++
 
-+++**サポートされているビデオのファイルサイズはどれくらいですか？**
+## ビデオでサポートされているファイルサイズはどれくらいですか？ {#supported-file-formats-videos}
 
 OpenAPI 機能を備えた Dynamic Media は、ロングフォームのビデオをサポートしています。ビデオは、最大 50 GB および 2 時間をサポートできます。
 
-+++
 
-+++**OpenAPI 機能を備えた Dynamic Media は、Dynamic Media ソリューションとどのように異なりますか？**
+## OpenAPI 機能を備えた Dynamic Media と Dynamic Media ソリューションの違い {#dynamic-media-and-dynamic-media-with-openapi-differences}
 
 OpenAPI 機能を備えた Dynamic Media と Dynamic Media はそれぞれ独自のソリューションで、それぞれが特殊な配信機能を提供します。必要に応じて最も適切なソリューションを決定するには、特定の要件を徹底的に検討することが不可欠です。
 
@@ -124,9 +115,8 @@ OpenAPI 機能を備えた Dynamic Media と Dynamic Media の主な違いは次
 | 入力ビデオに基づいて最適なエンコードが提供される Dynamic Video エンコード。ネイティブビデオ配信の設定は不要です。 | 標準 3 は、入力ビデオに関係なくエンコードします（ビデオ配信のパフォーマンスに影響を与える可能性があります）。異なるビデオのビットレートごとに様々なエンコードを手動で設定する必要があります。 |
 | アセット UID ベースの URL は推測が困難（URL の不明化が可能）ですが、SEO が最適化されています。 | URL の不明化は、URL クエリパラメータに対してのみ使用できます。URL 内のアセット ID（アセット名）は認識可能です。 |
 
-+++
 
-+++**OpenAPI 機能を備えた Dynamic Media は、接続されたアセット機能の制限にどのように対処しますか？**
+## OpenAPI 機能を備えた Dynamic Media は、Connected Assets機能の制限にどのように対応しますか？ {#dynamic-media-openapi-addresses-connected-assets-limitations}
 
 次の表に、2 つのソリューションの主な違いの概要を示します。
 
@@ -141,4 +131,14 @@ OpenAPI 機能を備えた Dynamic Media と Dynamic Media の主な違いは次
 | バージョンの更新やメタデータの変更など、リモート DAM デプロイメントで使用可能な承認済みアセットに行われた変更は、10 分という短い有効期間（TTL）値内に Sites インスタンスに自動的に反映されます。 | リモート DAM デプロイメントでのアセットの更新はライフサイクルイベントによって自動的に処理されますが、OpenAPI 機能を備えた Dynamic Media と比較すると、はるかに時間がかかります。 |
 | リモート DAM 上のアセットメタデータは、AEM Sites インスタンスでも使用できます。 | リモート DAM 上のアセットメタデータは、AEM Sites インスタンスでは使用できません。 |
 
-+++
+## 一部の修飾子は、限定提供（LA）としてマークされています。 使用を開始するにはどうすればよいですか？ {#use-limited-availability-modifiers}
+
+アカウントの限定提供（LA）での修飾子の本番環境での使用を有効にするには：
+
+1. [Admin Consoleを使用してAdobe サポートケースを作成します ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)。
+
+1. Adobe サポートケース内で、次の詳細に言及してください。
+
+   * IMS 組織
+
+   * 有効にする修飾子のリスト
