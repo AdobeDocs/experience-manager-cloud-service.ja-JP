@@ -3,9 +3,9 @@ title: OpenAPI 機能を備えた Dynamic Media に関するよくある質問
 description: OpenAPI 機能を備えた Dynamic Media に関するよくある質問
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 4c346ea4bd3ddea7f5f9f14af56a0b3ec779f9f9
+source-git-commit: 57ffeca8fc6c1a9e0b04a40fe5ddd1bf0fff50d9
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1573'
 ht-degree: 87%
 
 ---
@@ -133,7 +133,7 @@ OpenAPI 機能を備えた Dynamic Media と Dynamic Media の主な違いは次
 
 ## 一部の修飾子は、限定提供（LA）としてマークされています。 使用を開始するにはどうすればよいですか？ {#use-limited-availability-modifiers}
 
-アカウントの限定提供（LA）での修飾子の本番環境での使用を有効にするには：
+アカウントで [ 限定提供の修飾子 ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) の実稼動環境での使用を有効にするには：
 
 1. [Admin Consoleを使用してAdobe サポートケースを作成します ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)。
 
