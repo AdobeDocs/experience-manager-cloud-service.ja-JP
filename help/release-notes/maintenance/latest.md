@@ -131,7 +131,7 @@ ht-degree: 13%
 
 ### 既知の問題 {#known-issues-21772}
 
-* SITES-31791：コンテンツフラグメントのGraphQL - 「最大フィールド数を超えています」でクエリが失敗する。 [ ナレッジベースの記事 ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27231) を参照してください。
+* SITES-31791：コンテンツフラグメントのGraphQL - 「最大フィールド数を超えています」でクエリが失敗する。 [ ナレッジベースの記事 ](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27231) を参照してください。
 
 ### 廃止された機能と API {#deprecated-21772}
 
@@ -151,5 +151,5 @@ AEM as a Cloud Service では、プラットフォームのセキュリティと
 | AEM HTL | 1.4.28-1.4.0 | [HTML テンプレート言語仕様](https://github.com/adobe/htl-spec) |
 | Apache HTTP サーバー | 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
 | AEM コアコンポーネント | 2.29.0 | [AEM WCM コアコンポーネント](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14（デフォルト） | [ サポートされている Node.js のバージョン ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14（デフォルト） | [ サポートされている Node.js のバージョン ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
 
