@@ -5,7 +5,7 @@ keywords: アダプティブフォームの送信アクションの選択、ア�
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 67%
@@ -40,7 +40,7 @@ ht-degree: 67%
 * [Power Automate フローを呼び出す](/help/forms/forms-microsoft-power-automate-integration.md)
 * [SharePoint に送信](/help/forms/configure-submit-action-sharepoint.md)
 * [Workfront Fusion を起動する](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [フォームデータモデル（FDM）を使用して送信](/help/forms/using-form-data-model.md)
+* [フォームデータモデル（FDM）を使用して送信](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [Azure Blob Storage への送信](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [REST エンドポイントに送信](/help/forms/configure-submit-action-restpoint.md)
 * [OneDrive に送信](/help/forms/configure-submit-action-onedrive.md)
@@ -66,7 +66,7 @@ ht-degree: 67%
   ![AEM Forms Submit action](/help/forms/assets/aem-forms-submit-action.png)
   -->
 
-設定ダイアログの「送信」タブを使用して、フォームコンテナのプロパティを定義できます。 フォームコンテナコンポーネントの設定ダイアログについて詳しくは、[こちらをクリック](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html?lang=ja)してください。
+設定ダイアログの「送信」タブを使用して、フォームコンテナのプロパティを定義できます。 フォームコンテナコンポーネントの設定ダイアログについて詳しくは、[こちらをクリック](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)してください。
 
 ![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、送信アクションを設定します](/help/forms/assets/adaptive-forms-submit-message.png)
 
@@ -125,7 +125,7 @@ For a comprehensive guide on the detailed steps to post or submit data to a REST
 
 ## Invoke an AEM Workflow {#invoke-an-aem-workflow}
 
-The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem). When a form is submitted, the selected workflow starts automatically. 
+The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). When a form is submitted, the selected workflow starts automatically. 
 
  [Integrate AEM Adaptive Form with AEM Workflow: Streamlining Business Processes](/help/forms/configure-submit-action-workflow.md) provides step-by-step instructions to seamlessly integrate AEM Workflow with Adaptive Forms, optimizing business processes and enhancing workflow automation.
 
@@ -141,7 +141,7 @@ The **[!UICONTROL Submit to Azure Blob Storage]** Submit Action connects an Adap
 
 AEM as a Cloud Service allows submitting data to Azure Storage from AEM Adaptive Forms. Learn how to [create and use Azure Blob Storage configuration in AEM Forms](/help/forms/configure-submit-action-azure-blob-storage.md) for efficient data storage. 
 
-To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja#deployment-process) to your Cloud Service instance.
+To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
 ## Submit to Power Automate {#microsoft-power-automate}
 

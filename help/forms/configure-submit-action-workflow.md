@@ -4,12 +4,11 @@ Description: Explore the process of automated workflow initiation with AEM Forms
 keywords: AEM ワークフロー、アダプティブフォームと AEM ワークフローの統合、「AEM ワークフローの起動」送信アクション
 feature: Adaptive Forms, Core Components
 exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
-title: 「アダプティブフォームの送信アクションの設定方法」
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: dc9fc0c7d886d976f9b0b9daa955f98402341527
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 100%
+source-wordcount: '1413'
+ht-degree: 89%
 
 ---
 
@@ -44,12 +43,43 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
 ## AEM ワークフローとアダプティブフォームを統合する {#steps-to-integrate-workflow-with-af}
 
-アダプティブフォーム用の [AEM ワークフロー](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem)で自動処理を設定するには次の手順を実行します。
+>[!BEGINTABS]
+
+>[!TAB 基盤コンポーネント]
+
+基盤コンポーネントに基づくアダプティブフォームに対して [AEM ワークフロー ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem) を使用して自動プロセスを設定するには、次の手順を実行します。
+
+1. 編集用にアダプティブフォームを開き、アダプティブフォームのコンテナプロパティの「**[!UICONTROL 送信]**」セクションに移動します。
+1. **[!UICONTROL 送信アクション]** ドロップダウンリストから、**送信アクション** を **[!UICONTROL AEM ワークフローの呼び出し]** として選択します。
+1. 「**[!UICONTROL ワークフローモデル]**」ドロップダウンリストからワークフローモデルを選択します。
+1. 「**** を使用してデータファイルを保存」ドロップダウンリストからオプションを選択します。
+
+   **データファイル**：アダプティブフォームに送信されたデータを含みます。「**[!UICONTROL データファイルパス]**」オプションを使用して、ファイル名とペイロードを基準とするファイルのパスを指定できます。例えば、`/addresschange/data.xml` パスは、`addresschange` という名前のフォルダーを作成し、ペイロードを基準に配置します。フォルダー階層を作成せずに、`data.xml` のみを指定して、送信されたデータのみを送信することもできます。ワークフローが外部データストレージ用にマークされている場合は、「変数」オプションを使用し、ワークフローモデルで使用可能な変数のリストから変数を選択します。
+
+   ![invoke-workflow-fc](/help/forms/assets/invoke-workflow-fc.png)
+
+1. 「**** を使用して添付ファイルを保存」ドロップダウンリストからオプションを選択します。
+
+   **添付ファイル**：「**[!UICONTROL 添付ファイルのパス]**」オプションを使用して、アダプティブフォームにアップロードされた添付ファイルの保存先となるフォルダー名を指定できます。フォルダーがペイロードを基準に作成されます。ワークフローが外部データストレージ用にマークされている場合は、「変数」オプションを使用し、ワークフローモデルで使用可能な変数のリストから変数を選択します。
+
+1. 「**** を使用したレコードのドキュメント」ドロップダウンリストからオプションを選択します。
+
+   **レコードのドキュメント**：アダプティブフォーム用に生成されたレコードのドキュメントを含みます。「**[!UICONTROL レコードのドキュメントパス]**」オプションを使用して、レコードのドキュメントファイル名と、ペイロードを基準にファイルのパスを指定できます。例えば、`/addresschange/DoR.pdf` パスは、ペイロードを基準に `addresschange` という名前のフォルダーを作成し、ペイロードを基準に `DoR.pdf` を配置します。`DoR.pdf` のみを指定して、フォルダー階層を作成せずに、レコードのドキュメントのみを保存することもできます。ワークフローが外部データストレージ用にマークされている場合は、「変数」オプションを使用し、ワークフローモデルで使用可能な変数のリストから変数を選択します。
+1. 「**[!UICONTROL 完了]**」をクリックします。
+
+   >[!NOTE]
+   >
+   > 詳しくは、[Forms 中心の AEM ワークフロー - ステップリファレンスを使用して、ビジネスプロセスを自動化](/help/forms/aem-forms-workflow-step-reference.md)を参照してください。
+
+>[!TAB コアコンポーネント]
+
+コアコンポーネントに基づくアダプティブフォームに対して [AEM ワークフロー ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem) を使用して自動プロセスを設定するには、次の手順を実行します。
 
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
-1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。アダプティブフォームコンテナダイアログボックスが開きます。
+1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。 アダプティブフォームコンテナダイアログボックスが開きます。
 1. 「**[!UICONTROL 送信]**」タブをクリックします。
 1. **[!UICONTROL 送信アクション]**&#x200B;ドロップダウンリストから「**[!UICONTROL AEM ワークフローを起動]**」を選択します。
+
    ![「メールを送信」のアクション設定](/help/forms/assets/configure-invoke-aem-workflow.png)
 
 1. 「**[!UICONTROL ワークフローモデル]**」ドロップダウンリストからワークフローモデルを選択します。
@@ -66,9 +96,47 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
    **レコードのドキュメント**：アダプティブフォーム用に生成されたレコードのドキュメントを含みます。「**[!UICONTROL レコードのドキュメントパス]**」オプションを使用して、レコードのドキュメントファイル名と、ペイロードを基準にファイルのパスを指定できます。例えば、`/addresschange/DoR.pdf` パスは、ペイロードを基準に `addresschange` という名前のフォルダーを作成し、ペイロードを基準に `DoR.pdf` を配置します。`DoR.pdf` のみを指定して、フォルダー階層を作成せずに、レコードのドキュメントのみを保存することもできます。ワークフローが外部データストレージ用にマークされている場合は、「変数」オプションを使用し、ワークフローモデルで使用可能な変数のリストから変数を選択します。
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
->[!NOTE]
->
-> 詳しくは、[Forms 中心の AEM ワークフロー - ステップリファレンスを使用して、ビジネスプロセスを自動化](/help/forms/aem-forms-workflow-step-reference.md)を参照してください。
+   >[!NOTE]
+   >
+   > 詳しくは、[Forms 中心の AEM ワークフロー - ステップリファレンスを使用して、ビジネスプロセスを自動化](/help/forms/aem-forms-workflow-step-reference.md)を参照してください。
+
+>[!TAB ユニバーサルエディター]
+
+ユニバーサルエディターで作成されたアダプティブフォームの [0}AEM ワークフロー } で自動プロセスを設定するには、次の手順を実行します。](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem)
+
+1. アダプティブフォームを編集用に開きます。
+1. エディターで **フォームプロパティを編集** 拡張機能をクリックします。
+**フォームのプロパティ** ダイアログが表示されます。
+
+   >[!NOTE]
+   >
+   > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Managerで **フォームプロパティを編集** 拡張機能を有効にします。
+   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト } の記事を参照してください。
+
+1. 「**送信**」タブをクリックし、「**[!UICONTROL AEM ワークフローの呼び出し]**」送信アクションを選択します。
+
+
+   ![「メールを送信」のアクション設定](/help/forms/assets/invoke-service-ue.png)
+
+1. 「**[!UICONTROL ワークフローモデル]**」ドロップダウンリストからワークフローモデルを選択します。
+1. 「**** を使用してデータファイルを保存」ドロップダウンリストからオプションを選択します。
+
+   **データファイル**：アダプティブフォームに送信されたデータを含みます。「**[!UICONTROL データファイルパス]**」オプションを使用して、ファイル名とペイロードを基準とするファイルのパスを指定できます。例えば、`/addresschange/data.xml` パスは、`addresschange` という名前のフォルダーを作成し、ペイロードを基準に配置します。フォルダー階層を作成せずに、`data.xml` のみを指定して、送信されたデータのみを送信することもできます。ワークフローが外部データストレージ用にマークされている場合は、「変数」オプションを使用し、ワークフローモデルで使用可能な変数のリストから変数を選択します。
+
+1. 「**** を使用して添付ファイルを保存」ドロップダウンリストからオプションを選択します。
+
+   **添付ファイル**：「**[!UICONTROL 添付ファイルのパス]**」オプションを使用して、アダプティブフォームにアップロードされた添付ファイルの保存先となるフォルダー名を指定できます。フォルダーがペイロードを基準に作成されます。ワークフローが外部データストレージ用にマークされている場合は、「変数」オプションを使用し、ワークフローモデルで使用可能な変数のリストから変数を選択します。
+
+1. 「**** を使用したレコードのドキュメント」ドロップダウンリストからオプションを選択します。
+
+   **レコードのドキュメント**：アダプティブフォーム用に生成されたレコードのドキュメントを含みます。「**[!UICONTROL レコードのドキュメントパス]**」オプションを使用して、レコードのドキュメントファイル名と、ペイロードを基準にファイルのパスを指定できます。例えば、`/addresschange/DoR.pdf` パスは、ペイロードを基準に `addresschange` という名前のフォルダーを作成し、ペイロードを基準に `DoR.pdf` を配置します。`DoR.pdf` のみを指定して、フォルダー階層を作成せずに、レコードのドキュメントのみを保存することもできます。ワークフローが外部データストレージ用にマークされている場合は、「変数」オプションを使用し、ワークフローモデルで使用可能な変数のリストから変数を選択します。
+1. 「**[!UICONTROL 完了]**」をクリックします。
+
+   >[!NOTE]
+   >
+   > 詳しくは、[Forms 中心の AEM ワークフロー - ステップリファレンスを使用して、ビジネスプロセスを自動化](/help/forms/aem-forms-workflow-step-reference.md)を参照してください。
+
+>[!ENDTABS]
 
 <!--
 ## Best Practices

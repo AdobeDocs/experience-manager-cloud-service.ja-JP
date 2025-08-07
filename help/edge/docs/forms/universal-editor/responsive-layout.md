@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
 source-wordcount: '1815'
 ht-degree: 1%
@@ -17,6 +17,7 @@ ht-degree: 1%
 # ユニバーサルエディターを使用したレスポンシブFormsの作成
 
 ユーザーは、デスクトップ、タブレット、スマートフォンなど様々なデバイス上のフォームにアクセスします。 レスポンシブフォームをデザインすると、デバイスに関係なく、すべてのユーザーに最適なエクスペリエンスが提供されます。 このガイドでは、ユニバーサルエディターを使用してフォームを設計、テストおよび最適化し、あらゆる画面サイズに対応する方法を説明します。
+
 
 レスポンシブフォームの作成には、次の 2 つの主なアクティビティが含まれます。
 

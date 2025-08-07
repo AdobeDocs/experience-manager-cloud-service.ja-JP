@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0a0a50a13122b328782e5395b759121acc76cfb6
+source-git-commit: 70363b7dce1f7df5e933d99f8f9af7f6e6c702b3
 workflow-type: tm+mt
-source-wordcount: '6566'
-ht-degree: 99%
+source-wordcount: '6586'
+ht-degree: 98%
 
 ---
 
@@ -787,6 +787,7 @@ ht-degree: 99%
          + [コアコンポーネントに基づくアダプティブフォームの送信アクションを設定する](/help/forms/configure-submit-actions-core-components.md)
          + [Edge Delivery Services Formsの送信アクションを設定する](/help/forms/configure-submit-action-eds-forms.md)
          + [アダプティブフォームのメール送信アクションの送信を設定する](/help/forms/configure-submit-action-send-email.md)
+         + [アダプティブフォームとフォームデータモデルの統合](/help/forms/integrate-adaptive-form-with-fdm.md)
          + [アダプティブフォームと Microsoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
          + アダプティブフォームを Microsoft® SharePoint に接続{#connect-to-sharepoint}
             + [Microsoft へのアダプティブフォームの接続](/help/forms/configure-submit-action-sharepoint.md)
@@ -1111,6 +1112,7 @@ ht-degree: 99%
          + [Edge Delivery Services のフォームのユニバーサルエディターの概要 - 完全ガイド](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [ユニバーサルエディターを使用したオーサリングの開始方法 - ステップバイステップチュートリアル](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [ユニバーサルエディターを使用した最初のフォーム作成方法 - ステップバイステップチュートリアル](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [送信後のガイドユーザー：ユニバーサルエディターでのリダイレクトと「ありがとうございます」メッセージの設定](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
          + [ユニバーサルエディターインターフェイスガイド：ツール、機能およびナビゲーションについて](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [フォームのモバイル化：ユニバーサルエディターのレスポンシブデザイン](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [美しいフォームの設計：ユニバーサルエディターのスタイル設定とテーマ設定ガイド](/help/edge/docs/forms/universal-editor/style-theme-forms.md)

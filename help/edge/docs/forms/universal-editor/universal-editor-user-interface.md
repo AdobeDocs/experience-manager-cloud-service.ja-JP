@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 53b1d38eb0e9e6cf18ca3ef7b1414bc231c82098
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2358'
 ht-degree: 4%
 
 ---
@@ -180,14 +180,14 @@ ht-degree: 4%
 **目的：** エディターインターフェイスを使用せずに、新しいタブでフォームを表示する\
 **用途：** フルスクリーンテストの場合、レビューのために関係者と共有
 
-    ![ ページを開く ] （/help/edge/docs/forms/universal-editor/assets/ue-openpage.png） 
+![ページを開く](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
 
 #### **公開**
 
 **目的：** ユーザーがフォームをライブにしてアクセスできるようにします\
 **使用するタイミング：** プレビューモードとレスポンシブモードで徹底的にテストした後
 
-    ![ パブリッシュ ] （/help/edge/docs/forms/universal-editor/assets/ue-publish.png） 
+![公開](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
 
 **公開前の検証チェックリスト：**
 
@@ -216,12 +216,22 @@ ht-degree: 4%
 
 **これらのツールは、特定のシナリオや詳細設定に使用されます。**
 
-#### **フォームプロパティを編集**
+#### **AEM フォームのプロパティ**
 
 **目的：** フォームデータモデル（FDM）や公開日など、フォームレベルの設定を構成する\
 **用途：** データ統合の設定、公開のスケジュール
 
 ![ フォームのプロパティ ](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
+
+![ フォームのプロパティウィザード ](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
+
+フォームのプロパティパネルには、次のセクションが含まれます。
+
+- **送信**：ユーザーがフォームを送信した後の処理を定義します。 メールでのデータの送信、SharePointへの送信、フォームデータモデルの使用、Adobe Experience PlatformやMicrosoft Power Automate などのサービスとの統合など、複数の送信アクションから選択できます。 サポートされる送信アクションの完全なリストについては、[ 送信アクション ](/help/edge/docs/forms/universal-editor/submit-action.md) の記事を参照してください。
+
+- **事前入力**：ユーザーがフォームを操作する前にフォームフィールドを自動的に入力する方法を設定します。 フォームデータモデル（FDM）などのデータソースに接続したり、URL パラメーターを使用してフィールドを事前入力したりして、ユーザーエクスペリエンスを強化し、手動入力を減らすことができます。 詳しくは、[ 事前入力サービス ](/help/edge/docs/forms/universal-editor/prefill-form.md) を参照してください。
+
+- **ありがとうございました**：フォームの送信後にユーザーに表示される内容をカスタマイズします。 確認メッセージを表示したり、別の Web ページにリダイレクトしたりして、スムーズでプロフェッショナルな完了エクスペリエンスを確保できます。 フォームのお礼メッセージを設定する方法については、「ありがとうメッセージの設定 [ の記事を参照し ](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md) ください。
 
 #### **ルールエディター** （アーリーアクセス）
 
@@ -339,7 +349,7 @@ ht-degree: 4%
 
     ![ バリエーションを生成 ] （/help/edge/docs/forms/universal-editor/assets/ue-variations.png） 
 
-**詳細情報：**&#x200B;[ バリエーションを生成ガイド ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**詳細情報：**[ バリエーションを生成ガイド ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **コンテンツドラフト**
 
@@ -521,4 +531,3 @@ ht-degree: 4%
 4. **マスタールールエディター** - [ ルールエディターガイド ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) で動的な動作を追加します
 
 **注意：** ユニバーサルエディターは、フォームの作成を直感的にするように設計されています。 基本的な事項から始めて、ニーズの増加に合わせて高度な機能を徐々に探索します。
-

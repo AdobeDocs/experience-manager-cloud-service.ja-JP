@@ -1,19 +1,24 @@
 ---
-title: 送信アクション
-description: アダプティブフォームの送信アクションを設定します。
-feature: Edge Delivery Services
-role: Admin, Architect, Developer
-exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-hide: true
-hidefromToC: true
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+title: アダプティブフォームの送信アクションの設定方法
+description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。ビルトインの送信アクションを使用するか、独自のアクションを作成できます。
+keywords: アダプティブフォームの送信アクションを選択する方法、アダプティブフォームを sharepoint リストに接続する方法、アダプティブフォームを sharepoint ドキュメントライブラリに接続する方法、アダプティブフォームをフォームデータモデル（FDM）に接続する方法
+feature: Adaptive Forms, Edge Delivery Services
+role: User, Developer
+source-git-commit: d221959bbf19a874ec65eb414c4c49811df291ca
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 100%
+source-wordcount: '415'
+ht-degree: 50%
 
 ---
 
 # アダプティブフォーム送信アクション
+
+| バージョン | 記事リンク |
+|---------|-----------------------------|
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=ja) |
+| AEM as a Cloud Service（基盤コンポーネント） | [ここをクリックしてください](/help/forms/configuring-submit-actions.md) |
+| AEM as a Cloud Service（コアコンポーネント） | [ここをクリックしてください](/help/forms/configure-submit-actions-core-components.md) |
+| AEM as a Cloud Service（Edge Delivery Services） | この記事 |
 
 ## 概要
 
@@ -38,146 +43,41 @@ ht-degree: 100%
 - フォームワークフローを定義する&#x200B;**ビジネスアナリスト**
 - フォーム送信プロセスを設計する&#x200B;**テクニカルアーキテクト**
 
-### 使用可能な送信アクション
+## ユニバーサルエディターで作成されたFormsの送信アクション
 
-ユニバーサルエディターには、主に次の 2 つの送信アクションタイプが用意されています。
+[ ユニバーサルエディターで作成されたアダプティブForms](/help/edge/docs/forms/universal-editor/create-forms.md) では、次の送信アクションがサポートされています。
 
-1. **REST エンドポイントに送信** * フォームデータを API エンドポイントに送信
-2. **メールを送信** * フォームへの応答をメール経由で配信
+- [メールを送信](/help/forms/configure-submit-action-send-email.md)
+- [Power Automate フローを起動](/help/forms/forms-microsoft-power-automate-integration.md)
+- [SharePoint に送信](/help/forms/configure-submit-action-sharepoint.md)
+- [Workfront Fusion の呼び出し](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+- [フォームデータモデル（FDM）を使用して送信](/help/forms/integrate-adaptive-form-with-fdm.md)
+- [Azure Blob Storage への送信](/help/forms/configure-submit-action-azure-blob-storage.md)
+- [REST エンドポイントへの送信](/help/forms/configure-submit-action-restpoint.md)
+- [OneDrive に送信](/help/forms/configure-submit-action-onedrive.md)
+- [AEM ワークフローを起動](/help/forms/configure-submit-action-workflow.md)
+- [Marketo Engage に送信](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+- [Adobe Experience Platform（AEP）への送信](/help/forms/aem-forms-aep-connector.md)
+- [スプレッドシートに送信](/help/forms/forms-submission-service.md)
 
-### 前提条件
+<!--You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
 
-送信アクションを設定する前に、次を確認します。
+* [Connect Adaptive Form to Salesforce](/help/forms/aem-forms-salesforce-integration.md)
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)-->
 
-- ユニバーサルエディターへのアクセス権
-- フォーム設定の適切な権限
-- ターゲット送信エンドポイントまたはメール設定について
+ユニバーサルエディターで作成されたフォームの送信アクションは、「**フォームプロパティを編集** 拡張機能の「**送信**」タブを使用して設定できます。
 
-送信アクションは、アダプティブフォームを通じて収集されたデータの送信先を指定します。送信プロセスは、ユーザーがフォームの「**[!UICONTROL 送信]**」ボタンをクリックすると開始されます。AEM Forms には、以下に説明する 2 つのタイプの送信アクションが用意されており、特定のニーズに合わせてカスタム送信アクションを作成および使用できます。標準の使用できる送信アクションは次のとおりです。
+**ユニバーサルエディターで作成したFormsの送信アクションを設定する方法？**
+ユニバーサルエディターで作成されたフォームの送信アクションは、「**フォームプロパティを編集** 拡張機能の「**送信**」タブを使用して設定できます。
 
-<!--To define a Submit Action for an Adaptive Form, you use the Properties dialog of the **Adaptive Form block** in the **Editor**-->
+![ フォームプロパティアイコン ](/help/forms/assets/ue-form-properties-icon.png)
 
-- [REST エンドポイントに送信](#rest-endpoint-submission-ue)
-- [メールを送信](#email-submission-ue)
-
-
-### REST エンドポイントに送信 {#rest-endpoint-submission-ue}
-
-REST エンドポイントに送信アクションを使用すると、送信したフォームデータを指定された REST エンドポイントに送信できます。エンドポイントは、フォームがホストされている内部サーバーや、相対パスまたは絶対パスを使用して外部サーバーに属することができます。フォームをホストする AEM サーバーにデータを送信するには、AEM サーバーのルートパスに対応する相対パスを使用します。例えば、`/content/forms/af/SampleForm.html` のようになります。他のサーバーにデータを送信するには、絶対パスを使用します。
-
-<!--Configuring the Submit Action to REST Endpoint for Adaptive Forms offers several benefits such as:  
-- It facilitates seamless integration of form data with external systems and services via RESTful APIs.  
-- Offers flexibility in managing data submissions from Adaptive Forms, accommodating dynamic and complex data structures.  
-- Allows dynamic mapping of form fields to parameters within the REST endpoint URL, enabling adaptable and customizable data submissions.
--->
-
-
-
-REST エンドポイントを設定するには：
-
-1. アダプティブフォームを&#x200B;**[!UICONTROL エディター]**&#x200B;で開きます。
-1. 「**[!UICONTROL アダプティブフォームブロック]**」を選択します。
-1. プロパティ ![プロパティ](/help/forms/assets/Smock_Properties_18_N.svg) アイコンをクリックします。
-1. **[!UICONTROL 送信アクション]**&#x200B;ドロップダウンリストから「**[!UICONTROL REST エンドポイントに送信]**」を選択します。
-1. REST エンドポイント URL を指定します。
-1. また、**POST リクエストを有効にする**&#x200B;ことで、リクエストを投稿する URL を指定することもできます。
-
-![URL 入力、フォーム送信の POST リクエストの有効化の切替スイッチを含む REST エンドポイント設定フィールドを示すユニバーサルエディターのプロパティパネルのスクリーンショット](/help/forms/assets/enable-post-request-ue.png)
+![ ユニバーサルエディターフォームのプロパティ ](/help/forms/assets/ue-form-properties.png)
 
 >[!NOTE]
 >
-> - 内部サーバーにデータを POST 送信するには、リソースのパスを指定します。データは、リソースのパスに POST されます。例えば、`/content/restEndPoint` のようになります。このような POST リクエストには、送信リクエストの認証情報が使用されます。
-> - 外部サーバーにデータを POST 送信するには、URL を指定します。URL の形式は、`https://host:port/path_to_rest_end_point` です。POST リクエストを匿名で処理するためのパスを設定してください。
-
-### メールを送信 {#email-submission-ue}
-
-「メールを送信」送信アクションでは、フォームの送信が完了すると同時に、1 人または複数の受信者にメールを送信できます。「メールを送信」設定を使用すると、事前に定義された形式のフォームデータを含むメールを作成できます。例えば、次のテンプレートで、送信されたフォームデータから顧客名、発送先住所、都道府県名、郵便番号が取得されるとします。[詳しくは、アダプティブフォームのメールテンプレートを参照してください](/help/forms/html-email-templates-in-adaptive-forms.md)。「メールを送信」送信アクションを使用してアダプティブフォームを設定する利点には、次のようなものがあります。
-
-1. 指定されたメール受信者にフォームデータが直接送信されるので、迅速な通信が可能です。
-1. これにより、フォーム送信をメール通知に直接統合することで、ワークフローを合理化できます。
-1. これは、組織がメールのコンテンツをカスタマイズするのに役立ち、特定のコミュニケーションニーズに適したものにすることができます。
-
-![ユニバーサルエディターでのアダプティブフォームのプロパティ](/help/forms/assets/submit-actions-ue.png)
-
-
-送信アクションをフォーム送信用のメールとして設定するには：
-
-1. アダプティブフォームを&#x200B;**エディター**&#x200B;で開きます。
-1. 「**[!UICONTROL アダプティブフォームブロック]**」を選択します。
-1. プロパティ ![プロパティ](/help/forms/assets/Smock_Properties_18_N.svg) アイコンをクリックします。
-1. **[!UICONTROL 送信アクション]**&#x200B;ドロップダウンリストから「**[!UICONTROL メールを送信]**」を選択します。
-1. 「メールを送信」オプションを選択すると、次の画像に示すように次のプロパティを設定できます。
-
-<table>
-  <thead>
-    <tr>
-      <th>画像</th>
-      <th>プロパティ</th>
-      <th>説明</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-    <td rowspan="7"><img src="/help/forms/assets/email-config-ue.png" alt="メール設定"></td> 
-    <td><b>送信元</td>
-    <td>送信者のメールアドレスを指定します。</td>
-    </tr>
-    <tr>
-      <td><b>宛先</td>
-      <td>メールのプライマリ受信者を指定します。複数のメールアドレスを追加する場合は、コンマで区切ります。</td>
-    </tr>
-    <tr>
-      <td><b>CC</td>
-      <td>メールのカーボンコピー（CC）を受信する受信者を指定します。</td>
-    </tr>
-    <tr>
-      <td><b>BCC</td>
-      <td>メールのブラインドカーボンコピー（BCC）を受信する受信者を指定します。</td>
-    </tr>
-    <tr>
-      <td><b>件名</td>
-      <td>メールの件名を指定します。</td>
-    </tr>
-    <tr>
-      <td><b>外部テンプレートを使用</td>
-      <td>メールコンテンツの書式設定に外部メールテンプレートを使用できます。外部テンプレートへの URL またはパスを指定して、AEM Assets フォルダーでホストされる事前設計済みのメールテンプレートを統合します。</td>
-    </tr>
-    <tr>
-      <td><b>添付ファイルを含める</td>
-      <td>送信されたフォームデータに、フォーム経由でメールに送信された添付ファイルを含める必要があるかどうかを指定します。サポートされている添付ファイル形式は、PDF、XML および JSON です。</td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-
-
-
-<!--
-        
-        * **From**: The email address of the sender.
-        * **To**: Specify the primary recipients of the email, multiple email addresses can be added, separated by commas.
-        * **CC**: Specify the recipients who should receive a carbon copy (CC) of the email.
-        * **BCC**: Specify the recipients who should receive a blind carbon copy (BCC) of the email.
-        * **Subject**: Specify the subject line of the email.
-        * **Use External Template**: Enables the use of an external email template for formatting the email content. Provide the URL or path to the External template path to integrate a pre-designed email template hosted in your AEM Assets folder.
-        * **Include Attachment**: Specifies whether the submitted form data should include an attachment submitted through the form in the email.
-
-    ![Screenshot of the Universal Editor email configuration panel showing fields for From, To, CC, BCC, Subject, and options for external templates and attachments](/help/forms/assets/email-config-ue.png)
-
--->
-
-## アダプティブフォームの送信時にカスタムのお礼のメッセージを表示 {#submit-action-message-ue}
-
-「送信時」オプションを使用すると、アダプティブフォームの送信時に送信アクションメッセージを設定して、フォームの送信アクションメッセージを設定できます。
-
-1. アダプティブフォームを&#x200B;**エディター**&#x200B;で開きます。
-1. 「**[!UICONTROL アダプティブフォームブロック]**」を選択します。
-1. プロパティ ![プロパティ](/help/forms/assets/Smock_Properties_18_N.svg) アイコンをクリックします。
-1. クリックすると、次のオプションが表示されます。
-   - **[!UICONTROL 送信時]**：送信時は、フォームを送信したときに表示されるメッセージをカスタマイズするのに役立ちます。デフォルトでは、フォームが正常に送信されると、「フォームを送信していただきありがとうございます」というカスタムメッセージがユーザーに表示されます。
-また、「**[!UICONTROL メッセージを表示]**」オプションを選択してフォームの送信時に「ありがとうございます」メッセージをカスタマイズしたり、リッチテキスト&#x200B;**エディター**&#x200B;でメッセージを追加／編集したりできます。
+> - ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Managerで **フォームプロパティを編集** 拡張機能を有効にします。
+> - ユニバーサルエディターで拡張機能を有効または無効にする方法については [](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト } の記事を参照してください。
 
 
 

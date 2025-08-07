@@ -5,9 +5,9 @@ Keywords: Submit data to Marketo engage, Configure submit action as Submit to Ma
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
-source-git-commit: ce4646d8db1870f8ec85faddeb4e0a6a04f4c46e
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '733'
 ht-degree: 15%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 15%
 
 ![ワークフロー](/help/forms/assets/workflow-marketo-3.png)
 
-アダプティブFormsエディターには、アダプティブFormsデータをMarketo Engageに送信して処理するための **Adobe Marketo Engageに送信** 送信アクションが用意されています。 送信時にデータを [Adobe Marketo Engage](https://experienceleague.adobe.com/ja/docs/marketo/using/home) に送信するように、既存のアダプティブフォームを設定できます。
+アダプティブFormsエディターには、アダプティブFormsデータをMarketo Engageに送信して処理するための **Adobe Marketo Engageに送信** 送信アクションが用意されています。 送信時にデータを [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) に送信するように、既存のアダプティブフォームを設定できます。
 
 フォームの送信を処理するための、すぐに使用できる様々な送信アクションを使用できます。 これらのオプションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)の記事を参照してください。
 
@@ -35,6 +35,9 @@ Marketo Engageへの送信アクションを設定するための前提条件は
 ## 既存のフォームをMarketo Engageに送信する方法
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442866/submit-action-marketo-engage-marketo-aem-aem-forms-engage)
+
+<span> このビデオは、コアコンポーネントにのみ適用されます。 UE/基盤コンポーネントについては、の記事を参照してください。</span>
+
 
 >[!BEGINTABS]
 
@@ -75,7 +78,7 @@ Marketo Engageへの送信アクションを設定するための前提条件は
    >[!NOTE]
    >
    > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Managerで **フォームプロパティを編集** 拡張機能を有効にします。
-   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
+   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト } の記事を参照してください。
 
 1. 「**送信**」タブをクリックし、「**[!UICONTROL Marketo Engageに送信]**」送信アクションを選択します。
 
@@ -94,7 +97,7 @@ Marketo Engageへの送信アクションを設定するための前提条件は
 
 ## 次の手順
 
-また、アダプティブフォームを [Munchkin ライブラリ ](https://experienceleague.adobe.com/ja/docs/marketo/using/product-docs/administration/setup/munchkin) に接続して、訪問数、クリック数、フォーム送信数をトラッキングすることもできます。
+また、アダプティブフォームを [Munchkin ライブラリ ](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) に接続して、訪問数、クリック数、フォーム送信数をトラッキングすることもできます。
 
 ## 関連記事
 

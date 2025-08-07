@@ -4,13 +4,13 @@ description: アダプティブフォームには、複数の送信アクショ�
 keywords: アダプティブフォームの送信アクションを選択する方法、アダプティブフォームを sharepoint リストに接続する方法、アダプティブフォームを sharepoint ドキュメントライブラリに接続する方法、アダプティブフォームをフォームデータモデル（FDM）に接続する方法
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+exl-id: 3f8950c3-9022-4e9f-b3ed-723245201e45
+source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 22%
 
 ---
-
 
 # Edge Delivery Services Formsの送信アクション
 
@@ -33,7 +33,7 @@ Edge Delivery Services Formsは、[ ユニバーサルエディター ](/help/ed
 * [Power Automate フローを起動](/help/forms/forms-microsoft-power-automate-integration.md)
 * [SharePoint に送信](/help/forms/configure-submit-action-sharepoint.md)
 * [Workfront Fusion の呼び出し](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [フォームデータモデル（FDM）を使用して送信](/help/forms/using-form-data-model.md)
+* [フォームデータモデル（FDM）を使用して送信](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [Azure Blob Storage への送信](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [REST エンドポイントへの送信](/help/forms/configure-submit-action-restpoint.md)
 * [OneDrive に送信](/help/forms/configure-submit-action-onedrive.md)
@@ -59,7 +59,7 @@ You can configure the submit action for forms created in the Universal Editor us
 >[!NOTE]
 >
 > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Managerで **フォームプロパティを編集** 拡張機能を有効にします。
-> * ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
+> * ユニバーサルエディターで拡張機能を有効または無効にする方法については [](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト } の記事を参照してください。
 
 ## ドキュメントベースのFormsの送信アクション
 
@@ -68,4 +68,3 @@ You can configure the submit action for forms created in the Universal Editor us
 ## 関連トピック {#see-also}
 
 {{af-submit-action}}
-

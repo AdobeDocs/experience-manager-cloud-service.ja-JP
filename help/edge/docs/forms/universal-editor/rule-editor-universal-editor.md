@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
 source-wordcount: '3597'
 ht-degree: 23%
@@ -16,6 +16,7 @@ ht-degree: 23%
 # ユニバーサルエディターの動的Forms用のルールエディター
 
 ユニバーサルエディターのルールエディターを使用すると、ユーザーの入力にリアルタイムで応答する、インテリジェントで動的なフォームを作成できます。 静的フォームを、条件付きフィールドの表示、自動計算、複雑なビジネスロジックを備えたインタラクティブエクスペリエンスに変換できます。しかも、コードを記述する必要はありません。
+
 
 ## 学習内容
 

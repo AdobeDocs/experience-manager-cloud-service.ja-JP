@@ -4,17 +4,17 @@ description: AEM Forms の Edge Delivery Services 向けフォームでの Googl
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 97%
+source-wordcount: '815'
+ht-degree: 100%
 
 ---
 
 
 # AEM Forms as a Cloud Service の Edge Delivery Services での reCAPTCHA の使用
 
-<span>**reCAPTCHA** 機能はプレリリースプログラムで提供されています。Edge Delivery Services for AEM Formsの **reCAPTCHA** 機能へのアクセスをリクエストするには、メールアドレス （勤務先）から mailto:aem-forms-ea@adobe.com.</span> にメールを送信します。
+<!--<span>The **reCAPTCHA** feature is under the pre-release program. To request access to the **reCAPTCHA** feature for Edge Delivery Services for AEM Forms, send an email from your work address to mailto:aem-forms-ea@adobe.com.</span>-->
 
 reCAPTCHA は、web サイトを不正行為、スパムおよび悪用から守るために使用される一般的なツールです。Edge Delivery では、Google reCAPTCHA を追加して人間とボットを区別する機能がアダプティブフォームブロックから提供されます。この機能により、ユーザーは自分の web サイトをスパムや不正使用から保護できます。
 例えば、旅行の開始日と終了日、部屋の予算、旅行費用の見積もり、旅行者情報などのデータを収集する問い合わせフォームを考えてみます。このような場合は、悪意のあるユーザーがフォームを悪用してフィッシングメールを送信したり、スパムボットを使用して無関係または有害なコンテンツを大量に送信したりするリスクがあります。reCAPTCHA を統合すると、送信が本物のユーザーからのものであることを確認して、セキュリティを強化し、スパムエントリを最小限に抑える効果を得ることができます。

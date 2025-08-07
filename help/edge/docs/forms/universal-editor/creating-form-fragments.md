@@ -4,18 +4,18 @@ description: ユニバーサルエディターでフォームフラグメント�
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1347'
 ht-degree: 97%
 
 ---
 
 # ユニバーサルエディターでのフォームフラグメントの作成
 
-<span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセス権をリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。例えば、リポジトリ URL が https://github.com/adobe/abc の場合、組織名は「adobe」、リポジトリ名は「abc」になります。</span>
+<!--<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
-<span class="preview">これはプレリリース機能で、[プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)を通してアクセスできます。</span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>-->
 
 Forms には、多くの場合、連絡先情報、ID の詳細、同意契約などの共通セクションが含まれています。フォーム開発者は、新しいフォームを作成するたびに、これらのセクションを作成しますが、この作業は繰り返し行われ、時間がかかります。
 こうした作業の重複を排除するには、ユニバーサルエディターでは、パネルやフィールドのグループなどの再利用可能なフォームセグメントを 1 回だけ作成し、様々なフォームで再利用する方法を提供しています。この再利用可能で、モジュール化されたスタンドアロンのセグメントは、フォームフラグメントと呼ばれています。例えば、従業員や管理者の連絡先の詳細など、同じ緊急連絡先フラグメントを、フォームの異なるセクションで使用できます。
@@ -123,7 +123,7 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
 
    ![セクションに移動](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
 
-1. 「**[!UICONTROL 追加]**」アイコンをクリックし、**アダプティブフォームコンポーネント**&#x200B;リストから&#x200B;**[!UICONTROL フォームフラグメント]**&#x200B;を追加します。
+1. 「**[!UICONTROL 追加]**」アイコンをクリックし、**アダプティブフォームコンポーネント**&#x200B;リストから&#x200B;**[!UICONTROL フォームフラグメント]**を追加します。
    ![フォームフラグメントを追加](/help/edge/docs/forms/universal-editor/assets/add-fragment.png)
 
    **[!UICONTROL フォームフラグメント]**&#x200B;コンポーネントを選択すると、フラグメントがフォームに追加されます。追加したフラグメントのプロパティは、この&#x200B;**プロパティ**&#x200B;を開いて設定できます。例えば、フラグメントのタイトルをこの&#x200B;**プロパティ**&#x200B;から非表示にします。
