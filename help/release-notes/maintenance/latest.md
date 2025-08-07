@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 0f16c31a5fea1fc538fbeabe6db182ad3a30560d
+source-git-commit: 280e02ba0ace1fe123fd5112a982c6434fd4d499
 workflow-type: tm+mt
 source-wordcount: '1619'
 ht-degree: 13%
@@ -131,7 +131,7 @@ ht-degree: 13%
 
 ### 既知の問題 {#known-issues-21772}
 
-* SITES-31791：コンテンツフラグメントのGraphQL - 「最大フィールド数を超えています」でクエリが失敗する。 [ ナレッジベースの記事 ](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-27231) を参照してください。
+* SITES-31791：コンテンツフラグメントのGraphQL - 「最大フィールド数を超えています」でクエリが失敗する。 [ ナレッジベースの記事 ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27231) を参照してください。
 
 ### 廃止された機能と API {#deprecated-21772}
 
@@ -140,7 +140,6 @@ AEM as a Cloud Service で廃止および削除された機能と API につい�
 ### セキュリティ修正 {#security-21772}
 
 AEM as a Cloud Service では、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。 このメンテナンスリリースでは、特定された 35 個の脆弱性に対処し、堅牢なシステム保護に対する取り組みを強化しています。
-
 
 ### 組み込みテクノロジー {#embedded-tech-21772}
 
@@ -151,5 +150,4 @@ AEM as a Cloud Service では、プラットフォームのセキュリティと
 | AEM HTL | 1.4.28-1.4.0 | [HTML テンプレート言語仕様](https://github.com/adobe/htl-spec) |
 | Apache HTTP サーバー | 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
 | AEM コアコンポーネント | 2.29.0 | [AEM WCM コアコンポーネント](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14（デフォルト） | [ サポートされている Node.js のバージョン ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
-
+| Node.js | 14（デフォルト） | [ サポートされている Node.js のバージョン ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
