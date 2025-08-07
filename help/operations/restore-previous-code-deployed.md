@@ -3,12 +3,12 @@ title: 以前にデプロイされたソースコードを復元
 description: パイプラインの実行を必要とせずに、環境を最後の正常なビルドに復元する方法を説明します。
 feature: Operations
 role: Admin
-badge: label="アルファ" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: f3e31d1f17283086cd6fe9e73d67feac938d6567
-workflow-type: ht
+source-git-commit: fcc066945d1e44072c4718dd9c1d887dd97be0b6
+workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->この記事で説明する機能は、Alpha プログラムを通じてのみ使用できです。Alpha に新規登録するには、[パイプラインデプロイメントのワンクリックロールバック](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)を参照してください。
+>この記事で説明する機能は、ベータ版プログラムでのみ使用できます。 ベータ版に新規登録するには、[ パイプラインデプロイメントのワンクリックロールバック ](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback) を参照してください。
 
 **デプロイした以前のコードを復元**&#x200B;を使用すると、パイプラインの実行を必要とせずに、環境を最後に成功したビルドに即座にロールバックできます。
 
@@ -31,9 +31,9 @@ ht-degree: 100%
 **デプロイした以前のコードを復元**&#x200B;機能は、以下の&#x200B;**すべて**&#x200B;の条件が true の場合にのみ使用可能です。
 
 * **環境の復元の作成**&#x200B;権限を保持している。権限の管理について詳しくは、[カスタム権限](/help/implementing/cloud-manager/custom-permissions.md)を参照してください。
-* 組織が Alpha プログラムに登録され、機能フラグがオンになっている。
+* 組織はベータ版プログラムに登録され、機能フラグがオンになっています。
 * プログラムが AEM as a Cloud Service で実行されている。
-* 選択した環境が `Development` 環境（一時的な Alpha 制限）である。
+* 選択した環境は `Development` 環境です（Betaの一時的な制限）。
 * この環境の最後のパイプラインが正常に完了し、実行から **30 日未満**&#x200B;である。
 * 環境のステータスが&#x200B;*実行中*&#x200B;で、進行中のパイプラインがない。
 
