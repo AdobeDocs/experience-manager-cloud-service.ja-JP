@@ -16,7 +16,7 @@ ht-degree: 36%
 
 >[!NOTE]
 >
->>この記事で説明している機能は、非公開のベータ版プログラムでのみ使用できます。 Private Beta に新規登録するには、[特殊なテスト環境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)を参照してください。
+>&#x200B;>この記事で説明している機能は、非公開のベータ版プログラムでのみ使用できます。 Private Beta に新規登録するには、[特殊なテスト環境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)を参照してください。
 
 専用テスト環境（DevXL）は、新しく作成できるタイプのCloud Manager環境です。 ユーザー受け入れテスト（UAT）やパフォーマンス検証などの高度なユースケースをサポートするように設計されています。 従来の開発環境、迅速な開発環境、ステージング環境とは異なり、DevXL 環境は実稼動デプロイメントパイプラインの外部で動作します。 したがって、厳密な分離を維持しながら、実稼動ワークフローへの干渉を防ぎながら、より高い柔軟性を提供します。
 
