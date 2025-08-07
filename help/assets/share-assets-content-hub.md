@@ -3,10 +3,10 @@ title: ' [!DNL the Content Hub] でのアセットの共有'
 description: ' [!DNL the Content Hub] でのアセットの共有'
 role: User
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '408'
-ht-degree: 100%
+source-git-commit: a6d995eddd714c356eadc6c1b668887bdfd011cd
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 57%
 
 ---
 
@@ -21,16 +21,28 @@ ht-degree: 100%
 ## アセットを共有する {#share-assets}
 
 1 つ以上のアセットをプライベートユーザーまたはパブリックユーザーと共有するには、次の手順を実行します。
-1. [!DNL Content Hub] ホームページに移動し、1 つ以上のアセットを選択して、![共有](/help/assets/assets/share.svg) **[!UICONTROL 共有]**&#x200B;をクリックして、**[!UICONTROL アセットを共有]**&#x200B;ダイアログボックスに 1 つの選択したアセットを表示するか、複数の選択したアセットのリストを表示します。また、![コレクション](/help/assets/assets/Smock_Collection_18_N.svg) **[!UICONTROL コレクション]**&#x200B;で使用可能なアセットを選択して共有することもできます。
-1. **[!UICONTROL アセットを共有]**&#x200B;ダイアログボックスで、アセットを表示するか、使用可能なアセットのリストを確認します。アセットの横にある![選択解除](/help/assets/assets/Close.svg)をクリックして、リストから選択を解除します。
-1. **[!UICONTROL 有効期限]**&#x200B;を選択し、「**[!UICONTROL プライベートリンクを生成]**」をクリックして、プライベートユーザーと共有するリンクを生成します。プライベートユーザーが自分の [!DNL Content Hub] 環境にログインして、共有アセットページにアクセスします。
-   ![プライベートリンクとパブリックリンク](/help/assets/assets/private-and-public-link.png)
-**[!UICONTROL 公開リンク]**&#x200B;切り替えスイッチを有効にし、**[!UICONTROL 有効期限]**&#x200B;を選択して「**[!UICONTROL 公開リンクの生成]**」をクリックして、公開ユーザーと共有するリンクを生成します。公開ユーザーはゲストとして、[!DNL Content Hub] にログインせずに共有アセットページにアクセスします。
-   ![プライベートリンクとパブリックリンク](/help/assets/assets/public-and-private-link.png)
 
-   >[!NOTE]
-   > 
-   > **[!UICONTROL アセットの共有]**&#x200B;ダイアログボックスに&#x200B;**[!UICONTROL 公開リンク]**&#x200B;切替スイッチを表示するには、[設定ページから公開リンク共有を有効にします](/help/assets/configure-content-hub-ui-options.md#enable-public-link-sharing)。
+1. [!DNL Content Hub] ホームページに移動し、1 つ以上のアセットを選択して、![ 共有 ](/help/assets/assets/share.svg) **[!UICONTROL 共有]** をクリックして、**[!UICONTROL アセットを共有]** ダイアログボックスに 1 つの選択したアセットを表示するか、複数の選択したアセットのリストを表示します。
+
+   また、![コレクション](/help/assets/assets/Smock_Collection_18_N.svg) **[!UICONTROL コレクション]**&#x200B;で使用可能なアセットを選択して共有することもできます。
+
+1. **[!UICONTROL アセットを共有]**&#x200B;ダイアログボックスで、アセットを表示するか、使用可能なアセットのリストを確認します。アセットの横にある ![ 選択解除 ](/help/assets/assets/Close.svg) をクリックすると、アセットがリストから削除されます。
+
+1. タイトルと、選択したアセットのセットを定義する説明（オプション）を指定します。
+
+1. **[!UICONTROL 有効期限]** を選択します。
+
+1. 「**[!UICONTROL アクセスできるユーザー]**」ドロップダウンでアクセスオプションを選択し、「**[!UICONTROL リンクを取得]**」をクリックして、選択したユーザーと共有するリンクを生成します。 プライベートユーザーが共有アセットページにアクセスするには、[!DNL Content Hub] 環境にログインする必要があります。 一方、パブリックユーザーはゲストとして、[!DNL Content Hub] にログインせずに共有アセットページにアクセスできます。
+
+<!--1. Select a **[!UICONTROL period of expiration]** and click **[!UICONTROL Get Link]** to generate a link to share with private users. Private users sign in to their [!DNL Content Hub] environment to access the shared assets page.-->
+
+![プライベートリンクとパブリックリンク](/help/assets/assets/shared-link-for-assets.png)
+
+<!--Enable the **[!UICONTROL Public Link]** toggle, select a **[!UICONTROL period of expiration]** and click **[!UICONTROL Generate Public Link]** to generate a link to share with public users. Public users, as guests, access the shared assets page without signing in to [!DNL Content Hub].-->
+
+>[!NOTE]
+> 
+> **[!UICONTROL アセットの共有]**&#x200B;ダイアログボックスに&#x200B;**[!UICONTROL 公開リンク]**&#x200B;切替スイッチを表示するには、[設定ページから公開リンク共有を有効にします](/help/assets/configure-content-hub-ui-options.md#enable-public-link-sharing)。
 
 ## プレビューページからアセットを共有する {#share-asset-from-preview-page}
 
@@ -38,8 +50,8 @@ ht-degree: 100%
 
 1. [!DNL Content Hub] ホームページに移動し、アセットのサムネールをクリックしてアセットをプレビューし、ダイアログボックスの右側のパネルにメニューオプションを表示します。
 1. 「![共有](/help/assets/assets/share.svg)」を選択して&#x200B;**[!UICONTROL 共有]**パネルを表示します。
-   ![プレビュー中にアセットを共有](/help/assets/assets/share-assets-from-share-panel.png)
-1. [アセットの共有](#share-assets)セクションの手順 3 に従って、この **[!UICONTROL 共有]** パネルからアセットリンク（プライベートまたはパブリック）を生成して共有します。
+   ![プレビュー中にアセットを共有](/help/assets/assets/share-link-asset-preview.png)
+1. [ アセットを共有 ](#share-assets) セクションの手順 3～5 に従って、この **[!UICONTROL 共有]** パネルからアセットリンク（プライベートまたはパブリック）を生成し、共有します。
 
 ## 共有アセットにアクセス {#access-shared-assets}
 
@@ -48,10 +60,7 @@ ht-degree: 100%
 * 1 つ以上のアセットを選択し、「![ダウンロード](/help/assets/assets/download-icon.svg) **[!UICONTROL ダウンロード]**」をクリックして、利用可能なダウンロードオプションから **[!UICONTROL オリジナル]**、**[!UICONTROL 静的]** または両方のレンディションを選択します。
   ![](/help/assets/assets/download-shared-assets.png)
 * アセットのサムネールをクリックして、アセットのメタデータを表示します。
-* 共有アセットページ（[プライベートリンクを使用してアクセス](#share-assets)）でアセットのサムネールをクリックし、![ダウンロード](/help/assets/assets/download-icon.svg)を選択して、アセットの使用可能な動的レンディションを選択およびダウンロードする前に、**[!UICONTROL ダウンロード]**パネルでそれらのレンディションを選択して表示します。
+* 共有アセットページ（[ プライベートリンクを使用してアクセス ](#share-assets)）で、アセットのサムネールをクリックし、![ ダウンロード ](/help/assets/assets/download-icon.svg) を選択して、アセットを選択およびダウンロードする前に、**[!UICONTROL ダウンロード]** パネルでアセットの使用可能な動的レンディションを選択して表示します。
   ![](/help/assets/assets/download-renditions-shared-assets-page.png)
-
-
-
 
 

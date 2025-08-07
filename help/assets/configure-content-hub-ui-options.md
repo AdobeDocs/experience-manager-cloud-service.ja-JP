@@ -2,10 +2,10 @@
 title: コンテンツハブユーザーインターフェイスの設定
 description: コンテンツハブユーザーインターフェイスの設定
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
+source-git-commit: e8932e6490008368e0e22ebec3331553b7b54c59
 workflow-type: tm+mt
-source-wordcount: '2089'
-ht-degree: 100%
+source-wordcount: '2189'
+ht-degree: 95%
 
 ---
 
@@ -175,11 +175,20 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 管理者は、ブランディング要件に合わせて [!DNL Content Hub] ポータルをカスタマイズできます。![デフォルトをリセット](/help/assets/assets/reset-default-content-hub.png)
 ![ブランディング](/help/assets/assets/ColorPalette.svg)**[!UICONTROL ブランディング]**&#x200B;ページでは、**[!UICONTROL バナー]**、**[!UICONTROL カラー]**&#x200B;および&#x200B;**[!UICONTROL バナー画像]**&#x200B;の各セクションを使用して、次のカスタマイズを実行します。
 
+1. [「ロゴ画像 [!UICONTROL  セクションからロゴ画像 ] 変更する](#Change-the-logo-image)
 1. [「[!UICONTROL バナー画像]」セクションからバナー画像を変更する](#Change-the-banner-image)
 1. [バナーのタイトルと本文を更新し、「[!UICONTROL バナー]」セクションからテキストカラーを変更します](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
 1. [「[!UICONTROL カラー]」セクションでプライマリカラーとセカンダリカラーを変更して、ブランドのテーマに合ったカラースキームを適用します](#Change-the-primary-and-secondary-color)
 
 「**[!UICONTROL デフォルトにリセット]**」オプションを選択して変更を元に戻し、デフォルトのテーマに戻します。
+
+#### ロゴ画像の変更{#change-the-logo-image}
+
+![ ブランディング ](/help/assets/assets/ColorPalette.svg)**[!UICONTROL ブランディング]** ページで次の手順を実行して、[!DNL Content Hub] デプロイメントのロゴ画像を変更します。
+
+1. ![ 画像を選択 ](/help/assets/assets/Browse.svg)**[!UICONTROL 画像を選択]** をクリックし、アセットセレクターダイアログボックスを使用してロゴ画像を選択します。 アセットセレクターには、承認済みの画像のみが表示されます。
+1. 画像を選択し、**[!UICONTROL 選択]**、**[!UICONTROL 保存]** の順にクリックして、[!DNL Content Hub] デプロイメントのロゴ画像として表示します。
+   ![バナー画像](/help/assets/assets/logo-image-content-hub1.png)
 
 #### バナー画像の変更{#Change-the-banner-image}
 
@@ -188,6 +197,12 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 1. ![画像を選択](/help/assets/assets/Browse.svg) **[!UICONTROL ギャラリーから選択]**&#x200B;をクリックし、アセットセレクターダイアログボックスを使用してバナー画像を選択します。アセットセレクターには、承認済みの画像のみが表示されます。
 1. 画像を選択し、**[!UICONTROL 選択]**、**[!UICONTROL 保存]**&#x200B;の順にクリックして、[!DNL Content Hub] デプロイメントのバナー画像として表示します。
    ![バナー画像](/help/assets/assets/banner-image-content-hub1.png)
+
+>[!NOTE]
+>
+> * **バナー画像** の推奨サイズは `height = 200 to 450px` と `width = 1920 to 2560px` です。
+> * **ロゴ画像** の推奨サイズは `height = 80 to 120px` および `width = 120 to 200px` です。
+> * バナー画像とロゴ画像の両方に対する **サポートされる MIME タイプ** は、`'JPG', value: 'image/jpeg'`、`'PNG', value: 'image/png'`、`'WEBP', value: 'image/webp'`、`'TIFF', value: 'image/tiff'`、`'SVG', value: 'image/svg+xml'`、`'GIF', value: 'image/gif'` です。
 
 #### タイトルと本文をバナーに追加し、テキストカラーを変更します{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
@@ -200,7 +215,7 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 ![プライマリおよびセカンダリカラー](/help/assets/assets/primary-secondary-color-content-hub1.png)
 **[!UICONTROL プライマリカラー]：** プライマリカラースキームは、[!DNL Content Hub] ホーム ページや[!UICONTROL 設定ページ]を含む [!DNL Content Hub] 全体の選択アクション、チェックボックスなどのインタラクティブ要素、検索バー、切り替えスイッチに適用されます。また、**[!UICONTROL すべてのアセット]**&#x200B;ページや&#x200B;**[!UICONTROL コレクション]**&#x200B;ページで使用できるオプションなど、プライマリ [!DNL Content Hub] インターフェイスで使用できるアクションオプションにも適用されます。
 
-**[!UICONTROL セカンダリカラー]：**[!DNL Content Hub] ホームページでは、ダイアログボックス内で使用可能な UI オプションおよび入力フィールドにセカンダリカラースキームが適用されます。選択アクション、チェックボックス、検索バー、切り替えスイッチを除く、[!UICONTROL 設定]ページで使用可能なすべての設定メニューオプションに適用されます。
+**[!UICONTROL セカンダリカラー]：**[!DNL Content Hub] ホームページでは、ダイアログボックス内で使用可能な UI オプションおよび入力フィールドにセカンダリカラースキームが適用されます。選択アクション、チェックボックス、検索バー、切替スイッチを除く、[!UICONTROL 設定]ページで使用可能なすべての設定メニューオプションに適用されます。
 
 ### アセット表示{#asset-visibility-content-hub}
 
