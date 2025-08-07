@@ -30,7 +30,7 @@ FDM をフォームに統合する前に、次の手順を実行します。
 
 ![フォーム統合に有効にできるデータソース拡張機能など、使用できる拡張機能を示すユニバーサルエディター Extension Manager インターフェイスのスクリーンショット](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
-ユニバーサルエディターで拡張機能を有効または無効にする方法については、](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager 機能のハイライト[の記事を参照してください。
+ユニバーサルエディターで拡張機能を有効または無効にする方法については、[&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager 機能のハイライトの記事を参照してください。
 
 ## フォームタイプを選択
 

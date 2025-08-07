@@ -150,13 +150,14 @@ AEM OSGi コンソール（`/system/console/configMgr`）で：
 
 2. **設定例**:
 
-       # フォームをホストするサイトの設定 
+       &#x200B;# フォームをホストするサイトの設定 
        headers:
        - パス：/forms/**
        custom:
        Access-Control-Allow-Origin: https://host-domain.com
        Access-Control-Allow-Methods: GET（OPTIONS） 
    
+
 ### ステップの埋め込み
 
 1. **フォームの作成と公開**

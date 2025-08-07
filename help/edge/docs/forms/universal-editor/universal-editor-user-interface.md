@@ -339,7 +339,7 @@ ht-degree: 4%
 
     ![ バリエーションを生成 ] （/help/edge/docs/forms/universal-editor/assets/ue-variations.png） 
 
-**詳細情報：**[ バリエーションを生成ガイド ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**詳細情報：**&#x200B;[ バリエーションを生成ガイド ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **コンテンツドラフト**
 

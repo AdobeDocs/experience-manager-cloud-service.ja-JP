@@ -78,9 +78,9 @@ ht-degree: 5%
 
 このプロセスは、次の 3 つの主なフェーズで構成されます。
 
-- **フェーズ 1:**[ テンプレートの選択とフォームの作成 ](#step-1-template-selection-and-form-creation)
-- **フェーズ 2:**[ フォームのオーサリングとデザイン ](#step-2-form-authoring-and-design)
-- **フェーズ 3:**[ 設定と公開 ](#step-3-configuration-and-publishing)
+- **フェーズ 1:**&#x200B;[ テンプレートの選択とフォームの作成 ](#step-1-template-selection-and-form-creation)
+- **フェーズ 2:**&#x200B;[ フォームのオーサリングとデザイン ](#step-2-form-authoring-and-design)
+- **フェーズ 3:**&#x200B;[ 設定と公開 ](#step-3-configuration-and-publishing)
 
 各フェーズには、正しい設定を確認するための検証手順が含まれます。
 
