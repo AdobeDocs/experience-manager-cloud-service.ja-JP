@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 6400662cb1c7a504f69db7091091452e99dd6ce9
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2117'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ AEM Forms用Edge Delivery Servicesは、高性能の web 配信と、ユニバ�
 | 事前設定済みのテンプレートから開始 | 現在のAEM プロジェクトへのフォームの追加 |
 | **最適な対象：** 新規実装 | **最適：** 既存のAEM Sites |
 | **結果：** 事前設定済みのForms ブロック | **結果：** Formsが既存のサイトに追加されました |
-| **&#x200B;**&#x200B;手順：Forms→のテンプレート→ース セットアップ | **手順：** Integration → Configuration → Forms |
+| **** 手順：Forms→のテンプレート→ース セットアップ | **手順：** Integration → Configuration → Forms |
 | [ パス A から開始 ](#path-a-create-new-project-with-forms) | [ パス B から開始 ](#path-b-add-forms-to-existing-project) |
 
 ## 前提条件
@@ -182,8 +182,8 @@ AEM コード同期は、AEM オーサリング環境と GitHub リポジトリ�
 
 **検証：** AEMへの GitHub リポジトリの接続を確認します。
 
->[!NOTE]
->
+    >[!NOTE]
+    >
 >ビルドに問題がありますか？ [GitHub ビルドの問題のトラブルシューティング ](#troubleshooting-github-build-issues) を参照してください。
 
 +++
@@ -308,7 +308,7 @@ AEM コード同期は、AEM オーサリング環境と GitHub リポジトリ�
 > - **ホームページ：** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`
 > - **その他のページ：** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/<page-name>`
 
-**次へ：**&#x200B;[ 最初のフォームを作成 ](#create-your-first-form)
+**次へ：**[ 最初のフォームを作成 ](#create-your-first-form)
 
 +++
 
@@ -399,11 +399,11 @@ Edge Delivery Servicesを使用するAEM プロジェクトが既にある場合
 
    ```bash
    # Form block rule engine files
-    blocks/form/rules/formula/*
-    blocks/form/rules/model/*
-    blocks/form/rules/functions.js
-    scripts/editor-support.js
-    scripts/editor-support-rte.js
+   blocks/form/rules/formula/*
+   blocks/form/rules/model/*
+   blocks/form/rules/functions.js
+   scripts/editor-support.js
+   scripts/editor-support-rte.js
    ```
 
 2. **.eslintrc.js の更新**
@@ -490,7 +490,7 @@ Edge Delivery Servicesを使用するAEM プロジェクトが既にある場合
 
 +++
 
-**次：**&#x200B;[ 最初のフォームを作成 ](#create-your-first-form)
+**次：**[ 最初のフォームを作成 ](#create-your-first-form)
 
 ## 最初のフォームを作成
 
@@ -633,7 +633,7 @@ Edge Delivery Servicesを使用するAEM プロジェクトが既にある場合
 
 >[!TIP]
 >
-> **詳細情報：**&#x200B;[ ユニバーサルエディターでのスタンドアロンフォームの作成 ](/help/edge/docs/forms/universal-editor/create-forms.md)
+> **詳細情報：**[ ユニバーサルエディターでのスタンドアロンフォームの作成 ](/help/edge/docs/forms/universal-editor/create-forms.md)
 
 ## ローカル開発環境の設定
 
@@ -648,7 +648,7 @@ Edge Delivery Servicesを使用するAEM プロジェクトが既にある場合
    AEM CLI を使用すると、ローカル開発タスクを簡略化できます。
 
    ```bash
-   npm install -g @adobe/aem-cli
+       npm install -g @adobe/aem-cli
    ```
 
 2. **リポジトリのクローン**
