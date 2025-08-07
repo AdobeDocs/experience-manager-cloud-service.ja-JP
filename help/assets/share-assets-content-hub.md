@@ -49,7 +49,7 @@ ht-degree: 57%
 アセットをプレビューしながら共有するには、次の手順を実行します。
 
 1. [!DNL Content Hub] ホームページに移動し、アセットのサムネールをクリックしてアセットをプレビューし、ダイアログボックスの右側のパネルにメニューオプションを表示します。
-1. 「![共有](/help/assets/assets/share.svg)」を選択して&#x200B;**[!UICONTROL 共有]**パネルを表示します。
+1. 「![共有](/help/assets/assets/share.svg)」を選択して&#x200B;**[!UICONTROL 共有]**&#x200B;パネルを表示します。
    ![プレビュー中にアセットを共有](/help/assets/assets/share-link-asset-preview.png)
 1. [ アセットを共有 ](#share-assets) セクションの手順 3～5 に従って、この **[!UICONTROL 共有]** パネルからアセットリンク（プライベートまたはパブリック）を生成し、共有します。
 

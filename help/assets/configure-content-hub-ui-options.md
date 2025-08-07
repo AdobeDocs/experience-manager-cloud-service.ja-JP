@@ -175,7 +175,7 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 管理者は、ブランディング要件に合わせて [!DNL Content Hub] ポータルをカスタマイズできます。![デフォルトをリセット](/help/assets/assets/reset-default-content-hub.png)
 ![ブランディング](/help/assets/assets/ColorPalette.svg)**[!UICONTROL ブランディング]**&#x200B;ページでは、**[!UICONTROL バナー]**、**[!UICONTROL カラー]**&#x200B;および&#x200B;**[!UICONTROL バナー画像]**&#x200B;の各セクションを使用して、次のカスタマイズを実行します。
 
-1. [「ロゴ画像 [!UICONTROL  セクションからロゴ画像 ] 変更する](#Change-the-logo-image)
+1. [「ロゴ画像 [!UICONTROL &#x200B; セクションからロゴ画像 &#x200B;] 変更する](#Change-the-logo-image)
 1. [「[!UICONTROL バナー画像]」セクションからバナー画像を変更する](#Change-the-banner-image)
 1. [バナーのタイトルと本文を更新し、「[!UICONTROL バナー]」セクションからテキストカラーを変更します](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
 1. [「[!UICONTROL カラー]」セクションでプライマリカラーとセカンダリカラーを変更して、ブランドのテーマに合ったカラースキームを適用します](#Change-the-primary-and-secondary-color)
@@ -215,7 +215,7 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 ![プライマリおよびセカンダリカラー](/help/assets/assets/primary-secondary-color-content-hub1.png)
 **[!UICONTROL プライマリカラー]：** プライマリカラースキームは、[!DNL Content Hub] ホーム ページや[!UICONTROL 設定ページ]を含む [!DNL Content Hub] 全体の選択アクション、チェックボックスなどのインタラクティブ要素、検索バー、切り替えスイッチに適用されます。また、**[!UICONTROL すべてのアセット]**&#x200B;ページや&#x200B;**[!UICONTROL コレクション]**&#x200B;ページで使用できるオプションなど、プライマリ [!DNL Content Hub] インターフェイスで使用できるアクションオプションにも適用されます。
 
-**[!UICONTROL セカンダリカラー]：**[!DNL Content Hub] ホームページでは、ダイアログボックス内で使用可能な UI オプションおよび入力フィールドにセカンダリカラースキームが適用されます。選択アクション、チェックボックス、検索バー、切替スイッチを除く、[!UICONTROL 設定]ページで使用可能なすべての設定メニューオプションに適用されます。
+**[!UICONTROL セカンダリカラー]：**&#x200B;[!DNL Content Hub] ホームページでは、ダイアログボックス内で使用可能な UI オプションおよび入力フィールドにセカンダリカラースキームが適用されます。選択アクション、チェックボックス、検索バー、切替スイッチを除く、[!UICONTROL 設定]ページで使用可能なすべての設定メニューオプションに適用されます。
 
 ### アセット表示{#asset-visibility-content-hub}
 
