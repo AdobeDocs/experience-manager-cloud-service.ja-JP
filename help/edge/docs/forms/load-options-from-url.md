@@ -4,10 +4,10 @@ description: ドロップダウンリストオプションは別個のスプレ�
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 92%
+source-wordcount: '504'
+ht-degree: 100%
 
 ---
 
@@ -19,16 +19,16 @@ ht-degree: 92%
 
 別のスプレッドシートからドロップダウンオプションを読み込むことには、次のメリットがあります。
 
-* 管理の簡素化：ドロップダウンオプションを一元的な場所に維持して、更新や追加を簡単にします。
-* 効率の向上：フォーム定義内に長いオプションリストを手動で追加する必要がなくなります。
+- 管理の簡素化：ドロップダウンオプションを一元的な場所に維持して、更新や追加を簡単にします。
+- 効率の向上：フォーム定義内に長いオプションリストを手動で追加する必要がなくなります。
 
 ![ドロップダウンオプション](/help/forms/assets/drop-down-options.png)
 
 
 この記事を最後まで読むと、以下の操作を実行できるようになります。
 
-* [別個のスプレッドシートでオプションを定義する](#define-options)
-* [ドロップダウンリストのオプションを読み込む URL を追加する](#add-url)
+- [別個のスプレッドシートでオプションを定義する](#define-options)
+- [ドロップダウンリストのオプションを読み込む URL を追加する](#add-url)
 
 ## 別個のシートでオプションを定義する {#define-options}
 
@@ -39,8 +39,8 @@ ht-degree: 92%
    1. 新しいシートを追加します。 例：「shared-country」。
 1. オプション列を定義します。
 「オプション」と「値」の 2 つの列を追加します。
-   * 「オプション」では、ドロップダウンメニューに表示されるテキストを定義します。
-   * 「値」では、ユーザーがオプションを選択したときに送信される値を定義します。
+   - 「オプション」では、ドロップダウンメニューに表示されるテキストを定義します。
+   - 「値」では、ユーザーがオプションを選択したときに送信される値を定義します。
 
    >[!NOTE]
    >
@@ -81,14 +81,9 @@ ht-degree: 92%
 
 ドロップダウンリストのオプションを読み込む URL をフォーム定義に統合したら、`Destination` ドロップダウンのオプションが URL から表示されるようになります。
 
-例えば、プロジェクトのリポジトリの名前が「wefinance」で、アカウント所有者の「wkndform」の下にあり、「main」ブランチを使用している場合、次の URL は、別個のシートに保存されたオプションを表示する `enquiry` フォームを表示します。
+例えば、プロジェクトのリポジトリの名前が「wefinance」で、アカウント所有者「wkndform」の下にあり、「main」分岐を使用している場合、以下の URL は、別のシートに保存されているオプションを表示する `enquiry` フォームを表示します。
 
 `https://main--wefinance--wkndform.aem.live/enquiry-form`
-<!--(https://main--wefinance--wkndform.aem.live/enquiry-form) 
--->
 
-## 関連トピック
-
-{{see-more-forms-eds}}
 
 

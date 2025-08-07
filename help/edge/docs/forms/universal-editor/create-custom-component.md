@@ -4,17 +4,14 @@ description: EDS フォームのカスタムコンポーネントの作成
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: ht
-source-wordcount: '1802'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1789'
+ht-degree: 98%
 
 ---
 
 # WYSIWYG オーサリングでのカスタムコンポーネントの作成
-
-<span class="preview">これは、<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features">プレリリースチャネル</a>を通じて使用できるプレリリース機能です。</span>
-
 
 Edge Delivery Services Forms には、カスタマイズ機能が用意されているので、フロントエンド開発者は調整されたフォームコンポーネントを作成できます。これらのカスタムコンポーネントは WYSIWYG オーサリングエクスペリエンスにシームレスに統合されるので、フォーム作成者はフォームエディター内で簡単に追加、設定、管理できます。カスタムコンポーネントを使用すると、作成者はスムーズで直感的なオーサリングプロセスを確保しながら機能を強化できます。
 
@@ -24,8 +21,8 @@ Edge Delivery Services Forms には、カスタマイズ機能が用意されて
 
 カスタムコンポーネントの作成を開始する前に、次のことを行う必要があります。
 
-* [ネイティブ HTML コンポーネント](/help/edge/docs/forms/form-components.md)の基本知識を持つ。
-* [CSS セレクターを使用してフィールドタイプに基づいてフォームフィールドをスタイル設定](/help/edge/docs/forms/style-theme-forms.md)する方法を理解する
+- [ネイティブ HTML コンポーネント](/help/edge/docs/forms/form-components.md)の基本知識を持つ。
+- [CSS セレクターを使用してフィールドタイプに基づいてフォームフィールドをスタイル設定](/help/edge/docs/forms/style-theme-forms.md)する方法を理解する
 
 ## カスタムコンポーネントの作成
 
@@ -52,9 +49,9 @@ AEM プロジェクトに新しいカスタムコンポーネント用の新し�
    1. AEM プロジェクトを開き、`../blocks/form/components/` に移動します。
    1. `../blocks/form/components/<component_name>` でカスタムコンポーネントの新しいフォルダーを追加します。この例では、`range` という名前のフォルダーを作成します。
    1. `../blocks/form/components/<component_name>` に新しく作成したフォルダーに移動します。例えば、`../blocks/form/components/range` に移動して、次のファイルを追加します。
-      * `/blocks/form/components/range/_range.json`：カスタムコンポーネントの定義が含まれます。
-      * `../blocks/form/components/range/range.css`：カスタムコンポーネントのスタイル設定を定義します。
-      * `../blocks/form/components/range/range.js`：実行時にカスタムコンポーネントをカスタマイズします。
+      - `/blocks/form/components/range/_range.json`：カスタムコンポーネントの定義が含まれます。
+      - `../blocks/form/components/range/range.css`：カスタムコンポーネントのスタイル設定を定義します。
+      - `../blocks/form/components/range/range.js`：実行時にカスタムコンポーネントをカスタマイズします。
 
         ![オーサリング用のカスタムコンポーネントの追加](/help/edge/docs/forms/universal-editor/assets/adding-custom-component.png)
 
@@ -68,12 +65,12 @@ AEM プロジェクトに新しいカスタムコンポーネント用の新し�
 
    定義を追加するには、`_range.json` ファイルに次のフィールドを追加する必要があります。
 
-   * **タイトル**：ユニバーサルエディターに表示されるコンポーネントのタイトル。
-   * **ID**：コンポーネントの一意の ID。
-   * **fieldType**：Forms では、特定のタイプのユーザー入力を取り込む様々な **fieldType** をサポートしています。[サポートされている fieldType は、追加バイトの節](#supported-fieldtypes)で確認できます。
-   * **resourceType**：各カスタムコンポーネントには、fieldType に基づいて関連付けられたリソースタイプがあります。[サポートされている resourceType は、追加バイトの節](#supported-resourcetype)で確認できます。
-   * **jcr:title**：タイトルに似ていますが、コンポーネントの構造内に保存されます。
-   * **fd:viewType**：カスタムコンポーネントの名前を表します。これはコンポーネントの一意の ID です。コンポーネントのカスタマイズされたビューを作成する必要があります。
+   - **タイトル**：ユニバーサルエディターに表示されるコンポーネントのタイトル。
+   - **ID**：コンポーネントの一意の ID。
+   - **fieldType**：Forms では、特定のタイプのユーザー入力を取り込む様々な **fieldType** をサポートしています。[サポートされている fieldType は、追加バイトの節](#supported-fieldtypes)で確認できます。
+   - **resourceType**：各カスタムコンポーネントには、fieldType に基づいて関連付けられたリソースタイプがあります。[サポートされている resourceType は、追加バイトの節](#supported-resourcetype)で確認できます。
+   - **jcr:title**：タイトルに似ていますが、コンポーネントの構造内に保存されます。
+   - **fd:viewType**：カスタムコンポーネントの名前を表します。これはコンポーネントの一意の ID です。コンポーネントのカスタマイズされたビューを作成する必要があります。
 
 コンポーネント定義を追加した後の `_range.json` ファイルは次のとおりです。
 
@@ -118,17 +115,17 @@ AEM プロジェクトに新しいカスタムコンポーネント用の新し�
 
    1. **モデルを作成**
 
-      * モデル配列に新しいオブジェクトを追加し、コンポーネントモデルの `id` を、コンポーネント定義で以前に設定した `fd:viewType` プロパティと一致するように設定します。
-      * このオブジェクト内にフィールド配列を含めます。
+      - モデル配列に新しいオブジェクトを追加し、コンポーネントモデルの `id` を、コンポーネント定義で以前に設定した `fd:viewType` プロパティと一致するように設定します。
+      - このオブジェクト内にフィールド配列を含めます。
 
    2. **プロパティダイアログのフィールドを定義**
 
-      * フィールド配列内の各オブジェクトは、コンテナタイプのコンポーネントにする必要があり、**プロパティ**&#x200B;ダイアログにタブとして表示できます。
-      * 一部のフィールドでは、`models/form-common` で使用できる再利用可能なプロパティを参照できます。
+      - フィールド配列内の各オブジェクトは、コンテナタイプのコンポーネントにする必要があり、**プロパティ**&#x200B;ダイアログにタブとして表示できます。
+      - 一部のフィールドでは、`models/form-common` で使用できる再利用可能なプロパティを参照できます。
 
    3. **既存のコンポーネントモデルを参照として使用**
 
-      * 選択した `fieldType` に対応する既存のコンポーネントモデルのコンテンツをコピーし、必要に応じて変更できます。例えば、`number-input` コンポーネントを拡張して&#x200B;**範囲**&#x200B;コンポーネントを作成すると、`models/form-components/_number-input.json` のモデル配列を参照として使用できます。
+      - 選択した `fieldType` に対応する既存のコンポーネントモデルのコンテンツをコピーし、必要に応じて変更できます。例えば、`number-input` コンポーネントを拡張して&#x200B;**範囲**&#x200B;コンポーネントを作成すると、`models/form-components/_number-input.json` のモデル配列を参照として使用できます。
 
    コンポーネントモデルを追加した後の `_range.json` ファイルは次のとおりです。
 
@@ -186,10 +183,10 @@ AEM プロジェクトに新しいカスタムコンポーネント用の新し�
 
 JSON スニペットは、**範囲**&#x200B;コンポーネントの&#x200B;**ステップ値**&#x200B;と呼ばれるカスタムプロパティを定義します。各フィールドの分類を以下に示します。
 
-* **コンポーネント**：プロパティダイアログで使用される入力フィールドのタイプを指定します。この場合、`number` は、フィールドが数値を受け入れることを示します。
-* **名前**：コンポーネントのロジックで参照するのに使用されるプロパティの識別子。ここで、`stepValue` は範囲のステップ値設定を表します。
-* **ラベル**：プロパティダイアログに表示されるプロパティの表示名。
-* **valueType**：プロパティに期待されるデータタイプを定義します。`number` では、数値の入力のみが許可されます。
+- **コンポーネント**：プロパティダイアログで使用される入力フィールドのタイプを指定します。この場合、`number` は、フィールドが数値を受け入れることを示します。
+- **名前**：コンポーネントのロジックで参照するのに使用されるプロパティの識別子。ここで、`stepValue` は範囲のステップ値設定を表します。
+- **ラベル**：プロパティダイアログに表示されるプロパティの表示名。
+- **valueType**：プロパティに期待されるデータタイプを定義します。`number` では、数値の入力のみが許可されます。
 
 これで、`range.js` の JSON プロパティで `stepValue` をカスタムプロパティとして使用し、実行時にその値に基づいて動的な動作を実装できます。
 
@@ -263,46 +260,48 @@ WYSIWYG でのフォームオーサリング中に、カスタムコンポーネ
 1. `id="form"` を持つオブジェクト内でコンポーネント配列を見つけます。
 1. `definitions[]` の `fd:viewType` 値を `id="form"` を持つオブジェクトのコンポーネント配列に追加します。
 
-```javascript
- "filters": [
-    {
-      "id": "form",
-      "components": [
-        "captcha",
-        "checkbox",
-        "checkbox-group",
-        "date-input",
-        "drop-down",
-        "email",
-        "file-input",
-        "form-accordion",
-        "form-button",
-        "form-fragment",
-        "form-image",
-        "form-modal",
-        "form-reset-button",
-        "form-submit-button",
-        "number-input",
-        "panel",
-        "plain-text",
-        "radio-group",
-        "rating",
-        "telephone-input",
-        "text-input",
-        "tnc",
-        "wizard",
-        "range"
-      ]
-    }
-  ]
-```
+   ```javascript
+   "filters": [
+     {
+       "id": "form", 
+       "components": [
+         "captcha",
+         "checkbox",
+         "checkbox-group",
+         "date-input",
+         "drop-down",
+         "email",
+         "file-input",
+         "form-accordion",
+         "form-button",
+         "form-fragment",
+         "form-image",
+         "form-modal",
+         "form-reset-button",
+         "form-submit-button",
+         "number-input",
+         "panel",
+         "plain-text",
+         "radio-group",
+         "rating",
+         "telephone-input",
+         "text-input",
+         "tnc",
+         "wizard",
+         "range"
+       ]
+     }
+   ]
+   ```
 
 ![コンポーネントフィルター](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
 
 ### &#x200B;4. カスタムコンポーネントの登録
 
-フォームブロックがカスタムコンポーネントを認識し、フォーム作成中にコンポーネントモデルで定義されたプロパティを読み込むことができるようにするには、コンポーネント定義の `fd:viewType` 値を `mappings.js` ファイルに追加します。
+フォームブロックがカスタムコンポーネントを認識できるようにし、フォームのオーサリング時にコンポーネントモデルで定義されたプロパティを読み込むには、`fd:viewType` の値をコンポーネント定義から `mappings.js` ファイルに追加します。
+
 コンポーネントを登録するには：
+
 1. `/blocks/form/mappings.js` ファイルに移動します。
 1. `customComponents[]` 配列を見つけます。
 1. `definitions[]` 配列の `fd:viewType` 値を `customComponents[]` 配列に追加します。
@@ -347,7 +346,7 @@ const OOTBComponentDecorators = ['file-input',
    height: 5px;
    border-radius: 5px;
    border: none;
-   background-image: linear-gradient(to right, #ADD8E6 calc(100% * var(--current-steps)/var(--total-steps)), #C5C5C5 calc(100% * var(--current-steps)/var(--total-steps)));
+   background-image: linear-gradient(to right, #ADD8E6 calc(100% - var(--current-steps)/var(--total-steps)), #C5C5C5 calc(100% - var(--current-steps)/var(--total-steps)));
    }
    
    main .form .range-widget-wrapper.decorated input[type="range"]:focus {
@@ -359,18 +358,18 @@ const OOTBComponentDecorators = ['file-input',
    width: 25px;
    height: 25px;
    border-radius: 50%;
-   background: #00008B; /* Dark Blue */
-   border: 3px solid #00008B; /* Dark Blue */
+   background: #00008B; /- Dark Blue */
+   border: 3px solid #00008B; /- Dark Blue */
    cursor: pointer;
    outline: 3px solid #fff;
    }
    
    .range-widget-wrapper.decorated input[type="range"]:focus::-webkit-slider-thumb {
-   border-color: #00008B; /* Dark Blue */
+   border-color: #00008B; /- Dark Blue */
    }
    
    .range-widget-wrapper.decorated .range-bubble {
-   color: #00008B; /* Dark Blue */
+   color: #00008B; /- Dark Blue */
    font-size: 20px;
    line-height: 28px;
    position: relative;
@@ -392,6 +391,7 @@ const OOTBComponentDecorators = ['file-input',
    float: right;
    }
    ```
+
    このコードは、カスタムコンポーネントのスタイル設定と外観を定義するのに役立ちます。
 
 1. 機能を追加するには、`/blocks/form/components/range/range.js` ファイルに移動して次のコード行を追加します。
@@ -407,7 +407,7 @@ const OOTBComponentDecorators = ['file-input',
    const bubble = element.querySelector('.range-bubble');
    // during initial render the width is 0. Hence using a default here.
    const bubbleWidth = bubble.getBoundingClientRect().width || 31;
-   const left = `${(current / total) * 100}% - ${(current / total) * bubbleWidth}px`;
+   const left = `${(current / total) - 100}% - ${(current / total) - bubbleWidth}px`;
    bubble.innerText = `${value}`;
    const steps = {
        '--total-steps': Math.ceil((max - min) / step),
@@ -460,18 +460,18 @@ const OOTBComponentDecorators = ['file-input',
 
 ## よくある質問
 
-* **component.css と forms.css の両方にスタイル設定を追加した場合、どちらが優先されますか？**
+- **component.css と forms.css の両方にスタイル設定を追加した場合、どちらが優先されますか？**
 `component.css` と **forms.css** の両方でスタイルが定義されている場合、`component.css` が優先されます。これは、コンポーネントレベルのスタイルがより具体的で、`forms.css` からのグローバルスタイルを上書きするからです。
 
-* **カスタムコンポーネントが、ユニバーサルエディターの使用可能なコンポーネントのリストに表示されません。これを修正するにはどうすればよいですか？**
+- **カスタムコンポーネントが、ユニバーサルエディターの使用可能なコンポーネントのリストに表示されません。これを修正するにはどうすればよいですか？**
 カスタムコンポーネントが表示されない場合は、次のファイルを確認して、コンポーネントが正しく登録されていることを確認してください。
-   * **component-definition.json**：コンポーネントが正しく定義されていることを確認します。
-   * **component-filters.json**：適切なセクションでコンポーネントが許可されていることを確認します。
-   * **component-models.json**：コンポーネントモデルが正しく設定されていることを確認します。
+   - **component-definition.json**：コンポーネントが正しく定義されていることを確認します。
+   - **component-filters.json**：適切なセクションでコンポーネントが許可されていることを確認します。
+   - **component-models.json**：コンポーネントモデルが正しく設定されていることを確認します。
 
 ## ベストプラクティス
 
-* カスタムスタイルとコンポーネントをローカルで開発するには、[ローカル AEM 開発環境を設定](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment)することをお勧めします。
+- カスタムスタイルとコンポーネントをローカルで開発するには、[ローカル AEM 開発環境を設定](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment)することをお勧めします。
 
 
 ## 追加バイト
@@ -496,19 +496,17 @@ const OOTBComponentDecorators = ['file-input',
 ### サポートされるフィールドタイプ
 
 フォームでサポートされるフィールドタイプは次のとおりです。
-* テキスト入力
-* 数値入力
-* 日付入力
-* パネル
-* チェックボックス
-* ドロップダウン
-* ラジオグループ
-* プレーンテキスト
-* ファイル入力
-* メール
-* 画像
-* ボタン
 
-## 関連トピック
+- テキスト入力
+- 数値入力
+- 日付入力
+- パネル
+- チェックボックス
+- ドロップダウン
+- ラジオグループ
+- プレーンテキスト
+- ファイル入力
+- メール
+- 画像
+- ボタン
 
-{{universal-editor-see-also}}

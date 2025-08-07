@@ -4,8 +4,8 @@ description: ユニバーサルエディターのオーサリングアプロー�
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 100%
 
@@ -19,11 +19,11 @@ AEM Forms の Edge Delivery Services は、作成者が新しいフォームを�
 
 これらのサービスにより、次のことが可能になります。
 
-* **選択したツールを使用して登録エクスペリエンスを作成：**&#x200B;コンテンツソースを分離することでオーサリングの効率を高めます。標準では、ドキュメントベースのオーサリング（Microsoft SharePoint または Google Drive）と WYSIWYG オーサリング（ユニバーサルエディターまたはアダプティブフォームエディター）を使用できます。同じフォームサイト上で複数のコンテンツソースを操作し、Microsoft Excel、Google Sheets、ユニバーサルエディター、アダプティブフォームエディターなどの推奨オーサリングツールを使用できます。
+- **選択したツールを使用して登録エクスペリエンスを作成：**&#x200B;コンテンツソースを分離することでオーサリングの効率を高めます。標準では、ドキュメントベースのオーサリング（Microsoft SharePoint または Google Drive）と WYSIWYG オーサリング（ユニバーサルエディターまたはアダプティブフォームエディター）を使用できます。同じフォームサイト上で複数のコンテンツソースを操作し、Microsoft Excel、Google Sheets、ユニバーサルエディター、アダプティブフォームエディターなどの推奨オーサリングツールを使用できます。
 
-* **優れたデジタル登録エクスペリエンスを提供：**&#x200B;迅速な読み込みとレンダリングを行うデジタル登録エクスペリエンスを提供し、運用テレメトリによってフォームのパフォーマンスを継続的に監視します。読み込み時間の短縮とユーザーエクスペリエンスの最適化により、フォームの完成率とコンバージョン率が向上します。
+- **優れたデジタル登録エクスペリエンスを提供：**&#x200B;迅速な読み込みとレンダリングを行うデジタル登録エクスペリエンスを提供し、運用テレメトリによってフォームのパフォーマンスを継続的に監視します。読み込み時間の短縮とユーザーエクスペリエンスの最適化により、フォームの完成率とコンバージョン率が向上します。
 
-* **開発者にわかりやすいツールセットを使用：**AEM Forms の Edge Delivery Services は、
+- **開発者にわかりやすいツールセットを使用：**AEM Forms の Edge Delivery Services は、
 プレーン HTML、最新の CSS、Vanilla JavaScript を使用して優れたエクスペリエンスを作成し、特定のフレームワークの急な学習曲線を回避します。基本的な web 開発スキルを持つ開発者は、フォームコンポーネントとエクスペリエンスをカスタマイズして簡単に作成できます。パイプラインの実行を待機する必要はありません。コードを GitHub にチェックインするだけで、変更が公開されます。
 
 ## オーサリング方法の選択
@@ -31,9 +31,9 @@ AEM Forms の Edge Delivery Services は、作成者が新しいフォームを�
 
 Adobe Experience Manager（AEM）Edge Delivery Services（EDS）を使用すると、非常に高速で拡張性の高い web エクスペリエンスをエッジから提供できます。このガイドでは、明確なレコメンデーション階層を持つ&#x200B;**これらのエクスペリエンス向けのフォームを作成および公開する方法**&#x200B;について説明します。
 
-* **ユニバーサルエディター（UE）- ほとんどのチームに最適な選択肢**
-* **ドキュメントベースのオーサリング（ドキュメント／スプレッドシート） - 迅速でシンプルなフォームに最適**
-* **ドキュメントオーサリング（DA） - DA で作成したページにフォームを埋め込むために使用**
+- **ユニバーサルエディター（UE）- ほとんどのチームに最適な選択肢**
+- **ドキュメントベースのオーサリング（ドキュメント／スプレッドシート） - 迅速でシンプルなフォームに最適**
+- **ドキュメントオーサリング（DA） - DA で作成したページにフォームを埋め込むために使用**
 
 最終的には、適切なオーサリング方法を選択し、送信オプションを理解して、実稼動対応のフォームに向けた次の手順に従うことができるようになります。
 
@@ -53,19 +53,19 @@ Adobe Experience Manager（AEM）Edge Delivery Services（EDS）を使用する�
 
 [ユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)は、次の速度とエンタープライズグレードの機能を組み合わせた、マーケターやデザイナー向けの視覚的なドラッグ＆ドロップオーサリングツールです。
 
-* リアルタイムの WYSIWYG 編集とデバイスのプレビュー。
-* AEM のアセット、ワークフロー、フォームデータモデル（FDM）との直接統合。
-* Vanilla JS／CSS のカスタムコンポーネントの開発者へのシームレスなハンドオフ。
-* 複雑なロジックを作成する高度なルールエディター。
-* カスタム機能を実現するサーバーサイド拡張機能。
-* 簡単なフォームを作成し視覚化する WYSIWYG 編集エクスペリエンス。
-* 送信されたデータの改ざん防止アーカイブを作成するレコードのドキュメント機能。
-* 電子署名を行う Adobe Sign との統合。
-* フォーム送信時に Adobe Workfront Fusion シナリオをトリガーする Adobe Workfront Fusion との統合。
-* フォームの事前入力とデータの送信の様々なデータソースとの統合。
-* 様々なデータソースとのインタラクションとデータ構造を定義するフォームデータモデル（FDM）。
-* Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics、その他多くのデータソースへのデータ送信を含む、フォーム送信を処理する複数の送信アクションから選択する機能。
-* Forms 送信サービス（FSS）または AEM パブリッシュの送信アクションを使用した送信
+- リアルタイムの WYSIWYG 編集とデバイスのプレビュー。
+- AEM のアセット、ワークフロー、フォームデータモデル（FDM）との直接統合。
+- Vanilla JS／CSS のカスタムコンポーネントの開発者へのシームレスなハンドオフ。
+- 複雑なロジックを作成する高度なルールエディター。
+- カスタム機能を実現するサーバーサイド拡張機能。
+- 簡単なフォームを作成し視覚化する WYSIWYG 編集エクスペリエンス。
+- 送信されたデータの改ざん防止アーカイブを作成するレコードのドキュメント機能。
+- 電子署名を行う Adobe Sign との統合。
+- フォーム送信時に Adobe Workfront Fusion シナリオをトリガーする Adobe Workfront Fusion との統合。
+- フォームの事前入力とデータの送信の様々なデータソースとの統合。
+- 様々なデータソースとのインタラクションとデータ構造を定義するフォームデータモデル（FDM）。
+- Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics、その他多くのデータソースへのデータ送信を含む、フォーム送信を処理する複数の送信アクションから選択する機能。
+- Forms 送信サービス（FSS）または AEM パブリッシュの送信アクションを使用した送信
 
 **レコメンデーション**：チームが 100％ドキュメント中心で、フォームが非常に基本的でない限り、すべての新しいフォームプロジェクトはユニバーサルエディターで開始します。
 
@@ -74,14 +74,14 @@ Adobe Experience Manager（AEM）Edge Delivery Services（EDS）を使用する�
 
 [ドキュメントベースのオーサリング](/help/edge/docs/forms/tutorial.md)は、Microsoft Word、Google Docs、Google Sheets などの使い慣れたツールを使用して、シンプルで複雑さの少ないフォームを作成するのに最適です。この方法は、フォームをすばやく簡単に作成する必要があるコンテンツチームに最適です。
 
-* ユーザーにわかりやすいエクスペリエンスを実現するアクセシブルなコンポーネント。
-* 一貫性のあるレンダリングを行う標準化された HTML 構造。
-* データの正確性を確保するルールと検証。
-* 追加情報を収集する添付ファイルのオプション。
-* スパム保護を実現する Google reCAPTCHA 統合。
-* 特定のニーズに合わせてカスタムフォームコンポーネントを作成する機能。
-* フォームデータを Microsoft Excel、Google Sheets、メールアドレスに直接送信します。
-* 運用テレメトリによるフォームのパフォーマンスの監視
+- ユーザーにわかりやすいエクスペリエンスを実現するアクセシブルなコンポーネント。
+- 一貫性のあるレンダリングを行う標準化された HTML 構造。
+- データの正確性を確保するルールと検証。
+- 追加情報を収集する添付ファイルのオプション。
+- スパム保護を実現する Google reCAPTCHA 統合。
+- 特定のニーズに合わせてカスタムフォームコンポーネントを作成する機能。
+- フォームデータを Microsoft Excel、Google Sheets、メールアドレスに直接送信します。
+- 運用テレメトリによるフォームのパフォーマンスの監視
 
 
 ### ドキュメントオーサリング（DA）でのフォームの埋め込み
@@ -113,10 +113,10 @@ Microsoft Excel または Google Sheets（ドキュメントベースのオー�
 
 ## 次の手順
 
-* [Forms の Edge Delivery Services のユニバーサルエディターの機能](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-* [ユニバーサルエディターを使用した最初のフォームの作成](/help/edge/docs/forms/universal-editor/create-forms.md)
-* [Google Sheet または Microsoft Excel を使用した最初のフォームの作成](/help/edge/docs/forms/tutorial.md)。
-* [ドキュメントオーサリング（DA）でのフォームの埋め込み](https://www.aem.live/developer/da-tutorial)
+- [Forms の Edge Delivery Services のユニバーサルエディターの機能](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+- [ユニバーサルエディターを使用した最初のフォームの作成](/help/edge/docs/forms/universal-editor/create-forms.md)
+- [Google Sheet または Microsoft Excel を使用した最初のフォームの作成](/help/edge/docs/forms/tutorial.md)。
+- [ドキュメントオーサリング（DA）でのフォームの埋め込み](https://www.aem.live/developer/da-tutorial)
 
 
 これで、AEM Edge Delivery Services を使用して最初のパフォーマンスの高いフォームを作成する準備が整いました。
@@ -126,15 +126,15 @@ Microsoft Excel または Google Sheets（ドキュメントベースのオー�
 
 ## Start creating forms
 
-* [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
-* [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
-* [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
-* [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
-* [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
-* [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
-* [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
+- [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
+- [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+- [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
+- [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
+- [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
+- [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
+- [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
+- [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
+- [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
 
 <!-- 
 
@@ -150,10 +150,10 @@ Microsoft Excel または Google Sheets（ドキュメントベースのオー�
         border-radius: 5px;
         padding: 5px;
         box-sizing: border-box;
-        transition: background-color 0.3s ease; /* Adding transition effect */
+        transition: background-color 0.3s ease; /- Adding transition effect */
     }
     .card-container:hover {
-        background-color: #f0f0f0; /* Changing background color on hover */
+        background-color: #f0f0f0; /- Changing background color on hover */
     }
 </style>
 

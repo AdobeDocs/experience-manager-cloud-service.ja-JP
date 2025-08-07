@@ -4,9 +4,9 @@ description: このドキュメントでは、AEM Forms の Edge Delivery Servic
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '1009'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1007'
 ht-degree: 100%
 
 ---
@@ -26,17 +26,17 @@ AEM Forms の Edge Delivery Services を使用すると、様々なコンポー�
 
 ### 入力フィールド
 
-* すべての有効な HTML5 [入力タイプ](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/input#input_types)と[テキストエリア](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/textarea)。例えば、button、checkbox、color、date、datetime-local、email、file、hidden、image、month、number、password、radio、range、reset、submit、tel、text、time、url、および week などです。
+- すべての有効な HTML5 [入力タイプ](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/input#input_types)と[テキストエリア](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/textarea)。例えば、button、checkbox、color、date、datetime-local、email、file、hidden、image、month、number、password、radio、range、reset、submit、tel、text、time、url、および week などです。
 
 ### 選択コントロール
 
-* [チェックボックスグループ](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/input/checkbox)：複数のオプションを選択する場合。
-* [ラジオグループ](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/input/radio)：グループから 1 つのオプションを選択する場合。
-* [ドロップダウンメニュー](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/select)：オプションのメニューを表示する場合。例：ドロップダウンボックス。
+- [チェックボックスグループ](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/input/checkbox)：複数のオプションを選択する場合。
+- [ラジオグループ](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/input/radio)：グループから 1 つのオプションを選択する場合。
+- [ドロップダウンメニュー](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/select)：オプションのメニューを表示する場合。例：ドロップダウンボックス。
 
 ### コンテナ
 
-* パネル／コンテナ：関連するフォーム要素をグループ化して、より適切に整理します。これは、[フィールドセット](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/fieldset)と[凡例](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/legend)の組み合わせです。
+- パネル／コンテナ：関連するフォーム要素をグループ化して、より適切に整理します。これは、[フィールドセット](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/fieldset)と[凡例](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/legend)の組み合わせです。
 
 
 ## コンポーネントのプロパティ
@@ -64,8 +64,3 @@ AEM Forms の Edge Delivery Services を使用すると、様々なコンポー�
 | 繰り返し可能 | すべて | 特定のフィールドセットを指定した `Min` 回数と `Max` 回数だけ繰り返すことができることを示す `fieldset` のブール値プロパティ。`Min` プロパティは 1 以上に設定する必要があります。`Min` プロパティを 0 に設定しないでください。 |
 | 表示式 | すべて | 表示式は、フィールドの表示を制御するために使用される、「=」タグで示されるスプレッドシートの数式を指します。この数式では、他のフィールドの value プロパティのみを使用できるので、システム内でフィールドの表示を簡単に管理できます。 |
 | 値式 | すべて | 値式は、フィールドの値を制御するために使用される、「=」タグで示されるスプレッドシートの数式を指します。この数式では、他のフィールドの value プロパティのみを使用できるので、システム内でフィールドの値を簡単に管理できます。 |
-
-
-## 関連トピック
-
-{{see-more-forms-eds}}

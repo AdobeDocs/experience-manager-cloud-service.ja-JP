@@ -4,7 +4,7 @@ description: アダプティブフォームテーマを使用して、アダプ�
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 449ff970f3b1e4479309e52d16aacf0979a0ec41
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 99%
@@ -202,7 +202,7 @@ Cloud Service インスタンスで作成されたテーマ：
 
 ## テーマエディターについて {#about-the-theme-editor}
 
-テーマエディターは、ビジネスユーザーや Web デザイナー／開発者に使いやすいインターフェイスで、様々なアダプティブフォームの要素のスタイル設定に必要な機能を簡単に使用できます。<!-- and interactive communication -->テーマを作成すると、フォーム<!--  , interactive communications, letters, document fragments, and data dictionaries-->のような独立したエンティティとして保存されます。
+テーマエディターは、ビジネスユーザーや web デザイナー／開発者に使いやすいインターフェイスで、様々なアダプティブフォームの要素のスタイル設定に必要な機能を簡単に使用できます。<!-- and interactive communication -->テーマを作成すると、フォーム<!--  , interactive communications, letters, document fragments, and data dictionaries-->のような独立したエンティティとして保存されます。
 
 テーマエディターでは、テーマでスタイル設定されたコンポーネントのスタイルをカスタマイズできます。デバイス上でのフォーム<!-- or interactive communication -->の外観をカスタマイズできます。
 
@@ -210,7 +210,7 @@ Cloud Service インスタンスで作成されたテーマ：
 
 * **キャンバス** - 右側に表示されます。ここには、すべてのスタイル設定の変更が即時に反映されるアダプティブフォーム<!--  or interactive communication -->のサンプルが表示されます。また、キャンバスから直接オブジェクトを選択して、オブジェクトに関連するスタイルを検索したり、そのスタイルを編集したりすることもできます。上部にあるデバイスの解像度のルーラーにより、キャンバスが制御されます。解像度のブレークポイントをルーラーから選択すると、その解像度でサンプルフォーム<!--  or interactive communication -->のプレビューが表示されます。キャンバスについては、[下記](themes.md#using-canvas)で説明されています。
 
-* **サイドバー** - 左側に表示されます。以下の項目があります。
+* **サイドバー***が左側に表示されます。 以下の項目があります。
 
    * **セレクター**：スタイル設定用に選択されたコンポーネントと、スタイルを設定するプロパティが表示されます。セレクターは、あるタイプのすべてのコンポーネントを表示します。1 つのテーマでテキストボックスを選択してスタイル設定する場合、フォーム<!-- or interactive communication -->内のすべてのテキストボックスがスタイルを継承します。セレクターを使用すると、スタイル設定のための汎用コンポーネントまたは特定のコンポーネントを選択できます。例えば、フィールドコンポーネントは汎用コンポーネント、テキストボックスは特定コンポーネントになります。
 
@@ -486,7 +486,7 @@ Web サービスで利用可能なフォントをアダプティブフォーム<
 
 Experience Manager で Adobe Fonts を設定するには、次の手順を実行します。
 
-1. オーサーインスタンスで、![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager]**/**[!UICONTROL ツール]**![ ハンマー ](assets/hammer.png)/**[!UICONTROL デプロイメント]**/**[!UICONTROL Cloud Services]** をクリックしてください。
+1. オーサーインスタンスで、![Adobe Experience Manager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL ツール]** ![ハンマー](assets/hammer.png)／**[!UICONTROL デプロイメント]**／**[!UICONTROL Cloud Services]** をクリックします。
 1. **[!UICONTROL Cloud Services]** ページで、「**[!UICONTROL Adobe Fonts]**」オプションに移動して開きます。設定フォルダーを開き、「**[!UICONTROL 作成]**」をクリックします。
 1. **[!UICONTROL 設定を作成]**&#x200B;ダイアログで、新しい設定のタイトルと名前を指定し、「**[!UICONTROL 作成]**」をクリックします。
 

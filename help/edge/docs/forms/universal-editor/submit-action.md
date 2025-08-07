@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
 hide: true
 hidefromToC: true
-source-git-commit: 565336d96a718a46f23d0acfa6155a6fd78ad87d
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '928'
 ht-degree: 100%
 
 ---
@@ -23,20 +23,20 @@ ht-degree: 100%
 
 このドキュメントの終わりまでに、次の方法を理解できます。
 
-* フォームに対して様々なタイプの送信アクションを設定
-* 外部システムとの統合のために REST エンドポイント送信を設定
-* フォームへの応答に対するメール送信を設定
-* 特定のビジネスニーズに合わせてカスタム送信アクションを実装
-* 送信時のフォーム検証とエラーシナリオを処理
+- フォームに対して様々なタイプの送信アクションを設定
+- 外部システムとの統合のために REST エンドポイント送信を設定
+- フォームへの応答に対するメール送信を設定
+- 特定のビジネスニーズに合わせてカスタム送信アクションを実装
+- 送信時のフォーム検証とエラーシナリオを処理
 
 ### ターゲットオーディエンス
 
 このガイドは、以下の読者を対象に設計されています。
 
-* 送信ロジックを実装する&#x200B;**フォーム開発者**
-* フォームをバックエンドシステムに接続する&#x200B;**システムインテグレーター**
-* フォームワークフローを定義する&#x200B;**ビジネスアナリスト**
-* フォーム送信プロセスを設計する&#x200B;**テクニカルアーキテクト**
+- 送信ロジックを実装する&#x200B;**フォーム開発者**
+- フォームをバックエンドシステムに接続する&#x200B;**システムインテグレーター**
+- フォームワークフローを定義する&#x200B;**ビジネスアナリスト**
+- フォーム送信プロセスを設計する&#x200B;**テクニカルアーキテクト**
 
 ### 使用可能な送信アクション
 
@@ -49,16 +49,16 @@ ht-degree: 100%
 
 送信アクションを設定する前に、次を確認します。
 
-* ユニバーサルエディターへのアクセス権
-* フォーム設定の適切な権限
-* ターゲット送信エンドポイントまたはメール設定について
+- ユニバーサルエディターへのアクセス権
+- フォーム設定の適切な権限
+- ターゲット送信エンドポイントまたはメール設定について
 
 送信アクションは、アダプティブフォームを通じて収集されたデータの送信先を指定します。送信プロセスは、ユーザーがフォームの「**[!UICONTROL 送信]**」ボタンをクリックすると開始されます。AEM Forms には、以下に説明する 2 つのタイプの送信アクションが用意されており、特定のニーズに合わせてカスタム送信アクションを作成および使用できます。標準の使用できる送信アクションは次のとおりです。
 
 <!--To define a Submit Action for an Adaptive Form, you use the Properties dialog of the **Adaptive Form block** in the **Editor**-->
 
-* [REST エンドポイントに送信](#rest-endpoint-submission-ue)
-* [メールを送信](#email-submission-ue)
+- [REST エンドポイントに送信](#rest-endpoint-submission-ue)
+- [メールを送信](#email-submission-ue)
 
 
 ### REST エンドポイントに送信 {#rest-endpoint-submission-ue}
@@ -66,9 +66,9 @@ ht-degree: 100%
 REST エンドポイントに送信アクションを使用すると、送信したフォームデータを指定された REST エンドポイントに送信できます。エンドポイントは、フォームがホストされている内部サーバーや、相対パスまたは絶対パスを使用して外部サーバーに属することができます。フォームをホストする AEM サーバーにデータを送信するには、AEM サーバーのルートパスに対応する相対パスを使用します。例えば、`/content/forms/af/SampleForm.html` のようになります。他のサーバーにデータを送信するには、絶対パスを使用します。
 
 <!--Configuring the Submit Action to REST Endpoint for Adaptive Forms offers several benefits such as:  
-* It facilitates seamless integration of form data with external systems and services via RESTful APIs.  
-* Offers flexibility in managing data submissions from Adaptive Forms, accommodating dynamic and complex data structures.  
-* Allows dynamic mapping of form fields to parameters within the REST endpoint URL, enabling adaptable and customizable data submissions.
+- It facilitates seamless integration of form data with external systems and services via RESTful APIs.  
+- Offers flexibility in managing data submissions from Adaptive Forms, accommodating dynamic and complex data structures.  
+- Allows dynamic mapping of form fields to parameters within the REST endpoint URL, enabling adaptable and customizable data submissions.
 -->
 
 
@@ -86,12 +86,12 @@ REST エンドポイントを設定するには：
 
 >[!NOTE]
 >
-> * 内部サーバーにデータを POST 送信するには、リソースのパスを指定します。データは、リソースのパスに POST されます。例えば、`/content/restEndPoint` のようになります。このような POST リクエストには、送信リクエストの認証情報が使用されます。
-> * 外部サーバーにデータを POST 送信するには、URL を指定します。URL の形式は、`https://host:port/path_to_rest_end_point` です。POST リクエストを匿名で処理するためのパスを設定してください。
+> - 内部サーバーにデータを POST 送信するには、リソースのパスを指定します。データは、リソースのパスに POST されます。例えば、`/content/restEndPoint` のようになります。このような POST リクエストには、送信リクエストの認証情報が使用されます。
+> - 外部サーバーにデータを POST 送信するには、URL を指定します。URL の形式は、`https://host:port/path_to_rest_end_point` です。POST リクエストを匿名で処理するためのパスを設定してください。
 
 ### メールを送信 {#email-submission-ue}
 
-「メールを送信」送信アクションでは、フォームの送信が完了すると同時に、1 人または複数の受信者にメールを送信できます。「メールを送信」設定を使用すると、事前に定義された形式のフォームデータを含むメールを作成できます。例えば、次のテンプレートで、送信されたフォームデータから顧客名、配送先住所、都道府県名、郵便番号が取得されるとします。[詳しくは、アダプティブフォームのメールテンプレートを参照してください](/help/forms/html-email-templates-in-adaptive-forms.md)。「メールを送信」送信アクションを使用してアダプティブフォームを設定する利点には、次のようなものがあります。
+「メールを送信」送信アクションでは、フォームの送信が完了すると同時に、1 人または複数の受信者にメールを送信できます。「メールを送信」設定を使用すると、事前に定義された形式のフォームデータを含むメールを作成できます。例えば、次のテンプレートで、送信されたフォームデータから顧客名、発送先住所、都道府県名、郵便番号が取得されるとします。[詳しくは、アダプティブフォームのメールテンプレートを参照してください](/help/forms/html-email-templates-in-adaptive-forms.md)。「メールを送信」送信アクションを使用してアダプティブフォームを設定する利点には、次のようなものがあります。
 
 1. 指定されたメール受信者にフォームデータが直接送信されるので、迅速な通信が可能です。
 1. これにより、フォーム送信をメール通知に直接統合することで、ワークフローを合理化できます。
@@ -176,11 +176,8 @@ REST エンドポイントを設定するには：
 1. 「**[!UICONTROL アダプティブフォームブロック]**」を選択します。
 1. プロパティ ![プロパティ](/help/forms/assets/Smock_Properties_18_N.svg) アイコンをクリックします。
 1. クリックすると、次のオプションが表示されます。
-   * **[!UICONTROL 送信時]**：送信時は、フォームを送信したときに表示されるメッセージをカスタマイズするのに役立ちます。デフォルトでは、フォームが正常に送信されると、「フォームを送信していただきありがとうございます」というカスタムメッセージがユーザーに表示されます。
+   - **[!UICONTROL 送信時]**：送信時は、フォームを送信したときに表示されるメッセージをカスタマイズするのに役立ちます。デフォルトでは、フォームが正常に送信されると、「フォームを送信していただきありがとうございます」というカスタムメッセージがユーザーに表示されます。
 また、「**[!UICONTROL メッセージを表示]**」オプションを選択してフォームの送信時に「ありがとうございます」メッセージをカスタマイズしたり、リッチテキスト&#x200B;**エディター**&#x200B;でメッセージを追加／編集したりできます。
 
 
-## 関連トピック
-
-{{universal-editor-see-also}}
 

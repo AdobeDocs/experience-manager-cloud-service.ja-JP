@@ -4,17 +4,15 @@ description: Forms の Edge Delivery Services のユニバーサルエディタ�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: ht
-source-wordcount: '1012'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '987'
 ht-degree: 100%
 
 ---
 
 
 # Forms の Edge Delivery Services のユニバーサルエディター
-
-<span class="preview">これは、<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features">プレリリースチャネル</a>を通じて使用できるプレリリース機能です。</span>
 
 ユニバーサルエディターは、シンプルで視覚的かつ直感的な WYSIWYG（見たままが得られる）インターフェイスを提供することで、Adobe Edge Delivery Services のフォーム作成に革命をもたらします。コンテンツ作成者とフォーム作成者向けに設計されており、従来のフォーム作成プロセスの複雑さを排除し、技術に詳しくないユーザーでもアクセスできます。
 
@@ -54,26 +52,6 @@ ht-degree: 100%
 | reCAPTCHA を使用すると、フォームを自動ボットから保護し、安全で信頼性の高いデータ収集を行うことができます。 | ユニバーサルエディターのビルトインの埋め込みコンポーネントを使用して、フォームを Edge Delivery Services サイトページに直接埋め込みます。 | フォームの送信が成功した後に、ユーザーに表示される感謝のメッセージまたはページを簡単にカスタマイズします。 |
 
 
-<!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
-
-
-* **Rule editor**: The rule editor stands out as a powerful mechanism for creating sophisticated form interactions. It supports event-driven rules, instant validation, and error handling through lightweight JavaScript and JSON-based definitions. This allows developers to implement complex form logic, such as conditional field visibility, automatic calculations, and dynamic form behaviour without extensive coding.
-
-* **Submit actions**: Submit Actions enable form submission workflows. These actions provide comprehensive backend integration options, supporting protocols like REST API. The system allows you configure data pre-processors for automatic data transformation, conditional submission logic based on form field values, and secure endpoint connections. Organizations can define complex submission rules that validate data, and manage form responses with granular control.
-
-* **Pre-fill services:** Pre-fill Services enhance user experience by intelligently populating form fields with relevant data. These services connect to various data sources, including user profiles, browser local storage, and external databases. The mechanism supports dynamic data population, enabling automatic completion of form fields based on contextual information. Users benefit from reduced manual data entry, while administrators gain flexibility in configuring pre-fill rules across different form types and scenarios. The pre-fill functionality adapts to different authentication methods, including session-based approaches and token-based systems, ensuring both convenience and security.
-
-* **Data binding capabilities**: Data binding in the Universal Editor enables direct, dynamic connections between form fields and backend data sources. This feature allows real-time synchronization of form data, supporting complex data mapping scenarios. The system supports transforming form inputs into structured database records with minimal configuration. Advanced mapping supports nested data structures, allowing complex form designs to interact seamlessly with intricate data models.
-
-* **Internationalization/localization capabilities**: Internationalization support ensures global accessibility, with multi-language rendering, right-to-left language compatibility, and locale-specific formatting.
-
-* **Analytics and tracking mechanisms**: The built-in analytics and tracking mechanisms provide comprehensive insights into form interactions, submission rates, and user behavior, enabling continuous optimization of form design and performance. 
-
-* **Experimentation (A/B Testing)**: The Universal Editor supports experimentation by allowing organizations to run A/B tests on form designs to identify the best-performing layouts or features.
-
-* **Task Management via Adobe Workfront**: Integration with Adobe Workfront allows teams to manage tasks related to form creation and maintenance, ensuring streamlined collaboration and efficient workflows.
-
-* **Editor Customization via UI Extension**: Developers can extend the functionality of the Universal Editor through UI extensions, enabling tailored solutions that fit specific organizational needs. -->
 
 ## 事前定義済みフォームコンポーネント
 
@@ -180,53 +158,17 @@ ht-degree: 100%
   </tbody>
 </table>
 
-<!-- * Footer: Adds a footer section for consistent design or additional information.
-* Form Container: Wraps all form elements and manages overall form properties.
-* Header: Adds a header section for form titles, branding, or instructions.-->
-<!-- * 
-* Prefillable Fields: Automatically populates form fields with data from predefined sources such as user profiles or APIs. 
-
-* Switches/Toggle Buttons: Provides binary on/off choices for user input.
-
-
-* Title: Adds a text-based heading or label to improve form clarity and organization.
-
-
-In-addtion to pre-built form components, the Universal editor also provides support for:
-
-* **Embedding Forms in Another Webpage**: The Universal Editor supports embedding forms directly into Edge Deliver Services Sites pages. This can be done using the embed component provided out of the box.
-
-* **Validation Messages**: Validation messages provide real-time feedback to users when they enter incorrect or incomplete data. Features include:
-    * Dynamic Error Display: Instantly alerts users to errors, such as invalid email addresses or missing required fields.
-    * Customizable Messages: Allows form authors to define user-friendly error texts.
-    * Rule-Based Validation: Supports advanced validation logic, such as checking dependencies between fields or implementing conditional rules.
-
-* **Hidden Fields**: Hidden fields store data invisibly within the form, often for backend processing or prefilled values. Use cases include:
-    * Passing contextual information (e.g., user ID or session data) to the backend without displaying it to users.
-    * Capturing metadata like timestamps or tracking IDs.
-    * Hidden fields are not visible to end-users but can be prefilled, updated dynamically, or used in workflows.
-
-* **Custom Components**: Custom components allow developers to extend the functionality of forms by creating specialized or third-party integrations. Features include:
-    * Flexibility: Developers can design unique form elements tailored to specific use cases.
-    * Third-Party Integration: Embed widgets or tools like payment gateways, analytics trackers, or AI-driven input fields.
-    * Seamless Compatibility: Custom components can integrate with the Universal Editor's drag-and-drop interface and existing features like data binding or validation.
-
-* **Thank you Configuration**: Customize the acknowledgment message or page shown after form submission.
--->
-
 
 ## オンボーディング
-
-<span class="preview">これは、<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features">プレリリースチャネル</a>を通じて使用できるプレリリース機能です。</span>
 
 ## よくある質問（FAQ）
 
 **Q. ユニバーサルエディターは、どのようなユーザーが使用できますか？**
 ユニバーサルエディターは、次のような幅広いオーディエンス向けに設計されています。
 
-* 視覚に訴えるフォームを作成するコンテンツ制作者。
-* 高度なカスタマイズおよび統合機能を必要とする開発者。
-* スケーラブルで安全、かつ規制に準拠したフォームソリューションを探している組織。
+- 視覚に訴えるフォームを作成するコンテンツ制作者。
+- 高度なカスタマイズおよび統合機能を必要とする開発者。
+- スケーラブルで安全、かつ規制に準拠したフォームソリューションを探している組織。
 
 **Q：ユニバーサルエディターで作成したフォームを既存のシステムに統合できますか？**
 もちろんです。ユニバーサルエディターは、バックエンドシステムとのシームレスなデータバインディングをサポートし、リアルタイムの更新と高度なデータマッピングを可能にします。また、タスク管理用の Adobe Workfront などのツールと統合し、データ送信ワークフローの安全なエンドポイントをサポートします。
@@ -241,7 +183,5 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 ユニバーサルエディターには、ユーザーのインタラクション、フォーム送信率およびコンバージョン指標を監視するビルトインの分析およびトラッキングツールが含まれています。これらのインサイトは、フォームを最適化してパフォーマンスを向上させるのに役立ちます。
 
 
-## フォームの作成の開始
 
-{{universal-editor-see-also}}
 

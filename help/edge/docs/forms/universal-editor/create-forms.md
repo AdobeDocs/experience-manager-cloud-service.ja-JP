@@ -1,391 +1,533 @@
 ---
-title: コアコンポーネントまたは Edge Delivery Services テンプレートに基づいてスタンドアロンフォームを作成し、Edge Delivery Services で公開する方法
-description: この記事では、フォーム作成ウィザードでコアコンポーネントベースまたは Edge Delivery Services ベースのテンプレートを選択して、アダプティブフォームを作成する方法について説明します。また、フォームを AEM Edge Delivery Services に公開することもできます。
+title: Edge Delivery Servicesを使用したアダプティブFormsの作成と公開
+description: 技術的な精度と明確さを重視して、コアコンポーネントまたはAEMのForms テンプレートを使用してアダプティブ Edge Delivery Servicesを作成、オーサリング、公開する手順を説明します。
+keywords: アダプティブフォーム，エッジ配信サービス，コアコンポーネント，ユニバーサルエディター，フォーム作成，AEM forms, テンプレート選択，フォーム公開
 feature: Edge Delivery Services
-role: User
+role: User, Developer
+level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: ht
-source-wordcount: '1687'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1774'
+ht-degree: 5%
 
 ---
 
 
-# オーサリングからパブリッシングへ：Edge Delivery Services での AEM Forms
+# Edge Delivery Servicesを使用したアダプティブFormsの作成と公開
 
-<span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセス権をリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。例えば、リポジトリ URL が https://github.com/adobe/abc の場合、組織名は「adobe」、リポジトリ名は「abc」になります。</span>
+このドキュメントでは、Edge Delivery Servicesを使用してAEMでアダプティブFormsを作成、設定および公開する手順について説明します。 コアコンポーネントとEdge Delivery Servicesのテンプレートについて説明します。
 
-Adobe Experience Manager（AEM）を使用すると、魅力的でレスポンシブ、かつ動的なフォームを作成できます。それぞれ異なる要件やユーザーの専門知識のレベルに適した、複数のオーサリング方法を提供します。
+このガイドを最後まで学習すると、次の方法を理解することができます。
 
-この記事では、AEM 環境内でフォームを作成し、Edge Delivery Services を通じてフォームを公開するアプローチに重点を置いて説明します。コアコンポーネントベースのテンプレートを使用して構築されたフォームは、AEM と Edge Delivery Services の両方で公開でき、柔軟なデプロイメントが可能です。これに対し、Edge Delivery Services ベースのテンプレートを使用して作成したフォームは、Edge Delivery Services でのみ公開できます。
+- ユースケースに適したテンプレートタイプの選択
+- コアコンポーネントまたはEdge Delivery Servicesテンプレートを使用してフォームを作成する
+- 正しいエディターを使用してフォームを作成する
+- フォームの設定とEdge Delivery Servicesへの公開
+- 公開済みフォームへのアクセスとデプロイメントの確認
 
-![アダプティブフォームの作成と公開](/help/edge/docs/forms/universal-editor/assets/author-publish-af.png){width=50% align=center}
+## テンプレートの選択
 
-## AEM でのフォームのオーサリングと Edge Delivery Services を使用したパブリッシングの利点：
+開始する前に、要件に適合するテンプレートタイプを決定します。
 
-* **既存の AEM ワークフローの保持**：組織は確立された AEM ワークフローとガバナンス構造を引き続き使用して、コンテンツ作成の一貫性と制御を確保できます。
+| 条件 | コアコンポーネントテンプレート | Edge Delivery Servicesテンプレート |
+|-------------------------|-----------------------------------------|-------------------------------------|
+| に最適 | エンタープライズワークフロー、複雑な統合 | 高パフォーマンスの公開フォーム |
+| エディター | アダプティブフォームエディター | ユニバーサルエディター |
+| 公開 | AEM公開+ Edge Delivery Services | Edge Delivery Servicesのみ |
+| 複雑性 | 高度なフォーム機能 | 合理化された高速なフォーム |
+| 統合 | 完全なAEM エコシステム | Git ベースの開発 |
+| 学習曲線 | AEM ユーザーになじみがある | 最新のシンプルなアプローチ |
 
-* **パフォーマンスの向上**：Edge Delivery Services を通じて公開すると、レンダリング時間が短縮され、ユーザーエクスペリエンスが向上し、ページ読み込み時間が短縮されます。
+**決定ガイダンス：**
 
-* **SEO の向上**：Edge Delivery Services は、Google Lighthouse のスコアが高いコンテンツを配信するように設計されているので、検索エンジンの最適化と可視性の向上につながります。
+- 複雑なワークフローやAEMの深い統合に **コアコンポーネント** を使用する場合や、既存のAEM アセットを活用する場合は、
+- パフォーマンス、シンプルさ、最新の開発手法を実現するには、**Edge Delivery Services** を使用します。
 
-* **柔軟なデプロイメントオプション**：コアコンポーネントで構築されたフォームは、AEM と Edge Delivery Services の両方で公開でき、柔軟なデプロイメント戦略を実現します。
+![ テンプレート選択の決定 ](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+*適切なテンプレートタイプを選択するための決定フローチャート*
 
-## 開始する前に
+## 前提条件
 
-AEM でフォームのオーサリングを開始し、Edge Delivery Services を使用してフォームを公開する前に、次の前提条件が満たされていることを確認してください。
+続行する前に、次の前提条件が満たされていることを確認してください。
 
-* Edge Delivery Services 用に Github リポジトリが設定されていることを確認します。
-   * リポジトリがない場合は、[アダプティブフォームブロックにより事前設定された新しい AEM プロジェクト](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)を使用します。
-   * リポジトリがある場合は、アダプティブフォームブロックを既存のリポジトリに追加します。手順について詳しくは、[AEM Forms 用 Edge Delivery Services の概要](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)を参照してください。
-* AEM 環境と GitHub リポジトリの間の接続を確立します。[その方法](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)
+### 技術要件
 
-アダプティブフォームの設定とパブリッシングをガイドする決定フロー図：
+- **AEM Forms as a Cloud Service**: Forms ライセンスを持つアクティブなオーサーインスタンス。
+- **GitHub アカウント**：リポジトリ管理のための個人用または組織用のアカウントです。
+- **リポジトリ設定**：次のいずれかを選択します。
+   - **新規プロジェクト**:[ アダプティブFormsブロックを使用して新しいAEM プロジェクトを作成します ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)。 リポジトリーは、Edge Delivery Services用に事前設定されています。
+   - **既存のプロジェクト**:[ アダプティブ Forms ブロックを既存のリポジトリーに追加 ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) して、設定を更新します。
 
-![Github リポジトリのワークフロー](/help/forms/assets/repo-workflow.png){width=auto}
+### 環境設定
 
-## AEM でのフォームのオーサリングと Edge Delivery Services へのパブリッシング
+- **AEMと GitHub の接続**:AEM インスタンスと GitHub リポジトリの間の [ 接続の確立 ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)。
+- **Edge Delivery Services**: リポジトリが自動デプロイメント用に設定されていることを確認してください。
+- **権限**：フォームの作成と公開に必要なアクセス権があることを確認します。
 
-AEM でのフォームのオーサリングと Edge Delivery Services での公開を行うには、次の手順に従います。
+### 設定の検証
 
-[&#x200B;1. テンプレートを選択し、フォームを作成します](#choose-a-template-and-create-the-form)
 
-[&#x200B;2. フォームをオーサリングします](#author-the-form)
+1. GitHub リポジトリにアダプティブ Forms ブロックが含まれていることを確認します。
+2. AEMと GitHub リポジトリ間の接続をテストします。
+3. コンテンツをEdge Delivery Servicesに公開できることを確認します。
 
-[&#x200B;3. フォームを公開します](#publish-a-form)
 
-### テンプレートの選択とフォームの作成
 
-次の方法を使用して、AEM インスタンスでフォームを作成し、Edge Delivery Services に公開できます。
+## フォームの作成と公開のワークフロー
+
+このプロセスは、次の 3 つの主なフェーズで構成されます。
+
+- **フェーズ 1:**[ テンプレートの選択とフォームの作成 ](#step-1-template-selection-and-form-creation)
+- **フェーズ 2:**[ フォームのオーサリングとデザイン ](#step-2-form-authoring-and-design)
+- **フェーズ 3:**[ 設定と公開 ](#step-3-configuration-and-publishing)
+
+各フェーズには、正しい設定を確認するための検証手順が含まれます。
+
+![3 段階ワークフロー ](/help/edge/docs/forms/universal-editor/assets/three-phase-workflow.svg)
+*フォームの作成と公開に関する 3 つの主なフェーズの概要*
+
+### 手順 1：テンプレートの選択とフォームの作成
+
+テンプレートの選択に基づいてワークフローを選択します。
 
 >[!BEGINTABS]
 
->[!TAB Edge Delivery Services ベースのテンプレート]
+>[!TAB Edge Delivery Services テンプレート ]
 
-テンプレートを選択してフォームを作成するには、次の手順を実行します。
+**ユースケース：** 高性能フォームと最新の開発ワークフロー。
 
-1. AEM Forms as a Cloud Service オーサーインスタンスにログインします。
-1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL フォーム]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
-1. **[!UICONTROL 作成]**／**[!UICONTROL アダプティブフォーム]**&#x200B;を選択します。ウィザードが開きます。
-1. 「**ソース**」タブで、**Edge Delivery Services ベースのテンプレート**&#x200B;を選択します。
+**機能：** ユニバーサルエディターのオーサリングとEdge Delivery Servicesのパブリッシング。
 
-   ![EDS フォームを作成](/help/edge/assets/create-eds-forms.png)
+#### 手順
 
-   **Edge Delivery Services ベースのテンプレート**&#x200B;を選択すると、「**[!UICONTROL 作成]**」ボタンが有効になります。
-1. （オプション）「**[!UICONTROL データソース]**」タブまたは「**[!UICONTROL 送信]**」タブで、データソースまたは送信アクションを選択できます。
-1. （オプション）「**[!UICONTROL 配信]**」タブで、フォームの公開日または非公開日を指定できます。
-1. 「**[!UICONTROL 作成]**」をクリックすると、**フォームを作成**&#x200B;ウィザードが表示されます。
+1. **アクセスフォームの作成**
+   - AEM Forms as a Cloud Service オーサーインスタンスにログインします。
+   - **Adobe Experience Manager**／**Forms**／**フォームとドキュメント**&#x200B;に移動します。
+   - **作成**／**アダプティブフォーム**&#x200B;の順にクリックします。
 
-   1. 「**名前**」と「**タイトル**」を指定します。
-   1. **GitHub URL** を指定します。例えば、GitHub リポジトリの名前が `edsforms` で、アカウント `wkndforms` の下にある場合、URL は次のようになります。
-      `https://github.com/wkndforms/edsforms`
+1. **テンプレートを選択**
+   - 「**Source**」タブで、**Edge Delivery Servicesベースのテンプレート** を選択します。
+   - **作成** ボタンが有効になります。
+
+     ![EDS フォームを作成](/help/edge/assets/create-eds-forms.png)
+
+1. **オプションを設定（オプション）**
+   - **「データSource」タブ**：必要に応じて、「データ統合」を選択します。
+   - **「送信」タブ**：送信アクションを選択します（後で設定できます）。
+   - **「配信」タブ**：公開/非公開のスケジュールを設定します。
+
+1. **フォーム設定の完了**
+   - **作成** をクリックして、フォーム作成ウィザードを開きます。
+   - 以下を入力します。
+      - **名前**：内部識別子（スペースなし、ハイフン使用）。
+      - **タイトル**：フォームの表示名。
+      - **GitHub URL**：リポジトリ URL （例：`https://github.com/your-org/your-repo`）。
 
    ![フォームを作成ウィザード](/help/edge/assets/create-form-wizard.png)
 
-   「**[!UICONTROL 作成]**」をクリックすると、フォームがオーサリング用のユニバーサルエディターで開きます。
+1. **検証**
+   - **作成** をクリックした後、次の点を確認します。
+      - フォームがユニバーサルエディターで開きます。
+      - GitHub の URL が正しくリンクされている。
+      - コンポーネントパレットを使用できます。
+      - フォームキャンバスが表示されます。
 
-   ![左側にコンポーネントパレット、中央にフォームキャンバス、右側にプロパティパネルが表示され、オーサリングされているフォームを示すユニバーサルエディターのスクリーンショット](/help/edge/assets/author-form.png)
-1. 「**[!UICONTROL 作成]**」をクリックしてフォームを作成します。これで、[ユニバーサルエディターを使用してフォームをオーサリング](#author-the-form)できます。
+   ![ ユニバーサルエディターインターフェイス ](/help/edge/assets/author-form.png)
 
->[!TAB コアコンポーネントベースのテンプレート]
+**結果：** ユニバーサルエディターでフォームをオーサリングする準備が整いました。
 
-テンプレートを選択してフォームを作成するには、次の手順を実行します。
+>[!TAB  コアコンポーネントテンプレート ]
 
-1. AEM Forms as a Cloud Service オーサーインスタンスにログインします。
-1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL フォーム]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
-1. **[!UICONTROL 作成]**／**[!UICONTROL アダプティブフォーム]**&#x200B;を選択します。ウィザードが開きます。
-1. 「**ソース**」タブで、**コアコンポーネントベースのテンプレート**&#x200B;と&#x200B;**テーマ**&#x200B;を選択すると、「**[!UICONTROL 作成]**」ボタンが有効になります。
+**ユースケース：** エンタープライズワークフローと複雑な統合。
 
-   ![コアコンポーネントベースのテンプレート](/help/forms/assets/core-component-based-template.png)
+**機能：** アダプティブFormsエディターのオーサリング、デュアル公開（AEMとEdge Delivery Services）、高度なフォーム機能。
 
-1. （オプション）「**[!UICONTROL データソース]**」タブまたは「**[!UICONTROL 送信]**」タブで、データソースまたは送信アクションを選択できます。
-1. （オプション）「**[!UICONTROL 配信]**」タブで、フォームの公開日または非公開日を指定できます。
-1. 「**[!UICONTROL 作成]**」をクリックすると、**フォームを作成**&#x200B;ウィザードが表示されます。
-   1. 「**名前**」と「**タイトル**」を指定します。
-   1. アダプティブフォームを保存する場所を「**パス**」フィールドで指定します。
+#### 手順
 
-   ![フォームを作成ウィザード](/help/forms/assets/create-cc-form.png)
+1. **アクセスフォームの作成**
+   - AEM Forms as a Cloud Service オーサーインスタンスにログインします。
+   - **Adobe Experience Manager**／**Forms**／**フォームとドキュメント**&#x200B;に移動します。
+   - **作成**／**アダプティブフォーム**&#x200B;の順にクリックします。
 
-   「**[!UICONTROL 作成]**」をクリックすると、フォームがオーサリング用のアダプティブフォームエディターで開きます。
+1. **テンプレートとテーマを選択**
+   - 「**Source**」タブで、「**コアコンポーネントベースのテンプレート** を選択します。
+   - スタイル設定の **テーマ** を選択します。
+   - **作成** ボタンが有効になります。
 
-   ![アダプティブフォームエディター](/help/forms/assets/af-editor-form.png)
+   ![ コアコンポーネントテンプレートの選択 ](/help/forms/assets/core-component-based-template.png)
 
-1. 「**[!UICONTROL 作成]**」をクリックしてフォームを作成します。これで、[アダプティブフォームエディターを使用してフォームをオーサリング](#author-the-form)できます。
+1. **オプションを設定（オプション）**
+   - **「データSource」タブ**：必要に応じて、「データ統合」を選択します。
+   - **「送信」タブ**：送信アクションを選択します（後で設定できます）。
+   - **「配信」タブ**：公開/非公開のスケジュールを設定します。
 
->[!ENDTABS]
+1. **フォーム設定の完了**
+   - **作成** をクリックして、フォーム作成ウィザードを開きます。
+   - 以下を入力します。
+      - **名前**：内部識別子（スペースなし、ハイフン使用）。
+      - **タイトル**：フォームの表示名。
+      - **パス**:AEM リポジトリ内のストレージの場所。
 
-### フォームのオーサリング
+     ![フォームを作成ウィザード](/help/forms/assets/create-cc-form.png)
 
-Edge Delivery Services ベースのテンプレートを使用して作成されたフォームは、オーサリング用に[ユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)で開きます。ただし、コアコンポーネントベースのテンプレートを使用して作成されたフォームは、オーサリング用にアダプティブフォームエディターで開きます。
+1. **検証**
+   - **作成** をクリックした後、次の点を確認します。
+      - アダプティブFormsエディターでフォームが開きます。
+      - コンポーネントツールバーが使用可能です。
+      - プロパティパネルにアクセスできます。
+      - テーマのスタイル設定が適用されます。
 
-Edge Delivery Services ベースのテンプレートのユニバーサルエディターや、コアコンポーネントベースのテンプレートのアダプティブフォームエディターを使用してフォームを作成するには、次の手順を実行します。
+     ![アダプティブフォームエディター](/help/forms/assets/af-editor-form.png)
 
->[!BEGINTABS]
-
->[!TAB Edge Delivery Services ベースのテンプレート]
-
-
-1. コンテンツブラウザーを開き、**コンテンツツリー**&#x200B;の&#x200B;**[!UICONTROL アダプティブフォーム]**&#x200B;コンポーネントに移動します。
-
-   ![コンテンツツリー](/help/edge/assets/content-tree.png)
-
-1. 「**[!UICONTROL 追加]**」アイコンをクリックし、**アダプティブフォームコンポーネント**リストから目的のコンポーネントを追加します。
-   ![コンポーネントを追加](/help/edge/assets/add-component.png)
-
-   以下のスクリーンショットは、ユニバーサルエディターでオーサリングした `Registration Form` フォームを示しています。
-
-   ![適切なスタイル設定とレイアウトを使用した名前、メール、電話番号、メッセージのフォームフィールドを示す、ユニバーサルエディターの入力済みお問い合わせフォームのスクリーンショット](/help/edge/assets/contact-us.png)
-
->[!NOTE]
->
-> ユニバーサルエディターを使用したアダプティブフォームのオーサリング手順について詳しくは、[こちらをクリック](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg)してください。
-
-これで、[フォームの送信アクションを設定およびカスタマイズ](/help/edge/docs/forms/universal-editor/submit-action.md)できます。
-
->[!TAB コアコンポーネントベースのテンプレート]
-
-1. 「**コンポーネントをここにドラッグ**」セクションで「**[!UICONTROL コンポーネントを挿入]**」をクリックします。
-
-   ![コンポーネントをここにドラッグ](/help/forms/assets/drag-components-af-editor.png)
-
-1. **アダプティブフォームコンポーネント**&#x200B;リストから目的のコンポーネントを追加します。
-
-   ![コンポーネントを追加](/help/forms/assets/add-component-af.png)
-
-以下のスクリーンショットは、アダプティブフォームエディターでオーサリングした `Enrollment Form` フォームを示しています。
-
-![アダプティブフォームエディター](/help/forms/assets/af-editor-form.png)
-
->[!NOTE]
->
-> コアコンポーネントテンプレートに基づくアダプティブフォームの作成に関するガイダンスについて詳しくは、[こちらをクリック](/help/forms/creating-adaptive-form-core-components.md)してください。
-
-これで、[フォームの送信アクションを設定](/help/forms/configure-submit-actions-core-components.md)できます。
+**結果：** アダプティブ Forms エディターでフォームをオーサリングする準備が整いました。
 
 >[!ENDTABS]
 
-### フォームの公開
+### 手順 2：フォームのオーサリングとデザイン
 
-Edge Delivery Services でアダプティブフォームを公開するには、[AEM インスタンスで Edge Delivery Services 設定を作成](#create-an-edge-delivery-services-configuration)する必要があります。
+オーサリングエクスペリエンスはテンプレートによって異なります。
 
-#### Edge Delivery Services 設定の作成
+- **Edge Delivery Services テンプレート**: ユニバーサルエディター
+- **コアコンポーネントテンプレート**：アダプティブFormsエディター
 
-Edge Delivery Services 設定を作成するには、次の手順を実行します。
+![ エディターの比較 ](/help/edge/docs/forms/universal-editor/assets/editor-comparison.svg)
+*ユニバーサルエディターとアダプティブFormsエディターの機能の比較*
 
 >[!BEGINTABS]
->[!TAB Edge Delivery Services ベースのテンプレート]
 
+>[!TAB  ユニバーサルエディター（Edge Delivery Services） ]
 
-Edge Delivery Services ベースのテンプレートに基づくフォームの Edge Delivery Services 設定は、フォームの設定コンテナに自動的に作成されます。
+**インターフェイス：** 最新の合理化された編集で、パフォーマンスが最適化されています。
 
-![Edge Delivery Services 設定](/help/edge/assets/aem-instance-eds-configuration.png)
+#### フォームコンポーネントの追加
 
->[!TAB コアコンポーネントベースのテンプレート]
+1. **Access コンポーネントライブラリ**
+   - ユニバーサルエディターでコンテンツブラウザーを開きます。
+   - コンテンツツリーで **アダプティブフォーム** コンポーネントに移動します。
 
-1. AEM Forms as a Cloud Service オーサーインスタンスで、**[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Edge Delivery Services 設定]**&#x200B;に移動します。
+   ![ コンテンツツリーのナビゲーション ](/help/edge/assets/content-tree.png)
 
-   ![Edge Delivery Services 設定を選択](/help/edge/assets/select-eds-conf.png)
+1. **フォームフィールドの追加**
+   - **追加** アイコンをクリックして、コンポーネントライブラリを開きます。
+   - **アダプティブフォームコンポーネント** リストからコンポーネントを選択します。
+   - コンポーネントをフォームキャンバスにドラッグ&amp;ドロップします。
 
-2. フォームの名前に一致するフォルダーを選択します。例えば、フォームの名前が `enrollment-form` の場合は、フォルダー `forms/enrollment-form` を選択し、**[!UICONTROL 作成]**／**[!UICONTROL 設定]**&#x200B;をクリックします。
+   ![ コンポーネントを追加 ](/help/edge/assets/add-component.png)
 
-   ![Edge Delivery Services 設定](/help/forms/assets/create-eds-conf.png)
+1. **フォームのデザイン**
+   - プロパティパネルでフィールドのプロパティを設定します。
+   - 検証ルールと動作を設定します。
+*s 必要に応じてスタイルとレイアウトを調整します。
 
-3. 「**[!UICONTROL Edge Delivery Services 設定]**」をクリックし、「**[!UICONTROL プロパティ]**」をクリックしてプロパティを開きます。
+   ![ 記入済みの登録フォーム ](/help/edge/assets/contact-us.png)
 
-   ![自動作成された設定](/help/forms/assets/eds-conf.png)
+#### 検証
 
-   Edge Delivery Services 設定が表示されます。
+- すべての必須フィールドが存在します。
+- フィールドプロパティが正しく設定されている。
+- レイアウトはレスポンシブでアクセス可能です。
+- 検証ルールは期待どおりに機能します。
 
-4. Edge Delivery Services 設定で、次を指定します。
+#### 次の手順
 
-   * **組織**：GitHub の組織名を指定します。
+- データを処理するための [ 送信アクションの設定 ](/help/edge/docs/forms/universal-editor/submit-action.md)。
+- 高度な機能については、[ ユニバーサルエディターガイド ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg) を参照してください。
 
-   * **サイト名**：GitHub のリポジトリ名を指定します。
-   * **分岐**：分岐名を指定します。main 分岐を使用する場合は、テキストボックスを空のままにします。
-   * **（オプション）Edge ホスト**：「Edge ホスト」オプションはそのままにしておきます。フォームは、プレビュー（.page）環境とライブ（.live）環境の両方に公開されます。
-   * **（オプション）サイト認証トークン**：サイト認証トークンを使用して、AEM インスタンスと Edge Delivery Services 間のリクエストを安全に認証します。
+>[!TAB  アダプティブ Forms エディター（コアコンポーネント） ]
 
-5. 「**[!UICONTROL 保存して閉じる]**」をクリックします。設定が作成されます。
+**インターフェイス：** 高度なフォーム機能を備えたフル機能の編集。
+
+#### フォームコンポーネントの追加
+
+1. **Access コンポーネントライブラリ**
+   - 「**コンポーネントをここにドラッグ**」セクションで「**コンポーネントを挿入**」をクリックします。
+
+   ![ コンポーネント挿入領域 ](/help/forms/assets/drag-components-af-editor.png)
+
+2. **フォームフィールドの追加**
+   - **アダプティブフォームコンポーネント** リストを参照します。
+   - 目的のコンポーネントをフォームにドラッグします。
+   - パネル、ウィザード、データ統合などの高度なコンポーネントを使用します。
+
+   ![ コンポーネントライブラリを追加 ](/help/forms/assets/add-component-af.png)
+
+3. **フォームのデザイン**
+   - プロパティパネルでフィールドのプロパティを設定します。
+   - 複雑な検証ルールとビジネスロジックを設定します。
+   - テーマと高度なスタイル設定を適用します。
+
+   ![ 入力済みの登録フォーム ](/help/forms/assets/af-editor-form.png)
+
+#### 検証
+
+- すべての必須フィールドが存在します。
+- 複雑な検証ルールが設定されます。
+- テーマのスタイル設定が適用されます。
+- データ統合は意図したとおりに機能します（該当する場合）。
+
+#### 次の手順
+
+- 高度なワークフロー用に [ 送信アクションを設定 ](/help/forms/configure-submit-actions-core-components.md) します。
+- エンタープライズ機能の [ コアコンポーネントガイド ](/help/forms/creating-adaptive-form-core-components.md)。
 
 >[!ENDTABS]
 
-#### Edge Delivery Services のフォームへのアクセス
+### 手順 3：設定と公開
 
-Edge Delivery Services のフォームにアクセスするには、フォームの公開が必須です。フォームを公開するには、次の手順を実行します。
+Edge Delivery Servicesを設定してフォームを公開します。 プロセスは、テンプレートタイプによって異なります。
+
+#### Edge Delivery Services設定
 
 >[!BEGINTABS]
->[!TAB ユニバーサルエディターの場合]
+>[!TAB Edge Delivery Services テンプレート （自動） ]
 
-1. ユニバーサルエディターの右上隅にある「**[!UICONTROL 公開]**」ボタンをクリックして、フォームを公開します。
+**設定：** 自動（手動設定は不要）
 
-![フォームの公開オプションと確認ボタンを含む公開ダイアログを示すユニバーサルエディターのスクリーンショット](/help/edge/assets/publish-form.png)
+- GitHub リポジトリ接続とEdge Delivery Services設定は、フォームの作成中に作成されます。
+- 公開エンドポイントは自動的に設定されます。
 
->[!NOTE]
->
-> フォームを Edge Delivery Services に公開する方法について詳しくは、[公開とデプロイ](/help/edge/docs/forms/universal-editor/publish-forms.md)の記事を参照してください。
+**検証：**
 
->[!TAB アダプティブフォームエディターの場合]
+- 設定がフォームの設定に表示されることを確認します。
+- GitHub URL が正しくリンクされていることを確認します。
 
-1. Experience Manager Forms コンソールで、親フォルダーに移動し、公開するフォームを選択します。
+![ 自動 EDS 構成 ](/help/edge/assets/aem-instance-eds-configuration.png)
 
-1. ツールバーの「**[!UICONTROL 公開]**」オプションをクリックし、フォームと共に公開されるすべての参照アセットを確認します。
+>[!TAB  コアコンポーネントテンプレート（手動） ]
+
+**設定：** 手動セットアップが必要です。
+
+#### 手動の設定手順
+
+1. **設定ツールへのアクセス**
+   - **ツール**/**Cloud Services**/**Edge Delivery Services Configuration** に移動します。
+
+   ![EDS 構成アクセス ](/help/edge/assets/select-eds-conf.png)
+
+1. **設定の作成**
+   - フォーム名と一致するフォルダーを選択します（例：`forms/enrollment-form`）。
+   - **作成**/**設定** をクリックします。
+
+   ![EDS 構成の作成 ](/help/forms/assets/create-eds-conf.png)
+
+1. **プロパティの設定**
+   - 「**Edge Delivery Services設定**」をクリックします。
+   - **プロパティ** を選択して、設定ダイアログを開きます。
+
+   ![設定プロパティ](/help/forms/assets/eds-conf.png)
+
+1. **パラメーターの設定**
+   - **必須：**
+      - **Organization**:GitHub の組織名。
+      - **サイト名**:GitHub リポジトリ名。
+      - **ブランチ**：ブランチ名（メインの場合は空のままにします）。
+   - **オプション：**
+      - **Edge ホスト** : デフォルト （.page と.live の両方に公開）。
+      - **サイト認証トークン**：安全な認証用（必要に応じて）。
+
+1. **設定を保存**
+   - 「**保存して閉じる**」をクリックします。
+
+#### 検証
+
+- 設定が正常に作成されました。
+- GitHub の組織とリポジトリが正しく指定されている。
+- ブランチの設定はリポジトリ構造と一致します。
+- フォームが設定フォルダーに表示されます。
+
+>[!ENDTABS]
+
+#### フォームの公開
+
+>[!BEGINTABS]
+>[!TAB  ユニバーサルエディターの公開 ]
+
+**Edge Delivery Services テンプレートの場合**
+
+1. ユニバーサルエディターで、「**公開**」ボタン（右上隅）をクリックします。
+2. ダイアログで公開の成功を確認します。
+3. ステージングバージョンとライブバージョンの URL が生成されることに注意してください。
+
+   ![ ユニバーサルエディターの公開 ](/help/edge/assets/publish-form.png)
+
+- [公開ガイド](/help/edge/docs/forms/universal-editor/publish-forms.md)
+
+>[!TAB  アダプティブFormsエディターの公開 ]
+
+1. Experience Manager Forms コンソールで、公開するフォームを選択します。
+2. ツールバーの **[!UICONTROL 公開]** をクリックします。 公開する参照アセットを確認します。
 
 ![アダプティブフォームエディターでフォームを公開](/help/forms/assets/publish-af-editor.png)
 
 >[!NOTE]
 >
-> アダプティブフォームエディターでフォームを公開する方法について詳しくは、[Experience Manager Forms での公開の管理](/help/forms/manage-publication.md)を参照してください。
+> 詳しくは [Experience Manager Formsでの公開の管理 ](/help/forms/manage-publication.md) を参照してください。
 
 >[!ENDTABS]
 
-* **ステージングされたバージョン（テスト用）**：ステージングされたバージョンには、テスト目的でフォームの非公開の作業用バージョンが表示されます。 フォームを公開する前にプレビューするには、次の URL 形式を使用します。
+## フォーム URL
 
-  `https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>`
+公開されたフォームには、Edge Delivery Servicesの URL からアクセスできます。
 
+### URL 構造
 
+- **ステージング（プレビュー/テスト）:**
 
-* **ライブバージョン（公開済みフォーム）**：ライブバージョンには、エンドユーザーがアクセスできるフォームの最新公開バージョンが表示されます。 フォームの公開済みライブバージョンにアクセスするには、次の URL 形式を使用します。
+  ```
+  https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>
+  ```
 
-  `https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>`
+- **ライブ（実稼動）:**
 
-  URL 構造は、ステージングされたバージョンとライブバージョンの両方で同じままです。ただし、表示されるコンテンツはコンテキストに基づいて異なります。
+  ```
+  https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>
+  ```
 
-以下のスクリーンショットでは、Edge Delivery Services ベースおよびコアコンポーネントベースのテンプレートを使用して作成されたフォームのステージング済みフォーム URL とライブフォーム URL、およびビジュアルプレビューを比較しています。
+#### URL パラメーター
 
->[!BEGINTABS]
->[!TAB Edge Delivery Services ベースのテンプレート]
+- `<branch>`:GitHub ブランチ名（例：`main`、`develop`）
+- `<repo>`:GitHub リポジトリ名（例：`my-forms-project`）
+- `<owner>`:GitHub 組織またはユーザー名（例：`company-name`）
+- `<form_name>`:AEMで定義されたフォーム識別子（例：`contact-us`）
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
-    <thead>
-    <tr>
-      <th style="width: 20%;"><strong>バージョン</strong></th>
-      <th style="width: 80%;"><strong>画像</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>ステージング済みバージョン</td>
-      <td><img src="/help/forms/assets/registration-form-staged-version.png" alt="登録フォームのステージング済みバージョン" style="width: 100%; height: auto;" /></td>
-    </tr>
-    <tr>
-      <td>ライブバージョン</td>
-      <td><img src="/help/forms/assets/registration-form-live-version.png" alt="登録フォームのライブバージョン" style="width: 100%; height: auto;" /></td>
-    </tr>
-    </tbody>
-  </table>
+#### 例
 
->[!TAB コアコンポーネントベースのテンプレート]
+例えば、リポジトリ `contact-us` の組織 `forms-project` の下にあるフォーム `acme-corp` です。
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
-  <thead>
-    <tr>
-      <th style="width: 20%;"><strong>バージョン</strong></th>
-      <th style="width: 80%;"><strong>画像</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ステージング済みバージョン</td>
-      <td><img src="/help/forms/assets/enrollment-form-staged-version.png" alt="登録フォームのステージング済みバージョン" style="width: 100%; height: auto;" /></td>
-    </tr>
-    <tr>
-      <td>ライブバージョン</td>
-      <td><img src="/help/forms/assets/enrollment-form-live-version.png" alt="登録フォームのライブバージョン" style="width: 100%; height: auto;" /></td>
-    </tr>
-  </tbody>
-  </table>
+- **ステージング：** `https://main--forms-project--acme-corp.aem.page/content/forms/af/contact-us`
+- **ライブ：** `https://main--forms-project--acme-corp.aem.live/content/forms/af/contact-us`
 
->[!ENDTABS]
+#### 環境の違い
+
+- **ステージング済み（.page）:** テストの最新の変更。
+- **ライブ（.live）:** 実稼動用に公開されたコンテンツ。
+
+![URL 構造 ](/help/edge/docs/forms/universal-editor/assets/url-structure.svg)
+*Edge Delivery Services フォーム URL 構造の分類*
+
+#### ビジュアルの例
+
+**Edge Delivery Services テンプレート：**
+
+- ステージング：![ 登録フォームのステージングされたバージョン ](/help/forms/assets/registration-form-staged-version.png)
+- ライブ：![ 登録フォームのライブバージョン ](/help/forms/assets/registration-form-live-version.png)
+
+**コアコンポーネントテンプレート：**
+
+- ステージング：![ 登録フォームのステージバージョン ](/help/forms/assets/enrollment-form-staged-version.png)
+- ライブ：![ 登録フォームのライブバージョン ](/help/forms/assets/enrollment-form-live-version.png)
 
 ## トラブルシューティング
 
-フォームの読み込みに問題がありますか？ 一般的な問題と修正方法を以下に示します。
+Edge Delivery Servicesを使用したAEM Formsの一般的な問題と解決策を以下に示します。
 
-* **フォーム URL**：フォームの URL の末尾に「.html」拡張子が含まれていないことを再確認します。 Edge Deliver Service では、この拡張機能は必要ありません。
++++フォームが読み込まれない
 
-* **AEM オーサー URL**：`fstab.yaml` ファイルにリストされている AEM オーサー URL が正しい形式であることを確認します。 これには、次の詳細を含める必要があります。
+**問題：** フォーム URL が 404 または空白のページを返す。
 
-   * 正しい GitHub 所有者
-   * 正しいリポジトリ名
-   * Edge Delivery Services に使用している特定の分岐
+**解決策：**
 
-## フォームの作成の開始
+- URL から `.html` 拡張機能を削除します。
+- フォームが公開されていることを確認します。
+- アダプティブ Forms ブロックの GitHub リポジトリを確認してください。
+- フォーム名が URL と一致することを確認します（大文字と小文字を区別）。
 
-{{universal-editor-see-also}}
++++
 
-<!-- * **JSON Display**: If you see only JSON data instead of the actual form, your form block might be outdated. You can update it to the latest version available on https://github.com/adobe-rnd/aem-boilerplate-forms.
++++設定の問題
 
-### Managing a form
+**問題：** Edge Delivery Servicesの設定が機能しません。
 
-You can perform several operations on form using the AEM Forms user interface.
+**解決策：**
 
-1. Login into your AEM Forms as a Cloud Service author instance.
-1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+- GitHub の URL が `https://github.com/owner/repository` の形式であることを確認します。
+- 設定で正しいブランチ名を使用します。
+- リポジトリへのアクセスを確認します（パブリックまたは認証済み）。
+- 正しい GitHub の詳細については、`fstab.yaml` を確認してください。
 
-1. Select a form and the toolbar displays the following operations you can perform on the selected form.
++++
 
-<table>
- <tbody>
-  <tr>
-   <td><p><strong>Operation</strong></p> </td>
-   <td><p><strong>Description</strong></p> </td>
-  </tr>
-  <tr>
-   <td><p>Edit</p> </td>
-   <td><p>Opens the form in edit mode.<br /> <br /> </p> </td>
-  </tr>
-    <tr>
-   <td><p>Properties</p> </td>
-   <td><p>Provides options to modify the properties of the form.<br /> <br /> </p> </td>
-  </tr>
-  <td><p>Copy</p> </td>
-   <td><p> Provides options to copy the form  and paste it at the desired location. <br /> <br /> </p> </td>
-  </tr>
-   <tr>
-   <td><p>Preview</p> </td>
-   <td><p>Provides options to preview the form as HTML or perform a custom preview by merging data from an XML file with the form. <br /> </p> </td>
-  </tr>
-  <tr>
-   <td><p>Download</p> </td>
-   <td><p>Downloads the selected form.<br /> <br /> </p> </td>
-  </tr>
-  <tr>
-   <td><p>Start Review/Manage Review</p> </td>
-   <td><p>Allows initiating and managing a review of the selected form.<br /> <br /> </p> </td>
-  </tr>
-  <!--<tr>
-   <td><p>Add Dictionary</p> </td>
-   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
-  </tr>
-  <tr>
-   <td><p>Publish / Unpublish</p> </td>
-   <td><p>Publishes / unpublishes the selected form.<br /> <br /> </p> </td>
-  </tr>
-  <tr>
-   <td><p>Delete</p> </td>
-   <td><p>Deletes the selected form.<br /> <br /> </p> </td>
-  </tr>
-  <tr>
-   <td><p>Compare</p> </td>
-   <td><p>Compares two different form for previewing purposes.<br /> <br /> </p> </td>
-  </tr>
- </tbody>
-</table> 
++++公開の問題
 
+**問題：** 変更がライブサイトに表示されません。
 
-## How Edge Delivery Services Forms Work?
+**解決策：**
 
-Users can author Edge Delivery Services Forms using document-based authoring tools such as Google Drive, SharePoint, or the Universal Editor (WYSIWYG authoring), while leveraging the basic styling, behaviour and components available in the GitHub repository. Once authored, Edge Delivery Services Forms can send data to any platform using the Forms Submission Service.
+- CDN キャッシュが更新されるまで 2～3 分待ちます。
+- 公開ワークフローが完了したことを確認します。
+- まず、ステージングされた（.page）環境でテストします。
+- GitHub リポジトリが更新されていることを確認します。
 
-![How Edge Delivery Services Forms works](/help/edge/docs/forms/assets/eds-forms-working.png)
++++
 
-### Key components of Edge Delivery Services Forms
++++ユニバーサルエディターの問題
 
-The key components of Edge Delivery Servies Forms are:
+**問題：** フォームを編集できないか、コンポーネントが読み込まれない。
 
-* **GitHub Repository**: The GitHub repository serves as a boilerplate for creating Edge Delivery Services Forms. The forms leverage basic styling and functionality from the repository and allow users to add customizations and custom components to the Edge Delivery Services Forms.
+**解決策：**
 
-* **Form Authoring**: Edge Delivery Services Forms support two types of authoring: WYSIWYG and document-based authoring. Document-based authoring enables users to create forms using familiar tools like Google Docs and Microsoft Office. WYSIWYG authoring allows users to design forms visually using the Universal Editor, making it easy for non-technical users to create and manage forms. Universal Editor offers an intuitive form creation experience and provides access to numerous form capabilities.
+- サポートされているブラウザー（Chrome、Firefox、Safari）を使用します。
+- ブラウザーのキャッシュと Cookie をクリアします。
+- ネットワーク接続を確認します。
+- 作成者の権限を確認します。
 
-* **Forms Submission Service**: The Forms Submission Service allows you to store data from forms submissions on any platform, such as OneDrive, SharePoint, or Google Sheets, making it easy to access and manage form data within your preferred system.-->
++++
+
++++フォーム送信エラー
+
+**問題：** フォーム送信が機能しない。
+
+**解決策：**
+
+- フォームプロパティで送信アクションを設定します。
+- 送信エンドポイントを手動でテストします。
+- フォームを埋め込む場合は、CORS 設定を確認します。
+- 必須フィールドが設定されていることを確認します。
+
++++
+
++++パフォーマンスの問題
+
+**問題：** フォームの読み込みが遅いか、パフォーマンスが低下している。
+
+**解決策：**
+
+- 画像を最適化します。
+- 不要なコンポーネントを削除します。
+- Edge Delivery Services CDN の活用
+- カスタム JavaScript/CSS を最小化します。
+
++++
+
++++ヘルプ
+
+問題が解決しない場合：
+
+1. Adobe Experience Cloud サービスのステータスを確認します。
+2. [Edge Delivery Servicesのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/overview) を確認してください。
+3. [Adobe Experience League コミュニティ ](https://experienceleaguecommunities.adobe.com/) にアクセスしてください。
+4. Adobe カスタマーケアにお問い合わせください。
+
++++
+
+## 次の手順
+
+フォームの作成と公開を完了したら、次の点を考慮します。
+
+### 即時アクション
+
+- このガイドを使用したフォームのテスト。
+- GitHub リポジトリとAEMの接続を検証します。
+- サンプルフォームを確認します。
+
+### 高度なトピック
+
+- [ 送信アクションの設定 ](/help/edge/docs/forms/universal-editor/submit-action.md)：データ処理と統合を設定します。
+- [ フォームデータモデル ](/help/forms/create-form-data-models.md)：フォームをバックエンドデータソースに接続します。
+
+### パフォーマンスの最適化
+
+- [Edge Delivery Servicesのベストプラクティス ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/overview): パフォーマンスを最大限に高めます。
+- [Form Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html)：フォームのパフォーマンスとユーザーの行動を追跡します。
+

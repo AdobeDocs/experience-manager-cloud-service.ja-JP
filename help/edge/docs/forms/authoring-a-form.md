@@ -6,8 +6,8 @@ role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: true
 hidefromToC: true
-source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 100%
 
@@ -37,14 +37,14 @@ AEM では、インタラクティブで魅力的なフォームを作成する�
 
 AEM では、様々なユーザーのニーズ、技術スキルレベル、公開の宛先に適した複数のオーサリング方法をサポートしています。
 
-* [基盤コンポーネント](/help/forms/create-adaptive-form-tutorial.md)：基盤コンポーネントを使用して、従来のインタラクティブなフォームを作成します。レガシーシステムと統合されるフォームや、長年確立されたワークフローに依存するフォームに最適です。基盤コンポーネントを使用して作成したフォームは、AEM でのみ公開でき、Edge Delivery Services とは互換性がありません。
+- [基盤コンポーネント](/help/forms/create-adaptive-form-tutorial.md)：基盤コンポーネントを使用して、従来のインタラクティブなフォームを作成します。レガシーシステムと統合されるフォームや、長年確立されたワークフローに依存するフォームに最適です。基盤コンポーネントを使用して作成したフォームは、AEM でのみ公開でき、Edge Delivery Services とは互換性がありません。
 
-* [コアコンポーネント](/help/forms/creating-adaptive-form-core-components.md)：コアコンポーネントを使用して、最新でレスポンシブかつスケーラブルなフォームを作成します。再利用性、アクセシビリティ、パフォーマンスの向上をサポートします。コアコンポーネントを使用して作成したフォームは、AEM と Edge Delivery Services の両方で公開できるので、プラットフォーム間で柔軟性が得られます。
+- [コアコンポーネント](/help/forms/creating-adaptive-form-core-components.md)：コアコンポーネントを使用して、最新でレスポンシブかつスケーラブルなフォームを作成します。再利用性、アクセシビリティ、パフォーマンスの向上をサポートします。コアコンポーネントを使用して作成したフォームは、AEM と Edge Delivery Services の両方で公開できるので、プラットフォーム間で柔軟性が得られます。
 
-* [Edge Delivery Services Forms](/help/edge/docs/forms/overview.md)：Adobe Edge Delivery Services Forms は、フォームの作成、実行、処理の方法を変革します。Edge Delivery Services を活用することで、組織は高速で安全な、可用性の高いデジタルフォームを作成し、高速開発環境でユーザーエクスペリエンスと運用効率を向上させることができます。Edge Delivery Services Forms は、次の 2 つの方法で作成できます。
-   * [WYSIWYG オーサリング](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：技術的な知識が限られているコンテンツ作成者に最適で、視覚的なドラッグ＆ドロップフォームの作成には、ユニバーサルエディターを使用します。ユニバーサルエディターで作成したフォームは、高速で軽量なレンダリングを実現する Edge Delivery Services を使用して配信します。
-   * [ドキュメントベースのオーサリング](/help/edge/docs/forms/tutorial.md)：フォームの構造とコンテンツを定義するには、Microsoft Excel や Google Sheets などのツールを使用します。この方法は、スプレッドシート主導の入力を行うビジネスユーザーに役立ちます。これらのフォームは通常、Edge Delivery Services を通じて公開され、軽量で大量のユースケースに適しています。
-* [ヘッドレスオーサリング](https://experienceleague.adobe.com/ja/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)：AEM に依存せずに、React、Angular、モバイルアプリ、キオスクなどの任意のフロントエンドのフォームを JSON としてレンダリングするには、API を使用します。現在、コアコンポーネントのみがヘッドレス配信をサポートしています。ヘッドレスフォームはオムニチャネルのユースケースに最適で、AEM のページレンダリングとは独立して使用されるので、カスタムフロントエンドのデプロイメントに柔軟に対応できます。
+- [Edge Delivery Services Forms](/help/edge/docs/forms/overview.md)：Adobe Edge Delivery Services Forms は、フォームの作成、実行、処理の方法を変革します。Edge Delivery Services を活用することで、組織は高速で安全な、可用性の高いデジタルフォームを作成し、高速開発環境でユーザーエクスペリエンスと運用効率を向上させることができます。Edge Delivery Services Forms は、次の 2 つの方法で作成できます。
+   - [WYSIWYG オーサリング](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：技術的な知識が限られているコンテンツ作成者に最適で、視覚的なドラッグ＆ドロップフォームの作成には、ユニバーサルエディターを使用します。ユニバーサルエディターで作成したフォームは、高速で軽量なレンダリングを実現する Edge Delivery Services を使用して配信します。
+   - [ドキュメントベースのオーサリング](/help/edge/docs/forms/tutorial.md)：フォームの構造とコンテンツを定義するには、Microsoft Excel や Google Sheets などのツールを使用します。この方法は、スプレッドシート主導の入力を行うビジネスユーザーに役立ちます。これらのフォームは通常、Edge Delivery Services を通じて公開され、軽量で大量のユースケースに適しています。
+- [ヘッドレスオーサリング](https://experienceleague.adobe.com/ja/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)：AEM に依存せずに、React、Angular、モバイルアプリ、キオスクなどの任意のフロントエンドのフォームを JSON としてレンダリングするには、API を使用します。現在、コアコンポーネントのみがヘッドレス配信をサポートしています。ヘッドレスフォームはオムニチャネルのユースケースに最適で、AEM のページレンダリングとは独立して使用されるので、カスタムフロントエンドのデプロイメントに柔軟に対応できます。
 
 ### AEM フォームオーサリング方法の比較分析
 
@@ -107,7 +107,7 @@ AEM では、様々なユーザーのニーズ、技術スキルレベル、公�
 
 ## 関連記事
 
-* [Microsoft Excel またはGoogle Sheets を使用したドキュメントベースのオーサリング](/help/edge/docs/forms/create-forms.md)
-* [WYSIWYG オーサリング用ユニバーサルエディター](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
-* [アダプティブフォームの作成（基盤コンポーネント）](/help/forms/creating-adaptive-form.md)
-* [アダプティブフォームの作成（コアコンポーネント）](/help/forms/create-an-adaptive-form.md)
+- [Microsoft Excel またはGoogle Sheets を使用したドキュメントベースのオーサリング](/help/edge/docs/forms/create-forms.md)
+- [WYSIWYG オーサリング用ユニバーサルエディター](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
+- [アダプティブフォームの作成（基盤コンポーネント）](/help/forms/creating-adaptive-form.md)
+- [アダプティブフォームの作成（コアコンポーネント）](/help/forms/create-an-adaptive-form.md)

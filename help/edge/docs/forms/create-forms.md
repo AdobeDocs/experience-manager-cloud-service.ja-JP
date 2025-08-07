@@ -4,9 +4,9 @@ description: AEM Forms の Edge Delivery Services の基本について学びま
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
-workflow-type: ht
-source-wordcount: '807'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '805'
 ht-degree: 100%
 
 ---
@@ -26,9 +26,9 @@ AEM Forms Edge Delivery には、アダプティブフォームブロックと�
 
 開始する前に、次の手順が完了していることを確認してください。
 
-* [AEM Forms ボイラープレートを使用した AEM プロジェクト](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)を設定するか、[アダプティブフォームブロックを既存の AEM プロジェクトに追加](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)して、ローカルマシン上に対応する GitHub リポジトリのクローンを作成します。
+- [AEM Forms ボイラープレートを使用した AEM プロジェクト](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)を設定するか、[アダプティブフォームブロックを既存の AEM プロジェクトに追加](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)して、ローカルマシン上に対応する GitHub リポジトリのクローンを作成します。
 <!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
-* Google Sheets または Microsoft SharePoint へのアクセス権があることを確認します。 Microsoft SharePoint をコンテンツソースとして設定するには、[SharePoint の使用方法](https://www.aem.live/docs/setup-customer-sharepoint)を参照してください。
+- Google Sheets または Microsoft SharePoint へのアクセス権があることを確認します。 Microsoft SharePoint をコンテンツソースとして設定するには、[SharePoint の使用方法](https://www.aem.live/docs/setup-customer-sharepoint)を参照してください。
 
 
 
@@ -54,10 +54,10 @@ After completing these steps, the Adaptive Forms Block is successfully added to 
 
 Ensure a smooth GitHub build process by addressing potential issues:
 
-* **Resolve Module Path Error:**
+- **Resolve Module Path Error:**
     If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
-* **Handle Linting Errors:**
+- **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
 +++ 手順 1：Microsoft Excel または Google Sheets を使用してフォームを作成します。
@@ -105,9 +105,9 @@ Ensure a smooth GitHub build process by addressing potential issues:
        https://<branch>--<repository>--<owner>.aem.live/<form-path>/<form-file-name>.json
    ```
 
-   * `<branch>` は、GitHub リポジトリのブランチを参照します。
-   * `<repository>` は GitHub リポジトリを示します。
-   * `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を指します。
+   - `<branch>` は、GitHub リポジトリのブランチを参照します。
+   - `<repository>` は GitHub リポジトリを示します。
+   - `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を指します。
 
    例えば、プロジェクトのリポジトリの名前が「wefinance」で、アカウント「wkndform」の下にあり、「main」分岐を使用している場合、URL は次のようになります。
 
@@ -164,6 +164,3 @@ Ensure a smooth GitHub build process by addressing potential issues:
 フォーム送信時にデータの受け入れを開始できるように[スプレッドシートを準備](/help/edge/docs/forms/submit-forms.md)します。
 
 
-## 関連トピック
-
-{{see-more-forms-eds}}

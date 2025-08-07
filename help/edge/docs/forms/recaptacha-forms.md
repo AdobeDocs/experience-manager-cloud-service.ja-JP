@@ -4,17 +4,17 @@ description: AEM Forms の Edge Delivery Services 向けフォームでの Googl
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '848'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '847'
+ht-degree: 97%
 
 ---
 
 
 # AEM Forms as a Cloud Service の Edge Delivery Services での reCAPTCHA の使用
 
-<span>**reCAPTCHA** 機能はプレリリースプログラムで提供されています。AEM Forms の Edge Delivery Services の **reCAPTCHA** 機能を利用申請するには、仕事用アドレスから mailto:aem-forms-ea@adobe.com にメールを送信してください。</span>
+<span>**reCAPTCHA** 機能はプレリリースプログラムで提供されています。Edge Delivery Services for AEM Formsの **reCAPTCHA** 機能へのアクセスをリクエストするには、メールアドレス （勤務先）から mailto:aem-forms-ea@adobe.com.</span> にメールを送信します。
 
 reCAPTCHA は、web サイトを不正行為、スパムおよび悪用から守るために使用される一般的なツールです。Edge Delivery では、Google reCAPTCHA を追加して人間とボットを区別する機能がアダプティブフォームブロックから提供されます。この機能により、ユーザーは自分の web サイトをスパムや不正使用から保護できます。
 例えば、旅行の開始日と終了日、部屋の予算、旅行費用の見積もり、旅行者情報などのデータを収集する問い合わせフォームを考えてみます。このような場合は、悪意のあるユーザーがフォームを悪用してフィッシングメールを送信したり、スパムボットを使用して無関係または有害なコンテンツを大量に送信したりするリスクがあります。reCAPTCHA を統合すると、送信が本物のユーザーからのものであることを確認して、セキュリティを強化し、スパムエントリを最小限に抑える効果を得ることができます。
@@ -27,19 +27,20 @@ Edge Delivery Services では、アダプティブフォームブロックに&#x
 
 
 この記事を最後まで読むと、以下の操作を実行できるようになります。
-* [1 つのフォームに対する Google reCAPTCHA の有効化](#enable-google-recaptchas-for-a-single-form)
-* [サイト上のすべてのフォームに対して reCAPTCHA を有効にする](#enable-recaptcha-for-all-the-forms)
+- [1 つのフォームに対する Google reCAPTCHA の有効化](#enable-google-recaptchas-for-a-single-form)
+- [サイト上のすべてのフォームに対して reCAPTCHA を有効にする](#enable-recaptcha-for-all-the-forms)
 
 ## 前提条件
 
-* [アダプティブフォームブロックを使用したフォームの作成](/help/edge/docs/forms/create-forms.md)で説明される手順に従って、Edge Delivery Services Forms の開発を開始します。
-* ドメインを [Google reCAPTCHA に登録し、資格情報を取得します](https://www.google.com/recaptcha/admin/create)。
+- [アダプティブフォームブロックを使用したフォームの作成](/help/edge/docs/forms/create-forms.md)で説明される手順に従って、Edge Delivery Services Forms の開発を開始します。
+- ドメインを [Google reCAPTCHA に登録し、資格情報を取得します](https://www.google.com/recaptcha/admin/create)。
 
 ## 1 つのフォームに対する Google reCAPTCHA の有効化 {#enable-google-recaptchas-for-a-single-form}
 
 1 つのフォームに対して Google reCAPTCHA を有効にするには、Google の reCAPTCHA サービスを特定の web フォームに統合して、自動化された不正使用やスパム送信を防ぐ必要があります。
 
 1 つのフォームに対して Google reCAPTCHA を有効にするには：
+
 1. [プロジェクト設定ファイルの reCAPTCHA 秘密鍵の設定](#configure-secret-key)
 1. [reCAPTCHA サイトキーのフォームへの追加](#add-site-key)
 
@@ -58,13 +59,13 @@ Google reCAPTCHA に登録されているドメインのサイトシークレッ
 
 1. `config` ファイルを開き、次のキーと値のペアを追加します。
 
-   * **captcha.secret**：Google reCAPTCHA 秘密鍵の値
-   * **captcha.type**：reCAPTCHA v2
+   - **captcha.secret**：Google reCAPTCHA 秘密鍵の値
+   - **captcha.type**：reCAPTCHA v2
 
    >[!NOTE]
    >
-   >  * reCAPTCHA キーは、[Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin) から取得できます。
-   >  * `config` ファイルで **captcha.type** の値を **reCAPTCHA v2** として指定する必要があります。
+   >  - reCAPTCHA キーは、[Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin) から取得できます。
+   >  - `config` ファイルで **captcha.type** の値を **reCAPTCHA v2** として指定する必要があります。
 
    以下のプロジェクト設定ファイルのスクリーンショットを参照してください。
 
@@ -78,10 +79,10 @@ Google reCAPTCHA に登録されているドメインのサイトシークレッ
 
 Google reCAPTCHA に登録されているドメインのサイトキーが、保護するフォームのスプレッドシートに追加されます。サイトキーをフォームに追加するには：
 
-1. Microsoft® SharePoint または Google ドライブ上の AEM プロジェクトフォルダーに移動し、スプレッドシートを開きます。また、フォーム用の新しいスプレッドシートを作成することもできます。
+1. Microsoft® SharePoint または Google ドライブ上の AEM プロジェクトフォルダーに移動し、スプレッドシートを開きます。 また、フォーム用の新しいスプレッドシートを作成することもできます。
 1. スプレッドシートに行を挿入して、次の詳細を含む、新しいフィールドを CAPTCHA として追加します。
-   * **タイプ**：captcha
-   * **値**：Google reCAPTCHA サイトキーの値
+   - **タイプ**：captcha
+   - **値**：Google reCAPTCHA サイトキーの値
 
    以下のスクリーンショットを参照してください。新しい行タイプが CAPTCHA であるスプレッドシートが示されています。
 
@@ -129,8 +130,4 @@ Google reCAPTCHA に登録されているドメインのサイトキーが、保
 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) を使用してサイトをプレビューし、公開します。
 
 reCAPTCHA バッジが、サイト上のすべてのフォームに表示され始めます。
-
-## 関連トピック
-
-{{see-more-forms-eds}}
 

@@ -4,318 +4,227 @@ description: Edge Delivery Servicesを使用して AEM Forms で送信アクシ�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
-source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
-workflow-type: ht
-source-wordcount: '2166'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '855'
+ht-degree: 12%
 
 ---
 
-# フォーム送信の設定：データはどこに送信されますか？
+# AEM Formsの送信アクションの設定
 
-ユーザーがフォーム上で&#x200B;**送信** をクリックした後、そのデータに対して何を行うかをEdge Delivery Servicesに指示する必要があります。 主な 2 つのオプションは次のとおりです。
+Edge Delivery ServicesのAEM Formsを使用してデータをスプレッドシート、メール、バックエンドシステムにルーティングするためのフォーム送信処理を設定します。
 
-## 方法 1：AEM Forms Submission Service を使用（簡略）
+## クイック決定ガイド
 
-このサービスは、スプレッドシートやメールへのデータの送信など、一般的なわかりやすいアクションに最適です。
+送信方法を選択します。
 
-**概要と機能**
+| メソッド | 次に最適 | セットアップの複雑さ | ユースケース |
+|--------|----------|------------------|-----------|
+| **Forms送信サービス** | シンプルなデータキャプチャ | 低 | お問い合わせフォーム、調査、基本データ収集 |
+| **AEM公開送信** | 複雑なワークフロー | 高 | エンタープライズ統合、カスタム処理、ワークフロー |
 
-[Forms Submission Service](/help/forms/forms-submission-service.md) は、Adobeがホストするエンドポイントです。 フォームからデータが送信されると、このサービスが引き継がれ、事前設定済みのアクションを実行します。 設定が簡単になるよう設計されています。 以下を設定できます。スプレッドシートまたはメールへの送信
+## 前提条件
 
-* **スプレッドシートへの送信：** 送信されたフォームデータを新しい行として Google スプレッドシートまたは Microsoft Excel ファイル (OneDrive または SharePoint に保存) に自動的に追加します。
-* **メールの送信：** フォームデータを含むメールを、指定した 1 つ以上のメールアドレスに送信します。
+送信アクションを設定する前に、次を確認します。
 
-#### 重要：設定要件
+- AEM Forms as a Cloud Service インスタンス
+- Edge Delivery Services プロジェクトが設定されました
+- ドキュメントオーサリングまたはユニバーサルエディターを使用して作成されたフォーム
+- ターゲットの宛先（スプレッドシート、メールシステムまたはAEM）に必要な権限
 
-* **Spreadsheet Access:** Google スプレッドシートまたは OneDrive/SharePoint 上の Excel ファイルにデータを送信するには、通常は Adobe サービスアカウント (多くの場合に `forms@adobe.com`) に、その特定のスプレッドシートの **編集権限** が必要です。
-* **アーリーアクセスプログラム：** このサービスの一部の機能 (特にスプレッドシートの機能) は、アーリーアクセスプログラムの一部である可能性があります。 メールで送信するか `aem-forms-ea@adobe.com` 、特定のAdobe フォームにプロジェクトの詳細を入力して、アクセスをリクエストする必要がある場合があります。 最新のAdobe ドキュメントを常に確認してください。
++++ 方法 1:Forms送信サービス
 
-**Forms Submission Service のフローチャート**
-<!--
-```mermaid
-    graph TD
-    UserForm[User Submits Form on Your EDS Site] >|Data Sent| FormSubmissionService[AEM Forms Submission Service]
-    FormSubmissionService -- "If configured for Google Sheets" > GoogleSheet[Data written to Google Sheet]
-    FormSubmissionService -- "If configured for Excel (OneDrive or SharePoint)" > ExcelSheet[Data written to Excel]
-    FormSubmissionService -- "If configured for Email" > Email[Email with data is sent]
+Forms送信サービスは、Adobeでホストされるエンドポイントであり、シンプルなデータキャプチャシナリオに最適です。
 
-    style UserForm fill:#ccf,stroke:#333
-    style FormSubmissionService fill:#fca,stroke:#333
-    style GoogleSheet fill:#90ee90,stroke:#333
-    style ExcelSheet fill:#90ee90,stroke:#333
-    style Email fill:#add8e6,stroke:#333
-```-->
-![Forms Submission](/help/forms/assets/eds-fss.png)
+### サポートされる宛先
 
-このフローチャートは、Forms Submission Service が送信されたデータを取得して、設定済みのスプレッドシートまたはメールに送信する方法を示しています。
+- **スプレッドシート**:Google シート、Microsoft Excel （OneDrive/SharePoint）
+- **メール**：フォームデータを指定したメールアドレスに送信します
 
-## 方法 2：AEM Publish インスタンスへの送信 (高度)
+### 設定手順
 
-より複雑なニーズについては、[ フォーム (特にユニバーサルエディターで作成されたフォーム) から AEM as a Cloud Service の Publish インスタンスに直接データを送信できます ](/help/forms/configure-submit-actions-core-components.md)。 これにより、AEM の完全なバックエンド機能を活用できます。
+1. **宛先アクセスの設定**
+   - スプレッドシートの場合：ターゲットスプレッドシートの `forms@adobe.com` に編集権限を付与します
+   - メールの場合：受信者のメールアドレスがアクセス可能であることを確認します
 
-**AEM Publish に送信する必要があるのはいつですか？**
+2. **フォーム送信の設定**
+   - オーサリング環境でフォームを開きます
+   - 送信アクションを「Forms送信サービス」に設定する
+   - ターゲットスプレッドシートの URL またはメールアドレスを指定
+   - フォームを保存して公開します
 
-* 送信後にカスタム AEM ワークフローをトリガーするには：
-* AEM フォームデータモデル (FDM) を使用してデータベースまたは他のエンタープライズシステムと統合する場合。
-* Marketo、Microsoft Power Automate、Adobe Workfront Fusion などのサードパーティサービスに接続する場合。
-* Azure Blob Storage や SharePoint リスト/ドキュメントライブラリ (単純なスプレッドシートだけでない) などの特定の場所にデータを保存する場合。
-* AEM 内に複雑なサーバーサイド検証やデータ処理のロジックがある場合。
+3. **テスト送信**
+   - フォームを使用したテストデータの送信
+   - データがターゲットの宛先に表示されることを確認します
+   - 送信に失敗した場合のエラーログの確認
 
-**使用可能な送信アクション (AEM Publish Submissions)**
+### 重要な注意事項
 
-* [REST エンドポイントに送信](/help/forms/configure-submit-action-restpoint.md)
-* [メールの送信 (AEMのメールサービスを使用)](/help/forms/configure-submit-action-send-email.md)
-* [フォームデータモデル（FDM）を使用して送信](/help/forms/configure-data-sources.md)
-* [AEM ワークフローを起動](/help/forms/aem-forms-workflow-step-reference.md)
-* [SharePoint への送信 (リスト項目またはドキュメントとして)](/help/forms/configure-submit-action-sharepoint.md)
-* [OneDrive への送信 (ドキュメントとして)](/help/forms/configure-submit-action-onedrive.md)
-* [Azure Blob Storage への送信](/help/forms/configure-submit-action-azure-blob-storage.md)
-* [Microsoft Power Automate への送信](/help/forms/forms-microsoft-power-automate-integration.md)
-* [Adobe Workfront Fusion への送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Adobe Marketo Engage への送信](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+- サービス アカウント `forms@adobe.com` はターゲット スプレッドシートへの編集アクセスが必要です
+- メール通知は、フォーム送信時に直ちに送信されます
+- データの検証はサービス・レベルで行われる
 
->[!NOTE]
->
-> AEM Publish からGoogle スプレッドシート/Excel をターゲットにする場合でも、直接の Forms Submission Service とは異なる設定手順が必要になります。
+![Forms送信サービスフロー ](/help/forms/assets/eds-fss.png)
 
-**AEM Publish Submission のフローチャート**
++++
 
-<!--```mermaid
-    graph TD
-    UEForm[User Submits Universal Editor Form on EDS Site] >|Data sent to AEM Publish URL - example: /adobe/forms/af/submit/...| AEMPublish[AEM Publish Instance]
-    AEMPublish -- Configured to run AEM Workflow > AEMWorkflow[AEM Workflow is Triggered]
-    AEMPublish -- Configured to use Form Data Model > FDM[FDM updates Backend System or Database]
-    AEMPublish -- Configured for Marketo > Marketo[Data sent to Marketo Engage]
-    AEMPublish -- Other configured actions... > OtherIntegrations[...]
++++ 方法 2:AEMの送信内容の公開
 
-    style UEForm fill:#ccf,stroke:#333
-    style AEMPublish fill:#fca,stroke:#333
-    style AEMWorkflow fill:#add8e6,stroke:#333
-    style FDM fill:#add8e6,stroke:#333
-    style Marketo fill:#add8e6,stroke:#333
-```-->
+複雑な処理のために、フォームデータをAEM as a Cloud Service パブリッシュインスタンスに直接送信します。
 
-![AEM Publish Submission のフローチャート ](/help/forms/assets/eds-aem-publish.png)
-このフローチャートは、AEM Publishに送信するフォームを示しています。このフォームは、複雑なバックエンドタスクを処理します。
+### AEMの公開を使用するタイミング
 
-### Forms Submission Service と AEM Publish Submissions の比較
+- 送信後に必要なカスタム AEM ワークフロー
+- フォームデータモデル（FDM）とデータベースの統合
+- サードパーティのサービス統合（Marketo、Power Automate、Workfront Fusion）
+- Azure Blob Storage またはSharePoint ドキュメントライブラリ
+- 複雑なサーバーサイドの検証または処理ロジック
 
-| 機能 | Forms 送信サービス | AEM パブリッシュ送信 |
-| :- | :- | :-- |
-| **次に最適** | スプレッドシートやメール通知へのシンプルなデータキャプチャ | 複雑なワークフロー、エンタープライズ統合、カスタムロジック |
-| **フォームオーサリング** | ドキュメントベースに適しています。シンプルな UI フォームの場合は問題ありません | ユニバーサルエディターで作成したフォームに最適です |
-| **設定の手間** | 低（多くの場合、シンプルな設定） | より高（AEM パブリッシュ、Dispatcher、OSGi、CDN の設定が必要） |
-| **バックエンドシステム** | アドビがホストするサービス | AEM as a Cloud Service パブリッシュインスタンス |
-| **柔軟性** | シート／メールに制限 | 非常に柔軟で、幅広い AEM Forms アクション |
-| **例** | Google Sheet に対するお問い合わせフォームのデータ | ローン申請での AEM 承認ワークフローのトリガー |
+### 使用可能な送信アクション
 
-## 様々なサイトやページにフォームを埋め込む方法
+- [REST エンドポイントに送信](/help/forms/configure-submit-action-restpoint.md)
+- [AEM メールサービスを使用したメールの送信](/help/forms/configure-submit-action-send-email.md)
+- [フォームデータモデルを使用して送信](/help/forms/configure-data-sources.md)
+- [AEM ワークフローを起動](/help/forms/aem-forms-workflow-step-reference.md)
+- [SharePoint に送信](/help/forms/configure-submit-action-sharepoint.md)
+- [OneDrive に送信](/help/forms/configure-submit-action-onedrive.md)
+- [Azure Blob Storage への送信](/help/forms/configure-submit-action-azure-blob-storage.md)
+- [Microsoft Power Automate への送信](/help/forms/forms-microsoft-power-automate-integration.md)
+- [Adobe Workfront Fusion への送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+- [Adobe Marketo Engageへの送信](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
-場合によっては、1 つの場所（例：中央の「フォームサイト」）で作成および管理されているフォームを別の web ページやサイトに表示することがあります。
+![AEM公開送信フロー ](/help/forms/assets/eds-aem-publish.png)
 
-### フォームを埋め込む理由
+### 設定要件
 
-* ドキュメントベースのオーサリングで作成した複数のランディングページに表示する必要がある、ユニバーサルエディターで作成した標準の「お問い合わせ」フォームがある。
-* メインの web サイトコンテンツがドキュメントオーサリング（DA）で作成され、専用のフォームを含める必要がある。
-* 適切に管理された単一のフォームを、複数の異なる EDS プロジェクトをまたいで再利用したいと考えている。
+#### &#x200B;1. AEM Dispatcherの設定
 
-### フォーム埋め込みの技術的な仕組み
+AEM パブリッシュインスタンスでDispatcherを設定します。
 
-フォームを表示するページ（「ホストページ」と呼ぶ）には、何らかのコード（通常は特別なブロックまたはスクリプト）が含まれます。 ユーザーがホストページにアクセスすると、このコードは、実際のフォームがホストされているURL（ここでは「フォームソース」と呼ぶ）にリクエストを行います。 次に、フォームソースは HTML を返し、ホストページが挿入して表示します。
+- **送信パスを許可**:`filters.any` への POST リクエストを許可するように `/adobe/forms/af/submit/...` を変更します
+- **リダイレクトなし**:Dispatcher ルールでフォーム送信パスがリダイレクトされないようにします
 
-**埋め込みフォームアーキテクチャ**
+#### &#x200B;2. OSGi リファラーフィルター
 
-<!--```mermaid
-   graph LR
-    User[User] >|Visits| HostPage[Host Page - for example: your-site.com/landing-page]
-    HostPage >|Contains code to embed form| FetchForm{Host Page Requests Form HTML}
-    FetchForm >|HTTP GET request to the form URL| FormSource[Form Source - for example: forms-repo.hlx.page/my-form]
-    FormSource >|Returns form HTML| FetchForm
-    FetchForm >|Injects form HTML into page| HostPage
-    HostPage >|Displays full page with embedded form| User
+AEM OSGi コンソール（`/system/console/configMgr`）で：
 
-    subgraph Submission ["Form Submission from Host Page"]
-        HostPage_Form[Embedded form on the host page] >|User submits| TargetEndpoint[Submission endpoint - FSS or AEM Publish]
-    end
+1. 「Apache Sling Referrer Filter」を探します
+2. 「Allow Hosts」リストにEdge Delivery ドメインを追加する
+3. `https://your-eds-domain.hlx.page` などのドメインを含める
 
-    style HostPage fill:#e6f3ff,stroke:#333
-    style FormSource fill:#ffe6e6,stroke:#333
-    style FetchForm fill:#fff2cc,stroke:#333
-    style Submission fill:#f0fff0,stroke:#333
-```-->
+#### &#x200B;3. CDN リダイレクトルール
+
+送信をルーティングするようにEdge Delivery CDN を設定します。
+
+- `/adobe/forms/af/submit/...` からのリクエストをAEM パブリッシュインスタンスにルーティングする
+- 実装は CDN プロバイダー（Fastly、Akamai、Cloudflare）によって異なります
+
+#### &#x200B;4. フォーム設定
+
+1. ユニバーサルエディターでのフォームの作成
+2. Target AEM Forms アクションへの送信アクションの設定
+3. 送信エンドポイントのパスを指定
+4. Edge Delivery サイトへのフォームの公開
+
++++
+
++++ フォームの埋め込み（オプション）
+
+1 つの場所で作成されたフォームを別の web ページや web サイトに埋め込みます。
+
+### ユースケース
+
+- 複数のランディングページでの標準フォームの再利用
+- ドキュメント作成コンテンツへの専用のフォームの組み込み
+- 複数の EDS プロジェクトにわたって単一フォームを維持
+
+### CORS 設定
+
+フォームソースでクロスオリジンリソース共有を設定します。
+
+1. フォームソースの応答に **CORS ヘッダーを追加** します。
+   - `Access-Control-Allow-Origin: https://your-host-domain.com`
+   - `Access-Control-Allow-Methods: GET, OPTIONS`
+   - `Access-Control-Allow-Headers: Content-Type`
+
+2. **設定例**:
+
+       # フォームをホストするサイトの設定 
+       headers:
+       - パス：/forms/**
+       custom:
+       Access-Control-Allow-Origin: https://host-domain.com
+       Access-Control-Allow-Methods: GET（OPTIONS） 
+   
+### ステップの埋め込み
+
+1. **フォームの作成と公開**
+   - ドキュメントオーサリングまたはユニバーサルエディターを使用したフォームの作成
+   - 送信方法を設定（FSS またはAEM公開）
+   - スタンドアロン URL に公開
+
+2. **CORS の設定**
+   - フォームソースサイトでの CORS ヘッダーの設定
+   - ホストページドメインによるフォームの取得を許可
+
+3. **ホストページへの埋め込み**
+   - フォーム埋め込みブロックをホストページに追加
+   - ブロックを公開済みフォームの URL にポイント
+   - ホストページを公開
+
 ![埋め込みフォームアーキテクチャ](/help/forms/assets/eds-embedded-form.png)
-この図は、フォームソースからフォーム HTML を取得して表示するホストページを示しています。 送信には、元のフォームの設定済みエンドポイントが使用されます。
 
-## 埋め込みフォームの CORS の設定
++++
 
-[CORS（クロスオリジンリソース共有）](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)は、ブラウザーのセキュリティ機能です。 ホストページ（例：`site-a.com`）が別のドメイン（例：`forms-site-b.com`）からフォームを取得しようとすると、`forms-site-b.com` が CORS ヘッダー経由で明示的に許可しない限り、ブラウザーはブロックします。
++++ よくある問題
 
-**フォームソースサーバー**&#x200B;に正しい CORS ヘッダーが設定されていない場合、ブラウザーではホストページでフォームを読み込めなくなり、埋め込みフォームは表示されません。
+| 問題 | 解決策 |
+|-------|----------|
+| **フォーム送信が失敗する** | コンソールエラーの確認、エンドポイント URL の確認、権限の確認 |
+| **埋め込みフォームが表示されない** | フォームソースに CORS ヘッダーを設定し、フォーム URL を確認する |
+| AEMの **403/401 エラー** | Sling リファラーフィルターを更新し、認証設定を確認する |
+| **データがスプレッドシートに到達しない** | 編集アクセス権 `forms@adobe.com` あることを確認し、スプレッドシート URL を確認します |
+| **CORS エラー** | フォームソースへの適切な `Access-Control-Allow-Origin` ヘッダーの追加 |
 
-### フォームを提供するサイトでの CORS の設定方法
++++
 
-**フォームソース**&#x200B;をホストするサーバーを設定して、応答に特定の HTTP ヘッダーを送信する必要があります。 正確な方法は、EDS の設定により異なります（例えば、Franklin プロジェクトでは、多くの場合、CDN の動作やエッジワーカーのロジックを制御する GitHub リポジトリ内の `helix-config.yaml` または類似の設定ファイルで行われます）。
-フォームソースの応答に追加する主なヘッダー：
+## 設定例
 
-* `Access-Control-Allow-Origin: <URL_of_Host_Page>`（例：`https://your-site.com`）。 テスト環境では `*` を使用できますが、実稼動環境では正確なドメインを指定します。
-* `Access-Control-Allow-Methods: GET, OPTIONS`（フォームの送信自体もクロスオリジンの場合は `POST` が必要になることがありますが、通常、送信は別の、多くの場合、同じオリジンまたは特別に設定されたエンドポイントに送信されます）。
-* `Access-Control-Allow-Headers: Content-Type`（およびフォーム取得で使用される可能性がある他のカスタムヘッダー）。
++++ スプレッドシート送信付きのドキュメントベースのフォーム
 
-**例（設定ファイルの概念）：**
+1. Google Docs/シートでのフォーム構造の作成
+2. Forms送信サービスエンドポイントの設定
+3. ターゲットスプレッドシートへ `forms@adobe.com` 編集アクセス権の付与
+4. Edge Delivery サイトへのドキュメントの公開
+5. フォーム送信とデータフローのテスト
 
-```yaml
-        # In the configuration for the site HOSTING THE FORM (Form Source)
-        headers:
-          # Apply to paths where your forms are served, e.g., /forms/**
-          - path: /forms/**
-            custom:
-              Access-Control-Allow-Origin: https://host-page-domain.com
-              Access-Control-Allow-Methods: GET, OPTIONS
-```
++++
 
-## その他の考慮事項：CDN と複数のコードベース（Helix 4）
++++ AEM ワークフローを使用したユニバーサルエディターフォーム
 
-* **CDN ルール：** CDN によっては、リクエストをプロキシする方法が提供されている可能性があります。 例えば、`host-page.com/embedded-form` へのリクエストは、CDN によって内部でルーティングされ、`form-source.com/actual-form` からコンテンツが取得される可能性があるので、ブラウザーには同じオリジンとして表示されます。 これにより、設定は複雑になる場合があります。
-* **複数のコードベース (Helix 4)：** ホストページとフォームソースが異なる GitHub リポジトリ (Helix 4 の設定で共通) にある場合は、フォームのレンダリングや管理に必要な JavaScript の「フォームブロック」がホストページのコードベースで利用可能であること、またはフォームソースから取得したフォーム HTML が必要なすべての JavaScript で自己完結型であることを確認します。 元のドキュメントには、「コードベースの異なる helix4 の場合、両方のコードベースにフォームブロックを追加する必要がある」旨が記載されています。
+1. ユニバーサルエディターでのフォームの作成
+2. 「AEM Workflow の呼び出し」に対する送信アクションの設定
+3. AEM パブリッシュに対するDispatcherおよびリファラーフィルターの設定
+4. CDN ルーティングルールの設定
+5. フォームを公開してワークフローの実行をテスト
 
-### 一般的なアーキテクチャ設定と設定手順
++++
 
-オーサリング方法と送信戦略を組み合わせて主要な設定ポイントと併用し、フォームを設定する一般的な方法をいくつか示します。
+## ベストプラクティス
 
-#### スプレッドシート/メール送信付きのドキュメントベースのフォーム
+- 簡単なデータキャプチャシナリオでの **Forms送信サービスの使用**
+- 複雑な処理や統合が必要な場合に **AEM公開を選択**
+- 実稼動デプロイメントの前に、ステージング環境で **十分にテスト** します
+- **AEM ログとコンソールエラーを使用した送信の監視**
+- 失敗した送信に対する **適切なエラー処理の実装**
+- クライアントレベルとサーバーレベルの両方で **データを検証**
+- すべてのフォーム送信とデータ送信に **HTTPS を使用**
 
-これは最も簡単な設定です。 Word/Google ドキュメントでフォームを作成し、Forms Submission Service を使用してスプレッドシートまたはメールにデータを送信します。
+## 関連トピック
 
-1. 指定したテーブル構造またはフォームブロックを使用して、Word/Google ドキュメント/スプレッドシート内のフォームを定義します。
-1. ドキュメント (または関連する設定) で、Forms Submission Service のターゲットとなるスプレッドシート URL またはメールアドレスを指定します。
-1. `forms@adobe.com` (または関連するサービスアカウント)に、ターゲットのスプレッドシートへの編集アクセス権があることを確認します。
-1. ドキュメントを Edge Delivery サイトに公開します。
-
-**ドキュメントベース + Forms Submissions Service のアーキテクチャ**
-<!--
-```mermaid
-    graph TD
-        User[<img src='https://img.icons8.com/ios-filled/50/000000/user.png' width='30' /> User] >|Fills Out| EDS_Page_DocBased[EDS Page with Document-Based Form]
-        EDS_Page_DocBased >|Submits Data| FSS[AEM Forms Submission Service]
-        FSS > Target[<img src='https://img.icons8.com/color/48/000000/google-sheets.png' width='30' /> Data to Spreadsheet / <img src='https://img.icons8.com/color/48/000000/filled-sent.png' width='30' /> Email Notification]
-
-        Authoring[Form defined in Google Doc/Sheet] >|EDS Syncs & Renders| EDS_Page_DocBased
-
-        style EDS_Page_DocBased fill:#ccf,stroke:#333
-        style FSS fill:#fca,stroke:#333
-        style Target fill:#90ee90,stroke:#333
-        style Authoring fill:#e6ffe6,stroke:#333
-```-->
-
-![ ドキュメントベース + Forms Submissions Service のアーキテクチャ ](/help/forms/assets/eds-doc-fss.png)
-
-#### スプレッドシート/メール送信のユニバーサルエディターフォーム
-
-フォームの作成にはビジュアルユニバーサルエディターを使用しますが、データ取得にはシンプルな Forms Submissions Service を引き続き使用します。
-
-1. AEM のユニバーサルエディターを使用してフォームを作成します。
-1. 「Forms Submissions Service に送信」オプションを使用するように、UE でフォームの送信アクションを設定します。
-1. ターゲットとにするスプレッドシートの URL またはメールアドレスを指定します。
-1. スプレッドシートを使用する場合は、`forms@adobe.com` に編集アクセス権があることを確認します。
-1. フォームを含んだページを AEM からEdge Delivery サイトに公開します。
-
-   **ユニバーサルエディター + Forms Submissions Service のアーキテクチャ**
-
-   ![ ユニバーサルエディター + Forms Submissions Service のアーキテクチャ ](/help/forms/assets/eds-ue-fss.png)
-
-   <!--```mermaid
-    graph TD
-    User[User] >|Fills Out| EDS_Page_UE[EDS Page with Universal Editor Form]
-    EDS_Page_UE >|Submits Data| FSS[AEM Forms Submission Service]
-    FSS > Target[Data sent to Google Sheet and Email Notification]
-    AuthoringUE[Form built in Universal Editor - AEM] >|AEM Publishes to EDS| EDS_Page_UE
-    style EDS_Page_UE fill:#ccf,stroke:#333
-    style FSS fill:#fca,stroke:#333
-    style Target fill:#90ee90,stroke:#333
-    style AuthoringUE fill:#e6f3ff,stroke:#333
-    ```
-    -->
-
-#### AEM Publish Submissionsを備えたユニバーサルエディターフォーム (高度)
-
-この設定では、フォームの作成にはユニバーサルエディターを、強力なバックエンド処理 (ワークフロー、FDM など) には AEM Publish インスタンスを使用します。 これには、より多くの設定が必要です。
-
-1. **UE でフォームを作成：** ユニバーサルエディターでフォームを作成します。 AEM Forms のアクション (「AEM ワークフローの呼び出し」、「フォームデータモデルを使用した送信」など) を指すように、送信アクションを設定します。
-1. **AEM Dispatcher 設定 (AEM Publish層)：**
-   * **リダイレクトなし：** Dispatcher のルールによって、`/adobe/forms/af/submit/...` パスに対して行われたリクエストがリダイレクト&#x200B;*されない* ようにします。
-   * **送信を許可：** Dispatcher フィルター (`filters.any` 上など) を変更して、Edge Delivery サイトのドメインまたは IP アドレスから `/adobe/forms/af/submit/...` に対して明示的に `allow` POST リクエストします。
-1. **AEMの OSGi リファラーフィルター (AEM Publish 層)：**
-   * AEM OSGi コンソール (`/system/console/configMgr`) で、「Apache Sling Referrer Filter」を見つけて設定します。
-   * Edge Delivery サイトのドメイン (`https://your-eds-domain.hlx.page`、`https://your-custom-eds-domain.com` など) を「Allow Hosts」または「Allow Hosts RegExp」リストに追加します。 これにより、AEM は EDS サイトからの送信を受け入れるようになります。
-1. **CDN リダイレクトルール (Edge Delivery CDN 上)：**
-   * Edge Delivery サイト (`your-eds-domain.hlx.page` など) は、AEM Publish インスタンスに送信リクエストを正しくルーティングする必要があります。
-   * EDS ページ上のフォームが送信する際、`/adobe/forms/af/submit/...` のような相対パスをターゲットにする可能性があります。 Edge Delivery CDN (またはエッジワーカー) で、「リクエストが `your-eds-domain.hlx.page/adobe/forms/af/submit/...` に届いたら、`your-aem-publish-instance.com/adobe/forms/af/submit/...` に転送 (プロキシまたはリダイレクト) する」というルールが必要です。
-   * 正確な実装は CDN プロバイダー (Fastly VCL、Akamai Property Manager、Cloudflare Workers など) によって異なります。
-1. **(オプション) 開発用の `constants.js` (EDS プロジェクトのコードベース内)：**
-   * ローカル開発のために、またはクライアントサイドのフォームスクリプトが完全な AEM Publish URL を知る必要がある場合は、Edge Delivery プロジェクトの GitHub リポジトリ内の `constants.js` または同様の設定ファイルでこれを設定できます。 例：
-
-   ```javascript
-       // in your-eds-project/scripts/constants.js
-       export const AEM_PUBLISH_URL = 'https://publish-p123-e456.adobeaemcloud.com';
-            // Your form submission script might then construct the submit URL:
-           // const submitUrl = `${AEM_PUBLISH_URL}/adobe/forms/af/submit/...`;
-   ```
-
-1. **公開：** フォームページを AEM から EDS に公開し、AEM Publish インスタンスですべての AEM 設定がアクティブであることを確認します。
-
-   **ユニバーサルエディター + AEM Publish アーキテクチャ**
-
-![ ユニバーサルエディター + AEM Publish アーキテクチャ ](/help/forms/assets/eds-aem-publish.png)
-
-これは、ユーザーが EDS サイトに送信し、CDN が AEM Dispatcher にルーティングし、次に AEM Publish が処理するというフローを示しています。
-
-#### ドキュメントオーサリング (DA) ページへのフォームの埋め込み
-
-メインの web サイトコンテンツは、ドキュメントオーサリング (DA) で作成されます。 ドキュメントベースのオーサリングまたはユニバーサルエディターのいずれかを個別に使用してフォームを作成し、DA ページに埋め込みます。
-
-1. **フォームを作成して公開：**
-   * ドキュメントベースのオーサリングまたはユニバーサルエディターを使用してフォームを作成します。
-   * （設定 1、2、3 に従って、Forms Submission Service または AEM Publish に対して）送信方法を設定します。
-   * このフォームを公開して、独自の Edge Delivery URL 上でライブにします（例：`.../forms/my-special-form`）。
-1. **CORS を設定：**&#x200B;このスタンドアロンフォームをホストする Edge Delivery サイト／プロジェクトで、ドキュメントオーサリングサイトのドメインが取得できるように CORS ヘッダーが設定されていることを確認します。
-1. **DA でのページのオーサリング：** ドキュメントオーサリングでページを作成または編集します。
-1. **フォームブロックの埋め込み：** 外部 URL を埋め込むには、DA で適切なブロックを使用します。 このブロックを、スタンドアロンで公開されたフォームの URL に指定します。
-1. **DA ページを公開：** DA ページを公開します。 これで、フォームが取得され、表示されます。
-
-   **DA アーキテクチャに埋め込まれたForms**
-
-   ![DA アーキテクチャに埋め込まれたForms](/help/forms/assets/eds-forms-embedd-da.png)
-
-   これは、別の EDS の場所からフォームを取り込む DA ページを示しています。 埋め込まれたフォームは、自身で送信処理を行います。
-
-## トラブルシューティング
-
-* **フォームの送信がうまくいきません。**
-   * **コンソールエラーの確認：** ブラウザーの Developer Console（通常は F12）を開き、送信時に「ネットワーク」タブまたは「コンソール」タブでエラーを探します。
-   * **送信 URL の確認：** フォームは正しいエンドポイント（Forms Submission Service の URL または AEM Publish パス）に送信しようとしていますか？
-   * **Forms Submission Service：** スプレッドシートに送信する場合、`forms@adobe.com` に編集アクセス権が付与されていますか？ スプレッドシートの URL は正しいですか？
-   * **AEM Publish Submissions：**
-      * Dispatcher は`/adobe/forms/af/submit/...` への POST を許可していますか？
-      * AEM Publish の Sling Referrer Filter は、EDS ドメインを許可するように設定されていますか？
-      * `/adobe/forms/af/submit/...` に対する CDN リダイレクトルールは正しく機能していますか？
-
-* **埋め込みフォームが表示されません。**
-
-   * **CORS!**&#x200B;これが最も一般的な原因です。 ブラウザーコンソールで CORS エラーを確認します。 フォームを&#x200B;*ホスト*&#x200B;しているサイトに、正しい `Access-Control-Allow-Origin` ヘッダーが含まれていることを確認します。
-   * **フォームの URL は正しいですか？**&#x200B;ホストページの埋め込みコードは、フォームの正しいライブ URL を指していますか？
-   * **JavaScript ブロック：**&#x200B;フォームがレンダリングに特定のJavaScriptの「フォームブロック」に依存している場合、そのブロックのコードはホストページで使用できますか？
-
-* **AEM Publish に送信すると、「403 Forbidden」または「401 Unauthorized」が表示されます。**
-
-   * これは多くの場合、AEM Publish 上の Sling Referrer Filter が EDS ドメインからのリクエストを許可していないことを指しています。 設定を再度確認します。
-   * AEM の送信エンドポイントで認証や認可が必要な場合、それが原因の可能性もありますが、通常のフォーム送信は匿名で行われます。
-
-## 次の手順
-
-このガイドでは、AEM Edge Delivery Services でのフォームの使用の概要について説明しました。 具体的な設定の詳細な手順については、次の Adobe Experience Manager の公式ドキュメントを参照してください。
-
-* [Edge Delivery Services Forms でのドキュメントベースのオーサリング](/help/edge/docs/forms/tutorial.md)
-* [Edge Delivery Services Forms でのユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-* [ドキュメントオーサリング（DA）とコンテンツの埋め込み ](https://www.aem.live/developer/da-tutorial)
-* [AEM Forms Submission Service](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+- [EDS Formsを使用したドキュメントベースのオーサリング](/help/edge/docs/forms/tutorial.md)
+- [EDS Formsを使用したユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+- [AEM Forms Submission Service](/help/forms/forms-submission-service.md)
+- [データソースの設定](/help/forms/configure-data-sources.md)
+- [AEM Forms ワークフローリファレンス](/help/forms/aem-forms-workflow-step-reference.md)

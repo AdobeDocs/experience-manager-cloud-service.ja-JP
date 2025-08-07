@@ -7,10 +7,10 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2323'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '2308'
+ht-degree: 98%
 
 ---
 
@@ -37,6 +37,7 @@ AEM Forms には、すぐに使用できる、フォーム送信用のサクセ�
 ## エラーハンドラーの使用 {#uses-of-error-handler}
 
 エラーハンドラーは、様々な目的で使用されます。エラーハンドラー関数の使用例の一部を以下に示します。
+
 * **検証の実行**：事前定義されたルールや条件に対してユーザー入力を検証することで、エラー処理を開始します。ユーザーがアダプティブフォームに入力すると、エラーハンドラーは入力を検証し、必要な形式、長さ、その他の制約が満たされていることを確認します。
 
 * **リアルタイムでのフィードバックの提供**：エラーが検出されると、エラーハンドラーは、対応するフォームフィールドの下にフィードバック（インラインエラーメッセージなど）を、ユーザーに即時に表示します。このフィードバックは、ユーザーがフォームを送信して応答を待つことなく、エラーを特定して修正するのに役立ちます。
@@ -102,6 +103,7 @@ AEM Forms バージョンの機能の改善とその後の更新に伴い、既�
 > * **ContentType** ヘッダーが **application/problem+json** であることを確認します。
 
 ここで、
+
 * `type (required)` は失敗のタイプを指定します。次のいずれかの値になります。
    * `SERVER_SIDE_VALIDATION` は、サーバーサイドの検証が原因でエラーが発生したことを示します。
    * `FORM_SUBMISSION` は、フォームの送信中にエラーが発生したことを示します。
@@ -186,6 +188,7 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 > * デフォルトのエラーハンドラーは、エラー応答が標準スキーマにある場合にフィールドにエラーメッセージを表示するために使用します。デフォルトのエラーハンドラーは、カスタムエラーハンドラー関数から呼び出すこともできます。
 
 ルールエディターを使用して、次のことができます。
+
 * [デフォルトのエラーハンドラー関数を追加](#add-default-errror-handler)
 * [カスタムエラーハンドラー関数を追加](#add-custom-error-handler-function)
 
@@ -199,7 +202,7 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 1. 「**[!UICONTROL 作成]**」を選択します。
 1. ルールの「**When**」セクションで条件を作成します。例えば、**[ペット ID フィールドの名前]**&#x200B;が変更された場合という条件が考えられます。選択は、**状態を選択**&#x200B;ドロップダウンリストから変更できます。
 1. 「**Then**」セクションの&#x200B;**[!UICONTROL アクションの選択]**&#x200B;ドロップダウンリストで「**サービスの呼び出し**」を選択します。
-1. **Post サービス**&#x200B;とそれに対応するデータ連結を「**入力**」セクションから選択します。例えば、**ペット ID**&#x200B;を検証する場合は、**Post サービス**&#x200B;を&#x200B;**GET /pet/{petId}**&#x200B;として選択し、「**入力**」セクションで「**ペット ID**」を選択します。
+1. **Post サービス**&#x200B;とそれに対応するデータ連結を「**入力**」セクションから選択します。例えば、**ペット ID** を検証するには、**Post サービス** を **GET /pet/{petId}** として選択し、「**入力**」セクションで **ペット ID** を選択します。
 1. 「**出力**」セクションからデータ連結を選択します。「**出力**」セクションで「**ペット名**」を選択します。
 1. 「**エラーハンドラー**」セクションから「**[!UICONTROL デフォルトのエラーハンドラー]**」を選択します。
 1. 「**[!UICONTROL 完了]**」をクリックします。
@@ -224,16 +227,17 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 [ルールエディターのサービスの呼び出し](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=ja#invoke)アクションを使用してカスタムエラーハンドラーを作成および使用する方法を理解するために、「**ペット ID**」および「**ペット名**」という 2 つのフィールドを持つアダプティブフォームを例に、「**ペット ID**」でカスタムエラーハンドラーを使用して、`200 - OK`、`404 - Not Found`、`400 - Bad Request` などの外部サービスを呼び出すように設定された REST エンドポイントが返す様々なエラーをチェックしましょう。
 
 アダプティブフォームにカスタムエラーハンドラーを追加して使用するには、次の手順を実行します。
+
 1. [エラーハンドラーのカスタム関数を追加](#1-add-the-custom-function-for-the-error-handler)
 2. [ルールエディターを使用してカスタムエラーハンドラーを設定](#use-custom-error-handler)
 
-#### 1. エラーハンドラーのカスタム関数を追加
+#### &#x200B;1. エラーハンドラーのカスタム関数を追加
 
 カスタム関数を追加する方法について詳しくは、「[コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function)」をクリックしてください。
 
 <!-- To create a custom error function, perform the following steps:
 
-1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#accessing-git). 
+1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git). 
 2. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`
 3. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder` as `clientlibs`.
 4. Create a folder named `js`.
@@ -296,11 +300,11 @@ The created folder structure looks like:
     ```
 -->
 
-1. [パイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)します。
+1. [パイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)します。
 
 パイプラインが正常に実行されると、カスタムエラーハンドラーがアダプティブフォームのルールエディターで使用できるようになります。次に、ルールエディターのサービスの呼び出しを AEM Forms で使用して、カスタムエラーハンドラーを設定して使用する方法を説明します。
 
-#### 2. ルールエディターを使用して、カスタムエラーハンドラーを設定 {#use-custom-error-handler}
+#### &#x200B;2. ルールエディターを使用して、カスタムエラーハンドラーを設定 {#use-custom-error-handler}
 
 アダプティブフォームにカスタムエラーハンドラーを実装する前に、クライアントライブラリ名が **[!UICONTROL クライアントライブラリカテゴリ]**&#x200B;のクライアントライブラリ名が、`.content.xml` ファイルのカテゴリオプションで指定された名前と一致していることを確認します。
 
@@ -314,7 +318,7 @@ The created folder structure looks like:
 1. 「**[!UICONTROL 作成]**」を選択します。
 1. ルールの「**When**」セクションで条件を作成します。例えば、**[ペット ID の名前フィールド]**&#x200B;が変更された場合は、「**状態を選択** 」ドロップダウンリストから「**変更済み**」を選択します。
 1. 「**Then**」セクションの&#x200B;**[!UICONTROL アクションの選択]**&#x200B;ドロップダウンリストで「**サービスの呼び出し**」を選択します。
-1. **Post サービス**&#x200B;とそれに対応するデータ連結を「**入力**」セクションから選択します。例えば、**ペット ID**&#x200B;を検証する場合は、**Post サービス**&#x200B;を&#x200B;**GET /pet/{petId}**&#x200B;として選択し、「**入力**」セクションで「**ペット ID**」を選択します。
+1. **Post サービス**&#x200B;とそれに対応するデータ連結を「**入力**」セクションから選択します。例えば、**ペット ID** を検証するには、**Post サービス** を **GET /pet/{petId}** として選択し、「**入力**」セクションで **ペット ID** を選択します。
 1. 「**出力**」セクションからデータ連結を選択します。例えば、「**出力**」セクションで「**ペット名**」を選択します。
 1. 「**[!UICONTROL エラーハンドラー]**」セクションから「**[!UICONTROL カスタムエラーハンドラー]**」を選択します。
 1. 「**[!UICONTROL 完了]**」をクリックします。
@@ -330,96 +334,3 @@ The created folder structure looks like:
 
 カスタムエラーハンドラー関数は、エラー応答に基づいて、モーダルダイアログの表示や Analytics イベントの送信など、追加のアクションを実行します。カスタムエラーハンドラー関数を使用すると、特定のユーザー要件に合わせて柔軟にエラー処理をカスタマイズできます。
 
-<!-- 
-
-## Configure Adaptive Form submission to add custom handlers {#configure-adaptive-form-submission}
-
-If the server validation error message does not display in the standard format, you can enable asynchronous submission and add a custom error handler on Adaptive Form submission to convert the message into a standard format.
-
-### Configure asynchronous Adaptive Form submission {#configure-asynchronous-adaptive-form-submission}
-
-Before adding custom handler, you must configure the adaptive form for asynchronous submission. Execute the following steps:
-
-1. In adaptive form authoring mode, select the Form Container object and select ![adaptive form properties](assets/configure_icon.png) to open its properties.
-1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
-1. Select **[!UICONTROL Revalidate on server]** to validate the input field values on server before submission.
-1. Select the Submit Action:
-
-    * Select **[!UICONTROL Submit using Form Data Model (FDM)]** and select the appropriate data model, if you are using RESTful web service based [form data model (FDM)](work-with-form-data-model.md) as the data source.
-    * Select **[!UICONTROL Submit to REST Service endpoint]** and specify the **[!UICONTROL Redirect URL/Path]**, if you are using RESTful web services as the data source.
-
-    ![adaptive form submission properties](assets/af_submission_properties.png)
-
-1. Select ![Save](assets/save_icon.png) to save the properties.
-
-### Add custom error handler on Adaptive Form submission {#add-custom-error-handler-af-submission}
-
-AEM Forms provides out-of-the-box success and error handlers for form submissions. Handlers are client-side functions that execute based on the server response. When an Adaptive Form is submitted, the data is transmitted to the server for validation, which returns a response to the client with information about the success or error event for the submission. The information is passed as parameters to the relevant handler to execute the function.
-
-Execute the following steps to add custom error handler on Adaptive Form submission:
-
-1. Open an Adaptive Form in authoring mode, select any form object, and select  to open the rule editor.
-1. Select **[!UICONTROL Form]** in the Form Objects tree and select **[!UICONTROL Create]**.
-1. Select **[!UICONTROL Error in Submission]** from the Event drop-down list.
-1. Write a rule to convert custom error structure to the standard error structure and select **[!UICONTROL Done]** to save the rule.
-
-The following is a sample code to convert a custom error structure to the standard error structure:
-
-```javascript
-var data = $event.data;
-var som_map = {
-    "id": "guide[0].guide1[0].guideRootPanel[0].Pet[0].id_1[0]",
-    "name": "guide[0].guide1[0].guideRootPanel[0].Pet[0].name_2[0]",
-    "status": "guide[0].guide1[0].guideRootPanel[0].Pet[0].status[0]"
-};
-
-var errorJson = {};
-errorJson.errors = [];
-
-if (data) {
-    if (data.originMessage) {
-        var errorData;
-        try {
-            errorData = JSON.parse(data.originMessage);
-        } catch (err) {
-            // not in json format
-        }
-
-        if (errorData) {
-            Object.keys (errorData).forEach(function(key) {
-                var som_key = som_map[key];
-                if (som_key) {
-                    var error = {};
-                    error.somExpression = som_key;
-                    error.errorMessage = errorData[key];
-                    errorJson.errors.push(error);
-                }
-            });
-        }
-        window.guideBridge.handleServerValidationError(errorJson);
-    } else {
-        window.guideBridge.handleServerValidationError(data);
-    }
-}
-```
-
-The `var som_map` lists the SOM expression of the Adaptive Form fields that you want to transform into the standard format. You can view the SOM expression of any field in an adaptive form by tapping the field and selecting **[!UICONTROL View SOM Expression]**.
-
-Using this custom error handler, the adaptive form converts the fields listed in `var som_map` to standard error message format. As a result, the validation error messages display at field-level in the adaptive form.
-
- -->
-
-
-## 関連トピック {#see-also}
-
-{{see-also}}
-* [アダプティブフォーム（コアコンポーネント）でカスタムエラーハンドラーを作成して使用する](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-
-<!--
-
->[!MORELIKETHIS]
->
->* [Create style or themes for your forms](/help/forms/using-themes-in-core-components.md)
->* [Create or add an Adaptive Form to AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
--->

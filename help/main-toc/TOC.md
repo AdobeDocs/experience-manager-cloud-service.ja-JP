@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0e55162f7faf34f6bedf4e25dba9e1e91396fb8d
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '6553'
+source-wordcount: '6563'
 ht-degree: 99%
 
 ---
@@ -1106,8 +1106,6 @@ ht-degree: 99%
       + [リダイレクト](/help/edge/docs/redirects.md)
    + フォームの作成 {#build-forms}
       + [概要](/help/edge/docs/forms/overview.md)
-      + [Edge Delivery Services Forms 用の送信設定](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
-      + [よくある質問](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + WYSIWYG オーサリング {#universal-editor}
          + [Edge Delivery Services のフォームのユニバーサルエディターの概要 - 完全ガイド](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [ユニバーサルエディターを使用したオーサリングの開始方法 - ステップバイステップチュートリアル](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
@@ -1121,6 +1119,7 @@ ht-degree: 99%
          + [フォームの公開およびデプロイ方法：ユニバーサルエディター公開ガイド](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [カスタムフォームコンポーネントの作成：ユニバーサルエディター開発者向けガイド](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [フォームデータモデルの統合：Forms とフォームデータモデルの統合](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [事前入力サービスの設定：事前入力サービスを設定するための完全なステップバイステップガイド](/help/edge/docs/forms/universal-editor/prefill-form.md)
          + [再利用可能なモジュール型スタンドアロンセグメント：フォーム内でのフォームフラグメントの作成と使用](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
          + [Edge Delivery Services フォーム送信での 403 Forbidden エラーのトラブルシューティング](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + ドキュメントベースのオーサリング {#getting-started-edge-delivery-services-forms}
@@ -1142,6 +1141,8 @@ ht-degree: 99%
          + [フォームの保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/recaptacha-forms.md)
          + [カスタムフォームコンポーネントの作成：開発者向けガイド](/help/edge/docs/forms/custom-components-forms.md)
          + [フォームのパフォーマンスの監視：運用テレメトリのガイド](/help/edge/docs/forms/operational-telemetry-for-forms.md)
+      + [Edge Delivery Services Forms 用の送信設定](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [フォーム作成のベストプラクティス](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
    + Edge Delivery リソース {#resources}
       + サイドキック {#sidekick}

@@ -1,216 +1,556 @@
 ---
-Title: How to use forms submission service for submitting forms?
-Description: Learn how to use forms submission service for submitting forms.
-Keywords: Use form submission service, Submit form using form submission service
+title: Edge Delivery ServicesのForms送信サービス
+description: AdobeがホストするForms送信サービスを使用して、フォーム送信をスプレッドシートに直接保存します。 Google シート、OneDrive およびSharePoint統合のセットアップ、設定、API 使用について説明します。
+keywords: Forms送信サービス，Edge Delivery Services フォーム，スプレッドシート統合，Google シートフォーム，OneDrive フォーム，SharePoint フォーム，フォームデータ収集
 feature: Edge Delivery Services
-Role: User, Developer
+role: User, Developer, Admin
+level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 9%
+source-wordcount: '1578'
+ht-degree: 1%
 
 ---
 
-# Edge Delivery Services Formsを使用したForms送信サービス
+# Edge Delivery ServicesのForms送信サービス
 
-<span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセス権をリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。例えば、リポジトリ URL が https://github.com/adobe/abc の場合、組織名は「adobe」、リポジトリ名は「abc」になります。</span>
+Forms送信サービスは、Adobeがホストするソリューションであり、フォーム送信データを好みのスプレッドシート（Google シート、Microsoft OneDrive、SharePoint）に自動的に直接保存します。 これにより、リアルタイムのデータ収集と管理を実現しながら、複雑なバックエンドインフラストラクチャが不要になります。
 
-Forms送信サービスを使用すると、フォーム送信データを OneDrive、SharePoint、Google Sheets などの任意のスプレッドシートに保存でき、目的のスプレッドシートプラットフォーム内でフォームデータに簡単にアクセスして管理できます。
+>[!NOTE]
+>
+>**アーリーアクセスプログラム：** この機能は現在、アーリーアクセスで利用できます。 アクセスをリクエストするには、公式アドレスから GitHub 組織とリポジトリ名を添えて [0}aem-forms-ea@adobe.com} にメールを送信します。](mailto:aem-forms-ea@adobe.com)
+>
+>**例：** リポジトリ `https://github.com/adobe/abc` の場合、次を送信します：organization = `adobe`、repository = `abc`
+
+## 概要
 
 ![Forms送信サービス ](/help/forms/assets/form-submission-service.png)
+*図：Forms送信サービスのワークフロー – フォーム送信からスプレッドシートストレージへ*
 
-## Forms Submission サービスを使用するメリット
+### このサービスの利用者
 
-スプレッドシートでForms送信サービスを使用する利点は次のとおりです。
+**次に最適：**
 
-* **直接統合**：指定したスプレッドシートにデータを直接送信するようにフォームを設定できるので、手動でデータを転送する必要がなくなります。
-* **データ構造**：送信を設定する際に、フォームフィールドを対応するスプレッドシートの列にマッピングして、整理されたデータストレージを使用できます。
-* **アクセス制御**：既存の権限を活用して、選択したスプレッドシートサービスに応じて、送信されたフォームデータにアクセスして変更できるユーザーを制御できます。
+- **コンテンツ作成者** シンプルなデータ収集フォームの作成
+- **迅速なフォームからスプレッドシートへのワークフローが必要な中小規模企業**
+- **マーケティングチーム** リード情報の収集
+- **主催者** 登録の管理
+
+**次の代替策を検討してください：**
+
+- カスタムロジックが必要な複雑なワークフロー
+- データベースとのエンタープライズ統合
+- 高度な検証または処理を必要とするForms
+
+### 一般的なユースケース
+
+| ユースケース | 例 | スプレッドシートの利点 |
+|----------|---------|-------------------|
+| **Formsへのお問い合わせ** | Googleシーツ→ホームページのお問い合わせ | 簡単なフォローアップと CRM のインポート |
+| **イベントの登録** | Excel Online での会議→サインアップ | リアルタイムの出席者トラッキング |
+| **リードジェネレーション** | SharePoint→のニュースレターのサインアップ | マーケティングキャンペーン分析 |
+| **フィードバックの収集** | Google シート→対する調査の回答 | データのクイックビジュアライゼーション |
+
+## 主なメリット
+
+Forms送信サービスには、データ収集を効率化するための次のような利点があります。
+
+### **簡素化された設定**
+
+- **バックエンドインフラストラクチャなし** 必須 – Adobeは送信エンドポイントをホストします
+- 一般的なスプレッドシートプラットフォームを使用した **直接統合**
+- フォームフィールドからスプレッドシート列への **自動データマッピング**
+
+### **リアルタイムデータ管理**
+
+- **即時のデータ取得** – 送信された内容は、即座にスプレッドシートに表示されます
+- **構造化ストレージ** – 分析を容易にする整理された列
+- **ライブコラボレーション** – 複数のチームメンバーがデータにアクセスして分析できます。
+
+### **組み込みのセキュリティとアクセス制御**
+
+- **既存の権限を活用** - スプレッドシートプラットフォームの共有コントロールを使用します。
+- **Adobeで管理されるセキュリティ** - エンタープライズクラスの保護により、送信エンドポイントを保護します
+- **データの所有権** - データは、選択したスプレッドシートプラットフォームにとどまります
 
 ## 前提条件
 
-Forms Submission サービスを使用するための前提条件を以下に示します。
+Forms送信サービスを設定する前に、次のことを確認してください。
 
-* AEM プロジェクトに最新のアダプティブフォームブロックが含まれていることを確認します。
-* Forms送信サービスを使用するには、Git リポジトリが許可リストに追加されていることを確認してください。 Forms送信サービスを使用する [許可リストに追加するには、](mailto:aem-forms-ea@adobe.com)mailto:aem-forms-ea@adobe.com&rbrace; と、GitHub の組織名およびリポジトリ名を入力してください。
+### **技術的要件**
 
-## Forms送信サービスの設定
+- **GitHub リポジトリ** 最新のアダプティブ Forms ブロックがインストールされたEdge Delivery Services プロジェクト用に設定されます
+- **アクセスの承認** - リポジトリが許可リストに追加されました
 
-アダプティブ AEM ブロックが設定された新しいForms プロジェクトを作成します。 新しいAEM プロジェクトの作成方法については、[ はじめに – 開発者向けチュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) を参照してください。 プロジェクトの `fstab.yaml` ファイルを更新します。 既存の参照を、`forms@adobe.com` と共有したフォルダーのパスに置き換えます。
+### **スプレッドシートプラットフォームの設定**
 
-[Forms Submission サービスを手動で設定する ](#configuring-the-forms-submission-service-manually) または [API を使用するForms Submission サービスを設定する ](#configuring-the-forms-submission-service-using-api) ことができます。
 
-### 手動によるForms送信サービスの設定
+サポートされているプラットフォームを選択します。
+
+- **Google シート** - シート作成権限のあるGoogle アカウント
+- **Microsoft OneDrive** - Microsoft 365 アカウント （Excel Online アクセスあり）
+- **SharePoint** - リスト/ライブラリ権限を持つSharePoint アクセス
+
+### **権限とアクセス**
+
+- 対象スプレッドシートの **編集権限**
+- **へのアクセスを許可する** 共有機能 `forms@adobe.com`
+- 選択したプラットフォームの **リンクの生成** 権限
+
+>[!TIP]
+>
+>**Edge Delivery Servicesを初めて使用する場合** はじめに [ チュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) から始めて、プロジェクトの基盤を設定します。
+
+## 設定方法
+
+Forms送信サービスには、2 つの設定方法があります。 ワークフローに最適な方法を選択してください。
+
+### 設定方法を選択
+
+| メソッド | 次に最適 | 所要時間 | 技術レベル |
+|--------|----------|---------------|-----------------|
+| **[手動設定](#manual-configuration)** | コンテンツ作成者、1 回限りの設定 | 10～15 分 | 初心者 |
+| **[API 設定](#api-configuration)** | 開発者、自動ワークフロー | 5 ～ 10 分 | 中級者 |
+
+### プロジェクトのセットアップ
+
+どちらの方法を設定する場合でも、事前にAEM プロジェクト基盤の準備が整っていることを確認してください。
+
+1. **AEM プロジェクトを作成または更新** し、最新のアダプティブ Forms ブロックを使用します（[ はじめる前にチュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)）。
+
+2. **プロジェクトルートの`fstab.yaml`** を更新します。
+
+   ```yaml
+   # Replace with the path to your shared folder
+   mountpoints:
+     /: https://drive.google.com/drive/folders/your-shared-folder-id
+   ```
+
+
+3. **プロジェクトフォルダーの共有** を `forms@adobe.com` と共有する（編集権限が必要）
+
+## 手動設定
 
 ![Forms 送信サービスのワークフロー ](/help/forms/assets/forms-submission-service-workflow.png)
+*図：Forms送信サービスの手動設定の完全なワークフロー*
 
-#### &#x200B;1. フォーム定義を使用してフォームを作成する
+スプレッドシート送信を使用してフォームを設定するには、次のステップバイステップの手順に従います。
 
-Google シートまたはMicrosoft Excel を使用してフォームを作成します。 Microsoft Excel またはGoogle Sheets のフォーム定義を使用してフォームを作成する方法については、[ ここをクリック ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms) してください。
+### 手順 1：フォーム定義を作成する
 
-次のスクリーンショットは、フォームの作成に使用されたフォーム定義を示しています。
+Google Sheets またはMicrosoft Excel を使用してフォーム構造を作成します。
+
+**フォーム作成手順：**
+
+1. **スプレッドシートプラットフォームを開く** （Google Sheets またはMicrosoft Excel）
+2. フォームプロジェクトの **新しいスプレッドシートの作成**
+3. **シートに名前を付ける** （`helix-default` または `shared-aem` のいずれかにする必要があります）
+4. **フォーム作成ガイド** 使用した [ フォーム構造の定義 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![ フォームの定義 ](/help/forms/assets/form-submission-definition.png)
+*例：フィールドタイプ、ラベル、検証ルールを含むフォーム定義*
 
 >[!IMPORTANT]
 >
->**フォームを作成するシートには、名前の付け方に制限があります。シート名として使用できるのは `helix-default` と `shared-aem` のみです。**
+>**シートの命名要件**
+>
+>フォーム定義シートには、次のいずれかの名前を付ける必要があります。
+>
+>- `helix-default` （単一のフォームに推奨）
+>- `shared-aem` （マルチフォームプロジェクトの場合）
+>
+>他のシート名はシステムで認識されません。
 
-#### &#x200B;2. スプレッドシートを有効にしてデータを受け入れます。
+**検証チェックポイント：**
 
-フォームを作成してプレビューしたら、対応するスプレッドシートを有効にしてデータの受信を開始します。 新しいシートを `incoming` のように追加します。 [ スプレッドシートを手動で有効にしてデータを受け入れる ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data) ことができます。
+- すべての必須フィールドでフォーム構造が完了しています
+- シートに正しい名前を付ける（`helix-default` または `shared-aem`）
+- フィールドタイプと検証ルールが適切に設定されている
+
+### 手順 2：データ収集シートの作成
+
+フォーム送信データを受け取る専用シートを設定します。
+
+**データ シートの設定：**
+
+1. 既存のスプレッドシートに **新しいシートを追加** します
+2. **シートに正確に`incoming`** の名前を付ける（大文字と小文字を区別）
+3. フォームフィールドに一致する **列ヘッダーの設定**
+4. **スプレッドシートを保存** して、変更が保持されるようにします
 
 ![ 受信シート ](/help/forms/assets/form-submission-incoming-sheet.png)
+*例：フォームフィールドと一致する列ヘッダーを持つ受信シート*
 
 >[!WARNING]
 >
-> `incoming` シートが存在しない場合、AEMではこのブックにデータが送信されません。
-
-#### &#x200B;3. スプレッドシートを共有し、リンクを生成します。
-
-スプレッドシートを `forms@adobe.com` アカウントと共有してリンクを生成するには、次の手順を実行します。
-
-1. Excel またはGoogle Sheets で、右上隅の **共有** ボタンをクリックします。
-1. `forms@adobe.com` アカウントと
-目のアイコンをクリックし、**編集** アクセスを選択して、**送信** をクリックします。
-
-   ![ 受信シートの共有 ](/help/forms/assets/form-submission-share-incoming.png)
-
-1. スプレッドシートリンクをコピーするには、右上隅の **共有** ボタンをクリックし、「**リンクをコピー**」を選択します。
-
-   ![ 受信シートのリンクをコピー ](/help/forms/assets/form-submission-copy-link.png)
-
-#### &#x200B;4. フォーム定義でスプレッドシートをリンクする
-
-Forms Submission サービスをGoogle Sheets またはMicrosoft Excel で設定するには、次の手順を実行します。
-
-1. フォーム定義を含むスプレッドシートを開きます。
-1. **送信** フィールドに対応する行の **アクション** 列にコピーしたスプレッドシートリンクを貼り付けます。
-
-   ![ スプレッドシートをリンクする ](/help/forms/assets/form-submission-sheet-linking.png)
-
-1. 更新されたフォーム送信サービスで [AEM Sidekick](https://www.aem.live/docs/sidekick) を使用して、シートをプレビューして公開します。
-
->[!NOTE]
+>**重要な要件**
 >
-> [ スプレッドシート ](/help/forms/assets/spreadsheet.xlsx) を参照して、Forms送信サービスを使用できます。
-
-### API を使用したForms Submission サービスの設定
-
-また、フォームに **POST** リクエストを送信して、`incoming` シートをデータで更新することもできます。
-
->[!NOTE]
+>シートの名前は正確に `incoming` （小文字）にする必要があります。 このシートを使用しない場合：
 >
-> * `incoming` シートが存在しない場合、AEMではこのブックにデータが送信されません。
-> * `incoming` シートをAdobe Experience Manager `forms@adobe.com` と共有し、編集アクセス権を付与します。
-> * サイドキックで `incoming` シートをプレビューして公開します。
+>- フォーム送信は拒否されます
+>- データは保存されません
+>- 送信エラーが表示されます
 
-シート設定のための POST リクエストのフォーマット方法については、[API ドキュメント ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/) を参照してください。 以下に例を示します。
+**検証チェックポイント：**
 
-以下に示すように、curl やPostmanなどのツールを使用してこの POST リクエストを実行できます。
+- シート `incoming` スプレッドシートに存在します
+- 列ヘッダーは、フォームフィールド名と一致します
+- シートは適切に保存され、アクセス可能です
 
-* **Postmanを使用する場合**:
+>[!TIP]
+>
+>**ヒント：** フォーム定義から正確なフィールド名をコピーして、フォームフィールドとスプレッドシートの列の間で完全に一致するようにします。
 
-例えば、を置き換えた後、Postmanで以下のリクエストを送信します。
-* フォーム ID を `{id}` 用
-* GitHub リポジトリまたはサイト名を `site or repository` します
-* GitHub ユーザー名を `organization` します。
+### 手順 3:Adobe サービスとスプレッドシートを共有する
 
-  ```json
-  POST 'https://forms.adobe.com/adobe/forms/af/submit/{id}' \
-  --header 'Content-Type: application/json' \
-  --header 'x-adobe-routing: tier=live,bucket=main--[site/repository]--[organization]' \
-  --data '{
-      "data": {
-          "startDate": "2025-01-10",
-          "endDate": "2025-01-25",
-          "destination": "Australia",
-          "class": "First Class",
-          "budget": "2000",
-          "amount": "1000000",
-          "name": "Mary",
-          "age": "35",
-          "subscribe": null,
-          "email": "mary@gmail.com"
-              }
-          }'
-  ```
+スプレッドシートへのAdobe Forms送信サービスへのアクセス権を付与します。
 
-Postmanで「**送信**」ボタンをクリックすると、`201 Created` の応答が返され、送信されたデータで `incoming` シートが更新されます。
+**共有プロセス：**
+
+1. スプレッドシートの右上隅にある **「共有」ボタンをクリック** します
+2. **Adobe サービスアカウントを追加します。**
+   - 電子メール：`forms@adobe.com`
+   - 権限レベル：**エディター** （データの書き込みに必要）
+3. **共有招待を送信する**
+4. 次の手順のために **スプレッドシートリンクをコピー** します
+
+![ 受信シートの共有 ](/help/forms/assets/form-submission-share-incoming.png)
+*Adobe サービスアクセスを許可するためのステップバイステップの共有プロセス*
+
+**プラットフォーム固有の手順：**
+
+**Google シート：**
+
+- `forms@adobe.com` をエディターとして追加
+- 「リンクを持つすべてのユーザーが表示できる」が有効になっていることを確認します
+- 共有可能なリンクをコピー
+
+**Microsoft Excel （OneDrive/SharePoint）:**
+
+- 編集権限を持つ `forms@adobe.com` を追加
+- リンク共有を「リンクを持つすべてのユーザーが編集できる」に設定します
+- 共有 URL をコピー
+
+![ 受信シートのリンクをコピー ](/help/forms/assets/form-submission-copy-link.png)
+*例：フォーム設定の共有可能なリンクをコピーする*
+
+**検証チェックポイント：**
+
+- `forms@adobe.com` はスプレッドシートに編集者としてアクセスできます
+- スプレッドシートのリンクがコピーされ、使用できるようになりました
+- 共有権限による外部アクセス
+
+### 手順 4：フォームをスプレッドシートに接続
+
+フォーム定義を送信スプレッドシートにリンクします。
+
+**フォームとスプレッドシートの接続：**
+
+1. **フォーム定義スプレッドシートを開きます** （`helix-default` または `shared-aem` シートが含まれているスプレッドシート）。
+2. フォーム定義で **送信フィールドの行を見つけます**
+3. **コピーしたスプレッドシートリンク** を送信フィールドの **アクション** 列に貼り付けます
+4. フォーム定義に **変更を保存** します
+
+![ スプレッドシートをリンクする ](/help/forms/assets/form-submission-sheet-linking.png)
+*例：送信アクションをデータ収集スプレッドシートに接続する*
+
+**フォームの公開：**
+
+1. ブラウザーで **AEM Sidekickを開く**
+2. **フォームをプレビュー** して、設定をテストします
+3. **フォームを公開** してライブにする
+
+**最終検証：**
+
+- スプレッドシートリンクが「フィールドを送信」アクションに正しく追加される
+- フォーム定義が保存され、公開されます
+- フォームのプレビューに、すべてのフィールドが正しく表示される
+- 「送信」ボタンが正しく設定されている
+
+>[!SUCCESS]
+>
+>**セットアップが完了しました。** これで、フォームがForms送信サービスに接続されました。 サンプルデータを送信し、`incoming` シートを確認してテストします。
+
+**参考資料：**
+
+- 適切に設定された [ 完全なスプレッドシートの例 ](/help/forms/assets/spreadsheet.xlsx)
+- 公開ガイダンスの [AEM Sidekick ドキュメント ](https://www.aem.live/docs/sidekick)
+
+## API 設定
+
+この API メソッドを使用すると、開発者はプログラムによってデータをForms送信サービスに送信できます。これは、自動ワークフローとカスタム統合に最適です。
+
+### API を使用すべき状況
+
+**次に最適：**
+
+- 自動データ収集システム
+- カスタムフォームの実装
+- 既存のアプリケーションとの統合
+- 一括データ送信ワークフロー
+
+### API の前提条件
+
+API を使用する前に、次のことを確認します。
+
+- **スプレッドシート設定** 完了（`incoming` シートを含む）
+- **Adobe サービスアクセス** が `forms@adobe.com` に付与されました
+- 公開済みフォームの **フォーム ID**
+- **リポジトリ情報** （組織およびサイト名）
+
+>[!IMPORTANT]
+>
+>**必要な設定手順**
+>
+>この API では、手動設定と同じスプレッドシート設定が必要です。
+>
+>- `incoming` シートが存在する必要があります
+>- `forms@adobe.com` は編集者のアクセス権が必要です
+>- シートはAEM Sidekickからパブリッシュする必要があります
+
+### API エンドポイントと認証
+
+**ベース URL:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
+
+**必須ヘッダー：**
+
+- `Content-Type: application/json`
+- `x-adobe-routing: tier=live,bucket=main--[repository]--[organization]`
+
+**API ドキュメント：**[ 完全な API リファレンス ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
+
+### Postmanの使用
+
+Postmanは、API 送信をテストするための使いやすいインターフェイスを提供します。
+
+**設定手順：**
+
+1. Postmanでの **新しい POST リクエストの作成**
+2. **エンドポイントを設定します：** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
+3. **プレースホルダーを置換：**
+   - 実際→フォーム ID を `{id}` します
+   - `[repository]` → GitHub リポジトリ名
+   - `[organization]` → GitHub 組織/ユーザー名
+
+**リクエスト設定：**
+
+```json
+POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
+
+Headers:
+Content-Type: application/json
+x-adobe-routing: tier=live,bucket=main--your-repo--your-org
+
+Body (JSON):
+{
+    "data": {
+        "startDate": "2025-01-10",
+        "endDate": "2025-01-25",
+        "destination": "Australia",
+        "class": "First Class",
+        "budget": "2000",
+        "amount": "1000000",
+        "name": "Mary",
+        "age": "35",
+        "subscribe": null,
+        "email": "mary@gmail.com"
+    }
+}
+```
+
+**期待される応答：**
+
+- **状態コード：** `201 Created`
+- **データがすぐに** スプレッドシート シートに表示されます `incoming`
 
 ![postman 画面 ](/help/forms/assets/postman-api.png)
+*例：Postman インターフェイスを使用した API 送信の成功*
 
-* **Curl コマンドの使用**:
+### コマンドライン（curl）の使用
 
-例えば、を置き換えた後で、ターミナルまたはコマンドプロンプトで次のコマンドを実行します。
-* フォーム ID を `{id}` 用
-* GitHub リポジトリまたはサイト名を `site or repository` します
-* GitHub ユーザー名を `organization` します。
+ターミナル/コマンドプロンプトを希望する開発者は、curl を使用してプログラムによりデータを送信します。
 
+**コマンドライン設定：**
+
+以下のコマンドの次のプレースホルダーを置き換えます。
+
+- 実際→フォーム ID を `{id}` します
+- `[repository]` → GitHub リポジトリ名
+- `[organization]` → GitHub 組織/ユーザー名
 
 >[!BEGINTABS]
 
->[!TAB macOSの場合 ]
+>[!TAB macOS/Linux]
 
-    &quot;&#39;json
-    curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
-    —header &quot;Content-Type: application/json&quot; \
-    —header &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; \
-     – データ &#39;&lbrace;
-    &quot;data&quot;: &lbrace;
-    &quot;startDate&quot;: &quot;2025-01-20&quot;,
-    &quot;endDate&quot;: &quot;2025-01-25&quot;,
-    &quot;destination&quot;: &quot;Australia&quot;,
-    &quot;class&quot;:&quot;First First class&quot;,
-    &quot;budget&quot;: &quot;2000&quot;,
-    &quot;amount&quot;: &quot;1000000&quot;,
-    &quot;name&quot;: &quot;Joe&quot;,
-    &quot;age&quot;: &quot;35&quot;,
-    &quot;subscribe&quot;: null,
-    &quot;email&quot;: &quot;mary@gmail.com&quot;
-    &rbrace;
-     
-    
-     
-&rbrace;&#39;s
->[!TAB Windows OS の場合 ]
+```bash
+curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
+  --header "Content-Type: application/json" \
+  --header "x-adobe-routing: tier=live,bucket=main--your-repo--your-org" \
+  --data '{
+    "data": {
+      "startDate": "2025-01-10",
+      "endDate": "2025-01-25",
+      "destination": "Australia",
+      "class": "First Class",
+      "budget": "2000",
+      "amount": "1000000",
+      "name": "Joe",
+      "age": "35",
+      "subscribe": null,
+      "email": "joe@example.com"
+    }
+  }'
+```
 
-    &quot;&#39;json
-    
-    curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; ^
-     – ヘッダー&quot;Content-Type: application/json&quot; ^
-     – ヘッダー&quot;x-adobe-routing: tier=live,bucket=main—[ サイト/リポジトリ ]—[ 組織 ]&quot; ^
-     – データ &quot;{\&quot;data\&quot;: {\&quot;startDate\&quot;: \&quot;2025-01-10\&quot;, \&quot;endDate\&quot;: \&quot;2025-01-25\&quot;, \&quot;destination\&quot;: \&quot;Australia\&quot;, \&quot;class\&quot;: \&quot;First Class\&quot;, \&quot;budget\&quot;: \&quot;2000\&quot;, \&quot;amount\&quot;: \&quot;1000000\&quot;, \&quot;name\&quot;: \&quot;Joe\&quot;, \&quot;age\&quot;: \&quot;35\&quot;, \&quot;subscribe\&quot;: null, \&quot;email\&quot;: \&quot;mary@gmail.com\&quot;}}&quot;
-    
-    &quot;&#39;
+>[!TAB Windows コマンドプロンプト ]
+
+```cmd
+curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" ^
+  --header "Content-Type: application/json" ^
+  --header "x-adobe-routing: tier=live,bucket=main--your-repo--your-org" ^
+  --data "{\"data\": {\"startDate\": \"2025-01-10\", \"endDate\": \"2025-01-25\", \"destination\": \"Australia\", \"class\": \"First Class\", \"budget\": \"2000\", \"amount\": \"1000000\", \"name\": \"Joe\", \"age\": \"35\", \"subscribe\": null, \"email\": \"joe@example.com\"}}"
+```
+
+>[!TAB Windows PowerShell]
+
+```powershell
+$body = @{
+  data = @{
+    startDate = "2025-01-10"
+    endDate = "2025-01-25"
+    destination = "Australia"
+    class = "First Class"
+    budget = "2000"
+    amount = "1000000"
+    name = "Joe"
+    age = "35"
+    subscribe = $null
+    email = "joe@example.com"
+  }
+} | ConvertTo-Json -Depth 3
+
+Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" `
+  -Method POST `
+  -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
+  -Body $body
+```
 
 >[!ENDTABS]
 
-上記の POST リクエストでは、`incoming` シートが下記の応答で更新されます。
+### API の応答と検証
 
-```json
-    < HTTP/1.1 201 Created
-    < Connection: keep-alive
-    < Content-Length: 0
-    < X-Request-Id: 02a53839-2340-56a5-b238-67c23ec28f9f
-    < X-Message-Id: 42ecb4dd-b63a-4674-8f1a-05a4a5b0372c
-    < Accept-Ranges: bytes
-    < Date: Fri, 10 Jan 2025 13:06:10 GMT
-    < Via: 1.1 varnish
-    < Access-Control-Allow-Origin: *
-    < X-Served-By: cache-del21750-DEL
-    < X-Cache: MISS
-    < X-Cache-Hits: 0
-    < X-Timer: S1736514370.704084,VS0,VE1234
+**成功した応答：**
+
+```http
+HTTP/1.1 201 Created
+Connection: keep-alive
+Content-Length: 0
+X-Request-Id: 02a53839-2340-56a5-b238-67c23ec28f9f
+X-Message-Id: 42ecb4dd-b63a-4674-8f1a-05a4a5b0372c
+Date: Fri, 10 Jan 2025 13:06:10 GMT
+Access-Control-Allow-Origin: *
 ```
 
-次の画面は、API を使用してデータ送信によって更新された `incoming` シートのスクリーンショットを示しています。
+**データ検証：**
+
+送信に成功したら、データがスプレッドシートに表示されることを確認します。
 
 ![ 更新されたシート ](/help/forms/assets/updated-sheet.png)
+*例：データが API を介して受信シートに正常に書き込まれた*
 
-## 関連トピック
+**応答の検証：**
 
-{{see-more-forms-eds}}
+- **HTTP ステータス：** `201 Created` は、送信が成功したことを示します
+- **X-Request-Id:** 送信をトラッキングするための一意の識別子
+- **データが** 秒以内に `incoming` シートに表示されます
+- **すべてのフォームフィールド** は、スプレッドシートの列に正しくマッピングされます
+
+## トラブルシューティング
+
+### よくある問題と解決策
+
+**問題：403 Forbidden エラー**
+
+```
+Causes: Missing or incorrect access permissions
+Solutions:
+- Verify forms@adobe.com has Editor access to your spreadsheet
+- Check that your repository is added to the allowlist
+- Confirm the x-adobe-routing header format
+```
+
+**問題：404 エラーが見つかりません**
+
+```
+Causes: Incorrect Form ID or endpoint URL
+Solutions:  
+- Verify your Form ID is correct
+- Check the API endpoint URL format
+- Ensure your form is published and live
+```
+
+
+**問題：スプレッドシートにデータが表示されない**
+
+```
+Causes: Missing 'incoming' sheet or permission issues
+Solutions:
+- Confirm 'incoming' sheet exists (case-sensitive)
+- Verify column headers match form field names exactly
+- Check forms@adobe.com has edit permissions
+- Ensure spreadsheet is shared properly
+```
+
+
+**問題：無効な JSON 形式のエラー**
+
+```
+Causes: Malformed request body
+Solutions:
+- Validate JSON syntax using online JSON validators
+- Ensure proper escaping of special characters
+- Check quote marks and brackets are balanced
+```
+
+
+### ヘルプの表示
+
+**サポートチャネル：**
+
+- **アーリーアクセスの問題：** 電子メール [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
+- **API ドキュメント：**[ 開発者向けリファレンス ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
+- **コミュニティサポート：**[Adobe Experience League コミュニティ ](https://experienceleaguecommunities.adobe.com/)
+
+## 次の手順
+
+Forms送信サービスを設定したので、次の関連トピックを参照してください。
+
+### **Formsの強化**
+
+- **[詳細Formsの作成 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** – 検証、条件付きロジック、カスタムスタイル設定を追加します
+- **[フォームコンポーネントガイド ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** – 使用可能なフォームフィールドタイプを調べます
+
+### **代替的提出方法**
+
+- **[AEM送信内容の公開](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)** – 複雑なワークフローおよび企業の統合の場合
+- **[カスタム送信アクション](/help/forms/configure-submit-actions-core-components.md)** – 高度な送信処理
+
+### **データ管理**
+
+- **[Form Analytics](/help/forms/view-understand-aem-forms-analytics-reports.md)** - フォームのパフォーマンスと使用状況の追跡
+- **[データ統合](/help/forms/configure-data-sources.md)** - フォームをデータベースおよび CRM システムに接続します
+
+## 概要
+
+Forms送信サービスは、フォームデータをスプレッドシートに直接収集するための強力なコードレスのソリューションです。 主なメリットは次のとおりです。
+
+- **クイックセットアップ** - バックエンドインフラストラクチャは不要
+- **リアルタイムデータ** – 即時の送信キャプチャ
+- **柔軟なプラットフォーム** - Google Sheets、OneDrive、SharePoint
+- **API アクセス** - プログラムによる送信機能
+- **エンタープライズセキュリティ** - Adobeが管理する、アクセス制御のあるエンドポイント
+
+**使用を開始する準備はできていますか？*** ビジュアル設定の場合は [ 手動設定 ](#manual-configuration) ガイドに従い、プログラム統合の場合は [API 設定 ](#api-configuration) に移動します。

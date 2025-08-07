@@ -4,8 +4,8 @@ description: AEM Forms の Edge Delivery Services は、ピークパフォーマ
 feature: Edge Delivery Services
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # ルールを使用してフォームに動的な動作を追加
 
-スプレッドシートを使用してフォームを作成する強力な機能の 1 つは、組み込みのスプレッドシート関数を使用してルールを作成できることです。これにより、フォームフィールドの条件付きの表示と非表示、ユーザー入力に基づく計算の自動化、より動的なユーザーエクスペリエンスの作成が可能になります。
+スプレッドシートを使用してフォームを作成する強力な機能の 1 つは、ビルトインのスプレッドシート関数を使用してルールを作成できることです。これにより、フォームフィールドの条件付きの表示と非表示、ユーザー入力に基づく計算の自動化、より動的なユーザーエクスペリエンスの作成が可能になります。
 
 この記事では、様々なアダプティブフォームブロックプロパティ、主に[`Visible`](#visible-property)、[`Visibility Expression`](#visible-expression-property)、[`Value Expression`](#value-expression-property) プロパティと[スプレッドシート関数](#spreadsheet-functions-for-rules)を使用して、フォームに効果的なルールを作成する方法を説明します。また、これらのルールを実際にどのように実装できるかを説明するいくつかの例も見ていきます。
 
@@ -21,16 +21,16 @@ ht-degree: 100%
 
 ルールとは、様々な状況で何をすべきかを教えてくれる手順のようなものです。一般的なルールの構文を以下に示します。
 
-* 条件：ルールを適用する条件を指定します。回答（はい／いいえ）が必要な質問と考えてください。
+- 条件：ルールを適用する条件を指定します。回答（はい／いいえ）が必要な質問と考えてください。
 
-* アクション：条件が満たされた場合（true）と満たされなかった場合（false）の動作を定義します。
+- アクション：条件が満たされた場合（true）と満たされなかった場合（false）の動作を定義します。
 
 
 例えば、チェックボックスが選択されているときにメールボックスを表示するには、次のようにします。
 
-* 条件：「雑誌やアクティビティの購読を希望しますか？」チェックボックスが選択されている（はい／いいえ）。この条件はフォームの `Visible` プロパティで設定されます。
-* アクション（True）：メールボックスが表示される（はいの場合）。`Visibility Expression` は、`visible` プロパティに定義された条件を使用してフィールドを動的に表示します。
-* アクション（False）：メールボックスは非表示（いいえの場合）。`Visibility Expression` は、`Value` に定義された条件を使用してフィールドを動的に非表示にします。
+- 条件：「雑誌やアクティビティの購読を希望しますか？」チェックボックスが選択されている（はい／いいえ）。この条件はフォームの `Visible` プロパティで設定されます。
+- アクション（True）：メールボックスが表示される（はいの場合）。`Visibility Expression` は、`visible` プロパティに定義された条件を使用してフィールドを動的に表示します。
+- アクション（False）：メールボックスは非表示（いいえの場合）。`Visibility Expression` は、`Value` に定義された条件を使用してフィールドを動的に非表示にします。
 
 詳細な手順については、[条件に基づくメールフィールドの表示/非表示](#example-1-conditional-email-field)を参照してください。
 
@@ -41,8 +41,8 @@ ht-degree: 100%
 
 フォームフィールドの照明スイッチを想像してみてください。`Visible` プロパティはスイッチに似ており、フィールドが最初に読み込まれたときにフォーム上に最初に表示されるかどうかを制御します。
 
-* True（照明スイッチが「オン」になっている場合など）：フィールドがフォームに表示される。
-* False（照明スイッチが「オフ」になっている場合など）：フィールドがフォーム上で非表示になる。
+- True（照明スイッチが「オン」になっている場合など）：フィールドがフォームに表示される。
+- False（照明スイッチが「オフ」になっている場合など）：フィールドがフォーム上で非表示になる。
 
 SpreadSheet 式（= タグを含む）を使用すると、スプレッドシートのようなロジックを用いてフィールドの表示／非表示を決定する式を作成できます。この数式内では、フォーム内の他のフィールドの値を使用できます。例えば、ユーザーが登録タイプフィールドで「個人」を選択した場合、その値を確認する式を使用して、メールフィールドを非表示にできます。
 
@@ -73,10 +73,10 @@ Excel の数式（= タグを含む）を使用すると、スプレッドシー
 
 これらの概念を具体化する例を次に示します。
 
-* 表示：家のような形を想像してください。「表示」プロパティは、各部屋（フィールド）のライトスイッチに似ています。別のユーザーが家に入った際（フォームを開いた際）、最初に部屋を明るくする（表示する）か暗くする（非表示にする）かを決定します。
-* 表示式：モーションセンサーのライトスイッチに似ています。部屋（フィールド）は最初は暗い（非表示の）可能性がありますが、別のユーザーが通りかかる（別のフィールドの値を変更する）と、数式（モーションセンサー）によってオンになる（フィールドが表示される）ことがあります。
-* 値：ライトの事前設定済み調光スイッチ（フィールドの初期データ）に似ています。ユーザーは明るさを調整（値を変更）できます。
-* 値式：家の中にある製品の価格タグに組み込まれた高度な計算機（フォーム）に似ています。価格タグ（フィールド）には、基本価格（別のフィールドの値）などの他の情報を使用する数式（例えば、基本価格への税金の加算）に基づいた最終価格が表示されます。
+- 表示：家のような形を想像してください。「表示」プロパティは、各部屋（フィールド）のライトスイッチに似ています。別のユーザーが家に入った際（フォームを開いた際）、最初に部屋を明るくする（表示する）か暗くする（非表示にする）かを決定します。
+- 表示式：モーションセンサーのライトスイッチに似ています。部屋（フィールド）は最初は暗い（非表示の）可能性がありますが、別のユーザーが通りかかる（別のフィールドの値を変更する）と、数式（モーションセンサー）によってオンになる（フィールドが表示される）ことがあります。
+- 値：ライトの事前設定済み調光スイッチ（フィールドの初期データ）に似ています。ユーザーは明るさを調整（値を変更）できます。
+- 値式：家の中にある製品の価格タグに組み込まれた高度な計算機（フォーム）に似ています。価格タグ（フィールド）には、基本価格（別のフィールドの値）などの他の情報を使用する数式（例えば、基本価格への税金の加算）に基づいた最終価格が表示されます。
 
 これらのプロパティを[スプレッドシート関数](#spreadsheet-functions-for-rules)と組み合わせて、フォーム内で様々な動的動作を実現できます。
 
@@ -86,19 +86,19 @@ Excel の数式（= タグを含む）を使用すると、スプレッドシー
 
 ### 論理関数
 
-* [NOT()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110)：論理状態を逆にします（TRUE は FALSE になり、その逆も同様です）。
-* [AND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND)：指定したすべての条件が TRUE の場合にのみ TRUE を返します。
-* [OR()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR)：指定した条件の少なくとも 1 つが TRUE の場合、TRUE を返します。
+- [NOT()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110)：論理状態を逆にします（TRUE は FALSE になり、その逆も同様です）。
+- [AND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND)：指定したすべての条件が TRUE の場合にのみ TRUE を返します。
+- [OR()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR)：指定した条件の少なくとも 1 つが TRUE の場合、TRUE を返します。
 
 ### 条件付き関数
 
-* [IF()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110)：条件を評価し、TRUE の場合は特定の値を返し、FALSE の場合は別の値を返します。
+- [IF()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110)：条件を評価し、TRUE の場合は特定の値を返し、FALSE の場合は別の値を返します。
 
 ### 数学関数
 
-* [SUM()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM)：指定したセル範囲から値を加算します。
-* [ROUND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND)：数値を指定した小数点の桁数に四捨五入します。
-* [MIN()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN)：指定したセル範囲から最小値を返します。
+- [SUM()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM)：指定したセル範囲から値を加算します。
+- [ROUND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND)：数値を指定した小数点の桁数に四捨五入します。
+- [MIN()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN)：指定したセル範囲から最小値を返します。
 
 ## ルールの作成
 
@@ -156,7 +156,7 @@ Excel の数式（= タグを含む）を使用すると、スプレッドシー
 
 **論理関数：**
 
-* **NOT()：** 論理状態を反転させます（TRUE は FALSE になり、FALSE は TRUE になります）。
+- **NOT()：** 論理状態を反転させます（TRUE は FALSE になり、FALSE は TRUE になります）。
 
   例：「メール」フィールドが空白の場合に「メールを確認」フィールドを非表示にします。
 
@@ -170,9 +170,9 @@ Excel の数式（= タグを含む）を使用すると、スプレッドシー
       ![AEM Formsに表示される式](/help/edge/assets/aem-forms-visible-expression-formula-text.png)
 
 
-* AND()：指定したすべての条件が TRUE の場合にのみ TRUE を返します。
+- AND()：指定したすべての条件が TRUE の場合にのみ TRUE を返します。
 
-   * 例：すべての必須フィールドに値が入力されている場合にのみ「送信」ボタンを有効にします。
+   - 例：すべての必須フィールドに値が入力されている場合にのみ「送信」ボタンを有効にします。
 
    1. 「送信」ボタンの `Visible` プロパティを次のように設定します。
 
@@ -202,9 +202,9 @@ Excel の数式（= タグを含む）を使用すると、スプレッドシー
 
       この式は、すべてのフィールド（名前、メール、電話）に値が入力されている場合にのみ「送信」ボタン（TRUE）を表示し（NOT(()) がそれぞれに TRUE を返す）、そうでない場合はボタンを非表示にします（AND(multiple FALSES) = FALSE）。
 
-* OR()：指定された条件の少なくとも 1 つが TRUE の場合に TRUE を返します。
+- OR()：指定された条件の少なくとも 1 つが TRUE の場合に TRUE を返します。
 
-   * 例：ユーザーが適用可能な割引クーポンコードのいずれかを入力した場合に割引を適用します。
+   - 例：ユーザーが適用可能な割引クーポンコードのいずれかを入力した場合に割引を適用します。
 
    1. 「最終金額」フィールドの `Visible` プロパティを次のように設定します。
 
@@ -229,9 +229,9 @@ Excel の数式（= タグを含む）を使用すると、スプレッドシー
 
 **テキスト関数：**
 
-* IF()：条件を評価し、TRUE の場合は特定の値を返し、FALSE の場合は別の値を返します。
+- IF()：条件を評価し、TRUE の場合は特定の値を返し、FALSE の場合は別の値を返します。
 
-   * 例：選択した製品カテゴリに基づいてカスタムメッセージを表示します。
+   - 例：選択した製品カテゴリに基づいてカスタムメッセージを表示します。
 
    1. 「`message`」フィールドの `Value` プロパティを `Only upto 7 kg check-in lagguage is allowed!` に設定します。
 
@@ -264,7 +264,7 @@ Excel の数式（= タグを含む）を使用すると、スプレッドシー
 
 **数学関数：**
 
-* SUM()：指定したセル範囲から値を加算します。
+- SUM()：指定したセル範囲から値を加算します。
 
   例：買い物かご内の商品の合計コストを計算します。
 
@@ -273,7 +273,7 @@ SUM(価格 * 数量)
 
   この数式は、各商品の「価格」と「数量」に個別のフィールドがあることを前提としています。これらを乗算し、SUM() を使用して買い物かご内のすべての商品の合計コストを合計します。
 
-* ROUND()：数値を指定した小数点の桁数に四捨五入します。
+- ROUND()：数値を指定した小数点の桁数に四捨五入します。
 
   例：計算された割引額を小数点以下第 2 位に四捨五入します。
 
@@ -282,7 +282,7 @@ ROUND(discount, 2)
 
   この数式は、割引値を小数点以下第 2 位にに四捨五入します。
 
-* MIN()：指定したセル範囲から最小値を返します。
+- MIN()：指定したセル範囲から最小値を返します。
 
   例：選択した国に基づいて、サインアップフォームに必要な最低年齢を検索します。
 
@@ -304,9 +304,9 @@ MIN(ageLimits[&quot;米国&quot;], ageLimits[&quot;英国&quot;], ageLimits[&quo
 
 カスタム関数は `[Adaptive form block]/functions.js` ファイルにあります。作成プロセスには通常、次の手順が含まれます。
 
-* 関数宣言：関数名とそのパラメーター（受け入れる入力）を定義します。
-* ロジック実装：関数で実行される特定の計算や操作の概要を説明するコードを書き込みます。
-* 関数の書き出し：関連ファイルから関数を書き出して、ルール内で関数にアクセスできます。
+- 関数宣言：関数名とそのパラメーター（受け入れる入力）を定義します。
+- ロジック実装：関数で実行される特定の計算や操作の概要を説明するコードを書き込みます。
+- 関数の書き出し：関連ファイルから関数を書き出して、ルール内で関数にアクセスできます。
 
 ### 例：Year 関数
 
@@ -315,9 +315,9 @@ MIN(ageLimits[&quot;米国&quot;], ageLimits[&quot;英国&quot;], ageLimits[&quo
 
 ```JavaScript
 /**
- * Get the current date and time
- * @name now
- * @returns {Date} The current date and time as a Date object
+ - Get the current date and time
+ - @name now
+ - @returns {Date} The current date and time as a Date object
  */
 function now() {
   const today = new Date();
@@ -325,11 +325,11 @@ function now() {
 }
 
 /**
- * Get the year from a Date object
- * @name year
- * @param {Date} date The date object
- * @throws {TypeError} If the input is not a Date object
- * @returns {number} The year as a number
+ - Get the year from a Date object
+ - @name year
+ - @param {Date} date The date object
+ - @throws {TypeError} If the input is not a Date object
+ - @returns {number} The year as a number
  */
 function year(date) {
   let inputDate = new Date(date)

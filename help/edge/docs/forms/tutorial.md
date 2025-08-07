@@ -4,9 +4,9 @@ description: このチュートリアルは、新しい Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: b194a8fc4e7490cc322b0868a8348e80626df7eb
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '1923'
+source-wordcount: '1921'
 ht-degree: 98%
 
 ---
@@ -23,10 +23,10 @@ AEM Forms には、アダプティブフォームブロックと呼ばれるブ�
 
 ## 前提条件
 
-* GitHub アカウントを持っており、Git の基本を理解している。
-* Google または Microsoft SharePoint アカウントを持っている。
-* HTML、CSS、JavaScript の基本を理解している。
-* ローカル開発用の Node/npm がインストールされている。
+- GitHub アカウントを持っており、Git の基本を理解している。
+- Google または Microsoft SharePoint アカウントを持っている。
+- HTML、CSS、JavaScript の基本を理解している。
+- ローカル開発用の Node/npm がインストールされている。
 
 **警告** このチュートリアルでは、macOS、Chrome および Visual Studio Code を使用します。 この手順は他の設定にも適用できますが、スクリーンショットと特定の UI 要素は、選択したオペレーティングシステム、ブラウザー、コードエディターによって異なる場合があります。
 
@@ -63,9 +63,9 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
 
    これで完了です。 `https://<branch>--<repo>--<owner>.aem.page/` で新しい web サイトを実行しています。
 
-   * `<branch>` は、GitHub リポジトリのブランチを指します。
-   * `<repository>` は GitHub リポジトリを示します。
-   * `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を指します。
+   - `<branch>` は、GitHub リポジトリのブランチを指します。
+   - `<repository>` は GitHub リポジトリを示します。
+   - `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を指します。
 
    例えば、分岐名が `main`、リポジトリが `wefinance`、所有者が `wkndforms` の場合、web サイトは `https://main--wefinance--wkndforms.aem.page` で稼動しています。
 &lt;!--(https://main--wefinance--wkndform.aem.page)-->
@@ -173,9 +173,9 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
    https://<branch>--<repository>--<owner>.aem.live
    ```
 
-   * `<branch>` は、GitHub リポジトリのブランチを参照します。
-   * `<repository>` は GitHub リポジトリを示します。
-   * `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を参照します。
+   - `<branch>` は、GitHub リポジトリのブランチを参照します。
+   - `<repository>` は GitHub リポジトリを示します。
+   - `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を参照します。
 
 
    `https://<branch>--<repo>--<owner>.aem.page/enquiry` の URL。
@@ -241,7 +241,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
        npm install -g @adobe/aem-cli
    ```
 
-1. GitHub プロジェクトのクローンを作成します。次のコマンドを使用して、GitHub からプロジェクトリポジトリのクローンを作成します。 &lt;owner> リポジトリの所有者と &lt;repo> リポジトリ名を置き換えます。
+1. GitHub プロジェクトのクローンを作成します。次のコマンドを使用して、GitHub からプロジェクトリポジトリのクローンを作成します。 <owner> リポジトリの所有者と <repo> リポジトリ名を置き換えます。
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -281,9 +281,9 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
 
 1. 次のフォルダーとファイルを [AEM Forms ボイラープレート](https://github.com/adobe-rnd/aem-boilerplate-forms)から AEM プロジェクトにコピー＆ペーストします。
 
-   * [フォームブロック](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)フォルダー
-   * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) ファイル
-   * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) ファイル
+   - [フォームブロック](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)フォルダー
+   - [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) ファイル
+   - [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) ファイル
 1. AEM プロジェクトの `/scripts/editor-support.js` ファイルに移動し、[AEM Forms ボイラープレート内の editor-support.js file ファイル](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)を使用して更新します。
 1. AEM プロジェクトの `/models/_section.json` に移動し、「form」と「embed-adaptive-form」を `filters` オブジェクトのコンポーネント配列に追加します。
 
@@ -363,13 +363,9 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
 
 潜在的な問題に対処することで、GitHub ビルドプロセスがスムーズに行われるようにします。
 
-* **モジュールパスエラーの解決：**
+- **モジュールパスエラーの解決：**
 「モジュール &#39;/scripts/lib-franklin.js&#39; へのパスを解決できません」というエラーが発生した場合は、[EDS プロジェクト]/blocks/forms/form.js ファイルに移動します。lib-franklin.js ファイルを aem.js ファイルに置き換えて、読み込みステートメントを更新します。
 
-* **lint エラーの処理：**
+- **lint エラーの処理：**
 lint エラーが発生した場合は、回避できます。 [EDS プロジェクト]/package.json ファイルを開き、「lint」スクリプトを `"lint": "npm run lint:js && npm run lint:css"` から `"lint": "echo 'skipping linting for now'"` に変更します。 ファイルを保存し、変更を GitHub プロジェクトにコミットします。
 
-
-## 関連トピック
-
-{{see-more-forms-eds}}

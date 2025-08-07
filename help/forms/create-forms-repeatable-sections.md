@@ -4,10 +4,10 @@ description: アダプティブフォームで繰り返し可能なセクショ�
 role: Architect, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '1258'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -49,8 +49,9 @@ ht-degree: 100%
 ![「アクセシビリティ」タブ](/help/forms/assets/repeat-panel.png)
 
 パネルを繰り返し可能にするには、次の手順を実行します。
+
 1. パネルコンテナを選択して、![cmppr](/help/forms/assets/cmppr.png) をクリックします。
-1. **繰り返しパネル**&#x200B;をクリックし、**パネルを繰り返し可能にする**&#x200B;のスイッチをオンにします。
+1. **繰り返しパネル**&#x200B;をクリックし、**パネルを繰り返し可能にする**&#x200B;のスイッチをオンに切り替えます。
 1. 最小繰り返し可能セクションの必要に応じて&#x200B;**最小繰り返し回数**&#x200B;を設定します。パネルを繰り返しない場合、または繰り返しパネルを削除するには、**最小繰り返し回数**&#x200B;を 0 に設定できます。デフォルトでは、最小繰り返し回数の値は 0 です。
 1. **最大繰り返し回数**&#x200B;を設定して、必要な回数パネルを繰り返します。デフォルトの値は無限です。
 
@@ -135,30 +136,9 @@ ht-degree: 100%
 >
 >
 
-<!-- 
->For more information, see: Class: InstanceManager#instances in [AEM Forms Java API reference](https://adobe.com/go/learn_aemforms_documentation_63_jp).      
--->
-
 >[!NOTE]
 >
-> パネルのすべてのインスタンスがアダプティブフォームから削除されている場合、削除されたパネルのインスタンスを追加するには、_panelName 構文を使用してパネルのインスタンスマネージャをキャプチャし、インスタンスマネージャーの addInstance API を使用して削除されたインスタンスを追加します。例えば、_panelName.addInstance() です。削除されたパネルのインスタンスを 1 つ追加します。
-
-<!--
-![panel-repeatability-video](/help/adaptive-forms/assets/panel-repeatability-video.mp4)
--->
-
-<!--
-
-## Using the accordion layout for the parent panel &nbsp; {#using-the-accordion-layout-for-the-parent-panel-nbsp}
-
-A panel has various layouts options. The Layout for accordian design option has out of the box support for repeatable panels. Perform the following steps to repeatable panel with Layout for accordian design option:
-
-1. On the parent of panel to be repeated, select ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
-1. On a panel, which is to be repeated, select ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
-
-   Now, you can use the plus (+) and delete ( ![delete-panel](assets/delete-panel.png)) buttons to add and remove the panels.
-
--->
+> パネルのすべてのインスタンスがアダプティブフォームから削除されている場合、削除されたパネルのインスタンスを追加するには、_panelName 構文を使用してパネルのインスタンスマネージャをキャプチャし、インスタンスマネージャーの addInstance API を使用して削除されたインスタンスを追加します。例えば、&#39;_panelName.addInstance （）&#39;と指定します。 削除されたパネルのインスタンスを 1 つ追加します。
 
 ## フォームテンプレート（XDP／XSD）からのサブフォームの繰り返しの使用  {#using-repeating-subforms-from-form-template-xdp-xsd}
 

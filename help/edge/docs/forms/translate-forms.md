@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '546'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '544'
 ht-degree: 100%
 
 ---
@@ -21,12 +21,12 @@ Edge Delivery では、フォーム翻訳の際に、正確さ、明確さおよ
 
 この記事を最後まで読むと、以下を行えるようになります。
 
-* [Google ドライブ内のフォームの翻訳](#translate-form-google-drive)
-* [SharePoint サイト内のフォームの翻訳](#translate-form-sharepoint)
+- [Google ドライブ内のフォームの翻訳](#translate-form-google-drive)
+- [SharePoint サイト内のフォームの翻訳](#translate-form-sharepoint)
 
 ## Google ドライブ内のフォームの翻訳 {#translate-form-google-drive}
 
-Google シートの `GOOGLETRANSLATE` 関数では、組み込みの翻訳ツールを利用してフォームを翻訳し、Google シート内でテキストを別の言語に直接変更します。Google ドライブ内でフォームを翻訳するには、次の手順に従います。
+Google シートの `GOOGLETRANSLATE` 関数では、ビルトインの翻訳ツールを利用してフォームを翻訳し、Google シート内でテキストを別の言語に直接変更します。Google ドライブ内でフォームを翻訳するには、次の手順に従います。
 
 1. Google ドライブの AEM プロジェクトフォルダーに移動し、Google シートを開きます。
 2. 既存のシート（`shared-default`）の名前を `shared-en` に変更します。
@@ -68,11 +68,11 @@ URL（https://main--wefinance--wkndforms.hlx.live/enquirytranslate）を参照�
 
 ## 既知の問題 {#known-issues}
 
-* `shared-default` シートで、フォームのラベルは指定のローカライズ先言語に翻訳されますが、エラーメッセージはブラウザーのデフォルト言語で表示されます。
+- `shared-default` シートで、フォームのラベルは指定のローカライズ先言語に翻訳されますが、エラーメッセージはブラウザーのデフォルト言語で表示されます。
 
   ![エラーメッセージ](/help/forms/assets/translate-error-message.png)
 
-* カレンダーを開くと、カレンダードロップダウンがブラウザーのデフォルト言語で表示されます。
+- カレンダーを開くと、カレンダードロップダウンがブラウザーのデフォルト言語で表示されます。
 
   ![エラーメッセージ](/help/forms/assets/translate-calender-display.png)
 
@@ -83,16 +83,13 @@ URL（https://main--wefinance--wkndforms.hlx.live/enquirytranslate）を参照�
 
 **A**：特定のローカライズ先言語でテキストを入力するには、お使いのデバイスのキーボード設定を調整します。方法については、次のリンクを参照してください。
 
-* [別の言語で入力できるように Mac を設定する](https://support.apple.com/ja-in/guide/mac-help/mchlp1406/mac)
-* [別の言語で入力できるように Windows を設定する](https://support.microsoft.com/ja-jp/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
-* [別の言語で入力できるように Android または iPhone／iPad を設定する](https://support.google.com/gboard/answer/7068494?hl=ja&amp;co=GENIE.Platform%3DAndroid)
+- [別の言語で入力できるように Mac を設定する](https://support.apple.com/ja-in/guide/mac-help/mchlp1406/mac)
+- [別の言語で入力できるように Windows を設定する](https://support.microsoft.com/ja-jp/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
+- [別の言語で入力できるように Android または iPhone／iPad を設定する](https://support.google.com/gboard/answer/7068494?hl=ja&co=GENIE.Platform%3DAndroid)
 
 
 **Q**：`GOOGLETRANSLATE` 関数で使用されるロケールのリストを取得するにはどうすればよいですか？
 
 **A**：GOOGLETRANSLATE で使用されるロケールの包括的なリストについては、[Google の公式ドキュメント](https://cloud.google.com/translate/docs/languages)を参照してください。
 
-## 関連トピック
-
-{{see-more-forms-eds}}
 

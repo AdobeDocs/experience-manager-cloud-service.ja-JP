@@ -5,9 +5,9 @@ topic-tags: forms-manager
 feature: Adaptive Forms, Foundation Components
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '704'
 ht-degree: 100%
 
 ---
@@ -116,17 +116,3 @@ ht-degree: 100%
    1. **全員**：レビューが以前のレビューセクションに表示されます。これ以上コメントを追加することはできません。
 
    ![レビュー完了](assets/review-complete-imgg.png)
-
-
-## 関連トピック {#see-also}
-
-{{see-also}}
-
-
-<!--
-
->[!MORELIKETHIS]
->
->* [Associating submission reviewers with a form](/help/forms/adding-reviewers-form.md)
-
--->

@@ -4,13 +4,13 @@ description: XFA フォームテンプレートまたは XDP ファイルを使�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '711'
 ht-degree: 20%
 
 ---
-
 
 # XFA フォームテンプレートに基づくアダプティブフォーム（コアコンポーネント）の作成
 
@@ -43,7 +43,7 @@ XFA フォームテンプレートまたは XDP ファイルを使用してコ�
 XFA または XDP フォームテンプレートを使用してアダプティブフォームを作成するには、以下の手順を実行します。
 
 1. [!DNL Experience Manager Forms] オーサーインスタンスにログインします。
-1. Experience Manager のログインページに資格情報を入力します。ログイン後、左上隅の **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
+1. Experience Manager のログインページに資格情報を入力します。 ログイン後、左上隅の **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
 
    ![Formsとドキュメント ](/help/forms/assets/create-fdm.png)
 
@@ -65,10 +65,10 @@ XFA または XDP フォームテンプレートを使用してアダプティ�
 1. 「**[!UICONTROL 作成]**」を選択します。
    ![ 名前とタイトルの入力 ](/help/forms/assets/create-form.png)
 
-   アダプティブフォームが作成され、アダプティブフォームエディターで開きます。エディターに、テンプレートで使用可能なコンテンツが表示されます。
+   アダプティブフォームが作成され、アダプティブフォームエディターで開きます。 エディターに、テンプレートで使用可能なコンテンツが表示されます。
 1. ![ ページ情報 ](/help/forms/assets/Smock_Properties_18_N.svg)/**[!UICONTROL プロパティを開く]** を選択します。
 
-   ![ プロパティを開く ](/help/forms/assets/form-properties.png)
+   ![プロパティを開く](/help/forms/assets/form-properties.png)
 
    フォームプロパティページが開きます。
 1. 「**[!UICONTROL フォームモデル]**」タブに移動し、「**フォームテンプレート**」を選択します。
@@ -87,13 +87,9 @@ XFA または XDP フォームテンプレートを使用してアダプティ�
    > 「フォーム **モデル**」タブで **フォームテンプレート** を選択した後は、変更できません。
 
 
-アダプティブフォームが作成され、アダプティブフォームエディターで開きます。エディターに、テンプレートで使用可能なコンテンツが表示されます。 アダプティブフォームのタイプにより、関連付けられた XFA フォームテンプレートに存在するフォーム要素が、サイドバーにある **[!UICONTROL コンテンツブラウザー]** の **[!UICONTROL データモデルオブジェクト]** タブに表示されます。 これらの要素もドラッグ＆ドロップしてアダプティブフォームを作成できます。
+アダプティブフォームが作成され、アダプティブフォームエディターで開きます。 エディターに、テンプレートで使用可能なコンテンツが表示されます。  アダプティブフォームのタイプにより、関連付けられた XFA フォームテンプレートに存在するフォーム要素が、サイドバーにある **[!UICONTROL コンテンツブラウザー]** の **[!UICONTROL データモデルオブジェクト]** タブに表示されます。 これらの要素もドラッグ＆ドロップしてアダプティブフォームを作成できます。
 
 >[!NOTE]
 >
 > 追加されたフィールドのパネルツールバーを使用して、XDP フォームフィールドのスクリプトを無効にすることができます。 [ ビジュアルルールエディター ](/help/forms/rule-editor-core-components.md) を使用して、追加されたフィールドにロジックを作成します。
 
-## 関連トピック
-
-{{see-also}}
-* [ルールエディターを使用してフォームに動的な動作を追加](/help/forms/rule-editor-core-components.md)

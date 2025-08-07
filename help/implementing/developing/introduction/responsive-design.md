@@ -4,8 +4,8 @@ description: レスポンシブデザインを使用すると、同じエクス�
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 100%
 
@@ -205,4 +205,5 @@ container
   </div>
 </div>
 ```
+
 >[!ENDTABS]

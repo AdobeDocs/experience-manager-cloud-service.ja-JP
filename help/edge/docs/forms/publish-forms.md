@@ -4,10 +4,10 @@ description: AEM Forms の Edge Delivery Services の公開
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
-source-git-commit: 81fbf43572c5129efb0a0718b408f0c9ae4a5ad3
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 99%
+source-wordcount: '585'
+ht-degree: 100%
 
 ---
 
@@ -19,14 +19,14 @@ ht-degree: 99%
 
 ## 前提条件
 
-* [AEM Forms ボイラープレート](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)に基づく AEM プロジェクトがあるか、[既存の AEM プロジェクトに Adaptive Forms ブロックを追加している](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
-* フォームは完全にテスト済みで、使用する準備が整っている
-* データを受け入れるように[スプレッドシートが設定](/help/edge/docs/forms/submit-forms.md)されている
+- [AEM Forms ボイラープレート](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)に基づく AEM プロジェクトがあるか、[既存の AEM プロジェクトに Adaptive Forms ブロックを追加している](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
+- フォームは完全にテスト済みで、使用する準備が整っている
+- データを受け入れるように[スプレッドシートが設定](/help/edge/docs/forms/submit-forms.md)されている
 
 
 ## フォームの公開
 
-+++ 1. スプレッドシートを公開
++++ &#x200B;1. スプレッドシートを公開
 
 1. Microsoft SharePoint または Google Drive アカウントを開き、AEM Edge Delivery プロジェクトディレクトリに移動します。
 
@@ -47,18 +47,18 @@ ht-degree: 99%
        https://<branch>--<repository>--<owner>.aem.live/<form>.json
    ```
 
-   * `<branch>` は、GitHub リポジトリのブランチを参照します。
-   * `<repository>` は GitHub リポジトリを示します。
-   * `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を指します。
+   - `<branch>` は、GitHub リポジトリのブランチを参照します。
+   - `<repository>` は GitHub リポジトリを示します。
+   - `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を指します。
 
    例えば、プロジェクトのリポジトリの名前が「wefinance」で、アカウント「wkndform」の下にあり、「main」分岐とフォームを「お問い合わせ」として使用している場合、URL は次のようになります。
 
    `https://main--wefinance--wkndform.aem.live/enquiry.json`
-&lt;! – （https://main--wefinance--wkndform.aem.live/enquiry.json)-->
+&lt;!--(https://main--wefinance--wkndform.aem.live/enquiry.json)-->
 
 +++
 
-+++ 2. Web ページにフォームを追加
++++ &#x200B;2. Web ページにフォームを追加
 
 Web ページに `<form>.json` を追加すると、顧客インタラクションが簡単になり、フォーム入力者が簡単にフォームに入力して送信できるようになります。
 
@@ -125,6 +125,4 @@ Web ページにフォームを追加するには、以下の手順に従いま�
 +++
 
 
-## 関連トピック
 
-{{see-more-forms-eds}}
