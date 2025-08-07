@@ -3,16 +3,17 @@ title: Cloud Managerでの外部リポジトリのアクセストークンを管
 description: AEM Cloud Manager の Bring Your Own Git のために使用されるアクセストークンを表示、編集、削除する方法を説明します。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 52e05be90dc1a4997c6b65306bc646d03456c971
-workflow-type: ht
-source-wordcount: '403'
+source-git-commit: 19fd6713e083826bd9aa621d86805bcd55a6743a
+workflow-type: tm+mt
+source-wordcount: '366'
 ht-degree: 100%
 
 ---
 
 # 外部リポジトリのアクセストークンを管理する {#manage-access-tokens}
+
+<!-- badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens" -->
 
 Cloud Managerはアクセストークンを使用して、外部 Git プラットフォームにホストされるリポジトリを管理します。以前は、トークンの有効期限が切れた場合、操作可能な状態を維持するために、関連するリポジトリを再度オンボーディングする必要がありました。
 
@@ -20,9 +21,11 @@ Cloud Managerはアクセストークンを使用して、外部 Git プラッ�
 
 [Cloud Manager での外部リポジトリの追加](/help/implementing/cloud-manager/managing-code/external-repositories.md)も参照してください。
 
+<!--
 >[!NOTE]
 >
->この記事で説明する機能は、Private Beta プログラムを通じてのみ使用できます。詳細と Private Beta の新規登録について詳しくは、[独自の Git の導入](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)を参照してください。
+>The features described in this article are only available through the private beta program. For more details and to sign up for the private beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
+-->
 
 ## アクセストークンを表示する {#view-access-tokens}
 

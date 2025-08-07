@@ -6,15 +6,14 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-hide: true
-hidefromtoc: true
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
-workflow-type: ht
-source-wordcount: '529'
-ht-degree: 100%
+hide: false
+hidefromtoc: false
+source-git-commit: 96a619c6ab8f71034914b72a57bdb1e7f363fbc6
+workflow-type: tm+mt
+source-wordcount: '489'
+ht-degree: 26%
 
 ---
-
 
 
 # Edge Delivery パイプラインの追加 {#configure-production-pipeline}
@@ -25,9 +24,9 @@ Edge Delivery パイプラインを設定し、コードをビルドして本番
 
 >[!NOTE]
 >
->本番パイプラインは、以下の条件が満たされるまで設定できません。
+>Edge Delivery パイプラインは、次の状況が発生するまで設定できません。
 >
->* プログラムが作成されます。
+>* 1 つのEdge Delivery Services サイトと 1 つのマッピングされたドメインを含むプログラムが作成されます。 それ以外の場合は、「Edge Delivery パイプラインを追加 **オプションがユーザーインターフェイスで無効に表示され** ツールチップに不足している要件が説明されます。<!-- CMGR‑69680 -->
 >* Git リポジトリには 1 つ以上の分岐があります。
 >* 本番環境とステージング環境が作成されます。
 
@@ -35,47 +34,56 @@ Edge Delivery パイプラインを設定し、コードをビルドして本番
 
 >[!NOTE]
 >
->初期設定後に、[パイプライン設定を編集](managing-pipelines.md)できます。
+>初期設定後に [ パイプライン設定を編集 ](managing-pipelines.md) できます。
 
-## 新しいEdge Delivery パイプラインを追加する {#adding-production-pipeline}
+**Edge Delivery パイプラインを追加するには：**
 
-[!UICONTROL Cloud Manager] UI を使用してプログラムをセットアップし、1 つ以上の環境を用意したら、次の手順に従って本番パイプラインを追加する準備が整います。
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) でCloud Managerにログインし、必要な組織を選択します。
 
->[!TIP]
->
->フロントエンドパイプラインを設定する前に、[AEM クイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md)を参照して、使いやすい AEM クイックサイト作成ツールのエンドツーエンドのガイドを確認してください。このジャーニーを活用すると、AEM サイトのフロントエンド開発を効率化できるだけでなく、AEM のバックエンドに関する知識がなくても、サイトをすばやくカスタマイズすることができます。
+1. **マイプログラム** ページで、必要なプログラムを選択します。
 
-**新しいEdge Delivery パイプラインを追加するには：**
+   ![Cloud Managerのマイプログラムページ ](/help/implementing/cloud-manager/configuring-pipelines/assets/my-programs.png)
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
+1. 次のいずれかの操作を行います。
 
-1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
+   * **パイプライン カードからのEdge Delivery パイプラインの追加**
 
-1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動し、「**追加**」をクリックして「**実稼動パイプラインを追加**」を選択します。
+      1. 左側のパネルの **プログラム** で、「概要アイコン **![](/help/implementing/cloud-manager/configuring-pipelines/assets/overview.svg) [ 概要](/help/implementing/cloud-manager/navigation.md#my-programs)** をクリックします。
+      1. **プログラムの概要** ページの **パイプライン** カードの下の「**![プラス記号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) 追加**」をクリックし、「**Edge Delivery パイプラインを追加**」を選択します。
 
-   ![プログラムの概要ページのパイプラインカード](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
+         ![ プログラムの概要ページのパイプライン カード ](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinescard-add-ed-pipeline.png)
 
-1. **実稼動パイプラインを追加**&#x200B;ダイアログボックスが表示されます。パイプラインを識別するための「**パイプライン名**」のほか、以下のオプションを指定します。「**続行**」をクリックします。
+   * **パイプライン ページからのEdge Delivery パイプラインの追加**
 
-   **デプロイメントトリガー** - パイプラインを開始するデプロイメントトリガーを定義する際には、次のオプションがあります。
+      1. 左側のパネルの **プログラム** で、**![ワークフローアイコンまたはパイプラインアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) パイプライン** をクリックします。
+      1. パイプライン ページで、右上隅付近の **パイプラインを追加**/**Edge Delivery パイプラインを追加** をクリックします。
 
-   * **手動** - パイプラインを手動で開始します。
-   * **Git の変更時** - 設定された Git 分岐にコミットが追加されるたびに CI/CD パイプラインを開始します。このオプションを使用すると、必要に応じてパイプラインを手動で開始できます。
+         ![ 「パイプラインを追加」ボタンを含んだパイプラインページ ](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinespage-add-ed-pipeline.png)
 
-   **重要な指標のエラー動作** - パイプラインの設定または編集中に、**デプロイメントマネージャー**&#x200B;には、品質ゲートのいずれかで重要なエラーが発生した場合のパイプラインの動作を定義するオプションがあります。使用できるオプションは以下のとおりです。
+1. **Edge Delivery パイプラインを追加** ダイアログボックスで、「**パイプライン名**」テキストフィールドにわかりやすいパイプラインラベルを入力します。
 
-   * **毎回確認する** - デフォルトの設定。重要なエラーが検出された場合は手動で介入する必要があります。
-   * **直ちに失敗** - 重要なエラーが検出されると、パイプラインがキャンセルされます。このプロセスでは、基本的に、ユーザーが各エラーを手動で拒否する状況をエミュレートします。
-   * **直ちに続行** - 重要なエラーが検出されても、パイプラインが自動的に続行されます。このプロセスでは、基本的に、ユーザーが各エラーを手動で承認する状況をエミュレートします。
+   ![Edge Delivery パイプラインを追加ダイアログボックス ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-configuration.png)
 
-   ![本番パイプライン設定](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
+1. 必要なパイプライン **デプロイメントトリガー** オプションを選択します。
 
-1. 「**ソースコード**」タブでは、パイプラインで処理するコードのタイプを選択します。
+   * **手動** - デプロイメントを開始します。
+   * **Git の変更時** - Git コミットによってデプロイメントが自動的に開始されます。 このオプションを使用すると、必要に応じてパイプラインを手動で開始できます。
 
-   * **[フルスタックコードパイプラインの設定](#full-stack-code)**
-   * **[ターゲットデプロイメントパイプラインの設定](#targeted-deployment)**
+1. 「**続行**」をクリックします。
 
-このタイプのパイプラインについて詳しくは、[CI／CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)を参照してください。
+1. 「**Source コード**」で、次のオプションを設定します。
 
-実稼動パイプラインを作成する手順は、選択したソースコードのタイプによって異なります。上記のリンクをたどって、このドキュメントの次の節に移動し、パイプラインの設定を完了します。
+   * **デプロイメント環境** - ターゲット環境フィールドを表示します。読み取り専用のままです。
 
+   * **リポジトリー** - ドロップダウンリストを使用して、Edge Delivery設定を格納する正確な Git リポジトリーをパイプラインで指定します。
+
+     Cloud Managerでリポジトリを追加および管理する方法については、[ リポジトリの追加と管理 ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) も参照してください。
+
+   * **Git ブランチ** - ドロップダウンリストを使用して、選択したリポジトリ内の特定のブランチを選択します。 必要に応じて、![ アイコンまたは更新アイコンをリサイクル ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) をクリックして、最近のプッシュ後に Git ブランチのドロップダウンリストをリロードします
+   * **コードの場所** - パイプライン対応コードが開始するリポジトリ内のフォルダーパスを定義します（`/` はリポジトリルートと同じ）。
+
+   ![設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-sourcecode.png)
+
+1. 「**保存**」をクリックします。
+
+[ プログラムの概要 ](managing-pipelines.md) ページの **パイプライン** カードまたは **パイプライン** ページから **パイプライン** 管理できるようになりました。

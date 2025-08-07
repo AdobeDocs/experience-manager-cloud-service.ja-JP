@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 51993fe0eabb1e96931e6d64757e165b1b0d0ea9
+source-git-commit: 56c51ea764cc59687766e7f8b069b083e0677af8
 workflow-type: tm+mt
-source-wordcount: '6591'
+source-wordcount: '6609'
 ht-degree: 98%
 
 ---
@@ -128,6 +128,7 @@ ht-degree: 98%
    + Cloud Manager のリリースノート {#cloud-manager}
       + [現在](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
+         + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
          + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
          + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
          + [2025.4.0](/help/implementing/cloud-manager/release-notes/2025/2025-4-0.md)
@@ -1280,6 +1281,7 @@ ht-degree: 98%
          + [CI-CD パイプラインの概要](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [Edge Delivery パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
          + [パイプラインの管理](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [パイプライン変数](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md)
@@ -1303,6 +1305,7 @@ ht-degree: 98%
          + [Cloud Manager の Edge Delivery Services の概要](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Cloud Manager への Edge Delivery サイトの追加](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [最初の Edge Delivery サイトをワンクリックで作成](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+         + [外部 Git リポジトリを使用するためのEdge Delivery サイトの設定](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)
          + [Edge Delivery サイト用のプッシュ検証の設定](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [コンテンツのソースの設定](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
          + [Cloud Manager での Edge Delivery サイトの管理](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)

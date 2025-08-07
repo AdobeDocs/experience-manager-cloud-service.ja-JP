@@ -3,27 +3,28 @@ title: Cloud Manager での外部リポジトリの追加
 description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise、GitLab、Bitbucket、 Azure DevOps リポジトリとの統合をサポートしています。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: b4bbf73cd49f6d7beb47d2edce0910d957879e39
-workflow-type: ht
-source-wordcount: '2322'
-ht-degree: 100%
+source-git-commit: 19fd6713e083826bd9aa621d86805bcd55a6743a
+workflow-type: tm+mt
+source-wordcount: '2321'
+ht-degree: 97%
 
 ---
 
 # Cloud Manager での外部リポジトリの追加 {#external-repositories}
 
+<!-- badge: label="Beta - Azure DevOps only" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" -->
+
 Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise、GitLab、Bitbucket リポジトリとの統合をサポートしています。
 
-また、Azure DevOps Git リポジトリを Cloud Manager にオンボードできるようになりました。これは、最新の Azure DevOps リポジトリとレガシー VSTS（Visual Studio Team Services）リポジトリの両方に対応しています。
+お客様は、最新の Azure DevOps リポジトリと従来の VSTS （Visual Studio Team Services）リポジトリの両方をサポートすることで、Azure DevOps （Beta） Git リポジトリをCloud Managerにオンボーディングできるようになりました。
 
 * Edge Delivery Services のユーザーは、オンボードされたリポジトリを使用して、サイトコードを同期およびデプロイできます。
 * AEM as a Cloud Service および Adobe Managed Services（AMS）のユーザーは、リポジトリをフルスタックパイプラインとフロントエンドパイプラインの両方にリンクできます。
 
 >[!NOTE]
 >
->この記事で説明する機能は、Private Beta プログラムを通じてのみ使用できます。詳細と Private Beta の新規登録については、[独自の Git の導入](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)を参照してください。
+>この記事で説明されている Azure DevOps のサポートの追加は、プライベートベータ版プログラムを通じてのみ利用できます。 詳細およびベータ版登録方法については、[ 独自の Git の公開 ](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts) を参照してください。
 
 
 ## 外部リポジトリの設定
@@ -120,7 +121,7 @@ Cloud Manager での外部リポジトリの設定は、次の手順で構成さ
 
 [アクセストークンの管理](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)も参照してください。
 
->[!TAB Azure DevOps]
+>[!TAB Azure DevOps （Beta） ]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
@@ -238,7 +239,7 @@ URL をプレーンテキストファイルにペーストします。コピー�
 | --- |
 | これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト：作成済み<li>プルリクエスト：更新済み<li>プルリクエスト：結合済み<li>プルリクエスト：コメント<li>リポジトリ：プッシュ</li></li></li></ul></ul></ul> |
 
->[!TAB Azure DevOps]
+>[!TAB Azure DevOps （Beta） ]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
