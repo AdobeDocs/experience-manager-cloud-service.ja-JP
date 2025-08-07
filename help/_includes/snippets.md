@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
-workflow-type: ht
-source-wordcount: '1637'
-ht-degree: 100%
+source-git-commit: deffd60c1a77bdfb0dbf939632d4384c74316148
+workflow-type: tm+mt
+source-wordcount: '1622'
+ht-degree: 98%
 
 ---
 # スニペット {#snippets}
@@ -111,10 +111,9 @@ ht-degree: 100%
    </td>
    </tr>
    <tr>
-    <td>ES2022 サポート </td>
-    <td>ES2022 はまだサポートされていません。サポートは、ES5 JavaScript 機能に制限されています。 </td>
-    <td>最新の JavaScript 機能（let 関数やアロー関数など、ES2022 まで）は、カスタム関数でサポートされています。 
-   </td>
+    <td>ECMAScript バージョンのサポート</td>
+    <td>ES5 JavaScript機能のみをサポートします。</td>
+    <td>カスタム関数内の最新のJavaScript機能（<code>let</code>、矢印関数など）をサポートします。</td>
    </tr>
    </tr>
    <tr>
@@ -222,7 +221,7 @@ ht-degree: 100%
 
 **サポートチケットをログに記録するには：**
 
-1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/ja?support-tab=home#support)チケットを作成します。
+1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/?support-tab=home#support)チケットを作成します。
 1. チケットのタイトルに「**Edge Delivery**」を追加します。
 1. 説明では、問題の説明に加えて、次の詳細を入力します。
 

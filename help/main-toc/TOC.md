@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 0a0a50a13122b328782e5395b759121acc76cfb6
 workflow-type: tm+mt
-source-wordcount: '6563'
+source-wordcount: '6566'
 ht-degree: 99%
 
 ---
@@ -841,6 +841,7 @@ ht-degree: 99%
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターの例](/help/forms/rule-editor-core-components-usecases.md)
                + [アダプティブフォームでの非同期関数の使用](/help/forms/using-async-funct-in-rule-editor.md)
                + [コアコンポーネントに基づくフォーム用のビジュアルルールエディターの呼び出しサービスの機能強化](/help/forms/invoke-service-enhancements-rule-editor.md)
+               + [ルールエディターの機能強化](/help/forms/rule-editor-enhancements-use-cases.md)
             + コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要{#create-and-use-custom-function-core-component}
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要](/help/forms/create-and-use-custom-functions.md)
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成と使用](/help/forms/custom-function-core-component-create-function.md)
