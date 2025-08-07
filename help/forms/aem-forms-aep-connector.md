@@ -193,7 +193,7 @@ AEM FormsでAEP コネクタを設定する前に、Adobe Experience Platformで
      >* ユニバーサルエディターインターフェイスに「データソース」アイコンが表示されない場合、または右側のプロパティパネルに「バインド参照」プロパティが表示されない場合は、Extension Managerで **データソース** 拡張機能を有効にします。
      >* ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Managerで **フォームプロパティを編集** 拡張機能を有効にします。
      > 
-     > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト } の記事を参照してください。
+     > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
 
    ユニバーサルエディターのフォームの事前入力サービスは、現在サポートされていません。
 
