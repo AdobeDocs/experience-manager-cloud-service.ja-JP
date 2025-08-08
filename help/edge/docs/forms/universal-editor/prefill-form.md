@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: アダプティブフォームの事前入力、アダプティブフォームエッジ配信サービス、アダプティブフォームの自動入力
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 4%
@@ -142,7 +142,7 @@ ht-degree: 4%
 
        >[！注意 ]
        >
-       > FDM サービスの設定について詳しくは、[ フォームデータモデル（FDM）の操作 ](/help/forms/work-with-form-data-model.md) を参照してください。
+   > FDM サービスの設定について詳しくは、[ フォームデータモデル（FDM）の操作 ](/help/forms/work-with-form-data-model.md) を参照してください。
 
 +++
 
@@ -267,21 +267,21 @@ FDM のフォーム要素は、**コンテンツブラウザー** の **デー�
 
     &quot;&#39;
     
-    &lbrace;
-    &quot;afBoundData&quot;: &lbrace;
-    &quot;user&quot;: &lbrace;
+    {
+    &quot;afBoundData&quot;: {
+    &quot;user&quot;: {
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
-    &rbrace;
-    &rbrace;,
-    &quot;afUnBoundData&quot;: &lbrace;
+    }
+    },
+    &quot;afUnBoundData&quot;: {
     &quot;additionalInfo&quot;: &quot;User preferences loaded&quot;
-    &rbrace;
-    &rbrace;
+    }
+    }
     
-    &rbrace;&quot;&#39;
+    }&quot;&#39;
 
 **XFA ベースのフォームの XML の例：**
 
@@ -432,7 +432,7 @@ FDM のフォーム要素は、**コンテンツブラウザー** の **デー�
 
 +++
 
-
+=
 ## 関連トピック
 
 - [ユニバーサルエディターでのフォームとフォームデータモデルの統合](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)

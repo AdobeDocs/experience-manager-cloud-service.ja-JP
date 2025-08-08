@@ -4,7 +4,7 @@ description: ユーザーにお礼のメッセージを表示したり、フォ�
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 958891216e117acc03c50446ae92f85108d275a7
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 52%
@@ -28,7 +28,7 @@ ht-degree: 52%
 >[!NOTE]
 >
 > * ユニバーサルエディターインターフェイスに「**フォームプロパティ**」アイコンが表示されない場合は、Extension Managerで「**フォームプロパティを編集**」拡張機能を有効にします。
-> * ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
+> * ユニバーサルエディターで拡張機能を有効または無効にする方法については [](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト } の記事を参照してください。
 
 ## リダイレクトまたは「ありがとうございます」メッセージの設定方法
 
@@ -56,5 +56,3 @@ ht-degree: 52%
 ![ 感謝祭 ](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 フォーム作成者は、フォーム送信後にユーザーがリダイレクトされるページを各フォームに設定することができます。
-
-
