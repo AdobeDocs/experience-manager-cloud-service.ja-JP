@@ -1,13 +1,13 @@
 ---
 title: AEMでのデジタルアセット管理のためのAssets as a Cloud Serviceの概要
 description: AEMでのデジタルアセット管理のためのAssets as a Cloud Serviceの概要
-source-git-commit: 707c2125b3a5401cd5b0ebe19f3bc9c46302b697
+exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
+source-git-commit: c3a528d7e903b43f6b9a18b2426a04638b086d38
 workflow-type: tm+mt
 source-wordcount: '5032'
 ht-degree: 38%
 
 ---
-
 
 # AEMでのデジタルアセット管理のためのAssets as a Cloud Serviceの概要 {#assets-as-cloud-service-digital-asset-management-aem}
 
@@ -57,11 +57,11 @@ Adobe Experience Manager では、Web ブラウザーユーザーインターフ
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-desktop-app/using/using">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
    <img alt="AEM デスクトップアプリケーションの使用" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-desktop-app/using/using">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
       <strong>AEM デスクトップアプリケーションの使用 </strong>
       </a>
    </div>
@@ -267,11 +267,11 @@ AEM Assetsには、AI 生成のタグ付け（スマートタグ）、カスタ�
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ja">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="メタデータ管理のベストプラクティス" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ja">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong> メタデータ管理のベストプラクティス </strong>
       </a>
    </div>
@@ -583,11 +583,11 @@ AEM Assetsは、様々なAdobe アプリケーションやAdobe以外のアプ�
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/combine/assets">
+   <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
    <img alt="Adobe Journey Optimizer との統合" src="./assets/integration-figma.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/combine/assets">
+      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
       <strong>Adobe Journey Optimizerとの統合 </strong>
       </a>
    </div>
@@ -596,11 +596,11 @@ AEM Assetsは、様々なAdobe アプリケーションやAdobe以外のアプ�
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+   <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
    <img alt="Commerceとの統合" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
       <strong>Commerceとの統合 </strong>
       </a>
    </div>
@@ -906,5 +906,3 @@ OpenAPI 機能を備えた Dynamic Media には、次のような主なメリッ
 DAM ライブラリ担当者、開発者およびスーパーユーザーは、必要に応じて、引き続き管理ビューを使用したり、ユーザーインターフェイスを切り替えたりできます。自分の役割に最適なエクスペリエンスを選択できます。
 
 アセットビューへのアクセス方法および管理ビューで提供される簡略化について詳しくは、[アセットビューの概要](/help/assets/assets-view-introduction.md)を参照してください。
-
-
