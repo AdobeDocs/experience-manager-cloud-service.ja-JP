@@ -251,7 +251,7 @@ FDM のフォーム要素は、**コンテンツブラウザー** の **デー�
 3. **HTMLとしてプレビュー** を選択します。
 4. URL にパラメーターを追加して事前入力をテストします。
 
-   https://your-preview-url.com?<bindreferencefield>=<value>
+   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
 
    **例：**
 
@@ -271,21 +271,21 @@ FDM のフォーム要素は、**コンテンツブラウザー** の **デー�
 
     &quot;&#39;
     
-    {
-    &quot;afBoundData&quot;: {
-    &quot;user&quot;: {
+    &lbrace;
+    &quot;afBoundData&quot;: &lbrace;
+    &quot;user&quot;: &lbrace;
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
-    }
-    },
-    &quot;afUnBoundData&quot;: {
+    &rbrace;
+    &rbrace;,
+    &quot;afUnBoundData&quot;: &lbrace;
     &quot;additionalInfo&quot;: &quot;User preferences loaded&quot;
-    }
-    }
+    &rbrace;
+    &rbrace;
     
-    }&quot;&#39;
+    &rbrace;&quot;&#39;
 
 **XFA ベースのフォームの XML の例：**
 
