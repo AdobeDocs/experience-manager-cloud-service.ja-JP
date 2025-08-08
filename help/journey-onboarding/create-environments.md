@@ -93,7 +93,7 @@ ht-degree: 63%
 オンボーディングジャーニーのコンテンツの範囲を超えた情報について詳しくは、次の追加のオプションリソースを参照してください。
 
 * [環境の管理](/help/implementing/cloud-manager/manage-environments.md) - 作成できる環境のタイプと、Cloud Manager プロジェクト用に環境を作成する方法について説明します。
-* [Adobe Cloud Manager の使用 - 環境](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/environments) - Cloud Manager 環境は、AEM オーサリング、パブリッシング、および Dispatcher の各サービスで構成されています。様々な環境がどのように役割をサポートし、様々な CI/CD パイプラインを使用して関与できるかについて説明します。
+* [Adobe Cloud Manager の使用 - 環境](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/cloud-manager/environments) - Cloud Manager 環境は、AEM オーサリング、パブリッシング、および Dispatcher の各サービスで構成されています。様々な環境がどのように役割をサポートし、様々な CI/CD パイプラインを使用して関与できるかについて説明します。
 * [迅速な開発環境](/help/implementing/developing/introduction/rapid-development-environments.md) - RDE の使用方法の詳細については、このドキュメントを参照してください。
 <!-- ERROR: Not Found (HTTP error 404) FIND AN ALTERNATE RESOURCE? * [AEM Champion Tips and Tricks - Cloud Manager Environment Types](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - Watch this video for an overview of Cloud Manager environment types from an AEM champion. -->
 
