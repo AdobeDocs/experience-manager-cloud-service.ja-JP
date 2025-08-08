@@ -142,7 +142,7 @@ ht-degree: 4%
 
        >[！注意 ]
        >
-   > FDM サービスの設定について詳しくは、[ フォームデータモデル（FDM）の操作 ](/help/forms/work-with-form-data-model.md) を参照してください。
+       > FDM サービスの設定について詳しくは、[ フォームデータモデル（FDM）の操作 ](/help/forms/work-with-form-data-model.md) を参照してください。
 
 +++
 
@@ -267,21 +267,21 @@ FDM のフォーム要素は、**コンテンツブラウザー** の **デー�
 
     &quot;&#39;
     
-    {
-    &quot;afBoundData&quot;: {
-    &quot;user&quot;: {
+    &lbrace;
+    &quot;afBoundData&quot;: &lbrace;
+    &quot;user&quot;: &lbrace;
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
-    }
-    },
-    &quot;afUnBoundData&quot;: {
+    &rbrace;
+    &rbrace;,
+    &quot;afUnBoundData&quot;: &lbrace;
     &quot;additionalInfo&quot;: &quot;User preferences loaded&quot;
-    }
-    }
+    &rbrace;
+    &rbrace;
     
-    }&quot;&#39;
+    &rbrace;&quot;&#39;
 
 **XFA ベースのフォームの XML の例：**
 
@@ -433,6 +433,7 @@ FDM のフォーム要素は、**コンテンツブラウザー** の **デー�
 +++
 
 =
+
 ## 関連トピック
 
 - [ユニバーサルエディターでのフォームとフォームデータモデルの統合](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
