@@ -1,27 +1,26 @@
 ---
-Title: How to send an email on submission of an Adaptive Form?
-Description: Explore the process to set up email notifications when submitting an Adaptive Form.
+description: アダプティブフォームの送信時にメール通知を設定するプロセスを調べます。
 keywords: アダプティブフォーム用のメールの送信方法、メール送信アクション、アダプティブフォームメール、フォーム送信メール、メールの送信ガイド
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 title: アダプティブフォームの送信アクションの設定方法
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 87%
+source-wordcount: '851'
+ht-degree: 84%
 
 ---
 
 # アダプティブフォームのメール送信アクションの送信を設定する
 
-「**[!UICONTROL メールを送信]**」送信アクションでは、フォームの送信が完了すると同時に、1 人または複数の受信者にメールを送信できます。この送信アクションを使用すると、事前に定義された形式のフォームデータを含むメールを作成できます。例えば、次のテンプレートで、送信されたフォームデータから顧客名、配送先住所、都道府県名、郵便番号が取得されるとします。
+「**[!UICONTROL メールを送信]**」送信アクションでは、フォームの送信が完了すると同時に、1 人または複数の受信者にメールを送信できます。この送信アクションを使用すると、事前に定義された形式のフォームデータを含むメールを作成できます。例えば、次のテンプレートで、送信されたフォームデータから顧客名、発送先住所、都道府県名、郵便番号が取得されるとします。
 
 
     ```
     こんにちは ${customer_Name} さん、
     
-    以下がデフォルトの配送先住所として設定されています。
+    以下がデフォルトの発送先住所として設定されています。
     ${customer_Name}、
     ${customer_Shipping_Address}、
     ${customer_State}、
@@ -91,7 +90,7 @@ ht-degree: 87%
    >[!NOTE]
    >
    > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Managerで **フォームプロパティを編集** 拡張機能を有効にします。
-   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
+   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト } の記事を参照してください。
 
 
 1. 「**送信**」タブをクリックし、「**[!UICONTROL メールを送信]**」送信アクションを選択します。

@@ -1,15 +1,14 @@
 ---
-Title: How to connect AEM Adaptive Forms with Azure Blob Storage?
-Description: Learn how to create an Azure Blob Storage Configuration in AEM Forms and use it within your Adaptive Forms for efficient data storage.
+description: AEM Formsで Azure Blob Storage 設定を作成し、アダプティブForms内で使用して、効率的なデータストレージを実現する方法について説明します。
 keywords: AEM Forms との Azure Blob Storage の統合、Azure ストレージへのデータの送信、AEM Forms での Azure ストレージ設定の作成、アダプティブフォーム送信アクションでの Azure Blob Storage の使用
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 exl-id: 0c9f8f85-c4e9-4c79-bd0b-abdcac99a2d4
 title: アダプティブフォームの送信アクションの設定方法
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 68%
+source-wordcount: '828'
+ht-degree: 66%
 
 ---
 
@@ -52,8 +51,8 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
     >[!NOTE]
     >
     > The URL for **[!UICONTROL Azure Blob Endpoint]** is automatically appended to the textbox when a value is entered for **[!UICONTROL Azure Storage Account]**. You can update the Azure Blob End Point URL with your custom domain. Steps to update URL for **[!UICONTROL Azure Blob End Point]**:
-    > 1. [Enable the AEM Advance Networking VPN support](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=ja)
-    > 1. [Enable dedicated egress IP link](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=ja)
+    > 1. [Enable the AEM Advance Networking VPN support](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
+    > 1. [Enable dedicated egress IP link](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
     > 1. [Map custom domain to azure blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name?tabs=azure-portal)
 -->
 
@@ -119,7 +118,7 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
    >[!NOTE]
    >
    > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Managerで **フォームプロパティを編集** 拡張機能を有効にします。
-   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
+   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト } の記事を参照してください。
 
 1. 「**送信**」タブをクリックし、「**[!UICONTROL Azure Blob Storage に送信]**」送信アクションを選択します。
    ![Azure Blob Storage](/help/forms/assets/azure-blob-storage-ue.png)

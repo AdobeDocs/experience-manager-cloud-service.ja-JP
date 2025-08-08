@@ -1,13 +1,13 @@
 ---
-Title: How to integrate Adaptive Form to a SharePoint Document Library?
+title: アダプティブフォームをSharePoint ドキュメントライブラリに統合する方法
 Description: This article explains how to send data from your Adaptive Form to a SharePoint  Document library when you submit the form.
 keywords: アダプティブフォーム用にSharePoint ドキュメントライブラリを接続する方法、SharePointに送信する方法、SharePoint ドキュメントライブラリ設定を作成する方法、アダプティブフォームで「SharePointに送信」送信アクションを使用する方法、AEM Forms データモデル SharePoint ドキュメントライブラリ、Forms データモデル SharePoint ドキュメントライブラリ、Forms データモデルをSharePoint ドキュメントライブラリに統合する方法
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '991'
 ht-degree: 62%
 
 ---
@@ -116,7 +116,7 @@ AEM Forms を Microsoft® Sharepoint ドキュメントライブラリストレ�
    >[!NOTE]
    >
    > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Managerで **フォームプロパティを編集** 拡張機能を有効にします。
-   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
+   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト } の記事を参照してください。
 
 1. 「**送信**」タブをクリックし、「**[!UICONTROL SharePointに送信]**」送信アクションを選択します。
    ![SharePoint GIF](/help/forms/assets/submit-to-sharepoint-ue.png)

@@ -1,13 +1,13 @@
 ---
-Title: How to integrate Marketo Engage with AEM Forms using Form wizard?
-Description: Learn how to integrate your Marketo Engage instance with AEM Forms using form wizard.
-Keywords: How to connect a Marketo instance with form? , Connect a form to Marketo, Integrate a form with Marketo Engage, Integrate an Adaptive Form with a Marketo instance.
-Feature: Adaptive Forms, Form Data Model
-Role: User, Developer
+title: フォームウィザードを使用してMarketo EngageをAEM Formsと統合する方法
+description: フォームウィザードを使用してMarketo Engage インスタンスをAEM Formsと統合する方法について説明します。
+keywords: Marketo インスタンスとフォームの接続方法、フォームをMarketoに接続、フォームをMarketo Engageと統合、アダプティブフォームをMarketo インスタンスと統合します。
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1081'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 ![ワークフロー](/help/forms/assets/workflow-marketo-4.png)
 
-Marketo EngageをAEM Formsと統合するためのクラウドサービス設定を作成したら、[Adobe Marketo Engage](https://experienceleague.adobe.com/ja/docs/marketo/using/home) と統合するようにアダプティブフォームを設定できます。
+Marketo EngageをAEM Formsと統合するためのクラウドサービス設定を作成したら、[Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) と統合するようにアダプティブフォームを設定できます。
 
 フォームウィザードを使用してMarketo Engageをアダプティブフォームに接続できます。これにより、各手順をガイドして設定プロセスを簡単にできます。 テンプレート、スタイル、データフィールドの選択や、作成したフォームがMarketo Engageと通信できるようにデータマッピングの設定を行います。 フォームウィザードを使用して、送信時にAdobe Marketo Engageに直接データを送信するようにアダプティブフォームを設定することもできます。
 
@@ -180,7 +180,7 @@ Marketo Engageを forms に接続するための前提条件：
 
 ## 次の手順
 
-また、アダプティブフォームを [Munchkin ライブラリ ](https://experienceleague.adobe.com/ja/docs/marketo/using/product-docs/administration/setup/munchkin) に接続して、訪問数、クリック数、フォーム送信数をトラッキングすることもできます。
+また、アダプティブフォームを [Munchkin ライブラリ ](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) に接続して、訪問数、クリック数、フォーム送信数をトラッキングすることもできます。
 
 ## 関連記事
 

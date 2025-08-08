@@ -1,15 +1,14 @@
 ---
-Title: How to send data to a SharePoint List storage on submission of an Adaptive Form?
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list when you submit the form.
 keywords: アダプティブフォームでSharePoint リストを接続する方法、SharePointに送信する方法、SharePoint リスト設定を作成する方法、アダプティブフォームで「SharePointに送信」送信アクションを使用する方法、アダプティブフォームをMicrosoft&reg; SharePoint リストに接続する方法を説明します。
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 title: アダプティブフォームの送信アクションの設定方法
 role: User, Developer
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 83%
+source-wordcount: '470'
+ht-degree: 81%
 
 ---
 

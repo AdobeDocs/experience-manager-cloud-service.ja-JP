@@ -1,18 +1,18 @@
 ---
-Title: How to configure a SharePoint Site with limited access using authorization scope?
-Description: Learn how to configure SharePoint Site with limited access using the authorization scope.
+title: 認証範囲を使用して制限付きアクセスでSharePoint サイトを設定する方法
+description: 認証範囲を使用して、制限付きアクセスでSharePoint サイトを設定する方法を説明します。
 keywords: 制限付きアクセスを使用するSharePoint サイトの設定方法、制限付きアクセスを使用するSharePointの設定方法、SharePoint サイトのアクセスを制限する認証範囲の使用方法を説明します。
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 25%
+source-wordcount: '842'
+ht-degree: 24%
 
 ---
 
-
-<span class="preview"> この機能は、早期導入プログラムで利用できます。 早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
+<span class="preview"> この機能は、早期導入プログラムで利用できます。 早期導入プログラムに登録し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
 
 # 認証範囲を使用した制限付きアクセスでの SharePoint サイトの設定
 
@@ -41,11 +41,11 @@ SharePoint サイトへの限定的なアクセスを提供するメリット：
 
 ### Azure portal で、制限付き権限のアプリケーションを作成します
 
-Microsoft Graph API の `Sites.Selected` 権限範囲を使用して [&#128279;](https://portal.azure.com/#home)0&rbrace;Microsoft Azure Portal&rbrace; でアプリケーションを作成します。
+Microsoft Graph API の [ 権限範囲を使用して ](https://portal.azure.com/#home)0}Microsoft Azure Portal} でアプリケーションを作成します。`Sites.Selected`
 
 ![SharePointが選択したサイト ](/help/forms/assets/sharepoint-selected-site.png)
 
-`OAuth URL` の `Client ID`、`Client Secret` および `Tenant ID` を取得する方法については、[Microsoft® のドキュメント ](https://learn.microsoft.com/en-us/graph/auth-register-app-v2) を参照してください。
+`Client ID` の `Client Secret`、`Tenant ID` および `OAuth URL` を取得する方法については、[Microsoft® のドキュメント ](https://learn.microsoft.com/ja-jp/graph/auth-register-app-v2) を参照してください。
 * Microsoft® Azure Portal で、リダイレクト URI を `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html` として追加します。`[author-instance]` をオーサーインスタンスの URL に置き換えます。
 * Microsoft Graph API で `offline_access` と `Sites.Selected` の権限範囲を追加し、Sites への制限付きアクセスを提供します。
 * OAuth URL の場合：`https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`。 `<tenant-id>` を Microsoft® Azure Portal のアプリの `tenant-id` に置き換えます。
@@ -65,7 +65,7 @@ Microsoft SharePoint サイトへの制限付きアクセスを提供するに�
 
    ![SharePoint サイトの制限付きサイト アクセス ](/help/forms/assets/sharepoint-doc-library-limited-scopes.png)
 
-1. **[!UICONTROL タイトル]**、**[!UICONTROL クライアント ID]** および **[!UICONTROL クライアントシークレット]** を指定します。 クライアント ID とクライアント秘密鍵の取得方法については、[Microsoft® のドキュメント ](https://learn.microsoft.com/en-us/graph/auth-register-app-v2) を参照してください。
+1. **[!UICONTROL タイトル]**、**[!UICONTROL クライアント ID]** および **[!UICONTROL クライアントシークレット]** を指定します。 クライアント ID とクライアント秘密鍵の取得方法については、[Microsoft® のドキュメント ](https://learn.microsoft.com/ja-jp/graph/auth-register-app-v2) を参照してください。
 
 1. OAuth URL を `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize` として使用します。 `<tenant-id>` を Microsoft® Azure Portal のアプリの `tenant-id` に置き換えます。
 
@@ -73,7 +73,7 @@ Microsoft SharePoint サイトへの制限付きアクセスを提供するに�
    >
    > **クライアント秘密鍵**&#x200B;フィールドは、Azure Active Directory アプリケーションの設定に応じて、必須またはオプションになります。アプリケーションでクライアント秘密鍵を使用するように設定されている場合は、クライアントの秘密鍵を指定する必要があります。
 
-1. `Authorization Scope` フィールドに `offline_access Sites.Selected` を追加します。 `Authorization Scope` のテキストボックス フィールドに `offline_access Sites.Selected` 範囲を追加すると、`SharePoint Site ID` のテキストボックスが画面に表示されます。
+1. `offline_access Sites.Selected` フィールドに `Authorization Scope` を追加します。 `offline_access Sites.Selected` のテキストボックス フィールドに `Authorization Scope` 範囲を追加すると、`SharePoint Site ID` のテキストボックスが画面に表示されます。
 
 1. SharePoint サイト ID を指定します。 SharePoint サイト ID を取得する方法については、[ 追加バイト ](#extra-bytes) の節を参照してください。
 

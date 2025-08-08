@@ -1,13 +1,13 @@
 ---
-title: リダイレクトページまたはお礼のメッセージの設定方法？
+title: リダイレクトページまたはありがとうメッセージの設定方法
 description: ユーザーにお礼のメッセージを表示したり、フォーム作成者がフォームの作成時に設定できる web ページにリダイレクトしたりする方法について説明します。
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
 source-wordcount: '390'
-ht-degree: 52%
+ht-degree: 50%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 52%
 >[!NOTE]
 >
 >* ユニバーサルエディターインターフェイスに「**フォームプロパティ**」アイコンが表示されない場合は、Extension Managerで「**フォームプロパティを編集**」拡張機能を有効にします。
->* ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
+>* ユニバーサルエディターで拡張機能を有効または無効にする方法については [](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト } の記事を参照してください。
 
 ## リダイレクトまたは「ありがとうございます」メッセージの設定方法
 

@@ -1,14 +1,14 @@
 ---
-Title: How to Integrate Marketo Engage with AEM Forms?
-Description: Learn how to integrate your Marketo Engage instance with AEM Forms.
-Keywords: How to connect a Marketo instance with form? , Connect a form to Marketo, Integrate a form with Marketo Engage, Integrate an Adaptive Form with a Marketo instance.
-Feature: Adaptive Forms, Form Data Model
-Role: User, Developer
+title: Marketo EngageとAEM Formsを統合する方法
+description: Marketo Engage インスタンスをAEM Formsと統合する方法について説明します。
+keywords: Marketo インスタンスとフォームの接続方法、フォームをMarketoに接続、フォームをMarketo Engageと統合、アダプティブフォームをMarketo インスタンスと統合します。
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 74cd25f9-1ee1-4f3f-8e02-8714071e7c86
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 7%
+source-wordcount: '794'
+ht-degree: 6%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 7%
 
 <span class="preview">機能は、早期導入プログラムで利用できます。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID で aem-forms-ea@adobe.com までメールを送信してください。</span>
 
-AEM Formsと [Adobe Marketo Engage](https://experienceleague.adobe.com/ja/docs/marketo/using/home) の統合により、Marketo Engageの機能を活用して、キャプチャされたデータからビジネスロジックを作成し、スマートキャンペーンやメールの自動処理などのワークフローを自動化できます。 設定されたフォームは、キャプチャされたデータをMarketo Engageに送信して処理できます。
+AEM Formsと [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) の統合により、Marketo Engageの機能を活用して、キャプチャされたデータからビジネスロジックを作成し、スマートキャンペーンやメールの自動処理などのワークフローを自動化できます。 設定されたフォームは、キャプチャされたデータをMarketo Engageに送信して処理できます。
 
 ## Marketo Engageと Forms を統合するメリット
 
@@ -52,7 +52,7 @@ AEM フォームをAdobe Marketo Engageに接続する利点は次のとおり�
 Marketo EngageとAEM Formsの統合に関する考慮事項
 
 * AEMは、様々なMarketo データベースのうち、人物（リード）データベースのみをサポートしています。
-* Marketoでは、ユーザー定義オブジェクトとして [10 個のカスタムオブジェクトの作成 ](https://experienceleague.adobe.com/ja/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields) を使用して、リードの標準フィールドを超えて専用のデータを保存し、独自のビジネスニーズをサポートできます。
+* Marketoでは、ユーザー定義オブジェクトとして [10 個のカスタムオブジェクトの作成 ](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields) を使用して、リードの標準フィールドを超えて専用のデータを保存し、独自のビジネスニーズをサポートできます。
 * AEMがカスタムオブジェクトにアクセスできるのは、リードデータベースに関連付けられている場合のみです
 
 ## Marketo Engageと Forms の統合の前提条件
@@ -60,7 +60,7 @@ Marketo EngageとAEM Formsの統合に関する考慮事項
 Marketo EngageをAEM Formsと接続するための前提条件を以下に示します。
 
 * 有効なAdobe Marketo Engage ライセンス
-* [ クライアント ID とクライアント秘密鍵を取得 ](https://experienceleague.adobe.com/ja/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api) してクラウド設定を作成するためのMarketo Engageの作業用インスタンス。
+* [ クライアント ID とクライアント秘密鍵を取得 ](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api) してクラウド設定を作成するためのMarketo Engageの作業用インスタンス。
 
 ## AEM Forms（アダプティブForms）をMarketo Engageに接続するクラウドサービス設定を作成します
 
