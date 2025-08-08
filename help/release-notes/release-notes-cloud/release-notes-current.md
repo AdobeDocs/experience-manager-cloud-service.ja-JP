@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e9aef80c162d681894cff53f65bd9f0bc7afd948
+source-git-commit: 1cb24ca4aabf3ccd12c514cc9d74ad0c1cc8e2fb
 workflow-type: tm+mt
-source-wordcount: '2235'
+source-wordcount: '2271'
 ht-degree: 50%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 50%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -68,7 +68,6 @@ AEM Assetsのアセット参照ページで、[ カード表示またはリス�
 
 また、AI で生成されたメタデータをフォルダーレベルで無効にすることも選択できるようになりました。
 
-
 ### コンテンツハブの新機能 {#new-features-content-hub}
 
 **Content Hubのブランディングの柔軟性の強化**
@@ -89,7 +88,7 @@ Content Hubのフィルターに **すべて表示** オプションが含まれ
 
 新しいファイルおよびフォルダーの自動アップロード、強化されたファイル処理、よりスマートなアセット検出、AEMとのシームレスな統合により、コンテンツ管理がより高速で明確かつ直感的に行われます。
 
-機能の完全なリストについては、[ デスクトップアプリケーションリリースノート ](https://experienceleague.adobe.com/ja/docs/experience-manager-desktop-app/using/release-notes) を参照してください。
+機能の完全なリストについては、[ デスクトップアプリケーションリリースノート ](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes) を参照してください。
 
 ### OpenAPI 機能を備えた Dynamic Media の新機能 {#new-features-dynamic-media-with-openapi}
 
@@ -181,6 +180,10 @@ API 統合ツールを使用すると、フォーム作成者は、ユーザー�
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
+### 権限管理のプリンシパルビュー {#principal-view}
+
+AEM では、ユーザーとグループに対する権限管理が導入されました。主な機能は従来の UI と同じですが、よりユーザーフレンドリーで効率的です。 詳しくは、[ 専用の記事 ](/help/security/touch-ui-principal-view.md) を参照してください。
+
 ### 更新された非推奨プロセス {#updated-deprecation-process}
 
 Adobe は、パフォーマンス、セキュリティ、価値に関する標準を満たすように、機能、ライブラリ、API および設定を定期的に見直しています。機能がこれらの標準を満たさなくなった場合は廃止とマークされ、指定した削除日までに使用が停止されます。この日付までに、新しいビルドを進めたりデプロイしたりする前に、お客様にメール通知を届けたり、Cloud Managerで実行する必要があるアクションをお知らせしたりします。必要な対策を講じないと、AEM の新しいバージョンにアップグレードできなくなる可能性があり、セキュリティ、パフォーマンス、信頼性、可用性に関する影響が潜在します。
@@ -222,7 +225,7 @@ OSGi プロパティ：
 
 ### Java 11 ランタイムのデプロイメント {#java11-runtime-deprecation}
 
-**Java 11 ランタイム* – は非推奨（廃止予定）になり、ほとんどの環境は既に、よりパフォーマンスの高い &#x200B;** Java 21 ランタイム** にアップグレードされています。
+**Java 11 ランタイム* – は非推奨（廃止予定）になり、ほとんどの環境は既に、よりパフォーマンスの高い **Java 21 ランタイム** にアップグレードされています。
 
 サポートされていない依存関係が原因で環境をアップグレードできなかった場合 ([Java 21 ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)を参照) は、次の具体的な手順を記載したメールが Adobeから届いているはずです。**2025 年 8 月 28 日**&#x200B;までに必要な更新がすべて完了していることを確認してください。これにより、中断することなく環境をアップグレードできます。
 
@@ -298,7 +301,7 @@ Adobe が管理する CDN では、[設定パイプラインの記事](/help/ope
 
 アルファ版では、迅速な開発環境（RDE）が、現在のコードとコンテンツの状態をスナップショットとして取り、後で復元できる機能をサポートするようになりました。 これは、元に戻す必要があるコードを同期する場合や、異なる機能の開発を切り替える場合に役立ちます。 また、可変コンテンツのみを、既知のテスト開始点として復元することもできます。
 
-この機能に関するフィードバックを提供することに関心がある場合は、[0&rbrace;aemcs-rde-support@adobe.com&rbrace; にメールを送信してください。](mailto:aemcs-rde-support@adobe.com)
+この機能に関するフィードバックを提供することに関心がある場合は、[0}aemcs-rde-support@adobe.com} にメールを送信してください。](mailto:aemcs-rde-support@adobe.com)
 
 ### その他の宛先への AEM ログ転送 (Beta プログラム) {#log-forwarding-beta}
 
