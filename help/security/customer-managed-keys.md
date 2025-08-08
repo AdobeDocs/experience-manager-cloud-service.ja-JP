@@ -7,7 +7,7 @@ exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
 source-git-commit: 6db226bf1cd6de0e64cd07de35137ab4bd3b9b22
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ AEM as a Cloud Service を使用すると、保存データを暗号化するた
 1. アドビからのアプリケーション ID の取得
 1. 新しいリソースグループの作成
 1. Key Vault の作成
-1. Key Vault へのAdobe アクセスの許可
+1. Key Vault に対して Adobe アクセス権を付与する
 1. 暗号化キーの作成
 
 キーコンテナの URL、暗号化キー名、およびキーコンテナに関する情報をアドビと共有する必要があります。
@@ -59,21 +59,20 @@ Azure コマンドラインインターフェイス（CLI）は、このガイ�
 
 ## AEM as a Cloud Serviceの CMK 設定プロセスの開始 {#request-cmk-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service環境の顧客管理キー（CMK）設定を UI を使用してリクエストする必要があります。 これをおこなうには、AEM ホームセキュリティ UI の「**顧客管理キー** セクションに移動します。
-その後、「オンボーディングを開始 **ボタンをクリックして、オンボーディングプロセスを開始** きます。
+AEM as a Cloud Service 環境の顧客管理キー（CMK）設定を UI を使用してリクエストする必要があります。 これをおこなうには、「**顧客管理キー**」セクションで AEM ホームセキュリティ UI に移動します。その後、「**オンボーディングを開始**」ボタンをクリックして、オンボーディングプロセスを開始できます。
 
-![CMK UI を使用した web サイトのオンボーディングの開始 ](./assets/cmk/step1.png)
+![CMK UI を使用した web サイトのオンボーディングの開始](./assets/cmk/step1.png)
 
 
 ## アドビからのアプリケーション ID の取得 {#obtain-an-application-id-from-adobe}
 
-オンボーディングプロセスを開始すると、Adobeから Entra アプリケーション ID が提供されます。 このアプリケーション ID は、ガイドの残りの部分で必要であり、Adobeが Key Vault にアクセスできるようにするサービスプリンシパルの作成に使用されます。 アプリケーション ID がまだない場合は、Adobeから提供されるまで待つ必要があります。
+オンボーディングプロセスを開始すると、アドビから Entra アプリケーション ID が提供されます。このアプリケーション ID は、ガイドの残りの部分で必要であり、Adobeが Key Vault にアクセスできるようにするサービスプリンシパルの作成に使用されます。 アプリケーション ID がまだない場合は、Adobe から提供されるまで待つ必要があります。
 
-![ リクエストは処理中です。Adobeが Entra アプリケーション ID を提供するのを待ちます ](./assets/cmk/step2.png)
+![リクエストは処理中です。Adobeが Entra アプリケーション ID を提供するのを待ちます](./assets/cmk/step2.png)
 
 リクエストが完了すると、CMK UI でアプリケーション ID を確認できるようになります。
 
-![Entra Application ID はAdobeから提供されます ](./assets/cmk/step3.png)
+![Entra Application ID はAdobeから提供されます](./assets/cmk/step3.png)
 
 ## 新しいリソースグループの作成 {#create-a-new-resource-group}
 
@@ -92,7 +91,7 @@ az group create --location $location --resource-group $resourceGroup
 
 ## キーコンテナの作成 {#create-a-key-vault}
 
-暗号化キーを格納するには、キーコンテナを作成する必要があります。キーコンテナでは、パージ保護が有効になっている必要があります。他の Azure サービスからの保存データを暗号化するには、パージ保護が必要です。Adobe サービスが Key Vault にアクセスできるようにするには、公開ネットワークアクセスを有効にする必要があります。
+暗号化キーを格納するには、キーコンテナを作成する必要があります。キーコンテナでは、パージ保護が有効になっている必要があります。他の Azure サービスからの保存データを暗号化するには、パージ保護が必要です。アドビのサービスが Key Vault にアクセスできることを確認するには、パブリックネットワークアクセスも有効にする必要があります。
 
 >[!IMPORTANT]
 >パブリックネットワークアクセスを無効にしてキーコンテナを作成すると、キーの作成やローテーションなどのすべてのキーコンテナ関連の操作は、キーコンテナへのネットワークアクセス権を持つ環境（キーコンテナにアクセスできる VM など）から実行する必要があります。
@@ -120,7 +119,7 @@ az keyvault create `
 
 この手順では、アドビが Entra アプリケーションを通じてキーコンテナにアクセスできるようにします。Entra アプリケーションの ID は、アドビから既に提供されている必要があります。
 
-まず、Entra アプリケーションに接続されたサービスプリンシパルを作成し、それに **Key Vault Reader** ロールと **Key Vault Crypto User** ロールを割り当てる必要があります。 役割は、このガイドで作成したキーコンテナに限定されます。
+まず、Entra アプリケーションにアタッチされたサービスプリンシパルを作成し、それに **Key Vault Reader** の役割と **Key Vault Crypto User** の役割を割り当てる必要があります。役割は、このガイドで作成したキーコンテナに限定されます。
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -180,8 +179,7 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
-
-CMK UI でこの情報を指定します。
+CMK UI でこの情報を提供します。
 ![UI への情報の入力 ](./assets/cmk/step3a.png)
 
 ## キーアクセスの取り消しの影響 {#implications-of-revoking-key-access}
@@ -192,16 +190,16 @@ CMK UI でこの情報を指定します。
 
 ## 次の手順 {#next-steps}
 
-CMK UI で必要な情報を指定すると、AdobeはAEM as a Cloud Service環境の設定プロセスを開始します。 この処理には時間がかかる場合があり、完了すると通知が表示されます。
+CMK UI で必要な情報を指定すると、Adobe は AEM as a Cloud Service 環境の設定プロセスを開始します。この処理には時間がかかる場合があり、完了すると通知されます。
 
-![Adobeが環境を設定するのを待ちます。](./assets/cmk/step4.png)
+![Adobe が環境を設定するのを待ちます。](./assets/cmk/step4.png)
 
 
-## CMK の設定の完了 {#complete-the-cmk-setup}
+## CMK 設定の完了 {#complete-the-cmk-setup}
 
 設定プロセスが完了すると、UI で CMK 設定のステータスを確認できるようになります。 Key Vault と暗号化キーも確認できます。
-![ のプロセスが完了しました ](./assets/cmk/step5.png)
+![プロセスが完了しました](./assets/cmk/step5.png)
 
 ## 質問とサポート {#questions-and-support}
 
-AEM as a Cloud Serviceの顧客管理キー設定に関するご質問、お問い合わせ、サポートが必要な場合は、お問い合わせください。 Adobe サポートは、ご質問がある場合にお手伝いします。
+AEM as a Cloud Service の顧客管理キー設定に関するご質問、お問い合わせ、サポートが必要な場合はお問い合わせください。ご不明な点がある場合は、Adobe サポートがサポートいたします。
