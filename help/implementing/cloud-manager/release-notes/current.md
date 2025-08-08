@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3111e74e844fb37afa0c7d218c37014d32ad0a64
+source-git-commit: c465542d5e89dbae0eb1c380ca1e7756d0beb2b6
 workflow-type: tm+mt
-source-wordcount: '1337'
-ht-degree: 60%
+source-wordcount: '1308'
+ht-degree: 59%
 
 ---
 
@@ -25,11 +25,6 @@ AEM as a Cloud Service の Cloud Manager 2025.8.0 のリリース日は 2025年8
 
 次回のリリース予定は 2025年9月4日（PT）です。
 
-
-
-
-
-
 ## 新機能 {#what-is-new}
 
 * **Edge Delivery Services ライセンスは、セルフサービス方式で HIPAA プログラムに含めることができます**
@@ -42,7 +37,7 @@ AEM as a Cloud Service の Cloud Manager 2025.8.0 のリリース日は 2025年8
 
 * **新しいForms アドオンの自動プロビジョニング**
 
-  Sites のみのユーザーは、多くの場合、マーケティングフォームを構築するために軽量で低コストな方法を必要とします。 新しいAEM Forms Sites アドオンは、Sites プログラムに限定的なForms機能を追加することで、このニーズを満たします。 また、必要に応じて、AEM Formsの全製品への明確なアップグレードパスを作成します。<!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
+  Sites のみのユーザーは、多くの場合、マーケティングフォームを構築するために軽量で低コストな方法を必要とします。 新しいAEM Forms Sites アドオンは、Sites プログラムに限定的なForms機能を追加することで、このニーズを満たします。 また、AEM Formsの全製品への明確なアップグレードパスも作成されます。<!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
 
   アドオン：
    * Sites プログラムに添付して、そのプログラムと共にデプロイします。Forms プログラムや権利付与は分離されません。
@@ -53,7 +48,7 @@ AEM as a Cloud Service の Cloud Manager 2025.8.0 のリリース日は 2025年8
 
      ![ 実稼動プログラムの作成時のソリューションとアドオンのForms アドオン ](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png)*プログラムの作成時に、Sites ソリューション内でForms アドオンを選択できます。*
 
-     ![ 実稼動プログラムの編集時のForms アドオン ](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png)***プログラムを編集**&#x200B;で、Sites プログラム用のForms アドオンを選択してから、パイプラインを実行して環境でアクティブ化します。*
+     ![ 実稼動プログラムの編集時のForms アドオン ](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png)***プログラムを編集**で、Sites プログラム用のForms アドオンを選択してから、パイプラインを実行して環境でアクティブ化します。*
 
      詳しくは、[ 実稼動プログラムの作成 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) を参照してください。
 
@@ -67,13 +62,13 @@ Cloud Managerのベータプログラムに参加すると、一般リリース�
 
 最新の顧客ソースコードが期待どおりに動作しない場合は、以前のデプロイメントに迅速に戻すことができます。パイプライン全体を再実行したり、コミットを手動で元に戻したりする必要はありません。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![環境カードから顧客ソースコードを復元](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上記の環境カードには、選択した環境の&#x200B;**復元**／**以前にデプロイされたコード**&#x200B;オプションが表示されています。*
+![環境カードから顧客ソースコードを復元](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上記の環境カードには、選択した環境の&#x200B;**復元**／**以前にデプロイされたコード**オプションが表示されています。*
 
 ![以前にデプロイしたコードを復元ダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-***以前にデプロイしたコードを復元**&#x200B;ダイアログボックスで、現在デプロイされているバージョンと復元するバージョンを確認し、「**確認***」をクリックします。
+***以前にデプロイしたコードを復元**ダイアログボックスで、現在デプロイされているバージョンと復元するバージョンを確認し、「**確認***」をクリックします。
 
 ![アクティベーションの復元](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager は、環境を以前のビルドにロールバックし、コンテンツと設定をそのままの状態に保ち、デプロイメントが完了するまで環境に&#x200B;**復元中**&#x200B;とマークを付けます。*
+*Cloud Manager は、環境を以前のビルドにロールバックし、コンテンツと設定をそのままの状態に保ち、デプロイメントが完了するまで環境に&#x200B;**復元中**とマークを付けます。*
 
 ![使用中のソースコードバージョン](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *環境の詳細ビューには、前述のように、使用中のアクティブなソースコードバージョンも表示されるようになりました。*
 
@@ -82,7 +77,6 @@ Cloud Managerのベータプログラムに参加すると、一般リリース�
 [AEM as a Cloud Service に以前にデプロイしたコードの復元](/help/operations/restore-previous-code-deployed.md)を参照してください。
 
 [AEM as a Cloud Service のコンテンツを復元](/help/operations/restore.md)も参照してください。
-
 
 ### 特殊なテスト環境 {#specialized-test-environment}
 
@@ -148,7 +142,7 @@ Edge Delivery Services を使用して作成されたサイトで設定パイプ
 
   ![ パイプライン名、ステータス、リポジトリー、ブランチを表示するEdge Delivery パイプラインウィジェット ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)
 
-* **フィルター** パネルには、「&lbrace;4 **Edge配信**」チェックボックスと「**公開配信**」チェックボックスを含む「配信タイプ **」セクションが追加されます。**<!-- (CMGR-69682) -->
+* **フィルター** パネルには、「{4 **Edge配信**」チェックボックスと「**公開配信**」チェックボックスを含む「配信タイプ **」セクションが追加されます。**<!-- (CMGR-69682) -->
 
   ![Edge配信と公開配信の新しい配信タイプを示すフィルターパネル ](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
@@ -158,7 +152,7 @@ Edge Delivery Services を使用して作成されたサイトで設定パイプ
 
 [Edge Delivery パイプラインの追加 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) を参照してください。
 
-この新機能をテストしてフィードバックを共有したい場合は、Adobe ID に関連付けられたメールアドレスから [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) にメールを送信してください。
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID. -->
 
 
 ## バグ修正
