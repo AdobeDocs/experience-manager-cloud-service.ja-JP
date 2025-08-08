@@ -21,7 +21,7 @@ Forms送信サービスは、Adobeがホストするソリューションであ�
 
 >[!NOTE]
 >
->**アーリーアクセスプログラム：** この機能は現在、アーリーアクセスで利用できます。 アクセスをリクエストするには、公式アドレスから GitHub 組織とリポジトリ名を添えて [0}aem-forms-ea@adobe.com} にメールを送信します。](mailto:aem-forms-ea@adobe.com)
+>**アーリーアクセスプログラム：** この機能は現在、アーリーアクセスで利用できます。 アクセスをリクエストするには、公式アドレスから GitHub 組織とリポジトリ名を添えて [0&rbrace;aem-forms-ea@adobe.com&rbrace; にメールを送信します。](mailto:aem-forms-ea@adobe.com)
 >
 >**例：** リポジトリ `https://github.com/adobe/abc` の場合、次を送信します：organization = `adobe`、repository = `abc`
 
@@ -321,7 +321,7 @@ API を使用する前に、次のことを確認します。
 - `Content-Type: application/json`
 - `x-adobe-routing: tier=live,bucket=main--[repository]--[organization]`
 
-**API ドキュメント：**[ 完全な API リファレンス ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
+**API ドキュメント：**&#x200B;[ 完全な API リファレンス ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
 
 ### Postmanの使用
 
@@ -523,8 +523,8 @@ Solutions:
 **サポートチャネル：**
 
 - **アーリーアクセスの問題：** 電子メール [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
-- **API ドキュメント：**[ 開発者向けリファレンス ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
-- **コミュニティサポート：**[Adobe Experience League コミュニティ ](https://experienceleaguecommunities.adobe.com/)
+- **API ドキュメント：**&#x200B;[ 開発者向けリファレンス ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
+- **コミュニティサポート：**&#x200B;[Adobe Experience League コミュニティ ](https://experienceleaguecommunities.adobe.com/)
 
 ## 次の手順
 
