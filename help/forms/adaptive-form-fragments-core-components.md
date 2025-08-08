@@ -6,8 +6,8 @@ keywords: アダプティブフォームフラグメントを追加、アダプ�
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: a99bd181a079713571fd659ec2a04207c5eeee90
-workflow-type: ht
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+workflow-type: tm+mt
 source-wordcount: '1479'
 ht-degree: 100%
 
@@ -83,9 +83,11 @@ ht-degree: 100%
 
    ![「アダプティブフォームフラグメント」オプションを選択](/help/forms/assets/adaptive-form-fragment-basic.png)
 
-<!-- >[!NOTE]
+<!-- 
+   >[!NOTE]
    >
-   >The Adaptive Form fragment is not enabled for authoring from within the Adaptive Form. Moreover, you cannot use an XSD-based fragment in a JSON-based Adaptive Form and the opposite way. -->
+   >The Adaptive Form fragment is not enabled for authoring from within the Adaptive Form. Moreover, you cannot use an XSD-based fragment in a JSON-based Adaptive Form and the opposite way. 
+-->
 
 アダプティブフォームフラグメントは、アダプティブフォーム内の参照により追加され、スタンドアロンのアダプティブフォームフラグメントと同期されたままとなります。つまり、アダプティブフォームフラグメントに加えた変更は、そのフラグメントがアダプティブフォームに組み込まれるすべてのインスタンスに反映されます。
 

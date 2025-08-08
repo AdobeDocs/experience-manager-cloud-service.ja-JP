@@ -4,8 +4,8 @@ description: ボタンをクリックするだけで Cloud Manager で Edge Deli
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: 0c4ef0eb5bb7caa5cd68dac6c788b37f564e1770
-workflow-type: ht
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 
 
-<!-- >
+<!--
 ## Practical use cases {#use-cases}
 
 | Use case | Description |

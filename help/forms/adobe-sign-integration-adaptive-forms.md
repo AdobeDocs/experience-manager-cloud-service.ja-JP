@@ -5,10 +5,10 @@ feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 82a3016149645701abe829ad89c493f480956267
-workflow-type: ht
-source-wordcount: '2195'
-ht-degree: 100%
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+workflow-type: tm+mt
+source-wordcount: '2197'
+ht-degree: 98%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 100%
    >アダプティブフォームを作成する際に、**[!UICONTROL 設定コンテナ]**&#x200B;フィールドにコンテナ名を指定します。
 
 1. 設定ページで「**[!UICONTROL 作成]**」を選択して、AEM Forms 内に [!DNL Adobe Acrobat Sign] の設定を作成します。
-1. **[!UICONTROL Adobe Acrobat Sign 設定を作成]**&#x200B;ページの「**[!UICONTROL 一般]**」タブで、設定の&#x200B;**[!UICONTROL 名前]**&#x200B;を指定して「**[!UICONTROL 次へ]**」を選択します。必要に応じて&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定し、設定の&#x200B;**[!UICONTROL サムネ―ル]**&#x200B;を参照して選択することもできます。
+1. **[!UICONTROL Adobe Acrobat Sign 設定を作成]**&#x200B;ページの「**[!UICONTROL 一般]**」タブで、設定の&#x200B;**[!UICONTROL 名前]**&#x200B;を指定して「**[!UICONTROL 次へ]**」を選択します。必要に応じて&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定し、設定の&#x200B;**[!UICONTROL サムネイル]**&#x200B;を参照して選択することもできます。
 
 1. これで、**[!UICONTROL ソリューションを選択]**&#x200B;して、[!DNL Adobe Acrobat Sign] を選択できます。
 
@@ -199,7 +199,7 @@ Adobe Acrobat Sign for Government Solutions チームには、AEM Forms と Adob
 
 1. ブラウザーで `re-direct URL` を開きます。「[AEM インスタンスにリダイレクト URL を作成](#create-a-redirect-url-for-your-aem-instance)」セクションの最後の手順で `re-direct URL` を作成し、書き留めました。
 
-1. **[!UICONTROL Adobe Sign 設定を作成]**&#x200B;ページの「**[!UICONTROL 一般]**」タブで、設定の&#x200B;**[!UICONTROL 名前]**&#x200B;を指定して「**[!UICONTROL 次へ]**」を選択します。必要に応じて&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定し、設定の&#x200B;**[!UICONTROL サムネ―ル]**&#x200B;を参照して選択することもできます。「**[!UICONTROL 次へ]**」をクリックします。
+1. **[!UICONTROL Adobe Sign 設定を作成]**&#x200B;ページの「**[!UICONTROL 一般]**」タブで、設定の&#x200B;**[!UICONTROL 名前]**&#x200B;を指定して「**[!UICONTROL 次へ]**」を選択します。必要に応じて&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定し、設定の&#x200B;**[!UICONTROL サムネイル]**&#x200B;を参照して選択することもできます。「**[!UICONTROL 次へ]**」をクリックします。
 
 1. **[!UICONTROL Adobe Sign 設定を作成]**&#x200B;ページの「**[!UICONTROL 設定]**」タブの、「**[!UICONTROL ソリューションを選択]**」オプションで、[!DNL Adobe Acrobat Sign Solutions for Government] を選択します。
 
@@ -239,7 +239,9 @@ Adobe Acrobat Sign for Government Solutions チームには、AEM Forms と Adob
 
    ![Adobe Acrobat Sign クラウド設定成功](assets/adobe-sign-cloud-configuration-success.png)
 
-   <!-- > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. -->
+   <!-- 
+      > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. 
+      -->
 
 1. 「**[!UICONTROL 作成]**」を選択して、設定を作成します。
 
@@ -260,7 +262,7 @@ AEM Forms as a Cloud Service では、定義された間隔で署名者のステ
 
 デフォルトの間隔を変更するには、**Adobe Acrobat Sign 設定サービス**&#x200B;の設定の **sign.status.exp** プロパティに [cron 式](https://en.wikipedia.org/wiki/Cron#CRON_expression)を指定します。
 
-例えば、毎日午前 0 時に設定サービスを実行するには、**Adobe Acrobat Sign 設定サービス**&#x200B;設定の **sign.status.exp** プロパティを `0 0 0 1/1 * ? *` に指定します。次の JSON ファイルに、設定サービスを毎日午前 0 時に実行するサンプルを示します。
+例えば、毎日午前 0:00 に設定サービスを実行するには、**Adobe Acrobat Sign設定サービス** 設定の **sign.status.exp** プロパティを `0 0 0 1/1 * ? *` に指定します。 次の JSON ファイルに、設定サービスを毎日午前 0:00 に実行するサンプルを示します。
 
 ```json
 {
