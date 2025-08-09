@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 33b562182ea6fca22796ec7b73c8f036e021f64d
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '6613'
-ht-degree: 98%
+source-wordcount: '6590'
+ht-degree: 97%
 
 ---
 
@@ -1112,21 +1112,21 @@ ht-degree: 98%
    + フォームの作成 {#build-forms}
       + [概要](/help/edge/docs/forms/overview.md)
       + WYSIWYG オーサリング {#universal-editor}
-         + [Edge Delivery Services のフォームのユニバーサルエディターの概要 - 完全ガイド](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [ユニバーサルエディターを使用したオーサリングの開始方法 - ステップバイステップチュートリアル](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [ユニバーサルエディターを使用した最初のフォーム作成方法 - ステップバイステップチュートリアル](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [送信後のガイドユーザー：ユニバーサルエディターでのリダイレクトと「ありがとうございます」メッセージの設定](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
-         + [ユニバーサルエディターインターフェイスガイド：ツール、機能およびナビゲーションについて](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [フォームのモバイル化：ユニバーサルエディターのレスポンシブデザイン](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [美しいフォームの設計：ユニバーサルエディターのスタイル設定とテーマ設定ガイド](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [フォームへの動的な動作の追加：ルールエディターの完全ガイド](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [フォーム送信ガイド：フォーム送信アクションの設定とカスタマイズ](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [スパムからのフォームの保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [フォームの公開およびデプロイ方法：ユニバーサルエディター公開ガイド](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [カスタムフォームコンポーネントの作成：ユニバーサルエディター開発者向けガイド](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [フォームデータモデルの統合：Forms とフォームデータモデルの統合](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-         + [事前入力サービスの設定：事前入力サービスを設定するための完全なステップバイステップガイド](/help/edge/docs/forms/universal-editor/prefill-form.md)
-         + [再利用可能なモジュール型スタンドアロンセグメント：フォーム内でのフォームフラグメントの作成と使用](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [Forms の Edge Delivery Services のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [AEM Formsのユニバーサルエディターインターフェイスの操作](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [ユニバーサルエディターを使用したAEM FormsのEdge Delivery Servicesの概要](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Edge Delivery Servicesを使用したアダプティブFormsの作成と公開](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [ユニバーサルエディターを使用したレスポンシブFormsの作成](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [AEM Forms の Edge Delivery Services のテーマとスタイルのカスタマイズ](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [ユニバーサルエディターの動的Forms用のルールエディター](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [WYSIWYG ベースのオーサリング用のフォームフラグメントを作成する方法](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [アダプティブフォームの送信アクションの設定方法](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [リダイレクトページまたはありがとうメッセージの設定方法](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
+         + [ユニバーサルエディターでのGoogle reCAPTCHA のFormsへの追加](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [ユニバーサルエディターでフォームのフォームデータモデル（FDM）を統合する方法](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [アダプティブフォームフィールドの事前入力方法](/help/edge/docs/forms/universal-editor/prefill-form.md)
+         + [Edge Delivery Servicesを使用したアダプティブFormsの公開](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [EDS フォームのカスタムコンポーネントの作成](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Edge Delivery Services フォーム送信での 403 Forbidden エラーのトラブルシューティング](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + ドキュメントベースのオーサリング {#getting-started-edge-delivery-services-forms}
          + [最初のフォームの作成：Google Sheetsと Excel を使用したクイックスタートガイド](/help/edge/docs/forms/tutorial.md)

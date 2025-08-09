@@ -6,16 +6,14 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: [ フォームの公開、Edge Delivery Services、フォーム設定、CORS、リファラーフィルター ]
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: 746
 ht-degree: 2%
 
 ---
 
 # Edge Delivery Servicesを使用したアダプティブFormsの公開
-
-## 概要
 
 アダプティブフォームを公開すると、エンドユーザーがEdge Delivery Services上でアクセスして送信できるようになります。 このプロセスには、フォームの公開、セキュリティ設定の設定、ライブフォームへのアクセスという 3 つの主なフェーズが含まれます。
 
@@ -28,29 +26,35 @@ ht-degree: 2%
 
 ## 前提条件
 
-- **フォーム要件：**
-   - Edge Delivery Services テンプレートを使用して作成されたアダプティブフォーム
-   - フォームがテスト済みで、実稼動環境で使用できる状態
+- Edge Delivery Services テンプレートを使用して作成されたアダプティブフォーム
+- フォームがテスト済みで、実稼動環境で使用できる状態
+- AEM Forms作成者の権限
+- Cloud Managerへのアクセス（実稼動用）
+- フォームブロックコードへの開発者アクセス（送信設定用）
 
-- **アクセス要件：**
-   - AEM Forms作成者の権限
-   - Cloud Managerへのアクセス（実稼動用）
-   - フォームブロックコードへの開発者アクセス（送信設定用）
+## 公開プロセスの概要
 
-- **関連ドキュメント：**
-   - [Edge Delivery Servicesを使用したフォームの作成](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-   - [送信アクションの設定](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+フォームのEdge Delivery Servicesへの公開は、次の 3 段階のアプローチに従います。
 
-## フェーズ 1：フォームを公開する
+- **フェーズ 1：フォームの公開** - フォームを CDN に公開し、公開ステータスを確認する
+- **フェーズ 2：セキュリティの設定** – 安全に送信するための CORS ポリシーとリファラーフィルターの設定
+- **フェーズ 3：アクセスと検証** - フォームの機能をテストし、ワークフロー全体を検証する
 
-### 手順 1：公開の開始
+各フェーズは前のフェーズに基づいて構築され、安全で機能的なデプロイメントを確保します。
+
+### フェーズ 1：フォームを公開する
+
++++ 手順 1：公開の開始
 
 1. **フォームへのアクセス**：アダプティブフォームをユニバーサルエディターで開きます
 2. **公開を開始**：ツールバーの **公開** アイコンをクリックします
 
    ![「公開」をクリック](/help/forms/assets/publish-icon-eds-form.png)
 
-### 手順 2：レビューと確認
++++
+
+
++++ 手順 2：レビューと確認
 
 1. **公開アセットのレビュー**：フォームを含む、公開中のすべてのアセットが表示されます
 
@@ -61,7 +65,10 @@ ht-degree: 2%
 
    ![公開成功](/help/forms/assets/publish-success.png)
 
-### 手順 3：公開ステータスの確認
++++
+
+
++++ 手順 3：公開ステータスの確認
 
 **ステータスを確認**：現在のステータスを表示するには、「**公開**」アイコンを再度クリックします
 
@@ -73,7 +80,10 @@ ht-degree: 2%
 - 公開プロセス中にエラーメッセージが表示されません
 - フォームが公開済みアセットリストに表示される
 
-### 公開済みFormsの管理
++++
+
+
++++ 公開済みFormsの管理
 
 **フォームを非公開にするには：**
 
@@ -83,9 +93,12 @@ ht-degree: 2%
 
 ![ フォームを非公開 ](/help/forms/assets/unpublish--form.png)
 
-## フェーズ 2：セキュリティ設定の構成
++++
 
-### セキュリティ設定が必要な理由
+
+### フェーズ 2：セキュリティ設定の構成
+
++++ セキュリティ設定が必要な理由
 
 安全なフォーム送信を有効にするには、次のセキュリティ設定を行う必要があります。
 
@@ -98,7 +111,11 @@ ht-degree: 2%
 >
 >**実稼動環境で必須**：これらの設定は、フォーム送信が実稼動環境で機能するために必須です。
 
-### 手順 1：フォーム送信 URL の設定
++++
+
+
+
++++ 手順 1：フォーム送信 URL の設定
 
 **目的**：フォーム送信をAEM インスタンスにダイレクトする
 
@@ -123,7 +140,11 @@ export const submitBaseUrl = 'https://publish-staging-p120-e12.adobeaemcloud.com
 - URL が環境（実稼動、ステージングまたはローカル）と一致する
 - URL の末尾のスラッシュなし
 
-### 手順 2:CORS 設定の指定
++++
+
+
+
++++ 手順 2:CORS 設定の指定
 
 **目的**:Edge Delivery Services ドメインからのフォーム送信リクエストを許可する
 
@@ -151,7 +172,11 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 - [CORS 設定ガイド ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
 - [ リファラーフィルタードキュメント ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
-### 手順 3：リファラーフィルターの設定
++++
+
+
+
++++ 手順 3：リファラーフィルターの設定
 
 **目的**：書き込み操作を、許可されたEdge Delivery Services ドメインに制限する
 
@@ -198,9 +223,14 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 - [Cloud Managerを使用したリファラーフィルターの設定 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 
-## フェーズ 3：公開済みフォームへのアクセス
++++
 
-### Edge Delivery Servicesの URL 構造
+
+### フェーズ 3：公開済みフォームへのアクセス
+
+
+
++++ Edge Delivery Servicesの URL 構造
 
 **標準 URL 形式：**
 
@@ -225,7 +255,11 @@ https://main--universaleditor--wkndforms.aem.live/content/forms/af/wknd-form
 https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 ```
 
-### 検証の最終手順
++++
+
+
+
++++ 検証の最終手順
 
 **フォームアクセシビリティの検証：**
 
@@ -242,29 +276,15 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 - 設定した宛先（スプレッドシート、メールなど）にデータが表示される
 - CORS やセキュリティポリシーに関連するコンソールエラーはありません。
 
++++
+
 
 ## 次の手順
 
-**即時アクション：**
-
-- 公開したフォームのテストを徹底的に行う
-- フォーム送信データの監視
-- 必要に応じて Analytics のトラッキングを設定
-
-**高度なトピック：**
 
 - [フォーム送信アクションの設定](/help/edge/docs/forms/universal-editor/submit-action.md)
 - [フォームのスタイルとテーマ](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
 - [reCAPTCHA 保護の追加](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 - [レスポンシブフォームレイアウトの作成](/help/edge/docs/forms/universal-editor/responsive-layout.md)
 
-## 概要
 
-正常に完了しました：
-
-- アダプティブフォームをEdge Delivery Servicesに公開しました
-- フォーム送信用にセキュリティ設定を指定しました。
-- エンドユーザーに対する適切な URL アクセスの設定
-- フォームの機能とアクセシビリティの検証
-
-これでフォームが実稼働し、実稼動で使用できる状態になります。

@@ -1,13 +1,13 @@
 ---
+title: アダプティブフォームの REST エンドポイントへの送信の送信アクションを設定する方法
 description: アダプティブフォームの送信時に Rest エンドポイントを設定する手順について説明します。
 keywords: AEM Forms REST エンドポイント、REST エンドポイントへの送信、REST URL へのデータの POST、REST エンドポイントアクションの設定
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
-title: アダプティブフォームの送信アクションの設定方法
 role: User, Developer
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1471'
 ht-degree: 74%
 
 ---
@@ -59,7 +59,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
    `String att=request.getParameter("attachments");`
 
    この例では、`data` が XML データを格納し、`att` が添付ファイルデータを格納します。
-**[!UICONTROL REST エンドポイントへの送信]**&#x200B;送信アクションでは、フォームに入力されたデータを HTTP GET リクエストの一部として設定済みの確認ページに送信します。リクエストにフィールド名を追加できます。リクエストのフォーマットを以下に示します。
+**[!UICONTROL REST エンドポイントへの送信]**送信アクションでは、フォームに入力されたデータを HTTP GET リクエストの一部として設定済みの確認ページに送信します。リクエストにフィールド名を追加できます。リクエストのフォーマットを以下に示します。
    `{fieldName}={request parameter name}`
 
    以下の画像に示されているように、`param1` および `param2` が、**textbox** フィールドおよび **numericbox** フィールドからコピーされた値を持つパラメーターとして、次のアクションに向けて渡されます。
@@ -115,13 +115,13 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
    **[!UICONTROL POST リクエストを有効にする]**&#x200B;ことで、リクエストを POST する URL を指定することもできます。フォームをホストする AEM サーバーにデータを送信するには、AEM サーバーのルートパスに対応する相対パスを使用します。例えば、`/content/forms/af/SampleForm.html` のようになります。他のサーバーにデータを送信するには、絶対パスを使用します。
 
-   +++
++++
 
    +++設定
 
    このオプションを使用すると、AEM設定ブラウザーを介して管理される、事前定義済みの HTTP 設定を追加できます。 サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。 認証タイプとコンテンツタイプについて詳しくは、[ データソースの設定 ](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint) を参照してください。
 
-   +++
++++
 
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
@@ -135,7 +135,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
    >[!NOTE]
    >
    > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Managerで **フォームプロパティを編集** 拡張機能を有効にします。
-   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
+   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト } の記事を参照してください。
 1. 「**送信**」タブをクリックし、「**[!UICONTROL Rest エンドポイントに送信]**」送信アクションを選択します。
 
    内部サーバーにデータを POST 送信するには、リソースのパスを指定します。データは、リソースのパスに POST されます。例えば、`/content/restEndPoint` のようになります。このような POST リクエストには、送信リクエストの認証情報が使用されます。
@@ -172,13 +172,13 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
    **[!UICONTROL POST リクエストを有効にする]**&#x200B;ことで、リクエストを POST する URL を指定することもできます。フォームをホストする AEM サーバーにデータを送信するには、AEM サーバーのルートパスに対応する相対パスを使用します。例えば、`/content/forms/af/SampleForm.html` のようになります。他のサーバーにデータを送信するには、絶対パスを使用します。
 
-   +++
++++
 
    +++設定
 
    このオプションを使用すると、AEM設定ブラウザーを介して管理される、事前定義済みの HTTP 設定を追加できます。 サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。 認証タイプとコンテンツタイプについて詳しくは、[ データソースの設定 ](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint) を参照してください。
 
-   +++
++++
 
 1. **[!UICONTROL 保存して閉じる]** をクリックします。
 

@@ -4,10 +4,10 @@ description: Forms の Edge Delivery Services のユニバーサルエディタ�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 100%
+source-wordcount: '984'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 | ![スタイル設定](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![事前入力サービス](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B テスト](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**スタイル設定**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **事前入力サービス**（近日公開） | [**A/B テスト**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| [**スタイル設定**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **[事前入力フォーム](/help/edge/docs/forms/universal-editor/prefill-form.md)** | [**A/B テスト**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | CSS を使用したスタイル設定により、開発者はフォーム要素の外観をカスタマイズし、web サイトの美観に合った視覚的に魅力的なデザインを作成できます。 | 事前入力サービスでは、様々なソースから関連するユーザーデータを自動的にフォームフィールドに入力し、手動入力を減らしてユーザーエクスペリエンスを向上させることができます。 | A/B テストにより、組織は様々なフォームのデザイン、レイアウト、機能を試して、最もパフォーマンスの高いバリアントを特定できます。 |
 
 | ![分析とトラッキング](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![フォームフラグメント](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![データバインディング](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |

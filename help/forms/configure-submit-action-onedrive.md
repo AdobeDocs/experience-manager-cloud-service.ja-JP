@@ -1,13 +1,13 @@
 ---
+title: アダプティブフォームからMicrosoft&reg; OneDrive にデータを送信する方法
 description: 「OneDrive に送信」送信アクションを使用してAEM FormsとMicrosoft&reg; OneDrive を接続する合理化されたプロセスについて説明します。 OneDrive を構成し、データの保存と取得を効率的に行うための送信アクションを設定する手順を説明します
 keywords: AEM Forms OneDrive との統合、Microsoft OneDrive への接続、AEM forms との OneDrive 構成セットアップ
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
-title: アダプティブフォームの送信アクションの設定方法
 role: User, Developer
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '921'
 ht-degree: 68%
 
 ---
@@ -117,7 +117,7 @@ OneDrive にレコードのドキュメント（DoR）を保存することも�
    >[!NOTE]
    >
    > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Managerで **フォームプロパティを編集** 拡張機能を有効にします。
-   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
+   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト } の記事を参照してください。
 1. **送信** タブをクリックし、**[!UICONTROL OneDrive に送信]** を選択します。
    ![OneDrive GIF](/help/forms/assets/submit-to-onedrive-ue.png)
 「**添付ファイルを元の名前で保存**」を選択すると、添付ファイルは元のファイル名を使用してフォルダーに保存されます。 Azure Blob ストレージにレコードのドキュメント（DoR）を保存することもできます。
