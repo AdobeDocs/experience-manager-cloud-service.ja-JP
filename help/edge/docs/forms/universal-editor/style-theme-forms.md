@@ -147,6 +147,7 @@ AEM Forms用Edge Delivery Servicesのフォームスタイル設定には、CSS 
     --form-input-padding: 0.5rem 0.4rem;
 }
 ```
+
 +++
 
 +++ レイアウト変数と構造変数
@@ -1108,6 +1109,7 @@ CSS セレクターを使用すると、特定のフィールドタイプをタ�
   text-align: center;
 }
 ```
+
 +++
 
 +++ フィールド名に基づくスタイル設定
@@ -1495,6 +1497,7 @@ main .form form .text-wrapper input {
   cursor: not-allowed;
 }
 ```
+
 +++
 
 ### **コンポーネント固有のベストプラクティス**

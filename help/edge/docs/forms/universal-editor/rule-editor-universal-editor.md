@@ -135,7 +135,7 @@ ht-degree: 1%
 
 **アクティベーション手順**:
 
-1. AEM環境の [0}Extension Manager} に移動します](/help/implementing/developing/extending/extension-manager.md)
+1. AEM環境の [0&rbrace;Extension Manager&rbrace; に移動します](/help/implementing/developing/extending/extension-manager.md)
 2. 使用可能な拡張機能リストで、「ルールエディター」拡張機能を見つけます
 3. **有効にする** をクリックして、アクティベーションを確認します
 4. システムが更新されるまで待ちます（1～2 分かかります）。
@@ -677,7 +677,7 @@ Formsは、データ収集、リードの選定、ユーザーエンゲージメ
 **追加のリソース**:
 
 - より広いコンテキストに対応する [ ユニバーサルエディタードキュメント ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
-- 追加機能を有効にするための [0}Extension Managerガイド](/help/implementing/developing/extending/extension-manager.md)
-- 包括的なフォーム開発ガイダンスのための [0}Edge Delivery Services forms}](/help/edge/docs/forms/overview.md)
+- 追加機能を有効にするための [0&rbrace;Extension Managerガイド](/help/implementing/developing/extending/extension-manager.md)
+- 包括的なフォーム開発ガイダンスのための [0&rbrace;Edge Delivery Services forms&rbrace;](/help/edge/docs/forms/overview.md)
 
 +++
