@@ -308,7 +308,7 @@ ht-degree: 1%
 
 1. **ユニバーサルエディターを開く**:
    - AEM Sites コンソールに移動して、ページを選択し、「**編集**」をクリックします
-   - [ ユニバーサルエディター ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) が正しく設定されていることを確認します
+   - [ ユニバーサルエディター ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=ja) が正しく設定されていることを確認します
 
 2. **フォームコンポーネントをこの順序で追加する**:
    - タイトル（H2）:「税金計算フォーム」
@@ -676,7 +676,7 @@ Formsは、データ収集、リードの選定、ユーザーエンゲージメ
 
 **追加のリソース**:
 
-- より広いコンテキストに対応する [ ユニバーサルエディタードキュメント ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
+- より広いコンテキストに対応する [ ユニバーサルエディタードキュメント ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=ja)
 - 追加機能を有効にするための [0&rbrace;Extension Managerガイド](/help/implementing/developing/extending/extension-manager.md)
 - 包括的なフォーム開発ガイダンスのための [0&rbrace;Edge Delivery Services forms&rbrace;](/help/edge/docs/forms/overview.md)
 
