@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: アダプティブフォームの事前入力、アダプティブフォームエッジ配信サービス、アダプティブフォームの自動入力
-source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
+source-git-commit: 074b81f9cb1050eac5175bdc46796f9371f3a35b
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1787'
 ht-degree: 4%
 
 ---
@@ -249,7 +249,7 @@ FDM のフォーム要素は、**コンテンツブラウザー** の **デー�
 3. **HTMLとしてプレビュー** を選択します。
 4. URL にパラメーターを追加して事前入力をテストします。
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **例：**
 
@@ -267,40 +267,36 @@ FDM のフォーム要素は、**コンテンツブラウザー** の **デー�
 
 **FDM ベースのフォームの JSON の例：**
 
-    &quot;&#39;
-    
-    &lbrace;
-    &quot;afBoundData&quot;: &lbrace;
-    &quot;user&quot;: &lbrace;
-    &quot;firstName&quot;: &quot;John&quot;,
-    &quot;lastName&quot;: &quot;Doe&quot;,
-    &quot;email&quot;: &quot;john.doe@example.com&quot;,
-    &quot;phone&quot;: &quot;+1-555-0123&quot;
-    &rbrace;
-    &rbrace;,
-    &quot;afUnBoundData&quot;: &lbrace;
-    &quot;additionalInfo&quot;: &quot;User preferences loaded&quot;
-    &rbrace;
-    &rbrace;
-    
-    &rbrace;&quot;&#39;
+```
+  {
+    "afBoundData": {
+      "user": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "phone": "+1-555-0123"
+      }
+    },
+    "afUnBoundData": {
+      "additionalInfo": "User preferences loaded"
+    }
+  }
+```
 
 **XFA ベースのフォームの XML の例：**
 
-    ```
-    
-    &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>
-    &lt;afData>
-    &lt;afBoundData>
-    &lt;user>
-    &lt;firstName>John&lt;/firstName>
-    &lt;lastName>Doe&lt;/lastName>
-    &lt;email>john.doe@example.com&lt;/email>
-    &lt;/user>
-    &lt;/afBoundData>
-    &lt;/afData>
-    
-    ```
+```
+  <?xml version="1.0" encoding="UTF-8"?>
+  <afData>
+    <afBoundData>
+      <user>
+        <firstName>John</firstName>
+        <lastName>Doe</lastName>
+        <email>john.doe@example.com</email>
+      </user>
+    </afBoundData>
+  </afData>
+```
 
 ### 事前入力 URL の例
 
