@@ -249,7 +249,7 @@ FDM のフォーム要素は、**コンテンツブラウザー** の **デー�
 3. **HTMLとしてプレビュー** を選択します。
 4. URL にパラメーターを追加して事前入力をテストします。
 
-   https://your-preview-url.com?<bindreferencefield>=<value>
+   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
 
    **例：**
 
