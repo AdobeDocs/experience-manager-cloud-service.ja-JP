@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 829881a91a6f1c9a020c04ec581ce010b07bae01
+source-git-commit: 840db9fff35af0da212fa03e2d9255cca9524ae6
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 78%
+source-wordcount: '551'
+ht-degree: 77%
 
 ---
 
@@ -68,7 +68,7 @@ curl -svo /dev/null https://www.example.com \
 ```
 
 * **`www.example.com`** を自分のドメインに置き換えます。
-* このマッピング用に、**151.101.3.10** をCloud Managerに表示されるEdge IP アドレスに置き換えます。
+* IP アドレス ``151.101.3.10`` は、AEM Cloud Service へのアクセスに使用できる IP の 1 つです。 [APEX レコード ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-apex-record) も参照してください。
 
 `--resolve` フラグは、ドメインの証明書とルーティングが正しくインストールされた後にのみ、指定された IP への要求を強制し、成功を返します。
 
