@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 53b1d38eb0e9e6cf18ca3ef7b1414bc231c82098
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2358'
 ht-degree: 4%
@@ -349,7 +349,7 @@ ht-degree: 4%
 
     ![ バリエーションを生成 ] （/help/edge/docs/forms/universal-editor/assets/ue-variations.png） 
 
-**詳細情報：**&#x200B;[ バリエーションを生成ガイド ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**詳細情報：**[ バリエーションを生成ガイド ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **コンテンツドラフト**
 
@@ -507,19 +507,19 @@ ht-degree: 4%
 - **ビルド前にプラン** – 開始する前にフォーム構造をスケッチします
 - **シンプルに** – 多くのフィールドを使用する圧倒的なユーザーを避ける
 
-### **パフォーマンスの最適化**
-
-- **コンポーネントを最小化** – 必要なフォームフィールドのみを使用します
-- **画像を最適化** - フォームで使用される画像を圧縮します
-- **モバイルでのテスト** – 低速のモバイル接続でパフォーマンスを確保します
-- **早期検証** – 送信エラーを防ぐための適切な検証を設定します
-
 ### **ユーザーエクスペリエンス**
 
 - **頻繁にテストする** – 重要な変更が行われるたびにプレビューモードを使用する
 - **ユーザーと考える** – 完全なフォーム入力エクスペリエンスを検討する
 - **明確なラベルの提供** - フィールド目的をユーザーに明確にします
 - **ヘルプテキストを追加** – 複雑なフィールドにヘルプテキストを使用します
+
+### **パフォーマンスの最適化**
+
+- **コンポーネントを最小化** – 必要なフォームフィールドのみを使用します
+- **画像を最適化** - フォームで使用される画像を圧縮します
+- **モバイルでのテスト** – 低速のモバイル接続でパフォーマンスを確保します
+- **早期検証** – 送信エラーを防ぐための適切な検証を設定します
 
 ## 次の手順
 

@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2609'
 ht-degree: 2%
@@ -43,7 +43,7 @@ AEM Forms用Edge Delivery Servicesは、高性能の web 配信と、ユニバ�
 | 事前設定済みのテンプレートから開始 | 現在のAEM プロジェクトへのフォームの追加 |
 | **最適な対象：** 新規実装 | **最適：** 既存のAEM Sites |
 | **結果：** 事前設定済みのForms ブロック | **結果：** Formsが既存のサイトに追加されました |
-| **&#x200B;**&#x200B;手順：Forms→のテンプレート→ース セットアップ | **手順：** Integration → Configuration → Forms |
+| **** 手順：Forms→のテンプレート→ース セットアップ | **手順：** Integration → Configuration → Forms |
 | [ パス A から開始 ](#path-a-create-new-project-with-forms) | [ パス B から開始 ](#path-b-add-forms-to-existing-project) |
 
 ## 前提条件
@@ -186,7 +186,7 @@ AEM コード同期は、AEM オーサリング環境と GitHub リポジトリ�
 
     >[!NOTE]
     >
-    >ビルドに問題がありますか？ [GitHub ビルドの問題のトラブルシューティング ](#troubleshooting-github-build-issues) を参照してください。
+>ビルドに問題がありますか？ [GitHub ビルドの問題のトラブルシューティング ](#troubleshooting-github-build-issues) を参照してください。
 
 +++
 
@@ -310,7 +310,7 @@ AEM コード同期は、AEM オーサリング環境と GitHub リポジトリ�
 > - **ホームページ：** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`
 > - **その他のページ：** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/<page-name>`
 
-**次へ：**&#x200B;[ 最初のフォームを作成 ](#create-your-first-form)
+**次へ：**[ 最初のフォームを作成 ](#create-your-first-form)
 
 +++
 
@@ -498,7 +498,7 @@ Edge Delivery Servicesを使用するAEM プロジェクトが既にある場合
 
 +++
 
-**次：**&#x200B;[ 最初のフォームを作成 ](#create-your-first-form)
+**次：**[ 最初のフォームを作成 ](#create-your-first-form)
 
 ## 最初のフォームを作成
 
@@ -653,7 +653,7 @@ Edge Delivery Servicesを使用するAEM プロジェクトが既にある場合
 
 >[!TIP]
 >
-> **詳細情報：**&#x200B;[ ユニバーサルエディターでのスタンドアロンフォームの作成 ](/help/edge/docs/forms/universal-editor/create-forms.md)
+> **詳細情報：**[ ユニバーサルエディターでのスタンドアロンフォームの作成 ](/help/edge/docs/forms/universal-editor/create-forms.md)
 
 ## ローカル開発環境の設定
 
@@ -759,27 +759,6 @@ Edge Delivery Servicesを使用するAEM プロジェクトが既にある場合
 
 +++
 
-+++ユニバーサルエディターの問題
-
-**問題：** ユニバーサルエディターにフォームコンポーネントが表示されない
-
-**ソリューション：**
-
-- AEM Code Sync がインストールされ、実行されていることを確認します。
-- `fstab.yaml` に正しいAEM オーサー URL があることを確認します。
-- AEM インスタンスで早期アクセスが有効になっていることを確認します
-- 確認 `component-definition.json` にフォームコンポーネントが含まれます
-
-**問題：** 公開後、変更が表示されない
-
-**ソリューション：**
-
-- CDN キャッシュの更新待ち
-- ブラウザーキャッシュを確認する（匿名/プライベートモードを試す）
-- 正しい URL 形式が使用されていることを確認します
-
-+++
-
 +++フォーム機能の問題
 
 **問題：** フォーム送信が機能しない
@@ -801,4 +780,27 @@ Edge Delivery Servicesを使用するAEM プロジェクトが既にある場合
 - ローカル開発環境でのテスト
 
 +++
+
++++ユニバーサルエディターの問題
+
+**問題：** ユニバーサルエディターにフォームコンポーネントが表示されない
+
+**ソリューション：**
+
+- AEM Code Sync がインストールされ、実行されていることを確認します。
+- `fstab.yaml` に正しいAEM オーサー URL があることを確認します。
+- AEM インスタンスで早期アクセスが有効になっていることを確認します
+- 確認 `component-definition.json` にフォームコンポーネントが含まれます
+
+**問題：** 公開後、変更が表示されない
+
+**ソリューション：**
+
+- CDN キャッシュの更新待ち
+- ブラウザーキャッシュを確認する（匿名/プライベートモードを試す）
+- 正しい URL 形式が使用されていることを確認します
+
++++
+
+
 

@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 5%
@@ -41,10 +41,12 @@ ht-degree: 5%
 
 **決定ガイダンス：**
 
+![ テンプレート選択の決定 ](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 - 複雑なワークフローやAEMの深い統合に **コアコンポーネント** を使用する場合や、既存のAEM アセットを活用する場合は、
 - パフォーマンス、シンプルさ、最新の開発手法を実現するには、**Edge Delivery Services** を使用します。
 
-![ テンプレート選択の決定 ](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 *適切なテンプレートタイプを選択するための決定フローチャート*
 
 ## 前提条件
@@ -78,9 +80,9 @@ ht-degree: 5%
 
 このプロセスは、次の 3 つの主なフェーズで構成されます。
 
-- **フェーズ 1:**&#x200B;[ テンプレートの選択とフォームの作成 ](#step-1-template-selection-and-form-creation)
-- **フェーズ 2:**&#x200B;[ フォームのオーサリングとデザイン ](#step-2-form-authoring-and-design)
-- **フェーズ 3:**&#x200B;[ 設定と公開 ](#step-3-configuration-and-publishing)
+- **フェーズ 1:**[ テンプレートの選択とフォームの作成 ](#step-1-template-selection-and-form-creation)
+- **フェーズ 2:**[ フォームのオーサリングとデザイン ](#step-2-form-authoring-and-design)
+- **フェーズ 3:**[ 設定と公開 ](#step-3-configuration-and-publishing)
 
 各フェーズには、正しい設定を確認するための検証手順が含まれます。
 
@@ -506,7 +508,7 @@ Edge Delivery Servicesを使用したAEM Formsの一般的な問題と解決策�
 
 1. Adobe Experience Cloud サービスのステータスを確認します。
 2. [Edge Delivery Servicesのドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/overview) を確認してください。
-3. [Adobe Experience League コミュニティ ](https://experienceleaguecommunities.adobe.com/?profile.language=ja) にアクセスしてください。
+3. [Adobe Experience League コミュニティ ](https://experienceleaguecommunities.adobe.com/) にアクセスしてください。
 4. Adobe カスタマーケアにお問い合わせください。
 
 +++

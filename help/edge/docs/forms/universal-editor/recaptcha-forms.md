@@ -6,7 +6,7 @@ keywords: フォームの reCAPTCHA, ユニバーサルエディターでの reC
 role: Developer, Admin
 level: Intermediate
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 5%
@@ -365,5 +365,5 @@ https://<branch>--<repo>--<owner>.aem.live/content/forms/af/
 
 ```
 https://main--my-forms--company.aem.live/content/forms/af/
-contact-form
+contact-us-form
 ```
