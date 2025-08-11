@@ -5,12 +5,13 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
+source-git-commit: fecc13161b2502aab086e4c1c89d650d003cec06
 workflow-type: tm+mt
-source-wordcount: '2430'
-ht-degree: 97%
+source-wordcount: '2557'
+ht-degree: 93%
 
 ---
+
 
 # アセットビューのメタデータ {#metadata}
 
@@ -181,7 +182,6 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
    * ![編集アイコン](assets/do-not-localize/edit.svg) をクリックして、URL を編集します。
 1. 「**[!UICONTROL 保存]**」をクリックして、変更を保存します。
 
-
 ### メタデータフォームでのタグコンポーネントの操作 {#tag-component-metadata-form}
 
 ルート要素は、アセットに関連付けることができるタグのツリー構造を表し、割り当てられたタグに基づいてアセットを識別するのに役立ちます。さらに、メタデータエディターでメタデータフォームを設定する際に、特定の分類のアクセスを制限できます。
@@ -213,6 +213,17 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 -->
 
 設定済みのルートタグを表示するには、メタデータフォームとルートタグ間のマッピングが実行されるアセットの詳細ページに移動します。
+
+## メタデータFormsを編集 {#edit-metadata-forms}
+
+メタデータフォームを編集するには、次の手順を実行します。
+
+1. ホームページ [!DNL Assets View] 移動し、「**[!DNL Metadata Forms]**」を選択して、メタデータフォームのリストを表示します。
+1. フォームを選択し、「**[!UICONTROL 編集]** をクリックして [!DNL Metadata Form Editor] ページを開きます。 このページでは、左側のウィンドウにメタデータフォームのコンポーネントが、中央のウィンドウに「基本」、「詳細」、「タグなど」などのタブが、右側のウィンドウにメタデータプロパティを編集するための「設定」パネルが表示されます。
+1. タブ（**[!DNL Basic]**、**[!DNL Advanced]** または **[!DNL Tags]**）を開きます。
+1. メタデータプロパティを選択して、**[!UICONTROL 設定]** パネルでその設定を編集します。 **[!UICONTROL 設定]** パネルでは、プロパティ マッピングの更新、ラベルの名前変更、プロパティ値の修正または追加、およびそのような編集の追加を行うことができます。
+1. **[!UICONTROL プレビュー]** をクリックして、フォームへの変更を保存する前に確認します。
+1. 「**[!UICONTROL 保存]**」をクリックして、変更内容を適用します。
 
 ## AI で生成されたメタデータを使用したコンテンツ検出の強化 {#ai-smart-tags}
 
@@ -291,4 +302,3 @@ How can one search based strictly on the metadata. Similar to AEM Assets GQL que
 >
 >* [Search assets](search.md).
 -->
-
