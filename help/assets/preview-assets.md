@@ -50,13 +50,13 @@ ht-degree: 0%
    >
    > アセットセレクターに、最新のステータス更新が承認済みまたはプレビューに設定されたアセットが表示されます。
 
-1. 「**[!UICONTROL 公開を管理]** オプションを使用して、ページをプレビュー層に公開します。 [ プレビューへのコンテンツの公開 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content) セクションの手順を実行して、ページをプレビュー層に公開します。 公開後、ページのプレビュー URL を生成します。 プレビューページには、Sites ページのアセット（最新のステータス更新）が表示されます。
+1. 「**[!UICONTROL 公開を管理]** オプションを使用して、ページをプレビュー層に公開します。 [ プレビューへのコンテンツの公開 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content) セクションの手順を実行して、ページをプレビュー層に公開します。 公開後、ページのプレビュー URL を生成します。 プレビューページには、Sites ページのアセット（最新のステータス更新）が表示されます。
 
-レビューおよびフィードバックのために、関係者とこのプレビュー URL を共有します。 関係者が、プレビューページにアクセスできることを確認します。 プレビューページへのアクセスを提供する方法について詳しくは、[ プレビューサービスへのアクセス ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments#access-preview-service) を参照してください。
+レビューおよびフィードバックのために、関係者とこのプレビュー URL を共有します。 関係者が、プレビューページにアクセスできることを確認します。 プレビューページへのアクセスを提供する方法について詳しくは、[ プレビューサービスへのアクセス ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments#access-preview-service) を参照してください。
 
 >[!NOTE]
 >
->[ 画像 V3 コアコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/image#version-and-compatibility) は、デフォルトでアセットのプレビューバージョンをサポートしています。 [ アセットセレクター ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-upload) パネルを使用してアセットのプレビューバージョン（プレビューステータスのアセット）を選択すると、画像 V3 コンポーネントは、プレビュー層（Sites オーサーページのプレビューバージョン）でアセットを自動的にレンダリングします。
+>[ 画像 V3 コアコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/wcm-components/image#version-and-compatibility) は、デフォルトでアセットのプレビューバージョンをサポートしています。 [ アセットセレクター ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-upload) パネルを使用してアセットのプレビューバージョン（プレビューステータスのアセット）を選択すると、画像 V3 コンポーネントは、プレビュー層（Sites オーサーページのプレビューバージョン）でアセットを自動的にレンダリングします。
 
 アセットのバージョンを最終決定した後、公開するために [ ページをパブリッシュ層に公開 ](#publish-your-pages-to-publish-tier) します。
 
@@ -65,8 +65,8 @@ ht-degree: 0%
 公開するアセットのバージョンを最終決定した後、アセットのステータスを **[!UICONTROL 承認済み]** に設定します。 次に、ページをパブリッシュ層に公開します。 ページを公開するには、次の手順を実行します。
 
 1. 前述の [ サイトプレビューページでアセットをプレビューする ](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities) セクションの手順 1 に従って、アセットのステータスを **[!UICONTROL 承認済み]** に変更します。
-1. Sites オーサーページに移動し、[!DNL Publish tier] に公開します。 [ ページエディターからの公開 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor) セクションの手順を実行して、ページを公開します。
-または、[Sites コンソールからのページの公開 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console) の節の手順に従って、サイトのコンソールからページを公開します。
+1. Sites オーサーページに移動し、[!DNL Publish tier] に公開します。 [ ページエディターからの公開 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor) セクションの手順を実行して、ページを公開します。
+または、[Sites コンソールからのページの公開 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console) の節の手順に従って、サイトのコンソールからページを公開します。
 
    >[!NOTE]
    >
