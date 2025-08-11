@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: a2cdc36d4df7651d70d42118b6641935279673fc
+source-git-commit: ae423010910f66cd5e35ad8bd6b0c077d5bbda97
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1545'
 ht-degree: 1%
 
 ---
@@ -115,7 +115,7 @@ Forms送信サービスを設定する前に、次のことを確認してくだ
 
 >[!TIP]
 >
->**Edge Delivery Servicesを初めて使用する場合** はじめに [ チュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) から始めて、プロジェクトの基盤を設定します。
+>**Edge Delivery Servicesを初めて使用する場合** はじめに [ チュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) から始めて、プロジェクトの基盤を設定します。
 
 ## 設定方法
 
@@ -135,7 +135,7 @@ Forms送信サービスには、2 つの設定方法があります。 ワーク
 
 どちらの方法を設定する場合でも、事前にAEM プロジェクト基盤の準備が整っていることを確認してください。
 
-1. **AEM プロジェクトを作成または更新** し、最新のアダプティブ Forms ブロックを使用します（[ はじめる前にチュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)）。
+1. **AEM プロジェクトを作成または更新** し、最新のアダプティブ Forms ブロックを使用します（[ はじめる前にチュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)）。
 
 2. **プロジェクトルートの`fstab.yaml`** を更新します。
 
@@ -170,7 +170,7 @@ Google Sheets またはMicrosoft Excel を使用してフォーム構造を作�
 1. **スプレッドシートプラットフォームを開く** （Google Sheets またはMicrosoft Excel）
 2. フォームプロジェクトの **新しいスプレッドシートの作成**
 3. **シートに名前を付ける** （`helix-default` または `shared-aem` のいずれかにする必要があります）
-4. **フォーム作成ガイド** 使用した [ フォーム構造の定義 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+4. **フォーム作成ガイド** 使用した [ フォーム構造の定義 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![ フォームの定義 ](/help/forms/assets/form-submission-definition.png)
 *例：フィールドタイプ、ラベル、検証ルールを含むフォーム定義*
@@ -356,7 +356,7 @@ API を使用する前に、次のことを確認します。
 - `Content-Type: application/json`
 - `x-adobe-routing: tier=live,bucket=main--[repository]--[organization]`
 
-**API ドキュメント：**&#x200B;[ 完全な API リファレンス ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
+**API ドキュメント：**[ 完全な API リファレンス ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
 
 +++
 
@@ -375,29 +375,29 @@ Postmanは、API 送信をテストするための使いやすいインターフ
 
 **リクエスト設定：**
 
-    ```json
-https://forms.adobe.com/adobe/forms/af/submit/your-form-idに投稿
+```json
+POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
-ヘッダー：
+Headers:
 Content-Type: application/json
-x-adobe-routing: tier=live,bucket=main—your-repo—your-org
+x-adobe-routing: tier=live,bucket=main--your-repo--your-org
 
-本文（JSON）:
+Body (JSON):
 {
-&quot;data&quot;: {
-&quot;startDate&quot;: &quot;2025-01-10&quot;,
-&quot;endDate&quot;: &quot;2025-01-25&quot;,
-「宛先」: 「オーストラリア」、
-「class」:「First Class」
-&quot;budget&quot;: &quot;2000&quot;,
-&quot;amount&quot;: &quot;1000000&quot;,
-「名前」: 「Mary」、
-&quot;age&quot;: &quot;35&quot;,
-&quot;subscribe&quot;：なし、
-&quot;email&quot;: &quot;mary@gmail.com&quot;
+        "data": {
+            "startDate": "2025-01-10",
+            "endDate": "2025-01-25",
+            "destination": "Australia",
+            "class": "First Class",
+            "budget": "2000",
+            "amount": "1000000",
+            "name": "Mary",
+            "age": "35",
+            "subscribe": null,
+            "email": "mary@gmail.com"
+                }
 }
-}
-``
+```
 
 **期待される応答：**
 
@@ -426,12 +426,11 @@ x-adobe-routing: tier=live,bucket=main—your-repo—your-org
 >[!TAB macOS/Linux]
 
 ```bash
-
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
     --header "Content-Type: application/json" \
   --header "x-adobe-routing: tier=live,bucket=main--your-repo--your-org" \
-    --data '&lbrace;
-        "data": &lbrace;
+    --data '{
+        "data": {
             "startDate": "2025-01-10",
             "endDate": "2025-01-25",
             "destination": "Australia",
@@ -442,28 +441,24 @@ curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
             "age": "35",
             "subscribe": null,
       "email": "joe@example.com"
-                &rbrace;
-            &rbrace;'
+                }
+            }'
+```
 
-        ```
+>[!TAB Windows コマンドプロンプト ]
 
->[!TAB Windows Command Prompt]
-     
 ```cmd
-
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" ^
     --header "Content-Type: application/json" ^
   --header "x-adobe-routing: tier=live,bucket=main--your-repo--your-org" ^
   --data "{\"data\": {\"startDate\": \"2025-01-10\", \"endDate\": \"2025-01-25\", \"destination\": \"Australia\", \"class\": \"First Class\", \"budget\": \"2000\", \"amount\": \"1000000\", \"name\": \"Joe\", \"age\": \"35\", \"subscribe\": null, \"email\": \"joe@example.com\"}}"
-
 ```
 
 >[!TAB Windows PowerShell]
 
 ```powershell
-
-$body = @&lbrace;
-  data = @&lbrace;
+$body = @{
+  data = @{
     startDate = "2025-01-10"
     endDate = "2025-01-25"
     destination = "Australia"
@@ -474,26 +469,24 @@ $body = @&lbrace;
     age = "35"
     subscribe = $null
     email = "joe@example.com"
-  &rbrace;
-&rbrace; | ConvertTo-Json -Depth 3
+  }
+} | ConvertTo-Json -Depth 3
 
-Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" &grave;
-  -Method POST &grave;
-  -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} &grave;
+Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" `
+  -Method POST `
+  -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-
-    ```
+```
 
 >[!ENDTABS]
 
 +++
 
-+++ API Response & Verification
++++ API の応答と検証
 
-**Successful Response:**
+**成功した応答：**
 
 ```http
-
 HTTP/1.1 201 Created
 Connection: keep-alive
 Content-Length: 0
@@ -501,7 +494,6 @@ X-Request-Id: 02a53839-2340-56a5-b238-67c23ec28f9f
 X-Message-Id: 42ecb4dd-b63a-4674-8f1a-05a4a5b0372c
 Date: Fri, 10 Jan 2025 13:06:10 GMT
 Access-Control-Allow-Origin: *
-
 ```
 
 **データ検証：**
@@ -529,52 +521,44 @@ Access-Control-Allow-Origin: *
 **問題：403 Forbidden エラー**
 
 ```
-
 Causes: Missing or incorrect access permissions
 Solutions:
 - Verify forms@adobe.com has Editor access to your spreadsheet
 - Check that your repository is added to the allowlist
 - Confirm the x-adobe-routing header format
-
 ```
 
 **問題：404 エラーが見つかりません**
 
 ```
-
 Causes: Incorrect Form ID or endpoint URL
 Solutions:  
 - Verify your Form ID is correct
 - Check the API endpoint URL format
 - Ensure your form is published and live
-
 ```
 
 
 **問題：スプレッドシートにデータが表示されない**
 
 ```
-
 Causes: Missing 'incoming' sheet or permission issues
 Solutions:
 - Confirm 'incoming' sheet exists (case-sensitive)
 - Verify column headers match form field names exactly
 - Check forms@adobe.com has edit permissions
 - Ensure spreadsheet is shared properly
-
 ```
 
 
 **問題：無効な JSON 形式のエラー**
 
 ```
-
 Causes: Malformed request body
 Solutions:
 - Validate JSON syntax using online JSON validators
 - Ensure proper escaping of special characters
 - Check quote marks and brackets are balanced
-
 ```
 
 
@@ -586,7 +570,7 @@ Solutions:
 
 - **アーリーアクセスの問題：** 電子メール [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
 - **API ドキュメント：**[ 開発者向けリファレンス ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
-- **コミュニティサポート：**[Adobe Experience League コミュニティ ](https://experienceleaguecommunities.adobe.com/?profile.language=ja)
+- **コミュニティサポート：**[Adobe Experience League コミュニティ ](https://experienceleaguecommunities.adobe.com/)
 
 +++
 
@@ -597,7 +581,7 @@ Forms送信サービスを設定したので、次の関連トピックを参照
 
 +++ Formsの強化
 
-- **[詳細Formsの作成 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** – 検証、条件付きロジック、カスタムスタイル設定を追加します
+- **[詳細Formsの作成 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** – 検証、条件付きロジック、カスタムスタイル設定を追加します
 - **[フォームコンポーネントガイド ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** – 使用可能なフォームフィールドタイプを調べます
 
 +++
