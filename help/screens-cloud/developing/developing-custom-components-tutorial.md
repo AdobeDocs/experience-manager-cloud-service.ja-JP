@@ -5,9 +5,9 @@ exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 feature: Developing Screens
 role: Admin, Developer, User
 source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2039'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Screens プロジェクトのソースコードは、通常、マルチモジュ
 
 1. **AEM Screens／We.Retail Run プロジェクト**&#x200B;に移動します。
 
-   AEM グローバルナビゲーション / Screens アイコンをクリックします。 We.Retail Run プロジェクトが表示されることを確認します。
+   AEM グローバルナビゲーションで Screens アイコンをクリックします。We.Retail Run プロジェクトが表示されることを確認します。
 
    ![we-retaiul-run-starter](/help/screens-cloud/developing/assets/we-retaiul-run-starter.png)
 
@@ -400,7 +400,7 @@ AEM Screens では、[静的ページテンプレート](https://experienceleagu
 
 Hello World コンポーネントは、シーケンスチャネルでの使用を目的としています。このコンポーネントをテストするために、新しいシーケンスチャネルを作成します。
 
-1. AEMのグローバルナビゲーションで、**Screens**/**We.Retail Run** n/に移動し、「**チャネル**」を選択します。
+1. AEM グローバルナビゲーションで、**Screens**／**We.Retail Run** に移動し、「**チャネル**」を選択します。
 
 1. 「**作成**」ボタンをクリックします。
 

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '698'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -49,19 +49,19 @@ AEM as a Cloud Service にはビルトインの CDN（コンテンツ配信ネ�
 
 ## ワークフロー {#workflow}
 
-カスタムドメイン名を追加するには、DNS サービスと Cloud Manager 間のやり取りが必要です。このワークフローでは、カスタムドメイン名のインストール、設定、および検証には、いくつかの手順が必要です。次の表に、必要な手順と、それらの手順を完了するためのドキュメントリソースへのリンクを示します。
+カスタムドメイン名を追加するには、DNS サービスと Cloud Manager 間のやり取りが必要です。このワークフローでは、カスタムドメイン名のインストール、設定、および検証には、いくつかの手順が必要です。次の表に、必要な手順の概要と、これらの手順を完了するドキュメントリソースへのリンクを示します。
 
 >[!WARNING]
 >
->手順 4 （DNS の設定）の実行 *手順 3* ドメインマッピングの追加）が正常に完了した後のみ）。 この順序に従って、ドメインをAdobe CDN に登録し、正しいルーティングを設定して、サイトをドメインのテイクオーバーから保護します。
+>ステップ 3（ドメインマッピングを追加）が正常に完了した&#x200B;*後にのみ*、ステップ 4（DNS を設定）を実行します。この手順に従うと、ドメインがアドビの CDN に登録され、正しいルーティングが設定され、サイトがドメインのテイクオーバーから保護されます。
 
 | ステップ | 説明 |
 | --- | --- |
-| 1 | [SSL 証明書を追加 ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
-| 2 | [ カスタムドメインの追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 3 | [ ドメインマッピングの追加 ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 4 | [DNS の設定 ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | [DNS ステータスの確認 ](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+| 1 | [SSL 証明書を追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 2 | [カスタムドメインを追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
+| 3 | [ドメインマッピングを追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
+| 4 | [DNS を設定](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 5 | [DNS ステータスを確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >

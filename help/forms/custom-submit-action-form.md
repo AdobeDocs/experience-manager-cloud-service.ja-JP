@@ -6,9 +6,9 @@ role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
 source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1697'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 ## 送信アクション {#submit-action}
 
-送信アクションは、次の :Folder うな Sling です。
+送信アクションは、次のファイルを含む sling:Folder です。
 
 * **addfields.jsp**：このスクリプトは、レンディション中に HTML ファイルに追加されるアクションフィールドを指定します。post.POST.jsp スクリプトでの送信中に必要な非表示の入力パラメーターの追加には、このスクリプトを使用します。
 * **dialog.xml**：このスクリプトは、CQ コンポーネントダイアログに似ています。作成者がカスタマイズする設定情報を提供します。フィールドは、送信アクションを選択するときに、アダプティブフォーム編集ダイアログの送信アクションタブに表示されます。
@@ -103,7 +103,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
    * 文字列型の **guideComponentType** および値 **fd/af/components/guidesubmittype**
    * 送信アクションが適用されるアダプティブフォームのタイプを指定する文字列型の **guideDataModel**。<!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsdi** は、XSD ベースのアダプティブフォームでサポートされています。**basic** は、XDP または XSD を使用しないアダプティブフォームでサポートされています。複数のタイプのアダプティブフォームでのアクションを表示するには、対応する文字列を追加します。各文字列はカンマで区切ります。例えば、<!--XFA- and -->XSD ベースのアダプティブフォームでアクションを表示するには、値を <!--**xfa** and--> **xsd** に指定します。
 
-   * **jcr:description** （文字列型） このプロパティの値は、アダプティブフォーム編集ダイアログの「送信アクション」タブにある送信アクションリストに表示されます。OOTB アクションは、**/libs/fd/af/components/guidesubmittype** の場所にある CRX リポジトリーに存在します。
+   * **jcr:description**（タイプ - 文字列）。このプロパティの値は、アダプティブフォーム編集ダイアログの「送信アクション」タブにある送信アクションリストに表示されます。OOTB アクションは、**/libs/fd/af/components/guidesubmittype** の場所にある CRX リポジトリーに存在します。
 
    * **文字列**&#x200B;型の submitService。詳しくは、「[カスタムアクション用にアダプティブフォームの送信をスケジュール](#schedule-adaptive-form-submission)」を参照してください。
 
@@ -115,9 +115,9 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 CRX リポジトリーにデータを保存した後にメール送信を行うカスタム送信アクションを作成するには、次の手順を実行します。アダプティブフォームには、CRX リポジトリーにデータを保存する OOTB の送信アクション、コンテンツを格納アクション（非推奨）が含まれています。さらに、AEM には、メール送信に使用される [Mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API が含まれています。Mail API を使用する前に、システムコンソールを通して Day CQ Mail サービスを設定します。リポジトリーにデータを保存するには、コンテンツを格納アクション（非推奨）を再利用できます。コンテンツを格納アクション（非推奨）は、CRX リポジトリーの /libs/fd/af/components/guidesubmittype/store にあります。
 
-1. URL https://&lt;server>:&lt;port>/crx/de/index.jspから、CRXDE Lite にログインします。/apps/custom_submit_action フォルダー内に sling:Folder プロパティを持つノードを作成し、名前を store_and_mail に設定します。 custom_submit_action フォルダーが存在しない場合は作成します。
+1. URL https://&lt;server>:&lt;port>/crx/de/index.jspから、CRXDE Lite にログインします。/apps/custom_submit_action フォルダー内に sling:Folder プロパティを持つノードを作成し、名前を store_and_mail に設定します。custom_submit_action フォルダーが存在しない場合は作成します。
 
-   ![sling プロパティを持つノードの作成を示したスクリーンショット :Folder](assets/step1.png)
+   ![sling:Folder](assets/step1.png) プロパティを持つノードの作成を示したスクリーンショット
 
 2. **必須の設定フィールドを指定します。**
 
@@ -139,7 +139,7 @@ CRX リポジトリーにデータを保存した後にメール送信を行う�
 
    * **文字列**&#x200B;型の **guideDataModel** および値 **<!--xfa, -->xsd、basic**
 
-   * **文字列:description** 型の **jcr** と値 **Store and Email Action**
+   * **文字列**&#x200B;型の **jcr:description** および値 **Store and Email Action**
 
    * **文字列**&#x200B;型の **submitService** および値 **Store and Email**。詳しくは、「[カスタムアクション用にアダプティブフォームの送信をスケジュール](#schedule-adaptive-form-submission)」を参照してください。
 

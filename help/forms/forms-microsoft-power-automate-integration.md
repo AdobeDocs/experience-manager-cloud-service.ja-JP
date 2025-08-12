@@ -6,9 +6,9 @@ keywords: AEM forms を Power Automate に接続、Power Automate による AEM 
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
 source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1531'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -223,7 +223,7 @@ Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
 1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。 アダプティブフォームコンテナダイアログボックスが開きます。
 1. 「**[!UICONTROL 送信]**」タブをクリックします。
-1. 「送信アクション」ドロップダウンリストから「**[!UICONTROL Power Automate フローを呼び出す]**」オプションを選択し、「**[!UICONTROL Power Automate フロー]**」を選択します。 必要なフローを選択すると、送信時にアダプティブフォームデータが送信されます。
+1. 送信アクションドロップダウンリストから「**[!UICONTROL Power Automate フローを呼び出す]**」オプションを選択し、「**[!UICONTROL Power Automate フロー]**」を選択します。 必要なフローを選択すると、送信時にアダプティブフォームデータが送信されます。
 
    ![送信アクションの設定](/help/forms/assets/power-automate-cc.png)
 1. 「**[!UICONTROL 完了]**」をクリックします。
@@ -297,19 +297,19 @@ Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接
 1. オーサーインスタンスにログインし、アダプティブフォームを選択します。
 1. 設定コンテナで、[Microsoft® Power Automate Dataverse クラウド設定を作成](#microsoft-power-automate-dataverse-cloud-configuration)セクションで作成したコンテナを参照して選択し、「**[!UICONTROL 保存して閉じる]**」を選択します。
 1. アダプティブフォームを編集用に開きます。
-1. エディターで **フォームプロパティを編集** 拡張機能をクリックします。
-**フォームのプロパティ** ダイアログが表示されます。
+1. エディターで&#x200B;**フォームプロパティを編集**拡張機能をクリックします。
+**フォームプロパティ**&#x200B;ダイアログが表示されます。
 
    >[!NOTE]
    >
-   > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Managerで **フォームプロパティを編集** 拡張機能を有効にします。
-   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
+   > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Manager で&#x200B;**フォームプロパティを編集**&#x200B;拡張機能を有効にします。
+   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については、[Extension Manager 機能のハイライト](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)の記事を参照してください。
 
 
-1. 「**送信**」タブをクリックし、「**[!UICONTROL Power Automate フローの呼び出し]** 送信アクションを選択します。 必要なフローを選択すると、送信時にアダプティブフォームデータが送信されます。
+1. 「**送信**」タブをクリックし、「**[!UICONTROL Power Automate フローを呼び出す]**」送信アクションを選択します。必要なフローを選択すると、送信時にアダプティブフォームデータが送信されます。
 
    ![送信アクションの設定](/help/forms/assets/power-automate-ue.png)
-1. **[!UICONTROL 保存して閉じる]** をクリックします。
+1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
 >[!NOTE]
 >

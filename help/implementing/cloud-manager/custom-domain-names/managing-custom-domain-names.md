@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '833'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ Adobe Cloud Manager では、次の理由により、カスタムドメイン名
 
 >[!WARNING]
 >
->Cloud Managerでドメインを削除する *前に*、お使いの DNS プロバイダーでドメインの DNS レコードを削除します。 放棄された（ダングリングされた） DNS エントリは、ハイジャックされる可能性があり、セキュリティリスクの原因となる可能性があります。
+>Cloud Manager でドメインを削除する&#x200B;*前*&#x200B;に、DNS プロバイダーでドメインの DNS レコードを削除します。放棄された（ダングリングされた） DNS エントリはハイジャックされ、セキュリティリスクをもたらす場合があります。
 
 **特定の環境からカスタムドメイン名を削除するには：**
 
