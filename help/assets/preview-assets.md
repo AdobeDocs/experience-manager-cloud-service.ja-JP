@@ -2,9 +2,10 @@
 title: AEM Sites ページで使用する前にアセットをプレビューする
 description: OpenAPI 機能を備えた Dynamic Media を使用すると、Adobe Experience Manager（AEM） Sites のプレビューページでアセットをプレビューできます。 このアセットプレビューを使用すると、アセットを公開する前に（更新されたアセットを含む）作成者ページを公開前に、作成者および関係者がアセットの更新を確認および検証できます。
 role: Admin, User
-source-git-commit: e343cc5754ec5565e57a5a932d59d7bfe78c6027
+exl-id: 6f071ca9-0f84-45fc-a6b3-047cca9d5e65
+source-git-commit: 3f3e091d09b94418fc2cda0bd3b3ce950555b7a9
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Dynamic Media with OpenAPI capabilities] を使用すると、[!DNL Adobe Experience Manager (AEM) Sites] オーサーページで使用可能なアセットを、公開する前にプレビューできます。 アセットのプレビューは、サイトのオーサー層とプレビュー層で使用できます。
 
-[AEM Sites プレビューページでアセットをプレビュー ](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities) するには、プレビューするアセットを追加するか、ライブサイトページで使用可能な既存のアセットを置き換えて、サイトのオーサーページを更新します。 次に、更新されたオーサーページをプレビュー層に公開して、プレビュー URL を生成します。
+[AEM Sites プレビューページでアセットをプレビュー ](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities) するには、プレビューするアセットを追加するか、ライブサイトページで使用可能な既存のアセットを置き換えて、サイトのオーサーページを更新します。 更新されたオーサーページをプレビュー層に公開して、プレビュー URL を生成します。
 
 プレビューページを関係者と共有して、更新されたアセットの視覚的な品質とコンテキストの整合性に関するフィードバックを収集します。 フィードバックに基づいてアセットを絞り込みます。 レビューサイクル中に、アセットの複数のバージョンを作成および管理します。
 
@@ -26,7 +27,7 @@ ht-degree: 0%
 
 * [!DNL AEM Assets as a Cloud Service] にアクセスします。
 * アセットのステータスプロパティを編集する権限。
-* プレビューするアセットを含むフォルダーに適用されたメタデータフォームの [ 基本 [!UICONTROL &#x200B; タブ &#x200B;] で使用可能な [!UICONTROL &#x200B; ステータス &#x200B;] メタデータプロパティに [!UICONTROL &#x200B; プレビュー &#x200B;]](/help/assets/metadata-assets-view.md#edit-metadata-forms) 値を追加しました。
+* プレビューするアセットを含むフォルダーに適用されたメタデータフォームの [ 基本 [!UICONTROL  タブ ] で使用可能な [!UICONTROL  ステータス ] メタデータプロパティに [!UICONTROL  プレビュー ]](/help/assets/metadata-assets-view.md#edit-metadata-forms) 値を追加しました。
   ![ 「プレビューを追加」オプション ](/help/assets/assets/metedata-form-preview.png)
 * プレビュートークンを生成するためのキー。 [Adobe サポートに問い合わせ ](https://helpx.adobe.com/in/contact.html)、キーのリクエストを発行します。
 
@@ -41,22 +42,22 @@ ht-degree: 0%
    1. [!DNL Assets View] で **[!UICONTROL Assets]** を選択し、フォルダーに移動します。
    1. プレビューするアセットを選択します
    1. **[!UICONTROL 詳細]** をクリックします。
-   1. [!UICONTROL &#x200B; 情報パネル &#x200B;] で、**[!UICONTROL ステータス]** を **[!UICONTROL プレビュー]** に設定し、「**[!UICONTROL 保存]**」をクリックします。
+   1. [!UICONTROL  情報パネル ] で、**[!UICONTROL ステータス]** を **[!UICONTROL プレビュー]** に設定し、「**[!UICONTROL 保存]**」をクリックします。
       ![プレビュー](/help/assets/assets/preview-boat-at-bay.png)
 
-1. Sites オーサリングページに移動します。 [AEM ページエディターでリモートアセットにアクセス ](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) の手順を実行し、アセットセレクターパネルを使用して最近プレビュー（ステータス）に設定したアセットを選択します。
+1. Sites オーサリングページに移動します。 最近プレビュー（ステータス）に設定したアセットをアセットセレクターパネルで選択するには、[AEM ページエディターでのリモートアセットへのアクセス ](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) の手順を実行します。
 
    >[!NOTE]
    >
    > アセットセレクターに、最新のステータス更新が承認済みまたはプレビューに設定されたアセットが表示されます。
 
-1. 「**[!UICONTROL 公開を管理]** オプションを使用して、ページをプレビュー層に公開します。 [ プレビューへのコンテンツの公開 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content) セクションの手順を実行して、ページをプレビュー層に公開します。 公開後、ページのプレビュー URL を生成します。 プレビューページには、Sites ページのアセット（最新のステータス更新）が表示されます。
+1. 「**[!UICONTROL 公開を管理]** オプションを使用して、ページをプレビュー層に公開します。 [ プレビューへのコンテンツの公開 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content) セクションの手順を実行して、ページをプレビュー層に公開します。 公開後、ページのプレビュー URL を生成します。 プレビューページには、Sites ページのアセット（最新のステータス更新）が表示されます。
 
-レビューおよびフィードバックのために、関係者とこのプレビュー URL を共有します。 関係者が、プレビューページにアクセスできることを確認します。 プレビューページへのアクセスを提供する方法について詳しくは、[ プレビューサービスへのアクセス ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments#access-preview-service) を参照してください。
+レビューおよびフィードバックのために、関係者とこのプレビュー URL を共有します。 関係者が、プレビューページにアクセスできることを確認します。 プレビューページへのアクセスを提供する方法について詳しくは、[ プレビューサービスへのアクセス ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments#access-preview-service) を参照してください。
 
 >[!NOTE]
 >
->[ 画像 V3 コアコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/wcm-components/image#version-and-compatibility) は、デフォルトでアセットのプレビューバージョンをサポートしています。 [ アセットセレクター ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-upload) パネルを使用してアセットのプレビューバージョン（プレビューステータスのアセット）を選択すると、画像 V3 コンポーネントは、プレビュー層（Sites オーサーページのプレビューバージョン）でアセットを自動的にレンダリングします。
+>[ 画像 V3 コアコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/image#version-and-compatibility) は、デフォルトでアセットのプレビューバージョンをサポートしています。 [ アセットセレクター ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-upload) パネルを使用してアセットのプレビューバージョン（プレビューステータスのアセット）を選択すると、画像 V3 コンポーネントは、プレビュー層（Sites オーサーページのプレビューバージョン）でアセットを自動的にレンダリングします。
 
 アセットのバージョンを最終決定した後、公開するために [ ページをパブリッシュ層に公開 ](#publish-your-pages-to-publish-tier) します。
 
@@ -65,8 +66,8 @@ ht-degree: 0%
 公開するアセットのバージョンを最終決定した後、アセットのステータスを **[!UICONTROL 承認済み]** に設定します。 次に、ページをパブリッシュ層に公開します。 ページを公開するには、次の手順を実行します。
 
 1. 前述の [ サイトプレビューページでアセットをプレビューする ](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities) セクションの手順 1 に従って、アセットのステータスを **[!UICONTROL 承認済み]** に変更します。
-1. Sites オーサーページに移動し、[!DNL Publish tier] に公開します。 [ ページエディターからの公開 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor) セクションの手順を実行して、ページを公開します。
-または、[Sites コンソールからのページの公開 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console) の節の手順に従って、サイトのコンソールからページを公開します。
+1. Sites オーサーページに移動し、[!DNL Publish tier] に公開します。 [ ページエディターからの公開 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor) セクションの手順を実行して、ページを公開します。
+または、[Sites コンソールからのページの公開 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console) の節の手順に従って、サイトのコンソールからページを公開します。
 
    >[!NOTE]
    >
@@ -74,4 +75,3 @@ ht-degree: 0%
 
    ![ ページが公開されました ](/help/assets/assets/the-page-has-been-publushed.png)
 公開に成功すると、確認メッセージ **[!UICONTROL ページが公開されました]** が表示されます。 パブリッシュ層で公開済みのページに移動して、更新がライブであり、コンテンツが期待どおりに表示されることを確認します。
-
