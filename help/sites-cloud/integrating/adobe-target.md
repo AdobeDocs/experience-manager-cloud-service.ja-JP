@@ -42,7 +42,7 @@ Target に統合するには、次のタスクを実行します。
 
 >[!CAUTION]
 >
->AEM as a Cloud Service では、AEM から Adobe Target にオファーとアクティビティを同期するレプリケーションエージェントは、デフォルトで無効になっています。レプリケーションエージェントを再度有効にする必要がある場合は、[アドビサポート](https://experienceleague.adobe.com/?support-solution=General&lang=ja#support)チームにお問い合わせください。
+>AEM as a Cloud Service では、AEM から Adobe Target にオファーとアクティビティを同期するレプリケーションエージェントは、デフォルトで無効になっています。レプリケーションエージェントを再度有効にする必要がある場合は、[アドビサポート](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja#support)チームにお問い合わせください。
 
 >[!NOTE]
 >
