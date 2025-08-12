@@ -58,7 +58,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
    `String att=request.getParameter("attachments");`
 
    この例では、`data` が XML データを格納し、`att` が添付ファイルデータを格納します。
-**[!UICONTROL REST エンドポイントへの送信]**送信アクションでは、フォームに入力されたデータを HTTP GET リクエストの一部として設定済みの確認ページに送信します。リクエストにフィールド名を追加できます。リクエストのフォーマットを以下に示します。
+**[!UICONTROL REST エンドポイントへの送信]**&#x200B;送信アクションでは、フォームに入力されたデータを HTTP GET リクエストの一部として設定済みの確認ページに送信します。リクエストにフィールド名を追加できます。リクエストのフォーマットを以下に示します。
    `{fieldName}={request parameter name}`
 
    以下の画像に示されているように、`param1` および `param2` が、**textbox** フィールドおよび **numericbox** フィールドからコピーされた値を持つパラメーターとして、次のアクションに向けて渡されます。
@@ -114,13 +114,13 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
    **[!UICONTROL POST リクエストを有効にする]**&#x200B;ことで、リクエストを POST する URL を指定することもできます。フォームをホストする AEM サーバーにデータを送信するには、AEM サーバーのルートパスに対応する相対パスを使用します。例えば、`/content/forms/af/SampleForm.html` のようになります。他のサーバーにデータを送信するには、絶対パスを使用します。
 
-+++
+   +++
 
    +++設定
 
    このオプションを使用すると、AEM の設定ブラウザー経由で管理される事前定義済みの HTTP 設定を追加できます。サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。認証タイプとコンテンツタイプについて詳しくは、[データソースの設定](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)を参照してください。
 
-+++
+   +++
 
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
@@ -129,7 +129,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 ユニバーサルエディターでオーサリングされたアダプティブフォームの Swagger Open API 仕様に基づいて送信アクションを設定するには：
 
 1. アダプティブフォームを編集用に開きます。
-1. エディターで&#x200B;**フォームプロパティを編集**拡張機能をクリックします。
+1. エディターで&#x200B;**フォームプロパティを編集**&#x200B;拡張機能をクリックします。
 **フォームプロパティ**&#x200B;ダイアログが表示されます。
    >[!NOTE]
    >
@@ -171,13 +171,13 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
    **[!UICONTROL POST リクエストを有効にする]**&#x200B;ことで、リクエストを POST する URL を指定することもできます。フォームをホストする AEM サーバーにデータを送信するには、AEM サーバーのルートパスに対応する相対パスを使用します。例えば、`/content/forms/af/SampleForm.html` のようになります。他のサーバーにデータを送信するには、絶対パスを使用します。
 
-+++
+   +++
 
    +++設定
 
    このオプションを使用すると、AEM の設定ブラウザー経由で管理される事前定義済みの HTTP 設定を追加できます。サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。認証タイプとコンテンツタイプについて詳しくは、[データソースの設定](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)を参照してください
 
-+++
+   +++
 
 1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
