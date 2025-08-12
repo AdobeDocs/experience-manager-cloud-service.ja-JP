@@ -5,10 +5,10 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
-workflow-type: ht
-source-wordcount: '316'
-ht-degree: 100%
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 85%
 
 ---
 
@@ -18,14 +18,19 @@ ht-degree: 100%
 
 このチュートリアルでは、全体を通じて、製品カルーセルコンポーネントの拡張を行います。最初の手順として、製品カルーセルのインスタンスをホームページに追加し、ベースライン機能を理解します。
 
-1. サイトのホームページ（例：[http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)）に移動します。
+1. サイトのホームページ（例：[http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)）に移動します
 1. ページのメインレイアウトコンテナに新しい製品カルーセルコンポーネントを挿入します。
    ![製品カルーセルコンポーネント](/help/commerce-cloud/assets/product-carousel-component.png)
-1. サイドパネルを展開し（まだ切り替えていない場合）、アセットファインダードロップダウンを&#x200B;**製品**に切り替えます。
-     ![カルーセル製品](/help/commerce-cloud/assets/carousel-products.png)    
+1. サイドパネルを展開し（まだ切り替えていない場合）、アセットファインダードロップダウンを **製品** に切り替えます。
+
+   ![ カルーセル製品 ](/help/commerce-cloud/assets/carousel-products.png)
+
 1. 接続された Adobe Commerce インスタンスから使用可能な製品のリストが表示されます。
+
    ![接続済みインスタンス](/help/commerce-cloud/assets/connected-instance.png)
+
 1. 製品は、以下のようにデフォルトのプロパティで表示されます。
+
    ![プロパティで表示される製品](/help/commerce-cloud/assets/discount.png)
 
 ## Sling モデルの更新 {#update-sling-model}
@@ -40,6 +45,7 @@ Sling モデルを実装して、製品カルーセルのビジネスロジッ�
    public interface CustomCarousel extends ProductCarousel {
    }
    ```
+
 1. 次に、`core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java` に実装クラス `CustomCarouselImpl.java` を作成します。
 Sling モデルのデリゲーションパターンを使用すると、`CustomCarouselImpl` は `sling:resourceSuperType` プロパティを介して `ProductCarousel` モデルを参照できます。
 
@@ -49,7 +55,7 @@ Sling モデルのデリゲーションパターンを使用すると、`CustomC
    private ProductCarousel productCarousel;
    ```
 
-1. @PostConstruct 注釈により、Sling モデルが初期化されるとこのメソッドが呼び出されます。製品の GraphQL クエリは、属性を取得するために extendProductQueryWith メソッドを使用して既に拡張されています。GraphQL クエリを更新して、属性を部分クエリに含めます。
+1. @PostConstruct 注釈により、Sling モデルが初期化されるとこのメソッドが呼び出されます。製品の GraphQL クエリは、属性を取得するために extendProductQueryWith メソッドを使用して既に拡張されています。GraphQL クエリを更新して、部分的なクエリに属性を含めます。
 
    ```
    @PostConstruct

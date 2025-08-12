@@ -4,8 +4,8 @@ description: Web アプリケーションファイアウォール（WAF）ルー
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: c54f77a7e0a034bab5eeddcfe231973575bf13f4
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '4582'
 ht-degree: 100%
 
@@ -182,7 +182,7 @@ data:
 
 | **プロパティ** | **タイプ** | **説明** |
 |---|---|---|
-| reqProperty | `string` | リクエストプロパティ。<br><br>次のいずれか：<br><ul><li>`path`：URL のフルパスをクエリパラメーターなしで返します。（エスケープされていないバリアントには `pathRaw` を使用）</li><li>`url`：完全な URL をクエリパラメーターを含めて返します。（エスケープされていないバリアントには `urlRaw` を使用）</li><li>`queryString`：URL のクエリ部分を返します</li><li>`method`：リクエストで使用される HTTP メソッドを返します。</li><li>`tier`：`author`、`preview` または `publish` のいずれか 1 つを返します。</li><li>`domain`：小文字のドメインプロパティ（`Host` ヘッダーで定義）を返します</li><li>`clientIp`：クライアント IP を返します。</li><li>`forwardedDomain`：`X-Forwarded-Host` ヘッダーで定義されている最初のドメインを小文字で返します。</li><li>`forwardedIp`：`X-Forwarded-For` ヘッダーの最初の IP を返します。</li><li>`clientRegion`：[ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) で説明されているように、クライアントがいる地域を識別する国の下位区分コードを返します。</li><li>`clientCountry`：クライアントがいる国を識別する 2 文字のコード（[地域指標記号](https://en.wikipedia.org/wiki/Regional_indicator_symbol)）を返します。</li><li>`clientContinent`：クライアントがいる大陸を識別する 2 文字のコード（AF、AN、AS、EU、NA、OC、SA）を返します。</li><li>`clientAsNumber`：クライアント IP に関連付けられた[自律システム](https://en.wikipedia.org/wiki/Autonomous_system_(Internet))番号を返します。</li><li>`clientAsName`：自律システム番号に関連付けられた名前を返します。</li></ul> |
+| reqProperty | `string` | リクエストプロパティ。<br><br>次のいずれか：<br><ul><li>`path`：URL のフルパスをクエリパラメーターなしで返します。（エスケープされていないバリアントには `pathRaw` を使用）</li><li>`url`：完全な URL をクエリパラメーターを含めて返します。（エスケープされていないバリアントには `urlRaw` を使用）</li><li>`queryString`：URL のクエリ部分を返します</li><li>`method`：リクエストで使用される HTTP メソッドを返します。</li><li>`tier`：`author`、`preview` または `publish` のいずれか 1 つを返します。</li><li>`domain`：小文字のドメインプロパティ（`Host` ヘッダーで定義）を返します</li><li>`clientIp`：クライアント IP を返します。</li><li>`forwardedDomain`：`X-Forwarded-Host` ヘッダーで定義されている最初のドメインを小文字で返します。</li><li>`forwardedIp`：`X-Forwarded-For` ヘッダーの最初の IP を返します。</li><li>`clientRegion`：[ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) で説明されているように、クライアントがいる地域を識別する国の下位区分コードを返します。</li><li>`clientCountry`：クライアントがいる国を識別する 2 文字のコード（[地域指標シンボル](https://en.wikipedia.org/wiki/Regional_indicator_symbol)）を返します。</li><li>`clientContinent`：クライアントがいる大陸を識別する 2 文字のコード（AF、AN、AS、EU、NA、OC、SA）を返します。</li><li>`clientAsNumber`：クライアント IP に関連付けられた[自律システム](https://en.wikipedia.org/wiki/Autonomous_system_(Internet))番号を返します。</li><li>`clientAsName`：自律システム番号に関連付けられた名前を返します。</li></ul> |
 | reqHeader | `string` | 指定された名前のリクエストヘッダーを返します |
 | queryParam | `string` | 指定された名前のクエリパラメーターを返します |
 | reqCookie | `string` | 指定された名前の Cookie を返します |
@@ -745,8 +745,8 @@ data:
    * このルールをデプロイした後、CDN ログを慎重に分析して、正当なリクエストが正しくフラグ付けされていないことを確認します。正当なトラフィックが影響を受けていないことが確認したら、ブロックモードに切り替えます。
 
 >[!NOTE]
-> 当社のエクスペリエンスでは、ATTACKフラグに関連する誤検知はまれであることが示されています。したがって、IP アドレスが悪意のあるものとして知られていない場合でも、すべての疑わしいトラフィックをすぐにブロックし、その後 CDN ログ分析を使用して正当なトラフィックの許可ルールを特定して導入することが実用的な戦略であることがあります。各組織は、保護を強化することによるメリットと、正当なリクエストを誤ってブロックしてしまうリスクを比較検討しながら、リスクに対する独自の許容値を評価する必要があります。
 >
+> 当社のエクスペリエンスでは、ATTACKフラグに関連する誤検知はまれであることが示されています。したがって、IP アドレスが悪意のあるものとして知られていない場合でも、すべての疑わしいトラフィックをすぐにブロックし、その後 CDN ログ分析を使用して正当なトラフィックの許可ルールを特定して導入することが実用的な戦略であることがあります。各組織は、保護を強化することによるメリットと、正当なリクエストを誤ってブロックしてしまうリスクを比較検討しながら、リスクに対する独自の許容値を評価する必要があります。
 
 ```
     # blocks likely attack traffic, which also comes from suspected IPs
@@ -773,8 +773,7 @@ data:
 
 2025年7月より前に、アドビでは、以下にリストする WAF ルールを推奨していましたが、これらは引き続き有効で、悪意のあるトラフィックに対する防御に効果的です。新しい推奨ルールへの移行に関する考慮事項について詳しくは、チュートリアルを参照してください。
 
-<details>
-  <summary>展開すると、従来の推奨される WAF ルールが表示されます。</summary>
++++ 展開すると、従来の推奨される WAF ルールが表示されます。
 
 ```
     # Enable recommended WAF protections (only works if WAF is licensed enabled for your environment)
@@ -799,7 +798,8 @@ data:
           - PRIVATEFILE
           - NULLBYTE
 ```
-</details>
+
++++
 
 ## チュートリアル {#tutorial}
 
@@ -813,7 +813,3 @@ WAF ルールを含むトラフィックフィルタールールに関する実�
 * 悪意のあるトラフィックをシミュレートするツールを使用したルールのテスト
 * ログ分析ツールを使用した結果の分析
 * ベストプラクティス
-
-
-
-

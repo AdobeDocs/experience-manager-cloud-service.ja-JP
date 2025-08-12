@@ -4,7 +4,7 @@ description: AEM as a Cloud Service での配布とレプリケーションの�
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1711'
 ht-degree: 99%
@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 >[!NOTE]
 >
 >コンテンツの一括公開に興味がある場合は、大きなペイロードを効率的に処理できる[ツリーアクティベーションワークフローステップ](#tree-activation)を使用してワークフローを作成します。
->&#x200B;>独自の一括公開カスタムコードを作成することはお勧めできません。
->&#x200B;>何らかの理由でカスタマイズする必要がある場合は、既存のワークフロー API を使用して、このステップをトリガーできます。
->&#x200B;>常に、公開する必要のあるコンテンツのみを公開することをお勧めします。また、必要がない場合は、大量のコンテンツを公開しないようにしてください。ただし、ツリーアクティベーションワークフローステップを使用したワークフローを通じて送信できるコンテンツの量に制限はありません。
+>>独自の一括公開カスタムコードを作成することはお勧めできません。
+>>何らかの理由でカスタマイズする必要がある場合は、既存のワークフロー API を使用して、このステップをトリガーできます。
+>>常に、公開する必要のあるコンテンツのみを公開することをお勧めします。また、必要がない場合は、大量のコンテンツを公開しないようにしてください。ただし、ツリーアクティベーションワークフローステップを使用したワークフローを通じて送信できるコンテンツの量に制限はありません。
 
 ### クイック公開／非公開 - 計画的公開／非公開 {#publish-unpublish}
 
@@ -126,8 +126,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 >
 >この機能は非推奨（廃止予定）となり、代わりにカスタムワークフローに含めることができる、よりパフォーマンスの高いツリーアクティベーションステップに置き換わりました。
 
-<details>
-<summary>廃止された機能について詳しくは、こちらをクリックしてください。</summary>
++++ 廃止された機能について詳しくは、こちらをクリックしてください。
 
 次に示すように、 **ツール／ワークフロー／モデル**&#x200B;を選択し、「**コンテンツツリーを公開**」という標準のワークフローモデルをコピーして、ツリーレプリケーションをトリガーできます。
 
@@ -194,7 +193,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
 
-</details>
++++
 
 ### レプリケーション API {#replication-api}
 

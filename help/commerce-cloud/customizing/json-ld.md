@@ -5,10 +5,10 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 547d3721-e094-4a42-8a7c-27e4ef97ea9c
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
-workflow-type: ht
-source-wordcount: '451'
-ht-degree: 100%
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
+source-wordcount: '458'
+ht-degree: 88%
 
 ---
 
@@ -23,8 +23,11 @@ ht-degree: 100%
 ## CIF 設定で JSON+LD を有効にする {#enabling}
 
 デフォルトでは、「**JSON+LD を有効にする**」チェックボックスは CIF 設定に表示されません。この機能を有効にするには、チェックボックスを表示するために必要な OSGi 設定がプロジェクトに含まれている必要があります。この設定により、ユーザーは製品ページで JSON+LD スクリプトのサポートを切り替えることができます。
-「**JSON+LD を有効にする**」チェックボックスを CIF 設定で使用できるようにするには、次の OSGi 設定 `
-com.adobe.cq.cif.components.models.JsonLdFeatureEnable` をプロジェクトに追加します。
+
+CIF設定で「**JSON+LD を有効にする**」チェックボックスを使用可能にするには、次の OSGi 設定をプロジェクトに追加します。
+
+`com.adobe.cq.cif.components.models.JsonLdFeatureEnable`。
+
 この設定の追加について詳しくは、パブリック aem-cif-guides-venia リポジトリの [Json-Ld の設定を追加](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.cif.components.models.JsonLdFeatureEnable.cfg.json)を参照してください。
 
 この設定を追加して展開すると、CIF の設定にチェックボックスが表示されます。**JSON+LD** を有効にする手順は次のとおりです。
@@ -38,7 +41,7 @@ com.adobe.cq.cif.components.models.JsonLdFeatureEnable` をプロジェクトに
 
 JSON+LD を検証する手順を説明するために、必要な JSON+LD 設定が既に追加されている場合の例として、Venia プロジェクトを使用して機能を有効にします。手順は次のとおりです。
 
-1. ローカルの AEM インスタンスに移動し、製品詳細ページ（PDP）：http://localhost:4502/editor.html/content/venia/us/en/products/product-page.html を開きます
+1. ローカルのAEM インスタンスに移動し、製品詳細ページ（PDP）を開きます。http://localhost:4502/editor.html/content/venia/us/en/products/product-page.html
 1. 製品詳細ページ（PDP）で製品を作成します。
 1. **公開として表示**&#x200B;モードに切り替えます。
 1. ブラウザーで&#x200B;**ページソースを表示**&#x200B;を開きます。

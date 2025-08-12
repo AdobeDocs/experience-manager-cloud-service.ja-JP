@@ -6,7 +6,8 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: アダプティブフォームの事前入力、アダプティブフォームエッジ配信サービス、アダプティブフォームの自動入力
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 4%
@@ -249,7 +250,7 @@ FDM のフォーム要素は、**コンテンツブラウザー** の **デー�
 3. **HTMLとしてプレビュー** を選択します。
 4. URL にパラメーターを追加して事前入力をテストします。
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?`<bindreferencefield>`=`<value>`
 
    **例：**
 

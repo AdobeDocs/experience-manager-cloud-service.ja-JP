@@ -5,21 +5,19 @@ topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 6f547bd743932d45e45e0a3c47ff5eb2129cb664
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 100%
 
 ---
 
-
+# アダプティブフォームおよび AEM Forms アセットの読み込みと書き出し {#importing-and-exporting-assets-to-aem-forms}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service | この記事 |
-
-# アダプティブフォームおよび AEM Forms アセットの読み込みと書き出し {#importing-and-exporting-assets-to-aem-forms}
 
 アダプティブフォームと関連アセット（アダプティブフォームテーマ、フォームデータモデル（FDM）、アダプティブフォームテンプレート、フラグメント、PDF forms など）を、[!DNL AEM Forms] インスタンス間で移動できます。
 

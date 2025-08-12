@@ -5,7 +5,7 @@ keywords: カスタム関数の追加, カスタム関数の使用, カスタム
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: 249c60c6b4a888b8d32bbb6bebf159c972f82f94
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1340'
 ht-degree: 56%
@@ -45,6 +45,7 @@ ht-degree: 56%
 ルールエディターでカスタム関数を呼び出すクライアントライブラリを作成します。 詳しくは、「[クライアント側ライブラリの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=ja#developing)」を参照してください。
 
 カスタム関数を作成する手順は次のとおりです。
+
 1. [クライアントライブラリの作成](#create-client-library)
 1. [アダプティブフォームにクライアントライブラリを追加](#use-custom-function)
 
@@ -54,7 +55,7 @@ ht-degree: 56%
 
 **リポジトリのクローンを作成**
 
-[AEM Formsas a Cloud Serviceリポジトリ ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=jp#accessing-git) のクローン：
+[AEM Forms as a Cloud Service リポジトリ ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=jp#accessing-git) のクローンを作成します。
 
 1. コマンドラインまたはターミナルウィンドウを開きます。
 
@@ -178,7 +179,7 @@ AEM as a Cloud Service の [AEMaaCS プロジェクトディレクトリ]を Clo
 
 1. フォームを編集モードで開きます。フォームを編集モードで開くには、フォームを選択し、「**[!UICONTROL 編集]**」を選択します。
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
-1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。アダプティブフォームコンテナダイアログボックスが開きます。
+1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。 アダプティブフォームコンテナダイアログボックスが開きます。
 1. 「**[!UICONTROL 基本]**」タブをクリックし、ドロップダウンリストから&#x200B;**[!UICONTROL クライアントライブラリカテゴリ]**&#x200B;の名前を選択します（この場合は、`customfunctionscategory` を選択します）。
 
    ![カスタム関数のクライアントライブラリを追加](/help/forms/assets/clientlib-custom-function.png)
@@ -189,7 +190,7 @@ AEM as a Cloud Service の [AEMaaCS プロジェクトディレクトリ]を Clo
 
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
-カスタム関数は、[&#128279;](##js-annotations)JavaScript注釈 [ を使用して ](/help/forms/rule-editor-core-components.md) アダプティブフォームのルールエディター  で使用できます。
+カスタム関数は、[JavaScript注釈 ](/help/forms/rule-editor-core-components.md) を使用して [ アダプティブフォームのルールエディター ](##js-annotations) で使用できます。
 
 ## アダプティブフォームでのカスタム関数の使用
 
@@ -232,9 +233,9 @@ AEM as a Cloud Service の [AEMaaCS プロジェクトディレクトリ]を Clo
 
 ## カスタム関数の機能
 
-AEM forms のカスタム関数は、フォームの機能を拡張およびパーソナライズするための堅牢なソリューションを提供します。 カスタム関数を使用すると、組織固有のニーズを満たすことができます。
+AEM Forms のカスタム関数は、フォームの機能を拡張およびパーソナライズするための堅牢なソリューションを提供します。 カスタム関数を使用すると、組織固有のニーズを満たすことができます。
 
-これらの関数は、特定フィールドの操作、グローバルフィールドの使用、非同期操作、キャッシュメカニズムの組み込みなど、様々な機能をサポートします。 この柔軟性により、フォームを複雑な要件に適応させ、効率的にカスタマイズされたユーザーエクスペリエンスを提供できるようになります。 これらの高度な機能を活用することで、フォームのインタラクションを強化し、パフォーマンスを最適化して、AEM フォームをより機能的でレスポンシブなものにすることができます。
+これらの関数は、特定フィールドの操作、グローバルフィールドの使用、非同期操作、キャッシュメカニズムの組み込みなど、様々な機能をサポートします。 この柔軟性により、フォームを複雑な要件に適応させ、効率的にカスタマイズされたユーザーエクスペリエンスを提供できるようになります。 これらの高度な機能を活用することで、フォームのインタラクションを強化し、パフォーマンスを最適化して、AEM フォームの機能性と応答性を向上させることができます。
 
 カスタム関数の機能について詳しく見ていきましょう。
 

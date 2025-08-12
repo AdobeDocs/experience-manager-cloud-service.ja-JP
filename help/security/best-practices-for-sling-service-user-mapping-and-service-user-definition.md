@@ -4,10 +4,10 @@ description: Sling サービスユーザーマッピングとサービスユー�
 exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
-source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1884'
-ht-degree: 100%
+source-wordcount: '1883'
+ht-degree: 99%
 
 ---
 
@@ -77,7 +77,7 @@ bundleId [:subserviceName] = userName | [principalNames]
 
 1. 以下の説明に従って、`ServiceUserMapper`／事前認証リポジトリログインからプリンシパル名を取得します。
 1. `ServiceUserMapper` からユーザー ID を取得します
-1. 現在のユーザー ID の非推奨（廃止予定）の 1ServiceUserConfiguration` を確認します
+1. 現在のユーザー ID について非推奨（廃止予定）の `1ServiceUserConfiguration` を確認
 1. ユーザー ID を使用したデフォルトの Sling サービスログイン（例えば、`createAdministrativeSession` のシーケンスと、サービスユーザー ID の別のユーザーとしての実行）
 
 プリンシパル名を使用した新しいマッピングにより、リポジトリへのログインが次のように簡素化されます。
@@ -189,7 +189,7 @@ AEM セキュリティチームは、新しいサービスユーザーに一貫�
 * 範囲を減らします
 
    * 機能固有のサブツリーにアクセス制御ポリシーを配置します
-   * 配布済み項目の場合：制限を使用して範囲を制限します（組み込みの制限のリストについては、[ドキュメント](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html)を参照してください）。
+   * 配布済み項目の場合：制限を使用して範囲を制限します（ビルトインの制限のリストについては、[ドキュメント](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html)を参照してください）。
 
 * 一貫性を確保します
 
@@ -225,7 +225,7 @@ AEM セキュリティチームは、新しいサービスユーザーに一貫�
 
 * 必ず `repo-init` を使用してサービスユーザーを作成します
 * 必ずサービスユーザー作成用に中間パスを指定します
-* AEM のすべての組み込みサービスユーザーは、`system/cq:services/internal` の下に配置する必要があります
+* AEM のすべてのビルトインのサービスユーザーは、`system/cq:services/internal` の下に配置する必要があります
 * また、機能ごとにサービスユーザーをグループ化するための中間相対パス（`system/cq:services/internal/<your-feature>`）に追加します
 * 顧客定義のサービスユーザーは `system/cq:services/<customer-intermediate-rel-path>` の下に配置する必要があります。内部ツリーの下には配置しないでください
 * ユーザーが既に存在し、プリンシパルベースの認証をサポートする新しい場所に移動する必要がある場合は、**パスあり**&#x200B;の代わりに&#x200B;**適用パスあり**&#x200B;を使用します。

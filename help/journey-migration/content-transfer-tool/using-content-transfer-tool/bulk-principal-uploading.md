@@ -2,8 +2,8 @@
 title: CTT 使用後の IMS へのプリンシパルの一括アップロード
 description: グループおよびユーザーの一括アップロードファイルの概要と、Admin Console でファイルを使用して IMS でグループとユーザーを作成する方法について説明します。
 exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
-source-git-commit: b9c739a03b358de7c011e50ddbdd609c90f86b6f
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '2384'
 ht-degree: 100%
 
@@ -37,9 +37,10 @@ AEM as a Cloud Service ユーザーの管理について詳しくは、[ユー�
 
 ## 一括グループアップロード {#group-upload}
 
-#### ユースケース：グループは AEM as a Cloud Service に移行されましたが、これらのグループは IMS/Admin Console に存在しないので、Admin Console を通じて IMS にアップロードする必要があります。
+### ユースケース：グループは AEM as a Cloud Service に移行されましたが、これらのグループは IMS/Admin Console に存在しないので、Admin Console を通じて IMS にアップロードする必要があります。
 
 CTT/CAM の移行を実行した後に Admin Console の一括グループアップロード機能を使用するには、次の手順に従います。
+
 1. CAM から一括グループファイルのダウンロード
 
    1. CAM で&#x200B;**コンテンツ転送**&#x200B;に移動し、「**取り込みジョブ**」を選択します。
@@ -86,7 +87,7 @@ Admin Console には、ユーザーの詳細をアップロードおよび編集
 
 >[!NOTE]
 >
->ファイルの作成元と同じ取り込み中に取り込まれたグループにユーザーが属している場合、そのユーザーは&#x200B;**一括ユーザーアップロード**&#x200B;ファイルに表示されます。また、ユーザーが、移行されたコンテンツの ACL または CUG に直接属している場合や、移行されたコンテンツの ACL または CUG にある組み込みグループまたはローカルグループのメンバーである場合にも、このメッセージが表示されることがあります。これらのケースについて詳しくは、[グループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)を参照してください。
+>ファイルの作成元と同じ取り込み中に取り込まれたグループにユーザーが属している場合、そのユーザーは&#x200B;**一括ユーザーアップロード**&#x200B;ファイルに表示されます。また、ユーザーが、移行されたコンテンツの ACL または CUG に直接属している場合や、移行されたコンテンツの ACL または CUG にあるビルトインのグループまたはローカルグループのメンバーである場合にも、このメッセージが表示されることがあります。これらのケースについて詳しくは、[グループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)を参照してください。
 
 Admin Console の一括ユーザーアップロード機能を使用するには、次の手順に従います。
 

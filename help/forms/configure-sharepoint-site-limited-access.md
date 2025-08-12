@@ -5,16 +5,16 @@ keywords: 制限付きアクセスを使用するSharePoint サイトの設定�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 24%
 
 ---
 
-<span class="preview"> この機能は、早期導入プログラムで利用できます。 早期導入プログラムに登録し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
-
 # 認証範囲を使用した制限付きアクセスでの SharePoint サイトの設定
+
+<span class="preview"> この機能は、早期導入プログラムで利用できます。 早期導入プログラムに登録し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
 
 制限付きまたは制限付きアクセスの目的は、管理者が特定のSharePoint サイトまたはSharePoint サイトのグループへのユーザーアクセスを制御できるようにして、セキュリティ管理を強化することです。 権限レベルは、ユーザーまたはグループに許可されていない他のSharePoint サイトの表示を許可せずに、特定のサイトへのアクセス権を付与する必要がある場合に役立ちます。
 
@@ -41,7 +41,7 @@ SharePoint サイトへの限定的なアクセスを提供するメリット：
 
 ### Azure portal で、制限付き権限のアプリケーションを作成します
 
-Microsoft Graph API の [ 権限範囲を使用して ](https://portal.azure.com/#home)0&rbrace;Microsoft Azure Portal&rbrace; でアプリケーションを作成します。`Sites.Selected`
+Microsoft Graph API の [ 権限範囲を使用して ](https://portal.azure.com/#home)0}Microsoft Azure Portal} でアプリケーションを作成します。`Sites.Selected`
 
 ![SharePointが選択したサイト ](/help/forms/assets/sharepoint-selected-site.png)
 

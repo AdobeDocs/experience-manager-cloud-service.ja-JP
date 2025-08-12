@@ -7,8 +7,8 @@ exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 100%
 
@@ -94,6 +94,7 @@ AEM では、同じコードベースから複数のサイトを実行するこ�
        }
    }'
    ```
+
 1. 次のような cURL コマンドを使用して、公開設定が設定されていて使用可能であることを確認します。
 
    ```text

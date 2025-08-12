@@ -4,10 +4,10 @@ description: 設定ファイルでルールとフィルターを宣言し、Clou
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
-workflow-type: ht
-source-wordcount: '1508'
-ht-degree: 100%
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
+source-wordcount: '1506'
+ht-degree: 98%
 
 ---
 
@@ -172,8 +172,8 @@ data:
 |     | var | 指定した変数を削除します。 |
 |     | queryParamMatch | 指定した正規表現に一致するすべてのクエリパラメーターを削除します。 |
 |     | queryParamDoesNotMatch | 指定した正規表現に一致しないすべてのクエリパラメーターを削除します。 |
-| **transform** | op:replace、（reqProperty、reqHeader、queryParam、reqCookie、var のいずれか）、match、replacement | リクエストパラメーターの一部（「path」プロパティのみサポートされています）、またはリクエストヘッダー、クエリパラメーター、Cookie、変数のいずれかを新しい値に置き換えます。 |
-|              | op:tolower、（reqProperty、reqHeader、queryParam、reqCookie、var のいずれか） | リクエストパラメーター（「path」プロパティのみサポートされています）またはリクエストヘッダー、クエリパラメーター、Cookie、変数のいずれかを小文字の値に設定します。 |
+| **transform** | op:replace, （reqProperty または reqHeader または queryParam または reqCookie または var）, match, replacement | リクエストパラメーターの一部（「path」プロパティのみサポートされています）、またはリクエストヘッダー、クエリパラメーター、Cookie、変数のいずれかを新しい値に置き換えます。 |
+|              | op:tolower,（reqProperty または reqHeader または queryParam または reqCookie または var） | リクエストパラメーター（「path」プロパティのみサポートされています）またはリクエストヘッダー、クエリパラメーター、Cookie、変数のいずれかを小文字の値に設定します。 |
 
 置換アクションでは、次に示すように、キャプチャグループをサポートしています。
 

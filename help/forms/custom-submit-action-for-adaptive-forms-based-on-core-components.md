@@ -4,17 +4,17 @@ description: カスタマイズされた送信アクションを使用して送�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
-source-git-commit: b703d4c0b0bb25ecc57e5335b672069f7ad2199d
+exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 24%
+ht-degree: 28%
 
 ---
 
-
 # アダプティブForms（コアコンポーネント）のカスタム送信アクションの作成
 
-送信アクションを使用すると、ユーザーはフォームから取得したデータの送信先を選択したり、フォームの送信時に実行する追加機能を定義したりできます。 AEM フォームでは、メールの送信やSharePointまたは OneDrive へのデータの保存など、複数の [ 標準の送信アクション （OOTB） ](/help/forms/configure-submit-actions-core-components.md) をサポートしています。
+送信アクションを使用すると、ユーザーはフォームから取得したデータの送信先を選択したり、フォームの送信時に実行する追加機能を定義したりできます。 AEM フォームは、メールの送信やSharePointまたは OneDrive へのデータの保存など、複数の [ 標準の送信アクション （OOTB） ](/help/forms/configure-submit-actions-core-components.md) をサポートしています。
 
 また、カスタム送信アクションを作成して、[ 標準のオプション ](/help/forms/configure-submit-actions-core-components.md#select-and-configure-a-submit-action-for-an-adaptive-form-select-and-configure-submit-action) に含まれない機能を追加することもできます。 例えば、フォームデータをサードパーティのアプリケーションと統合したり、ユーザー入力に基づいてパーソナライズされた SMS 通知をトリガーにしたりします。
 
@@ -25,9 +25,9 @@ ht-degree: 24%
 
 アダプティブForms用の最初のカスタム送信アクションを作成する前に、次のことを確認してください。
 
-* **プレーンテキストエディター（IDE）**：任意のプレーンテキストエディターも使用できますが、Microsoft Visual Studio Code などの統合開発環境（IDE）は、編集を容易にする高度な機能を提供します。
+* **プレーンテキストエディター（IDE）**：どのプレーンテキストエディターでも機能しますが、Microsoft Visual Studio Code などの統合開発環境（IDE）では、編集を簡単にする高度な機能が提供されます。
 
-* **Git**：このバージョン管理システムは、コードの変更を管理するために必要です。 インストールされていない場合は、https://git-scm.comからダウンロードします。
+* **Git**：このバージョン管理システムは、コードの変更を管理するために必要です。 インストール済みでない場合は、https://git-scm.com からダウンロードしてください。
 
 ## フォーム用の最初のカスタム送信アクションの作成
 
@@ -81,7 +81,7 @@ ht-degree: 24%
 
    `/ui.apps/src/main/content/jcr_root/apps/<app-id>/customsubmitaction/`
 
-   `Important`：置換 &lt;app-id> 実際のアプリケーション ID を使用します。
+   `Important`: `<app-id>` を実際のアプリケーション ID に置き換えます。
 
 1. 新しい設定ファイルを作成します。
 `customsubmitaction` フォルダー内に、`.content.xml` という名前の新しいファイルを作成します。
@@ -120,7 +120,7 @@ ht-degree: 24%
    <filter root="/apps/<app-id>/[customsubmitaction-folder]"/>
    ```
 
-   例えば、次のコード行を追加して、`filter.xml` ファイルに `customsubmitaction` フォルダーを追加します。
+   例えば、次のコード行を追加して、`customsubmitaction` ファイルに `filter.xml` フォルダーを追加します。
 
    ```
    <filter root="/apps/wknd/customsubmitaction"/>
@@ -134,7 +134,7 @@ ht-degree: 24%
 
 1. `[AEMaaCS project directory]` ージ内の次のディレクトリに移動します。
    `/core/src/main/java/com/<app-id>/core/service/`
-   `Important`：置換 &lt;app-id> 実際のアプリケーション ID を使用します。
+   `Important`: `<app-id>` を実際のアプリケーション ID に置き換えます。
 1. 新しい Java ファイルを作成して、追加した送信アクションのサービスを実装します。 例えば、`CustomSubmitService.java` のように新しい Java ファイルを追加します。
 
    ![ カスタム送信アクションフォルダー ](/help/forms/assets/custom-submit-action-custom-submit-folder.png)
@@ -240,7 +240,7 @@ ht-degree: 24%
    ![ フォームを編集 ](/help/forms/assets/custom-submit-action-edit-af.png)
 
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
-1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。アダプティブフォームコンテナダイアログボックスが開きます。
+1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。 アダプティブフォームコンテナダイアログボックスが開きます。
 1. 「**[!UICONTROL 送信]**」タブをクリックします。
 1. **[!UICONTROL 送信アクション]** ドロップダウンリストから、送信アクションを選択します。 例えば、送信アクションを `Custom Submit Action` のように選択します。
 

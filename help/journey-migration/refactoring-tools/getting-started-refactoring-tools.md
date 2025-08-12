@@ -2,10 +2,10 @@
 title: リファクタリングツール入門
 description: AEM as a Cloud Service でリファクタリングツールの使用を開始する方法について学ぶ
 exl-id: 84394bdd-2b92-4f5d-b08a-7dc2c681baa4
-source-git-commit: c89acee0c5090f32136306b41a669d7241002a37
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '542'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_upload"
 >title="Download"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=ja" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 -->
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 リファクタリングツールを使用して、AEM as a Cloud Serviceとの互換性を保つためにコードを移行します。
 
-1. CAM プロジェクトをまだ作成していない場合は、[CAM でのプロジェクトの作成と管理](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md#create-project)を参照してください。
+1. CAM プロジェクトをまだ作成していない場合は、[CAM でのプロジェクトの作成と管理 ](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md#create-project) を参照してください。
 1. **コードリファクタリング**&#x200B;カードをクリックして、ソースコードをアップロードします。
 
    ![画像](/help/journey-migration/refactoring-tools/assets/rscam1.png)
@@ -35,8 +35,6 @@ ht-degree: 100%
 1. 初めて&#x200B;**ソースコードビュー**&#x200B;にアクセスすると、ソースコードをアップロードするよう促す空のステートが表示されます。
 
    ![画像](/help/journey-migration/refactoring-tools/assets/rscam2.png)
-
----
 
 ## ソースコードのアップロード {#uploading}
 
@@ -68,12 +66,12 @@ ht-degree: 100%
    ![画像](/help/journey-migration/refactoring-tools/assets/rscam5.png)
 
 >[!NOTE]
+>
 >新しいプロジェクトをアップロードすると、既存のプロジェクトが削除されます。続行する前に、必要なデータが保存されていることを確認します。
 
 >[!NOTE]
+>
 >リファクタリングジョブは、ソースコードのアップロードが成功した場合にのみ実行できます。
-
----
 
 ## リファクタリングジョブ {#refactoring-jobs}
 
@@ -90,9 +88,8 @@ ht-degree: 100%
 ![画像](/help/journey-migration/refactoring-tools/assets/rscam7.png)
 
 >[!NOTE]
+>
 >「**すべてのツールを同時に実行**」オプションを使用すると、個別のリファクタリングジョブを実行することも、利用可能なすべてのツールを一度に実行することもできます。
-
----
 
 ### &#x200B;2. ジョブステータス
 
@@ -111,4 +108,5 @@ ht-degree: 100%
 ![画像](/help/journey-migration/refactoring-tools/assets/rscam9.png)
 
 >[!NOTE]
+>
 >各ジョブの完了には最大 1 時間かかる場合があります。ステータスが更新されない場合は、アドビサポートにお問い合わせください。

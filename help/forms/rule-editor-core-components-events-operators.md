@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: 321116ce8d6da53c431f68f437cbf7c0050a47e8
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '2333'
+source-wordcount: '2327'
 ht-degree: 50%
 
 ---
@@ -68,12 +68,11 @@ AEM Forms as a Cloud では、複雑な条件やアクションを簡単に定�
 
 `Action 2 on Object B;`
 `AND`
-&#39;オブジェクト C のアクション 3;
+`Action 3 on Object C;`
 
 `Else, do the following:`
 
 `Action 2 on Object C;`
-_
 
 ラジオボタンやリストなどの複数値コンポーネントに対してルールを作成する場合、オプションが自動的に取得され、それらのオプションを使用してルールを作成できるようになりました。これらのオプションの値を再入力する必要はありません。
 
@@ -113,7 +112,7 @@ _
 
 **When 条件機能で複数のフィールドを許可して使用する場合の考慮事項**
 
-* ルールエディターでこの機能を使用するには [&#128279;](https://github.com/adobe/aem-core-forms-components) コアコンポーネントがバージョン 3.0.14 以降に設定されていることを確認します。
+* ルールエディターでこの機能を使用するには [](https://github.com/adobe/aem-core-forms-components) コアコンポーネントがバージョン 3.0.14 以降に設定されていることを確認します。
 * ルールが When 条件内の異なるフィールドに適用されている場合、これらのフィールドの 1 つのみを変更した場合でも、ルールはトリガーします。
 * **AND** ルールの **When** 条件に追加できるフィールドは複数のみです。 **OR** ルールには使用できません。
 
@@ -324,7 +323,7 @@ When （オプション）：
 
 ![スクリプトの検証](assets/script-validation.png)
 
-#### [!UICONTROL &#x200B; パネル間の移動 &#x200B;]
+#### [!UICONTROL  パネル間の移動 ]
 
 **[!UICONTROL パネル間を移動]** ルールタイプを使用すると、フォーム内の様々なパネル間でフォーカスを移動できます。 例えば、次のパネルにフォーカスを移動する式を作成できます。
 
@@ -350,7 +349,7 @@ When （オプション）：
 
 パネル内を移動するためのルールを作成する方法について詳しくは、[ ここをクリック ](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons) を参照してください。
 
-#### [!UICONTROL &#x200B; 非同期関数呼び出し &#x200B;]
+#### [!UICONTROL  非同期関数呼び出し ]
 
 <span class="preview">これはプレリリース機能で、[プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)を通してアクセスできます。</span>
 

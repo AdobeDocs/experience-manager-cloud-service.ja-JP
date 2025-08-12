@@ -5,10 +5,10 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
-workflow-type: ht
-source-wordcount: '883'
-ht-degree: 100%
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
+source-wordcount: '886'
+ht-degree: 97%
 
 ---
 
@@ -25,6 +25,7 @@ ht-degree: 100%
 デフォルトでは、CIF 設定でキャッシュ消去機能は無効になっています。有効にするには、対応するプロジェクトに以下を追加する必要があります。
 
 * サーブレット `/bin/cif/invalidate-cache` を有効にします。これにより、[ここ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json)で示すようにプロジェクトに `com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json` 設定を追加することで、clear-cache API とそれに対応するリクエストをトリガーすることができます。
+
   >[!NOTE]
   >
   > 設定は、オーサーインスタンスに対してのみ有効にする必要があります。
@@ -32,6 +33,7 @@ ht-degree: 100%
 * [ここ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json)で示すように、リスナーを有効にして、プロジェクトに `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` 設定を追加することで、AEM（パブリッシュおよびオーサー）の各インスタンスからキャッシュを消去します。
    * 設定は、オーサーインスタンスとパブリッシュインスタンスの両方で有効にする必要があります。
    * Dispatcher のキャッシュを有効にする（オプション）：上記の設定で `enableDispatcherCacheInvalidation` プロパティを true に設定することで、Dispatcher のキャッシュの消去設定を有効にできます。これにより、Dispatcher からキャッシュを消去する機能が提供されます。
+
      >[!NOTE]
      >
      > これは、パブリッシュインスタンスでのみ機能します。
@@ -44,11 +46,12 @@ ht-degree: 100%
 
 すべてが正しく設定されていることを確認するには、以下を行います。
 
-* 対応するサーブレットをオーサーインスタンスの AEM にトリガーします（例：[http://localhost:4502/bin/cif/invalidate-cache](http://localhost:4502/bin/cif/invalidate-cache)。200 HTTP 応答が返されます。
+* 対応するサーブレットをオーサーインスタンスのAEMにトリガーします（例：[http://localhost:4502/bin/cif/invalidate-cache](http://localhost:4502/bin/cif/invalidate-cache)。200 HTTP 応答が返されます。
 * ノードがオーサーインスタンスの次のパス `/var/cif/cacheinvalidation` に作成されていることを確認します。ノード名は、パターン「`cmd_{{timestamp}}`」に従います。
 * 各パブリッシュインスタンスで同じノードが作成されていることを確認します。
 
 次に、キャッシュが正しく消去されているかどうかを確認します。
+
 1. 対応する PLP および PDP ページに移動します。
 2. コマースエンジンの製品名またはカテゴリ名を更新します。変更内容は、キャッシュの設定に基づいて AEM にすぐに反映されるわけではありません。
 3. 次に示すように、サーブレット API をトリガーします。
@@ -56,7 +59,7 @@ ht-degree: 100%
    ```
    curl --location '{Author AEM Instance Url}/bin/cif/invalidate-cache' \
    --header 'Content-Type: application/json' \
-   --header 'Authorization: ••••••' \ // Mandatory
+   --header 'Authorization: ******' \ // Mandatory
    --header 'Cookie: private_content_version=0299c5e4368a1577a6f454a61370317b' \
    --data '{
        "productSkus": ["Sku1", "Sku2"], // Optional: Pass the corresponding sku which got updated.
@@ -64,6 +67,7 @@ ht-degree: 100%
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
+
 すべてが正常に動作すると、新しい変更がすべてのインスタンスに反映されます。パブリッシュインスタンスで変更が表示されない場合は、プライベート／匿名ブラウザーウィンドウで関連する PLP および PDP ページにアクセスしてみてください。
 
 >[!NOTE]
@@ -107,7 +111,7 @@ ht-degree: 100%
 ```
 curl --location 'https://author-p10603-e145552-cmstg.adobeaemcloud.com/bin/cif/invalidate-cache' \
 --header 'Content-Type: application/json' \
---header 'Authorization: ••••••' \
+--header 'Authorization: ******' \
 --header 'Cookie: private_content_version=0299c5e4368a1577a6f454a61370317b' \
 --data '{
 "productSkus": ["VP01", "VT10"], // This will clear cache for the corresponding pages related with mentioned skus.

@@ -4,8 +4,8 @@ description: 設定パイプラインを使用して、ログ転送の設定、�
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 100%
 
@@ -63,10 +63,10 @@ Cloud Manager で設定パイプラインを作成する場合は、パイプラ
 各設定ファイルは、次の例のスニペットに類似したプロパティで始まります。
 
 ```yaml
-  kind: "LogForwarding"
-  version: "1"
-  metadata:
-    envTypes: ["dev"]
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
 ```
 
 | プロパティ | 説明 | デフォルト |

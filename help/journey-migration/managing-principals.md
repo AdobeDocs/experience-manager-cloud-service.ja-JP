@@ -2,8 +2,8 @@
 title: プリンシパルの管理
 description: Admin Console を使用した移行でのプリンシパルの管理
 exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
-source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 コンテンツを AEM as a Cloud Service クラウド環境に転送する前に、Admin Console で実行できるタスクがいくつかあります。ユーザーの作成、グループの作成、グループへのユーザーの割り当てです。これらのユーザーとグループは、IMS（アドビの Identity Management サービス）に存在します。IMS は、すべてのアドビクラウドベースのサービスでのユーザーとグループの管理に使用されます。
 
-### Admin Console でのグループとユーザーの作成
+## Admin Console でのグループとユーザーの作成
 
 [AEM プリンシパルに Admin Console を使用](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/ims-support#how-to-set-up)では、IMS でユーザーとグループを作成する方法と、同時にまたは後でユーザーをグループに追加する方法について詳しく説明します。このドキュメントには、それらを作成する 3 つのオプション（Admin Console から手動で作成、Admin Console からの CSV アップロードで作成、ユーザー同期ツールを使用した作成）が含まれています。
 
