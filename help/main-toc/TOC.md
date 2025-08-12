@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3004d7fe69a0666d5747967519ea08e35ca020a4
+source-git-commit: 2038e0884718a2c0cd0b661ebe0426540a32e35a
 workflow-type: tm+mt
-source-wordcount: '6592'
+source-wordcount: '6605'
 ht-degree: 97%
 
 ---
@@ -266,6 +266,7 @@ ht-degree: 97%
    + [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service のセキュリティに関する考慮事項](/help/security/security-considerations.md)
    + [Adobe Developer Console での JWT 資格情報の非推奨（廃止予定）](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [パブリッシュ層でのAEM as a Cloud Serviceの Open ID Connect サポート](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
    + [AEM as a Cloud Service の IMS 統合の設定](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [権限管理のプリンシパルビュー](/help/security/touch-ui-principal-view.md)
    + [Sling サービスユーザーマッピングとサービスユーザー定義のベストプラクティス](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
