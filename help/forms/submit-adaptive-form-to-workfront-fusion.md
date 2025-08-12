@@ -9,7 +9,7 @@ exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
 source-wordcount: '1304'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -152,10 +152,10 @@ Web フックを追加するには、次の手順に従います。
 
 >[!TAB 基盤コンポーネント]
 
-Workfront Fusion の基盤コンポーネントに基づいてアダプティブフォームの送信アクションを設定するには：
+Workfront Fusion の基盤コンポーネントに基づくアダプティブフォームの送信アクションを設定するには：
 
 1. 編集用にアダプティブフォームを開き、アダプティブフォームのコンテナプロパティの「**[!UICONTROL 送信]**」セクションに移動します。
-1. **[!UICONTROL 送信アクション]** ドロップダウンリストから、「**[!UICONTROL Workfront Fusion シナリオを呼び出し]**」を選択します。
+1. **[!UICONTROL 送信アクション]**&#x200B;ドロップダウンリストから「**[!UICONTROL WorkFront Fusion のシナリオを呼び出す]**」を選択します。
    ![Workfront Fusion 用の送信アクション](/help/forms/assets/workfront-fusion-fc.png)
 
 1. ドロップダウンリストから「**[!UICONTROL Workfront Fusion のシナリオ]**」を選択します。
@@ -164,12 +164,12 @@ Workfront Fusion の基盤コンポーネントに基づいてアダプティブ
 
 >[!TAB コアコンポーネント]
 
-Workfront Fusion でコアコンポーネントに基づくアダプティブフォームの送信アクションを設定するには：
+Workfront Fusion のコアコンポーネントに基づくアダプティブフォームの送信アクションを設定するには：
 
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
 1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。 アダプティブフォームコンテナダイアログボックスが開きます。
 1. 「**[!UICONTROL 送信]**」タブをクリックします。
-1. **[!UICONTROL 送信アクション]** ドロップダウンリストから、「**[!UICONTROL Workfront Fusion シナリオを呼び出し]**」を選択します。
+1. **[!UICONTROL 送信アクション]**&#x200B;ドロップダウンリストから「**[!UICONTROL WorkFront Fusion のシナリオを呼び出す]**」を選択します。
 
    ![Workfront Fusion 用の送信アクション](/help/forms/assets/workfront-scenario-existing-af.png)
 1. ドロップダウンリストから「**[!UICONTROL Workfront Fusion のシナリオ]**」を選択します。
@@ -177,23 +177,23 @@ Workfront Fusion でコアコンポーネントに基づくアダプティブフ
 
 >[!TAB ユニバーサルエディター]
 
-ユニバーサルエディターを使用して作成されたアダプティブフォームの送信アクションを設定するには：
+ユニバーサルエディターを使用してオーサリングされたアダプティブフォームの送信アクションを設定するには：
 
 1. アダプティブフォームを編集用に開きます。
-1. エディターで **フォームプロパティを編集** 拡張機能をクリックします。
-**フォームのプロパティ** ダイアログが表示されます。
+1. エディターで&#x200B;**フォームプロパティを編集**拡張機能をクリックします。
+**フォームプロパティ**&#x200B;ダイアログが表示されます。
 
    >[!NOTE]
    >
-   > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Managerで **フォームプロパティを編集** 拡張機能を有効にします。
-   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
+   > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Manager で&#x200B;**フォームプロパティを編集**&#x200B;拡張機能を有効にします。
+   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については、[Extension Manager 機能のハイライト](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)の記事を参照してください。
 
-1. 「**送信**」タブをクリックし、「**[!UICONTROL Workfront Fusion シナリオを起動]**」送信アクションを選択します。
+1. 「**送信**」タブをクリックし、「**[!UICONTROL WorkFront Fusion のシナリオを呼び出す]**」送信アクションを選択します。
 
    ![Workfront Fusion 用の送信アクション](/help/forms/assets/workfront-fusion-ue.png)
 
 1. ドロップダウンリストから「**[!UICONTROL Workfront Fusion のシナリオ]**」を選択します。
-1. **[!UICONTROL 保存して閉じる]** をクリックします。
+1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
 >[!ENDTABS]
 

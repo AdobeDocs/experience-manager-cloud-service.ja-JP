@@ -8,13 +8,13 @@ exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
 source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
 source-wordcount: '1471'
-ht-degree: 74%
+ht-degree: 98%
 
 ---
 
-# REST エンドポイントへの送信アクションのアダプティブフォームを設定する
+# REST エンドポイントへの送信アクションのアダプティブフォームの設定
 
-<span class="preview"> 設定を使用して REST エンドポイントを指定する機能は、早期導入プログラムであり、コアコンポーネントとEdge Delivery Services Formsにのみ適用できます。 公式メール ID から `aem-forms-ea@adobe.com` に書き込んで、早期導入プログラムに参加し、機能へのアクセスをリクエストできます。</span>
+<span class="preview">設定を使用して REST エンドポイントを指定する機能は早期導入プログラムであり、コアコンポーネントと Edge Delivery Services Forms にのみ適用できます。公式メール ID から `aem-forms-ea@adobe.com` に送信して早期導入プログラムに参加し、機能へのアクセスをリクエストできます。</span>
 
 **[!UICONTROL REST エンドポイントへの送信]**&#x200B;アクションを使用して、送信されたデータを REST URL に POST できます。URL は、内部（フォームがレンダリングされるサーバー）または外部サーバーのどちらのものでも使用できます。
 
@@ -35,15 +35,14 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
 >[!TAB 基盤コンポーネント]
 
-基盤コンポーネントに基づくアダプティブフォーム用に Swagger Open API 仕様に基づいた送信アクションを設定するには、以下を行います。
+基盤コンポーネントに基づくアダプティブフォームの Swagger Open API 仕様に基づいて送信アクションを設定するには：
 
 1. 編集用にアダプティブフォームを開き、アダプティブフォームのコンテナプロパティの「**[!UICONTROL 送信]**」セクションに移動します。
 1. **[!UICONTROL 送信アクション]**&#x200B;ドロップダウンリストから、「**[!UICONTROL REST エンドポイントへの送信]**」を選択します。
 
    ![REST エンドポイントへの送信のアクション設定](/help/forms/assets/submit-action-restendpoint.png)
 
-   内部サーバーにデータを POST 送信するには、リソースのパスを指定します。データは、リソースのパスに POST されます。例えば、`/content/restEndPoint` のようになります。このような POST リクエストには、送信リクエストの認証情報が使用されます。
-このオプションを使用すると、ターゲット REST エンドポイントを直接入力できます。
+   内部サーバーにデータを POST 送信するには、リソースのパスを指定します。データは、リソースのパスに POST されます。例えば、`/content/restEndPoint` のようになります。このような POST リクエストには、送信リクエストの認証情報が使用されます。このオプションを使用すると、ターゲット REST エンドポイントを直接入力できます。
 外部サーバーにデータを POST 送信するには、URL を指定します。URL の形式は、`https://host:port/path_to_rest_end_point` です。POST リクエストを匿名で処理するためのパスを設定してください。
    ![「ありがとうございます」ページのパラメーターとして渡されたフィールド値のマッピング](assets/post-enabled-actionconfig.png)
 
@@ -59,7 +58,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
    `String att=request.getParameter("attachments");`
 
    この例では、`data` が XML データを格納し、`att` が添付ファイルデータを格納します。
-**[!UICONTROL REST エンドポイントへの送信]**&#x200B;送信アクションでは、フォームに入力されたデータを HTTP GET リクエストの一部として設定済みの確認ページに送信します。リクエストにフィールド名を追加できます。リクエストのフォーマットを以下に示します。
+**[!UICONTROL REST エンドポイントへの送信]**送信アクションでは、フォームに入力されたデータを HTTP GET リクエストの一部として設定済みの確認ページに送信します。リクエストにフィールド名を追加できます。リクエストのフォーマットを以下に示します。
    `{fieldName}={request parameter name}`
 
    以下の画像に示されているように、`param1` および `param2` が、**textbox** フィールドおよび **numericbox** フィールドからコピーされた値を持つパラメーターとして、次のアクションに向けて渡されます。
@@ -72,7 +71,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
 >[!TAB コアコンポーネント]
 
-コアコンポーネントに基づくアダプティブフォームに対して Swagger Open API 仕様に基づいた送信アクションを設定するには、以下を行います。
+コアコンポーネントに基づくアダプティブフォームの Swagger Open API 仕様に基づいて送信アクションを設定するには：
 
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
 1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。 アダプティブフォームコンテナダイアログボックスが開きます。
@@ -83,7 +82,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
    内部サーバーにデータを POST 送信するには、リソースのパスを指定します。データは、リソースのパスに POST されます。例えば、`/content/restEndPoint` のようになります。このような POST リクエストには、送信リクエストの認証情報が使用されます。
 
-   REST エンドポイントを指定する方法は 2 つあります。
+   REST エンドポイントを指定するには、次の 2 つのオプションがあります。
 
    +++URL
 
@@ -115,32 +114,32 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
    **[!UICONTROL POST リクエストを有効にする]**&#x200B;ことで、リクエストを POST する URL を指定することもできます。フォームをホストする AEM サーバーにデータを送信するには、AEM サーバーのルートパスに対応する相対パスを使用します。例えば、`/content/forms/af/SampleForm.html` のようになります。他のサーバーにデータを送信するには、絶対パスを使用します。
 
-   +++
++++
 
    +++設定
 
-   このオプションを使用すると、AEM設定ブラウザーを介して管理される、事前定義済みの HTTP 設定を追加できます。 サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。 認証タイプとコンテンツタイプについて詳しくは、[ データソースの設定 ](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint) を参照してください。
+   このオプションを使用すると、AEM の設定ブラウザー経由で管理される事前定義済みの HTTP 設定を追加できます。サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。認証タイプとコンテンツタイプについて詳しくは、[データソースの設定](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)を参照してください。
 
-   +++
++++
 
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
 >[!TAB ユニバーサルエディター]
 
-ユニバーサルエディターで作成されたアダプティブフォームに対して、Swagger Open API 仕様に基づいた送信アクションを設定するには、次を行います。
+ユニバーサルエディターでオーサリングされたアダプティブフォームの Swagger Open API 仕様に基づいて送信アクションを設定するには：
 
 1. アダプティブフォームを編集用に開きます。
-1. エディターで **フォームプロパティを編集** 拡張機能をクリックします。
-**フォームのプロパティ** ダイアログが表示されます。
+1. エディターで&#x200B;**フォームプロパティを編集**拡張機能をクリックします。
+**フォームプロパティ**&#x200B;ダイアログが表示されます。
    >[!NOTE]
    >
-   > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Managerで **フォームプロパティを編集** 拡張機能を有効にします。
-   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
-1. 「**送信**」タブをクリックし、「**[!UICONTROL Rest エンドポイントに送信]**」送信アクションを選択します。
+   > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Manager で&#x200B;**フォームプロパティを編集**&#x200B;拡張機能を有効にします。
+   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については、[Extension Manager 機能のハイライト](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)の記事を参照してください。
+1. 「**送信**」タブをクリックし、「**[!UICONTROL REST エンドポイントに送信]**」送信アクションを選択します。
 
    内部サーバーにデータを POST 送信するには、リソースのパスを指定します。データは、リソースのパスに POST されます。例えば、`/content/restEndPoint` のようになります。このような POST リクエストには、送信リクエストの認証情報が使用されます。
 
-   REST エンドポイントを指定する方法は 2 つあります。
+   REST エンドポイントを指定するには、次の 2 つのオプションがあります。
 
    +++URL
 
@@ -172,15 +171,15 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
    **[!UICONTROL POST リクエストを有効にする]**&#x200B;ことで、リクエストを POST する URL を指定することもできます。フォームをホストする AEM サーバーにデータを送信するには、AEM サーバーのルートパスに対応する相対パスを使用します。例えば、`/content/forms/af/SampleForm.html` のようになります。他のサーバーにデータを送信するには、絶対パスを使用します。
 
-   +++
++++
 
    +++設定
 
-   このオプションを使用すると、AEM設定ブラウザーを介して管理される、事前定義済みの HTTP 設定を追加できます。 サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。 認証タイプとコンテンツタイプについて詳しくは、[ データソースの設定 ](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint) を参照してください。
+   このオプションを使用すると、AEM の設定ブラウザー経由で管理される事前定義済みの HTTP 設定を追加できます。サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。認証タイプとコンテンツタイプについて詳しくは、[データソースの設定](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)を参照してください
 
-   +++
++++
 
-1. **[!UICONTROL 保存して閉じる]** をクリックします。
+1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
 >[!ENDTABS]
 

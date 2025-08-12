@@ -8,33 +8,33 @@ role: User, Developer
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 
-# コアコンポーネントに基づくアダプティブFormsでサポートされている送信アクション
+# コアコンポーネントに基づくアダプティブフォームでサポートされている送信アクション
 
 <span class="preview">アドビでは、コアコンポーネントを使用して、[AEM Sites ページへのアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)や[スタンドアロンのアダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)を行うことをお勧めします。</span>
 
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=ja) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=ja) |
 | AEM as a Cloud Service（基盤コンポーネント） | [ここをクリックしてください](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service（コアコンポーネント） | この記事 |
 | AEM as a Cloud Service（Edge Delivery Services） | [ここをクリックしてください](/help/forms/configure-submit-action-eds-forms.md) |
 
-送信アクションを使用すると、アダプティブフォーム経由で取り込んだデータの送信先を選択できます。送信アクションは、ユーザーがアダプティブフォームの「**[!UICONTROL 送信]** button on an Adaptive Form. 」ボタンをクリックするとトリガーされます。コアコンポーネントに基づくアダプティブFormsは、様々な [ 標準の送信アクション ](#submit-actions-supported-by-adaptive-forms-based-on-core-components) をサポートしています。
+送信アクションを使用すると、アダプティブフォーム経由で取り込んだデータの送信先を選択できます。送信アクションは、ユーザーがアダプティブフォームの「**[!UICONTROL 送信]** button on an Adaptive Form. 」ボタンをクリックするとトリガーされます。コアコンポーネントに基づくアダプティブフォームは、様々な[標準の送信アクション](#submit-actions-supported-by-adaptive-forms-based-on-core-components)をサポートしています。
 
 <!--You can also configure different actions for an Adaptive Form submissions.
 
 * **Redirect URL/Path** - This option allows user to configure a page for each form, to which the form users are redirected after submitting an Adaptive Form. 
 * **Show Message** - This option allows users to add a message that is displayed when the Adaptive Form is successfully submitted. The predefined text is included in the dialog box and it can be modified by the user. -->
 
-## コアコンポーネントに基づくFormsの送信アクション
+## コアコンポーネントに基づくフォームの送信アクション
 
-コアコンポーネントに基づくアダプティブFormsでは、次の送信アクションがサポートされています。
+コアコンポーネントに基づくアダプティブフォームでは、次の送信アクションがサポートされています。
 
 * [メールを送信](/help/forms/configure-submit-action-send-email.md)
 * [Power Automate フローを呼び出す](/help/forms/forms-microsoft-power-automate-integration.md)
@@ -46,14 +46,14 @@ ht-degree: 67%
 * [OneDrive に送信](/help/forms/configure-submit-action-onedrive.md)
 * [AEM ワークフローを起動](/help/forms/configure-submit-action-workflow.md)
 * [Marketo Engage に送信](/help/forms/submit-adaptive-form-to-marketo-engage.md)
-* [Adobe Experience Platform（AEP）への送信 ](/help/forms/aem-forms-aep-connector.md)
+* [Adobe Experience Platform（AEP）に送信](/help/forms/aem-forms-aep-connector.md)
 
-また、コアコンポーネントに基づくアダプティブフォームを他のストレージ設定に送信することもできます。
+コアコンポーネントに基づくアダプティブフォームを他のストレージ設定に送信することもできます。
 
 * [Salesforce アプリケーションにアダプティブフォームを接続](/help/forms/aem-forms-salesforce-integration.md)
 * [Microsoft へのアダプティブフォームの接続](/help/forms/ms-dynamics-odata-configuration.md)
 
-さらに、特定の組織要件に合わせて [ デフォルトの送信アクションをカスタマイズ ](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md) することもできます。
+さらに、[デフォルトの送信アクションをカスタマイズ](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)して、特定の組織要件に合わせることができます。
 
 
 ### コアコンポーネントに基づくアダプティブフォームの送信アクションの設定
@@ -66,7 +66,7 @@ ht-degree: 67%
   ![AEM Forms Submit action](/help/forms/assets/aem-forms-submit-action.png)
 -->
 
-設定ダイアログの「送信」タブを使用して、フォームコンテナのプロパティを定義できます。 フォームコンテナコンポーネントの設定ダイアログについて詳しくは、[こちらをクリック](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html?lang=ja)してください。
+設定ダイアログの「送信」タブを使用して、フォームコンテナのプロパティを定義できます。フォームコンテナコンポーネントの設定ダイアログについて詳しくは、[こちらをクリック](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)してください。
 
 ![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、送信アクションを設定します](/help/forms/assets/adaptive-forms-submit-message.png)
 
@@ -126,7 +126,7 @@ For a comprehensive guide on the detailed steps to post or submit data to a REST
 
 ## Invoke an AEM Workflow {#invoke-an-aem-workflow}
 
-The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem). When a form is submitted, the selected workflow starts automatically. 
+The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). When a form is submitted, the selected workflow starts automatically. 
 
  [Integrate AEM Adaptive Form with AEM Workflow: Streamlining Business Processes](/help/forms/configure-submit-action-workflow.md) provides step-by-step instructions to seamlessly integrate AEM Workflow with Adaptive Forms, optimizing business processes and enhancing workflow automation.
 
@@ -142,7 +142,7 @@ The **[!UICONTROL Submit to Azure Blob Storage]** Submit Action connects an Adap
 
 AEM as a Cloud Service allows submitting data to Azure Storage from AEM Adaptive Forms. Learn how to [create and use Azure Blob Storage configuration in AEM Forms](/help/forms/configure-submit-action-azure-blob-storage.md) for efficient data storage. 
 
-To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja#deployment-process) to your Cloud Service instance.
+To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
 ## Submit to Power Automate {#microsoft-power-automate}
 

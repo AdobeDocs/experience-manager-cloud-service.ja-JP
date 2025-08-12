@@ -8,7 +8,7 @@ role: User, Developer
 source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
 source-wordcount: '818'
-ht-degree: 65%
+ht-degree: 95%
 
 ---
 
@@ -51,8 +51,8 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
     >[!NOTE]
     >
     > The URL for **[!UICONTROL Azure Blob Endpoint]** is automatically appended to the textbox when a value is entered for **[!UICONTROL Azure Storage Account]**. You can update the Azure Blob End Point URL with your custom domain. Steps to update URL for **[!UICONTROL Azure Blob End Point]**:
-    > 1. [Enable the AEM Advance Networking VPN support](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=ja)
-    > 1. [Enable dedicated egress IP link](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=ja)
+    > 1. [Enable the AEM Advance Networking VPN support](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
+    > 1. [Enable dedicated egress IP link](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
     > 1. [Map custom domain to azure blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name?tabs=azure-portal)
 -->
 
@@ -76,11 +76,11 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
 基盤コンポーネントに基づくアダプティブフォームで Azure ストレージコンテナ設定を使用するには、次の手順を実行します。
 
 1. 編集用にアダプティブフォームを開き、アダプティブフォームのコンテナプロパティの「**[!UICONTROL 送信]**」セクションに移動します。
-1. **[!UICONTROL 送信アクション]** ドロップダウンリストから「**[!UICONTROL Azure Blob Storage に送信]**」を選択します。
+1. **[!UICONTROL 送信アクション]**&#x200B;ドロップダウンリストから、「**[!UICONTROL Azure Blob Storage に送信]**」を選択します。
 
-   ![Azure Blob ストレージのGIF](/help/forms/assets/submit-to-azure-blob-fc.png){width=50%,height=50%}
+   ![Azure Blob Storage GIF](/help/forms/assets/submit-to-azure-blob-fc.png){width=50%,height=50%}
 
-   Azure Blob ストレージにレコードのドキュメント（DoR）を保存することもできます。
+   Azure Blob Storage にレコードのドキュメント（DoR）を保存することもできます。
 
 1. データを保存する場所に「**[!UICONTROL ストレージ設定]**」を選択します。
 1. 「**[!UICONTROL 保存]**」をクリックして、送信設定を保存します。
@@ -95,11 +95,11 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
 1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。 アダプティブフォームコンテナダイアログボックスが開きます。
 1. 「**[!UICONTROL 送信]**」タブをクリックします。
-1. **[!UICONTROL 送信アクション]** ドロップダウンリストから「**[!UICONTROL Azure Blob Storage に送信]**」を選択します。
+1. **[!UICONTROL 送信アクション]**&#x200B;ドロップダウンリストから、「**[!UICONTROL Azure Blob Storage に送信]**」を選択します。
 
    ![Azure Blob Storage GIF](/help/forms/assets/azure-submit-video.gif)
 
-   Azure Blob ストレージにレコードのドキュメント（DoR）を保存することもできます。
+   Azure Blob Storage にレコードのドキュメント（DoR）を保存することもできます。
 
 1. データを保存する場所に「**[!UICONTROL ストレージ設定]**」を選択します。
 1. 「**[!UICONTROL 保存]**」をクリックして、送信設定を保存します。
@@ -109,24 +109,24 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
 
 >[!TAB ユニバーサルエディター]
 
-ユニバーサルエディターで作成されたアダプティブフォームで Azure ストレージコンテナ設定を使用するには、次の手順を実行します。
+ユニバーサルエディターでオーサリングされたアダプティブフォームで Azure ストレージコンテナ設定を使用するには、次の手順を実行します。
 
 1. アダプティブフォームを編集用に開きます。
-1. エディターで **フォームプロパティを編集** 拡張機能をクリックします。
-**フォームのプロパティ** ダイアログが表示されます。
+1. エディターで&#x200B;**フォームプロパティを編集**拡張機能をクリックします。
+**フォームプロパティ**&#x200B;ダイアログが表示されます。
 
    >[!NOTE]
    >
-   > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Managerで **フォームプロパティを編集** 拡張機能を有効にします。
-   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
+   > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Manager で&#x200B;**フォームプロパティを編集**&#x200B;拡張機能を有効にします。
+   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については、[Extension Manager 機能のハイライト](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)の記事を参照してください。
 
 1. 「**送信**」タブをクリックし、「**[!UICONTROL Azure Blob Storage に送信]**」送信アクションを選択します。
    ![Azure Blob Storage](/help/forms/assets/azure-blob-storage-ue.png)
 
-   「**添付ファイルを元の名前で保存**」を選択すると、添付ファイルは元のファイル名を使用してフォルダーに保存されます。 Azure Blob ストレージにレコードのドキュメント（DoR）を保存することもできます。
+   「**添付ファイルを元の名前で保存**」を選択した場合、添付ファイルは元のファイル名を使用してフォルダーに保存されます。Azure Blob Storage にレコードのドキュメント（DoR）を保存することもできます。
 
 1. データを保存する場所に「**[!UICONTROL ストレージ設定]**」を選択します。
-1. **[!UICONTROL 保存して閉じる]** をクリックして、送信設定を保存します。
+1. 「**[!UICONTROL 保存して閉じる]**」をクリックして、送信設定を保存します。
 
 フォームを送信すると、データは指定された Azure ストレージコンテナ設定に保存されます。
 データを保存するフォルダー構造は `/configuration_container/form_name/year/month/date/submission_id/data` です。

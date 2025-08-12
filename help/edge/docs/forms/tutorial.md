@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1921'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -112,7 +112,7 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
 
    1. AEM Forms ボイラープレートを使用して以前に作成した GitHub リポジトリに移動します。
    1. `fstab.yaml` ファイルをルートフォルダーに追加します。
-   1. 参照を、AEM ユーザーと共有したフォルダーのパス（forms@adobe.com）に追加します。
+   1. AEM ユーザー（forms@adobe.com）と共有したフォルダーへのパスを含む参照を追加します。
 
       ![Google Drive のサンプルコンテンツ](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -132,7 +132,7 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
       Microsoft SharePoint でのファイル管理について詳しくは、[Adobe SharePoint の使用方法](https://www.aem.live/docs/setup-customer-sharepoint)を参照してください。
 
 
-   1. 参照を追加したら、`fsatb.yaml` ファイルをコミットします。これで問題なく見えます。 ビルドの問題が発生した場合は、[GitHub ビルド問題のトラブルシューティング](#troubleshooting-github-build-issues)を参照してください。
+   1. 参照を追加し、すべてが正しく表示されたら、`fsatb.yaml` ファイルをコミットします。ビルドの問題が発生した場合は、[GitHub ビルド問題のトラブルシューティング](#troubleshooting-github-build-issues)を参照してください。
 
       ![更新された fsatab.yaml ファイルのコミット](/help/edge/assets/commit-updated-fstab-yaml.png)
 
