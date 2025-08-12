@@ -37,7 +37,7 @@ ht-degree: 99%
 
 2025.5.0 リリースで追加された機能の概要については、2025年5月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3464351?quality=12&captions=jpn)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -108,7 +108,7 @@ AEM Assets は Figma とネイティブに統合されているので、デザ�
 
 [Experience Manager (AEM) Dynamic Media とJourney Optimizer (AJO) B2C のネイティブ統合](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/combine/aem-dynamic)により、マーケターは AEM Dynamic Media アセット (レンディションおよび DM テンプレート) を AJO コンテンツに簡単に埋め込んで、チャネル間でのリアルタイムの更新と高度にパーソナライズされたエクスペリエンスを提供できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3463783/?learn=on&enablevpops=&autoplay=true&captions=jpn)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
