@@ -4,7 +4,7 @@ description: AEM as a Cloud Serviceでのログのベンダーへの転送につ
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 5%
@@ -93,7 +93,6 @@ ht-degree: 5%
     </tr>
   </tbody>
 </table>
-&lt;/html>
 
 >[!NOTE]
 >
@@ -216,7 +215,6 @@ AEMと Apache/DispatcherAEMのログを、専用のエグレス IP などの高�
       <td>はい</td>
   </tbody>
 </table>
-&lt;/html>
 
 >[!NOTE]
 >ログが 1 つの IP アドレスから表示されるかどうかは、高度なネットワーク設定の選択によって決まります。  これを容易にするには、専用のエグレスを使用する必要があります。
@@ -555,7 +553,7 @@ Sumo Logic へのログ転送では、AEMとDispatcherのログがサポート�
 
 `https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
 
-URL の最後のセクション（先頭の `/` を除く）をコピーし、それを前述の [ 設定 ](/help/operations/config-pipeline.md#secret-env-vars) の節で説明されているように [&#128279;](#setup)CloudManager シークレット環境変数）として追加してから、設定でその変数を参照する必要があります。  以下に例を示します。
+URL の最後のセクション（先頭の `/` を除く）をコピーし、それを前述の [ 設定 ](/help/operations/config-pipeline.md#secret-env-vars) の節で説明されているように [](#setup)CloudManager シークレット環境変数）として追加してから、設定でその変数を参照する必要があります。  以下に例を示します。
 
 ```yaml
 kind: "LogForwarding"

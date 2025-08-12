@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 185b12bc-cea9-45c8-9b57-dc313bd0cfaa
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 100%
@@ -755,6 +755,7 @@ Here is the sample JSON code for previously mentioned examples.
 }
 
 ```
+
 -->
 
 ## アダプティブフォームコンポーネントの許容値の制限 {#limit-acceptable-values-for-an-adaptive-form-component}

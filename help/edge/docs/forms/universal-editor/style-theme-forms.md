@@ -4,7 +4,7 @@ description: Edge Delivery Services 経由で配信される AEM Forms のテー
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2493'
 ht-degree: 55%
@@ -308,7 +308,7 @@ AEM Forms用Edge Delivery Servicesのフォームスタイル設定には、CSS 
 
 ドロップダウン、ラジオグループ、チェックボックスグループを除くすべてのフォームフィールドには、次の HTML 構造があります。
 
-#### 一般コンポーネントの HTML 構造
+### 一般コンポーネントの HTML 構造
 
 ```HTML
   <div class="{Type}-wrapper field-{Name}   field-wrapper" data-required={Required}>
@@ -1051,7 +1051,7 @@ main .form form .file-wrapper .files-list .file-description .file-description-na
 
 CSS セレクターを使用すると、特定のフィールドタイプをターゲットにし、スタイルを一貫して適用できます。
 
-#### HTML 構造
+### HTML 構造
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -1092,7 +1092,7 @@ CSS セレクターを使用すると、特定のフィールドタイプをタ�
 
 
 
-#### CSS セレクターの例
+### CSS セレクターの例
 
 ```CSS
 /- Primary Pattern: Target all text input fields */

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 98%
@@ -510,7 +510,8 @@ JSON スキーマ v4 からバージョン 2020-12 仕様への主な変更点�
 }
 ```
 
-<!--- ## Configure scripts or expressions for form objects  {#configure-scripts-or-expressions-for-form-objects}
+<!--
+## Configure scripts or expressions for form objects  {#configure-scripts-or-expressions-for-form-objects}
 
 JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. You can pre-configure form objects to [evaluate an expression](adaptive-form-expressions.md) on a form event.
 
@@ -779,6 +780,7 @@ Here is the sample JSON code for previously mentioned examples.
 }
 
 ```
+
 -->
 
 ## アダプティブフォームコンポーネントの許容値の制限 {#limit-acceptable-values-for-an-adaptive-form-component}
