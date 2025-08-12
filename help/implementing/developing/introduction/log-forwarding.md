@@ -93,7 +93,7 @@ ht-degree: 5%
     </tr>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ AEMと Apache/DispatcherAEMのログを、専用のエグレス IP などの高�
       <td>はい</td>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >ログが 1 つの IP アドレスから表示されるかどうかは、高度なネットワーク設定の選択によって決まります。  これを容易にするには、専用のエグレスを使用する必要があります。
@@ -555,7 +555,7 @@ Sumo Logic へのログ転送では、AEMとDispatcherのログがサポート�
 
 `https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
 
-URL の最後のセクション（先頭の `/` を除く）をコピーし、それを前述の [ 設定 ](/help/operations/config-pipeline.md#secret-env-vars) の節で説明されているように [](#setup)CloudManager シークレット環境変数）として追加してから、設定でその変数を参照する必要があります。  以下に例を示します。
+URL の最後のセクション（先頭の `/` を除く）をコピーし、それを前述の [ 設定 ](/help/operations/config-pipeline.md#secret-env-vars) の節で説明されているように [&#128279;](#setup)CloudManager シークレット環境変数）として追加してから、設定でその変数を参照する必要があります。  以下に例を示します。
 
 ```yaml
 kind: "LogForwarding"
