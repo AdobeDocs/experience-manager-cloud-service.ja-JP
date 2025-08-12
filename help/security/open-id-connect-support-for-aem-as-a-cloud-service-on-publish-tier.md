@@ -115,6 +115,7 @@ Idp 設定からの情報：
       "storeRefreshToken": false
    }
    ```
+
 1. その後、次のようにプロパティを設定します。
    * `groupsInIdToken`：グループが ID トークンで送信される場合は、true に設定します。 値が false の場合、または指定されていない場合、グループは UserInfo エンドポイントから読み取られます。
    * `groupsClaimName`：要求の名前には、AEMで同期されるグループが含まれます。
