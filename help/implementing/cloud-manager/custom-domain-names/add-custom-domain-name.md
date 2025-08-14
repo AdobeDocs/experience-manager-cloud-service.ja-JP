@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 99%
+source-wordcount: '1089'
+ht-degree: 91%
 
 ---
 
@@ -75,7 +75,7 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 
    >[!NOTE]
    >
-   >顧客が管理する自社の（OV/EV または DV）SSL 証明書を使用する場合は、SSL 証明書を追加する必要はありません。このルールは、顧客が管理する CDN（コンテンツ配信ネットワーク）***プロバイダー***&#x200B;を使用する予定の場合にも適用されます。準備ができたら、代わりに、[ ドメインマッピングを追加 ](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) に直接移動します。
+   >顧客が管理する自社の（OV/EV または DV）SSL 証明書を使用する場合は、SSL 証明書を追加する必要はありません。このルールは、顧客が管理する CDN（コンテンツ配信ネットワーク）***プロバイダー***&#x200B;を使用する予定の場合にも適用されます。代わりに、準備が整ったら[ドメインマッピングの追加](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)に直接進むことができます。
 
 
 ### アドビが管理する証明書の手順 {#adobe-managed-cert-steps}
@@ -94,13 +94,18 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 >
 >アドビが管理する CDN の場合、DV（ドメイン検証）証明書を使用する際は、ACME 検証済みのサイトのみが許可されます。
 
-#### 要件 {#adobe-managed-cert-dv-requirements}
 
-DNS レコードを設定する前に、次の要件を満たす必要があります。
+### DNS の設定{#config-dns}
+
+>[!WARNING]
+>
+>「広告前に登録」の原則はここに適用されます。 つまり、DNS の設定は、ドメインマッピングが正常に追加された *後* にのみ実行する必要があります。 これにより、Cloud Managerが、ドメインに対するリクエストに応答する前に、ドメインが独自の設定に存在することを認識および検証できます。 また、ドメインの乗っ取りが試行されるのを回避します。
+
+DNS レコードを設定する *前に*、次の要件を満たしていることを確認します。
 
 * ドメインホストまたは登録機関がわからない場合は確認します。
 * 組織のドメインの DNS レコードを編集できる、またはそれが可能な適切な担当者に連絡できる必要があります。
-* [ドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)ドキュメントの説明に従って、設定済みのカスタムドメイン名の検証をすでに済ませている必要があります。
+* [ ドメイン名ステータスの確認 ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) ドキュメントに記載されているように、設定されたカスタムドメイン名は既に確認されています。
 
 #### CNAME レコード {#adobe-managed-cert-cname-record}
 
