@@ -4,10 +4,10 @@ description: Cloud Acceleration Manager を使用して、移行セットから�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 30386a3117f241d81eed5e55f6c6e97bbe4084f8
-workflow-type: ht
-source-wordcount: '3467'
-ht-degree: 100%
+source-git-commit: c81e870667d284626a0092775fdd3bab37b99c58
+workflow-type: tm+mt
+source-wordcount: '3577'
+ht-degree: 96%
 
 ---
 
@@ -194,7 +194,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 
 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)エラーの一般的な原因は、ノード ID の競合です。このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
 
->java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030：一意性制約に違反したプロパティ [jcr:uuid]、値 a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content、/some/other/path/jcr:content
 
 AEM の各ノードには、一意の UUID が必要です。このエラーは、取り込まれているノードの UUID が、移行先インスタンスの別のパスに存在するノードと同じであることを示します。この状況は、以下の 2 つの理由で発生する可能性があります。
 
@@ -269,6 +269,15 @@ MongoDB に保存されるノードプロパティの値は、16 MB 未満にす
 >abstract="取り込みを待機していた抽出が正常に終了しませんでした。 実行できなかったので、取り込みが取り消されました。"
 
 ソース移行セットとして、実行中の抽出で作成された取り込みは、その取り込みが成功するまで待機し、その時点で正常に開始されます。抽出が失敗または停止した場合、取り込みおよびそのインデックス作成ジョブは開始されず、取り消されます。この場合は、抽出をチェックして失敗した理由を判断し、問題を修正して、再度抽出を開始します。固定抽出を実行した後で、新しい取り込みをスケジュールできます。
+
+### 取り込み待機中に開始できませんでした {#waiting-ingestion-not-started}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_waiting_ingestion_not_started"
+>title="取り込み待機中が開始されていません"
+>abstract="抽出の完了を待った後、取り込みを開始できませんでした。"
+
+ソース移行セットとして抽出を実行中で作成された取り込みは、その抽出が正常に完了するまで待ち、その時点で取り込みは正常に開始しようとします。 取り込みの開始に失敗した場合は、失敗とマークされます。 IP許可リストが対象のオーサー環境で設定されている。対象のオーサー環境がその他の理由で利用できない。  この場合、取り込みの開始に失敗した理由を確認し、問題を修正して、取り込みを再度開始します（抽出を再実行する必要はありません）。
 
 ### 削除されたアセットが取り込みの再実行後に存在しない
 
