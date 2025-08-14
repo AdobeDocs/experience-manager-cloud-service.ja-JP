@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.11.0 リ
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1808'
-ht-degree: 99%
+source-wordcount: '1810'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 99%
 
 2024.11.0 リリースで追加された機能の概要については、2024年11月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -47,11 +47,11 @@ ht-degree: 99%
 
 AEM インスタンス経由で公開するための **[!DNL Edge Delivery Services]CSV インポーター**
 
-お気に入りのスプレッドシートツールで Edge Delivery スプレッドシートデータ（リダイレクトなど）を効率的に管理し、新しい CSV インポーターを使用して AEM にアップロードします。 [詳細情報](/help/edge/wysiwyg-authoring/tabular-data.md#importing)。
+お気に入りのスプレッドシートツールで Edge Delivery スプレッドシートデータ（リダイレクトなど）を効率的に管理し、新しい CSV インポーターを使用して AEM にアップロードします。 [詳細情報](https://www.aem.live/docs/authoring-tabular-data)。
 
 ### AEM Sites のプレリリース機能
 
-強化された[一意の ID ベースの参照によるコンテンツフラグメント参照](/help/headless/graphql-api/uuid-reference-upgrade.md)により、アセットまたはフラグメントを移動した場合でも有効な安定したリンクが確保され、更新や再公開の必要がなくなります。 現在の制限事項：ページ参照は、一意の ID ではまだサポートされていません。 コンテンツフラグメントでページを参照する場合は、この機能を使用しないでください。
+強化 [ 一意の ID ベースの参照を使用したコンテンツフラグメント参照 ](/help/headless/graphql-api/uuid-reference-upgrade.md) により、アセットやフラグメントを移動した場合でも有効な安定したリンクが確保され、更新や再公開が不要になりました。 現在の制限事項：ページ参照は、一意の ID ではまだサポートされていません。 コンテンツフラグメントでページを参照する場合は、この機能を使用しないでください。
 
 ### 早期導入プログラム {#sites-early-adopter}
 

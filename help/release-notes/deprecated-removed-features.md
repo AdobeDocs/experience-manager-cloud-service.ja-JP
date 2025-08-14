@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: fbe20eb0e57be3a6d02d163d92b13be060ac8ba6
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '3193'
+source-wordcount: '3194'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 100%
 | ------------ | ------------------ | ----------- |
 | Sites | [Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md) | [OpenAPI を使用したコンテンツフラグメント配信](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>と<br> [コンテンツフラグメントおよびコンテンツフラグメントモデルの管理 OpenAPI](/help/headless/content-fragment-openapis.md) |
 | Sites | [PWA 機能](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | なし |
-| Sites | [SPA Editor](/help/implementing/developing/hybrid/introduction.md) | AEM でヘッドレスコンテンツの管理に推奨されるエディターは次のとおりです。<br>- ビジュアル編集用の[ユニバーサルエディター](/help/edge/wysiwyg-authoring/authoring.md)。<br>- フォームベース編集用の[コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md)。 |
+| Sites | [SPA Editor](/help/implementing/developing/hybrid/introduction.md) | AEM でヘッドレスコンテンツの管理に推奨されるエディターは次のとおりです。<br>- ビジュアル編集用の[ユニバーサルエディター](https://www.aem.live/docs/aem-authoring)。<br>- フォームベース編集用の[コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md)。 |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/ja/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **ソーシャルメディアのステータス** のエクスペリエンスフラグメントのプロパティ。 | この機能は間もなく削除される予定です。 |
 | Sites | [Experience Cloud 設定自動化](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | なし |

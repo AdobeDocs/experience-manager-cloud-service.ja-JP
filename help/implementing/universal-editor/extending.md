@@ -4,9 +4,9 @@ description: コンテンツ作成者のニーズをサポートするために�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '581'
 ht-degree: 16%
 
 ---
@@ -59,6 +59,6 @@ Adobe Experience Cloud サービスとして、ユニバーサルエディター
 
 UI の拡張機能に加えて、ユニバーサルエディターには、カスタムビジネス要件のシームレスな統合を可能にする他の多くの柔軟な拡張ポイントが用意されています。
 
-* **[ブロック](/help/edge/developer/block-collection.md)**：シンプルな JSON 形式では、プロジェクトで、コンテンツ作成に使用できるブロックと UE 機能を調整できます。
+* **[ブロック ](https://www.aem.live/developer/block-collection)**：シンプルな JSON 形式では、プロジェクトで、コンテンツ作成に使用できるブロックと UE 機能を調整できます。
 * **[カスタムユーザーインターフェイス](#extending-ui)**：拡張機能では、必要な UI をサイドパネルやモーダルダイアログに表示できます。
 * **[イベント](/help/implementing/universal-editor/events.md)**：拡張機能は、作成者のアクションと選択に関するイベントをページで受け取り、適切に応答します。

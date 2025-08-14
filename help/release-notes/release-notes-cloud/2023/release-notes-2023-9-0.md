@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 リ�
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 84%
@@ -40,7 +40,7 @@ ht-degree: 84%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 
-## AEM Edge Delivery Services {#edge-delivery}
+## AEMEdge Delivery Services {#edge-delivery}
 
 Edge Deliveryは、コンテンツの影響を最大化し、お客様とのやり取りの時点で測定可能なビジネス成果を促進することに重点を置いた、構成可能な新しいサービスセットです。
 
@@ -58,9 +58,9 @@ Edge Delivery Servicesについて詳しくは、記事 [ こちら ](/help/edge
 
 ### 管理ビューの新機能 {#admin-view-features}
 
-* **AEM Assetsのas a Cloud ServiceとEdge Delivery Services向けのドキュメントベースのオーサリングの統合**:AEM AssetsとEdge Delivery Services向けのドキュメントベースのオーサリングを統合して、web サイト作成者が [AEM Assets リポジトリで使用できる画像を、Microsoft Word またはGoogle Docsでドキュメントをオーサリングしながら ](/help/edge/using.md#integrate-assets-edge) 利用できるようにします。
+* **AEM Assets as a Cloud ServiceとEdge Delivery Servicesのドキュメントベースのオーサリングの統合**: AEM AssetsとEdge Delivery Servicesのドキュメントベースのオーサリングを統合して、web サイト作成者が [AEM Assets リポジトリで利用可能な画像を使用しながら、Microsoft Word またはGoogle Docsでドキュメントをオーサリング ](/help/edge/overview.md) できるようにします。
 
-* **ZIP アーカイブを解凍**:Experience Managerで管理されている ZIP アーカイブを選択し、ファイルをダウンロードせずに [Experience Managerに直接抽出 ](/help/assets/manage-digital-assets.md#extract-zip-archives) する機能。
+* **ZIP アーカイブを抽出**:Experience Managerで管理される ZIP アーカイブを選択し、ダウンロードせずに [ ファイルをExperience Managerに直接抽出 ](/help/assets/manage-digital-assets.md#extract-zip-archives) する機能。
 
   ![グループ用の項目をピン留め](/help/release-notes/assets/extract-archive.png)
 
@@ -89,7 +89,7 @@ Edge Delivery Servicesについて詳しくは、記事 [ こちら ](/help/edge
 * **[Adobe Sign ワークフローステップの機能強化](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**：Adobe Sign ワークフローステップが強化機能され、次が含まれるようになりました。
    * **Adobe Sign の行政 ID に基づいた認証**：Adobe Acrobat Sign の行政 ID に基づいた認証は、ユーザーが行政発行の ID（運転免許証、国民 ID、パスポート）を使用して身元を認証できるようにすることで、追加の検証レイヤーを提供します。この機能強化により、信頼できる ID ドキュメントを使用することで、署名プロセスの信頼性がさらに高まり、高度なセキュリティ、コンプライアンスおよびユーザー検証を必要とするシナリオに最適になります。
 
-   * **Adobe Sign ドキュメントの監査証跡**：監査証跡機能を使用すると、Adobe Sign ドキュメントのライフサイクルに関する詳細なインサイトが得られます。監査証跡を使用すると、ドキュメントに関連するすべてのアクションとインタラクションの包括的な記録を保持できるようになります。これには、ドキュメントを表示、編集、署名したユーザーなどの詳細と、各イベントのタイムスタンプが含まれます。この機能強化は、コンプライアンスの保持、紛争の解決、デジタル契約の整合性を確保する上で重要です。
+   * **Adobe Sign ドキュメントの監査記録**：監査記録機能を使用すると、Adobe Sign ドキュメントのライフサイクルに関する詳細なインサイトが得られます。監査記録を使用すると、ドキュメントに関連するすべてのアクションとインタラクションの包括的な記録を保持できるようになります。これには、ドキュメントを表示、編集、署名したユーザーなどの詳細と、各イベントのタイムスタンプが含まれます。この機能強化は、コンプライアンスの保持、紛争の解決、デジタル契約の整合性を確保する上で重要です。
 
    * **契約受信者の役割を署名者以外にも拡張**：Adobe Acrobat Sign には、契約受信者の役割を署名者以外にも拡張して、ワークフロー要件にさらに適合するオプションがあります。有効にすると、契約の各受信者の役割を個別に設定でき、署名者がデフォルトになります。
 

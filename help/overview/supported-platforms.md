@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
-source-git-commit: d53bfe103ff8e40c8221805a2d66faf3c5cd3823
-workflow-type: ht
-source-wordcount: '419'
-ht-degree: 100%
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe Experience Manager のユーザーインターフェイスは、[オーサ
 
 * [ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)
-* [サイドキック](/help/edge/docs/sidekick.md)を使用した[ドキュメントベースのオーサリング](/help/edge/docs/authoring.md)
+* [サイドキック](https://www.aem.live/docs/sidekick)を使用した[ドキュメントベースのオーサリング](https://www.aem.live/docs/aem-authoring)
 
 すべてのブラウザーは、デフォルトのプラグインとアドオンのセットを使用してテストされます。
 
@@ -64,4 +64,4 @@ Adobe Experience Manager のユーザーインターフェイスは、[オーサ
 
 AEM でレンダリングされる web サイトのブラウザーサポートは、AEM ページテンプレート、ブロック、デザイン、コンポーネント出力の実装によって異なります。したがって、プロジェクトを実装する開発者は、最終的にサイトの互換性を制御できるようになります。
 
-AEM の[プロジェクトボイラープレート](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md#create-github-project)、[コアコンポーネント](/help/implementing/developing/components/overview.md#aem-core-components)、[WKND サンプルサイト](/help/implementing/developing/introduction/develop-wknd-tutorial.md)はすべて、最新のブラウザーすべてと互換性があります。
+AEM の[プロジェクトボイラープレート](https://www.aem.live/developer/ue-tutorial#create-github-project)、[コアコンポーネント](/help/implementing/developing/components/overview.md#aem-core-components)、[WKND サンプルサイト](/help/implementing/developing/introduction/develop-wknd-tutorial.md)はすべて、最新のブラウザーすべてと互換性があります。

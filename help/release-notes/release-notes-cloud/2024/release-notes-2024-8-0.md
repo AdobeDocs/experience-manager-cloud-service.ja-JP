@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.8.0 リ�
 feature: Release Information
 role: Admin
 exl-id: dd1d4b8f-8331-4e97-a754-37e720974db6
-source-git-commit: 4b8086920bc3e3b9c5ed2a74934645fbc69acf71
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1174'
 ht-degree: 98%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 98%
 
 さらに、次のページ管理機能がサポートされるようになりました。
 
-* [AEM タグ](/help/sites-cloud/authoring/sites-console/tags.md)は、Edge Delivery Services に[分類](/help/edge/wysiwyg-authoring/taxonomy.md)として書き出すことができます。
+* [AEM タグ](/help/sites-cloud/authoring/sites-console/tags.md)は、Edge Delivery Services に[分類](https://www.aem.live/docs/authoring-taxonomy)として書き出すことができます。
 * Edge Delivery Services 用[テンプレート](/help/sites-cloud/authoring/universal-editor/templates.md)は、近日中に提供されます。
 
 ### 早期導入プログラム {#sites-early-adopter}
@@ -134,9 +134,9 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 
 ユーザー名とパスワードの入力を求める基本認証ダイアログを表示して、特定のコンテンツリソースを保護します。この機能は、エンドユーザーのアクセス権に対する包括的なソリューションとして機能するのではなく、主にビジネス関係者によるコンテンツのレビューなど、簡易な認証ユースケースを対象としています。ユーザー名とパスワードのリストは、秘密鍵タイプの Cloud Manager 環境変数を参照して、設定パイプライン経由でデプロイされる Git の設定ファイルを通じて管理されます。[詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth)。
 
-#### サーバー側リダイレクト(アーリーアダプタープログラム) {#server-side-redirects-early-adopter}
+#### サーバーサイドのリダイレクト（早期導入プログラム） {#server-side-redirects-early-adopter}
 
-ソース管理で 301/302 サーバーサイド リダイレクトを設定し、CDN にデプロイします。 [詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. -->リクエストと応答の変換、AEM 外のサイトへのトラフィックのルーティングなど、[CDN 設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)に関連して既に利用可能な他の機能がいくつかあります。
+ソース管理で 301/302 サーバーサイドのリダイレクトを設定し、CDN にデプロイします。 [詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. -->リクエストと応答の変換、AEM 外のサイトへのトラフィックのルーティングなど、[CDN 設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)に関連して既に利用可能な他の機能がいくつかあります。
 
 #### ビジネスユーザーが Git 外部でリダイレクトを宣言できる（早期導入プログラム） {#apache-rewritemaps-early-adopter}
 

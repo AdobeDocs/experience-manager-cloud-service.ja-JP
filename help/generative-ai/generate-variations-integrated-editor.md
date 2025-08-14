@@ -4,9 +4,9 @@ description: AEM as a Cloud Service 内の様々なエディターからアク�
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
-workflow-type: ht
-source-wordcount: '1416'
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '1417'
 ht-degree: 100%
 
 ---
@@ -198,7 +198,7 @@ The brand score shows you how on-brand the generated variation is.
 
 ### ドキュメントベースのオーサリングの AEM Sidekick からのアクセス {#access-aem-sidekick}
 
-AEM Sidekick からのアクセスは、[ドキュメントベースのオーサリング](/help/edge/wysiwyg-authoring/authoring.md)に使用されます。
+AEM Sidekick からのアクセスは、[ドキュメントベースのオーサリング](https://www.aem.live/docs/aem-authoring)に使用されます。
 
 （Edge Delivery Services の）Sidekick から「バリエーションを生成」にアクセスするには、いくつかの設定が必要です。
 

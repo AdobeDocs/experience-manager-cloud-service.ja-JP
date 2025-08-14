@@ -5,9 +5,9 @@ feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
-workflow-type: ht
-source-wordcount: '569'
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '570'
 ht-degree: 100%
 
 ---
@@ -57,7 +57,7 @@ Edge Delivery Services を使用する場合は、[AEM **Sites** コンソール
 
 ドキュメントベースのオーサリングでは、作成者は既に使い慣れたツールを使用して、AEM の Edge Delivery Services の速度とパフォーマンスのメリットを活用しながらコンテンツを公開できます。ドキュメントベースのオーサリングでは、AEM コンソールを使用する必要はありません。
 
-ドキュメントベースのオーサリングについて詳しくは、[コンテンツのオーサリングと公開](/help/edge/docs/authoring.md)を参照してください。
+ドキュメントベースのオーサリングについて詳しくは、[コンテンツのオーサリングと公開](https://www.aem.live/docs/aem-authoring)を参照してください。
 
 ## AEM コンテンツフラグメントエディター {#cf-editor}
 

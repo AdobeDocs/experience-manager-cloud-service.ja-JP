@@ -4,9 +4,9 @@ description: Adobe Experience Manager as a Cloud Service のアーキテクチ�
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '2712'
+source-wordcount: '2711'
 ht-degree: 99%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 99%
 >id="intro_aem_cloudservice_architecture"
 >title="AEM as a Cloud Service アーキテクチャの概要"
 >abstract="ここでは、AEM as a Cloud Service の新しいアーキテクチャを概観し、変更点を理解します。AEM は、画像の数が変化する動的アーキテクチャを実現したので、時間をかけてクラウドアーキテクチャを理解することが重要です。"
->additional-url="https://video.tv.adobe.com/v/346183?captions=jpn" text="アーキテクチャの概要"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="アーキテクチャの概要"
 
 Adobe Experience Manager（AEM）as a Cloud Service は、影響の大きいエクスペリエンスを作成および管理するための、構成可能な一連のサービスを提供します。
 
@@ -53,7 +53,7 @@ AEM as a Cloud Service で使用できる[環境](/help/implementing/cloud-manag
 
 * ステージ環境：
 
-   * ステージ環境は、通常、実稼動環境に 1 対 1 で結び付いています。
+   * ステージング環境は通常、実稼動環境に 1:1 の関係で結び付けられます。
    * ステージ環境は、主に、アプリケーションに対する変更が実稼動環境にプッシュされる前の自動テスト用に設計されています。
       * これは、メンテナンスアップデートの一環としてアドビによって開始される変更や、コードのデプロイメントによって開始される変更とは独立しています。
       * また、コードをデプロイする場合は、手動でテストを実行することもできます。
@@ -138,7 +138,7 @@ web コンテンツを管理するための web ベースのインターフェ�
 * データサービス：
    * ライセンス指標（コンテンツリクエスト、ストレージ、ユーザーなど）や使用状況レポート（アップロード数、ダウンロード数など）などの顧客データを公開します。
    * 顧客データは、API を介して、および製品ユーザーインターフェイス（Cloud Manager など）内で公開できます。
-* 運用上のテレメトリサービス：
+* 運用テレメトリサービス：
    * カスタマーエクスペリエンス（ページビュー数、コア web バイタル、コンバージョンイベントなど）から主要指標を収集し、関連するクエリ（過去 7 日間の特定のドメインの上位ページビュー数など）に対応します。
 * Assets Compute サービス：
    * アップロードされた画像、ビデオ、ドキュメント（PDF、Adobe Photoshop ファイルなど）の処理を担当します。処理では、Adobe Sensei を使用して画像およびビデオのメタデータ（説明タグや主要な色調など）を抽出し、レンディション（様々なサイズや形式など）を生成し、Adobe Photoshop や Adobe Lightroom API などの API にアクセスできます。
@@ -238,5 +238,5 @@ AEM as a Cloud Service の最新のアーキテクチャでは、以前の世代
    * [コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)
 * Edge 配信サービス：
    * [AEM as a Cloud Service の概要 - Edge 配信サービスを使用](/help/edge/overview.md)
-   * [Edge 配信サービスの使用](/help/edge/using.md)
+   * [Edge 配信サービスの使用](/help/edge/overview.md)
    * [Edge 配信サービスを使用する AEM as a Cloud Service の基盤となるアーキテクチャと重要な部分について説明します。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=ja)

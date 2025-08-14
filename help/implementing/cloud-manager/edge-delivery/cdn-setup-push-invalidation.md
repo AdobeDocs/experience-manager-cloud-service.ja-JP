@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
-source-git-commit: 1a391837ded0af0c5bb436c34a5818f418436308
-workflow-type: ht
-source-wordcount: '172'
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '173'
 ht-degree: 100%
 
 ---
@@ -27,6 +27,6 @@ ht-degree: 100%
 | `cdn.prod.host` | `<Production Host>` | 実稼動サイトのホスト名。例えば、`www.example.com` のように指定します。 |
 | `cdn.prod.type` | 管理対象 |   |
 
-設定シートに変更を行ったら、ユーザーは [Sidekick ツール](/help/edge/docs/sidekick.md)を使用して変更をプレビューし、アクティブ化して更新を適用する必要があります。
+設定シートに変更を行ったら、ユーザーは [Sidekick ツール](https://www.aem.live/docs/sidekick)を使用して変更をプレビューし、アクティブ化して更新を適用する必要があります。
 
 また、[Cloud Manager の Edge Delivery の TODO リストについて](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list)も参照してください。

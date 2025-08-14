@@ -4,10 +4,10 @@ description: コンポーネント定義とユニバーサルエディター間�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: afb59345b48b39376b62a13cce8910bc9bc42c38
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 1%
+source-wordcount: '602'
+ht-degree: 2%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 1%
 
 >[!TIP]
 >
->コンテンツモデリングプロセスの概要については、[Edge Delivery Services プロジェクトでのWYSIWYG オーサリング向けコンテンツモデリング ](/help/edge/wysiwyg-authoring/content-modeling.md) を参照してください。
+>コンテンツモデリングプロセスの概要については、[Edge Delivery Services プロジェクトでのWYSIWYG オーサリング用コンテンツモデリング ](https://www.aem.live/developer/component-model-definitions) を参照してください。
 
 >[!TIP]
 >
->最初から独自の `component-definition.json` ファイルを作成する必要はありません。 [ プロジェクトをブートストラップ ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) するために使用するプロジェクトのボイラープレートには [ 完全に機能する `component-definition.json` ファイル ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) が含まれており、必要に応じて調整できます。
+>最初から独自の `component-definition.json` ファイルを作成する必要はありません。 [ プロジェクトをブートストラップ ](https://www.aem.live/developer/ue-tutorial) するために使用するプロジェクトのボイラープレートには [ 完全に機能する `component-definition.json` ファイル ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) が含まれており、必要に応じて調整できます。
 
 ## コンポーネント定義例 {#example}
 
@@ -83,7 +83,7 @@ ht-degree: 1%
 
 * `title` は、UI に表示されるコンポーネントの説明をテキストで定義します。
 * コンポ `id` ネントを一意に識別します。
-   * 同 `id` の [ コンポーネントモデル ](/help/implementing/universal-editor/field-types.md#model-structure) は、コンポーネントのフィールドを定義します。
+   * 同 [ の ](/help/implementing/universal-editor/field-types.md#model-structure) コンポーネントモデル `id` は、コンポーネントのフィールドを定義します。
    * 一意なので、例えば [ フィルター定義 ](/help/implementing/universal-editor/filtering.md) で使用して、コンテナに追加できるコンポーネントを決定できます。
 * コンポ `model` ネントで使用する [ モデル ](/help/implementing/universal-editor/field-types.md#model-structure) を定義します。
    * これにより、モデルはコンポーネント定義内で一元的に管理され、実装を指定する必要は [ りません ](/help/implementing/universal-editor/field-types.md#instrumentation)。
@@ -138,7 +138,7 @@ ht-degree: 1%
 <div data-aue-resource="urn:aem:/content" data-aue-type="container" data-aue-prop="field"></div>
 ```
 
-この場合、`data-aue-prop` は参照フィールドを指しているので、`cf` が想定されます。 `data-aue-prop` がない場合、コンポーネントは参照フィールドを介してリンクされないので、ユニバーサルエディターは `page` を想定します。
+この場合、`cf` は参照フィールドを指しているので、`data-aue-prop` が想定されます。 `data-aue-prop` がない場合、コンポーネントは参照フィールドを介してリンクされないので、ユニバーサルエディターは `page` を想定します。
 
 ```html
 <div data-aue-resource="urn:aem:/content" data-aue-type="container"></div>

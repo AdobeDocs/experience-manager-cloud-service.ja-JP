@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8689041bffbdd6edb048a1ba50f0ebd82ad740e7
+source-git-commit: a36829e621e97de6ca7548ad07bd1b6343dd9af6
 workflow-type: tm+mt
-source-wordcount: '6604'
-ht-degree: 98%
+source-wordcount: '6470'
+ht-degree: 97%
 
 ---
 
@@ -837,7 +837,7 @@ ht-degree: 98%
             + [カスタム送信アクションの作成](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [移行ユーティリティツールを使用した基盤コンポーネントベースのアダプティブフォームからコアコンポーネントベースのフォームへの変換](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [アダプティブフォームのメールテンプレート](/help/forms/html-email-templates-in-adaptive-forms.md)
-            + [Experience Manager Forms での公開の管理](/help/forms/manage-publication.md)
+            + [Experience Manager Formsでの公開の管理](/help/forms/manage-publication.md)
             + コアコンポーネントに基づくアダプティブフォームのルールエディターの概要{#rule-editor-core-components}
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターの概要](/help/forms/rule-editor-core-components.md)
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターのユーザーインターフェイス](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1065,51 +1065,8 @@ ht-degree: 98%
    + [移行](/help/commerce-cloud/migration.md)
    + [よくある質問](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
-   + [Edge 配信サービスの概要](/help/edge/overview.md)
-   + [AEM での Edge Delivery の使用](/help/edge/using.md)
-   + [オーサリング方法の選択](/help/edge/authoring-methods.md)
-   + WYSIWYG オーサリング {#wysiwyg-authoring}
-      + [Edge Delivery 向けの WYSIWYG コンテンツのオーサリング](/help/edge/wysiwyg-authoring/authoring.md)
-      + [Edge 配信向けのコンテンツの公開](/help/edge/wysiwyg-authoring/publishing.md)
-      + [開発者用入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
-      + [ブロックの作成](/help/edge/wysiwyg-authoring/create-block.md)
-      + [コンテンツモデリング](/help/edge/wysiwyg-authoring/content-modeling.md)
-      + [パスマッピング](/help/edge/wysiwyg-authoring/path-mapping.md)
-      + [表形式のデータとスプレッドシート](/help/edge/wysiwyg-authoring/tabular-data.md)
-      + [分類データの管理](/help/edge/wysiwyg-authoring/taxonomy.md)
-      + [WYSIWYG とドキュメントベースのブロック](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
-      + [DAM アセットを使用したページ](/help/edge/wysiwyg-authoring/dam-assets.md)
-      + [サイト間でのコードの再利用](/help/edge/wysiwyg-authoring/repoless.md)
-      + [repoless マルチサイト管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
-      + [repoless のステージ環境と実稼働環境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
-      + [サイト認証の設定](/help/edge/wysiwyg-authoring/site-authentication.md)
-      + [WIP Sites 機能](/help/edge/wysiwyg-authoring/wip-features.md)
-   + ドキュメントベースのオーサリング {#document-authoring}
-      + [オーサリング](/help/edge/docs/authoring.md)
-      + [一括メタデータ](/help/edge/docs/bulk-metadata.md)
-      + [プレースホルダー](/help/edge/docs/placeholders.md)
-      + [サイトマップ](/help/edge/developer/sitemap.md)
-      + [SharePoint の設定](/help/edge/docs/setup-customer-sharepoint.md)
-      + [Slack ボット](/help/edge/docs/slack.md)
-   + アプリケーションの構築 {#build}
-      + [はじめに - 開発者向けチュートリアル](/help/edge/developer/tutorial.md)
-      + [プロジェクトの分析](/help/edge/developer/anatomy-of-a-franklin-project.md)
-      + [ブロックコレクション](/help/edge/developer/block-collection.md)
-      + [スプレッドシート](/help/edge/developer/spreadsheets.md)
-      + [Forms](/help/edge/developer/forms.md)
-      + [インデックス作成](/help/edge/developer/indexing.md)
-      + [理想的な状態の維持](/help/edge/developer/keeping-it-100.md)
-      + [マークアップ - セクション](/help/edge/developer/markup-sections-blocks.md)
-      + [Favicon](/help/edge/developer/favicon.md)
-      + [カスタムヘッダー](/help/edge/docs/custom-headers.md)
-      + [開発者向けベストプラクティス](/help/edge/docs/dev-collab-and-good-practices.md)
-   + アプリケーションの起動 {#launch}
-      + [公開チェックリスト](/help/edge/docs/go-live-checklist.md)
-      + [プッシュ無効化](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
-      + [Cloudflare Worker の設定](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
-      + [Akamai の設定](/help/edge/docs/byo-cdn-akamai-setup.md)
-      + [Fastly の設定](/help/edge/docs/byo-cdn-fastly-setup.md)
-      + [リダイレクト](/help/edge/docs/redirects.md)
+   + [Edge Delivery Servicesの概要 ](/help/edge/overview.md)
+{#wysiwyg-authoring}
    + フォームの作成 {#build-forms}
       + [概要](/help/edge/docs/forms/overview.md)
       + WYSIWYG オーサリング {#universal-editor}
@@ -1151,14 +1108,6 @@ ht-degree: 98%
       + [Edge Delivery Services Forms 用の送信設定](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [フォーム作成のベストプラクティス](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
-   + Edge Delivery リソース {#resources}
-      + サイドキック {#sidekick}
-         + [Sidekick の使用](/help/edge/docs/sidekick.md)
-         + [拡張機能のインストール](/help/edge/docs/sidekick-extension.md)
-         + [Sidekick ライブラリ](/help/edge/docs/sidekick-library.md)
-      + [よくある質問](/help/edge/docs/faq.md)
-      + ツール {#tools}
-         + [監査ログ](/help/edge/docs/auditlog.md)
 + ヘッドレス {#headless}
    + [ヘッドレス CMS とは](/help/headless/what-is-headless.md)
    + [AEM ヘッドレスの概要](/help/headless/introduction.md)

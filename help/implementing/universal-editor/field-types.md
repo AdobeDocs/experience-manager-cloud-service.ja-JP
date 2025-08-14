@@ -4,10 +4,10 @@ description: ユニバーサルエディターがプロパティパネルで編�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
-workflow-type: ht
-source-wordcount: '1568'
-ht-degree: 100%
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '1569'
+ht-degree: 99%
 
 ---
 
@@ -166,7 +166,7 @@ AEM タグコンポーネントタイプでは、AEM タグピッカーを使用
 
 >[!TIP]
 >
->スプレッドシートを使用して Edge Delivery Services プロジェクトの分類データを管理する方法について詳しくは、[分類データの管理](/help/edge/wysiwyg-authoring/taxonomy.md)のドキュメントを参照してください。
+>スプレッドシートを使用して Edge Delivery Services プロジェクトの分類データを管理する方法について詳しくは、[分類データの管理](https://www.aem.live/docs/authoring-taxonomy)のドキュメントを参照してください。
 
 #### AEM コンテンツ {#aem-content}
 
@@ -206,7 +206,7 @@ AEM コンテンツコンポーネントタイプでは、AEM コンテンツピ
 
 #### ブール値 {#boolean}
 
-ブーリアンのコンポーネントタイプは、切り替えスイッチとしてレンダリングされた単純な true／false 値を格納します。追加の検証タイプを提供します。
+ブーリアンのコンポーネントタイプは、切替スイッチとしてレンダリングされた単純な true／false 値を格納します。追加の検証タイプを提供します。
 
 | 検証タイプ | 値タイプ | 説明 | 必須 |
 |---|---|---|---|

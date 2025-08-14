@@ -4,10 +4,10 @@ description: ユニバーサルエディターの主なユースケース、そ�
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
-workflow-type: ht
-source-wordcount: '878'
-ht-degree: 100%
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '882'
+ht-degree: 99%
 
 ---
 
@@ -40,9 +40,9 @@ AEM に既に精通している場合は、Sites コンソールを使用して�
 
 このユースケースに該当する場合は、次の手順として、以下のドキュメントを参照し、AEM でユニバーサルエディターを起動して実行する方法の完全な概要を確認してください。
 
-1. [Edge Delivery Services を使用した WYSIWYG オーサリングの開発者向け入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - AEMでの最初のユニバーサルエディタープロジェクトの基本を学びます
-1. [ユニバーサルエディターで使用するために実装されたブロックの作成](/help/edge/wysiwyg-authoring/create-block.md) - ブロックを実装して、ユニバーサルエディターでコンテンツを編集可能にする方法について説明します
-1. [Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリング用のコンテンツモデリング](/help/edge/wysiwyg-authoring/content-modeling.md) - ユニバーサルエディターで使用するコンテンツを効果的にモデル化するためにブロックを構造化する仕組みについて詳しく説明します。
+1. [Edge Delivery Services を使用した WYSIWYG オーサリングの開発者向け入門ガイド](https://www.aem.live/developer/ue-tutorial) - AEMでの最初のユニバーサルエディタープロジェクトの基本を学びます
+1. [ユニバーサルエディターで使用するために実装されたブロックの作成](https://www.aem.live/developer/universal-editor-blocks) - ブロックを実装して、ユニバーサルエディターでコンテンツを編集可能にする方法について説明します
+1. [Edge Delivery Services プロジェクトを使用した WYSIWYG オーサリング用のコンテンツモデリング](https://www.aem.live/developer/component-model-definitions) - ユニバーサルエディターで使用するコンテンツを効果的にモデル化するためにブロックを構造化する仕組みについて詳しく説明します。
 
 これらのドキュメントを参照したら、このページに戻って、ヘッドレスオーサリングのユースケースとユニバーサルエディターの一般的な仕組みについて学ぶことができます。
 
@@ -65,7 +65,7 @@ AEM に既に精通している場合は、Sites コンソールを使用して�
 ユニバーサルエディターは、次のように機能します。
 
 1. 開発者は、ユニバーサルエディターを使用するアプリまたはページを実装します。この実装によって、編集可能なコンテンツと、その保持方法がエディターに指示されます。
-   * [Edge Delivery Services を使用した WYSIWYG オーサリングの開発者向け入門ガイド](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)ドキュメントに従うと、ページが自動的に実装されます。
+   * [Edge Delivery Services を使用した WYSIWYG オーサリングの開発者向け入門ガイド](https://www.aem.live/developer/ue-tutorial)ドキュメントに従うと、ページが自動的に実装されます。
    * ヘッドレスオーサリングの場合、アプリを簡単に実装できます。
 1. コンテンツ作成者がユニバーサルエディターを読み込むと、編集用にページが読み込まれます。実装されているので、編集可能なコンテンツと、その表現および保持方法がわかります。
 1. コンテンツ作成者は、直感的な WYSIWYG インターフェイスでページコンテンツを編集し、インプレースで編集します。
