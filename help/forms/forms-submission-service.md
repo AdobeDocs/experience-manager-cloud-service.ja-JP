@@ -5,12 +5,10 @@ keywords: Forms送信サービス，Edge Delivery Services フォーム，スプ
 feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner, Intermediate
-hide: true
-hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1573'
 ht-degree: 1%
 
 ---
@@ -115,7 +113,7 @@ Forms送信サービスを設定する前に、次のことを確認してくだ
 
 >[!TIP]
 >
->**Edge Delivery Servicesを初めて使用する場合** はじめに [ チュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) から始めて、プロジェクトの基盤を設定します。
+>**Edge Delivery Servicesを初めて使用する場合** はじめに [ チュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) から始めて、プロジェクトの基盤を設定します。
 
 ## 設定方法
 
@@ -135,7 +133,7 @@ Forms送信サービスには、2 つの設定方法があります。 ワーク
 
 どちらの方法を設定する場合でも、事前にAEM プロジェクト基盤の準備が整っていることを確認してください。
 
-1. **AEM プロジェクトを作成または更新** し、最新のアダプティブ Forms ブロックを使用します（[ はじめる前にチュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)）。
+1. **AEM プロジェクトを作成または更新** し、最新のアダプティブ Forms ブロックを使用します（[ はじめる前にチュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)）。
 
 2. **プロジェクトルートの`fstab.yaml`** を更新します。
 
@@ -147,6 +145,8 @@ Forms送信サービスには、2 つの設定方法があります。 ワーク
 
 
 3. **プロジェクトフォルダーの共有** を `forms@adobe.com` と共有する（編集権限が必要）
+
++++
 
 +++
 
@@ -168,7 +168,7 @@ Google Sheets またはMicrosoft Excel を使用してフォーム構造を作�
 1. **スプレッドシートプラットフォームを開く** （Google Sheets またはMicrosoft Excel）
 2. フォームプロジェクトの **新しいスプレッドシートの作成**
 3. **シートに名前を付ける** （`helix-default` または `shared-aem` のいずれかにする必要があります）
-4. **フォーム作成ガイド** 使用した [ フォーム構造の定義 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+4. **フォーム作成ガイド** 使用した [ フォーム構造の定義 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![ フォームの定義 ](/help/forms/assets/form-submission-definition.png)
 *例：フィールドタイプ、ラベル、検証ルールを含むフォーム定義*
@@ -354,7 +354,7 @@ API を使用する前に、次のことを確認します。
 - `Content-Type: application/json`
 - `x-adobe-routing: tier=live,bucket=main--[repository]--[organization]`
 
-**API ドキュメント：**&#x200B;[ 完全な API リファレンス ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
+**API ドキュメント：**[ 完全な API リファレンス ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
 
 +++
 
@@ -367,36 +367,36 @@ Postmanは、API 送信をテストするための使いやすいインターフ
 1. Postmanでの **新しい POST リクエストの作成**
 2. **エンドポイントを設定します：** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
 3. **プレースホルダーを置換：**
-
    - 実際→フォーム ID を `{id}` します
    - `[repository]` → GitHub リポジトリ名
    - `[organization]` → GitHub 組織/ユーザー名
 
 **リクエスト設定：**
 
-```json
-POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
+    ```json
 
-Headers:
+https://forms.adobe.com/adobe/forms/af/submit/your-form-idに投稿
+
+ヘッダー：
 Content-Type: application/json
-x-adobe-routing: tier=live,bucket=main--your-repo--your-org
+x-adobe-routing: tier=live,bucket=main—your-repo—your-org
 
-Body (JSON):
+本文（JSON）:
 {
-        "data": {
-            "startDate": "2025-01-10",
-            "endDate": "2025-01-25",
-            "destination": "Australia",
-            "class": "First Class",
-            "budget": "2000",
-            "amount": "1000000",
-            "name": "Mary",
-            "age": "35",
-            "subscribe": null,
-            "email": "mary@gmail.com"
-                }
+&quot;data&quot;: {
+&quot;startDate&quot;: &quot;2025-01-10&quot;,
+&quot;endDate&quot;: &quot;2025-01-25&quot;,
+「宛先」: 「オーストラリア」、
+「class」:「First Class」
+&quot;budget&quot;: &quot;2000&quot;,
+&quot;amount&quot;: &quot;1000000&quot;,
+「名前」: 「Mary」、
+&quot;age&quot;: &quot;35&quot;,
+&quot;subscribe&quot;：なし、
+&quot;email&quot;: &quot;mary@gmail.com&quot;
 }
-```
+}
+``
 
 **期待される応答：**
 
@@ -442,9 +442,9 @@ curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
       "email": "joe@example.com"
                 }
             }'
-```
+        ```
 
->[!TAB Windows コマンドプロンプト ]
+>[!TAB Windows Command Prompt]
 
 ```cmd
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" ^
@@ -475,15 +475,15 @@ Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-
   -Method POST `
   -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-```
+    ```
 
 >[!ENDTABS]
 
 +++
 
-+++ API の応答と検証
++++ API Response & Verification
 
-**成功した応答：**
+**Successful Response:**
 
 ```http
 HTTP/1.1 201 Created
@@ -568,8 +568,8 @@ Solutions:
 **サポートチャネル：**
 
 - **アーリーアクセスの問題：** 電子メール [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
-- **API ドキュメント：**&#x200B;[ 開発者向けリファレンス ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
-- **コミュニティサポート：**&#x200B;[Adobe Experience League コミュニティ ](https://experienceleaguecommunities.adobe.com/?profile.language=ja)
+- **API ドキュメント：**[ 開発者向けリファレンス ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
+- **コミュニティサポート：**[Adobe Experience League コミュニティ ](https://experienceleaguecommunities.adobe.com/)
 
 +++
 
@@ -580,7 +580,7 @@ Forms送信サービスを設定したので、次の関連トピックを参照
 
 +++ Formsの強化
 
-- **[詳細Formsの作成 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** – 検証、条件付きロジック、カスタムスタイル設定を追加します
+- **[詳細Formsの作成 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** – 検証、条件付きロジック、カスタムスタイル設定を追加します
 - **[フォームコンポーネントガイド ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** – 使用可能なフォームフィールドタイプを調べます
 
 +++

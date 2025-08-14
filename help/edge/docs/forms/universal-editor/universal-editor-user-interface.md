@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2355'
 ht-degree: 4%
 
 ---
@@ -16,13 +16,11 @@ ht-degree: 4%
 
 # AEM Formsのユニバーサルエディターインターフェイスの操作
 
-[ ユニバーサルエディター ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) は、Edge Delivery ServicesでAEM Formsを作成するための視覚的なインターフェイスを提供します。 このガイドを使用すると、フォームを効率的に作成するためのインターフェイスを理解できます。
+[ ユニバーサルエディター ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) は、Edge Delivery ServicesでAEM Formsを作成するための視覚的なインターフェイスを提供します。 これは、ユーザーに対してフォームがどのように表示されるかを正確に表示する **0}What You See Is What You Get（WYSIWYG）エクスペリエンスを提供します。**
 
 ![ ユニバーサルエディターインターフェイスの概要 ](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-## 概要
-
-ユニバーサルエディターは、フォームがユーザーにどのように表示されるかを正確に表示する **What You See Is What You Get（WYSIWYG）** エクスペリエンスを提供します。 フォーム作成を初めて行う場合でも、経験豊富な開発者の場合でも、このガイドは次の点で役立ちます。
+このガイドを使用すると、フォームを効率的に作成するためのインターフェイスを理解できます。 フォーム作成を初めて行う場合でも、経験豊富な開発者の場合でも、このガイドは次の点で役立ちます。
 
 **必要なスキルを学ぶ：**
 
@@ -37,6 +35,8 @@ ht-degree: 4%
 - 概念から公開までのフォームの作成
 - デバイス間でのフォームのテストとプレビュー
 - フォームプロジェクトでのチームメンバーとの共同作業
+
+
 
 ## すぐに使い始める
 
@@ -349,7 +349,7 @@ ht-degree: 4%
 
     ![ バリエーションを生成 ] （/help/edge/docs/forms/universal-editor/assets/ue-variations.png） 
 
-**詳細情報：**&#x200B;[ バリエーションを生成ガイド ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**詳細情報：**[ バリエーションを生成ガイド ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **コンテンツドラフト**
 

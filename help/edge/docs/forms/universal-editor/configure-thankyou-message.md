@@ -4,7 +4,7 @@ description: ユーザーにお礼のメッセージを表示したり、フォ�
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 3%
@@ -96,7 +96,7 @@ ht-degree: 3%
     - チームは 2 営業日以内に送信を確認します 
      – 追加情報が必要な場合は直接ご連絡します 
     
-    **サポートが必要な場合？**&#x200B;サポートチーム（support@example.com）までお問い合わせください 
+    **サポートが必要な場合？**サポートチーム（support@example.com）までお問い合わせください 
 
 ## リダイレクト URL の設定
 

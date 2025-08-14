@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a36829e621e97de6ca7548ad07bd1b6343dd9af6
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
 source-wordcount: '6470'
 ht-degree: 97%
@@ -1095,7 +1095,6 @@ ht-degree: 97%
          + [フォームフィールドの検証：フォームへのエラーチェックの追加](/help/edge/docs/forms/validate-forms.md)
          + [美しいフォームの設計：スタイル設定とカスタマイズガイド](/help/edge/docs/forms/style-theme-forms.md)
          + [成功メッセージの作成：フォームの「ありがとうございます」ページのカスタマイズ](/help/edge/docs/forms/thank-you-page-form.md)
-         + [フォーム送信ガイド：フォーム送信サービスの使用](/help/forms/forms-submission-service.md)
          + [動的フォームフィールド：URL からのオプションの読み込み](/help/edge/docs/forms/load-options-from-url.md)
          + [スマートな動作の追加：フォームルールとロジックガイド](/help/edge/docs/forms/rules-forms.md)
          + [高度なフォームの検証：正規表現ガイド](/help/edge/docs/forms/regex-forms.md)
@@ -1106,6 +1105,7 @@ ht-degree: 97%
          + [カスタムフォームコンポーネントの作成：開発者向けガイド](/help/edge/docs/forms/custom-components-forms.md)
          + [フォームのパフォーマンスの監視：運用テレメトリのガイド](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [Edge Delivery Services Forms 用の送信設定](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [フォーム送信ガイド：フォーム送信サービスの使用](/help/forms/forms-submission-service.md)
       + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [フォーム作成のベストプラクティス](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + ヘッドレス {#headless}
