@@ -36,7 +36,7 @@ ht-degree: 4%
 
 ## 1 - Adobe Admin Consoleでの新しい製品プロファイルの作成{#create-profile}
 
-1. 詳しくは、Experience Platformのドキュメントにある [Adobe Admin Consoleで新しい製品プロファイルを作成する ](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile) の手順に従ってください。
+1. 詳しくは、Experience Platformのドキュメントにある [Adobe Admin Consoleで新しい製品プロファイルを作成する ](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/ui/create-profile) の手順に従ってください。
 
 1. 新しい製品プロファイルを作成する際には、AI アシスタントに使用できる値について、以下の例を使用します。
 
@@ -54,7 +54,7 @@ ht-degree: 4%
 
 製品プロファイルにカスタム権限を割り当てるプロセスは、標準のAdobe Cloud Manager カスタム権限ワークフローに従います。
 
-リファレンス記事：[ 新しい製品プロファイルへのカスタム権限の割り当て ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
+リファレンス記事：[ 新しい製品プロファイルへのカスタム権限の割り当て ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
 1. Admin Consoleで、新しく作成した製品プロファイルの名前（`AEM AI Assistant`）をクリックします
 
