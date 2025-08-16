@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1eae2bed903a1dace808a85ad984065351f3a41d
+source-git-commit: 0fa217bdab8c5a604fe97fcbf1adc0421d3377d9
 workflow-type: tm+mt
-source-wordcount: '6470'
+source-wordcount: '6476'
 ht-degree: 97%
 
 ---
@@ -1191,6 +1191,7 @@ ht-degree: 97%
    + [AEM as a Cloud Service の生成 AI](/help/generative-ai/generative-ai-in-aem.md)
    + [バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)
    + [バリエーションを生成](/help/generative-ai/generate-variations.md)
+   + [AEMでの AI アシスタントの設定](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
    + [AEM AI アシスタント（Beta 限定）](/help/implementing/cloud-manager/aem-ai-assistant.md)
    + [AEM Forms AI アシスタント（Forms Experience Builder）（早期導入）](/help/edge/docs/forms/forms-ai-assistant.md)
    + [AEM Forms AI アシスタント – プロンプトライブラリ](/help/edge/docs/forms/ai-assistant-prompt-library.md)
