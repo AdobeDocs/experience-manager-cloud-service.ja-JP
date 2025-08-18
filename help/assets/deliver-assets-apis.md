@@ -64,7 +64,7 @@ headers: {
     }
 ```
 
-配信 API を呼び出すには、制限されたアセットを配信する `Authorization` の詳細に IMS トークンが必要です。IMS トークンは、テクニカルアカウントから取得されます。新しいテクニカルアカウントを作成する方法について詳しくは、[AEM as a Cloud Service の資格情報の取得](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)を参照してください。IMS トークンを生成し、配信 API リクエストヘッダーで適切に使用する方法について詳しくは、[アクセストークンの生成](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)を参照してください。
+配信 API を呼び出すには、制限されたアセットを配信する `Authorization` の詳細に IMS トークンが必要です。IMS トークンは、テクニカルアカウントから取得されます。新しいテクニカルアカウントを作成する方法について詳しくは、[AEM as a Cloud Service の資格情報の取得](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)を参照してください。IMS トークンを生成し、配信 API リクエストヘッダーで適切に使用する方法について詳しくは、[アクセストークンの生成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)を参照してください。
 
 
 リクエストサンプル、応答サンプルおよび応答コードを表示する方法について詳しくは、[配信 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) を参照してください。
