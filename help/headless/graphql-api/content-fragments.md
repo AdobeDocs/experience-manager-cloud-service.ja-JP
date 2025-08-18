@@ -4,10 +4,10 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
-workflow-type: ht
-source-wordcount: '5981'
-ht-degree: 100%
+source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
+workflow-type: tm+mt
+source-wordcount: '5984'
+ht-degree: 99%
 
 ---
 
@@ -51,7 +51,7 @@ GraphQL とは次のことを意味します。
 
   「[Explore GraphQL](https://www.graphql.com)」を参照
 
-* *「...2012 年に Facebook 社内で開発されたデータクエリ言語および仕様です。その後、2015 年には公式にオープンソースとなりました。開発者の生産性を高め、転送データの量を最小限に抑えるために、REST ベースのアーキテクチャに代わる手段を提供します。GraphQL は、あらゆる規模の数百の組織により実稼働環境で使用されています...」*
+* *「...2012 年に Facebook 社内で開発されたデータクエリ言語および仕様です。その後、2015 年には公式にオープンソースとなりました。開発者の生産性を向上させ、転送されるデータ量を最小限に抑える目的で、REST ベースのアーキテクチャの代わりに使用できます。 GraphQL は、あらゆる規模の数百の組織により実稼働環境で使用されています...」*
 
   [GraphQL Foundation](https://foundation.graphql.org/) を参照してください。
 
@@ -109,7 +109,7 @@ GraphQL では、次のいずれかを返すクエリを実行できます。
 
 * **[エントリのリスト](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM は、クエリ（両方のタイプ）を Dispatcher と CDN によって[キャッシュできる永続クエリ](/help/headless/graphql-api/persisted-queries.md)に変換する機能を提供します。
+AEMは、クエリ（両方のタイプ）を、Dispatcherと CDN によって [ キャッシュ可能な永続クエリ ](/help/headless/graphql-api/persisted-queries.md) に変換する機能を提供します。
 
 ### GraphQL クエリのベストプラクティス（Dispatcher と CDN） {#graphql-query-best-practices}
 
@@ -1171,7 +1171,7 @@ query allTeams {
 
   >[!NOTE]
   >
-  >次に、[Asset delivery API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) に基づいて、クライアントサイドで完全な URL を構築する必要があります。
+  >次に、[Asset delivery API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) に基づいて、クライアントサイドで完全な URL を構築する必要があります。
 
 * リモートリポジトリから参照できるのは、*承認済み*&#x200B;アセットのみです。
 * 参照されているアセットをリモートリポジトリから削除すると、コンテンツフラグメントアセットの参照が破損します。

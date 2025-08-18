@@ -3,10 +3,10 @@ title: アセット API の検索
 description: 検索アセット API を使用する方法について説明します。
 role: User
 exl-id: 0c52e793-4c33-4230-b4f2-27296dd9e4b3
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
+workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -58,4 +58,4 @@ headers: {
 
 検索 API を呼び出すには、`Authorization` の詳細で IMS トークンを定義する必要があります。IMS トークンは、テクニカルアカウントから取得されます。新しいテクニカルアカウントを作成する方法について詳しくは、[AEM as a Cloud Service の資格情報の取得](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ja#fetch-the-aem-as-a-cloud-service-credentials)を参照してください。IMS トークンを生成し、検索アセット API リクエストヘッダーで適切に使用する方法について詳しくは、[アクセストークンの生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ja#generating-the-access-token)を参照してください。
 
-リクエストサンプル、応答サンプルおよび応答コードを表示する方法について詳しくは、[検索アセット API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search) を参照してください。
+リクエストサンプル、応答サンプルおよび応答コードを表示する方法について詳しくは、[検索アセット API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search) を参照してください。

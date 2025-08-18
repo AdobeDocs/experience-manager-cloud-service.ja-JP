@@ -3,10 +3,10 @@ title: Dynamic Media Prime と Ultimate
 description: Dynamic Media Prime と Ultimate の詳細、そのメリットおよび 2 つの違いについて説明します。
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
-workflow-type: ht
+source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
+workflow-type: tm+mt
 source-wordcount: '395'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ AEM Assets とアドビまたはアドビ 以外のアプリケーションの�
 * [OpenAPI を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) 機能には、次のような高度な機能が含まれています。
 
    * アセットの安全な配信
-   * [スマート切り抜き、スマートイメージング、画像プリセット、追加の画像の修飾子](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat)。
+   * [スマート切り抜き、スマートイメージング、画像プリセット、追加の画像の修飾子](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)。
 
 * [AEM as a Cloud Service の Dynamic Media ソリューション](/help/assets/dynamic-media/dynamic-media.md)には、次の主な機能も含まれています。
 
