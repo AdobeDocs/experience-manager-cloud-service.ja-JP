@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
+source-git-commit: 215f4630acb3eca4be501c7c5f5de7c60b550bf8
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 91%
@@ -95,7 +95,7 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 >アドビが管理する CDN の場合、DV（ドメイン検証）証明書を使用する際は、ACME 検証済みのサイトのみが許可されます。
 
 
-### DNS の設定{#config-dns}
+## DNS の設定{#config-dns}
 
 >[!WARNING]
 >
@@ -107,7 +107,7 @@ DNS レコードを設定する *前に*、次の要件を満たしているこ�
 * 組織のドメインの DNS レコードを編集できる、またはそれが可能な適切な担当者に連絡できる必要があります。
 * [ ドメイン名ステータスの確認 ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) ドキュメントに記載されているように、設定されたカスタムドメイン名は既に確認されています。
 
-#### CNAME レコード {#adobe-managed-cert-cname-record}
+### CNAME レコード {#adobe-managed-cert-cname-record}
 
 正規名つまり CNAME レコードは、エイリアス名を真のドメイン名つまり正規ドメイン名にマッピングする DNS レコードタイプです。CNAME レコードは、通常、`www.example.com` などのサブドメインを、そのサブドメインのコンテンツをホストするドメインにマッピングするために使用されます。
 
@@ -117,7 +117,7 @@ DNS サービスプロバイダーにログインし、次のテーブルのよ�
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-#### APEX レコード {#adobe-managed-cert-apex-record}
+### APEX レコード {#adobe-managed-cert-apex-record}
 
 apex ドメインは、サブドメインを含まないカスタムドメイン（例：`example.com` など）です。DNS プロバイダーを通じて、Apex ドメインは `A`、`ALIAS`、`ANAME` のいずれかのレコードで設定されます。Apex ドメインは、特定の IP アドレスを指す必要があります。
 
