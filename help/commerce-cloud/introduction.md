@@ -33,7 +33,7 @@ AEMは、状況と好みに基づいてお客様をサポートできます。 �
 
 #### &#x200B;1. Adobe Commerce as a Cloud Serviceとの統合 {#acaacs}
 
-Adobeでは、出発点としてEdge Deliveryと [0}Adobe Commerce ストアフロント } を使用することをお勧めします。 ](https://experienceleague.adobe.com/developer/commerce/storefront/)ストアフロントには、Adobe Commerce サービス、API と事前統合されたボイラープレートが付属しており、ストアフロントを迅速に構築するための様々なCommerce ドロップインコンポーネントを提供します。
+Adobeでは、出発点としてEdge Deliveryと [0&rbrace;Adobe Commerce ストアフロント &rbrace; を使用することをお勧めします。 ](https://experienceleague.adobe.com/developer/commerce/storefront/)ストアフロントには、Adobe Commerce サービス、API と事前統合されたボイラープレートが付属しており、ストアフロントを迅速に構築するための様々なCommerce ドロップインコンポーネントを提供します。
 
 サイズの適合：Adobe Commerce as a Cloud Serviceでの一般的なストアフロントのエクスペリエンス
 

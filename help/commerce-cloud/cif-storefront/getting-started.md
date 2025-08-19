@@ -77,7 +77,7 @@ Adobe I/O CLI を使用して AEM をコマースソリューションに接続�
 
 1. Cloud Manager プラグインとAdobe I/O CLI を取得します。
 
-   * [Adobe CLI プラグインで ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ja)2}Cloud Manager CLI} をダウンロード、設定、使用する方法については [](https://github.com/adobe/aio-cli)Adobe I/O Cloud Managerのドキュメント [ を参照してください。](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+   * [Adobe CLI プラグインで ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ja)2&rbrace;Cloud Manager CLI&rbrace; をダウンロード、設定、使用する方法については [&#128279;](https://github.com/adobe/aio-cli)Adobe I/O Cloud Managerのドキュメント [ を参照してください。](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
 1. Adobe I/O CLI をAEM as a Cloud Service プログラムで認証します。
 

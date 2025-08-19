@@ -37,7 +37,7 @@ CIF アドオンは Sling 機能アーカイブとして提供されます。ソ
 >[!TIP]
 >
 >**AEM as a Cloud Serviceを初めて使用する場合**
->>[AEM as a Cloud Service SDKを使用したローカル開発環境のセットアップに関する詳細なガイド ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ja) を参照してください。
+>&#x200B;>[AEM as a Cloud Service SDKを使用したローカル開発環境のセットアップに関する詳細なガイド ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ja) を参照してください。
 
 ### 必要なソフトウェア {#required-software}
 

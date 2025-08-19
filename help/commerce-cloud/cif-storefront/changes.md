@@ -41,7 +41,7 @@ AEM CIF アドオンは、Cloud Manager を使用してインストールされ�
 
 ## CIF Venia プロジェクトのデプロイメント {#venia-project}
 
-プロジェクトは [Cloud Manager Git リポジトリーで入手可能で ](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)[Cloud Manager.](/help/implementing/deploying/overview.md) を介してデプロイされます
+プロジェクトは [Cloud Manager Git リポジトリーで入手可能で ](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) [Cloud Manager.](/help/implementing/deploying/overview.md) を介してデプロイされます
 
 ### 以前のCIF バージョン {#previous-versions-venia}
 
