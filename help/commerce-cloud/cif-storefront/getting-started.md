@@ -57,7 +57,7 @@ Adobe Commerce Enterprise／Cloud の場合のみ、CIF アドオンはオプシ
 
 ### Cloud Manager ユーザーインターフェイスを使用（デフォルト） {#cm-ui}
 
->[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343272?quality=12&learn=on&captions=jpn)
 
 この設定は、環境の詳細ページのダイアログボックスを使用して行うことができます。コマース対応プログラムでこのページを表示すると、エンドポイントが設定されていない場合は、ボタンが表示されます。
 
