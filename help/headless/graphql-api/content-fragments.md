@@ -4,7 +4,7 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
+source-git-commit: 25e566ac2b1e8d59be25c34bd17fff5d28354ffd
 workflow-type: tm+mt
 source-wordcount: '5984'
 ht-degree: 99%
@@ -28,7 +28,7 @@ AEM の GraphQL API を使用すると、ヘッドレス CMS 実装の JavaScrip
 >
 >GraphQL は現在、Adobe Experience Manager（AEM）as a Cloud Service の、2 つの（個別の）シナリオで使用されています。
 >
->* [AEM Commerce が、GraphQL 経由でコマースプラットフォームのデータを使用する](/help/commerce-cloud/integrating/magento.md)。
+>* [AEM CommerceがGraphQLを介してCommerce platform のデータを使用する。](/help/commerce-cloud/cif-storefront/integrating/magento.md)
 >* AEM コンテンツフラグメントが、AEM GraphQL API（標準の GraphQL に基づくカスタム実装）と連携して、アプリケーションで使用するための構造化コンテンツを配信する。
 
 >[!NOTE]
@@ -259,7 +259,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 | 数値 | `Float`、`[Float]` | 浮動小数点数と整数を表示するために使用します |
 | ブール値 | `Boolean` | チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
 | 日時 | `Calendar` | 日時を ISO 8601 形式で表示するために使用します. 選択したタイプに応じて、AEM GraphQL で使用できるフレーバーは、`onlyDate`、`onlyTime`、`dateTime` の 3 つです。 |
-| 定義済みリスト | `String` | モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
+| 列挙 | `String` | モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
 | タグ | `[String]` | AEM で使用されているタグを表す文字列のリストを表示するために使用します |
 | コンテンツ参照 | `String`、`[String]` | AEM 内の別のアセットへのパスを表示するのに使用します。 |
 | コンテンツ参照（UUID） | `String`、`[String]` | AEM 内の別のアセットへのパスを UUID で表示するのに使用します。 |
@@ -375,7 +375,7 @@ ID フィールドは、AEM GraphQL で識別子としても使用されます�
 >[!NOTE]
 >
 >**標準メタデータと配列メタデータの違い**：
->&#x200B;>`StringMetadata` と `StringArrayMetadata` はどちらも、リポジトリに格納されているものについての指定であり、その取得手段についての指定ではありません。
+>>`StringMetadata` と `StringArrayMetadata` はどちらも、リポジトリに格納されているものについての指定であり、その取得手段についての指定ではありません。
 >
 >例えば、`stringMetadata` フィールドを呼び出すと、リポジトリに `String` として格納されているすべてのメタデータの配列を受け取ることになります。一方、`stringArrayMetadata` を呼び出すと、リポジトリに `String[]` として格納されているすべてのメタデータの配列を受け取ります。
 

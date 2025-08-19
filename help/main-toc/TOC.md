@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 83c3c9189fe7885ee260eceaea0d53ca3e0f4b4a
+source-git-commit: 1aa9e870df5eae6045bb7fb082d084e9b6821e55
 workflow-type: tm+mt
-source-wordcount: '6486'
+source-wordcount: '6497'
 ht-degree: 97%
 
 ---
@@ -1025,47 +1025,52 @@ ht-degree: 97%
    + [Screens as a Cloud Service の FAQ](/help/screens-cloud/screens-cloud-faqs.md)
 + コンテンツとコマース {#content-and-commerce}
    + [概要](/help/commerce-cloud/introduction.md)
-   + [CIFについて](/help/commerce-cloud/cif-introduction.md)
-   + [AEM Content and Commerce as a Cloud Service の主な変更点](/help/commerce-cloud/changes.md)
-   + コマースジャーニー {#journeys}
-      + コンテンツ作成者ジャーニー {#author}
-         + [AEM Content and Commerce コンテンツ作成者ジャーニー](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
-         + [CIF オーサリングの概要](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
-         + [製品カタログページとテンプレートの管理](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
-         + [ステージングされた製品カタログエクスペリエンスの作成](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
-         + [製品エクスペリエンスの構築](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
-   + 統合 {#integrations}
-      + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
-      + [ライブ検索 CIF コンポーネント](/help/commerce-cloud/integrating/live-search-plp.md)
-      + [ライブ検索ポップオーバー CIF コンポーネント](/help/commerce-cloud/integrating/live-search-popover.md)
-      + [サードパーティのコマースソリューション](/help/commerce-cloud/integrating/third-party.md)
-      + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
-   + AEM ストアフロント {#storefront}
-      + [はじめに](/help/commerce-cloud/getting-started.md)
-      + オーサリング {#authoring}
-         + [コマースエクスペリエンス](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
-         + [製品コックピット](/help/commerce-cloud/authoring/product-cockpit.md)
-         + [マルチテンプレートの使用](/help/commerce-cloud/authoring/multi-template-usage.md)
-         + [関連コンテンツで製品データをエンリッチメント](/help/commerce-cloud/authoring/enrich-product-associated-content.md)
-         + [製品のレコメンデーション](/help/commerce-cloud/authoring/product-recommendations.md)
-      + 管理 {#administering}
-         + [マルチストアの設定](/help/commerce-cloud/configuring/multi-store-setup.md)
-         + [複数のコマースシステムの設定](/help/commerce-cloud/configuring/multiple-commerce-systems-setup.md)
-         + [SEO 用の URL の設定](/help/commerce-cloud/configuring/advanced-url-configuration.md)
-         + [キャッシュオプション](/help/commerce-cloud/configuring/caching.md)
-         + [カスタム HTTP ヘッダー](/help/commerce-cloud/configuring/custom-http-headers.md)
-         + [買い物かごおよび Dispatcher の設定](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
-         + [コンポーネントと GraphQL のキャッシュのクリア](/help/commerce-cloud/configuring/clear-cache.md)
-      + 開発 {#developing}
-         + [AEM Cloud Service SDK を使用した開発](/help/commerce-cloud/develop.md)
-         + [CIF コンポーネントのスタイル設定](/help/commerce-cloud/customizing/style-cif-component.md)
-         + [CIF コンポーネントのカスタマイズ](/help/commerce-cloud/customizing/customize-cif-components.md)
-         + [CIF カタログピッカーの使用](/help/commerce-cloud/customizing/use-cif-pickers.md)
-         + [CIF 製品カルーセルに対するカスタム属性](/help/commerce-cloud/customizing/product-carousel.md)
-         + [JSON-LD メタデータ](/help/commerce-cloud/customizing/json-ld.md)
-   + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
-   + [移行](/help/commerce-cloud/migration.md)
-   + [よくある質問](/help/commerce-cloud/faq.md)
+   + Edge Delivery Services ストアフロント {#edge-storefront}
+      + [はじめに](/help/commerce-cloud/edge-storefront/introduction.md)
+   + サードパーティのストアフロント {#thrid-party-storefront}
+      + [はじめに](/help/commerce-cloud/third-party-storefront/introduction.md)
+   + CIF ストアフロント {#cif-storefront}
+      + [CIFについて](/help/commerce-cloud/cif-storefront/introduction.md)
+      + [AEM Content and Commerce as a Cloud Service の主な変更点](/help/commerce-cloud/cif-storefront/changes.md)
+      + コマースジャーニー {#journeys}
+         + コンテンツ作成者ジャーニー {#author}
+            + [AEM Content and Commerce コンテンツ作成者ジャーニー](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/overview.md)
+            + [CIF オーサリングの概要](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/getting-started.md)
+            + [製品カタログページとテンプレートの管理](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
+            + [ステージングされた製品カタログエクスペリエンスの作成](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
+            + [製品エクスペリエンスの構築](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
+      + 統合 {#integrations}
+         + [Adobe Commerce](/help/commerce-cloud/cif-storefront/integrating/magento.md)
+         + [ライブ検索 CIF コンポーネント](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md)
+         + [ライブ検索ポップオーバー CIF コンポーネント](/help/commerce-cloud/cif-storefront/integrating/live-search-popover.md)
+         + [サードパーティのコマースソリューション](/help/commerce-cloud/cif-storefront/integrating/third-party.md)
+         + [Experience Platform](/help/commerce-cloud/cif-storefront/integrating/aep.md)
+      + AEM ストアフロント {#storefront}
+         + [はじめに](/help/commerce-cloud/cif-storefront/getting-started.md)
+         + オーサリング {#authoring}
+            + [コマースエクスペリエンス](/help/commerce-cloud/cif-storefront/authoring/authoring-commerce-experiences.md)
+            + [製品コックピット](/help/commerce-cloud/cif-storefront/authoring/product-cockpit.md)
+            + [マルチテンプレートの使用](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md)
+            + [関連コンテンツで製品データをエンリッチメント](/help/commerce-cloud/cif-storefront/authoring/enrich-product-associated-content.md)
+            + [製品のレコメンデーション](/help/commerce-cloud/cif-storefront/authoring/product-recommendations.md)
+         + 管理 {#administering}
+            + [マルチストアの設定](/help/commerce-cloud/cif-storefront/configuring/multi-store-setup.md)
+            + [複数のコマースシステムの設定](/help/commerce-cloud/cif-storefront/configuring/multiple-commerce-systems-setup.md)
+            + [SEO 用の URL の設定](/help/commerce-cloud/cif-storefront/configuring/advanced-url-configuration.md)
+            + [キャッシュオプション](/help/commerce-cloud/cif-storefront/configuring/caching.md)
+            + [カスタム HTTP ヘッダー](/help/commerce-cloud/cif-storefront/configuring/custom-http-headers.md)
+            + [買い物かごおよび Dispatcher の設定](/help/commerce-cloud/cif-storefront/configuring/shopping-cart-dispatcher.md)
+            + [コンポーネントと GraphQL のキャッシュのクリア](/help/commerce-cloud/cif-storefront/configuring/clear-cache.md)
+         + 開発 {#developing}
+            + [AEM Cloud Service SDK を使用した開発](/help/commerce-cloud/cif-storefront/develop.md)
+            + [CIF コンポーネントのスタイル設定](/help/commerce-cloud/cif-storefront/customizing/style-cif-component.md)
+            + [CIF コンポーネントのカスタマイズ](/help/commerce-cloud/cif-storefront/customizing/customize-cif-components.md)
+            + [CIF カタログピッカーの使用](/help/commerce-cloud/cif-storefront/customizing/use-cif-pickers.md)
+            + [CIF 製品カルーセルに対するカスタム属性](/help/commerce-cloud/cif-storefront/customizing/product-carousel.md)
+            + [JSON-LD メタデータ](/help/commerce-cloud/cif-storefront/customizing/json-ld.md)
+      + [Adobe Commerce PWA Studio](/help/commerce-cloud/cif-storefront/pwa-studio/getting-started.md)
+      + [移行](/help/commerce-cloud/cif-storefront/migration.md)
+      + [よくある質問](/help/commerce-cloud/cif-storefront/faq.md)
 + Edge Delivery Services {#edge-delivery}
    + [Edge Delivery Servicesの概要 ](/help/edge/overview.md)
 {#wysiwyg-authoring}

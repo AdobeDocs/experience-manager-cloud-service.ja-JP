@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.4.0 リ�
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
+source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
 workflow-type: tm+mt
 source-wordcount: '1828'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 91%
 
 2025.4.0 リリースで追加された機能の概要については、2025年4月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3464003?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -86,7 +86,7 @@ Dynamic Media Classic レポートダッシュボードの「帯域幅」タブ�
 
 ### プレリリース機能
 
-* [ アダプティブFormsおよびフォームフラグメント用のユニバーサルエディター ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：ユニバーサルエディターでは、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成を促進し、一貫性を高め、スパムや自動不正使用に対する保護を向上させることができます。
+* [ アダプティブFormsおよびフォームフラグメント用のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：ユニバーサルエディターでは、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成が迅速化され、一貫性が高まり、ススパムや自動化による悪用からの保護が強化されます。
 
 * [SharePoint ドキュメントライブラリ - 添付ファイルを元のファイル名で保存](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library)：フォームの添付ファイルを SharePoint ドキュメントライブラリに保存する際に、元のファイル名を使用して保存するオプションが追加されました。この機能強化により、アップロードしたファイルの識別と管理が簡素化されます。
 
@@ -105,15 +105,15 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 
 #### Adobe Experience Platform（AEP）と Forms の統合
 
-* [AEM FormsとAdobe Experience Platformの統合 ](/help/forms/aem-forms-aep-connector.md):AEM Forms to Adobe Experience Platform Connector を使用すると、Adaptive FormsとAdobe Experience Platformをシームレスに統合できます。 この機能を使用すると、フォームデータを XDM スキーマにマッピングし、リアルタイムでAEPに直接送信できます。 Adobe Experience Cloud ソリューション全体で、パーソナライゼーションおよびアクティベーションのユースケースのためのデータキャプチャを効率化します。
+* [AEM FormsとAdobe Experience Platformの統合](/help/forms/aem-forms-aep-connector.md)：AEM Forms to Adobe Experience Platform Connector を使用すると、アダプティブフォームとAdobe Experience Platformをシームレスに統合できます。 この機能を使用すると、フォームデータを XDM スキーマにマッピングし、リアルタイムで AEP に直接送信できます。 Adobe Experience Cloud ソリューション全体で、パーソナライゼーションおよびアクティベーションのユースケースのためのデータキャプチャを効率化します。
 
 ## CIF アドオン {#cloud-services-cif}
 
 ### 機能強化 {#enhancements-cif}
 
 * CIF 製品参照データタイプに製品バリアント選択の追加
-* **試行用**:[JSON+LD をCIF コアコンポーネントの PDP に使用 ](/help/commerce-cloud/customizing/json-ld.md)
-* **試行的**: [CIFでキャッシュをクリアする機能 ](/help/commerce-cloud/configuring/clear-cache.md)
+* **試行用**:[JSON+LD をCIF コアコンポーネントの PDP に使用 ](/help/commerce-cloud/cif-storefront/customizing/json-ld.md)
+* **試行的**: [CIFでキャッシュをクリアする機能 ](/help/commerce-cloud/cif-storefront/configuring/clear-cache.md)
 
 ### バグ修正 {#bug-fixes-cif}
 
