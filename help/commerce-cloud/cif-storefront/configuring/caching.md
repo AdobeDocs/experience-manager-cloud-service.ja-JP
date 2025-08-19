@@ -60,7 +60,7 @@ venia/components/structure/navigation:true:10:600
 
 純粋な AEM 管理コンテンツ CIF に加えて、通常、ページには、GraphQL 経由で Adobe Commerce から動的に取り込まれたコマースデータを表示できます。ページ構造自体は変更されませんが、コマースのコンテンツは変更される場合があります。例えば、名前や価格などの製品データが Adobe Commerce で変更された場合です。
 
-AEM Dispatcher で CIF ページを限られた時間だけキャッシュできるようにするため、アドビでは AEM Dispatcher で CIF ページをキャッシュする場合は、[時間に基づくキャッシュの無効化](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-time-based-cache-invalidation-enablettl)（TTL ベースのキャッシュとも呼ばれる）を使用することをお勧めします。この機能は、追加の [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) パッケージを使用して AEM で設定できます。
+AEM Dispatcher で CIF ページを限られた時間だけキャッシュできるようにするため、アドビでは AEM Dispatcher で CIF ページをキャッシュする場合は、[時間に基づくキャッシュの無効化](https://experienceleague.adobe.com/ja/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-time-based-cache-invalidation-enablettl)（TTL ベースのキャッシュとも呼ばれる）を使用することをお勧めします。この機能は、追加の [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) パッケージを使用して AEM で設定できます。
 
 TTL ベースのキャッシュを使用する場合、デベロッパーは通常、選択した AEM ページに対して 1 つまたは複数のキャッシュ期間を定義します。この期間により、CIF ページは設定された期間を上限として AEM Dispatcher にキャッシュされ、コンテンツは頻繁に更新されます。
 

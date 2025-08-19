@@ -258,5 +258,5 @@ CIF URL プロバイダーの一部の機能は、カテゴリ `url_key` やカ�
 ## その他のリソース {#additional}
 
 * [Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM リソースマッピング](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
+* [AEM リソースマッピング](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
 * [Sling マッピング](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
