@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.6.0 リリー�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.6.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+exl-id: 6bd35c41-4caf-481c-8cf5-b739307e70da
+source-git-commit: 92077a34aa02daf177ca760dafca1a6190a8acb8
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 98%
+source-wordcount: '1363'
+ht-degree: 99%
 
 ---
 
@@ -32,15 +33,11 @@ ht-degree: 98%
 
 最新のメンテナンスリリースノートについては、[こちら](/help/release-notes/maintenance/latest.md)をご覧ください。
 
-<!-- 
+## リリースビデオ {#release-video}
 
-## Release Video {#release-video}
+2025.6.0 リリースで追加された機能の概要については、2025年6月リリースの概要ビデオをご覧ください。
 
-Have a look at the June 2025 Release Overview video for a summary of the features added in the 2025.6.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440921?quality=12&captions=jpn)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3470878?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -70,7 +67,7 @@ Adobe は、パフォーマンス、セキュリティ、価値に関する標�
 
 以下のリストを展開して、使用できなくなった廃止予定の API と OSGi 設定を確認します。 削除のタイムラインなどの詳細については、廃止に関するの記事を参照してください。
 
-+++展開して非推奨（廃止予定）を確認
++++展開して廃止について確認
 
 Java API
 
@@ -139,7 +136,7 @@ OSGi プロパティ：
 #### 監査ログ {#mt-auditlogs}
 
 * **新しい環境** （今後作成され、個別に通知されます）：
-   * **7 日**&#x200B;より古いレプリケーション、DAM、ページ監査のログは、定期的に削除されます。
+   * **7 日**より古いレプリケーション、DAM、ページ監査のログは、定期的に削除されます。
 
    * デフォルトでは、すべてのイベントがログに記録されます。
 
