@@ -5,9 +5,9 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
 source-git-commit: 1db1f3cb34386c8615cad26eef81fe068c7faa9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '630'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
