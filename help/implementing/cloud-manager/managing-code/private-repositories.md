@@ -4,10 +4,10 @@ description: 独自のプライベート GitHub リポジトリを操作する C
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
-workflow-type: ht
-source-wordcount: '968'
-ht-degree: 100%
+source-git-commit: 45645a963c42f1335ff2019ffe2aa516ee084a9f
+workflow-type: tm+mt
+source-wordcount: '989'
+ht-degree: 97%
 
 ---
 
@@ -162,3 +162,4 @@ Cloud Manager で GitHub リポジトリが検証されると、統合は完了�
 * [アーティファクト再利用機能](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)は、プライベートリポジトリには適用されません。
 * Cloud Manager の GitHub チェックを使用して、プルリクエストの検証を一時停止することはできません。
 GitHub リポジトリが Cloud Manager で検証される場合、Cloud Manager は常に、そのリポジトリに対して作成されたプルリクエストの検証を試みます。
+* GitHub 組織に IP 制限がある場合は、サポートケースを作成して、許可する IP アドレスのリストを受け取ります。
