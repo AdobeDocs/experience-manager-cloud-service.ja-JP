@@ -234,7 +234,7 @@ OSGi プロパティ：
 
 ### Java 11 ランタイムのデプロイメント {#java11-runtime-deprecation}
 
-**Java 11 ランタイム*&#x200B;は廃止となり、大半の環境はよりパフォーマンスの高い **Java 21 ランタイム**&#x200B;にアップグレードされています。
+**Java 11 ランタイム*&#x200B;は廃止となり、大半の環境はよりパフォーマンスの高い &#x200B;** Java 21 ランタイム**&#x200B;にアップグレードされています。
 
 サポートされていない依存関係が原因で環境をアップグレードできなかった場合 ([Java 21 ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)を参照) は、次の具体的な手順を記載したメールが Adobeから届いているはずです。**2025 年 8 月 28 日**&#x200B;までに必要な更新がすべて完了していることを確認してください。これにより、中断することなく環境をアップグレードできます。
 
