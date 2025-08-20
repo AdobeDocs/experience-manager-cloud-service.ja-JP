@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 401eaaaa0bb8dad054c7105533cbd4486964c484
+source-git-commit: 07b957374dcc513050c48bb320e8d639385c3344
 workflow-type: tm+mt
-source-wordcount: '2269'
-ht-degree: 50%
+source-wordcount: '2350'
+ht-degree: 48%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 50%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -62,9 +62,9 @@ Experience Manager Assetsで [Dynamic Media テンプレートにシェイプレ
 
 **AI 生成のメタデータの機能強化**
 
-AEM Assetsのアセット参照ページで、[ カード表示またはリスト表示でのアセットタイトルの表示を設定 ](/help/assets/smart-tags.md#configure-ai-generated-titles) できるようになりました。 定義したアセットタイトル、AI を使用して生成されたタイトル、またはアセットに既存のタイトルがない場合にのみ AI 生成のタイトルを使用して、アセットのタイトルを表示するように選択できます。
+AEM Assetsのアセット参照ページで、[ カード表示またはリスト表示でのアセットタイトルの表示を設定 ](/help/assets/smart-tags.md#configure-ai-generated-titles) できるようになりました。 自分で定義したアセットタイトル、AI を使用して生成されたタイトルを表示するか、アセットに既存のタイトルがない場合にのみ AI が生成されたタイトルを使用するかを選択できます。
 
-![AI で生成されたタイトルの設定 ](/help/assets/assets/configure-title-ai-generated.png)
+![AI で生成されたタイトルの設定](/help/assets/assets/configure-title-ai-generated.png)
 
 また、AI で生成されたメタデータをフォルダーレベルで無効にすることも選択できるようになりました。
 
@@ -88,7 +88,7 @@ Content Hubのフィルターに **すべて表示** オプションが含まれ
 
 新しいファイルおよびフォルダーの自動アップロード、強化されたファイル処理、よりスマートなアセット検出、AEMとのシームレスな統合により、コンテンツ管理がより高速で明確かつ直感的に行われます。
 
-機能の完全なリストについては、[ デスクトップアプリケーションリリースノート ](https://experienceleague.adobe.com/ja/docs/experience-manager-desktop-app/using/release-notes) を参照してください。
+機能の完全なリストについては、[ デスクトップアプリケーションリリースノート ](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes) を参照してください。
 
 ### OpenAPI 機能を備えた Dynamic Media の新機能 {#new-features-dynamic-media-with-openapi}
 
@@ -105,32 +105,44 @@ Content Hubのフィルターに **すべて表示** オプションが含まれ
 
 ### AEM Forms の新機能 {#forms-new-features}
 
-**アダプティブFormsとフォームフラグメント用のユニバーサルエディター**
+* **アダプティブFormsとフォームフラグメント用のユニバーサルエディター**
 
-[ ユニバーサルエディター ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) で、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成が迅速化され、一貫性が高まり、ススパムや自動化による悪用からの保護が強化されます。
+  [ ユニバーサルエディター ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) で、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成が迅速化され、一貫性が高まり、ススパムや自動化による悪用からの保護が強化されます。
 
-![ユニバーサルエディター](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
+  ![ユニバーサルエディター](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 
-**Edge Delivery Services FormsのForms送信サービス**
+* **Edge Delivery Services FormsのForms送信サービス**
 
-詳しくは、[Forms送信サービス ](/help/forms/forms-submission-service.md) を参照してください。 を使用すると、アダプティブフォームの送信データを、Google Sheets、Microsoft OneDrive、SharePointなどの一般的なスプレッドシートプラットフォームにシームレスに直接保存できます。 この統合により、選択したスプレッドシートにフォームデータを直接送信できるようになり、手動でのデータ転送が不要になり、エラーが減るので、データ管理が合理化されます。
+  [Forms送信サービス ](/help/forms/forms-submission-service.md) を使用すると、アダプティブフォームの送信データを、Google Sheets、Microsoft OneDrive、SharePointなどの一般的なスプレッドシートプラットフォームにシームレスに直接保存できます。 この統合により、選択したスプレッドシートにフォームデータを直接送信でき、手動でのデータ転送が不要になりエラーが減少するため、データ管理が合理化されます。主なメリットを次に示します。
 
-主なメリットは次のとおりです。
+   * **直接統合：** 指定したスプレッドシートにデータを直接送信するようにフォームを設定します。
+   * **カスタムデータマッピング：** フォームフィールドを対応するスプレッドシートの列にマッピングして、整理されたストレージに対応させます。
+   * **アクセス制御：** 既存のスプレッドシート権限を活用して、送信されたデータにアクセスしたり変更したりできるユーザーを管理します。
 
-* **直接統合：** 指定したスプレッドシートにデータを直接送信するようにフォームを設定します。
-* **カスタムデータマッピング：** フォームフィールドを対応するスプレッドシートの列にマッピングして、整理されたストレージに対応させます。
-* **アクセス制御：** 既存のスプレッドシート権限を活用して、送信されたデータにアクセスしたり変更したりできるユーザーを管理します。
+* **アダプティブFormsからの AFP レンディションの生成と同期**
 
-**アダプティブFormsからの AFP レンディションの生成と同期**
+  管理者やユーザーは、[AFP Output Sync API](/help/forms/document-generation-afp-api.md) を使用して、アダプティブFormsから AFP （Advanced Function Presentation）出力を生成し、その出力を外部システムやストレージの場所と同期できます。 AFP は印刷に最適化された高性能なドキュメント形式で、大規模なエンタープライズ環境でよく使用されます。
 
-管理者やユーザーは、[AFP Output Sync API](/help/forms/document-generation-afp-api.md) を使用して、アダプティブFormsから AFP （Advanced Function Presentation）出力を生成し、その出力を外部システムやストレージの場所と同期できます。 AFP は印刷に最適化された高性能なドキュメント形式で、大規模なエンタープライズ環境でよく使用されます。
+* **アダプティブフォームフラグメントの自動マッピングのサポート**
 
-<!-- ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
+  アダプティブFormsで [ アダプティブフォームフラグメントの自動マッピング ](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form) がサポートされるようになりました。 この機能強化により、スキーマオブジェクトが定義済みのフラグメント構造に一致する場合、一致するフラグメントが自動的に挿入されます。 これにより、フォームの作成を簡素化し、フラグメントの再利用性を向上し、データが統合されたフォーム間で一貫性を確保できます。
+
+* **レコードのドキュメント内のカスタムフォームタイトル**
+
+  作成者は、カスタムフォームタイトルを編集して、[ レコードのドキュメント内のカスタムフォームタイトル ](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record) を定義できるようになりました。 カスタムタイトルは、PDF ヘッダーやPDFのドキュメントプロパティに表示されるほか、PDFを開いたときに最初の表示タイトルとして表示されるので、明確な識別と一貫したブランディングが可能になります。
+
+* **制限されたファイルタイプのエラー処理の強化**
+
+  [ 制限されたファイルタイプのエラー処理 ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) がサポートされるようになりました。これにより、サポートされていないファイルのアップロードがブロックされます。 ユーザーがファイルを送信する際、ファイルのタイプをサポートされていない形式に変更すると、送信中にフォームがエラーをスローする。
+
+
+<!--
+### Pre-release features in AEM Forms {#forms-new-pre-release-features}
 
 **Enhancements in Rule Editor**
 
-* The `validate` method in the function list now supports validation at the panel, field, and form levels.
+* The `validate` / `reset` method in the function list now supports validation at the panel, field, and form levels.
 * Client-side custom function parsing now supports ES10+ JavaScript features and static imports.
 * The button to download Document of Record (DoR) is now available as an out-of-the-box (OOTB) option in the rule editor.
 * Rules now support the use of dynamic variables.
@@ -139,16 +151,14 @@ Content Hubのフィルターに **すべて表示** オプションが含まれ
 * Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
 * Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
 
- -->
+### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
-### AEM Formsの新しい早期アクセス機能 {#forms-new-early-access-features}
+The AEM Forms Early Access Program offers a unique opportunity for you to get exclusive access to cutting-edge innovations and help shape their development.
 
-AEM Forms早期アクセスプログラムは、最先端のイノベーションに排他的にアクセスし、その発展を形作るユニークな機会を提供します。
-
-これらのリリースノートには、現在のリリースで提供されているイノベーションが一覧表示されています。 早期アクセスプログラムで利用可能なイノベーションの完全なリストについては、[AEM Forms 早期アクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
+These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
 
-<!-- **Forms Optimization opportunities**
+**Forms Optimization opportunities**
 
 Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
 
@@ -224,7 +234,7 @@ OSGi プロパティ：
 
 ### Java 11 ランタイムのデプロイメント {#java11-runtime-deprecation}
 
-**Java 11 ランタイム* – は非推奨（廃止予定）になり、ほとんどの環境は既に、よりパフォーマンスの高い &#x200B;** Java 21 ランタイム** にアップグレードされています。
+**Java 11 ランタイム* – は非推奨（廃止予定）になり、ほとんどの環境は既に、よりパフォーマンスの高い **Java 21 ランタイム** にアップグレードされています。
 
 サポートされていない依存関係が原因で環境をアップグレードできなかった場合 ([Java 21 ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)を参照) は、次の具体的な手順を記載したメールが Adobeから届いているはずです。**2025 年 8 月 28 日**&#x200B;までに必要な更新がすべて完了していることを確認してください。これにより、中断することなく環境をアップグレードできます。
 
@@ -300,7 +310,7 @@ Adobe が管理する CDN では、[設定パイプラインの記事](/help/ope
 
 アルファ版では、迅速な開発環境（RDE）が、現在のコードとコンテンツの状態をスナップショットとして取り、後で復元できる機能をサポートするようになりました。 これは、元に戻す必要があるコードを同期する場合や、異なる機能の開発を切り替える場合に役立ちます。 また、可変コンテンツのみを、既知のテスト開始点として復元することもできます。
 
-この機能に関するフィードバックを提供することに関心がある場合は、[0&rbrace;aemcs-rde-support@adobe.com&rbrace; にメールを送信してください。](mailto:aemcs-rde-support@adobe.com)
+この機能に関するフィードバックを提供することに関心がある場合は、[0}aemcs-rde-support@adobe.com} にメールを送信してください。](mailto:aemcs-rde-support@adobe.com)
 
 ### その他の宛先への AEM ログ転送 (Beta プログラム) {#log-forwarding-beta}
 
