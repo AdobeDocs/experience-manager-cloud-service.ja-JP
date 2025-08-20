@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 05cd6bd0a4e4a65ac81053e6058cfd39cbd08148
 workflow-type: tm+mt
 source-wordcount: '1403'
-ht-degree: 55%
+ht-degree: 93%
 
 ---
 
@@ -21,9 +21,9 @@ AEM（Adobe Experience Manager）as a Cloud Service の Cloud Manager 2025.8.0 �
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service の Cloud Manager 2025.8.0 のリリース日は 2025年8月7日（PT）です。
+AEM as a Cloud Service の Cloud Manager 2025.8.0 のリリース日は 2025年8月7日木曜日（PT）です。
 
-次回のリリース予定は 2025年9月4日（PT）です。
+次回のリリース予定は 2025年9月4日木曜日（PT）です。
 
 ## 新機能 {#what-is-new}
 
@@ -35,32 +35,32 @@ AEM as a Cloud Service の Cloud Manager 2025.8.0 のリリース日は 2025年8
 
 * **Edge Delivery Services ライセンスは、セルフサービス方式で HIPAA プログラムに含めることができます**
 
-  医療機関や機密データの要件がある組織は、Edge Delivery Servicesをセルフサービス方式で使用できるようになり、HIPAA コンプライアンスを実現して厳格な規制基準を満たすことができます。<!-- CMGR-70016 -->
+  医療機関や機密データの要件がある組織は、セルフサービス方式で Edge Delivery Services を使用できるようになりました。これにより、厳格な規制標準を満たす HIPAA コンプライアンスが実現します。<!-- CMGR-70016 -->
 
-* **Edge Delivery Servicesで BYOG が使用できるようになりました**
+* **Edge Delivery Services で BYOG が使用できるようになりました**
 
-  Cloud Managerで外部 Git リポジトリを設定して、柔軟なコード管理ワークフローを有効にできるようになりました。 <!--(CMGR‑69010, CMGR‑70988) --> また、Cloud Manager UI で選択したブランチからコードを直接取り込むことができ、手動のリポジトリタスクを減らすことができます。 [ 外部 Git リポジトリを使用するためのEdge Delivery サイトの設定 ](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md) を参照してください <!-- (CMGR‑68085)(CMGR-69015) --> <!-- KT: https://wiki.corp.adobe.com/display/DMSArchitecture/%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+with+EDS -->
+  Cloud Manager で外部 Git リポジトリを設定できるようになりました。これにより、柔軟なコード管理ワークフローが実現します。<!--(CMGR‑69010, CMGR‑70988) -->また、Cloud Manager UI で選択した分岐からコードを直接取り込むことができるので、リポジトリの手動タスクが軽減されます。[外部 Git リポジトリを使用するための Edge Delivery サイトの設定](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)<!-- (CMGR‑68085)(CMGR-69015) -->を参照してください <!-- KT: https://wiki.corp.adobe.com/display/DMSArchitecture/%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+with+EDS -->
 
-* **新しいForms アドオンの自動プロビジョニング**
+* **新しい Forms アドオンの自動プロビジョニング**
 
-  Sites のみのユーザーは、多くの場合、マーケティングフォームを構築するために軽量で低コストな方法を必要とします。 新しいAEM Forms Sites アドオンは、Sites プログラムに限定的なForms機能を追加することで、このニーズを満たします。 また、AEM Formsの全製品への明確なアップグレードパスも作成されます。<!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
+  Sites のみの顧客は、多くの場合、マーケティングフォームを軽量で低コストな方法で作成する方法を必要としています。新しい AEM Forms Sites アドオンは、Sites プログラムに限定的な Forms 機能を追加することで、このニーズを満たします。また、AEM Forms のフルサービスへの明確なアップグレードパスも作成します。<!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
 
   アドオン：
-   * Sites プログラムに添付して、そのプログラムと共にデプロイします。Forms プログラムや権利付与は分離されません。
+   * Sites プログラムに添付し、そのプログラムと共にデプロイします。個別の Forms プログラムや権限は必要ありません。
    * シンプルなマーケティングフォームのユースケースをターゲットにします。
-   * 実稼動プログラムの作成時または実稼動プログラムの編集時に、IMS 組織が使用可能なForms アドオンライセンスを保持している場合にのみ、**ソリューションとアドオン** リストに表示されます。
+   * IMS 組織が使用可能な Forms アドオンライセンスを保持している場合にのみ、実稼動プログラムの作成中または実稼動プログラムの編集中に&#x200B;**ソリューションとアドオン**&#x200B;リストに表示されます。
 
-     ![Forms アドオン ](/help/implementing/cloud-manager/release-notes/assets/forms-add-on.png)*Forms アドオンは、IMS 組織でForms アドオンライセンスが使用可能な場合にのみ、プログラムに追加できます。*
+     ![Forms アドオン](/help/implementing/cloud-manager/release-notes/assets/forms-add-on.png) *Forms アドオンをプログラムに追加できるのは、IMS 組織で Forms アドオンライセンスが使用可能な場合のみです。*
 
-     ![ 実稼動プログラムの作成時のソリューションとアドオンのForms アドオン ](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png)*プログラムの作成時に、Sites ソリューション内でForms アドオンを選択できます。*
+     ![実稼動プログラムの作成時のソリューションとアドオンの Forms アドオン](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *プログラムの作成中に、Sites ソリューション内で Forms アドオンを選択できます。*
 
-     ![ 実稼動プログラムの編集時のForms アドオン ](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png)***プログラムを編集**&#x200B;で、Sites プログラム用のForms アドオンを選択してから、パイプラインを実行して環境でアクティブ化します。*
+     ![実稼動プログラムの編集時の Forms アドオン](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) ***プログラムを編集**で、Sites プログラムの Forms アドオンを選択し、パイプラインを実行して環境でアクティブ化します。*
 
-     詳しくは、[ 実稼動プログラムの作成 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) を参照してください。
+     詳しくは、[実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)を参照してください。
 
 ## Beta プログラム {#private-beta-program}
 
-Cloud Managerのベータプログラムに参加すると、一般リリース前に今後リリースされる機能を独占的に利用できます。
+Cloud Manager の Beta プログラムに参加すると、一般リリース前の新機能に特別アクセスできます。
 
 現在、以下の機能が利用可能です。
 
@@ -68,13 +68,13 @@ Cloud Managerのベータプログラムに参加すると、一般リリース�
 
 最新の顧客ソースコードが期待どおりに動作しない場合は、以前のデプロイメントに迅速に戻すことができます。パイプライン全体を再実行したり、コミットを手動で元に戻したりする必要はありません。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![環境カードから顧客ソースコードを復元](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上記の環境カードには、選択した環境の&#x200B;**復元**／**以前にデプロイされたコード**&#x200B;オプションが表示されています。*
+![環境カードから顧客ソースコードを復元](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上記の環境カードには、選択した環境の&#x200B;**復元**／**以前にデプロイされたコード**オプションが表示されています。*
 
 ![以前にデプロイしたコードを復元ダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-***以前にデプロイしたコードを復元**&#x200B;ダイアログボックスで、現在デプロイされているバージョンと復元するバージョンを確認し、「**確認***」をクリックします。
+***以前にデプロイしたコードを復元**ダイアログボックスで、現在デプロイされているバージョンと復元するバージョンを確認し、「**確認***」をクリックします。
 
 ![アクティベーションの復元](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager は、環境を以前のビルドにロールバックし、コンテンツと設定をそのままの状態に保ち、デプロイメントが完了するまで環境に&#x200B;**復元中**&#x200B;とマークを付けます。*
+*Cloud Manager は、環境を以前のビルドにロールバックし、コンテンツと設定をそのままの状態に保ち、デプロイメントが完了するまで環境に&#x200B;**復元中**とマークを付けます。*
 
 ![使用中のソースコードバージョン](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *環境の詳細ビューには、前述のように、使用中のアクティブなソースコードバージョンも表示されるようになりました。*
 
@@ -88,10 +88,10 @@ Cloud Managerのベータプログラムに参加すると、一般リリース�
 
 Cloud Manager は、**専用のテスト環境**&#x200B;という新しい追加の環境タイプをサポートするようになりました。この環境は、運用開始前に、チームが実稼動環境に近い条件下で機能を検証するのに役立つように設計されています。この環境タイプは、*実稼動環境とステージング環境*、*開発環境*&#x200B;または&#x200B;*迅速な開発環境*&#x200B;環境とは異なり、高度な検証シナリオを実行することに焦点を当てたスペースが提供されます。
 
-**最近の機能強化**
+**最新の機能強化**
 
-* よりシンプルで直感的なワークフローにより、実稼動以外のパイプラインで専用のテスト環境を設定できるようになりました。 合理化されたセットアップにより、完了までの時間が短縮され、設定エラーが減少します。
-* **コンテンツをコピー** が専用のテスト環境でサポートされるようになりました。 実稼動をミラーリングする分離されたテスト環境で、**コンテンツをコピー** を安全に実行できるようになりました。<!-- (CMGR‑68900) -->
+* よりシンプルで直感的なワークフローにより、実稼動以外のパイプラインで専用のテスト環境を設定できるようになりました。合理化されたセットアップにより、完了までの時間が短縮され、設定エラーが減少します。
+* **コンテンツをコピー**&#x200B;が専用のテスト環境でサポートされるようになりました。実稼動環境をミラーリングした隔離されたテスト環境で、**コンテンツをコピー**&#x200B;を安全に実行できるようになりました。<!-- (CMGR‑68900) -->
 
 [専用のテスト環境の追加](/help/implementing/cloud-manager/specialized-test-environment.md)を参照してください。
 
@@ -105,7 +105,7 @@ Cloud Manager は、**専用のテスト環境**&#x200B;という新しい追加
 If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID. -->
 
 
-### 独自の Git の導入（BYOG） {#gitlab-bitbucket-azure-vsts}
+### Bring Your Own Git (BYOG) {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -128,7 +128,7 @@ Azure DevOps Git リポジトリを Cloud Manager にオンボードできるよ
 |---|---|
 | *必要に応じてプロジェクトを Adobe の管理による Git リポジトリに戻すには、どうすれば良いですか？* | 戻すのは簡単です。[パイプラインを更新](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)して Adobe リポジトリを指し、外部リポジトリが不要になった場合は削除します。 |
 | *異なる環境（実稼動と実稼動以外など）に異なるリポジトリを設定して、最初に実稼動以外の環境でテストできるようにすることはできますか？* | はい、個別の環境用に異なるリポジトリを設定できます。例えば、開発パイプラインまたはコード品質パイプラインは外部リポジトリを指し、実稼動パイプラインは Adobe リポジトリに接続されたままにすることができます。この設定中は、2 つのリポジトリ間の同期ジョブがアクティブのままであることを確認してください。 |
-| *`IP Allow` リストなどの既存の設定は引き続き機能しますか？* | はい、既存の `IP Allow` リストは引き続き通常どおり機能します。 ただし、外部 Git リポジトリがファイアウォールで保護されている場合は、必要な [Adobe IP アドレスを許可リストに追加する必要があります](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。 |
+| *`IP Allow` リストなどの既存の設定は引き続き機能しますか？* | はい、既存の `IP Allow` リストは引き続き通常どおり機能します。ただし、外部 Git リポジトリがファイアウォールで保護されている場合は、必要な [Adobe IP アドレスを許可リストに追加する必要があります](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。 |
 | *すべての GitLab リポジトリ URL が機能しますか？使用するリポジトリ URL は、形式 `https://gitlab_dedicated_url.com/path/repo-name.git` に従いますが、この形式はドキュメントの例とは異なります。* | はい、API V3 または V4 をサポートするどの GitLab リポジトリもサポートされます。これには、[Cloud Manager への外部リポジトリの追加 ](/help/implementing/cloud-manager/managing-code/external-repositories.md)（`https://git-vendor-name.com/org-name/repo-name.git`）に記載されているようなセルフホスト型の GitLab URL が含まれます。 |
 
 
@@ -146,21 +146,21 @@ Edge Delivery Services を使用して作成されたサイトで設定パイプ
 
 **最近の機能強化**
 
-* Edge Delivery Services パイプラインの **デプロイ済みコード** 列に **設定** と表示され、設定専用のデプロイメントを即座に特定できるようになりました。<!-- CMGR‑69681 -->
-* プログラムに 1 つ以上のEdge Delivery サイトと 1 つのマッピング済みドメインが含まれると、Cloud Managerは **Edge Delivery Services パイプラインを追加** を表示します。 それ以外の場合は、このオプションは無効に表示され、不足している要件に関するツールチップが説明されます。<!-- CMGR‑69680 -->
+* Edge Delivery Services パイプラインの&#x200B;**デプロイ済みコード**&#x200B;列に&#x200B;**設定**&#x200B;と表示され、設定専用のデプロイメントを即座に特定できるようになりました。<!-- CMGR‑69681 -->
+* プログラムに 1 つ以上のEdge Delivery サイトと 1 つのマッピング済みドメインが含まれると、Cloud Managerは **Edge Delivery パイプラインを追加**&#x200B;を表示します。そうでない場合、そのオプションは無効として表示され、ツールチップで不足している要件が説明されます。<!-- CMGR‑69680 -->
 * 「**Edge Delivery**」タブには、新しい「**Edge Delivery パイプライン**」ウィジェットが表示され、各パイプラインの名前、ステータス、リポジトリ、ブランチがリストされます。<!-- (CMGR-69052) -->
 
-  ![ パイプライン名、ステータス、リポジトリー、ブランチを表示するEdge Delivery パイプラインウィジェット ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)
+  ![パイプライン名、ステータス、リポジトリー、ブランチを表示する「Edge Delivery パイプライン」ウィジェット](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)
 
-* **フィルター** パネルには、「&lbrace;4 **Edge配信**」チェックボックスと「**公開配信**」チェックボックスを含む「配信タイプ **」セクションが追加されます。**<!-- (CMGR-69682) -->
+* **フィルター**&#x200B;パネルには、「**Edge Delivery**」チェックボックスと「**Publish Delivery**」チェックボックスを含む「**配信タイプ**」セクションが追加されます。<!-- (CMGR-69682) -->
 
-  ![Edge配信と公開配信の新しい配信タイプを示すフィルターパネル ](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
+  ![Edge DeliveryとPublish Deliveryの新しい配信タイプを示すフィルターパネル](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
 ![「パイプラインを追加」ドロップダウンリストの「Edge Delivery パイプラインを追加」](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)*「**プログラムの概要**」ページ、「**パイプライン**」カードからのEdge Delivery パイプラインの追加。*
 
 ![「Edge Delivery パイプラインを追加」ダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png)*「Edge Delivery パイプラインを追加」ダイアログボックス。*
 
-[Edge Delivery パイプラインの追加 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) を参照してください。
+[Edge Delivery パイプラインを追加する](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)をご覧ください。
 
 この新機能をテストしてフィードバックを共有したい場合は、Adobe ID に関連付けられたメールアドレスから [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) にメールを送信してください。
 
@@ -169,7 +169,7 @@ Edge Delivery Services を使用して作成されたサイトで設定パイプ
 
 * パイプラインでは、パイプラインの作成中に削除された設定をスキップして、アクティブなEdge Delivery Services ドメイン設定にのみ変数を配信するようになりました。<!-- (CMGR‑70039) -->
 * パイプラインの実行が確実に開始されるようになりました。内部リソース処理エラーが原因で一部のパイプラインの開始に失敗した問題を修正しました。<!-- (CMGR‑58167) -->
-* コンテンツのコピーでは、Cloud Managerの権限とブロックの検証を開始しますが、それは Deployment Manager または Administrator の権限がないユーザーが行う必要があります。<!-- (CMGR‑62097) -->
+* コンテンツのコピ は Cloud Manager の権限を検証し、Deployment Manager または Administrator 権限を持たないユーザーによる開始をブロックします。<!-- (CMGR‑62097) -->
 
 
 <!-- ## Known issues {#known-issues} -->

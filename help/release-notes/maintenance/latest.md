@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 90e92cfb15a6dfe5a8a474996f52c8a0c689f5e6
 workflow-type: tm+mt
 source-wordcount: '607'
-ht-degree: 38%
+ht-degree: 39%
 
 ---
 
@@ -83,4 +83,4 @@ AEM as a Cloud Service では、プラットフォームのセキュリティと
 | AEM HTL | 1.4.28-1.4.0 | [HTML テンプレート言語仕様](https://github.com/adobe/htl-spec) |
 | Apache HTTP サーバー | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | AEM コアコンポーネント | 2.29.0 | [AEM WCM コアコンポーネント](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14（デフォルト） | [ サポートされている Node.js のバージョン ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14（デフォルト） | [サポートされている Node.js バージョン](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
