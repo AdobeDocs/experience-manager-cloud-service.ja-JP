@@ -134,7 +134,7 @@ AEM Assets では、アセットの参照ページの[カード表示または�
 
 * **制限されたファイルタイプのエラー処理の強化**
 
-  [ 制限されたファイルタイプのエラー処理 ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) がサポートされるようになりました。これにより、サポートされていないファイルのアップロードがブロックされます。 ユーザーがファイルを送信する際、ファイルのタイプをサポートされていない形式に変更すると、送信中にフォームがエラーをスローする。
+  [ 制限されたファイルタイプのエラー処理 ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) がサポートされるようになりました。これにより、サポートされていないファイルのアップロードがブロックされます。 ユーザーがファイルを送信する際、ファイルのタイプをサポートされていない形式に変更すると、送信中にフォームがエラーをスローする。
 
 
 <!--
