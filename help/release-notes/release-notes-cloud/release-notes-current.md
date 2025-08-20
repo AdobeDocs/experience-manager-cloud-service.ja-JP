@@ -88,7 +88,7 @@ Content Hubのフィルターに **すべて表示** オプションが含まれ
 
 新しいファイルおよびフォルダーの自動アップロード、強化されたファイル処理、よりスマートなアセット検出、AEMとのシームレスな統合により、コンテンツ管理がより高速で明確かつ直感的に行われます。
 
-機能の完全なリストについては、[ デスクトップアプリケーションリリースノート ](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes) を参照してください。
+機能の完全なリストについては、[ デスクトップアプリケーションリリースノート ](https://experienceleague.adobe.com/ja/docs/experience-manager-desktop-app/using/release-notes) を参照してください。
 
 ### OpenAPI 機能を備えた Dynamic Media の新機能 {#new-features-dynamic-media-with-openapi}
 
@@ -134,7 +134,7 @@ Content Hubのフィルターに **すべて表示** オプションが含まれ
 
 * **制限されたファイルタイプのエラー処理の強化**
 
-  [ 制限されたファイルタイプのエラー処理 ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) がサポートされるようになりました。これにより、サポートされていないファイルのアップロードがブロックされます。 ユーザーがファイルを送信する際、ファイルのタイプをサポートされていない形式に変更すると、送信中にフォームがエラーをスローする。
+  [ 制限されたファイルタイプのエラー処理 ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) がサポートされるようになりました。これにより、サポートされていないファイルのアップロードがブロックされます。 ユーザーがファイルを送信する際、ファイルのタイプをサポートされていない形式に変更すると、送信中にフォームがエラーをスローする。
 
 
 <!--
