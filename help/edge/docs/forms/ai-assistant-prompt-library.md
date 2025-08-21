@@ -6,14 +6,13 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: c8f64082-a23f-4919-ad66-042faad77d31
-source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
+source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
 workflow-type: tm+mt
 source-wordcount: '1338'
 ht-degree: 28%
 
 ---
-
 
 # Forms Experience Builder - プロンプトライブラリ
 
@@ -141,7 +140,7 @@ Include a file upload field for @profilePicture with size limit of 5MB
 
 **用途：** 新しいフォームを作成する必要がある場合や、既存のフォームを変更する必要がある場合。
 
-**使用方法：** 2 つの方法から 1 つ選択します。「ゼロから作成」または「読み込んで変換」（『 [ はじめる前に ](forms-ai-assistant-getting-started.md#two-ways-to-create-forms) を参照）。
+**使用方法：** 2 つの方法から 1 つ選択します。「ゼロから作成」または「読み込んで変換」（『 [ はじめる前に ](/help/edge/docs/forms/forms-ai-assistant-getting-started.md) を参照）。
 
 **プロンプトの例 – フォームの簡単な作成：**
 
@@ -518,7 +517,7 @@ Configure **database integration** to save form submissions as records. Create n
 
 **用途：** 既存のフォーム、ドキュメントまたはデザインを最新のAEM フォームに変換する場合。
 
-**使用方法：** ソースファイルをアップロードし、変換要件を説明します（『 [ 読み込みガイド ](forms-ai-assistant-getting-started.md#2-import-and-convert) を参照）。
+**使用方法：** ソースファイルをアップロードし、変換要件を説明します（『 [ 読み込みガイド ](/help/edge/docs/forms/forms-ai-assistant-getting-started.md) を参照）。
 
 **プロンプトの例 - PDF フォームの変換：**
 

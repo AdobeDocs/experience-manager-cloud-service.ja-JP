@@ -6,14 +6,13 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: b8f64082-a23f-4919-ad66-042faad77d30
-source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+exl-id: da429952-ccc0-4579-a243-8bddeb73a0fb
+source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
 workflow-type: tm+mt
 source-wordcount: '1720'
 ht-degree: 15%
 
 ---
-
 
 # Forms Experience Builder の概要
 
@@ -483,4 +482,4 @@ Forms Experience Builder では、AEM Formsの機能についても学習でき�
 
 **サポートが必要ですか？** 入力 `/help` に続いて具体的な質問を入力するか、システム管理者にお問い合わせください。
 
-その他のサポートについては、メインの [Forms Experience Builder プロンプトライブラリを参照するか ](ai-assistant-prompt-library.md) システム管理者に技術的なサポートを依頼してください。
+その他のサポートについては、メインの [Forms Experience Builder プロンプトライブラリを参照するか ](/help/edge/docs/forms/ai-assistant-prompt-library.md) システム管理者に技術的なサポートを依頼してください。
