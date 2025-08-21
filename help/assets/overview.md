@@ -3,7 +3,7 @@ title: AEM でのデジタルアセット管理の Assets as a Cloud Service の
 description: AEM でのデジタルアセット管理の Assets as a Cloud Service の概要
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: c3a528d7e903b43f6b9a18b2426a04638b086d38
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '5032'
 ht-degree: 100%
 
@@ -267,11 +267,11 @@ AEM Assets には、AI 生成のタグ付け（スマートタグ）、カスタ
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ja">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="メタデータ管理のベストプラクティス" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ja">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>メタデータ管理のベストプラクティス</strong>
       </a>
    </div>
