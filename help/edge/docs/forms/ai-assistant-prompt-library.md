@@ -1,101 +1,72 @@
 ---
-title: AEM Forms AI アシスタント – プロンプトライブラリ
+title: Forms Experience Builder - プロンプトライブラリ
 description: Forms Management UI、アダプティブフォームエディター、ユニバーサルエディターで、AI を利用してフォームを作成するための実証済みのプロンプトパターンと例のコレクション。
 feature: Edge Delivery Services
 hide: true
+index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
-source-git-commit: abcd5be06b0bf24ebe8737827fb4abdbf148b1b0
-workflow-type: ht
-source-wordcount: '1613'
-ht-degree: 100%
+exl-id: c8f64082-a23f-4919-ad66-042faad77d31
+source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+workflow-type: tm+mt
+source-wordcount: '1338'
+ht-degree: 28%
 
 ---
 
-# AEM Forms AI アシスタント – プロンプトライブラリ
 
-再利用可能なプロンプトパターンと、一般的なフォーム作成シナリオの例のコレクション。特定のニーズに合わせて調整できるテンプレートと考えてください。各セクションでは、特定のユースケースと、それを使用するタイミング、実証済みの例について説明します。
+# Forms Experience Builder - プロンプトライブラリ
+
+Forms Experience Builder 用に最適化された、再利用可能なプロンプトパターンと例のコレクション。 この合理化されたライブラリは、2 つのコア作成方法に焦点を当てています。ゼロからの作成および読み込みと変換。LLM を利用したスマートフィールドの強化サポートおよびブランド一貫性を備えています。
 
 >[!NOTE]
 >
-> AEM Forms の AI アシスタントは、早期導入プログラムで利用できます。勤務先のアドレスから mailto:aem-forms-ea@adobe.com にメールを送信して、アクセスをリクエストします。
+> Forms Experience Builder は、早期導入プログラムで利用できます。 勤務先のアドレスから `aem-forms-ea@adobe.com` にメールを送信して、アクセスをリクエストします。
 
 >[!IMPORTANT]
 >
-> **ドキュメントは変更される場合があります**：このプロンプトライブラリは現在製品に対してテスト中であり、更新および改訂される可能性があります。早期導入プログラム中に AEM Forms 用 AI アシスタントが進化し続けると、プロンプト、例、ベストプラクティスが変わる可能性があります。
+> **ドキュメントは変更される場合があります**：このプロンプトライブラリは現在製品に対してテスト中であり、更新および改訂される可能性があります。Forms Experience Builder は、早期導入プログラム中に進化し続けるため、プロンプト、例、ベストプラクティスが変わる可能性があります。
 
-## 最適な結果を得るためのベストプラクティス
+## このプロンプトライブラリの使用
 
-AI アシスタントを最大限に活用するには、次のヒントに留意してください。
+このライブラリは、一般的なフォーム作成シナリオに対して、再利用可能なプロンプトパターンを提供します。 包括的なベストプラクティスについては、[Forms Experience Builder 入門ガイド ](forms-ai-assistant-getting-started.md#best-practices) を参照してください。
 
-### シンプルに開始し、段階的にビルドする
+### このライブラリのクイックヒント
 
-最初は過度に複雑な複数ステップのリクエストではなく、小さく具体的なコマンド（「『名』のテキスト入力の追加」など）から始めます。このアプローチは、精度を確保するのに役立ち、何かが期待どおりに動作しない場合のトラブルシューティングが容易になります。
+- **例から開始** – 提供されたプロンプトをテンプレートとして使用し、ニーズに合わせて調整します
+- **2 つの作成方法** - 「ゼロから作成」または「インポートして変換」アプローチを選択します。
+- **具体的** – 一般的な例に独自の詳細を追加します。
+- **徹底的にテスト** – 常に特定の環境で結果を検証します
 
-**シンプルな開始の例：**
+### ブランドのテンプレートとスタイル
+
+**一貫したフォーム作成のために、事前にブランドアセットを準備：**
+
+- **ブランドテンプレート** – 組織のカラー、フォント、レイアウトパターンを使用して標準化されたフォームテンプレートを作成します
+- **スタイルガイドライン** – 一貫したフィールドのスタイル設定、ボタンのデザイン、間隔の標準を定義します
+- **コンポーネントライブラリ** - ブランド ID に一致する、再利用可能なフォームコンポーネントを作成します
+- **ビジュアルAssets** - フォームを統合するためのロゴ、アイコン、背景要素を準備します
+
+**ブランドテンプレートプロンプトの例：**
 
 ```
-Add a text input field for "First Name" with placeholder "Enter your first name"
+Create a brand template for financial services forms with:
+- Corporate blue (#003366) and silver (#C0C0C0) color scheme
+- Open Sans font family for all text
+- 16px minimum font size for accessibility
+- Consistent 24px spacing between sections
+- Corporate logo in header with proper sizing
+- Professional button styling with hover effects
 ```
 
-**そして段階的にビルド：**
+>[!NOTE]
+>
+>**カスタムコンポーネント**：カスタムブランド要素を実装する前に、組織固有のコンポーネントの使用とそのForms Experience Builder との互換性について開発チームに確認してください。
 
-```
-Make @firstName mandatory and add validation message "First name is mandatory"
-```
+>[!NOTE]
+>
+> このプロンプトライブラリが更新され、合理化されたForms Experience Builder 機能が反映されました。 例に示した一部の高度な統合およびテスト機能には、追加の設定が必要な場合があります。
 
-### AEM Forms 用語を使用する
-
-「パネル」、「テキスト入力フィールド」、「チェックボックスグループ」、「送信アクション」、「ルール」などの用語を使用して、アシスタントの理解を深めます。これにより、AI が AEM Forms コンテキスト内でリクエストを正しく解釈します。
-
-**優先用語：**
-
-- 「テキストボックス」ではなく「テキスト入力フィールド」
-- 「チェックボックス」ではなく「チェックボックスグループ」
-- 「リストを選択」ではなく「ドロップダウン」
-- 「セクション」や「コンテナ」ではなく「パネル」
-- 「フォーム送信」ではなく「送信アクション」
-- 「論理」や「条件」ではなく「ルール」
-
-### フィールドを明確に参照
-
-既存のフィールドを設定する場合は、@fieldName の表記を使用します（例：「@firstName を必須にする」）。 これは、特に、多くのフィールドを含む複雑なフォームで、AI が参照しているフィールドを正確に識別するのに役立ちます。
-
-**例：**
-
-- `Make @email mandatory with real-time validation`
-- `Show @spouseInfo panel when @maritalStatus equals "Married"`
-- `Set @country default value to "United States"`
-
-### 計画を常に確認する
-
-ユニバーサルエディターでアシスタントが提案した変更については、常に慎重に計画を確認してから、「適用」をクリックしてください。AI は、計画内容を示します。この情報が期待に沿っていることを確認してください。
-
-### 手動で検証
-
-アシスタントが変更を加えた後は、常にフォームをプレビューおよびテストして、期待どおり動作して、表示されることを確認します。AI は強力なツールですが、最終的な検証は品質を確保するための鍵です。
-
-**検証チェックリスト：**
-
-- プレビューモードでのフォーム機能のテスト
-- 条件付きロジックが正しく機能することを検証
-- モバイルの応答性の確認
-- フォーム送信のテスト
-- アクセシビリティ機能の検証
-
-### 繰り返して調整
-
-最初のプロンプトで正確な結果が得られない場合は、リクエストを言い換えるか、小さな手順に分割してみてください。AI はコンテキストから学習するので、より具体的な詳細を提供すると結果が向上する場合が多くみられます。
-
-**イテレーションの例：**
-
-1. 1 回目：「フォームをモバイル対応にする」
-2. 改善：「1 列レイアウトで大きなタッチターゲットを使用し、768 px 未満のモバイル画面用のフォームレイアウトを最適化」
-
-### フィードバックの提供
-
-組み込みのフィードバックメカニズムを使用して、アシスタントが学習し改善できるようにします。フィードバックは、すべてのユーザーにとって AI をより良いものにするのに役立ちます。
 
 
 ## 漸進型開発の例
@@ -142,205 +113,307 @@ Show @urgencyLevel dropdown (Low, Medium, High) only when @inquiryType equals "S
 Create a user registration form with personal information panel
 ```
 
-**手順 2 - コアフィールドの追加：**
+**手順 2 – 必須フィールドを追加：**
 
 ```
-Add text input fields: @firstName, @lastName, @email, @phone to the personal information panel
+Add fields for @firstName, @lastName, @email, @phoneNumber with appropriate validation
 ```
 
-**手順 3 - 検証の追加：**
+**手順 3 - ビジネスロジックの追加：**
 
 ```
-Make @firstName, @lastName, and @email mandatory with real-time validation
+Create a rule: if @age is under 18, show parent/guardian information section
 ```
 
-**手順 4 - アカウント情報の追加：**
+**手順 4 – 環境設定を使用した機能強化：**
 
 ```
-Create a new panel "Account Information" with @username and @password fields
+Add a preferences panel with @newsletterSubscription, @marketingConsent, @termsAccepted
 ```
 
-**手順 5 - セキュリティの強化：**
+**手順 5 - ファイルのアップロードの追加：**
 
 ```
-Add password confirmation field @confirmPassword with validation to match @password
+Include a file upload field for @profilePicture with size limit of 5MB
 ```
 
-**手順 6 - 環境設定の追加：**
+## フォームの作成と管理
+
+**用途：** 新しいフォームを作成する必要がある場合や、既存のフォームを変更する必要がある場合。
+
+**使用方法：** 2 つの方法から 1 つ選択します。「ゼロから作成」または「読み込んで変換」（『 [ はじめる前に ](forms-ai-assistant-getting-started.md#two-ways-to-create-forms) を参照）。
+
+**プロンプトの例 – フォームの簡単な作成：**
 
 ```
-Create "Preferences" panel with @newsletter checkbox and @communicationMethod radio group (Email, SMS, Phone)
+Create a customer feedback form with:
+- Product rating (1-5 stars)
+- Comment field for detailed feedback
+- Customer email (optional)
+- Submit to email notification
 ```
 
-この増分的なアプローチにより、次のことができるようになります。
-
-- 問題が発生する前に問題を早期検出できる
-- 各機能を徹底的にテストする
-- ユーザーのフィードバックに基づいて調整を行う
-- 開発プロセスをより適切に制御できる
-
-## 新しいフォームの開始
-
-**用途：**&#x200B;フォームプロジェクトの開始時。このプロンプトは、AI が要件を理解し、基盤構造を構築するのに役立ちます。
-
-**使用方法：**&#x200B;基本構造とコア要件から始めます。フォームタイプ、ターゲットオーディエンス、および主な目的を指定します。後続のプロンプトに複雑さを追加します。
-
-**プロンプトの例 - 簡単に開始：**
+**プロンプトの例 – 複雑なフォームの作成：**
 
 ```
-Create a **customer onboarding form** for new bank account applications with:
+Create a comprehensive employee onboarding form with:
 
-**Purpose:** Collect personal information for account setup
-**Target Users:** New customers applying for checking/savings accounts
-**Basic Structure:** Single panel with essential fields
-**Core Fields:** Name, email, phone, account type selection
+**Personal Information Section:**
+- Full name (first, middle, last)
+- Date of birth with age validation
+- Contact information (email, phone, address)
+- Emergency contact details
 
-Start with a simple layout that we can enhance step by step.
+**Employment Details:**
+- Position and department selection
+- Start date with business day validation
+- Salary information with confidentiality notice
+- Reporting structure
+
+**Document Upload:**
+- Resume/CV upload (PDF, DOC, DOCX)
+- ID verification documents
+- Tax forms and banking information
+- Signed employment agreement
+
+**Preferences:**
+- Benefits selection with cost calculator
+- Work schedule preferences
+- Training requirements
+- Equipment needs
+
+**Validation Rules:**
+- Email format validation
+- Phone number format validation
+- Age must be 18 or older
+- All required documents must be uploaded
+- Terms and conditions must be accepted
+
+**Submit Actions:**
+- Send confirmation email to new employee
+- Notify HR department
+- Create employee record in HR system
+- Schedule orientation meeting
 ```
 
-**次に段階的に作成：**
+**フォーム管理プロンプト：**
 
 ```
-Add an address panel to @customerOnboardingForm with street address, city, state, and zip code fields
-```
-
-```
-Add employment information panel with @employer, @jobTitle, and @annualIncome fields
-```
-
-```
-Add file upload field @identityDocuments for identity verification (Accept: .pdf,.jpg,.png)
-```
-
-**代替のシンプルな開始プロンプト：**
-
-```
-Create a basic **event registration form** with name, email, and event selection fields
-```
-
-```
-Build a simple **contact form** with name, email, and message fields
-```
-
-```
-Design a basic **feedback survey** with rating scale and comments field
-```
-
-## フォームの構造とレイアウト
-
-**用途：**&#x200B;複雑なフォームを整理する必要がある場合や、レイアウトデザインを改善してユーザーエクスペリエンスを向上させる必要がある場合。
-
-**使用方法：**&#x200B;ユーザージャーニーと情報の論理的なグループ化に焦点を当てます。レイアウトの環境設定とナビゲーションパターンを指定します。
-
-**プロンプトの例 – 複数ステップのフォーム構造：**
-
-```
-Convert this single-page form into a **3-step wizard** with:
-
-**Step 1: Personal Information**
-- Name, email, phone, address fields
-- Progress indicator showing "Step 1 of 3"
-- "Next" button (validate mandatory fields before proceeding)
-
-**Step 2: Preferences & Requirements** 
-- Service selection (checkbox group)
-- Budget range (dropdown)
-- Timeline preferences (radio group)
-- Special requirements (text input field)
-
-**Step 3: Review & Submit**
-- Summary of all entered information
-- Edit links to go back to specific steps
-- Terms and conditions checkbox
-- Submit button with confirmation
-
-Include "Previous" and "Next" buttons, allow users to jump between completed steps, save progress automatically.
-```
-
-**レイアウト最適化プロンプト：**
-
-```
-Reorganize this form using a **wizard layout** for desktop and single column for mobile. 
+Import this PDF application form and convert it to an adaptive form with enhanced validation
 ```
 
 ```
-Convert this long form into an **accordion layout** where users can expand/collapse sections.
+Update the existing contact form to include social media handles and preferred contact method
 ```
 
 ```
-Create a **vertical tabbed interface** for this form with tabs for: Basic Info, Contact Details, Preferences, and Review.
+Reorganize the registration form into a 3-step wizard: personal info, preferences, confirmation
 ```
 
-## フィールド管理と検証
+## フィールド管理と設定
 
-**用途：**&#x200B;特定の検証ルールおよび動作を使用して、フォームフィールドを追加、変更、拡張する必要がある場合。
+**用途：** フォームフィールドを追加、変更、設定する必要がある場合。
 
-**使用方法：**&#x200B;フィールドのタイプ、検証要件およびユーザーエクスペリエンスの期待について、具体的に説明します。@fieldName 構文を使用して既存のフィールドを参照します。
+**使用方法：** フィールドタイプ、検証ルールおよびユーザーエクスペリエンスの要件に関して具体的に説明します。
 
-**プロンプトの例 - フィールドの機能強化：**
-
-```
-Enhance the form fields with these specific requirements:
-
-**Email Field (@email):**
-- Make mandatory with real-time validation
-- Show green checkmark when valid format entered
-- Display helpful error message: "Please enter a valid email address"
-- Add placeholder: "your.email@company.com"
-
-**Phone Number (@phone):**
-- Type: tel for mobile optimization
-- Make mandatory for business customers, optional for personal
-- Add placeholder: "Enter your phone number"
-
-**Date of Birth (@dateOfBirth):**
-- Type: date with date picker
-- Validate age is 18+ for account opening
-- Show error if under 18: "Must be 18 or older to open account"
-
-**File Upload (@documents):**
-- Accept: .pdf,.doc,.docx
-- Multiple: true for multiple document upload
-- Show upload progress and file names after upload
-```
-
-**フィールド固有のプロンプト：**
+**プロンプトの例 – 基本フィールドの追加：**
 
 ```
-Add a **file upload field** for resume with these specs: Accept only PDF/DOC/DOCX files, allow multiple files, show upload progress, display file names after upload.
+Add a text input field for "Company Name" with placeholder "Enter your company name"
+```
+
+**プロンプトの例 – 詳細フィールドの設定：**
+
+```
+Add a comprehensive address section with:
+
+**Street Address:**
+- Address line 1 (required, max 100 characters)
+- Address line 2 (optional, max 100 characters)
+- City (required, dropdown with common cities)
+- State/Province (required, dropdown)
+- Postal code (required, format validation)
+- Country (required, default to "United States")
+
+**Validation Rules:**
+- Postal code must match state selection
+- Address line 1 cannot be empty
+- City must be a valid city for selected state
+
+**User Experience:**
+- Auto-complete for address fields
+- Clear labels and help text
+- Mobile-friendly input fields
+- Accessibility compliance
+```
+
+**フィールド設定プロンプト：**
+
+```
+Make @email field required with real-time validation and custom error message
 ```
 
 ```
-Create a **dropdown field** for country selection with all countries listed. Set default value based on user's location if available.
+Add a dropdown for @country with options for USA, Canada, UK, Germany, France, and "Other"
 ```
 
 ```
-Build a **repeatable panel** for work experience where users can add/remove multiple jobs. Each entry needs: company, title, start date, end date, description.
+Configure @phoneNumber field with format (XXX) XXX-XXXX and validation
 ```
 
-## 条件付きロジックとルール
+```
+Add a file upload field for @resume with PDF and DOC restrictions, max 5MB
+```
 
-**用途：**&#x200B;ユーザー入力またはビジネスルールに基づいて動的なフォームの動作が必要な場合。
+## LLM 拡張スマートフィールド
 
-**使用方法：**&#x200B;条件と結果のアクションを明確に定義します。特定のフィールド参照と論理演算子を使用します。
+**使用するタイミング：** AI のナレッジベースを活用するオプションが事前入力されたフィールドが必要な場合。
 
-**プロンプトの例 - 複雑な条件付きロジック：**
+**使用方法：** 包括的なデータセットが必要なリクエストフィールド - AI は、組み込みの知識を使用してオプションを自動的に入力できます。
+
+### 「地理的および場所」フィールド
+
+**空港・輸送機関：**
 
 ```
-Implement these conditional rules for the application form:
+Add a dropdown for departure airports with all major international airports
+Add arrival airport field with IATA codes and full names
+Create a field for nearest airport to user location
+Add a selection of train stations for European cities
+```
 
-**Business vs Personal Account Logic:**
-- If @accountType equals "Business", show:
-  - Business name field (mandatory)
-  - Tax ID field (mandatory)
-  - Business address section
-  - Number of employees dropdown
-- If @accountType equals "Personal", hide all business fields
+**行政区域：**
 
-**Income-Based Requirements:**
-- If @annualIncome is less than 25000:
-  - Show additional verification section
-  - Make co-signer information mandatory
+```
+Add a complete list of US states with abbreviations
+Create a country dropdown with ISO codes and full names
+Add a field for major world cities with time zones
+Include a dropdown of Canadian provinces and territories
+Add a field for UK counties and postal areas
+```
+
+### ビジネスおよび業界データ
+
+**会社の分類：**
+
+```
+Add a field for industry classification with NAICS codes
+Create a dropdown of business entity types (LLC, Corporation, Partnership, etc.)
+Add a field for company size categories (startup, SME, enterprise)
+Include department selection for large organizations
+Add a field for professional service types
+```
+
+**プロフェッショナルな分類：**
+
+```
+Add a field for job titles with common industry roles
+Create a dropdown of professional certifications by field
+Include education levels with degree types
+Add a field for years of experience ranges
+Create a selection for programming languages and frameworks
+```
+
+### 標準と規制
+
+**財務および法務：**
+
+```
+Add a field for currency codes with symbols and exchange rates
+Create a dropdown of tax ID types by country
+Include a field for legal document types
+Add payment method options with security features
+Create a selection for banking institutions by country
+```
+
+**技術基準：**
+
+```
+Add a dropdown of file format types with extensions
+Include network protocol options
+Add a field for database types and versions
+Create a selection for API authentication methods
+```
+
+### ヘルスケア・医療
+
+**医療分類：**
+
+```
+Add a field for medical specialties
+Create a dropdown of common medications with generic names
+Include a field for insurance provider types
+Add a selection for medical emergency contact relationships
+Create a field for dietary restrictions and allergies
+```
+
+### 時間とカレンダーインテリジェンス
+
+**日付および時刻フィールド：**
+
+```
+Add a field for business hours with time zone handling
+Create a dropdown of public holidays by country
+Include seasonal options with date ranges
+Add a field for conference room booking with availability
+Create a selection for recurring meeting patterns
+```
+
+### 製品およびサービスのカテゴリ
+
+**E コマース分類：**
+
+```
+Add a field for product categories with subcategories
+Create a dropdown of shipping methods with delivery estimates
+Include a field for return policy options
+Add a selection for customer priority levels
+Create a field for subscription billing cycles
+```
+
+**スマートフィールドプロンプトの例：**
+
+```
+"Add a departure airport field with all major airports worldwide including IATA codes and city names"
+```
+
+```
+"Create a comprehensive industry field using standard NAICS classification with technology subcategories"
+```
+
+```
+"Include a professional certification dropdown that adapts based on the selected job field"
+```
+
+```
+"Add an international phone number field that formats based on the selected country"
+```
+
+```
+"Create a university selection field with major institutions organized by country and ranking"
+```
+
+## ルールの作成とビジネスロジック
+
+**用途：** 条件付きロジック、検証ルールまたはビジネスプロセスを実装する必要がある場合。
+
+**使用方法：** 条件とアクションを指定して、ビジネスロジックを明確に説明します。
+
+**プロンプトの例 – 単純な条件付きロジック：**
+
+```
+Create a rule that shows @spouseInformation panel only when @maritalStatus equals "Married"
+```
+
+**プロンプトの例 – 複雑なビジネス・ルール：**
+
+```
+Implement comprehensive loan application validation:
+
+**Income Validation:**
+- If @annualIncome is less than 30000:
+  - Show warning message: "Income may be insufficient for requested loan amount"
+  - Require additional income documentation
   - Display message: "Additional documentation may be required"
 - If @annualIncome is greater than 100000:
   - Show premium services options
@@ -359,15 +432,15 @@ Implement these conditional rules for the application form:
 **ルール固有のプロンプト：**
 
 ```
-Create a **visibility rule** that shows @spouseInformation panel only when @maritalStatus equals "Married" or "Domestic Partnership".
+Create a **visibility rule** that shows @spouseInformation panel only when @maritalStatus equals "Married" or "Domestic Partnership"
 ```
 
 ```
-Add **progressive disclosure** where additional questions appear based on previous answers. Start with basic info, then show relevant follow-ups.
+Add **progressive disclosure** where additional questions appear based on previous answers. Start with basic info, then show relevant follow-ups
 ```
 
 ```
-Implement **smart defaults** where @country selection auto-sets related fields. Allow manual override.
+Implement **smart defaults** where @country selection auto-sets related fields. Allow manual override
 ```
 
 ## データ統合と送信
@@ -398,7 +471,7 @@ Add email notification to @applicationForm: Send confirmation email to @email ad
 Add CRM integration to @applicationForm: Create new lead record with @firstName, @lastName, @email, and set Status to "New Application"
 ```
 
-**プロンプトの例 - 高度なマルチチャネル送信：**
+**プロンプトの例 – 標準のマルチチャネル送信：**
 
 ```
 Configure form submission with multiple data destinations:
@@ -430,22 +503,22 @@ Configure form submission with multiple data destinations:
 **統合固有のプロンプト：**
 
 ```
-Connect this form to **CRM system** to create new leads. Map @firstName to FirstName, @email to Email, set LeadSource to "Web Form", and Status to "New".
+Connect this form to **CRM system** to create new leads. Map @firstName to FirstName, @email to Email, set LeadSource to "Web Form", and Status to "New"
 ```
 
 ```
-Set up **workflow trigger** when form is submitted. Pass all form data and trigger approval workflow with manager notification.
+Set up **workflow trigger** when form is submitted. Pass all form data and trigger approval workflow with manager notification
 ```
 
 ```
-Configure **database integration** to save form submissions as records. Create new folder for each submission with uploaded documents.
+Configure **database integration** to save form submissions as records. Create new folder for each submission with uploaded documents
 ```
 
-## デザインの読み込みと変換
+## 既存のFormsの読み込みと変換
 
-**用途：**&#x200B;既存のフォームデザイン（PDF、Figma、画像）を機能的な AEM フォームに変換する必要がある場合。
+**用途：** 既存のフォーム、ドキュメントまたはデザインを最新のAEM フォームに変換する場合。
 
-**使用方法：**&#x200B;ソースデザインに関する明確なコンテキストを提供し、必要な変更や機能強化を指定します。
+**使用方法：** ソースファイルをアップロードし、変換要件を説明します（『 [ 読み込みガイド ](forms-ai-assistant-getting-started.md#2-import-and-convert) を参照）。
 
 **プロンプトの例 - PDF フォームの変換：**
 
@@ -476,21 +549,21 @@ Convert this uploaded **PDF application form** into a functional AEM adaptive fo
 - Ensure consistent spacing and alignment
 - Add subtle animations for better user experience
 
-Preserve all original field labels and help text, but improve the user experience with modern form interactions.
+Preserve all original field labels and help text, but improve the user experience with modern form interactions
 ```
 
 **デザインの読み込みプロンプト：**
 
 ```
-Import this **design mockup** and convert it into an adaptive form. Maintain the exact visual design but add proper validation and mobile responsiveness.
+Import this **design mockup** and convert it into an adaptive form. Maintain the exact visual design but add proper validation and mobile responsiveness
 ```
 
 ```
-Analyze this **image of a paper form** and recreate it digitally. Improve the layout for better mobile experience while keeping all mandatory fields.
+Analyze this **image of a paper form** and recreate it digitally. Improve the layout for better mobile experience while keeping all mandatory fields
 ```
 
 ```
-Convert this **existing HTML form** to AEM adaptive form format. Preserve all functionality but add AEM-specific features like rules and themes.
+Convert this **existing HTML form** to AEM adaptive form format. Preserve all functionality but add AEM-specific features like rules and themes
 ```
 
 ## モバイルの最適化と応答性
@@ -542,313 +615,360 @@ Optimize this form for **mobile-first responsive design**:
 - Horizontal form sections for related fields
 - Sidebar navigation for long forms
 - Hover states and advanced interactions
-
-**Touch Optimization:**
-- Larger checkbox and radio button targets
-- Swipe gestures for multi-step navigation
-- Pull-to-refresh for saved drafts
-- Touch-friendly date/time pickers
-
-**Performance:**
-- Lazy load non-critical form sections
-- Optimize images and icons for mobile
-- Minimize JavaScript for faster loading
-- Progressive enhancement approach
 ```
 
-**モバイル固有のシンプルなプロンプト：**
+**モバイル固有のプロンプト：**
 
 ```
-Make @checkoutForm mobile-optimized with large buttons and one-thumb navigation
+Make this form **touch-friendly** with larger buttons and simplified navigation for mobile users
 ```
 
 ```
-Add touch-friendly controls to @surveyForm for tablet users
+Optimize form for **tablet users** with appropriate field sizes and navigation patterns
 ```
 
 ```
-Enable offline functionality for @applicationForm with local data saving
+Add **swipe gestures** for multi-step form navigation on mobile devices
 ```
 
 ## アクセシビリティとコンプライアンス
 
-**用途：**&#x200B;フォームがアクセシビリティ標準（WCAG 2.1 AA）またはコンプライアンス要件を満たす必要がある場合。
+**使用するタイミング：** フォームがアクセシビリティ標準（WCAG）またはコンプライアンスの要件を満たす必要がある場合。
 
-**使用方法：**&#x200B;満たす必要のあるアクセシビリティ要件とコンプライアンス標準を指定します。
+**使用方法：** 必要なコンプライアンスレベルと、必要な特定のアクセシビリティ機能を指定します。
 
-**プロンプトの例 - アクセシビリティの実装：**
+**プロンプトの例 – 基本アクセシビリティ：**
 
 ```
-Make this form **WCAG 2.1 AA compliant** with these accessibility features:
+Make @contactForm accessible with:
 
-**Keyboard Navigation:**
-- Logical tab order through all form elements
-- Skip links to main content and form sections
-- Keyboard shortcuts for common actions
-- Focus indicators clearly visible on all interactive elements
-
-**Screen Reader Support:**
+**Basic Accessibility:**
 - Proper ARIA labels for all form fields
-- Descriptive error messages announced to screen readers
-- Form section headings with proper hierarchy (h1, h2, h3)
-- Progress announcements for multi-step forms
-
-**Visual Accessibility:**
-- Color contrast ratio minimum 4.5:1 for text
-- Don't rely solely on color to convey information
-- Text size minimum 16px for body text
-- Scalable up to 200% without horizontal scrolling
-
-**Motor Accessibility:**
-- Large click targets (minimum 44x44px)
-- Generous spacing between interactive elements
-- No time limits or provide extension options
-- Alternative input methods support
-
-**Cognitive Accessibility:**
-- Clear, simple language in all instructions
-- Consistent navigation and layout patterns
-- Error prevention and clear error recovery
-- Help text and examples for complex fields
-
-**Testing Requirements:**
-- Test with screen readers (NVDA, JAWS, VoiceOver)
-- Verify keyboard-only navigation
-- Check color contrast with automated tools
-- Validate HTML for semantic correctness
+- Keyboard navigation support
+- High contrast color scheme
+- Screen reader compatibility
+- Focus indicators for all interactive elements
 ```
 
-**コンプライアンス固有のプロンプト：**
+**プロンプトの例 – 高度なアクセシビリティ：**
 
 ```
-Ensure this **healthcare form meets HIPAA requirements** with proper data encryption, audit logging, and privacy controls.
+Implement comprehensive accessibility for @applicationForm:
+
+**WCAG 2.1 AA Compliance:**
+- Semantic HTML structure with proper headings
+- ARIA landmarks and roles for navigation
+- Color contrast ratio of at least 4.5:1
+- Keyboard-only navigation support
+- Screen reader announcements for dynamic content
+
+**Form-Specific Accessibility:**
+- Error messages announced to screen readers
+- Field validation with clear error descriptions
+- Progress indicators for multi-step forms
+- Skip navigation links for keyboard users
+- Alternative text for all images and icons
+
+**User Experience:**
+- Clear focus indicators on all interactive elements
+- Logical tab order through form fields
+- Descriptive link text and button labels
+- Help text available for complex fields
+- Timeout warnings for session expiration
+```
+
+**アクセシビリティ固有のプロンプト：**
+
+```
+Add **screen reader support** to this form with proper ARIA labels and announcements
 ```
 
 ```
-Make this **financial form PCI DSS compliant** with secure payment field handling and data protection measures.
+Implement **keyboard navigation** for all form interactions and navigation elements
 ```
 
 ```
-Create a **government form meeting Section 508 standards** with full accessibility and plain language requirements.
+Ensure **color contrast** meets WCAG AA standards for all text and interactive elements
+```
+
+## パフォーマンスの最適化
+
+**用途：** フォームを素早く読み込み、様々な条件下で適切に実行する必要がある場合。
+
+**使用方法：** パフォーマンス要件と最適化戦略を指定します。
+
+**プロンプトの例 – 基本パフォーマンス：**
+
+```
+Optimize @contactForm for performance:
+
+**Loading Optimization:**
+- Lazy load non-critical form sections
+- Minimize initial bundle size
+- Optimize images and assets
+- Enable caching for static resources
+```
+
+**プロンプトの例 – 高度なパフォーマンス：**
+
+```
+Implement comprehensive performance optimization for @applicationForm:
+
+**Loading Performance:**
+- Progressive loading of form sections
+- Optimize images with WebP format
+- Minimize JavaScript bundle size
+- Enable gzip compression for all assets
+
+**Runtime Performance:**
+- Debounce validation calls to reduce API requests
+- Optimize conditional logic execution
+- Cache frequently used data
+- Implement virtual scrolling for long lists
+
+**User Experience:**
+- Show loading indicators for async operations
+- Provide offline capability for form data
+- Auto-save form progress every 30 seconds
+- Optimize form submission with retry logic
+
+**Monitoring:**
+- Track form load times and user interactions
+- Monitor validation performance
+- Measure submission success rates
+- Alert on performance degradation
+```
+
+**パフォーマンス固有のプロンプト：**
+
+```
+Optimize form **loading speed** by implementing progressive loading and asset optimization
+```
+
+```
+Add **auto-save functionality** to prevent data loss during form completion
+```
+
+```
+Implement **offline support** so users can complete forms without internet connection
 ```
 
 ## テストと品質保証
 
-**用途：**&#x200B;フォームの機能、ユーザーエクスペリエンス、技術的なパフォーマンスを検証する必要がある場合。
+**用途：** 信頼性とユーザー満足度を確保するために包括的なテストが必要な場合。
 
-**使用方法：**&#x200B;検証が必要なテストシナリオ、エッジケースおよび品質条件を指定します。
+**使用方法：** テストシナリオ、検証要件および品質指標を指定します。
 
-**プロンプトの例 - 包括的なフォームテスト：**
+**プロンプトの例 – 基本テスト：**
 
 ```
-Create a **comprehensive testing plan** for this application form:
+Add comprehensive testing for @contactForm:
 
 **Functional Testing:**
-- Test all field validations with valid and invalid data
-- Verify conditional logic shows/hides fields correctly
-- Test file upload with various file types and sizes
-- Validate calculation fields update correctly
-- Test form submission with complete and incomplete data
+- Test all form field validations
+- Verify submit functionality works correctly
+- Test error handling and user feedback
+- Validate conditional logic and rules
+```
+
+**プロンプトの例 – 詳細テスト：**
+
+```
+Implement comprehensive testing strategy for @applicationForm:
+
+**Functional Testing:**
+- Unit tests for all validation rules
+- Integration tests for submit actions
+- End-to-end testing for complete user flows
+- Cross-browser compatibility testing
 
 **User Experience Testing:**
-- Test form completion time (target: under 10 minutes)
-- Verify error messages are helpful and actionable
-- Test progress saving and restoration
-- Validate mobile touch interactions
-- Check form accessibility with assistive technologies
+- Usability testing with target user groups
+- Accessibility testing with screen readers
+- Mobile device testing on various screen sizes
+- Performance testing under load conditions
 
-**Edge Case Testing:**
-- Test with extremely long text inputs
-- Verify behavior with special characters and emojis
-- Test with slow internet connections
-- Validate offline functionality if applicable
-- Test browser back/forward button behavior
+**Quality Assurance:**
+- Automated testing for regression prevention
+- Manual testing for edge cases and scenarios
+- Security testing for data protection
+- Compliance testing for regulatory requirements
 
-**Performance Testing:**
-- Measure form load time (target: under 3 seconds)
-- Test with large file uploads
-- Verify memory usage with long form sessions
-- Test concurrent user submissions
-- Validate database performance under load
-
-**Security Testing:**
-- Test input sanitization and XSS prevention
-- Verify CSRF protection is working
-- Test file upload security restrictions
-- Validate data encryption in transit and at rest
-- Check authentication and authorization controls
-
-**Cross-Browser Testing:**
-- Test on Chrome, Firefox, Safari, Edge
-- Verify mobile browsers (iOS Safari, Chrome Mobile)
-- Test on different operating systems
-- Validate older browser fallbacks
-- Check print functionality across browsers
+**Monitoring:**
+- Track form completion rates and abandonment
+- Monitor error rates and user feedback
+- Measure performance metrics and load times
+- Analyze user behavior and interaction patterns
 ```
 
 **テスト固有のプロンプト：**
 
 ```
-Create **automated test scripts** for this form's critical user paths: successful submission, validation errors, and conditional logic.
+Add **automated testing** for all form validations and submit functionality
 ```
 
 ```
-Design a **user acceptance testing plan** with realistic scenarios and success criteria for business stakeholders.
+Implement **user acceptance testing** scenarios for complete form workflows
 ```
 
 ```
-Set up **performance monitoring** to track form completion rates, abandonment points, and submission success rates.
+Set up **performance monitoring** to track form load times and user interactions
 ```
 
-## 高度な機能と統合
+## トラブルシューティング
 
-**用途：** AI 支援、高度なワークフロー、複雑な統合などの高度なフォーム機能が必要な場合。
+Forms Experience Builder の一般的な問題に対するクイックソリューション：
 
-**使用方法：**&#x200B;高度な機能と統合要件を明確に定義します。
+| 問題 | 簡易修正 |
+|-------|-----------|
+| フォームが送信されない | 送信アクションの設定と検証ルールの確認 |
+| 検証エラーが表示されない | フィールド検証設定とエラーメッセージ配置の検証 |
+| モバイルレイアウトの問題 | レスポンシブデザイン設定とフィールドサイズのレビュー |
+| フィールドが表示されない | 条件付きロジックおよび表示ルールの確認 |
+| 読み込み失敗 | ファイル形式の互換性とサイズ制限の検証 |
+| 統合エラー | API エンドポイントと認証資格情報の検証 |
+| パフォーマンスの問題 | フィールド数を最適化し、不要な検証を削除 |
+| アクセシビリティの問題 | フィールドラベル、ARIA 属性、タブ順序の確認 |
 
-**プロンプトの例 - AI 拡張フォーム：**
+**デバッグモードのプロンプト：**
 
 ```
-Add **AI-powered features** to enhance this application form:
+Enable debug mode to identify issues with form submission and field validation
+```
 
-**Smart Auto-Complete:**
-- Use AI to suggest company names as user types
-- Auto-populate address fields from partial input
-- Suggest job titles based on industry selection
-- Provide intelligent form completion suggestions
+**エラー分析プロンプト：**
 
-**Dynamic Question Generation:**
-- Generate follow-up questions based on previous answers
-- Adapt form complexity to user's experience level
-- Show relevant optional fields based on user profile
-- Personalize form sections for different user types
+```
+Analyze form errors: check validation rules, API responses, and user input patterns
+```
 
-**Intelligent Validation:**
-- Use AI to detect potentially incorrect information
-- Suggest corrections for common data entry errors
-- Validate business information against public databases
-- Flag suspicious or inconsistent responses
+## 高度な分析とインサイト
 
-**Content Optimization:**
-- A/B test different form layouts automatically
-- Optimize field order based on completion patterns
-- Adjust form length based on user engagement
-- Personalize help text based on user behavior
+**用途：** フォームのパフォーマンスとユーザーの行動を理解する必要がある場合。
+
+**使用方法：** 必要な分析要件とインサイトを指定します。
+
+**プロンプトの例 – 基本分析：**
+
+```
+Add analytics to @contactForm:
+
+**Basic Metrics:**
+- Form completion rates
+- Field abandonment rates
+- Submit success/failure rates
+- User session duration
+```
+
+**プロンプトの例 – 詳細分析：**
+
+```
+Implement comprehensive analytics for @applicationForm:
+
+**User Behavior Analytics:**
+- Track field completion rates and abandonment
+- Monitor user session duration and patterns
+- Analyze form navigation and user flow
+- Identify bottlenecks and friction points
+
+**Performance Analytics:**
+- Measure form load times and performance
+- Track API response times and failures
+- Monitor validation rule effectiveness
+- Analyze submission success rates
+
+**Business Intelligence:**
+- Generate reports on form effectiveness
+- Track conversion rates and ROI
+- Monitor user satisfaction and feedback
+- Identify opportunities for optimization
 
 **Predictive Analytics:**
-- Predict likelihood of form completion
-- Identify users who might need assistance
-- Suggest optimal times for form completion reminders
-- Analyze drop-off points and suggest improvements
-
-**Natural Language Processing:**
-- Allow voice input for text fields
-- Convert speech to text for accessibility
-- Analyze open-text responses for sentiment
-- Extract structured data from unstructured input
+- Predict form completion likelihood
+- Identify users likely to abandon
+- Recommend form improvements
+- Optimize user experience based on data
 ```
 
-**高度な統合プロンプト：**
+**Analytics 固有のプロンプト：**
 
 ```
-Integrate with **CRM system** to pre-populate known customer data, update records in real-time, and trigger automated follow-up sequences.
+Add **conversion tracking** to measure form completion rates and user behavior
 ```
 
 ```
-Connect to **payment gateway** for secure transaction processing with PCI compliance, fraud detection, and multiple payment methods.
+Implement **A/B testing** to compare different form designs and optimize performance
 ```
 
 ```
-Implement **blockchain verification** for document authenticity, immutable audit trails, and decentralized identity verification.
+Create **analytics dashboard** to monitor form performance and user insights
 ```
 
-## トラブルシューティングと最適化
+## セキュリティとデータ保護
 
-**用途：**&#x200B;フォームのパフォーマンスやユーザーエクスペリエンスの問題、技術的な問題が発生した場合。
+**使用するタイミング：** フォームが機密データを処理し、セキュリティ対策が必要なタイミング。
 
-**使用方法：**&#x200B;具体的な問題と望ましい結果を明確に説明します。
+**使用方法：** セキュリティ要件とデータ保護対策を指定します。
 
-**プロンプトの例 - パフォーマンスの最適化：**
-
-```
-Optimize this form for **better performance and user experience**:
-
-**Current Issues:**
-- Form takes 8+ seconds to load on mobile
-- Users are abandoning at the address section (60% drop-off)
-- File uploads frequently fail or timeout
-- Validation errors are confusing users
-
-**Performance Improvements:**
-- Implement lazy loading for non-critical form sections
-- Optimize images and reduce bundle size
-- Add progressive loading indicators
-- Cache frequently used data (country lists, etc.)
-- Minimize JavaScript execution time
-
-**User Experience Fixes:**
-- Simplify the address section with auto-complete
-- Add inline validation with helpful error messages
-- Implement smart defaults based on user location
-- Add progress saving every 30 seconds
-- Provide clear instructions for each section
-
-**Technical Optimizations:**
-- Implement chunked file uploads with resume capability
-- Add client-side validation before server submission
-- Optimize database queries for faster responses
-- Implement proper error handling and retry logic
-- Add comprehensive logging for debugging
-
-**Monitoring & Analytics:**
-- Set up form analytics to track user behavior
-- Monitor completion rates by section
-- Track error rates and types
-- Measure performance metrics continuously
-- A/B test improvements with real users
-```
-
-**トラブルシューティングのプロンプト：**
+**プロンプトの例 – 基本セキュリティ：**
 
 ```
-**Debug this form submission error:** Users report getting "500 Internal Server Error" when submitting. Check validation logic, server endpoints, and data formatting.
+Add security measures to @contactForm:
+
+**Basic Security:**
+- HTTPS encryption for all data transmission
+- Input validation and sanitization
+- CSRF protection for form submissions
+- Secure session management
 ```
 
+**プロンプトの例 – 高度なセキュリティ：**
+
 ```
-**Fix mobile layout issues:** Form fields are overlapping on iPhone screens and submit button is not visible. Ensure proper responsive design.
+Implement comprehensive security for @applicationForm:
+
+**Data Protection:**
+- End-to-end encryption for sensitive data
+- PII data masking and anonymization
+- Secure file upload with virus scanning
+- Data retention and deletion policies
+
+**Access Control:**
+- Role-based access control for form data
+- Multi-factor authentication for admin access
+- Audit logging for all data access
+- Secure API authentication and authorization
+
+**Compliance:**
+- GDPR compliance for data handling
+- HIPAA compliance for health information
+- PCI DSS compliance for payment data
+- SOC 2 compliance for data security
+
+**Monitoring:**
+- Real-time security monitoring and alerts
+- Intrusion detection and prevention
+- Data breach notification systems
+- Regular security audits and assessments
+```
+
+**セキュリティ固有のプロンプト：**
+
+```
+Implement **data encryption** for sensitive form submissions and user information
 ```
 
 ```
-**Resolve validation conflicts:** Some users can't submit even with valid data. Review validation rules for conflicts and edge cases.
+Add **access control** to restrict form data access based on user roles and permissions
 ```
 
-## 環境固有のベストプラクティス
-
-### Forms Management UI
-
-**用途：**&#x200B;大まかなフォームの作成および管理向け。
-
 ```
-In Forms Management UI, create a new **customer survey template** that can be reused across different departments. Include standard branding, common field types, and configurable sections.
+Set up **security monitoring** to detect and prevent unauthorized access to form data
 ```
 
-### アダプティブフォームエディター
+## コマンドリファレンス
 
-**用途：**&#x200B;フォームの設定や複雑なルールの作成について詳しく説明します。
-
-```
-In the Adaptive Forms Editor, configure **advanced business rules** for this loan application: calculate debt-to-income ratio, determine eligibility, and show appropriate next steps.
-```
-
-### ユニバーサルエディター
-
-**用途：**&#x200B;ビジュアルエディット機能を備えた Edge Delivery Services フォーム向け。
-
-```
-In Universal Editor, create a **responsive contact form** for the company website. Ensure it matches the site design and integrates with the existing content management workflow.
-```
-
-## コマンドリファレンスクイックガイド
+### 基本コマンド
 
 | コマンド | ベストユースケース | 例 |
 |---------|---------------|---------|
@@ -862,81 +982,81 @@ In Universal Editor, create a **responsive contact form** for the company websit
 | `/configure-submit` | データ処理の設定 | `/configure-submit to CRM and send confirmation email` |
 | `/help` | ヘルプ | `/help how to implement multi-step validation?` |
 
-## サポートされるコンポーネントのプロパティリファレンス
+### フィールド参照
 
-### ユニバーサルプロパティ（すべてのコンポーネント）
+`@fieldName` 構文を使用して、プロンプト内の既存のフィールドを参照します。
 
-- **Type**：コンポーネントタイプ（テキスト、メール、数値、電話番号、日付、チェックボックス、ラジオ、ドロップダウン、ファイルなど）
+- `@email` – 参照メールフィールド
+- `@firstName` – 参照の名フィールド
+- `@maritalStatus` – 参照の配偶者の有無フィールド
+
+### コンポーネントタイプ
+
+**入力コンポーネント：**
+
+- `text`, `email`, `number`, `tel`, `date`, `checkbox`, `radio`, `dropdown`, `file`, `textarea`
+
+**コンテナコンポーネント：**
+
+- `fieldset`、`panel`、`repeatable`、`wizard`
+
+### コンポーネントのプロパティ
+
+**ユニバーサルプロパティ（すべてのコンポーネント）:**
+
+- **タイプ**：コンポーネントの種類
 - **Name**：フォーム送信用のフィールド ID
 - **Labe**：フィールドのテキストを表示します
 - **Description**：フィールドのヘルプテキスト
 - **Visible**：最初の表示のブール値
 - **Mandatory**：必須フィールドのブール値
 
-### 入力フィールドプロパティ
+**入力フィールドのプロパティ：**
 
 - **Value**：デフォルト/初期値
 - **Placeholder**：入力フィールドのヒントテキスト
 - **Min**：最小値（数値/日付）
 - **Max**：最大値（数値/日付）
 
-### ファイルアップロードプロパティ
+**ファイル アップロードのプロパティ：**
 
 - **Accept**：ファイル形式（.pdf、.doc、.docx、.jpg、.png など）
 - **Multiple**：複数のファイルを選択する場合はブール値
 
-### 選択コントロールプロパティ
+**選択コントロール プロパティ：**
 
 - **Options**：ドロップダウンの選択肢（コンマ区切りリスト）
 - **Checked**：チェックボックス/ラジオのデフォルト選択
 
-### コンテナプロパティ
+**コンテナプロパティ：**
 
 - **Fieldset**：グループ化に関連するフィールド
 - **Repeatable**：繰り返し可能なセクションのブール値
 
-### 詳細プロパティ
+**詳細プロパティ：**
 
 - **Visible Expression**：条件付き表示の数式（=数式）
 - **Value Expression**：計算値の数式（=数式）
 
-## ベストプラクティスのまとめ
+### 統合コマンド
 
-### 技術的ガイドライン
+**送信アクション：**
 
-- **公式の AEM Forms コンポーネント仕様**&#x200B;でサポートされているプロパティのみを使用します。
-- フィールド参照（@フィールド名）や式（=数式）には、**正しい構文を使用します**。
-- 変更のたびに&#x200B;**段階的にテスト**&#x200B;を行い、問題を早期に発見してください。
-- **アクセシビリティへの対応**&#x200B;は、後回しにせず最初から計画します。
-- すべての設計判断において&#x200B;**モバイルユーザーを考慮します**
-- 今後のメンテナンスおよびチームの共同作業に備えた **複雑なルールの文書化**
+- メール通知
+- REST API 送信
+- クラウドストレージ （Azure、SharePoint）
+- ワークフローの自動処理（Power Automate、Workfront Fusion）
+- マーケティングプラットフォーム（Marketo）
+- CRM 統合
 
-### 戦略的アプローチ
+### プロンプト構文ガイドライン
 
-- **ユーザニーズから始める** – 技術的な機能だけでなく、ユーザーが達成する必要があるものに焦点を当てます
-- **完了に向けたデザイン** - フォームデザインでのフリクションと認知的負荷を最小限に抑えます
-- 早期の&#x200B;**データフローの計画** – データの処理、保存および使用方法を検討します
-- **規模に合わせた構築** – 予想されるユーザー数とデータの増加に対応できるフォームを設計します
-- **プログレッシブ拡張の実装** – 基本機能が機能することを確認してから、高度な機能を追加します
+- **フィールド参照**：既存のフィールドに `@fieldName` を使用します
+- **コマンド**：特定のアクションに `/command` を使用する
+- **自然言語**：要件を明確かつ具体的に記述する
 
-### 回避すべき一般的な落とし穴
+### 検証チェックリスト
 
-- **過度に複雑な初期リクエスト** – 大規模なタスクをより小さく管理しやすい手順に分割します
-- AEM Forms 仕様で&#x200B;**サポートされていないプロパティの使用**
-- 開発プロセスの後半まで&#x200B;**モバイルエクスペリエンスを無視**
-- 実際のシナリオとエッジケースでの&#x200B;**ユーザーテストをスキップ**
-- 明確で具体的な指示を出さずに **AI がコンテキストを理解していると仮定**
-- **アクセシビリティとコンプライアンス要件を忘れる**
-- 次の手順に進む前に&#x200B;**変更を検証しない**
+包括的なベストプラクティスと検証のガイドラインについては、[Forms Experience Builder 入門ガイド ](forms-ai-assistant-getting-started.md#best-practices) を参照してください。
 
-### 品質保証アプローチ
-
-1. **頻繁にプレビュー** - 重要な変更が行われるたびに、プレビューモードで作業を確認する
-2. **テストエッジケース** - 異常な入力、長いテキスト、特殊文字を試す
-3. **デバイス間での検証** - モバイル、タブレット、デスクトップでテストする
-4. **アクセシビリティの確認** - キーボードナビゲーションとスクリーンリーダーの互換性の確認
-5. **パフォーマンステスト** - フォームの迅速な読み込みとスムーズな応答を確認する
-6. **ユーザー受け入れテスト** - デプロイメント前に、実際のユーザーにフォームをテストしてもらう
-
-
-*このプロンプトライブラリは、ユーザーフィードバックと新しい AI アシスタント機能に基づいて継続的に更新されます。最新の機能と例については、[AEM Forms のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=ja)を参照してください。*
+*このプロンプトライブラリは、ユーザーからのフィードバックと新しいForms Experience Builder 機能に基づいて、継続的に更新されています。 最新の機能と例については、[AEM Forms のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=ja)を参照してください。*

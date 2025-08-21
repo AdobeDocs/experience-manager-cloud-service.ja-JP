@@ -3,22 +3,23 @@ title: AEM Forms 用 AI アシスタント（Forms Experience Builder）
 description: フォームフラグメントを使用した強力なフォームの迅速な作成
 feature: Edge Delivery Services
 hide: true
+index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: a8d64082-a23f-4919-ad66-042faad77d29
-source-git-commit: ab071b9159f3d4db275313080d7c14a46096c4de
-workflow-type: ht
-source-wordcount: '1141'
-ht-degree: 100%
+source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 97%
 
 ---
 
-# AEM Forms 用 AI アシスタント（Forms Experience Builder）
+
+# AEM Forms用 AI アシスタントの基本を学ぶ（Forms Experience Builder）
 
 >[!NOTE]
 >
 >
-> AEM Forms 用 AI アシスタント（Forms Experience Builder）の機能は、**早期導入プログラム**&#x200B;で利用できます。詳しくは、仕事用アドレスから aem-forms-ea@adobe.com にメールを送信して、機能の利用申請を行ってください。
+> AEM Forms 用 AI アシスタント（Forms Experience Builder）の機能は、**早期導入プログラム**&#x200B;で利用できます。興味がある場合は、メールアドレスから mailto:aem-forms-ea@adobe.comに簡単なメールを送信して、機能へのアクセスをリクエストします。
 
 >[!IMPORTANT]
 >
