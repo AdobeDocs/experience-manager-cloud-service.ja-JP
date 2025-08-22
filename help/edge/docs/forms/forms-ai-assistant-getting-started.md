@@ -6,13 +6,13 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: da429952-ccc0-4579-a243-8bddeb73a0fb
-source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
+source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1737'
 ht-degree: 15%
 
 ---
+
 
 # Forms Experience Builder の概要
 
@@ -97,11 +97,10 @@ Forms Experience Builder を使用する前に、お使いの環境で [AEM Form
 * **ヘルプを表示**:「`/help`」と入力した後、質問を入力します
 * **反復**：最適な結果を得るために、一度に 1 つの変更を行います
 
-## 主な機能
 
-### Formsを作成する 2 つの方法
+## フォームの作成を開始する方法
 
-#### &#x200B;1. ゼロから作成する
+### 1.自然言語プロンプトから開始する
 
 フォーム要件を自然言語で記述すると、Forms Experience Builder によって完全なフォーム構造が生成されます。
 
@@ -111,17 +110,17 @@ Forms Experience Builder を使用する前に、お使いの環境で [AEM Form
 * 「評価、コメント、製品カテゴリを含む顧客フィードバックフォームの作成」
 * 「支払い処理に関する会議には複数手順の登録フォームが必要です」
 
-#### 2.読み込みと変換
+### 2.読み込みと変換
 
 既存のフォームとドキュメントを最新のインタラクティブなエクスペリエンスに変換する：
 
 **サポートされているソース：**
 
-* **PDF forms**：検証付きのインタラクティブなデジタルフォーム→静的 PDF をアップロードします
-* **スクリーンショット/画像**：紙のフォームの写真→機能するデジタル版
-* **HTML Forms**：高度な機能を備えた Enhanced AEM Forms→の基本的な web フォーム
-* **XFA Forms**：従来のAdobe フォーム→最新のレスポンシブフォーム
-* **URL**:UX が向上した既存の web フォーム→ネイティブAEM Forms
+* **PDF forms**：静的 PDF をアップロードして、検証機能を備えたインタラクティブデジタルフォームに変換します。
+* **スクリーンショットまたは画像**：紙のフォームの写真をアップロードして、機能のあるデジタルバージョンを生成します
+* **HTML Forms**：高度な機能を備えた Enhanced AEM Formsに対して、基本的な Web フォームをインポートして変換します
+* **XFA Forms**：従来の XFA ベースのフォームを最新のレスポンシブフォームに変換する
+* **URL**:UX を向上させて、既存の web フォームをネイティブのAEM Formsに変換します
 
 **読み込み方法：**
 
@@ -482,4 +481,4 @@ Forms Experience Builder では、AEM Formsの機能についても学習でき�
 
 **サポートが必要ですか？** 入力 `/help` に続いて具体的な質問を入力するか、システム管理者にお問い合わせください。
 
-その他のサポートについては、メインの [Forms Experience Builder プロンプトライブラリを参照するか ](/help/edge/docs/forms/ai-assistant-prompt-library.md) システム管理者に技術的なサポートを依頼してください。
+その他のサポートについては、メインの [Forms Experience Builder プロンプトライブラリを参照するか ](ai-assistant-prompt-library.md) システム管理者に技術的なサポートを依頼してください。

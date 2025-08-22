@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: eaa3e3cccdffd7d3837fbe611b8b8a7e99f7d075
+source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
 workflow-type: tm+mt
-source-wordcount: '6520'
+source-wordcount: '6537'
 ht-degree: 97%
 
 ---
@@ -1201,11 +1201,14 @@ ht-degree: 97%
    + [AEM as a Cloud Service の生成 AI](/help/generative-ai/generative-ai-in-aem.md)
    + [バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)
    + [バリエーションを生成](/help/generative-ai/generate-variations.md)
-   + [AEMの AI アシスタント – 設定](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
-   + [AEMの AI アシスタント（Beta）](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [AEM Formsの AI アシスタント（Forms Experience Builder）（早期導入）](/help/edge/docs/forms/forms-ai-assistant.md)
-   + [AEM Formsの AI アシスタント – プロンプトライブラリ](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-   + [AEM Formsの AI アシスタント – はじめに](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
+   + [アシスタント（ベータ版限定）](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [AEMでの AI アシスタントの設定](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
+   + [AEM Forms 用 AI アシスタント（Forms Experience Builder）](/help/edge/docs/forms/forms-ai-assistant-overview.md)
+   + [AEM Forms用 AI アシスタントの概要](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [AEM Forms用 AI アシスタントの基本を学ぶ（Forms Experience Builder）](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
+   + [AEM Forms AI アシスタント – プロンプトライブラリ](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+   + [Forms Experience Builder - ベストプラクティス](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
+   + [Forms Experience Builder - トラブルシューティングガイド](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + 実装 {#implementing}
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
    + Cloud Manager の使用 {#using-cloud-manager}
