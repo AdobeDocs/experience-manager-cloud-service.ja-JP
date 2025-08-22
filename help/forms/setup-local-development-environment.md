@@ -380,7 +380,7 @@ SDK を新しいバージョンにアップグレードするには、ローカ�
 
 SDK をアップグレードすると、新しいリポジトリー（[AEM プロジェクトの設定](#forms-cloud-service-local-development-environment)）を含む、まったく新しいオーサーインスタンスとパブリッシュインスタンスが効果的に作成され、以前の SDK のリポジトリーに対する変更はすべて失われます。SDK のアップグレード間でコンテンツを継続的に保持する方法については、「[AEM SDK のアップグレード時にコンテンツの損失を回避する方法](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ja#optional-local-aem-runtime-set-up-tasks)」を参照してください。
 
-<!--When you update any  Forms-specifc configuration, create overlays, develop custom Adaptive Form components, or develop and test any custom code in AEM project for the development tasks related to local development instance, use the AEM project cloned from the Cloud Manager Git repository to [deploy the custom code and other changes to your [!DNL AEM Forms] as a Cloud Service's production or non-production environment](https://video.tv.adobe.com/v/30191?quality=9).
+<!--When you update any  Forms-specifc configuration, create overlays, develop custom Adaptive Form components, or develop and test any custom code in AEM project for the development tasks related to local development instance, use the AEM project cloned from the Cloud Manager Git repository to [deploy the custom code and other changes to your [!DNL AEM Forms] as a Cloud Service's production or non-production environment](https://video.tv.adobe.com/v/34668?quality=9&captions=jpn).
 
 ## Upgrade your local development environment {#update-local-setup}
 
