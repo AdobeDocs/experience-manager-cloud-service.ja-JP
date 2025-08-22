@@ -57,7 +57,7 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 **検索とリスター** ポータルコンポーネントを Sites ページに追加するには、次の手順を実行します。
 
 1. AEM Sites ページを&#x200B;**編集**&#x200B;モードで開きます。
-1. **[!UICONTROL ページ情報]**／**[!UICONTROL テンプレートを編集]**に移動します。
+1. **[!UICONTROL ページ情報]**／**[!UICONTROL テンプレートを編集]**&#x200B;に移動します。
    ![テンプレートポリシーの編集](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. **[!UICONTROL ポリシー]** をクリックし、**[!UICONTROL AEM アーキタイププロジェクト名]** - Formsとコミュニケーションポータル **[の下にある ] 検索とリスター** チェックボックスを選択します。

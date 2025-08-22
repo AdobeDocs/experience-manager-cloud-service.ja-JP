@@ -13,7 +13,7 @@ ht-degree: 99%
 
 # AEM Forms 用のローカル開発環境を設定 {#overview}
 
-[!DNL  Adobe Experience Manager Forms] as a [!DNL  Cloud Service] 環境を設定する場合は、開発環境、ステージング環境および実稼動環境をクラウドに設定します。また、ローカル開発環境を設定および構成することもできます。
+[!DNL &#x200B; Adobe Experience Manager Forms] as a [!DNL &#x200B; Cloud Service] 環境を設定する場合は、開発環境、ステージング環境および実稼動環境をクラウドに設定します。また、ローカル開発環境を設定および構成することもできます。
 
 ローカル開発環境を使用すると、クラウド開発環境にログインせずに次の操作を実行できます。
 
@@ -272,7 +272,7 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
 >[!NOTE]
 >
 > AEM Forms as a Cloud Service で Microsoft® Dynamics 365 および Salesforce フォームデータモデル（FDM）を取得して使用するには、AEM アーキタイプバージョン 30 以降に基づくプロジェクトを設定します。
-> > Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
+> &#x200B;> Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
 
 プロジェクトを設定するには、以下を実行します。
 

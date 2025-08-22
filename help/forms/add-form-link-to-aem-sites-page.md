@@ -28,7 +28,7 @@ ht-degree: 97%
 **リンク**&#x200B;ポータルコンポーネントを Sites ページに追加するには、次の手順を実行します。
 
 1. AEM Sites ページを&#x200B;**編集**&#x200B;モードで開きます。
-1. **[!UICONTROL ページ情報]**／**[!UICONTROL テンプレートを編集]**に移動します。
+1. **[!UICONTROL ページ情報]**／**[!UICONTROL テンプレートを編集]**&#x200B;に移動します。
    ![テンプレートポリシーの編集](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. 「**[!UICONTROL ポリシー]**」をクリックし、**[AEM アーキタイププロジェクト名] - フォームおよび通信ポータル**&#x200B;の下にある「**[!UICONTROL リンク]**」チェックボックスをオンにします。

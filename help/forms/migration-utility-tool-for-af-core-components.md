@@ -136,7 +136,7 @@ AEM環境でAEM Modernize Tools を有効にして使用するには、基盤コ
 
    ここでは、「**ターゲットにコピー** オプションが選択されています。 「**ターゲットにコピー**」オプションが選択されている場合、「**[!UICONTROL Sourceのパス]**」および「**[!UICONTROL ターゲットパス]**」オプションが表示されます。
 
-1. `source folder`1}Source Path} に **[!UICONTROL 名」を入力します。]**
+1. `source folder`1&rbrace;Source Path&rbrace; に **[!UICONTROL 名」を入力します。]**
 1. `target folder` ターゲットパス **[!UICONTROL で]** 名を指定します。
 1. 「**[!UICONTROL 次へ]**」を選択します。
 1. **[!UICONTROL Formsを追加]** をクリックします。 `source folder` 内のすべてのフォームが画面に表示されます。
