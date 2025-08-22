@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: vre のサービス拡張機能、呼び出しサービスを使用したドロップダウンオプションの入力、呼び出しサービスの出力を使用した繰り返し可能なパネルの設定、呼び出しサービスの出力を使用したパネルの設定、呼び出しサービスの出力パラメーターを使用した他のフィールドの検証。
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 3%
+source-wordcount: '1568'
+ht-degree: 2%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 3%
 
 * データソースが設定されていることを確認します。 データソースの設定手順については、[ ここをクリック ](/help/forms/configure-data-sources.md) してください。
 * 設定済みのデータソースを使用して、フォームデータモデルを作成します。 フォームデータモデルの作成に関するガイダンスについては [ ここをクリック ](/help/forms/create-form-data-models.md) してください。
-* お使いの環境でコアコンポーネントが有効になっていることを確認します。 お使いの環境でコアコンポーネントを有効にする方法について詳しくは、[こちらをクリック](/help/forms/enable-adaptive-forms-core-components.md)してください。
+* お使いの環境でコアコンポーネントが有効になっていることを確認します。 お使いの AEM Cloud Service 環境でアダプティブForms コアコンポーネントを有効にするには、最新のツールをインストールします。
 
 ## 様々なユースケースを通じたサービスの呼び出しの調査
 

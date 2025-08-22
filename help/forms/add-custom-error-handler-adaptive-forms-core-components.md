@@ -7,10 +7,10 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 role: User, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
 workflow-type: tm+mt
-source-wordcount: '2330'
-ht-degree: 98%
+source-wordcount: '2335'
+ht-degree: 97%
 
 ---
 
@@ -171,7 +171,7 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 
 ルールエディターの呼び出しサービスを使用してエラーハンドラーを追加する前に、次の手順を実行します。
 
-* [AEM Cloud Service 環境でのアダプティブフォームコアコンポーネントの有効化](enable-adaptive-forms-core-components.md).
+* お使いの AEM Cloud Service 環境でアダプティブForms コアコンポーネントを有効にするには、最新のツールをインストールします。
 
 * [カスタム関数の作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=ja#write-rules)について学ぶ
 

@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 20%
+source-wordcount: '719'
+ht-degree: 19%
 
 ---
 
@@ -33,7 +33,7 @@ XFA フォームテンプレートまたは XDP ファイルに基づいてフ�
 
 XFA フォームテンプレートまたは XDP ファイルを使用してコアコンポーネントに基づくアダプティブフォームを作成するには、以下が必要です。
 
-* [環境でのアダプティブフォームコアコンポーネントの有効化](enable-adaptive-forms-core-components.md)。
+* お使いの AEM Cloud Service 環境でアダプティブForms コアコンポーネントを有効にするには、最新のツールをインストールします。
 * 次の事柄に関する知識を身につけておくことをお勧めします。
    * アダプティブフォームの作成
    * XFA（XML Forms Architecture）

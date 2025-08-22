@@ -2,13 +2,13 @@
 title: コアコンポーネントに基づくアダプティブFormsのレイアウト機能には何がありますか？
 description: 各種デバイスごとのアダプティブフォームのレイアウトと外観はレイアウト設定で管理できます。各種レイアウトとレイアウトの適用方法について説明します。
 feature: Adaptive Forms, Core Components
-keywords: コアコンポーネントに基づくアダプティブフォームのレイアウト、フォームの様々なレイアウト、動的フォームレイアウト AEM、AEM Cloud Service フォームレイアウト、AEM コアコンポーネントのフォームレイアウトタイプ、アダプティブフォームのレイアウト
+keywords: コアコンポーネントに基づくアダプティブフォームのレイアウト、フォームの各種レイアウト、動的フォームレイアウトのAEM、AEM Cloud Service のフォームレイアウト、AEM コアコンポーネントのフォームレイアウトタイプ、アダプティブフォームのレイアウト
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '2104'
-ht-degree: 4%
+source-wordcount: '2106'
+ht-degree: 22%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 4%
 
 ## 前提条件
 
-レイアウトの様々な機能を調べる前に、お使いの環境でコアコンポーネントが有効になっていることを確認します。 お使いの環境でコアコンポーネントを有効にする方法について詳しくは、[ ここをクリック ](/help/forms/enable-adaptive-forms-core-components.md) してください。
+レイアウトの様々な機能を調べる前に、お使いの環境でコアコンポーネントが有効になっていることを確認します。 お使いの AEM Cloud Service 環境でアダプティブForms コアコンポーネントを有効にするには、最新のツールをインストールします。
 
 ## アダプティブ Formsのレイアウトタイプ
 
@@ -40,25 +40,25 @@ ht-degree: 4%
 
 >[!BEGINTABS]
 
->[!TAB  パネルレイアウト ]
+>[!TAB パネルレイアウト]
 
-パネルレイアウトは、関連するフィールドを整理して、対応するコンテンツを簡単に移動および検索するのに役立ちます。 パネルレイアウトを使用すると、アダプティブフォーム内の個別のパネル、セクションまたはパネル内にフォームコンポーネントを配置できます。
+パネルレイアウトは、関連するフィールドを整理して、対応するコンテンツを簡単に移動および検索するのに役立ちます。パネルレイアウトを使用すると、アダプティブフォーム内の個別のパネル、セクションまたはパネル内にフォームコンポーネントを配置できます。
 
-![ パネルレイアウト ](/help/forms/assets/panel-layout.png)
+![パネルレイアウト](/help/forms/assets/panel-layout.png)
 
 パネルレイアウト
 
-[ パネルコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) を使用して、パネルレイアウトをフォームに追加できます。 パネルコンポーネントの様々なプロパティを設定する方法について詳しくは、[ パネルコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) の記事を参照してください。
+[パネルコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)を使用して、フォームにパネルレイアウトをフォームに追加できます。パネルコンポーネントの様々なプロパティを設定する方法について詳しくは、[パネルコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)の記事を参照してください。
 
->[!TAB  ウィザードのレイアウト ]
+>[!TAB ウィザードレイアウト]
 
-ウィザードレイアウトは、複雑なフォームを明確な手順に分割してシンプル化するのに役立ちます。 各手順はプロセスの異なる部分を表し、ユーザーは多くの場合、「次へ **ボタンと** 前へ **ボタンを使用して手順を順番に移動し** す。 ウィザードレイアウトを使用すると、複数のセクションや手順を含むフォームを作成できます。
+ウィザードレイアウトは、複雑なフォームを明確な手順に分割して簡素化するのに役立ちます。各手順はプロセスの異なる部分を表し、ユーザーは多くの場合、「次へ **ボタンと** 前へ **ボタンを使用して手順を順番に移動し** す。 ウィザードレイアウトを使用して、複数のセクションや手順を含むフォームを作成できます。
 
-![ ウィザードのレイアウト ](/help/forms/assets/wizard-layout-compare.gif)
+![ウィザードレイアウト](/help/forms/assets/wizard-layout-compare.gif)
 
-ウィザード レイアウト
+ウィザードレイアウト
 
-[ ウィザードコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) を使用して、フォームにウィザードレイアウトを追加できます。 ウィザードコンポーネントの様々なプロパティを設定する方法について詳しくは、[ ウィザードコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) の記事を参照してください。
+[ウィザードコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)を使用して、フォームにウィザードレイアウトを追加できます。ウィザードコンポーネントの様々なプロパティを設定する方法について詳しくは、[ウィザードコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)の記事を参照してください。
 
 >[!TAB  垂直タブのレイアウト ]
 
@@ -80,18 +80,18 @@ ht-degree: 4%
 
 水平タブレイアウト
 
-[ 水平タブコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) を使用して、フォームに水平タブレイアウトを追加できます。 水平タブコンポーネントの様々なプロパティを設定する方法について詳しくは、[ 水平タブコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) の記事を参照してください。
+[ 水平タブコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) を使用して、フォームに水平タブレイアウトを追加できます。 水平タブコンポーネントの様々なプロパティを設定する方法について詳しくは、[ 水平タブコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) の記事を参照してください。
 
 
->[!TAB  アコーディオンレイアウト ]
+>[!TAB アコーディオンレイアウト]
 
-アコーディオンレイアウトでは、アダプティブフォーム内の折りたたみ可能なセクションまたはパネルにコンテンツが表示されます。 セクションを展開すると、内にコンテンツが表示されますが、その他のセクションは折りたたまれたままです。 大量の情報をコンパクトに表示する場合に最適です。
+アコーディオンレイアウトでは、アダプティブフォーム内の折りたたみが可能なセクションまたはパネルにコンテンツが表示されます。セクションを展開すると、そのセクション内のコンテンツが表示されますが、他のセクションは折りたたまれたままになります。このレイアウトは、大量の情報をコンパクトなフォームで表示する場合に最適です。
 
-![ アコーディオンレイアウト ](/help/forms/assets/accordion-layout-compare.gif)
+![アコーディオンレイアウト](/help/forms/assets/accordion-layout-compare.gif)
 
 アコーディオンレイアウト
 
-[ アコーディオンコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) を使用して、フォームにアコーディオンレイアウトを追加できます。 アコーディオンコンポーネントの様々なプロパティを設定する方法について詳しくは、[ アコーディオンコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) の記事を参照してください。
+[アコーディオンコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)を使用して、フォームにアコーディオンレイアウトを追加できます。アコーディオンコンポーネントの様々なプロパティを設定する方法について詳しくは、[アコーディオンコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)の記事を参照してください。
 
 >[!ENDTABS]
 
@@ -101,13 +101,13 @@ ht-degree: 4%
 
 ユーザーエクスペリエンスとフォームの機能を最適化するには、適切なアダプティブフォームレイアウトを選択することが重要です。 この表を使用すると、使用可能な様々なレイアウトオプションを理解するのに役立ち、特定のニーズとユースケースに基づいて最も適したレイアウトを選択する際にガイドになります。
 
-| 機能 | パネルレイアウト | ウィザード レイアウト | 上部/垂直タブレイアウトのタブ | 左側のタブ/水平タブのレイアウト | アコーディオンレイアウト |
+| 機能 | パネルレイアウト | ウィザードレイアウト | 上部/垂直タブレイアウトのタブ | 左側のタブ/水平タブのレイアウト | アコーディオンレイアウト |
 |--------------------------|-----------------------------------------------------|----------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------|--------|
-| **目的** | 関連するコンテンツを個別のセクションにグループ化 | 複数の手順から成るプロセスまたはフォームのガイド | 同じページ上のセクション/ビューを切り替えることができます | 上部のタブと同様ですが、左側に垂直に配置されます | コンテンツを折りたたみ可能なセクションに整理します |
-| **構造** | 個別セクション | 順次ステップ/ページ | 上部の水平タブ | 左側の垂直タブ | 折りたたみ可能なパネル/セクション |
-| **ナビゲーション** | パネルヘッダーをクリックして移動します |  – 進む：「次へ」ボタン <br> – 戻る：「戻る」ボタン <br>- オプションのスキップ手順 | タブをクリックしてセクションを切り替える | タブをクリックしてセクションを切り替える | ヘッダーをクリックしてセクションを展開/折りたたむ |
-| **ユーザーエクスペリエンス** | 管理しやすい方法で大量のコンテンツを整理する | ステップバイステップのガイダンス、負担の軽減 | ビュー間の明確でアクセス可能な切り替え | 垂直方向のスペースを効率的に使用し、常にタブを表示 | セクションを展開/折りたたんだ状態のコンパクト ビュー |
-| **ユースケース** | セクションが分類された複雑なフォーム | セットアッププロセス、複雑なフォーム | 設定またはコンテンツカテゴリの整理 | ダッシュボード、複雑なデータビュー | FAQ、設定メニュー、詳細なコンテンツセクション |
+| **目的** | 関連するコンテンツを個別のセクションにグループ化 | 複数の手順で構成されるプロセスやフォームを通じてユーザーに説明 | 同じページ上のセクション/ビューを切り替えることができます | 上部のタブと同様ですが、左側に垂直に配置されます | コンテンツを折りたたみ可能なセクションに整理 |
+| **構造** | 個別のセクション | 順次手順／ページ | 上部の水平タブ | 左側の垂直タブ | 折りたたみ可能なパネル／セクション |
+| **ナビゲーション** | パネルヘッダーをクリックして移動 | - 進む：「次へ」ボタン<br> - 戻る：「戻る」ボタン<br> - オプションのスキップ手順 | タブをクリックしてセクションを切り替える | タブをクリックしてセクションを切り替える | ヘッダーをクリックしてセクションを展開／折りたたむ |
+| **ユーザーエクスペリエンス** | 管理しやすい方法で大量のコンテンツを整理 | ステップバイステップのガイダンスで負担を軽減 | ビュー間の明確でアクセス可能な切り替え | 垂直方向のスペースを効率的に使用し、常にタブを表示 | セクションを展開／折りたたんだ状態のコンパクトビュー |
+| **ユースケース** | セクションが分類された複雑なフォーム | 設定プロセス、複雑なフォーム | 設定またはコンテンツカテゴリの整理 | ダッシュボード、複雑なデータビュー | よくある質問、設定メニュー、詳細なコンテンツセクション |
 
 
 ## レイアウトを挿入し、フォームコンポーネントを追加するにはどうすればよいですか？
@@ -116,7 +116,7 @@ ht-degree: 4%
 
 ![ レイアウトおよびフォームコンポーネントを追加するためのワークフロー ](/help/forms/assets/workflow-to-add-component-to-a-layout.png)
 
-「アダプティブFormsのレイアウトタイプ **&#x200B;**&#x200B;の節に示されている [IT リクエストフォーム ](#adaptive-forms-layout-types) について考えてみます。 このフォームは、ネットワークまたはラップトップに関連する技術的な問題を抱えている従業員から情報を収集します。 次の 3 つのパネルがあります。
+「アダプティブFormsのレイアウトタイプ **** の節に示されている [IT リクエストフォーム ](#adaptive-forms-layout-types) について考えてみます。 このフォームは、ネットワークまたはラップトップに関連する技術的な問題を抱えている従業員から情報を収集します。 次の 3 つのパネルがあります。
 
 * **従業員の詳細**：パネルには、従業員に関する情報が収集され、名前、メール ID、部門というラベルの付いた 3 つのテキストボックスが含まれています。
 
@@ -126,7 +126,7 @@ ht-degree: 4%
 
 レイアウトを挿入し、それにコンポーネントを追加する手順を順を追って説明します。 この例では、水平タブレイアウトをフォームに挿入します。
 
-### 1. レイアウトコンポーネントをフォームに挿入する
+### &#x200B;1. レイアウトコンポーネントをフォームに挿入する
 
 1. [!DNL Experience Manager Forms] インスタンスにログインします。
 1. 左上隅の「**[!UICONTROL Adobe Experience Manager]**」/「**[!UICONTROL Forms]**」/「**[!UICONTROL Formsとドキュメント]** を選択します。
@@ -139,11 +139,11 @@ ht-degree: 4%
 1. フォームエディターでレイアウトを追加できるセクションを見つけます。
 
    ![ フォームエディター ](/help/forms/assets/form-editor.png)
-1. **追加** アイコンをクリックします。 アイコンは、新しいコンポーネントを追加するオプションを示すプラス記号（+）です。
+1. **追加**&#x200B;アイコンをクリックします。アイコンはプラス記号（+）で、新しいコンポーネントを追加するオプションを示します。
 
    ![ レイアウトの挿入 ](/help/forms/assets/insert-layout-add-icon.png)
 
-   **追加** アイコンをクリックすると、**新規コンポーネントの挿入** ダイアログボックスが表示され、挿入する様々なコンポーネントが表示されます。
+   **追加**&#x200B;アイコンをクリックすると、**新規コンポーネントを挿入**&#x200B;ダイアログボックスが表示され、挿入する様々なコンポーネントが表示されます。
 
    >[!NOTE]
    >
@@ -168,7 +168,7 @@ ht-degree: 4%
 
 レイアウトコンポーネントをフォームに追加したら、要件に従ってパネルの数を変更します。
 
-### 2. レイアウトへのパネルの追加
+### &#x200B;2. レイアウトへのパネルの追加
 
 水平タブコンポーネントに新しいパネルを追加します。
 
@@ -216,17 +216,17 @@ ht-degree: 4%
 
 同様に、他の 2 つのパネルのタイトルを非表示にすることもできます。 完了したら、フォームコンポーネントを各パネルに追加できます。
 
-### 3. パネルへのフォームコンポーネントの追加
+### &#x200B;3. パネルへのフォームコンポーネントの追加
 
 <!-- You can employ one of the following method to add form components to the panel:
 * [Add components to a layout's panel using the Add icon](#add-components-to-a-layouts-panel-using-the-add-icon)
 * [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel) -->
 
 1. パネル内で、コンポーネントを追加できるセクションを見つけます。
-1. **追加** アイコンをクリックします。 アイコンは、新しいコンポーネントを追加するオプションを示すプラス記号（+）です。
+1. **追加**アイコンをクリックします。アイコンはプラス記号（+）で、新しいコンポーネントを追加するオプションを示します。
    ![ レイアウトの挿入 ](/help/forms/assets/tabs-on-top-add-component.png)
 
-   **追加** アイコンをクリックすると、**新規コンポーネントの挿入** ダイアログボックスが表示され、挿入する様々なコンポーネントが表示されます。
+   **追加**&#x200B;アイコンをクリックすると、**新規コンポーネントを挿入**&#x200B;ダイアログボックスが表示され、挿入する様々なコンポーネントが表示されます。
 
    ![ 新規コンポーネントを挿入ダイアログボックス ](/help/forms/assets/insert-new-component.png)
 

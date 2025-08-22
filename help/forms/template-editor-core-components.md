@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: e9c595d0afae5c29adf2842bfb2ee28a046b804c
 workflow-type: tm+mt
-source-wordcount: '1962'
-ht-degree: 100%
+source-wordcount: '1951'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## 前提条件
 
-**お使いの環境でのアダプティブフォームコアコンポーネントの有効化**：アダプティブフォームコアコンポーネントは、プログラムを作成した時点でお使いの環境で有効になります。[AEM アーキタイプ 39 以前](https://github.com/adobe/aem-project-archetype)の Forms as a Cloud Service 環境をご利用の場合は、[ご利用の環境でアダプティブフォームコアコンポーネントを有効にします](enable-adaptive-forms-core-components.md)。
+**お使いの環境でアダプティブFormsコアコンポーネントを有効にする**：プログラムを作成すると、アダプティブFormsコアコンポーネントはお使いの環境で既に有効になっています。AEM Cloud Service 環境でアダプティブFormsコアコンポーネントを有効にするには、最新のをインストールしてください。
 
 >[!NOTE]
 >
