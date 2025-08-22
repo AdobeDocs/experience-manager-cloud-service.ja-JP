@@ -165,5 +165,5 @@ AEM環境でAEM Modernize Tools を有効にして使用するには、基盤コ
 
 ## ベストプラクティス {#best-practices}
 
-* 基盤コンポーネントベースのフォームは、同等の [ コアコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) を使用できるコンポーネントのみを使用します。 同等のコアコンポーネントを持たない基盤コンポーネントを使用する場合、基盤コンポーネントは変換されません。 その結果、フォームのオーサリング中に正しく機能しません
+* 基盤コンポーネントベースのフォームは、同等の [ コアコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) を使用できるコンポーネントのみを使用します。 同等のコアコンポーネントを持たない基盤コンポーネントを使用する場合、基盤コンポーネントは変換されません。 その結果、フォームのオーサリング中に正しく機能しません
 * 基盤コンポーネントをコアコンポーネントに変換するルールは、XML 形式で指定してください。
