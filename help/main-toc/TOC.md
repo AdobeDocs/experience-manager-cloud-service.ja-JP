@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 174e7a7591714e60b508a2d29ffdd4ccddf528db
+source-git-commit: eaa3e3cccdffd7d3837fbe611b8b8a7e99f7d075
 workflow-type: tm+mt
 source-wordcount: '6520'
 ht-degree: 97%
@@ -1194,7 +1194,7 @@ ht-degree: 97%
          + [AEM を使用したヘッドレスのオーサリングの基本](/help/journey-headless/author/basics.md)
          + [コンテンツフラグメントでの参照の使用について](/help/journey-headless/author/references.md)
          + [コンテンツフラグメントのメタデータとタグの定義について](/help/journey-headless/author/metadata-tagging.md)
-+ AI アシスタント {#ai-assistant-in-aem}
++ AI アシスタント {#ai-assistant}
    + [AEMでの AI アシスタントの設定](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
    + [AEMの AI アシスタントについて](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
 + 生成 AI {#generative-ai}
