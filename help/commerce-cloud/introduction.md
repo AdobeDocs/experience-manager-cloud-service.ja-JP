@@ -53,7 +53,7 @@ Adobeでは、カスタム統合を構築する場合に、Edge Delivery Service
 
 ### 独自のストアフロントの使用（ヘッドレス AEM統合） {#own-storefront}
 
-既存のストアフロント（React JS で構築など）があり、コンテンツの管理と配信（コンテンツフラグメント）、アセットおよびコンテキスト内編集（ユニバーサルエディター）にAdobe Experience Managerを使用する場合。 統合の出発点は、[Adobe Experience Manager as a ヘッドレス CMSの概要 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/headless/introduction) および [CIF アドオン ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content) です。 CIF アドオンを使用すると、商品データをAEM（AEM UI 内で商品を検索、参照、検索する）にシームレスに統合し、コマース固有のエクスペリエンスを構築できます。
+既存のストアフロント（React JS で構築など）があり、コンテンツの管理と配信（コンテンツフラグメント）、アセットおよびコンテキスト内編集（ユニバーサルエディター）にAdobe Experience Managerを使用する場合。 統合の出発点は、[Adobe Experience Manager as a ヘッドレス CMSの概要 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/headless/introduction) および [CIF アドオン ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content) です。 CIF アドオンを使用すると、商品データをAEM（AEM UI 内で商品を検索、参照、検索する）にシームレスに統合し、コマース固有のエクスペリエンスを構築できます。
 
 ### AEM CIF ストアフロント {#cif}
 
