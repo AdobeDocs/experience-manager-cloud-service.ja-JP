@@ -8,9 +8,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 7835fba8383893a961226a8cc77cc9c38d4f2959
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '590'
 ht-degree: 5%
 
 ---
@@ -84,4 +84,4 @@ AEM Cloud Service またはManaged Servicesの実稼動環境が存在しない�
 
 ## AEMの AI アシスタント
 
-[ 前提条件を完了している ](/help/implementing/cloud-manager/aem-ai-assistant.md#get-access) お客様は、AEMのAEM AI アシスタントを組織内のユーザーが利用できます。 [AEMの AI アシスタント ](/help/implementing/cloud-manager/aem-ai-assistant.md) を参照してください。
+[ 前提条件を完了している ](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) お客様は、AEMの AI アシスタントを組織内のユーザーが利用できます。 [AEMの AI アシスタント ](/help/implementing/cloud-manager/ai-assistant-in-aem.md) を参照してください。

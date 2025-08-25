@@ -5,10 +5,10 @@ exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
-workflow-type: ht
-source-wordcount: '1625'
-ht-degree: 100%
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
+workflow-type: tm+mt
+source-wordcount: '1653'
+ht-degree: 98%
 
 ---
 
@@ -263,3 +263,8 @@ AEM ツールバーの右端にある&#x200B;**表示**&#x200B;アイコンは�
 ## テンプレート
 
 [**列表示**](/help/sites-cloud/authoring/basic-handling.md#column-view)&#x200B;または&#x200B;[**リスト表示**](/help/sites-cloud/authoring/basic-handling.md#list-view)&#x200B;でページを選択するときに、ページが基にしているテンプレートを簡単に確認できます。
+
+## AEMの AI アシスタント
+
+[ 前提条件を完了している ](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) お客様は、AEMの AI アシスタントを組織内のユーザーが利用できます。 [AEMの AI アシスタント ](/help/implementing/cloud-manager/ai-assistant-in-aem.md) を参照してください。
+

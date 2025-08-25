@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '1665'
-ht-degree: 100%
+source-wordcount: '1693'
+ht-degree: 98%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 100%
 # Cloud Manager UI の操作 {#navigation}
 
 Cloud Manager UI の整理方法と、プログラムと環境を管理する操作方法について説明します。
+
 
 Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェイスで構成されます。
 
@@ -25,6 +26,12 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 >[!TIP]
 >
 >また、Cloud Manager を使用して AEM as a Cloud Service を導入する方法の完全な概要について詳しくは、[オンボーディングドキュメントジャーニー](/help/journey-onboarding/overview.md)も参照してください。
+
+
+## AEMの AI アシスタント
+
+[ 前提条件を完了している ](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) お客様は、AEMの AI アシスタントを組織内のユーザーが利用できます。 [AEMの AI アシスタント ](/help/implementing/cloud-manager/ai-assistant-in-aem.md) を参照してください。
+
 
 ## マイプログラムコンソール {#my-programs-console}
 

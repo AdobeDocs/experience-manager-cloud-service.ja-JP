@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '6560'
+source-wordcount: '6549'
 ht-degree: 96%
 
 ---
@@ -1206,8 +1206,6 @@ ht-degree: 96%
    + [AEM as a Cloud Service の生成 AI](/help/generative-ai/generative-ai-in-aem.md)
    + [バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)
    + [バリエーションを生成](/help/generative-ai/generate-variations.md)
-   + [アシスタント（ベータ版限定）](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [AEMでの AI アシスタントの設定](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
    + [AEM Forms 用 AI アシスタント（Forms Experience Builder）](/help/edge/docs/forms/forms-ai-assistant-overview.md)
    + [AEM Forms用 AI アシスタントの概要](/help/edge/docs/forms/forms-ai-assistant.md)
    + [AEM Forms用 AI アシスタントの基本を学ぶ（Forms Experience Builder）](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
@@ -1218,7 +1216,6 @@ ht-degree: 96%
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
    + Cloud Manager の使用 {#using-cloud-manager}
       + [ナビゲーション](/help/implementing/cloud-manager/navigation.md)
-      + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
       + [Experience Hub](/help/implementing/cloud-manager/experience-hub.md)
       + プログラム {#programs}
          + [プログラムとプログラムタイプ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
