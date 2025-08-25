@@ -34,7 +34,7 @@ AEMに直接埋め込まれ、AEM Experience Hub、Cloud Managerおよびオー�
 
 次の 3 分 39 秒のビデオでは、AEMの AI アシスタントの手順を順を追って説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470356?learn=on&captions=jpn)
 
 ## AEMの AI アシスタントにアクセスできます{#get-access}
 
