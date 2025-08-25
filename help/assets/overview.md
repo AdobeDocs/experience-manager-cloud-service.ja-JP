@@ -57,11 +57,11 @@ Experience Managerでは、web ブラウザーユーザーインターフェイ�
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started">
+   <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-desktop-app/using/get-started">
    <img alt="AEM デスクトップアプリケーションの使用" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started">
+      <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-desktop-app/using/get-started">
       <strong>AEM デスクトップアプリケーションの使用</strong>
       </a>
    </div>
@@ -270,11 +270,11 @@ AEM Assetsには、適切なアセットをすばやく見つけるのに役立�
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ja">
    <img alt="メタデータ管理のベストプラクティス" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ja">
       <strong>メタデータ管理のベストプラクティス</strong>
       </a>
    </div>
@@ -520,7 +520,7 @@ AEM Assets は、様々な アドビアプリケーションおよびアドビ�
 
 * **Adobe Workfront との統合**：[!DNL Adobe Workfront] は作業管理アプリケーションで、作業のライフサイクル全体を一元的に管理するのに役立ちます。[!DNL Workfront] と [!DNL Adobe Experience Manager Assets] の統合により、組織は、作業とデジタルアセット管理を本質的に関連付けることで、コンテンツベロシティを向上させ市場投入までの時間を短縮することができます。Workfront での作業を管理するコンテキスト内で、ユーザーは必要なドキュメントと画像にアクセスできます。
 
-  アドビでは、[ [!DNL Workfront]  と  [!DNL Adobe Experience Manager Assets]  をネイティブに統合](https://experienceleague.adobe.com/en/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations)することを提案しています。
+  アドビでは、[ [!DNL Workfront]  と  [!DNL Adobe Experience Manager Assets]  をネイティブに統合](https://experienceleague.adobe.com/ja/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations)することを提案しています。
 
 * **Figma との統合**:AEM Assetsは Figma とネイティブに統合されており、デザイナーは Figma ユーザーインターフェイス内からAEM Assetsに直接保存されているアセットにアクセスできます。 AEM Assetsで管理されているコンテンツを Figma キャンバスに配置してから、新しいコンテンツや編集したコンテンツをAEM Assets リポジトリに保存することができます。 Figma コミュニティページで利用可能な AEM Assets コネクタにアクセスするには、[ここ](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)をクリックします。
 
@@ -599,11 +599,11 @@ AEM Assets は、様々な アドビアプリケーションおよびアドビ�
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
+   <a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/overview">
    <img alt="Commerce との統合" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
+      <a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/overview">
       <strong>Commerce との統合</strong>
       </a>
    </div>
