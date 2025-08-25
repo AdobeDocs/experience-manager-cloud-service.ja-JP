@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 43e2abd67486b5c4b93f4022b57533d269d60c92
+source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
 workflow-type: tm+mt
-source-wordcount: '6541'
-ht-degree: 97%
+source-wordcount: '6560'
+ht-degree: 96%
 
 ---
 
@@ -950,6 +950,10 @@ ht-degree: 97%
       + [HTML5 フォームのスクリプティングのサポート](/help/forms/scripting-support.md)
       + [AEM Forms におけるフォームセット](/help/forms/formset-in-aem-forms.md)
    + インタラクティブなコミュニケーション {#interactive-communocation}
+      + [インタラクティブ通信エディターの概要](/help/forms/interactive-communication/Introduction-to-Interactive-Communication-Editor.md)
+      + [インタラクティブ通信の作成](/help/forms/interactive-communication/create-interactive-communication.md)
+      + [インタラクティブ通信テンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)
+      + [インタラクティブ通信フラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
       + [インタラクティブ通信の概要](/help/forms/introduction-to-interactive-communication.md)
       + [最初のインタラクティブ通信の作成](/help/forms/create-your-first-communication.md)
       + [AEM Forms API を使用した AFP 出力の生成](/help/forms/document-generation-afp-api.md)
