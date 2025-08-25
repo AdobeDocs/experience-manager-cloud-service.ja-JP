@@ -4,10 +4,10 @@ description: Edge Delivery Servicesを使用して AEM Forms で送信アクシ�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 12%
+source-wordcount: '810'
+ht-degree: 13%
 
 ---
 
@@ -98,27 +98,100 @@ Forms送信サービスは、Adobeでホストされるエンドポイントで�
 
 ### 設定要件
 
-#### &#x200B;1. AEM Dispatcherの設定
+#### &#x200B;1. Edge DeliveryでAEM インスタンス URL を更新する
 
-AEM パブリッシュインスタンスでDispatcherを設定します。
+`constant.js` の下にある `form` ブロックの `submitBaseUrl` ファイルの AEM Cloud Service インスタンス URL を更新します。 環境に応じて URL を設定できます。
 
-- **送信パスを許可**:`filters.any` への POST リクエストを許可するように `/adobe/forms/af/submit/...` を変更します
-- **リダイレクトなし**:Dispatcher ルールでフォーム送信パスがリダイレクトされないようにします
+**Cloud Service インスタンスの場合**
+
+```js
+export const submitBaseUrl = '<aem-publish-instance-URL>';
+```
+
+**ローカル開発用**
+
+```js
+export const submitBaseUrl = 'http://localhost:<port-number>';
+```
 
 #### &#x200B;2. OSGi リファラーフィルター
 
-AEM OSGi コンソール（`/system/console/configMgr`）で：
+リファラーフィルターを設定して、特定のEdge Delivery サイトのドメインを許可します。
 
-1. 「Apache Sling Referrer Filter」を探します
-2. 「Allow Hosts」リストにEdge Delivery ドメインを追加する
-3. `https://your-eds-domain.hlx.page` などのドメインを含める
+1. OSGi 設定ファイル `org.apache.sling.security.impl.ReferrerFilter.cfg.json` を作成または更新します。
 
-#### &#x200B;3. CDN リダイレクトルール
+2. 特定のサイトドメインを使用して次の設定を追加します。
 
-送信をルーティングするようにEdge Delivery CDN を設定します。
+   ```json
+   {
+     "allow.empty": false,
+     "allow.hosts": [
+       "main--abc--adobe.aem.live",
+       "main--abc1--adobe.aem.live"
+     ],
+     "allow.hosts.regexp": [
+       "https://.*\\.aem\\.live:443",
+       "https://.*\\.aem\\.page:443",
+       "https://.*\\.hlx\\.page:443",
+       "https://.*\\.hlx\\.live:443"
+     ],
+     "filter.methods": [
+       "POST",
+       "PUT",
+       "DELETE",
+       "COPY",
+       "MOVE"
+     ],
+     "exclude.agents.regexp": [
+       ""
+     ]
+   }
+   ```
 
-- `/adobe/forms/af/submit/...` からのリクエストをAEM パブリッシュインスタンスにルーティングする
-- 実装は CDN プロバイダー（Fastly、Akamai、Cloudflare）によって異なります
+3. Cloud Managerを使用した設定のデプロイ
+
+OSGi リファラーフィルターの設定について詳しくは、「[ リファラーフィルター ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) ガイドを参照してください。
+
+#### &#x200B;3. CORS （クロスオリジンリソース共有）の問題
+
+AEMで CORS を設定して、特定のEdge Delivery サイトドメインからのリクエストを許可します。
+
+**開発者 Localhost**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
+```
+
+**Edge Delivery Sites – 各サイトドメインを個別に追加する**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc--adobe\.aem\.live$)#" CORSTrusted=true
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc1--adobe\.aem\.live$)#" CORSTrusted=true
+```
+
+**従来の Franklin ドメイン（まだ使用中の場合）**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true  
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
+```
+
+>[!NOTE]
+>
+>`main--abc--adobe.aem.live` と `main--abc1--adobe.aem.live` を実際のサイトドメインに置き換えます。 同じリポジトリからホストされる各サイトには、個別の CORS 設定エントリが必要です。
+
+CORS 設定について詳しくは、『 [CORS 設定ガイド ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors) 』を参照してください。
+
+
+お使いのローカル開発で CORS を有効にするには、[ クロスオリジンリソース共有（CORS）について ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) を参照してください。
+
+<!--
+#### 4. CDN Redirect Rules
+
+Configure your Edge Delivery CDN to route submissions:
+
+- Route requests from `/adobe/forms/af/submit/...` to your AEM Publish instance
+- Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)-->
 
 #### &#x200B;4. フォーム設定
 
@@ -128,55 +201,54 @@ AEM OSGi コンソール（`/system/console/configMgr`）で：
 4. Edge Delivery サイトへのフォームの公開
 
 +++
+<!--
++++ Form Embedding
 
-+++ フォームの埋め込み（オプション）
+Embed forms created in one location into different web pages or sites.
 
-1 つの場所で作成されたフォームを別の web ページや web サイトに埋め込みます。
+### Use Cases
 
-### ユースケース
+- Reuse standard forms across multiple landing pages
+- Include specialized forms in Document-Authored content
+- Maintain single form across multiple EDS projects
 
-- 複数のランディングページでの標準フォームの再利用
-- ドキュメント作成コンテンツへの専用のフォームの組み込み
-- 複数の EDS プロジェクトにわたって単一フォームを維持
+### CORS Configuration
 
-### CORS 設定
+Configure Cross-Origin Resource Sharing on the form source:
 
-フォームソースでクロスオリジンリソース共有を設定します。
-
-1. フォームソースの応答に **CORS ヘッダーを追加** します。
+1. **Add CORS Headers** to form source responses:
    - `Access-Control-Allow-Origin: https://your-host-domain.com`
-   - `Access-Control-Allow-Methods: GET, OPTIONS`
+   - `Access-Control-Allow-Methods: GET, OPTIONS`  
    - `Access-Control-Allow-Headers: Content-Type`
 
-2. **設定例**:
+2. **Example Configuration**:
 
-       &#x200B;# フォームをホストするサイトの設定 
-       headers:
-       - パス：/forms/**
-       custom:
-       Access-Control-Allow-Origin: https://host-domain.com
-       Access-Control-Allow-Methods: GET（OPTIONS） 
-   
+        # Configuration for site hosting the form
+        headers:
+          - path: /forms/**
+            custom:
+              Access-Control-Allow-Origin: https://host-domain.com
+              Access-Control-Allow-Methods: GET, OPTIONS
 
-### ステップの埋め込み
+### Embedding Steps
 
-1. **フォームの作成と公開**
-   - ドキュメントオーサリングまたはユニバーサルエディターを使用したフォームの作成
-   - 送信方法を設定（FSS またはAEM公開）
-   - スタンドアロン URL に公開
+1. **Create and Publish Form**
+   - Build form using Document Authoring or Universal Editor
+   - Configure submission method (FSS or AEM Publish)
+   - Publish to standalone URL
 
-2. **CORS の設定**
-   - フォームソースサイトでの CORS ヘッダーの設定
-   - ホストページドメインによるフォームの取得を許可
+2. **Configure CORS**
+   - Set up CORS headers on form source site
+   - Allow host page domain to fetch form
 
-3. **ホストページへの埋め込み**
-   - フォーム埋め込みブロックをホストページに追加
-   - ブロックを公開済みフォームの URL にポイント
-   - ホストページを公開
+3. **Embed in Host Page**
+   - Add form embedding block to host page
+   - Point block to published form URL
+   - Publish host page
 
-![埋め込みフォームアーキテクチャ](/help/forms/assets/eds-embedded-form.png)
+![Embedded Form Architecture](/help/forms/assets/eds-embedded-form.png)
 
-+++
++++-->
 
 +++ よくある問題
 

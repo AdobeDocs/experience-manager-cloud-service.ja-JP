@@ -3,13 +3,13 @@ title: Edge Delivery Services フォーム送信での 403 Forbidden エラー�
 description: Edge Delivery ServicesからAEM Publish にフォームを送信する際に 403 Forbidden エラーを診断し、解決する方法を説明します。 このガイドでは、CORS、Dispatcher ルール、リファラーフィルターの問題など、一般的な原因について説明します。
 feature: Edge Delivery Services
 role: Admin, Developer
-source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
+exl-id: f397e059-f1b3-4afa-bd38-8f5fc591bb22
+source-git-commit: d457bf9af377176222c2b96816fbbc4265e6b167
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1118'
 ht-degree: 3%
 
 ---
-
 
 # Edge Delivery Services フォーム送信での 403 Forbidden エラーのトラブルシューティング {#troubleshooting-403-forbidden-edge-delivery}
 
@@ -169,7 +169,7 @@ AEM エラーログでリファラーフィルターの却下メッセージを�
 
 >[!IMPORTANT]
 >
->**forrepoless 設定：** 各サイトドメインを個別に `allow.hosts` 配列に追加する必要があります。 正規表現パターンのみを使用しても、すべてのシナリオで十分とは限らない場合があります。 包括的なカバレッジに特定のドメインと正規表現パターンの両方を含めます。
+>**リポジトリ設定の場合：** 各サイトドメインを個別に `allow.hosts` アレイに追加する必要があります。 正規表現パターンのみを使用しても、すべてのシナリオで十分とは限らない場合があります。 包括的なカバレッジに特定のドメインと正規表現パターンの両方を含めます。
 
 >[!WARNING]
 >
@@ -197,7 +197,7 @@ AEM エラーログでリファラーフィルターの却下メッセージを�
 4. 失敗したリクエストの詳細の確認
 5. 応答ヘッダーとステータスの確認
 
-**リクエストがサーバーに到達しない場合：**&#x200B;Dispatcherの問題である可能性があります。
+**リクエストがサーバーに到達しない場合：**Dispatcherの問題である可能性があります。
 **リクエストがサーバーに到達したが失敗した場合：** リファラーフィルターの問題である可能性があります。
 
 ### 手順 3:AEM ログの確認
@@ -269,7 +269,7 @@ Helix-5 およびリポーレスアーキテクチャでは、次のガイドラ
 ## 関連トピック
 
 - [送信アクションの設定](/help/forms/configuring-submit-actions.md)
-- [Forms送信サービス](/help/forms/forms-submission-service.md)
+- [Forms 送信サービス](/help/forms/forms-submission-service.md)
 - [Edge 配信サービスの概要](/help/edge/overview.md)
 
 
