@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: d065397b874cc24fb7af53e1258520f3e8270c55
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 99%
+source-wordcount: '1489'
+ht-degree: 98%
 
 ---
 
@@ -102,7 +102,7 @@ Cloud Manager で使用できるパイプラインとその用途を次の表に
 さらに、[web 階層設定パイプライン](#web-tier-config-pipelines)の導入を選択した場合は、フルスタックパイプラインがどのように動作するかを認識しておいてください。
 
 * 環境のフルスタックパイプラインは、対応する web 階層設定パイプラインが存在する場合、Dispatcher 設定を無視します。
-* 環境に対応する web 階層設定パイプラインが存在しない場合、ユーザーは、Dispatcher 設定を含めるまたは無視するようにフルスタックパイプラインを設定できます。
+* 環境に対応する web 階層設定パイプラインが存在しない場合、フルスタックパイプラインを設定して、Dispatcher設定を含めるか無視するかを指定できます。
 
 フルスタックパイプラインは、コード品質パイプラインとすることも、デプロイメントパイプラインとすることもできます。
 
