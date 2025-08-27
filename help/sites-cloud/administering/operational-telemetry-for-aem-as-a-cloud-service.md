@@ -42,7 +42,7 @@ ht-degree: 56%
 * 訪問しているサイトのホスト名（例：`experienceleague.adobe.com`）
 * `desktop:windows` や `mobile:ios` など、ページの表示に使用される幅広いユーザーエージェントタイプとオペレーティングシステム
 * `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)` など、データ収集の時間
-* 訪問しているページの URL（例：`https://experienceleague.adobe.com/docs`）
+* 訪問しているページの URL（例：`https://experienceleague.adobe.com/docs?lang=ja`）
 * リファラー URL（ユーザーがリンクをたどった場合、現在のページにリンクしているページの URL）
 * `2Ac6` のような形式で、ランダムに生成されたページビューの ID
 * `100` など、サンプリングレートの重み付けまたはその逆つまり、100 ページビューのうち 1 つしか記録されません。
