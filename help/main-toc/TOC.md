@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bf7f0a838d7826aacf27520ae09057c1214f8d73
+source-git-commit: 94a20e8e95edf603227bfadd07e4b4c62e6421e6
 workflow-type: tm+mt
-source-wordcount: '6549'
+source-wordcount: '6552'
 ht-degree: 96%
 
 ---
@@ -274,6 +274,8 @@ ht-degree: 96%
    + [権限管理のプリンシパルビュー](/help/security/touch-ui-principal-view.md)
    + [Sling サービスユーザーマッピングとサービスユーザー定義のベストプラクティス](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service の顧客管理キー](/help/security/customer-managed-keys.md)
++ Experience Hub {#experience-hub}
+   + [Experience Hubについて](/help/experience-hub.md)
 + オンボーディング {#onboarding}
    + [ここから開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ja)
    + オンボーディングジャーニー {#journey}
@@ -1216,7 +1218,6 @@ ht-degree: 96%
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
    + Cloud Manager の使用 {#using-cloud-manager}
       + [ナビゲーション](/help/implementing/cloud-manager/navigation.md)
-      + [Experience Hub](/help/experience-hub.md)
    + プログラム {#programs}
       + [プログラムとプログラムタイプ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
       + [実稼動プログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
