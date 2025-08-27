@@ -21,8 +21,8 @@ SSL（Secure Socket Layer）証明書のインストールおよび管理にお�
 >id="aemcloud_golive_sslcert"
 >title="SSL 証明書の管理"
 >abstract="Cloud Manager のセルフサービスツールで、SSL 証明書をインストールおよび管理し、ユーザーのためにサイトを保護する方法について説明します。Cloud Manager は、プラットフォーム TLS サービスを使用して、SSL 証明書と秘密鍵（顧客が所有し、サードパーティの証明機関から取得される鍵）を管理します。"
->additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="SSL 証明書の表示、更新、および置換"
->additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="SSL 証明書のステータスの確認"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="SSL 証明書の表示、更新、および置換"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="SSL 証明書のステータスの確認"
 
 ## SSL 証明書とは？ {#overview}
 

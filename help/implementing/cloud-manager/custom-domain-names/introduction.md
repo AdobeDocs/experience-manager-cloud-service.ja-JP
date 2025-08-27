@@ -20,7 +20,7 @@ ht-degree: 99%
 >title="カスタムドメイン名の管理"
 >abstract="Cloud Manager の UI では、セルフサービス方式でカスタムドメインを追加して、サイトを独自のブランド名で特定できます。"
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/custom-domain-names/add-custom-domain-name" text="カスタムドメイン名の追加"
->additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/custom-domain-names/managing-custom-domain-names" text="カスタムドメイン名の表示と更新"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/custom-domain-names/managing-custom-domain-names" text="カスタムドメイン名の表示と更新"
 
 Adobe Experience Manager as a Cloud Service には、`*.adobeaemcloud.com` で終わるデフォルトのドメイン名がプロビジョニングされます。Cloud Manager の UI を使用すると、カスタムドメインを追加して、セルフサービス方式で独自のブランド名を使用してサイトを特定できます。デフォルトの `*.adobeaemcloud.com` ドメイン名は、web サイトにカスタムドメイン名を関連付けた後でも、そのまま残ります。
 
