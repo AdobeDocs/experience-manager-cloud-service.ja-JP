@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
+source-git-commit: f1e9b76742c8d97f44ff974fb8686fdcb3d804e6
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 100%
+source-wordcount: '515'
+ht-degree: 99%
 
 ---
 
@@ -17,16 +17,12 @@ ht-degree: 100%
 
 AEM as a Cloud Service のドメインにユーザーがアクセスできるアドレスを、IP 許可リストで制限する方法について説明します。
 
-<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
-
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_ipallowlist"
->title="Manage IP Allow Lists"
->abstract="AEM as a Cloud Service is accessible by way of the Internet and is secured through user authentication and authorization. Cloud Manager's IP Allow Lists can be used to limit and control access only to trusted IP addresses. Cloud Manager users with appropriate permissions can create allowlists of trusted IP addresses from which their site's users can access their AEM domains."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists" text="Add an IP Allow List"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/managing-ip-allow-lists" text="View and update an IP Allow List"
-
--->
+>title="IP 許可リストの管理"
+>abstract="AEM as a Cloud Service はインターネット経由でアクセスでき、ユーザー認証および承認を通じて安全性が確保されています。Cloud Manager の IP 許可リストを使用すると、信頼できる IP アドレスのみにアクセスを制限して制御することができます。適切な権限を持つ Cloud Manager ユーザーは、サイトのユーザーが AEM ドメインにアクセスできる、信頼できる IP アドレスの許可リストを作成できます。"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/ip-allow-lists/add-ip-allow-lists" text="IP 許可リストの追加"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/ip-allow-lists/managing-ip-allow-lists" text="IP 許可リストの表示と更新"
 
 ## 概要 {#overview}
 

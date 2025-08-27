@@ -1,13 +1,13 @@
 ---
-title: AEM as a Cloud Serviceの運用上のテレメトリ
+title: AEM as a Cloud Service の運用テレメトリ
 description: クライアントサイドでのデータ収集を監視できる自動サービスである、運用テレメトリについて説明します。
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: 41d9fd628eec8ce757447bed13d50211e71785de
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 63%
+source-wordcount: '974'
+ht-degree: 56%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 63%
 
 ## 運用上のテレメトリサービスのデータサンプリング {#operational-telemetry-service-data-sampling}
 
-従来の web 分析ソリューションでは、すべての訪問者に関するデータを収集しようとします。AEMの運用上のテレメトリサービスは、ほんの一部のページビューからのみ情報を取得します。 サービスは、分析の代替ではなく、サンプリングと匿名化を目的としています。デフォルトでは、ページのサンプリングレートは 1:100 です。現時点では、サイトオペレーターはサンプリングレートを増減できません。合計トラフィックを正確に推定するには、100 ページビューのうち 1 ページからのデータを収集し、全体のトラフィックの信頼できる近似値を提供します。
+従来の web 分析ソリューションでは、すべての訪問者に関するデータを収集しようとします。AEMの運用上のテレメトリサービスは、ほんの一部のページビューからのみ情報を取得します。 サービスは、分析の代替ではなく、サンプリングと匿名化を目的としています。デフォルトでは、ページのサンプリング率は 1:100 です。 現時点では、サイトオペレーターはサンプリングレートを増減できません。合計トラフィックを正確に推定するには、100 ページビューのうち 1 ページからのデータを収集し、全体のトラフィックの信頼できる近似値を提供します。
 
 データが収集されるかどうかはページビューごとに決定されるので、複数のページ間のやり取りを追跡することは事実上不可能になります。仕様上、運用上のテレメトリは、訪問者やセッションという概念はなく、ページビューのみの概念です。
 
@@ -42,7 +42,7 @@ ht-degree: 63%
 * 訪問しているサイトのホスト名（例：`experienceleague.adobe.com`）
 * `desktop:windows` や `mobile:ios` など、ページの表示に使用される幅広いユーザーエージェントタイプとオペレーティングシステム
 * `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)` など、データ収集の時間
-* 訪問しているページの URL（例：`https://experienceleague.adobe.com/docs?lang=ja`）
+* 訪問しているページの URL（例：`https://experienceleague.adobe.com/docs`）
 * リファラー URL（ユーザーがリンクをたどった場合、現在のページにリンクしているページの URL）
 * `2Ac6` のような形式で、ランダムに生成されたページビューの ID
 * `100` など、サンプリングレートの重み付けまたはその逆つまり、100 ページビューのうち 1 つしか記録されません。
@@ -93,7 +93,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 1. **`/.rum` パスがサイトでブロックされています。どうすれば修正できますか？**
 
-   運用上のテレメトリ収集が機能するには、`/.rum` のパスが必要です。 アドビの AEM as a Cloud Service の前で CDN を使用する場合は、`/.rum` パスが他の AEM コンテンツと同じ AEM 接触チャネルに転送されるようにします。また、どのような場合においても調整されないようにしてください。
+   運用上のテレメトリ収集が機能するには、`/.rum` のパスが必要です。 アドビの AEM as a Cloud Service の前で CDN を使用する場合は、`/.rum` パスが他の AEM コンテンツと同じ AEM 接触チャネルに転送されるようにします。また、いかなる方法でも調整されないようにしてください。 Cloud Managerまたは、`rum.hlx.page` という名前の環境変数を [ という値に設定することで ](/help/implementing/cloud-manager/environment-variables.md#add-variables) 運用上のテレメトリに使用するホストを `AEM_OPTEL_EXTERNAL` に変更するこ `true` もできます。 後で同じドメインリクエストに戻す場合は、その環境変数を再度削除するだけです。
 
 1. **運用上のテレメトリ収集は、契約上の目的でコンテンツリクエストにカウントされますか？**
 
@@ -103,4 +103,4 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    Adobeでは、運用上のテレメトリを使用することをお勧めします。これは、大きなメリットがあるためです。また、Adobeを使用すると、web サイトのパフォーマンスを向上させて、デジタルエクスペリエンスを最適化するのに役立ちます。 このサービスは、シームレスに設計され、web サイトのパフォーマンスに影響を与えません。
 
-   オプトアウトすると、web サイトのトラフィックエンゲージメントを向上させる機会を逃す可能性があります。ただし、問題が発生した場合は、アドビサポートにお問い合わせください。
+   オプトアウトすると、web サイトのトラフィックエンゲージメントを向上させる機会を逃す可能性があります。ただし、問題が発生した場合は、[ という名前の環境変数を ](/help/implementing/cloud-manager/environment-variables.md#add-variables) という値に設定する `AEM_OPTEL_DISABLED`Cloud Managerで設定する `true` ことで、運用テレメトリを無効にできます。 後で運用テレメトリを再度有効にする場合は、その環境変数を再度削除するだけです。
