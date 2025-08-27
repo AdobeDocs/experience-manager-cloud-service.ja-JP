@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 37c1d1bda4543d0182952dc5ee84f8ff6dd6630f
+source-git-commit: 139c3d2f071a18336a5196bed0e33874b6eb5ce6
 workflow-type: tm+mt
 source-wordcount: '6549'
 ht-degree: 96%
@@ -1225,34 +1225,34 @@ ht-degree: 96%
       + [サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
       + [プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
       + [環境を休止状態にする](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-      + AEM アプリケーションプロジェクトの作成 {#create-application-project}
-         + [プロジェクト作成ウィザード](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
-         + [プロジェクトのセットアップ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-         + [ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
-      + [環境の管理](/help/implementing/cloud-manager/manage-environments.md)
-      + [特殊なテスト環境（ベータ版）](/help/implementing/cloud-manager/specialized-test-environment.md)
-      + コードの管理 {#managing-code}
-         + [Maven プロジェクトのバージョン処理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-         + [Cloud Managerでのリポジトリの管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [Adobe リポジトリの追加](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-         + [プライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [外部リポジトリの追加（ベータ版）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
-         + [外部リポジトリのアクセストークンの管理（ベータ版）](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
-         + [リポジトリへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-         + [Git サブモジュールのサポート](/help/implementing/cloud-manager/managing-code/git-submodules.md)
-         + [Cloud Manager での Git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-         + [複数のリポジトリの使用](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-         + [エンタープライズ開発チームのセットアップ](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [GitHub チェック設定](/help/implementing/cloud-manager/managing-code/github-check-config.md)
-         + [GitHub チェック注釈](/help/implementing/cloud-manager/managing-code/github-annotations.md)
-      + [環境変数](/help/implementing/cloud-manager/environment-variables.md)
-      + Cloud Manager CI/CD パイプライン {#cicd-pipelines}
-         + [CI-CD パイプラインの概要](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-         + [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-         + [実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-         + [Edge Delivery パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
-         + [パイプラインの管理](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
-         + [パイプライン変数](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
+   + AEM アプリケーションプロジェクトの作成 {#create-application-project}
+      + [プロジェクト作成ウィザード](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+      + [プロジェクトのセットアップ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
+      + [ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+   + [環境の管理](/help/implementing/cloud-manager/manage-environments.md)
+   + [特殊なテスト環境（ベータ版）](/help/implementing/cloud-manager/specialized-test-environment.md)
+   + コードの管理 {#managing-code}
+      + [Maven プロジェクトのバージョン処理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+      + [Cloud Managerでのリポジトリの管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
+      + [Adobe リポジトリの追加](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+      + [プライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+      + [外部リポジトリの追加（ベータ版）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+      + [外部リポジトリのアクセストークンの管理（ベータ版）](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+      + [リポジトリへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+      + [Git サブモジュールのサポート](/help/implementing/cloud-manager/managing-code/git-submodules.md)
+      + [Cloud Manager での Git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+      + [複数のリポジトリの使用](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+      + [エンタープライズ開発チームのセットアップ](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+      + [GitHub チェック設定](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+      + [GitHub チェック注釈](/help/implementing/cloud-manager/managing-code/github-annotations.md)
+   + [環境変数](/help/implementing/cloud-manager/environment-variables.md)
+   + Cloud Manager CI/CD パイプライン {#cicd-pipelines}
+      + [CI-CD パイプラインの概要](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+      + [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+      + [実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+      + [Edge Delivery パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
+      + [パイプラインの管理](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+      + [パイプライン変数](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md)
       + テスト結果の理解 {#test-results}
          + [概要](/help/implementing/cloud-manager/overview-test-results.md)

@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b0c8769b5941ed772a91cf189e8c7355d1db766b
-workflow-type: ht
-source-wordcount: '1160'
+source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
+workflow-type: tm+mt
+source-wordcount: '1100'
 ht-degree: 100%
 
 ---
@@ -17,12 +17,16 @@ ht-degree: 100%
 
 SSL（Secure Socket Layer）証明書のインストールおよび管理において Cloud Manager が提供するセルフサービスツールについて説明します。
 
+<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
->title="SSL 証明書の管理"
->abstract="Cloud Manager のセルフサービスツールで、SSL 証明書をインストールおよび管理し、ユーザーのためにサイトを保護する方法について説明します。Cloud Manager は、プラットフォーム TLS サービスを使用して、SSL 証明書と秘密鍵（顧客が所有し、サードパーティの証明機関から取得される鍵）を管理します。"
->additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="SSL 証明書の表示、更新、および置換"
->additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="SSL 証明書のステータスの確認"
+>title="Manage SSL certificates"
+>abstract="Learn how Cloud Manager has self-service tools to install and manage SSL certificates to secure your site for your users. Cloud Manager uses a platform TLS service to manage SSL certificates and private keys owned by customers and obtained from third-party certification authorities."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="View, Updating & Replace an SSL Certificate"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Check Status of an SSL Certificate"
+
+-->
 
 ## SSL 証明書とは？ {#overview}
 

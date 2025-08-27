@@ -4,14 +4,14 @@ description: パブリッシュ層でAEM as a Cloud Service用に Open ID Connec
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
+source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 4%
 
 ---
 
-# パブリッシュ層でのAEM as a Cloud Serviceの Open ID Connect サポート
+# パブリッシュ層でのAEM as a Cloud Serviceの Open ID Connect サポート {#open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier}
 
 ## はじめに {#introduction}
 
