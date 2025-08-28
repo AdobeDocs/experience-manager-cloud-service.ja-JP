@@ -132,7 +132,7 @@ You can use the **[!UICONTROL Send Email]** Submit Action to send an email to on
 >[!NOTE]
 >
 > * All the form fields must have different element names, even if the fields are placed on different panels of an Adaptive Form.
-> * AEM as a Cloud Service requires outbound mail to be encrypted. By default, outbound email is disabled. To activate it, submit a support ticket to [Requesting Access](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email). 
+> * AEM as a Cloud Service requires outbound mail to be encrypted. By default, outbound email is disabled. To activate it, submit a support ticket to [Requesting Access](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja#sending-email). 
 
 You can also include attachments and a Document of Record (DoR) to the email. To enable **[!UICONTROL Attach Document of Record]** option, configure the Adaptive Form to generate a Document of Record (DoR). You can enable the option to generate a Document of Record from Adaptive Form properties.
 
@@ -167,7 +167,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## Invoke an AEM Workflow {#invoke-an-aem-workflow}
 
-The **[!UICONTROL Invoke an AEM Workflow]** Submit Action associates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). When a form is submitted, the associated workflow starts automatically on the Author instance. You can save the data file, attachments, and Document of Record to the payload location of the workflow or to a variable. If the workflow is marked for external data storage and configured for an external data storage, then only the variable option is available. You can select from the list of variables available for the workflow model. If the workflow is marked for external data storage at a later stage and not at the time of workflow creation, then ensure that the required variable configurations are in place.
+The **[!UICONTROL Invoke an AEM Workflow]** Submit Action associates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem). When a form is submitted, the associated workflow starts automatically on the Author instance. You can save the data file, attachments, and Document of Record to the payload location of the workflow or to a variable. If the workflow is marked for external data storage and configured for an external data storage, then only the variable option is available. You can select from the list of variables available for the workflow model. If the workflow is marked for external data storage at a later stage and not at the time of workflow creation, then ensure that the required variable configurations are in place.
 
 The Submit Action places the following at the payload location of the workflow, or the variable if the workflow is marked for external data storage: 
 
@@ -409,7 +409,7 @@ You can use the created Azure Storage container configuration in an Adaptive For
 When you submit the form, the data is saved in the specified Azure Storage container configuration. 
 Folder structure to save data is `/configuration_container/form_name/year/month/date/submission_id/data`. 
 
-To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
+To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
 
 ## Submit to Power Automate {#microsoft-power-automate}

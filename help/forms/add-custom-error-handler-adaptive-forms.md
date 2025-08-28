@@ -237,7 +237,7 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 
 <!-- To create a custom error function, perform the following steps:
 
-1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git). 
+1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#accessing-git). 
 2. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`
 3. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder` as `clientlibs`.
 4. Create a folder named `js`.
@@ -298,7 +298,7 @@ The created folder structure looks like:
     ```
 -->
 
-1. [パイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)します。
+1. [パイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)します。
 
 パイプラインが正常に実行されると、カスタムエラーハンドラーがアダプティブフォームのルールエディターで使用できるようになります。次に、ルールエディターのサービスの呼び出しを AEM Forms で使用して、カスタムエラーハンドラーを設定して使用する方法を説明します。
 
