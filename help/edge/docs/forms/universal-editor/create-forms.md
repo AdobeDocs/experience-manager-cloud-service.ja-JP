@@ -291,7 +291,7 @@ Edge Delivery Services を使用した AEM Forms の一般的な問題と解決�
 
 1. Adobe Experience Cloud サービスのステータスを確認してください。
 2. [Edge Delivery Services ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=ja)を確認してください。
-3. [Adobe Experience League コミュニティ](https://experienceleaguecommunities.adobe.com/)にアクセスしてください。
+3. [Adobe Experience League コミュニティ](https://experienceleaguecommunities.adobe.com/?profile.language=ja)にアクセスしてください。
 4. アドビカスタマーケアにお問い合わせください。
 
 +++
