@@ -2,10 +2,10 @@
 title: コンテンツハブユーザーインターフェイスの設定
 description: コンテンツハブユーザーインターフェイスの設定
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: e8932e6490008368e0e22ebec3331553b7b54c59
+source-git-commit: 06373e14ff9199d97c03332d95a0d2b024b3220f
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 95%
+source-wordcount: '2265'
+ht-degree: 91%
 
 ---
 
@@ -90,7 +90,7 @@ Experience Manager Assets を使用すると、管理者はコンテンツハブ
 
 1. 「**[!UICONTROL 保存]**」をクリックして、変更内容を適用します。
 
-同様に、使用可能な各プロパティの横にある ![編集アイコン](assets/do-not-localize/edit_icon.svg) をクリックしてラベルを編集したり、**[!UICONTROL 必須フィールド]**&#x200B;切替スイッチを使用してアセットのアップロード中にこれらのフィールドをユーザーに対して必須または非必須にしたり、削除アイコンをクリックしてメタデータプロパティを削除したりできます。
+同様に、使用可能な各プロパティの横にある ![ 編集アイコン ](assets/do-not-localize/edit_icon.svg) をクリックして、ラベルを編集したり、**[!UICONTROL 必須フィールド]** 切替スイッチを使用してアセットをアップロードする際にユーザーにこれらのフィールドを必須または非必須にしたり、削除アイコンをクリックしてメタデータプロパティを削除したりできます。
 
 Experience Manager Assets リポジトリに追加するすべてのアセットを自動承認して、コンテンツハブですぐに使用できるようにする必要がある場合は、**[!UICONTROL 自動承認]**&#x200B;切替スイッチをクリックします。それ以外の場合は、DAM 作成者または管理者がアセットを手動で承認して、コンテンツハブで使用できるようにする必要があります。切替スイッチは、デフォルトでオフの状態に設定されます。
 
@@ -123,6 +123,20 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 設定ユーザーインターフェイスで有効になっているフィルターは、検索ページに表示されます。
 ![コンテンツハブで検索](assets/content-hub-filters1.png)
+
+#### 一括検索 {#bulk-search-configuration}
+
+[!DNL Content Hub] で複数のアセットを一度に検索できるようにするには、次の手順を実行します。
+
+1. [設定](#access-configuration-options-content-hub)ユーザーインターフェイスで、「**[!UICONTROL フィルター]**」をクリックします。
+
+1. 使用可能な各フィルターの横にある ![ 編集アイコン ](assets/do-not-localize/edit_icon.svg) 使用可能」をクリックします。
+
+1. **[!UICONTROL 一括検索]** 切り替えを有効にします。 デフォルトの区切り文字 `[ , | \t | \r\n | \r | \n ]` は自動的に表示されます。 さらに、区切り文字を追加することもできます。 それには、入力ボックスで区切り文字を `pipe symbol (|)` で区切って指定します。
+
+   ![ 一括検索設定 ](assets/bulk-search-configuration.png)
+
+1. 「**[!UICONTROL 確認]**」をクリックして、変更を保存します。 [Content Hubでの一括検索 ](search-assets-content-hub.md#bulk-search) の動作を参照してください。
 
 ### アセットの詳細 {#configure-asset-details-content-hub}
 
@@ -175,7 +189,7 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 管理者は、ブランディング要件に合わせて [!DNL Content Hub] ポータルをカスタマイズできます。![デフォルトをリセット](/help/assets/assets/reset-default-content-hub.png)
 ![ブランディング](/help/assets/assets/ColorPalette.svg)**[!UICONTROL ブランディング]**&#x200B;ページでは、**[!UICONTROL バナー]**、**[!UICONTROL カラー]**&#x200B;および&#x200B;**[!UICONTROL バナー画像]**&#x200B;の各セクションを使用して、次のカスタマイズを実行します。
 
-1. [「ロゴ画像 [!UICONTROL &#x200B; セクションからロゴ画像 &#x200B;] 変更する](#Change-the-logo-image)
+1. [「ロゴ画像 [!UICONTROL  セクションからロゴ画像 ] 変更する](#Change-the-logo-image)
 1. [「[!UICONTROL バナー画像]」セクションからバナー画像を変更する](#Change-the-banner-image)
 1. [バナーのタイトルと本文を更新し、「[!UICONTROL バナー]」セクションからテキストカラーを変更します](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
 1. [「[!UICONTROL カラー]」セクションでプライマリカラーとセカンダリカラーを変更して、ブランドのテーマに合ったカラースキームを適用します](#Change-the-primary-and-secondary-color)
@@ -215,7 +229,7 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 ![プライマリおよびセカンダリカラー](/help/assets/assets/primary-secondary-color-content-hub1.png)
 **[!UICONTROL プライマリカラー]：** プライマリカラースキームは、[!DNL Content Hub] ホーム ページや[!UICONTROL 設定ページ]を含む [!DNL Content Hub] 全体の選択アクション、チェックボックスなどのインタラクティブ要素、検索バー、切り替えスイッチに適用されます。また、**[!UICONTROL すべてのアセット]**&#x200B;ページや&#x200B;**[!UICONTROL コレクション]**&#x200B;ページで使用できるオプションなど、プライマリ [!DNL Content Hub] インターフェイスで使用できるアクションオプションにも適用されます。
 
-**[!UICONTROL セカンダリカラー]：**&#x200B;[!DNL Content Hub] ホームページでは、ダイアログボックス内で使用可能な UI オプションおよび入力フィールドにセカンダリカラースキームが適用されます。選択アクション、チェックボックス、検索バー、切替スイッチを除く、[!UICONTROL 設定]ページで使用可能なすべての設定メニューオプションに適用されます。
+**[!UICONTROL セカンダリカラー]：**[!DNL Content Hub] ホームページでは、ダイアログボックス内で使用可能な UI オプションおよび入力フィールドにセカンダリカラースキームが適用されます。選択アクション、チェックボックス、検索バー、切替スイッチを除く、[!UICONTROL 設定]ページで使用可能なすべての設定メニューオプションに適用されます。
 
 ### アセット表示{#asset-visibility-content-hub}
 
@@ -308,3 +322,4 @@ Enable the following setting on the Configurations user interface to allow Conte
 -->
 
 詳しくは、[ [!DNL Content Hub]](share-assets-content-hub.md) でのアセットの共有を参照してください。
+
