@@ -4,10 +4,10 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のリリース
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 1db1f3cb34386c8615cad26eef81fe068c7faa9f
-workflow-type: ht
+source-git-commit: 4e9d4231860689efd56ab1a1282f4fc0e7ecc3d8
+workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 | 製品 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| バージョン | 2025.7.0 |
+| バージョン | 2025.8.0 |
 | タイプ | 継続的アップデート |
 | 公開日 | 継続的アップデート |
 
@@ -72,7 +72,7 @@ ht-degree: 100%
 
 今後提供予定の機能の公開方法については、[リリースノート](#release-notes)を参照してください。
 
-* それがAlphba、ベータ版、または限定提供プログラムの一部である場合、リリースノートに記載されているように、通常、アドビに連絡して有効にする必要があります。
+* それが Alphba、Beta、または限定提供プログラムの一部である場合、リリースノートに記載されているように、通常、アドビに連絡して有効にする必要があります。
 * プレリリースチャネルの一部である場合は、[開発環境またはサンドボックス環境でプレリリースチャネルを有効にする](/help/release-notes/prerelease.md)必要があります。
 
 ## ユーザーのトレーニング {#train-users}

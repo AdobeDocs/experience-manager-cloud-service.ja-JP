@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c273b78fe698ef0cdc4bf3999a0479d0509c7ad4
+source-git-commit: 95ec735cc1f95a23f0fea14aef2fc4011058d317
 workflow-type: tm+mt
-source-wordcount: '6552'
+source-wordcount: '6557'
 ht-degree: 96%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 96%
    + AEMaaCS 機能のリリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
+         + [2025.7.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-7-0.md)
          + [2025.6.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-6-0.md)
          + [2025.5.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md)
          + [2025.4.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-4-0.md)

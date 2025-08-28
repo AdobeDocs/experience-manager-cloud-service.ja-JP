@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 07b957374dcc513050c48bb320e8d639385c3344
+source-git-commit: 96022123209fff18548b77a4cbd63ccec697119b
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 90%
+source-wordcount: '1902'
+ht-degree: 47%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 90%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.7.0）のリリース日は 2025年8月7日（PT）です。次回の機能リリース（2025.8.0）は、2025年8月28日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.8.0）のリリース日は 2025年8月28日（PT）です。次回の機能リリース（2025.9.0）は、2025年9月25日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -40,124 +40,73 @@ ht-degree: 90%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
+
+## Experience Hub {#experience-hub}
+
+[Experience Hub](/help/experience-hub.md) は、すべてのAEM機能にアクセスするための一元的な出発点となります。 ユーザーのペルソナと使用可能なライセンスに基づいてパーソナライズされるため、各ユーザーは結果を効率的に達成できます。
+
+## AEMの AI アシスタント {#AI-assistant}
+
+AEM用 [AI アシスタント ](/help/implementing/cloud-manager/ai-assistant-in-aem.md) は、AEM製品に関する質問に即座に回答し（** すべてのユーザーが利用できます）、サポートチケットの作成を自動化するように設計された対話型インターフェイスを提供します（*管理者をサポートする場合に利用できます*）。 AEMに直接埋め込まれ、AEM Experience Hub、Cloud Managerおよびオーサー UI からアクセスできます。
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Experience Manager Sites の新機能 {#enhancements-sites}
 
-* コンテンツフラグメントと参照フラグメント（子フラグメント）を 1 回の操作でコピーできるようになりました。これにより、既存のコンテンツフラグメント構造を再利用して、新しいコンテンツを作成できます。
 * コンテンツフラグメント管理 UI では、コンテンツフラグメントのワークフローステータスと、選択したフラグメントの過去および現在実行中のワークフローの詳細情報を表示できるようになりました。
-* ライブコピーのソースページの名前を変更または移動すると、それに応じて名前を変更または移動したライブコピーページの再公開がトリガーされるようになりました。
+* 新しいコンテンツフラグメントエディターでコンテンツフラグメントを開くパフォーマンスは、パスではなく UUID を使用してフラグメントを開くことで、一般的なシナリオで 25% 向上しました。
+* 参照フラグメントを使用してコンテンツフラグメントをコピーする際、参照フラグメントのコピーが、親フラグメントコピーと同じ場所に保存されるようになりました。
+* フォルダー設定でカスタムワークスペースを設定して、コンテンツフラグメントをAdobe Targetの設定済みワークスペースに書き出すことができるようになりました。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Dynamic Media テンプレートへのシェイプの追加**
-
-Experience Manager Assets の [Dynamic Media テンプレートにシェイプレイヤーを追加](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas)できるようになりました。 画像レイヤーやテキストレイヤーと同様に、シェイプレイヤーは、テンプレート URL 経由でリアルタイム更新用のパラメーターをサポートしています。また、テンプレート内のシェイプに CTA（コールトゥアクション）リンクを含めることもできます。
-
-![Dynamic Media テンプレートへのシェイプの追加](/help/assets/assets/enable-uniform-radius-shape.png)
-
-**AI 生成のメタデータの機能強化**
-
-AEM Assets では、アセットの参照ページの[カード表示またはリスト表示でのアセットタイトルの表示を設定](/help/assets/smart-tags.md#configure-ai-generated-titles)できるようになりました。自分で定義したアセットタイトル、AI を使用して生成されたタイトルを表示するか、アセットに既存のタイトルがない場合にのみ AI が生成されたタイトルを使用するかを選択できます。
-
-![AI 生成のタイトルの設定](/help/assets/assets/configure-title-ai-generated.png)
-
-フォルダーレベルで AI 生成のメタデータを無効にすることも選択できるようになりました。
-
 ### コンテンツハブの新機能 {#new-features-content-hub}
 
-**コンテンツハブでのブランディングの柔軟性の強化**
+**フィルタープロパティを使用した一括検索**
 
-既存のパーソナライゼーション機能を基に、コンテンツハブでは、管理者がカスタムロゴ画像を追加して、デプロイメントをさらにカスタマイズできるようになりました。また、バナー画像とロゴ画像の両方で TIFF ファイル形式のサポートが追加され、より柔軟なデザインが可能になります。
-
-**タイトル付きリンクでよりスマートな共有**
-
-共有リンクを生成する際に、アセットの詳細ビューからでも、1 つ以上のアセットを選択した後でも、タイトルを追加できるようになりました。これにより、受信者は、特に複数の共有アセットを受け取った場合に、各リンクの目的を簡単に識別できます。
-
-![プライベートリンクとパブリックリンク](/help/assets/assets/shared-link-for-assets.png)
-
-**フィルターナビゲーションの改善**
-
-コンテンツハブのフィルター内に「**すべて表示**」オプションが含まれるようになりました。これにより、ユーザーは、最大 10 個のファセットのみの現在の表示制限から使用可能なすべてのファセットとアセット数を表示できます。各フィルター内の検索機能と並べ替え機能が強化され、アセットをより効率的に検出および管理するのがより簡単になります。
-
-### AEM デスクトップアプリケーションリリース 3.0.0 {#desktop-app-release-3.0.0}
-
-新しいファイルとフォルダーの自動アップロード、強化されたファイル操作、よりスマートなアセット検出、AEM とのシームレスな統合により、コンテンツ管理がより高速、明確、直感的になります。
-
-機能の完全なリストについて詳しくは、[デスクトップアプリケーションリリースノート](https://experienceleague.adobe.com/ja/docs/experience-manager-desktop-app/using/release-notes)を参照してください。
+Content Hubを使用すると、必要なアセットをより迅速に見つけることができます。 新しい一括検索機能を使用すると、任意のフィルタープロパティに複数の値を区切り文字で区切って入力し（複数の SKU ID など）、一致するすべてのアセットを 1 回の検索で即座に取得できます。
 
 ### OpenAPI 機能を備えた Dynamic Media の新機能 {#new-features-dynamic-media-with-openapi}
 
-**公開前にアセットをプレビュー**
+**OpenAPI URL を使用した SEO に対応した DM**
 
-[!DNL Dynamic Media with OpenAPI capabilities] では、アセットを公開する前に、[!DNL AEM Sites] のオーサーページ内で直接アセットをプレビューできるようになりました。プレビュー用ページを関係者と共有し、ビジュアルの品質やコンテキストへの適合性についてフィードバックを収集します。レビューサイクルでは、公開用にアセットを最終決定する前に、複数のアセットバージョンを作成および管理できます。
+OpenAPI を使用して DM でアセット配信用のバニティー URL を作成し、長いシステム生成 UUID を短い読み取り可能な識別子に置き換えます。 これにより、リンクが SEO に適し、ブランドやキャンペーンとより適切に連携するようになります。 バニティ URL は、既存のワークフローを中断することなく、実行時に元のアセット UUID に自動的に解決されます。
 
-**OpenAPI 画像リクエスト用の拡張スマートイメージング**
-
-すべての OpenAPI 画像リクエストで、自動プロモーションとフォールバックロジックによるスマートイメージングを完全に活用できるようになりました。 この機能強化により、デバイスとネットワークの状態に応じて画像が最適化され、視覚的な品質を維持しながら、ページの読み込み速度が向上し、帯域幅の使用量が削減されます。
-
+>[!NOTE]
+>
+>この機能は、9 月 10 日（PT）に限定提供（LA）機能として提供されます。 [Adobe カスタマーサポートケースを作成して送信する ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) ことで、のデプロイメントでケースを有効にすることができます。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### AEM Forms の新機能 {#forms-new-features}
+* **日付と時刻の入力コンポーネント**：日付と時刻のコンポーネントが使用できるようになり、カレンダーと時計のインターフェイスを使用して、またはサポートされている形式で手動で値を入力して、日付と時刻の両方を選択できるようになりました。
+* [ ファイルのアップロードのエラー処理の強化 ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)：ファイル添付コンポーネントは、アップロードされたファイルタイプを許可リストと照合して自動的に検証するようになりました。 サポートされていない形式のファイルをユーザーがアップロードすると、フォームの送信中にエラーが表示されます。 また、このコンポーネントはファイルコンテンツをチェックして、そのタイプを検証するので、フォームの全体的なセキュリティが強化されます。
+* **カスタム送信アクションに対して指定されたエラー応答**：カスタム送信アクションで未処理のエラーが発生した場合は、エラーコード 502 が返されます。 これは、問題がカスタム送信アクションに関連していることを識別するのに役立ち、デバッグを容易にします。
+* [ レコードのドキュメントからの非表示フィールドの除外 ](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)：レコードのドキュメントから非表示フィールドを除外できるように、新しいプロパティが追加されました。 デフォルトでは、このオプションは選択されておらず、すべてのフォームフィールドに適用されます。
 
-* **アダプティブフォームとフォームフラグメント用のユニバーサルエディター**
+### AEM Formsのプレリリース機能
 
-  [ユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)で、アダプティブフォームと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成が迅速化され、一貫性が高まり、ススパムや自動化による悪用からの保護が強化されます。
+* [AFP レンディションの生成と同期 ](/help/forms/document-generation-afp-api.md): AEM Forms Communication API を使用して、XDP ファイルを AFP 形式に変換できるようになりました。 AFP は、大規模企業の印刷で広く使用されている高性能フォーマットです。
+* **ルールエディターの機能強化**
+   * **Validate 関数と Reset 関数の機能強化**:validate メソッドと reset メソッドで、パネルレベル、フィールドレベル、フォームレベルでの実行がサポートされるようになりました。 以前は、フォームレベルでのみサポートされていました。
+   * **最新のJavaScriptのサポート**:ECMAScript 2019 以降の機能がカスタム関数に対してサポートされ、より効率的なモジュール型で再利用可能なコードを記述できるようになりました
+   * **ルールエディターの「DoR をダウンロード」オプション**：レコードのドキュメント（DoR）をダウンロードする機能がルールエディターの標準（OOTB）オプションとして追加されました。
+     ![ レコードのドキュメント ](/help/forms/assets/document-of-record-rn.gif)
+   * **ルールエディターの動的変数**：ルールエディターで動的（一時的）変数を使用して、条件とアクションをより柔軟に定義できるようになりました。 非表示のフィールドは、一時的な値を格納する必要がなくなりました。
+   * **ルールエディターのカスタムイベントベースのルール**：カスタムイベントと、それらのイベントに基づくトリガールールを定義できるようになりました。
+   * **コンテキスト対応の繰り返し可能なパネルルール**：繰り返し可能なパネルでは、ルールが最後のパネルインスタンスのみに適用されるのではなく、コンテキストに基づいて実行されるようになりました。
+   * **パラメーターによってトリガーされるルール**：ルールエディターで、クエリパラメーター、UTM パラメーターまたはブラウザーパラメーターに基づくルール実行がサポートされるようになりました。
+   * **フォーム固有のカスタム関数**:Edge Delivery Services Formsでは、フォーム固有のカスタム関数スクリプトがサポートされるようになり、再利用可能なロジックをより柔軟に管理できるようになりました。
+   * **カスタム関数の静的インポート**：ユニバーサルエディターのルールエディターで静的インポートがサポートされるようになり、開発者は関数を整理、共有、複数のフォームで再利用できるようになりました。
 
-  ![ユニバーサルエディター](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
+### AEM Forms の早期導入機能
 
-
-* **Edge Delivery Services Forms 用のForms Submission Service**
-
-  [Forms送信サービス ](/help/forms/forms-submission-service.md) を使用すると、アダプティブフォームの送信データを、Google Sheets、Microsoft OneDrive、SharePointなどの一般的なスプレッドシートプラットフォームにシームレスに直接保存できます。 この統合により、選択したスプレッドシートにフォームデータを直接送信でき、手動でのデータ転送が不要になりエラーが減少するため、データ管理が合理化されます。主なメリットを次に示します。
-
-   * **直接統合：**&#x200B;フォームを設定して、データを指定したスプレッドシートに直接送信できるようにします。
-   * **カスタムデータマッピング：**&#x200B;フォームのフィールドを対応するスプレッドシートの列にマッピングし、整理された形で保存できるようにします。
-   * **アクセス制御：**&#x200B;既存のスプレッドシート権限を活用して、送信されたデータにアクセスしたり変更したりできるユーザーを管理します。
-
-* **アダプティブフォームから AFP レンディションの生成と同期**
-
-  [AFP Output Sync API](/help/forms/document-generation-afp-api.md) により、管理者やユーザーはアダプティブフォームから AFP（Advanced Function Presentation）出力を生成し、その出力を外部システムやストレージ場所と同期できるようになります。AFP は印刷に最適化された高性能なドキュメント形式で、大規模なエンタープライズ環境でよく使用されます。
-
-* **アダプティブフォームフラグメントの自動マッピングのサポート**
-
-  アダプティブFormsで [ アダプティブフォームフラグメントの自動マッピング ](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form) がサポートされるようになりました。 この機能強化により、スキーマオブジェクトが定義済みのフラグメント構造に一致する場合、一致するフラグメントが自動的に挿入されます。 これにより、フォームの作成を簡素化し、フラグメントの再利用性を向上し、データが統合されたフォーム間で一貫性を確保できます。
-
-* **レコードのドキュメント内のカスタムフォームタイトル**
-
-  作成者は、カスタムフォームタイトルを編集して、[ レコードのドキュメント内のカスタムフォームタイトル ](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record) を定義できるようになりました。 カスタムタイトルは、PDF ヘッダーやPDFのドキュメントプロパティに表示されるほか、PDFを開いたときに最初の表示タイトルとして表示されるので、明確な識別と一貫したブランディングが可能になります。
-
-* **制限されたファイルタイプのエラー処理の強化**
-
-  [ 制限されたファイルタイプのエラー処理 ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) がサポートされるようになりました。これにより、サポートされていないファイルのアップロードがブロックされます。 ユーザーがファイルを送信する際、ファイルのタイプをサポートされていない形式に変更すると、送信中にフォームがエラーをスローする。
-
+* **手書き署名コンポーネント**：手書き署名コンポーネントを使用して、契約書フォームなどのフォームにユーザーの署名を追加できるようになりました。 このコンポーネントを使用すると、ユーザーはマウス、スタイラスまたはタッチスクリーンを使用してフォーム内に直接署名を描画できます。
+* **ルールエディターでの直接 API 統合**：アダプティブFormsでは、フォームデータモデルを必要とせずに、ビジュアルルールエディターでの直接 API 統合をサポートするようになりました。 作成者は、URL または cURL インポートを使用して API を設定し、入力/出力パラメーターをマッピングし、認証で安全な呼び出しを行うことができます。
 
 <!--
-### Pre-release features in AEM Forms {#forms-new-pre-release-features}
-
-**Enhancements in Rule Editor**
-
-* The `validate` / `reset` method in the function list now supports validation at the panel, field, and form levels.
-* Client-side custom function parsing now supports ES10+ JavaScript features and static imports.
-* The button to download Document of Record (DoR) is now available as an out-of-the-box (OOTB) option in the rule editor.
-* Rules now support the use of dynamic variables.
-* Custom event-based rules are now supported.
-* Repeatable panel rules are now executed based on context, rather than only on the last panel instance.
-* Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
-* Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
-
-### New Early Access Features in AEM Forms {#forms-new-early-access-features}
-
-The AEM Forms Early Access Program offers a unique opportunity for you to get exclusive access to cutting-edge innovations and help shape their development.
-
-These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
-
-
 **Forms Optimization opportunities**
 
 Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
@@ -173,40 +122,18 @@ Key optimization opportunities include:
 
 With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. -->
 
-**インタラクティブ通信エディター用のルールエディター**
-
-直感的なポイント＆クリックのインターフェイスを使って、ドキュメント内で動的かつデータ駆動型のアクションを直接構築できます。コードを記述することなく、条件付きロジックの定義、ワークフローの自動化、コンテンツのパーソナライズを簡単に行えます。
-
-**カスタムコンポーネント用の AEM Forms Scaffolder CLI**
-
->[!VIDEO]（https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool）
-
-この CLI ツールを使用して、AEM Forms Edge Delivery Services の開発を加速できます。 カスタムコンポーネント開発をすぐに開始するためのコードと接続設定を瞬時に生成できます — 定型コード不要で手間もかかりません。
-
-**動的フォームデータ用 API 統合ツール**
-
-API 統合ツールにより、フォーム作成者は、ユーザーの操作に応じて外部の REST API から自動でデータを取得し入力する、動的でインテリジェントなフォームを作成できます。このコードなしの統合機能は、静的フォームをレスポンシブなデータ収集インターフェイスに変換します。
-
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
-### 権限管理のノードビュー {#node-view}
+### JavaScript コンパイルの更新 {#javascript-compilation}
 
-AEMでは、ノードビュー権限管理が導入されています。 主な機能は従来の UI と同じですが、よりユーザーフレンドリーで効率的です。 詳しくは、[ 専用の記事 ](/help/security/touch-ui-principal-view.md) を参照してください。
+デフォルトのクライアントサイドライブラリ（clientlibs）JavaScriptのコンパイルは、ECMASCRIPT5 ではなく ECMASCRIPT_2018 をターゲットとするようになりました。 この更新は以前は上書きできますが、デフォルトではパフォーマンスの向上、最新のJavaScript構文および機能が有効になっています。
 
-### 更新された非推奨プロセス {#updated-deprecation-process}
+### 今後の Java API の廃止 {#java-api-deprecation}
 
-Adobe は、パフォーマンス、セキュリティ、価値に関する標準を満たすように、機能、ライブラリ、API および設定を定期的に見直しています。機能がこれらの標準を満たさなくなった場合は廃止とマークされ、指定した削除日までに使用が停止されます。この日付までに、新しいビルドを進めたりデプロイしたりする前に、お客様にメール通知を届けたり、Cloud Managerで実行する必要があるアクションをお知らせしたりします。必要な対策を講じないと、AEM の新しいバージョンにアップグレードできなくなる可能性があり、セキュリティ、パフォーマンス、信頼性、可用性に関する影響が潜在します。
-
-詳しくは、[廃止に関する記事](/help/release-notes/deprecated-removed-features.md)を参照してください。
-
-#### 削除日近くの廃止予定の Java API と OSGi の設定 {#deprecated-near-removals}
-
-以下のリストを展開して、使用できなくなった廃止予定の API と OSGi 設定を確認します。 削除のタイムラインなどの詳細については、廃止に関するの記事を参照してください。
+一部の非推奨 API は、8 月 31 日の削除をターゲットにしているので、参照できなくなりました。 API の使用が検出された場合、9 月上旬にアクションセンターから通知が送信されます。また、9 月 25 日（PT）以降、Cloud Managerのビルド中に通知が表示され、使用を削除することが重要になります。 詳しくは、[ 非推奨の記事 ](/help/release-notes/deprecated-removed-features.md#aem-apis) を参照してください。ただし、便宜上、これらの API は次のとおりです。
 
 <details>
-  <summary>展開して廃止について確認</summary>
-
-Java API
+  <summary>展開して Java API の非推奨（廃止予定）を確認</summary>
 
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
@@ -224,19 +151,22 @@ Java API
 * `org.bson`
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
-
-OSGi プロパティ：
-
-* `org.apache.sling.commons.log.LogManager` (すべてのプロパティ)
-* `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`、`org.apache.sling.commons.log.pattern`)
-
 </details>
+
+<!--
+OSGi properties:
+
+* `org.apache.sling.commons.log.LogManager` (all properties)
+* `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
+* 
+
+-->
 
 ### Java 11 ランタイムのデプロイメント {#java11-runtime-deprecation}
 
-**Java 11 ランタイム*&#x200B;は廃止となり、大半の環境はよりパフォーマンスの高い &#x200B;** Java 21 ランタイム**&#x200B;にアップグレードされています。
+*Java 11 ランタイム* は廃止となり、大半の環境はよりパフォーマンスの高い **Java 21 ランタイム**&#x200B;にアップグレードされています。
 
-サポートされていない依存関係が原因で環境をアップグレードできなかった場合 ([Java 21 ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)を参照) は、次の具体的な手順を記載したメールが Adobeから届いているはずです。**2025 年 8 月 28 日**&#x200B;までに必要な更新がすべて完了していることを確認してください。これにより、中断することなく環境をアップグレードできます。
+サポートされていない依存関係が原因で環境をアップグレードできなかった場合 ([Java 21 ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)を参照) は、次の具体的な手順を記載したメールが Adobeから届いているはずです。**2025 年 10 月 1 日** までに必要な更新がすべて完了していることを確認してください。これにより、中断することなく環境をアップグレードできます。
 
 注：ランタイムバージョンは、コードのビルドバージョンとは別のものです。Java 21 を使用してビルドすることをお勧めしますが、Java 11 ビルドは引き続きサポートされています。Java 11 ビルドの廃止に関する通知は、今後共有される予定です。
 
@@ -244,48 +174,14 @@ OSGi プロパティ：
 
 4 月のリリースノートに記載されているように、AEMの Java ログは、すべてのお客様の環境で信頼性の高い監視を確実に行うために、標準に従う必要があります。ログ形式、出力ファイル、デフォルトログレベルの変更といったカスタムログ設定は、サポートされなくなりました。ログはデフォルトファイルにダイレクトされ続け、AEM 製品コードのデフォルトログレベルは保持される必要があります。 詳しくは、[ログに関する記事](/help/implementing/developing/introduction/logging.md#configuration-loggers)を参照してください。
 
-**8 月下旬**&#x200B;から、サポートされていないカスタムログの上書きは無視されるようになります。Adobe の分析によると、ほとんどのお客様は影響を受けることはありません。現在の設定が影響を受ける可能性があるお客様にはご連絡済みです。
+**9 月 25 日** 以降、サポートされていないカスタムログの上書きは無視されます。 Adobe の分析によると、ほとんどのお客様は影響を受けることはありません。現在の設定が影響を受ける可能性があるお客様にはご連絡済みです。
 
 カスタムログ動作に依存するダウンストリームプロセスを確認し、更新してください。例：
 
 * ログ転送システムでカスタムログ形式が想定されている場合は、取り込みルールを調整する必要がある可能性があります。
 * 以前にログレベルを変更してログの冗長性を削減したことがある場合は、デフォルトレベルに戻すとログのボリュームが増える可能性があることに注意してください。
 
-### 古いバージョンと監査ログのデフォルトのパージ {#mt-defaults}
-
-現在、コンテンツバージョンおよび監査ログは、関連するパージメンテナンスタスクがデフォルトで無効になっているので、明示的に設定されない限り、データは削除されません。
-
-ただし、リポジトリのパフォーマンスを最適化するために、次のガイドラインに従って、今後発表される日付でデフォルトでパージが有効になります。
-
-#### コンテンツのバージョン {#mt-content}
-
-* **新しい環境*（今後の日付より後に作成）（後で通知）
-   * **30 日*&#x200B;より古いバージョンは定期的に削除されます。
-   * 作成日に関係なく、最新のバージョンと現在のバージョンと共に過去 30 日間の最新の 5 つのバージョンが保持されます。
-
-* **既存の環境*（この予定日より前に作成）：
-   * **7 年*&#x200B;より古いバージョンは定期的に削除されます。
-   * 過去 7 年間のすべてのバージョンが保持されます。
-   * このデフォルトの高いしきい値によって、最近のデータが意図せずに削除されるのを防ぎます。ただし、リポジトリのパフォーマンスを最適化するには、小さい値を設定することをお勧めします。
-
-* これらのデフォルトは、設定パイプラインを使用してデプロイされた YAML 設定を通じて変更できます。
-
-#### 監査ログ {#mt-auditlogs}
-
-* **新しい環境*（今後作成され、個別に通知されます）：
-   * **7 日*&#x200B;より古いレプリケーション、DAM、ページ監査のログは、定期的に削除されます。
-   * デフォルトでは、すべてのイベントがログに記録されます。
-
-* **既存の環境*（この予定日より前に作成）：
-   * **7 年*&#x200B;より古いレプリケーション、DAM、ページ監査のログは、定期的に削除されます。
-   * デフォルトでは、すべてのイベントがログに記録されます。
-   * このデフォルトの高いしきい値によって、最近のデータが意図せずに削除されるのを防ぎます。ただし、リポジトリのパフォーマンスを最適化するには、小さい値を設定することをお勧めします。
-
-* これらのデフォルトは、設定パイプラインを使用してデプロイされた YAML 設定を通じて変更できます。
-
-詳しくは、[メンテナンスタスクに関する記事](/help/operations/maintenance.md#defaults)を参照してください。
-
-### Edge コンピューティング (Alpha プログラム) {#edge-computing}
+### Edge Computing （Beta プログラム） {#edge-computing}
 
 Edge コンピューティングを使用すると、CDN レイヤーで JavaScript を実行し、データ処理をエンドユーザーに近づけることができます。これにより待ち時間が短縮され、エッジでレスポンシブな動的エクスペリエンスが実現します。
 
@@ -294,7 +190,7 @@ Edge コンピューティングを使用すると、CDN レイヤーで JavaScr
 * コンテンツへのアクセスを許可する前に、ID プロバイダーを使用してユーザーを認証する
 * 位置情報、デバイスタイプまたはユーザー属性に基づくコンテンツのパーソナライズ
 * CDN と接触チャネルの間のミドルウェアとして機能させる
-* サードパーティの API からの応答をブラウザーに配信する前に再フォーマットする（および複数の API 応答を集計する）
+* ブラウザーに配信する前に、サードパーティ API からの応答を再フォーマットする（および複数の API 応答を集計する）
 * 様々なバックエンドからステッチされたコンテンツを使用し、サーバーレンダリングされた HTML をエッジで作成および提供
 * ChatGPT や Claude などの LLM がカスタムツールにアクセスできるように MCP サーバーを公開する
 
@@ -304,9 +200,9 @@ AEM パブリッシュ配信またはライブ実稼動サイトのEdge Delivery
 
 Adobe が管理する CDN では、[設定パイプラインの記事](/help/operations/config-pipeline.md#configurations)で説明されているように、柔軟な設定オプションが提供されます。
 
-Beta 版では、CDN オリジンセレクター、応答とリクエストの変換、CDN ログ転送などの機能に対して設定パイプラインをデプロイします。ユースケースについて詳しくは、[aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) にお問い合わせください。
+ベータ版では、CDN オリジンセレクター、応答およびリクエスト変換、CDN ログ転送などの機能に対する設定パイプラインをデプロイできます。 ユースケースについて詳しくは、[aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) にお問い合わせください。
 
-### RDE のスナップショット（Alpha プログラム） {#rde-snapshot-beta}
+### RDE のスナップショット（Alpha プログラム） {#rde-snapshot-program}
 
 Alpha では、高速開発環境（RDE）で、コードとコンテンツの現在の状態のスナップショットを取得し、後で復元できる機能がサポートされるようになりました。これは、元に戻す必要がある場合のあるコードを同期する場合や、異なる機能の開発を切り替える場合に役立つことがあります。また、テストの既知の開始点として、可変コンテンツのみを復元することもできます。
 
