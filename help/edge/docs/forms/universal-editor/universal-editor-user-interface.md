@@ -16,7 +16,7 @@ ht-degree: 97%
 
 # AEM Forms のユニバーサルエディターインターフェイスの操作
 
-[ユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)は、Edge Delivery Services を使用して AEM Forms を作成する視覚的なインターフェイスを提供します。これは、ユーザーに対してフォームがどのように表示されるかを正確に表示する **0}What You See Is What You Get（WYSIWYG）エクスペリエンスを提供します。**
+[ユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)は、Edge Delivery Services を使用して AEM Forms を作成する視覚的なインターフェイスを提供します。これは、ユーザーに対してフォームがどのように表示されるかを正確に表示する **0&rbrace;What You See Is What You Get（WYSIWYG）エクスペリエンスを提供します。**
 
 ![ユニバーサルエディターインターフェイスの概要](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
@@ -349,7 +349,7 @@ ht-degree: 97%
 
     ![バリエーションを生成]（/help/edge/docs/forms/universal-editor/assets/ue-variations.png）
 
-**詳細情報：**[バリエーションを生成ガイド](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**詳細情報：**&#x200B;[バリエーションを生成ガイド](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **コンテンツドラフト**
 
