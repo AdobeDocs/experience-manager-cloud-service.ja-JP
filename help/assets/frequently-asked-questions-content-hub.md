@@ -3,9 +3,9 @@ title: コンテンツハブに関するよくある質問（FAQ）
 description: コンテンツハブに関するよくある質問（FAQ）への回答を参照してください。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1669'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ AEM as a Cloud Service 環境でコンテンツハブを使用してアップロ
    >
    >2 つの Admin Console で Express および Assets の製品プロファイルに割り当てられたユーザーは、同一のメールアドレスと、**個人**&#x200B;アカウントではなく、ビジネス&#x200B;**エンタープライズまたはスクール**&#x200B;アカウントを使用する必要があります。理想的な設定は、両方の Admin Console を **Federated ID** として設定し、コンソール間の信頼関係を確立し、シームレスなシングルサインオンエクスペリエンスを実現することです。一部の Express プラン（Express Teams など）では、Federated ID／シングルサインオンはサポートされていません。
 
-コンテンツハブの Adobe Express 統合では、適切な製品の使用権限に加えて、割り当てられたユーザーが、コンテンツハブを動作させる Assets オーサー環境（少なくとも **[!UICONTROL # /content/dam/hydrated-assets/]** フォルダー階層）で[!UICONTROL 編集可能]の権限を持っている必要があります。このフォルダー階層では、コンテンツハブユーザーは Express を使用して作成したコンテンツを保存できます。詳しくは、管理ビュー（タッチ UI）の [権限管理](/help/security/touch-ui-principal-view.md)または簡易版の [アセットビューの権限管理](https://experienceleague.adobe.com/ja/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)を参照してください。
+コンテンツハブの Adobe Express 統合では、適切な製品の使用権限に加えて、割り当てられたユーザーが、コンテンツハブを動作させる Assets オーサー環境（少なくとも **[#UICONTROL /content/dam/hydrated-assets/]** フォルダー階層）で[!UICONTROL 編集可能]の権限を持っている必要があります。このフォルダー階層では、コンテンツハブユーザーは Express を使用して作成したコンテンツを保存できます。詳しくは、管理ビュー（タッチ UI）の [権限管理](/help/security/touch-ui-principal-view.md)または簡易版の [アセットビューの権限管理](https://experienceleague.adobe.com/ja/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)を参照してください。
 
 ## 組織のブランドガイドラインがホームページのリンクとして表示されるようにコンテンツハブを設定できますか？ {#content-hub-setup-brand-guidelines}
 
@@ -135,28 +135,28 @@ AEM as a Cloud Service 環境でコンテンツハブを使用してアップロ
 |  | セマンティック検索 | ✓ | − |
 |  | ローカライズされた検索とメタデータの表示 | ✓ | − |
 
-## 選択した環境のアセットのみを表示するリポジトリーを選択するにはどうすればよいですか？ {#select-repository-multiple-environments}
+## リポジトリを選択して、選択した環境のアセットのみを表示するにはどうすればよいですか？ {#select-repository-multiple-environments}
 
-Content Hubを実稼動用に設定し、他の下位環境に同じプログラムを設定した場合は、リポジトリーを選択し、選択した環境用のアセットを表示できます。 次の手順を実行します。
+同じプログラムに対して、実稼動環境用のコンテンツハブとその他の下位環境を設定した際は、リポジトリを選択して、選択した環境のアセットを表示できます。次の手順を実行します。
 
 1. 右側のパネルでユーザーアイコンをクリックします。
 
 1. 「**[!UICONTROL 製品設定]**」セクションで、「**[!UICONTROL リポジトリを選択]**」を選択します。
 
-1. **[!UICONTROL リポジトリ]** ドロップダウンメニューからリポジトリを選択し、「**[!UICONTROL OK]**」をクリックして確定します。
+1. **[!UICONTROL リポジトリ]**&#x200B;ドロップダウンメニューからリポジトリを選択し、「**[!UICONTROL OK]**」をクリックして確認します。
 
-   選択した環境のアセットがContent Hubに表示されるようになりました。
+   コンテンツハブには、選択した環境のアセットが表示されるようになりました。
 
-## Content Hubで.ZIP ファイルタイプのサムネールプレビューを表示する方法 {#thumbnail-preview-zip-file}
+## コンテンツハブでは、.ZIP ファイルタイプのサムネールプレビューをどのように表示できますか？ {#thumbnail-preview-zip-file}
 
-Content Hubで.ZIP などのファイルタイプのサムネールプレビューを提供するには、.ZIP が使用可能なAEM as a Cloud Service オーサリング環境のパスのルートに、`cq5dam.preview.jpg` または `cq5dam.preview.png` という名前のレンディションを追加します。
+コンテンツハブで .ZIP などのファイルタイプのサムネールプレビューを提供するには、AEM as a Cloud Service オーサリング環境で .ZIP が使用可能なパスのルートに、`cq5dam.preview.jpg` または `cq5dam.preview.png` という名前のレンディションを追加します。
 
 レンディションとして追加する画像：
 
-* JPG、JPEG、PNG のいずれかの形式です。
+* JPG、JPEG または PNG 形式が使用できます。
 
-* 50 MB 未満である必要があります
+* 50 MB 未満にする必要があります
 
-使用可能な場合、Content Hubはこの画像をContent Hub上の.ZIP ファイルのプレビューサムネールとして表示します。
+コンテンツハブで使用可能な場合、その画像はコンテンツハブ上の .ZIP ファイルのプレビューサムネールとして表示されます。
 
 

@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 source-git-commit: 0243251148af4f188785b1ef0e5ee8eeffe6e0bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2321'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 96%
 
 Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise、GitLab、Bitbucket リポジトリとの統合をサポートしています。
 
-お客様は、最新の Azure DevOps リポジトリと従来の VSTS （Visual Studio Team Services）リポジトリの両方をサポートすることで、Azure DevOps （Beta） Git リポジトリをCloud Managerにオンボーディングできるようになりました。
+また、Azure DevOps（Beta）Git リポジトリを Cloud Manager にオンボードできるようになりました。最新の Azure DevOps リポジトリとレガシー VSTS（Visual Studio Team Services）リポジトリの両方に対応しています。
 
 * Edge Delivery Services のユーザーは、オンボードされたリポジトリを使用して、サイトコードを同期およびデプロイできます。
 * AEM as a Cloud Service および Adobe Managed Services（AMS）のユーザーは、リポジトリをフルスタックパイプラインとフロントエンドパイプラインの両方にリンクできます。
 
 >[!NOTE]
 >
->この記事で説明されている Azure DevOps のサポートの追加は、プライベートベータ版プログラムを通じてのみ利用できます。 詳細およびベータ版登録方法については、[ 独自の Git の公開 ](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts) を参照してください。
+>この記事で説明する Azure DevOps に追加されたサポートは、Private Beta プログラムを通じてのみ使用できます。詳細と Beta の新規登録について詳しくは、[独自の Git の導入](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts)を参照してください。
 
 
 ## 外部リポジトリの設定
@@ -68,7 +68,7 @@ Cloud Manager での外部リポジトリの設定は、次の手順で構成さ
    | --- | --- |
    | **リポジトリ名** | 必須。新しいリポジトリのわかりやすい名前。 |
    | **リポジトリ URL** | 必須。リポジトリの URL。<br><br>GitHub でホストされているリポジトリを使用している場合は、パスの末尾を `.git` にする必要があります。<br>例：*`https://github.com/org-name/repo-name.git`*（URL パスは説明用です）。<br><br>外部リポジトリを使用している場合は、次の URL パス形式を使用する必要があります。<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> または <br>`https://self-hosted-domain/org-name/repo-name.git`<br>。Git ベンダーと一致させる必要があります。 |
-   | **リポジトリタイプを選択** | 必須。使用するリポジトリタイプを選択します。リポジトリ URL パスに GitLab や Bitbucket などの Git ベンダー名が含まれている場合、リポジトリタイプは既に事前に選択されています。：<ul><li>**GitHub**（GitHub Enterprise と自己ホスト型バージョンの GitHub）</li><li>**GitLab**（`gitlab.com` と自己ホスト型バージョンの GitLab の両方） </li><li>**Bitbucket**（`bitbucket.org`（クラウドバージョン））のみがサポートされています。Bitbucket のセルフホストバージョンは、2024 年 2 月 15 日（PT）以降に非推奨（廃止予定）になりました。</li><li>**Azure DevOps**（`dev.azure.com`） </ul> |
+   | **リポジトリタイプを選択** | 必須。使用するリポジトリタイプを選択します。リポジトリ URL パスに GitLab や Bitbucket などの Git ベンダー名が含まれている場合、リポジトリタイプは既に事前に選択されています。：<ul><li>**GitHub**（GitHub Enterprise と自己ホスト型バージョンの GitHub）</li><li>**GitLab**（`gitlab.com` と自己ホスト型バージョンの GitLab の両方） </li><li>**Bitbucket**（`bitbucket.org`（クラウドバージョン））のみがサポートされています。Bitbucket の自己ホスト型バージョンは、2024年2月15日（PT）以降に非推奨（廃止予定）になりました。</li><li>**Azure DevOps**（`dev.azure.com`） </ul> |
    | **説明** | オプション。リポジトリの詳細な説明です。 |
 
 1. 「**保存**」を選択して、リポジトリを追加します。
@@ -121,7 +121,7 @@ Cloud Manager での外部リポジトリの設定は、次の手順で構成さ
 
 [アクセストークンの管理](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)も参照してください。
 
->[!TAB Azure DevOps （Beta） ]
+>[!TAB Azure DevOps（Beta）]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
@@ -239,7 +239,7 @@ URL をプレーンテキストファイルにペーストします。コピー�
 | --- |
 | これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト：作成済み<li>プルリクエスト：更新済み<li>プルリクエスト：結合済み<li>プルリクエスト：コメント<li>リポジトリ：プッシュ</li></li></li></ul></ul></ul> |
 
->[!TAB Azure DevOps （Beta） ]
+>[!TAB Azure DevOps（Beta）]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 

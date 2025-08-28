@@ -6,9 +6,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
 source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2197'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 98%
 
    各パラメーターの意味は次のとおりです。
 
-   **na1** は、デフォルトのデータベースシャードを参照します。データベースシャードの値を更新することができます。[!DNL &#x200B; Adobe Acrobat Sign] クラウド設定で、[正しいシャード](https://helpx.adobe.com/jp/sign/using/identify-account-shard.html)をポイントしていることを確認します。
+   **na1** は、デフォルトのデータベースシャードを参照します。データベースシャードの値を更新することができます。[!DNL  Adobe Acrobat Sign] クラウド設定で、[正しいシャード](https://helpx.adobe.com/jp/sign/using/identify-account-shard.html)をポイントしていることを確認します。
 
    >[!NOTE]
    >
@@ -225,7 +225,7 @@ Adobe Acrobat Sign for Government Solutions チームには、AEM Forms と Adob
 
    各パラメーターの意味は次のとおりです。
 
-   **na1** は、デフォルトのデータベースシャードを参照します。データベースシャードの値を更新することができます。[!DNL &#x200B; Adobe Acrobat Sign] クラウド設定で、[正しいシャード](https://helpx.adobe.com/jp/sign/using/identify-account-shard.html)をポイントしていることを確認します。
+   **na1** は、デフォルトのデータベースシャードを参照します。データベースシャードの値を更新することができます。[!DNL  Adobe Acrobat Sign] クラウド設定で、[正しいシャード](https://helpx.adobe.com/jp/sign/using/identify-account-shard.html)をポイントしていることを確認します。
 
    >[!NOTE]
    >
@@ -262,7 +262,7 @@ AEM Forms as a Cloud Service では、定義された間隔で署名者のステ
 
 デフォルトの間隔を変更するには、**Adobe Acrobat Sign 設定サービス**&#x200B;の設定の **sign.status.exp** プロパティに [cron 式](https://en.wikipedia.org/wiki/Cron#CRON_expression)を指定します。
 
-例えば、毎日午前 0:00 に設定サービスを実行するには、**Adobe Acrobat Sign設定サービス** 設定の **sign.status.exp** プロパティを `0 0 0 1/1 * ? *` に指定します。 次の JSON ファイルに、設定サービスを毎日午前 0:00 に実行するサンプルを示します。
+例えば、毎日午前 00:00 に設定サービスを実行するには、**Adobe Acrobat Sign 設定サービス**&#x200B;設定の **sign.status.exp** プロパティを `0 0 0 1/1 * ? *` に指定します。次の JSON ファイルに、設定サービスを毎日午前 00:00 に実行するサンプルを示します。
 
 ```json
 {

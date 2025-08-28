@@ -1,14 +1,14 @@
 ---
-title: アダプティブフォームからMicrosoft&reg; OneDrive にデータを送信する方法
-description: 「OneDrive に送信」送信アクションを使用してAEM FormsとMicrosoft&reg; OneDrive を接続する合理化されたプロセスについて説明します。 OneDrive を構成し、データの保存と取得を効率的に行うための送信アクションを設定する手順を説明します
+title: Microsoft&reg; OneDrive へのアダプティブフォームの送信方法
+description: 「OneDrive に送信」送信アクションを使用して、AEM Forms を Microsoft&reg; OneDrive に接続する効率的なプロセスについて説明します。 OneDrive を設定し、効率的なデータの保存と取得用の送信アクションを指定する手順について説明します
 keywords: AEM Forms OneDrive との統合、Microsoft OneDrive への接続、AEM forms との OneDrive 構成セットアップ
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 role: User, Developer
 source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '921'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ AEM Forms と Microsoft® OneDrive のシームレスな統合の利点の一部
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
-<span> このビデオは、コアコンポーネントにのみ適用されます。 UE/基盤コンポーネントについては、の記事を参照してください。</span>
+<span>このビデオは、コアコンポーネントのみに適用されます。UE／基盤コンポーネントについて詳しくは、記事を参照してください。</span>
 
 OneDrive for AEM Forms の送信を設定するには、次の手順を実行します。
 
@@ -111,7 +111,7 @@ OneDrive にレコードのドキュメント（DoR）を保存することも�
 ユニバーサルエディターでオーサリングされたアダプティブフォームで OneDrive ストレージ設定を使用するには、次の手順を実行します。
 
 1. アダプティブフォームを編集用に開きます。
-1. エディターで&#x200B;**フォームプロパティを編集**&#x200B;拡張機能をクリックします。
+1. エディターで&#x200B;**フォームプロパティを編集**拡張機能をクリックします。
 **フォームプロパティ**&#x200B;ダイアログが表示されます。
 
    >[!NOTE]

@@ -3,7 +3,7 @@ title: CTT 使用後の IMS へのプリンシパルの一括アップロード
 description: グループおよびユーザーの一括アップロードファイルの概要と、Admin Console でファイルを使用して IMS でグループとユーザーを作成する方法について説明します。
 exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2384'
 ht-degree: 100%
 

@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Integration
 role: Admin
 source-git-commit: 58a0cb3fab9f3be1ff431aa5814797b6e6675265
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1997'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -70,11 +70,11 @@ AEM コンテンツフラグメントを Adobe Target に書き出すための�
 * 書き出しに使用する形式オプションを指定する
 * Target ワークスペースを宛先として選択する
 
-必要なオプションは、必要なフォルダーの **プロパティ** で選択できます。仕様は必要に応じて継承されます。
+必要なオプションは、必要なフォルダーの&#x200B;**プロパティ**&#x200B;で選択できます。仕様は必要に応じて継承されます。
 
 1. **Assets** コンソールに移動します。
 
-1. 適切なフォルダーの **プロパティ** を開きます。
+1. 適切なフォルダーの&#x200B;**プロパティ**&#x200B;を開きます。
 
    >[!NOTE]
    >
@@ -82,9 +82,9 @@ AEM コンテンツフラグメントを Adobe Target に書き出すための�
 
 1. 「**クラウドサービス**」タブを選択します。
 
-1. **Cloud Service設定** で、ドロップダウンリストからターゲット設定を選択します。
+1. **クラウドサービス設定**&#x200B;で、ドロップダウンリストからターゲット設定を選択します。
 
-1. Adobe Target Workspace を選択します。
+1. Adobe Target ワークスペースを選択します。
 
    例：
 
@@ -193,7 +193,7 @@ AEMで Target クラウド設定を作成するには、以下の手順を実行
      >
      >正確なターゲティングとは、クラウドサービスの設定が、コンテキストの読み込みを待ってからコンテンツを読み込むことを意味します。その結果、パフォーマンスに関しては、正確なターゲティングによって、コンテンツを読み込む前に数ミリ秒の遅延が生じる場合があります。
      >
-     >正確なターゲティングは、オーサーインスタンスで常に有効になっています。ただし、パブリッシュインスタンスでは、クラウドサービス設定（**http://localhost:4502/etc/cloudservices.html**）の「正確なターゲティング」の横にあるチェックマークをオフにすることで、正確なターゲティングをグローバルにオフにできます また、クラウドサービス設定での設定に関係なく、個々のコンポーネントに対して正確なターゲティングのオン／オフを切り替えることもできます。
+     >正確なターゲティングは、オーサーインスタンスで常に有効になっています。ただし、パブリッシュインスタンスでは、クラウドサービス設定（**http://localhost:4502/etc/cloudservices.html**）の「正確なターゲティング」の横にあるチェックマークをオフにすることで、正確なターゲティングをグローバルにオフにできます。また、クラウドサービス設定での設定に関係なく、個々のコンポーネントに対して正確なターゲティングのオン／オフを切り替えることもできます。
      >
      >この設定を変更しても、作成済みの対象コンポーネントには影響しません&#x200B;***。***&#x200B;これらのコンポーネントには直接変更を加える必要があります。
 
@@ -240,7 +240,7 @@ Target クラウド設定を設定したら、Target フレームワークを追
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=ja).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >

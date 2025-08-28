@@ -6,9 +6,9 @@ role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
 source-git-commit: fcc066945d1e44072c4718dd9c1d887dd97be0b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '504'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 90%
 
 >[!NOTE]
 >
->この記事で説明する機能は、ベータ版プログラムでのみ使用できます。 ベータ版に新規登録するには、[ パイプラインデプロイメントのワンクリックロールバック ](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback) を参照してください。
+>この記事で説明する機能は、Beta プログラムを通じてのみ使用できです。Beta に新規登録するには、[パイプラインデプロイメントのワンクリックロールバック](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)を参照してください。
 
 **デプロイした以前のコードを復元**&#x200B;を使用すると、パイプラインの実行を必要とせずに、環境を最後に成功したビルドに即座にロールバックできます。
 
@@ -31,9 +31,9 @@ ht-degree: 90%
 **デプロイした以前のコードを復元**&#x200B;機能は、以下の&#x200B;**すべて**&#x200B;の条件が true の場合にのみ使用可能です。
 
 * **環境の復元の作成**&#x200B;権限を保持している。権限の管理について詳しくは、[カスタム権限](/help/implementing/cloud-manager/custom-permissions.md)を参照してください。
-* 組織はベータ版プログラムに登録され、機能フラグがオンになっています。
+* 組織が Beta プログラムに登録され、機能フラグがオンになっている。
 * プログラムが AEM as a Cloud Service で実行されている。
-* 選択した環境は `Development` 環境です（Betaの一時的な制限）。
+* 選択した環境が `Development` 環境（一時的な Beta 制限）である。
 * この環境の最後のパイプラインが正常に完了し、実行から **30 日未満**&#x200B;である。
 * 環境のステータスが&#x200B;*実行中*&#x200B;で、進行中のパイプラインがない。
 

@@ -1,14 +1,14 @@
 ---
-title: アダプティブフォームの送信時にSharePoint ストレージにデータを送信する方法
-description: フォームの送信時に、アダプティブフォームからSharePoint リストやドキュメントライブラリなどのSharePoint ストレージにデータを送信する方法について説明します。
+title: アダプティブフォームの送信時に SharePoint ストレージにデータを送信する方法
+description: フォームの送信時に、アダプティブフォームから SharePoint リストやドキュメントライブラリなどの SharePoint ストレージにデータを送信する方法について説明します。
 keywords: アダプティブフォームの SharePoint リストの接続方法？、アダプティブフォームの SharePoint ドキュメントライブラリの接続方法、SharePoint への送信、SharePoint ドキュメントライブラリ設定の作成、アダプティブフォームでの SharePoint への送信アクションの使用、Microsoft® SharePoint リストへのアダプティブフォームの接続。
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 role: User, Developer
 source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '242'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 

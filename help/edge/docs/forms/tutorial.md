@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1921'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -241,7 +241,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
        npm install -g @adobe/aem-cli
    ```
 
-1. GitHub プロジェクトの複製：次のコマンドを使用して、GitHub からプロジェクトリポジトリを複製します。`<owner>` をリポジトリ所有者、`<repo>` をリポジトリ名に置き換えます。
+1. GitHub プロジェクトを複製：次のコマンドを使用して、GitHub からプロジェクトリポジトリを複製し、`<owner>` をリポジトリ所有者に、`<repo>` をリポジトリ名に置き換えます。
 
    ```
    git clone https://github.com/<owner>/<repo>

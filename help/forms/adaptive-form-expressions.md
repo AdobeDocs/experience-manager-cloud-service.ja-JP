@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: e5b77cc1-5fb1-4f73-afe6-64f1c407e42b
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2682'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 アダプティブフォームは、ダイナミックなスクリプト機能によってエンドユーザーのフォームへの入力作業を最適化および簡素化します。式を記述することで、フィールドやパネルのダイナミックな表示／非表示など、様々な動作を追加できるようになります。また、レポートを作成する計算指標フィールドを追加したり、フィールドを読み取り専用にしたり、検証ロジックを追加したりすることもできます。動的動作は、ユーザー入力や事前入力データに基づいています。
 
-アダプティブフォームの式言語は JavaScript™ です。すべての式は、有効な JavaScript™ の式で、アダプティブフォームのスクリプトモデル API を使用しています。これらの式は、特定のタイプの値を返します。アダプティブフォームクラス、イベント、オブジェクトおよびパブリック API の完全なリストについては、「[アダプティブフォーム用 JavaScript™ ライブラリ API リファレンス](https://helpx.adobe.com/jp/experience-manager/6-5/forms/javascript-api/index.html)」を参照してください。
+アダプティブフォームの式言語は JavaScript™ です。すべての式は、有効な JavaScript™ の式で、アダプティブフォームのスクリプトモデル API を使用しています。これらの式は、特定のタイプの値を返します。アダプティブフォームクラス、イベント、オブジェクトおよびパブリック API の完全なリストについては、「[アダプティブフォーム用 JavaScript™ ライブラリ API リファレンス](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)」を参照してください。
 
 ## 式を記述するためのベストプラクティス {#best-practices-for-writing-expressions}
 
@@ -214,7 +214,7 @@ GuideBridge は、ブラウザーのメモリーモデルでアダプティブ�
 
 * フォームフィールドをリセットするには、ボタンのクリック式で `guideBridge.reset()` API をトリガーします。同様に、クリック式 `guideBridge.submit()` として呼び出すことができる送信 API があります。
 
-* `setFocus()` API を使用して、様々なフィールドまたはパネル間でフォーカスを設定できます（パネルの場合、フォーカスは自動的に最初のフィールドに設定されます）。`setFocus()` には、パネル間ナビゲーション、前/次のトラバーサル、特定のフィールドへのフォーカスの設定など、幅広いオプションが用意されています。 例えば、次のパネルに移動するには、`guideBridge.setFocus(this.panel.somExpression, 'nextItem')` を使用します。
+* `setFocus()` API を使用して、様々なフィールドまたはパネル間でフォーカスを設定できます（パネルの場合、フォーカスは自動的に最初のフィールドに設定されます）。`setFocus()` には、パネル間ナビゲーション、前／次のトラバーサル、特定のフィールドへのフォーカスの設定など、幅広いオプションが用意されています。例えば、次のパネルに移動するには、`guideBridge.setFocus(this.panel.somExpression, 'nextItem')` を使用します。
 
 * アダプティブフォームやその特定のパネルを検証するには、`guideBridge.validate(errorList, somExpression).` を使用します。
 
@@ -269,7 +269,7 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 特定のフィールドタイプのカスタムパターンを作成して、同じタイプの他のフィールドに再利用するには、以下の手順を実行します。
 
 1. オーサーインスタンスで CRXDE Lite に移動します。
-1. カスタムパターンを管理するためのフォルダーを作成します。/apps ディレクトリの下に、タイプ sling:folder のノードを作成します。 例えば、`customPatterns` という名前でノードを作成します。このノードの下で、タイプ `nt:unstructed` の別のノードを作成して、`textboxpatterns` という名前を付けます。このノードには、追加したい様々なカスタムパターンが含まれています。
+1. カスタムパターンを管理するためのフォルダーを作成します。/apps ディレクトリの下で、タイプ sling:folder のノードを作成します。例えば、`customPatterns` という名前でノードを作成します。このノードの下で、タイプ `nt:unstructed` の別のノードを作成して、`textboxpatterns` という名前を付けます。このノードには、追加したい様々なカスタムパターンが含まれています。
 1. 作成したノードの「プロパティ」タブを開きます。例えば、`textboxpatterns` の「プロパティ」タブを開きます。このノードに `guideComponentType` プロパティを追加して、その値を *fd/af/components/formatter/guideTextBox* に設定します。
 
 1. このプロパティの値は、パターンを定義するフィールドに応じて変わります。数値フィールドの場合、`guideComponentType` プロパティの値は、*fd/af/components/formatter/guideNumericBox* です。日付選択フィールドの値は、*fd/af/components/formatter/guideDatepicker* す。

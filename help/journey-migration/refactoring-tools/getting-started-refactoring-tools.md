@@ -3,9 +3,9 @@ title: リファクタリングツール入門
 description: AEM as a Cloud Service でリファクタリングツールの使用を開始する方法について学ぶ
 exl-id: 84394bdd-2b92-4f5d-b08a-7dc2c681baa4
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '542'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 96%
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_upload"
 >title="Download"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=ja" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 -->
@@ -27,7 +27,7 @@ ht-degree: 96%
 
 リファクタリングツールを使用して、AEM as a Cloud Serviceとの互換性を保つためにコードを移行します。
 
-1. CAM プロジェクトをまだ作成していない場合は、[CAM でのプロジェクトの作成と管理 ](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md#create-project) を参照してください。
+1. CAM プロジェクトをまだ作成していない場合は、[CAM でのプロジェクトの作成と管理](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md#create-project)を参照してください。
 1. **コードリファクタリング**&#x200B;カードをクリックして、ソースコードをアップロードします。
 
    ![画像](/help/journey-migration/refactoring-tools/assets/rscam1.png)

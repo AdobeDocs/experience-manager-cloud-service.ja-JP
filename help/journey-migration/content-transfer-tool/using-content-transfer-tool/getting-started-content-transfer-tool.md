@@ -5,9 +5,9 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1654'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 96%
 
 SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プロセス中に接続の問題をトラブルシューティングするには、次の手順に従って、ソース AEM 環境のシステムコンソールで SSL ログを有効にします。
 
-1. **ツール/運営/Web コンソール** を選択するか、URL （*https://serveraddress:serverport/system/console/configMgr）に直接アクセスして、ソースインスタンス上のAdobe Experience Manager Web コンソールに移動し* す。
+1. **ツール／操作／Web コンソール**&#x200B;に移動するか、*https://serveraddress:serverport/system/console/configMgr* の URL に直接アクセスして、ソースインスタンスの Adobe Experience Manager web コンソールに移動します
 1. **コンテンツ転送ツール抽出サービスの設定**&#x200B;を検索します。
 1. 鉛筆アイコンボタンを使用して、設定値を編集します。
 1. を有効にします。 **抽出用の SSL ログを有効にする** 設定してから、 **保存**:
@@ -65,7 +65,7 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 >id="aemcloud_ctt_demo"
 >title="コンテンツ転送ツールの実行"
 >abstract="この節では、コンテンツ転送ツールを使用してコンテンツを AEM as a Cloud Service（オーサー／パブリッシュ）に移行する方法について説明します。"
->additional-url="https://video.tv.adobe.com/v/327070/?quality=12&learn=on&captions=jpn" text=" デモを見る"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" デモを見る"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ja#migration" text="チュートリアル - コンテンツ転送ツールの使用"
 
 次の節は、コンテンツ転送ツールの新しいバージョンに適用されます。この節では、コンテンツ転送ツールを使用してコンテンツを AEM as a Cloud Service に移行する方法について説明します。
@@ -102,7 +102,7 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 
    >[!NOTE]
    >
-   >名前は、AEM ノードと同じ規則に従う必要があるので、`. / : [ ] | * < > ^ ? { } % # ` や特殊な記号や絵文字などを含めることはできません。
+   >名前は AEM ノードと同じ規則に従う必要があるので、`. / : [ ] | * < > ^ ? { } % # ` の文字や、異常な記号または絵文字を含めることはできません。
 
 1. これで、リスト表示に移行リストが表示されます。3 つのドット記号（**...**）をクリックして、ドロップダウンを開き、「**抽出キーをコピー**」を選択します。このキーは、抽出段階で必要になります。この抽出キーをコピーします。
 

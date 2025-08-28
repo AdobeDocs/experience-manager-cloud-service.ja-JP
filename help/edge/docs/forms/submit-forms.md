@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
 source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '871'
 ht-degree: 100%
 
@@ -174,5 +174,5 @@ ht-degree: 100%
 
 
 
-次に、[「ありがとうございます」メッセージをカスタマイズ](/help/edge/docs/forms/thank-you-page-form.md)できます。
+次に、[お礼のメッセージをカスタマイズ](/help/edge/docs/forms/thank-you-page-form.md)できます。
 

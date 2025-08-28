@@ -7,9 +7,9 @@ feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Com
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1304'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ AEM Forms as a Cloud Service には、アダプティブフォームを Adobe Wo
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
-<span> このビデオは、コアコンポーネントにのみ適用されます。 UE/基盤コンポーネントについては、の記事を参照してください。</span>
+<span>このビデオは、コアコンポーネントのみに適用されます。UE／基盤コンポーネントについて詳しくは、記事を参照してください。</span>
 
 ## AEM Forms と Adobe Workfront Fusion を統合する前提条件 {#prerequisites}
 
@@ -180,7 +180,7 @@ Workfront Fusion のコアコンポーネントに基づくアダプティブフ
 ユニバーサルエディターを使用してオーサリングされたアダプティブフォームの送信アクションを設定するには：
 
 1. アダプティブフォームを編集用に開きます。
-1. エディターで&#x200B;**フォームプロパティを編集**&#x200B;拡張機能をクリックします。
+1. エディターで&#x200B;**フォームプロパティを編集**拡張機能をクリックします。
 **フォームプロパティ**&#x200B;ダイアログが表示されます。
 
    >[!NOTE]

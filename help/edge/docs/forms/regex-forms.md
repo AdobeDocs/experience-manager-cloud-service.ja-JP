@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
 source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -70,13 +70,13 @@ http または https で始まる有効な URL を確認します。
 YYYY-MM-DD 形式の日付を検証します。
 
 
-## 時間（HH:MM）
+## 時刻（HH:MM）
 
 ```regex
 ^([01][0-9]|2[0-3]):[0-5][0-9]$
 ```
 
-HH:MM 形式（24 時間形式）の時刻を検証します。
+HH:MM 形式（24 時間形式）で時刻を検証します。
 
 
 ## Zip コード（米国形式）

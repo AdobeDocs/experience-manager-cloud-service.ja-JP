@@ -5,9 +5,9 @@ role: Architect, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
 source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1258'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -138,7 +138,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
-> パネルのすべてのインスタンスがアダプティブフォームから削除されている場合、削除されたパネルのインスタンスを追加するには、_panelName 構文を使用してパネルのインスタンスマネージャをキャプチャし、インスタンスマネージャーの addInstance API を使用して削除されたインスタンスを追加します。例えば、&#39;_panelName.addInstance （）&#39;と指定します。 削除されたパネルのインスタンスを 1 つ追加します。
+> パネルのすべてのインスタンスがアダプティブフォームから削除されている場合、削除されたパネルのインスタンスを追加するには、_panelName 構文を使用してパネルのインスタンスマネージャをキャプチャし、インスタンスマネージャーの addInstance API を使用して削除されたインスタンスを追加します。例えば、「_panelName.addInstance()」です。削除されたパネルのインスタンスを 1 つ追加します。
 
 ## フォームテンプレート（XDP／XSD）からのサブフォームの繰り返しの使用  {#using-repeating-subforms-from-form-template-xdp-xsd}
 

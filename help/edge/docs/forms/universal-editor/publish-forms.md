@@ -1,25 +1,25 @@
 ---
-title: Edge Delivery Servicesを使用したアダプティブFormsの公開
-description: 実稼動用にEdge Delivery Servicesを使用してアダプティブFormsを公開、設定およびアクセスする方法について説明します。
+title: Edge Delivery Services を使用したアダプティブフォームの公開
+description: 実稼動環境での使用を目的として、Edge Delivery Services を使用してアダプティブフォームを公開、設定、アクセスする方法について説明します。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
-keywords: フォームの公開，Edge Delivery Services, フォーム設定，CORS, リファラーフィルター
+keywords: フォームの公開, Edge Delivery Services, フォーム設定, CORS, リファラーフィルター
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '746'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Edge Delivery Servicesを使用したアダプティブFormsの公開
+# Edge Delivery Services を使用したアダプティブフォームの公開
 
-アダプティブフォームを公開すると、エンドユーザーがEdge Delivery Services上でアクセスして送信できるようになります。 このプロセスには、フォームの公開、セキュリティ設定の設定、ライブフォームへのアクセスという 3 つの主なフェーズが含まれます。
+アダプティブフォームを公開すると、Edge Delivery Services でエンドユーザーがアクセスおよび送信できます。このプロセスには、フォームの公開、セキュリティ設定の指定、ライブフォームへのアクセスという 3 つの主なフェーズが含まれます。
 
-**成し遂げること：**
+**達成されること：**
 
-- Edge Delivery Servicesへのフォームの公開
+- フォームから Edge Delivery Services への公開
 - フォーム送信のセキュリティ設定の指定
 - 公開済みフォームへのアクセスと検証
 - 適切な URL ルーティングと CORS ポリシーの設定
@@ -28,26 +28,26 @@ ht-degree: 2%
 
 - Edge Delivery Services テンプレートを使用して作成されたアダプティブフォーム
 - フォームがテスト済みで、実稼動環境で使用できる状態
-- AEM Forms作成者の権限
-- Cloud Managerへのアクセス（実稼動用）
+- AEM Forms のオーサー権限
+- Cloud Manager へのアクセス（実稼動環境の設定用）
 - フォームブロックコードへの開発者アクセス（送信設定用）
 
-## 公開プロセスの概要
+## プロビジョニングプロセスの概要
 
-フォームのEdge Delivery Servicesへの公開は、次の 3 段階のアプローチに従います。
+Edge Delivery Services へのフォームの公開は、次の 3 段階のアプローチに従います。
 
-- **フェーズ 1：フォームの公開** - フォームを CDN に公開し、公開ステータスを確認する
-- **フェーズ 2：セキュリティの設定** – 安全に送信するための CORS ポリシーとリファラーフィルターの設定
-- **フェーズ 3：アクセスと検証** - フォームの機能をテストし、ワークフロー全体を検証する
+- **フェーズ 1：フォームの公開** - フォームを CDN に公開し、公開ステータスを確認します
+- **フェーズ 2：セキュリティ設定** - 安全な送信のために CORS ポリシーとリファラーフィルターを設定します
+- **フェーズ 3：アクセスと検証** - フォームの機能をテストし、ワークフロー全体を検証します
 
-各フェーズは前のフェーズに基づいて構築され、安全で機能的なデプロイメントを確保します。
+各フェーズは前のフェーズに基づいて作成され、安全で機能的なデプロイメントを確保します。
 
-### フェーズ 1：フォームを公開する
+### フェーズ 1：フォームの公開
 
-+++ 手順 1：公開の開始
++++ 手順 1：公開を開始
 
-1. **フォームへのアクセス**：アダプティブフォームをユニバーサルエディターで開きます
-2. **公開を開始**：ツールバーの **公開** アイコンをクリックします
+1. **フォームにアクセス**：アダプティブフォームをユニバーサルエディターで開きます
+2. **公開を開始**：ツールバーの「**公開**」アイコンをクリックします
 
    ![「公開」をクリック](/help/forms/assets/publish-icon-eds-form.png)
 
@@ -56,70 +56,70 @@ ht-degree: 2%
 
 +++ 手順 2：レビューと確認
 
-1. **公開アセットのレビュー**：フォームを含む、公開中のすべてのアセットが表示されます
+1. **公開アセットをレビュー**：フォームを含む、公開中のすべてのアセットが表示されます
 
    ![「公開」をクリックした場合](/help/forms/assets/on-click-publish.png)
 
-2. **公開を確認**:「**公開**」をクリックして続行します
-3. **成功の検証**：確認メッセージを探します
+2. **公開を確認**：「**公開**」をクリックして続行します
+3. **成功を検証**：確認メッセージを探します
 
    ![公開成功](/help/forms/assets/publish-success.png)
 
 +++
 
 
-+++ 手順 3：公開ステータスの確認
++++ 手順 3：公開ステータスを検証
 
-**ステータスを確認**：現在のステータスを表示するには、「**公開**」アイコンを再度クリックします
+**ステータスを確認**：現在のステータスを表示するには、「**公開**」アイコンをもう一度クリックします
 
 ![公開ステータス](/help/forms/assets/publish-status.png)
 
 **検証チェックポイント：**
 
 - フォームのステータスがエディターに「公開済み」と表示される
-- 公開プロセス中にエラーメッセージが表示されません
+- 公開プロセス中にエラーメッセージが表示されない
 - フォームが公開済みアセットリストに表示される
 
 +++
 
 
-+++ 公開済みFormsの管理
++++ 公開済みフォームを管理
 
 **フォームを非公開にするには：**
 
-1. フォームをエディターで開きます
-2. 右上隅の「。..」メニュー（⋯）をクリックします
-3. **非公開** を選択します。
+1. エディターでフォームを開きます
+2. 右上隅の 3 つのドットメニュー（⋯）をクリックします
+3. 「**非公開**」を選択します
 
-![ フォームを非公開 ](/help/forms/assets/unpublish--form.png)
+![フォームを非公開](/help/forms/assets/unpublish--form.png)
 
 +++
 
 
-### フェーズ 2：セキュリティ設定の構成
+### フェーズ 2：セキュリティ設定の指定
 
 +++ セキュリティ設定が必要な理由
 
-安全なフォーム送信を有効にするには、次のセキュリティ設定を行う必要があります。
+安全なフォーム送信を有効にするには、次のセキュリティ設定を指定する必要があります。
 
-- Edge Delivery ServicesがAEMにデータを送信できるようにする
-- AEM インスタンスへの不正アクセスの防止
-- フォーム送信用の CORS （クロスオリジンリソース共有）を有効にする
-- 正当なEdge Delivery ドメインのみを許可するようにリクエストをフィルタリングします
+- Edge Delivery Services が AEM にデータを送信できるようにする
+- AEM インスタンスへの不正アクセスを防止する
+- フォーム送信用の CORS（クロスオリジンリソース共有）を有効にする
+- 正当な Edge Delivery ドメインのみを許可するようにリクエストをフィルタリングする
 
 >[!IMPORTANT]
 >
->**実稼動環境で必須**：これらの設定は、フォーム送信が実稼動環境で機能するために必須です。
+>**実稼動環境に必須**：実稼動環境でフォーム送信が機能するには、これらの設定が必須です。
 
 +++
 
 
 
-+++ 手順 1：フォーム送信 URL の設定
++++ 手順 1：フォーム送信 URL を設定する
 
-**目的**：フォーム送信をAEM インスタンスにダイレクトする
+**目的**：AEM インスタンスへのフォーム送信を直接行います
 
-**ファイルの場所**:Edge Delivery Services プロジェクト内の `blocks/form/constant.js`
+**ファイルの場所**：Edge Delivery Services プロジェクトの `blocks/form/constant.js`
 
 **設定例：**
 
@@ -136,19 +136,19 @@ export const submitBaseUrl = 'https://publish-staging-p120-e12.adobeaemcloud.com
 
 **検証チェックポイント：**
 
-- `constant.js` ファイルが正しいAEM公開 URL で更新される
-- URL が環境（実稼動、ステージングまたはローカル）と一致する
-- URL の末尾のスラッシュなし
+- `constant.js` ファイルが正しい AEM 公開 URL で更新されている
+- URL が環境（実稼動環境、ステージング環境、ローカル）と一致している
+- URL の末尾にスラッシュが含まれていない
 
 +++
 
 
 
-+++ 手順 2:CORS 設定の指定
++++ 手順 2：CORS 設定を指定
 
-**目的**:Edge Delivery Services ドメインからのフォーム送信リクエストを許可する
+**目的**：Edge Delivery Services ドメインからのフォーム送信リクエストを許可します
 
-**実装**:CORS 設定をAEM Dispatcher または Apache 設定に追加します
+**実装**：AEM Dispatcher または Apache 設定に CORS 設定を追加します
 
 ```apache
 # Local Development Environment
@@ -163,26 +163,26 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 **検証チェックポイント：**
 
-- Dispatcher 設定に適用される CORS ルール
-- 必要なすべてのドメイン（localhost、hlx.page、hlx.live）が含まれています
-- ターゲット環境にデプロイされた設定
+- Dispatcher 設定に CORS ルールが適用されている
+- 必要なすべてのドメイン（localhost、hlx.page、hlx.live）が含まれている
+- 設定がターゲット環境にデプロイされている
 
-**リファレンスドキュメント：**
+**参照ドキュメント：**
 
-- [CORS 設定ガイド ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
-- [ リファラーフィルタードキュメント ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
+- [CORS 設定ガイド](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [リファラーフィルタードキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
 +++
 
 
 
-+++ 手順 3：リファラーフィルターの設定
++++ 手順 3：リファラーフィルターを設定
 
-**目的**：書き込み操作を、許可されたEdge Delivery Services ドメインに制限する
+**目的**：書き込み操作を許可された Edge Delivery Services ドメインに制限します
 
-**実装方法**:AEM as a Cloud ServiceのCloud Managerを使用してを設定する
+**実装方法**：AEM as a Cloud Service の Cloud Manager 経由で設定します
 
-**設定ファイル**：をプロジェクトの OSGi 設定に追加します
+**設定ファイル**：プロジェクトの OSGi 設定に追加します
 
 ```json
 {
@@ -207,21 +207,21 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 **設定の分類：**
 
-- **`allow.empty`**: リファラーヘッダーのないリクエストを拒否します
-- **`allow.hosts.regexp`**:Edge Delivery Services ドメインからのリクエストを許可します
+- **`allow.empty`**：リファラーヘッダーのないリクエストを却下します
+- **`allow.hosts.regexp`**：Edge Delivery Services ドメインからのリクエストを許可します
 - **`filter.methods`**：これらの HTTP メソッドにフィルタリングを適用します
-- **`exclude.agents.regexp`**：ユーザーエージェントがフィルタリングから除外されました
+- **`exclude.agents.regexp`**：フィルタリングからユーザーエージェントを除外します
 
 **検証チェックポイント：**
 
-- Cloud Managerを介してデプロイされたリファラーフィルターの設定
-- AEM パブリッシュインスタンスでアクティブな設定
-- Edge Delivery Services ドメインからのフォーム送信のテストが機能します
-- 承認されていないドメインのフォーム送信はブロックされます
+- リファラーフィルター設定が Cloud Manager 経由でデプロイされている
+- AEM パブリッシュインスタンスで設定がアクティブである
+- Edge Delivery Services ドメインからのテストフォーム送信が機能している
+- 不正ドメインからのフォーム送信がブロックされている
 
-**リファレンスドキュメント：**
+**参照ドキュメント：**
 
-- [Cloud Managerを使用したリファラーフィルターの設定 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
+- [Cloud Manager 経由のリファラーフィルターの設定](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 
 +++
 
@@ -230,7 +230,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 
 
-+++ Edge Delivery Servicesの URL 構造
++++ Edge Delivery Services の URL 構造
 
 **標準 URL 形式：**
 
@@ -240,12 +240,12 @@ https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>
 
 **URL コンポーネント：**
 
-- **`<branch>`**:Git ブランチ名（通常は `main`）
-- **`<repo>`**: リポジトリ名
-- **`<owner>`**:GitHub 組織またはユーザー名
+- **`<branch>`**：Git 分岐名（通常は `main`）
+- **`<repo>`**：リポジトリ名
+- **`<owner>`**：GitHub 組織またはユーザー名
 - **`<form_name>`**：フォームの名前（小文字、ハイフン）
 
-**環境固有の URL:**
+**環境固有の URL：**
 
 ```
 # Production Environment (.aem.live)
@@ -263,18 +263,18 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 
 **フォームアクセシビリティの検証：**
 
-1. **フォームの読み込みをテスト**：フォーム URL にアクセスして、フォームが正しく読み込まれていることを確認します
+1. **フォームの読み込みをテスト**：フォームの URL にアクセスし、正しく読み込まれることを確認します
 2. **フォーム送信をテスト**：フォームに入力して送信し、データ処理を確認します
-3. **レスポンシブデザインの確認**：異なるデバイスや画面サイズでフォームをテストします
-4. **セキュリティの検証**:CORS およびリファラーフィルターが正しく動作していることを確認します
+3. **レスポンシブデザインを確認**：様々なデバイスと画面サイズでフォームをテストします
+4. **セキュリティを検証**：CORS とリファラーフィルターが正しく動作していることを確認します
 
 **期待される結果：**
 
-- エラーなしでフォームを読み込む
-- すべてのフォームフィールドが正しくレンダリングされます
-- フォーム送信プロセスが正常に実行されました
+- エラーなしでフォームが読み込まれる
+- すべてのフォームフィールドが正しくレンダリングされる
+- フォーム送信プロセスが正常に完了する
 - 設定した宛先（スプレッドシート、メールなど）にデータが表示される
-- CORS やセキュリティポリシーに関連するコンソールエラーはありません。
+- CORS やセキュリティポリシーに関連するコンソールエラーが発生しない
 
 +++
 

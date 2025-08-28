@@ -1,14 +1,14 @@
 ---
 title: アダプティブフォームの送信時にメールを送信する方法
-description: アダプティブフォームの送信時にメール通知を設定するプロセスを調べます。
+description: アダプティブフォームの送信時にメール通知を設定するプロセスについて説明します。
 keywords: アダプティブフォーム用のメールの送信方法、メール送信アクション、アダプティブフォームメール、フォーム送信メール、メールの送信ガイド
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 role: User, Developer
 source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '841'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 97%
 ユニバーサルエディターで「メールを送信」送信アクションを設定するには：
 
 1. アダプティブフォームを編集用に開きます。
-1. エディターで&#x200B;**フォームプロパティを編集**&#x200B;拡張機能をクリックします。
+1. エディターで&#x200B;**フォームプロパティを編集**拡張機能をクリックします。
 **フォームプロパティ**&#x200B;ダイアログが表示されます。
 
    >[!NOTE]

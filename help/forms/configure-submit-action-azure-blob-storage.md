@@ -1,14 +1,14 @@
 ---
-title: AEM アダプティブFormsを Azure Blob Storage に接続する方法
-description: AEM Formsで Azure Blob Storage 設定を作成し、アダプティブForms内で使用して、効率的なデータストレージを実現する方法について説明します。
+title: Azure Blob Storage に AEM アダプティブフォームを接続する方法
+description: AEM Forms で Azure Blob Storage 設定を作成し、アダプティブフォーム内で使用して、効率的なデータストレージを実現する方法について説明します。
 keywords: AEM Forms との Azure Blob Storage の統合、Azure ストレージへのデータの送信、AEM Forms での Azure ストレージ設定の作成、アダプティブフォーム送信アクションでの Azure Blob Storage の使用
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 exl-id: 0c9f8f85-c4e9-4c79-bd0b-abdcac99a2d4
 role: User, Developer
 source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '818'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -51,8 +51,8 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
     >[!NOTE]
     >
     > The URL for **[!UICONTROL Azure Blob Endpoint]** is automatically appended to the textbox when a value is entered for **[!UICONTROL Azure Storage Account]**. You can update the Azure Blob End Point URL with your custom domain. Steps to update URL for **[!UICONTROL Azure Blob End Point]**:
-    > 1. [Enable the AEM Advance Networking VPN support](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=ja)
-    > 1. [Enable dedicated egress IP link](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=ja)
+    > 1. [Enable the AEM Advance Networking VPN support](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
+    > 1. [Enable dedicated egress IP link](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
     > 1. [Map custom domain to azure blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name?tabs=azure-portal)
 -->
 
@@ -112,7 +112,7 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
 ユニバーサルエディターでオーサリングされたアダプティブフォームで Azure ストレージコンテナ設定を使用するには、次の手順を実行します。
 
 1. アダプティブフォームを編集用に開きます。
-1. エディターで&#x200B;**フォームプロパティを編集**&#x200B;拡張機能をクリックします。
+1. エディターで&#x200B;**フォームプロパティを編集**拡張機能をクリックします。
 **フォームプロパティ**&#x200B;ダイアログが表示されます。
 
    >[!NOTE]

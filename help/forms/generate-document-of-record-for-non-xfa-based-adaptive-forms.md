@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
 source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4221'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -175,7 +175,7 @@ When you select a form model, configure Document of Record using options availab
    <th>アダプティブフォームコンポーネント</th>
    <th>対応する XFA コンポーネント</th>
    <th>レコードのドキュメントのテンプレートにデフォルトで含まれていますか？</th>
-   <th>備考</th>
+   <th>メモ</th>
   </tr>
   <tr>
    <td>ボタン</td>
@@ -265,7 +265,7 @@ When you select a form model, configure Document of Record using options availab
   <tr>
    <th>アダプティブフォームコンポーネント</th>
    <th>対応する XFA コンポーネント</th>
-   <th>備考</th>
+   <th>メモ</th>
   </tr>
   <tr>
    <td>パネル<br /> </td>
@@ -277,7 +277,7 @@ When you select a form model, configure Document of Record using options availab
 
 ### 静的コンポーネント {#static-components}
 
-| アダプティブフォームコンポーネント | 対応する XFA コンポーネント | 備考 |
+| アダプティブフォームコンポーネント | 対応する XFA コンポーネント | メモ |
 |---|---|---|
 | 画像 | 画像 | レコードのドキュメント設定を使用して除外されない限り、TextDraw と Image の各コンポーネントは、バインドされているかどうかを問わず、XSD ベースのアダプティブフォーム用のレコードのドキュメントに常に表示されます。 |
 
@@ -362,7 +362,7 @@ When you select a form model, configure Document of Record using options availab
       * **チェックボックスおよびラジオボタンのコンポーネントには、選択した値のみを表示**：このプロパティを設定すると、チェックボックスとラジオボタンの選択された値のみが[!UICONTROL レコードのドキュメント]に表示されます。
       * **複数の値の区切り記号**：複数の値を表示する場合は、カンマや改行などの任意の区切り記号を選択できます。
       * **オプションの位置揃え**：目的の整列（水平、垂直、アダプティブフォームと同じ）を選択して、[!UICONTROL レコードのドキュメント]に表示するチェックボックスやラジオボタンなどのフィールドの整列を設定することができます。デフォルトでは、垂直揃えが[!UICONTROL レコードのドキュメント]のフィールドに設定されています。DoR の[!UICONTROL フォームフィールドのプロパティ]からプロパティを設定すると、アダプティブフォームのフィールドの[!UICONTROL 項目の整列]で設定されたプロパティが上書きされます。例えば「[!UICONTROL アダプティブフォームと同じ]」オプションを使用する場合は、アダプティブフォームのオーサーインスタンスで設定された整列が[!UICONTROL レコードのドキュメント]のフィールドに使用されます。
-      * **水平揃えのオプション数**:You 水平揃えの場合にレコードのドキュメントに表示するオプションの数を設定できます。
+      * **水平揃えのオプション数**:You&#x200B;では、水平揃えの場合にレコードのドキュメントに表示するオプションの数を設定できます。
 
       ![フォームフィールドのプロパティ](/help/forms/assets/formfieldpropertiesdor.png)
 
@@ -412,7 +412,7 @@ When you select a form model, configure Document of Record using options availab
 1. 「![アイコンを設定](/help/forms/assets/configure-icon.svg)」アイコンをクリックして、アダプティブフォームコンテナの&#x200B;**[!UICONTROL プロパティ]**&#x200B;開きます。
 1. 「**[!UICONTROL レコードのドキュメントのテンプレート]**」タブを開き、次のオプションから選択します。
    * **[!UICONTROL なし]**：このオプションを選択すると、アダプティブフォーム用に[!UICONTROL レコードのドキュメント]のテンプレートは作成されません。
-   * **[!UICONTROL フォームテンプレートをレコードのドキュメントのテンプレートとして関連付ける &#x200B;]**:When このオプションを選択すると、XFA フォームがレコードのドキュメントのテンプレートとして使用されます。
+   * **[!UICONTROL フォームテンプレートをレコードのドキュメントのテンプレートとして関連付ける]**:When：このオプションを選択すると、XFA フォームがレコードのドキュメントのテンプレートとして使用されます。
    * **[!UICONTROL レコードのドキュメントを生成]**：このオプションを選択すると、[!UICONTROL レコードのドキュメント]のテンプレートがアダプティブフォーム用に自動的に生成されます。
 
 1. 「![保存](/help/forms/assets/check-button.png)」を選択して、プロパティを保存します。
