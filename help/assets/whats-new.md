@@ -56,7 +56,7 @@ Content Hubでは、作成時にコレクションへのアクセスを制御で
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
-[!BADGE  この機能の詳細 ]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
+[!BADGE &#x200B; この機能の詳細 &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
 
 ## の機能を 5 月リリース {#may-release-features}
 
@@ -86,7 +86,7 @@ Content Hubでは、アセットへのアクセスにルールベースの制限
 
 * 重複の数を減らす – アセットの整合性を向上させます。同じアセットが異なるグループと共有される場合は、フォルダーベースの権限で重複が必要になります。
 
-[!BADGE  この機能の詳細 ]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
+[!BADGE &#x200B; この機能の詳細 &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
 
 ### UI ブランディング {#ui-branding}
 
@@ -94,7 +94,7 @@ Content Hubのプライマリカラーとセカンダリカラーに加え、バ
 
 ![UI ブランディング](/help/assets/assets/content-hub-ui-branding.png)
 
-[!BADGE  この機能の詳細 ]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
+[!BADGE &#x200B; この機能の詳細 &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
 
 ### 公開リンク共有 {#public-link-sharing}
 
@@ -102,13 +102,13 @@ Content Hubで共有可能なリンクの生成がサポートされるように
 
 ![UI ブランディング](/help/assets/assets/public-and-private-link.png)
 
-[!BADGE  この機能の詳細 ]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
+[!BADGE &#x200B; この機能の詳細 &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
 
 ### 複数のアセットを ZIP としてダウンロード {#download-multiple-assets-as-zip}
 
 また、Content Hubでは、選択したアセットとそのレンディションを、ファイル管理を簡素化する個別のファイルとしてダウンロードするのではなく、ZIP ファイルでダウンロードできるようになりました。
 
-[!BADGE  この機能の詳細 ]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE &#x200B; この機能の詳細 &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
 ### Content Hubの Dynamic Media レンディション {#dynamic-media-renditions}
 
@@ -116,4 +116,4 @@ Content Hub ユーザーインターフェイス内から直接、すべての D
 
 ![Dynamic Media レンディション](/help/assets/assets/dm-renditions-content-hub.png)
 
-[!BADGE  この機能の詳細 ]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE &#x200B; この機能の詳細 &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
