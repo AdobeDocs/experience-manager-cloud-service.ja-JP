@@ -8,7 +8,7 @@ exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '1388'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -490,7 +490,7 @@ JSON スキーマ v4 からバージョン 2020-12 仕様への主な変更点�
 
 ## JSON スキーマ定義でのフィールドの事前設定 {#pre-configuring-fields-in-json-schema-definition}
 
-**aem:afProperties** プロパティを使用して JSON スキーマのフィールドを事前設定し、カスタムのアダプティブフォームコンポーネントにマップできます。 次に例を示します。
+**aem:afProperties** プロパティを使用して JSON スキーマのフィールドを事前設定し、カスタムのアダプティブフォームコンポーネントにマッピングできます。次に例を示します。
 
 ```json
 {

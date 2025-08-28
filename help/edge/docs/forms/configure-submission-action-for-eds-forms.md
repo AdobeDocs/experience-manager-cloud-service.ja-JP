@@ -7,94 +7,94 @@ exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
 source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 13%
+ht-degree: 79%
 
 ---
 
-# AEM Formsの送信アクションの設定
+# AEM Forms の送信アクションの設定
 
-Edge Delivery ServicesのAEM Formsを使用してデータをスプレッドシート、メール、バックエンドシステムにルーティングするためのフォーム送信処理を設定します。
+AEM Forms と Edge Delivery Services を使用して、フォーム送信処理を設定し、データをスプレッドシート、メール、バックエンドシステムにルーティングします。
 
 ## クイック決定ガイド
 
 送信方法を選択します。
 
-| メソッド | 次に最適 | セットアップの複雑さ | ユースケース |
+| メソッド | 次に最適 | 設定の複雑さ | ユースケース |
 |--------|----------|------------------|-----------|
-| **Forms送信サービス** | シンプルなデータキャプチャ | 低 | お問い合わせフォーム、調査、基本データ収集 |
-| **AEM公開送信** | 複雑なワークフロー | 高 | エンタープライズ統合、カスタム処理、ワークフロー |
+| **Forms 送信サービス** | シンプルなデータキャプチャ | 低 | お問い合わせフォーム、調査、基本データ収集 |
+| **AEM パブリッシュ送信** | 複雑なワークフロー | 高 | エンタープライズ統合、カスタム処理、ワークフロー |
 
 ## 前提条件
 
 送信アクションを設定する前に、次を確認します。
 
 - AEM Forms as a Cloud Service インスタンス
-- Edge Delivery Services プロジェクトが設定されました
-- ドキュメントオーサリングまたはユニバーサルエディターを使用して作成されたフォーム
-- ターゲットの宛先（スプレッドシート、メールシステムまたはAEM）に必要な権限
+- Edge Delivery Services プロジェクトが設定されている
+- ドキュメントオーサリングまたはユニバーサルエディターを使用してフォームが作成済みである
+- ターゲットの宛先（スプレッドシート、メールシステム、AEM）に必要な権限がある
 
-+++ 方法 1:Forms送信サービス
++++ 方法 1：Forms 送信サービス
 
-Forms送信サービスは、Adobeでホストされるエンドポイントであり、シンプルなデータキャプチャシナリオに最適です。
+Forms 送信サービスは、シンプルなデータキャプチャシナリオに最適な、アドビがホストするエンドポイントです。
 
 ### サポートされる宛先
 
-- **スプレッドシート**:Google シート、Microsoft Excel （OneDrive/SharePoint）
-- **メール**：フォームデータを指定したメールアドレスに送信します
+- **スプレッドシート**：Google Sheets、Microsoft Excel（OneDrive／SharePoint）
+- **メール**：フォームデータを指定されたメールアドレスに送信します
 
 ### 設定手順
 
-1. **宛先アクセスの設定**
-   - スプレッドシートの場合：ターゲットスプレッドシートの `forms@adobe.com` に編集権限を付与します
-   - メールの場合：受信者のメールアドレスがアクセス可能であることを確認します
+1. **宛先アクセスを設定**
+   - スプレッドシートの場合：ターゲットスプレッドシートで `forms@adobe.com` に編集権限を付与します
+   - メールの場合：受信者のメールアドレスにアクセスできることを確認します
 
-2. **フォーム送信の設定**
-   - オーサリング環境でフォームを開きます
-   - 送信アクションを「Forms送信サービス」に設定する
-   - ターゲットスプレッドシートの URL またはメールアドレスを指定
+2. **フォーム送信を設定**
+   - フォームをオーサリング環境で開きます
+   - 送信アクションを「Forms 送信サービス」に設定します
+   - ターゲットスプレッドシートの URL またはメールアドレスを指定します
    - フォームを保存して公開します
 
-3. **テスト送信**
-   - フォームを使用したテストデータの送信
-   - データがターゲットの宛先に表示されることを確認します
-   - 送信に失敗した場合のエラーログの確認
+3. **送信をテスト**
+   - フォームを通じてテストデータを送信します
+   - ターゲットの宛先にデータが表示されることを確認します
+   - 送信に失敗した場合はエラーログを確認します
 
 ### 重要な注意事項
 
-- サービス アカウント `forms@adobe.com` はターゲット スプレッドシートへの編集アクセスが必要です
-- メール通知は、フォーム送信時に直ちに送信されます
-- データの検証はサービス・レベルで行われる
+- サービスアカウント `forms@adobe.com` には、ターゲットスプレッドシートへの編集アクセス権が必要です
+- フォームを送信するとすぐにメール通知が送信されます
+- データ検証はサービスレベルで行われます
 
-![Forms送信サービスフロー ](/help/forms/assets/eds-fss.png)
+![Forms 送信サービスのフロー](/help/forms/assets/eds-fss.png)
 
 +++
 
-+++ 方法 2:AEMの送信内容の公開
++++ 方法 2：AEM パブリッシュ送信
 
-複雑な処理のために、フォームデータをAEM as a Cloud Service パブリッシュインスタンスに直接送信します。
+複雑な処理のために、フォームデータを AEM as a Cloud Service パブリッシュインスタンスに直接送信します。
 
-### AEMの公開を使用するタイミング
+### AEM パブリッシュを使用するタイミング
 
 - 送信後に必要なカスタム AEM ワークフロー
 - フォームデータモデル（FDM）とデータベースの統合
-- サードパーティのサービス統合（Marketo、Power Automate、Workfront Fusion）
-- Azure Blob Storage またはSharePoint ドキュメントライブラリ
-- 複雑なサーバーサイドの検証または処理ロジック
+- サードパーティサービスとの統合（Marketo、Power Automate、Workfront Fusion）
+- Azure Blob Storage または SharePoint ドキュメントライブラリ
+- 複雑なサーバーサイド検証または処理ロジック
 
 ### 使用可能な送信アクション
 
 - [REST エンドポイントに送信](/help/forms/configure-submit-action-restpoint.md)
-- [AEM メールサービスを使用したメールの送信](/help/forms/configure-submit-action-send-email.md)
+- [AEM メールサービス経由でメール送信](/help/forms/configure-submit-action-send-email.md)
 - [フォームデータモデルを使用して送信](/help/forms/configure-data-sources.md)
 - [AEM ワークフローを起動](/help/forms/aem-forms-workflow-step-reference.md)
 - [SharePoint に送信](/help/forms/configure-submit-action-sharepoint.md)
 - [OneDrive に送信](/help/forms/configure-submit-action-onedrive.md)
-- [Azure Blob Storage への送信](/help/forms/configure-submit-action-azure-blob-storage.md)
+- [Azure Blob Storage に送信](/help/forms/configure-submit-action-azure-blob-storage.md)
 - [Microsoft Power Automate への送信](/help/forms/forms-microsoft-power-automate-integration.md)
 - [Adobe Workfront Fusion への送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-- [Adobe Marketo Engageへの送信](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+- [Adobe Marketo Engage への送信](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
-![AEM公開送信フロー ](/help/forms/assets/eds-aem-publish.png)
+![AEM パブリッシュ送信のフロー](/help/forms/assets/eds-aem-publish.png)
 
 ### 設定要件
 
@@ -193,12 +193,12 @@ Configure your Edge Delivery CDN to route submissions:
 - Route requests from `/adobe/forms/af/submit/...` to your AEM Publish instance
 - Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)-->
 
-#### &#x200B;4. フォーム設定
+#### &#x200B;4. フォームの設定
 
-1. ユニバーサルエディターでのフォームの作成
-2. Target AEM Forms アクションへの送信アクションの設定
-3. 送信エンドポイントのパスを指定
-4. Edge Delivery サイトへのフォームの公開
+1. ユニバーサルエディターでフォームを作成します
+2. AEM Forms アクションをターゲットにする送信アクションを設定します
+3. 送信エンドポイントパスを指定します
+4. Edge Delivery サイトにフォームを公開します
 
 +++
 <!--
@@ -254,11 +254,11 @@ Configure Cross-Origin Resource Sharing on the form source:
 
 | 問題 | 解決策 |
 |-------|----------|
-| **フォーム送信が失敗する** | コンソールエラーの確認、エンドポイント URL の確認、権限の確認 |
-| **埋め込みフォームが表示されない** | フォームソースに CORS ヘッダーを設定し、フォーム URL を確認する |
-| AEMの **403/401 エラー** | Sling リファラーフィルターを更新し、認証設定を確認する |
-| **データがスプレッドシートに到達しない** | 編集アクセス権 `forms@adobe.com` あることを確認し、スプレッドシート URL を確認します |
-| **CORS エラー** | フォームソースへの適切な `Access-Control-Allow-Origin` ヘッダーの追加 |
+| **フォームの送信に失敗する** | コンソールのエラーを確認し、エンドポイント URL を検証し、権限を確認します |
+| **埋め込みフォームが表示されない** | フォームソースに CORS ヘッダーを設定し、フォーム URL を検証します |
+| **AEM の 403／401 エラー** | Sling リファラーフィルターを更新し、認証設定を確認します |
+| **データがスプレッドシートに到達しない** | `forms@adobe.com` に編集アクセス権があることを検証し、スプレッドシートの URL を確認します |
+| **CORS エラー** | フォームソースに適切な `Access-Control-Allow-Origin` ヘッダーを追加します |
 
 +++
 
@@ -266,38 +266,38 @@ Configure Cross-Origin Resource Sharing on the form source:
 
 +++ スプレッドシート送信付きのドキュメントベースのフォーム
 
-1. Google Docs/シートでのフォーム構造の作成
-2. Forms送信サービスエンドポイントの設定
-3. ターゲットスプレッドシートへ `forms@adobe.com` 編集アクセス権の付与
-4. Edge Delivery サイトへのドキュメントの公開
-5. フォーム送信とデータフローのテスト
+1. Google Docs／Sheets でフォーム構造を作成します
+2. Forms 送信サービスのエンドポイントを設定します
+3. `forms@adobe.com` にターゲットスプレッドシートへの編集権限を付与します
+4. ドキュメントを Edge Delivery サイトに公開します
+5. フォーム送信とデータフローをテストします
 
 +++
 
 +++ AEM ワークフローを使用したユニバーサルエディターフォーム
 
-1. ユニバーサルエディターでのフォームの作成
-2. 「AEM Workflow の呼び出し」に対する送信アクションの設定
-3. AEM パブリッシュに対するDispatcherおよびリファラーフィルターの設定
-4. CDN ルーティングルールの設定
-5. フォームを公開してワークフローの実行をテスト
+1. ユニバーサルエディターでフォームを構築します
+2. 送信アクションを「AEM ワークフローを起動」に設定します
+3. AEM パブリッシュで Dispatcher とリファラーフィルターを設定します
+4. CDN ルーティングルールを設定します
+5. フォームを公開し、ワークフロー実行をテストします
 
 +++
 
 ## ベストプラクティス
 
-- 簡単なデータキャプチャシナリオでの **Forms送信サービスの使用**
-- 複雑な処理や統合が必要な場合に **AEM公開を選択**
-- 実稼動デプロイメントの前に、ステージング環境で **十分にテスト** します
-- **AEM ログとコンソールエラーを使用した送信の監視**
-- 失敗した送信に対する **適切なエラー処理の実装**
-- クライアントレベルとサーバーレベルの両方で **データを検証**
-- すべてのフォーム送信とデータ送信に **HTTPS を使用**
+- シンプルなデータキャプチャシナリオには **Forms 送信サービスを使用**&#x200B;します
+- 複雑な処理や統合が必要な場合は、**AEM パブリッシュを選択**&#x200B;します
+- 実稼動環境へのデプロイメント前に、ステージング環境で&#x200B;**徹底的にテスト**&#x200B;します
+- AEM ログとコンソールエラーを使用して&#x200B;**送信を監視**&#x200B;します
+- 送信に失敗した場合は、**適切なエラー処理を実装**&#x200B;します
+- クライアントレベルとサーバーレベルの両方で&#x200B;**データを検証**&#x200B;します
+- すべてのフォーム送信とデータ転送に **HTTPS を使用**&#x200B;します
 
 ## 関連トピック
 
-- [EDS Formsを使用したドキュメントベースのオーサリング](/help/edge/docs/forms/tutorial.md)
-- [EDS Formsを使用したユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+- [EDS Forms でのドキュメントベースのオーサリング](/help/edge/docs/forms/tutorial.md)
+- [EDS Forms でのユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
 - [AEM Forms Submission Service](/help/forms/forms-submission-service.md)
 - [データソースの設定](/help/forms/configure-data-sources.md)
-- [AEM Forms ワークフローリファレンス](/help/forms/aem-forms-workflow-step-reference.md)
+- [AEM Forms Workflow リファレンス](/help/forms/aem-forms-workflow-step-reference.md)

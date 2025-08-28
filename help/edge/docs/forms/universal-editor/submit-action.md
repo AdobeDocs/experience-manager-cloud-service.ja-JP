@@ -1,14 +1,14 @@
 ---
 title: アダプティブフォームの送信アクションの設定方法
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。ビルトインの送信アクションを使用するか、独自のアクションを作成できます。
-keywords: アダプティブフォームの送信アクションを選択する方法、アダプティブフォームを sharepoint リストに接続する方法、アダプティブフォームを sharepoint ドキュメントライブラリに接続する方法、アダプティブフォームをフォームデータモデル（FDM）に接続する方法
+keywords: アダプティブフォームの送信アクションの選択方法, アダプティブフォームの SharePoint リストへの接続方法, アダプティブフォームの SharePoint ドキュメントライブラリへの接続方法, アダプティブフォームのフォームデータモデル（FDM）への接続方法
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -43,21 +43,21 @@ ht-degree: 63%
 - フォームワークフローを定義する&#x200B;**ビジネスアナリスト**
 - フォーム送信プロセスを設計する&#x200B;**テクニカルアーキテクト**
 
-## ユニバーサルエディターで作成されたFormsの送信アクション
+## ユニバーサルエディターで作成されたフォームの送信アクション
 
-[ ユニバーサルエディターで作成されたアダプティブForms](/help/edge/docs/forms/universal-editor/create-forms.md) では、次の送信アクションがサポートされています。
+[ユニバーサルエディターで作成されたアダプティブフォーム](/help/edge/docs/forms/universal-editor/create-forms.md)では、次の送信アクションがサポートされています。
 
 - [メールを送信](/help/forms/configure-submit-action-send-email.md)
 - [Power Automate フローを起動](/help/forms/forms-microsoft-power-automate-integration.md)
 - [SharePoint に送信](/help/forms/configure-submit-action-sharepoint.md)
-- [Workfront Fusion の呼び出し](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+- [Workfront Fusion を起動](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 - [フォームデータモデル（FDM）を使用して送信](/help/forms/integrate-adaptive-form-with-fdm.md)
-- [Azure Blob Storage への送信](/help/forms/configure-submit-action-azure-blob-storage.md)
-- [REST エンドポイントへの送信](/help/forms/configure-submit-action-restpoint.md)
+- [Azure Blob Storage に送信](/help/forms/configure-submit-action-azure-blob-storage.md)
+- [REST エンドポイントに送信](/help/forms/configure-submit-action-restpoint.md)
 - [OneDrive に送信](/help/forms/configure-submit-action-onedrive.md)
 - [AEM ワークフローを起動](/help/forms/configure-submit-action-workflow.md)
 - [Marketo Engage に送信](/help/forms/submit-adaptive-form-to-marketo-engage.md)
-- [Adobe Experience Platform（AEP）への送信](/help/forms/aem-forms-aep-connector.md)
+- [Adobe Experience Platform（AEP）に送信](/help/forms/aem-forms-aep-connector.md)
 - [スプレッドシートに送信](/help/forms/forms-submission-service.md)
 
 <!--You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
@@ -65,14 +65,14 @@ ht-degree: 63%
 * [Connect Adaptive Form to Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)-->
 
-ユニバーサルエディターで作成されたフォームの送信アクションは、「**フォームプロパティを編集** 拡張機能の「**送信**」タブを使用して設定できます。
+**フォームプロパティを編集**&#x200B;拡張機能の「**送信**」タブを使用して、ユニバーサルエディターで作成されたフォームの送信アクションを設定できます。
 
-**ユニバーサルエディターで作成したFormsの送信アクションを設定する方法？**
-ユニバーサルエディターで作成されたフォームの送信アクションは、「**フォームプロパティを編集** 拡張機能の「**送信**」タブを使用して設定できます。
+**ユニバーサルエディターで作成されたフォームの送信アクションを設定する方法**
+**フォームプロパティを編集**&#x200B;拡張機能の「**送信**」タブを使用して、ユニバーサルエディターで作成されたフォームの送信アクションを設定できます。
 
-![ フォームプロパティアイコン ](/help/forms/assets/ue-form-properties-icon.png)
+![フォームプロパティアイコン](/help/forms/assets/ue-form-properties-icon.png)
 
-![ ユニバーサルエディターフォームのプロパティ ](/help/forms/assets/ue-form-properties.png)
+![ユニバーサルエディターのフォームプロパティ](/help/forms/assets/ue-form-properties.png)
 
 >[!NOTE]
 >

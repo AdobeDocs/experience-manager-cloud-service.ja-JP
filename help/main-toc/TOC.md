@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 95ec735cc1f95a23f0fea14aef2fc4011058d317
 workflow-type: tm+mt
 source-wordcount: '6557'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -270,7 +270,7 @@ ht-degree: 96%
    + [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service のセキュリティに関する考慮事項](/help/security/security-considerations.md)
    + [Adobe Developer Console での JWT 資格情報の非推奨（廃止予定）](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
-   + [パブリッシュ層でのAEM as a Cloud Serviceの Open ID Connect サポート](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
+   + [パブリッシュ層での AEM as a Cloud Service の Open ID Connect のサポート](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
    + [AEM as a Cloud Service の IMS 統合の設定](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [権限管理のプリンシパルビュー](/help/security/touch-ui-principal-view.md)
    + [Sling サービスユーザーマッピングとサービスユーザー定義のベストプラクティス](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
@@ -1038,7 +1038,7 @@ ht-degree: 96%
    + サードパーティのストアフロント {#thrid-party-storefront}
       + [はじめに](/help/commerce-cloud/third-party-storefront/introduction.md)
    + CIF ストアフロント {#cif-storefront}
-      + [CIFについて](/help/commerce-cloud/cif-storefront/introduction.md)
+      + [CIF の概要](/help/commerce-cloud/cif-storefront/introduction.md)
       + [AEM Content and Commerce as a Cloud Service の主な変更点](/help/commerce-cloud/cif-storefront/changes.md)
       + コマースジャーニー {#journeys}
          + コンテンツ作成者ジャーニー {#author}
@@ -1086,19 +1086,19 @@ ht-degree: 96%
       + [概要](/help/edge/docs/forms/overview.md)
       + WYSIWYG オーサリング {#universal-editor}
          + [Forms の Edge Delivery Services のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [AEM Formsのユニバーサルエディターインターフェイスの操作](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [ユニバーサルエディターを使用したAEM FormsのEdge Delivery Servicesの概要](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Edge Delivery Servicesを使用したアダプティブFormsの作成と公開](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [ユニバーサルエディターを使用したレスポンシブFormsの作成](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [AEM Forms のユニバーサルエディターインターフェイスの操作](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [ユニバーサルエディターでの AEM Forms の Edge Delivery Services の基本を学ぶ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Edge Delivery Services を使用したアダプティブフォームの作成と公開](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [ユニバーサルエディターを使用したレスポンシブフォームの作成](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [AEM Forms の Edge Delivery Services のテーマとスタイルのカスタマイズ](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [ユニバーサルエディターの動的Forms用のルールエディター](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [ユニバーサルエディターの動的フォーム用ルールエディター](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [WYSIWYG ベースのオーサリング用のフォームフラグメントを作成する方法](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
          + [アダプティブフォームの送信アクションの設定方法](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [リダイレクトページまたはありがとうメッセージの設定方法](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
-         + [ユニバーサルエディターでのGoogle reCAPTCHA のFormsへの追加](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [リダイレクトページまたはお礼のメッセージの設定方法](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
+         + [ユニバーサルエディターでフォームに Google reCAPTCHA を追加する](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [ユニバーサルエディターでフォームのフォームデータモデル（FDM）を統合する方法](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
          + [アダプティブフォームフィールドの事前入力方法](/help/edge/docs/forms/universal-editor/prefill-form.md)
-         + [Edge Delivery Servicesを使用したアダプティブFormsの公開](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [Edge Delivery Services を使用したアダプティブフォームの公開](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [EDS フォームのカスタムコンポーネントの作成](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Edge Delivery Services フォーム送信での 403 Forbidden エラーのトラブルシューティング](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + ドキュメントベースのオーサリング {#getting-started-edge-delivery-services-forms}
@@ -1276,7 +1276,7 @@ ht-degree: 96%
          + [Cloud Manager の Edge Delivery Services の概要](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Cloud Manager への Edge Delivery サイトの追加](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [最初の Edge Delivery サイトをワンクリックで作成](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
-         + [外部 Git リポジトリを使用するためのEdge Delivery サイトの設定](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)
+         + [外部 Git リポジトリを使用するために Edge Delivery サイトを設定](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)
          + [Edge Delivery サイト用のプッシュ検証の設定](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [コンテンツのソースの設定](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
          + [Cloud Manager での Edge Delivery サイトの管理](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)

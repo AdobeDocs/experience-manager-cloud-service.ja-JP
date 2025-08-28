@@ -6,18 +6,18 @@ exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 source-git-commit: c3bac140c2e0b33cfc206cda7c0591fc75a47a1f
 workflow-type: tm+mt
 source-wordcount: '1609'
-ht-degree: 83%
+ht-degree: 94%
 
 ---
 
 # OpenAPI 機能を備えた Dynamic Media に関するよくある質問 {#new-dynaminc-media-apis-frequently-asked-questions}
 
-## Experience Manager Assets as a Cloud Service リポジトリー内のすべてのアセットは、OpenAPI 機能を備えた Dynamic Media を使用して検索および配信できますか？ {#assets-available-for-search}
+## Experience Manager Assets as a Cloud Service リポジトリ内のすべてのアセットは、OpenAPI 機能を備えた Dynamic Media を使用した検索および配信で使用できますか？ {#assets-available-for-search}
 
 いいえ、OpenAPI 機能を備えた Dynamic Media を使用した検索および配信に使用できるのは、[承認済みの最新バージョンのアセット](/help/assets/approve-assets.md)のみで、すべてのチャネルとアプリケーションでブランドの一貫性が確保されます。
 
 
-## 管理者は、フォルダーに追加された新規アセットや既存のアセットをどのように承認済みとしてマークできますか？ {#add-assets-to-folder-as-approved}
+## 管理者は、フォルダーに追加された新規および既存のアセットを承認済みとしてマークするにはどうすればよいですか？ {#add-assets-to-folder-as-approved}
 
 Experience Manager Assets 内のアセットのステータスは、`jcr:content/metadata/dam:status` プロパティによって管理されます。このプロパティの値は次のとおりです。
 
@@ -49,12 +49,12 @@ Experience Manager Assets では、次の管理ビューとアセットビュー
 ![アセットビューの却下アセット](/help/assets/assets/rejected-assets-admin-view.png)
 
 
-## 配信や検索のエクスペリエンスを保護するために、Adobe IMS（Adobe Identity Management Services）のユーザーまたはグループ ID をExperience Managerの管理者表示でアセットのロールを設定するために使用するにはどうすればよいですか？ {#set-roles-secure-delivery-search}
+## 配信と検索のエクスペリエンスの保護で、Experience Manager 管理ビューでアセットの役割を設定するために使用する Adobe IMS（Adobe Identity Management サービス）ユーザー ID またはグループ ID を取得するにはどうすればよいですか？ {#set-roles-secure-delivery-search}
 
 Experience Manager オーサー環境へのアクセスを必要とするユーザーは、アドビの Admin Console の Adobe IMS ユーザーとして管理されます。Adobe IMS ユーザーの概要と、Admin Console でのアクセスと管理の方法について詳しくは、[Adobe IMS ユーザー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=ja)を参照してください。
 
 
-## 1 つのフォルダー内で複数のアセットを同時に承認することはできますか？ {#approve-multiple-assets-in-folder}
+## フォルダー内で複数のアセットを同時に承認できますか？ {#approve-multiple-assets-in-folder}
 
 はい、フォルダー内の複数のアセットを同時に承認できます。
 
@@ -88,12 +88,12 @@ Experience Manager のアセットガバナンスを一元化すると、DAM 管
 DAM ユーザーには、[アセットを承認](approve-assets.md#approve-assets)する権限がない可能性があります。アセットの承認ステータスを編集する権限を取得するには、管理者はアセットフォルダーに適用されているデフォルトまたはその他のメタデータスキーマを編集して、「**[!UICONTROL レビューステータス]**」フィールドに編集権限を付与できます。詳しくは、[レビューステータスの編集を無効にする方法](approve-assets.md#configuration)フィールドを参照してください。
 
 
-## ビデオでサポートされているファイルサイズはどれくらいですか？ {#supported-file-formats-videos}
+## サポートされているビデオのファイルサイズはどれくらいですか？ {#supported-file-formats-videos}
 
 OpenAPI 機能を備えた Dynamic Media は、ロングフォームのビデオをサポートしています。ビデオは、最大 50 GB および 2 時間をサポートできます。
 
 
-## OpenAPI 機能を備えた Dynamic Media と Dynamic Media ソリューションの違い {#dynamic-media-and-dynamic-media-with-openapi-differences}
+## OpenAPI 機能を備えた Dynamic Media は、Dynamic Media ソリューションとどのように異なりますか？ {#dynamic-media-and-dynamic-media-with-openapi-differences}
 
 OpenAPI 機能を備えた Dynamic Media と Dynamic Media はそれぞれ独自のソリューションで、それぞれが特殊な配信機能を提供します。必要に応じて最も適切なソリューションを決定するには、特定の要件を徹底的に検討することが不可欠です。
 
@@ -116,7 +116,7 @@ OpenAPI 機能を備えた Dynamic Media と Dynamic Media の主な違いは次
 | SEO を妥協することなく、アセット UID を使用して、安全で不明化された URL を有効にします。 | URL の不明化は、URL クエリパラメータに対してのみ使用できます。URL 内のアセット ID（アセット名）は認識可能です。 |
 
 
-## OpenAPI 機能を備えた Dynamic Media は、Connected Assets機能の制限にどのように対応しますか？ {#dynamic-media-openapi-addresses-connected-assets-limitations}
+## OpenAPI 機能を備えた Dynamic Media は、接続されたアセット機能の制限にどのように対処しますか？ {#dynamic-media-openapi-addresses-connected-assets-limitations}
 
 次の表に、2 つのソリューションの主な違いの概要を示します。
 
@@ -131,13 +131,13 @@ OpenAPI 機能を備えた Dynamic Media と Dynamic Media の主な違いは次
 | バージョンの更新やメタデータの変更など、リモート DAM デプロイメントで使用可能な承認済みアセットに行われた変更は、10 分という短い有効期間（TTL）値内に Sites インスタンスに自動的に反映されます。 | リモート DAM デプロイメントでのアセットの更新はライフサイクルイベントによって自動的に処理されますが、OpenAPI 機能を備えた Dynamic Media と比較すると、はるかに時間がかかります。 |
 | リモート DAM 上のアセットメタデータは、AEM Sites インスタンスでも使用できます。 | リモート DAM 上のアセットメタデータは、AEM Sites インスタンスでは使用できません。 |
 
-## 一部の修飾子は、限定提供（LA）としてマークされています。 使用を開始するにはどうすればよいですか？ {#use-limited-availability-modifiers}
+## 一部の修飾子は、限定提供としてマークされています。使用を開始するにはどうすればよいですか？ {#use-limited-availability-modifiers}
 
-アカウントで [ 限定提供の修飾子 ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) の実稼動環境での使用を有効にするには：
+アカウントで[限定提供の修飾子](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/)の実稼動環境での使用を有効にするには：
 
-1. [Admin Consoleを使用してAdobe サポートケースを作成します ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)。
+1. [Admin Console を使用してアドビサポートケースを作成します](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)。
 
-1. Adobe サポートケース内で、次の詳細に言及してください。
+1. アドビサポートケース内で、次の詳細を記載してください。
 
    * IMS 組織
 
