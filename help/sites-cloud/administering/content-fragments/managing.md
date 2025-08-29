@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: b09452637fd86af8fc71101f98e05597a8fe630e
+source-git-commit: 39cfcc26181ca651dda8d6f492c588397a865ea4
 workflow-type: tm+mt
-source-wordcount: '2885'
-ht-degree: 93%
+source-wordcount: '2920'
+ht-degree: 92%
 
 ---
 
@@ -134,6 +134,18 @@ ht-degree: 93%
    * カウントを選択して、すべての言語コピーが表示されるダイアログを開きます。特定の言語コピーを開くには、ダイアログで「**タイトル**」をクリックします。
 
      ![コンテンツフラグメントコンソール - 言語ダイアログ](assets/cf-managing-console-languages-dialog.png)
+
+* **ワークフロー**
+
+   * 情報のみ
+
+   * 特定のフラグメント用のアイコンを選択します。
+
+     ![ コンテンツフラグメントコンソール – ワークフローアイコン ](assets/cf-managing-console-workflows-icon.png)
+
+     フラグメントのワークフロー（過去および現在）に関する詳細情報を含むダイアログを開きます。：
+
+     ![ コンテンツフラグメントコンソール – ワークフローダイアログ ](assets/cf-managing-console-workflows-dialog.png)
 
 ## アクション {#actions}
 
