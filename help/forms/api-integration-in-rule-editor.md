@@ -5,13 +5,13 @@ feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 keywords: api をルールエディターに統合し、サービスを起動する機能を強化
-source-git-commit: 5d25204516cb46334c4d594c16852b033f3e6c90
+exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
+source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1021'
 ht-degree: 0%
 
 ---
-
 
 # ルールエディターでの API の統合
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> ルールエディターの API 統合は、Edge Delivery Services Formsにも適用できます。
+> ルールエディターでの API 統合は、[ ユニバーサルエディターで作成されたEdge Delivery Services Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) にも適用できます。
 
 ## 比較：API 統合メソッド
 
@@ -76,6 +76,8 @@ ht-degree: 0%
    * **追加/削除**：新しいマッピングを追加するか、既存のマッピングを削除します。
 
 ## ユースケース：Visa 申請フォームの国フィールドへの入力
+
+>[!VIDEO](https://video.tv.adobe.com/v/3471606/rule-editor-api-integration/?quality=12&learn=on)
 
 **シナリオ**：政府機関が、次のフィールドを含むオンラインのビザ申請フォームを提供します。
 
