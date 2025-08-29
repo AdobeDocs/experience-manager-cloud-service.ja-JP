@@ -4,7 +4,7 @@ description: プロジェクトリソースを設定するための Cloud Manage
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
+source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 84%
@@ -42,7 +42,7 @@ Cloud Manager は、AEM as a Cloud Service に不可欠なコンポーネント�
 
    前の手順の [Cloud Manager 製品プロファイルへのチームメンバーの割り当て](assign-profiles-cloud-manager.md)に戻り、システム管理者に&#x200B;**ビジネスオーナー**&#x200B;の役割を割り当てる方法の詳細を参照してください。
 
-1. [experience.adobe.com](https://experience.adobe.com/) でCloud Managerにログインします。
+1. [experience.adobe.com](https://experience.adobe.com) でCloud Managerにログインします。
 1. クイックアクセスのグループ化で、**Experience Manager** をクリックします。
 1. 左側のパネルで、「**Cloud Manager**」をクリックします。
 
