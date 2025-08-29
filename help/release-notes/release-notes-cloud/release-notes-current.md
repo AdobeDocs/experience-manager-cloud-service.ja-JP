@@ -81,7 +81,7 @@ OpenAPI を使用して DM でアセット配信用のバニティー URL を作
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [ 日付と時刻の入力コンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)：日付と時刻のコンポーネントが使用できるようになり、カレンダーと時計のインターフェイスを使用して、またはサポートされている形式で手動で値を入力して、日付と時刻の両方を選択できるようになりました。
+* [ 日付と時刻の入力コンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)：日付と時刻のコンポーネントが使用できるようになり、カレンダーと時計のインターフェイスを使用して、またはサポートされている形式で手動で値を入力して、日付と時刻の両方を選択できるようになりました。
 * [ ファイルのアップロードのエラー処理の強化 ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)：ファイル添付コンポーネントは、アップロードされたファイルタイプを許可リストと照合して自動的に検証するようになりました。 サポートされていない形式のファイルをユーザーがアップロードすると、フォームの送信中にエラーが表示されます。 また、このコンポーネントはファイルコンテンツをチェックして、そのタイプを検証するので、フォームの全体的なセキュリティが強化されます。
 * [ カスタム送信アクションに対して指定されたエラー応答 ](/help/forms/custom-submit-action-troubleshooting.md)：カスタム送信アクションで未処理のエラーが発生した場合は、エラーコード 502 が返されます。 これは、問題がカスタム送信アクションに関連していることを識別するのに役立ち、デバッグを容易にします。
 * [ レコードのドキュメントからの非表示フィールドの除外 ](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)：レコードのドキュメントから非表示フィールドを除外できるように、新しいプロパティが追加されました。 デフォルトでは、このオプションは選択されておらず、すべてのフォームフィールドに適用されます。
@@ -103,7 +103,7 @@ OpenAPI を使用して DM でアセット配信用のバニティー URL を作
 
 ### AEM Forms の早期導入機能
 
-* [ 手書き署名コンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)：手書き署名コンポーネントを使用して、契約書フォームなどのフォームにユーザーの署名を追加できるようになりました。 このコンポーネントを使用すると、ユーザーはマウス、スタイラスまたはタッチスクリーンを使用してフォーム内に直接署名を描画できます。
+* [ 手書き署名コンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)：手書き署名コンポーネントを使用して、契約書フォームなどのフォームにユーザーの署名を追加できるようになりました。 このコンポーネントを使用すると、ユーザーはマウス、スタイラスまたはタッチスクリーンを使用してフォーム内に直接署名を描画できます。
 * [ ルールエディターでの直接 API 統合 ](/help/forms/api-integration-in-rule-editor.md)：アダプティブFormsでは、フォームデータモデルを必要とせずに、ビジュアルルールエディターでの直接 API 統合をサポートするようになりました。 作成者は、URL または cURL インポートを使用して API を設定し、入力/出力パラメーターをマッピングし、認証で安全な呼び出しを行うことができます。
 
 <!--
