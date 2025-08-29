@@ -4,10 +4,10 @@ description: AEM では、クライアントサイドライブラリフォルダ
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2497'
-ht-degree: 100%
+source-git-commit: da44719521546e81af60e4f8dd5452d83ff5e1e7
+workflow-type: tm+mt
+source-wordcount: '2422'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ AEM で clientlibs を使用する利点は次のとおりです。
 * [Dispatcher](/help/implementing/dispatcher/disp-overview.md) 経由でアクセス可能なパスで clientlibs を公開します。
 * 参照先ファイルまたは画像のパスの書き換えを許可します。
 
-Clientlibs は、AEM から CSS と JavaScript を配信するための組み込みソリューションです。
+Clientlibs は、AEM から CSS と JavaScript を配信するためのビルトインのソリューションです。
 
 >[!TIP]
 >
@@ -197,7 +197,7 @@ AEM のクライアントライブラリフォルダーでは、他にもいく�
 
 * **名前：** dependencies
 * **タイプ：** String[]
-* **値：**&#x200B;現在のライブラリフォルダーの依存先である cq:ClientLibraryFolder ノードの categories プロパティの値。
+* **Values:** 現在のライブラリフォルダーが依存する cq:ClientLibraryFolder ノードの categories プロパティの値。
 
 例えば、`/etc/clientlibs/myclientlibs/publicmain` は `cq.jquery` ライブラリに依存しています。メインのクライアントライブラリを参照するページは、次のコードを含む HTML を生成します。
 
@@ -288,7 +288,7 @@ AEM では、プラグ可能なプリプロセッサーを使用でき、AEM の
 
 >[!NOTE]
 >
->デフォルトでは、AEM は YUI Compressor を使用します。既知の問題のリストについては、[YUI Compressor GitHub ドキュメント](https://github.com/yui/yuicompressor/issues)を参照してください。特定の clientlibs 用の GCC コンプレッサーに切り替えると、YUI を使用しているときに発生していたいくつかの問題が解決することがあります。
+>デフォルトでは、AEMは、JavaScript の縮小に GCC Compressor を使用します。
 
 >[!CAUTION]
 >
@@ -299,9 +299,8 @@ AEM では、プラグ可能なプリプロセッサーを使用でき、AEM の
 クライアントライブラリごとに、またはシステム全体でプリプロセッサーを設定できます。
 
 * クライアントライブラリノードで、複数値プロパティ `cssProcessor` および `jsProcessor` を追加します。
-* または、**HTML ライブラリマネージャー**&#x200B;の OSGi 設定で、システムのデフォルト設定を定義します。
 
-clientlib ノードのプリプロセッサー設定は、OSGI 設定よりも優先されます。
+**HTML Library Manager** OSGi 設定を使用したシステムデフォルト設定の定義はサポートされていません。 これはローカルのSDKにのみ適用され、フルスタックのパイプライン実行には適用されません。
 
 #### 形式と例 {#format-and-examples}
 
@@ -337,7 +336,7 @@ jsProcessor: [
 ```javascript
 failOnWarning (defaults to "false")
 languageIn (defaults to "ECMASCRIPT5")
-languageOut (defaults to "ECMASCRIPT5")
+languageOut (defaults to "ECMASCRIPT_2018" as of release 21994, was previously "ECMASCRIPT5" )
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
@@ -345,11 +344,4 @@ GCC オプションについて詳しくは、[GCC ドキュメント](https://d
 
 #### システムのデフォルト縮小ツールの設定 {#set-system-default-minifier}
 
-YUI は、AEM のデフォルトの縮小ツールとして設定されています。これを GCC に変更するには、次の手順に従います。
-
-1. Apache Felix Config Manager（`http://<host>:<port/system/console/configMgr`）に移動します。
-1. **Adobe Granite HTML ライブラリマネージャー**&#x200B;を検索して編集します。
-1. 「**Minify**」オプションを有効にします（まだ有効でない場合）。
-1. **JS Processor Default Configs** の値を `min:gcc` に設定します。
-   * セミコロンで区切られている場合、オプションを渡すことができます（例：`min:gcc;obfuscate=true`）。
-1. 「**保存**」をクリックして、変更を保存します。
+AEM as a Cloud Serviceでは、システムのデフォルト修飾子の設定はサポートされていません。
