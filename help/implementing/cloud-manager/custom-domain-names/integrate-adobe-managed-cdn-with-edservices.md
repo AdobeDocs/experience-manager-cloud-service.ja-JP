@@ -72,10 +72,8 @@ Edge Delivery Services は、次の 2 つのオプションのいずれかを使
 
 1. Cloud Manager でサイトをオンボード - 両方のデプロイメントモデルで必須です。AEM サイトのオンボードに従います。
 
-2. Bring Your Own Git（BYOG）（オプション）
-- サイトコードを Adobe Git の外部に保存する場合は、BYOG オンボーディングを完了します。
+2. Bring Your Own Git（BYOG）（オプション）- サイトコードを Adobe Git の外部に保存する場合は、BYOG オンボーディングを完了します。
 
-3. Edge Delivery ライセンス
-- プログラムが Edge Delivery Services のライセンスを取得していることを確認します。
+3. Edge Delivery ライセンス - プログラムが Edge Delivery Services のライセンスを取得していることを確認します。
 
 
