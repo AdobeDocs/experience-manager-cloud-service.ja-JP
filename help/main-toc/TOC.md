@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 95ec735cc1f95a23f0fea14aef2fc4011058d317
+source-git-commit: 4b41412a2c71d3e43ce5d6387ffb6d40fac2b18f
 workflow-type: tm+mt
-source-wordcount: '6557'
+source-wordcount: '6569'
 ht-degree: 98%
 
 ---
@@ -853,6 +853,7 @@ ht-degree: 98%
                + [アダプティブフォームでの非同期関数の使用](/help/forms/using-async-funct-in-rule-editor.md)
                + [コアコンポーネントに基づくフォーム用のビジュアルルールエディターの呼び出しサービスの機能強化](/help/forms/invoke-service-enhancements-rule-editor.md)
                + [ルールエディターの機能強化](/help/forms/rule-editor-enhancements-use-cases.md)
+               + [ルールエディターでの API 統合](/help/forms/api-integration-in-rule-editor.md)
             + コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要{#create-and-use-custom-function-core-component}
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要](/help/forms/create-and-use-custom-functions.md)
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成と使用](/help/forms/custom-function-core-component-create-function.md)
@@ -959,7 +960,6 @@ ht-degree: 98%
       + [インタラクティブ通信フラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
       + [インタラクティブ通信の概要](/help/forms/introduction-to-interactive-communication.md)
       + [最初のインタラクティブ通信の作成](/help/forms/create-your-first-communication.md)
-      + [AEM Forms API を使用した AFP 出力の生成](/help/forms/document-generation-afp-api.md)
       + [よくある質問](/help/forms/interactive-communications-faq.md)
    + Forms 中心のワークフロー {#create-form-centric-workflows}
       + [Forms 中心のワークフローの導入](/help/forms/aem-forms-workflow.md)
@@ -972,6 +972,7 @@ ht-degree: 98%
       + [通信 API の概要](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [通信 API - 同期処理](/help/forms/aem-forms-cloud-service-communications.md)
       + [通信 API - バッチ処理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [AEM Forms API を使用した AFP 出力の生成](/help/forms/document-generation-afp-api.md)
       + [Forms Designer のインストールと設定](/help/forms/installing-configuring-designer.md)
       + [Forms Designer を使用したテンプレートの作成](/help/forms/use-forms-designer.md)
       + [Designer での Page Zero コンテンツの変更](/help/forms/changing-page-zero-content-designer.md)
@@ -994,6 +995,7 @@ ht-degree: 98%
       + [Dispatcher と CDN のキャッシュ](/help/forms/troubleshooting-caching-performance.md)
       + [AEM SDK の再起動](/help/forms/restart-aem-sdk.md)
       + [フォーム作成エラーの解決](/help/forms/form-creation-failing.md)
+      + [カスタム送信アクションの 502 エラーページ](/help/forms/custom-submit-action-troubleshooting.md)
 + Screens {#screens-as-cloud-service}
    + Screens as a Cloud Service の概要 {#overview}
       + [はじめに](/help/screens-cloud/introduction/introduction.md)

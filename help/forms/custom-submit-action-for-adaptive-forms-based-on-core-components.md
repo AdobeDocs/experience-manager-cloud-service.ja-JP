@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 28%
+source-wordcount: '1137'
+ht-degree: 26%
 
 ---
 
@@ -268,7 +268,14 @@ ht-degree: 28%
 
    >[!NOTE]
    >
-   > AEM as a Cloud Service環境でエラーログを表示するには、Splunk を使用します。
+   > * AEM as a Cloud Service環境でエラーログを表示するには、Splunk を使用します。
+   > * カスタム送信アクションサービスで未処理のエラーが発生した場合、AEM as a Cloud Serviceは 502 エラーページのHTMLを返します。
+
+
+## よくある質問
+
+**Q：アダプティブフォームで送信後に 5.x.x のエラーページが表示されるのはなぜですか？**
+未処理のエラーでカスタム送信アクションサービスが失敗しました。 次に、AEM Cloud Service はデフォルトのエラーページを返します。
 
 <!--
 ## Best practices

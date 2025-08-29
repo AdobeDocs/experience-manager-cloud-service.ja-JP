@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 96022123209fff18548b77a4cbd63ccec697119b
+source-git-commit: 69147d156a6a3d441aca3cb9da089a3768dc593c
 workflow-type: tm+mt
-source-wordcount: '1902'
+source-wordcount: '1903'
 ht-degree: 47%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 47%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -81,30 +81,30 @@ OpenAPI を使用して DM でアセット配信用のバニティー URL を作
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* **日付と時刻の入力コンポーネント**：日付と時刻のコンポーネントが使用できるようになり、カレンダーと時計のインターフェイスを使用して、またはサポートされている形式で手動で値を入力して、日付と時刻の両方を選択できるようになりました。
+* [ 日付と時刻の入力コンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)：日付と時刻のコンポーネントが使用できるようになり、カレンダーと時計のインターフェイスを使用して、またはサポートされている形式で手動で値を入力して、日付と時刻の両方を選択できるようになりました。
 * [ ファイルのアップロードのエラー処理の強化 ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)：ファイル添付コンポーネントは、アップロードされたファイルタイプを許可リストと照合して自動的に検証するようになりました。 サポートされていない形式のファイルをユーザーがアップロードすると、フォームの送信中にエラーが表示されます。 また、このコンポーネントはファイルコンテンツをチェックして、そのタイプを検証するので、フォームの全体的なセキュリティが強化されます。
-* **カスタム送信アクションに対して指定されたエラー応答**：カスタム送信アクションで未処理のエラーが発生した場合は、エラーコード 502 が返されます。 これは、問題がカスタム送信アクションに関連していることを識別するのに役立ち、デバッグを容易にします。
+* [ カスタム送信アクションに対して指定されたエラー応答 ](/help/forms/custom-submit-action-troubleshooting.md)：カスタム送信アクションで未処理のエラーが発生した場合は、エラーコード 502 が返されます。 これは、問題がカスタム送信アクションに関連していることを識別するのに役立ち、デバッグを容易にします。
 * [ レコードのドキュメントからの非表示フィールドの除外 ](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)：レコードのドキュメントから非表示フィールドを除外できるように、新しいプロパティが追加されました。 デフォルトでは、このオプションは選択されておらず、すべてのフォームフィールドに適用されます。
 
 ### AEM Formsのプレリリース機能
 
 * [AFP レンディションの生成と同期 ](/help/forms/document-generation-afp-api.md): AEM Forms Communication API を使用して、XDP ファイルを AFP 形式に変換できるようになりました。 AFP は、大規模企業の印刷で広く使用されている高性能フォーマットです。
 * **ルールエディターの機能強化**
-   * **Validate 関数と Reset 関数の機能強化**:validate メソッドと reset メソッドで、パネルレベル、フィールドレベル、フォームレベルでの実行がサポートされるようになりました。 以前は、フォームレベルでのみサポートされていました。
-   * **最新のJavaScriptのサポート**:ECMAScript 2019 以降の機能がカスタム関数に対してサポートされ、より効率的なモジュール型で再利用可能なコードを記述できるようになりました
-   * **ルールエディターの「DoR をダウンロード」オプション**：レコードのドキュメント（DoR）をダウンロードする機能がルールエディターの標準（OOTB）オプションとして追加されました。
+   * [ 関数リスト内の Validate メソッド ](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list):validate メソッドと reset メソッドで、パネルレベル、フィールドレベル、フォームレベルでの実行がサポートされるようになりました。 以前は、フォームレベルでのみサポートされていました。
+   * [ 最新のJavaScriptのサポート ](/help/forms/rule-editor-core-components-difference-tables.md):ECMAScript 2019 以降の機能がカスタム関数に対してサポートされ、より効率的なモジュール型で再利用可能なコードを記述できるようになりました
+   * [ ルールエディターの「DoR をダウンロード」オプション ](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor)：レコードのドキュメント（DoR）をダウンロードする機能がルールエディターの標準（OOTB）オプションとして追加されました。
      ![ レコードのドキュメント ](/help/forms/assets/document-of-record-rn.gif)
-   * **ルールエディターの動的変数**：ルールエディターで動的（一時的）変数を使用して、条件とアクションをより柔軟に定義できるようになりました。 非表示のフィールドは、一時的な値を格納する必要がなくなりました。
-   * **ルールエディターのカスタムイベントベースのルール**：カスタムイベントと、それらのイベントに基づくトリガールールを定義できるようになりました。
-   * **コンテキスト対応の繰り返し可能なパネルルール**：繰り返し可能なパネルでは、ルールが最後のパネルインスタンスのみに適用されるのではなく、コンテキストに基づいて実行されるようになりました。
-   * **パラメーターによってトリガーされるルール**：ルールエディターで、クエリパラメーター、UTM パラメーターまたはブラウザーパラメーターに基づくルール実行がサポートされるようになりました。
-   * **フォーム固有のカスタム関数**:Edge Delivery Services Formsでは、フォーム固有のカスタム関数スクリプトがサポートされるようになり、再利用可能なロジックをより柔軟に管理できるようになりました。
-   * **カスタム関数の静的インポート**：ユニバーサルエディターのルールエディターで静的インポートがサポートされるようになり、開発者は関数を整理、共有、複数のフォームで再利用できるようになりました。
+   * [ ルールエディターの動的変数 ](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules)：ルールエディターで動的（一時的）変数を使用して、条件とアクションをより柔軟に定義できるようになりました。 非表示のフィールドは、一時的な値を格納する必要がなくなりました。
+   * [ カスタムイベントベースのルールのサポート ](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support)：カスタムイベントと、それらのイベントに基づくトリガールールを定義できるようになりました。
+   * [ コンテキスト対応の繰り返し可能なパネルルール ](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels)：繰り返し可能なパネルでは、ルールが最後のパネルインスタンスのみに適用されるのではなく、コンテキストに基づいて実行されるようになりました。
+   * [ パラメーターによってトリガーされるルール ](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms)：ルールエディターで、クエリパラメーター、UTM パラメーターまたはブラウザーパラメーターに基づくルール実行がサポートされるようになりました。
+   * [ フォーム固有のカスタム関数 ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms):Edge Delivery Services Formsでは、フォーム固有のカスタム関数スクリプトがサポートされるようになり、再利用可能なロジックをより柔軟に管理できるようになりました。
+   * [ カスタム関数の静的インポート ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions)：ユニバーサルエディターのルールエディターで静的インポートがサポートされるようになり、開発者は関数を整理、共有、複数のフォームで再利用できるようになりました。
 
 ### AEM Forms の早期導入機能
 
-* **手書き署名コンポーネント**：手書き署名コンポーネントを使用して、契約書フォームなどのフォームにユーザーの署名を追加できるようになりました。 このコンポーネントを使用すると、ユーザーはマウス、スタイラスまたはタッチスクリーンを使用してフォーム内に直接署名を描画できます。
-* **ルールエディターでの直接 API 統合**：アダプティブFormsでは、フォームデータモデルを必要とせずに、ビジュアルルールエディターでの直接 API 統合をサポートするようになりました。 作成者は、URL または cURL インポートを使用して API を設定し、入力/出力パラメーターをマッピングし、認証で安全な呼び出しを行うことができます。
+* [ 手書き署名コンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)：手書き署名コンポーネントを使用して、契約書フォームなどのフォームにユーザーの署名を追加できるようになりました。 このコンポーネントを使用すると、ユーザーはマウス、スタイラスまたはタッチスクリーンを使用してフォーム内に直接署名を描画できます。
+* [ ルールエディターでの直接 API 統合 ](/help/forms/api-integration-in-rule-editor.md)：アダプティブFormsでは、フォームデータモデルを必要とせずに、ビジュアルルールエディターでの直接 API 統合をサポートするようになりました。 作成者は、URL または cURL インポートを使用して API を設定し、入力/出力パラメーターをマッピングし、認証で安全な呼び出しを行うことができます。
 
 <!--
 **Forms Optimization opportunities**

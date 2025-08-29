@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '2598'
-ht-degree: 100%
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+workflow-type: tm+mt
+source-wordcount: '2781'
+ht-degree: 93%
 
 ---
 
@@ -532,6 +532,7 @@ export { getFullName, days };
 ![ルールエディター内のカスタム関数](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 図：ルールエディターインターフェイスでのカスタム関数の選択と設定
 
+
 **関数の使用に関するベストプラクティス**：
 
 - **エラー処理**：関数のエラー発生時に常にフォールバック動作を含めます
@@ -540,6 +541,56 @@ export { getFullName, days };
 - **テスト**：通常のケースとエッジケースを対象としたテストケースを作成します
 
 +++
+
+
+### カスタム関数の静的インポート
+
+ユニバーサルエディターのルールエディターは、静的インポートをサポートしており、複数のファイルおよびフォームにわたって再利用可能なロジックを整理できます。 すべてのカスタム関数を 1 つのファイル（/blocks/form/functions.js）に保存する代わりに、他のモジュールから関数を読み込むことができます。
+例：外部ファイルからの関数のインポート
+次のフォルダー構造について考えてみます。
+
+```
+      form
+      ┣ commonLib
+      ┃ ┗ functions.js
+      ┣ rules
+      ┃ ┗ _form.json
+      ┣ form.js
+      ┗ functions.js
+```
+
+次に示すように、`commonLib/functions.js` からメインの `functions.js` ファイルに関数を読み込むことができます。
+
+```
+`import {days} from './commonLib/functions';
+/**
+ * Get Full Name
+ * @name getFullName Concats first name and last name
+ * @param {string} firstname in String format
+ * @param {string} lastname in String format
+ * @return {string}
+ */
+function getFullName(firstname, lastname) {
+  return `${firstname} ${lastname}`.trim();
+}
+
+// Export multiple functions for use in Rule Editor
+export { getFullName, days};
+```
+
+### 様々なFormsでのカスタム関数の整理
+
+別のファイルまたはフォルダーに異なる関数のセットを作成し、必要に応じて書き出すことができます。
+
+- 特定の関数を特定のフォームでのみ使用できるようにする場合は、フォーム設定で関数ファイルへのパスを指定します。
+
+- パスのテキストボックスが空白のままの場合、ルールエディターではデフォルトで `/blocks/form/functions.js` から関数を読み込みます
+
+![UE 内のカスタム関数 ](/help/forms/assets/custom-function-in-ue.png){width=50%}
+
+上のスクリーンショットでは、カスタム関数のパスが「カスタム関数のパス」テキストボックスに追加されています。 このフォームのカスタム関数は、指定したファイル（`cc_function.js`）から読み込まれます。
+
+これにより、複数のフォームで機能を共有したり、フォームごとに分離したりして、柔軟性を確保できます。
 
 ## ルール開発のベストプラクティス
 

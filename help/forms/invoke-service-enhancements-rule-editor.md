@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: vre のサービス拡張機能、呼び出しサービスを使用したドロップダウンオプションの入力、呼び出しサービスの出力を使用した繰り返し可能なパネルの設定、呼び出しサービスの出力を使用したパネルの設定、呼び出しサービスの出力パラメーターを使用した他のフィールドの検証。
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
+source-git-commit: 4aecf84672ea60ad9688a974330a62be0a5fde86
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1586'
 ht-degree: 2%
 
 ---
@@ -218,6 +218,10 @@ ht-degree: 2%
 `102` テキストボックスに「`Pet ID`」と入力すると、「**送信**」ボタンが非表示になります。
 
 ![ 出力 ](/help/forms/assets/output4.png)
+
+>[!NOTE]
+>
+> また、事前定義済みのフォームデータモデルを使用せずに [ ルールエディターインターフェイスで直接 API を統合 ](/help/forms/api-integration-in-rule-editor.md) することもできます。
 
 ## よくある質問
 
