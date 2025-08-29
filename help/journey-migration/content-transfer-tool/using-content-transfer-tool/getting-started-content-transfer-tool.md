@@ -65,7 +65,7 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 >id="aemcloud_ctt_demo"
 >title="コンテンツ転送ツールの実行"
 >abstract="この節では、コンテンツ転送ツールを使用してコンテンツを AEM as a Cloud Service（オーサー／パブリッシュ）に移行する方法について説明します。"
->additional-url="https://video.tv.adobe.com/v/327070/?quality=12&amp;learn=on&captions=jpn" text=" デモを見る"
+>additional-url="https://video.tv.adobe.com/v/327070/?quality=12&learn=on&captions=jpn" text=" デモを見る"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ja#migration" text="チュートリアル - コンテンツ転送ツールの使用"
 
 次の節は、コンテンツ転送ツールの新しいバージョンに適用されます。この節では、コンテンツ転送ツールを使用してコンテンツを AEM as a Cloud Service に移行する方法について説明します。
