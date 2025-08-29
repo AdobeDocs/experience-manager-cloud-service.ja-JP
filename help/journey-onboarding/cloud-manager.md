@@ -4,10 +4,10 @@ description: プロジェクトリソースを設定するための Cloud Manage
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 4cad0ea1be4cba1c7f1af55cc760fb65fdc3cc4a
-workflow-type: ht
-source-wordcount: '1033'
-ht-degree: 100%
+source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
+workflow-type: tm+mt
+source-wordcount: '909'
+ht-degree: 84%
 
 ---
 
@@ -42,9 +42,13 @@ Cloud Manager は、AEM as a Cloud Service に不可欠なコンポーネント�
 
    前の手順の [Cloud Manager 製品プロファイルへのチームメンバーの割り当て](assign-profiles-cloud-manager.md)に戻り、システム管理者に&#x200B;**ビジネスオーナー**&#x200B;の役割を割り当てる方法の詳細を参照してください。
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインします。
+1. [experience.adobe.com](https://experience.adobe.com/) でCloud Managerにログインします。
+1. クイックアクセスのグループ化で、**Experience Manager** をクリックします。
+1. 左側のパネルで、「**Cloud Manager**」をクリックします。
 
-**ビジネスオーナー**&#x200B;の役割を持つシステム管理者がログインに成功すると、**ビジネスオーナー**&#x200B;の役割を持つ他のユーザーが使用できるように Cloud Manager が初期化されます。確認メッセージなどのメッセージは表示されません。ログインするだけで十分です。
+   ![ コンソールのCloud Manager](/help/journey-onboarding/assets/consol-cloud-manager.png)
+
+**ビジネスオーナー** のロールを持つシステム管理者がログインに成功すると、**ビジネスオーナー** のロールを持つ他のユーザーが使用できるようにCloud Managerが使用されます。 確認メッセージなどのメッセージは表示されません。ログインするだけで十分です。
 
 **ビジネスオーナー**&#x200B;の役割を持つシステム管理者が Cloud Manager にログインするまで、**ビジネスオーナー**&#x200B;の役割を持つ他のユーザーは、Cloud Manager でプログラムを作成できません。このルールは、正しい役割が割り当てられている場合でも適用されます。
 
@@ -63,65 +67,66 @@ Cloud Manager は、AEM as a Cloud Service に不可欠なコンポーネント�
 
 1. Cloud Manager のランディングページが表示されるようになります。
 
-または、次の手順に従って、Adobe Experience Cloud のホームページから Cloud Manager の&#x200B;**プログラムと製品**&#x200B;ページに移動することもできます。
+<!-- OLD
+Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe Experience Cloud home page using these steps.
 
-1. [Adobe Experience Cloud](https://experience.adobe.com) に直接移動し、Adobe ID を使用してログインします。
+1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
 
-1. Adobe Experience Cloud ホームページで「**Experience Manager**」を選択して、AEM ホームページを開きます。
+1. From the Adobe Experience Cloud home page, select **Experience Manager** to open the AEM home page.
 
-   ![Experience Cloud ホームページ](/help/journey-onboarding/assets/setup-resources2.png)
+   ![Experience Cloud homepage](/help/journey-onboarding/assets/setup-resources2.png)
 
-1. **Cloud Manager** タイルで、「**起動する**」を選択します。
+1. On the **Cloud Manager** tile, select **Launch**.
 
-   ![AEM ホームページ](/help/journey-onboarding/assets/setup-resources3.png)
+   ![AEM home page](/help/journey-onboarding/assets/setup-resources3.png)
 
-1. 正常にログオンすると、Cloud Manager ランディングページが表示されるようになります。詳しくは、[Cloud Manager のプログラムの表示](#viewing-programs)を参照してください。
+1. After successfully logging on, you are directed to the Cloud Manager landing page. See [Viewing Cloud Manager's Programs](#viewing-programs) for more details.
 
-Cloud Manager を使用してプログラムや製品にアクセスする方法はユーザー次第であり、Cloud Manager の使用方法やプログラムの管理方法には影響しません。
+How you access your programs and products via Cloud Manager is up to you and has no effect on how you use Cloud Manager or how you manage your programs.
 
 >[!NOTE]
 >
->Cloud Manager で割り当てられた役割やアプリケーションの状態に応じて、Cloud Manager ユーザーインターフェイスの使用中に表示される画面が変わります。
+>Depending on the roles assigned in Cloud Manager and the state of the application, you see different screens while using the Cloud Manager user interface. -->
 
 ## プログラムの表示 {#viewing-programs}
 
 Cloud Manager に正常にアクセスすると、表示される内容は、以降のセクションで詳しく説明するように、プログラムの状態によって異なります。
 
-### プログラムが存在しない場合 {#no-programs}
+### プログラムが存在しません {#no-programs}
 
 組織にプログラムが存在しない場合は、最初のプログラムを作成するようにランディングページで指示されます。
 
-![プログラムがありません](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+![プログラムがありません](/help/journey-onboarding/assets/cloud-manager-programs-do-not-exist.png)
 
-### プログラムが既に存在する場合 {#programs-exist}
+### プログラムは既に存在します {#programs-exist}
 
 組織にプログラムが既に存在する場合は、ランディングページに既存のプログラムが表示され、プログラムを追加するボタンも表示されます。
 
-![プログラムが存在します](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+![プログラムが存在します](/help/journey-onboarding/assets/cloud-manager-programs-exist.png)
 
-### プログラムが存在し、システム管理者である場合 {#programs-exist-sysadmin}
+### プログラムが存在し、ユーザーがシステム管理者である場合 {#programs-exist-sysadmin}
 
 組織にプログラムが存在し、ユーザーがシステム管理者である場合は、ランディングページに「**アクセスを管理**」ボタンと「**プログラムを追加**」オプションが表示されます。
 
-![システム管理者の表示](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+![システム管理者の表示](/help/journey-onboarding/assets/cloud-manager-programs-as-sysadmin.png)
 
-## ユーザーの役割の確認 {#verify-user-roles}
+## ユーザーの役割の検証 {#verify-user-roles}
 
-Cloud Manager に正常にログインしたら、**ビジネスオーナー**&#x200B;製品プロファイルが割り当てられていることを確認します。
+Cloud Managerに正常にログインしたら、**ビジネスオーナー** の製品プロファイルが割り当てられていることを確認します。
 
-1. ウィンドウの右上からプロファイルを選択します。
+1. ページの右上隅付近にある **アカウント** アイコンをクリックします。
 
-1. ユーザーに割り当てられているロールを表示するには、「**ユーザーの役割**」を選択します。
+1. **ユーザーの役割** をクリックします。
 
-   ![ユーザーの役割](/help/journey-onboarding/assets/setup-resources6.png)
+   ![ユーザーの役割](/help/journey-onboarding/assets/cloud-manager-user-roles.png)
 
-1. ダイアログで、ユーザーが&#x200B;**ビジネスオーナー**&#x200B;の役割を持っていることを確認する必要があります。
+1. **ユーザーの役割** ダイアログボックスで、ユーザーが **ビジネスオーナー** の役割を持っていることを確認します。
 
-   ![ユーザーの役割のリスト](/help/journey-onboarding/assets/setup-resources7.png)
+   ![ユーザーの役割のリスト](/help/journey-onboarding/assets/cloud-manager-user-roles-business-owner.png)
 
-Cloud Manager にビジネスオーナーとして正常にログインしました。**ビジネスオーナー**&#x200B;の役割を割り当てられていない場合は、システム管理者にお問い合わせください。
+ビジネスオーナーとしてCloud Managerに正常にログインしました。 **ビジネスオーナー**&#x200B;の役割を割り当てられていない場合は、システム管理者にお問い合わせください。
 
-## 次のステップ {#whats-next}
+## 次の手順 {#whats-next}
 
 これで、システム管理者として Cloud Manager にアクセスできるので、最初のプログラムを作成する準備が整いました。
 
@@ -129,7 +134,7 @@ Cloud Manager にビジネスオーナーとして正常にログインしまし
 
 ## その他のリソース {#additional-resources}
 
-オンボーディングジャーニーのコンテンツの範囲を超えてさらに詳しく知りたい場合に役立つ、追加のオプションリソースを次に示します。
+オンボーディングジャーニーのコンテンツの範囲を超えた情報について詳しくは、次の追加のオプションリソースを参照してください。
 
 * [Cloud Manager の概要](/help/onboarding/cloud-manager-introduction.md) - 
 Cloud Manager、Cloud Manager プログラム、環境について説明します。
