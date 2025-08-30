@@ -85,7 +85,7 @@ OpenAPI を使用して DM でアセット配信用のバニティー URL を作
 
 **日時入力コンポーネント**
 
-[ 日付と時刻 ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) コンポーネントが使用できるようになり、カレンダーと時計のインターフェイスを使用するか、サポートされている形式で手動で値を入力して、日付と時刻の両方を選択できるようになりました。
+[ 日付と時刻 ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) コンポーネントが使用できるようになり、カレンダーと時計のインターフェイスを使用するか、サポートされている形式で手動で値を入力して、日付と時刻の両方を選択できるようになりました。
 
 **ファイルのアップロードに関するエラー処理の強化**
 
@@ -129,7 +129,7 @@ AEM Forms 早期アクセスプログラムでは、最先端の革新機能に�
 
 **手書き署名コンポーネント**
 
-[ 手書き署名コンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) を使用して、ユーザーが契約書フォームなどのフォームに署名を追加できるようになりました。 このコンポーネントを使用すると、ユーザーはマウス、スタイラスまたはタッチスクリーンを使用してフォーム内に直接署名を描画できます。
+[ 手書き署名コンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) を使用して、ユーザーが契約書フォームなどのフォームに署名を追加できるようになりました。 このコンポーネントを使用すると、ユーザーはマウス、スタイラスまたはタッチスクリーンを使用してフォーム内に直接署名を描画できます。
 
 **ルールエディターでの API の直接統合**
 
