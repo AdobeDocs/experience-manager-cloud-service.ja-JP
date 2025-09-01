@@ -7,15 +7,22 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
+source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 1%
+source-wordcount: '294'
+ht-degree: 8%
 
 ---
 
-
 # インタラクティブ通信フラグメントの作成
+
+>[!NOTE]
+>
+> インタラクティブ通信機能は、早期導入プログラムで利用できます。 勤務先のアドレスから `aem-forms-ea@adobe.com` にメールを送信して、アクセスをリクエストします。
+
+>[!IMPORTANT]
+>
+> **ドキュメントは変更される場合があります**：このプロンプトライブラリは現在製品に対してテスト中であり、更新および改訂される可能性があります。Forms Experience Builder は、早期導入プログラム中に進化し続けるため、プロンプト、例、ベストプラクティスが変わる可能性があります。
 
 インタラクティブ通信フラグメントを使用すると、ヘッダー、フッター、標準の免責事項など、再利用可能なモジュール型コンテンツブロックを作成して、複数の通信ドキュメントで使用できます。 これらのフラグメントは、パーソナライズされたデータ統合通信を構築する際に、一貫性を維持し、反復作業を減らし、設計プロセスを迅速化するのに役立ちます。
 
@@ -35,7 +42,7 @@ ht-degree: 1%
 
 1. インタラクティブ通信フラグメントを選択すると、画面が表示され、タイトル、名前、説明、データモデル（バックエンドデータの構造化表現）、タグなどの主要なフラグメントの詳細を定義できます。
 
-   詳しくは、[ データモデル設定ガイド ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) を参照してください。
+   詳しくは、[ データモデル設定ガイド ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) を参照してください。
 
    ![IC Docu の検索 ](/help/forms/interactive-communication/assets/createfrgmnt.png)
 

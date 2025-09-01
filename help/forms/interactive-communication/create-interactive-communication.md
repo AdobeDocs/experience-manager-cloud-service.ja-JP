@@ -7,15 +7,22 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
+source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 2%
+source-wordcount: '585'
+ht-degree: 6%
 
 ---
 
-
 # インタラクティブ通信の作成
+
+>[!NOTE]
+>
+> インタラクティブ通信機能は、早期導入プログラムで利用できます。 勤務先のアドレスから `aem-forms-ea@adobe.com` にメールを送信して、アクセスをリクエストします。
+
+>[!IMPORTANT]
+>
+> **ドキュメントは変更される場合があります**：このプロンプトライブラリは現在製品に対してテスト中であり、更新および改訂される可能性があります。Forms Experience Builder は、早期導入プログラム中に進化し続けるため、プロンプト、例、ベストプラクティスが変わる可能性があります。
 
 インタラクティブ通信を使用すると、カスタマーサービス、請求、オンボーディングドキュメント、オファーレター、アカウントの更新など、パーソナライズされたインタラクティブなコミュニケーションを作成、管理、配信できます。 動的でユーザー固有のコンテンツにより業界全体のコミュニケーションエクスペリエンスが向上するシナリオをサポートするように設計されています。
 

@@ -7,15 +7,22 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
+source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 3%
+source-wordcount: '317'
+ht-degree: 9%
 
 ---
 
-
 # インタラクティブ通信テンプレートの作成
+
+>[!NOTE]
+>
+> インタラクティブ通信機能は、早期導入プログラムで利用できます。 勤務先のアドレスから `aem-forms-ea@adobe.com` にメールを送信して、アクセスをリクエストします。
+
+>[!IMPORTANT]
+>
+> **ドキュメントは変更される場合があります**：このプロンプトライブラリは現在製品に対してテスト中であり、更新および改訂される可能性があります。Forms Experience Builder は、早期導入プログラム中に進化し続けるため、プロンプト、例、ベストプラクティスが変わる可能性があります。
 
 AEMのインタラクティブ通信テンプレートを使用すると、ヘッダー、フッター、ロゴ、デフォルトのスタイル設定など、再利用可能なレイアウト構造を定義できます。 これらのテンプレートは、一貫性があり、ブランド化され、効率的なコミュニケーションを作成する基盤となります。
 
