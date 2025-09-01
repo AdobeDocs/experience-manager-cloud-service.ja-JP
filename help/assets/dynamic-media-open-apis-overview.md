@@ -3,10 +3,10 @@ title: OpenAPI 機能を備えた Dynamic Media
 description: OpenAPI 機能を備えた Dynamic Media を使用する理由や有効にする方法などの主な概念について説明します。
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1062'
-ht-degree: 100%
+source-git-commit: 2b7dc8e25c28c7e537bf19b9ed0518c9adfe7a74
+workflow-type: tm+mt
+source-wordcount: '1063'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ OpenAPI 機能を備えたDynamic Media には、次のような主なメリッ�
 
 * **Web に最適化された配信**：デジタルアセットは、web に最適化された形式で配信され、デジタルエクスペリエンスのコア web バイタルを強化します。これには、画像の WebP レンディション、ビデオの HLS または DASH プロトコルによるアダプティブストリーミング、ドキュメントの元のレンディションのサポートが含まれます。
 
-* **動的アセット変換**：当社のシステムでは、画像修飾子と呼ばれる URL パラメーターを使用して、その場で画像を変換できます。[例えば、幅、高さ、回転、反転、画質、切り抜き、形式、スマート切り抜きなどです](/help/assets/deliver-assets-apis.md)。変換したレンディションは動的に生成され、CDN 経由でシームレスに配信されます。
+* [動的アセット変換](https://developer.adobe.com/experience-cloud/experience-manager-apis)：当社のシステムでは、画像修飾子と呼ばれる URL パラメーターを使用して、その場で画像を変換できます。例えば、幅、高さ、回転、反転、画質、切り抜き、形式、スマート切り抜きなどです。 変換したレンディションは動的に生成され、CDN 経由でシームレスに配信されます。
 
 * **アセットの安全な配信**：OpenAPI 機能を備えた Dynamic Media は、デジタルアセットへのアクセスを制御するメカニズムを提供します。セキュリティ保護対象のアセットのメタデータとしてユーザーの役割またはグループを指定し、[承認済みユーザーのみがこれらのアセットにアクセスできる](/help/assets/restrict-assets-delivery.md)定義済みの期間を設定できます。制限期間中、セキュリティ保護対象のアセットの配信 URL は、承認されていないユーザーに対しては解決されません。
 
