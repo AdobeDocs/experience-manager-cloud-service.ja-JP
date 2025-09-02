@@ -4,9 +4,9 @@ description: Cloud Acceleration Manager を使用して、移行セットから�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: c81e870667d284626a0092775fdd3bab37b99c58
+source-git-commit: 2fafb582ae8fc5e2ecc19157ff34e16be401393a
 workflow-type: tm+mt
-source-wordcount: '3577'
+source-wordcount: '3591'
 ht-degree: 96%
 
 ---
@@ -152,7 +152,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 
 * AEM as a Cloud Service は環境の状態を維持し、様々な通常の理由で移行サービスの再起動が必要になる場合があります。そのサービスが再起動中の場合はサービスにアクセスできませんが、最終的には利用できるようになります。
 * インスタンス上で別のプロセスが実行されている可能性があります。例えば、[AEM バージョンの更新](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)の適用中にシステムがビジー状態になり、移行サービスが定期的に利用できなくなる可能性があります。その場合はプロセスが完了すると、取り込みの開始を再試行できます。
-* Cloud Manager を使用して [IP 許可リストが適用されている](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)場合、Cloud Acceleration Manager が移行サービスに到達するのをブロックします。アドレスが動的なので、取り込み用に IP アドレスを追加することはできません。現在、唯一の解決策は、取り込みとインデックス作成プロセス中に IP 許可リストを無効にすることです。
+* Cloud Manager を使用して [IP 許可リストが適用されている](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)場合、Cloud Acceleration Manager が移行サービスに到達するのをブロックします。アドレスが動的なので、取り込み用に IP アドレスを追加することはできません。現在、唯一の解決策は、取り込みとインデックス作成のプロセスの実行中に一時的に 0.0.0.0/0 を許可リストに追加して、取り込みとインデックス作成のプロセス中に IP許可リストを無効にすることです。
 * 調査が必要となる理由が、他に存在する場合があります。それでも取り込みやインデックス作成に失敗する場合は、アドビカスタマーケアにお問い合わせください。
 
 ### AEM バージョンの更新と取り込み {#aem-version-updates-and-ingestions}
