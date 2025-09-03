@@ -3,9 +3,9 @@ title: OpenAPI 機能を使用した Dynamic Media を使用した画像の最�
 description: OpenAPI 機能を備えた Dynamic Media の画像最適化機能を使用して、公開配信前にその場で画像を最適化する方法を説明します
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 5a01aff1d6c10d86e2faef22da2dbe724e24e673
+source-git-commit: 3d5ae3bae9635625912a4afb2f74d002cd0ab670
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 [ スマート切り抜き ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request) は、[!DNL Dynamic Media with OpenAPI capabilities] の動的サイズ設定機能です。 [!DNL Smart Crop] は、AI を活用したコンテンツ対応切り抜きを使用して、切り抜きバージョンでの視覚的なコンテキストを維持しながら、様々な画面サイズの画像をインテリジェントに切り抜く高度な画像処理技術です。 AI が画像を分析して、焦点または注目点を特定し、画像を自動的に切り抜いて、切り抜かれたすべてのバージョンで焦点を保持します。 レスポンシブデザインの重要な要素である [!DNL Smart Crop] は、画像を切り抜くためのコスト効率の高い時間効率の良い方法を提供します。
 
-画像またはフォルダーに既に適用されている [ スマート切り抜きレンディションの作成 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles)、[ フォルダーへの適用 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#creating-image-profiles)、または [!DNL Admin View] レンディションの編集 [ を ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#applying-an-image-profile-to-folders) で行う方法については、[Dynamic Media 画像プロファイル ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#editing-the-smart-crop-or-smart-swatch-of-a-single-image) の記事を参照してください。 この [!DNL Smart Crop] ビデオ [ で、](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) しい手順を作成する方法を説明します。
+画像またはフォルダーに既に適用されている [ スマート切り抜きレンディションの作成 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles)、[ フォルダーへの適用 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#creating-image-profiles)、または [!DNL Admin View] レンディションの編集 [ を ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#applying-an-image-profile-to-folders) で行う方法については、[Dynamic Media 画像プロファイル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#editing-the-smart-crop-or-smart-swatch-of-a-single-image) の記事を参照してください。 この [!DNL Smart Crop] ビデオ [ で、](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) しい手順を作成する方法を説明します。
 
 [!DNL Smart Crop] パラメーターは、named-smartcrop-profiles が存在し、アセットに適用されていることを想定しています。 [ パラメーターと名前付き ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request) プロファイルの適用方法について詳しくは、[!DNL Smart Crop] スマート切り抜きプロファイル [!DNL Smart Crop] を参照してください。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 [!DNL Dynamic Media with OpenAPI] しい配信 URL を使用して、1 つのプリセットを複数の画像に適用できます。 これにより、各アセットを手動で編集することなく、アセット間で一貫した書式設定が保証されます。
 
-[ 管理者表示で画像プリセットを作成する方法 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets) および [ レスポンシブ画像プリセットを作成する方法 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-image-presets) について詳しくは、[ 画像プリセットの管理 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-a-responsive-image-preset) の記事を参照してください。これらの記事では、様々な画面サイズに合わせてアセットを自動的に適応させます。
+[ 管理者表示で画像プリセットを作成する方法 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets) および [ レスポンシブ画像プリセットを作成する方法 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-image-presets) について詳しくは、[ 画像プリセットの管理 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-a-responsive-image-preset) の記事を参照してください。これらの記事では、様々な画面サイズに合わせてアセットを自動的に適応させます。
 
 ### 画像プリセットを使用するメリット{#benefits-of-image-presets}
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 #### 画像配信 URL でのプリセットの使用{#use-presets-in-delivery-urls}
 
-プリセットを使用すると、配信 URL を短く、使いやすくなります。  各プリセット名は、配信 URL の一意の識別子として機能します。 アセットの配信 URL に複数の修飾子を追加する代わりに、プリセット名を参照して、即座にレンディションを生成します。 [ 画像に Dynamic Media 画像プリセットを適用する方法を学ぶ ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets)。
+プリセットを使用すると、配信 URL を短く、使いやすくなります。  各プリセット名は、配信 URL の一意の識別子として機能します。 アセットの配信 URL に複数の修飾子を追加する代わりに、プリセット名を参照して、即座にレンディションを生成します。 [ 画像に Dynamic Media 画像プリセットを適用する方法を学ぶ ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets)。
 次の例では、ある URL をプリセットと比較して、プリセットのない URL を特定します。
 
 **プリセットのない URL （長い URL）**:
@@ -76,13 +76,10 @@ https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:ae
 #### AEM Sitesでのオーサリング時のプリセットの使用{#use-presets-during-authoring-in-aem-sites}
 
 [!DNL Image Presets] のサポートが有効になっている場合、作成者はオーサリングページでページ [!DNL AEM Sites] 編集中に [!DNL Dynamic Media] を選択できます。
-
 オーサリングページで画像プリセットを使用するには、次の手順を実行します。
-
 1. Sites オーサリングページに移動します。
 1. [ パネルを使用してアセットを選択するには、「AEM ページエディターでリモートアセットにアクセス ](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) の節の手順を実行し [!DNL Asset Selector] す。
-1. [!DNL asset selector] ントロールパネルで、「プリセット **[!UICONTROL タイプ]** まで下にスクロールし、「`Preset=Preset Name` 画像の修飾子 **[!UICONTROL 」フィールドで]** を指定します。
-
+1. [!DNL asset selector] ントロールパネルで、下にスクロールして **[!UICONTROL プリセットタイプ]** を表示し、「`Preset=Preset Name` 画像の修飾子 **[!UICONTROL 」フィールドで]** を指定して **[!UICONTROL 完了]** をクリックします。
    ![ プリセット ](/help/assets/assets/preset-in-asset-selector-panel.png)
 
 ## スマートイメージング{#use-smart-imaging-using-dynamic-media-with-openapi-capabilities}
