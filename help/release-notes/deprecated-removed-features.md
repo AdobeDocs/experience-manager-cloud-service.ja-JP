@@ -6,7 +6,7 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3194'
 ht-degree: 100%
 
@@ -17,11 +17,11 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
 >title="AEM as a Cloud Service の廃止された機能と削除された機能"
->abstract="AEM as a Cloud Service には、クラウドネイティブなデプロイメントモデルがあります。このタブには、クラウドネイティブな機能に置き換えられた機能がハイライト表示されます。"
+>abstract="AEM as a Cloud Service には、クラウドネイティブなデプロイメントモデルがあります。 このタブには、クラウドネイティブな機能に置き換えられた機能がハイライト表示されます。"
 
-アドビでは、AEM as a Cloud Service のパフォーマンス、セキュリティ、全体的な価値に関する進化する標準を満たすように、API や設定などの機能を定期的にレビューしています。これらの評価に基づいて、特定の機能が非推奨（廃止予定）としてマークされる場合があります。可能であれば、アドビが適切な代替手段を提供します。
+アドビでは、AEM as a Cloud Service のパフォーマンス、セキュリティ、全体的な価値に関する進化する標準を満たすように、API や設定などの機能を定期的にレビューしています。 これらの評価に基づいて、特定の機能が非推奨（廃止予定）としてマークされる場合があります。 可能であれば、アドビが適切な代替手段を提供します。
 
-廃止が発表されると、この機能は限られた期間のみ利用可能となり、お客様は指定された削除日までにすべての使用を削除する必要があります。アドビは、スムーズな移行をサポートするために、合理的な通知とガイダンスを提供します。
+廃止が発表されると、この機能は限られた期間のみ利用可能となり、お客様は指定された削除日までにすべての使用を削除する必要があります。 アドビは、スムーズな移行をサポートするために、合理的な通知とガイダンスを提供します。
 
 廃止期間中、アドビでは、メール通知、アクションセンターのアラートまたは Cloud Manager のリマインダーを通じて、機能の使用を停止するために必要なアクションをお客様に通知します。
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ## 非推奨の機能 {#deprecated-features}
 
-以下の表に示す機能は、非推奨として発表されていますが、まだ削除されていません。削除予定日までに機能の使用を中止する必要があります。そうしないと、パフォーマンス、可用性、セキュリティに関連する問題が発生する可能性があります。
+以下の表に示す機能は、非推奨として発表されていますが、まだ削除されていません。  削除予定日までに機能の使用を中止する必要があります。そうしないと、パフォーマンス、可用性、セキュリティに関連する問題が発生する可能性があります。
 
 | 機能 | 非推奨（廃止予定）の機能 | 代替手段 |
 | ------------ | ------------------ | ----------- |
@@ -48,9 +48,9 @@ ht-degree: 100%
 | [!DNL Assets] | ビデオの FFmpeg トランスコード。 | FFmpeg サムネールの生成には、[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)を使用。 FFmpeg トランスコードの場合は、[Dynamic Media](/help/assets/manage-video-assets.md) を使用。 |
 | [!DNL Foundation] | レプリケーションエージェントの「配布」タブのツリーレプリケーション UI（2021年9月30日（PT）以降に削除） | [パブリケーションの管理](/help/operations/replication.md#manage-publication)または[ツリーアクティベーションワークフローステップ](/help/operations/replication.md#tree-activation)のアプローチ。 |
 | [!DNL Foundation] | レプリケーションエージェントの管理画面の「配布」タブとレプリケーション API では、10 MB を超えるコンテンツパッケージをレプリケートできません。 | [パブリケーションの管理](/help/operations/replication.md#manage-publication)または[ツリーアクティベーションワークフローステップ](/help/operations/replication.md#tree-activation) |
-| [!DNL Foundation] | Adobe Developer Console プロジェクトから生成された資格情報を使用した統合では、サービスアカウント（JWT）資格情報のサポートが段階的に失われます。2024年5月1日（PT）以降、Adobe Developer Console で新しいサービスアカウント（JWT）資格情報を作成できなくなります。既存のサービスアカウント（JWT）資格情報は、2025年1月1日（PT）まで引き続き、設定済みの統合に使用できますが、それ以降は機能しなくなり、お客様は OAuth サーバー間の資格情報に移行する必要があります。[詳細情報](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | OAuth サーバー間の資格情報に[移行](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview)します。 |
+| [!DNL Foundation] | Adobe Developer Console プロジェクトから生成された資格情報を使用した統合では、サービスアカウント（JWT）資格情報のサポートが段階的に失われます。 2024年5月1日（PT）以降、Adobe Developer Console で新しいサービスアカウント（JWT）資格情報を作成できなくなります。 既存のサービスアカウント（JWT）資格情報は、2025年1月1日（PT）まで引き続き、設定済みの統合に使用できますが、それ以降は機能しなくなり、お客様は OAuth サーバー間の資格情報に移行する必要があります。 [詳細情報](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | OAuth サーバー間の資格情報に[移行](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview)します。 |
 | [!DNL Foundation] | コンテンツツリーを公開ワークフローと、コンテンツの階層のレプリケーションに使用された関連するコンテンツツリーを公開ワークフローステップ。 | よりパフォーマンスの高い[ツリーアクティベーションワークフローステップ](/help/operations/replication.md#tree-activation)を使用します。 |
-| [!DNL Foundation] | YUI を使用した JavaScript クライアントライブラリの圧縮／軽量化。アドビでは、YUI ライブラリを今後更新する予定はありません。 | アドビは、実装を Google Closure Compiler（GCC）に切り替えることをお勧めします。 |
+| [!DNL Foundation] | YUI を使用した JavaScript クライアントライブラリの圧縮／軽量化。 アドビでは、YUI ライブラリを今後更新する予定はありません。 | アドビは、実装を Google Closure Compiler（GCC）に切り替えることをお勧めします。 |
 
 ## 削除された機能 {#removed-features}
 
@@ -68,11 +68,11 @@ ht-degree: 100%
 | [!DNL Foundation] | Apache Felix Http Whiteboard のサポート | OSGi Http Whiteboard | 2022年3月 |
 | [!DNL Foundation] | com.adobe.granite.oauth.server のサポート | Adobe IMS 統合 | 2023年3月 |
 | [!DNL Foundation] | [サービスユーザー ID を取得](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-)するための org.apache.sling.serviceusermapping 機能のサポート | 該当なし | 2024年8月30日（PT） |
-| [!DNL Foundation] | Java 11 ランタイムは非推奨となり、アドビにより Java 21 ランタイムに置き換えられました。コードを Java 11 でビルドすることは引き続き可能です（Java 17 と 21 も選択肢） | Java 21 ランタイムが適用されます。互換性を確保するには、[ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)の説明に従って、ライブラリバージョンをアップデートすることが重要です。 | 2025/5/29 |
+| [!DNL Foundation] | Java 11 ランタイムは非推奨となり、アドビにより Java 21 ランタイムに置き換えられました。 コードを Java 11 でビルドすることは引き続き可能です（Java 17 と 21 も選択肢） | Java 21 ランタイムが適用されます。 互換性を確保するには、[ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)の説明に従って、ライブラリバージョンをアップデートすることが重要です。 | 2025/5/29 |
 
 ## 非推奨（廃止予定）の API {#aem-apis}
 
-以下の表の API（クリックして展開して確認）は、非推奨と発表されましたが、まだ削除されていません。削除予定日までにこれらの API の使用を中止する必要があります。そうしないと、パフォーマンス、可用性、セキュリティに関連する問題が発生する可能性があります。一部の API では、以下の API 削除ガイダンスの節が参照されています。
+以下の表の API（クリックして展開して確認）は、非推奨と発表されましたが、まだ削除されていません。  削除予定日までにこれらの API の使用を中止する必要があります。そうしないと、パフォーマンス、可用性、セキュリティに関連する問題が発生する可能性があります。 一部の API では、以下の API 削除ガイダンスの節が参照されています。
 
 <details>
   <summary>展開して、非推奨（廃止予定）の API のリストを確認します。</summary>
@@ -86,7 +86,7 @@ ht-degree: 100%
 <tbody>
   <tr>
     <td>org.apache.sling.commons.auth<br>org.apache.sling.commons.auth.spi</td>
-    <td>代替として、Sling の Auth Core／Auth Core SPI インターフェイスを使用します。<a href="#org.apache.sling.commons.auth">以下の削除に関するメモを参照してください。</a></td>
+    <td>代替として、Sling の Auth Core／Auth Core SPI インターフェイスを使用します。 <a href="#org.apache.sling.commons.auth">以下の削除に関するメモを参照してください。</a></td>
     <td>2015</td>
     <td>2025/8/31</td>
   </tr>
@@ -121,36 +121,36 @@ ht-degree: 100%
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
-    <td>この API は非推奨（廃止予定）です。JDK が提供する XML API にコードを移行してください。</td>
+    <td>この API は非推奨（廃止予定）です。 JDK が提供する XML API にコードを移行してください。</td>
     <td>2022年1月27日（PT）</td>
     <td>2025/8/31</td>
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
-    <td>AEM as a Cloud Service は、この内部ログバック API をサポートしていません。<a href="#ch.qos.logback">以下の削除に関するメモを参照してください。</a></td>
+    <td>AEM as a Cloud Service は、この内部ログバック API をサポートしていません。 <a href="#ch.qos.logback">以下の削除に関するメモを参照してください。</a></td>
     <td>2022年1月27日（PT）</td>
     <td>2025/8/31</td>
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
-    <td>AEM as a Cloud Service は、この内部 log4j API をサポートしていません。<a href="#org.slf4j">以下の削除に関するメモを参照してください。</a></td>
+    <td>AEM as a Cloud Service は、この内部 log4j API をサポートしていません。 <a href="#org.slf4j">以下の削除に関するメモを参照してください。</a></td>
     <td>2022年1月27日（PT）</td>
     <td>2025/8/31</td>
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
-    <td>Apache Log4j 1 は 2015年に提供が終了し、サポートは終了しました。<a href="#org.apache.log4j">以下の削除に関するメモを参照してください。</a></td>
+    <td>Apache Log4j 1 は 2015年に提供が終了し、サポートは終了しました。 <a href="#org.apache.log4j">以下の削除に関するメモを参照してください。</a></td>
     <td>2022年1月27日（PT）</td>
     <td>2025/8/31</td>
   </tr>
   <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
-    <td>Google Guava コアライブラリは Cloud Service で廃止されました。<a href="#com.google.common">以下の削除に関するメモを参照してください。</a></td>
+    <td>Google Guava コアライブラリは Cloud Service で廃止されました。 <a href="#com.google.common">以下の削除に関するメモを参照してください。</a></td>
     <td>2023/5/15</td>
     <td>2025/8/31</td>
   </tr>
   <tr>
     <td>org.slf4j.event</td>
-    <td>AEM as a Cloud Service は、この内部 slf4j API をサポートしていません。<a href="#org.slf4j">以下の削除に関するメモを参照してください。</a></td>
+    <td>AEM as a Cloud Service は、この内部 slf4j API をサポートしていません。 <a href="#org.slf4j">以下の削除に関するメモを参照してください。</a></td>
     <td>2022/4/11</td>
     <td>2025/8/31</td>
   </tr> 
@@ -174,7 +174,7 @@ ht-degree: 100%
   </tr>
   <tr>
 <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
-    <td>Felix web コンソールはクラウド環境ではサポートされていません。<a href="#org.apache.felix.webconsole">以下の削除に関するメモを参照してください。</a></td>
+    <td>Felix web コンソールはクラウド環境ではサポートされていません。 <a href="#org.apache.felix.webconsole">以下の削除に関するメモを参照してください。</a></td>
     <td>2021/4/30</td>
     <td>2025/8/31</td>
   </tr>
@@ -197,19 +197,19 @@ ht-degree: 100%
   </tr>
   <tr>
 <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 はメンテナンスモードになっています。 Commons Lang 3 を代わりに使用してください。<a href="#apache.commons">以下の削除に関するメモを参照してください。</a></td>
+    <td>Commons Lang 2 はメンテナンスモードになっています。 Commons Lang 3 を代わりに使用してください。 <a href="#apache.commons">以下の削除に関するメモを参照してください。</a></td>
     <td>2021/4/30</td>
     <td>未定</td>
   </tr>
   <tr>
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 はメンテナンスモードになっています。 Commons Collections 4 を代わりに使用してください。<a href="#apache.commons">以下の削除に関するメモを参照してください。</a></td>
+    <td>Commons Collections 3 はメンテナンスモードになっています。 Commons Collections 4 を代わりに使用してください。 <a href="#apache.commons">以下の削除に関するメモを参照してください。</a></td>
     <td>2021/4/30</td>
     <td>未定</td>
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
-    <td>この API は非推奨（廃止予定）です。代わりに、Apache Sling のビルダーを使用します。</td>
+    <td>この API は非推奨（廃止予定）です。 代わりに、Apache Sling のビルダーを使用します。</td>
     <td>2022/10/31</td>
     <td>未定</td>
   </tr>
@@ -236,7 +236,7 @@ ht-degree: 100%
 
 ## 削除された API {#removed-apis}
 
-この節では、非推奨および削除された API を一覧表示します。一部の API では、以下の API 削除ガイダンスの節が参照されています。
+この節では、非推奨および削除された API を一覧表示します。 一部の API では、以下の API 削除ガイダンスの節が参照されています。
 
 <details>
   <summary>展開して、削除された API のリストを表示します。</summary>
@@ -299,7 +299,7 @@ ht-degree: 100%
   </tr>
   <tr>
     <td>com.github.jknack.handlebars.js</td>
-    <td>セキュリティの脆弱性により、Handlebars を 4.0.5 から 4.3.0 にアップグレードする必要があります。このパッケージは、アップグレードされたハンドルバーには存在しません。</td>
+    <td>セキュリティの脆弱性により、Handlebars を 4.0.5 から 4.3.0 にアップグレードする必要があります。 このパッケージは、アップグレードされたハンドルバーには存在しません。</td>
   </tr>
   <tr>
     <td>com.adobe.granite.resourceresolverhelper</td>
@@ -323,7 +323,7 @@ ht-degree: 100%
 
 ### `org.apache.sling.commons.auth*` の削除 {#org.apache.sling.commons.auth}
 
-`org.apache.sling.commons.auth`、`org.apache.sling.commons.auth.spi`、またはその両方を使用している場合、コードをそれぞれ `org.apache.sling.auth` または `org.apache.sling.auth.spi` に移行することで使用を置き換えることができます。古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
+`org.apache.sling.commons.auth`、`org.apache.sling.commons.auth.spi`、またはその両方を使用している場合、コードをそれぞれ `org.apache.sling.auth` または `org.apache.sling.auth.spi` に移行することで使用を置き換えることができます。 古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
 
 アクションリスト：
 
@@ -332,7 +332,7 @@ ht-degree: 100%
 
 ### `org.apache.felix.webconsole*` の削除 {#org.apache.felix.webconsole}
 
-`org.apache.felix.webconsole*` のパッケージを使用する場合は、このコードをプロジェクトから削除します。Cloud Service から web コンソールにアクセスできません。
+`org.apache.felix.webconsole*` のパッケージを使用する場合は、このコードをプロジェクトから削除します。 Cloud Service から web コンソールにアクセスできません。
 
 アクションリスト：
 
@@ -340,7 +340,7 @@ ht-degree: 100%
 
 ### `org.eclipse.jetty*` の削除 {#org.eclipse.jetty}
 
-`org.eclipse.jetty` パッケージまたはそのサブパッケージのいずれかを使用する場合は、同様の機能を備えた他のサードパーティライブラリに移行することをお勧めします。移行が不可能な場合は、以下のリストから必要なバンドルをプロジェクトに追加します。
+`org.eclipse.jetty` パッケージまたはそのサブパッケージのいずれかを使用する場合は、同様の機能を備えた他のサードパーティライブラリに移行することをお勧めします。 移行が不可能な場合は、以下のリストから必要なバンドルをプロジェクトに追加します。
 
 アクションリスト：
 
@@ -368,7 +368,7 @@ Mongo client API をプロジェクトに追加します。
 
 ### `com.google.common*` の削除 {#com.google.common}
 
-Google Guava コアライブラリの使用を中止するか、プロジェクトに適切なバージョンを含めます。多くの場合、このライブラリの使用方法は、JDK のコレクションクラスまたは Apache Commons Collections4 に置き換えることができます。置き換えるバージョンが見つからない場合は、プロジェクトに最新バージョンの Google Guave コアライブラリを含めます。古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
+Google Guava コアライブラリの使用を中止するか、プロジェクトに適切なバージョンを含めます。 多くの場合、このライブラリの使用方法は、JDK のコレクションクラスまたは Apache Commons Collections4 に置き換えることができます。 置き換えるバージョンが見つからない場合は、プロジェクトに最新バージョンの Google Guave コアライブラリを含めます。 古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
 
 アクションリスト：
 
@@ -379,7 +379,7 @@ Google Guava コアライブラリの使用を中止するか、プロジェク�
 
 ### `Apache Commons Lang 2 and Apache Commons Collections 3` の削除 {#apache.commons}
 
-メンテナンスされていない Apache Commons ライブラリの使用を削除し、サポートバージョンの使用に置き換えます。ほとんどの場合、これはパッケージの読み込みを調整するだけで済みますが、クラスやメソッドの名前が変更される場合もあります。古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
+メンテナンスされていない Apache Commons ライブラリの使用を削除し、サポートバージョンの使用に置き換えます。 ほとんどの場合、これはパッケージの読み込みを調整するだけで済みますが、クラスやメソッドの名前が変更される場合もあります。 古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
 
 アクションリスト：
 
@@ -405,7 +405,7 @@ Google Guava コアライブラリの使用を中止するか、プロジェク�
 
 ### `ch.qos.logback*` の使用 {#ch.qos.logback}
 
-Cloud Service ではログバックはサポートされていないため、その使用をすべて削除してください。古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
+Cloud Service ではログバックはサポートされていないため、その使用をすべて削除してください。 古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
 
 アクションリスト：
 
@@ -414,7 +414,7 @@ Cloud Service ではログバックはサポートされていないため、そ
 
 ### `org.slf4j.event and org.slf4j.spi` の使用 {#org.slf4j}
 
-`org.slf4j.event` または `org.slf4j.spi` を使用している場合は、その使用をすべて削除してください。古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
+`org.slf4j.event` または `org.slf4j.spi` を使用している場合は、その使用をすべて削除してください。 古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
 
 アクションリスト：
 
@@ -438,7 +438,7 @@ Cloud Service ではログバックはサポートされていないため、そ
 
 顧客コードでは、リストされていない任意の OSGi 設定を行うことができます。
 
-これらのルールは、Cloud Manager のビルドプロセス中に検証されます。 今後、ルールが追加される可能性があり、その実施予定日が表に記載されています。 顧客は、目標の実施日までにこれらのルールを遵守する必要があります。 削除日以降にルールを遵守しないと、Cloud Manager ビルドプロセスでエラーが発生します。ローカル SDK の開発中に OSGI 設定エラーにフラグを付けるには、Maven プロジェクトに [AEM as a Maven SDK Build Analyzer Maven プラグイン](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) を含める必要があります。
+これらのルールは、Cloud Manager のビルドプロセス中に検証されます。 今後、ルールが追加される可能性があり、その実施予定日が表に記載されています。 顧客は、目標の実施日までにこれらのルールを遵守する必要があります。 削除日以降にルールを遵守しないと、Cloud Manager ビルドプロセスでエラーが発生します。 ローカル SDK の開発中に OSGI 設定エラーにフラグを付けるには、Maven プロジェクトに [AEM as a Maven SDK Build Analyzer Maven プラグイン](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) を含める必要があります。
 
 OSGI 設定に関する追加情報は、[この場所](/help/implementing/deploying/configuring-osgi.md)にあります。
 
@@ -476,7 +476,7 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
 
 ### 将来的に適用される OSGi プロパティの制限 {#future-restrictions-osgi-properties}
 
-今後、アドビは次の OSGi プロパティ制限を適用します。上記の PID の場合、リストに表示されているプロパティのみを設定できます。
+今後、アドビは次の OSGi プロパティ制限を適用します。 上記の PID の場合、リストに表示されているプロパティのみを設定できます。
 
 | OSGi コンポーネントの PID |   | 必須 | タイプ | 制限 (該当する場合) |
 |---|---|---|---|---|
@@ -559,5 +559,5 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
 
 ## Java ランタイムのバージョン 21 へのアップデート {#java-runtime-update-21}
 
-Adobe Experience Manager as a Cloud Service は、Java 21 ランタイムに移行されました。互換性を確保するには、[ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)の説明に従って、ライブラリバージョンをアップデートすることが不可欠です。
+Adobe Experience Manager as a Cloud Service は、Java 21 ランタイムに移行されました。 互換性を確保するには、[ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)の説明に従って、ライブラリバージョンをアップデートすることが不可欠です。
 
