@@ -35,7 +35,7 @@ Adobe Enterprise ドキュメントには、複数のユーザーガイドが用
 ### コンテンツとコマース
 
 + [[!DNL Experience Manager as a Cloud Service]](experience-manager-cloud-service.md)
-+ [Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)
++ [Experience Manager Sites Optimizer](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/home)
 + [Experience Manager 6.5 LTS](experience-manager-65-lts.md)
 + [Experience Manager 6.5](experience-manager-65.md)
 + [Experience Manager ](experience-manager-release-information#/help/using/aem-previous-versions.md)
@@ -87,8 +87,8 @@ Adobe Enterprise ドキュメントには、複数のユーザーガイドが用
 
 ### ドキュメント
 
-+ [Acrobatのラーニングとサポート ](https://helpx.adobe.com/support/acrobat.html)
-+ [Acrobat Signのラーニングとサポート ](https://helpx.adobe.com/support/sign.html)
++ [Acrobatのラーニングとサポート ](https://helpx.adobe.com/jp/support/acrobat.html)
++ [Acrobat Signのラーニングとサポート ](https://helpx.adobe.com/jp/support/sign.html)
 
 ### 開発者
 
@@ -97,8 +97,8 @@ Adobe Enterprise ドキュメントには、複数のユーザーガイドが用
 
 ### Document Cloudに関する役立つリソース
 
-+ [Document Cloudのラーニングとサポート ](https://helpx.adobe.com/support/document-cloud.html)
-+ [Document Cloud エンタープライズ版チュートリアル ](https://experienceleague.adobe.com/docs/home-tutorials.html#document-cloud-tutorials)
++ [Document Cloudのラーニングとサポート ](https://helpx.adobe.com/jp/support/document-cloud.html)
++ [Document Cloud エンタープライズ版チュートリアル ](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=ja#document-cloud-tutorials)
 + [Adobeの状態 ](https://status.adobe.com/)
 + [ 管理ガイド ](https://helpx.adobe.com/jp/enterprise/admin-guide.html)
 
@@ -106,7 +106,7 @@ Adobe Enterprise ドキュメントには、複数のユーザーガイドが用
 
 ### ドキュメント
 
-+ [Creative Cloudのラーニングとサポート ](https://helpx.adobe.com/support/creative-cloud.html)
++ [Creative Cloudのラーニングとサポート ](https://helpx.adobe.com/jp/support/creative-cloud.html)
 
 ### Creative Cloud for Enterprise に関する役立つリソース
 
@@ -119,7 +119,7 @@ Adobe Enterprise ドキュメントには、複数のユーザーガイドが用
 
 ### クロスクラウドリソース
 
-+ [Experience League イベント ](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html#events)
++ [Experience League イベント ](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja#events)
 + [Adobeの状態 ](https://status.adobe.com/)
 + [Adobe Developer](https://developer.adobe.com/)
 + [ 管理ガイド ](https://helpx.adobe.com/jp/enterprise/admin-guide.html)
@@ -135,10 +135,10 @@ Adobe Enterprise ドキュメントには、複数のユーザーガイドが用
 
 + [Experience Cloud のリリースノート](release-notes#experience-cloud)
 + [チュートリアル](home-tutorials.md)
-+ [ 再生リスト ](https://experienceleague.adobe.com/en/playlists)
++ [ 再生リスト ](https://experienceleague.adobe.com/ja/playlists)
 + [資格認定](certification#program)
 + [コミュニティフォーラム](https://experienceleaguecommunities.adobe.com)
-+ [サポート](https://experienceleague.adobe.com/?support-solution=General&lang=ja&support-tab=home#support)
++ [サポート](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja&support-tab=home#support)
 
 <!--
 + [Events](events.md)
