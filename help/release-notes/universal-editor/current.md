@@ -7,7 +7,7 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: cd717eac1e4eb6eda3b2a60fc28ad63d92e858ec
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 67%
+ht-degree: 71%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 67%
 
 * [ 取り消しまたはやり直し早期導入者機能 ](#undo-redo) 取り消しまたはやり直し操作を使用してコンポーネントを追加した場合に、ページの再読み込みがトリガーされなくなりました。
 
-## 非推奨（廃止予定） {#deprecations}
+## 廃止 {#deprecations}
 
-* `text-input` および `text-area` コンポーネントは、[ リリース 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md) で正式に廃止されました
+* `text-input` コンポーネントと `text-area` コンポーネントは、[リリース 2025.07.09](/help/release-notes/universal-editor/2025/2025-07-09.md) で、正式に非推奨（廃止予定）となりました。
    * `model-definition.json` では、テキストコンポーネントを使用して、プロパティパネルのテキスト入力を作成します。

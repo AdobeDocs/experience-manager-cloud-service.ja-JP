@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 33468de99a3e77539f4bdc9435324c9f52a45d9f
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 68%
+ht-degree: 70%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 68%
 
 2025年9月2日（PT）に公開されたメンテナンスリリース 22171 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 21994 でした。
 
-2025.9.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
+2025.9.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。 詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
 
 ### 新機能  {#new-features-22171}
 
