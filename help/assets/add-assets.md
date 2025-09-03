@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
-source-wordcount: '3144'
-ht-degree: 100%
+source-git-commit: 967923c621774bcbda65bac9428eaaf18a99a9cc
+workflow-type: tm+mt
+source-wordcount: '3177'
+ht-degree: 97%
 
 ---
 
@@ -146,7 +146,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 このツールは、Azure または S3 データストアからのアセットの大規模な取り込みに使用する目的で管理者グループにのみ提供されます。設定と取り込みの手順を紹介するビデオを参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/341389/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 次の図は、データストアから Experience Manager にアセットを取り込む際の様々な段階を示しています。
 
@@ -382,7 +382,7 @@ Experience Manager は、ジョブ履歴を表示します。一括読み込み�
 
 * 直接バイナリアップロードは、アセットをアップロードする新しい方法です。[!DNL Experience Manager] ユーザーインターフェイス、[!DNL Adobe Asset Link]、[!DNL Experience Manager] デスクトップアプリケーションなど、製品の機能とクライアントでは、この機能がデフォルトでサポートされています。ユーザー側の技術チームでカスタマイズまたは拡張されるカスタムコードでは、新しいアップロード API およびプロトコルを使用する必要があります。
 
-* アドビでは、[!DNL Experience Manager Assets] の各フォルダーに追加するアセットは 1,000 個以下にすることをお勧めします。1,000 個以上追加しようとすると、次のような警告メッセージが表示される場合があります。「このディレクトリには 1,000 個以上の項目が含まれています。アップロードや新しいフォルダーの作成が遅れる場合があります。」フォルダーにアセットをさらに追加することもできますが、そのようなフォルダーへのナビゲーション速度の低下など、パフォーマンスに関するイシューが発生する場合があります。
+* [!DNL Experience Manager Assets] では、多数の子アセットを含んだフォルダーをサポートするようになりました。 フォルダーに 1000 個を超える直接の子（アセットまたはサブフォルダー）が含まれると、管理 UI は非同期更新されたインデックスを使用してフォルダーのコンテンツを一覧表示します。 そのため、新しく作成したフォルダーやアセットの表示には少し遅れが生じる場合があり（通常は数秒）、管理ビューでそのフォルダーを開くと、この動作をエンドユーザーに通知するバナーが表示されます。表示される内容は次のとおりです。「このディレクトリには 1,000 以上の項目が含まれています。 アップロードや新しいフォルダーの作成が遅延する場合があります。」
 
 * [!UICONTROL 名前の競合]ダイアログで「**[!UICONTROL 置換]**」を選択すると、新しいアセットのアセット ID が再生成されます。この ID は以前のアセットの ID とは異なります。[アセットインサイト](/help/assets/assets-insights.md)による [!DNL Adobe Analytics] でのインプレッション数やクリック数の追跡が有効になっている場合は、再生成されたアセット ID により、[!DNL Analytics] から取得したアセットのデータが無効になります。
 
