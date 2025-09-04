@@ -4,10 +4,10 @@ description: 独自のプライベート GitHub リポジトリを操作する C
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 45645a963c42f1335ff2019ffe2aa516ee084a9f
+source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 97%
+source-wordcount: '1000'
+ht-degree: 93%
 
 ---
 
@@ -19,9 +19,10 @@ ht-degree: 97%
 >
 >また、web フックを使用して次のリポジトリタイプを追加することもできます。
 >
->* GitHub Enterprise Server（GitHub の自己ホスト型バージョン）リポジトリ
->* GitLab（GitLab の `gitlab.com` バージョンと自己ホスト型バージョンの両方）リポジトリ
->* Bitbucket（`bitbucket.org` と Bitbucket Server の両方および自己ホスト型バージョンの Bitbucket）リポジトリ
+>* GitHub Enterprise Server （GitHub の自己ホスト型バージョン）リポジトリ。
+>* GitLab （GitLab の `gitlab.com` バージョンとセルフホストバージョンの両方）リポジトリ。
+>* Bitbucket （`bitbucket.org` と Bitbucket Server の両方、BitBucket の自己ホスト型バージョン）リポジトリ。
+>* Azure DevOps （[dev.azure.com](http://dev.azure.com) および自己ホスト型バージョンの Azure DevOps）リポジトリ。
 >
 >詳しくは、[Cloud Manager での外部リポジトリの追加 - Private Beta](/help/implementing/cloud-manager/managing-code/external-repositories.md) を参照してください。
 
@@ -153,13 +154,13 @@ Cloud Manager で GitHub リポジトリが検証されると、統合は完了�
 
 
 
-## 使用上のメモ {#usage-notes}
+## 制限事項 {#limitations}
 
-* Web 階層および設定パイプラインは、プライベートリポジトリではサポートされていません。
+Cloud Manager でプライベートリポジトリを使用する場合は、特定の制限が適用されます。
+
 * 実稼動のフルスタックパイプラインでプライベートリポジトリを使用する場合、Git タグは作成およびプッシュされません。
 * Adobe GitHub アプリを GitHub 組織から削除すると、すべてのリポジトリのプルリクエスト検証機能が削除されます。
 * プライベート GitHub Cloud リポジトリと「コミット時」のビルドトリガーを使用するパイプラインは、選択したブランチに新しいコミットがプッシュされた場合に自動的に開始されません。
 * [アーティファクト再利用機能](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)は、プライベートリポジトリには適用されません。
-* Cloud Manager の GitHub チェックを使用して、プルリクエストの検証を一時停止することはできません。
-GitHub リポジトリが Cloud Manager で検証される場合、Cloud Manager は常に、そのリポジトリに対して作成されたプルリクエストの検証を試みます。
-* GitHub 組織に IP 制限がある場合は、サポートケースを作成して、許可する IP アドレスのリストを受け取ります。
+* Cloud Manager の GitHub チェックを使用して、プルリクエストの検証を一時停止することはできません。GitHub リポジトリが Cloud Manager で検証される場合、Cloud Manager は常に、そのリポジトリに対して作成されたプルリクエストの検証を試みます。
+* GitHub 組織が IP 制限を実施する場合は、サポートケースを開いて、許可する必要がある IP アドレスのリストを取得します。

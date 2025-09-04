@@ -4,14 +4,14 @@ description: Edge Delivery パイプラインを追加し、コードをビル�
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 hide: false
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: e1922bd862a2106a274694ea1d3a98da9c186049
-workflow-type: ht
-source-wordcount: '489'
+source-git-commit: dbd4ef8d782c9d05e50cab7479adbbc16d6a247d
+workflow-type: tm+mt
+source-wordcount: '488'
 ht-degree: 100%
 
 ---

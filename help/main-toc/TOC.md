@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8d1010eccc1f3bc7579aa0042cb7c3b5acb7ef27
+source-git-commit: ac2c4511d02433e968519da4c2e1eb13270ea8c4
 workflow-type: tm+mt
-source-wordcount: '6579'
+source-wordcount: '6591'
 ht-degree: 98%
 
 ---
@@ -130,6 +130,7 @@ ht-degree: 98%
    + Cloud Manager のリリースノート {#cloud-manager}
       + [現在](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
+         + [2025.8.0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
          + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
          + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
          + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
@@ -1250,13 +1251,14 @@ ht-degree: 98%
          + [Cloud Manager での Git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [複数のリポジトリの使用](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [エンタープライズ開発チームのセットアップ](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [GitHub チェック設定](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+         + [プライベートリポジトリのプルリクエストチェック](/help/implementing/cloud-manager/managing-code/github-check-config.md)
          + [GitHub チェック注釈](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [環境変数](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI/CD パイプライン {#cicd-pipelines}
          + [CI-CD パイプラインの概要](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [ステージと実稼動専用パイプラインの分割（Beta）](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md)
          + [Edge Delivery パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
          + [パイプラインの管理](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [パイプライン変数](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)

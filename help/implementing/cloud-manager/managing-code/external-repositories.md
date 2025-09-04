@@ -4,10 +4,10 @@ description: Cloud Manager に外部リポジトリを追加する方法につ�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 0243251148af4f188785b1ef0e5ee8eeffe6e0bd
-workflow-type: ht
-source-wordcount: '2321'
-ht-degree: 100%
+source-git-commit: 7a4fbb5bb217a43a223be01e142458ba9a962cc9
+workflow-type: tm+mt
+source-wordcount: '2452'
+ht-degree: 93%
 
 ---
 
@@ -17,14 +17,15 @@ ht-degree: 100%
 
 Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise、GitLab、Bitbucket リポジトリとの統合をサポートしています。
 
-また、Azure DevOps（Beta）Git リポジトリを Cloud Manager にオンボードできるようになりました。最新の Azure DevOps リポジトリとレガシー VSTS（Visual Studio Team Services）リポジトリの両方に対応しています。
+また、Azure DevOps Git リポジトリを Cloud Manager にオンボードできるようになりました。これは、最新の Azure DevOps リポジトリとレガシー VSTS（Visual Studio Team Services）リポジトリの両方に対応しています。
 
 * Edge Delivery Services のユーザーは、オンボードされたリポジトリを使用して、サイトコードを同期およびデプロイできます。
 * AEM as a Cloud Service および Adobe Managed Services（AMS）のユーザーは、リポジトリをフルスタックパイプラインとフロントエンドパイプラインの両方にリンクできます。
 
+<!--
 >[!NOTE]
 >
->この記事で説明する Azure DevOps に追加されたサポートは、Private Beta プログラムを通じてのみ使用できます。詳細と Beta の新規登録について詳しくは、[独自の Git の導入](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts)を参照してください。
+>The support added for Azure DevOps described in this article is available only through the private beta program. For more details and to sign up for the beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts). -->
 
 
 ## 外部リポジトリの設定
@@ -121,14 +122,14 @@ Cloud Manager での外部リポジトリの設定は、次の手順で構成さ
 
 [アクセストークンの管理](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)も参照してください。
 
->[!TAB Azure DevOps（Beta）]
+>[!TAB Azure DevOps]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | 「アクセストークン」オプション | 説明 |
 | --- | --- |
 | **既存のアクセストークンを使用** | 組織にリポジトリアクセストークンを既に指定し、複数のリポジトリにアクセスできる場合は、既存のトークンを選択できます。**トークン名**&#x200B;ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。それ以外の場合は、新しいアクセストークンを追加します。 |
-| **新しいアクセストークンを追加** | <ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Azure DevOps ドキュメント](https://learn.microsoft.com/ja-jp/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)を使用して、リポジトリアクセストークンを作成します。<li>Azure DevOps 個人アクセストークン（PAT）に必須の権限。<br>これらの権限により、Cloud Manager でリポジトリコンテンツへのアクセス、プルリクエストの管理、webhook イベントを構成または反応できるようになります。<br>Azure DevOps でアプリパスワードを作成する場合は、次の必須のアプリパスワード権限が含まれていることを確認します。<ul><li>リポジトリ（読み取り専用）</li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
+| **新しいアクセストークンを追加** | <ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Azure DevOps ドキュメント](https://learn.microsoft.com/ja-jp/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)を使用して、リポジトリアクセストークンを作成します。<li>Azure DevOps 個人アクセストークン（PAT）に必須の権限。<br>これらの権限により、Cloud Manager でリポジトリコンテンツへのアクセス、プルリクエストの管理、webhook イベントを構成または反応できるようになります。<br>Azure DevOps でアプリパスワードを作成する場合は、次の必須のアプリパスワード権限が含まれていることを確認します。<ul><li>コード （読み取り）</li><li>コード （ステータス）</li><li>プルリクエストThreads（読み取りおよび書き込み）</li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
 
 検証後、外部リポジトリを使用してパイプラインにリンクする準備が整います。
 
@@ -239,13 +240,13 @@ URL をプレーンテキストファイルにペーストします。コピー�
 | --- |
 | これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト：作成済み<li>プルリクエスト：更新済み<li>プルリクエスト：結合済み<li>プルリクエスト：コメント<li>リポジトリ：プッシュ</li></li></li></ul></ul></ul> |
 
->[!TAB Azure DevOps（Beta）]
+>[!TAB Azure DevOps]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | 必須の Webhook イベントと認証 |
 | --- |
-| これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>リポジトリ：プッシュ</li></ul>認証の設定：<br>1。「**基本認証ユーザー名**」フィールドに「`cloudmanager`」と入力します。<br>2. 「**基本認証パスワード**」フィールドに、Cloud Manager ユーザーインターフェイスから生成された Webhook シークレットを入力します。 |
+| これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プッシュされたコード</li><li>プル要求がでコメントされました</li><li>プル要求が作成されました</li><li>プル要求が更新されました</li></ul>認証の設定：<br>1。「**基本認証ユーザー名**」フィールドに「`cloudmanager`」と入力します。<br>2. 「**基本認証パスワード**」フィールドに、Cloud Manager ユーザーインターフェイスから生成された Webhook シークレットを入力します。 |
 
 >[!ENDTABS]
 
@@ -303,6 +304,25 @@ PR 検証の進行状況のトラッキングにコミットステータスを�
 
 ![Bitbucket のプルリクエスト検証ステータス](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket2.png)
 
+>[!TAB Azure DevOps]
+
+Azure DevOps は、ステータスチェックを通じてプルリクエストの検証を追跡します。 Cloud Managerがプルリクエストの検証を実行すると、Azure DevOps プルリクエストインターフェイスに表示されるステータスチェックが追加されます。
+
+コード品質の検証中、ステータスチェックにプロセスが進行中であることが示されます。
+
+![Webhook-1 を使用したプルリクエストの Azure DevOps 検証 ](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)
+
+コード品質の検証が完了すると、ステータスチェックが更新され、結果が反映されます。
+
+![Webhook-2 を使用したプルリクエストの Azure DevOps 検証 ](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)
+
+検証が失敗した場合、詳細なエラー情報はステータスチェックの詳細に表示されます。 ステータスチェックをクリックすると、Cloud Managerで完全な検証の結果を表示できます。
+
+![Webhook-3 を使用したプルリクエストの Azure DevOps 検証 ](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)
+
+プルリクエストのコメントとフィードバックについては、Cloud Managerが Azure DevOps のプルリクエストに直接コメントを追加し、検証の詳細と必要なアクションを追加します。
+
+![Webhook-4 を使用したプルリクエストの Azure DevOps 検証 ](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)
 
 
 >[!ENDTABS]
