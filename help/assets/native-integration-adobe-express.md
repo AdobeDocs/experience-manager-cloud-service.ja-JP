@@ -4,10 +4,10 @@ description: AEM Assets と Adobe Express とのネイティブ統合を使用�
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '635'
-ht-degree: 100%
+source-git-commit: d68ed456b3fe838e71465461f8ab4c7508c7668c
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 92%
 
 ---
 
@@ -22,7 +22,6 @@ AEM Assets は Adobe Express とネイティブに統合されているので、
 ## 前提条件 {#prerequisites}
 
 AEM Assets 内の Adobe Express と 1 つ以上の環境にアクセスする権限。環境は、Assets as a Cloud Service または Assets Essentials 内の任意のリポジトリでも構いません。
-
 
 ## Adobe Express エディターでの AEM Assets の使用 {#use-aem-assets-in-express}
 
@@ -66,19 +65,88 @@ Express キャンバスに適切な変更を組み込んだ後、AEM Assets リ�
 
 7. 「**[!UICONTROL アップロード]**」をクリックして、AEM Assets にアセットをアップロードします。
 
+## サポートされているファイル形式 {#supported-formats}
+
+[!DNL Content Hub] は、基になる [!DNL Assets] リポジトリがサポートするすべてのアセットタイプと形式をサポートします。次の表に、アセットを視覚的にプレビューする追加サポートを提供する [!DNL the Content Hub] の主なファイル形式を示します。
+
+<table> 
+    <tbody>
+     <tr>
+      <th><strong>ファイルタイプ</strong></th>
+      <th><strong>サポートされる形式</strong></th>
+      <th><strong>サイズ</strong></th>
+     </tr>
+     <tr>
+        <td rowspan="4"> 画像 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL JPEG]</td>
+        <td> 8,000 X 8,000 ピクセル、最大 40 MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PNG]</td>
+        <td> 8,000 X 8,000 ピクセル、最大 40 MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL SVG]</td>
+        <td> 最大 250 KB</td>
+    </tr>
+    <tr>
+        <td rowspan="4"> ビデオ </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Quicktime]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MP4]</td>
+        <td> 3840 X 3840 ピクセル、最大 200 MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MPEG]</td>
+        <td> 最大 200 MB </td>
+    </tr>
+    <tr>
+        <td rowspan="4"> ドキュメント </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL txt]（プレーン）</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Doc/Docx]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL XML]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td rowspan="2"> メディアを印刷 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PDF]</td>
+        <td> - </td>
+    </tr>
+    </tbody>
+   </table>
+
 ## 制限事項 {#limitations}
 
 1. 読み込みと書き出しの場合、サポートされるビデオファイルのタイプは MP4 です。
 
-2. MP4 ビデオの読み込みの場合：
+2. **MP4 ビデオの読み込み** については、[ サポートされているファイル形式 ](#supported-formats) を参照してください。 また、背景が透明なビデオ（アルファチャンネル）はサポートされていません。
+   <!--
+   1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
+   2. The maximum supported resolution is 3840 X 3840 pixels.
+   3. Videos with transparent backgrounds (alpha channel) are not supported.
+   -->
 
-   1. サポートされる最大ファイルサイズは 200 MB です。この制限を超えると、アラートメッセージが表示されます。
-   2. サポートされる最大解像度は 3840 X 3840 ピクセルです。
-   3. 透明な背景（アルファチャンネル）のビデオはサポートされません。
-
-3. MP4 ビデオの書き出しの場合：
-
-   1. サポートされる最大ファイルサイズは 200 MB です。この制限を超えると、ビデオを 200 MB 以下にトリミングするか、ダウンロード後に AEM Assets の宛先フォルダーに手動でアップロードすることを提案するアラートが表示されます。
+3. **MP4 ビデオの書き出し** の場合、サポートされる最大ファイルサイズは 200 MB です。 この制限を超えると、ビデオを 200 MB 以下にトリミングするか、ダウンロード後に AEM Assets の宛先フォルダーに手動でアップロードすることを提案するアラートが表示されます。
 
 
 
