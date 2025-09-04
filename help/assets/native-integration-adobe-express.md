@@ -4,9 +4,9 @@ description: AEM Assets と Adobe Express とのネイティブ統合を使用�
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: d68ed456b3fe838e71465461f8ab4c7508c7668c
+source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '704'
 ht-degree: 92%
 
 ---
@@ -65,7 +65,7 @@ Express キャンバスに適切な変更を組み込んだ後、AEM Assets リ�
 
 7. 「**[!UICONTROL アップロード]**」をクリックして、AEM Assets にアセットをアップロードします。
 
-## サポートされているファイル形式 {#supported-formats}
+[サポートされているファイル形式](asset-properties-content-hub.md#supported-formats)を参照してください。
 
 [!DNL Content Hub] は、基になる [!DNL Assets] リポジトリがサポートするすべてのアセットタイプと形式をサポートします。次の表に、アセットを視覚的にプレビューする追加サポートを提供する [!DNL the Content Hub] の主なファイル形式を示します。
 
@@ -133,13 +133,13 @@ Express キャンバスに適切な変更を組み込んだ後、AEM Assets リ�
         <td> - </td>
     </tr>
     </tbody>
-   </table>
+</table>
 
 ## 制限事項 {#limitations}
 
 1. 読み込みと書き出しの場合、サポートされるビデオファイルのタイプは MP4 です。
 
-2. **MP4 ビデオの読み込み** については、[ サポートされているファイル形式 ](#supported-formats) を参照してください。 また、背景が透明なビデオ（アルファチャンネル）はサポートされていません。
+2. **MP4 ビデオの読み込み** については、[ サポートされているファイル形式 ](asset-properties-content-hub.md#supported-formats) を参照してください。 また、背景が透明なビデオ（アルファチャンネル）はサポートされていません。
    <!--
    1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
    2. The maximum supported resolution is 3840 X 3840 pixels.

@@ -3,10 +3,10 @@ title: ' [!DNL the Content Hub] でのアセットとそのプロパティのプ
 description: ' [!DNL Content Hub] でアセットとプロパティをプレビューする方法について説明します。'
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
-source-wordcount: '636'
-ht-degree: 100%
+source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
+workflow-type: tm+mt
+source-wordcount: '661'
+ht-degree: 96%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 100%
 * **K：**&#x200B;プレビュー画面を閉じる
 * **L：**&#x200B;タイトル、形式、サイズ、解像度、タグ、カラータグ、スマートタグを含むアセットの情報。
 
-## サポートされるアセット形式 {#supported-formats}
+## サポートされているファイル形式 {#supported-formats}
 
 [!DNL Content Hub] は、基になる [!DNL Assets] リポジトリがサポートするすべてのアセットタイプと形式をサポートします。次の表に、アセットを視覚的にプレビューする追加サポートを提供する [!DNL the Content Hub] の主なファイル形式を示します。
 
@@ -54,46 +54,66 @@ ht-degree: 100%
      <tr>
       <th><strong>ファイルタイプ</strong></th>
       <th><strong>サポートされる形式</strong></th>
+      <th><strong>サイズ</strong></th>
      </tr>
      <tr>
-      <td>画像</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL JPEG]</li> 
-            <li>[!UICONTROL PNG]</li> 
-            <li>[!UICONTROL SVG]</li>
-        </ul>
-      </td>
-     </tr>
-     <tr>
-      <td>ビデオ</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL Quicktime]</li>  
-            <li>[!UICONTROL MP4]</li> 
-        </ul>
-      </td>
-     </tr>
-      <tr>
-      <td>ドキュメント</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL txt]（プレーン）</li>  
-            <li>[!UICONTROL Doc/Docx]</li> 
-            <li>[!UICONTROL XML]</li>
-        </ul>
-      </td>
-     </tr>
-     <tr>
-      <td>メディアを印刷</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL PDF]</li>  
-        </ul>
-      </td>
-     </tr>  
+        <td rowspan="4"> 画像 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL JPEG]</td>
+        <td> 8,000 X 8,000 ピクセル、最大 40 MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PNG]</td>
+        <td> 8,000 X 8,000 ピクセル、最大 40 MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL SVG]</td>
+        <td> 最大 250 KB</td>
+    </tr>
+    <tr>
+        <td rowspan="4"> ビデオ </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Quicktime]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MP4]</td>
+        <td> 3840 X 3840 ピクセル、最大 200 MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MPEG]</td>
+        <td> 最大 200 MB </td>
+    </tr>
+    <tr>
+        <td rowspan="4"> ドキュメント </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL txt]（プレーン）</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Doc/Docx]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL XML]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td rowspan="2"> メディアを印刷 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PDF]</td>
+        <td> - </td>
+    </tr>
     </tbody>
-   </table>
+</table>
 
 ### 派生プロパティ {#derived-properties}
 
@@ -105,7 +125,7 @@ ht-degree: 100%
 
 * **スマートタグ：**[!DNL The Content Hub] は、Adobe Sensei のスマートコンテンツサービスを使用して、タグベースの構造の認識アルゴリズムを使用してアセットのトレーニングを行います。その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。スマートタグを使用すると、関連性の高いアセットをすばやく見つけるうえで役に立つので、プロジェクトのコンテンツベロシティ（コンテンツ創出の速度）が向上します。スマートタグは、画像に含まれないアセット情報の例です。デフォルトで、[!DNL Experience Manager Assets] はアセットにスマートタグを自動的に適用します。
 
-* **カラータグ：**[カラータグ](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=ja)は、アドビの Sensei AI 機能を用いてアセット内で自動識別されるカラーを使用して、アセットを認識するのに役立ちます。
+* **カラータグ：**[カラータグ](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en)は、アドビの Sensei AI 機能を用いてアセット内で自動識別されるカラーを使用して、アセットを認識するのに役立ちます。
 
 * アップロード日
 
