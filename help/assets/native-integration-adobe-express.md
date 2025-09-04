@@ -4,10 +4,10 @@ description: AEM Assets と Adobe Express とのネイティブ統合を使用�
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
+source-git-commit: 200d0ae5546b5d50e8bad590f496b0fab62f0fe3
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 92%
+source-wordcount: '646'
+ht-degree: 91%
 
 ---
 
@@ -50,7 +50,10 @@ Express キャンバスに適切な変更を組み込んだ後、AEM Assets リ�
 
    ![AEM でのアセットの保存](assets/adobe-express-share.png)
 
-2. 右側のパネルの「ストレージ」セクションから、「**AEM Assets**」を選択します。Adobe Express にアップロードダイアログが表示されます。
+2. 右側のパネルの **[!UICONTROL 推奨]** セクションで、「**AEM Assets**」を選択します。 Adobe Express にアップロードダイアログが表示されます。
+
+   ![AEM でのアセットの保存](assets/adobe-express-aem.png)
+
 3. 「**現在のページ**」または「**すべてのページ**」を選択します。書き出すアセットの名前と形式を指定します。キャンバスのコンテンツは、PNG、JPEG、PDF、MP4、MP4+PNG、または MP4+JPEG 形式で書き出すことができます。形式は、キャンバスページのアセットに基づいて自動的に調整されます。
 「**現在のページ**」を選択すると、現在のページのアセットが宛先フォルダーに保存されます。「**すべてのページ**」を選択し、書き出す形式が PDF でない場合、すべてのキャンバスページは、宛先フォルダー内の新しいフォルダーに個別のファイルとして保存されます。書き出す形式が PDF の場合、すべてのキャンバスページが 1 つの PDF ファイルとして宛先フォルダーに保存されます。
 
@@ -65,20 +68,12 @@ Express キャンバスに適切な変更を組み込んだ後、AEM Assets リ�
 
 7. 「**[!UICONTROL アップロード]**」をクリックして、AEM Assets にアセットをアップロードします。
 
-[サポートされているファイル形式](asset-properties-content-hub.md#supported-formats)を参照してください。
-
-[!DNL Content Hub] は、基になる [!DNL Assets] リポジトリがサポートするすべてのアセットタイプと形式をサポートします。次の表に、アセットを視覚的にプレビューする追加サポートを提供する [!DNL the Content Hub] の主なファイル形式を示します。
-
 <table> 
     <tbody>
      <tr>
-      <th><strong>ファイルタイプ</strong></th>
       <th><strong>サポートされる形式</strong></th>
       <th><strong>サイズ</strong></th>
      </tr>
-     <tr>
-        <td rowspan="4"> 画像 </td>
-    </tr>
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
@@ -93,44 +88,11 @@ Express キャンバスに適切な変更を組み込んだ後、AEM Assets リ�
         <td> 最大 250 KB</td>
     </tr>
     <tr>
-        <td rowspan="4"> ビデオ </td>
     </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Quicktime]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
         <td> 3840 X 3840 ピクセル、最大 200 MB</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL MPEG]</td>
-        <td> 最大 200 MB </td>
-    </tr>
-    <tr>
-        <td rowspan="4"> ドキュメント </td>
-    </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL txt]（プレーン）</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Doc/Docx]</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL XML]</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td rowspan="2"> メディアを印刷 </td>
-    </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL PDF]</td>
-        <td> - </td>
     </tr>
     </tbody>
 </table>
@@ -139,7 +101,7 @@ Express キャンバスに適切な変更を組み込んだ後、AEM Assets リ�
 
 1. 読み込みと書き出しの場合、サポートされるビデオファイルのタイプは MP4 です。
 
-2. **MP4 ビデオの読み込み** については、[ サポートされているファイル形式 ](asset-properties-content-hub.md#supported-formats) を参照してください。 また、背景が透明なビデオ（アルファチャンネル）はサポートされていません。
+2. **MP4 ビデオの読み込み** の場合、背景が透明なビデオ（アルファチャンネル）はサポートされません。
    <!--
    1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
    2. The maximum supported resolution is 3840 X 3840 pixels.
