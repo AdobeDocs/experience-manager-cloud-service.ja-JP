@@ -5,9 +5,10 @@ feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: true
-hidefromToC: true
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
+index: false
+hidefromtoc: true
+source-git-commit: a0cb31cefb6f3c086882c237acb13020646573a5
+workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 100%
 
