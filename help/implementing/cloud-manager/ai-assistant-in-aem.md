@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
-source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
+source-git-commit: e10b760bccc7d544dbf3fe7055a038ff9ad92a81
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: '1245'
 ht-degree: 1%
 
 ---
@@ -31,13 +31,13 @@ AEMに直接埋め込まれ、AEM Experience Hub、Cloud Managerおよびオー�
 
 次の 3 分 39 秒のビデオでは、AEMの AI アシスタントの手順を順を追って説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470356?learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## AEMの AI アシスタントにアクセスできます{#get-access}
 
-AEMで AI アシスタントへのアクセス権をユーザーに付与するには、Adobe管理者は、**Adobe Admin Console** でのアクセスを必要とするプロファイルに対して、次のカスタム権限を設定する必要があります。
+AEMで AI アシスタントへのアクセス権をユーザーに付与するには、Adobe管理者が、**Adobe Admin Console** でのアクセスを必要とするプロファイルに対して、次のカスタム権限を設定する必要があります。
 
-* **AI アシスタントへのアクセス** - AEMで AI アシスタントを使用して、商品に関する知識を得たり、AI アシスタントのチャットで商品関連の質問をすることができます。 この権限を有効にする必要があります。
+* **AI アシスタントへのアクセス** - AEMで AI アシスタントを使用して商品の知識を得る権限があり、ユーザーが AI アシスタントのチャットで商品関連の質問をすることができます。 この権限を有効にする必要があります。
 * **サポートアクセス** - ユーザーがサポートチケットを開く権限も必要です。これには、**サポート管理者** の役割が必要になります。
 
 AEMの AI アシスタントリクエストは、Adobe Identity Management サービス（IMS）を通じて認証されます。 詳しくは、[Adobe Identity Management サービスの概要 ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf) を参照してください。
@@ -50,11 +50,11 @@ AEMの AI アシスタントリクエストは、Adobe Identity Management サ�
 
     The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more. -->
 
-1. AEM管理者が、組織で使用できるように AI アシスタントを設定します。 [AEMでの AI アシスタントの設定 ](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md) を参照してください。
+1. AEM管理者が、組織で使用する AI アシスタントを設定します。 [AEMでの AI アシスタントの設定 ](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md) を参照してください。
 
 <!--
 >[!IMPORTANT]
->Be sure you have reviewed and submitted the user agreement so Adobe can enable the AI Assistant feature for you to test out and participate in the private beta program.
+>Be sure you have reviewed and submitted the user agreement so Adobe can enable AI Assistant feature for you to test out and participate in the private beta program.
 >
 >For any questions, send an email to [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) from your email address associated with your Adobe ID. -->
 
@@ -98,7 +98,7 @@ AEMの AI アシスタントは、プライバシー、セキュリティ、ガ�
 
 ## 効果的な質問の作成方法 {#ai-craft-questions}
 
-AEMの AI アシスタントから最も正確な回答を受け取るには、質問に明確でコンテキストのあるフレーズを使用することが重要です。 次のヒントを使用して、クエリが明確で適切に構造化されていることを確認します。
+AEMの AI アシスタントから最も正確な回答を受け取るには、明確さとコンテキストで質問をフレーズ化することが重要です。 次のヒントを使用して、クエリが明確で適切に構造化されていることを確認します。
 
 * タスクまたは質問を簡潔に明確に述べます。
 * あいまいな表現や複雑すぎる構文を避けて、理解を深めます。
@@ -119,7 +119,7 @@ AEMの AI アシスタントから最も正確な回答を受け取るには、�
 <!-- UNHIDE AFTER BETA or at GA
 ### Enable AI Assistant in AEM access through Admin Console 
 
-To use the AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
+To use AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
 
 ![AI Assistant in AEM in the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console.png)
 
@@ -127,9 +127,9 @@ From an employee's perspective, the process is straightforward: identify the pro
 
 Administrators should keep normal Cloud Manager governance in mind. Hold product administrator rights in the Admin Console to create profiles, manage user groups, or edit permissions. If users also need the Assistant's built-in **Create Support Ticket** feature, add the standard **Support Admin** role (standard Admin Console role) to the same individuals or group.
 
-![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
+![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
@@ -174,7 +174,7 @@ AEMの AI アシスタントには、サポートされているトピックや�
 
 ### AEMの AI アシスタントに関するフィードバックをお寄せください
 
-入力した情報は、Adobeで AI アシスタントを改善して、パフォーマンスと精度を向上させるのに役立ちます。
+入力した情報は、Adobeが AI アシスタントを改善して、パフォーマンスと精度を向上させるのに役立ちます。
 
 AEMの AI アシスタントでは、次のオプションを通じて、ご意見やご感想をお寄せください。
 
