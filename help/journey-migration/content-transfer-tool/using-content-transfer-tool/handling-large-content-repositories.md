@@ -4,10 +4,10 @@ description: この節では、大規模なコンテンツリポジトリーの�
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b729c07c78519cd9b6536a0dd142aa8ed01d2a22
 workflow-type: tm+mt
-source-wordcount: '1800'
-ht-degree: 100%
+source-wordcount: '1842'
+ht-degree: 97%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 100%
 
 この節では、コンテンツ転送ツールを使用して AzCopy をプレコピー手順として使用し、コンテンツを AEM as a Cloud Service に移行するように設定する方法を説明します。
 
-### 0. データストア内のすべてのコンテンツの合計サイズを算出する {#determine-total-size}
+### &#x200B;0. データストア内のすべてのコンテンツの合計サイズを算出する {#determine-total-size}
 
 データストアの合計サイズを決定することが重要なのは、次の 2 つの理由によります。
 
@@ -88,7 +88,7 @@ Azure portal の既存のコンテナープロパティページから、「**�
 * Windows の場合は、データストアディレクトリで dir コマンドを使用してサイズを取得します。
   `dir /a/s [location of datastore]`。
 
-### 1. AzCopy をインストールする {#install-azcopy}
+### &#x200B;1. AzCopy をインストールする {#install-azcopy}
 
 [AzCopy](https://learn.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10) は、Microsoft® が提供するコマンドラインツールであり、この機能を有効にするには、ソースインスタンス上で利用可能である必要があります。
 
@@ -97,7 +97,7 @@ Azure portal の既存のコンテナープロパティページから、「**�
 >[!IMPORTANT]
 >後の手順でバイナリへのフルパスが必要になるので、バイナリを配置した場所をメモしておきます。
 
-### 2. AzCopy をサポートするコンテンツ転送ツール（CTT）リリースをインストールする {#install-ctt-azcopy-support}
+### &#x200B;2. AzCopy をサポートするコンテンツ転送ツール（CTT）リリースをインストールする {#install-ctt-azcopy-support}
 
 >[!IMPORTANT]
 >最新のリリースバージョンの CTT を使用する必要があります。
@@ -106,7 +106,7 @@ Azure portal の既存のコンテナープロパティページから、「**�
 CTT の最新リリースは、[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)ポータルからダウンロードできます。
 なお、バージョン 2.0.0 以降しかサポートされていませんので、最新バージョンの使用をお勧めします。
 
-### 3. azcopy.config ファイルを設定する {#configure-azcopy-config-file}
+### &#x200B;3. azcopy.config ファイルを設定する {#configure-azcopy-config-file}
 
 ソース AEM インスタンスの `crx-quickstart/cloud-migration` で、`azcopy.config` という新しいファイルを作成します。
 
@@ -156,13 +156,13 @@ azCopyPath プロパティには、ソース AEM インスタンスに azCopy �
 
 `repository.home` プロパティが azcopy.config にない場合は、デフォルトのデータストア場所 `/mnt/crx/author/crx-quickstart/repository/datastore` がプレコピーの実行に使用されます。
 
-### 4. AzCopy を使用して抽出する {#extracting-azcopy}
+### &#x200B;4. AzCopy を使用して抽出する {#extracting-azcopy}
 
 上記の設定ファイルを配置すると、AzCopy のプレコピー段階は、移行の抽出の一部として実行されます。AzCopy を実行しないようにするには、ファイル名を変更するか、削除します。
 
 >[!NOTE]
 >AzCopy が正しく設定されていない場合は、次のメッセージがログに表示されます。
->`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`。
+>>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`。
 
 1. CTT UI から抽出を開始します。詳しくは、[コンテンツ転送ツールの基本を学ぶ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)と[抽出プロセス](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)を参照してください。
 
@@ -174,7 +174,7 @@ c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy p
 
 これで完了です。このログエントリは、設定が有効と見なされ、AzCopy がソースコンテナから移行コンテナにすべての BLOB をコピー中であることを意味します。
 
-AzCopy のログエントリは抽出ログに表示され、先頭に c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [AzCopy pre-copy ] が付きます。
+AzCopy のログエントリは抽出ログに表示され、接頭辞 c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [AzCopy pre-copy ] が付きます。
 
 >[!CAUTION]
 >
@@ -196,12 +196,15 @@ AzCopy に問題がある場合、抽出は直ちに失敗し、抽出ログに�
 >[!TIP]
 >抽出が成功した直後に取り込みを自動的に開始するようにスケジュールを設定できるようになりました。詳しくは、[ターゲットへのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)を参照してください。
 
+>[!TIP]
+>AzCopy を使用した BLOB 転送がしばらく進行したが、一部の BLOB のみが失敗した場合は、「事前コピー」および「ステージングコンテナを上書き」オプションの両方をオフにして抽出を再実行します。 これにより、以前に転送されなかった残りの BLOB のみが移行されます。
+
 #### ファイルデータストアの場合 {#file-data-store-extract}
 
 AzCopy がソースファイルデータストアに対して実行されている場合は、次のようなメッセージがログに表示され、フォルダーが処理中であることを示します。
 `c.a.g.s.m.c.a.AzCopyFileSourceBlobPreCopy - [AzCopy pre-copy] Processing folder (1/24) crx-quickstart/repository/datastore/5d`
 
-### 5. AzCopy で取り込む {#ingesting-azcopy}
+### &#x200B;5. AzCopy で取り込む {#ingesting-azcopy}
 
 Cloud Acceleration Manager（CAM）からターゲットへのコンテンツの取り込みに関する一般的な情報については、[ターゲットへのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)を参照してください。これには、「新規取り込み」ダイアログで AzCopy（プレコピー）を使用する方法、または使用しない方法に関する説明が含まれます。
 
