@@ -5,10 +5,10 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
-workflow-type: ht
-source-wordcount: '2099'
-ht-degree: 100%
+source-git-commit: 5578cfd1bbe91d904d3f36b67acf610f9196cb7d
+workflow-type: tm+mt
+source-wordcount: '2142'
+ht-degree: 97%
 
 ---
 
@@ -445,6 +445,16 @@ URL の `.plain.` セレクターを使用すると、ブラウザーからプ�
 エクスペリエンスフラグメントの公開は、基本的に、[ページの公開](/help/sites-cloud/authoring/sites-console/publishing-pages.md)と同じです（エクスペリエンスフラグメントコンソールまたはエディターを使用）。
 
 または、[プレビューに公開](/help/sites-cloud/authoring/sites-console/previewing-content.md)することもできます（同じく、エクスペリエンスフラグメントコンソールまたはエディターを使用）。
+
+>[!CAUTION]
+>
+>デフォルトでは、エクスペリエンスフラグメントのルートフォルダー（`/content/experience-fragments` のすぐ下）を公開します。
+>
+>* コンテナフォルダー自体のみを公開します
+>* 子を公開しない
+>* 公開済みの子をすべて非公開にします
+>
+>フォルダー内のすべてのエクスペリエンスフラグメントを公開する場合は、それぞれを個別に公開する必要があります。
 
 ## エクスペリエンスフラグメントの書き出し {#exporting-experience-fragments}
 
