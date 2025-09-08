@@ -1,7 +1,7 @@
 ---
 title: Experience Hubについて
-description: Adobe Experience Hubのページについて説明します。
-landing-page-description: すべてのExperience Hub機能にアクセスするための一元的な出発点である、AEMについて説明します。
+description: Adobe Experience Hub のページについて説明します。
+landing-page-description: すべての AEM 機能にアクセスする一元的な出発点である Experience Hub について説明します。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
@@ -9,7 +9,7 @@ exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
 source-git-commit: 88d7394756c8a9231a51350d592ed478fa51a45e
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
