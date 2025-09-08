@@ -4,9 +4,9 @@ description: AEM 実装に適した KPI を選択する方法について
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9960de2a1f5d36ebbaf95b2c3a3670a955a7d4b0
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '476'
 ht-degree: 100%
 
 ---
@@ -22,9 +22,7 @@ ht-degree: 100%
 
 デジタル世界では、あらゆるものを測定することができます。Adobe Experience Manager の実装に 3 つ主要業績評価指標（KPI）を選択することで、最も重要なことに集中することができます。
 
-
 ## **次の 6 つの手順に従って、何をどのように測定するかを決定できます**
-
 
 1. **事業目的から始める。**&#x200B;ビジネス目標の例には、オンラインでの売上高の増加、運用費の削減または Digital Rights Management（DRM）の違反に伴う法的費用の削減などがあります。
 
@@ -38,8 +36,10 @@ ht-degree: 100%
 
 1. **KPI ごとに測定可能な方法を作成します。** KPI を選択したら、Adobe の KPI 手法テンプレートをダウンロードします。このテンプレートは、残りのプロセスの手順を示します。
 
-1. **各 KPI の対象者を定義します。**&#x200B;このセクションでの最後の手順は、各 KPI に最も関心を寄せている関係者のグループを特定することです。その次の週に、各グループと協力して KPI を確認し、手法を調整、レポートの形式とタイミングについて合意します。
+1. **各 KPI のオーディエンスを定義します。**&#x200B;このセクションでの最後の手順は、各 KPI に最も関心を寄せている関係者のグループを特定することです。その次の週に、各グループと協力して KPI を確認し、手法を調整、レポートの形式とタイミングについて合意します。
 
+<!--
 >[!TIP]
 >
->[**KPI 手法テンプレートのダウンロード**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png?lang=ja)
+>[**Download the KPI Methodology template**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png)
+-->
