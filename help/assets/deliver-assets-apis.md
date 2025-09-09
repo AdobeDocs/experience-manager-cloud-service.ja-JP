@@ -35,7 +35,7 @@ Experience Manager アセットリポジトリで使用可能なすべての [ �
 >[!IMPORTANT]
 >
 >実験的な API から一般に利用できない任意の修飾子をテストできます。 例えば、`</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>` のように指定します。
->>ここをクリックして、[ 実験的 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) と [ 修飾子の完全なリスト ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) の使用方法について詳しく確認してください。
+>&#x200B;>ここをクリックして、[ 実験的 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) と [ 修飾子の完全なリスト ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) の使用方法について詳しく確認してください。
 
 また、OpenAPI 機能を備えた Dynamic Media は、ロングフォームのビデオもサポートしています。ビデオは、最大 50 GB および 2 時間をサポートできます。
 
