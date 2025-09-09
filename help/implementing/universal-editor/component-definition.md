@@ -4,9 +4,9 @@ description: コンポーネント定義とユニバーサルエディター間�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 2b945504385ad78ddfb58d210db4212382e9872c
+source-git-commit: b4e61ec6abcaf73119f8963d72317759b2bd7c76
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '611'
 ht-degree: 3%
 
 ---
@@ -95,7 +95,7 @@ ht-degree: 3%
 `plugins` は、コンポーネントの永続化を担当するプラグインを定義します。 一般的なプラグインは次のとおりです。
 
 * `aem`AEM as a Cloud Service.[ の ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service)
-* `aem65`AEM 6.5.[ の ](https://experienceleague.adobe.com/ja/docs/experience-manager-65)
+* `aem65`AEM 6.5.[ および ](https://experienceleague.adobe.com/ja/docs/experience-manager-65)AEM 6.5 LTS[ の ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts)
 * `xwalk`Edge Delivery Services用AEM Sitesを使用したオーサリング [ の ](https://www.aem.live/developer/ue-tutorial) ール
 
 ## `page` または `cf` {#page-cf}
