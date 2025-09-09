@@ -1,21 +1,21 @@
 ---
-title: ユニバーサルエディターの動的フォーム用ルールエディター
+title: Edge Delivery Services Formsのルールエディター
 description: ユニバーサルエディターのルールエディターを使用して、動的でインテリジェントなフォームを作成します。コーディングなしで、条件付きロジック、計算、インタラクティブな動作を追加します。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+source-git-commit: e2bc958104bd9b75845ad2c213eec18d2560a3a4
 workflow-type: tm+mt
-source-wordcount: '2781'
-ht-degree: 93%
+source-wordcount: '2780'
+ht-degree: 92%
 
 ---
 
 
-# ユニバーサルエディターの動的フォーム用ルールエディター
+# Edge Delivery Services Formsのルールエディター
 
-ルールエディターを使用すると、作成者はコードを記述しなくても、静的なフォームをレスポンシブでインテリジェントなエクスペリエンスに変換できます。フィールドの条件付き表示、計算の実行、データの検証、フロー経由でのガイドおよび人物の入力に応じたビジネスロジックの統合を行うことができます。
+ルールエディターを使用すると、作成者は、コードを記述することなく、静的なフォームをレスポンシブでインテリジェントなエクスペリエンスに変換できます。 フィールドの条件付き表示、計算の実行、データの検証、フロー経由でのガイドおよび人物の入力に応じたビジネスロジックの統合を行うことができます。
 
 ## 学習内容
 
