@@ -3,10 +3,10 @@ title: OpenAPI 機能を備えた Dynamic Media
 description: OpenAPI 機能を備えた Dynamic Media を使用する理由や有効にする方法などの主な概念について説明します。
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 2b7dc8e25c28c7e537bf19b9ed0518c9adfe7a74
+source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 98%
+source-wordcount: '1106'
+ht-degree: 96%
 
 ---
 
@@ -37,6 +37,13 @@ OpenAPI 機能を備えたDynamic Media には、次のような主なメリッ�
 * **十分な情報に基づく意思決定を行うデータインサイト（今後）**：アセットの管理と配信に加えて、CDN でのアセット配信に関する配信データインサイトを取得し、ブランドマネージャーがチャネル全体で配信指標を追跡できます。これにより、データに基づく意思決定を行うことができ、アセットガバナンスと配信戦略を継続的に最適化できます。
 
 ![Dynamic Media Open API のデータフロー図](assets/dm-openapi-dfd.png)
+
+使用可能な Dynamic Media 製品とその機能について詳しくは、[Dynamic Media Prime と Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md) を参照してください。
+
+>[!NOTE]
+>
+>DM Primeのお客様は、回転、切り抜き、反転、高さ、幅、画質などの基本的な画像修飾子を使用できます。 スマートイメージングは、DM Primeのお客様に対する AVIF をサポートしていません。
+
 
 ## OpenAPI 機能を備えた Dynamic Media にアクセスする前提条件 {#prerequisites-dynaminc-media-open-apis}
 

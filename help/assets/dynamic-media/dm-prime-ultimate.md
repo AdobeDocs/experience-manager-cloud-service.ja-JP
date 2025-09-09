@@ -3,10 +3,10 @@ title: Dynamic Media Prime と Ultimate
 description: Dynamic Media Prime と Ultimate の詳細、そのメリットおよび 2 つの違いについて説明します。
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
+source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 99%
+source-wordcount: '421'
+ht-degree: 93%
 
 ---
 
@@ -29,6 +29,10 @@ Dynamic Media Prime の他の主なメリットには、次のようなものが
 * ブランドの一貫性
 * Web に最適化された画像配信
 * アダプティブビデオストリーミング
+
+>[!NOTE]
+>
+>DM Primeのお客様は、回転、切り抜き、反転、高さ、幅、画質などの基本的な画像修飾子を使用できます。 スマートイメージングは、DM Primeのお客様に対する AVIF をサポートしていません。
 
 ### 前提条件 {#pre-requisites-dm-prime}
 
