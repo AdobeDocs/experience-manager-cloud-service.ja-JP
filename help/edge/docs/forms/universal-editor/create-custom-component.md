@@ -4,512 +4,641 @@ description: EDS フォームのカスタムコンポーネントの作成
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '1789'
-ht-degree: 100%
+source-git-commit: 1d59791561fc6148778adccab902c8e727adc641
+workflow-type: tm+mt
+source-wordcount: '2120'
+ht-degree: 4%
 
 ---
 
-# WYSIWYG オーサリングでのカスタムコンポーネントの作成
+
+# アダプティブフォームブロックでのカスタムフォームコンポーネントの作成
 
 Edge Delivery Services Forms には、カスタマイズ機能が用意されているので、フロントエンド開発者は調整されたフォームコンポーネントを作成できます。これらのカスタムコンポーネントは WYSIWYG オーサリングエクスペリエンスにシームレスに統合されるので、フォーム作成者はフォームエディター内で簡単に追加、設定、管理できます。カスタムコンポーネントを使用すると、作成者はスムーズで直感的なオーサリングプロセスを確保しながら機能を強化できます。
 
 このドキュメントでは、ネイティブ HTML フォームコンポーネントをスタイル設定してカスタムコンポーネントを作成し、ユーザーエクスペリエンスを向上させ、フォームの視覚的な魅力を高める手順について説明します。
 
-## 前提条件
+## アーキテクチャの概要
 
-カスタムコンポーネントの作成を開始する前に、次のことを行う必要があります。
+Forms ブロックのカスタムコンポーネントは、**MVC （Model-View-Controller）** アーキテクチャパターンに従います。
 
-- [ネイティブ HTML コンポーネント](/help/edge/docs/forms/form-components.md)の基本知識を持つ。
-- [CSS セレクターを使用してフィールドタイプに基づいてフォームフィールドをスタイル設定](/help/edge/docs/forms/style-theme-forms.md)する方法を理解する
+### モデル
 
-## カスタムコンポーネントの作成
+- `field/component` ごとに JSON スキーマによって定義されます。
 
-ユニバーサルエディターでカスタムコンポーネントを追加すると、フォーム作成者はフォームを設計する際に新しいコンポーネントを使用できます。これには、コンポーネントの登録、そのプロパティの定義およびコンポーネントを使用できる場所の設定が含まれます。カスタムコンポーネントを作成する手順は次のとおりです。
+- オーサリング可能なプロパティは、対応する JSON ファイルで指定されています（blocks/form/models/form- components を参照）。
 
-[1. 新しいカスタムコンポーネントの構造の追加](#1-adding-structure-for-new-custom-component) 
-[2.オーサリング用のカスタムコンポーネントのプロパティの定義](#2-defining-the-properties-of-your-custom-component-for-authoring)
-[3.WYSIWYGコンポーネントリストでのカスタムコンポーネントの表示](#3-making-your-custom-component-visible-in-the-wysiwyg-component-list)
-[4.カスタムコンポーネントの登録](#4-registering-your-custom-component)
-[5.カスタムコンポーネントの実行時の動作の追加](#5-adding-the-runtime-behaviour-for-your-custom-component)
+- これらのプロパティは、フォームビルダーで作成者が使用でき、フィールド定義（fd）の一部としてコンポーネントに渡されます。
 
-**範囲**&#x200B;と呼ばれる新しいカスタムコンポーネントを作成する例を見てみましょう。範囲コンポーネントは直線として表示され、最小値、最大値、選択した値などの値が表示されます。
+### 表示
 
-![最小値と最大値を持つスライダーと選択した値インジケーターを示す範囲コンポーネントの視覚的表現](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+- 各フィールドタイプのHTMLの構造については、form-field-types を参照してください。
 
-この記事を最後まで読むと、カスタムコンポーネントをゼロから作成する方法を理解できるようになります。
+- これは、拡張または変更できるコンポーネントの基本構造です。
 
-### &#x200B;1. 新しいカスタムコンポーネントの構造の追加
+- 各 OOTB コンポーネントのHTMLの基本構造については、form-field-types を参照してください。
 
-カスタムコンポーネントを使用する前に、ユニバーサルエディターで使用可能なオプションとして認識されるように登録する必要があります。これは、一意の識別子、デフォルトのプロパティおよびコンポーネントの構造を含むコンポーネント定義を通じて実現されます。カスタムコンポーネントをフォームオーサリングに使用できるようにするには、次の手順を実行します。
+### コントローラ/コンポーネント ロジック
 
-1. **新しいフォルダーとファイルを追加**
+- JavaScriptに OOTB （標準）またはカスタムコンポーネントとして実装されます。  - カスタムコンポーネントの場合は `blocks/form/components` にあります。
 
-   AEM プロジェクトに新しいカスタムコンポーネント用の新しいフォルダーとファイルを追加します。
+## OOTB コンポーネント
 
-   1. AEM プロジェクトを開き、`../blocks/form/components/` に移動します。
-   1. `../blocks/form/components/<component_name>` でカスタムコンポーネントの新しいフォルダーを追加します。この例では、`range` という名前のフォルダーを作成します。
-   1. `../blocks/form/components/<component_name>` に新しく作成したフォルダーに移動します。例えば、`../blocks/form/components/range` に移動して、次のファイルを追加します。
+**OOTB （標準）** コンポーネントは、カスタム開発の基盤となります。
 
-      - `/blocks/form/components/range/_range.json`：カスタムコンポーネントの定義が含まれます。
-      - `../blocks/form/components/range/range.css`：カスタムコンポーネントのスタイル設定を定義します。
-      - `../blocks/form/components/range/range.js`：実行時にカスタムコンポーネントをカスタマイズします。
+- OOTB コンポーネントは `blocks/form/models/form-components` にあります。
 
-        ![オーサリング用のカスタムコンポーネントの追加](/help/edge/docs/forms/universal-editor/assets/adding-custom-component.png)
+- 各 OOTB コンポーネントには、オーサリング可能なプロパティ（例：` _text-input.json`,`_drop-down.json`）を定義する JSON ファイルがあります。
 
-        >[!NOTE]
-        >
-        > JSON ファイルのファイル名に、接頭辞としてアンダースコア（_）が含まれていることを確認します。
+- これらのプロパティは、フォームビルダーで作成者が使用でき、フィールド定義（fd）の一部としてコンポーネントに渡されます。
 
-1. `/blocks/form/components/range/_range.json` ファイルに移動し、カスタムコンポーネントのコンポーネント定義を追加します。
+- 各 OOTB コンポーネントのHTMLの基本構造については、form-field-types を参照してください。
 
-1. **コンポーネント定義を追加**
+既存の OOTB コンポーネントを拡張すると、基本構造、動作、プロパティを再利用しながら、必要に応じてカスタマイズできます。
 
-   定義を追加するには、`_range.json` ファイルに次のフィールドを追加する必要があります。
+- カスタムコンポーネントは、事前定義済みの OOTB コンポーネントのセットから拡張する必要があります。
 
-   - **タイトル**：ユニバーサルエディターに表示されるコンポーネントのタイトル。
-   - **ID**：コンポーネントの一意の ID。
-   - **fieldType**：Forms では、特定のタイプのユーザー入力を取り込む様々な **fieldType** をサポートしています。[サポートされている fieldType は、追加バイトの節](#supported-fieldtypes)で確認できます。
-   - **resourceType**：各カスタムコンポーネントには、fieldType に基づいて関連付けられたリソースタイプがあります。[サポートされている resourceType は、追加バイトの節](#supported-resourcetype)で確認できます。
-   - **jcr:title**：タイトルに似ていますが、コンポーネントの構造内に保存されます。
-   - **fd:viewType**：カスタムコンポーネントの名前を表します。これはコンポーネントの一意の ID です。コンポーネントのカスタマイズされたビューを作成する必要があります。
+- フィールドの JSON の `viewType` プロパティに基づいて、拡張する OOTB コンポーネントが識別されます。
 
-コンポーネント定義を追加した後の `_range.json` ファイルは次のとおりです。
+- システムは、許可されたカスタムコンポーネントバリアントのレジストリを保持します。 このレジストリにリストされているバリアントのみを使用できます（例：`customComponents[]` の `mappings.js`）。
 
-```javascript
-{
-  "definitions": [
-    {
-      "title": "Range",
-      "id": "range",
-      "plugins": {
-        "xwalk": {
-          "page": {
-            "resourceType": "core/fd/components/form/numberinput/v1/numberinput",
-            "template": {
-              "jcr:title": "Range",
-              "fieldType": "number-input",
-              "fd:viewType": "range",
-              "enabled": true,
-              "visible": true
-            }
-          }
-        }
-      }
-    }
-  ]
-}
-```
+- フォームのレンダリング時には、システムはバリアントプロパティまたは `:type/fd:viewType` をチェックし、登録済みのカスタムコンポーネントと一致する場合は、対応する JS および CSS ファイルを `blocks/form/components` フォルダーから読み込みます。
+
+- カスタムコンポーネントは OOTB コンポーネントのベース HTML構造に適用され、動作と外観を拡張またはオーバーライドできます。
+
+## カスタムコンポーネントの構造
+
+カスタムコンポーネントを作成するには、**基礎モード CLI** を使用して、コンポーネントに必要なファイルとフォルダーを設定し、カスタムコンポーネントのコードを追加します。
+
+- カスタムコンポーネントは `blocks/form/components` フォルダーにあります。
+
+- 各カスタムコンポーネントは、コンポーネントにちなんで名前が付けられた独自のフォルダー（カードなど）に配置する必要があります。 フォルダー内で、次のファイルを指定します。
+
+   - **_cards.json** - OOTB コンポーネントのコンポーネント定義を拡張する JSON ファイル。オーサリング可能なプロパティ（model[]）と読み込み時のコンテンツ構造（definitions[]）を定義します。
+   - **cards.js** - メインロジックを含むJavaScript ファイル。
+   - **cards.css** - オプション。スタイル用。
+
+- フォルダー名と JS/CSS ファイルは一致する必要があります。
+
+### カスタムコンポーネントでのフィールドの再利用と拡張
+
+カスタムコンポーネントの JSON でフィールドを定義する場合（任意のフィールドグループ、基本、検証、ヘルプなど）、保守性と一貫性については、次のベストプラクティスに従います。
+
+- 既存の共有コンテナまたはフィールド定義（`../form-common/_basic-input-placeholder-fields.json#/fields`、`../form-common/_basic- validation-fields.json#/fields` など）を参照して、標準/共有フィールドを再利用します。 これにより、すべての標準オプションを複製せずに継承できます。
+
+- 新規フィールドまたはカスタムフィールドのみをコンテナに明示的に追加します。 これにより、スキーマが乾燥し、フォーカスされた状態が維持されます。
+
+- 参照を介して既に含まれているフィールドの重複を削除または回避します。 コンポーネントのロジックに固有のフィールドのみを定義します。
+
+- 一貫性と保守性を保つために、必要に応じて、ヘルプコンテナやその他の共有コンテンツ（`../form-common/_help-container.json` など）を参照します。
+
+>[!TIP]
+>
+> - このパターンにより、将来のロジックの更新や拡張が容易になり、カスタムコンポーネントが残りのフォームシステムとの一貫性を保つようになります。
+> - 新しい共有コンテナまたはフィールド定義を追加する前に、必ず既存の共有コンテナまたはフィールド定義を確認してください。
+
+### カスタムコンポーネントの新しいプロパティの定義
+
+- カスタムコンポーネントの新しいプロパティを作成者から取得する必要がある場合は、コンポーネントの JSON 内のコンポーネントの `fields[]` 配列にフィールドを定義することで行うことができます。
+
+- カスタムコンポーネントは、:type プロパティを使用して識別され、JSON ファイルで `fd:viewType` のように設定できます（例：`fd:viewType: cards`）。 これにより、システムは正しいカスタムコンポーネントを認識して読み込めるので、カスタムコンポーネントにはこの操作が必須です
+
+- JSON 定義に追加された新しいプロパティは、フィールド定義でプロパティとして使用できます。 コンポーネントの JS ロジックの `<propertyName>`
+
+## カスタムコンポーネントJavaScript API
+
+カスタムコンポーネント JavaScript API では、カスタムフォームコンポーネントの動作、外観、反応性を制御する方法を定義します。
+
+### Decorate 関数
+
+**decorate** 関数は、カスタムコンポーネントのエントリポイントです。 コンポーネントを初期化し、JSON 定義とリンクし、HTMLの構造と動作を操作できるようにします。
 
 >[!NOTE]
 >
-> フォーム関連のすべてのコンポーネントは、ユニバーサルエディターにブロックを追加する際に、Sites と同じアプローチに従います。詳しくは、[ユニバーサルエディターで使用するために実装されたブロックの作成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block)の記事を参照してください。
+> カスタムコンポーネントのJavaScript ファイルでは、デフォルトの関数を decorate としてエクスポートする必要があります。
 
-### &#x200B;2. オーサリング用のカスタムコンポーネントのプロパティの定義
+#### 関数のシグネチャ：
 
-カスタムコンポーネントには、フォーム作成者が設定できるプロパティを指定するコンポーネントモデルが含まれます。これらのプロパティは、ユニバーサルエディターの&#x200B;**プロパティ**&#x200B;ダイアログに表示され、作成者はラベル、検証ルール、スタイル、その他の属性などの設定を調整できます。プロパティを定義するには：
+```javascript
+export default function decorate(element, fieldJson, container, formId) {
+// element: The HTML structure of the OOTB component you are extending
+// fieldJson: The JSON field definition (all authorable properties)
+// container: The parent element (fieldset or form)
+// formId: The id of the form
+// ... your logic here ...
+}
+```
 
-1. `/blocks/form/components/range/_range.json` ファイルに移動し、カスタムコンポーネントのコンポーネントモデルを追加します。
+次の操作が可能です。
 
-1. **コンポーネントモデルを追加**
+- **要素の変更**：イベントリスナーの追加、属性の更新、追加のマークアップの挿入をおこないます。
 
-   カスタムコンポーネントのコンポーネントモデルを定義するには、関連するフィールドを `_range.json` ファイルに追加する必要があります。
+- **JSON プロパティへのアクセス**:`fd.properties.<propertyName>` を使用して、JSON スキーマで定義された値を読み取り、コンポーネントロジック内に適用します。
 
-   1. **モデルを作成**
+## Subscribe 関数
 
-      - モデル配列に新しいオブジェクトを追加し、コンポーネントモデルの `id` を、コンポーネント定義で以前に設定した `fd:viewType` プロパティと一致するように設定します。
-      - このオブジェクト内にフィールド配列を含めます。
+**subscribe** 関数を使用すると、フィールド値やカスタムイベントの変更にコンポーネントを反応させることができます。 これにより、コンポーネントとフォームのデータモデルの同期が保たれ、UI を動的に更新できます。
 
-   2. **プロパティダイアログのフィールドを定義**
+### 関数のシグネチャ：
 
-      - フィールド配列内の各オブジェクトは、コンテナタイプのコンポーネントにする必要があり、**プロパティ**&#x200B;ダイアログにタブとして表示できます。
-      - 一部のフィールドでは、`models/form-common` で使用できる再利用可能なプロパティを参照できます。
+```JavaScript
+import { subscribe } from '../../rules/index.js';
 
-   3. **既存のコンポーネントモデルを参照として使用**
+export default function decorate(fieldDiv, fieldJson, container, formId) {
+// Access custom properties defined in the JSON
+const { initialText, finalText, time } = fieldJson?.properties;
+// ... setup logic ...
+subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => { fieldModel.subscribe(() => {
+// React to custom event (e.g., resetCardOption)
+// ... logic ...
+}, 'resetCardOption');
+});
+}
+```
 
-      - 選択した `fieldType` に対応する既存のコンポーネントモデルのコンテンツをコピーし、必要に応じて変更できます。例えば、`number-input` コンポーネントを拡張して&#x200B;**範囲**&#x200B;コンポーネントを作成すると、`models/form-components/_number-input.json` のモデル配列を参照として使用できます。
+次の操作が可能です。
 
-   コンポーネントモデルを追加した後の `_range.json` ファイルは次のとおりです。
+- **コールバックの登録**:**subscribe （element, formId, callback）** を呼び出すと、フィールドデータが変更されるたびに実行するコールバックが登録されます。次の 2 つのコールバックパラメーターを使用します。
+   - **element**：フィールドを表すHTML要素。
+   - **fieldModel**：フィールドの状態 API とイベント API を表すオブジェクト。
+
+- **変更またはイベントをリッスン**:`fieldModel.subscribe((event) => { ... }, 'eventName')` を使用すると、値が変更されるたびに、またはカスタムイベントがトリガーされるたびにロジックを実行します。 イベントオブジェクトには、変更内容の詳細が含まれています。
+
+## カスタムコンポーネントの作成
+
+この節では、OOTB ラジオボタンコンポーネントを拡張して **カードカスタムコンポーネント** を作成するプロセスについて説明します。
+
+![ カードカスタムコンポーネント ](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
+
+### &#x200B;1. コードのセットアップ
+
+#### 1.1 ファイルとフォルダ
+
+最初の手順では、カスタムコンポーネントの必要なファイルを設定し、リポジトリのコードにワイヤリングします。 このプロセスは、**AEM Forms基礎モード CLI** によって自動的に実行されます。これにより、基礎モードを設定して必要なファイルをワイヤリングする作業が迅速になります。
+
+1. ターミナルを開き、フォームプロジェクトのルートに移動します。
+2. 次のコマンドを実行します。
+
+```bash
+npm install
+npm run create:custom-component
+```
+
+![ 基礎モード CLI](/help/edge/docs/forms/universal-editor/assets/scaffolder-cli.png)
+
+次のようになります。
+
+- **新しいコンポーネントに名前を付けるよう求めるプロンプト** 表示されます。 例えば、この場合はカードを使用します。
+- **選択を依頼** ベースコンポーネント （ラジオグループを選択）
+
+これにより、以下を含む、必要なすべてのフォルダーとファイルが作成されます。
+
+```
+blocks/form/
+└── components/
+  └── cards/
+    ├── cards.js
+    └── cards.css
+    └── _cards.json
+```
+
+さらに、CLI の出力に示されているように、このコードをリポジトリ内の残りのコードとワイヤリングします。
+次の機能が自動的に実行されます。
+
+- フィルターにカードを追加して、アダプティブフォームブロック内に追加できるようにします。
+- 新しいカードコンポーネントを含むように `mappings.js` の許可リストを更新しました。
+- ユニバーサルエディターの **カスタムコンポーネント** リストの下にカードコンポーネントの定義を登録します。
+
+>[!NOTE]
+>
+> 手動（レガシー）方式を使用してカスタムコンポーネントを作成することもできます。 詳しくは、[ 手動または従来の方法 ](#manual-or-legacy-method-to-create-custom-component) によるカスタムコンポーネントの作成」の節を参照してください。
+
+#### 1.2 ユニバーサルエディターでのコンポーネントの使用
+
+1. **ユニバーサルエディターを更新**：ユニバーサルエディターでフォームを開き、ページを更新して、リポジトリから最新のコードが読み込まれるようにします。
+
+2. **カスタムコンポーネントの追加**
+
+   1. フォームキャンバスの「**追加（+）**」ボタンをクリックします。
+   2. カスタムコンポーネント セクションまでスクロールします。
+   3. 新しく作成した **カードコンポーネント** を選択して、フォームに挿入します。
+
+      ![ カスタムコンポーネントを選択 ](/help/edge/docs/forms/universal-editor/assets/select-custom-component.png)
+
+内にコードが存在しないので `cards.js` カスタムコンポーネントはラジオグループとしてレンダリングされます。
+
+#### 1.3 ローカルでのプレビューとテスト
+
+これで、フォームにカスタムコンポーネントが含まれたので、フォームをプロキシし、ローカルで変更して、変更内容を確認できます。
+
+1. ターミナルに移動し、`aem up` を実行します。
+
+2. `http://localhost:3000/{path-to-your-form}` で開始したプロキシサーバーを開きます（パスの例：`/content/forms/af/custom-component-form`）
+
+
+### &#x200B;2. カスタムコンポーネントのカスタム動作の実装
+
+#### 2.1 カスタムコンポーネントのスタイル設定
+
+スタイル設定のためにクラス **card** をコンポーネントに追加し、各ラジオに画像を追加しましょう。これには以下のコードを使用します。
+
+**cards.js の decorate 関数を使用したカスタムコンポーネントのスタイル設定**
+
+```javascript
+import { createOptimizedPicture } from '../../../../scripts/aem.js';
+
+export default function decorate(element, fieldJson, container, formId) { element.classList.add('card');
+element.querySelectorAll('.radio-wrapper').forEach((radioWrapper) => { const image = createOptimizedPicture('https://main--afb--
+jalagari.hlx.live/lab/images/card.png', 'card-image'); radioWrapper.appendChild(image);
+});
+return element;
+}
+```
+
+**cards.css のカスタムコンポーネントの実行時の動作を追加**
+
+```javascript
+.card .radio-wrapper { min-width: 320px;
+/* or whatever width fits your design */ max-width: 340px;
+background: #fff;
+border-radius: 16px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+flex: 0 0 auto;
+scroll-snap-align: start; padding: 24px 16px;
+margin-bottom: 0;
+position: relative;
+transition: box-shadow 0.2s; display: flex;
+align-items: flex-start; gap: 12px;
+}
+```
+
+カードコンポーネントは次のようになります。
+
+![ カード css と js の追加 ](/help/edge/docs/forms/universal-editor/assets/add-card-css.png)
+
+#### 2.2 Subscribe 関数を使用した動的動作の追加
+
+ドロップダウンが変更されると、カードが取得され、ラジオグループの列挙に設定されます。 ただし、現在のところ、ビューではこの処理は行われません。 つまり、次のようにレンダリングされます。
+
+![subscribe 関数 ](/help/edge/docs/forms/universal-editor/assets/card-subscribe.png)
+
+API を呼び出すと、フィールドモデルが設定され、変更をリッスンしてビューをレンダリングする必要があります。 これは、**subscribe 関数** を使用して行います。
+
+次に、前の手順のビューコードを関数に変換し、`cards.js` の subscribe 関数内でこれを呼び出します。
+
+```javascript
+import { createOptimizedPicture } from '../../../../scripts/aem.js';  
+
+import { subscribe } from '../../rules/index.js';  
+function createCard(element, enums) {  
+
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {  
+
+    if (enums[index]?.name) {  
+
+      let label = radioWrapper.querySelector('label');  
+
+      if (!label) {  
+
+        label = document.createElement('label');  
+
+        radioWrapper.appendChild(label);  
+
+      }  
+
+      label.textContent = enums[index]?.name;  
+
+    }  
+
+    const image = createOptimizedPicture(enums[index].image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png', 'card-image');  
+
+   radioWrapper.appendChild(image);  
+
+  });  
+
+}  
+export default function decorate(element, fieldJson, container, formId) {  
+
+    element.classList.add('card');  
+
+    createCard(element, fieldJson.enum);  
+
+    subscribe(element, formId, (fieldDiv, fieldModel) => {  
+
+        fieldModel.subscribe((e) => {  
+
+            const { payload } = e;  
+
+            payload?.changes?.forEach((change) => {  
+
+                if (change?.propertyName === 'enum') {  
+
+                    createCard(element, change.currentValue);  
+
+                }  
+
+            });  
+
+        });  
+
+    });  
+    return element;  
+
+} 
+```
+
+**Subscribe 関数を使用して、cards.js のイベントの変更をリッスンする**
+
+ドロップダウンを変更すると、次に示すようにカードに値が入力されます。
+
+![subscribe 関数 ](/help/edge/docs/forms/universal-editor/assets/card-subscribe-final.png)
+
+#### 2.3 ビューの更新とフィールドモデルの同期
+
+ビューの変更をフィールドモデルに同期するには、選択したカードの値を設定する必要があります。 そのため、次に示すように、cards.js に次の変更イベントリスナーを追加します。
+
+**cards.js でのフィールドモデル API の使用**
+
+```javascript
+ 
+
+import { createOptimizedPicture } from '../../../../scripts/aem.js';  
+
+import { subscribe } from '../../rules/index.js';  
+
+  
+
+  
+
+function createCard(element, enums) {  
+
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {  
+
+    if (enums[index]?.name) {  
+
+      let label = radioWrapper.querySelector('label');  
+
+      if (!label) {  
+
+        label = document.createElement('label');  
+
+        radioWrapper.appendChild(label);  
+
+      }  
+
+      label.textContent = enums[index]?.name;  
+
+    }  
+
+    radioWrapper.querySelector('input').dataset.index = index;  
+
+    const image = createOptimizedPicture(enums[index].image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png', 'card-image');  
+
+   radioWrapper.appendChild(image);  
+
+  });  
+
+}  
+export default function decorate(element, fieldJson, container, formId) {  
+
+    element.classList.add('card');  
+    createCard(element, fieldJson.enum);  
+
+    subscribe(element, formId, (fieldDiv, fieldModel) => {  
+
+        fieldModel.subscribe((e) => {  
+
+            const { payload } = e;  
+
+            payload?.changes?.forEach((change) => {  
+
+                if (change?.propertyName === 'enum') {  
+
+                    createCard(element, change.currentValue);  
+
+                }  
+
+            });  
+
+        });  
+        element.addEventListener('change', (e) => {  
+
+            e.stopPropagation();  
+
+            const value = fieldModel.enum?.[parseInt(e.target.dataset.index, 10)];  
+
+            fieldModel.value = value.name;  
+
+        });  
+
+    });  
+
+    return element;  
+} 
+```
+
+次に示すように、カスタムカードコンポーネントが表示されます。
+
+![ カードカスタムコンポーネント ](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
+
+## 変更のコミットとプッシュ
+
+カスタムコンポーネントのJavaScriptと CSS を実装し、ローカルで検証したら、変更内容をコミットして Git リポジトリにプッシュします。
+
+```bash
+git add . && git commit -m "Add card custom component" && git push
+```
+
+いくつかの簡単な手順で、複雑なカスタムカード選択コンポーネントを正常に作成しました。
+
+## カスタムコンポーネントを作成するための手動または従来の方法
+
+従来の方法では、次に説明する手順を手動で実行します。
+
+1. **拡張する OOTB コンポーネントを選択** （ボタン、ドロップダウン、テキスト入力など）。 この場合は、ラジオコンポーネントを拡張します。
+
+2. **フォルダーを作成** し、`blocks/form/components` にコンポーネントの名前（この場合はカード）を指定します。
+
+3. 同じ名前の **JS ファイルを追加します**。
+   - `blocks/form/components/cards/cards.js`。
+
+4. （オプション） **CSS ファイルを追加** カスタムスタイルの場合：
+   - `blocks/form/components/cards/cards.css.`
+
+5. **コンポーネント JS ファイル** （` _cards.json`）と同じフォルダーに **新しい JSON ファイル** （例：`blocks/form/components/cards/_cards.json`）を定義します。 この JSON は、既存のコンポーネントを拡張し、その定義で、`fd:viewType` をコンポーネントの名前（この場合はカード）に設定する必要があります。
+
+   - すべてのフィールドグループ（基本、検証、ヘルプなど）に対して、カスタムフィールドを明示的に追加します。
+
+6. **JS および CSS ロジックの実装：**
+   - 前述のように、デフォルトの関数をエクスポートします。
+   - **element** パラメーターを使用して、HTMLの基本構造を変更します。
+   - 必要に応じて、**fieldJson** パラメーターを標準のフィールドデータに使用します。
+   - **subscribe** 関数を使用して、必要に応じてフィールドの変更やカスタムイベントをリッスンします。
+
+     >[!NOTE]
+     >
+     >前述のように、カスタムコンポーネントの JS および CSS ロジックを実装します。
+
+7. コンポーネントをフォームビルダーでバリアントとして登録し、バリアント プロパティを設定する。または
+   コンポーネントの名前に JSON で `fd:viewType/:type` 力します。例えば、`fd:viewType` の `definitions[]` 値をカードとして、`id="form` を持つオブジェクトのコンポーネント配列に追加します。
 
    ```javascript
-   "models": [
    {
-     "id": "range",
-     "fields": [
-       {
-         "component": "container",
-         "name": "basic",
-         "label": "Basic",
-         "collapsible": false,
-         "...": "../../../../models/form-common/_basic-input-fields.json"
-       },
-       {
-         "...": "../../../../models/form-common/_help-container.json"
-       },
-       {
-         "component": "container",
-         "name": "validation",
-         "label": "Validation",
-         "collapsible": true,
-         "...": "../../../../models/form-common/_number-validation-fields.json"
-       }
-     ]
+   "definitions": [
+   {
+   "title": "Cards",
+   "id": "cards", "plugins": {
+   "xwalk": {
+   "page": {
+   "resourceType":
+   "core/fd/components/form/radiobutton/v1/radiobutton", "template": {
+   "jcr:title": "Cards",
+   "fieldType": "radio-button", "fd:viewType": "cards",
+   "enabled": true, "visible": true}
    }
-   ]
+   } }
+   }
+   ]}
    ```
 
-   >[!NOTE]
-   >
-   > カスタムコンポーネントの&#x200B;**プロパティ**&#x200B;ダイアログに新しいフィールドを追加するには、[定義されたスキーマ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model)に従います。
+8. **mappings.js の更新**：システムで認識および読み込まれるように、コンポーネントの名前を **OOTBomponentDecorators** （OOTB スタイルコンポーネントの場合）または **customComponents** リストに追加します。
 
-   また、カスタムコンポーネントに[カスタムプロパティを追加](#adding-custom-properties-for-your-custom-component)して、機能を拡張することもできます。
+   ```javascript
+   let customComponents = ["cards"];
+   const OOTBComponentDecorators = [];
+   ```
 
-#### カスタムコンポーネントのカスタムプロパティの追加
-
-カスタムプロパティを使用すると、コンポーネントのプロパティダイアログで設定された値に基づいて特定の動作を定義できます。これは、コンポーネントの機能とカスタマイズオプションを拡張するのに役立ちます。
-
-この例では、範囲コンポーネントにカスタムプロパティとしてステップ値を追加します。
-
-![ステップ値のカスタムプロパティ](/help/edge/docs/forms/universal-editor/assets/customcomponent-stepvalue.png)
-
-ステップ値のカスタムプロパティを追加するには、` _<component>.json` ファイルに次のコード行を含むコンポーネントモデルを追加します。
-
-```javascript
-      {
-      "component": "number",
-      "name": "stepValue",
-      "label": "Step Value",
-      "valueType": "number"
-      }
-```
-
-JSON スニペットは、**範囲**&#x200B;コンポーネントの&#x200B;**ステップ値**&#x200B;と呼ばれるカスタムプロパティを定義します。各フィールドの分類を以下に示します。
-
-- **コンポーネント**：プロパティダイアログで使用される入力フィールドのタイプを指定します。この場合、`number` は、フィールドが数値を受け入れることを示します。
-- **名前**：コンポーネントのロジックで参照するのに使用されるプロパティの識別子。ここで、`stepValue` は範囲のステップ値設定を表します。
-- **ラベル**：プロパティダイアログに表示されるプロパティの表示名。
-- **valueType**：プロパティに期待されるデータタイプを定義します。`number` では、数値の入力のみが許可されます。
-
-これで、`range.js` の JSON プロパティで `stepValue` をカスタムプロパティとして使用し、実行時にその値に基づいて動的な動作を実装できます。
-
-したがって、コンポーネント定義、コンポーネントモデル、カスタムプロパティを追加した後の最終的な `_range.json` ファイルは次のとおりです。
-
-```javascript
- {
-  "definitions": [
-    {
-      "title": "Range",
-      "id": "range",
-      "plugins": {
-        "xwalk": {
-          "page": {
-            "resourceType": "core/fd/components/form/numberinput/v1/numberinput",
-            "template": {
-              "jcr:title": "Range",
-              "fieldType": "number-input",
-              "fd:viewType": "range",
-              "enabled": true,
-              "visible": true
-            }
-          }
-        }
-      }
-    }
-  ],
-  "models": [
-    {
-      "id": "range",
-      "fields": [
-        {
-          "component": "container",
-          "name": "basic",
-          "label": "Basic",
-          "collapsible": false,
-          "...": "../../../../models/form-common/_basic-input-fields.json"
-         {
-           "component": "number",
-           "name": "stepValue",
-            "label": "Step Value",
-             "valueType": "number"
-}
-        },
-        {
-          "...": "../../../../models/form-common/_help-container.json"
-        },
-        {
-          "component": "container",
-          "name": "validation",
-          "label": "Validation",
-          "collapsible": true,
-          "...": "../../../../models/form-common/_number-validation-fields.json"
-        }
-      ]
-    }
-  ]
-}
-```
-
-![コンポーネントの定義とモデル](/help/edge/docs/forms/universal-editor/assets/custom-component-json-file.png)
-
-
-### &#x200B;3. WYSIWYGコンポーネントリストでのカスタムコンポーネントの表示
-
-フィルターは、ユニバーサルエディターでカスタムコンポーネントを使用できるセクションを定義します。これにより、コンポーネントは適切なセクションでのみ使用でき、構造と使いやすさが確保されます。
-
-WYSIWYG でのフォームオーサリング中に、カスタムコンポーネントが使用できるコンポーネントのリストに表示されるようにするには：
-
-1. `/blocks/form/_form.json` ファイルに移動します。
-1. `id="form"` を持つオブジェクト内でコンポーネント配列を見つけます。
-1. `definitions[]` の `fd:viewType` 値を `id="form"` を持つオブジェクトのコンポーネント配列に追加します。
+9. **_form.json を更新**：コンポーネントの名前を `filters.components` 配列に追加して、オーサリング UI にドロップできるようにします。
 
    ```javascript
    "filters": [
-     {
-       "id": "form", 
-       "components": [
-         "captcha",
-         "checkbox",
-         "checkbox-group",
-         "date-input",
-         "drop-down",
-         "email",
-         "file-input",
-         "form-accordion",
-         "form-button",
-         "form-fragment",
-         "form-image",
-         "form-modal",
-         "form-reset-button",
-         "form-submit-button",
-         "number-input",
-         "panel",
-         "plain-text",
-         "radio-group",
-         "rating",
-         "telephone-input",
-         "text-input",
-         "tnc",
-         "wizard",
-         "range"
+   {
+       "id": "form",
+       "components": [ "cards"]}
        ]
-     }
-   ]
    ```
 
-![コンポーネントフィルター](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
+10. **Update _component-definition.json**:`models/_component-definition.json` の手順で、グループ内の配列を `id custom-components` でオブジェクトで更新します。
 
-### &#x200B;4. カスタムコンポーネントの登録
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-フォームブロックがカスタムコンポーネントを認識し、フォーム作成中にコンポーネントモデルで定義されたプロパティを読み込むことができるようにするには、コンポーネント定義の `fd:viewType` 値を `mappings.js` ファイルに追加します。
+   これは、残りのコンポーネントと共に構築する新しいカードコンポーネントへの参照を提供することです
 
-コンポーネントを登録するには：
+11. **ビルド :json スクリプトを実行**:`npm run build:json` を実行して、コンポーネントのすべての JSON 定義をコンパイルし、サーバーから提供される 1 つのファイルに結合します。 これにより、新しいコンポーネントのスキーマが結合された出力に確実に含まれます。
 
-1. `/blocks/form/mappings.js` ファイルに移動します。
-1. `customComponents[]` 配列を見つけます。
-1. `definitions[]` 配列の `fd:viewType` 値を `customComponents[]` 配列に追加します。
+12. 変更をコミットして Git リポジトリにプッシュします。
+
+これで、カスタムコンポーネントをフォームに追加できます。
+
+## 複合コンポーネントの作成
+
+複合コンポーネントは、複数のコンポーネントを組み合わせて作成します。
+例えば、利用条件の複合コンポーネントは、以下を含む親パネルで構成されます。
+
+- 用語を表示するためのプレーンテキストフィールド
+
+- ユーザーの同意を取得するためのチェックボックス
+
+このコンポジション構造は、各コンポーネントの JSON ファイル内のテンプレートとして定義されます。 次の例では、利用条件コンポーネント用のテンプレートを定義する方法を示します。
 
 ```javascript
-let customComponents = ["range"];
-const OOTBComponentDecorators = ['file-input',
-                                 'wizard', 
-                                 'modal', 'tnc',
-                                'toggleable-link',
-                                'rating',
-                                'datetime',
-                                'list',
-                                'location',
-                                'accordion'];
+{ 
+
+  "definitions": [ 
+
+    { 
+
+      "title": "Terms and conditions", 
+
+      "id": "tnc", 
+
+      "plugins": { 
+
+        "xwalk": { 
+
+          "page": { 
+
+            "resourceType": "core/fd/components/form/termsandconditions/v1/termsandconditions", 
+
+            "template": { 
+
+              "jcr:title": "Terms and conditions", 
+
+              "fieldType": "panel", 
+
+              "fd:viewType": "tnc", 
+
+              "text": { 
+
+                "value": "Text related to the terms and conditions come here.", 
+
+                "sling:resourceType": "core/fd/components/form/text/v1/text", 
+
+                "fieldType": "plain-text", 
+
+                "textIsRich": true 
+
+              }, 
+
+              "approvalcheckbox": { 
+
+                "name": "approvalcheckbox", 
+
+                "jcr:title": "I agree to the terms & conditions.", 
+
+                "sling:resourceType": "core/fd/components/form/checkbox/v1/checkbox", 
+
+                "fieldType": "checkbox", 
+
+                "required": true, 
+
+                "type": "string", 
+
+                "enum": [ 
+
+                  "true" 
+
+                ] 
+
+              } 
+
+            } 
+
+          } 
+
+        } 
+
+      } 
+
+    } 
+
+  ], 
+
+  ... 
+
+} 
 ```
-
-![コンポーネントのマッピング](/help/edge/docs/forms/universal-editor/assets/custom-component-mapping-file.png)
-
-上記の手順を完了すると、カスタムコンポーネントがユニバーサルエディター内のフォームのコンポーネントリストに表示されます。その後、フォームセクションにドラッグ＆ドロップできます。
-
-![ フォームへのドラッグ＆ドロップに使用できるカスタム範囲コンポーネントを示すユニバーサルエディターコンポーネントパレットのスクリーンショット](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
-
-以下のスクリーンショットは、コンポーネントモデルに追加された `range` コンポーネントのプロパティを示しています。このプロパティは、フォーム作成者が設定できるプロパティを指定します。
-
-![ 基本プロパティ、検証ルール、スタイルオプションなど、範囲コンポーネントの設定可能な設定を表示するユニバーサルエディタープロパティパネルのスクリーンショット](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
-
-これで、スタイル設定と機能を追加して、カスタムコンポーネントの実行時の動作を定義できます。
-
-### &#x200B;5. カスタムコンポーネントの実行時の動作の追加
-
-[フォームフィールドのスタイル設定](/help/edge/docs/forms/style-theme-forms.md)に従って、事前定義済みのマークアップを使用してカスタムコンポーネントを変更できます。これは、コンポーネントの外観を向上させるカスタム CSS（カスケーディングスタイルシート）とカスタムコードを使用して実現できます。コンポーネントの実行時の動作を追加するには：
-
-1. スタイル設定を追加するには、`/blocks/form/components/range/range.css` ファイルに移動して次のコード行を追加します。
-
-   ```javascript
-   /** Styling for range */
-   main .form .range-widget-wrapper.decorated input[type="range"] {
-   margin: unset;
-   padding: unset;
-   appearance: none;
-   height: 5px;
-   border-radius: 5px;
-   border: none;
-   background-image: linear-gradient(to right, #ADD8E6 calc(100% - var(--current-steps)/var(--total-steps)), #C5C5C5 calc(100% - var(--current-steps)/var(--total-steps)));
-   }
-   
-   main .form .range-widget-wrapper.decorated input[type="range"]:focus {
-   outline: none;
-   }
-   
-   .range-widget-wrapper.decorated input[type="range"]::-webkit-slider-thumb {
-   appearance: none;
-   width: 25px;
-   height: 25px;
-   border-radius: 50%;
-   background: #00008B; /* Dark Blue */
-   border: 3px solid #00008B; /* Dark Blue */
-   cursor: pointer;
-   outline: 3px solid #fff;
-   }
-   
-   .range-widget-wrapper.decorated input[type="range"]:focus::-webkit-slider-thumb {
-   border-color: #00008B; /* Dark Blue */
-   }
-   
-   .range-widget-wrapper.decorated .range-bubble {
-   color: #00008B; /* Dark Blue */
-   font-size: 20px;
-   line-height: 28px;
-   position: relative;
-   display: inline-block;
-   padding-bottom: 12px;
-   font-weight: bold;
-   }
-   
-   .range-widget-wrapper.decorated .range-min,
-   .range-widget-wrapper.decorated .range-max {
-   font-size: 14px;
-   line-height: 22px;
-   color: #494f50;
-   margin-top: 16px;
-   display: inline-block;
-   }
-   
-   .range-widget-wrapper.decorated .range-max {
-   float: right;
-   }
-   ```
-
-   このコードは、カスタムコンポーネントのスタイル設定と外観を定義するのに役立ちます。
-
-1. 機能を追加するには、`/blocks/form/components/range/range.js` ファイルに移動して次のコード行を追加します。
-
-   ```javascript
-   function updateBubble(input, element) {
-   const step = input.step || 1;
-   const max = input.max || 0;
-   const min = input.min || 1;
-   const value = input.value || 1;
-   const current = Math.ceil((value - min) / step);
-   const total = Math.ceil((max - min) / step);
-   const bubble = element.querySelector('.range-bubble');
-   // during initial render the width is 0. Hence using a default here.
-   const bubbleWidth = bubble.getBoundingClientRect().width || 31;
-   const left = `${(current / total) * 100}% - ${(current / total) * bubbleWidth}px`;
-   bubble.innerText = `${value}`;
-   const steps = {
-       '--total-steps': Math.ceil((max - min) / step),
-       '--current-steps': Math.ceil((value - min) / step),
-   };
-   const style = Object.entries(steps).map(([varName, varValue]) => `${varName}:${varValue}`).join(';');
-   bubble.style.left = `calc(${left})`;
-   element.setAttribute('style', style);
-   }
-   
-   export default async function decorate(fieldDiv, fieldJson) {
-   console.log('RANGE DIV: ', fieldDiv);
-   console.log('RANGE JSON: fieldJson', fieldJson);
-    const input = fieldDiv.querySelector('input');
-   // modify the type in case it is not range.
-   input.type = 'range';
-   input.min = input.min || 10;
-   input.max = input.max || 1000;
-   // create a wrapper div to provide the min/max and current value
-   const div = document.createElement('div');
-   div.className = 'range-widget-wrapper decorated';
-   input.after(div);
-   const hover = document.createElement('span');
-   hover.className = 'range-bubble';
-   const rangeMinEl = document.createElement('span');
-   rangeMinEl.className = 'range-min';
-   const rangeMaxEl = document.createElement('span');
-   rangeMaxEl.className = 'range-max';
-   rangeMinEl.innerText = `${input.min || 1}`;
-   rangeMaxEl.innerText = `${input.max}`;
-   div.appendChild(hover);
-   // move the input element within the wrapper div
-   div.appendChild(input);
-   div.appendChild(rangeMinEl);
-   div.appendChild(rangeMaxEl);
-   input.addEventListener('input', (e) => {
-   updateBubble(e.target, div);
-   });
-   updateBubble(input, div);
-   return fieldDiv;
-   }
-   ```
-
-   これにより、カスタムコンポーネントがユーザー入力とやり取りし、データを処理し、ユニバーサルエディターのフォームブロックと統合する方法が制御されます。
-
-   カスタムのスタイル設定と機能を組み込むと、範囲コンポーネントの外観と動作が強化されます。更新されたデザインは適用されたスタイルを反映し、追加された機能は、より動的でインタラクティブなユーザーエクスペリエンスを実現します。
-以下のスクリーンショットは、更新された範囲コンポーネントを示しています。
-
-![ユニバーサルエディターでの値のバブル表示とインタラクティブ機能を備えた、スタイル設定されたスライダーを示すアクションの最終的な範囲コンポーネント](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
-
-## よくある質問
-
-- **component.css と forms.css の両方にスタイル設定を追加した場合、どちらが優先されますか？**
-`component.css` と **forms.css** の両方でスタイルが定義されている場合、`component.css` が優先されます。これは、コンポーネントレベルのスタイルがより具体的で、`forms.css` からのグローバルスタイルを上書きするからです。
-
-- **カスタムコンポーネントが、ユニバーサルエディターの使用可能なコンポーネントのリストに表示されません。これを修正するにはどうすればよいですか？**
-カスタムコンポーネントが表示されない場合は、次のファイルを確認して、コンポーネントが正しく登録されていることを確認してください。
-   - **component-definition.json**：コンポーネントが正しく定義されていることを確認します。
-   - **component-filters.json**：適切なセクションでコンポーネントが許可されていることを確認します。
-   - **component-models.json**：コンポーネントモデルが正しく設定されていることを確認します。
 
 ## ベストプラクティス
 
-- カスタムスタイルとコンポーネントをローカルで開発するには、[ローカル AEM 開発環境を設定](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment)することをお勧めします。
+独自のカスタムコンポーネントを作成する前に、次の点に注意してください。
 
+- **コンポーネントロジックに集中する**：カスタム動作に必要なもののみを追加/上書きします
 
-## 追加バイト
+- **基本構造の活用**:OOTB HTMLを開始点として使用します
 
-### サポートされるリソースタイプ
+- **オーサリング可能なプロパティを使用：** JSON スキーマを介して設定可能なオプションを公開します
 
-| フィールドタイプ | リソースタイプ |
-|--------------|------------------------------------------------------------------|
-| テキスト入力 | core/fd/components/form/textinput/v1/textinput |
-| 数値入力 | core/fd/components/form/numberinput/v1/numberinput |
-| 日付入力 | core/fd/components/form/datepicker/v1/datepicker |
-| パネル | core/fd/components/form/panelcontainer/v1/panelcontainer |
-| チェックボックス | core/fd/components/form/checkbox/v1/checkbox |
-| ドロップダウン | core/fd/components/form/dropdown/v1/dropdown |
-| ラジオグループ | core/fd/components/form/radiobutton/v1/radiobutton |
-| プレーンテキスト | core/fd/components/form/text/v1/text |
-| ファイル入力 | core/fd/components/form/fileinput/v2/fileinput |
-| メール | core/fd/components/form/emailinput/v1/emailinput |
-| 画像 | core/fd/components/form/image/v1/image |
-| ボタン | core/fd/components/form/button/v1/button |
+- **CSS の名前空間**：一意のクラス名を使用して、スタイルの競合を回避します
 
-### サポートされるフィールドタイプ
+## 参照
 
-フォームでサポートされるフィールドタイプは次のとおりです。
+- form-field-types：すべてのフィールドタイプのベース HTML構造およびプロパティ。 フォームフィールドの構造とプロパティについて詳しくは、[ ここをクリック ](/help/edge/docs/forms/eds-form-field-properties) を参照してください。
 
-- テキスト入力
-- 数値入力
-- 日付入力
-- パネル
-- プレーンテキスト
-- ファイル入力
-- メール
-- 画像
-- ボタン
-- チェックボックス
-- ドロップダウン
-- ラジオグループ
+- **blocks/form/models/form-components**:OOTB およびカスタムコンポーネントプロパティ定義。
 
+- **ブロック/フォーム/コンポーネント**：カスタムコンポーネントの場所。 例：`blocks/form/components/countdown-timer/_countdown-timer.json` に、基本コンポーネントを拡張し、新しいプロパティを追加する方法を示します。

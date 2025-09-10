@@ -6,17 +6,17 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '2355'
-ht-degree: 97%
+source-wordcount: '2390'
+ht-degree: 95%
 
 ---
 
 
 # AEM Forms のユニバーサルエディターインターフェイスの操作
 
-[ユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)は、Edge Delivery Services を使用して AEM Forms を作成する視覚的なインターフェイスを提供します。これは、ユーザーに対してフォームがどのように表示されるかを正確に表示する **0&rbrace;What You See Is What You Get（WYSIWYG）エクスペリエンスを提供します。**
+[ユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)は、Edge Delivery Services を使用して AEM Forms を作成する視覚的なインターフェイスを提供します。これは、ユーザーに対してフォームがどのように表示されるかを正確に表示する **0}What You See Is What You Get（WYSIWYG）エクスペリエンスを提供します。**
 
 ![ユニバーサルエディターインターフェイスの概要](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
@@ -112,11 +112,16 @@ ht-degree: 97%
 
 **最初のフォームの場合：**
 
-1. **作成を開始** - 「**追加**」ボタン（`a`）を使用して、コンポーネントを追加します
-2. **フィールドを設定** - コンポーネントを選択して、**プロパティモード**（`d`）を使用します
-3. **フォームをテスト** - **プレビューモード**（`p`）を使用して、フォームを操作します
-4. **モバイルビューを確認** - モバイルテスト用に&#x200B;**レスポンシブモード**&#x200B;に切り替えます
-5. **運用開始** - 準備が整ったら、「**公開**」をクリックします
+1. **アダプティブフォームコンポーネントの追加** - `Adaptive Form` コンポーネントをセクションに挿入します。
+2. **作成を開始** - 「**追加**」ボタン（`a`）を使用して、コンポーネントを追加します
+3. **フィールドを設定** - コンポーネントを選択して、**プロパティモード**（`d`）を使用します
+4. **フォームをテスト** - **プレビューモード**（`p`）を使用して、フォームを操作します
+5. **モバイルビューを確認** - モバイルテスト用に&#x200B;**レスポンシブモード**&#x200B;に切り替えます
+6. **運用開始** - 準備が整ったら、「**公開**」をクリックします
+
+>[!NOTE]
+>
+> ユニバーサルエディターでフォームを作成する詳細な手順については、[Edge Delivery Servicesを使用したアダプティブFormsの作成と公開 ](/help/edge/docs/forms/universal-editor/create-forms.md) を参照してください。
 
 **検証チェックポイント：**
 
@@ -218,7 +223,7 @@ ht-degree: 97%
 
 #### **AEM フォームプロパティ**
 
-**目的：**&#x200B;フォームデータモデル（FDM）や公開日など、フォームレベルの設定を指定します\
+**目的：** フォームデータモデル（FDM）などのフォームレベルの設定、送信アクションと公開日の設定\
 **用途：**&#x200B;データ統合の設定、公開のスケジュール
 
 ![フォームプロパティ](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
@@ -264,7 +269,7 @@ ht-degree: 97%
 
 **プロパティパネル**（右側）は、フォームの作成と設定を行うコントロールセンターです。選択内容に基づいて変化し、異なるタスクに対して様々なツールを提供します。
 
-![プロパティパネル](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
+![プロパティパネル](/help/edge/docs/forms/universal-editor/assets/text-properties-ue.png)
 
 ### **コアフォーム作成ツール**
 
@@ -349,7 +354,7 @@ ht-degree: 97%
 
     ![バリエーションを生成]（/help/edge/docs/forms/universal-editor/assets/ue-variations.png）
 
-**詳細情報：**&#x200B;[バリエーションを生成ガイド](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**詳細情報：**[バリエーションを生成ガイド](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **コンテンツドラフト**
 

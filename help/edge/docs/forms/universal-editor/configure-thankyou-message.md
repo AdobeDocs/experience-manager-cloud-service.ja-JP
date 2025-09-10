@@ -5,10 +5,10 @@ feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
 exl-id: cacd7b0a-aad0-4b5d-a6a0-e4bac4cb196d
-source-git-commit: ede73b19e4b50770f14ed52067c5fa04323b2ba4
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 100%
+source-wordcount: '1139'
+ht-degree: 99%
 
 ---
 
@@ -53,13 +53,19 @@ ht-degree: 100%
 
  アダプティブフォームをユニバーサルエディターで開き、ツールバーの **フォームプロパティを編集** アイコンをクリックします。これにより、包括的なフォームプロパティダイアログが開きます。
 
+![フォームプロパティアイコン](/help/forms/assets/ue-form-properties-icon.png)
+
 **2. お礼の設定に移動します**
 
 フォームプロパティダイアログで、「**お礼**」タブを選択して、送信後の設定オプションにアクセスします。
 
+![ユニバーサルエディターのフォームプロパティ](/help/forms/assets/ue-form-properties.png)
+
 **3. メッセージ表示を設定します**
 
-使用可能なオプションから「**メッセージを表示**」を選択します。これにより、リッチテキスト機能を備えたメッセージコンテンツエディターがアクティブ化されます。
+使用可能なオプションから **メッセージを表示** を選択します。
+
+![ 感謝祭 ](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 **4. メッセージコンテンツを作成します**
 
@@ -117,13 +123,19 @@ ht-degree: 100%
 
 アダプティブフォームをユニバーサルエディターで開き、**フォームプロパティを編集** アイコンをクリックして、フォーム設定ダイアログを開きます。
 
+![フォームプロパティアイコン](/help/forms/assets/ue-form-properties-icon.png)
+
 **2. お礼の設定に移動します**
 
 フォームプロパティダイアログの「**お礼**」タブを選択し、リダイレクト設定オプションにアクセスします。
 
+![ユニバーサルエディターのフォームプロパティ](/help/forms/assets/ue-form-properties.png)
+
 **3. リダイレクト機能を有効にします**
 
 使用可能な送信後オプションから「**URL にリダイレクト**」を選択します。
+
+![リダイレクト](/help/edge/docs/forms/universal-editor/assets/redirect-ue.png)
 
 **4. 宛先 URL を設定します**
 

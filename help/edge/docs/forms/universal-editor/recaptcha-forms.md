@@ -6,10 +6,10 @@ keywords: フォームの reCAPTCHA, ユニバーサルエディターでの reC
 role: Developer, Admin
 level: Intermediate
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '1290'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1281'
+ht-degree: 90%
 
 ---
 
@@ -34,7 +34,6 @@ Google reCAPTCHA は、人間のユーザーと自動ボットを区別して、
 
 - AEM as a Cloud Service のオーサリングアクセス
 - フォーム編集権限を持つユニバーサルエディターへのアクセス
-- reCAPTCHA 機能の早期アクセスプログラムへの登録
 
 ### 技術要件
 
@@ -217,7 +216,7 @@ Edge Delivery Services Forms では、次の 2 つの Google reCAPTCHA オプシ
 
 ## reCAPTCHA Standard の設定
 
-+++手順 1：reCAPTCHA API キーの取得（詳細を参照）
++++手順 1:reCAPTCHA API キーの取得（詳細を参照）
 
 >[!IMPORTANT]
 >
@@ -255,7 +254,7 @@ Edge Delivery Services Forms では、次の 2 つの Google reCAPTCHA オプシ
 
 +++
 
-+++手順 2：AEM Cloud 設定コンテナを設定する（詳細を参照）
++++手順 2:AEM Cloud Configuration コンテナの設定（詳細を参照）
 
 エンタープライズ設定と同じプロセスに従います。
 
@@ -267,7 +266,7 @@ Edge Delivery Services Forms では、次の 2 つの Google reCAPTCHA オプシ
 
 +++
 
-+++手順 3：AEM で reCAPTCHA 標準サービスを設定（詳細を参照）
++++手順 3:AEMで reCAPTCHA 標準サービスを設定（詳細を参照）
 
 ![reCAPTCHA 標準設定画面](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
 *図：AEM の reCAPTCHA 標準設定インターフェイス*
@@ -312,39 +311,39 @@ reCAPTCHA サービスを設定した後、次のようにフォームに保護�
 ![reCAPTCHA コンポーネントのフォームへの追加](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
 *図：Invisible Captcha コンポーネントのフォームへの追加*
 
-+++1. ユニバーサルエディターでフォームを開きます
-AEM Sites のフォームに移動し、「編集」をクリックしてユニバーサルエディターで開きます。エディターが読み込まれるまで待機します。
++++&#x200B;1. ユニバーサルエディターでフォームを開く
+AEM Sitesのフォームに移動し、「編集」をクリックしてユニバーサルエディターで開きます。 エディターが読み込まれるまで待機します。
 
 - AEM Sites のフォームに移動します
 - 「編集」をクリックしてユニバーサルエディターで開きます
 - エディターが読み込まれるまで待機します
 +++
 
-+++2. フォーム構造を見つけます
-コンテンツツリー（左側のパネル）で、アダプティブフォームセクションを見つけ、フォーム構造を展開して挿入ポイントを表示します。
++++&#x200B;2. フォーム構造を見つける
+コンテンツツリー（左パネル）で、「アダプティブフォーム」セクションを見つけ、フォーム構造を展開して挿入ポイントを表示します。
 
 - コンテンツツリー（左側のパネル）で、アダプティブフォームセクションを見つけます
 - フォーム構造を展開して挿入ポイントを表示します
 +++
 
-+++3. reCAPTCHA コンポーネントを追加します
-Captcha（Invisible）コンポーネントをフォームに追加します。
++++&#x200B;3. reCAPTCHA コンポーネントの追加
+Captcha （非表示）コンポーネントをフォームに追加します。
 
 - フォームセクションで追加（+）アイコンをクリックします
 - コンポーネントリストから、「Captcha （Invisible）」を選択します
 - または、コンポーネントパネルからコンポーネントをドラッグ＆ドロップします
 +++
 
-+++4. コンポーネントを設定します（オプション）
-新しく追加された Captcha コンポーネントを選択し、reCAPTCHA 設定が使用されていることを検証します。
++++&#x200B;4. コンポーネントの設定（オプション）
+新しく追加された captcha コンポーネントを選択し、reCAPTCHA 設定を使用していることを確認します。
 
 - 新しく追加された Captcha コンポーネントを選択します
 - プロパティパネルで、reCAPTCHA 設定が使用されていることを検証します
 - 基本的な設定には、追加の設定は必要ありません
 +++
 
-+++5. 変更を公開します
-変更を公開し、エラーがないことを検証します。
++++5.変更を公開する
+変更を公開し、エラーがないことを確認します。
 
 - ユニバーサルエディターで「公開」をクリックします
 - 完了まで待機します

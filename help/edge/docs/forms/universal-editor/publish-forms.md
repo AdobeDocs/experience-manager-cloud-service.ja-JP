@@ -6,8 +6,8 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: フォームの公開, Edge Delivery Services, フォーム設定, CORS, リファラーフィルター
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
-workflow-type: ht
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Edge Delivery Services へのフォームの公開は、次の 3 段階のアプ
 1. **フォームにアクセス**：アダプティブフォームをユニバーサルエディターで開きます
 2. **公開を開始**：ツールバーの「**公開**」アイコンをクリックします
 
-   ![「公開」をクリック](/help/forms/assets/publish-icon-eds-form.png)
+   ![「公開」をクリック](/help/edge/docs/forms/universal-editor/assets/publish-form-ue.png)
 
 +++
 
@@ -58,12 +58,12 @@ Edge Delivery Services へのフォームの公開は、次の 3 段階のアプ
 
 1. **公開アセットをレビュー**：フォームを含む、公開中のすべてのアセットが表示されます
 
-   ![「公開」をクリックした場合](/help/forms/assets/on-click-publish.png)
+   ![「公開」をクリックした場合](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-review.png)
 
 2. **公開を確認**：「**公開**」をクリックして続行します
 3. **成功を検証**：確認メッセージを探します
 
-   ![公開成功](/help/forms/assets/publish-success.png)
+   ![公開成功](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-success.png)
 
 +++
 
@@ -72,7 +72,7 @@ Edge Delivery Services へのフォームの公開は、次の 3 段階のアプ
 
 **ステータスを確認**：現在のステータスを表示するには、「**公開**」アイコンをもう一度クリックします
 
-![公開ステータス](/help/forms/assets/publish-status.png)
+![公開ステータス](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-validate.png)
 
 **検証チェックポイント：**
 
@@ -91,7 +91,7 @@ Edge Delivery Services へのフォームの公開は、次の 3 段階のアプ
 2. 右上隅の 3 つのドットメニュー（⋯）をクリックします
 3. 「**非公開**」を選択します
 
-![フォームを非公開](/help/forms/assets/unpublish--form.png)
+![フォームを非公開](/help/edge/docs/forms/universal-editor/assets/unpublish-ue.png)
 
 +++
 

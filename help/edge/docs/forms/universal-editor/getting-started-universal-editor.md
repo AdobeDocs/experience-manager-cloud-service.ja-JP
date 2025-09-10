@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '2609'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '2608'
+ht-degree: 96%
 
 ---
 
@@ -90,7 +90,7 @@ AEM Forms ボイラープレートを活用して、プロジェクトの設定�
 
 次の節では、各手順を詳細にガイドし、スムーズで効率的なプロジェクト設定エクスペリエンスを実現します。
 
-+++手順 1：テンプレートから GitHub リポジトリを作成
++++手順 1：テンプレートから GitHub リポジトリを作成する
 
 1. **AEM Forms ボイラープレートテンプレートにアクセス**
    - [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) に移動します
@@ -117,7 +117,7 @@ AEM Forms ボイラープレートを活用して、プロジェクトの設定�
 
 +++
 
-+++手順 2：AEM コード同期をインストール
++++手順 2:AEM Code Sync のインストール
 
 AEM コード同期は、AEM オーサリング環境と GitHub リポジトリ間でコンテンツの変更を自動的に同期します。
 
@@ -136,7 +136,7 @@ AEM コード同期は、AEM オーサリング環境と GitHub リポジトリ�
 
 +++
 
-+++手順 3：AEM 統合を設定
++++手順 3:AEM統合の設定
 
 `fstab.yaml` ファイルは、GitHub リポジトリを AEM オーサリング環境に接続し、コンテンツを同期します。
 
@@ -157,7 +157,10 @@ AEM コード同期は、AEM オーサリング環境と GitHub リポジトリ�
 
    ```yaml
    mountpoints:
-     /: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     /: 
+     url: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     type: "markup" 
+     suffix: ".html" 
    ```
 
    **置換：**
@@ -184,13 +187,13 @@ AEM コード同期は、AEM オーサリング環境と GitHub リポジトリ�
 
 **検証：** AEM への GitHub リポジトリ接続を確認します。
 
-    >[!メモ]
-    >
->ビルドに問題がありますか？ [GitHub ビルドの問題のトラブルシューティング](#troubleshooting-github-build-issues)を参照してください。
+>[!NOTE]
+>
+> ビルドに問題がありますか？ [GitHub ビルドの問題のトラブルシューティング](#troubleshooting-github-build-issues)を参照してください。
 
 +++
 
-+++手順 4：GitHub リポジトリに接続した AEM サイトを作成する。
++++手順 4:GitHub リポジトリに接続したAEM サイトを作成する。
 
 1. **AEM Sites コンソールにアクセス**
    - AEM as a Cloud Service オーサリングインスタンスにログインします
@@ -258,7 +261,7 @@ AEM コード同期は、AEM オーサリング環境と GitHub リポジトリ�
 
 +++
 
-+++手順 5：サイトを公開
++++手順 5：サイトの公開
 
 公開すると、サイトがグローバルアクセス用の Edge Delivery Services で使用できます。
 
@@ -343,7 +346,7 @@ Edge Delivery Services を使用した AEM プロジェクトが既にある場�
 3. 新しいファイルとコーディングパターンに対応するように、ESLint ルールを調整します。
 4. プロジェクトを作成し、変更をリポジトリにコミットします。
 
-+++手順 1：Forms ブロックファイルをコピー
++++手順 1:Forms ブロックファイルのコピー
 
 1. **ローカルプロジェクトに移動**
 
@@ -368,7 +371,7 @@ Edge Delivery Services を使用した AEM プロジェクトが既にある場�
 
 +++
 
-+++手順 2：コンポーネント設定を更新
++++手順 2：コンポーネント設定の更新
 
 1. **セクションモデルを更新**
 
@@ -397,7 +400,7 @@ Edge Delivery Services を使用した AEM プロジェクトが既にある場�
 
 +++
 
-+++手順 3：ESLint を設定（オプション）
++++手順 3:ESLint の構成（オプション）
 
 **この手順の理由：**&#x200B;フォーム固有のファイルからのリンティングエラーを防ぎ、適切な検証ルールを設定します。
 
@@ -528,7 +531,7 @@ Edge Delivery Services を使用した AEM プロジェクトが既にある場�
 
 次の節では、各手順を詳しく説明し、スムーズで効果的なフォーム作成エクスペリエンスを実現します。
 
-+++手順 1：アダプティブフォームブロックを追加
++++手順 1：アダプティブフォームブロックを追加する
 
 1. **ユニバーサルエディターでページを開く**
    - AEM の **Sites** コンソールに移動します
@@ -602,7 +605,7 @@ Edge Delivery Services を使用した AEM プロジェクトが既にある場�
 
 +++
 
-+++手順 3：フォームを公開
++++手順 3：フォームを公開する
 
 1. **ユニバーサルエディターから公開**
    - ユニバーサルエディターの「**公開**」ボタンをクリックします
@@ -626,13 +629,13 @@ Edge Delivery Services を使用した AEM プロジェクトが既にある場�
    現在、フォームは次の場所で運用されています。
 
    ```
-   https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/
+   https://<branch>--<repo>--<owner>.aem.live/content/<site-name>/
    ```
 
    **URL の例：**
 
    ```
-   https://main--my-forms-project--mycompany.aem.page/content/my-forms-project/
+   https://main--my-forms-project--mycompany.aem.live/content/my-forms-project/
    ```
 
    ![ライブフォームページ](/help/edge/docs/forms/assets/publish-index-page.png)
@@ -661,7 +664,7 @@ Edge Delivery Services を使用した AEM プロジェクトが既にある場�
 
 ローカル開発環境を使用すると、公開サイクルを経由することなく、変更を行ってすぐに結果を確認できます。
 
-+++AEM CLI とローカル開発環境を設定
++++AEM CLI とローカル開発の設定
 
 1. **AEM CLI をインストール**
 
@@ -715,7 +718,7 @@ Edge Delivery Services を使用した AEM プロジェクトが既にある場�
 
 ### よくある問題と解決策
 
-+++GitHub のビルド問題
++++GitHub のビルドの問題
 
 **問題：**&#x200B;ビルドの失敗またはリンティングエラー
 
