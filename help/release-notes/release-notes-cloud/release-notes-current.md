@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 0d2164920ca44ee6c872fdfe2090760a1506215d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1961'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 48%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.8.0）のリリース日は 2025年8月28日（PT）です。 次回の機能リリース（2025.9.0）は、2025年9月25日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.8.0）のリリース日は 2025年8月28日（PT）です。次回の機能リリース（2025.9.0）は、2025年9月25日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -40,86 +40,86 @@ ht-degree: 48%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
 ## Experience Hub {#experience-hub}
 
-[Experience Hub](/help/experience-hub.md) は、すべてのAEM機能にアクセスするための一元的な出発点となります。 ユーザーのペルソナと使用可能なライセンスに基づいてパーソナライズされるため、各ユーザーは結果を効率的に達成できます。
+[Experience Hub](/help/experience-hub.md) は、すべての AEM 機能にアクセスするための一元的な開始点です。ユーザーのペルソナと使用可能なライセンスに基づいてパーソナライズされるので、各ユーザーは結果を効率的に達成できます。
 
-## AEMの AI アシスタント {#AI-assistant}
+## AEM の AI アシスタント {#AI-assistant}
 
-AEM用 [AI アシスタント ](/help/implementing/cloud-manager/ai-assistant-in-aem.md) は、AEM製品に関する質問に即座に回答し（** すべてのユーザーが利用できます）、サポートチケットの作成を自動化するように設計された対話型インターフェイスを提供します（*管理者をサポートする場合に利用できます*）。 AEMに直接埋め込まれ、AEM Experience Hub、Cloud Managerおよびオーサー UI からアクセスできます。
+AEM 用 [AI アシスタント](/help/implementing/cloud-manager/ai-assistant-in-aem.md)は、AEM 製品関連の質問に即座に回答（*すべてのユーザーが使用可能*）し、サポートチケットの作成を自動化（*サポート管理者が使用可能*）するためにデザインされた対話型インターフェイスを提供します。AEM に直接埋め込まれ、AEM Experience Hub、Cloud Manager、オーサー UI からアクセスできます。
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Experience Manager Sites の新機能 {#enhancements-sites}
 
 * コンテンツフラグメント管理 UI では、コンテンツフラグメントのワークフローステータスと、選択したフラグメントの過去および現在実行中のワークフローの詳細情報を表示できるようになりました。
-* 新しいコンテンツフラグメントエディターでコンテンツフラグメントを開くパフォーマンスは、パスではなく UUID を使用してフラグメントを開くことで、一般的なシナリオで 25% 向上しました。
-* 参照フラグメントを使用してコンテンツフラグメントをコピーする際、参照フラグメントのコピーが、親フラグメントコピーと同じ場所に保存されるようになりました。
-* フォルダー設定でカスタムワークスペースを設定して、コンテンツフラグメントをAdobe Targetの設定済みワークスペースに書き出すことができるようになりました。
+* 新しいコンテンツフラグメントエディターでコンテンツフラグメントを開くパフォーマンスは、パスの代わりに UUID 経由でフラグメントを開くことで、一般的なシナリオで 25％向上しました。
+* 参照フラグメントを含むコンテンツフラグメントをコピーする際、参照フラグメントのコピーが親フラグメントのコピーと同じ場所に保存されるようになりました。
+* フォルダー設定でカスタムワークスペースを設定して、コンテンツフラグメントを Adobe Target で設定されたワークスペースに書き出すことができるようになりました。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### コンテンツハブの新機能 {#new-features-content-hub}
 
-**フィルタープロパティを使用した一括検索**
+**フィルタープロパティ経由の一括検索**
 
-Content Hubを使用すると、必要なアセットをより迅速に見つけることができます。 新しい一括検索機能を使用すると、任意のフィルタープロパティに複数の値を区切り文字で区切って入力し（複数の SKU ID など）、一致するすべてのアセットを 1 回の検索で即座に取得できます。
+コンテンツハブでは、必要なアセットをすばやく見つけることができるようになりました。新しい一括検索機能を使用すると、任意のフィルタープロパティに複数の値（区切り文字で区切られた値、例えば、複数の SKU ID）を入力し、1 回の検索で一致するすべてのアセットを即座に取得できます。
 
 ### OpenAPI 機能を備えた Dynamic Media の新機能 {#new-features-dynamic-media-with-openapi}
 
-**OpenAPI URL を使用した SEO に対応した DM**
+**OpenAPI URL を備えた SEO 対応 DM**
 
-OpenAPI を使用して DM でアセット配信用のバニティー URL を作成し、長いシステム生成 UUID を短い読み取り可能な識別子に置き換えます。 これにより、リンクが SEO に適し、ブランドやキャンペーンとより適切に連携するようになります。 バニティ URL は、既存のワークフローを中断することなく、実行時に元のアセット UUID に自動的に解決されます。
+OpenAPI を備えた DM でのアセット配信用のバニティ URL を作成し、システムで生成された長い UUID を短い読み取り可能な識別子に置き換えます。これにより、リンクは SEO 対応になり、ブランドやキャンペーンとの整合性が向上します。バニティ URL は、既存のワークフローを中断することなく、実行時に元のアセット UUID に自動的に解決されます。
 
 >[!NOTE]
 >
->この機能は、9 月 10 日（PT）に限定提供（LA）機能として提供されます。 [Adobe カスタマーサポートケースを作成して送信する ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) ことで、のデプロイメントでケースを有効にすることができます。
+>この機能は、9月10日（PT）に限定提供機能として提供されます。[アドビカスタマーサポートケースを作成および送信](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)し、デプロイメントで有効にすることができます。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Experience Manager Formsの新機能 {#new-features-forms}
+### Experience Manager Forms の新機能 {#new-features-forms}
 
-**日時入力コンポーネント**
+**日付と時刻の入力コンポーネント**
 
-[ 日付と時刻 ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) コンポーネントが使用できるようになり、カレンダーと時計のインターフェイスを使用するか、サポートされている形式で手動で値を入力して、日付と時刻の両方を選択できるようになりました。
+[日付と時刻コンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)が使用可能になり、ユーザーはカレンダーと時計のインターフェイスを使用して日付と時刻の両方を選択することや、サポートされている形式で値を手動で入力することができるようになりました。
 
-**ファイルのアップロードに関するエラー処理の強化**
+**ファイルアップロードのエラー処理の強化**
 
-[ ファイル添付コンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) は、アップロードされたファイルタイプを許可リストに対して自動的に検証するようになりました。 サポートされていない形式のファイルをユーザーがアップロードすると、フォームの送信中にエラーが表示されます。 また、このコンポーネントはファイルコンテンツをチェックして、そのタイプを検証するので、フォームの全体的なセキュリティが強化されます。
+[ファイル添付コンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)は、アップロードされたファイルタイプを許可リストに対して自動的に検証するようになりました。ユーザーがサポートされていない形式のファイルをアップロードすると、送信中にフォームにエラーが表示されます。また、このコンポーネントはファイルコンテンツをチェックして、そのタイプを検証するので、フォームの全体的なセキュリティが強化されます。
 
-**カスタム送信アクションに対して指定されたエラー応答**
+**カスタム送信アクションの指定されたエラー応答**
 
-[ カスタム送信アクション ](/help/forms/custom-submit-action-troubleshooting.md) で未処理のエラーが発生した場合、システムはエラーコード 502 を返します。 これは、問題がカスタム送信アクションに関連していることを識別するのに役立ち、デバッグを容易にします。
+[カスタム送信アクション](/help/forms/custom-submit-action-troubleshooting.md)で未処理のエラーが発生した際、システムはエラーコード 502 を返します。これにより、問題がカスタム送信アクションに関連していることを識別でき、デバッグが簡単になります。
 
 **レコードのドキュメントからの非表示フィールドの除外**
 
-新しいプロパティを使用すると、[ レコードのドキュメント ](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings) から非表示フィールドを除外できます。 デフォルトでは、このオプションは選択されておらず、すべてのフォームフィールドに適用されます。
+新しいプロパティにより、[レコードのドキュメント](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)から非表示フィールドを除外できるようになりました。デフォルトでは、このオプションは選択されておらず、すべてのフォームフィールドに適用されます。
 
 
-### AEM Formsのプレリリース機能
+### AEM Forms のプレリリース機能
 
 **AFP レンディションの生成と同期**
 
-[AEM Forms Communication API](/help/forms/document-generation-afp-api.md) を使用して、XDP ファイルを AFP 形式に変換できるようになりました。 AFP は、大規模企業の印刷で広く使用されている高性能フォーマットです。
+[AEM Forms Communication API](/help/forms/document-generation-afp-api.md) を使用して、XDP ファイルを AFP 形式に変換できるようになりました。AFP は、大規模なエンタープライズ印刷で広く使用されている、高性能な形式です。
 
 **ルールエディターの機能強化**
 
-* [ 関数リスト内の Validate メソッド ](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list):validate メソッドと reset メソッドで、パネルレベル、フィールドレベル、フォームレベルでの実行がサポートされるようになりました。 以前は、フォームレベルでのみサポートされていました。
-* [ 最新のJavaScriptのサポート ](/help/forms/rule-editor-core-components-difference-tables.md)：カスタム関数に ECMAScript 2019 以降の機能がサポートされるようになり、より効率的なモジュール型で再利用可能なコードを記述できるようになりました。
-* [ ルールエディターの「DoR をダウンロード」オプション ](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor)：レコードのドキュメント（DoR）をダウンロードする機能がルールエディターの標準（OOTB）オプションとして追加されました。
+* [ 関数リストの Validate メソッド](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list)：validate メソッドと reset メソッドでは、パネル、フィールド、フォームの各レベルでの実行がサポートされるようになりました。以前は、フォームレベルでのみサポートされていました。
+* [最新の JavaScript サポート](/help/forms/rule-editor-core-components-difference-tables.md)：カスタム関数に ECMAScript 2019 以降の機能のサポートが追加され、より効率的でモジュール形式の再利用可能なコードを記述できるようになりました。
+* [ルールエディターの「DoR をダウンロード」オプション](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor)：ルールエディターにレコードのドキュメント（DoR）をダウンロードする機能が、標準（OOTB）オプションとして追加されました。
 
-  ![ レコードのドキュメント ](/help/forms/assets/document-of-record-rn.gif)
+  ![レコードのドキュメント](/help/forms/assets/document-of-record-rn.gif)
 
-* [ ルールエディターの動的変数 ](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules)：ルールエディターで動的（一時的）変数を使用して、条件とアクションをより柔軟に定義できるようになりました。 非表示のフィールドは、一時的な値を格納する必要がなくなりました。
-* [ カスタムイベントベースのルールのサポート ](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support)：カスタムイベントと、それらのイベントに基づくトリガールールを定義できるようになりました。
-* [ コンテキスト対応の繰り返し可能なパネルルール ](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels)：繰り返し可能なパネルでは、ルールが最後のパネルインスタンスのみに適用されるのではなく、コンテキストに基づいて実行されるようになりました。
-* [ パラメーターによってトリガーされるルール ](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms)：ルールエディターで、クエリパラメーター、UTM パラメーターまたはブラウザーパラメーターに基づくルール実行がサポートされるようになりました。
-* [ フォーム固有のカスタム関数 ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms):Edge Delivery Services Formsでは、フォーム固有のカスタム関数スクリプトがサポートされるようになり、再利用可能なロジックをより柔軟に管理できるようになりました。
-* [ カスタム関数の静的インポート ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions)：ユニバーサルエディターのルールエディターで静的インポートがサポートされるようになり、開発者は関数を整理、共有、複数のフォームで再利用できるようになりました。
+* [ルールエディターの動的変数](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules)：ルールエディターで動的（一時）変数を使用できるようになりました。これにより、条件とアクションをより柔軟に定義できます。一時的な値を保存するために非表示フィールドを使用する必要がなくなりました。
+* [カスタムイベントベースのルールのサポート](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support)：カスタムイベントを定義し、これらのイベントに基づいてルールをトリガーできるようになりました。
+* [コンテキスト対応の繰り返し可能なパネルルール](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels)：繰り返し可能なパネルでは、ルールは最後のパネルインスタンスにのみ適用される代わりに、コンテキストに基づいて実行されるようになりました。
+* [パラメーターによってトリガーされるルール](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms)：ルールエディターでは、クエリパラメーター、UTM パラメーター、ブラウザーパラメーターに基づくルール実行がサポートされるようになりました。
+* [フォーム固有のカスタム関数](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms)：Edge Delivery Services Forms では、フォーム固有のカスタム関数スクリプトがサポートされ、再利用可能なロジックをより柔軟に管理できるようになりました。
+* [カスタム関数の静的読み込み](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions)：ユニバーサルエディターのルールエディターで静的読み込みがサポートされ、開発者は複数のフォームをまたいで関数を整理、共有、再利用できるようになりました。
 
 ### AEM Forms の新しい早期アクセス機能 {#forms-new-early-access-features}
 
@@ -129,11 +129,11 @@ AEM Forms 早期アクセスプログラムでは、最先端の革新機能に�
 
 **手書き署名コンポーネント**
 
-[ 手書き署名コンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) を使用して、ユーザーが契約書フォームなどのフォームに署名を追加できるようになりました。 このコンポーネントを使用すると、ユーザーはマウス、スタイラスまたはタッチスクリーンを使用してフォーム内に直接署名を描画できます。
+[手書き署名コンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)を使用して、ユーザーが契約書などのフォームに署名を追加できるようになりました。コンポーネントを使用すると、ユーザーはマウス、スタイラス、タッチスクリーンを使用してフォーム内に直接署名を入力できます。
 
-**ルールエディターでの API の直接統合**
+**ルールエディターでの直接 API 統合**
 
-アダプティブFormsでは、フォームデータモデルを必要とせずに、ビジュアルルールエディターで [ ダイレクト API 統合 ](/help/forms/api-integration-in-rule-editor.md) をサポートするようになりました。 作成者は、URL または cURL インポートを使用して API を設定し、入力/出力パラメーターをマッピングし、認証で安全な呼び出しを行うことができます。
+アダプティブフォームでは、フォームデータモデルを必要とせずに、ビジュアルルールエディターで[直接 API 統合](/help/forms/api-integration-in-rule-editor.md)をサポートするようになりました。作成者は、URL または cURL 読み込みを使用して API を設定し、入力／出力パラメーターをマッピングし、認証を使用して安全な呼び出しを行うことができます。
 
 <!--
 **Forms Optimization opportunities**
@@ -155,14 +155,14 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ### JavaScript コンパイルの更新 {#javascript-compilation}
 
-デフォルトのクライアントサイドライブラリ（clientlibs）JavaScriptのコンパイルは、ECMASCRIPT5 ではなく ECMASCRIPT_2018 をターゲットとするようになりました。 この更新は以前は上書きできますが、デフォルトではパフォーマンスの向上、最新のJavaScript構文および機能が有効になっています。
+デフォルトのクライアントサイドライブラリ（clientlibs）の JavaScript コンパイルでは、ECMASCRIPT5 の代わりに、ECMASCRIPT_2018 をターゲットにするようになりました。これまでは上書き可能でしたが、今回の更新により、パフォーマンスの向上、最新の JavaScript 構文および機能がデフォルトで有効になります。
 
-### 今後の Java API の廃止 {#java-api-deprecation}
+### 今後の Java API の非推奨（廃止予定） {#java-api-deprecation}
 
-一部の非推奨 API は、8 月 31 日の削除をターゲットにしているので、参照できなくなりました。 API の使用が検出された場合、9 月上旬にアクションセンターから通知が送信されます。また、9 月 25 日（PT）以降、Cloud Managerのビルド中に通知が表示され、使用を削除することが重要になります。 詳しくは、[ 非推奨の記事 ](/help/release-notes/deprecated-removed-features.md#aem-apis) を参照してください。ただし、便宜上、これらの API は次のとおりです。
+一部の非推奨（廃止予定）API は、8月31日（PT）の削除をターゲットにしているので、参照できなくなります。9月上旬には、API の使用が検出されるとアクションセンター通知が送信され、9月25日（PT）以降は、使用を削除することの重要性を強調する通知が Cloud Manager ビルド中に表示されます。詳しくは、[非推奨（廃止予定）に関する記事](/help/release-notes/deprecated-removed-features.md#aem-apis)を参照してください。便宜上、これらの API を次に示します。
 
 <details>
-  <summary>展開して Java API の非推奨（廃止予定）を確認</summary>
+  <summary>展開して Java API の非推奨（廃止予定）について確認</summary>
 
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
@@ -196,7 +196,7 @@ OSGi properties:
 
 *Java 11 ランタイム* は廃止となり、大半の環境はよりパフォーマンスの高い **Java 21 ランタイム**&#x200B;にアップグレードされています。
 
-サポートされていない依存関係が原因で環境をアップグレードできなかった場合 ([Java 21 ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)を参照) は、次の具体的な手順を記載したメールが Adobeから届いているはずです。**2025 年 10 月 1 日** までに必要な更新がすべて完了していることを確認してください。これにより、中断することなく環境をアップグレードできます。
+サポートされていない依存関係が原因で環境をアップグレードできなかった場合 ([Java 21 ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)を参照) は、次の具体的な手順を記載したメールが Adobeから届いているはずです。**2025年10月1日（PT）**&#x200B;までに必要な更新がすべて完了していることを確認してください。これにより、中断することなく環境をアップグレードできます。
 
 注：ランタイムバージョンは、コードのビルドバージョンとは別のものです。 Java 21 を使用してビルドすることをお勧めしますが、Java 11 ビルドは引き続きサポートされています。 Java 11 ビルドの廃止に関する通知は、今後共有される予定です。
 
@@ -204,14 +204,14 @@ OSGi properties:
 
 4 月のリリースノートに記載されているように、AEMの Java ログは、すべてのお客様の環境で信頼性の高い監視を確実に行うために、標準に従う必要があります。 ログ形式、出力ファイル、デフォルトログレベルの変更といったカスタムログ設定は、サポートされなくなりました。 ログはデフォルトファイルにダイレクトされ続け、AEM 製品コードのデフォルトログレベルは保持される必要があります。 詳しくは、[ログに関する記事](/help/implementing/developing/introduction/logging.md#configuration-loggers)を参照してください。
 
-**9 月 25 日** 以降、サポートされていないカスタムログの上書きは無視されます。 Adobe の分析によると、ほとんどのお客様は影響を受けることはありません。現在の設定が影響を受ける可能性があるお客様にはご連絡済みです。
+**9月25日（PT）**&#x200B;から、サポートされていないカスタムログの上書きは無視されるようになります。Adobe の分析によると、ほとんどのお客様は影響を受けることはありません。現在の設定が影響を受ける可能性があるお客様にはご連絡済みです。
 
 カスタムログ動作に依存するダウンストリームプロセスを確認し、更新してください。 例：
 
 * ログ転送システムでカスタムログ形式が想定されている場合は、取り込みルールを調整する必要がある可能性があります。
 * 以前にログレベルを変更してログの冗長性を削減したことがある場合は、デフォルトレベルに戻すとログのボリュームが増える可能性があることに注意してください。
 
-### Edge Computing （Beta プログラム） {#edge-computing}
+### Edge コンピューティング（Beta プログラム） {#edge-computing}
 
 Edge コンピューティングを使用すると、CDN レイヤーで JavaScript を実行し、データ処理をエンドユーザーに近づけることができます。 これにより待ち時間が短縮され、エッジでレスポンシブな動的エクスペリエンスが実現します。
 
@@ -220,7 +220,7 @@ Edge コンピューティングを使用すると、CDN レイヤーで JavaScr
 * コンテンツへのアクセスを許可する前に、ID プロバイダーを使用してユーザーを認証する
 * 位置情報、デバイスタイプまたはユーザー属性に基づくコンテンツのパーソナライズ
 * CDN と接触チャネルの間のミドルウェアとして機能させる
-* ブラウザーに配信する前に、サードパーティ API からの応答を再フォーマットする（および複数の API 応答を集計する）
+* サードパーティの API からの応答をブラウザーに配信する前に再フォーマットする（および複数の API 応答を集計する）
 * 様々なバックエンドからステッチされたコンテンツを使用し、サーバーレンダリングされた HTML をエッジで作成および提供
 * ChatGPT や Claude などの LLM がカスタムツールにアクセスできるように MCP サーバーを公開する
 
@@ -230,7 +230,7 @@ AEM パブリッシュ配信またはライブ実稼動サイトのEdge Delivery
 
 Adobe が管理する CDN では、[設定パイプラインの記事](/help/operations/config-pipeline.md#configurations)で説明されているように、柔軟な設定オプションが提供されます。
 
-ベータ版では、CDN オリジンセレクター、応答およびリクエスト変換、CDN ログ転送などの機能に対する設定パイプラインをデプロイできます。 ユースケースについて詳しくは、[aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) にお問い合わせください。
+ベータ版では、CDN オリジンセレクター、応答とリクエストの変換、CDN ログ転送などの機能に対して設定パイプラインをデプロイします。ユースケースについて詳しくは、[aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) にお問い合わせください。
 
 ### RDE のスナップショット（Alpha プログラム） {#rde-snapshot-program}
 

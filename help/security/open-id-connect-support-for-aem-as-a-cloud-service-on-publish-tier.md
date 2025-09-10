@@ -5,7 +5,7 @@ feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
 source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1469'
 ht-degree: 100%
 

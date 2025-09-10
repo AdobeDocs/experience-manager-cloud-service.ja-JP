@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 33468de99a3e77539f4bdc9435324c9f52a45d9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '350'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 70%
 
 2025年9月2日（PT）に公開されたメンテナンスリリース 22171 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 21994 でした。
 
-2025.9.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。 詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
+2025.9.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
 
 ### 新機能  {#new-features-22171}
 
-* ASSETS-53136:OpenAPI を使用した Dynamic Media でのバニティ ID のサポート。
+* ASSETS-53136：OpenAPI を備えた Dynamic Media でのバニティ ID のサポート。
 
 ### 機能強化 {#enhancements-22171}
 
@@ -32,15 +32,15 @@ ht-degree: 70%
 
 ### 修正された問題 {#fixed-issues-22171}
 
-* ASSETS-52510:Unicode `U+202F` を含むファイル名の場合、重複ファイル名の検出が失敗します。
-* ASSETS-53489:Assets ビュー UI からフォルダーを削除しても、含まれているすべてのアセットが未承認になるわけではありません。
-* ASSETS-54821:Asset Link で「Server error」が断続的に発生する。
-* ASSETS-55024:AEM Assetsの「メールでダウンロード」テンプレートの壊れた画像。
-* ASSETS-55325:Dynamic Media の静的 URL で、アセットの名前変更の後、ファイル拡張子が省略される。
-* ASSETS-55334: リンク共有ダイアログが、短時間点滅して消えるか、表示されません。
-* ASSETS-55382：非同期アセットジョブを再起動すると、重複した出力先フォルダーが作成される。
-* ASSETS-55472:「公開を管理」オプションの「既に公開済みのページのみを含める」が無視される。
-* SITES-31600:Contexthub js エラーによりパーソナライゼーションが機能しない。
+* ASSETS-52510：Unicode `U+202F` を含むファイル名では重複ファイル名の検出が失敗する。
+* ASSETS-53489：アセットビュー UI からのフォルダーの削除では、含まれるすべてのアセットが承認解除されない。
+* ASSETS-54821：Asset Link で断続的に「サーバーエラー」が発生する。
+* ASSETS-55024：EM Assets の「メールでダウンロード」テンプレート内の画像が壊れる。
+* ASSETS-55325：Dynamic Media の静的 URL で、アセットの名前変更後にファイル拡張子が省略される。
+* ASSETS-55334：リンク共有ダイアログが短時間点滅して非表示になるか、まったく表示されない。
+* ASSETS-55382：再開した非同期アセットジョブにより、重複した宛先フォルダーが作成される。
+* ASSETS-55472：「公開を管理」オプションの「既に公開済みのページのみを含める」が無視される。
+* SITES-31600：Contexthub js エラーにより、パーソナライゼーションが壊れる。
 
 このリリースの新機能および機能強化と修正された問題について詳しくは、[Experience Manager Guides リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)を参照してください。
 
