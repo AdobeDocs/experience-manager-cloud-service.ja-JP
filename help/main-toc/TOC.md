@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ac2c4511d02433e968519da4c2e1eb13270ea8c4
+source-git-commit: 15f2096221d7c521d6e69fb9e425368e869dea09
 workflow-type: tm+mt
-source-wordcount: '6591'
+source-wordcount: '6599'
 ht-degree: 98%
 
 ---
@@ -278,7 +278,7 @@ ht-degree: 98%
    + [Sling サービスユーザーマッピングとサービスユーザー定義のベストプラクティス](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service の顧客管理キー](/help/security/customer-managed-keys.md)
 + Experience Hub {#experience-hub}
-   + [Experience Hubについて](/help/experience-hub.md)
+   + [Experience Hub について](/help/experience-hub.md)
 + オンボーディング {#onboarding}
    + [ここから開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ja)
    + オンボーディングジャーニー {#journey}
@@ -524,6 +524,7 @@ ht-degree: 98%
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
+      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service の運用テレメトリ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概要と新機能](/help/assets/overview.md)
@@ -1209,8 +1210,8 @@ ht-degree: 98%
          + [コンテンツフラグメントでの参照の使用について](/help/journey-headless/author/references.md)
          + [コンテンツフラグメントのメタデータとタグの定義について](/help/journey-headless/author/metadata-tagging.md)
 + AI アシスタント {#ai-assistant}
-   + [AEMでの AI アシスタントの設定](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
-   + [AEMの AI アシスタントについて](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
+   + [AEM の AI アシスタントの設定](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
+   + [AEM の AI アシスタントについて](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
 + 生成 AI {#generative-ai}
    + [AEM as a Cloud Service の生成 AI](/help/generative-ai/generative-ai-in-aem.md)
    + [バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)
