@@ -4,10 +4,10 @@ description: OpenAPI を活用した AEM コンテンツフラグメント配信
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: dd7d2b5553e4ecac7a9955e83da1cab077c74127
-workflow-type: ht
-source-wordcount: '551'
-ht-degree: 100%
+source-git-commit: de161d6707dcb8cedf032ee1f286d79e733be94d
+workflow-type: tm+mt
+source-wordcount: '607'
+ht-degree: 90%
 
 ---
 
@@ -81,6 +81,14 @@ Dispatcher 設定側で定義された CORS 許可されたオリジン（特に
 この API を使用すると、環境ごとに最大 200 リクエスト/秒のレートで新規リクエストを許可します。
 
 この制限を超えると、API は [429 エラー](https://www.rfc-editor.org/rfc/rfc6585#section-4)応答の送信を開始します。これらのエラーはクライアントアプリケーションで処理する必要があり、失敗したリクエストは指数バックオフの再試行後に再試行する必要があります。HTTP 応答には特定のヘッダー `Retry-After` が付属しており、リクエストを再度送信するまでどれぐらい待機する必要があるかをクライアントに示します。
+
+## 認証済みリクエスト {#authenticated-requests}
+
+認証済みリクエストのサポートは、[AEM CDN Edge キー ](/help/implementing/dispatcher/cdn-credentials-authentication.md) で実装できます。 AEM CDN Edge キーを使用すると、AEM CDN に依存し、指定されたEdge キーヘッダーに基づいて、特定のリクエストのみが API にアクセスできるようになります。
+
+>[!NOTE]
+>
+>リポジトリ固有の ACL に基づく認証は、現在サポートされていません。
 
 <!-- 
 ## Limitations {#limitations}
