@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
-workflow-type: ht
-source-wordcount: '1782'
-ht-degree: 100%
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+workflow-type: tm+mt
+source-wordcount: '1854'
+ht-degree: 91%
 
 ---
 
@@ -89,15 +89,9 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ![組織インジケーター](assets/organization.png)
 
-#### ソリューション {#solutions}
+#### ヘルプセンター {#help}
 
-ソリューション切り替えボタンをタップまたはクリックすると、他の Experience Cloud ソリューションに素早くジャンプすることができます。
-
-![ソリューションスイッチャー](assets/solutions.png)
-
-#### ヘルプ {#help}
-
-ヘルプアイコンを使用すると、学習リソースやサポートリソースに素早くアクセスできます。
+ヘルプセンターアイコンを使用すると、学習リソースやサポートリソースにすばやくアクセスできます。
 
 ![ヘルプ](assets/help.png)
 
@@ -107,9 +101,15 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ![通知](assets/notifications.png)
 
-#### ユーザープロパティ {#user-properties}
+#### アプリ {#solutions}
 
-ユーザー設定にアクセスするには、ユーザーを表すアイコンを選択します。ユーザー画像が設定されていない場合、アイコンがランダムに割り当てられます。
+アプリ切り替えボタンをタップまたはクリックすると、他のExperience Cloud ソリューションにすばやくジャンプできます。
+
+![ アプリスイッチャー ](assets/solutions.png)
+
+#### アカウント {#user-properties}
+
+アカウント設定にアクセスするには、ユーザーを表すアイコンを選択します。 ユーザー画像が設定されていない場合、アイコンがランダムに割り当てられます。
 
 ![ユーザープロパティ](assets/user-properties.png)
 
@@ -135,6 +135,8 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 >
 >ユニバーサルエディターで編集するページは、[ユニバーサルエディターをサポートするのに実装する](/help/implementing/universal-editor/getting-started.md)必要があります。
 
+「**クイックリンク**」セクションにはヘルプリソースが表示され、「**最近**」セクションにはユニバーサルエディターで最近開いたページへのリンクが表示されます。
+
 #### ロケーションバー {#location-bar}
 
 ロケーションバーに、編集中のページのアドレスが表示されます。別のページを編集するには、選択してアドレスを入力します。
@@ -149,21 +151,32 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 >
 >ユニバーサルエディターで編集するページは、[ユニバーサルエディターをサポートするのに実装する](/help/implementing/universal-editor/getting-started.md)必要があります。
 
-#### 認証ヘッダーの設定 {#authentication-settings}
+#### 取り消しとやり直し {#undo-redo}
 
-[ローカル開発目的でカスタム認証ヘッダーを設定](/help/implementing/universal-editor/developer-overview.md#auth-header)する必要がある場合は、認証ヘッダー設定アイコンを選択します。
+「取り消し」または「やり直し」ボタンを選択して、エディター内の最後の編集を取り消しまたはやり直します。 詳しくは、ドキュメント [ ユニバーサルエディターを使用したコンテンツのオーサリング ](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) を参照してください。
+
+![ 取り消しアイコン ](assets/undo.png)
+![ やり直しアイコン ](assets/redo.png)
+
+>[!TIP]
+>
+>取り消しまたはやり直すには、それぞれホットキー `Command-Z` または `Shift-Command-Z` を使用します。
+
+#### 認証ヘッダー {#authentication-settings}
+
+[ 認証目的でカスタム認証ヘッダーを設定する ](/help/implementing/universal-editor/developer-overview.md#auth-header) 必要がある場合は、「ローカル開発ヘッダー」アイコンを選択します。
 
 ![認証ヘッダー設定ボタン](assets/authentication-header-settings.png)
 
-#### エミュレーターの設定 {#emulator}
+#### レスポンシブモード {#emulator}
 
-エミュレーションアイコンを選択して、ユニバーサルエディターによるページのレンダリング方法を定義します。
+レスポンシブモードアイコンを選択して、ユニバーサルエディターがページをレンダリングする方法を定義します。
 
-![エミュレーターアイコン](assets/emulator.png)
+![ レスポンシブモードアイコン ](assets/emulator.png)
 
-エミュレーションアイコンをタップまたはクリックすると、オプションが表示されます。
+レスポンシブモードアイコンをタップまたはクリックすると、オプションが表示されます。
 
-![エミュレーションオプション](assets/emulation-options.png)
+![ レスポンシブモードオプション ](assets/emulation-options.png)
 
 デフォルトでは、エディターはデスクトップレイアウトで開き、高さと幅はブラウザーで自動的に定義されます。
 
@@ -173,7 +186,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 * 幅と高さを定義する
 * 向きを変更する
 
-#### プレビューモード {#preview-mode}
+#### プレビュー {#preview-mode}
 
 プレビューモードでは、ページは、公開されたサービスで表示されるとおりに、エディターでレンダリングされます。これにより、コンテンツ作成者は、リンクをクリックするなどしてコンテンツ内を移動できます。
 

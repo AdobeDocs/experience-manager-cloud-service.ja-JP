@@ -4,10 +4,10 @@ description: ユニバーサルエディター 2025.09.04 リリースのリリ�
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 0c380e0faca1db0966d22d056dd1f824a731a7bc
+source-git-commit: 96524d433d5b8637d0e21186fd465bd550035bde
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 71%
+source-wordcount: '215'
+ht-degree: 52%
 
 ---
 
@@ -23,13 +23,9 @@ ht-degree: 71%
 ## 新機能 {#what-is-new}
 
 * コピーと貼り付けは、[ 早期導入 ](#copy-paste) に使用できます
-
-### 取り消し／やり直し {#undo-redo}
-
-ユニバーサルエディターのコンテンツ作成者が取り消しとやり直しを使用できるようになりました。
-
-* これには、コンテキスト内での編集、プロパティパネルを使用した編集、ブロックの追加（または複製）、移動、削除が含まれます。
-* 取り消しとやり直しは、現在のブラウザーセッションに限定されます。
+* コンテンツ作成者が [ 取り消しとやり直し ](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) を使用できるようになりました。
+   * 元に戻す/やり直しは、コンテキスト内で行われた編集、[ プロパティ ] パネルで行われた編集、およびブロックの追加、複製、移動、削除に対して実行できます。
+   * 取り消しとやり直しは、現在のブラウザーセッションに限定されます。
 
 ## 早期導入機能 {#early-adopter}
 
@@ -47,8 +43,3 @@ ht-degree: 71%
 
 * エディターツールバーのスタイル設定が更新され、今後の新しい RTE との連携が改善されました。
 * アセットピッカーダイアログのフィルターが復元されました。
-
-## 廃止 {#deprecations}
-
-* `text-input` コンポーネントと `text-area` コンポーネントは、[リリース 2025.07.09](/help/release-notes/universal-editor/2025/2025-07-09.md) で、正式に非推奨（廃止予定）となりました。
-   * `model-definition.json` では、テキストコンポーネントを使用して、プロパティパネルのテキスト入力を作成します。

@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
-workflow-type: ht
-source-wordcount: '2252'
-ht-degree: 100%
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+workflow-type: tm+mt
+source-wordcount: '2319'
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 100%
 
 薄い青色のアウトラインは、選択を示す濃い青色のアウトラインに変わり、カーソルが表示されます。変更を行ったら、Enter キーまたは Return キーを押すか、テキストボックスの外側を選択して、変更を保存します。
 
-テキストコンポーネントを選択すると、その詳細が[プロパティパネル](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)に表示されます。また、パネル内のテキストを編集することもできます。
+テキストコンポーネントを選択すると、その詳細が [ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) に表示されます。 また、パネル内のテキストを編集することもできます。
 
 ![プロパティパネルでのテキストの編集](assets/ue-editing-text-component-rail.png)
 
@@ -172,13 +172,27 @@ ht-degree: 100%
 
    ![コンポーネントの並べ替え](assets/ue-reordering-components.png)
 
-1. ドラッグしたコンポーネントがコンテンツツリー内で灰色に変わり、挿入ポイントは青い線で表されます。コンポーネントをリリースして、新しい場所に配置します。
+1. ドラッグしたコンポーネントはコンテンツツリー内でグレー表示され、挿入ポイントは青い線で表示されます。 コンポーネントをリリースして、新しい場所に配置します。
 
 コンポーネントは、コンテンツツリーおよびエディターの両方で並べ替えられます。
 
 >[!NOTE]
 >
 >選択したコンポーネントがターゲットコンテナの[コンポーネントフィルター](/help/implementing/universal-editor/filtering.md)で許可されている場合にのみ、コンテナ間でコンポーネントを移動できます。
+
+### 取り消しとやり直し {#undo-redo}
+
+「取り消し」または「やり直し」ボタンを選択して、エディター内の最後の編集を取り消しまたはやり直します。
+
+![ 取り消しアイコン ](assets/undo.png)
+![ やり直しアイコン ](assets/redo.png)
+
+* 元に戻す/やり直しは、コンテキスト内で行われた編集、[ プロパティ ] パネルで行われた編集、およびブロックの追加、複製、移動、削除に対して実行できます。
+* 取り消しとやり直しは、現在のブラウザーセッションに限定されます。
+
+>[!TIP]
+>
+>取り消しまたはやり直すには、それぞれホットキー `Command-Z` または `Shift-Command-Z` を使用します。
 
 ## コンテンツのプレビュー {#previewing-content}
 
