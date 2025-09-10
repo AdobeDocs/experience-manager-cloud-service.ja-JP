@@ -5,10 +5,10 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: fcc066945d1e44072c4718dd9c1d887dd97be0b6
-workflow-type: ht
-source-wordcount: '504'
-ht-degree: 100%
+source-git-commit: 650ef846b469337c96e728277af02ca890e85117
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 92%
 
 ---
 
@@ -30,13 +30,15 @@ ht-degree: 100%
 
 **デプロイした以前のコードを復元**&#x200B;機能は、以下の&#x200B;**すべて**&#x200B;の条件が true の場合にのみ使用可能です。
 
+* 正常なパイプライン実行ごとに許可される復元は 1 つだけです。再び復元するには、別の正常なパイプライン実行を完了します。
 * **環境の復元の作成**&#x200B;権限を保持している。権限の管理について詳しくは、[カスタム権限](/help/implementing/cloud-manager/custom-permissions.md)を参照してください。
 * 組織が Beta プログラムに登録され、機能フラグがオンになっている。
 * プログラムが AEM as a Cloud Service で実行されている。
-* 選択した環境が `Development` 環境（一時的な Beta 制限）である。
+* 以前のソースコードの復元は、`Development` 環境、`Stage` 環境または `Specialized Testng Environment` で実行できます。
 * この環境の最後のパイプラインが正常に完了し、実行から **30 日未満**&#x200B;である。
 * 環境のステータスが&#x200B;*実行中*&#x200B;で、進行中のパイプラインがない。
 
+復元：選択した環境は、`Development` ージ、ステージまたは専用のテスト環境です。
 いずれかの確認に失敗した場合、Cloud Manager では、次のダイアログボックスが開き、満たされていない条件が 1 つ以上リストされ、**確認**&#x200B;が無効になり、復元が防止されます。
 
 ![デプロイした以前のコードを復元エラーダイアログボックス](/help/operations/assets/restore-previous-code-deployment-not-allowed.png)。
