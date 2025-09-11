@@ -4,7 +4,7 @@ description: EDS フォームのカスタムコンポーネントの作成
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 1d59791561fc6148778adccab902c8e727adc641
+source-git-commit: 6a63b4f839516a2ebc1eec641eb36315efca6dd5
 workflow-type: tm+mt
 source-wordcount: '2120'
 ht-degree: 4%
@@ -175,6 +175,8 @@ subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => { fieldModel.subscribe(()
 #### 1.1 ファイルとフォルダ
 
 最初の手順では、カスタムコンポーネントの必要なファイルを設定し、リポジトリのコードにワイヤリングします。 このプロセスは、**AEM Forms基礎モード CLI** によって自動的に実行されます。これにより、基礎モードを設定して必要なファイルをワイヤリングする作業が迅速になります。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3474752)
 
 1. ターミナルを開き、フォームプロジェクトのルートに移動します。
 2. 次のコマンドを実行します。
@@ -520,13 +522,13 @@ git add . && git commit -m "Add card custom component" && git push
 
 10. **Update _component-definition.json**:`models/_component-definition.json` の手順で、グループ内の配列を `id custom-components` でオブジェクトで更新します。
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    これは、残りのコンポーネントと共に構築する新しいカードコンポーネントへの参照を提供することです
+   これは、残りのコンポーネントと共に構築する新しいカードコンポーネントへの参照を提供することです
 
 11. **ビルド :json スクリプトを実行**:`npm run build:json` を実行して、コンポーネントのすべての JSON 定義をコンパイルし、サーバーから提供される 1 つのファイルに結合します。 これにより、新しいコンポーネントのスキーマが結合された出力に確実に含まれます。
 
