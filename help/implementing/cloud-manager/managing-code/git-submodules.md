@@ -4,10 +4,10 @@ description: Git サブモジュールを使用して、ビルド時に Git リ�
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
-workflow-type: ht
-source-wordcount: '391'
-ht-degree: 100%
+source-git-commit: 8a53bef8bdf592869c895cbaca1e79034e52f856
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 98%
 
 ---
 
@@ -68,7 +68,7 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 Git サブモジュールについて詳しくは、[Git リファレンスマニュアル](https://git-scm.com/book/ja/v2/Git-Tools-Submodules)も参照してください。
 
-## 使用上のメモ {#usage-notes}
+## Adobe リポジトリの使用上のメモ {#usage-notes-recommendations-adobe-repos}
 
 * Git の URL は、前述の節で説明した構文に正確に一致している必要があります。
 * 分岐のルートにあるサブモジュールのみがサポートされます。
@@ -94,4 +94,4 @@ Git サブモジュールについて詳しくは、[Git リファレンスマ�
 
 * サブモジュール Git の URL は、HTTPS 形式または SSH 形式にすることができますが、GitHub.com リポジトリを指す必要があります。Adobe リポジトリサブモジュールを GitHub 集積リポジトリに追加すること、またはその逆はサポートされていません。
 * GitHub サブモジュールには、Adobe GitHub アプリからアクセスできる必要があります。
-* また、[アドビが管理するリポジトリで Git サブモジュールを使用する場合の制限事項](#limitations-recommendations)も適用されます。
+* また、[アドビが管理するリポジトリで Git サブモジュールを使用する場合の制限事項](#usage-notes-recommendations-adobe-repos)も適用されます。
