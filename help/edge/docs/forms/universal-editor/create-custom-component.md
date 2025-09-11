@@ -4,9 +4,9 @@ description: EDS フォームのカスタムコンポーネントの作成
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 6a63b4f839516a2ebc1eec641eb36315efca6dd5
+source-git-commit: 476841e4e7d00679bd6fc75bc1dc346f9e01fdd6
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2121'
 ht-degree: 4%
 
 ---
@@ -443,7 +443,7 @@ export default function decorate(element, fieldJson, container, formId) {
 
 ![ カードカスタムコンポーネント ](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
 
-## 変更のコミットとプッシュ
+### 3.変更のコミットとプッシュ
 
 カスタムコンポーネントのJavaScriptと CSS を実装し、ローカルで検証したら、変更内容をコミットして Git リポジトリにプッシュします。
 
@@ -453,7 +453,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 いくつかの簡単な手順で、複雑なカスタムカード選択コンポーネントを正常に作成しました。
 
-## カスタムコンポーネントを作成するための手動または従来の方法
++++ ## カスタムコンポーネントを作成するための手動または従来の方法
 
 従来の方法では、次に説明する手順を手動で実行します。
 
@@ -522,13 +522,13 @@ git add . && git commit -m "Add card custom component" && git push
 
 10. **Update _component-definition.json**:`models/_component-definition.json` の手順で、グループ内の配列を `id custom-components` でオブジェクトで更新します。
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    これは、残りのコンポーネントと共に構築する新しいカードコンポーネントへの参照を提供することです
+   これは、残りのコンポーネントと共に構築する新しいカードコンポーネントへの参照を提供することです
 
 11. **ビルド :json スクリプトを実行**:`npm run build:json` を実行して、コンポーネントのすべての JSON 定義をコンパイルし、サーバーから提供される 1 つのファイルに結合します。 これにより、新しいコンポーネントのスキーマが結合された出力に確実に含まれます。
 
