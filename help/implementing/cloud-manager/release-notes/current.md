@@ -4,9 +4,9 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 8092f18ec350a68bc192a11afbd0ca440f72e282
+source-git-commit: 67fbd48d8cf4ac58d3bcff1eb314045b4ebd24b3
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1138'
 ht-degree: 88%
 
 ---
@@ -29,7 +29,7 @@ AEM as a Cloud Service の Cloud Manager 2025.9.0 のリリース日は 2025年9
 
 * **Adobeが管理するドメイン検証証明書の手動更新**
 
-  Cloud Managerまたはパブリック API からAdobeが管理するドメイン検証（DV）証明書を手動で更新して、証明書を事前に更新できるようになりました。<!-- CMGR-68738 -->
+  Cloud Managerまたはパブリック API から失敗したAdobe管理ドメイン検証（DV）証明書を手動で更新して、証明書を事前に更新できるようになりました。<!-- CMGR-68738 -->
 
   ![SSL 証明書の更新 ](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
@@ -63,13 +63,13 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 最新の顧客ソースコードが期待どおりに動作しない場合は、以前のデプロイメントに迅速に戻すことができます。パイプライン全体を再実行したり、コミットを手動で元に戻したりする必要はありません。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![環境カードから顧客ソースコードを復元](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上記の環境カードには、選択した環境の&#x200B;**復元**／**以前にデプロイされたコード**&#x200B;オプションが表示されています。*
+![環境カードから顧客ソースコードを復元](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上記の環境カードには、選択した環境の&#x200B;**復元**／**以前にデプロイされたコード**オプションが表示されています。*
 
 ![以前にデプロイしたコードを復元ダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-***以前にデプロイしたコードを復元**&#x200B;ダイアログボックスで、現在デプロイされているバージョンと復元するバージョンを確認し、「**確認***」をクリックします。
+***以前にデプロイしたコードを復元**ダイアログボックスで、現在デプロイされているバージョンと復元するバージョンを確認し、「**確認***」をクリックします。
 
 ![アクティベーションの復元](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager は、環境を以前のビルドにロールバックし、コンテンツと設定をそのままの状態に保ち、デプロイメントが完了するまで環境に&#x200B;**復元中**&#x200B;とマークを付けます。*
+*Cloud Manager は、環境を以前のビルドにロールバックし、コンテンツと設定をそのままの状態に保ち、デプロイメントが完了するまで環境に&#x200B;**復元中**とマークを付けます。*
 
 ![使用中のソースコードバージョン](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *環境の詳細ビューには、前述のように、使用中のアクティブなソースコードバージョンも表示されるようになりました。*
 
