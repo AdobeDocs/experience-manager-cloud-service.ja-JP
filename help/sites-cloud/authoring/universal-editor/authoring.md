@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+source-git-commit: d8a57131492a7e0d23b3ad803ea773f3ad7501cb
 workflow-type: tm+mt
-source-wordcount: '2319'
-ht-degree: 96%
+source-wordcount: '2422'
+ht-degree: 91%
 
 ---
 
@@ -193,6 +193,24 @@ ht-degree: 96%
 >[!TIP]
 >
 >取り消しまたはやり直すには、それぞれホットキー `Command-Z` または `Shift-Command-Z` を使用します。
+
+### コピー&amp;ペースト {#copy-paste}
+
+[containers 内のコンポーネントをコピーして貼り付けることができます。](/help/implementing/universal-editor/field-types.md#container) この操作は同じページ内でのみ可能で、[target コンテナがコンポーネントの貼り付けを許可している場合にのみ可能です。](/help/implementing/universal-editor/filtering.md)
+
+![ コピーアイコン ](assets/copy.png)
+![ 貼り付けアイコン ](assets/paste.png)
+
+1. エディター内またはコンテンツツリー内でコンポーネントを選択します。
+1. **プロパティ** パネルに「[ コピー」アイコンが表示されます。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) タップまたはクリックします。
+1. プロパティパネルに **貼り付け** アイコンが表示されます。
+1. コピーしたコンポーネントを貼り付けるコンポーネント _後_ を選択します。
+1. 「貼り付け」をタップまたはクリックします。
+1. コピーしたコンポーネントが、選択したコンポーネントの _後_ に貼り付けられます。
+
+>[!TIP]
+>
+>ホットキー `Command-C` または `Command-V` を使用して、それぞれコピーまたは貼り付けます。
 
 ## コンテンツのプレビュー {#previewing-content}
 

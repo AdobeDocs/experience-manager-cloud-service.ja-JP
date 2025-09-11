@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
-workflow-type: ht
-source-wordcount: '549'
+source-git-commit: 2099a1aecd30eaa2ca3ca33a13729817a30b6c3f
+workflow-type: tm+mt
+source-wordcount: '524'
 ht-degree: 100%
 
 ---
@@ -67,4 +67,3 @@ MSM とローンチは、継承を使用してコンテンツを再利用する�
 
 * 単一コンポーネントの継承を元に戻すには、**AEM マルチサイト管理（MSM）拡張機能**&#x200B;を有効にする必要があります。
 * 無効になっているコンポーネントの継承や、まだ保持されているコンポーネントの継承を確認する視覚的なフィードバックを提供する場合は、**AEM マルチサイト管理（MSM）拡張機能**&#x200B;を有効にする必要があります。
-* これらの機能は現在、ページ内のコンポーネントに制限されており、MSM およびローンチの機能も備えているにもかかわらず、[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)にはまだ適用されていません。

@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
 workflow-type: tm+mt
-source-wordcount: '1854'
-ht-degree: 91%
+source-wordcount: '1894'
+ht-degree: 89%
 
 ---
 
@@ -338,6 +338,19 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 >[!TIP]
 >
 >ホットキー `Shift+Backspace` を使用して、選択したコンポーネントをコンテナから削除します。
+
+##### コピー&amp;ペースト {#copy-paste}
+
+[containers.](/help/implementing/universal-editor/field-types.md#container) 内のコンポーネントをコピーして貼り付けることができます
+
+![ コピーアイコン ](assets/copy.png)
+![ 貼り付けアイコン ](assets/paste.png)
+
+>[!TIP]
+>
+>ホットキー `Command-C` または `Command-V` を使用して、それぞれコピーまたは貼り付けます。
+
+詳しくは、ドキュメント [ ユニバーサルエディターを使用したコンテンツのオーサリング ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) を参照してください。
 
 #### その他のボタン {#additional-properties-panel-buttons}
 
