@@ -5,7 +5,7 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 519b1ec43f28f27809c727c2519f646c27ab646e
+source-git-commit: 2fa7005eec0a53f632e1b1cb2f5cc5910bbf21f8
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 91%
@@ -36,7 +36,7 @@ ht-degree: 91%
 * プログラムが AEM as a Cloud Service で実行されている。
 * この環境の最後のパイプラインが正常に完了し、実行から **30 日未満**&#x200B;である。
 * 環境のステータスが&#x200B;*実行中*&#x200B;で、進行中のパイプラインがない。
-* **デプロイされた以前のコードを復元** は、`Development` 環境、`Stage` 環境または `Specialized Testng Environment` で実行できます。
+* **デプロイされた以前のコードを復元** は、`Development` 環境、`Stage` 環境または `Specialized Testing Environment` で実行できます。
 
 いずれかの確認に失敗した場合、Cloud Manager では、次のダイアログボックスが開き、満たされていない条件が 1 つ以上リストされ、**確認**&#x200B;が無効になり、復元が防止されます。
 
