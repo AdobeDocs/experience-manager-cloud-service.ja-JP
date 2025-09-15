@@ -3,7 +3,7 @@ title: コンテンツハブの概要
 description: コンテンツハブの詳細、その主なメリット、アクセス方法、コンテンツハブで使用可能なオプションに関するフィードバックの提供方法について説明します。
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
 source-git-commit: 797d1e275bcb8e949171d322871b377582e72a71
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 100%
 
