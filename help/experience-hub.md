@@ -1,19 +1,19 @@
 ---
-title: Experience Hubについて
+title: Experience Hub について
 description: Adobe Experience Hub のページについて説明します。
 landing-page-description: すべての AEM 機能にアクセスする一元的な出発点である Experience Hub について説明します。
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 88d7394756c8a9231a51350d592ed478fa51a45e
+source-git-commit: e92a25a532cc39557842178165c963c6f1fdb681
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
-# Experience Hubについて {#aem-experience-hub}
+# Experience Hub について {#aem-experience-hub}
 
 Experience Hubは、Adobe Experience Manager内のコンテンツ、アセット、サイトを一元的に管理するための出発点となります。 Experience Hubはパーソナライズされたエクスペリエンスを提供するように設計されており、ユーザーの役割と目標に応じてAEM エコシステムをシームレスに移動できます。 ガイドとして機能し、目的を効率的に達成するのに役立つ重要なインサイトと推奨されるアクションを提供します。明確なペルソナ駆動型のレイアウトにより、Experience Hubは重要なツールにすばやくアクセスでき、すべてのAEM機能で合理化された効果的なエクスペリエンスをサポートします。
 
@@ -80,6 +80,6 @@ AEM Cloud Service またはManaged Servicesの実稼動環境が存在しない�
 
 ![Experience Hub実稼動環境がありません ](/help/implementing/cloud-manager/assets/experience-hub-no-prod-environs.png)
 
-## AEMの AI アシスタント
+## AEM の AI アシスタント
 
 [ 前提条件を完了している ](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) お客様は、AEMの AI アシスタントを組織内のユーザーが利用できます。 [AEMの AI アシスタント ](/help/implementing/cloud-manager/ai-assistant-in-aem.md) を参照してください。
