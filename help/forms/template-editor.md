@@ -4,10 +4,10 @@ description: テンプレートエディターを使用して、基本構造と�
 feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
 source-wordcount: '2059'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -164,7 +164,7 @@ Experience Manager には、テンプレートを整理するためのグロー�
 
 >[!NOTE]
 >
-> * また、[!UICONTROL レコードのドキュメント]テンプレートは、アダプティブフォームエディターまたはアダプティブフォームテンプレートエディターから直接設定することもできます。詳しくは、[アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)を参照してください。
+> * [!UICONTROL  レコードのドキュメント ] テンプレートは、アダプティブフォームビルダーまたはアダプティブフォームテンプレートビルダーから直接設定することもできます。 詳しくは、[アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)を参照してください。
 
 
 ## フォームデータモデルスキーマのテンプレートへの関連付け {#associating-form-data-model-schema-in-template}

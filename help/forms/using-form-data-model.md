@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7c30c56ca7a4d8dbdadb2e54a1b7320477556fa5
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -56,7 +56,7 @@ JSON スキーマの拡張機能であるフォームデータモデル（FDM）
 
    ![create-af-3](assets/create-af-3.png)
 
-   フォームデータモデル（FDM）に基づいてアダプティブフォームまたはアダプティブフォームフラグメントを作成すると、アダプティブフォームエディター内コンテンツブラウザーの「**[!UICONTROL データソース]**」タブにフォームデータモデルオブジェクトが表示されます。
+   フォームデータモデル（FDM）に基づいてアダプティブフォームまたはアダプティブフォームフラグメントを作成すると、アダプティブフォームビルダーのコンテンツブラウザーの **[!UICONTROL データソース]** タブにフォームデータモデルオブジェクトが表示されます。
 
    >[!NOTE]
    >

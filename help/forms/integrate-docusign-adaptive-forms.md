@@ -4,10 +4,10 @@ description: アダプティブフォームで DocuSign を使用して電子サ
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
 source-wordcount: '1534'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -177,7 +177,7 @@ AEM Forms as a Cloud Service には DocuSign 用のカスタム送信アクシ�
 
    1. [ [!DNL DocuSign]  を  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) と統合するときに作成した [設定コンテナ](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) を選択します。
 
-   設定コンテナには、お使いの環境用に設定された [!DNL DocuSign] クラウドサービスが含まれています。これらのサービスは、アダプティブフォームエディターで選択できます。
+   設定コンテナには、お使いの環境用に設定された [!DNL DocuSign] クラウドサービスが含まれています。これらのサービスは、アダプティブフォームビルダーで選択できます。
 
 1. 「**[!UICONTROL フォームモデル]**」タブで、次のいずれかのオプションを選択します。
 

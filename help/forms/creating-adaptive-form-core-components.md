@@ -1,18 +1,19 @@
 ---
-title: コアコンポーネントに基づくアダプティブフォームの作成方法
-description: ' [!DNL Experience Manager Forms] を使用したアダプティブフォームの作成方法を説明します。 アダプティブフォームは、情報の収集および処理を合理化するレスポンシブ HTML5 フォームです。 フォームデータモデル（FDM）および XML スキーマまたは JSON スキーマに基づいてアダプティブフォームを作成する方法について詳しく掘り下げます。'
+title: フォームビルダー：コアコンポーネントを使用したフォームの作成
+description: AEM Formsのフォームビルダーを使用して、コアコンポーネントを含むアダプティブフォームを作成する方法を説明します。 情報の収集および処理を合理化するレスポンシブなHTML5 フォームを必要とするフォーム作成者に最適です。
+keywords: フォームビルダー，コアコンポーネント，フォームを作成，フォーム作成者，アダプティブフォーム，作成フォーム，AEM forms, レスポンシブフォーム
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
-workflow-type: ht
-source-wordcount: '2340'
-ht-degree: 100%
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
+source-wordcount: '2348'
+ht-degree: 92%
 
 ---
 
-# アダプティブフォームの作成（コアコンポーネント） {#creating-an-adaptive-form-core-components}
+# フォームビルダー：コアコンポーネントを使用したフォームの作成 {#creating-an-adaptive-form-core-components}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -20,7 +21,7 @@ ht-degree: 100%
 | AEM as a Cloud Service | この記事 |
 
 
-アダプティブフォームを使用すると、魅力的でレスポンシブ、かつ動的でアダプティブなフォームを作成できます。 AEM Forms は、アダプティブフォームを素早く作成するための、ビジネスユーザーにとってわかりやすいウィザードを提供します。 このウィザードはクイックタブナビゲーションを備えており、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択することができます。
+AEM Formsのフォームビルダーを使用すると、魅力的でレスポンシブ、かつ動的でアダプティブなフォームを作成できます。 プロフェッショナルなフォームを作成するフォーム作成者であっても、レスポンシブフォームをすばやく作成する必要があるフォーム作成者であっても、AEM Formsは使いやすいウィザードを提供します。 このウィザードはクイックタブナビゲーションを備えており、事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択できます。
 
 開始する前に、使用可能な Forms コンポーネントのタイプについて学習します。
 
@@ -56,10 +57,10 @@ ht-degree: 100%
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ja) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
-## アダプティブフォームを作成します  {#create-an-adaptive-form-core-components}
+## アダプティブフォームの作成  {#create-an-adaptive-form-core-components}
 
 1. [!DNL Experience Manager Forms] オーサーインスタンスにログインします。 Cloud インスタンスまたはローカル開発インスタンスの場合があります。
 
@@ -176,7 +177,7 @@ ht-degree: 100%
 * [カスタム事前入力サービスを作成](/help/forms/prepopulate-adaptive-form-fields.md)
 * [フォームデータモデルの事前入力サービスを使用](#fdm-prefill-service)
 
-### フォームデータモデルの事前入力サービスを使用して、アダプティブフォームのフィールドに事前入力 {#fdm-prefill-service}
+### フォームデータモデル事前入力サービスを使用した、アダプティブフォームのフィールドの事前入力 {#fdm-prefill-service}
 
 フォームデータモデルの事前入力サービスでは、フォームデータモデル事前入力サービス、またはカスタムの事前入力サービスを使用して、アダプティブフォームのフィールドに事前入力できます。 フォームデータモデルの事前入力サービスでは、[設定済みのフォームデータモデルのサービスを取得](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services)を使用して、データを取得します。 アダプティブフォームでフォームデータモデルの事前入力サービスを使用するには、次の手順を実行します。
 

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 keywords: コアコンポーネントに基づくアダプティブフォームのレイアウト、フォームの各種レイアウト、動的フォームレイアウトのAEM、AEM Cloud Service のフォームレイアウト、AEM コアコンポーネントのフォームレイアウトタイプ、アダプティブフォームのレイアウト
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '2106'
 ht-degree: 22%
@@ -27,11 +27,12 @@ ht-degree: 22%
 
 ## 前提条件
 
-レイアウトの様々な機能を調べる前に、お使いの環境でコアコンポーネントが有効になっていることを確認します。 お使いの AEM Cloud Service 環境でアダプティブForms コアコンポーネントを有効にするには、最新のツールをインストールします。
+レイアウトの様々な機能を調べる前に、お使いの環境でコアコンポーネントが有効になっていることを確認します。 お使いの AEM Cloud Service 環境でアダプティブフォームコアコンポーネントを有効にするには、最新版をインストールします。
 
 ## アダプティブ Formsのレイアウトタイプ
 
 コアコンポーネントに基づくアダプティブフォームは、次のタイプのレイアウトをサポートしています。
+
 * **パネルレイアウト**
 * **ウィザードのレイアウト**
 * **垂直方向のレイアウト**
@@ -80,7 +81,7 @@ ht-degree: 22%
 
 水平タブレイアウト
 
-[ 水平タブコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) を使用して、フォームに水平タブレイアウトを追加できます。 水平タブコンポーネントの様々なプロパティを設定する方法について詳しくは、[ 水平タブコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) の記事を参照してください。
+[ 水平タブコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) を使用して、フォームに水平タブレイアウトを追加できます。 水平タブコンポーネントの様々なプロパティを設定する方法について詳しくは、[ 水平タブコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) の記事を参照してください。
 
 
 >[!TAB アコーディオンレイアウト]
@@ -116,7 +117,7 @@ ht-degree: 22%
 
 ![ レイアウトおよびフォームコンポーネントを追加するためのワークフロー ](/help/forms/assets/workflow-to-add-component-to-a-layout.png)
 
-「アダプティブFormsのレイアウトタイプ **&#x200B;**&#x200B;の節に示されている [IT リクエストフォーム ](#adaptive-forms-layout-types) について考えてみます。 このフォームは、ネットワークまたはラップトップに関連する技術的な問題を抱えている従業員から情報を収集します。 次の 3 つのパネルがあります。
+「アダプティブFormsのレイアウトタイプ **** の節に示されている [IT リクエストフォーム ](#adaptive-forms-layout-types) について考えてみます。 このフォームは、ネットワークまたはラップトップに関連する技術的な問題を抱えている従業員から情報を収集します。 次の 3 つのパネルがあります。
 
 * **従業員の詳細**：パネルには、従業員に関する情報が収集され、名前、メール ID、部門というラベルの付いた 3 つのテキストボックスが含まれています。
 
@@ -136,9 +137,9 @@ ht-degree: 22%
 
    または、[ 新しいアダプティブフォームを作成する ](/help/forms/creating-adaptive-form-core-components.md) こともできます。
 
-1. フォームエディターでレイアウトを追加できるセクションを見つけます。
+1. レイアウトを追加できるフォームビルダー内のセクションを見つけます。
 
-   ![ フォームエディター ](/help/forms/assets/form-editor.png)
+   ![ フォームビルダー ](/help/forms/assets/form-editor.png)
 1. **追加**&#x200B;アイコンをクリックします。アイコンはプラス記号（+）で、新しいコンポーネントを追加するオプションを示します。
 
    ![ レイアウトの挿入 ](/help/forms/assets/insert-layout-add-icon.png)
@@ -223,7 +224,7 @@ ht-degree: 22%
 * [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel) -->
 
 1. パネル内で、コンポーネントを追加できるセクションを見つけます。
-1. **追加**&#x200B;アイコンをクリックします。アイコンはプラス記号（+）で、新しいコンポーネントを追加するオプションを示します。
+1. **追加**アイコンをクリックします。アイコンはプラス記号（+）で、新しいコンポーネントを追加するオプションを示します。
    ![ レイアウトの挿入 ](/help/forms/assets/tabs-on-top-add-component.png)
 
    **追加**&#x200B;アイコンをクリックすると、**新規コンポーネントを挿入**&#x200B;ダイアログボックスが表示され、挿入する様々なコンポーネントが表示されます。
@@ -342,7 +343,7 @@ ht-degree: 22%
 
 ## 追加バイト
 
-コンポーネントをフォームエディターにドラッグ&amp;ドロップするには、次の手順を実行します。
+コンポーネントをフォームビルダーにドラッグ&amp;ドロップするには、次の手順を実行します。
 
 1. コンポーネントを追加できるセクションを見つけます。
 1. オーサリング環境内の左側のパネルに移動し、「**コンポーネント**」をクリックします。

@@ -4,10 +4,10 @@ description: ここでは、アダプティブフォーム向けのレコード�
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
 source-wordcount: '4221'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -404,9 +404,9 @@ When you select a form model, configure Document of Record using options availab
 
 ## アダプティブフォームエディターでのレコードのドキュメントのサポート {#dor-support-in-adaptiveform}
 
-[!UICONTROL レコードのドキュメント]テンプレートは、アダプティブフォームエディターまたはアダプティブフォームテンプレートエディターから直接設定することができます。
+[!UICONTROL  レコードのドキュメント ] テンプレートは、アダプティブフォームビルダーまたはアダプティブフォームテンプレートビルダーから直接設定できます。
 
-アダプティブフォームエディターのオーサーインスタンスから、以下の手順を実行します。
+アダプティブフォームビルダーのオーサーインスタンスから、次の手順を実行します。
 
 1. **[!UICONTROL アダプティブフォームコンテナ（ルート）]**&#x200B;コンポーネントを選択します。
 1. 「![アイコンを設定](/help/forms/assets/configure-icon.svg)」アイコンをクリックして、アダプティブフォームコンテナの&#x200B;**[!UICONTROL プロパティ]**&#x200B;開きます。

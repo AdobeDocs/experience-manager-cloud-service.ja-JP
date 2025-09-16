@@ -6,10 +6,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
 source-wordcount: '3243'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 100%
 
    1. [ [!DNL Adobe Sign]  を  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) と統合するときに作成した [設定コンテナ](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) を選択します。
 
-   設定コンテナには、お使いの環境用に設定された [!DNL Adobe Sign] クラウドサービスが含まれています。これらのサービスは、アダプティブフォームエディターで選択できます。
+   設定コンテナには、お使いの環境用に設定された [!DNL Adobe Sign] クラウドサービスが含まれています。これらのサービスは、アダプティブフォームビルダーで選択できます。
 
 1. 「**[!UICONTROL フォームモデル]**」タブで、次のいずれかのオプションを選択します。
 
@@ -124,8 +124,8 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >  * アダプティブフォームで [!DNL Adobe Sign] を使用する場合、[!DNL Adobe Sign] ブロックの使用は必須ではありません。[!DNL Adobe Sign] ブロックを使用せずに受信者用のフィールドを追加すると、署名ドキュメントの下部にデフォルトの署名フィールドが表示されます。
-   >  * レコードのドキュメントが自動的に生成されるアダプティブフォームの場合のみ、[!DNL Adobe Sign] ブロックを使用してください。カスタムの XDP を使用して、レコードのドキュメントやフォームテンプレートベースのアダプティブフォームを生成する場合は、[!DNL Adobe Sign] ブロックはサポートされていません。
+   > * アダプティブフォームで [!DNL Adobe Sign] を使用する場合、[!DNL Adobe Sign] ブロックの使用は必須ではありません。[!DNL Adobe Sign] ブロックを使用せずに受信者用のフィールドを追加すると、署名ドキュメントの下部にデフォルトの署名フィールドが表示されます。
+   > * レコードのドキュメントが自動的に生成されるアダプティブフォームの場合のみ、[!DNL Adobe Sign] ブロックを使用してください。カスタムの XDP を使用して、レコードのドキュメントやフォームテンプレートベースのアダプティブフォームを生成する場合は、[!DNL Adobe Sign] ブロックはサポートされていません。
 
 
 1. **[!UICONTROL Adobe Sign ブロック]**&#x200B;コンポーネントを選択し、「**[!UICONTROL 編集]**」![編集](assets/Smock_Edit_18_N.svg) アイコンをクリックします。フィールドを追加するためのオプションと、フィールドの外観を設定するためのオプションが表示されます。
@@ -217,7 +217,7 @@ Cloud Service と署名する順序を選択するには：
 
    >[!NOTE]
    >
-   >    * ソーシャル ID に基づく認証の場合、Facebook、Google、LinkedIn を使用した認証オプションがデフォルトで用意されています。これ以外のソーシャル認証プロバイダーを使用する場合は、[!DNL Adobe Sign] サポートまでお問い合わせください。
+   > * ソーシャル ID に基づく認証の場合、Facebook、Google、LinkedIn を使用した認証オプションがデフォルトで用意されています。これ以外のソーシャル認証プロバイダーを使用する場合は、[!DNL Adobe Sign] サポートまでお問い合わせください。
    >
 
    * **[!DNL Adobe Sign]のフィールドに入力または署名：**&#x200B;受信者用の [!DNL Adobe Sign] フィールドを選択します。1 つのアダプティブフォームで複数の [!DNL Adobe Sign] フィールドを使用できます。受信者用に特定のフィールドを有効にできます。これらのフィールドには、使用可能なすべての [!DNL Adobe Sign] ブロックが表示されます。いずれかのブロックを選択すると、そのブロックのすべてのフィールドが選択されます。フィールドの選択を解除するには、「X」アイコンを使用します。

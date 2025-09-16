@@ -1,18 +1,18 @@
 ---
-title: コアコンポーネントに基づくアダプティブフォームテンプレートの作成方法？
-description: テンプレートエディターを使用して、コアコンポーネントに基づいたアダプティブフォームテンプレートを作成して、基本構造と初期コンテンツを定義します。
+title: コアコンポーネントを使用してアダプティブフォームテンプレートを作成する方法
+description: コアコンポーネントに基づいてアダプティブフォームテンプレートを作成し、テンプレートエディターを使用して基本構造と初期コンテンツを定義します。
 feature: Adaptive Forms, Core Components
-Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
+Keywords: form builder, build adaptive form template, adaptive form template core components, form template builder, build form template.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
-source-git-commit: e9c595d0afae5c29adf2842bfb2ee28a046b804c
-workflow-type: ht
-source-wordcount: '1951'
-ht-degree: 100%
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
+source-wordcount: '1949'
+ht-degree: 97%
 
 ---
 
-# コアコンポーネントに基づくアダプティブフォームテンプレートの作成 {#adaptive-form-templates}
+# コアコンポーネントを使用したアダプティブフォームテンプレートの作成 {#adaptive-form-templates}
 
 フォームを作成する場合、フィールドとコンポーネントを追加して、フォーム構造、コンテンツ、アクションをエディターで定義します。フィールドとコンポーネントは、フォームコンテナの `guideRootPanel` に追加します。テンプレートエディターを使用すると、フォームの作成時に使用できる基本構造と初期コンテンツを含んだテンプレートを作成できます。
 
@@ -156,7 +156,7 @@ Header and footer are added in the Initial Content layer.
 
 >[!NOTE]
 >
-> * また、[!UICONTROL レコードのドキュメント]テンプレートは、アダプティブフォームエディターまたはアダプティブフォームテンプレートエディターから直接設定することもできます。詳しくは、[アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)を参照してください。
+> * [!UICONTROL  レコードのドキュメント ] テンプレートは、アダプティブフォームビルダーまたはアダプティブフォームテンプレートビルダーから直接設定することもできます。 詳しくは、[アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)を参照してください。
 
 ## フォームデータモデルスキーマのテンプレートへの関連付け {#associating-form-data-model-schema-in-template}
 
@@ -295,6 +295,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 ## 関連トピック {#see-also}
 
 {{see-also}}
+
 * [フォームのスタイルまたはテーマの作成](using-themes-in-core-components.md)
 * [アダプティブフォーム（コアコンポーネント）の作成](/help/forms/creating-adaptive-form-core-components.md)
 

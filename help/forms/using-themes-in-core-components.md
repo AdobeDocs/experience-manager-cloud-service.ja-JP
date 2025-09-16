@@ -1,14 +1,14 @@
 ---
-title: アダプティブフォームでテーマを作成して使用するにはどうすればよいですか？
+title: アダプティブFormsのテーマの作成方法と使用方法？
 description: テーマとコアコンポーネントを使用して、アダプティブフォームのスタイルを設定し、視覚的に表現できます。任意の数のアダプティブフォームで、テーマを共有できます。
-keywords: アダプティブフォームのスタイル設定コアコンポーネント。コアコンポーネントでのテーマの使用、アダプティブフォームのスタイル設定、テーマのカスタマイズ
+keywords: フォームビルダーテーマ、アダプティブフォームのスタイル設定コアコンポーネント、フォームテーマビルダー、アダプティブフォームのスタイル設定、テーマのカスタマイズ、フォームテーマの作成
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
-workflow-type: ht
-source-wordcount: '2803'
-ht-degree: 100%
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
+source-wordcount: '2806'
+ht-degree: 99%
 
 ---
 
@@ -63,8 +63,8 @@ Forms as Cloud Service が提供する、コアコンポーネントベースの
 
 ### 前提条件 {#prerequisites-to-customize}
 
-* [Cloud Manager でのパイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)に慣れてください。また、パイプラインの設定方法に関する基本的な知識を持つことで、テーマのカスタマイズを効率的に管理およびデプロイできます。
-* [投稿者の役割を持つユーザーを設定する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=ja)方法を説明します。投稿者の役割を持つユーザーを設定する方法を理解すると、テーマのカスタマイズに必要な権限を付与できます。
+* [Cloud Manager でのパイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)に慣れてください。また、パイプラインの設定方法に関する基本的な知識を持つことで、テーマのカスタマイズを効率的に管理およびデプロイできます。
+* [投稿者の役割を持つユーザーを設定する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html)方法を説明します。投稿者の役割を持つユーザーを設定する方法を理解すると、テーマのカスタマイズに必要な権限を付与できます。
 * [Apache Maven](https://maven.apache.org/download.cgi) の最新リリースのインストール。Apache Maven は、主に Java™ プロジェクトで使用されるビルド自動化ツールです。最新のリリースをインストールすると、テーマのカスタマイズに必要な依存関係が確保されます。
 * プレーンテキストエディターをインストールします。例えば Microsoft® Visual Studio Code などです。Microsoft® Visual Studio Code などのプレーンテキストエディターを使用すると、テーマファイルの編集と変更を行う際に使いやすい環境を利用できます。
 
@@ -414,7 +414,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 1. 「**スタイル**」タブでテーマを選択します。
 1. 「**作成**」をクリックします。
 
-アダプティブフォームのテーマは、アダプティブフォームの作成時にスタイルを定義する、アダプティブフォームのテンプレートの一部として使用されます。
+アダプティブフォームのテーマは、アダプティブフォームの作成時にスタイルを定義する、アダプティブフォームテンプレートの一部として使用されます。
 
 ## ベストプラクティス {#best-practices}
 
@@ -441,7 +441,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ja)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 -->
 
@@ -449,6 +449,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 ## 関連トピック {#see-also}
 
 {{see-also}}
+
 * [画面サイズやデバイスタイプに応じてフォームのレイアウトを設定する](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [アダプティブフォーム（コアコンポーネント）におけるレコードのドキュメントを生成する](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [繰り返し可能なセクションを使用してアダプティブフォームを作成する](/help/forms/create-forms-repeatable-sections.md)

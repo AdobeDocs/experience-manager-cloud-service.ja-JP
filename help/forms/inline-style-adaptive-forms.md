@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html?lang=ja) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html) |
 | AEM as a Cloud Service | この記事 |
 
 アダプティブフォームの全体的な外観とスタイルは、[テーマエディター](themes.md)でスタイルを指定して定義できます。また、アダプティブフォームの個々のコンポーネントにインライン CSS スタイルを適用し、即座に変更をプレビューすることもできます。インラインスタイルは、テーマで設定されたスタイルよりも優先されます。
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 コンポーネントにインラインスタイルを追加するには、次の手順を実行します。
 
-1. フォームエディターからフォームを開き、モードをスタイルモードに変更します。モードをスタイルモードに変更するには、ページツールバーで ![canvas-drop-down](assets/Smock_ChevronDown.svg)／**[!UICONTROL スタイル]**&#x200B;を選択します。
+1. フォームビルダーでフォームを開き、モードをスタイルモードに変更します。 モードをスタイルモードに変更するには、ページツールバーで ![canvas-drop-down](assets/Smock_ChevronDown.svg)／**[!UICONTROL スタイル]**&#x200B;を選択します。
 1. ページ内のコンポーネントを選択し、編集ボタン ![edit-button](assets/edit.svg) を選択します。サイドバーにスタイルのプロパティが開きます。
 
    サイドバーのフォーム階層ツリーからコンポーネントを選択することもできます。フォーム階層ツリーは、サイドバーでフォームオブジェクトとして使用できます。
