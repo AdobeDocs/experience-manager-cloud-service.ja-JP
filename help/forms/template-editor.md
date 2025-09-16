@@ -164,7 +164,7 @@ Experience Manager には、テンプレートを整理するためのグロー�
 
 >[!NOTE]
 >
-> * [!UICONTROL  レコードのドキュメント ] テンプレートは、アダプティブフォームビルダーまたはアダプティブフォームテンプレートビルダーから直接設定することもできます。 詳しくは、[アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)を参照してください。
+> * [!UICONTROL &#x200B; レコードのドキュメント &#x200B;] テンプレートは、アダプティブフォームビルダーまたはアダプティブフォームテンプレートビルダーから直接設定することもできます。 詳しくは、[アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)を参照してください。
 
 
 ## フォームデータモデルスキーマのテンプレートへの関連付け {#associating-form-data-model-schema-in-template}

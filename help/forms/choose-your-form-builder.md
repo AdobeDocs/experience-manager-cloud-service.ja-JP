@@ -181,7 +181,7 @@ AEM Formsには、3 つの主なフォーム作成アプローチが用意され
 ### ユニバーサルエディター（Edge Delivery Services）
 
 1. **WYSIWYG オーサリング：** [ ユニバーサルエディターの概要 ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-2. **ドキュメントベースのオーサリング：**[ スプレッドシートを使用して最初のフォームを作成 ](/help/edge/docs/forms/tutorial.md)
+2. **ドキュメントベースのオーサリング：**&#x200B;[ スプレッドシートを使用して最初のフォームを作成 ](/help/edge/docs/forms/tutorial.md)
 
 
 ## 決定の助けが必要ですか？

@@ -404,7 +404,7 @@ When you select a form model, configure Document of Record using options availab
 
 ## アダプティブフォームエディターでのレコードのドキュメントのサポート {#dor-support-in-adaptiveform}
 
-[!UICONTROL  レコードのドキュメント ] テンプレートは、アダプティブフォームビルダーまたはアダプティブフォームテンプレートビルダーから直接設定できます。
+[!UICONTROL &#x200B; レコードのドキュメント &#x200B;] テンプレートは、アダプティブフォームビルダーまたはアダプティブフォームテンプレートビルダーから直接設定できます。
 
 アダプティブフォームビルダーのオーサーインスタンスから、次の手順を実行します。
 
