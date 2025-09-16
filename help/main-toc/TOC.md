@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3a8670061ce0e45f9ae70ab8d8f5df0604ed503a
+source-git-commit: 1d75ad2487271f1839ed3a4f2b41597c3d183612
 workflow-type: tm+mt
 source-wordcount: '6618'
 ht-degree: 97%
@@ -525,7 +525,7 @@ ht-degree: 97%
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
-      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=ja)
+      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service の運用テレメトリ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概要と新機能](/help/assets/overview.md)
@@ -1007,7 +1007,7 @@ ht-degree: 97%
    + AI アシスタント {#ai-assistant}
       + [AEM の AI アシスタントの設定](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
       + [AEM の AI アシスタントについて](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
-   + 生成 AI {#generative-ai}
+   + バリエーションを生成 {#generate-variations}
       + [バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)
       + [バリエーションを生成](/help/generative-ai/generate-variations.md)
    + Forms Experience Builder {#forms-experience-builder}
