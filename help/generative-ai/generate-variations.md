@@ -2,11 +2,11 @@
 title: バリエーションを生成
 description: AEM as a Cloud Service および Edge Delivery Services の Sidekick からアクセス可能な「バリエーションを生成」について説明します
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-feature: Generate Variations
+feature: Generate Variations, AI Tools
 role: Admin, Architect, Developer
-source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
-workflow-type: ht
-source-wordcount: '3294'
+source-git-commit: b99cc846a1efbbcd12244f68c770aa25ac4e985d
+workflow-type: tm+mt
+source-wordcount: '3295'
 ht-degree: 100%
 
 ---
@@ -215,7 +215,7 @@ Adobe 生成 AI の温度を変更するのに使用します。
 * 生成された結果をさらに絞り込む必要がある場合
 * 今後の使用のために[プロンプトを変更して保存](#save-prompt)する必要がある場合
 
-「**プロパティを編集**」を選択します。
+「**プロンプトを編集**」を選択します。
 
 ![バリエーションを生成 - プロンプトを編集](assets/generate-variations-prompt-edit.png)
 
@@ -324,7 +324,7 @@ UI 内と、ドキュメントベースのオーサリングフローにコピ�
 >
 >**プロンプトテンプレート**&#x200B;からは、自分自身または IMS 組織内で作成したプロンプトを削除できます（楕円形でアクセスするメニューを使用）。
 
-## 対象読者 {#audiences}
+## オーディエンス {#audiences}
 
 パーソナライズされたコンテンツを生成するには、生成 AI がオーディエンスを理解する必要があります。アドビでは、多数のデフォルトのオーディエンスを提供しています。または、独自のオーディエンスを追加できます。
 
@@ -490,7 +490,7 @@ Adobe Target でオーディエンスを作成する方法について詳しく�
 
 * [GitHub での生成 AI による「バリエーションを生成」](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services の実験](https://www.aem.live/docs/experimentation)
-* [AEM as a Cloud Service での生成](/help/generative-ai/generative-ai-in-aem.md)
+* [AEM as a Cloud Service の生成 AI](/help/ai-in-aem/overview.md#generative-ai-in-aem)
 
 ## FAQ {#faqs}
 

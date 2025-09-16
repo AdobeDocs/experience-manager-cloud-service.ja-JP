@@ -2,10 +2,10 @@
 title: 「バリエーションを生成」のリリースノート
 description: AEM as a Cloud Service および Edge Delivery Services の Sidekick からアクセスできる「バリエーションを生成」のリリースノート
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
-feature: Release Information
+feature: Release Information, AI Tools
 role: Admin
-source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
-workflow-type: ht
+source-git-commit: 33eab4e431284f3bb772f9e70a1fdb9e56c4c4aa
+workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 100%
 

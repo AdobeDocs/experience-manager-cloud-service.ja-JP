@@ -1,12 +1,12 @@
 ---
 title: バリエーションを生成
 description: AEM as a Cloud Service 内の様々なエディターからアクセス可能な「バリエーションを生成」について説明します
-feature: Generate Variations
+feature: Generate Variations, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: b99cc846a1efbbcd12244f68c770aa25ac4e985d
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1418'
 ht-degree: 100%
 
 ---
@@ -334,7 +334,7 @@ AEM Sidekick からのアクセスは、[ドキュメントベースのオーサ
 
 * [Experience Cloud でランディングページのバリエーションを生成](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html?lang=ja)
 
-* [AEM as a Cloud Service での生成](/help/generative-ai/generative-ai-in-aem.md)
+* [AEM as a Cloud Service の生成 AI](/help/ai-in-aem/overview.md#generative-ai-in-aem)
 
 ## リリース履歴 {#release-history}
 
