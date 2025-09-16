@@ -6,7 +6,7 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 6134772ea9916fc17fb7fc8a30e18799a81d4994
+source-git-commit: 6bbec984e1e22764c762d95ff52ae1f474c6b413
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 41%
@@ -23,8 +23,6 @@ ht-degree: 41%
 AEM Forms Experience Builder は、ジェネレーティブ AI の機能を活用して、デジタルフォームエクスペリエンスの作成と更新を民主化および迅速化します。 自然言語とのやり取りを通じてインテントベースのワークフローを実現することで、ユーザーはフォームを迅速かつシンプルにシームレスに設計、変更、最適化できるようになります。
 
 最新の web テクノロジーに基づき、高度な AI サービスを活用した Forms Experience Builder を使用すると、技術ユーザーとそれ以外のユーザーの両方が、対話型インターフェイスを通じて洗練されたプロフェッショナル向けのフォームを作成できます。この革新的なアプローチにより、価値創出までの時間を数日から数時間に短縮し、インターフェイスのシンプルさを通じて技術的な障壁を排除し、フォームエコシステム全体で最新化の取り組みを拡大します。
-
-
 
 ## コア機能
 
@@ -54,7 +52,6 @@ Forms Experience Builder には、強力なデジタルフォームを作成す�
 - **ワークフロー自動化**：Power Automate および Workfront Fusion に接続します
 - **マーケティングプラットフォーム**：リード管理のために Marketo と直接統合します
 - **AEM ワークフロー**：既存の AEM ワークフロー機能を活用します
-
 
 ### 2.インテリジェントなインポートと変換
 
