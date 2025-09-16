@@ -170,7 +170,7 @@ Forms Experience Builder 用に最適化された再利用可能なプロンプ�
      
      
      
- – 機器のニーズ****検証ルール：**電話の番号形式検証は – Age must be 18or older の書類 – All required documents must be uploaded 必須 documents- Terms and conditions must be newer employee への電子メールの送信 – Employee record システム – スケジュールの向きの会議
+ – 機器のニーズ&#x200B;**&#x200B;**&#x200B;検証ルール：**電話の番号形式検証は – Age must be 18or older の書類 – All required documents must be uploaded 必須 documents- Terms and conditions must be newer employee への電子メールの送信 – Employee record システム – スケジュールの向きの会議
 **フォーム管理プロンプト：**
 
      このPDF アプリケーション フォームをインポートして、検証機能を強化したアダプティブ フォームに変換します 
@@ -179,6 +179,7 @@ Forms Experience Builder 用に最適化された再利用可能なプロンプ�
     
      登録フォームを、個人情報、環境設定、確認の 3 ステップ ウィザードに再編成し 
  す。
+
 ## フィールドの管理と設定
 
 **用途：**&#x200B;フォームフィールドを追加、変更、設定する必要がある場合。
@@ -193,7 +194,7 @@ Forms Experience Builder 用に最適化された再利用可能なプロンプ�
 
      次を含む包括的な住所セクションを追加します。
     
-    ****番地：**
+    **&#x200B;**&#x200B;番地：**
      – 住所 1 行目（必須、最大 100 文字） 
      – 住所 2 行目（オプション、最大 100 文字） 
      – 市区町村（必須、共通の市区町村を含むドロップダウン） 
@@ -358,9 +359,9 @@ Forms Experience Builder 用に最適化された再利用可能なプロンプ�
 
 以前の回答に基づいて追加の質問が表示される      既婚**または「国内パートナーシップ」 
     
-     追加**プログレッシブディスクロージャー**と等しい場合にのみ@spouseInformation@maritalStatus のパネルを表示する**表示ルールを作成します。 基本情報から開始して、関連するフォローアップを表示します 
+     追加&#x200B;**プログレッシブディスクロージャー**&#x200B;と等しい場合にのみ@spouseInformation@maritalStatus のパネルを表示する**表示ルールを作成します。 基本情報から開始して、関連するフォローアップを表示します 
     
-    **スマートデフォルト**を実装し、選択@country 関連フィールドを自動設定します。 手動による上書きを許可する 
+    **スマートデフォルト**&#x200B;を実装し、選択@country 関連フィールドを自動設定します。 手動による上書きを許可する 
 
 ## データ統合と送信
 
@@ -410,14 +411,14 @@ Forms Experience Builder 用に最適化された再利用可能なプロンプ�
     - アプリケーション参照番号を含む確認ページへのリダイレクト 
      – 次の手順メールを表示する 
      
--
+&#x200B;-
 **統合固有のプロンプト：**
 
-     このフォームを**CRM システム**に接続して、新しいリードを作成します。 フォームの送信時に、@firstName を FirstName に、@email を Email に、LeadSource を「Web Form」に、Status を「New」 
+     このフォームを&#x200B;**CRM システム**&#x200B;に接続して、新しいリードを作成します。 フォームの送信時に、@firstName を FirstName に、@email を Email に、LeadSource を「Web Form」に、Status を「New」 
     
-     設定**ワークフロートリガー**にマッピングします。 Manager notification
+     設定&#x200B;**ワークフロートリガー**&#x200B;にマッピングします。 Manager notification
     
-    Configure **database integration**を使用して、すべてのフォームデータおよびトリガー承認ワークフローを渡し、フォーム送信をレコードとして保存します。 アップロードされたドキュメントを含む各送信用の新しいフォルダーを作成する 
+    Configure **database integration**&#x200B;を使用して、すべてのフォームデータおよびトリガー承認ワークフローを渡し、フォーム送信をレコードとして保存します。 アップロードされたドキュメントを含む各送信用の新しいフォルダーを作成する 
 
 <!-- ## Import & Convert Existing Forms
 
