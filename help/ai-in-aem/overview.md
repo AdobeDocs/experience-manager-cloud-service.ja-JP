@@ -3,7 +3,7 @@ title: AEM as a Cloud Serviceの AI
 description: Adobe Experience Manager as a Cloud Serviceの AI について学ぶ
 feature: Generative AI, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
-source-git-commit: 728163aca6ca8829829dd64cdc563d9c3b812c9d
+source-git-commit: a60268de748e795f223465f68ff9cfbaa5f64559
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 81%
@@ -39,6 +39,7 @@ AEM 全体における生成 AI の使用用途は、以下のとおりです。
      >[!NOTE]
      >
      >以前のバージョンは今後廃止されるため、[バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)にアクセスすることをお勧めします。
+
    * [バリエーションを生成のリリースノート](/help/generative-ai/release-notes-generate-variations.md)
 
 * [コンテンツハブの概要](/help/assets/product-overview.md)
