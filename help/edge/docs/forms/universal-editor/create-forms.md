@@ -1,24 +1,24 @@
 ---
 title: Edge Delivery Services を使用したアダプティブフォームの作成と公開
-description: 技術的な正確性と明確さを重視し、AEMのEdge Delivery Services テンプレートを使用してアダプティブ Formsを作成、オーサリングおよび公開する手順を説明します。
-keywords: アダプティブフォーム，エッジ配信サービス，ユニバーサルエディター，フォーム作成，AEM forms, フォーム公開
+description: 技術的な正確さと明確さに焦点を当てて、AEM の Edge Delivery Services テンプレートを使用してアダプティブフォームを作成、オーサリング、公開する手順について説明します。
+keywords: アダプティブフォーム、Edge Delivery Services、ユニバーサルエディター、フォームの作成、AEM Forms、フォームの公開
 feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1005'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
 # Edge Delivery Services を使用したアダプティブフォームの作成と公開
 
-このドキュメントでは、AEMのEdge Delivery Services テンプレートを使用して、アダプティブFormsを作成、設定および公開する手順を順を追って説明します。 フォームの作成から実稼動デプロイメントまでの完全なワークフローについて説明します。
+このドキュメントでは、AEMのEdge Delivery Services テンプレートを使用して、アダプティブフォームを作成、設定および公開する手順を順を追って説明します。フォームの作成から本番環境へのデプロイまでのワークフロー全体について説明します。
 
-このガイドを最後まで読むと、以下の操作方法について学ぶことができます。
+このガイドでは、次の操作方法について説明します。
 
 - Edge Delivery Services テンプレートを使用したフォームの作成
 - ユニバーサルエディターを使用したフォームの作成
@@ -50,9 +50,9 @@ ht-degree: 88%
 
 このプロセスは、次の 3 つの主なフェーズで構成されます。
 
-- **フェーズ 1:**&#x200B;[ フォームの作成 ](#step-1-form-creation)
-- **フェーズ 2：**&#x200B;[フォームのオーサリングとデザイン](#step-2-form-authoring-and-design)
-- **フェーズ 3：**&#x200B;[設定と公開](#step-3-configuration-and-publishing)
+- **フェーズ 1：**[ フォームの作成](#step-1-form-creation)
+- **フェーズ 2：**[フォームのオーサリングとデザイン](#step-2-form-authoring-and-design)
+- **フェーズ 3：**[設定と公開](#step-3-configuration-and-publishing)
 
 各フェーズには、正しい設定を確認するための検証手順が含まれます。
 
@@ -114,7 +114,7 @@ ht-degree: 88%
 1. **フォームをデザイン**
    - プロパティパネルでフィールドのプロパティを設定します。
    - 検証ルールと動作を設定します。
-   - 必要に応じて、スタイル設定とレイアウトを調整します。
+   - 必要に応じてスタイルとレイアウトを調整します。
 
    ![完了した登録フォーム](/help/edge/assets/contact-us.png)
 
@@ -132,7 +132,7 @@ ht-degree: 88%
 
 ### 手順 3：設定と公開
 
-Edge Delivery Servicesを設定してフォームを公開します。
+Edge Delivery Services を設定してフォームを公開します。
 
 **設定：**&#x200B;自動（手動設定は不要）。
 
@@ -291,7 +291,7 @@ Edge Delivery Services を使用した AEM Forms の一般的な問題と解決�
 
 1. Adobe Experience Cloud サービスのステータスを確認してください。
 2. [Edge Delivery Services ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=ja)を確認してください。
-3. [Adobe Experience League コミュニティ](https://experienceleaguecommunities.adobe.com/?profile.language=ja)にアクセスしてください。
+3. [Adobe Experience League コミュニティ](https://experienceleaguecommunities.adobe.com/)にアクセスしてください。
 4. アドビカスタマーケアにお問い合わせください。
 
 +++

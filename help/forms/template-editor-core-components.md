@@ -6,9 +6,9 @@ Keywords: create adaptive form template, create adaptive form template based on 
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
 source-git-commit: e9c595d0afae5c29adf2842bfb2ee28a046b804c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1951'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## 前提条件
 
-**お使いの環境でアダプティブFormsコアコンポーネントを有効にする**：プログラムを作成すると、アダプティブFormsコアコンポーネントはお使いの環境で既に有効になっています。AEM Cloud Service 環境でアダプティブFormsコアコンポーネントを有効にするには、最新のをインストールしてください。
+**お使いの環境でのアダプティブフォームコアコンポーネントの有効化**：プログラムを作成すると、アダプティブフォームコアコンポーネントはお使いの環境で既に有効になります。AEM Cloud Service 環境でアダプティブフォームコアコンポーネントを有効にするには、最新版をインストールします。
 
 >[!NOTE]
 >
@@ -145,7 +145,7 @@ Header and footer are added in the Initial Content layer.
 
 作成したテンプレートは、ドラフトとして追加されます。テンプレートを有効にして、アダプティブフォームの作成に使用できるようにします。テンプレートを有効にするには、以下の手順を実行します。
 
-1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL ツール]**／**[!UICONTROL テンプレート]**&#x200B;に移動して、テンプレートの作成先のフォルダーを開きます。
+1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL ツール]**／**[!UICONTROL テンプレート]**に移動して、テンプレートの作成先のフォルダーを開きます。
 作成したテンプレートは、ドラフトとしてマークされます。
 1. テンプレートを選択して、ツールバーで「**[!UICONTROL 有効]**」を選択します。
 アダプティブフォームの作成時に、テンプレートの選択を求められる際にこのテンプレートがリストに表示されるようになります。

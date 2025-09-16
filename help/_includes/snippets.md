@@ -1,6 +1,6 @@
 ---
 source-git-commit: a90a561146901171d7e3eefecc5a98c73aa79f14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1623'
 ht-degree: 100%
 
@@ -220,7 +220,7 @@ ht-degree: 100%
 
 **サポートチケットをログに記録するには：**
 
-1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/ja?support-tab=home#support)チケットを作成します。
+1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/?support-tab=home#support)チケットを作成します。
 1. チケットのタイトルに「**Edge Delivery**」を追加します。
 1. 説明では、問題の説明に加えて、次の詳細を入力します。
 

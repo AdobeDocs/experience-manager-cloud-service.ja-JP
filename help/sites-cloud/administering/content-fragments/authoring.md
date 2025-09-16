@@ -6,9 +6,9 @@ role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
 source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2824'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -222,7 +222,7 @@ ht-degree: 99%
 * [統計](#statistics-rich-text)
 * [比較と同期](#compare-and-synchronize-rich-text)
 
-次に例を示します。
+例：
 
 ![コンテンツフラグメントエディター - 複数行テキスト - 全画面表示切り替え](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
 
@@ -234,7 +234,7 @@ ht-degree: 99%
 
 全画面表示エディターでは、インフロー時と同じ編集オプションを提供しますが、テキスト用のスペースがより広くなります。
 
-次に例を示します。
+例：
 
 ![コンテンツフラグメントエディター - 複数行テキスト - 全画面表示](assets/cf-authoring-multilinetext-fullscreen.png)
 
@@ -242,7 +242,7 @@ ht-degree: 99%
 
 アクション&#x200B;**統計**&#x200B;は、「複数行」フィールドに、テキストに関する様々な情報を表示します。
 
-次に例を示します。
+例：
 
 ![コンテンツフラグメントエディター - 統計](assets/cf-authoring-multilinetext-statistics.png)
 
@@ -267,7 +267,7 @@ ht-degree: 99%
 
   >[!CAUTION]
   >
-  >同期を使用できるのは、***メイン**&#x200B;からバリエーションに*&#x200B;変更内容をコピーする場合のみです。
+  >同期を使用できるのは、***メイン**からバリエーションに*&#x200B;変更内容をコピーする場合のみです。
   >
   >*バリエーションから&#x200B;**メイン***への変更内容を転送することはオプションとして使用できません。
 
@@ -356,7 +356,7 @@ ht-degree: 99%
 
    * 個々のアセットメタデータ：[https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata)
 
-   * 検索 API を使用して一括メタデータ情報を取得（試行用）: [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search)
+   * 検索 API を使用して一括メタデータ情報を取得（実験用）：[https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search)
 
 >[!NOTE]
 >
@@ -383,13 +383,13 @@ AEM ページ、エクスペリエンスフラグメントまたはその他の�
 
 上部のツールバーでリンクアイコンを選択すると、すべての親参照のリストが開きます。
 
-次に例を示します。
+例：
 
 ![コンテンツフラグメントエディター - 参照の表示](assets/cf-authoring-show-references-link.png)
 
 ウィンドウが開き、関連するすべての参照が表示されます。 参照を開くには、名前、タイトルまたはリンクアイコンを選択します。
 
-次に例を示します。
+例：
 
 ![コンテンツフラグメントエディター - 参照の表示](assets/cf-authoring-show-references.png)
 
@@ -416,7 +416,7 @@ AEM ページ、エクスペリエンスフラグメントまたはその他の�
 
 「**メイン**」を選択した場合、基になるコンテンツフラグメントモデルの名前が「プロパティ」セクションに表示されます。 リンクアイコンを選択すると、モデルが別のタブで開きます。
 
-次に例を示します。
+例：
 
 ![コンテンツフラグメントエディター - コンテンツフラグメントモデルを開く](assets/cf-authoring-open-model.png)
 
@@ -467,7 +467,7 @@ AEM ページ、エクスペリエンスフラグメントまたはその他の�
 
 関連する言語コピーの「**言語プロパティ**」タブの詳細が表示されます。 リンクアイコンを選択すると、そのコピーが別のタブで開きます。
 
-次に例を示します。
+例：
 
 ![コンテンツフラグメントエディター - 言語コピーを開く](assets/cf-authoring-open-language-copies.png)
 
@@ -543,7 +543,7 @@ URL が定義されると、「**プレビュー**」ボタンがアクティブ
    <td><p> <img src="assets/cf-authoring-number-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>ブール値</b></p> </td>
+   <td><p><b>ブーリアン</b></p> </td>
    <td><p> <img src="assets/cf-authoring-boolean-icon.png"> </p></td>
   </tr>
   <tr>
@@ -551,7 +551,7 @@ URL が定義されると、「**プレビュー**」ボタンがアクティブ
    <td><p> <img src="assets/cf-authoring-date-time-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>定義済みリスト</b></p> </td>
+   <td><p><b>列挙</b></p> </td>
    <td><p> <img src="assets/cf-authoring-enumeration-icon.png"> </p></td>
   </tr>
   <tr>

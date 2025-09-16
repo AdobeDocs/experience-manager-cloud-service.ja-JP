@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
 source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '810'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -98,9 +98,9 @@ Forms 送信サービスは、シンプルなデータキャプチャシナリ�
 
 ### 設定要件
 
-#### &#x200B;1. Edge DeliveryでAEM インスタンス URL を更新する
+#### &#x200B;1. Edge Delivery で AEM インスタンス URL を更新
 
-`constant.js` の下にある `form` ブロックの `submitBaseUrl` ファイルの AEM Cloud Service インスタンス URL を更新します。 環境に応じて URL を設定できます。
+`constant.js` ファイル内の `submitBaseUrl` の下の `form` ブロックにある AEM Cloud Service インスタンス URL を更新します。環境に応じて URL を設定できます。
 
 **Cloud Service インスタンスの場合**
 
@@ -108,7 +108,7 @@ Forms 送信サービスは、シンプルなデータキャプチャシナリ�
 export const submitBaseUrl = '<aem-publish-instance-URL>';
 ```
 
-**ローカル開発用**
+**ローカル開発の場合**
 
 ```js
 export const submitBaseUrl = 'http://localhost:<port-number>';
@@ -116,11 +116,11 @@ export const submitBaseUrl = 'http://localhost:<port-number>';
 
 #### &#x200B;2. OSGi リファラーフィルター
 
-リファラーフィルターを設定して、特定のEdge Delivery サイトのドメインを許可します。
+リファラーフィルターを設定して、特定の Edge Delivery サイトのドメインを許可します。
 
 1. OSGi 設定ファイル `org.apache.sling.security.impl.ReferrerFilter.cfg.json` を作成または更新します。
 
-2. 特定のサイトドメインを使用して次の設定を追加します。
+2. 特定のサイトドメインを使用して、次の設定を追加します。
 
    ```json
    {
@@ -148,28 +148,28 @@ export const submitBaseUrl = 'http://localhost:<port-number>';
    }
    ```
 
-3. Cloud Managerを使用した設定のデプロイ
+3. Cloud Manager を通じて設定をデプロイします
 
-OSGi リファラーフィルターの設定について詳しくは、「[ リファラーフィルター ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) ガイドを参照してください。
+OSGi リファラーフィルターの設定について詳しくは、[リファラーフィルター](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)ガイドを参照してください。
 
-#### &#x200B;3. CORS （クロスオリジンリソース共有）の問題
+#### &#x200B;3. CORS（クロスオリジンリソース共有）の問題
 
-AEMで CORS を設定して、特定のEdge Delivery サイトドメインからのリクエストを許可します。
+AEM で CORS を設定して、特定の Edge Delivery サイトドメインからのリクエストを許可します。
 
-**開発者 Localhost**
+**開発者ローカルホスト**
 
 ```apache
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
 ```
 
-**Edge Delivery Sites – 各サイトドメインを個別に追加する**
+**Edge Delivery Sites - 各サイトドメインを個別に追加**
 
 ```apache
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc--adobe\.aem\.live$)#" CORSTrusted=true
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc1--adobe\.aem\.live$)#" CORSTrusted=true
 ```
 
-**従来の Franklin ドメイン（まだ使用中の場合）**
+**レガシー Franklin ドメイン（まだ使用中の場合）**
 
 ```apache
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true  
@@ -178,12 +178,12 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 >[!NOTE]
 >
->`main--abc--adobe.aem.live` と `main--abc1--adobe.aem.live` を実際のサイトドメインに置き換えます。 同じリポジトリからホストされる各サイトには、個別の CORS 設定エントリが必要です。
+>`main--abc--adobe.aem.live` と `main--abc1--adobe.aem.live` を実際のサイトドメインに置き換えます。同じリポジトリからホストされる各サイトには、個別の CORS 設定エントリが必要です。
 
-CORS 設定について詳しくは、『 [CORS 設定ガイド ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors) 』を参照してください。
+CORS 設定について詳しくは、[CORS 設定ガイド](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)を参照してください。
 
 
-お使いのローカル開発で CORS を有効にするには、[ クロスオリジンリソース共有（CORS）について ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) を参照してください。
+ローカル開発環境で CORS を有効にするには、[クロスオリジンリソース共有（CORS）について](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)の記事を参照してください。
 
 <!--
 #### 4. CDN Redirect Rules

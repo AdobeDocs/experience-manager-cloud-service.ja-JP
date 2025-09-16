@@ -6,9 +6,9 @@ Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites p
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
 source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3160'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ AEM Forms にはアダプティブフォームコンテナおよびアダプテ�
 
 ### AEM Cloud Service 環境でのアダプティブフォームコアコンポーネントの有効化
 
-お使いの AEM Cloud Service 環境でアダプティブForms コアコンポーネントを有効にするには、最新のツールをインストールします。
+お使いの AEM Cloud Service 環境でアダプティブフォームコアコンポーネントを有効にするには、最新版をインストールします。
 
 ### AEM Sites ページまたはエクスペリエンスフラグメントに、アダプティブフォームクライアントライブラリを追加
 
@@ -223,7 +223,7 @@ AEM Sites ページ内のアダプティブフォームをエクスペリエン�
 
 ## AEM Sites ページまたはエクスペリエンスフラグメント内のフォームに事前入力サービスを設定する {#configure-prefill-service-for-form}
 
-事前入力サービスを使用すると、既存のデータを使用してアダプティブフォームのフィールドに自動入力できます。ユーザーがフォームを開くと、これらのフィールドの値は事前入力されています。 以下の操作を実行できます。
+事前入力サービスを使用すると、既存のデータを使用してアダプティブフォームのフィールドに自動入力できます。ユーザーがフォームを開くと、これらのフィールドの値は事前入力されています。 次の操作を実行できます。
 
 * [カスタム事前入力サービスを作成](/help/forms/prepopulate-adaptive-form-fields.md)
 * [フォームデータモデルの事前入力サービスを使用](#fdm-prefill-service)

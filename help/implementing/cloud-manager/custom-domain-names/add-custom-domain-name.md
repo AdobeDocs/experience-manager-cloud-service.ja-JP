@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 215f4630acb3eca4be501c7c5f5de7c60b550bf8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1089'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -95,17 +95,17 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 >アドビが管理する CDN の場合、DV（ドメイン検証）証明書を使用する際は、ACME 検証済みのサイトのみが許可されます。
 
 
-## DNS の設定{#config-dns}
+## DNS を設定{#config-dns}
 
 >[!WARNING]
 >
->「広告前に登録」の原則はここに適用されます。 つまり、DNS の設定は、ドメインマッピングが正常に追加された *後* にのみ実行する必要があります。 これにより、Cloud Managerが、ドメインに対するリクエストに応答する前に、ドメインが独自の設定に存在することを認識および検証できます。 また、ドメインの乗っ取りが試行されるのを回避します。
+>ここでは、「広告を出す前に登録する」原則が適用されます。つまり、DNS の設定は、ドメインマッピングが正常に追加された&#x200B;*後*&#x200B;にのみ実行する必要があります。これにより、Cloud Managerが、ドメインに対するリクエストに応答する前に、ドメインが自身の設定に存在することを認識し、検証できるようになります。これにより、ドメインの乗っ取り行為を防ぐこともできます。
 
-DNS レコードを設定する *前に*、次の要件を満たしていることを確認します。
+DNS レコードを設定する&#x200B;*前に*、次の要件を満たしていることを確認します。
 
 * ドメインホストまたは登録機関がわからない場合は確認します。
 * 組織のドメインの DNS レコードを編集できる、またはそれが可能な適切な担当者に連絡できる必要があります。
-* [ ドメイン名ステータスの確認 ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) ドキュメントに記載されているように、設定されたカスタムドメイン名は既に確認されています。
+* [ドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)ドキュメントの説明に従って、設定済みのカスタムドメイン名の検証をすでに済ませている必要があります。
 
 ### CNAME レコード {#adobe-managed-cert-cname-record}
 

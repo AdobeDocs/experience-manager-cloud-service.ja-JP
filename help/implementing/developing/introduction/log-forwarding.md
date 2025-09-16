@@ -1,13 +1,13 @@
 ---
-title: AEM as a Cloud Serviceのログ転送
-description: AEM as a Cloud Serviceでのログのベンダーへの転送について説明します
+title: AEM as a Cloud Service のログ転送
+description: AEM as a Cloud Service でのログベンダーへのログ転送について説明します。
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 2e136117508d7bd17993bf0e64b41aa860d71ab1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2409'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->ログ転送は、従来の方法ではAdobe サポートチケットの送信が必要でしたが、セルフサービス方式で設定されるようになりました。 ログ転送がAdobeによって設定されている場合は、[ 移行 ](#legacy-migration) の節を参照してください。
+>ログ転送は、アドビのサポートチケットの送信を必要とした従来の方法とは異なり、セルフサービス方式で設定されるようになりました。ログ転送がアドビで設定されている場合は、[移行](#legacy-migration)の節を参照してください。
 
-ログベンダーのライセンスを持つお客様、またはログ製品をホストするお客様は、AEM ログ（Apache/Dispatcherを含む）および CDN ログを、関連するログ出力先に転送することができます。 AEM as a Cloud Serviceは、次のログ出力先をサポートしています。
+ログベンダーのライセンスを所有しているお客様や、ログ製品をホストしているお客様は、AEM ログ（Apache／Dispatcher を含む）と CDN ログを関連するログの宛先に転送できます。AEM as a Cloud Service は、次のログの宛先をサポートしています。
 
 <table>
   <tbody>
     <tr>
-      <th>ログ技術</th>
+      <th>ログテクノロジー</th>
       <th>Private Beta*</th>
       <th>AEM</th>
       <th>Dispatcher</th>
@@ -57,7 +57,7 @@ ht-degree: 5%
       <td style="background-color: #ffb3b3;">いいえ</td>
     </tr>
     <tr>
-      <td>Elasticsearch<br>OpenSearch</td>
+      <td>ElasticSearch<br>OpenSearch</td>
       <td>いいえ</td>
       <td>はい</td>
       <td>はい</td>
@@ -85,7 +85,7 @@ ht-degree: 5%
       <td>はい</td>
     </tr>
     <tr>
-      <td>相撲論理</td>
+      <td>Sumo Logic</td>
       <td style="background-color: #ffb3b3;">はい</td>
       <td>はい</td>
       <td>はい</td>
@@ -96,27 +96,27 @@ ht-degree: 5%
 
 >[!NOTE]
 >
-> Private Betaのテクノロジーについては、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) にメールを送信してアクセスをリクエストしてください。
+> Private Beta のテクノロジーについて詳しくは、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) にメールを送信して、アクセスをリクエストしてください。
 
-ログ転送は、Git で設定を宣言することでセルフサービス方式で設定され、Cloud Manager設定パイプラインを介して開発環境、ステージング環境、実稼動環境の各タイプにデプロイできます。 設定ファイルは、コマンドラインツールを使用して迅速な開発環境（RDE）にデプロイできます。
+ログ転送は、Git で設定を宣言することでセルフサービス方式で設定され、Cloud Manager 設定パイプラインを通じて開発環境、ステージング環境、実稼動環境の各タイプにデプロイできます。設定ファイルは、コマンドラインツールを使用して高速開発環境（RDE）にデプロイできます。
 
-AEMと Apache/DispatcherAEMのログを、専用のエグレス IP などの高度なネットワークインフラストラクチャを介してルーティングするオプションがあります。
+AEM および Apache／Dispatcher ログを、専用エグレス IP などの AEM の高度なネットワークインフラストラクチャ経由でルーティングするオプションがあります。
 
-ログの宛先に送信されたログに関連付けられているネットワーク帯域幅は、組織のネットワーク I/O 使用の一部と見なされることに注意してください。
+ログの宛先に送信されるログに関連付けられるネットワーク帯域幅は、組織のネットワーク I/O 使用の一部と見なされます。
 
 ## この記事の編成方法 {#how-organized}
 
-この記事は、次のように構成されています。
+この記事は、次の方法で編成されています。
 
-* 設定 – すべてのログ宛先に共通
-* トランスポートと高度なネットワーク – ログ設定を作成する前に、ネットワーク設定を考慮する必要があります
-* 宛先設定のログ記録 – 各宛先の形式は若干異なります
-* ログエントリ形式 – ログエントリ形式に関する情報
-* 従来のログ転送からの移行 – Adobeで以前設定したログ転送からセルフサービスアプローチに移行する方法
+* 設定 - すべてのログの宛先に共通
+* トランスポートと高度なネットワーク - ログ設定を作成する前に、ネットワーク設定を考慮する必要があります。
+* ログの宛先設定 - 各宛先の形式はわずかに異なります
+* ログエントリ形式 - ログエントリ形式に関する情報
+* 従来のログ転送からの移行 - アドビで以前設定したログ転送からセルフサービスアプローチに移行する方法
 
 ## 設定 {#setup}
 
-1. `logForwarding.yaml` という名前のファイルを作成します。[ 設定パイプライン ](/help/operations/config-pipeline.md#common-syntax) の記事（**kind** は `LogForwarding` に、バージョンは「1」に設定する必要があります）で説明しているように、次のような設定でメタデータが含まれている必要があります（例として Splunk を使用）。
+1. `logForwarding.yaml` という名前のファイルを作成します。これには、[設定パイプライン](/help/operations/config-pipeline.md#common-syntax)の記事で説明されているように、メタデータを含める必要があります（**kind** は `LogForwarding` に設定し、version は「1」に設定する必要があります）。設定は次のようになります（例として Splunk を使用します）。
 
    ```yaml
    kind: "LogForwarding"
@@ -134,13 +134,13 @@ AEMと Apache/DispatcherAEMのログを、専用のエグレス IP などの高�
 
 1. [設定パイプラインの使用](/help/operations/config-pipeline.md#folder-structure)で説明されているように、*config* または類似の名前の最上位フォルダーの下のどこかにファイルを配置します。
 
-1. コマンドラインツールを使用する RDE 以外の環境タイプの場合は、[ この節 ](/help/operations/config-pipeline.md#creating-and-managing) で参照されているように、Cloud Managerでターゲット設定パイプラインを作成します。フルスタックパイプラインと web 階層設定パイプラインでは設定ファイルをデプロイしません。
+1. RDE（コマンドラインツールを使用する環境）以外の環境タイプでは、設定パイプラインの記事の[このセクション](/help/operations/config-pipeline.md#creating-and-managing)で参照されているように、Cloud Manager で対象のデプロイメント設定パイプラインを作成します。フルスタックパイプラインと web 階層設定パイプラインでは、設定ファイルがデプロイされないことに注意してください。
 
 1. 設定をデプロイします。
 
-設定内のトークン（`${{SPLUNK_TOKEN}}` など）は秘密鍵を表しているので、Git に保存しないでください。 代わりに、Cloud Manager[ シークレット環境変数 ](/help/operations/config-pipeline.md#secret-env-vars) として宣言します。 ログをオーサー層、パブリッシュ層およびプレビュー層に転送できるように、「適用されるサービス」フィールドのドロップダウン値として **すべて** を必ず選択してください。
+設定内のトークン（`${{SPLUNK_TOKEN}}` など）は秘密鍵を表すので、Git に保存しないでください。代わりに、Cloud Manager [秘密鍵環境変数](/help/operations/config-pipeline.md#secret-env-vars)として宣言します。ログをオーサー層、パブリッシュ層およびプレビュー層に転送できるように、「適用されるサービス」フィールドのドロップダウン値として「**すべて**」を選択していることを確認します。
 
-**default** ブロックの後に追加の **cdn** や **aem** ブロックを含めることで、CDN ログとAEM ログ（Apache/Dispatcherを含む）に異なる値を設定できます。このブロックでは、プロパティを **default** ブロックで定義された値より優先できます。必要なのは enabled プロパティのみです。 以下の例に示すように、CDN ログに別の Splunk インデックスを使用する使用例が考えられます。
+**default** ブロックの後に追加の **cdn** ブロックや **aem** ブロックを含めることで、CDN ログと AEM ログ（Apache／Dispatcher を含む）間で異なる値を設定できます。この場合、プロパティは **default** ブロックで定義されたプロパティを上書きできます。必要なのは enabled プロパティのみです。次の例に示すように、CDN ログに別の Splunk インデックスを使用するユースケースが考えられます。
 
 ```yaml
    kind: "LogForwarding"
@@ -160,7 +160,7 @@ AEMと Apache/DispatcherAEMのログを、専用のエグレス IP などの高�
          index: "AEMaaCS_CDN"   
 ```
 
-別のシナリオとして、CDN ログまたはAEM ログ（Apache/Dispatcherを含む）の転送を無効にする場合もあります。 例えば、CDN ログのみを転送するには、次を設定します。
+もう 1 つのシナリオは、CDN ログまたは AEM ログ（Apache／Dispatcher を含む）のいずれかの転送を無効にすることです。例えば、CDN ログのみを転送するには、次を設定します。
 
 ```yaml
    kind: "LogForwarding"
@@ -180,48 +180,48 @@ AEMと Apache/DispatcherAEMのログを、専用のエグレス IP などの高�
 
 ## トランスポートと高度なネットワーク {#transport-advancednetworking}
 
-一部の組織は、ログ宛先で受信できるトラフィックを制限し、他の組織は HTTPS （443）以外のポートを使用する必要がある場合があります。  その場合は、ログ転送設定をデプロイする前に [ 詳細ネットワーク ](/help/security/configuring-advanced-networking.md) を設定する必要があります。
+ 一部の組織では、ログの宛先で受信できるトラフィックを制限することを選択する場合もあれば、HTTPS（443）以外のポートの使用を要求する場合もあります。その場合は、ログ転送設定をデプロイする前に、[高度なネットワーク](/help/security/configuring-advanced-networking.md)を設定する必要があります。
 
-次の表を使用して、ポート 443 を使用しているかどうか、および固定 IP アドレスからログを表示する必要があるかどうかに基づいて、高度なネットワーク設定とログ設定の要件を確認してください。
+次の表を使用して、ポート 443 を使用しているかどうか、固定 IP アドレスからログを表示する必要があるかどうかに基づいて、高度なネットワークとログの設定の要件を確認します。
 
 <table>
   <tbody>
     <tr>
       <th>宛先ポート</th>
-      <th>固定 IP からログを表示するための要件</th>
+      <th>固定 IP からログを表示するための要件があるか？</th>
       <th>高度なネットワークが必要</th>
-      <th>LogForwarding.yaml ポート定義が必要です</th>
+      <th>LogForwarding.yaml ポート定義が必要</th>
     </tr>
     <tr>
-      <td rowspan="2" ro>HTTPS （443）</td>
+      <td rowspan="2" ro>HTTPS（443）</td>
       <td>いいえ</td>
       <td>いいえ</td>
       <td>いいえ</td>
-    </tr>
-    <tr>
-      <td>はい</td>
-      <td>対応 <a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address"> 専用エグレス </a></td>
-      <td>いいえ</td>
-    <tr>
-    <tr>
-      <td rowspan="2">非標準ポート （例：8088）</td>
-      <td>いいえ</td>
-      <td>対応 <a href="/help/security/configuring-advanced-networking.md#flexible-port-egress-flexible-port-egress"> 柔軟なエグレス </a></td>
-      <td>はい</td>
     </tr>
     <tr>
       <td>はい</td>
-      <td>対応 <a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address"> 専用エグレス </a></td>
+      <td>はい、<a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address">専用エグレス</a></td>
+      <td>いいえ</td>
+    <tr>
+    <tr>
+      <td rowspan="2">標準以外のポート（例：8088）</td>
+      <td>いいえ</td>
+      <td>はい、<a href="/help/security/configuring-advanced-networking.md#flexible-port-egress-flexible-port-egress">フレキシブルエグレス</a></td>
+      <td>はい</td>
+    </tr>
+    <tr>
+      <td>はい</td>
+      <td>はい、<a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address">専用エグレス</a></td>
       <td>はい</td>
   </tbody>
 </table>
 
 >[!NOTE]
->ログが 1 つの IP アドレスから表示されるかどうかは、高度なネットワーク設定の選択によって決まります。  これを容易にするには、専用のエグレスを使用する必要があります。
+>ログが単一の IP アドレスから表示されるかどうかは、高度なネットワーク設定の選択によって決まります。これを容易にするには、専用エグレスを使用する必要があります。
 >
-> 高度なネットワーク設定は [2 段階のプロセス ](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling) で、プログラムおよび環境レベルでイネーブルメントを行う必要があります。
+> 高度なネットワーク設定は、プログラムレベルと環境レベルでのイネーブルメントを必要とする [2 段階のプロセス](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling)です。
 
-AEM ログ（Apache/Dispatcherを含む）の場合、[ 高度なネットワーク ](/help/security/configuring-advanced-networking.md) を設定している場合は、`aem.advancedNetworking` プロパティを使用して、専用のエグレス IP アドレスから、または VPN 経由で転送できます。
+AEM ログ（Apach／Dispatcher を含む）の場合、[高度なネットワーク](/help/security/configuring-advanced-networking.md)を設定している場合は、`aem.advancedNetworking` プロパティを使用して、専用エグレス IP アドレスまたは VPN 経由でログを転送できます。
 
 次の例は、高度なネットワークを使用して標準の HTTPS ポートに対してログを設定する方法を示しています。
 
@@ -242,23 +242,23 @@ data:
       advancedNetworking: true
 ```
 
-CDN ログの場合は、[Fastly ドキュメント – 公開 IP リスト ](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) で説明しているように、IP アドレスを許可リストに登録できます。 その共有 IP アドレスのリストが大きすぎる場合は、https サーバーまたは（Adobe以外の） Azure Blob Store にトラフィックを送信し、そこで既知の IP から最終的な宛先にログを送信するロジックを記述することを検討します。
+CDN ログの場合、[Fastly ドキュメント - パブリック IP リスト](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)の説明に従って、IP アドレスを許可リストに登録できます。共有 IP アドレスのリストが大きすぎる場合は、既知の IP から最終的な宛先にログを送信するロジックを記述できる https サーバーまたは（アドビ以外の）Azure Blob Store にトラフィックを送信することを考慮します。
 
 >[!NOTE]
 >
->CDN ログが、AEM Cloud Service ではなく Fastly から直接送信されることが原因で、AEM ログと同じ IP アドレスから表示することはできません。
+>CDN ログが AEM ログと同じ IP アドレスから表示されることはありません。これは、ログが AEM Cloud Service ではなく Fastly から直接送信されるからです。
 
-## 宛先設定のログ記録 {#logging-destinations}
+## ログの宛先設定 {#logging-destinations}
 
-サポートされるログの宛先の設定を、具体的な考慮事項と共に以下に示します。
+サポートされているログの宛先の設定と、特定の考慮事項を以下に示します。
 
 ### Amazon S3 {#amazons3}
 
-Amazon S3 へのログ転送では、AEMとDispatcherのログがサポートされていますが、CDN ログはまだサポートされていません。
+Amazon S3 へのログ転送では、AEM と Dispatcher のログがサポートされていますが、CDN ログはまだサポートされていません。
 
 >[!NOTE]
 >
->S3 に定期的に書き込まれるログ。ログ ファイルの種類ごとに 10 分ごとに書き込まれます。  これにより、機能を切り替えると、ログが S3 に書き込まれるまでの初期遅延が発生する可能性があります。  [ この動作に関する詳細情報 ](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs)。
+>ログは、ログファイルのタイプごとに 10 分ごとに S3 に定期的に書き込まれます。これにより、機能を切り替えた後は、S3 へのログの書き込みに初期遅延が発生する場合があります。  [この動作の詳細情報](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs)。
 
 ```yaml
 kind: "LogForwarding"
@@ -275,9 +275,9 @@ data:
       secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
 ```
 
-S3 ログフォワーダーを使用するには、AWS IAM ユーザーに S3 バケットにアクセスするための適切なポリシーを事前設定する必要があります。  IAM ユーザー資格情報の作成方法については、[AWS IAM ユーザードキュメント ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) を参照してください。
+S3 ログ転送ツールを使用するには、S3 バケットへのアクセスに関する適切なポリシーを AWS IAM ユーザーに事前設定する必要があります。  IAM ユーザー資格情報の作成方法について詳しくは、[AWS IAM ユーザードキュメント](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)を参照してください。
 
-IAM ポリシーでは、ユーザーが `s3:putObject` を使用できるようにする必要があります。  例：
+IAM ポリシーでは、ユーザーに `s3:putObject` の使用を許可する必要があります。例：
 
 ```json
  {
@@ -292,7 +292,7 @@ IAM ポリシーでは、ユーザーが `s3:putObject` を使用できるよう
 }
 ```
 
-実装方法について詳しくは、[AWS バケットポリシーのドキュメント ](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) を参照してください。
+実装方法について詳しくは、[AWS バケットポリシードキュメント](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)を参照してください。
 
 ### Azure Blob Storage {#azureblob}
 
@@ -311,22 +311,22 @@ data:
       
 ```
 
-認証には SAS トークンを使用する必要があります。 共有アクセストークンページではなく、共有アクセス署名ページから作成し、次の設定で設定する必要があります。
+認証には、SAS トークンを使用する必要があります。これは、共有アクセストークンページではなく、共有アクセス署名ページから作成し、次の設定を行う必要があります。
 
-* 許可されたサービス : BLOB を選択する必要があります。
-* 許可されたリソース：オブジェクトを選択する必要があります。
-* 許可された権限：書き込み、追加、作成を選択する必要があります。
-* 有効な開始日と有効期限。
+* 許可するサービス：BLOBを選択する必要があります。
+* 許可するリソース：オブジェクトを選択する必要があります。
+* 許可する権限：書き込み、追加、作成を選択する必要があります。
+* 有効な開始日時と有効期限。
 
-サンプルの SAS トークン設定のスクリーンショットを次に示します。
+サンプル SAS トークン設定のスクリーンショットを次に示します。
 
-![Azure Blob SAS トークン設定 ](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+![Azure Blob SAS トークン設定](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
 
-以前に正しく機能していた後にログの配信が停止した場合は、設定した SAS トークンが期限切れの可能性があるので、まだ有効かどうかを確認します。
+以前は正常に機能していたログの配信が停止した場合は、設定した SAS トークンが期限切れになっていることがあるので、まだ有効かどうかを確認します。
 
 #### Azure Blob Storage CDN ログ {#azureblob-cdn}
 
-グローバルに分散された各ログサーバーは、`aemcdn` フォルダーの下で、数秒ごとに新しいファイルを生成します。 作成したファイルは、に追加されなくなります。 ファイル名の形式は YYYY-MM-DDThh:mm:ss.sss-uniqueid.log です。 例：2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log
+グローバルに分散された各ログサーバーは、`aemcdn` フォルダーの下に数秒ごとに新しいファイルを生成します。 一度作成したファイルは、それ以降は追加されません。ファイル名の形式は、YYYY-MM-DDThh:mm:ss.sss-uniqueid.log です。例：2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
 
 例えば、ある時点で次のようになります。
 
@@ -336,7 +336,7 @@ aemcdn/
    2024-03-04T10:00:00.000-def.log
 ```
 
-30 秒後には、
+30 秒後には、次のようになります。
 
 ```text
 aemcdn/
@@ -347,11 +347,11 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-各ファイルには、それぞれ別の行に記述された複数の JSON ログエントリが含まれます。 ログエントリの形式については、[AEM as a Cloud Serviceのログ ](/help/implementing/developing/introduction/logging.md) を参照してください。各ログエントリには、以下の [ ログエントリの形式 ](#log-formats) の節で説明しているその他のプロパティも含まれています。
+各ファイルには、それぞれが別の行に記述された複数の JSON ログエントリが含まれます。ログエントリの形式について詳しくは、[AEM as a Cloud Service のログ](/help/implementing/developing/introduction/logging.md)を参照してください。また、各ログエントリには、次の[ログエントリ形式](#log-formats)の節で説明するその他のプロパティも含まれます。
 
 #### Azure Blob Storage AEM ログ {#azureblob-aem}
 
-AEM ログ（Apache/Dispatcherを含む）は、次の命名規則でフォルダーの下に表示されます。
+AEM ログ（Apache／Dispatcher を含む）は、次の命名規則に従ってフォルダーの下に表示されます。
 
 * aemaccess
 * aemerror
@@ -360,9 +360,9 @@ AEM ログ（Apache/Dispatcherを含む）は、次の命名規則でフォル�
 * aemhttpdaccess
 * aemhttpderror
 
-各フォルダーに 1 つのファイルが作成され、に追加されます。 お客様は、このファイルが大きくなりすぎないよう、ファイルの処理と管理を行います。
+各フォルダーの下に単一のファイルが作成および追加されます。このファイルが大きくなりすぎないように、処理と管理はお客様の責任となります。
 
-[AEM as a Cloud Service のログ ](/help/implementing/developing/introduction/logging.md) のログエントリ形式を参照してください。 ログエントリには、以下の [ ログエントリの形式 ](#log-formats) の節で説明する追加のプロパティも含まれます。
+[AEM as a Cloud Service のログ](/help/implementing/developing/introduction/logging.md)のログエントリ形式を参照してください。ログエントリには、次の[ログエントリ形式](#log-formats)の節で説明するその他のプロパティも含まれます。
 
 ### Datadog {#datadog}
 
@@ -386,13 +386,13 @@ data:
 #### 考慮事項
 
 * 特定のクラウドプロバイダーとの統合を行わずに、API キーを作成します。
-* タグプロパティはオプションです
-* AEM ログの場合、Datadog ソース タグは `aemaccess`、`aemerror`、`aemrequest`、`aemdispatcher`、`aemhttpdaccess`、`aemhttpderror` のいずれかに設定されます
-* CDN ログの場合、Datadog ソース タグは `aemcdn` に設定されます
-* Datadog サービスタグは `adobeaemcloud` に設定されていますが、タグセクションで上書きできます
-* 取り込みパイプラインで Datadog タグを使用してログを転送するための適切なインデックスを決定する場合は、ログ転送 YAML ファイルでこれらのタグが正しく設定されていることを確認します。 タグが見つからない場合、パイプラインがタグに依存していると、ログの取り込みに成功しない可能性があります。
+* tags プロパティはオプションです
+* AEM ログの場合、Datadog ソースタグは、`aemaccess`、`aemerror`、`aemrequest`、`aemdispatcher`、`aemhttpdaccess` または `aemhttpderror` のいずれかに設定されます
+* CDN ログの場合、Datadog ソースタグは、`aemcdn` に設定されます
+* Datadog サービスタグは、`adobeaemcloud` に設定されていますが、tags セクションで上書きできます
+* ログ転送用の適切なインデックスを決定するために、取り込みパイプラインで Datadog タグを使用している場合は、ログ転送 YAML ファイルでこれらのタグが正しく設定されていることを確認します。タグが欠落していると、パイプラインがタグに依存している場合に、ログの取り込みに成功しないことがあります。
 
-### Elasticsearchと OpenSearch {#elastic}
+### Elasticsearch および OpenSearch {#elastic}
 
 ```yaml
 kind: "LogForwarding"
@@ -411,13 +411,13 @@ data:
 
 #### 考慮事項
 
-* デフォルトでは、ポートは 443 です。 オプションで、`port` というプロパティで上書きすることもできます
-* 資格情報には、アカウントの資格情報ではなく、必ずデプロイメントの資格情報を使用します。 これらは、次の画像に似た画面で生成される資格情報です。
+* デフォルトでは、ポートは 443 です。オプションで `port` というプロパティで上書きできます
+* 資格情報には、アカウント資格情報ではなく、デプロイメント資格情報を使用します。次の画像のような画面で生成される資格情報を以下に示します。
 
-![Elastic デプロイメント資格情報 ](/help/implementing/developing/introduction/assets/ec-creds.png)
+![Elastic デプロイメント資格情報](/help/implementing/developing/introduction/assets/ec-creds.png)
 
-* AEM ログの場合、`index` は `aemaccess`、`aemerror`、`aemrequest`、`aemdispatcher`、`aemhttpdaccess` または `aemhttpderror` のいずれかに設定されます
-* オプションのパイプラインプロパティは、Elasticsearchまたは OpenSearch 取り込みパイプラインの名前に設定する必要があります。この名前は、ログエントリを適切なインデックスにルーティングするように設定できます。 パイプラインのプロセッサタイプは *スクリプト* に設定し、スクリプト言語は *痛みなし* に設定する必要があります。 次に、ログエントリを aemaccess_dev_26_06_2024 などのインデックスにルーティングするスクリプトスニペットの例を示します。
+* AEM ログの場合、`index` は、`aemaccess`、`aemerror`、`aemrequest`、`aemdispatcher`、`aemhttpdaccess` または `aemhttpderror` のいずれかに設定されます
+* オプションのパイプラインプロパティは、Elasticsearch または OpenSearch 取り込みパイプラインの名前に設定する必要があります。このパイプラインは、ログエントリを適切なインデックスにルーティングするように設定できます。パイプラインのプロセッサータイプは *script* に設定し、スクリプト言語は *painless* に設定する必要があります。 次に、ログエントリを aemaccess_dev_26_06_2024 などのインデックスにルーティングするサンプルスクリプトスニペットを示します。
 
 ```text
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
@@ -444,24 +444,24 @@ data:
 
 #### 考慮事項
 
-* URL 文字列には **https://** を含める必要があります。含めない場合、検証が失敗します。
-* URL にはポートを含めることができます。 例えば、`https://example.com:8443/aem_logs/aem` のようになります。 URL 文字列にポートが含まれていない場合、ポート 443 （デフォルトの HTTPS ポート）が想定されます。
+* URL 文字列には **https://** を含める必要があります。そうしないと検証が失敗します。
+* URL にはポートを含めることができます。 例えば、`https://example.com:8443/aem_logs/aem` のようになります。URL 文字列にポートが含まれていない場合、ポート 443（デフォルトの HTTPS ポート）が想定されます。
 
 #### HTTPS CDN ログ {#https-cdn}
 
-Web リクエスト（POST）は、ログエントリの配列である json ペイロードを使用して継続的に送信されます。ログエントリの形式については、「[AEM as a Cloud Serviceのログ ](/help/implementing/developing/introduction/logging.md#cdn-log) を参照してください。 その他のプロパティについては、以下の「[ ログエントリの形式 ](#log-formats) の節で説明します。
+Web リクエスト（POST）は、ログエントリの配列である JSON ペイロードを使用して継続的に送信されます。ログエントリ形式について詳しくは、[AEM as a Cloud Service のログ](/help/implementing/developing/introduction/logging.md#cdn-log)を参照してください。 その他のプロパティについて詳しくは、次の[ログエントリ形式](#log-formats)の節を参照してください。
 
-また、`sourcetype` という名前のプロパティもあり、`aemcdn` という値に設定されています。
+また、`sourcetype` という名前のプロパティもあり、その値は `aemcdn` に設定されています。
 
 >[!NOTE]
 >
-> 最初の CDN ログエントリが送信される前に、HTTP サーバーは、1 回限りのチャレンジを正常に完了する必要があります。つまり、パスに送信され ``/.well-known/fastly/logging/challenge`` リクエストは、本文にアスタリスクの ``*`` と 200 個のステータスコードで応答する必要があります。
+> 最初の CDN ログエントリが送信される前に、HTTP サーバーは 1 回限りのチャレンジを正常に完了する必要があります。つまり、パス ``/.well-known/fastly/logging/challenge`` に送信されたリクエストは、本文にアスタリスク ``*`` が含まれ、ステータスコード 200 で応答する必要があります。
 
 #### HTTPS AEM ログ {#https-aem}
 
-AEM ログ（apache/dispatcher を含む）の場合、web リクエスト（POST）は、[AEM as a Cloud Serviceのログ ](/help/implementing/developing/introduction/logging.md) で説明されているように、様々なログエントリ形式でログエントリの配列である json ペイロードで継続的に送信されます。 その他のプロパティについては、以下の「[ ログエントリの形式 ](#log-formats) の節で説明します。
+AEM ログ（apache／dispacher を含む）の場合、web リクエスト（POST） は、ログエントリの配列である JSON ペイロードを使用して継続的に送信されます。様々なログエントリ形式について詳しくは、[AEM as a Cloud Service のログ](/help/implementing/developing/introduction/logging.md)を参照してください。その他のプロパティについて詳しくは、次の[ログエントリ形式](#log-formats)の節を参照してください。
 
-`Source-Type` という名前のプロパティもあり、次のいずれかの値に設定されます。
+また、`Source-Type` という名前のプロパティもあり、その値は次のいずれかに設定されています。
 
 * aemaccess
 * aemerror
@@ -470,9 +470,9 @@ AEM ログ（apache/dispatcher を含む）の場合、web リクエスト（POS
 * aemhttpdaccess
 * aemhttpderror
 
-### New Relic ログ API {#newrelic-https}
+### New Relic Log API {#newrelic-https}
 
-New Relicへのログ転送では、New Relic HTTPS API を取り込みに利用します。  現在は、AEMとDispatcherからのログのみをサポートしています。CDN ログはまだサポートされていません。
+New Relic へのログ転送では、New Relic HTTPS API を取り込みに活用します。現在は、AEM と Dispatcher からのログのみがサポートされており、CDN ログはまだサポートされていません。
 
 ```yaml
   kind: "LogForwarding"
@@ -489,17 +489,17 @@ New Relicへのログ転送では、New Relic HTTPS API を取り込みに利用
 
 >[!NOTE]
 >
->New Relicへのログ転送は、顧客が所有するNew Relic アカウントでのみ使用できます。
+>New Relic へのログ転送は、お客様が所有している New Relic アカウントでのみ使用できます。
 >
->アクセスをリクエストするには、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) にメールを送信します。
+>アクセスをリクエストするには、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) までメールで送信してください。
 >
->New Relicは、New Relic アカウントがプロビジョニングされている場所に基づいて、地域固有のエンドポイントを提供します。  詳しくは、[New Relic ドキュメント ](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) を参照してください。
+>New Relic では、New Relic アカウントがプロビジョニングされている場所に基づいて、地域固有のエンドポイントを提供します。詳しくは、[New Relic ドキュメント](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)を参照してください。
 
-### Dynatrace ログ API {#dynatrace-https}
+### Dynatrace Log API {#dynatrace-https}
 
-Dynatraceへのログ転送では、Dynatrace HTTPS API を取り込みに利用します。  現在は、AEMとDispatcherからのログのみをサポートしています。CDN ログはまだサポートされていません。
+Dynatrace へのログ転送では、Dynatrace HTTPS API を取り込みに活用します。現在は、AEM と Dispatcher からのログのみがサポートされており、CDN ログはまだサポートされていません。
 
-トークンには、「ログの取り込み」スコープ属性が必要です。
+トークンには、「ログを取り込み」スコープ属性が必要です。
 
 ```yaml
   kind: "LogForwarding"
@@ -516,7 +516,7 @@ Dynatraceへのログ転送では、Dynatrace HTTPS API を取り込みに利用
 
 >[!NOTE]
 >
-> アクセスをリクエストするには、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) にメールを送信します。
+> アクセスをリクエストするには、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) までメールで送信してください。
 
 ### Splunk {#splunk}
 
@@ -536,24 +536,24 @@ data:
 
 #### 考慮事項
 
-* デフォルトでは、ポートは 443 です。 オプションで、`port` という名前のプロパティで上書きできます。
-* sourcetype フィールドには、特定のログに応じて、*aemaccess*、*aemerror* のいずれかの値が表示されます。
+* デフォルトでは、ポートは 443 です。オプションで `port` というプロパティで上書きできます
+* sourcetype フィールドには、特定のログに応じて、次のいずれかの値が設定されます。*aemaccess*、*aemerror*、
   *aemrequest*、*aemdispatcher*、*aemhttpdaccess*、*aemhttpderror*、*aemcdn*
-* 必要な IP が許可リストに加えるされたにもかかわらずログが配信されない場合は、Splunk トークンの検証を強制するファイアウォールルールがないことを確認します。 無効な Splunk トークンが意図的に送信される最初の検証ステップを Fastly が実行します。 無効な Splunk トークンを使用して接続を終了するようにファイアウォールが設定されている場合、検証プロセスが失敗し、Fastly が Splunk インスタンスにログを配信できなくなります。
+* 必要な IP が許可リストに登録されていてもログが配信されない場合は、Splunk トークンの検証を適用するファイアウォールルールがないことを確認します。Fastly は、無効な Splunk トークンが意図的に送信される最初の検証ステップを実行します。ファイアウォールが無効な Splunk トークンとの接続を終了するように設定されている場合、検証プロセスは失敗し、Fastly が Splunk インスタンスにログを配信できなくなります。
 
 >[!NOTE]
 >
-> 従来のログ転送からこのセルフサービスモデルに [ 移行する場合 ](#legacy-migration)、Splunk インデックスに送信される `sourcetype` フィールドの値が変更された可能性があるので、それに応じて調整します。
+> 従来のログ転送からこのセルフサービスモデルに[移行する場合](#legacy-migration)、Splunk インデックスに送信される `sourcetype` フィールドの値が変更されていることがあるので、それに応じて調整します。
 
-### 相撲論理 {#sumologic}
+### Sumo Logic {#sumologic}
 
-Sumo Logic へのログ転送では、AEMとDispatcherのログがサポートされています。CDN ログはまだサポートされていません。
+Sumo Logic へのログ転送では、AEM と Dispatcher のログがサポートされていますが、CDN ログはまだサポートされていません。
 
-データ取得のために Sumo ロジックを設定すると、host、receiverURI、および private key を 1 つの文字列で提供する「HTTP Source アドレス」が表示されます。  例：
+Sumo Logic をデータ取り込み用に設定すると、ホスト、receiverURI、秘密鍵を単一の文字列で提供する「HTTP ソースアドレス」が表示されます。例：
 
 `https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
 
-URL の最後のセクション（先頭の `/` を除く）をコピーし、それを前述の [ 設定 ](/help/operations/config-pipeline.md#secret-env-vars) の節で説明されているように [&#128279;](#setup)CloudManager シークレット環境変数）として追加してから、設定でその変数を参照する必要があります。  以下に例を示します。
+URL の最後のセクション（先頭の `/` を除く）をコピーし、上記の[設定](#setup)の節で説明したように、[CloudManager 秘密鍵環境変数](/help/operations/config-pipeline.md#secret-env-vars)として追加し、設定でその変数を参照する必要があります。次に例を示します。
 
 ```yaml
 kind: "LogForwarding"
@@ -570,13 +570,13 @@ data:
 ```
 
 >[!NOTE]
-> 「インデックス」フィールド機能を利用するには、Sumo Logic Enterprise サブスクリプションが必要です。  エンタープライズ以外のサブスクリプションの場合、ログは標準として `sumologic_default` パーティションにルーティングされます。  詳しくは、[Sumo Logic Partitioning ドキュメント ](https://help.sumologic.com/docs/search/optimize-search-partitions/) を参照してください。
+> 「index」フィールド機能を利用するには、Sumo Logic Enterprise サブスクリプションが必要です。エンタープライズ以外のサブスクリプションでは、ログは標準として `sumologic_default` パーティションにルーティングされます。詳しくは、[Sumo Logic パーティションドキュメント](https://help.sumologic.com/docs/search/optimize-search-partitions/)を参照してください。
 
-## ログエントリの形式 {#log-formats}
+## ログエントリ形式 {#log-formats}
 
-各ログタイプ（CDN ログおよびAEM as a Cloud Serviceを含むAEM ログ）の形式については、[Dispatcherのログ ](/help/implementing/developing/introduction/logging.md) を参照してください。
+各ログタイプ（CDN ログ、Apache／Dispatcher を含む AEM ログ）の形式について詳しくは、[AEM as a Cloud Service のログ](/help/implementing/developing/introduction/logging.md)を参照してください。
 
-複数のプログラムおよび環境からのログは、ログ記事で説明されている出力に加えて、同じログ宛先に転送される場合があるので、次のプロパティが各ログエントリに含まれます。
+複数のプログラムや環境からのログが同じログの宛先に転送される場合があるので、ログの記事で説明されている出力に加えて、各ログエントリには次のプロパティが含まれます。
 
 * aem_env_id
 * aem_env_type
@@ -592,23 +592,23 @@ aem_program_id: 12314
 aem_tier: author
 ```
 
-## レガシーログ転送からの移行 {#legacy-migration}
+## 従来のログ転送からの移行 {#legacy-migration}
 
-セルフサービスモデルを通じてログ転送の設定を行う前は、お客様は、Adobeが統合を開始するサポートチケットを開くようリクエストされていました。
+ログ転送の設定がセルフサービスモデルを通じて実現される前は、お客様がサポートチケットを開くようリクエストされ、アドビが統合を開始していました。
 
-Adobeによってそのように設定されたお客様は、都合のよいときにセルフサービスモデルに適応していただければ幸いです。 この移行には、いくつかの理由があります。
+アドビによってそのように設定されたお客様は、都合に合わせてセルフサービスモデルに適応できます。この移行を行う理由がいくつかあります。
 
-* 新しい環境（新しい開発環境や RDE など）がプロビジョニングされた。
+* 新しい環境（例：新しい開発環境または RDE）がプロビジョニングされた。
 * 既存の Splunk エンドポイントまたは資格情報に対する変更。
-* Adobeは、CDN ログが使用可能になる前にログ転送を設定しており、CDN ログを受け取りたいと考えています。
-* 時間に敏感な変更が必要になる前であっても組織が知識を持つように、セルフサービスモデルに積極的に適応することを意識的に決定する。
+* CDN ログが使用可能になる前にアドビがログ転送を設定しており、CDN ログの受信を希望している。
+* 時間的な制約のある変更が必要になる前に、組織が知識を得られるよう、セルフサービスモデルにプロアクティブに適応するという意識的な決定。
 
-移行の準備が整ったら、前の節で説明したように YAML ファイルを設定するだけです。 Cloud Manager設定パイプラインを使用して、設定を適用する必要がある各環境にデプロイします。
+移行の準備が整ったら、前の節で説明したように YAML ファイルを設定するだけです。Cloud Manager 設定パイプラインを使用して、設定を適用する必要がある各環境にデプロイします。
 
-設定をすべての環境にデプロイして、すべての環境をセルフサービスで制御できるようにすることをお勧めしますが、必須ではありません。 そうしないと、Adobeで設定された環境と、セルフサービス方式で設定された環境を忘れてしまう可能性があります。
+すべての環境に設定をデプロイし、セルフサービスで制御できるようにすることをお勧めしますが、必須ではありません。そうしないと、アドビが設定した環境とセルフサービスで設定した環境を区別できなくなる場合があります。
 
 >[!NOTE]
 >
->Splunk インデックスに送信された `sourcetype` フィールドの値が変更された可能性があるので、それに応じて調整します。
+>Splunk インデックスに送信される `sourcetype` フィールドの値が変更されていることがあるので、それに応じて調整します。
 >
->Adobe サポートが以前に設定した環境にログ転送をデプロイすると、最大で数時間ログの重複が発生する場合があります。 これは最終的に自動解決されます。
+>アドビサポートが以前に設定した環境にログ転送をデプロイすると、最大で数時間、重複したログを受信する場合があります。これは最終的には自動的に解決されます。

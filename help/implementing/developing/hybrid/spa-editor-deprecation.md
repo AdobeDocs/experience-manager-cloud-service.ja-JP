@@ -5,9 +5,9 @@ feature: Developing
 role: Admin, Architect, Developer
 exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '915'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ SPA エディターの廃止は、**すぐに削除することを意味する�
 
 SPA エディターに代わる最適な代替手段は、プロジェクトのニーズに応じて異なります。
 
-* **[ユニバーサルエディター ](https://www.aem.live/docs/aem-authoring)** は、SPA エディターの代わりとなる最適なエディターです。
+* **[ユニバーサルエディター](https://www.aem.live/docs/aem-authoring)**&#x200B;は、SPA エディターに代わる直接的な代替手段として最適です。
    * ユニバーサルエディターは、ビジュアルエディターでもあり、アドビの SPA エディターでのエクスペリエンスをすべて組み込んで、分離された実装向けに特別に設計しました。
    * ユニバーサルエディターは、[AEM 6.5 用にもリリース](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)しているので（AEM 6.5 のリリース 2024.11.05 を含む）、Cloud Service に加えて AMS とオンプレミスのユースケースもサポートしています。
 * **[コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;は、フォームベースのエディターを使用するユーザー向けの代替手段です。

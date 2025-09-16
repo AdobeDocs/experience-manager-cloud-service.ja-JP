@@ -1,61 +1,61 @@
 ---
-title: コンテンツフラグメントのAJO外部参照拡張機能の使用
-description: コンテンツフラグメントAJO外部参照拡張機能について説明します
+title: コンテンツフラグメント AJO 外部参照拡張機能の使用
+description: コンテンツフラグメント AJO 外部参照拡張機能について説明します
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
-source-git-commit: f755a5c621b68b3110642e6cfe150798555b6707
-workflow-type: tm+mt
+exl-id: 79c90e6b-91da-4f5a-ac96-a98ef7f8d4cd
+source-git-commit: cff3d6b4f1db00813cbc1be19debc4b4b2c3c158
+workflow-type: ht
 source-wordcount: '289'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
+# コンテンツフラグメント AJO 外部参照拡張機能 {#content-fragment-external-references-extension}
 
-# コンテンツフラグメントのAJO外部参照拡張機能 {#content-fragment-external-references-extension}
+AEM のエクスペリエンスを別のアドビ製品でプレビューするには、次の UI 拡張機能を有効にします。
 
-別のAdobe製品でAEMのエクスペリエンスをプレビューするには、次の手順で UI 拡張機能を有効にします。
+* **AJO 外部参照**
 
-* **AJO外部参照**
+AJO 外部参照拡張機能は、事前定義済みのタグに関連付けられたすべての組織とサンドボックスからコンテンツフラグメントへの参照を取得することで機能します。 その後、拡張機能は詳細を表示します。
 
-AJOの外部参照拡張機能は、事前定義済みのタグに関連付けられたすべての組織とサンドボックスからコンテンツフラグメントへの参照を取得することで機能します。 拡張機能に詳細が表示されます。
-
-例えば、Adobe Journey Optimizer（AJO）との統合の場合、詳細は、参照がキャンペーン、ジャーニー、テンプレートのどれであるかによって異なります。
-
->[!NOTE]
->
->拡張機能を有効にする方法について詳しくは、[AEM Experience ManagerのExtension Managerを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/)。
-
-例えば、AJOで拡張機能を使用するには、次のように指定します。
+例えば、Adobe Journey Optimizer（AJO）との統合の場合、詳細は、参照がキャンペーン、ジャーニー、テンプレートのいずれであるかによって異なります。
 
 >[!NOTE]
 >
->[AJO統合 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/integrations/aem-fragments) も参照してください。
+>拡張機能を有効にする方法について詳しくは、[AEM Experience Manager の Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) を参照してください。
 
-1. [ コンテンツフラグメントコンソール ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) を開きます。
+例えば、AJO で拡張機能を使用するには：
 
-1. コンテンツフラグメント （様々なAJO チャネルで作成および使用されたフラグメント）に移動します。
+>[!NOTE]
+>
+>[AJO 統合](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/integrations/aem-fragments)も参照してください。
 
-1. [ エディター ](/help/sites-cloud/administering/content-fragments/managing.md#editing-the-content-of-your-fragment) でコンテンツフラグメントを開きます。
+1. [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)を開きます。
 
-1. AJO外部参照拡張機能は、右側のパネルのタブとして使用できます。 タブを選択して、拡張機能を開きます。
+1. コンテンツフラグメント（様々な AJO チャネルで作成および使用されたフラグメント）に移動します。
 
-   ![AJO外部参照拡張機能 ](/help/sites-cloud/administering/content-fragments/assets/cf-ajo-fragment-external-references-extension.png)
+1. [エディター](/help/sites-cloud/administering/content-fragments/managing.md#editing-the-content-of-your-fragment)でコンテンツフラグメントを開きます。
 
-   参照タイプを選択すると、対応する外部参照が列を持つテーブルとして表示されます。
+1. AJO 外部参照拡張機能は、右側のパネルのタブとして使用できます。タブを選択して、拡張機能を開きます。
+
+   ![AJO 外部参照拡張機能](/help/sites-cloud/administering/content-fragments/assets/cf-ajo-fragment-external-references-extension.png)
+
+   参照タイプを選択すると、拡張機能により、対応する外部参照が次の列を持つテーブルとして表示されます。
 
    * **名前**：コンテンツフラグメントが使用されている参照の名前
-   * **プレビュー** このリンクを選択してプレビューを開始します
+   * **プレビュー**：このリンクを選択して、プレビューを開始します
    * **ステータス**：参照のステータス
 
-1. ドロップダウンから **参照タイプ** を選択して、次の 3 つの参照タイプを切り替えることができます。
+1. ドロップダウンから&#x200B;**参照タイプ**&#x200B;を選択して、次の 3 つの参照タイプを切り替えることができます。
 
    * **キャンペーン**
       * 現在のコンテンツフラグメントへのリンクを含むすべてのキャンペーンのリストを表示します。
       * その後、選択したキャンペーンをプレビューできます。
       * デフォルト
    * **ジャーニー**
-      * 最新のジャーニーが表示されます。
+      * 最新のジャーニーを表示します。
       * その後、選択したジャーニーを選択およびプレビューできます。
    * **テンプレート**
       * コンテンツフラグメントに関連するテンプレートを表示します。

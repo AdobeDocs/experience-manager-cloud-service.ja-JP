@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
 source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2340'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 98%
 アダプティブフォームを作成するには、以下が必要です。
 
 
-* **お使いの環境でアダプティブFormsコアコンポーネントを有効化**：プログラムを作成すると、アダプティブFormsコアコンポーネントはお使いの環境で既に有効になっています。  お使いの AEM Cloud Service 環境でアダプティブForms コアコンポーネントを有効にするには、最新のツールをインストールします。 使用する環境でコアコンポーネントを有効にすると、**アダプティブフォーム（コアコンポーネント）**&#x200B;のテンプレートとテーマが環境に追加されます。 AEM SDK バージョンが 2023.02.0 より前の場合は、2023.02.0 リリースより前にアダプティブフォームのコアコンポーネントがプレリリースの一部であったので、[お使いの環境で `prerelease` フラグが有効になっていることを確認してください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)。
+* **お使いの環境でのアダプティブフォームコアコンポーネントの有効化**：アダプティブフォームコアコンポーネントは、プログラムを作成した時点でお使いの環境で有効になります。お使いの AEM Cloud Service 環境でアダプティブフォームコアコンポーネントを有効にするには、最新版をインストールします。使用する環境でコアコンポーネントを有効にすると、**アダプティブフォーム（コアコンポーネント）**&#x200B;のテンプレートとテーマが環境に追加されます。 AEM SDK バージョンが 2023.02.0 より前の場合は、2023.02.0 リリースより前にアダプティブフォームのコアコンポーネントがプレリリースの一部であったので、[お使いの環境で `prerelease` フラグが有効になっていることを確認してください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)。
 
 * **アダプティブフォームテンプレート**：テンプレートは基本構造を提供し、アダプティブフォームのアピアランス（レイアウトとスタイル）を定義します。 これには、特定のプロパティやコンテンツ構造を有するフォーマット済みのコンポーネントが含まれます。 また、テーマと送信アクションを定義するオプションも提供されます。 テーマは、ルックアンドフィールと送信アクションを定義し、アダプティブフォームの送信時に実行するアクションを定義します。 例えば、収集したデータをデータソースに送信する場合などです。 クラウドサービスでは、空白という名前の OOTB テンプレートが提供されます。
 
@@ -56,7 +56,7 @@ ht-degree: 98%
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ja) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## アダプティブフォームを作成します  {#create-an-adaptive-form-core-components}
@@ -171,7 +171,7 @@ ht-degree: 98%
 
 ## 事前入力サービスを設定  {#configure-prefill-service-for-form}
 
-事前入力サービスを使用すると、既存のデータを使用してアダプティブフォームのフィールドに自動入力できます。 ユーザーがフォームを開くと、これらのフィールドの値は事前入力されています。 以下の操作を実行できます。
+事前入力サービスを使用すると、既存のデータを使用してアダプティブフォームのフィールドに自動入力できます。 ユーザーがフォームを開くと、これらのフィールドの値は事前入力されています。 次の操作を実行できます。
 
 * [カスタム事前入力サービスを作成](/help/forms/prepopulate-adaptive-form-fields.md)
 * [フォームデータモデルの事前入力サービスを使用](#fdm-prefill-service)

@@ -6,9 +6,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2803'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -63,14 +63,14 @@ Forms as Cloud Service が提供する、コアコンポーネントベースの
 
 ### 前提条件 {#prerequisites-to-customize}
 
-* [Cloud Manager でのパイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)に慣れてください。また、パイプラインの設定方法に関する基本的な知識を持つことで、テーマのカスタマイズを効率的に管理およびデプロイできます。
-* [投稿者の役割を持つユーザーを設定する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=ja)方法を説明します。投稿者の役割を持つユーザーを設定する方法を理解すると、テーマのカスタマイズに必要な権限を付与できます。
+* [Cloud Manager でのパイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)に慣れてください。また、パイプラインの設定方法に関する基本的な知識を持つことで、テーマのカスタマイズを効率的に管理およびデプロイできます。
+* [投稿者の役割を持つユーザーを設定する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html)方法を説明します。投稿者の役割を持つユーザーを設定する方法を理解すると、テーマのカスタマイズに必要な権限を付与できます。
 * [Apache Maven](https://maven.apache.org/download.cgi) の最新リリースのインストール。Apache Maven は、主に Java™ プロジェクトで使用されるビルド自動化ツールです。最新のリリースをインストールすると、テーマのカスタマイズに必要な依存関係が確保されます。
 * プレーンテキストエディターをインストールします。例えば Microsoft® Visual Studio Code などです。Microsoft® Visual Studio Code などのプレーンテキストエディターを使用すると、テーマファイルの編集と変更を行う際に使いやすい環境を利用できます。
 
 ### 環境の設定
 
-* お使いの AEM Cloud Service 環境でアダプティブForms コアコンポーネントを有効にするには、最新のツールをインストールします。
+* お使いの AEM Cloud Service 環境でアダプティブフォームコアコンポーネントを有効にするには、最新版をインストールします。
 * Cloud Service 環境用に[フロントエンドデプロイメントパイプライン](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=ja)を設定します。または、後でパイプラインを設定することもできるため、デプロイメントパイプラインを設定する前に、テーマのテストと調整に優先順位を付けることができます。
 
 <!-- 
@@ -358,7 +358,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    git push [name-for-createdrepository]
    ```
 
-   次に例を示します。
+   例：
 
    ```
    git remote add canvascloudthemerepo https://git.cloudmanager.adobe.com/stage-aemformsdev/customcanvastheme/
@@ -380,7 +380,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 1. Cloud Service 環境に応じて、「**[!UICONTROL 実稼動以外のパイプラインを追加]**」または「**[!UICONTROL 実稼動パイプラインを追加]**」を選択します。ここでは「**[!UICONTROL 実稼動パイプラインを追加]**」を選択します。
 1. **[!UICONTROL 設定]**&#x200B;手順に含まれる「**[!UICONTROL 実稼動パイプラインを追加]**」ダイアログで、パイプラインの名前を指定します。例えば、`customcanvastheme` という名前にします。
 1. 「**[!UICONTROL 続行]**」をクリックします。
-1. **[!UICONTROL ソースコード]**&#x200B;の手順で、
+1. **[!UICONTROL ソースコード]**の手順で、
 **[!UICONTROL ターゲットデプロイメント]**／**[!UICONTROL フロントエンドコード]**&#x200B;オプションを選択します。
 1. 最新の変更を含む&#x200B;**[!UICONTROL リポジトリ]**&#x200B;と **[!UICONTROL Git ブランチ]**&#x200B;の値を選択します。ここで選択したリポジトリ名は `custom-canvas-theme-repo` で、Git ブランチは `main` です。
 1. 変更がルートフォルダーにある場合は、`/` として「**[!UICONTROL コードの場所]**」を選択します。
@@ -441,7 +441,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ja)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 -->
 

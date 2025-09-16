@@ -8,9 +8,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
 source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2496'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -156,7 +156,7 @@ XML スキーマおよび JSON スキーマは、組織内のバックエンド�
   </tr>
   <tr>
    <td>メール</td>
-   <td><p>メールアドレスを取得するためのフィールドを追加します。メールコンポーネントは、デフォルトで、以下の正規表現を使用してメールアドレスを検証します。</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>メールアドレスを取得するためのフィールドを追加します。メールコンポーネントは、デフォルトで、以下の正規表現を使用してメールアドレスを検証します。</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>ファイル添付</td>
@@ -363,9 +363,9 @@ J. **その他**：このオプションにより、選択したコンポーネ�
 
 * **アセット：**&#x200B;このノードには、フォームのオーサリングに使用される追加情報が含まれます。例えば、フォームモデルの詳細、ローカリゼーションの詳細などです。
 
-## AEMの AI アシスタント
+## AEM の AI アシスタント
 
-[ 前提条件を完了している ](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) お客様は、AEMの AI アシスタントを組織内のユーザーが利用できます。 [AEMの AI アシスタント ](/help/implementing/cloud-manager/ai-assistant-in-aem.md) を参照してください。
+[前提条件の基準を満たした](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)お客様の組織内のユーザーは、AEM の AI アシスタントを使用できます。[AEM の AI アシスタント](/help/implementing/cloud-manager/ai-assistant-in-aem.md)を参照してください。
 
 ## 関連トピック {#see-also}
 

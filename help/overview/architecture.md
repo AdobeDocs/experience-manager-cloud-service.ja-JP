@@ -5,9 +5,9 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2711'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 >id="intro_aem_cloudservice_architecture"
 >title="AEM as a Cloud Service アーキテクチャの概要"
 >abstract="ここでは、AEM as a Cloud Service の新しいアーキテクチャを概観し、変更点を理解します。AEM は、画像の数が変化する動的アーキテクチャを実現したので、時間をかけてクラウドアーキテクチャを理解することが重要です。"
->additional-url="https://video.tv.adobe.com/v/346183?captions=jpn" text="アーキテクチャの概要"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="アーキテクチャの概要"
 
 Adobe Experience Manager（AEM）as a Cloud Service は、影響の大きいエクスペリエンスを作成および管理するための、構成可能な一連のサービスを提供します。
 
@@ -53,7 +53,7 @@ AEM as a Cloud Service で使用できる[環境](/help/implementing/cloud-manag
 
 * ステージ環境：
 
-   * ステージング環境は通常、実稼動環境に 1:1 の関係で結び付けられます。
+   * ステージ環境は、通常、実稼動環境に 1:1 で結び付いています。
    * ステージ環境は、主に、アプリケーションに対する変更が実稼動環境にプッシュされる前の自動テスト用に設計されています。
       * これは、メンテナンスアップデートの一環としてアドビによって開始される変更や、コードのデプロイメントによって開始される変更とは独立しています。
       * また、コードをデプロイする場合は、手動でテストを実行することもできます。

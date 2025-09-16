@@ -6,9 +6,9 @@ role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
 source-git-commit: ea85381d63954af3093c34f612babd953c466e1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '595'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -172,7 +172,7 @@ ht-degree: 98%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-コードの範囲を示すには、バッククォート（`` ` ``）で囲みます。 事前に書式設定されたコードブロックとは異なり、コード範囲は通常の段落内のコードを示します。
+コードの範囲を示すには、バッククォート（`` ` ``）で囲みます。事前に書式設定されたコードブロックとは異なり、コード範囲は通常の段落内のコードを示します。
 
 例：
 

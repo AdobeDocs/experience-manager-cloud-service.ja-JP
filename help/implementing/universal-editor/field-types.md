@@ -5,9 +5,9 @@ exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1569'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -90,9 +90,9 @@ ht-degree: 99%
 
 | 設定 | 値タイプ | 説明 | 必須 |
 |---|---|---|---|
-| `component` | `ComponentType` | コンポーネントのレンダラー | あり |
-| `name` | `string` | データが保存されるプロパティ[またはパス](#nesting) | あり |
-| `label` | `FieldLabel` | フィールドのラベル | あり |
+| `component` | `ComponentType` | コンポーネントのレンダラー | はい |
+| `name` | `string` | データが保存されるプロパティ[またはパス](#nesting) | はい |
+| `label` | `FieldLabel` | フィールドのラベル | はい |
 | `description` | `FieldDescription` | フィールドの説明 | いいえ |
 | `placeholder` | `string` | フィールドのプレースホルダー | いいえ |
 | `value` | `FieldValue` | デフォルト値 | いいえ |
@@ -204,7 +204,7 @@ AEM コンテンツコンポーネントタイプでは、AEM コンテンツピ
 
 >[!ENDTABS]
 
-#### ブール値 {#boolean}
+#### ブーリアン {#boolean}
 
 ブーリアンのコンポーネントタイプは、切替スイッチとしてレンダリングされた単純な true／false 値を格納します。追加の検証タイプを提供します。
 
@@ -419,8 +419,8 @@ AEM コンテンツコンポーネントタイプでは、AEM コンテンツピ
 
 | 設定 | 値タイプ | 説明 | 必須 |
 |---|---|---|---|
-| `displayFormat` | `string` | 日付文字列を表示するフォーマット | あり |
-| `valueFormat` | `string` | 日付文字列を格納する形式 | あり |
+| `displayFormat` | `string` | 日付文字列を表示するフォーマット | はい |
+| `valueFormat` | `string` | 日付文字列を格納する形式 | はい |
 
 また、追加の検証タイプも提供します。
 

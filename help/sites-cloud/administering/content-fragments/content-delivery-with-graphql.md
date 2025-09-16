@@ -6,9 +6,9 @@ role: Developer, Architect
 exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
 solution: Experience Manager Sites
 source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '736'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 95%
 >
 >GraphQL は現在、Adobe Experience Manager（AEM）as a Cloud Service の、2 つの（個別の）シナリオで使用されています。
 >
->* [AEM CommerceがGraphQLを介してコマースプラットフォームのデータを使用する。](/help/commerce-cloud/cif-storefront/integrating/magento.md)
+>* [AEM Commerce が GraphQL を介してコマースプラットフォームのデータを使用する。](/help/commerce-cloud/cif-storefront/integrating/magento.md)
 >* [AEM コンテンツフラグメントは、AEM GraphQL API（標準の GraphQL に基づいてカスタマイズされた実装）と連携して、アプリケーションで使用する構造化コンテンツを配信します](/help/headless/graphql-api/content-fragments.md)。
 
 ## ヘッドレス CMS {#headless-cms}
@@ -39,7 +39,7 @@ ht-degree: 95%
 
 AEM のコンテンツフラグメントのオーサリングとは、次のことを意味します。
 
-* コンテンツフラグメントを使用して、フォーマットされたページに直接公開（1:1）することを主な目的としていないコンテンツを作成できます。
+* コンテンツフラグメントを使用すると、主にフォーマットされたページに直接公開することを目的としていない（1:1）コンテンツを作成できます。
 
 * コンテンツフラグメントのコンテンツは、コンテンツフラグメントモデルに従って、あらかじめ決められた方法で構造化されます。これにより、アプリケーションへのアクセスが簡素化され、コンテンツの処理が促進されます。
 

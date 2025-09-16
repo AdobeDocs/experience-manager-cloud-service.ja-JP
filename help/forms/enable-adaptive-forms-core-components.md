@@ -1,6 +1,6 @@
 ---
-title: AEM Forms as a Cloud Serviceでアダプティブ Forms コアコンポーネントをオンにして有効にします
-description: アダプティブFormsのコアコンポーネントが有効かどうかを確認する方法と、必要に応じてAEM Forms as a Cloud Serviceで有効にする方法について説明します。
+title: AEM Forms as a Cloud Service でアダプティブフォームコアコンポーネントを確認および有効にする
+description: AEM Forms as a Cloud Service でアダプティブフォームコアコンポーネントが有効になっているかどうかを確認する方法と、必要に応じて有効にする方法について説明します。
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
@@ -9,38 +9,38 @@ exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
 hide: true
 hidefromtoc: true
 source-git-commit: 3c1931d67e69d155e777c8761fe2bbbd21461ddf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1235'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
-# アダプティブなForms コアコンポーネントを確認して有効にします {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+# アダプティブフォームコアコンポーネントを確認および有効にする {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
-アダプティブForms コアコンポーネントとヘッドレスアダプティブFormsは、AEM Forms as a Cloud Serviceのほとんどのお客様に対して既に有効になっています。 これにより、AEM Forms Cloud Service インスタンスを使用して、複数のチャネルに対して、コアコンポーネントベースのアダプティブFormsとヘッドレスFormsを作成、公開、配信できます。
+アダプティブフォームコアコンポーネントとヘッドレスアダプティブフォームは、ほとんどの AEM Forms as a Cloud Service のお客様に対して既に有効になっています。これにより、AEM Forms Cloud Service インスタンスを使用して、コアコンポーネントベースのアダプティブフォームとヘッドレスフォームを複数のチャネルに作成、公開、配信できます。
 
-## アダプティブ Formsのコアコンポーネントが有効になっているかどうかを確認する {#check-if-enabled}
+## アダプティブフォームコアコンポーネントが有効になっているかどうかを確認する {#check-if-enabled}
 
-イネーブルメントの手順に従う前に、お使いの環境でアダプティブ Forms コアコンポーネントが既に有効になっているかどうかを確認してください。
+イネーブルメント手順に従う前に、お使いの環境でアダプティブフォームコアコンポーネントが既になっているかどうかを確認します。
 
-### 新しいAEM Forms as a Cloud Service プログラムの場合
+### 新しい AEM Forms as a Cloud Service プログラムの場合
 
-新しいAEM Forms as a Cloud Service プログラムを作成すると、アダプティブFormsのコアコンポーネントとヘッドレスアダプティブFormsはお使いの環境で既に有効になっています。
+新しい AEM Forms as a Cloud Service プログラムを作成すると、アダプティブフォームコアコンポーネントとヘッドレスアダプティブフォームが、お使いの環境で既に有効になっています。
 
-### 既存のCloud Service環境の場合
+### 既存の Cloud Service 環境の場合
 
-既存のCloud Service環境で [ コアコンポーネントベースのアダプティブFormsを作成 ](creating-adaptive-form-core-components.md) オプションが提供されている場合、アダプティブFormsコアコンポーネントとヘッドレスアダプティブFormsはお使いの環境で既に有効になっています。
+既存の Cloud Service 環境で、[コアコンポーネントベースのアダプティブフォームを作成](creating-adaptive-form-core-components.md)するオプションが提供されている場合は、アダプティブフォームコアコンポーネントとヘッドレスアダプティブフォームがお使いの環境で既に有効になっています。
 
 ### リポジトリを確認して検証
 
-ご利用の環境でアダプティブ Forms コアコンポーネントが有効になっていることを確認するには：
+お使いの環境でアダプティブフォームのコアコンポーネントが有効になっていることを確認するには：
 
-1. AEM Forms as a Cloud Service リポジトリのクローンを作成します。
+1. AEM Forms as a Cloud Service リポジトリを複製します。
 
 1. AEM Forms Cloud Service Git リポジトリの `[AEM Repository Folder]/all/pom.xml` ファイルを開きます。
 
@@ -55,19 +55,19 @@ ht-degree: 65%
 
    ![all/pom.xml で core-forms-components-af-core アーティファクトを見つけます](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
-   これらの依存関係が存在する場合は、お使いの環境でアダプティブ Forms コアコンポーネントが有効になります。
+   これらの依存関係が存在する場合、お使いの環境でアダプティブフォームのコアコンポーネントが有効になります。
 
-## 手動での有効化が必要な場合 {#when-manual-enablement-needed}
+## 手動でのイネーブルメントが必要な場合 {#when-manual-enablement-needed}
 
-コアコンポーネントが有効になっていない（上記のチェックによって確認されている）古いForms as a Cloud Service プログラムがある場合にのみ、アダプティブ Forms コアコンポーネントの依存関係をAEM as a Cloud Service リポジトリに手動で追加し、リポジトリをCloud Service環境にデプロイする必要があります。
+コアコンポーネントが有効になっていない古い Forms as a Cloud Service プログラムがある場合にのみ（上記の確認で確認済み）、アダプティブフォームコアコンポーネントの依存関係を AEM as a Cloud Service リポジトリに手動で追加し、リポジトリを Cloud Service 環境にデプロイする必要があります。
 
-+++ 手動によるイネーブルメント手順 
++++ 手動イネーブルメント手順 
 
 >[!WARNING]
 >
->上記の検証チェックで、アダプティブ Forms コアコンポーネントがお使いの環境で有効になっていないことが確認された場合にのみ、これらの手順に従ってください。
+>上記の検証の確認で、アダプティブフォームコアコンポーネントがお使いの環境で有効になっていないことが確認された場合にのみ、次の手順に従います。
 
-AEM Forms as a Cloud Service環境に対してアダプティブForms コアコンポーネントとヘッドレスアダプティブFormsを有効にするには、次の手順をリストに記載された順序で実行します。
+AEM Forms as a Cloud Service 環境でアダプティブフォームコアコンポーネントとヘッドレスアダプティブフォームを有効にするには、以下の手順をリスト順に実行します。
 
 ![コアコンポーネントとヘッドレスアダプティブフォームの有効化](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
@@ -370,14 +370,14 @@ AEM Forms as a Cloud Service環境に対してアダプティブForms コアコ�
 * [コアコンポーネントベースのアダプティブフォームテンプレート用のカスタムテーマを作成する](/help/forms/using-themes-in-core-components.md)。
 * [コアコンポーネントベースのアダプティブフォームの JSON 表現を、フォームのヘッドレス表現を必要とするモバイル、web、ネイティブアプリ、サービスなどのチャネルに提供する](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=jp)。
 
-### アダプティブFormsのコアコンポーネントを手動で有効にする必要があるかどうかを知るには、どうすればよいですか？ {#manual-enablement-needed-faq}
+### アダプティブフォームコアコンポーネントを手動で有効にする必要があるかどうかを知るには、どうすればよいですか？ {#manual-enablement-needed-faq}
 
-ほとんどのお客様は、既にアダプティブ Forms コアコンポーネントを有効にしています。 次の場合は、手動で有効にするだけです。
+ほとんどのお客様は、アダプティブフォームコアコンポーネントが既に有効になっています。 次の場合にのみ手動で有効にする必要があります。
 
-1. コアコンポーネントが自動的に含まれる前に、古いForms as a Cloud Service プログラムを作成している
-1. [ アダプティブ Forms コアコンポーネントが有効かどうかを確認 ](#check-if-enabled) セクションの確認チェックは、必要な依存関係がリポジトリにないことを確認します
+1. コアコンポーネントが自動的に含まれる前に作成した、古い Forms as a Cloud Service プログラムがある
+1. [アダプティブフォームコアコンポーネントが有効になっているかどうかを確認する](#check-if-enabled)の節の検証の確認では、必要な依存関係がリポジトリにないことが確認される
 
-不明な場合は、上記の [ アダプティブ Forms コアコンポーネントが有効になっているかどうかを確認する ](#check-if-enabled) 節の検証手順に従ってください。
+不明な場合は、上記の[アダプティブフォームコアコンポーネントが有効になっているかどうかを確認する](#check-if-enabled)の節の検証手順に従ってください。
 
 ### プロジェクトでコアコンポーネントベースのフォームがレンダリングされないのはなぜですか？
 

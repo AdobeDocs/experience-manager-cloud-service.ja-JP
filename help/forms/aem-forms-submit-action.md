@@ -3,27 +3,27 @@ title: アダプティブフォームの送信アクションの設定方法
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。ビルトインの送信アクションを使用するか、独自のアクションを作成できます。
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
-workflow-type: tm+mt
+exl-id: f609566e-6210-4a66-adaf-1dac9e9cd6d7
+source-git-commit: 558e26c6ad1c825498442ef3915fdcdd89ee9039
+workflow-type: ht
 source-wordcount: '667'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
+# アダプティブフォームでサポートされている送信アクション
 
-# アダプティブFormsでサポートされている送信アクション
+アダプティブフォームを使用すると、魅力的でレスポンシブ、かつ動的でアダプティブなフォームを作成できます。これには、直感的なユーザーインターフェイスと、フォームを効率的にデザインおよび管理する標準コンポーネントセットが用意されています。様々な送信アクションを設定して、OneDrive、SharePoint、Workfront Fusion などのサービスにフォームデータを送信できます。
 
-アダプティブフォームを使用すると、魅力的でレスポンシブ、かつ動的でアダプティブなフォームを作成できます。フォームを効率的に設計および管理するための直感的なユーザーインターフェイスと、すぐに使用できる一連のコンポーネントを提供します。 様々な送信アクションを設定して、OneDrive、SharePoint、Workfront Fusion などのサービスにフォームデータを送信できます。
+送信アクションは、ユーザーがアダプティブフォームの「**[!UICONTROL 送信]**」ボタンをクリックしたするときにトリガーされます。Forms as a Cloud Service では、標準の送信アクションがいくつか提供されています。ビルトインの送信アクションを使用すると、次のことができます。
 
-送信アクションは、ユーザーがアダプティブフォームの **[!UICONTROL 送信]** ボタンをクリックしたするときにトリガーされます。 Forms as a Cloud Serviceには、すぐに使用できる送信アクションがいくつか用意されています。 組み込みの送信アクションを使用すると、次のことができます。
-
-* フォームデータをメールで簡単に送信
+* フォームデータをメールで簡単に送信できます。
 * データの送信中に、Microsoft® Power Automate のフローまたは AEM ワークフローを開始します。
 * フォームデータを Microsoft® SharePoint Server、Microsoft® Azure Blob Storage、または Microsoft® OneDrive に直接送信します。
 * フォームデータモデル（FDM）を使用して、設定済みのデータソースにデータをシームレスに送信します。
 * データを REST エンドポイントに送信すると便利です。
 
-## アダプティブFormsでサポートされている送信アクション
+## アダプティブフォームでサポートされている送信アクション
 
 AEM forms には、次の標準の送信アクションが用意されています。
 
@@ -32,12 +32,12 @@ AEM forms には、次の標準の送信アクションが用意されていま�
 * [SharePoint に送信](/help/forms/configure-submit-action-sharepoint.md)
 * [Workfront Fusion を起動する](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [フォームデータモデル（FDM）を使用して送信](/help/forms/using-form-data-model.md)
-* [Azure Blob Storage への送信](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [Azure Blob Storage に送信](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [REST エンドポイントに送信](/help/forms/configure-submit-action-restpoint.md)
 * [OneDrive に送信](/help/forms/configure-submit-action-onedrive.md)
 * [AEM ワークフローを起動](/help/forms/configure-submit-action-workflow.md)
 * [Marketo Engage に送信](/help/forms/submit-adaptive-form-to-marketo-engage.md)
-* [Adobe Experience Platform（AEP）への送信 ](/help/forms/aem-forms-aep-connector.md)
+* [Adobe Experience Platform（AEP）に送信](/help/forms/aem-forms-aep-connector.md)
 * [スプレッドシートに送信](/help/forms/forms-submission-service.md)
 
 アダプティブフォームを他のストレージ設定に送信することもできます。
@@ -45,24 +45,24 @@ AEM forms には、次の標準の送信アクションが用意されていま�
 * [Salesforce アプリケーションにアダプティブフォームを接続](/help/forms/aem-forms-salesforce-integration.md)
 * [Microsoft へのアダプティブフォームの接続](/help/forms/ms-dynamics-odata-configuration.md)
 
-## 複数のオーサリングタイプでの送信アクションのサポート
+## オーサリングタイプ全体での送信アクションのサポート
 
-次の表に、AEM Formsで使用されるフォームオーサリングメソッドに基づいてサポートされる送信アクションを示します。
+次の表に、AEM Forms で使用されるフォームオーサリング方法に基づいてサポートされる送信アクションを示します。
 
-| 送信アクション | [基盤コンポーネント](/help/forms/configuring-submit-actions.md) | [コアコンポーネント](/help/forms/configure-submit-actions-core-components.md) | [ユニバーサルエディター](/help/forms/configure-submit-action-eds-forms.md#submit-actions-supported-by-adaptive-forms-created-in-universal-editor) | [ ドキュメントベースのForms](/help/forms/configure-submit-action-eds-forms.md#supported-submit-actions-for-document-based-forms) |
+| 送信アクション | [基盤コンポーネント](/help/forms/configuring-submit-actions.md) | [コアコンポーネント](/help/forms/configure-submit-actions-core-components.md) | [ユニバーサルエディター](/help/forms/configure-submit-action-eds-forms.md#submit-actions-supported-by-adaptive-forms-created-in-universal-editor) | [ドキュメントベースのフォーム](/help/forms/configure-submit-action-eds-forms.md#supported-submit-actions-for-document-based-forms) |
 |----------------------------|------------------------|------------------|------------------|------------------------|
-| メールの送信 | ✅ サポート | ✅ サポート | ✅ サポート |                        |
-| Power Automate フロー | ✅ サポート | ✅ サポート | ✅ サポート |                        |
-| SharePoint に送信 | ✅ サポート | ✅ サポート | ✅ サポート |                        |
-| Workfront Fusion | ✅ サポート | ✅ サポート | ✅ サポート |                        |
-| FDM を使用した送信 | ✅ サポート | ✅ サポート | ✅ サポート |                        |
-| AEPへの送信 | ✅ サポート | ✅ サポート | ✅ サポート |                        |
-| Azure Blob Storage | ✅ サポート | ✅ サポート | ✅ サポート |                        |
-| REST エンドポイントへの送信 | ✅ サポート | ✅ サポート | ✅ サポート |                        |
-| Marketo Engage に送信 | ✅ サポート | ✅ サポート | ✅ サポート |                        |
-| OneDrive に送信 | ✅ サポート | ✅ サポート | ✅ サポート |                        |
-| AEM ワークフローを起動 | ✅ サポート | ✅ サポート | ✅ サポート |                        |
-| スプレッドシートに送信 |                        |                  | ✅ サポート | ✅ サポート |
+| メールを送信 | ✅ サポート対象 | ✅ サポート対象 | ✅ サポート対象 |                        |
+| Power Automate フロー | ✅ サポート対象 | ✅ サポート対象 | ✅ サポート対象 |                        |
+| SharePoint に送信 | ✅ サポート対象 | ✅ サポート対象 | ✅ サポート対象 |                        |
+| Workfront Fusion | ✅ サポート対象 | ✅ サポート対象 | ✅ サポート対象 |                        |
+| FDM を使用して送信 | ✅ サポート対象 | ✅ サポート対象 | ✅ サポート対象 |                        |
+| AEP に送信 | ✅ サポート対象 | ✅ サポート対象 | ✅ サポート対象 |                        |
+| Azure Blob Storage | ✅ サポート対象 | ✅ サポート対象 | ✅ サポート対象 |                        |
+| REST エンドポイントに送信 | ✅ サポート対象 | ✅ サポート対象 | ✅ サポート対象 |                        |
+| Marketo Engage に送信 | ✅ サポート対象 | ✅ サポート対象 | ✅ サポート対象 |                        |
+| OneDrive に送信 | ✅ サポート対象 | ✅ サポート対象 | ✅ サポート対象 |                        |
+| AEM ワークフローを起動 | ✅ サポート対象 | ✅ サポート対象 | ✅ サポート対象 |                        |
+| スプレッドシートに送信 |                        |                  | ✅ サポート対象 | ✅ サポート対象 |
 
 
 ## アダプティブフォームにおけるサーバー側の再検証
@@ -118,4 +118,3 @@ When you prefill a form data model (FDM), or schema based Adaptive Form with XML
 ## 関連トピック
 
 {{af-submit-action}}
-

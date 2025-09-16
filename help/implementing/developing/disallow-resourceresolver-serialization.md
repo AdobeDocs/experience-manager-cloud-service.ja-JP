@@ -5,30 +5,30 @@ exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '526'
-ht-degree: 35%
+ht-degree: 100%
 
 ---
 
 # Sling Model Exporter による ResourceResolvers のシリアル化を許可しない {#disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter}
 
-Sling Model Exporter 機能を使用すると、Sling モデルオブジェクトを JSON 形式にシリアル化できます。 この機能は、SPA（単一ページアプリケーション）が AEM からのデータに容易にアクセスできるようにするので、広く使用されています。実装側では、Jackson Databind ライブラリを使用して、これらのオブジェクトをシリアル化します。
+Sling Model Exporter 機能を使用すると、Sling Model オブジェクトを JSON 形式にシリアル化できます。この機能は、SPA（単一ページアプリケーション）が AEM からのデータに容易にアクセスできるようにするので、広く使用されています。実装では、Jackson Databind ライブラリを使用してこれらのオブジェクトをシリアル化します。
 
-シリアル化は再帰的な操作です。「ルートオブジェクト」から始めて、すべての適格なオブジェクトを再帰的に反復処理し、それらのオブジェクトとその子をシリアル化します。 シリアル化されるフィールドの説明については、[Jackson - Decide What Fields Get Serialized/Deserialized](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not) を参照してください。
+シリアル化は再帰的な操作です。「root object」から始まり、すべての対象オブジェクトを再帰的に反復し、それらとその子をシリアル化します。シリアル化されるフィールドの説明については、[Jackson - シリアル化／逆シリアル化するフィールドの決定](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)を参照してください。
 
-このアプローチは、すべてのタイプのオブジェクトを JSON にシリアル化します。 当然、シリアル化ルールの対象である場合は、Sling `ResourceResolver` オブジェクトもシリアル化できます。 `ResourceResolver` サービス（つまり、それを表すサービスオブジェクト）には、開示してはいけない、潜在的な機密情報が含まれているため、これは問題になります。例：
+このアプローチでは、すべてのタイプのオブジェクトが JSON にシリアル化されます。当然、シリアル化ルールの対象である場合は、Sling `ResourceResolver` オブジェクトもシリアル化できます。`ResourceResolver` サービス（つまり、それを表すサービスオブジェクト）には、開示してはいけない、潜在的な機密情報が含まれているため、これは問題になります。例：
 
 * ユーザーID
 * 相対パスを解決する検索パス
 * `propertyMap`
 
-特に機密性が高いのは `propertyMap` （[`getPropertyMap`](https://sling.apache.org/apidocs/sling12/org/apache/sling/api/resource/ResourceResolver.html#getPropertyMap--) の API ドキュメントを参照）です。これは内部データ構造であり、`ResourceResolver` と同じライフサイクルを共有するオブジェクトのキャッシュなど、多くの目的で使用できます。 シリアル化すると、実装の詳細がリークされる可能性があり、エンドユーザーが読み取りおよびアクセスできないデータが公開されるので、セキュリティに影響を与える可能性があります。 その理由で `ResourceResolvers` を JSON にシリアル化しないでください。
+特に注意が必要なのは `propertyMap` で（[`getPropertyMap`](https://sling.apache.org/apidocs/sling12/org/apache/sling/api/resource/ResourceResolver.html#getPropertyMap--) の API ドキュメントを参照）で、内部データ構造であり、多くの目的で使用できます。例えば、`ResourceResolver` として同じライフサイクルを共有するキャッシュオブジェクトなどがあります。これらをシリアル化すると、エンドユーザーが読み取ることができない、またはアクセスできないデータが公開されるので、実装の詳細が漏洩し、セキュリティに影響を与える可能性があります。その理由で `ResourceResolvers` を JSON にシリアル化しないでください。
 
-Adobeは、`ResourceResolvers` のシリアル化を次の 2 つの手順で無効にする予定です。
+アドビは、2 段階アプローチでの `ResourceResolvers` のシリアル化を無効にする予定です。
 
-1. AEM as a Cloud Service リリース 14697 以降、`ResourceResolver` ールがシリアル化されるたびに、AEMは警告メッセージをログに記録します。 どのお客様にも、アプリケーションログでこれらのログステートメントを確認し、それに応じてコードベースを調整することをお勧めします。
-1. 後で、Adobeによって `ResourceResolver` の JSON としてのシリアル化が無効になります。
+1. AEM as a Cloud Service 14697 のリリース以降、`ResourceResolver` がシリアル化された AEM では、警告メッセージがログに記録されます。どのお客様にも、アプリケーションログでこれらのログステートメントを確認し、それに応じてコードベースを調整することをお勧めします。
+1. 後でアドビは JSON としての `ResourceResolver` のシリアル化を無効にします。
 
 ## 実装 {#implementation}
 
@@ -43,12 +43,12 @@ WARN メッセージは、AEM as a Cloud Service とローカル AEM SDK の両�
 
 >[!NOTE]
 >
->[AEM コアコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction) は、この問題の影響を受けないことが検証されています。
+>[AEM コアコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction)は、この問題の影響を受けないことが検証されました。
 
 ## 要求されたアクション {#requested-action}
 
-Adobeは、すべてのお客様に対して、アプリケーションログおよびコードベースをチェックしてこの問題の影響を受けているかどうかを確認し、必要に応じてカスタムアプリケーションを変更して、この警告メッセージがログに表示されないようにします。
+アドビは、すべてのお客様に対し、アプリケーションログとコードベースがこの問題の影響を受けているかどうかを確認するように促し、必要に応じてカスタムアプリケーションを変更するように要求します。これにより、この WARN メッセージがログに表示されなくなります。
 
-ほとんどの場合、これらの必要な変更は簡単であると想定されています。 `ResourceResolver` オブジェクトは JSON 出力には全く必要ありません。そこに含まれる情報は、通常、フロントエンドアプリケーションでは必要ないからです。つまり、ほとんどの場合、`ResourceResolver` オブジェクトが Jackson によって考慮されないように除外すれば十分です（[rules](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not) を参照）。
+ほとんどの場合、これらの必要な変更は簡単であると想定されます。`ResourceResolver` オブジェクトは JSON 出力ではまったく必要ありません。そこに含まれる情報は通常、フロントエンドアプリケーションでは必要ないからです。つまり、ほとんどの場合、`ResourceResolver` オブジェクトを Jackson による考慮の対象から除外するだけで十分です（[ルール](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)を参照）。
 
-Sling モデルがこの問題の影響を受けながらも変更されていない場合、`ResourceResolver` オブジェクトのシリアル化を明示的に無効にすると（2 番目の手順としてAdobeで実行する）、JSON 出力に変更が適用されます。
+Sling モデルがこの問題の影響を受けても変更はされない場合、`ResourceResolver` オブジェクトのシリアル化を明示的に無効にする（2 番目の手順としてアドビが実行する）ことで、JSON 出力が強制的に変更されます。

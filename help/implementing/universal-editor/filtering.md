@@ -1,19 +1,19 @@
 ---
 title: コンポーネントのフィルタリング
-description: コンポーネントフィルターを使用して、ユニバーサルエディターでコンテナごとに許可されたコンポーネントを制限する方法を説明します。
+description: コンポーネントフィルターを使用して、ユニバーサルエディターでコンテナごとに使用できるコンポーネントを制限する方法について説明します。
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
 source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '153'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 # コンポーネントのフィルタリング {#filtering-components}
 
-コンポーネントフィルターを使用して、ユニバーサルエディターでコンテナごとに許可されたコンポーネントを制限する方法を説明します。
+コンポーネントフィルターを使用して、ユニバーサルエディターでコンテナごとに使用できるコンポーネントを制限する方法について説明します。
 
 ## フィルター {#filters}
 
@@ -55,5 +55,5 @@ data-aue-filter="container-filter"
 >
 >ユニバーサルエディターで使用できるその他のカスタマイズおよび拡張オプションについては、次のドキュメントを参照してください。
 >
->* [ ユニバーサルエディターのカスタマイズ ](/help/implementing/universal-editor/customizing.md)
->* [ ユニバーサルエディターの拡張 ](/help/implementing/universal-editor/extending.md)
+>* [ユニバーサルエディターのカスタマイズ](/help/implementing/universal-editor/customizing.md)
+>* [ユニバーサルエディターの拡張](/help/implementing/universal-editor/extending.md)

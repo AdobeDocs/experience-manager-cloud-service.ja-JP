@@ -1,14 +1,14 @@
 ---
 title: OAuth 2.0 クライアントの資格情報フローを使用した Salesforce と AEM Forms の統合方法。
-description: OAuth 2.0 クライアント資格情報フローを使用して、Salesforce とAEM Formsを統合する方法を説明します。 AEM Forms Salesforce 統合の手順が表示されます。
+description: OAuth 2.0 クライアント資格情報フローを使用した Salesforce と AEM Forms の統合方法について説明します。AEM Forms Salesforce 統合の手順が表示されます。
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration, AEM Forms Salesforce integration
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
 source-git-commit: 9eb15dda5f56938d686d0b863cb1ffa841f8228b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '552'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 79%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
-Adobe Experience Manager（AEM）Formsと Salesforce の統合により、フォームの作成および管理機能を Salesforce プラットフォームと接続して、プロセスを合理化できます。 アダプティブフォームを Salesforce に接続すると、2 つのプラットフォーム間でシームレスなデータ交換が可能になります。 ユーザーがフォームを送信すると、データは Salesforce と自動的に同期されます。 これにより、すべての顧客情報が最新の状態に保たれ、システム内で一元化されます。
+Adobe Experience Manager（AEM）Forms と Salesforce の統合により、組織はフォームの作成および管理機能を Salesforce プラットフォームに接続してプロセスを効率化できます。アダプティブフォームを Salesforce に接続すると、2 つのプラットフォーム間でシームレスなデータ交換が可能になります。ユーザーがフォームを送信すると、データは自動的に Salesforce と同期されます。すべての顧客情報が最新の状態に保持され、システム内で一元化されます。
 
 OAuth 2.0 クライアント資格情報を使用して、AEM Forms を Salesforce アプリケーションと統合できます。OAuth 2.0 クライアント資格情報は、ユーザーの関与なしに直接通信するための標準で安全な方法です。
 
@@ -38,7 +38,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
 Salesforce アプリケーションと AEM 環境間の通信を設定する前に、次の手順を実行します。
 
-* [OAuth 2.0 クライアント資格情報フローを使用した Salesforce 接続アプリ](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5)および組織の API のみのユーザーを作成し、アプリの Consumer key と Consumer secret を取得します。
+* [OAuth 2.0 クライアント資格情報フローを使用した Salesforce 接続アプリ](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5)および組織の API のみのユーザーを作成し、アプリの Consumer key と Consumer secret を取得します。
 
 * Swagger ファイルが組織の API に合わせて適切に設定されていることを確認します。または、最初から [Swagger ファイルを作成](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html?lang=ja)することで、AEM 環境での使用に合わせてカスタマイズできます。
 
@@ -74,7 +74,7 @@ OAuth 2.0 クライアント資格情報認証設定を使用してアダプテ�
 1. 接続に成功した場合は、「**[!UICONTROL 作成]**」ボタンをクリックします。
 
 
-Salesforce アプリケーションを設定したら、フォームデータモデル（FDM）の作成時にこの設定を使用できます。 詳しくは、[ フォームデータモデル（FDM）の作成 ](create-form-data-models.md) を参照してください。 アダプティブフォームの[フォームデータモデルの送信アクションを設定](/help/forms/using-form-data-model.md)を行って、Salesforce アプリケーションにデータを送信します。
+Salesforce アプリケーションを設定した後は、フォームデータモデル（FDM）の作成中にこの設定を使用できます。詳しくは、[フォームデータモデル（FDM）の作成](create-form-data-models.md)を参照してください。アダプティブフォームの[フォームデータモデルの送信アクションを設定](/help/forms/using-form-data-model.md)を行って、Salesforce アプリケーションにデータを送信します。
 
 ビジネスワークフローでのフォームデータモデル（FDM）の作成および使用について詳しくは、[データ統合](data-integration.md)を参照してください。
 

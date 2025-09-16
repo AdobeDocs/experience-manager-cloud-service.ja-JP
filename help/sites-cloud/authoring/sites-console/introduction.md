@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1653'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -264,7 +264,7 @@ AEM ツールバーの右端にある&#x200B;**表示**&#x200B;アイコンは�
 
 [**列表示**](/help/sites-cloud/authoring/basic-handling.md#column-view)&#x200B;または&#x200B;[**リスト表示**](/help/sites-cloud/authoring/basic-handling.md#list-view)&#x200B;でページを選択するときに、ページが基にしているテンプレートを簡単に確認できます。
 
-## AEMの AI アシスタント
+## AEM の AI アシスタント
 
-[ 前提条件を完了している ](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) お客様は、AEMの AI アシスタントを組織内のユーザーが利用できます。 [AEMの AI アシスタント ](/help/implementing/cloud-manager/ai-assistant-in-aem.md) を参照してください。
+[前提条件の基準を満たした](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)お客様の組織内のユーザーは、AEM の AI アシスタントを使用できます。[AEM の AI アシスタント](/help/implementing/cloud-manager/ai-assistant-in-aem.md)を参照してください。
 
