@@ -9,18 +9,18 @@ exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
 source-wordcount: '2390'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
 
 # AEM Forms のユニバーサルエディターインターフェイスの操作
 
-[ユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)は、Edge Delivery Services を使用して AEM Forms を作成する視覚的なインターフェイスを提供します。これは、ユーザーに対してフォームがどのように表示されるかを正確に表示する **0&rbrace;What You See Is What You Get（WYSIWYG）エクスペリエンスを提供します。**
+[ユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)は、Edge Delivery Services を使用して AEM Forms を作成する視覚的なインターフェイスを提供します。これは、フォームがユーザーにどのように表示されるかを正確に表示する **What You See Is What You Get（WYSIWYG）**&#x200B;エクスペリエンスを提供します。
 
 ![ユニバーサルエディターインターフェイスの概要](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-このガイドを使用すると、フォームを効率的に作成するためのインターフェイスを理解できます。 フォーム作成を初めて行う場合でも、経験豊富な開発者でも、このガイドは次の点で役立ちます。
+このガイドは、フォームを効率的に作成するインターフェイスを理解するのに役立ちます。フォーム作成を初めて行う場合でも、経験豊富な開発者でも、このガイドは次の点で役立ちます。
 
 **必要なスキルを学ぶ：**
 
@@ -354,7 +354,7 @@ ht-degree: 95%
 
     ![バリエーションを生成]（/help/edge/docs/forms/universal-editor/assets/ue-variations.png）
 
-**詳細情報：**&#x200B;[バリエーションを生成ガイド](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**詳細情報：**[バリエーションを生成ガイド](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **コンテンツドラフト**
 
@@ -383,7 +383,7 @@ ht-degree: 95%
 
 +++
 
-+++Collaboration ツール
++++共同作業ツール
 
 #### **タスク管理**
 

@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 2fafb582ae8fc5e2ecc19157ff34e16be401393a
 workflow-type: tm+mt
 source-wordcount: '3591'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -194,7 +194,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 
 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)エラーの一般的な原因は、ノード ID の競合です。このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
 
->java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030：一意性制約に違反したプロパティ [jcr:uuid]、値 a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content、/some/other/path/jcr:content
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
 AEM の各ノードには、一意の UUID が必要です。このエラーは、取り込まれているノードの UUID が、移行先インスタンスの別のパスに存在するノードと同じであることを示します。この状況は、以下の 2 つの理由で発生する可能性があります。
 
@@ -277,7 +277,7 @@ MongoDB に保存されるノードプロパティの値は、16 MB 未満にす
 >title="待機中の取り込みが開始されていません"
 >abstract="抽出の完了を待った後、取り込みを開始できませんでした。"
 
-ソース移行セットとして抽出を実行中で作成された取り込みは、その抽出が正常に完了するまで待ち、その時点で取り込みは正常に開始しようとします。 取り込みの開始に失敗した場合は、失敗とマークされます。 IP許可リストが対象のオーサー環境で設定されている。対象のオーサー環境がその他の理由で利用できない。  この場合、取り込みの開始に失敗した理由を確認し、問題を修正して、取り込みを再度開始します（抽出を再実行する必要はありません）。
+ソース移行セットとして、実行中の抽出で作成された取り込みは、その抽出が成功するまで待機し、その時点で取り込みは正常に開始しようとします。取り込みが開始しない場合は、失敗としてマークされます。開始されない理由としては、ターゲットオーサー環境で IP 許可リストが設定されている、何らかの理由でターゲット環境が使用できないなどが考えられます。  この場合、取り込みが開始に失敗した理由を確認し、問題を解決してから、取り込みを再度開始します（抽出を再実行する必要はありません）。
 
 ### 削除されたアセットが取り込みの再実行後に存在しない
 

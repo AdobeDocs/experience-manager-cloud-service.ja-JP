@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 source-git-commit: 6134772ea9916fc17fb7fc8a30e18799a81d4994
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 4%
+ht-degree: 41%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
-> **ドキュメントは変更される場合があります**：このドキュメントは現在製品に対してテスト中であり、更新および改訂される可能性があります。Forms Experience Builder が早期導入プログラム中に進化し続けると、機能、コマンド、例が変わる場合があります。
+> **ドキュメントは変更される場合があります**：このドキュメントは現在製品に対してテスト中であり、更新および改訂される可能性があります。早期導入プログラム期間中、Forms Experience Builder は継続的に改良されるので、機能、コマンド、例が変更される場合があります。
 
 AEM Forms Experience Builder は、ジェネレーティブ AI の機能を活用して、デジタルフォームエクスペリエンスの作成と更新を民主化および迅速化します。 自然言語とのやり取りを通じてインテントベースのワークフローを実現することで、ユーザーはフォームを迅速かつシンプルにシームレスに設計、変更、最適化できるようになります。
 
-最新の web テクノロジーに基づき、高度な AI サービスを活用して構築されたForms Experience Builder を使用すると、技術ユーザーとそれ以外のユーザーの両方が、対話型インターフェイスを通じて高度なプロフェッショナル向けのフォームを作成できます。 この革新的なアプローチにより、価値創出までの時間を数日から数時間に短縮し、インターフェイスのシンプルさを通じて技術的な障壁を排除し、フォームエコシステム全体で最新化の取り組みを拡大します。
+最新の web テクノロジーに基づき、高度な AI サービスを活用した Forms Experience Builder を使用すると、技術ユーザーとそれ以外のユーザーの両方が、対話型インターフェイスを通じて洗練されたプロフェッショナル向けのフォームを作成できます。この革新的なアプローチにより、価値創出までの時間を数日から数時間に短縮し、インターフェイスのシンプルさを通じて技術的な障壁を排除し、フォームエコシステム全体で最新化の取り組みを拡大します。
 
 
 
@@ -32,28 +32,28 @@ Forms Experience Builder には、強力なデジタルフォームを作成す�
 
 ### &#x200B;1. AI を活用したフォームの作成
 
-**自然言語形の生成**
+**自然言語フォーム生成**
 
-分かりやすい英語の説明を使用して、完全なフォームをゼロから作成します。 「評価スケールとコメントフィールドを含んだカスタマーフィードバックフォームを作成する」などの要件を記述するだけで、Forms Experience Builder が適切なフォーム構造を生成します。 ビジュアルエディターの experience builder を使用して、フィールド、検証ルールおよび送信ロジックをさらに追加します。
+わかりやすい英語の説明を使用して、完全なフォームをゼロから作成します。「評価スケールとコメントフィールドを含んだカスタマーフィードバックフォームを作成する」などの要件を記述するだけで、Forms Experience Builder が適切なフォーム構造を生成します。 ビジュアルエディターの experience builder を使用して、フィールド、検証ルールおよび送信ロジックをさらに追加します。
 
-**動的なフィールド管理**
+**Dynamic Tag Management**
 
-対話型コマンドを使用して、フォームフィールドを追加、変更、削除する。 AI はコンテキストを認識し、要件に基づいて、フィールドタイプ、検証ルールおよびユーザーインターフェイスの改善をインテリジェントに提案できます。
+対話型コマンドを使用してフォームフィールドを追加、変更または削除します。AI はコンテキストを理解し、要件に基づいてフィールドタイプ、検証ルール、ユーザーインターフェイスの改善をインテリジェントに提案できます。
 
-**レイアウトの最適化**
+**レイアウト最適化**
 
-自然言語によるフォームのレイアウトおよび設定の更新。 「フォームレイアウトをウィザードレイアウトに変更」などの変更内容をリクエストし、Forms Experience Builder が適切なスタイルとレイアウトの調整を適用します。
+自然言語を通じてフォームのレイアウトと設定を更新します。「フォームレイアウトをウィザードレイアウトに変更」などの変更内容をリクエストし、Forms Experience Builder が適切なスタイルとレイアウトの調整を適用します。
 
 **包括的な送信アクションの設定**
 
 既存のビジネスシステムと統合するようにフォーム送信を設定します。
 
-- **メール統合**：自動メール通知および確認の設定
-- **REST API エンドポイント**：カスタムアプリケーションおよびサービスへの接続
-- **クラウドストレージ**:Azure Blob Storage、SharePoint、OneDrive との統合
-- **ワークフローの自動処理**: Power Automate とWorkfront Fusion に接続する
-- **マーケティングプラットフォーム**:Marketoとの直接統合によるリード管理
-- **AEM ワークフロー**：既存のAEM ワークフロー機能の活用
+- **メール統合**：自動メール通知と確認を設定します
+- **REST API エンドポイント**：カスタムアプリケーションおよびサービスに接続します
+- **クラウドストレージ**： Azure Blob Storage、SharePoint、OneDrive と統合します
+- **ワークフロー自動化**：Power Automate および Workfront Fusion に接続します
+- **マーケティングプラットフォーム**：リード管理のために Marketo と直接統合します
+- **AEM ワークフロー**：既存の AEM ワークフロー機能を活用します
 
 
 ### 2.インテリジェントなインポートと変換
@@ -81,7 +81,7 @@ Forms Experience Builder には、強力なデジタルフォームを作成す�
 
 ## 仕組み
 
-Forms Experience Builder は、シンプルで対話型のアプローチに従います。
+Forms Experience Builder は、シンプルな対話型のアプローチに従います。
 
     ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
     │1. 説明    │───▶│2. AI が │───▶│ 3 を作成します。 絞り込み&amp;    フォームを │
@@ -104,7 +104,7 @@ Forms Experience Builder は、シンプルで対話型のアプローチに従�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">PDF formsをデジタルFormsに変換</p>
+                    <p class="headline is-size-6 has-text-weight-bold">PDF forms をデジタルフォームに変換</p>
                     <p class="is-size-6">Acroforms、XFA PDF、フラットなPDF ドキュメントを、機能を強化した、レスポンシブなインタラクティブなデジタルフォームに変換する。</p>
                 </div>
             </div>
@@ -147,10 +147,10 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 | 項目 | 従来のフォーム作成 | Forms Experience Builder |
 |--------|---------------------------|----------------------|
-| **作成にかかる時間** | 2 ～ 3 日間 | 2 ～ 3 時間 |
-| **技術的知見** | 必須 | 不要 |
-| **検認規程** | 手動コーディング | 自然言語 |
-| **アクセシビリティ** | 手動での実装 | 組み込みコンプライアンス |
+| **作成にかかる時間** | 2～3 日 | 2～3 時間 |
+| **技術的知識** | 必須 | 必須ではありません |
+| **検証ルール** | 手動コーディング | 自然言語 |
+| **アクセシビリティ** | 手動での実装 | ビルトインコンプライアンス |
 
 
 ## 組織にとってのメリット
@@ -160,7 +160,7 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">民主化されたフォームの作成</p>
+                    <p class="headline is-size-6 has-text-weight-bold">民主化されたフォーム作成</p>
                     <p class="is-size-6">技術に詳しくないユーザーが、自然言語に関する会話を通じて、プログラミングの知識がなくても高度なフォームを作成できるようにします。</p>
                 </div>
             </div>
@@ -200,7 +200,7 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 ## オンボーディング
 
-Forms Experience Builder は現在、早期アクセス（EA）プログラムの一部として利用できます。 参加してアクセスするには、次の情報が必要です：
+Forms Experience Builder は現在、早期アクセス（EA）プログラムの一部として利用できます。参加してアクセスするには、次の情報が必要です：
 
 ### 必要な情報
 
@@ -231,11 +231,11 @@ IMS 組織 ID とプログラム ID を見つける詳細な手順について�
 >
 > **限定提供プログラム**:Forms Experience Builder へのアクセスは、内部の関係者の承認が必要です。 Adobeは、プログラムの処理能力と早期アクセス基準との整合性に基づいて、リクエストをレビューします。 承認は保証されず、現在のプログラムの可用性によって異なります。
 
-Early Access プログラムとその機能について詳しくは、[AEM Forms Early Access ドキュメント ](/help/forms/early-access-ea-features.md) を参照してください。
+早期アクセスプログラムとその機能について詳しくは、[AEM Forms 早期アクセスドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
 
 
 ## はじめに
 
-Forms Experience Builder の使用を開始するには、[Forms Experience Builder ドキュメント ](forms-ai-assistant-getting-started.md) を参照してください。 Forms Experience Builder には、好みのワークフローに応じて、AEM Forms エディターまたはユニバーサルエディターからアクセスできます。
+Forms Experience Builder の使用を開始するには、[Forms Experience Builder ドキュメント](forms-ai-assistant-getting-started.md)を参照してください。Forms Experience Builder には、好みのワークフローに応じて、AEM Forms エディターまたはユニバーサルエディターからアクセスできます。
 
-フォーム作成プロセスの変革を目指す企業のために、Forms Experience Builder は、対話型 AI の柔軟性とエンタープライズクラスのフォーム管理の堅牢性を組み合わせた、強力で直感的なソリューションを提供します。
+フォーム作成プロセスの変革を目指す組織のために、Forms Experience Builder は、対話型 AI の柔軟性とエンタープライズクラスのフォーム管理の堅牢性を組み合わせた、強力で直感的なソリューションを提供します。

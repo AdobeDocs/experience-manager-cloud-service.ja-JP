@@ -9,17 +9,17 @@ role: Admin, Architect, Developer
 source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# AEM Forms用 AI アシスタントの基本を学ぶ（Forms Experience Builder）
+# AEM Forms 用 AI アシスタント（Forms Experience Builder）の基本を学ぶ
 
 >[!NOTE]
 >
 >
-> AEM Forms 用 AI アシスタント（Forms Experience Builder）の機能は、**早期導入プログラム**&#x200B;で利用できます。興味がある場合は、メールアドレスから mailto:aem-forms-ea@adobe.comに簡単なメールを送信して、機能へのアクセスをリクエストします。
+> AEM Forms 用 AI アシスタント（Forms Experience Builder）の機能は、**早期導入プログラム**&#x200B;で利用できます。詳しくは、勤務先のアドレスから :aem-forms-ea@adobe.com にメールを送信して、機能へのアクセスをリクエストします。
 
 >[!IMPORTANT]
 >
@@ -327,7 +327,7 @@ AI アシスタントから、AEM Formsの機能について学習すること�
 
 - フィールド名が表示されているとおりに正確に入力されているか確認する
 - 既存フィールドに `@fieldName` 構文を使用する
-- フィールドを参照する前に、そのフィールドが存在することを確認する
+- フィールドを参照する前に、そのフィールドが存在することを確認します
 
 **デザインの読み込み問題：**
 
@@ -345,4 +345,4 @@ AI アシスタントの改善にご協力ください。
 
 ## 関連リソース
 
-[AEM Forms AI アシスタント – プロンプトライブラリ](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+[AEM Forms AI アシスタント - プロンプトライブラリ](/help/edge/docs/forms/ai-assistant-prompt-library.md)

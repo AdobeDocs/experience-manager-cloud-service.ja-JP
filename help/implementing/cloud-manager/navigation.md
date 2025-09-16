@@ -28,9 +28,9 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 >また、Cloud Manager を使用して AEM as a Cloud Service を導入する方法の完全な概要について詳しくは、[オンボーディングドキュメントジャーニー](/help/journey-onboarding/overview.md)も参照してください。
 
 
-## AEMの AI アシスタント
+## AEM の AI アシスタント
 
-[ 前提条件を完了している ](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) お客様は、AEMの AI アシスタントを組織内のユーザーが利用できます。 [AEMの AI アシスタント ](/help/implementing/cloud-manager/ai-assistant-in-aem.md) を参照してください。
+[ 前提条件を完了している ](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) お客様は、AEMの AI アシスタントを組織内のユーザーが利用できます。 [AEM の AI アシスタント](/help/implementing/cloud-manager/ai-assistant-in-aem.md)を参照してください。
 
 
 ## マイプログラムコンソール {#my-programs-console}

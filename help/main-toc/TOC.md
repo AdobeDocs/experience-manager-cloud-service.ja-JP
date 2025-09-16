@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 875d87dff738b479aa915ca619510c0bfadd95e5
 workflow-type: tm+mt
 source-wordcount: '6624'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -526,7 +526,7 @@ ht-degree: 97%
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
-      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=ja)
+      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service の運用テレメトリ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概要と新機能](/help/assets/overview.md)
@@ -850,7 +850,7 @@ ht-degree: 97%
             + [カスタム送信アクションの作成](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [移行ユーティリティツールを使用した基盤コンポーネントベースのアダプティブフォームからコアコンポーネントベースのフォームへの変換](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [アダプティブフォームのメールテンプレート](/help/forms/html-email-templates-in-adaptive-forms.md)
-            + [Experience Manager Formsでの公開の管理](/help/forms/manage-publication.md)
+            + [Experience Manager Forms での公開の管理](/help/forms/manage-publication.md)
             + コアコンポーネントに基づくアダプティブフォームのルールエディターの概要{#rule-editor-core-components}
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターの概要](/help/forms/rule-editor-core-components.md)
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターのユーザーインターフェイス](/help/forms/rule-editor-core-components-user-interface.md)
@@ -961,10 +961,10 @@ ht-degree: 97%
       + [HTML5 フォームのスクリプティングのサポート](/help/forms/scripting-support.md)
       + [AEM Forms におけるフォームセット](/help/forms/formset-in-aem-forms.md)
    + インタラクティブなコミュニケーション {#interactive-communication}
-      + [インタラクティブ通信エディターの概要](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
+      + [インタラクティブなコミュニケーションエディターの概要](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
       + [インタラクティブ通信の作成](/help/forms/interactive-communication/create-interactive-communication.md)
-      + [インタラクティブ通信テンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)
-      + [インタラクティブ通信フラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+      + [インタラクティブなコミュニケーションテンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)
+      + [インタラクティブなコミュニケーションフラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
       + [インタラクティブ通信の概要](/help/forms/introduction-to-interactive-communication.md)
       + [最初のインタラクティブ通信の作成](/help/forms/create-your-first-communication.md)
       + [よくある質問](/help/forms/interactive-communications-faq.md)
@@ -1013,9 +1013,9 @@ ht-degree: 97%
       + [バリエーションを生成](/help/generative-ai/generate-variations.md)
    + Forms Experience Builder {#forms-experience-builder}
       + [AEM Forms 用 AI アシスタント（Forms Experience Builder）](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-      + [AEM Forms用 AI アシスタントの概要](/help/edge/docs/forms/forms-ai-assistant.md)
-      + [AEM Forms用 AI アシスタントの基本を学ぶ（Forms Experience Builder）](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
-      + [AEM Forms AI アシスタント – プロンプトライブラリ](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+      + [AEM Forms 用 AI アシスタントの基本を学ぶ](/help/edge/docs/forms/forms-ai-assistant.md)
+      + [AEM Forms 用 AI アシスタント（Forms Experience Builder）の基本を学ぶ](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
+      + [AEM Forms AI アシスタント - プロンプトライブラリ](/help/edge/docs/forms/ai-assistant-prompt-library.md)
       + [Forms Experience Builder - ベストプラクティス](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
       + [Forms Experience Builder - トラブルシューティングガイド](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + Screens {#screens-as-cloud-service}
@@ -1059,7 +1059,7 @@ ht-degree: 97%
    + [概要](/help/commerce-cloud/introduction.md)
    + Edge Delivery Services ストアフロント {#edge-storefront}
       + [はじめに](/help/commerce-cloud/edge-storefront/introduction.md)
-   + サードパーティのストアフロント {#thrid-party-storefront}
+   + サードパーティストアフロント {#thrid-party-storefront}
       + [はじめに](/help/commerce-cloud/third-party-storefront/introduction.md)
    + CIF ストアフロント {#cif-storefront}
       + [CIF の概要](/help/commerce-cloud/cif-storefront/introduction.md)
@@ -1104,7 +1104,7 @@ ht-degree: 97%
       + [移行](/help/commerce-cloud/cif-storefront/migration.md)
       + [よくある質問](/help/commerce-cloud/cif-storefront/faq.md)
 + Edge Delivery Services {#edge-delivery}
-   + [Edge Delivery Servicesの概要 ](/help/edge/overview.md)
+   + [Edge Delivery Services の概要](/help/edge/overview.md)
 {#wysiwyg-authoring}
    + フォームの作成 {#build-forms}
       + [概要](/help/edge/docs/forms/overview.md)
