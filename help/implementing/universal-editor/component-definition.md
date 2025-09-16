@@ -95,7 +95,7 @@ ht-degree: 96%
 `plugins` は、コンポーネントの永続化を担当するプラグインを定義します。一般的なプラグインを次に示します。
 
 * `aem`AEM as a Cloud Service.[ の ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service)
-* `aem65`AEM 6.5.[ および ](https://experienceleague.adobe.com/ja/docs/experience-manager-65)AEM 6.5 LTS[ の ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts)
+* `aem65`AEM 6.5.[ および ](https://experienceleague.adobe.com/ja/docs/experience-manager-65)AEM 6.5 LTS[ の ](https://experienceleague.adobe.com/ja/docs/experience-manager-65-lts)
 * `xwalk`Edge Delivery Services用AEM Sitesを使用したオーサリング [ の ](https://www.aem.live/developer/ue-tutorial) ール
 
 ## `page` または `cf` {#page-cf}
