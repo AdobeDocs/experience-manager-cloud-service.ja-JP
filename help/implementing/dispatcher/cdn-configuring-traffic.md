@@ -4,10 +4,10 @@ description: 設定ファイルでルールとフィルターを宣言し、Clou
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
+source-git-commit: 992f9377133dd7ca3bd7b169c0a29e76baadde7e
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 94%
+source-wordcount: '1630'
+ht-degree: 90%
 
 ---
 
@@ -426,6 +426,8 @@ data:
 |-----------|--------------------------|-------------|
 | **selectOrigin** | originName | 定義された接触チャネルの 1 つの名前。 |
 |     | skipCache（オプション、デフォルトは false） | このルールに一致するリクエストにキャッシュを使用するかどうかを示すフラグ。デフォルトでは、応答は応答キャッシュヘッダー（例：Cache-Control または Expires）に従ってキャッシュされます |
+| **selectAemOrigin** | originName | 定義済みのAEM オリジンの 1 つの名前（サポートされている値：`static`）。 |
+|     | skipCache（オプション、デフォルトは false） | このルールに一致するリクエストにキャッシュを使用するかどうかを示すフラグ。デフォルトでは、応答は応答キャッシュヘッダー（例：Cache-Control または Expires）に従ってキャッシュされます |
 
 **接触チャネル**
 
@@ -441,6 +443,29 @@ data:
 | **forwardAuthorization**（オプション、デフォルトは false） | true に設定した場合、クライアントリクエストの「Authorization」ヘッダーがバックエンドに渡されます。それ以外の場合は、Authorization ヘッダーが削除されます。 |
 | **timeout**（オプション、秒単位、デフォルトは 60） | バックエンドサーバーが HTTP 応答本文の最初のバイトを配信することを CDN が待機する秒数。また、この値は、バックエンドサーバーに対するバイトのタイムアウト間隔としても使用されます。 |
 
+### カスタムドメインのAEM静的層へのプロキシ化 {#proxy-custom-domain-static}
+
+オリジンセレクターを使用すると、[ フロントエンドパイプライン ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) を使用してデプロイされたAEM静的コンテンツにAEM パブリッシュトラフィックをルーティングできます。 使用例には、ページと同じドメイン（例：example.com/static）または明示的に異なるドメイン（例：static.example.com）での静的リソースの提供が含まれます。
+
+これを実現できるオリジンセレクタールールの例を以下に示します。
+
+```
+kind: CDN
+version: '1'
+metadata:
+  envTypes: ["dev"]
+data:
+  originSelectors:
+    rules:
+      - name: select-aem-static-origin
+        when:
+          reqProperty: domain
+          equals: static.example.com
+        action:
+          type: selectAemOrigin
+          originName: static
+```
+
 ### Edge Delivery Service に対するプロキシ処理 {#proxying-to-edge-delivery}
 
 AEM パブリッシュから AEM Edge Delivery Service にトラフィックをルーティングするために、オリジンセレクターの使用が必要になることがあります。
@@ -454,6 +479,8 @@ AEM パブリッシュから AEM Edge Delivery Service にトラフィックを�
 ```
 kind: CDN
 version: '1'
+metadata:
+  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
