@@ -6,9 +6,9 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: ae873f8d61f3f6b79f09df100d62714e41e3b849
-workflow-type: ht
-source-wordcount: '1070'
+source-git-commit: 20914cde3be3ff3061b061d930154bd72da45d11
+workflow-type: tm+mt
+source-wordcount: '1065'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ Adobe Experience Manager ヘッドレス CMS を初めて使用する開発者�
 >id="aemcloud_headless_developer_resources"
 >title="AEM ヘッドレス開発者向けリソースとドキュメント"
 >abstract="AEM ヘッドレス CMS の概要と、優れたアプリケーションを構築および提供し、より迅速なエクスペリエンスを実現する方法を包括的に解説します。"
->additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja" text="AEM ヘッドレス開発者向けリソース"
+
 
 ## はじめに {#introduction}
 
@@ -39,7 +39,7 @@ AEM のヘッドレス実装では、コンテンツフラグメントモデル�
 >
 > **実践による学習**&#x200B;を希望し、AEM に関する十分な知識がある場合は、AEM ヘッドレスチュートリアルをご覧ください。これは API とフレームワーク別に整理されており、このドキュメントの最後にある[その他のリソースのセクション](#additional-resources)で紹介されています。
 
-## 対象読者 {#audience}
+## オーディエンス {#audience}
 
 このジャーニーは、デベロッパーのペルソナ向けに設計され、デベロッパーの視点から AEM ヘッドレスプロジェクトの要件、手順およびアプローチをレイアウトします。プロジェクトを成功させるためにデベロッパーがやり取りする必要がある追加のペルソナが定義されますが、ジャーニーの視点はデベロッパーのものです。
 
@@ -47,7 +47,7 @@ AEM のヘッドレス実装では、コンテンツフラグメントモデル�
 
 | ペルソナ | 説明 | このジャーニーでの役割 |
 |---|---|---|
-| 開発者（対象読者） | 様々なソースのコンテンツを消費するヘッドレスアプリケーションの開発経験があります | このジャーニーの対象読者 |
+| 開発者（ターゲットオーディエンス） | 様々なソースのコンテンツを消費するヘッドレスアプリケーションの開発経験があります | このジャーニーのターゲットオーディエンス |
 | コンテンツ作成者 | ヘッドレスに配信されるコンテンツを作成し管理します | コンテンツ作成者は、ヘッドレスに配信されるコンテンツを作成します。 |
 | 管理者 | AEM の基本セットアップと設定を管理します。 | 開発者は管理者と協力して、開発に必要な設定変更を行います。 |
 | コンテンツアーキテクト | ヘッドレスで配信する必要があるデータの要件を分析し、そのデータの構造を定義します。 | 開発者はコンテンツアーキテクトと協力して、データの構造と、データをヘッドレスに配信するための要件を把握します。 |
