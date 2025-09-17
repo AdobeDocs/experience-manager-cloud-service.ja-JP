@@ -4,7 +4,7 @@ description: クライアントサイドのデータ収集を監視できる自�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: d02569f5fcca0e53c8f258be8a193663364ac31f
+source-git-commit: 100a8cd1a27cd8f0677ed001def0b1e0e7b20ed3
 workflow-type: tm+mt
 source-wordcount: '1134'
 ht-degree: 85%
@@ -42,7 +42,7 @@ ht-degree: 85%
 * 訪問しているサイトのホスト名（例：`experienceleague.adobe.com`）
 * `desktop:windows` や `mobile:ios` など、ページの表示に使用される幅広いユーザーエージェントタイプとオペレーティングシステム
 * `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)` など、データ収集の時間
-* 訪問しているページの URL（例：`https://experienceleague.adobe.com/docs?lang=ja`）
+* 訪問しているページの URL（例：`https://experienceleague.adobe.com/docs`）
 * リファラー URL（ユーザーがリンクをたどった場合、現在のページにリンクしているページの URL）
 * `2Ac6` のような形式で、ランダムに生成されたページビューの ID
 * `100` など、サンプリングレートの重み付けまたはその逆つまり、100 ページビューのうち 1 つしか記録されません。
@@ -105,7 +105,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    オプトアウトすると、web サイトのトラフィックエンゲージメントを向上させる機会を逃す可能性があります。ただし、問題が発生した場合は、値 `true` に `AEM_OPTEL_DISABLED` という[環境変数を Cloud Manager で設定](/help/implementing/cloud-manager/environment-variables.md#add-variables)することで、運用テレメトリを無効にすることができます。後で運用テレメトリを再度有効にする場合は、その環境変数を再度削除するだけです。
 
-1. **コンテンツセキュリティポリシーを nonce で使用できますか？
+1. **コンテンツセキュリティポリシーを Nonce で使用できますか？**
 
    運用上のテレメトリのサポートには、コンテンツセキュリティポリシーを nonce でサポートする実験的機能が含まれています。 この機能を有効にするには、[ という名前の ](/help/implementing/cloud-manager/environment-variables.md#add-variables)Cloud Managerの環境変数を `AEM_OPTEL_NONCE` 値 `true` に設定します。 後で再度無効にする場合は、その環境変数を再度削除します。
 
