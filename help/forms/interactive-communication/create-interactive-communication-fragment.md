@@ -39,7 +39,7 @@ ht-degree: 18%
 
 1. インタラクティブ通信フラグメントを選択すると、画面が表示され、タイトル、名前、説明、データモデル（バックエンドデータの構造化表現）、タグなどの主要なフラグメントの詳細を定義できます。
 
-   詳しくは、[ データモデル設定ガイド ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) を参照してください。
+   詳しくは、[ データモデル設定ガイド ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) を参照してください。
 
    ![IC Docu の検索 ](/help/forms/interactive-communication/assets/createfrgmnt.png)
 
