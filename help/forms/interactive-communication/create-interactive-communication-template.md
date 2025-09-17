@@ -4,13 +4,10 @@ description: AEM Formsでインタラクティブ通信テンプレートを作�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
+source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 9%
+ht-degree: 18%
 
 ---
 
@@ -22,7 +19,7 @@ ht-degree: 9%
 
 >[!IMPORTANT]
 >
-> **ドキュメントは変更される場合があります**：このプロンプトライブラリは現在製品に対してテスト中であり、更新および改訂される可能性があります。Forms Experience Builder は、早期導入プログラム中に進化し続けるため、プロンプト、例、ベストプラクティスが変わる可能性があります。
+> **ドキュメントは変更される場合があります**：このプロンプトライブラリは現在製品に対してテスト中であり、更新および改訂される可能性があります。早期導入プログラム中に Forms Experience Builder が進化し続けると、プロンプト、例、ベストプラクティスが変わる可能性があります。
 
 AEMのインタラクティブ通信テンプレートを使用すると、ヘッダー、フッター、ロゴ、デフォルトのスタイル設定など、再利用可能なレイアウト構造を定義できます。 これらのテンプレートは、一貫性があり、ブランド化され、効率的なコミュニケーションを作成する基盤となります。
 

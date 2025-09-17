@@ -4,13 +4,10 @@ description: パーソナライズされたデータ駆動型のコミュニケ�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 764cfbbcb8efd407cff85bfc24928aa3f8e5e956
+source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
 workflow-type: tm+mt
 source-wordcount: '585'
-ht-degree: 6%
+ht-degree: 11%
 
 ---
 
@@ -22,7 +19,7 @@ ht-degree: 6%
 
 >[!IMPORTANT]
 >
-> **ドキュメントは変更される場合があります**：このプロンプトライブラリは現在製品に対してテスト中であり、更新および改訂される可能性があります。Forms Experience Builder は、早期導入プログラム中に進化し続けるため、プロンプト、例、ベストプラクティスが変わる可能性があります。
+> **ドキュメントは変更される場合があります**：このプロンプトライブラリは現在製品に対してテスト中であり、更新および改訂される可能性があります。早期導入プログラム中に Forms Experience Builder が進化し続けると、プロンプト、例、ベストプラクティスが変わる可能性があります。
 
 インタラクティブ通信を使用すると、カスタマーサービス、請求、オンボーディングドキュメント、オファーレター、アカウントの更新など、パーソナライズされたインタラクティブなコミュニケーションを作成、管理、配信できます。 動的でユーザー固有のコンテンツにより業界全体のコミュニケーションエクスペリエンスが向上するシナリオをサポートするように設計されています。
 
