@@ -57,7 +57,7 @@ ht-degree: 13%
 
 ## オンボーディング
 
-インタラクティブ通信（IC）機能は、早期アクセス（EA）プログラムを通じて利用できます。 アクセスをリクエストするには、公式メール ID から環境 ID と組織 ID を含むメール [0}aem-forms-ea@adobe.com} を送信します。 ](mailto:aem-forms-ea@adobe.com)Adobeで登録を確認したら、[ サービスへのオンボード ](/help/forms/setup-forms-cloud-service.md) ドキュメントに従って、AEM Forms環境でインタラクティブ通信を有効にします。
+インタラクティブ通信（IC）機能は、早期アクセス（EA）プログラムを通じて利用できます。 アクセスをリクエストするには、公式メール ID から環境 ID と組織 ID を含むメール [0&rbrace;aem-forms-ea@adobe.com&rbrace; を送信します。 ](mailto:aem-forms-ea@adobe.com)Adobeで登録を確認したら、[ サービスへのオンボード ](/help/forms/setup-forms-cloud-service.md) ドキュメントに従って、AEM Forms環境でインタラクティブ通信を有効にします。
 
 ## 次の手順
 
