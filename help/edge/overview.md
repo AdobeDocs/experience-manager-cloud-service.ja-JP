@@ -4,28 +4,29 @@ description: AEM as a Cloud Service を使用して、Edge Delivery Services で
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 9829709a4558a2d0fd479c7c0fed979ee43937ea
-workflow-type: ht
-source-wordcount: '963'
-ht-degree: 100%
+source-git-commit: 8cbcfbc074c69396980ba930339563d5437d5f17
+workflow-type: tm+mt
+source-wordcount: '988'
+ht-degree: 94%
 
 ---
 
 
 # Edge Delivery Services の概要 {#edge-delivery-services}
 
+>[!TIP]
+>
+>**すぐに実践してみませんか？**
+>
+>Edge Delivery Servicesをすぐに実践したい場合は、次の 2 つの方法があります。
+>* [ 事前定義済みのチュートリアル環境 – 完全に設定され、すぐに使用できる状態になったら、すぐにオーサリングを開始できます ](https://www.aem.live/developer/ue-trial)。
+>* 詳細を確認し、30 分以内に独自の環境を設定するには、[aem.live のチュートリアルをチェックアウト ](https://www.aem.live/developer/ue-tutorial) してください。
+
 ## Edge Delivery Services とは？ {#what-is-edge}
 
 Edge Delivery Services は、web サイトの構築と配信の方法を再考し、速度、シンプルさ、拡張性を最適化する最新のコンテンツ配信フレームワークです。これは Adobe Experience Manager の中核となる部分であり、ネットワークの端でレンダリングと配信をユーザーに近い場所にプッシュし、より高速なデジタルエクスペリエンスを実現します。
 
 これは、コンテンツ配信ネットワーク（CDN）に代わるものではありませんが、独自の CDN または含まれている [Adobe の管理による CDN とシームレスに統合されます。](/help/implementing/dispatcher/cdn.md)
-
->[!TIP]
->
->**すぐに実践してみませんか？**
->
->すぐに実践したい場合は、[aem.live のチュートリアルを参照する](https://www.aem.live/developer/ue-tutorial)ことにより、30 分以内にAEM オーサリングを使用して独自のEdge Delivery Services プロジェクトを開始できます。
-
 
 ## Edge Delivery Services を選ぶ理由？ {#why-edge}
 
@@ -104,7 +105,7 @@ Edge Delivery Services は、Adobe Experience Manager の一部です。その�
 
 Adobe は、Edge Delivery Services、ユニバーサルエディターを使用した AEM オーサリング、ドキュメントベースのオーサリングに関して、最高のコミュニティエンゲージメントとサポートを提供することに尽力しています。
 
-* [Experience League コミュニティ](https://adobe.ly/3Q6kTKl)に参加して、質問をしたり、意見を共有したり、ディスカッションを始めたり、アドビの専門家や AEM アドバイザー／チャンプにサポートを求めたり、同じ意見を持つユーザーとリアルタイムでつながりを持つことができます。
+* [Experience League コミュニティ](https://adobe.ly/3Q6kTKl)に参加して、質問をしたり、フィードバックを共有したり、ディスカッションを始めたり、アドビの専門家や AEM アドバイザー／チャンプにサポートを求めたり、同じ意見を持つユーザーとリアルタイムでつながりを持つことができます。
 * リアルタイムのインタラクションと迅速なアイデア交換を実現する一層カジュアルなプラットフォーム、[ディスコードチャネル](https://discord.gg/aem-live)に参加してください。
 
 ### サポートチケットのログ {#support-ticket}
