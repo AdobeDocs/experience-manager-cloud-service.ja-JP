@@ -3,14 +3,14 @@ title: Experience Hub について
 description: Adobe Experience Hub のページについて説明します。
 landing-page-description: すべての AEM 機能にアクセスする一元的な出発点である Experience Hub について説明します。
 solution: Experience Manager
-feature: Authoring, Getting Started, Onboarding, AI Assistant, Workflows, Programs
-feature-set: Experience Cloud,Experience Manager Sites
+feature: Authoring, AI Assistant, Central Interface Components, Getting Started, Onboarding, Programs, Workflows
+feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: fc3b3399560019df0475c9d3ad71e5ef6056f2ae
+source-git-commit: 82fce826ad6e5736740e39347b32b70d0b9f0176
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 14%
+source-wordcount: '568'
+ht-degree: 15%
 
 ---
 
@@ -51,11 +51,11 @@ Adobe Experience Managerページが更新され、ナビゲーションが強�
 >
 >表示されるウィジェット、ツールおよびアーティファクトは、ユーザーのペルソナ、使用権限およびAEM デプロイメントタイプ（AEM as a Cloud ServiceまたはManaged Services 6.5/6.5 LTS）によって異なります。
 
-これらのソリューションは、**ツール** または **サービス** の下のメインナビゲーションに移動しました。 さらに、新しいナビゲーション要素を使用すると、有効になっているソリューション（Assets、Sites、Forms、コンテンツフラグメント、ローンチなど）に固有の主なAdobe Experience Manager機能にすばやくアクセスできます。
+これらのソリューションは、**ツール** または **サービス** の下のメインナビゲーションに移動しました。 新しいナビゲーション要素により、対応するソリューションに関連するAEM機能にすばやくアクセスできます。 Assets、Sites、Forms、コンテンツフラグメント、ローンチなどに移動します。
 
 ![Experience Hub環境 ](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
 
-これらの機能は、アクセス権のあるプライマリ実稼動環境で使用できます。または、複数のAEM インスタンスにアクセスできる場合は、ターゲットにする特定の環境を選択できます。
+これらの機能をプライマリ実稼動環境で使用します。 複数のAEM インスタンスにアクセスできる場合は、ターゲットにする環境を選択します。
 
 ![ 実稼動環境とステージ環境 ](/help/implementing/cloud-manager/assets/experience-hub-prod-stage.png)
 
@@ -67,7 +67,7 @@ Adobe Experience Managerの中央ハブとして機能するExperience Hub ペ�
 
 ![Experience Hub ウィジェット ](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
 
-「**オーサリング環境**」セクションには、アクセス可能なすべてのAEM環境が表示され、使用可能なソリューションやページへの特定のショートカットも含まれています。また、リストの上部に表示する特定の環境をピン留めすることもできます。
+「**オーサリング環境**」セクションには、アクセスしてソリューションやページへのショートカットを含めることができるすべてのAEM環境が一覧表示されます。 特定の環境をピン留めして、リストの上部に保持できます。
 
 次の図に示す **最近** セクションには、AEMで最近アクセスしたページが一覧表示されます。 テナントのライセンスに応じて、プログラム、パイプライン実行、Assets、ページエディター、フォームエディターなどがウィジェットに含まれる場合があります。
 
