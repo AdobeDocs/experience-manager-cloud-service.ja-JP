@@ -3,13 +3,14 @@ title: Experience Hub について
 description: Adobe Experience Hub のページについて説明します。
 landing-page-description: すべての AEM 機能にアクセスする一元的な出発点である Experience Hub について説明します。
 solution: Experience Manager
-feature: Cloud Manager, Developing
+feature: Authoring, Getting Started, Onboarding, AI Assistant, Workflows, Programs
+feature-set: Experience Cloud,Experience Manager Sites
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: e92a25a532cc39557842178165c963c6f1fdb681
+source-git-commit: fc3b3399560019df0475c9d3ad71e5ef6056f2ae
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 10%
+ht-degree: 14%
 
 ---
 
@@ -82,4 +83,4 @@ AEM Cloud Service またはManaged Servicesの実稼動環境が存在しない�
 
 ## AEM の AI アシスタント
 
-[ 前提条件を完了している ](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) お客様は、AEMの AI アシスタントを組織内のユーザーが利用できます。 [AEMの AI アシスタント ](/help/implementing/cloud-manager/ai-assistant-in-aem.md) を参照してください。
+[前提条件の基準を満たした](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)お客様の組織内のユーザーは、AEM の AI アシスタントを使用できます。[AEM の AI アシスタント](/help/implementing/cloud-manager/ai-assistant-in-aem.md)を参照してください。
