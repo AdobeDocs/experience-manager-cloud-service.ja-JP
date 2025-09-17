@@ -1,15 +1,15 @@
 ---
 title: Forms Experience Builder
-description: フォームフラグメントを使用した強力なフォームの迅速な作成
+description: Forms Experience Builder の概要
 feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 6bbec984e1e22764c762d95ff52ae1f474c6b413
+source-git-commit: ce61bc434614e5d7b92de3f1290e7e15325d27b7
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 41%
+source-wordcount: '937'
+ht-degree: 40%
 
 ---
 
@@ -64,7 +64,6 @@ Forms Experience Builder には、強力なデジタルフォームを作成す�
 - **フラット PDF**：静的ドキュメントをインタラクティブ Forms に変換する
 - **画像とスクリーンショット**:JPG、PNG 形式（サイズ制限についてはチームに確認してください）
 - **手描きForms**：スケッチと紙のフォーム写真
-
 
 **インテリジェント変換プロセス**
 
@@ -206,7 +205,6 @@ Forms Experience Builder は現在、早期アクセス（EA）プログラム�
 - **プロジェクト詳細**：タイムライン、範囲、意図されたユースケース
 - **仕事用の公式メール**：組織のAdobe アカウントに関連付けられています
 
-
 ### IMS 組織 ID とプログラム ID の取得方法
 
 IMS 組織 ID とプログラム ID を見つける詳細な手順については、以下を参照してください。
@@ -229,7 +227,6 @@ IMS 組織 ID とプログラム ID を見つける詳細な手順について�
 > **限定提供プログラム**:Forms Experience Builder へのアクセスは、内部の関係者の承認が必要です。 Adobeは、プログラムの処理能力と早期アクセス基準との整合性に基づいて、リクエストをレビューします。 承認は保証されず、現在のプログラムの可用性によって異なります。
 
 早期アクセスプログラムとその機能について詳しくは、[AEM Forms 早期アクセスドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
-
 
 ## はじめに
 
