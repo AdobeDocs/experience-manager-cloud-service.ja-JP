@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5074e777c68c51955b9ad8f055e04067163b9596
+source-git-commit: 6dfcb0712f2c7208e100b52a290dcf4fbfe9d0e4
 workflow-type: tm+mt
-source-wordcount: '6631'
+source-wordcount: '6634'
 ht-degree: 98%
 
 ---
@@ -526,7 +526,7 @@ ht-degree: 98%
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
-      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=ja)
+      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service の運用テレメトリ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概要と新機能](/help/assets/overview.md)
@@ -691,6 +691,7 @@ ht-degree: 98%
          + [よくある質問](/help/assets/dynamic-media-open-apis-faqs.md)
          + [カスタムドメインの設定](/help/assets/configure-custom-domain.md)
          + [画像を最適化](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
+         + [バニティ URL の作成](/help/assets/vanity-urls.md)
    + アセットビューの操作 {#assets-view}
       + [はじめに](/help/assets/assets-view-introduction.md)
       + [はじめに](/help/assets/get-started-assets-view.md)
