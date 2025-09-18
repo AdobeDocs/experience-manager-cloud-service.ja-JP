@@ -6,9 +6,9 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 20914cde3be3ff3061b061d930154bd72da45d11
+source-git-commit: f9634228fed8c194f1bdcdc9a368d4c0492b7fd5
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1070'
 ht-degree: 100%
 
 ---
@@ -23,6 +23,7 @@ Adobe Experience Manager ヘッドレス CMS を初めて使用する開発者�
 >id="aemcloud_headless_developer_resources"
 >title="AEM ヘッドレス開発者向けリソースとドキュメント"
 >abstract="AEM ヘッドレス CMS の概要と、優れたアプリケーションを構築および提供し、より迅速なエクスペリエンスを実現する方法を包括的に解説します。"
+>additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja" text="AEM ヘッドレス開発者向けリソース"
 
 
 ## はじめに {#introduction}
