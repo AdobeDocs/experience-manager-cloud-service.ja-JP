@@ -4,9 +4,9 @@ description: EDS フォームのカスタムコンポーネントの作成
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 23534e7bbff8d663fc3b888baa90f5d84e64d310
+source-git-commit: 9664495d17ad8a8101c886408bee1584b3d48f1e
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2103'
 ht-degree: 4%
 
 ---
@@ -248,7 +248,7 @@ blocks/form/
 
 スタイル設定のためにクラス **card** をコンポーネントに追加し、各ラジオに画像を追加しましょう。これには以下のコードを使用します。
 
-**cards.js の decorate 関数を使用したカスタムコンポーネントのスタイル設定**
+**card.js を使用したコンポーネントのスタイル設定**
 
 ```javascript
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
@@ -268,7 +268,7 @@ export default function decorate(element, fieldJson, container, formId) {
 }
 ```
 
-**cards.css のカスタムコンポーネントの実行時の動作を追加**
+**cards.css を使用した実行時の動作の追加**
 
 ```javascript
 .card .radio-wrapper {
@@ -505,13 +505,13 @@ git add . && git commit -m "Add card custom component" && git push
 
 10. **Update _component-definition.json**:`models/_component-definition.json` の手順で、グループ内の配列を `id custom-components` でオブジェクトで更新します。
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    これは、残りのコンポーネントと共に構築する新しいカードコンポーネントへの参照を提供することです
+   これは、残りのコンポーネントと共に構築する新しいカードコンポーネントへの参照を提供することです
 
 11. **ビルド :json スクリプトを実行**:`npm run build:json` を実行して、コンポーネントのすべての JSON 定義をコンパイルし、サーバーから提供される 1 つのファイルに結合します。 これにより、新しいコンポーネントのスキーマが結合された出力に確実に含まれます。
 
@@ -587,7 +587,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 ## 参照
 
-- form-field-types：すべてのフィールドタイプのベース HTML構造およびプロパティ。 フォームフィールドの構造とプロパティについて詳しくは、[ ここをクリック ](/help/edge/docs/forms/eds-form-field-properties) を参照してください。
+- [form-field-types](/help/edge/docs/forms/eds-form-field-properties.md)：すべてのフィールドタイプのベース HTML構造およびプロパティ。
 
 - **blocks/form/models/form-components**:OOTB およびカスタムコンポーネントプロパティ定義。
 

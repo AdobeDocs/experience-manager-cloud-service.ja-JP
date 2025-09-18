@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6dfcb0712f2c7208e100b52a290dcf4fbfe9d0e4
+source-git-commit: cd3a2735487b5b7383b24ab56a98d18e4584b4b4
 workflow-type: tm+mt
-source-wordcount: '6634'
+source-wordcount: '6639'
 ht-degree: 98%
 
 ---
@@ -526,7 +526,7 @@ ht-degree: 98%
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
-      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=ja)
+      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service の運用テレメトリ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概要と新機能](/help/assets/overview.md)
@@ -1152,6 +1152,7 @@ ht-degree: 98%
          + [フォームのパフォーマンスの監視：運用テレメトリのガイド](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [フォーム送信ガイド：フォーム送信サービスの使用](/help/forms/forms-submission-service.md)
       + [Edge Delivery Services Forms 用の送信設定](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [アダプティブ Forms ブロックのフィールドプロパティ](/help/edge/docs/forms/eds-form-field-properties.md)
       + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [フォーム作成のベストプラクティス](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + ヘッドレス {#headless}
@@ -1418,7 +1419,7 @@ ht-degree: 98%
       + [開発者モード](/help/implementing/developing/tools/developer-mode.md)
       + [Eclipse 用 AEM 開発者ツール](/help/implementing/developing/tools/eclipse.md)
       + [コンテンツのコピー](/help/implementing/developing/tools/content-copy.md)
-      + [Content Package Maven プラグイン](/help/implementing/developing/tools/maven-plugin.md)
+      + [コンテンツパッケージ Maven プラグイン](/help/implementing/developing/tools/maven-plugin.md)
       + [AEM Repo ツール](/help/implementing/developing/tools/repo-tool.md)
       + [CRXDE Lite の使用](/help/implementing/developing/tools/crxde.md)
       + [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)
