@@ -5,16 +5,16 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '220'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
 
 # ユニバーサルエディター 2025.09.11 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2025 年 9 月 11 日リリースのリリースノートです。
+ユニバーサルエディターの 2025年9月11日（PT）リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -22,9 +22,9 @@ ht-degree: 46%
 
 ## 新機能 {#what-is-new}
 
-* [ コピーして貼り付け ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) を、同じページのコンテナ内のコンポーネントで使用できるようになりました。
+* [コピー＆ペースト](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)が同じページ上のコンテナ内のコンポーネントに対して使用できるようになりました。
 * 6.5 LTS SP1 がサポートされるようになりました。
-* ユニバーサルエディターは、コンテンツフラグメントに対して、[ マルチサイト管理の継承 ](/help/sites-cloud/authoring/universal-editor/inheritance.md) をサポートするようになりました。これには、ライブコピーコンテンツフラグメントの編集時に継承を自動的に解除することも含まれます。
+* ユニバーサルエディターでは、ライブコピーのコンテンツフラグメントを編集する際に自動的に継承を解除するなど、コンテンツフラグメントの[マルチサイト管理の継承](/help/sites-cloud/authoring/universal-editor/inheritance.md)がサポートされるようになりました。
 
 ## 早期導入機能 {#early-adopter}
 
@@ -34,11 +34,11 @@ ht-degree: 46%
 
 リンクダイアログにページピッカーを備えた新規 ProseMirror RTE が右側のパネルで使用できるようになりました。
 
-### ページをまたいだコピー&amp;ペースト {#copy-paste}
+### ページ間のコピー＆ペースト {#copy-paste}
 
-コピー&amp;ペーストが、同じページ内だけでなく、ページ間でも可能になりました。
+コピー＆ペーストが同じページ内に加えてページ間で可能になりました。
 
 ## その他の改善点 {#other-improvements}
 
-* AEMをバックエンドシステムとして使用するユニバーサルエディターの周辺に、パフォーマンスの小さな改善がいくつか実装されています。
-* コンテンツフラグメントは、Open API を使用して公開されるようになりました。これにより、パフォーマンスが向上し、コンテンツフラグメントエディターとコンソールの公開方法との一貫性が保たれます。
+* AEM をバックエンドシステムとして操作するユニバーサルエディターを中心に、いくつかの小さなパフォーマンス改善が実装されました。
+* コンテンツフラグメントは、Open API を使用して公開されるようになりました。これにより、パフォーマンスが向上し、コンテンツフラグメントエディターとコンソールの公開方法の一貫性が保持されます。
