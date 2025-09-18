@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: d8a57131492a7e0d23b3ad803ea773f3ad7501cb
+source-git-commit: 16c97e13ba96df743afd6da0ad9416dfa0c825f7
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 91%
+source-wordcount: '2495'
+ht-degree: 89%
 
 ---
 
@@ -80,6 +80,22 @@ ht-degree: 91%
 ![リッチテキスト編集ダイアログ](assets/rich-text-canvas.png)
 
 変更を破棄または保存するには、それぞれ「**キャンセル**」または「**完了**」をタップまたはクリックします。
+
+#### リッチテキスト書式設定オプション {#formatting-options}
+
+ユニバーサルエディターのリッチテキストエディター（RTE）を使用すると、作成者は標準のテキスト書式設定を適用できます。 デフォルトでは、次のオプションを使用できます。
+
+* 段落（h1、h2、h3 など）
+* 太字
+* 斜体
+* 下線
+* 上付き文字
+* 下付き文字
+* 箇条書きリスト
+* 番号付きリスト
+* リンク
+
+RTE は、作成者のニーズに応じて、オプションを非表示にしたり、追加のオプションを表示したりするように設定できます。 詳しくは、ドキュメント [ ユニバーサルエディターの RTE の設定 ](/help/implementing/universal-editor/configure-rte.md) を参照してください。
 
 ### メディアの編集 {#edit-media}
 

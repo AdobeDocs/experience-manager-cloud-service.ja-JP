@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: cd3a2735487b5b7383b24ab56a98d18e4584b4b4
+source-git-commit: c0eca900b5bb7c54135e763713821f2f62a2d898
 workflow-type: tm+mt
-source-wordcount: '6639'
+source-wordcount: '6642'
 ht-degree: 98%
 
 ---
@@ -526,7 +526,7 @@ ht-degree: 98%
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
-      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=ja)
+      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service の運用テレメトリ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概要と新機能](/help/assets/overview.md)
@@ -1382,17 +1382,18 @@ ht-degree: 98%
          + [コンポーネント定義](/help/implementing/universal-editor/component-definition.md)
          + [モデル定義、フィールドおよびコンポーネントタイプ](/help/implementing/universal-editor/field-types.md)
          + [公開](/help/implementing/universal-editor/publishing.md)
-         + [SecurBank サンプルアプリ](/help/implementing/universal-editor/securbank.md)
          + [イベント](/help/implementing/universal-editor/events.md)
          + [コンポーネントのフィルタリング](/help/implementing/universal-editor/filtering.md)
+         + [RTE の設定](/help/implementing/universal-editor/configure-rte.md)
          + [カスタマイズ](/help/implementing/universal-editor/customizing.md)
          + [拡張](/help/implementing/universal-editor/extending.md)
          + [アーキテクチャ](/help/implementing/universal-editor/architecture.md)
          + [認証](/help/implementing/universal-editor/authentication.md)
+         + [呼び出し](/help/implementing/universal-editor/calls.md)
          + [はじめに](/help/implementing/universal-editor/getting-started.md)
          + [デベロッパー向け概要](/help/implementing/universal-editor/developer-overview.md)
          + [ローカル AEM 開発](/help/implementing/universal-editor/local-dev.md)
-         + [通話](/help/implementing/universal-editor/calls.md)
+         + [SecurBank サンプルアプリ ](/help/implementing/universal-editor/securbank.md)
       + [ヘッドレスエクスペリエンス管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=ja)
       + ハイブリッドおよび SPA 開発 {#hybrid}
          + [AEM でのハイブリッドと SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)

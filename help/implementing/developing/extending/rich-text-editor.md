@@ -5,12 +5,13 @@ contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
-workflow-type: ht
-source-wordcount: '1858'
-ht-degree: 100%
+source-git-commit: 2c1b444d7b7dad94cc9ebda59783f9c6fde84a91
+workflow-type: tm+mt
+source-wordcount: '1892'
+ht-degree: 97%
 
 ---
+
 
 # リッチテキストエディターの設定 {#configure-the-rich-text-editor}
 
@@ -23,6 +24,10 @@ RTE の概念と設定に必要な手順を以下に示します。
 | [インターフェイスの理解](#understand-rte-ui) | [設定の場所の理解および設定](#understand-the-configuration-paths-and-locations) | [プラグインの設定](#enable-rte-functionalities-by-activating-plug-ins) |
 | [編集モードの種類](#editingmodes) | [プラグインのアクティベーション](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin) | [機能プロパティの設定](#aboutplugins) |
 | [プラグインについて](#aboutplugins) | [RTE ツールバーの設定](#dialogfullscreen) | [貼り付けモードの設定](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles) |
+
+>[!NOTE]
+>
+>このドキュメントで説明される RTE は、ページエディターで使用できる RTE を表しています。 最新のユニバーサルエディターを使用している場合、詳しくは、[ ユニバーサルエディターの RTE の設定 ](/help/implementing/universal-editor/configure-rte.md) ドキュメントを参照してください。
 
 ## 作成者が使用できるユーザーインターフェイスを理解します。 {#understand-rte-ui}
 
@@ -137,7 +142,7 @@ RTE の基本機能は、該当するプラグインのノードにある `featu
 
 ダイアログ編集モードで適用する次のプロパティを設定します。
 
-* `useFixedInlineToolbar`：RTE ツールバーは、フローティングではなく固定することができます。RTE ノードで定義されているこのブール型プロパティ sling:resourceType= `cq/gui/components/authoring/dialog/richtext` を `True` に設定します。このプロパティを `True` に設定すると、リッチテキストの編集が `foundation-contentloaded` イベントで開始されます。これを防ぐには、`customStart` プロパティを `True` に設定し、`rte-start` イベントを呼び出して RTE の編集を開始するようにします。このプロパティが `true` の場合、RTE はクリックで開始しなくなり、これがデフォルトの動作になります。
+* `useFixedInlineToolbar`：RTE ツールバーは、フローティングではなく固定することができます。sling:resourceType= `cq/gui/components/authoring/dialog/richtext` を `True` に設定して、RTE ノードで定義されたこのブール値プロパティを設定します。 このプロパティを `True` に設定すると、リッチテキストの編集が `foundation-contentloaded` イベントで開始されます。これを防ぐには、`customStart` プロパティを `True` に設定し、`rte-start` イベントを呼び出して RTE の編集を開始するようにします。このプロパティが `true` の場合、RTE はクリックで開始しなくなり、これがデフォルトの動作になります。
 
 * `customStart`：RTE を開始するタイミングを `True` イベントの呼び出しによって制御するには、RTE ノードに定義されているこのブール値プロパティを `rte-start` に設定します。
 
@@ -214,7 +219,7 @@ RTE プラグインの設定について詳しくは、[RTE プラグインを�
 
 オプションがポップオーバー（プラグインのいくつかの機能を含む）の場合は、`#PluginName` と指定されます（例：`#format`）。
 
-オプションのグループの間の区切り文字（`|`）は、`-` で指定できます。
+オプションのグループの間の区切り記号（`|`）は、`-` で指定できます。
 
 インラインまたはフルスクリーンモードのポップアップノードには、使用するポップオーバーのリストが含まれます。`popovers` ノードの下の各子ノードは、プラグインの名前を取って名付けられます（例：format）。プラグインの機能のリストが含まれるプロパティ「items」があります（例：format#bold）。
 
