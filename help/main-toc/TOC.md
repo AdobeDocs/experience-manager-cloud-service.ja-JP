@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c0eca900b5bb7c54135e763713821f2f62a2d898
+source-git-commit: 8a0d4b6d3228306d28c047ec947c5ce017bda77f
 workflow-type: tm+mt
-source-wordcount: '6642'
+source-wordcount: '6648'
 ht-degree: 98%
 
 ---
@@ -526,7 +526,7 @@ ht-degree: 98%
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
-      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=ja)
+      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service の運用テレメトリ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概要と新機能](/help/assets/overview.md)
@@ -1474,6 +1474,7 @@ ht-degree: 98%
    + AEM as a Cloud Service へのデプロイ {#deploying}
       + [AEM as a Cloud Service へのデプロイ](/help/implementing/deploying/overview.md)
       + [AEM バージョンのアップデート](/help/implementing/deploying/aem-version-updates.md)
+      + [非表示時間と自由期間の更新](/help/implementing/deploying/quiet-hours-update-free-periods.md)
       + [AEM as a Cloud Service の OSGi の設定](/help/implementing/deploying/configuring-osgi.md)
       + [リソースマッピング](/help/implementing/deploying/resource-mapping.md)
    + オーサー層 {#author-tier}

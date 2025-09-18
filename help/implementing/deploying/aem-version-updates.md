@@ -1,11 +1,11 @@
 ---
 title: AEM バージョンのアップデート
-description: Adobe Experience Manager (AEM) as a Cloud Service で継続的統合および継続的配信（CI／CD）を使用して、プロジェクトを最新バージョンに保つ方法について説明します。
+description: Adobe Experience Manager (AEM) as a Cloud Service で継続的統合および継続的配信（CI/CD）を使用して、プロジェクトを最新バージョンに保つ方法について説明します。
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 01de7b0c4e0408a3bbc5322e37db5075d43c4c5f
+workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 100%
 
@@ -14,11 +14,11 @@ ht-degree: 100%
 
 # AEM バージョンのアップデート {#aem-version-updates}
 
-Adobe Experience Manager (AEM) as a Cloud Service で継続的統合および継続的配信（CI／CD）を使用して、プロジェクトを最新バージョンに保つ方法について説明します。
+Adobe Experience Manager (AEM) as a Cloud Service で継続的統合および継続的配信（CI/CD）を使用して、プロジェクトを最新バージョンに保つ方法について説明します。
 
-## CI／CD {#ci-cd}
+## CI/CD {#ci-cd}
 
-AEM as a Cloud Service では、継続的統合および継続的配信（CI／CD）を使用して、プロジェクトを確実に最新の AEM バージョンで稼働できます。このプロセスは、ユーザーに混乱を与えることなく、実稼動、ステージング、開発の各インスタンスをシームレスに更新します。
+AEM as a Cloud Service では、継続的インテグレーションおよび継続的配信（CI/CD）を使用して、プロジェクトを確実に最新の AEM バージョンで稼働できます。このプロセスは、ユーザーに混乱を与えることなく、実稼動、ステージング、開発の各インスタンスをシームレスに更新します。
 
 >[!NOTE]
 > 開発インスタンスは既に自動的に更新されているので、開発インスタンスの手動更新は、_一部_&#x200B;のプログラムで利用できない場合があります。この機能は、自動更新への切り替えが行われているところです。
@@ -38,7 +38,6 @@ Cloud Manager の UI 環境パネルを使用して、以前と同様、環境�
 >[!NOTE]
 >
 > メモ：2024 年には、すべてのお客様に対して、非侵入型メンテナンス更新が段階的に有効になる予定です。
-
 
 ## 更新のタイプ {#update-types}
 
