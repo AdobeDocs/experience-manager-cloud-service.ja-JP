@@ -3,9 +3,9 @@ title: OpenAPI 機能を備えた Dynamic Media を使用したバニティー U
 description: Dynamic Media OpenAPI 機能を使用して、長いアセット配信 URL を短いブランドのバニティー URL に変換します。 バニティー URL は、複雑な配信 URL の短く、クリーンで、覚えやすく、読みやすいバージョンです。 バニティ URL には、ブランド名、製品名および関連キーワードを含めて、ブランドの可視性とユーザーエンゲージメントを高めることができます
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 54c592e4db4cbaa884e298cc5e81115cd5573b28
+source-git-commit: e4ee2e3f251f585a3e057c04d62039a0c2e8bef1
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ ht-degree: 0%
 
 1. [Cloud Manager環境の設定ページに移動して ](/help/implementing/cloud-manager/environment-variables.md) 次の手順を実行します。
    1. 変数 `ASSET_DELIVERY_VANITY_ID` 追加します。 これが鍵です。
-   1. 値フィールドを使用して、バニティ ID を保持するメタデータプロパティにマッピングします。 マッピングは `dc:<your-metadata-property>` 形式に従います。ここで、メタデータマッピングプレフィックス（dc：など）は、メタデータ設定プロパティによって異なります。
+   1. 値フィールドを使用して、バニティ ID を保持するアセットメタデータプロパティにマッピングします。 マッピングは `dc:<your-metadata-property>` 形式に従います。ここで、メタデータマッピングプレフィックス（dc：など）は、アセットメタデータ設定プロパティに応じて異なります。
       ![ASSET_DELIVERY_VANITY_ID 変数 ](/help/assets/assets/environment-config.png)
 1. 変更を保存し、環境内のポッドを再起動します。
 
@@ -134,7 +134,7 @@ Cloud Manager環境の `ASSET_DELIVERY_VANITY_ID` 変数を、バニティ ID �
 
 ## バニティ URL を使用した拡大・縮小{#scale-using-vanity-url}
 
-AEM as a Cloud Serviceを使用すると、web アドレス内で [DNS 名と CDN 名をカスタマイズ ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) できます。 これらの AEMCS 機能をバニティ URL と共に使用して、明確で説明的、ブランド化された、直感的で [ 前述のメリット ](#key-benefits) な独自の web アドレスに変換します。
+AEM as a Cloud Serviceを使用すると、web アドレス内で [DNS 名と CDN 名をカスタマイズ ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) できます。 これらの AEMCS 機能をバニティ URL と共に使用して、明確で説明的、ブランド化された、直感的で [ 前述のメリット ](#key-benefits) な独自の web アドレスに変換します。
 
 次のバニティー URL と、カスタマイズ可能なコンポーネントを参照してください。
 
@@ -184,7 +184,7 @@ AEM as a Cloud Serviceを使用すると、web アドレス内で [DNS 名と CD
 配信用の CDN ルールを書き換えるには、次の手順を実行します。
 
 1. AEM リポジトリに移動して、YAML 設定ファイルを作成します。
-2. [ 設定 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) セクションの手順を実行して、CDN ルールを設定し、Cloud Manager設定パイプラインを通じて設定をデプロイします。
+2. [ 設定 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) セクションの手順を実行して、CDN ルールを設定し、Cloud Manager設定パイプラインを通じて設定をデプロイします。
 ドメインパスを作成するには、次の [ ベストプラクティス ](#best-practices) に従います。
    [CDN 書き換えルールの詳細情報 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations)。
 
