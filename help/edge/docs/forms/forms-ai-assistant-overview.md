@@ -6,10 +6,10 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: ce61bc434614e5d7b92de3f1290e7e15325d27b7
+source-git-commit: 69f17a4abddf025207448caed11f138c275e7b33
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 40%
+source-wordcount: '809'
+ht-degree: 45%
 
 ---
 
@@ -95,13 +95,14 @@ Forms Experience Builder は、シンプルな対話型のアプローチに従�
 
 ## シナリオの例
 
+<!--
 <div class="columns">
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Transform PDF Forms to Digital Forms">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">PDF forms をデジタルフォームに変換</p>
-                    <p class="is-size-6">Acroforms、XFA PDF、フラットなPDF ドキュメントを、機能を強化した、レスポンシブなインタラクティブなデジタルフォームに変換する。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Transform PDF Forms to Digital Forms</p>
+                    <p class="is-size-6">Convert Acroforms, XFA PDFs, or flat PDF documents into responsive, interactive digital forms with enhanced functionality.</p>
                 </div>
             </div>
         </div>
@@ -110,8 +111,8 @@ Forms Experience Builder は、シンプルな対話型のアプローチに従�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">従来の XFA Formsを最新化</p>
-                    <p class="is-size-6">ユーザーワークフローを改善して、複雑な XFA アプリケーションを最新のアクセス可能なデジタルエクスペリエンスに変換します。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Modernize Legacy XFA Forms</p>
+                    <p class="is-size-6">Transform complex XFA applications into modern, accessible digital experiences with improved user workflows.</p>
                 </div>
             </div>
         </div>
@@ -120,13 +121,14 @@ Forms Experience Builder は、シンプルな対話型のアプローチに従�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">スクリーンショットのデジタルFormsへの変換</p>
-                    <p class="is-size-6">画像、スクリーンショット、手描きのフォームを、完全に機能するデジタルエクスペリエンスに変換します。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Convert Screenshots to Digital Forms</p>
+                    <p class="is-size-6">Turn images, screenshots, or hand-drawn forms into fully functional digital experiences.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+-->
 
 <!-- #### Import and Enhance Web Forms
 
@@ -151,13 +153,14 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 ## 組織にとってのメリット
 
+<!--
 <div class="columns">
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Democratized Form Creation">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">民主化されたフォーム作成</p>
-                    <p class="is-size-6">技術に詳しくないユーザーが、自然言語に関する会話を通じて、プログラミングの知識がなくても高度なフォームを作成できるようにします。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Democratized Form Creation</p>
+                    <p class="is-size-6">Empower non-technical users to create sophisticated forms without programming knowledge through natural language conversations.</p>
                 </div>
             </div>
         </div>
@@ -166,8 +169,8 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">価値創出までの時間（TTV）の短縮</p>
-                    <p class="is-size-6">フォーム開発を数日から数時間へと大幅に高速化し、デジタルイニシアティブの迅速な市場投入を可能にします。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Reduced Time to Value (TTV)</p>
+                    <p class="is-size-6">Dramatically accelerate form development from days to hours, enabling faster go-to-market for digital initiatives.</p>
                 </div>
             </div>
         </div>
@@ -176,8 +179,8 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">インターフェイスのシンプルさ</p>
-                    <p class="is-size-6">直感的な会話型インターフェイスにより学習曲線をなくし、トレーニング時間を短縮して採用を増やします。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Interface Simplicity</p>
+                    <p class="is-size-6">Eliminate the learning curve with an intuitive conversational interface, reducing training time and increasing adoption.</p>
                 </div>
             </div>
         </div>
@@ -186,13 +189,14 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">最新化の取り組みの拡大</p>
-                    <p class="is-size-6">レガシーフォームポートフォリオを効率的に最新化し、ビジネスロジックを維持し、フォームエコシステム全体でのユーザーエクスペリエンスを強化します。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Scaling Modernization Efforts</p>
+                    <p class="is-size-6">Modernize legacy form portfolios efficiently, preserving business logic and enhancing user experience across your entire form ecosystem.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+-->
 
 ## オンボーディング
 
