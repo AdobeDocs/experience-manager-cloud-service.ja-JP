@@ -4,9 +4,9 @@ description: ユニバーサルエディターへのアクセス権を取得す�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
-workflow-type: ht
-source-wordcount: '981'
+source-git-commit: 8e1610e2835a9e85de2d2bffa6a883777c92fe96
+workflow-type: tm+mt
+source-wordcount: '979'
 ht-degree: 100%
 
 ---
@@ -51,9 +51,9 @@ ht-degree: 100%
 * `<protocol>` - 使用するユニバーサルエディター永続化サービスの永続化プラグインを示します。 例：`aem`
 * `<url>` - 変更が保持されるシステムの URL です。 例：`http://localhost:4502`
 
-識別子 `urn:adobe:aue:system` は、Adobe Universal Editor の接続を表します。
+識別子 `urn:adobe:aue:system` は、アドビユニバーサルエディターの接続を表します。
 
-`data-aue-resource` は `urn` プレフィックスを使用して識別子を短縮します。
+`data-aue-resource` は `urn` 接頭辞を使用して識別子を短縮します。
 
 ```html
 data-aue-resource="urn:<referenceName>:<resource>"
@@ -69,8 +69,6 @@ data-aue-resource="urn:<referenceName>:<resource>"
 ### 接続例 {#example}
 
 ```html
-<meta name="urn:adobe:aue:system:<referenceName>" content="<protocol>:<url>">
-
 <html>
 <head>
     <meta name="urn:adobe:aue:system:aemconnection" content="aem:https://localhost:4502">
@@ -100,7 +98,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 ### 設定 {#configuration-settings}
 
-接続 URN で `config` プレフィックスを使用して、必要に応じてサービスおよび拡張エンドポイントを設定します。
+接続 URN で `config` 接頭辞を使用して、必要に応じてサービスおよび拡張エンドポイントを設定します。
 
 アドビがホストするユニバーサルエディターサービスを使用しない場合は、これはメタタグで設定できます。 ユニバーサルエディターが提供するデフォルトのサービスエンドポイントを上書きするには、独自のサービスエンドポイントを設定します。
 
@@ -148,7 +146,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 これらの設定手順が完了すると、AEM は次の順序でページのユニバーサルエディターを開きます。
 
 1. AEM は `Universal Editor Opening Mapping` の下にあるマッピングを確認し、コンテンツがそこに定義されているパスの下にある場合は、ユニバーサルエディターが開かれます。
-1. `Universal Editor Opening Mapping` で定義されたパスの下にないコンテンツの場合、AEM はコンテンツの `resourceType` が、**ユニバーサルエディターで開かれる Sling:resourceTypes**&#x200B;で定義されたものと一致するかどうかを確認し、コンテンツがこれらのタイプのいずれかに一致する場合は、`${author}${path}.html` でユニバーサルエディターが開かれます。
+1. `Universal Editor Opening Mapping` で定義されたパスの下にないコンテンツの場合、AEM はコンテンツの `resourceType` が、**ユニバーサルエディターで開かれる Sling:resourceTypes** で定義されたものと一致するかどうかを確認し、コンテンツがこれらのタイプのいずれかに一致する場合は、`${author}${path}.html` でユニバーサルエディターが開かれます。
 1. それ以外の場合は、AEM によってページエディターが開かれます。
 
 「**ユニバーサルエディターを開くマッピング**」フィールドでマッピングを定義するには、次の変数を使用できます。
