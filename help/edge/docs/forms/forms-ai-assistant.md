@@ -6,7 +6,7 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
+source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 100%
@@ -345,4 +345,4 @@ AI アシスタントの改善にご協力ください。
 
 ## 関連リソース
 
-[AEM Forms AI アシスタント - プロンプトライブラリ](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+[AEM Forms AI アシスタント - プロンプトライブラリ](help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)

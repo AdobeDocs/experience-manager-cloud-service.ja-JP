@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8a0d4b6d3228306d28c047ec947c5ce017bda77f
+source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
 workflow-type: tm+mt
-source-wordcount: '6648'
-ht-degree: 98%
+source-wordcount: '6665'
+ht-degree: 97%
 
 ---
 
@@ -526,7 +526,7 @@ ht-degree: 98%
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
-      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=ja)
+      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service の運用テレメトリ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概要と新機能](/help/assets/overview.md)
@@ -1013,12 +1013,16 @@ ht-degree: 98%
       + [バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)
       + [バリエーションを生成](/help/generative-ai/generate-variations.md)
    + Forms Experience Builder {#forms-experience-builder}
-      + [AEM Forms 用 AI アシスタント（Forms Experience Builder）](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-      + [AEM Forms 用 AI アシスタントの基本を学ぶ](/help/edge/docs/forms/forms-ai-assistant.md)
-      + [AEM Forms 用 AI アシスタント（Forms Experience Builder）の基本を学ぶ](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
-      + [AEM Forms AI アシスタント - プロンプトライブラリ](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-      + [Forms Experience Builder - ベストプラクティス](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
-      + [Forms Experience Builder - トラブルシューティングガイド](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
+      + [Forms Experience Builder – 概要](/help/forms/experience-builder/product-overview.md)
+      + [Forms Experience Builder の概要](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
+      + [Forms Experience Builder のデプロイと設定](/help/forms/experience-builder/deploy-forms-experience-builder.md)
+      + 方法 {#forms-experience-builder-how-to}
+         + [画像をフォームに変換する方法](/help/forms/experience-builder/intelligent-import-conversion.md)
+         + [フォームの送信と統合を設定する方法](/help/forms/experience-builder/form-submission-integration.md)
+         + [Forms Experience Builder で LLM 拡張スマートフィールドを作成する方法](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
+         + [Forms experience builder で新しいスレッドの会話を開始するにはどうすればよいですか？](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
+      + [プロンプトライブラリ](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
+      + [よくある質問（FAQ）](/help/forms/experience-builder/forms-experience-builder-frequently-asked-questions.md)
 + Screens {#screens-as-cloud-service}
    + Screens as a Cloud Service の概要 {#overview}
       + [はじめに](/help/screens-cloud/introduction/introduction.md)
