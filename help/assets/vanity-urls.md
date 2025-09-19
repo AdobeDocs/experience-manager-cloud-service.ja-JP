@@ -3,9 +3,9 @@ title: OpenAPI 機能を備えた Dynamic Media を使用したバニティー U
 description: Dynamic Media OpenAPI 機能を使用して、長いアセット配信 URL を短いブランドのバニティー URL に変換します。 バニティー URL は、複雑な配信 URL の短く、クリーンで、覚えやすく、読みやすいバージョンです。 バニティ URL には、ブランド名、製品名および関連キーワードを含めて、ブランドの可視性とユーザーエンゲージメントを高めることができます
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e4ee2e3f251f585a3e057c04d62039a0c2e8bef1
+source-git-commit: d9223a8af5d531e66a91e9054201de765be50961
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1380'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # バニティー URL を使用{#vanity-urls}
 
-[!DNL Dynamic Media OpenAPI capabilities] を使用すると、長いアセット配信 URL を短いブランドのバニティ URL に変換できます。 標準のアセット配信 URL には、システム生成のアセット UUID が含まれています。このアセット UUID が配信 URL を複雑にし、覚えておいたり共有したりするのが困難になります。 これらのアセット UUID を単純な識別子（バニティ ID）に置き換えて、バニティ URL を生成します。 バニティ URL は、複雑な配信 URL の短く、クリーンで読みやすいバージョンです。
+[!DNL Dynamic Media with OpenAPI capabilities] を使用すると、長いアセット配信 URL を短いブランドのバニティ URL に変換できます。 標準のアセット配信 URL には、システム生成のアセット UUID が含まれています。このアセット UUID が配信 URL を複雑にし、覚えておいたり共有したりするのが困難になります。 これらのアセット UUID を単純な識別子（バニティ ID）に置き換えて、バニティ URL を生成します。 バニティ URL は、複雑な配信 URL の短く、クリーンで読みやすいバージョンです。
 
 その違いを理解するには、次の URL 形式を参照してください。
 * [標準配信 URL](#standard-urls)
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 標準の配信 URL では、`aaid` の後に UUID を使用し、バニティ URL では、`avid` の後にカスタム識別子（バニティ識別子）を使用します。
 
-短くシンプルなバニティ識別子を使用して、配信 URL を短く、クリーンで、読みやすく、覚えやすく、共有します。 ブランド名、製品名および関連するキーワードをバニティ ID として使用して、ブランドの可視性とユーザーエンゲージメントを高めます。
+短くシンプルなバニティ識別子を使用して、バニティ URL を短く、クリーンで、読みやすく、覚えやすく、共有します。 ブランド名、製品名および関連するキーワードをバニティ ID として使用して、ブランドの可視性とユーザーエンゲージメントを高めます。
 
 ユーザーがバニティー URL をクリックすると、[!DNL Dynamic Media with OpenAPI] は取り込み時に元のアセットの場所に自動的にマッピングし、配信時に適切に解決して、アセットをユーザーにサーバーします。
 
@@ -130,11 +130,11 @@ Cloud Manager環境の `ASSET_DELIVERY_VANITY_ID` 変数を、バニティ ID �
 
 ユーザーがバニティ URL をクリックすると、[!DNL Dynamic Media with OpenAPI] は取り込み時にバニティ ID を元のアセット UUID に自動的にマッピングし、配信時に適切に解決して、遅滞なくアセットをユーザーに提供します。 アセット配信のパフォーマンスに影響を与えることなく、リアルタイムでバニティ URL をカスタマイズできます。
 
-[AEM Cloud Service の高度なカスタマイズ機能を使用して、バニティ URL の影響を強化します。](#scale-using-vanity-url)
+[ バニティ URL で AEM Cloud Service の高度なカスタマイズ機能を使用して、その影響を強化します ](#scale-using-vanity-url)。
 
 ## バニティ URL を使用した拡大・縮小{#scale-using-vanity-url}
 
-AEM as a Cloud Serviceを使用すると、web アドレス内で [DNS 名と CDN 名をカスタマイズ ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) できます。 これらの AEMCS 機能をバニティ URL と共に使用して、明確で説明的、ブランド化された、直感的で [ 前述のメリット ](#key-benefits) な独自の web アドレスに変換します。
+AEM as a Cloud Serviceを使用すると、web アドレス内で [DNS 名と CDN 名をカスタマイズ ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) できます。 これらの AEMCS 機能をバニティ URL と共に使用して、明確で説明的、ブランド化された、直感的で [ 前述のメリット ](#key-benefits) な独自の web アドレスに変換します。
 
 次のバニティー URL と、カスタマイズ可能なコンポーネントを参照してください。
 
@@ -184,7 +184,7 @@ AEM as a Cloud Serviceを使用すると、web アドレス内で [DNS 名と CD
 配信用の CDN ルールを書き換えるには、次の手順を実行します。
 
 1. AEM リポジトリに移動して、YAML 設定ファイルを作成します。
-2. [ 設定 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) セクションの手順を実行して、CDN ルールを設定し、Cloud Manager設定パイプラインを通じて設定をデプロイします。
+2. [ 設定 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) セクションの手順を実行して、CDN ルールを設定し、Cloud Manager設定パイプラインを通じて設定をデプロイします。
 ドメインパスを作成するには、次の [ ベストプラクティス ](#best-practices) に従います。
    [CDN 書き換えルールの詳細情報 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations)。
 
@@ -233,9 +233,9 @@ type: transform
 
 ## クリーンなバニティ URL を作成するためのベストプラクティスに従う{#best-practices}
 
-バニティ ID、カスタム DNS およびドメイン名を作成する際は、次のベストプラクティスに従います。
+[ バニティ ID](#create-vanity-urls)、[ カスタム DNS](#customize-dns) および [CDN 名 ](#rewrite-cdn-rules) を作成するには、次のベストプラクティスに従います。
 
 1. バニティ ID には、スペース、スラッシュ、ハイフンなどの特殊文字を使用しないでください。 バニティ ID の特殊文字が、事前に定義されたマッピングを使用して置き換えられます。
-1. ブランド名、製品名、関連キーワードをバニティ ID、カスタム DNS およびドメイン名で使用して、ブランドの可視性とユーザーエンゲージメントを高めます。
+1. ブランド名、製品名、関連キーワードを [ バニティ ID](#create-vanity-urls)、[ カスタム DNS](#customize-dns) および [CDN 名 ](#rewrite-cdn-rules) で使用して、ブランドの可視性とユーザーエンゲージメントを高めます。
 1. 意味を伝える短い説明的な単語または文字列を使用します。
 1. クリックごとにユーザーを招待するテキストを使用します。
