@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bf7145e7a4ebf6601670a0721defc411b552aa2e
+source-git-commit: 4f7bca2c4ed4e2d3e02760bc862db0a183a115a4
 workflow-type: tm+mt
 source-wordcount: '6665'
 ht-degree: 97%
@@ -526,7 +526,7 @@ ht-degree: 97%
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
-      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=ja)
+      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service の運用テレメトリ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概要と新機能](/help/assets/overview.md)
@@ -1115,11 +1115,7 @@ ht-degree: 97%
       + [概要](/help/edge/docs/forms/overview.md)
 
       + WYSIWYG オーサリング {#universal-editor}
-         + カスケードドロップダウン {#cascading-drop-down-list}
-            + [はじめに](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
-            + [API 統合を作成](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
-            + [フォームの作成](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
-            + [Forms の Edge Delivery Services のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Forms の Edge Delivery Services のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [AEM Forms のユニバーサルエディターインターフェイスの操作](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [ユニバーサルエディターでの AEM Forms の Edge Delivery Services の基本を学ぶ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [Edge Delivery Services を使用したアダプティブフォームの作成と公開](/help/edge/docs/forms/universal-editor/create-forms.md)
@@ -1136,6 +1132,10 @@ ht-degree: 97%
          + [EDS フォームのカスタムコンポーネントの作成](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Edge Delivery Services フォーム送信での 403 Forbidden エラーのトラブルシューティング](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
          + [API 統合を使用したSalesforce リードオブジェクトの作成 ](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
+         + カスケードドロップダウン {#cascading-drop-down-list}
+            + [はじめに](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
+            + [API 統合を作成](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
+            + [ フォームを作成 ](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
       + ドキュメントベースのオーサリング {#getting-started-edge-delivery-services-forms}
          + [最初のフォームの作成：Google Sheetsと Excel を使用したクイックスタートガイド](/help/edge/docs/forms/tutorial.md)
          + [Google Sheets または Excel を使用したフォームの作成方法：ステップバイステップガイド](/help/edge/docs/forms/create-forms.md)
