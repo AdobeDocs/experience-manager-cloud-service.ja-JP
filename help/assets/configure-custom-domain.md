@@ -1,26 +1,26 @@
 ---
-title: パブリッシュ層のカスタムドメインの設定
-description: Adobe Cloud Manager でパブリッシュ層のカスタムドメインを設定する方法について説明します。
+title: 配信層用のカスタムドメインの設定
+description: Adobe Cloud Managerで配信層用のカスタムドメインを設定する方法について説明します。
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: d2859c547c87bd1856ba0e05fac835db434d824c
+workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
-# パブリッシュ層のカスタムドメインの設定{#configure-custom-domain}
+# 配信層用のカスタムドメインの設定{#configure-custom-domain}
 
 Adobe Cloud Manager では、カスタムドメインを追加して web サイトを目立たせることができます。AEM as a Cloud Service にはデフォルトのドメインが設定されていますが、必要に応じてカスタマイズできます。
 
 ## 始める前に
 
 * マルチ SAN（サブジェクト代替名）TLS または SSL 証明書が必要です。
-* SSL 証明書には、同じドメイン内のパブリッシュ層にマッピングされた証明書に対して個別の SAN が必要です。
+* SSL 証明書には、同じドメイン内の配信層用にマッピングされた証明書に対して個別の SAN が必要です。
 * 証明書ポリシーは、ドメイン検証（DV）ポリシーではなく、拡張検証（EV）または組織検証（OV）のいずれかに準拠する必要があります。
 
 
-## パブリッシュ層のカスタムドメインの設定
+## 配信層用のカスタムドメインの設定
 
 1. **[!UICONTROL Adobe Cloud Manager]**／**[!UICONTROL プログラムの概要]**／**[!UICONTROL SSL 証明書]**に移動し、SSL 証明書を追加します。
    ![画像](/help/assets/assets/ssl-certificate.png)
