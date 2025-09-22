@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
-workflow-type: ht
-source-wordcount: '2824'
+source-git-commit: ea18cacd3a1058f5b9c8e2e81e5e7c36aa1964b4
+workflow-type: tm+mt
+source-wordcount: '2823'
 ht-degree: 100%
 
 ---
@@ -176,9 +176,9 @@ ht-degree: 100%
 
 コンテンツフラグメントのバリエーションを削除するには、次の手順に従います。
 
-    >[!NOTE]
-    >
-    >**メイン** は削除できません。
+>[!NOTE]
+>
+>**メイン**&#x200B;は削除できません。
 
 1. 「バリエーション」を選択します。
 
