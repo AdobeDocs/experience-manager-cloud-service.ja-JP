@@ -3,10 +3,10 @@ title: 属性ベースのアクセス制御
 description: 属性ベースのアクセス制御を有効にして、メタデータベースのルールを定義し、コンテンツハブで使用可能なアセットへのアクセスレベルを定義する方法について説明します。
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: ea1760a3076fa0e18dca38fe856ff0ef78b18f07
-workflow-type: ht
+source-git-commit: 0833e31d37c473d37e16ee037823e61611622322
+workflow-type: tm+mt
 source-wordcount: '976'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 「**スプレッドシートをダウンロード**」をクリックして、スプレッドシートをダウンロードし、ルールを定義します。Adobe サポートチケットを作成し、スプレッドシートで定義されたルールをアドビに提供します。
 
-[!BADGE スプレッドシートをダウンロード]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+[!BADGE スプレッドシートをダウンロード]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template.xlsx"}
 
 
 この記事で定義されているガイドラインを使用して、スプレッドシートでルールを定義します。
