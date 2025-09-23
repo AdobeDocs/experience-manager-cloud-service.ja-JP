@@ -4,10 +4,10 @@ description: AEM では、クライアントサイドライブラリフォルダ
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: da44719521546e81af60e4f8dd5452d83ff5e1e7
+source-git-commit: 66916e3864811cc7b7d030787a413ceb5ce4d8b3
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 97%
+source-wordcount: '2428'
+ht-degree: 96%
 
 ---
 
@@ -288,7 +288,7 @@ AEM では、プラグ可能なプリプロセッサーを使用でき、AEM の
 
 >[!NOTE]
 >
->デフォルトでは、AEMは、JavaScript の縮小に GCC Compressor を使用します。
+>デフォルトでは、AEMは、JavaScript の縮小とコードの `ECMASCRIPT_2018` へのトランスパイルに GCC Compressor を使用します。
 
 >[!CAUTION]
 >
