@@ -7,9 +7,9 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 82fce826ad6e5736740e39347b32b70d0b9f0176
+source-git-commit: 940a80382cd58a7b119a20b4af534ca1bf38447d
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '572'
 ht-degree: 15%
 
 ---
@@ -32,11 +32,11 @@ Available as a private beta, Experience Hub offers an optimized experience focus
    ![Adobe Experience Cloudのホームページ ](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
 
 1. **クイックアクセス** グループ化で、[**Experience Manager**](https://experience.adobe.com) をクリックします。
-1. 初めてアクセスするときは、「**操作を教えてください** ページで目的のオプションをクリックして、Adobeがエクスペリエンスをカスタマイズできるようにします。
+1. 初回アクセス時には、**コンテンツ作成者** プリセット（ページの右上隅付近に表示）が割り当てられます。 表示されるウィジェット、ナビゲーション項目およびコンテンツを制御します。
 
-   この環境設定はいつでも変更できます。
+   このプリセットはいつでも変更できます。
 
-   ![ 何をしたいか教えてくださいページ ](/help/implementing/cloud-manager/assets/experience-cloud-tellus.png)
+   ![ 「コンテンツ作成者」プリセットを表示するドロップダウンリストが選択されている ](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
 
 Adobe Experience Managerページが更新され、ナビゲーションが強化され、インタラクティブウィジェットが追加されました。 以前のソリューションカードのコレクションでは、次のようなツールへのアクセスが可能でした。
 
