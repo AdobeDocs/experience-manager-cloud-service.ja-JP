@@ -7,9 +7,9 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 940a80382cd58a7b119a20b4af534ca1bf38447d
+source-git-commit: f5f80ffb8524351fa4cdda039671df339fa0742d
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '573'
 ht-degree: 15%
 
 ---
@@ -59,7 +59,7 @@ Adobe Experience Managerページが更新され、ナビゲーションが強�
 
 ![ 実稼動環境とステージ環境 ](/help/implementing/cloud-manager/assets/experience-hub-prod-stage.png)
 
-Adobe Experience Managerの中央ハブとして機能するExperience Hub ページには、各ユーザーロールに合わせた追加のウィジェットとアクションが拡張されています。 ページは完全にカスタマイズ可能で、画面に最適なレイアウトを選択できます。 ウィジェットをフィルタリングして、選択したウィジェットのみをメインページに表示し、パーソナライズされたエクスペリエンスを提供できます。
+Adobe Experience Managerの中央ハブとして機能するExperience Hub ページには、各ユーザーロール（プリセット）に合わせて調整された追加のウィジェットとアクションが用意されています。 ページは完全にカスタマイズ可能で、画面に最適なレイアウトを選択できます。 ウィジェットをフィルタリングして、選択したウィジェットのみをメインページに表示し、パーソナライズされたエクスペリエンスを提供できます。
 
 ![ カスタマイズされたExperience Hub](/help/implementing/cloud-manager/assets/experience-hub-custom.png)
 

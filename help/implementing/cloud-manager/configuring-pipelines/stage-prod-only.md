@@ -8,10 +8,11 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 24d78f19932a30026c0357db646124c9dd1fa759
+exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
+source-git-commit: 51318172b826eb81dff86b3e8dfb6f2ded648c4c
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 49%
+source-wordcount: '1052'
+ht-degree: 48%
 
 ---
 
@@ -81,7 +82,7 @@ ht-degree: 49%
 
    ![ 実稼動以外のパイプラインを追加ダイアログボックスの「Source コード」タブ ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-2.png)
 
-1. 「**エクスペリエンス監査**」タブで指定されたサイト URL は、Cloud Managerがページ品質を監査する公開 URL です。
+1. 「**エクスペリエンス監査**」タブで指定されたサイト URL は、Cloud Managerがページ品質を監査する公開済み URL です。
 
 1. **ページパス** フィールドで、監査するページを指定し、**![追加アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) ページを追加** をクリックします。
 
@@ -94,13 +95,13 @@ ht-degree: 49%
 
 ### 実稼動専用パイプラインの作成 {#prod-only}
 
-1. **実稼動専用パイプラインを追加** ダイアログボックスで、「**パイプライン名**」テキストフィールドにパイプラインのフリーテキスト名を入力します。
+1. **実稼動のみのパイプラインを追加** ダイアログボックスで、「**パイプライン名**」テキストフィールドにパイプラインのフリーテキスト名を入力します。
 1. **パイプライン名** フィールドに、必要な名前を入力します。
 1. **実稼動デプロイメントオプション** で、「**実稼動へのデプロイ前に一時停止**」を選択します。
 
    このオプションを選択すると、実稼動手順の直前に手動承認ゲートが挿入されます。 パイプラインは停止し、承認者（デプロイメントマネージャーやビジネスオーナーなど）が実稼動デプロイを承認またはキャンセルするのを待ちます。
 
-   これを使用して、変更制御または直前のチェックを行います。
+   変更制御または直前のチェックに使用します。
 
 1. 「**保存**」をクリックして、これらのオプションを含む実稼動専用パイプラインを作成します。
 
@@ -129,7 +130,7 @@ When starting production-only and staging-online pipelines, you are prompted to 
 
 ![ステージング専用パイプラインの実行](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only-pipelines-run.png)
 
-「**ビルドを昇格**」をクリックすると、ステージのみのパイプラインが存在する場合は、確認ダイアログボックスが開いてパイプラインを開始します。 「**実行**」をクリックします。
+**ビルドを昇格** をクリックすると、関連する実稼動専用パイプラインの実行を確認するダイアログボックスが開きます。 「**実行**」をクリックして開始します。
 
 ![ ビルドを昇格 – パイプラインを実行ダイアログボックス ](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
 
@@ -144,4 +145,3 @@ When starting production-only and staging-online pipelines, you are prompted to 
 
 
 ![アーティファクトの詳細](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-only-pipelines-run.png)
-
