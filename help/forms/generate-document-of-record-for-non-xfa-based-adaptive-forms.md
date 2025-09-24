@@ -4,9 +4,9 @@ description: ここでは、アダプティブフォーム向けのレコード�
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
 workflow-type: tm+mt
-source-wordcount: '4221'
+source-wordcount: '4217'
 ht-degree: 99%
 
 ---
@@ -141,7 +141,7 @@ In the following video, Adaptive Form components are bound with corresponding Ac
 
 アダプティブフォーム用のレコードのドキュメントで作業する際は、次の点に注意してください。
 
-* レコードのドキュメントのテンプレートは、リッチテキストをサポートしません。そのため、静的アダプティブフォームまたはエンドユーザー入力情報に含まれるリッチテキストは、レコードのドキュメントではプレーンテキストとして表示されます。
+* **リッチテキストのサポート**：レコードのドキュメントは、リッチテキストフィールド内でHTMLのマークアップタグをサポートします。 サポートされるタグとアクセシビリティに関する考慮事項について詳しくは、[ レコードのドキュメントでサポートされるHTML マークアップタグ ](html-markup-tags-support-in-document-of-record.md) を参照してください。
 * アダプティブフォーム内のドキュメントフラグメントは、レコードのドキュメントには表示されません。ただし、アダプティブフォームフラグメントはサポートされています。
 * XML スキーマベースのアダプティブフォームは、レコードの生成されたドキュメント内でのコンテンツのバインドに対応していません。
 * レコードのドキュメントのレンダリングをユーザーが要求すると、レコードのドキュメントのローカライズされたバージョンが、ロケールに合わせてオンデマンドで作成されます。レコードのドキュメントのローカライズは、アダプティブフォームのローカライズと同時に発生します。<!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
@@ -404,9 +404,9 @@ When you select a form model, configure Document of Record using options availab
 
 ## アダプティブフォームエディターでのレコードのドキュメントのサポート {#dor-support-in-adaptiveform}
 
-[!UICONTROL &#x200B; レコードのドキュメント &#x200B;] テンプレートは、アダプティブフォームビルダーまたはアダプティブフォームテンプレートビルダーから直接設定できます。
+[!UICONTROL レコードのドキュメント]テンプレートは、アダプティブフォームエディターまたはアダプティブフォームテンプレートエディターから直接設定することができます。
 
-アダプティブフォームビルダーのオーサーインスタンスから、次の手順を実行します。
+アダプティブフォームエディターのオーサーインスタンスから、以下の手順を実行します。
 
 1. **[!UICONTROL アダプティブフォームコンテナ（ルート）]**&#x200B;コンポーネントを選択します。
 1. 「![アイコンを設定](/help/forms/assets/configure-icon.svg)」アイコンをクリックして、アダプティブフォームコンテナの&#x200B;**[!UICONTROL プロパティ]**&#x200B;開きます。
