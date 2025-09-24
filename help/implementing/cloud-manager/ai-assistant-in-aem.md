@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
-source-git-commit: 836da4b8d90ddad2a16ab84481445791d878e027
+source-git-commit: 598c7fc22c9ad46543cc10c6b0e5de450709386a
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1278'
 ht-degree: 5%
 
 ---
@@ -31,32 +31,26 @@ AEM に直接埋め込まれ、AEM Experience Hub、Cloud Manager、オーサー
 
 次の 3 分 39 秒のビデオでは、AEMの AI アシスタントの手順を順を追って説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470356?learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## AEMの AI アシスタントにアクセスできます{#get-access}
 
-AEMで AI アシスタントへのアクセス権をユーザーに付与するには、Adobe管理者が、**Adobe Admin Console** でのアクセスを必要とするプロファイルに対して、次のカスタム権限を設定する必要があります。
+AEMの AI アシスタントにアクセスするには、次が必要です。
 
-* **AI アシスタントへのアクセス** - AEMで AI アシスタントを使用して商品の知識を得る権限があり、ユーザーが AI アシスタントのチャットで商品関連の質問をすることができます。 この権限を有効にする必要があります。
-* **サポートアクセス** - ユーザーがサポートチケットを開く権限も必要です。これには、**サポート管理者** の役割が必要になります。
+* AEMの AI アシスタントを使用して製品に関する知識を得る権限。 この権限を使用すると、AI アシスタントのチャットで製品に関する質問をすることができます。 この権限を有効にする必要があります。
+* サポートチケットを開く権限。これには **サポート管理者** の役割が必要です。
 
-AEMの AI アシスタントリクエストは、Adobe Identity Management サービス（IMS）を通じて認証されます。 詳しくは、[Adobe Identity Management サービスの概要 ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf) を参照してください。
+>[!NOTE]
+>
+>AEMの AI アシスタントリクエストは、Adobe Identity Management サービス（IMS）を通じて認証されます。 詳しくは、[Adobe Identity Management サービスの概要 ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf) を参照してください。
 
 **AEMで AI アシスタントにアクセスするには：**
 
 1. Adobe Experience Managerで AI を活用したエージェントによる機能のほとんどにアクセスするには、契約を締結する必要があります。 詳しくは、Adobe担当者にお問い合わせください。
 
-<!-- OLD STEP 1 [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). 
+1. AEMで AI アシスタントを使用するには、AI アシスタントを通じて製品ナレッジにアクセスする権限が必要です。 この権限は、デフォルトでオンになっています。
 
-    The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more. -->
-
-1. AEM管理者が、組織で使用する AI アシスタントを設定します。 [AEMでの AI アシスタントの設定 ](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md) を参照してください。
-
-<!--
->[!IMPORTANT]
->Be sure you have reviewed and submitted the user agreement so Adobe can enable AI Assistant feature for you to test out and participate in the private beta program.
->
->For any questions, send an email to [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) from your email address associated with your Adobe ID. -->
+   製品ナレッジにアクセスできるユーザーを制御する場合は、Adobe IDに関連付けられた電子メールアドレスから [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) に電子メールを送信します。 Adobeでは、ユーザーレベルのアクセス制御を有効にできます。 これが有効になっていると、管理者は [AEMで AI アシスタントを設定する ](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md) の手順に従って、ユーザーレベルのアクセス権を付与できます。
 
 ## 範囲 {#scope}
 
@@ -129,7 +123,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
