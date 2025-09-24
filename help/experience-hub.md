@@ -7,7 +7,7 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: f5f80ffb8524351fa4cdda039671df339fa0742d
+source-git-commit: 1d766eb4c67a9763af5ffb3976625635e3f4ba59
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 15%
@@ -20,7 +20,7 @@ Experience Hubは、Adobe Experience Manager内のコンテンツ、アセット
 
 再考されたAEM Experience Hub Workspace のクイックツアー（2 分 19 秒）をご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470957?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
