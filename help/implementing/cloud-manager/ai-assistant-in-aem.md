@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
-source-git-commit: 598c7fc22c9ad46543cc10c6b0e5de450709386a
+source-git-commit: a42ca544fc53e04f197b109022205d24d020690e
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 5%
@@ -31,7 +31,7 @@ AEM に直接埋め込まれ、AEM Experience Hub、Cloud Manager、オーサー
 
 次の 3 分 39 秒のビデオでは、AEMの AI アシスタントの手順を順を追って説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470356?learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## AEMの AI アシスタントにアクセスできます{#get-access}
 
@@ -54,7 +54,7 @@ AEMの AI アシスタントにアクセスするには、次が必要です。
 
 ## 範囲 {#scope}
 
-AEMの AI アシスタントの現在の対象範囲は、AEMr as a Cloud Serviceの製品ナレッジの問題への対処に重点を置いています。 この範囲には、主要な領域に対する包括的なサポートが含まれます。<!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
+AEMの AI アシスタントの現在の対象範囲は、AEM as a Cloud Serviceの製品ナレッジの問題への対処に重点を置いています。 この範囲には、主要な領域に対する包括的なサポートが含まれます。<!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
 
 * **サーフェス**:AEM Experience Hub、オーサー UI、Cloud Managerで使用可能です。
 * **機能**：トラブルシューティングとガイダンスのための製品知識とファーストストップ、サポートチケットの自動作成とルックアップ。
@@ -123,7 +123,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
