@@ -83,7 +83,7 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 [!DNL Dynamic Media] テンプレートを作成し、その配信 URL を生成するには、次の要件を満たします。
 
 1. [!DNL Dynamic Media] にアクセスします。
-1. [!DNL Assets View] ホームページには、**[!UICONTROL Dynamic Media アセット]**&#x200B;にテンプレートを保存するためのフォルダーがあります。![アセット](/help/assets/assets/Asset-icon.svg)**[!UICONTROL アセット&#x200B;]**に[フォルダーを作成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)して、そのフォルダーを**[!UICONTROL  Dynamic Media アセット&#x200B;]**にレプリケートします。
+1. [!DNL Assets View] ホームページには、**[!UICONTROL Dynamic Media アセット]**&#x200B;にテンプレートを保存するためのフォルダーがあります。![アセット](/help/assets/assets/Asset-icon.svg)**[!UICONTROL アセット&#x200B;]**&#x200B;に[フォルダーを作成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)して、そのフォルダーを&#x200B;**[!UICONTROL &#x200B; Dynamic Media アセット&#x200B;]**&#x200B;にレプリケートします。
 1. [ [!DNL AEM Assets]  インスタンスで使用可能な画像を  [!DNL Dynamic Media]  と同期して、テンプレートの作成に使用します](/help/assets/dynamic-media/config-dm.md)。
 1. テンプレートの作成時に使用する画像を公開し、テンプレートの作成後にテンプレートの配信 URL を生成します。配信 URL は、ダウンストリームアプリケーションで使用できます。
 1. テンプレートのテキストレイヤーでデフォルトの [!UICONTROL Adobe Sans F2] フォント以外のフォントを使用するには、[フォントファイルを AEM および Dynamic Media に同時にアップロードして公開](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=ja#dynamic-media-publish-mode-set-to-upon-activation)します。[サポートされているフォントファイル形式は、AFM、OTF、PFB、PFM、PhotoFont、TTC、TTF です](https://experienceleague.adobe.com/ja/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)。また、既存のフォントを使用するには、[再処理](/help/assets/reprocessing-assets-view.md)する必要があります。詳しくは、[フォント](https://experienceleague.adobe.com/ja/docs/dynamic-media-classic/using/support-files/fonts)を参照してください。<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
@@ -163,7 +163,7 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 1. パネルを参照するか、検索バーでキーワードを使用して、特定の画像を見つけます。
 1. 画像をキャンバス上にドラッグ＆ドロップして使用します。キャンバス上のレイヤーのサイズ変更や再配置について詳しくは、[**[!UICONTROL プロパティパネル]**](#reposition-resize-delete-a-layer)を参照してください。
    ![数秒以内にバナーを作成](/help/assets/assets/add-image-to-canvas.png)
-1. **[!UICONTROL 均一半径]**&#x200B;切替スイッチを有効にし、**[!UICONTROL 角丸の半径]**スライダーを使用して、画像の 4 つの角すべての丸みを均一に調整します。切替スイッチを無効にすると、各角に特定の半径値を割り当てることで、角の丸みをカスタマイズできます。
+1. **[!UICONTROL 均一半径]**&#x200B;切替スイッチを有効にし、**[!UICONTROL 角丸の半径]**&#x200B;スライダーを使用して、画像の 4 つの角すべての丸みを均一に調整します。切替スイッチを無効にすると、各角に特定の半径値を割り当てることで、角の丸みをカスタマイズできます。
    ![画像の角の丸みを調整](/help/assets/assets/enable-uniform-radius-image.png)
 
 ### キャンバスにテキストレイヤーを追加{#add-text-to-the-canvas}
@@ -197,7 +197,7 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
 1. 「![シェイプの作成](/help/assets/assets/Shapes.svg)」をクリックし、シェイプ（長方形または円）を選択してキャンバスに追加します。シェイプの[[!UICONTROL プロパティパネル]](#reposition-resize-delete-a-layer)を使用して、レイヤーの再配置、サイズ変更、回転または削除を行います。
 1. パネルの「**[!UICONTROL スタイル]**」セクションまでスクロールし、「**[!UICONTROL シェイプカラー]**」フィールドで 16 進コードを定義するか、カラーピッカーを使用して選択したシェイプのカラーを塗りつぶします。
-1. **[!UICONTROL 均一半径]**&#x200B;切替スイッチを有効にし、**[!UICONTROL 角丸の半径]**スライダーを使用して、長方形の 4 つの角すべての丸みを均一に調整します。切替スイッチを無効にすると、各角に特定の半径値を割り当てることで、角の丸みをカスタマイズできます。
+1. **[!UICONTROL 均一半径]**&#x200B;切替スイッチを有効にし、**[!UICONTROL 角丸の半径]**&#x200B;スライダーを使用して、長方形の 4 つの角すべての丸みを均一に調整します。切替スイッチを無効にすると、各角に特定の半径値を割り当てることで、角の丸みをカスタマイズできます。
    ![シェイプの角の丸みを調整](/help/assets/assets/enable-uniform-radius-shape.png)
 1. [選択したレイヤーに&#x200B;**[!UICONTROL 非表示]**&#x200B;パラメーターを追加すると](#parameterise-a-layer)、テンプレート URL を使用してテンプレート内のレイヤーをリアルタイムで表示または非表示にすることができます。
 1. レイヤーを選択して [[!UICONTROL CTA] リンクを追加](#add-CTA-in-dynamic-media-templates)すると、ユーザーはライブテンプレート内のハイパーリンクとしてシェイプをクリックできます。
@@ -258,11 +258,11 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
 次に、画像レイヤーとテキストレイヤーの両方に適用されるレイヤーパラメーターを示します。
 
-**[!UICONTROL X]：**URL のパラメーターの値を変更して、テンプレートプレーンの X 軸に平行な中心線に沿ってレイヤーを水平方向に移動する場合に含めます。
-**[!UICONTROL Y]：**URL のパラメーターの値を変更して、テンプレートプレーンの Y 軸に平行な中心線に沿ってレイヤーを垂直方向に移動する場合に含めます。
-**[!UICONTROL 幅]：**URL のパラメーターの値を変更して、レイヤーの幅を調整する場合に含めます。
-**[!UICONTROL 高さ]：**URL のパラメーターの値を変更して、レイヤーの高さを調整する場合に含めます。
-**[!UICONTROL 非表示 ]:** 0 （表示）と 1 （非表示）を使用して、テンプレート内のレイヤーの表示と非表示を切り替えるには、含めます。
+**[!UICONTROL X]：**&#x200B;URL のパラメーターの値を変更して、テンプレートプレーンの X 軸に平行な中心線に沿ってレイヤーを水平方向に移動する場合に含めます。
+**[!UICONTROL Y]：**&#x200B;URL のパラメーターの値を変更して、テンプレートプレーンの Y 軸に平行な中心線に沿ってレイヤーを垂直方向に移動する場合に含めます。
+**[!UICONTROL 幅]：**&#x200B;URL のパラメーターの値を変更して、レイヤーの幅を調整する場合に含めます。
+**[!UICONTROL 高さ]：**&#x200B;URL のパラメーターの値を変更して、レイヤーの高さを調整する場合に含めます。
+**[!UICONTROL 非表示 &#x200B;]:** 0 （表示）と 1 （非表示）を使用して、テンプレート内のレイヤーの表示と非表示を切り替えるには、含めます。
 
 ##### 画像パラメーター{#image-parameter}
 
@@ -273,9 +273,9 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
 配信 URL のパラメーター値を更新して、配信 URL のテキスト、フォント、カラー、サイズを編集するには、以下のパラメーターを含めます。
 
-**[!UICONTROL テキスト]：**URL からテキストを更新する場合に含めます。
-**[!UICONTROL フォントファミリー]：**URL からテキストのフォントを更新する場合に含めます。
-**[!UICONTROL フォントサイズ]：**URL からテキストのフォントサイズを更新する場合に含めます。
+**[!UICONTROL テキスト]：**&#x200B;URL からテキストを更新する場合に含めます。
+**[!UICONTROL フォントファミリー]：**&#x200B;URL からテキストのフォントを更新する場合に含めます。
+**[!UICONTROL フォントサイズ]：**&#x200B;URL からテキストのフォントサイズを更新する場合に含めます。
 **[!UICONTROL テキストカラー]：** URL からテキストのフォントカラーを更新する場合に含めます。
 
 ##### 部分文字列のパラメーター化{#substring-parameterisation}
@@ -314,7 +314,7 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
 1. レイヤーの[**[!UICONTROL プロパティパネル]**](#parameterise-a-layer)に移動します。
 1. 以前にパラメーター化していない場合は、**[!UICONTROL 非表示]**&#x200B;パラメーターを切り替えます。
-1. **オプション：****[!UICONTROL 非表示]**&#x200B;パラメーターの名前を変更します。
+1. **オプション：**&#x200B;**[!UICONTROL 非表示]**&#x200B;パラメーターの名前を変更します。
 1. **[!UICONTROL 非表示]**&#x200B;パラメーターの名前をコピーします。
 1. キャンバスから他のレイヤーを選択して、そのレイヤーのパラメーターパネルに移動し、パラメーター化されていない場合は、**[!UICONTROL 非表示]**&#x200B;パラメーターを切り替えます。
 1. **[!UICONTROL 非表示パラメーター]**&#x200B;の名前を、コピーした名前に置き換えます。
@@ -325,17 +325,17 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
 テンプレートをプレビューおよび公開し、配信 URL をコピーするには、次の手順を実行します。
 
-1. キャンバスページで、「**[!UICONTROL プレビュー]**」をクリックします。また、**[!UICONTROL アセットビュー]****／****[!UICONTROL Dynamic Media アセット]****に移動して、**&#x200B;テンプレートを見つけて選択し&#x200B;**、**「**[!UICONTROL テンプレートを編集]**」をクリックして&#x200B;**、**「**[!UICONTROL プレビュー]**」をクリックすることもできます。プレビューページには、テンプレート、そのパラメーター（パラメーター化されたレイヤとプロパティ）、公開ステータスおよび「**[!UICONTROL 公開]**」オプションが表示されます。
+1. キャンバスページで、「**[!UICONTROL プレビュー]**」をクリックします。また、**[!UICONTROL アセットビュー]**&#x200B;**／**&#x200B;**[!UICONTROL Dynamic Media アセット]**&#x200B;**に移動して、**&#x200B;テンプレートを見つけて選択し&#x200B;**、**「**[!UICONTROL テンプレートを編集]**」をクリックして&#x200B;**、**「**[!UICONTROL プレビュー]**」をクリックすることもできます。プレビューページには、テンプレート、そのパラメーター（パラメーター化されたレイヤとプロパティ）、公開ステータスおよび「**[!UICONTROL 公開]**」オプションが表示されます。
 1. **[!UICONTROL テンプレートパラメーター]**&#x200B;パネルからパラメーターを選択して値を編集すると、プレビューの対応するテンプレートレイヤーのコンテンツ、サイズ、位置、またはテキストの書式設定が即座に更新されます。例：
    1. テキストレイヤーを選択してテキストを編集するか、
    1. 画像レイヤーを選択し、「![その場でコンテンツを作成](/help/assets/assets/add-image.svg)」をクリックし、アセットセレクターから画像を選択して、「**[!UICONTROL 更新]**」をクリックします。
 
    テンプレートはすぐに更新され、編集されたテキストが表示され、以前の画像が新しい画像に置き換えられます。また、画像パラメーターの値には、新しい画像のパスが反映されます。同様に、レイヤーの値を調整してサイズ変更すると、その変更がリアルタイムでテンプレートに適用されます。
 1. リストから[グループ化されたレイヤー](#group-layers)の&#x200B;**[!UICONTROL 非表示]**&#x200B;パラメーターを選択して、テンプレート内でまとめて表示または非表示にします。
-1. **オプション：****[!UICONTROL 非表示]**&#x200B;パラメーターの値を 0 と 1 の間で変更し、「**[!UICONTROL 更新]**」をクリックして変更を確認します。同じ&#x200B;**[!UICONTROL 非表示]**&#x200B;パラメーターを持つレイヤーは、まとめて非表示または表示されます。同様に、URL からレイヤーの表示をコントロールできます。
+1. **オプション：**&#x200B;**[!UICONTROL 非表示]**&#x200B;パラメーターの値を 0 と 1 の間で変更し、「**[!UICONTROL 更新]**」をクリックして変更を確認します。同じ&#x200B;**[!UICONTROL 非表示]**&#x200B;パラメーターを持つレイヤーは、まとめて非表示または表示されます。同様に、URL からレイヤーの表示をコントロールできます。
 
    ![その場でのコンテンツの作成](/help/assets/assets/dm-templates-publish-status.png)
-また、**[!UICONTROL すべてのパラメーターを含める]**を切り替えて、表示されているすべてのパラメーター値を編集し、テンプレートのプレビューで更新を確認することもできます。
+また、**[!UICONTROL すべてのパラメーターを含める]**&#x200B;を切り替えて、表示されているすべてのパラメーター値を編集し、テンプレートのプレビューで更新を確認することもできます。
    <br>
 1. プレビューページからテンプレートを公開するには、「**[!UICONTROL 公開]**」をクリックして公開を確定します。**[!UICONTROL 公開完了]**&#x200B;メッセージが表示され、公開ステータスが&#x200B;**[!UICONTROL 公開済み]**&#x200B;に更新されます。
 
