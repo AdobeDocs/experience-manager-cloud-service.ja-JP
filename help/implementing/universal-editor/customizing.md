@@ -4,10 +4,10 @@ description: コンテンツ作成者のニーズに合わせてユニバーサ�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 32b3a125d6370dd591252fde342843d5f9e33cf1
-workflow-type: ht
-source-wordcount: '409'
-ht-degree: 100%
+source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 92%
 
 ---
 
@@ -54,6 +54,14 @@ ht-degree: 100%
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="duplicate"/>
+```
+
+## コピーと貼り付けの無効化 {#copy-paste}
+
+コンテンツ作成者がコンポーネントをコピーして貼り付ける機能を、オーサリングワークフローによって制限しなければならない場合があります。 [ コピー&amp;ペースト」アイコン ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) を無効にするには、次のメタデータを追加します。
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="copy"/>
 ```
 
 ## エンドポイントの変更 {#custom-endpoint}

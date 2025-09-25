@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター 2025.09.18 リリースノート
-description: ユニバーサルエディター 2025.09.18 リリースのリリースノートです。
+title: ユニバーサルエディター 2025.09.25 リリースノート
+description: ユニバーサルエディター 2025.09.25 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 34ae65fb0f6f69ac1983484da6ed020453ea4419
+source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 67%
+source-wordcount: '224'
+ht-degree: 46%
 
 ---
 
 
-# ユニバーサルエディター 2025.09.18 リリースノート {#release-notes}
+# ユニバーサルエディター 2025.09.25 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2025 年 9 月 18 日リリースのリリースノートです。
+ユニバーサルエディターの 2025 年 9 月 25 日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -22,8 +22,8 @@ ht-degree: 67%
 
 ## 新機能 {#what-is-new}
 
-* [universal-editor-service.adobe.io](http://universal-editor-service.adobe.io/) は、サービスをローカルでホストする代わりに、AMS のサービスエンドポイントとして使用されるようになりました。
-* AEM オーサリングを使用する際に、複合マルチフィールドがサポートされるようになりました。
+* [ コピーと貼り付け機能 ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) メタタグを使用して [ 無効にできるようになりました ](/help/implementing/universal-editor/customizing.md#copy-paste)。
+* [ ホストされたAEM環境（AMS）でユニバーサルエディターを使用する場合 ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) ユニバーサルエディターはAEMでホストされるユニバーサルエディターサービスを使用するようになり、ローカル AMS インストールに依存しなくなり、常に最新のユニバーサルエディターサービスが自動的に利用されるようになります。
 
 ## 早期導入機能 {#early-adopter}
 
@@ -39,5 +39,5 @@ ht-degree: 67%
 
 ## その他の改善点 {#other-improvements}
 
-* AEM をバックエンドシステムとして操作するユニバーサルエディターを中心に、いくつかの小さなパフォーマンス改善が実装されました。
-* コンテンツフラグメントは、Open API を使用して公開されるようになりました。これにより、パフォーマンスが向上し、コンテンツフラグメントエディターとコンソールの公開方法の一貫性が保持されます。
+* プロパティパネルが、ドキュメントオーサリングで使用する際に修正されました。
+* MSM の使用時にコンテンツフラグメントの複数フィールドを編集する際の問題が修正されました。
