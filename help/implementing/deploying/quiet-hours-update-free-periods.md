@@ -4,7 +4,8 @@ description: 処理の少ない時間帯と更新のない時間を使用して�
 feature: Deploying
 role: Admin
 badge: label="限定提供（LA）" type="Positive"
-source-git-commit: 44696aef63b7a9882b001a33ea24a815183996a8
+exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
+source-git-commit: 350b288d30b3fb8d9d308dbd279f579cec0b292c
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 # 非表示時間と自由期間の更新 {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->この機能は、9 月 29 日（PT）以降、**限定提供** 機能として使用できるようになります。 プログラムで機能をアクティブにするには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信します。
+>この機能は、9 月 25 日（PT）以降、**限定提供** 機能として使用できるようになります。 プログラムで機能をアクティブにするには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信します。
 
 AEM as a Cloud Service[ 自動メンテナンスアップデート ](/help/implementing/deploying/aem-version-updates.md) は、インスタンスのセキュリティを確保し、最新のメンテナンスリリースを最新の状態に保ちます。 ただし、運用開始イベントなどの場合には、潜在的な中断から重要な営業時間を「保護」する必要が生じる可能性があります。 そのため、AEM as a Cloud Serviceでは、進行中のプログラムに自動更新が行われない時間枠を設定できます。
 
