@@ -4,10 +4,10 @@ description: WYSIWYG テンプレートエディターを使用して  [!DNL Dyn
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
-source-wordcount: '3415'
-ht-degree: 100%
+source-git-commit: 97be1d044ae23859e263756116c8bac8701178b4
+workflow-type: tm+mt
+source-wordcount: '3779'
+ht-degree: 88%
 
 ---
 
@@ -96,9 +96,9 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 [!DNL Dynamic Media] テンプレートを作成するには、次の手順を実行します。
 
 <!--
-1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
-1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
-1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/ja/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/ja/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
+1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
+1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
+1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
 -->
 
 1. [空のキャンバスを作成](#create-a-canvas)
@@ -177,6 +177,20 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
 レイヤーの再配置、サイズ変更、回転または削除について詳しくは、[**[!UICONTROL プロパティパネル]**](#reposition-resize-delete-a-layer)を参照してください。パネルの「**[!UICONTROL テキスト]**」セクションの下にある各フィールドの値を変更して、テキストを必須のフォント、サイズ、カラー、スタイル、位置（レイヤー内）に書式設定します。「**[!UICONTROL フォントファミリー]**」フィールドには、[!UICONTROL Adobe Sans F2] のデフォルトフォント、再処理した既存のフォント、新しくアップロードおよび公開したフォントが表示されます。詳しくは、上記の[開始する前に](#prerequisites-for-dynamic-media-wysiwyg-template)の節のポイント 5 を参照してください。
 
+[サブ文字列に書式設定を適用して、テキストの特定の部分のスタイルを設定し、制御します。](#apply-formatting-to-substring)
+
+#### 選択テキストの書式設定{#apply-formatting-to-substring}
+
+文字列の特定の部分を書式設定するには、次の手順を実行します。
+
+1. 書式設定する文字列の中から 1 つ以上の文字を選択します。
+1. [ プロパティパネル ](#properties-panel) を使用して、選択範囲に書式を適用します。 次の書式設定オプションは、部分文字列とその部分に適用されます。
+   * **フォントスタイル**:「**[!UICONTROL フォントスタイル]**」オプションを使用した、太字、斜体、下線、下付き文字、上付き文字。
+   * **フォントプロパティ**：フォントファミリー、色、サイズを、それぞれのパネルオプションを使用して変更します。
+     ![format-substring](/help/assets/assets/format-substring.png)
+
+[ 書式設定された各文字列の部分は、部分文字列セレクターに部分文字列として表示され、パラメーターパネル内で使用できます。 これらの書式設定された部分にパラメーターを追加し、テンプレートの配信 URL](#substring-parameterisation) を使用して動的に書式設定します。
+
 ### キャンバスにシェイプを追加 {#add-shapes-to-the-canvas}
 
 キャンバスにシェイプを追加するには、次の手順を実行します。
@@ -240,23 +254,57 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
 パラメーター化されたプロパティをテンプレートの URL に URL パラメーターとして含めることで、URL を使用してテンプレートをリアルタイムで編集できます。
 
-**画像パラメーター：**
+##### レイヤーパラメーター{#layer-parameters}
+
+次に、画像レイヤーとテキストレイヤーの両方に適用されるレイヤーパラメーターを示します。
 
 **[!UICONTROL X]：**URL のパラメーターの値を変更して、テンプレートプレーンの X 軸に平行な中心線に沿ってレイヤーを水平方向に移動する場合に含めます。
 **[!UICONTROL Y]：**URL のパラメーターの値を変更して、テンプレートプレーンの Y 軸に平行な中心線に沿ってレイヤーを垂直方向に移動する場合に含めます。
 **[!UICONTROL 幅]：**URL のパラメーターの値を変更して、レイヤーの幅を調整する場合に含めます。
 **[!UICONTROL 高さ]：**URL のパラメーターの値を変更して、レイヤーの高さを調整する場合に含めます。
-**[!UICONTROL 非表示]：**0（表示）と 1（非表示）を使用して、テンプレートのレイヤーを非表示または表示する場合に含めます。
-**[!UICONTROL ソース]：** URL のパラメーターの値の画像パスを変更して、レイヤーの画像を新しい画像に置き換える場合に含めます。
+**[!UICONTROL 非表示 ]:** 0 （表示）と 1 （非表示）を使用して、テンプレート内のレイヤーの表示と非表示を切り替えるには、含めます。
 
-**テキストの書式設定パラメーター：**
+##### 画像パラメーター{#image-parameter}
 
-URL のパラメーター値を更新して、URL からテキスト、フォント、カラー、サイズを編集するには、以下のパラメーターを含めます。
+**[!UICONTROL Source]** パラメーターを含めて、URL のパラメーターの値の画像パスを変更することで、レイヤーの画像を新しい画像に置き換えます。
+![image source パラメーター ](/help/assets/assets/image-parameter.png)
+
+##### テキスト書式設定パラメーター{#text-formatting-parameters}
+
+配信 URL のパラメーター値を更新して、配信 URL のテキスト、フォント、カラー、サイズを編集するには、以下のパラメーターを含めます。
 
 **[!UICONTROL テキスト]：**URL からテキストを更新する場合に含めます。
 **[!UICONTROL フォントファミリー]：**URL からテキストのフォントを更新する場合に含めます。
 **[!UICONTROL フォントサイズ]：**URL からテキストのフォントサイズを更新する場合に含めます。
 **[!UICONTROL テキストカラー]：** URL からテキストのフォントカラーを更新する場合に含めます。
+
+##### 部分文字列のパラメーター化{#substring-parameterisation}
+
+**[!UICONTROL パラメーター]** パネルで、「**[!UICONTROL 部分文字列パラメーター]** セクションまでスクロールします。 このセクションには **部分文字列セレクター** が含まれます。このセレクターは、選択したテキストレイヤーの完全な文字列を、一貫性のある書式で、またはその書式設定された部分を別々の部分文字列として表示します。 [ テキスト、フォントファミリー、フォントサイズ、カラーをパラメーター化する ](#text-formatting-parameters) 部分文字列を選択します。
+部分文字列セレクターを使用して [ 部分文字列を分割 ](#split-substring) して個々の部分をパラメーター化するか、[ 部分文字列を結合 ](#merge-substring) して均一なパラメーターを適用します。
+
+###### 部分文字列を分割{#split-substring}
+
+部分文字列の一部をパラメーター化するには、部分文字列を取り出して、個々の選択とパラメーター化のための個別の部分文字列にします。
+次の手順を実行して、部分文字列を別々の部分文字列に分割します。
+
+1. 部分文字列セレクターで、部分文字列内の文字を選択して区切ります。
+1. ![ 部分文字列を分割 ](/help/assets/assets/unmerge.svg) をクリックして取り出し、**部分文字列セレクター** 内の別の部分文字列にします。
+   ![ 部分文字列を分割 ](/help/assets/assets/split-a-substring.png)
+必要な部分文字列を選択して [ テキスト、フォントファミリー、フォントサイズ、色をパラメーター化 ](#text-formatting-parameters) できます。
+
+###### 部分文字列を結合{#merge-substring}
+
+部分文字列を結合すると、既存の個々のパラメーターが削除され、新しく形成された部分文字列に対して一貫性のあるパラメーターを適用できます。
+次の手順を実行して、2 つの隣接する部分文字列を結合し、結果の部分文字列に均一なパラメーターを適用します。
+
+1. 部分文字列セレクターで、同じ書式を持つ、隣接する 2 つの部分文字列の間にある文字を選択します。
+1. ![ 部分文字列を結合 ](/help/assets/assets/merge.svg) をクリックして、部分文字列を結合します。
+   ![ 同一の部分文字列を結合 ](/help/assets/assets/merge-two-substrings.png)
+新しく作成された部分文字列には、均一なパラメーターを適用できます。
+   >[!NOTE]
+   >
+   >同じ形式の部分文字列のみを結合できます。
 
 ### レイヤーをグループ化して同時に表示をコントロール{#group-layers}
 
