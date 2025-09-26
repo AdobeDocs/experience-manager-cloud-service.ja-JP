@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 94533c74b8254c1a16671ca28ccc021cbdfa903f
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '6680'
+source-wordcount: '6698'
 ht-degree: 97%
 
 ---
@@ -527,7 +527,7 @@ ht-degree: 97%
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
-      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=ja)
+      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service の運用テレメトリ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概要と新機能](/help/assets/overview.md)
@@ -966,12 +966,15 @@ ht-degree: 97%
       + [HTML5 フォームのスクリプティングのサポート](/help/forms/scripting-support.md)
       + [AEM Forms におけるフォームセット](/help/forms/formset-in-aem-forms.md)
    + インタラクティブなコミュニケーション {#interactive-communication}
-      + [インタラクティブなコミュニケーションエディターの概要](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
+      + [インタラクティブ通信エディターの概要](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
       + [インタラクティブ通信の作成](/help/forms/interactive-communication/create-interactive-communication.md)
-      + [インタラクティブなコミュニケーションテンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)
-      + [インタラクティブなコミュニケーションフラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+      + [インタラクティブ通信テンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)
+      + [インタラクティブ通信フラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
       + [インタラクティブ通信の概要](/help/forms/introduction-to-interactive-communication.md)
       + [最初のインタラクティブ通信の作成](/help/forms/create-your-first-communication.md)
+      + [インタラクティブ通信の読み込みと書き出し](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
+      + [インタラクティブ通信エディターへのカスタムフォントの追加](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)
+      + [インタラクティブ通信エディターでのPDF プレビュー](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)
       + [よくある質問](/help/forms/interactive-communications-faq.md)
    + Forms 中心のワークフロー {#create-form-centric-workflows}
       + [Forms 中心のワークフローの導入](/help/forms/aem-forms-workflow.md)

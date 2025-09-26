@@ -5,10 +5,10 @@ keywords: カスタム関数の追加, カスタム関数の使用, カスタム
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 56%
+source-wordcount: '1360'
+ht-degree: 55%
 
 ---
 
@@ -28,6 +28,8 @@ ht-degree: 56%
    * クラスメソッド
    * デフォルトのパラメーター
    * Rest パラメーター
+
+* 最新の ECMAScript 機能は Early Access （EA）として利用できますが、一般公開では最大 ECMAScript 2019 がサポートされています。
 
 ## カスタム関数を作成するための前提条件
 
@@ -144,10 +146,10 @@ ht-degree: 56%
 
 1. [AEMaaCS プロジェクトディレクトリ]内の `/ui.apps/src/main/content/META-INF/vault/filter.xml` ファイルに移動します。
 
-1. ファイルを開き、最後に次の行を追加します。
+2. ファイルを開き、最後に次の行を追加します。
 
    `<filter root="/apps/experience-league" />`
-1. ファイルを保存します。
+3. ファイルを保存します。
 
 ![カスタム関数フィルター xml](/help/forms/assets/custom-function-filterxml.png)
 

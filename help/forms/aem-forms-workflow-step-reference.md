@@ -6,10 +6,10 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: タスクの割り当て手順の使用、PDF/A ステップへの変換、レコードステップのドキュメントの生成、ワークフローの使用、ドキュメントに署名ステップ、印刷出力ステップの生成、非インタラクティブPDF出力の生成
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: ht
-source-wordcount: '7370'
-ht-degree: 100%
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+workflow-type: tm+mt
+source-wordcount: '7409'
+ht-degree: 99%
 
 ---
 
@@ -362,7 +362,12 @@ DDX を呼び出しステップには次のプロパティがあります。
 
    * **[!UICONTROL ペイロードに相対的]**：ペイロードへの相対パスに保存された添付ファイルを取得するには、オプションを使用します。オプションを選択し、添付ファイルを含むフォルダー名を指定するか、テキストボックスで添付ファイル名を指定します。
 
-     例えば、CRX リポジトリの「ペイロードに相対的」フォルダーの `attachment\attachment-folder` の場所にファイル添付ファイルが含まれている場合、「**[!UICONTROL ペイロードに相対的]**」オプションを選択した後、テキストボックスで `attachment\attachment-folder` を指定します。
+     >[!NOTE]
+     >
+     > **フォームデータモデルの呼び出し** ワークフローステップでは、[SharePoint リストベースのフォームデータモデルで、Base64 でエンコードされた添付ファイル配列のワークフロー側メタデータをサポートしており ](/help/forms/connect-forms-to-sharepoint-list.md) 添付ファイルのファイル名、MIME タイプ、カスタムプロパティなどのメタデータをワークフローで渡し、保存、取得できます。
+     > ![SP リストの添付ファイル ](/help/edge/docs/forms/assets/workflow-sp-list.png)
+     >
+     > 「ペイロードに相対的」フォルダーの `attachment` の場所にはファイル添付が含まれています。`attachment` ペイロードに相対的 **[!UICONTROL オプションを選択した後、テキストボックスで]** を指定します。
 
    * **[!UICONTROL JSON ドット表記法]**：使用する値が JSON ファイル内にある場合は、このオプションを使用します。例えば、insurance.customerDetails.emailAddress と指定します。「JSON ドット表記法」オプションを使用できるのは、「入力 JSON からのマップ入力フィールド」オプションが選択されている場合だけです。
    * **[!UICONTROL 入力 JSON からのマップ入力フィールド]**：JSON ファイルのパスを指定して、その JSON ファイルから一部のサービスの引数の入力値を取得します。JSON ファイルのパスは、ペイロードとの相対パス、絶対パスにするか、JSON またはフォームデータモデル（FDM）型の変数を使用して入力 JSON ドキュメントを選択できます。
