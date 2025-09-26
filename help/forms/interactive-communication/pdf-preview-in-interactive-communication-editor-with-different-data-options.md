@@ -53,7 +53,7 @@ PDFのプレビュー機能を使用すると、インタラクティブ通信�
 
 +++&#x200B;2. ローカル JSON データを使用したプレビュー
 
-2.1.構造化 JSON ファイルを準備する 参考までに、通信に使用される JSON スキーマ [ （FDM）からサンプルデータをコピー ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) きます。
+2.1.構造化 JSON ファイルを準備する 参考までに、通信に使用される JSON スキーマ [ （FDM）からサンプルデータをコピー ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) きます。
 
 2.2. IC Editor で、**PDF Preview** > Using Local Data に移動します。
 

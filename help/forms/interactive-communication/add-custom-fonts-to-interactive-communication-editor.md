@@ -39,5 +39,5 @@ ht-degree: 25%
 
 >[!NOTE]
 >
-> 設定手順について詳しくは、「カスタムフォントの使用 [ のガイドに従ってください ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
+> 設定手順について詳しくは、「カスタムフォントの使用 [ のガイドに従ってください ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
 > &#x200B;>手順を完了しパイプラインを実行すると、カスタムフォントをインタラクティブ通信エディターで直接使用できるようになります。
