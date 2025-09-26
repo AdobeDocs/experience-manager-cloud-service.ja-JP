@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: bdc0e7623592efed5270a3cb8322ef22e50cbad9
+source-git-commit: 3eda41b89847e1011d818922826b745b880e4977
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 69%
+source-wordcount: '1905'
+ht-degree: 48%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 69%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -90,43 +90,23 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 ### Experience Manager Forms の新機能 {#new-features-forms}
 
-**日付と時刻の入力コンポーネント**
+**SharePoint リスト添付ファイルのフォームデータモデルワークフローを呼び出しステップ**
 
-[日付と時刻コンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)が使用可能になり、ユーザーはカレンダーと時計のインターフェイスを使用して日付と時刻の両方を選択することや、サポートされている形式で値を手動で入力することができるようになりました。
-
-**ファイルアップロードのエラー処理の強化**
-
-[ファイル添付コンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)は、アップロードされたファイルタイプを許可リストに対して自動的に検証するようになりました。ユーザーがサポートされていない形式のファイルをアップロードすると、送信中にフォームにエラーが表示されます。また、このコンポーネントはファイルコンテンツをチェックして、そのタイプを検証するので、フォームの全体的なセキュリティが強化されます。
-
-**カスタム送信アクションの指定されたエラー応答**
-
-[カスタム送信アクション](/help/forms/custom-submit-action-troubleshooting.md)で未処理のエラーが発生した際、システムはエラーコード 502 を返します。これにより、問題がカスタム送信アクションに関連していることを識別でき、デバッグが簡単になります。
-
-**レコードのドキュメントからの非表示フィールドの除外**
-
-新しいプロパティにより、[レコードのドキュメント](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)から非表示フィールドを除外できるようになりました。デフォルトでは、このオプションは選択されておらず、すべてのフォームフィールドに適用されます。
-
+フォームデータモデルを呼び出しワークフローステップで、SharePoint リストベースのフォームデータモデルにおける Base64 でエンコードされた添付ファイル配列のワークフローサイドメタデータの処理がサポートされるようになりました。 この機能強化により、ワークフローステップでは、各添付ファイルのファイル名、MIME タイプ、カスタムプロパティなどのメタデータを渡し、保存し、取得することができます。 この機能により、より包括的なデータ管理が可能になり、シームレスなダウンストリーム統合が容易になります。 詳しくは、[SharePointリスト添付ファイル用のフォームデータモデルを起動ワークフローステップでのサポート強化 ](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step) を参照してください。
 
 ### AEM Forms のプレリリース機能
 
-**AFP レンディションの生成と同期**
-
-[AEM Forms Communication API](/help/forms/document-generation-afp-api.md) を使用して、XDP ファイルを AFP 形式に変換できるようになりました。AFP は、大規模なエンタープライズ印刷で広く使用されている、高性能な形式です。
-
 **ルールエディターの機能強化**
 
-* [ 関数リストの Validate メソッド](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list)：validate メソッドと reset メソッドでは、パネル、フィールド、フォームの各レベルでの実行がサポートされるようになりました。以前は、フォームレベルでのみサポートされていました。
-* [最新の JavaScript サポート](/help/forms/rule-editor-core-components-difference-tables.md)：カスタム関数に ECMAScript 2019 以降の機能のサポートが追加され、より効率的でモジュール形式の再利用可能なコードを記述できるようになりました。
-* [ルールエディターの「DoR をダウンロード」オプション](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor)：ルールエディターにレコードのドキュメント（DoR）をダウンロードする機能が、標準（OOTB）オプションとして追加されました。
+ルールエディターで拡張ナビゲーションがサポートされ、入力パラメーターで関数および数式を使用できるようになりました。
 
-  ![レコードのドキュメント](/help/forms/assets/document-of-record-rn.gif)
+**イベントペイロードのサポートによるナビゲーションの強化**
 
-* [ルールエディターの動的変数](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules)：ルールエディターで動的（一時）変数を使用できるようになりました。これにより、条件とアクションをより柔軟に定義できます。一時的な値を保存するために非表示フィールドを使用する必要がなくなりました。
-* [カスタムイベントベースのルールのサポート](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support)：カスタムイベントを定義し、これらのイベントに基づいてルールをトリガーできるようになりました。
-* [コンテキスト対応の繰り返し可能なパネルルール](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels)：繰り返し可能なパネルでは、ルールは最後のパネルインスタンスにのみ適用される代わりに、コンテキストに基づいて実行されるようになりました。
-* [パラメーターによってトリガーされるルール](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms)：ルールエディターでは、クエリパラメーター、UTM パラメーター、ブラウザーパラメーターに基づくルール実行がサポートされるようになりました。
-* [フォーム固有のカスタム関数](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms)：Edge Delivery Services Forms では、フォーム固有のカスタム関数スクリプトがサポートされ、再利用可能なロジックをより柔軟に管理できるようになりました。
-* [カスタム関数の静的読み込み](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions)：ユニバーサルエディターのルールエディターで静的読み込みがサポートされ、開発者は複数のフォームをまたいで関数を整理、共有、再利用できるようになりました。
+呼び出しサービスハンドラーの `Navigate To` アクションで `EVENT_PAYLOAD` がサポートされるようになり、フォーム作成者はイベント応答に基づくフォローアップアクションを設定できるようになりました。 この機能強化により、送信後のワークフローをより柔軟に設計でき、よりスムーズな移行と、よりパーソナライズされたユーザーエクスペリエンスを実現します。 詳しくは、[ イベントペイロードのサポートを使用した拡張ナビゲーション ](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service) を参照してください。
+
+**入力パラメーターでの関数および数式のサポート**
+
+入力パラメーターでは、関数呼び出しと数式の両方がサポートされるようになり、フォーム作成者は動的に計算された値を直接渡すことができるようになりました。 この機能強化により、ルール設定が合理化され、追加のフィールドが不要になり、フォームが複雑なロジックや計算駆動型のシナリオに適応しやすくなります。 詳しくは、「入力パラメーターでの関数および数式のサポート [ を参照してください ](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)。
 
 ### AEM Forms の新しい早期アクセス機能 {#forms-new-early-access-features}
 
@@ -134,13 +114,17 @@ AEM Forms 早期アクセスプログラムでは、最先端の革新機能に�
 
 これらのリリースノートでは、現在のリリースで提供されるイノベーションのリストを示します。早期アクセスプログラムで利用可能なイノベーションの完全なリストについて詳しくは、[AEM Forms 早期アクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
 
-**手書き署名コンポーネント**
+**インタラクティブ通信エディターでのPDF プレビュー**
 
-[手書き署名コンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)を使用して、ユーザーが契約書などのフォームに署名を追加できるようになりました。コンポーネントを使用すると、ユーザーはマウス、スタイラス、タッチスクリーンを使用してフォーム内に直接署名を入力できます。
+ユーザーは、データのないインタラクティブ通信 PDF、ローカル JSON データファイルまたはデータモデルのデータを使用したインタラクティブ通信 PDF をプレビューして、柔軟なデータ駆動型テストを有効にすることができます。 詳しくは、[ インタラクティブ通信エディターでのPDF プレビュー ](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md) を参照してください。
 
-**ルールエディターでの直接 API 統合**
+**インタラクティブ通信でのカスタムフォントのサポート**
 
-アダプティブフォームでは、フォームデータモデルを必要とせずに、ビジュアルルールエディターで[直接 API 統合](/help/forms/api-integration-in-rule-editor.md)をサポートするようになりました。作成者は、URL または cURL 読み込みを使用して API を設定し、入力／出力パラメーターをマッピングし、認証を使用して安全な呼び出しを行うことができます。
+カスタムフォント機能を使用すると、カスタムフォントや組織が承認したフォントをインタラクティブ通信に埋め込むことができ、デバイスやプラットフォームをまたいで一貫性のあるブランドのPDF レンダリングを実現できます。 詳しくは、[ インタラクティブ通信でのカスタムフォントのサポート ](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md) を参照してください。
+
+**インタラクティブ通信の読み込みと書き出し**
+
+この機能により、様々な環境でのインタラクティブ通信の移行と再利用が可能になります。 ある環境からインタラクティブ通信を、関連するフラグメントとデータモデルと共に書き出して、別の環境に読み込めるようになりました。 詳しくは、[ インタラクティブ通信の読み込みと書き出し ](/help/forms/interactive-communication/import-and-export-interactive-communications.md) を参照してください。
 
 <!--
 **Forms Optimization opportunities**
@@ -173,7 +157,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >9 月 25 日（PT）に限定提供機能として提供を開始します。
->&#x200B;>プログラムでアクティブ化するには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信してください。
+>>プログラムでアクティブ化するには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信してください。
 
 ### AEM Developer Tools for Eclipse の新しいリリース {#aem-develeper-tools-for-eclipse}
 
@@ -254,7 +238,7 @@ AEM パブリッシュ配信またはライブ実稼動サイトのEdge Delivery
 
 Edge認証を使用すると、Edge Delivery Services ページへのアクセスを、ID プロバイダー（IdP）で認証されたユーザーのみに制限できます。 これを実現するには、OpenID Connect （OIDC）設定の YAML ファイルをデプロイします。
 
-ご興味がある場合は、ユースケースの簡単な説明とご質問を [0&rbrace;aemcs-edgecompute-feedback@adobe.com&rbrace; までお問い合わせください。](mailto:aemcs-edgecompute-feedback@adobe.com)
+ご興味がある場合は、ユースケースの簡単な説明とご質問を [0}aemcs-edgecompute-feedback@adobe.com} までお問い合わせください。](mailto:aemcs-edgecompute-feedback@adobe.com)
 
 Edge Delivery Servicesとは別に、今年初めに、AEM ページを保護するために Open ID Connect[AEM Cloud Service パブリッシュ層プロジェクト用 ](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md) を設定する機能をリリースしました。
 
@@ -283,7 +267,7 @@ Beta では、Amazon S3、Sumo Logic、Dynatrace および独自のNew Relic ア
 
 ### APM （Application Performance Monitoring）の拡張（Alpha プログラム） {#apm-alpha}
 
-観測性のために、AEM Cloud Service は現在、Adobe提供の [New Relic Oneおよびお客様が管理する ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)2&rbrace;Dynatrace[ をサポートしています。 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)追加の APM オプションのサポートについては、ユースケースと共に、お好みのベンダーまたはテクノロジーを記載したメールを [0&rbrace;aemcs-apm-beta@adobe.com&rbrace; までお送りください。](mailto:aemcs-apm-beta@adobe.com)
+観測性のために、AEM Cloud Service は現在、Adobe提供の [New Relic Oneおよびお客様が管理する ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)2}Dynatrace[ をサポートしています。 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)追加の APM オプションのサポートについては、ユースケースと共に、お好みのベンダーまたはテクノロジーを記載したメールを [0}aemcs-apm-beta@adobe.com} までお送りください。](mailto:aemcs-apm-beta@adobe.com)
 
 
 ## [!DNL Experience Manager] ガイド {#guides}
