@@ -157,7 +157,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >9 月 25 日（PT）に限定提供機能として提供を開始します。
->>プログラムでアクティブ化するには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信してください。
+>&#x200B;>プログラムでアクティブ化するには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信してください。
 
 ### AEM Developer Tools for Eclipse の新しいリリース {#aem-develeper-tools-for-eclipse}
 
@@ -238,7 +238,7 @@ AEM パブリッシュ配信またはライブ実稼動サイトのEdge Delivery
 
 Edge認証を使用すると、Edge Delivery Services ページへのアクセスを、ID プロバイダー（IdP）で認証されたユーザーのみに制限できます。 これを実現するには、OpenID Connect （OIDC）設定の YAML ファイルをデプロイします。
 
-ご興味がある場合は、ユースケースの簡単な説明とご質問を [0}aemcs-edgecompute-feedback@adobe.com} までお問い合わせください。](mailto:aemcs-edgecompute-feedback@adobe.com)
+ご興味がある場合は、ユースケースの簡単な説明とご質問を [0&rbrace;aemcs-edgecompute-feedback@adobe.com&rbrace; までお問い合わせください。](mailto:aemcs-edgecompute-feedback@adobe.com)
 
 Edge Delivery Servicesとは別に、今年初めに、AEM ページを保護するために Open ID Connect[AEM Cloud Service パブリッシュ層プロジェクト用 ](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md) を設定する機能をリリースしました。
 
@@ -267,7 +267,7 @@ Beta では、Amazon S3、Sumo Logic、Dynatrace および独自のNew Relic ア
 
 ### APM （Application Performance Monitoring）の拡張（Alpha プログラム） {#apm-alpha}
 
-観測性のために、AEM Cloud Service は現在、Adobe提供の [New Relic Oneおよびお客様が管理する ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)2}Dynatrace[ をサポートしています。 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)追加の APM オプションのサポートについては、ユースケースと共に、お好みのベンダーまたはテクノロジーを記載したメールを [0}aemcs-apm-beta@adobe.com} までお送りください。](mailto:aemcs-apm-beta@adobe.com)
+観測性のために、AEM Cloud Service は現在、Adobe提供の [New Relic Oneおよびお客様が管理する ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)2&rbrace;Dynatrace[ をサポートしています。 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)追加の APM オプションのサポートについては、ユースケースと共に、お好みのベンダーまたはテクノロジーを記載したメールを [0&rbrace;aemcs-apm-beta@adobe.com&rbrace; までお送りください。](mailto:aemcs-apm-beta@adobe.com)
 
 
 ## [!DNL Experience Manager] ガイド {#guides}
