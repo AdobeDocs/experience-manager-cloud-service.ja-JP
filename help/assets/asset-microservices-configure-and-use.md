@@ -59,7 +59,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ## 標準設定 {#standard-config}
 
-[!DNL Experience Manager] には、ユーザーのニーズに応じて、一般的な形式向けのより具体的なレンディションを生成する機能があります。管理者は、追加の[!UICONTROL 処理プロファイル]を作成して、そのようなレンディションの作成を容易にできます。ユーザーは、使用可能な 1 つ以上のプロファイルを特定のフォルダーに割り当てて、追加の処理を完了することができます。例えば、追加の処理で web、モバイル、タブレット用のレンディションを生成できるとします。[ このビデオでは、[!UICONTROL &#x200B; 処理プロファイル &#x200B;] の作成方法と適用方法、作成したレンディションにアクセスする方法を説明します ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-automation/creative-operations)。
+[!DNL Experience Manager] には、ユーザーのニーズに応じて、一般的な形式向けのより具体的なレンディションを生成する機能があります。管理者は、追加の[!UICONTROL 処理プロファイル]を作成して、そのようなレンディションの作成を容易にできます。ユーザーは、使用可能な 1 つ以上のプロファイルを特定のフォルダーに割り当てて、追加の処理を完了することができます。例えば、追加の処理で web、モバイル、タブレット用のレンディションを生成できるとします。[ このビデオでは、[!UICONTROL &#x200B; 処理プロファイル &#x200B;] の作成方法と適用方法、作成したレンディションにアクセスする方法を説明します ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/content-automation/creative-operations)。
 
 * **レンディションの幅と高さ**：レンディションの幅と高さの仕様により、生成される出力画像の最大サイズが指定されます。アセットマイクロサービスでは、レンディションの幅と高さがそれぞれ指定の幅と高さを超えない範囲で、可能な限り大きなレンディションを生成しようとします。縦横比は維持され、元の縦横比と同じになります。値が空の場合は、アセット処理で元の画像のピクセルサイズを前提とすることになります。
 
