@@ -5,10 +5,10 @@ exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 01fd825a64e0306f9e569075985bd30e1991634c
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 93%
+source-wordcount: '578'
+ht-degree: 96%
 
 ---
 
@@ -31,9 +31,9 @@ Dynatrace のお客様は、カスタマーサポートチケットを通じて�
 | **フィールド** | **説明** |
 |---|---|
 | [!DNL Dynatrace Environment URL] | Dynatrace 環境の URL。<br><br>Dynatrace SaaS のお客様の場合、形式は `https://<your-environment-id>.live.dynatrace.com` です。<br><br>Dynatrace Managed のお客様の場合、形式は `https://<your-managed-url>/e/<environmentId>` です。 |
-| [!DNL Dynatrace Environment ID] | Dynatrace 環境 ID。[Dynatrace接続の詳細を取得するにはどうすればよいですか？](#how-do-i-get-my-dynatrace-connection-details)を参照してください。 |
-| [!DNL Dynatrace Environment Token] | Dynatrace 環境トークン。[Dynatrace接続の詳細を取得するにはどうすればよいですか？](#how-do-i-get-my-dynatrace-connection-details)を参照してください。<br><br>これはシークレットと見なす必要があるので、適切なセキュリティプラクティスを使用してください。例えば、**zerobin.net** などの web サイトでパスワードで保護します。カスタマーサポートチケットはパスワードとともに参照できます。 |
-| [!DNL Dynatrace API access token] | Dynatrace環境の API アクセストークン。 作成方法については、[Dynatrace API アクセストークンの作成 ](#create-dynatrace-access-token) を参照してください。<br><br>これはシークレットと見なす必要があるので、適切なセキュリティプラクティスを使用してください。例えば、**zerobin.net** などの web サイトでパスワードで保護します。カスタマーサポートチケットはパスワードとともに参照できます。<br><br>メモ：これは、Dynatrace Managed でのみ必要です。 |
+| [!DNL Dynatrace Environment ID] | Dynatrace 環境 ID。詳しくは、[Dynatrace 接続の詳細を取得する方法](#how-do-i-get-my-dynatrace-connection-details)を参照してください。 |
+| [!DNL Dynatrace Environment Token] | Dynatrace 環境トークン。詳しくは、[Dynatrace 接続の詳細を取得する方法](#how-do-i-get-my-dynatrace-connection-details)を参照してください。<br><br>これはシークレットと見なす必要があるので、適切なセキュリティプラクティスを使用してください。例えば、**zerobin.net** などの web サイトでパスワードで保護します。カスタマーサポートチケットはパスワードとともに参照できます。 |
+| [!DNL Dynatrace API access token] | Dynatrace 環境の API アクセストークン。これを作成する方法について詳しくは、[Dynatrace API アクセストークンの作成](#create-dynatrace-access-token)を参照してください。<br><br>これはシークレットと見なす必要があるので、適切なセキュリティプラクティスを使用してください。例えば、カスタマーサポートチケットが参照できる **zerobin.net** などの web サイトで、パスワードと共にパスワード保護します。<br> |
 | [!DNL Dynatrace ActiveGate Port] | AEM 統合の接続先となる Dynatrace ActiveGate ポート。<br><br>メモ：これは、Dynatrace Managed でのみ必要です。 |
 | [!DNL Dynatrace ActiveGate Network Zone] | [Dynatrace ActiveGate ネットワークゾーン](https://docs.dynatrace.com/docs/manage/network-zones)を使用して、データセンターとネットワークリージョン間で AEM 監視データを効率的にルーティングします。<br><br>メモ：Dynatrace ActiveGate ネットワークゾーンはオプションです。 |
 | [!DNL AEM Environment ID(s)] | Dynatrace が監視する AEM 環境 ID。 |
