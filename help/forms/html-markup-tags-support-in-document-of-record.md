@@ -3,13 +3,13 @@ title: レコードのドキュメントでサポートされるHTML マーク�
 description: レコードのドキュメントの生成で、レンダリングの動作やアクセシビリティに関する考慮事項など、HTMLのマークアップタグのリファレンスガイドがサポートされるようになりました
 feature: Adaptive Forms
 role: Developer, User
-source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
+exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
+source-git-commit: 1794ed6cac612ee4600c2f8e1ced18c6130b64a2
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 8%
+source-wordcount: '438'
+ht-degree: 9%
 
 ---
-
 
 
 # レコードのドキュメントでサポートされるHTML マークアップタグ
@@ -132,23 +132,10 @@ Expected:     <LBody>First item
 <p>Einstein's equation: E=mc<sup>2</sup></p>
 ```
 
-## 関連情報
+## 関連するコンテンツ
 
-### AEM Forms ドキュメント
 
 - [アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 - [コアコンポーネントのレコードのドキュメントを生成](/help/forms/generate-document-of-record-core-components.md)
 - [レコードのドキュメントのテンプレートのカスタマイズ](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
-
-### テクニカルリファレンス
-
-- [XFA 仕様 – XHTML および CSS 属性 ](https://www.adobe.com/devnet/acrobat/pdfs/XFA-3_3.pdf) （1187 ページ）
-- [PDFのアクセシビリティ標準 ](https://www.w3.org/TR/WCAG21/)
-- [ コアアクセシビリティ API のマッピング ](https://www.w3.org/TR/core-aam-1.2/#role-map-superscript)
-
-### ベストプラクティスガイド
-
-- [ アクセシブルな PDF の作成 ](https://www.adobe.com/accessibility/pdf.html)
-- [フォームのリッチテキストのベストプラクティス](/help/forms/creating-accessible-adaptive-forms.md)
-- [アクセシビリティのためのドキュメント構造](/help/forms/creating-accessible-adaptive-forms.md)
 
