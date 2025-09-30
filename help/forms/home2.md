@@ -8,13 +8,13 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 1%
 
 ---
-
 
 # AEM Forms as a Cloud Service の概要 {#introduction}
 
@@ -77,7 +77,7 @@ AEM Formsは、初期作成から継続的な最適化まで、デジタルフ�
 様々なニーズや技術要件に合わせた複数のオーサリングアプローチを使用してアダプティブフォームを作成します。
 
 **ビジュアルフォームビルダー**
-[ コアコンポーネント ](/help/forms/creating-adaptive-form-core-components.md)、&lbrace; 基盤コンポーネント [、](/help/forms/creating-adaptive-form.md)Edge Delivery Services[ のいずれかを使用して、ドラッグ&amp;ドロップインターフェイスを介してレスポンシブフォームをデザイ ](/help/edge/docs/forms/overview.md) します。 ビジュアルエディターは、デバイスや支援テクノロジーをまたいで機能する、クリーンでセマンティックなマークアップを維持しながら、即座にフィードバックを提供します。
+[ コアコンポーネント ](/help/forms/creating-adaptive-form-core-components.md)、{ 基盤コンポーネント [、](/help/forms/creating-adaptive-form.md)Edge Delivery Services[ のいずれかを使用して、ドラッグ&amp;ドロップインターフェイスを介してレスポンシブフォームをデザイ ](/help/edge/docs/forms/overview.md) します。 ビジュアルエディターは、デバイスや支援テクノロジーをまたいで機能する、クリーンでセマンティックなマークアップを維持しながら、即座にフィードバックを提供します。
 
 **ドキュメントベースのオーサリング**
 [Edge Delivery Services](/help/edge/docs/forms/overview.md) からMicrosoft Excel などの使い慣れたツールを使用してフォームを作成します。 このアプローチにより、コンテンツ作成者は、技術的な専門知識がなくても高パフォーマンスのフォームを作成できると同時に、優れたGoogle Lighthouse スコアを達成できます。
@@ -92,10 +92,10 @@ AEM Formsは、初期作成から継続的な最適化まで、デジタルフ�
 [ 条件付きロジック ](/help/forms/rule-editor-core-components.md)、プログレッシブ公開、アダプティブ検証を実装して、複雑なプロセスをユーザーに導きます。 [ 保存および再開機能 ](/help/forms/save-core-component-based-form-as-draft.md) を使用すると、ユーザーは複数のセッションにわたってフォームを完了できます。
 
 **HTML5Forms**
-モバイルデバイスおよび従来のブラウザー用に、XFA ベースのフォームを [2&rbrace;HTML5 forms&rbrace; としてレンダリングします。 ](/help/forms/introductionhtml5.md)HTML5 Formsは、元の XDP テンプレートからのフォームロジックと検証を維持しながら、プラグインなしでネイティブのモバイルエクスペリエンスを提供します。
+モバイルデバイスおよび従来のブラウザー用に、XFA ベースのフォームを [2}HTML5 forms} としてレンダリングします。 ](/help/forms/introductionhtml5.md)HTML5 Formsは、元の XDP テンプレートからのフォームロジックと検証を維持しながら、プラグインなしでネイティブのモバイルエクスペリエンスを提供します。
 
 **インタラクティブ通信**
-ビジュアルエディターを使用して、明細書、請求書、通知などのドキュメント中心のコミュニケーションを作成します。 [ インタラクティブ通信 ](/help/forms/introduction-to-interactive-communication.md) 静的コンテンツと動的データを組み合わせて、印刷チャネルとデジタルチャネルをまたいで、パーソナライズされたコミュニケーションを生成します。
+ビジュアルエディターを使用して、明細書、請求書、通知などのドキュメント中心のコミュニケーションを作成します。 [ インタラクティブ通信 ](/help/forms/interactive-communication/create-interactive-communication.md) 静的コンテンツと動的データを組み合わせて、印刷チャネルとデジタルチャネルをまたいで、パーソナライズされたコミュニケーションを生成します。
 
 ### 管理：レビューとコンプライアンス {#govern}
 
@@ -249,7 +249,7 @@ Adobe Targetを使用して、様々なフォームレイアウト、フィー�
 **ドキュメントサービスと通信：**
 
 1. ドキュメントの自動生成のための **[通信 API の実装](/help/forms/aem-forms-cloud-service-communications-introduction.md)**
-2. パーソナライズされた声明や通知のために、**[インタラクティブ通信を作成](/help/forms/introduction-to-interactive-communication.md)** します
+2. パーソナライズされた声明や通知のために、**[インタラクティブ通信を作成](/help/forms/interactive-communication/create-interactive-communication.md)** します
 3. フォームを一元的に管理するための **[Forms ポータルの設定](/help/forms/configure-forms-portal.md)**
 
 ### 大規模導入：拡張性とガバナンス {#enterprise-deployment}

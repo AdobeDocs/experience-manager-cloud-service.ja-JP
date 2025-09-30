@@ -4,12 +4,14 @@ description: AEM Formsでインタラクティブなコミュニケーション�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
+exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
+source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 18%
 
 ---
+
 
 # インタラクティブ通信フラグメントの作成
 
@@ -39,7 +41,7 @@ ht-degree: 18%
 
 1. インタラクティブ通信フラグメントを選択すると、画面が表示され、タイトル、名前、説明、データモデル（バックエンドデータの構造化表現）、タグなどの主要なフラグメントの詳細を定義できます。
 
-   詳しくは、[ データモデル設定ガイド ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) を参照してください。
+   詳しくは、[ データモデル設定ガイド ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) を参照してください。
 
    ![IC Docu の検索 ](/help/forms/interactive-communication/assets/createfrgmnt.png)
 

@@ -4,12 +4,14 @@ description: AEM Formsでインタラクティブ通信テンプレートを作�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
+exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
+source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 18%
 
 ---
+
 
 # インタラクティブ通信テンプレートの作成
 

@@ -5,12 +5,13 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
+source-git-commit: 9f4585ea71c1db2617e7b8ffece5fd55021e222e
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 13%
 
 ---
+
 
 # インタラクティブ通信エディターの概要
 
@@ -57,7 +58,7 @@ ht-degree: 13%
 
 ## オンボーディング
 
-インタラクティブ通信（IC）機能は、早期アクセス（EA）プログラムを通じて利用できます。 アクセスをリクエストするには、公式メール ID から環境 ID と組織 ID を含むメール [0&rbrace;aem-forms-ea@adobe.com&rbrace; を送信します。 ](mailto:aem-forms-ea@adobe.com)Adobeで登録を確認したら、[ サービスへのオンボード ](/help/forms/setup-forms-cloud-service.md) ドキュメントに従って、AEM Forms環境でインタラクティブ通信を有効にします。
+インタラクティブ通信（IC）機能は、早期アクセス（EA）プログラムを通じて利用できます。 アクセスをリクエストするには、公式メール ID から環境 ID と組織 ID を含むメール [0}aem-forms-ea@adobe.com} を送信します。 ](mailto:aem-forms-ea@adobe.com)Adobeで登録を確認したら、[ サービスへのオンボード ](/help/forms/setup-forms-cloud-service.md) ドキュメントに従って、AEM Forms環境でインタラクティブ通信を有効にします。
 
 ## 次の手順
 

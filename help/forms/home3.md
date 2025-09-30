@@ -8,13 +8,13 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
 source-wordcount: '1932'
 ht-degree: 2%
 
 ---
-
 
 # AEM Forms as a Cloud Service {#aem-forms-platform}
 
@@ -102,7 +102,7 @@ ht-degree: 2%
 | **機能：** 静的コンテンツと動的データを組み合わせ、印刷チャネルやデジタルチャネル向けにパーソナライズされたコミュニケーションを設計します。 |
 | **用途：** 顧客の明細書、請求書、通知、パーソナライズされたコミュニケーション、大量のドキュメントを扱うワークフロー。 |
 | Personalization📄 のマルチチャネル出力 📄Dynamic Data integration を使用した 📄 Visual Document Design 📄 |
-| [ インタラクティブ通信→の概要 ](/help/forms/introduction-to-interactive-communication.md) |
+| [ インタラクティブ通信→の概要 ](/help/forms/interactive-communication/create-interactive-communication.md) |
 
 ## 🔗 Data &amp; Integration {#data-integration}
 
@@ -298,29 +298,29 @@ ht-degree: 2%
 
 **最新のプロジェクトの場合：** コアコンポーネントのForms[ から開始 ](/help/forms/creating-adaptive-form-core-components.md)
 
-**高いパフォーマンスを実現する場合：**&#x200B;[Edge Delivery Formsから開始 ](/help/edge/docs/forms/overview.md)
+**高いパフォーマンスを実現する場合：**[Edge Delivery Formsから開始 ](/help/edge/docs/forms/overview.md)
 
 **既存のプロジェクトの場合：** 基盤コンポーネントのForms[ から開始 ](/help/forms/creating-adaptive-form.md)
 
-**XFA 最新化の場合：**&#x200B;[HTML5 Formsから開始 ](/help/forms/introductionhtml5.md)
+**XFA 最新化の場合：**[HTML5 Formsから開始 ](/help/forms/introductionhtml5.md)
 
-**ドキュメント通信の場合：** 開始 [ インタラクティブ通信 ](/help/forms/introduction-to-interactive-communication.md)
+**ドキュメント通信の場合：** 開始 [ インタラクティブ通信 ](/help/forms/interactive-communication/create-interactive-communication.md)
 
 ### データ統合のクイックスタート {#integration-start}
 
 **複数のデータソースの場合：** フォームデータモデル [ から開始 ](/help/forms/create-form-data-models.md)
 
-**Salesforce CRM の場合：**&#x200B;[Salesforce コネクタで開始 ](/help/forms/configure-salesforce.md)
+**Salesforce CRM の場合：**[Salesforce コネクタで開始 ](/help/forms/configure-salesforce.md)
 
 **Microsoft Dynamicsの場合：** Dynamics コネクタ [ から開始 ](/help/forms/configure-msdynamics.md)
 
 **カスタム API の場合：** RESTful コネクタから開始 [ ます ](/help/forms/configure-submit-action-restpoint.md)
 
-**ドキュメントストレージの場合：**&#x200B;[SharePoint コネクタで開始 ](/help/forms/connect-forms-to-sharepoint-document-library.md)
+**ドキュメントストレージの場合：**[SharePoint コネクタで開始 ](/help/forms/connect-forms-to-sharepoint-document-library.md)
 
 ### プロセス自動化のクイックスタート {#workflow-start}
 
-**承認プロセスの場合：**&#x200B;[AEM ワークフローから開始 ](/help/forms/aem-forms-workflow.md)
+**承認プロセスの場合：**[AEM ワークフローから開始 ](/help/forms/aem-forms-workflow.md)
 
 **電子サインの場合：** Adobe Sign 統合 [ から開始 ](/help/forms/working-with-adobe-sign.md)
 
@@ -330,7 +330,7 @@ ht-degree: 2%
 
 ### Analytics クイックスタート {#analytics-start}
 
-**パフォーマンストラッキングの場合：**&#x200B;[Adobe Analytics統合から開始 ](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+**パフォーマンストラッキングの場合：**[Adobe Analytics統合から開始 ](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
 
 **使用状況の監視の場合：** トランザクションレポート [ から開始 ](/help/forms/transaction-reports-billable-apis.md)
 

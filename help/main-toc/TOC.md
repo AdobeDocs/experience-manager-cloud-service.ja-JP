@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
-source-wordcount: '6698'
-ht-degree: 97%
+source-wordcount: '6799'
+ht-degree: 95%
 
 ---
 
@@ -527,7 +527,7 @@ ht-degree: 97%
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
-      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=ja)
+      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service の運用テレメトリ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概要と新機能](/help/assets/overview.md)
@@ -970,8 +970,23 @@ ht-degree: 97%
       + [インタラクティブ通信の作成](/help/forms/interactive-communication/create-interactive-communication.md)
       + [インタラクティブ通信テンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)
       + [インタラクティブ通信フラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
-      + [インタラクティブ通信の概要](/help/forms/introduction-to-interactive-communication.md)
-      + [最初のインタラクティブ通信の作成](/help/forms/create-your-first-communication.md)
+      + [最初のインタラクティブ通信を作成](/help/forms/create-your-first-communication.md)
+      + [インタラクティブ通信エディター内のテキストボックスオブジェクト](/help/forms/interactive-communication/text-box-object-in-interactive-communication-editor.md)
+      + [インタラクティブ通信エディター内の画像オブジェクト](/help/forms/interactive-communication/image-object-in-interactive-communication-editor.md)
+      + [インタラクティブ通信エディターの画像フィールドオブジェクト](/help/forms/interactive-communication/image-field-object-in-interactive-communication-editor.md)
+      + [インタラクティブ通信エディター内のテキストフィールドオブジェクト](/help/forms/interactive-communication/text-field-in-interactive-communication-editor.md)
+      + [インタラクティブ通信エディター内の数値フィールドオブジェクト](/help/forms/interactive-communication/numeric-field-object-in-interactive-communication-editor.md)
+      + [インタラクティブ通信エディターの日付/時間フィールドオブジェクト](/help/forms/interactive-communication/date-time-field-object-in-interactive-communication-editor.md)
+      + [インタラクティブ通信エディターの日付フィールドオブジェクト](/help/forms/interactive-communication/date-field-object-in-interactive-communication-editor.md)
+      + [インタラクティブ通信エディター内の Check Box オブジェクト](/help/forms/interactive-communication/check-box-object-in-interactive-communication-editor.md)
+      + [インタラクティブ通信エディター内のラジオボタンオブジェクト](/help/forms/interactive-communication/radio-button-object-in-interactive-communication-editor.md)
+      + [インタラクティブ通信エディターのサブフォームオブジェクト](/help/forms/interactive-communication/subform-object-in-interactive-communication-editor.md)
+      + [インタラクティブ通信エディター内の長方形オブジェクト](/help/forms/interactive-communication/rectangle-object-in-interactive-communication-editor.md)
+      + [インタラクティブ通信エディター内のテーブルオブジェクト](/help/forms/interactive-communication/table-object-in-interactive-communication-editor.md)
+      + [インタラクティブ通信エディター内の Line オブジェクト](/help/forms/interactive-communication/line-object-in-interactive-communication-editor.md)
+      + [インタラクティブ通信エディター内のバーコードオブジェクト](/help/forms/interactive-communication/barcode-object-in-interactive-communication-editor.md)
+      + [インタラクティブ通信エディターでのデータバインディング](/help/forms/interactive-communication/data-binding-in-interactive-communication-editor.md)
+      + [インタラクティブ通信エディターでのルール作成](/help/forms/interactive-communication/rule-creation-in-interactive-communication-editor.md)
       + [インタラクティブ通信の読み込みと書き出し](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
       + [インタラクティブ通信エディターへのカスタムフォントの追加](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)
       + [インタラクティブ通信エディターでのPDF プレビュー](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)
