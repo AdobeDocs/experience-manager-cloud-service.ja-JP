@@ -1,15 +1,15 @@
 ---
 title: AEM as a Cloud Serviceの AI
-description: Adobe Experience Manager as a Cloud Serviceの AI について学ぶ
+description: Adobe Experience Manager as a Cloud Service の AI について
 feature: Generative AI, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
-source-git-commit: a60268de748e795f223465f68ff9cfbaa5f64559
+exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
+source-git-commit: 41dd61425ce3b7536ee805580f3841e32e40ee99
 workflow-type: tm+mt
 source-wordcount: '397'
-ht-degree: 81%
+ht-degree: 84%
 
 ---
-
 
 # AEM as a Cloud Serviceの AI {#ai-in-aem-as-a-cloud-service}
 
