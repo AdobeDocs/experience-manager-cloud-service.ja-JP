@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: d73ccc454c89c7e06752de694af97ac26694be17
+source-git-commit: 8ee3da55024c0f5246f6c194bc07172b4b71823a
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 25%
+source-wordcount: '425'
+ht-degree: 53%
 
 ---
 
@@ -16,89 +16,61 @@ ht-degree: 25%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 22450 {#22450}
+## リリース 22758 {#22758}
 
-2025年9月16日（PT）に公開されたメンテナンスリリース 22450 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 22171 でした。
+2025年10月1日（PT）に公開された、メンテナンスリリース 22758 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 22450 でした。
 
-2025.9.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
+2025.10.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
 
-### 新機能 {#new-features-22450}
+### 機能強化 {#enhancements-22758}
 
-* SITES-32595: フラグメントのスキップまたは却下を伴って完了するワークフローを識別できるようになりました。 ワークフロー API 応答に新しいプロパティが追加され、無効であるか参照が無効であるために除外されたフラグメントがリストされるようになりました。
-* SITES-33642：変更されたコンテンツフラグメントに対して新しい API イベントが作成され、使用されるようになりました。
-* SITES-33320：検索 API で `technicalName` を使用してコンテンツフラグメントモデルを検索できるようになりました。
+* ASSETS-56227:adobe-countdown-timer 修飾子の名前を変更します。
+* CNTBF-493: content-backflow バンドルのバージョンを 2.0.28 にバンプします。
+* CQ-4361110:Granite 翻訳。
+* CQ-4361112：最新のAEM翻訳。
+* GRANITE-56026：権限 API ステータスコード応答を改善しました。
+* GRANITE-61015：公開 `org.apache.commons.io.channels` 書き出されたリストにパッケージを追加しました。
+* GRANITE-61167:Felix ログを最新の OSGI 仕様に更新。
+* GRANITE-61167:Felix の依存関係を更新する。
+* GRANITE-61169：保護された文字列のチェックを改善する。
+* GRANITE-61622:Sling の依存関係を更新する。
+* GRANITE-61663：クイックスタートに `com.adobe.granite.repository.indexdefs-1.0.2` を追加します。
+* GRANITE-61811：クイックスタートに `com.adobe.granite.repository-2.0.0` を追加します。
+* SITES-32014：外部イベントをリッスンして、サービス登録を更新します。
+* SITES-34277：ページの翻訳ワークフローでのブロックエラーを修正。
+* SKYOPS-108706: アップグレードされたリリースでは、バンドルが最新バージョンに切り替わります（etag キャッシュ）。
+* SKYOPS-114210: aem.pss.service バンドルの最新バージョンに更新しています。
+* SKYOPS-116171：Sling ResourceResolver 1.12.12 にアップデート。
+* SKYOPS-119811:dispatcher-publish 2.0.258 をリリースしました。
 
-### 機能強化 {#enhancements-22450}
+### 修正された問題 {#fixed-issues-22758}
 
-* SITES-34023：識別を向上させるために、コンテンツフラグメントモデルエンドポイントの応答に `technicalName` フィールドが追加されました。
-* SITES-32766：コンテンツフラグメントモデルのコンテンツアセット参照で、幅広いバイナリファイルタイプがサポートされるようになりました。
-* SITES-33974：より正確で使いやすい OpenAPI ドキュメントの改善。
-* SITES-9173: キャッシュ `ContentPolicyStatus`。
-* SITES-9290: `TouchEditContext` のキャッシュを改善します。
-* SITES-33355：ワークフローコンソールの「ペイロードを表示」で新しい CF エディターを開きます。
-* SITES-33356:「CF を作成」で新しい CF エディターを開く→ タッチ UI 管理 UI で開く」
-* SITES-32952：配信 API の使用時に CFM フィールドのデフォルト値の処理に一貫性がない。
-* SITES-31539：ユニバーサルエディターを使用したEdge Delivery:`head.html` でユニバーサルエディター設定のメタタグのサポートを追加。
-* SITES-20672：ユニバーサルエディターを使用したEdge Delivery：オーサリングで追加の一括メタデータスプレッドシートがサポートされるようになりました。
-* SITES-32963：ユニバーサルエディターを使用したEdge Delivery：最適化ターゲット、自動配分、セルフラーニング用の新しい実験メタデータを追加します。
-* SITES-30847：コアコンポーネント 2.30.0 をリリース。
-* SITES-29617: referencedBy エンドポイントが更新されて ReferenceSearch クラスを使用するようになり、パフォーマンスと信頼性が向上しました。
-* SITES-19308：参照の検証ステップを最適化することで、ページ削除プロセスのパフォーマンスを向上しました。
-* SITES-34293: パフォーマンスを向上させるために、テンプレート化されたリソースに対して遅延読み込みを実装しました。
-* SITES-33892：疑似ページの参照チェックをスキップする機能の切り替えが追加され、パフォーマンスが向上しました。
+* GRANITE-61875:「無効な式の評価」のトリガーを修正しました – 作成者がコンテンツフラグメントを保存できず、アセットをダウンロードできません。
+* SITES-22059:PDF ビューアコンポーネントでの JS エラーを修正しました。 コアコンポーネントサイト/PDF ビューアの「ファイルプレビューを使用できません」文字列がローカライズされていません。
+* GRANITE-59704：編集モードが失敗する原因となる htmllibmanager.debug を修正しました。
+* GRANITE-61042:FELIX-6796 （ServiceTracker NPE 修正）をAEM Felix web コンソールバンドルに統合します。
+* GRANITE-61165:Workspace.copy （）が RepositoryException をスローしている。
+* GRANITE-61875: ui.commons を 5.10.50 に更新します。
 
-### 修正された問題 {#fixed-issues-22450}
-
-* CQ-4360550:AEM Cloud Service でページの移動を元に戻した後に、言語コピーが予期せず表示されなくなる問題を修正しました。
-* SITES-25232:「日付を設定」リンクと「タイムワープを終了」リンクにフォーカスインジケーターが表示されない。
-* SITES-25258：注釈を削除モーダルダイアログでフォーカスが管理されない。
-* SITES-25305：デモグラフィックツールバーは、論理的な順序でフォーカスを受け取りません。
-* SITES-25366：ティーザーモーダルの読み込み状態が、スクリーンリーダーによって通知されない。
-* SITES-34276：ユニバーサルエディターを使用したEdge Delivery：自動作成された CORS ポリシーがパブリッシュ層に適用されない問題を修正しました。
-* SITES-34811：ユニバーサルエディターのEdge Delivery：オーサリングで hlx セレクターがスプレッドシートへのリンクに追加されない問題を修正しました。
-* SITES-31669：ローカライズされていない文字列「このページは、ツール/サイト/ローンチで「にリダイレクトされます」。
-* SITES-30879: サイト / ページエディター/検索コンポーネントでローカライズされていない文字列。
-* SITES-30959：ページエディター/画像コンポーネントでローカライズされていない文字列。
-* SITES-21743: 「表示するドキュメントを選択してください」がローカライズされていません。 ページエディター/PDF ビューアの文字列
-* SITES-19785：文字列が、コアコンポーネントのサイト/タブでローカライズされていません。
-* SITES-22059：コアコンポーネントサイト/PDF ビューアで、「ファイルプレビューを使用できません」というローカライズされていない文字列が表示される。
-* SITES-33360：操作中にローカライズされていない「エラー」が発生する。 ローンチ /編集で指定されたパスは、ローンチ文字列ではありません。
-* SITES-32975：ヘッドレス UI/ローンチ/ローンチをSourceと比較で、ローカライズされていない日付形式。
-* SITES-32973：ヘッドレス UI/ローンチ/リベースでハードコードされた文字列。
-* SITES-13540：ローンチ/プロモーションのローカライズされていない文字列。
-* SITES-13085: サイト / ローンチ作成ページのローカライズされていないエラー文字列。
-* SITES-21499：ローカライズされていない文字列は、サイト/ローンチ/編集です。
-* SITES-14961：サイト/プロパティ/ブループリント/ロールアウト ダイアログでの日付フィールドの切り捨て。
-* SITES-33764：ローンチフィルター（Source パス/ワークフローで作成されたローンチ）が機能しない。
-* SITES-33884:「現在のページとサブページを昇格」が、意図せずに範囲外のページを昇格する。
-* SITES-33611：ライブコピーの概要が、大量の市場で機能しない。
-* SITES-34331：管理者以外のユーザーのロールアウトオーバーレイを読み込むと 503 タイムアウトが発生する。
-* SITES-34403：シャットダウン中に `NullPointerException` が `GraphqlClientImpl deactivate()` に入りました。
-* SITES-33817: UI スキーマと JCR モデルの間の同期の問題を解決して、一貫性を確保しました。
-* SITES-31141: パスで表されないコンテンツ参照が、API 応答で正しく返されるようになりました。
-* SITES-34080：コンテンツフラグメントの作成プロセスがより堅牢になり、リクエストにフィールドが指定されていない場合も失敗しなくなりました。
-* SITES-30773:「検索と置換」を使用して単語を検索する正規表現が改善され、UTF-8 文字に正しく一致するようになりました。
-* SITES-33742：ワークフロー API を使用する際に、コンテンツフラグメントを正常に移動できないバグを修正しました。
-
-### 既知の問題 {#known-issues-22450}
+### 既知の問題 {#known-issues-22758}
 
 なし。
 
-### 廃止された機能と API {#deprecated-22450}
+### 廃止された機能と API {#deprecated-22758}
 
 AEM as a Cloud Service で廃止および削除された機能と API について詳しくは、[廃止および削除された機能と API](/help/release-notes/deprecated-removed-features.md) ドキュメントを参照してください。
 
-### セキュリティ修正 {#security-22450}
+### セキュリティ修正 {#security-22758}
 
-AEM as a Cloud Service では、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。 このメンテナンスリリースでは、特定された 18 個の脆弱性に対処し、堅牢なシステム保護に対する取り組みを強化しています。
+AEM as a Cloud Service では、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。 このメンテナンスリリースでは、特定された 13 個の脆弱性に対処し、堅牢なシステム保護に対する取り組みを強化しています。
 
-### 組み込みテクノロジー {#embedded-tech-22450}
+### 組み込みテクノロジー {#embedded-tech-22758}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
-| AEM Oak | 1.84.0 | [Oak API 1.84.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.84/index.html) |
+| AEM Oak | 1.86.0 | [Oak 1.86.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.86/index.html) |
 | AEM SLING API | 2.27.6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28-1.4.0 | [HTML テンプレート言語仕様](https://github.com/adobe/htl-spec) |
 | Apache HTTP サーバー | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
-| AEM コアコンポーネント | 2.29.0 | [AEM WCM コアコンポーネント](https://github.com/adobe/aem-core-wcm-components) |
+| AEM コアコンポーネント | 2.30.1 | [AEM WCM コアコンポーネント](https://github.com/adobe/aem-core-wcm-components) |
 | Node.js | 14（デフォルト） | [サポートされている Node.js バージョン](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
