@@ -3,9 +3,9 @@ title: 属性ベースのアクセス制御
 description: 属性ベースのアクセス制御を有効にして、メタデータベースのルールを定義し、コンテンツハブで使用可能なアセットへのアクセスレベルを定義する方法について説明します。
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 0833e31d37c473d37e16ee037823e61611622322
+source-git-commit: 82630f69399c077dc5c8ca40e7552cd479ea5bc5
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '944'
 ht-degree: 99%
 
 ---
@@ -39,9 +39,13 @@ ht-degree: 99%
 
 この記事で定義されているガイドラインを使用して、スプレッドシートでルールを定義します。
 
+<!--
+
 >[!IMPORTANT]
 >
-> ルールを定義したら、スプレッドシートの「**検証エラー**」タブに移動し、「**ABAC 検証を実行**」をクリックします。**すべての検証に合格しました**&#x200B;というメッセージでは、定義したルールをアドビに提供できることを確認します。
+> After defining the rules, navigate to the **Validation Errors** tab of the spreadsheet and click **Run ABAC Validations**. **All validations passed** message confirms that you can provide the defined rules to Adobe.
+
+-->
 
 ## 属性ベースのアクセス制御のユースケースの例 {#example-metadata-based-rules}
 
