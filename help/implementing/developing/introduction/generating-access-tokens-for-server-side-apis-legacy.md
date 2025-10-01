@@ -5,10 +5,10 @@ hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
-source-wordcount: '1359'
-ht-degree: 100%
+source-git-commit: 22216d2c045b79b7da13f09ecbe1d56a91f604df
+workflow-type: tm+mt
+source-wordcount: '1382'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 <!-- ERROR: Not Found (HTTP error 404)
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ja#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## サーバー間フロー {#the-server-to-server-flow}
 
@@ -77,14 +77,15 @@ AEM に対して呼び出しを行う AEM 以外のアプリケーションは�
 
 資格情報を使用して、Adobe IMS サービスへの呼び出しで JWT トークンを作成し、24 時間有効なアクセストークンを取得します。
 
-AEM CS サービス資格情報は、専用のクライアントライブラリを使用して、アクセストークンと交換できます。このクライアントライブラリは、[アドビが公開している GitHub リポジトリー](https://github.com/adobe/aemcs-api-client-lib)から入手可能です。このリポジトリーには、より詳細なガイダンスと最新の情報が含まれています。
+AEM CS サービス資格情報は、この目的で設計されたコードサンプルを使用して、アクセストークンと交換できます。 サンプルコードは [Adobeの公開 GitHub リポジトリ ](https://github.com/adobe/aemcs-api-client-lib) から入手可能です。このリポジトリには、独自のプロジェクトに合わせてコピーおよび調整できるコード例が含まれています。 このリポジトリには、参照用のサンプルコードが含まれており、実稼動用のライブラリ依存関係として維持されているわけではありません。
 
 ```
 /*jshint node:true */
 "use strict";
 
 const fs = require('fs');
-const exchange = require("@adobe/aemcs-api-client-lib");
+// Sample code adapted from Adobe's GitHub repository
+const exchange = require("./your-local-aemcs-client"); // Copy and adapt the code from the GitHub repository
 
 const jsonfile = "aemcs-service-credentials.json";
 
