@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
+source-git-commit: 416cb98fbf48885688ee70d63e606e3f7c90f9f8
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 100%
+source-wordcount: '2201'
+ht-degree: 82%
 
 ---
 
@@ -24,6 +24,14 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 >
 >詳しくは、[コンテンツフラグメントと共に使用する AEM GraphQL API - 制限事項](/help/headless/graphql-api/content-fragments.md#limitations)を参照してください。
 
+>[!NOTE]
+>
+>この新しいエディターでモデルを作成する場合、そのモデルには常にこのエディターを使用する必要があります。
+>
+>[ 元のモデルエディター ](/help/assets/content-fragments/content-fragments-models.md) でモデルを開くと、次のメッセージが表示されます。
+>
+>* 「このモデルには、カスタム UI スキーマが設定されています。 この UI に表示されるフィールドの順序は、UI スキーマと一致しない場合があります。 UI スキーマに合わせてフィールドを表示するには、新しいコンテンツフラグメントエディターに切り替える必要があります。」
+
 ## コンテンツフラグメントモデルの定義 {#defining-your-content-fragment-model}
 
 コンテンツフラグメントモデルは、**[データタイプ](#data-types)**&#x200B;の選択を使用して、結果として得られるコンテンツフラグメントの構造を効果的に定義します。モデルエディターを使用して、データタイプのインスタンスを追加し、それらを設定して必須フィールドを作成できます。
@@ -38,26 +46,46 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
    >
    >また、モデルを[作成](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)した後に直接開くこともできます。
 
-1. 必要なモデルを **編集** 用に開きます。クイック操作を使用するか、モデルを選択してツールバーから操作を選択します。
+1. 必要なモデルを **編集** 用に開きます。クイックアクションリンクのいずれかを使用するか、モデルを選択してツールバーからアクションを選択します。
 
-   モデルを開くと、モデルエディターに以下の情報が表示されます。
-
-   * 左：フィールドが既に定義されています
-   * 右：フィールドの作成に使用できる&#x200B;**データタイプ**（およびフィールドの作成後に使用する&#x200B;**プロパティ**）
-
-   >[!NOTE]
-   >
-   >あるフィールドを「**必須**」と指定した場合、左側のウィンドウに表示される&#x200B;**ラベル**&#x200B;にアスタリスク（**&#42;**）が付きます。
 
    ![プロパティ](assets/cf-cfmodels-empty-model.png)
 
+   モデルを開くと、モデルエディターに以下の情報が表示されます。
+
+   * 上位：
+      * **ホーム** アイコン
+      * [ 元の ](/help/assets/content-fragments/content-fragments-models.md) エディターと新しいエディターを切り替えるオプション
+      * **キャンセル**
+      * **保存**
+
+   * 左：フィールドの作成に使用できる **データタイプ**
+
+   * 中央：「**追加**」オプションとともに既に定義されているフィールド
+
+   * 右：右端のアイコンを使用して、次のいずれかを選択できます。
+
+      * **プロパティ**：選択したフィールドのプロパティを定義および表示します
+      * **モデルの詳細**:**有効** ステータス、**モデルタイトル**、**タグ**、**説明** および **プレビュー URL** を表示します
+
 1. **フィールドを追加するには**
 
-   * 必要なデータタイプをフィールドの必要な場所にドラッグします。
+   * 以下のいずれかの操作を行います。
 
-     ![データタイプをドラッグしてフィールドを作成](assets/cf-cfmodels-create-field.png)
+      * データタイプを左側のパネルから、中央のパネルのフィールドに必要な場所にドラッグします。
+      * データタイプで「**+**」アイコンを選択して、フィールドリストの下部に追加します。
+      * 中央のパネルで **追加** を選択し、表示されるドロップダウンリストから必要なデータタイプを選択して、フィールドをリストの下部に追加します。
 
-   * フィールドがモデルに追加されると、その特定のデータタイプに対して定義できる&#x200B;**プロパティ**&#x200B;が右側のパネルに表示されます。ここで、そのフィールドに必要な項目を定義することができます。
+     >[!NOTE]
+     >
+     >**タブプレースホルダー** フィールドは、常に既存のフィールドの上に表示する必要があります。
+
+   * フィールドボックスの左側にドットが表示されることで、フィールドの位置を変更することができます。
+
+     ![ フィールドを移動 ](assets/cf-cfmodels-move-field-icon.png)
+
+   * フィールドがモデルに追加され、選択されると、右側のパネルに特定のデータタイプに対して定義できる **プロパティ** が表示されます。 ここでは、特定のに必要なものを定義できます
+フィールド。
 
       * 多くのプロパティは自明です。詳しくは、[プロパティ（データタイプ）](#properties)を参照してください。
       * 「**フィールドラベル**」を入力すると、「**プロパティ名**」が空欄の場合は自動入力され、後で手動で更新できます。
@@ -72,15 +100,17 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
      ![フィールドのプロパティ](assets/cf-cfmodels-field-properties.png)
 
+     >[!NOTE]
+     >
+     >フィールドが **必須** として定義されている場合、中央のウィンドウに表示される **ラベル** にアスタリスク（**&#42;**）が付きます。
+
 1. **フィールドを削除するには**
 
-   必須フィールドを選択し、ごみ箱アイコンを選択します。アクションの確認が求められます。
+   中央のパネルの適切なフィールドにごみ箱アイコンを選択します。
 
    ![削除](assets/cf-cfmodels-remove-icon.png)
 
-1. すべての必須フィールドを追加し、必要に応じて関連するプロパティを定義します。例：
-
-   ![保存](assets/cf-cfmodels-save.png)
+1. すべての必須フィールドを追加し、必要に応じて関連するプロパティを定義します。
 
 1. 「**保存**」を選択して、定義を保持します。
 
@@ -118,6 +148,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 * **タグ**
    * フラグメント作成者がタグの領域にアクセスして選択できるようにする
+
 * **フラグメント参照**
    * 他のコンテンツフラグメントの参照を[ネストされたコンテンツの作成](#using-references-to-form-nested-content)に使用可能
    * このデータタイプは、フラグメント作成者が次の操作を行えるように設定可能です。
@@ -126,18 +157,16 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
       * フィールドの新しいインスタンスの作成
    * 参照は、参照先リソースへのパスを指定します。例：`/content/dam/path/to/resource`
 
-* **フラグメント参照（UUID）**
-   * 他のコンテンツフラグメントの参照を[ネストされたコンテンツの作成](#using-references-to-form-nested-content)に使用可能
-   * このデータタイプは、フラグメント作成者が次の操作を行えるように設定可能です。
-      * 参照先フラグメントの直接編集
-      * 適切なモデルに基づいた新しいコンテンツフラグメントの作成
-      * フィールドの新しいインスタンスの作成
-   * エディターでは、参照は参照先リソースへのパスを指定します。内部的には、参照はリソースを参照する Universally Unique ID（UUID）として保持されます
-      * UUID を知らなくても、フラグメントエディターで必要なフラグメントを参照できます
+     <!--
+    * Internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required fragment.
+    -->
 
+  <!--
   >[!NOTE]
   >
-  >UUID はリポジトリに固有です。[コンテンツのコピーツール](/help/implementing/developing/tools/content-copy.md)を使用してコンテンツフラグメントをコピーすると、ターゲット環境で UUID が再計算されます。
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **コンテンツ参照**
    * 任意のタイプの他のコンテンツの参照を[ネストされたコンテンツの作成](#using-references-to-form-nested-content)に使用可能
@@ -145,16 +174,16 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
    * フィールドは、フラグメント作成者がフィールドの新しいインスタンスを作成できるように設定可能
    * 参照は、参照先リソースへのパスを指定します。例：`/content/dam/path/to/resource`
 
-* **コンテンツ参照（UUID）**
-   * 任意のタイプの他のコンテンツの参照を[ネストされたコンテンツの作成](#using-references-to-form-nested-content)に使用可能
-   * 画像が参照されている場合は、サムネールを表示するように選択可能
-   * フィールドは、フラグメント作成者がフィールドの新しいインスタンスを作成できるように設定可能
-   * エディターでは、参照は参照先リソースへのパスを指定します。内部的には、参照はリソースを参照する Universally Unique ID（UUID）として保持されます
-      * UUID を知らなくても、フラグメントエディターで必要なアセットリソースを参照できます
+     <!--
+    * Internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
+    -->
 
+  <!--
   >[!NOTE]
   >
-  >UUID はリポジトリに固有です。[コンテンツのコピーツール](/help/implementing/developing/tools/content-copy.md)を使用してコンテンツフラグメントをコピーすると、ターゲット環境で UUID が再計算されます。
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **JSON オブジェクト**
    * コンテンツフラグメントの作成者がフラグメントの対応する要素に JSON 構文を入力できます。
@@ -170,6 +199,8 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
      >[!NOTE]
      >
      >このデータタイプは書式設定にのみ使用され、AEM GraphQL スキーマでは無視されます。
+     >
+     >**タブプレースホルダー** フィールドは、常に既存のフィールドの上に表示する必要があります。
 
 ## プロパティ（データタイプ） {#properties}
 
@@ -258,16 +289,12 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 * [コンテンツ参照](#content-reference)
    * 他のコンテンツへの単純な参照（任意のタイプ）を提供します。
-   * データタイプによって提供されるものは次のとおりです。
-      * **コンテンツ参照** - パスベース
-      * **コンテンツ参照（UUID）** - UUID ベース
+   * **コンテンツ参照** データタイプによって提供されます
    * （結果のフラグメント内で）1 つまたは複数の参照に対して設定できます。
 
 * [フラグメント参照](#fragment-reference-nested-fragments)（ネストされたフラグメント）
    * 指定した特定のモデルに応じて、他のフラグメントを参照します。
-   * データタイプによって提供されるものは次のとおりです。
-      * **フラグメント参照** - パスベース
-      * **フラグメント参照（UUID）** - UUID ベース
+   * **フラグメント参照** データタイプによって提供されます
    * 構造化データを包含／取得できます。
 
      >[!NOTE]
@@ -275,9 +302,11 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
      >このメソッドは、[GraphQL でコンテンツフラグメントを使用したヘッドレスコンテンツ配信](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)を使用する場合、特に重要になります。
    * （結果のフラグメント内で）1 つまたは複数の参照に対して設定できます。
 
+<!--
 >[!NOTE]
 >
->コンテンツ／フラグメント参照およびコンテンツ／フラグメント参照（UUID）と、UUID ベースのデータタイプへのアップグレードについて詳しくは、[UUID 参照用のコンテンツフラグメントのアップグレード](/help/headless/graphql-api/uuid-reference-upgrade.md)を参照してください。
+>See [Upgrade your Content Fragments for UUID References](/help/headless/graphql-api/uuid-reference-upgrade.md) for further information about Content/Fragment Reference and Content/Fragment Reference (UUID), and upgrading to the UUID-based data types.
+-->
 
 >[!NOTE]
 >
@@ -297,7 +326,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 ### コンテンツ参照 {#content-reference}
 
-**コンテンツ参照**&#x200B;および&#x200B;**コンテンツ参照（UUID）**&#x200B;データタイプを使用すると、別のソース（例：画像、ページまたはエクスペリエンスフラグメント）からコンテンツをレンダリングできます。
+**コンテンツ参照** データタイプを使用すると、画像、ページ、エクスペリエンスフラグメントなどの別のソースからコンテンツをレンダリングできます。
 
 標準プロパティに加えて、以下を指定できます。
 
@@ -324,7 +353,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 ### フラグメント参照（ネストされたフラグメント） {#fragment-reference-nested-fragments}
 
-**フラグメント参照**&#x200B;および&#x200B;**フラグメント参照（UUID）**&#x200B;データタイプは、1 つ以上のコンテンツフラグメントを参照できます。 複数のレイヤーを持つ構造化データを取得できるようになるので、アプリで使用するコンテンツを取得する場合、この機能は特に重要になります。
+**フラグメント参照** データタイプは、1 つ以上のコンテンツフラグメントを参照できます。 複数のレイヤーを持つ構造化データを取得できるようになるので、アプリで使用するコンテンツを取得する場合、この機能は特に重要になります。
 
 例：
 

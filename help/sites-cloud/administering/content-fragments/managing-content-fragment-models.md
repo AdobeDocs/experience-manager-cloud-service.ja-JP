@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
-workflow-type: ht
-source-wordcount: '2260'
-ht-degree: 100%
+source-git-commit: baf9e56e65bc537e136310814f269a3a20a80dd3
+workflow-type: tm+mt
+source-wordcount: '2496'
+ht-degree: 94%
 
 ---
 
@@ -54,8 +54,8 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 * 上部のツールバー
    * 標準の AEM 機能を提供します
-   * IMS 組織も表示します
-   * 様々な[アクション](#actions-unselected)の提供
+   * IMS 組織を表示
+   * には様々な [ アクション ](#actions-unselected) が用意されており、1 つ以上のモデルを選択して [ 変更 ](#actions-selected-content-fragment-models) できます。
 * 左側のパネル
    * フォルダーとしてリストされた[すべての設定へのパス](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)を表示します
    * フォルダーツリーを表示したり非表示にしたりできます
@@ -97,20 +97,29 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 * **ステータス**
    * 情報提供のみ。
    * [高速フィルタリング](#fast-filtering)に使用可能
-* **変更**
+* **レプリケーションステータス**
    * 情報提供のみ。
+   * [高速フィルタリング](#fast-filtering)に使用可能。
+* **プレビュー**
+   * 情報提供のみ。
+* **変更日時**
+   * 情報提供のみ。
+   * [高速フィルタリング](#fast-filtering)に使用可能。
 * **変更者**
    * 情報提供のみ。
-   * [高速フィルタリング](#fast-filtering)に使用可能
+   * [高速フィルタリング](#fast-filtering)に使用可能。
 * **タグ**
    * 情報提供のみ。
-   * モデルに関連するすべてのタグを表示します。
+   * モデルに関連するすべてのタグを表示するダイアログを開きます。
    * [高速フィルタリング](#fast-filtering)に使用可能
 * **公開時間**
    * 情報提供のみ。
+   * [高速フィルタリング](#fast-filtering)に使用可能。
 * **公開者**
    * 情報提供のみ。
    * [高速フィルタリング](#fast-filtering)に使用可能。
+* **使用者**
+   * モデルに基づくコンテンツフラグメントを一覧表示するダイアログを開きます。 リストには、フラグメントを直接開くためのリンクが表示されます。
 
 ## モデルのプロパティ {#model-properties}
 
@@ -169,8 +178,9 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 特定のモデルを選択するとツールバーが開き、そのモデルで使用可能なアクションが表示されます。複数のモデルを選択することもできます。それに応じて、使用可能なアクションも変化します。
 
 * **[編集](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)**：コンテンツフラグメントモデルを定義します。
-* **パブリッシュ**：[パブリッシュ](/help/implementing/cloud-manager/manage-environments.md#environment-types)層または[プレビュー](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)層のいずれかに適用されます。
+* **[公開](#publishing-a-content-fragment-model)** 層または **[プレビュー](#unpublishing-a-content-fragment-model)** 層に [ 公開 ](/help/implementing/cloud-manager/manage-environments.md#environment-types) および [ 非公開 ](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)。
 * **ロック**／**ロック解除**：ユーザーのモデルの変更を許可するかどうかを制御します。
+* モデルを **コピー** します。
 * **[有効化](#enabling-a-content-fragment-model)**／**[無効化](#disabling-a-content-fragment-model)**：ユーザーがこのモデルを基にコンテンツフラグメントを作成することを許可するかどうかを制御します。
 
 1 つのモデルを選択すると、右側のパネルに[モデルのプロパティ](#properties)も表示されます。
@@ -198,7 +208,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 * the option to retrieve a saved search filter for reuse
 -->
 
-選択した後、メインパネルの上部に「**フィルター条件**」オプションが表示され、そこから選択を解除できます。次に例を示します。
+選択した後、メインパネルの上部に「**フィルター条件**」オプションが表示され、そこから選択を解除できます。例：
 
 ![コンテンツフラグメントコンソール – コンテンツフラグメントモデルのフィルタリング](assets/cf-managing-content-fragment-models-filter.png)
 
@@ -317,23 +327,21 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 * 継承チェーンを使用しても結果が得られない場合は、そのフォルダーの **Cloud Services** 設定を調べます（最初は直接、次に継承を使用して調べます）。
 * 上記のいずれでも結果が得られない場合、そのフォルダーに許可されるモデルはありません。
 
-<!--
-## Deleting a Content Fragment Model {#deleting-a-content-fragment-model}
+## コンテンツフラグメントモデルの削除 {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
 >
->Deleting a Content Fragment model can impact dependent fragments.
+>コンテンツフラグメントモデルを削除すると、依存するフラグメントに影響を与える場合があります。
 
-To delete a Content Fragment model:
+コンテンツフラグメントモデルを削除するには、次の操作を実行します。
 
-1. Navigate to, and select your Content Fragment Model. You can select multiple models.
+1. コンテンツフラグメントモデルに移動して選択します。複数のモデルを選択できます。
 
-1. Select **Delete** from the toolbar.
+1. ツールバーから「**削除**」を選択します。
 
    >[!NOTE]
    >
-   >If the model is referenced a warning is given, so that you can take appropriate action.
--->
+   >モデルが参照されている場合は、適切なアクションを実行できるように警告が表示されます。
 
 ## コンテンツフラグメントモデルの公開 {#publishing-a-content-fragment-model}
 
@@ -352,25 +360,25 @@ To delete a Content Fragment model:
 
 1. 選択したモデルとその参照を公開するワークフローが開始されます。公開ステータスがコンソールに示されます。
 
-<!--
-## Unpublishing a Content Fragment Model {#unpublishing-a-content-fragment-model}
+## コンテンツフラグメントモデルを非公開にする {#unpublishing-a-content-fragment-model}
 
-Content Fragment Models can be unpublished if they are not referenced by any fragments.
+コンテンツフラグメントモデルがフラグメントによって参照されていない場合は、そのモデルを非公開にできます。
 
-To unpublish a Content Fragment Model:
+コンテンツフラグメントモデルを非公開するには、次の操作を実行します。
 
-1. Navigate to, and select your Content Fragment Model.
-1. Select **Unpublish** from the toolbar.
-   The published status is indicated in the console. 
+1. コンテンツフラグメントモデルに移動して選択します。
+公開ステータスがコンソールに表示されます。
 
-If you try to unpublish a model that is currently used by one or more fragments, then an error warning is shown. For example: 
+1. ツールバーの **非公開** を選択します。
 
-![Content Fragment Model error message when unpublishing a model that is in use](assets/cf-cfmodels-unpublish-error.png)
+1. 非公開ダイアログで、**宛先** を選択します。
 
-The message suggests that you check the [References](/help/sites-cloud/authoring/basic-handling.md#references) panel to investigate further:
+   * **パブリッシュサービス**
+   * **プレビューサービス**
 
-![Content Fragment Model in References](assets/cf-cfmodels-references.png)
--->
+1. 選択したモデルとその参照を非公開にするワークフローが開始されます。 非公開ステータスがコンソールに表示されます。
+
+1 つ以上のフラグメントで現在使用されているモデルを非公開にしようとすると、エラーメッセージが表示されます。このメッセージでは、[参照](/help/sites-cloud/authoring/basic-handling.md#references)パネルを確認して詳細を調べるよう提案されます。
 
 ## コンテンツフラグメントモデルのロック {#locked-content-fragment-models}
 
