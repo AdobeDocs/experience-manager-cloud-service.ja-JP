@@ -5,9 +5,9 @@ feature: Deploying
 role: Admin
 badge: label="限定提供（LA）" type="Positive"
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 350b288d30b3fb8d9d308dbd279f579cec0b292c
+source-git-commit: aec58ceffbbc6c7e2921c471d608ed3c381fe2e4
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >この機能は、9 月 25 日（PT）以降、**限定提供** 機能として使用できるようになります。 プログラムで機能をアクティブにするには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信します。
+
+>[!WARNING]
+>「停止時間」機能と「自由期間の更新」機能は、[ 自動メンテナンス更新 ](/help/implementing/deploying/aem-version-updates.md) にオンボーディングされた後でのみ使用できます。
 
 AEM as a Cloud Service[ 自動メンテナンスアップデート ](/help/implementing/deploying/aem-version-updates.md) は、インスタンスのセキュリティを確保し、最新のメンテナンスリリースを最新の状態に保ちます。 ただし、運用開始イベントなどの場合には、潜在的な中断から重要な営業時間を「保護」する必要が生じる可能性があります。 そのため、AEM as a Cloud Serviceでは、進行中のプログラムに自動更新が行われない時間枠を設定できます。
 
