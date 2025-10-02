@@ -4,10 +4,10 @@ description: AEM の管理による CDN を使用する方法と、独自の CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 62af306bbf645c4d70d0f07f95aa90e4d53e20f8
+source-git-commit: 41e9b91d7edbe26bf764b9eac56f21c3c2e86a64
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1744'
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
 >title="AEM as a Cloud Service での CDN"
->abstract="AEM as Cloud Service の出荷時には、組み込みの CDN が搭載されています。その主な目的は、ブラウザーの近くの CDN エッジノードからキャッシュ可能なコンテンツを配信することで、待ち時間を減らすことです。AEM アプリケーションの最適なパフォーマンスを得るために、完全に管理および設定されています。"
+>abstract="AEM as Cloud Service の出荷時には、ビルトインの CDN が搭載されています。その主な目的は、ブラウザーの近くの CDN エッジノードからキャッシュ可能なコンテンツを配信することで、待ち時間を減らすことです。AEM アプリケーションの最適なパフォーマンスを得るために、完全に管理および設定されています。"
 
 AEM as a Cloud Service には統合 CDN が付属しており、ユーザーのブラウザーに近いエッジノードからキャッシュ可能なコンテンツを配信することで、待ち時間を減らすように設計されています。この完全に管理された CDN は、AEM アプリケーションのパフォーマンスに合わせて最適化されています。
 
@@ -32,7 +32,7 @@ Edge Delivery Services 層への公開を検討している顧客は、アドビ
 
 <!-- CQDOC-21758, 5a -->
 
-Cloud Manager のセルフサービス UI を通じて AEM の組み込み CDN を使用してコンテンツ配信の準備をするには、アドビの管理による CDN 機能を活用できます。この機能を使用すると、DV（ドメイン検証）証明書や EV／OV（拡張／組織検証）証明書などの SSL 証明書の設定とインストールを含む、セルフサービス CDN 管理を処理できます。これらの方法について詳しくは、次を参照してください。
+Cloud Manager のセルフサービス UI を通じて AEM のビルトインの CDN を使用してコンテンツ配信の準備をするには、アドビの管理による CDN 機能を活用できます。この機能を使用すると、DV（ドメイン検証）証明書や EV／OV（拡張／組織検証）証明書などの SSL 証明書の設定とインストールを含む、セルフサービス CDN 管理を処理できます。これらの方法について詳しくは、次を参照してください。
 
 * [Cloud Manager の Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [カスタムドメイン名の概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)

@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d065397b874cc24fb7af53e1258520f3e8270c55
-workflow-type: ht
-source-wordcount: '1489'
-ht-degree: 100%
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
+workflow-type: tm+mt
+source-wordcount: '1546'
+ht-degree: 96%
 
 ---
 
@@ -116,6 +116,11 @@ Cloud Manager で使用できるパイプラインとその用途を次の表に
 設定パイプラインを使用すると、ログ転送、パージ関連のメンテナンスタスク、トラフィックフィルタールール（WAF（Web アプリケーションファイアウォール）ルールなど）を含む様々な CDN 設定の設定をすばやくデプロイできます。さらに、リクエストと応答の変換、オリジンセレクター、クライアントサイドリダイレクト、エラーページ、顧客管理 CDN キー、パージ API キー、基本認証を管理できます。
 
 サポートされている機能の包括的なリストと、リポジトリ内の設定を適切にデプロイするために設定を管理する方法については、[設定パイプラインの使用](/help/operations/config-pipeline.md)を参照してください。
+
+>[!NOTE]
+>
+>Edge Delivery設定パイプラインには、開発環境、ステージング環境および実稼動環境は分離されません。 AEM as a Cloud Serviceでは、変更は開発層、ステージ層、実稼動層を通じて進みます。 これに対し、Edge Delivery設定パイプラインは、Cloud Managerに登録されたすべてのEdge Delivery Sites ドメインに設定を直接適用します。 詳しくは、[Edge Delivery パイプラインの追加 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) を参照してください。
+
 
 ### 設定パイプラインの設定 {#configure-config-deployment}
 

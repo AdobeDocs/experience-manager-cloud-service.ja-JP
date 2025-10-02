@@ -1,14 +1,14 @@
 ---
 title: Cloud Manager テストの概要
-description: カスタムコードの品質を確保するために Cloud Manager が自動的に実行する 3 種類のテストの概要を説明します。
+description: カスタムコードの品質を確保するためにCloud Managerが自動的に実行する 3 種類のテストの概要を説明します。
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
-workflow-type: ht
-source-wordcount: '162'
-ht-degree: 100%
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 62%
 
 ---
 
@@ -25,11 +25,11 @@ Cloud Manager の Cloud Services パイプラインでサポートされるテ�
 
 1. [機能テスト](/help/implementing/cloud-manager/functional-testing.md)
 
-   * 機能テストは、[実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)のテスト段階の一部ですが、オプションとして、[実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)のテスト段階に含めることもできます。
+   * 機能テストは、[ 実稼動パイプライン ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) のステージテスト段階で実行されます。 また、必要に応じて、（実稼動以外のパイプライン [ のテスト段階で実行するこ ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) もできます。
 
-1. [エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-dashboard.md)
+1. [エクスペリエンス監査テスト](/help/implementing/cloud-manager/reports/report-experience-audit.md)
 
-   * エクスペリエンス監査テストは、すべての Cloud Manager 実稼動パイプラインで有効になっており、スキップできません。
+   * エクスペリエンスの監査テストは、すべてのCloud Manager実稼動パイプラインで有効になっており、スキップできません。
 
 以下のテストがあります。
 

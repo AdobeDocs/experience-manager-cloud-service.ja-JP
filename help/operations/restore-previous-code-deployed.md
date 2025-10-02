@@ -5,10 +5,10 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 2fa7005eec0a53f632e1b1cb2f5cc5910bbf21f8
+source-git-commit: 7968668766ae4c8a966bbde93aa2f2ac0c401659
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 91%
+source-wordcount: '559'
+ht-degree: 85%
 
 ---
 
@@ -36,7 +36,13 @@ ht-degree: 91%
 * プログラムが AEM as a Cloud Service で実行されている。
 * この環境の最後のパイプラインが正常に完了し、実行から **30 日未満**&#x200B;である。
 * 環境のステータスが&#x200B;*実行中*&#x200B;で、進行中のパイプラインがない。
-* **デプロイされた以前のコードを復元** は、`Development` 環境、`Stage` 環境または `Specialized Testing Environment` で実行できます。
+
+**デプロイされた以前のコードを復元** は、環境、`Production` 環境、`Development` ードに加えて、`Stage``Specialized Testing Environment` 環境で機能します。 確認後、Cloud Managerは復元を開始し、開始時と正常終了時にプッシュ通知を送信します。
+
+>[!IMPORTANT]
+>
+>Adobeでは、リスクを軽減し安定性を確保するた `Stage` に、手順を ** 前 `Production` で検証することを強くお勧めします。
+
 
 いずれかの確認に失敗した場合、Cloud Manager では、次のダイアログボックスが開き、満たされていない条件が 1 つ以上リストされ、**確認**&#x200B;が無効になり、復元が防止されます。
 

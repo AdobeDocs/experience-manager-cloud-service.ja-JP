@@ -4,10 +4,10 @@ description: 設定パイプラインを使用して、ログ転送の設定、�
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 1d29700d8cbb9cd439ec909687c34db06a8090e4
+source-git-commit: b0357c9fcc19d29c3d685e6b14369a6fcc6832e1
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 67%
+source-wordcount: '1340'
+ht-degree: 53%
 
 ---
 
@@ -21,16 +21,16 @@ Cloud Manager 設定パイプラインでは、設定ファイル（YAML 形式�
 
 **パブリッシュ配信** プロジェクトの場合、設定パイプラインは、Cloud Managerを介して、開発環境、ステージング環境、実稼動環境の各タイプにデプロイできます。 設定ファイルは、[コマンドラインツール](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)を使用して迅速な開発環境（RDE）にデプロイできます。
 
-設定パイプラインは、**Edge Delivery** プロジェクトのCloud Managerを使用してデプロイすることもできます。
+設定パイプラインは、**Edge Delivery** プロジェクトのCloud Managerを通じてデプロイすることもできます。
 
 このドキュメントの以降の節では、設定パイプラインの使用方法と、それらの設定を構造化する方法に関する重要な情報の概要を示します。設定パイプラインでサポートされる機能のすべてまたはサブセットで共有される一般的な概念について説明します。
 
-* [サポートされる設定](#configurations) - 設定パイプラインでデプロイできる設定のリスト
-* [&#x200B; 設定パイプラインの作成と管理 &#x200B;](#creating-and-managing) – 設定パイプラインの作成方法
-* [共通の構文](#common-syntax) - 設定間で共有される構文
-* [フォルダー構造](#folder-structure) - 設定に必要な構造の設定パイプラインについて説明します。
-* [秘密鍵の環境変数](#secret-env-vars) - 環境変数を使用して、設定の秘密鍵を開示しない例
-* [&#x200B; シークレットパイプライン変数 &#x200B;](#secret-pipeline-vars) - Edge Delivery Services プロジェクトの設定内で環境変数を使用してシークレットを開示しない例
+* [ サポートされている設定 ](#configurations) – 設定パイプラインでデプロイできる設定のリスト。
+* [ 設定パイプラインの作成と管理 ](#creating-and-managing) – 設定パイプラインの作成方法
+* [ 共通構文 ](#common-syntax) – 設定間で共有される構文。
+* [ フォルダー構造 ](#folder-structure) – 設定に必要な構造設定パイプラインについて説明します。
+* [ シークレット環境変数 ](#secret-env-vars) – 設定でシークレットを開示しない環境変数の使用例。
+* [ シークレットパイプライン変数 ](#secret-pipeline-vars) - Edge Delivery Services プロジェクトの設定内でシークレットを公開しないように環境変数を使用する例。
 
 ## サポートされる設定 {#configurations}
 
@@ -50,13 +50,13 @@ Cloud Manager 設定パイプラインでは、設定ファイル（YAML 形式�
 | [バージョンのパージメンテナンスタスク](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | コンテンツのバージョンをパージするタイミングに関するルールを宣言して、AEM リポジトリを最適化します | X |  |
 | [監査ログのパージメンテナンスタスク](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | ログをパージするタイミングに関するルールを宣言して、AEM 監査ログを最適化し、パフォーマンスを向上させます | X |  |
 | [ログ転送](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Azure Blob Storage、Datadog、HTTPS、Elasticsearch、Splunk など、様々な宛先にログを転送するエンドポイントと資格情報を設定します。 | X | X |
-| [クライアント ID の登録](/help/implementing/developing/open-api-based-apis.md) | `API` | クライアント ID を登録して、Adobe Developer Console API プロジェクトの範囲を特定の AEM 環境に設定します。これは、認証を必要とする OpenAPI ベースの API を使用する場合に必要です。 | X |  |
+| [クライアント ID の登録](/help/implementing/developing/open-api-based-apis.md) | `API` | クライアント ID を登録して、Adobe Developer Console API プロジェクトの範囲を特定のAEM環境に限定します。 認証が必要な OpenAPI ベースの API の使用に必要 | X |  |
 
 ## 設定パイプラインの作成と管理 {#creating-and-managing}
 
-**パブリッシュ配信** 設定パイプラインの作成および設定方法について詳しくは、[CI/CD パイプライン &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) を参照してください。 Cloud Managerで config パイプラインを作成する場合は、パイプラインの設定時に **フルスタックコード** ではなく **ターゲットデプロイメント** を選択してください。 前述のように、RDE の設定は、パイプラインではなく[コマンドラインツール](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)を使用してデプロイされます。
+**パブリッシュ配信** 設定パイプラインの作成および設定方法について詳しくは、[CI/CD パイプライン ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) を参照してください。 Cloud Managerで config パイプラインを作成する場合は、パイプラインの設定時に **フルスタックコード** ではなく **ターゲットデプロイメント** を選択してください。 前述のように、RDE の設定は、パイプラインではなく[コマンドラインツール](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)を使用してデプロイされます。
 
-**Edge Delivery** 設定パイプラインの作成および設定方法について詳しくは、[Edge Delivery パイプラインの追加 &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) を参照してください。
+**Edge Delivery** 設定パイプラインの作成および設定方法について詳しくは、[Edge Delivery パイプラインの追加 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) を参照してください。
 
 ## 共通の構文 {#common-syntax}
 
@@ -73,7 +73,7 @@ Cloud Manager 設定パイプラインでは、設定ファイル（YAML 形式�
 |---|---|---|
 | `kind` | ログ転送、トラフィックフィルタールール、リクエスト変換などの設定のタイプを決定する文字列 | 必須、デフォルトなし |
 | `version` | スキーマバージョンを表す文字列 | 必須、デフォルトなし |
-| `envTypes` | この文字列の配列は、`metadata` ノードの子プロパティです。**パブリッシュ配信** の場合、可能な値は開発、ステージ、実稼動またはその他の組み合わせであり、設定を処理する環境タイプを決定します。 例えば、配列に `dev` のみが含まれている場合、設定がステージング環境または実稼動環境にデプロイされていても、設定は読み込まれません。 **Edge Delivery** の場合は、`prod` の値のみを使用する必要があります | すべての環境タイプ（パブリッシュ配信の場合は（開発、ステージ、実稼動）、Edge Deliveryの場合は実稼動） |
+| `envTypes` | この文字列の配列は、`metadata` ノードの子プロパティです。**パブリッシュ配信** の場合、可能な値は開発、ステージ、実稼動またはその他の組み合わせであり、設定を処理する環境タイプを決定します。 例えば、配列に `dev` のみが含まれている場合、設定がステージング環境または実稼動環境にデプロイされていても、設定は読み込まれません。 **Edge Delivery** の場合は、`prod` の値のみを使用する必要があります。 | すべての環境タイプ（パブリッシュ配信の場合は開発、ステージ、実稼動、Edge Deliveryの場合は実稼動）。 |
 
 `yq` ユーティリティを使用すると、設定ファイル（例：`yq cdn.yaml`）の YAML 形式をローカルで検証できます。
 
@@ -98,11 +98,11 @@ Cloud Manager 設定パイプラインでは、設定ファイル（YAML 形式�
 
 `/config` の下のフォルダー名とファイル名は任意です。ただし、YAML ファイルには有効な [`kind` プロパティ値](#configurations)を含める必要があります。
 
-通常、設定はすべての環境にデプロイされます。各環境のすべてのプロパティ値が同じである場合は、1 つの YAML ファイルで十分です。ただし、下位環境のテスト時など、環境間でプロパティ値が異なることは一般的です。
+通常、設定はすべての環境にデプロイされます。すべてのプロパティ値が各環境で同じ場合は、1 つの YAML ファイルで十分です。 ただし、下位環境のテスト時など、環境間でプロパティ値が異なることは一般的です。
 
 次の節では、ファイルを構造化するいくつかの戦略について説明します。
 
-### すべての環境に対する 1 つの設定ファイル {#single-file}
+### すべての環境に対して 1 つの設定ファイル {#single-file}
 
 ファイル構造は次のようになります。
 
@@ -121,7 +121,7 @@ Cloud Manager 設定パイプラインでは、設定ファイル（YAML 形式�
      envTypes: ["dev", "stage", "prod"]
 ```
 
-秘密鍵タイプの環境（またはパイプライン）変数を使用すると、[&#x200B; のリファレンスで示すように、](#secret-env-vars) 秘密鍵プロパティ `${{SPLUNK_TOKEN}}` を環境ごとに変えることができます
+秘密鍵タイプの環境（またはパイプライン）変数を使用すると、次の [ リファレンスに示すように、環境ごとに ](#secret-env-vars) 秘密鍵プロパティ `${{SPLUNK_TOKEN}}` を変更できます。
 
 ```yaml
 kind: "LogForwarding"
@@ -137,7 +137,7 @@ data:
       index: "AEMaaCS"
 ```
 
-### 環境タイプごとの別個のファイル {#file-per-env}
+### 環境タイプごとに別個のファイル {#file-per-env}
 
 ファイル構造は次のようになります。
 
@@ -151,8 +151,7 @@ data:
   logForwarding-prod.yaml
 ```
 
-プロパティ値に違いがある可能性がある場合は、この構造を使用します。ファイルでは、`envTypes` 配列の値がサフィックスに対応することが想定されます。例：
-`cdn-dev.yaml` と `logForwarding-dev.yaml` では値が `["dev"]`、`cdn-stage.yaml` と `logForwarding-stage.yaml` では値が `["stage"]` などになります。
+プロパティ値に違いがある可能性がある場合は、この構造を使用します。ファイルでは、`envTypes` 配列の値がサフィックスに対応することを想定しています。 例えば、`cdn-dev.yaml` と `logForwarding-dev.yaml` の値は `["dev"]`、`cdn-stage.yaml` と `logForwarding-stage.yaml` の値は `["stage"]` などです。
 
 ### 環境ごとのフォルダー {#folder-per-env}
 
@@ -178,7 +177,8 @@ data:
 
 ### Edge Delivery Services {#yamls-for-eds}
 
-Edge Delivery設定パイプラインには、開発環境、ステージング環境および実稼動環境は個別に設定されません。 開発、ステージ、実稼動層を通じて変更が進行するパブリッシュ配信環境とは異なり、Edge Delivery設定パイプラインを通じてデプロイされた設定は、Edge Delivery サイトを持つCloud Managerに登録されたすべてのドメインマッピングに直接適用されます。
+Edge Delivery設定パイプラインには、開発環境、ステージング環境および実稼動環境は個別に設定されません。 パブリッシュ配信環境では、開発、ステージ、実稼動層を通じて変更の進行状況が示されます。 一方、Edge Delivery設定パイプラインは、Edge Delivery サイトのCloud Managerに登録されているすべてのドメインマッピングに設定を直接適用します。
+
 
 したがって、次のような単純なファイル構造をデプロイします。
 
@@ -188,7 +188,7 @@ Edge Delivery設定パイプラインには、開発環境、ステージング�
   logForwarding.yaml
 ```
 
-Edge Delivery サイトごとに異なるルールを使用する必要がある場合は、*when* 構文を使用してルールを区別します。 例えば、以下のスニペットで、ドメインがdev.example.comと一致することに注意してください。これは、ドメイン www.example.comと区別できます。
+ルールをEdge Delivery サイトごとに異なる必要がある場合は、構文 *when* を使用してルールを区別します。 例えば、以下のスニペットで、ドメインがdev.example.comと一致することに注意してください。これは、ドメイン www.example.comと区別できます。
 
 ```
 kind: "CDN"
@@ -209,13 +209,13 @@ data:
 
 *envTypes* メタデータフィールドを含める場合は、値 **prod** のみを使用してください（envTypes メタデータフィールドを省略しても問題ありません）。 *tier* reqProperty の場合は、値 **publish** のみを使用する必要があります。
 
-## 秘密鍵の環境変数 {#secret-env-vars}
+## シークレットの環境変数 {#secret-env-vars}
 
 ソースコントロールに機密情報を保存する必要がないように、設定ファイルでは&#x200B;**秘密鍵**&#x200B;タイプの Cloud Manager 環境変数をサポートします。ログ転送を含む一部の設定では、特定のプロパティに対して秘密鍵の環境変数が必須です。
 
 シークレットの環境変数は、配信プロジェクトの公開に使用します。Edge Delivery Services プロジェクトについては、シークレットパイプライン変数の節を参照してください。
 
-以下のスニペットは、設定で秘密鍵の環境変数 `${{SPLUNK_TOKEN}}` を使用する方法を示す例です。
+次のスニペットは、シークレット環境変数 `${{SPLUNK_TOKEN}}` が設定でどのように使用されるかを示しています。
 
 ```
 kind: "LogForwarding"
@@ -231,13 +231,12 @@ data:
       index: "AEMaaCS"
 ```
 
-環境変数の使用方法について詳しくは、[Cloud Manager 環境変数](/help/implementing/cloud-manager/environment-variables.md)ドキュメントを参照してください。
+環境変数の使用方法について詳しくは、[Cloud Manager環境変数 ](/help/implementing/cloud-manager/environment-variables.md) を参照してください。
 
-## シークレットパイプライン変数 {#secret-pipeline-vars}
+## 秘密鍵パイプライン変数 {#secret-pipeline-vars}
 
 Edge Delivery Services プロジェクトの場合は、**secret** 型のCloud Manager パイプライン変数を使用します。そのため、ソース管理に機密情報を保存する必要はありません。 「*適用されたステップ*」選択ボックスでは、「**デプロイ**」オプションを使用する必要があります。
 
 構文は前の節で示したスニペットと同じです。
 
-パイプライン変数の使用方法について詳しくは、[Cloud Managerのパイプライン変数 &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) を参照してください。
-
+パイプライン変数の使用方法について詳しくは、[Cloud Managerのパイプライン変数 ](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) を参照してください。

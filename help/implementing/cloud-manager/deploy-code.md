@@ -5,8 +5,8 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
-workflow-type: ht
+source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
+workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 100%
 
@@ -83,7 +83,7 @@ Cloud Service のすべてのデプロイメントでは、ダウンタイムを
 | 製品機能テスト | Cloud Manager パイプラインは、ステージング環境に対するテストを実行します。<br>[製品機能テスト](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)も参照してください。 |
 | カスタム機能テスト | パイプラインのこのステップは常に実行され、スキップできません。ビルドでテスト JAR が生成されない場合、テストは自動的に合格となります。<br>[カスタム機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)も参照してください。 |
 | カスタム UI テスト | カスタムアプリケーション用に作成された UI テストを自動的に実行するオプション機能。<br>Selenium ベースの UI テストは、言語とフレームワークに柔軟性を持たせるため、Docker イメージにパッケージ化されています。このアプローチでは、Java と Maven、Node と WebDriver.io、または Selenium ベースのフレームワークやテクノロジーを使用できます。<br>[カスタム UI テスト](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)も参照してください。 |
-| エクスペリエンス監査 | パイプラインのこのステップは常に実行され、スキップできません。実稼動パイプラインの実行時に、チェックを実行するカスタム機能テストの後に、エクスペリエンス監査ステップが組み込まれます。<ul><li>設定されたページがサービスに送信され、評価されます。</li><li>結果は情報提供であり、スコアおよび現在のスコアと以前のスコア間の変化を示します。</li><li>このインサイトは、現在のデプロイメントでリグレッションが導入されいないか判断するのに役立ちます。</li></ul>[エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-dashboard.md)を参照してください。</li></ul> |
+| エクスペリエンス監査 | パイプラインのこのステップは常に実行され、スキップできません。実稼動パイプラインの実行時に、チェックを実行するカスタム機能テストの後に、エクスペリエンス監査ステップが組み込まれます。<ul><li>設定されたページがサービスに送信され、評価されます。</li><li>結果は情報提供であり、スコアおよび現在のスコアと以前のスコア間の変化を示します。</li><li>このインサイトは、現在のデプロイメントでリグレッションが導入されいないか判断するのに役立ちます。</li></ul>[エクスペリエンス監査結果について](/help/implementing/cloud-manager/reports/report-experience-audit.md)を参照してください。</li></ul> |
 
 ![ステージテスト](assets/stage-testing.png)
 
@@ -148,8 +148,8 @@ UI で使用できるだけでなく、[Cloud Manager API](https://developer.ado
 
 再実行をトリガーするには、実稼動デプロイメントステップの状態で HAL リンク（`https://ns.adobe.com/adobecloud/rel/pipeline/reExecute`）に対して PUT リクエストを行います。
 
-* このリンクが存在する場合は、そのステップから実行を再開できます。
-* 存在しない場合は、そのステップから実行を再開することはできません。
+* このリンクが存在する場合は、そのステップから実行を再起動できます。
+* 存在しない場合は、そのステップから実行を再起動できません。
 
 このリンクは、実稼動デプロイメントステップでのみ使用できます。
 

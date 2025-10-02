@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 71311bfffefec8d2c2f71b0c69e6fec4ce3f299b
+source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1689'
 ht-degree: 98%
 
 ---
@@ -214,7 +214,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 * ![ベルアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) [アクティビティ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - プログラムのパイプライン実行の履歴
 * ![ワークフローアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) [パイプライン](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - プログラムに対して設定されたすべてのパイプライン
 * ![フォルダーアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) [リポジトリ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - プログラムに対して設定されたすべてのリポジトリ
-* ![円グラフアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [レポート](/help/implementing/cloud-manager/sla-reporting.md) - SLA データなどの指標
+* ![円グラフアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [レポート](/help/implementing/cloud-manager/reports/report-sla.md) - SLA データなどの指標
 
 **サービス**
 
@@ -223,7 +223,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 * ![設定アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [ドメイン設定](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - プログラムのカスタムドメイン名の管理
 * ![鍵がかかったアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [SSL 証明書](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - プログラムの SSL 証明書の管理
 * ![ソーシャルネットワークアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [ドメインマッピング](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - ドメインマッピングの管理
-* ![タスクリストアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [IP 許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - 特定の IP アドレスの許可リストの定義
+* ![ タスクリストアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [`IP Allow Lists`](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) – 特定の IP アドレスの許可リストを定義します
 * ![ボックスアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [コンテンツセット](/help/implementing/developing/tools/content-copy.md) - コピー目的に対して作成されたコンテンツのセット
 * ![履歴アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [コンテンツをコピーアクティビティ](/help/implementing/developing/tools/content-copy.md) - コンテンツをコピーするアクティビティ
 * ![チャネルアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Channel_18_N.svg) [ネットワークインフラストラクチャ](/help/security/configuring-advanced-networking.md) - プログラムの高度なネットワークオプションの管理

@@ -4,10 +4,10 @@ description: 実稼動プログラムまたはサンドボックスプログラ�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: e99bec4515c79e181ce38b94b1ea327fd99d2695
-workflow-type: ht
-source-wordcount: '521'
-ht-degree: 100%
+source-git-commit: ddf2d80330ecfddad4af8a05c95cdba7f968a986
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 90%
 
 ---
 
@@ -22,7 +22,11 @@ ht-degree: 100%
 
 1. Cloud Manager で Edge Delivery サイトをオンボードする前にまず、Edge Delivery Services ライセンスを使用してプログラムを作成するようにしてください。
 [実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)を参照してください。
-1. [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切なプログラムを選択します。
+1. [experience.adobe.com](https://experience.adobe.com) でCloud Managerにログインします。
+1. 「**クイックアクセス**」セクションで、「**Experience Manager**」をクリックします。
+1. 左側のパネルで、「**Cloud Manager**」をクリックします。
+1. 必要な組織を選択します。
+1. **マイプログラム** コンソールで、プログラムをクリックします。
 1. 次のいずれかの操作を行います。
 
    * **プログラムの概要**&#x200B;ページで、「**Edge Delivery**」タブをクリックします。次に、ページの右下隅付近にある「**Edge Delivery サイトを追加**」をクリックします。
@@ -31,7 +35,7 @@ ht-degree: 100%
 
    * ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左側のサイドメニューを表示します。
 **サービス**&#x200B;見出しの下にある ![Web ページアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg)「**Edge Delivery サイト**」をクリックします。
-ページの右上隅にある「**サイトを追加**」をクリックします。
+ページの右上隅付近にある ![ リンクアイコンまたはEdge Delivery サイトを追加 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg) 追加 **** をクリックします。
 
      ![「Edge Delivery サイト」ボタンからの Edge Delivery サイトの追加](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
 

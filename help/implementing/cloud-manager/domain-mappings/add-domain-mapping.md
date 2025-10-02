@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 060a00e887a8709a4fd3c4b160b540a8e2867769
+source-git-commit: 41e9b91d7edbe26bf764b9eac56f21c3c2e86a64
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 77%
+source-wordcount: '553'
+ht-degree: 64%
 
 ---
 
@@ -36,23 +36,26 @@ ht-degree: 77%
    | Cloud Manager の&#x200B;*既存*&#x200B;の Edge Delivery サイトに CDN 設定を追加したいと考えている | a. 左側のサイドメニューの&#x200B;**サービス**&#x200B;で、![web ページアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg)「**Edge Delivery Sites**」をクリックします。<br>b. Edge Delivery テーブルで、ドメインが関連付けられていない行の末尾にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。<br>c. 「**CDN を設定**」をクリックします。 |
    | Cloud Manager に CDN 設定を追加したいと考えている | 左側のサイドメニューの&#x200B;**サービス**&#x200B;で、![ソーシャルネットワークアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg)「**ドメインマッピング**」をクリックします。<br>b. ドメインマッピングページの右上隅付近にある「**追加**」をクリックします。 |
 
-1. **CDN を設定**&#x200B;ダイアログボックスの&#x200B;**接触チャネル**&#x200B;ドロップダウンリストで、次のいずれかを選択します。
+1. **ドメインを CDN にマッピング** ダイアログボックスで、次のいずれかを選択して、CDN タイプおよび関連する設定を選択します。
 
-   ![CDN を設定ダイアログボックス](/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)
+   | CDN タイプ | 設定の詳細 |
+   | --- | --- |
+   | Adobeの管理による CDN （推奨） | **設定の詳細**&#x200B;で、次の操作を行います。<br>a. **ドメイン**&#x200B;ドロップダウンリストで、使用するドメイン名を選択します。<br>ドロップダウンリストに使用可能な検証済みドメインがありませんか？詳しくは、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。<br>b.<!-- In the **SSL certificate** drop-down list, select a certificate that you want to use.<br>No SSL certificates available in the drop-down list? See [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).--> |
+   | その他 CDN プロバイダー | 使用可能なアドビが管理する CDN ではなく、独自の CDN プロバイダーを使用している場合は、このオプションを選択します。<br>**設定の詳細**&#x200B;の&#x200B;**ドメイン**&#x200B;ドロップダウンリストで、使用するドメイン名を選択します。<br>ドロップダウンリストに使用可能な検証済みドメインがありませんか？詳しくは、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。 |
 
-   | 接触チャネル | 説明 |
+   ![Adobeの管理による CDN ラジオボタンが選択されている状態でドメインを CDN にマッピング ダイアログボックス ](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png)
+
+   <!-- OLD IMAGE/UI (/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)-->
+
+1. 「**ドメイン**」フィールドに、提供する顧客向けのホスト名を入力します（例：`www.example.com`）
+1. **接触チャネル** ドロップダウンリストで、次のいずれかを選択します。
+
+   | 「接触チャネル」ドロップダウンリスト | 説明 |
    | --- | --- |
    | Sites | Edge Delivery サイトを選択します。 |
    | 環境 | AEM 設定内でターゲットとする特定の Cloud Service 環境を選択します。<br>**層**&#x200B;ドロップダウンリストで、次のいずれかを選択します。<br>• 「**パブリッシュ**」を選択して、コンテンツがエンドユーザーに配信されるライブの実稼動環境をターゲットにします。<br>• 運用開始前に変更をテストするステージング環境または実稼動以外の環境では、「**プレビュー**」を選択します。 |
 
-1. 次のいずれかを選択して、CDN タイプおよび関連する設定を選択します。
-
-   | CDN タイプ | 設定の詳細 |
-   | --- | --- |
-   | アドビが管理する CDN | **設定の詳細**&#x200B;で、次の操作を行います。<br>a. **ドメイン**&#x200B;ドロップダウンリストで、使用するドメイン名を選択します。<br>ドロップダウンリストに使用可能な検証済みドメインがありませんか？詳しくは、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。<br>b. **SSL 証明書**&#x200B;ドロップダウンリストで、使用する SSL 証明書を選択します。<br>ドロップダウンリストに使用可能な SSL 証明書がありませんか？詳しくは、[SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)を参照してください。 |
-   | その他 CDN プロバイダー | 使用可能なアドビが管理する CDN ではなく、独自の CDN プロバイダーを使用している場合は、このオプションを選択します。<br>**設定の詳細**&#x200B;の&#x200B;**ドメイン**&#x200B;ドロップダウンリストで、使用するドメイン名を選択します。<br>ドロップダウンリストに使用可能な検証済みドメインがありませんか？詳しくは、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。 |
-
-1. 「**保存**」をクリックします。
+1. **設定を保存** をクリックします。
 
    Adobeでは、ドメインマッピングをテストすることをお勧めします。
 

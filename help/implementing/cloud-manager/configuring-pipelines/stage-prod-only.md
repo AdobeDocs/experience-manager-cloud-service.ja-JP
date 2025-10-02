@@ -5,11 +5,11 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines"
-hide: true
-hidefromtoc: true
-index: false
+hide: false
+hidefromtoc: false
+index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: 51318172b826eb81dff86b3e8dfb6f2ded648c4c
+source-git-commit: f61183c43d9380900b92fe040098e2eb3155979c
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 48%
