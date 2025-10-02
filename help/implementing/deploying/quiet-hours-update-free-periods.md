@@ -18,9 +18,9 @@ ht-degree: 0%
 >この機能は、9 月 25 日（PT）以降、**限定提供** 機能として使用できるようになります。 プログラムで機能をアクティブにするには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信します。
 
 >[!WARNING]
->「停止時間」機能と「自由期間の更新」機能は、[ 自動メンテナンス更新 ](/help/implementing/deploying/aem-version-updates.md) にオンボーディングされた後でのみ使用できます。
+>「停止時間」機能と「自由期間の更新」機能は、[&#x200B; 自動メンテナンス更新 &#x200B;](/help/implementing/deploying/aem-version-updates.md) にオンボーディングされた後でのみ使用できます。
 
-AEM as a Cloud Service[ 自動メンテナンスアップデート ](/help/implementing/deploying/aem-version-updates.md) は、インスタンスのセキュリティを確保し、最新のメンテナンスリリースを最新の状態に保ちます。 ただし、運用開始イベントなどの場合には、潜在的な中断から重要な営業時間を「保護」する必要が生じる可能性があります。 そのため、AEM as a Cloud Serviceでは、進行中のプログラムに自動更新が行われない時間枠を設定できます。
+AEM as a Cloud Service[&#x200B; 自動メンテナンスアップデート &#x200B;](/help/implementing/deploying/aem-version-updates.md) は、インスタンスのセキュリティを確保し、最新のメンテナンスリリースを最新の状態に保ちます。 ただし、運用開始イベントなどの場合には、潜在的な中断から重要な営業時間を「保護」する必要が生じる可能性があります。 そのため、AEM as a Cloud Serviceでは、進行中のプログラムに自動更新が行われない時間枠を設定できます。
 
 次の 2 つのスケジュール・オプションを使用して、これらのタイム・フレームを構成できます。
 
@@ -29,7 +29,7 @@ AEM as a Cloud Service[ 自動メンテナンスアップデート ](/help/imple
 
 更新自由期間と非表示時間機能は、「プログラム単位」で設定されます。
 
-また、AEM as a Cloud Serviceの自動メンテナンススケジュールについては、[Experience Manager リリースロードマップ ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) のページを参照してください。
+また、AEM as a Cloud Serviceの自動メンテナンススケジュールについては、[Experience Manager リリースロードマップ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) のページを参照してください。
 
 ## 通知のない時間 {#quiet-hours}
 
@@ -49,7 +49,7 @@ AEM as a Cloud Service[ 自動メンテナンスアップデート ](/help/imple
 2. 「**編集**」をクリックします。
 3. 設定ウィンドウでクワイエット時間間隔を設定します。
 
-![ クワイエットアワー設定 ](assets/quiet-hours.png)
+![&#x200B; クワイエットアワー設定 &#x200B;](assets/quiet-hours.png)
 
 設定した開始時間と終了時間は、今後、すべてのカレンダー日に適用されます。 必要に応じて、クワイエットアワー時間の値を無効にするか、再設定できます。
 
@@ -73,6 +73,6 @@ AEM as a Cloud Service[ 自動メンテナンスアップデート ](/help/imple
 2. **無料期間を追加/更新** をクリックします。
 3. カレンダーから 1 週間の更新自由期間を選択します。
 
-![ 空き期間構成の更新 ](assets/update-free-periods.png)
+![&#x200B; 空き期間構成の更新 &#x200B;](assets/update-free-periods.png)
 
 **アクティブ** アイコンは現在アクティブな更新空き期間の近くに表示され、**完了** アイコンは完了した更新空き期間の近くに表示されます。
