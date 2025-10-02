@@ -30,7 +30,7 @@ ht-degree: 61%
 
 ### 新規 RTE {#new-rte}
 
-リンクダイアログのページピッカーを使用した新しい ProseMirror RTE が、右側のパネルで使用できるようになりました。 [ この RTE には、柔軟な設定オプションが用意されています。](/help/implementing/universal-editor/configure-rte.md)
+リンクダイアログのページピッカーを使用した新しい ProseMirror RTE が、右側のパネルで使用できるようになりました。 [&#x200B; この RTE には、柔軟な設定オプションが用意されています。](/help/implementing/universal-editor/configure-rte.md)
 
 ### ページ間のコピー＆ペースト {#copy-paste}
 
