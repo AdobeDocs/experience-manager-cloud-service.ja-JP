@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1d96401a5200dbffb49315af8745c22171f4ecc3
+source-git-commit: 017ac03f6547317197a903f23ce77b1227dc94ca
 workflow-type: tm+mt
-source-wordcount: '6807'
+source-wordcount: '6811'
 ht-degree: 95%
 
 ---
@@ -237,6 +237,7 @@ ht-degree: 95%
    + ユニバーサルエディターのリリースノート {#universal-editor}
       + [ユニバーサルエディターの最新リリースノート](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
+         + [リリースノート（2025.09.25）](/help/release-notes/universal-editor/2025/2025-09-25.md)
          + [リリースノート（2025.09.18）](/help/release-notes/universal-editor/2025/2025-09-18.md)
          + [リリースノート（2025.09.11）](/help/release-notes/universal-editor/2025/2025-09-11.md)
          + [リリースノート（2025.09.04）](/help/release-notes/universal-editor/2025/2025-09-04.md)
@@ -529,7 +530,7 @@ ht-degree: 95%
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
-      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=ja)
+      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service の運用テレメトリ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概要と新機能](/help/assets/overview.md)

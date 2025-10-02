@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター 2025.09.25 リリースノート
-description: ユニバーサルエディター 2025.09.25 リリースのリリースノートです。
+title: ユニバーサルエディター 2025.10.02 リリースノート
+description: ユニバーサルエディター 2025.10.02 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
+source-git-commit: 017ac03f6547317197a903f23ce77b1227dc94ca
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 46%
+source-wordcount: '169'
+ht-degree: 61%
 
 ---
 
 
-# ユニバーサルエディター 2025.09.25 リリースノート {#release-notes}
+# ユニバーサルエディター 2025.10.02 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2025 年 9 月 25 日リリースのリリースノートです。
+ユニバーサルエディターの 2025 年 10 月 2 日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -22,8 +22,7 @@ ht-degree: 46%
 
 ## 新機能 {#what-is-new}
 
-* [ コピーと貼り付け機能 ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) メタタグを使用して [ 無効にできるようになりました ](/help/implementing/universal-editor/customizing.md#copy-paste)。
-* [ ホストされたAEM環境（AMS）でユニバーサルエディターを使用する場合 ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) ユニバーサルエディターはAEMでホストされるユニバーサルエディターサービスを使用するようになり、ローカル AMS インストールに依存しなくなり、常に最新のユニバーサルエディターサービスが自動的に利用されるようになります。
+* プレビュー環境と実稼動環境を切り替えるボタンが追加されました。
 
 ## 早期導入機能 {#early-adopter}
 
@@ -39,5 +38,4 @@ ht-degree: 46%
 
 ## その他の改善点 {#other-improvements}
 
-* プロパティパネルが、ドキュメントオーサリングで使用する際に修正されました。
-* MSM の使用時にコンテンツフラグメントの複数フィールドを編集する際の問題が修正されました。
+* UI でのロケーションバーとテキストの配置が改善されました。
