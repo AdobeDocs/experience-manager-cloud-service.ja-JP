@@ -37,7 +37,7 @@ ht-degree: 85%
 * この環境の最後のパイプラインが正常に完了し、実行から **30 日未満**&#x200B;である。
 * 環境のステータスが&#x200B;*実行中*&#x200B;で、進行中のパイプラインがない。
 
-**デプロイされた以前のコードを復元** は、環境、`Production` 環境、`Development` ードに加えて、`Stage``Specialized Testing Environment` 環境で機能します。 確認後、Cloud Managerは復元を開始し、開始時と正常終了時にプッシュ通知を送信します。
+**デプロイされた以前のコードを復元** は、環境、`Production` 環境、`Development` ードに加えて、`Stage` `Specialized Testing Environment` 環境で機能します。 確認後、Cloud Managerは復元を開始し、開始時と正常終了時にプッシュ通知を送信します。
 
 >[!IMPORTANT]
 >

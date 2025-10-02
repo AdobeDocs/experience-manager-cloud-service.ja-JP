@@ -30,7 +30,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 ## AEM の AI アシスタント
 
-[ 前提条件を完了している ](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) お客様は、AEMの AI アシスタントを組織内のユーザーが利用できます。 [AEM の AI アシスタント](/help/implementing/cloud-manager/ai-assistant-in-aem.md)を参照してください。
+[&#x200B; 前提条件を完了している &#x200B;](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) お客様は、AEMの AI アシスタントを組織内のユーザーが利用できます。 [AEM の AI アシスタント](/help/implementing/cloud-manager/ai-assistant-in-aem.md)を参照してください。
 
 
 ## マイプログラムコンソール {#my-programs-console}
@@ -223,7 +223,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 * ![設定アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [ドメイン設定](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - プログラムのカスタムドメイン名の管理
 * ![鍵がかかったアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [SSL 証明書](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - プログラムの SSL 証明書の管理
 * ![ソーシャルネットワークアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [ドメインマッピング](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - ドメインマッピングの管理
-* ![ タスクリストアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [`IP Allow Lists`](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) – 特定の IP アドレスの許可リストを定義します
+* ![&#x200B; タスクリストアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [`IP Allow Lists`](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) – 特定の IP アドレスの許可リストを定義します
 * ![ボックスアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [コンテンツセット](/help/implementing/developing/tools/content-copy.md) - コピー目的に対して作成されたコンテンツのセット
 * ![履歴アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [コンテンツをコピーアクティビティ](/help/implementing/developing/tools/content-copy.md) - コンテンツをコピーするアクティビティ
 * ![チャネルアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Channel_18_N.svg) [ネットワークインフラストラクチャ](/help/security/configuring-advanced-networking.md) - プログラムの高度なネットワークオプションの管理

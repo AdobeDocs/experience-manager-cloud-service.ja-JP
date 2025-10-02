@@ -27,7 +27,7 @@ ht-degree: 8%
 
 各実行では、重要度別の問題、ガイダンスと推奨される修正点へのリンクがリスト表示され、レポートのPDF書き出しがサポートされます。 現在の状態の **最新レポート** ビューと **過去のレポート** を使用して、実行を比較できます。
 
-ルールの定義と修正の詳細については、[ 正常性評価パターン ](#ha-patterns) も参照してください。
+ルールの定義と修正の詳細については、[&#x200B; 正常性評価パターン &#x200B;](#ha-patterns) も参照してください。
 
 ## 正常性評価ページへのアクセス {#access-health-assessment}
 
@@ -36,33 +36,33 @@ ht-degree: 8%
 1. 左側のパネルで、「**Cloud Manager**」をクリックします。
 1. 必要な組織を選択します。 以下の画像は説明用です。 独自の組織名を選択します。
 
-   ![Cloud Managerでの組織の選択 ](/help/implementing/cloud-manager/reports/assets/ha-org.png)
+   ![Cloud Managerでの組織の選択 &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-org.png)
 
 1. **マイプログラム** コンソールで、レポートを表示するプログラムをクリックします。
 
 1. 次のいずれかの操作を行います。
-   * **環境** カードで、環境名の右側にある ![ 省略記号アイコンまたは詳細アイコン ](https://spectrum.adobe.com/static/icons/ui_18/More.svg) をクリックし、メニューから **状態評価** を選択します。
+   * **環境** カードで、環境名の右側にある ![&#x200B; 省略記号アイコンまたは詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/More.svg) をクリックし、メニューから **状態評価** を選択します。
 
-     ![ 環境カードの省略記号メニューから「正常性の評価」を選択 ](/help/implementing/cloud-manager/reports/assets/ha-myprograms-environments-card.png)
+     ![&#x200B; 環境カードの省略記号メニューから「正常性の評価」を選択 &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-myprograms-environments-card.png)
 
-   * 左側のメニューの **サービス** で、![ データアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**環境** をクリックします。 環境ページで、環境名の右側にある ![ 省略記号アイコンまたは詳細アイコン ](https://spectrum.adobe.com/static/icons/ui_18/More.svg) をクリックし、メニューから **状態評価** を選択します。
+   * 左側のメニューの **サービス** で、![&#x200B; データアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**環境** をクリックします。 環境ページで、環境名の右側にある ![&#x200B; 省略記号アイコンまたは詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/More.svg) をクリックし、メニューから **状態評価** を選択します。
 
-     ![ 環境ページの省略記号メニューから「正常性の評価」を選択 ](/help/implementing/cloud-manager/reports/assets/ha-environments-page.png)
+     ![&#x200B; 環境ページの省略記号メニューから「正常性の評価」を選択 &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-environments-page.png)
 
 ## 選択した環境に対して新しいレポートを実行 {#run-report}
 
-1. [ 正常性評価ページにアクセス ](#access-health-assessment)。
+1. [&#x200B; 正常性評価ページにアクセス &#x200B;](#access-health-assessment)。
 1. **状態評価** ページの右上隅で、評価するターゲット環境を確認します。
 
-   環境が正しくない場合は、![ 山形記号の付いたメニューまたはドロップダウンメニューをクリックして、別の環境を選択 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) し、リストから正しい環境を選択します。
+   環境が正しくない場合は、![&#x200B; 山形記号の付いたメニューまたはドロップダウンメニューをクリックして、別の環境を選択 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) し、リストから正しい環境を選択します。
 
 1. 「**レポートを実行**」をクリックします。
 
-   ![[ 正常性評価 ] ページの [ 新しいレポートの生成 ] ボタンをクリックしてください ](/help/implementing/cloud-manager/reports/assets/ha-run-report.png)
+   ![[ 正常性評価 ] ページの [ 新しいレポートの生成 ] ボタンをクリックしてください &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-run-report.png)
 
    選択した環境に対してレポートが実行される間、レポートが完了するまで **レポートを実行** は無効のままになります。
 
-   ![ 走行中の通報 ](/help/implementing/cloud-manager/reports/assets/ha-running-report.png)
+   ![&#x200B; 走行中の通報 &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-running-report.png)
 
    レポートが完成すると、レポートは **正常性の評価** ページの **最新のレポート** セクションに表示されます。
 
@@ -76,11 +76,11 @@ ht-degree: 8%
    * 重大な問題のハイライト。
    * アクション：すべてのイシューの **[詳細を表示](#view-report-details)** または **[PDFをダウンロード](#download-pdf-report)**。
 
-  ![ 選択した環境の新しいレポートの生成後の最新の評価ページ ](/help/implementing/cloud-manager/reports/assets/ha-latest-report-page.png)
+  ![&#x200B; 選択した環境の新しいレポートの生成後の最新の評価ページ &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-latest-report-page.png)
 
 ### 最新のレポートの詳細を表示 {#view-report-details}
 
-* **ヘルスアセスメント** ページで、**最新レポート** タイトルの右側にある ![ 省略記号アイコンまたは詳細アイコン ](https://spectrum.adobe.com/static/icons/ui_18/More.svg) をクリックし、**詳細を表示** または **ダウンロード** をクリックします。
+* **ヘルスアセスメント** ページで、**最新レポート** タイトルの右側にある ![&#x200B; 省略記号アイコンまたは詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/More.svg) をクリックし、**詳細を表示** または **ダウンロード** をクリックします。
 
   「**詳細を表示**」オプションには、次の情報が表示されます。
 
@@ -88,11 +88,11 @@ ht-degree: 8%
    * 結果と問題の説明を表示できます。
    * 可能性のある修正を含むドキュメントを表示できる。
 
-     ![ イシューの説明と結果 ](/help/implementing/cloud-manager/reports/assets/ha-issue-descriptions-and-findings.png)
+     ![&#x200B; イシューの説明と結果 &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-issue-descriptions-and-findings.png)
 
    * 「**ダウンロード**」オプションを使用すると、PDFで個々のイシューレポートをダウンロードできます。
 
-     ![ 個々のイシューレポートのPDFをダウンロードする ](/help/implementing/cloud-manager/reports/assets/ha-details-page-doc-links.png)
+     ![&#x200B; 個々のイシューレポートのPDFをダウンロードする &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-details-page-doc-links.png)
 
 
 ### レポート全体のPDFをダウンロード {#download-pdf-report}
@@ -101,7 +101,7 @@ ht-degree: 8%
 
   そのレポートで検出されたすべての問題に対する PDF を含む ZIP ファイルが生成されます。
 
-  ![ レポートで見つかったすべての問題のPDFをダウンロード ](/help/implementing/cloud-manager/reports/assets/ha-download-pdf.png)
+  ![&#x200B; レポートで見つかったすべての問題のPDFをダウンロード &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-download-pdf.png)
 
 
 ## 過去のレポートの確認 {#review-past-reports}
@@ -113,10 +113,10 @@ ht-degree: 8%
 * 任意のレポートのPDFをダウンロードします。
 * 日付、問題数、環境で並べ替えます。
 
-![ 過去のレポートの確認 ](/help/implementing/cloud-manager/reports/assets/ha-past-reports.png)
+![&#x200B; 過去のレポートの確認 &#x200B;](/help/implementing/cloud-manager/reports/assets/ha-past-reports.png)
 
-* 「**過去のレポート**」見出しの右側にある ![ 山形記号のドロップダウンまたはドロップダウンメニューから別の環境を選択 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) をクリックすると、過去のレポートが日付順に並べ替えられます。
-* レポートの右端にある ![ 省略記号アイコンまたは詳細アイコン ](https://spectrum.adobe.com/static/icons/ui_18/More.svg) をクリックし、「**詳細を表示**」または **ダウンロード** をクリックします。
+* 「**過去のレポート**」見出しの右側にある ![&#x200B; 山形記号のドロップダウンまたはドロップダウンメニューから別の環境を選択 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) をクリックすると、過去のレポートが日付順に並べ替えられます。
+* レポートの右端にある ![&#x200B; 省略記号アイコンまたは詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/More.svg) をクリックし、「**詳細を表示**」または **ダウンロード** をクリックします。
 
 
 ## 正常性評価パターン {#ha-patterns}
@@ -125,12 +125,12 @@ AEM as a Cloud Serviceでヘルスアセスメントによって検出される�
 
 | パターン名 | カテゴリ | タイプ | 説明 | 影響 | 自動修正？ |
 | --- | --- | --- | --- | --- | --- |
-| ユーザーへの直接の追加を含むカスタム AEM グループ | セキュリティ | コンテンツ分析 | ユーザーが、IMS グループをメンバーとして追加するのではなく、AEM グループに直接追加された。 | 権限管理とセキュリティガバナンスは複雑になる場合があります。 [IMS のサポート ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/ims-support) | いいえ |
-| ページに JCR コンテンツノードがありません | リポジトリ構造 | コンテンツ分析 | ページに `jcr:content` ノードがありません。 | Experience Manager as a Cloud Serviceの機能制限。 [ パターン検出 – ACV](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/acv) | いいえ |
-| ページに Sling リソースタイプがありません | リポジトリ構造 | コンテンツ分析 | ページに `sling:resourceType` がありません。 | Experience Manager as a Cloud Serviceの機能制限。 [ パターン検出 – ACV](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/acv) | いいえ |
-| ノード数が過剰なページ | パフォーマンス | コンテンツ分析 | ページの構造には、多数のノードが含まれます。 | ページの読み込み時間が遅く、ユーザーエクスペリエンスが低下する。 [ パターン検出 – PCX](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/pcx) | いいえ |
-| 実行中のワークフローインスタンスが多すぎる | パフォーマンス | コンテンツ分析 | 実行されているワークフローインスタンスが多すぎます。 | 全体的なシステムパフォーマンスの低下。 [ メンテナンスタスク ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/operations/maintenance) | いいえ |
-| パージされていない完了したワークフローインスタンス | パフォーマンス | コンテンツ分析 | 完了した古いワークフローインスタンスはパージされません。 | システム効率の低下とストレージコストの増加。 [ メンテナンスタスク ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/operations/maintenance) | いいえ |
+| ユーザーへの直接の追加を含むカスタム AEM グループ | セキュリティ | コンテンツ分析 | ユーザーが、IMS グループをメンバーとして追加するのではなく、AEM グループに直接追加された。 | 権限管理とセキュリティガバナンスは複雑になる場合があります。 [IMS のサポート &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/ims-support) | いいえ |
+| ページに JCR コンテンツノードがありません | リポジトリ構造 | コンテンツ分析 | ページに `jcr:content` ノードがありません。 | Experience Manager as a Cloud Serviceの機能制限。 [&#x200B; パターン検出 – ACV](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/acv) | いいえ |
+| ページに Sling リソースタイプがありません | リポジトリ構造 | コンテンツ分析 | ページに `sling:resourceType` がありません。 | Experience Manager as a Cloud Serviceの機能制限。 [&#x200B; パターン検出 – ACV](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/acv) | いいえ |
+| ノード数が過剰なページ | パフォーマンス | コンテンツ分析 | ページの構造には、多数のノードが含まれます。 | ページの読み込み時間が遅く、ユーザーエクスペリエンスが低下する。 [&#x200B; パターン検出 – PCX](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/pcx) | いいえ |
+| 実行中のワークフローインスタンスが多すぎる | パフォーマンス | コンテンツ分析 | 実行されているワークフローインスタンスが多すぎます。 | 全体的なシステムパフォーマンスの低下。 [&#x200B; メンテナンスタスク &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/operations/maintenance) | いいえ |
+| パージされていない完了したワークフローインスタンス | パフォーマンス | コンテンツ分析 | 完了した古いワークフローインスタンスはパージされません。 | システム効率の低下とストレージコストの増加。 [&#x200B; メンテナンスタスク &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/operations/maintenance) | いいえ |
 | コンテンツフラグメントの使用状況の統計 | 統計 | コンテンツ分析 | 使用中のコンテンツフラグメント数をトラッキングします。 | 該当なし | 該当なし |
 | コンテンツフラグメントモデルの使用状況統計 | 統計 | コンテンツ分析 | 使用中のコンテンツフラグメントモデルの数をトラッキングします。 | 該当なし | 該当なし |
 | MSM の多数のブループリント | 統計 | コンテンツ分析 | ブループリントの数をトラッキングします。 | これにより、管理がより複雑になり、コンテンツガバナンスがより困難になる可能性があります。 | 該当なし |

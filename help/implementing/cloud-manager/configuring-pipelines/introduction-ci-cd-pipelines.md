@@ -119,7 +119,7 @@ Cloud Manager で使用できるパイプラインとその用途を次の表に
 
 >[!NOTE]
 >
->Edge Delivery設定パイプラインには、開発環境、ステージング環境および実稼動環境は分離されません。 AEM as a Cloud Serviceでは、変更は開発層、ステージ層、実稼動層を通じて進みます。 これに対し、Edge Delivery設定パイプラインは、Cloud Managerに登録されたすべてのEdge Delivery Sites ドメインに設定を直接適用します。 詳しくは、[Edge Delivery パイプラインの追加 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) を参照してください。
+>Edge Delivery設定パイプラインには、開発環境、ステージング環境および実稼動環境は分離されません。 AEM as a Cloud Serviceでは、変更は開発層、ステージ層、実稼動層を通じて進みます。 これに対し、Edge Delivery設定パイプラインは、Cloud Managerに登録されたすべてのEdge Delivery Sites ドメインに設定を直接適用します。 詳しくは、[Edge Delivery パイプラインの追加 &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) を参照してください。
 
 
 ### 設定パイプラインの設定 {#configure-config-deployment}

@@ -22,7 +22,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * [ページとサブページ（ページツリー）を以前のバージョンに戻す](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions)機能。
 
-* AEMの [ ローンチを作成 ](/help/sites-cloud/authoring/launches/overview.md) する機能 [SPA エディター ](/help/implementing/developing/hybrid/introduction.md)。
+* AEMの [&#x200B; ローンチを作成 &#x200B;](/help/sites-cloud/authoring/launches/overview.md) する機能 [SPA エディター &#x200B;](/help/implementing/developing/hybrid/introduction.md)。
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
