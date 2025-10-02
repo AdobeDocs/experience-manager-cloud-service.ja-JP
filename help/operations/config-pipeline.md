@@ -26,11 +26,11 @@ Cloud Manager 設定パイプラインでは、設定ファイル（YAML 形式�
 このドキュメントの以降の節では、設定パイプラインの使用方法と、それらの設定を構造化する方法に関する重要な情報の概要を示します。設定パイプラインでサポートされる機能のすべてまたはサブセットで共有される一般的な概念について説明します。
 
 * [サポートされる設定](#configurations) - 設定パイプラインでデプロイできる設定のリスト
-* [ 設定パイプラインの作成と管理 ](#creating-and-managing) – 設定パイプラインの作成方法
+* [&#x200B; 設定パイプラインの作成と管理 &#x200B;](#creating-and-managing) – 設定パイプラインの作成方法
 * [共通の構文](#common-syntax) - 設定間で共有される構文
 * [フォルダー構造](#folder-structure) - 設定に必要な構造の設定パイプラインについて説明します。
 * [秘密鍵の環境変数](#secret-env-vars) - 環境変数を使用して、設定の秘密鍵を開示しない例
-* [ シークレットパイプライン変数 ](#secret-pipeline-vars) - Edge Delivery Services プロジェクトの設定内で環境変数を使用してシークレットを開示しない例
+* [&#x200B; シークレットパイプライン変数 &#x200B;](#secret-pipeline-vars) - Edge Delivery Services プロジェクトの設定内で環境変数を使用してシークレットを開示しない例
 
 ## サポートされる設定 {#configurations}
 
@@ -54,9 +54,9 @@ Cloud Manager 設定パイプラインでは、設定ファイル（YAML 形式�
 
 ## 設定パイプラインの作成と管理 {#creating-and-managing}
 
-**パブリッシュ配信** 設定パイプラインの作成および設定方法について詳しくは、[CI/CD パイプライン ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) を参照してください。 Cloud Managerで config パイプラインを作成する場合は、パイプラインの設定時に **フルスタックコード** ではなく **ターゲットデプロイメント** を選択してください。 前述のように、RDE の設定は、パイプラインではなく[コマンドラインツール](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)を使用してデプロイされます。
+**パブリッシュ配信** 設定パイプラインの作成および設定方法について詳しくは、[CI/CD パイプライン &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) を参照してください。 Cloud Managerで config パイプラインを作成する場合は、パイプラインの設定時に **フルスタックコード** ではなく **ターゲットデプロイメント** を選択してください。 前述のように、RDE の設定は、パイプラインではなく[コマンドラインツール](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)を使用してデプロイされます。
 
-**Edge Delivery** 設定パイプラインの作成および設定方法について詳しくは、[Edge Delivery パイプラインの追加 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) を参照してください。
+**Edge Delivery** 設定パイプラインの作成および設定方法について詳しくは、[Edge Delivery パイプラインの追加 &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) を参照してください。
 
 ## 共通の構文 {#common-syntax}
 
@@ -121,7 +121,7 @@ Cloud Manager 設定パイプラインでは、設定ファイル（YAML 形式�
      envTypes: ["dev", "stage", "prod"]
 ```
 
-秘密鍵タイプの環境（またはパイプライン）変数を使用すると、[ のリファレンスで示すように、](#secret-env-vars) 秘密鍵プロパティ `${{SPLUNK_TOKEN}}` を環境ごとに変えることができます
+秘密鍵タイプの環境（またはパイプライン）変数を使用すると、[&#x200B; のリファレンスで示すように、](#secret-env-vars) 秘密鍵プロパティ `${{SPLUNK_TOKEN}}` を環境ごとに変えることができます
 
 ```yaml
 kind: "LogForwarding"
@@ -239,5 +239,5 @@ Edge Delivery Services プロジェクトの場合は、**secret** 型のCloud M
 
 構文は前の節で示したスニペットと同じです。
 
-パイプライン変数の使用方法について詳しくは、[Cloud Managerのパイプライン変数 ](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) を参照してください。
+パイプライン変数の使用方法について詳しくは、[Cloud Managerのパイプライン変数 &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) を参照してください。
 
