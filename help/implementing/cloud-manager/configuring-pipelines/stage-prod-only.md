@@ -4,19 +4,21 @@ description: 専用パイプラインを使用してステージングデプロ�
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines"
 hide: false
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: f61183c43d9380900b92fe040098e2eb3155979c
+source-git-commit: 890d18778273ce60a676cb74fa8025d6b48dc70d
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 48%
+source-wordcount: '1046'
+ht-degree: 49%
 
 ---
 
 # ステージのみのパイプラインと実稼動のみのパイプラインの分割 {#stage-prod-only}
+
+<!-- REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines" -->
 
 専用パイプラインを使用してステージングデプロイメントと実稼動デプロイメントを分割できます。
 
@@ -53,8 +55,8 @@ ht-degree: 48%
 
 1. **パイプライン**&#x200B;ウィンドウで、「**パイプラインを追加**」をクリックします。
 
-   * 「**実稼動以外のパイプラインを追加**」を選択して [&#x200B; ステージ専用パイプラインを作成 &#x200B;](#stage-only) します。
-   * **実稼動専用パイプラインを追加** を選択して [&#x200B; 実稼動専用パイプラインを作成 &#x200B;](#prod-only) します。
+   * 「**実稼動以外のパイプラインを追加**」を選択して [ ステージ専用パイプラインを作成 ](#stage-only) します。
+   * **実稼動専用パイプラインを追加** を選択して [ 実稼動専用パイプラインを作成 ](#prod-only) します。
 
 ![実稼動専用パイプライン／ステージング専用パイプラインの作成](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-stage-pipeline.png)
 
@@ -72,7 +74,7 @@ ht-degree: 48%
 1. 「実稼動以外のパイプライン名」フィールドに、任意の名前を入力します。
 1. 必要なデプロイメントオプションを選択し、「**続行**」をクリックします。
 
-   ![&#x200B; 実稼動以外のパイプラインを追加ダイアログボックスの「設定」タブ &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-1.png)
+   ![ 実稼動以外のパイプラインを追加ダイアログボックスの「設定」タブ ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-1.png)
 
 1. 「**Source コード**」タブで、「**フルスタックコード**」を選択します。 このオプションは、AEM アプリケーション全体（バックエンド、Dispatcher/web 階層設定、リポジトリ内のフロントエンドモジュール）のビルドとデプロイをおこないます。
 
@@ -80,15 +82,15 @@ ht-degree: 48%
 
 1. **リポジトリ** と **Git ブランチ** をそれぞれのドロップダウンリストで選択し、「**続行**」をクリックします。
 
-   ![&#x200B; 実稼動以外のパイプラインを追加ダイアログボックスの「Source コード」タブ &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-2.png)
+   ![ 実稼動以外のパイプラインを追加ダイアログボックスの「Source コード」タブ ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-2.png)
 
 1. 「**エクスペリエンス監査**」タブで指定されたサイト URL は、Cloud Managerがページ品質を監査する公開済み URL です。
 
-1. **ページパス** フィールドで、監査するページを指定し、**![追加アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) ページを追加** をクリックします。
+1. **ページパス** フィールドで、監査するページを指定し、**![追加アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) ページを追加** をクリックします。
 
-   エクスペリエンス監査は、追加した各パスを分析して、パフォーマンス、アクセシビリティ、プログレッシブ Web アプリ、ベストプラクティス、SEO、その他の品質チェックを行います。 複数のパスを追加して削除するには、![&#x200B; クロスサイズ 400 アイコン &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg) をクリックします。
+   エクスペリエンス監査は、追加した各パスを分析して、パフォーマンス、アクセシビリティ、プログレッシブ Web アプリ、ベストプラクティス、SEO、その他の品質チェックを行います。 複数のパスを追加して削除するには、![ クロスサイズ 400 アイコン ](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg) をクリックします。
 
-   ![&#x200B; 実稼動以外のパイプラインを追加ダイアログボックスの「エクスペリエンス監査」タブ &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-3.png)
+   ![ 実稼動以外のパイプラインを追加ダイアログボックスの「エクスペリエンス監査」タブ ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-3.png)
 
 1. 「**保存**」をクリックします。
 
@@ -109,7 +111,7 @@ ht-degree: 48%
 
 ## ステージング専用および実稼動専用パイプラインの実行 {#running}
 
-新しいパイプラインは [&#x200B; 他のパイプラインと同様 &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) 開始できます。 ステージングのみのパイプラインのトリガーの詳細から直接実稼動のみのパイプラインを実行することもできます。
+新しいパイプラインは [ 他のパイプラインと同様 ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) 開始できます。 ステージングのみのパイプラインのトリガーの詳細から直接実稼動のみのパイプラインを実行することもできます。
 
 <!-- * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
 Prod-only pipeline run can be triggered directly from the execution details of a [stage-only pipeline](#stage-only-run).
@@ -132,11 +134,11 @@ When starting production-only and staging-online pipelines, you are prompted to 
 
 **ビルドを昇格** をクリックすると、関連する実稼動専用パイプラインの実行を確認するダイアログボックスが開きます。 「**実行**」をクリックして開始します。
 
-![&#x200B; ビルドを昇格 – パイプラインを実行ダイアログボックス &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
+![ ビルドを昇格 – パイプラインを実行ダイアログボックス ](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
 
 何も存在しない場合は、設定ダイアログボックスが表示され、作成するように求められます。
 
-![&#x200B; ビルドを昇格 – 有効なパイプラインがありませんダイアログボックス &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-no-valid-pipeline.png)
+![ ビルドを昇格 – 有効なパイプラインがありませんダイアログボックス ](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-no-valid-pipeline.png)
 
 
 ### 実稼動専用パイプラインの実行 {#prod-only-run}
