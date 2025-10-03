@@ -22,7 +22,7 @@ ht-degree: 58%
 
 ## 新機能 {#what-is-new}
 
-* Experience Manager ヘッダーツールバーの [ アカウント ](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) メニューに、プレビュー環境と実稼動環境を切り替える **オプションが追加されました**。
+* Experience Manager ヘッダーツールバーの [&#x200B; アカウント &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) メニューに、プレビュー環境と実稼動環境を切り替える **オプションが追加されました**。
 
 ## 早期導入機能 {#early-adopter}
 
@@ -30,7 +30,7 @@ ht-degree: 58%
 
 ### 新規 RTE {#new-rte}
 
-リンクダイアログのページピッカーを使用した新しい ProseMirror RTE が、右側のパネルで使用できるようになりました。 [ この RTE には、柔軟な設定オプションが用意されています。](/help/implementing/universal-editor/configure-rte.md)
+リンクダイアログのページピッカーを使用した新しい ProseMirror RTE が、右側のパネルで使用できるようになりました。 [&#x200B; この RTE には、柔軟な設定オプションが用意されています。](/help/implementing/universal-editor/configure-rte.md)
 
 ### ページ間のコピー＆ペースト {#copy-paste}
 

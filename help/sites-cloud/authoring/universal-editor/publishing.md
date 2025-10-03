@@ -46,7 +46,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
->プレビュー環境に公開する場合は、Experience Managerのヘッダーツールバーにある [ アカウント **メニューの** オプションを使用 ](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) して、プレビュー環境と実稼動環境を切り替えることができます。
+>プレビュー環境に公開する場合は、Experience Managerのヘッダーツールバーにある [&#x200B; アカウント **メニューの** オプションを使用 &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) して、プレビュー環境と実稼動環境を切り替えることができます。
 
 >[!NOTE]
 >
