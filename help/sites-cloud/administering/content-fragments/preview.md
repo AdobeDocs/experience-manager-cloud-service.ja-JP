@@ -4,10 +4,10 @@ description: 様々な方法でコンテンツフラグメントをプレビュ�
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
-source-git-commit: 42dbf6138920c4f733d7dc74dfc81504dee1e0ae
+source-git-commit: 3781b494394405f69892686790c17ffa9c69f28b
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 50%
+source-wordcount: '394'
+ht-degree: 49%
 
 ---
 
@@ -19,13 +19,15 @@ ht-degree: 50%
 
 フラグメントをプレビューできます。
 
-* [&#x200B; プレビュー URL パターン &#x200B;](#preview-url-pattern) の使用
+* [ プレビュー URL パターン ](#preview-url-pattern) の使用
 
-* [&#x200B; プレビューインスタンス &#x200B;](#preview-instance) に公開したり、インスタンスから非公開にしたりする
+* [ プレビューインスタンス ](#preview-instance) に公開したり、インスタンスから非公開にしたりする
 
 <!--
 * with a HTML template, using **[Preview]()** from the Content Fragments console
 -->
+
+もちろん、フラグメントを [ コンテンツフラグメントエディター ](/help/sites-cloud/administering/content-fragments/authoring.md) で表示することもできます。
 
 >[!IMPORTANT]
 >
@@ -67,15 +69,15 @@ URL を定義すると、エディターの上部のツールバーで「**[プ�
 
 ## プレビューインスタンス {#preview-instance}
 
-フラグメントは **公開** および **非公開** プレビューインスタンス（およびパブリッシュインスタンス）に公開できます。
+フラグメントを **プレビューサービス** とパブリッシュインスタンスに公開 **** したり **[非公開](/help/headless/deployment/architecture.md)** したりできます。
 
 フラグメントは、エディターまたはコンソールから公開できます。
 
 以下を参照してください。
 
-* [&#x200B; フラグメントの公開とプレビュー &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) を参照してください。
+* [ フラグメントの公開とプレビュー ](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) を参照してください。
 
-* [&#x200B; フラグメントを非公開にする &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) を参照してください。
+* [ フラグメントを非公開にする ](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) を参照してください。
 
 <!--
 ## Preview based on a HTML Template {#preview-based-on-a-html-template}
