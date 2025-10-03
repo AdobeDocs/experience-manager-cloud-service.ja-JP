@@ -7,13 +7,13 @@ role: Admin
 source-git-commit: d568619bd8ebb42a6914211401df680352c921ab
 workflow-type: tm+mt
 source-wordcount: '789'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # ソースからのコンテンツの抽出 {#extracting-content}
 
-## コンテンツ転送ツールの抽出プロセス {#extraction-process}
+## コンテンツトランスファーツールの抽出プロセス {#extraction-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
@@ -22,7 +22,7 @@ ht-degree: 92%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#top-up-extraction-process" text="追加抽出"
 
 
-コンテンツ転送ツールで移行セットを抽出するには、次の手順に従います。
+コンテンツトランスファーツールで移行セットを抽出するには、次の手順に従います。
 
 >[!NOTE]
 >Amazon S3、Azure データストア、ファイルデータストアのいずれかをデータストアのタイプとして使用する場合は、オプションの事前コピーステップを実行して、抽出段階を迅速化できます。プレコピー手順は、最初の完全な抽出と取り込みに最も効果的です。詳しくは、[大規模なコンテンツリポジトリの処理](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)を参照してください。
@@ -65,17 +65,17 @@ ht-degree: 92%
 
 ## 追加抽出 {#top-up-extraction-process}
 
-コンテンツ転送ツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。
+コンテンツトランスファーツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。
 
 >[!NOTE]
 >最初のコンテンツ転送の後は、差分コンテンツ追加を頻繁に行って、Cloud Service での運用を開始する前に行う最後の差分コンテンツ転送に必要なコンテンツ凍結期間を短縮することをお勧めします。最初の完全抽出にプレコピー手順を使用した場合、後続の追加抽出に対しては、（追加移行セットのサイズが 200 GB 未満の場合）プレコピーをスキップできます。これは、プロセス全体にかかる時間が増える可能性があるからです。
->また、最初の抽出を実行した時点から、追加抽出を実行する時点まで、既存コンテンツのコンテンツ構造が変わらないことが不可欠です。最初の抽出以降に構造が変更されたコンテンツに対しては、追加を実行できません。移行作業中には必ず制限するようにしてください。
+>>また、最初の抽出を実行した時点から、追加抽出を実行する時点まで、既存コンテンツのコンテンツ構造が変わらないことが不可欠です。最初の抽出以降に構造が変更されたコンテンツに対しては、追加を実行できません。移行作業中には必ず制限するようにしてください。
 
 >[!NOTE]
->コンテンツパスをステージングコンテナに移行した後は、それらのパスやサブパスを後続の追加移行から削除または除外することはできません。
->例：初期移行：content/dam/weRetail、
->次の追加除外の試み：content/dam/weRetail/ab。
->このシナリオでは、データが既にステージングコンテナに移行されているので、content/dam/weRetail/ab を除外することはできません。
+>コンテンツパスをステージングコンテナに移行すると、これらのパスやそのパス内のサブパスを後続の追加移行から削除または除外できません。
+>>例：初回移行：content/dam/weRetail。
+>>次の追加除外の試行：content/dam/weRetail/ab。
+>>このシナリオでは、データが既にステージングコンテナに移行されているので、content/dam/weRetail/ab を除外できません。
 
 抽出プロセスが完了したら、追加抽出方式を使用して差分コンテンツを転送できます。
 
@@ -94,4 +94,4 @@ ht-degree: 92%
 
 ## 次の手順 {#whats-next}
 
-コンテンツ転送ツールでソースからのコンテンツの抽出を学んだら、次はコンテンツ転送ツールの取り込みプロセスを学びましょう。コンテンツ転送ツールから移行セットを取り込む方法については、[Target へのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)を参照してください。
+コンテンツトランスファーツールでソースからのコンテンツの抽出を学んだら、次はコンテンツトランスファーツールの取り込みプロセスを学びましょう。コンテンツトランスファーツールから移行セットを取り込む方法については、[Target へのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)を参照してください。

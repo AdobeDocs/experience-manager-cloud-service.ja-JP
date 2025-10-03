@@ -5,7 +5,7 @@ feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3440'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Ma
 
 次のビデオでは、AEM as a Cloud Service にコードをデプロイする方法の概要を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/34668?quality=9&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
@@ -176,7 +176,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="パッケージマネージャー - 可変コンテンツパッケージの移行"
 >abstract="コンテンツパッケージを「1 回限り」としてインストールするユースケースへのパッケージマネージャーの使用方法を説明します。インストールには、実稼動環境での問題をデバッグするために実稼動環境からステージング環境に特定のコンテンツを読み込む場合や、オンプレミス環境から AEM Cloud 環境に小規模なコンテンツパッケージを転送する場合などが含まれます。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja" text="コンテンツ転送ツール"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja" text="コンテンツトランスファーツール"
 
 コンテンツパッケージを「1 回限りのもの」としてインストールする必要がある場合が考えられます。例えば、実稼動環境での問題をデバッグするために、実稼動環境からステージング環境に特定のコンテンツを読み込む場合などです。これらのシナリオでは、AEM as a Cloud Service 環境で[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)を使用できます。
 

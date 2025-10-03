@@ -1,6 +1,6 @@
 ---
-title: コンテンツ転送ツールの基本を学ぶ
-description: コンテンツ転送ツールの基本を学ぶ
+title: コンテンツトランスファーツールの基本を学ぶ
+description: コンテンツトランスファーツールの基本を学ぶ
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
@@ -12,7 +12,7 @@ ht-degree: 100%
 ---
 
 
-# コンテンツ転送ツールの基本を学ぶ {#getting-started-content-transfer-tool}
+# コンテンツトランスファーツールの基本を学ぶ {#getting-started-content-transfer-tool}
 
 
 ## 入手方法 {#availability}
@@ -20,16 +20,16 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_download"
 >title="ダウンロード"
->abstract="コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。"
+>abstract="コンテンツトランスファーツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=ja" text="リリースノート"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html" text="ソフトウェア配布ポータル"
 
-コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)を使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。最新バージョンについて詳しくは、[リリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=ja)を参照してください。
+コンテンツトランスファーツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)を使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。最新バージョンについて詳しくは、[リリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=ja)を参照してください。
 
 サポートされるのはバージョン 2.0.0 以降のみで、最新バージョンを使用することをお勧めします。
 
 >[!NOTE]
->[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)からコンテンツ転送ツールをダウンロードします。
+>[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)からコンテンツトランスファーツールをダウンロードします。
 
 ## ソース環境の接続性 {#source-environment-connectivity}
 
@@ -49,7 +49,7 @@ ht-degree: 100%
 SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プロセス中に接続の問題をトラブルシューティングするには、次の手順に従って、ソース AEM 環境のシステムコンソールで SSL ログを有効にします。
 
 1. **ツール／操作／Web コンソール**&#x200B;に移動するか、*https://serveraddress:serverport/system/console/configMgr* の URL に直接アクセスして、ソースインスタンスの Adobe Experience Manager web コンソールに移動します
-1. **コンテンツ転送ツール抽出サービスの設定**&#x200B;を検索します。
+1. **コンテンツトランスファーツール抽出サービスの設定**&#x200B;を検索します。
 1. 鉛筆アイコンボタンを使用して、設定値を編集します。
 1. を有効にします。 **抽出用の SSL ログを有効にする** 設定してから、 **保存**:
 
@@ -59,16 +59,16 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 >
 >このフラグは、SSL の問題のデバッグにのみ使用されます。抽出を実行する前に、フラグが無効になっていることを確認してください。これには大量のディスク領域が必要になる場合があります。これにより、ドライブ容量がいっぱいになり、抽出プロセスが失敗する可能性があります。
 
-## コンテンツ転送ツールの実行 {#running-tool}
+## コンテンツトランスファーツールの実行 {#running-tool}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
->title="コンテンツ転送ツールの実行"
->abstract="この節では、コンテンツ転送ツールを使用してコンテンツを AEM as a Cloud Service（オーサー／パブリッシュ）に移行する方法について説明します。"
->additional-url="https://video.tv.adobe.com/v/327070/?quality=12&learn=on&captions=jpn" text=" デモを見る"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ja#migration" text="チュートリアル - コンテンツ転送ツールの使用"
+>title="コンテンツトランスファーツールの実行"
+>abstract="この節では、コンテンツトランスファーツールを使用してコンテンツを AEM as a Cloud Service（オーサー／パブリッシュ）に移行する方法について説明します。"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" デモを見る"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ja#migration" text="チュートリアル - コンテンツトランスファーツールの使用"
 
-次の節は、コンテンツ転送ツールの新しいバージョンに適用されます。この節では、コンテンツ転送ツールを使用してコンテンツを AEM as a Cloud Service に移行する方法について説明します。
+次の節は、コンテンツトランスファーツールの新しいバージョンに適用されます。この節では、コンテンツトランスファーツールを使用してコンテンツを AEM as a Cloud Service に移行する方法について説明します。
 
 ### 抽出設定フェーズ {#extraction-setup-phase}
 
@@ -76,7 +76,7 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 >id="aemcloud_ctt_extraction_setup"
 >title="抽出設定フェーズ"
 >abstract="移行セットを作成して管理し、抽出キーをコピーする方法を説明します。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ja#migration" text="チュートリアル - コンテンツ転送ツールの使用"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ja#migration" text="チュートリアル - コンテンツトランスファーツールの使用"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" must be added here -->
 
@@ -117,12 +117,12 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_populate_migrationset"
 >title="移行セットの追加"
->abstract="移行セットを作成したら、AEM as a Cloud Service 環境に移行する必要がある、ソースインスタンスのコンテンツを入力する必要があります。これを行うには、ソースインスタンスにコンテンツ転送ツールをインストールする必要があります。"
+>abstract="移行セットを作成したら、AEM as a Cloud Service 環境に移行する必要がある、ソースインスタンスのコンテンツを入力する必要があります。これを行うには、ソースインスタンスにコンテンツトランスファーツールをインストールする必要があります。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=ja" text="コンテンツの抽出"
 
-Cloud Acceleration Manager で作成した移行セットを設定するには、最新バージョンのコンテンツ転送ツールをソースの Adobe Experience Manager（AEM）インスタンスにインストールします。移行セットの設定方法については、この節に従ってください。
+Cloud Acceleration Manager で作成した移行セットを設定するには、最新バージョンのコンテンツトランスファーツールをソースの Adobe Experience Manager（AEM）インスタンスにインストールします。移行セットの設定方法については、この節に従ってください。
 
-1. 移行元の Adobe Experience Manager インスタンスに最新バージョンのコンテンツ転送ツールをインストールしたら、**運用 - コンテンツ移行**&#x200B;に移動します。
+1. 移行元の Adobe Experience Manager インスタンスに最新バージョンのコンテンツトランスファーツールをインストールしたら、**運用 - コンテンツ移行**&#x200B;に移動します。
 
 1. 「**移行セットを作成**」をクリックします。
 
@@ -143,7 +143,7 @@ Cloud Acceleration Manager で作成した移行セットを設定するには�
       ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/includeVersion.png)
 
       >[!NOTE]
-      >バージョンを移行セットの一部に含める予定で、`wipe=false` を指定して追加を行う場合、コンテンツ転送ツールの現在の制限事項により、バージョンのパージを無効にする必要があります。バージョンのパージを有効にしたまま、移行セットへの追加を行う場合は、`wipe=true` を指定して取り込みを実行する必要があります。
+      >バージョンを移行セットの一部に含める予定で、`wipe=false` を指定して追加を行う場合、コンテンツトランスファーツールの現在の制限事項により、バージョンのパージを無効にする必要があります。バージョンのパージを有効にしたまま、移行セットへの追加を行う場合は、`wipe=true` を指定して取り込みを実行する必要があります。
 
       >[!NOTE]
       >CTT バージョン（3.0.24）以降、コンテンツトランスファーツールに新機能が含まれ、パスの包含および除外プロセスが強化されました。以前は、パスを 1 つずつ選択する必要があり、面倒で時間がかかっていました。現在は、ユーザーは環境設定に応じて、UI から直接パスを含めたり、CSV ファイルをアップロードしたりできます。CSV ファイルでは、行ごとに 1 つのパスを指定し、コンマを使用しないでください。
@@ -231,4 +231,4 @@ Cloud Acceleration Manager で作成した移行セットを設定するには�
 
 ## 次の手順 {#whats-next}
 
-移行セットの作成方法を理解したら、コンテンツ転送ツールでの抽出プロセスと取り込みプロセスについて学ぶ準備が整います。これらのプロセスを学ぶ前に、コンテンツを AEM as a Cloud Service に移行するコンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮する[大規模なコンテンツリポジトリの処理](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)を参照する必要があります。
+移行セットの作成方法を理解したら、コンテンツトランスファーツールでの抽出プロセスと取り込みプロセスについて学ぶ準備が整います。これらのプロセスを学ぶ前に、コンテンツを AEM as a Cloud Service に移行するコンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮する[大規模なコンテンツリポジトリの処理](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)を参照する必要があります。
