@@ -19,9 +19,9 @@ ht-degree: 50%
 
 フラグメントをプレビューできます。
 
-* [ プレビュー URL パターン ](#preview-url-pattern) の使用
+* [&#x200B; プレビュー URL パターン &#x200B;](#preview-url-pattern) の使用
 
-* [ プレビューインスタンス ](#preview-instance) に公開したり、インスタンスから非公開にしたりする
+* [&#x200B; プレビューインスタンス &#x200B;](#preview-instance) に公開したり、インスタンスから非公開にしたりする
 
 <!--
 * with a HTML template, using **[Preview]()** from the Content Fragments console
@@ -73,9 +73,9 @@ URL を定義すると、エディターの上部のツールバーで「**[プ�
 
 以下を参照してください。
 
-* [ フラグメントの公開とプレビュー ](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) を参照してください。
+* [&#x200B; フラグメントの公開とプレビュー &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) を参照してください。
 
-* [ フラグメントを非公開にする ](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) を参照してください。
+* [&#x200B; フラグメントを非公開にする &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) を参照してください。
 
 <!--
 ## Preview based on a HTML Template {#preview-based-on-a-html-template}
