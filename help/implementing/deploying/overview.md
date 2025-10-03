@@ -41,7 +41,7 @@ AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Ma
 
 次のビデオでは、AEM as a Cloud Service にコードをデプロイする方法の概要を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/34668?quality=9&captions=jpn)
 
 <!--
 >[!NOTE]
