@@ -105,7 +105,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 アプリ切り替えボタンをタップまたはクリックすると、他のExperience Cloud ソリューションにすばやくジャンプできます。
 
-![ アプリスイッチャー ](assets/solutions.png)
+![&#x200B; アプリスイッチャー &#x200B;](assets/solutions.png)
 
 #### アカウント {#user-properties}
 
@@ -113,9 +113,9 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ![ユーザープロパティ](assets/user-properties.png)
 
-アカウントアイコンをタップまたはクリックすると、ユーザー設定を含むメニューが開きます。 これらの設定はCloud Manager全般に当てはまり、その機能について詳しくは [ そのドキュメントを参照してください ](/help/implementing/cloud-manager/navigation.md)。
+アカウントアイコンをタップまたはクリックすると、ユーザー設定を含むメニューが開きます。 これらの設定はCloud Manager全般に当てはまり、その機能について詳しくは [&#x200B; そのドキュメントを参照してください &#x200B;](/help/implementing/cloud-manager/navigation.md)。
 
-![ 環境スイッチャー ](assets/environment-switcher.png)
+![&#x200B; 環境スイッチャー &#x200B;](assets/environment-switcher.png)
 
 ユニバーサルエディターの場合、見出し **製品設定** の下に、ユニバーサルエディターの現在の実稼動バージョンと今後のプレビューバージョンを切り替えるオプションがあります。
 
@@ -159,10 +159,10 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 #### 取り消しとやり直し {#undo-redo}
 
-「取り消し」または「やり直し」ボタンを選択して、エディター内の最後の編集を取り消しまたはやり直します。 詳しくは、ドキュメント [ ユニバーサルエディターを使用したコンテンツのオーサリング ](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) を参照してください。
+「取り消し」または「やり直し」ボタンを選択して、エディター内の最後の編集を取り消しまたはやり直します。 詳しくは、ドキュメント [&#x200B; ユニバーサルエディターを使用したコンテンツのオーサリング &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) を参照してください。
 
-![ 取り消しアイコン ](assets/undo.png)
-![ やり直しアイコン ](assets/redo.png)
+![&#x200B; 取り消しアイコン &#x200B;](assets/undo.png)
+![&#x200B; やり直しアイコン &#x200B;](assets/redo.png)
 
 >[!TIP]
 >
@@ -170,7 +170,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 #### 認証ヘッダー {#authentication-settings}
 
-[ 認証目的でカスタム認証ヘッダーを設定する ](/help/implementing/universal-editor/developer-overview.md#auth-header) 必要がある場合は、「ローカル開発ヘッダー」アイコンを選択します。
+[&#x200B; 認証目的でカスタム認証ヘッダーを設定する &#x200B;](/help/implementing/universal-editor/developer-overview.md#auth-header) 必要がある場合は、「ローカル開発ヘッダー」アイコンを選択します。
 
 ![認証ヘッダー設定ボタン](assets/authentication-header-settings.png)
 
@@ -178,11 +178,11 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 レスポンシブモードアイコンを選択して、ユニバーサルエディターがページをレンダリングする方法を定義します。
 
-![ レスポンシブモードアイコン ](assets/emulator.png)
+![&#x200B; レスポンシブモードアイコン &#x200B;](assets/emulator.png)
 
 レスポンシブモードアイコンをタップまたはクリックすると、オプションが表示されます。
 
-![ レスポンシブモードオプション ](assets/emulation-options.png)
+![&#x200B; レスポンシブモードオプション &#x200B;](assets/emulation-options.png)
 
 デフォルトでは、エディターはデスクトップレイアウトで開き、高さと幅はブラウザーで自動的に定義されます。
 
@@ -349,14 +349,14 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 [containers.](/help/implementing/universal-editor/field-types.md#container) 内のコンポーネントをコピーして貼り付けることができます
 
-![ コピーアイコン ](assets/copy.png)
-![ 貼り付けアイコン ](assets/paste.png)
+![&#x200B; コピーアイコン &#x200B;](assets/copy.png)
+![&#x200B; 貼り付けアイコン &#x200B;](assets/paste.png)
 
 >[!TIP]
 >
 >ホットキー `Command-C` または `Command-V` を使用して、それぞれコピーまたは貼り付けます。
 
-詳しくは、ドキュメント [ ユニバーサルエディターを使用したコンテンツのオーサリング ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) を参照してください。
+詳しくは、ドキュメント [&#x200B; ユニバーサルエディターを使用したコンテンツのオーサリング &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) を参照してください。
 
 #### その他のボタン {#additional-properties-panel-buttons}
 
