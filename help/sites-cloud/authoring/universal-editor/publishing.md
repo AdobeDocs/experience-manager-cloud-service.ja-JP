@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
+source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 96%
+source-wordcount: '592'
+ht-degree: 91%
 
 ---
 
@@ -43,6 +43,10 @@ ht-degree: 96%
    概要に戻るには、**項目**&#x200B;見出しの横にある戻る矢印をタップまたはクリックします。
 
 1. 「**公開**」をタップまたはクリックして公開するか、「**キャンセル**」をタップまたはクリックして中止します。
+
+>[!TIP]
+>
+>プレビュー環境に公開する場合は、Experience Managerのヘッダーツールバーにある [ アカウント **メニューの** オプションを使用 ](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) して、プレビュー環境と実稼動環境を切り替えることができます。
 
 >[!NOTE]
 >

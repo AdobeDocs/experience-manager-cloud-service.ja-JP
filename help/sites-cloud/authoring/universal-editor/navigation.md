@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
+source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
 workflow-type: tm+mt
-source-wordcount: '1894'
-ht-degree: 89%
+source-wordcount: '1953'
+ht-degree: 86%
 
 ---
 
@@ -112,6 +112,12 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 アカウント設定にアクセスするには、ユーザーを表すアイコンを選択します。 ユーザー画像が設定されていない場合、アイコンがランダムに割り当てられます。
 
 ![ユーザープロパティ](assets/user-properties.png)
+
+アカウントアイコンをタップまたはクリックすると、ユーザー設定を含むメニューが開きます。 これらの設定はCloud Manager全般に当てはまり、その機能について詳しくは [ そのドキュメントを参照してください ](/help/implementing/cloud-manager/navigation.md)。
+
+![ 環境スイッチャー ](assets/environment-switcher.png)
+
+ユニバーサルエディターの場合 [ プレビューサービスが使用可能な場合 ](/help/sites-cloud/authoring/sites-console/previewing-content.md)、「製品設定 **の見出しの下で、実稼動環境とプレビュー環境を切り替えるオプションもあり** す。
 
 ### ユニバーサルエディターのツールバー {#universal-editor-toolbar}
 
