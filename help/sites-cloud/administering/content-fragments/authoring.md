@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: ea18cacd3a1058f5b9c8e2e81e5e7c36aa1964b4
+source-git-commit: 1fade922ac38340aaaee71794f96db738d492ed6
 workflow-type: tm+mt
-source-wordcount: '2823'
-ht-degree: 100%
+source-wordcount: '2778'
+ht-degree: 98%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 100%
 * 上部のツールバー：主要な情報とアクション
    * コンテンツフラグメントコンソールへのリンク（ホームアイコン）
    * モデルとフォルダーに関する情報
-   * [プレビュー（モデルにデフォルトのプレビュー URL パターンが設定されている場合）](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)へのリンク
+   * [ プレビュー ](#preview-content-fragment) へのリンク。モデルにデフォルトのプレビュー URL パターンが設定されている場合
    * [公開](#publish-content-fragment)および[非公開](#unpublish-content-fragment)アクション
    * すべての&#x200B;**親参照**&#x200B;を表示するオプション（リンクアイコン）
    * フラグメント&#x200B;**[ステータス](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**、および最後に保存した情報
@@ -497,14 +497,7 @@ AEM ページ、エクスペリエンスフラグメントまたはその他の�
 
 ## フラグメントのプレビュー {#preview-content-fragment}
 
-コンテンツフラグメントエディターは、編集内容を外部フロントエンドアプリケーションでプレビューするオプションを作成者に提供します。
-
-この機能を使用するには、まず次の操作が必要です。
-
-* IT チームと協力して、JSON 出力を使用してコンテンツフラグメントをレンダリングする外部フロントエンドアプリケーションを設定します。
-* 外部フロントエンドアプリケーションが設定されると、**デフォルトのプレビュー URL パターン**&#x200B;は、[適切なコンテンツフラグメントモデルのプロパティ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)として定義される必要があります。
-
-URL が定義されると、「**プレビュー**」ボタンがアクティブになります。 このボタンを選択すると、（別のタブで）外部アプリケーションを起動して、コンテンツフラグメントをレンダリングできます。
+コンテンツフラグメントエディターを使用すると、作成者は外部フロントエンドアプリケーションで編集内容をプレビューできます。 これには、エディターの上部のツールバーにある **[プレビュー](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)** ボタンをアクティブにするために、**デフォルトのプレビュー URL パターン** を定義する必要があります。 このボタンを選択すると、（別のタブで）外部アプリケーションを起動して、コンテンツフラグメントをレンダリングできます。
 
 ## フラグメントの公開 {#publish-content-fragment}
 
