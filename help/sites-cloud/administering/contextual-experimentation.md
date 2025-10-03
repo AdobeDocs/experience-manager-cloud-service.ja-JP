@@ -23,7 +23,7 @@ ht-degree: 0%
 * **速度が遅すぎる**：多くの実験フレームワークでは、サイトの速度が非常に低下し、レンダリングが遅いため、失われたトラフィックとバウンスを新しいコンバージョンで補うことはできません。
 * **複雑すぎます**：新しい実験の設定に時間がかかりすぎる場合は、実行される実験の数が少なくなります。
 
-Adobe Experience Managerで動作するサイトの場合は、開発者がサイトに実験機能を追加できる、「標準 **** 実験プラグイン」があります。 このアプローチは、他の実験フレームワークとは次の 3 つの点で異なります。
+Adobe Experience Managerで動作するサイトの場合は、開発者がサイトに実験機能を追加できる、「標準 **&#x200B;**&#x200B;実験プラグイン」があります。 このアプローチは、他の実験フレームワークとは次の 3 つの点で異なります。
 
 * 作成者が既に熟知しているツールを使用すると、テストを簡単に設定でき、別のログインは必要ありません。
 * これはAEM配信システムに深く統合されており、サイトの速度を低下させず、コードおよびコンテンツの変更に対して回復力があります。
@@ -31,9 +31,9 @@ Adobe Experience Managerで動作するサイトの場合は、開発者がサ�
 
 ## 開始する前に {#before-start}
 
-実験プラグインは [Edge Delivery Servicesのコンテキスト内で使用されるので ](/help/edge/overview.md)Github アカウント、SharePointやGoogle Drive などのコンテンツリポジトリおよび [2}AEM Sidekick} が必要です。 ](https://www.aem.live/docs/sidekick)[ はじめに – ユニバーサルエディター開発者チュートリアルページ ](https://www.aem.live/developer/tutorial) および [ はじめに – 開発者チュートリアル ](https://www.aem.live/developer/tutorial) も参照してください。
+実験プラグインは [Edge Delivery Servicesのコンテキスト内で使用されるので &#x200B;](/help/edge/overview.md)Github アカウント、SharePointやGoogle Drive などのコンテンツリポジトリおよび [2&rbrace;AEM Sidekick&rbrace; が必要です。 &#x200B;](https://www.aem.live/docs/sidekick) [&#x200B; はじめに – ユニバーサルエディター開発者チュートリアルページ &#x200B;](https://www.aem.live/developer/tutorial) および [&#x200B; はじめに – 開発者チュートリアル &#x200B;](https://www.aem.live/developer/tutorial) も参照してください。
 
-すべての設定が完了したら **このビデオをご覧ください**[ インスタント実験 ](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) と題して、実験プラグインの仕組みを示す短いデモを行います。
+すべての設定が完了したら **このビデオをご覧ください**&#x200B;[&#x200B; インスタント実験 &#x200B;](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) と題して、実験プラグインの仕組みを示す短いデモを行います。
 
 ## よく使用される用語 {#frequently-used-terms}
 
@@ -48,10 +48,10 @@ Adobe Experience Managerで動作するサイトの場合は、開発者がサ�
 
 一般的に、実験を設定する場合、既存のページをコントロールページとして使用します。 次に、一部の訪問者のコントロールページを置き換えるチャレンジャーページを作成します。 挑戦者ページでは、コンテンツのバリエーション、ページレイアウト、call-to-action（CTA）など、様々なものをテストできます。 コントロールページにメタデータパラメーターを追加することで、これらの実験バリアントを設定できます（以下を参照）。
 
-次に、[ 運用上のテレメトリサービス ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) がデータを収集します。例えば、コントロールページとチャレンジャーページの訪問者数が収集されます。 その後、このデータを使用して、サイトに必要な改善点を選択します。 確立された web サイトのデザイン言語を使用し、既存のブロック機能を使用する限り、実験バリアントを設定して、数分で実稼動環境に送信できます。
+次に、[&#x200B; 運用上のテレメトリサービス &#x200B;](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) がデータを収集します。例えば、コントロールページとチャレンジャーページの訪問者数が収集されます。 その後、このデータを使用して、サイトに必要な改善点を選択します。 確立された web サイトのデザイン言語を使用し、既存のブロック機能を使用する限り、実験バリアントを設定して、数分で実稼動環境に送信できます。
 
 >[!NOTE]
->プラグインは、エンドユーザーの識別につながる可能性のあるエンドユーザーのデータを使用せず、保持もしないことに注意してください。 AEM as a Cloud Serviceの [ 運用上のテレメトリサービス ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) を使用するデフォルト設定を使用する場合、エンドユーザーのオプトインや Cookie の同意は必要ありません。
+>プラグインは、エンドユーザーの識別につながる可能性のあるエンドユーザーのデータを使用せず、保持もしないことに注意してください。 AEM as a Cloud Serviceの [&#x200B; 運用上のテレメトリサービス &#x200B;](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) を使用するデフォルト設定を使用する場合、エンドユーザーのオプトインや Cookie の同意は必要ありません。
 
 ### 実験識別子 {#experiment-identifier}
 
@@ -87,11 +87,11 @@ Adobe Experience Managerで動作するサイトの場合は、開発者がサ�
 
 以下の例を参照してください。
 
-![ メタデータページ ](/help/sites-cloud/administering/assets/metadata-page.png)
+![&#x200B; メタデータページ &#x200B;](/help/sites-cloud/administering/assets/metadata-page.png)
 
 実験ごとに、トラフィックはすべてのバリアント（コントロールチャレンジャーとチャレンジャー）に分割され、自動的に偶数分布に設定されます。 したがって、1 人の挑戦者がいる場合、自動的に制御と挑戦者の間で 50/50 の均等な分割が行われます。 2 人の挑戦者がいる場合は、制御に割り当てられたトラフィックの 3 分の 1 が自動的に表示され、各挑戦者などが表示されます。
 
-メタデータを設定することで、トラフィックの分割を上書きできます。 実験で使用するメタデータをカスタマイズする方法について詳しくは、次の [ ページを参照してください ](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring)
+メタデータを設定することで、トラフィックの分割を上書きできます。 実験で使用するメタデータをカスタマイズする方法について詳しくは、次の [&#x200B; ページを参照してください &#x200B;](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring)
 
 ### 実験のバリアントのプレビューとステージング {#preview-stage-experiment}
 
@@ -101,7 +101,7 @@ Adobe Experience Managerで動作するサイトの場合は、開発者がサ�
 
 By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.-->
 
-各バリアントの効果を測定するためのデータ収集は、[AEM as a Cloud Serviceでの運用上のテレメトリサービス ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) に基づいています。
+各バリアントの効果を測定するためのデータ収集は、[AEM as a Cloud Serviceでの運用上のテレメトリサービス &#x200B;](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) に基づいています。
 
 ### 実験バリアントを実稼動環境に送信 {#production-experiment}
 
@@ -215,7 +215,7 @@ Adobe Experience Managerは [ 運用上のテレメトリ ] （/help/sites-cloud
 
 ### プライバシー {#privacy-experimentation}
 
-[AEM as a Cloud Serviceの運用上のテレメトリサービス ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) は、訪問者のプライバシーを保護し、データ収集を最小限に抑えるように設計されています。 つまり、Adobeは、お客様の個人情報や、お客様に遡って追跡できる情報の収集を試みません。 サイトオペレーターは、以下に収集したデータ項目を確認し、同意が必要かどうかを把握します。
+[AEM as a Cloud Serviceの運用上のテレメトリサービス &#x200B;](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) は、訪問者のプライバシーを保護し、データ収集を最小限に抑えるように設計されています。 つまり、Adobeは、お客様の個人情報や、お客様に遡って追跡できる情報の収集を試みません。 サイトオペレーターは、以下に収集したデータ項目を確認し、同意が必要かどうかを把握します。
 AEM Operational Telemetry では、使用状況指標を収集するために、cookie や `localStorage`、`sessionStorage` など、クライアントサイドのステートや ID を使用しません。 データは、ピクセルや同様の手法ではなく、`Navigator.sendBeacon` 呼び出しを通じて透過的に送信されます。 サンプリングされたデータを取得する目的で、IP アドレス、ユーザーエージェント文字列、その他のデータを介したデバイスや個人の「フィンガープリント」は行われません。
 
 運用上のテレメトリデータ収集に個人データを追加することは許可されておらず、また、運用上のテレメトリデータは、厳密に必要な範囲を超えるユースケースに使用することもできません。
@@ -226,7 +226,7 @@ AEM Operational Telemetry では、使用状況指標を収集するために、
 
 Q：実験のバリエーション間の分割率（例えば、コントロールで 10%、挑戦者で 90%）を調整することはできますか？
 
-はい、分割率は [ メタデータ ](#configure-experiment) で設定できます。
+はい、分割率は [&#x200B; メタデータ &#x200B;](#configure-experiment) で設定できます。
 
 Q：テキストと画像の両方を試すことはできますか？
 
