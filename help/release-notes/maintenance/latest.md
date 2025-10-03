@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 8ee3da55024c0f5246f6c194bc07172b4b71823a
+source-git-commit: 6cf380fd972888fa21f682b0e799cf5ab594e829
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 53%
+source-wordcount: '433'
+ht-degree: 52%
 
 ---
 
@@ -31,9 +31,9 @@ ht-degree: 53%
 * GRANITE-56026：権限 API ステータスコード応答を改善しました。
 * GRANITE-61015：公開 `org.apache.commons.io.channels` 書き出されたリストにパッケージを追加しました。
 * GRANITE-61167:Felix ログを最新の OSGI 仕様に更新。
-* GRANITE-61167:Felix の依存関係を更新する。
+* GRANITE-61167:Apache Felix の多数の依存関係を更新する。
 * GRANITE-61169：保護された文字列のチェックを改善する。
-* GRANITE-61622:Sling の依存関係を更新する。
+* GRANITE-61622：多数の Apache Sling 依存関係を更新します。
 * GRANITE-61663：クイックスタートに `com.adobe.granite.repository.indexdefs-1.0.2` を追加します。
 * GRANITE-61811：クイックスタートに `com.adobe.granite.repository-2.0.0` を追加します。
 * SITES-32014：外部イベントをリッスンして、サービス登録を更新します。
