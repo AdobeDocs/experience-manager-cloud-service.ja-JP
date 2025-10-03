@@ -141,11 +141,11 @@ ht-degree: 92%
 
    * 特定のフラグメント用のアイコンを選択します。
 
-     ![ コンテンツフラグメントコンソール – ワークフローアイコン ](assets/cf-managing-console-workflows-icon.png)
+     ![&#x200B; コンテンツフラグメントコンソール – ワークフローアイコン &#x200B;](assets/cf-managing-console-workflows-icon.png)
 
      フラグメントのワークフロー（過去および現在）に関する詳細情報を含むダイアログを開きます。：
 
-     ![ コンテンツフラグメントコンソール – ワークフローダイアログ ](assets/cf-managing-console-workflows-dialog.png)
+     ![&#x200B; コンテンツフラグメントコンソール – ワークフローダイアログ &#x200B;](assets/cf-managing-console-workflows-dialog.png)
 
 ## アクション {#actions}
 
@@ -312,7 +312,7 @@ FolderC
    * 選択したコンテンツフラグメントのコピーをその場所に作成します。
    * 選択されているフラグメントによって参照されるすべてのフラグメントのコピーを作成します。
 
-     [ 参照されるフラグメントのコピー先 ](#locations-that-the-referenced-fragments-are-copied-to) は、選択するオプションによって異なります。
+     [&#x200B; 参照されるフラグメントのコピー先 &#x200B;](#locations-that-the-referenced-fragments-are-copied-to) は、選択するオプションによって異なります。
 
       * **選択したフォルダーにコピー**
 選択すると、参照されているフラグメントが元の選択したフラグメントと同じ場所にコピーされます。
@@ -330,7 +330,7 @@ FolderC
 
 コンテンツフラグメントをコピーする際に、参照されるフラグメントのコピー先を、**参照されるコンテンツフラグメントもコピー** および関連するオプションを使用して指定できます。
 
-![ フラグメントをコピー ](/help/sites-cloud/administering/content-fragments/assets/cf-managing-copy.png)
+![&#x200B; フラグメントをコピー &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-managing-copy.png)
 
 #### 元の場所にコピー {#copy-to-their-original-locations}
 
@@ -433,7 +433,7 @@ FolderC
 
 * **[パブリッシュサービス](/help/headless/deployment/architecture.md)** - フル、パブリックアクセス用
 
-* **[プレビューサービス](/help/headless/deployment/architecture.md)** – 完全に使用可能になる前にコンテンツを [ プレビュー ](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) します
+* **[プレビューサービス](/help/headless/deployment/architecture.md)** – 完全に使用可能になる前にコンテンツを [&#x200B; プレビュー &#x200B;](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) します
 
   >[!CAUTION]
   >
