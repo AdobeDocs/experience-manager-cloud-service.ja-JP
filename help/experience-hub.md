@@ -20,7 +20,7 @@ Experience Hubは、Adobe Experience Manager内のコンテンツ、アセット
 
 再考されたAEM Experience Hub Workspace のクイックツアー（2 分 40 秒）をご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475193/?learn=on&enablevpops&captions=jpn)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
