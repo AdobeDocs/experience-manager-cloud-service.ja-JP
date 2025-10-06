@@ -5,10 +5,10 @@ exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 3761019b42ddc4b3a6cc904afe91b47eb3d99ac6
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 100%
+source-wordcount: '526'
+ht-degree: 97%
 
 ---
 
@@ -40,7 +40,11 @@ AEM Cloud Service では、従来 UI をブロックしていた操作は、バ�
 * ページの移動
 * ページのロールアウト
 
-こうしたアクションを開始したユーザーは、新しい UI（`/mnt/overlay/dam/gui/content/asyncjobs.html`）でアクションのステータスを確認できます。
+<!--
+The initiator of such actions can check their status in a new UI at `/mnt/overlay/dam/gui/content/asyncjobs.html`.
+-->
+
+非同期ジョブのステータスは、[ バックグラウンド操作ダッシュボード ](/help/operations/asynchronous-jobs.md) から確認できます。
 
 >[!NOTE]
 >
