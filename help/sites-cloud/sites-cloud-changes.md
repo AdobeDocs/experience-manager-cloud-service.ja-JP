@@ -44,7 +44,7 @@ AEM Cloud Service では、従来 UI をブロックしていた操作は、バ�
 The initiator of such actions can check their status in a new UI at `/mnt/overlay/dam/gui/content/asyncjobs.html`.
 -->
 
-非同期ジョブのステータスは、[ バックグラウンド操作ダッシュボード ](/help/operations/asynchronous-jobs.md) から確認できます。
+非同期ジョブのステータスは、[&#x200B; バックグラウンド操作ダッシュボード &#x200B;](/help/operations/asynchronous-jobs.md) から確認できます。
 
 >[!NOTE]
 >
