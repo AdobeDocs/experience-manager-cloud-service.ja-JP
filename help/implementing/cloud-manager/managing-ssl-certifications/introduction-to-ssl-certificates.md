@@ -5,8 +5,8 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
-workflow-type: ht
+source-git-commit: 90527b1a160e6bde35562d58407a9056ae1f0a3a
+workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
 
@@ -156,7 +156,7 @@ SSL 証明書ファイルを Cloud Manager でインストールするには、S
 
 ## インストールする SSL 証明書の数の制限 {#limitations}
 
-Cloud Manager では、常に最大 50 個のインストールされた証明書をサポートします。これらの証明書は、プログラム全体の 1 つ以上の環境に関連付けることができ、期限切れの証明書も含むことができます。
+Cloud Manager では、常に最大 70 個のインストールされた証明書をサポートします。これらの証明書は、プログラム全体の 1 つ以上の環境に関連付けることができ、期限切れの証明書も含むことができます。
 
 上限に達した場合は、証明書を確認し、期限切れの証明書の削除を検討します。または、1 つの証明書で複数のドメイン（最大 100 個の SAN）をカバーする可能性があるので、複数のドメインを同じ証明書にグループ化します。
 
