@@ -6,16 +6,20 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: api をルールエディターに統合し、サービスを起動する機能を強化
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
+source-git-commit: 962e31769c013c87bd3089b20601c258fec22baa
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 0%
+source-wordcount: '1040'
+ht-degree: 2%
 
 ---
 
 # ルールエディターでの API の統合
 
-<span> ルールエディターへの API の統合は、早期導入プログラムの一環です。 公式メール ID から `aem-forms-ea@adobe.com` に書き込んで、早期導入プログラムに参加し、機能へのアクセスをリクエストできます。</span>
+<span> ルールエディターへの API の統合は、早期導入プログラムの一環です。 公式メール ID から `aem-forms-ea@adobe.com` に送信して早期導入プログラムに参加し、機能へのアクセスをリクエストできます。</span>
+
+>[!NOTE]
+>
+> ビジュアルルールエディターは、コアコンポーネントとEdge Delivery Services Formsに基づくアダプティブFormsでの API 統合をサポートしています。
 
 アダプティブFormsのビジュアルルールエディターでは、フォームデータモデルを作成せずに API を直接統合できます。 API エンドポイントに接続するには、API の URL （JSON 形式）を入力するか、cURL コマンドを使用して設定を読み込みます。 統合すると、**サービスを呼び出し** アクションを使用して API を呼び出すことができます。
 
