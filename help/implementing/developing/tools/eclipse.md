@@ -4,10 +4,10 @@ description: Apache Sling 用の Eclipse プラグインに基づく Eclipse プ
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: ht
+source-git-commit: ba42d58a4e55efdada35cc7706d736a7314ba743
+workflow-type: tm+mt
 source-wordcount: '1138'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,10 @@ AEM Developer Tools を使用する前に、次の作業が必要です。
 
 前述の[要件](#requirements)を満たしたら、次の手順でプラグインをインストールできます。
 
-1. [AEM 開発者ツールの web サイト](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip)を開きます。<!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
+1. [AEM 開発者ツールの web サイト](https://eclipse.adobe.com/)を開きます。
+
+<!-- had to update the link again - was https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip -->
+<!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. **インストール用リンク**&#x200B;をコピーします。
 
