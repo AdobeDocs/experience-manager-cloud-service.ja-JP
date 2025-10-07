@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
 source-git-commit: 8cbcfbc074c69396980ba930339563d5437d5f17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '988'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 94%
 
 >[!TIP]
 >
->**すぐに実践してみませんか？**
+>**すぐに実践したい場合**
 >
->Edge Delivery Servicesをすぐに実践したい場合は、次の 2 つの方法があります。
->* [ 事前定義済みのチュートリアル環境 – 完全に設定され、すぐに使用できる状態になったら、すぐにオーサリングを開始できます ](https://www.aem.live/developer/ue-trial)。
->* 詳細を確認し、30 分以内に独自の環境を設定するには、[aem.live のチュートリアルをチェックアウト ](https://www.aem.live/developer/ue-tutorial) してください。
+>Edge Delivery Services をすぐに実践する場合は、2 つのオプションがあります。
+>* [事前定義済みのチュートリアル環境を使用して、すぐにオーサリングを開始 - 完全に設定され、すぐに使用できます。](https://www.aem.live/developer/ue-trial)
+>* [aem.live のチュートリアルを参照する](https://www.aem.live/developer/ue-tutorial)ことにより、さらに詳しい情報を調べ、30 分以内に独自の環境を設定できます。
 
 ## Edge Delivery Services とは？ {#what-is-edge}
 
