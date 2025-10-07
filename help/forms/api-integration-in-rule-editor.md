@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: api をルールエディターに統合し、サービスを起動する機能を強化
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 962e31769c013c87bd3089b20601c258fec22baa
+source-git-commit: 0dba0003d8b13631e91147fa08c3b986c11b61d3
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 2%
+source-wordcount: '1027'
+ht-degree: 3%
 
 ---
 
@@ -19,17 +19,13 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> ビジュアルルールエディターは、コアコンポーネントとEdge Delivery Services Formsに基づくアダプティブFormsでの API 統合をサポートしています。
+> ビジュアルルールエディターは、コアコンポーネントに基づくアダプティブFormsおよび [ ユニバーサルエディターで作成されたEdge Delivery Services Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) の API 統合をサポートしています。
 
 アダプティブFormsのビジュアルルールエディターでは、フォームデータモデルを作成せずに API を直接統合できます。 API エンドポイントに接続するには、API の URL （JSON 形式）を入力するか、cURL コマンドを使用して設定を読み込みます。 統合すると、**サービスを呼び出し** アクションを使用して API を呼び出すことができます。
 
 フォームフィールドは、API 設定で定義された入力パラメーターに直接マッピングできます。 同様に、対応する API 応答の **イベントペイロード** オプションを使用して、出力パラメーターをフォームフィールドにマッピングできます。
 
 また、ビジュアルルールエディターを使用すると、サービスを呼び出す際に **成功** ハンドラーと **失敗ハンドラー** を定義できます。 サクセスハンドラーは、API 呼び出しが成功した後に実行するアクションを指定し、エラーハンドラーは、エラーが発生した場合のフォームの応答方法を定義します。
-
->[!NOTE]
->
-> ルールエディターでの API 統合は、[&#x200B; ユニバーサルエディターで作成されたEdge Delivery Services Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) にも適用できます。
 
 ## 比較：API 統合メソッド
 
@@ -44,7 +40,7 @@ ht-degree: 2%
 
 以下のスクリーンショットは、API 統合設定ウィンドウを示しています。
 
-![API 統合設定 &#x200B;](/help/forms/assets/api-integration-configuration.png)
+![API 統合設定 ](/help/forms/assets/api-integration-configuration.png)
 
 ### 主要な設定オプション
 
@@ -103,11 +99,11 @@ ht-degree: 2%
 
 ルールエディターで「**API 統合を作成**」ボタンをクリックすると、フォームデータモデルを作成せずに API を統合できます。
 
-![API 統合の作成 &#x200B;](/help/forms/assets/create-api-integration.png)
+![API 統合の作成 ](/help/forms/assets/create-api-integration.png)
 
 **getcountryname** という名前の API サービスは、ルールエディターの **API 統合設定** の下で設定されます。
 
-![API REST エンドポイントの設定 &#x200B;](/help/forms/assets/api-restendpoint.png)
+![API REST エンドポイントの設定 ](/help/forms/assets/api-restendpoint.png)
 
 * **API エンドポイント URL** → `https://secure.geonames.org/countryInfoJSON?username=aemforms`
 * **HTTP メソッド** → GET
@@ -123,7 +119,7 @@ ht-degree: 2%
 
 ![invoke-service-api-integration](/help/forms/assets/invoke-service-api-integration.png)
 
-![API 統合出力 &#x200B;](/help/forms/assets/api-integration-output.png)
+![API 統合出力 ](/help/forms/assets/api-integration-output.png)
 
 同様に、**パスポート発行国** と **宛先国** は同じ API 呼び出しを使用し、3 つのフィールドすべてで一貫性のある最新のデータを確保します。
 
@@ -202,7 +198,7 @@ function retryHandler(requestFn) {
 
 >[!NOTE]
 >
-> カスタム関数の追加方法の手順について詳しくは、[&#x200B; コアコンポーネントに基づくアダプティブFormsのカスタム関数の概要 &#x200B;](/help/forms/create-and-use-custom-functions.md) を参照してください。
+> カスタム関数の追加方法の手順について詳しくは、[ コアコンポーネントに基づくアダプティブFormsのカスタム関数の概要 ](/help/forms/create-and-use-custom-functions.md) を参照してください。
 
 ## よくある質問
 
