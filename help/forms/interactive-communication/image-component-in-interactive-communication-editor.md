@@ -26,7 +26,7 @@ ht-degree: 14%
 
 インタラクティブ通信エディターの画像コンポーネントを使用すると、作成者は、静的な画像を挿入することで通信レイアウトを強化することができます。 このコンポーネントは、視覚的に魅力的なレイアウトを作成し、ロゴやビジュアルアイコンなどのブランディング要素を組み込むために不可欠です。 作成者は、マスターページとデザインビューの両方に配置して、PDFなどのさまざまな出力形式で一貫した外観を確保できます。
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/image.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/image.png)
 
 ## 2.Properties
 

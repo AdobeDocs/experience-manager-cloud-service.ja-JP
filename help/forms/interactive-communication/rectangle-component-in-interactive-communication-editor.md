@@ -27,7 +27,7 @@ ht-degree: 12%
 インタラクティブ通信（IC）エディターの長方形コンポーネントを使用すると、作成者は、レイアウト区切り文字、視覚的なアクセント、コンテンツコンテナとして機能するシェイプされたグラフィカル要素を追加できます。 長方形は視覚的な階層を強化し、構造化された通信レイアウトでユーザーの注意を引きます。
 このコンポーネントは、データに結び付けられませんが、デザインの明確さを向上させ、関連するフィールドをグループ化し、全体的なプレゼンテーションを強化するのに役立ちます。
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/rectangle.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/rectangle.png)
 
 ## &#x200B;2. プロパティ
 

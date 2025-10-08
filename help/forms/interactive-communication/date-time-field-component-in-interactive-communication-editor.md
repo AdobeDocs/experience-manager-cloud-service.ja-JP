@@ -28,7 +28,7 @@ ht-degree: 8%
 
 このフィールドは、様々な書式設定オプション（DD/MM/YYYY、24 時間、12 時間の形式など）、検証の制約、コミュニケーションデザインに合わせた外観のカスタマイズをサポートしています。 手動入力エラーを減らし、データ収集の一貫性を向上させることで、ユーザーエクスペリエンスを向上させます。
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/datetime.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/datetime.png)
 
 ## &#x200B;2. プロパティ
 

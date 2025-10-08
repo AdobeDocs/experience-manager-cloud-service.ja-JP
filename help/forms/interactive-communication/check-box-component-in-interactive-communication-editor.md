@@ -28,7 +28,7 @@ ht-degree: 8%
 
 このチェックボックスは、柔軟なスタイル設定、データバインディングオプション、表示ルールをサポートしており、軽量でありながら強力なツールとして、インタラクティブで使いやすいフォームを設計できます。
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/checkbox.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/checkbox.png)
 
 ## &#x200B;2. プロパティ
 

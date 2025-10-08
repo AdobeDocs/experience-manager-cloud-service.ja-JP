@@ -28,7 +28,7 @@ ht-degree: 11%
 
 テキストボックスでは、**データバインディング** がサポートされ、作成者は静的コンテンツと動的コンテンツをシームレスに組み合わせることができます。例えば、***&quot;User&#39;s name: @name&quot;***の場合、@name はドキュメントがPDFとして保存されると動的に入力される連結データフィールドです。 さらに、リッチテキストの書式設定と正確なレイアウト制御を行うための柔軟な配置をサポートしています。
 
-![IC 文書の検索 ](/help/forms/interactive-communication/assets/textbox.png)
+![IC 文書の検索 &#x200B;](/help/forms/interactive-communication/assets/textbox.png)
 
 ## &#x200B;2. プロパティ
 

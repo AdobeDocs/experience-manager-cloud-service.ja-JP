@@ -28,7 +28,7 @@ ht-degree: 10%
 
 サブフォームは、上から下、左から右など、様々なレイアウトでフローするように設定でき、複雑なフォームデザインや再利用可能なセクションに最適です。
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/subform.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/subform.png)
 
 ## &#x200B;2. プロパティ
 

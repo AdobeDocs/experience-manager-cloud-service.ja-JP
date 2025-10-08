@@ -28,7 +28,7 @@ ht-degree: 8%
 
 生年月日、予定スケジュール、適用日、ポリシーの開始日/終了日を取得するのに最適な日付フィールドは、精度を向上させ、入力エラーを減らします。 データモデルやバックエンドシステムとのシームレスな統合のための書式設定、スタイル設定、データバインディングをサポートしています。
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/date.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/date.png)
 
 ## &#x200B;2. プロパティ
 
