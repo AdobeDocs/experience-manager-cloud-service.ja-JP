@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 16c97e13ba96df743afd6da0ad9416dfa0c825f7
+source-git-commit: b30367d3892fb58d42533864ba9c354e355c7d7a
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 89%
@@ -212,7 +212,7 @@ RTE は、作成者のニーズに応じて、オプションを非表示にし�
 
 ### コピー&amp;ペースト {#copy-paste}
 
-[containers 内のコンポーネントをコピーして貼り付けることができます。](/help/implementing/universal-editor/field-types.md#container) この操作は同じページ内でのみ可能で、[target コンテナがコンポーネントの貼り付けを許可している場合にのみ可能です。](/help/implementing/universal-editor/filtering.md)
+[ コンテナ ](/help/implementing/universal-editor/field-types.md#container) 内のコンポーネントを同じブラウザータブにコピーして貼り付けることができます。 [target コンテナにフィルターが設定されていない場合にのみ可能です。](/help/implementing/universal-editor/filtering.md)
 
 ![ コピーアイコン ](assets/copy.png)
 ![ 貼り付けアイコン ](assets/paste.png)

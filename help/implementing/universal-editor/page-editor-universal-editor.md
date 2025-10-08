@@ -4,9 +4,9 @@ description: ページエディターは引き続きアドビでサポートさ�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
+source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1067'
 ht-degree: 99%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 99%
 | [バリエーションを生成](/help/generative-ai/generate-variations.md) | [!BADGE 使用不可]{type=Negative} |  | [!BADGE 使用可能]{type=Positive} | [拡張機能として使用できます](/help/implementing/universal-editor/extending.md) |
 | 新規ブロックを挿入 | [!BADGE 使用可能]{type=Positive} |  | [!BADGE 使用可能]{type=Positive} |  |
 | ブロックを並べ替え | [!BADGE 使用可能]{type=Positive} | コンテキスト内のドラッグ＆ドロップでは可能ですが、「ツリービュー」サイドパネルでは不可能です | [!BADGE 使用可能]{type=Positive} | 「ツリービュー」サイドパネルのドラッグ＆ドロップでは可能ですが、コンテキスト内ではまだ不可能です（計画済み） |
-| ブロックを切り取り／コピー＆ペースト | [!BADGE 使用可能]{type=Positive} |  | [!BADGE 使用不可]{type=Negative} | 計画済み |
+| ブロックを切り取り／コピー＆ペースト | [!BADGE 使用可能]{type=Positive} |  | [!BADGE 使用可能]{type=Positive} |  |
 | スタイルを適用 | [!BADGE 使用可能]{type=Positive} | スタイルは、[スタイルシステム](/help/sites-cloud/authoring/page-editor/style-system.md)を使用して、コンポーネントに適用できます。 | [!BADGE 使用可能]{type=Positive} | スタイルは、通常のコンポーネント（またはコンテンツフラグメント）のプロパティを使用して適用できます。 ユニバーサルエディターでは同様のスタイルピッカーは使用できませんが、複数選択ウィジェットを使用すると、非常に類似した UX を実現できます。 |
 | レイアウトを適用 | [!BADGE 使用可能]{type=Positive} | 作成者が 3 つの定義済みブレークポイントをまたいでコンポーネントのサイズを変更できるようにするには、Sites で [AEM レスポンシブグリッド](/help/implementing/developing/introduction/responsive-design.md)を実装する必要があります。 | [!BADGE 使用可能]{type=Positive} | レイアウトは、通常のコンポーネント（またはコンテンツフラグメント）プロパティを使用して適用できますが、レスポンシブグリッドはサポートされていません。 |
 | 取り消し - やり直し | [!BADGE 使用可能]{type=Positive} |  | [!BADGE 使用可能]{type=Positive} |  |

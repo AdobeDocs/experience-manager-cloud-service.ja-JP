@@ -4,10 +4,10 @@ description: ユニバーサルエディター 2025.10.02 リリースのリリ�
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 997eb9bbc3810af8dde14a77002ac0370c92af99
+source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 49%
+source-wordcount: '189'
+ht-degree: 44%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 49%
 
 >[!TIP]
 >
->リリース前にユニバーサルエディターの機能 **今後** をテストする場合は、[&#x200B; ユニバーサルエディターのプレビューリリースノート &#x200B;](/help/release-notes/universal-editor/preview.md) を参照してください。
+>リリース前にユニバーサルエディターの機能 **今後** をテストする場合は、[ ユニバーサルエディターのプレビューリリースノート ](/help/release-notes/universal-editor/preview.md) を参照してください。
 
 >[!TIP]
 >
@@ -26,7 +26,7 @@ ht-degree: 49%
 
 ## 新機能 {#what-is-new}
 
-* Experience Manager ヘッダーツールバーの [&#x200B; アカウント &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) メニューに、ユニバーサルエディターの現在の実稼動バージョンと今後のプレビューバージョンを切り替える **オプションが追加されました**。
+* Experience Manager ヘッダーツールバーの [ アカウント ](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) メニューに、ユニバーサルエディターの現在の実稼動バージョンと今後のプレビューバージョンを切り替える **オプションが追加されました**。
 
 ## 早期導入機能 {#early-adopter}
 
@@ -34,11 +34,7 @@ ht-degree: 49%
 
 ### 新規 RTE {#new-rte}
 
-リンクダイアログのページピッカーを使用した新しい ProseMirror RTE が、右側のパネルで使用できるようになりました。 [&#x200B; この RTE には、柔軟な設定オプションが用意されています。](/help/implementing/universal-editor/configure-rte.md)
-
-### ページ間のコピー＆ペースト {#copy-paste}
-
-コピー＆ペーストが同じページ内に加えてページ間で可能になりました。
+リンクダイアログのページピッカーを使用した新しい ProseMirror RTE が、右側のパネルで使用できるようになりました。 [ この RTE には、柔軟な設定オプションが用意されています。](/help/implementing/universal-editor/configure-rte.md)
 
 ## その他の改善点 {#other-improvements}
 
