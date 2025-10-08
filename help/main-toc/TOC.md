@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 997eb9bbc3810af8dde14a77002ac0370c92af99
+source-git-commit: e7f50e7da80927c9b9604f5454e11af8cd712a20
 workflow-type: tm+mt
-source-wordcount: '6830'
+source-wordcount: '6836'
 ht-degree: 95%
 
 ---
@@ -533,16 +533,16 @@ ht-degree: 95%
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
-      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=ja)
+      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service の運用テレメトリ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
    + [コンテキスト実験](/help/sites-cloud/administering/contextual-experimentation.md)
 + Assets {#assets}
    + [概要と新機能](/help/assets/overview.md)
-   + [&#x200B; [!DNL Assets] as a [!DNL Cloud Service] の主な変更点](/help/assets/assets-cloud-changes.md)
+   + [ [!DNL Assets] as a [!DNL Cloud Service] の主な変更点](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] アーキテクチャ](/help/assets/architecture.md)
    + [サポートされているファイル形式](/help/assets/file-format-support.md)
    + [アセットマイクロサービスの概要](/help/assets/asset-microservices-overview.md)
-   + [&#x200B; [!DNL Assets] でのアクセシビリティ](/help/assets/accessibility.md)
+   + [ [!DNL Assets] でのアクセシビリティ](/help/assets/accessibility.md)
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
    + [Assets as a Cloud Service Ultimate の有効化](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
@@ -574,10 +574,10 @@ ht-degree: 95%
       + [画像のスマートタグ付け](/help/assets/smart-tags.md)
       + [ビデオのスマートタグ](/help/assets/smart-tags-for-videos.md)
       + [アセットの整理方法](/help/assets/organize-assets.md)
-      + [&#x200B; [!DNL Adobe Stock] アセットを使用する](/help/assets/aem-assets-adobe-stock.md)
+      + [ [!DNL Adobe Stock] アセットを使用する](/help/assets/aem-assets-adobe-stock.md)
       + [コレクションを管理](/help/assets/manage-collections.md)
       + [メタデータの概要](/help/assets/manage-metadata.md)
-      + [&#x200B; [!DNL Adobe Creative Cloud] との統合](/help/assets/aem-cc-integration-best-practices.md)
+      + [ [!DNL Adobe Creative Cloud] との統合](/help/assets/aem-cc-integration-best-practices.md)
       + [メタデータの追加と編集](/help/assets/meta-edit.md)
       + [フォルダーのアセットとコレクションのレビュー](/help/assets/bulk-approval.md)
       + [アセットインサイトの使用と設定](/help/assets/assets-insights.md)
@@ -590,7 +590,7 @@ ht-degree: 95%
       + [プライベートフォルダーの作成と共有](/help/assets/private-folder.md)
       + [アセットのデジタル著作権管理](/help/assets/drm.md)
       + [アセットへの透かしの適用](/help/assets/watermark-assets.md)
-      + [&#x200B; [!DNL Creative Cloud] API を使用してアセットを処理する](/help/assets/cc-api-integration.md)
+      + [ [!DNL Creative Cloud] API を使用してアセットを処理する](/help/assets/cc-api-integration.md)
       + [画像のカラータグ](/help/assets/color-tag-images.md)
       + [PDF ドキュメントの管理](/help/assets/manage-pdf-documents.md)
    + [!DNL Assets] の設定、管理、拡張 {#admin}
@@ -612,8 +612,8 @@ ht-degree: 95%
       + [アセットメタデータの読み込みと書き出し](/help/assets/metadata-import-export.md)
       + [アセットのアップロード制限の設定](/help/assets/configure-asset-upload-restrictions.md)
    + アセットの共有と配布 {#brand-portal}
-      + [&#x200B; [!DNL Assets]  での [!DNL Brand Portal]の設定](/help/assets/configure-aem-assets-with-brand-portal.md)
-      + [&#x200B; [!DNL Brand Portal] へのアセットの公開](/help/assets/publish-to-brand-portal.md)
+      + [ [!DNL Assets]  での [!DNL Brand Portal]の設定](/help/assets/configure-aem-assets-with-brand-portal.md)
+      + [ [!DNL Brand Portal] へのアセットの公開](/help/assets/publish-to-brand-portal.md)
       + [アセットを [!DNL Brand Portal] から  [!DNL Assets] に公開する](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja)
    + コンテンツフラグメント {#content-fragments}
       + [コンテンツフラグメントの使用方法](/help/assets/content-fragments/content-fragments.md)
@@ -752,11 +752,11 @@ ht-degree: 95%
    + Figma との統合 {#integration-figma}
       + [Figma とのネイティブ統合](/help/assets/integrate-aem-assets-with-figma.md)
    + Adobe Workfront との統合 {#integrations}
-      + [&#x200B; [!DNL Adobe Workfront] との統合](/help/assets/workfront-integrations.md)
+      + [ [!DNL Adobe Workfront] との統合](/help/assets/workfront-integrations.md)
       + [アセットメタデータマッピングの設定](/help/assets/configure-asset-metadata-mapping.md)
-      + [&#x200B; [!DNL Workfront] 用の  [!DNL enhanced connector]  のインストール](/help/assets/workfront-connector-install.md)
+      + [ [!DNL Workfront] 用の  [!DNL enhanced connector]  のインストール](/help/assets/workfront-connector-install.md)
       + [既存のインストールの外部依存関係の削除](/help/assets/remove-external-dependencies.md)
-      + [&#x200B; [!DNL Workfront] 用の  [!DNL enhanced connector]  の設定](/help/assets/workfront-connector-configure.md)
+      + [ [!DNL Workfront] 用の  [!DNL enhanced connector]  の設定](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
    + Adobe Express との統合 {#integration-adobe-express}
       + [Adobe Express とのネイティブ統合](/help/assets/native-integration-adobe-express.md)
@@ -780,7 +780,7 @@ ht-degree: 95%
       + [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
       + [AEM Forms as a Cloud Service およびローカル開発環境で、アダプティブフォームのコアコンポーネントを有効にする](/help/forms/enable-adaptive-forms-core-components.md)
       + [統合ストレージコネクタの設定](/help/forms/configure-unified-storage-connector.md)
-      + [as a Cloud Service の移行元 [!DNL AEM 6.5 Forms] または以前のバージョン [!DNL AEM Forms] &#x200B;](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [as a Cloud Service の移行元 [!DNL AEM 6.5 Forms] または以前のバージョン [!DNL AEM Forms] ](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
       + [アダプティブフォーム、PDF フォームおよびその他のアセットの読み込み、書き出し、整理](/help/forms/import-export-forms-templates.md)
       + [Adobe Experience Software Development Kit（AEM SDK）の機能切替スイッチを有効にする](/help/forms/enable-feature-toggle.md)
@@ -800,10 +800,10 @@ ht-degree: 95%
       + フォームデータモデル {#use-form-data-model}
          + [AEM Forms をデータベースまたはデータソースに接続](/help/forms/data-integration.md)
          + [データソースの設定](/help/forms/configure-data-sources.md)
-         + [&#x200B; [!DNL Microsoft Dynamics]  OData の設定](/help/forms/ms-dynamics-odata-configuration.md)
+         + [ [!DNL Microsoft Dynamics]  OData の設定](/help/forms/ms-dynamics-odata-configuration.md)
          + [OAuth 2.0 クライアント資格情報フローを使用して、アダプティブフォームを Salesforce アプリケーションに接続](/help/forms/aem-forms-salesforce-integration.md)
-         + [&#x200B; [!DNL Azure]  ストレージの設定](/help/forms/configure-azure-storage.md)
-         + [&#x200B; [!DNL Microsoft Dynamics 365]  クラウドサービスの設定](/help/forms/configure-msdynamics.md)
+         + [ [!DNL Azure]  ストレージの設定](/help/forms/configure-azure-storage.md)
+         + [ [!DNL Microsoft Dynamics 365]  クラウドサービスの設定](/help/forms/configure-msdynamics.md)
          + [Salesforce クラウドサービスの設定](/help/forms/configure-salesforce.md)
          + [フォームデータモデルの作成](/help/forms/create-form-data-models.md)
          + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
@@ -973,25 +973,28 @@ ht-degree: 95%
       + [HTML5 フォームのスクリプティングのサポート](/help/forms/scripting-support.md)
       + [AEM Forms におけるフォームセット](/help/forms/formset-in-aem-forms.md)
    + インタラクティブなコミュニケーション {#interactive-communication}
-      + [インタラクティブ通信エディターの概要](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
-      + [インタラクティブ通信の作成](/help/forms/interactive-communication/create-interactive-communication.md)
-      + [インタラクティブ通信テンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)
-      + [インタラクティブ通信フラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
-      + [最初のインタラクティブ通信を作成](/help/forms/create-your-first-communication.md)
-      + [インタラクティブ通信エディター内のテキストボックスオブジェクト](/help/forms/interactive-communication/text-box-object-in-interactive-communication-editor.md)
-      + [インタラクティブ通信エディター内の画像オブジェクト](/help/forms/interactive-communication/image-object-in-interactive-communication-editor.md)
-      + [インタラクティブ通信エディターの画像フィールドオブジェクト](/help/forms/interactive-communication/image-field-object-in-interactive-communication-editor.md)
-      + [インタラクティブ通信エディター内のテキストフィールドオブジェクト](/help/forms/interactive-communication/text-field-in-interactive-communication-editor.md)
-      + [インタラクティブ通信エディター内の数値フィールドオブジェクト](/help/forms/interactive-communication/numeric-field-object-in-interactive-communication-editor.md)
-      + [インタラクティブ通信エディターの日付/時間フィールドオブジェクト](/help/forms/interactive-communication/date-time-field-object-in-interactive-communication-editor.md)
-      + [インタラクティブ通信エディターの日付フィールドオブジェクト](/help/forms/interactive-communication/date-field-object-in-interactive-communication-editor.md)
-      + [インタラクティブ通信エディター内の Check Box オブジェクト](/help/forms/interactive-communication/check-box-object-in-interactive-communication-editor.md)
-      + [インタラクティブ通信エディター内のラジオボタンオブジェクト](/help/forms/interactive-communication/radio-button-object-in-interactive-communication-editor.md)
-      + [インタラクティブ通信エディターのサブフォームオブジェクト](/help/forms/interactive-communication/subform-object-in-interactive-communication-editor.md)
-      + [インタラクティブ通信エディター内の長方形オブジェクト](/help/forms/interactive-communication/rectangle-object-in-interactive-communication-editor.md)
-      + [インタラクティブ通信エディター内のテーブルオブジェクト](/help/forms/interactive-communication/table-object-in-interactive-communication-editor.md)
-      + [インタラクティブ通信エディター内の Line オブジェクト](/help/forms/interactive-communication/line-object-in-interactive-communication-editor.md)
-      + [インタラクティブ通信エディター内のバーコードオブジェクト](/help/forms/interactive-communication/barcode-object-in-interactive-communication-editor.md)
+      + 概要 {#overview}
+         + [インタラクティブ通信エディターの概要](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
+         + [インタラクティブ通信の作成](/help/forms/interactive-communication/create-interactive-communication.md)
+         + [インタラクティブ通信テンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)
+         + [インタラクティブ通信フラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+         + [インタラクティブ通信の概要](/help/forms/introduction-to-interactive-communication.md)
+         + [最初のインタラクティブ通信を作成](/help/forms/create-your-first-communication.md)
+      + Component {#component}
+         + [インタラクティブ通信エディター内のテキストボックスコンポーネント](/help/forms/interactive-communication/text-box-component-in-interactive-communication-editor.md)
+         + [インタラクティブ通信エディター内の画像コンポーネント](/help/forms/interactive-communication/image-component-in-interactive-communication-editor.md)
+         + [インタラクティブ通信エディターの画像フィールドコンポーネント](/help/forms/interactive-communication/image-field-component-in-interactive-communication-editor.md)
+         + [インタラクティブ通信エディターのテキストフィールドコンポーネント](/help/forms/interactive-communication/text-field-component-in-interactive-communication-editor.md)
+         + [インタラクティブ通信エディターの数値フィールドコンポーネント](/help/forms/interactive-communication/numeric-field-component-in-interactive-communication-editor.md)
+         + [インタラクティブ通信エディターの日付/時間フィールドコンポーネント](/help/forms/interactive-communication/date-time-field-component-in-interactive-communication-editor.md)
+         + [インタラクティブ通信エディターの日付フィールドコンポーネント](/help/forms/interactive-communication/date-field-component-in-interactive-communication-editor.md)
+         + [インタラクティブ通信エディター内のチェックボックスコンポーネント](/help/forms/interactive-communication/check-box-component-in-interactive-communication-editor.md)
+         + [インタラクティブ通信エディター内のラジオボタンコンポーネント](/help/forms/interactive-communication/radio-button-component-in-interactive-communication-editor.md)
+         + [インタラクティブ通信エディター内のサブフォームコンポーネント](/help/forms/interactive-communication/subform-component-in-interactive-communication-editor.md)
+         + [インタラクティブ通信エディター内の長方形コンポーネント](/help/forms/interactive-communication/rectangle-component-in-interactive-communication-editor.md)
+         + [インタラクティブ通信エディターのテーブルコンポーネント](/help/forms/interactive-communication/table-component-in-interactive-communication-editor.md)
+         + [インタラクティブ通信エディター内の行コンポーネント](/help/forms/interactive-communication/line-component-in-interactive-communication-editor.md)
+         + [インタラクティブ通信エディターのバーコードコンポーネント](/help/forms/interactive-communication/barcode-component-in-interactive-communication-editor.md)
       + [インタラクティブ通信エディターでのデータバインディング](/help/forms/interactive-communication/data-binding-in-interactive-communication-editor.md)
       + [インタラクティブ通信エディターでのルール作成](/help/forms/interactive-communication/rule-creation-in-interactive-communication-editor.md)
       + [インタラクティブ通信の読み込みと書き出し](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
@@ -1033,7 +1036,7 @@ ht-degree: 95%
       + [AEM SDK の再起動](/help/forms/restart-aem-sdk.md)
       + [フォーム作成エラーの解決](/help/forms/form-creation-failing.md)
       + [カスタム送信アクションの 502 エラーページ](/help/forms/custom-submit-action-troubleshooting.md)
-+ AEMの AI {#ai-in-aem}
++ AEM の AI {#ai-in-aem}
    + [概要](/help/ai-in-aem/overview.md)
    + AI アシスタント {#ai-assistant}
       + [AEM の AI アシスタントの設定](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
@@ -1160,11 +1163,11 @@ ht-degree: 95%
          + [Edge Delivery Services を使用したアダプティブフォームの公開](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [EDS フォームのカスタムコンポーネントの作成](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Edge Delivery Services フォーム送信での 403 Forbidden エラーのトラブルシューティング](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
-         + [API 統合を使用したSalesforce リードオブジェクトの作成 &#x200B;](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
+         + [API 統合を使用したSalesforce リードオブジェクトの作成 ](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
          + カスケードドロップダウン {#cascading-drop-down-list}
             + [はじめに](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
             + [API 統合を作成](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
-            + [&#x200B; フォームを作成 &#x200B;](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
+            + [ フォームを作成 ](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
       + ドキュメントベースのオーサリング {#getting-started-edge-delivery-services-forms}
          + [最初のフォームの作成：Google Sheetsと Excel を使用したクイックスタートガイド](/help/edge/docs/forms/tutorial.md)
          + [Google Sheets または Excel を使用したフォームの作成方法：ステップバイステップガイド](/help/edge/docs/forms/create-forms.md)
@@ -1207,7 +1210,7 @@ ht-degree: 95%
       + オーサリング{#authoring}
          + [オーサリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=ja)
          + [マークダウンエディター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=ja)
-      + [&#x200B; フラグメントのプレビュー &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=ja)
+      + [ フラグメントのプレビュー ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=ja)
       + [JSON プレビュー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=ja)
    + コンテンツフラグメントセレクター {#content-fragment-selector}
@@ -1430,7 +1433,7 @@ ht-degree: 95%
          + [はじめに](/help/implementing/universal-editor/getting-started.md)
          + [デベロッパー向け概要](/help/implementing/universal-editor/developer-overview.md)
          + [ローカル AEM 開発](/help/implementing/universal-editor/local-dev.md)
-         + [SecurBank サンプルアプリ &#x200B;](/help/implementing/universal-editor/securbank.md)
+         + [SecurBank サンプルアプリ ](/help/implementing/universal-editor/securbank.md)
       + [ヘッドレスエクスペリエンス管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=ja)
       + ハイブリッドおよび SPA 開発 {#hybrid}
          + [AEM でのハイブリッドと SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
