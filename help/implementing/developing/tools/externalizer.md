@@ -4,16 +4,16 @@ description: Externalizer は、プログラムによってリソースパスを
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '630'
-ht-degree: 100%
+source-git-commit: 3f3df8866e9c9555e0c7d2d8ff2637b212dea0b9
+workflow-type: tm+mt
+source-wordcount: '647'
+ht-degree: 92%
 
 ---
 
 # URL の外部化 {#externalizing-urls}
 
-AEM の **Externalizer** は、あらかじめ設定された DNS をプレフィックスとして、リソースパス（例えば `/path/to/my/page`）をプログラム的に外部の絶対 URL（例えば `https://www.mycompany.com/path/to/my/page`）に変換できる OSGi サービスです。
+AEM の **Externalizer** は、あらかじめ設定された DNS を接頭辞として、リソースパス（例えば `/path/to/my/page`）をプログラム的に外部の絶対 URL（例えば `https://www.mycompany.com/path/to/my/page`）に変換できる OSGi サービスです。
 
 AEM as a Cloud Service インスタンスには自分の外部向け URL がわからず、また、場合によってはリンクをリクエストスコープの範囲外で作成する必要があるので、このサービスは、そのような外部 URL を設定して作成するための一元的な場所を提供します。
 
@@ -21,7 +21,7 @@ AEM as a Cloud Service インスタンスには自分の外部向け URL がわ�
 
 ## Externalizer のデフォルトの動作とオーバーライド方法 {#default-behavior}
 
-Externalizer サービスはすぐに使用でき、いくつかのドメイン識別子を、環境用に生成された AEM サービスの URL に一致する絶対 URL プレフィックス（`author https://author-p12345-e6789.adobeaemcloud.com` や `publish https://publish-p12345-e6789.adobeaemcloud.com` など）にマップします。これらの各デフォルトドメインのベース URL は、Cloud Manager で定義された環境変数から読み取られます。
+Externalizer サービスはすぐに使用でき、いくつかのドメイン識別子を、環境用に生成された AEM サービスの URL に一致する絶対 URL 接頭辞（`author https://author-p12345-e6789.adobeaemcloud.com` や `publish https://publish-p12345-e6789.adobeaemcloud.com` など）にマップします。これらの各デフォルトドメインのベース URL は、Cloud Manager で定義された環境変数から読み取られます。
 
 参考までに、`com.day.cq.commons.impl.ExternalizerImpl.cfg.json` のデフォルトの OSGi 設定は実質的に次のとおりです：
 
@@ -42,11 +42,15 @@ Externalizer サービスはすぐに使用でき、いくつかのドメイン�
 >
 >カスタム `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` ファイルを AEM as a Cloud Service にデプロイして、これらの標準提供のドメインマッピングを省略した場合、アプリケーションの予期しない動作が発生する可能性があります。
 
-`preview` および `publish` の値をオーバーライドするには、記事 [AEM as a Cloud Service 用の OSGi の設定](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties)の説明に従って Cloud Manager 環境変数を使用し、事前定義された `AEM_CDN_DOMAIN_PUBLISH` および `AEM_CDN_DOMAIN_PREVIEW` 変数を設定します。
+Cloud Managerで `EXTERNALIZER` の環境変数（`AEM_EXTERNALIZER_AUTHOR` など）を定義または上書きしないでください。 代わりに、`publish` または `preview` ドメイン値を上書きする必要がある場合は、`AEM_CDN_DOMAIN_PUBLISH` および `AEM_CDN_DOMAIN_PREVIEW` 環境変数を定義して使用します。 これらの変数は、起動時に Externalizer 設定の対応するフィールドに自動的に割り当てられます。
+
+<!-- Alexandru: hiding this. See CQDOC-23014 for more details
+
+To override the `preview` and `publish` values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_PUBLISH` and `AEM_CDN_DOMAIN_PREVIEW` variables. -->
 
 ## Externalizer サービスの設定 {#configuring-the-externalizer-service}
 
-Externalizer サービスでは、プログラムでリソースパスにプレフィックスを付けるために使用可能なドメインを一元的に定義できます。Externalizer サービスは、1 つのドメインを持つアプリケーションにのみ使用してください。
+Externalizer サービスでは、プログラムでリソースパスに接頭辞を付けるために使用可能なドメインを一元的に定義できます。Externalizer サービスは、1 つのドメインを持つアプリケーションにのみ使用してください。
 
 >[!NOTE]
 >
