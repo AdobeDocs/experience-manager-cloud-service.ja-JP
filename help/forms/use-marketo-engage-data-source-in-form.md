@@ -5,10 +5,10 @@ keywords: アダプティブFormsでのMarketo Engage データソースの使�
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 12%
+source-wordcount: '764'
+ht-degree: 14%
 
 ---
 
@@ -22,12 +22,6 @@ Marketo Engageを既存のAEM Formsと統合するためのクラウドサービ
 
 データ統合を設定すると、ユーザーは様々なデータソースやスキーマに接続できます。 Marketo Engage データソースと統合し、異なるフォームで使用すると、そのデータに対する操作が容易になります。 アダプティブフォームでサポートされる標準提供データソースを調べるには、[ データソースの設定 ](/help/forms/configure-data-sources.md) の記事を参照してください。
 
-## フォーム用のMarketo Engage データソースの設定に関する考慮事項
-
-フォーム用のMarketo Engage データソースを設定する際の考慮事項は次のとおりです。
-
-* Edge Delivery Services FormsをMarketo Engageに接続することはできません。
-
 ## フォームにMarketo Engage データソースを使用するための前提条件
 
 フォームでMarketo Engage データソースを使用するための前提条件は次のとおりです。
@@ -38,7 +32,7 @@ Marketo Engageを既存のAEM Formsと統合するためのクラウドサービ
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442871/marketo-aem-forms-aem-marketo-engage)
 
-<span> このビデオは、コアコンポーネントにのみ適用されます。 UE/基盤コンポーネントについては、の記事を参照してください。</span>
+<span>このビデオは、コアコンポーネントのみに適用されます。UE／基盤コンポーネントについて詳しくは、記事を参照してください。</span>
 
 >[!BEGINTABS]
 
