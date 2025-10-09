@@ -51,7 +51,7 @@ ht-degree: 89%
 
 薄い青色のアウトラインは、選択を示す濃い青色のアウトラインに変わり、カーソルが表示されます。変更を行ったら、Enter キーまたは Return キーを押すか、テキストボックスの外側を選択して、変更を保存します。
 
-テキストコンポーネントを選択すると、その詳細が [ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) に表示されます。 また、パネル内のテキストを編集することもできます。
+テキストコンポーネントを選択すると、その詳細が [&#x200B; プロパティパネル &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) に表示されます。 また、パネル内のテキストを編集することもできます。
 
 ![プロパティパネルでのテキストの編集](assets/ue-editing-text-component-rail.png)
 
@@ -95,7 +95,7 @@ ht-degree: 89%
 * 番号付きリスト
 * リンク
 
-RTE は、作成者のニーズに応じて、オプションを非表示にしたり、追加のオプションを表示したりするように設定できます。 詳しくは、ドキュメント [ ユニバーサルエディターの RTE の設定 ](/help/implementing/universal-editor/configure-rte.md) を参照してください。
+RTE は、作成者のニーズに応じて、オプションを非表示にしたり、追加のオプションを表示したりするように設定できます。 詳しくは、ドキュメント [&#x200B; ユニバーサルエディターの RTE の設定 &#x200B;](/help/implementing/universal-editor/configure-rte.md) を参照してください。
 
 ### メディアの編集 {#edit-media}
 
@@ -200,8 +200,8 @@ RTE は、作成者のニーズに応じて、オプションを非表示にし�
 
 「取り消し」または「やり直し」ボタンを選択して、エディター内の最後の編集を取り消しまたはやり直します。
 
-![ 取り消しアイコン ](assets/undo.png)
-![ やり直しアイコン ](assets/redo.png)
+![&#x200B; 取り消しアイコン &#x200B;](assets/undo.png)
+![&#x200B; やり直しアイコン &#x200B;](assets/redo.png)
 
 * 元に戻す/やり直しは、コンテキスト内で行われた編集、[ プロパティ ] パネルで行われた編集、およびブロックの追加、複製、移動、削除に対して実行できます。
 * 取り消しとやり直しは、現在のブラウザーセッションに限定されます。
@@ -212,13 +212,13 @@ RTE は、作成者のニーズに応じて、オプションを非表示にし�
 
 ### コピー&amp;ペースト {#copy-paste}
 
-[ コンテナ ](/help/implementing/universal-editor/field-types.md#container) 内のコンポーネントを同じブラウザータブにコピーして貼り付けることができます。 これは、ターゲットコンテナに [ フィルターが設定されていない ](/help/implementing/universal-editor/filtering.md) またはコンポーネントを貼り付けることができるフィルターがある）場合にのみ可能です。
+[&#x200B; コンテナ &#x200B;](/help/implementing/universal-editor/field-types.md#container) 内のコンポーネントを同じブラウザータブにコピーして貼り付けることができます。 これは、ターゲットコンテナに [&#x200B; フィルターが設定されていない &#x200B;](/help/implementing/universal-editor/filtering.md) またはコンポーネントを貼り付けることができるフィルターがある）場合にのみ可能です。
 
-![ コピーアイコン ](assets/copy.png)
-![ 貼り付けアイコン ](assets/paste.png)
+![&#x200B; コピーアイコン &#x200B;](assets/copy.png)
+![&#x200B; 貼り付けアイコン &#x200B;](assets/paste.png)
 
 1. エディター内またはコンテンツツリー内でコンポーネントを選択します。
-1. **プロパティ** パネルに「[ コピー」アイコンが表示されます。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) タップまたはクリックします。
+1. **プロパティ** パネルに「[&#x200B; コピー」アイコンが表示されます。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) タップまたはクリックします。
 1. プロパティパネルに **貼り付け** アイコンが表示されます。
 1. コピーしたコンポーネントを貼り付けるコンポーネント _後_ を選択します。
 1. 「貼り付け」をタップまたはクリックします。
