@@ -4,10 +4,10 @@ description: AEM Assets と Adobe Express とのネイティブ統合を使用�
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 200d0ae5546b5d50e8bad590f496b0fab62f0fe3
+source-git-commit: 76f23be65e71970742c40068c475da7d04c41a9c
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 91%
+source-wordcount: '777'
+ht-degree: 73%
 
 ---
 
@@ -33,14 +33,29 @@ Adobe Express エディターで AEM Assets の使用を開始するには、次
 
 3. 左側のナビゲーションパネルで「**[!UICONTROL アセット]**」をクリックします。Adobe Express には、アクセス権が付与されたリポジトリのリストとルートレベルで使用可能なアセットおよびフォルダーのリストが表示されます。
 
-4. リポジトリのアセットを参照または検索し、キャンバスにドラッグ＆ドロップします。ファイルタイプ、MIME タイプ、ディメンションなど、使用可能な様々なフィルターを使用してアセットをフィルタリングできます。
+4. リポジトリー内のアセットを参照または検索して、キャンバスにドラッグ&amp;ドロップします。 または、アセットをクリックしてキャンバスに配置します。 また、ファイルタイプ、MIME タイプ、サイズなど、様々な条件でアセットをフィルタリングすることもできます。
 
    >[!NOTE]
    >
    >ディメンションによるフィルターは、ビデオには適用されません。
 
-   ![Assets アドオンからアセットを含める](assets/adobe-express-native-integration.png)
+   ![Assets アドオンのアセットを含める](assets/adobe-express-native-integration.png)
 
+### AEM アップロードを使用して画像を置換 {#replace-image-using-aem-upload}
+
+さらに、**[!UICONTROL AEM アップロード]** を使用して、追加された画像を置き換えることができます。 これを行うには、次の手順を実行します。
+
+1. アセットを参照または検索して、キャンバスにドラッグ&amp;ドロップします。
+
+1. 置き換える画像を選択します。 「**[!UICONTROL 置換]**」をクリックして、他の様々なオプションの中から **[!UICONTROL 2}AEM Assets} を選択します。]**
+
+   ![AEMの置換 ](assets/aem-replace.png)
+
+1. **[!UICONTROL AEMのアップロード]** パネルが左側のナビゲーションパネルに開きます。 Adobe Expressには、アクセス権のあるリポジトリーのリストと、ルートレベルで使用可能なアセットおよびフォルダーのリストが表示されます。 ここからアセットを選択してキャンバスで置き換えをプレビューし、「**[!UICONTROL 置換]**」をクリックして確定します。
+
+   >[!NOTE]
+   >
+   > SVG ファイルタイプはサポートされていません。
 
 ## AEM Assets での Adobe Express プロジェクトの保存 {#save-express-projects-in-assets}
 
@@ -77,18 +92,15 @@ Express キャンバスに適切な変更を組み込んだ後、AEM Assets リ�
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
-        <td> 8,000 X 8,000 ピクセル、最大 40 MB</td>
+        <td> 65MP （例：8K x 8K または 16K x 4K） </td>
     </tr>
     <tr>
         <td>[!UICONTROL PNG]</td>
-        <td> 8,000 X 8,000 ピクセル、最大 40 MB</td>
+        <td> 65MP （例：8K x 8K または 16K x 4K） </td>
     </tr>
     <tr>
         <td>[!UICONTROL SVG]</td>
         <td> 最大 250 KB</td>
-    </tr>
-    <tr>
-    </tr>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
