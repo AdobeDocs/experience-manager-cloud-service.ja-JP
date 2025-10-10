@@ -20,7 +20,7 @@ ht-degree: 11%
 
 このユースケースでは、API 統合を使用してSalesforceでリードを作成する方法を説明します。 プロセスが完了すると、次の操作を実行できます。
 
-[Salesforceで接続アプリケーション ](https://help.salesforce.com/s/articleView?id=platform.ev_relay_create_connected_app.htm&type=5) を設定して、安全な API アクセスを有効にします。
+[Salesforceで接続アプリケーション &#x200B;](https://help.salesforce.com/s/articleView?id=platform.ev_relay_create_connected_app.htm&type=5) を設定して、安全な API アクセスを有効にします。
 
 Web ブラウザーで動作しているコード（JavaScriptなど）が特定のオリジンからSalesforceと通信できるように CORS （クロスオリジンリソース共有）を設定し、次に示すようにオリジンを許可リストに追加します
 
@@ -57,7 +57,7 @@ Web ブラウザーで動作しているコード（JavaScriptなど）が特定
 }
 ```
 
-![ 入出力 ](assets/create-lead-api-integration-input-output.png)
+![&#x200B; 入出力 &#x200B;](assets/create-lead-api-integration-input-output.png)
 
 ## フォームの作成
 
@@ -65,7 +65,7 @@ Web ブラウザーで動作しているコード（JavaScriptなど）が特定
 ![lead-object-form](assets/create-lead.png)
 
 ルールエディターを使用して、「リードを作成」チェックボックスのクリックイベントを処理します。 以下に示すように、入力パラメーターを適切なフォームオブジェクトの値にマッピングします。 `leadid` の TextField オブジェクトに、新しく作成したリードオブジェクトの ID を表示します
-![ ルールエディター ](assets/create-leade-rule-editor.png)
+![&#x200B; ルールエディター &#x200B;](assets/create-leade-rule-editor.png)
 
 ## 統合のテスト
 
