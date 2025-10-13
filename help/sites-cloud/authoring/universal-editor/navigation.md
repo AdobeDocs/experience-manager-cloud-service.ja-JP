@@ -8,7 +8,7 @@ exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
 source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
 source-wordcount: '1954'
-ht-degree: 86%
+ht-degree: 96%
 
 ---
 
@@ -91,7 +91,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 #### ヘルプセンター {#help}
 
-ヘルプセンターアイコンを使用すると、学習リソースやサポートリソースにすばやくアクセスできます。
+ヘルプセンターアイコンを使用すると、学習リソースやサポートリソースにクイックアクセスできます。
 
 ![ヘルプ](assets/help.png)
 
@@ -103,19 +103,19 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 #### アプリ {#solutions}
 
-アプリ切り替えボタンをタップまたはクリックすると、他のExperience Cloud ソリューションにすばやくジャンプできます。
+アプリスイッチャーをタップまたはクリックすると、他の Experience Cloud ソリューションにすばやくジャンプできます。
 
-![&#x200B; アプリスイッチャー &#x200B;](assets/solutions.png)
+![アプリスイッチャー](assets/solutions.png)
 
 #### アカウント {#user-properties}
 
-アカウント設定にアクセスするには、ユーザーを表すアイコンを選択します。 ユーザー画像が設定されていない場合、アイコンがランダムに割り当てられます。
+ユーザーアカウント設定にアクセスするには、ユーザーを表すアイコンを選択します。ユーザー画像が設定されていない場合、アイコンがランダムに割り当てられます。
 
 ![ユーザープロパティ](assets/user-properties.png)
 
-アカウントアイコンをタップまたはクリックすると、ユーザー設定を含むメニューが開きます。 これらの設定はCloud Manager全般に当てはまり、その機能について詳しくは [&#x200B; そのドキュメントを参照してください &#x200B;](/help/implementing/cloud-manager/navigation.md)。
+アカウントアイコンをタップまたはクリックすると、ユーザー設定を含むメニューが開きます。 これらの設定はCloud Manager全般に当てはまり、その機能について詳しくは [ そのドキュメントを参照してください ](/help/implementing/cloud-manager/navigation.md)。
 
-![&#x200B; 環境スイッチャー &#x200B;](assets/environment-switcher.png)
+![ 環境スイッチャー ](assets/environment-switcher.png)
 
 ユニバーサルエディターの場合、見出し **製品設定** の下に、ユニバーサルエディターの現在の実稼動バージョンと今後のプレビューバージョンを切り替えるオプションがあります。
 
@@ -141,7 +141,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 >
 >ユニバーサルエディターで編集するページは、[ユニバーサルエディターをサポートするのに実装する](/help/implementing/universal-editor/getting-started.md)必要があります。
 
-「**クイックリンク**」セクションにはヘルプリソースが表示され、「**最近**」セクションにはユニバーサルエディターで最近開いたページへのリンクが表示されます。
+「**クイックリンク**」セクションにはヘルプリソースが表示され、「**最近使用したもの**」セクションにはユニバーサルエディターで最近開いたページへのリンクが表示されます。
 
 #### ロケーションバー {#location-bar}
 
@@ -159,30 +159,30 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 #### 取り消しとやり直し {#undo-redo}
 
-「取り消し」または「やり直し」ボタンを選択して、エディター内の最後の編集を取り消しまたはやり直します。 詳しくは、ドキュメント [&#x200B; ユニバーサルエディターを使用したコンテンツのオーサリング &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) を参照してください。
+エディターで最後に行った編集を取り消すまたはやり直すには、「取り消し」ボタンまたは「やり直し」ボタンを選択します。詳しくは、[ユニバーサルエディターを使用したコンテンツのオーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo)ドキュメントを参照してください。
 
-![&#x200B; 取り消しアイコン &#x200B;](assets/undo.png)
-![&#x200B; やり直しアイコン &#x200B;](assets/redo.png)
+![取り消しアイコン](assets/undo.png)
+![やり直しアイコン](assets/redo.png)
 
 >[!TIP]
 >
->取り消しまたはやり直すには、それぞれホットキー `Command-Z` または `Shift-Command-Z` を使用します。
+>取り消すには `Command-Z`、やり直すには `Shift-Command-Z` のホットキーを使用します。
 
 #### 認証ヘッダー {#authentication-settings}
 
-[&#x200B; 認証目的でカスタム認証ヘッダーを設定する &#x200B;](/help/implementing/universal-editor/developer-overview.md#auth-header) 必要がある場合は、「ローカル開発ヘッダー」アイコンを選択します。
+[ローカル開発目的でカスタム認証ヘッダーを設定](/help/implementing/universal-editor/developer-overview.md#auth-header)する必要がある場合は、認証ヘッダーアイコンを選択します。
 
 ![認証ヘッダー設定ボタン](assets/authentication-header-settings.png)
 
 #### レスポンシブモード {#emulator}
 
-レスポンシブモードアイコンを選択して、ユニバーサルエディターがページをレンダリングする方法を定義します。
+レスポンシブモードアイコンを選択して、ユニバーサルエディターによるページのレンダリング方法を定義します。
 
-![&#x200B; レスポンシブモードアイコン &#x200B;](assets/emulator.png)
+![レスポンシブモードアイコン](assets/emulator.png)
 
 レスポンシブモードアイコンをタップまたはクリックすると、オプションが表示されます。
 
-![&#x200B; レスポンシブモードオプション &#x200B;](assets/emulation-options.png)
+![レスポンシブモードオプション](assets/emulation-options.png)
 
 デフォルトでは、エディターはデスクトップレイアウトで開き、高さと幅はブラウザーで自動的に定義されます。
 
@@ -345,18 +345,18 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 >
 >ホットキー `Shift+Backspace` を使用して、選択したコンポーネントをコンテナから削除します。
 
-##### コピー&amp;ペースト {#copy-paste}
+##### コピー＆ぺースト {#copy-paste}
 
-[containers.](/help/implementing/universal-editor/field-types.md#container) 内のコンポーネントをコピーして貼り付けることができます
+[コンテナ](/help/implementing/universal-editor/field-types.md#container)内にあるコンポーネントをコピー＆ペーストできます。
 
-![&#x200B; コピーアイコン &#x200B;](assets/copy.png)
-![&#x200B; 貼り付けアイコン &#x200B;](assets/paste.png)
+![コピーアイコン](assets/copy.png)
+![ペーストアイコン](assets/paste.png)
 
 >[!TIP]
 >
->ホットキー `Command-C` または `Command-V` を使用して、それぞれコピーまたは貼り付けます。
+>コピーするには `Command-C`、ペーストするには `Command-V` のホットキーを使用します。
 
-詳しくは、ドキュメント [&#x200B; ユニバーサルエディターを使用したコンテンツのオーサリング &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) を参照してください。
+詳しくは、[ユニバーサルエディターを使用したコンテンツのオーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)ドキュメントを参照してください。
 
 #### その他のボタン {#additional-properties-panel-buttons}
 

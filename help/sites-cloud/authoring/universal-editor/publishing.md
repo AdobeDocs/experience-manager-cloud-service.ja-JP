@@ -8,7 +8,7 @@ role: User
 source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 96%
 
 1. ユニバーサルエディターで、[ユニバーサルエディターのツールバーにある「**公開**」アイコン](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)をタップまたはクリックします。
 1. [プレビューサービス](/help/sites-cloud/authoring/sites-console/previewing-content.md)が使用可能な場合は、コンテンツを公開する場所として「**[プレビュー](/help/sites-cloud/authoring/sites-console/previewing-content.md)**」（使用可能な場合）または「**公開**」を選択できます。
-1. **Items** セクションには、パブリケーションに含まれるコンテンツが一覧表示されます。 **表示** をタップまたはクリックすると、次の項目の詳細が表示されます。
+1. 「**項目**」セクションには、公開に含まれるコンテンツが一覧表示されます。「**表示**」をタップまたはクリックすると、次を含む詳細が表示されます。
    * **新規**：まだ公開されていない項目。
    * **変更済み**：公開されたが、前回の公開以降に変更されたコンテンツ。
    * **公開済み**：公開済みで、その公開以降に変更されていないコンテンツ。

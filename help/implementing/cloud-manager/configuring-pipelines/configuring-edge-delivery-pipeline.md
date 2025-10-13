@@ -11,7 +11,7 @@ exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
 source-git-commit: 9ad50747b46b75c33cb5b034e8b8e41d5079e967
 workflow-type: tm+mt
 source-wordcount: '613'
-ht-degree: 64%
+ht-degree: 71%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 64%
 
 Edge Delivery パイプラインを設定し、コードをビルドして本番環境にデプロイする方法について説明します。Edge Delivery パイプラインを使用すると、ログ転送やAdobeの管理による CDN などの機能を設定できます。
 
-サポートされる設定のリストについては、[&#x200B; 設定パイプラインの使用 – サポートされる設定 &#x200B;](/help/operations/config-pipeline.md#configurations) を参照してください。
+サポートされる設定のリストについては、[ 設定パイプラインの使用 – サポートされる設定 ](/help/operations/config-pipeline.md#configurations) を参照してください。
 
 本番パイプラインを設定するには、ユーザーに&#x200B;**[デプロイメントマネージャー](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**&#x200B;の役割が必要です。
 
@@ -29,9 +29,9 @@ Edge Delivery パイプラインを設定し、コードをビルドして本番
 >
 >以下の条件が満たされるまで、Edge Delivery パイプラインは設定できません。
 >
->* 1 つの Edge Delivery Services サイトと 1 つのマッピングされたドメインを含むプログラムが作成されます。それ以外の場合は、「**Edge Delivery パイプラインを追加** というオプションがユーザーインターフェイスで無効になっているように見え、不足している要件に関するツールチップが表示されます。 [Cloud ManagerでのEdge Delivery サイトの作成 &#x200B;](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md) を参照してください。
->* Git リポジトリーには少なくとも 1 つのブランチがあります。 [Cloud Managerでのリポジトリの管理 &#x200B;](/help/implementing/cloud-manager/managing-code/managing-repositories.md) を参照してください。
->* 実稼動環境とステージング環境が作成されます。 [CI/CD パイプラインの概要 &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) を参照してください。
+>* 1 つの Edge Delivery Services サイトと 1 つのマッピングされたドメインを含むプログラムが作成されます。それ以外の場合は、「**Edge Delivery パイプラインを追加** というオプションがユーザーインターフェイスで無効になっているように見え、不足している要件に関するツールチップが表示されます。 [Cloud Manager での Edge Delivery サイトの作成](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)を参照してください。
+>* Git リポジトリには 1 つ以上の分岐があります。[Cloud Manager でのリポジトリの管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)を参照してください。
+>* 実稼動環境とステージング環境が作成されます。[CI/CD パイプラインの概要](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)を参照してください。
 
 <!-- CMGR‑69680 -->
 
@@ -45,7 +45,7 @@ Edge Delivery パイプラインを設定し、コードをビルドして本番
 
 1. [experience.adobe.com](https://experience.adobe.com) でCloud Managerにログインします。
 1. 「**クイックアクセス**」セクションで、「**Experience Manager**」をクリックします。
-1. 左側のパネルで、「**Cloud Manager**」をクリックします。
+1. 左側のサイドパネルで、「**Cloud Manager**」をクリックします。
 1. 必要な組織を選択します。
 1. **マイプログラム** コンソールで、プログラムをクリックします。
 
@@ -98,14 +98,14 @@ Edge Delivery パイプラインを設定し、コードをビルドして本番
 
      また、Cloud Manager でリポジトリを追加および管理する方法について詳しくは、[リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)も参照してください。
 
-   * **Git 分岐** - ドロップダウンリストを使用して、選択したリポジトリ内の特定の分岐を選択します。必要に応じて、![&#x200B; アイコンまたは更新アイコンをリサイクル &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) をクリックして、最近のプッシュ後に Git ブランチのドロップダウンリストをリロードします。
+   * **Git 分岐** - ドロップダウンリストを使用して、選択したリポジトリ内の特定の分岐を選択します。必要に応じて、![ アイコンまたは更新アイコンをリサイクル ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) をクリックして、最近のプッシュ後に Git ブランチのドロップダウンリストをリロードします。
    * **コードの場所** - パイプライン対応コードが開始されるリポジトリ内のフォルダーパスを定義します（`/` はリポジトリのルートと同じです）。
 
    ![設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-sourcecode.png)
 
 1. 「**保存**」をクリックします。
 
-[&#x200B; プログラムの概要 &#x200B;](managing-pipelines.md) ページの **パイプライン** カードから、または **パイプライン** ページから **パイプライン** 管理できるようになりました。
+[ プログラムの概要 ](managing-pipelines.md) ページの **パイプライン** カードから、または **パイプライン** ページから **パイプライン** 管理できるようになりました。
 
 
 ![パイプライン名、ステータス、リポジトリー、ブランチを表示する「Edge Delivery パイプライン」ウィジェット](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)

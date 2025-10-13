@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 66916e3864811cc7b7d030787a413ceb5ce4d8b3
 workflow-type: tm+mt
 source-wordcount: '2428'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -197,7 +197,7 @@ AEM のクライアントライブラリフォルダーでは、他にもいく�
 
 * **名前：** dependencies
 * **タイプ：** String[]
-* **Values:** 現在のライブラリフォルダーが依存する cq:ClientLibraryFolder ノードの categories プロパティの値。
+* **値：**&#x200B;現在のライブラリフォルダーの依存先である cq:ClientLibraryFolder ノードの categories プロパティの値。
 
 例えば、`/etc/clientlibs/myclientlibs/publicmain` は `cq.jquery` ライブラリに依存しています。メインのクライアントライブラリを参照するページは、次のコードを含む HTML を生成します。
 
@@ -300,7 +300,7 @@ AEM では、プラグ可能なプリプロセッサーを使用でき、AEM の
 
 * クライアントライブラリノードで、複数値プロパティ `cssProcessor` および `jsProcessor` を追加します。
 
-**HTML Library Manager** OSGi 設定を使用したシステムデフォルト設定の定義はサポートされていません。 これはローカルのSDKにのみ適用され、フルスタックのパイプライン実行には適用されません。
+**HTML ライブラリマネージャー**&#x200B;の OSGi 設定を通じてシステムのデフォルト設定を定義することはサポートされていません。これはローカル SDK にのみ適用され、フルスタックパイプライン実行には適用されません。
 
 #### 形式と例 {#format-and-examples}
 
@@ -344,4 +344,4 @@ GCC オプションについて詳しくは、[GCC ドキュメント](https://d
 
 #### システムのデフォルト縮小ツールの設定 {#set-system-default-minifier}
 
-AEM as a Cloud Serviceでは、システムのデフォルト修飾子の設定はサポートされていません。
+システムのデフォルト縮小ツールの設定は、AEM as a Cloud Service ではサポートされていません。

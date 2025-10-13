@@ -7,7 +7,7 @@ exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 source-git-commit: aa3556ec4460ae9b0ffb85bb761a79e8f99a0ec4
 workflow-type: tm+mt
 source-wordcount: '2444'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -125,7 +125,7 @@ Cloud Manager での外部リポジトリの設定は、次の手順で構成さ
 | 「アクセストークン」オプション | 説明 |
 | --- | --- |
 | **既存のアクセストークンを使用** | 組織にリポジトリアクセストークンを既に指定し、複数のリポジトリにアクセスできる場合は、既存のトークンを選択できます。**トークン名**&#x200B;ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。それ以外の場合は、新しいアクセストークンを追加します。 |
-| **新しいアクセストークンを追加** | <ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Azure DevOps ドキュメント](https://learn.microsoft.com/ja-jp/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)を使用して、リポジトリアクセストークンを作成します。<li>Azure DevOps 個人アクセストークン（PAT）に必須の権限。<br>これらの権限により、Cloud Manager でリポジトリコンテンツへのアクセス、プルリクエストの管理、webhook イベントを構成または反応できるようになります。<br>Azure DevOps でアプリパスワードを作成する場合は、次の必須のアプリパスワード権限が含まれていることを確認します。<ul><li>コード （読み取り）</li><li>コード （ステータス）</li><li>プルリクエストThreads（読み取りおよび書き込み）</li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
+| **新しいアクセストークンを追加** | <ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Azure DevOps ドキュメント](https://learn.microsoft.com/ja-jp/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)を使用して、リポジトリアクセストークンを作成します。<li>Azure DevOps 個人アクセストークン（PAT）に必須の権限。<br>これらの権限により、Cloud Manager でリポジトリコンテンツへのアクセス、プルリクエストの管理、webhook イベントを構成または反応できるようになります。<br>Azure DevOps でアプリパスワードを作成する場合は、次の必須のアプリパスワード権限が含まれていることを確認します。<ul><li>コード（読み取り）</li><li>コード（ステータス）</li><li>プルリクエストスレッド（読み取りおよび書き込み）</li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
 
 検証後、外部リポジトリを使用してパイプラインにリンクする準備が整います。
 
@@ -242,7 +242,7 @@ URL をプレーンテキストファイルにペーストします。コピー�
 
 | 必須の Webhook イベントと認証 |
 | --- |
-| これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プッシュされたコード</li><li>プル要求がでコメントされました</li><li>プル要求が作成されました</li><li>プル要求が更新されました</li></ul>認証の設定：<br>1。「**基本認証ユーザー名**」フィールドに「`cloudmanager`」と入力します。<br>2. 「**基本認証パスワード**」フィールドに、Cloud Manager ユーザーインターフェイスから生成された Webhook シークレットを入力します。 |
+| これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プッシュ済みコード</li><li>コメント済みプルリクエスト</li><li>作成済みプルリクエスト</li><li>更新済みプルリクエスト</li></ul>認証の設定：<br>1。「**基本認証ユーザー名**」フィールドに「`cloudmanager`」と入力します。<br>2. 「**基本認証パスワード**」フィールドに、Cloud Manager ユーザーインターフェイスから生成された Webhook シークレットを入力します。 |
 
 >[!ENDTABS]
 
@@ -302,23 +302,23 @@ PR 検証の進行状況のトラッキングにコミットステータスを�
 
 >[!TAB Azure DevOps]
 
-Azure DevOps は、ステータスチェックを通じてプルリクエストの検証を追跡します。 Cloud Managerがプルリクエストの検証を実行すると、Azure DevOps プルリクエストインターフェイスに表示されるステータスチェックが追加されます。
+Azure DevOps は、ステータスチェックを通じてプルリクエストの検証を追跡します。Cloud Manager がプルリクエストの検証を実行すると、Azure DevOps プルリクエストインターフェイスに表示されるステータスチェックが追加されます。
 
-コード品質の検証中、ステータスチェックにプロセスが進行中であることが示されます。
+コード品質の検証中、ステータスチェックにより、プロセスが処理中であることが示されます。
 
-![Webhook-1 を使用したプルリクエストの Azure DevOps 検証 ](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)
+![Azure DevOps による webhook を使用したプルリクエストの検証 - 1](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)
 
 コード品質の検証が完了すると、ステータスチェックが更新され、結果が反映されます。
 
-![Webhook-2 を使用したプルリクエストの Azure DevOps 検証 ](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)
+![Azure DevOps による webhook を使用したプルリクエストの検証 - 2](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)
 
-検証が失敗した場合、詳細なエラー情報はステータスチェックの詳細に表示されます。 ステータスチェックをクリックすると、Cloud Managerで完全な検証の結果を表示できます。
+検証が失敗した場合、ステータスチェックの詳細に詳細なエラー情報が表示されます。ステータスチェックをクリックすると、Cloud Manager で完全な検証結果を表示できます。
 
-![Webhook-3 を使用したプルリクエストの Azure DevOps 検証 ](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)
+![Azure DevOps による webhook を使用したプルリクエストの検証 - 3](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)
 
-プルリクエストのコメントとフィードバックについては、Cloud Managerが Azure DevOps のプルリクエストに直接コメントを追加し、検証の詳細と必要なアクションを追加します。
+プルリクエストのコメントとフィードバックについては、Cloud Manager は検証の詳細と必要なアクションを含むコメントを Azure DevOps のプルリクエストに直接追加します。
 
-![Webhook-4 を使用したプルリクエストの Azure DevOps 検証 ](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)
+![Azure DevOps による webhook を使用したプルリクエストの検証 - 4](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)
 
 
 >[!ENDTABS]

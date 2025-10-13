@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 100a8cd1a27cd8f0677ed001def0b1e0e7b20ed3
 workflow-type: tm+mt
 source-wordcount: '1134'
-ht-degree: 85%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 85%
 * 訪問しているサイトのホスト名（例：`experienceleague.adobe.com`）
 * `desktop:windows` や `mobile:ios` など、ページの表示に使用される幅広いユーザーエージェントタイプとオペレーティングシステム
 * `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)` など、データ収集の時間
-* 訪問しているページの URL（例：`https://experienceleague.adobe.com/docs?lang=ja`）
+* 訪問しているページの URL（例：`https://experienceleague.adobe.com/docs`）
 * リファラー URL（ユーザーがリンクをたどった場合、現在のページにリンクしているページの URL）
 * `2Ac6` のような形式で、ランダムに生成されたページビューの ID
 * `100` など、サンプリングレートの重み付けまたはその逆つまり、100 ページビューのうち 1 つしか記録されません。
@@ -107,11 +107,11 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 1. **コンテンツセキュリティポリシーを Nonce で使用できますか？**
 
-   運用上のテレメトリのサポートには、コンテンツセキュリティポリシーを nonce でサポートする実験的機能が含まれています。 この機能を有効にするには、[ という名前の ](/help/implementing/cloud-manager/environment-variables.md#add-variables)Cloud Managerの環境変数を `AEM_OPTEL_NONCE` 値 `true` に設定します。 後で再度無効にする場合は、その環境変数を再度削除します。
+   運用テレメトリのサポートには、nonce を使用したコンテンツセキュリティポリシーをサポートする実験的な機能が含まれています。この機能を有効にするには、値 `true` に `AEM_OPTEL_NONCE` という[環境変数を Cloud Manager で設定](/help/implementing/cloud-manager/environment-variables.md#add-variables)します。後で再度無効にする場合は、その環境変数を再度削除するだけです。
 
-   この機能で問題が発生した場合は、Adobe サポートにお問い合わせください。
+   この機能で問題が発生した場合は、アドビサポートにお問い合わせください。
 
-1. **特定のページに対してのみ運用上のテレメトリを有効にするにはどうすればよいですか？**
+1. **特定のページに対してのみ運用テレメトリを有効にするにはどうすればよいですか？**
 
-   デフォルトでは、運用上のテレメトリは、リポジトリの `/content` フォルダーの下にあるすべてのページに対して有効になっています。 [ という名前の ](/help/implementing/cloud-manager/environment-variables.md#add-variables)Cloud Managerの環境変数を設定 `AEM_OPTEL_INCLUDED_PATHS` して、リポジトリ内のコンマ区切りのパスのリストを追加すると、オペレーショナルテレメトリはそれらのページに対してのみ有効になります。 さらに、除外するリポジトリ内のパスのリストに `AEM_OPTEL_EXCLUDED_PATHS` を設定できます。 これらの 2 つの設定の組み合わせにより、運用上のテレメトリを含めるかどうかを、要件に合わせて調整できます。
+   デフォルトでは、リポジトリの `/content` フォルダーの下にあるすべてのページに対して運用テレメトリが有効になっています。リポジトリのコンマ区切りのパスのリストに `AEM_OPTEL_INCLUDED_PATHS` という[環境変数を Cloud Manager で設定](/help/implementing/cloud-manager/environment-variables.md#add-variables)すると、運用テレメトリはこれらのページに対してのみ有効になります。さらに、除外するリポジトリのパスのリストに `AEM_OPTEL_EXCLUDED_PATHS` を設定できます。これらの 2 つの設定の組み合わせにより、運用テレメトリを含めるかどうかを、要件に合わせて調整できます。
 

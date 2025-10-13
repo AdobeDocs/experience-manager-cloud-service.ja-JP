@@ -8,7 +8,7 @@ exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
 source-git-commit: 7968668766ae4c8a966bbde93aa2f2ac0c401659
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 85%
+ht-degree: 91%
 
 ---
 
@@ -28,16 +28,16 @@ ht-degree: 85%
 >
 >![使用中のソースコードバージョン](/help/operations/assets/environments-view-details-sourcecodeversion.png)
 
-**デプロイされた以前のコードを復元** は、次の条件を満たした場合にのみ使用できます。
+**デプロイした以前のコードを復元**&#x200B;は、次の条件が満たされた場合にのみ使用可能になります。
 
-* 正常なパイプライン実行ごとに許可される復元は 1 つだけです。再び復元するには、別の正常なパイプライン実行を完了します。
+* 成功したパイプライン実行ごとに 1 回の復元のみが許可される。再度復元するには、別の正常なパイプライン実行を完了します。
 * **環境の復元の作成**&#x200B;権限を保持している。権限の管理について詳しくは、[カスタム権限](/help/implementing/cloud-manager/custom-permissions.md)を参照してください。
 * 組織が Beta プログラムに登録され、機能フラグがオンになっている。
 * プログラムが AEM as a Cloud Service で実行されている。
 * この環境の最後のパイプラインが正常に完了し、実行から **30 日未満**&#x200B;である。
 * 環境のステータスが&#x200B;*実行中*&#x200B;で、進行中のパイプラインがない。
 
-**デプロイされた以前のコードを復元** は、環境、`Production` 環境、`Development` ードに加えて、`Stage` `Specialized Testing Environment` 環境で機能します。 確認後、Cloud Managerは復元を開始し、開始時と正常終了時にプッシュ通知を送信します。
+**デプロイされた以前のコードを復元** は、環境、`Production` 環境、`Development` ードに加えて、`Stage``Specialized Testing Environment` 環境で機能します。 確認後、Cloud Managerは復元を開始し、開始時と正常終了時にプッシュ通知を送信します。
 
 >[!IMPORTANT]
 >

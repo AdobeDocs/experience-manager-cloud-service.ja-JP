@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 992f9377133dd7ca3bd7b169c0a29e76baadde7e
 workflow-type: tm+mt
 source-wordcount: '1630'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -470,9 +470,9 @@ data:
 
 AEM パブリッシュから AEM Edge Delivery Service にトラフィックをルーティングするために、オリジンセレクターの使用が必要になることがあります。
 
-* 一部のコンテンツはAEM Publish が管理するドメインによって配信され、同じドメインの他のコンテンツはEdge Delivery Servicesによって配信されます。
-* Edge Delivery Servicesで配信されるコンテンツでは、トラフィックフィルタールールやリクエスト/応答の変換など、設定パイプラインを通じてデプロイされるルールのメリットが得られます。
-* Edge Delivery設定パイプラインを使用すると、`trafficFilters`、`originSelectors`、`redirects` などのルールを定義して、Adobeが管理する CDN 設定を指定できます。<!-- https://wiki.corp.adobe.com/pages/editpage.action?pageId=3610084282 -->
+* 一部のコンテンツは AEM パブリッシュで管理するドメインによって配信され、同じドメインの他のコンテンツは Edge Delivery Service によって配信されます。
+* Edge Delivery Service で配信されるコンテンツでは、トラフィックフィルタールールやリクエスト／応答の変換など、設定パイプラインを通じてデプロイされるルールのメリットを得ることができます。
+* Edge Delivery 設定パイプラインを使用すると、`trafficFilters`、`originSelectors`、`redirects` などのルールを定義して、アドビが管理する CDN 設定を指定できます。<!-- https://wiki.corp.adobe.com/pages/editpage.action?pageId=3610084282 -->
 
 これを実現できるオリジンセレクタールールの例を以下に示します。
 
@@ -503,7 +503,7 @@ data:
 
 >[!NOTE]
 >
->Adobeの管理による CDN が使用されるので、Edge Delivery Services **プッシュ無効化の設定に関するドキュメント** に従って、必ず [ 管理 ](https://www.aem.live/docs/byo-dns#setup-push-invalidation) モードでプッシュ無効化を設定してください。
+>アドビが管理する CDN が使用されているので、Edge Delivery Service の[プッシュ無効化の設定ドキュメント](https://www.aem.live/docs/byo-dns#setup-push-invalidation)に従って、**管理対象**&#x200B;モードでプッシュ無効化を設定する必要があります。
 
 
 ## サーバーサイドのリダイレクト {#server-side-redirectors}

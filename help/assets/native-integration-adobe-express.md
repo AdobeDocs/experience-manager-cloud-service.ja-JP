@@ -7,7 +7,7 @@ role: User
 source-git-commit: 76f23be65e71970742c40068c475da7d04c41a9c
 workflow-type: tm+mt
 source-wordcount: '777'
-ht-degree: 73%
+ht-degree: 78%
 
 ---
 
@@ -47,9 +47,9 @@ Adobe Express エディターで AEM Assets の使用を開始するには、次
 
 1. アセットを参照または検索して、キャンバスにドラッグ&amp;ドロップします。
 
-1. 置き換える画像を選択します。 「**[!UICONTROL 置換]**」をクリックして、他の様々なオプションの中から **[!UICONTROL 2&rbrace;AEM Assets&rbrace; を選択します。]**
+1. 置き換える画像を選択します。 「**[!UICONTROL 置換]**」をクリックして、他の様々なオプションの中から **[!UICONTROL 2}AEM Assets} を選択します。]**
 
-   ![AEMの置換 &#x200B;](assets/aem-replace.png)
+   ![AEMの置換 ](assets/aem-replace.png)
 
 1. **[!UICONTROL AEMのアップロード]** パネルが左側のナビゲーションパネルに開きます。 Adobe Expressには、アクセス権のあるリポジトリーのリストと、ルートレベルで使用可能なアセットおよびフォルダーのリストが表示されます。 ここからアセットを選択してキャンバスで置き換えをプレビューし、「**[!UICONTROL 置換]**」をクリックして確定します。
 
@@ -65,7 +65,7 @@ Express キャンバスに適切な変更を組み込んだ後、AEM Assets リ�
 
    ![AEM でのアセットの保存](assets/adobe-express-share.png)
 
-2. 右側のパネルの **[!UICONTROL 推奨]** セクションで、「**AEM Assets**」を選択します。 Adobe Express にアップロードダイアログが表示されます。
+2. 右側のパネルの「**[!UICONTROL 推奨]**」セクションから、「**AEM Assets**」を選択します。Adobe Express にアップロードダイアログが表示されます。
 
    ![AEM でのアセットの保存](assets/adobe-express-aem.png)
 
@@ -113,14 +113,14 @@ Express キャンバスに適切な変更を組み込んだ後、AEM Assets リ�
 
 1. 読み込みと書き出しの場合、サポートされるビデオファイルのタイプは MP4 です。
 
-2. **MP4 ビデオの読み込み** の場合、背景が透明なビデオ（アルファチャンネル）はサポートされません。
+2. **MP4 ビデオの読み込み**&#x200B;の場合、背景が透明なビデオ（アルファチャンネル）はサポートされません。
    <!--
    1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
    2. The maximum supported resolution is 3840 X 3840 pixels.
    3. Videos with transparent backgrounds (alpha channel) are not supported.
    -->
 
-3. **MP4 ビデオの書き出し** の場合、サポートされる最大ファイルサイズは 200 MB です。 この制限を超えると、ビデオを 200 MB 以下にトリミングするか、ダウンロード後に AEM Assets の宛先フォルダーに手動でアップロードすることを提案するアラートが表示されます。
+3. **MP4 ビデオの書き出し**&#x200B;の場合、サポートされる最大ファイルサイズは 200 MB です。 この制限を超えると、ビデオを 200 MB 以下にトリミングするか、ダウンロード後に AEM Assets の宛先フォルダーに手動でアップロードすることを提案するアラートが表示されます。
 
 
 
