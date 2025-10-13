@@ -113,9 +113,9 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ![ユーザープロパティ](assets/user-properties.png)
 
-アカウントアイコンをタップまたはクリックすると、ユーザー設定を含むメニューが開きます。 これらの設定はCloud Manager全般に当てはまり、その機能について詳しくは [ そのドキュメントを参照してください ](/help/implementing/cloud-manager/navigation.md)。
+アカウントアイコンをタップまたはクリックすると、ユーザー設定を含むメニューが開きます。 これらの設定はCloud Manager全般に当てはまり、その機能について詳しくは [&#x200B; そのドキュメントを参照してください &#x200B;](/help/implementing/cloud-manager/navigation.md)。
 
-![ 環境スイッチャー ](assets/environment-switcher.png)
+![&#x200B; 環境スイッチャー &#x200B;](assets/environment-switcher.png)
 
 ユニバーサルエディターの場合、見出し **製品設定** の下に、ユニバーサルエディターの現在の実稼動バージョンと今後のプレビューバージョンを切り替えるオプションがあります。
 
