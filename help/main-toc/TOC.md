@@ -1211,7 +1211,7 @@ ht-degree: 96%
       + オーサリング{#authoring}
          + [オーサリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=ja)
          + [マークダウンエディター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=ja)
-      + [&#x200B; フラグメントのプレビュー &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
+      + [&#x200B; フラグメントのプレビュー &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=ja)
       + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=ja)
       + [JSON プレビュー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=ja)
    + コンテンツフラグメントセレクター {#content-fragment-selector}
