@@ -4,8 +4,8 @@ description: パブリッシュ層で AEM as a Cloud Service の Open ID Connect
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
-workflow-type: ht
+source-git-commit: eb03c8941f848ff10c38a4880c8fe85387cc441f
+workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 100%
 
@@ -83,7 +83,7 @@ Idp 設定からの情報：
 
 次に、OIDC 認証ハンドラーを設定します。 複数の OIDC 接続を設定できます。 それぞれに異なる名前を付ける必要があります。 同じ [OAK 外部 ID プロバイダー](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html)を共有する場合は、ユーザーを共有できます。
 
-1. 設定ファイルを作成します。 この例では、`org.apache.sling.auth.oauth_client.impl.OidcConnectionImpl~azure.cfg.json` を使用します。 `azure` サフィックスは、一意の ID にする必要があります。 以下の設定ファイルの例を参照してください。
+1. 設定ファイルを作成します。 この例では、`org.apache.sling.auth.oauth_client.impl.OidcAuthenticationHandler~azure.cfg.json` を使用します。 `azure` サフィックスは、一意の ID にする必要があります。 以下の設定ファイルの例を参照してください。
 
    ```
    {
