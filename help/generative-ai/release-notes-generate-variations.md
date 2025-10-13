@@ -5,7 +5,7 @@ exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information, AI Tools
 role: Admin
 source-git-commit: 33eab4e431284f3bb772f9e70a1fdb9e56c4c4aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '284'
 ht-degree: 100%
 

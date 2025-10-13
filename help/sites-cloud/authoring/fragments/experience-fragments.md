@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
 source-git-commit: 5578cfd1bbe91d904d3f36b67acf610f9196cb7d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2142'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -448,13 +448,13 @@ URL の `.plain.` セレクターを使用すると、ブラウザーからプ�
 
 >[!CAUTION]
 >
->デフォルトでは、エクスペリエンスフラグメントのルートフォルダー（`/content/experience-fragments` のすぐ下）を公開します。
+>デフォルトでは、エクスペリエンスフラグメントのルートフォルダー（`/content/experience-fragments` の直下）を公開すると、次のようになります。
 >
 >* コンテナフォルダー自体のみを公開します
->* 子を公開しない
->* 公開済みの子をすべて非公開にします
+>* 子は公開しません
+>* 既に公開済みの子は非公開にされます
 >
->フォルダー内のすべてのエクスペリエンスフラグメントを公開する場合は、それぞれを個別に公開する必要があります。
+>フォルダー内のすべてのエクスペリエンスフラグメントを公開するには、それぞれを個別に公開する必要があります。
 
 ## エクスペリエンスフラグメントの書き出し {#exporting-experience-fragments}
 

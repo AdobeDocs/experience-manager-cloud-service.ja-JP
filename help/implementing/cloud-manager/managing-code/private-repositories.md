@@ -5,9 +5,9 @@ exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1000'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -19,10 +19,10 @@ ht-degree: 93%
 >
 >また、web フックを使用して次のリポジトリタイプを追加することもできます。
 >
->* GitHub Enterprise Server （GitHub の自己ホスト型バージョン）リポジトリ。
->* GitLab （GitLab の `gitlab.com` バージョンとセルフホストバージョンの両方）リポジトリ。
->* Bitbucket （`bitbucket.org` と Bitbucket Server の両方、BitBucket の自己ホスト型バージョン）リポジトリ。
->* Azure DevOps （[dev.azure.com](http://dev.azure.com) および自己ホスト型バージョンの Azure DevOps）リポジトリ。
+>* GitHub Enterprise Server（GitHub の自己ホスト型バージョン）リポジトリ。
+>* GitLab（GitLab の `gitlab.com` バージョンと自己ホスト型バージョンの両方）リポジトリ。
+>* Bitbucket（`bitbucket.org` と Bitbucket Server の両方および自己ホスト型バージョンの Bitbucket）リポジトリ。
+>* Azure DevOps（[dev.azure.com](http://dev.azure.com) と Azure DevOps の自己ホスト型バージョン）リポジトリ。
 >
 >詳しくは、[Cloud Manager での外部リポジトリの追加 - Private Beta](/help/implementing/cloud-manager/managing-code/external-repositories.md) を参照してください。
 
@@ -162,5 +162,5 @@ Cloud Manager でプライベートリポジトリを使用する場合は、特
 * Adobe GitHub アプリを GitHub 組織から削除すると、すべてのリポジトリのプルリクエスト検証機能が削除されます。
 * プライベート GitHub Cloud リポジトリと「コミット時」のビルドトリガーを使用するパイプラインは、選択したブランチに新しいコミットがプッシュされた場合に自動的に開始されません。
 * [アーティファクト再利用機能](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)は、プライベートリポジトリには適用されません。
-* Cloud Manager の GitHub チェックを使用して、プルリクエストの検証を一時停止することはできません。GitHub リポジトリが Cloud Manager で検証される場合、Cloud Manager は常に、そのリポジトリに対して作成されたプルリクエストの検証を試みます。
-* GitHub 組織が IP 制限を実施する場合は、サポートケースを開いて、許可する必要がある IP アドレスのリストを取得します。
+* Cloud Manager から GitHub チェックを使用して、プルリクエストの検証を一時停止できません。GitHub リポジトリが Cloud Manager で検証される場合、Cloud Manager は常に、そのリポジトリに対して作成されたプルリクエストの検証を試みます。
+* GitHub 組織で IP 制限が適用されている場合は、サポートケースを開いて、許可する必要がある IP アドレスのリストを取得します。

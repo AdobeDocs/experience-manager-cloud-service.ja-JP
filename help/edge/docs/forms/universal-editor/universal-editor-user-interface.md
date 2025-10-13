@@ -7,9 +7,9 @@ role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2390'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -112,7 +112,7 @@ ht-degree: 98%
 
 **最初のフォームの場合：**
 
-1. **アダプティブフォームコンポーネントの追加** - `Adaptive Form` コンポーネントをセクションに挿入します。
+1. **アダプティブフォームコンポーネントを追加** - `Adaptive Form` コンポーネントをセクションに挿入します。
 2. **作成を開始** - 「**追加**」ボタン（`a`）を使用して、コンポーネントを追加します
 3. **フィールドを設定** - コンポーネントを選択して、**プロパティモード**（`d`）を使用します
 4. **フォームをテスト** - **プレビューモード**（`p`）を使用して、フォームを操作します
@@ -121,7 +121,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
-> ユニバーサルエディターでフォームを作成する詳細な手順については、[Edge Delivery Servicesを使用したアダプティブFormsの作成と公開 ](/help/edge/docs/forms/universal-editor/create-forms.md) を参照してください。
+> ユニバーサルエディターでフォームを作成する手順について詳しくは、[Edge Delivery Services を使用したアダプティブフォームの作成と公開](/help/edge/docs/forms/universal-editor/create-forms.md)を参照してください。
 
 **検証チェックポイント：**
 
@@ -223,7 +223,7 @@ ht-degree: 98%
 
 #### **AEM フォームプロパティ**
 
-**目的：** フォームデータモデル（FDM）などのフォームレベルの設定、送信アクションと公開日の設定\
+**目的：**&#x200B;フォームデータモデル（FDM）など、フォームレベルの設定を指定し、送信アクションと公開日を設定します\
 **用途：**&#x200B;データ統合の設定、公開のスケジュール
 
 ![フォームプロパティ](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
@@ -354,7 +354,7 @@ ht-degree: 98%
 
     ![バリエーションを生成]（/help/edge/docs/forms/universal-editor/assets/ue-variations.png）
 
-**詳細情報：**&#x200B;[バリエーションを生成ガイド](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**詳細情報：**[バリエーションを生成ガイド](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **コンテンツドラフト**
 

@@ -5,9 +5,9 @@ role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
 source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '909'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -42,13 +42,13 @@ Cloud Manager は、AEM as a Cloud Service に不可欠なコンポーネント�
 
    前の手順の [Cloud Manager 製品プロファイルへのチームメンバーの割り当て](assign-profiles-cloud-manager.md)に戻り、システム管理者に&#x200B;**ビジネスオーナー**&#x200B;の役割を割り当てる方法の詳細を参照してください。
 
-1. [experience.adobe.com](https://experience.adobe.com) でCloud Managerにログインします。
-1. クイックアクセスのグループ化で、**Experience Manager** をクリックします。
-1. 左側のパネルで、「**Cloud Manager**」をクリックします。
+1. [experiece.adobe.com](https://experience.adobe.com) で Cloud Manager にログインします。
+1. クイックアクセスのグループ化で、「**Experience Manager**」をクリックします。
+1. 左側のサイドパネルで、「**Cloud Manager**」をクリックします。
 
-   ![ コンソールのCloud Manager](/help/journey-onboarding/assets/consol-cloud-manager.png)
+   ![コンソール上の Cloud Manager](/help/journey-onboarding/assets/consol-cloud-manager.png)
 
-**ビジネスオーナー** のロールを持つシステム管理者がログインに成功すると、**ビジネスオーナー** のロールを持つ他のユーザーが使用できるようにCloud Managerが使用されます。 確認メッセージなどのメッセージは表示されません。ログインするだけで十分です。
+**ビジネスオーナー**&#x200B;の役割を持つシステム管理者がログインに成功すると、**ビジネスオーナー**&#x200B;の役割を持つ他のユーザーが Cloud Manager を使用できるようになります。確認メッセージなどのメッセージは表示されません。ログインするだけで十分です。
 
 **ビジネスオーナー**&#x200B;の役割を持つシステム管理者が Cloud Manager にログインするまで、**ビジネスオーナー**&#x200B;の役割を持つ他のユーザーは、Cloud Manager でプログラムを作成できません。このルールは、正しい役割が割り当てられている場合でも適用されます。
 
@@ -92,39 +92,39 @@ How you access your programs and products via Cloud Manager is up to you and has
 
 Cloud Manager に正常にアクセスすると、表示される内容は、以降のセクションで詳しく説明するように、プログラムの状態によって異なります。
 
-### プログラムが存在しません {#no-programs}
+### プログラムが存在しない場合 {#no-programs}
 
 組織にプログラムが存在しない場合は、最初のプログラムを作成するようにランディングページで指示されます。
 
 ![プログラムがありません](/help/journey-onboarding/assets/cloud-manager-programs-do-not-exist.png)
 
-### プログラムは既に存在します {#programs-exist}
+### プログラムが既に存在する場合 {#programs-exist}
 
 組織にプログラムが既に存在する場合は、ランディングページに既存のプログラムが表示され、プログラムを追加するボタンも表示されます。
 
 ![プログラムが存在します](/help/journey-onboarding/assets/cloud-manager-programs-exist.png)
 
-### プログラムが存在し、ユーザーがシステム管理者である場合 {#programs-exist-sysadmin}
+### プログラムが存在し、システム管理者である場合 {#programs-exist-sysadmin}
 
 組織にプログラムが存在し、ユーザーがシステム管理者である場合は、ランディングページに「**アクセスを管理**」ボタンと「**プログラムを追加**」オプションが表示されます。
 
 ![システム管理者の表示](/help/journey-onboarding/assets/cloud-manager-programs-as-sysadmin.png)
 
-## ユーザーの役割の検証 {#verify-user-roles}
+## ユーザーの役割の確認 {#verify-user-roles}
 
-Cloud Managerに正常にログインしたら、**ビジネスオーナー** の製品プロファイルが割り当てられていることを確認します。
+Cloud Manager に正常にログインしたら、**ビジネスオーナー**&#x200B;製品プロファイルが割り当てられていることを確認します。
 
-1. ページの右上隅付近にある **アカウント** アイコンをクリックします。
+1. ページの右上隅付近にある&#x200B;**アカウント**&#x200B;アイコンをクリックします。
 
-1. **ユーザーの役割** をクリックします。
+1. 「**ユーザーの役割**」をクリックします。
 
    ![ユーザーの役割](/help/journey-onboarding/assets/cloud-manager-user-roles.png)
 
-1. **ユーザーの役割** ダイアログボックスで、ユーザーが **ビジネスオーナー** の役割を持っていることを確認します。
+1. **ユーザーの役割**&#x200B;ダイアログボックスで、ユーザーに&#x200B;**ビジネスオーナー**&#x200B;の役割があることを確認します。
 
    ![ユーザーの役割のリスト](/help/journey-onboarding/assets/cloud-manager-user-roles-business-owner.png)
 
-ビジネスオーナーとしてCloud Managerに正常にログインしました。 **ビジネスオーナー**&#x200B;の役割を割り当てられていない場合は、システム管理者にお問い合わせください。
+Cloud Manager にビジネスオーナーとして正常にログインしました。**ビジネスオーナー**&#x200B;の役割を割り当てられていない場合は、システム管理者にお問い合わせください。
 
 ## 次の手順 {#whats-next}
 

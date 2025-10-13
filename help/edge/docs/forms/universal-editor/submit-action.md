@@ -6,7 +6,7 @@ feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '413'
 ht-degree: 100%
 

@@ -7,9 +7,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 source-git-commit: 71ea3b810d4145d5581c29e26db9bc157c425a15
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -70,10 +70,10 @@ Edge Delivery Services は、次の 2 つのオプションのいずれかを使
 
 ## 前提条件 {#prerequisites}
 
-1. Cloud Managerでのサイトのオンボード – 両方のデプロイメントモデルで必要です。 AEM サイトのオンボードに従います。
+1. Cloud Manager でサイトをオンボード - 両方のデプロイメントモデルで必須です。AEM サイトのオンボードに従います。
 
-2. 独自の Git （BYOG）（オプション） – Adobe Git の外部にサイトコードを保存する場合は、BYOG のオンボーディングを完了します。
+2. Bring Your Own Git（BYOG）（オプション）- サイトコードを Adobe Git の外部に保存する場合は、BYOG オンボーディングを完了します。
 
-3. Edge Delivery ライセンス – プログラムがEdge Delivery Servicesのライセンスを取得していることを確認します。
+3. Edge Delivery ライセンス - プログラムが Edge Delivery Services のライセンスを取得していることを確認します。
 
 

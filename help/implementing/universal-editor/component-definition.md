@@ -5,9 +5,9 @@ feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
 source-git-commit: b4e61ec6abcaf73119f8963d72317759b2bd7c76
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '611'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -94,9 +94,9 @@ ht-degree: 96%
 
 `plugins` は、コンポーネントの永続化を担当するプラグインを定義します。一般的なプラグインを次に示します。
 
-* `aem`AEM as a Cloud Service.[ の ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service)
-* `aem65`AEM 6.5.[ および ](https://experienceleague.adobe.com/ja/docs/experience-manager-65)AEM 6.5 LTS[ の ](https://experienceleague.adobe.com/ja/docs/experience-manager-65-lts)
-* `xwalk`Edge Delivery Services用AEM Sitesを使用したオーサリング [ の ](https://www.aem.live/developer/ue-tutorial) ール
+* [AEM as a Cloud Service](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service) の 。`aem`
+* [AEM 6.5](https://experienceleague.adobe.com/ja/docs/experience-manager-65) および [AEM 6.5 LTS](https://experienceleague.adobe.com/ja/docs/experience-manager-65-lts) の `aem65`
+* [Edge Delivery Services 向け AEM Sites を使用したオーサリング](https://www.aem.live/developer/ue-tutorial)の `xwalk`。
 
 ## `page` または `cf` {#page-cf}
 

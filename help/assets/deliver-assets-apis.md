@@ -4,9 +4,9 @@ description: 配信 API の使用方法について説明します。
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
 source-git-commit: 9f7164e99abb6fce3b1bbc6401234996bcd43889
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '636'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Experience Manager Assets リポジトリで使用可能なすべての[承認�
 >[!IMPORTANT]
 >
 >実験的な API から一般に利用できない任意の修飾子をテストできます。例えば、`</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>` のように指定します。
->&#x200B;>ここをクリックして、[ 実験的 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) と [ 修飾子の完全なリスト ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) の使用方法について詳しく確認してください。
+>>[実験的 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) と[修飾子の完全なリスト](https://developer.adobe.com/experience-cloud/experience-manager-apis/)の使用方法について詳しくは、こちらをクリックしてください。
 
 また、OpenAPI 機能を備えた Dynamic Media は、ロングフォームのビデオもサポートしています。ビデオは、最大 50 GB および 2 時間をサポートできます。
 
@@ -43,7 +43,7 @@ Experience Manager Assets リポジトリで使用可能なすべての[承認�
 
 >[!NOTE]
 >
->DM Primeのお客様は、回転、切り抜き、反転、高さ、幅、画質などの基本的な画像修飾子を使用できます。 スマートイメージングは、DM Primeのお客様に対する AVIF をサポートしていません。
+>DM Prime のお客様は、回転、切り抜き、反転、高さ、幅、画質などの基本的な画像修飾子を使用できます。スマートイメージングは、DM Prime のお客様に対して AVIF をサポートしていません。
 
 ## 配信 API エンドポイント {#delivery-apis-endpoint}
 
@@ -73,7 +73,7 @@ headers: {
     }
 ```
 
-配信 API を呼び出すには、制限されたアセットを配信する `Authorization` の詳細に IMS トークンが必要です。IMS トークンは、テクニカルアカウントから取得されます。新しいテクニカルアカウントを作成する方法について詳しくは、[AEM as a Cloud Service の資格情報の取得](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)を参照してください。IMS トークンを生成し、配信 API リクエストヘッダーで適切に使用する方法について詳しくは、[アクセストークンの生成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)を参照してください。
+配信 API を呼び出すには、制限されたアセットを配信する `Authorization` の詳細に IMS トークンが必要です。IMS トークンは、テクニカルアカウントから取得されます。新しいテクニカルアカウントを作成する方法について詳しくは、[AEM as a Cloud Service の資格情報の取得](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)を参照してください。IMS トークンを生成し、配信 API リクエストヘッダーで適切に使用する方法について詳しくは、[アクセストークンの生成](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)を参照してください。
 
 
 リクエストサンプル、応答サンプルおよび応答コードを表示する方法について詳しくは、[配信 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) を参照してください。

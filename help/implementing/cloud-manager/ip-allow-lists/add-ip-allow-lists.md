@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 39af50d05fcbd22b3f4b4664f2c99590e7fb9da9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '310'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ Cloud Manager を使用して独自の IP 許可リストを追加する方法�
 
 **IP 許可リストを追加するには：**
 
-1. [experience.adobe.com](https://experience.adobe.com/experiencemanager/) のCloud Managerにログインします。
+1. [experience.adobe.com](https://experience.adobe.com/experiencemanager/) で Cloud Manager にログインします。
 
-1. 左側のメニューで「Cloud Manager」をクリックし、適切な組織を選択します。
+1. 左側のサイドメニューで「Cloud Manager」をクリックし、適切な組織を選択します。
 
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 
@@ -40,12 +40,12 @@ Cloud Manager を使用して独自の IP 許可リストを追加する方法�
 
 1. **IP 許可リストを追加**&#x200B;ダイアログボックスの **IP 許可リスト名**&#x200B;フィールドに、IP 許可リストの参照に使用する名前を入力します。この名前は情報提供のみを目的としています。リストを識別しやすいように、説明的な表記にしてください。
 
-1. 「**IP アドレス/CIDR**」フィールドに、最大 50 個の IP アドレスまたは CIDR ブロックを入力します。 これらは、次のいずれかの方法で追加できます。
+1. 「**IP アドレス／CIDR**」フィールドに、最大 50 個の IP アドレスまたは CIDR ブロックを入力します。次のいずれかの方法で追加できます。
 
-   * 一度に 1 つずつ：アドレスを入力し、`Enter` キーを押します。 追加のアドレスごとに繰り返します。
+   * 一度に 1 つずつ：アドレスを入力し、`Enter` キーを押します。追加のアドレスごとに繰り返します。
    * 一度に複数：アドレスをコンマ（,）またはタブで区切って入力し、`Enter` キーを押して各アドレスが個別に認識されるようにします。
 
-1. 最後の IP アドレスまたは CIDR ブロックの入力が完了したら、`Enter` キーを押して入力を確認します。 `Enter` を押すと、エントリに対する確認が行われ、「**保存** ボタンがアクティブになります。
+1. 最後の IP アドレスまたは CIDR ブロックの入力が完了したら、`Enter` キーを押して入力を確認します。 `Enter` キーを押すと、エントリに対する確認が行われ、「**保存**」ボタンがアクティブになります。
 
 1. 「**保存**」をクリックします。
 

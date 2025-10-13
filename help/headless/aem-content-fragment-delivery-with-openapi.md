@@ -5,9 +5,9 @@ feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
 source-git-commit: de161d6707dcb8cedf032ee1f286d79e733be94d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '607'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Dispatcher 設定側で定義された CORS 許可されたオリジン（特に
 
 ## 認証済みリクエスト {#authenticated-requests}
 
-認証済みリクエストのサポートは、[AEM CDN Edge キー ](/help/implementing/dispatcher/cdn-credentials-authentication.md) で実装できます。 AEM CDN Edge キーを使用すると、AEM CDN に依存し、指定されたEdge キーヘッダーに基づいて、特定のリクエストのみが API にアクセスできるようになります。
+認証済みリクエストのサポートは、[AEM CDN Edge キー](/help/implementing/dispatcher/cdn-credentials-authentication.md)を使用して実装できます。AEM CDN Edge キーを使用すると、AEM CDN に依存し、指定された Edge キーヘッダーに基づいて特定のリクエストのみが API にアクセスできます。
 
 >[!NOTE]
 >

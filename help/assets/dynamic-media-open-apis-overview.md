@@ -4,9 +4,9 @@ description: OpenAPI 機能を備えた Dynamic Media を使用する理由や�
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
 source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1106'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ OpenAPI 機能を備えたDynamic Media には、次のような主なメリッ�
 
 * **Web に最適化された配信**：デジタルアセットは、web に最適化された形式で配信され、デジタルエクスペリエンスのコア web バイタルを強化します。これには、画像の WebP レンディション、ビデオの HLS または DASH プロトコルによるアダプティブストリーミング、ドキュメントの元のレンディションのサポートが含まれます。
 
-* [動的アセット変換](https://developer.adobe.com/experience-cloud/experience-manager-apis)：当社のシステムでは、画像修飾子と呼ばれる URL パラメーターを使用して、その場で画像を変換できます。例えば、幅、高さ、回転、反転、画質、切り抜き、形式、スマート切り抜きなどです。 変換したレンディションは動的に生成され、CDN 経由でシームレスに配信されます。
+* [動的アセット変換](https://developer.adobe.com/experience-cloud/experience-manager-apis)：当社のシステムでは、画像修飾子と呼ばれる URL パラメーターを使用して、その場で画像を変換できます。例えば、幅、高さ、回転、反転、画質、切り抜き、形式、スマート切り抜きなどです。変換したレンディションは動的に生成され、CDN 経由でシームレスに配信されます。
 
 * **アセットの安全な配信**：OpenAPI 機能を備えた Dynamic Media は、デジタルアセットへのアクセスを制御するメカニズムを提供します。セキュリティ保護対象のアセットのメタデータとしてユーザーの役割またはグループを指定し、[承認済みユーザーのみがこれらのアセットにアクセスできる](/help/assets/restrict-assets-delivery.md)定義済みの期間を設定できます。制限期間中、セキュリティ保護対象のアセットの配信 URL は、承認されていないユーザーに対しては解決されません。
 
@@ -42,7 +42,7 @@ OpenAPI 機能を備えたDynamic Media には、次のような主なメリッ�
 
 >[!NOTE]
 >
->DM Primeのお客様は、回転、切り抜き、反転、高さ、幅、画質などの基本的な画像修飾子を使用できます。 スマートイメージングは、DM Primeのお客様に対する AVIF をサポートしていません。
+>DM Prime のお客様は、回転、切り抜き、反転、高さ、幅、画質などの基本的な画像修飾子を使用できます。スマートイメージングは、DM Prime のお客様に対して AVIF をサポートしていません。
 
 
 ## OpenAPI 機能を備えた Dynamic Media にアクセスする前提条件 {#prerequisites-dynaminc-media-open-apis}

@@ -5,7 +5,7 @@ feature: Generate Variations, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: b99cc846a1efbbcd12244f68c770aa25ac4e985d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1418'
 ht-degree: 100%
 

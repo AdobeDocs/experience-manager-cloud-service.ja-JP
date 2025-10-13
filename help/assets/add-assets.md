@@ -5,9 +5,9 @@ feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 source-git-commit: 967923c621774bcbda65bac9428eaaf18a99a9cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3177'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 97%
 | アップロード方法 | 用途 | メインユーザー |
 |---------------------|----------------|-----------------|
 | [Assets コンソールユーザーインターフェイス](#upload-assets) | 不定期アップロード、操作の容易さ、ファインダーアップロード。多くのアセットをアップロードするために使用しないでください。 | すべてのユーザー |
-| [アップロード API](#upload-using-apis) | アップロード中の動的な決定。 | デベロッパー |
+| [アップロード API](#upload-using-apis) | アップロード中の動的な決定。 | 開発者 |
 | [[!DNL Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja) | 容量の少ないアセットの取り込み（移行は除く）。 | 管理者、マーケター |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) | クリエイティブやマーケターが、サポートされる [!DNL Creative Cloud] デスクトップアプリ内でアセットを操作する場合に役立ちます。 | クリエイティブ、マーケター |
 | [アセット一括取得ツール](#asset-bulk-ingestor) | 大規模な移行や、不定期に行われる一括取得に推奨。サポートされるデータストアに対してのみ。 | 管理者、デベロッパー |
@@ -146,7 +146,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 このツールは、Azure または S3 データストアからのアセットの大規模な取り込みに使用する目的で管理者グループにのみ提供されます。設定と取り込みの手順を紹介するビデオを参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/341389/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 次の図は、データストアから Experience Manager にアセットを取り込む際の様々な段階を示しています。
 
@@ -187,7 +187,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. （オプション）「**[!UICONTROL MIME タイプを除外]**」フィールドで、取り込みから除外する MIME タイプのコンマ区切りリストを指定します。（例：`image/jpeg, image/.*, video/mp4`）。[サポートされるすべてのファイル形式](/help/assets/file-format-support.md)を参照してください。
 
-1. 「**[!UICONTROL MIME タイプを含める]**」フィールドで、取り込みから含める MIME タイプのコンマ区切りリストを指定します。[サポートされるすべてのファイル形式](/help/assets/file-format-support.md)を参照してください。
+1.  「**[!UICONTROL MIME タイプを含める]**」フィールドで、取り込みから含める MIME タイプのコンマ区切りリストを指定します。[サポートされるすべてのファイル形式](/help/assets/file-format-support.md)を参照してください。
 
 1. ファイルが [!DNL Experience Manager] に読み込まれた後、ソースデータストアから元のファイルを削除するには、「**[!UICONTROL 読み込み後にソースファイルを削除]**」オプションを選択します。
 
@@ -382,7 +382,7 @@ Experience Manager は、ジョブ履歴を表示します。一括読み込み�
 
 * 直接バイナリアップロードは、アセットをアップロードする新しい方法です。[!DNL Experience Manager] ユーザーインターフェイス、[!DNL Adobe Asset Link]、[!DNL Experience Manager] デスクトップアプリケーションなど、製品の機能とクライアントでは、この機能がデフォルトでサポートされています。ユーザー側の技術チームでカスタマイズまたは拡張されるカスタムコードでは、新しいアップロード API およびプロトコルを使用する必要があります。
 
-* [!DNL Experience Manager Assets] では、多数の子アセットを含んだフォルダーをサポートするようになりました。 フォルダーに 1000 個を超える直接の子（アセットまたはサブフォルダー）が含まれると、管理 UI は非同期更新されたインデックスを使用してフォルダーのコンテンツを一覧表示します。 そのため、新しく作成したフォルダーやアセットの表示には少し遅れが生じる場合があり（通常は数秒）、管理ビューでそのフォルダーを開くと、この動作をエンドユーザーに通知するバナーが表示されます。表示される内容は次のとおりです。「このディレクトリには 1,000 以上の項目が含まれています。 アップロードや新しいフォルダーの作成が遅延する場合があります。」
+* [!DNL Experience Manager Assets] では、多数の子アセットを含むフォルダーがサポートされるようになりました。フォルダーに 1,000 個を超える直接の子（アセットまたはサブフォルダー）が含まれると、管理 UI は非同期に更新されるインデックスを使用してフォルダーのコンテンツを一覧表示します。そのため、新しく作成したフォルダーやアセットの表示には短い遅延（通常は数秒）が発生する可能性があります。管理ビューでこのようなフォルダーを開くと、エンドユーザーにこの動作を通知するバナーが表示されます。表示される内容は次のとおりです。「このディレクトリには 1000 個以上の項目が含まれています。アップロードや新しいフォルダーの作成が遅れる場合があります。」
 
 * [!UICONTROL 名前の競合]ダイアログで「**[!UICONTROL 置換]**」を選択すると、新しいアセットのアセット ID が再生成されます。この ID は以前のアセットの ID とは異なります。[アセットインサイト](/help/assets/assets-insights.md)による [!DNL Adobe Analytics] でのインプレッション数やクリック数の追跡が有効になっている場合は、再生成されたアセット ID により、[!DNL Analytics] から取得したアセットのデータが無効になります。
 

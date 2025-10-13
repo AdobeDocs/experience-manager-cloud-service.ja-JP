@@ -5,9 +5,9 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
 source-git-commit: 2fafb582ae8fc5e2ecc19157ff34e16be401393a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3591'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="コンテンツの取り込み"
->abstract="取得とは、移行セットから宛先の Cloud Service インスタンスにコンテンツを取得することを指します。 コンテンツトランスファーツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。"
+>abstract="取得とは、移行セットから宛先の Cloud Service インスタンスにコンテンツを取得することを指します。 コンテンツ転送ツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。"
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="追加抽出"
 
 Cloud Acceleration Manager を使用して移行セットを取り込むには、次の手順に従います。
@@ -101,7 +101,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 >abstract="前回のコンテンツ転送アクティビティ以降に変更されたコンテンツを移動するには、追加取り込み機能を使用します。 取り込みが完了したら、エラーや警告がないかログを確認します。 エラーが発生した場合は、報告された問題を解決するかアドビカスタマーケアに連絡して、すぐに対処してください。"
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="ログの表示"
 
-コンテンツトランスファーツールには、移行セットの&#x200B;*追加*&#x200B;を実行することで、差分コンテンツを抽出できる機能が備わっています。これにより、再度すべてのコンテンツを抽出するのではなく、前回の抽出以降に変更されたコンテンツのみを含めるように移行セットを変更できます。
+コンテンツ転送ツールには、移行セットの&#x200B;*追加*&#x200B;を実行することで、差分コンテンツを抽出できる機能が備わっています。これにより、再度すべてのコンテンツを抽出するのではなく、前回の抽出以降に変更されたコンテンツのみを含めるように移行セットを変更できます。
 
 >[!NOTE]
 >最初のコンテンツ転送の後は、差分コンテンツの追加を頻繁に行って、Cloud Service での運用を開始する前に行う最終的な差分コンテンツ転送に必要なコンテンツ凍結期間を短縮することをお勧めします。最初の取り込みで事前コピー手順を使用した場合、後続の追加取り込みでは（追加移行セットのサイズが 200 GB 未満の場合）事前コピーをスキップできます。これは、プロセス全体に時間がかかる可能性があるためです。
@@ -152,7 +152,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 
 * AEM as a Cloud Service は環境の状態を維持し、様々な通常の理由で移行サービスの再起動が必要になる場合があります。そのサービスが再起動中の場合はサービスにアクセスできませんが、最終的には利用できるようになります。
 * インスタンス上で別のプロセスが実行されている可能性があります。例えば、[AEM バージョンの更新](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)の適用中にシステムがビジー状態になり、移行サービスが定期的に利用できなくなる可能性があります。その場合はプロセスが完了すると、取り込みの開始を再試行できます。
-* Cloud Manager を使用して [IP 許可リストが適用されている](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)場合、Cloud Acceleration Manager が移行サービスに到達するのをブロックします。アドレスが動的なので、取り込み用に IP アドレスを追加することはできません。現在、唯一の解決策は、取り込みとインデックス作成のプロセスの実行中に一時的に 0.0.0.0/0 を許可リストに追加して、取り込みとインデックス作成のプロセス中に IP許可リストを無効にすることです。
+* Cloud Manager を使用して [IP 許可リストが適用されている](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)場合、Cloud Acceleration Manager が移行サービスに到達するのをブロックします。アドレスが動的なので、取り込み用に IP アドレスを追加することはできません。現在、唯一の解決策は、取り込みおよびインデックス作成プロセスの実行中に、一時的に 0.0.0.0/0 を許可リストに追加して、取り込みおよびインデックス作成プロセス中の IP 許可リストを無効にすることです。
 * 調査が必要となる理由が、他に存在する場合があります。それでも取り込みやインデックス作成に失敗する場合は、アドビカスタマーケアにお問い合わせください。
 
 ### AEM バージョンの更新と取り込み {#aem-version-updates-and-ingestions}
@@ -237,7 +237,7 @@ MongoDB に保存されるノードプロパティの値は、16 MB 未満にす
 
 これは MongoDB の制限です。
 
-大きなノードすべてを見つけるのに役立つ Oak ツールへのリンクと詳細情報については、[コンテンツトランスファーツールの前提条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)の `Node property value in MongoDB` メモを参照してください。サイズの大きいすべてのノードを修正したら、抽出と取り込みを再度実行します。
+大きなノードすべてを見つけるのに役立つ Oak ツールへのリンクと詳細情報については、[コンテンツ転送ツールの前提条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)の `Node property value in MongoDB` メモを参照してください。サイズの大きいすべてのノードを修正したら、抽出と取り込みを再度実行します。
 
 この制限を回避するには、ソース AEM インスタンスで[ベストプラクティスアナライザー](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)を実行し、表示される結果、特に[「サポートされていないリポジトリ構造」（URS）](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/urs)パターンを確認します。
 
