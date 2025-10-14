@@ -47,7 +47,7 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### 早期導入プログラム {#sites-early-adopter}
 
-**運用上のテレメトリサービス [ を利用して、AEM as a Cloud Serviceのクライアントサイド収集を有効にすることもできます](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**。
+**運用上のテレメトリサービス [&#x200B; を利用して、AEM as a Cloud Serviceのクライアントサイド収集を有効にすることもできます](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**。
 
 運用上のテレメトリデータサービスは、ユーザーのインタラクションをより正確に反映し、web サイトエンゲージメントの信頼性の高い測定を保証します。 ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
 
@@ -107,7 +107,7 @@ Adobe Firefly のテキストから画像生成機能を統合して、検索ク
 
 ### ドメインマッピング早期導入プログラム {#cdn-config-early-adopter}
 
-オプションでライセンス利用可能な Web Application Firewall （WAF）ルールを含む、最近リリースされた [ トラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md) に加えて、設定パイプラインを使用して、他のタイプの CDN 設定を宣言およびデプロイすることもできます。 次のようなユースケースについてお聞かせください。
+オプションでライセンス利用可能な Web Application Firewall （WAF）ルールを含む、最近リリースされた [&#x200B; トラフィックフィルタールール &#x200B;](/help/security/traffic-filter-rules-including-waf.md) に加えて、設定パイプラインを使用して、他のタイプの CDN 設定を宣言およびデプロイすることもできます。 次のようなユースケースについてお聞かせください。
 * 301/302 クライアントサイドのリダイレクト
 * 任意の接触チャネルに対するエッジでのリクエストのプロキシ処理
 * URL 変換

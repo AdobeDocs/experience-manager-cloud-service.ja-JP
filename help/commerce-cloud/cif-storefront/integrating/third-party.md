@@ -32,7 +32,7 @@ Experience Manager はデータをオンデマンドで取得するため、製�
 
 >[!TIP]
 >
->リアルタイム API を使用できない場合は、API を使用した外部製品キャッシュを統合に使用する必要があります。例 [Adobe CommerceでSourceを開く ](https://business.adobe.com/jp/products/magento/open-source.html)
+>リアルタイム API を使用できない場合は、API を使用した外部製品キャッシュを統合に使用する必要があります。例 [Adobe CommerceでSourceを開く &#x200B;](https://business.adobe.com/jp/products/magento/open-source.html)
 
 完全な GraphQL スキーマを実装する必要はありません。必要なユースケースを有効にするには、スキーマのオブジェクトだけを実装します。
 

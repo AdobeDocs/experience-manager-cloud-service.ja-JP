@@ -54,9 +54,9 @@ ht-degree: 92%
 
 * 製品エクスペリエンス管理：アセットおよびエクスペリエンスフラグメント用の新しい「コマース」プロパティタブが追加されました。このタブでは、製品やカテゴリをアセットやエクスペリエンスフラグメントにリンクできます。また、このタブには、リンクされた製品やカテゴリのリアルタイムデータと、製品コンソールに詳細を表示するリンクが表示されます。
 
-* 最新のCIF コアコンポーネント v1.7.0 を含んだCIF Venia 参照サイト 2021.02.02 をリリースしました。詳しくは、[CIF Venia 参照サイト ](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) を参照してください。
+* 最新のCIF コアコンポーネント v1.7.0 を含んだCIF Venia 参照サイト 2021.02.02 をリリースしました。詳しくは、[CIF Venia 参照サイト &#x200B;](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) を参照してください。
 
-* CIF コアコンポーネント v1.7.0 をリリースしました。詳しくは、[CIF コアコンポーネント ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) を参照してください。
+* CIF コアコンポーネント v1.7.0 をリリースしました。詳しくは、[CIF コアコンポーネント &#x200B;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -78,7 +78,7 @@ AEM as a Cloud Service 2021.1.0 Cloud Manager のリリース日は 2021 年 1 �
 
 * AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンには、AEM Dispatcher コンバーターと Repository Modenizer のバグ修正が含まれ、新しいユーティリティインデックスコンバーターもサポートされています。このプラグインについて詳しくは、[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=ja#benefits) を参照してください。
 
-* インデックスコンバーターは、顧客のカスタム OAK インデックス定義を AEM as a Cloud Service 互換の OAK インデックス定義に変換するために使用できるユーティリティです。詳しくは、[ インデックスコンバーター ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) を参照してください。
+* インデックスコンバーターは、顧客のカスタム OAK インデックス定義を AEM as a Cloud Service 互換の OAK インデックス定義に変換するために使用できるユーティリティです。詳しくは、[&#x200B; インデックスコンバーター &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) を参照してください。
 
 * [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) にすべての OSGi 設定を含む個別のパッケージ `ui.config` を作成する新機能が追加されました。
 

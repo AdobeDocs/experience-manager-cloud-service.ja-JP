@@ -17,7 +17,7 @@ ht-degree: 89%
 
 実稼働プログラムは、コードの記述、構築、テストを開始する準備が整い、ライブトラフィックをホストするためにコードをデプロイするチームを対象としています。
 
-[ 実稼動プログラムを作成 ](creating-production-programs.md) した後、ユーザーの目的に応じて、[ プログラム作成ウィザード ](using-the-wizard.md) がプログラムの作成時にユーザーが選択した内容をガイドします。
+[&#x200B; 実稼動プログラムを作成 &#x200B;](creating-production-programs.md) した後、ユーザーの目的に応じて、[&#x200B; プログラム作成ウィザード &#x200B;](using-the-wizard.md) がプログラムの作成時にユーザーが選択した内容をガイドします。
 
 ## プログラム作成オプション {#program-creation-options}
 
@@ -36,4 +36,4 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->実稼動プログラム [ 編集できますが、削除はできません ](editing-programs.md)。
+>実稼動プログラム [&#x200B; 編集できますが、削除はできません &#x200B;](editing-programs.md)。

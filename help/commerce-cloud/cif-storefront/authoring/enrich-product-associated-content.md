@@ -49,4 +49,4 @@ ht-degree: 97%
 
 ## 関連リソース {#related}
 
-また、特定の製品セットやカテゴリセットに合わせてテンプレート全体をカスタマイズすることもできます。詳しくは、[ 複数のカテゴリページと製品ページの作成 ](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md) を参照してください。
+また、特定の製品セットやカテゴリセットに合わせてテンプレート全体をカスタマイズすることもできます。詳しくは、[&#x200B; 複数のカテゴリページと製品ページの作成 &#x200B;](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md) を参照してください。

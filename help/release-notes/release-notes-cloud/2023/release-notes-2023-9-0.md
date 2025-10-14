@@ -44,7 +44,7 @@ ht-degree: 84%
 
 Edge Deliveryは、コンテンツの影響を最大化し、お客様とのやり取りの時点で測定可能なビジネス成果を促進することに重点を置いた、構成可能な新しいサービスセットです。
 
-Edge Delivery Servicesについて詳しくは、記事 [ こちら ](/help/edge/overview.md) を参照してください。
+Edge Delivery Servicesについて詳しくは、記事 [&#x200B; こちら &#x200B;](/help/edge/overview.md) を参照してください。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -58,9 +58,9 @@ Edge Delivery Servicesについて詳しくは、記事 [ こちら ](/help/edge
 
 ### 管理ビューの新機能 {#admin-view-features}
 
-* **AEM Assets as a Cloud ServiceとEdge Delivery Servicesのドキュメントベースのオーサリングの統合**: AEM AssetsとEdge Delivery Servicesのドキュメントベースのオーサリングを統合して、web サイト作成者が [AEM Assets リポジトリで利用可能な画像を使用しながら、Microsoft Word またはGoogle Docsでドキュメントをオーサリング ](/help/edge/overview.md) できるようにします。
+* **AEM Assets as a Cloud ServiceとEdge Delivery Servicesのドキュメントベースのオーサリングの統合**: AEM AssetsとEdge Delivery Servicesのドキュメントベースのオーサリングを統合して、web サイト作成者が [AEM Assets リポジトリで利用可能な画像を使用しながら、Microsoft Word またはGoogle Docsでドキュメントをオーサリング &#x200B;](/help/edge/overview.md) できるようにします。
 
-* **ZIP アーカイブを抽出**:Experience Managerで管理される ZIP アーカイブを選択し、ダウンロードせずに [ ファイルをExperience Managerに直接抽出 ](/help/assets/manage-digital-assets.md#extract-zip-archives) する機能。
+* **ZIP アーカイブを抽出**:Experience Managerで管理される ZIP アーカイブを選択し、ダウンロードせずに [&#x200B; ファイルをExperience Managerに直接抽出 &#x200B;](/help/assets/manage-digital-assets.md#extract-zip-archives) する機能。
 
   ![グループ用の項目をピン留め](/help/release-notes/assets/extract-archive.png)
 

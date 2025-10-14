@@ -58,4 +58,4 @@ AEM を使用してサイトのビジネスケースを解決する方法をア�
 
 ## 次の手順 {#what-is-next}
 
-これで、AEM Content and Commerce 開発ジャーニーを開始する準備が整いました。このジャーニーの次のステップに進み、「AEM コンテンツとCommerceについて [ を読むことをお勧めします ](/help/commerce-cloud/cif-storefront/introduction.md)。
+これで、AEM Content and Commerce 開発ジャーニーを開始する準備が整いました。このジャーニーの次のステップに進み、「AEM コンテンツとCommerceについて [&#x200B; を読むことをお勧めします &#x200B;](/help/commerce-cloud/cif-storefront/introduction.md)。

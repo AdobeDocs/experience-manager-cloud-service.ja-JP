@@ -31,15 +31,15 @@ ht-degree: 47%
 
 * [!DNL Dynamic Media] の機能に、AEM [!DNL Sites] 画像ベースのコアコンポーネントからアクセスできるようになりました。 作成者は、Web ページの作成時に画像プリセット、スマート切り抜き、画像修飾子を使用するように、コンポーネントをすばやく設定できます。[コアコンポーネント 2.13.0 リリース](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0)を参照してください。
 
-* [!DNL Experience Manager] デスクトップアプリケーションを使用すると、デスクトップアプリケーションインターフェイス上の Windows エクスプローラーまたはMac Finder からファイルをドラッグして、ファイルやフォルダーをアップロードできます。 [ デスクトップアプリケーションを使用したアセットの追加 ](https://experienceleague.adobe.com/ja/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem) を参照してください。
+* [!DNL Experience Manager] デスクトップアプリケーションを使用すると、デスクトップアプリケーションインターフェイス上の Windows エクスプローラーまたはMac Finder からファイルをドラッグして、ファイルやフォルダーをアップロードできます。 [&#x200B; デスクトップアプリケーションを使用したアセットの追加 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem) を参照してください。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### 新機能 {#what-is-new-commerce}
 
-* 最新のCIF コアコンポーネント v1.6.0 を含んだCIF Venia 参照サイト 2020.12.01 をリリースしました。詳しくは、[CIF Venia 参照サイト ](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) を参照してください。
+* 最新のCIF コアコンポーネント v1.6.0 を含んだCIF Venia 参照サイト 2020.12.01 をリリースしました。詳しくは、[CIF Venia 参照サイト &#x200B;](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) を参照してください。
 
-* CIF コアコンポーネント v1.6.0 をリリースしました。詳しくは、[CIF コアコンポーネント ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) を参照してください。
+* CIF コアコンポーネント v1.6.0 をリリースしました。詳しくは、[CIF コアコンポーネント &#x200B;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -49,7 +49,7 @@ Adobe Experience Manager（AEM as a Cloud Service）のCloud Manager 2020.12.0 �
 
 ### [!DNL Cloud Manager] の新機能 {#what-is-new-cm}
 
-* [SSL 証明書 ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) のセルフサービス管理および [ カスタムドメイン名の概要 ](/help/implementing/cloud-manager/custom-domain-names/introduction.md)。
+* [SSL 証明書 &#x200B;](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) のセルフサービス管理および [&#x200B; カスタムドメイン名の概要 &#x200B;](/help/implementing/cloud-manager/custom-domain-names/introduction.md)。
 
 * [IP 許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)のセルフサービス管理。
 
@@ -65,9 +65,9 @@ Adobe Experience Manager（AEM as a Cloud Service）のCloud Manager 2020.12.0 �
 
 ### [!DNL Code Refactoring Tools] の新機能  {#what-is-new-crt}
 
-* AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンは、AEM Dispatcher コンバーターと Repository Modernizer のバグ修正を含んでいるほか、新しいユーティリティであるインデックスコンバーターもサポートしています。 このプラグインの詳細については、[ 統合エクスペリエンス ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) を参照してください。
+* AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンは、AEM Dispatcher コンバーターと Repository Modernizer のバグ修正を含んでいるほか、新しいユーティリティであるインデックスコンバーターもサポートしています。 このプラグインの詳細については、[&#x200B; 統合エクスペリエンス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) を参照してください。
 
-* インデックスコンバーターは、顧客のカスタム Oak インデックス定義をAEM as a Cloud Service互換のOak インデックス定義に変換するために使用できるユーティリティです。 詳しくは、[ インデックスコンバーター ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) を参照してください。
+* インデックスコンバーターは、顧客のカスタム Oak インデックス定義をAEM as a Cloud Service互換のOak インデックス定義に変換するために使用できるユーティリティです。 詳しくは、[&#x200B; インデックスコンバーター &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) を参照してください。
 
 * [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) にすべての OSGi 設定を含む個別のパッケージ `ui.config` を作成する新機能が追加されました。
 

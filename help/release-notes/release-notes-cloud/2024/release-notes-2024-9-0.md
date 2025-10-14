@@ -138,7 +138,7 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 
 ### サーバーサイドのリダイレクト {#server-side-redirects}
 
-CDN にデプロイされ CDN で評価される設定ファイル Git で [ ブラウザーリダイレクト ](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) を宣言する。 これは、ページの削除、変更されたサイト構造、SEO の最適化などのシナリオで役立ちます。
+CDN にデプロイされ CDN で評価される設定ファイル Git で [&#x200B; ブラウザーリダイレクト &#x200B;](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) を宣言する。 これは、ページの削除、変更されたサイト構造、SEO の最適化などのシナリオで役立ちます。
 
 ### 新しい AEM Developer Console（パブリックベータ版） {#aem-developer-console-beta}
 
@@ -154,7 +154,7 @@ AEM 6.5 と同様に、Apache／Dispatcher は、web 階層パイプラインの
 
 ### RDE 用の設定パイプライン（早期導入プログラム） {#config-pipeline-rdes-early-adopter}
 
-[ 設定パイプライン ](/help/operations/config-pipeline.md) は、CDN オプション（トラフィックフィルタールール、リクエスト/応答の変換など）を含む yaml ファイル設定をデプロイするために使用します。 早期導入プログラムに参加するには、**<aemcs-cdn-config-adopter@adobe.com>** にメールを送信し、CLI を使用する RDE（迅速な開発環境）にこれらの同じ設定をデプロイします。
+[&#x200B; 設定パイプライン &#x200B;](/help/operations/config-pipeline.md) は、CDN オプション（トラフィックフィルタールール、リクエスト/応答の変換など）を含む yaml ファイル設定をデプロイするために使用します。 早期導入プログラムに参加するには、**<aemcs-cdn-config-adopter@adobe.com>** にメールを送信し、CLI を使用する RDE（迅速な開発環境）にこれらの同じ設定をデプロイします。
 
 ## [!DNL Experience Manager] ガイド {#guides}
 

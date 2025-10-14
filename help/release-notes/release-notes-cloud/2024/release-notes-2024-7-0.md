@@ -124,7 +124,7 @@ Adobe Experience Manager [ユニバーサルエディター](https://experiencel
 
 HTTP キャッシュ制御ヘッダーを使用した TTL の設定は、コンテンツ配信のパフォーマンスとコンテンツの鮮度のバランスを取る効果的なアプローチです。ただし、更新されたコンテンツを直ちに提供することが重要なシナリオでは、CDN キャッシュを直接パージすると有益な場合があります。
 
-Cloud Manager設定パイプラインを使用してパージ API トークンの設定をセルフサービスで行う [ 方法を説明します ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)。これにより、次のバリエーションのいずれかを使用して [ パージ API を呼び出す ](/help/implementing/dispatcher/cdn-cache-purge.md) ことができます。
+Cloud Manager設定パイプラインを使用してパージ API トークンの設定をセルフサービスで行う [&#x200B; 方法を説明します &#x200B;](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)。これにより、次のバリエーションのいずれかを使用して [&#x200B; パージ API を呼び出す &#x200B;](/help/implementing/dispatcher/cdn-cache-purge.md) ことができます。
 
 * 単一の URL
 * タグを使用した複数の URL
@@ -138,7 +138,7 @@ Cloud Manager設定パイプラインを使用してパージ API トークン�
 
 トラフィックフィルタールール（オプションでライセンス可能な web アプリケーションファイアウォール（WAF）ルールを含む）を使用すると、ブロックするトラフィックを設定できます。
 
-トラフィックフィルタールールがトリガーされるたびに、[ アラートを登録 ](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) できるようになりました。 特定のトラフィック状況が発生するとアクションセンターのメール通知が送信されるので、適切な対策を講じることができます。
+トラフィックフィルタールールがトリガーされるたびに、[&#x200B; アラートを登録 &#x200B;](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) できるようになりました。 特定のトラフィック状況が発生するとアクションセンターのメール通知が送信されるので、適切な対策を講じることができます。
 
 ### コンテンツ配信関連の早期導入プログラム {#foundation-early-adopter}
 

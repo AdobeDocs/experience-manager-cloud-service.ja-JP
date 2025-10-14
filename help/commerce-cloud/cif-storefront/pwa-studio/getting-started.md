@@ -107,7 +107,7 @@ AEM コンテンツフラグメントのドキュメントに従って、AEM プ
 
   例：`pwa-studio-test-vflyn.local.pwadev`
 
-両方の設定の完全な例については、[ こちら ](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config) を参照してください。
+両方の設定の完全な例については、[&#x200B; こちら &#x200B;](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config) を参照してください。
 
 GraphQL エンドポイントを紹介するために、サンプルコンテンツフラグメントのモデルとデータを、コンテンツパッケージでいくつか用意しています。これらは、PWA Studio 用拡張機能に付属する React コンポーネントとうまく連携して機能します。
 

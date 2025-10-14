@@ -51,7 +51,7 @@ Windows マシンにのみインストールできるAEM Forms デスクトッ�
 
 インタラクティブ通信エディターは、Forms as a Cloud Service デプロイメントの早期アクセスプログラムで使用できます。 アクセスをリクエストするには、Forms as a Cloud Service デプロイメントの組織 ID とプログラムの詳細を、公式アドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールで送信します。
 
-アクセス権を付与されたら、[ 最初の通信の作成 ](https://video.tv.adobe.com/v/3444094/) を開始します。
+アクセス権を付与されたら、[&#x200B; 最初の通信の作成 &#x200B;](https://video.tv.adobe.com/v/3444094/) を開始します。
 
 <!-- 
 

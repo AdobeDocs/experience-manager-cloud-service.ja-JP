@@ -50,7 +50,7 @@ ht-degree: 69%
 
   ![PDF ビューアを使用した [!DNL Experience Manager] での PDF ファイルのプレビュー](/help/assets/assets/preview-pdf-file-viewer.png)
 
-* リンク共有のダウンロード機能は、非同期ダウンロードを使用してダウンロード速度を上げます。 詳しくは、[ リンク共有を使用して共有されたアセットのダウンロード ](/help/assets/download-assets-from-aem.md#link-share-download) を参照してください。
+* リンク共有のダウンロード機能は、非同期ダウンロードを使用してダウンロード速度を上げます。 詳しくは、[&#x200B; リンク共有を使用して共有されたアセットのダウンロード &#x200B;](/help/assets/download-assets-from-aem.md#link-share-download) を参照してください。
 
   ![ダウンロードインボックス](/help/assets/assets/download-inbox.png)
 
@@ -85,7 +85,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` は、[!DNL Experience Manag
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms}
 
-* automated forms conversionサービスを使用して [ フランス語、ドイツ語、スペイン語のPDF formsをアダプティブフォームに変換 ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=ja#language-specific-meta-model) できるようになりました。
+* automated forms conversionサービスを使用して [&#x200B; フランス語、ドイツ語、スペイン語のPDF formsをアダプティブフォームに変換 &#x200B;](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=ja#language-specific-meta-model) できるようになりました。
 * テンプレートエディターに、アダプティブフォームのコンポーネントに関連するエラーを表示するためのパネルを別途追加しました。 これにより、すべてのアダプティブフォームのエラーが 1 か所に集約されるので、解決に要する時間を短縮できます。
 
 ### [!DNL Forms]プレリリースチャネルで利用できる新機能 {#beta-features-forms}
@@ -99,7 +99,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` は、[!DNL Experience Manag
 
 * **Acroform べースのレコードのドキュメント**：XFA ベースのフォームテンプレート以外にも、[Adobe Acrobat Form PDF（Acroform PDF）](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja) を、レコードドキュメントのテンプレートとして使用することもできます。
 
-* **Microsoft® Azure データストアコネクタ**: [ フォームデータモデルをMicrosoft® Azure ストレージに接続 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=ja) できるようになりました。 アダプティブフォームデータを取得して、BLOB としてMicrosoft® Azure ストレージに保存できます。
+* **Microsoft® Azure データストアコネクタ**: [&#x200B; フォームデータモデルをMicrosoft® Azure ストレージに接続 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=ja) できるようになりました。 アダプティブフォームデータを取得して、BLOB としてMicrosoft® Azure ストレージに保存できます。
 
 ## CIF アドオン {#cloud-services-cif}
 
@@ -194,4 +194,4 @@ Cloud Acceleration Manager は、Cloud Service の計画から運用開始まで
 
 >[!NOTE]
 >
-> この [Cloud Acceleration Manager デモビデオ ](https://video.tv.adobe.com/v/335547) をご覧ください。
+> この [Cloud Acceleration Manager デモビデオ &#x200B;](https://video.tv.adobe.com/v/335547) をご覧ください。

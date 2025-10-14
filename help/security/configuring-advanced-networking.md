@@ -16,13 +16,13 @@ ht-degree: 73%
 
 この記事では、AEM as a Cloud Serviceで利用できる高度なネットワーク機能について説明します。 これらの機能には、VPN のセルフサービスおよび API プロビジョニング、非標準ポート、専用のエグレス IP アドレスが含まれます。
 
-このドキュメントに加えて、高度なネットワークオプションのそれぞれを説明するように設計された一連のチュートリアルもあります。 [ 高度なネットワーク ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/networking/advanced-networking) を参照してください。
+このドキュメントに加えて、高度なネットワークオプションのそれぞれを説明するように設計された一連のチュートリアルもあります。 [&#x200B; 高度なネットワーク &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/networking/advanced-networking) を参照してください。
 
 >[!IMPORTANT]
 >
 >AEM as a Cloud Serviceの高度なネットワーク機能は、Cloud Manager UI から設定することも、Cloud Manager API （cURL など）を使用して設定することもできます。
 >
->この記事では、UI メソッドの使用に焦点を当てています。 API を使用して設定を自動化する場合は、[ 仮想プライベートネットワーク（VPN）のチュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/networking/vpn) を参照してください。
+>この記事では、UI メソッドの使用に焦点を当てています。 API を使用して設定を自動化する場合は、[&#x200B; 仮想プライベートネットワーク（VPN）のチュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/networking/vpn) を参照してください。
 >
 >**API を使用した高度なネットワーク機能の自動化**
 >高度なネットワーク設定（VPN の作成など）を自動化するには、Cloud Manager API を使用します。
@@ -44,7 +44,7 @@ ht-degree: 73%
 >   }'
 >```
 >
->[ 仮想プライベートネットワーク（VPN）チュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/networking/vpn) の完全なチュートリアルとその他の API の例を参照してください。
+>[&#x200B; 仮想プライベートネットワーク（VPN）チュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/networking/vpn) の完全なチュートリアルとその他の API の例を参照してください。
 >
 
 ## 概要 {#overview}
@@ -248,7 +248,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 専用 IP アドレス機能を有効にしないと、AEM as a Cloud Serviceからのトラフィックは一連の IP を通じて送られます。 これらの IP は、AEM as a Cloud Serviceの他のお客様が使用します。
 
-専用エグレス IP アドレスの設定は、[ フレキシブルポートエグレス ](#flexible-port-egress) と似ています。 主な違いとして、設定後は、トラフィックが常に一意の専用 IP アドレスから発信されます。その IP を確認するには、DNS リゾルバーを使用して、`p{PROGRAM_ID}.external.adobeaemcloud.com` に関連付けられている IP アドレスを特定します。この IP アドレスは固定ですが、変更する必要がある場合は、事前に通知されます。
+専用エグレス IP アドレスの設定は、[&#x200B; フレキシブルポートエグレス &#x200B;](#flexible-port-egress) と似ています。 主な違いとして、設定後は、トラフィックが常に一意の専用 IP アドレスから発信されます。その IP を確認するには、DNS リゾルバーを使用して、`p{PROGRAM_ID}.external.adobeaemcloud.com` に関連付けられている IP アドレスを特定します。この IP アドレスは固定ですが、変更する必要がある場合は、事前に通知されます。
 
 >[!TIP]
 >
@@ -738,7 +738,7 @@ API はわずか数秒で応答し、`updating` のステータスを示しま�
 
 1. **プログラムの概要** ページから、「**環境** タブに移動します。
 1. 左側のパネルで、「**ネットワークインフラストラクチャ**」をクリックします。
-1. 削除するインフラストラクチャの横にある ![ 詳細アイコン、省略記号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+1. 削除するインフラストラクチャの横にある ![&#x200B; 詳細アイコン、省略記号 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
    ![プログラムレベルでの高度なネットワーク機能の編集または削除の選択](assets/advanced-networking-ui-delete-infrastructure.png)
 

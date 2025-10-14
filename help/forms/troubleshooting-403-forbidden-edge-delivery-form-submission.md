@@ -75,7 +75,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 >
 >`main--abc--adobe.aem.live` と `main--abc1--adobe.aem.live` を実際のサイトドメインに置き換えます。 同じリポジトリからホストされる各サイトには、個別の CORS 設定エントリが必要です。
 
-CORS 設定について詳しくは、『 [CORS 設定ガイド ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors) 』を参照してください。
+CORS 設定について詳しくは、『 [CORS 設定ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors) 』を参照してください。
 
 ### 2.Dispatcherのルール
 
@@ -262,8 +262,8 @@ Helix-5 およびリポーレスアーキテクチャでは、次のガイドラ
 ## その他のリソース
 
 - [AEM ヘッドレスとリファラーフィルターの設定](/help/headless/deployment/referrer-filter.md)
-- [CORS 設定ガイド ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
-- [ クロスオリジンリソース共有について ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
+- [CORS 設定ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [&#x200B; クロスオリジンリソース共有について &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 - [Edge Delivery Services Forms ドキュメント](/help/edge/docs/forms/universal-editor/publish-forms.md)
 
 ## 関連トピック

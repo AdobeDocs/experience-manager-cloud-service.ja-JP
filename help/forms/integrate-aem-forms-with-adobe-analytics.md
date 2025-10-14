@@ -325,7 +325,7 @@ Adobe Analyticsは、パフォーマンスを低下させることなく数百�
 
 AEM Formsは、[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=ja) とシームレスに統合され、公開済みフォームのパフォーマンス指標を自動的に取得および追跡します。 追加の設定を行わずに、認証済みユーザーと匿名ユーザーの両方の動作を監視できます。
 
-フォーム分析を実装する前に、[AEM Forms環境が適切に設定されており ](/help/forms/setup-forms-cloud-service.md) コアコンポーネントまたは [ 基盤コンポーネント ](/help/forms/creating-adaptive-form-core-components.md) を使用して [ アダプティブフォームを作成 ](/help/forms/creating-adaptive-form.md) していることを確認してください。
+フォーム分析を実装する前に、[AEM Forms環境が適切に設定されており &#x200B;](/help/forms/setup-forms-cloud-service.md) コアコンポーネントまたは [&#x200B; 基盤コンポーネント &#x200B;](/help/forms/creating-adaptive-form-core-components.md) を使用して [&#x200B; アダプティブフォームを作成 &#x200B;](/help/forms/creating-adaptive-form.md) していることを確認してください。
 
 **包括的なフォームイベントトラッキング：**
 
@@ -493,7 +493,7 @@ Adobe AnalyticsとAEM Formsの統合には、次のような独自の利点が�
 
 >[!NOTE]
 >
->セットアップ中に問題が発生した場合は、包括的な [AEM Forms トラブルシューティングガイド ](/help/forms/troubleshooting-installation-and-configuration.md) でインストールと設定に関する問題を参照してください。
+>セットアップ中に問題が発生した場合は、包括的な [AEM Forms トラブルシューティングガイド &#x200B;](/help/forms/troubleshooting-installation-and-configuration.md) でインストールと設定に関する問題を参照してください。
 
 **Adobe Experience Cloud アクセス**
 
@@ -505,8 +505,8 @@ Adobe AnalyticsとAEM Formsの統合には、次のような独自の利点が�
 
 - [AEM Forms as a Cloud Service](/help/forms/setup-forms-cloud-service.md) またはAEM Forms 6.5 以降（オンプレミス/AMS インストール）
 - Formsのオーサリング機能と公開機能の有効化
-- AEM環境で [Forms オプションが使用可能で ](/help/forms/troubleshooting-installation-and-configuration.md#forms-option-is-unavailable) ることを確認します
-- [ アダプティブ Forms コアコンポーネント ](/help/forms/creating-adaptive-form-core-components.md) または [ 基盤コンポーネント ](/help/forms/creating-adaptive-form.md) を使用できます
+- AEM環境で [Forms オプションが使用可能で &#x200B;](/help/forms/troubleshooting-installation-and-configuration.md#forms-option-is-unavailable) ることを確認します
+- [&#x200B; アダプティブ Forms コアコンポーネント &#x200B;](/help/forms/creating-adaptive-form-core-components.md) または [&#x200B; 基盤コンポーネント &#x200B;](/help/forms/creating-adaptive-form.md) を使用できます
 
 **技術的要件**
 
@@ -916,7 +916,7 @@ Adobe Analyticsには、基本的な設定に加えて、高度なフォーム�
 
 >[!TIP]
 >
->その他のトラブルシューティングガイダンスについては、[AEM Formsのトラブルシューティングコレクション ](/help/forms/troubleshooting-installation-and-configuration.md) および [ フォーム作成のトラブルシューティング ](/help/forms/form-creation-failing.md) ガイドを参照してください。
+>その他のトラブルシューティングガイダンスについては、[AEM Formsのトラブルシューティングコレクション &#x200B;](/help/forms/troubleshooting-installation-and-configuration.md) および [&#x200B; フォーム作成のトラブルシューティング &#x200B;](/help/forms/form-creation-failing.md) ガイドを参照してください。
 
 **設定の問題**
 
@@ -963,7 +963,7 @@ Adobe Analyticsには、基本的な設定に加えて、高度なフォーム�
 
 >[!TIP]
 >
->Analytics を実装する前に、[AEM Formsのベストプラクティスと適切な ](/help/forms/introduction-forms-authoring.md) 送信アクション [ を使用してフォームが正しく設定されてい ](/help/forms/configuring-submit-actions.md) ことを確認します。
+>Analytics を実装する前に、[AEM Formsのベストプラクティスと適切な &#x200B;](/help/forms/introduction-forms-authoring.md) 送信アクション [&#x200B; を使用してフォームが正しく設定されてい &#x200B;](/help/forms/configuring-submit-actions.md) ことを確認します。
 
 ### 実装のガイドライン
 

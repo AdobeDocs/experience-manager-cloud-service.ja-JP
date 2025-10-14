@@ -44,7 +44,7 @@ ht-degree: 91%
 
   ![アセットの並べ替え](/help/assets/assets/asset-sort-options.png)
 
-* このリリースでは、[!DNL Experience Manager Assets] のアクセシビリティに関する次の機能強化が行われています。詳しくは、[ [!DNL Assets]](/help/assets/accessibility.md) のアクセシビリティ機能を参照してください。
+* このリリースでは、[!DNL Experience Manager Assets] のアクセシビリティに関する次の機能強化が行われています。詳しくは、[&#x200B; [!DNL Assets]](/help/assets/accessibility.md) のアクセシビリティ機能を参照してください。
 
    * キーボードを使用してタイムラインのナビゲーションを行う場合、Esc キーを押すと、フォーカスを失わずに「すべて表示」オプションを折りたたむことができます。
    * キーボードの Tab キーを使用してナビゲーションを行う場合、追加したタグから最後のタグを削除した後も、フォーカスはそのタグフィールドにとどまります。
@@ -69,15 +69,15 @@ ht-degree: 91%
    * キーボードおよびスクリーンリーダーのユーザーは切り抜き機能を使用できます。
    * キーボードユーザーによるホットスポットの管理が向上しました。
 
-  詳しくは、[ [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md)のアクセシビリティを参照してください。
+  詳しくは、[&#x200B; [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md)のアクセシビリティを参照してください。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### 新機能 {#what-is-new-commerce}
 
-* 最新のCIF コアコンポーネント v1.5.0 を含んだCIF Venia 参照サイト 2020.11.05 をリリースしました。詳しくは、[CIF Venia 参照サイト ](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) を参照してください。
+* 最新のCIF コアコンポーネント v1.5.0 を含んだCIF Venia 参照サイト 2020.11.05 をリリースしました。詳しくは、[CIF Venia 参照サイト &#x200B;](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) を参照してください。
 
-* CIF コアコンポーネント v1.5.0 をリリースしました。詳しくは、[CIF コアコンポーネント ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) を参照してください。
+* CIF コアコンポーネント v1.5.0 をリリースしました。詳しくは、[CIF コアコンポーネント &#x200B;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) を参照してください。
 
 ### バグの修正 {#bug-fixes-commerce}
 
@@ -118,7 +118,7 @@ AEM as a Cloud Service の SDK ビルドアナライザー Maven プラグイン
 
 ### その他 {#others-foundation}
 
-新しい [ 「httpd -t」構文 ](/help/implementing/dispatcher/disp-overview.md#local-validation)Cloud Managerのビルド時に実行される Apache および Dispatcher 設定の確認。これを、AEM as a Cloud Service SDK のDispatcher Tools を使用して実行することもできます。
+新しい [&#x200B; 「httpd -t」構文 &#x200B;](/help/implementing/dispatcher/disp-overview.md#local-validation)Cloud Managerのビルド時に実行される Apache および Dispatcher 設定の確認。これを、AEM as a Cloud Service SDK のDispatcher Tools を使用して実行することもできます。
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 

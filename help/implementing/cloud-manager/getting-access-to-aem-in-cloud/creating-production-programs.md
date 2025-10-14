@@ -59,7 +59,7 @@ ht-degree: 95%
 
 
 
-   * ソリューション名の左側にある ![ 山形サイズ 300 アイコン ](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) をクリックして、オプションのアドオンを表示します。<!-- such as the **Commerce** add-on option under **Sites**. -->
+   * ソリューション名の左側にある ![&#x200B; 山形サイズ 300 アイコン &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) をクリックして、オプションのアドオンを表示します。<!-- such as the **Commerce** add-on option under **Sites**. -->
 
    ![アドオンを選択](assets/setup-prod-commerce.png)
 

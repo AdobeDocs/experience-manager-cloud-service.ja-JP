@@ -364,8 +364,8 @@ DDX を呼び出しステップには次のプロパティがあります。
 
      >[!NOTE]
      >
-     > **フォームデータモデルの呼び出し** ワークフローステップでは、[SharePoint リストベースのフォームデータモデルで、Base64 でエンコードされた添付ファイル配列のワークフロー側メタデータをサポートしており ](/help/forms/connect-forms-to-sharepoint-list.md) 添付ファイルのファイル名、MIME タイプ、カスタムプロパティなどのメタデータをワークフローで渡し、保存、取得できます。
-     > ![SP リストの添付ファイル ](/help/edge/docs/forms/assets/workflow-sp-list.png)
+     > **フォームデータモデルの呼び出し** ワークフローステップでは、[SharePoint リストベースのフォームデータモデルで、Base64 でエンコードされた添付ファイル配列のワークフロー側メタデータをサポートしており &#x200B;](/help/forms/connect-forms-to-sharepoint-list.md) 添付ファイルのファイル名、MIME タイプ、カスタムプロパティなどのメタデータをワークフローで渡し、保存、取得できます。
+     > ![SP リストの添付ファイル &#x200B;](/help/edge/docs/forms/assets/workflow-sp-list.png)
      >
      > 「ペイロードに相対的」フォルダーの `attachment` の場所にはファイル添付が含まれています。`attachment` ペイロードに相対的 **[!UICONTROL オプションを選択した後、テキストボックスで]** を指定します。
 

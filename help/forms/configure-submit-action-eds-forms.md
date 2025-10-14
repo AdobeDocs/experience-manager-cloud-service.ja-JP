@@ -23,11 +23,11 @@ ht-degree: 22%
 
 送信アクションは、データの保存、ワークフローのトリガー、サードパーティシステムとの統合など、ユーザーがフォームを送信したときの動作を定義します。 設定できる送信アクションの種類は、Edge Delivery Services Formsの作成に使用したオーサリング方法によって異なります。
 
-Edge Delivery Services Formsは、[ ユニバーサルエディター ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) または [ ドキュメントベースのForms](/help/edge/docs/forms/overview.md) オーサリングを使用して作成し、それに応じて、異なる送信アクションを持つフォームを設定できます。
+Edge Delivery Services Formsは、[&#x200B; ユニバーサルエディター &#x200B;](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) または [&#x200B; ドキュメントベースのForms](/help/edge/docs/forms/overview.md) オーサリングを使用して作成し、それに応じて、異なる送信アクションを持つフォームを設定できます。
 
 ## ユニバーサルエディターで作成されたFormsの送信アクション
 
-[ ユニバーサルエディターで作成されたアダプティブForms](/help/edge/docs/forms/universal-editor/create-forms.md) では、次の送信アクションがサポートされています。
+[&#x200B; ユニバーサルエディターで作成されたアダプティブForms](/help/edge/docs/forms/universal-editor/create-forms.md) では、次の送信アクションがサポートされています。
 
 * [メールを送信](/help/forms/configure-submit-action-send-email.md)
 * [Power Automate フローを起動](/help/forms/forms-microsoft-power-automate-integration.md)
@@ -63,7 +63,7 @@ You can configure the submit action for forms created in the Universal Editor us
 
 ## ドキュメントベースのFormsの送信アクション
 
-ドキュメントベースのFormsでは、スプレッドシートへの送信のみをサポートしています。 送信されたデータを受け取るスプレッドシートの設定方法については、[ データの受け入れを開始するためのGoogle シートまたはMicrosoft Excel ファイルの設定 ](/help/edge/docs/forms/submit-forms.md) 記事の手順を参照してください。
+ドキュメントベースのFormsでは、スプレッドシートへの送信のみをサポートしています。 送信されたデータを受け取るスプレッドシートの設定方法については、[&#x200B; データの受け入れを開始するためのGoogle シートまたはMicrosoft Excel ファイルの設定 &#x200B;](/help/edge/docs/forms/submit-forms.md) 記事の手順を参照してください。
 
 ## 関連トピック {#see-also}
 

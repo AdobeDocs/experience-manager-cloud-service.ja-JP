@@ -167,7 +167,7 @@ Edit Properties dialog for an interactive communication-->
 
 1. `https://server:host/system/console/configMgr` で Experience Manager web コンソールに移動します。
 1. 「**[!UICONTROL サービス呼び出し用のフォームデータモデルのアダプティブフォームレベルの許可リスト登録 - 設定ファクトリ]**」を見つけます。
-1. ![プラスアイコン ](/help/forms/assets/Smock_Add_18_N.svg) をクリックして設定を追加します。
+1. ![プラスアイコン &#x200B;](/help/forms/assets/Smock_Add_18_N.svg) をクリックして設定を追加します。
 1. **[!UICONTROL コンテンツパスパターン]**&#x200B;を追加して、アダプティブフォームの場所を指定します。デフォルトでは、値は `/content/forms/af/(.*)` で、すべてのアダプティブフォームが含まれています。特定のアダプティブフォームのパスを指定することもできます。
 1. **[!UICONTROL フォームデータモデルのパスパターン]**&#x200B;を追加して、フォームデータモデル（FDM）の場所を指定します。デフォルトでは、値は `/content/dams/formsanddocuments-fdm/(.*)` で、すべてのフォームデータモデル（FDM）が含まれています。また、特定のフォームデータモデル（FDM）のパスを指定することもできます。
 1. 設定を保存します。

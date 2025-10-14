@@ -174,7 +174,7 @@ UI のすべての文字列が国際化されたかどうかをテストしま�
 
 次の画像は、AEM ホームページのスタブ翻訳です。
 
-![AEM ホームページのスタブ翻訳 ](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
+![AEM ホームページのスタブ翻訳 &#x200B;](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
 
 ユーザーの言語を設定するには、ユーザーアカウントの環境設定ノードで言語プロパティを設定します。
 

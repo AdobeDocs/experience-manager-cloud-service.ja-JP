@@ -41,13 +41,13 @@ ht-degree: 62%
 * メール コンポーネントを使用すると、AEMでコンテンツを作成し、そのコンテンツをCampaign Classic経由でメールとして配信できます。 コアメールコンポーネント：
    * 編集可能テンプレートとスタイルシステムをサポートする [&#128279;](https://github.com/adobe/aem-core-wcm-components) コア WCM コンポーネント  をベースにしています。
    * メール用に最適化され、実稼動ですぐに使える 10 個のコンポーネント（ページ、コンテナ、タイトル、テキスト、画像、ボタン、ティーザー、エクスペリエンスフラグメント、コンテンツフラグメント、セグメント化）を提供します。
-   * ほとんどのダイアログフィールドに [Campaign 変数の挿入 ](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) と、柔軟な [ セグメント化コンポーネント ](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)) により、高度なパーソナライゼーションとセグメント化を提供します。
-   * [CSS スタイルインライナー ](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)、[HTML属性インライナー ](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)、[HTMLサニタイザー ](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation) により、メールに最適なHTML出力を提供します。
+   * ほとんどのダイアログフィールドに [Campaign 変数の挿入 &#x200B;](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) と、柔軟な [&#x200B; セグメント化コンポーネント &#x200B;](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)) により、高度なパーソナライゼーションとセグメント化を提供します。
+   * [CSS スタイルインライナー &#x200B;](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)、[HTML属性インライナー &#x200B;](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)、[HTMLサニタイザー &#x200B;](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation) により、メールに最適なHTML出力を提供します。
    * どこでもメールを作成できます。
 
 ### [!DNL Sites] プレリリースチャネルで利用できる新機能 {#prerelease-features-sites}
 
-* [ コンテンツフラグメントコンソール ](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) には、コンテンツフラグメントに関連付けられている言語コピーの合計数を表示するオプションが用意されています。 すべての言語コピーを表示するための 1 回のクリックアクセスが提供されています。 また、ユーザーは、関心があるロケールに基づいてテーブル表示をフィルタリングすることもできます。
+* [&#x200B; コンテンツフラグメントコンソール &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) には、コンテンツフラグメントに関連付けられている言語コピーの合計数を表示するオプションが用意されています。 すべての言語コピーを表示するための 1 回のクリックアクセスが提供されています。 また、ユーザーは、関心があるロケールに基づいてテーブル表示をフィルタリングすることもできます。
 
 ![コンテンツフラグメントの言語](/help/release-notes/assets/cfconsole-languages.png)
 
@@ -55,7 +55,7 @@ ht-degree: 62%
 
 ### の新機能[!DNL Assets] {#features-assets}
 
-* Adobe Experience Manager Assetsを設定して [ ユーザーがアップロードできるアセットのタイプを MIME タイプに基づいて制限 ](/help/assets/configure-asset-upload-restrictions.md) できるようになりました。
+* Adobe Experience Manager Assetsを設定して [&#x200B; ユーザーがアップロードできるアセットのタイプを MIME タイプに基づいて制限 &#x200B;](/help/assets/configure-asset-upload-restrictions.md) できるようになりました。
 
   ![アセットアップロードの制限](/help/assets/assets/asset-upload-restrictions.png)
 

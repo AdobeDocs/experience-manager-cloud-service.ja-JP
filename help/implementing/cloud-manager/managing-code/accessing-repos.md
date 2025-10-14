@@ -40,7 +40,7 @@ Cloud Managerを使用すると、**パイプライン** カードから「リ�
 
 1. **プログラムの概要** ページの **パイプライン** カードの下の「**リポジトリー情報へアクセス**」をクリックします。
 
-   ![ パイプラインカードのリポジトリ情報にアクセス ](assets/pipelines-card.png)
+   ![&#x200B; パイプラインカードのリポジトリ情報にアクセス &#x200B;](assets/pipelines-card.png)
 
 1. パスワードにアクセスするには、新しいパスワードを生成する必要があります。**リポジトリ情報** ダイアログボックスで、「**パスワードを生成**」を選択します。
 
@@ -48,22 +48,22 @@ Cloud Managerを使用すると、**パイプライン** カードから「リ�
 
    ![パスワードの生成を確認](assets/confirm-generated-password.png)
 
-1. 「**パスワード**」フィールドの右側にある ![ コピーアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) をクリックして、パスワードをクリップボードにコピーします。
+1. 「**パスワード**」フィールドの右側にある ![&#x200B; コピーアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) をクリックして、パスワードをクリップボードにコピーします。
 
    * パスワードを生成すると、以前のパスワードは無効になります。
    * Cloud Managerはパスワードを保存しません。 パスワードを安全に保存するのはユーザーの責任です。
    * Cloud Managerはパスワードを保存しないので、パスワードを失った場合は、新しく再生成する必要があります。
 
-   ![ リポジトリ情報ダイアログボックスのパスワードをコピー ](/help/implementing/cloud-manager/managing-code/assets/repository-copy-password.png)
+   ![&#x200B; リポジトリ情報ダイアログボックスのパスワードをコピー &#x200B;](/help/implementing/cloud-manager/managing-code/assets/repository-copy-password.png)
 
 これらの資格情報を使用して、リポジトリのローカルコピーを複製し、そのローカルリポジトリで変更を加えることができます。変更できたら、Cloud Manager のリモートコードリポジトリにコードの変更をコミットして戻すことができます。
 
 ## リポジトリーページからのリポジトリー情報へのアクセス {#repositories-window}
 
-**リポジトリ情報にアクセス** 機能は、[**リポジトリ** ページ ](managing-repositories.md) からも使用できます。 アドビが管理するリポジトリへのアクセスに関する同じ情報が表示されます。
+**リポジトリ情報にアクセス** 機能は、[**リポジトリ** ページ &#x200B;](managing-repositories.md) からも使用できます。 アドビが管理するリポジトリへのアクセスに関する同じ情報が表示されます。
 
 ## アクセスパスワードの失効 {#revoke-password}
 
 アクセスパスワードはいつでも取り消すことができます。
 
-それには、[ このリクエストのサポートチケットを作成 ](https://experienceleague.adobe.com/ja?support-solution=Experience+Manager&amp;support-tab=home#support) します。 チケットは優先度が高く処理され、通常は 1 日以内に失効します。
+それには、[&#x200B; このリクエストのサポートチケットを作成 &#x200B;](https://experienceleague.adobe.com/ja?support-solution=Experience+Manager&support-tab=home#support) します。 チケットは優先度が高く処理され、通常は 1 日以内に失効します。

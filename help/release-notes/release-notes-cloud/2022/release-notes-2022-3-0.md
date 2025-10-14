@@ -92,7 +92,7 @@ ht-degree: 84%
 
 ### 新機能 {#what-is-new-foundation}
 
-* クラウド環境のカスタム機能のトラブルシューティングをより効率的かつ効果的に行うために、新しい開発者ツール、[ リポジトリーブラウザー ](/help/implementing/developing/tools/repository-browser.md) がリリースされました。 軽量な読み取り専用のHTMLブラウザーで、Developer Consoleから起動できます。 パブリッシュ、オーサー、プレビューの各層および実稼動、ステージ、開発を含むすべての環境で、コンテンツリポジトリーを表示できます。コンテンツ構造を参照し、プロパティを表示し、バイナリをプレビューおよびダウンロードします。
+* クラウド環境のカスタム機能のトラブルシューティングをより効率的かつ効果的に行うために、新しい開発者ツール、[&#x200B; リポジトリーブラウザー &#x200B;](/help/implementing/developing/tools/repository-browser.md) がリリースされました。 軽量な読み取り専用のHTMLブラウザーで、Developer Consoleから起動できます。 パブリッシュ、オーサー、プレビューの各層および実稼動、ステージ、開発を含むすべての環境で、コンテンツリポジトリーを表示できます。コンテンツ構造を参照し、プロパティを表示し、バイナリをプレビューおよびダウンロードします。
 
   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 

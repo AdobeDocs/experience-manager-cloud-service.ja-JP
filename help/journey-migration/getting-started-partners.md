@@ -33,7 +33,7 @@ Cloud Serviceは、すぐに使用できる豊富な機能とAdobe Experience Ma
 
 移行ジャーニーの一般的な表示については、以下の図を参照してください。
 
-![ 移行ジャーニーの一般表現 ](/help/journey-migration/assets/migration-process.png)
+![&#x200B; 移行ジャーニーの一般表現 &#x200B;](/help/journey-migration/assets/migration-process.png)
 
 ## Adobe Experience Manager as a Cloud Service について {#getting-started}
 
@@ -117,7 +117,7 @@ Cloud Service への移行プロセスには、計画、実行、運用開始後
 
 Cloud Service への推奨される移行プロセスの概要を次の図に示します。
 
-![Cloud Serviceへの推奨される移行プロセスの概要 ](/help/journey-migration/assets/home-img1.png)
+![Cloud Serviceへの推奨される移行プロセスの概要 &#x200B;](/help/journey-migration/assets/home-img1.png)
 
 <br>
 

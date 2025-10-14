@@ -77,7 +77,7 @@ curl
 
 ## 顧客管理 CDN とのインタラクション
 
-[ 顧客管理 CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) の場合は、`X-Forwarded-Host` と `X-AEM-Edge-Key` も指定する必要があります。
+[&#x200B; 顧客管理 CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) の場合は、`X-Forwarded-Host` と `X-AEM-Edge-Key` も指定する必要があります。
 
 ```
 curl

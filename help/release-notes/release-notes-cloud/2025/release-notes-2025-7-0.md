@@ -179,7 +179,7 @@ API 統合ツールにより、フォーム作成者は、ユーザーの操作�
 
 ### 権限管理のノードビュー {#node-view}
 
-AEMでは、ノードビュー権限管理が導入されています。 主な機能は従来の UI と同じですが、よりユーザーフレンドリーで効率的です。 詳しくは、[ 専用の記事 ](/help/security/touch-ui-principal-view.md) を参照してください。
+AEMでは、ノードビュー権限管理が導入されています。 主な機能は従来の UI と同じですが、よりユーザーフレンドリーで効率的です。 詳しくは、[&#x200B; 専用の記事 &#x200B;](/help/security/touch-ui-principal-view.md) を参照してください。
 
 ### 更新された非推奨プロセス {#updated-deprecation-process}
 

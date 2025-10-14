@@ -34,9 +34,9 @@ AEM SDK設定で機能の切り替えを有効にする前に、次を確認し�
 
 * ユーザーは `forms-users` グループのメンバーです。
 
-* `http://<author-instance-url>:portnumber/system/console/bundles` に移動し、**（com.adobe.granite.toggle.impl.dev-1.1.2.jar）** バンドルが存在するかどうかを確認します。 存在しない場合は [ リンクからバンドルをダウンロード ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar)。
+* `http://<author-instance-url>:portnumber/system/console/bundles` に移動し、**（com.adobe.granite.toggle.impl.dev-1.1.2.jar）** バンドルが存在するかどうかを確認します。 存在しない場合は [&#x200B; リンクからバンドルをダウンロード &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar)。
 
-  ![ 機能切り替え ](/help/forms/assets/aem-web-console-bundle.png)
+  ![&#x200B; 機能切り替え &#x200B;](/help/forms/assets/aem-web-console-bundle.png)
 
 ### 機能切替スイッチの有効化
 
@@ -48,12 +48,12 @@ AEM SDK インスタンスで機能の切り替えを有効にするには、次
 
 1. Configuration Manager で、Adobe Granite Dynamic Toggle Provider を検索します。
 
-   ![ 機能切り替え ](/help/forms/assets/aem-web-console-confi.png)
+   ![&#x200B; 機能切り替え &#x200B;](/help/forms/assets/aem-web-console-confi.png)
 
 1. のアイコンをクリック ✏️ ます。
 1. 「有効な切り替え」セクションで、➕ をクリックします。
 1. 以下の画像に示すように、機能の機能切り替え ID を追加します。
-   ![ 機能切り替え ](/help/forms/assets/feature-toggle.png)
+   ![&#x200B; 機能切り替え &#x200B;](/help/forms/assets/feature-toggle.png)
 
 1. 「保存」をクリックします
 
@@ -73,7 +73,7 @@ AEM SDK インスタンスで機能の切り替えを有効にするには、次
 1. 「無効な切り替え」セクションで、「➕ り替え」をクリックします。
 1. 無効にする機能のトグル番号を追加します。
 
-   ![ 機能切り替え ](/help/forms/assets/disable-toggle-feature.png)
+   ![&#x200B; 機能切り替え &#x200B;](/help/forms/assets/disable-toggle-feature.png)
 
 ### 技術的な考慮事項
 

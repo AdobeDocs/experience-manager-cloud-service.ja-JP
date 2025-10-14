@@ -27,7 +27,7 @@ ht-degree: 42%
 
 `Next` ボタンでルールを作成して、最初のパネルを検証できます。
 
-![ 「次へ」ボタンのルール ](/help/forms/assets/next-rule.png){width=50%}
+![&#x200B; 「次へ」ボタンのルール &#x200B;](/help/forms/assets/next-rule.png){width=50%}
 
 「**次へ**」ボタンをクリックすると、**個人情報** パネルが検証されます。 入力した詳細が正しい場合は、フォーカスが **アカウントセキュリティ** パネルに移動します。正しくない場合は、見つからない詳細の入力を求めるエラーメッセージが表示されます。
 
@@ -44,15 +44,15 @@ ht-degree: 42%
 
 `Navigate among the panels` ルールを使用して、異なるパネル間での切り替えを可能にするボタンのナビゲーションルールを作成できます。  `Shift focus to the next item` 属性を選択して、レイアウト内の次のパネルにフォーカスを移動します。
 
-![ 次のパネルルール ](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
+![&#x200B; 次のパネルルール &#x200B;](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
 
 `Next` ボタンをクリックすると、フォーカスがレイアウト内の次のパネルに移動します。
 
-![ 「次へ」ボタンを使用してパネル内を移動する ](/help/forms/assets/navigate-in-panel.gif)
+![&#x200B; 「次へ」ボタンを使用してパネル内を移動する &#x200B;](/help/forms/assets/navigate-in-panel.gif)
 
 同様に、「`Previous`」ボタンのルールを作成して、前のパネルにフォーカスを移動できます。
 
-![ 前のパネルルール ](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
+![&#x200B; 前のパネルルール &#x200B;](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
 
 ## 関数を使用した繰り返し可能なパネルでの複雑な計算の合理化
 
@@ -60,21 +60,21 @@ ht-degree: 42%
 
 繰り返し可能なパネルを持つフォームについて考えてみます。このパネルでは、各パネルインスタンスが、アセットの宣言済み値に関する情報を収集します。
 
-![ 繰り返し可能なフォーム ](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
+![&#x200B; 繰り返し可能なフォーム &#x200B;](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
 
 `Sum` 関数を使用して、すべてのパネルの合計アセット値を自動的に計算できるので、手動での計算が不要になり、エラーの可能性を減らすことができます。
 
-![OOTB 関数での繰り返し可能なパネルフィールドのサポート ](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+![OOTB 関数での繰り返し可能なパネルフィールドのサポート &#x200B;](/help/forms/assets/ootb-function-support-repeatable-panel.png)
 
 アセット値を宣言するインスタンスを追加してフォームに入力すると、「`Calculate Asset Value`」ボタンは、宣言されたすべてのアセット値の合計を計算し、その結果をテキストボックスに表示 `assetvalue` ます。
 
-![OOTB 関数での繰り返し可能なパネルフィールドのサポート ](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
+![OOTB 関数での繰り返し可能なパネルフィールドのサポート &#x200B;](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
 
 >[!NOTE]
 >
 > 繰り返し可能なパネルフィールドの値が配列を受け入れない関数に渡された場合、繰り返し可能なパネルの最後のインスタンスのフィールド値が関数に渡されます。
 
-これは一例に過ぎません。 使用可能な [ 関数 ](#b-form-objects-and-functions-br) を探索して、ワークフローを簡素化し、フォーム内のデータの精度を高めます。
+これは一例に過ぎません。 使用可能な [&#x200B; 関数 &#x200B;](#b-form-objects-and-functions-br) を探索して、ワークフローを簡素化し、フォーム内のデータの精度を高めます。
 
 ## ネスト式 {#nestedexpressions}
 

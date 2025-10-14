@@ -42,12 +42,12 @@ Cloud Managerは、クラウド環境にデプロイする場合と同じ手順�
 
 >[!NOTE]
 >
->AEM as a Cloud Service SDK は、[Cloud Manager のビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)によりサポートされている Java の配布とバージョンで構築する必要があります。AEM as a Cloud Serviceのお客様は、[ ソフトウェア配布ポータル ](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html) からOracle JDK をダウンロードできます。 2026 年 9 月まで Java 11 サポートが延長されます。これは、Adobe Experience Manager プロジェクトでのAdobeのOracle Java テクノロジーのライセンス条件およびサポート条件が原因です。
+>AEM as a Cloud Service SDK は、[Cloud Manager のビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)によりサポートされている Java の配布とバージョンで構築する必要があります。AEM as a Cloud Serviceのお客様は、[&#x200B; ソフトウェア配布ポータル &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html) からOracle JDK をダウンロードできます。 2026 年 9 月まで Java 11 サポートが延長されます。これは、Adobe Experience Manager プロジェクトでのAdobeのOracle Java テクノロジーのライセンス条件およびサポート条件が原因です。
 
 ## AEM as a Cloud Service の SDK へのアクセス {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * AEM Admin Consoleの「**Adobe Experience Managerについて**」アイコンをチェックすると、実稼動環境で実行しているAEMのバージョンを確認できます。
-* QuickStart Jar とDispatcher ツールは、[ ソフトウェア配布ポータル ](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html) から zip ファイルでダウンロードできます。 SDK リストへのアクセスは、AEM Managed Services または AEM as a Cloud Service の環境を持つユーザーに限られます。
+* QuickStart Jar とDispatcher ツールは、[&#x200B; ソフトウェア配布ポータル &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html) から zip ファイルでダウンロードできます。 SDK リストへのアクセスは、AEM Managed Services または AEM as a Cloud Service の環境を持つユーザーに限られます。
 * Java™ API Jar と Javadoc Jar は、Maven ツールを使用して、コマンドラインまたは好みの IDE でダウンロードできます。
 * Maven プロジェクトの POM では、以下の API JAR パッケージを参照する必要があります。サブパッケージの POM への依存も参照する必要があります。
 
@@ -93,7 +93,7 @@ Cloud Managerは、クラウド環境にデプロイする場合と同じ手順�
 
 Adobeでは、SDKを頻繁に（例：隔週で）アップデートすることをお勧めします。 また、完全なローカル状態を毎日破棄して、アプリケーション内で誤ってステートフルデータに依存しないようにします。
 
-クラウドサービス用の CryptoSupport、SMTP メール設定または CryptoSupport API を使用している場合、暗号化されたプロパティはキーで保護されます。 詳しくは、[CryptoSupport API ドキュメント ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html) を参照してください。 この鍵は、AEM 環境の初回起動時に自動生成されます。クラウド設定では環境固有の暗号鍵の自動的な再利用に対応できますが、ローカル開発環境に暗号鍵を組み込む必要があります。
+クラウドサービス用の CryptoSupport、SMTP メール設定または CryptoSupport API を使用している場合、暗号化されたプロパティはキーで保護されます。 詳しくは、[CryptoSupport API ドキュメント &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html) を参照してください。 この鍵は、AEM 環境の初回起動時に自動生成されます。クラウド設定では環境固有の暗号鍵の自動的な再利用に対応できますが、ローカル開発環境に暗号鍵を組み込む必要があります。
 
 デフォルトでは、AEMはキーデータをフォルダーのデータフォルダー内に格納するように設定されていますが、開発時に再利用しやすくするために、初回起動時に「`-Dcom.adobe.granite.crypto.file.disable=true`」を使用してAEM プロセスを初期化できます。 このプロセスは、「`/etc/key`」に暗号化データを生成します。
 

@@ -29,8 +29,8 @@ ht-degree: 94%
 
 1. **運用開始**&#x200B;カードの「**表示**」ボタンをクリックします。
 
-   ![ 運用開始 – 表示 ](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
+   ![&#x200B; 運用開始 – 表示 &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 1. コンテンツカルーセルには、移行ジャーニーのこのフェーズに関係のある情報が表示されます。
 
-   ![ コンテンツカルーセルに関連情報が表示される ](/help/journey-migration/cloud-acceleration-manager/assets/golive-2.png)
+   ![&#x200B; コンテンツカルーセルに関連情報が表示される &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/golive-2.png)

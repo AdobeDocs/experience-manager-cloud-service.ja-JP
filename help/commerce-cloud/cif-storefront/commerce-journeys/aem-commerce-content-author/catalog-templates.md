@@ -19,7 +19,7 @@ ht-degree: 72%
 
 ## これまでの説明内容 {#story-so-far}
 
-AEM コンテンツおよびCommerceのオーサリングジャーニーの前のドキュメントである [AEM CIF オーサリングの基礎知識 ](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/getting-started.md) では、CIF オーサリングの基本を確認しました。
+AEM コンテンツおよびCommerceのオーサリングジャーニーの前のドキュメントである [AEM CIF オーサリングの基礎知識 &#x200B;](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/getting-started.md) では、CIF オーサリングの基本を確認しました。
 
 この記事は、これらの基本事項に基づいて作成されています。
 
@@ -83,7 +83,7 @@ CIF は、数回のクリックで複数のテンプレートをサポートし�
 
 汎用テンプレートの下に特定のテンプレートが作成されました。
 
-![ テンプレート階層の作成 ](assets/create-template-hierachry.png)
+![&#x200B; テンプレート階層の作成 &#x200B;](assets/create-template-hierachry.png)
 
 テンプレートを開きます。汎用カテゴリテンプレートとまったく同じ外観です。
 
@@ -115,11 +115,11 @@ CIF は、数回のクリックで複数のテンプレートをサポートし�
 * 汎用テンプレートの仕組み
 * 個々のテンプレートを作成している
 
-この知識に基づいて、次は [ ステージングされた製品カタログエクスペリエンスを管理 ](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md) のドキュメントを確認して、ジャーニーを続行してください。そこでは、ステージングされた製品データとAEM ローンチの操作方法を習得します。
+この知識に基づいて、次は [&#x200B; ステージングされた製品カタログエクスペリエンスを管理 &#x200B;](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md) のドキュメントを確認して、ジャーニーを続行してください。そこでは、ステージングされた製品データとAEM ローンチの操作方法を習得します。
 
 ## その他のリソース {#additional-resources}
 
-[ ステージングされた製品カタログエクスペリエンスを管理 ](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md) のドキュメントを確認して、ジャーニーの次のパートに進むことをお勧めしますが、以下のリソースではこのドキュメントで取り上げた概念についてより詳しく説明しています。追加的なオプションであり、ジャーニーを続ける上で必須のリソースではありません。
+[&#x200B; ステージングされた製品カタログエクスペリエンスを管理 &#x200B;](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md) のドキュメントを確認して、ジャーニーの次のパートに進むことをお勧めしますが、以下のリソースではこのドキュメントで取り上げた概念についてより詳しく説明しています。追加的なオプションであり、ジャーニーを続ける上で必須のリソースではありません。
 
 * [複数のカテゴリページと製品ページの作成](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md)
 * [Experience Manager Cloud Service への移行ガイド](/help/commerce-cloud/cif-storefront/migration.md) - 古いバージョンから AEM Commerce 統合フレームワーク（CIF）アドオンに移行する方法

@@ -311,8 +311,8 @@ Forms Experience Builder は、フォームを外部システム、API および
 
 統合の問題の場合：
 
-- [Forms Experience Builder の FAQ を確認してください ](forms-experience-builder-frequently-asked-questions.md)
-- [ はじめる前に ](forms-experience-builder-getting-started.md) を確認してください
+- [Forms Experience Builder の FAQ を確認してください &#x200B;](forms-experience-builder-frequently-asked-questions.md)
+- [&#x200B; はじめる前に &#x200B;](forms-experience-builder-getting-started.md) を確認してください
 - 技術的なサポートについては、システム管理者にお問い合わせください
 - 外部サービスについては、API ドキュメントを参照してください
 

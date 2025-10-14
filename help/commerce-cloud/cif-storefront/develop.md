@@ -30,14 +30,14 @@ AEM as a Cloud Service 用の Commerce Integration Framework（CIF）に基づ�
 
 >[!VIDEO](https://video.tv.adobe.com/v/347038/?quality=12&learn=on&captions=jpn)
 
-CIF プロジェクトを使用する場合は、ローカル開発環境を使用することをお勧めします。AEM as a Cloud Service 用に提供された CIF アドオンは、ローカル開発にも使用できます。[ ソフトウェア配布ポータル ](/help/implementing/developing/tools/package-manager.md#software-distribution) からダウンロードできます。
+CIF プロジェクトを使用する場合は、ローカル開発環境を使用することをお勧めします。AEM as a Cloud Service 用に提供された CIF アドオンは、ローカル開発にも使用できます。[&#x200B; ソフトウェア配布ポータル &#x200B;](/help/implementing/developing/tools/package-manager.md#software-distribution) からダウンロードできます。
 
 CIF アドオンは Sling 機能アーカイブとして提供されます。ソフトウェア配布ポータルで利用できる zip ファイルには、2 つの Sling 機能アーカイブファイルが含まれています。1 つは AEM オーサー用、もう 1 つは AEM パブリッシュインスタンス用です。
 
 >[!TIP]
 >
 >**AEM as a Cloud Serviceを初めて使用する場合**
->&#x200B;>[AEM as a Cloud Service SDKを使用したローカル開発環境のセットアップに関する詳細なガイド ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ja) を参照してください。
+>&#x200B;>[AEM as a Cloud Service SDKを使用したローカル開発環境のセットアップに関する詳細なガイド &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ja) を参照してください。
 
 ### 必要なソフトウェア {#required-software}
 
@@ -52,7 +52,7 @@ CIF アドオンは Sling 機能アーカイブとして提供されます。ソ
 
 ### CIF アドオンへのアクセス {#accessing-add-on}
 
-CIF アドオンは、[ ソフトウェア配布ポータルから zip ファイルでダウンロードできます。zip ファイルに ](/help/implementing/developing/tools/package-manager.md)Sling 機能アーカイブ **としてCIF アドオンが含まれているのであれ**、AEM パッケージではありません。 SDK リストには、AEM as a Cloud Serviceライセンスでアクセスできます。
+CIF アドオンは、[&#x200B; ソフトウェア配布ポータルから zip ファイルでダウンロードできます。zip ファイルに &#x200B;](/help/implementing/developing/tools/package-manager.md)Sling 機能アーカイブ **としてCIF アドオンが含まれているのであれ**、AEM パッケージではありません。 SDK リストには、AEM as a Cloud Serviceライセンスでアクセスできます。
 
 >[!TIP]
 >
@@ -79,7 +79,7 @@ AEM as a Cloud Service SDKを使用するローカル CIF アドオン開発の�
 
    * この変数は、AEM でコマースシステムへの接続に使用されます。CIF アドオンには、Commerce GraphQL エンドポイントをローカルで使用できるようにするローカルリバースプロキシが含まれています。 このプロキシは、CIF オーサリングツール（製品コンソールおよびピッカー）で使用され、GraphQL の直接呼び出しを行う CIF クライアントサイドコンポーネントにも使用されます。
 
-   * この変数は、AEM as a Cloud Service 環境に対しても設定する必要があります。変数について詳しくは、[AEM as a Cloud Serviceの OSGi の設定 ](/help/implementing/deploying/configuring-osgi.md#local-development) を参照してください。
+   * この変数は、AEM as a Cloud Service 環境に対しても設定する必要があります。変数について詳しくは、[AEM as a Cloud Serviceの OSGi の設定 &#x200B;](/help/implementing/deploying/configuring-osgi.md#local-development) を参照してください。
 
    * macOSの下の例：
 
@@ -101,7 +101,7 @@ AEM as a Cloud Service SDKを使用するローカル CIF アドオン開発の�
      Authorization: Bearer <Access Token>
      ```
 
-   * 秘密鍵について詳しくは、[AEM as a Cloud Serviceの OSGi の設定 ](/help/implementing/deploying/configuring-osgi.md#local-development) を参照してください。
+   * 秘密鍵について詳しくは、[AEM as a Cloud Serviceの OSGi の設定 &#x200B;](/help/implementing/deploying/configuring-osgi.md#local-development) を参照してください。
 
 1. AEM as a Cloud Service SDKを開始します。
 

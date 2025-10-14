@@ -23,7 +23,7 @@ ht-degree: 86%
 
 # AEM CIF コアコンポーネントのスタイル設定 {#style-aem-cif-core-components}
 
-[CIF Venia プロジェクト ](https://github.com/adobe/aem-cif-guides-venia) は、[CIF コアコンポーネントを使用するための参照コードベースです。](https://github.com/adobe/aem-core-cif-components) このチュートリアルでは、Venia 参照プロジェクトを調べ、AEM CIF コアコンポーネントで使用される CSS とJavaScriptがどのように整理されているかを理解します。 また、CSS を使用してスタイルを作成し、**製品ティーザー**&#x200B;コンポーネントのデフォルトのスタイルを更新します。
+[CIF Venia プロジェクト &#x200B;](https://github.com/adobe/aem-cif-guides-venia) は、[CIF コアコンポーネントを使用するための参照コードベースです。](https://github.com/adobe/aem-core-cif-components) このチュートリアルでは、Venia 参照プロジェクトを調べ、AEM CIF コアコンポーネントで使用される CSS とJavaScriptがどのように整理されているかを理解します。 また、CSS を使用してスタイルを作成し、**製品ティーザー**&#x200B;コンポーネントのデフォルトのスタイルを更新します。
 
 >[!TIP]
 >
@@ -37,11 +37,11 @@ ht-degree: 86%
 
 ## 前提条件 {#prerequisites}
 
-このチュートリアルを完了するには、ローカルの開発環境が必要です。この環境には、Adobe Commerce インスタンスに設定および接続された AEM の実行インスタンスが含まれます。[AEM as a Cloud Service SDKとのローカル開発のセットアップ ](/help/commerce-cloud/cif-storefront/develop.md) の要件と手順を確認します。
+このチュートリアルを完了するには、ローカルの開発環境が必要です。この環境には、Adobe Commerce インスタンスに設定および接続された AEM の実行インスタンスが含まれます。[AEM as a Cloud Service SDKとのローカル開発のセットアップ &#x200B;](/help/commerce-cloud/cif-storefront/develop.md) の要件と手順を確認します。
 
 ## Venia プロジェクトをクローン {#clone-venia-project}
 
-[Venia プロジェクト ](https://github.com/adobe/aem-cif-guides-venia) を複製してから、デフォルトのスタイルを上書きします。
+[Venia プロジェクト &#x200B;](https://github.com/adobe/aem-cif-guides-venia) を複製してから、デフォルトのスタイルを上書きします。
 
 >[!NOTE]
 >
@@ -258,7 +258,7 @@ ht-degree: 86%
 
 ## ページテンプレートによるクライアントライブラリの追加 {#client-library-inclusion-pagetemplates}
 
-クライアントサイドライブラリを含める方法には、いくつかのオプションがあります。次に、`clientlib-site` ページテンプレート [ を使用して、生成されたプロジェクトに ](/help/implementing/developing/components/templates.md) ライブラリがどのように含まれているかを調べます。
+クライアントサイドライブラリを含める方法には、いくつかのオプションがあります。次に、`clientlib-site` ページテンプレート [&#x200B; を使用して、生成されたプロジェクトに &#x200B;](/help/implementing/developing/components/templates.md) ライブラリがどのように含まれているかを調べます。
 
 1. AEM Editor 内のサイトの **ホームページ** に移動します。[http://localhost:4502/editor.html/content/venia/us/en.html.](http://localhost:4502/editor.html/content/venia/us/en.html)
 
@@ -468,7 +468,7 @@ IDE と生成されたプロジェクトに戻ります。
 
 新しい CSS ファイル、JavaScript ファイル、またはその両方をデプロイする場合は、ブラウザーで古いファイルが提供されないようにすることも重要です。ブラウザーキャッシュをクリアするか、新しいブラウザーセッションを開始することで、この潜在的な問題を解消できます。
 
-また、AEM は、パフォーマンスを考慮してクライアントライブラリをキャッシュしようとします。コードがデプロイされた後で、古いファイルが提供されることがあります。[ クライアントライブラリの再ビルド ツールを使用すると、AEMのクライアントライブラリキャッシュを手動で無効にすることができます。](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) *AEMが古いバージョンのクライアントライブラリをキャッシュしていると思われる場合は、キャッシュを無効にする方法をお勧めします。 「ライブラリのリビルド」は非効率で時間がかかります。*
+また、AEM は、パフォーマンスを考慮してクライアントライブラリをキャッシュしようとします。コードがデプロイされた後で、古いファイルが提供されることがあります。[&#x200B; クライアントライブラリの再ビルド ツールを使用すると、AEMのクライアントライブラリキャッシュを手動で無効にすることができます。](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) *AEMが古いバージョンのクライアントライブラリをキャッシュしていると思われる場合は、キャッシュを無効にする方法をお勧めします。 「ライブラリのリビルド」は非効率で時間がかかります。*
 
 ## これで完了です {#congratulations}
 

@@ -14,7 +14,7 @@ ht-degree: 84%
 
 # コマース統合フレームワーク（CIF）アドオンの主な変更点 {#notable-changes}
 
-Adobe Experience Manager as a Cloud Service は、AEM プロジェクトを管理するための様々な新機能と可能性を提供します。これらの機能の詳細については、[Experience Manager as a Cloud Serviceの変更点 ](/help/release-notes/aem-cloud-changes.md) を参照してください。
+Adobe Experience Manager as a Cloud Service は、AEM プロジェクトを管理するための様々な新機能と可能性を提供します。これらの機能の詳細については、[Experience Manager as a Cloud Serviceの変更点 &#x200B;](/help/release-notes/aem-cloud-changes.md) を参照してください。
 
 このドキュメントでは、主に CIF Classic（Quickstart）と CIF オープンソースと呼ばれる、コマース統合フレームワーク（CIF）アドオンと古い CIF バージョンの重要な相違点について説明します。
 
@@ -41,7 +41,7 @@ AEM CIF アドオンは、Cloud Manager を使用してインストールされ�
 
 ## CIF Venia プロジェクトのデプロイメント {#venia-project}
 
-プロジェクトは [Cloud Manager Git リポジトリーで入手可能で ](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) [Cloud Manager.](/help/implementing/deploying/overview.md) を介してデプロイされます
+プロジェクトは [Cloud Manager Git リポジトリーで入手可能で &#x200B;](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) [Cloud Manager.](/help/implementing/deploying/overview.md) を介してデプロイされます
 
 ### 以前のCIF バージョン {#previous-versions-venia}
 

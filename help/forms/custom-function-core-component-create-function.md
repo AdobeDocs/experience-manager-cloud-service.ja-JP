@@ -57,7 +57,7 @@ ht-degree: 55%
 
 **リポジトリのクローンを作成**
 
-[AEM Forms as a Cloud Service リポジトリ ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=jp#accessing-git) のクローンを作成します。
+[AEM Forms as a Cloud Service リポジトリ &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=jp#accessing-git) のクローンを作成します。
 
 1. コマンドラインまたはターミナルウィンドウを開きます。
 
@@ -173,7 +173,7 @@ AEM as a Cloud Service の [AEMaaCS プロジェクトディレクトリ]を Clo
 
 パイプラインをまだ設定していない場合は、[AEM Forms as a Cloud Service のパイプラインの設定方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)のガイドを参照してください。
 
-パイプラインが正常に実行されると、クライアントライブラリに追加されたカスタム関数が [ アダプティブフォームのルールエディター ](/help/forms/rule-editor-core-components.md) で使用できるようになります。
+パイプラインが正常に実行されると、クライアントライブラリに追加されたカスタム関数が [&#x200B; アダプティブフォームのルールエディター &#x200B;](/help/forms/rule-editor-core-components.md) で使用できるようになります。
 
 ### アダプティブフォームにクライアントライブラリを追加{#use-custom-function}
 
@@ -192,11 +192,11 @@ AEM as a Cloud Service の [AEMaaCS プロジェクトディレクトリ]を Clo
 
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
-カスタム関数は、[JavaScript注釈 ](/help/forms/rule-editor-core-components.md) を使用して [ アダプティブフォームのルールエディター ](##js-annotations) で使用できます。
+カスタム関数は、[JavaScript注釈 &#x200B;](/help/forms/rule-editor-core-components.md) を使用して [&#x200B; アダプティブフォームのルールエディター &#x200B;](##js-annotations) で使用できます。
 
 ## アダプティブフォームでのカスタム関数の使用
 
-アダプティブフォームでは、[ ルールエディター内のカスタム関数 ](/help/forms/rule-editor-core-components.md) を使用できます。 JavaScriptのファイル（`Function.js` ファイル）に次のコードを追加して、生年月日（YYYY-MM-DD）に基づいて年齢を計算しましょう。 生年月日を入力として受け取り、年齢を返す `calculateAge()` というカスタム関数を作成します。
+アダプティブフォームでは、[&#x200B; ルールエディター内のカスタム関数 &#x200B;](/help/forms/rule-editor-core-components.md) を使用できます。 JavaScriptのファイル（`Function.js` ファイル）に次のコードを追加して、生年月日（YYYY-MM-DD）に基づいて年齢を計算しましょう。 生年月日を入力として受け取り、年齢を返す `calculateAge()` というカスタム関数を作成します。
 
 ```javascript
     /**
@@ -223,11 +223,11 @@ AEM as a Cloud Service の [AEMaaCS プロジェクトディレクトリ]を Clo
 
 上記の例では、ユーザーが生年月日を（YYYY-MM-DD）形式で入力すると、カスタム関数 `calculateAge` が呼び出され、年齢が返されます。
 
-![ ルールエディター内の Calcualte Agae カスタム関数 ](/help/forms/assets/custom-function-calculate-age.png)
+![&#x200B; ルールエディター内の Calcualte Agae カスタム関数 &#x200B;](/help/forms/assets/custom-function-calculate-age.png)
 
 フォームをプレビューして、ルールエディターを通じてカスタム関数がどのように実装されるかを確認しましょう。
 
-![ ルールエディターフォームプレビューでの Agae カスタム関数の計算 ](/help/forms/assets/custom-function-age-calculate-form.png)
+![&#x200B; ルールエディターフォームプレビューでの Agae カスタム関数の計算 &#x200B;](/help/forms/assets/custom-function-age-calculate-form.png)
 
 >[!NOTE]
 >
@@ -243,7 +243,7 @@ AEM Forms のカスタム関数は、フォームの機能を拡張およびパ�
 
 ### カスタム関数での非同期のサポート {#support-of-async-functions}
 
-カスタム関数を使用すると、ルールエディターで非同期関数を実装できます。 この方法のガイダンスについては、記事 [ アダプティブフォームでの非同期関数の使用 ](/help/forms/using-async-funct-in-rule-editor.md) を参照してください。
+カスタム関数を使用すると、ルールエディターで非同期関数を実装できます。 この方法のガイダンスについては、記事 [&#x200B; アダプティブフォームでの非同期関数の使用 &#x200B;](/help/forms/using-async-funct-in-rule-editor.md) を参照してください。
 
 ### フィールドおよびグローバルスコープのオブジェクトは、カスタム関数でサポートされています。 {#support-field-and-global-objects}
 
@@ -253,7 +253,7 @@ AEM Forms のカスタム関数は、フォームの機能を拡張およびパ�
 >
 > `param {scope} globals` は最後のパラメーターにする必要があり、アダプティブフォームのルールエディターには表示されません。
 
-スコープ オブジェクトの詳細については、「[ カスタム関数のスコープ オブジェクト ](/help/forms/custom-function-core-component-scope-function.md)」を参照してください。
+スコープ オブジェクトの詳細については、「[&#x200B; カスタム関数のスコープ オブジェクト &#x200B;](/help/forms/custom-function-core-component-scope-function.md)」を参照してください。
 
 ### カスタム関数でのキャッシュサポート
 
@@ -275,7 +275,7 @@ AEM Forms のカスタム関数は、フォームの機能を拡張およびパ�
 
 ## 次の手順
 
-次に、様々な [ コアコンポーネントに基づくアダプティブフォームのカスタム関数の例 ](/help/forms/custom-function-core-components-use-cases.md) を見てみましょう。
+次に、様々な [&#x200B; コアコンポーネントに基づくアダプティブフォームのカスタム関数の例 &#x200B;](/help/forms/custom-function-core-components-use-cases.md) を見てみましょう。
 
 ## 関連トピック
 

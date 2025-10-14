@@ -28,7 +28,7 @@ Sling モデルを更新し、マークアップをカスタマイズして、AE
 
 1. サイドパネルを展開し（まだ切り替えていない場合）、アセットファインダードロップダウンを **製品** に切り替えます。
 
-   ![ カルーセル製品 ](/help/commerce-cloud/cif-storefront/assets/carousel-products.png)
+   ![&#x200B; カルーセル製品 &#x200B;](/help/commerce-cloud/cif-storefront/assets/carousel-products.png)
 
 1. 接続された Adobe Commerce インスタンスから使用可能な製品のリストが表示されます。
 

@@ -86,7 +86,7 @@ Dynamic Media Classic レポートダッシュボードの「帯域幅」タブ�
 
 ### プレリリース機能
 
-* [ アダプティブFormsおよびフォームフラグメント用のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：ユニバーサルエディターでは、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成が迅速化され、一貫性が高まり、ススパムや自動化による悪用からの保護が強化されます。
+* [&#x200B; アダプティブFormsおよびフォームフラグメント用のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：ユニバーサルエディターでは、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成が迅速化され、一貫性が高まり、ススパムや自動化による悪用からの保護が強化されます。
 
 * [SharePoint ドキュメントライブラリ - 添付ファイルを元のファイル名で保存](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library)：フォームの添付ファイルを SharePoint ドキュメントライブラリに保存する際に、元のファイル名を使用して保存するオプションが追加されました。この機能強化により、アップロードしたファイルの識別と管理が簡素化されます。
 
@@ -95,7 +95,7 @@ Dynamic Media Classic レポートダッシュボードの「帯域幅」タブ�
    * [フィールドとパネルの検証条件](/help/forms/rule-editor-core-components-usecases.md)：ルールエディターに _IsValid_ 条件と _IsNotValid_ 条件が含まれるようになりました。これらを使用すると、特定のフィールドまたはパネル全体（水平タブ、垂直タブ、アコーディオン、ウィザードなどのレイアウトを含む）の検証ステータスを確認できるので、検証結果に基づいてフォームのナビゲーションとユーザーエクスペリエンスが向上します。
 * [SharePoint リストの範囲管理の改善](/help/forms/connect-forms-to-sharepoint-list.md)：SharePoint サイトでは、/sites や /teams などのすべての管理パスをサポートするようになりました。この機能強化により、様々な SharePoint サイト構造をまたいで幅広い統合が可能になり、組織のコンテンツに接続する際の柔軟性が向上します。
 * [SharePoint リストへのレコードのドキュメントの保存のサポート](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields)：SharePoint リストベースのフォームデータモデル（FDM）を使用して作成したフォームでは、レコードのドキュメントのバインド参照フィールドプロパティを設定して、レコードのドキュメント（DoR）を SharePoint リストに保存できるようになりました。この機能強化により、サポートされているフォームデータとドキュメントの SharePoint ストレージとのシームレスな統合が可能になります。
-* [ アダプティブフォームフラグメントの自動マッピングのサポート ](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form)：アダプティブFormsでは、スキーマオブジェクトが定義済みのフラグメント構造に一致する場合の、マッチングフラグメントの自動挿入をサポートするようになりました。これにより、フォームの作成が合理化され、再利用が促進されます。
+* [&#x200B; アダプティブフォームフラグメントの自動マッピングのサポート &#x200B;](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form)：アダプティブFormsでは、スキーマオブジェクトが定義済みのフラグメント構造に一致する場合の、マッチングフラグメントの自動挿入をサポートするようになりました。これにより、フォームの作成が合理化され、再利用が促進されます。
 
 ### AEM Forms の早期アクセス機能 {#forms-new-early-access-features}
 
@@ -112,8 +112,8 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 ### 機能強化 {#enhancements-cif}
 
 * CIF 製品参照データタイプに製品バリアント選択の追加
-* **試行用**:[JSON+LD をCIF コアコンポーネントの PDP に使用 ](/help/commerce-cloud/cif-storefront/customizing/json-ld.md)
-* **試行的**: [CIFでキャッシュをクリアする機能 ](/help/commerce-cloud/cif-storefront/configuring/clear-cache.md)
+* **試行用**:[JSON+LD をCIF コアコンポーネントの PDP に使用 &#x200B;](/help/commerce-cloud/cif-storefront/customizing/json-ld.md)
+* **試行的**: [CIFでキャッシュをクリアする機能 &#x200B;](/help/commerce-cloud/cif-storefront/configuring/clear-cache.md)
 
 ### バグ修正 {#bug-fixes-cif}
 

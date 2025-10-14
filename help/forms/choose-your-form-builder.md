@@ -154,7 +154,7 @@ AEM Formsには、3 つの主なフォーム作成アプローチが用意され
 
 ### 基盤コンポーネントからコアコンポーネントへ
 
-- **推奨されるアプローチ：** [ 移行ユーティリティツールを使用する ](/help/forms/migration-utility-tool-for-af-core-components.md)
+- **推奨されるアプローチ：** [&#x200B; 移行ユーティリティツールを使用する &#x200B;](/help/forms/migration-utility-tool-for-af-core-components.md)
 - **メリット：** 最新の機能、パフォーマンスの向上、デュアル公開機能
 - **作業量：** フォームの複雑さに応じて中程度から高い
 
@@ -180,8 +180,8 @@ AEM Formsには、3 つの主なフォーム作成アプローチが用意され
 
 ### ユニバーサルエディター（Edge Delivery Services）
 
-1. **WYSIWYG オーサリング：** [ ユニバーサルエディターの概要 ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-2. **ドキュメントベースのオーサリング：**&#x200B;[ スプレッドシートを使用して最初のフォームを作成 ](/help/edge/docs/forms/tutorial.md)
+1. **WYSIWYG オーサリング：** [&#x200B; ユニバーサルエディターの概要 &#x200B;](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+2. **ドキュメントベースのオーサリング：**&#x200B;[&#x200B; スプレッドシートを使用して最初のフォームを作成 &#x200B;](/help/edge/docs/forms/tutorial.md)
 
 
 ## 決定の助けが必要ですか？
@@ -199,6 +199,6 @@ AEM Formsには、3 つの主なフォーム作成アプローチが用意され
 ## 関連記事
 
 - [詳細なフォームオーサリングの比較](/help/edge/docs/forms/authoring-a-form.md)
-- [AEM Forms コアコンポーネントの概要 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)
+- [AEM Forms コアコンポーネントの概要 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)
 - [Edge Delivery Services for Formsの概要](/help/edge/docs/forms/overview.md)
-- [ コアコンポーネントを使用したヘッドレスアダプティブForms](https://experienceleague.adobe.com/ja/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)
+- [&#x200B; コアコンポーネントを使用したヘッドレスアダプティブForms](https://experienceleague.adobe.com/ja/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)

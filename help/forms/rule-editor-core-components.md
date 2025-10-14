@@ -39,7 +39,7 @@ ht-degree: 65%
 
 `forms-power-users` グループに追加されたユーザーは、スクリプトの作成と既存のスクリプトの編集を行うことができます。 [!DNL forms-users] グループのユーザーは、スクリプトを使用できますが、スクリプトの作成と編集はできません。
 
-詳細な比較については、[ 基盤ルールエディターとコアコンポーネントルールエディターの違い ](/help/forms/rule-editor-core-components-difference-tables.md) を参照してください。
+詳細な比較については、[&#x200B; 基盤ルールエディターとコアコンポーネントルールエディターの違い &#x200B;](/help/forms/rule-editor-core-components-difference-tables.md) を参照してください。
 
 <!--
 ## Difference between Rule editor in Core Components and Rule Editor in Foundation Components
@@ -92,7 +92,7 @@ ht-degree: 65%
 * 「When」のルール内に記述した条件は、その条件が適用されるオブジェクトの値をユーザーが変更した際に評価されます。しかし、値が変更された場合にサーバーサイドでアクションをトリガーする場合（値を事前入力する場合など）は、フィールドの初期化時にアクションをトリガーする「When」ルールを記述することが推奨されます。
 * ドロップダウン、ラジオボタン、チェックボックスの各オブジェクトに対してルールを記述する場合、フォーム内のこれらのフォームオブジェクトのオプションや値はルールエディターで事前入力されます。
 
-ルールエディターでルールの作成および管理にユーザーインターフェイスを使用する方法については、[ コアコンポーネントに基づくアダプティブFormsのルールエディターユーザーインターフェイス ](/help/forms/rule-editor-core-components-user-interface.md) を参照してください。
+ルールエディターでルールの作成および管理にユーザーインターフェイスを使用する方法については、[&#x200B; コアコンポーネントに基づくアダプティブFormsのルールエディターユーザーインターフェイス &#x200B;](/help/forms/rule-editor-core-components-user-interface.md) を参照してください。
 
 ## 関連トピック
 

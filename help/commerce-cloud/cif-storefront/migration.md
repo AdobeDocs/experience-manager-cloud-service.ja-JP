@@ -19,11 +19,11 @@ ht-degree: 73%
 
 ## CIF アドオン {#cif-add-on}
 
-Experience Manager as a Cloud Service の場合、Adobe Commerce およびサードパーティ製コマースソリューション向けにサポートされるコマース統合ソリューションは CIF アドオンだけです。CIF アドオンは、Experience Manager as a Cloud Service を使用するお客様の場合は自動的にデプロイされるので、手動でデプロイする必要はありません。[AEM Commerce as a Cloud Serviceの概要 ](/help/commerce-cloud/cif-storefront/getting-started.md) を参照してください。
+Experience Manager as a Cloud Service の場合、Adobe Commerce およびサードパーティ製コマースソリューション向けにサポートされるコマース統合ソリューションは CIF アドオンだけです。CIF アドオンは、Experience Manager as a Cloud Service を使用するお客様の場合は自動的にデプロイされるので、手動でデプロイする必要はありません。[AEM Commerce as a Cloud Serviceの概要 &#x200B;](/help/commerce-cloud/cif-storefront/getting-started.md) を参照してください。
 
 CIF Adobeをデプロイするプロジェクトをサポートするために、[AEM CIF コアコンポーネントを提供します。](https://github.com/adobe/aem-core-cif-components)
 
-CIF アドオンは、AEM 6.5 で利用可能で、[ ソフトウェア配布ポータル」からも入手できます。](/help/implementing/developing/tools/package-manager.md) このアドオンはExperience Manager as a Cloud Service用のCIF アドオンと互換性があり、同じ機能を提供します。調整は不要です。
+CIF アドオンは、AEM 6.5 で利用可能で、[&#x200B; ソフトウェア配布ポータル」からも入手できます。](/help/implementing/developing/tools/package-manager.md) このアドオンはExperience Manager as a Cloud Service用のCIF アドオンと互換性があり、同じ機能を提供します。調整は不要です。
 
 依存関係を持つクラシック CIF は使用できなくなりました。`com.adobe.cq.commerce.api` Java API を使用しているこの CIF バージョンに依存するコードは、CIF アドオンとその原則に従って調整する必要があります。
 
@@ -48,7 +48,7 @@ AEM 6.5 デプロイメントと比較して、主な違いは次の 2 つです
 
 >[!TIP]
 >
->リアルタイム API を使用できない場合は、API を使用した外部製品キャッシュを統合に使用する必要があります。例 [Magento オープンソース ](https://business.adobe.com/jp/products/magento/open-source.html)
+>リアルタイム API を使用できない場合は、API を使用した外部製品キャッシュを統合に使用する必要があります。例 [Magento オープンソース &#x200B;](https://business.adobe.com/jp/products/magento/open-source.html)
 
 ## AEM レンダリングを使用した製品カタログエクスペリエンス {#aem-rendering}
 

@@ -26,7 +26,7 @@ AEM Formsはカスタム関数をサポートし、複雑なビジネスルー�
 
 >[!NOTE]
 >
-> 最新の機能を使用するには、[ コアコンポーネント ](https://github.com/adobe/aem-core-forms-components) が最新バージョンに設定されていることを確認してください。
+> 最新の機能を使用するには、[&#x200B; コアコンポーネント &#x200B;](https://github.com/adobe/aem-core-forms-components) が最新バージョンに設定されていることを確認してください。
 
 ## カスタム関数の使用 {#uses-of-custom-function}
 
@@ -72,7 +72,7 @@ JavaScript注釈は、JavaScript コードのメタデータを提供するた�
    * date[]：日付値の配列を表します。
    * array：様々なタイプの値を含む汎用の配列を表します。
    * object：値を直接渡す代わりに、カスタム関数に渡されるフォームオブジェクトを表します。
-   * scope: globals オブジェクトを表します。このオブジェクトには、フォームインスタンス、ターゲットフィールドインスタンス、カスタム関数内でフォームの変更を実行するためのメソッドなどの読み取り専用変数が含まれています。 これはJavaScript注釈の最後のパラメーターとして宣言され、アダプティブフォームのルールエディターには表示されません。 scope パラメーターは、フォームまたはコンポーネントのオブジェクトにアクセスして、フォームの処理に必要なルールまたはイベントをトリガーします。Globals オブジェクトの詳細と使用方法については、[ ここをクリック ](/help/forms/custom-function-core-component-scope-function.md) してください。
+   * scope: globals オブジェクトを表します。このオブジェクトには、フォームインスタンス、ターゲットフィールドインスタンス、カスタム関数内でフォームの変更を実行するためのメソッドなどの読み取り専用変数が含まれています。 これはJavaScript注釈の最後のパラメーターとして宣言され、アダプティブフォームのルールエディターには表示されません。 scope パラメーターは、フォームまたはコンポーネントのオブジェクトにアクセスして、フォームの処理に必要なルールまたはイベントをトリガーします。Globals オブジェクトの詳細と使用方法については、[&#x200B; ここをクリック &#x200B;](/help/forms/custom-function-core-component-scope-function.md) してください。
 
 パラメータータイプでは大文字と小文字が区別されず、パラメーター名にはスペースを使用できません。
 
@@ -119,15 +119,15 @@ JavaScript注釈は、JavaScript コードのメタデータを提供するた�
 
 ルールエディターで `OptionalParameterFunction` カスタム関数を使用した例を次に示します。
 
-![ オプションまたは必須のパラメーター ](/help/forms/assets/optional-default-params.png)
+![&#x200B; オプションまたは必須のパラメーター &#x200B;](/help/forms/assets/optional-default-params.png)
 
 必須パラメーターの値を指定せずにルールを保存できますが、ルールは実行されず、次のような警告メッセージが表示されます。
 
-![ 不完全なルールの警告 ](/help/forms/assets/incomplete-rule.png)
+![&#x200B; 不完全なルールの警告 &#x200B;](/help/forms/assets/incomplete-rule.png)
 
 ユーザーがオプションパラメーターを空のままにすると、「未定義」の値がオプションパラメーターのカスタム関数に渡されます。
 
-JSDocs でオプション パラメータを定義する方法の詳細については、[ ここをクリック ](https://jsdoc.app/tags-param) してください。
+JSDocs でオプション パラメータを定義する方法の詳細については、[&#x200B; ここをクリック &#x200B;](https://jsdoc.app/tags-param) してください。
 
 ### 戻り値のタイプ
 
@@ -227,7 +227,7 @@ jsdoc コメントを含むまたは含まないカスタム関数を作成で�
 
 ## 次の手順
 
-アダプティブフォームでカスタム関数を作成および使用するには、[ コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成 ](/help/forms/custom-function-core-component-create-function.md) の記事を参照してください。
+アダプティブフォームでカスタム関数を作成および使用するには、[&#x200B; コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成 &#x200B;](/help/forms/custom-function-core-component-create-function.md) の記事を参照してください。
 
 ## 関連トピック
 

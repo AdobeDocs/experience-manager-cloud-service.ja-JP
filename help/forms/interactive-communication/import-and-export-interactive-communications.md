@@ -39,11 +39,11 @@ ht-degree: 15%
 
 +++&#x200B;1. インタラクティブ通信の書き出し方法
 
-1.1. [ 作成されたインタラクティブ通信 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) （IC）を選択します。
+1.1. [&#x200B; 作成されたインタラクティブ通信 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) （IC）を選択します。
 1.2. 「**ダウンロード**」オプションをクリックして、ZIP ファイルとしてエクスポートします。
 1.3. ダウンロードした ZIP ファイルには、選択した **template**、**fragments**、および **data model** と共に IC が含まれています。
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/downloadic.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/downloadic.png)
 +++
 
 +++&#x200B;2. インタラクティブ通信の読み込み方法
@@ -52,11 +52,11 @@ ht-degree: 15%
 2.2. **Forms/Formsとドキュメント/作成/ファイルのアップロード** に移動します。
 2.3. IC に ZIP ファイルをアップロードし **インポート** します。
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/uploadfile.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/uploadfile.png)
 
 2.4. アップロード後、IC は関連するフラグメントおよびデータモデルと共に表示されます。
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/importfragment.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/importfragment.png)
 +++
 
 +++&#x200B;3. フラグメントの読み込みと書き出し

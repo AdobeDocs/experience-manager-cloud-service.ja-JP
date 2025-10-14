@@ -92,7 +92,7 @@ Experience Manager Assets では、[シングルクリックでアセットま�
 
 [リンク共有の作成](/help/assets/share-assets.md)で新しい改善されたユーザーエクスペリエンスが実現し、さらにユーザーに対するこの機能のデフォルトの動作を管理者がカスタマイズできる、まったく新しい設定セットが追加されました。
 
-![ リンク共有設定 ](/help/assets/assets/config-email-service.png)
+![&#x200B; リンク共有設定 &#x200B;](/help/assets/assets/config-email-service.png)
 
 
 
@@ -283,7 +283,7 @@ Experience Manager Guides では、言語グループを作成し、コンテン
 管理者は、Generic REST Client、Salsify、Akeneo、Microsoft Azure DevOps Boards（ADO）などの一部のコネクタに対して複数のリソース URL を設定できます。
 次に、作成者は、ジェネレーターを使用してデータソースに接続し、コンテンツスニペットまたはトピックを作成します。この機能は、URL ごとにデータソースを作成する必要がないので便利です。これは、単一のコンテンツスニペットまたはトピック内の特定のデータソースのリソースからデータを迅速に取得するのに役立ちます。データソースコネクタの詳細と、[ユーザーインターフェイスからデータソースコネクタを設定](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools)する方法を参照してください。[データソースからデータを使用](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet)する方法を参照してください。
 
-新機能および機能強化について詳しくは、[Experience Manager Guides リリース情報 ](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) を参照してください。
+新機能および機能強化について詳しくは、[Experience Manager Guides リリース情報 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 

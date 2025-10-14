@@ -48,7 +48,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 ### インタラクティブビデオの作成方法を見る {#watch-how-interactive-videos-are-created}
 
-[インタラクティブビデオの作成方法](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo)に関するガイド（7 分 30 秒）を視聴します
+[インタラクティブビデオの作成方法](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveVideo)に関するガイド（7 分 30 秒）を視聴します
 （このビデオガイドの対象は Assets on Demand ですが、原則や手順は Adobe Experience Manager Assets のインタラクティブビデオにも対応しています）。
 
 ### アドビカスタマーサクセスウェビナー {#adobe-customer-success-webinar}
@@ -140,10 +140,10 @@ There was a link here that showed the video frame of an interactive video and wh
     <td><p>単一の SKU（クエリ文字列内）</p> </td>
     <td><p>記録されたクイックビューの URLとしては以下が挙げられます。</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
     </ul> <p>この URL で変化する唯一の部分は <code>productId=</code> というクエリ文字列パラメーターの値であり、これが SKU 値であることは明白です。したがって、サムネールでは、<strong><code>866558</code></strong>、<strong><code>1196184</code></strong>、<strong><code>1081492</code></strong>、<strong><code>1898294</code></strong> などの値が設定された SKU フィールドのみが必要になります。</p> </td>
   </tr>
   <tr>
@@ -159,9 +159,9 @@ There was a link here that showed the video frame of an interactive video and wh
     <td><p>SKU とカテゴリ ID（クエリ文字列内）</p> </td>
     <td><p>記録されたクイックビューの URLとしては以下が挙げられます。</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
     </ul> <p>この場合、URL には変化する部分が 2 つあります。SKU が <code>prodId</code> パラメーターに、カテゴリ ID が <code>category=</code> パラメーターに格納されています。</p> <p>そのため、サムネール定義はペアになります。つまり、SKU 値と、<code>categoryId</code> という追加の変数です。結果のペアは次のようになります。</p>
     <ul>
       <li>SKU が <code>305466</code>、<code>categoryId</code> が <code>1100004</code></li>

@@ -69,7 +69,7 @@ ht-degree: 92%
 
 #### Dynamic Media の新機能 {#what-is-new-dm}
 
-* スマートイメージング DPR（Device Pixel Ratio）とネットワーク帯域幅の最適化により、高解像度のディスプレイとネットワーク帯域幅の制約があるデバイスで、最高品質の画像を効率的に配信できます。詳しくは、[ スマートイメージングに関する FAQ](/help/assets/dynamic-media/imaging-faq.md) および [ 次世代の画像形式 WebP および AVIF による画像の最適化 ](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) を参照してください。
+* スマートイメージング DPR（Device Pixel Ratio）とネットワーク帯域幅の最適化により、高解像度のディスプレイとネットワーク帯域幅の制約があるデバイスで、最高品質の画像を効率的に配信できます。詳しくは、[&#x200B; スマートイメージングに関する FAQ](/help/assets/dynamic-media/imaging-faq.md) および [&#x200B; 次世代の画像形式 WebP および AVIF による画像の最適化 &#x200B;](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) を参照してください。
 * Dynamic Media 配信で、次世代画像形式 AVIF のサポートが導入されました（fmt URL 修飾子）。
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}

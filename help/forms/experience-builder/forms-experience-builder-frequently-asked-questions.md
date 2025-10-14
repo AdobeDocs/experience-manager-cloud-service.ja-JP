@@ -51,7 +51,7 @@ Forms Experience Builder を使用する前に、次のことを確認します�
 - アダプティブ Forms コアコンポーネントを使用したAEM Forms as a Cloud Service
 - フォームの概念とビジネス要件の基本的な理解
 
-技術的な設定要件について詳しくは、[Forms Experience Builder のデプロイと設定 ](deploy-forms-experience-builder.md) を参照してください。
+技術的な設定要件について詳しくは、[Forms Experience Builder のデプロイと設定 &#x200B;](deploy-forms-experience-builder.md) を参照してください。
 
 ### 環境内でForms Experience Builder を有効にするにはどうすればよいですか？
 
@@ -231,8 +231,8 @@ Forms Experience Builder で作成されたFormsは、次のような標準のAE
 
 その他のサポート：
 
-- [ はじめる前に ](forms-experience-builder-getting-started.md) を確認してください
-- [ デプロイと設定ガイド ](deploy-forms-experience-builder.md) を確認します
+- [&#x200B; はじめる前に &#x200B;](forms-experience-builder-getting-started.md) を確認してください
+- [&#x200B; デプロイと設定ガイド &#x200B;](deploy-forms-experience-builder.md) を確認します
 - システム管理者にお問い合わせください
 - 技術的な問題については、Adobe サポートにお問い合わせください
 

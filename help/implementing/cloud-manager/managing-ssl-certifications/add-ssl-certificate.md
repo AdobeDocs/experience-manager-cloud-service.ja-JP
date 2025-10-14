@@ -19,7 +19,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->顧客管理（OV/EV）の SSL 証明書と顧客管理の CDN プロバイダーを使用する場合は、SSL 証明書の追加をスキップし、準備が整ったら [ ドメインマッピングの追加 ](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) に直接進むことができます。
+>顧客管理（OV/EV）の SSL 証明書と顧客管理の CDN プロバイダーを使用する場合は、SSL 証明書の追加をスキップし、準備が整ったら [&#x200B; ドメインマッピングの追加 &#x200B;](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) に直接進むことができます。
 
 証明書のプロビジョニングには、数日かかる場合があります。したがって、アドビでは、遅延を避けるために、期限や運用開始日に先立って独自の証明書をプロビジョニングすることをお勧めします。
 

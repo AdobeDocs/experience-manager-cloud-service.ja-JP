@@ -39,7 +39,7 @@ ht-degree: 81%
 
 ### の新機能[!DNL Sites] {#sites-features}
 
-* コンテンツ管理者やコンテンツ作成者が、ヘッドレスのユースケースでのコンテンツフラグメントの管理（公開、非公開、コピー、移動など）、検索/フィルタリング、作成を効率的に行うための新しい [ ユーザーインターフェイス ](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) を使用できるようになりました。
+* コンテンツ管理者やコンテンツ作成者が、ヘッドレスのユースケースでのコンテンツフラグメントの管理（公開、非公開、コピー、移動など）、検索/フィルタリング、作成を効率的に行うための新しい [&#x200B; ユーザーインターフェイス &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) を使用できるようになりました。
 
   ![コンテンツフラグメントコンソール](/help/release-notes/assets/cf-ui.png)
 

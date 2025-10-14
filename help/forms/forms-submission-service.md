@@ -19,7 +19,7 @@ Forms送信サービスは、Adobeがホストするソリューションであ�
 
 ## 概要
 
-![Forms送信サービス ](/help/forms/assets/form-submission-service.png)
+![Forms送信サービス &#x200B;](/help/forms/assets/form-submission-service.png)
 *図：Forms送信サービスのワークフロー – フォーム送信からスプレッドシートストレージへ*
 
 +++ このサービスの利用者
@@ -113,7 +113,7 @@ Forms送信サービスを設定する前に、次のことを確認してくだ
 
 >[!TIP]
 >
->**Edge Delivery Servicesを初めて使用する場合** はじめに [ チュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) から始めて、プロジェクトの基盤を設定します。
+>**Edge Delivery Servicesを初めて使用する場合** はじめに [&#x200B; チュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) から始めて、プロジェクトの基盤を設定します。
 
 ## 設定方法
 
@@ -133,7 +133,7 @@ Forms送信サービスには、2 つの設定方法があります。 ワーク
 
 どちらの方法を設定する場合でも、事前にAEM プロジェクト基盤の準備が整っていることを確認してください。
 
-1. **AEM プロジェクトを作成または更新** し、最新のアダプティブ Forms ブロックを使用します（[ はじめる前にチュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)）。
+1. **AEM プロジェクトを作成または更新** し、最新のアダプティブ Forms ブロックを使用します（[&#x200B; はじめる前にチュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)）。
 
 2. **プロジェクトルートの`fstab.yaml`** を更新します。
 
@@ -150,7 +150,7 @@ Forms送信サービスには、2 つの設定方法があります。 ワーク
 
 ## 手動設定
 
-![Forms 送信サービスのワークフロー ](/help/forms/assets/forms-submission-service-workflow.png)
+![Forms 送信サービスのワークフロー &#x200B;](/help/forms/assets/forms-submission-service-workflow.png)
 *図：Forms送信サービスの手動設定の完全なワークフロー*
 
 スプレッドシート送信を使用してフォームを設定するには、次のステップバイステップの手順に従います。
@@ -166,9 +166,9 @@ Google Sheets またはMicrosoft Excel を使用してフォーム構造を作�
 1. **スプレッドシートプラットフォームを開く** （Google Sheets またはMicrosoft Excel）
 2. フォームプロジェクトの **新しいスプレッドシートの作成**
 3. **シートに名前を付ける** （`helix-default` または `shared-aem` のいずれかにする必要があります）
-4. **フォーム作成ガイド** 使用した [ フォーム構造の定義 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+4. **フォーム作成ガイド** 使用した [&#x200B; フォーム構造の定義 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
-![ フォームの定義 ](/help/forms/assets/form-submission-definition.png)
+![&#x200B; フォームの定義 &#x200B;](/help/forms/assets/form-submission-definition.png)
 *例：フィールドタイプ、ラベル、検証ルールを含むフォーム定義*
 
 >[!IMPORTANT]
@@ -201,7 +201,7 @@ Google Sheets またはMicrosoft Excel を使用してフォーム構造を作�
 3. フォームフィールドに一致する **列ヘッダーの設定**
 4. **スプレッドシートを保存** して、変更が保持されるようにします
 
-![ 受信シート ](/help/forms/assets/form-submission-incoming-sheet.png)
+![&#x200B; 受信シート &#x200B;](/help/forms/assets/form-submission-incoming-sheet.png)
 *例：フォームフィールドと一致する列ヘッダーを持つ受信シート*
 
 >[!WARNING]
@@ -241,7 +241,7 @@ Google Sheets またはMicrosoft Excel を使用してフォーム構造を作�
 3. **共有招待を送信する**
 4. 次の手順のために **スプレッドシートリンクをコピー** します
 
-   ![ 受信シートの共有 ](/help/forms/assets/form-submission-share-incoming.png)
+   ![&#x200B; 受信シートの共有 &#x200B;](/help/forms/assets/form-submission-share-incoming.png)
    *Adobe サービスアクセスを許可するためのステップバイステップの共有プロセス*
 
 **プラットフォーム固有の手順：**
@@ -258,7 +258,7 @@ Google Sheets またはMicrosoft Excel を使用してフォーム構造を作�
 - リンク共有を「リンクを持つすべてのユーザーが編集できる」に設定します
 - 共有 URL をコピー
 
-  ![ 受信シートのリンクをコピー ](/help/forms/assets/form-submission-copy-link.png)
+  ![&#x200B; 受信シートのリンクをコピー &#x200B;](/help/forms/assets/form-submission-copy-link.png)
   *例：フォーム設定の共有可能なリンクをコピーする*
 
 **検証チェックポイント：**
@@ -280,7 +280,7 @@ Google Sheets またはMicrosoft Excel を使用してフォーム構造を作�
 3. **コピーしたスプレッドシートリンク** を送信フィールドの **アクション** 列に貼り付けます
 4. フォーム定義に **変更を保存** します
 
-   ![ スプレッドシートをリンクする ](/help/forms/assets/form-submission-sheet-linking.png)
+   ![&#x200B; スプレッドシートをリンクする &#x200B;](/help/forms/assets/form-submission-sheet-linking.png)
 
 *例：送信アクションをデータ収集スプレッドシートに接続する*
 
@@ -303,8 +303,8 @@ Google Sheets またはMicrosoft Excel を使用してフォーム構造を作�
 
 **参考資料：**
 
-- 適切に設定された [ 完全なスプレッドシートの例 ](/help/forms/assets/spreadsheet.xlsx)
-- 公開ガイダンスの [AEM Sidekick ドキュメント ](https://www.aem.live/docs/sidekick)
+- 適切に設定された [&#x200B; 完全なスプレッドシートの例 &#x200B;](/help/forms/assets/spreadsheet.xlsx)
+- 公開ガイダンスの [AEM Sidekick ドキュメント &#x200B;](https://www.aem.live/docs/sidekick)
 
 +++
 
@@ -354,7 +354,7 @@ API を使用する前に、次のことを確認します。
 - `Content-Type: application/json`
 - `x-adobe-routing: tier=live,bucket=main--[repository]--[organization]`
 
-**API ドキュメント：**&#x200B;[ 完全な API リファレンス ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
+**API ドキュメント：**&#x200B;[&#x200B; 完全な API リファレンス &#x200B;](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
 
 +++
 
@@ -402,7 +402,7 @@ Body (JSON):
 - **状態コード：** `201 Created`
 - **データがすぐに** スプレッドシート シートに表示されます `incoming`
 
-![postman 画面 ](/help/forms/assets/postman-api.png)
+![postman 画面 &#x200B;](/help/forms/assets/postman-api.png)
 *例：Postman インターフェイスを使用した API 送信の成功*
 
 +++
@@ -498,7 +498,7 @@ Access-Control-Allow-Origin: *
 
 送信に成功したら、データがスプレッドシートに表示されることを確認します。
 
-![ 更新されたシート ](/help/forms/assets/updated-sheet.png)
+![&#x200B; 更新されたシート &#x200B;](/help/forms/assets/updated-sheet.png)
 *例：データが API を介して受信シートに正常に書き込まれた*
 
 **応答の検証：**
@@ -567,8 +567,8 @@ Solutions:
 **サポートチャネル：**
 
 - **アーリーアクセスの問題：** 電子メール [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
-- **API ドキュメント：**&#x200B;[ 開発者向けリファレンス ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
-- **コミュニティサポート：**&#x200B;[Adobe Experience League コミュニティ ](https://experienceleaguecommunities.adobe.com/?profile.language=ja)
+- **API ドキュメント：**&#x200B;[&#x200B; 開発者向けリファレンス &#x200B;](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
+- **コミュニティサポート：**&#x200B;[Adobe Experience League コミュニティ &#x200B;](https://experienceleaguecommunities.adobe.com/?profile.language=ja)
 
 +++
 
@@ -579,8 +579,8 @@ Forms送信サービスを設定したので、次の関連トピックを参照
 
 +++ Formsの強化
 
-- **[詳細Formsの作成 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** – 検証、条件付きロジック、カスタムスタイル設定を追加します
-- **[フォームコンポーネントガイド ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** – 使用可能なフォームフィールドタイプを調べます
+- **[詳細Formsの作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** – 検証、条件付きロジック、カスタムスタイル設定を追加します
+- **[フォームコンポーネントガイド &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** – 使用可能なフォームフィールドタイプを調べます
 
 +++
 
@@ -608,4 +608,4 @@ Forms送信サービスは、フォームデータをスプレッドシートに
 - **API アクセス** - プログラムによる送信機能
 - **エンタープライズセキュリティ** - Adobeが管理する、アクセス制御のあるエンドポイント
 
-**使用を開始する準備はできていますか？** 視覚的な設定の場合は [ 手動設定 ](#manual-configuration) ガイドに従い、プログラムによる統合の場合は [API 設定 ](#api-configuration) に移動します。
+**使用を開始する準備はできていますか？** 視覚的な設定の場合は [&#x200B; 手動設定 &#x200B;](#manual-configuration) ガイドに従い、プログラムによる統合の場合は [API 設定 &#x200B;](#api-configuration) に移動します。

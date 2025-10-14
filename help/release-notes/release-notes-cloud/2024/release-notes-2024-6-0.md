@@ -45,7 +45,7 @@ ht-degree: 97%
 
 **運用上のテレメトリデータサービス** {#real-use-monitoring}
 
-[ 運用上のテレメトリサービス ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) が一般入手可能になり、AEM as a Cloud Serviceのクライアントサイドのデータ収集が可能になりました。 このサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントの信頼性の高い測定を保証します。ページトラフィックとパフォーマンスに関する高度なインサイトをお客様に提供し、ページのパフォーマンスを理解して強化する貴重な機会を提供します。
+[&#x200B; 運用上のテレメトリサービス &#x200B;](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) が一般入手可能になり、AEM as a Cloud Serviceのクライアントサイドのデータ収集が可能になりました。 このサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントの信頼性の高い測定を保証します。ページトラフィックとパフォーマンスに関する高度なインサイトをお客様に提供し、ページのパフォーマンスを理解して強化する貴重な機会を提供します。
 
 ### 早期導入プログラム {#sites-early-adopter}
 

@@ -80,45 +80,45 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
 [!DNL Microsoft® Dynamics 365] クラウドサービス設定を指定するには、以下の手順を実行します。
 
-1. オーサーインスタンスで、**[!UICONTROL ツール]**![ ハンマー ](assets/hammer.png)/**[!UICONTROL クラウドサービス]**/**[!UICONTROL データソース]**&#x200B;[!DNL AEM Forms] 移動します。
+1. オーサーインスタンスで、**[!UICONTROL ツール]**![&#x200B; ハンマー &#x200B;](assets/hammer.png)/**[!UICONTROL クラウドサービス]**/**[!UICONTROL データソース]**&#x200B;[!DNL AEM Forms] 移動します。
 
-   ![ クラウドデータSourceを選択 ](/help/forms/assets/dynamics-data-source.png)
+   ![&#x200B; クラウドデータSourceを選択 &#x200B;](/help/forms/assets/dynamics-data-source.png)
 1. 設定コンテナを選択します。 設定は、選択した設定コンテナに保存されます。
 1. 「**[!UICONTROL 作成]**」をクリックします。
 
-   ![ クラウド設定の作成 ](/help/forms/assets/dynamics-select-configuration.png)
+   ![&#x200B; クラウド設定の作成 &#x200B;](/help/forms/assets/dynamics-select-configuration.png)
 
    **Data Source設定を作成** 設定ウィザードが表示されます。
 
-   ![Data Source設定を作成ウィザード ](/help/forms/assets/dynamics-create-data-configuration.png)
+   ![Data Source設定を作成ウィザード &#x200B;](/help/forms/assets/dynamics-create-data-configuration.png)
 
 1. **[!UICONTROL タイトル]**、**[!UICONTROL 名前]** を指定し、**[!UICONTROL サービスタイプ]** を **OData サービス** として選択します。
 1. 「**[!UICONTROL 次へ]**」をクリックします。「**認証**」タブが表示されます。
 
-   ![ 「認証」タブ ](/help/forms/assets/dynamics-authentication-tab.png)
+   ![&#x200B; 「認証」タブ &#x200B;](/help/forms/assets/dynamics-authentication-tab.png)
 
 1. 「**[!UICONTROL サービスルート]**」フィールドの値を指定します。
 
-   **Power Platform 管理センター** の Dynamics インスタンスに移動し、[ 開発者リソース ](https://docs.microsoft.com/ja-jp/powerapps/developer/data-platform/view-download-developer-resources) に移動して **サービスルート** の値を表示します。 **Web API エンドポイント** は、アダプティブ Formsと統合する Dynamics インスタンスの **サービスルート** 値を表します。 **サービスルート** URL は次の形式です。`https://<tenant-name>.dynamics.com/api/data/v9.1/`
+   **Power Platform 管理センター** の Dynamics インスタンスに移動し、[&#x200B; 開発者リソース &#x200B;](https://docs.microsoft.com/ja-jp/powerapps/developer/data-platform/view-download-developer-resources) に移動して **サービスルート** の値を表示します。 **Web API エンドポイント** は、アダプティブ Formsと統合する Dynamics インスタンスの **サービスルート** 値を表します。 **サービスルート** URL は次の形式です。`https://<tenant-name>.dynamics.com/api/data/v9.1/`
 
-   ![ サービスルートフィールド ](/help/forms/assets/dynamics-service-root.png)
+   ![&#x200B; サービスルートフィールド &#x200B;](/help/forms/assets/dynamics-service-root.png)
 
 1. **[!UICONTROL 認証タイプ]** を **OAuth2.0** として選択します。
 1. 接続アプリケーションの **クライアント ID** （アプリケーション ID）と **クライアントの秘密鍵** を指定します。
 **クライアント ID** と **クライアントシークレット** は、Azure Active Directory アプリケーションから取得できます。
 
-   ![ クライアント ID とクライアント秘密鍵 ](/help/forms/assets/dynamics-azure-app-resgistration.png)
+   ![&#x200B; クライアント ID とクライアント秘密鍵 &#x200B;](/help/forms/assets/dynamics-azure-app-resgistration.png)
 
 1. 「**[!UICONTROL OAuth URL]**」、「**[!UICONTROL 更新トークン URL]**」、「**[!UICONTROL アクセストークン URL]**」の各フィールドに以下を指定します。
 **[!UICONTROL OAuth URL]**、**[!UICONTROL 更新トークン URL]**、および **[!UICONTROL アクセストークン URL]** は、Azure Active Directory アプリケーションの **エンドポイント** セクションから取得できます。
 
-   ![Azure アプリエンドポイント ](/help/forms/assets/dynamics-azure-app-endpoints.png)
+   ![Azure アプリエンドポイント &#x200B;](/help/forms/assets/dynamics-azure-app-endpoints.png)
 
 1. `openid` の認証プロセス用の「**[!UICONTROL 認証範囲」フィールドで]**、「[!DNL Microsoft® Dynamics 365]」を指定します。
 1. フォームデータモデル（FDM）で [!DNL Microsoft® Dynamics 365] を設定するには、Dynamics インスタンスの URL を「**[!UICONTROL リソース]**」フィールドに指定します。
 **Power Platform 管理センター** から **環境 URL** をコピーするか、**サービスルート** URL を使用して Dynamics インスタンス URL を取得できます。 リソース URL の形式は `https://<tenant-name>.dynamics.com` です。
 
-   ![ 電源アプリケーション リソース フィールド ](/help/forms/assets/dynamics-resource-field.png)
+   ![&#x200B; 電源アプリケーション リソース フィールド &#x200B;](/help/forms/assets/dynamics-resource-field.png)
 
 1. [!DNL Microsoft® Dynamics 365] の資格情報を使用してログインし、クラウドサービス設定を使用して [!DNL Microsoft® Dynamics 365] サービスに接続することに同意します。接続に成功すると、[!DNL Microsoft® Dynamics 365] クラウドサービス設定ページにリダイレクトされ、成功メッセージが表示されます。
 1. 「**[!UICONTROL 作成]**」を選択して、設定を保存します。
@@ -133,23 +133,23 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
    ![フォームデータモデルを作成](/help/forms/assets/dynamics-create-fdm.png)
 
 1. **[!UICONTROL 作成]** をクリックし、「**[!UICONTROL フォームデータモデル]**」を選択します。
-   ![ フォームデータモデルを選択 ](/help/forms/assets/dynamics-select-fdm.png)
+   ![&#x200B; フォームデータモデルを選択 &#x200B;](/help/forms/assets/dynamics-select-fdm.png)
 
    **フォームデータモデルを作成** ウィザードが表示されます。
 1. 「**[!UICONTROL 次へ]**」をクリックします。
 1. **データソースを選択** タブから、作成したクラウド設定を選択します。
-   ![ クラウド設定を選択 ](/help/forms/assets/dynamics-select-cloud-config.png)
+   ![&#x200B; クラウド設定を選択 &#x200B;](/help/forms/assets/dynamics-select-cloud-config.png)
 
-1. 編集 ![ 編集 ](assets/edit.png) アイコンをクリックして、フォームデータモデル（FDM）を表示および設定します。
+1. 編集 ![&#x200B; 編集 &#x200B;](assets/edit.png) アイコンをクリックして、フォームデータモデル（FDM）を表示および設定します。
 
-次に、[ フォームデータモデル（FDM）を設定 ](/help/forms/work-with-form-data-model.md#configure-services) して、次のような様々なアダプティブフォームの使用例で使用できます。
+次に、[&#x200B; フォームデータモデル（FDM）を設定 &#x200B;](/help/forms/work-with-form-data-model.md#configure-services) して、次のような様々なアダプティブフォームの使用例で使用できます。
 
 * [!DNL Microsoft Dynamics] のエンティティとサービスに対してクエリを実行し、取得した情報を使用してアダプティブフォームに事前入力する
 * アダプティブフォームのルールを使用して、フォームデータモデル（FDM）内で定義された [!DNL Microsoft Dynamics] サーバーの操作を呼び出す
 * 送信されたフォームデータを [!DNL Microsoft Dynamics] のエンティティに書き込む
 * アダプティブフォームのフォームデータモデル送信アクションを、[!DNL Microsoft Dynamics] にデータを送信するように設定できます。
 
-その後、（アダプティブフォーム [ で「フォームデータモデル（FDM）を使用して送信 ](/help/forms/using-form-data-model.md) オプションを使用して、フォームから設定済みのフ [!DNL Microsoft® Dynamics 365] ームにデータを転送 **できます。**
+その後、（アダプティブフォーム [&#x200B; で「フォームデータモデル（FDM）を使用して送信 &#x200B;](/help/forms/using-form-data-model.md) オプションを使用して、フォームから設定済みのフ [!DNL Microsoft® Dynamics 365] ームにデータを転送 **できます。**
 
 
 >[!MORELIKETHIS]

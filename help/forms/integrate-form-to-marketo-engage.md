@@ -52,7 +52,7 @@ AEM フォームをAdobe Marketo Engageに接続する利点は次のとおり�
 Marketo EngageとAEM Formsの統合に関する考慮事項
 
 * AEMは、様々なMarketo データベースのうち、人物（リード）データベースのみをサポートしています。
-* Marketoでは、ユーザー定義オブジェクトとして [10 個のカスタムオブジェクトの作成 ](https://experienceleague.adobe.com/ja/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields) を使用して、リードの標準フィールドを超えて専用のデータを保存し、独自のビジネスニーズをサポートできます。
+* Marketoでは、ユーザー定義オブジェクトとして [10 個のカスタムオブジェクトの作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields) を使用して、リードの標準フィールドを超えて専用のデータを保存し、独自のビジネスニーズをサポートできます。
 * AEMがカスタムオブジェクトにアクセスできるのは、リードデータベースに関連付けられている場合のみです
 
 ## Marketo Engageと Forms の統合の前提条件
@@ -60,7 +60,7 @@ Marketo EngageとAEM Formsの統合に関する考慮事項
 Marketo EngageをAEM Formsと接続するための前提条件を以下に示します。
 
 * 有効なAdobe Marketo Engage ライセンス
-* [ クライアント ID とクライアント秘密鍵を取得 ](https://experienceleague.adobe.com/ja/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api) してクラウド設定を作成するためのMarketo Engageの作業用インスタンス。
+* [&#x200B; クライアント ID とクライアント秘密鍵を取得 &#x200B;](https://experienceleague.adobe.com/ja/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api) してクラウド設定を作成するためのMarketo Engageの作業用インスタンス。
 
 ## AEM Forms（アダプティブForms）をMarketo Engageに接続するクラウドサービス設定を作成します
 
@@ -80,7 +80,7 @@ Marketo EngageをAEM Formsと接続するための前提条件を以下に示し
 
    >[!NOTE]
    >
-   > また、[ クラウドサービス設定用フォルダーを設定する ](/help/forms/configure-data-sources.md#configure-folder-for-cloud-service-configurations) こともできます。
+   > また、[&#x200B; クラウドサービス設定用フォルダーを設定する &#x200B;](/help/forms/configure-data-sources.md#configure-folder-for-cloud-service-configurations) こともできます。
 
 3. サービスに接続するための設定と資格情報の **タイトル** を指定します。 認証資格情報は、Adobe Marketo Engage ダッシュボードから取得できます。
    * **クライアント ID** および **クライアントシークレット** は、**管理者**/**統合**/**LaunchPoint** でカスタムサービスを選択し、「**詳細を表示** をクリックして使用できます。
@@ -89,7 +89,7 @@ Marketo EngageをAEM Formsと接続するための前提条件を以下に示し
 4. **接続** をクリックします。  接続に成功した場合、`Authentication Successful` のメッセージが表示されます。
 5. **[!UICONTROL 作成]** をクリックして、クラウド設定を保存します。
 
-![Marketo Engage クラウド設定 ](/help/forms/assets/marketo-engage-cloud-configuration.png)
+![Marketo Engage クラウド設定 &#x200B;](/help/forms/assets/marketo-engage-cloud-configuration.png)
 
 これで、作成されたクラウドサービス設定を使用して、Marketo Engage データソースをアダプティブフォームに接続できます。
 

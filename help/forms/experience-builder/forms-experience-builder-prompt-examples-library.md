@@ -99,7 +99,7 @@ Forms Experience Builder 用に最適化された再利用可能なプロンプ�
 
 **用途：**&#x200B;新規フォームを作成する必要がある場合や、既存のフォームを変更する必要がある場合。
 
-**使用方法：** 2 つの方法から 1 つ選択します。「ゼロから作成」または「読み込んで変換」（『 [ はじめる前に』を参照 ](/help/forms/experience-builder/forms-experience-builder-getting-started.md)。
+**使用方法：** 2 つの方法から 1 つ選択します。「ゼロから作成」または「読み込んで変換」（『 [&#x200B; はじめる前に』を参照 &#x200B;](/help/forms/experience-builder/forms-experience-builder-getting-started.md)。
 
 **プロンプトの例 - フォームの簡単な作成：**
 

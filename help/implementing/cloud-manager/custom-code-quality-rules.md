@@ -21,7 +21,7 @@ ht-degree: 99%
 
 徹底的なテストを通じて高品質のコードを保証するための、Adobe Experience Manager エンジニアリングのベストプラクティスに基づく Cloud Manager のカスタムコード品質ルールについて説明します。[コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)も参照してください。
 
-完全な SonarQube ルールは、アドビ独自の情報が原因でダウンロードできません。*現在の* ルールの完全なリストをダウンロードできます [ このリンクを使用 ](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)。 ルールの説明と例については、このドキュメントを引き続き参照してください。
+完全な SonarQube ルールは、アドビ独自の情報が原因でダウンロードできません。*現在の* ルールの完全なリストをダウンロードできます [&#x200B; このリンクを使用 &#x200B;](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)。 ルールの説明と例については、このドキュメントを引き続き参照してください。
 
 >[!IMPORTANT]
 >

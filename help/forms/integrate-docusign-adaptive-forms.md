@@ -120,7 +120,7 @@ AEM Forms as a Cloud Service には DocuSign 用のカスタム送信アクシ�
 
    これらの手順を実行すると、アダプティブフォームの送信オプションのリストと、ローカル開発環境の [DocuSign Cloud Service 設定](#configure-docusign-with-aem-forms)に [DocuSign 電子サインを使用して送信](#enabledocusign)という新しいカスタム送信アクションが表示されます。
 
-1. コードをコンパイルして[ [!DNL AEM Forms] as a Cloud Service 環境にデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#customer-releases)します。
+1. コードをコンパイルして[&#x200B; [!DNL AEM Forms] as a Cloud Service 環境にデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#customer-releases)します。
 
 ## [!DNL DocuSign] と [!DNL AEM Forms] の統合 {#configure-docusign-with-aem-forms}
 
@@ -162,7 +162,7 @@ AEM Forms as a Cloud Service には DocuSign 用のカスタム送信アクシ�
 
 既存のアダプティブフォーム用に [!DNL DocuSign] を有効にするか、[!DNL DocuSign] 対応アダプティブフォームを作成できます。次のいずれかの操作を行います。
 
-- [ [!DNL DocuSign]  対応のアダプティブフォームを作成する](#create-an-adaptive-form-for-docusign)
+- [&#x200B; [!DNL DocuSign]  対応のアダプティブフォームを作成する](#create-an-adaptive-form-for-docusign)
 - [既存のアダプティブフォームで [!DNL DocuSign] を有効にする](#editafsign)
 
 #### DocuSign 対応のアダプティブフォームの作成 {#create-an-adaptive-form-for-docusign}
@@ -175,7 +175,7 @@ AEM Forms as a Cloud Service には DocuSign 用のカスタム送信アクシ�
 
    1. アダプティブフォームの&#x200B;**[!UICONTROL 名前]**&#x200B;と&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定します。
 
-   1. [ [!DNL DocuSign]  を  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) と統合するときに作成した [設定コンテナ](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) を選択します。
+   1. [&#x200B; [!DNL DocuSign]  を  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) と統合するときに作成した [設定コンテナ](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) を選択します。
 
    設定コンテナには、お使いの環境用に設定された [!DNL DocuSign] クラウドサービスが含まれています。これらのサービスは、アダプティブフォームビルダーで選択できます。
 

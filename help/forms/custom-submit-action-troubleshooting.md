@@ -26,4 +26,4 @@ ht-degree: 1%
 
 502 エラーページを防ぐには、送信ロジックを try-catch ブロックでラップして、エラーを適切に処理します。
 
-手順について詳しくは、「[ アダプティブForms（コアコンポーネント）のカスタム送信アクションの作成 ](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md) を参照してください。
+手順について詳しくは、「[&#x200B; アダプティブForms（コアコンポーネント）のカスタム送信アクションの作成 &#x200B;](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md) を参照してください。

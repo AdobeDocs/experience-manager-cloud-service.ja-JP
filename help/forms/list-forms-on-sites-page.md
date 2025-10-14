@@ -78,7 +78,7 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
 1. ダイアログボックスで使用可能なコンポーネントを参照し、リストから目的のコンポーネントを選択します。例えば、**Search &amp; Lister** コンポーネントをリストから選択して、**Search &amp; Lister** Formsポータルコンポーネントを追加します。
 
-   ![Search &amp; Lister コンポーネント ](/help/forms/assets/add-search-lister.png)
+   ![Search &amp; Lister コンポーネント &#x200B;](/help/forms/assets/add-search-lister.png)
 
 次に、**検索とリスター** コンポーネントのプロパティを設定します。
 
@@ -97,7 +97,7 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
 ### 「アセット」タブ
 
-![ 「アセット」タブ ](/help/forms/assets/search-and-lister-asset-tab.png)
+![&#x200B; 「アセット」タブ &#x200B;](/help/forms/assets/search-and-lister-asset-tab.png)
 
 1. 「**[!UICONTROL アセットフォルダー]**」タブで、フォームを取得してページに一覧表示する場所を指定します。
 1. **[!UICONTROL 別の場所を追加]** を使用すると、複数のフォルダーの場所を設定できます。
@@ -223,7 +223,7 @@ You can configure the auto-save feature for an adaptive form as follows:
 
 ## 次の手順
 
-次の記事では、[ フォームをドラフトとして保存し、ドラフトと送信Forms ポータルコンポーネントを使用してサイトページに一覧表示する方法 ](/help/forms/save-core-component-based-form-as-draft.md) について説明します。
+次の記事では、[&#x200B; フォームをドラフトとして保存し、ドラフトと送信Forms ポータルコンポーネントを使用してサイトページに一覧表示する方法 &#x200B;](/help/forms/save-core-component-based-form-as-draft.md) について説明します。
 
 ## 関連記事
 

@@ -19,7 +19,7 @@ ht-degree: 84%
 
 ## これまでの説明内容 {#story-so-far}
 
-AEM コンテンツおよびCommerce ジャーニーの以前のドキュメント [ 商品カタログのページとテンプレートの管理 ](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/catalog-templates.md) では、テンプレートにもとづいて商品カタログエクスペリエンスを管理および作成する方法を学びました。
+AEM コンテンツおよびCommerce ジャーニーの以前のドキュメント [&#x200B; 商品カタログのページとテンプレートの管理 &#x200B;](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/catalog-templates.md) では、テンプレートにもとづいて商品カタログエクスペリエンスを管理および作成する方法を学びました。
 
 この記事は、これらの基本事項に基づいて作成されています。
 
@@ -53,7 +53,7 @@ AEM コンテンツおよびCommerce ジャーニーの以前のドキュメン�
 
 ## AEM ローンチ {#launches}
 
-AEM ローンチを使用すると、ステージングされた製品データのコンテンツを作成できます。ローンチについて詳しくは、[ その他のリソース」節の下にあるドキュメントリンクにアクセスしてください。](#additional-resources) ローンチ日は、ステージングされた製品データにアクセスするために使用されます。
+AEM ローンチを使用すると、ステージングされた製品データのコンテンツを作成できます。ローンチについて詳しくは、[&#x200B; その他のリソース」節の下にあるドキュメントリンクにアクセスしてください。](#additional-resources) ローンチ日は、ステージングされた製品データにアクセスするために使用されます。
 
 ![ステージローンチ](assets/staged-launch.png)
 

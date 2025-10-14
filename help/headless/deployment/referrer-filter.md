@@ -72,7 +72,7 @@ HTTP POST 経由でヘッドレスアプリケーションの GraphQL エンド�
 
 * 機密情報は決して公開されず **直接的にも間接的にも** 公開されません。
 
-   * 例えば、すべての [GraphQL スキーマ ](/help/headless/graphql-api/content-fragments.md#schema-generation) は次のとおりです。
+   * 例えば、すべての [GraphQL スキーマ &#x200B;](/help/headless/graphql-api/content-fragments.md#schema-generation) は次のとおりです。
 
       * **有効** になっているコンテンツフラグメントモデルから派生
 

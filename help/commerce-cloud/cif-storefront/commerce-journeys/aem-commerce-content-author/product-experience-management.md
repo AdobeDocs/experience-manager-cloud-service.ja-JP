@@ -19,7 +19,7 @@ ht-degree: 95%
 
 ## これまでの説明内容 {#story-so-far}
 
-Adobe Experience Manager（AEM）コンテンツおよびCommerce ジャーニーの以前のドキュメント [ ステージングされた商品カタログエクスペリエンスの管理 ](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md) では、ステージングされた商品カタログエクスペリエンスの管理方法を学びました。
+Adobe Experience Manager（AEM）コンテンツおよびCommerce ジャーニーの以前のドキュメント [&#x200B; ステージングされた商品カタログエクスペリエンスの管理 &#x200B;](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md) では、ステージングされた商品カタログエクスペリエンスの管理方法を学びました。
 
 ## 目的 {#objective}
 

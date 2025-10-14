@@ -29,7 +29,7 @@ Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／
 
 >[!NOTE]
 >
->Adobe Targetのドキュメント [Target とAdobe Experience Managerの統合（AEM） ](https://experienceleague.adobe.com/ja/docs/target/using/integrate/aem/aem-target-integration) も参照してください。
+>Adobe Targetのドキュメント [Target とAdobe Experience Managerの統合（AEM） &#x200B;](https://experienceleague.adobe.com/ja/docs/target/using/integrate/aem/aem-target-integration) も参照してください。
 
 ## Adobe Target 設定の作成 {#create-configuration}
 
@@ -126,7 +126,7 @@ AEM は、Experience Platform Launch との標準の統合を提供します。A
 
 1. 「拡張機能カタログ」オプションを選択し、フィルターで Target を検索します。
 2. 「**Adobe Target** at.js」を選択し、「インストール」オプションを選択します。
-   ![Target 検索 ](assets/search_ext1.png "Target 検索")
+   ![Target 検索 &#x200B;](assets/search_ext1.png "Target 検索")
 3. 「**設定**」ボタンを選択します。設定ウィンドウに、読み込まれた Target アカウントの資格情報と、この拡張機能の at.js バージョンが表示されます。
 4. 「**保存**」を選択して、Target 拡張機能を Launch プロパティに追加します。「**インストール済みの拡張機能**」リストの下に Target 拡張機能が表示されます。
    ![拡張機能の保存](assets/configure_extension1.png "拡張機能の保存")

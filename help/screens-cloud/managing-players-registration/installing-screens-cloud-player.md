@@ -35,13 +35,13 @@ ht-degree: 97%
 
 1. 「**設定**」タブをクリックし、「**リセット**」オプションの下の「**工場出荷時**」ボタンをクリックします。
 
-   ![ リセットオプションの下の「工場出荷時」ボタン ](/help/screens-cloud/assets/player/installplayer-2.png)
+   ![&#x200B; リセットオプションの下の「工場出荷時」ボタン &#x200B;](/help/screens-cloud/assets/player/installplayer-2.png)
 
 1. 「**確認**」をクリックして、プレーヤーをリセットします。
 
 1. 「**設定**」タブから、「**実行モードを切り替え**」オプションの下の「**クラウドモードに変更**」ボタンをクリックします。
 
-   ![ 「実行モードを切り替え」オプションの下の「クラウドモードに変更」ボタン ](/help/screens-cloud/assets/player/installplayer-1.png)
+   ![&#x200B; 「実行モードを切り替え」オプションの下の「クラウドモードに変更」ボタン &#x200B;](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. クラウドモードに切り替えるときに「**確認**」をクリックすると、プレーヤーの登録が解除されます。
 

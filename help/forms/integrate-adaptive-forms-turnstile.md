@@ -32,7 +32,7 @@ Cloudflare の Turnstile Captcha は、自動ボット、悪意のある攻撃�
 
 ### AEM Forms環境と Turnstile Captcha を統合するための前提条件 {#prerequisite}
 
-AEM Forms用に Turnstile を設定するには、Turnstile Web サイトから [Turnstile サイトキーと秘密鍵 ](https://developers.cloudflare.com/turnstile/get-started/) を取得する必要があります。
+AEM Forms用に Turnstile を設定するには、Turnstile Web サイトから [Turnstile サイトキーと秘密鍵 &#x200B;](https://developers.cloudflare.com/turnstile/get-started/) を取得する必要があります。
 
 ### AEM Forms用の Turnstile を設定する手順{#steps-to-configure-turnstile}
 
@@ -53,13 +53,13 @@ AEM Forms用に Turnstile を設定するには、Turnstile Web サイトから 
 1. Cloud Service を設定：
    1. AEM オーサーインスタンスで、![tools-1](assets/tools-1.png)/**[!UICONTROL Cloud Services]** に移動し、「**[!UICONTROL Turnstile]**」を選択します。
 
-      ![UI でのターンスタイル ](assets/turnstile-in-ui.png)
+      ![UI でのターンスタイル &#x200B;](assets/turnstile-in-ui.png)
    1. 前の節で説明したように、作成または更新された設定コンテナを選択します。 「**[!UICONTROL 作成]**」を選択します。
 
-      ![ 設定ターンスタイル ](assets/config-hcaptcha.png)
-   1. **[!UICONTROL ウィジェットタイプ]** を管理対象として指定します。ウィジェットタイプは、前提条件で取得したキー **[!UICONTROL タイトル]**、**[!UICONTROL 名前]**、**[!UICONTROL サイトキー]**、**[!UICONTROL 秘密鍵]** に応じて変わることがあります [ 前提条件で取得 ](#prerequisite)。 「**[!UICONTROL 作成]**」を選択します。
+      ![&#x200B; 設定ターンスタイル &#x200B;](assets/config-hcaptcha.png)
+   1. **[!UICONTROL ウィジェットタイプ]** を管理対象として指定します。ウィジェットタイプは、前提条件で取得したキー **[!UICONTROL タイトル]**、**[!UICONTROL 名前]**、**[!UICONTROL サイトキー]**、**[!UICONTROL 秘密鍵]** に応じて変わることがあります [&#x200B; 前提条件で取得 &#x200B;](#prerequisite)。 「**[!UICONTROL 作成]**」を選択します。
 
-      ![AEM Forms環境を Turnstile と連携させるためのCloud Serviceの設定 ](assets/config-turntstile.png)
+      ![AEM Forms環境を Turnstile と連携させるためのCloud Serviceの設定 &#x200B;](assets/config-turntstile.png)
 
 >[!NOTE]
 > 自動スタイル検証用に既にクライアントサイドのJavaScript検証 URL とサーバーサイドの検証 URL が入力されているので、変更する必要はありません。
@@ -72,13 +72,13 @@ Turnstile Captcha サービスを設定すると、アダプティブフォー�
 1. **[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;に移動します。
 1. アダプティブフォームを選択し、**[!UICONTROL プロパティ]** を選択します。 **[!UICONTROL Configuration Container]** オプションについては、AEM Formsと Turnstile を接続するクラウド設定が含まれている Configuration Container を選択して、「保存して閉じる **[!UICONTROL を選択します]**。
 
-   そのような設定コンテナがない場合は、設定コンテナの作成方法について [AEM Forms環境の自動インストールへの接続 ](#connect-your-forms-environment-with-turnstile-service) の節を参照してください。
+   そのような設定コンテナがない場合は、設定コンテナの作成方法について [AEM Forms環境の自動インストールへの接続 &#x200B;](#connect-your-forms-environment-with-turnstile-service) の節を参照してください。
 
    ![設定コンテナの選択](/help/forms/assets/captcha-properties.png)
 
 1. アダプティブフォームを選択し、「**[!UICONTROL 編集]**」を選択します。 アダプティブフォームエディターでアダプティブフォームが開きます。
 1. コンポーネントブラウザーから **[!UICONTROL Captcha]** コンポーネントを、アダプティブフォームにドラッグ＆ドロップします。
-1. **[!UICONTROL Captcha]** コンポーネントを選択し、プロパティ ![ プロパティアイコン ](assets/configure-icon.svg) アイコンをクリックします。 プロパティダイアログが開きます。
+1. **[!UICONTROL Captcha]** コンポーネントを選択し、プロパティ ![&#x200B; プロパティアイコン &#x200B;](assets/configure-icon.svg) アイコンをクリックします。 プロパティダイアログが開きます。
 
    ![設定](assets/turnstile-setting-v1.png)
 
@@ -94,7 +94,7 @@ Turnstile Captcha サービスを設定すると、アダプティブフォー�
 
      >[!NOTE]
      >
-     > 同様の目的のために、環境内に複数のクラウド設定を持つことができます。 そのため、サービスは慎重に選択してください。サービスがリストに表示されない場合は、AEM Forms環境と Turnstile サービスを接続するCloud Serviceの作成方法について、[AEM Forms環境と Turnstile の接続 ](#connect-your-forms-environment-with-turnstile-service) を参照してください。
+     > 同様の目的のために、環境内に複数のクラウド設定を持つことができます。 そのため、サービスは慎重に選択してください。サービスがリストに表示されない場合は、AEM Forms環境と Turnstile サービスを接続するCloud Serviceの作成方法について、[AEM Forms環境と Turnstile の接続 &#x200B;](#connect-your-forms-environment-with-turnstile-service) を参照してください。
 
    * **エラーメッセージ：** Captcha 送信が失敗した場合にユーザーに表示するエラーメッセージを指定します。
    * **Captcha サイズ：** 回転式チャレンジダイアログの表示サイズを選択します。 「**[!UICONTROL コンパクト]**」オプションを使用すると小さいサイズを表示し、「**[!UICONTROL 標準]**」オプションを使用すると比較的大きいサイズの回転式チャレンジダイアログを表示します。
@@ -107,7 +107,7 @@ Turnstile Captcha サービスを設定すると、アダプティブフォー�
 
 現在は、フォームの入力者が Turnstile サービスによって発生する課題を正常にクリアした正当なフォームのみがフォーム送信に許可されています。
 
-![ 回転式チャレンジ ](assets/turnstile-challenge.png)
+![&#x200B; 回転式チャレンジ &#x200B;](assets/turnstile-challenge.png)
 
 ## よくある質問
 

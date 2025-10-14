@@ -19,7 +19,7 @@ Adobe Experience Manager（AEM）CIF オーサリングについて説明しま�
 
 ## これまでの説明内容 {#story-so-far}
 
-AEM コンテンツとCommerce ジャーニーの前のドキュメント [AEM コンテンツとCommerceについて ](/help/commerce-cloud/cif-storefront/introduction.md) では、ヘッドレス CMSとAEM コンテンツおよびCommerceの基本概念を説明しました。
+AEM コンテンツとCommerce ジャーニーの前のドキュメント [AEM コンテンツとCommerceについて &#x200B;](/help/commerce-cloud/cif-storefront/introduction.md) では、ヘッドレス CMSとAEM コンテンツおよびCommerceの基本概念を説明しました。
 
 この記事は、これらの基本事項に基づいて作成されています。
 
@@ -53,7 +53,7 @@ AEM 作成者は、コマースコンポーネントや AEM のバックオフ�
 
 フォルダーアイコンをクリックすると、ピッカーモーダル UI （製品ティーザーなど）が開きます。
 
-![ 製品ピッカー ](assets/product-picker-open.png)
+![&#x200B; 製品ピッカー &#x200B;](assets/product-picker-open.png)
 
 製品は、左側のカタログ構造を参照するか、検索して見つけることができます。フルテキスト検索では、選択したカテゴリが適用され、検索結果がこのカテゴリに限定されます。
 
@@ -61,9 +61,9 @@ AEM 作成者は、コマースコンポーネントや AEM のバックオフ�
 
 バリエーションを持つ製品には、すべてのバリエーションを表示するためにクリックできるフォルダーアイコンが付きます。
 
-![ 製品ピッカーのバリアント ](assets/product-picker-variants.png)
+![&#x200B; 製品ピッカーのバリアント &#x200B;](assets/product-picker-variants.png)
 
-![ 製品ピッカーのバリアントが開きます ](assets/product-picker-variants-open.png)
+![&#x200B; 製品ピッカーのバリアントが開きます &#x200B;](assets/product-picker-variants-open.png)
 
 ### カテゴリピッカー {#category-picker}
 
@@ -117,10 +117,10 @@ AEM 作成者は、コマースコンポーネントや AEM のバックオフ�
 * 製品およびカテゴリの選択機能を使用して AEM の製品カタログにアクセスする方法
 * 製品コックピットおよび AEM オムニサーチを使用して Content and Commerce のデータにアクセスする方法
 
-この知識に基づいて、次は [ 製品カタログのページとテンプレートを管理 ](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/catalog-templates.md) のドキュメントを確認して、ジャーニーを続行してください。そこでは、製品カタログのエクスペリエンスを初めて作成およびカスタマイズする方法を習得します。
+この知識に基づいて、次は [&#x200B; 製品カタログのページとテンプレートを管理 &#x200B;](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/catalog-templates.md) のドキュメントを確認して、ジャーニーを続行してください。そこでは、製品カタログのエクスペリエンスを初めて作成およびカスタマイズする方法を習得します。
 
 ## その他のリソース {#additional-resources}
 
-ジャーニーの次のパートである [ 製品カタログのページとテンプレートを管理 ](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/catalog-templates.md) に進むことをお勧めしますが、以下のリソースでは、ここで取り上げた概念について詳しく説明しています。 ただし、これらのオプションのリソースは、ジャーニーを続行するために必要なものではありません。
+ジャーニーの次のパートである [&#x200B; 製品カタログのページとテンプレートを管理 &#x200B;](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/catalog-templates.md) に進むことをお勧めしますが、以下のリソースでは、ここで取り上げた概念について詳しく説明しています。 ただし、これらのオプションのリソースは、ジャーニーを続行するために必要なものではありません。
 
 * [ストアとカタログの設定](/help/commerce-cloud/cif-storefront/getting-started.md#catalog)

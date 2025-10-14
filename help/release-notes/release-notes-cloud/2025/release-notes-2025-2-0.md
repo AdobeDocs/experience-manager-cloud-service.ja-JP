@@ -57,11 +57,11 @@ ht-degree: 96%
 
 **コンテンツフラグメントエディターのロールアウト**
 
-今後も、[ 統合シェル ](/help/sites-cloud/administering/content-fragments/authoring.md) （Spectrum-UI 使用）を使用して、AEM as a Cloud Serviceで新しい [ コンテンツフラグメントエディター ](/help/overview/aem-cloud-service-on-unified-shell.md) を有効にします。 2024年11月にすべての Cloud Service 開発環境のデフォルトになった後、2025年4月1日（PT）にはすべてのステージング環境のデフォルト、2025年5月1日（PT）にはすべての実稼動環境のデフォルトとして設定される予定です。すべてのケースで、ユーザーは AEM タッチ UI で従来のコンテンツフラグメントエディターに戻すオプションを引き続き利用できます。
+今後も、[&#x200B; 統合シェル &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md) （Spectrum-UI 使用）を使用して、AEM as a Cloud Serviceで新しい [&#x200B; コンテンツフラグメントエディター &#x200B;](/help/overview/aem-cloud-service-on-unified-shell.md) を有効にします。 2024年11月にすべての Cloud Service 開発環境のデフォルトになった後、2025年4月1日（PT）にはすべてのステージング環境のデフォルト、2025年5月1日（PT）にはすべての実稼動環境のデフォルトとして設定される予定です。すべてのケースで、ユーザーは AEM タッチ UI で従来のコンテンツフラグメントエディターに戻すオプションを引き続き利用できます。
 
 **Translation HTTP API**
 
-しばらくの間、早期導入モードであった AEM Translation HTTP REST API が一般提供（GA）されるようになりました。ドキュメントは [ こちら」で参照できます。](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/translation/) API を使用すると、AEM内のコンテンツの翻訳管理プロセスで必要な手順を自動化できます。
+しばらくの間、早期導入モードであった AEM Translation HTTP REST API が一般提供（GA）されるようになりました。ドキュメントは [&#x200B; こちら」で参照できます。](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/translation/) API を使用すると、AEM内のコンテンツの翻訳管理プロセスで必要な手順を自動化できます。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

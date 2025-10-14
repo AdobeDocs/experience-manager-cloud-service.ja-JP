@@ -38,7 +38,7 @@ ht-degree: 78%
 
 ### の新機能[!DNL Sites] {#sites-features}
 
-* [ エクスペリエンスフラグメントの「Personalization」タブでは ](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) エクスペリエンスフラグメントエディターにセグメント化指定機能を提供し、ネストしたエクスペリエンスフラグメントを柔軟に作成できるので、複数のセグメントに対してヘッダーとフッターのバリエーションを作成できます。 この機能を開始する前は、AEM が提供するパーソナライゼーションはサイトのページでのみ使用できますが、エクスペリエンスフラグメントでは使用できません
+* [&#x200B; エクスペリエンスフラグメントの「Personalization」タブでは &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) エクスペリエンスフラグメントエディターにセグメント化指定機能を提供し、ネストしたエクスペリエンスフラグメントを柔軟に作成できるので、複数のセグメントに対してヘッダーとフッターのバリエーションを作成できます。 この機能を開始する前は、AEM が提供するパーソナライゼーションはサイトのページでのみ使用できますが、エクスペリエンスフラグメントでは使用できません
 
 * この[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)では、ユーザーが翻訳されたコンテンツフラグメントを効率的に管理できるようになりました。 すべての言語コピーを表示するための 1 回のクリックアクセスが提供されています。 また、ユーザーは、関心があるロケールに基づいてテーブル表示をフィルタリングすることもできます。
 
@@ -50,7 +50,7 @@ ht-degree: 78%
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-* [ Experience Manager Assetsでは、サポートされている他の形式タイプのドキュメントをアップロードして、組み込まれているDocument Cloudビューアを使用してプレビューができるようになりました ](/help/assets/manage-pdf-documents.md)。 サポートされる形式の種類には、TXT、RTF、DOC、DOCX、PPT、PPTX、XLS、XLSX が含まれます。
+* [&#x200B; Experience Manager Assetsでは、サポートされている他の形式タイプのドキュメントをアップロードして、組み込まれているDocument Cloudビューアを使用してプレビューができるようになりました &#x200B;](/help/assets/manage-pdf-documents.md)。 サポートされる形式の種類には、TXT、RTF、DOC、DOCX、PPT、PPTX、XLS、XLSX が含まれます。
 
   ![他の形式向けの PDF レンディション](/help/release-notes/assets/multi-page-other-formats.png)
 
@@ -89,9 +89,9 @@ ht-degree: 78%
 
 * AEM as a Cloud Service（オーサーサービス）が統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべての Experience Cloud アプリケーションと統合されました。詳しくは、統合シェルの [Cloud ServiceとしてのAEM](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
 
-* リリースノートで前述したように、レプリケーションエージェントの管理画面またはレプリケーション API を使用して 10 MB を超えるコンテンツパッケージ（バイナリを含まないプロパティを持つノード）を配布することは、非推奨（廃止予定）になり実施されるようになりました。 これらの大きなコンテンツ パッケージをレプリケートするための推奨アプローチについて詳しくは、[ 公開の管理 ](/help/operations/replication.md#manage-publication) または [&#128279;](/help/operations/replication.md#publish-content-tree-workflow)2&rbrace;Publish コンテンツツリーのワークフロー &rbrace; を参照してください。
+* リリースノートで前述したように、レプリケーションエージェントの管理画面またはレプリケーション API を使用して 10 MB を超えるコンテンツパッケージ（バイナリを含まないプロパティを持つノード）を配布することは、非推奨（廃止予定）になり実施されるようになりました。 これらの大きなコンテンツ パッケージをレプリケートするための推奨アプローチについて詳しくは、[&#x200B; 公開の管理 &#x200B;](/help/operations/replication.md#manage-publication) または [&#128279;](/help/operations/replication.md#publish-content-tree-workflow)2&rbrace;Publish コンテンツツリーのワークフロー &rbrace; を参照してください。
 
-* Dispatcher 設定で、一般的なマーケティングキャンペーンのクエリパラメーターをリストするファイルが参照されるようになりました。顧客が関連するパラメーターのコメント解除を選択できるので、キャッシュが改善されました。詳しくは、[ マーケティングキャンペーンパラメーター ](/help/implementing/dispatcher/caching.md#marketing-parameters) を参照してください。
+* Dispatcher 設定で、一般的なマーケティングキャンペーンのクエリパラメーターをリストするファイルが参照されるようになりました。顧客が関連するパラメーターのコメント解除を選択できるので、キャッシュが改善されました。詳しくは、[&#x200B; マーケティングキャンペーンパラメーター &#x200B;](/help/implementing/dispatcher/caching.md#marketing-parameters) を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 

@@ -39,7 +39,7 @@ ht-degree: 32%
 
 Adobe複数の変数を追加する場合は、最初の変数を追加してから、「![Environment Configuration](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)」ダイアログの「**Add icon**&#x200B;**Add**」を使用してその他の変数を追加することをお勧めします。 つまり、1 回の更新で環境に追加できます。
 
-環境変数を追加、更新、削除するには、[**デプロイメントマネージャー** 役割 ](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) のメンバーである必要があります。
+環境変数を追加、更新、削除するには、[**デプロイメントマネージャー** 役割 &#x200B;](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) のメンバーである必要があります。
 
 **環境変数を追加するには：**
 
@@ -48,7 +48,7 @@ Adobe複数の変数を追加する場合は、最初の変数を追加してか
 1. サイドメニューで、「**環境**」をクリックします。
 1. **環境** ページで、環境変数を追加する環境があるテーブルの行を選択します。
 1. 環境の詳細ページで、「**設定**」タブをクリックします。
-1. ![ 追加/更新 – 円を追加アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**追加/更新** をクリックします。
+1. ![&#x200B; 追加/更新 – 円を追加アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**追加/更新** をクリックします。
 初めて環境変数を追加する場合は、ページの中央にある **設定を追加** をクリックします。
 
    ![「設定」タブ](assets/configuration-tab.png)
@@ -64,7 +64,7 @@ Adobe複数の変数を追加する場合は、最初の変数を追加してか
 
    ![変数の追加](assets/add-variable.png)
 
-1. ![ 追加アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)**追加** をクリックします。
+1. ![&#x200B; 追加アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)**追加** をクリックします。
 
    必要に応じて、変数を追加します。
 
@@ -76,7 +76,7 @@ Adobe複数の変数を追加する場合は、最初の変数を追加してか
 
 ## 環境変数の更新 {#update-variables}
 
-環境変数を作成したら、![ 追加/更新 – 円を追加アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**追加/更新** を使用して環境変数を更新し、**環境設定** ダイアログボックスを開くことができます。
+環境変数を作成したら、![&#x200B; 追加/更新 – 円を追加アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**追加/更新** を使用して環境変数を更新し、**環境設定** ダイアログボックスを開くことができます。
 
 複数の変数を更新する場合は、「**Adobe設定**」ダイアログボックスを使用して、必要なすべての変数を一度に更新してから、「**保存**」をクリックすることをお勧めします。 これにより、1 回の更新で環境に追加できます。
 
@@ -87,8 +87,8 @@ Adobe複数の変数を追加する場合は、最初の変数を追加してか
 1. サイドメニューで、「**環境**」をクリックします。
 1. **環境** ページで、変数を更新する環境があるテーブルの行を選択します。
 1. 環境の詳細ページで、「**設定**」タブをクリックします。
-1. ![ 追加/更新 – 円を追加アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**追加/更新** をクリックします。
-1. **環境設定** ダイアログボックスで、変更する変数の行の最後の列にある ![ 省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+1. ![&#x200B; 追加/更新 – 円を追加アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**追加/更新** をクリックします。
+1. **環境設定** ダイアログボックスで、変更する変数の行の最後の列にある ![&#x200B; 省略記号 – 詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 1. ドロップダウンメニューで、「**編集**」をクリックします。
 
    ![変数を編集または削除](assets/edit-delete-variable.png)
@@ -100,8 +100,8 @@ Adobe複数の変数を追加する場合は、最初の変数を追加してか
 
 1. 次のいずれかの操作を行います。
 
-   * ![ 適用 – チェックマークアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg) をクリックして、変更を適用します。
-   * ![ 取り消しアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Undo_18_N.svg) をクリックして、変更を取り消します。
+   * ![&#x200B; 適用 – チェックマークアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg) をクリックして、変更を適用します。
+   * ![&#x200B; 取り消しアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Undo_18_N.svg) をクリックして、変更を取り消します。
 
 1. 「**保存**」をクリックします。
 
@@ -114,8 +114,8 @@ Adobe複数の変数を追加する場合は、最初の変数を追加してか
 1. サイドメニューで、「**環境**」をクリックします。
 1. **環境** ページで、変数を更新する環境があるテーブルの行を選択します。
 1. 環境の詳細ページで、「**設定**」タブをクリックします。
-1. ![ 追加/更新 – 円を追加アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**追加/更新** をクリックします。
-1. **環境設定** ダイアログボックスで、変更する変数の行の最後の列にある ![ 省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+1. ![&#x200B; 追加/更新 – 円を追加アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)**追加/更新** をクリックします。
+1. **環境設定** ダイアログボックスで、変更する変数の行の最後の列にある ![&#x200B; 省略記号 – 詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 1. ドロップダウンメニューで **削除** をクリックして、変数をすぐに削除します。
 1. 「**保存**」をクリックします。
 
@@ -127,9 +127,9 @@ Adobe複数の変数を追加する場合は、最初の変数を追加してか
 
 `${env.VARIABLE_NAME}`
 
-`pom.xml` ファイルで両方のタイプの変数を使用する方法の例については、[ プロジェクトの設定 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) を参照してください。
+`pom.xml` ファイルで両方のタイプの変数を使用する方法の例については、[&#x200B; プロジェクトの設定 &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) を参照してください。
 
-詳しくは、[Maven の公式ドキュメント ](https://maven.apache.org/settings.html#quick-overview) も参照してください。
+詳しくは、[Maven の公式ドキュメント &#x200B;](https://maven.apache.org/settings.html#quick-overview) も参照してください。
 
 ## 環境変数の可用性 {#availability}
 
@@ -139,6 +139,6 @@ Adobe複数の変数を追加する場合は、最初の変数を追加してか
 | --- | --- |
 | オーサー、プレビュー、パブリッシュ | オーサー、プレビュー、パブリッシュの各環境では、通常の環境変数とシークレットの両方を使用できます。 |
 | Dispatcher | [Dispatcher](https://experienceleague.adobe.com/ja/docs/experience-manager-dispatcher/using/dispatcher) で使用できるのは、通常の環境変数のみです。<ul><li>秘密鍵は使用できません。</li><li>環境変数は、`IfDefine` ディレクティブでは使用できません。</li><li>デプロイする前に、[Dispatcher をローカルで](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools)使用して、環境変数の使用を検証します。</li></ul> |
-| OSGi 設定 | [OSGi 設定 ](/help/implementing/deploying/configuring-osgi.md) では、通常の環境変数とシークレットの両方を使用できます。 |
-| パイプライン変数 | 環境変数に加えて、ビルドフェーズで公開されるパイプライン変数もあります。パイプライン変数について詳しくは、[ ビルド環境 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables) を参照してください。 |
+| OSGi 設定 | [OSGi 設定 &#x200B;](/help/implementing/deploying/configuring-osgi.md) では、通常の環境変数とシークレットの両方を使用できます。 |
+| パイプライン変数 | 環境変数に加えて、ビルドフェーズで公開されるパイプライン変数もあります。パイプライン変数について詳しくは、[&#x200B; ビルド環境 &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables) を参照してください。 |
 

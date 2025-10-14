@@ -23,7 +23,7 @@ ht-degree: 93%
 
 プロジェクトカードをクリックしてプロジェクトのランディングページを開き、「**実装**」セクションに移動します（下図を参照）。
 
-![ プロジェクトランディングページ – 実装 ](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
+![&#x200B; プロジェクトランディングページ – 実装 &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
 >詳しくは、[Cloud Acceleration Manager でのプロジェクトの作成と管理](getting-started-cam.md#create-project)を参照してください。
@@ -37,11 +37,11 @@ ht-degree: 93%
 
 1. **ローカル開発**&#x200B;カードの「**表示**」をクリックします。
 
-   ![ローカル開発カード ](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
+   ![ローカル開発カード &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
 
 1. コンテンツカルーセルには、移行ジャーニーのこのフェーズに関係のある情報が表示されます。
 
-   ![ローカル開発カルーセル ](/help/journey-migration/cloud-acceleration-manager/assets/implementation-3.png)
+   ![ローカル開発カルーセル &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/implementation-3.png)
 
 
 ## コードリファクタリングカードの使用 {#code-refactoring}
@@ -52,7 +52,7 @@ ht-degree: 93%
 
 1. **コードリファクタリング**&#x200B;アクティビティカードの「**レビュー**」をクリックします。
 
-   ![ コードリファクタリングカード ](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
+   ![&#x200B; コードリファクタリングカード &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
 
 1. このページには、コードリファクタリングアクティビティのリストが重大度レベル別に表示されます。ハイライト表示された 2 つのアイコンをクリックすると、詳細を確認できます。
 
@@ -67,11 +67,11 @@ ht-degree: 93%
 
 「**Dispatcher**」タブでは、AEM as a Cloud Service の Apache および Dispatcher の設定を構築する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法に関する情報が表示されます。また、クラウド環境でのデバッグについても説明します。
 
-![ 「Dispatcher」タブ ](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
+![&#x200B; 「Dispatcher」タブ &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
 「**テスト**」タブには、機能テスト、エクスペリエンス監査、UI テストに関する情報が表示されます。
 
-![ 「テスト」タブ ](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
+![&#x200B; 「テスト」タブ &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
 ## AEM as a Cloud Service デプロイメントカードの使用 {#aem-as-a-cloud-service-deployment}
@@ -82,11 +82,11 @@ AEM as a Cloud Service デプロイメントカードには、コードを AEM a
 
 1. **AEM as a Cloud Service デプロイメント**&#x200B;カードの「**表示**」をクリックします。
 
-   ![AEM as a Cloud Service デプロイメント – カード ](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
+   ![AEM as a Cloud Service デプロイメント – カード &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
 
 1. コンテンツカルーセルには、移行ジャーニーのこのフェーズに関係のある情報が表示されます。
 
-   ![AEM as a Cloud Service デプロイメント – カルーセル ](/help/journey-migration/cloud-acceleration-manager/assets/aem-deployment-card.png)
+   ![AEM as a Cloud Service デプロイメント – カルーセル &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
 ## コンテンツ転送カードの使用 {#content-transfer}
@@ -97,11 +97,11 @@ AEM as a Cloud Service デプロイメントカードには、コードを AEM a
 
 1. **コンテンツ転送**&#x200B;アクティビティカードの「**レビュー**」をクリックします。
 
-   ![ コンテンツ転送 – レビュー ](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
+   ![&#x200B; コンテンツ転送 – レビュー &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
 1. コンテンツの転送を開始するには、移行セットを作成する必要があります。「**移行セットを作成**」をクリックします。移行セットを使用すると、コンテンツを AEM as a Cloud Service に転送できます。
 
-   ![ 移行セットを作成 ](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
+   ![&#x200B; 移行セットを作成 &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
    >移行セットは、無操作状態が長時間続くと有効期限が切れます。詳しくは、[移行セットの有効期限](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry)を参照してください。
@@ -113,7 +113,7 @@ AEM as a Cloud Service デプロイメントカードには、コードを AEM a
 
 1. 移行セットから AEM as a Cloud Service 上の環境にコンテンツを取り込むには、取り込みを開始する必要があります。**取り込みジョブ**&#x200B;に移動し、「**新しい取り込み**」をクリックします。[Target へのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)を参照して、コンテンツ転送の取り込みフェーズを完了する方法を確認してください。
 
-   ![ 取り込みジョブ ](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
+   ![&#x200B; 取り込みジョブ &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
 <!--### Estimating Content Transfer Time {#calculating}
 

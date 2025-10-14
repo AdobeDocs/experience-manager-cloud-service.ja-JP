@@ -155,12 +155,12 @@ ht-degree: 95%
 
 ### ローンチのクローン {#cloning-a-launch}
 
-ローンチのクローンは、[ ローンチコンソール ](/help/sites-cloud/authoring/launches/overview.md#the-launches-console) から作成できます。
+ローンチのクローンは、[&#x200B; ローンチコンソール &#x200B;](/help/sites-cloud/authoring/launches/overview.md#the-launches-console) から作成できます。
 
 * サムネールをタップまたはクリックして、ローンチを選択します。
 * ツールバーが表示されます。「クローン」を選択します。
    * クローンが作成され、コンソールに表示されます。
-   * **ローンチタイトル** は、クローンであることを示しています。 [ ローンチ設定 ](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration) （**プロパティ**）を編集してタイトルを更新できます。
+   * **ローンチタイトル** は、クローンであることを示しています。 [&#x200B; ローンチ設定 &#x200B;](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration) （**プロパティ**）を編集してタイトルを更新できます。
 
 ## ローンチの削除 {#deleting-a-launch}
 

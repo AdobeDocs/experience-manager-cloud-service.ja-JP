@@ -43,7 +43,7 @@ ht-degree: 99%
 
 **AI 生成のメタデータ**
 
-AEM Assets では [AI を使用して、タイトル、説明、キーワードなどのメタデータが自動生成されるようになりました ](/help/assets/metadata-assets-view.md#ai-smart-tags)。これらの AI で生成されたフィールドは、メタデータの精度を高め、アセットの検索、分類および推奨を容易にします。このアプローチでは、手動でのタグ付けが不要なために効率が向上するだけでなく、大量のデジタルコンテンツ間の一貫性とスケーラビリティも確保できます。
+AEM Assets では [AI を使用して、タイトル、説明、キーワードなどのメタデータが自動生成されるようになりました &#x200B;](/help/assets/metadata-assets-view.md#ai-smart-tags)。これらの AI で生成されたフィールドは、メタデータの精度を高め、アセットの検索、分類および推奨を容易にします。このアプローチでは、手動でのタグ付けが不要なために効率が向上するだけでなく、大量のデジタルコンテンツ間の一貫性とスケーラビリティも確保できます。
 
 ![AI 生成のメタデータ](/help/assets/assets/enhanced-smart-tags.png)
 
@@ -114,7 +114,7 @@ AEM Assets は Figma とネイティブに統合されているので、デザ�
 
 ### プレリリース機能
 
-* [ アダプティブFormsおよびフォームフラグメント用のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：ユニバーサルエディターでは、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成が迅速化され、一貫性が高まり、ススパムや自動化による悪用からの保護が強化されます。
+* [&#x200B; アダプティブFormsおよびフォームフラグメント用のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：ユニバーサルエディターでは、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成が迅速化され、一貫性が高まり、ススパムや自動化による悪用からの保護が強化されます。
 
 * [SharePoint ドキュメントライブラリ - 添付ファイルを元のファイル名で保存](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library)：フォームの添付ファイルを SharePoint ドキュメントライブラリに保存する際に、元のファイル名を使用して保存するオプションが追加されました。この機能強化により、アップロードしたファイルの識別と管理が簡素化されます。
 

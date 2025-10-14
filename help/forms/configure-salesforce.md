@@ -13,14 +13,14 @@ ht-degree: 71%
 
 # AEM Forms用のSalesforceの設定 {#configure-azure-storage}
 
-[[!DNL Experience Manager Forms]  データ統合 ](data-integration.md) は、アダプティブFormsを OOTB フォームデータモデル（FDM）と統合するための [!DNL Salesforce] Cloud Services を提供します。 その結果、アダプティブFormsは [!DNL Salesforce] サーバーとやり取りして、ビジネスワークフローを有効にすることができます。 次に例を示します。
+[[!DNL Experience Manager Forms]  データ統合 &#x200B;](data-integration.md) は、アダプティブFormsを OOTB フォームデータモデル（FDM）と統合するための [!DNL Salesforce] Cloud Services を提供します。 その結果、アダプティブFormsは [!DNL Salesforce] サーバーとやり取りして、ビジネスワークフローを有効にすることができます。 次に例を示します。
 
 * アダプティブフォームの送信時に、データを [!DNL Salesforce] に書き込む。
 * フォームデータモデル（FDM）で定義されているカスタムエンティティを通じて、データを [!DNL Salesforce] に書き込みます（またはその逆の操作）。
 * [!DNL Salesforce] サーバーに対してデータに関するクエリを実行し、アダプティブフォームに事前入力する。
 * [!DNL Salesforce] サーバーからデータを読み取る。
 
-[Experience Manager アーキタイプに基づいてFormsの開発プロジェクトをセットアップ ](setup-local-development-environment.md#forms-cloud-service-local-development-environment) すると、[!DNL Salesforce] のクラウドサービスとフォームデータモデル（FDM）が [!DNL AEM Forms] Server 上で標準で使用できるようになります。
+[Experience Manager アーキタイプに基づいてFormsの開発プロジェクトをセットアップ &#x200B;](setup-local-development-environment.md#forms-cloud-service-local-development-environment) すると、[!DNL Salesforce] のクラウドサービスとフォームデータモデル（FDM）が [!DNL AEM Forms] Server 上で標準で使用できるようになります。
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ ht-degree: 71%
 
 [!DNL Salesforce] クラウドサービスを設定する前に、必ず次の作業を実行してください。
 
-* [OAuth 対応の接続された [!DNL Salesforce]  アプリケーションを作成](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&amp;type=5)します。接続された [!DNL Salesforce] アプリケーションを作成する際に、次の形式でコールバック URL を指定します。
+* [OAuth 対応の接続された [!DNL Salesforce]  アプリケーションを作成](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&type=5)します。接続された [!DNL Salesforce] アプリケーションを作成する際に、次の形式でコールバック URL を指定します。
 
   ```
   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
@@ -44,7 +44,7 @@ ht-degree: 71%
 
 [!DNL Salesforce] クラウドサービスを設定するには、次の手順を実行します。
 
-1. オーサーインスタンス [!DNL AEM Forms]、**[!UICONTROL ツール]** ![ ハンマー ](assets/hammer.png)/**[!UICONTROL Cloud Services]**/**[!UICONTROL データソース]** に移動します。
+1. オーサーインスタンス [!DNL AEM Forms]、**[!UICONTROL ツール]** ![&#x200B; ハンマー &#x200B;](assets/hammer.png)/**[!UICONTROL Cloud Services]**/**[!UICONTROL データソース]** に移動します。
 2. フォルダー名を選択し、「**[!UICONTROL Salesforce クラウド設定]**」を選択して「**[!UICONTROL プロパティ]**」を選択します。
 3. 「**[!UICONTROL 認証設定]**」タブで、次のように設定します。
    1. 「**[!UICONTROL ホスト]**」フィールドに [!DNL Salesforce] ドメイン URL を指定します。例えば、[Domain-name].my.salesforce.com のように指定します。

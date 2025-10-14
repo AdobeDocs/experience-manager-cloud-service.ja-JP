@@ -70,7 +70,7 @@ Cloud Manager のプログラムは、Cloud Manager の一連の環境を表し�
 
 最初のプログラムを作成したので、そのプログラムの環境を作成できるようになりました。 次に、[環境の作成](create-environments.md)ドキュメントを確認し、オンボーディングジャーニーを続けてください。
 
-[Edge Delivery Services サイトのオンボーディング ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md) も参照してください。
+[Edge Delivery Services サイトのオンボーディング &#x200B;](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md) も参照してください。
 
 ## その他のリソース {#additional-resources}
 

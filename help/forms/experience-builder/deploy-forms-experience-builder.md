@@ -17,7 +17,7 @@ ht-degree: 32%
 
 >[!NOTE]
 >
-> Forms Experience Builder は、早期アクセスプログラムで利用できます。 開始する前に、アクセス権をリクエストし、付与されていることを確認してください。 手順について詳しくは、[ オンボーディング ](product-overview.md#onboarding) 情報を参照してください。
+> Forms Experience Builder は、早期アクセスプログラムで利用できます。 開始する前に、アクセス権をリクエストし、付与されていることを確認してください。 手順について詳しくは、[&#x200B; オンボーディング &#x200B;](product-overview.md#onboarding) 情報を参照してください。
 
 >[!IMPORTANT]
 >
@@ -45,11 +45,11 @@ Forms Experience Builder を使用する前に、[お使いの環境で AEM Form
 
 **Edge Delivery Servicesの場合**
 
-Edge Delivery Services Formsを使用し、主にユニバーサルエディターを使用する場合。 [Edge Delivery Services Formsのプロジェクトを準備します ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)。 これは、Forms Experience Builder を有効にするための 1 回限りの設定です。
+Edge Delivery Services Formsを使用し、主にユニバーサルエディターを使用する場合。 [Edge Delivery Services Formsのプロジェクトを準備します &#x200B;](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)。 これは、Forms Experience Builder を有効にするための 1 回限りの設定です。
 
 **コアコンポーネントベースのフォームの場合**
 
-AEM オーサー環境でコアコンポーネントに基づくアダプティブFormsを使用している場合は、お使いの環境で [ アダプティブFormsコアコンポーネントが有効になっている ](/help/forms/enable-adaptive-forms-core-components.md) ことを確認します。
+AEM オーサー環境でコアコンポーネントに基づくアダプティブFormsを使用している場合は、お使いの環境で [&#x200B; アダプティブFormsコアコンポーネントが有効になっている &#x200B;](/help/forms/enable-adaptive-forms-core-components.md) ことを確認します。
 
 
 
@@ -65,7 +65,7 @@ Forms Experience Builder には、ワークフローとフォームタイプに�
 特定のフォームの編集中にビルダーを直接起動できます。
 
 1. **AEM/Forms/Formsとドキュメント** に移動します。
-1. [ コアコンポーネントテンプレートを使用して新しいフォームを作成するか ](/help/forms/creating-adaptive-form-core-components.md) 既存のフォームを開きます。
+1. [&#x200B; コアコンポーネントテンプレートを使用して新しいフォームを作成するか &#x200B;](/help/forms/creating-adaptive-form-core-components.md) 既存のフォームを開きます。
 1. エディターのツールバーにある「**Forms Experience Builder**」アイコンを選択して、会話インターフェイスを開きます。
 
    ![AI アシスタントアイコン*](/help/edge/docs/forms/assets/adaptive-forms-editor.gif){width="75%"}
@@ -81,7 +81,7 @@ Edge Delivery Servicesを介して配信されるフォームの場合、ビル�
 
 | 会話の例 |   |
 |--------------------------------------------------------------------------------------------------------------------------------------------|---|
-| **この会話を試して、包括的な連絡先フォーム（Summit デモに基づく）を作成します：**<br><br>**You:** 「氏名、メールアドレス、電話番号、会社名、役職、問い合わせ用のメッセージフィールドなど、個人情報を取り込むための連絡先フォームを作成します」 <br><br>**AI:** テンプレートを選択します <br>    テンプレートを選択するためのドロップダウン <br><br>**AI:** テーマを選択 <br>    テーマ <br><br>**AI:** フォームを作成を選択するためのドロップダウン | ![ 最初のフォーム ](/help/edge/docs/forms/assets/create-form.png) |
+| **この会話を試して、包括的な連絡先フォーム（Summit デモに基づく）を作成します：**<br><br>**You:** 「氏名、メールアドレス、電話番号、会社名、役職、問い合わせ用のメッセージフィールドなど、個人情報を取り込むための連絡先フォームを作成します」 <br><br>**AI:** テンプレートを選択します <br>    テンプレートを選択するためのドロップダウン <br><br>**AI:** テーマを選択 <br>    テーマ <br><br>**AI:** フォームを作成を選択するためのドロップダウン | ![&#x200B; 最初のフォーム &#x200B;](/help/edge/docs/forms/assets/create-form.png) |
 | <br>**AI:** 作成されたフォームを開く | </br> フォームが作成され、エディターで開かれます |
 
 

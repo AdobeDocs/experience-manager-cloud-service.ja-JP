@@ -40,7 +40,7 @@ ht-degree: 98%
 
 1. 「**ソリューションとアドオン**」タブには、「Sites」、「Assets」、「Screens」などのオプションが表示されます。「**Screens**」アドオンオプションを選択します（下図を参照）。
 
-   ![Screens アドオンオプション ](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
+   ![Screens アドオンオプション &#x200B;](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
 
 1. オプションを選択したら、「**更新**」をクリックします。
 

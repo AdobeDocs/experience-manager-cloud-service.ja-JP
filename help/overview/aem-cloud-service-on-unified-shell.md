@@ -46,7 +46,7 @@ AEM as a Cloud Service（オーサーサービス）は統合シェルと統合�
 
 >[!NOTE]
 >
->統合シェルは、プロジェクトコードから無効にすることもできます。 [AEM UI の構造 – 統合シェル ](/help/implementing/developing/introduction/ui-structure.md#unified-shell) を参照してください。
+>統合シェルは、プロジェクトコードから無効にすることもできます。 [AEM UI の構造 – 統合シェル &#x200B;](/help/implementing/developing/introduction/ui-structure.md#unified-shell) を参照してください。
 
 ## ダークテーマへの変更 {#changing-to-dark-theme}
 

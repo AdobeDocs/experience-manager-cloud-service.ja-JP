@@ -73,7 +73,7 @@ AEM でヘッドレスコンテンツの管理に推奨されるエディター�
 
 #### PWA の機能 {#pwa-features}
 
-AEM Sitesの [ プログレッシブ web アプリ（PWA）機能 ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) は、リリース 2025.1.0 以降の新しいプロジェクトで非推奨（廃止予定）になりました。この機能は、既存のプロジェクトでは引き続きサポートされますが、新規プロジェクトでは使用しないでください
+AEM Sitesの [&#x200B; プログレッシブ web アプリ（PWA）機能 &#x200B;](/help/sites-cloud/authoring/sites-console/enable-pwa.md) は、リリース 2025.1.0 以降の新しいプロジェクトで非推奨（廃止予定）になりました。この機能は、既存のプロジェクトでは引き続きサポートされますが、新規プロジェクトでは使用しないでください
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -112,7 +112,7 @@ Adobe Dynamic Media の AI 生成のビデオキャプションは、人工知�
 
 ### AEM Forms の新機能 {#forms-new-features}
 
-* **公開を管理**: [ 公開を管理 ](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option)）ワークフローを使用して、通常はオーサーインスタンスからパブリッシュインスタンスとプレビューインスタンスに向けて、複数の環境にわたってフォームを公開または非公開にすることができます。 これにより、ユーザーは効率的な方法でコンテンツの公開、非公開、または公開のスケジュールを設定できます。
+* **公開を管理**: [&#x200B; 公開を管理 &#x200B;](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option)）ワークフローを使用して、通常はオーサーインスタンスからパブリッシュインスタンスとプレビューインスタンスに向けて、複数の環境にわたってフォームを公開または非公開にすることができます。 これにより、ユーザーは効率的な方法でコンテンツの公開、非公開、または公開のスケジュールを設定できます。
 
 * **[コアコンポーネントベースアダプティブフォームのドラフトの自動保存](/help/forms/save-core-component-based-form-as-draft.md)**：一部が完了したフォームを自動的にドラフトとして保存する、自動保存機能を利用できるようになりました。 後で戻って、同じデバイスまたは他のデバイスで入力を完了できます。 この機能により、ユーザーはフォームへの入力を最初からやり直す必要がなくなるので、フォームの放棄が減り、組織のコンバージョン率が向上します。
 
@@ -127,7 +127,7 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 
 このリリースノートでは、現在のリリースで提供されるイノベーションのリストを示します。 早期アクセスプログラムで利用可能なイノベーションの完全なリストについては、[AEM Forms 早期アクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
 
-#### [ アダプティブFormsのHTML メールテンプレート ](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### [&#x200B; アダプティブFormsのHTML メールテンプレート &#x200B;](/help/forms/html-email-templates-in-adaptive-forms.md)
 
 アダプティブFormsでは、HTMLのメールテンプレートを使用できます。 HTML メールテンプレートを使用すると、フォームの送信時に、リッチでパーソナライズされた、魅力的な外観のメールを送信できます。これらのメールは、フォームデータでカスタマイズしたり、画像やリンクなどの様々なメールタグを使用して強化したりできます。アダプティブフォームでは、HTML テンプレートを含むファイルをアップロードするか、プレーンテキストエディターを使用してこれらのテンプレートを作成できます。
 

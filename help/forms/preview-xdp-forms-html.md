@@ -90,7 +90,7 @@ Designer での XDP フォームの HTML プレビューの生成を有効にす
    >
    >AEM Forms サーバーが起動および実行されていることを確認してください。HTML プレビューは、プレビューを&#x200B;*生成*&#x200B;するために CRX サーバーに接続します。
 
-   ![AEM Forms Designer のオプション ](assets/server_options.png)
+   ![AEM Forms Designer のオプション &#x200B;](assets/server_options.png)
 
    AEM Forms Designer のオプション
 

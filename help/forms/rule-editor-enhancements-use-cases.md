@@ -22,16 +22,16 @@ ht-degree: 0%
 
 | 機能強化 | 説明 | メリット |
 |---|----|---|
-| [validate （） メソッドを使用した検証 ](#validate-method-in-function-list) | 関数リストで使用でき、個々のフィールド、パネルまたはフォーム全体を検証できます。 | - パネル、フィールド、またはフォームレベルの <br> で詳細な検証を行う – ターゲットを絞り込んだエラーメッセージ <br> ールでユーザーエクスペリエンスを向上する – 不完全なデータ <br> ースで進行を防ぐ – フォーム送信エラーを減らす |
-| [ レコードのドキュメントのダウンロード ](#download-document-of-record) | レコードのドキュメント（DoR）をダウンロードするためにルールエディターで使用できる、すぐに使用できる関数。 | - DoR <br> のダウンロードにカスタム開発は必要ありません – フォーム間で一貫したダウンロードエクスペリエンス |
-| [ 動的変数 ](#support-for-dynamic-variables-in-rules) | ユーザー入力またはその他の条件に基づいて変化する変数を使用して、ルールを作成します。 |  – 柔軟なルール条件を有効にする <br> – 重複ロジックの必要性を減らす <br> – 非表示フィールドを作成する必要がなくなります。 |
-| [ カスタムイベントベースのルール ](#custom-event-based-rules-support) | 標準のトリガーを超えるカスタムイベントに応答するルールを定義します。 |  – 高度なユースケースのサポート <br> - ルールを実行するタイミングと方法をより詳細に制御 <br>、インタラクティビティを強化 |
-| [ コンテキスト対応の繰り返し可能なパネル実行 ](#context-based-rule-execution-for-repeatable-panels) | ルールは、最後のインスタンスだけでなく、繰り返される各パネルに対して正しいコンテキストで実行されるようになりました。 |  – 各リピートインスタンスの正確なルールアプリケーション <br> – 動的セクションのエラーを減らす <br> – 繰り返しコンテンツのユーザーエクスペリエンスを向上させます |
-| [ クエリ文字列、UTM およびブラウザーパラメーターのサポート ](#url-and-browser-parameter-based-rules-in-adaptive-forms) | URL パラメーターやブラウザー固有の値に基づいてフォームの動作を調整するルールを作成します。 | - ソースまたは環境 <br> に基づいてパーソナライゼーションを有効にする – マーケティングまたはトラッキング固有のフローに役立ちます <br> – 追加のスクリプトやカスタマイズは必要ありません |
+| [validate （） メソッドを使用した検証 &#x200B;](#validate-method-in-function-list) | 関数リストで使用でき、個々のフィールド、パネルまたはフォーム全体を検証できます。 | - パネル、フィールド、またはフォームレベルの <br> で詳細な検証を行う – ターゲットを絞り込んだエラーメッセージ <br> ールでユーザーエクスペリエンスを向上する – 不完全なデータ <br> ースで進行を防ぐ – フォーム送信エラーを減らす |
+| [&#x200B; レコードのドキュメントのダウンロード &#x200B;](#download-document-of-record) | レコードのドキュメント（DoR）をダウンロードするためにルールエディターで使用できる、すぐに使用できる関数。 | - DoR <br> のダウンロードにカスタム開発は必要ありません – フォーム間で一貫したダウンロードエクスペリエンス |
+| [&#x200B; 動的変数 &#x200B;](#support-for-dynamic-variables-in-rules) | ユーザー入力またはその他の条件に基づいて変化する変数を使用して、ルールを作成します。 |  – 柔軟なルール条件を有効にする <br> – 重複ロジックの必要性を減らす <br> – 非表示フィールドを作成する必要がなくなります。 |
+| [&#x200B; カスタムイベントベースのルール &#x200B;](#custom-event-based-rules-support) | 標準のトリガーを超えるカスタムイベントに応答するルールを定義します。 |  – 高度なユースケースのサポート <br> - ルールを実行するタイミングと方法をより詳細に制御 <br>、インタラクティビティを強化 |
+| [&#x200B; コンテキスト対応の繰り返し可能なパネル実行 &#x200B;](#context-based-rule-execution-for-repeatable-panels) | ルールは、最後のインスタンスだけでなく、繰り返される各パネルに対して正しいコンテキストで実行されるようになりました。 |  – 各リピートインスタンスの正確なルールアプリケーション <br> – 動的セクションのエラーを減らす <br> – 繰り返しコンテンツのユーザーエクスペリエンスを向上させます |
+| [&#x200B; クエリ文字列、UTM およびブラウザーパラメーターのサポート &#x200B;](#url-and-browser-parameter-based-rules-in-adaptive-forms) | URL パラメーターやブラウザー固有の値に基づいてフォームの動作を調整するルールを作成します。 | - ソースまたは環境 <br> に基づいてパーソナライゼーションを有効にする – マーケティングまたはトラッキング固有のフローに役立ちます <br> – 追加のスクリプトやカスタマイズは必要ありません |
 
 >[!NOTE]
 >
-> この機能強化は、[Edge Delivery Services Formsのルールエディター ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) にも適用できます。
+> この機能強化は、[Edge Delivery Services Formsのルールエディター &#x200B;](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) にも適用できます。
 
 次に、これらの機能を使用して、パーソナライズされたエクスペリエンスをユーザーに提供する方法を理解するのに役立つ具体的なユースケースについて、各方法を詳しく説明します
 
@@ -54,11 +54,11 @@ ht-degree: 0%
 
 以下のスクリーンショットは、「**次へ**」ボタンに適用されるルールを示しています。
 
-![ 「次へ検証」ボタン ](/help/forms/assets/validate-next.png)
+![&#x200B; 「次へ検証」ボタン &#x200B;](/help/forms/assets/validate-next.png)
 
 上記のルールでは、「**次へ**」ボタンは「**個人の詳細** セクションのフィールドが有効かどうかを確認します。 詳細が無効な場合、フォーカスは **個人の詳細** パネルの **名前** フィールドに移動します。
 
-![ 出力 ](/help/forms/assets/valid-output.png)
+![&#x200B; 出力 &#x200B;](/help/forms/assets/valid-output.png)
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 以下のスクリーンショットは、「**ダウンロード**」ボタンに適用されるルールを示しています。
 
-![ ダウンロードボタンルール ](/help/forms/assets/download-button-rule.png)
+![&#x200B; ダウンロードボタンルール &#x200B;](/help/forms/assets/download-button-rule.png)
 
 >[!NOTE]
 >
@@ -112,19 +112,19 @@ ht-degree: 0%
 * ユーザーが米国を選択した場合、**extracharge** は 500 に設定されます。
 * その他の国では、**extracharge** が 100 に設定されます。
 
-![ 変数値を設定 ](/help/forms/assets/setvalue.png)
+![&#x200B; 変数値を設定 &#x200B;](/help/forms/assets/setvalue.png)
 
 その後、**Total Shipment Cost** が計算されると、**Get Variable Value** 関数を使用して **extracharge** の値が取得されます。 この値が **製品価格×製品数量** に追加され、ボタンのクリック時に最終支払金額が計算されます。
 
-![ 変数値を取得 ](/help/forms/assets/getvalue.png)
+![&#x200B; 変数値を取得 &#x200B;](/help/forms/assets/getvalue.png)
 
 ユーザーが国または数量を変更すると、「**合計出荷原価**」フィールドが動的に更新され、製品原価と出荷手数料の両方が反映されます。
-![ 出力 ](/help/forms/assets/getsetvalue-output.png)
+![&#x200B; 出力 &#x200B;](/help/forms/assets/getsetvalue-output.png)
 
 >[!NOTE]
 >
 > 「When」条件に「**変数値を取得**」関数を追加することもできます。
-> &#x200B;> ![When 条件 ](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center} の変数値を取得
+> &#x200B;> ![When 条件 &#x200B;](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center} の変数値を取得
 
 このアプローチにより、フォームにフィールドを追加することなく動的でリアルタイムの計算が可能になり、構造がクリーンで使いやすくなります。
 
@@ -143,15 +143,15 @@ ht-degree: 0%
 
 ログインフラグメントがフォームに追加され、ユーザー名およびパスワードの定義済みフィールドが含まれます。 ルールは、「**OTP を取得**」ボタンで設定され、OTP の入力および検証用の入力フィールドを含む **検証パネル** を表示します。
 
-![OTP ルールを取得 ](/help/forms/assets/get-otp-rule.png)
+![OTP ルールを取得 &#x200B;](/help/forms/assets/get-otp-rule.png)
 
 **検証パネル** では、「検証」ボタンにルールが設定されています。 API 統合は、「**OTP を入力**」フィールドに入力された OTP を検証するために使用されます。 検証に成功した場合、API 応答を含んだイベントペイロードで **LoggedIn** という名前の **ディスパッチイベント** がトリガーされます。
 
-![トリガー内イベントルール ](/help/forms/assets/trigger-event-rule.png)
+![トリガー内イベントルール &#x200B;](/help/forms/assets/trigger-event-rule.png)
 
 フォームレベルで、**LoggedIn** イベントをリッスンするようにルールが設定されます。 このイベントがトリガーされると、ルールによってリダイレクトメッセージが表示され、ユーザーがダッシュボードページに移動します。
 
-![ イベント ルールのディスパッチ ](/help/forms/assets/dispatch-event-rule.png)
+![&#x200B; イベント ルールのディスパッチ &#x200B;](/help/forms/assets/dispatch-event-rule.png)
 
 ユーザーが正しい資格情報と有効な OTP を使用してフォームを送信すると、ログインに成功し、ユーザーはダッシュボードにリダイレクトされます。
 
@@ -169,11 +169,11 @@ ht-degree: 0%
 
 次のスクリーンショットは、繰り返し可能な製品パネル内の **製品数** フィールドのルールを示しています。
 
-![ 製品ルールの数 ](/help/forms/assets/number-of-product-rule.png)
+![&#x200B; 製品ルールの数 &#x200B;](/help/forms/assets/number-of-product-rule.png)
 
 数量が変更されると、ルールは選択された製品の単価を取得し、そのパネルの合計原価のみを計算します。
 
-![ コンテキスト対応ルールの出力 ](/help/forms/assets/context-aware-rule-output.png)
+![&#x200B; コンテキスト対応ルールの出力 &#x200B;](/help/forms/assets/context-aware-rule-output.png)
 
 ## アダプティブFormsの URL およびブラウザーパラメーターベースのルール
 
@@ -196,7 +196,7 @@ ht-degree: 0%
 
 次のスクリーンショットは、テキストメッセージで設定されたルールを示しています。
 
-![ テキストメッセージに関するルール ](/help/forms/assets/utm-param-rule.png)
+![&#x200B; テキストメッセージに関するルール &#x200B;](/help/forms/assets/utm-param-rule.png)
 
 **utm_source** パラメーター値が「google」に等しい場合、カスタムメッセージに「Googleユーザー様、キャンペーン広告へようこそ！」と表示されます。 が表示されます。
 

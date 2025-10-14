@@ -44,7 +44,7 @@ Experience Platform タグとの統合の主なユースケースは、Experienc
 
 統合の 2 番目の事例は、Experience Manager Assets のみ、または Dynamic Media Classic を使用する顧客です。その場合、ビューアの埋め込みコードを取得して、Web サイトページに追加します。次に、Experience Platform タグから Experience Platform タグライブラリの実稼動用 URL を取得し、web ページのコードに手動で追加します。
 
-[ 埋め込みコードを使用した Dynamic Media ビューアのトラッキング ](#tracking-dynamic-media-viewers-using-embed-code) を参照してください。
+[&#x200B; 埋め込みコードを使用した Dynamic Media ビューアのトラッキング &#x200B;](#tracking-dynamic-media-viewers-using-embed-code) を参照してください。
 
 ## 統合でのデータとイベントのトラッキングの仕組み {#how-data-and-event-tracking-works-in-the-integration}
 
@@ -94,7 +94,7 @@ Dynamic Media ビューアを追跡するには、次のいずれかを使用で
 
 **ビーコンを送信** アクションは、**変数を設定** アクションに続く必要があります。 *ビーコン送信*&#x200B;アクションは、実際に Analytics トラッキングサーバーにデータを送信します。*変数設定*&#x200B;と&#x200B;*ビーコン送信*&#x200B;アクションは、いずれも Adobe Analytics 拡張機能から得られます。
 
-Experience Platform タグユーザガイドの [ ルール ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/ui/rules) を参照してください。
+Experience Platform タグユーザガイドの [&#x200B; ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/ui/rules) を参照してください。
 
 #### サンプル設定 {#sample-configuration}
 
@@ -150,14 +150,14 @@ Experience Manager Sites を使用していない、または Experience Manager
 
 適切に設定すれば、Dynamic Media ビューアを使用した web ページに Experience Platform タグサポートを追加できます。
 
-Experience Platform タグライブラリの埋め込みコードの使用方法について詳しくは、[Experience Platform タグの埋め込みコードの追加 ](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code) を参照してください。
+Experience Platform タグライブラリの埋め込みコードの使用方法について詳しくは、[Experience Platform タグの埋め込みコードの追加 &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code) を参照してください。
 
-Experience Manager Dynamic Media の埋め込みコード機能の使用方法について詳しくは、[Web ページへのビデオまたは画像ビューアの埋め込み ](/help/assets/dynamic-media/embed-code.md) を参照してください。
+Experience Manager Dynamic Media の埋め込みコード機能の使用方法について詳しくは、[Web ページへのビデオまたは画像ビューアの埋め込み &#x200B;](/help/assets/dynamic-media/embed-code.md) を参照してください。
 
 **埋め込みコードを使用した Dynamic Media ビューアのトラッキング：**
 
 1. Dynamic Media ビューアを埋め込む web ページを準備します。
-1. まず、Experience Platform タグにログインして、Experience Platform タグライブラリの埋め込みコードを取得します（[Experience Platform タグの設定 ](#configuring-adobe-launch-for-the-integration) を参照）。
+1. まず、Experience Platform タグにログインして、Experience Platform タグライブラリの埋め込みコードを取得します（[Experience Platform タグの設定 &#x200B;](#configuring-adobe-launch-for-the-integration) を参照）。
 1. **[!UICONTROL プロパティ]** を選択し、「**[!UICONTROL 環境]**」タブをクリックします。
 1. Web ページの環境に関連する環境レベルを取得します。次に、「**[!UICONTROL インストール]**」列のボックスアイコンをクリックします。
 1. **[!UICONTROL Web インストール手順]**&#x200B;ダイアログボックスで、Experience Platform タグライブラリの埋め込みコード全体と、それを囲む `<script/>` タグをコピーします。
@@ -196,7 +196,7 @@ Dynamic Media ビューア拡張機能で提供されるデータ要素タイプ
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-各ビューアタイプでサポートされるイベントのリストを照会するには、[Dynamic Media ビューアリファレンスガイド ](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers) を参照し、特定のビューアセクションに移動してサブセクションの「Adobe Analytics トラッキングのサポート」を選択します。 現在、Dynamic Media ビューアリファレンスガイドでは、イベントの引数について説明していません。
+各ビューアタイプでサポートされるイベントのリストを照会するには、[Dynamic Media ビューアリファレンスガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers) を参照し、特定のビューアセクションに移動してサブセクションの「Adobe Analytics トラッキングのサポート」を選択します。 現在、Dynamic Media ビューアリファレンスガイドでは、イベントの引数について説明していません。
 
 次に、Dynamic Media ビューアの&#x200B;*データ要素*&#x200B;のライフサイクルを考えてみましょう。このようなデータ要素の値は、対応する Dynamic Media ビューアイベントがページで発生した後に入力されます。 例えば、データ要素が **[!UICONTROL LOAD]** イベントとその「asset」引数を指しているとします。このようなデータ要素の値は、ビューアが初めて LOAD イベントを実行した後に有効なデータを受け取ります。 データ要素が **[!UICONTROL ZOOM]** イベントとその「scale」引数を指している場合、このようなデータ要素の値は、ビューアが初めて **[!UICONTROL ZOOM]** イベントを送信するまで空のままです。
 
@@ -253,7 +253,7 @@ Dynamic Media ビューア拡張機能を使用すると、Dynamic Media ビュ�
 最も簡単な方法は、次の 2 つの手順を実行することです。
 
 * まず、1 つ以上のデータ要素を定義します。各データ要素は、Dynamic Media ビューアイベントのパラメーターを表します。
-* 最後に、Adobe Analytics拡張機能の変数設定エディターで、「![ データ アイコン、データ要素ピッカー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**データ要素** ピッカーをクリックし、データ要素を選択ダイアログボックスを開き、データ要素をクリックします。
+* 最後に、Adobe Analytics拡張機能の変数設定エディターで、「![&#x200B; データ アイコン、データ要素ピッカー &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**データ要素** ピッカーをクリックし、データ要素を選択ダイアログボックスを開き、データ要素をクリックします。
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
@@ -432,7 +432,7 @@ Adobe Analyticsを設定すると、統合は次のように設定されます�
 
 **統合のために Adobe Analytics を設定するには**：
 
-1. まず、Experience Cloud [ホームページ](https://experience.adobe.com/#/home)から Adobe Analytics にアクセスします。メニューバーで、ページ右上隅付近の ![ アプリアイコン、ソリューション ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg)**ソリューション** をクリックし、「**[!UICONTROL Analytics]**」を選択します。
+1. まず、Experience Cloud [ホームページ](https://experience.adobe.com/#/home)から Adobe Analytics にアクセスします。メニューバーで、ページ右上隅付近の ![&#x200B; アプリアイコン、ソリューション &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg)**ソリューション** をクリックし、「**[!UICONTROL Analytics]**」を選択します。
 
    ![2019-07-22_18-08-47](assets/2019-07-22_18-08-47.png)
 
@@ -499,7 +499,7 @@ Experience Platform タグを設定すると、統合のために次の項目が
 
 **Experience Platform タグを統合用に設定するには：**
 
-1. まず、Experience Cloud の[ホームページ](https://experience.adobe.com/#/home)から Experience Platform タグにアクセスします。メニューバーで、ページの右上隅付近にある ![ アプリアイコン、ソリューション ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg)**ソリューション** をクリックし、**[!UICONTROL タグ]** をクリックします。
+1. まず、Experience Cloud の[ホームページ](https://experience.adobe.com/#/home)から Experience Platform タグにアクセスします。メニューバーで、ページの右上隅付近にある ![&#x200B; アプリアイコン、ソリューション &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg)**ソリューション** をクリックし、**[!UICONTROL タグ]** をクリックします。
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
@@ -669,7 +669,7 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
 
 ### Experience Manager IMS の設定 {#configuring-aem-ims}
 
-1. Experience Manager オーサーで、![ ハンマーアイコン、ツール ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg)**ツール** をクリックし、**[!UICONTROL セキュリティ]**/**[!UICONTROL Adobe IMS設定]** に移動します。
+1. Experience Manager オーサーで、![&#x200B; ハンマーアイコン、ツール &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg)**ツール** をクリックし、**[!UICONTROL セキュリティ]**/**[!UICONTROL Adobe IMS設定]** に移動します。
 
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
@@ -785,7 +785,7 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
 
 ## 統合用の Experience Platform タグクラウドの設定 {#configuring-adobe-launch-cloud-for-the-integration}
 
-1. Experience Manager オーサーモードで、左上隅付近の ![ ハンマーアイコン、ツール ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) **ツール** をクリックし、{Cloud Services **/**&#x200B;[!UICONTROL &#x200B; 6}Experience Platform タグの設定 &#x200B;]&#x200B;**に移動します。**
+1. Experience Manager オーサーモードで、左上隅付近の ![&#x200B; ハンマーアイコン、ツール &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) **ツール** をクリックし、{Cloud Services **/**&#x200B;[!UICONTROL &#x200B; 6}Experience Platform タグの設定 &#x200B;]&#x200B;**に移動します。**
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 

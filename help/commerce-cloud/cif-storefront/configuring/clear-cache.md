@@ -25,7 +25,7 @@ ht-degree: 84%
 
 デフォルトでは、CIF 設定でキャッシュ消去機能は無効になっています。有効にするには、対応するプロジェクトに以下を追加する必要があります。
 
-* サーブレットの `/bin/cif/invalidate-cache` を有効にします。これにより、以下に示すように、プロジェクトに `com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json` 設定を追加して、対応するリクエストで clear-cache API をトリガーできます [ こちら ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json)。
+* サーブレットの `/bin/cif/invalidate-cache` を有効にします。これにより、以下に示すように、プロジェクトに `com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json` 設定を追加して、対応するリクエストで clear-cache API をトリガーできます [&#x200B; こちら &#x200B;](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json)。
 
   >[!NOTE]
   >
@@ -135,8 +135,8 @@ curl --location 'https://author-p10603-e145552-cmstg.adobeaemcloud.com/bin/cif/i
 
 例えば、既存の属性をキャッシュの消去に使用しない場合は、独自の属性を柔軟に作成し、対応する機能を定義できます。
 
-* AEMの内部メモリ（graphql レスポンス）からキャッシュをクリアするだけの場合は、[ このリファレンス ](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomInvalidation.java) に従う必要があります。
-* 内部メモリと Dispatcher キャッシュからキャッシュをクリアする必要がある場合は、[ このリファレンス ](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomDispatcherInvalidation.java) に従ってください。
+* AEMの内部メモリ（graphql レスポンス）からキャッシュをクリアするだけの場合は、[&#x200B; このリファレンス &#x200B;](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomInvalidation.java) に従う必要があります。
+* 内部メモリと Dispatcher キャッシュからキャッシュをクリアする必要がある場合は、[&#x200B; このリファレンス &#x200B;](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomDispatcherInvalidation.java) に従ってください。
 
   >[!NOTE]
   >

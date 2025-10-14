@@ -34,7 +34,7 @@ AEM Formsは、レコードのドキュメント（DoR） PDF を生成する際
 
 ### 考慮事項
 
-レコードのドキュメント（DoR）は、タグ付けされたPDFにすることができ、支援テクノロジーに対するアクセシビリティと適切な構造を確保するのに役立ちます。 タグ付きPDF出力を有効にするには、[XCI プロパティ `config/present/pdf/tagged` を `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file) に設定します。 PDFを生成したら、アクセシビリティタグが正しく適用されていることを確認することが重要です。 [Adobe Acrobatを使用してアクセシビリティタグを確認し ](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) ドキュメントがアクセシビリティ標準を満たしていることを確認できます。
+レコードのドキュメント（DoR）は、タグ付けされたPDFにすることができ、支援テクノロジーに対するアクセシビリティと適切な構造を確保するのに役立ちます。 タグ付きPDF出力を有効にするには、[XCI プロパティ `config/present/pdf/tagged` を `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file) に設定します。 PDFを生成したら、アクセシビリティタグが正しく適用されていることを確認することが重要です。 [Adobe Acrobatを使用してアクセシビリティタグを確認し &#x200B;](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) ドキュメントがアクセシビリティ標準を満たしていることを確認できます。
 
 ### 新機能
 

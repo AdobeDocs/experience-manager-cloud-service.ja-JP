@@ -75,9 +75,9 @@ AEM Forms は、長年にわたって、優れたオンボーディングと登�
 
 * 製品の詳細コンポーネントを任意のコンテンツページで使用および設定できるようになりました。
 
-* 最新のCIF コアコンポーネント v1.9.0 を含んだCIF Venia 参照サイト 2021.03.25 をリリースしました。詳しくは、[CIF Venia 参照サイト ](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) を参照してください。
+* 最新のCIF コアコンポーネント v1.9.0 を含んだCIF Venia 参照サイト 2021.03.25 をリリースしました。詳しくは、[CIF Venia 参照サイト &#x200B;](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) を参照してください。
 
-* CIF コアコンポーネント v1.9.0 をリリースしました。詳しくは、[CIF コアコンポーネント ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) を参照してください。
+* CIF コアコンポーネント v1.9.0 をリリースしました。詳しくは、[CIF コアコンポーネント &#x200B;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) を参照してください。
 
 
 ## Cloud Manager {#cloud-manager}
@@ -91,7 +91,7 @@ AEM as a Cloud Service 2021.3.0 の Cloud Manager のリリース日は 2021 年
 
 ### 新機能 {#what-is-new-march}
 
-* [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)、[SSL 証明書 ](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn)、[ カスタムドメイン名 ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) に既存のカスタムドメイン名がある環境のユーザーは、既存の設定に関するメッセージを確認し、ユーザーインターフェイスを介してセルフサービス方式で操作できます。
+* [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)、[SSL 証明書 &#x200B;](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn)、[&#x200B; カスタムドメイン名 &#x200B;](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) に既存のカスタムドメイン名がある環境のユーザーは、既存の設定に関するメッセージを確認し、ユーザーインターフェイスを介してセルフサービス方式で操作できます。
 
 * 必要な権限を持つユーザーがプログラムを編集して、セルフサービス方式で以下を行えるようになりました。
 
@@ -174,7 +174,7 @@ AEM as a Cloud Service 2021.3.0 の Cloud Manager のリリース日は 2021 年
    * ui.apps.structure プロジェクトを生成します。
    * 分析モジュールを作成します。
 
-* Dispatcher コンバーターの新機能と機能強化は次のとおりです。詳しくは、「[GitHub リソース：Dispatcher コンバーター ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)」を参照してください。
+* Dispatcher コンバーターの新機能と機能強化は次のとおりです。詳しくは、「[GitHub リソース：Dispatcher コンバーター &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)」を参照してください。
    * 異なるインクルージョンに対して、コンテンツをインライン化するのではなく別個のファイルを作成します。
    * vhosts のフォルダーパスと vhost ファイルのパスを両方とも処理できます。
    * 600 件以上の大規模な顧客設定を持つファームファイルを生成できます。

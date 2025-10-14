@@ -135,13 +135,13 @@ In the following video, Adaptive Form components are bound with corresponding Ac
 
 これで、アダプティブフォームが送信されると、更新されたレコードのレコードのドキュメントが作成されるようになりました。
 
-![更新済み ](assets/we-retail-new-invoice-sent-to-customer.png)
+![更新済み &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## レコードのドキュメントを使用する場合の主な注意点 {#key-considerations-when-working-with-document-of-record}
 
 アダプティブフォーム用のレコードのドキュメントで作業する際は、次の点に注意してください。
 
-* **リッチテキストのサポート**：レコードのドキュメントは、リッチテキストフィールド内でHTMLのマークアップタグをサポートします。 サポートされるタグとアクセシビリティに関する考慮事項について詳しくは、[ レコードのドキュメントでサポートされるHTML マークアップタグ ](html-markup-tags-support-in-document-of-record.md) を参照してください。
+* **リッチテキストのサポート**：レコードのドキュメントは、リッチテキストフィールド内でHTMLのマークアップタグをサポートします。 サポートされるタグとアクセシビリティに関する考慮事項について詳しくは、[&#x200B; レコードのドキュメントでサポートされるHTML マークアップタグ &#x200B;](html-markup-tags-support-in-document-of-record.md) を参照してください。
 * アダプティブフォーム内のドキュメントフラグメントは、レコードのドキュメントには表示されません。ただし、アダプティブフォームフラグメントはサポートされています。
 * XML スキーマベースのアダプティブフォームは、レコードの生成されたドキュメント内でのコンテンツのバインドに対応していません。
 * レコードのドキュメントのレンダリングをユーザーが要求すると、レコードのドキュメントのローカライズされたバージョンが、ロケールに合わせてオンデマンドで作成されます。レコードのドキュメントのローカライズは、アダプティブフォームのローカライズと同時に発生します。<!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->

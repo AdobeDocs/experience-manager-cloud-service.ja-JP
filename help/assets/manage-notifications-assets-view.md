@@ -94,7 +94,7 @@ ht-degree: 67%
 
 1. 購読するフォルダー、アセットまたはコレクションを参照し、「**[!UICONTROL ウォッチ]**」をクリックします。
 
-1. Assets ビューに、成功メッセージが表示されます。 成功メッセージで **[!UICONTROL 通知環境設定に移動]**」をクリックし、[ 通知カテゴリの購読 ](#subscribe-to-notification-categories) を編集できます。
+1. Assets ビューに、成功メッセージが表示されます。 成功メッセージで **[!UICONTROL 通知環境設定に移動]**」をクリックし、[&#x200B; 通知カテゴリの購読 &#x200B;](#subscribe-to-notification-categories) を編集できます。
 
    ![アセットビューの通知](assets/watch-assets.png)
 
@@ -106,9 +106,9 @@ Assets ビューは、購読しているカテゴリに関する通知を送信�
 
 1. **[!UICONTROL アセット管理]** の下の [!UICONTROL &#x200B; 監視Assets] に移動します。
 
-1. Assets ビューには、名前、タイプ、パスを含む、購読しているアセットのリストが表示されます。 リストからアセット、フォルダーまたはコレクションを選択して、その詳細、場所または [ 登録解除 ](#unsubscribe-to-content) を表示します。
+1. Assets ビューには、名前、タイプ、パスを含む、購読しているアセットのリストが表示されます。 リストからアセット、フォルダーまたはコレクションを選択して、その詳細、場所または [&#x200B; 登録解除 &#x200B;](#unsubscribe-to-content) を表示します。
 
-   ![ 購読コンテンツを表示 ](assets/view-watched-assets.png)
+   ![&#x200B; 購読コンテンツを表示 &#x200B;](assets/view-watched-assets.png)
 
 ### コンテンツ購読者の表示 {#view-content-subscribers}
 
@@ -116,9 +116,9 @@ Assets ビューは、購読しているカテゴリに関する通知を送信�
 
 1. フォルダー、アセットまたはコレクションに移動して、「**[!UICONTROL 詳細]**」を選択します。
 
-1. 右側 ![ パネルで目 ](assets/do-not-localize/eye-icon.png) アイコンをクリックして、コンテンツのウォッチャーのリストを表示します。
+1. 右側 ![&#x200B; パネルで目 &#x200B;](assets/do-not-localize/eye-icon.png) アイコンをクリックして、コンテンツのウォッチャーのリストを表示します。
 
-   または、右側のパネルの ![ コメントアイコン ](assets/do-not-localize/comment-icon.svg) をクリックして、コンテンツウォッチャーを表示します。
+   または、右側のパネルの ![&#x200B; コメントアイコン &#x200B;](assets/do-not-localize/comment-icon.svg) をクリックして、コンテンツウォッチャーを表示します。
 
 ### コンテンツの配信解除 {#unsubscribe-to-content}
 
@@ -128,9 +128,9 @@ Assets ビューは、購読しているカテゴリに関する通知を送信�
 
 1. 登録解除するアセット、フォルダーまたはコレクションを選択し、「**[!UICONTROL ウォッチ解除]**」をクリックします。
 
-   ![ コンテンツの購読解除 ](assets/unsubscribe-assets.png)
+   ![&#x200B; コンテンツの購読解除 &#x200B;](assets/unsubscribe-assets.png)
 
-または、「アセット管理 [!UICONTROL &#x200B; の下のフォルダー、アセットまたはコレクションを参照し &#x200B;] す。 [ 購読しているアセット ](#subscribe-to-content) を選択し、「**[!UICONTROL ウォッチ解除]**」をクリックします。
+または、「アセット管理 [!UICONTROL &#x200B; の下のフォルダー、アセットまたはコレクションを参照し &#x200B;] す。 [&#x200B; 購読しているアセット &#x200B;](#subscribe-to-content) を選択し、「**[!UICONTROL ウォッチ解除]**」をクリックします。
 
 ## 通知を表示 {#view-notifications}
 

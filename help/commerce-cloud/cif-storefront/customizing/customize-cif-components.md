@@ -15,7 +15,7 @@ ht-degree: 88%
 
 # AEM CIF コアコンポーネントのカスタマイズ {#customize-cif-components}
 
-[CIF Venia プロジェクト ](https://github.com/adobe/aem-cif-guides-venia) は、[CIF コアコンポーネントを使用するための参照コードベースです。](https://github.com/adobe/aem-core-cif-components) このチュートリアルでは、[ 製品ティーザー ](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) コンポーネントをさらに拡張して、Adobe Commerceのカスタム属性を表示します。 また、AEM と Adobe Commerce 間の GraphQL 統合、および CIF コアコンポーネントによって提供される拡張フックについても学習します。
+[CIF Venia プロジェクト &#x200B;](https://github.com/adobe/aem-cif-guides-venia) は、[CIF コアコンポーネントを使用するための参照コードベースです。](https://github.com/adobe/aem-core-cif-components) このチュートリアルでは、[&#x200B; 製品ティーザー &#x200B;](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) コンポーネントをさらに拡張して、Adobe Commerceのカスタム属性を表示します。 また、AEM と Adobe Commerce 間の GraphQL 統合、および CIF コアコンポーネントによって提供される拡張フックについても学習します。
 
 >[!TIP]
 >
@@ -29,13 +29,13 @@ Venia ブランドは最近、持続可能な資材を使用して一部の製�
 
 ## 前提条件 {#prerequisites}
 
-このチュートリアルを完了するには、ローカルの開発環境が必要です。この環境には、Adobe Commerce インスタンスに設定および接続された AEM の実行インスタンスが含まれます。[AEM as a Cloud Service SDKとのローカル開発のセットアップ」の要件と手順を確認します。](/help/commerce-cloud/cif-storefront/develop.md) チュートリアルを完全に実行するには、Adobe Commerceで [ 属性を商品に ](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) 追加する権限が必要です。
+このチュートリアルを完了するには、ローカルの開発環境が必要です。この環境には、Adobe Commerce インスタンスに設定および接続された AEM の実行インスタンスが含まれます。[AEM as a Cloud Service SDKとのローカル開発のセットアップ」の要件と手順を確認します。](/help/commerce-cloud/cif-storefront/develop.md) チュートリアルを完全に実行するには、Adobe Commerceで [&#x200B; 属性を商品に &#x200B;](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) 追加する権限が必要です。
 
 また、コード例やチュートリアルを実行するには、[GraphiQL](https://github.com/graphql/graphiql) またはブラウザー拡張機能などの GraphQL IDE が必要です。ブラウザー拡張機能をインストールする場合は、その拡張機能にリクエストヘッダーを設定できることを確認してください。Google Chrome の _Altair GraphQL Client_ は、ジョブを実行できる拡張機能の 1 つです。
 
 ## Venia プロジェクトのクローン {#clone-venia-project}
 
-[Venia プロジェクト ](https://github.com/adobe/aem-cif-guides-venia) のクローンを作成し、デフォルトのスタイルを上書きします。
+[Venia プロジェクト &#x200B;](https://github.com/adobe/aem-cif-guides-venia) のクローンを作成し、デフォルトのスタイルを上書きします。
 
 >[!NOTE]
 >
@@ -128,7 +128,7 @@ AEM に表示された製品と製品データは Adobe Commerce に格納され
 
    >[!TIP]
    >
-   > [ キャッシュ管理について詳しくは、Adobe Commerce ユーザーガイドを参照してください。](https://docs.magento.com/user-guide/system/cache-management.html)
+   > [&#x200B; キャッシュ管理について詳しくは、Adobe Commerce ユーザーガイドを参照してください。](https://docs.magento.com/user-guide/system/cache-management.html)
 
 ## GraphQL IDE を使用した属性の検証 {#use-graphql-ide}
 
@@ -349,7 +349,7 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
 
    上記のコンポーネント定義は、プロジェクト内の製品ティーザーコンポーネント用です。`sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"` プロパティに注目してください。このプロキシは、[プロキシコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=ja#create-proxy-components)の作成例です。AEM CIF コアコンポーネントから製品ティーザー HTL スクリプトをコピー＆ペーストする代わりに、`sling:resourceSuperType` を使用してすべての機能を継承できます。
 
-1. `productteaser.html` ファイルを開きます。このファイルは、`productteaser.html`CIF製品ティーザー [ からの ](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html) ファイルのコピーです。
+1. `productteaser.html` ファイルを開きます。このファイルは、`productteaser.html`CIF製品ティーザー [&#x200B; からの &#x200B;](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html) ファイルのコピーです。
 
    ```html
    <!--/* productteaser.html */-->
@@ -387,7 +387,7 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
 
    Sling モデルメソッドを HTL で呼び出すと、メソッドの `get` および `is` 部分が削除され、最初の文字が小文字に変換されます。`isShowBadge()` は `.showBadge` となり、`isEcoFriendly` は `.ecoFriendly` となります。`.isEcoFriendly()` から返されるブール値に基づいて、`<span>Eco Friendly</span>` が表示されるかどうかを決定します。
 
-   `data-sly-test` およびその他の HTL ブロックステートメントについて詳しくは、[HTL の仕様 ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=ja) を参照してください。
+   `data-sly-test` およびその他の HTL ブロックステートメントについて詳しくは、[HTL の仕様 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=ja) を参照してください。
 
 1. 変更を保存し、コマンドラインターミナルから Maven スキルを使用して、AEM にアップデートをデプロイします。
 
@@ -481,7 +481,7 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
 
 ## これで完了です {#congratulations}
 
-最初の AEM CIF コンポーネントをカスタマイズしました。ソリューションファイルは [ こちらからダウンロード ](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip) できます。
+最初の AEM CIF コンポーネントをカスタマイズしました。ソリューションファイルは [&#x200B; こちらからダウンロード &#x200B;](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip) できます。
 
 ## ボーナスチャレンジ {#bonus-challenge}
 

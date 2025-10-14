@@ -37,7 +37,7 @@ AEM ドキュメントでは標準的な使用例を扱っています。この�
 
 AEM ドキュメントの改善に役立つアイデアの投稿を歓迎します。ただし、コメント、問題報告（イシュー）および変更修正依頼（プル要求）は、*投稿*&#x200B;専用です。これらを、AEM の使用方法や、AEM プロジェクトの実装法、また技術的な問題の解決方法についての質問に回答するために使用することはできません。
 
-AEM の使用方法や技術的な問題に関するご質問については、[Adobe Experience Manager サポートポータル](https://experienceleague.adobe.com/ja?support-solution=Experience+Manager&amp;lang=ja#home)の通常のサポートプロセスを通じて報告するか、[Adobe Experience Manager コミュニティ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=ja)のディスカッションに投稿してみてください。
+AEM の使用方法や技術的な問題に関するご質問については、[Adobe Experience Manager サポートポータル](https://experienceleague.adobe.com/ja?support-solution=Experience+Manager&lang=ja#home)の通常のサポートプロセスを通じて報告するか、[Adobe Experience Manager コミュニティ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=ja)のディスカッションに投稿してみてください。
 
 ***AEMドキュメントへの投稿は、Adobeカスタマーサポートの代わりとなるものではありません。*** また、サポート関連の質問に対する回答を求める寄稿は拒否されます。
 

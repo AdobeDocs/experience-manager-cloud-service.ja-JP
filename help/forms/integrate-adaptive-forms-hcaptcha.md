@@ -35,7 +35,7 @@ AEM Forms as a Cloud Serviceは、アダプティブ Formsの hCaptcha® をサ�
 
 ## AEM Forms環境と hCaptcha を統合するための前提条件® {#prerequisite}
 
-AEM Formsで hCaptcha® を設定するには、hCaptcha® web サイトから [hCaptcha® サイトキーと秘密鍵 ](https://docs.hcaptcha.com/switch/#get-your-hcaptcha-sitekey-and-secret-key) を取得する必要があります。
+AEM Formsで hCaptcha® を設定するには、hCaptcha® web サイトから [hCaptcha® サイトキーと秘密鍵 &#x200B;](https://docs.hcaptcha.com/switch/#get-your-hcaptcha-sitekey-and-secret-key) を取得する必要があります。
 
 ## hCaptcha の設定手順® {#steps-to-configure-hcaptcha}
 
@@ -59,13 +59,13 @@ AEM Formsで hCaptcha® を設定するには、hCaptcha® web サイトから [
       ![hCaptcha® の ui](assets/hcaptcha-in-ui.png)
    1. 前の節で説明したように、作成または更新された設定コンテナを選択します。 「**[!UICONTROL 作成]**」を選択します。
 
-      ![ 設定 hCaptcha®](assets/config-hcaptcha.png)
-   1. hCaptcha® サービスの **[!UICONTROL Title]**、**[!UICONTROL Name]**、**[!UICONTROL Site Key]** および **[!UICONTROL 秘密鍵]** を指定します [ 事前準備で取得 ](#prerequisite)。 「**[!UICONTROL 作成]**」を選択します。
+      ![&#x200B; 設定 hCaptcha®](assets/config-hcaptcha.png)
+   1. hCaptcha® サービスの **[!UICONTROL Title]**、**[!UICONTROL Name]**、**[!UICONTROL Site Key]** および **[!UICONTROL 秘密鍵]** を指定します [&#x200B; 事前準備で取得 &#x200B;](#prerequisite)。 「**[!UICONTROL 作成]**」を選択します。
 
       ![AEM Forms環境を hCaptcha と接続するようにCloud Serviceを設定する®](assets/create-hcaptcha-config.png)
 
 >[!NOTE]
-> [ クライアントサイドのJavaScript検証 URL](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) および [ サーバーサイドの検証 URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side) は、hCaptcha® 検証用に既に入力されているので、変更する必要はありません。 一部の国では、エンドポイントが異なる場合があります。詳しくは、[hCaptcha® FAQ](https://docs.hcaptcha.com/faq#does-hcaptcha-support-access-by-users-in-china) を参照してください。
+> [&#x200B; クライアントサイドのJavaScript検証 URL](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) および [&#x200B; サーバーサイドの検証 URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side) は、hCaptcha® 検証用に既に入力されているので、変更する必要はありません。 一部の国では、エンドポイントが異なる場合があります。詳しくは、[hCaptcha® FAQ](https://docs.hcaptcha.com/faq#does-hcaptcha-support-access-by-users-in-china) を参照してください。
 
 hCAPTCHA サービスを設定すると、アダプティブフォームで使用できるようになります。
 
@@ -75,13 +75,13 @@ hCAPTCHA サービスを設定すると、アダプティブフォームで使�
 1. **[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;に移動します。
 1. アダプティブフォームを選択し、**[!UICONTROL プロパティ]** を選択します。 **[!UICONTROL Configuration Container]** オプションについては、AEM Formsと hCaptcha® を接続するクラウド設定が含まれている Configuration Container を選択して、「**[!UICONTROL 保存して閉じる]**」を選択します。
 
-   そのような Configuration Container がない場合に Configuration Container を作成する方法については、[AEM Forms環境と hCaptcha® の接続 ](#connect-your-forms-environment-with-hcaptcha-service) の節を参照してください。
+   そのような Configuration Container がない場合に Configuration Container を作成する方法については、[AEM Forms環境と hCaptcha® の接続 &#x200B;](#connect-your-forms-environment-with-hcaptcha-service) の節を参照してください。
 
    ![設定コンテナの選択](/help/forms/assets/captcha-properties.png)
 
 1. アダプティブフォームを選択し、「**[!UICONTROL 編集]**」を選択します。 アダプティブフォームエディターでアダプティブフォームが開きます。
 1. コンポーネントブラウザーから **[!UICONTROL Captcha]** コンポーネントを、アダプティブフォームにドラッグ＆ドロップします。
-1. **[!UICONTROL Captcha]** コンポーネントを選択し、プロパティ ![ プロパティアイコン ](assets/configure-icon.svg) アイコンをクリックします。 プロパティダイアログが開きます。
+1. **[!UICONTROL Captcha]** コンポーネントを選択し、プロパティ ![&#x200B; プロパティアイコン &#x200B;](assets/configure-icon.svg) アイコンをクリックします。 プロパティダイアログが開きます。
 
    ![代替テキスト](assets/hcaptcha-properties.png)
 
@@ -97,7 +97,7 @@ hCAPTCHA サービスを設定すると、アダプティブフォームで使�
 
      >[!NOTE]
      >
-     > 同様の目的のために、環境内に複数のクラウド設定を持つことができます。 そのため、サービスは慎重に選択してください。サービスがリストに表示されない場合は、[AEM Forms環境と hCaptcha® の接続 ](#connect-your-forms-environment-with-hcaptcha-service) を参照して、AEM Forms環境と hCaptcha® サービスを接続するCloud Serviceの作成方法を確認してください。
+     > 同様の目的のために、環境内に複数のクラウド設定を持つことができます。 そのため、サービスは慎重に選択してください。サービスがリストに表示されない場合は、[AEM Forms環境と hCaptcha® の接続 &#x200B;](#connect-your-forms-environment-with-hcaptcha-service) を参照して、AEM Forms環境と hCaptcha® サービスを接続するCloud Serviceの作成方法を確認してください。
 
    * **エラーメッセージ：** Captcha 送信が失敗した場合にユーザーに表示するエラーメッセージを指定します。
    * **Captcha サイズ：** hCaptcha® チャレンジダイアログの表示サイズを選択します。 **[!UICONTROL コンパクト]** オプションを使用すると小さいサイズを表示でき、**[!UICONTROL 標準]** オプションを使用すると比較的大きいサイズの hCaptcha® チャレンジダイアログを表示できます。また、**[!UICONTROL 非表示]** を使用すると、ユーザーインターフェイスでチェックボックスウィジェットを明示的にレンダリングせずに hCaptcha® を検証できます。

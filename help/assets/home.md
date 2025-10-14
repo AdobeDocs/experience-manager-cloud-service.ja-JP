@@ -38,7 +38,7 @@ Adobe Enterprise ドキュメントには、複数のユーザーガイドが用
 + [Experience Manager Sites Optimizer](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/home)
 + [Experience Manager 6.5 LTS](experience-manager-65-lts.md)
 + [Experience Manager 6.5](experience-manager-65.md)
-+ [Experience Manager ](experience-manager-release-information#/help/using/aem-previous-versions.md)
++ [Experience Manager &#x200B;](experience-manager-release-information#/help/using/aem-previous-versions.md)
 + [Experience Manager Assets Essentials](experience-manager-assets-essentials#help)
 + [Commerce（Magento Open Sourceを含む）](commerce.md)
 
@@ -87,55 +87,55 @@ Adobe Enterprise ドキュメントには、複数のユーザーガイドが用
 
 ### ドキュメント
 
-+ [Acrobatのラーニングとサポート ](https://helpx.adobe.com/jp/support/acrobat.html)
-+ [Acrobat Signのラーニングとサポート ](https://helpx.adobe.com/jp/support/sign.html)
++ [Acrobatのラーニングとサポート &#x200B;](https://helpx.adobe.com/jp/support/acrobat.html)
++ [Acrobat Signのラーニングとサポート &#x200B;](https://helpx.adobe.com/jp/support/sign.html)
 
 ### 開発者
 
-+ [Acrobat サービス ](https://developer.adobe.com/document-services/docs/overview/)
++ [Acrobat サービス &#x200B;](https://developer.adobe.com/document-services/docs/overview/)
 + [Acrobat サービスチュートリアル](acrobat-services-learn#tutorials)
 
 ### Document Cloudに関する役立つリソース
 
-+ [Document Cloudのラーニングとサポート ](https://helpx.adobe.com/jp/support/document-cloud.html)
-+ [Document Cloud エンタープライズ版チュートリアル ](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=ja#document-cloud-tutorials)
-+ [Adobeの状態 ](https://status.adobe.com/)
-+ [ 管理ガイド ](https://helpx.adobe.com/jp/enterprise/admin-guide.html)
++ [Document Cloudのラーニングとサポート &#x200B;](https://helpx.adobe.com/jp/support/document-cloud.html)
++ [Document Cloud エンタープライズ版チュートリアル &#x200B;](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=ja#document-cloud-tutorials)
++ [Adobeの状態 &#x200B;](https://status.adobe.com/)
++ [&#x200B; 管理ガイド &#x200B;](https://helpx.adobe.com/jp/enterprise/admin-guide.html)
 
 ## Creative Cloud エンタープライズ版
 
 ### ドキュメント
 
-+ [Creative Cloudのラーニングとサポート ](https://helpx.adobe.com/jp/support/creative-cloud.html)
++ [Creative Cloudのラーニングとサポート &#x200B;](https://helpx.adobe.com/jp/support/creative-cloud.html)
 
 ### Creative Cloud for Enterprise に関する役立つリソース
 
 + [エンタープライズ版Creative Cloud チュートリアル](creative-cloud-enterprise-learn#cce-learning-hub)
-+ [Adobeの状態 ](https://status.adobe.com/)
++ [Adobeの状態 &#x200B;](https://status.adobe.com/)
 + [Adobe Developer](https://developer.adobe.com/)
-+ [ 管理ガイド ](https://helpx.adobe.com/jp/enterprise/admin-guide.html)
++ [&#x200B; 管理ガイド &#x200B;](https://helpx.adobe.com/jp/enterprise/admin-guide.html)
 
 ## その他のリソース {#lists-resources}
 
 ### クロスクラウドリソース
 
-+ [Experience League イベント ](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja#events)
-+ [Adobeの状態 ](https://status.adobe.com/)
++ [Experience League イベント &#x200B;](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja#events)
++ [Adobeの状態 &#x200B;](https://status.adobe.com/)
 + [Adobe Developer](https://developer.adobe.com/)
-+ [ 管理ガイド ](https://helpx.adobe.com/jp/enterprise/admin-guide.html)
++ [&#x200B; 管理ガイド &#x200B;](https://helpx.adobe.com/jp/enterprise/admin-guide.html)
 + [ソフトウェア配布](experience-cloud#software-distribution)
 
 ### イネーブルメントと管理のリソース
 
 + [Experience Cloud管理](core-services#/help/interface/administration/admin-tool-experience-cloud.md)
-+ すべてのAdobe クラウド製品向けの [Adobe Enterprise and Teams：管理ガイド ](https://helpx.adobe.com/jp/enterprise/managing/user-guide.html)
++ すべてのAdobe クラウド製品向けの [Adobe Enterprise and Teams：管理ガイド &#x200B;](https://helpx.adobe.com/jp/enterprise/managing/user-guide.html)
 + [カスタマーサクセス：戦略とソートリーダーシップ](customer-success#customer-success)
 
 ### 学習とサポートのリソース
 
 + [Experience Cloud のリリースノート](release-notes#experience-cloud)
 + [チュートリアル](home-tutorials.md)
-+ [ 再生リスト ](https://experienceleague.adobe.com/ja/playlists)
++ [&#x200B; 再生リスト &#x200B;](https://experienceleague.adobe.com/ja/playlists)
 + [資格認定](certification#program)
 + [コミュニティフォーラム](https://experienceleaguecommunities.adobe.com)
 + [サポート](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja&support-tab=home#support)

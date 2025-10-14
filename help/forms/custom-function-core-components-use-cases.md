@@ -46,11 +46,11 @@ ht-degree: 34%
 
 ユーザーが「`Next`」ボタンをクリックしたときにドロップダウンリストの値オプションを設定する「`Next`」ボタン用のルールを作成してみましょう。
 
-![ ドロップダウンリストのオプション ](/help/forms/assets/drop-down-list-options.png)
+![&#x200B; ドロップダウンリストのオプション &#x200B;](/help/forms/assets/drop-down-list-options.png)
 
 「表示」ボタンをクリックしたときにドロップダウンリストのオプションが設定される場所を示すには、次の図を参照してください。
 
-![ ルールエディターのドロップダウンオプション ](/help/forms/assets/drop-down-option-rule-editor.png)
+![&#x200B; ルールエディターのドロップダウンオプション &#x200B;](/help/forms/assets/drop-down-option-rule-editor.png)
 
 ## `SetProperty` ルールを使用したパネルの表示
 
@@ -259,7 +259,7 @@ ht-degree: 34%
 
 また、コンソールウィンドウを調べて、サーバーに送信されたデータを表示することもできます。
 
-![ コンソール ウィンドウのデータを調べる](/help/forms/assets/custom-function-submit-data-console-data.png)
+![&#x200B; コンソール ウィンドウのデータを調べる](/help/forms/assets/custom-function-submit-data-console-data.png)
 
 ## フォーム送信の成功およびエラーハンドラーのオーバーライド
 
@@ -354,23 +354,23 @@ function showModal(type, message) {
 
 次に、フォーム送信が成功するためのルールを作成します。
 
-![ フォーム送信成功 ](/help/forms/assets/form-submission-success.png)
+![&#x200B; フォーム送信成功 &#x200B;](/help/forms/assets/form-submission-success.png)
 
 フォームが正常に送信されると成功メッセージがモーダルに表示されることを示すには、以下の図を参照してください。
 
-![ フォーム送信成功メッセージ ](/help/forms/assets/form-submission-success-message.png)
+![&#x200B; フォーム送信成功メッセージ &#x200B;](/help/forms/assets/form-submission-success-message.png)
 
 同様に、失敗したフォーム送信に対するルールを作成します。
 
-![ フォーム送信に失敗 ](/help/forms/assets/form-submission-fail.png)
+![&#x200B; フォーム送信に失敗 &#x200B;](/help/forms/assets/form-submission-fail.png)
 
 フォームの送信に失敗したときにエラーメッセージがモーダルに表示されることを示すには、次の図を参照してください。
 
-![ フォーム送信の失敗メッセージ ](/help/forms/assets/form-submission-fail-message.png)
+![&#x200B; フォーム送信の失敗メッセージ &#x200B;](/help/forms/assets/form-submission-fail-message.png)
 
 フォーム送信の成功と失敗をデフォルトの方法で表示するには、`Default submit Form Success Handler` 関数と `Default submit Form Error Handler` 関数を標準で使用できます。
 
-既存のAEM プロジェクトまたはフォームでカスタム送信ハンドラーが期待どおりに動作しない場合は、[ トラブルシューティング ](#troubleshooting) の節を参照してください。
+既存のAEM プロジェクトまたはフォームでカスタム送信ハンドラーが期待どおりに動作しない場合は、[&#x200B; トラブルシューティング &#x200B;](#troubleshooting) の節を参照してください。
 
 ## 繰り返し可能なパネルの特定のインスタンスでのアクションの実行
 
@@ -378,7 +378,7 @@ function showModal(type, message) {
 
 目的地に向かう旅行者に関する情報を収集するた `Booking Form` に、別のフォームを作成しましょう。 旅行者パネルは、繰り返し可能なパネルとして追加され、ユーザーは「`Add Traveler`」ボタンを使用して 5 人の旅行者の詳細を追加できます。
 
-![ 旅行者情報 ](/help/forms/assets/traveler-info-form.png)
+![&#x200B; 旅行者情報 &#x200B;](/help/forms/assets/traveler-info-form.png)
 
 [create-custom-function](/help/forms/custom-function-core-component-create-function.md) の節で説明したように、次のコード行を追加して、最後のコード行以外の繰り返し可能なパネルの特定のインスタンスでアクションを実行します。
 
@@ -399,7 +399,7 @@ function hidePanelInRepeatablePanel(globals)
 
 `Hide` というラベルの付いたボタンを追加し、繰り返し可能なパネルの 2 つ目のインスタンスを非表示にするルールを追加します。
 
-![ パネルルールを非表示 ](/help/forms/assets/custom-function-hidepanel-rule.png)
+![&#x200B; パネルルールを非表示 &#x200B;](/help/forms/assets/custom-function-hidepanel-rule.png)
 
 次のビデオを参照して、`Hide` をクリックすると、2 番目の繰り返し可能インスタンス内のパネルが非表示になることを示します。
 
@@ -427,11 +427,11 @@ function testImportData(globals)
 
 次に、フォームの初期化時に、フォームの読み込み時に「`Booking Amount`」テキストフィールドの値に、指定した値が事前入力されるルールを作成します。
 
-![ データ ルールのインポート ](/help/forms/assets/custom-function-import-data.png)
+![&#x200B; データ ルールのインポート &#x200B;](/help/forms/assets/custom-function-import-data.png)
 
 以下のスクリーンショットを参照してください。これは、フォームの読み込み時に、`Booking Amount` テキストボックスの値が指定した値で事前入力されることを示しています。
 
-![ データ・ルール・フォームのインポート ](/help/forms/assets/custom-function-prefill-form.png)
+![&#x200B; データ・ルール・フォームのインポート &#x200B;](/help/forms/assets/custom-function-prefill-form.png)
 
 ## 特定のフィールドにフォーカスを設定する
 
@@ -453,11 +453,11 @@ function testImportData(globals)
 
 `Submit` ボタンにルールを追加して、`Email ID` のテキストボックスがクリックされたときにフィールドにフォーカスを設定します。
 
-![ フォーカスルールの設定 ](/help/forms/assets/custom-function-set-focus.png)
+![&#x200B; フォーカスルールの設定 &#x200B;](/help/forms/assets/custom-function-set-focus.png)
 
 `Submit` ボタンがクリックされると、`Email ID` のフィールドにフォーカスが設定されることを示す、以下のスクリーンショットを参照してください。
 
-![ フォーカスルールの設定 ](/help/forms/assets/custom-function-set-focus-form.png)
+![&#x200B; フォーカスルールの設定 &#x200B;](/help/forms/assets/custom-function-set-focus-form.png)
 
 >[!NOTE]
 >
@@ -484,11 +484,11 @@ function testAddInstance(globals)
 
 `Add Traveler` ボタンにルールを追加して、繰り返し可能なパネルをクリックして追加します。
 
-![ パネルルールを追加 ](/help/forms/assets/custom-function-add-panel.png)
+![&#x200B; パネルルールを追加 &#x200B;](/help/forms/assets/custom-function-add-panel.png)
 
 下の gif を参照してください。これは、「`Add Traveler`」ボタンがクリックされると、`dispatchEvent` プロパティを使用してパネルが追加されることを示しています。
 
-![ パネルを追加 ](/help/forms/assets/custom-function-add-panel.gif)
+![&#x200B; パネルを追加 &#x200B;](/help/forms/assets/custom-function-add-panel.gif)
 
 同様に、「[create-custom-function](#create-custom-function)」の節で説明しているように、`dispatchEvent` プロパティを使用して `Delete Traveler` ボタンがクリックされたときにパネルを削除するコード行を追加します。
 
@@ -507,11 +507,11 @@ function testRemoveInstance(globals)
 
 繰り返し可能なパネルをクリックして削除するルールを「`Delete Traveler`」ボタンに追加しましょう。
 
-![ パネルルールを削除 ](/help/forms/assets/custom-function-delete-panel.png)
+![&#x200B; パネルルールを削除 &#x200B;](/help/forms/assets/custom-function-delete-panel.png)
 
 下の gif を参照してください。これは、「`Delete Traveler`」ボタンがクリックされると、`dispatchEvent` プロパティを使用してトラベラーパネルが削除されることを示しています。
 
-![ パネルを削除 ](/help/forms/assets/custom-function-delete-panel.gif)
+![&#x200B; パネルを削除 &#x200B;](/help/forms/assets/custom-function-delete-panel.gif)
 
 ## 既知の問題
 
@@ -526,7 +526,7 @@ function testRemoveInstance(globals)
 ## トラブルシューティング
 
 * 既存のAEM プロジェクトまたはフォームでカスタム送信ハンドラーが期待どおりに動作しない場合は、次の手順を実行します。
-   * [ コアコンポーネントのバージョンが 3.0.18 以降 ](https://github.com/adobe/aem-core-forms-components) に更新されていることを確認します。 ただし、既存のAEM プロジェクトおよびフォームの場合は、さらに次の手順に従う必要があります。
+   * [&#x200B; コアコンポーネントのバージョンが 3.0.18 以降 &#x200B;](https://github.com/adobe/aem-core-forms-components) に更新されていることを確認します。 ただし、既存のAEM プロジェクトおよびフォームの場合は、さらに次の手順に従う必要があります。
 
    * AEM プロジェクトの場合、`submitForm('custom:submitSuccess', 'custom:submitError')` のすべてのインスタンスを `submitForm()` に置き換え、Cloud Manager パイプラインを通じてプロジェクトをデプロイする必要があります。
 

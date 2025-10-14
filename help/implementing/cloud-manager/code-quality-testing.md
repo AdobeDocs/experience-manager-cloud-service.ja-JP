@@ -29,7 +29,7 @@ ht-degree: 97%
 
 ## コード品質ルール {#understanding-code-quality-rules}
 
-コード品質テストでは、ソースコードをスキャンし、一定の品質基準を満たしていることを確認します。このステップは、SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査の組み合わせによって実装されます。汎用の Java ルールとAEM固有のルールを組み合わせたルールは 100 以上あります。 AEM固有のルールの一部は、AEM エンジニアリングのベストプラクティスに基づいており、[ カスタムコード品質ルール ](/help/implementing/cloud-manager/custom-code-quality-rules.md) と呼ばれます。
+コード品質テストでは、ソースコードをスキャンし、一定の品質基準を満たしていることを確認します。このステップは、SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査の組み合わせによって実装されます。汎用の Java ルールとAEM固有のルールを組み合わせたルールは 100 以上あります。 AEM固有のルールの一部は、AEM エンジニアリングのベストプラクティスに基づいており、[&#x200B; カスタムコード品質ルール &#x200B;](/help/implementing/cloud-manager/custom-code-quality-rules.md) と呼ばれます。
 
 現在のルールの完全なリストをダウンロードするには、[このリンクを使用](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)します。
 

@@ -116,4 +116,4 @@ JSON+LD 属性は AEM CIF の GraphQL クエリにマッピングでき、構造
 
 このマッピングにより、GraphQL クエリを使用して取得した製品データに基づいて、JSON+LD スクリプトが動的に入力されます。
 
-JSON+LD 構造をテストするには、[ リッチ結果テスト - Google検索コンソールを使用します。](https://search.google.com/test/rich-results/result?id=wtU3LVIEM8H7Aaf5qqK9qw) このツールは、必要な属性が存在するか見つからないかなど、詳細なフィードバックを提供し、構造化データが正しく実装されていることを確認するのに役立ちます。
+JSON+LD 構造をテストするには、[&#x200B; リッチ結果テスト - Google検索コンソールを使用します。](https://search.google.com/test/rich-results/result?id=wtU3LVIEM8H7Aaf5qqK9qw) このツールは、必要な属性が存在するか見つからないかなど、詳細なフィードバックを提供し、構造化データが正しく実装されていることを確認するのに役立ちます。

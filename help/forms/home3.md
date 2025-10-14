@@ -48,7 +48,7 @@ ht-degree: 2%
 - **🔗Direct API Integration** - フォームデータモデルの設定を使用せずに API に接続
 - **📊Formsの最適化** - AI を活用して、パフォーマンス分析とコンバージョンを改善します
 
-[ アクセス→を要求 ](mailto:aem-forms-ea@adobe.com) | [→細情報 ](/help/forms/early-access-ea-features.md)
+[&#x200B; アクセス→を要求 &#x200B;](mailto:aem-forms-ea@adobe.com) | [→細情報 &#x200B;](/help/forms/early-access-ea-features.md)
 
 ## 📋 フォームの作成とオーサリング {#form-creation}
 
@@ -62,7 +62,7 @@ ht-degree: 2%
 | **機能：** 最新のコンポーネント、自動レスポンシブデザイン、組み込みのアクセシビリティ機能を備えた視覚的なドラッグ&amp;ドロップフォームビルダーです。 |
 | **用途：** 新規プロジェクト、最新の Web エクスペリエンス、ヘッドレスフォーム配信、モバイルファーストデザイン。 |
 | ✅ レスポンシブデザイン ✅ アクセシビリティコンプライアンス ✅ ヘッドレス機能 ✅ 最新の UI コンポーネント |
-| [ コアコンポーネント→の基本を学ぶ ](/help/forms/creating-adaptive-form-core-components.md) |
+| [&#x200B; コアコンポーネント→の基本を学ぶ &#x200B;](/help/forms/creating-adaptive-form-core-components.md) |
 
 ### 基盤コンポーネントのForms {#foundation-components}
 
@@ -72,7 +72,7 @@ ht-degree: 2%
 | **機能：** 包括的なコンポーネントライブラリと広範なカスタマイズ機能を備えた、従来のアダプティブフォームの構築。 |
 | **用途：** 既存のプロジェクト、従来のシステム統合、特定のカスタマイズ要件、確立されたワークフロー。 |
 | ✅ 広範なコンポーネントライブラリ ✅ レガシー互換性 ✅ 高いカスタマイズ ✅ 確かな安定性 |
-| [ 基盤コンポーネント→の概要 ](/help/forms/creating-adaptive-form.md) |
+| [&#x200B; 基盤コンポーネント→の概要 &#x200B;](/help/forms/creating-adaptive-form.md) |
 
 ### Edge DeliveryForms {#edge-delivery}
 
@@ -82,7 +82,7 @@ ht-degree: 2%
 | **機能：** Excel スプレッドシートを使用してフォームを作成し、最適なGoogle Lighthouse スコアで高性能の Edge 配信ネットワークに公開します。 |
 | **用途：** パフォーマンスクリティカルなアプリケーション、SEO に焦点を当てたプロジェクト、コンテンツ作成者によるフォーム作成、グローバルコンテンツ配信。 |
 | ⚡ Excel ベースのオーサリング ⚡ 超高速読み込み ⚡ 最適な SEO ⚡ グローバル CDN 配信 |
-| [Edge Delivery →の概要 ](/help/edge/docs/forms/overview.md) |
+| [Edge Delivery →の概要 &#x200B;](/help/edge/docs/forms/overview.md) |
 
 ### HTML5 Forms {#html5-forms}
 
@@ -92,7 +92,7 @@ ht-degree: 2%
 | **機能：** ネイティブのモバイルエクスペリエンスとクロスブラウザー対応により、XFA フォームテンプレートをHTML5 フォームに変換します。 |
 | **使用するタイミング：** XFA フォームの最新化、モバイルの最適化、従来のブラウザーのサポート、既存の XDP 投資。 |
 | 📱 XFA 互換性 📱 モバイル最適化 📱 クロスブラウザーサポート 📱 プラグイン要件なし |
-| [HTML5 Forms →の概要 ](/help/forms/introductionhtml5.md) |
+| [HTML5 Forms →の概要 &#x200B;](/help/forms/introductionhtml5.md) |
 
 ### インタラクティブ通信 {#interactive-communications}
 
@@ -102,7 +102,7 @@ ht-degree: 2%
 | **機能：** 静的コンテンツと動的データを組み合わせ、印刷チャネルやデジタルチャネル向けにパーソナライズされたコミュニケーションを設計します。 |
 | **用途：** 顧客の明細書、請求書、通知、パーソナライズされたコミュニケーション、大量のドキュメントを扱うワークフロー。 |
 | Personalization📄 のマルチチャネル出力 📄Dynamic Data integration を使用した 📄 Visual Document Design 📄 |
-| [ インタラクティブ通信→の概要 ](/help/forms/interactive-communication/create-interactive-communication.md) |
+| [&#x200B; インタラクティブ通信→の概要 &#x200B;](/help/forms/interactive-communication/create-interactive-communication.md) |
 
 ## 🔗 Data &amp; Integration {#data-integration}
 
@@ -116,7 +116,7 @@ ht-degree: 2%
 | **機能：** 一貫したインターフェイスとデータフロー管理を使用して、フォームを複数のバックエンドシステムに接続する統合データレイヤーを作成します。 |
 | **用途：** 複数のデータソースの統合、複雑なデータの関係、事前母集団の要件、ライブデータに対する検証。 |
 | データモデリング 🔄 の 🔄 ルチソース統合 🔄 事前母集団 🔄 検証ルール 🔄 統合インターフェイス |
-| [ フォームデータモデル→の概要 ](/help/forms/create-form-data-models.md) |
+| [&#x200B; フォームデータモデル→の概要 &#x200B;](/help/forms/create-form-data-models.md) |
 
 ### RESTful コネクタ {#restful-connectors}
 
@@ -126,7 +126,7 @@ ht-degree: 2%
 | **機能：** 送信アクションまたはデータ統合を使用してフォームから直接 API 呼び出しを有効にし、web サービスへのリアルタイム接続を実現します。 |
 | **用途：** カスタム API 統合、Web サービス接続、リアルタイムのデータ交換、サードパーティのサービス統合。 |
 | リアルタイム接続 🌐 の 🌐 Direct API 呼び出し 🌐 柔軟な統合 🌐 カスタムサービスサポート |
-| [REST エンドポイントの設定→](/help/forms/configure-submit-action-restpoint.md) \| [ データ統合設定→](/help/forms/data-integration.md) |
+| [REST エンドポイントの設定→](/help/forms/configure-submit-action-restpoint.md) \| [&#x200B; データ統合設定→](/help/forms/data-integration.md) |
 
 ### Salesforce コネクタ {#salesforce-connector}
 
@@ -136,7 +136,7 @@ ht-degree: 2%
 | **機能：** フォームデータの同期、リードの作成、顧客レコードの管理を備えた、Salesforce用の事前定義済みコネクタ。 |
 | **用途：** Salesforce CRM 連携、リードジェネレーションフォーム、カスタマーデータ管理、セールスプロセスの自動化。 |
 | 🏢 リード管理 🏢 データ同期 🏢 セールス自動化のための事前定義済みコネクタ 🏢 提供 |
-| [Salesforce Integration →の設定 ](/help/forms/configure-salesforce.md) |
+| [Salesforce Integration →の設定 &#x200B;](/help/forms/configure-salesforce.md) |
 
 ### Microsoft Dynamics コネクタ {#dynamics-connector}
 
@@ -146,7 +146,7 @@ ht-degree: 2%
 | **機能：** 顧客管理、ビジネスプロセス統合、エンタープライズデータフローのために、フォームをMicrosoft Dynamicsに接続します。 |
 | **用途：** Microsoft Dynamics統合、エンタープライズワークフロー、カスタマー管理、ビジネスプロセスの自動化。 |
 | 🏭 Enterprise 接続 🏭 ビジネスプロセス統合 🏭 顧客管理 🏭 データ同期 |
-| [Dynamics 統合→の設定 ](/help/forms/configure-msdynamics.md) |
+| [Dynamics 統合→の設定 &#x200B;](/help/forms/configure-msdynamics.md) |
 
 ### SharePoint コネクター {#sharepoint-connector}
 
@@ -156,7 +156,7 @@ ht-degree: 2%
 | **機能：** 自動ドキュメント管理および共同作業の機能を使用して、フォーム送信および生成されたドキュメントをSharePointに保存します。 |
 | **用途：** Document Management、チームの共同作業、ファイルストレージ、SharePoint ベースのワークフロー。 |
 | Collaboration📁 の 📁 ドキュメントストレージ機能 📁 自動ワークフロー 📁SharePoint統合 |
-| [SharePoint Integration →の設定 ](/help/forms/connect-forms-to-sharepoint-document-library.md) |
+| [SharePoint Integration →の設定 &#x200B;](/help/forms/connect-forms-to-sharepoint-document-library.md) |
 
 ## プロセスとワークフロー {#process-workflow}
 
@@ -296,53 +296,53 @@ ht-degree: 2%
 
 ### フォーム作成のクイックスタート {#form-creation-start}
 
-**最新のプロジェクトの場合：** コアコンポーネントのForms[ から開始 ](/help/forms/creating-adaptive-form-core-components.md)
+**最新のプロジェクトの場合：** コアコンポーネントのForms[&#x200B; から開始 &#x200B;](/help/forms/creating-adaptive-form-core-components.md)
 
-**高いパフォーマンスを実現する場合：**&#x200B;[Edge Delivery Formsから開始 ](/help/edge/docs/forms/overview.md)
+**高いパフォーマンスを実現する場合：**&#x200B;[Edge Delivery Formsから開始 &#x200B;](/help/edge/docs/forms/overview.md)
 
-**既存のプロジェクトの場合：** 基盤コンポーネントのForms[ から開始 ](/help/forms/creating-adaptive-form.md)
+**既存のプロジェクトの場合：** 基盤コンポーネントのForms[&#x200B; から開始 &#x200B;](/help/forms/creating-adaptive-form.md)
 
-**XFA 最新化の場合：**&#x200B;[HTML5 Formsから開始 ](/help/forms/introductionhtml5.md)
+**XFA 最新化の場合：**&#x200B;[HTML5 Formsから開始 &#x200B;](/help/forms/introductionhtml5.md)
 
-**ドキュメント通信の場合：** 開始 [ インタラクティブ通信 ](/help/forms/interactive-communication/create-interactive-communication.md)
+**ドキュメント通信の場合：** 開始 [&#x200B; インタラクティブ通信 &#x200B;](/help/forms/interactive-communication/create-interactive-communication.md)
 
 ### データ統合のクイックスタート {#integration-start}
 
-**複数のデータソースの場合：** フォームデータモデル [ から開始 ](/help/forms/create-form-data-models.md)
+**複数のデータソースの場合：** フォームデータモデル [&#x200B; から開始 &#x200B;](/help/forms/create-form-data-models.md)
 
-**Salesforce CRM の場合：**&#x200B;[Salesforce コネクタで開始 ](/help/forms/configure-salesforce.md)
+**Salesforce CRM の場合：**&#x200B;[Salesforce コネクタで開始 &#x200B;](/help/forms/configure-salesforce.md)
 
-**Microsoft Dynamicsの場合：** Dynamics コネクタ [ から開始 ](/help/forms/configure-msdynamics.md)
+**Microsoft Dynamicsの場合：** Dynamics コネクタ [&#x200B; から開始 &#x200B;](/help/forms/configure-msdynamics.md)
 
-**カスタム API の場合：** RESTful コネクタから開始 [ ます ](/help/forms/configure-submit-action-restpoint.md)
+**カスタム API の場合：** RESTful コネクタから開始 [&#x200B; ます &#x200B;](/help/forms/configure-submit-action-restpoint.md)
 
-**ドキュメントストレージの場合：**&#x200B;[SharePoint コネクタで開始 ](/help/forms/connect-forms-to-sharepoint-document-library.md)
+**ドキュメントストレージの場合：**&#x200B;[SharePoint コネクタで開始 &#x200B;](/help/forms/connect-forms-to-sharepoint-document-library.md)
 
 ### プロセス自動化のクイックスタート {#workflow-start}
 
-**承認プロセスの場合：**&#x200B;[AEM ワークフローから開始 ](/help/forms/aem-forms-workflow.md)
+**承認プロセスの場合：**&#x200B;[AEM ワークフローから開始 &#x200B;](/help/forms/aem-forms-workflow.md)
 
-**電子サインの場合：** Adobe Sign 統合 [ から開始 ](/help/forms/working-with-adobe-sign.md)
+**電子サインの場合：** Adobe Sign 統合 [&#x200B; から開始 &#x200B;](/help/forms/working-with-adobe-sign.md)
 
-**送信処理の場合：** 送信アクション [ から開始 ](/help/forms/configure-submit-actions-core-components.md)
+**送信処理の場合：** 送信アクション [&#x200B; から開始 &#x200B;](/help/forms/configure-submit-actions-core-components.md)
 
-**ドキュメント生成用：** 通信 API[ から開始 ](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+**ドキュメント生成用：** 通信 API[&#x200B; から開始 &#x200B;](/help/forms/aem-forms-cloud-service-communications-introduction.md)
 
 ### Analytics クイックスタート {#analytics-start}
 
-**パフォーマンストラッキングの場合：**&#x200B;[Adobe Analytics統合から開始 ](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+**パフォーマンストラッキングの場合：**&#x200B;[Adobe Analytics統合から開始 &#x200B;](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
 
-**使用状況の監視の場合：** トランザクションレポート [ から開始 ](/help/forms/transaction-reports-billable-apis.md)
+**使用状況の監視の場合：** トランザクションレポート [&#x200B; から開始 &#x200B;](/help/forms/transaction-reports-billable-apis.md)
 
-**最適化に関するインサイトの場合：** [ 分析レポート ](/help/forms/view-understand-aem-forms-analytics-reports.md) から開始
+**最適化に関するインサイトの場合：** [&#x200B; 分析レポート &#x200B;](/help/forms/view-understand-aem-forms-analytics-reports.md) から開始
 
 ### 管理のクイックスタート {#management-start}
 
-**フォーム検出の場合：** [Forms ポータルから開始 ](/help/forms/configure-forms-portal.md)
+**フォーム検出の場合：** [Forms ポータルから開始 &#x200B;](/help/forms/configure-forms-portal.md)
 
-**アクセス制御の場合：** User Management[ から開始 ](/help/forms/forms-groups-privileges-tasks.md)
+**アクセス制御の場合：** User Management[&#x200B; から開始 &#x200B;](/help/forms/forms-groups-privileges-tasks.md)
 
-**変更追跡の場合：** [ バージョン管理 ](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md) から開始
+**変更追跡の場合：** [&#x200B; バージョン管理 &#x200B;](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md) から開始
 
 ## アーキテクチャとデプロイメント {#architecture}
 

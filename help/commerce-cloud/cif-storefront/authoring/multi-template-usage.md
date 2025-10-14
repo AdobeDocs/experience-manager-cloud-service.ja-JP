@@ -39,4 +39,4 @@ ht-degree: 94%
 
 ## 関連リソース {#related}
 
-また、ページの特定の領域を動的にターゲットにし、同じテンプレートを再利用することもできます。[ 製品データを関連するAEM コンテンツとエンリッチメントする ](/help/commerce-cloud/cif-storefront/authoring/enrich-product-associated-content.md) 方法を説明します。
+また、ページの特定の領域を動的にターゲットにし、同じテンプレートを再利用することもできます。[&#x200B; 製品データを関連するAEM コンテンツとエンリッチメントする &#x200B;](/help/commerce-cloud/cif-storefront/authoring/enrich-product-associated-content.md) 方法を説明します。
