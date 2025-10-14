@@ -4,10 +4,10 @@ description: AEM as a Cloud Service でのログベンダーへのログ転送�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2e136117508d7bd17993bf0e64b41aa860d71ab1
-workflow-type: ht
-source-wordcount: '2409'
-ht-degree: 100%
+source-git-commit: afa88d89b24ac425ba1b69ee9062e589d49ebee9
+workflow-type: tm+mt
+source-wordcount: '2478'
+ht-degree: 95%
 
 ---
 
@@ -23,82 +23,72 @@ ht-degree: 100%
   <tbody>
     <tr>
       <th>ログテクノロジー</th>
-      <th>Private Beta*</th>
       <th>AEM</th>
       <th>Dispatcher</th>
       <th>CDN</th>
     </tr>
     <tr>
       <td>Amazon S3</td>
-      <td style="background-color: #ffb3b3;">はい</td>
       <td>はい</td>
       <td>はい</td>
-      <td style="background-color: #ffb3b3;">いいえ</td>
+      <td style="background-color: #ffb3b3;">未来</td>
     </tr>
     <tr>
       <td>Azure Blob Storage</td>
-      <td>いいえ</td>
       <td>はい</td>
       <td>はい</td>
       <td>はい</td>
     </tr>
     <tr>
       <td>DataDog</td>
-      <td>いいえ</td>
       <td>はい</td>
       <td>はい</td>
       <td>はい</td>
     </tr>
     <tr>
       <td>Dynatrace</td>
-      <td style="background-color: #ffb3b3;">はい</td>
       <td>はい</td>
       <td>はい</td>
-      <td style="background-color: #ffb3b3;">いいえ</td>
+      <td style="background-color: #ffb3b3;">未来</td>
     </tr>
     <tr>
       <td>ElasticSearch<br>OpenSearch</td>
-      <td>いいえ</td>
       <td>はい</td>
       <td>はい</td>
       <td>はい</td>
     </tr>
     <tr>
       <td>HTTPS</td>
-      <td>いいえ</td>
       <td>はい</td>
       <td>はい</td>
       <td>はい</td>
     </tr>
     <tr>
       <td>New Relic</td>
-      <td style="background-color: #ffb3b3;">はい</td>
       <td>はい</td>
       <td>はい</td>
-      <td style="background-color: #ffb3b3;">いいえ</td>
+      <td style="background-color: #ffb3b3;">未来</td>
     </tr>
     <tr>
       <td>Splunk</td>
-      <td>いいえ</td>
       <td>はい</td>
       <td>はい</td>
       <td>はい</td>
     </tr>
     <tr>
       <td>Sumo Logic</td>
-      <td style="background-color: #ffb3b3;">はい</td>
       <td>はい</td>
       <td>はい</td>
-      <td style="background-color: #ffb3b3;">いいえ</td>
+      <td style="background-color: #ffb3b3;">未来</td>
     </tr>
   </tbody>
 </table>
 
 >[!NOTE]
 >
-> Private Beta のテクノロジーについて詳しくは、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) にメールを送信して、アクセスをリクエストしてください。
+> 今後予定されている今後の CDN ログテクノロジーについては、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) にメールを送信して関心をご登録ください。
 
-ログ転送は、Git で設定を宣言することでセルフサービス方式で設定され、Cloud Manager 設定パイプラインを通じて開発環境、ステージング環境、実稼動環境の各タイプにデプロイできます。設定ファイルは、コマンドラインツールを使用して高速開発環境（RDE）にデプロイできます。
+ログ転送は、Git で設定を宣言することでセルフサービス方式で設定され、Cloud Manager 設定パイプラインを通じて開発環境、ステージング環境、本番環境の各タイプにデプロイできます。設定ファイルは、コマンドラインツールを使用して高速開発環境（RDE）にデプロイできます。
 
 AEM および Apache／Dispatcher ログを、専用エグレス IP などの AEM の高度なネットワークインフラストラクチャ経由でルーティングするオプションがあります。
 
@@ -247,6 +237,8 @@ CDN ログの場合、[Fastly ドキュメント - パブリック IP リスト]
 >[!NOTE]
 >
 >CDN ログが AEM ログと同じ IP アドレスから表示されることはありません。これは、ログが AEM Cloud Service ではなく Fastly から直接送信されるからです。
+>
+>このため、高度なネットワーク VPN 設定でログ転送を使用することはできません。
 
 ## ログの宛先設定 {#logging-destinations}
 
@@ -293,6 +285,9 @@ IAM ポリシーでは、ユーザーに `s3:putObject` の使用を許可する
 ```
 
 実装方法について詳しくは、[AWS バケットポリシードキュメント](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)を参照してください。
+
+>[!NOTE]
+>AWS S3 の CDN ログのサポートは、今後予定されています。 関心を登録するには、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) までメールでお問い合わせください。
 
 ### Azure Blob Storage {#azureblob}
 
@@ -491,7 +486,7 @@ New Relic へのログ転送では、New Relic HTTPS API を取り込みに活�
 >
 >New Relic へのログ転送は、お客様が所有している New Relic アカウントでのみ使用できます。
 >
->アクセスをリクエストするには、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) までメールで送信してください。
+>New Relic Log API の CDN ログのサポートは、今後予定されています。 関心を登録するには、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) までメールでお問い合わせください。
 >
 >New Relic では、New Relic アカウントがプロビジョニングされている場所に基づいて、地域固有のエンドポイントを提供します。詳しくは、[New Relic ドキュメント](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)を参照してください。
 
@@ -515,8 +510,7 @@ Dynatrace へのログ転送では、Dynatrace HTTPS API を取り込みに活�
 ```
 
 >[!NOTE]
->
-> アクセスをリクエストするには、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) までメールで送信してください。
+>Dynatrace Log API の CDN ログのサポートは、今後予定されています。 関心を登録するには、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) までメールでお問い合わせください。
 
 ### Splunk {#splunk}
 
@@ -570,6 +564,8 @@ data:
 ```
 
 >[!NOTE]
+>SumoLogic の CDN ログのサポートは今後予定されています。 関心を登録するには、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) までメールでお問い合わせください。
+>
 > 「index」フィールド機能を利用するには、Sumo Logic Enterprise サブスクリプションが必要です。エンタープライズ以外のサブスクリプションでは、ログは標準として `sumologic_default` パーティションにルーティングされます。詳しくは、[Sumo Logic パーティションドキュメント](https://help.sumologic.com/docs/search/optimize-search-partitions/)を参照してください。
 
 ## ログエントリ形式 {#log-formats}
