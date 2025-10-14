@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 3781b494394405f69892686790c17ffa9c69f28b
+source-git-commit: 6df762075346971aa10536c1f6c09fcd4272a19a
 workflow-type: tm+mt
 source-wordcount: '2920'
 ht-degree: 99%
@@ -258,53 +258,6 @@ ht-degree: 99%
 
 ## コンテンツフラグメントのコピー {#copy-a-content-fragment}
 
-<!--
-**Copy** creates a copy of the selected fragment at its location.
-
-* In the **Copy** action you can select whether to **Copy with children** (referenced fragments). This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
-
-  * Creates a copy of the selected Content Fragment at its location.
-  * Creates copies of all fragments that are referenced by the selected fragment; these are copied to the same location as the original referenced fragment.
-
-* The copy of the selected fragment will reference the copies of the referenced fragments.
-
-* A deep copy is made; so if a referenced Content Fragment also references fragments, these are copied as well.
-
-* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset/image content itself.
-
-So, if we start with:
-
-```xml
-FolderA 
-    FragmentA (inside FolderA)
-    | 
-    |___FolderB/FragmentB (referenced by FragmentA)
-
-FolderB
-   FragmentB
-```
-
-Copying FragmentA to FolderC, would result in:
-
-```xml
-FolderA 
-    FragmentA (inside FolderA)
-    | 
-    |___FolderB/FragmentB (referenced by FragmentA)
-
-FolderB
-    FragmentB
-    Copy_of_FragmentB
-
-FolderC
-    Copy_of_FragmentA
-    | 
-    |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
-```
--->
-
-<!-- CQDOC-22785 - will replace above text -->
-
 **コピー**&#x200B;では、選択したフラグメントのコピーをその場所に作成します。
 
 * **コピー**&#x200B;アクションでは、**参照されているコンテンツフラグメントもコピー**&#x200B;するかどうかを選択できます。これにより、選択したコンテンツフラグメントとすべての参照フラグメントの両方をコピーできます。AEM：
@@ -433,7 +386,7 @@ FolderC
 
 * **[パブリッシュサービス](/help/headless/deployment/architecture.md)** - フル、パブリックアクセス用
 
-* **[プレビューサービス](/help/headless/deployment/architecture.md)** – 完全に使用可能になる前にコンテンツを [&#x200B; プレビュー &#x200B;](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) します
+* **[プレビューサービス](/help/headless/deployment/architecture.md)** – 完全に使用可能になる前にコンテンツを [ プレビュー ](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) します
 
   >[!CAUTION]
   >
