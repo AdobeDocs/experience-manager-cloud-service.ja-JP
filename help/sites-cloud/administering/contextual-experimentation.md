@@ -33,7 +33,7 @@ Adobe Experience Managerで動作するサイトの場合は、開発者がサ�
 
 実験プラグインは [Edge Delivery Servicesのコンテキスト内で使用されるので &#x200B;](/help/edge/overview.md)Github アカウント、SharePointやGoogle Drive などのコンテンツリポジトリおよび [2&rbrace;AEM Sidekick&rbrace; が必要です。 &#x200B;](https://www.aem.live/docs/sidekick) [&#x200B; はじめに – ユニバーサルエディター開発者チュートリアルページ &#x200B;](https://www.aem.live/developer/tutorial) および [&#x200B; はじめに – 開発者チュートリアル &#x200B;](https://www.aem.live/developer/tutorial) も参照してください。
 
-すべての設定が完了したら **このビデオをご覧ください**&#x200B;[&#x200B; インスタント実験 &#x200B;](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) と題して、実験プラグインの仕組みを示す短いデモを行います。
+すべての設定が完了したら **このビデオをご覧ください**&#x200B;[&#x200B; インスタント実験 &#x200B;](https://business.adobe.com/jp/products/experience-manager/sites/testing-optimization.html) と題して、実験プラグインの仕組みを示す短いデモを行います。
 
 ## よく使用される用語 {#frequently-used-terms}
 

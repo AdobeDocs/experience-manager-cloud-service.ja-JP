@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Adobe Target との統合{#integrating-with-adobe-target}
 
-Adobe Marketing Cloud の一部である [Adobe Target](https://business.adobe.com/products/target/adobe-target.html?lang=ja) を使用すると、あらゆるチャネルにわたってターゲティングと測定を行い、コンテンツの適切さを向上できます。Adobe Target はマーケター向けのツールで、オンラインテストを設計および実行し、その場で（行動に基づいた）オーディエンスセグメントを作成し、コンテンツとオンラインエクスペリエンスのターゲット設定を自動化するために使用されます。AEM as a Cloud Service では Adobe Target Standard に使用されているターゲット設定ワークフローが採用されています。Target を使用すると、AEM as a Cloud Service のターゲティングの編集環境を把握できます。
+Adobe Marketing Cloud の一部である [Adobe Target](https://business.adobe.com/jp/products/target/adobe-target.html?lang=ja) を使用すると、あらゆるチャネルにわたってターゲティングと測定を行い、コンテンツの適切さを向上できます。Adobe Target はマーケター向けのツールで、オンラインテストを設計および実行し、その場で（行動に基づいた）オーディエンスセグメントを作成し、コンテンツとオンラインエクスペリエンスのターゲット設定を自動化するために使用されます。AEM as a Cloud Service では Adobe Target Standard に使用されているターゲット設定ワークフローが採用されています。Target を使用すると、AEM as a Cloud Service のターゲティングの編集環境を把握できます。
 
 AEM Sites を Adobe Target と統合すると、ページ内のコンテンツを次のようにパーソナライズできます。
 
