@@ -9,10 +9,10 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 151320e5de3e33ab31ed5ed55826d856d02a8f92
 workflow-type: tm+mt
-source-wordcount: '3356'
-ht-degree: 100%
+source-wordcount: '3353'
+ht-degree: 99%
 
 ---
 
@@ -169,7 +169,7 @@ Dynamic Media ビューアリファレンスガイドの [IccRenderIntent](https
 
 ほとんどの企業は、ファイアウォールの内側でインターネットを実行します。インターネットへのアクセスは、特定のルートを通じて可能で、通常は限られた範囲のパブリック IP アドレスを通じて可能です。
 
-企業ネットワークから、 [https://www.whatismyip.com](https://www.whatismyip.com/)などの web サイトを使用してパブリック IP アドレスを把握するか、企業の IT 組織にこの情報をリクエストします。
+企業ネットワークから、様々な web サイトを使用してパブリック IP アドレスを検出したり、企業の IT 組織にこの情報をリクエストしたりできます。
 
 セキュアテストを使用すると、Adobe Dynamic Media は、ステージング環境または内部アプリケーション用に専用の Image Server を確立します。このサーバーへのリクエストはすべて、発信元 IP アドレスをチェックします。受信リクエストが IP アドレスの承認済みリストに含まれていない場合は、失敗のレスポンスが返されます。
 Adobe Dynamic Media の会社管理者が、自社のセキュアテスト環境で使用する承認済み IP アドレスリストを設定します。
