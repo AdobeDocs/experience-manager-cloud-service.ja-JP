@@ -44,4 +44,4 @@ AEM のコンテンツフラグメントを使用して、ページに依存し�
 >コンテンツフラグメントの管理について詳しくは、以下を参照してください。
 >
 >* [コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/managing.md)
->* [ コンテンツフラグメントのオーサリング ](/help/sites-cloud/administering/content-fragments/authoring.md)
+>* [&#x200B; コンテンツフラグメントのオーサリング &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md)

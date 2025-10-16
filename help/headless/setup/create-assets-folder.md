@@ -27,7 +27,7 @@ AEM コンテンツフラグメントモデルを使用すると、ヘッドレ�
 
 管理者は、コンテンツの作成時にフォルダーを作成してコンテンツを整理するだけで済みます。Assets コンソールを使用して新しいフォルダーを作成します。
 
-作成したら、[ 設定 ](/help/headless/setup/create-configuration.md) をフォルダーに適用する必要があります。 詳しくは [ フォルダーへの設定の適用 ](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder) を参照してください。
+作成したら、[&#x200B; 設定 &#x200B;](/help/headless/setup/create-configuration.md) をフォルダーに適用する必要があります。 詳しくは [&#x200B; フォルダーへの設定の適用 &#x200B;](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder) を参照してください。
 
 作成したフォルダー内に、追加のサブフォルダーを作成できます。サブフォルダーは、親フォルダーの&#x200B;**クラウド設定**&#x200B;を継承します。別の設定モデルを使用する場合は、この設定を上書きできます。
 

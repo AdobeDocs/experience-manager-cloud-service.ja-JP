@@ -27,7 +27,7 @@ AEM のヘッドレスなコンテンツ管理に関しては、AEM 内でコン
 
 管理者は、設定を 1 回だけ作成する必要があります。コンテンツモデルの整理のために新しいワークスペースが必要になることはほとんどありません。この「はじめる前に」ガイドの目的上、設定を 1 つ作成する必要があります。
 
-詳しい手順については、[ 設定ブラウザーでのコンテンツフラグメント機能の有効化 ](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) を参照してください。
+詳しい手順については、[&#x200B; 設定ブラウザーでのコンテンツフラグメント機能の有効化 &#x200B;](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) を参照してください。
 
 >[!NOTE]
 >

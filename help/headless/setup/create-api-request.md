@@ -21,7 +21,7 @@ ht-degree: 92%
 
 * [GraphQL](/help/headless/graphql-api/content-fragments.md) API を使用すると、コンテンツフラグメントにアクセスして配信するリクエストを作成できます。この API は、コンテンツフラグメントコンテンツのクエリと使用に最も堅牢な機能セットを提供します。
    * API を使用するには、[エンドポイントを AEM で定義して有効にし](/help/headless/graphql-api/graphql-endpoint.md)、必要に応じて [GraphiQL インターフェイスをインストール](/help/headless/graphql-api/graphiql-ide.md)します。
-* 様々な [ 構造化コンテンツ配信および管理用のAEM API](/help/headless/apis-headless-and-content-fragments.md) をコンテンツフラグメントと共に使用できます。
+* 様々な [&#x200B; 構造化コンテンツ配信および管理用のAEM API](/help/headless/apis-headless-and-content-fragments.md) をコンテンツフラグメントと共に使用できます。
 
 このガイドの残りの部分では、GraphQL へのアクセスとコンテンツフラグメントの配信について説明します。
 
@@ -29,7 +29,7 @@ ht-degree: 92%
 
 GraphQL API を使用する前に、GraphQL エンドポイントを作成する必要があります。
 
-詳しくは、[AEMのGraphQL エンドポイントの管理 ](/help/headless/graphql-api/graphql-endpoint.md) を参照してください。
+詳しくは、[AEMのGraphQL エンドポイントの管理 &#x200B;](/help/headless/graphql-api/graphql-endpoint.md) を参照してください。
 
 ## GraphQL と GraphiQL を使用したクエリコンテンツ
 
@@ -37,7 +37,7 @@ GraphQL API を使用する前に、GraphQL エンドポイントを作成する
 
 GraphiQL は IDE であり、AEM 環境に含まれています。[エンドポイントを設定](#enable-graphql-endpoint)した後、アクセス可能になり表示されます。
 
-詳しくは、[GraphiQL IDE の使用 ](/help/headless/graphql-api/graphiql-ide.md) を参照してください。
+詳しくは、[GraphiQL IDE の使用 &#x200B;](/help/headless/graphql-api/graphiql-ide.md) を参照してください。
 
 GraphQL を使用すると、特定のデータセットや個々のデータオブジェクトをターゲットにするだけでなく、オブジェクトの特定の要素、ネストされた結果を配信したり、クエリ変数のサポートを提供したりできる構造化クエリが可能になります。
 
