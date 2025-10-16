@@ -92,7 +92,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 **SharePoint リスト添付ファイルのフォームデータモデルワークフローを呼び出しステップ**
 
-フォームデータモデルを呼び出しワークフローステップで、SharePoint リストベースのフォームデータモデルにおける Base64 でエンコードされた添付ファイル配列のワークフローサイドメタデータの処理がサポートされるようになりました。 この機能強化により、ワークフローステップでは、各添付ファイルのファイル名、MIME タイプ、カスタムプロパティなどのメタデータを渡し、保存し、取得することができます。 この機能により、より包括的なデータ管理が可能になり、シームレスなダウンストリーム統合が容易になります。 詳しくは、[SharePointリスト添付ファイル用のフォームデータモデルを起動ワークフローステップでのサポート強化 ](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step) を参照してください。
+フォームデータモデルを呼び出しワークフローステップで、SharePoint リストベースのフォームデータモデルにおける Base64 でエンコードされた添付ファイル配列のワークフローサイドメタデータの処理がサポートされるようになりました。 この機能強化により、ワークフローステップでは、各添付ファイルのファイル名、MIME タイプ、カスタムプロパティなどのメタデータを渡し、保存し、取得することができます。 この機能により、より包括的なデータ管理が可能になり、シームレスなダウンストリーム統合が容易になります。 詳しくは、[SharePointリスト添付ファイル用のフォームデータモデルを起動ワークフローステップでのサポート強化 &#x200B;](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step) を参照してください。
 
 ### AEM Forms のプレリリース機能
 
@@ -102,11 +102,11 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 **イベントペイロードのサポートによるナビゲーションの強化**
 
-呼び出しサービスハンドラーの `Navigate To` アクションで `EVENT_PAYLOAD` がサポートされるようになり、フォーム作成者はイベント応答に基づくフォローアップアクションを設定できるようになりました。 この機能強化により、送信後のワークフローをより柔軟に設計でき、よりスムーズな移行と、よりパーソナライズされたユーザーエクスペリエンスを実現します。 詳しくは、[ イベントペイロードのサポートを使用した拡張ナビゲーション ](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service) を参照してください。
+呼び出しサービスハンドラーの `Navigate To` アクションで `EVENT_PAYLOAD` がサポートされるようになり、フォーム作成者はイベント応答に基づくフォローアップアクションを設定できるようになりました。 この機能強化により、送信後のワークフローをより柔軟に設計でき、よりスムーズな移行と、よりパーソナライズされたユーザーエクスペリエンスを実現します。 詳しくは、[&#x200B; イベントペイロードのサポートを使用した拡張ナビゲーション &#x200B;](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service) を参照してください。
 
 **入力パラメーターでの関数および数式のサポート**
 
-入力パラメーターでは、関数呼び出しと数式の両方がサポートされるようになり、フォーム作成者は動的に計算された値を直接渡すことができるようになりました。 この機能強化により、ルール設定が合理化され、追加のフィールドが不要になり、フォームが複雑なロジックや計算駆動型のシナリオに適応しやすくなります。 詳しくは、「入力パラメーターでの関数および数式のサポート [ を参照してください ](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)。
+入力パラメーターでは、関数呼び出しと数式の両方がサポートされるようになり、フォーム作成者は動的に計算された値を直接渡すことができるようになりました。 この機能強化により、ルール設定が合理化され、追加のフィールドが不要になり、フォームが複雑なロジックや計算駆動型のシナリオに適応しやすくなります。 詳しくは、「入力パラメーターでの関数および数式のサポート [&#x200B; を参照してください &#x200B;](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)。
 
 ### AEM Forms の新しい早期アクセス機能 {#forms-new-early-access-features}
 
@@ -116,15 +116,15 @@ AEM Forms 早期アクセスプログラムでは、最先端の革新機能に�
 
 **インタラクティブ通信エディターでのPDF プレビュー**
 
-ユーザーは、データのないインタラクティブ通信 PDF、ローカル JSON データファイルまたはデータモデルのデータを使用したインタラクティブ通信 PDF をプレビューして、柔軟なデータ駆動型テストを有効にすることができます。 詳しくは、[ インタラクティブ通信エディターでのPDF プレビュー ](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md) を参照してください。
+ユーザーは、データのないインタラクティブ通信 PDF、ローカル JSON データファイルまたはデータモデルのデータを使用したインタラクティブ通信 PDF をプレビューして、柔軟なデータ駆動型テストを有効にすることができます。 詳しくは、[&#x200B; インタラクティブ通信エディターでのPDF プレビュー &#x200B;](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md) を参照してください。
 
 **インタラクティブ通信でのカスタムフォントのサポート**
 
-カスタムフォント機能を使用すると、カスタムフォントや組織が承認したフォントをインタラクティブ通信に埋め込むことができ、デバイスやプラットフォームをまたいで一貫性のあるブランドのPDF レンダリングを実現できます。 詳しくは、[ インタラクティブ通信でのカスタムフォントのサポート ](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md) を参照してください。
+カスタムフォント機能を使用すると、カスタムフォントや組織が承認したフォントをインタラクティブ通信に埋め込むことができ、デバイスやプラットフォームをまたいで一貫性のあるブランドのPDF レンダリングを実現できます。 詳しくは、[&#x200B; インタラクティブ通信でのカスタムフォントのサポート &#x200B;](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md) を参照してください。
 
 **インタラクティブ通信の読み込みと書き出し**
 
-この機能により、様々な環境でのインタラクティブ通信の移行と再利用が可能になります。 ある環境からインタラクティブ通信を、関連するフラグメントとデータモデルと共に書き出して、別の環境に読み込めるようになりました。 詳しくは、[ インタラクティブ通信の読み込みと書き出し ](/help/forms/interactive-communication/import-and-export-interactive-communications.md) を参照してください。
+この機能により、様々な環境でのインタラクティブ通信の移行と再利用が可能になります。 ある環境からインタラクティブ通信を、関連するフラグメントとデータモデルと共に書き出して、別の環境に読み込めるようになりました。 詳しくは、[&#x200B; インタラクティブ通信の読み込みと書き出し &#x200B;](/help/forms/interactive-communication/import-and-export-interactive-communications.md) を参照してください。
 
 <!--
 **Forms Optimization opportunities**
@@ -149,7 +149,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 **自動メンテナンスアップデートの一時停止**
 
-運用開始日、ライブイベント、ピーク時の売上 – これらの瞬間は中断できません。 [ 新しいセルフサービス機能 ](/help/implementing/deploying/quiet-hours-update-free-periods.md) 重要な場合は自動メンテナンスアップデートを停止し、チームが集中できるようにします。
+運用開始日、ライブイベント、ピーク時の売上 – これらの瞬間は中断できません。 [&#x200B; 新しいセルフサービス機能 &#x200B;](/help/implementing/deploying/quiet-hours-update-free-periods.md) 重要な場合は自動メンテナンスアップデートを停止し、チームが集中できるようにします。
 
 * Quiet Hours: 1 日の設定時間に自動メンテナンスをブロックします。 勤務時間、夜間の実行や朝のカットオーバーに最適です。
 * 更新不要の期間：1 週間は自動メンテナンスをブロックします。 ローンチ、プロモーションまたは年次フリーズに使用します。
@@ -157,13 +157,13 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >9 月 25 日（PT）に限定提供機能として提供を開始します。
->>プログラムでアクティブ化するには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信してください。
+>&#x200B;>プログラムでアクティブ化するには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信してください。
 
 ### AEM Developer Tools for Eclipse の新しいリリース {#aem-develeper-tools-for-eclipse}
 
 AEM Developer Tools for Eclipse のバージョン 1.4.0 がリリースされました。 このバージョンは、Eclipse IDE 2022-12 以降のサポートを追加し、現在のバージョン（2025-09）で検証されています。 このツールは、最新バージョンのAEM プロジェクトアーキタイプで機能するようになり、Sling IDE Tooling 1.3.0 の改善点が組み込まれています。
 
-[Eclipse Marketplace](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse) からインストールし、[AEM Developer Tools ページ ](https://eclipse.adobe.com) を参照してください。
+[Eclipse Marketplace](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse) からインストールし、[AEM Developer Tools ページ &#x200B;](https://eclipse.adobe.com) を参照してください。
 
 ### 今後の Java API の非推奨（廃止予定） {#java-api-deprecation}
 
@@ -203,7 +203,7 @@ OSGi properties:
 
 *Java 11 ランタイム* は非推奨（廃止予定）で、ほとんどの環境は既に高パフォーマンスの **Java 21 ランタイム** にアップグレードされています。
 
-サポートされていない依存関係が原因で、環境をアップグレードできなかった場合（[Java 21 ランタイム要件 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) を参照）、次の手順を記載したメールがAdobeから届いているはずです。 ここで説明しているように、Adobeは **2025 年 9 月 18 日（PT）に** 開発 **環境と** RDE **環境をアップグレードして** サイトとプロセスを検証し、問題に対処できるようにします。 **ステージング** および **実稼動** のアップグレードは、**2025 年 10 月 14 日** に続行されます。
+サポートされていない依存関係が原因で、環境をアップグレードできなかった場合（[Java 21 ランタイム要件 &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) を参照）、次の手順を記載したメールがAdobeから届いているはずです。 ここで説明しているように、Adobeは **2025 年 9 月 18 日（PT）に** 開発 **環境と** RDE **環境をアップグレードして** サイトとプロセスを検証し、問題に対処できるようにします。 **ステージング** および **実稼動** のアップグレードは、**2025 年 10 月 14 日** に続行されます。
 
 >[!NOTE]
 >
@@ -238,7 +238,7 @@ AEM パブリッシュ配信またはライブ実稼動サイトのEdge Delivery
 
 Edge認証を使用すると、Edge Delivery Services ページへのアクセスを、ID プロバイダー（IdP）で認証されたユーザーのみに制限できます。 これを実現するには、OpenID Connect （OIDC）設定の YAML ファイルをデプロイします。
 
-ご興味がある場合は、ユースケースの簡単な説明とご質問を [0}aemcs-edgecompute-feedback@adobe.com} までお問い合わせください。](mailto:aemcs-edgecompute-feedback@adobe.com)
+ご興味がある場合は、ユースケースの簡単な説明とご質問を [0&rbrace;aemcs-edgecompute-feedback@adobe.com&rbrace; までお問い合わせください。](mailto:aemcs-edgecompute-feedback@adobe.com)
 
 <!--
 ### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
@@ -273,7 +273,7 @@ Beta では、Amazon S3、Sumo Logic、Dynatrace および独自のNew Relic ア
 
 ### APM （Application Performance Monitoring）の拡張（Alpha プログラム） {#apm-alpha}
 
-観測性のために、AEM Cloud Service は現在、Adobe提供の [New Relic Oneおよびお客様が管理する ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)2}Dynatrace[ をサポートしています。 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)追加の APM オプションのサポートについては、ユースケースと共に、お好みのベンダーまたはテクノロジーを記載したメールを [0}aemcs-apm-beta@adobe.com} までお送りください。](mailto:aemcs-apm-beta@adobe.com)
+観測性のために、AEM Cloud Service は現在、Adobe提供の [New Relic Oneおよびお客様が管理する &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)2&rbrace;Dynatrace[&#x200B; をサポートしています。 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)追加の APM オプションのサポートについては、ユースケースと共に、お好みのベンダーまたはテクノロジーを記載したメールを [0&rbrace;aemcs-apm-beta@adobe.com&rbrace; までお送りください。](mailto:aemcs-apm-beta@adobe.com)
 
 
 ## [!DNL Experience Manager] ガイド {#guides}
