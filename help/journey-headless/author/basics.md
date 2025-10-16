@@ -5,10 +5,10 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 100%
+source-wordcount: '1733'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## 目的 {#objective}
 
-* **対象読者**：初心者
+* **オーディエンス**：初心者
 * **目的**：ヘッドレス CMS オーサリングの基本を紹介します。
    * AEMaaCS を使用したオーサリングの概要
    * コンテンツフラグメントの概要
@@ -63,16 +63,10 @@ AEM のインストールは、通常、次の 3 つの環境で構成されま�
 
 ナビゲーションパネルを開くには、左上の Adobe アイコンを選択し、次に小さいコンパスアイコンを選択します。
 
-<!--
-The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
-
-![Navigation panel](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
--->
-
 >[!NOTE]
 >コンテンツフラグメントは AEM **Sites** の機能ですが、**Assets** として保存されます。これは技術的なことでユーザーには関係ありませんが、知っておくと役に立つ場合があります。
 
-コンソール内では、左側のパネルでフォルダーを選択して、コンテンツフラグメントに移動できます。また、フィルターや検索も可能です。
+コンテンツフラグメント コンソール内では、左側のパネルでフォルダーを選択して、コンテンツフラグメントに移動できます。 また、フィルターや検索も可能です。
 
 ![コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
@@ -80,47 +74,25 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 
 **コンテンツフラグメント**&#x200B;コンソールでは、ツールバーからコンテンツフラグメントに対して様々なアクションを実行できます。
 
-<!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
-
 * **Assets で開く**
 * **作成**
 * **参照元**&#x200B;列には、そのフラグメントのすべての親参照を表示するための直接リンクもあります。コンテンツフラグメント、エクスペリエンスフラグメントおよびページの参照が含まれます。
 * フォルダー名にカーソルを合わせると、JCR パスが表示されます。
 
-フラグメントを選択すると、該当するすべてのアクションを使用できるようになります。
-
-<!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
+フラグメントを選択すると、必要に応じて次のアクションを使用できるようになります。
 
 * **開く**
-* **公開**（および **非公開**）
+* **公開**（および&#x200B;**非公開**）
+* **タグを管理**
 * **コピー**
+* **置換**
 * **移動**
-* **名前を変更**
+* **名前の変更**
 * **削除**
 
 >[!NOTE]
 >
 >公開、非公開、削除、移動、名前を変更、コピーなどのアクションは、非同期ジョブをトリガーします。そのジョブの進行状況は、AEM 非同期ジョブ UI で監視できます。
-
-<!--
-The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
-
-The Quick Actions are available for a single resource, see **Basel** in the example below:
-
-![Quick Actions](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
-
-The Actions Toolbar provides access to the full range of actions - applicable for the current scenario. The actions available can change; for example, dependent on your location, or whether you have selected multiple resources:
-
-![Action Toolbar](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
-
-You can select the format for viewing your resources with the View Selector:
-
-![View Selector](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
-
-You can view additional information about items using the Rail Selector. This also gives access to additional actions.
-
-![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
--->
 
 ## コンテンツフラグメントのオーサリング {#authoring-content-fragments}
 
@@ -208,7 +180,7 @@ You can view additional information about items using the Rail Selector. This al
    * アクションの公開と非公開
    * すべての&#x200B;**親参照**&#x200B;を表示するオプション（リンクアイコン）
    * フラグメント&#x200B;**ステータス**、および最後に保存した情報
-   * 元の（アセットベースの）エディターへの切替えスイッチ
+   * 元の（アセットベースの）エディターへの切替スイッチ
 * 左側のパネル：コンテンツフラグメント用&#x200B;**バリエーション**&#x200B;とその&#x200B;**フィールド**&#x200B;を表示します。
    * これらのリンクを使用して、コンテンツフラグメント構造をナビゲートできます。
 * 右側のパネル：プロパティ（メタデータ）とタグ、バージョン履歴に関する情報、任意の言語コピーに関連する情報を示すタブが表示されます

@@ -5,8 +5,8 @@ exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
+workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ AEM では、これはコンテンツフラグメントで実現されます。�
 
 AEM を使用してヘッドレスビジネスケースを解決する方法をアドビがどのように推奨しているかを理解するには、[AEM ヘッドレスジャーニー](/help/journey-documentation/documentation-journeys.md)がその出発点になります。
 
-## 対象読者 {#audience}
+## オーディエンス {#audience}
 
 このジャーニーは、コンテンツ作成者のペルソナ向けに設計されています。コンテンツ作成者として、コンテンツフラグメントで実際のコンテンツを作成します。
 
@@ -64,16 +64,7 @@ AEM を使用してヘッドレスビジネスケースを解決する方法を�
 
 ## 次のステップ {#what-is-next}
 
-これで、Adobe ヘッドレスジャーニーを開始する準備が整いました。このジャーニーの次のパートに進み、[AEM Headless as a Cloud Service のオーサリング - 概要](introduction.md)の記事を読むことをお勧めします。
-
-<!--
-### Choose Your Own Adventure {#choose-your-path}
-
-However, Adobe wants you to succeed as you get started with your AEM Headless project, regardless of your learning style. So, consider these two options.
-
-* If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey as recommended by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
-* If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ja) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
--->
+これで、Adobe ヘッドレスジャーニーを開始する準備が整いました。このジャーニーの次のパートに進み、[AEM Headless as a Cloud Service のオーサリング - 概要](/help/journey-headless/author/introduction.md)の記事を読むことをお勧めします。
 
 ## その他のリソース {#additional-resources}
 

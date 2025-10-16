@@ -5,10 +5,10 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 2c74a3a42dd21e2eaf71c1922931d5fa5149f7c5
+source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
 workflow-type: tm+mt
 source-wordcount: '791'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -47,9 +47,9 @@ ht-degree: 97%
 次の 2 つのタイプがあります。
 
 * **コンテンツ参照**
-   * 参照されるリソースへのパスを指定します
+   * 参照先リソースへのパスを指定します。
 * **コンテンツ参照（UUID）**
-   * エディターでは、参照は参照先リソースへのパスを指定します。内部的には、参照はリソースを参照する Universally Unique ID（UUID）として保持されます
+   * エディターでは、参照は参照先リソースへのパスを指定します。内部的には、参照はリソースを参照する Universally Unique ID（UUID）として保持されます。
 
 ## アセット／メディア参照 {#assets-media-references}
 
@@ -83,16 +83,12 @@ ht-degree: 97%
 
 作成者は、これらの関係を定義するわけではありません（コンテンツフラグメントモデルの作成時にコンテンツアーキテクトが行います）が、参照を把握して編集する方法を理解しておく必要があります。
 
-次の 2 つの種類があります。
+次の 2 種類があります。
 
 * **フラグメント参照**
-   * 参照されるリソースへのパスを指定します
+   * 参照先リソースへのパスを指定します。
 * **フラグメント参照（UUID）**
-   * エディターでは、参照は参照先リソースへのパスを指定します。内部的には、参照はリソースを参照する Universally Unique ID（UUID）として保持されます
-
-<!--
-![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
--->
+   * エディターでは、参照は参照先リソースへのパスを指定します。内部的には、参照はリソースを参照する Universally Unique ID（UUID）として保持されます。
 
 ### ネストされたフラグメントのオーサリング方法 {#author-nested-fragment}
 

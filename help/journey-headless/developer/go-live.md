@@ -5,8 +5,8 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
+workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 100%
 
@@ -29,11 +29,6 @@ AEM ヘッドレスジャーニーについての前のドキュメント、[す
 * ローンチ前のアプリケーションのセキュリティ確保とスケーリング
 * パフォーマンスとデバッグの問題の監視
 
-<!-- Alexandru: this is a bit redundant, to review again later
-
-## Prepare your AEM Headless Application for Go-Live {#prepare-your-aem-headless-application-for-golive}
-
--->
 AEM ヘッドレスアプリケーションのローンチに備えるには、以下に示すベストプラクティスに従います。
 
 ## ローンチ前のヘッドレスアプリケーションのセキュリティ確保とスケーリング {#secure-and-scale-before-launch}
