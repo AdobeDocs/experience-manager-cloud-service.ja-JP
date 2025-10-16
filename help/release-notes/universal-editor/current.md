@@ -18,7 +18,7 @@ ht-degree: 50%
 
 >[!TIP]
 >
->リリース前にユニバーサルエディターの機能 **今後** をテストする場合は、[ ユニバーサルエディターのプレビューリリースノート ](/help/release-notes/universal-editor/preview.md) を参照してください。
+>リリース前にユニバーサルエディターの機能 **今後** をテストする場合は、[&#x200B; ユニバーサルエディターのプレビューリリースノート &#x200B;](/help/release-notes/universal-editor/preview.md) を参照してください。
 
 >[!TIP]
 >
@@ -34,7 +34,7 @@ ht-degree: 50%
 
 ### 新規 RTE {#new-rte}
 
-リンクダイアログのページピッカーを使用した新しい ProseMirror RTE が、右側のパネルで使用できるようになりました。 [ この RTE には、柔軟な設定オプションが用意されています。](/help/implementing/universal-editor/configure-rte.md)
+リンクダイアログのページピッカーを使用した新しい ProseMirror RTE が、右側のパネルで使用できるようになりました。 [&#x200B; この RTE には、柔軟な設定オプションが用意されています。](/help/implementing/universal-editor/configure-rte.md)
 
 ## その他の改善点 {#other-improvements}
 
