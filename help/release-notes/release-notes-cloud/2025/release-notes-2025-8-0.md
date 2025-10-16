@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.8.0 リリー�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.8.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: 4187f9bb08d8af214054b937a5426e95c1de748d
+source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
 workflow-type: tm+mt
-source-wordcount: '1910'
-ht-degree: 89%
+source-wordcount: '1934'
+ht-degree: 86%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 89%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -69,9 +69,9 @@ AEM 用 [AI アシスタント](/help/implementing/cloud-manager/ai-assistant-in
 
 ### OpenAPI 機能を備えた Dynamic Media の新機能 {#new-features-dynamic-media-with-openapi}
 
-**OpenAPI URL を備えた SEO 対応 DM**
+**ブランド化され、読み取り可能なアセット配信 URL**
 
-OpenAPI を備えた DM でのアセット配信用のバニティ URL を作成し、システムで生成された長い UUID を短い読み取り可能な識別子に置き換えます。これにより、リンクは SEO 対応になり、ブランドやキャンペーンとの整合性が向上します。バニティ URL は、既存のワークフローを中断することなく、実行時に元のアセット UUID に自動的に解決されます。
+OpenAPI を使用して Dynamic Media でバニティ URL を活用することで、OpenAPI URL を使用した Dynamic Media をより人間が読みやすいものにします。 バニティー URL を使用すると、アセット配信 URL に含まれる、システムで生成され、記憶が困難な長い UUID を、ブランドで制御される短い識別子に置き換えることができます。 これにより、バニティー URL が短くなり、読みやすく、共有が容易になり、ブランドやキャンペーンとのより良い関連付けが可能になります。 バニティ URL は、既存のワークフローを中断することなく、実行時に元のアセット UUID に自動的に解決されます。
 
 >[!NOTE]
 >
@@ -79,17 +79,17 @@ OpenAPI を備えた DM でのアセット配信用のバニティ URL を作成
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [&#x200B; 日付と時刻の入力コンポーネント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)：日付と時刻のコンポーネントが使用できるようになり、カレンダーと時計のインターフェイスを使用して、またはサポートされている形式で手動で値を入力して、日付と時刻の両方を選択できるようになりました。
-* [&#x200B; ファイルのアップロードのエラー処理の強化 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)：ファイル添付コンポーネントは、アップロードされたファイルタイプを許可リストと照合して自動的に検証するようになりました。 ユーザーがサポートされていない形式のファイルをアップロードすると、送信中にフォームにエラーが表示されます。また、このコンポーネントはファイルコンテンツをチェックして、そのタイプを検証するので、フォームの全体的なセキュリティが強化されます。
-* [&#x200B; カスタム送信アクションに対して指定されたエラー応答 &#x200B;](/help/forms/custom-submit-action-troubleshooting.md)：カスタム送信アクションで未処理のエラーが発生した場合は、エラーコード 502 が返されます。 これにより、問題がカスタム送信アクションに関連していることを識別でき、デバッグが簡単になります。
-* [&#x200B; レコードのドキュメントからの非表示フィールドの除外 &#x200B;](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)：レコードのドキュメントから非表示フィールドを除外できるように、新しいプロパティが追加されました。 デフォルトでは、このオプションは選択されておらず、すべてのフォームフィールドに適用されます。
+* [ 日付と時刻の入力コンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)：日付と時刻のコンポーネントが使用できるようになり、カレンダーと時計のインターフェイスを使用して、またはサポートされている形式で手動で値を入力して、日付と時刻の両方を選択できるようになりました。
+* [ ファイルのアップロードのエラー処理の強化 ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)：ファイル添付コンポーネントは、アップロードされたファイルタイプを許可リストと照合して自動的に検証するようになりました。 ユーザーがサポートされていない形式のファイルをアップロードすると、送信中にフォームにエラーが表示されます。また、このコンポーネントはファイルコンテンツをチェックして、そのタイプを検証するので、フォームの全体的なセキュリティが強化されます。
+* [ カスタム送信アクションに対して指定されたエラー応答 ](/help/forms/custom-submit-action-troubleshooting.md)：カスタム送信アクションで未処理のエラーが発生した場合は、エラーコード 502 が返されます。 これにより、問題がカスタム送信アクションに関連していることを識別でき、デバッグが簡単になります。
+* [ レコードのドキュメントからの非表示フィールドの除外 ](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)：レコードのドキュメントから非表示フィールドを除外できるように、新しいプロパティが追加されました。 デフォルトでは、このオプションは選択されておらず、すべてのフォームフィールドに適用されます。
 
 ### AEM Forms のプレリリース機能
 
-* [AFP レンディションの生成と同期 &#x200B;](/help/forms/document-generation-afp-api.md): AEM Forms Communication API を使用して、XDP ファイルを AFP 形式に変換できるようになりました。 AFP は、大規模なエンタープライズ印刷で広く使用されている、高性能な形式です。
+* [AFP レンディションの生成と同期 ](/help/forms/document-generation-afp-api.md): AEM Forms Communication API を使用して、XDP ファイルを AFP 形式に変換できるようになりました。 AFP は、大規模なエンタープライズ印刷で広く使用されている、高性能な形式です。
 * **ルールエディターの機能強化**
-   * [&#x200B; 関数リストの Validate メソッド](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list)：validate メソッドと reset メソッドでは、パネル、フィールド、フォームの各レベルでの実行がサポートされるようになりました。以前は、フォームレベルでのみサポートされていました。
-   * [&#x200B; 最新のJavaScriptのサポート &#x200B;](/help/forms/rule-editor-core-components-difference-tables.md):ECMAScript 2019 以降の機能がカスタム関数に対してサポートされ、より効率的なモジュール型で再利用可能なコードを記述できるようになりました
+   * [ 関数リストの Validate メソッド](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list)：validate メソッドと reset メソッドでは、パネル、フィールド、フォームの各レベルでの実行がサポートされるようになりました。以前は、フォームレベルでのみサポートされていました。
+   * [ 最新のJavaScriptのサポート ](/help/forms/rule-editor-core-components-difference-tables.md):ECMAScript 2019 以降の機能がカスタム関数に対してサポートされ、より効率的なモジュール型で再利用可能なコードを記述できるようになりました
    * [ルールエディターの「DoR をダウンロード」オプション](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor)：ルールエディターにレコードのドキュメント（DoR）をダウンロードする機能が、標準（OOTB）オプションとして追加されました。
      ![レコードのドキュメント](/help/forms/assets/document-of-record-rn.gif)
    * [ルールエディターの動的変数](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules)：ルールエディターで動的（一時）変数を使用できるようになりました。これにより、条件とアクションをより柔軟に定義できます。一時的な値を保存するために非表示フィールドを使用する必要がなくなりました。
@@ -101,8 +101,8 @@ OpenAPI を備えた DM でのアセット配信用のバニティ URL を作成
 
 ### AEM Forms の早期導入機能
 
-* [&#x200B; 手書き署名コンポーネント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)：手書き署名コンポーネントを使用して、契約書フォームなどのフォームにユーザーの署名を追加できるようになりました。 コンポーネントを使用すると、ユーザーはマウス、スタイラス、タッチスクリーンを使用してフォーム内に直接署名を入力できます。
-* [&#x200B; ルールエディターでの直接 API 統合 &#x200B;](/help/forms/api-integration-in-rule-editor.md)：アダプティブFormsでは、フォームデータモデルを必要とせずに、ビジュアルルールエディターでの直接 API 統合をサポートするようになりました。 作成者は、URL または cURL 読み込みを使用して API を設定し、入力／出力パラメーターをマッピングし、認証を使用して安全な呼び出しを行うことができます。
+* [ 手書き署名コンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)：手書き署名コンポーネントを使用して、契約書フォームなどのフォームにユーザーの署名を追加できるようになりました。 コンポーネントを使用すると、ユーザーはマウス、スタイラス、タッチスクリーンを使用してフォーム内に直接署名を入力できます。
+* [ ルールエディターでの直接 API 統合 ](/help/forms/api-integration-in-rule-editor.md)：アダプティブFormsでは、フォームデータモデルを必要とせずに、ビジュアルルールエディターでの直接 API 統合をサポートするようになりました。 作成者は、URL または cURL 読み込みを使用して API を設定し、入力／出力パラメーターをマッピングし、認証を使用して安全な呼び出しを行うことができます。
 
 <!--
 **Forms Optimization opportunities**
