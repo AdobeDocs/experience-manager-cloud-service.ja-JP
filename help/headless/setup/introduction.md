@@ -4,22 +4,22 @@ description: このクイックスタートガイドでは、コンテンツモ�
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 feature: Headless
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '278'
-ht-degree: 100%
+source-git-commit: b25d47cca15ac1fe3f06c1ae99f15495ed5f4752
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 86%
 
 ---
 
 # ヘッドレスセットアップ {#introduction}
 
-以下では、AEM およびヘッドレステクノロジーについて既に熟知しているユーザー向けに、AEM as a Cloud Service を使用したエクスペリエンスの作成、管理、配信の簡単な道筋を 5 つの手順に分けて示します。各ガイドは前のガイドに基づいているので、じっくり順番に検討することをお勧めします。
+以下では、AEMとヘッドレステクノロジーを既に熟知しているユーザー向けに、AEM as a Cloud Serviceを使用したエクスペリエンスの作成、管理および配信の簡単な道筋を 5 つの手順に分けて示します（詳細なドキュメントを相互参照しています）。 各ガイドは前のガイドに基づいているので、じっくり順番に検討することをお勧めします。
 
-1. [設定の作成](create-configuration.md)
-1. [コンテンツフラグメントモデルの作成](create-content-model.md)
-1. [アセットフォルダーの作成](create-assets-folder.md)
-1. [コンテンツフラグメントの作成](create-content-fragment.md)
-1. [API リクエストの作成](create-api-request.md)
+1. [設定の作成](/help/headless/setup/create-configuration.md)
+1. [コンテンツフラグメントモデルの作成](/help/headless/setup/create-content-model.md)
+1. [アセットフォルダーの作成](/help/headless/setup/create-assets-folder.md)
+1. [コンテンツフラグメントの作成](/help/headless/setup/create-content-fragment.md)
+1. [API リクエストの作成](/help/headless/setup/create-api-request.md)
 
 >[!TIP]
 >
@@ -32,7 +32,7 @@ ht-degree: 100%
 >* [ヘッドレスコンテンツ作成者ジャーニー](/help/journey-headless/author/overview.md)
 >* [ヘッドレス翻訳ジャーニー](/help/journey-headless/translation/overview.md).
 
-## 対象読者 {#audience}
+## オーディエンス {#audience}
 
 説明されているタスクは、AEM のヘッドレス機能の基本的な包括的デモに必要です。テスト用 AEM インスタンスへの管理者アクセス権を持つユーザーは誰でも、これらのガイドに従って AEM でのヘッドレスな配信を理解できますが、開発者の経験を持つユーザーが最適です。
 
