@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
 workflow-type: tm+mt
 source-wordcount: '1981'
-ht-degree: 44%
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 44%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?captions=jpn&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,15 +48,15 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Experience Manager Sites プレリリースの新機能 {#prerelease-sites}
 
-AEM コンテンツフラグメントのコンテンツモデルエディターは、AEMの他の React スペクトルベースのインターフェイスと連携するように最新化されました。 ユーザーインターフェイスの実装と拡張モデルが、コンテンツフラグメントエディターおよびユニバーサルエディターと一致するようになりました。 新しいコンテンツモデル管理 UI から開いた場合、新しいモデルエディターがデフォルトになりました。 タッチ UI でコンテンツモデルを開くと、タッチ UI エディターが開き、新しいエディターを試すことができます。
+AEM コンテンツフラグメントのコンテンツモデルエディターは、AEM の他の React スペクトルベースのインターフェイスと連携するように最新化されました。ユーザーインターフェイスの実装と拡張モデルが、コンテンツフラグメントエディターおよびユニバーサルエディターと一貫性を保つようになりました。新しいコンテンツモデル管理 UI から開いた場合、新しいモデルエディターがデフォルトになりました。タッチ UI でコンテンツモデルを開くと、タッチ UI エディターが開き、新しいエディターを試すことができます。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Assets ビューの新機能 {#new-features-assets-view}
+### アセットビューの新機能 {#new-features-assets-view}
 
 **Dynamic Media テンプレートの部分文字列を使用した拡張テキスト書式設定**
 
-Dynamic Media テンプレートテキストレイヤー内の部分文字列に書式設定を適用できるようになりました。 選択した単語や語句は別のレイヤーとして扱われ、フォント、フォントサイズ、色などを調整できます。 部分文字列レイヤーは、テンプレートの配信 URL を使用してリアルタイムに更新できるようにパラメーター化されます
+Dynamic Media テンプレートテキストレイヤー内の部分文字列に書式設定を適用できるようになりました。選択した単語や語句は別のレイヤーとして扱われ、フォント、フォントサイズ、色などを調整できます。部分文字列レイヤーはパラメーター化されているので、テンプレートの配信 URL を使用してリアルタイムで更新できます。
 
 ### OpenAPI 機能を備えた Dynamic Media の新機能 {#new-features-dynamic-media-with-openapi}
 
@@ -66,7 +66,7 @@ OpenAPI を使用して Dynamic Media でバニティ URL を活用すること�
 
 >[!NOTE]
 >
->この機能は、限定提供（LA）機能として利用できます。 [アドビカスタマーサポートケースを作成および送信](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)し、デプロイメントで有効にすることができます。
+>この機能は、限定提供（LA）機能として利用できます。[アドビカスタマーサポートケースを作成および送信](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)し、デプロイメントで有効にすることができます。
 
 <!--
 
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -90,23 +90,23 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 ### Experience Manager Forms の新機能 {#new-features-forms}
 
-**SharePoint リスト添付ファイルのフォームデータモデルワークフローを呼び出しステップ**
+**SharePoint リスト添付ファイルのフォームデータモデルを起動ワークフローステップ**
 
-フォームデータモデルを呼び出しワークフローステップで、SharePoint リストベースのフォームデータモデルにおける Base64 でエンコードされた添付ファイル配列のワークフローサイドメタデータの処理がサポートされるようになりました。 この機能強化により、ワークフローステップでは、各添付ファイルのファイル名、MIME タイプ、カスタムプロパティなどのメタデータを渡し、保存し、取得することができます。 この機能により、より包括的なデータ管理が可能になり、シームレスなダウンストリーム統合が容易になります。 詳しくは、[SharePointリスト添付ファイル用のフォームデータモデルを起動ワークフローステップでのサポート強化 &#x200B;](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step) を参照してください。
+フォームデータモデルを起動ワークフローステップで、SharePoint リストベースのフォームデータモデルにおける Base64 エンコードされた添付ファイル配列のワークフローサイドメタデータの処理がサポートされるようになりました。この機能強化により、ワークフローステップでは、各添付ファイルのファイル名、MIME タイプ、カスタムプロパティなどのメタデータを渡し、保存し、取得することができます。この機能により、より包括的なデータ管理が可能になり、シームレスなダウンストリーム統合が容易になります。詳しくは、[SharePoint リスト添付ファイル用のフォームデータモデルを起動ワークフローステップでのサポート強化](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step)を参照してください。
 
 ### AEM Forms のプレリリース機能
 
 **ルールエディターの機能強化**
 
-ルールエディターで拡張ナビゲーションがサポートされ、入力パラメーターで関数および数式を使用できるようになりました。
+ルールエディターは拡張ナビゲーションをサポートするようになり、入力パラメーターで関数および数式を使用できるようになりました。
 
 **イベントペイロードのサポートによるナビゲーションの強化**
 
-呼び出しサービスハンドラーの `Navigate To` アクションで `EVENT_PAYLOAD` がサポートされるようになり、フォーム作成者はイベント応答に基づくフォローアップアクションを設定できるようになりました。 この機能強化により、送信後のワークフローをより柔軟に設計でき、よりスムーズな移行と、よりパーソナライズされたユーザーエクスペリエンスを実現します。 詳しくは、[&#x200B; イベントペイロードのサポートを使用した拡張ナビゲーション &#x200B;](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service) を参照してください。
+呼び出しサービスハンドラーの `Navigate To` アクションは `EVENT_PAYLOAD` をサポートするようになり、フォーム作成者はイベント応答に基づくフォローアップアクションを設定できるようになりました。この機能強化により、送信後のワークフロー設計の柔軟性が向上し、よりスムーズな移行と、よりパーソナライズされたユーザーエクスペリエンスが実現します。詳しくは、[イベントペイロードのサポートによるナビゲーションの強化](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)を参照してください。
 
 **入力パラメーターでの関数および数式のサポート**
 
-入力パラメーターでは、関数呼び出しと数式の両方がサポートされるようになり、フォーム作成者は動的に計算された値を直接渡すことができるようになりました。 この機能強化により、ルール設定が合理化され、追加のフィールドが不要になり、フォームが複雑なロジックや計算駆動型のシナリオに適応しやすくなります。 詳しくは、「入力パラメーターでの関数および数式のサポート [&#x200B; を参照してください &#x200B;](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)。
+入力パラメーターは、関数呼び出しと数式の両方をサポートするようになり、フォーム作成者は動的に計算された値を直接渡すことができるようになりました。この機能強化により、ルール設定が合理化され、追加のフィールドが不要になり、フォームが複雑なロジックや計算駆動型のシナリオに適応しやすくなります。詳しくは、[入力パラメーターでの関数および数式のサポート](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)を参照してください。
 
 ### AEM Forms の新しい早期アクセス機能 {#forms-new-early-access-features}
 
@@ -114,17 +114,17 @@ AEM Forms 早期アクセスプログラムでは、最先端の革新機能に�
 
 これらのリリースノートでは、現在のリリースで提供されるイノベーションのリストを示します。早期アクセスプログラムで利用可能なイノベーションの完全なリストについて詳しくは、[AEM Forms 早期アクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
 
-**インタラクティブ通信エディターでのPDF プレビュー**
+**インタラクティブなコミュニケーションエディターでの PDF プレビュー**
 
-ユーザーは、データのないインタラクティブ通信 PDF、ローカル JSON データファイルまたはデータモデルのデータを使用したインタラクティブ通信 PDF をプレビューして、柔軟なデータ駆動型テストを有効にすることができます。 詳しくは、[&#x200B; インタラクティブ通信エディターでのPDF プレビュー &#x200B;](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md) を参照してください。
+ユーザーは、データのない、ローカル JSON データファイル、またはデータモデルのデータを使用したインタラクティブなコミュニケーション PDF をプレビューできるので、柔軟なデータ駆動型テストが可能になります。詳しくは、[インタラクティブなコミュニケーションエディターでの PDF プレビュー](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)を参照してください。
 
-**インタラクティブ通信でのカスタムフォントのサポート**
+**インタラクティブなコミュニケーションでのカスタムフォントのサポート**
 
-カスタムフォント機能を使用すると、カスタムフォントや組織が承認したフォントをインタラクティブ通信に埋め込むことができ、デバイスやプラットフォームをまたいで一貫性のあるブランドのPDF レンダリングを実現できます。 詳しくは、[&#x200B; インタラクティブ通信でのカスタムフォントのサポート &#x200B;](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md) を参照してください。
+カスタムフォント機能を使用すると、カスタムフォントや組織が承認したフォントをインタラクティブなコミュニケーションに埋め込むことができ、デバイスやプラットフォームをまたいで一貫性のあるブランドの PDF レンダリングを実現できます。詳しくは、[インタラクティブなコミュニケーションでのカスタムフォントのサポート](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)を参照してください。
 
-**インタラクティブ通信の読み込みと書き出し**
+**インタラクティブなコミュニケーションの読み込みと書き出し**
 
-この機能により、様々な環境でのインタラクティブ通信の移行と再利用が可能になります。 ある環境からインタラクティブ通信を、関連するフラグメントとデータモデルと共に書き出して、別の環境に読み込めるようになりました。 詳しくは、[&#x200B; インタラクティブ通信の読み込みと書き出し &#x200B;](/help/forms/interactive-communication/import-and-export-interactive-communications.md) を参照してください。
+この機能により、様々な環境でのインタラクティブなコミュニケーションの移行と再利用が可能になります。ある環境からインタラクティブなコミュニケーションを、関連するフラグメントとデータモデルと共に書き出して、別の環境に読み込めるようになりました。詳しくは、[インタラクティブなコミュニケーションの読み込みと書き出し](/help/forms/interactive-communication/import-and-export-interactive-communications.md)を参照してください。
 
 <!--
 **Forms Optimization opportunities**
@@ -149,25 +149,25 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 **自動メンテナンスアップデートの一時停止**
 
-運用開始日、ライブイベント、ピーク時の売上 – これらの瞬間は中断できません。 [&#x200B; 新しいセルフサービス機能 &#x200B;](/help/implementing/deploying/quiet-hours-update-free-periods.md) 重要な場合は自動メンテナンスアップデートを停止し、チームが集中できるようにします。
+運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[ 新しいセルフサービス機能 ](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
 
-* Quiet Hours: 1 日の設定時間に自動メンテナンスをブロックします。 勤務時間、夜間の実行や朝のカットオーバーに最適です。
-* 更新不要の期間：1 週間は自動メンテナンスをブロックします。 ローンチ、プロモーションまたは年次フリーズに使用します。
+* 静かな時間：毎日設定された時間に自動メンテナンスをブロックします。勤務時間、夜間の実行や朝の切り替え時などに最適です。
+* 更新不要の期間：自動メンテナンスを 1 週間ブロックします。ローンチ、プロモーションまたは年次フリーズに使用します。
 
 >[!NOTE]
 >
->9 月 25 日（PT）に限定提供機能として提供を開始します。
->&#x200B;>プログラムでアクティブ化するには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信してください。
+>9月25日（PT）に限定提供機能として提供を開始します。
+>>プログラムでアクティブ化するには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信してください。
 
 ### AEM Developer Tools for Eclipse の新しいリリース {#aem-develeper-tools-for-eclipse}
 
-AEM Developer Tools for Eclipse のバージョン 1.4.0 がリリースされました。 このバージョンは、Eclipse IDE 2022-12 以降のサポートを追加し、現在のバージョン（2025-09）で検証されています。 このツールは、最新バージョンのAEM プロジェクトアーキタイプで機能するようになり、Sling IDE Tooling 1.3.0 の改善点が組み込まれています。
+AEM Developer Tools for Eclipse のバージョン 1.4.0 がリリースされました。このバージョンでは、Eclipse IDE 2022-12 以降のサポートが追加され、現在のバージョン（2025-09）で検証されています。このツールは、最新バージョンの AEM プロジェクトアーキタイプで機能するようになり、Sling IDE Tooling 1.3.0 の改善点が組み込まれています。
 
-[Eclipse Marketplace](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse) からインストールし、[AEM Developer Tools ページ &#x200B;](https://eclipse.adobe.com) を参照してください。
+詳しくは、[Eclipse Marketplace](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse) からインストールし、[AEM Developer Tools ページ](https://eclipse.adobe.com)を参照してください。
 
 ### 今後の Java API の非推奨（廃止予定） {#java-api-deprecation}
 
-一部の非推奨 API は 8 月 31 日（PT）に削除対象としてマークされたため、参照できなくなりました。 コードに非推奨の API の使用が検出された場合はアクションセンターから通知が届き、11 月 13 日以降は、Cloud Manager ビルド中に通知が表示され、使用を削除することが重要になります。 詳しくは、[非推奨（廃止予定）に関する記事](/help/release-notes/deprecated-removed-features.md#aem-apis)を参照してください。便宜上、これらの API を次に示します。
+一部の非推奨（廃止予定）API は、8月31日（PT）の削除としてマークされたので、参照できなくなります。コード内に非推奨の API の使用が検出された場合はアクションセンターから通知が届きます。11月13日（PT）以降は、使用を削除することの重要性を強調する通知が Cloud Manager ビルド中に表示されます。詳しくは、[非推奨（廃止予定）に関する記事](/help/release-notes/deprecated-removed-features.md#aem-apis)を参照してください。便宜上、これらの API を次に示します。
 
 +++ 展開して Java API の非推奨（廃止予定）について確認
 
@@ -199,21 +199,21 @@ OSGi properties:
 
 -->
 
-### Java 11 ランタイムのデプロイメント {#java11-runtime-deprecation}
+### Java 11 ランタイムの非推奨（廃止予定） {#java11-runtime-deprecation}
 
-*Java 11 ランタイム* は非推奨（廃止予定）で、ほとんどの環境は既に高パフォーマンスの **Java 21 ランタイム** にアップグレードされています。
+*Java 11 ランタイム*&#x200B;は廃止となり、大半の環境はよりパフォーマンスの高い **Java 21 ランタイム**&#x200B;にアップグレードされています。
 
-サポートされていない依存関係が原因で、環境をアップグレードできなかった場合（[Java 21 ランタイム要件 &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) を参照）、次の手順を記載したメールがAdobeから届いているはずです。 ここで説明しているように、Adobeは **2025 年 9 月 18 日（PT）に** 開発 **環境と** RDE **環境をアップグレードして** サイトとプロセスを検証し、問題に対処できるようにします。 **ステージング** および **実稼動** のアップグレードは、**2025 年 10 月 14 日** に続行されます。
+サポートされていない依存関係が原因で環境をアップグレードできなかった場合（[Java 21 ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)を参照）は、次の手順を記載したメールがアドビから届いているはずです。ここで説明しているように、アドビは **2025年9月18日（PT）**&#x200B;に&#x200B;**開発**&#x200B;環境と **RDE** 環境をアップグレードして、サイトとプロセスを検証し、問題に対処できるようにします。**ステージ**&#x200B;と&#x200B;**実稼動**&#x200B;のアップグレードは、**2025年10月14日（PT）**&#x200B;に実施されます。
 
 >[!NOTE]
 >
->ランタイムバージョンは、コードのビルドバージョンとは別のものです。 Java 21 を使用してビルドすることをお勧めしますが、現時点では、Java 11 ビルドは引き続き受け入れられます。 Java 11 ビルドの廃止に関する通知は、今後共有される予定です。
+>ランタイムバージョンは、コードのビルドバージョンとは別のものです。Java 21 を使用してビルドすることをお勧めしますが、現時点では Java 11 ビルドも引き続き使用できます。Java 11 ビルドの廃止に関する通知は、今後共有される予定です。
 
 ### AEM Java ログ設定ポリシーの適用 {#logconfig-policy}
 
 4 月のリリースノートに記載されているように、AEMの Java ログは、すべてのお客様の環境で信頼性の高い監視を確実に行うために、標準に従う必要があります。 ログ形式、出力ファイル、デフォルトログレベルの変更といったカスタムログ設定は、サポートされなくなりました。 ログはデフォルトファイルにダイレクトされ続け、AEM 製品コードのデフォルトログレベルは保持される必要があります。 詳しくは、[ログに関する記事](/help/implementing/developing/introduction/logging.md#configuration-loggers)を参照してください。
 
-**10 月 30 日** 以降、サポートされていないカスタムログの上書きは無視されます。 Adobe の分析によると、ほとんどのお客様は影響を受けることはありません。現在の設定が影響を受ける可能性があるお客様にはご連絡済みです。
+**10月30日（PT）**&#x200B;から、サポートされていないカスタムログの上書きは無視されるようになります。Adobe の分析によると、ほとんどのお客様は影響を受けることはありません。現在の設定が影響を受ける可能性があるお客様にはご連絡済みです。
 
 カスタムログ動作に依存するダウンストリームプロセスを確認し、更新してください。 例：
 
@@ -234,11 +234,11 @@ Edge コンピューティングを使用すると、CDN レイヤーで JavaScr
 
 AEM パブリッシュ配信またはライブ実稼動サイトのEdge Delivery Services プロジェクトで利用できる機会の数は限られています。 参加に関心がある場合や、詳細を確認したい場合は、ユースケースの簡単な説明を添えて [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)までメールでご連絡ください。
 
-### Edge Delivery ServicesのEdge認証（Beta プログラム） {#edge-authentication}
+### Edge Delivery Services の Edge 認証（Beta プログラム） {#edge-authentication}
 
-Edge認証を使用すると、Edge Delivery Services ページへのアクセスを、ID プロバイダー（IdP）で認証されたユーザーのみに制限できます。 これを実現するには、OpenID Connect （OIDC）設定の YAML ファイルをデプロイします。
+Edge 認証を使用すると、Edge Delivery Services ページへのアクセスを、ID プロバイダー（IdP）で認証されたユーザーのみに制限できます。これを実現するには、OpenID Connect（OIDC）設定の YAML ファイルをデプロイします。
 
-ご興味がある場合は、ユースケースの簡単な説明とご質問を [0&rbrace;aemcs-edgecompute-feedback@adobe.com&rbrace; までお問い合わせください。](mailto:aemcs-edgecompute-feedback@adobe.com)
+ご興味がある場合は、ユースケースの簡単な説明とご質問を [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) までお問い合わせください。
 
 <!--
 ### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
@@ -251,11 +251,11 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 ### ライブトラフィックを受け入れる前にコードをテストするための Canary 実稼動デプロイメント（Beta プログラム） {#canary-beta}
 
-エンドユーザーに公開する前に、内部専用テストトラフィックを使用して実稼動ビルドを検証します。 顧客に影響を与えることなく、実稼動環境に出荷し、カナリアトラフィックのみをルーティング（特別なヘッダーを使用）し、動作を監視してから、ライブトラフィックに昇格させるか、ロールバックします。
+エンドユーザーに公開する前に、内部専用テストトラフィックを使用して実稼動ビルドを検証します。実稼動環境に出荷し、Canary トラフィックのみをルーティング（特別なヘッダーを使用）し、動作を監視してから、顧客に影響を与えることなく、ライブトラフィックに昇格するか、ロールバックします。
 
 コードリリースを実稼動環境にデプロイしますが、ライブトラフィックを受け入れるかロールバックするかを決定する前に、内部テストトラフィックのみに制限します。
 
-アクセスをリクエストしてフィードバックを共有するには、[aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) にメールを送信します。
+アクセスをリクエストしてフィードバックを共有するには、[aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) にメールを送信してください。
 
 ### RDE のスナップショット（Alpha プログラム） {#rde-snapshot-program}
 
@@ -271,9 +271,9 @@ Beta では、Amazon S3、Sumo Logic、Dynatrace および独自のNew Relic ア
 
 詳しくは、[ログ転送ドキュメント](/help/implementing/developing/introduction/log-forwarding.md)を参照してください。
 
-### APM （Application Performance Monitoring）の拡張（Alpha プログラム） {#apm-alpha}
+### アプリケーションパフォーマンスモニタリング（APM）の拡張（Alpha プログラム） {#apm-alpha}
 
-観測性のために、AEM Cloud Service は現在、Adobe提供の [New Relic Oneおよびお客様が管理する &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)2&rbrace;Dynatrace[&#x200B; をサポートしています。 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)追加の APM オプションのサポートについては、ユースケースと共に、お好みのベンダーまたはテクノロジーを記載したメールを [0&rbrace;aemcs-apm-beta@adobe.com&rbrace; までお送りください。](mailto:aemcs-apm-beta@adobe.com)
+観測性のために、AEM Cloud Service は現在、アドビ提供の [New Relic One](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)と顧客管理の [Dynatrace](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) をサポートしています。追加の APM オプションのサポートを検討中ですので、ユースケースと共に、ご希望のベンダーまたはテクノロジーを記載したメールを [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) までお送りください。
 
 
 ## [!DNL Experience Manager] ガイド {#guides}

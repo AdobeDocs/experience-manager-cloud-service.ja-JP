@@ -7,7 +7,7 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 31c94576f6cfb0ffff0f37ece33ef1f91f98f356
 workflow-type: tm+mt
 source-wordcount: '166'
-ht-degree: 50%
+ht-degree: 78%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 50%
 
 >[!TIP]
 >
->リリース前にユニバーサルエディターの機能 **今後** をテストする場合は、[&#x200B; ユニバーサルエディターのプレビューリリースノート &#x200B;](/help/release-notes/universal-editor/preview.md) を参照してください。
+>ユニバーサルエディターの&#x200B;**今後の**&#x200B;機能をリリース前にテストしたい場合は、[ユニバーサルエディターのプレビューリリースノート](/help/release-notes/universal-editor/preview.md)を参照してください。
 
 >[!TIP]
 >
@@ -34,7 +34,7 @@ ht-degree: 50%
 
 ### 新規 RTE {#new-rte}
 
-リンクダイアログのページピッカーを使用した新しい ProseMirror RTE が、右側のパネルで使用できるようになりました。 [&#x200B; この RTE には、柔軟な設定オプションが用意されています。](/help/implementing/universal-editor/configure-rte.md)
+リンクダイアログにピッカーを備えた新規 ProseMirror RTE が右側のパネルで使用できるようになりました。[この RTE には、柔軟な設定オプションが用意されています。](/help/implementing/universal-editor/configure-rte.md)
 
 ## その他の改善点 {#other-improvements}
 
