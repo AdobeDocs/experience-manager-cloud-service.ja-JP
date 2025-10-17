@@ -4,7 +4,7 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 85784a9611bc6f83a1d70b66ff7087117aa7ec0b
+source-git-commit: 8dfe5316db99860ee8fbf5d0be2fa70412e7cce3
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 56%
@@ -29,7 +29,7 @@ AEM as a Cloud Service の Cloud Manager 2025.10.0 のリリース日は 2025年
 
 * **専用のステージ専用および実稼動用のデプロイメントパイプライン**
 
-  Cloud Managerには、専用のステージング専用および実稼動用のデプロイメントパイプラインが用意されるようになりました。これにより、ステージング環境と実稼動環境へのデプロイメントを個別に管理する柔軟性が向上します。 [&#x200B; ステージング専用および実稼動専用のパイプラインを分割 &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md) を参照してください。
+  Cloud Managerには、専用のステージング専用および実稼動用のデプロイメントパイプラインが用意されるようになりました。これにより、ステージング環境と実稼動環境へのデプロイメントを個別に管理する柔軟性が向上します。 [ ステージング専用および実稼動専用のパイプラインを分割 ](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md) を参照してください。
 
 * **AEM Cloud Health Assessment Service**
 
@@ -46,7 +46,7 @@ AEM as a Cloud Service の Cloud Manager 2025.10.0 のリリース日は 2025年
 
   チームは、AEM環境を継続的に監視および改善して、パフォーマンスのスムーズ化、セキュリティの強化、長期的なメンテナンス性を実現できます。
 
-  [&#x200B; 実稼動環境およびステージ環境のヘルスアセスメント &#x200B;](/help/implementing/cloud-manager/reports/report-health-assessment.md) を参照してください。
+  [ 実稼動環境およびステージ環境のヘルスアセスメント ](/help/implementing/cloud-manager/reports/report-health-assessment.md) を参照してください。
 
 * **設定パイプラインのサポート**
 
@@ -54,15 +54,15 @@ AEM as a Cloud Service の Cloud Manager 2025.10.0 のリリース日は 2025年
 
   Edge Delivery設定パイプラインは、Cloud Manager パイプライン変数を通じてシークレットもサポートします。
 
-  [Edge Delivery パイプラインの追加 &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) を参照してください。
+  [Edge Delivery パイプラインの追加 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) を参照してください。
 
 * **効率化されたドメインマッピング - CDN セットアップダイアログボックス**
 
   Cloud Managerでは、**ドメインを CDN にマッピング** フローを簡略化して、混乱を軽減し、設定を高速化しました。 ダイアログボックスで、**Adobeの管理による CDN** （「推奨」バッジが付きます）が強調されるようになりました。
 
-  ![Adobeの管理による CDN ラジオボタンが選択されている状態でドメインを CDN にマッピング ダイアログボックス &#x200B;](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png)
+  ![Adobeの管理による CDN ラジオボタンが選択されている状態でドメインを CDN にマッピング ダイアログボックス ](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png)
 
-  [&#x200B; ドメインマッピングの追加 &#x200B;](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) を参照してください。
+  [ ドメインマッピングの追加 ](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) を参照してください。
 
   このダイアログボックスには、**その他の CDN プロバイダー** カードに関する、以下の操作方法のコンテンツに重点を置いた、単一の簡潔なチェックリストも表示されます。
 
@@ -72,7 +72,7 @@ AEM as a Cloud Service の Cloud Manager 2025.10.0 のリリース日は 2025年
    * 顧客対応ドメインに `X-Forwarded-Host` を設定します。
    * AEMに到達する前に、他の `X-Forwarded-*` ヘッダーをクリアします。
 
-  ![&#x200B; 「他の CDN プロバイダー」ラジオボタンを選択した状態で、「ドメインを CDN にマッピング」ダイアログボックス &#x200B;](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-other-cdn-provider.png)
+  ![ 「他の CDN プロバイダー」ラジオボタンを選択した状態で、「ドメインを CDN にマッピング」ダイアログボックス ](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-other-cdn-provider.png)
 
   <!-- (no redundant `Origin` field or "Learn more" clutter) -->付属のフッターには、2 つの役立つリンクがあります。主要な CDN のサンプル設定と、完全なドキュメントへのリンクです。 1 つの確認ボタン（「CDN を設定しました」がフローを完了します）。
 
@@ -100,9 +100,9 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 [Experience Hub](/help/experience-hub.md) は、組織のニーズに合わせてカスタマイズされた、AEMへのエントリポイントとして機能します。 Adobeに既存のAEM UI 拡張機能を通知し、最小限の労力でExperience Hubで有効にできるようにします。
 
-![Experience Hubの拡張性とカスタマイズワークフローの図 &#x200B;](/help/implementing/cloud-manager/release-notes/assets/experience-hub-extensibility-customization.png)
+![Experience Hubの拡張性とカスタマイズワークフローの図 ](/help/implementing/cloud-manager/release-notes/assets/experience-hub-extensibility-customization.png)
 
-カスタムエクスペリエンスをExperience Hubに埋め込むと、組織のダッシュボードを拡張し、パーソナライズすることができます。 Adobeの組み込みウィジェットに加えて、[UI 拡張機能 &#x200B;](https://developer.adobe.com/uix/docs/) フレームワークを使用して独自のウィジェットを追加します。 JavaScript ベースの UI アプリを作成し、ビジネス固有の要件とワークフローを満たすようにユーザーに表示します。
+カスタムエクスペリエンスをExperience Hubに埋め込むと、組織のダッシュボードを拡張し、パーソナライズすることができます。 Adobeの組み込みウィジェットに加えて、[UI 拡張機能 ](https://developer.adobe.com/uix/docs/) フレームワークを使用して独自のウィジェットを追加します。 JavaScript ベースの UI アプリを作成し、ビジネス固有の要件とワークフローを満たすようにユーザーに表示します。
 
 ベータ版に興味がありますか？ Adobeの OrgID と作成するカスタマイズの簡単な説明を [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) にメールで送信します。
 
@@ -110,7 +110,7 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 新しいビルドモデルでは、（リポジトリ全体ではなく）変更されたモジュールのみを、モジュールレベルのキャッシュを使用してコンパイルし、ビルド時間を短縮します。 コード品質、フルスタック、ステージ専用のパイプラインに適用されます。
 
-![&#x200B; フルビルドとスマートビルドの 2 つのビルド戦略オプションが表示されている実稼動以外のパイプラインを編集ダイアログボックス &#x200B;](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png)
+![ フルビルドとスマートビルドの 2 つのビルド戦略オプションが表示されている実稼動以外のパイプラインを編集ダイアログボックス ](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png)
 *フルビルドとスマートビルドの 2 つのビルド戦略オプションが表示されている実稼動以外のパイプラインを編集ダイアログボックス。*
 
 **パイプラインを追加/編集** ダイアログボックスの「**Sourceコード**」タブにある新しい **ビルド方法** セクションで、次のいずれかのビルドオプションを選択できます。
@@ -120,7 +120,7 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 使用するパイプラインを制御できます **スマートビルド**。 ベータ版では、このオプションは **コード品質** パイプラインと **開発デプロイメント** パイプラインにのみ表示されます。
 
-興味ある？ Adobeの OrgID とプログラム ID を記載したメール [0&rbrace;beta_quickbuild_cmpipelines@adobe.com&rbrace; を送信します。](mailto:beta_quickbuild_cmpipelines@adobe.com)
+興味ある？ Adobeの OrgID とプログラム ID を記載したメール [0}beta_quickbuild_cmpipelines@adobe.com} を送信します。](mailto:beta_quickbuild_cmpipelines@adobe.com)
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
 
@@ -130,13 +130,13 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 最新の顧客ソースコードが期待どおりに動作しない場合は、以前のデプロイメントに迅速に戻すことができます。パイプライン全体を再実行したり、コミットを手動で元に戻したりする必要はありません。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![環境カードから顧客ソースコードを復元](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上記の環境カードには、選択した環境の&#x200B;**復元**／**以前にデプロイされたコード**&#x200B;オプションが表示されています。*
+![環境カードから顧客ソースコードを復元](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上記の環境カードには、選択した環境の&#x200B;**復元**／**以前にデプロイされたコード**オプションが表示されています。*
 
 ![以前にデプロイしたコードを復元ダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-***以前にデプロイしたコードを復元**&#x200B;ダイアログボックスで、現在デプロイされているバージョンと復元するバージョンを確認し、「**確認***」をクリックします。
+***以前にデプロイしたコードを復元**ダイアログボックスで、現在デプロイされているバージョンと復元するバージョンを確認し、「**確認***」をクリックします。
 
 ![アクティベーションの復元](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager は、環境を以前のビルドにロールバックし、コンテンツと設定をそのままの状態に保ち、デプロイメントが完了するまで環境に&#x200B;**復元中**&#x200B;とマークを付けます。*
+*Cloud Manager は、環境を以前のビルドにロールバックし、コンテンツと設定をそのままの状態に保ち、デプロイメントが完了するまで環境に&#x200B;**復元中**とマークを付けます。*
 
 ![使用中のソースコードバージョン](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *環境の詳細ビューには、前述のように、使用中のアクティブなソースコードバージョンも表示されるようになりました。*
 
@@ -191,7 +191,7 @@ Azure DevOps Git リポジトリを Cloud Manager にオンボードできるよ
 | *必要に応じてプロジェクトを Adobe の管理による Git リポジトリに戻すには、どうすれば良いですか？* | 戻すのは簡単です。 [パイプラインを更新](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)して Adobe リポジトリを指し、外部リポジトリが不要になった場合は削除します。 |
 | *異なる環境（実稼動と実稼動以外など）に異なるリポジトリを設定して、最初に実稼動以外の環境でテストできるようにすることはできますか？* | はい、個別の環境用に異なるリポジトリを設定できます。 例えば、開発パイプラインまたはコード品質パイプラインは外部リポジトリを指し、実稼動パイプラインは Adobe リポジトリに接続されたままにすることができます。 この設定中は、2 つのリポジトリ間の同期ジョブがアクティブのままであることを確認してください。 |
 | *`IP Allow` リストなどの既存の設定は引き続き機能しますか？* | はい、既存の `IP Allow` リストは引き続き通常どおり機能します。 ただし、外部 Git リポジトリがファイアウォールで保護されている場合は、必要な [Adobe IP アドレスを許可リストに追加する必要があります](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。 |
-| *すべての GitLab リポジトリ URL が機能しますか？ 使用するリポジトリ URL は、形式 `https://gitlab_dedicated_url.com/path/repo-name.git` に従いますが、この形式はドキュメントの例とは異なります。* | はい、API V3 または V4 をサポートするどの GitLab リポジトリもサポートされます。これには、[Cloud Manager への外部リポジトリの追加 &#x200B;](/help/implementing/cloud-manager/managing-code/external-repositories.md)（`https://git-vendor-name.com/org-name/repo-name.git`）に記載されているようなセルフホスト型の GitLab URL が含まれます。 |
+| *すべての GitLab リポジトリ URL が機能しますか？ 使用するリポジトリ URL は、形式 `https://gitlab_dedicated_url.com/path/repo-name.git` に従いますが、この形式はドキュメントの例とは異なります。* | はい、API V3 または V4 をサポートするどの GitLab リポジトリもサポートされます。これには、[Cloud Manager への外部リポジトリの追加 ](/help/implementing/cloud-manager/managing-code/external-repositories.md)（`https://git-vendor-name.com/org-name/repo-name.git`）に記載されているようなセルフホスト型の GitLab URL が含まれます。 |
 
 
 #### アクセストークンを管理{#manage-access-tokens}
