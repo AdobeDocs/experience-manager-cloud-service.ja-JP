@@ -78,7 +78,7 @@ ht-degree: 78%
 
 ## コピーと貼り付けの無効化 {#copy-paste}
 
-コンテンツ作成者がコンポーネントをコピーして貼り付ける機能を、オーサリングワークフローによって制限しなければならない場合があります。 [ コピー&amp;ペースト」アイコン ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) を無効にするには、次のメタデータを追加します。
+コンテンツ作成者がコンポーネントをコピーして貼り付ける機能を、オーサリングワークフローによって制限しなければならない場合があります。 [&#x200B; コピー&amp;ペースト」アイコン &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) を無効にするには、次のメタデータを追加します。
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="copy"/>
