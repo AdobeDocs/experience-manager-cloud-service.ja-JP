@@ -4,10 +4,10 @@ description: コンテンツ作成者のニーズに合わせてユニバーサ�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
+source-git-commit: a72b4b7921a1a379bcd089682c02b0519fe3af8a
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 92%
+source-wordcount: '522'
+ht-degree: 78%
 
 ---
 
@@ -40,6 +40,26 @@ ht-degree: 92%
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
 ```
 
+## ライブへの公開の無効化 {#publish-live}
+
+オーサリングワークフローによっては、ライブサービスへの公開が妨げられることがあります。
+
+したがって、次のメタデータを追加することで、アプリ内で公開ウィンドウの **ライブ** オプション全体を抑制できます。
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
+```
+
+## 非公開の無効化 {#unpublish}
+
+コンテンツを非公開にする前に、承認プロセスが必要なオーサリングワークフローもあります。 このような状況では、どの作成者も非公開のオプションを使用できません。
+
+したがって、次のメタデータを追加することで、アプリ内で「**非公開**」ボタン全体を抑制できます。
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
+```
+
 ## 「ページを開く」の無効化 {#open-page}
 
 次のメタデータを追加することで、「**ページを開く**」ボタンを完全にアプリ内で抑制できます。
@@ -58,7 +78,7 @@ ht-degree: 92%
 
 ## コピーと貼り付けの無効化 {#copy-paste}
 
-コンテンツ作成者がコンポーネントをコピーして貼り付ける機能を、オーサリングワークフローによって制限しなければならない場合があります。 [&#x200B; コピー&amp;ペースト」アイコン &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) を無効にするには、次のメタデータを追加します。
+コンテンツ作成者がコンポーネントをコピーして貼り付ける機能を、オーサリングワークフローによって制限しなければならない場合があります。 [ コピー&amp;ペースト」アイコン ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) を無効にするには、次のメタデータを追加します。
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="copy"/>
