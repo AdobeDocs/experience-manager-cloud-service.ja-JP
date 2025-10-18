@@ -37,7 +37,7 @@ ht-degree: 96%
 
 2025.2.0 リリースで追加された機能の概要については、2025年2月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3458080?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3458081?captions=jpn&quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
