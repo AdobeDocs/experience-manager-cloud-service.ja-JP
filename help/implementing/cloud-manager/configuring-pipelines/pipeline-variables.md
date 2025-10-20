@@ -5,7 +5,7 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ea85deb74f759f8e74d314df0ba081ea23cb5aab
+source-git-commit: a429ed24d6e724aa3cc7123982e8d4a24cbef5a9
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 96%
@@ -48,7 +48,7 @@ Cloud Manager を使用すると、複数の方法でパイプライン変数を
    | --- | --- |
    | 名前 | 設定変数の一意の名前です。パイプラインで使用される特定の変数を識別します。次の命名規則に従う必要があります。<ul><li>変数には、英数字とアンダースコア（`_`）のみ使用できます。</li><li>名前はすべて大文字にします。</li><li>変数の数はパイプラインあたり最大 200 個までです。</li><li>名前は 100 文字以下にする必要があります。</li><li>`string` 変数の値はそれぞれ、2048 文字未満にする必要があります。</li><li>`secretString` 変数型の値はそれぞれ、500 文字以下にする必要があります。</li></ul> |
    | 値 | 変数が保持する値です。 |
-   | 適用されたステップ | 必須。変数が適用されるパイプラインのステップ：<ul><li>**ビルド** - 変数は、ビルドプロセス中に適用されます。</li><li>**機能テスト** - 変数は、機能テストステップで使用されます。</li><li>**UI テスト** - 変数は、UI テスト段階で使用されます。</li>&lt;li&lt;**Deploy** – 変数は、デプロイステップで使用されます。 例えば、Edge Delivery Services パイプラインには、この変数を使用します。</li></ul> |
+   | 適用されたステップ | 必須。変数が適用されるパイプラインのステップ：<ul><li>**ビルド** - 変数は、ビルドプロセス中に適用されます。</li><li>**機能テスト** - 変数は、機能テストステップで使用されます。</li><li>**UI テスト** - 変数は、UI テスト段階で使用されます。</li>&lt;li **Deploy** – 変数は、デプロイステップで使用されます。 例えば、Edge Delivery Services パイプラインには、この変数を使用します。</li></ul> |
    | タイプ | 変数がプレーンテキストか、シークレットとして暗号化されているかを選択します。 |
 
    ![変数の追加](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png)
