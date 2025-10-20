@@ -4,10 +4,10 @@ description: コンテンツ作成者のニーズに合わせてユニバーサ�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a72b4b7921a1a379bcd089682c02b0519fe3af8a
+source-git-commit: b32e9b83a761e4f178cddb82b83b31a95a8978f6
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 78%
+source-wordcount: '403'
+ht-degree: 69%
 
 ---
 
@@ -20,69 +20,29 @@ ht-degree: 78%
 >
 >ユニバーサルエディターには多くの[拡張ポイント](/help/implementing/universal-editor/extending.md)も用意されており、プロジェクトのニーズに合わせて機能を拡張できます。
 
-## 公開の無効化 {#disable-publish}
+## Meta設定タグの使用 {#meta-tags}
 
-特定のオーサリングワークフローでは、コンテンツを公開する前に確認する必要があります。 このような場合、どの作成者も公開オプションを使用できません。
+オーサリングワークフローによっては、ユニバーサルエディターの機能の一部を使用する必要があり、他の機能を使用する必要がない場合があります。 このような様々なケースをサポートするために、エディターの特定の機能やボタンを設定または無効にするメタタグを使用できます。
 
-次のメタデータを追加することで、「**公開**」ボタンを完全にアプリ内で抑制できます。
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish"/>
-```
-
-## プレビューへの公開の無効化 {#publish-preview}
-
-オーサリングワークフローによっては、[プレビューサービス](/help/sites-cloud/authoring/sites-console/previewing-content.md)（使用可能な場合）への公開が妨げられることがあります。
-
-次のメタデータを追加することで、公開ウィンドウの「**プレビュー**」オプションを完全にアプリ内で抑制できます。
+ページの「`<head>`」セクションでこのタグを使用して、1 つ以上の機能を無効にします。
 
 ```html
-<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+<meta name="urn:adobe:aue:config:disable" content="..." />
 ```
 
-## ライブへの公開の無効化 {#publish-live}
+複数の機能を無効にする場合は、値のコンマ区切りリストを指定します。
 
-オーサリングワークフローによっては、ライブサービスへの公開が妨げられることがあります。
+メタタグで無効にできる機能など、`content` でサポートされている値を以下に示します。
 
-したがって、次のメタデータを追加することで、アプリ内で公開ウィンドウの **ライブ** オプション全体を抑制できます。
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
-```
-
-## 非公開の無効化 {#unpublish}
-
-コンテンツを非公開にする前に、承認プロセスが必要なオーサリングワークフローもあります。 このような状況では、どの作成者も非公開のオプションを使用できません。
-
-したがって、次のメタデータを追加することで、アプリ内で「**非公開**」ボタン全体を抑制できます。
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
-```
-
-## 「ページを開く」の無効化 {#open-page}
-
-次のメタデータを追加することで、「**ページを開く**」ボタンを完全にアプリ内で抑制できます。
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
-```
-
-## 「複製」ボタンの無効化 {#duplicate-button}
-
-オーサリングワークフローによっては、コンテンツ作成者がコンポーネントを複製する機能を制限する必要がある可能性があります。次のメタデータを追加することで、[複製アイコン](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)を無効にすることができます。
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
-```
-
-## コピーと貼り付けの無効化 {#copy-paste}
-
-コンテンツ作成者がコンポーネントをコピーして貼り付ける機能を、オーサリングワークフローによって制限しなければならない場合があります。 [&#x200B; コピー&amp;ペースト」アイコン &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) を無効にするには、次のメタデータを追加します。
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="copy"/>
-```
+| コンテンツの値 | 説明 |
+|---|---|
+| `publish` | [ 公開 ](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) ボタンを無効にします |
+| `publish-live` | ライブ [ 公開 ](/help/sites-cloud/authoring/universal-editor/publishing.md) を無効にする |
+| `publish-preview` | プレビュー公開を無効にする（「プレビューサービス [ が使用可能 ](/help/sites-cloud/authoring/sites-console/previewing-content.md) 場合） |
+| `unpublish` | [ 非公開 ](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) ボタンを無効にします |
+| `copy` | [ コピーボタンと貼り付けボタン ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) を無効にします |
+| `duplicate` | [ 複製 ](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) ボタンを無効にします |
+| `header-open-page` | [ ページを開く ](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) ボタンを無効にします |
 
 ## エンドポイントの変更 {#custom-endpoint}
 
