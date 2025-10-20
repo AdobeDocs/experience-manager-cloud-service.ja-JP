@@ -4,9 +4,9 @@ description: ユニバーサルエディターがプロパティパネルで編�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: efd96f179482dfe1f00bdce35e2824ac5cdf9813
+source-git-commit: 90763049036dbdadaaed93acb088877294f2d750
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1588'
 ht-degree: 98%
 
 ---
@@ -94,7 +94,6 @@ ht-degree: 98%
 | `name` | `string` | データが保存されるプロパティ[またはパス](#nesting) | はい |
 | `label` | `FieldLabel` | フィールドのラベル | はい |
 | `description` | `FieldDescription` | フィールドの説明 | いいえ |
-| `placeholder` | `string` | フィールドのプレースホルダー | いいえ |
 | `value` | `FieldValue` | これはデフォルト値で、プレースホルダーとして機能します。 この値によってコンテンツが更新されることはありません。 これは UI での単なる表現です。 | いいえ |
 | `valueType` | `ValueType` | 標準の検証は次が可能です。`string`、`string[]`、`number`、`date`、`boolean` | いいえ |
 | `required` | `boolean` | 必須フィールドです | いいえ |
