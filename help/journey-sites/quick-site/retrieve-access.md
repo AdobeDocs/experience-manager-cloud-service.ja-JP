@@ -5,12 +5,14 @@ exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
-source-wordcount: '874'
-ht-degree: 100%
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
 
 # Git リポジトリのアクセス情報の取得 {#retrieve-access}
 
@@ -66,7 +68,7 @@ ht-degree: 100%
 
 ## Cloud Manager について {#understanding-cloud-manager}
 
-Cloud Manager を使用すると、クラウド内の AEM を組織で自己管理できるようになります。このサービスには継続的インテグレーションと継続的デリバリー（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。
+Cloud Manager を使用すると、クラウド内の AEM を組織で自己管理できるようになります。このサービスには継続的インテグレーションと継続的配信（CI/CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。
 
 フロントエンド開発者にとって、これは次へのゲートウェイです。
 

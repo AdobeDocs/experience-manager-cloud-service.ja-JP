@@ -5,10 +5,11 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 6ee55bed8ca09470291e0488321732beed7bab42
-workflow-type: ht
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+workflow-type: tm+mt
 source-wordcount: '930'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -76,9 +77,9 @@ AEM では、フロントエンドパイプラインを使用するように既�
 
 ### 静的フロントエンドファイル {#static-files}
 
-フロントエンドパイプライン経由でデプロイされた静的フロントエンドアセットは、デフォルトでは、アドビの事前定義済み静的ドメインから提供されます。
+フロントエンドパイプラインを介してデプロイされた静的フロントエンドアセットは、デフォルトで、Adobeの事前定義済みの静的ドメインから提供されます。
 
-フロントエンドアセットにカスタムドメインが必要な場合は、パブリッシュ層にカスタムドメインをインストールし、Dispatcher を設定して、特定のパス（`/static/` など）をアドビの静的ホスティングの場所にルーティングできます。この方法では、静的アセットのリクエストを適切に転送およびキャッシュするのに、[Dispatcher ルール](https://experienceleague.adobe.com/ja/docs/experience-manager-dispatcher/using/dispatcher)を更新する必要があります。
+フロントエンドアセットにカスタムドメインが必要な場合は、パブリッシュ層にカスタムドメインをインストールし、Dispatcherを設定して、Adobeの静的ホスティングの場所に特定のパス（`/static/` など）をルーティングできます。 この方法では、静的アセットのリクエストを適切に転送およびキャッシュするのに、[Dispatcher ルール](https://experienceleague.adobe.com/ja/docs/experience-manager-dispatcher/using/dispatcher)を更新する必要があります。
 
 カスタムドメインと Dispatcher を設定したら、AEM を設定して、静的ドメインからフロントエンドアセットを提供できます。
 
@@ -97,7 +98,7 @@ AEM では、フロントエンドパイプラインを使用するように既�
    * この値は、必要に応じて手動で上書きすることもできます。
 1. 設定を確認します。
    1. デプロイメント後、ページがカスタムドメインのテーマアーティファクトを正しく参照していることを確認します。
-   1. ブラウザーの開発者ツールを開き、`theme.css` および `theme.js` ファイルのパスを調べて、正しいドメインから読み込まれていることを確認します。
+   1. ブラウザーの開発者ツールを開き、`theme.css` および `theme.js` ファイルパスを調べて、正しいドメインから読み込まれていることを確認します。
 
 その後、サイトのページは、更新された URL からテーマアーティファクトを参照します。次に、Dispatcher はこれらのリソースに対するリクエストを静的ドメインにルーティングします。
 
@@ -105,7 +106,7 @@ AEM では、フロントエンドパイプラインを使用するように既�
 
 フロントエンドパイプライン経由でデプロイする前に、フロントエンドアセットをローカルで開発およびテストする必要がある場合は、次のアプローチを考慮します。
 
-* [Site Theme Builder のプロキシモード](https://github.com/adobe/aem-site-theme-builder?tab=readme-ov-file#proxy)を使用して、テーマアーティファクトをローカルで上書きし、テストします。
+* テーマアーティファクトをテスト用にローカルで上書きするには、[Site Theme Builder のプロキシモード ](https://github.com/adobe/aem-site-theme-builder?tab=readme-ov-file#proxy) を使用します。
 * ローカル開発サーバーからテーマファイルを手動で提供し、`HtmlPageItemsConfig` の `prefixPath` を更新して、ローカルサーバーアドレスと一致させます。
 * テスト中にブラウザーのキャッシュが無効になっていることを確認して、ライブ更新を確認します。
 

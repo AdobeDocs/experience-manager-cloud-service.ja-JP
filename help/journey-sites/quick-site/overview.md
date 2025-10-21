@@ -5,12 +5,14 @@ exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
-source-wordcount: '1020'
-ht-degree: 100%
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
 
 # AEM クイックサイト作成ジャーニー {#quick-site-creation-journey}
 
@@ -40,7 +42,7 @@ AEM クイックサイト作成ツールは、サイト作成に関する開発�
 
 AEM を使用してサイトのビジネスケースを解決する方法をアドビがどのように推奨しているかを理解するには、AEM Sites ジャーニーがその出発点になります。
 
-## 対象読者 {#audience}
+## オーディエンス {#audience}
 
 このジャーニーでは、AEM Sites テーマをカスタマイズするための要件、手順およびアプローチについて説明します。主なオーディエンスは、AEM に関する知識を必要としないフロントエンド開発者です。ただし、プロセス全体を説明するために、このジャーニーには管理者が関与します。管理者は、AEM Sites と Cloud Manager の基本的な知識を持っていることが前提となります。実際には、複数のユーザーが複数の役割を果たすことができ、このジャーニーは、管理者とフロントエンド開発者の両方からの視点をサポートします。
 

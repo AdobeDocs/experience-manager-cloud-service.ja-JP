@@ -5,12 +5,14 @@ exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
-source-wordcount: '776'
-ht-degree: 100%
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
 
 # フロントエンド開発者へのアクセス権の付与 {#grant-fed-access}
 
@@ -82,7 +84,7 @@ Cloud Manager へのアクセス権を付与し、ユーザーにユーザーの
 
    ![チームプロファイルを割り当て](assets/assign-team.png)
 
-1. 「**保存**」を選択すると、「ようこそ」メールが、ユーザーとして追加したフロントエンド開発者に送信されます。
+1. 「**保存**」を選択すると、ウェルカムメールが、ユーザーとして追加したフロントエンド開発者に送信されます。
 
 招待されたフロンドエンド開発者は、ウェルカムメールに記載されているリンクをクリックし、Adobe ID を使用してログインすることで、Cloud Manager にアクセスできます。
 

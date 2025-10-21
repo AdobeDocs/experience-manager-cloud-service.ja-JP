@@ -4,12 +4,14 @@ description: クイックサイト作成ツールでサイトテンプレート�
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
-source-wordcount: '324'
-ht-degree: 100%
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
 
 # サイトのクイック作成とフロントエンドのカスタマイズ {#quick-site-creation}
 

@@ -5,12 +5,14 @@ exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
-source-wordcount: '1485'
-ht-degree: 100%
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
 
 # テンプレートからサイトを作成 {#create-site-from-template}
 
@@ -45,7 +47,7 @@ AEM クイックサイト作成ジャーニーの前のドキュメントであ�
 
 * `files`：UI キット、XD ファイル、およびその他のファイルを含むフォルダー
 * `previews`：サイトテンプレートのスクリーンショットを含むフォルダー
-* `site`：ページテンプレートやページなど、このテンプレートから作成したサイトごとにコピーされるコンテンツのパッケージ。
+* `site`：ページテンプレートやページなど、このテンプレートから作成したサイトごとにコピーされるコンテンツパッケージ。
 * `theme`：CSS や JavaScript など、サイトの外観を変更するためのテンプレートテーマのソース。
 
 テンプレートは、コンテンツ作成者が再利用してサイトをすばやく作成できるため非常に便利です。また、AEM のインストールで複数のテンプレートを使用できるので、様々なビジネスニーズに柔軟に対応できます。

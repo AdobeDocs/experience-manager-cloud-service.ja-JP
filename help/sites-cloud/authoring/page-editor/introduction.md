@@ -5,12 +5,13 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
-workflow-type: ht
-source-wordcount: '1431'
-ht-degree: 100%
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
 
 # AEM ページエディター {#editing-page-content}
 
@@ -48,7 +49,7 @@ AEM ページエディターは、主に次の 3 つのセクションで構成�
 
 [サイドパネル](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)が開きます（または閉じます）。このパネルには、アセットブラウザー、コンポーネントブラウザー、コンテンツツリーが含まれています。
 
-![サイドパネルの切り替え](assets/page-editor-side-panel-toggle.png)
+![サイドパネルの切替スイッチ](assets/page-editor-side-panel-toggle.png)
 
 #### ページ情報 {#page-information}
 
@@ -223,7 +224,7 @@ AEM では、他のユーザーによるコンテンツの編集を防ぐため�
 1. **ページ情報**&#x200B;アイコンを選択して、メニューを開きます。
 1. 「**ページをロック**」オプションを選択します。
 
-ロックすると、ページエディターのツールバーにロック記号が表示されます。
+ロックすると、ページエディターのツールバーに鍵マークシンボルが表示されます。
 
 ![ロックされたページの例](assets/page-editor-editing-locked-page.png)
 

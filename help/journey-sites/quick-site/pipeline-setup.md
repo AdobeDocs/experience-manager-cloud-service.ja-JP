@@ -5,12 +5,14 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
-source-wordcount: '949'
-ht-degree: 100%
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
 
 # パイプラインの設定 {#set-up-your-pipeline}
 
@@ -50,7 +52,7 @@ AEM クイックサイト作成ジャーニーの前のドキュメントであ�
 
 フロントエンド開発では、AEM サイトのスタイルを定義する JavaScript、CSS、静的リソースのカスタマイズが必要になります。フロントエンド開発者は、独自のローカル環境で作業して、これらのカスタマイズを行います。準備が整うと、変更は AEM Git リポジトリにコミットされます。ただし、ソースコードにのみコミットされます。まだライブではありません。
 
-フロントエンドパイプラインは、これらのコミット済みのカスタマイズを取得し、AEM 環境（通常は実稼動環境または非実稼動環境）にデプロイします。
+フロントエンドパイプラインは、これらのコミット済みのカスタマイズを取得し、AEM 環境（通常は本番環境または非本番環境）にデプロイします。
 
 このようにして、フロントエンド開発は、独自のデプロイメントパイプラインを持つ AEM 上のフルスタックバックエンド開発とは別に、それと並行して動作できます。
 

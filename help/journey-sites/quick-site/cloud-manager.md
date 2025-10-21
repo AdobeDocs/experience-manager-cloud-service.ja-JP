@@ -5,12 +5,14 @@ exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
-source-wordcount: '1113'
-ht-degree: 100%
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
 
 # Cloud Manager とクイックサイト作成ワークフローについて {#understand-cloud-manager}
 
@@ -109,7 +111,7 @@ Cloud Manager は、AEM as a Cloud Service の必須コンポーネントであ�
 1. Cloud Manager 管理者は、フロントエンド開発者に、カスタマイズをコミットできる AEM Git リポジトリへのアクセス権を付与します。
 1. フロントエンド開発者は、Git およびパイプラインにアクセスするためのアクセス資格情報を取得します。
 1. フロントエンド開発者は、テーマをカスタマイズし、プロキシを使用してサイトの実際のコンテンツを使用したテストを行い、その変更を Git リポジトリにコミットします。
-1. フロントエンド開発者は、パイプラインを実行して、テーマのカスタマイズをプログラムの実稼動環境にデプロイします。
+1. フロントエンド開発者は、パイプラインを実行して、テーマのカスタマイズをプログラムの本番環境にデプロイします。
 
 ![クイックサイト作成フロー](assets/qsc-flow.png)
 

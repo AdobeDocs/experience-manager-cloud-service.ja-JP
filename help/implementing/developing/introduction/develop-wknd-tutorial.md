@@ -4,12 +4,14 @@ description: AEM の開発が初めての方や、最新のベストプラクテ
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
-source-wordcount: '202'
-ht-degree: 100%
+recommendations: display, noCatalog
+source-git-commit: 8015fba9f4c42615ac311c0a04442948389637fc
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
 
 # AEM Sites の開発の手引き - WKND チュートリアル{#getting-started-developing-aem-sites-wknd-tutorial}
 
