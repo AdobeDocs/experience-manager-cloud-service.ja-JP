@@ -449,7 +449,7 @@ data:
 
 ### カスタムドメインのAEM静的層へのプロキシ化 {#proxy-custom-domain-static}
 
-オリジンセレクターを使用すると、[ フロントエンドパイプライン ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) を使用してデプロイされたAEM静的コンテンツにAEM パブリッシュトラフィックをルーティングできます。 使用例には、ページと同じドメイン（例：example.com/static）または明示的に異なるドメイン（例：static.example.com）での静的リソースの提供が含まれます。
+オリジンセレクターを使用すると、[&#x200B; フロントエンドパイプライン &#x200B;](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) を使用してデプロイされたAEM静的コンテンツにAEM パブリッシュトラフィックをルーティングできます。 使用例には、ページと同じドメイン（例：example.com/static）または明示的に異なるドメイン（例：static.example.com）での静的リソースの提供が含まれます。
 
 これを実現できるオリジンセレクタールールの例を以下に示します。
 
