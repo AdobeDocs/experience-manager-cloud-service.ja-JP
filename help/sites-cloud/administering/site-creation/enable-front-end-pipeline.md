@@ -106,7 +106,7 @@ AEM では、フロントエンドパイプラインを使用するように既�
 
 フロントエンドパイプライン経由でデプロイする前に、フロントエンドアセットをローカルで開発およびテストする必要がある場合は、次のアプローチを考慮します。
 
-* テーマアーティファクトをテスト用にローカルで上書きするには、[Site Theme Builder のプロキシモード ](https://github.com/adobe/aem-site-theme-builder?tab=readme-ov-file#proxy) を使用します。
+* テーマアーティファクトをテスト用にローカルで上書きするには、[Site Theme Builder のプロキシモード &#x200B;](https://github.com/adobe/aem-site-theme-builder?tab=readme-ov-file#proxy) を使用します。
 * ローカル開発サーバーからテーマファイルを手動で提供し、`HtmlPageItemsConfig` の `prefixPath` を更新して、ローカルサーバーアドレスと一致させます。
 * テスト中にブラウザーのキャッシュが無効になっていることを確認して、ライブ更新を確認します。
 

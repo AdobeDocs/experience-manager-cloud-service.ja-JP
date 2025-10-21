@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 概要 {#overview}
 
-サイトパネルでは、公開配信を使用した従来の AEM オーサリングプロジェクトのサイトのテーマとテンプレートのリソースを管理できます。[](/help/sites-cloud/authoring/author-publish.md)コンテンツツリーパネル、参照パネル、タイムラインパネルなどの[他のパネルと同様に](/help/sites-cloud/authoring/sites-console/console-side-panel.md)、サイトパネルは、Sites コンソールの左端のパネルとして表示され、選択した項目に関する情報を示します。他のパネルとは異なり、サイトパネルはサイトルートにのみ適用されます。
+サイトパネルでは、公開配信を使用した従来の AEM オーサリングプロジェクトのサイトのテーマとテンプレートのリソースを管理できます。[&#128279;](/help/sites-cloud/authoring/author-publish.md)コンテンツツリーパネル、参照パネル、タイムラインパネルなどの[他のパネルと同様に](/help/sites-cloud/authoring/sites-console/console-side-panel.md)、サイトパネルは、Sites コンソールの左端のパネルとして表示され、選択した項目に関する情報を示します。他のパネルとは異なり、サイトパネルはサイトルートにのみ適用されます。
 
 サイトパネルは、次のように、サイトのテーマおよびテンプレートに関連する情報の管理に使用します。
 
