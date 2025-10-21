@@ -4,10 +4,10 @@ description: 設定ファイルでルールとフィルターを宣言し、Clou
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 992f9377133dd7ca3bd7b169c0a29e76baadde7e
+source-git-commit: a8c313c3b1324e4195c2aeb70a5a56e4ef66fcf3
 workflow-type: tm+mt
-source-wordcount: '1630'
-ht-degree: 96%
+source-wordcount: '1698'
+ht-degree: 92%
 
 ---
 
@@ -408,6 +408,8 @@ data:
           type: selectOrigin
           originName: example-com
           # skipCache: true
+          # headers:
+          #   Authorization: ${{AUTH_TOKEN}}
     origins:
       - name: example-com
         domain: www.example.com
@@ -423,11 +425,13 @@ data:
 次の表に、使用可能なアクションを示します。
 
 | 名前 | プロパティ | 意味 |
-|-----------|--------------------------|-------------|
+|---------------------|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **selectOrigin** | originName | 定義された接触チャネルの 1 つの名前。 |
-|     | skipCache（オプション、デフォルトは false） | このルールに一致するリクエストにキャッシュを使用するかどうかを示すフラグ。デフォルトでは、応答は応答キャッシュヘッダー（例：Cache-Control または Expires）に従ってキャッシュされます |
+|                     | skipCache（オプション、デフォルトは false） | このルールに一致するリクエストにキャッシュを使用するかどうかを示すフラグ。デフォルトでは、応答は応答キャッシュヘッダー（例：Cache-Control または Expires）に従ってキャッシュされます |
+|                     | ヘッダー（オプション、デフォルトは `{}`） | ルールがトリガーされたときに選択されたバックエンドに送信される追加の HTTP ヘッダーを含むキーと値のペア。 ヘッダー名に対応するキーとヘッダー値に対応する値 |
 | **selectAemOrigin** | originName | 定義済みのAEM オリジンの 1 つの名前（サポートされている値：`static`）。 |
-|     | skipCache（オプション、デフォルトは false） | このルールに一致するリクエストにキャッシュを使用するかどうかを示すフラグ。デフォルトでは、応答は応答キャッシュヘッダー（例：Cache-Control または Expires）に従ってキャッシュされます |
+|                     | skipCache（オプション、デフォルトは false） | このルールに一致するリクエストにキャッシュを使用するかどうかを示すフラグ。デフォルトでは、応答は応答キャッシュヘッダー（例：Cache-Control または Expires）に従ってキャッシュされます |
+|                     | ヘッダー（オプション、デフォルトは `{}`） | ルールがトリガーされたときに選択されたバックエンドに送信される追加の HTTP ヘッダーを含むキーと値のペア。 ヘッダー名に対応するキーとヘッダー値に対応する値 |
 
 **接触チャネル**
 
@@ -445,7 +449,7 @@ data:
 
 ### カスタムドメインのAEM静的層へのプロキシ化 {#proxy-custom-domain-static}
 
-オリジンセレクターを使用すると、[&#x200B; フロントエンドパイプライン &#x200B;](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) を使用してデプロイされたAEM静的コンテンツにAEM パブリッシュトラフィックをルーティングできます。 使用例には、ページと同じドメイン（例：example.com/static）または明示的に異なるドメイン（例：static.example.com）での静的リソースの提供が含まれます。
+オリジンセレクターを使用すると、[ フロントエンドパイプライン ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) を使用してデプロイされたAEM静的コンテンツにAEM パブリッシュトラフィックをルーティングできます。 使用例には、ページと同じドメイン（例：example.com/static）または明示的に異なるドメイン（例：static.example.com）での静的リソースの提供が含まれます。
 
 これを実現できるオリジンセレクタールールの例を以下に示します。
 
