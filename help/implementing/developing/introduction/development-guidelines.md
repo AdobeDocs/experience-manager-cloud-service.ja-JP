@@ -4,10 +4,10 @@ description: AEM as a Cloud Service での開発に関するガイドライン�
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: a352261034188cc66a0bc7f2472ef8340c778c13
 workflow-type: tm+mt
-source-wordcount: '2770'
-ht-degree: 100%
+source-wordcount: '2768'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >id="development_guidelines"
 >title="AEM as a Cloud Service の開発ガイドライン"
 >abstract="AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスでの AEM および AMS での AEM との重要な違いについて説明します。"
->additional-url="https://video.tv.adobe.com/v/345904/?captions=jpn" text="パッケージ構造のデモ"
+>additional-url="https://video.tv.adobe.com/v/330555/?captions=jpn" text="パッケージ構造のデモ"
 
 このドキュメントでは、AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスおよび AMS の AEM とは異なる重要な方法について説明します。
 
@@ -111,11 +111,11 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 ローカル開発の場合、ログエントリは `/crx-quickstart/logs` フォルダーのローカルファイルに書き込まれます。
 
-クラウド環境では、開発者は Cloud Manager を使用してログをダウンロードするか、コマンドラインツールを使用してログを追跡することができます。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+クラウド環境では、開発者は Cloud Manager を使用してログをダウンロードするか、コマンドラインツールを使用してログを追跡することができます。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **ログレベルの設定**
 
-クラウド環境のログレベルを変更するには、Sling Logging OSGi 設定を変更した後、完全に再デプロイする必要があります。これは即座には行われないので、大量のトラフィックを受け取る実稼動環境で詳細なログを有効にする場合は注意が必要です。今後、ログレベルをより迅速に変更するメカニズムが提供される可能性があります。
+クラウド環境のログレベルを変更するには、Sling Logging OSGi 設定を変更した後、完全に再デプロイする必要があります。これは即座には行われないので、大量のトラフィックを受け取る本番環境で詳細なログを有効にする場合は注意が必要です。今後、ログレベルをより迅速に変更するメカニズムが提供される可能性があります。
 
 >[!NOTE]
 >
@@ -189,7 +189,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 代わりに、AEM as a Cloud Service Developer Console からリポジトリブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対してリポジトリへの読み取り専用ビューを提供できます。詳しくは、[リポジトリブラウザー](/help/implementing/developing/tools/repository-browser.md)を参照してください。
 
-AEM as a Cloud Service 開発者環境をデバッグするための一連のツールは、RDE 環境、開発環境、ステージ環境、実稼動環境の AEM as a Cloud Service Developer Console で利用できます。URL は、次のようにオーサーサービス URL またはパブリッシュサービス URL を調整して決定できます。
+AEM as a Cloud Service 開発者環境をデバッグするための一連のツールは、RDE 環境、開発環境、ステージ環境、本番環境の AEM as a Cloud Service Developer Console で利用できます。URL は、次のようにオーサーサービス URL またはパブリッシュサービス URL を調整して決定できます。
 
 `https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -219,7 +219,7 @@ AEM as a Cloud Service 開発者環境をデバッグするための一連のツ
 
 ### パフォーマンスの監視 {#performance-monitoring}
 
-アドビはアプリケーションのパフォーマンスを監視し、劣化が観察された場合に対処します。現時点では、適用指標を確認できません。
+アドビはアプリケーションのパフォーマンスを監視し、劣化が観察された場合に対処します。現在、アプリケーション指標は観測できません。
 
 ## メールの送信 {#sending-email}
 
@@ -247,7 +247,7 @@ AEM 内のメールは、[Day CQ Mail Service OSGi](https://experienceleague.ado
 
 メールの設定について詳しくは、 [AEM 6.5 ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja) を参照してください。AEM as a Cloud Service の場合は、`com.day.cq.mailer.DefaultMailService OSGI` サービスへの次のような調整が必要になります。
 
-* SMTP サーバーのホスト名を $[env:AEM_PROXY_HOST;default=proxy.tunnel] に設定する必要があります
+* SMTP サーバーのホスト名を$[env:AEM_PROXY_HOST;default=proxy.tunnel に設定する必要があります ]
 * SMTP サーバーポートは、高度なネットワーク機能を設定する際に、API 呼び出しで使用される portForwards パラメーターに設定された元のプロキシポートの値に設定してください。例えば、（465 ではなく）30465 などとします。
 
 SMTP サーバーポートには、高度なネットワーク設定時に API 呼び出しで使用される portForwards パラメーターに設定された `portDest` 値を設定する必要があります。`portOrig` 値は、30000 ～ 30999 の必須範囲内の意味のある値である必要があります。例えば、SMTP サーバーポートが 465 の場合、ポート 30465 を `portOrig` の値として使用します。
