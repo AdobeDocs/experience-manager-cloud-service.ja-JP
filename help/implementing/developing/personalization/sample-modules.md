@@ -4,7 +4,7 @@ description: ContextHub には、ソリューションで使用できるいく�
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 100%
@@ -40,7 +40,7 @@ contexthub.base UI モジュールタイプは、他のすべての UI モジュ
 JSON 形式の JavaScript オブジェクトを使用して、contexthub.base UI モジュールを設定します。UI モジュールの機能を設定するには、次のいずれかのプロパティを含めます。
 
 * **image：**&#x200B;アイコンとして表示する画像への URL。
-* **icon：** [Coral UI アイコン](https://helpx.adobe.com/jp/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)クラスの名前。icon プロパティと image プロパティの両方に値を指定した場合は、image が使用されます。
+* **icon：** [Coral UI アイコン](https://opensource.adobe.com/coral-spectrum/examples/#icon)クラスの名前。icon プロパティと image プロパティの両方に値を指定した場合は、image が使用されます。
 * **title：** UI モジュールのタイトル。タイトルは、ポインターを UI モジュールアイコンに合わせると表示されます。
 * **fullscreen：** UI モジュールが全画面モードをサポートするかどうかを示すブール値。全画面をサポートする場合は `true`、全画面モードを許可しない場合は `false` を使用します。
 * **template：** ContextHub のツールバーにレンダリングするコンテンツを指定する [Handlebars](https://handlebarsjs.com/) テンプレート。最大 2 つの `<p>` タグを使用します。

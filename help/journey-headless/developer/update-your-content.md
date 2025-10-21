@@ -5,8 +5,8 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments, GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
-workflow-type: ht
+source-git-commit: 8a3ee333a0bd5904c43c424967a7b9c752fd38c2
+workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 100%
 
@@ -71,8 +71,8 @@ AEM ヘッドレスジャーニーを続けるには、[すべてをまとめる
 * [AEM Assets HTTP API での コンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)
 * [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/overview.md)
 * [AEM コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
-* [CORS／AEM の説明](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
-* [ビデオ - AEM を使用した CORS 向けの開発](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+* [CORS／AEM の説明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ja)
+* [ビデオ - AEM を使用した CORS 向けの開発](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=ja)
 * [ヘッドレス CMS としての AEM の概要](/help/headless/introduction.md)
 * [AEM 開発者ポータル](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
 * [AEM のヘッドレスに関するチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)

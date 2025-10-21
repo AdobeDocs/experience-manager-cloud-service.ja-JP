@@ -5,10 +5,10 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
-workflow-type: ht
+source-git-commit: 8a3ee333a0bd5904c43c424967a7b9c752fd38c2
+workflow-type: tm+mt
 source-wordcount: '1925'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 100%
 >
 >[元のエディター](/help/assets/content-fragments/content-fragments-variations.md)を使用するには、まず新しいエディターを開いてから、**新しいエディター**&#x200B;のスイッチをアクティベート解除します。
 >
->どちらのエディターも、上部のツールバーに切り替えスイッチを使用して、他のエディターにすばやくアクセスできます。
+>どちらのエディターも、上部のツールバーに切替スイッチを使用して、他のエディターに素早くアクセスできます。
 
 ## コンテンツフラグメントの作成 {#creating-content-fragments}
 
@@ -136,7 +136,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->これらの多くは、[Assets](/help/assets/manage-digital-assets.md) や [AEM デスクトップアプリケーション](https://helpx.adobe.com/jp/experience-manager/desktop-app/aem-desktop-app.html)に対する標準的なアクションです。
+>これらの多くは、[Assets](/help/assets/manage-digital-assets.md) や [AEM デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html)に対する標準的なアクションです。
 
 ## フラグメントエディターを開く {#opening-the-fragment-editor}
 

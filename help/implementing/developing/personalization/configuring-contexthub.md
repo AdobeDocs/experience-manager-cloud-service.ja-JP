@@ -4,7 +4,7 @@ description: コンテキストデータを保存、操作、表示するため�
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 100%
@@ -39,7 +39,7 @@ UI モードは、ツールバーの左側に一連のアイコンとして表�
 
 ![ContextHub ツールバー](assets/contexthub-toolbar.png)
 
-アイコンは、[Coral UI アイコンライブラリ](https://helpx.adobe.com/jp/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)からの参照です。
+アイコンは、[Coral UI アイコンライブラリ](https://opensource.adobe.com/coral-spectrum/examples/#icon)からの参照です。
 
 ### UI モードの追加 {#adding-a-ui-mode}
 
@@ -55,7 +55,7 @@ UI モードを追加すると、関連する ContextHub モジュールをグ�
 1. 次のプロパティの値を指定します。
 
    * UI モードのタイトル：UI モードを識別するタイトル。
-   * モードアイコン：使用する [Coral UI アイコン](https://helpx.adobe.com/jp/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)のセレクター（例：`coral-Icon--user`）。
+   * モードアイコン：使用する [Coral UI アイコン](https://opensource.adobe.com/coral-spectrum/examples/#icon)のセレクター（例：`coral-Icon--user`）。
    * 有効：ContextHub ツールバーに UI モードを表示する場合に選択します
 
 1. 「保存」を選択します。
