@@ -36,13 +36,13 @@ ht-degree: 67%
 
 | コンテンツの値 | 説明 |
 |---|---|
-| `publish` | すべての [ 公開 ](/help/sites-cloud/authoring/universal-editor/publishing.md) 機能（[ 公開ボタン ](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) および [ 非公開ボタン）を無効にする ](/help/sites-cloud/authoring/universal-editor/navigation.md#ellipsis) |
-| `publish-live` | ライブ [ 公開 ](/help/sites-cloud/authoring/universal-editor/publishing.md) を無効にする |
-| `publish-preview` | プレビュー公開を無効にする（「プレビューサービス [ が使用可能 ](/help/sites-cloud/authoring/sites-console/previewing-content.md) 場合） |
-| `unpublish` | [ 非公開ボタン ](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) （[ プレビュー機能 ](/help/release-notes/universal-editor/preview.md)）を無効にします |
-| `copy` | [ コピーボタンと貼り付けボタン ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) を無効にします |
-| `duplicate` | [ 複製 ](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) ボタンを無効にします |
-| `header-open-page` | [ ページを開く ](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) ボタンを無効にします |
+| `publish` | すべての [&#x200B; 公開 &#x200B;](/help/sites-cloud/authoring/universal-editor/publishing.md) 機能（[&#x200B; 公開ボタン &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) および [&#x200B; 非公開ボタン）を無効にする &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#ellipsis) |
+| `publish-live` | ライブ [&#x200B; 公開 &#x200B;](/help/sites-cloud/authoring/universal-editor/publishing.md) を無効にする |
+| `publish-preview` | プレビュー公開を無効にする（「プレビューサービス [&#x200B; が使用可能 &#x200B;](/help/sites-cloud/authoring/sites-console/previewing-content.md) 場合） |
+| `unpublish` | [&#x200B; 非公開ボタン &#x200B;](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) （[&#x200B; プレビュー機能 &#x200B;](/help/release-notes/universal-editor/preview.md)）を無効にします |
+| `copy` | [&#x200B; コピーボタンと貼り付けボタン &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) を無効にします |
+| `duplicate` | [&#x200B; 複製 &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) ボタンを無効にします |
+| `header-open-page` | [&#x200B; ページを開く &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) ボタンを無効にします |
 
 ## エンドポイントの変更 {#custom-endpoint}
 
