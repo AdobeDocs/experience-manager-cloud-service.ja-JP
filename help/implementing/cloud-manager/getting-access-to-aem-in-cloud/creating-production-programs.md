@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8ca3546725f2a95d233497a899afe3b4f6036775
+source-git-commit: f99a0bfee76c7efd6f3e441db67d30f8a52707e5
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 95%
 1. **ソリューションとアドオン**&#x200B;リストボックスで、プログラムに含めるソリューションを 1 つ以上選択します。
 
    * 利用可能な様々なソリューションに対して 1 つ以上のプログラムが必要かどうかが不明な場合は、最も興味のあるプログラムを選択します。後で[プログラムを編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)することで、追加のソリューションをアクティブ化することができます。プログラム設定の推奨事項について詳しくは、[実稼動プログラムの概要ドキュメント](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)を参照してください。
-   * プログラムを作成するには、少なくとも 1 つのソリューションを選択する必要があります。 例えば、デジタルエクスペリエンスを最適化する完全に管理された CDN ソリューションとして **0&rbrace;Edge Delivery Services&rbrace; を選択できます。**&#x200B;詳しくは、[Edge Delivery Services を使用した Cloud Manager プロジェクトの配信について](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)を参照してください。
+   * プログラムを作成するには、1 つ以上のソリューションを選択する必要があります。例えば、デジタルエクスペリエンスを最適化する完全に管理された CDN ソリューションとして **Edge Delivery Services** を選択できます。詳しくは、[Edge Delivery Services を使用した Cloud Manager プロジェクトの配信について](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)を参照してください。
 
    ![ソリューションの選択](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/add-production-program-with-edge-v2.png)
 
@@ -59,7 +59,7 @@ ht-degree: 95%
 
 
 
-   * ソリューション名の左側にある ![&#x200B; 山形サイズ 300 アイコン &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) をクリックして、オプションのアドオンを表示します。<!-- such as the **Commerce** add-on option under **Sites**. -->
+   * ソリューション名の左側にある ![山形サイズ 300 アイコン](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) をクリックして、オプションのアドオンを表示します。<!-- such as the **Commerce** add-on option under **Sites**. -->
 
    ![アドオンを選択](assets/setup-prod-commerce.png)
 
@@ -90,7 +90,7 @@ ht-degree: 95%
 
 アドビの HIPAA 準拠の WAF-DDOS（web アプリケーションファイアウォール - 分散型サービス拒否）により、脆弱性から保護するための多層アプローチの一環としてクラウドベースのセキュリティが促進されます。
 
-* **HIPAA** - このオプションは、アドビの HIPPA 対応ソリューションの実装を有効にします。
+* **HIPAA** – このオプションを使用すると、Adobeの HIPAA 対応ソリューションを実装できます。
    * アドビの HIPAA 対応ソリューションの実装について詳しくは、[こちら](https://www.adobe.com/jp/trust/compliance/hipaa-ready.html)を参照してください。
    * プログラムの作成後に HIPAA を有効または無効にすることはできません。
 * **WAF-DDOS 保護** - このオプションは、ルールを介して web アプリケーションファイアウォールを有効にし、アプリケーションを保護します。
@@ -103,11 +103,11 @@ ht-degree: 95%
 
 ![SLA オプション](assets/create-production-program-sla.png)
 
-Sites および Forms は、標準の 99.9％のサービスレベル契約（SLA）を提供しています。「**99.99％のサービスレベル契約**」オプションは、Sites、Forms、Edge Delivery Services または 3 つすべてに関して、実稼動環境で 99.99％の最小稼動時間を保証します。
+Sites および Forms は、標準の 99.9％のサービスレベル契約（SLA）を提供しています。「**99.99％のサービスレベル契約**」オプションは、Sites、Forms、Edge Delivery Services または 3 つすべてに関して、本番環境で 99.99％の最小稼動時間を保証します。
 
 99.99％の SLA には、可用性の向上や待ち時間の短縮を含むメリットがあります。
 
-Sites と Forms のプログラムの場合、99.99％の SLA では、プログラムの実稼動環境に[追加の公開地域](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)を適用する必要があります。99.99％の SLA を有効にする[要件](#sla-requirements)が満たされたら、[フルスタックパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)を実行してアクティベートする必要があります。
+Sites と Forms のプログラムの場合、99.99％の SLA では、プログラムの本番環境に[追加の公開地域](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)を適用する必要があります。99.99％の SLA を有効にする[要件](#sla-requirements)が満たされたら、[フルスタックパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)を実行してアクティベートする必要があります。
 
 Edge Delivery Services の場合、プログラムで 99.99％の SLA ライセンスを設定する以外に要件は&#x200B;*ありません*。
 
@@ -117,7 +117,7 @@ Edge Delivery Services の場合、プログラムで 99.99％の SLA ライセ�
 
 * 99.99％の SLA をプログラムに適用する際に、組織は 99.99％の SLA と追加の公開地域の使用権限を使用できる必要があります。
 * Cloud Manager では、99.99％の SLA をプログラムに適用する前に、未使用の[追加の公開地域](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)の使用権限が使用できることを確認します。
-* プログラムを編集する際、1 つ以上の追加の公開地域がある実稼動環境が既に含まれている場合、Cloud Manager では 99.99％の SLA 使用権限が使用可能かどうかのみを確認します。
+* プログラムを編集する際、1 つ以上の追加の公開地域がある本番環境が既に含まれている場合、Cloud Manager では 99.99％の SLA 使用権限が使用可能かどうかのみを確認します。
 * 99.99％の SLA とレポートのアクティベーションの場合は、[実稼動環境／ステージ環境](/help/implementing/cloud-manager/manage-environments.md#adding-environments)が作成され、1 つ以上の追加の公開地域が実稼動環境／ステージ環境に適用されている必要があります。
    * [高度なネットワーク](/help/security/configuring-advanced-networking.md)を使用している場合は、地域に障害が発生した場合でも接続を維持できるように、[新しい環境への複数の公開地域の追加](/help/implementing/cloud-manager/manage-environments.md#adding-regions)ドキュメントで推奨事項を必ず確認してください。
 * 99.99％の SLA プログラムには、常に 1 つ以上の公開地域を含める必要があります。ユーザーは、最後に残っている追加の公開地域をプログラムから削除することは許可されていません。
