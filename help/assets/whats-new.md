@@ -3,10 +3,10 @@ title: コンテンツハブの新機能
 description: 最近ローンチされたコンテンツハブの機能の一部について詳しく説明します
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 62ac097fca0142265f2e1ef28117619d59045e6c
-workflow-type: ht
-source-wordcount: '699'
-ht-degree: 100%
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+workflow-type: tm+mt
+source-wordcount: '808'
+ht-degree: 88%
 
 ---
 
@@ -24,7 +24,21 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-コンテンツハブ機能リリース（2025.8.0）のリリース日は、2025年8月28日（PT）（AEM as a Cloud Service リリースと同じ）です。次回の機能リリース（2025.9.0）は、2025年9月25日（PT）に予定されています。
+コンテンツハブ機能リリース（2025.9.0）のリリース日は、2025年9月25日（PT）（AEM as a Cloud Service リリースと同じ）です。次回の機能リリース（2025.10.0）は、2025年10月30日（PT）に予定されています。
+
+## 9 月リリースの機能 {#september-release-features}
+
+**コレクションをお気に入りに登録**
+
+Content Hubでコレクションをお気に入りに登録して、整理と取得を簡単にしました。 追加すると、お気に入りのコレクションをContent Hub ホームページの **[!UICONTROL お気に入り]** タブから簡単に使用できます。
+
+**クイックアクセス用にコレクションをピン留め**
+
+Content Hub管理者は、クイックアクセス用にContent Hubでコレクションをピン留めできるようになりました。 ピン留めされたコレクションは、コレクションホームページの専用の **[!UICONTROL ピン留め]** セクションに表示されるので、重要なコレクションを手の届くところに簡単に保持できます。
+
+>[!IMPORTANT]
+>
+>これらの機能は、限定提供（LA）機能として利用できます。 [アドビカスタマーサポートケースを作成および送信](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)し、デプロイメントで有効にすることができます。
 
 ## 8月リリースの機能 {#august-release-features}
 

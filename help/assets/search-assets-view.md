@@ -4,9 +4,9 @@ description: 詳しくは、AEM Assets ビューでアセットを検索およ�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 8136083b9154704b93726ceefaed9f3a3340beef
-workflow-type: ht
-source-wordcount: '2277'
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+workflow-type: tm+mt
+source-wordcount: '2255'
 ht-degree: 100%
 
 ---
@@ -136,8 +136,6 @@ ht-degree: 100%
 * **同義語の理解**：関連する用語やフレーズの結果を提供するので、ユーザーは正しいキーワードを推測する必要がありません。
 
 * **コンテキスト対応検索**：単語だけでなく、クエリの背後にある意図を認識します。
-
-* **テキストベースのプロンプトに基づく検索**：Experience Manager Assets では、コンテンツにフィルターを適用し、シンプルなテキストベースのプロンプトに基づいて適切な結果を自動的に表示します。
 
 >[!IMPORTANT]
 >
@@ -377,6 +375,6 @@ Experience Manager Assets でコンテキスト検索にアクセスするには
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」 ![ページを編集](assets/do-not-localize/edit-page.png) または「[!UICONTROL イシューを記録]」 ![GitHub イシューを作成](assets/do-not-localize/github-issue.png) を使用してドキュメントのフィードバックを提供する。
 
-* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&lang=ja#support)に問い合わせる
 
 
