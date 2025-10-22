@@ -5,11 +5,11 @@ feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-recommendations: display, noCatalog
-source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+recommendations: noDisplay, noCatalog
+source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '607'
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 概要 {#overview}
 
-サイトパネルでは、公開配信を使用した従来の AEM オーサリングプロジェクトのサイトのテーマとテンプレートのリソースを管理できます。[&#128279;](/help/sites-cloud/authoring/author-publish.md)コンテンツツリーパネル、参照パネル、タイムラインパネルなどの[他のパネルと同様に](/help/sites-cloud/authoring/sites-console/console-side-panel.md)、サイトパネルは、Sites コンソールの左端のパネルとして表示され、選択した項目に関する情報を示します。他のパネルとは異なり、サイトパネルはサイトルートにのみ適用されます。
+サイトパネルでは、公開配信を使用した従来の AEM オーサリングプロジェクトのサイトのテーマとテンプレートのリソースを管理できます。[](/help/sites-cloud/authoring/author-publish.md)コンテンツツリーパネル、参照パネル、タイムラインパネルなどの[他のパネルと同様に](/help/sites-cloud/authoring/sites-console/console-side-panel.md)、サイトパネルは、Sites コンソールの左端のパネルとして表示され、選択した項目に関する情報を示します。他のパネルとは異なり、サイトパネルはサイトルートにのみ適用されます。
 
 サイトパネルは、次のように、サイトのテーマおよびテンプレートに関連する情報の管理に使用します。
 
