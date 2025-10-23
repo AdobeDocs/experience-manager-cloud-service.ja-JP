@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service の AI について
 feature: Generative AI, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: 41dd61425ce3b7536ee805580f3841e32e40ee99
+source-git-commit: a08abfb5fc156a9f480b0b4ea1003e7597126347
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 84%
+source-wordcount: '408'
+ht-degree: 82%
 
 ---
 
@@ -17,7 +17,7 @@ AI は、Adobe Experience Manager as a Cloud Serviceの不可欠な構成要素�
 
 ## AI アシスタント {#ai-assistant}
 
-Adobe Experience Managerの [AI アシスタント &#x200B;](/help/implementing/cloud-manager/ai-assistant-in-aem.md) は、AEM関連のクエリに対する回答の検索を合理化するように設計された対話型インターフェイスを提供します。
+Adobe Experience Managerの [AI アシスタント ](/help/implementing/cloud-manager/ai-assistant-in-aem.md) は、AEM関連のクエリに対する回答の検索を合理化するように設計された対話型インターフェイスを提供します。
 
 ## AEMのジェネレーティブ AI {#generative-ai-in-aem}
 
@@ -56,7 +56,11 @@ AEM 全体における生成 AI の使用用途は、以下のとおりです。
 
 ## その他の情報 {#further-information}
 
+次のような多くのリソースを利用できます。
+
 * [Adobe AI の概要](https://www.adobe.com/ai/overview.html?lang=ja)
+
+* [Adobeの責任ある AI](https://www.adobe.com/trust/responsible-ai.html)
 
 * [Experience Cloud 製品の生成 AI](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/generative-ai)
 
