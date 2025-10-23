@@ -26,10 +26,10 @@ ht-degree: 63%
 
 ## 新機能 {#what-is-new}
 
-* ブラウザーのタブ間での [ コピーと貼り付け ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) がサポートされるようになりました。
+* ブラウザーのタブ間での [&#x200B; コピーと貼り付け &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) がサポートされるようになりました。
    * 同時に開いているタブ間に限定されます。
    * コンテンツをコピーしてから新しいタブを開くことは、サポートされていません。
-* [meta タグ ](/help/implementing/universal-editor/customizing.md#meta-tags) を使用して「非公開」ボタンを無効にできるようになりました。
+* [meta タグ &#x200B;](/help/implementing/universal-editor/customizing.md#meta-tags) を使用して「非公開」ボタンを無効にできるようになりました。
 
 ## 早期導入機能 {#early-adopter}
 

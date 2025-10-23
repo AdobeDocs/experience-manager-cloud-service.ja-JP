@@ -302,7 +302,7 @@ Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接
 1. オーサーインスタンスにログインし、アダプティブフォームを選択します。
 1. 設定コンテナで、[Microsoft® Power Automate Dataverse クラウド設定を作成](#microsoft-power-automate-dataverse-cloud-configuration)セクションで作成したコンテナを参照して選択し、「**[!UICONTROL 保存して閉じる]**」を選択します。
 1. アダプティブフォームを編集用に開きます。
-1. エディターで&#x200B;**フォームプロパティを編集**拡張機能をクリックします。
+1. エディターで&#x200B;**フォームプロパティを編集**&#x200B;拡張機能をクリックします。
 **フォームプロパティ**&#x200B;ダイアログが表示されます。
 
    >[!NOTE]
