@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: e07509ca667b674fb56880a9f3d37976de029782
+source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
 workflow-type: tm+mt
-source-wordcount: '2503'
-ht-degree: 96%
+source-wordcount: '2534'
+ht-degree: 95%
 
 ---
 
@@ -95,7 +95,7 @@ ht-degree: 96%
 * 番号付きリスト
 * リンク
 
-RTE は、作成者のニーズに応じて、オプションを非表示にしたり、追加のオプションを表示したりするように設定できます。 詳しくは、ドキュメント [&#x200B; ユニバーサルエディターの RTE の設定 &#x200B;](/help/implementing/universal-editor/configure-rte.md) を参照してください。
+RTE は、作成者のニーズに応じて、オプションを非表示にしたり、追加のオプションを表示したりするように設定できます。 詳しくは、ドキュメント [ ユニバーサルエディターの RTE の設定 ](/help/implementing/universal-editor/configure-rte.md) を参照してください。
 
 ### メディアの編集 {#edit-media}
 
@@ -212,13 +212,15 @@ RTE は、作成者のニーズに応じて、オプションを非表示にし�
 
 ### コピー＆ぺースト {#copy-paste}
 
-[&#x200B; コンテナ &#x200B;](/help/implementing/universal-editor/field-types.md#container) 内のコンポーネントを同じブラウザータブにコピーして貼り付けることができます。 これは、ターゲットコンテナに [&#x200B; フィルターが設定されていない &#x200B;](/help/implementing/universal-editor/filtering.md) またはコンポーネントを貼り付けることができるフィルターがある）場合にのみ可能です。
+コンテナ内にあるコンポーネントをコピー＆ペーストできます。[](/help/implementing/universal-editor/field-types.md#container) これは、ターゲットコンテナに [ フィルターが設定されていない ](/help/implementing/universal-editor/filtering.md) またはコンポーネントを貼り付けることができるフィルターがある）場合にのみ可能です。
+
+コピーと貼り付けは、同じブラウザータブ上で行うことも、ブラウザータブ間で行うこともできます（タブが既に開いている場合）。 項目をコピーしてから新しいブラウザータブを開いて貼り付けることはできません。
 
 ![コピーアイコン](assets/copy.png)
 ![ペーストアイコン](assets/paste.png)
 
 1. エディター内またはコンテンツツリーでコンポーネントを選択します。
-1. プロパティパネルに「**コピー**」アイコンが表示されます。[&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)タップまたはクリックします。
+1. プロパティパネルに「**コピー**」アイコンが表示されます。[](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)タップまたはクリックします。
 1. プロパティパネルに「**ペースト**」アイコンが表示されます。
 1. コピーしたコンポーネントをペーストした&#x200B;_後_&#x200B;のコンポーネントを選択します。
 1. 「ペースト」をタップまたはクリックします。
@@ -227,6 +229,8 @@ RTE は、作成者のニーズに応じて、オプションを非表示にし�
 >[!TIP]
 >
 >コピーするには `Command-C`、ペーストするには `Command-V` のホットキーを使用します。
+
+
 
 ## コンテンツのプレビュー {#previewing-content}
 

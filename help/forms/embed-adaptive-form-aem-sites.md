@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
-workflow-type: ht
-source-wordcount: '3143'
-ht-degree: 100%
+source-git-commit: 958c166585ac7eeb667d73744403558b2dc5ce94
+workflow-type: tm+mt
+source-wordcount: '3323'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/page-editor/edit-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
 
-In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja).
+In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
 
 -->
 
@@ -85,12 +85,13 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 ![フォームがページオプションの幅全体を覆っている場合、コアコンポーネントを含むアダプティブフォームが使用されます](/help/forms/assets/overlaycorecomponent.gif)
 
+**ケース 1：個別の Sites ページコンポーネントの使用**
 
 次を追加： **Customheaderlibs** および **Customfooterlibs** クライアントライブラリをAEM Sitesページに追加します。 ライブラリを追加するには、次の手順を実行します。
 
 1. [AEM Cloud Service Git リポジトリ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=ja)にアクセスしてクローンを作成します。
-1. プランテキストエディターで AEM Cloud Service Git リポジトリフォルダーを開きます。例えば Microsoft Visual Code などです。
-1. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` ファイルを開き、次のコードをファイルに追加します。
+2. プランテキストエディターで AEM Cloud Service Git リポジトリフォルダーを開きます。例えば Microsoft Visual Code などです。
+3. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` ファイルを開き、次のコードをファイルに追加します。
 
    ```
        //Customheaderlibs.html
@@ -99,7 +100,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
        </sly> 
    ```
 
-1. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` ファイルを開き、次のコードをファイルに追加します。
+4. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` ファイルを開き、次のコードをファイルに追加します。
 
    ```
        //customfooterlibs.html
@@ -108,7 +109,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
        </sly> 
    ```
 
-1. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` ファイルを開き、次のコードをファイルに追加します。
+5. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` ファイルを開き、次のコードをファイルに追加します。
 
    ```
        //Customheaderlibs.html
@@ -117,7 +118,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
        </sly> 
    ```
 
-1. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` ファイルを開き、次のコードをファイルに追加します。
+6. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` ファイルを開き、次のコードをファイルに追加します。
 
    ```
        //customfooterlibs.html
@@ -126,7 +127,23 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
        </sly> 
    ```
 
-1. [デプロイメントパイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=ja)して、クライアントライブラリを AEM as a Cloud Service 環境にデプロイします。
+7. [デプロイメントパイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=ja)して、クライアントライブラリを AEM as a Cloud Service 環境にデプロイします。
+
+>[!NOTE]
+>
+> カスタム関数のクライアントライブラリは、すべてのフォームで必要な場合にのみハードコードします。 フォームタイプによって異なるライブラリの場合は、次の節で説明するように、テンプレートページポリシーを使用して追加します。
+
+**ケース 2：同じ Sites ページコンポーネントの使用**
+
+フォームを使用してページを作成するために使用するテンプレートのページポリシーに、ランタイムクライアントライブラリまたはカスタム関数ライブラリを含めます。
+
+1. AEM Sites ページまたはエクスペリエンスフラグメントを編集用に開きます。ページを編集用に開くには、ページを選択して「**[!UICONTROL 編集]**」をクリックします。
+2. Sites ページまたはエクスペリエンスフラグメントページのテンプレートを開きます。テンプレートを開くには、**[!UICONTROL ページ情報]**&#x200B;に移動し、![ページ情報](/help/forms/assets/Smock_Properties_18_N.svg)／**[!UICONTROL テンプレートを編集]**&#x200B;を選択します。対応するテンプレートがテンプレートエディターで開きます。
+3. テンプレートの「**[!UICONTROL ページ情報]**![ ページ情報 ](/help/forms/assets/Smock_Properties_18_N.svg)」セクションに移動し、「**[!UICONTROL ページポリシー]**」オプションを選択します。 これにより、AEM Sites テンプレートのプロパティが開き、カスタム関数またはランタイムクライアントライブラリを定義できます。
+4. 「**[!UICONTROL プロパティ]**」タブの「**[!UICONTROL 追加]**」ボタンをクリックして、新しいカスタム関数ライブラリまたはランタイムライブラリを追加します。
+5. 「**[完了]**」をクリックします。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476178?quality=12&learn=on)
 
 ### AEM Sites ページまたはエクスペリエンスフラグメントのアダプティブフォーム – 埋め込み（v2）の有効化
 

@@ -5,15 +5,20 @@ exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: AEM forms を Power Automate に接続、Power Automate による AEM Forms の自動処理、Power Automate を AEM Forms に統合、アダプティブフォームから Power Automate にデータを送信
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
-workflow-type: ht
-source-wordcount: '1531'
-ht-degree: 100%
+source-git-commit: 03f92d950744e653e4ef509bac3c3b4709477e41
+workflow-type: tm+mt
+source-wordcount: '1546'
+ht-degree: 99%
 
 ---
 
 
 # アダプティブフォームと Microsoft® Power Automate の接続 {#connect-adaptive-form-with-power-automate}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM as a Cloud Service | この記事 |
 
 <span class="preview">GovCloud を使用中に GCC （Government Cloud Computing）テナントに接続する必要がある場合は、公式アドレスから aem-forms-ea@adobe.com にメールを送信して、早期導入プログラムを介したアクセスをリクエストします。</span>
 
