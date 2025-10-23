@@ -4,10 +4,10 @@ description: プロジェクトリソースを設定するための Cloud Manage
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
-workflow-type: ht
-source-wordcount: '909'
-ht-degree: 100%
+source-git-commit: 858a9c4b61fd3a80a257313e48816b067ca77175
+workflow-type: tm+mt
+source-wordcount: '820'
+ht-degree: 94%
 
 ---
 
@@ -42,30 +42,41 @@ Cloud Manager は、AEM as a Cloud Service に不可欠なコンポーネント�
 
    前の手順の [Cloud Manager 製品プロファイルへのチームメンバーの割り当て](assign-profiles-cloud-manager.md)に戻り、システム管理者に&#x200B;**ビジネスオーナー**&#x200B;の役割を割り当てる方法の詳細を参照してください。
 
-1. [experiece.adobe.com](https://experience.adobe.com) で Cloud Manager にログインします。
+1. [experience.adobe.com](https://experience.adobe.com) でCloud Managerにログインします。
 1. クイックアクセスのグループ化で、「**Experience Manager**」をクリックします。
 1. 左側のサイドパネルで、「**Cloud Manager**」をクリックします。
 
    ![コンソール上の Cloud Manager](/help/journey-onboarding/assets/consol-cloud-manager.png)
 
-**ビジネスオーナー**&#x200B;の役割を持つシステム管理者がログインに成功すると、**ビジネスオーナー**&#x200B;の役割を持つ他のユーザーが Cloud Manager を使用できるようになります。確認メッセージなどのメッセージは表示されません。ログインするだけで十分です。
+**ビジネスオーナー** の役割を持つシステム管理者は、最初にCloud Managerにログインする必要があります。 この最初のログインでは、**ビジネスオーナー** の役割を持つ他のユーザーがプログラムを作成できます。確認は表示されません。
 
-**ビジネスオーナー**&#x200B;の役割を持つシステム管理者が Cloud Manager にログインするまで、**ビジネスオーナー**&#x200B;の役割を持つ他のユーザーは、Cloud Manager でプログラムを作成できません。このルールは、正しい役割が割り当てられている場合でも適用されます。
+<!--
+By successfully signing in as a system administrator with the **Business Owner** role, you use Cloud Manager for use by the other users with the **Business Owner** role. You do not receive a confirmation or any message. Simply signing in is sufficient.
+
+Until you sign in to Cloud Manager as a system administrator with the **Business Owner** role, other users with the **Business Owner** role cannot create programs in Cloud Manager. This rule is true even if they are assigned the correct roles. -->
 
 ## Cloud Manager に移動 {#navigate-cloud-manager}
 
-**ビジネスオーナー**&#x200B;の役割を持つユーザーには、開始するためのリンクが記載されたウェルカムメールが届きます。このウェルカムメールを使用して Cloud Manager に移動するには、以下の手順に従います。
+1. [experience.adobe.com/experiencemanager](https://experience.adobe.com/experiencemanager) に移動します。
+1. 左側のサイドパネルで、「**Cloud Manager**」をクリックします。
 
-1. ウェルカムメールで、「**入門**」をクリックします（下図を参照）。
-   ![メールの例](/help/journey-onboarding/assets/get-started-email.png)
+>[!NOTE]
+>
+>Cloud Manager で割り当てられた役割やアプリケーションの状態に応じて、Cloud Manager ユーザーインターフェイスの使用中に表示される画面が変わります。
 
-1. Cloud Manager の&#x200B;**プログラムと製品**&#x200B;ページに移動します。
+<!--
+Users with the **Business Owner** role receive a welcome email with a link to get started. Follow the steps below to navigate to Cloud Manager using this welcome email.
+
+1. From your welcome email, click **Get started**, as shown in the figure below.
+    ![Email example](/help/journey-onboarding/assets/get-started-email.png)
+
+1. Navigate to Cloud Manager's **Programs & Products** page.
 
    >[!TIP]
    >
-   >`[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)` から Cloud Manager のログインページに直接移動することもできます。今後の参照用に、このページをブックマークに追加してください。
+   >You can also navigate directly to Cloud Manager's login page from `[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)`. Bookmark this page for future reference.
 
-1. Cloud Manager のランディングページが表示されるようになります。
+1. You are directed to Cloud Manager's landing page. -->
 
 <!-- OLD
 Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe Experience Cloud home page using these steps.
