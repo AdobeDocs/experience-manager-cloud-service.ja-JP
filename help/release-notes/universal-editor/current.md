@@ -1,10 +1,10 @@
 ---
-title: ユニバーサルエディター 2025.10.23 リリースノート
-description: ユニバーサルエディター 2025.10.23 リリースのリリースノートです。
+title: ユニバーサルエディター 2025.10.24 リリースノート
+description: ユニバーサルエディター 2025.10.24 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
+source-git-commit: 8c7976d68413bc378800d83d373cc876a1a36f25
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 63%
@@ -12,9 +12,9 @@ ht-degree: 63%
 ---
 
 
-# ユニバーサルエディター 2025.10.23 リリースノート {#release-notes}
+# ユニバーサルエディター 2025.10.24 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2025 年 10 月 23 日リリースのリリースノートです。
+ユニバーサルエディターの 2025 年 10 月 24 日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -26,10 +26,10 @@ ht-degree: 63%
 
 ## 新機能 {#what-is-new}
 
-* ブラウザーのタブ間での [&#x200B; コピーと貼り付け &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) がサポートされるようになりました。
+* ブラウザーのタブ間での [ コピーと貼り付け ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) がサポートされるようになりました。
    * 同時に開いているタブ間に限定されます。
    * コンテンツをコピーしてから新しいタブを開くことは、サポートされていません。
-* [meta タグ &#x200B;](/help/implementing/universal-editor/customizing.md#meta-tags) を使用して「非公開」ボタンを無効にできるようになりました。
+* [meta タグ ](/help/implementing/universal-editor/customizing.md#meta-tags) を使用して「非公開」ボタンを無効にできるようになりました。
 
 ## 早期導入機能 {#early-adopter}
 

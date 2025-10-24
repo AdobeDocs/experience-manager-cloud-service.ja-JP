@@ -3,10 +3,10 @@ title: ユニバーサルエディターのプレビューリリースノート
 description: ユニバーサルエディターのプレビューリリースのリリースノートです。
 feature: Release Information
 role: Admin
-source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
+source-git-commit: 8c7976d68413bc378800d83d373cc876a1a36f25
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 1%
+source-wordcount: '194'
+ht-degree: 0%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 ユニバーサルエディターの **プレビューバージョン** のリリースノートです。 これらの機能は、現在、ユニバーサルエディターの **プレビュー環境** で使用できます。 これらの機能は、2025 年 10 月 30 日（PT）に一般公開される予定です。
 
-これらの **プレビュー** リリースノートは、ユニバーサルエディターにどのような変更が予定されているかを把握し、[&#x200B; プレビュー環境に切り替える &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) ことでテストできるように、利便性の高い方法で提供されています。
+これらの **プレビュー** リリースノートは、ユニバーサルエディターにどのような変更が予定されているかを把握し、[ プレビュー環境に切り替える ](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) ことでテストできるように、利便性の高い方法で提供されています。
 
 >[!TIP]
 >
->ユニバーサルエディターの **最新のリリースノート** については、ドキュメント [&#x200B; ユニバーサルエディターリリースノート &#x200B;](/help/release-notes/universal-editor/current.md) を参照してください。
+>ユニバーサルエディターの **最新のリリースノート** については、ドキュメント [ ユニバーサルエディターリリースノート ](/help/release-notes/universal-editor/current.md) を参照してください。
 
 >[!NOTE]
 >
@@ -27,9 +27,15 @@ ht-degree: 1%
 
 ## 今後の新機能 {#what-is-new}
 
-* 未定
+* 新しい RTE の画像を挿入
+* 新しい `/configuration` エンドポイント
 
 ## 今後の機能強化 {#other-improvements}
 
-* 未定
-
+* アクションを取り消した場合に、更新イベントに通知されるようになりました。
+* 文字列 `No results`、ユニバーサルエディターのタグのブラウザーロケールに依存するようになりました。
+* ユニバーサルエディターの「公開」ボタンの余分な改行を修正しました。
+* Patch API に対してクリーンアップが行われました。
+* Safari で「コンテンツを選択」ボタンが表示されるようになりました。
+* RPM ビルドが修正されました。
+* CORS を更新して、保存後に編集されたテキストが再度更新されるのを回避しました。
