@@ -82,7 +82,7 @@ Admin Console を使用してチーム内のユーザーを管理する前に、
 
 [Experience Hub](/help/experience-hub.md) は、AEM用に統合され、パーソナライズされたホームです。 AEM Tools とAdmin Consoleが一元化されます。
 
-![Experience Hub ホームページに表示される「Admin Console」オプション ](/help/journey-onboarding/assets/experiencehub-adminconsole1.png)
+![Experience Hub ホームページに表示される「Admin Console」オプション &#x200B;](/help/journey-onboarding/assets/experiencehub-adminconsole1.png)
 
 **Experience HubからAdmin Consoleにアクセスする**
 
@@ -115,7 +115,7 @@ AEM as a Cloud Service は IMS を使用することで、AEM と Adobe Experien
 * Admin Consoleを使用して、システム管理者としての権限を確認する方法を理解します。
 * アドビサポートに問い合わせる方法
 
-同僚も AEMaaCS にアクセスできるように、チームメンバーをCloud Manager製品プロファイルに割り当てる [ 方法を学習して ](assign-profiles-cloud-manager.md) オンボーディングジャーニーを続ける準備が整いました。
+同僚も AEMaaCS にアクセスできるように、チームメンバーをCloud Manager製品プロファイルに割り当てる [&#x200B; 方法を学習して &#x200B;](assign-profiles-cloud-manager.md) オンボーディングジャーニーを続ける準備が整いました。
 
 ## その他のリソース {#additional-resources}
 
@@ -125,4 +125,4 @@ AEM as a Cloud Service は IMS を使用することで、AEM と Adobe Experien
 * [Adobe ID の作成または更新](https://helpx.adobe.com/jp/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Adobe ID の作成および変更と、複数の Adobe ID の管理方法を説明します。
 * [SAML 2.0 認証ハンドラー](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/saml-2-0-authenticationhandler#) - AEMには、SAML 認証ハンドラーが付属しています。このハンドラーによって、HTTP POST バインディングを使用した SAML 2.0 認証要求プロトコル（Web-SSO プロファイル）のサポートが提供されます。
 * [管理者の役割](https://helpx.adobe.com/jp/enterprise/using/admin-roles.html) - Adobe Admin Console を使用すると、組織は柔軟な管理階層を定義して、アドビ製品のアクセスと使用を詳細に管理できます。
-* [ サポートおよびエキスパートセッション ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.html) - Admin Consoleでサポートオプションにアクセスする方法、サポートケースを管理する方法、エキスパートセッションを予約する方法などを説明します。
+* [&#x200B; サポートおよびエキスパートセッション &#x200B;](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.html) - Admin Consoleでサポートオプションにアクセスする方法、サポートケースを管理する方法、エキスパートセッションを予約する方法などを説明します。
