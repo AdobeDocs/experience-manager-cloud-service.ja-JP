@@ -123,6 +123,6 @@ AEM as a Cloud Service は IMS を使用することで、AEM と Adobe Experien
 
 * [Admin Console の概要](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) - Admin Console の包括的な概要
 * [Adobe ID の作成または更新](https://helpx.adobe.com/jp/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Adobe ID の作成および変更と、複数の Adobe ID の管理方法を説明します。
-* [SAML 2.0 認証ハンドラー](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/saml-2-0-authenticationhandler#) - AEMには、SAML 認証ハンドラーが付属しています。このハンドラーによって、HTTP POST バインディングを使用した SAML 2.0 認証要求プロトコル（Web-SSO プロファイル）のサポートが提供されます。
+* [SAML 2.0 認証ハンドラー](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/security/saml-2-0-authenticationhandler#) - AEMには、SAML 認証ハンドラーが付属しています。このハンドラーによって、HTTP POST バインディングを使用した SAML 2.0 認証要求プロトコル（Web-SSO プロファイル）のサポートが提供されます。
 * [管理者の役割](https://helpx.adobe.com/jp/enterprise/using/admin-roles.html) - Adobe Admin Console を使用すると、組織は柔軟な管理階層を定義して、アドビ製品のアクセスと使用を詳細に管理できます。
-* [&#x200B; サポートおよびエキスパートセッション &#x200B;](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.html) - Admin Consoleでサポートオプションにアクセスする方法、サポートケースを管理する方法、エキスパートセッションを予約する方法などを説明します。
+* [&#x200B; サポートおよびエキスパートセッション &#x200B;](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.html) - Admin Consoleでサポートオプションにアクセスする方法、サポートケースを管理する方法、エキスパートセッションを予約する方法などを説明します。
