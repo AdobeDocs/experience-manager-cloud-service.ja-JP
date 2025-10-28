@@ -4,10 +4,10 @@ description: AEM as a Cloud Service での開発に関するガイドライン�
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a352261034188cc66a0bc7f2472ef8340c778c13
+source-git-commit: c7ba218faac76c9f43d8adaf5b854676001344cd
 workflow-type: tm+mt
 source-wordcount: '2768'
-ht-degree: 99%
+ht-degree: 71%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 99%
 >id="development_guidelines"
 >title="AEM as a Cloud Service の開発ガイドライン"
 >abstract="AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスでの AEM および AMS での AEM との重要な違いについて説明します。"
->additional-url="https://video.tv.adobe.com/v/345904/?captions=jpn" text="パッケージ構造のデモ"
+>additional-url="https://video.tv.adobe.com/v/330555/?captions=jpn" text="パッケージ構造のデモ"
 
 このドキュメントでは、AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスおよび AMS の AEM とは異なる重要な方法について説明します。
 
 ## コードはクラスター対応である必要があります {#cluster-aware}
 
-AEM as a Cloud Service で実行するコードは、常にクラスター内で実行されていることを認識している必要があります。つまり、常に複数のインスタンスが実行されています。インスタンスはいつ停止するかわからないので、コードには特に回復力が必要です。
+AEM as a Cloud Service で実行するコードは、常にクラスター内で実行されていることを認識している必要があります。つまり、常に複数のインスタンスが実行されています。特にインスタンスはいつでも停止される可能性があるので、コードは回復力がある必要があります。
 
-AEM as a Cloud Service を更新する間、古いコードと新しいコードが並行して実行されるインスタンスが存在します。したがって、新しいコードで作成されたコンテンツが古いコードによって中断されず、新しいコードが古いコンテンツを処理できる必要があります。
+AEM as a Cloud Service を更新する間、古いコードと新しいコードが並行して実行されるインスタンスが存在します。したがって、古いコードを新しいコードで作成されたコンテンツと切り離してはならず、新しいコードで古いコンテンツを処理できる必要があります。
 
 クラスター内のプライマリを識別する必要がある場合は、Apache Sling Discovery API を使用して検出できます。
 
@@ -35,29 +35,29 @@ AEM as a Cloud Service を更新する間、古いコードと新しいコード
 
 ## ファイルシステムの状態 {#state-on-the-filesystem}
 
-AEM as a Cloud Service でインスタンスのファイルシステムを使用しないでください。ディスクはエフェメラルで、インスタンスが再利用されると破棄されます。単一の要求の処理に関する一時的なストレージのために、ファイルシステムの使用を制限することは可能ですが、大量のファイルに対して濫用しないでください。リソースの使用割り当てに悪影響を与え、ディスクの制限が生じる可能性があるためです。
+AEM as a Cloud Service でインスタンスのファイルシステムを使用しないでください。ディスクは一時的なもので、インスタンスがリサイクルされる際に破棄されます。 単一の要求の処理に関する一時的なストレージのために、ファイルシステムの使用を制限することは可能ですが、大量のファイルに対して濫用しないでください。リソースの使用割り当てに悪影響を与え、ディスクの制限が生じる可能性があるためです。
 
-ファイルシステムの使用がサポートされていない例として、パブリッシュ層では、永続化する必要のあるデータが、長期ストレージのために外部サービスに送り出されることを確認する必要があります。
+例えば、ファイルシステムの使用がサポートされていない場合は、保存する必要があるデータをパブリッシュ層で確実に外部サービスに送信して、長期保存を行う必要があります。
 
 ## 監視 {#observation}
 
-同様に、観察イベントに作用するように非同期的に起こっているものすべてに対して、ローカルで実行することを保証できないことから、注意深く使用する必要があります。これは、JCR リソースと Sling イベントの両方に当てはまります。変更が発生した時点で、インスタンスが停止し、別のインスタンスに置き換えられる場合があります。その時点でアクティブなトポロジ内の他のインスタンスは、このイベントに反応できます。しかし、この場合、ローカルのイベントではなく、イベントの発行時にアクティブなリーダーがいない可能性もあります。
+同様に、観測イベントに対するアクションなど、非同期で発生するすべてのものについては、ローカルで実行されることが保証できないので、慎重に使用する必要があります。 これは、JCR リソースと Sling イベントの両方に当てはまります。変更が発生した時点で、インスタンスが停止し、別のインスタンスに置き換えられる可能性があります。 その時点でアクティブなトポロジ内の他のインスタンスは、このイベントに反応できます。しかし、今回の場合は地元のイベントではなく、イベントが発行されたときにリーダーの選挙が進行中の場合には、アクティブなリーダーがいない可能性さえあります。
 
 ## バックグラウンドタスクと長時間実行ジョブ {#background-tasks-and-long-running-jobs}
 
-バックグラウンドタスクとして実行するコードでは、コードを実行しているインスタンスが突然機能しなくなる可能性があることを前提にする必要があります。そのため、コードは回復力がある必要があり、最も重要なのは再開可能であることです。つまり、コードが再実行された場合は、再び最初から始めるのではなく、実行が中断された箇所に近い位置から始める必要があります。これはこの種のコードにとって新しい要件ではありませんが、AEM as a Cloud Service では、インスタンスの停止が起こる可能性が高くなります。
+バックグラウンドタスクとして実行するコードでは、コードを実行しているインスタンスが突然機能しなくなる可能性があることを前提にする必要があります。 そのため、コードは回復力がある必要があり、最も重要なのは再開可能であることです。 つまり、コードが再実行された場合は、コードを最初から再開するのではなく、コードが中断した位置に近づけるようにします。 これは、この種のコードに対する新しい要件ではありませんが、AEM as a Cloud Serviceでは、インスタンスのテイクダウンが発生する可能性が高くなります。
 
-トラブルを最小限に抑えるために、長時間実行ジョブは可能な限り避け、少なくとも再開可能な状態になっている必要があります。このようなジョブを実行するには、少なくとも 1 回は実行されることが保証されている Sling ジョブを使用します。したがって、ジョブが中断された場合、ジョブはできるだけ早く再実行されます。ただし、最初からやり直すべきではないでしょう。このようなジョブをスケジュールする場合は、 [Sling ジョブ](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) スケジューラーを使用することをお勧めします。やはり、少なくとも 1 回は実行されることが保証されているからです。
+この問題を最小限に抑えるために、長時間実行されるジョブは可能であれば避け、少なくとも再開できるようにする必要があります。 このようなジョブを実行するには、少なくとも 1 回は実行されることが保証されている Sling ジョブを使用します。したがって、ジョブが中断された場合、ジョブはできるだけ早く再実行されます。ただし、最初からやり直すべきではないでしょう。このようなジョブをスケジュールする場合は、 [Sling ジョブ](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) スケジューラーを使用することをお勧めします。やはり、少なくとも 1 回は実行されることが保証されているからです。
 
-Sling Commons Scheduler は実行を保証できないので、スケジュール設定には使用しないでください。スケジュール設定されている可能性が高いです。
+実行は保証されないので、Sling Commons Scheduler をスケジュールに使用しないでください。 スケジュール設定されている可能性が高いです。
 
-同様に、監視イベント（例：JCR イベントや Sling リソースイベント）に対する動作など、非同期的に発生するあらゆる動作は、必ずしも実行が保証されないので、慎重に使用する必要があります。これは、現在の AEM デプロイメントに既に当てはまります。
+同様に、監視イベント（JCR イベントや Sling リソースイベント）への対応など、非同期に発生するものはすべて実行が保証されないので、慎重に使用する必要があります。 これは、現在の AEM デプロイメントに既に当てはまります。
 
 ## 送信 HTTP 接続 {#outgoing-http-connections}
 
-送信 HTTP 接続では、接続および読み取りの妥当なタイムアウトを設定することを強くお勧めします。推奨値は、接続タイムアウトの場合は 1 秒、読み取りタイムアウトの場合は 5 秒です。正確な数値は、これらのリクエストを処理するバックエンドシステムのパフォーマンスに基づいて決定する必要があります。
+送信 HTTP 接続では、接続および読み取りの妥当なタイムアウトを設定することを強くお勧めします。推奨値は、接続タイムアウトの場合は 1 秒、読み取りタイムアウトの場合は 5 秒です。 正確な数値は、これらのリクエストを処理するバックエンドシステムのパフォーマンスに基づいて決定する必要があります。
 
-これらのタイムアウトを適用しないコードの場合、AEM as a Cloud Service 上で動作している AEM インスタンスは、グローバルタイムアウトを強制的に適用します。接続の場合、これらのタイムアウト値は、接続呼び出しについては 10 秒、読み取り呼び出しについては 60 秒です。
+これらのタイムアウトを適用しないコードの場合、AEM as a Cloud Serviceで動作しているAEM インスタンスは、グローバルタイムアウトを適用します。 接続の場合、これらのタイムアウト値は、接続呼び出しについては 10 秒、読み取り呼び出しについては 60 秒です。
 
 HTTP 接続を行う場合は、提供されている [Apache HttpComponents Client 4.x ライブラリ](https://hc.apache.org/httpcomponents-client-ga/)を使用することをお勧めします。
 
@@ -81,7 +81,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 ネイティブバイナリおよびライブラリを、クラウド環境にデプロイしたり、インストールしたりしないでください。
 
-また、コード実行時にネイティブバイナリやネイティブ Java 拡張機能（JNI など）をダウンロードしようとしないでください。
+また、コードでは、実行時にネイティブバイナリまたはネイティブ Java 拡張機能（JNI など）のダウンロードを試みてはいけません。
 
 ## AEM as a Cloud Service を使用したストリーミングバイナリがない {#no-streaming-binaries}
 
@@ -103,19 +103,19 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 開発環境と高速開発環境は、開発、エラー分析、および機能テストに限定する必要があり、高いワークロードや大量のコンテンツを処理するように設計されていません。
 
-例えば、開発環境で大規模なコンテンツリポジトリのインデックス定義を変更すると、インデックスが再作成されることで処理が多くなりすぎる場合があります。充実したコンテンツを必要とするテストは、ステージング環境で実施する必要があります。
+例えば、開発環境の大規模なコンテンツリポジトリーでインデックス定義を変更すると、インデックスが再作成され、処理が多くなりすぎることがあります。 充実したコンテンツを必要とするテストは、ステージング環境で実施する必要があります。
 
 ## 監視とデバッグ {#monitoring-and-debugging}
 
 ### ログ {#logs}
 
-ローカル開発の場合、ログエントリは `/crx-quickstart/logs` フォルダーのローカルファイルに書き込まれます。
+ローカル開発のために、ログエントリは `/crx-quickstart/logs` フォルダーのローカルファイルに書き込まれます。
 
-クラウド環境では、開発者は Cloud Manager を使用してログをダウンロードするか、コマンドラインツールを使用してログを追跡することができます。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+クラウド環境では、デベロッパーはCloud Managerからログをダウンロードしたり、コマンドラインツールを使用してログのテールを作成したりできます。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **ログレベルの設定**
 
-クラウド環境のログレベルを変更するには、Sling Logging OSGi 設定を変更した後、完全に再デプロイする必要があります。これは即座には行われないので、大量のトラフィックを受け取る本番環境で詳細なログを有効にする場合は注意が必要です。今後、ログレベルをより迅速に変更するメカニズムが提供される可能性があります。
+クラウド環境のログレベルを変更するには、Sling Logging OSGi 設定を変更した後、完全に再デプロイする必要があります。これは即座には行われないので、多くのトラフィックを受信する実稼動環境で詳細なログを有効にする場合は注意が必要です。 今後、ログレベルをより迅速に変更するメカニズムが提供される可能性があります。
 
 >[!NOTE]
 >
@@ -150,7 +150,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 | ステージ | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN |
 | 実稼動 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERROR |
 
-デバッグファイルの行は、通常は DEBUG で始まり、その後にログレベル、インストーラーのアクション、ログメッセージが示されます。例：
+デバッグファイルの行は、通常は DEBUG で始まり、その後にログレベル、インストーラーのアクション、ログメッセージが示されます。 例：
 
 ```text
 DEBUG 3 WebApp Panel: WebApp successfully deployed
@@ -166,7 +166,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### スレッドダンプ {#thread-dumps}
 
-クラウド環境のスレッドダンプは継続的に収集されますが、現時点ではセルフサービス方式でダウンロードすることはできません。その間、問題のデバッグ用にスレッドダンプが必要な場合は、AEM サポートに問い合わせ、正確な時間枠を指定してください。
+クラウド環境のスレッドダンプは継続的に収集されますが、現時点ではセルフサービス方式でダウンロードすることはできません。それまでの間、問題のデバッグにスレッドダンプが必要な場合は、AEM サポートに連絡して、正確な時間枠を指定してください。
 
 ## CRX/DE Lite と AEM as a Cloud Service Developer Console {#crxde-lite-and-developer-console}
 
@@ -174,7 +174,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ローカル開発の場合、開発者は CRXDE Lite（`/crx/de`）と AEM Web コンソール（`/system/console`）に完全にアクセスできます。
 
-（SDK を使用する）ローカル開発では、`/apps` と `/libs` に直接書き込むことができます。この点が、最上位フォルダーが不変なクラウド環境とは異なります。
+（SDKを使用した）ローカル開発では、`/apps` と `/libs` に直接書き込むことができます。この点が、最上位フォルダーが不変なクラウド環境とは異なります。
 
 ### AEM as a Cloud Service の開発ツール {#aem-as-a-cloud-service-development-tools}
 
@@ -185,11 +185,11 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 >[!NOTE]
 >一部のお客様は、AEM Cloud Service Developer Console の刷新されたエクスペリエンスを試してみることもできます。詳しくは、[こちらの記事](/help/implementing/developing/introduction/aem-developer-console.md)を参照してください。
 
-ユーザーはオーサー層の開発環境では CRXDE Lite にアクセスできますが、ステージ環境や実稼動環境ではアクセスできません。不変リポジトリー（`/libs`、`/apps`）に実行時に書き込むことはできないので、書き込もうとするとエラーが発生します。
+ユーザーはオーサー層の開発環境では CRXDE Lite にアクセスできますが、ステージング層や実稼動層ではアクセスできません。 不変リポジトリー（`/libs`、`/apps`）に実行時に書き込むことはできないので、書き込もうとするとエラーが発生します。
 
-代わりに、AEM as a Cloud Service Developer Console からリポジトリブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対してリポジトリへの読み取り専用ビューを提供できます。詳しくは、[リポジトリブラウザー](/help/implementing/developing/tools/repository-browser.md)を参照してください。
+代わりに、AEM as a Cloud Service Developer Console からリポジトリブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対してリポジトリへの読み取り専用ビューを提供できます。詳しくは、[ リポジトリブラウザー ](/help/implementing/developing/tools/repository-browser.md) を参照してください。
 
-AEM as a Cloud Service 開発者環境をデバッグするための一連のツールは、RDE 環境、開発環境、ステージ環境、本番環境の AEM as a Cloud Service Developer Console で利用できます。URL は、次のようにオーサーサービス URL またはパブリッシュサービス URL を調整して決定できます。
+AEM as a Cloud Service開発者環境をデバッグするためのツールセットがAEM as a Cloud Service Developer Consoleの RDE 環境、開発環境、ステージ環境、実稼動環境で利用できます。 URL は、次のようにオーサーサービスまたはパブリッシュサービスの URL を調整することで決定できます。
 
 `https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -201,7 +201,7 @@ AEM as a Cloud Service 開発者環境をデバッグするための一連のツ
 
 開発者は、ステータス情報を生成し、様々なリソースを解決できます。
 
-下図に示すように、使用可能なステータス情報には、バンドルの状態、コンポーネント、OSGi 設定、Oak インデックス、OSGi サービス、Sling ジョブなどがあります。
+以下に示すように、使用可能なステータス情報には、バンドルの状態、コンポーネント、OSGi 設定、Oak インデックス、OSGi サービス、Sling ジョブが含まれます。
 
 ![開発者コンソール 1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
@@ -219,7 +219,7 @@ AEM as a Cloud Service 開発者環境をデバッグするための一連のツ
 
 ### パフォーマンスの監視 {#performance-monitoring}
 
-アドビはアプリケーションのパフォーマンスを監視し、劣化が観察された場合に対処します。現在、アプリケーション指標は観測できません。
+Adobeは、アプリケーションのパフォーマンスを監視し、パフォーマンスが低下した場合は対策を講じます。 現在、アプリケーション指標は観測できません。
 
 ## メールの送信 {#sending-email}
 
@@ -233,13 +233,13 @@ AEM as a Cloud Service 開発者環境をデバッグするための一連のツ
 
 メールの送信に使用されるポートは、デフォルトでは無効になっています。ポートをアクティブにするには、[高度なネットワーク](/help/security/configuring-advanced-networking.md)を設定して、対象となるポート（465 や 587 など）をプロキシポートにマッピングするエンドポイントのポート転送ルールを、必要な環境ごとに設定するようにします（`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`）。
 
-`kind` パラメータを `flexiblePortEgress` に設定して高度なネットワーク機能を設定することをお勧めします。アドビがフレキシブルポートエグレストラフィックのパフォーマンスを最適化できるからです。一意のエグレス IP アドレスが必要な場合は、`kind` パラメーターを `dedicatedEgressIp` に設定します。他の理由で既に VPN を設定してある場合は、その高度なネットワークバリエーションから提供される一意の IP アドレスも使用できます。
+`kind` パラメーターを `flexiblePortEgress` に設定して高度なネットワーク機能を設定することをお勧めします。Adobeでフレキシブルポートエグレストラフィックのパフォーマンスを最適化できるからです。 一意のエグレス IP アドレスが必要な場合は、`kind` パラメーターを `dedicatedEgressIp` に設定します。他の理由で既に VPN を設定してある場合は、その高度なネットワークバリエーションから提供される一意の IP アドレスも使用できます。
 
-メールクライアントに直接送信するのではなく、メールサーバーを通じてメールを送信する必要があります。そうしないと、メールがブロックされる可能性があります。
+メールクライアントに直接送信するのではなく、メールサーバーを通じてメールを送信する必要があります。 そうしないと、メールがブロックされる可能性があります。
 
 ### メールの送信 {#sending-emails}
 
-[Day CQ Mail Service OSGi サービス](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja#configuring-the-mail-service)を使用してください。また、受信者に直接送信するのではなく、サポートリクエストに明示されたメールサーバーにメールを送信する必要があります。
+[Day CQ Mail Service OSGi サービス ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja#configuring-the-mail-service) を使用してください。また、受信者に直接送信するのではなく、サポートリクエストに明示されたメールサーバーにメールを送信する必要があります。
 
 ### 設定 {#email-configuration}
 
@@ -250,7 +250,7 @@ AEM 内のメールは、[Day CQ Mail Service OSGi](https://experienceleague.ado
 * SMTP サーバーのホスト名を$[env:AEM_PROXY_HOST;default=proxy.tunnel に設定する必要があります ]
 * SMTP サーバーポートは、高度なネットワーク機能を設定する際に、API 呼び出しで使用される portForwards パラメーターに設定された元のプロキシポートの値に設定してください。例えば、（465 ではなく）30465 などとします。
 
-SMTP サーバーポートには、高度なネットワーク設定時に API 呼び出しで使用される portForwards パラメーターに設定された `portDest` 値を設定する必要があります。`portOrig` 値は、30000 ～ 30999 の必須範囲内の意味のある値である必要があります。例えば、SMTP サーバーポートが 465 の場合、ポート 30465 を `portOrig` の値として使用します。
+SMTP サーバーポートには、高度なネットワーク設定時に API 呼び出しで使用される portForwards パラメーターに設定された `portDest` 値を設定する必要があります。`portOrig` 値は、30000 ～ 30999 の必須範囲内の意味のある値である必要があります。 例えば、SMTP サーバーポートが 465 の場合、ポート 30465 を `portOrig` の値として使用します。
 
 この例で、SSL を有効にする必要がある場合、**Day CQ Mail Service OSGI** サービスの設定は次のとおりです。
 
