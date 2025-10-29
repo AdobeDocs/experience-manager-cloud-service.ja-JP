@@ -4,10 +4,10 @@ description: Cloud Acceleration Manager を使用して、移行セットから�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 2fafb582ae8fc5e2ecc19157ff34e16be401393a
-workflow-type: ht
-source-wordcount: '3591'
-ht-degree: 100%
+source-git-commit: 54829a232b4b918a525b25f9bca475d7856faa46
+workflow-type: tm+mt
+source-wordcount: '3616'
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="コンテンツの取り込み"
->abstract="取得とは、移行セットから宛先の Cloud Service インスタンスにコンテンツを取得することを指します。 コンテンツ転送ツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。"
+>abstract="取得とは、移行セットから宛先の Cloud Service インスタンスにコンテンツを取得することを指します。 コンテンツトランスファーツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。"
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="追加抽出"
 
 Cloud Acceleration Manager を使用して移行セットを取り込むには、次の手順に従います。
@@ -40,7 +40,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
    > 抽出が実行中の場合は、ダイアログにその旨が示されます。抽出が正常に完了すると、取り込みが自動的に開始されます。抽出が失敗または停止した場合、取り込みジョブは取り消されます。
 
    * **移行先：**&#x200B;移行先の環境を選択します。この環境では、移行セットのコンテンツが取り込まれます。
-      * 取り込みでは、迅速な開発環境（RDE）やプレビューが出力先としてサポートされておらず、ユーザーがアクセスできる場合でも出力先の選択肢として表示されません。
+      * 取り込みでは、高速開発環境（RDE）やプレビューが出力先としてサポートされておらず、ユーザーがアクセスできる場合でも出力先の選択肢として表示されません。
       * 移行セットは複数の宛先に同時に取り込むことができますが、宛先は一度に 1 つの実行中または待機中の取り込みのターゲットになります。
 
    * **層：** 層を選択します。（オーサー／パブリッシュ）。
@@ -101,7 +101,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 >abstract="前回のコンテンツ転送アクティビティ以降に変更されたコンテンツを移動するには、追加取り込み機能を使用します。 取り込みが完了したら、エラーや警告がないかログを確認します。 エラーが発生した場合は、報告された問題を解決するかアドビカスタマーケアに連絡して、すぐに対処してください。"
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="ログの表示"
 
-コンテンツ転送ツールには、移行セットの&#x200B;*追加*&#x200B;を実行することで、差分コンテンツを抽出できる機能が備わっています。これにより、再度すべてのコンテンツを抽出するのではなく、前回の抽出以降に変更されたコンテンツのみを含めるように移行セットを変更できます。
+コンテンツトランスファーツールには、移行セットの&#x200B;*追加*&#x200B;を実行することで、差分コンテンツを抽出できる機能が備わっています。これにより、再度すべてのコンテンツを抽出するのではなく、前回の抽出以降に変更されたコンテンツのみを含めるように移行セットを変更できます。
 
 >[!NOTE]
 >最初のコンテンツ転送の後は、差分コンテンツの追加を頻繁に行って、Cloud Service での運用を開始する前に行う最終的な差分コンテンツ転送に必要なコンテンツ凍結期間を短縮することをお勧めします。最初の取り込みで事前コピー手順を使用した場合、後続の追加取り込みでは（追加移行セットのサイズが 200 GB 未満の場合）事前コピーをスキップできます。これは、プロセス全体に時間がかかる可能性があるためです。
@@ -237,7 +237,7 @@ MongoDB に保存されるノードプロパティの値は、16 MB 未満にす
 
 これは MongoDB の制限です。
 
-大きなノードすべてを見つけるのに役立つ Oak ツールへのリンクと詳細情報については、[コンテンツ転送ツールの前提条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)の `Node property value in MongoDB` メモを参照してください。サイズの大きいすべてのノードを修正したら、抽出と取り込みを再度実行します。
+大きなノードすべてを見つけるのに役立つ Oak ツールへのリンクと詳細情報については、[コンテンツトランスファーツールの前提条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)の `Node property value in MongoDB` メモを参照してください。サイズの大きいすべてのノードを修正したら、抽出と取り込みを再度実行します。
 
 この制限を回避するには、ソース AEM インスタンスで[ベストプラクティスアナライザー](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)を実行し、表示される結果、特に[「サポートされていないリポジトリ構造」（URS）](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/urs)パターンを確認します。
 
@@ -260,6 +260,7 @@ MongoDB に保存されるノードプロパティの値は、16 MB 未満にす
 * `Exhausted mongo restore retries` - 取り込まれた移行セットのコンテンツのローカルダンプをクラウドデータベースに復元する試みが失敗しました。これは、MongoDB の全体的なヘルス／ネットワークの問題を示し、多くの場合、数分後には修復されます。
 * `Mongo network error` - 場合によっては、MongoDB への接続の確立に失敗し、取り込みプロセスが早期に終了し、失敗として報告されることがあります。取り込みを単純に再試行する必要があります。
 * `Mongo server selection error` - これは Mongo クライアントサイドでまれに起こるタイムアウトエラーで、根本原因はいくつか考えられます。その後の再試行で、ほとんどの場合は問題が修正されます。
+* `Mongo took too long to start` – ごくまれに、取り込みワークフローで使用されるローカルの MongoDB を開始できない場合があります。 その後の再試行で、ほとんどの場合は問題が修正されます。
 
 ### 取り込みの取り消し {#ingestion-rescinded}
 
