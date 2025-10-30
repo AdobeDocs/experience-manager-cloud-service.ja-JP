@@ -3,13 +3,13 @@ title: ユニバーサルエディター用の RTE の設定
 description: ユニバーサルエディターでリッチテキストエディター（RTE）を設定する方法を説明します。
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 60699db418e5f02b8bdb0471eb2996c9caf5694b
+exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
+source-git-commit: d02c1a460a1d5ddd2d021b6677ebb5aa489e706f
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '497'
 ht-degree: 1%
 
 ---
-
 
 # ユニバーサルエディター用の RTE の設定 {#configure-rte}
 
@@ -17,13 +17,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->このドキュメントは、ユニバーサルエディターの新しい RTE に適用されます。この RTE は早期導入者機能として利用できます。 この新機能のテストに興味がある場合は、[&#x200B; 詳しくはリリースノートを参照してください &#x200B;](/help/release-notes/universal-editor/current.md#new-rte)。
+>このドキュメントは、ユニバーサルエディターの新しい RTE に適用されます。この RTE は早期導入者機能として利用できます。 この新機能のテストに興味がある場合は、[ 詳しくはリリースノートを参照してください ](/help/release-notes/universal-editor/current.md#new-rte)。
 
 ## 概要 {#overview}
 
 ユニバーサルエディターには、作成者がテキストの編集時に書式設定の変更を適用できるリッチテキストエディター（RTE）がインプレースおよびプロパティパネルで用意されています。
 
-この RTE は、[&#x200B; コンポーネントフィルターを使用して設定できます。](/help/implementing/universal-editor/filtering.md) このドキュメントでは、使用可能な設定オプションと例について説明します。
+この RTE は、[ コンポーネントフィルターを使用して設定できます。](/help/implementing/universal-editor/filtering.md) このドキュメントでは、使用可能な設定オプションと例について説明します。
 
 ## 設定の構造 {#structure}
 
@@ -32,7 +32,7 @@ RTE 設定は、次の 2 つの部分で構成されます。
 * [`toolbar`](#toolbar): ツールバー設定は、UI で使用できる編集オプションとその編成方法を制御します。
 * [`actions`](#actions): アクション設定を使用すると、個々の編集アクションの動作と外観をカスタマイズできます。
 
-これらの設定は、プロパティ [&#x200B; を使用して、](/help/implementing/universal-editor/filtering.md) コンポーネントフィルター `rte` の一部として定義できます。
+これらの設定は、プロパティ [ を使用して、](/help/implementing/universal-editor/filtering.md) コンポーネントフィルター `rte` の一部として定義できます。
 
 ```json
 [
@@ -73,7 +73,7 @@ RTE 設定は、次の 2 つの部分で構成されます。
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink"],
+    "insert": ["link", "unlink", "image"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -158,6 +158,27 @@ RTE 設定は、次の 2 つの部分で構成されます。
 * `hideTarget`: `true` - リンクからターゲット属性全体を除外します
 
 `unlink` アクションは、カーソルが既存のリンク内に配置されている場合にのみ表示されます。 テキストコンテンツを保持しながら、リンクの書式設定を削除します。
+
+### 画像アクション {#image}
+
+画像アクションは、レスポンシブな画像マークアップを生成するための画像要素のラッピングをサポートしています。 以下の節を使用できます。
+
+```json
+{
+  "actions": {
+    "image": {
+      "wrapInPicture": false,     // Use <img> tag (default)
+      "shortcut": "Mod-Shift-I",  // Custom keyboard shortcut
+      "label": "Insert Image"     // Custom button label
+    }
+  }
+}
+```
+
+#### 画像設定オプション {#image-options}
+
+* `wrapInPicture`: `false` （デフォルト） – 単純な `<img>` 要素を生成します
+* `wrapInPicture`:`true` - レスポンシブデザイン用に画像を `<picture>` 要素に含める
 
 ### その他のアクション {#other}
 
