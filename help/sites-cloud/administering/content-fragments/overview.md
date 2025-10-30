@@ -103,7 +103,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 * [分析](/help/sites-cloud/administering/content-fragments/analysis.md)  エディターを使用したコンテンツフラグメントの構造
 * [GraphQL を使用してフラグメントにアクセスし、アプリケーションへのヘッドレス配信を実現します](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)。
 * [Adobe Journey Optimizer でのコンテンツフラグメントの統合と使用](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
-* [ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) を作成および管理
+* [&#x200B; コンテンツフラグメントのローンチ &#x200B;](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) を作成および管理
 * [または、フラグメントをページオーサリングに使用します。](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
@@ -246,7 +246,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 * **コンテンツモデル**
 
-   * ](/help/sites-cloud/administering/content-fragments/setup.md)設定ブラウザーを使用して有効化[されます。
+   * [&#128279;](/help/sites-cloud/administering/content-fragments/setup.md)設定ブラウザーを使用して有効化されます。
    * [コンテンツフラグメントコンソールを使用して作成](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)されます。
    * [フラグメントを作成](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments)するために必要です。
    * フラグメントの構造（タイトル、コンテンツ要素、タグ定義）を定義します。

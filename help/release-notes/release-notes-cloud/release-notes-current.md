@@ -48,9 +48,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Experience Manager Sites の新機能 {#new-sites}
 
-* AEM コンテンツフラグメント用の [ コンテンツモデルエディター ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) は、AEMの他の React スペクトルベースのインターフェイスと連携するように最新化されました。 ユーザーインターフェイスの実装と拡張モデルが、コンテンツフラグメントエディターおよびユニバーサルエディターと一貫性を保つようになりました。新しいコンテンツモデル管理 UI から開いた場合、新しいモデルエディターがデフォルトになりました。タッチ UI でコンテンツモデルを開くと、タッチ UI エディターが開き、新しいエディターを試すことができます。
+* AEM コンテンツフラグメント用の [&#x200B; コンテンツモデルエディター &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) は、AEMの他の React スペクトルベースのインターフェイスと連携するように最新化されました。 ユーザーインターフェイスの実装と拡張モデルが、コンテンツフラグメントエディターおよびユニバーサルエディターと一貫性を保つようになりました。新しいコンテンツモデル管理 UI から開いた場合、新しいモデルエディターがデフォルトになりました。タッチ UI でコンテンツモデルを開くと、タッチ UI エディターが開き、新しいエディターを試すことができます。
 
-* [ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)：コンテンツフラグメントコンソールの「ローンチ」タブでは、ローンチの作成、既存のすべてのローンチの一覧表示、主要なプロパティの表示、ローンチに対するアクションの実行ができます。
+* [&#x200B; コンテンツフラグメントのローンチ &#x200B;](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)：コンテンツフラグメントコンソールの「ローンチ」タブでは、ローンチの作成、既存のすべてのローンチの一覧表示、主要なプロパティの表示、ローンチに対するアクションの実行ができます。
 
 <!--
 
@@ -139,7 +139,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 **自動メンテナンスアップデートの一時停止**
 
-運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[ 新しいセルフサービス機能 ](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
+運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[&#x200B; 新しいセルフサービス機能 &#x200B;](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
 
 * 静かな時間：毎日設定された時間に自動メンテナンスをブロックします。勤務時間、夜間の実行や朝の切り替え時などに最適です。
 * 更新不要の期間：自動メンテナンスを 1 週間ブロックします。ローンチ、プロモーションまたは年次フリーズに使用します。
@@ -147,13 +147,13 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >9月25日（PT）に限定提供機能として提供を開始します。
->>プログラムでアクティブ化するには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信してください。
+>&#x200B;>プログラムでアクティブ化するには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信してください。
 
 ### その他の宛先へのAEM ログ転送 {#log-forwarding}
 
 AEM ログを、Amazon S3、Sumo Logic、Dynatraceおよび（Adobeが提供するアカウントではなく）独自のNew Relic アカウントに転送できるようになりました。 なお、これらのログ先ではAEM ログ（Apache/Dispatcherを含む）がサポートされていますが、CDN ログはサポートされていません。
 
-すべての [ サポートされるログ転送宛先 ](/help/implementing/developing/introduction/log-forwarding.md) を参照してください。
+すべての [&#x200B; サポートされるログ転送宛先 &#x200B;](/help/implementing/developing/introduction/log-forwarding.md) を参照してください。
 
 ### Edge Delivery Servicesの設定パイプライン {#config-pipeline-eds}
 
@@ -203,7 +203,7 @@ Adobeは 2025 年 10 月 14 日に **ステージング** 環境と **実稼動*
 
 >[!NOTE]
 >
-> 最新のパフォーマンス最適化と言語強化を活用するには、Java 17 または Java 21 （推奨）を使用してビルドすることをお勧めします。 Java 8 および Java 11 を使用したビルドは、現時点ではサポートされていますが、今後のリリースで非推奨（廃止予定）になります。 廃止に先立ち、別途お知らせいたします。 *この記事* の [ ビルド時間要件 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) の節を参照してください。
+> 最新のパフォーマンス最適化と言語強化を活用するには、Java 17 または Java 21 （推奨）を使用してビルドすることをお勧めします。 Java 8 および Java 11 を使用したビルドは、現時点ではサポートされていますが、今後のリリースで非推奨（廃止予定）になります。 廃止に先立ち、別途お知らせいたします。 *この記事* の [&#x200B; ビルド時間要件 &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) の節を参照してください。
 >
 
 ### AEM Java ログ設定ポリシーの適用 {#logconfig-policy}
