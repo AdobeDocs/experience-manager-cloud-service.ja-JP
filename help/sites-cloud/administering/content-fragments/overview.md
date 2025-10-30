@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
-workflow-type: ht
-source-wordcount: '2014'
-ht-degree: 100%
+source-git-commit: d1e5651dcad75df430e7055f4f8162e666d91f04
+workflow-type: tm+mt
+source-wordcount: '2021'
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 >* [ページオーサリング用のコンテンツフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)の使用
 
 
-コンテンツフラグメントには、構造化されたコンテンツが含まれます。
+コンテンツフラグメントには、構造化コンテンツが含まれます。
 
 * 各フラグメントは、[コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)に基づいています。
    * [コンテンツフラグメントモデルは、生成されるフラグメントの構造を定義](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)します。
@@ -49,7 +49,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
       * また、アプリケーションへのヘッドレス配信にも使用できます。
    * 複合
       * テキスト、数値、ブーリアン、日時などの様々なデータ型のフィールドを多数組み合わせたもの。
-      * ページオーサリング用のより構造化されたコンテンツを用意するためや、アプリケーションにヘッドレス配信するために使用できます。
+      * ページオーサリング用のより構造化コンテンツを用意するためや、アプリケーションにヘッドレス配信するために使用できます。
    * 入れ子
       * 使用可能な参照データ型を使用して、コンテンツをネストできます。
       * アプリケーションへのヘッドレス配信に使用される傾向があります。
@@ -103,6 +103,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 * [分析](/help/sites-cloud/administering/content-fragments/analysis.md)  エディターを使用したコンテンツフラグメントの構造
 * [GraphQL を使用してフラグメントにアクセスし、アプリケーションへのヘッドレス配信を実現します](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)。
 * [Adobe Journey Optimizer でのコンテンツフラグメントの統合と使用](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
+* [ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) を作成および管理
 * [または、フラグメントをページオーサリングに使用します。](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]

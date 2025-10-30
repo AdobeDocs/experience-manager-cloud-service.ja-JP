@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: a974859746ca20f1979b773668a66be0197f623d
 workflow-type: tm+mt
-source-wordcount: '2940'
+source-wordcount: '3019'
 ht-degree: 22%
 
 ---
@@ -52,7 +52,7 @@ AEM Forms Workfront Fusion コネクタは、Adobe Experience Manager（AEM）Fo
 
 AEM Forms Workfront Fusion コネクタを使用すると、アダプティブフォームの送信時に自動的にトリガーされるワークフローをデザインできます。 例えば、送信されたデータを確認するタスクを特定の個人に割り当てるワークフローが開始され、アダプティブフォームから取り込まれた情報に基づいて、申し込みの承認または拒否ができるようになるシナリオを想定します。この合理化された統合によって効率がよくなり、ワークフロープロセスに新しいレベルの自動化が実現します。
 
-開始する準備はできていますか？ [Adobe Workfront Fusion へのアダプティブフォームの送信 &#x200B;](/help/forms/submit-adaptive-form-to-workfront-fusion.md) ドキュメントには、新機能を使用するためのステップバイステップのガイドが記載されています。
+開始する準備はできていますか？ [Adobe Workfront Fusion へのアダプティブフォームの送信 ](/help/forms/submit-adaptive-form-to-workfront-fusion.md) ドキュメントには、新機能を使用するためのステップバイステップのガイドが記載されています。
 
 <!-- <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> -->
 
@@ -75,11 +75,11 @@ Formsの対話型コンテンツは次のとおりです。
 
 ### AEM FormsからMarketoへのコネクタ
 
-[AEM Forms/Marketo コネクタ &#x200B;](/help/forms/integrate-form-to-marketo-engage.md) は、Adobe Experience Manager（AEM）で作成された web フォーム（アダプティブForms）とマーケティング自動処理プラットフォームのMarketoとの間のギャップを埋めます。
+[AEM Forms/Marketo コネクタ ](/help/forms/integrate-form-to-marketo-engage.md) は、Adobe Experience Manager（AEM）で作成された web フォーム（アダプティブForms）とマーケティング自動処理プラットフォームのMarketoとの間のギャップを埋めます。
 
 AEM アダプティブFormsで作成された web サイト上のフォームが誰かに送信されると、コネクタは、送信されたデータがMarketoに自動的に送信されるようにします。 これにより、手動でのデータ入力が不要になり、エラーのリスクが軽減されます。
 
-![AEM Form - Marketo コネクタ &#x200B;](/help/forms/assets/aem-forms-marketo-connector.jpeg)
+![AEM Form - Marketo コネクタ ](/help/forms/assets/aem-forms-marketo-connector.jpeg)
 
 データ転送プロセスを合理化することで、コネクタは web サイトのコンバージョン率の向上に役立ちます。 リードデータをMarketoに自動送信することで、適格なリードを育成プログラムにすばやく入力できます。
 
@@ -88,7 +88,7 @@ AEM アダプティブFormsで作成された web サイト上のフォームが
 開始する準備はできていますか？ 次の記事では、イノベーションを使用する詳細な手順を説明します。
 
 * [Marketo Engage の AEM Forms への統合](/help/forms/integrate-form-to-marketo-engage.md)
-* [&#x200B; アダプティブフォームとMarketo Engageの統合 &#x200B;](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [ アダプティブフォームとMarketo Engageの統合 ](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
 * [既存のアダプティブFormsに対するMarketo Engageとデータソースの設定](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [Marketo Engageへの既存のアダプティブフォームの送信](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
@@ -96,7 +96,7 @@ AEM アダプティブFormsで作成された web サイト上のフォームが
 
 Cloud 上のインタラクティブ通信は、業務上の書簡、ドキュメント、取引明細書、給付金通知、マーケティング用メール、請求書、ウェルカムキットなど、データ駆動型のインタラクティブ通信を作成および管理し、配信するための強力なソリューションです。
 
-![インタラクティブ通信エディター](/help/forms/assets/ic-editor.png)
+![インタラクティブなコミュニケーションエディター](/help/forms/assets/ic-editor.png)
 
 #### 主な機能：
 
@@ -122,6 +122,17 @@ Cloud 上のインタラクティブ通信は、業務上の書簡、ドキュ�
 * **カスタムフォント：** カスタムフォントまたは組織の承認済みフォントを埋め込んで、デバイス間で一貫性のあるブランドのPDF レンダリングを確保します。
 * **読み込みと書き出し：** 環境をまたいで、インタラクティブ通信をフラグメントやデータモデルとシームレスに移行して再利用します。
 
+* **テンプレートロック**：テンプレート内のコンテンツやレイアウト要素をロックして、ブランドの整合性を維持し、不正な変更を防ぎます。
+
+* **コンテンツオーバーフロー**：フローレイアウトを使用して複数ページの編集をスムーズに行い、複雑なドキュメントのテキスト管理を強化する「コンテンツ内で改ページを許可」オプション。
+
+* **XDP ファイルの編集**:Microsoft Windows デスクトップでのみ動作するForms Designerの代わりに、ブラウザーで XDP ファイルを編集できるようになりました。
+
+##### 動的ページ番号
+
+複数ページのドキュメントにわたって明確で一貫性のあるページネーションを行うために、マスターページに「Page # of ##」を自動的に表示します。
+
+
 
 #### ユースケース：
 
@@ -136,13 +147,13 @@ Cloud 上のインタラクティブ通信は、業務上の書簡、ドキュ�
 
 AEM FormsをAdobe Experience Platform（AEP）と接続して、顧客プロファイルとデータを活用し、パーソナライズされたフォームエクスペリエンスと、フォーム送信に基づくトリガーのダウンストリームワークフローを実現できます。 フォームデータをAEP データセットに直接送信することで、顧客プロファイルをエンリッチメントし、ユーザーのインタラクションに関するより深いインサイトを得ることができます。
 
-開始する準備はできていますか？ [AEM FormsとAdobe Experience Platform（AEP）の統合の詳細 &#x200B;](/help/forms/aem-forms-aep-connector.md)
+開始する準備はできていますか？ [AEM FormsとAdobe Experience Platform（AEP）の統合の詳細 ](/help/forms/aem-forms-aep-connector.md)
 
 ### AEM FORMS HTML5 FORMS
 
 AEM Forms HTML5 Formsを使用すると、既存の XFA （XML Forms Architecture）フォームテンプレートをHTML5 形式でレンダリングし、XFA ベースのPDFがサポートされていない最新のブラウザーやモバイルデバイスでアクセスできるようにします。 この機能は、従来のPDF formsと最新の web エクスペリエンスのギャップを埋めます。
 
-![HTML5 Formsのプレビュー &#x200B;](/help/forms/assets/mobile_form_on_an_ipad_date_14.png)
+![HTML5 Formsのプレビュー ](/help/forms/assets/mobile_form_on_an_ipad_date_14.png)
 
 **主な機能：**
 
@@ -160,7 +171,7 @@ AEM Forms HTML5 Formsを使用すると、既存の XFA （XML Forms Architectur
 
 * **ドラフトの保存**:HTML5 フォームをドラフトとして保存し、後の段階でフォームへの入力を再開します。
 
-開始する準備はできていますか？ [HTML5 Forms の概要 &#x200B;](/help/forms/introductionhtml5.md) ドキュメントでは、この新機能の包括的な概要とはじめる前にを説明しています。
+開始する準備はできていますか？ [HTML5 Forms の概要 ](/help/forms/introductionhtml5.md) ドキュメントでは、この新機能の包括的な概要とはじめる前にを説明しています。
 
 ### カスタムコンポーネント用のAEM Forms基礎モード CLI
 
@@ -219,7 +230,7 @@ API 統合ツールにより、フォーム作成者は、ユーザーの操作�
 
 この機能は、アラビア語、ヘブライ語、ウルドゥ語などの言語に対応し、RTL （Right-to-Left）で書かれたり読まれたりするので、フォームの理解度と完了率が向上します。
 
-![&#x200B; 右から左（RTL）言語のサポート &#x200B;](mobile-responsive.png)
+![ 右から左（RTL）言語のサポート ](mobile-responsive.png)
 
 アダプティブFormsでの右から左（RTL）言語のサポートは、次のような場合に役立ちます。
 
@@ -231,7 +242,7 @@ API 統合ツールにより、フォーム作成者は、ユーザーの操作�
 
 全体として、アダプティブFormsの RTL 言語のサポートにより、企業は真にグローバルなフォームを設計し、リーチ、エンゲージメントおよびインクルーシブ性を高めることができます。
 
-開始する準備はできていますか？ [&#x200B; アダプティブForms RTL ドキュメント &#x200B;](/help/forms/supporting-new-language-localization-core-components.md) では、RTL の技術革新を使用するためのステップバイステップのガイドを提供します。
+開始する準備はできていますか？ [ アダプティブForms RTL ドキュメント ](/help/forms/supporting-new-language-localization-core-components.md) では、RTL の技術革新を使用するためのステップバイステップのガイドを提供します。
 
 ### ボット保護方法の強化
 
@@ -291,7 +302,7 @@ Azure Blob Storage に PDF を格納すると、ドキュメントを一元管�
 
 ### ビジュアルルールエディターの機能強化
 
-* アダプティブFormsのビジュアルルールエディターでは、フォームデータモデルを必要としない [&#x200B; ダイレクト API 統合 &#x200B;](/help/forms/api-integration-in-rule-editor.md) がサポートされるようになりました。 API エンドポイントに接続するには、JSON URL を入力するか、cURL コマンドを使用して設定を読み込みます。 統合後、`Invoke Service` アクションを使用して API を呼び出すことができます。
+* アダプティブFormsのビジュアルルールエディターでは、フォームデータモデルを必要としない [ ダイレクト API 統合 ](/help/forms/api-integration-in-rule-editor.md) がサポートされるようになりました。 API エンドポイントに接続するには、JSON URL を入力するか、cURL コマンドを使用して設定を読み込みます。 統合後、`Invoke Service` アクションを使用して API を呼び出すことができます。
 
 ## 関連トピック
 

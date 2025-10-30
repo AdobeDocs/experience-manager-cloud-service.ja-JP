@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+source-git-commit: 67a15a502dad883d5a370fedb16a5faca64ecf06
 workflow-type: tm+mt
-source-wordcount: '2081'
-ht-degree: 91%
+source-wordcount: '1628'
+ht-degree: 69%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 91%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.9.0）の公開日は 2025年9月25日（PT）です。次回の機能リリース（2025.10.0）は、2025年10月30日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.10.0）のリリース日は、2025年10月30日（PT）です。次回の機能リリース（2025.10.0）は 2025年11月20日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -40,47 +40,17 @@ ht-degree: 91%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?captions=jpn&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Experience Manager Sites プレリリースの新機能 {#prerelease-sites}
+### Experience Manager Sites の新機能 {#new-sites}
 
-AEM コンテンツフラグメントのコンテンツモデルエディターは、AEM の他の React スペクトルベースのインターフェイスと連携するように最新化されました。ユーザーインターフェイスの実装と拡張モデルが、コンテンツフラグメントエディターおよびユニバーサルエディターと一貫性を保つようになりました。新しいコンテンツモデル管理 UI から開いた場合、新しいモデルエディターがデフォルトになりました。タッチ UI でコンテンツモデルを開くと、タッチ UI エディターが開き、新しいエディターを試すことができます。
+* AEM コンテンツフラグメント用の [ コンテンツモデルエディター ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) は、AEMの他の React スペクトルベースのインターフェイスと連携するように最新化されました。 ユーザーインターフェイスの実装と拡張モデルが、コンテンツフラグメントエディターおよびユニバーサルエディターと一貫性を保つようになりました。新しいコンテンツモデル管理 UI から開いた場合、新しいモデルエディターがデフォルトになりました。タッチ UI でコンテンツモデルを開くと、タッチ UI エディターが開き、新しいエディターを試すことができます。
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
-
-### アセットビューの新機能 {#new-features-assets-view}
-
-**Dynamic Media テンプレートの部分文字列を使用した拡張テキスト書式設定**
-
-Dynamic Media テンプレートテキストレイヤー内の部分文字列に書式設定を適用できるようになりました。選択した単語や語句は別のレイヤーとして扱われ、フォント、フォントサイズ、色などを調整できます。部分文字列レイヤーは、テンプレートの配信 URL を使用してリアルタイムに更新できるようにパラメーター化されます。
-
-### コンテンツハブの新機能 {#new-features-content-hub}
-
-**コレクションをお気に入りに登録**
-
-Content Hubでコレクションをお気に入りに登録して、整理と取得を簡単にしました。 追加すると、お気に入りのコレクションをContent Hub ホームページの **[!UICONTROL お気に入り]** タブから簡単に使用できます。
-
-**クイックアクセス用にコレクションをピン留め**
-
-Content Hub管理者は、クイックアクセス用にContent Hubでコレクションをピン留めできるようになりました。 ピン留めされたコレクションは、コレクションホームページの専用の **[!UICONTROL ピン留め]** セクションに表示されるので、重要なコレクションを手の届くところに簡単に保持できます。
-
->[!IMPORTANT]
->
->これらの機能は、限定提供（LA）機能として利用できます。 [アドビカスタマーサポートケースを作成および送信](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)し、デプロイメントで有効にすることができます。
-
-### OpenAPI 機能を備えた Dynamic Media の新機能 {#new-features-dynamic-media-with-openapi}
-
-**ブランド化され、読み取り可能なアセット配信 URL**
-
-OpenAPI を使用して Dynamic Media でバニティ URL を活用することで、OpenAPI URL を使用した Dynamic Media をより人間が読みやすいものにします。 バニティー URL を使用すると、アセット配信 URL に含まれる、システムで生成され、記憶が困難な長い UUID を、ブランドで制御される短い識別子に置き換えることができます。 これにより、バニティー URL が短くなり、読みやすく、共有が容易になり、ブランドやキャンペーンとのより良い関連付けが可能になります。 バニティ URL は、既存のワークフローを中断することなく、実行時に元のアセット UUID に自動的に解決されます。
-
->[!NOTE]
->
->この機能は、限定提供（LA）機能として利用できます。開始するには、[&#x200B; この記事 &#x200B;](/help/assets/vanity-urls.md) を参照してください。
+* [ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)：コンテンツフラグメントコンソールの「ローンチ」タブでは、ローンチの作成、既存のすべてのローンチの一覧表示、主要なプロパティの表示、ローンチに対するアクションの実行ができます。
 
 <!--
 
@@ -96,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -104,23 +74,23 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 ### Experience Manager Forms の新機能 {#new-features-forms}
 
-**SharePoint リスト添付ファイルのフォームデータモデルを起動ワークフローステップ**
+**アダプティブフォームとフォームフラグメント用のユニバーサルエディター**
 
-フォームデータモデルを起動ワークフローステップで、SharePoint リストベースのフォームデータモデルにおける Base64 エンコードされた添付ファイル配列のワークフローサイドメタデータの処理がサポートされるようになりました。この機能強化により、ワークフローステップでは、各添付ファイルのファイル名、MIME タイプ、カスタムプロパティなどのメタデータを渡し、保存し、取得することができます。この機能により、より包括的なデータ管理が可能になり、シームレスなダウンストリーム統合が容易になります。詳しくは、[SharePoint リスト添付ファイル用のフォームデータモデルを起動ワークフローステップでのサポート強化](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step)を参照してください。
+ユニバーサルエディターは、アダプティブFormsと再利用可能なフォームフラグメントを作成するための統一されたオーサリングエクスペリエンスを提供するようになりました。 作成者は、フォームの視覚的なデザイン、送信アクションの設定および reCAPTCHA 検証の統合を、直感的なWYSIWYG環境内で行えます。
 
-### AEM Forms のプレリリース機能
+<!-- ### Pre-Release features in AEM Forms 
 
-**ルールエディターの機能強化**
+**Rule Editor Enhancements**
 
-ルールエディターは拡張ナビゲーションをサポートするようになり、入力パラメーターで関数および数式を使用できるようになりました。
+The Rule Editor now supports enhanced navigation and allows use of function and mathematical expressions in input parameters.
 
-**イベントペイロードのサポートによるナビゲーションの強化**
+**Enhanced Navigation with Event Payload Support**
+ 
+The `Navigate To` action in the Invoke Service handlers now supports `EVENT_PAYLOAD`, enabling form authors to configure follow-up actions based on event responses. This enhancement offers greater flexibility in designing post-submission workflows, ensuring smoother transitions and more personalized user experiences. For more information, see [Enhanced Navigation with Event Payload Support](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
 
-呼び出しサービスハンドラーの `Navigate To` アクションは `EVENT_PAYLOAD` をサポートするようになり、フォーム作成者はイベント応答に基づくフォローアップアクションを設定できるようになりました。この機能強化により、送信後のワークフロー設計の柔軟性が向上し、よりスムーズな移行と、よりパーソナライズされたユーザーエクスペリエンスが実現します。詳しくは、[イベントペイロードのサポートによるナビゲーションの強化](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)を参照してください。
-
-**入力パラメーターでの関数および数式のサポート**
-
-入力パラメーターは、関数呼び出しと数式の両方をサポートするようになり、フォーム作成者は動的に計算された値を直接渡すことができるようになりました。この機能強化により、ルール設定が合理化され、追加のフィールドが不要になり、フォームが複雑なロジックや計算駆動型のシナリオに適応しやすくなります。詳しくは、[入力パラメーターでの関数および数式のサポート](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)を参照してください。
+**Function and Mathematical Expression Support in Input Parameters**
+ 
+Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters). -->
 
 ### AEM Forms の新しい早期アクセス機能 {#forms-new-early-access-features}
 
@@ -128,17 +98,23 @@ AEM Forms 早期アクセスプログラムでは、最先端の革新機能に�
 
 これらのリリースノートでは、現在のリリースで提供されるイノベーションのリストを示します。早期アクセスプログラムで利用可能なイノベーションの完全なリストについて詳しくは、[AEM Forms 早期アクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
 
-**インタラクティブなコミュニケーションエディターでの PDF プレビュー**
+#### インタラクティブ通信の機能強化
 
-ユーザーは、データのない、ローカル JSON データファイル、またはデータモデルのデータを使用したインタラクティブなコミュニケーション PDF をプレビューできるので、柔軟なデータ駆動型テストが可能になります。詳しくは、[インタラクティブなコミュニケーションエディターでの PDF プレビュー](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)を参照してください。
+##### テンプレートのロック
 
-**インタラクティブなコミュニケーションでのカスタムフォントのサポート**
+テンプレート内のコンテンツおよびレイアウト要素をロックして、ブランドの整合性を維持し、不正な変更を防ぎます。 これにより、すべての通信でデザインの一貫性が確保されます。
 
-カスタムフォント機能を使用すると、カスタムフォントや組織が承認したフォントをインタラクティブなコミュニケーションに埋め込むことができ、デバイスやプラットフォームをまたいで一貫性のあるブランドの PDF レンダリングを実現できます。詳しくは、[インタラクティブなコミュニケーションでのカスタムフォントのサポート](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)を参照してください。
+##### コンテンツオーバーフローのサポート
 
-**インタラクティブなコミュニケーションの読み込みと書き出し**
+フローレイアウト用の「コンテンツ内の改ページを許可」オプションの導入。 この機能強化により、複数ページの編集がスムーズになり、複雑なドキュメントのテキスト管理が向上します。
 
-この機能により、様々な環境でのインタラクティブなコミュニケーションの移行と再利用が可能になります。ある環境からインタラクティブなコミュニケーションを、関連するフラグメントとデータモデルと共に書き出して、別の環境に読み込めるようになりました。詳しくは、[インタラクティブなコミュニケーションの読み込みと書き出し](/help/forms/interactive-communication/import-and-export-interactive-communications.md)を参照してください。
+##### XDP ファイル編集
+
+インタラクティブ通信エディターで、フラグメント統合を含む XDP の編集がサポートされるようになりました。 Microsoft Windows デスクトップでのみ動作するForms Designerの代わりに、ブラウザーで XDP ファイルを編集できるようになりました。
+
+##### 動的ページ番号
+
+複数ページのドキュメントにわたって明確で一貫性のあるページネーションを行うために、マスターページに「Page # of ##」を自動的に表示します。
 
 <!--
 **Forms Optimization opportunities**
@@ -163,7 +139,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 **自動メンテナンスアップデートの一時停止**
 
-運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[&#x200B; 新しいセルフサービス機能 &#x200B;](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
+運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[ 新しいセルフサービス機能 ](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
 
 * 静かな時間：毎日設定された時間に自動メンテナンスをブロックします。勤務時間、夜間の実行や朝の切り替え時などに最適です。
 * 更新不要の期間：自動メンテナンスを 1 週間ブロックします。ローンチ、プロモーションまたは年次フリーズに使用します。
@@ -171,13 +147,21 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >9月25日（PT）に限定提供機能として提供を開始します。
->&#x200B;>プログラムでアクティブ化するには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信してください。
+>>プログラムでアクティブ化するには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信してください。
 
-### AEM Developer Tools for Eclipse の新しいリリース {#aem-develeper-tools-for-eclipse}
+### その他の宛先へのAEM ログ転送 {#log-forwarding}
 
-AEM Developer Tools for Eclipse のバージョン 1.4.0 がリリースされました。このバージョンでは、Eclipse IDE 2022-12 以降のサポートが追加され、現在のバージョン（2025-09）で検証されています。このツールは、最新バージョンの AEM プロジェクトアーキタイプで機能するようになり、Sling IDE Tooling 1.3.0 の改善点が組み込まれています。
+AEM ログを、Amazon S3、Sumo Logic、Dynatraceおよび（Adobeが提供するアカウントではなく）独自のNew Relic アカウントに転送できるようになりました。 なお、これらのログ先ではAEM ログ（Apache/Dispatcherを含む）がサポートされていますが、CDN ログはサポートされていません。
 
-詳しくは、[Eclipse Marketplace](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse) からインストールし、[AEM Developer Tools ページ](https://eclipse.adobe.com)を参照してください。
+すべての [ サポートされるログ転送宛先 ](/help/implementing/developing/introduction/log-forwarding.md) を参照してください。
+
+### Edge Delivery Servicesの設定パイプライン {#config-pipeline-eds}
+
+Edge Delivery Servicesで作成されたサイトで Config パイプラインがサポートされるようになり、この機能がAEM オーサーおよびAEM パブリッシュ配信のみに拡張されました。 設定パイプラインを使用して、トラフィックフィルタールールや接触チャネルセレクターなどの CDN 設定を管理できます。 詳しくは、[サポートされている設定](/help/operations/config-pipeline.md#configurations)を参照してください。
+
+Edge Delivery 設定パイプラインは、Cloud Manager パイプライン変数を通じて秘密鍵もサポートします。
+
+[Edge Delivery パイプラインを追加する](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)を参照してください。
 
 ### 今後の Java API の非推奨（廃止予定） {#java-api-deprecation}
 
@@ -215,19 +199,18 @@ OSGi properties:
 
 ### Java 11 ランタイムの非推奨（廃止予定） {#java11-runtime-deprecation}
 
-*Java 11 ランタイム*&#x200B;は廃止となり、大半の環境はよりパフォーマンスの高い **Java 21 ランタイム**&#x200B;にアップグレードされています。
-
-サポートされていない依存関係が原因で環境をアップグレードできなかった場合（[Java 21 ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)を参照）は、次の手順を記載したメールがアドビから届いているはずです。ここで説明しているように、アドビは **2025年9月18日（PT）**&#x200B;に&#x200B;**開発**&#x200B;環境と **RDE** 環境をアップグレードして、サイトとプロセスを検証し、問題に対処できるようにします。**ステージ**&#x200B;と&#x200B;**実稼動**&#x200B;のアップグレードは、**2025年10月14日（PT）**&#x200B;に実施されます。
+Adobeは 2025 年 10 月 14 日に **ステージング** 環境と **実稼動** 環境を高性能の **Java 21 ランタイム** にアップグレードしました。 1 月下旬からは、AEM Cloud Service SDKもどのクラウド環境も Java 11 ランタイムで動作しなくなります。
 
 >[!NOTE]
 >
->ランタイムバージョンは、コードのビルドバージョンとは別のものです。Java 21 を使用してビルドすることをお勧めしますが、現時点では Java 11 ビルドも引き続き使用できます。Java 11 ビルドの廃止に関する通知は、今後共有される予定です。
+> 最新のパフォーマンス最適化と言語強化を活用するには、Java 17 または Java 21 （推奨）を使用してビルドすることをお勧めします。 Java 8 および Java 11 を使用したビルドは、現時点ではサポートされていますが、今後のリリースで非推奨（廃止予定）になります。 廃止に先立ち、別途お知らせいたします。 *この記事* の [ ビルド時間要件 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) の節を参照してください。
+>
 
 ### AEM Java ログ設定ポリシーの適用 {#logconfig-policy}
 
 4 月のリリースノートに記載されているように、AEMの Java ログは、すべてのお客様の環境で信頼性の高い監視を確実に行うために、標準に従う必要があります。 ログ形式、出力ファイル、デフォルトログレベルの変更といったカスタムログ設定は、サポートされなくなりました。 ログはデフォルトファイルにダイレクトされ続け、AEM 製品コードのデフォルトログレベルは保持される必要があります。 詳しくは、[ログに関する記事](/help/implementing/developing/introduction/logging.md#configuration-loggers)を参照してください。
 
-**10月30日（PT）**&#x200B;から、サポートされていないカスタムログの上書きは無視されるようになります。Adobe の分析によると、ほとんどのお客様は影響を受けることはありません。現在の設定が影響を受ける可能性があるお客様にはご連絡済みです。
+**11 月 20 日** 以降、サポートされていないカスタム記録の上書きは無視されます。 Adobe の分析によると、ほとんどのお客様は影響を受けることはありません。現在の設定が影響を受ける可能性があるお客様にはご連絡済みです。
 
 カスタムログ動作に依存するダウンストリームプロセスを確認し、更新してください。 例：
 
@@ -271,24 +254,25 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 アクセスをリクエストしてフィードバックを共有するには、[aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) にメールを送信してください。
 
+
+### AI 回答 – AEM Sitesに対する、よりスマートでコンテキスト対応の応答（Beta プログラム） {#ai-answers-beta}
+
+AI Answers は、訪問者がコンテンツを操作する新しい方法を導入します。 Retrieval-Augmented Generation （RAG）テクノロジーを活用し、AEMが管理するデータを使用して、デジタルエクスペリエンス内で直接、正確でブランドに一貫性のある回答を提供します。
+
+このベータ版の一部として、AEM Cloud Service 環境で AI の回答を安全に調べることができます。 このアプローチにより、パフォーマンス、精度および全体的なエクスペリエンスをライブオーディエンスに提供する前に検証できます。 検証が完了したら、AI Answers エクスペリエンスを完全な実稼動環境に昇格できます。
+
+ベータ版へのアクセスをリクエストしたり、フィードバックを共有したりするには、[feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com) にお問い合わせください。
+
+
 ### RDE のスナップショット（Alpha プログラム） {#rde-snapshot-program}
 
 Alpha では、高速開発環境（RDE）で、コードとコンテンツの現在の状態のスナップショットを取得し、後で復元できる機能がサポートされるようになりました。 これは、元に戻す必要がある場合のあるコードを同期する場合や、異なる機能の開発を切り替える場合に役立つことがあります。 また、テストの既知の開始点として、可変コンテンツのみを復元することもできます。
 
 この機能に関するフィードバックをお送りいただく場合は、[aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) までメールでお問い合わせください。
 
-### その他の宛先への AEM ログ転送 (Beta プログラム) {#log-forwarding-beta}
-
-ログは Cloud Manager からダウンロードできますが、多くの組織では、これらのログを優先されるログの宛先にストリーミングすると役立ちます。 AEM では、Azure Blob Storage、Datadog、HTTPS、Elasticsearch (および OpenSearch)、Splunk への AEM および CDN ログ転送をサポートしています。 この機能は、セルフサービス方式で設定し、設定パイプラインを使用してデプロイします。
-
-Beta では、Amazon S3、Sumo Logic、Dynatrace および独自のNew Relic アカウント（Adobe が提供するアカウントではありません）に AEM ログを転送できます。 AEM ログ (Apache／Dispatcher など) はサポートされていますが、CDN ログはサポートされていません。 アクセスについて詳しくは、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) までメールで送信してください。
-
-詳しくは、[ログ転送ドキュメント](/help/implementing/developing/introduction/log-forwarding.md)を参照してください。
-
 ### アプリケーションパフォーマンスモニタリング（APM）の拡張（Alpha プログラム） {#apm-alpha}
 
 観測性のために、AEM Cloud Service は現在、アドビ提供の [New Relic One](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)と顧客管理の [Dynatrace](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) をサポートしています。追加の APM オプションのサポートを検討中ですので、ユースケースと共に、ご希望のベンダーまたはテクノロジーを記載したメールを [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) までお送りください。
-
 
 ## [!DNL Experience Manager] ガイド {#guides}
 

@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 3859393b94680ac1c786bfe31950e6073650167f
-workflow-type: ht
-source-wordcount: '977'
-ht-degree: 100%
+source-git-commit: 20ad1d468ac0d8ec3933477f954120debe4e9240
+workflow-type: tm+mt
+source-wordcount: '1027'
+ht-degree: 96%
 
 ---
 
@@ -18,13 +18,11 @@ Adobe Experience Manager（AEM）as a Cloud Service では、ローンチを使�
 
 *ローンチ*&#x200B;を作成すると、現在のコンテンツを維持しながら、今後の公開に備えて変更を加えることができます。AEM ページの場合、つまり、現在公開されているページと、今後公開される予定のページの 2 つのバージョンを同時に効果的に編集していることになります。公開予定の時期が来たら、元のページを置き換えて新しいバージョンを公開できます。
 
-<!--
 >[!NOTE]
 >
->Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
+>ローンチはコンテンツフラグメントでも使用できます。 基本的な概念は同じですが、AEM での管理方法には違いがあります。
 >
->For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
--->
+>詳しくは、[ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) を参照してください。
 
 *ローンチ*&#x200B;を作成し、*ローンチ*&#x200B;ページを編集および更新した後、*ソース*&#x200B;に&#x200B;*昇格*&#x200B;して戻します。その後、これらの&#x200B;*ソース*&#x200B;ページ（上位レベル）をアクティブ化できます。昇格により、ローンチコンテンツを複製してソースページに戻します。これは、手動または自動で行うことができます（ローンチを作成および編集するときに設定されるフィールドに依存します）。
 
@@ -115,13 +113,11 @@ Adobe Experience Manager（AEM）as a Cloud Service では、ローンチを使�
 
 ## ローンチコンソール {#the-launches-console}
 
-<!--
 >[!NOTE]
 >
->This console is only for Launches for Pages. 
+>このコンソールはページのローンチ専用です。
 >
->To manage your Content Fragments see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
--->
+>コンテンツフラグメントを管理するには、[ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) を参照してください。
 
 ローンチコンソールを使用すると、ローンチの概要を確認し、リストされたローンチに対して処理を実行できます。
 
