@@ -4,10 +4,7 @@ description: 「様々なデータオプションを使用したインタラク�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 14%
@@ -47,19 +44,19 @@ PDFのプレビュー機能を使用すると、インタラクティブ通信�
 
 1.2. データのない通信を表示するには、「PDF プレビュー」オプションを使用し、「**データなし**」オプションを選択します。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/nodata.png)
+![IC Docu の検索 ](/help/forms/interactive-communication/assets/nodata.png)
 
 +++
 
 +++&#x200B;2. ローカル JSON データを使用したプレビュー
 
-2.1.構造化 JSON ファイルを準備する 参考までに、通信に使用される JSON スキーマ [&#x200B; （FDM）からサンプルデータをコピー &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) きます。
+2.1.構造化 JSON ファイルを準備する 参考までに、通信に使用される JSON スキーマ [ （FDM）からサンプルデータをコピー ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) きます。
 
 2.2. IC Editor で、**PDF Preview** > Using Local Data に移動します。
 
 2.3. JSON ファイルを選択してアップロードし、提供されたデータでPDF プレビューをレンダリングする。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/localdata.png)
+![IC Docu の検索 ](/help/forms/interactive-communication/assets/localdata.png)
 
 +++
 
@@ -69,7 +66,7 @@ PDFのプレビュー機能を使用すると、インタラクティブ通信�
 
 3.2. プレビューでは、モデルフィールドからデータが自動的に入力されます。 最初の使用時にサンプルデータが FDM に保存されていることを確認してください。保存されていない場合、プレビューがデータなしで表示されることがあります。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/datamodel.png)
+![IC Docu の検索 ](/help/forms/interactive-communication/assets/datamodel.png)
 
 +++
 

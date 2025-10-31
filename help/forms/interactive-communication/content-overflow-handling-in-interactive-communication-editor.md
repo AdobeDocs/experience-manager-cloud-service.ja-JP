@@ -4,10 +4,7 @@ description: インタラクティブ通信エディターでのコンテンツ�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 0cfbf6d61bc2d557b0a096db5b3cb26ae4570748
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 17%
@@ -27,8 +24,7 @@ ht-degree: 17%
 
 ## はじめに
 
-インタラクティブ通信エディターのコンテンツオーバーフロー処理機能により、フローレイアウトおよび配置済みレイアウトでのテキストの動作が強化されます。
-フローレイアウトではコンテンツの連続性がスムーズに保たれ、配置済みレイアウトでは視覚的なアラートが提供されるので、作成者はコミュニケーションをデザインする際にコントロールが強化され、柔軟性が高まります。
+インタラクティブ通信エディターのコンテンツオーバーフロー処理機能により、フローレイアウトおよび配置済みレイアウトでのテキストの動作が強化されます。 フローレイアウトではコンテンツの連続性がスムーズに保たれ、配置済みレイアウトでは視覚的なアラートが提供されるので、作成者はコミュニケーションをデザインする際にコントロールが強化され、柔軟性が高まります。
 
 ## 主な機能
 

@@ -4,10 +4,7 @@ description: インタラクティブ通信の読み込みと書き出しを使�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 15%
@@ -39,11 +36,11 @@ ht-degree: 15%
 
 +++&#x200B;1. インタラクティブ通信の書き出し方法
 
-1.1. [&#x200B; 作成されたインタラクティブ通信 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) （IC）を選択します。
+1.1. [ 作成されたインタラクティブ通信 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) （IC）を選択します。
 1.2. 「**ダウンロード**」オプションをクリックして、ZIP ファイルとしてエクスポートします。
 1.3. ダウンロードした ZIP ファイルには、選択した **template**、**fragments**、および **data model** と共に IC が含まれています。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/downloadic.png)
+![IC Docu の検索 ](/help/forms/interactive-communication/assets/downloadic.png)
 +++
 
 +++&#x200B;2. インタラクティブ通信の読み込み方法
@@ -52,11 +49,11 @@ ht-degree: 15%
 2.2. **Forms/Formsとドキュメント/作成/ファイルのアップロード** に移動します。
 2.3. IC に ZIP ファイルをアップロードし **インポート** します。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/uploadfile.png)
+![IC Docu の検索 ](/help/forms/interactive-communication/assets/uploadfile.png)
 
 2.4. アップロード後、IC は関連するフラグメントおよびデータモデルと共に表示されます。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/importfragment.png)
+![IC Docu の検索 ](/help/forms/interactive-communication/assets/importfragment.png)
 +++
 
 +++&#x200B;3. フラグメントの読み込みと書き出し

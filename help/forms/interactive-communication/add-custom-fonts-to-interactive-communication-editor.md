@@ -4,10 +4,7 @@ description: インタラクティブ通信エディターでカスタムフォ�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 25%
@@ -39,5 +36,5 @@ ht-degree: 25%
 
 >[!NOTE]
 >
-> 設定手順について詳しくは、「カスタムフォントの使用 [&#x200B; のガイドに従ってください &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
-> &#x200B;>手順を完了しパイプラインを実行すると、カスタムフォントをインタラクティブ通信エディターで直接使用できるようになります。
+> 設定手順について詳しくは、「カスタムフォントの使用 [ のガイドに従ってください ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
+> >手順を完了しパイプラインを実行すると、カスタムフォントをインタラクティブ通信エディターで直接使用できるようになります。
