@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.9.0 リリー�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.9.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: e41828b04a33cc36ee2fc8a4704d9c3cf352830b
+source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
 workflow-type: tm+mt
-source-wordcount: '2088'
-ht-degree: 92%
+source-wordcount: '2083'
+ht-degree: 89%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 92%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?captions=jpn&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -64,7 +64,7 @@ OpenAPI を使用して Dynamic Media でバニティ URL を活用すること�
 
 >[!NOTE]
 >
->この機能は、限定提供（LA）機能として利用できます。開始するには、この [&#x200B; 記事 &#x200B;](/help/assets/vanity-urls.md) を参照してください。
+>この機能は、限定提供（LA）機能として利用できます。開始するには、この [ 記事 ](/help/assets/vanity-urls.md) を参照してください。
 
 ### コンテンツハブの新機能 {#new-features-content-hub}
 
@@ -95,7 +95,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -107,19 +107,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 フォームデータモデルを起動ワークフローステップで、SharePoint リストベースのフォームデータモデルにおける Base64 エンコードされた添付ファイル配列のワークフローサイドメタデータの処理がサポートされるようになりました。この機能強化により、ワークフローステップでは、各添付ファイルのファイル名、MIME タイプ、カスタムプロパティなどのメタデータを渡し、保存し、取得することができます。この機能により、より包括的なデータ管理が可能になり、シームレスなダウンストリーム統合が容易になります。詳しくは、[SharePoint リスト添付ファイル用のフォームデータモデルを起動ワークフローステップでのサポート強化](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step)を参照してください。
 
-### AEM Forms のプレリリース機能
-
-**ルールエディターの機能強化**
-
-ルールエディターは拡張ナビゲーションをサポートするようになり、入力パラメーターで関数および数式を使用できるようになりました。
-
-**イベントペイロードのサポートによるナビゲーションの強化**
-
-呼び出しサービスハンドラーの `Navigate To` アクションは `EVENT_PAYLOAD` をサポートするようになり、フォーム作成者はイベント応答に基づくフォローアップアクションを設定できるようになりました。この機能強化により、送信後のワークフロー設計の柔軟性が向上し、よりスムーズな移行と、よりパーソナライズされたユーザーエクスペリエンスが実現します。詳しくは、[イベントペイロードのサポートによるナビゲーションの強化](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)を参照してください。
-
-**入力パラメーターでの関数および数式のサポート**
-
-入力パラメーターは、関数呼び出しと数式の両方をサポートするようになり、フォーム作成者は動的に計算された値を直接渡すことができるようになりました。この機能強化により、ルール設定が合理化され、追加のフィールドが不要になり、フォームが複雑なロジックや計算駆動型のシナリオに適応しやすくなります。詳しくは、[入力パラメーターでの関数および数式のサポート](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)を参照してください。
+<!-- ### Pre-Release features in AEM Forms -->
 
 ### AEM Forms の新しい早期アクセス機能 {#forms-new-early-access-features}
 
@@ -127,17 +115,25 @@ AEM Forms 早期アクセスプログラムでは、最先端の革新機能に�
 
 これらのリリースノートでは、現在のリリースで提供されるイノベーションのリストを示します。早期アクセスプログラムで利用可能なイノベーションの完全なリストについて詳しくは、[AEM Forms 早期アクセスプログラムのドキュメント](/help/forms/early-access-ea-features.md)を参照してください。
 
-**インタラクティブなコミュニケーションエディターでの PDF プレビュー**
+* **インタラクティブなコミュニケーションエディターでの PDF プレビュー**
 
-ユーザーは、データのない、ローカル JSON データファイル、またはデータモデルのデータを使用したインタラクティブなコミュニケーション PDF をプレビューできるので、柔軟なデータ駆動型テストが可能になります。詳しくは、[インタラクティブなコミュニケーションエディターでの PDF プレビュー](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)を参照してください。
+  ユーザーは、データのない、ローカル JSON データファイル、またはデータモデルのデータを使用したインタラクティブなコミュニケーション PDF をプレビューできるので、柔軟なデータ駆動型テストが可能になります。詳しくは、[インタラクティブなコミュニケーションエディターでの PDF プレビュー](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)を参照してください。
 
-**インタラクティブなコミュニケーションでのカスタムフォントのサポート**
+* **インタラクティブなコミュニケーションでのカスタムフォントのサポート**
 
-カスタムフォント機能を使用すると、カスタムフォントや組織が承認したフォントをインタラクティブなコミュニケーションに埋め込むことができ、デバイスやプラットフォームをまたいで一貫性のあるブランドの PDF レンダリングを実現できます。詳しくは、[インタラクティブなコミュニケーションでのカスタムフォントのサポート](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)を参照してください。
+  カスタムフォント機能を使用すると、カスタムフォントや組織が承認したフォントをインタラクティブなコミュニケーションに埋め込むことができ、デバイスやプラットフォームをまたいで一貫性のあるブランドの PDF レンダリングを実現できます。詳しくは、[インタラクティブなコミュニケーションでのカスタムフォントのサポート](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)を参照してください。
 
-**インタラクティブなコミュニケーションの読み込みと書き出し**
+* **インタラクティブなコミュニケーションの読み込みと書き出し**
 
-この機能により、様々な環境でのインタラクティブなコミュニケーションの移行と再利用が可能になります。ある環境からインタラクティブなコミュニケーションを、関連するフラグメントとデータモデルと共に書き出して、別の環境に読み込めるようになりました。詳しくは、[インタラクティブなコミュニケーションの読み込みと書き出し](/help/forms/interactive-communication/import-and-export-interactive-communications.md)を参照してください。
+  この機能により、様々な環境でのインタラクティブなコミュニケーションの移行と再利用が可能になります。ある環境からインタラクティブなコミュニケーションを、関連するフラグメントとデータモデルと共に書き出して、別の環境に読み込めるようになりました。詳しくは、[インタラクティブなコミュニケーションの読み込みと書き出し](/help/forms/interactive-communication/import-and-export-interactive-communications.md)を参照してください。
+
+* **ルールエディターの機能強化**
+
+  ルールエディターは拡張ナビゲーションをサポートするようになり、入力パラメーターで関数および数式を使用できるようになりました。
+
+   * **イベントペイロードのサポートを含む強化されたナビゲーション**：呼び出しサービスハンドラーの `Navigate To` アクションで `EVENT_PAYLOAD` がサポートされるようになり、フォーム作成者はイベント応答に基づくフォローアップアクションを設定できるようになりました。 この機能強化により、送信後のワークフロー設計の柔軟性が向上し、よりスムーズな移行と、よりパーソナライズされたユーザーエクスペリエンスが実現します。詳しくは、[イベントペイロードのサポートによるナビゲーションの強化](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)を参照してください。
+
+   * **入力パラメーターでの関数と数式のサポート**：入力パラメーターでは、関数呼び出しと数式の両方がサポートされるようになり、フォーム作成者は動的に計算された値を直接渡すことができるようになりました。 この機能強化により、ルール設定が合理化され、追加のフィールドが不要になり、フォームが複雑なロジックや計算駆動型のシナリオに適応しやすくなります。詳しくは、[入力パラメーターでの関数および数式のサポート](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)を参照してください。
 
 <!--
 **Forms Optimization opportunities**
@@ -162,7 +158,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 **自動メンテナンスアップデートの一時停止**
 
-運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[&#x200B; 新しいセルフサービス機能 &#x200B;](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
+運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[ 新しいセルフサービス機能 ](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
 
 * 静かな時間：毎日設定された時間に自動メンテナンスをブロックします。勤務時間、夜間の実行や朝の切り替え時などに最適です。
 * 更新不要の期間：自動メンテナンスを 1 週間ブロックします。ローンチ、プロモーションまたは年次フリーズに使用します。
@@ -170,7 +166,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >9月25日（PT）に限定提供機能として提供を開始します。
->&#x200B;>プログラムでアクティブ化するには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信してください。
+>>プログラムでアクティブ化するには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信してください。
 
 ### AEM Developer Tools for Eclipse の新しいリリース {#aem-develeper-tools-for-eclipse}
 
