@@ -5,9 +5,9 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+source-git-commit: 4a860c104a5b6cd6e4306b9b713018317b54e365
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '832'
 ht-degree: 99%
 
 ---
@@ -110,10 +110,6 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 | タイムアウト | 30 m | テストが停止するまでの制限時間。 |
 | 推奨期間 | 15 m | アドビは、この時間を超えないようにテストを作成することをお勧めします。 |
 
->[!NOTE]
->
-> さらにリソースが必要な場合は、カスタマーケアケースを作成し、ユースケースを説明してください。アドビのチームがお客様のリクエストを確認し、適切なサポートを提供します。
-
 #### 依存関係
 
 * aem-cloud-testing-clients：
@@ -131,7 +127,7 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 >[!NOTE]
 >
 >この変更は、2024年4月6日（PT）より前に実行する必要があります。
->&#x200B;>依存関係ライブラリの更新に失敗すると、「カスタム機能テスト」手順でパイプラインにエラーが発生します。
+>依存関係ライブラリの更新に失敗すると、「カスタム機能テスト」手順でパイプラインにエラーが発生します。
 
 ### ローカルテストの実行 {#local-test-execution}
 
