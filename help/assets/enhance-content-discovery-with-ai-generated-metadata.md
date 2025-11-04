@@ -3,15 +3,20 @@ title: 管理ビューでの AI 生成メタデータによるコンテンツ検
 description: 管理ビューで AI 生成メタデータを使用してコンテンツの検出を強化する方法を説明します
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: d73ca2317d594b0d98bb9765796870cc28aa1158
+source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '646'
 ht-degree: 96%
 
 ---
 
 
 # AI で生成されたメタデータによるコンテンツ検出の強化 {#ai-smart-tags}
+
+| UI | 記事リンク |
+| -------- | ---------------------------- |
+| アセットビュー | [ここをクリックしてください](/help/assets/ai-generated-metadata-assets-view.md) |
+| 管理ビュー | この記事 |
 
 AI は、手動の入力に依存するのではなく、デジタルアセットに説明的なタグを自動的に割り当てます。これらの AI で生成されたタグは、メタデータの品質を向上させ、アセットの検索、分類および推奨を容易にします。このアプローチでは、手動でのタグ付けが不要なために効率が向上するだけでなく、大量のデジタルコンテンツ間の一貫性とスケーラビリティも確保できます。例えば、アセットが画像の場合、AI はアセット内のオブジェクト、シーン、感情、さらにはブランドロゴを識別し、「夕日」、「ビーチ」、「休暇」、「笑顔」など、関連するタグを生成できます。 AI が生成するコンテンツは、セマンティック検索とレキシカル検索の両方の技術を活用することで、アセットの検索精度を向上させることができます。詳しくは、[Assets の検索](search-assets.md)を参照してください。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
