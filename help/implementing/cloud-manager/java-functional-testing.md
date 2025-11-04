@@ -5,12 +5,13 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4a860c104a5b6cd6e4306b9b713018317b54e365
+source-git-commit: 369e49e5a047bcfb41712aeb952a30ca90f7802f
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 99%
 
 ---
+
 
 # Java™ 機能テスト
 
@@ -102,7 +103,6 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 1. 機能テストの範囲を定義するコンテナ化されたインフラストラクチャは、次の境界によって制限されます。
 
-
 | タイプ | 値 | 説明 |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0.5 | テスト実行ごとに確保される CPU 時間の量です。 |
@@ -153,8 +153,6 @@ Cloud Manager パイプラインで機能テストをアクティブ化する前
 | `sling.it.instance.adminUser.2` | パブリッシュ管理者ユーザーに設定します。 | `admin` |
 | `sling.it.instance.adminPassword.2` | パブリッシュ管理者パスワードに設定します。 |                         |
 
-
-
 #### Maven を使用したすべてのテストの実行 {#using-maven}
 
 1. シェルを開き、リポジトリの `it.tests` フォルダーに移動します。
@@ -170,4 +168,3 @@ mvn verify -Plocal \
     -Dit.publish.user=<user> \
     -Dit.publish.password=<password>
 ```
-
