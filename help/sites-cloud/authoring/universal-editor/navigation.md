@@ -5,12 +5,13 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
+source-git-commit: 41ab36b7227269d63ff49e1af1eab502939dddb8
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 96%
+source-wordcount: '1818'
+ht-degree: 95%
 
 ---
+
 
 # ユニバーサルエディターへのアクセスと操作 {#navigating}
 
@@ -71,51 +72,19 @@ UI は以下の主なエリアに分かれています。
 >
 >ユニバーサルエディターには、エディターの機能を変更して追加できる[カスタマイズオプション](/help/implementing/universal-editor/customizing.md)と[拡張ポイント](/help/implementing/universal-editor/extending.md)が多数用意されています。このため、ここに記載されている標準のオプションとは異なるオプションが表示される場合があります。
 
-### Experience Cloud ヘッダー {#experience-cloud-header}
+### Experience Platformの上部ナビゲーションバー {#experience-cloud-header}
 
-Experience Cloud ヘッダーは、常に画面の上部に表示されます。Experience Cloud 内の位置を示し、他の Experience Cloud アプリへの移動に役立つアンカーです。
+Experience Platformの上部ナビゲーションバーは、常に画面の上部に表示されます。 Experience Cloud 内の位置を示し、他の Experience Cloud アプリへの移動に役立つアンカーです。
 
 ![Experience Cloud ヘッダー](assets/experience-cloud-header.png)
 
-#### Experience Manager {#experience-manager}
-
-ヘッダーの左側にある Adobe Experience Cloud リンクを選択して Experience Manager ソリューションのルートに移動し、[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) および[ソフトウェア配布](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ja)といったツールにアクセスします。
-
-![グローバルナビゲーションボタン](assets/global-navigation.png)
-
-#### 組織 {#organization}
-
-現在ログインしている組織が表示されます。Adobe ID が複数の組織に関連付けられている場合、別の組織に切り替えるには、選択します。
-
-![組織インジケーター](assets/organization.png)
-
-#### ヘルプセンター {#help}
-
-ヘルプセンターアイコンを使用すると、学習リソースやサポートリソースにクイックアクセスできます。
-
-![ヘルプ](assets/help.png)
-
-#### 通知 {#notifications}
-
-このアイコンには、現在割り当てられている未完了の[通知](/help/implementing/cloud-manager/notifications.md)の数を示すバッジが付きます。
-
-![通知](assets/notifications.png)
-
-#### アプリ {#solutions}
-
-アプリスイッチャーをタップまたはクリックすると、他の Experience Cloud ソリューションにすばやくジャンプできます。
-
-![アプリスイッチャー](assets/solutions.png)
+Experience Platformの上部ナビゲーションバーについて詳しくは、[Adobe Experience Platform UI ガイドを参照してください ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### アカウント {#user-properties}
 
-ユーザーアカウント設定にアクセスするには、ユーザーを表すアイコンを選択します。ユーザー画像が設定されていない場合、アイコンがランダムに割り当てられます。
+アカウントアイコンをタップまたはクリックすると、ユーザー設定を含むメニューが開きます。
 
-![ユーザープロパティ](assets/user-properties.png)
-
-アカウントアイコンをタップまたはクリックすると、ユーザー設定を含むメニューが開きます。 これらの設定はCloud Manager全般に当てはまり、その機能について詳しくは [&#x200B; そのドキュメントを参照してください &#x200B;](/help/implementing/cloud-manager/navigation.md)。
-
-![&#x200B; 環境スイッチャー &#x200B;](assets/environment-switcher.png)
+![ 環境スイッチャー ](assets/environment-switcher.png)
 
 ユニバーサルエディターの場合、見出し **製品設定** の下に、ユニバーサルエディターの現在の実稼動バージョンと今後のプレビューバージョンを切り替えるオプションがあります。
 
