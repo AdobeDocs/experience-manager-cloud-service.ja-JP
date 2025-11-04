@@ -4,10 +4,10 @@ description: AEM as a Cloud Serviceのメンテナンスタスクと、その設
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2043'
-ht-degree: 100%
+source-git-commit: f6e8066ecdfdbd0c7e79c2557dc19eec81657047
+workflow-type: tm+mt
+source-wordcount: '2042'
+ht-degree: 99%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 100%
     <td>顧客</td>
     <td>
     <p>Git で行う必要があります。フォルダー <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code> または <code>granite_monthly</code> の下でプロパティを作成することで、<code>/libs</code> の下にある標準のメンテナンスウィンドウ設定ノードを上書きします。詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。</p>
-    <p> 上記のノードの下に別のノードを追加し（<code>granite_WorkflowPurgeTask</code> という名前を付けて）、適切なプロパティを追加して、メンテナンスタスクを有効にします。OSGi プロパティの設定については、<a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances?lang=ja">AEM 6.5 メンテナンスタスクのドキュメント</a>を参照してください。</p>
+    <p>上記のノードの下に別のノードを追加し（<code>granite_WorkflowPurgeTask</code> という名前を付けて）、適切なプロパティを追加して、メンテナンスタスクを有効にします。OSGi プロパティの設定については、「<a href="/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances"> ワークフローインスタンスの定期的なパージ </a>」を参照してください。</p>
   </td>
   </tr>
   <tr>
