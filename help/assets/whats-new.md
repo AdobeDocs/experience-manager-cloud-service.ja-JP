@@ -3,10 +3,10 @@ title: コンテンツハブの新機能
 description: 最近ローンチされたコンテンツハブの機能の一部について詳しく説明します
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+source-git-commit: 8e1beb80802076f7d7b9a043b85daa2e44aaaead
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 88%
+source-wordcount: '883'
+ht-degree: 82%
 
 ---
 
@@ -24,7 +24,15 @@ ht-degree: 88%
 
 ## リリース日 {#release-date}
 
-コンテンツハブ機能リリース（2025.9.0）のリリース日は、2025年9月25日（PT）（AEM as a Cloud Service リリースと同じ）です。次回の機能リリース（2025.10.0）は、2025年10月30日（PT）に予定されています。
+コンテンツハブ機能リリース（2025.10.0）のリリース日は、2025年10月30日（PT）（AEM as a Cloud Service リリースと同じ）です。次回の機能リリース（2025.11.0）は 2025年11月20日（PT）に予定されています。
+
+## 10 月リリースの機能 {#october-release-features}
+
+**Content Hubのダウンロードエクスペリエンスの機能強化**
+
+Content Hubは、フラットな階層で複数のアセットレンディションをダウンロードできるようになり、複数のフォルダーを移動する必要がなくなりました。 ダウンロード動作に関するユーザーの環境設定が、セッション間で一貫したエクスペリエンスのために保持されるようになりました。 新しいアセットダウンロードエクスペリエンスは、ダウンロードしたファイルの検索と整理を容易にすることで、アセット管理を効率化し、効率を向上させます。
+
+[!BADGE この機能の詳細情報]{type=Informative url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
 ## 9 月リリースの機能 {#september-release-features}
 
@@ -35,6 +43,8 @@ Content Hubでコレクションをお気に入りに登録して、整理と取
 **クイックアクセス用にコレクションをピン留め**
 
 Content Hub管理者は、クイックアクセス用にContent Hubでコレクションをピン留めできるようになりました。 ピン留めされたコレクションは、コレクションホームページの専用の **[!UICONTROL ピン留め]** セクションに表示されるので、重要なコレクションを手の届くところに簡単に保持できます。
+
+[!BADGE この機能の詳細情報]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >

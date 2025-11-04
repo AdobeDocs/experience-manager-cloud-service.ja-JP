@@ -1,12 +1,12 @@
 ---
 title: Content Hub からのアセットのダウンロード
-description: 1 つまたは複数のアセットとそのレンディションを Content Hub ポータルからダウンロードする方法について説明します。
+description: 1 つ以上のアセットとそのレンディションをContent Hub ポータルからダウンロードする方法について説明します。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 37b5404f0814abb3605a26e7933cc3a01ebcf96e
-workflow-type: ht
-source-wordcount: '831'
-ht-degree: 100%
+source-git-commit: f1d036b2e114730c4cce8df8848359e854943153
+workflow-type: tm+mt
+source-wordcount: '941'
+ht-degree: 69%
 
 ---
 
@@ -22,23 +22,35 @@ ht-degree: 100%
 
 1 つ以上のアセットとそのレンディションをダウンロードするには、次の手順を実行します。
 
-1. アセットをダウンロードするには、アセットカードで使用可能な「![ダウンロード](/help/assets/assets/download-icon.svg)」を選択し、アセットのプレビューを表示します。次に、使用可能なレンディションを選択し、ダイアログボックスの「**[!UICONTROL ダウンロード]**」オプションをクリックして、選択したレンディションを ZIP ファイルとしてダウンロードします。ダイアログボックスに（ライセンス済みアセットの）アセットライセンスが表示された場合は、ライセンス条件に同意し、「**[!UICONTROL ダウンロード]**」をクリックします。
-   ![](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+* 1 つのアセットとそのレンディションをダウンロードするには：
+   1. アセットカードで使用可能な ![ ダウンロード ](/help/assets/assets/download-icon.svg) を選択して、アセットとその使用可能なレンディションをプレビューします。
+   1. 使用可能なレンディションを選択し、ダイアログボックスの **[!UICONTROL ダウンロード]** オプションをクリックして、選択したレンディションを ZIP ファイルとしてダウンロードします。 ダイアログボックスに（ライセンス済みアセットの）アセットライセンスが表示された場合は、ライセンス条件に同意し、「**[!UICONTROL ダウンロード]**」をクリックします。
+      ![ アセットのダウンロード ](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+または、アセットのサムネールをクリックして ![ ダウンロード ](/help/assets/assets/download-icon.svg) をクリックし、ダイアログボックスで使用可能なレンディションを選択して表示してからダウンロードすることもできます。
 
-   または、アセットのサムネイルをクリックして「![ダウンロード](/help/assets/assets/download-icon.svg)」を選択し、ダイアログボックスで使用可能なレンディションを選択して表示してからダウンロードすることもできます。
+* 複数のアセットとそのレンディションをダウンロードするには：
+   1. アセットを選択し、![ ダウンロード ](/help/assets/assets/download-icon.svg)**[!UICONTROL ダウンロード]** をクリックして、**[!UICONTROL アセットをダウンロード]** ダイアログボックスで選択したアセットのリストを確認します。 アセットの横にある![選択解除](/help/assets/assets/Close.svg)をクリックして、リストから選択を解除します。
+   1. 1 つ以上のレンディションを選択し、ZIP ファイルとしてダウンロードします。 **[!UICONTROL スマート切り抜き]**&#x200B;および&#x200B;**[!UICONTROL 静的レンディション]**&#x200B;を選択すると、選択した各アセットの使用可能なすべての静的およびスマート切り抜きレンディションがダウンロードされます。
+   1. オプション：「**[!UICONTROL アセットごとに個別のフォルダーを作成]**」の選択を解除して、選択したアセットとそのレンディションを zip ファイルのフォルダー内のフラット階層としてダウンロードします。 デフォルトでは、[!DNL Content Hub] は選択したアセットとそのレンディションを zip ファイル内の別々のフォルダーにダウンロードします。
 
-1. 複数のアセットをダウンロードするには、アセットを選択し、![ダウンロード](/help/assets/assets/download-icon.svg) **[!UICONTROL ダウンロード]** をクリックして、**[!UICONTROL アセットをダウンロード]**&#x200B;ダイアログボックスで選択したアセットのリストを確認します。アセットの横にある「![選択解除](/help/assets/assets/Close.svg)」をクリックして、リストから選択を解除します。1 つ以上のレンディションを選択し、「**[!UICONTROL ダウンロード]**」をクリックして、単一の ZIP ファイルとしてダウンロードします。**[!UICONTROL スマート切り抜き]**&#x200B;および&#x200B;**[!UICONTROL 静的レンディション]**を選択すると、選択した各アセットの使用可能なすべての静的およびスマート切り抜きレンディションがダウンロードされます。
-   ![複数のアセットのダウンロード](/help/assets/assets/download-multiple-assets-CH.png)
-ダウンロードの進行中も [!DNL Content Hub] を引き続き使用できます。Content Hub は、ダウンロードプロセス中にワークフローを中断しません。
-   ![複数のアセットのダウンロード](/help/assets/assets/download-assets-notification-ch.png)
+      >[!NOTE]
+      >
+      > * Content Hubでは、選択内容（**[!UICONTROL アセットごとに個別のフォルダーを作成]**）を環境設定として保存し、今後のダウンロード用に保持します。
+      > * **[!UICONTROL アセットごとに個別のフォルダーを作成]** オプションは、認証済みの [!DNL Content Hub] ユーザーのみが使用できます。 [!DNL Content Hub] を使用すると、公開ユーザーはアセットを個々のアセットとしてダウンロードできます。
+
+   1. **[!UICONTROL ダウンロード]** をクリックして、選択したアセットとそのレンディションをダウンロードします。
+      ![複数のアセットのダウンロード](/help/assets/assets/bulk-asset-download-content-hub.png)
+
+ダウンロードの進行中も [!DNL Content Hub] を引き続き使用できます。 Content Hubは、ダウンロードプロセス中にワークフローを中断しません。
+![複数のアセットのダウンロード](/help/assets/assets/download-assets-notification-ch.png)
 **[!UICONTROL アセットをダウンロード]**&#x200B;ダイアログボックスにアセットライセンスが表示されている場合、左側のウィンドウ（「[!UICONTROL T&amp;C ドキュメント]」セクション）から各ライセンスを選択してライセンスをプレビューし、ダイアログボックスの中央のウィンドウに、ライセンスに関連付けられた選択したアセットを表示します。各ライセンスを確認したら、レンディションを選択し、「**[!UICONTROL 上記の利用条件を読んで同意しました]**」をクリックし、「**[!UICONTROL ダウンロード]**」を選択してダウンロードします。
-   ![複数のアセットのダウンロード](/help/assets/assets/download-multiple-licensed-assets-CH.png)
+![複数のアセットのダウンロード](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
-   >[!NOTE]
-   >
-   >* レンディションは、[[!UICONTROL 設定]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)ユーザーインターフェイスを使用して表示が有効になっている場合にのみ表示されます。
-   >* [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) へのアクセス権を持つユーザーは、動的およびスマート切り抜きレンディションを表示およびダウンロードできます。
-   >* ライセンスのプレビューは、アセットが [!DNL Assets as a Cloud Service] オーサリング環境を使用して承認された場合にのみ表示されます。詳しくは、[コンテンツハブのライセンス済みアセットの管理](/help/assets/manage-licensed-assets-on-content-hub.md)を参照してください。
+>[!NOTE]
+>
+>* レンディションは、[[!UICONTROL 設定]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)ユーザーインターフェイスを使用して表示が有効になっている場合にのみ表示されます。
+>* [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) へのアクセス権を持つユーザーは、動的およびスマート切り抜きレンディションを表示およびダウンロードできます。
+>* ライセンスのプレビューは、アセットが [!DNL Assets as a Cloud Service] オーサリング環境を使用して承認された場合にのみ表示されます。詳しくは、[コンテンツハブのライセンス済みアセットの管理](/help/assets/manage-licensed-assets-on-content-hub.md)を参照してください。
 
 <!--
 
@@ -123,7 +135,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 ## レンディションのタイプ {#types-of-renditions}
 
-アセットレンディションは、アセットの元のファイルを様々に表現したものです。これらには、サムネイル、web またはモバイル用に最適化されたバージョン、透かし入りまたは DRM で保護されたファイル、さらにはスマート切り抜きなどの動的要素を含めることができます。元のファイルタイプと一致する必要はなく、代わりに、様々なユースケースでアセットを表すために機能します。
+アセットレンディションは、アセットの元のファイルを様々に表現したものです。これらのレンディションには、サムネール、web またはモバイル用に最適化されたバージョン、透かし入りまたは DRM で保護されたファイル、さらにはスマート切り抜きなどの動的要素を含めることができます。 元のファイルタイプと一致する必要はなく、代わりに、様々なユースケースでアセットを表すために機能します。
 
 詳しくは、[ [!DNL Experience Manager Assets]](/help/assets/renditions.md) でのレンディションの表示と管理を参照してください。
 
