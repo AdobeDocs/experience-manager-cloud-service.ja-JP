@@ -44,7 +44,7 @@ Content Hubでコレクションをお気に入りに登録して、整理と取
 
 Content Hub管理者は、クイックアクセス用にContent Hubでコレクションをピン留めできるようになりました。 ピン留めされたコレクションは、コレクションホームページの専用の **[!UICONTROL ピン留め]** セクションに表示されるので、重要なコレクションを手の届くところに簡単に保持できます。
 
-[!BADGE この機能の詳細情報]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE この機能の詳細情報]{type=Informative url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >
