@@ -2,10 +2,10 @@
 title: コンテンツハブに関するよくある質問（FAQ）
 description: コンテンツハブに関するよくある質問（FAQ）への回答を参照してください。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: bd8992792afddb2243736578acd24bc47efad842
+source-git-commit: cc29a94e4193f7563bb83ad39aa459ea0ba9306a
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 100%
+source-wordcount: '1635'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## Cloud Manager プログラム／環境でコンテンツハブを有効にできないのはなぜですか？ {#cannot-enable-content-hub}
 
-現時点では、コンテンツハブは Assets ライセンス（Assets Cloud Service、Assets Ultimate、Assets Prime）を含む AEM Cloud Manager 実稼動プログラムでのみ使用できます。[コンテンツハブ](/help/assets/deploy-content-hub.md#enable-content-hub)をクリックして有効にすると、コンテンツハブがデプロイされ、そのプログラム内の AEM のオーサー実稼動環境に関連付けられます。詳細と前提条件について詳しくは、[コンテンツハブのデプロイ](/help/assets/deploy-content-hub.md)を参照してください。
+現時点では、コンテンツハブは Assets ライセンス（Assets Cloud Service、Assets Ultimate、Assets Prime）を含む AEM Cloud Manager 実稼動プログラムでのみ使用できます。[コンテンツハブ](/help/assets/deploy-content-hub.md#enable-content-hub)をクリックして有効にすると、コンテンツハブがデプロイされ、そのプログラム内の AEM のオーサー本番環境に関連付けられます。詳細と前提条件について詳しくは、[コンテンツハブのデプロイ](/help/assets/deploy-content-hub.md)を参照してください。
 
 ## 実稼動プログラム／環境でコンテンツハブを有効にしましたが、無効にできますか？ {#can-i-disable-content-hub}
 
@@ -29,22 +29,20 @@ ht-degree: 100%
 
 コンテンツハブをデプロイした後にユーザーに提供しない場合は、Admin Console でコンテンツハブ製品プロファイルにユーザーを割り当てないでください。詳しくは、[コンテンツハブのデプロイ](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)を参照してください。
 
-## コンテンツハブは実稼動プログラム／実稼動オーサリング環境でのみ使用できますが、組織内で評価するにはどうすればよいですか？ {#how-can-i-evaluate-content-hub}
+## 組織内でContent Hubを評価するにはどうすればよいですか？ {#how-can-i-evaluate-content-hub}
 
 コンテンツハブは、アドビが提供および保守する機能で、開発／ステージング／実稼動環境での通常の検証を必要とするカスタムコードはありません。さらに、ユーザーによる機能へのアクセスは管理者によって完全に制御されるので、すべてのユーザーに公開せずに評価できます。
 
 AEM as a Cloud Service Assets で管理されているユーザー／実稼動コンテンツに影響を与えることなく、コンテンツハブを評価できます。評価手順は次のようになります。
 
-* 実稼動環境（Cloud Manager プログラム）で[コンテンツハブを有効にします](/help/assets/deploy-content-hub.md#enable-content-hub)。
+* 本番環境（Cloud Manager プログラム）で[コンテンツハブを有効にします](/help/assets/deploy-content-hub.md#enable-content-hub)。
 * 実稼動オーサーからコンテンツハブ製品プロファイルに [AEM 管理者ユーザーを追加します](/help/assets/deploy-content-hub.md#onboard-content-hub-administrator)。
 * AEM 管理者が[コンテンツハブを設定します](/help/assets/configure-content-hub-ui-options.md)。
 * AEM 管理者または AEM 実稼動オーサーの AEM ユーザーが[コンテンツハブのアセットの数を承認します](/help/assets/approve-assets-content-hub.md)。DAM の実稼動コンテンツを変更しない場合は、AEM オーサーインスタンスに別の評価フォルダーを作成し、DAM からいくつかのアセットをアップロード／タグ付けまたはコピーすることをお勧めします。
 * Admin Console 管理者は、[選択した数名のユーザー](/help/assets/deploy-content-hub.md#onboard-content-hub-users)をコンテンツハブ製品プロファイルに追加して、評価を開始できるようにします。
 * 評価が完了すると、オーサーインスタンスの AEM ユーザーはテストアセットの承認を削除し、コンテンツハブの実稼動アセットを承認できます。その後、Admin Console 管理者はコンテンツハブと承認済みコンテンツへのアクセスが必要なすべてのユーザーを追加できます。これで完了です。コンテンツハブはライブになりました。
 
-サンドボックスプログラムとそのオーサー実稼動環境には、コンテンツハブへの早期アクセスプログラムがあります。詳しくは、[サンドボックスプログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)を参照してください。早期アクセスプログラムについて詳しくは、アドビアカウントチームにお問い合わせください。
-
-コンテンツハブは、実稼動以外の環境（ステージングおよび開発）ではまだ使用できません。 Assets Ultimate のステージング／開発環境での提供開始は 2025年3月を予定しています。
+サンドボックスプログラムとそのオーサー本番環境には、コンテンツハブへの早期アクセスプログラムがあります。詳しくは、[サンドボックスプログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)を参照してください。早期アクセスプログラムについて詳しくは、アドビアカウントチームにお問い合わせください。
 
 ## コンテンツハブにログオンした後、アセットが表示されないのはなぜですか？ {#no-assets-in-content-hub}
 

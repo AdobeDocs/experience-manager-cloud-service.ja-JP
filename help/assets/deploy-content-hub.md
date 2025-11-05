@@ -3,10 +3,10 @@ title: デプロイ [!DNL Content Hub]
 description: コンテンツハブを展開してアクティブ化し、様々なタイプの権限（アセットのアップロード、Adobe Express ユーザー）を持つユーザーにアクセス権を付与する方法と、ユーザーに管理者権限を付与する方法について説明します。
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 772afa3fa409af63698585e139d1efdc026272d8
-workflow-type: ht
-source-wordcount: '1586'
-ht-degree: 100%
+source-git-commit: fbcfb88aa1b9510d1dc279475b26d85484ef3fe0
+workflow-type: tm+mt
+source-wordcount: '1874'
+ht-degree: 84%
 
 ---
 
@@ -82,14 +82,42 @@ Experience Manager Assets 用のコンテンツハブを有効にするには、
 
 1. 「**[!UICONTROL 更新]**」をクリックします。
 
-これで、コンテンツハブが Experience Manager Assets as a Cloud Service で有効になります。実稼動環境でコンテンツハブを有効にした後は、セルフサービス方式で無効にすることはできません。
+これで、コンテンツハブが Experience Manager Assets as a Cloud Service で有効になります。本番環境でコンテンツハブを有効にした後は、セルフサービス方式で無効にすることはできません。
 
 >[!NOTE]
 >
->最大 250 人のコンテンツハブユーザーがコンテンツハブにアクセスして使用できます。他に質問がある場合は、アドビ担当者にお問い合わせください。
+>Assets Primeの場合は最大 250 人のContent Hub限定ユーザー、Assets Ultimateの場合は最大 50 人のContent Hub ユーザーで、Content Hubにアクセスして使用できます。 その他の質問がある場合は、Adobe担当者にお問い合わせください。
 
 
 Experience Manager Assets を初めて使用する場合は、「**[!UICONTROL プログラムを追加]**」をクリックし、プログラムの詳細（プログラム名、実稼動用の設定）を入力して、「**[!UICONTROL 続行]**」をクリックします。次に、「**[!UICONTROL ソリューションとアドオン]**」タブで「**[!UICONTROL アセット]**」と「**[!UICONTROL コンテンツハブ]**」を選択できます。
+
+### 下位環境でContent Hubを有効にする {#enable-content-hub-lower-environments}
+
+AEM Assets ライセンスに基づいて、次のContent Hub クレジットを利用できます。
+
+* Assets Ultimate:Content Hub 3 クレジット
+
+* Assets Prime: 1 Content Hub クレジット
+
+* Assets as a Cloud Service の既存のお客様：Content Hub クレジット x 1
+
+1 つのクレジットを利用して、実稼働、開発、ステージなどの各環境でContent Hubを有効にできます。
+
+下位環境に対してContent Hubを有効にするには：
+
+1. [Cloud Manager を使用して Experience Manager Assets のコンテンツハブを有効にします](#enable-content-hub)。
+
+1. プログラムカードをクリックして、使用可能な環境（実稼働、開発、ステージ）のリストを表示します。
+
+1. 有効にする環境をクリックします。 **[!UICONTROL Content Hub]** セクションには `Content Hub is available for activation` が表示されます。
+
+   ![ 下位環境に対してContent Hubを有効にする ](assets/enable-content-hub-lower-environments.png)
+
+1. **[!UICONTROL クリックしてアクティブ化]** をクリックします。 もう一度 **[!UICONTROL アクティブ化]** をクリックして確認します。
+
+   選択した環境でContent Hubが有効になっています。
+
+
 
 ### Admin Console のコンテンツハブのインスタンスと製品プロファイル{#content-hub-instance-product-profile}
 
@@ -229,3 +257,17 @@ Experience Manager Assets ユーザーを設定するには：
    >[!NOTE]
    >
    > Experience Manager Assets ユーザーの場合は、[コンテンツハブ製品プロファイル](#onboard-content-hub-users)に追加する必要はありません。
+
+## 既存のAssets as a Cloud Serviceのお客様に対してContent Hubを有効にする {#enable-content-hub-exisitng-cs-customers}
+
+既存のAssets as a Cloud Serviceのお客様は、このライセンスに 250 人のContent Hub Limited ユーザーが含まれています。 次の手順を実行して、Content Hubを有効にします。
+
+1. [Cloud Manager を使用して Experience Manager Assets のコンテンツハブを有効にします](#enable-content-hub)。
+
+1. [Content Hub Limited ユーザーのオンボーディング ](#onboard-content-hub-users)。 これらのユーザーは、ポータルで使用可能なアセットにアクセスできますが、新しいアセットを追加したり、既存のアセットを変更したりすることはできません。
+
+1. ユーザーがContent Hub ポータルにアセットを追加する必要がある場合は、アセットを `AEM Users` 製品プロファイルに追加します。 詳しくは、[ アセットを追加する権限を持つContent Hub ユーザーのオンボーディング ](#onboard-content-hub-users-add-assets) を参照してください。
+
+1. ユーザーがContent Hub設定ユーザーインターフェイスにアクセスする必要がある場合は、`AEM Administrators` 製品プロファイルに追加します。 詳しくは、[Content Hub管理者のオンボーディング ](#onboard-content-hub-administrator) を参照してください。
+
+ユーザーを関連する製品プロファイルに追加しても適切な権限が得られない場合は、Adobe担当者にお問い合わせください。
