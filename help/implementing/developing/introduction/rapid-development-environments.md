@@ -1,23 +1,28 @@
 ---
-title: 迅速な開発環境
-description: クラウド環境で迅速な開発反復処理を行うために、迅速な開発環境を活用する方法について説明します。
+title: 高速開発環境
+description: クラウド環境で迅速な開発反復処理を行うために、高速開発環境を活用する方法について説明します。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
-workflow-type: ht
-source-wordcount: '5391'
-ht-degree: 100%
+source-git-commit: eb87467b1cd3338a409c2aeded74b3bb38d2e58c
+workflow-type: tm+mt
+source-wordcount: '5446'
+ht-degree: 98%
 
 ---
 
-# 迅速な開発環境 {#rapid-development-environments}
+# 高速開発環境 {#rapid-development-environments}
 
-変更をデプロイするために、現在のクラウド開発環境では、CI／CD パイプラインと呼ばれる広範なコードセキュリティと品質ルールを採用したプロセスを使用する必要があります。迅速かつ反復的な変更が必要な状況に対応するために、アドビは迅速な開発環境（RDE）を導入しました。
+変更をデプロイするために、現在のクラウド開発環境では、CI／CD パイプラインと呼ばれる広範なコードセキュリティと品質ルールを採用したプロセスを使用する必要があります。迅速かつ反復的な変更が必要な状況に対応するために、アドビは高速開発環境（RDE）を導入しました。
 
 RDE を使用すると、デベロッパーは変更を迅速にデプロイしてレビューできるので、ローカル開発環境で動作することが証明されている機能をテストするために必要な時間を、最小限に抑えることができます。
 
 変更を RDE でテストしたら、Cloud Manager パイプラインを通じて通常のクラウド開発環境にデプロイできます。
+
+開発環境と高速開発環境は、開発、エラー分析、および機能テストに限定する必要があり、高いワークロードや大量のコンテンツを処理するように設計されていません。
+
+>[!NOTE]
+> 迅速な開発環境は、開発、エラー分析、機能テストに限定する必要があり、高いワークロードや大量のコンテンツを処理するように設計されていません。
 
 >[!NOTE]
 > アドビの[ディスコードチャネル](https://discord.com/channels/1131492224371277874/1245304281184079872)で RDE 開発者に連絡できます。RDE のトピックに関して、自由に質問したり、フィードバックを提供したりしてください。
@@ -195,7 +200,7 @@ retrieving programs of your organization ...
 
    この手順では、Cloud Manager **デベロッパー - Cloud Service** 製品プロファイルのメンバーである必要があります。詳しくは、[Cloud Manager 製品プロファイルへのチームメンバーの割り当て - 開発者製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)を参照してください。
 
-詳細とデモンストレーションについては、[RDE の設定方法（06:24）](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)のビデオチュートリアルを参照してください。
+詳細とデモンストレーションについては、ビデオチュートリアル [RDE の設定方法（06:24） ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup) をご覧ください。
 </details>
 
 ## 新機能の開発時の RDE の使用 {#using-rde-while-developing-a-new-feature}
@@ -208,7 +213,7 @@ retrieving programs of your organization ...
 
   >[!IMPORTANT]
   >
-  >ステージング環境と実稼動環境が AEM リリースの自動更新を受信しておらず、最新バージョンより古い場合、RDE が異なるバージョンの AEM を実行することがあります。その結果、RDE のコード動作が、ステージング環境と実稼動環境での機能と一致しない可能性があります。その場合、実稼動環境にデプロイする前に、ステージングでコードのテストを徹底的に実行することが重要です。
+  >ステージング環境と本番環境が AEM リリースの自動更新を受信しておらず、最新バージョンより古い場合、RDE が異なるバージョンの AEM を実行することがあります。その結果、RDE のコード動作が、ステージング環境と実稼動環境での機能と一致しない可能性があります。その場合、実稼動環境にデプロイする前に、ステージングでコードのテストを徹底的に実行することが重要です。
 
 
 * RDE コマンドラインインターフェイスを使用して、ローカルコードを RDE に同期します。以下を含む様々なタイプのファイルをインストールできます。
@@ -524,7 +529,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-詳細とデモンストレーションについては、[RDE コマンドの使用方法（10:01）](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)のビデオチュートリアルを参照してください。
+詳細とデモンストレーションについては、ビデオチュートリアル [RDE コマンドの使用方法（10:01） ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) を参照してください。
 
 
 ## 外部 Git プロバイダーからの RDE へのデプロイ {#deploy-to-rde}
@@ -1065,7 +1070,7 @@ Cloud Manager を使用した環境の管理方法について詳しくは、[Cl
 
 </details>
 
-### やり直し {#restart}
+### 再開 {#restart}
 
 <details>
   <summary>展開して再起動の例を表示</summary>
@@ -1137,7 +1142,7 @@ RDE は、ライセンスが付与されている各ソリューションで使�
 
 ## AEM Forms Cloud Service RDE と他の環境の違い {#how-are-forms-rds-different-from-cloud-development-environments}
 
-Forms のデベロッパーは、AEM Forms Cloud Service の高速開発環境を使用して、アダプティブフォーム、ワークフロー、およびコアコンポーネントのカスタマイズ、サードパーティシステムとの統合などのカスタマイズを迅速に開発できます。AEM Forms Cloud Service の迅速な開発環境（RDE）は、通信 API をサポートしていません。また、アダプティブフォームの送信時にレコードのドキュメントを生成するなど、レコードのドキュメントを必要とする機能もサポートされていません。以下に示す AEM Forms の機能は、迅速な開発環境（RDE）では使用できません。
+Forms のデベロッパーは、AEM Forms Cloud Service の高速開発環境を使用して、アダプティブフォーム、ワークフロー、およびコアコンポーネントのカスタマイズ、サードパーティシステムとの統合などのカスタマイズを迅速に開発できます。AEM Forms Cloud Service の高速開発環境（RDE）は、通信 API をサポートしていません。また、アダプティブフォームの送信時にレコードのドキュメントを生成するなど、レコードのドキュメントを必要とする機能もサポートされていません。以下に示す AEM Forms の機能は、高速開発環境（RDE）では使用できません。
 
 * アダプティブフォーム用のレコードのドキュメントの設定
 * アダプティブフォームの送信時またはワークフローステップでのレコードのドキュメントの生成
@@ -1147,11 +1152,11 @@ Forms のデベロッパーは、AEM Forms Cloud Service の高速開発環境�
 
 >[!NOTE]
 >
-> 迅速な開発環境（RDE）の UI と Forms 向けの他の Cloud Service 環境の UI に違いはありません。アダプティブフォームのレコードテンプレートのドキュメントの選択など、オプション関連のレコードのすべてのドキュメントは UI に引き続き表示されます。これらの環境には、こうしたオプションをテストするためのレコードのドキュメント機能や通信 API がありません。そのため、通信 API またはレコードのドキュメント機能を必要とするオプションを選択した場合、アクションは実行されません。代わりに、エラーメッセージが表示されます。
+> 高速開発環境（RDE）の UI と Forms 向けの他の Cloud Service 環境の UI に違いはありません。アダプティブフォームのレコードテンプレートのドキュメントの選択など、オプション関連のレコードのすべてのドキュメントは UI に引き続き表示されます。これらの環境には、こうしたオプションをテストするためのレコードのドキュメント機能や通信 API がありません。そのため、通信 API またはレコードのドキュメント機能を必要とするオプションを選択した場合、アクションは実行されません。代わりに、エラーメッセージが表示されます。
 
 ## RDE に関するチュートリアル
 
-AEM as a Cloud Service での RDE について詳しくは、[設定方法、使用方法、開発ライフサイクル](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/overview)に関するビデオチュートリアル（01:25）を参照してください。
+AEM as a Cloud Serviceでの RDE について詳しくは、[ 設定方法、使用方法、開発ライフサイクル（01:25） ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/overview) に関するビデオチュートリアルを参照してください。
 
 ## トラブルシューティング {#troubleshooting}
 
