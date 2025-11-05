@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 62e4b038c3fbae0ca5b6bb08c1d9d245842aeab2
+source-git-commit: 20bb86d83a1afeda760e7c8d88e4257b8cb65860
 workflow-type: tm+mt
-source-wordcount: '1580'
-ht-degree: 94%
+source-wordcount: '1918'
+ht-degree: 80%
 
 ---
 
@@ -65,7 +65,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ## サーバーサイドのコレクションルール {#serverside-collection}
 
-AEM as a Cloud Service では、サーバーサイドルールを適用すると、コンテンツリクエストがカウントされます。これらのルールには、よく知られているボット（検索エンジンクローラーなど）や、サイトに定期的に ping を送信するモニタリングサービスなどのユーザー以外のトラフィックを除外するロジックが含まれます。
+AEM as a Cloud Serviceは、サーバーサイドのコレクションルールを適用して、コンテンツリクエストをカウントします。 これらのルールは、よく知られているボット（検索エンジンクローラーなど）や、サイトに対して定期的に ping を実行する一連の監視サービスを除外します。 この除外リストにない他の合成または監視タイプのトラフィックは、課金対象のコンテンツリクエストとしてカウントされます。
 
 次の表に、含まれるコンテンツリクエストと除外されるコンテンツリクエストのタイプと、それぞれの簡単な説明を示します。
 
@@ -101,4 +101,33 @@ AEM as a Cloud Service では、サーバーサイドルールを適用すると
 | コマース統合フレームワーク呼び出しの除外 | 除外済み | 二重カウントを避けるために、AEM に対して行われたリクエストで、Commerce Integration Framework に転送されます（URL は `/api/graphql` で始まります）。これらは Cloud Service の請求対象ではありません。 |
 | `manifest.json` を除外 | 除外済み | マニフェストは API 呼び出しではありません。ここでは、デスクトップまたは携帯電話に web サイトをインストールする方法に関する情報を提供します。アドビは `/etc.clientlibs/*/manifest.json` に対する JSON リクエストをカウントするべきではありません |
 | `favicon.ico` を除外 | 除外済み | 返されるコンテンツを HTML や JSON にしないでください。ただし、SAML 認証フローなどの特定のシナリオでは、favicon が HTML として返されることが確認されています。その結果、favicon はカウントから明示的に除外されます。 |
-| エクスペリエンスフラグメント（XF） – 同じドメインの再利用 | 除外済み | 同じドメインでホストされるページから XF パス（`/content/experience-fragments/...` など）に対して行われるリクエスト（リクエストホストに一致するリファラーヘッダーで識別される）。<br><br>例：同じドメインのバナーまたはカードの XF を取り込む `aem.customer.com` 上のホームページ。<br><br>・ URL が/content/experience-fragments/...<br> と一致します・ リファラードメインが一致します `request_x_forwarded_host`<br><br>**注意：** エクスペリエンスフラグメントのパスがカスタマイズされている場合（例えば、`/XFrags/...` や `/content/experience-fragments/` 以外のパスを使用している場合）、リクエストは除外されず、カウントされる可能性があります。 この結果は、同じドメインでも当てはまります。 Adobeでは、Adobeの標準 XF パス構造を使用して、除外ロジックが正しく適用されるようにすることをお勧めします。 |
+| エクスペリエンスフラグメント（XF） – 同じドメインの再利用 | 除外済み | 同じドメインでホストされるページから XF パス（`/content/experience-fragments/...` など）に対して行われるリクエスト（リクエストホストに一致するリファラーヘッダーで識別される）。<br><br>例：同じドメインのバナーまたはカードの XF を取り込む `aem.customer.com` 上のホームページ。<br><br>• URL が /content/experience-fragments/... と一致する<br>• リファラードメインが一致する `request_x_forwarded_host`<br><br>**注意：**&#x200B;エクスペリエンスフラグメントのパスがカスタマイズされている場合（例えば、`/XFrags/...` や `/content/experience-fragments/` 以外のパスを使用している場合）、リクエストは除外されず、同じドメインであってもカウントされる場合があります。除外ロジックが正しく適用されるように、アドビの標準 XF パス構造を使用することをお勧めします。 |
+
+## コンテンツリクエストの管理 {#managing-content-requests}
+
+上記の節 [Cloud Service コンテンツリクエストの相違 ](#content-requests-variances) で説明したように、コンテンツリクエストは、様々な理由により、予期よりも多くなる可能性があります。一般的なスレッドは、CDN にヒットするトラフィックです。  AEMのお客様には、ライセンス予算に合わせてコンテンツリクエストをモニタリングし、管理することが有利です。  コンテンツリクエストの管理は、通常、実装技術と [ トラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md) を組み合わせたものです。
+
+### コンテンツリクエストを管理する実装手法 {#implementation-techniques-to-manage-crs}
+
+* ページが見つからないという応答は、HTTP ステータス 404 で配信されます。  ステータス 200 で返された場合、コンテンツリクエストがカウントされます。
+* ヘルスチェックまたはモニタリングツールを/systems/probes/health URL にルーティングするか、GETの代わりにHEAD メソッドを使用して、コンテンツリクエストの発生を避けます。
+* サイトと統合したカスタム検索クローラーのAEM ライセンスコストと、コンテンツの鮮度に関するニーズのバランスを取ります。  過度にアグレッシブなクローラーは、多くのコンテンツリクエストを消費する可能性があります。
+* 2 つの異なるコンテンツリクエストが発生するのを避けるために、リダイレクトをクライアントサイド（JavaScript リダイレクト付きのステータス 200）ではなくサーバーサイド（ステータス 301 または 302）で処理します。
+* API 呼び出しを結合または短縮します。API 呼び出しは、ページをレンダリングするために読み込むことができるAEMからの JSON 応答です。
+
+### コンテンツリクエストを管理するトラフィックフィルタールール {#traffic-filter-rules-to-manage-crs}
+
+* 一般的なボットパターンは、空のユーザーエージェントを使用することです。  空のユーザーエージェントが役に立つかどうかを確認するには、実装とトラフィックパターンをレビューする必要があります。  このトラフィックをブロックする場合は、推奨される [ 構文 ](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) を次に示します。
+
+```
+trafficFilters:
+  rules:
+    - name: block-missing-user-agent
+      when:
+        anyOf:
+          - { reqHeader: user-agent, exists: false }
+          - { reqHeader: user-agent, equals: '' }
+      action: block
+```
+
+* ある日ボットが非常に激しくサイトに当たり、次の日には消えてしまう場合もあります。  これにより、特定の IP アドレスまたはユーザーエージェントをブロックしようとする試みがフラストレーションを受ける可能性があります。  一般的なアプローチの 1 つは、[ レート制限ルール ](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules) を導入することです。  [ 例 ](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) を確認し、リクエストの急速な割合に対する許容値に一致するルールを作成します。  一般的なレート制限を許可する例外については、[ 条件構造 ](/help/security/traffic-filter-rules-including-waf.md#condition-structure) の構文を参照してください。
