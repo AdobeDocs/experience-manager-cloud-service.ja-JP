@@ -78,13 +78,13 @@ Experience Platformの上部ナビゲーションバーは、常に画面の上�
 
 ![Experience Cloud ヘッダー](assets/experience-cloud-header.png)
 
-Experience Platformの上部ナビゲーションバーについて詳しくは、[Adobe Experience Platform UI ガイドを参照してください ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Experience Platformの上部ナビゲーションバーについて詳しくは、[Adobe Experience Platform UI ガイドを参照してください &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### アカウント {#user-properties}
 
 アカウントアイコンをタップまたはクリックすると、ユーザー設定を含むメニューが開きます。
 
-![ 環境スイッチャー ](assets/environment-switcher.png)
+![&#x200B; 環境スイッチャー &#x200B;](assets/environment-switcher.png)
 
 ユニバーサルエディターの場合、見出し **製品設定** の下に、ユニバーサルエディターの現在の実稼動バージョンと今後のプレビューバージョンを切り替えるオプションがあります。
 
