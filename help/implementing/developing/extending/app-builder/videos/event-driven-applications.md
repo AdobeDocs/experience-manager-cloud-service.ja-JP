@@ -22,10 +22,10 @@ ht-degree: 100%
 
 イベント駆動型アーキテクチャ、Adobe I/Oイベントおよびカスタムイベントについて説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339244/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343687/?captions=jpn&quality=12&learn=on)
 
 ## イベント駆動型 App Builder アプリケーションの構築
 
->[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343694/?captions=jpn&quality=12&learn=on)
 
 イベント駆動型の App Builder アプリケーションを作成および公開する方法を説明します。

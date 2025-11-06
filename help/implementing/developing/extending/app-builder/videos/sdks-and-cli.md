@@ -22,10 +22,10 @@ ht-degree: 100%
 
 Adobe I/O SDK と、それが App Builder アプリケーションの開発にどのように使用されるかを説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339166/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343451/?captions=jpn&quality=12&learn=on)
 
 ## CLI
 
 Adobe I/O CLI と、それを App Builder の開発に使用する方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339167/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343448/?captions=jpn&quality=12&learn=on)

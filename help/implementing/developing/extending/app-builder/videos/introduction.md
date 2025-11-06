@@ -22,22 +22,22 @@ ht-degree: 100%
 
 App Builder の機能とビジネス価値について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339158/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342925/?captions=jpn&quality=12&learn=on)
 
 ## タッチポイント
 
 エンドユーザーによる App Builder SPA の操作方法と、App Builder の開発に関する学習リソースについて説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339159/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342918/?captions=jpn&quality=12&learn=on)
 
 ## アーキテクチャ
 
 App Builder のアーキテクチャーとその利点について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339160/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342910/?captions=jpn&quality=12&learn=on)
 
 ## ビジネス価値とユースケース
 
 App Builder のデザイン原則と一般的なユースケースについて説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339161/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342903/?captions=jpn&quality=12&learn=on)

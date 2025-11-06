@@ -20,4 +20,4 @@ ht-degree: 100%
 
 Adobe ランタイムアクションのセキュリティ、ユーザーおよび AppBuilder の認証と承認について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339249/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343299/?captions=jpn&quality=12&learn=on)
