@@ -74,7 +74,7 @@ Forms ウィザードを使用して { コアコンポーネントテンプレ�
 
 既存のドキュメントをインタラクティブなデジタルフォームに変換する。
 
-このオプションを使用する前に、PDF ファイルまたはフォームの画像をアップロードします。 PDFは、AcroForm または XFA ベースのPDF フォームのいずれかです。 [&#x200B; その他のタイプのPDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents) の場合は、Adobe Acrobatの [&#x200B; フォームを準備 &#x200B;](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) オプションを使用して、AcroForm に変換します
+このオプションを使用する前に、PDF ファイルまたはフォームの画像をアップロードします。 PDFは、AcroForm または XFA ベースのPDF フォームのいずれかです。 [&#x200B; その他のタイプのPDF forms](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents) の場合は、Adobe Acrobatの [&#x200B; フォームを準備 &#x200B;](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) オプションを使用して、AcroForm に変換します
 
 **用途：**
 
