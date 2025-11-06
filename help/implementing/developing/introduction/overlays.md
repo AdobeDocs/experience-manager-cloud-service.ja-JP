@@ -25,7 +25,7 @@ Adobe Experience Manager as a Cloud Service では、オーバーレイの原則
 
       * `/apps` の下に適切な `/libs` 構造を再構築します。
 
-        この再構築では、必要な元の定義を相互参照するために :1Sling Resource Merger[ が使用されるので、1](/help/implementing/developing/introduction/sling-resource-merger.md) コピーは必要ありません。 Sling Resource Merger は、差分メカニズムによってリソースにアクセスおよびマージするサービスを提供します。
+        この再構築では、必要な元の定義を相互参照するために :1Sling Resource Merger[&#x200B; が使用されるので、1](/help/implementing/developing/introduction/sling-resource-merger.md) コピーは必要ありません。 Sling Resource Merger は、差分メカニズムによってリソースにアクセスおよびマージするサービスを提供します。
 
       * `/apps` の下に、変更を加えます。
 

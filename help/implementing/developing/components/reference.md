@@ -13,7 +13,7 @@ ht-degree: 98%
 
 # コンポーネントリファレンスガイド {#components-reference-guide}
 
-コンポーネントは、AEM でエクスペリエンスを構築する際の中心です。[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)と[ AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)を使うと、堅牢な既製のコンポーネントのツールセットを簡単に使い始めることができます。[WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)では、デベロッパーがこれらのツールの使用方法と、AEM サイトを作成するためのカスタムコンポーネントの作成方法を学びます。
+コンポーネントは、AEM でエクスペリエンスを構築する際の中心です。[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)と[&#x200B; AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)を使うと、堅牢な既製のコンポーネントのツールセットを簡単に使い始めることができます。[WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)では、デベロッパーがこれらのツールの使用方法と、AEM サイトを作成するためのカスタムコンポーネントの作成方法を学びます。
 
 >[!TIP]
 >
@@ -181,7 +181,7 @@ AEM コンポーネントの構造は強力で柔軟性があります。以下�
 | `jcr:title` | `String` | コンポーネントのタイトルです。 |
 | `sling:resourceSuperType` | `String` | 設定した場合、コンポーネントの継承元がこのコンポーネントになります。 |
 | `component.html` | `nt:file` | コンポーネントの HTL スクリプトファイルです。 |
-| `cq:icon` | `String` | この値は、](#component-icon)コンポーネントのアイコン[を指し、コンポーネントブラウザーに表示されます。 |
+| `cq:icon` | `String` | この値は、[&#128279;](#component-icon)コンポーネントのアイコンを指し、コンポーネントブラウザーに表示されます。 |
 
 **テキスト**&#x200B;コンポーネントを見ると、次のいくつかの要素が表示されます。
 

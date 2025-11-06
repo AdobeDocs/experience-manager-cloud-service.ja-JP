@@ -37,7 +37,7 @@ AEM Forms as a Cloud では、複雑な条件やアクションを簡単に定�
 * **選択済み** - ユーザーが特定のチェックボックス、ドロップダウン、ラジオボタンオプションを選択した場合に true を返します。
 * **Is Initialized （event）** - フォームオブジェクトがブラウザーでレンダリングされたときに true を返します。
 * **Is Changed （event）** - フォームオブジェクトの値または選択範囲を変更したときに true を返します。
-* **クリック済み（イベント）** - ユーザーがフォームオブジェクト（ボタンなど）をクリックすると、true を返します。 ユーザーは [ ボタンのクリックに複数の条件を追加 ](/help/forms/rule-editor-core-components-usecases.md#set-focus-to-another-panel-on-button-click-if-the-first-panel-is-valid) できます。
+* **クリック済み（イベント）** - ユーザーがフォームオブジェクト（ボタンなど）をクリックすると、true を返します。 ユーザーは [&#x200B; ボタンのクリックに複数の条件を追加 &#x200B;](/help/forms/rule-editor-core-components-usecases.md#set-focus-to-another-panel-on-button-click-if-the-first-panel-is-valid) できます。
 * **有効** - フォームオブジェクトが検証条件を満たしているかどうかを確認します。
 * **無効** - フォームオブジェクトが検証条件に失敗するかどうかを確認します。
 
@@ -50,7 +50,7 @@ AEM Forms as a Cloud では、複雑な条件やアクションを簡単に定�
 
 ### ルールエディターで利用可能なルールタイプ {#available-rule-types-in-rule-editor}
 
-ルールエディターでは、ルールを記述するための、事前定義された一連のルールタイプを利用できます。ここからは、各ルールタイプについて詳しく説明します。ルールエディターでルールを記述する詳細については、「[ ルールの記述 ](/help/forms/rule-editor-core-components-user-interface.md#write-rules)」を参照してください。
+ルールエディターでは、ルールを記述するための、事前定義された一連のルールタイプを利用できます。ここからは、各ルールタイプについて詳しく説明します。ルールエディターでルールを記述する詳細については、「[&#x200B; ルールの記述 &#x200B;](/help/forms/rule-editor-core-components-user-interface.md#write-rules)」を参照してください。
 
 #### [!UICONTROL When] {#whenruletype}
 
@@ -112,7 +112,7 @@ _
 
 **When 条件機能で複数のフィールドを許可して使用する場合の考慮事項**
 
-* ルールエディターでこの機能を使用するには [](https://github.com/adobe/aem-core-forms-components) コアコンポーネントがバージョン 3.0.14 以降に設定されていることを確認します。
+* ルールエディターでこの機能を使用するには [&#128279;](https://github.com/adobe/aem-core-forms-components) コアコンポーネントがバージョン 3.0.14 以降に設定されていることを確認します。
 * ルールが When 条件内の異なるフィールドに適用されている場合、これらのフィールドの 1 つのみを変更した場合でも、ルールはトリガーします。
 * **AND** ルールの **When** 条件に追加できるフィールドは複数のみです。 **OR** ルールには使用できません。
 
@@ -156,7 +156,7 @@ When 条件機能で許可された複数のフィールドで問題が発生し
 
 >[!NOTE]
 >
-> 呼び出しサービスについて詳しくは、[ ここをクリック ](/help/forms/invoke-service-enhancements-rule-editor.md) してください。
+> 呼び出しサービスについて詳しくは、[&#x200B; ここをクリック &#x200B;](/help/forms/invoke-service-enhancements-rule-editor.md) してください。
 
 フォームデータモデル（FDM）サービスの呼び出しについては、ルール例を参照してください。
 
@@ -324,7 +324,7 @@ When （オプション）：
 
 ![スクリプトの検証](assets/script-validation.png)
 
-#### [!UICONTROL  パネル間の移動 ]
+#### [!UICONTROL &#x200B; パネル間の移動 &#x200B;]
 
 **[!UICONTROL パネル間を移動]** ルールタイプを使用すると、フォーム内の様々なパネル間でフォーカスを移動できます。 例えば、次のパネルにフォーカスを移動する式を作成できます。
 
@@ -348,9 +348,9 @@ When （オプション）：
 
 `(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
 
-パネル内を移動するためのルールを作成する方法について詳しくは、[ ここをクリック ](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons) を参照してください。
+パネル内を移動するためのルールを作成する方法について詳しくは、[&#x200B; ここをクリック &#x200B;](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons) を参照してください。
 
-#### [!UICONTROL  非同期関数呼び出し ]
+#### [!UICONTROL &#x200B; 非同期関数呼び出し &#x200B;]
 
 <span class="preview">これはプレリリース機能で、[プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)を通してアクセスできます。</span>
 
@@ -366,7 +366,7 @@ When （オプション）：
 
 `[Callback Function];`
 
-ビジュアル ルール エディターで非同期関数呼び出しを使用する方法の詳細については、「[ ルール エディターでの非同期関数呼び出しの使用 ](/help/forms/using-async-funct-in-rule-editor.md) を参照してください。
+ビジュアル ルール エディターで非同期関数呼び出しを使用する方法の詳細については、「[&#x200B; ルール エディターでの非同期関数呼び出しの使用 &#x200B;](/help/forms/using-async-funct-in-rule-editor.md) を参照してください。
 
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}
@@ -390,7 +390,7 @@ To define a rule based on a form data model:
 
 ## 次の手順
 
-次に、様々な [ コアコンポーネントに基づくアダプティブフォームのルールエディターの例 ](/help/forms/rule-editor-core-components-usecases.md) について説明します。
+次に、様々な [&#x200B; コアコンポーネントに基づくアダプティブフォームのルールエディターの例 &#x200B;](/help/forms/rule-editor-core-components-usecases.md) について説明します。
 
 ## 関連トピック
 

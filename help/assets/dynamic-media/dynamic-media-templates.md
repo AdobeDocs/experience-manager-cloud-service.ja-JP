@@ -83,13 +83,13 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 [!DNL Dynamic Media] テンプレートを作成し、その配信 URL を生成するには、次の要件を満たします。
 
 1. [!DNL Dynamic Media] にアクセスします。
-1. [!DNL Assets View] ホームページには、**[!UICONTROL Dynamic Media アセット]**&#x200B;にテンプレートを保存するためのフォルダーがあります。![アセット](/help/assets/assets/Asset-icon.svg)**[!UICONTROL アセット&#x200B;]**に[フォルダーを作成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)して、そのフォルダーを**[!UICONTROL  Dynamic Media アセット&#x200B;]**にレプリケートします。
-1. [ [!DNL AEM Assets]  インスタンスで使用可能な画像を  [!DNL Dynamic Media]  と同期して、テンプレートの作成に使用します](/help/assets/dynamic-media/config-dm.md)。
+1. [!DNL Assets View] ホームページには、**[!UICONTROL Dynamic Media アセット]**&#x200B;にテンプレートを保存するためのフォルダーがあります。![アセット](/help/assets/assets/Asset-icon.svg)**[!UICONTROL アセット&#x200B;]**&#x200B;に[フォルダーを作成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)して、そのフォルダーを&#x200B;**[!UICONTROL &#x200B; Dynamic Media アセット&#x200B;]**&#x200B;にレプリケートします。
+1. [&#x200B; [!DNL AEM Assets]  インスタンスで使用可能な画像を  [!DNL Dynamic Media]  と同期して、テンプレートの作成に使用します](/help/assets/dynamic-media/config-dm.md)。
 1. テンプレートの作成時に使用する画像を公開し、テンプレートの作成後にテンプレートの配信 URL を生成します。配信 URL は、ダウンストリームアプリケーションで使用できます。
 1. テンプレートのテキストレイヤーでデフォルトの [!UICONTROL Adobe Sans F2] フォント以外のフォントを使用するには、[フォントファイルを AEM および Dynamic Media に同時にアップロードして公開](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=ja#dynamic-media-publish-mode-set-to-upon-activation)します。[サポートされているフォントファイル形式は、AFM、OTF、PFB、PFM、PhotoFont、TTC、TTF です](https://experienceleague.adobe.com/ja/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)。また、既存のフォントを使用するには、[再処理](/help/assets/reprocessing-assets-view.md)する必要があります。詳しくは、[フォント](https://experienceleague.adobe.com/ja/docs/dynamic-media-classic/using/support-files/fonts)を参照してください。<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
 1. タッチ UI で次の内容を確認します。
    * **[!UICONTROL [!DNL Dynamic Media] 設定を編集ページ]**&#x200B;で、**[!UICONTROL デフォルトで無効]**&#x200B;に設定されている **[!UICONTROL [!DNL Dynamic Media]同期モード]**&#x200B;は、すべての AEM フォルダーに適用されません（「**[!UICONTROL すべてのコンテンツを同期]**」がオフになっています）。詳しくは、[Dynamic Media Cloud Service の設定](/help/assets/dynamic-media/config-dm.md)を参照してください。
-   * 作成後にテンプレートを保存する宛先フォルダーまたはサブフォルダーの **[!UICONTROL [!DNL Dynamic Media]同期モード]**&#x200B;が&#x200B;**[!UICONTROL サブフォルダーに対して有効にする]**&#x200B;に設定されています。詳しくは、[ [!DNL Dynamic Media]  Cloud Service の設定](/help/assets/dynamic-media/config-dm.md)を参照してください。
+   * 作成後にテンプレートを保存する宛先フォルダーまたはサブフォルダーの **[!UICONTROL [!DNL Dynamic Media]同期モード]**&#x200B;が&#x200B;**[!UICONTROL サブフォルダーに対して有効にする]**&#x200B;に設定されています。詳しくは、[&#x200B; [!DNL Dynamic Media]  Cloud Service の設定](/help/assets/dynamic-media/config-dm.md)を参照してください。
 
 ## [!DNL Dynamic Media] テンプレートの作成{#how-to-create-dynamic-media-template}
 
@@ -163,7 +163,7 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 1. パネルを参照するか、検索バーでキーワードを使用して、特定の画像を見つけます。
 1. 画像をキャンバス上にドラッグ＆ドロップして使用します。キャンバス上のレイヤーのサイズ変更や再配置について詳しくは、[**[!UICONTROL プロパティパネル]**](#reposition-resize-delete-a-layer)を参照してください。
    ![数秒以内にバナーを作成](/help/assets/assets/add-image-to-canvas.png)
-1. **[!UICONTROL 均一半径]**&#x200B;切替スイッチを有効にし、**[!UICONTROL 角丸の半径]**スライダーを使用して、画像の 4 つの角すべての丸みを均一に調整します。切替スイッチを無効にすると、各角に特定の半径値を割り当てることで、角の丸みをカスタマイズできます。
+1. **[!UICONTROL 均一半径]**&#x200B;切替スイッチを有効にし、**[!UICONTROL 角丸の半径]**&#x200B;スライダーを使用して、画像の 4 つの角すべての丸みを均一に調整します。切替スイッチを無効にすると、各角に特定の半径値を割り当てることで、角の丸みをカスタマイズできます。
    ![画像の角の丸みを調整](/help/assets/assets/enable-uniform-radius-image.png)
 
 ### キャンバスにテキストレイヤーを追加{#add-text-to-the-canvas}
@@ -177,19 +177,19 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
 レイヤーの再配置、サイズ変更、回転または削除について詳しくは、[**[!UICONTROL プロパティパネル]**](#reposition-resize-delete-a-layer)を参照してください。パネルの「**[!UICONTROL テキスト]**」セクションの下にある各フィールドの値を変更して、テキストを必須のフォント、サイズ、カラー、スタイル、位置（レイヤー内）に書式設定します。「**[!UICONTROL フォントファミリー]**」フィールドには、[!UICONTROL Adobe Sans F2] のデフォルトフォント、再処理した既存のフォント、新しくアップロードおよび公開したフォントが表示されます。詳しくは、上記の[開始する前に](#prerequisites-for-dynamic-media-wysiwyg-template)の節のポイント 5 を参照してください。
 
-[ テキストの特定の部分を書式設定し ](#apply-formatting-to-substring)[ パラメーター化して、個別に制御する ](#substring-parameterisation)。
+[&#x200B; テキストの特定の部分を書式設定し &#x200B;](#apply-formatting-to-substring) [&#x200B; パラメーター化して、個別に制御する &#x200B;](#substring-parameterisation)。
 
 #### 選択テキストの書式設定{#apply-formatting-to-substring}
 
 文字列の特定の部分を書式設定するには、次の手順を実行します。
 
 1. 書式設定する文字列の中から 1 つ以上の文字を選択します。
-1. [ プロパティパネル ](#properties-panel) を使用して選択の形式を設定します。 次の書式設定オプションは、部分文字列とその部分に適用されます。
+1. [&#x200B; プロパティパネル &#x200B;](#properties-panel) を使用して選択の形式を設定します。 次の書式設定オプションは、部分文字列とその部分に適用されます。
    * **フォントスタイル**:「**[!UICONTROL フォントスタイル]**」オプションを使用した、太字、斜体、下線、下付き文字、上付き文字。
    * **フォントプロパティ**：フォントファミリー、色、サイズを、それぞれのパネルオプションを使用して変更します。
      ![format-substring](/help/assets/assets/format-substring.png)
 
-[ 書式設定された各文字列の部分は、部分文字列セレクターに部分文字列として表示され、パラメーターパネル内で使用できます。 これらの書式設定された部分にパラメーターを追加し、テンプレートの配信 URL](#substring-parameterisation) を使用して動的に書式設定します。
+[&#x200B; 書式設定された各文字列の部分は、部分文字列セレクターに部分文字列として表示され、パラメーターパネル内で使用できます。 これらの書式設定された部分にパラメーターを追加し、テンプレートの配信 URL](#substring-parameterisation) を使用して動的に書式設定します。
 
 ### キャンバスにシェイプを追加 {#add-shapes-to-the-canvas}
 
@@ -197,7 +197,7 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
 1. 「![シェイプの作成](/help/assets/assets/Shapes.svg)」をクリックし、シェイプ（長方形または円）を選択してキャンバスに追加します。シェイプの[[!UICONTROL プロパティパネル]](#reposition-resize-delete-a-layer)を使用して、レイヤーの再配置、サイズ変更、回転または削除を行います。
 1. パネルの「**[!UICONTROL スタイル]**」セクションまでスクロールし、「**[!UICONTROL シェイプカラー]**」フィールドで 16 進コードを定義するか、カラーピッカーを使用して選択したシェイプのカラーを塗りつぶします。
-1. **[!UICONTROL 均一半径]**&#x200B;切替スイッチを有効にし、**[!UICONTROL 角丸の半径]**スライダーを使用して、長方形の 4 つの角すべての丸みを均一に調整します。切替スイッチを無効にすると、各角に特定の半径値を割り当てることで、角の丸みをカスタマイズできます。
+1. **[!UICONTROL 均一半径]**&#x200B;切替スイッチを有効にし、**[!UICONTROL 角丸の半径]**&#x200B;スライダーを使用して、長方形の 4 つの角すべての丸みを均一に調整します。切替スイッチを無効にすると、各角に特定の半径値を割り当てることで、角の丸みをカスタマイズできます。
    ![シェイプの角の丸みを調整](/help/assets/assets/enable-uniform-radius-shape.png)
 1. [選択したレイヤーに&#x200B;**[!UICONTROL 非表示]**&#x200B;パラメーターを追加すると](#parameterise-a-layer)、テンプレート URL を使用してテンプレート内のレイヤーをリアルタイムで表示または非表示にすることができます。
 1. レイヤーを選択して [[!UICONTROL CTA] リンクを追加](#add-CTA-in-dynamic-media-templates)すると、ユーザーはライブテンプレート内のハイパーリンクとしてシェイプをクリックできます。
@@ -258,39 +258,39 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
 次に、画像レイヤーとテキストレイヤーの両方に適用されるレイヤーパラメーターを示します。
 
-**[!UICONTROL X]：**URL のパラメーターの値を変更して、テンプレートプレーンの X 軸に平行な中心線に沿ってレイヤーを水平方向に移動する場合に含めます。
-**[!UICONTROL Y]：**URL のパラメーターの値を変更して、テンプレートプレーンの Y 軸に平行な中心線に沿ってレイヤーを垂直方向に移動する場合に含めます。
-**[!UICONTROL 幅]：**URL のパラメーターの値を変更して、レイヤーの幅を調整する場合に含めます。
-**[!UICONTROL 高さ]：**URL のパラメーターの値を変更して、レイヤーの高さを調整する場合に含めます。
-**[!UICONTROL 非表示 ]:** 0 （表示）と 1 （非表示）を使用して、テンプレート内のレイヤーの表示と非表示を切り替えるには、含めます。
+**[!UICONTROL X]：**&#x200B;URL のパラメーターの値を変更して、テンプレートプレーンの X 軸に平行な中心線に沿ってレイヤーを水平方向に移動する場合に含めます。
+**[!UICONTROL Y]：**&#x200B;URL のパラメーターの値を変更して、テンプレートプレーンの Y 軸に平行な中心線に沿ってレイヤーを垂直方向に移動する場合に含めます。
+**[!UICONTROL 幅]：**&#x200B;URL のパラメーターの値を変更して、レイヤーの幅を調整する場合に含めます。
+**[!UICONTROL 高さ]：**&#x200B;URL のパラメーターの値を変更して、レイヤーの高さを調整する場合に含めます。
+**[!UICONTROL 非表示 &#x200B;]:** 0 （表示）と 1 （非表示）を使用して、テンプレート内のレイヤーの表示と非表示を切り替えるには、含めます。
 
 ##### 画像パラメーター{#image-parameter}
 
 **[!UICONTROL Source]** パラメーターを含めて、URL のパラメーターの値の画像パスを変更することで、レイヤーの画像を新しい画像に置き換えます。
-![image source パラメーター ](/help/assets/assets/image-parameter.png)
+![image source パラメーター &#x200B;](/help/assets/assets/image-parameter.png)
 
 ##### テキスト書式設定パラメーター{#text-formatting-parameters}
 
 配信 URL のパラメーター値を更新して、配信 URL のテキスト、フォント、カラー、サイズを編集するには、以下のパラメーターを含めます。
 
-**[!UICONTROL テキスト]：**URL からテキストを更新する場合に含めます。
-**[!UICONTROL フォントファミリー]：**URL からテキストのフォントを更新する場合に含めます。
-**[!UICONTROL フォントサイズ]：**URL からテキストのフォントサイズを更新する場合に含めます。
+**[!UICONTROL テキスト]：**&#x200B;URL からテキストを更新する場合に含めます。
+**[!UICONTROL フォントファミリー]：**&#x200B;URL からテキストのフォントを更新する場合に含めます。
+**[!UICONTROL フォントサイズ]：**&#x200B;URL からテキストのフォントサイズを更新する場合に含めます。
 **[!UICONTROL テキストカラー]：** URL からテキストのフォントカラーを更新する場合に含めます。
 
 ##### 部分文字列のパラメーター化{#substring-parameterisation}
 
-**[!UICONTROL パラメーター]** パネルで、「**[!UICONTROL 部分文字列パラメーター]** セクションまでスクロールします。 このセクションには **部分文字列セレクター** が含まれます。このセレクターは、選択したテキストレイヤーの完全な文字列を、一貫性のある書式で、またはその書式設定された部分を別々の部分文字列として表示します。 [ テキスト、フォントファミリー、フォントサイズ、カラーをパラメーター化する ](#text-formatting-parameters) 部分文字列を選択します。
-部分文字列セレクターを使用して [ 部分文字列を分割 ](#split-substring) して個々の部分をパラメーター化するか、[ 部分文字列を結合 ](#merge-substring) して均一なパラメーターを適用します。
+**[!UICONTROL パラメーター]** パネルで、「**[!UICONTROL 部分文字列パラメーター]** セクションまでスクロールします。 このセクションには **部分文字列セレクター** が含まれます。このセレクターは、選択したテキストレイヤーの完全な文字列を、一貫性のある書式で、またはその書式設定された部分を別々の部分文字列として表示します。 [&#x200B; テキスト、フォントファミリー、フォントサイズ、カラーをパラメーター化する &#x200B;](#text-formatting-parameters) 部分文字列を選択します。
+部分文字列セレクターを使用して [&#x200B; 部分文字列を分割 &#x200B;](#split-substring) して個々の部分をパラメーター化するか、[&#x200B; 部分文字列を結合 &#x200B;](#merge-substring) して均一なパラメーターを適用します。
 
 ###### 部分文字列を分割{#split-substring}
 
 部分文字列の特定の部分をパラメーター化するには、その部分を引き出して、個々の選択とパラメーター化のための個別の部分文字列にします。 次の手順を実行して、部分文字列を別々の部分文字列に分割します。
 
 1. 部分文字列セレクターで、部分文字列内の文字を選択して区切ります。
-1. ![ 部分文字列を分割 ](/help/assets/assets/unmerge.svg) をクリックして選択を取り出し、**部分文字列セレクター** 内の別の部分文字列にします。
-   ![ 部分文字列を分割 ](/help/assets/assets/split-a-substring.png)
-必要な部分文字列を選択して [ テキスト、フォントファミリー、フォントサイズ、色をパラメーター化 ](#text-formatting-parameters) できます。
+1. ![&#x200B; 部分文字列を分割 &#x200B;](/help/assets/assets/unmerge.svg) をクリックして選択を取り出し、**部分文字列セレクター** 内の別の部分文字列にします。
+   ![&#x200B; 部分文字列を分割 &#x200B;](/help/assets/assets/split-a-substring.png)
+必要な部分文字列を選択して [&#x200B; テキスト、フォントファミリー、フォントサイズ、色をパラメーター化 &#x200B;](#text-formatting-parameters) できます。
 
 ###### 部分文字列を結合{#merge-substring}
 
@@ -298,9 +298,9 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 次の手順を実行して、2 つの隣接する部分文字列を結合し、結果の部分文字列に均一なパラメーターを適用します。
 
 1. 部分文字列セレクターで、同じ書式を持つ、隣接する 2 つの部分文字列の間にある文字を選択します。
-1. ![ 部分文字列を結合 ](/help/assets/assets/merge.svg) をクリックして、部分文字列を結合します。
+1. ![&#x200B; 部分文字列を結合 &#x200B;](/help/assets/assets/merge.svg) をクリックして、部分文字列を結合します。
 
-   ![ 同一の部分文字列を結合 ](/help/assets/assets/merge-two-substrings.png)
+   ![&#x200B; 同一の部分文字列を結合 &#x200B;](/help/assets/assets/merge-two-substrings.png)
 
    新しく作成された部分文字列には、均一なパラメーターを適用できます。
 
@@ -316,7 +316,7 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
 1. レイヤーの[**[!UICONTROL プロパティパネル]**](#parameterise-a-layer)に移動します。
 1. 以前にパラメーター化していない場合は、**[!UICONTROL 非表示]**&#x200B;パラメーターを切り替えます。
-1. **オプション：****[!UICONTROL 非表示]**&#x200B;パラメーターの名前を変更します。
+1. **オプション：**&#x200B;**[!UICONTROL 非表示]**&#x200B;パラメーターの名前を変更します。
 1. **[!UICONTROL 非表示]**&#x200B;パラメーターの名前をコピーします。
 1. キャンバスから他のレイヤーを選択して、そのレイヤーのパラメーターパネルに移動し、パラメーター化されていない場合は、**[!UICONTROL 非表示]**&#x200B;パラメーターを切り替えます。
 1. **[!UICONTROL 非表示パラメーター]**&#x200B;の名前を、コピーした名前に置き換えます。
@@ -327,17 +327,17 @@ WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テン�
 
 テンプレートをプレビューおよび公開し、配信 URL をコピーするには、次の手順を実行します。
 
-1. キャンバスページで、「**[!UICONTROL プレビュー]**」をクリックします。また、**[!UICONTROL アセットビュー]****／****[!UICONTROL Dynamic Media アセット]****に移動して、**&#x200B;テンプレートを見つけて選択し&#x200B;**、**「**[!UICONTROL テンプレートを編集]**」をクリックして&#x200B;**、**「**[!UICONTROL プレビュー]**」をクリックすることもできます。プレビューページには、テンプレート、そのパラメーター（パラメーター化されたレイヤとプロパティ）、公開ステータスおよび「**[!UICONTROL 公開]**」オプションが表示されます。
+1. キャンバスページで、「**[!UICONTROL プレビュー]**」をクリックします。また、**[!UICONTROL アセットビュー]**&#x200B;**／**&#x200B;**[!UICONTROL Dynamic Media アセット]**&#x200B;**に移動して、**&#x200B;テンプレートを見つけて選択し&#x200B;**、**「**[!UICONTROL テンプレートを編集]**」をクリックして&#x200B;**、**「**[!UICONTROL プレビュー]**」をクリックすることもできます。プレビューページには、テンプレート、そのパラメーター（パラメーター化されたレイヤとプロパティ）、公開ステータスおよび「**[!UICONTROL 公開]**」オプションが表示されます。
 1. **[!UICONTROL テンプレートパラメーター]**&#x200B;パネルからパラメーターを選択して値を編集すると、プレビューの対応するテンプレートレイヤーのコンテンツ、サイズ、位置、またはテキストの書式設定が即座に更新されます。例：
    1. テキストレイヤーを選択してテキストを編集するか、
    1. 画像レイヤーを選択し、「![その場でコンテンツを作成](/help/assets/assets/add-image.svg)」をクリックし、アセットセレクターから画像を選択して、「**[!UICONTROL 更新]**」をクリックします。
 
    テンプレートはすぐに更新され、編集されたテキストが表示され、以前の画像が新しい画像に置き換えられます。また、画像パラメーターの値には、新しい画像のパスが反映されます。同様に、レイヤーの値を調整してサイズ変更すると、その変更がリアルタイムでテンプレートに適用されます。
 1. リストから[グループ化されたレイヤー](#group-layers)の&#x200B;**[!UICONTROL 非表示]**&#x200B;パラメーターを選択して、テンプレート内でまとめて表示または非表示にします。
-1. **オプション：****[!UICONTROL 非表示]**&#x200B;パラメーターの値を 0 と 1 の間で変更し、「**[!UICONTROL 更新]**」をクリックして変更を確認します。同じ&#x200B;**[!UICONTROL 非表示]**&#x200B;パラメーターを持つレイヤーは、まとめて非表示または表示されます。同様に、URL からレイヤーの表示をコントロールできます。
+1. **オプション：**&#x200B;**[!UICONTROL 非表示]**&#x200B;パラメーターの値を 0 と 1 の間で変更し、「**[!UICONTROL 更新]**」をクリックして変更を確認します。同じ&#x200B;**[!UICONTROL 非表示]**&#x200B;パラメーターを持つレイヤーは、まとめて非表示または表示されます。同様に、URL からレイヤーの表示をコントロールできます。
 
    ![その場でのコンテンツの作成](/help/assets/assets/dm-templates-publish-status.png)
-また、**[!UICONTROL すべてのパラメーターを含める]**を切り替えて、表示されているすべてのパラメーター値を編集し、テンプレートのプレビューで更新を確認することもできます。
+また、**[!UICONTROL すべてのパラメーターを含める]**&#x200B;を切り替えて、表示されているすべてのパラメーター値を編集し、テンプレートのプレビューで更新を確認することもできます。
    <br>
 1. プレビューページからテンプレートを公開するには、「**[!UICONTROL 公開]**」をクリックして公開を確定します。**[!UICONTROL 公開完了]**&#x200B;メッセージが表示され、公開ステータスが&#x200B;**[!UICONTROL 公開済み]**&#x200B;に更新されます。
 
@@ -425,4 +425,4 @@ URL 内でパラメーターを直接編集するのは面倒な場合があり�
 ## 関連トピック
 
 1. [[!DNL Dynamic Media]  とその機能](/help/assets/dynamic-media/dynamic-media.md)の探索
-1. OpenAPI 機能を備えた [[!DNL Dynamic Media] ](/help/assets/dynamic-media-open-apis-overview.md) の探索
+1. OpenAPI 機能を備えた [[!DNL Dynamic Media] &#x200B;](/help/assets/dynamic-media-open-apis-overview.md) の探索

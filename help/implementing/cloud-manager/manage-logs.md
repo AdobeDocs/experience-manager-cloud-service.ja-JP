@@ -39,7 +39,7 @@ AEM as a Cloud Service での開発プロセスを支援するために、ログ
 
    ![ログをダウンロードダイアログ](assets/download-preview.png)
 
-   [ 追加の公開地域 ](/help/operations/additional-publish-regions.md) が環境で有効になっている場合は、次に示すように、各地域を選択し、そのログを個別にダウンロードできます。
+   [&#x200B; 追加の公開地域 &#x200B;](/help/operations/additional-publish-regions.md) が環境で有効になっている場合は、次に示すように、各地域を選択し、そのログを個別にダウンロードできます。
 
    ![その他の公開地域についてはログをダウンロード](assets/download-publish-region-logs.png)
 

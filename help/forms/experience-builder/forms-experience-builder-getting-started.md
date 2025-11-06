@@ -41,11 +41,11 @@ Forms Experience Builder は、会話言語を使用して高度なデジタル�
 * **AEM Forms as a Cloud Service** - アダプティブ Forms コアコンポーネントを使用した実稼動オーサー環境
 * **基本的な理解** - フォームの概念とビジネス要件に関する知識
 
-技術的な設定要件と環境設定について詳しくは、[Forms Experience Builder のデプロイと設定 ](deploy-forms-experience-builder.md) を参照してください。
+技術的な設定要件と環境設定について詳しくは、[Forms Experience Builder のデプロイと設定 &#x200B;](deploy-forms-experience-builder.md) を参照してください。
 
 ## フォームの作成方法 {#two-ways-to-create-forms}
 
-Forms ウィザードを使用して { コアコンポーネントテンプレート [ または ](/help/forms/creating-adaptive-form-core-components.md)2}Edge Delivery Services[ のテンプレート、テーマおよびその他のオプションを選択した後、Forms Experience Builder では、主に次の 2 つの方法でフォームを作成できます。](/help/edge/docs/forms/universal-editor/create-forms.md)
+Forms ウィザードを使用して { コアコンポーネントテンプレート [&#x200B; または &#x200B;](/help/forms/creating-adaptive-form-core-components.md)2}Edge Delivery Services[&#x200B; のテンプレート、テーマおよびその他のオプションを選択した後、Forms Experience Builder では、主に次の 2 つの方法でフォームを作成できます。](/help/edge/docs/forms/universal-editor/create-forms.md)
 
 ### &#x200B;1. ゼロから作成する {#create-from-scratch}
 
@@ -62,10 +62,10 @@ Forms ウィザードを使用して { コアコンポーネントテンプレ�
 **例：**
 
     次の項目を含む顧客フィードバックフォームを作成してください。
-    - 製品評価（1～5 つ星）
-    - 詳細なフィードバックのコメントフィールド
-    - お客様のメール（オプション）
-    - メール通知への送信
+    &#x200B;- 製品評価（1～5 つ星）
+    &#x200B;- 詳細なフィードバックのコメントフィールド
+    &#x200B;- お客様のメール（オプション）
+    &#x200B;- メール通知への送信
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
@@ -75,7 +75,7 @@ Forms ウィザードを使用して { コアコンポーネントテンプレ�
 
 既存のドキュメントをインタラクティブなデジタルフォームに変換する。
 
-このオプションを使用する前に、PDF ファイルまたはフォームの画像をアップロードします。 PDFは、AcroForm または XFA ベースのPDF フォームのいずれかです。 [ その他のタイプのPDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents) の場合は、Adobe Acrobatの [ フォームを準備 ](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) オプションを使用して、AcroForm に変換します
+このオプションを使用する前に、PDF ファイルまたはフォームの画像をアップロードします。 PDFは、AcroForm または XFA ベースのPDF フォームのいずれかです。 [&#x200B; その他のタイプのPDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents) の場合は、Adobe Acrobatの [&#x200B; フォームを準備 &#x200B;](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) オプションを使用して、AcroForm に変換します
 
 **用途：**
 
@@ -104,7 +104,7 @@ Forms ウィザードを使用して { コアコンポーネントテンプレ�
 
 これにより、3 つの必須フィールドを持つフォームが作成されます。
 
-![3 つの必須フィールドを持つフォーム – 自然言語プロンプトを使用して作成 ](/help/forms/assets/forms-experience-builder-contact-us-form.png)
+![3 つの必須フィールドを持つフォーム – 自然言語プロンプトを使用して作成 &#x200B;](/help/forms/assets/forms-experience-builder-contact-us-form.png)
 
 ### 手順 2：検証と要件の追加 {#step-2-add-validation}
 
@@ -114,7 +114,7 @@ Forms ウィザードを使用して { コアコンポーネントテンプレ�
 
 `@` 記号は、ターゲットを変更するための特定のフィールドを参照します。
 
-![ 自然言語プロンプトを使用した form experience builder の検証を追加しました ](/help/forms/assets/forms-experience-builder-contact-us-form-add-validation.png)
+![&#x200B; 自然言語プロンプトを使用した form experience builder の検証を追加しました &#x200B;](/help/forms/assets/forms-experience-builder-contact-us-form-add-validation.png)
 
 
 ### 手順 3：ユーザーエクスペリエンスの向上 {#step-3-improve-ux}
@@ -123,7 +123,7 @@ Forms ウィザードを使用して { コアコンポーネントテンプレ�
 
     プレースホルダーテキストを追加してください。@name &quot;生年月日&quot;, @email &quot;your.email@company.com&quot;, @message &quot;どのようにお手伝いできるかお聞かせください&quot;
 
-![forms experience builder で自然言語プロンプトを使用した検証を追加しました ](/help/forms/assets/forms-experience-builder-contact-us-form-add-placeholder.png)
+![forms experience builder で自然言語プロンプトを使用した検証を追加しました &#x200B;](/help/forms/assets/forms-experience-builder-contact-us-form-add-placeholder.png)
 
 ### 手順 4：高度な機能の追加 {#step-4-advanced-features}
 
@@ -131,12 +131,12 @@ Forms ウィザードを使用して { コアコンポーネントテンプレ�
 
     2 つのドロップダウンを追加 
     
-    - 「一般質問」、「サポートリクエスト」、「セールス問い合わせ」、「パートナーシップ」 
+    &#x200B;- 「一般質問」、「サポートリクエスト」、「セールス問い合わせ」、「パートナーシップ」 
     
-    - オプション付き緊急度レベル （低、Medium、高） 
+    &#x200B;- オプション付き緊急度レベル （低、Medium、高） 
 
 
-![forms experience builder で自然言語プロンプトを使用するドロップダウンコンポーネントを追加しました ](/help/forms/assets/forms-experience-builder-contact-us-form-add-dropdown.png)
+![forms experience builder で自然言語プロンプトを使用するドロップダウンコンポーネントを追加しました &#x200B;](/help/forms/assets/forms-experience-builder-contact-us-form-add-dropdown.png)
 
 
 ### 手順 5：条件付きロジックの実装 {#step-5-conditional-logic}
@@ -170,7 +170,7 @@ Forms Experience Builder では、次の操作が可能な対話型インター�
      – 会社情報のセクションを追加 
      – 部門選択用のドロップダウンを作成 
      – 再開用にファイルのアップロードを含める 
-    - フォームの送信時にメール通知を設定する 
+    &#x200B;- フォームの送信時にメール通知を設定する 
 
 ### 増分ビルド {#build-incrementally}
 
@@ -191,18 +191,18 @@ Forms Experience Builder では、次の操作が可能な対話型インター�
 
      次のフォームでお問い合わせフォームを作成：
      – 名前（必須） 
-    - メール（必須、検証済み） 
+    &#x200B;- メール（必須、検証済み） 
      – 件名ドロップダウン（一般、サポート、セールス、パートナーシップ） 
-    - メッセージ（必須、複数行） 
+    &#x200B;- メッセージ（必須、複数行） 
      – 送信ボタン 
 
 **顧客フィードバックフォーム：**
 
     次の項目を含む顧客フィードバックフォームを作成してください。
-    - 製品評価（1～5 つ星）
-    - 詳細なフィードバックのコメントフィールド
-    - お客様のメール（オプション）
-    - メール通知への送信
+    &#x200B;- 製品評価（1～5 つ星）
+    &#x200B;- 詳細なフィードバックのコメントフィールド
+    &#x200B;- お客様のメール（オプション）
+    &#x200B;- メール通知への送信
 
 ### 登録およびオンボーディングフォーム {#registration-onboarding-forms}
 
@@ -210,7 +210,7 @@ Forms Experience Builder では、次の操作が可能な対話型インター�
 
      次を使用してユーザー登録フォームを作成：
      – 個人情報（名前、メール、電話） 
-    - アカウントの環境設定（ニュースレター、通知） 
+    &#x200B;- アカウントの環境設定（ニュースレター、通知） 
      – 利用条件の承諾 
      – 有効性の検証を使用したパスワードの作成 
 
@@ -219,7 +219,7 @@ Forms Experience Builder では、次の操作が可能な対話型インター�
      次を使用して、従業員のオンボーディングフォームを作成します。
      – 個人情報および連絡先情報 
      – 雇用情報および開始日 
-    - ドキュメントアップロード（履歴書、ID、税金フォーム） 
+    &#x200B;- ドキュメントアップロード（履歴書、ID、税金フォーム） 
      – 特典の選択および環境設定 
 
 ### 調査および評価フォーム {#survey-assessment-forms}
@@ -228,8 +228,8 @@ Forms Experience Builder では、次の操作が可能な対話型インター�
 
      顧客満足度調査の作成：
      – 総合評価（1 ～ 10 件） 
-    - カテゴリ評価（製品、サービス、サポート） 
-    - オープンエンドのフィードバックセクション 
+    &#x200B;- カテゴリ評価（製品、サービス、サポート） 
+    &#x200B;- オープンエンドのフィードバックセクション 
      – 人口統計情報（オプション） 
 
 **スキル評価：**

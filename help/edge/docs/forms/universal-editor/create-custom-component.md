@@ -505,13 +505,13 @@ git add . && git commit -m "Add card custom component" && git push
 
 10. **_component-definition.json を更新**：`models/_component-definition.json` で、`id custom-components` を持つグループ内の配列を次の方法でオブジェクトに更新します。
 
-   ```javascript
-   {
-   "...":"../blocks/form/components/cards/_cards.json#/definitions"
-   }
-   ```
+    ```javascript
+    {
+    "...":"../blocks/form/components/cards/_cards.json#/definitions"
+    }
+    ```
 
-   これは、残りのコンポーネントと共に作成される新しいカードコンポーネントへの参照を提供するためのものです
+    これは、残りのコンポーネントと共に作成される新しいカードコンポーネントへの参照を提供するためのものです
 
 11. **build:json スクリプトを実行**：`npm run build:json` を実行して、すべてのコンポーネント JSON 定義をコンパイルし、サーバーから提供される単一のファイルに結合します。これにより、新しいコンポーネントのスキーマが結合された出力に含まれます。
 

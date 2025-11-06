@@ -187,7 +187,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ユーザーはオーサー層の開発環境では CRXDE Lite にアクセスできますが、ステージング層や実稼動層ではアクセスできません。 不変リポジトリー（`/libs`、`/apps`）に実行時に書き込むことはできないので、書き込もうとするとエラーが発生します。
 
-代わりに、AEM as a Cloud Service Developer Console からリポジトリブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対してリポジトリへの読み取り専用ビューを提供できます。詳しくは、[ リポジトリブラウザー ](/help/implementing/developing/tools/repository-browser.md) を参照してください。
+代わりに、AEM as a Cloud Service Developer Console からリポジトリブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対してリポジトリへの読み取り専用ビューを提供できます。詳しくは、[&#x200B; リポジトリブラウザー &#x200B;](/help/implementing/developing/tools/repository-browser.md) を参照してください。
 
 AEM as a Cloud Service開発者環境をデバッグするためのツールセットがAEM as a Cloud Service Developer Consoleの RDE 環境、開発環境、ステージ環境、実稼動環境で利用できます。 URL は、次のようにオーサーサービスまたはパブリッシュサービスの URL を調整することで決定できます。
 
@@ -239,7 +239,7 @@ Adobeは、アプリケーションのパフォーマンスを監視し、パフ
 
 ### メールの送信 {#sending-emails}
 
-[Day CQ Mail Service OSGi サービス ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja#configuring-the-mail-service) を使用してください。また、受信者に直接送信するのではなく、サポートリクエストに明示されたメールサーバーにメールを送信する必要があります。
+[Day CQ Mail Service OSGi サービス &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja#configuring-the-mail-service) を使用してください。また、受信者に直接送信するのではなく、サポートリクエストに明示されたメールサーバーにメールを送信する必要があります。
 
 ### 設定 {#email-configuration}
 

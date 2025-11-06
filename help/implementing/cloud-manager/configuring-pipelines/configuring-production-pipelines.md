@@ -123,10 +123,10 @@ ht-degree: 87%
 ターゲットデプロイメントは、AEM アプリケーションの選択した部分のコードのみをデプロイします。このようなデプロイメントでは、次のいずれかのタイプのコードを&#x200B;**含める**&#x200B;よう選択できます。
 
 * **設定** - AEM 環境の様々な機能の設定を行います。
-   * ログ転送、パージ関連のメンテナンスタスク、様々な CDN 設定など、サポートされる設定のリストと、それらが適切にデプロイされるようにリポジトリで管理するには、[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md) を参照してください。
+   * ログ転送、パージ関連のメンテナンスタスク、様々な CDN 設定など、サポートされる設定のリストと、それらが適切にデプロイされるようにリポジトリで管理するには、[&#x200B; 設定パイプラインの使用 &#x200B;](/help/operations/config-pipeline.md) を参照してください。
    * ターゲットデプロイメントパイプラインを実行すると、パイプラインで定義されている環境、リポジトリ、ブランチに設定が保存された場合、その設定がデプロイされます。
    * 設定パイプラインは、常に 1 つの環境に 1 つしか存在できません。
-* **Edge Delivery Services設定パイプラインを設定** - Edge Delivery設定パイプラインには、開発環境、ステージング環境および実稼動環境は個別には存在しません。 AEM as a Cloud Serviceでは、変更は開発層、ステージ層、実稼動層を通じて進みます。 これに対し、Edge Delivery設定パイプラインは、Cloud Managerに登録されたすべてのEdge Delivery Sites ドメインに設定を直接適用します。 詳しくは、[Edge Delivery パイプラインの追加 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) を参照してください。
+* **Edge Delivery Services設定パイプラインを設定** - Edge Delivery設定パイプラインには、開発環境、ステージング環境および実稼動環境は個別には存在しません。 AEM as a Cloud Serviceでは、変更は開発層、ステージ層、実稼動層を通じて進みます。 これに対し、Edge Delivery設定パイプラインは、Cloud Managerに登録されたすべてのEdge Delivery Sites ドメインに設定を直接適用します。 詳しくは、[Edge Delivery パイプラインの追加 &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) を参照してください。
 * **フロントエンドコード** - AEM アプリケーションのフロントエンド用に JavaScript と CSS を設定します。
    * フロントエンドパイプラインを使用すると、フロントエンド開発者の作業の独立性が高まるほか、開発プロセスを速めることができます。
    * このプロセスの可能性を最大限に引き出すために知っておくべきいくつかの考慮事項と、このプロセスがどのように機能するかについては、[フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)のドキュメントを参照してください。

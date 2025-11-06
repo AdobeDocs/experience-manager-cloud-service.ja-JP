@@ -36,9 +36,9 @@ ht-degree: 96%
 
 ## 前提条件 {#prerequisites}
 
-このデモを完了するには、ローカル開発環境を使用します。これには、Adobe Commerce に設定および接続された AEM の実行インスタンスが含まれます。[AEM as a Cloud Service SDKとのローカル開発の設定 ](/help/commerce-cloud/cif-storefront/develop.md) の要件と手順を確認します。
+このデモを完了するには、ローカル開発環境を使用します。これには、Adobe Commerce に設定および接続された AEM の実行インスタンスが含まれます。[AEM as a Cloud Service SDKとのローカル開発の設定 &#x200B;](/help/commerce-cloud/cif-storefront/develop.md) の要件と手順を確認します。
 
-[Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html?lang=ja) へのアクセスと、データ収集用のスキーマ、データセットおよびデータストリームを作成するための権限も必要です。詳しくは、[ 権限の管理 ](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html?lang=ja) を参照してください。
+[Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html?lang=ja) へのアクセスと、データ収集用のスキーマ、データセットおよびデータストリームを作成するための権限も必要です。詳しくは、[&#x200B; 権限の管理 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html?lang=ja) を参照してください。
 
 ## AEM Commerce as a Cloud Service の設定 {#aem-setup}
 
@@ -150,7 +150,7 @@ Babel ローダー（`babel-loader`）と webpack を使用して JavaScript フ
 
 [Apollo クライアント](https://www.apollographql.com/docs/react/)は、GraphQL でローカルデータとリモートデータの両方を管理するために使用します。また、GraphQL クエリの結果を、正規化されたローカルのメモリ内キャッシュに格納します。
 
-[`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) が効果的に機能するには、`possibleTypes.js` ファイルが必要です。このファイルを生成するには、[possibleTypes の自動生成 ](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically) を参照してください。
+[`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) が効果的に機能するには、`possibleTypes.js` ファイルが必要です。このファイルを生成するには、[possibleTypes の自動生成 &#x200B;](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically) を参照してください。
 
 また、[PWA Studio 参照の実装](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) と [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js) ファイルの例も参照してください。
 
@@ -343,7 +343,7 @@ React ベースの Peregrine と CIF のコアコンポーネントを初期化�
 
 >[!AVAILABILITY]
 >
->__Adobe Experience Platform__ および __Adobe Experience Platform データ収集__&#x200B;の正しい&#x200B;__製品プロファイル__&#x200B;に属していることを確認します。必要に応じて、システム管理者と協力して、__Admin Consoleで__ 製品プロファイル [ の作成、更新または割り当てを行います。](https://adminconsole.adobe.com/)
+>__Adobe Experience Platform__ および __Adobe Experience Platform データ収集__&#x200B;の正しい&#x200B;__製品プロファイル__&#x200B;に属していることを確認します。必要に応じて、システム管理者と協力して、__Admin Consoleで__ 製品プロファイル [&#x200B; の作成、更新または割り当てを行います。](https://adminconsole.adobe.com/)
 
 ### Commerce フィールドグループを含んだスキーマの作成 {#create-schema}
 

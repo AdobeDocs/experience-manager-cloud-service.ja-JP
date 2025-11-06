@@ -36,7 +36,7 @@ AEM Forms as a Cloud Serviceは、アダプティブ Forms コアコンポーネ
 
 ### AEM Forms 環境を hCaptcha® と統合するための前提条件 {#prerequisite}
 
-AEM Formsで hCaptcha® を設定するには、hCaptcha® web サイトから [hCaptcha® サイトキーと秘密鍵 ](https://docs.hcaptcha.com/switch/#get-your-hcaptcha-sitekey-and-secret-key) を取得する必要があります。
+AEM Formsで hCaptcha® を設定するには、hCaptcha® web サイトから [hCaptcha® サイトキーと秘密鍵 &#x200B;](https://docs.hcaptcha.com/switch/#get-your-hcaptcha-sitekey-and-secret-key) を取得する必要があります。
 
 ### hCaptcha® の設定 {#steps-to-configure-hcaptcha}
 
@@ -61,14 +61,14 @@ AEM Forms を hCaptcha® サービスと統合するには、次の手順を実�
       ![hCaptcha® の ui](assets/hcaptcha-in-ui.png)
    1. 前の節で説明したように、作成または更新した設定コンテナを選択します。「**[!UICONTROL 作成]**」を選択します。
       ![hCaptcha® の設定](assets/config-hcaptcha.png)
-   1. hCaptcha® サービスの **[!UICONTROL タイトル]**、**[!UICONTROL 名前]**、**[!UICONTROL サイトキー]** および **[!UICONTROL 秘密鍵]** を指定します [ 前提条件で取得 ](#prerequisite)。 「**[!UICONTROL 作成]**」を選択します。
+   1. hCaptcha® サービスの **[!UICONTROL タイトル]**、**[!UICONTROL 名前]**、**[!UICONTROL サイトキー]** および **[!UICONTROL 秘密鍵]** を指定します [&#x200B; 前提条件で取得 &#x200B;](#prerequisite)。 「**[!UICONTROL 作成]**」を選択します。
 
       ![AEM Forms 環境を hCaptcha® に接続するよう Cloud Service を設定](assets/create-hcaptcha-config.png)
 
    >[!NOTE]
    > [クライアントサイド JavaScript 検証 URL](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) と[サーバーサイド検証 URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side) は、hCaptcha® 検証用に既に事前入力されているので、ユーザーは変更する必要がありません。
 
-   hCAPTCHA サービスを設定すると、[ コアコンポーネントに基づくアダプティブフォーム ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/introduction) で使用できるようになります。
+   hCAPTCHA サービスを設定すると、[&#x200B; コアコンポーネントに基づくアダプティブフォーム &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/introduction) で使用できるようになります。
 
 ## アダプティブなForms コアコンポーネントでの hCaptcha® の使用 {#using-hCaptcha&reg;-core-components}
 
@@ -76,21 +76,21 @@ AEM Forms を hCaptcha® サービスと統合するには、次の手順を実�
 1. **[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;に移動します。
 1. アダプティブフォームを選択し、**[!UICONTROL プロパティ]** を選択します。 **[!UICONTROL Configuration Container]** オプションについては、AEM Formsと hCaptcha を接続するクラウド設定が含まれている Configuration Container を選択して®**[!UICONTROL 保存して閉じる]** を選択します。
 
-   そのような Configuration Container がない場合に Configuration Container を作成する方法については、[AEM Forms環境と hCaptcha® の接続 ](#connect-your-forms-environment-with-hcaptcha-service) の節を参照してください。
+   そのような Configuration Container がない場合に Configuration Container を作成する方法については、[AEM Forms環境と hCaptcha® の接続 &#x200B;](#connect-your-forms-environment-with-hcaptcha-service) の節を参照してください。
 
    ![設定コンテナの選択](/help/forms/assets/captcha-properties.png)
 
 1. アダプティブフォームを選択し、「**[!UICONTROL 編集]**」を選択します。 アダプティブフォームエディターでアダプティブフォームが開きます。
 1. コンポーネントブラウザーから **[!UICONTROL Adaptive Form hCaptcha®]** コンポーネントをアダプティブフォームにドラッグ&amp;ドロップまたは追加します。
-1. **[!UICONTROL アダプティブフォーム hCaptcha®]** コンポーネントを選択し、プロパティ ![ プロパティアイコン ](assets/configure-icon.svg) アイコンをクリックします。 プロパティダイアログが開きます。次のプロパティを指定します。
+1. **[!UICONTROL アダプティブフォーム hCaptcha®]** コンポーネントを選択し、プロパティ ![&#x200B; プロパティアイコン &#x200B;](assets/configure-icon.svg) アイコンをクリックします。 プロパティダイアログが開きます。次のプロパティを指定します。
 
    ![hCaptcha® v2](assets/config-hcaptcha-v2.png)
 
-   * **[!UICONTROL 名前 ]:** Captcha コンポーネントの名前を指定すると、フォーム内とルールエディター内の両方で一意の名前を使用して、フォームコンポーネントを簡単に識別できます。
+   * **[!UICONTROL 名前 &#x200B;]:** Captcha コンポーネントの名前を指定すると、フォーム内とルールエディター内の両方で一意の名前を使用して、フォームコンポーネントを簡単に識別できます。
    * **[!UICONTROL タイトル]：** Captcha コンポーネントのタイトルを指定します。
    * **[!UICONTROL 設定]：** hCaptcha® 用に設定されたクラウド設定を選択します。
    * **Captcha サイズ：** hCaptcha® テストダイアログの表示サイズを選択できます。「**[!UICONTROL コンパクト]**」オプションを選択すると小さいサイズ、「**[!UICONTROL 標準]**」オプションを選択すると比較的大きなサイズの hCaptcha® テストダイアログを表示できます。<!-- or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface. -->
-   * **[!UICONTROL 検証メッセージ ]:** フォーム送信時の Captcha 検証の検証メッセージを指定します。
+   * **[!UICONTROL 検証メッセージ &#x200B;]:** フォーム送信時の Captcha 検証の検証メッセージを指定します。
    * **[!UICONTROL スクリプト検証メッセージ]** - スクリプトの検証が失敗した場合に表示するメッセージを入力できます。
 
      >[!NOTE]

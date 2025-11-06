@@ -44,18 +44,18 @@ Forms Experience Builder を使用すると、コーディングに関する知�
 
 Forms Experience Builder は現在、早期アクセスプログラムを通じて利用できます。 アクセスを要求するには、公式メール ID から [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールを送信します。
 
-Experience Builder を使用するには、[ アダプティブ Forms コアコンポーネント ](/help/forms/enable-adaptive-forms-core-components.md) を備えたAEM Forms as a Cloud Service実稼動オーサー環境が必要です。
+Experience Builder を使用するには、[&#x200B; アダプティブ Forms コアコンポーネント &#x200B;](/help/forms/enable-adaptive-forms-core-components.md) を備えたAEM Forms as a Cloud Service実稼動オーサー環境が必要です。
 
 ## Forms Experience Builder へのアクセス
 
 
 1. **AEM/Forms/Formsとドキュメント** に移動します。
 1. 「**作成**」をクリックし、「**アダプティブフォーム**」を選択します。
-1. ウィザードを使用して、要件に応じて [ コアコンポーネントテンプレート ](/help/forms/creating-adaptive-form-core-components.md) または [Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md) テンプレートを使用して新しいフォームを作成し、フォームを編集用に開きます。
+1. ウィザードを使用して、要件に応じて [&#x200B; コアコンポーネントテンプレート &#x200B;](/help/forms/creating-adaptive-form-core-components.md) または [Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md) テンプレートを使用して新しいフォームを作成し、フォームを編集用に開きます。
 1. エディターのツールバーにある **Forms Experience Builder** アイコンをクリックして、Forms Experience Builder インターフェイスを開き、自然言語を使用してフォームを作成します。
 
 
-| ![ アダプティブ Forms エディター – Forms Experience Builder](/help/edge/docs/forms/assets/adaptive-forms-editor.gif " アダプティブ Forms エディター – Forms Experience Builder") | ![ ユニバーサルエディター – Forms Experience Builder](/help/forms/assets/ue-forms-experience-builder.gif " ユニバーサルエディター – Forms Experience Builder") |
+| ![&#x200B; アダプティブ Forms エディター – Forms Experience Builder](/help/edge/docs/forms/assets/adaptive-forms-editor.gif " アダプティブ Forms エディター – Forms Experience Builder") | ![&#x200B; ユニバーサルエディター – Forms Experience Builder](/help/forms/assets/ue-forms-experience-builder.gif " ユニバーサルエディター – Forms Experience Builder") |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | *アダプティブフォームエディター* | *ユニバーサルエディター* |
 
@@ -224,7 +224,7 @@ Forms Experience Builder は現在、早期アクセスプログラムを通じ�
    - プロジェクト詳細（タイムライン、範囲、ユースケース）
    - あなたの公式の仕事用電子メール
 
-   IMS 組織 ID とプログラム ID を見つける方法については、[Adobe Experience Cloud組織設定ガイド ](/help/onboarding/cloud-manager-introduction.md) および [ プログラムと環境の管理 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) ドキュメントを参照してください。
+   IMS 組織 ID とプログラム ID を見つける方法については、[Adobe Experience Cloud組織設定ガイド &#x200B;](/help/onboarding/cloud-manager-introduction.md) および [&#x200B; プログラムと環境の管理 &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) ドキュメントを参照してください。
 
 2. **アクセス要求を送信**：前の手順で収集されたすべての情報を含む電子メール [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。
 
@@ -232,4 +232,4 @@ Forms Experience Builder は現在、早期アクセスプログラムを通じ�
 
 ## はじめに
 
-Forms Experience Builder の使用を開始するには、[Forms Experience Builder ドキュメント ](/help/forms/experience-builder/forms-experience-builder-getting-started.md) を参照してください。
+Forms Experience Builder の使用を開始するには、[Forms Experience Builder ドキュメント &#x200B;](/help/forms/experience-builder/forms-experience-builder-getting-started.md) を参照してください。

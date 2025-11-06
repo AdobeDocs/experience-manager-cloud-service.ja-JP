@@ -86,7 +86,7 @@ ht-degree: 57%
 
 * **[利用条件コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=ja)**：コアコンポーネントに基づくアダプティブフォームに利用条件コンポーネントを含めることができるようになりました。これにより、フォーム作成者は、サービス、製品、プラットフォームの使用に関連する利用条件または法的合意をユーザーに提示するフォーム内に特定のセクションを導入できます。このコンポーネントは、フォームを送信することで同意するルール、規制、義務についてユーザーに通知するように設計されています。
 
-  ![ チェックボックス、利用条件、垂直タブコンポーネント ](/help/forms/assets/forms-components.png)
+  ![&#x200B; チェックボックス、利用条件、垂直タブコンポーネント &#x200B;](/help/forms/assets/forms-components.png)
 
 * **[垂直タブコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html?lang=ja)**：コアコンポーネントに基づくアダプティブフォームでは、フォームのコンテンツをタブの垂直リストに整理し、構造化されたナビゲートしやすいレイアウトを提供できるようになりました。フォームで垂直タブを使用すると、特にフォームに複数のセクションや複雑な情報が含まれている場合、ナビゲーションが簡素化され、フォームコンテンツの整理が改善され、全体的なユーザーエクスペリエンスが向上します。
 
@@ -122,11 +122,11 @@ ht-degree: 57%
 
 ライセンスが取得されると、これらの高度なWAF ルールをCloud Manager設定パイプラインを使用して CDN にデプロイし、web 攻撃に対する保護をさらに強化できます。
 
-WAFなど、[ トラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md) を参照してください。 WAF-DDoS Protection または Enhanced Security のライセンスについては、AEM アカウントチームにお問い合わせください。
+WAFなど、[&#x200B; トラフィックフィルタールール &#x200B;](/help/security/traffic-filter-rules-including-waf.md) を参照してください。 WAF-DDoS Protection または Enhanced Security のライセンスについては、AEM アカウントチームにお問い合わせください。
 
 ### ドメインマッピング早期導入プログラム {#cdn-config-early-adopter}
 
-最近リリースされた [ トラフィックフィルタールール（WAFを含む） ](/help/security/traffic-filter-rules-including-waf.md) に加えて、設定パイプラインを使用して、他の種類の CDN 設定を宣言およびデプロイすることもできます。 次のようなユースケースについてお聞かせください。
+最近リリースされた [&#x200B; トラフィックフィルタールール（WAFを含む） &#x200B;](/help/security/traffic-filter-rules-including-waf.md) に加えて、設定パイプラインを使用して、他の種類の CDN 設定を宣言およびデプロイすることもできます。 次のようなユースケースについてお聞かせください。
 
 * 301/302 クライアントサイドのリダイレクト
 * 任意の接触チャネルに対するエッジでのリクエストのプロキシ処理
@@ -136,7 +136,7 @@ WAFなど、[ トラフィックフィルタールール ](/help/security/traffi
 * ユーザー名/パスワードによる認証
 * その他の便利な CDN 設定
 
-公式メール ID からフィードバックを記載したメールを **0}aemcs-cdn-config-adopter@adobe.com} に送信します。**
+公式メール ID からフィードバックを記載したメールを **0&rbrace;aemcs-cdn-config-adopter@adobe.com&rbrace; に送信します。**
 
 ## Cloud Manager {#cloud-manager}
 
@@ -150,4 +150,4 @@ Cloud Manager の月次リリースの完全なリストは、[こちら](/help/
 
 * コアコンポーネントに基づくアダプティブ Formsを送信できない。 この問題は、コアコンポーネントバージョン 2.0.38～2.0.60 を使用して作成されたアダプティブFormsで発生します。
 
-  問題を解決する方法は次のとおりです。 アダプティブフォームのコアコンポーネントバージョン 2.0.62 以降に移行できます。 お使いの環境でアダプティブ Forms コアコンポーネントのバージョンを設定するには、Forms as a Cloud Service リポジトリまたはAEM アーキタイプベースのプロジェクトで `core.forms.components.version`、`core.forms.components.af.version`、`core.wcm.components.version component`dependencies のバージョンを設定して、Forms as a Cloud Service環境に変更内容をデプロイします。 アダプティブForms コアコンポーネントの依存関係の最新バージョンは、[ アダプティブForms コアコンポーネント Git リポジトリ ](https://github.com/adobe/aem-core-forms-components#system-requirements) で確認できます。
+  問題を解決する方法は次のとおりです。 アダプティブフォームのコアコンポーネントバージョン 2.0.62 以降に移行できます。 お使いの環境でアダプティブ Forms コアコンポーネントのバージョンを設定するには、Forms as a Cloud Service リポジトリまたはAEM アーキタイプベースのプロジェクトで `core.forms.components.version`、`core.forms.components.af.version`、`core.wcm.components.version component`dependencies のバージョンを設定して、Forms as a Cloud Service環境に変更内容をデプロイします。 アダプティブForms コアコンポーネントの依存関係の最新バージョンは、[&#x200B; アダプティブForms コアコンポーネント Git リポジトリ &#x200B;](https://github.com/adobe/aem-core-forms-components#system-requirements) で確認できます。

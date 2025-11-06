@@ -138,8 +138,8 @@ RESTful web サービスは、[Swagger の仕様](https://swagger.io/specificati
 1. 「**[!UICONTROL 作成]**」を選択して、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL RESTful サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」を選択します。
 1. RESTful サービスの次の詳細を指定します。
 
-   * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL  Swagger] 定義ファイルに対する [!DNL Swagger URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
-   * [!DNL  Swagger] ソース入力に基づいて、次のフィールドに値が事前入力されます。
+   * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL &#x200B; Swagger] 定義ファイルに対する [!DNL Swagger URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
+   * [!DNL &#x200B; Swagger] ソース入力に基づいて、次のフィールドに値が事前入力されます。
 
       * スキーム：REST API で使用される転送プロトコル。ドロップダウンリストに表示されるスキームの種類の数は、[!DNL Swagger] ソースで定義されているスキームによって異なります。
       * ホスト：REST API を提供するホストのドメイン名または IP アドレス。このフィールドは必須です。
@@ -163,8 +163,8 @@ RESTful web サービスは、[Swagger の仕様](https://swagger.io/specificati
 1. 「**[!UICONTROL 作成]**」を選択して、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL RESTful サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」を選択します。
 1. RESTful サービスの次の詳細を指定します。
 
-   * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL  Swagger] 定義ファイルに対する [!DNL Swagger 3.0 URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
-   * [!DNL  Swagger] ソース入力に基づいて、ターゲットサーバとの接続情報が表示されます。
+   * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL &#x200B; Swagger] 定義ファイルに対する [!DNL Swagger 3.0 URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
+   * [!DNL &#x200B; Swagger] ソース入力に基づいて、ターゲットサーバとの接続情報が表示されます。
    * RESTful サービスにアクセスするための認証タイプ（なし、OAuth2.0（[認証コード](https://oauth.net/2/grant-types/authorization-code/)、[クライアント資格情報](https://oauth.net/2/grant-types/client-credentials/)）、基本認証、API キー認証、カスタム認証）を選択し、その選択内容に応じて認証の詳細を指定します。
 
    認証タイプとして **[!UICONTROL API キー]**&#x200B;を選択した場合は、API キーの値を指定します。API キーは、リクエストヘッダーまたはクエリパラメーターとして送信できます。「**[!UICONTROL 場所]**」ドロップダウンリストから次のオプションの 1 つを選択し、それに応じて「**[!UICONTROL パラメーター名]**」フィールドにヘッダーまたはクエリパラメーターの名前を指定します。

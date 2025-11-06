@@ -30,7 +30,7 @@ Adobe Experience Manager as a Cloud Service には、オーサーインスタン
 
 オーバーレイオーバーレイはノード定義に基づいており、`/libs` にある標準の機能に、`/apps` にあるカスタマイズした独自機能を重ねることができます。
 
-:1sling Resource Merger[ は継承を許可しているので、オーバーレイを作成するときに、オリジナルの 1](/help/implementing/developing/introduction/sling-resource-merger.md) コピーは必要ありません。
+:1sling Resource Merger[&#x200B; は継承を許可しているので、オーバーレイを作成するときに、オリジナルの 1](/help/implementing/developing/introduction/sling-resource-merger.md) コピーは必要ありません。
 
 詳しくは、[JS ドキュメントセット](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)を参照してください。
 

@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ユーザーがバニティー URL をクリックすると、[!DNL Dynamic Media with OpenAPI] は取り込み時に元のアセットの場所に自動的にマッピングし、配信時に適切に解決して、アセットをユーザーにサーバーします。
 
-[ バニティ URL の作成 ](#create-vanity-urls) の詳細情報
+[&#x200B; バニティ URL の作成 &#x200B;](#create-vanity-urls) の詳細情報
 
 ## 標準配信 URL{#standard-urls}
 
@@ -77,7 +77,7 @@ ht-degree: 1%
 
 ## 前提条件{#prerequisites-for-creating-vanity-id}
 
-バニティー URL を作成するには、アセットが既に [ 公開配信用に承認 ](/help/assets/manage-organize-assets-view.md#manage-asset-status) されていることを確認します。
+バニティー URL を作成するには、アセットが既に [&#x200B; 公開配信用に承認 &#x200B;](/help/assets/manage-organize-assets-view.md#manage-asset-status) されていることを確認します。
 
 ## バニティー URL の作成{#create-vanity-urls}
 
@@ -93,12 +93,12 @@ ht-degree: 1%
 次の手順を実行して、アセットのメタデータフォームにバニティ ID を設定します。
 
 1. 配信用のアセットを保持しているフォルダーの詳細ページ [!DNL Dynamic Media with OpenAPI] 移動します。
-1. 次のいずれかの操作を行って [ そのメタデータフォームを編集します ](/help/assets/metadata-assets-view.md#edit-metadata-forms)。
+1. 次のいずれかの操作を行って [&#x200B; そのメタデータフォームを編集します &#x200B;](/help/assets/metadata-assets-view.md#edit-metadata-forms)。
 
    * 新しいメタデータフィールドを追加し、必要なバニティ ID をそのフィールドの値として指定します。
-   * 既存のメタデータプロパティの値を必要なバニティ ID に置き換えて、既存のフィールドを更新します。 バニティ ID を作成するための [ ベストプラクティス ](#best-practices) について説明します。
+   * 既存のメタデータプロパティの値を必要なバニティ ID に置き換えて、既存のフィールドを更新します。 バニティ ID を作成するための [&#x200B; ベストプラクティス &#x200B;](#best-practices) について説明します。
 
-   ![ バニティ ID](/help/assets/assets/vanity-id-metadata.png)
+   ![&#x200B; バニティ ID](/help/assets/assets/vanity-id-metadata.png)
 
    詳しくは[メタデータスキーマ](/help/assets/metadata-schemas.md)を参照してください。
 
@@ -106,23 +106,23 @@ ht-degree: 1%
    >
    > * 各アセットに一意のバニティ ID を使用します。 同じメタデータフォームを共有するアセットに、バニティ URL を介して OpenAPI 配信される DM 用の一意のバニティ ID があることを必ず確認してください。 2 つのアセットが同じバニティ ID を共有する場合、OpenAPI を使用する DM は、最新にその ID を受信したアセットを配信し、ID の以前の使用権限を別のアセットに上書きします。
    >
-   > * 1 つのアセットに複数のバニティ ID を含めることができます。 [Adobe サポートに連絡 ](https://helpx.adobe.com/jp/contact.html) し、必要なバニティ ID を生成するようリクエストを送信します。
+   > * 1 つのアセットに複数のバニティ ID を含めることができます。 [Adobe サポートに連絡 &#x200B;](https://helpx.adobe.com/jp/contact.html) し、必要なバニティ ID を生成するようリクエストを送信します。
 
-アセットメタデータフォームでバニティ ID を設定したら、[ このメタデータフィールドをシステムの配信メカニズムにマッピング ](#map-cloud-manager-environment-variable) します。
+アセットメタデータフォームでバニティ ID を設定したら、[&#x200B; このメタデータフィールドをシステムの配信メカニズムにマッピング &#x200B;](#map-cloud-manager-environment-variable) します。
 
 ### Cloud Manager 環境変数の作成とマッピング{#map-cloud-manager-environment-variable}
 
 次の手順を実行して環境変数を作成し、バニティ ID を保持するメタデータフィールドにマッピングします。
 
-1. [Cloud Manager環境の設定ページに移動して ](/help/implementing/cloud-manager/environment-variables.md) 次の手順を実行します。
+1. [Cloud Manager環境の設定ページに移動して &#x200B;](/help/implementing/cloud-manager/environment-variables.md) 次の手順を実行します。
    1. 変数 `ASSET_DELIVERY_VANITY_ID` 追加します。 これが鍵です。
    1. 値フィールドを使用して、バニティ ID を保持するアセットメタデータプロパティにマッピングします。 マッピングは `dc:<your-metadata-property>` 形式に従います。ここで、メタデータマッピングプレフィックス（dc：など）は、アセットメタデータ設定プロパティに応じて異なります。
-      ![ASSET_DELIVERY_VANITY_ID 変数 ](/help/assets/assets/environment-config.png)
+      ![ASSET_DELIVERY_VANITY_ID 変数 &#x200B;](/help/assets/assets/environment-config.png)
 1. 変更を保存し、環境内のポッドを再起動します。
 
 ### 配信するアセットの承認{#approve-assets-for-delivery}
 
-Cloud Manager環境の `ASSET_DELIVERY_VANITY_ID` 変数を、バニティ ID を保持するアセットメタデータプロパティにマッピングしたら、[ 配信にバニティ URL を必要とするアセットを承認 ](/help/assets/manage-organize-assets-view.md#manage-asset-status) します。
+Cloud Manager環境の `ASSET_DELIVERY_VANITY_ID` 変数を、バニティ ID を保持するアセットメタデータプロパティにマッピングしたら、[&#x200B; 配信にバニティ URL を必要とするアセットを承認 &#x200B;](/help/assets/manage-organize-assets-view.md#manage-asset-status) します。
 
 ### バニティ URL を生成{#generate-vanity-urls}
 
@@ -131,16 +131,16 @@ Cloud Manager環境の `ASSET_DELIVERY_VANITY_ID` 変数を、バニティ ID �
 * **UUID** を **バニティ ID** に置き換えます。
 * `aaid` を `avid` に置き換えます。
 
-上記の [ 標準からバニティ URL への URL 変換 ](#standard-urls) を参照してください。
-アセットの [Dynamic Media を OpenAPI 配信 URL と共にコピーする ](/help/assets/approve-assets.md#copy-delivery-url-for-approved-assets) 方法を説明します。
+上記の [&#x200B; 標準からバニティ URL への URL 変換 &#x200B;](#standard-urls) を参照してください。
+アセットの [Dynamic Media を OpenAPI 配信 URL と共にコピーする &#x200B;](/help/assets/approve-assets.md#copy-delivery-url-for-approved-assets) 方法を説明します。
 
 ユーザーがバニティ URL をクリックすると、[!DNL Dynamic Media with OpenAPI] は取り込み時にバニティ ID を元のアセット UUID に自動的にマッピングし、配信時に適切に解決して、遅滞なくアセットをユーザーに提供します。 アセット配信のパフォーマンスに影響を与えることなく、リアルタイムでバニティ URL をカスタマイズできます。
 
-[ バニティ URL で AEM Cloud Service の高度なカスタマイズ機能を使用して、その影響を強化します ](#scale-using-vanity-url)。
+[&#x200B; バニティ URL で AEM Cloud Service の高度なカスタマイズ機能を使用して、その影響を強化します &#x200B;](#scale-using-vanity-url)。
 
 ## バニティ URL を使用した拡大・縮小{#scale-using-vanity-url}
 
-AEM as a Cloud Serviceを使用すると、web アドレス内で [DNS 名と CDN 名をカスタマイズ ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) できます。 これらの AEMCS 機能をバニティ URL と共に使用して、明確で説明的、ブランド化された、直感的で [ 前述のメリット ](#key-benefits) な独自の web アドレスに変換します。
+AEM as a Cloud Serviceを使用すると、web アドレス内で [DNS 名と CDN 名をカスタマイズ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) できます。 これらの AEMCS 機能をバニティ URL と共に使用して、明確で説明的、ブランド化された、直感的で [&#x200B; 前述のメリット &#x200B;](#key-benefits) な独自の web アドレスに変換します。
 
 次のバニティー URL と、カスタマイズ可能なコンポーネントを参照してください。
 
@@ -178,23 +178,23 @@ AEM as a Cloud Serviceを使用すると、web アドレス内で [DNS 名と CD
 
 **カスタマイズ可能な URL コンポーネント**
 
-* ***[DNS 名（hostname）:](#customize-DNS)*** `https://delivery-<tenant>.adobeaemcloud.com` は、アセットをホストするサーバードメインです。 [ ホスト名を変更するための DNS のカスタマイズ ](#customize-DNS)。
-* ***[CDN 書き換えルール：](#rewrite-cdn-rules)*** `adobe/assets/urn:avid:aem:` は、アセットタイプと配信方法を識別するパス構造です。 [CDN ルールの書き換え ](#rewrite-cdn-rules) を行い、ドメインパスを変更します。
+* ***[DNS 名（hostname）:](#customize-DNS)*** `https://delivery-<tenant>.adobeaemcloud.com` は、アセットをホストするサーバードメインです。 [&#x200B; ホスト名を変更するための DNS のカスタマイズ &#x200B;](#customize-DNS)。
+* ***[CDN 書き換えルール：](#rewrite-cdn-rules)*** `adobe/assets/urn:avid:aem:` は、アセットタイプと配信方法を識別するパス構造です。 [CDN ルールの書き換え &#x200B;](#rewrite-cdn-rules) を行い、ドメインパスを変更します。
 
 ### DNS のカスタマイズ{#customize-dns}
 
-[Adobe サポートへのリクエストを発行 ](https://helpx.adobe.com/jp/contact.html) して、配信層に必要なカスタム DNS を生成します。 カスタム DNS 名を作成するには、次の [ ベストプラクティス ](#best-practices) に従います。
+[Adobe サポートへのリクエストを発行 &#x200B;](https://helpx.adobe.com/jp/contact.html) して、配信層に必要なカスタム DNS を生成します。 カスタム DNS 名を作成するには、次の [&#x200B; ベストプラクティス &#x200B;](#best-practices) に従います。
 
 ### CDN ルールの書き換え{#rewrite-cdn-rules}
 
 配信用の CDN ルールを書き換えるには、次の手順を実行します。
 
 1. AEM リポジトリに移動して、YAML 設定ファイルを作成します。
-2. [ 設定 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) セクションの手順を実行して、CDN ルールを設定し、Cloud Manager設定パイプラインを通じて設定をデプロイします。
-ドメインパスを作成するには、次の [ ベストプラクティス ](#best-practices) に従います。
-   [CDN 書き換えルールの詳細情報 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations)。
+2. [&#x200B; 設定 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) セクションの手順を実行して、CDN ルールを設定し、Cloud Manager設定パイプラインを通じて設定をデプロイします。
+ドメインパスを作成するには、次の [&#x200B; ベストプラクティス &#x200B;](#best-practices) に従います。
+   [CDN 書き換えルールの詳細情報 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations)。
 
-バニティ URL に拡張子の付いたファイル名を追加する書き換えルールの例を次に示します。 特定の要件に従って、これらの書き換えルールをカスタマイズします。 [Adobe サポートにお問い合わせください ](https://helpx.adobe.com/jp/contact.html)。サポートが必要な場合：
+バニティ URL に拡張子の付いたファイル名を追加する書き換えルールの例を次に示します。 特定の要件に従って、これらの書き換えルールをカスタマイズします。 [Adobe サポートにお問い合わせください &#x200B;](https://helpx.adobe.com/jp/contact.html)。サポートが必要な場合：
 
 ```- name: cdn-rewrite-rule
   when:
@@ -239,9 +239,9 @@ type: transform
 
 ## クリーンなバニティ URL を作成するためのベストプラクティスに従う{#best-practices}
 
-[ バニティ ID](#create-vanity-urls)、[ カスタム DNS](#customize-dns) および [CDN 名 ](#rewrite-cdn-rules) を作成するには、次のベストプラクティスに従います。
+[&#x200B; バニティ ID](#create-vanity-urls)、[&#x200B; カスタム DNS](#customize-dns) および [CDN 名 &#x200B;](#rewrite-cdn-rules) を作成するには、次のベストプラクティスに従います。
 
 1. バニティ ID には、スペース、スラッシュ、ハイフンなどの特殊文字を使用しないでください。 バニティ ID の特殊文字が、事前に定義されたマッピングを使用して置き換えられます。
-1. ブランド名、製品名、関連キーワードを [ バニティ ID](#create-vanity-urls)、[ カスタム DNS](#customize-dns) および [CDN 名 ](#rewrite-cdn-rules) で使用して、ブランドの可視性とユーザーエンゲージメントを高めます。
+1. ブランド名、製品名、関連キーワードを [&#x200B; バニティ ID](#create-vanity-urls)、[&#x200B; カスタム DNS](#customize-dns) および [CDN 名 &#x200B;](#rewrite-cdn-rules) で使用して、ブランドの可視性とユーザーエンゲージメントを高めます。
 1. 意味を伝える短い説明的な単語または文字列を使用します。
 1. クリックごとにユーザーを招待するテキストを使用します。

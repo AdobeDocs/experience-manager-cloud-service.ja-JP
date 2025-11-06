@@ -179,8 +179,8 @@ Forms Experience Builder は、フォームを外部システム、API および
 **実装：**
 従業員のオンボーディングを処理する：
 1.従業員の詳細を記載した E メール <hr@company.com>
-2. SharePoint社員フォルダーへのドキュメントのアップロード
-3. Power Automate でオンボーディングワークフローを開始する
+&#x200B;2. SharePoint社員フォルダーへのドキュメントのアップロード
+&#x200B;3. Power Automate でオンボーディングワークフローを開始する
 4.人事システム、電子メール、その他のツールでのアカウントの作成
 
 ### リードジェネレーションフォーム
@@ -311,8 +311,8 @@ Forms Experience Builder は、フォームを外部システム、API および
 
 統合の問題の場合：
 
-- [Forms Experience Builder の FAQ を確認してください ](forms-experience-builder-frequently-asked-questions.md)
-- [ はじめる前に ](forms-experience-builder-getting-started.md) を確認してください
+- [Forms Experience Builder の FAQ を確認してください &#x200B;](forms-experience-builder-frequently-asked-questions.md)
+- [&#x200B; はじめる前に &#x200B;](forms-experience-builder-getting-started.md) を確認してください
 - 技術的なサポートについては、システム管理者にお問い合わせください
 - 外部サービスについては、API ドキュメントを参照してください
 

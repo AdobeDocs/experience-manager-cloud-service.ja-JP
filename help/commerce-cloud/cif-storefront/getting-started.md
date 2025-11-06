@@ -25,7 +25,7 @@ AEM Commerce as a Cloud Service の使用を開始するには、Experience Mana
 >
 >**Edge Delivery Servicesを検討しましたか？**
 >
->Edge Delivery Servicesは、ストアフロントを作成するための、Adobeが推奨するソリューションです。 詳しくは、ドキュメント [ 概要 ](/help/commerce-cloud/introduction.md) を参照してください。
+>Edge Delivery Servicesは、ストアフロントを作成するための、Adobeが推奨するソリューションです。 詳しくは、ドキュメント [&#x200B; 概要 &#x200B;](/help/commerce-cloud/introduction.md) を参照してください。
 
 ## オンボーディング {#onboarding}
 
@@ -36,7 +36,7 @@ AEM Commerce as a Cloud Service のオンボーディングは、次の 2 つの
 
 最初のオンボーディング手順はアドビが行います。価格とプロビジョニングの詳細については、セールス担当者にお問い合わせください。
 
-CIF アドオンのプロビジョニングが完了すると、既存の Cloud Manager プログラムに適用されます。Cloud Manager プログラムがない場合は、作成する必要があります。詳しくは、[ プログラムの設定 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=ja) を参照してください。
+CIF アドオンのプロビジョニングが完了すると、既存の Cloud Manager プログラムに適用されます。Cloud Manager プログラムがない場合は、作成する必要があります。詳しくは、[&#x200B; プログラムの設定 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=ja) を参照してください。
 
 2 つ目の手順は、各 AEM as a Cloud Service 環境のセルフサービスです。CIF アドオンの初期プロビジョニングの後で、いくつかの追加の設定を行う必要があります。
 
@@ -77,7 +77,7 @@ Adobe I/O CLI を使用して AEM をコマースソリューションに接続�
 
 1. Cloud Manager プラグインとAdobe I/O CLI を取得します。
 
-   * [Adobe CLI プラグインで ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ja)2}Cloud Manager CLI} をダウンロード、設定、使用する方法については [](https://github.com/adobe/aio-cli)Adobe I/O Cloud Managerのドキュメント [ を参照してください。](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+   * [Adobe CLI プラグインで &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ja)2&rbrace;Cloud Manager CLI&rbrace; をダウンロード、設定、使用する方法については [&#128279;](https://github.com/adobe/aio-cli)Adobe I/O Cloud Managerのドキュメント [&#x200B; を参照してください。](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
 1. Adobe I/O CLI をAEM as a Cloud Service プログラムで認証します。
 

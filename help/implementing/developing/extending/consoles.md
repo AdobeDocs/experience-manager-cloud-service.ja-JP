@@ -23,7 +23,7 @@ Clientlibs を使用すると、デフォルトの実装を拡張して新しい
 
 ## オーバーレイ {#overlays}
 
-オーバーレイはノード定義に基づいており、`/libs` 下にある標準の機能に、`/apps` 下にあるカスタマイズした独自機能を重ねることができます。:1Sling Resource Merger[ は継承を許可しているので、オーバーレイを作成するときに、オリジナルの 1](/help/implementing/developing/introduction/sling-resource-merger.md) コピーは必要ありません。
+オーバーレイはノード定義に基づいており、`/libs` 下にある標準の機能に、`/apps` 下にあるカスタマイズした独自機能を重ねることができます。:1Sling Resource Merger[&#x200B; は継承を許可しているので、オーバーレイを作成するときに、オリジナルの 1](/help/implementing/developing/introduction/sling-resource-merger.md) コピーは必要ありません。
 
 オーバーレイを様々な方法で使用して AEM コンソールを拡張できます。次の節では、いくつかの例を示します。
 

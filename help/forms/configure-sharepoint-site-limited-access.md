@@ -36,16 +36,16 @@ SharePoint サイトへの限定的なアクセスを提供するメリット：
 
 認証範囲を使用して制限付きアクセスでSharePoint Sites を設定するには、次の手順に従います。
 
-1. [を使用したアプリケーションの作成 ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
+1. [を使用したアプリケーションの作成 &#x200B;](#create-an-application-with-the-limited-permission-in-the-azure-portal)
 1. [AEM インスタンスでの認証範囲の設定](#set-the-authorization-scope-at-aem-instance)
 
 ### Azure portal で、制限付き権限のアプリケーションを作成します
 
-Microsoft Graph API の [ 権限範囲を使用して ](https://portal.azure.com/#home)0}Microsoft Azure Portal} でアプリケーションを作成します。`Sites.Selected`
+Microsoft Graph API の [&#x200B; 権限範囲を使用して &#x200B;](https://portal.azure.com/#home)0&rbrace;Microsoft Azure Portal&rbrace; でアプリケーションを作成します。`Sites.Selected`
 
-![SharePointが選択したサイト ](/help/forms/assets/sharepoint-selected-site.png)
+![SharePointが選択したサイト &#x200B;](/help/forms/assets/sharepoint-selected-site.png)
 
-`Client ID` の `Client Secret`、`Tenant ID` および `OAuth URL` を取得する方法については、[Microsoft® のドキュメント ](https://learn.microsoft.com/ja-jp/graph/auth-register-app-v2) を参照してください。
+`Client ID` の `Client Secret`、`Tenant ID` および `OAuth URL` を取得する方法については、[Microsoft® のドキュメント &#x200B;](https://learn.microsoft.com/ja-jp/graph/auth-register-app-v2) を参照してください。
 
 * Microsoft® Azure Portal で、リダイレクト URI を `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html` として追加します。`[author-instance]` をオーサーインスタンスの URL に置き換えます。
 * Microsoft Graph API で `offline_access` と `Sites.Selected` の権限範囲を追加し、Sites への制限付きアクセスを提供します。
@@ -53,7 +53,7 @@ Microsoft Graph API の [ 権限範囲を使用して ](https://portal.azure.com
 
 `Sites.Selected` API 権限を使用するには、SharePoint Online Sites に適切な権限が設定された Azure portal に登録されているアプリケーションが必要です。 このセットアップにより、定義されたスコープ内でSharePoint サイトを操作するために必要な権限がアプリケーションに付与され、必要な制限付きアクセスが提供されます。
 
-SharePoint Online Sites の権限を使用するアプリケーションの開発手順については、[ ブログ記事 – Develop Applications that use Sites.Selected permissions for SPO sites](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) を参照し `Sites.Selected` ください。
+SharePoint Online Sites の権限を使用するアプリケーションの開発手順については、[&#x200B; ブログ記事 – Develop Applications that use Sites.Selected permissions for SPO sites](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) を参照し `Sites.Selected` ください。
 
 ### AEM インスタンスでの認証範囲の設定
 
@@ -64,9 +64,9 @@ Microsoft SharePoint サイトへの制限付きアクセスを提供するに�
 1. **設定コンテナ**&#x200B;を選択します。設定は、選択した設定コンテナに保存されます。
 1. クリック **[!UICONTROL 作成]** > **[!UICONTROL SharePoint Document Library]** 」をドロップダウンリストから選択します。 SharePoint 設定ウィザードが表示されます。
 
-   ![SharePoint サイトの制限付きサイト アクセス ](/help/forms/assets/sharepoint-doc-library-limited-scopes.png)
+   ![SharePoint サイトの制限付きサイト アクセス &#x200B;](/help/forms/assets/sharepoint-doc-library-limited-scopes.png)
 
-1. **[!UICONTROL タイトル]**、**[!UICONTROL クライアント ID]** および **[!UICONTROL クライアントシークレット]** を指定します。 クライアント ID とクライアント秘密鍵の取得方法については、[Microsoft® のドキュメント ](https://learn.microsoft.com/ja-jp/graph/auth-register-app-v2) を参照してください。
+1. **[!UICONTROL タイトル]**、**[!UICONTROL クライアント ID]** および **[!UICONTROL クライアントシークレット]** を指定します。 クライアント ID とクライアント秘密鍵の取得方法については、[Microsoft® のドキュメント &#x200B;](https://learn.microsoft.com/ja-jp/graph/auth-register-app-v2) を参照してください。
 
 1. OAuth URL を `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize` として使用します。 `<tenant-id>` を Microsoft® Azure Portal のアプリの `tenant-id` に置き換えます。
 
@@ -76,7 +76,7 @@ Microsoft SharePoint サイトへの制限付きアクセスを提供するに�
 
 1. `offline_access Sites.Selected` フィールドに `Authorization Scope` を追加します。 `offline_access Sites.Selected` のテキストボックス フィールドに `Authorization Scope` 範囲を追加すると、`SharePoint Site ID` のテキストボックスが画面に表示されます。
 
-1. SharePoint サイト ID を指定します。 SharePoint サイト ID を取得する方法については、[ 追加バイト ](#extra-bytes) の節を参照してください。
+1. SharePoint サイト ID を指定します。 SharePoint サイト ID を取得する方法については、[&#x200B; 追加バイト &#x200B;](#extra-bytes) の節を参照してください。
 
 1. **[!UICONTROL サイト接続の確認]** をクリックします。 接続に成功した場合、`Connection Successful` のメッセージが表示されます。
 
@@ -87,7 +87,7 @@ Microsoft SharePoint サイトへの制限付きアクセスを提供するに�
    >* デフォルトでは、`forms-ootb-storage-adaptive-forms-submission` は選択した SharePoint サイトに存在します。
    >* 選択した SharePoint サイトの `Documents` ライブラリにまだ存在しない場合は、「**フォルダーを作成**」をクリックして、フォルダーを `forms-ootb-storage-adaptive-forms-submission` として作成します。
 
-アダプティブフォームの送信アクションに、この [SharePoint Sites 設定を使用できるようになりました ](/help/forms/configure-submit-action-sharepoint.md#use-sharepoint-document-library-configuration-in-an-adaptive-form-use-sharepoint-configuartion-in-af)。
+アダプティブフォームの送信アクションに、この [SharePoint Sites 設定を使用できるようになりました &#x200B;](/help/forms/configure-submit-action-sharepoint.md#use-sharepoint-document-library-configuration-in-an-adaptive-form-use-sharepoint-configuartion-in-af)。
 
 ## 追加バイト
 

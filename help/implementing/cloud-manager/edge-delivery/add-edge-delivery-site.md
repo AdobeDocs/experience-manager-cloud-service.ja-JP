@@ -35,7 +35,7 @@ ht-degree: 92%
 
    * ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左側のサイドメニューを表示します。
 **サービス**&#x200B;見出しの下にある ![Web ページアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg)「**Edge Delivery サイト**」をクリックします。
-ページの右上隅付近にある ![ リンクアイコンまたはEdge Delivery サイトを追加 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg) 追加 **** をクリックします。
+ページの右上隅付近にある ![&#x200B; リンクアイコンまたはEdge Delivery サイトを追加 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg) 追加 **&#x200B;**&#x200B;をクリックします。
 
      ![「Edge Delivery サイト」ボタンからの Edge Delivery サイトの追加](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
 

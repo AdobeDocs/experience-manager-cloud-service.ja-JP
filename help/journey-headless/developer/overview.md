@@ -78,7 +78,7 @@ AEM のヘッドレス実装では、コンテンツフラグメントモデル�
 
 ドキュメントジャーニーは、関連するプロセスと機能をガイドする説明を提供することで、AEM がビジネス上の問題をどのように解決するかを示します。1 つのジャーニーでは、複数の機能が連携して 1 つのビジネスニーズを満たす方法を示しています。
 
-実践による学習を希望し、AEMに関する十分な知識がある場合は、API とフレームワーク別に整理された実践チュートリアルを利用してください。このチュートリアルでは、AEM ヘッドレスに基づくアプリケーションの作成と使用の詳細を紹介しています。 [AEMのヘッドレスに関するチュートリアル ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja) を参照してください。
+実践による学習を希望し、AEMに関する十分な知識がある場合は、API とフレームワーク別に整理された実践チュートリアルを利用してください。このチュートリアルでは、AEM ヘッドレスに基づくアプリケーションの作成と使用の詳細を紹介しています。 [AEMのヘッドレスに関するチュートリアル &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja) を参照してください。
 
 AEM の強力な機能の連携の仕組みについて詳しくは、次に示すその他のジャーニーを参照してください。
 

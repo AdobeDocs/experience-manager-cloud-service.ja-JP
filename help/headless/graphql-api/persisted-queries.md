@@ -320,7 +320,7 @@ Dispatcher の `CACHE_GRAPHQL_PERSISTED_QUERIES` が有効な場合、値に `/`
 * OSGi の設定で
    * 上書きすることはできません。
 * cURL を使った
-   *  HTTP ヘッダー設定を定義するリクエストによって上書きできます。リクエストには、`cache-control` や `surrogate-control` に適した設定を含む必要があります。例として、[永続クエリレベルでのキャッシュの管理](#cache-persisted-query-level)を参照してください。
+   * HTTP ヘッダー設定を定義するリクエストによって上書きできます。リクエストには、`cache-control` や `surrogate-control` に適した設定を含む必要があります。例として、[永続クエリレベルでのキャッシュの管理](#cache-persisted-query-level)を参照してください。
    * [GraphiQL IDE](#http-cache-headers-graphiql-ide) の&#x200B;**ヘッダー**&#x200B;ダイアログで値を指定する場合。
 
 ### パブリッシュインスタンス {#publish-instances}
