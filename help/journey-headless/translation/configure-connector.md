@@ -4,9 +4,9 @@ description: AEM を翻訳サービスに接続する方法を説明します。
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 100%
 
@@ -122,7 +122,7 @@ AEM は柔軟かつ強力なツールで、複数のコネクタと複数の設�
 1. グローバルナビゲーションで&#x200B;**ナビゲーション**／**アセット**／**ファイル**&#x200B;に移動します。
 1. アセットコンソールで、設定する言語ルートを選択して、「**プロパティ**」を選択します。
 1. 「**クラウドサービス**」タブを選択します。
-1. 「**設定を追加**」ドロップダウンリストの「**クラウドサービスの設定**」で、コネクタを選択します。[前述](#connect-translation-provider)のとおりにパッケージをインストールしてある場合は、目的のコネクタがドロップダウンリストに表示されるはずです。
+1. 「**設定を追加**」ドロップダウンリストの「**クラウドサービスの設定**」で、コネクタを選択します。[前述](#connect-translation-provider)のとおりにパッケージをインストールした場合は、目的のコネクタがドロップダウンリストに表示されるはずです。
 1. 「**設定を追加**」ドロップダウンリストの「**クラウドサービスの設定**」で、設定も選択します。
 1. 「**保存して閉じる**」を選択します。
 

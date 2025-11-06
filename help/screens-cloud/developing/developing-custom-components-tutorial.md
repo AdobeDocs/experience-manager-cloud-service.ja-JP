@@ -4,8 +4,8 @@ description: 以下のチュートリアルでは、AEM Screens 用のカスタ�
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2039'
 ht-degree: 100%
 
@@ -291,7 +291,7 @@ AEM Screens コンポーネントは、編集モードとプレビュー／実�
 
    categories プロパティは、クライアントライブラリを識別する文字列です。cq.screens.componentscategory は、編集モードとプレビュー／実稼動モードの両方で使用されます。したがって、sharedclientlib に定義された CSS／JS は、すべてのモードに読み込まれます。
 
-   実稼動環境では、直接 /apps にパスを公開しないことをお勧めします。allowProxy プロパティにより、クライアントライブラリの CSS と JS が of/etc.clientlibs. の接頭辞を付けて参照されるようになります。
+   本番環境では、直接 /apps にパスを公開しないことをお勧めします。allowProxy プロパティにより、クライアントライブラリの CSS と JS が of/etc.clientlibs. の接頭辞を付けて参照されるようになります。
 
 1. 共有フォルダーの下に `css.txt` という名前のファイルを作成します。
 
@@ -548,7 +548,7 @@ public class MyCustomHandler extends AbstractResourceHandler {
 
 ## 完成したコード {#finished-code}
 
-チュートリアルで完成したコードは以下のとおりです。**screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** と **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip** は、コンパイル済みの AEM パッケージです。SRC-screens-wertail-run-0.0.1.zip は、Maven を使用してデプロイできる未コンパイルのソースコードです。
+チュートリアルで完成したコードは以下のとおりです。**screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** と **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip** は、コンパイル済みの AEM パッケージです。**SRC-screens-weretail-run-0.0.1.zip** は、Maven を使用してデプロイできる未コンパイルのソースコードです。
 
 [ファイルの取得](/help/screens-cloud/developing/assets/screens-weretail-runuiapps-001-snapshot.zip)
 

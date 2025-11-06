@@ -5,11 +5,11 @@ description: 開発者モードで開かれるサイドパネルのタブには�
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -31,8 +31,7 @@ AEM でページを編集する場合、複数の[モード](/help/sites-cloud/a
 >
 >開発者モード:
 >
->* モバイルデバイスまたはデスクトップ上の小さいウィンドウでは、スペースの制約があるので使用できません。
->  * ウィンドウの幅が 1024 px 未満の場合は使用できません。
+>* モバイルデバイスまたはデスクトップ上の小さなウィンドウでは、（スペースの制限により）使用できません。 ウィンドウの幅が 1024 px 未満の場合は使用できません。
 >* `administrators` グループに所属しているユーザーのみ使用できます。
 
 ## 開発者モードを開く {#opening-developer-mode}

@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.11.0 リ
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1810'
 ht-degree: 98%
@@ -37,7 +37,7 @@ ht-degree: 98%
 
 2024.11.0 リリースで追加された機能の概要については、2024年11月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -51,7 +51,7 @@ AEM インスタンス経由で公開するための **[!DNL Edge Delivery Servi
 
 ### AEM Sites のプレリリース機能
 
-強化 [&#x200B; 一意の ID ベースの参照を使用したコンテンツフラグメント参照 &#x200B;](/help/headless/graphql-api/uuid-reference-upgrade.md) により、アセットやフラグメントを移動した場合でも有効な安定したリンクが確保され、更新や再公開が不要になりました。 現在の制限事項：ページ参照は、一意の ID ではまだサポートされていません。 コンテンツフラグメントでページを参照する場合は、この機能を使用しないでください。
+強化 [ 一意の ID ベースの参照を使用したコンテンツフラグメント参照 ](/help/headless/graphql-api/uuid-reference-upgrade.md) により、アセットやフラグメントを移動した場合でも有効な安定したリンクが確保され、更新や再公開が不要になりました。 現在の制限事項：ページ参照は、一意の ID ではまだサポートされていません。 コンテンツフラグメントでページを参照する場合は、この機能を使用しないでください。
 
 ### 早期導入プログラム {#sites-early-adopter}
 
@@ -123,11 +123,11 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 
 * **[ファイル添付の Base64 エンコード文字列のサポート](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**：コアコンポーネントに基づくアダプティブフォームのファイル添付コンポーネントに、添付ファイルを Base64 エンコード文字列として送信するオプションが含まれるようになりました。
 
-#### インタラクティブ通信および通信 API
+#### インタラクティブなコミュニケーションおよび通信 API
 
-* **インタラクティブ通信エディター**：インタラクティブ通信エディターは、使いやすいグラフィカルな通信デザインツールで、パーソナライズされたデータ駆動型通信の作成を簡単にし、最新の任意のブラウザーで実行できます。 シームレスなデータ統合、複雑なロジック定義、リッチメディア統合をサポートし、様々なビジネスニーズに対応するプロフェッショナルで準拠したドキュメント、通信、テンプレートの生成を確保します。
+* **インタラクティブなコミュニケーションエディター**：インタラクティブなコミュニケーションエディターは、使いやすいグラフィカルな通信デザインツールで、パーソナライズされたデータ駆動型通信の作成を簡単にし、最新の任意のブラウザーで実行できます。 シームレスなデータ統合、複雑なロジック定義、リッチメディア統合をサポートし、様々なビジネスニーズに対応するプロフェッショナルで準拠したドキュメント、通信、テンプレートの生成を確保します。
 
-  ![インタラクティブ通信エディター](/help/forms/assets/ic-editor.png)
+  ![インタラクティブなコミュニケーションエディター](/help/forms/assets/ic-editor.png)
 
 
 * **[PDF/A 準拠の機能強化](/help/forms/aem-forms-cloud-service-communications-introduction.md#convert-to-and-validate-pdfa-compliant-documents)**：通信 API を使用して、アクセシビリティを確保し、これらの標準への準拠を検証しながら、アーカイブ目的で PDF ドキュメントを PDF/A 形式（1a、2a、3a）に変換できるようになりました。
@@ -173,6 +173,7 @@ intuitive and improving the mobile form-filling experience.
 詳しくは、[OpenAPI ベースの AEM API](/help/implementing/developing/open-api-based-apis.md) を参照し、設定と使用方法を説明した[エンドツーエンドチュートリアル](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)を試してください。
 
 具体的には、以下に示す API エンドポイントが早期導入プログラムの一部として使用可能です。 興味がある場合は、どのように活用する予定かを記載したメールを [aem-apis@adobe.com](mailto:aem-apis@adobe.com) まで送信してください。
+
 * [Sites Content Fragments API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [Assets API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * Sites およびAssets Folders API

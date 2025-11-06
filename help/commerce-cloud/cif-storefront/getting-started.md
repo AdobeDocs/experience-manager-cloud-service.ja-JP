@@ -9,7 +9,7 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 role: Admin
-source-git-commit: 856442039fcd25ec675a6258d182f7a35f590c3c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 89%
@@ -25,7 +25,7 @@ AEM Commerce as a Cloud Service の使用を開始するには、Experience Mana
 >
 >**Edge Delivery Servicesを検討しましたか？**
 >
->Edge Delivery Servicesは、ストアフロントを作成するための、Adobeが推奨するソリューションです。 詳しくは、ドキュメント [&#x200B; 概要 &#x200B;](/help/commerce-cloud/introduction.md) を参照してください。
+>Edge Delivery Servicesは、ストアフロントを作成するための、Adobeが推奨するソリューションです。 詳しくは、ドキュメント [ 概要 ](/help/commerce-cloud/introduction.md) を参照してください。
 
 ## オンボーディング {#onboarding}
 
@@ -36,7 +36,7 @@ AEM Commerce as a Cloud Service のオンボーディングは、次の 2 つの
 
 最初のオンボーディング手順はアドビが行います。価格とプロビジョニングの詳細については、セールス担当者にお問い合わせください。
 
-CIF アドオンのプロビジョニングが完了すると、既存の Cloud Manager プログラムに適用されます。Cloud Manager プログラムがない場合は、作成する必要があります。詳しくは、[&#x200B; プログラムの設定 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=ja) を参照してください。
+CIF アドオンのプロビジョニングが完了すると、既存の Cloud Manager プログラムに適用されます。Cloud Manager プログラムがない場合は、作成する必要があります。詳しくは、[ プログラムの設定 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=ja) を参照してください。
 
 2 つ目の手順は、各 AEM as a Cloud Service 環境のセルフサービスです。CIF アドオンの初期プロビジョニングの後で、いくつかの追加の設定を行う必要があります。
 
@@ -49,7 +49,7 @@ CIF アドオンと [AEM CIF コアコンポーネント](https://github.com/ado
 * AEM CIF コアコンポーネントと顧客プロジェクトコンポーネントで使用される、共有可能な共通の GraphQl クライアントを介した、AEM からコマースバックエンドへの GraphQL 呼び出し。
 * `/api/graphql` で変数が使用可能に設定された各 AEM 環境への GraphQL プロキシ URL の設定。この URL は、AEM Commerce オーサリングツール（CIF アドオン）および CIF クライアントサイドコンポーネントで使用されます。
 
-AEM as a Cloud Service 環境ごとに異なる GraphQL エンドポイント URL を使用できます。この方法で、プロジェクトは AEM ステージング環境をコマースステージングシステムに、また、AEM 実稼働環境をコマース実稼働システムに接続できます。GraphQL エンドポイントは、公開されている必要があります。プライベート VPN またはローカル接続はサポートされていません。オプションで、認証が必要な追加の CIF 機能を使用するために認証ヘッダーを指定できます。
+AEM as a Cloud Service 環境ごとに異なる GraphQL エンドポイント URL を使用できます。この方法で、プロジェクトは AEM ステージング環境をコマースステージングシステムに、また、AEM 本番環境をコマース実稼働システムに接続できます。GraphQL エンドポイントは、公開されている必要があります。プライベート VPN またはローカル接続はサポートされていません。オプションで、認証が必要な追加の CIF 機能を使用するために認証ヘッダーを指定できます。
 
 Adobe Commerce Enterprise／Cloud の場合のみ、CIF アドオンはオプションで AEM 作成者向けのステージング済みカタログデータの使用をサポートします。このデータを使用するには、認証ヘッダーを設定する必要があります。このヘッダーは、セキュリティ上の理由から、AEM オーサーインスタンスでのみ使用できます。AEM パブリッシュインスタンスでは、ステージング済みデータを表示できません。
 
@@ -57,7 +57,7 @@ Adobe Commerce Enterprise／Cloud の場合のみ、CIF アドオンはオプシ
 
 ### Cloud Manager ユーザーインターフェイスを使用（デフォルト） {#cm-ui}
 
->[!VIDEO](https://video.tv.adobe.com/v/343272?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 この設定は、環境の詳細ページのダイアログボックスを使用して行うことができます。コマース対応プログラムでこのページを表示すると、エンドポイントが設定されていない場合は、ボタンが表示されます。
 
@@ -77,7 +77,7 @@ Adobe I/O CLI を使用して AEM をコマースソリューションに接続�
 
 1. Cloud Manager プラグインとAdobe I/O CLI を取得します。
 
-   * [Adobe CLI プラグインで &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ja)2&rbrace;Cloud Manager CLI&rbrace; をダウンロード、設定、使用する方法については [&#128279;](https://github.com/adobe/aio-cli)Adobe I/O Cloud Managerのドキュメント [&#x200B; を参照してください。](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+   * [Adobe CLI プラグインで ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ja)2}Cloud Manager CLI} をダウンロード、設定、使用する方法については [](https://github.com/adobe/aio-cli)Adobe I/O Cloud Managerのドキュメント [ を参照してください。](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
 1. Adobe I/O CLI をAEM as a Cloud Service プログラムで認証します。
 
@@ -128,14 +128,19 @@ CIF アドオンと [CIF コアコンポーネント](https://github.com/adobe/a
 * GraphQL クライアント - コマースバックエンド通信用に設定済みの GraphQL クライアントを選択します。このクライアントは通常、デフォルトのままです。
 * ストア表示 - ストア表示の識別子。空の場合は、デフォルトのストア表示が使用されます。
 * GraphQL プロキシパス - AEM の GraphQL プロキシが、コマースバックエンドの GraphQL エンドポイントへのリクエストをプロキシするために使用する URL パス。
+
   >[!NOTE]
   >
   > ほとんどの設定で、デフォルト値 `/api/graphql` は変更できません。この設定を変更するのは、指定された GraphQL プロキシを使用しない高度な設定でのみです。
+
 * カタログ UID のサポートを有効にする - コマースバックエンドの GraphQL 呼び出しで、ID ではなく UID のサポートを有効にします。
+
   >[!NOTE]
   >
   > UID のサポートは、Adobe Commerce 2.4.2 で導入されました。コマースバックエンドがバージョン 2.4.2 以降の GraphQL スキーマをサポートしている場合にのみ有効にします。
+
 * カタログのルートカテゴリ識別子 - ストアカタログルートの識別子（UID または ID）
+
   >[!CAUTION]
   >
   > CIF コアコンポーネントバージョン 2.0.0 以降では、`id` のサポートが削除されて `uid` に置き換えられました。プロジェクトで CIF コアコンポーネントバージョン 2.0.0 を使用している場合は、カタログ UID のサポートを有効にし、有効なカテゴリ UID を「カタログルートカテゴリ識別子」として使用する必要があります。

@@ -4,8 +4,8 @@ description: コードの品質と信頼性を確保するために、AEM as a C
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1323'
 ht-degree: 97%
@@ -99,7 +99,7 @@ AEM Cloud Service デプロイメントパイプラインの目的は、開発�
 >
 >Selenium 以外のコンテナでは、[UI テストの節](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)で示した環境変数に基づいて HTTP プロキシを使用してテストを実行する必要があります。
 
-パイプラインの実行を効率化するために、アドビでは主な機能とユーザーのインタラクションフローに注力することをお勧めします。この品質ゲートを上回る完全な UI テストスイートは、一般的な顧客検証パイプラインの一部として実行する必要があります。それらを顧客の開発プロセスに組み込みます。
+パイプライン実行を効率化するために、アドビでは主な機能とユーザーのインタラクションフローに注力することをお勧めします。この品質ゲートを上回る完全な UI テストスイートは、一般的な顧客検証パイプラインの一部として実行する必要があります。それらを顧客の開発プロセスに組み込みます。
 
 例として、[オープンソースのサンプルテスト](https://github.com/adobe/aem-test-samples/tree/aem-cloud/)または [AEMプロジェクトアーキタイプの ui.tests モジュール](/help/implementing/cloud-manager/ui-testing.md)を参照してください。
 
@@ -119,7 +119,7 @@ AEM Cloud Service デプロイメントパイプラインの目的は、開発�
 
 ここでは、好みのツールとフレームワークを選択できます。顧客機能テストやカスタム UI テストとは異なり、AEM as a Cloud Service 関連の制限はありません。そのため、アドビでは、長期間実行する機能テストと UI テストをここで実行することをお勧めします。
 
-どのツールやフレームワークでも選択できますが、アドビでは、HTTP ベースの統合テストと UI テストを、カスタム機能テストおよびカスタム UI テスト品質ゲートで使用されるツールとフレームワークと連携させることをお勧めします。さらに、アドビでは、AEM クラウド環境を厳密にミラーリングするために、[迅速な開発環境（RDE）](/help/implementing/developing/introduction/rapid-development-environments.md)をローカルのテスト戦略に組み込むことをお勧めします。
+どのツールやフレームワークでも選択できますが、アドビでは、HTTP ベースの統合テストと UI テストを、カスタム機能テストおよびカスタム UI テスト品質ゲートで使用されるツールとフレームワークと連携させることをお勧めします。さらに、アドビでは、AEM クラウド環境を厳密にミラーリングするために、[高速開発環境（RDE）](/help/implementing/developing/introduction/rapid-development-environments.md)をローカルのテスト戦略に組み込むことをお勧めします。
 
 ### 手動テスト
 

@@ -4,8 +4,8 @@ description: AEM ヘッドレス開発者ジャーニーの続編であるこの
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 100%

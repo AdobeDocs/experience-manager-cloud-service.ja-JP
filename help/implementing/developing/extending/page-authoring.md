@@ -3,11 +3,11 @@ title: ページオーサリングのカスタマイズ
 description: ページオーサリング機能をカスタマイズするために AEM as a Cloud Service が提供するメカニズムについて説明します。
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '937'
-ht-degree: 100%
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
+source-wordcount: '936'
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Experience Manager as a Cloud Service には、オーサーインスタン
 
 オーバーレイオーバーレイはノード定義に基づいており、`/libs` にある標準の機能に、`/apps` にあるカスタマイズした独自機能を重ねることができます。
 
-[Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) は継承を許可しているので、オーバーレイを作成するときに、オリジナルの 1 対 1 のコピーは必要ありません。
+:1sling Resource Merger[ は継承を許可しているので、オーバーレイを作成するときに、オリジナルの 1](/help/implementing/developing/introduction/sling-resource-merger.md) コピーは必要ありません。
 
 詳しくは、[JS ドキュメントセット](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)を参照してください。
 

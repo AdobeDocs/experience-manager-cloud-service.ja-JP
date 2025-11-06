@@ -3,9 +3,9 @@ title: ユニバーサルエディターのユースケースと学習パス
 description: ユニバーサルエディターの主なユースケース、その使用法を理解する最適な方法、および独自のプロジェクトに実装する方法について説明します。
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 100%
 

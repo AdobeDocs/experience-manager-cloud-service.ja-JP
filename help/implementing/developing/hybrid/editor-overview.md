@@ -3,10 +3,10 @@ title: SPA エディターの概要
 description: この記事では、SPA エディターの包括的な概要と動作の仕組み（AEM 内での SPA エディターの詳細なインタラクションワークフローなど）を説明します。
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 100%
 

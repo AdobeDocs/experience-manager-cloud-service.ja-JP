@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの管理
 description: コンソールやエディターから AEM コンテンツフラグメントを管理し、ヘッドレスコンテンツの基礎として、またはページオーサリング用のコンテンツを作成する方法について説明します。
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: d97082c733b9bcae762f4ffbff012cfdbbada3bd
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2927'
 ht-degree: 98%
@@ -64,8 +64,8 @@ ht-degree: 98%
    * ツリーの特定のブランチを選択できます
    * これは、ネストされたフォルダーを表示するようにサイズ変更できます
    * コンテンツフラグメントと同様に、次のことができます。
-      * [&#x200B; コンテンツフラグメントモデル &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) または [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) を表示します。パネルへのリンクを圧縮または展開することもできます
-      * [&#x200B; コンテンツフラグメントのローンチ &#x200B;](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) を作成および管理
+      * [ コンテンツフラグメントモデル ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) または [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) を表示します。パネルへのリンクを圧縮または展開することもできます
+      * [ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) を作成および管理
 * 右側のメインパネル
    * 選択したツリーのブランチにあるすべてのコンテンツフラグメントのリストを表示します。
       * 選択したフォルダーのコンテンツフラグメントと、すべての子フォルダーが表示されます:
@@ -388,7 +388,7 @@ FolderC
 
 * **[パブリッシュサービス](/help/headless/deployment/architecture.md)** - フル、パブリックアクセス用
 
-* **[プレビューサービス](/help/headless/deployment/architecture.md)** – 完全に使用可能になる前にコンテンツを [&#x200B; プレビュー &#x200B;](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) します
+* **[プレビューサービス](/help/headless/deployment/architecture.md)** – 完全に使用可能になる前にコンテンツを [ プレビュー ](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) します
 
   >[!CAUTION]
   >

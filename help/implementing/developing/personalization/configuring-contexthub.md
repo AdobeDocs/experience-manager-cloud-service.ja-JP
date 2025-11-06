@@ -3,8 +3,8 @@ title: ContextHub の設定
 description: コンテキストデータを保存、操作、表示するためのフレームワークである Context Hub の設定方法について説明します。
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 100%

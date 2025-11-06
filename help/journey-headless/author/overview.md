@@ -4,8 +4,8 @@ description: AEM の強力で柔軟なヘッドレス機能とその能力およ
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 100%

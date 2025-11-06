@@ -3,9 +3,9 @@ title: カスタムエラーページ
 description: AEM には、HTTP エラーを処理するための標準的なエラーハンドラーが付属しており、これはカスタマイズできます。
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: de50d20dd4c17204ded1ff216d12520d04eafd04
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 100%
 
@@ -77,7 +77,7 @@ HTTP [500 内部サーバーエラー](https://www.w3.org/Protocols/rfc2616/rfc2
 >[!NOTE]
 >
 >AEM as Cloud Service では、バックエンドから 5XX エラーを受け取った場合、CDN は汎用のエラーページを返します。 バックエンドの実際の応答が通過できるようにするには、応答に `x-aem-error-pass: true` というヘッダーを追加する必要があります。
->>これは、AEM または Apache／Dispatcher レイヤーからの応答に対してのみ機能します。中間のインフラストラクチャレイヤーから発生したその他の予期しないエラーの場合もやはり、汎用のエラーページが表示されます。
+>これは、AEM または Apache／Dispatcher レイヤーからの応答に対してのみ機能します。中間のインフラストラクチャレイヤーから発生したその他の予期しないエラーの場合もやはり、汎用のエラーページが表示されます。
 
 >[!CAUTION]
 >

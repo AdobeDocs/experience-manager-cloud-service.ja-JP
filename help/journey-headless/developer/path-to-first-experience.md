@@ -4,8 +4,8 @@ description: AEM ヘッドレスデベロッパージャーニーのこの部分
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1881'
 ht-degree: 96%
@@ -134,7 +134,7 @@ AEM でのヘッドレス開発に取りかかる前に、必要な機能がす�
 
 この基礎知識に基づいてAEM ヘッドレス機能の威力と柔軟性を十分理解し、独自のプロジェクトに活用できるようにしていただきたいと考えています。
 
-これを行うには、[&#x200B; コンテンツをAEM コンテンツモデルとしてモデル化する方法 &#x200B;](/help/journey-headless/developer/model-your-content.md) を使用してAEM ヘッドレスジャーニーを続けます。ここでは、AEMでコンテンツ構造をモデル化する方法を説明します。
+これを行うには、[ コンテンツをAEM コンテンツモデルとしてモデル化する方法 ](/help/journey-headless/developer/model-your-content.md) を使用してAEM ヘッドレスジャーニーを続けます。ここでは、AEMでコンテンツ構造をモデル化する方法を説明します。
 
 ## その他のリソース {#additional-resources}
 
@@ -147,7 +147,7 @@ AEM でのヘッドレス開発に取りかかる前に、必要な機能がす�
 * [AEM ヘッドレス翻訳ジャーニー](/help/journey-headless/translation/overview.md) - このドキュメントジャーニーでは、ヘッドレステクノロジー、AEM によるヘッドレスコンテンツの提供方法、ヘッドレスコンテンツの翻訳方法について幅広く理解できます。
 * [AEM Sites as a Cloud Service 向けヘッドレス開発](/help/headless/introduction.md) - AEM ヘッドレス開発者向けに必要な機能を簡単に紹介したものです。
 * [AEM 開発者ポータル](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
-* [GraphQL API を使用したヘッドレスコンテンツ管理](https://experienceleague.adobe.com/ja?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - AEM に実装されている GraphQL API の概要についてのコースです。Adobe ID を使用した認証が必要です。
+* [GraphQL API を使用したヘッドレスコンテンツ管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - AEM に実装されている GraphQL API の概要についてのコースです。Adobe ID を使用した認証が必要です。
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)（英語のみ）- この GitHub プロジェクトには、AEM の GraphQL API を紹介するためのサンプルアプリケーションが含まれています。
 * [Adobe Experience Manager as a Cloud Service のアーキテクチャの概要](/help/overview/architecture.md) - AEM のアーキテクチャの概要説明
 * [ヘッドレスセットアップ](/help/headless/introduction.md#getting-started) - AEM の知識が既にあるユーザーを対象とした、AEM のヘッドレス機能の簡単な紹介。

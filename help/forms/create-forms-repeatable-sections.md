@@ -1,11 +1,11 @@
 ---
 title: アダプティブフォームのコアコンポーネントで繰り返し可能なパネルを作成する方法
 description: アダプティブフォームで繰り返し可能なセクションまたはフィールドを作成する方法を説明します。
-role: Architect, Developer, Admin, User
+role: Developer, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1258'
 ht-degree: 100%
 

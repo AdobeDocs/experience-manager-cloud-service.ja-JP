@@ -5,8 +5,8 @@ index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1546'
 ht-degree: 96%
@@ -53,7 +53,7 @@ Cloud Manager には、次の 2 種類のパイプラインが用意されてい
 
 ## コードのソース {#code-sources}
 
-パイプラインは、実稼動環境と実稼動以外の環境に加えて、デプロイするコードのタイプによっても異なる場合があります。
+パイプラインは、本番環境と本番以外の環境に加えて、デプロイするコードのタイプによっても異なる場合があります。
 
 * **[フルスタックパイプライン](#full-stack-pipeline)** - 1 つ以上の AEM サーバーアプリケーションを含んだバックエンドおよびフロンエンドコードビルドを HTTPD／Dispatcher 設定と共に同時にデプロイします。
 * **[設定パイプライン](#config-deployment-pipeline)** - ログ転送やパージ関連のメンテナンスタスクなどの機能の設定をすばやくデプロイできます。また、Web アプリケーションファイアウォール（WAF）ルールを含むトラフィックフィルタールールなど、様々な CDN（コンテンツ配信ネットワーク）設定も含まれます。さらに、リクエストと応答の変換、接触チャネルセレクター、クライアントサイドリダイレクト、エラーページ、CDN キー、パージ API キー、基本認証を管理できます。詳しくは、[設定パイプラインの使用](/help/operations/config-pipeline.md)を参照してください。
@@ -119,7 +119,7 @@ Cloud Manager で使用できるパイプラインとその用途を次の表に
 
 >[!NOTE]
 >
->Edge Delivery設定パイプラインには、開発環境、ステージング環境および実稼動環境は分離されません。 AEM as a Cloud Serviceでは、変更は開発層、ステージ層、実稼動層を通じて進みます。 これに対し、Edge Delivery設定パイプラインは、Cloud Managerに登録されたすべてのEdge Delivery Sites ドメインに設定を直接適用します。 詳しくは、[Edge Delivery パイプラインの追加 &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) を参照してください。
+>Edge Delivery設定パイプラインには、開発環境、ステージング環境および実稼動環境は分離されません。 AEM as a Cloud Serviceでは、変更は開発層、ステージ層、実稼動層を通じて進みます。 これに対し、Edge Delivery設定パイプラインは、Cloud Managerに登録されたすべてのEdge Delivery Sites ドメインに設定を直接適用します。 詳しくは、[Edge Delivery パイプラインの追加 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) を参照してください。
 
 
 ### 設定パイプラインの設定 {#configure-config-deployment}

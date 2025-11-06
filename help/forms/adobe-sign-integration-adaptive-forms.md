@@ -5,8 +5,8 @@ feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2197'
 ht-degree: 100%
 
@@ -89,7 +89,7 @@ ht-degree: 100%
    >[!NOTE]
    >
    >* **Adobe Acrobat Sign 設定を作成**&#x200B;ページを開いたままにします。閉じないでください。 **クライアント ID** および&#x200B;**クライアント秘密鍵**&#x200B;は、以降の手順で説明するように、[!DNL Adobe Acrobat Sign] アプリケーションの OAuth 設定を行った後に取得できます。
-   > * Adobe Sign アカウントにログインした後、**[!UICONTROL Acrobat Sign API]**／**[!UICONTROL API 情報]**／**[!UICONTROL REST API メソッドのドキュメント]**／**[!UICONTROL OAuth アクセストークン]**&#x200B;に移動して、Adobe Sign OAuth URL およびアクセストークン URL に関連する情報にアクセスします。
+   >* Adobe Sign アカウントにログインした後、**[!UICONTROL Acrobat Sign API]**／**[!UICONTROL API 情報]**／**[!UICONTROL REST API メソッドのドキュメント]**／**[!UICONTROL OAuth アクセストークン]**&#x200B;に移動して、Adobe Sign OAuth URL およびアクセストークン URL に関連する情報にアクセスします。
 
 1. 以下の手順により、[!DNL Adobe Acrobat Sign] アプリケーション用に OAuth 設定を構成します。
 
@@ -158,7 +158,7 @@ AEM Forms と Adobe Acrobat Sign Solutions for Government の接続は、複数�
 ![Adobe Sign Government Workflow](/help/forms/assets/adobe-acrobat-sign-govt-workflow.png)
 
 
-AEM Formsas a Cloud Service は、開発環境、ステージ環境、実稼動環境を提供します。まずは開発環境を Adobe Acrobat Sign Solutions for Government に接続し、後でステージ環境と運用環境に接続することができます。
+AEM Formsas a Cloud Service は、開発環境、ステージ環境、本番環境を提供します。まずは開発環境を Adobe Acrobat Sign Solutions for Government に接続し、後でステージ環境と本番環境に接続することができます。
 
 ### 始める前に {#prerequisites-for-adobe-sign-for-acrobat-sign-for-government}
 

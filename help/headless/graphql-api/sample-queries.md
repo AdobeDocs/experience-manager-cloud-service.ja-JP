@@ -4,10 +4,10 @@ description: GraphQL を AEM と共に使用し、サンプルコンテンツと
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
-workflow-type: ht
-source-wordcount: '1938'
-ht-degree: 100%
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
+source-wordcount: '1927'
+ht-degree: 99%
 
 ---
 
@@ -664,9 +664,9 @@ query {
 }
 ```
 
-### サンプルクエリ - `_path` が特定のプレフィックスで始まるすべてのアドベンチャー {#sample-wknd-all-adventures-cycling-path-filter}
+### サンプルクエリ - `_path` が特定の接頭辞で始まるすべてのアドベンチャー {#sample-wknd-all-adventures-cycling-path-filter}
 
-`_path` が特定のプレフィックス（`/content/dam/wknd/en/adventures/cycling`）で始まるすべての `adventures`。
+`_path` が特定の接頭辞（`/content/dam/wknd/en/adventures/cycling`）で始まるすべての `adventures`。
 
 **サンプルクエリ**
 
@@ -1980,10 +1980,10 @@ Dynamic Media アセットへの URL 配信の場合
 
 | 名前 | 国 | 人口 | カテゴリ |
 |--- |--- |--- |--- |
-| Basel | スイス | 172258 | city:emea |
+| Basel | スイス | 172258 | 市区町村 :emea |
 | Berlin | Germany | 3669491 | city:capital<br>city:emea |
 | Bucharest | Romania | 1821000 | city:capital<br>city:emea |
 | サンフランシスコ | 米国 | 883306 | city:beach<br>city:na |
-| サンノゼ | 米国 | 102635 | city:na |
-| シュトゥットガルト | ドイツ | 634830 | city:emea |
+| サンノゼ | 米国 | 102635 | 市区町村 :na |
+| シュトゥットガルト | ドイツ | 634830 | 市区町村 :emea |
 | チューリッヒ | スイス | 415367 | city:capital<br>city:emea |

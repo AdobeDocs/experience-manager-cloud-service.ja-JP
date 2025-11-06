@@ -4,8 +4,8 @@ description: Adobe Experience Cloud 通知システムを使用して、パイ�
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 83%
@@ -35,7 +35,7 @@ Cloud Manager による重要なイベントの通知方法を説明します。
 
 ![通知サイドバー](assets/notificaitons-announcements.png)
 
-通知またはお知らせをクリックすると、その詳細が表示されます。パイプラインのデプロイメントなど、アクティビティにリンクされた通知には、パイプラインの実行ウィンドウなど、そのアクティビティの詳細が表示されます。
+通知またはお知らせをクリックすると、その詳細が表示されます。パイプラインのデプロイメントなど、アクティビティにリンクされた通知には、パイプライン実行ウィンドウなど、そのアクティビティの詳細が表示されます。
 
 パネルの下部にある「**すべて表示**」オプションをクリックすると、インボックス内のすべてのお知らせが表示されます。
 

@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.5.0 リ�
 feature: Release Information
 role: Admin
 exl-id: b7a21533-9db1-4111-814c-cab917041be4
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2162'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,13 +37,13 @@ ht-degree: 99%
 
 2025.5.0 リリースで追加された機能の概要については、2025年5月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3464351?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 **AI 生成のメタデータ**
 
-AEM Assets では [AI を使用して、タイトル、説明、キーワードなどのメタデータが自動生成されるようになりました &#x200B;](/help/assets/metadata-assets-view.md#ai-smart-tags)。これらの AI で生成されたフィールドは、メタデータの精度を高め、アセットの検索、分類および推奨を容易にします。このアプローチでは、手動でのタグ付けが不要なために効率が向上するだけでなく、大量のデジタルコンテンツ間の一貫性とスケーラビリティも確保できます。
+AEM Assets では [AI を使用して、タイトル、説明、キーワードなどのメタデータが自動生成されるようになりました ](/help/assets/metadata-assets-view.md#ai-smart-tags)。これらの AI で生成されたフィールドは、メタデータの精度を高め、アセットの検索、分類および推奨を容易にします。このアプローチでは、手動でのタグ付けが不要なために効率が向上するだけでなく、大量のデジタルコンテンツ間の一貫性とスケーラビリティも確保できます。
 
 ![AI 生成のメタデータ](/help/assets/assets/enhanced-smart-tags.png)
 
@@ -58,7 +58,7 @@ AEM Assets は Figma とネイティブに統合されているので、デザ�
 
 **属性ベースのアクセス制御の概要（ABAC）**
 
-[コンテンツハブで、アセットへのアクセスについてルールベースの制限を適用できるようになりました](/help/assets/attribute-based-access-control.md)。アセット権限によりガバナンスが確保され、関連するアセットのみがユーザーからアクセスできるようになります。
+[コンテンツハブで、アセットへのアクセスについてルールベースの制限を適用できるようになりました](/help/assets/attribute-based-access-control.md)。アセット権限を使用すると、ガバナンスが確保され、ユーザーは関連するアセットにのみアクセスできるようになります。
 
 アセット制限ルールはメタデータに基づいており、ルールで定義された条件がアセットメタデータに一致する場合、アセットはユーザーグループに表示されます。
 
@@ -106,15 +106,15 @@ AEM Assets は Figma とネイティブに統合されているので、デザ�
 
 **AJO B2C と Dynamic Media のネイティブ統合&#x200B;**
 
-[Experience Manager (AEM) Dynamic Media とJourney Optimizer (AJO) B2C のネイティブ統合](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/combine/aem-dynamic)により、マーケターは AEM Dynamic Media アセット (レンディションおよび DM テンプレート) を AJO コンテンツに簡単に埋め込んで、チャネル間でのリアルタイムの更新と高度にパーソナライズされたエクスペリエンスを提供できます。
+[Experience Manager (AEM) Dynamic Media とJourney Optimizer (AJO) B2C のネイティブ統合](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic)により、マーケターは AEM Dynamic Media アセット (レンディションおよび DM テンプレート) を AJO コンテンツに簡単に埋め込んで、チャネル間でのリアルタイムの更新と高度にパーソナライズされたエクスペリエンスを提供できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3463783/?learn=on&enablevpops=&autoplay=true&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### プレリリース機能
 
-* [&#x200B; アダプティブFormsおよびフォームフラグメント用のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：ユニバーサルエディターでは、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成が迅速化され、一貫性が高まり、ススパムや自動化による悪用からの保護が強化されます。
+* [ アダプティブFormsおよびフォームフラグメント用のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：ユニバーサルエディターでは、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成が迅速化され、一貫性が高まり、ススパムや自動化による悪用からの保護が強化されます。
 
 * [SharePoint ドキュメントライブラリ - 添付ファイルを元のファイル名で保存](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library)：フォームの添付ファイルを SharePoint ドキュメントライブラリに保存する際に、元のファイル名を使用して保存するオプションが追加されました。この機能強化により、アップロードしたファイルの識別と管理が簡素化されます。
 
@@ -138,7 +138,7 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 
 ### 更新された非推奨プロセス {#updated-deprecation-process}
 
-Adobe は、パフォーマンス、セキュリティ、価値に関する標準を満たすように、機能、ライブラリ、API および設定を定期的に見直しています。機能がこれらの標準を満たさなくなった場合は廃止とマークされ、指定した削除日までに使用が停止されます。この日付までに、新しいビルドを進めたりデプロイしたりする前に、お客様にメール通知を届けたり、Cloud Managerで実行する必要があるアクションをお知らせしたりします。必要な対策を講じないと、AEM の新しいバージョンにアップグレードできなくなる可能性があり、セキュリティ、パフォーマンス、信頼性、可用性に関する影響が潜在します。
+Adobe は、パフォーマンス、セキュリティ、価値に関する標準を満たすように、機能、ライブラリ、API および設定を定期的に見直しています。 機能がこれらの標準を満たさなくなった場合は廃止とマークされ、指定した削除日までに使用が停止されます。 この日付までに、新しいビルドを進めたりデプロイしたりする前に、お客様にメール通知を届けたり、Cloud Managerで実行する必要があるアクションをお知らせしたりします。 必要な対策を講じないと、AEM の新しいバージョンにアップグレードできなくなる可能性があり、セキュリティ、パフォーマンス、信頼性、可用性に関する影響が潜在します。
 
 詳しくは、[廃止に関する記事](/help/release-notes/deprecated-removed-features.md)を参照してください。
 
@@ -150,6 +150,7 @@ Adobe は、パフォーマンス、セキュリティ、価値に関する標�
   <summary>展開して廃止について確認</summary>
 
 Java API
+
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
 * `org.eclipse.jetty`
@@ -180,11 +181,11 @@ OSGi プロパティ：
 
 サポートされていない依存関係が原因で環境をアップグレードできなかった場合 ([Java 21 ランタイム要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)を参照) は、次の具体的な手順を記載したメールが Adobeから届いているはずです。**2025 年 8 月 28 日**&#x200B;までに必要な更新がすべて完了していることを確認してください。これにより、中断することなく環境をアップグレードできます。
 
-注：ランタイムバージョンは、コードのビルドバージョンとは別のものです。Java 21 を使用してビルドすることをお勧めしますが、Java 11 ビルドは引き続きサポートされています。Java 11 ビルドの廃止に関する通知は、今後共有される予定です。
+注：ランタイムバージョンは、コードのビルドバージョンとは別のものです。 Java 21 を使用してビルドすることをお勧めしますが、Java 11 ビルドは引き続きサポートされています。 Java 11 ビルドの廃止に関する通知は、今後共有される予定です。
 
 ### AEM Java ログ設定ポリシーの適用 {#logconfig-policy}
 
-4 月のリリースノートに記載されているように、AEMの Java ログは、すべてのお客様の環境で信頼性の高い監視を確実に行うために、標準に従う必要があります。ログ形式、出力ファイル、デフォルトログレベルの変更といったカスタムログ設定は、サポートされなくなりました。ログはデフォルトファイルにダイレクトされ続け、AEM 製品コードのデフォルトログレベルは保持される必要があります。 詳しくは、[ログに関する記事](/help/implementing/developing/introduction/logging.md#configuration-loggers)を参照してください。
+4 月のリリースノートに記載されているように、AEMの Java ログは、すべてのお客様の環境で信頼性の高い監視を確実に行うために、標準に従う必要があります。 ログ形式、出力ファイル、デフォルトログレベルの変更といったカスタムログ設定は、サポートされなくなりました。 ログはデフォルトファイルにダイレクトされ続け、AEM 製品コードのデフォルトログレベルは保持される必要があります。 詳しくは、[ログに関する記事](/help/implementing/developing/introduction/logging.md#configuration-loggers)を参照してください。
 
 **8 月下旬**&#x200B;から、サポートされていないカスタムログの上書きは無視されるようになります。Adobe の分析によると、ほとんどのお客様は影響を受けることはありません。現在の設定が影響を受ける可能性があるお客様には直接連絡します。
 
@@ -208,21 +209,21 @@ OSGi プロパティ：
 * **既存の環境** （この日付より前に作成）:
    * **7 年**&#x200B;より古いバージョンは定期的に削除されます。
    * 過去 7 年間のすべてのバージョンが保持されます。
-   * このデフォルトの高いしきい値によって、最近のデータが意図せずに削除されるのを防ぎます。ただし、リポジトリのパフォーマンスを最適化するには、小さい値を設定することをお勧めします。
+   * このデフォルトの高いしきい値によって、最近のデータが意図せずに削除されるのを防ぎます。 ただし、リポジトリのパフォーマンスを最適化するには、小さい値を設定することをお勧めします。
 
 * これらのデフォルトは、設定パイプラインを使用してデプロイされた YAML 設定を通じて変更できます。
 
 #### 監査ログ {#mt-auditlogs}
 
 * **新しい環境** （今後作成され、個別に通知されます）：
-   * **7 日**&#x200B;より古いレプリケーション、DAM、ページ監査のログは、定期的に削除されます。
+   * **7 日**より古いレプリケーション、DAM、ページ監査のログは、定期的に削除されます。
 
    * デフォルトでは、すべてのイベントがログに記録されます。
 
 * **既存の環境** (この予定日より前に作成)：
    * **7 年**&#x200B;より古いレプリケーション、DAM、ページ監査のログは、定期的に削除されます。
    * デフォルトでは、すべてのイベントがログに記録されます。
-   * このデフォルトの高いしきい値によって、最近のデータが意図せずに削除されるのを防ぎます。ただし、リポジトリのパフォーマンスを最適化するには、小さい値を設定することをお勧めします。
+   * このデフォルトの高いしきい値によって、最近のデータが意図せずに削除されるのを防ぎます。 ただし、リポジトリのパフォーマンスを最適化するには、小さい値を設定することをお勧めします。
 
 * これらのデフォルトは、設定パイプラインを使用してデプロイされた YAML 設定を通じて変更できます。
 
@@ -230,7 +231,7 @@ OSGi プロパティ：
 
 ### Edge コンピューティング (Alpha プログラム) {#edge-computing}
 
-Edge コンピューティングを使用すると、CDN レイヤーで JavaScript を実行し、データ処理をエンドユーザーに近づけることができます。これにより待ち時間が短縮され、エッジでレスポンシブな動的エクスペリエンスが実現します。
+Edge コンピューティングを使用すると、CDN レイヤーで JavaScript を実行し、データ処理をエンドユーザーに近づけることができます。 これにより待ち時間が短縮され、エッジでレスポンシブな動的エクスペリエンスが実現します。
 
 一般的なユースケースを次に示します。
 
@@ -238,7 +239,7 @@ Edge コンピューティングを使用すると、CDN レイヤーで JavaScr
 * 位置情報、デバイスタイプまたはユーザー属性に基づくコンテンツのパーソナライズ
 * CDN と接触チャネルの間のミドルウェアとして機能させる
 * サードパーティの API からの応答をブラウザーに配信する前に再フォーマットする（および複数の API 応答を集計する）
-* 様々なバックエンドからステッチされたコンテンツを使用して、サーバーレンダリングされたHTMLをエッジで作成および提供する
+* 様々なバックエンドからステッチされたコンテンツを使用し、サーバーレンダリングされた HTML をエッジで作成および提供
 
 AEM パブリッシュ配信またはライブ実稼動サイトのEdge Delivery Services プロジェクトで利用できる機会の数は限られています。参加に関心がある場合や、詳細を確認したい場合は、ユースケースの簡単な説明を添えて [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)までメールでご連絡ください。
 
@@ -250,7 +251,7 @@ Beta 版では、CDN 接触チャネルセレクター、応答、リクエス�
 
 ### その他の宛先への AEM ログ転送 (Beta プログラム) {#log-forwarding-beta}
 
-ログは Cloud Manager からダウンロードできますが、多くの組織では、これらのログを優先されるログの宛先にストリーミングすると役立ちます。AEM では、Azure Blob Storage、Datadog、HTTPS、Elasticsearch (および OpenSearch)、Splunk への AEM および CDN ログ転送をサポートしています。この機能は、セルフサービス方式で設定し、設定パイプラインを使用してデプロイします。
+ログは Cloud Manager からダウンロードできますが、多くの組織では、これらのログを優先されるログの宛先にストリーミングすると役立ちます。 AEM では、Azure Blob Storage、Datadog、HTTPS、Elasticsearch (および OpenSearch)、Splunk への AEM および CDN ログ転送をサポートしています。 この機能は、セルフサービス方式で設定し、設定パイプラインを使用してデプロイします。
 
 Beta では、Amazon S3、Sumo Logic および独自のNew Relic アカウント (Adobeが提供するアカウントではありません) に AEM ログを転送できます。 AEM ログ (Apache／Dispatcher など) はサポートされていますが、CDN ログはサポートされていません。アクセスについて詳しくは、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) までメールで送信してください。
 

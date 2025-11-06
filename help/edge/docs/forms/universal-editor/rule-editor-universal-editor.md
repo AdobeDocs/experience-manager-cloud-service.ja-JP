@@ -2,11 +2,11 @@
 title: Edge Delivery Services Forms のルールエディター
 description: ユニバーサルエディターのルールエディターを使用して、動的でインテリジェントなフォームを作成します。コーディングなしで、条件付きロジック、計算、インタラクティブな動作を追加します。
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2824'
 ht-degree: 100%
 
@@ -534,7 +534,7 @@ export { getFullName, days };
 ![ルールエディター内のカスタム関数](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 図：ルールエディターインターフェイスでのカスタム関数の選択と設定
 
->
+>[!NOTE]
 >
 > カスタムイベントベースのルール、動的変数のサポート、API 統合など、ルールエディターの機能強化は、Edge Delivery Services Forms でも使用できます。 これらの機能強化とその使用方法について詳しくは、[ルールエディターの機能強化とユースケース](/help/forms/rule-editor-enhancements-use-cases.md)の記事を参照してください。
 
@@ -624,7 +624,7 @@ export { getFullName, days};
 - 複雑なルールの仕組みだけでなく、その背後にある意図を文書化します
 - 大規模なフォームのルール在庫を維持します
 - コンポーネントとルールに一貫性のある命名を使用します
-- カスタム関数をバージョン管理し、実稼動以外の環境でテストします
+- カスタム関数をバージョン管理し、本番環境以外でテストします
 
 +++
 

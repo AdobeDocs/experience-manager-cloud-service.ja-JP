@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: アダプティブフォームの事前入力, アダプティブフォームの Edge Delivery Services, アダプティブフォームの自動入力
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 100%
 
@@ -157,7 +157,7 @@ ht-degree: 100%
 
 1. 「**作成**」をクリックして、**フォームを作成**&#x200B;ウィザードを開きます
 
-   >
+   >[!NOTE]
    >
    > データソースの設定は、「**データ**」タブから行うことや、後でフォームプロパティを編集して行うことができます。
 

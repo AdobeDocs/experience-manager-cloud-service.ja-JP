@@ -4,8 +4,8 @@ description: コンテンツフラグメントを使用したヘッドレス CMS
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1733'
 ht-degree: 98%

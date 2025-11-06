@@ -4,7 +4,7 @@ description: AEM の管理による CDN を使用する方法と、独自の CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 41e9b91d7edbe26bf764b9eac56f21c3c2e86a64
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 100%
@@ -68,7 +68,7 @@ CDN エラーページを設定すると、デフォルトのブランド化さ�
 
 HTTP キャッシュ制御ヘッダーを使用した TTL の設定は、コンテンツ配信のパフォーマンスとコンテンツの鮮度のバランスを取る効果的なアプローチです。ただし、更新されたコンテンツを直ちに提供することが重要なシナリオでは、CDN キャッシュを直接パージすると有益な場合があります。
 
-詳しくは、[パージ API トークンの設定](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token)と[キャッシュされた CDN コンテンツのパージ](/help/implementing/dispatcher/cdn-cache-purge.md)を参照してください。
+詳しくは、[パージ API トークンの設定](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)と[キャッシュされた CDN コンテンツのパージ](/help/implementing/dispatcher/cdn-cache-purge.md)を参照してください。
 
 ### CDN での基本認証 {#basic-auth}
 

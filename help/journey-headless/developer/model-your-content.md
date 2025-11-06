@@ -4,8 +4,8 @@ description: Adobe Experience Manager（AEM）ヘッドレスデベロッパー�
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 100%
@@ -86,7 +86,7 @@ ht-degree: 100%
 
 記述する内容は&#x200B;**エンティティ**（基本的には、保存する情報の対象となる「もの」）と呼ばれます。
 
-その事がらについて保存する情報は、氏名、教員資格などの&#x200B;**属性**（プロパティ）です。
+その事柄について保存する情報は、氏名、教員資格などの&#x200B;**属性**（プロパティ）です。
 
 次に、エンティティ間に様々な&#x200B;**関係**&#x200B;があります。例えば、通常、学校には教頭が 1 人しかいませんが、多くの教師（教頭も教師）がいます。
 

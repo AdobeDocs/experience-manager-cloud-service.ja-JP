@@ -7,8 +7,8 @@ topic-tags: author
 feature: Adaptive Forms, Foundation Components
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 100%
 
@@ -40,9 +40,8 @@ ht-degree: 100%
 手書き署名ウィンドウで「完了」![aem_forms_save](assets/aem_forms_save.png) アイコンを選択すると、署名を編集できなくなります。署名を編集する場合は、現在の署名を無視して、上記のペイントブラシ／キーボードオプションを使用して再署名する必要があります。
 
 「**設定**」![設定アイコン](assets/configure.png) アイコンを選択して、手書き署名キャンバスのアスペクト比を設定できます。
+
 * 手書き署名キャンバスのアスペクト比が 1 未満の場合、位置情報は手書き署名キャンバスの下部に追加されます。
-
-
 * 手書き署名キャンバスのアスペクト比が 1 を超える場合、位置情報は手書き署名キャンバスの右側に追加されます。
 
 
@@ -53,7 +52,6 @@ ht-degree: 100%
 >[!NOTE]
 >
 >署名は常に PNG 形式で保存されます。
->
 
 ## アダプティブフォームを設定して手書き署名を使用 {#configure-an-adaptive-form-to-use-scribble-signature}
 

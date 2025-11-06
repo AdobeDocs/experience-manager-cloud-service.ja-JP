@@ -3,10 +3,10 @@ title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスでの AEM および AMS での AEM との重要な違いについて説明します。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: c7ba218faac76c9f43d8adaf5b854676001344cd
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2768'
+source-wordcount: '2767'
 ht-degree: 71%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 71%
 >id="development_guidelines"
 >title="AEM as a Cloud Service の開発ガイドライン"
 >abstract="AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスでの AEM および AMS での AEM との重要な違いについて説明します。"
->additional-url="https://video.tv.adobe.com/v/345904/?captions=jpn" text="パッケージ構造のデモ"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="パッケージ構造のデモ"
 
 このドキュメントでは、AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスおよび AMS の AEM とは異なる重要な方法について説明します。
 
@@ -111,7 +111,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 ローカル開発のために、ログエントリは `/crx-quickstart/logs` フォルダーのローカルファイルに書き込まれます。
 
-クラウド環境では、デベロッパーはCloud Managerからログをダウンロードしたり、コマンドラインツールを使用してログのテールを作成したりできます。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+クラウド環境では、デベロッパーはCloud Managerからログをダウンロードしたり、コマンドラインツールを使用してログのテールを作成したりできます。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **ログレベルの設定**
 
@@ -187,7 +187,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ユーザーはオーサー層の開発環境では CRXDE Lite にアクセスできますが、ステージング層や実稼動層ではアクセスできません。 不変リポジトリー（`/libs`、`/apps`）に実行時に書き込むことはできないので、書き込もうとするとエラーが発生します。
 
-代わりに、AEM as a Cloud Service Developer Console からリポジトリブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対してリポジトリへの読み取り専用ビューを提供できます。詳しくは、[&#x200B; リポジトリブラウザー &#x200B;](/help/implementing/developing/tools/repository-browser.md) を参照してください。
+代わりに、AEM as a Cloud Service Developer Console からリポジトリブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対してリポジトリへの読み取り専用ビューを提供できます。詳しくは、[ リポジトリブラウザー ](/help/implementing/developing/tools/repository-browser.md) を参照してください。
 
 AEM as a Cloud Service開発者環境をデバッグするためのツールセットがAEM as a Cloud Service Developer Consoleの RDE 環境、開発環境、ステージ環境、実稼動環境で利用できます。 URL は、次のようにオーサーサービスまたはパブリッシュサービスの URL を調整することで決定できます。
 
@@ -239,7 +239,7 @@ Adobeは、アプリケーションのパフォーマンスを監視し、パフ
 
 ### メールの送信 {#sending-emails}
 
-[Day CQ Mail Service OSGi サービス &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja#configuring-the-mail-service) を使用してください。また、受信者に直接送信するのではなく、サポートリクエストに明示されたメールサーバーにメールを送信する必要があります。
+[Day CQ Mail Service OSGi サービス ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja#configuring-the-mail-service) を使用してください。また、受信者に直接送信するのではなく、サポートリクエストに明示されたメールサーバーにメールを送信する必要があります。
 
 ### 設定 {#email-configuration}
 

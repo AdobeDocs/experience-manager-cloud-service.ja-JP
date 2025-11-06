@@ -7,13 +7,13 @@ doc-type: technical-video
 activity: setup
 feature: Commerce Integration Framework
 topic: Commerce
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Beginner
 kt: 10529
 thumbnail: 346811.jpeg
 exl-id: 5328fe30-79ca-4496-8ebd-f1ef51ccfccf
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 100%

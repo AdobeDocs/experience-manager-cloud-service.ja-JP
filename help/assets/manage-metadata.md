@@ -4,10 +4,10 @@ description: メタデータのタイプについて、および  [!DNL Adobe Ex
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management, Metadata
-role: User, Architect, Admin
+role: User, Developer, Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1944'
 ht-degree: 100%
 
@@ -150,7 +150,7 @@ ID3 タグは、MP3 ファイル形式用に設計されています。形式に
 
 ### Exif {#exif}
 
-Exchangeable image file format（Exif）は、デジタル写真で最も一般的に使用されるメタデータフォーマットです。JPEG、TIFF、RIFF、WAV など、多くのファイル形式でメタデータプロパティの固定語彙を埋め込む方法を提供します。Exif は、メタデータをメタデータ名とメタデータ値のペアとして保存します。これらのメタデータの名前と値のペアは、タグとも呼ばれます。[!DNL Experience Manager] のタグと混同しないようにしてください。最新のデジタルカメラは Exif メタデータを作成し、最新のグラフィックソフトウェアでサポートされています。Exif 形式は、特に画像に関するメタデータ管理で最も一般的な共通項です。
+Exchangeable image file format（Exif）は、デジタル写真で最も一般的に使用されるメタデータ形式です。JPEG、TIFF、RIFF、WAV など、多くのファイル形式でメタデータプロパティの固定語彙を埋め込む方法を提供します。Exif は、メタデータをメタデータ名とメタデータ値のペアとして保存します。これらのメタデータの名前と値のペアは、タグとも呼ばれます。[!DNL Experience Manager] のタグと混同しないようにしてください。最新のデジタルカメラは Exif メタデータを作成し、最新のグラフィックソフトウェアでサポートされています。Exif 形式は、特に画像に関するメタデータ管理で最も一般的な共通項です。
 
 Exif の主な制限は、BMP、GIF、PNG などの一般的な画像ファイル形式ではサポートされないことです。
 

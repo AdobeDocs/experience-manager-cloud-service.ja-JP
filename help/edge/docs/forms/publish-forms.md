@@ -3,9 +3,9 @@ title: AEM Forms の Edge Delivery Services の公開
 description: AEM Forms の Edge Delivery Services の公開
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 100%
 
@@ -112,7 +112,7 @@ Web ページにフォームを追加するには、以下の手順に従いま�
 
 1. AEM Sidekick を使用してフォームを公開します。 これで、お客様はフォームに入力して送信できます。
 
-+++
++++ 
 
 ## トラブルシューティング
 

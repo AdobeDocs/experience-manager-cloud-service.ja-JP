@@ -3,9 +3,9 @@ title: Adobe Developer App Builder を使用した [!DNL Adobe Experience Manage
 description: Adobe Developer App Builder を使用した [!DNL Adobe Experience Manager] as a Cloud Service の拡張
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 00a05b3bdc1a689947c1507847da99b54c94dcac
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 100%
 

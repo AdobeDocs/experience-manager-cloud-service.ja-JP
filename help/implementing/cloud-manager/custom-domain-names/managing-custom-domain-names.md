@@ -4,9 +4,9 @@ description: Cloud Manager を使用して、カスタムドメイン名を表�
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 100%
 

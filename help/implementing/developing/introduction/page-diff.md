@@ -3,8 +3,8 @@ title: 開発とページの差分
 description: ページの差分機能の仕組みと開発者への影響の説明
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 100%

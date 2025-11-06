@@ -4,8 +4,8 @@ description: コンテンツ配信データフローとコンテンツの公開�
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: d58055cd0ed2451b5e8063fbb4e7269885d0787c
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 100%
 
@@ -32,6 +32,7 @@ ht-degree: 100%
 デフォルトでは、HTML／テキストのコンテンツタイプは、Dispatcher レイヤーで 300 秒（5 分）後に期限切れになるように設定されます。この期限は、Dispatcher キャッシュと CDN の両方が考慮するしきい値です。パブリッシュサービスの再デプロイメント中に、Dispatcher のキャッシュがクリアされ、その後、新しいパブリッシュノードがトラフィックを受け入れる前にウォームアップされます。
 
 以下のセクションでは、コンテンツ配信に関してさらに詳しい情報を提供します。
+
 * [CDN 設定](/help/implementing/dispatcher/cdn.md)
 * [キャッシュ](/help/implementing/dispatcher/caching.md)
 

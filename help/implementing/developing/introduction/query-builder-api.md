@@ -3,9 +3,9 @@ title: Query Builder API
 description: アセット共有の Query Builder の機能は、Java API と REST API を通して公開されます。
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 100%
 
@@ -208,7 +208,7 @@ group.2_path=/content/wknd/us/en/adventures
 
 `"Experience" and ("/content/wknd/us/en/magazine" or "/content/wknd/us/en/adventures")`
 
-例にあるグループの内部では、`path` 述語が複数回使用されています。この述語の 2 つのインスタンスの区別と順序付け（一部の述語では順序付けが必要）を行う場合は、述語にプレフィックス `N_` を付けます。`N` は順序を表すインデックスです。前の例では、こうして得られた述語は、`1_path` および `2_path` です。
+例にあるグループの内部では、`path` 述語が複数回使用されています。この述語の 2 つのインスタンスの区別と順序付け（一部の述語では順序付けが必要）を行う場合は、述語に接頭辞 `N_` を付けます。`N` は順序を表すインデックスです。前の例では、こうして得られた述語は、`1_path` および `2_path` です。
 
 `p.or` 内の `p` は特殊な区切り文字で、後に続くもの（このケースでは `or`）がグループの&#x200B;*パラメーター*&#x200B;であることを示します。これは、グループのサブ述語（`1_path` など）とは対照的です。
 
@@ -216,7 +216,7 @@ group.2_path=/content/wknd/us/en/adventures
 
 >[!NOTE]
 >
->異なる述語に対してであっても、単一のクエリ内で同じ数値のプレフィックスを使用することはできません。
+>異なる述語に対してであっても、単一のクエリ内で同じ数値の接頭辞を使用することはできません。
 
 ### プロパティの検索 {#search-for-properties}
 
@@ -242,7 +242,7 @@ property.value=/conf/wknd/settings/wcm/templates/adventure-page-template
 
 ### 複数のプロパティの検索 {#search-for-multiple-properties}
 
-property 述語を複数回使用する場合、ここでも、数字のプレフィックスを付加する必要があります。
+property 述語を複数回使用する場合、ここでも、数字の接頭辞を付加する必要があります。
 
 `http://<host>:<port>/bin/querybuilder.json?1_property=jcr%3acontent%2fcq%3atemplate&1_property.value=%2fconf%2fwknd%2fsettings%2fwcm%2ftemplates%2fadventure-page-template&2_property=jcr%3acontent%2fjcr%3atitle&2_property.value=Cycling%20Tuscany&type=cq%3aPage`
 
@@ -351,7 +351,7 @@ p.nodedepth=5
 
 [`PredicateEvaluator` クラスの Javadoc](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html) も参照してください。これらのクラスの Javadoc ドキュメントには、使用できるプロパティのリストが含まれています。
 
-クラス名のプレフィックス（[`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html) の `similar` など）は、クラスの&#x200B;*プリンシパルプロパティ*&#x200B;です。このプロパティは、クエリ内で使用する述語の名前（小文字で使用）でもあります。
+クラス名の接頭辞（[`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html) の `similar` など）は、クラスの&#x200B;*プリンシパルプロパティ*&#x200B;です。このプロパティは、クエリ内で使用する述語の名前（小文字で使用）でもあります。
 
 このようなプリンシパルプロパティの場合は、クエリを短縮して、完全修飾バリアント `similar=/content/en` の代わりに `similar.similar=/content/en` を使用できます。完全修飾形式は、クラスのプリンシパルプロパティではないすべてのプロパティに対して使用する必要があります。
 

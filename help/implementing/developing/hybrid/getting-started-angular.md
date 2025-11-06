@@ -3,10 +3,10 @@ title: Angular を使用した AEM での SPA の概要
 description: この記事では、SPA アプリケーションの例とその設定方法のほか、Angular フレームワークを使用して独自の SPA の運用をすばやく開始する方法について説明します。
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 100%
 

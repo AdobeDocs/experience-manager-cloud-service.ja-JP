@@ -4,10 +4,10 @@ description: AEM Forms as a Cloud Service 向け Edge Delivery Services の運�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 100%
 

@@ -3,9 +3,9 @@ title: ユニバーサルエディターの概要
 description: ユニバーサルエディターは、マーケティング組織が効果的な web エクスペリエンスを作成できるように設計された最新のビジュアルオーサリングツールです。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 08997c760bf1d609dce1dd17de0c549a26083917
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ ht-degree: 100%
 * **[レイアウト](/help/sites-cloud/authoring/universal-editor/templates.md)**：ページテンプレートを利用し、ビジュアルスタイルを適用し、列、カルーセル、アコーディオンなどのブロックを使用してレイアウトを作成します。
 * **[デバイスシミュレーション](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator)**：編集中に、様々な訪問者のデバイスに合わせてコンテンツをプレビューおよび最適化します。
 * **オムニチャネル**：構造化コンテンツと非構造化コンテンツの両方を複数のチャネルで再利用します。
-* **[ローカライゼーション](/help/sites-cloud/authoring/universal-editor/inheritance.md)**：Multi-Site Manager を使用して、コンテンツ翻訳ワークフローを効率化し、ローカライズされたコンテンツの継承を効率的に処理します。
+* **[ローカライゼーション](/help/sites-cloud/authoring/universal-editor/inheritance.md)**：マルチサイトマネージャーを使用して、コンテンツ翻訳ワークフローを効率化し、ローカライズされたコンテンツの継承を効率的に処理します。
 * **一貫性**：ブランドガイドラインに準拠し、すべてのコンテンツにわたって一貫性を維持します。
 * **セキュリティ**：[堅牢なバージョン管理](/help/sites-cloud/authoring/sites-console/page-versions.md)により、[アクセス制御を適用](/help/implementing/universal-editor/authentication.md)し、コンテンツの整合性を保護し、変更を追跡します。
 * **[公開](/help/sites-cloud/authoring/universal-editor/publishing.md)**：レビュー、承認および公開ワークフローをエディター内に直接統合します。

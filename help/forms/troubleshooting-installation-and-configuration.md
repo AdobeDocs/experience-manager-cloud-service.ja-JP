@@ -5,7 +5,7 @@ contentOwner: khsingh
 feature: Adaptive Forms
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 100%
@@ -30,6 +30,7 @@ Cloud Service 環境の設定中に、次のような問題が発生する場合
 1. 「**[!UICONTROL フォーム]**」オプションを選択し、「**[!UICONTROL 保存]**」をクリックします。
 
    ![「フォーム」オプションを選択します](assets/installation-configuration-select-forms-option.png)
+
 1. 実稼働用パイプラインと非実稼働用パイプラインの両方を[作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=ja#how-to-use)して[実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja)します。
 
 パイプラインが構築およびデプロイされた後、 **[!UICONTROL ナビゲーション]** ページに「**[!UICONTROL フォーム]**」オプションが表示されます。

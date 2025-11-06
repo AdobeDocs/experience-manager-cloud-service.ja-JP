@@ -4,8 +4,8 @@ description: Cloud Manager の階層、その構造に様々な種類のプロ�
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: dc4008a33f6a786884a9aad30096ff4f0561346c
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 100%
@@ -22,7 +22,7 @@ Cloud Manager は、エンティティ階層を軸に構築されています。
 * **テナント** - これは階層の最上位です。すべての顧客にテナントがプロビジョニングされます。
 * **プログラム** - 各テナントには 1 つ以上のプログラムがあります。[これらは、多くの場合、顧客がライセンスを取得したソリューションを反映しています](introduction-production-programs.md)。
 * **環境** - 各プログラムには複数の環境があります。ライブコンテンツ用の実稼働環境、ステージングの環境、開発目的の環境などです。
-   * 各プログラムでは、実稼動環境は 1 つだけですが、実稼働以外の環境は複数存在できます。
+   * 各プログラムでは、本番環境は 1 つだけですが、実稼働以外の環境は複数存在できます。
 * **リポジトリ** - プログラムには Git リポジトリがあり、そこで環境のアプリケーションとフロントエンドコードが維持管理されています。
 * **ツールとワークフロー** - パイプラインはリポジトリから環境へのコードのデプロイメントを管理し、他のツールはログへのアクセス、監視および環境管理を可能にします。
 

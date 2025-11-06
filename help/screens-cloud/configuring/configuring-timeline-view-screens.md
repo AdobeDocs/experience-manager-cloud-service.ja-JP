@@ -4,10 +4,10 @@ description: このページでは、Screens as a Cloud Service でタイムラ�
 exl-id: 53afe1f5-8f0b-4cca-a819-d3e9375cbe37
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '813'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,8 @@ AEM Screens のタイムラインビューを作成するには、次の手順�
 
 ### バージョンの保存 {#saveversion}
 
-バージョン管理では、特定の時点でのチャネルの「スナップショット」を作成します。バージョン管理を使用すると、次の操作を実行できます。
+バージョン管理では、特定の時点でのチャネルの「スナップショット」が作成されます。 バージョン管理を使用すると、次の操作を実行できます。
+
 * チャネルのバージョンを作成します。
 * チャネルを以前のバージョンに復元するには、次のような例があります。
    * ページに対して行った変更を取り消します。

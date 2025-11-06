@@ -3,11 +3,11 @@ title: マルチサイトマネージャーの拡張
 description: マルチサイトマネージャーの機能を拡張する方法について説明します。
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2337'
-ht-degree: 100%
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
+source-wordcount: '2336'
+ht-degree: 99%
 
 ---
 
@@ -522,7 +522,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
    * **タイトル**：ロールアウト設定例
    * **名前**： examplerolloutconfig
-   * **cq:trigger**：`publish`
+   * **cq:trigger**: `publish`
 
 ### ロールアウト設定例へのライブアクションの追加 {#add-the-live-action-to-the-example-rollout-configuration}
 

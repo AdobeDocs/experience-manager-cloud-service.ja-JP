@@ -4,9 +4,9 @@ description: Cloud Manager のビルド環境と、コードを作成および�
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 1df836c55e7276cf05a84e5512220b51de7131a8
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1547'
 ht-degree: 100%
 

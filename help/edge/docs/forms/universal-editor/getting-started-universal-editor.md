@@ -2,11 +2,11 @@
 title: ユニバーサルエディターでの AEM Forms の Edge Delivery Services の基本を学ぶ
 description: ユニバーサルエディターの WYSIWYG オーサリングで Edge Delivery Services を使用して、パフォーマンスの高いフォームを作成および公開する方法について説明します。
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2608'
 ht-degree: 100%
 

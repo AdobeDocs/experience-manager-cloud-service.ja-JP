@@ -3,8 +3,8 @@ title: コンテンツフラグメントコンソールおよびエディター�
 description: コンテンツフラグメントコンソールとエディターの両方をカスタマイズする方法を学ぶ
 exl-id: a837f09f-9d07-4430-839a-7cf0f200d2df
 feature: Developing, Content Fragments
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 100%

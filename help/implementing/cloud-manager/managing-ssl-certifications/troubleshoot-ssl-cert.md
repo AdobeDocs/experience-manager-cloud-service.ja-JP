@@ -3,12 +3,12 @@ title: SSL 証明書問題のトラブルシューティング
 description: よくある原因を特定して SSL 証明書問題のトラブルシューティングを行い、安全な接続を維持する方法について説明します。
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '556'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 >
 >これらの 2 つのコマンドの出力は、完全に同じである必要があります。`main/server` 証明書と一致する秘密鍵が見つからない場合は、新しい CSR を生成するか、更新された証明書を SSL ベンダーに要求して、証明書を再入力する必要があります。
 
-+++
++++ 
 
 +++**クライアント証明書の削除**
 
@@ -138,11 +138,11 @@ Cloud Manager で想定している SSL 証明書の有効期間は現在の日�
 
 +++
 
-+++**ドメインに不正な SAN 証明書が適用される
++++**ドメインに間違った SAN 証明書が適用される
 
 ## ドメインに不正な SAN 証明書が適用される {#wrong-san-cert}
 
-`dev.yoursite.com` と `stage.yoursite.com` を実稼動以外の環境にリンクし、`prod.yoursite.com` を実稼動環境にリンクするとします。
+`dev.yoursite.com` と `stage.yoursite.com` を本番以外の環境にリンクし、`prod.yoursite.com` を本番環境にリンクするとします。
 
 これらのドメインで CDN を設定するには、それぞれに証明書をインストールする必要があります。つまり、非実稼動ドメイン用に `*.yoursite.com` に対応する 1 つの証明書をインストールし、実稼動ドメイン用に `*.yoursite.com` に対応する別の証明書をインストールします。
 

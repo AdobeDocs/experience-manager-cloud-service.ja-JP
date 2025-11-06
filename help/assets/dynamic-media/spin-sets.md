@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1956'
 ht-degree: 100%
@@ -221,6 +221,7 @@ ht-degree: 100%
    * アセットを削除するには、アセットを選択して、「**[!UICONTROL アセットを削除]**」を選択します。
    * プリセットを適用するには、「プリセット」アイコンを選択し、プリセットを選択します。
    * スピンセット全体を削除するには、スピンセットに移動して選択し、「**[!UICONTROL 削除]**」を選択します
+
    >[!NOTE]
    >
    >スピンセットの画像を編集するには、スピンセットに移動し、左パネルの「**[!UICONTROL メンバーを設定]**」を選択してから、個々のアセットの鉛筆アイコンを選択して編集ウィンドウを開きます。

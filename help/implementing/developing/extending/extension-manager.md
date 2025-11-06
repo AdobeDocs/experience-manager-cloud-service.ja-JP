@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service の Extension Manager について説明します。
 description: AEM の Extension Manager を使用すると、開発者や実務担当者は、App Builder で作成された拡張機能を使用して AEM の機能を強化できます。
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 8bc58d13-3c0f-4b09-a95a-f745114ceda1
-source-git-commit: 75865cc54795870a2aa1a06f25eb2148c2a6f4c7
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 100%
 

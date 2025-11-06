@@ -5,8 +5,8 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 0129bf13301a208b777b61f65623222cdf2b4b18
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、任意のバイナリファイルについて、その形式によらず、基本的なコンテンツ管理機能（格納、メタデータのオンライン管理、バージョン管理、アップロード、ダウンロードなど）をサポートしています。[!DNL Adobe Experience Manager Assets] は様々なファイル形式をサポートし、各製品機能は様々な形式をサポートしています。
 
-さらに、[!DNL Experience Manager Assets] は、プレビューとレンディションの生成、およびフルテキストインデックス用のメタデータとテキストの抽出をサポートする拡張機能を提供します。この拡張サポートは、[アセットマイクロサービス](asset-microservices-configure-and-use.md)を使用して提供されます。
+さらに、[!DNL Experience Manager Assets] は、プレビューとレンディションの生成、およびフルテキストインデックス作成用のメタデータとテキストの抽出をサポートする拡張機能を提供します。この拡張サポートは、[アセットマイクロサービス](asset-microservices-configure-and-use.md)を使用して提供されます。
 
 アセットマイクロサービスを使用したアセット変換のハイライトは次のとおりです。
 
@@ -37,8 +37,8 @@ ht-degree: 100%
 >[!IMPORTANT]
 >
 >[!DNL Adobe Experience Manager Assets] は、この記事にリストされているファイル形式のみをサポートしています。
->>一部の機能は他の形式でも動作するように見えるかもしれませんが、これらの形式は正式にはサポートされていません。結果に一貫性がなく、機能が期待どおりに動作しない場合があります。
->>一貫した信頼性の高い結果を得るには、サポートされている形式のみを使用します。
+>一部の機能は他の形式でも動作するように見えるかもしれませんが、これらの形式は正式にはサポートされていません。結果に一貫性がなく、機能が期待どおりに動作しない場合があります。
+>一貫した信頼性の高い結果を得るには、サポートされている形式のみを使用します。
 
 ## Adobe 形式 {#adobe-formats}
 

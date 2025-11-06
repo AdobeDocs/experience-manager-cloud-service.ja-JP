@@ -4,8 +4,8 @@ description: AEM as a Cloud Service の Cloud Manager パイプラインを使�
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 100%
@@ -19,10 +19,10 @@ AEM as a Cloud Service の Cloud Manager パイプラインを使用して、コ
 
 ![実稼働パイプラインのダイアグラム](./assets/configure-pipeline/production-pipeline-diagram.png)
 
-コードをステージング環境に、さらには実稼動環境にシームレスにデプロイするには、実稼動パイプラインを使用します。実稼動パイプラインの実行は、次の 2 つの論理フェーズに分かれます。
+コードをステージング環境に、さらには実稼動環境にシームレスにデプロイするには、実稼動パイプラインを使用します。本番稼動パイプライン実行は、次の 2 つの論理フェーズに分かれます。
 
 1. **ステージング環境へのデプロイメント** - コードはビルドされたあと、ステージング環境にデプロイされて、自動化された機能テスト、UI テスト、エクスペリエンス監査、ユーザー受け入れテスト（UAT）が実施されます。
-1. **実稼動環境へのデプロイメント** - ビルドがステージング環境で検証され、実稼動環境への昇格が承認されると、同じビルドアーティファクトが実稼動環境にデプロイされます。
+1. **本番環境へのデプロイメント** - ビルドがステージング環境で検証され、本番環境への昇格が承認されると、同じビルドアーティファクトが本番環境にデプロイされます。
 
 _コードスキャン、機能テスト、UI テスト、エクスペリエンス監査をサポートしているのは、フルスタックコードパイプラインタイプのみです。_
 

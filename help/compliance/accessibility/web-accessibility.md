@@ -3,8 +3,8 @@ title: Adobe Experience Manager as a Cloud Service と Web アクセシビリテ
 description: Adobe Experience Manager as a Cloud Service と Web アクセシビリティガイドラインの概要
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 100%
@@ -37,7 +37,7 @@ Adobe Experience Manager as a Cloud Service は、[World Wide Web Consortium](#w
 
 ## Web Content Accessibility Guidelines（WCAG）2.1 {#wcag-accessibility-guidelines}
 
-Web デザイナーや開発者がアクセシブルな Web サイトを作成できるように、[Web Accessibility Initiative（WAI）](https://www.w3.org/WAI/)は [2018 年 6 月に Web Content Accessibility Guidelines（WCAG）2.1](https://www.w3.org/TR/WCAG/) を発行しました。
+Web デザイナーや開発者がアクセシブルな web サイトを作成できるように、[Web Accessibility Initiative（WAI）](https://www.w3.org/WAI/)は [2018年6月に Web Content Accessibility Guidelines（WCAG）2.1](https://www.w3.org/TR/WCAG/) を発行しました。
 
 WCAG 2.1 では、[アクセシビリティレベルとそれらの準拠方法に関するガイドライン（および関連する成功基準）を提供](https://www.w3.org/TR/WCAG/#conformance)しています。
 

@@ -3,9 +3,9 @@ title: GitHub チェック注釈
 description: GitHub チェックがプライベートリポジトリの PR を注釈して、役立つフィードバックを提供する方法について説明します。
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 100%
 

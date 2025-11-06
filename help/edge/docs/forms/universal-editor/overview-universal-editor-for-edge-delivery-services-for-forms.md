@@ -2,10 +2,10 @@
 title: Forms の Edge Delivery Services のユニバーサルエディター
 description: Forms の Edge Delivery Services のユニバーサルエディターを使用して、アダプティブフォームを作成します。
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 100%
 

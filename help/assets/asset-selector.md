@@ -5,10 +5,10 @@ contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '5357'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -165,7 +165,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 <!--For detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).-->
 
 +++**ImsAuthProps**
-`ImsAuthProps` プロパティは、アセットセレクターが `imsToken` を取得するために使用する認証情報とフローを定義します。これらのプロパティを設定すると、認証フローの動作を制御し、様々な認証イベントのリスナーを登録できます。
+`ImsAuthProps` プロパティは、アセットセレクターが `imsToken` を取得するのに使用する認証情報とフローを定義します。これらのプロパティを設定すると、認証フローの動作を制御し、様々な認証イベントのリスナーを登録できます。
 
 | プロパティ名 | 説明 |
 |---|---|
@@ -274,7 +274,7 @@ onErrorReceived: (type, msg) => {
 
 アセットセレクターは、アドビ以外のアプリケーションと統合する場合に、`imsScope` や `imsClientID` などの Identity Management System（IMS）プロパティを使用した [!DNL Experience Manager Assets] リポジトリへの認証をサポートします。
 
-+++**アドビ以外のアプリケーションに対するアセットセレクターの設定**
++++**Adobe以外のアプリケーション用にアセットセレクターを設定する**
 アドビ以外のアプリケーションに対してアセットセレクターを設定するには、まずプロビジョニングのサポートチケットを記録してから、統合手順を実行する必要があります。
 
 **サポートチケットの記録**
@@ -472,7 +472,7 @@ URL 形式：
 
 +++
 
-+++**動的配信 URL を選択する準備**
++++**動的配信 URL を選択する準備が整いました**
 すべての選択済みアセットは、JSON オブジェクトとして機能する `handleSelection` 関数によって実行されます。例えば、`JsonObj` のようになります。動的配信 URL は、以下のキャリアを組み合わせて作成されます。
 
 | オブジェクト | JSON |
@@ -915,7 +915,7 @@ const showToast = {
 
 アセットセレクターを使用すると、タグピッカーフィルターを追加できます。特定のタグ付けグループに関連するすべてのタグを組み合わせるタググループをサポートします。また、検索するアセットに対応する追加のタグを選択できます。さらに、最もよく使用するコンテキスト呼び出しフィルターの下にデフォルトのタググループを設定して、外出先でもアクセスできるようにすることもできます。
 
->
+>[!NOTE]
 >
 > * 検索でタグ付けフィルターを有効にするには、コンテキスト呼び出しコードスニペットを追加する必要があります。
 > * タググループタイプに対応する名前プロパティ `(property=xcm:keywords.id=)` を使用することは必須です。

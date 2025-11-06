@@ -6,8 +6,8 @@ docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2047'
 ht-degree: 100%
 
@@ -88,7 +88,7 @@ AEM Forms で AEP コネクタを設定する前に、Adobe Experience Platform 
 1. 「**接続**」をクリックして接続を確立します。接続を確立したら、次の追加設定を行います。
    * ベース URL：platform.adobe.io（これはデフォルトの URL で、Developer Console からも取得できます。OAuth および Platform URL はデフォルトで実稼動 URL に設定されています。ステージに接続する必要がある場合は、ステージ URL を使用する必要があります。）
    * 組織 ID（これは、クライアント ID／秘密鍵と共に Developer Console から取得されます）
-   * サンドボックス名（開発環境と実稼動環境の両方で必要）
+   * サンドボックス名（開発環境と本番環境の両方で必要）
 
 ### &#x200B;2. XDM スキーマ統合によるフォームの作成 {#form-creation}
 
@@ -193,7 +193,7 @@ AEM Forms で AEP コネクタを設定する前に、Adobe Experience Platform 
      >* ユニバーサルエディターインターフェイスの「データソース」アイコンや、右側のプロパティパネルの連結参照プロパティが表示されない場合は、Extension Manager で&#x200B;**データソース**&#x200B;拡張機能を有効にします。
      >* ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Manager で&#x200B;**フォームプロパティを編集**&#x200B;拡張機能を有効にします。
      > 
-     > * ユニバーサルエディターで拡張機能を有効または無効にする方法については、[Extension Manager 機能のハイライト](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)の記事を参照してください。
+     >* ユニバーサルエディターで拡張機能を有効または無効にする方法については、[Extension Manager 機能のハイライト](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)の記事を参照してください。
 
    ユニバーサルエディターのフォームの事前入力サービスは、現在サポートされていません。
 
@@ -249,7 +249,7 @@ A：このコネクタは、アダプティブフォームコアコンポーネ�
 A：現在、各フォームは 1 つのデータセットにのみ送信できます。
 
 **Q：処理できるフォーム送信数に制限はありますか？**
-A：フォームの送信は、AEP ストリーミング取り込み[クォータとレート制限](https://experienceleague.adobe.com/ja/docs/experience-platform/data-lifecycle/api/quota)の対象となります。
+A：フォームの送信は、AEP ストリーミング取得[クォータとレート制限](https://experienceleague.adobe.com/ja/docs/experience-platform/data-lifecycle/api/quota)の対象となります。
 
 <!-- 
 >
@@ -290,7 +290,7 @@ AEM Forms と Adobe Experience Platform の統合により、組織はフォー�
 * [AEM Forms as a Cloud Service ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=ja)
 * [Adobe Experience Platform ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=ja)
 * [XDM システムの概要](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)
-* [Adobe Experience Platform でのストリーミング取り込み](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=ja)
+* [Adobe Experience Platform でのストリーミング取得](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=ja)
 * [リアルタイム顧客プロファイルの概要](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)
 * [AEM Forms の早期アクセス機能](/help/forms/early-access-ea-features.md)
 * [コアコンポーネントを使用したアダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)

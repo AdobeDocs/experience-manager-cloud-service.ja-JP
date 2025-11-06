@@ -3,8 +3,8 @@ title: 高速開発環境
 description: クラウド環境で迅速な開発反復処理を行うために、高速開発環境を活用する方法について説明します。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: eb87467b1cd3338a409c2aeded74b3bb38d2e58c
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '5446'
 ht-degree: 98%
@@ -200,7 +200,7 @@ retrieving programs of your organization ...
 
    この手順では、Cloud Manager **デベロッパー - Cloud Service** 製品プロファイルのメンバーである必要があります。詳しくは、[Cloud Manager 製品プロファイルへのチームメンバーの割り当て - 開発者製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)を参照してください。
 
-詳細とデモンストレーションについては、ビデオチュートリアル [RDE の設定方法（06:24） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup) をご覧ください。
+詳細とデモンストレーションについては、ビデオチュートリアル [RDE の設定方法（06:24） ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup) をご覧ください。
 </details>
 
 ## 新機能の開発時の RDE の使用 {#using-rde-while-developing-a-new-feature}
@@ -529,7 +529,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-詳細とデモンストレーションについては、ビデオチュートリアル [RDE コマンドの使用方法（10:01） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) を参照してください。
+詳細とデモンストレーションについては、ビデオチュートリアル [RDE コマンドの使用方法（10:01） ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) を参照してください。
 
 
 ## 外部 Git プロバイダーからの RDE へのデプロイ {#deploy-to-rde}
@@ -1156,7 +1156,7 @@ Forms のデベロッパーは、AEM Forms Cloud Service の高速開発環境�
 
 ## RDE に関するチュートリアル
 
-AEM as a Cloud Serviceでの RDE について詳しくは、[&#x200B; 設定方法、使用方法、開発ライフサイクル（01:25） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/overview) に関するビデオチュートリアルを参照してください。
+AEM as a Cloud Serviceでの RDE について詳しくは、[ 設定方法、使用方法、開発ライフサイクル（01:25） ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/overview) に関するビデオチュートリアルを参照してください。
 
 ## トラブルシューティング {#troubleshooting}
 

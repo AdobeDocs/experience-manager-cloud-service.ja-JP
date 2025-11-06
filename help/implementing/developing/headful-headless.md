@@ -3,8 +3,8 @@ title: AEMにおけるヘッドフルとヘッドレス
 description: AEM プロジェクトはヘッドフルモデルでもヘッドレスモデルで実装できますが、二者択一ではありません。AEM は、1 つのプロジェクトで両方のモデルのメリットを活用できる柔軟性を備えています。
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 100%
@@ -59,13 +59,13 @@ SPA 統合は AEM の 4 つのレベルに分かれます。
    * SPA は、AEM の [GraphQL API](/help/headless/graphql-api/content-fragments.md) を通じてこのコンテンツを取得します。
    * 一部のコンテンツは AEM で管理され、一部は外部システムで管理されます。
    * コンテンツは SPA でのみ表示できます。
-* **レベル 2：SPA を AEM に組み込む**
+* **レベル 2：SPA を AEM に埋め込む**
    * AEM で[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)を使用して、SPA 用のコンテンツを作成および管理します。
    * SPA は、AEM の [GraphQL API](/help/headless/graphql-api/content-fragments.md) を通じてこのコンテンツを取得します。
    * 一部のコンテンツは AEM で管理され、一部は外部システムで管理されます。
    * コンテンツは AEM 内でインコンテクストで表示できます。
    * 限られたコンテンツを AEM 内で編集できます。
-* **レベル 3：SPA を AEM に組み込んで完全に有効にする**
+* **レベル 3：SPA を AEM に埋め込んで完全に有効にする**
    * AEM で[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)を使用して、SPA 用のコンテンツを作成および管理します。
    * SPA は、AEM の [GraphQL API](/help/headless/graphql-api/content-fragments.md) を通じてこのコンテンツを取得します。
    * コンテンツは AEM 内でインコンテクストで表示できます。
@@ -81,7 +81,7 @@ SPA 統合は AEM の 4 つのレベルに分かれます。
 
 * **レベル 1：**&#x200B;コンテンツフラグメントと [AEM ヘッドレスフレームワーク](/help/headless/introduction.md)を使用して、AEM コンテンツを SPA に配信できます。
 * **レベル 2：**&#x200B;レベル 1 に加えて、
-   * [RemotePage コンポーネント](/help/implementing/developing/hybrid/remote-page.md)を使用して、外部 SPA を AEM に組み込み、AEM コンテンツをインコンテクストで表示できます。
+   * [RemotePage コンポーネント](/help/implementing/developing/hybrid/remote-page.md)を使用して、外部 SPA を AEM に埋め込み、AEM コンテンツをインコンテクストで表示できます。
    * SPA の特定のポイントで [AEM での限られた編集を可能にする](/help/implementing/developing/hybrid/editing-external-spa.md)こともできます。
 * **レベル 3：** レベル 2 に加えて、
    * SPA のゾーン全体で、AEM での包括的な編集を可能にすることができます。

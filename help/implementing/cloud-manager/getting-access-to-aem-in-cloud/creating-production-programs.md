@@ -4,8 +4,8 @@ description: Cloud Manager を使用して、ライブトラフィックをホ�
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: f99a0bfee76c7efd6f3e441db67d30f8a52707e5
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 99%

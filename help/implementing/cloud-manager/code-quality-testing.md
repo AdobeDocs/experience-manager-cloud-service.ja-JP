@@ -4,11 +4,11 @@ description: パイプラインのコード品質テストの仕組みと、デ�
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1166'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 97%
 
 ## コード品質ルール {#understanding-code-quality-rules}
 
-コード品質テストでは、ソースコードをスキャンし、一定の品質基準を満たしていることを確認します。このステップは、SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査の組み合わせによって実装されます。汎用の Java ルールとAEM固有のルールを組み合わせたルールは 100 以上あります。 AEM固有のルールの一部は、AEM エンジニアリングのベストプラクティスに基づいており、[&#x200B; カスタムコード品質ルール &#x200B;](/help/implementing/cloud-manager/custom-code-quality-rules.md) と呼ばれます。
+コード品質テストでは、ソースコードをスキャンし、一定の品質基準を満たしていることを確認します。このステップは、SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査の組み合わせによって実装されます。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM 固有のルールの一部は、AEM エンジニアリングのベストプラクティスに基づいており、[カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)と呼ばれます。
 
 現在のルールの完全なリストをダウンロードするには、[このリンクを使用](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)します。
 

@@ -3,9 +3,9 @@ title: AEM Forms as a Cloud Service の Edge Delivery Services での reCAPTCHA 
 description: AEM Forms の Edge Delivery Services 向けフォームでの Google reCAPTCHA の使用
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
-role: Admin, Architect, Developer
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 100%
 
@@ -29,6 +29,7 @@ Edge Delivery Services では、アダプティブフォームブロックに&#x
 
 
 この記事を最後まで読むと、以下の操作を実行できるようになります。
+
 - [1 つのフォームに対する Google reCAPTCHA の有効化](#enable-google-recaptchas-for-a-single-form)
 - [サイト上のすべてのフォームに対して reCAPTCHA を有効にする](#enable-recaptcha-for-all-the-forms)
 

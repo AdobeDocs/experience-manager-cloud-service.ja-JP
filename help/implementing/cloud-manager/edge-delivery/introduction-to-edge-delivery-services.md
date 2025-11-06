@@ -3,8 +3,8 @@ title: Cloud Manager の Edge Delivery Services の概要
 description: Edge Delivery Services を使用して Cloud Manager プロジェクトを配信する方法について説明します。
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 93%
@@ -87,7 +87,7 @@ Cloud Manager の **Edge Delivery の TODO リスト**&#x200B;は、オンボー
 | 8 | プッシュ検証を設定 | [Edge Delivery サイト用のプッシュ検証の設定](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)を参照してください。 |
 | 9 | 運用開始 | [運用開始チェックリスト](https://www.aem.live/docs/go-live-checklist)を参照してください。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441562?learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## サポートチケットのログ {#eds-support-ticket}
 

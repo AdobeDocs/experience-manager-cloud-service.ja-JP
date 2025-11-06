@@ -3,28 +3,28 @@ title: Salesforceの標準のフォームデータモデルをアダプティブ
 description: SalesforceをアダプティブFormsと統合する方法について説明します。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
+exl-id: 184db05b-7237-4dce-8059-03c39b93d7d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 71%
 
 ---
 
-
 # AEM Forms用のSalesforceの設定 {#configure-azure-storage}
 
-[[!DNL Experience Manager Forms]  データ統合 &#x200B;](data-integration.md) は、アダプティブFormsを OOTB フォームデータモデル（FDM）と統合するための [!DNL Salesforce] Cloud Services を提供します。 その結果、アダプティブFormsは [!DNL Salesforce] サーバーとやり取りして、ビジネスワークフローを有効にすることができます。 次に例を示します。
+[[!DNL Experience Manager Forms]  データ統合 ](data-integration.md) は、アダプティブFormsを OOTB フォームデータモデル（FDM）と統合するための [!DNL Salesforce] Cloud Services を提供します。 その結果、アダプティブFormsは [!DNL Salesforce] サーバーとやり取りして、ビジネスワークフローを有効にすることができます。 次に例を示します。
 
 * アダプティブフォームの送信時に、データを [!DNL Salesforce] に書き込む。
 * フォームデータモデル（FDM）で定義されているカスタムエンティティを通じて、データを [!DNL Salesforce] に書き込みます（またはその逆の操作）。
 * [!DNL Salesforce] サーバーに対してデータに関するクエリを実行し、アダプティブフォームに事前入力する。
 * [!DNL Salesforce] サーバーからデータを読み取る。
 
-[Experience Manager アーキタイプに基づいてFormsの開発プロジェクトをセットアップ &#x200B;](setup-local-development-environment.md#forms-cloud-service-local-development-environment) すると、[!DNL Salesforce] のクラウドサービスとフォームデータモデル（FDM）が [!DNL AEM Forms] Server 上で標準で使用できるようになります。
+[!DNL Salesforce]Experience Manager アーキタイプに基づいてFormsの開発プロジェクトをセットアップ [!DNL AEM Forms] すると、[ のクラウドサービスとフォームデータモデル（FDM）が ](setup-local-development-environment.md#forms-cloud-service-local-development-environment) Server 上で標準で使用できるようになります。
 
 >[!NOTE]
 >
->[!DNL Salesforce] Cloud Services およびフォームデータモデル（FDM）を標準で使用できるのは、[AEM アーキタイプ 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) 以降に基づいて [!DNL Experience Manager Forms] as a [!DNL Cloud Service] プロジェクトをセットアップしたのみとなります。
+>[!DNL Salesforce] Cloud Services およびフォームデータモデル（FDM）を標準で使用できるのは、[!DNL Experience Manager Forms]AEM アーキタイプ 30[!DNL Cloud Service] 以降に基づいて [ as a ](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) プロジェクトをセットアップしたのみとなります。
 
 ## [!DNL Salesforce] クラウドサービスの設定 {#configure-salesforce-cloud-service}
 
@@ -44,7 +44,7 @@ ht-degree: 71%
 
 [!DNL Salesforce] クラウドサービスを設定するには、次の手順を実行します。
 
-1. オーサーインスタンス [!DNL AEM Forms]、**[!UICONTROL ツール]** ![&#x200B; ハンマー &#x200B;](assets/hammer.png)/**[!UICONTROL Cloud Services]**/**[!UICONTROL データソース]** に移動します。
+1. オーサーインスタンス [!DNL AEM Forms]、**[!UICONTROL ツール]** ![ ハンマー ](assets/hammer.png)/**[!UICONTROL Cloud Services]**/**[!UICONTROL データソース]** に移動します。
 2. フォルダー名を選択し、「**[!UICONTROL Salesforce クラウド設定]**」を選択して「**[!UICONTROL プロパティ]**」を選択します。
 3. 「**[!UICONTROL 認証設定]**」タブで、次のように設定します。
    1. 「**[!UICONTROL ホスト]**」フィールドに [!DNL Salesforce] ドメイン URL を指定します。例えば、[Domain-name].my.salesforce.com のように指定します。
@@ -59,6 +59,7 @@ ht-degree: 71%
 [Experience Manager アーキタイプに基づいて Forms の開発プロジェクトを設定](setup-local-development-environment.md#forms-cloud-service-local-development-environment)すると、[!DNL Salesforce] フォームデータモデル（FDM）を [!DNL AEM Forms] サーバー上ですぐに使用できるようになります。
 
 フォームデータモデル（FDM）にアクセスするには：
+
 1. **[!UICONTROL Adobe Experience Manager]** / **[!UICONTROL Forms]** / **[!UICONTROL Data Integrations]** に移動します。
 1. フォルダー名を選択して「**[!UICONTROL Salesforce データモデル]**」を選択し、編集 ![編集](assets/edit.png) アイコンをクリックしてフォームデータモデル（FDM）を表示します。
 

@@ -3,9 +3,9 @@ title: Edge Delivery Services の概要
 description: AEM as a Cloud Service を使用して、Edge Delivery Services で提供されるパフォーマンスと完璧な Lighthouse スコアを活用する方法について説明します。
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-role: Admin, Architect, Developer
-source-git-commit: 8cbcfbc074c69396980ba930339563d5437d5f17
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 100%
 
@@ -19,6 +19,7 @@ ht-degree: 100%
 >**すぐに実践したい場合**
 >
 >Edge Delivery Services をすぐに実践する場合は、2 つのオプションがあります。
+>
 >* [事前定義済みのチュートリアル環境を使用して、すぐにオーサリングを開始 - 完全に設定され、すぐに使用できます。](https://www.aem.live/developer/ue-trial)
 >* [aem.live のチュートリアルを参照する](https://www.aem.live/developer/ue-tutorial)ことにより、さらに詳しい情報を調べ、30 分以内に独自の環境を設定できます。
 

@@ -4,8 +4,8 @@ description: AEM as a Cloud Service の Cloud Manager に関するよくある�
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 81%
@@ -23,7 +23,7 @@ ht-degree: 81%
 
 プロセスはドキュメント化されています。[プロジェクト作成ウィザード](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)を参照してください。
 
-例えば、[lWKND プロジェクトサンプルプロジェクトコード &#x200B;](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75) を参照してください。
+例えば、[lWKND プロジェクトサンプルプロジェクトコード ](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75) を参照してください。
 
 ## Java™ 8 から Java™ 11 に切り替えた後、maven-scr-plugin に関するエラーでビルドが失敗します。どうすればいいですか？ {#build-fails-maven-scr-plugin}
 
@@ -49,7 +49,7 @@ Cloud Manager ビルドの場合、`maven-enforcer-plugin` がこのエラーで
 
 はい。セキュリティ評価以外のコード品質チェックの失敗は、重要な指標ではありません。 その結果、結果の UI で項目を展開することで、デプロイメントパイプラインの一部としてバイパスできます。
 
-[&#x200B; デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナー &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) の役割を持つユーザーは、問題を上書きできます。 その場合、パイプラインは続行されます。または、問題を受け入れることもでき、その場合、パイプラインはエラーで停止します。
+[ デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナー ](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) の役割を持つユーザーは、問題を上書きできます。 その場合、パイプラインは続行されます。または、問題を受け入れることもでき、その場合、パイプラインはエラーで停止します。
 
 [コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate)および[実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines)について詳しくは、ドキュメントを参照してください。
 
@@ -61,7 +61,7 @@ Cloud Manager ビルドの場合、`maven-enforcer-plugin` がこのエラーで
 
 また、ステージおよび実稼働ビルドまたはデプロイメントのバージョンを `-SNAPSHOT` に設定することもできます。Cloud Manager では、適切なバージョン番号を自動的に設定し、Git にタグを作成します。このタグは、必要に応じて後で参照できます。
 
-バージョン処理について詳しくは、[Maven プロジェクトのバージョン処理 &#x200B;](/help/implementing/cloud-manager/managing-code/project-version-handling.md) を参照してください。
+バージョン処理について詳しくは、[Maven プロジェクトのバージョン処理 ](/help/implementing/cloud-manager/managing-code/project-version-handling.md) を参照してください。
 
 ## パッケージとバンドルのバージョン管理は、ステージングと実稼動のデプロイメントでどのように機能しますか？ {#snapshot-version}
 

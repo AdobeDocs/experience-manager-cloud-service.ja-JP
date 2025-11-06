@@ -2,10 +2,10 @@
 title: コンテンツフラグメントコンソールのキーボードショートカット
 description: AEM 全体を通して、コンテンツフラグメント管理用の選択を始めとして、様々なキーボードショートカットを使用できます。
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 100%

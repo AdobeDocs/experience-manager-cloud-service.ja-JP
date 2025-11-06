@@ -3,9 +3,9 @@ title: 非表示条件の使用
 description: 非表示の条件を使用して、コンポーネントリソースをレンダリングするかどうかを決定できます。
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 100%
 

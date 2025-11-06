@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの分析
 description: コンテンツフラグメントの構造を理解します。ヘッドレス配信とページオーサリングの両方に関連する情報について説明します。
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 100%
@@ -29,7 +29,7 @@ Experience Manager（AEM）には、フラグメントの構造を表示およ�
 
 ## 構造ツリー {#structure-tree}
 
-エディターのツールバーから「**構造ツリー**」タブを開いて、コンテンツフラグメントの階層構造とその参照を表示します。リンクアイコンを使用して参照を開きます。
+エディターのツールバーから「**構造ツリー**」タブを開いて、コンテンツフラグメントの階層構造とその参照を表示します。 リンクアイコンを使用して参照を開きます。
 
 次に例を示します。
 

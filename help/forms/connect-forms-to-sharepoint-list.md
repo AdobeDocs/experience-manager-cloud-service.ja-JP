@@ -5,10 +5,10 @@ keywords: アダプティブフォームでSharePoint リストを接続する�
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '460'
-ht-degree: 80%
+ht-degree: 84%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 80%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
-<span> このビデオは、コアコンポーネントにのみ適用されます。 UE/基盤コンポーネントについては、の記事を参照してください。</span>
+<span>このビデオは、コアコンポーネントのみに適用されます。UE／基盤コンポーネントについて詳しくは、記事を参照してください。</span>
 
 アダプティブフォームで「[!UICONTROL SharePoint リストに送信]」送信アクションを使用するには、次の手順に従います。
 
@@ -59,6 +59,7 @@ AEM Forms を Microsoft® Sharepoint リストに接続するには、次の手�
 >[!NOTE]
 >
 > Microsoft® SharePointリストでは、次の列タイプはサポートされていません。
+>
 > * 画像列
 > * メタデータ列
 > * ユーザー列

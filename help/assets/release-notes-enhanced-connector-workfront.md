@@ -4,8 +4,8 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] のリ
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 100%
 
@@ -201,13 +201,13 @@ ht-degree: 100%
          `"objId": "",` と `"url"` の間のコンテンツが JSON 応答と一致することを確認します。これを行うための推奨される方法は、 `objId` を持つ任意のイベント購読からコピーし、番号を削除することです。
 
       1. イベント購読 ID をメモしておきます。
-
       1. 間違ったイベント購読を削除します。 `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>` に対する DELETE 呼び出しを行います。
 
          応答コード `200` は、間違ったイベント購読が正常に削除されたことを示します。
-  >[!NOTE]
-  >
-  >ここで示している手順を実行する前に間違ったイベント購読を既に削除している場合は、最後の手順を省略することができます。
+
+         >[!NOTE]
+         >
+         >ここで示している手順を実行する前に間違ったイベント購読を既に削除している場合は、最後の手順を省略することができます。
 
 ### 2022年10月リリース {#october-2022-release}
 
@@ -266,7 +266,7 @@ ht-degree: 100%
 
 * プロキシ環境がサポートされるようになりました。
 
-* パートナーやお客様のご意見に基づいて、いくつかのバグを修正しました。
+* パートナーやお客様のフィードバックに基づいて、いくつかのバグを修正しました。
 
 >[!MORELIKETHIS]
 >

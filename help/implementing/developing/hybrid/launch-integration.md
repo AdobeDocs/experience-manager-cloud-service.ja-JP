@@ -3,10 +3,10 @@ title: SPA と Adobe Experience Platform Launch の統合
 description: Adobe Experience Platform Launch は、SPA 内に Analytics、ターゲットおよび Audience Manager を実装する方法として推奨されます。
 exl-id: 95008563-c1e5-4685-9c6d-5226d4a66c53
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 100%
 

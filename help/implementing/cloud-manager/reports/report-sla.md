@@ -4,8 +4,8 @@ description: 契約されたサービスレベル契約に対する AEM の実�
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 89%
@@ -60,7 +60,7 @@ SLA レポートデータでは、オーサー層とパブリッシュ層とい�
 
 ## SLA レポートの更新間隔 {#refresh}
 
-SLA レポートには、AEM 実稼動環境のパフォーマンスに関するインサイトが表示されます。このインサイトは、最新ですが、即時ではありません。SLA レポートは、`Production previous month` としてマークされた新しいプログラムに対して毎月生成されます。これは、即時ではありません。この遅延により、SLA レポートを確認する際は、次の点に注意してください。
+SLA レポートには、AEM 本番環境のパフォーマンスに関するインサイトが表示されます。このインサイトは、最新ですが、即時ではありません。SLA レポートは、`Production previous month` としてマークされた新しいプログラムに対して毎月生成されます。これは、即時ではありません。この遅延により、SLA レポートを確認する際は、次の点に注意してください。
 
 * レポートされる SLA は、その月の間に SLA が変更された場合でも、月の初めに存在した SLA になります。
 * 月の初めにプログラムが存在せず、そのために SLA が存在しなかった場合は、プログラムの作成日に存在していた SLA が適用されます。

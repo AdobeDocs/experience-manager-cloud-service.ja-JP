@@ -4,8 +4,8 @@ description: SSL 証明書のインストールおよび管理において Cloud
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 90527b1a160e6bde35562d58407a9056ae1f0a3a
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%

@@ -4,10 +4,10 @@ description: デジタルアセットを効果的に管理するためのメタ�
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1384'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -107,11 +107,13 @@ experience manager metadata-->
 
 以下に、従うべきベストプラクティスをいくつか示します。
 
-* **値の重複を避ける：**&#x200B;マーケティングキャンペーンから画像を集めた場合は、一貫した名前を使用し、重複を避けます。<br>
-例えば、*campaign_image_001* と *campaign_image_002* の代わりに、*event_promotion* と *product_launch* を使用して体系的な命名規則を実装し、明確で順序付けられた ID を確保します。
+* **値の重複を避ける：**&#x200B;マーケティングキャンペーンから画像を集めた場合は、一貫した名前を使用し、重複を避けます。
 
-* **統制語彙を効果的に使用する：**&#x200B;タグに標準化された用語を使用して、制御語彙を実装します。[AEM タグ付けフレームワーク](/help/implementing/developing/introduction/tagging-framework.md)を効果的に実装する方法を説明します。<br>
-例えば、*product_launch* または *event_promotion* などの用語を一貫して使用し、画像にテーマを付けてタグ付けし、体系的なシーケンスを維持する場合です。
+  例えば、*campaign_image_001* や *campaign_image_002* などの重複した名前を使用する代わりに、*event_promotion* や *product_launch* などの体系的な命名規則を実装し、明確で順序付けられた識別を確保します。
+
+* **統制語彙を効果的に使用する：**&#x200B;タグに標準化された用語を使用して、制御語彙を実装します。[AEM タグ付けフレームワーク ](/help/implementing/developing/introduction/tagging-framework.md) を効果的に実装する方法について説明します。
+
+  例えば、テーマを使用して画像にタグ付けする場合は、「*product_launch*」や「*event_promotion*」などの用語を常に使用して、体系的なシーケンスを維持します。
 
 * **正確性と完全性の維持：**メタデータの一貫性を保つためには、様々なソース間での正確性、完全性、アラインメントが重要です。
 例えば、PDF ドキュメントにメタデータを追加する場合は、作成者名やキーワードなどの詳細が正確で、完全であることを確認します。

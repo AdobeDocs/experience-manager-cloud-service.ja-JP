@@ -3,8 +3,8 @@ title: データ保護とデータプライバシーに関する規制 - Adobe E
 description: 様々なデータ保護およびデータプライバシー規制に対する Adobe Experience Manager as a Cloud Service Foundation のサポートについて説明します。この記事には、EU 一般データ保護規則（GDPR）、カリフォルニア州消費者プライバシー法および新規 AEM as a Cloud Service プロジェクトを実装する際に準拠する方法が含まれています。
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 100%

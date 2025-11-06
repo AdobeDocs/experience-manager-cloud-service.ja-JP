@@ -7,7 +7,7 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 53%
@@ -19,18 +19,19 @@ ht-degree: 53%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | この記事 |
 
 AEM Formsはカスタム関数をサポートし、複雑なビジネスルールを実装するためのJavaScript関数を定義できます。 これらのカスタム関数は、入力されたデータの操作や処理を容易にし、指定された要件を満たすことで、フォームの機能を拡張します。 定義済みの条件に基づいてフォームの動作を動的に変更できます。 また、カスタム関数を使用すると、デベロッパーは、複雑な検証ロジックの適用、動的計算の実行、ユーザーの操作または事前に定義された条件に基づくフォーム要素の表示と動作の制御を行うこともできます。
 
 >[!NOTE]
 >
-> 最新の機能を使用するには、[&#x200B; コアコンポーネント &#x200B;](https://github.com/adobe/aem-core-forms-components) が最新バージョンに設定されていることを確認してください。
+> 最新の機能を使用するには、[ コアコンポーネント ](https://github.com/adobe/aem-core-forms-components) が最新バージョンに設定されていることを確認してください。
 
 ## カスタム関数の使用 {#uses-of-custom-function}
 
 アダプティブフォームでカスタム関数を使用すると、次のようなメリットがあります。
+
 * **データの処理**：カスタム関数は、フォームフィールドに対するエントリ済みデータの処理に役立ちます。
 * **データの検証**：カスタム関数を使用すると、フォームの入力に対してカスタムチェックを実行し、指定したエラーメッセージを提供できます。
 * **動的な動作**：カスタム関数を使用すると、特定の条件に基づいてフォームの動的な動作を制御できます。例えば、フィールドの表示／非表示、フィールド値の変更、フォームロジックの調整を動的に行うことができます。
@@ -72,7 +73,7 @@ JavaScript注釈は、JavaScript コードのメタデータを提供するた�
    * date[]：日付値の配列を表します。
    * array：様々なタイプの値を含む汎用の配列を表します。
    * object：値を直接渡す代わりに、カスタム関数に渡されるフォームオブジェクトを表します。
-   * scope: globals オブジェクトを表します。このオブジェクトには、フォームインスタンス、ターゲットフィールドインスタンス、カスタム関数内でフォームの変更を実行するためのメソッドなどの読み取り専用変数が含まれています。 これはJavaScript注釈の最後のパラメーターとして宣言され、アダプティブフォームのルールエディターには表示されません。 scope パラメーターは、フォームまたはコンポーネントのオブジェクトにアクセスして、フォームの処理に必要なルールまたはイベントをトリガーします。Globals オブジェクトの詳細と使用方法については、[&#x200B; ここをクリック &#x200B;](/help/forms/custom-function-core-component-scope-function.md) してください。
+   * scope: globals オブジェクトを表します。このオブジェクトには、フォームインスタンス、ターゲットフィールドインスタンス、カスタム関数内でフォームの変更を実行するためのメソッドなどの読み取り専用変数が含まれています。 これはJavaScript注釈の最後のパラメーターとして宣言され、アダプティブフォームのルールエディターには表示されません。 scope パラメーターは、フォームまたはコンポーネントのオブジェクトにアクセスして、フォームの処理に必要なルールまたはイベントをトリガーします。Globals オブジェクトの詳細と使用方法については、[ ここをクリック ](/help/forms/custom-function-core-component-scope-function.md) してください。
 
 パラメータータイプでは大文字と小文字が区別されず、パラメーター名にはスペースを使用できません。
 
@@ -88,7 +89,7 @@ JavaScript注釈は、JavaScript コードのメタデータを提供するた�
 上記のコード行では、`Input1` はオプションのパラメーターで、デフォルト値はありません。 デフォルト値を使用してオプションのパラメーターを宣言するには：
 `@param {string=<value>} input1`
 
-デフォルト値を `value` に設定したオプションのパラメーターとして `input1` を指定します。
+デフォルト値を `input1` に設定したオプションのパラメーターとして `value` を指定します。
 
 * `@param {type} [Input1]`
 
@@ -119,15 +120,15 @@ JavaScript注釈は、JavaScript コードのメタデータを提供するた�
 
 ルールエディターで `OptionalParameterFunction` カスタム関数を使用した例を次に示します。
 
-![&#x200B; オプションまたは必須のパラメーター &#x200B;](/help/forms/assets/optional-default-params.png)
+![ オプションまたは必須のパラメーター ](/help/forms/assets/optional-default-params.png)
 
 必須パラメーターの値を指定せずにルールを保存できますが、ルールは実行されず、次のような警告メッセージが表示されます。
 
-![&#x200B; 不完全なルールの警告 &#x200B;](/help/forms/assets/incomplete-rule.png)
+![ 不完全なルールの警告 ](/help/forms/assets/incomplete-rule.png)
 
 ユーザーがオプションパラメーターを空のままにすると、「未定義」の値がオプションパラメーターのカスタム関数に渡されます。
 
-JSDocs でオプション パラメータを定義する方法の詳細については、[&#x200B; ここをクリック &#x200B;](https://jsdoc.app/tags-param) してください。
+JSDocs でオプション パラメータを定義する方法の詳細については、[ ここをクリック ](https://jsdoc.app/tags-param) してください。
 
 ### 戻り値のタイプ
 
@@ -227,7 +228,7 @@ jsdoc コメントを含むまたは含まないカスタム関数を作成で�
 
 ## 次の手順
 
-アダプティブフォームでカスタム関数を作成および使用するには、[&#x200B; コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成 &#x200B;](/help/forms/custom-function-core-component-create-function.md) の記事を参照してください。
+アダプティブフォームでカスタム関数を作成および使用するには、[ コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成 ](/help/forms/custom-function-core-component-create-function.md) の記事を参照してください。
 
 ## 関連トピック
 

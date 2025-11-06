@@ -4,14 +4,14 @@ description: Forms Experience Builder のインターフェイスオプション
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: d481e705-62bf-47f7-a832-1a005ec5ec59
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 1%
 
 ---
-
 
 # Forms Experience Builder UI オプションの設定
 
@@ -99,8 +99,8 @@ Forms Experience Builder で新しい会話スレッドを開始します。
 
 UI 設定での追加サポート：
 
-- [Forms Experience Builder の FAQ を確認してください &#x200B;](forms-experience-builder-frequently-asked-questions.md)
-- [&#x200B; はじめる前に &#x200B;](forms-experience-builder-getting-started.md) を確認してください
+- [Forms Experience Builder の FAQ を確認してください ](forms-experience-builder-frequently-asked-questions.md)
+- [ はじめる前に ](forms-experience-builder-getting-started.md) を確認してください
 - 技術的なサポートについては、システム管理者にお問い合わせください
 
 ## 関連記事

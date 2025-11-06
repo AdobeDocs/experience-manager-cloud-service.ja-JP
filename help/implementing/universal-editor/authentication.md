@@ -3,9 +3,9 @@ title: ユニバーサルエディターの認証
 description: ユニバーサルエディターで認証にアドビの Identity Management システム（IMS）を使用する方法について説明します。
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 100%
 

@@ -3,9 +3,9 @@ title: API リファレンス資料
 description: AEM には、デジタルエクスペリエンスプロジェクトに使用できる広範で強力な API が用意されています。
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 100%
 

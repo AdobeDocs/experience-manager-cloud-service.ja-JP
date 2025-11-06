@@ -2,11 +2,11 @@
 title: コンテンツフラグメント AJO 外部参照拡張機能の使用
 description: コンテンツフラグメント AJO 外部参照拡張機能について説明します
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
 exl-id: 79c90e6b-91da-4f5a-ac96-a98ef7f8d4cd
-source-git-commit: cff3d6b4f1db00813cbc1be19debc4b4b2c3c158
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 100%
 

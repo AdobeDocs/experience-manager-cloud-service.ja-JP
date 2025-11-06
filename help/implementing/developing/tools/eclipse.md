@@ -3,8 +3,8 @@ title: AEM Developer Tools for Eclipse
 description: Apache Sling 用の Eclipse プラグインに基づく Eclipse プラグインである、AEM Developer Tools for Eclipse の使用方法について説明します。
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 676a10a98f850dbc803b2c7b367a61fce51089f4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1228'
 ht-degree: 47%
@@ -34,7 +34,7 @@ AEM Developer Tools を使用する前に、次の作業が必要です。
 
 * [Eclipse IDE for Enterprise Java and Web Developers.](https://www.eclipse.org/downloads/packages/) をダウンロードしてインストールします。
    * AEM Developer Tools for Eclipse のバージョン 1.4.0 は、Eclipse 2022-12 （4.26）以降と互換性があり、実行するには Java 17 以降が必要です。
-* `eclipse.ini`Eclipse に関する FAQ[&#x200B; の説明に従って、](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) 設定ファイルを編集し、ヒープメモリが 1 GB 以上になるように Eclipse を設定します。
+* `eclipse.ini`Eclipse に関する FAQ[ の説明に従って、](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) 設定ファイルを編集し、ヒープメモリが 1 GB 以上になるように Eclipse を設定します。
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ AEM Developer Tools を使用する前に、次の作業が必要です。
 
 ## AEM パースペクティブ {#the-aem-perspective}
 
-Eclipse では、**パースペクティブ** によって、ウィンドウ内で使用可能なアクションやビューが決定され、Eclipse のリソースとのタスク指向のやり取りが可能になります。 パースペクティブについて詳しくは、[Eclipse のドキュメント &#x200B;](https://help.eclipse.org/latest/index.jsp) を参照してください。
+Eclipse では、**パースペクティブ** によって、ウィンドウ内で使用可能なアクションやビューが決定され、Eclipse のリソースとのタスク指向のやり取りが可能になります。 パースペクティブについて詳しくは、[Eclipse のドキュメント ](https://help.eclipse.org/latest/index.jsp) を参照してください。
 
 _Experience Manager Development Tools for Eclipse_ には、AEM プロジェクトおよびインスタンスを完全にコントロールできるAEM パースペクティブが用意されています。 AEM パースペクティブを開くには：
 
@@ -78,7 +78,7 @@ _Experience Manager Development Tools for Eclipse_ には、AEM プロジェク�
 
 ## サンプルのマルチモジュールプロジェクト {#sample-multi-module-project}
 
-_Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロジェクト設定を素早く習得できる、サンプルのマルチモジュールプロジェクトが付属しています。 また、[AEM プロジェクトアーキタイプを活用して、AEMのいくつかの機能のベストプラクティスガイドとしても役立ち &#x200B;](https://github.com/adobe/aem-project-archetype) す。
+_Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロジェクト設定を素早く習得できる、サンプルのマルチモジュールプロジェクトが付属しています。 また、[AEM プロジェクトアーキタイプを活用して、AEMのいくつかの機能のベストプラクティスガイドとしても役立ち ](https://github.com/adobe/aem-project-archetype) す。
 
 サンプルプロジェクトを作成する手順は次のとおりです。
 
@@ -121,7 +121,7 @@ _Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロ�
 
    >[!TIP]
    >
-   >ローカルのAEM SDKで動作するプロジェクトのデバッグについて詳しくは、[AEM SDKのリモートデバッグ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging) を参照してください。
+   >ローカルのAEM SDKで動作するプロジェクトのデバッグについて詳しくは、[AEM SDKのリモートデバッグ ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging) を参照してください。
 
 1. 「**終了**」をクリックします。
 
@@ -129,13 +129,13 @@ _Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロ�
 
 >[!NOTE]
 >
->新規インストール時、または Maven の依存関係がまだダウンロードされていない場合、Eclipse は、プロジェクトが作成されたことをエラーで報告する場合があります。 その場合は、「無効なプロジェクト定義の解決 [&#x200B; の節で説明されている手順に従っ &#x200B;](#resolving-invalid-project-definition) ください。
+>新規インストール時、または Maven の依存関係がまだダウンロードされていない場合、Eclipse は、プロジェクトが作成されたことをエラーで報告する場合があります。 その場合は、「無効なプロジェクト定義の解決 [ の節で説明されている手順に従っ ](#resolving-invalid-project-definition) ください。
 
 ## 既存プロジェクトの読み込み方法 {#how-to-import-existing-projects}
 
 **新規プロジェクト** 機能を使用して、基本的なプロジェクト構造を作成します。
 
-1. 手順に従って、基本的なプロジェクト構造を作成し [&#x200B; 関心事を合理的に分離した &#x200B;](#sample-multi-module-project) サンプル マルチモジュールプロジェクト」を作成します。
+1. 手順に従って、基本的なプロジェクト構造を作成し [ 関心事を合理的に分離した ](#sample-multi-module-project) サンプル マルチモジュールプロジェクト」を作成します。
 
    * `PROJECT.ui.apps`：`/apps` および `/etc` のコンテンツ用
    * `PROJECT.ui.content`：`/content` の作成済みコンテンツ用
@@ -232,9 +232,9 @@ _Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロ�
 
 Apache Sling IDE tooling for Eclipse の公式 web サイトでは、次の有益な追加情報を参照できます。
 
-* [**Apache Sling IDE tooling for Eclipse** ユーザーガイド &#x200B;](https://sling.apache.org/documentation/development/ide-tooling.html) を参照しながら、全体のコンセプト、AEM Development Tools がサポートするサーバー統合およびデプロイメント機能を確認できます。
-* [Apache Sling IDE ツールのトラブルシューティング &#x200B;](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
-* [&#x200B; 既知の問題リスト &#x200B;](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)
+* [**Apache Sling IDE tooling for Eclipse** ユーザーガイド ](https://sling.apache.org/documentation/development/ide-tooling.html) を参照しながら、全体のコンセプト、AEM Development Tools がサポートするサーバー統合およびデプロイメント機能を確認できます。
+* [Apache Sling IDE ツールのトラブルシューティング ](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
+* [ 既知の問題リスト ](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)
 
 次の公式の [Eclipse](https://www.eclipse.org/) ドキュメントは、環境の設定に役立ちます。
 

@@ -3,9 +3,9 @@ title: AEM Forms as a Cloud Service の Edge Delivery Services の URL または
 description: ドロップダウンリストオプションは別個のスプレッドシートに含まれており、指定された URL を介してプライマリスプレッドシートに読み込まれます。
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
-role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 100%
 

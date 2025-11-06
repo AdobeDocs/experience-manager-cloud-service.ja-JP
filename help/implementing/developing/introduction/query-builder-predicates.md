@@ -3,9 +3,9 @@ title: Query Builder の述語リファレンス
 description: AEM as a Cloud Serviceの Query Builder API の述語リファレンス。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2270'
 ht-degree: 100%
 
@@ -74,7 +74,7 @@ group.2_group.type=dam:Asset
 
 ### orderby {#orderby}
 
-この述語を使用すると、結果を並べ替えることができます。複数のプロパティ別に並べ替える必要がある場合は、`1_orderby=first`、`2_oderby=second` などの数字のプレフィックスを使用して、この述語を複数回追加する必要があります。
+この述語を使用すると、結果を並べ替えることができます。複数のプロパティ別に並べ替える必要がある場合は、`1_orderby=first`、`2_oderby=second` などの数字の接頭辞を使用して、この述語を複数回追加する必要があります。
 
 #### プロパティ {#properties-13}
 
@@ -296,7 +296,7 @@ JCR プロパティを間隔と照合します。`LONG`、`DOUBLE` および `DE
 
 ### relativedaterange {#relativedaterange}
 
-`JCR DATE` プロパティを日時の間隔と照合します（現在のサーバー時間に対する時間オフセットを使用します）。ミリ秒値または Bugzilla 構文 `1s 2m 3h 4d 5w 6M 7y`（それぞれ 1 秒、2 分、3 時間、4 日、5 週間、6 か月、7 年）を使用して、`lowerBound` と `upperBound` を指定できます。先頭に `-` を付けると、オフセットが現在の時間より前のマイナスであることを意味します。`lowerBound` または `upperBound` のいずれかのみを指定する場合は、他方がデフォルトで `0`（現在の時間）になります。
+`JCR DATE` プロパティを日時の間隔と照合します（現在のサーバー時間に対する時間オフセットを使用します）。ミリ秒値または Bugzilla 構文 `1s 2m 3h 4d 5w 6M 7y`（それぞれ 1 秒、2 分、3 時間、4 日、5 週間、6 か月、7 年）を使用して、`lowerBound` と `upperBound` を指定できます。接頭辞として `-` を付けると、オフセットが現在の時間より前のマイナスであることを意味します。`lowerBound` または `upperBound` のいずれかのみを指定する場合は、他方がデフォルトで `0`（現在の時間）になります。
 
 次に例を示します。
 

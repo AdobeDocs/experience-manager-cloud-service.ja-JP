@@ -5,10 +5,10 @@ topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '3088'
-ht-degree: 100%
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
+source-wordcount: '3086'
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ AEM as a Cloud Service では、インデックス作成に関わる様々な操
 
 リポジトリの分類を設計する際は、いくつかの要因を考慮する必要があります。考慮すべき点には、アクセス制御、ローカリゼーション、コンポーネント、ページプロパティの継承などが含まれます。
 
-こうした事柄に対応する分類を設計する一方で、インデックス設計の「トラバーサビリティ」についても検討することも重要です。ここで、トラバーサビリティとは、パスに基づいて予測どおりにコンテンツにアクセスできる、分類が持つ能力のことです。これにより、より効率的なシステムが実現し、複数のクエリを実行する必要があるシステムよりも保守が容易になります。
+こうした事柄に対応する分類を設計する一方で、インデックス作成を設計する際の「トラバーサビリティ」についても検討することも重要です。ここで、トラバーサビリティとは、パスに基づいて予測どおりにコンテンツにアクセスできる、分類が持つ能力のことです。これにより、より効率的なシステムが実現し、複数のクエリを実行する必要があるシステムよりも保守が容易になります。
 
 また、分類を設計する際は、順序が重要かどうか検討することが重要です。明確な順序が不要な場合および多数の兄弟ノードが予想される場合は、`sling:Folder` や `oak:Unstructured` などの順序がないノードタイプを使用することを推奨します。順序付けが必要な場合は、`nt:unstructured` および `sling:OrderedFolder` の方が適切です。
 
@@ -52,7 +52,7 @@ AEM システムで実行されるクエリは、より負担のかかる操作�
 
 ### 結果の先取り {#prefetching-results}
 
-コンテンツやコンポーネントの要件によっては、必要なデータを取得する方法としてノードの走査を使用できない場合があります。このような場合は、最適なパフォーマンスを保証するために、コンポーネントがレンダリングされる前に必要なクエリを実行する必要があります。
+コンテンツやコンポーネントの要件によっては、必要なデータを取得する方法としてノードトラバーサルを使用できない場合があります。このような場合は、最適なパフォーマンスを保証するために、コンポーネントがレンダリングされる前に必要なクエリを実行する必要があります。
 
 コンポーネントで必要とされる結果をオーサリング時にまとめて計算でき、さらにコンテンツがその後も変更されないとわかっている場合は、変更が行われた後にクエリを実行できます。
 
@@ -112,6 +112,7 @@ AEM as a Cloud Service には、効率的なクエリの実装をサポートす
 ## クエリパフォーマンスツール {#query-performance-tool}
 
 クエリパフォーマンスツール（`/libs/granite/operations/content/diagnosistools/queryPerformance.html` にあり、[Cloud Manager の開発者コンソール](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ja#queries)から使用可）には、次が含まれます。
+
 * 「処理に時間のかかるクエリ」のリスト。現在、5,000 行を超える読み取り／スキャンとして定義されています。
 * 「一般的なクエリ」のリスト
 * Oak による特定のクエリの実行方法を理解するための「クエリの説明を実行」ツール。
@@ -119,6 +120,7 @@ AEM as a Cloud Service には、効率的なクエリの実装をサポートす
 ![クエリパフォーマンスツール](assets/query-performance-tool.png)
 
 「処理に時間のかかるクエリ」および「一般的なクエリ」のテーブルには、次が含まれます。
+
 * クエリステートメント自体。
 * クエリを実行した最後のスレッドの詳細。クエリを実行するページまたはアプリケーション機能を識別できます。
 * クエリの「読み取りの最適化」スコア。
@@ -155,6 +157,7 @@ AEM as a Cloud Service には、効率的なクエリの実装をサポートす
 
 `Explain` の選択後、ユーザーには、クエリの説明の結果（および選択されている場合は実行）を説明するポップアップが表示されます。
 このポップアップには、次の詳細が表示されます。
+
 * クエリの実行時に使用されるインデックス（[リポジトリトラバーサル](#repository-traversal)を使用してクエリを実行する場合はインデックスなし）。
 * 実行時間（`Include Execution Time` チェックボックスがオンの場合）および読み取った結果の数（`Read first page of results` または `Include Node Count` チェックボックスがオンになっている場合）。
 * クエリの実行方法を詳細に分析できる実行プラン。この解釈方法については、[クエリ実行プランの読み取り](#reading-query-execution-plan)を参照してください。
@@ -172,6 +175,7 @@ AEM as a Cloud Service には、効率的なクエリの実装をサポートす
 ```
 
 考えてみましょう。
+
 * 3 つの制約
    * ノードタイプ（`dam:Asset`）
    * パス（`/content/dam` の子孫）
@@ -191,11 +195,12 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 ```
 
 プランのこのセクションには次の内容が含まれます。
+
 * 以下のクエリの実行にインデックスが使用されます。
    * この場合、Lucene インデックス `/oak:index/damAssetLucene-9` が使用されるため、残りの情報は Lucene クエリ構文で示されます。
 * 3 つの制約はすべて、以下の理由でこのインデックスによって処理されます。
    * ノードタイプの制限
-      * 暗黙的な理由としては、`damAssetLucene-9` がdam:Asset タイプのノードのみインデックスを作成するため。
+      * これは dam`damAssetLucene-9` タイプのノードのインデックスのみを作成 :Asset きるので、暗黙的です。
    * パスの制限
       * `+:ancestors:/content/dam` が Lucene クエリに表示されるため。
    * プロパティの制約
@@ -212,6 +217,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 ```
 
 考えてみましょう。
+
 * 3 つの制約
    * ノードタイプ（`dam:Asset`）
    * パス（`/content/dam` の子孫）
@@ -231,9 +237,10 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 ```
 
 プランのこのセクションには次の内容が含まれます。
+
 * （3 つのうち）2 つの制限のみが次のインデックスで処理されます。
    * ノードタイプの制限
-      * 暗黙的な理由としては、`damAssetLucene-9` がdam:Asset タイプのノードのみインデックスを作成するため。
+      * これは dam`damAssetLucene-9` タイプのノードのインデックスのみを作成 :Asset きるので、暗黙的です。
    * パスの制限
       * `+:ancestors:/content/dam` が Lucene クエリに表示されるため。
 * プロパティの制限 `jcr:content/metadata/myProperty = "My Property Value"` がインデックスで実行されるのではなく、基になる Lucene クエリの結果に対するクエリエンジンフィルタリングとして適用されます。

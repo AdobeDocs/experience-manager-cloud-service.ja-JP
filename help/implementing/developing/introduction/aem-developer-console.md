@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service Developer Console - Beta
 description: CRXDE Lite と AEM as a Cloud Service Developer Console について説明します。
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 4b0fc3e9-b7c4-4c95-bd97-8b24e4d5cb3d
-source-git-commit: 11c52f6782df3b608bedd4b120c145a7a80a0702
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 100%
 

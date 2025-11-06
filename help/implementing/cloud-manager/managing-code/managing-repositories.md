@@ -3,11 +3,11 @@ title: Cloud Managerでのリポジトリの管理
 description: Cloud Manager で Git リポジトリを追加、表示および削除する方法について説明します。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '708'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -54,8 +54,8 @@ Cloud Manager のリポジトリは、Git を使用してプロジェクトの�
 
 **リポジトリ**&#x200B;ページの右上隅付近にある「**リポジトリを追加**」をクリックします。
 
-![&#x200B; リポジトリを追加ダイアログボックス &#x200B;](assets/repository-add.png)
-*「リポジトリを追加」ダイアログボックス*
+![リポジトリを追加ダイアログボックス](assets/repository-add.png)
+*リポジトリを追加ダイアログボックス。*
 
 Cloud Manager は、アドビが管理するリポジトリ（**Adobe リポジトリ**）と自己管理リポジトリ（**プライベートリポジトリ**）の 2 つのタイプのリポジトリをサポートします。設定の必須フィールドは、追加するリポジトリのタイプによって異なります。詳しくは、次を参照してください。
 

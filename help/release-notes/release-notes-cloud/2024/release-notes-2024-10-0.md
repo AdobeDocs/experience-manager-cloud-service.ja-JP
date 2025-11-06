@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.10.0 リ
 feature: Release Information
 role: Admin
 exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1664'
-ht-degree: 100%
+source-wordcount: '1663'
+ht-degree: 99%
 
 ---
 
@@ -44,6 +44,7 @@ ht-degree: 100%
 **最新化されたページイベント**
 
 次の AEM Sites ページイベントは、AEM as a Cloud Service イベンティングプラットフォームに基づく外部で消費可能なイベントとして使用できるようになりました。イベントは Adobe I/O を介して処理され、外部プロセスとやり取りできます。
+
 * ページが公開されました
 * ページが非公開にされました
 * ページが削除されました
@@ -156,7 +157,7 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 1. **許可されているパスを追加**：フォームアクションが許可されているパスを指定します。
 1. **動作を制限**：制限されているパス（許可リストに含まれていないパス）の動作を決定します。次の 2 つのオプションのどちらかを選択できます。
    * **ポップアップ**（デフォルト）：ポップアップ通知を表示します。
-   * **防止**：フォームの送信をブロックします。
+   * **防止**:Blocks フォームの送信。
 
 >[!NOTE]
 >
@@ -176,7 +177,7 @@ AEM（Apache／Dispatcher を含む）および CDN ログは Cloud Manager か�
 
 ### RDE の設定パイプライン {#config-pipeline-rdes}
 
-迅速な開発環境は、クラウド環境でコードと設定を迅速にデプロイおよびテストするための強力なツールです。RDE では、トラフィックフィルタールールやリクエスト／応答変換などの CDN 設定、ログ転送、その他の設定オプションを含む[設定 YAML ファイルの同期](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)がサポートされるようになりました。詳しくは、サポートされている設定オプションの[完全なリストを参照](/help/operations/config-pipeline.md)してください。
+高速開発環境は、クラウド環境でコードと設定を迅速にデプロイおよびテストするための強力なツールです。RDE では、トラフィックフィルタールールやリクエスト／応答変換などの CDN 設定、ログ転送、その他の設定オプションを含む[設定 YAML ファイルの同期](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)がサポートされるようになりました。詳しくは、サポートされている設定オプションの[完全なリストを参照](/help/operations/config-pipeline.md)してください。
 
 ### 新しい製品プロファイル {#new-product-profiles}
 

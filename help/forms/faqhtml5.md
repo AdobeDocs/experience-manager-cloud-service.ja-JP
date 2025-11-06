@@ -10,9 +10,9 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2032'
 ht-degree: 98%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 98%
 
 # HTML5 フォームに関するよくある質問（FAQ）{#frequently-asked-questions-faq-for-html-forms}
 
-<span class="preview"> HTML5 Forms機能は、早期アクセスプログラムの一部として提供されています。 アクセスをリクエストするには、公式（職場）メール ID からaem-forms-ea@adobe.comにメールを送信します。
+<span class="preview">HTML5 Forms 機能は、早期アクセスプログラムの一部として提供されています。アクセス権をリクエストするには、公式の（勤務先の）メールアドレスから aem-forms-ea@adobe.com にメールを送信してください。
 </span>
 
 レイアウト、スクリプティングサポートおよび HTML5 フォームのスコープに関して、よくある質問（FAQ）があります。
@@ -119,9 +119,9 @@ ht-degree: 98%
 
    回答：XDP を HTML フォームにレンダリングするには、多くの中間データ構造とフォーム DOM、データ DOM、レイアウト DOM などのオブジェクトが必要になります。
 
-   PDF フォームの場合、Adobe Acrobat には中間データ構造およびオブジェクトを作成するための XTG エンジンが組み込まれています。Acrobat はレイアウトおよびスクリプトも管理します。
+   PDF フォームの場合、Adobe Acrobat には中間データ構造およびオブジェクトを作成するためのビルトインの XTG エンジンがあります。Acrobat はレイアウトおよびスクリプトも管理します。
 
-   HTML5 フォームの場合、ブラウザーには未加工の XDP バイトから中間データ構造およびオブジェクトを作成するための XTG エンジンが組み込まれていません。このため、HTML5 フォームの場合、中間構造はサーバーで生成され、クライアントに送信されます。クライアントでは、JavaScript ベースのスクリプトおよびレイアウトエンジンがこれらの中間構造を使用します。
+   HTML5 フォームの場合、ブラウザーには未加工の XDP バイトから中間データ構造およびオブジェクトを作成するためのビルトインの XTG エンジンはありません。このため、HTML5 フォームの場合、中間構造はサーバーで生成され、クライアントに送信されます。クライアントでは、JavaScript ベースのスクリプトおよびレイアウトエンジンがこれらの中間構造を使用します。
 
    中間構造のサイズは、元の XDP のサイズと XDP にマージされたデータによって異なります。
 
@@ -216,7 +216,7 @@ ht-degree: 98%
 
 1. HTML5 フォームでは初期化スクリプトと form ready イベントが複数回実行されますか？
 
-   回答：はい、初期化スクリプトと form ready イベントは複数回（少なくともサーバーサイドで 1 回、クライアントサイドで 1 回）実行されます。initialize イベントや form:ready イベントなどのスクリプトを何らかのビジネスロジック（フォームデータ、フィールドデータなど）に基づいて作成し、データの状態やべき等（データが同じ場合）に基づいてアクションが実行されるようにすることをお勧めします。
+   回答：はい、初期化スクリプトと form ready イベントは複数回（少なくともサーバーサイドで 1 回、クライアントサイドで 1 回）実行されます。initialize イベントや form イベントなどのスクリプトを何らかのビジネスロジック（フォームデータ :ready フィールドデータ）に基づいて作成し、データの状態やべき等（データが同じ場合）に基づいてアクションが実行されるようにすることをお勧めします。
 
 ### XDP のデザイン {#designing-xdp}
 

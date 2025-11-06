@@ -4,12 +4,12 @@ description: フロントエンド App Builder アプリケーションを作成
 version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
-role: Developer, Architect
+role: Developer
 level: Beginner
 kt: 9459,9483
 thumbnail: 339244.jpg
 exl-id: 0e5319ea-b053-44bf-ac9c-9b0dee51eac4
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 100%
@@ -22,10 +22,10 @@ ht-degree: 100%
 
 プロジェクト初期化オプションや Adobe Spectrum などのフロントエンド App Builder アプリケーションを説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/346317/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/339247/?quality=12&learn=on)
 
 ## フロントエンド App Builder アプリケーションの作成
 
 React を使用し、アプリケーション内から Adobe ランタイムアクションを使用して、フロントエンド App Builder アプリケーションを作成する方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3409739/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/339248/?quality=12&learn=on)

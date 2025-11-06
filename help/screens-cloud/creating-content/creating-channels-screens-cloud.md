@@ -4,8 +4,8 @@ description: ここでは、Screens as a Cloud Service でチャネルを作成�
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 feature: Authoring Screens
 role: Admin, Developer, User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1102'
 ht-degree: 100%
 
@@ -114,6 +114,7 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
    ![画像](/help/screens-cloud/assets/display/Assignments3.png)
 
 このタイルには、次の情報が表示されます。
+
 * ディスプレイ内のチャネルのデフォルトの優先度。
 * チャネルの再生がスケジュールされている場合のアクティベーションの開始日と終了日。
 * 繰り返しの合成ビュー（時間／日／週／月／年ごと、およびその繰り返しに付けられた名前）。

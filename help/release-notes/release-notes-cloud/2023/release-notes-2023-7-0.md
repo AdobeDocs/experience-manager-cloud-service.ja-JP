@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.7.0 リ�
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
 feature: Release Information
 role: Admin
-source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 100%
@@ -87,7 +87,7 @@ Assets Essentials では、デフォルトで、関連性に基づいて検索�
 * [**繰り返し可能なセクションでのアダプティブフォームの作成**](/help/forms/create-forms-repeatable-sections.md)：[アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=ja)、[ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=ja)、[パネル](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)、および[水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=ja)のコンポーネントベースのアダプティブフォームを繰り返し可能にすることで、複数のデータレコードをキャプチャできるようになりました。これらの繰り返し可能なセクションを使用すると、複数のデータエントリを簡単に指定できます。これは、必要なデータインスタンスがあらかじめ不明な場合に役立ちます。フォームの入力者は、セクションを簡単に追加または削除できるので、フォームを様々なデータ入力シナリオに適合させて、複数発生した同じデータを簡単に収集できます。
 
 
-### [!DNL Forms] で利用可能な事前公開機能 {#pre-release-features-available-in-forms-channel}
+### [!DNL Forms] で利用可能なプレリリース機能 {#pre-release-features-available-in-forms-channel}
 
 * [**Google reCAPTCHA Enterprise サポート**](/help/forms/captcha-adaptive-forms.md)：アダプティブフォームでGoogle reCAPTCHA Enterprise を使用して、不正なアクティビティやスパムに対する保護を強化し、より安全なユーザーエクスペリエンスを提供します。高度なリスク分析とシームレスな統合により、ユーザーはボットを効果的にブロックしながらフォームを簡単に送信できます。
 
@@ -115,6 +115,7 @@ Assets Essentials では、デフォルトで、関連性に基づいて検索�
 ### CDN および WAF ルールの早期導入プログラム {#waf-early-adopter}
 
 CDN でのトラフィックのフィルタリング基準：
+
 * リクエストのヘッダーとプロパティ（IP アドレスなど）
 * 悪意のあるトラフィックと関連付けられていることがわかっているトラフィックパターン
 

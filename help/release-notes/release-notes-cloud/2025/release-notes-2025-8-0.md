@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.8.0 リリー�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.8.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1919'
 ht-degree: 86%
@@ -38,7 +38,7 @@ ht-degree: 86%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?captions=jpn&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -75,21 +75,21 @@ OpenAPI を使用して Dynamic Media でバニティ URL を活用すること�
 
 >[!NOTE]
 >
->この機能は、限定提供（LA）機能として利用できます。開始するには、[&#x200B; この記事 &#x200B;](/help/assets/vanity-urls.md) を参照してください。
+>この機能は、限定提供（LA）機能として利用できます。開始するには、[ この記事 ](/help/assets/vanity-urls.md) を参照してください。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [&#x200B; 日付と時刻の入力コンポーネント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)：日付と時刻のコンポーネントが使用できるようになり、カレンダーと時計のインターフェイスを使用して、またはサポートされている形式で手動で値を入力して、日付と時刻の両方を選択できるようになりました。
-* [&#x200B; ファイルのアップロードのエラー処理の強化 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)：ファイル添付コンポーネントは、アップロードされたファイルタイプを許可リストと照合して自動的に検証するようになりました。 ユーザーがサポートされていない形式のファイルをアップロードすると、送信中にフォームにエラーが表示されます。また、このコンポーネントはファイルコンテンツをチェックして、そのタイプを検証するので、フォームの全体的なセキュリティが強化されます。
-* [&#x200B; カスタム送信アクションに対して指定されたエラー応答 &#x200B;](/help/forms/custom-submit-action-troubleshooting.md)：カスタム送信アクションで未処理のエラーが発生した場合は、エラーコード 502 が返されます。 これにより、問題がカスタム送信アクションに関連していることを識別でき、デバッグが簡単になります。
-* [&#x200B; レコードのドキュメントからの非表示フィールドの除外 &#x200B;](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)：レコードのドキュメントから非表示フィールドを除外できるように、新しいプロパティが追加されました。 デフォルトでは、このオプションは選択されておらず、すべてのフォームフィールドに適用されます。
+* [ 日付と時刻の入力コンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)：日付と時刻のコンポーネントが使用できるようになり、カレンダーと時計のインターフェイスを使用して、またはサポートされている形式で手動で値を入力して、日付と時刻の両方を選択できるようになりました。
+* [ ファイルのアップロードのエラー処理の強化 ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)：ファイル添付コンポーネントは、アップロードされたファイルタイプを許可リストと照合して自動的に検証するようになりました。 ユーザーがサポートされていない形式のファイルをアップロードすると、送信中にフォームにエラーが表示されます。また、このコンポーネントはファイルコンテンツをチェックして、そのタイプを検証するので、フォームの全体的なセキュリティが強化されます。
+* [ カスタム送信アクションに対して指定されたエラー応答 ](/help/forms/custom-submit-action-troubleshooting.md)：カスタム送信アクションで未処理のエラーが発生した場合は、エラーコード 502 が返されます。 これにより、問題がカスタム送信アクションに関連していることを識別でき、デバッグが簡単になります。
+* [ レコードのドキュメントからの非表示フィールドの除外 ](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)：レコードのドキュメントから非表示フィールドを除外できるように、新しいプロパティが追加されました。 デフォルトでは、このオプションは選択されておらず、すべてのフォームフィールドに適用されます。
 
 ### AEM Forms のプレリリース機能
 
-* [AFP レンディションの生成と同期 &#x200B;](/help/forms/document-generation-afp-api.md): AEM Forms Communication API を使用して、XDP ファイルを AFP 形式に変換できるようになりました。 AFP は、大規模なエンタープライズ印刷で広く使用されている、高性能な形式です。
+* [AFP レンディションの生成と同期 ](/help/forms/document-generation-afp-api.md): AEM Forms Communication API を使用して、XDP ファイルを AFP 形式に変換できるようになりました。 AFP は、大規模なエンタープライズ印刷で広く使用されている、高性能な形式です。
 * **ルールエディターの機能強化**
-   * [&#x200B; 関数リストの Validate メソッド](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list)：validate メソッドと reset メソッドでは、パネル、フィールド、フォームの各レベルでの実行がサポートされるようになりました。以前は、フォームレベルでのみサポートされていました。
-   * [&#x200B; 最新のJavaScriptのサポート &#x200B;](/help/forms/rule-editor-core-components-difference-tables.md):ECMAScript 2019 以降の機能がカスタム関数に対してサポートされ、より効率的なモジュール型で再利用可能なコードを記述できるようになりました
+   * [ 関数リストの Validate メソッド](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list)：validate メソッドと reset メソッドでは、パネル、フィールド、フォームの各レベルでの実行がサポートされるようになりました。以前は、フォームレベルでのみサポートされていました。
+   * [ 最新のJavaScriptのサポート ](/help/forms/rule-editor-core-components-difference-tables.md):ECMAScript 2019 以降の機能がカスタム関数に対してサポートされ、より効率的なモジュール型で再利用可能なコードを記述できるようになりました
    * [ルールエディターの「DoR をダウンロード」オプション](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor)：ルールエディターにレコードのドキュメント（DoR）をダウンロードする機能が、標準（OOTB）オプションとして追加されました。
      ![レコードのドキュメント](/help/forms/assets/document-of-record-rn.gif)
    * [ルールエディターの動的変数](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules)：ルールエディターで動的（一時）変数を使用できるようになりました。これにより、条件とアクションをより柔軟に定義できます。一時的な値を保存するために非表示フィールドを使用する必要がなくなりました。
@@ -101,8 +101,8 @@ OpenAPI を使用して Dynamic Media でバニティ URL を活用すること�
 
 ### AEM Forms の早期導入機能
 
-* [&#x200B; 手書き署名コンポーネント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)：手書き署名コンポーネントを使用して、契約書フォームなどのフォームにユーザーの署名を追加できるようになりました。 コンポーネントを使用すると、ユーザーはマウス、スタイラス、タッチスクリーンを使用してフォーム内に直接署名を入力できます。
-* [&#x200B; ルールエディターでの直接 API 統合 &#x200B;](/help/forms/api-integration-in-rule-editor.md)：アダプティブFormsでは、フォームデータモデルを必要とせずに、ビジュアルルールエディターでの直接 API 統合をサポートするようになりました。 作成者は、URL または cURL 読み込みを使用して API を設定し、入力／出力パラメーターをマッピングし、認証を使用して安全な呼び出しを行うことができます。
+* [ 手書き署名コンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)：手書き署名コンポーネントを使用して、契約書フォームなどのフォームにユーザーの署名を追加できるようになりました。 コンポーネントを使用すると、ユーザーはマウス、スタイラス、タッチスクリーンを使用してフォーム内に直接署名を入力できます。
+* [ ルールエディターでの直接 API 統合 ](/help/forms/api-integration-in-rule-editor.md)：アダプティブFormsでは、フォームデータモデルを必要とせずに、ビジュアルルールエディターでの直接 API 統合をサポートするようになりました。 作成者は、URL または cURL 読み込みを使用して API を設定し、入力／出力パラメーターをマッピングし、認証を使用して安全な呼び出しを行うことができます。
 
 <!--
 **Forms Optimization opportunities**
@@ -149,6 +149,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 * `org.bson`
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
+
 </details>
 
 <!--

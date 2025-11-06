@@ -5,8 +5,8 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 16e1d42a-42d0-4335-ba81-feedea7ed7d7
-role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 100%
@@ -15,13 +15,13 @@ ht-degree: 100%
 
 # フォームフィールドへの検証機能の追加
 
-アダプティブフォームブロックには、検証機能が組み込まれています。これらの検証は、選択したフィールドタイプと指定した追加プロパティに基づいて、最新のブラウザーに自動的に適用されます。
+アダプティブフォームブロックには、ビルトインの検証機能があります。これらの検証は、選択したフィールドタイプと指定した追加プロパティに基づいて、最新のブラウザーに自動的に適用されます。
 
 ## フィールドのタイプと検証について
 
 アダプティブフォームブロックは、text、email、number、date など、様々な [HTML-5 入力タイプ](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/input#input_types)をサポートします。また、HTML-5 に固有の包括的な入力検証機能に加えて、[テキスト領域](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/textarea)、選択、フィールドセットにも対応します。
 
-HTML フィールドタイプを使用して、ユーザーが入力できるデータの種類を定義します。フィールドタイプが異なれば、組み込みの検証ルールも異なります。
+HTML フィールドタイプを使用して、ユーザーが入力できるデータの種類を定義します。フィールドタイプが異なれば、ビルトインの検証ルールも異なります。
 
 Email：このフィールドタイプでは、一般的なメールアドレス形式に対してユーザー入力を自動的に検証します。ユーザーが無効なメールアドレスを入力すると、エラーメッセージが表示されます。
 Number：このフィールドタイプでは、数値入力のみが可能です。ユーザーが数値以外の文字を入力すると、エラーが発生します。

@@ -4,8 +4,8 @@ description: Dynatrace を AEM as a Cloud Service で使用する方法を説明
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
 feature: Log Files, Developing
-role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 69%
@@ -33,7 +33,7 @@ Dynatrace のお客様は、カスタマーサポートチケットを通じて�
 | [!DNL Dynatrace Environment URL] | Dynatrace 環境の URL。<br><br>Dynatrace SaaS のお客様の場合、形式は `https://<your-environment-id>.live.dynatrace.com` です。<br><br>Dynatrace Managed のお客様の場合、形式は `https://<your-managed-url>/e/<environmentId>` です。 |
 | [!DNL Dynatrace Environment ID] | Dynatrace 環境 ID。詳しくは、[Dynatrace 接続の詳細を取得する方法入手方法については、](#how-do-i-get-my-dynatrace-connection-details) を参照してください。 |
 | [!DNL Dynatrace Environment Token] | Dynatrace 環境トークン。詳しくは、[Dynatrace 接続の詳細を取得する方法入手方法については、](#how-do-i-get-my-dynatrace-connection-details) を参照してください。<br><br> このトークンは秘密鍵と見なされるべきなので、適切なセキュリティ対策を講じてください。 例えば、**zerobin.net** などの web サイトでパスワードで保護します。カスタマーサポートチケットはパスワードとともに参照できます。 |
-| [!DNL Dynatrace API access token] | Dynatrace 環境の API アクセストークン。作成方法については、[Dynatrace API アクセストークンの作成 &#x200B;](#create-dynatrace-access-token) を参照してください。<br><br> このトークンは秘密鍵と見なされるべきなので、適切なセキュリティ対策を講じてください。 例えば、カスタマーサポートチケットが参照できる **zerobin.net** などの web サイトで、パスワードと共にパスワード保護します。<br> |
+| [!DNL Dynatrace API access token] | Dynatrace 環境の API アクセストークン。作成方法については、[Dynatrace API アクセストークンの作成 ](#create-dynatrace-access-token) を参照してください。<br><br> このトークンは秘密鍵と見なされるべきなので、適切なセキュリティ対策を講じてください。 例えば、カスタマーサポートチケットが参照できる **zerobin.net** などの web サイトで、パスワードと共にパスワード保護します。<br> |
 | [!DNL Dynatrace ActiveGate Port] | AEM 統合の接続先となる Dynatrace ActiveGate ポート。<br><br> このポートは、Dynatrace Managed にのみ必要です。 |
 | [!DNL Dynatrace ActiveGate Network Zone] | [Dynatrace ActiveGate ネットワークゾーン](https://docs.dynatrace.com/docs/manage/network-zones)を使用して、データセンターとネットワークリージョン間で AEM 監視データを効率的にルーティングします。<br><br>メモ：Dynatrace ActiveGate ネットワークゾーンはオプションです。 |
 | [!DNL AEM Environment IDs] | Dynatraceが監視するAEM環境 ID または ID。 |

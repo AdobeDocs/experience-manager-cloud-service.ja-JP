@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3615'
 ht-degree: 100%
@@ -47,7 +47,7 @@ _第 2 部_
 * アセットをレンダリングするための画像プリセットの作成の基本
 * 画像セット、スピンセット、混在メディアセット
 
-**_対象読者_**
+**_オーディエンス_**
 このジャーニーの最適な読者は、Experience Manager 上の Dynamic Media を初めて使用する以下のユーザーです。
 
 * 管理者
@@ -209,7 +209,7 @@ Dynamic Media の解決策は、1 つのプライマリビデオファイルを�
 
 | **問題** | **Dynamic Media の解決策** |
 |---|---|
-| カスタマーエクスペリエンスが平凡で静的なので、エンゲージメント、ロイヤリティの醸成、コンバージョンの促進につながらない。 | 技術に詳しくないユーザーでも、ホットスポット、カルーセル、スピンセットなどのインタラクティブ要素を簡単かつシームレスに追加して、より動的で魅力的なエクスペリエンスを実現できます。 |
+| カスタマーエクスペリエンスが平凡で静的なので、エンゲージメント、ロイヤルティの醸成、コンバージョンの促進につながらない。 | 技術に詳しくないユーザーでも、ホットスポット、カルーセル、スピンセットなどのインタラクティブ要素を簡単かつシームレスに追加して、より動的で魅力的なエクスペリエンスを実現できます。 |
 | デジタルアセットから得られる投資回収率（ROI）が低く、カスタマーエクスペリエンスがパッとしない。 | リッチメディアエクスペリエンスからコンバージョンと投資回収率を促進します。 |
 
 ## Dynamic Media システムでのアセットのフロー {#dm-journey-c}
@@ -262,7 +262,7 @@ _選択した「Large」画像プリセットに基づくアセットのレン�
 ![ZoomVertical_light ビューアプリセットに基づくアセットのプレビュー](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _選択した「ZoomVertical_light」ビューアプリセットに基づくアセットのプレビュー。画像上でマウスポインター（「`+`」）を移動してズームインしました。「URL」ボタンと「埋め込み」ボタンに注目してください。_
 
-上記の レンディション は実際のものです。[試してみる](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}。
+上記の レンディション は実際のものです。[試してみる](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&config=jpearldemo/ZoomVertical_light){target="_blank"}。
 
 ## オプション - 詳細情報
 
@@ -285,7 +285,7 @@ _Dynamic Media Help topics_
 _Dynamic Media チュートリアル_
 
 * [Experience Manager Assets での Dynamic Media の使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=pt-BR)
-* [Adobe Experience Manager コンテンツライブラリ](https://experienceleague.adobe.com/ja?lang=ja#recommended/solutions/experience-manager)（_Dynamic Media_ で検索）
+* [Adobe Experience Manager コンテンツライブラリ](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/experience-manager)（_Dynamic Media_ で検索）
 
 _Dynamic Media ビューア_
 

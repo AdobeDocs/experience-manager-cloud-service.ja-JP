@@ -3,9 +3,9 @@ title: AEM Forms の Edge Delivery Services の基本を学ぶ - 開発者向け
 description: このチュートリアルは、新しい Adobe Experience Manager Forms（AEM）プロジェクトを起動および実行するのに役立ちます。 10～20 分で、独自のフォームが作成されます。
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
-role: Admin, Architect, Developer
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 100%
 
@@ -256,7 +256,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
 
 アダプティブフォームブロックの `blocks/form` フォルダーは、フォームのスタイル設定とコードのプレイグラウンドです。 このディレクトリ内の `.css` または `.js` ファイルを編集すると、変更がブラウザーに即座に反映されることがわかります。
 
-成果を公開る準備は整いましたか？ Git を使用して変更をコミットし、プッシュします。 これにより、次の URL からアクセスできるプレビュー環境と実稼動環境が更新されます（プレースホルダーをプロジェクトの詳細に置き換えます）。
+成果を公開る準備は整いましたか？ Git を使用して変更をコミットし、プッシュします。 これにより、次の URL からアクセスできるプレビュー環境と本番環境が更新されます（プレースホルダーをプロジェクトの詳細に置き換えます）。
 
 プレビュー環境：`https://<branch>--<repo>--<owner>.aem.page/`
 実稼動環境：`https://<branch>--<repo>--<owner>.aem.live/`

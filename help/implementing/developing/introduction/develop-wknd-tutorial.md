@@ -3,9 +3,9 @@ title: AEM Sites の開発の手引き - WKND チュートリアル
 description: AEM の開発が初めての方や、最新のベストプラクティスの情報が必要な方は、まず、このチュートリアルを試してください。この複数のパートで構成されているチュートリアルでは、AEM を初めて利用する開発者に対して、最新の標準と技術を使用して AEM で Web サイトを実装する方法を教えることを目的としています。
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 recommendations: noDisplay, noCatalog
-source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 100%

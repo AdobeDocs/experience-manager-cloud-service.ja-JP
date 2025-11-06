@@ -4,8 +4,8 @@ description: カスタムコードの品質を確保するためにCloud Manager
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 62%
@@ -25,7 +25,7 @@ Cloud Manager の Cloud Services パイプラインでサポートされるテ�
 
 1. [機能テスト](/help/implementing/cloud-manager/functional-testing.md)
 
-   * 機能テストは、[&#x200B; 実稼動パイプライン &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) のステージテスト段階で実行されます。 また、必要に応じて、（実稼動以外のパイプライン [&#x200B; のテスト段階で実行するこ &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) もできます。
+   * 機能テストは、[ 実稼動パイプライン ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) のステージテスト段階で実行されます。 また、必要に応じて、（実稼動以外のパイプライン [ のテスト段階で実行するこ ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) もできます。
 
 1. [エクスペリエンス監査テスト](/help/implementing/cloud-manager/reports/report-experience-audit.md)
 

@@ -2,10 +2,10 @@
 title: SPA エディターの廃止
 description: SPA エディターは、アドビで引き続きサポートしますが、プロジェクトに対するその廃止の意味と、今後のプロジェクトに対して使用できるオプションについて説明します。
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 100%
 

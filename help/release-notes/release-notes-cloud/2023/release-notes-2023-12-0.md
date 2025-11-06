@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.12.0 リ
 exl-id: b36add58-a2ba-4299-94be-e0026e9c553c
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 72%
@@ -27,7 +27,7 @@ ht-degree: 72%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.12.0）のリリース日は、2023年12月14日（PT）です。次回の機能リリース（2024.1.0）は 2023年1月25日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.12.0）の公開日は 2023年12月14日（PT）です。次回の機能リリース（2024.1.0）は 2023年1月25日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -47,7 +47,7 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### 早期導入プログラム {#sites-early-adopter}
 
-**運用上のテレメトリサービス [&#x200B; を利用して、AEM as a Cloud Serviceのクライアントサイド収集を有効にすることもできます](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**。
+**運用上のテレメトリサービス [ を利用して、AEM as a Cloud Serviceのクライアントサイド収集を有効にすることもできます](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**。
 
 運用上のテレメトリデータサービスは、ユーザーのインタラクションをより正確に反映し、web サイトエンゲージメントの信頼性の高い測定を保証します。 ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
 
@@ -107,7 +107,8 @@ Adobe Firefly のテキストから画像生成機能を統合して、検索ク
 
 ### ドメインマッピング早期導入プログラム {#cdn-config-early-adopter}
 
-オプションでライセンス利用可能な Web Application Firewall （WAF）ルールを含む、最近リリースされた [&#x200B; トラフィックフィルタールール &#x200B;](/help/security/traffic-filter-rules-including-waf.md) に加えて、設定パイプラインを使用して、他のタイプの CDN 設定を宣言およびデプロイすることもできます。 次のようなユースケースについてお聞かせください。
+オプションでライセンス利用可能な Web Application Firewall （WAF）ルールを含む、最近リリースされた [ トラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md) に加えて、設定パイプラインを使用して、他のタイプの CDN 設定を宣言およびデプロイすることもできます。 次のようなユースケースについてお聞かせください。
+
 * 301/302 クライアントサイドのリダイレクト
 * 任意の接触チャネルに対するエッジでのリクエストのプロキシ処理
 * URL 変換
@@ -116,7 +117,7 @@ Adobe Firefly のテキストから画像生成機能を統合して、検索ク
 * ユーザー名/パスワードによる認証
 * その他の便利な CDN 設定
 
-公式メール ID からフィードバックを記載したメールを **0&rbrace;aemcs-cdn-config-adopter@adobe.com&rbrace; に送信します。**
+公式メール ID からフィードバックを記載したメールを **0}aemcs-cdn-config-adopter@adobe.com} に送信します。**
 
 ## Cloud Manager {#cloud-manager}
 

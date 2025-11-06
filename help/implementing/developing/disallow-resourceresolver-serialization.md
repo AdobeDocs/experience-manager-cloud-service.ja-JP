@@ -3,9 +3,9 @@ title: Sling Model Exporter による ResourceResolvers のシリアル化を許
 description: Sling Model Exporter による ResourceResolvers のシリアル化を許可しない
 exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%
 

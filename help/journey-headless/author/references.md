@@ -4,8 +4,8 @@ description: コンテンツ、他のフラグメントおよび他のアセッ�
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 100%

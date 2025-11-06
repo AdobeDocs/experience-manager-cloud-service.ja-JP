@@ -4,10 +4,10 @@ description: 様々なアセット管理および編集方法について
 contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
-role: User, Architect, Admin
+role: User, Developer, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '4277'
 ht-degree: 100%
 
@@ -59,10 +59,10 @@ ZIP ファイルを抽出するには、次の手順を実行します。
 
    ![ZIP 抽出](assets/zip-extraction.png)
 
->[!NOTE]
->
->* サポートされる ZIP ファイルの最大サイズは 15 GB です。
->* 一度に抽出できる ZIP ファイルは最大 3 つです。
+   >[!NOTE]
+   >
+   >* サポートされる ZIP ファイルの最大サイズは 15 GB です。
+   >* 一度に抽出できる ZIP ファイルは最大 3 つです。
 
 ## アセットのプレビュー {#previewing-assets}
 
@@ -70,7 +70,6 @@ ZIP ファイルを抽出するには、次の手順を実行します。
 
 1. Assets ユーザーインターフェイスで、プレビューするアセットの場所に移動します。
 1. 目的のアセットを選択して開きます。
-
 1. プレビューモードでは、[サポートされている画像タイプ](/help/assets/file-format-support.md)で（インタラクティブ編集中に）ズームオプションを使用できます。
 
    アセットを拡大するには、`+` を選択（またはアセット上の虫眼鏡を選択）します。縮小するには、`-` を選択します。ズームインすると、パンニングによって画像の任意の場所を詳細に確認できます。「ズームをリセット」矢印をクリックすると、元の表示に戻ります。
@@ -80,7 +79,6 @@ ZIP ファイルを抽出するには、次の手順を実行します。
 ## プロパティの編集 {#editing-properties}
 
 1. メタデータを編集するアセットの場所に移動します。
-
 1. アセットを選択し、ツールバーの「**[!UICONTROL プロパティ]**」を選択して、アセットのプロパティを表示します。または、アセットカードで **[!UICONTROL プロパティ]** クイックアクションを選択します。
 
    ![properties_quickaction](assets/properties_quickaction.png)
@@ -97,17 +95,17 @@ ZIP ファイルを抽出するには、次の手順を実行します。
 
 1. 特定の期間の後にアセットのアクティベートを解除するには、「**[!UICONTROL オフタイム]**」フィールドの横にある日付選択を使用して、アクティベートを解除する日付と時間を選択します。アクティベートを解除する日付は、アセットに設定されたアクティベート日より後の日付にしてください。[!UICONTROL オフタイム]の経過後、アセットとそのレンディションは、Assets Web インターフェイスでも HTTP API でも使用できません。
 
-   <!--![chlimage_1-218](assets/chlimage_1-218.png)
+   <!--![chlimage_1-218](assets/chlimage_1-218.png)-->
+
 1. 「**[!UICONTROL タグ]**」フィールドで、タグを 1 つ以上選択します。カスタムタグを追加するには、ボックスにタグの名前を入力し、`Enter` キーを押します。新しいタグが [!DNL Experience Manager] に保存されます。
 
    YouTube で公開して YouTube へのリンクを張る（適切なリンクがある場合）には、タグが必要です。
 
    >[!NOTE]
    >
-   > タグを作成するには、CRX リポジトリーの `/content/cq:tags/default` パスでの書き込み権限が必要です。
+   >タグを作成するには、CRX リポジトリーの `/content/cq:tags/default` パスでの書き込み権限が必要です。
 
 1. 「**[!UICONTROL 保存して閉じる]**」を選択します。
-
 1. Assets ユーザーインターフェイスに移動します。編集済みのメタデータのプロパティ（タイトル、説明、タグなど）は、カード表示のアセットカードまたはリスト表示の関連する列に表示されます。
 
 <!-- TBD: Uncomment after verification for Dec release.

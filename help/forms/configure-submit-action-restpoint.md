@@ -5,10 +5,10 @@ keywords: AEM Forms REST エンドポイント、REST エンドポイントへ�
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1471'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -114,13 +114,13 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
    **[!UICONTROL POST リクエストを有効にする]**&#x200B;ことで、リクエストを POST する URL を指定することもできます。フォームをホストする AEM サーバーにデータを送信するには、AEM サーバーのルートパスに対応する相対パスを使用します。例えば、`/content/forms/af/SampleForm.html` のようになります。他のサーバーにデータを送信するには、絶対パスを使用します。
 
-+++
+   +++
 
    +++設定
 
    このオプションを使用すると、AEM の設定ブラウザー経由で管理される事前定義済みの HTTP 設定を追加できます。サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。認証タイプとコンテンツタイプについて詳しくは、[データソースの設定](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)を参照してください。
 
-+++
+   +++
 
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
@@ -129,12 +129,15 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 ユニバーサルエディターでオーサリングされたアダプティブフォームの Swagger Open API 仕様に基づいて送信アクションを設定するには：
 
 1. アダプティブフォームを編集用に開きます。
-1. エディターで&#x200B;**フォームプロパティを編集**拡張機能をクリックします。
-**フォームプロパティ**&#x200B;ダイアログが表示されます。
+1. エディターで **フォームプロパティを編集** 拡張機能をクリックします。
+
+   **フォームプロパティ**&#x200B;ダイアログが表示されます。
+
    >[!NOTE]
    >
    > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Manager で&#x200B;**フォームプロパティを編集**&#x200B;拡張機能を有効にします。
    > * ユニバーサルエディターで拡張機能を有効または無効にする方法については、[Extension Manager 機能のハイライト](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)の記事を参照してください。
+
 1. 「**送信**」タブをクリックし、「**[!UICONTROL REST エンドポイントに送信]**」送信アクションを選択します。
 
    内部サーバーにデータを POST 送信するには、リソースのパスを指定します。データは、リソースのパスに POST されます。例えば、`/content/restEndPoint` のようになります。このような POST リクエストには、送信リクエストの認証情報が使用されます。
@@ -171,13 +174,13 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
    **[!UICONTROL POST リクエストを有効にする]**&#x200B;ことで、リクエストを POST する URL を指定することもできます。フォームをホストする AEM サーバーにデータを送信するには、AEM サーバーのルートパスに対応する相対パスを使用します。例えば、`/content/forms/af/SampleForm.html` のようになります。他のサーバーにデータを送信するには、絶対パスを使用します。
 
-+++
+   +++
 
    +++設定
 
    このオプションを使用すると、AEM の設定ブラウザー経由で管理される事前定義済みの HTTP 設定を追加できます。サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。認証タイプとコンテンツタイプについて詳しくは、[データソースの設定](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)を参照してください
 
-+++
+   +++
 
 1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。
 

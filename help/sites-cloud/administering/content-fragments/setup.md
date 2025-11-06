@@ -2,10 +2,10 @@
 title: コンテンツフラグメント - 設定
 description: コンテンツフラグメントと GraphQL、AEM ヘッドレス配信機能およびページオーサリングで使用する機能を有効にする方法について説明します。
 feature: Content Fragments
-role: Developer, Architect
+role: Developer
 exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 100%

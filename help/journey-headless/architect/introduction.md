@@ -4,8 +4,8 @@ description: Adobe Experience Manager as a Cloud Service as a Headless CMS の�
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 ## 目的 {#objective}
 
-* **対象読者**：初心者
+* **オーディエンス**：初心者
 * **目的**：ヘッドレスコンテンツモデリングに関係のある概念と用語を紹介します。
 
 ## フルスタックコンテンツ配信 {#full-stack}

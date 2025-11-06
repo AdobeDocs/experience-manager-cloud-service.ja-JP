@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service で GraphQL クエリ�
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1952'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 >
 >永続クエリをお勧めします。詳しくは、[GraphQL クエリのベストプラクティス（Dispatcher）](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices)と、関連する Dispatcher の設定を参照してください。
 
-AEM では [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) を使用して、[実稼動環境に移行](#transfer-persisted-query-production)する前に GraphQL クエリを開発、テストおよび永続化できます。カスタマイズが必要な場合（例えば、[キャッシュをカスタマイズする](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)場合）、API を使用できます。[GraphQL クエリを永続化する方法](#how-to-persist-query)で示される cURL の例を参照してください。
+AEM では [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) を使用して、[本番環境に移行](#transfer-persisted-query-production)する前に GraphQL クエリを開発、テストおよび永続化できます。カスタマイズが必要な場合（例えば、[キャッシュをカスタマイズする](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)場合）、API を使用できます。[GraphQL クエリを永続化する方法](#how-to-persist-query)で示される cURL の例を参照してください。
 
 ## 永続的なクエリとエンドポイント {#persisted-queries-and-endpoints}
 
@@ -220,7 +220,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 ## クエリ変数の使用 {#query-variables}
 
-クエリ変数は、永続クエリで使用できます。クエリ変数をリクエストに付加するには、先頭にセミコロン（`;`）を付けた変数名と値を使用します。複数の変数はセミコロンで区切ります。
+クエリ変数は、永続クエリで使用できます。クエリ変数をリクエストに付加するには、接頭辞としてセミコロン（`;`）を付けた変数名と値を使用します。複数の変数はセミコロンで区切ります。
 
 次のようなパターンになります。
 
@@ -279,8 +279,10 @@ Dispatcher の `CACHE_GRAPHQL_PERSISTED_QUERIES` が有効な場合、値に `/`
 この結果、Dispatcher は元の URL を AEM に転送するように指示されるので、エンコーディングが重複しないようになります。
 ただし、この設定は、現在、`vhost` レベルでのみ機能するので、URL を書き換える Dispatcher 設定が既にある場合（例えば、短縮 URL を使用する場合など）は、永続クエリ URL 用に別個の `vhost` が必要になることがあります。
 
-   * `/` 文字または `\` 文字をエンコードせずに送信します。
-永続クエリ URL を呼び出す場合は、永続クエリ変数の値の中ですべての `/` 文字または `\` 文字がエンコードされないままになっていることを確認します。
+   * エンコードされていない `/` または `\` 文字を送信します。
+
+     永続クエリ URL を呼び出す場合は、永続クエリ変数の値の中ですべての `/` 文字または `\` 文字がエンコードされないままになっていることを確認します。
+
      >[!NOTE]
      >
      >このオプションは、何らかの理由で `DispatcherNoCanonURL` による解決策を実装できない場合にのみお勧めします。
@@ -465,7 +467,7 @@ URL は次の部分に分解できます。
 
 クライアントアプリで永続クエリを使用するには、AEM ヘッドレス クライアント SDK を [JavaScript](https://github.com/adobe/aem-headless-client-js)、[Java](https://github.com/adobe/aem-headless-client-java) または [NodeJS](https://github.com/adobe/aem-headless-client-nodejs) に使用する必要があります。ヘッドレスクライアント SDK は、自動的にリクエスト内のクエリ変数を適切にエンコードします。
 
-## 実稼動環境への永続クエリの移行  {#transfer-persisted-query-production}
+## 本番環境への永続クエリの移行  {#transfer-persisted-query-production}
 
 永続クエリは、常に、AEM オーサーサービスで作成してから、AEM パブリッシュサービスに公開（レプリケート）する必要があります。多くの場合、永続クエリは、ローカル環境や開発環境などの下位環境で作成およびテストされます。その後、永続クエリを上位レベルの環境に昇格し、最終的に実稼動 AEM パブリッシュ環境で使用できるようにして、クライアントアプリケーションが使用できるようにする必要があります。
 

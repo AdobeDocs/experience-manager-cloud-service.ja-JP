@@ -3,8 +3,8 @@ title: コンポーネントの概要
 description: コンポーネントは、特定の機能を実現し、Web サイトにコンテンツを提供するためのモジュールユニットです。
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 100%

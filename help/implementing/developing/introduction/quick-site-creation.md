@@ -3,9 +3,9 @@ title: サイトのクイック作成とフロントエンドのカスタマイ�
 description: クイックサイト作成ツールでサイトテンプレート、テーマ、フロントエンドパイプラインを使用して、新しいサイトの迅速なデプロイを可能にし、フロントエンド開発を切り離す方法を説明します。
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 recommendations: noDisplay, noCatalog
-source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 100%

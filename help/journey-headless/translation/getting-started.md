@@ -4,8 +4,8 @@ description: ヘッドレスコンテンツを整理する方法と AEM の翻�
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 66cd28d43c56f2e8fc44674175aa9b70b7a72ed1
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 95%
@@ -84,7 +84,7 @@ AEM のコンテンツは、ヘッドレスであろうと従来の web ペー�
 1. コンテンツフラグメント コンソールに移動し、「コンテンツフラグメントモデル」タブを選択します。
 1. コンテンツフラグメントモデルは通常、フォルダー構造で保存されます。プロジェクトのフォルダーを選択します。
 1. モデルが一覧表示されます。モデルを選択し、エディターを開きます。
-1. **コンテンツフラグメントモデルエディター**&#x200B;が開きます。
+1. **コンテンツフラグメントモデルエディター**が開きます。
    ![コンテンツフラグメントモデルエディター](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
    * 左側のパネルには、可能なデータタイプが一覧表示されます。

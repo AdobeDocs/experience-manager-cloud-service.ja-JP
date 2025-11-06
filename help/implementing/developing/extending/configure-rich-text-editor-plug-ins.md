@@ -5,11 +5,11 @@ contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '4303'
-ht-degree: 100%
+source-wordcount: '4302'
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 100%
       * 代替の設定ノード：`.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
 
-   * 型：**jcr:primaryType** `cq:Widget`
+   * **jcr:primaryType** `cq:Widget` タイプです。
    * いずれも以下のプロパティを持ちます。
 
       * **名前** `name`
@@ -160,7 +160,7 @@ Microsoft Word として貼り付け（`paste-wordhtml`）モードをさらに�
 
 1. その他の様々なプロパティやノードを使用して、その他の書式も定義でき、`htmlPasteRules` ノードに適用できます。
 
-| Property | 型 | 説明 |
+| Property | タイプ | 説明 |
 |--- |--- |--- |
 | `allowBlockTags` | `String` | 使用可能なブロックタグのリストを定義します。ヘッドライン（h1、h2、h3）、段落（p）、リスト（ol、ul）、テーブル（table）など、使用できるブロックタグがいくつかあります。 |
 | `fallbackBlockTag` | `String` | `allowBlockTags` に含まれていないブロックタグを含むブロックに使用されるブロックタグを定義します。通常は `p` で十分です。 |
@@ -455,12 +455,10 @@ CRXDE でプロパティを保存すると、HTML 表現された文字が表示
 1. このノード（特殊文字の範囲に従って命名）の下に、次の 2 つのプロパティを追加します。
 
    * **名前** `rangeStart`
-
      **型** `Long`
      **値** 範囲内の最初の文字の [Unicode](https://unicode.org/) 表現（10 進数）
 
    * **名前** `rangeEnd`
-
      **型** `Long`
      **値** 範囲内の最後の文字の [Unicode](https://unicode.org/) 表現（10 進数）
 
@@ -500,8 +498,8 @@ CRXDE でプロパティを保存すると、HTML 表現された文字が表示
    >* **型** `String[]`
    >
    >* **値** 必要に応じて、以下のいずれかまたは両方：
-   >* `table`：スタイルを含むテーブルのプロパティの編集を許可する場合。
-   >* `cellprops`：スタイルを含むセルのプロパティの編集を許可する場合。
+   >   * `table`：スタイルを含むテーブルのプロパティの編集を許可する場合。
+   >   * `cellprops`：スタイルを含むセルのプロパティの編集を許可する場合。
 
 1. それらを参照する CSS スタイルシートの場所を定義します。これは、[テキストのスタイル](#textstyles)を定義する場合と同じなので、[スタイルシートの場所の指定](#locationofstylesheet)を参照してください。他のスタイルを定義済みであれば、場所は定義されている可能性があります。
 1. `table` ノードの下に、必要に応じて次のノードを作成します。

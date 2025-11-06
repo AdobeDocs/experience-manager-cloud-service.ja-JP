@@ -3,9 +3,9 @@ title: 独自のユニバーサルエディターサービスの実行
 description: ローカル開発用または独自のインフラストラクチャの一部として、独自のユニバーサルエディターサービスを実行する方法について説明します。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 5435f776e38abf5245c58985e747ce05443f3c2a
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 100%
 
@@ -142,7 +142,7 @@ Universal Editor Service listening on port 8000 as HTTPS Server
 <meta name="urn:adobe:aue:config:service" content="https://localhost:8000">
 ```
 
-設定が完了すると、コンテンツ更新呼び出しがデフォルトのデフォルトのではなく、`https://localhost:8000` に移動するのを確認できます。
+設定が完了すると、コンテンツ更新呼び出しがデフォルトのユニバーサルエディターサービスではなく、`https://localhost:8000` に移動するのを確認できます。
 
 >[!NOTE]
 >

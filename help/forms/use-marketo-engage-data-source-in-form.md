@@ -5,7 +5,7 @@ keywords: アダプティブFormsでのMarketo Engage データソースの使�
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 14%
@@ -20,13 +20,13 @@ ht-degree: 14%
 
 Marketo Engageを既存のAEM Formsと統合するためのクラウドサービス設定を作成したら、フォームのデータソースを設定できます。
 
-データ統合を設定すると、ユーザーは様々なデータソースやスキーマに接続できます。 Marketo Engage データソースと統合し、異なるフォームで使用すると、そのデータに対する操作が容易になります。 アダプティブフォームでサポートされる標準提供データソースを調べるには、[&#x200B; データソースの設定 &#x200B;](/help/forms/configure-data-sources.md) の記事を参照してください。
+データ統合を設定すると、ユーザーは様々なデータソースやスキーマに接続できます。 Marketo Engage データソースと統合し、異なるフォームで使用すると、そのデータに対する操作が容易になります。 アダプティブフォームでサポートされる標準提供データソースを調べるには、[ データソースの設定 ](/help/forms/configure-data-sources.md) の記事を参照してください。
 
 ## フォームにMarketo Engage データソースを使用するための前提条件
 
 フォームでMarketo Engage データソースを使用するための前提条件は次のとおりです。
 
-* Marketo Engageを forms[&#x200B; と統合するための &#x200B;](/help/forms/integrate-form-to-marketo-engage.md) クラウドサービス設定を作成します。
+* Marketo Engageを forms[ と統合するための ](/help/forms/integrate-form-to-marketo-engage.md) クラウドサービス設定を作成します。
 
 ## 既存のアダプティブフォームをMarketo Engage データソース用に設定する方法
 
@@ -45,7 +45,7 @@ Marketo Engage データソースを使用して基盤コンポーネントに�
 1. ドロップダウンリストから **[!UICONTROL コネクタ]** を選択します。
 1. **[!UICONTROL コネクタ]** を選択したら、クラウド設定を選択できます。
 
-   ![Marketo コネクタの選択 &#x200B;](/help/forms/assets/select-marketo-connector-af1.png){width=50%, height=50%}
+   ![Marketo コネクタの選択 ](/help/forms/assets/select-marketo-connector-af1.png){width=50%, height=50%}
 
    選択したMarketo Engage設定に基づいて、フォーム要素がサイドバーの **[!UICONTROL コンテンツブラウザー]** の **[!UICONTROL データモデルオブジェクト]** タブに表示されます。 これらの要素をドラッグ&amp;ドロップして、アダプティブフォームを作成できます。
 
@@ -71,7 +71,7 @@ Marketo Engage データソースを使用して基盤コンポーネントに�
 
 1. **[!UICONTROL コネクタ]** を選択したら、クラウド設定を選択できます。
 
-   ![Marketo コネクタの選択 &#x200B;](/help/forms/assets/select-marketo-connector.png){width=50%, height=50%}
+   ![Marketo コネクタの選択 ](/help/forms/assets/select-marketo-connector.png){width=50%, height=50%}
 
    選択したMarketo Engage設定に基づいて、フォーム要素がサイドバーの **[!UICONTROL コンテンツブラウザー]** の **[!UICONTROL データモデルオブジェクト]** タブに表示されます。 これらの要素をドラッグ&amp;ドロップして、アダプティブフォームを作成できます。
 
@@ -92,7 +92,7 @@ Marketo Engage データソースを使用して基盤コンポーネントに�
 1. **フォームモデル** から **[!UICONTROL コネクタ]** を選択します。
 1. **[!UICONTROL コネクタ]** を選択したら、クラウド設定を選択できます。
 
-   ![Marketo コネクタの選択 &#x200B;](/help/forms/assets/select-marketo-connector-ue.png)
+   ![Marketo コネクタの選択 ](/help/forms/assets/select-marketo-connector-ue.png)
 
 1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
@@ -109,15 +109,17 @@ Marketo Engage データソースを使用して基盤コンポーネントに�
 **Q：フォームのコネクタを変更するとどうなりますか？**\
 **A:** フォームのコネクタを変更すると、既存の連結が無効になります。
 
-**Q:Marketo Engageと統合されたフォームのルールエディターの呼び出しサービスで使用できる 3 つの操作を教えてください。**\
+**Q:Marketo Engageと統合されたフォームのルールエディターの呼び出しサービスで使用できる 3 つの操作を教えてください。**
+
 **A:** Marketo Engageと統合されたフォームの場合、**サービスの呼び出し** で使用できる 3 つの標準の操作は次のとおりです。
+
 * リードを同期
 * リードを ID で取得
 * フィルタータイプでリードを取得
 
 ## 次の手順
 
-これで、アダプティブForms用のMarketo Engage データソースを設定しました。 次に、[&#x200B; アダプティブフォームを設定して、Marketo Engageにデータを送信する &#x200B;](/help/forms/submit-adaptive-form-to-marketo-engage.md) ことができます。
+これで、アダプティブForms用のMarketo Engage データソースを設定しました。 次に、[ アダプティブフォームを設定して、Marketo Engageにデータを送信する ](/help/forms/submit-adaptive-form-to-marketo-engage.md) ことができます。
 
 ## 関連記事
 

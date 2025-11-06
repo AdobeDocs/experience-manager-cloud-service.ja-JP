@@ -5,8 +5,8 @@ contentOwner: AG
 feature: Asset Management, Best Practices
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 100%
 
@@ -100,7 +100,7 @@ Date24/08/2021
 
 * [アセットメタデータの編集](meta-edit.md)
 * [アセットのスマートタグ](smart-tags.md)
-* [検索パネルへのタグの述語の追加](/help/assets/search-facets.md/#adding-a-tags-predicate)
+* [検索パネルへのタグの述語の追加](/help/assets/search-facets.md#adding-a-tags-predicate)
 
 ## コレクションとして整理する {#organize-as-collections}
 

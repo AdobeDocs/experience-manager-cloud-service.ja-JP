@@ -4,12 +4,12 @@ description: ビジネス価値からアーキテクチャーに至るまで、A
 version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
-role: Developer, Architect
+role: Developer
 level: Beginner
 kt: 9452, 9464, 9465, 9466
 thumbnail: 339158.jpg
 exl-id: c6fc96a0-ff95-4fb9-8674-71e60d23ef5c
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 100%
@@ -22,22 +22,22 @@ ht-degree: 100%
 
 App Builder の機能とビジネス価値について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/342925/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/339158/?quality=12&learn=on)
 
 ## タッチポイント
 
 エンドユーザーによる App Builder SPA の操作方法と、App Builder の開発に関する学習リソースについて説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/342918/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/339159/?quality=12&learn=on)
 
 ## アーキテクチャ
 
 App Builder のアーキテクチャーとその利点について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/342910/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/339160/?quality=12&learn=on)
 
 ## ビジネス価値とユースケース
 
 App Builder のデザイン原則と一般的なユースケースについて説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/342903/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/339161/?quality=12&learn=on)

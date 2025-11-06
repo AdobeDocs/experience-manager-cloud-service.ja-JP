@@ -4,8 +4,8 @@ description: アダプティブフォームコアコンポーネント用のレ�
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 100%
 
@@ -338,13 +338,14 @@ When you select a form model, configure Document of Record using options availab
 
       * **データモデルにバインドしていないフォームオブジェクトを含める**：このプロパティを設定すると、レコードのドキュメント内のスキーマベースのアダプティブフォームからバインドされていないフィールドが、レコードのドキュメントに追加されます。
 
-      <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
+        <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
 
       * **パネルの説明を非表示**：このプロパティを設定すると、レコードのドキュメントからパネルやテーブルの説明が除外されます。パネルとテーブルに対して適用可能です。
 
 
 
    1. **フォームフィールドのプロパティ**:
+
       * **チェックボックスおよびラジオボタンのコンポーネントには、選択した値のみを表示**：このプロパティを設定すると、チェックボックスとラジオボタンの選択された値のみが[!UICONTROL レコードのドキュメント]に表示されます。
       * **複数の値の区切り記号**：複数の値を表示する場合は、カンマや改行などの任意の区切り記号を選択できます。
       * **オプションの位置揃え**：目的の整列（水平、垂直、アダプティブフォームと同じ）を選択して、[!UICONTROL レコードのドキュメント]に表示するチェックボックスやラジオボタンなどのフィールドの整列を設定することができます。デフォルトでは、垂直揃えが[!UICONTROL レコードのドキュメント]のフィールドに設定されています。DoR の[!UICONTROL フォームフィールドのプロパティ]からプロパティを設定すると、アダプティブフォームのフィールドの[!UICONTROL 項目の整列]で設定されたプロパティが上書きされます。例えば「[!UICONTROL アダプティブフォームと同じ]」オプションを使用する場合は、アダプティブフォームのオーサーインスタンスで設定された整列が[!UICONTROL レコードのドキュメント]のフィールドに使用されます。
@@ -353,6 +354,7 @@ When you select a form model, configure Document of Record using options availab
 
 
    1. **マスターページのプロパティ**:
+
       * **ロゴイメージ**：アダプティブフォームのロゴイメージを使用するか、DAM から選択するか、またはコンピューターからアップロードすることができます。
       * **フォームのタイトル**：DoR のタイトル。
       * **ヘッダーテキスト**：レコードのドキュメントのヘッダーセクションに表示されるテキスト。
@@ -362,21 +364,21 @@ When you select a form model, configure Document of Record using options availab
 
       ![マスターページのプロパティ](/help/forms/assets/dorpropertiesimg.png)
 
-   >[!NOTE]
-   >
-   >バージョン 6.3 より前の Forms Designer で作成されたアダプティブフォームテンプレートを使用している場合、アクセントカラーおよびフォントファミリーのプロパティを適用するには、ルートサブフォームの下にあるアダプティブフォームテンプレートに以下が存在することを確認してください。
+      >[!NOTE]
+      >
+      >バージョン 6.3 より前の Forms Designer で作成されたアダプティブフォームテンプレートを使用している場合、アクセントカラーおよびフォントファミリーのプロパティを適用するには、ルートサブフォームの下にあるアダプティブフォームテンプレートに以下が存在することを確認してください。
 
-   ```xml
-   <proto>
-   <font typeface="Arial"/>
-   <fill>
-   <color value="4,166,203"/>
-   </fill>
-   <edge>
-   <color value="4,166,203"/>
-   </edge>
-   </proto>
-   ```
+      ```xml
+      <proto>
+      <font typeface="Arial"/>
+      <fill>
+      <color value="4,166,203"/>
+      </fill>
+      <edge>
+      <color value="4,166,203"/>
+      </edge>
+      </proto>
+      ```
 
 1. ブランディングの変更内容を保存するには、「**[!UICONTROL 完了]**」を選択します。
 

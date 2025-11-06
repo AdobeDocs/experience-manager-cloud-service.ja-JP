@@ -5,8 +5,8 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 369f0be002413d164911515349b3e25d33eb8b2f
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 100%
 
@@ -33,6 +33,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 >[!NOTE]
 >
 >**コンテンツフラグメント**&#x200B;と&#x200B;**[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)**&#x200B;は、AEM 内の異なる機能です。
+>
 >* **コンテンツフラグメント**&#x200B;は、定義と構造を備えたエディトリアルコンテンツですが、視覚的なデザインやレイアウトは追加されていません。コンテンツフラグメントを使用すれば、テキスト、数値、日付などの構造化データにアクセスできます。
 >* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、web ページのフラグメントです。
 >
@@ -88,7 +89,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 >[!NOTE]
 >
->[コンテンツフラグメントコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja)も参照してください。
+>[コアコンポーネント、コンテンツフラグメントコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja)も参照してください。
 
 適切な設定ダイアログで、次のような使用可能なパラメーターを選択できます。
 
@@ -153,6 +154,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 >* 中間コンポーネントは、フラグメントフロー内のコンポーネントのシーケンス内で絶対的な位置を持ちます。フラグメント内の段落のコンテンツが変更されても、この位置は変更されません。
 >
 >  中間段落は隣に位置する（フラグメント）段落とコンテキスト関係を持たないので、これにより、相対位置が変更したかのように見せることができます。
+>
 >* 2 つの段落構造が競合する場合を除きます。競合する場合、中間コンテンツは（内部的には存在していますが）表示されません。
 
 ### 関連コンテンツの使用 {#using-associated-content}

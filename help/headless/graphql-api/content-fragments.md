@@ -4,8 +4,8 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 25e566ac2b1e8d59be25c34bd17fff5d28354ffd
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '5984'
 ht-degree: 100%
 
@@ -375,7 +375,7 @@ ID フィールドは、AEM GraphQL で識別子としても使用されます�
 >[!NOTE]
 >
 >**標準メタデータと配列メタデータの違い**：
->>`StringMetadata` と `StringArrayMetadata` はどちらも、リポジトリに格納されているものについての指定であり、その取得手段についての指定ではありません。
+>`StringMetadata` と `StringArrayMetadata` はどちらも、リポジトリに格納されているものについての指定であり、その取得手段についての指定ではありません。
 >
 >例えば、`stringMetadata` フィールドを呼び出すと、リポジトリに `String` として格納されているすべてのメタデータの配列を受け取ることになります。一方、`stringArrayMetadata` を呼び出すと、リポジトリに `String[]` として格納されているすべてのメタデータの配列を受け取ります。
 
@@ -770,6 +770,7 @@ GraphQL のソリューションでは、次のことが可能です。
 >[!NOTE]
 >
 >**コンテンツ参照**&#x200B;は、DAM アセットと Dynamic Media アセットの両方に使用できます。適切な URL の取得には、様々なパラメーターを使用します。
+>
 >* `_dynamicUrl`：DAM アセット
 >* `_dmS7Url`：Dynamic Media アセット
 > 
@@ -784,13 +785,17 @@ GraphQL のソリューションでは、次のことが可能です。
 * `format`：拡張子でサポートされるすべての形式を持つ列挙（GIF、PNG、PNG8、JPG、PJPG、BJPG、WEBP、WEBPLL、WEBPLY）
 * `seoName`：ノード名の代わりにファイル名として使用される文字列
 * `crop`：フレームサブ構造。幅または高さが省略された場合、高さまたは幅が同じ値として使用されます
+
    * `xOrigin`：フレームの x 原点（必須）
    * `yOrigin`：フレームの y 原点（必須）
    * `width`：フレームの幅
    * `height`：フレームの高さ
+
 * `size`：寸法サブ構造。幅または高さが省略された場合、高さまたは幅が同じ値として使用されます
+
    * `width`：寸法の幅
    * `height`：寸法の高さ
+
 * `rotation`：サポートされているすべての回転の列挙（R90、R180、R270）
 * `flip`：HORIZONTAL、VERTICAL、HORIZONTAL_AND_VERTICAL の列挙
 * `quality`：画質の割合を示す 1～100 の整数
@@ -980,6 +985,7 @@ GraphQL のソリューションでは、次のことが可能です。
 ### URL による Dynamic Media アセット配信のサンプルクエリ - 画像参照{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 サンプルクエリを以下に示します。
+
 * `team` と `person` タイプの複数のコンテンツフラグメントの場合、`ImageRef` を返します
 
 ```graphql
@@ -1007,6 +1013,7 @@ query allTeams {
 ### URL による Dynamic Media アセット配信のサンプルクエリ - 複数の参照{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
 
 サンプルクエリを以下に示します。
+
 * `team` と `person` タイプの複数のコンテンツフラグメントの場合、`ImageRef`、`MultimediaRef`、`DocumentRef` を返します。
 
 ```graphql
@@ -1209,10 +1216,11 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
    * 詳しくは、[特定モデルの複数のコンテンツフラグメントとそのバリエーションのサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)を参照してください。
 
   >[!CAUTION]
+  >
   >フィルター `includeVariations` とシステム生成フィールド `_variation` は、同じクエリ定義で一緒に使用することはできません。
 
 * 論理和（OR）を使用する場合：
-   * ` _logOp: OR` を使用します
+   * `_logOp: OR` を使用します
    * [サンプルクエリ - 「Jobs」または「Smith」という名前を持つすべての人物](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)を参照してください
 
 * 論理積（AND）も存在しますが、（多くの場合）暗黙的です

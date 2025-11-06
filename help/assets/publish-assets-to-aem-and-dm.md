@@ -4,10 +4,10 @@ description: ' [!DNL Assets view]  のクイック公開を使用すると、ア
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, [!DNL Dynamic Media]
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -41,19 +41,23 @@ ht-degree: 100%
 
 **[!UICONTROL アクティベーション時]**&#x200B;に [!DNL Dynamic Media Publish Mode] を設定したフォルダーへのアップロード中にアセットを公開するには、次のようにします。
 
-1. **[!UICONTROL アセットを追加]**／**[!UICONTROL 参照]**／**[!UICONTROL ファイルを参照]**&#x200B;をクリックして、アセットをアップロードする適切なフォルダーに移動します。「**[!UICONTROL 公開オプション]**」セクションには、**[!UICONTROL DM 公開モード]**&#x200B;が&#x200B;**[!UICONTROL アクティベーション時]**として表示されます。
+1. **[!UICONTROL アセットを追加]**／**[!UICONTROL 参照]**／**[!UICONTROL ファイルを参照]**&#x200B;をクリックして、アセットをアップロードする適切なフォルダーに移動します。「**[!UICONTROL 公開オプション]**」セクションには、**[!UICONTROL DM 公開モード]**&#x200B;が&#x200B;**[!UICONTROL アクティベーション時]**&#x200B;として表示されます。
+
    ![アクティベーション時のアップロード画像](/help/assets/assets/upload-uactivation.svg)
-2. 「**[!UICONTROL AEM および Dynamic Media に公開]**」を選択し、「**[!UICONTROL アップロード]**」をクリックします。アセットは、[!DNL AEM and Dynamic Media] に同時に公開されます。これらのアセットの更新された公開ステータスを確認する方法について詳しくは、[公開ステータスの確認](#check-publish-status)を参照してください。
+
+1. 「**[!UICONTROL AEM および Dynamic Media に公開]**」を選択し、「**[!UICONTROL アップロード]**」をクリックします。アセットは、[!DNL AEM and Dynamic Media] に同時に公開されます。これらのアセットの更新された公開ステータスを確認する方法について詳しくは、[公開ステータスの確認](#check-publish-status)を参照してください。
 
 ### [!UICONTROL Dynamic Media 公開モード]を[!UICONTROL 即時]設定 {#dynamic-media-publish-mode-set-to-immediate}
 
 [!UICONTROL Dynamic Media 公開モード]を&#x200B;**[!UICONTROL 即時]**&#x200B;設定したフォルダーへのアップロード中にアセットを公開するには、次のようにします。
 
-1. **[!UICONTROL アセットを追加]**／**[!UICONTROL 参照]**／**[!UICONTROL ファイルを参照]**&#x200B;をクリックして、アセットをアップロードする適切なフォルダーに移動します。「**[!UICONTROL 公開オプション]**」セクションには、**[!UICONTROL DM 公開モード]**&#x200B;が&#x200B;**[!UICONTROL 即時]**として表示されます。
-   ![ ファイルのアップロード画像 - 即時モード ](/help/assets/assets/resized-image-pdf-svg-new.svg)
-[!UICONTROL Dynamic Media 公開モード]は&#x200B;**[!UICONTROL 即時]**&#x200B;なので、「**[!UICONTROL アップロード]**」をクリックすると、アップロードしたアセットは自動的に [!DNL Dynamic Media] に公開されます。
+1. **[!UICONTROL アセットを追加]**／**[!UICONTROL 参照]**／**[!UICONTROL ファイルを参照]**&#x200B;をクリックして、アセットをアップロードする適切なフォルダーに移動します。「**[!UICONTROL 公開オプション]**」セクションには、**[!UICONTROL DM 公開モード]**&#x200B;が&#x200B;**[!UICONTROL 即時]**&#x200B;として表示されます。
 
-2. アップロードしたアセットを [!DNL AEM] に公開するには、「**AEM に公開**」を選択し、「**[!UICONTROL アップロード]**」をクリックします。
+   ![ファイルのアップロード画像 - 即時モード](/help/assets/assets/resized-image-pdf-svg-new.svg)
+
+   [!UICONTROL Dynamic Media 公開モード ] が **[!UICONTROL 即時]** の場合、アップロードされたアセットは、「[!DNL Dynamic Media] アップロード **[!UICONTROL 」をクリックすると自動的に]** に公開されます。
+
+1. アップロードしたアセットを [!DNL AEM] に公開するには、「**AEM に公開**」を選択し、「**[!UICONTROL アップロード]**」をクリックします。
 
    「**AEM に公開**」を選択した場合、アセットは [!DNL AEM and Dynamic Media] に公開され、それ以外の場合はアセットは [!DNL Dynamic Media] に公開されます。
 
@@ -63,10 +67,11 @@ ht-degree: 100%
 
 [!UICONTROL Dynamic Media 公開モード]を&#x200B;**[!UICONTROL 選択的公開]**&#x200B;に設定したフォルダーへのアップロード中にアセットを公開するには、次のようにうします。
 
-1. **[!UICONTROL アセットを追加]**／**[!UICONTROL 参照]**／**[!UICONTROL ファイルを参照]**&#x200B;をクリックして、アセットをアップロードする適切なフォルダーに移動します。「**[!UICONTROL 公開オプション]**」セクションには、**[!UICONTROL DM 公開モード]**&#x200B;が&#x200B;**[!UICONTROL 選択的公開]**として表示されます。
-   ![アップロード画像 - 選択的公開モード](/help/assets/assets/upload-selective.svg)
+1. **[!UICONTROL アセットを追加]**／**[!UICONTROL 参照]**／**[!UICONTROL ファイルを参照]**&#x200B;をクリックして、アセットをアップロードする適切なフォルダーに移動します。「**[!UICONTROL 公開オプション]**」セクションには、**[!UICONTROL DM 公開モード]**&#x200B;が&#x200B;**[!UICONTROL 選択的公開]**&#x200B;として表示されます。
 
-2. 要件に応じて「**[!UICONTROL AEM に公開]**」、「**[!UICONTROL Dynamic Media に公開]**」、またはその両方を選択し、「**アップロード**」をクリックします。
+![アップロード画像 - 選択的公開モード](/help/assets/assets/upload-selective.svg)
+
+1. 要件に応じて「**[!UICONTROL AEM に公開]**」、「**[!UICONTROL Dynamic Media に公開]**」、またはその両方を選択し、「**アップロード**」をクリックします。
 
    アセットは、選択に基づいて [!DNL AEM and Dynamic Media] に公開されます。
 
@@ -77,10 +82,13 @@ ht-degree: 100%
 アセットの参照ページを使用してアセットを公開するには：
 
 1. 左側のパネルにある「**[!UICONTROL アセット管理]**」セクションで「**[!UICONTROL アセット]**」をクリックします。
-2. 公開する必要があるアセットまたはフォルダーを 1 つ以上選択し、「**[!UICONTROL 公開]**」をクリックします。
-3. 「**[!UICONTROL AEM]**」を選択し、「**[!UICONTROL 公開]**」をクリックして、アセットを [!DNL AEM and Dynamic Media] に公開します。
+1. 公開する必要があるアセットまたはフォルダーを 1 つ以上選択し、「**[!UICONTROL 公開]**」をクリックします。
+1. 「**[!UICONTROL AEM]**」を選択し、「**[!UICONTROL 公開]**」をクリックして、アセットを [!DNL AEM and Dynamic Media] に公開します。
+
    ![アセットの参照](/help/assets/assets/browse-uactivation-immediate.svg)
-[!DNL Dynamic Media]公開モードが&#x200B;**[!UICONTROL 選択的公開]**&#x200B;に設定されているフォルダーは公開できません。[!DNL AEM] を選択すると、選択した他のすべてのフォルダーまたはアセットは [!DNL AEM and Dynamic Media] に公開されます。
+
+   [!DNL Dynamic Media] 公開モードが **[!UICONTROL 選択的公開]** に設定されているフォルダーは公開できません。 [!DNL AEM] を選択すると、選択した他のすべてのフォルダーまたはアセットは [!DNL AEM and Dynamic Media] に公開されます。
+
    ![アセットの参照](/help/assets/assets/browse-selective123.svg)
 
 ## 検索結果ページを使用したアセットの公開 {#publish-assets-using-search-results-page}
@@ -88,10 +96,13 @@ ht-degree: 100%
 アセットの検索結果ページを使用してアセットを公開するには：
 
 1. 検索バーで条件を指定し、検索アイコンをクリックして結果を表示します。
-2. 公開する必要があるアセットを選択し、「**[!UICONTROL 公開]」をクリックします。**
-3. 要件に応じて、[!DNL AEM, Dynamic Media]、またはその両方を選択し、「**[!UICONTROL 公開]**」をクリックします。
-   ![検索画像](/help/assets/assets/search-mode.svg)
-検索結果ページで [!DNL Dynamic Media] に公開するオプションは、リポジトリ内でアセットが使用可能なフォルダーに設定されている [!DNL Dynamic Media] 公開モードによって異なります。
+1. 公開する必要があるアセットを選択し、「**[!UICONTROL 公開]」をクリックします。**
+1. 要件に応じて、[!DNL AEM, Dynamic Media]、またはその両方を選択し、「**[!UICONTROL 公開]**」をクリックします。
+
+   ![ 検索画像 ](/help/assets/assets/search-mode.svg)
+
+   検索結果ページで [!DNL Dynamic Media] に公開するオプションは、アセットがリポジトリで使用可能なフォルダーで設定された [!DNL Dynamic Media] 公開モードによって異なります。
+
    >[!NOTE]
    >
    >フォルダーを選択し、検索結果ページで「**[!UICONTROL 公開]**」をクリックすると、[!DNL Experience Manager Assets] では、フォルダーの [!DNL Dynamic Media] 公開モードの設定に関係なく、アセットを [!DNL Dynamic Media] ではなく [!DNL AEM] に公開するオプションが表示されます。
@@ -101,12 +112,16 @@ ht-degree: 100%
 アセットまたはフォルダーの公開ステータスを確認するには：
 
 1. 左側のパネルにある「**[!UICONTROL アセット管理]**」セクションで「**[!UICONTROL アセット]**」をクリックします。
-2. 表示切り替えを使用してリスト表示に切り替えます。[!UICONTROL AEM パブリッシュ]、[!UICONTROL Dynamic Media 公開]、[!UICONTROL タイトル]、[!UICONTROL サイズ]、[!UICONTROL ディメンション]などのアセットのプロパティを表示できます。\
-   アセットまたはフォルダーが公開されていない場合、**[!UICONTROL AEM パブリッシュ]**&#x200B;列と **[!UICONTROL Dynamic Media 公開]**&#x200B;列のステータスには&#x200B;**[!UICONTROL 該当なし]**と表示されます。
-   ![公開ステータスの確認 1](/help/assets/assets/check-publish-status1.png)
-リスト表示に [!DNL AEM] パブリッシュ列と [!DNL Dynamic Media] 公開列が表示されない場合は、次の操作を行います。
+1. 表示切り替えを使用してリスト表示に切り替えます。[!UICONTROL AEM パブリッシュ]、[!UICONTROL Dynamic Media 公開]、[!UICONTROL タイトル]、[!UICONTROL サイズ]、[!UICONTROL ディメンション]などのアセットのプロパティを表示できます。
+
+   アセットまたはフォルダーが公開されていない場合、**[!UICONTROL AEM パブリッシュ]**&#x200B;列と **[!UICONTROL Dynamic Media 公開]**&#x200B;列のステータスには&#x200B;**[!UICONTROL 該当なし]**&#x200B;と表示されます。
+
+   ![公開ステータス 1 の確認](/help/assets/assets/check-publish-status1.png)
+
+   リスト表示で「[!DNL AEM] 公開」列と「[!DNL Dynamic Media] 公開」列を表示できない場合は、次のようにします。
+
    1. ![設定](/help/assets/assets/settings-icon.svg) をクリックし、**[!UICONTROL 設定可能な列]**&#x200B;ダイアログから **[!UICONTROL AEM パブリッシュ]**&#x200B;列と **[!UICONTROL Dynamic Media 公開]**&#x200B;列を選択します。
-   2. 「**[!UICONTROL 確認]**」をクリックします。[!DNL Experience Manager Assets] は、選択した列をリスト表示に追加します。
+   1. 「**[!UICONTROL 確認]**」をクリックします。[!DNL Experience Manager Assets] は、選択した列をリスト表示に追加します。
 
       ![公開ステータスの確認 2](/help/assets/assets/check-publish-status2.png)
 

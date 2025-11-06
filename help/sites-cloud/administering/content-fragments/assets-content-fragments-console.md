@@ -2,11 +2,11 @@
 title: コンテンツフラグメントコンソールでのアセットの表示と管理
 description: Adobe Experience Manager as a Cloud Service のコンテンツフラグメントコンソールでアセットを表示および管理する方法について説明します。
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 100%
 

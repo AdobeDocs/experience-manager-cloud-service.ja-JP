@@ -3,9 +3,9 @@ title: ユニバーサルエディター用 SecurBank サンプルアプリ
 description: ユニバーサルエディターの概要と、SecurBank アプリを使用した実践エクスペリエンスについて説明します。このアプリは、コンテンツ作成を高速化するユニバーサルエディターの機能、柔軟性、使いやすさを紹介するように設計されています。
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 100%
 

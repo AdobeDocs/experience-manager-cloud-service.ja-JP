@@ -3,8 +3,8 @@ title: コンテンツフラグメントモデルの作成 - ヘッドレスセ�
 description: コンテンツフラグメントモデルを使用して、AEM のヘッドレス機能を利用して作成および提供するコンテンツの構造を定義します。
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 77%
@@ -41,4 +41,4 @@ ht-degree: 77%
 >コンテンツフラグメントモデルについて詳しくは、以下を参照してください。
 >
 >* [コンテンツフラグメントモデルの管理](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
->* [&#x200B; コンテンツフラグメントモデルの定義 &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+>* [ コンテンツフラグメントモデルの定義 ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

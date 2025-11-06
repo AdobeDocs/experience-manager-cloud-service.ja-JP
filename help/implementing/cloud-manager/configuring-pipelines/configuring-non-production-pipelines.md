@@ -1,12 +1,12 @@
 ---
 title: 実稼動以外のパイプラインの追加
-description: 実稼動環境にデプロイする前にコードの品質をテストするため、実稼動以外のパイプラインを追加する方法について説明します。
+description: 本番環境にデプロイする前にコードの品質をテストするため、本番以外のパイプラインを追加する方法について説明します。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 07ed9bd6d9830bc9120b59cab43f834ef8620709
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1466'
 ht-degree: 80%
@@ -16,13 +16,13 @@ ht-degree: 80%
 
 # 実稼動以外のパイプラインの追加 {#configuring-non-production-pipelines}
 
-実稼動環境にデプロイする前にコードの品質をテストするため、実稼動以外のパイプラインを設定する方法を説明します。
+本番環境にデプロイする前にコードの品質をテストするため、本番以外のパイプラインを設定する方法を説明します。
 
 実稼働パイプラインを設定するには、ユーザーに&#x200B;**[デプロイメントマネージャー](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**&#x200B;の役割が必要です。
 
 ## 実稼動以外のパイプライン {#non-production-pipelines}
 
-ステージング環境と実稼動環境にデプロイする[実稼動パイプライン](#configuring-production-pipelines.md)に加えて、実稼動以外のパイプラインも設定して、コードを検証できます。
+ステージング環境と本番環境にデプロイする[本番パイプライン](#configuring-production-pipelines.md)に加えて、本番以外のパイプラインも設定して、コードを検証できます。
 
 実稼動以外のパイプラインには次の 2 種類があります。
 
@@ -37,9 +37,9 @@ ht-degree: 80%
 
 Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環境を用意したら、次の手順に従って実稼動以外のパイプラインを追加する準備が整います。
 
-1. [experience.adobe.com](https://experience.adobe.com) でCloud Managerにログインします。
+1. [experiece.adobe.com](https://experience.adobe.com) で Cloud Manager にログインします。
 1. 「**クイックアクセス**」セクションで、「**Experience Manager**」をクリックします。
-1. 左側のパネルで、「**Cloud Manager**」をクリックします。
+1. 左側のサイドパネルで、「**Cloud Manager**」をクリックします。
 1. 必要な組織を選択します。
 1. **マイプログラム** コンソールで、プログラムをクリックします。
 
@@ -118,10 +118,10 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
 ターゲットデプロイメントは、AEM アプリケーションの選択した部分のコードのみをデプロイします。このようなデプロイメントでは、次のいずれかのタイプのコードを&#x200B;**含む**&#x200B;よう選択できます。
 
 * **設定** - AEM 環境の様々な機能の設定を行います。
-   * ログ転送、パージ関連のメンテナンスタスク、様々な CDN 設定など、サポートされる設定のリストと、それらが適切にデプロイされるようにリポジトリで管理するには、[&#x200B; 設定パイプラインの使用 &#x200B;](/help/operations/config-pipeline.md) を参照してください。
+   * ログ転送、パージ関連のメンテナンスタスク、様々な CDN 設定など、サポートされる設定のリストと、それらが適切にデプロイされるようにリポジトリで管理するには、[ 設定パイプラインの使用 ](/help/operations/config-pipeline.md) を参照してください。
    * ターゲットデプロイメントパイプラインを実行する場合、パイプラインで定義した環境、リポジトリおよびブランチに設定が保存されていれば、その設定がデプロイされます。
    * 設定パイプラインは、常に 1 つの環境に 1 つしか存在できません。
-* **Edge Delivery Services設定パイプラインを設定** - Edge Delivery設定パイプラインには、開発環境、ステージング環境および実稼動環境は個別には存在しません。 AEM as a Cloud Serviceでは、変更は開発層、ステージ層、実稼動層を通じて進みます。 これに対し、Edge Delivery設定パイプラインは、Cloud Managerに登録されたすべてのEdge Delivery Sites ドメインに設定を直接適用します。 詳しくは、[Edge Delivery パイプラインの追加 &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) を参照してください。
+* **Edge Delivery Services設定パイプラインを設定** - Edge Delivery設定パイプラインには、開発環境、ステージング環境および実稼動環境は個別には存在しません。 AEM as a Cloud Serviceでは、変更は開発層、ステージ層、実稼動層を通じて進みます。 これに対し、Edge Delivery設定パイプラインは、Cloud Managerに登録されたすべてのEdge Delivery Sites ドメインに設定を直接適用します。 詳しくは、[Edge Delivery パイプラインの追加 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) を参照してください。
 * **フロントエンドコード** - AEM アプリケーションのフロントエンド用に JavaScript と CSS を設定します。
    * フロントエンドパイプラインを使用すると、フロントエンド開発者の作業の独立性が高まるほか、開発プロセスを速めることができます。
    * このプロセスの可能性を最大限に引き出すために知っておくべきいくつかの考慮事項と、このプロセスがどのように機能するかについては、[フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)のドキュメントを参照してください。

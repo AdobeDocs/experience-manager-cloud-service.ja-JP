@@ -4,8 +4,8 @@ description: エンタープライズクラスのフォームとビジネスプ�
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: e08318cafacee3bad3eba7f1c51b4e8aa04c0776
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1203'
 ht-degree: 100%
 

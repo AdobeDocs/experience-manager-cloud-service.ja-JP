@@ -2,10 +2,10 @@
 title: コンテンツフラグメントモデルの定義
 description: コンテンツフラグメントモデルが AEM におけるコンテンツフラグメントの基盤となっている仕組みと、ヘッドレス配信やページオーサリングで使用する構造化コンテンツを作成する方法について説明します。
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 416cb98fbf48885688ee70d63e606e3f7c90f9f8
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2201'
 ht-degree: 82%
@@ -28,7 +28,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 >
 >この新しいエディターでモデルを作成する場合、そのモデルには常にこのエディターを使用する必要があります。
 >
->[&#x200B; 元のモデルエディター &#x200B;](/help/assets/content-fragments/content-fragments-models.md) でモデルを開くと、次のメッセージが表示されます。
+>[ 元のモデルエディター ](/help/assets/content-fragments/content-fragments-models.md) でモデルを開くと、次のメッセージが表示されます。
 >
 >* 「このモデルには、カスタム UI スキーマが設定されています。 この UI に表示されるフィールドの順序は、UI スキーマと一致しない場合があります。 UI スキーマに合わせてフィールドを表示するには、新しいコンテンツフラグメントエディターに切り替える必要があります。」
 
@@ -55,7 +55,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
    * 上位：
       * **ホーム** アイコン
-      * [&#x200B; 元の &#x200B;](/help/assets/content-fragments/content-fragments-models.md) エディターと新しいエディターを切り替えるオプション
+      * [ 元の ](/help/assets/content-fragments/content-fragments-models.md) エディターと新しいエディターを切り替えるオプション
       * **キャンセル**
       * **保存**
 
@@ -82,7 +82,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
    * フィールドボックスの左側にドットが表示されることで、フィールドの位置を変更することができます。
 
-     ![&#x200B; フィールドを移動 &#x200B;](assets/cf-cfmodels-move-field-icon.png)
+     ![ フィールドを移動 ](assets/cf-cfmodels-move-field-icon.png)
 
    * フィールドがモデルに追加され、選択されると、右側のパネルに特定のデータタイプに対して定義できる **プロパティ** が表示されます。 ここでは、特定のに必要なものを定義できます
 フィールド。
@@ -221,7 +221,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 * **フィールドラベル**
 **フィールドラベル**&#x200B;を入力すると、**プロパティ名**&#x200B;を自動生成し、必要に応じて手動で更新できます。
 
-* **検証**&#x200B;基本検証は、
+* **検証**基本検証は、
 **必須**&#x200B;プロパティなどのメカニズムで使用できます。一部のデータ型には、追加の検証フィールドがあります。詳しくは、「[検証](#validation)」を参照してください。
 
 * データタイプが&#x200B;**複数行テキスト**&#x200B;の場合、「**デフォルトの種類**」を次のいずれかとして定義できます。
@@ -313,10 +313,10 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 >AEM では次の繰り返しを防止できます。
 >
 >* コンテンツ参照
->  &#x200B;>  これにより、ユーザーは現在のフラグメントに参照を追加できなくなり、フラグメント参照ピッカーダイアログが空になる場合があります。
+>  これにより、ユーザーは現在のフラグメントに参照を追加できなくなり、フラグメント参照ピッカーダイアログが空になる場合があります。
 >
 >* GraphQL のフラグメント参照
->  &#x200B;>  相互に参照される複数のコンテンツフラグメントを返すディープクエリを作成する場合、最初に null が返されます。
+>  相互に参照される複数のコンテンツフラグメントを返すディープクエリを作成する場合、最初に null が返されます。
 
 >[!CAUTION]
 >
@@ -331,6 +331,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 標準プロパティに加えて、以下を指定できます。
 
 * 参照コンテンツを保存する場所を指定または表す&#x200B;**ルートパス**
+
   >[!NOTE]
   >
   >これは、コンテンツフラグメントエディターの使用時に、このフィールドで画像を直接アップロードして参照する場合に必須です。
@@ -338,6 +339,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
   >詳しくは、[参照画像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)を参照してください。
 
 * 参照可能なコンテンツタイプ
+
   >[!NOTE]
   >
   >コンテンツフラグメントエディターの使用時に、このフィールドで画像を直接アップロードして参照する場合は、**画像**&#x200B;を含める必要があります。
@@ -346,6 +348,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 * ファイルサイズの制限
 * 画像が参照されている場合：
+
    * サムネールを表示
    * 画像の高さと幅の制限
 

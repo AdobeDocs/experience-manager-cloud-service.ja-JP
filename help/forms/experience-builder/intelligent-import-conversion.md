@@ -4,14 +4,14 @@ description: Forms Experience Builder のインテリジェントな読み込み
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 7268c4be-1e4a-4d31-aa76-9076d7ee83ce
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 0%
 
 ---
-
 
 # インテリジェントなインポートと変換
 
@@ -259,8 +259,8 @@ AI が以下を自動的に検出して変換します。
 
 コンバージョンの問題の場合：
 
-- [Forms Experience Builder の FAQ を確認してください &#x200B;](forms-experience-builder-frequently-asked-questions.md)
-- [&#x200B; はじめる前に &#x200B;](forms-experience-builder-getting-started.md) を確認してください
+- [Forms Experience Builder の FAQ を確認してください ](forms-experience-builder-frequently-asked-questions.md)
+- [ はじめる前に ](forms-experience-builder-getting-started.md) を確認してください
 - 技術的なサポートについては、システム管理者にお問い合わせください
 
 ## 関連記事

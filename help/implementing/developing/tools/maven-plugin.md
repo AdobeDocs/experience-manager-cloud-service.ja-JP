@@ -1,21 +1,21 @@
 ---
-title: Adobe Content Package Maven Plugin
-description: Content Package Maven Plugin を使用した AEM アプリケーションのデプロイについて説明します
+title: Adobe コンテンツパッケージ Maven プラグイン
+description: コンテンツパッケージ Maven プラグインを使用した AEM アプリケーションのデプロイについて説明します
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 100%
 
 ---
 
-# Adobe Content Package Maven Plugin {#adobe-content-package-maven-plugin}
+# Adobe コンテンツパッケージ Maven プラグイン {#adobe-content-package-maven-plugin}
 
-パッケージデプロイメントおよび管理タスクを Maven プロジェクトに組み込むには、Adobe Content Package Maven Plugin を使用します。
+パッケージデプロイメントおよび管理タスクを Maven プロジェクトに組み込むには、Adobe コンテンツパッケージ Maven プラグインを使用します。
 
-構築したパッケージは Adobe Content Package Maven プラグインによって AEM にデプロイされ、通常 AEM [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)を使って実行するタスクの自動化を可能にします。
+構築したパッケージは Adobe コンテンツパッケージ Maven プラグインによって AEM にデプロイされ、通常 AEM [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)を使って実行するタスクの自動化を可能にします。
 
 * ファイルシステム内のファイルから新しいパッケージを作成する。
 * AEM にパッケージをインストールまたはアンインストールする。
@@ -33,7 +33,7 @@ ht-degree: 100%
 >
 >パッケージの&#x200B;**作成**&#x200B;は、[Apache Jackrabbit FileVault Package Maven プラグイン](https://jackrabbit.apache.org/filevault-package-maven-plugin/)で管理されるようになりました。
 >
->この記事では、構築済みパッケージの AEM への&#x200B;**デプロイメント**&#x200B;を、Adobe Content Package Maven プラグインで実行する方法について説明します。
+>この記事では、構築済みパッケージの AEM への&#x200B;**デプロイメント**&#x200B;を、Adobe コンテンツパッケージ Maven プラグインで実行する方法について説明します。
 
 ## パッケージと AEM プロジェクト構造 {#aem-project-structure}
 
@@ -43,13 +43,13 @@ AEM as a Cloud Service は、最新の AEM プロジェクトアーキタイプ�
 >
 >AEM as a Cloud Service のドキュメントの [AEM プロジェクトの構造](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ja)の記事および [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)のドキュメントを参照してください。どちらも AEM 6.5 に完全に対応しています。
 
-## Content Package Maven Plugin の入手 {#obtaining-the-content-package-maven-plugin}
+## コンテンツパッケージ Maven プラグインの入手 {#obtaining-the-content-package-maven-plugin}
 
 プラグインは、[Maven Central リポジトリ](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)から入手できます。
 
-## Content Package Maven Plugin のゴールとパラメーター
+## コンテンツパッケージ Maven プラグインのゴールとパラメーター
 
-Content Package Maven Plugin を使用するには、POM ファイルのビルド要素内に次のプラグイン要素を追加します。
+コンテンツパッケージ Maven プラグインを使用するには、POM ファイルのビルド要素内に次のプラグイン要素を追加します。
 
 ```xml
 <plugin>
@@ -62,23 +62,23 @@ Content Package Maven Plugin を使用するには、POM ファイルのビル�
 </plugin>
 ```
 
-Maven がプラグインをダウンロードできるようにするには、このページの [Content Package Maven Plugin の取得](#obtaining-the-content-package-maven-plugin)の節で提供されているプロファイルを使用します。
+Maven がプラグインをダウンロードできるようにするには、このページの [コンテンツパッケージ Maven プラグインの入手](#obtaining-the-content-package-maven-plugin)の節で提供されているプロファイルを使用します。
 
-## Content Package Maven Plugin の目標 {#goals-of-the-content-package-maven-plugin}
+## コンテンツパッケージ Maven プラグインの入手の目標 {#goals-of-the-content-package-maven-plugin}
 
-Content Package プラグインが提供する目標と目標のパラメーターについて詳しくは、次の節で説明します。共通パラメーターの節で説明したパラメーターは、ほとんどの目標に使用できます。1 つの目標に適用されるパラメーターについて詳しくは、その目標の節で説明します。
+コンテンツパッケージプラグインが提供する目標と目標のパラメーターについて詳しくは、次の節で説明します。共通パラメーターの節で説明したパラメーターは、ほとんどの目標に使用できます。1 つの目標に適用されるパラメーターについて詳しくは、その目標の節で説明します。
 
-### プラグインプレフィックス {#plugin-prefix}
+### プラグイン接頭辞 {#plugin-prefix}
 
-プラグインプレフィックスは `content-package` です。次の例に示すように、コマンドラインからゴールを実行するには、このプレフィックスを使用します。
+プラグイン接頭辞は `content-package` です。次の例に示すように、コマンドラインからゴールを実行するには、この接頭辞を使用します。
 
 ```shell
 mvn content-package:build
 ```
 
-### パラメータープレフィックス {#parameter-prefix}
+### パラメーター接頭辞 {#parameter-prefix}
 
-特に指定がない限り、プラグインのゴールおよびパラメーターでは、次の例に示すように `vault` プレフィックスを使用します。
+特に指定がない限り、プラグインのゴールおよびパラメーターでは、次の例に示すように `vault` 接頭辞を使用します。
 
 ```shell
 mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/packmgr/service.jsp"

@@ -3,11 +3,11 @@ title: AEM UI の構造
 description: AEM UI には、基盤となる原則があり、いくつかの主要な要素で構成されています。
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 7d09e0c990c716d7bbb305210960621ba8735de4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -174,14 +174,14 @@ AEM には、編集、プレビュー、注釈など、ページオーサリン�
 
 ### 統合シェル {#unified-shell}
 
-統合シェルをAEM UI として使用している場合は [&#128279;](/help/overview/aem-cloud-service-on-unified-shell.md) 統合シェルの AEM as a Cloud Service&rbrace; を参照してください。
+統合シェルを AEM UI として使用している場合は、[統合シェル上の AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
 
-カスタマイズが必要な場合、または既にカスタマイズを行っている場合は、統合コミュニケーションを無効にできます。
+カスタマイズが必要な場合、または既にカスタマイズを行っている場合は、統合シェルを無効にすることができます。
 
 * [UI から](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
 
 * プロジェクトコードから、次の手順を実行します。
 
-   * オン `/conf/global/setting/unifiedshell`
+   * `/conf/global/setting/unifiedshell`
 
-      * `Boolean` プロパティ `enable` を `false` に設定する
+      * `Boolean` プロパティ `enable` を `false` に設定

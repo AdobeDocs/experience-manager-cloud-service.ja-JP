@@ -3,8 +3,8 @@ title: AEM アプリケーションへのタグ付けの構築
 description: カスタム AEM アプリケーション内のタグまたは拡張タグをプログラムで操作します
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 100%
@@ -115,7 +115,7 @@ tagManager.deleteTag(tag);
 
 ### タグの複製 {#replicating-tags}
 
-タグのタイプは `Replicator` なので、タグで複製サービス（`nt:hierarchyNode`）を使用できます。
+タグのタイプは `Replicator` なので、タグでレプリケーションサービス（`nt:hierarchyNode`）を使用できます。
 
 ```java
 replicator.replicate(session, replicationActionType, tagPath);

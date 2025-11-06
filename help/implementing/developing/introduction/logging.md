@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 向けのログ
 description: AEM as a Cloud Service のログを使用して一元的なログサービスのグローバルパラメーターを設定する方法、個々のサービスに特有の設定またはデータのログ記録をリクエストする方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5c32a088cf7e334ba6497a595b5176e5389ce9ed
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2556'
 ht-degree: 100%
 
@@ -158,6 +158,7 @@ Sling LogManager ファクトリの OSGi 設定を使用して、カスタム Ja
 その他の LogManager OSGi 設定プロパティを変更すると、AEM as a Cloud Service での可用性の問題が発生する場合があります。
 
 前の節で述べたように、顧客環境を効果的に監視するには、次の手順を実行します。
+
 * AEM のデフォルトのログ設定（Apache Sling Logging Configuration）のログレベルを、デフォルト値の「INFO」から変更しないでください。
 * 製品コードの個々のパッケージに対して、ログレベルをデバッグに設定しても構いません（「Apache Sling Logging Logger configuration」 OSGi 設定ファクトリのインスタンスを使用）。ただし、パフォーマンスの低下を防ぐために控えめに使用し、不要になったら「INFO」に戻してください。
 * 顧客開発コードの場合、ログレベルを調整できます。
@@ -165,8 +166,10 @@ Sling LogManager ファクトリの OSGi 設定を使用して、カスタム Ja
 * ログの出力先はデフォルトのファイル「logs/error.log」のままにする必要があります。
 
 そのため、次の OSGi プロパティは変更しないでください。
+
 * **Apache Sling ログ設定**（PID：`org.apache.sling.commons.log.LogManager`）- *すべてのプロパティ*
 * **Apache Sling Logging Logger Configuration**（ファクトリー PID：`org.apache.sling.commons.log.LogManager.factory.config`）：
+
    * `org.apache.sling.commons.log.file`
    * `org.apache.sling.commons.log.pattern`
 
@@ -617,7 +620,7 @@ Dispatcher を含む Apache レイヤーログは、Dispatcher を保持する D
 
 ## 実稼動環境とステージ環境のデバッグ {#debugging-production-and-stage}
 
-例外的な状況では、ステージまたは実稼動環境でログレベルを変更して、ログをより細かく記録する必要があります。
+例外的な状況では、ステージまたは本番環境でログレベルを変更して、ログをより細かく記録する必要があります。
 
 これは可能ですが、Git の設定ファイルのログレベル Warn と Error を Debug へ変更し、これらの設定の変更を環境に登録するために、AEM as a Cloud Service にデプロイメントを実行する必要があります。
 

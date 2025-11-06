@@ -4,7 +4,7 @@ description: ベストプラクティスアナライザーを使用してアッ�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 951f7fb56d1d8a3285973fda945cbc21f310925f
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2796'
 ht-degree: 100%
@@ -222,6 +222,7 @@ CSV 形式レポートの列は次のとおりです。
 BPA は HTTP インターフェイスを提供し、AEM 内でのユーザーインターフェイスの代替として使用できます。このインターフェイスは、HEAD コマンドと GET コマンドの両方をサポートしています。BPA レポートを生成し、JSON、CSV、タブ区切り値（TSV）の 3 つの形式のいずれかで返す場合に使用します。
 
 BPA がインストールされているサーバーの HTTP アクセスには、次の URL を使用できます。`<host>` は、ホスト名と必要に応じてポートを示します。
+
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` JSON 形式の場合
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` CSV 形式の場合
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` TSV 形式の場合

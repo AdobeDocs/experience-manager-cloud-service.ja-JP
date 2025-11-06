@@ -2,11 +2,11 @@
 title: Adobe Journey Optimizer のコンテンツフラグメントの使用
 description: 'コンテンツフラグメントを Adobe Experience Manager で統合および使用する方法について説明します。 '
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
 exl-id: 4090ee41-80f1-4389-8961-e4af891f01ff
-source-git-commit: 0fd7b2633488ceb14d34b1978a91a3a830d8762a
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 100%
 

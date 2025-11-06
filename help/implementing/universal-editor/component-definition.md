@@ -2,10 +2,10 @@
 title: コンポーネント定義
 description: コンポーネント定義とユニバーサルエディター間の JSON 契約について詳しく説明します。
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: b4e61ec6abcaf73119f8963d72317759b2bd7c76
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 100%
 

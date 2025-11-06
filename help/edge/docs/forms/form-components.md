@@ -3,9 +3,9 @@ title: アダプティブフォームブロックのコンポーネントとそ�
 description: このドキュメントでは、AEM Forms の Edge Delivery Service で使用できるフォームコンポーネントとそのプロパティの概要について説明します。
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 100%
 

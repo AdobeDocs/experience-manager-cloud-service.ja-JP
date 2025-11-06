@@ -1,11 +1,11 @@
 ---
 title: コンテンツコピーツール
-description: コンテンツコピーツールを使用すると、可変コンテンツをオンデマンドで AEM as a Cloud Service の実稼動環境から下位環境にテスト目的でコピーできます。
+description: コンテンツコピーツールを使用すると、可変コンテンツをオンデマンドで AEM as a Cloud Service の本番環境から下位環境にテスト目的でコピーできます。
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 28a9e32395b73edff46cabba1dcc6c4134594fc6
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 100%
 
@@ -13,14 +13,14 @@ ht-degree: 100%
 
 # コンテンツコピーツール {#content-copy}
 
-コンテンツコピーツールを使用すると、可変コンテンツをオンデマンドで AEM as a Cloud Service の実稼動環境から下位環境にテスト目的でコピーできます。
+コンテンツコピーツールを使用すると、可変コンテンツをオンデマンドで AEM as a Cloud Service の本番環境から下位環境にテスト目的でコピーできます。
 
 >[!NOTE]
 >プライマリコンテンツのコピーフローは上位環境から下位環境へのものですが、**転送フロー**&#x200B;という追加機能により、下位の実稼動以外の環境から上位の実稼動以外の環境へのコピーができるようになります（例：開発 → ステージ、RDE → ステージ）。可用性の要件など、詳しくは、[制限事項](#limitations)を参照してください。
 
 ## はじめに {#introduction}
 
-現在の実際のデータは、テスト、検証、ユーザー受け入れの目的で役立ちます。コンテンツコピーツールを使用すると、AEM as a Cloud Service の実稼動環境からステージング環境、開発環境、または[迅速な開発環境（RDE）](/help/implementing/developing/introduction/rapid-development-environments.md)にコンテンツをコピーして、テストを行うことができます。
+現在の実際のデータは、テスト、検証、ユーザー受け入れの目的で役立ちます。コンテンツコピーツールを使用すると、AEM as a Cloud Service の実稼動環境からステージング環境、開発環境、または[高速開発環境（RDE）](/help/implementing/developing/introduction/rapid-development-environments.md)にコンテンツをコピーして、テストを行うことができます。
 
 コピーするコンテンツは、コンテンツセットによって定義されます。コンテンツセットは、同じ Cloud Manager プログラム内のソースオーサーサービス環境からターゲットオーサーサービス環境にコピーされる可変コンテンツを含む、JCR パスのリストで構成されます。コンテンツセットでは、次のパスを使用できます。
 

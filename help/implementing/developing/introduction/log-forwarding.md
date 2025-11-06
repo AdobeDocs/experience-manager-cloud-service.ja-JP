@@ -3,8 +3,8 @@ title: AEM as a Cloud Service のログ転送
 description: AEM as a Cloud Service でのログベンダーへのログ転送について説明します。
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: afa88d89b24ac425ba1b69ee9062e589d49ebee9
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2478'
 ht-degree: 95%

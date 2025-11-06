@@ -2,10 +2,10 @@
 title: Cloud Managerでの外部リポジトリのアクセストークンを管理する
 description: AEM Cloud Manager の Bring Your Own Git のために使用されるアクセストークンを表示、編集、削除する方法を説明します。
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 19fd6713e083826bd9aa621d86805bcd55a6743a
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 100%
 

@@ -4,9 +4,9 @@ description: Cloud Manager がカスタムドメイン名を正常に確認し�
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 68da11037cb3572a6f869fe8bd6a898e0aad87ec
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 100%
 

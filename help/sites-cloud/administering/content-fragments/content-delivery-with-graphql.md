@@ -2,11 +2,11 @@
 title: GraphQL のコンテンツフラグメントを使用したヘッドレスコンテンツ配信
 description: ヘッドレスコンテンツ配信にコンテンツフラグメントと GraphQL を使用して AEM ヘッドレス CMS を実現するための基本的な概念について説明します。
 feature: Content Fragments, GraphQL API
-role: Developer, Architect
+role: Developer
 exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
 solution: Experience Manager Sites
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 コンテンツフラグメントと GraphQL API を使用すると、Adobe Experience Manager（AEM）as a Cloud Service をヘッドレスコンテンツ管理システム（CMS）として使用できます。
 
-これを実現するには、AEM GraphQL API（標準 GraphQL に基づいてカスタマイズされた実装）と共にコンテンツフラグメントを使用して、アプリケーションで使用する構造化されたコンテンツをヘッドレスで配信します。単一の API クエリをカスタマイズできる機能により、レンダリングする特定のコンテンツを（単一の API クエリに対する応答として）取得して配信できます。
+これを実現するには、AEM GraphQL API（標準 GraphQL に基づいてカスタマイズされた実装）と共にコンテンツフラグメントを使用して、アプリケーションで使用する構造化コンテンツをヘッドレスで配信します。単一の API クエリをカスタマイズできる機能により、レンダリングする特定のコンテンツを（単一の API クエリに対する応答として）取得して配信できます。
 
 >[!NOTE]
 >

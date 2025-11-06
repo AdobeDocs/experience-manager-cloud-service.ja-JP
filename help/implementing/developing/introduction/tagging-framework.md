@@ -3,11 +3,11 @@ title: AEM タグ付けフレームワーク
 description: コンテンツにタグを付け、AEM タグ付けインフラストラクチャを使用して分類や整理を行います。
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1562'
-ht-degree: 100%
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
+source-wordcount: '1559'
+ht-degree: 99%
 
 ---
 
@@ -198,6 +198,6 @@ AEM に含まれるノードタイプの基本的な定義は、次のように�
    * これは、その次のタグに `cq:movedTo` プロパティがある限り繰り返されます。
 1. 次のタグに `cq:movedTo` プロパティがない場合は、そのタグが読み取られます。
 
-タグを移動または結合したときに変更を発行するには、`cq:Tag` ノードとそのすべてのバックリンクを複製する必要があります。この複製は、タグ管理コンソールでタグがアクティブにされたときに自動的におこなわれます。
+タグを移動または結合したときに変更を発行するには、`cq:Tag` ノードとそのすべてのバックリンクを複製する必要があります。このレプリケーションは、タグ管理コンソールでタグがアクティブにされたときに自動的に行われます。
 
 後でページの `cq:tags` プロパティに対して更新が行われると、以前の参照が自動的にクリーンアップされます。移動したタグを API で解決すると移動先のタグが戻され、移動先のタグ ID が提供されることから、このクリーンアップ処理がトリガーされます。

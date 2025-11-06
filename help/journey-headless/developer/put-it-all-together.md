@@ -4,9 +4,9 @@ description: AEM ヘッドレスデベロッパージャーニーのこの部分
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 100%
 
@@ -101,7 +101,7 @@ AEM ヘッドレスプロジェクトのローンチの準備をするには、�
 
 <!-- THIS TOPIC IS 404. IT DOES NOT APPEAR IN THE TOC OR ANYWHERE ELSE To get a more in-depth look at setting up a local development environment and all dependencies needed for content preview, see [Production Deployment documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/headless-tutorial/graphql/multi-step/production-deployment.html). -->
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
 これで、ここでの AEM ヘッドレスデベロッパージャーニーは完了です。次ができるようになったはずです。
 

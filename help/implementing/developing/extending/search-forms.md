@@ -3,8 +3,8 @@ title: 検索フォームの設定
 description: Adobe Experience Manager as a Cloud Service の検索フォームの設定。
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2036'
 ht-degree: 100%
@@ -39,7 +39,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
 
 ## デフォルトフォーム {#default-forms}
 
-最初に&#x200B;**検索フォーム**&#x200B;コンソールにアクセスすると、すべての設定に南京錠アイコンが表示されます。これは、対応する設定がデフォルトの（そのまま使用できる）設定であり、削除できないことを示します。設定をカスタマイズして保存すると、南京錠アイコンは消えます。[カスタマイズした設定を削除する](#deleting-a-configuration-to-reinstate-the-default)と、再び表示されます。その場合、デフォルト（および南京錠アイコン）が復元されます。
+最初に&#x200B;**検索フォーム**&#x200B;コンソールにアクセスすると、すべての設定に南京錠シンボルが表示されます。これは、対応する設定がデフォルトの（そのまま使用できる）設定であり、削除できないことを示します。設定をカスタマイズして保存すると、南京錠アイコンは消えます。[カスタマイズした設定を削除する](#deleting-a-configuration-to-reinstate-the-default)と、再び表示されます。その場合、デフォルト（および南京錠アイコン）が復元されます。
 
 ![検索フォームの設定概要](assets/csf-overview.png)
 
@@ -625,7 +625,7 @@ Sites 専用の述語の、公開およびライブコピーのチェックボ�
 
    ![デフォルトに戻す](assets/csf-restore-default.png)
 
-1. カスタマイズした設定が削除され、デフォルトが復帰します（このことは、コンソールに南京錠アイコンが再度表示されることで確認できます）。
+1. カスタマイズした設定が削除され、デフォルトが復帰します（このことは、コンソールに南京錠シンボルが再度表示されることで確認できます）。
 
 ### オプションの述語の追加 {#adding-options-predicates}
 

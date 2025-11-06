@@ -5,8 +5,8 @@ keywords: AEM Forms OneDrive との統合、Microsoft OneDrive への接続、AE
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 role: User, Developer
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 100%
 
@@ -64,7 +64,7 @@ AEM Forms を Microsoft® OneDrive ストレージに接続するには、以下
    >[!NOTE]
    >
    >* デフォルトでは、`forms-ootb-storage-adaptive-forms-submission` は OneDrive コンテナに存在します。
-   > * 「**フォルダーを作成**」をクリックして、まだ存在しない場合は、フォルダーを `forms-ootb-storage-adaptive-forms-submission` として作成します。
+   >* 「**フォルダーを作成**」をクリックして、まだ存在しない場合は、フォルダーを `forms-ootb-storage-adaptive-forms-submission` として作成します。
 
 アダプティブフォームの送信アクションに、この OneDrive ストレージ設定を使用できるようになりました。
 

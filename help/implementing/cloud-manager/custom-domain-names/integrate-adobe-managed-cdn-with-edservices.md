@@ -3,11 +3,11 @@ title: Cloud Manager での Edge Delivery Services と Adobe が管理する CDN
 description: null
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 71ea3b810d4145d5581c29e26db9bc157c425a15
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Edge Delivery Services は、次の 2 つのオプションのいずれかを使
 |  | デプロイメントオプション | 主なドキュメント | 機能 | 次に最適 |
 | --- | --- | --- | --- | --- |
 | オプション 1 | 既存の AEM as a Cloud Service（AEMaaCS）環境を&#x200B;*使用する場合* | [既存の環境からのプロキシの設定](https://www.aem.live/docs/byo-cdn-adobe-managed#option-1-setup-a-proxy-from-an-existing-environment) | 設定パイプラインは、AEMaaCS 環境で一般公開されています | Cloud Manager で既に Sites を実行しており、迅速で低リスクでパフォーマンスを向上させたいチーム。 |
-| オプション 2 | 既存の AEMaaCS 環境を&#x200B;*使用しない場合*。スタンドアロンの「Edge 環境」と呼ばれます。 | [既存の環境を使用しない Edge Delivery サイトの設定](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment) | 設定パイプラインは現在、限定的な Beta プログラムを通じて Edge 環境でのみ使用できます。<br>[Edge Delivery 設定パイプラインの追加](help/implementing/cloud-manager/release-notes/current.md##add-eds-pipeline)を参照してください。 | 完全な Edge Delivery アーキテクチャと詳細なルーティングを採用したい新しいビルドまたは移行。 |
+| オプション 2 | 既存の AEMaaCS 環境を&#x200B;*使用しない場合*。スタンドアロンの「Edge 環境」と呼ばれます。 | [既存の環境を使用しない Edge Delivery サイトの設定](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment) | 設定パイプラインは現在、限定的な Beta プログラムを通じて Edge 環境でのみ使用できます。<br>[Edge Delivery 設定パイプラインの追加](/help/implementing/cloud-manager/release-notes/current.md#add-eds-pipeline)を参照してください。 | 完全な Edge Delivery アーキテクチャと詳細なルーティングを採用したい新しいビルドまたは移行。 |
 
 <!-- Ultimately this URL above will need to be updated on GA -->
 

@@ -6,8 +6,8 @@ topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 100%
 
@@ -22,6 +22,7 @@ ht-degree: 100%
 例えば、Workfront Fusion を使用すると、シナリオを作成して、アダプティブフォームでデータを収集し、データを処理し、データをアーカイブ用にデータストアに送信できます。シナリオを設定すると、ユーザーがフォームに入力するたびに、Workfront Fusion は自動的にタスクを実行し、データストアをシームレスに更新します。
 
 AEM Forms as a Cloud Service には、アダプティブフォームを Adobe Workfront Fusion に接続して送信するための OOTB コネクタが用意されています。フォームを Adobe Workfront Fusion に送信すると、次のようなメリットがあります。
+
 * フォーム送信データを Workfront Fusion ワークフローへとシームレスに転送できるようになりました。
 * フォーム送信によってトリガーされる様々なタスクを自動化するのに役立ちます。これには、プロジェクトの開始、特定のチームメンバーへのタスクの割り当て、通知の送信、プロジェクトステータスの更新などが含まれます。これらはすべて手動介入なしで実行できます。
 * Workfront Fusion 内で取り込まれたすべてのフォーム送信では、プロジェクト関連情報の信頼できる単一の情報源を提供します。

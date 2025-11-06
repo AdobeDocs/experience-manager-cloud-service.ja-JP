@@ -3,10 +3,10 @@ title: SPA ページコンポーネント
 description: SPA では、ページコンポーネントは子コンポーネントの HTML 要素を提供せず、代わりに SPA フレームワークに委任します。このドキュメントでは、これにより SPA のページコンポーネントがどのように一意になるかを説明します。
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ SPA のページコンポーネントは、JSP ファイルまたは HTL のフ�
 
 ページモデルの解決と管理は、指定の [`PageModelManager`](blueprint.md#pagemodelmanager) モジュールに委任されます。SPA は、初期化時に `PageModelManager` モジュールとやり取りして、初期ページモデルを取得し、モデル更新の登録をおこなう必要があります。これは主に、作成者がページエディターを使用してページを編集しているときに生成されます。`PageModelManager` は、npm パッケージとして SPA プロジェクトからアクセスできます。`PageModelManager` は、AEMとSPAとの間のインタープリターなので、SPAに付随するものです。
 
-ページを作成できるようにするには、`cq.authoring.pagemodel.messaging` という名前のクライアントライブラリを追加して、SPA とページエディターの間の通信チャネルを提供する必要があります。SPA ページコンポーネントがページ wcm/core コンポーネントから継承している場合は、次のオプションを使用して、`cq.authoring.pagemodel.messaging` クライアントライブラリカテゴリを使用可能にします。
+ページを作成できるようにするには、`cq.authoring.pagemodel.messaging` という名前のクライアントライブラリを追加して、SPA とページエディターの間の通信チャネルを提供する必要があります。SPA ページコンポーネントがページ wcm/コアコンポーネントから継承している場合は、次のオプションを使用して、`cq.authoring.pagemodel.messaging` クライアントライブラリカテゴリを使用可能にします。
 
 * テンプレートが編集可能な場合は、クライアントライブラリカテゴリをページポリシーに追加します。
 * ページコンポーネントの `customfooterlibs.html` を使用したクライアントライブラリカテゴリを追加します。

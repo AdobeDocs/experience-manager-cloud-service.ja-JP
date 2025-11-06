@@ -3,10 +3,10 @@ title: ' [!DNL Experience Manager Assets] でのアクセシビリティ'
 description: 障害のあるユーザーにとって、 [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]  のアクセシビリティ機能がどのように役立つかを説明します。
 contentOwner: AG
 feature: Accessibility, Asset Management
-role: User, Architect, Leader
+role: User, Developer, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1923'
 ht-degree: 100%
 
@@ -61,7 +61,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 
 [!DNL Experience Manager] のアクセシビリティ機能は、[!DNL Experience Manager] ユーザーとその顧客の 2 つの主要な要件に対応しています。
 
-* コンテンツデザイナーやクリエーターには、アクセシブルなコンテンツを作成して公開する機能が提供されます。作成されたコンテンツは、顧客や Web サイト訪問者によって使用されます。障害を持つユーザーは、支援テクノロジーを使用してコンテンツを使用できます。詳しくは、「[Web アクセシビリティのガイドライン](/help/compliance/accessibility/quick-guide-wcag.md)」を参照してください。
+* コンテンツデザイナーやクリエーターには、アクセシブルなコンテンツを作成して公開する機能が提供されます。作成されたコンテンツは、顧客や web サイト訪問者によって使用されます。障害を持つユーザーは、支援テクノロジーを使用してコンテンツを使用できます。詳しくは、「[Web アクセシビリティのガイドライン](/help/compliance/accessibility/quick-guide-wcag.md)」を参照してください。
 * また、[!DNL Experience Manager] では、障害を持つユーザーや管理者が、コンテンツの作成と管理を行うためのユーザーインターフェイスやコントロールにアクセスできます。障害を持つユーザーは、支援テクノロジーを使用して、[!DNL Assets] 機能をナビゲート、使用、管理できます。
 
 [!DNL Assets] の主な機能は以前よりもアクセスしやすく、定期的にアップデートされており、グローバル標準への準拠が改善されています。[!DNL Assets] の CRUD 操作には、ある程度のアクセシビリティが組み込まれています。アセットの追加、管理、検索、配布などの DAM ワークフローには、キーボードショートカット、スクリーンリーダーテキスト、カラーコントラストなどの支援を受けてアクセスできます。

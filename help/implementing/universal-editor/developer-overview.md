@@ -3,9 +3,9 @@ title: AEM 開発者向けのユニバーサルエディターの概要
 description: ユニバーサルエディターの動作およびプロジェクトでのユニバーサルエディターの使用方法について興味がある AEM 開発者向けに、このドキュメントでは、WKND プロジェクトをユニバーサルエディターと連携させる方法を説明することで、エンドツーエンドの導入について説明します。
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '3179'
 ht-degree: 100%
 

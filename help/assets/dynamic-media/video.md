@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 5514aec10184d67c24d00d2ed783a154e6587035
-workflow-type: ht
-source-wordcount: '10070'
-ht-degree: 100%
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
+source-wordcount: '10063'
+ht-degree: 99%
 
 ---
 
@@ -271,8 +271,8 @@ Dynamic Media を有効にし、ビデオクラウドサービスを設定済み
 
 <!-- For advice about video encoding, see the following:
 
-* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_jp).
-* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_jp). -->
+* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
+* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en). -->
 
 ### ソースビデオファイル {#source-video-files}
 
@@ -314,7 +314,7 @@ Dynamic Media を有効にし、ビデオクラウドサービスを設定済み
 | 1.78 | 16:9 |
 | 0.56 | 9:16 |
 
-例えば、幅 1,440、高さ 1,080 のビデオの縦横比は 1,440/1,080、つまり 1.33 になります。このビデオファイルをエンコードするには、縦横比 4:3 のビデオエンコーディングプリセットを選択します。
+例えば、幅 1,440、高さ 1,080×ビデオの縦横比は 1,440/1,080 （1.33）になります。この場合、縦横比が 4 :3 のビデオエンコーディングプリセットを選択して、ビデオファイルをエンコードします。
 
 ### ビットレート {#bitrate}
 
@@ -452,7 +452,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=ja).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
@@ -597,7 +597,7 @@ Dynamic Media で複数のキャプションとオーディオトラック機能
    ![「キャプションを作成」オプション。](/help/assets/dynamic-media/assets/msma-createcaption.png)
    *キャプションを作成ドロップダウンメニューには、「ファイルをアップロード」、「オーディオトラックを変換」、「キャプションを翻訳」の 3 つのオプションがあります。*
 
-+++**オプション 1：***使用する言語の既存の独自のキャプションファイルを自分で用意します*（「**[!UICONTROL ファイルをアップロード]**」オプション）
+   +++**オプション 1：***使用する言語の既存の独自のキャプションファイルを自分で用意します*（「**[!UICONTROL ファイルをアップロード]**」オプション）
 
    1. ページの右上付近で、**[!UICONTROL キャプションを作成]**／**[!UICONTROL ファイルをアップロード]**&#x200B;をクリックします。
    1. 1 つまたは複数の既存の `.vtt` ファイルに移動して選択し、開きます。
@@ -621,9 +621,9 @@ Dynamic Media で複数のキャプションとオーディオトラック機能
    1. 前の手順で「**[!UICONTROL 保存]**」を選択する代わりに「**[!UICONTROL 保存して閉じる]**」を選択した場合でも、アップロードしたファイルの処理ステータスを表示できます。詳しくは、[アップロードされたキャプションファイルとオーディオトラックファイルのライフサイクルステータスを表示する](#lifecycle-status-video)を参照してください。
    1. 手順 8 に進みます。
 
-+++
+   +++
 
-+++**オプション 2：***AI に複数の言語でキャプションファイルを生成する場合*（「**[!UICONTROL オーディオトラックを変換]**」オプション）
+   +++**オプション 2：***AI に複数の言語でキャプションファイルを生成する場合*（「**[!UICONTROL オーディオトラックを変換]**」オプション）
 
    1. ページの右上隅付近で、**[!UICONTROL キャプションを作成]**／**[!UICONTROL オーディオトラックを変換]**&#x200B;をクリックします。
 
@@ -655,9 +655,9 @@ Dynamic Media で複数のキャプションとオーディオトラック機能
       必要に応じて、後で特定のキャプションメタデータを変更または編集できます。ビデオが公開されると、これらのメタデータの詳細が公開されたビデオの公開 URL に反映されます。
    1. 手順 8 に進みます。
 
-+++
+   +++
 
-+++**オプション 3：***キャプションファイル（`.vtt`）内のテキストを修正し、再度アップロードして古い `.vtt` ファイルを置き換え、修正したファイルを AI に翻訳させる必要があります*（「**[!UICONTROL キャプションを翻訳]**」オプション）
+   +++**オプション 3：***キャプションファイル（`.vtt`）内のテキストを修正し、再度アップロードして古い `.vtt` ファイルを置き換え、修正したファイルを AI に翻訳させる必要があります*（「**[!UICONTROL キャプションを翻訳]**」オプション）
 
    1. **[!UICONTROL キャプションを作成]**／**[!UICONTROL キャプションを翻訳]**&#x200B;をクリックします。このオプションは、1 つ以上のキャプションファイルが既に追加および処理されている場合に使用できます。
 
@@ -690,7 +690,7 @@ Dynamic Media で複数のキャプションとオーディオトラック機能
 
    1. 手順 8 に進みます。
 
-+++
+   +++
 
 1. （オプション）公開する前にビデオをプレビューして、キャプションとオーディオが期待どおりに動作することを確認します。[複数のキャプションとオーディオトラックがあるビデオのプレビュー](#preview-video-audio-subtitle)を参照してください。
 1. ビデオを公開します。詳しくは、[アセットの公開](publishing-dynamicmedia-assets.md)を参照してください。
@@ -1529,7 +1529,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 **To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
 
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html).
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
@@ -1558,7 +1558,7 @@ With multiple caption and audio track capability in Dynamic Media, you can easil
 
 Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
 
-| Type | Use case | 
+| Type | Use case |
 | --- | --- |
 | Captions | Multiple language support<br>Descriptive text for accessibility |
 | Audio tracks | Multiple language support<br>Commentary tracks<br>Descriptive audio |

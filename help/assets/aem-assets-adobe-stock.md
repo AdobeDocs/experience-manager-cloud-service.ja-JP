@@ -5,8 +5,8 @@ contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2208'
 ht-degree: 100%
 
@@ -205,15 +205,19 @@ To configure the IMS account:
 ### [!DNL Developer Console] でのプログラムの設定 {#set-up-a-program-in-developer-console}
 
 [!DNL Developer Console] でプログラムを設定するには、次の手順を実行します。
+
 1. [[!DNL Adobe Developer Console]](https://developer.adobe.com/console/14431/user/servicesandapis) に移動し、組織にログインします。
 1. **[!UICONTROL プロジェクト]**&#x200B;ダッシュボードで使用可能な「**[!UICONTROL 新規プロジェクトを作成]**」を選択します。
    ![AEM Assets と Adobe Stock の統合](/help/assets/assets/create-new-project-in-adobe-dev-console.png)
 1. 「**[!UICONTROL プロジェクトに追加]**」をクリックして、「**[!UICONTROL API]**」を選択します。
 1. 「**[!UICONTROL Adobe Stock]**」を選択して、「**[!UICONTROL 次へ]**」をクリックします。
 1. **[!UICONTROL 資格情報名]**&#x200B;を指定し、**[!UICONTROL OAuth サーバー間]**&#x200B;が選択されていることを確認して、「**[!UICONTROL 次へ]**」をクリックします。
-1. **[!UICONTROL AEM Assets]** **[!UICONTROL 製品プロファイル]**&#x200B;を選択して、「**[!UICONTROL 設定済み API を保存]**」をクリックします。[!DNL Developer Console] でプロジェクトを作成したことを確認する成功メッセージが表示されます。プロジェクトのダッシュボードが開き、上部にプロジェクト名、**[!UICONTROL APIS]** の下に **[!UICONTROL Adobe Stock]**、**[!UICONTROL 製品プロファイル]**&#x200B;の下に **[!UICONTROL AEM Assets]**、**[!UICONTROL 接続された資格情報]**&#x200B;の下に **[!UICONTROL OAuth サーバー間]**資格情報カードが表示されます。
+1. **[!UICONTROL AEM Assets]** **[!UICONTROL 製品プロファイル]**&#x200B;を選択して、「**[!UICONTROL 設定済み API を保存]**」をクリックします。[!DNL Developer Console] でプロジェクトを作成したことを確認する成功メッセージが表示されます。プロジェクトのダッシュボードが開き、上部にプロジェクト名、**[!UICONTROL APIS]** の下に **[!UICONTROL Adobe Stock]**、**[!UICONTROL 製品プロファイル]**&#x200B;の下に **[!UICONTROL AEM Assets]**、**[!UICONTROL 接続された資格情報]**&#x200B;の下に **[!UICONTROL OAuth サーバー間]**&#x200B;資格情報カードが表示されます。
+
    ![AEM Assets と Adobe Stock の統合](/help/assets/assets/adc-project-name.png)
+
 1. **[!UICONTROL OAuth サーバー間]**&#x200B;資格情報カードを選択すると、**[!UICONTROL 資格情報の詳細]**&#x200B;が表示されます。**[!UICONTROL クライアント ID]**、**[!UICONTROL クライアント秘密鍵]**、**[!UICONTROL 範囲]**、**[!UICONTROL 資格情報名]**、**[!UICONTROL テクニカルアカウント ID]**、**[!UICONTROL 組織 ID]** など、プロジェクトの [!DNL OAuth Server-to-Server] 資格情報の詳細を使用して、[AEM オーサーインスタンスに設定を追加](#add-configuration-in-the-aem-author-instance)します。
+
    ![AEM Assets と Adobe Stock](/help/assets/assets/oauth-server-server-credentials-details-page.png)
 
 ### [!DNL AEM] オーサーインスタンスへの設定の追加 {#add-configuration-in-the-aem-author-instance}
@@ -226,20 +230,21 @@ To configure the IMS account:
 #### [!DNL AEM author] インスタンスでの新しい [!DNL Adobe Stock IMS configuration] の設定 {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
 
 [!DNL AEM] オーサーインスタンスで新しい [!DNL Adobe Stock IMS configuration] を設定するには、次の手順を実行します。
+
 1. [!DNL AEM] オーサーインスタンスに移動します。
 1. 「![AEM Assets と Adobe Stock](/help/assets/assets/Hammer.svg)」をクリックし、「**[!UICONTROL セキュリティ]**」、「**[!UICONTROL Adobe IMS 設定]**」の順に選択します。
 1. 「**[!UICONTROL 作成]**」をクリックして、新しい IMS 設定を作成します。**[!UICONTROL Adobe IMS テクニカルアカウント設定]**&#x200B;ページには、「**[!UICONTROL クラウドソリューション]**」、「**[!UICONTROL タイトル]**」、「**[!UICONTROL 認証サーバー]**」、「**[!UICONTROL クライアント ID]**」、「**[!UICONTROL クライアント秘密鍵]**」、「**[!UICONTROL 範囲]**」、「**[!UICONTROL 組織 ID]**」などの複数のフィールドが表示されます。これらのフィールドの詳細を指定するには、次の手順に従います。
+
    * **[!UICONTROL クラウドソリューション]**：「**[!UICONTROL Adobe Stock]**」を選択します。
    * **[!UICONTROL タイトル]**：この統合の名前を指定します。
    * **[!UICONTROL 認証サーバー]**：[https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/) を認証サーバーとして追加します。
    * **[!UICONTROL クライアント ID]**：プロジェクトダッシュボードに移動し、左側のパネルにある「**[!UICONTROL OAuth サーバー間]**」オプションをクリックし、「**[!UICONTROL 資格情報の詳細]**」を選択して、**[!UICONTROL クライアント ID]** をコピーしてここにペーストします（[手順 7](#set-up-a-program-in-developer-console) を参照）。
-
    * **[!UICONTROL クライアント秘密鍵]**：プロジェクトダッシュボードに移動し、左側のパネルにある「**[!UICONTROL OAuth サーバー間]**」オプションをクリックし、「**[!UICONTROL 資格情報の詳細]**」を選択して、「**[!UICONTROL クライアント秘密鍵を取得]**」をクリックし、**[!UICONTROL クライアント秘密鍵]**&#x200B;をコピーしてここにペーストします（[手順 7](#set-up-a-program-in-developer-console) を参照）。
-
    * **[!UICONTROL 範囲]**：プロジェクトダッシュボードに移動し、左側のパネルにある「**[!UICONTROL OAuth サーバー間]**」オプションをクリックし、「**[!UICONTROL 資格情報の詳細]**」を選択して、**[!UICONTROL 範囲]**&#x200B;をコピーしてここにペーストします（[手順 7](#set-up-a-program-in-developer-console) を参照）。
-
    * **[!UICONTROL 組織 ID]**：プロジェクトダッシュボードに移動し、左側のパネルにある「**[!UICONTROL OAuth サーバー間]**」オプションをクリックし、「**[!UICONTROL 資格情報の詳細]**」を選択、**[!UICONTROL 組織 ID]** をコピーしてここにペーストします（[手順 7](#set-up-a-program-in-developer-console) を参照）。
-     ![AEM Assets と Adobe Stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
+
+   ![AEM Assets と Adobe Stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
+
 1. 「**[!UICONTROL 作成]**」をクリックすると、**[!UICONTROL Adobe IMS 設定]**&#x200B;ページが開き、作成した [!DNL Adobe Stock] 統合が表示されます。
 
 #### [!DNL Adobe Stock] に接続するクラウド設定の追加 {#add-cloud-configuration-to-connect-adobe-stock}
@@ -248,12 +253,17 @@ To configure the IMS account:
 
 1. [!DNL AEM author] インスタンスに移動します。
 1. ![AEM Assets と Adobe Stock](/help/assets/assets/Hammer.svg) をクリックし、「**[!UICONTROL Cloud Services]**」を選択し、「**[!UICONTROL Adobe Stock]**」を参照して選択します。
+
    ![AEM での Adobe Stock の使用](/help/assets/assets/adding-cloud-config-to-adobe-stock.png)
+
 1. 「**[!UICONTROL 作成]**」をクリックすると、**[!UICONTROL Adobe Stock 設定]**&#x200B;ページに複数のフィールドが表示されます。これらのフィールドの詳細を指定するには、次の手順に従います。
+
    * **[!UICONTROL タイトル]**：**[!UICONTROL Adobe IMS テクニカルアカウント設定]**&#x200B;ページ（[手順 3](#set-up-adobe-stock-ims-configuration-in-aem-author-instance) を参照）に移動し、タイトルをコピーしてここにペーストします。
    * **[!UICONTROL 関連する Adobe IMS 設定]**：作成した [!DNL Adobe Stock] 統合を選択します。
    * **[!UICONTROL ロケール]**：「**[!UICONTROL 英語（米国）]**」を選択します。
+
 1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。
+
    ![AEM での Adobe Stock の使用](/help/assets/assets/adobe-stock-config-page.png)
 
 <!--
@@ -275,6 +285,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 1. Click **[!UICONTROL Save & Close]**. 
 -->
+
 お使いの[!DNL Experience Manager Assets]オーサーインスタンスは、[!DNL Adobe Stock] に統合されています。複数の [!DNL Adobe Stock] 設定（例えばロケールベースの設定など）を作成できます。これで、[!DNL Experience Manager] ユーザーインターフェイスの中から [!DNL Adobe Stock] アセットにアクセス、検索およびライセンス付与ができます。
 
 ![search-stock-assets](assets/aem-stock-searchstocks.png)

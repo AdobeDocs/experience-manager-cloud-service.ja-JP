@@ -3,8 +3,8 @@ title: AEM ノードタイプ
 description: AEM は、Sling をベースにして JCR リポジトリーを使用し、両方から提供されるノードタイプを使用しますが、様々な独自ノードタイプも提供しています。
 exl-id: 82cc28ca-37e2-4ca3-b3e4-cc03bbc5bdf5
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 100%

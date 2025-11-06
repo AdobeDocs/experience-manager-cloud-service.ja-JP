@@ -4,10 +4,10 @@ description: Experience Manager as a Cloud Service への移行ガイド（パ�
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
 feature: Migration
 role: Admin
-source-git-commit: 7c704aa09ae4a6a3368b1eccb12982360a3350b3
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1472'
-ht-degree: 82%
+source-wordcount: '1471'
+ht-degree: 99%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 82%
 >title="AEM as a Cloud Service への移行"
 >abstract="様々な Experience Manager のデプロイメントから Experience Manager as a Cloud Service まで顧客をトランジションするために推奨される段階的アプローチの概要を説明し、既存の顧客が接続された継続的なエクスペリエンスを提供できるようにします。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=ja" text="新機能と新着情報"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html?lang=ja" text="AEM as a Cloud Service の概要"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html?lang=ja" text="AEM as a Cloud Service の概要。"
 
-Adobe Experience Manager（AEM）as a Cloud Serviceは、Experience Managerのための更新されたアーキテクチャを提供しています。 この基盤は、コンテナベースのインフラストラクチャ、API 駆動型開発、ガイド付き DevOps プロセスに基づいて構築されています。 これにより、マーケターや開発者は、顧客体験管理のイノベーションの最先端を行くことができます。
+Adobe Experience Manager（AEM）as a Cloud Service では、Experience Manager の更新済みアーキテクチャを提供します。この基盤は、コンテナベースのインフラストラクチャ、API 駆動型開発、ガイド付き DevOps プロセスに基づいて作成されています。これにより、マーケターと開発者は、常に顧客体験管理のイノベーションの最先端を行くことができます。
 
-Cloud Serviceは、すぐに使用できる豊富な機能とAdobe Experience Managerの拡張性を、最新のクラウドネイティブアーキテクチャの俊敏性と組み合わせることで、ブランドは絶え間なく変化する消費者の需要に応えることができます。
+Cloud Service は Adobe Experience Manager の豊富な標準機能と拡張性を、最新のクラウドネイティブアーキテクチャの俊敏性と組み合わせるので、ブランドは、常に進化する消費者の需要に応えることができます。
 
-このページでは、お客様が以前のExperience ManagerデプロイメントからExperience Managerのas a Cloud Service的なデプロイメントに移行する際に推奨される段階的アプローチの概要を説明します。 新しい専用プラットフォームは、連続性のある継続的なエクスペリエンスの提供を支援します。
+このページでは、お客様を以前の Experience Manager デプロイメントから Experience Manager as a Cloud Service に移行するために推奨される段階的なアプローチについて説明します。新しい専用プラットフォームは、接続された継続的なエクスペリエンスの提供に役立ちます。
 
 <!-- It primarily focuses on:
 * Getting Started with Adobe Experience Manager as a Cloud Service
@@ -33,7 +33,7 @@ Cloud Serviceは、すぐに使用できる豊富な機能とAdobe Experience Ma
 
 移行ジャーニーの一般的な表示については、以下の図を参照してください。
 
-![&#x200B; 移行ジャーニーの一般表現 &#x200B;](/help/journey-migration/assets/migration-process.png)
+![移行ジャーニーの一般的な表示](/help/journey-migration/assets/migration-process.png)
 
 ## Adobe Experience Manager as a Cloud Service について {#getting-started}
 
@@ -49,36 +49,41 @@ Cloud Serviceは、すぐに使用できる豊富な機能とAdobe Experience Ma
 
 ### 開発
 
-Adobe Experience Manager as a Cloud Serviceのコード開発の基本事項は、Adobe Experience Manager オンプレミスおよびManaged Services ソリューションの場合と同様です。
+Adobe Experience Manager as a Cloud Service でのコード開発の基本は、Adobe Experience Manager On Premise や Managed Services ソリューションでの基本と似ています。
 
-開発者は、コードを作成してローカルでテストし、リモートのAdobe Experience Manager as a Cloud Service環境にプッシュします。
+開発者はコードを作成しローカルでテストします。コードはその後、リモートの Adobe Experience Manager as a Cloud Service 環境にプッシュされます。
 
 Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法については、Experience Manager as a Cloud Service の実装に関するセルフヘルプリソースを参照してください。
 
 | ローカル開発セットアップ | 開始する前に知っておくべきこと |
 |-----------|------------|
-| <ol><li>詳しくは、 [Adobe Experience Manager SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ja) のドキュメントを参照してください。</li><li>Dispatcher SDK のインストール方法については、「[Dispatcher SDK のインストール](https://video.tv.adobe.com/v/30601)」を視聴してください。</li><li>Dispatcher SDK の設定方法については、「[Dispatcher SDK の設定](https://video.tv.adobe.com/v/35077?captions=jpn)」を視聴してください。</li><li>詳細については、 [ローカル開発セットアップ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ja#local-development-environment-set-up) のドキュメントを参照してください。</li><li>Experience Manager [ウォークスルー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=ja#accessing)へのアクセスの設定</li></ol> | <ol><li>[開発の基本](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ja)</li><li>[開発のガイドライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ja)</li><li>[Experience Manager プロジェクト構造について](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=ja)</li><li>[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)</li><li>[Digital Foundation ブループリント](https://solutionpartners.adobe.com/content/dam/solution/en/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[スタイルシステム](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=ja)</li><li>[オーバーレイ](/help/implementing/developing/introduction/overlays.md)</li><li>[Experience Manager as a Cloud Service API レファレンス](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/)</li></ol> |
+| <ol><li>詳しくは、 [Adobe Experience Manager SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ja) のドキュメントを参照してください。</li><li>Dispatcher SDK のインストール方法については、「[Dispatcher SDK のインストール](https://video.tv.adobe.com/v/30601)」を視聴してください。</li><li>Dispatcher SDK の設定方法については、「[Dispatcher SDK の設定](https://video.tv.adobe.com/v/30602)」を視聴してください。</li><li>詳細については、 [ローカル開発セットアップ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ja#local-development-environment-set-up) のドキュメントを参照してください。</li><li>Experience Manager [ウォークスルー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=ja#accessing)へのアクセスの設定</li></ol> | <ol><li>[開発の基本](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ja)</li><li>[開発のガイドライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ja)</li><li>[Experience Manager プロジェクト構造について](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=ja)</li><li>[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)</li><li>[Digital Foundation ブループリント](https://solutionpartners.adobe.com/content/dam/solution/en/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[スタイルシステム](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=ja)</li><li>[オーバーレイ](/help/implementing/developing/introduction/overlays.md)</li><li>[Experience Manager as a Cloud Service API レファレンス](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/)</li></ol> |
 
 >[!TIP]
 > [WKND を開発し、ローカル Experience Manager SDK にデプロイする方法](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)に関するチュートリアルを参照してください。
 
 ### デプロイ
 
-開発者は、コードを作成してローカルでテストし、リモートのAEM as a Cloud Service環境にプッシュします。
+開発者はコードを作成しローカルでテストします。コードはその後、リモートの AEM as a Cloud Service 環境にプッシュされます。
 
-Cloud Managerは、Managed Servicesのオプションのコンテンツ配信ツールでしたが、現在は必須となっています。 これは、AEM as a Cloud Service環境にコードをデプロイするための唯一のメカニズムです。
+Managed Services のオプションのコンテンツ配信ツールであった Cloud Manager が必須になりました。これは、AEM as a Cloud Service 環境にコードをデプロイするための唯一のメカニズムです。
 
 AEM as a Cloud Service 環境を設定およびデプロイする方法については、セルフヘルプのリソースを参照してください。
 
 1. [CM パイプラインを設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=ja)
+
    * 実稼動パイプライン
    * 非実稼動パイプラインとコード品質専用パイプライン
-2. [コードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=ja)
-3. [テスト結果について](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=ja)
-4. **ログへのアクセス**
+
+1. [コードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=ja)
+1. [テスト結果について](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=ja)
+1. **ログへのアクセス**
+
    * [CM UI 経由](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=ja)
    * [Adobe I/O CLI 経由](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=ja#debugging)
-5. [運用と保守](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/home.html?lang=ja)
+
+1. [運用と保守](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/home.html?lang=ja)
+
    * [OSGI 設定の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ja)
    * [バックアップと復元](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html?lang=ja)
 
@@ -88,17 +93,20 @@ AEM as a Cloud Service 環境を設定およびデプロイする方法につい
 ### ヘルプとリソース
 
 1. [デバッグのヒントとテクニック](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html?lang=ja#debugging-aem-as-a-cloud-service)
-2. [デベロッパーコンソール](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ja#debugging)
-3. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=ja)（ローカル SDK および Experience Manager クラウド開発環境でのみ使用可能）
-4. [ログとログ作成](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=ja#debugging)
+1. [デベロッパーコンソール](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ja#debugging)
+1. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=ja)（ローカル SDK および Experience Manager クラウド開発環境でのみ使用可能）
+1. [ログとログ作成](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=ja#debugging)
+
    * [CM ログ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=ja#debugging)（build-unit-testing、code-scanning、build-image、deploy）
    * [Experience Manager Cloud Service ログ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=ja#debugging)（aemerror、aemaccess、aemrequest、aemdispatcher、httpderror、httpaccess）
-   * ローカル SDK ログ（host:port/crx-quickstart/logs 下）
+   * ローカルのSDKログ（host:port/crx-quickstart/logs の下）
 
 >[!NOTE]
-> その他のヘルプについては、以下を参照してください。
+>
+> その他のヘルプ情報：
+>
 >1. [Experience Manager サポートチームに問い合わせる](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=ja)
->2. [Experience Manager コミュニティとフォーラム](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=ja)を探索する
+>1. [Experience Manager コミュニティとフォーラム](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=ja)を探索する
 
 <br>
 
@@ -117,17 +125,17 @@ Cloud Service への移行プロセスには、計画、実行、運用開始後
 
 Cloud Service への推奨される移行プロセスの概要を次の図に示します。
 
-![Cloud Serviceへの推奨される移行プロセスの概要 &#x200B;](/help/journey-migration/assets/home-img1.png)
+![Cloud Service への推奨される移行プロセスの概要](/help/journey-migration/assets/home-img1.png)
 
 <br>
 
 ### 計画
 
-Cloud Serviceへの移行ジャーニーを開始する前に、以下を理解しておく必要があります。
+Cloud Service への移行プロセスを開始する前に、次を行う必要があります。
 
-* Experience Managerのas a Cloud Serviceをよく理解する
-* 主な変更点を確認します
-* 置き換えられた機能または非推奨（廃止予定）となった機能の確認
+* Experience Manager as a Cloud Service について理解する
+* 重要な変更点を確認する
+* 置き換えられた機能または非推奨（廃止予定）となった機能を確認する
 
 <table>
 <tr>
@@ -154,19 +162,19 @@ Cloud Serviceへの移行ジャーニーを開始する前に、以下を理解�
 
 プロジェクトの実行段階を開始する前に、Cloud Service の利用を開始する必要があります。また、Cloud Manager について理解しておく必要があります。これは、プロジェクトコードを Experience Manager Cloud Service インスタンスに配置するための仕組みです。
 
-Cloud Manager を使用すると、組織がクラウド内の Experience Manager を自己管理できます。このサービスには継続的統合および継続的配信（[CI／CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/overview/ci-cd-pipelines.html?lang=ja)）のフレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。
+Cloud Manager を使用すると、組織がクラウド内の Experience Manager を自己管理できます。このサービスには継続的インテグレーションおよび継続的配信（[CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/overview/ci-cd-pipelines.html?lang=ja)）のフレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。
 
 #### コンテンツの移行
 
-1. [コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ja#migration)：既存のコンテンツをソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM Cloud Service インスタンスに移動するために使用します。
-2. [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ja#package-manager)：リポジトリーの可変コンテンツのインポートおよびエクスポートに使用します。
+1. [コンテンツトランスファーツール](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ja#migration)：既存のコンテンツをソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM Cloud Service インスタンスに移動するために使用します。
+1. [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ja#package-manager)：リポジトリーの可変コンテンツのインポートおよびエクスポートに使用します。
 
 
 #### リファクタリング／最適化
 
 | はじめに | コードの確認とリファクタリング | ディスパッチャーの確認 |
 |---|---|---|
-| <ul><li>[ローカル開発の設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ja#local-development-environment-set-up)</li><li>[ローカルディスパッチャーの設定](https://video.tv.adobe.com/v/35077?captions=jpn)</li><li>[SDK API jar を使用してコードをコンパイルする](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ja)</li><li>[AEM 開発のガイドラインの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ja)<ul><li>バックグラウンドタスクと長時間実行ジョブ</li><li>Sling スケジューラー</li><li>入力ストリームの使用状況など</li></ul></li></ul> | <ul><li>ソース環境で [ベストプラクティスアナライザー（BPA）](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ja) を実行する。[**移行のみ**]<ul><li>プロジェクト構造の考慮事項（[クラウドのアーキタイプ](https://github.com/adobe/aem-project-archetype)を基に）<ul><li>コードとコンテンツの分離（可変と不変）</li><li>[カスタムインデックス定義](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=ja)</li><li>[カスタム実行モード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ja)</li></ul></li></ul></li><li>必要な変更を確認し、実行する</li><li>ローカル SDK [にデプロイ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)する</li><li>AEM SDK を介してスモークテストを実行</li></ul> | <ul><li>[ディスパッチャー設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=ja)のリファクタリングを確認</li><li>必要に応じて、[Dispatcher コンバーター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/dispatcher-transformation-utility-tools.html?lang=ja)ツールを使用します。[**移行のみ**]</li><li>テストは[ディスパッチャー SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=ja#prerequisites) を使用して実行可能</li></ul> |
+| <ul><li>[ローカル開発の設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ja#local-development-environment-set-up)</li><li>[ローカルディスパッチャーの設定](https://video.tv.adobe.com/v/30602/)</li><li>[SDK API jar を使用してコードをコンパイルする](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ja)</li><li>[AEM 開発のガイドラインの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ja)<ul><li>バックグラウンドタスクと長時間実行ジョブ</li><li>Sling スケジューラー</li><li>入力ストリームの使用状況など</li></ul></li></ul> | <ul><li>ソース環境で [ベストプラクティスアナライザー（BPA）](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ja) を実行する。[**移行のみ**]<ul><li>プロジェクト構造の考慮事項（[クラウドのアーキタイプ](https://github.com/adobe/aem-project-archetype)を基に）<ul><li>コードとコンテンツの分離（可変と不変）</li><li>[カスタムインデックス定義](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=ja)</li><li>[カスタム実行モード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ja)</li></ul></li></ul></li><li>必要な変更を確認し、実行する</li><li>ローカル SDK [にデプロイ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)する</li><li>AEM SDK を介してスモークテストを実行</li></ul> | <ul><li>[ディスパッチャー設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=ja)のリファクタリングを確認</li><li>必要に応じて、[Dispatcher コンバーター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/dispatcher-transformation-utility-tools.html?lang=ja)ツールを使用します。[**移行のみ**]</li><li>テストは[ディスパッチャー SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=ja#prerequisites) を使用して実行可能</li></ul> |
 
 >[!TIP]
 > アセット顧客：[アセットクラウド移行](https://github.com/adobe/aem-cloud-migration)ツールを使用したアセットワークフローの確認とリファクタリング
@@ -175,9 +183,9 @@ Cloud Manager を使用すると、組織がクラウド内の Experience Manage
 #### デプロイメント／実稼働開始
 
 1. [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html?lang=ja) git へのデプロイ
-2. [Cloud Manager 品質パイプライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html?lang=ja)を介してカスタマーコードを実行
+2. [Cloud Manager 品質パイプライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)を介してカスタマーコードを実行
 3. [開発環境へのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=ja#debugging)
-4. [**移行のみ**]&#x200B;パッケージまたは[コンテンツ転送ツール](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)（CTT）を使用したコンテンツの転送
+4. **移行のみ**&#x200B;パッケージまたは[コンテンツトランスファーツール](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)（CTT）を使用したコンテンツの転送
 5. 推奨されるテストサイクル（スモークテスト、QA など）の実行
 6. Cloud Manager 実稼働パイプラインへの昇格
 7. スモークテスト検証
@@ -190,10 +198,12 @@ Cloud Manager を使用すると、組織がクラウド内の Experience Manage
 運用開始後段階では、一時ファイルの確実なクリーンアップ、継続的な開発に関するベストプラクティスの確認、ログの管理が必要です。
 
 >[!TIP]
+>
 > AEM as a Cloud Service 環境のトラブルシューティングに使用できるツールがあります。
+>
 >1. [デベロッパーコンソール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ja)
->2. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=ja)
->3. [ログの管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=ja)
+>1. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=ja)
+>1. [ログの管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=ja)
 
 <br>
 
@@ -201,7 +211,7 @@ Cloud Manager を使用すると、組織がクラウド内の Experience Manage
 
 | 評価 | リファクタリング | Experience Manager の最新化 | コンテンツの移行 |
 |------------|-------------|---------------------------------|-------------------|
-| <ul><li>[ベストプラクティスアナライザー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ja)</li></li> | <ul><li>[Unified Experience プラグイン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html?lang=ja)</li></ul> | <ul><li>[静的テンプレートから編集可能テンプレートへ](https://opensource.adobe.com/aem-modernize-tools/pages/structure.html)</li><li>[デザイン設定からポリシーへ](https://opensource.adobe.com/aem-modernize-tools/pages/policy.html) <li>[基盤コンポーネントからコアコンポーネントへ](https://opensource.adobe.com/aem-modernize-tools/pages/component.html)</li><li>[クラシック UI からタッチ操作対応 UI へ](https://opensource.adobe.com/aem-modernize-tools/pages/all-in-one.html)</li></ul> | <ul><li>[コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja)</li><li>[パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ja#contentmanagement)</li></ul> |
+| <ul><li>[ベストプラクティスアナライザー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ja)</li></li> | <ul><li>[Unified Experience プラグイン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html?lang=ja)</li></ul> | <ul><li>[静的テンプレートから編集可能テンプレートへ](https://opensource.adobe.com/aem-modernize-tools/pages/structure.html)</li><li>[デザイン設定からポリシーへ](https://opensource.adobe.com/aem-modernize-tools/pages/policy.html) <li>[基盤コンポーネントからコアコンポーネントへ](https://opensource.adobe.com/aem-modernize-tools/pages/component.html)</li><li>[クラシック UI からタッチ操作対応 UI へ](https://opensource.adobe.com/aem-modernize-tools/pages/all-in-one.html)</li></ul> | <ul><li>[コンテンツトランスファーツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja)</li><li>[パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ja#contentmanagement)</li></ul> |
 
 >[!NOTE]
 > その他のヘルプについては、以下を参照してください。

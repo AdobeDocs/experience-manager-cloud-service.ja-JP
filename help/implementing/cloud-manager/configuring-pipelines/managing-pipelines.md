@@ -5,9 +5,9 @@ index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 4ddca61044d7923db9fd08b96cb18cedfd71cf70
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 1. **プログラムの概要**&#x200B;ページで、![パイプラインタブ - ワークフローアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)「**パイプライン**」タブをクリックします。
 
-1. **パイプライン**&#x200B;ページでは、プログラムのすべてのパイプラインのリストを確認できるほか、**パイプラインカード**&#x200B;の場合と同様に、パイプラインの実行を開始および停止することができます。
+1. **パイプライン**&#x200B;ページでは、プログラムのすべてのパイプラインのリストを確認できるほか、**パイプラインカード**&#x200B;の場合と同様に、パイプライン実行を開始および停止することができます。
 
 パイプラインが実行中の場合は、「**ステータス**」列の ![情報 - 中程度のアイコン](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg) をクリックして、実行に関する詳細を示すポップアップを表示します。ポップアップ内で、「**詳細を表示**」をクリックして[パイプライン実行の詳細](#view-details)を表示します。
 

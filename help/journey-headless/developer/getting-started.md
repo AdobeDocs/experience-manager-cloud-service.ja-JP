@@ -4,8 +4,8 @@ description: ここでは、AEM ヘッドレスデベロッパージャーニー
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3068'
 ht-degree: 100%
@@ -79,7 +79,7 @@ AEM のヘッドレス機能は、いくつかの主要機能に基づいてい�
 
 コンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーションおよび使用が可能になります。複数の場所や複数のチャネルで使用可能なコンテンツを用意できるようになります。
 
-コンテンツフラグメントには構造化されたコンテンツが含まれ、JSON 形式で配信できます。
+コンテンツフラグメントには構造化コンテンツが含まれ、JSON 形式で配信できます。
 
 ### GraphQL および REST API {#apis}
 
@@ -108,13 +108,13 @@ AEM は、完全なヘッドレスと、CMS の従来のフルスタックまた
 
 このモデルでは、AEM は、AEM コンテンツフラグメントを使用してコンテンツを作成および提供する目的でのみ使用されます。コンテンツのレンダリングとインタラクションは、それを使用する外部アプリケーションに委ねられます。多くの場合、これは単一ページアプリケーション（SPA）です。
 
-#### レベル 2：SPA を AEM に組み込む - ハイブリッドモデル {#level-2}
+#### レベル 2：SPA を AEM に埋め込む - ハイブリッドモデル {#level-2}
 
 このレベルの統合は、第 1 レベルに基づいて構築されますが、外部アプリケーション（SPA）を AEM に組み込むことができるため、コンテンツ作成者は、AEM 内の外部アプリケーションのコンテキストでコンテンツ表示することができます。また、AEM 内での外部アプリケーションの編集（制限付き）もサポートされます。
 
 このレベルの利点は、コンテンツ作成者が、組み込みの外部 SPA でコンテンツをコンテキスト内で表示しながら、ヘッドフルな方法で AEM でコンテンツを柔軟に作成し、ヘッドレスでコンテンツを配信できることです。
 
-#### レベル 3：SPA を AEM に組み込んで完全に有効にする - ハイブリッドモデル {#level-3}
+#### レベル 3：SPA を AEM に埋め込んで完全に有効にする - ハイブリッドモデル {#level-3}
 
 このレベルの統合は、レベル 2 に基づいて構築され、外部 SPA のほとんどのコンテンツを AEM 内で編集できるようにします。
 
@@ -287,7 +287,7 @@ GraphQL は、AEM とヘッドレスコンテンツのコンシューマーの�
 * [ヘッドレス CMS としての AEM の概要](/help/headless/introduction.md)
 * [AEM 開発者ポータル](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
 * [AEM ヘッドレスチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja) - これらの実践チュートリアルでは、AEM を使用してヘッドレスエンドポイントにコンテンツを配信するための様々なオプションの使用方法を確認し、最適なものを選択します。
-* [GraphQL API を使用したヘッドレスコンテンツ管理](https://experienceleague.adobe.com/ja?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - AEM に実装されている GraphQL API の概要についてのコースです。Adobe ID を使用した認証が必要です。
+* [GraphQL API を使用したヘッドレスコンテンツ管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - AEM に実装されている GraphQL API の概要についてのコースです。Adobe ID を使用した認証が必要です。
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)（英語のみ）- この GitHub プロジェクトには、AEM の GraphQL API を紹介するためのサンプルアプリケーションが含まれています。
 * [オーサリングの概念](/help/sites-cloud/authoring/author-publish.md) - オーサーとパブリッシュの設定の詳細など、AEM のオーサリング環境に関する技術ドキュメント
 * [ページの公開](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - AEM でのコンテンツの公開に関する技術ドキュメント

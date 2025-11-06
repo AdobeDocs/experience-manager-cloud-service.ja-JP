@@ -3,10 +3,10 @@ title: React を使用した AEM での SPA の概要
 description: この記事では、サンプルの SPA アプリケーションを紹介し、その設定方法を説明するほか、React フレームワークを使用して独自の SPA の運用を速やかに開始する方法についても説明します。
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 100%
 

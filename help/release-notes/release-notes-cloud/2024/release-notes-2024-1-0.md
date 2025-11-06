@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.1.0 リ�
 exl-id: 9f5d97c6-6536-4593-acbf-cbe8bf9b5eeb
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 90%
+source-wordcount: '1018'
+ht-degree: 89%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 90%
 
 2024.1.0 リリースで追加された機能の概要については、2024年1月のリリースに関する概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3448930?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3427041?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -108,11 +108,12 @@ Dynatrace のお客様は、AEM の使用状況を監視できます。アプリ
 
 ### サイトテーマとサイトテンプレートを使用したフロントエンドコードの RDE サポート：早期導入プログラム {#rde-frontend-early-adopter}
 
-[迅速な開発環境（RDE）](/help/implementing/developing/introduction/rapid-development-environments.md)は、早期導入者向けに、[サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)と[サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)に基づいたフロントエンドコードをサポートするようになりました。RDE では、[フロントエンドパイプライン](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)ではなくコマンドラインディレクティブを使用して行われます。試してフィードバックを提供するには、**aemcs-rde-support@adobe.com** までご連絡ください。
+[高速開発環境（RDE）](/help/implementing/developing/introduction/rapid-development-environments.md)は、早期導入者向けに、[サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)と[サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)に基づいたフロントエンドコードをサポートするようになりました。RDE では、[フロントエンドパイプライン](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)ではなくコマンドラインディレクティブを使用して行われます。試してフィードバックを提供するには、**aemcs-rde-support@adobe.com** までご連絡ください。
 
 ### ドメインマッピング早期導入プログラム {#cdn-config-early-adopter}
 
-オプションでライセンス可能な web アプリケーションファイアウォール（WAF）ルールを含む、最近リリースされた[トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)に加えて、設定パイプラインを使用して[他のタイプの CDN 設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)を宣言およびデプロイする機会があります。**aemcs-cdn-config-adopter@adobe.com** にメールを送信して早期導入プログラムに参加し、以下へのアクセス権を取得します。
+オプションでライセンス可能な web アプリケーションファイアウォール（WAF）ルールを含む、最近リリースされた[トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)に加えて、設定パイプラインを使用して[他のタイプの CDN 設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)を宣言およびデプロイする機会があります。早期導入プログラムに参加するには、**`aemcs-cdn-config-adopter@adobe.com`** に電子メールを送信して、次へのアクセス権を取得します。
+
 * 301/302 クライアントサイドのリダイレクト
 * 任意の接触チャネルに対するエッジでのリクエストのプロキシ処理
 * URL 変換

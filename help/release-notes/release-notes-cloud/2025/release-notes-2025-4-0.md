@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.4.0 リ�
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 97%
@@ -37,7 +37,7 @@ ht-degree: 97%
 
 2025.4.0 リリースで追加された機能の概要については、2025年4月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3464003?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -86,7 +86,7 @@ Dynamic Media Classic レポートダッシュボードの「帯域幅」タブ�
 
 ### プレリリース機能
 
-* [&#x200B; アダプティブFormsおよびフォームフラグメント用のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：ユニバーサルエディターでは、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成が迅速化され、一貫性が高まり、ススパムや自動化による悪用からの保護が強化されます。
+* [ アダプティブFormsおよびフォームフラグメント用のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：ユニバーサルエディターでは、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成が迅速化され、一貫性が高まり、ススパムや自動化による悪用からの保護が強化されます。
 
 * [SharePoint ドキュメントライブラリ - 添付ファイルを元のファイル名で保存](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library)：フォームの添付ファイルを SharePoint ドキュメントライブラリに保存する際に、元のファイル名を使用して保存するオプションが追加されました。この機能強化により、アップロードしたファイルの識別と管理が簡素化されます。
 
@@ -95,7 +95,7 @@ Dynamic Media Classic レポートダッシュボードの「帯域幅」タブ�
    * [フィールドとパネルの検証条件](/help/forms/rule-editor-core-components-usecases.md)：ルールエディターに _IsValid_ 条件と _IsNotValid_ 条件が含まれるようになりました。これらを使用すると、特定のフィールドまたはパネル全体（水平タブ、垂直タブ、アコーディオン、ウィザードなどのレイアウトを含む）の検証ステータスを確認できるので、検証結果に基づいてフォームのナビゲーションとユーザーエクスペリエンスが向上します。
 * [SharePoint リストの範囲管理の改善](/help/forms/connect-forms-to-sharepoint-list.md)：SharePoint サイトでは、/sites や /teams などのすべての管理パスをサポートするようになりました。この機能強化により、様々な SharePoint サイト構造をまたいで幅広い統合が可能になり、組織のコンテンツに接続する際の柔軟性が向上します。
 * [SharePoint リストへのレコードのドキュメントの保存のサポート](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields)：SharePoint リストベースのフォームデータモデル（FDM）を使用して作成したフォームでは、レコードのドキュメントのバインド参照フィールドプロパティを設定して、レコードのドキュメント（DoR）を SharePoint リストに保存できるようになりました。この機能強化により、サポートされているフォームデータとドキュメントの SharePoint ストレージとのシームレスな統合が可能になります。
-* [&#x200B; アダプティブフォームフラグメントの自動マッピングのサポート &#x200B;](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form)：アダプティブFormsでは、スキーマオブジェクトが定義済みのフラグメント構造に一致する場合の、マッチングフラグメントの自動挿入をサポートするようになりました。これにより、フォームの作成が合理化され、再利用が促進されます。
+* [ アダプティブフォームフラグメントの自動マッピングのサポート ](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form)：アダプティブFormsでは、スキーマオブジェクトが定義済みのフラグメント構造に一致する場合の、マッチングフラグメントの自動挿入をサポートするようになりました。これにより、フォームの作成が合理化され、再利用が促進されます。
 
 ### AEM Forms の早期アクセス機能 {#forms-new-early-access-features}
 
@@ -112,8 +112,8 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 ### 機能強化 {#enhancements-cif}
 
 * CIF 製品参照データタイプに製品バリアント選択の追加
-* **試行用**:[JSON+LD をCIF コアコンポーネントの PDP に使用 &#x200B;](/help/commerce-cloud/cif-storefront/customizing/json-ld.md)
-* **試行的**: [CIFでキャッシュをクリアする機能 &#x200B;](/help/commerce-cloud/cif-storefront/configuring/clear-cache.md)
+* **試行用**:[JSON+LD をCIF コアコンポーネントの PDP に使用 ](/help/commerce-cloud/cif-storefront/customizing/json-ld.md)
+* **試行的**: [CIFでキャッシュをクリアする機能 ](/help/commerce-cloud/cif-storefront/configuring/clear-cache.md)
 
 ### バグ修正 {#bug-fixes-cif}
 
@@ -157,19 +157,21 @@ Java 17 または 21 ビルドが検出されると、より高パフォーマ�
 
 >[!IMPORTANT]
 >
-> Java 21 **ランタイム**&#x200B;は、2月に開発／RDE 環境にデプロイされました。**4月28日（PT）と29日（PT）**&#x200B;にステージ／実稼動環境に適用する予定です。Java 21（または Java 17）を使用した&#x200B;**コードのビルド**&#x200B;は、Java 21 ランタイムとは独立しています。Java 21（または Java 17）でコードをビルドする手順を明示的に実行する必要があります。
+> Java 21 **ランタイム**&#x200B;は、2月に開発／RDE 環境にデプロイされました。**4月28日（PT）と29日（PT）**&#x200B;にステージ／本番環境に適用する予定です。Java 21（または Java 17）を使用した&#x200B;**コードのビルド**&#x200B;は、Java 21 ランタイムとは独立しています。Java 21（または Java 17）でコードをビルドする手順を明示的に実行する必要があります。
 
 ### AEM のログ設定ポリシーの適用 {#logconfig-policy}
 
 顧客環境を効果的に監視するには、AEM Java ログで一貫性のある形式を維持し、カスタム設定で上書きされないようにする必要があります。ログ出力は、デフォルトのファイルに出力されたままにする必要があります。AEM 製品コードの場合、デフォルトのログレベルを保持する必要があります。ただし、顧客開発コードの場合、ログレベルを調整できます。
 
 そのため、次の OSGi プロパティを変更しないでください。
+
 * **Apache Sling ログ設定**（PID：`org.apache.sling.commons.log.LogManager`）- *すべてのプロパティ*
 * **Apache Sling Logging Logger Configuration**（ファクトリー PID：`org.apache.sling.commons.log.LogManager.factory.config`）：
    * `org.apache.sling.commons.log.file`
    * `org.apache.sling.commons.log.pattern`
 
 5月中旬に、AEM ではこれらのプロパティに対するカスタム変更がすべて無視されるポリシーが適用されます。ダウンストリームプロセスを確認し、それに応じて調整してください。例えば、ログ転送機能を使用する場合：
+
 * ログ宛先でカスタム（デフォルト以外）ログ形式が必要な場合は、取り込みルールを更新する必要があります。
 * ログレベルの変更によってログの冗長性が低下する場合は、デフォルトのログレベルではログのボリュームが大幅に増加することがあります。
 

@@ -4,8 +4,8 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service のコンテ�
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 2c1b444d7b7dad94cc9ebda59783f9c6fde84a91
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1892'
 ht-degree: 97%
@@ -27,7 +27,7 @@ RTE の概念と設定に必要な手順を以下に示します。
 
 >[!NOTE]
 >
->このドキュメントで説明される RTE は、ページエディターで使用できる RTE を表しています。 最新のユニバーサルエディターを使用している場合、詳しくは、[&#x200B; ユニバーサルエディターの RTE の設定 &#x200B;](/help/implementing/universal-editor/configure-rte.md) ドキュメントを参照してください。
+>このドキュメントで説明される RTE は、ページエディターで使用できる RTE を表しています。 最新のユニバーサルエディターを使用している場合、詳しくは、[ ユニバーサルエディターの RTE の設定 ](/help/implementing/universal-editor/configure-rte.md) ドキュメントを参照してください。
 
 ## 作成者が使用できるユーザーインターフェイスを理解します。 {#understand-rte-ui}
 

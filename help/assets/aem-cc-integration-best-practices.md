@@ -4,10 +4,10 @@ description: Experience Manager デプロイメントを Adobe Creative Cloud �
 contentOwner: AG
 mini-toc-levels: 1
 feature: Collaboration, Adobe Asset Link, Desktop App
-role: User, Architect, Admin
+role: User, Developer, Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '3438'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Adobe Creative Cloud は、デジタルアセットの作成を支援するソ�
 | クリエイティブユーザーは、[!DNL Experience Manager] からアセットを見つけ、開いて使用し、編集して変更を [!DNL Experience Manager] にアップロードするほか、[!DNL Creative Cloud] アプリケーションを開いたまま、[!DNL Experience Manager] に新しいファイルをアップロードします。 | [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) | Photoshop、Illustrator、InDesign. |
 | ビジネスユーザーは、アセットのオープンと使用、編集と [!DNL Experience Manager] への変更内容のアップロード、[!DNL Experience Manager] への新しいファイルのアップロードをデスクトップ環境から簡単に行えます。汎用の統合を使用して、アドビ以外のアセットも含め、あらゆるアセットタイプをネイティブデスクトップアプリケーションで開きます。 | [[!DNL Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja) | Windows および Mac デスクトップ上の Experience Manager デスクトップアプリケーション |
 | マーケターとビジネスユーザーは、Experience Manager 内から Adobe Stock アセットの検出、プレビュー、ライセンス取得と保存、管理を行えます。ライセンスを取得し保存したアセットは、限定された Adobe Stock メタデータを提供してガバナンスの強化に役立ちます。 | [Experience Manager と Adobe Stock の統合](aem-assets-adobe-stock.md) | [!DNL Experience Manager] Web インターフェイス |
-| デジタル製品デザイナーとマーケターとのコラボレーションを改善できます。デザイナーが Adobe XD キャンバス上のデザインとワイヤフレームモデルでデジタルアセットを使用できます。 | [[!DNL Adobe Asset Link] （ [!DNL Adobe XD] 用）](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
+| デジタル製品のデザイナーとマーケターとのコラボレーションを改善できます。デザイナーが Adobe XD キャンバス上のデザインとワイヤフレームモデルでデジタルアセットを使用できます。 | [[!DNL Adobe Asset Link] （ [!DNL Adobe XD] 用）](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
 | マーケターは、アップロードしたアセットと、カスタマイズを使用して作成した事前定義済みのアクションに基づいて、バリエーションと派生物を自動的に作成できます。この自動処理を使用すると、コンテンツベロシティが向上し、手作業が軽減されます。 | [コンテンツ自動化](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] Web インターフェイス |
 
 ここでは、主に、コラボレーションニーズの最初の 2 つの側面に焦点を当てます。アセットの大規模な配布と調達については、使用例として簡単に説明します。そのようなニーズに対するソリューションとしては、Adobe Brand Portal または Asset Share Commons を検討してください。代替ソリューション（[Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=ja)、[Asset Share Commons](https://opensource.adobe.com/asset-share-commons/) コンポーネントに基づいて構築できるソリューション、[リンク共有](share-assets.md)、[Experience Manager Assets Web UI](/help/assets/manage-digital-assets.md) の使用など）については、それぞれ固有の要件に基づいた検討が必要です。

@@ -5,14 +5,14 @@ feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: f43c2586-9075-47dc-aa45-5ed2d2979b6d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
 
 ---
-
 
 # Forms Experience Builder – よくある質問
 
@@ -51,7 +51,7 @@ Forms Experience Builder を使用する前に、次のことを確認します�
 - アダプティブ Forms コアコンポーネントを使用したAEM Forms as a Cloud Service
 - フォームの概念とビジネス要件の基本的な理解
 
-技術的な設定要件について詳しくは、[Forms Experience Builder のデプロイと設定 &#x200B;](deploy-forms-experience-builder.md) を参照してください。
+技術的な設定要件について詳しくは、[Forms Experience Builder のデプロイと設定 ](deploy-forms-experience-builder.md) を参照してください。
 
 ### 環境内でForms Experience Builder を有効にするにはどうすればよいですか？
 
@@ -231,8 +231,8 @@ Forms Experience Builder で作成されたFormsは、次のような標準のAE
 
 その他のサポート：
 
-- [&#x200B; はじめる前に &#x200B;](forms-experience-builder-getting-started.md) を確認してください
-- [&#x200B; デプロイと設定ガイド &#x200B;](deploy-forms-experience-builder.md) を確認します
+- [ はじめる前に ](forms-experience-builder-getting-started.md) を確認してください
+- [ デプロイと設定ガイド ](deploy-forms-experience-builder.md) を確認します
 - システム管理者にお問い合わせください
 - 技術的な問題については、Adobe サポートにお問い合わせください
 

@@ -5,8 +5,8 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: 5578cfd1bbe91d904d3f36b67acf610f9196cb7d
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 100%
 
@@ -46,6 +46,7 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
 >[!NOTE]
 >
 >**[コンテンツフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)**&#x200B;と&#x200B;**エクスペリエンスフラグメント**&#x200B;は、AEM 内の異なる機能です。
+>
 >* **コンテンツフラグメント**&#x200B;は、定義と構造を備えたエディトリアルコンテンツですが、視覚的なデザインやレイアウトは追加されていません。コンテンツフラグメントを使用すれば、テキスト、数値、日付などの構造化データにアクセスできます。
 >* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、web ページのフラグメントです。
 >
@@ -79,8 +80,8 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
 ## エクスペリエンスフラグメントの整理 {#organizing-your-experience-fragments}
 
 以下をお勧めします。
-* フォルダーを使用してエクスペリエンスフラグメントを整理する。
 
+* フォルダーを使用してエクスペリエンスフラグメントを整理する。
 * [これらのフォルダーで使用可能なテンプレートを設定する](#configure-allowed-templates-folder)。
 
 フォルダーを作成すると、次の操作が可能になります。

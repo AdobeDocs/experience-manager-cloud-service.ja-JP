@@ -3,11 +3,11 @@ title: コンソールのカスタマイズ
 description: オーサーインスタンスのコンソールをカスタマイズするために AEM が提供する様々なオプションについて説明します。
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 100%
+source-wordcount: '515'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ Clientlibs を使用すると、デフォルトの実装を拡張して新しい
 
 ## オーバーレイ {#overlays}
 
-オーバーレイはノード定義に基づいており、`/libs` 下にある標準の機能に、`/apps` 下にあるカスタマイズした独自機能を重ねることができます。[Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) は継承を許可しているので、オーバーレイを作成するときに、オリジナルの 1 対 1 のコピーは必要ありません。
+オーバーレイはノード定義に基づいており、`/libs` 下にある標準の機能に、`/apps` 下にあるカスタマイズした独自機能を重ねることができます。:1Sling Resource Merger[ は継承を許可しているので、オーバーレイを作成するときに、オリジナルの 1](/help/implementing/developing/introduction/sling-resource-merger.md) コピーは必要ありません。
 
 オーバーレイを様々な方法で使用して AEM コンソールを拡張できます。次の節では、いくつかの例を示します。
 

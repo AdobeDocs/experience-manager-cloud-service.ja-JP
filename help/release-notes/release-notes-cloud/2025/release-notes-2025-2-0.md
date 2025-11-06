@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.2.0 リ�
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: 403ffbede5438131d0b0e770215b990e2d16c018
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 96%
@@ -37,7 +37,7 @@ ht-degree: 96%
 
 2025.2.0 リリースで追加された機能の概要については、2025年2月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3458081?captions=jpn&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3458080?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -57,11 +57,11 @@ ht-degree: 96%
 
 **コンテンツフラグメントエディターのロールアウト**
 
-今後も、[&#x200B; 統合シェル &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md) （Spectrum-UI 使用）を使用して、AEM as a Cloud Serviceで新しい [&#x200B; コンテンツフラグメントエディター &#x200B;](/help/overview/aem-cloud-service-on-unified-shell.md) を有効にします。 2024年11月にすべての Cloud Service 開発環境のデフォルトになった後、2025年4月1日（PT）にはすべてのステージング環境のデフォルト、2025年5月1日（PT）にはすべての実稼動環境のデフォルトとして設定される予定です。すべてのケースで、ユーザーは AEM タッチ UI で従来のコンテンツフラグメントエディターに戻すオプションを引き続き利用できます。
+今後も、[ 統合シェル ](/help/sites-cloud/administering/content-fragments/authoring.md) （Spectrum-UI 使用）を使用して、AEM as a Cloud Serviceで新しい [ コンテンツフラグメントエディター ](/help/overview/aem-cloud-service-on-unified-shell.md) を有効にします。 2024年11月にすべての Cloud Service 開発環境のデフォルトになった後、2025年4月1日（PT）にはすべてのステージング環境のデフォルト、2025年5月1日（PT）にはすべての本番環境のデフォルトとして設定される予定です。すべてのケースで、ユーザーは AEM タッチ UI で従来のコンテンツフラグメントエディターに戻すオプションを引き続き利用できます。
 
 **Translation HTTP API**
 
-しばらくの間、早期導入モードであった AEM Translation HTTP REST API が一般提供（GA）されるようになりました。ドキュメントは [&#x200B; こちら」で参照できます。](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/translation/) API を使用すると、AEM内のコンテンツの翻訳管理プロセスで必要な手順を自動化できます。
+しばらくの間、早期導入モードであった AEM Translation HTTP REST API が一般提供（GA）されるようになりました。ドキュメントは [ こちら」で参照できます。](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/translation/) API を使用すると、AEM内のコンテンツの翻訳管理プロセスで必要な手順を自動化できます。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -121,13 +121,14 @@ Java 17 または 21 ビルドが検出されると、より高パフォーマ�
 
 >[!IMPORTANT]
 >
-> 2 月に、Java 21 **ランタイム**&#x200B;が dev/RDE 環境にデプロイされました（Java 17 または 21 で既にビルドされ、Java 21 ランタイムが存在する環境は除く）。Java 21 は、4 月にステージング／実稼動環境に適用されます。
+> 2 月に、Java 21 **ランタイム**&#x200B;が dev/RDE 環境にデプロイされました（Java 17 または 21 で既にビルドされ、Java 21 ランタイムが存在する環境は除く）。Java 21 は、4 月にステージング／本番環境に適用されます。
 
 ### Edge コンピューティング - フィードバックのリクエスト {#edge-computing-feedback}
 
 Edge コンピューティングには、データ処理がブラウザーに近づくので、待ち時間が短縮されるなどのメリットがあります。 このテクノロジーが AEM の配信を公開および Edge Delivery Services プロジェクトに役立つかどうかについて、ぜひお聞かせください。さらに、製品ロードマップへのインプットとして、お客様が何を想定されるかをお教えください。
 
 いくつかの考えられるユースケース：
+
 * コンテンツへのアクセスをゲートする IdP を使用した認証
 * 位置情報、デバイスタイプ、ユーザー属性などに基づく動的（パーソナライズされ、ローカライズされた）コンテンツのレンダリング。
 * 高度な画像操作

@@ -2,12 +2,12 @@
 title: Edge Delivery Services を使用したアダプティブフォームの公開
 description: 実稼動環境での使用を目的として、Edge Delivery Services を使用してアダプティブフォームを公開、設定、アクセスする方法について説明します。
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 keywords: フォームの公開, Edge Delivery Services, フォーム設定, CORS, リファラーフィルター
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 100%
 
@@ -109,7 +109,7 @@ Edge Delivery Services へのフォームの公開は、次の 3 段階のアプ
 
 >[!IMPORTANT]
 >
->**実稼動環境に必須**：実稼動環境でフォーム送信が機能するには、これらの設定が必須です。
+>**本番環境に必須**：本番環境でフォーム送信が機能するには、これらの設定が必須です。
 
 +++
 

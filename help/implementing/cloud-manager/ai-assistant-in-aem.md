@@ -3,9 +3,9 @@ title: AEM の AI アシスタント
 description: AI アシスタントを使用して回答を見つけ、Adobe Experience Manager で使用可能なソリューションのトラブルシューティングを行います。
 solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
-role: Admin, Architect, Developer, User
+role: Admin, Developer, User
 exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
-source-git-commit: b0570595a05f311a16f2522cabc0661e5f1db15e
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 5%
@@ -31,7 +31,7 @@ AEM に直接埋め込まれ、AEM Experience Hub、Cloud Manager、オーサー
 
 次の 3 分 25 秒のビデオでは、AEMの AI アシスタントについて順を追って説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475359/?learn=on&enablevpops&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## AEMの AI アシスタントにアクセスできます{#get-access}
 
@@ -42,7 +42,7 @@ AEMの AI アシスタントにアクセスするには、次が必要です。
 
 >[!NOTE]
 >
->AEMの AI アシスタントリクエストは、Adobe Identity Management サービス（IMS）を通じて認証されます。 詳しくは、[Adobe Identity Management サービスの概要 &#x200B;](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf) を参照してください。
+>AEMの AI アシスタントリクエストは、Adobe Identity Management サービス（IMS）を通じて認証されます。 詳しくは、[Adobe Identity Management サービスの概要 ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf) を参照してください。
 
 **AEMで AI アシスタントにアクセスするには：**
 
@@ -50,7 +50,7 @@ AEMの AI アシスタントにアクセスするには、次が必要です。
 
 1. AEMで AI アシスタントを使用するには、AI アシスタントを通じて製品ナレッジにアクセスする権限が必要です。 この権限は、デフォルトでオンになっています。
 
-   製品ナレッジにアクセスできるユーザーを制御する場合は、Adobe IDに関連付けられた電子メールアドレスから [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) に電子メールを送信します。 Adobeでは、ユーザーレベルのアクセス制御を有効にできます。 これが有効になっていると、管理者は [AEMで AI アシスタントを設定する &#x200B;](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md) の手順に従って、ユーザーレベルのアクセス権を付与できます。
+   製品ナレッジにアクセスできるユーザーを制御する場合は、Adobe IDに関連付けられた電子メールアドレスから [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) に電子メールを送信します。 Adobeでは、ユーザーレベルのアクセス制御を有効にできます。 これが有効になっていると、管理者は [AEMで AI アシスタントを設定する ](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md) の手順に従って、ユーザーレベルのアクセス権を付与できます。
 
 ## 範囲 {#scope}
 
@@ -123,7 +123,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
@@ -136,19 +136,19 @@ AEMで AI アシスタントをリセットし、トピックを変更する際�
 
 1. AEM ユーザーインターフェイス（Cloud Manager ページまたはAEM環境のオーサーインスタンス）の右上隅付近にある「**AI アシスタント**」アイコンをクリックします。
 
-   ![&#x200B; ツールバーの AI アシスタントアイコン &#x200B;](/help/implementing/cloud-manager/assets/ai-assistant-icon.png)
+   ![ ツールバーの AI アシスタントアイコン ](/help/implementing/cloud-manager/assets/ai-assistant-icon.png)
 
-1. 下部の **AI アシスタント** パネルのテキストボックスに、質問またはプロンプトを入力し、`Enter` キーを押すか、![&#x200B; 送信アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg) をクリックします。
+1. 下部の **AI アシスタント** パネルのテキストボックスに、質問またはプロンプトを入力し、`Enter` キーを押すか、![ 送信アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg) をクリックします。
 
    >[!NOTE]
    >
    >このツールを使用する必要がないため、個人データを入力に含めないでください。
 
-   ![AI アシスタントパネルの下部にあるテキストボックス &#x200B;](/help/implementing/cloud-manager/assets/ai-assistant-prompt-text-box.png)
+   ![AI アシスタントパネルの下部にあるテキストボックス ](/help/implementing/cloud-manager/assets/ai-assistant-prompt-text-box.png)
 
-1. 新しい会話（新しいトピックまたはトピック内の変更）を開始するには、![&#x200B; 詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) > **新しい会話の開始** をクリックします。
+1. 新しい会話（新しいトピックまたはトピック内の変更）を開始するには、![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) > **新しい会話の開始** をクリックします。
 
-   ![&#x200B; 省略記号アイコンから AI アシスタントで新しい会話を開始する &#x200B;](/help/implementing/cloud-manager/assets/ai-assistant-start-new-conversation.png)
+   ![ 省略記号アイコンから AI アシスタントで新しい会話を開始する ](/help/implementing/cloud-manager/assets/ai-assistant-start-new-conversation.png)
 
 ### カテゴリ別のプロンプトの検索
 
@@ -156,15 +156,15 @@ AEMの AI アシスタントには、サポートされているトピックや�
 
 **カテゴリ別にプロンプトを検出するには：**
 
-1. AI アシスタント パネルで ![&#x200B; 学習アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg) をクリックして、プロンプト検出パネルをオンにします。
+1. AI アシスタント パネルで ![ 学習アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg) をクリックして、プロンプト検出パネルをオンにします。
 
-   ![AI アシスタントでカテゴリ別のプロンプトを調査できるパネル &#x200B;](/help/implementing/cloud-manager/assets/ai-assistant-discover-prompts.png)
+   ![AI アシスタントでカテゴリ別のプロンプトを調査できるパネル ](/help/implementing/cloud-manager/assets/ai-assistant-discover-prompts.png)
    *AI アシスタントでプロンプトのカテゴリを表示するパネル。*
 
 1. カテゴリを選択して、関連するプロンプトのリストを表示します。
 1. プロンプトを選択して、AI アシスタントが回答できる質問のタイプの例を確認します。
 
-1. プロンプト検出パネルを非表示にするには、もう一度 ![&#x200B; 学習アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg) をクリックします。
+1. プロンプト検出パネルを非表示にするには、もう一度 ![ 学習アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg) をクリックします。
 
 ### AEMの AI アシスタントに関するフィードバックをお寄せください
 
@@ -172,13 +172,13 @@ AEMの AI アシスタントには、サポートされているトピックや�
 
 AEMの AI アシスタントでは、次のオプションを通じて、ご意見やご感想をお寄せください。
 
-![&#x200B; サムズアップ、サムズダウン、フラグアイコン &#x200B;](/help/implementing/cloud-manager/assets/ai-assistant-feedback-icons.png)
+![ サムズアップ、サムズダウン、フラグアイコン ](/help/implementing/cloud-manager/assets/ai-assistant-feedback-icons.png)
 
 | Click | 説明 |
 | --- | --- |
-| ![&#x200B; サムズアップアウトインアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbUpOutline_18_N.svg) | うまくいったことを示し、肯定的なフィードバックを共有します。 |
-| ![&#x200B; サムズダウンラインアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbDownOutline_18_N.svg) | 改善のための提案を行います。 エクスペリエンスに関する特定のコメントを追加し、それを毎日確認します。 |
-| ![&#x200B; フラグアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Flag_18_N.svg) | AEMの AI アシスタントとのインタラクションに関する懸念を報告したり、詳細なフィードバックを提供したりします。 |
+| ![ サムズアップアウトインアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbUpOutline_18_N.svg) | うまくいったことを示し、肯定的なフィードバックを共有します。 |
+| ![ サムズダウンラインアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbDownOutline_18_N.svg) | 改善のための提案を行います。 エクスペリエンスに関する特定のコメントを追加し、それを毎日確認します。 |
+| ![ フラグアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Flag_18_N.svg) | AEMの AI アシスタントとのインタラクションに関する懸念を報告したり、詳細なフィードバックを提供したりします。 |
 
 ## AEMの AI アシスタントに関するよくある質問（FAQ） {#ai-faq}
 

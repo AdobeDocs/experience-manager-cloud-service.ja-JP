@@ -3,10 +3,10 @@ title: 編集可能テンプレート
 description: ページを作成する際や、初期コンテンツ、構造化コンテンツ、オーサリングポリシー、レイアウトを定義する際の、編集可能テンプレートを使用する方法について説明します。
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '3443'
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
+source-wordcount: '3442'
 ht-degree: 100%
 
 ---

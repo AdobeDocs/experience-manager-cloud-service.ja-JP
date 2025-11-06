@@ -3,10 +3,10 @@ title: AEM 向け SPA の開発
 description: この記事では、フロントエンド開発者が AEM 向け SPA を開発する際に考慮すべき重要な質問について説明します。また、開発済みの SPA を AEM にデプロイする際に留意すべき、SPA に関する AEM のアーキテクチャの概要も示します。
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2028'
 ht-degree: 100%
 

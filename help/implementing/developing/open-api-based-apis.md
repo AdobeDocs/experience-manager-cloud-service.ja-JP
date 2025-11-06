@@ -2,10 +2,10 @@
 title: OpenAPI ベースの API
 description: OpenAPI ベースの API のAEM as a Cloud Service サポートについて説明します
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 4aeafba9-8f9e-4ecb-9e37-8d048b0474cc
-source-git-commit: 320fe55d652b94cd63dfe82d4165c1f957653a63
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 
 一部の OpenAPI ベースのAEM API には認証が必要で、[Adobe Developer Console](https://developer.adobe.com/developer-console/) を使用して資格情報を生成する必要があります。 設定には次の手順が含まれます。
 
-1. AEM as a Cloud Service 環境の最新化。詳しくは、チュートリアルの手順の [AEM as a Cloud Service環境の最新化](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup?#modernization-of-aem-as-a-cloud-service-environment)を参照してください。
+1. AEM as a Cloud Service 環境の最新化。詳しくは、チュートリアルの手順の [AEM as a Cloud Service 環境の最新化](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup?#modernization-of-aem-as-a-cloud-service-environment)を参照してください。
 1. 製品プロファイルを使用してAEM API へのアクセスを有効にします。 製品プロファイルは、サービスに関連付けられています。これは、事前定義されたアクセス制御リスト（ACL）を持つ AEM ユーザーグループを表します。一部のサービスはデフォルトで特定の 製品プロファイルに関連付けられていますが、その他のサービスは明示的に関連付ける必要があります。例えば、AEM Assets API Users Service はどの[製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md#aem-product-profiles)にも関連付けられていないため、AEM Assets API を使用するには有効化する必要があります。詳しくは、チュートリアルの手順の [AEM API アクセスの有効化](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup#enable-aem-apis-access)を参照してください。
 1. サーバー間認証を追加するには、統合を設定するユーザーが Adobe Admin Console で組織のシステム管理者であるか、またはサービスが関連付けられている製品プロファイルに開発者として追加されている必要があります。詳しくは、チュートリアルの手順の [AEM API アクセスの有効化](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup#enable-aem-apis-access)を参照してください。
 1. Adobe Developer Console（ADC）プロジェクトの作成。

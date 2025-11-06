@@ -3,11 +3,11 @@ title: AEM 技術基盤
 description: AEM の構造化および JCR、Sling、OSGi などの基本的なテクノロジーを含む、AEM の技術基盤の概要です。
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2130'
-ht-degree: 100%
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
+source-wordcount: '2129'
+ht-degree: 99%
 
 ---
 
@@ -246,7 +246,7 @@ Sling 内では、スクリプトを直接呼び出しできません。REST サ
 
 Sling API パッケージ、`org.apache.sling.*` およびタグライブラリを使用します。
 
-### sling:include を使用した既存の要素の参照 {#referencing-existing-elements-using-sling-include}
+### Sling を使用した既存の要素の参照 :include {#referencing-existing-elements-using-sling-include}
 
 最後の考慮事項は、スクリプト内にある既存の要素の参照の必要性です。
 

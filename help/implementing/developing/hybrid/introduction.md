@@ -3,10 +3,10 @@ title: SPA の概要およびガイド
 description: この記事では、SPA の概念を説明し、基本的な SPA アプリケーションを使用したオーサリング方法を紹介し、基礎となる AEM SPA エディターとの関連を示します。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 100%
 
@@ -94,10 +94,12 @@ SPA の背後にある主な考え方は、SPA がネイティブアプリケー
 >[!TIP]
 >
 >AEM での SPA の動作方法に関する技術的な詳細は、次の記事を参照してください。
+>
 >* [React を使用した AEM での SPA の概要](getting-started-react.md)
 >* [Angular を使用した AEM での SPA の概要](getting-started-angular.md)
 >
 >SPA エディターのデザイン、アーキテクチャ、技術的なワークフローについて詳しくは、次の記事を参照してください。
+>
 >* [SPA エディターの概要](editor-overview.md).
 
 ## SPA でのコンテンツ編集エクスペリエンス {#content-editing-experience-with-spa}
@@ -152,7 +154,7 @@ AEM SPA エディターを活用する SPA が構築されている場合、コ�
 
    ![WKND SPA Project ページ 1](assets/wknd-page1.png)
 
-1. ブラウザーに組み込まれている開発者ツールを開き、子ページを移動しながらネットワークアクティビティを監視します。
+1. ブラウザーのビルトインの開発者ツールを開き、子ページを移動しながらネットワークアクティビティを監視します。
 
    ![ネットワークアクティビティ](assets/wknd-network-activity.png)
 
@@ -172,12 +174,12 @@ AEM SPA エディターを活用する SPA が構築されている場合、コ�
 
    ![WKND SPA Project プレビュー](assets/wknd-preview.png)
 
-1. ブラウザーの組み込みツールを使用して、ページのソースを表示します。
+1. ブラウザーのビルトインのツールを使用して、ページのソースを表示します。
 1. ソースのコンテンツは制限されます。
    * ページの本文にはコンテンツが含まれていません。ページは主に、スタイルシートと、`clientlib-react.min.js` などの様々なスクリプトの呼び出しで構成されます。
    * これらのスクリプトは、このアプリケーションのプライマリドライバーであり、すべてのコンテンツのレンダリングを担当します。
 
-1. ブラウザーに組み込まれているツールを使用して、ページを調べます。完全に読み込まれた DOM のコンテンツを表示します。
+1. ブラウザーのビルトインのツールを使用して、ページを調べます。完全に読み込まれた DOM のコンテンツを表示します。
 
    ![WKND SPA Project の DOM](assets/wknd-dom.png)
 
@@ -223,7 +225,7 @@ AEM SPA エディターを活用する SPA が構築されている場合、コ�
 
    `http://<host>:<port>/editor.html/content/wknd-spa-react/us/en/home.html`
 
-1. ブラウザーに組み込まれている開発者ツールを使用して、ページのコンテンツを調べます。選択ツールを使用して、ページ上の編集可能なコンポーネントを選択し、表示の詳細を要素に選択します。
+1. ブラウザーのビルトインの開発者ツールを使用して、ページのコンテンツを調べます。選択ツールを使用して、ページ上の編集可能なコンポーネントを選択し、表示の詳細を要素に選択します。
 
    コンポーネントには新しいデータ属性 `data-cq-data-path` があります。
 
