@@ -285,7 +285,7 @@ _Dynamic Media Help topics_
 _Dynamic Media チュートリアル_
 
 * [Experience Manager Assets での Dynamic Media の使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=pt-BR)
-* [Adobe Experience Manager コンテンツライブラリ](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/experience-manager)（_Dynamic Media_ で検索）
+* [Adobe Experience Manager コンテンツライブラリ](https://experienceleague.adobe.com/ja?lang=ja#recommended/solutions/experience-manager)（_Dynamic Media_ で検索）
 
 _Dynamic Media ビューア_
 

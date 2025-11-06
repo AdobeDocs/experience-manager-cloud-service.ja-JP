@@ -22,7 +22,7 @@ ht-degree: 96%
 
 # AEM-CIF コアコンポーネントと Adobe Experience Platform の統合 {#aem-cif-aep-integration}
 
-[コマース統合フレームワーク（CIF）](https://github.com/adobe/aem-core-cif-components)コアコンポーネントは、[Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html) とのシームレスな統合を実現して、__買い物かごに追加__&#x200B;などのクライアントサイドのインタラクションで発生するストアフロントイベントとそのデータを転送します。
+[コマース統合フレームワーク（CIF）](https://github.com/adobe/aem-core-cif-components)コアコンポーネントは、[Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=ja) とのシームレスな統合を実現して、__買い物かごに追加__&#x200B;などのクライアントサイドのインタラクションで発生するストアフロントイベントとそのデータを転送します。
 
 [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)プロジェクトには、コマースストアフロントからイベントデータを収集するための、[Adobe Commerce 用 Adobe Experience Platform コネクタ](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)と呼ばれる JavaScript ライブラリが用意されています。そのイベント データは Experience Platform に送信され、そこで Adobe Analytics や Adobe Target などの他の Adobe Experience Cloud 製品で使用されて、カスタマージャーニーをカバーする 360 度のプロファイルが構築されます。コマースデータを Adobe Experience Cloud 内の他の製品に接続することにより、サイトでのユーザーの行動の分析、AB テストの実行、パーソナライズされたキャンペーンの作成などのタスクを実行することができます。
 
