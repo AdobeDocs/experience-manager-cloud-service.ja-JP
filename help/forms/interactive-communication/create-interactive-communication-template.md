@@ -39,23 +39,23 @@ AEMのインタラクティブ通信テンプレートを使用すると、ヘ�
 
 1. **ツール** に移動します。
 
-   ![IC Docu の検索 ](/help/forms/interactive-communication/assets/aem.png)
+   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/aem.png)
 
 1. **ツール/一般/テンプレート** に移動します。
 
-   ![IC Docu の検索 ](/help/forms/interactive-communication/assets/template.png)
+   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/template.png)
 
 1. フォルダーの作成または選択
 
    インタラクティブ通信テンプレートを作成する新しいフォルダーを作成するか、既存のフォルダーを選択します。
 
-   ![IC Docu の検索 ](/help/forms/interactive-communication/assets/choosefolder.png)
+   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/choosefolder.png)
 
 1. 新しいテンプレートを作成するには、「**作成**」をクリックし、「インタラクティブ通信の汎用テンプレート」を選択します。
 
-   ![IC Docu の検索 ](/help/forms/interactive-communication/assets/create1.png)
+   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/create1.png)
 
-   ![IC Docu の検索 ](/help/forms/interactive-communication/assets/choose.png)
+   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/choose.png)
 
 1. 次のように **テンプレート** を入力します。
 
@@ -63,19 +63,19 @@ AEMのインタラクティブ通信テンプレートを使用すると、ヘ�
    * 名前
    * 説明 (オプション)
 
-   ![IC Docu の検索 ](/help/forms/interactive-communication/assets/create2.png)
+   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/create2.png)
 
 1. 「**作成**」ボタン、「インタラクティブ通信テンプレートが正常に作成されました」の順にクリックします。
 
-   ![IC Docu の検索 ](/help/forms/interactive-communication/assets/enabled.png)
+   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/enabled.png)
 
 1. **テンプレート** を有効にする：このアクションにより、ユーザーはインタラクティブ通信の作成にテンプレートを使用できるようになります。
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/enable.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/enable.png)
 
 上記の手順に従うと、インタラクティブ通信テンプレートを正常に作成できます。 有効にすると、これらのテンプレートを再利用して、一貫性のあるパーソナライズされたコミュニケーションドキュメントを効率的に作成できます。
 
 ## 次の手順
 
-[ インタラクティブ通信の作成 ](/help/forms/interactive-communication/create-interactive-communication.md)
-[ インタラクティブ通信フラグメントの作成 ](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+[&#x200B; インタラクティブ通信の作成 &#x200B;](/help/forms/interactive-communication/create-interactive-communication.md)
+[&#x200B; インタラクティブ通信フラグメントの作成 &#x200B;](/help/forms/interactive-communication/create-interactive-communication-fragment.md)

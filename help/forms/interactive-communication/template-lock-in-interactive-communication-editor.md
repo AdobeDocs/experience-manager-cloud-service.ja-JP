@@ -28,7 +28,7 @@ ht-degree: 10%
 
 適用すると、ロックされたコンポーネントは視覚的に区別されて表示され、設定されたロックタイプによっては、ダウンストリームの作成者や投稿者が変更することはできません。 この機能は、すべての派生通信全体でブランド標準、データ整合性、レイアウトの均一性を維持するのに役立ちます。
 
-![IC 文書の検索 ](/help/forms/interactive-communication/assets/template-lock.png)
+![IC 文書の検索 &#x200B;](/help/forms/interactive-communication/assets/template-lock.png)
 
 ## &#x200B;2. ロックタイプ
 
@@ -63,7 +63,7 @@ ht-degree: 10%
 インタラクティブ通信（IC）テンプレートにコンテンツロックまたはレイアウトロックを適用するには、次の手順に従います。
 
 1. テンプレートを開きます
-テンプレートの開き方または作成については、[ インタラクティブ通信テンプレートの作成 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template) のガイドに従ってください
+テンプレートの開き方または作成については、[&#x200B; インタラクティブ通信テンプレートの作成 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template) のガイドに従ってください
 
 1. コンポーネントを選択します
 制限するコンポーネント（テキストボックス、画像、サブフォーム）をクリックします。

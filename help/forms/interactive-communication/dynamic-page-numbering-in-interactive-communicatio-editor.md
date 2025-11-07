@@ -26,7 +26,7 @@ ht-degree: 14%
 
 インタラクティブ通信（IC）の動的ページ番号機能を使用すると、作成者はPDF出力にページ番号を自動的に表示できます。 ページの番号付けはマスターページレベルで有効にでき、関連するすべてのデザインページで一貫した番号付けを行うことができます。 これにより、複数ページの通信全体で明確なページトラッキングとプロフェッショナルなレイアウトを維持できます。
 
-![IC 文書の検索 ](/help/forms/interactive-communication/assets/dynamic-page.png)
+![IC 文書の検索 &#x200B;](/help/forms/interactive-communication/assets/dynamic-page.png)
 
 ## インタラクティブ通信エディターで動的ページ番号を使用する方法
 

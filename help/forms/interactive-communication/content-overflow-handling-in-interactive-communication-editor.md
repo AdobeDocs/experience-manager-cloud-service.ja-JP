@@ -26,7 +26,7 @@ ht-degree: 11%
 
 インタラクティブ通信エディターのコンテンツオーバーフロー処理機能により、フローレイアウトおよび配置済みレイアウトでのテキストの動作が強化されます。 フローレイアウトではコンテンツの連続性がスムーズに保たれ、配置済みレイアウトでは視覚的なアラートが提供されるので、作成者はコミュニケーションをデザインする際にコントロールが強化され、柔軟性が高まります。
 
-![IC 文書の検索 ](/help/forms/interactive-communication/assets/content-overflow.png)
+![IC 文書の検索 &#x200B;](/help/forms/interactive-communication/assets/content-overflow.png)
 
 ## インタラクティブ通信エディターでコンテンツオーバーフロー処理を使用する方法
 
