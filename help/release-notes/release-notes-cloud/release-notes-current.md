@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: cb4764709a86ae2acb33a10dc9a53126804ee7ec
+source-git-commit: a5e20bd3ee4d332b46bdff2fbf5222c9a9fead2f
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 67%
+source-wordcount: '1871'
+ht-degree: 60%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 67%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?captions=jpn&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,9 +48,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Experience Manager Sites の新機能 {#new-sites}
 
-* [&#x200B; コンテンツフラグメントのローンチ &#x200B;](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)：コンテンツ作成者は、コンテンツフラグメントのローンチを使用して、構造化コンテンツの今後のバリエーションを作成およびスケジュールできるようになりました。 新しいコンテンツフラグメントコンソールを使用すると、今後のコンテンツの分岐としてコンテンツフラグメントのローンチを作成、編集、管理およびスケジュール設定でき、ソースブランチと同期できます。 新しい差分表示では、今後の公開に向けてローンチをコミットする前に、すべてのコンテンツの変更について明確な概要が示されます。
+* [ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)：コンテンツ作成者は、コンテンツフラグメントのローンチを使用して、構造化コンテンツの今後のバリエーションを作成およびスケジュールできるようになりました。 新しいコンテンツフラグメントコンソールを使用すると、今後のコンテンツの分岐としてコンテンツフラグメントのローンチを作成、編集、管理およびスケジュール設定でき、ソースブランチと同期できます。 新しい差分表示では、今後の公開に向けてローンチをコミットする前に、すべてのコンテンツの変更について明確な概要が示されます。
 
-* AEM コンテンツフラグメント用の [&#x200B; コンテンツモデルエディター &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) は、AEMの他の React スペクトルベースのインターフェイスと連携するように最新化されました。 ユーザーインターフェイスの実装と拡張モデルが、コンテンツフラグメントエディターおよびユニバーサルエディターと一貫性を保つようになりました。新しいコンテンツモデル管理 UI から開いた場合、新しいモデルエディターがデフォルトになりました。タッチ UI でコンテンツモデルを開くと、タッチ UI エディターが開き、新しいエディターを試すことができます。
+* AEM コンテンツフラグメント用の [ コンテンツモデルエディター ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) は、AEMの他の React スペクトルベースのインターフェイスと連携するように最新化されました。 ユーザーインターフェイスの実装と拡張モデルが、コンテンツフラグメントエディターおよびユニバーサルエディターと一貫性を保つようになりました。新しいコンテンツモデル管理 UI から開いた場合、新しいモデルエディターがデフォルトになりました。タッチ UI でコンテンツモデルを開くと、タッチ UI エディターが開き、新しいエディターを試すことができます。
 
 <!--
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -76,7 +76,19 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 **アダプティブフォームとフォームフラグメント用のユニバーサルエディター**
 
-ユニバーサルエディターは、アダプティブFormsと再利用可能なフォームフラグメントを作成するための統一されたオーサリングエクスペリエンスを提供するようになりました。 作成者は、フォームの視覚的なデザイン、送信アクションの設定および reCAPTCHA 検証の統合を、直感的なWYSIWYG環境内で行えます。
+ユニバーサルエディターは、アダプティブFormsと再利用可能なフォームフラグメントを作成するための統一されたオーサリングエクスペリエンスを提供するようになりました。 作成者は、直感的なWYSIWYG環境内で、強力な拡張機能と包括的な送信機能を活用してフォームを視覚的にデザインできます。 このエディターは、セキュリティを強化するために reCAPTCHA 検証を統合し、手動入力を減らすための事前入力サービスを提供し、すべてのデバイスにわたるレスポンシブデザインをサポートします。
+
+**使用可能な拡張機能：**
+
+* **ルールエディター**：ビジュアルルールエディターを使用すると、フォーム作成者は、コーディングせずにフォームフィールドに動的動作を追加し、イベント駆動型のルール、即時検証、エラー処理をサポートできます。
+* **フォームのプロパティ**：ユーザーが送信アクション、事前入力サービス、ありがとうメッセージ、その他のフォーム関連の動作をエディター内で直接設定するのに役立つウィザード。
+* **フォームデータSourceとバインド参照**：データソース拡張機能を使用すると、フォーム作成者は、データモデルに直接関連付けられたコンポーネントをアダプティブフォームに追加し、すべてのコンポーネントのツリー選択からバインド参照を選択できます。
+
+**サポートされる送信アクション：**
+
+ユニバーサルエディターは、カスタム送信アクション、Microsoft SharePointへの送信、Microsoft OneDrive への送信、Azure Blob Storage への送信、REST エンドポイントへの送信、AEM ワークフローの呼び出し、Power Automate フローの呼び出し、Marketo Engageへの送信、Adobe Experience Platform（AEP）、スプレッドシートへの送信、フォームデータモデル（FDM）を使用した送信、Workfront Fusion への送信、メール送信など、包括的な送信ワークフローをサポートします。
+
+詳しくは、[Forms用Edge Delivery Servicesのユニバーサルエディター」ドキュメント ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) を参照してください。 送信アクションの設定について詳しくは、「[ アダプティブフォーム送信アクション ](/help/edge/docs/forms/universal-editor/submit-action.md)」を参照してください。
 
 <!-- ### Pre-Release features in AEM Forms 
 
@@ -139,7 +151,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 **自動メンテナンスアップデートの一時停止**
 
-運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[&#x200B; 新しいセルフサービス機能 &#x200B;](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
+運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[ 新しいセルフサービス機能 ](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
 
 * 静かな時間：毎日設定された時間に自動メンテナンスをブロックします。勤務時間、夜間の実行や朝の切り替え時などに最適です。
 * 更新不要の期間：自動メンテナンスを 1 週間ブロックします。ローンチ、プロモーションまたは年次フリーズに使用します。
@@ -153,7 +165,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 AEM ログを、Amazon S3、Sumo Logic、Dynatraceおよび（Adobeが提供するアカウントではなく）独自のNew Relic アカウントに転送できるようになりました。 なお、これらのログ先ではAEM ログ（Apache/Dispatcherを含む）がサポートされていますが、CDN ログはサポートされていません。
 
-すべての [&#x200B; サポートされるログ転送宛先 &#x200B;](/help/implementing/developing/introduction/log-forwarding.md) を参照してください。
+すべての [ サポートされるログ転送宛先 ](/help/implementing/developing/introduction/log-forwarding.md) を参照してください。
 
 ### Edge Delivery Servicesの設定パイプライン {#config-pipeline-eds}
 
@@ -203,7 +215,7 @@ Adobeは 2025 年 10 月 14 日に **ステージング** 環境と **実稼動*
 
 >[!NOTE]
 >
-> 最新のパフォーマンス最適化と言語強化を活用するには、Java 17 または Java 21 （推奨）を使用してビルドすることをお勧めします。 Java 8 および Java 11 を使用したビルドは、現時点ではサポートされていますが、今後のリリースで非推奨（廃止予定）になります。 廃止に先立ち、別途お知らせいたします。 *この記事* の [&#x200B; ビルド時間要件 &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) の節を参照してください。
+> 最新のパフォーマンス最適化と言語強化を活用するには、Java 17 または Java 21 （推奨）を使用してビルドすることをお勧めします。 Java 8 および Java 11 を使用したビルドは、現時点ではサポートされていますが、今後のリリースで非推奨（廃止予定）になります。 廃止に先立ち、別途お知らせいたします。 *この記事* の [ ビルド時間要件 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) の節を参照してください。
 >
 
 ### AEM Java ログ設定ポリシーの適用 {#logconfig-policy}
