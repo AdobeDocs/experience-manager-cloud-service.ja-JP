@@ -4,7 +4,7 @@ description: アクションセンターを活用して、インシデントや�
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1187'
 ht-degree: 100%
@@ -78,16 +78,17 @@ AEM as a Cloud Service の通知には複数のタイプがありますが、次
 | オリジンでのトラフィックスパイク | インシデント | オリジンアラートでのデフォルトのトラフィックスパイクよりも低いしきい値でトリガーされるレート制限トラフィックフィルタールールを設定して、オリジンを保護します。  チュートリアルを参照しているトラフィックフィルタールールのドキュメントの[トラフィックルールを使用した DoS および DDoS 攻撃のブロック](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules)の節を参照してください。 |
 | トリガーされた CDN トラフィックフィルタールール | インシデント | 一致するトラフィックフィルタールールが攻撃を反映し、サイトがそのトラフィックをブロックしていない場合は、トラフィックフィルタールールをブロックモードで設定してサイトを保護します。チュートリアルを参照しているトラフィックフィルタールールのドキュメントの[トラフィックフィルタールール（WAF ルールを含む）による web サイトの保護](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites)の節を参照してください。 |
 | Splunk ログ転送エラー | インシデント | Splunk エンドポイントが機能し、AEM Cloud Service 環境からアクセスできることを確認します。ログ転送について詳しくは、[Splunk ログ転送ドキュメント](/help/implementing/developing/introduction/logging.md#splunk-logs)を参照してください。トラブルシューティングに関するサポートが必要な場合や、ログ設定を変更する必要がある場合は、アドビにサポートチケットを発行してください。 |
-| ページに多数のノードが含まれる | 事前対応 | ページ内のノードの合計数を減らします。 [ページの複雑さのドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/pcx)を参照してください | |
-| 実行中のワークフローインスタンスの数が多い | 事前対応 | 不要になった実行中のワークフローを終了します。 詳しくは、[パージジョブの設定](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/operations/maintenance)方法を参照してください |               |
-| S2S 証明書の有効期限が切れます | 事前対応 | [サーバーサイド API のアクセストークンの生成ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)で資格情報を更新する方法を説明します。 | 高い接続数 | 事前対応 | 接続プーリングについて詳しくは、[高度なネットワークとの接続プーリングに関するドキュメント](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking)を参照してください |
+| ページに多数のノードが含まれる | 事前対応 | ページ内のノードの合計数を減らします。 [ページの複雑さのドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/pcx)を参照してください |
+| 実行中のワークフローインスタンスの数が多い | 事前対応 | 不要になった実行中のワークフローを終了します。 詳しくは、[パージジョブの設定](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/operations/maintenance)方法を参照してください |
+| S2S 証明書の有効期限が切れます | 事前対応 | [サーバーサイド API のアクセストークンの生成ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)で資格情報を更新する方法を説明します。 |
+| 高い接続数 | 事前対応 | 接続プーリングについて詳しくは、[高度なネットワークとの接続プーリングに関するドキュメント](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking)を参照してください |
 | 非推奨（廃止予定）のサービスユーザーマッピング | 事前対応 | 新しい Sling サービスユーザーマッピング形式の使用方法について詳しくは、[Sling サービスユーザーマッピングとサービスユーザー定義のベストプラクティス](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition)を参照してください |
-| 高い接続数 | 事前対応 | 接続プーリングについて詳しくは、[高度なネットワークに関するドキュメント](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking)を参照してください |  |
-| ユーザーがカスタムグループに直接追加される | 事前対応 | ユーザーを関連する IMS グループに追加し、これらの IMS グループを AEM グループのメンバーとして追加する必要があります。 [IMS のベストプラクティス](/help/security/ims-support.md)に合わせて調整します | |
-| JCR コンテンツが欠落しています | 事前対応 | 欠落している JCR コンテンツノードを追加します。 [Assets のコンテンツバリデーターのドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/acv)を参照してください | |
-| 完了したワークフローがパージされない | 事前対応 | 90 日以上経過したワークフローインスタンスをパージして、ワークフローインスタンスの数を最小限に抑え、パフォーマンスを向上させます。 詳しくは、[メンテナンスタスクの設定](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/operations/maintenance)方法を参照してください | |
-| ページに Sling リソースが欠落している | 事前対応 | 欠落している Sling リソースタイプノードを追加します。 [Assets のコンテンツバリデーターのドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/acv)を参照してください | |
-| 処理に時間のかかるクエリ | 事前対応 | [JCQ クエリチートシート](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=ja)で推奨されているように、正しいインデックス定義を定義して、処理に時間のかかるクエリを修正します | |
-| インデックスのないクエリ | 事前対応 | インデックスを使用しないクエリの実行を回避します -[インデックス作成に関するドキュメントへのリンク](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/operations/indexing) | |
-| 非推奨ライブラリのアラート | 事前対応 | [非推奨の記事](/help/release-notes/deprecated-removed-features.md)で説明しているように、アプリケーションのセキュリティとパフォーマンスを維持するために、非推奨パッケージを推奨される新しいバージョンに置き換えます | |
+| 高い接続数 | 事前対応 | 接続プーリングについて詳しくは、[高度なネットワークに関するドキュメント](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking)を参照してください |
+| ユーザーがカスタムグループに直接追加される | 事前対応 | ユーザーを関連する IMS グループに追加し、これらの IMS グループを AEM グループのメンバーとして追加する必要があります。 [IMS のベストプラクティス](/help/security/ims-support.md)に合わせて調整します |
+| JCR コンテンツが欠落しています | 事前対応 | 欠落している JCR コンテンツノードを追加します。 [Assets のコンテンツバリデーターのドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/acv)を参照してください |
+| 完了したワークフローがパージされない | 事前対応 | 90 日以上経過したワークフローインスタンスをパージして、ワークフローインスタンスの数を最小限に抑え、パフォーマンスを向上させます。 詳しくは、[メンテナンスタスクの設定](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/operations/maintenance)方法を参照してください |
+| ページに Sling リソースが欠落している | 事前対応 | 欠落している Sling リソースタイプノードを追加します。 [Assets のコンテンツバリデーターのドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/acv)を参照してください |
+| 処理に時間のかかるクエリ | 事前対応 | [JCQ クエリチートシート](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=ja)で推奨されているように、正しいインデックス定義を定義して、処理に時間のかかるクエリを修正します |
+| インデックスのないクエリ | 事前対応 | インデックスを使用しないクエリの実行を回避します -[インデックス作成に関するドキュメントへのリンク](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/operations/indexing) |
+| 非推奨ライブラリのアラート | 事前対応 | [非推奨の記事](/help/release-notes/deprecated-removed-features.md)で説明しているように、アプリケーションのセキュリティとパフォーマンスを維持するために、非推奨パッケージを推奨される新しいバージョンに置き換えます |
 | 非推奨の設定アラート | 事前対応 | [非推奨の記事](/help/release-notes/deprecated-removed-features.md)で説明しているように、アプリケーションのセキュリティとパフォーマンスを維持するために、非推奨の設定を推奨される新しいバージョンに置き換えます |

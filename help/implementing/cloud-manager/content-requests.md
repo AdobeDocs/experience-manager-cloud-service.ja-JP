@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1918'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
@@ -95,17 +95,16 @@ AEM as a Cloud Serviceは、サーバーサイドのコレクションルール�
 | DDoS 攻撃からのトラフィック | 除外済み | DDoS 保護。AEM は一部の DDoS 攻撃を自動検出しブロックします。DDoS 攻撃は、検出された場合、課金対象ではありません。 |
 | AEM as a Cloud Service NewRelic 監視 | 除外済み | AEM as a Cloud Service グローバル監視。 |
 | 顧客が Cloud Service プログラムを監視するための URL | 除外済み | アドビでは、この URL を使用して、可用性やヘルスチェックを外部から監視することをお勧めします。<br><br>`/system/probes/health` |
-| AEM as a Cloud Service ポッドウォームアップサービス | 除外済み |
-| エージェント：skyline-service-warmup/1。* |
+| AEM as a Cloud Service ポッドウォームアップサービス | 除外済み | エージェント：skyline-service-warmup/1。* |
 | よく知られている検索エンジン、ソーシャルネットワーク、HTTP ライブラリ（Fastly によってタグ付け） | 除外済み | サイトを定期的に訪問し、検索インデックスやサービスを更新するよく知られたサービス：<br><br>例：<br>・AddSearchBot<br>・AhrefsBot<br>・Applebot<br>・Ask Jeeves Corporate Spider<br>・Bingbot<br>・BingPreview<br>・BLEXBot<br>・BuiltWith<br>・Bytespider<br>・CrawlerKengo<br>・Facebookexternalhit<br>・Google AdsBot<br>・Google AdsBot Mobile<br>・Googlebot<br>・Googlebot Mobile<br>・lmspider<br>・LucidWorks<br>•`MJ12bot`<br>・Pinterest<br>・SemrushBot<br>・SiteImprove<br>・StashBot<br>・StatusCake<br>・YandexBot<br>・ContentKing<br>・Claudebot |
 | コマース統合フレームワーク呼び出しの除外 | 除外済み | 二重カウントを避けるために、AEM に対して行われたリクエストで、Commerce Integration Framework に転送されます（URL は `/api/graphql` で始まります）。これらは Cloud Service の請求対象ではありません。 |
 | `manifest.json` を除外 | 除外済み | マニフェストは API 呼び出しではありません。ここでは、デスクトップまたは携帯電話に web サイトをインストールする方法に関する情報を提供します。アドビは `/etc.clientlibs/*/manifest.json` に対する JSON リクエストをカウントするべきではありません |
 | `favicon.ico` を除外 | 除外済み | 返されるコンテンツを HTML や JSON にしないでください。ただし、SAML 認証フローなどの特定のシナリオでは、favicon が HTML として返されることが確認されています。その結果、favicon はカウントから明示的に除外されます。 |
-| エクスペリエンスフラグメント（XF） – 同じドメインの再利用 | 除外済み | 同じドメインでホストされるページから XF パス（`/content/experience-fragments/...` など）に対して行われるリクエスト（リクエストホストに一致するリファラーヘッダーで識別される）。<br><br>例：同じドメインのバナーまたはカードの XF を取り込む `aem.customer.com` 上のホームページ。<br><br>• URL が /content/experience-fragments/... と一致する<br>• リファラードメインが一致する `request_x_forwarded_host`<br><br>**注意：**&#x200B;エクスペリエンスフラグメントのパスがカスタマイズされている場合（例えば、`/XFrags/...` や `/content/experience-fragments/` 以外のパスを使用している場合）、リクエストは除外されず、同じドメインであってもカウントされる場合があります。除外ロジックが正しく適用されるように、アドビの標準 XF パス構造を使用することをお勧めします。 |
+| エクスペリエンスフラグメント（XF） – 同じドメインの再利用 | 除外済み | 同じドメインでホストされるページから XF パス（`/content/experience-fragments/...` など）に対して行われるリクエスト（リクエストホストに一致するリファラーヘッダーで識別される）。<br><br>例：同じドメインのバナーまたはカードの XF を取り込む `aem.customer.com` 上のホームページ。<br><br>• URL が /content/experience-fragments/... と一致する<br>• リファラードメインが一致する `request_x_forwarded_host`<br><br>**注意：**&#x200B;エクスペリエンスフラグメントのパスがカスタマイズされている場合（例えば、`/XFrags/...` や `/content/experience-fragments/` 以外のパスを使用している場合）、リクエストは除外されず、同じドメインであってもカウントされる場合があります。Adobeの標準 XF パス構造を使用して、除外ロジックが正しく適用されるようにすることをお勧めします。 |
 
 ## コンテンツリクエストの管理 {#managing-content-requests}
 
-上記の節 [Cloud Service コンテンツリクエストの相違 &#x200B;](#content-requests-variances) で説明したように、コンテンツリクエストは、様々な理由により、予期よりも多くなる可能性があります。一般的なスレッドは、CDN にヒットするトラフィックです。  AEMのお客様には、ライセンス予算に合わせてコンテンツリクエストをモニタリングし、管理することが有利です。  コンテンツリクエストの管理は、通常、実装技術と [&#x200B; トラフィックフィルタールール &#x200B;](/help/security/traffic-filter-rules-including-waf.md) を組み合わせたものです。
+上記の節 [Cloud Service コンテンツリクエストの相違 ](#content-requests-variances) で説明したように、コンテンツリクエストは、様々な理由により、予期よりも多くなる可能性があります。一般的なスレッドは、CDN にヒットするトラフィックです。  AEMのお客様には、ライセンス予算に合わせてコンテンツリクエストをモニタリングし、管理することが有利です。  コンテンツリクエストの管理は、通常、実装技術と [ トラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md) を組み合わせたものです。
 
 ### コンテンツリクエストを管理する実装手法 {#implementation-techniques-to-manage-crs}
 
@@ -117,7 +116,7 @@ AEM as a Cloud Serviceは、サーバーサイドのコレクションルール�
 
 ### コンテンツリクエストを管理するトラフィックフィルタールール {#traffic-filter-rules-to-manage-crs}
 
-* 一般的なボットパターンは、空のユーザーエージェントを使用することです。  空のユーザーエージェントが役に立つかどうかを確認するには、実装とトラフィックパターンをレビューする必要があります。  このトラフィックをブロックする場合は、推奨される [&#x200B; 構文 &#x200B;](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) を次に示します。
+* 一般的なボットパターンは、空のユーザーエージェントを使用することです。  空のユーザーエージェントが役に立つかどうかを確認するには、実装とトラフィックパターンをレビューする必要があります。  このトラフィックをブロックする場合は、推奨される [ 構文 ](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) を次に示します。
 
 ```
 trafficFilters:
@@ -130,4 +129,4 @@ trafficFilters:
       action: block
 ```
 
-* ある日ボットが非常に激しくサイトに当たり、次の日には消えてしまう場合もあります。  これにより、特定の IP アドレスまたはユーザーエージェントをブロックしようとする試みがフラストレーションを受ける可能性があります。  一般的なアプローチの 1 つは、[&#x200B; レート制限ルール &#x200B;](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules) を導入することです。  [&#x200B; 例 &#x200B;](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) を確認し、リクエストの急速な割合に対する許容値に一致するルールを作成します。  一般的なレート制限を許可する例外については、[&#x200B; 条件構造 &#x200B;](/help/security/traffic-filter-rules-including-waf.md#condition-structure) の構文を参照してください。
+* ある日ボットが非常に激しくサイトに当たり、次の日には消えてしまう場合もあります。  これにより、特定の IP アドレスまたはユーザーエージェントをブロックしようとする試みがフラストレーションを受ける可能性があります。  一般的なアプローチの 1 つは、[ レート制限ルール ](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules) を導入することです。  [ 例 ](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) を確認し、リクエストの急速な割合に対する許容値に一致するルールを作成します。  一般的なレート制限を許可する例外については、[ 条件構造 ](/help/security/traffic-filter-rules-including-waf.md#condition-structure) の構文を参照してください。

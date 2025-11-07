@@ -4,7 +4,7 @@ description: コンテンツパッケージ Maven プラグインを使用した
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 100%
@@ -97,7 +97,7 @@ AEM にプロキシを使用するゴールでは、Maven 設定で最初に見�
 | `failOnError` | `boolean` | いいえ | `false` | 値 `true` を指定すると、エラーの発生時にビルドが失敗します。値 `false` を指定すると、ビルドの際にエラーが無視されます。 | `package` を除くすべてのゴール |
 | `name` | `String` | `build`：はい、`install`：いいえ、`rm`：はい | `build`：デフォルト値なし、`install`：Maven プロジェクトの `artifactId` プロパティの値 | 処理をおこなうパッケージの名前 | `ls` を除くすべてのゴール |
 | `password` | `String` | はい | `admin` | AEM での認証に使用するパスワード | `package` を除くすべてのゴール |
-| `serverId` | `String` | いいえ | 認証用のユーザー名とパスワードの取得元のサーバー ID | `package` を除くすべてのゴール |
+| `serverId` | `String` | いいえ | 認証用のユーザー名とパスワードの取得元のサーバー ID | `package` を除くすべてのゴール |  |
 | `targetURL` | `String` | はい | `http://localhost:4502/crx/packmgr/service.jsp` | AEM パッケージマネージャーの HTTP サービス API の URL | `package` を除くすべてのゴール |
 | `timeout` | `int` | いいえ | `5` | パッケージマネージャーサービスとの通信の接続タイムアウト（秒） | `package` を除くすべてのゴール |
 | `useProxy` | `boolean` | いいえ | `true` | `true` の値は、Maven は最初に見つかったアクティブなプロキシ設定を使用してパッケージマネージャーへのリクエストをプロキシします。 | `package` を除くすべてのゴール |

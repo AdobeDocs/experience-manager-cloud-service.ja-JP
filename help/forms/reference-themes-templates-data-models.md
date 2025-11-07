@@ -4,8 +4,8 @@ description: AEM Forms には、フォームをすばやく作成できるよう
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ AEM Forms as a Cloud Service には、アダプティブフォームの作成を
 
 
 | テーマ | テンプレート | フォームデータモデル（FDM） |
----------|----------|---------
+|---------|----------|---------|
 | Canvas 3.0 | 基本 | Microsoft Dynamics 365 |
 | Tranquil | 空白 | Salesforce |
 | Urbane |   |  |

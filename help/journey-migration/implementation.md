@@ -4,10 +4,10 @@ description: クラウドに移行するためのコードとコンテンツの�
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 feature: Migration
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '2288'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,14 +26,14 @@ ht-degree: 99%
 このドキュメントの目的は次のとおりです。
 
 * コードを AEM as a Cloud Service にデプロイするために使用する、AEM の継続的インテグレーションと継続的デリバリーのフレームワークである Cloud Manager を紹介します。
-* コンテンツ転送ツールについて詳しく説明します。
+* コンテンツトランスファーツールについて詳しく説明します。
 * AEM as a Cloud Service のコードを最新化するために使用する必要がある、コードリファクタリングツールについて説明します。
 
 ## Cloud Manager の使用 {#using-cloud-manager}
 
 始める前に、Cloud Manager に習熟している必要があります。Cloud Manager は AEM as a Cloud Service にコードをデプロイするための唯一のメカニズムであるためです。
 
-Cloud Manager を使用すると、クラウド内の AEM を組織で自己管理できるようになります。このサービスには継続的インテグレーションと継続的デリバリー（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。
+Cloud Manager を使用すると、クラウド内の AEM を組織で自己管理できるようになります。このサービスには継続的インテグレーションと継続的配信（CI/CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。
 
 Cloud Manager の使い方については、以下のリソースを参照してください。
 
@@ -49,19 +49,19 @@ Cloud Service への移行の正確な手順は、購入したシステムと準
 
 次の図は、AEM as a Cloud Service で使用するコードとコンテンツを変換するフェーズについて、主な段階を示したものです。
 
-![&#x200B; コンバージョン手順 &#x200B;](/help/journey-migration/assets/exec-image1.png)
+![コンバージョン手順](/help/journey-migration/assets/exec-image1.png)
 
 以下の章では、これを実現するために必要なツールの詳細を説明します。
 
 ## コンテンツの移行 {#content-migration}
 
-現在の AEM インスタンスから Cloud Service インスタンスにコンテンツを移行するには、アドビのコンテンツ転送ツールを使用します。
+現在の AEM インスタンスから Cloud Service インスタンスにコンテンツを移行するには、アドビのコンテンツトランスファーツールを使用します。
 
 このツールを使用すると、ソース AEM インスタンスから AEM Cloud Service インスタンスに転送するコンテンツのサブセットを指定できます。
 
 コンテンツ移行は、異なるチーム間での計画、追跡、共同作業を必要とする複数の手順で構成されるプロセスです。
 
-ツールの仕組みと推奨される使用方法について詳しくは、[コンテンツ転送ツールのドキュメント](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)を参照してください。
+ツールの仕組みと推奨される使用方法について詳しくは、[コンテンツトランスファーツールのドキュメント](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)を参照してください。
 
 ## コードリファクタリング {#code-refactor}
 
@@ -85,7 +85,7 @@ Cloud Services と互換性を持たせるために、既存の機能のリフ�
 
 * このビデオを視聴すると、Dispatcher SDK の設定方法を理解できます。
 
-  >[!VIDEO](https://video.tv.adobe.com/v/35077?captions=jpn)
+  >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 ### 発想の転換 {#a-change-in-mindset}
 
@@ -132,7 +132,7 @@ Cloud Manager パイプラインは、ステージング環境に対するテス
 
 ## 運用開始の準備 {#preparing-for-go-live}
 
-ソースシステムを準備するには、システムレベルおよび AEM 管理者レベルのタスクが必要です。開始するには、 [リビジョンのクリーンアップ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=ja) タスクと [データストアのごみ収集](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=ja) タスクのステータスを確認し、コンテンツリポジトリが適切に維持されている状態にあることを確認します。AEM バージョン 6.3を実行している場合は（コンテンツ転送ツールはバージョン 6.3 以降と互換性があるので）、オフライン圧縮を実行し、その後にデータストアのガベージコレクションを実行することをお勧めします。
+ソースシステムを準備するには、システムレベルおよび AEM 管理者レベルのタスクが必要です。開始するには、[リビジョンのクリーンアップ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=ja)タスクと[データストアのガベージコレクション](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=ja)タスクのステータスを確認し、コンテンツリポジトリが適切に維持されている状態にあることを確認します。AEM バージョン 6.3を実行している場合は（コンテンツトランスファーツールはバージョン 6.3 以降と互換性があるので）、オフライン圧縮を実行し、その後にデータストアのガベージコレクションを実行することをお勧めします。
 
 [データ整合性チェック](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html?lang=ja) は、すべての AEM バージョンにわたって推奨され、コンテンツリポジトリの移行作業を適切な状態に保ちます。
 
@@ -217,7 +217,7 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 次の節では、コンテンツ移行戦略とタイムラインの策定に使用できる重要な手順と関連タスクを示します。
 
-![&#x200B; 移行戦略の策定手順 &#x200B;](/help/journey-migration/assets/content-migration2.png)
+![移行戦略の策定手順](/help/journey-migration/assets/content-migration2.png)
 
 ### フィットメント {#fitment}
 
@@ -247,7 +247,7 @@ One more important datapoint is the amount of time it takes to complete the [use
    * 使用可能なすべてのコンテンツタイプの組み合わせです
    * すべてのユーザーとグループを含む
 * コンテンツの 25% または最大 1 TB のコンテンツのいずれか小さい方を含みます。
-* 実稼働クローンから AEM as a Cloud Service 非実稼働環境へ、完全な [追加](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 移行を少なくとも 1 回実施します。
+* 実稼働クローンから AEM as a Cloud Service 非本番環境へ、完全な [追加](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 移行を少なくとも 1 回実施します。
 * 次のような潜在的な問題を解決します。
    * AEM ソースのディスク容量
    * AEM ソースと AEM as a Cloud Service 間の接続

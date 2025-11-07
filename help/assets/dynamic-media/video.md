@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '10063'
 ht-degree: 99%
@@ -271,8 +271,8 @@ Dynamic Media を有効にし、ビデオクラウドサービスを設定済み
 
 <!-- For advice about video encoding, see the following:
 
-* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_jp).
-* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_jp). -->
+* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
+* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en). -->
 
 ### ソースビデオファイル {#source-video-files}
 
@@ -452,7 +452,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=ja).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
@@ -1529,7 +1529,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 **To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
 
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html).
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.

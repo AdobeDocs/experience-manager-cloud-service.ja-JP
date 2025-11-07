@@ -4,7 +4,7 @@ description: Adobe Experience Manager as a Cloud Service で GraphQL クエリ�
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 99%
@@ -300,7 +300,7 @@ Dispatcher の `CACHE_GRAPHQL_PERSISTED_QUERIES` が有効な場合、値に `/`
 | キャッシュタイプ | [HTTP ヘッダー](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Cache-Control) | cURL | OSGi 設定  | Cloud Manager |
 |--- |--- |--- |--- |--- |
 | ブラウザー | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` | `graphqlCacheControl` |
-| CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` | 60 |
+| CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` \|60 |
 | CDN | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` | `graphqlStaleWhileRevalidate` |
 | CDN | `stale-if-error` | `surrogate-control : stale-if-error` | `surrogateControlStaleIfError` | `graphqlStaleIfError` |
 
@@ -320,7 +320,7 @@ Dispatcher の `CACHE_GRAPHQL_PERSISTED_QUERIES` が有効な場合、値に `/`
 * OSGi の設定で
    * 上書きすることはできません。
 * cURL を使った
-   * HTTP ヘッダー設定を定義するリクエストによって上書きできます。リクエストには、`cache-control` や `surrogate-control` に適した設定を含む必要があります。例として、[永続クエリレベルでのキャッシュの管理](#cache-persisted-query-level)を参照してください。
+   *  HTTP ヘッダー設定を定義するリクエストによって上書きできます。リクエストには、`cache-control` や `surrogate-control` に適した設定を含む必要があります。例として、[永続クエリレベルでのキャッシュの管理](#cache-persisted-query-level)を参照してください。
    * [GraphiQL IDE](#http-cache-headers-graphiql-ide) の&#x200B;**ヘッダー**&#x200B;ダイアログで値を指定する場合。
 
 ### パブリッシュインスタンス {#publish-instances}

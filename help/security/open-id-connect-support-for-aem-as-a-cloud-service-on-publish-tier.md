@@ -4,7 +4,7 @@ description: パブリッシュ層で AEM as a Cloud Service の Open ID Connect
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: eb03c8941f848ff10c38a4880c8fe85387cc441f
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 100%
@@ -156,7 +156,7 @@ DefaultSyncHandler で設定する最も関連性の高い属性の一部を以�
 | `user.dynamicMembership` | 動的グループメンバーシップを有効にすることをお勧めします | true |
 | `user.enforceDynamicMembership` | 動的グループメンバーシップの適用を有効にすることをお勧めします | true |
 | `group.dynamicGroups` | 動的グループを有効にすることをお勧めします | true |
-| user.propertyMapping | 提供されている `UserInfoProcessor` の実装では、いくつかのプロパティのみが同期されます。 変更やカスタマイズが可能です。 | <code>&quot;profile/givenName=profile/given_name&quot;,</code><br><code>&quot;profile/familyName=profile/family_name&quot;,</code><br><code>&quot;rep:fullname=profile/name&quot;,</code><br><code>&quot;profile/email=profile/email&quot;,</code><br><code>&quot;access_token=access_token&quot;,</code><br><code>&quot;refresh_token=refresh_token&quot;</code> |  |
+| user.propertyMapping | 提供されている `UserInfoProcessor` の実装では、いくつかのプロパティのみが同期されます。 変更やカスタマイズが可能です。 | <code>&quot;profile/givenName=profile/given_name&quot;,</code><br><code>&quot;profile/familyName=profile/family_name&quot;,</code><br><code>&quot;rep:fullname=profile/name&quot;,</code><br><code>&quot;profile/email=profile/email&quot;,</code><br><code>&quot;access_token=access_token&quot;,</code><br><code>&quot;refresh_token=refresh_token&quot;</code> |
 | `user.membershipNestingDepth` | メンバーシップ関係が同期された場合のグループのネストの最大深さを返します。 値 0 を指定すると、グループメンバーシップの参照が実質的に無効化されます。 値 1 を指定すると、ユーザーの直接グループのみが追加されます。 ユーザーのメンバーシップの上位を同期する場合に限定して個々のグループを同期する場合、この値は無効です。 | 1 |
 
 ### 外部ログインモジュールの設定 {#configure-the-external-login-module}

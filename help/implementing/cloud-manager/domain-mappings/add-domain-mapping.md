@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 64%
@@ -43,7 +43,7 @@ ht-degree: 64%
    | Adobeの管理による CDN （推奨） | **設定の詳細**&#x200B;で、次の操作を行います。<br>a. **ドメイン**&#x200B;ドロップダウンリストで、使用するドメイン名を選択します。<br>ドロップダウンリストに使用可能な検証済みドメインがありませんか？詳しくは、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。<br>b.<!-- In the **SSL certificate** drop-down list, select a certificate that you want to use.<br>No SSL certificates available in the drop-down list? See [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).--> |
    | その他 CDN プロバイダー | 使用可能なアドビが管理する CDN ではなく、独自の CDN プロバイダーを使用している場合は、このオプションを選択します。<br>**設定の詳細**&#x200B;の&#x200B;**ドメイン**&#x200B;ドロップダウンリストで、使用するドメイン名を選択します。<br>ドロップダウンリストに使用可能な検証済みドメインがありませんか？詳しくは、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。 |
 
-   ![Adobeの管理による CDN ラジオボタンが選択されている状態でドメインを CDN にマッピング ダイアログボックス &#x200B;](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png)
+   ![Adobeの管理による CDN ラジオボタンが選択されている状態でドメインを CDN にマッピング ダイアログボックス ](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png)
 
    <!-- OLD IMAGE/UI (/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)-->
 
@@ -71,7 +71,7 @@ curl -svo /dev/null https://www.example.com \
 ```
 
 * `www.example.com` を自分のドメインに置き換えます。
-* IP アドレス `151.101.3.10` は、AEM Cloud Service へのアクセスに使用できる IP の 1 つです。 [APEX レコード &#x200B;](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-apex-record) も参照してください。
+* IP アドレス `151.101.3.10` は、AEM Cloud Service へのアクセスに使用できる IP の 1 つです。 [APEX レコード ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-apex-record) も参照してください。
 
 `--resolve` フラグは、ドメインの証明書とルーティングが正しくインストールされた後にのみ、指定された IP への要求を強制し、成功を返します。
 

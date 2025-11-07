@@ -8,7 +8,7 @@ docset: aem65
 feature: Publishing,Dynamic Media
 role: User
 exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '2946'
 ht-degree: 100%
@@ -185,7 +185,7 @@ Adobe Experience Manager または Dynamic Media との間でアセットを公�
 1. 「**[!UICONTROL クイック公開]**」メニューリストから、次のいずれかのオプションを選択します。
 
    | クイック公開オプション | 動作 |
-   | --- | --- | 
+   | --- | --- |
    | Experience Manager に公開 | 選択したアセットを直ちに Experience Manager に公開します。 |
    | Brand Portal に公開 | 選択したアセットを直ちに **[!UICONTROL Brand Portal]** に公開します。<br> このオプションは、Experience Manager Assets インスタンスで **[!UICONTROL Brand Portal]** が既に設定されている場合にのみ使用できます。 |
    | Dynamic Media に公開 | 選択したアセットを直ちに Dynamic Media に公開します。<br>アセットは、既に Dynamic Media と同期している必要があります。必要に応じて、フォルダーのプロパティの&#x200B;**[!UICONTROL 同期モード]**&#x200B;が既に「**[!UICONTROL このフォルダーサブツリー内のすべてを Dynamic Media に同期]**」に設定されていることを確認します。 |

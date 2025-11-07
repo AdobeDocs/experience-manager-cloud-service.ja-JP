@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '3194'
 ht-degree: 100%
@@ -460,7 +460,7 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
 
 | **OSGI コンポーネント ID** | **変更不能プロパティ** |
 |---|---|
-| **`com.day.cq.auth.impl.cug.CugSupportImpl`** |
+| **`com.day.cq.auth.impl.cug.CugSupportImpl`** |  |
 | **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | すべて |
 | **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | すべて |
 | **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | すべて |

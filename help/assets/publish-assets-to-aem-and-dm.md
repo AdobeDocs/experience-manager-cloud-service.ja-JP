@@ -2,9 +2,9 @@
 title: ' [!DNL AEM and Dynamic Media] へのクイック公開'
 description: ' [!DNL Assets view]  のクイック公開を使用すると、アセットを  [!DNL AEM and Dynamic Media]  に同時または個別に公開できます。アセットとフォルダーを選択し、 [!DNL Dynamic Media]  または [!DNL AEM] に公開することを選択できます。'
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-feature: Publishing, [!DNL Dynamic Media]
+feature: Publishing
 role: User
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 92%
@@ -13,7 +13,7 @@ ht-degree: 92%
 
 # [!DNL AEM and Dynamic Media] へのアセットの公開{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
-[!DNL Experience Manager Assets] を使用すると、[!DNL Assets view] を使用して [!DNL Experience Manager] と [!DNL Dynamic Media] にアセットをすばやく公開できます。これにより、 [!DNL Admin view][&#128279;](/help/assets/overview.md##persona-based-experiences) に切り替えることなく、[!DNL Assets view]  を使用してアセットを管理し、公開できるようになります。
+[!DNL Experience Manager Assets] を使用すると、[!DNL Assets view] を使用して [!DNL Experience Manager] と [!DNL Dynamic Media] にアセットをすばやく公開できます。これにより、 [!DNL Admin view]](/help/assets/overview.md##persona-based-experiences) に切り替えることなく、[[!DNL Assets view]  を使用してアセットを管理し、公開できるようになります。
 
 [!DNL Experience Manager Assets view] ビューでは、アセットを [!DNL AEM] や [!DNL Dynamic Media] に、またはその両方に同時に公開できる柔軟性が提供されます。アセットのアップロード、参照および検索時に、アセットを公開できます。アセットを公開するこれらのすべてのオプションについて詳しくは、この記事を参照してください。
 
@@ -23,8 +23,8 @@ ht-degree: 92%
 
 * [!DNL Dynamic Media] の公開オプションを表示するには、管理ビューを使用して、次の設定を行います。
 
-   * [&#x200B; [!DNL Dynamic Media] クラウド設定](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)を作成します。
-   * フォルダーレベルで [!DNL Dynamic Media] 公開モードを設定します。これらの設定は、[!DNL Dynamic Media] クラウド設定の作成中にも設定できます。フォルダーレベルでこれらの設定を上書きする方法について詳しくは、[&#x200B; [!DNL Dynamic Media]](/help/assets/dynamic-media/selective-publishing.md) のフォルダーレベルでの選択的公開の設定を参照してください。
+   * [ [!DNL Dynamic Media] クラウド設定](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)を作成します。
+   * フォルダーレベルで [!DNL Dynamic Media] 公開モードを設定します。これらの設定は、[!DNL Dynamic Media] クラウド設定の作成中にも設定できます。フォルダーレベルでこれらの設定を上書きする方法について詳しくは、[ [!DNL Dynamic Media]](/help/assets/dynamic-media/selective-publishing.md) のフォルダーレベルでの選択的公開の設定を参照してください。
 
 * [!DNL AEM] の公開オプションを表示するには、環境に合わせて [!DNL AEM] パブリッシュエンドポイントを設定する必要があります。
 
@@ -55,7 +55,7 @@ ht-degree: 92%
 
    ![ファイルのアップロード画像 - 即時モード](/help/assets/assets/resized-image-pdf-svg-new.svg)
 
-   [!UICONTROL Dynamic Media 公開モード &#x200B;] が **[!UICONTROL 即時]** の場合、アップロードされたアセットは、「[!DNL Dynamic Media] アップロード **[!UICONTROL 」をクリックすると自動的に]** に公開されます。
+   [!UICONTROL Dynamic Media 公開モード ] が **[!UICONTROL 即時]** の場合、アップロードされたアセットは、「[!DNL Dynamic Media] アップロード **[!UICONTROL 」をクリックすると自動的に]** に公開されます。
 
 1. アップロードしたアセットを [!DNL AEM] に公開するには、「**AEM に公開**」を選択し、「**[!UICONTROL アップロード]**」をクリックします。
 
@@ -99,7 +99,7 @@ ht-degree: 92%
 1. 公開する必要があるアセットを選択し、「**[!UICONTROL 公開]」をクリックします。**
 1. 要件に応じて、[!DNL AEM, Dynamic Media]、またはその両方を選択し、「**[!UICONTROL 公開]**」をクリックします。
 
-   ![&#x200B; 検索画像 &#x200B;](/help/assets/assets/search-mode.svg)
+   ![ 検索画像 ](/help/assets/assets/search-mode.svg)
 
    検索結果ページで [!DNL Dynamic Media] に公開するオプションは、アセットがリポジトリで使用可能なフォルダーで設定された [!DNL Dynamic Media] 公開モードによって異なります。
 

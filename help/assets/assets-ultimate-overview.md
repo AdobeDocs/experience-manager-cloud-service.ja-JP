@@ -4,8 +4,8 @@ description: 主なメリット、ユーザータイプ、権限など、Assets 
 feature: Asset Management
 role: User, Admin
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 100%
 
@@ -70,7 +70,7 @@ Assets as a Cloud Service には、4 つのユーザータイプがあります�
 
    * 組織で使用可能な他のアドビ製品やアドビ以外のアプリケーションでの Assets の統合を通じて、Experience Manager のアセットを操作する。
 
-   * 組み込みの Adobe Express と Firefly を使用して、プロフェッショナルがデザインしたテンプレート、ブランドキット、Adobe Stock アセットなどを活用し、アセットを作成および編集する。
+   * ビルトインの Adobe Express と Firefly を使用して、プロフェッショナルがデザインしたテンプレート、ブランドキット、Adobe Stock アセットなどを活用し、アセットを作成および編集する。
 
    * AEM Assets コンテンツハブポータルを使用して、組織から承認済みアセットにアクセスし、活用する。
 
@@ -80,7 +80,7 @@ Assets as a Cloud Service には、4 つのユーザータイプがあります�
 
    * 組織で使用可能な他のアドビアプリケーションやアドビ以外のアプリケーションでの Assets の統合を通じて、Experience Manager のアセットを操作する。
 
-   * 組み込みの Adobe Express と Firefly を使用して、プロフェッショナルがデザインしたテンプレート、ブランドキット、Adobe Stock アセットなどを活用し、アセットを作成および編集する。
+   * ビルトインの Adobe Express と Firefly を使用して、プロフェッショナルがデザインしたテンプレート、ブランドキット、Adobe Stock アセットなどを活用し、アセットを作成および編集する。
 
    * AEM Assets コンテンツハブポータルを使用して、組織から承認済みアセットにアクセスし、活用する。
 
@@ -91,13 +91,13 @@ Assets as a Cloud Service には、4 つのユーザータイプがあります�
 
 | ユーザーの役割 | 制限付きユーザー | 共同作業者ユーザー | パワーユーザー | 管理者 |
 |---------------|----------|----------|-------------------------|---|
-| **機能** |
+| **機能** |  |  |  |  |
 | コンテンツハブポータルでブランド承認済みアセットにアクセス | ✓ | ✓ | ✓ | ✓ |
-| 組み込みの Adobe Express と Firefly を使用して、アセットを作成および編集 | − | ✓ | ✓ | ✓ |
+| ビルトインの Adobe Express と Firefly を使用して、アセットを作成および編集 | − | ✓ | ✓ | ✓ |
 | 組織内のアセットとアドビアプリケーションおよびアドビ以外のアプリケーションとの統合 | − | ✓ | ✓ | ✓ |
 | アセット、メタデータ、全体的なガバナンスと自動化の管理を含む、AEM Assets のすべての機能にアクセス | − | − | ✓ | ✓ |
 | AEM Assets オーサー環境でコンテンツの権限を管理 | − | − | − | ✓ |
-| **ユーザーは、次の製品プロファイル（Admin Console）に含まれている必要があります** |
+| **ユーザーは、次の製品プロファイル（Admin Console）に含まれている必要があります** |  |  |  |  |
 | AEM／配信インスタンス／AEM Assets 制限付きユーザー | ✓ | ✓ | ✓ | ✓ |
 | AEM／実稼動オーサーインスタンス／AEM Assets 共同作業者ユーザー | − | ✓ | − | − |
 | AEM／実稼動オーサーインスタンス／AEM Assets パワーユーザー | − | − | ✓ | − |

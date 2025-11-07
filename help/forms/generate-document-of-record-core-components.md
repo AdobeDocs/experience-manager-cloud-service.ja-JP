@@ -4,7 +4,7 @@ description: アダプティブフォームコアコンポーネント用のレ�
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 100%
@@ -262,7 +262,7 @@ When you select a form model, configure Document of Record using options availab
 | アダプティブフォームコンポーネント | 対応する XFA コンポーネント | メモ |
 |---|---|---|
 | 画像 | 画像 | レコードのドキュメント設定を使用して除外されない限り、TextDraw と Image の各コンポーネントは、バインドされているかどうかを問わず、XSD ベースのアダプティブフォーム用のレコードのドキュメントに常に表示されます。 |
-| テキスト | テキスト |
+| テキスト | テキスト |  |
 
 ### テーブル {#tables}
 

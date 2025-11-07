@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 100%
+source-wordcount: '1144'
+ht-degree: 96%
 
 ---
 
@@ -30,14 +30,14 @@ CRXDE Lite で次のアセットプロパティを見直すと、Adobe Experienc
 
 | **プロパティ** | **例** | **説明** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | ノードが Dynamic Media にリンクされていることを示す全般的インジケーター。 |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a\|364266`** | ノードが Dynamic Media にリンクされていることを示す全般的インジケーター。 |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** またはエラーテキスト | Dynamic Media へのアセットアップロードのステータス。 |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Dynamic Media のリモートアセットへの URL を生成するには、これを入力する必要があります。 |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **success** または **failed:`<error text>`** | セット（スピンセット、画像セットなど）、画像プリセット、ビューアプリセット、アセットの画像マップの更新、編集された画像などの同期ステータス。 |
 
 ### 同期のログ {#synchronization-logging}
 
-同期のエラーと問題は `error.log`（Experience Manager サーバーディレクトリの `/crx-quickstart/logs/`）に記録されます。ログにはほとんどの問題の根本原因を突き止めるのに十分な情報が記録されますが、Sling コンソール（[https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)）を通じて `com.adobe.cq.dam.ips` パッケージのログレベルをデバッグに引き上げると、さらに詳しい情報を集めることができます。
+同期のエラーと問題は `error.log`（Experience Manager サーバーディレクトリの `/crx-quickstart/logs/`）に記録されます。ログにはほとんどの問題の根本原因を突き止めるのに十分な情報が記録されますが、Sling コンソール（`com.adobe.cq.dam.ips`https://localhost[/system/console/slinglog:4502）を通じて ](https://localhost:4502/system/console/slinglog) パッケージのログレベルをデバッグに引き上げると、さらに詳しい情報を集めることができます。
 
 ### バージョン管理 {#version-control}
 
@@ -209,7 +209,7 @@ CRXDE Lite で以下を行います。
 
 **解決策**
 
-サンプルアセットまたはビューアプリセットのアートワークが同期されていないか、公開されてない場合は、コピー／同期処理全体をやり直します。
+サンプルアセットまたはビューアプリセットのアートワークが同期されていないか、公開されてない場合は、コピー／同期処理全体を再起動します。
 
 1. CRXDE Lite に移動します。
 1. `<sync-folder>/_CSS/_OOTB` を削除します。
