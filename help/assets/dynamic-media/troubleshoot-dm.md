@@ -37,7 +37,7 @@ CRXDE Lite で次のアセットプロパティを見直すと、Adobe Experienc
 
 ### 同期のログ {#synchronization-logging}
 
-同期のエラーと問題は `error.log`（Experience Manager サーバーディレクトリの `/crx-quickstart/logs/`）に記録されます。ログにはほとんどの問題の根本原因を突き止めるのに十分な情報が記録されますが、Sling コンソール（`com.adobe.cq.dam.ips`https://localhost[/system/console/slinglog:4502）を通じて ](https://localhost:4502/system/console/slinglog) パッケージのログレベルをデバッグに引き上げると、さらに詳しい情報を集めることができます。
+同期のエラーと問題は `error.log`（Experience Manager サーバーディレクトリの `/crx-quickstart/logs/`）に記録されます。ログにはほとんどの問題の根本原因を突き止めるのに十分な情報が記録されますが、Sling コンソール（`com.adobe.cq.dam.ips`https://localhost[/system/console/slinglog:4502）を通じて &#x200B;](https://localhost:4502/system/console/slinglog) パッケージのログレベルをデバッグに引き上げると、さらに詳しい情報を集めることができます。
 
 ### バージョン管理 {#version-control}
 
