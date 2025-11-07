@@ -63,7 +63,7 @@ ht-degree: 10%
 インタラクティブ通信（IC）テンプレートにコンテンツロックまたはレイアウトロックを適用するには、次の手順に従います。
 
 1. テンプレートを開きます
-テンプレートの開き方または作成については、[&#x200B; インタラクティブ通信テンプレートの作成 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template) のガイドに従ってください
+テンプレートの開き方または作成については、[&#x200B; インタラクティブ通信テンプレートの作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template) のガイドに従ってください
 
 1. コンポーネントを選択します
 制限するコンポーネント（テキストボックス、画像、サブフォーム）をクリックします。
