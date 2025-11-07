@@ -183,7 +183,7 @@ Cloud Manager を使用すると、組織がクラウド内の Experience Manage
 #### デプロイメント／実稼働開始
 
 1. [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html?lang=ja) git へのデプロイ
-2. [Cloud Manager 品質パイプライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)を介してカスタマーコードを実行
+2. [Cloud Manager 品質パイプライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html?lang=ja)を介してカスタマーコードを実行
 3. [開発環境へのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=ja#debugging)
 4. **移行のみ**&#x200B;パッケージまたは[コンテンツトランスファーツール](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)（CTT）を使用したコンテンツの転送
 5. 推奨されるテストサイクル（スモークテスト、QA など）の実行
