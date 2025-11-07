@@ -85,7 +85,7 @@ Cloud Services と互換性を持たせるために、既存の機能のリフ�
 
 * このビデオを視聴すると、Dispatcher SDK の設定方法を理解できます。
 
-  >[!VIDEO](https://video.tv.adobe.com/v/30602)
+  >[!VIDEO](https://video.tv.adobe.com/v/35077?captions=jpn)
 
 ### 発想の転換 {#a-change-in-mindset}
 
