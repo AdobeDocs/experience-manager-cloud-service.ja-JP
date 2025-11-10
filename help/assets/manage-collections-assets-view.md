@@ -4,10 +4,10 @@ description: コレクションとは、Experience Manager Assets ビュー内�
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '910'
-ht-degree: 100%
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
+workflow-type: tm+mt
+source-wordcount: '1084'
+ht-degree: 85%
 
 ---
 
@@ -37,6 +37,8 @@ You can share collections with various users that are assigned different levels 
 * [コレクションへのアセットの追加](#add-assets-to-collection)
 
 * [コレクションからのアセットの削除](#remove-assets-from-collection)
+
+* [コレクション内の検索](#search-collection)
 
 * [スマートコレクションを作成](#create-smart-collection)
 
@@ -93,6 +95,32 @@ You can share collections with various users that are assigned different levels 
 1. コレクションをクリックし、コレクションから削除する必要がある項目を選択します。
 
 1. 「**[!UICONTROL 削除]**」をクリックします。
+
+## コレクション内の検索 {#search-collection}
+
+コレクション内を検索して、関連するアセットを簡単に見つけることができます。 これを行うには、次の手順を実行します。
+
+* **[!DNL Collections]** に移動します。検索バーに、目的のコレクションを見つけるためのキーワードを入力します。 検索バーに、選択したコレクションの場所が表示されます。
+
+* 検索結果を絞り込むには、**[!DNL Filters]** を開き、「**[!DNL Collections]**」で **[!DNL Asset Type]** が選択されていることを確認します。
+
+* 「**[!DNL Collection Visibility]**」ドロップダウンで、次のいずれかのオプションを選択します。
+
+   * **[!DNL All]:** 表示に関係なく、すべてのコレクションを表示します。
+   * **[!DNL Public Collection]:** すべてのユーザーに表示されるコレクションのみを表示します。
+   * **[!DNL Private Collection]:** 特定のユーザーまたはグループに対して制限されている、または表示されているコレクションのみを表示します。
+
+* 「[!DNL Collection Type]」ドロップダウンで、次のいずれかのオプションを選択します。
+
+   * **[!DNL All]:** 標準コレクションとスマートコレクションの両方を表示します。
+   * **[!DNL Collection]:** 手動で作成したコレクションを表示します。このコレクションでは、アセットが個別に追加されます。
+   * **[!DNL Smart Collection]:** [ スマートコレクション ](#manage-smart-collection) に保存されたアセットを自動的に含んだコレクションを表示します。
+
+* **[!DNL Created Date]** ドロップダウンを使用すると、コレクションを作成日時に基づいてフィルタリングできます。 日付範囲を指定して、最近作成されたコレクションや古いコレクションを検索できます。
+
+  ![ コレクションを検索 ](assets/search-collection.png)
+
+詳しくは、[ アセットの検索 ](search-assets-view.md)、[ 検索結果のフィルター ](search-assets-view.md#refine-search-results)、または [ 保存済みの検索結果の管理 ](search-assets-view.md##saved-search) を参照してください。
 
 ## スマートコレクションの管理 {#manage-smart-collection}
 

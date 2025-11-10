@@ -3,10 +3,10 @@ title: カスタム検索フィルター
 description: 検索フィルターフォームのカスタマイズについて説明します。
 role: User, Leader, Developer
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1294'
-ht-degree: 100%
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
+workflow-type: tm+mt
+source-wordcount: '1425'
+ht-degree: 85%
 
 ---
 
@@ -18,18 +18,41 @@ ht-degree: 100%
 
 検索フィルターをカスタマイズする AEM Assets は、検索可能なプロパティインデックス内のエントリにのみマッピングできます。カスタムフィルターエクスペリエンスを設定する前に、カスタムメタデータが含まれていることを確認します。[!DNL Assets view] は、検索フィルターをカスタマイズして検索プロセスを効率化するのに役立ちます。AEM Assets カスタム検索フィルターをカスタマイズするには、次の手順を実行します。
 
-1. **[!UICONTROL 設定]**／**[!UICONTROL 一般設定]**&#x200B;に移動します。
-1. 「**[!UICONTROL 検索]**」タブに移動します。「**[!UICONTROL カスタマイズ]**」をクリックして、検索フォームを設定します。
+1. **[!UICONTROL 設定]**/**[!UICONTROL 一般設定]**/**[!UICONTROL 検索]** に移動します。
+
+   <!--1. Go to the **[!UICONTROL Search]** tab. Click **[!UICONTROL Customize]** to configure your search form.-->
 
    ![カスタム検索フィルターの設定](assets/custom-search-filter.png)
 
-1. [!UICONTROL フィルターを設定]フォームが表示されます。テンプレートに変更を行うことができるように、編集モードになっていることを確認します。[!UICONTROL プレビューモード]に切り替えると、既存の検索フォームのプレビューを表示できます。
-1. キャンバス上の[カスタムフィルター](#available-custom-filters)からフィルター要素をドロップします。必要に応じて、コンポーネントをドラッグ＆ドロップして並べ替えることができます。
+1. 「**[!UICONTROL フィルター]**」セクションでは、次の項目を設定できます。
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3443080)
+   * **[!UICONTROL ファイル ]:** ファイルの設定には、ファイルのタイプ、ファイル形式、アセットのステータス、ファイルサイズ、画像のサイズ、作成日、変更日などが含まれます。
+   * **[!UICONTROL フォルダー ]:** フォルダーの設定には、作成日、破棄された日付、破棄されたユーザーなどが含まれます。
+   * **[!UICONTROL コレクション ]:** コレクションの設定には、コレクションの表示、コレクションのタイプ、作成日などが含まれます。
 
-1. 「**[!UICONTROL プレビューモード]**」をクリックして、変更を確認します。
-1. 「**[!UICONTROL 確認]**」をクリックして保存します。
+1. ファイル、フォルダー、コレクションで使用できるデフォルトの **[!UICONTROL プリセットフィルター]** フォームをプレビューできます。 一方、この既存のフォームはカスタマイズまたは削除できません。 または、カスタマイズされたフィルターフォームを作成するには、「**[!UICONTROL 新しいフォームを追加]**」をクリックします。
+
+   >[!NOTE]
+   >
+   >カテゴリ（ファイル、フォルダー、コレクション）ごとに、カスタマイズされたフィルターフォームを 1 つだけ作成できます。
+
+1. 「**[!UICONTROL 保存]**」をクリックして、変更を保存します。
+
+## 設定済みフォームでのアクション {#Actions-on-configured-form}
+
+設定済みのフィルターフォームでは、次のアクションを使用できます。
+
+* **[!UICONTROL カスタマイズ ]:** クリックしてフォームを追加または変更します。 キャンバス上の [ カスタムフィルター ](#available-custom-filters) からフィルター要素をドロップしたり、必要に応じて並べ替えたりできます。
+
+* **[!UICONTROL プレビュー ]:** クリックして変更を確認します。
+
+* **[!UICONTROL デフォルトとして設定 ]:** 選択したフォームをデフォルトとして設定します。
+
+* **[!UICONTROL フォームを削除 ]:** 選択したフィルターフォームを削除するには、その他のオプション ![ その他のオプション ](assets/do-not-localize/more-icon.svg) をクリックし、**[!UICONTROL フォームを削除]** を選択します。
+
+* **[!UICONTROL フォームラベルを編集 ]:** その他のオプション ![ その他のオプション ](assets/do-not-localize/more-icon.svg) をクリックし、カスタマイズしたフィルターフォームに新しいラベルと説明を追加します。
+
+  ![ フォームラベルを編集 ](assets/edit-form-labels.png)
 
 ## 使用可能なカスタムフィルター {#available-custom-filters}
 
@@ -404,6 +427,7 @@ ht-degree: 100%
     </tr>
 </table>
 
+>[!VIDEO](https://video.tv.adobe.com/v/3443080)
 
 ## フィルター要素の削除 {#delete-a-filter-element}
 

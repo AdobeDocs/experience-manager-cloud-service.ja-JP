@@ -4,10 +4,10 @@ description: 詳しくは、AEM Assets ビューでアセットを検索およ�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '2255'
-ht-degree: 100%
+source-wordcount: '2277'
+ht-degree: 98%
 
 ---
 
@@ -33,22 +33,19 @@ ht-degree: 100%
 
 ## 検索結果のフィルタリング {#refine-search-results}
 
+複数のフィルターを適用することで、検索結果を絞り込み、関連するアセットを見つけることができます。 管理者が設定するこれらのフィルターは、ファイル、フォルダー、コレクションに基づいています。 [ 検索フィルターのカスタマイズ ](custom-search-filters.md) を参照してください。
+
+![検索フィルター](assets/filters-panel.gif)
+
 以下のパラメーターに基づいて検索結果をフィルタリングできます。
 
-![検索フィルター](assets/filters1.png)
-
-*図：検索したアセットを様々なパラメーターに基づいてフィルタリング*
-
 * アセットステータス：`Approved`、`Rejected`、または `No Status` アセットステータスを使用した検索結果のフィルタリング。
-
 * ファイルタイプ：サポートされているファイルタイプ（`Images`、`Documents`、`Videos`）で検索結果をフィルタリングします。
 * MIME タイプ：サポートされている 1 つ以上のファイル形式でフィルタリングします。<!-- TBD:  [supported file formats](/help/using/supported-file-formats.md). -->
 * 画像サイズ：画像をフィルタリングするための最小サイズと最大サイズのどちらか一方または両方を指定します。サイズはピクセル単位で指定され、画像のファイルサイズではありません。
 * 作成日：アセットの作成日（メタデータで指定されたもの）。標準の日付形式は `yyyy-mm-dd` です。
 * 変更日：アセットの最終変更日。標準の日付形式は `yyyy-mm-dd` です。
-
 * 有効期限：アセットの `Expired` ステータスに基づいて検索結果をフィルタリングできます。また、アセットの有効期限の日付範囲を指定して、検索結果をさらにフィルタリングすることもできます。
-
 * カスタムフィルター：アセットビューのユーザーインターフェイスに[カスタムフィルターを追加](#custom-filters)します。標準フィルターに加えて、カスタムフィルターを適用し、検索結果を絞り込むことができます。
 
 検索したアセットを、`Name`、`Relevance`、`Size`、`Modified` および `Created` の昇順または降順に並べ替えることができます。デフォルトでは、検索したアセットは `Relevance` に基づいて並べ替えられます。
@@ -375,6 +372,7 @@ Experience Manager Assets でコンテキスト検索にアクセスするには
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」 ![ページを編集](assets/do-not-localize/edit-page.png) または「[!UICONTROL イシューを記録]」 ![GitHub イシューを作成](assets/do-not-localize/github-issue.png) を使用してドキュメントのフィードバックを提供する。
 
-* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&lang=ja#support)に問い合わせる
+
 
 
