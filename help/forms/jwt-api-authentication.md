@@ -20,9 +20,9 @@ AEM Formsの JWT 認証、特にAEM as a Cloud Serviceのサーバーサイド�
 
 ## 考慮事項
 
-JWT で生成されるアクセストークンは、現在の証明書の有効期限が切れた後か 2026 年 3 月 1 日（PT）のいずれか早い方が有効になりません。 したがって、新しい [OAuth サーバー間資格情報 ](/help/forms/oauth-api-authetication.md) を使用するには、統合を移行する必要があります。
+JWT で生成されるアクセストークンは、現在の証明書の有効期限が切れた後か 2026 年 3 月 1 日（PT）のいずれか早い方が有効になりません。 したがって、新しい [OAuth サーバー間資格情報 &#x200B;](/help/forms/oauth-api-authetication.md) を使用するには、統合を移行する必要があります。
 
-プロジェクトを OAuth サーバー間資格情報に移行する手順は簡単で、アプリケーションと統合をダウンタイムなしで移行できます。 OAuth サーバー間資格情報に移行する場合は、[ 移行ガイド ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration) を参照してください。
+プロジェクトを OAuth サーバー間資格情報に移行する手順は簡単で、アプリケーションと統合をダウンタイムなしで移行できます。 OAuth サーバー間資格情報に移行する場合は、[&#x200B; 移行ガイド &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration) を参照してください。
 
 
 ## 前提条件
@@ -38,10 +38,10 @@ JWT 資格情報からアクセストークンを生成する方法を示す次�
 
 1. **Adobe Cloud Manager**
 
-   1. [Cloud Manager アカウント ](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) にログインします。
+   1. [Cloud Manager アカウント &#x200B;](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) にログインします。
    2. 選択したプログラムで、「**[!UICONTROL プログラムの概要]**」をクリックします。
 
-      ![Cloud Manager アカウント ](/help/forms/assets/jwt-cloud-manager-landing.png)
+      ![Cloud Manager アカウント &#x200B;](/help/forms/assets/jwt-cloud-manager-landing.png)
 
    3. プログラムで、3 ドットメニューをクリックし、「**[!UICONTROL Developer Console]**」を選択します。
 
@@ -55,11 +55,11 @@ JWT 資格情報からアクセストークンを生成する方法を示す次�
 
    3. オプションをクリックして **[!UICONTROL 新しいテクニカルアカウントを作成]** します。
 
-      ![ 新しいテクニカルアカウントの作成 ](/help/forms/assets/jwt-creae-new-tech-account.png)
+      ![&#x200B; 新しいテクニカルアカウントの作成 &#x200B;](/help/forms/assets/jwt-creae-new-tech-account.png)
 
    「新しいテクニカルアカウントを作成」をクリックすると、アクセストークン（クライアント ID、クライアント秘密鍵など）および他のテクニカルアカウント情報（秘密鍵、公開鍵、有効期限が生成される）を生成するために必要な情報が表示されます。
 
-   ![JWT 資格情報 ](/help/forms/assets/jwt-credentials.png)
+   ![JWT 資格情報 &#x200B;](/help/forms/assets/jwt-credentials.png)
 
 
 3. 資格情報の生成と保存

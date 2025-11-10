@@ -181,4 +181,4 @@ API から提供されるすべてのパラメーター、認証方法および�
 >* [アダプティブフォームおよび通信 API 用のAEM Forms as a Cloud Service アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [通信処理 - 同期 API](/help/forms/aem-forms-cloud-service-communications.md)
 >* [通信処理 - バッチ API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
->* [ 通信処理 – オンデマンド API](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+>* [&#x200B; 通信処理 – オンデマンド API](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
