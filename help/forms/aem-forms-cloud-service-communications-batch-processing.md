@@ -4,10 +4,10 @@ description: ブランド志向のパーソナライズされたコミュニケ�
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: 5e3175cc4d96c89df4154ae42c5042cf9c2ca739
 workflow-type: tm+mt
-source-wordcount: '1706'
-ht-degree: 100%
+source-wordcount: '1710'
+ht-degree: 99%
 
 ---
 
@@ -181,3 +181,4 @@ API から提供されるすべてのパラメーター、認証方法および�
 >* [アダプティブフォームおよび通信 API 用のAEM Forms as a Cloud Service アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [通信処理 - 同期 API](/help/forms/aem-forms-cloud-service-communications.md)
 >* [通信処理 - バッチ API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [ 通信処理 – オンデマンド API](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
