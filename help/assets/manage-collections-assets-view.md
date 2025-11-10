@@ -114,13 +114,13 @@ You can share collections with various users that are assigned different levels 
 
    * **[!DNL All]:** 標準コレクションとスマートコレクションの両方を表示します。
    * **[!DNL Collection]:** 手動で作成したコレクションを表示します。このコレクションでは、アセットが個別に追加されます。
-   * **[!DNL Smart Collection]:** [ スマートコレクション ](#manage-smart-collection) に保存されたアセットを自動的に含んだコレクションを表示します。
+   * **[!DNL Smart Collection]:** [&#x200B; スマートコレクション &#x200B;](#manage-smart-collection) に保存されたアセットを自動的に含んだコレクションを表示します。
 
 * **[!DNL Created Date]** ドロップダウンを使用すると、コレクションを作成日時に基づいてフィルタリングできます。 日付範囲を指定して、最近作成されたコレクションや古いコレクションを検索できます。
 
-  ![ コレクションを検索 ](assets/search-collection.png)
+  ![&#x200B; コレクションを検索 &#x200B;](assets/search-collection.png)
 
-詳しくは、[ アセットの検索 ](search-assets-view.md)、[ 検索結果のフィルター ](search-assets-view.md#refine-search-results)、または [ 保存済みの検索結果の管理 ](search-assets-view.md##saved-search) を参照してください。
+詳しくは、[&#x200B; アセットの検索 &#x200B;](search-assets-view.md)、[&#x200B; 検索結果のフィルター &#x200B;](search-assets-view.md#refine-search-results)、または [&#x200B; 保存済みの検索結果の管理 &#x200B;](search-assets-view.md##saved-search) を参照してください。
 
 ## スマートコレクションの管理 {#manage-smart-collection}
 
