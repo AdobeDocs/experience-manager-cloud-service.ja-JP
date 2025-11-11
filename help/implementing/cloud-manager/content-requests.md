@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: f9a767e3d5ae33cd46dc100c2ee59ec9ce8f63ac
 workflow-type: tm+mt
 source-wordcount: '1918'
 ht-degree: 79%
@@ -104,19 +104,19 @@ AEM as a Cloud Serviceは、サーバーサイドのコレクションルール�
 
 ## コンテンツリクエストの管理 {#managing-content-requests}
 
-上記の節 [Cloud Service コンテンツリクエストの相違 &#x200B;](#content-requests-variances) で説明したように、コンテンツリクエストは、様々な理由により、予期よりも多くなる可能性があります。一般的なスレッドは、CDN にヒットするトラフィックです。  AEMのお客様には、ライセンス予算に合わせてコンテンツリクエストをモニタリングし、管理することが有利です。  コンテンツリクエストの管理は、通常、実装技術と [&#x200B; トラフィックフィルタールール &#x200B;](/help/security/traffic-filter-rules-including-waf.md) を組み合わせたものです。
+上記の節 [Cloud Service コンテンツリクエストの相違 ](#content-requests-variances) で説明したように、コンテンツリクエストは、様々な理由により、予期よりも多くなる可能性があります。一般的なスレッドは、CDN にヒットするトラフィックです。  AEMのお客様には、ライセンス予算に合わせてコンテンツリクエストをモニタリングし、管理することが有利です。  コンテンツリクエストの管理は、通常、実装技術と [ トラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md) を組み合わせたものです。
 
 ### コンテンツリクエストを管理する実装手法 {#implementation-techniques-to-manage-crs}
 
 * ページが見つからないという応答は、HTTP ステータス 404 で配信されます。  ステータス 200 で返された場合、コンテンツリクエストがカウントされます。
-* ヘルスチェックまたはモニタリングツールを/systems/probes/health URL にルーティングするか、GETの代わりにHEAD メソッドを使用して、コンテンツリクエストの発生を避けます。
+* ヘルスチェックまたはモニタリングツールを/system/probes/health URL にルーティングするか、GETの代わりにHEAD メソッドを使用して、コンテンツリクエストの発生を避けます。
 * サイトと統合したカスタム検索クローラーのAEM ライセンスコストと、コンテンツの鮮度に関するニーズのバランスを取ります。  過度にアグレッシブなクローラーは、多くのコンテンツリクエストを消費する可能性があります。
 * 2 つの異なるコンテンツリクエストが発生するのを避けるために、リダイレクトをクライアントサイド（JavaScript リダイレクト付きのステータス 200）ではなくサーバーサイド（ステータス 301 または 302）で処理します。
 * API 呼び出しを結合または短縮します。API 呼び出しは、ページをレンダリングするために読み込むことができるAEMからの JSON 応答です。
 
 ### コンテンツリクエストを管理するトラフィックフィルタールール {#traffic-filter-rules-to-manage-crs}
 
-* 一般的なボットパターンは、空のユーザーエージェントを使用することです。  空のユーザーエージェントが役に立つかどうかを確認するには、実装とトラフィックパターンをレビューする必要があります。  このトラフィックをブロックする場合は、推奨される [&#x200B; 構文 &#x200B;](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) を次に示します。
+* 一般的なボットパターンは、空のユーザーエージェントを使用することです。  空のユーザーエージェントが役に立つかどうかを確認するには、実装とトラフィックパターンをレビューする必要があります。  このトラフィックをブロックする場合は、推奨される [ 構文 ](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) を次に示します。
 
 ```
 trafficFilters:
@@ -129,4 +129,4 @@ trafficFilters:
       action: block
 ```
 
-* ある日ボットが非常に激しくサイトに当たり、次の日には消えてしまう場合もあります。  これにより、特定の IP アドレスまたはユーザーエージェントをブロックしようとする試みがフラストレーションを受ける可能性があります。  一般的なアプローチの 1 つは、[&#x200B; レート制限ルール &#x200B;](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules) を導入することです。  [&#x200B; 例 &#x200B;](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) を確認し、リクエストの急速な割合に対する許容値に一致するルールを作成します。  一般的なレート制限を許可する例外については、[&#x200B; 条件構造 &#x200B;](/help/security/traffic-filter-rules-including-waf.md#condition-structure) の構文を参照してください。
+* ある日ボットが非常に激しくサイトに当たり、次の日には消えてしまう場合もあります。  これにより、特定の IP アドレスまたはユーザーエージェントをブロックしようとする試みがフラストレーションを受ける可能性があります。  一般的なアプローチの 1 つは、[ レート制限ルール ](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules) を導入することです。  [ 例 ](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) を確認し、リクエストの急速な割合に対する許容値に一致するルールを作成します。  一般的なレート制限を許可する例外については、[ 条件構造 ](/help/security/traffic-filter-rules-including-waf.md#condition-structure) の構文を参照してください。
