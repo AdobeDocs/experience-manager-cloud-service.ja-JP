@@ -4,10 +4,10 @@ description: AFP Output Sync API を使用して出力レンディションを�
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
+source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 14%
+source-wordcount: '253'
+ht-degree: 13%
 
 ---
 
@@ -39,12 +39,12 @@ XDP テンプレートと入力データを使用して、AFP （Advanced Functi
 
 ### 認証
 
-ローカル環境の場合は **BasicAuth** （管理者資格情報）を、AEM Cloud インスタンスの場合は **BearerAuth** 認証を使用できます。
+ローカル環境の場合は **BasicAuth** （管理者資格情報）を、AEM Cloud インスタンスの場合は **OAuth サーバー間** 認証を使用できます。
 
 ### リクエスト
 
 **エンドポイント：**
-`POST http://<server>:<port>/adobe/forms/document/generate/afp`
+[https://[publish-url].adobeaemcloud.com/adobe/forms/doc/v1/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post)
 
 ### ヘッダー
 
@@ -97,8 +97,8 @@ curl --location 'http://<server>:<port>/adobe/forms/document/generate/afp' \
 
 .yaml ファイルをダウンロードし、Postmanにアップロードして API の機能を確認できます。
 
-![AFPPostman画像 &#x200B;](/help/forms/assets/afp-postman.png)
+![AFPPostman画像 ](/help/forms/assets/afp-postman.png)
 
 AFP リーダーで応答を保存し、保存したファイルを開いて確認できます。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/introimg.png)
+![IC Docu の検索 ](/help/forms/interactive-communication/assets/introimg.png)
