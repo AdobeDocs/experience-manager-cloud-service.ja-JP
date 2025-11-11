@@ -104,7 +104,7 @@ AEM as a Cloud Serviceは、サーバーサイドのコレクションルール�
 
 ## コンテンツリクエストの管理 {#managing-content-requests}
 
-上記の節 [Cloud Service コンテンツリクエストの相違 ](#content-requests-variances) で説明したように、コンテンツリクエストは、様々な理由により、予期よりも多くなる可能性があります。一般的なスレッドは、CDN にヒットするトラフィックです。  AEMのお客様には、ライセンス予算に合わせてコンテンツリクエストをモニタリングし、管理することが有利です。  コンテンツリクエストの管理は、通常、実装技術と [ トラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md) を組み合わせたものです。
+上記の節 [Cloud Service コンテンツリクエストの相違 &#x200B;](#content-requests-variances) で説明したように、コンテンツリクエストは、様々な理由により、予期よりも多くなる可能性があります。一般的なスレッドは、CDN にヒットするトラフィックです。  AEMのお客様には、ライセンス予算に合わせてコンテンツリクエストをモニタリングし、管理することが有利です。  コンテンツリクエストの管理は、通常、実装技術と [&#x200B; トラフィックフィルタールール &#x200B;](/help/security/traffic-filter-rules-including-waf.md) を組み合わせたものです。
 
 ### コンテンツリクエストを管理する実装手法 {#implementation-techniques-to-manage-crs}
 
@@ -116,7 +116,7 @@ AEM as a Cloud Serviceは、サーバーサイドのコレクションルール�
 
 ### コンテンツリクエストを管理するトラフィックフィルタールール {#traffic-filter-rules-to-manage-crs}
 
-* 一般的なボットパターンは、空のユーザーエージェントを使用することです。  空のユーザーエージェントが役に立つかどうかを確認するには、実装とトラフィックパターンをレビューする必要があります。  このトラフィックをブロックする場合は、推奨される [ 構文 ](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) を次に示します。
+* 一般的なボットパターンは、空のユーザーエージェントを使用することです。  空のユーザーエージェントが役に立つかどうかを確認するには、実装とトラフィックパターンをレビューする必要があります。  このトラフィックをブロックする場合は、推奨される [&#x200B; 構文 &#x200B;](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) を次に示します。
 
 ```
 trafficFilters:
@@ -129,4 +129,4 @@ trafficFilters:
       action: block
 ```
 
-* ある日ボットが非常に激しくサイトに当たり、次の日には消えてしまう場合もあります。  これにより、特定の IP アドレスまたはユーザーエージェントをブロックしようとする試みがフラストレーションを受ける可能性があります。  一般的なアプローチの 1 つは、[ レート制限ルール ](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules) を導入することです。  [ 例 ](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) を確認し、リクエストの急速な割合に対する許容値に一致するルールを作成します。  一般的なレート制限を許可する例外については、[ 条件構造 ](/help/security/traffic-filter-rules-including-waf.md#condition-structure) の構文を参照してください。
+* ある日ボットが非常に激しくサイトに当たり、次の日には消えてしまう場合もあります。  これにより、特定の IP アドレスまたはユーザーエージェントをブロックしようとする試みがフラストレーションを受ける可能性があります。  一般的なアプローチの 1 つは、[&#x200B; レート制限ルール &#x200B;](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules) を導入することです。  [&#x200B; 例 &#x200B;](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) を確認し、リクエストの急速な割合に対する許容値に一致するルールを作成します。  一般的なレート制限を許可する例外については、[&#x200B; 条件構造 &#x200B;](/help/security/traffic-filter-rules-including-waf.md#condition-structure) の構文を参照してください。
