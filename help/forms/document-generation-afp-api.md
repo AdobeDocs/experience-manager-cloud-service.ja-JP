@@ -97,8 +97,8 @@ curl --location 'http://<server>:<port>/adobe/forms/document/generate/afp' \
 
 .yaml ファイルをダウンロードし、Postmanにアップロードして API の機能を確認できます。
 
-![AFPPostman画像 ](/help/forms/assets/afp-postman.png)
+![AFPPostman画像 &#x200B;](/help/forms/assets/afp-postman.png)
 
 AFP リーダーで応答を保存し、保存したファイルを開いて確認できます。
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/introimg.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/introimg.png)
