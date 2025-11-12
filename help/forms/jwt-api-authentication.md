@@ -6,9 +6,9 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fcc25eb44b485db69ec1c267f4cf8774c4279b24
+source-git-commit: a9ef6553a7f480895f53f1240cd454c6f4fc7d24
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '451'
 ht-degree: 5%
 
 ---
@@ -20,9 +20,9 @@ AEM Formsの JWT 認証、特にAEM as a Cloud Serviceのサーバーサイド�
 
 ## 考慮事項
 
-JWT で生成されるアクセストークンは、現在の証明書の有効期限が切れた後か 2026 年 3 月 1 日（PT）のいずれか早い方が有効になりません。 したがって、新しい [OAuth サーバー間資格情報 &#x200B;](/help/forms/oauth-api-authetication.md) を使用するには、統合を移行する必要があります。
+JWT で生成されるアクセストークンは、現在の証明書の有効期限が切れた後か 2026 年 3 月 1 日（PT）のいずれか早い方が有効になりません。 したがって、新しい [OAuth サーバー間資格情報 ](/help/forms/oauth-api-authetication.md) を使用するには、統合を移行する必要があります。
 
-プロジェクトを OAuth サーバー間資格情報に移行する手順は簡単で、アプリケーションと統合をダウンタイムなしで移行できます。 OAuth サーバー間資格情報に移行する場合は、[&#x200B; 移行ガイド &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration) を参照してください。
+プロジェクトを OAuth サーバー間資格情報に移行する手順は簡単で、アプリケーションと統合をダウンタイムなしで移行できます。 OAuth サーバー間資格情報に移行する場合は、[ 移行ガイド ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration) を参照してください。
 
 
 ## 前提条件
@@ -38,10 +38,10 @@ JWT 資格情報からアクセストークンを生成する方法を示す次�
 
 1. **Adobe Cloud Manager**
 
-   1. [Cloud Manager アカウント &#x200B;](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) にログインします。
+   1. [Cloud Manager アカウント ](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) にログインします。
    2. 選択したプログラムで、「**[!UICONTROL プログラムの概要]**」をクリックします。
 
-      ![Cloud Manager アカウント &#x200B;](/help/forms/assets/jwt-cloud-manager-landing.png)
+      ![Cloud Manager アカウント ](/help/forms/assets/jwt-cloud-manager-landing.png)
 
    3. プログラムで、3 ドットメニューをクリックし、「**[!UICONTROL Developer Console]**」を選択します。
 
@@ -55,11 +55,11 @@ JWT 資格情報からアクセストークンを生成する方法を示す次�
 
    3. オプションをクリックして **[!UICONTROL 新しいテクニカルアカウントを作成]** します。
 
-      ![&#x200B; 新しいテクニカルアカウントの作成 &#x200B;](/help/forms/assets/jwt-creae-new-tech-account.png)
+      ![ 新しいテクニカルアカウントの作成 ](/help/forms/assets/jwt-creae-new-tech-account.png)
 
    「新しいテクニカルアカウントを作成」をクリックすると、アクセストークン（クライアント ID、クライアント秘密鍵など）および他のテクニカルアカウント情報（秘密鍵、公開鍵、有効期限が生成される）を生成するために必要な情報が表示されます。
 
-   ![JWT 資格情報 &#x200B;](/help/forms/assets/jwt-credentials.png)
+   ![JWT 資格情報 ](/help/forms/assets/jwt-credentials.png)
 
 
 3. 資格情報の生成と保存
@@ -78,7 +78,7 @@ JWT 資格情報からアクセストークンを生成する方法を示す次�
 
 4. アクセストークンの生成
 
-   Adobe IMSAPI を使用してプログラムでトークンを生成します。
+   cURL コマンドを使用してプログラムでトークンを生成します。
 
    **必要な資格情報：**
 
@@ -92,7 +92,7 @@ JWT 資格情報からアクセストークンを生成する方法を示す次�
    https://ims-na1.adobelogin.com/ims/token/v3
    ```
 
-   **サンプルリクエスト （curl）:**
+   **リクエストの例（cURL）:**
 
    ```bash
    curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
@@ -112,6 +112,11 @@ JWT 資格情報からアクセストークンを生成する方法を示す次�
    "expires_in": 86399
    }
    ```
+
+
+>[!NOTE]
+>
+> サービス資格情報と、Adobe IMSAPI を使用してアクセストークンを生成する方法について詳しくは、[ ここをクリック ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
 
 生成されたアクセストークンを使用して、開発、ステージ、実稼動環境の API 呼び出しを行えるようになりました。
 
