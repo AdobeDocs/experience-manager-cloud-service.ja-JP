@@ -161,6 +161,6 @@ Universal Editor Service listening on port 8000 as HTTPS Server
 1. ブラウザーを `https://localhost:8000/ping` で開きます。
 1. [自己署名証明書](#ue-https)に同意するようダイレクトされます。
 1. 自己署名証明書が信頼されると、ページはローカルのユニバーサルエディターサービスを使用して読み込まれます。
-1. ツールバーの [ ローカル開発者ログイン ](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) をクリックし、ローカルのAEM インスタンスに対して認証を行います。
+1. ツールバーの [&#x200B; ローカル開発者ログイン &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) をクリックし、ローカルのAEM インスタンスに対して認証を行います。
 
 ローカルのユニバーサルエディターサービスを使用して、ローカルのAEM テストインスタンス上のページを編集できるようになりました。
