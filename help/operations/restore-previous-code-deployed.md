@@ -23,7 +23,7 @@ ht-degree: 80%
 
 選択した環境の ![詳細アイコンまたは省略記号メニューアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) メニューを開き、**復元**／**デプロイした以前のコード**&#x200B;を選択するだけで、秒単位で最後にデプロイしたソースコードをロールバックできます。
 
-[AEM as a Cloud Serviceのコンテンツの復元 ](/help/operations/restore.md) も参照してください。
+[AEM as a Cloud Serviceのコンテンツの復元 &#x200B;](/help/operations/restore.md) も参照してください。
 
 >[!TIP]
 >
@@ -40,7 +40,7 @@ ht-degree: 80%
 * この環境の最後のパイプラインが正常に完了し、実行から **30 日未満**&#x200B;である。
 * 環境のステータスが&#x200B;*実行中*&#x200B;で、進行中のパイプラインがない。
 
-**デプロイされた以前のコードを復元** は、環境、`Production` 環境、`Development` ードに加えて、`Stage``Specialized Testing Environment` 環境で機能します。 確認後、Cloud Managerは復元を開始し、開始時と正常終了時にプッシュ通知を送信します。
+**デプロイされた以前のコードを復元** は、環境、`Production` 環境、`Development` ードに加えて、`Stage` `Specialized Testing Environment` 環境で機能します。 確認後、Cloud Managerは復元を開始し、開始時と正常終了時にプッシュ通知を送信します。
 
 >[!IMPORTANT]
 >
@@ -85,7 +85,7 @@ ht-degree: 80%
 
    ![アクティベーションの復元](/help/operations/assets/restore-previous-code-deployed-restoring.png)
 
-1. ページの右上隅付近にある ![ ベルアイコンまたは通知アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg)**通知** をクリックして、復元の開始と終了を確認します。
+1. ページの右上隅付近にある ![&#x200B; ベルアイコンまたは通知アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg)**通知** をクリックして、復元の開始と終了を確認します。
 
-   ![ 復元を開始する場合と復元が完了する場合は、以前のコード通知を復元します ](/help/operations/assets/restore-previous-code-notifications.png)
+   ![&#x200B; 復元を開始する場合と復元が完了する場合は、以前のコード通知を復元します &#x200B;](/help/operations/assets/restore-previous-code-notifications.png)
    *以前のコードジョブの復元の通知*

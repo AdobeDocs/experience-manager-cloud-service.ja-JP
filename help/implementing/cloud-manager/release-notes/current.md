@@ -61,7 +61,7 @@ AEM as a Cloud Service の Cloud Manager 2025.11.0 のリリース日は 2025年
 
   Cloud ManagerでEdge Delivery Services プログラムを作成する際に、web アプリケーションファイアウォール（WAF）を有効にできます。 この設定は、悪意のあるトラフィックや DDoS 攻撃からサイトを直ちにシールドし、手動の設定作業を減らします。
 
-  [ ワンクリックで最初のEdge Delivery サイトを作成する ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md) を参照してください。
+  [&#x200B; ワンクリックで最初のEdge Delivery サイトを作成する &#x200B;](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md) を参照してください。
 
 
 ## Beta プログラム {#private-beta-program}
@@ -88,7 +88,7 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 新しいビルドモデルでは、（リポジトリ全体ではなく）変更されたモジュールのみを、モジュールレベルのキャッシュを使用してコンパイルし、ビルド時間を短縮します。これは、コード品質、フルスタック、ステージ専用のパイプラインに適用されます。
 
-![ フルビルドとスマートビルドの 2 つのビルド戦略オプションが表示されている実稼動以外のパイプラインを編集ダイアログボックス ](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png)
+![&#x200B; フルビルドとスマートビルドの 2 つのビルド戦略オプションが表示されている実稼動以外のパイプラインを編集ダイアログボックス &#x200B;](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png)
 *フルビルドとスマートビルドの 2 つのビルド戦略オプションが表示されている実稼動以外のパイプラインを編集ダイアログボックス。*
 
 **パイプラインを追加/編集** ダイアログボックスの「**Sourceコード**」タブにある新しい **ビルド方法** セクションで、次のいずれかのビルドオプションを選択できます。
@@ -147,7 +147,7 @@ Azure DevOps Git リポジトリを Cloud Manager にオンボードできるよ
 | *必要に応じてプロジェクトを Adobe の管理による Git リポジトリに戻すには、どうすれば良いですか？* | 戻すのは簡単です。 [パイプラインを更新](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)して Adobe リポジトリを指し、外部リポジトリが不要になった場合は削除します。 |
 | *異なる環境（実稼動と実稼動以外など）に異なるリポジトリを設定して、最初に実稼動以外の環境でテストできるようにすることはできますか？* | はい、個別の環境用に異なるリポジトリを設定できます。 例えば、開発パイプラインまたはコード品質パイプラインは外部リポジトリを指し、実稼動パイプラインは Adobe リポジトリに接続されたままにすることができます。 この設定中は、2 つのリポジトリ間の同期ジョブがアクティブのままであることを確認してください。 |
 | *`IP Allow` リストなどの既存の設定は引き続き機能しますか？* | はい、既存の `IP Allow` リストは引き続き通常どおり機能します。 ただし、外部 Git リポジトリがファイアウォールで保護されている場合は、必要な [Adobe IP アドレスを許可リストに追加する必要があります](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。 |
-| *すべての GitLab リポジトリ URL が機能しますか？ 使用するリポジトリ URL は、形式 `https://gitlab_dedicated_url.com/path/repo-name.git` に従いますが、この形式はドキュメントの例とは異なります。* | はい、API V3 または V4 をサポートするどの GitLab リポジトリもサポートされます。これには、[Cloud Manager への外部リポジトリの追加 ](/help/implementing/cloud-manager/managing-code/external-repositories.md)（`https://git-vendor-name.com/org-name/repo-name.git`）に記載されているようなセルフホスト型の GitLab URL が含まれます。 |
+| *すべての GitLab リポジトリ URL が機能しますか？ 使用するリポジトリ URL は、形式 `https://gitlab_dedicated_url.com/path/repo-name.git` に従いますが、この形式はドキュメントの例とは異なります。* | はい、API V3 または V4 をサポートするどの GitLab リポジトリもサポートされます。これには、[Cloud Manager への外部リポジトリの追加 &#x200B;](/help/implementing/cloud-manager/managing-code/external-repositories.md)（`https://git-vendor-name.com/org-name/repo-name.git`）に記載されているようなセルフホスト型の GitLab URL が含まれます。 |
 
 
 #### アクセストークンを管理{#manage-access-tokens}
