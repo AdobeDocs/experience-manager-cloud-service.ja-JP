@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 437b9bdf48fc8235ef90cac4a38c2a0b41f89a8f
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '1820'
-ht-degree: 95%
+source-wordcount: '1847'
+ht-degree: 93%
 
 ---
 
@@ -78,13 +78,13 @@ Experience Platformの上部ナビゲーションバーは、常に画面の上�
 
 ![Experience Cloud ヘッダー](assets/experience-cloud-header.png)
 
-Experience Platformの上部ナビゲーションバーについて詳しくは、[Adobe Experience Platform UI ガイドを参照してください &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Experience Platformの上部ナビゲーションバーについて詳しくは、[Adobe Experience Platform UI ガイドを参照してください ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### アカウント {#user-properties}
 
 アカウントアイコンをタップまたはクリックすると、ユーザー設定を含むメニューが開きます。
 
-![&#x200B; 環境スイッチャー &#x200B;](assets/environment-switcher.png)
+![ 環境スイッチャー ](assets/environment-switcher.png)
 
 ユニバーサルエディターの場合、見出し **製品設定** の下に、ユニバーサルエディターの現在の実稼動バージョンと今後のプレビューバージョンを切り替えるオプションがあります。
 
@@ -142,6 +142,12 @@ Experience Platformの上部ナビゲーションバーについて詳しくは�
 [ローカル開発目的でカスタム認証ヘッダーを設定](/help/implementing/universal-editor/developer-overview.md#auth-header)する必要がある場合は、認証ヘッダーアイコンを選択します。
 
 ![認証ヘッダー設定ボタン](assets/authentication-header-settings.png)
+
+#### ローカル開発者ログイン {#local-developer-login}
+
+[ ローカルで開発する場合 ](/help/implementing/universal-editor/local-dev.md)、ローカルのAEM SDKを簡単に認証する必要がある場合は、「ローカル開発者ログイン」アイコンを選択します。
+
+![ ローカル開発者ログインボタン ](assets/local-developer-login.png)
 
 #### レスポンシブモード {#emulator}
 

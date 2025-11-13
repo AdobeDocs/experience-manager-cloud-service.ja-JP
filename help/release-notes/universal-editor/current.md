@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター 2025.11.06 リリースノート
-description: ユニバーサルエディター 2025.11.06 リリースのリリースノートです。
+title: ユニバーサルエディター 2025.11.13 リリースノート
+description: ユニバーサルエディター 2025.11.13 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 5c762da645ee26164d39af3936fc6b3fcbd43f0b
+source-git-commit: 87c0288356fd561dd15249e3da08850f7c5d031a
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 50%
+source-wordcount: '219'
+ht-degree: 59%
 
 ---
 
 
-# ユニバーサルエディター 2025.11.06 リリースノート {#release-notes}
+# ユニバーサルエディター 2025.11.13 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2025 年 11 月 6 日リリースのリリースノートです。
+ユニバーサルエディターの 2025 年 11 月 13 日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -23,6 +23,14 @@ ht-degree: 50%
 >[!TIP]
 >
 >Adobe Experience Manager as a Cloud Service の最新のリリースノートについて詳しくは、[このページ](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
+
+## 新機能 {#what-is-new}
+
+* コンテキストアクションがドロップダウンメニューに移動されました。
+* json スキーマが検証用に配信されるようになりました。
+* [ ローカル開発者ログイン ](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) は、ユニバーサルエディターのコア部分となり、拡張機能は不要になりました。
+* 右側のパネルが新しい UI に移行されました。
+* コンテンツツリーの項目が自動展開されるようになりました。
 
 ## 早期導入機能 {#early-adopter}
 
@@ -34,12 +42,5 @@ ht-degree: 50%
 
 ## その他の改善点 {#other-improvements}
 
-* メタデ `og:title` タフィールドを適切に削除できるようになりました。
-* ナビゲーションの問題は、ユーザーがブラウザーでエディターのロケーションバーを編集し、それらの変更が正しく反映され、エディターやアプリがリクエストされた URL に移動する際に修正されました。
-* フィールドモデルの解像度が修正され、エディターでは、コンポーネントのモデルが使用されます（存在する場合）。
-* componentId が/add アクションに含まれるようになりました。
-* 以前は削除できなかったメタデータプロパティを削除する機能を修正しました。
-* AEM プラグインで設定されていない場合、生の取得が xwalk に対して条件付きで実行されるようになりました。
-* RTE を使用したコンテンツフラグメントの MSM 処理が修正されました。
-* 画像内の画像のハイライト表示がサポートされるようになりました。
-
+* コンテキストメニューの特定の幅を追加しました。
+* 特定の `null` 値によるユニバーサルエディターサービスの失敗が修正されました。
