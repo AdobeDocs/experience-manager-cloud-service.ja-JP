@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 5474d0c4295cf8eb576cc416589727c67ffafac7
+source-git-commit: 39993d115d58d9dfe1f9328c5ceba0d30a78569d
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1213'
 ht-degree: 20%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 20%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 23320 {#23320}
+## リリース 23385 {#23385}
 
-2025年11月12日（PT）に公開された、メンテナンスリリース 23320 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 22943 でした。
+2025年11月13日（PT）に公開された、メンテナンスリリース 23385 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 22943 でした。
 
 2025.11.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
 
 >[!NOTE]
 >
->リリース 23122 は 11 月 3 日に非公開になりました。
+>リリース 23320 および 23122 は非公開になりました。
 
-### 機能強化 {#enhancements-23320}
+### 機能強化 {#enhancements-23385}
 
 * CQ-4361363：最新の AEM および Granite の翻訳。
 * FORMS-21594：コンテンツ作成者が、インタラクティブ通信テンプレートのコンテンツとレイアウトをロックできるようにします。
@@ -61,7 +61,7 @@ ht-degree: 20%
 * SKYOPS-118390: JCR リソースを 3.3.6 に更新します。
 * SKYOPS-121082:`org.apache.sling.discovery.standalone`、`org.apache.sling.jcr.packageinit` および `org.apache.sling.commons.fsclassloader` Sling バンドルのバージョンを更新します。
 
-### 修正された問題 {#fixed-issues-23320}
+### 修正された問題 {#fixed-issues-23385}
 
 * ASSETS-58926:DM のビデオ変更サムネール機能を修正。
 * ASSETS-58623：設定が存在する場合、オムニサーチで npe を修正。
@@ -88,13 +88,14 @@ ht-degree: 20%
 * SITES-35409：ページを移動する際に、調整されたフラグメントを再公開できないバグを修正しました。
 * SITES-15757：ページを移動する際に、調整済みページを再公開できないバグを修正しました。
 * SITES-34638：新しいバージョンを作成する際に、祖父母のページのプロパティが含まれなかったバグを修正しました。
+* SITES-35226：特定の状況下でページエディターのアセットセレクターの読み込みに失敗する問題を修正しました。
 * SITES-35071: オムニサーチで引用符で囲まれた語句が使用されている場合、CSV エクスポートでフィルタリングされていない結果が返される。
 * SITES-32182：ユニバーサルエディターを使用したEdge Delivery – 既にエンコードされたリクエストパラメーターを含む URL のエンコードの問題を修正します。
 * SITES-34324：ユニバーサルエディターを使用したEdge Delivery - tel: プロトコルを使用したリンクのレンダリングを修正します。
 * SITES-35333：ユニバーサルエディターを使用したEdge Delivery - ページメタデータ内の画像のアセットレンディション選択を修正しました。
 * SITES-35549：ユニバーサルエディターを使用したEdge Delivery - ページメタデータ内の二重エンコードされた HTML エンティティを修正。
 
-#### AEM ガイド {#guides-23320}
+#### AEM ガイド {#guides-23385}
 
 * GUIDES-33597：属性や値を持たない空の `prop` 要素を DITAVAL ファイルに追加した場合、追加の `prop` 要素を追加することはできません。
 * GUIDES-33693：編集した画像をExperience Manager Guides UI から再度アップロードすると、画像の元のレンディションは更新されますが、関連する DITA コンテンツには、以前のバージョンの画像が引き続き表示されます。
@@ -104,19 +105,19 @@ ht-degree: 20%
 このリリースの新機能および機能強化と修正された問題について詳しくは、[Experience Manager Guides リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)を参照してください。
 
 
-### 既知の問題 {#known-issues-23320}
+### 既知の問題 {#known-issues-23385}
 
 * FORMS-22633:GuideBridge API （`getData` または `getDataXML`）に基づくカスタムコードが使用されている場合、フォーム送信が失敗することがあります。 この問題が発生した場合は、Adobe サポートにお問い合わせください。
 
-### 廃止された機能と API {#deprecated-23320}
+### 廃止された機能と API {#deprecated-23385}
 
 AEM as a Cloud Service で廃止および削除された機能と API について詳しくは、[廃止および削除された機能と API](/help/release-notes/deprecated-removed-features.md) ドキュメントを参照してください。
 
-### セキュリティ修正 {#security-23320}
+### セキュリティ修正 {#security-23385}
 
 AEM as a Cloud Service では、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。 このメンテナンスリリースでは、特定された 31 個の脆弱性に対処し、堅牢なシステム保護に対する取り組みを強化しています。
 
-### 組み込みテクノロジー {#embedded-tech-23320}
+### 組み込みテクノロジー {#embedded-tech-23385}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
