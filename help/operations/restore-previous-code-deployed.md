@@ -3,24 +3,27 @@ title: 以前にデプロイされたソースコードを復元
 description: パイプラインの実行を必要とせずに、環境を最後の正常なビルドに復元する方法を説明します。
 feature: Operations
 role: Admin
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 7968668766ae4c8a966bbde93aa2f2ac0c401659
+source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 91%
+source-wordcount: '578'
+ht-degree: 80%
 
 ---
 
 # AEM as a Cloud Service で以前にデプロイされたソースコードを復元する {#restore-previous-code-deployed}
 
+<!-- BETA BADGE REMOVED FOR NOVEMBER 2025 CM RELEASE badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+
 >[!NOTE]
 >
->この記事で説明する機能は、Beta プログラムを通じてのみ使用できです。Beta に新規登録するには、[パイプラインデプロイメントのワンクリックロールバック](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)を参照してください。
+>The feature described in this article is only available through the beta program. To sign up for the beta, see [One-click rollback for pipeline deployments](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback). -->
 
 **デプロイした以前のコードを復元**&#x200B;を使用すると、パイプラインの実行を必要とせずに、環境を最後に成功したビルドに即座にロールバックできます。
 
 選択した環境の ![詳細アイコンまたは省略記号メニューアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) メニューを開き、**復元**／**デプロイした以前のコード**&#x200B;を選択するだけで、秒単位で最後にデプロイしたソースコードをロールバックできます。
+
+[AEM as a Cloud Serviceのコンテンツの復元 ](/help/operations/restore.md) も参照してください。
 
 >[!TIP]
 >
@@ -32,16 +35,16 @@ ht-degree: 91%
 
 * 成功したパイプライン実行ごとに 1 回の復元のみが許可される。再度復元するには、別の正常なパイプライン実行を完了します。
 * **環境の復元の作成**&#x200B;権限を保持している。権限の管理について詳しくは、[カスタム権限](/help/implementing/cloud-manager/custom-permissions.md)を参照してください。
-* 組織が Beta プログラムに登録され、機能フラグがオンになっている。
+* この機能を保護する機能フラグは（オンに）有効になっています。
 * プログラムが AEM as a Cloud Service で実行されている。
 * この環境の最後のパイプラインが正常に完了し、実行から **30 日未満**&#x200B;である。
 * 環境のステータスが&#x200B;*実行中*&#x200B;で、進行中のパイプラインがない。
 
-**デプロイされた以前のコードを復元** は、環境、`Production` 環境、`Development` ードに加えて、`Stage` `Specialized Testing Environment` 環境で機能します。 確認後、Cloud Managerは復元を開始し、開始時と正常終了時にプッシュ通知を送信します。
+**デプロイされた以前のコードを復元** は、環境、`Production` 環境、`Development` ードに加えて、`Stage``Specialized Testing Environment` 環境で機能します。 確認後、Cloud Managerは復元を開始し、開始時と正常終了時にプッシュ通知を送信します。
 
 >[!IMPORTANT]
 >
->Adobeでは、リスクを軽減し安定性を確保するた `Stage` に、手順を ** 前 `Production` で検証することを強くお勧めします。
+>初めて使用する場合は、リスクを軽減し安定性を確保するた `Stage` に、手順を ** 前 `Production` で検証することをAdobeは強くお勧めします。
 
 
 いずれかの確認に失敗した場合、Cloud Manager では、次のダイアログボックスが開き、満たされていない条件が 1 つ以上リストされ、**確認**&#x200B;が無効になり、復元が防止されます。
@@ -81,3 +84,8 @@ ht-degree: 91%
 1. Cloud Manager は、環境を以前のビルドにロールバックし、コンテンツと設定をそのままの状態に保ち、デプロイメントが完了するまで環境ページで環境に&#x200B;**復元中**&#x200B;とマークを付けます。
 
    ![アクティベーションの復元](/help/operations/assets/restore-previous-code-deployed-restoring.png)
+
+1. ページの右上隅付近にある ![ ベルアイコンまたは通知アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg)**通知** をクリックして、復元の開始と終了を確認します。
+
+   ![ 復元を開始する場合と復元が完了する場合は、以前のコード通知を復元します ](/help/operations/assets/restore-previous-code-notifications.png)
+   *以前のコードジョブの復元の通知*

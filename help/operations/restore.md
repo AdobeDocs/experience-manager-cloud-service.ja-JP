@@ -4,10 +4,10 @@ description: Cloud Manager を使用して、AEM as a Cloud Service のコンテ
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
-workflow-type: ht
-source-wordcount: '1359'
-ht-degree: 100%
+source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
+workflow-type: tm+mt
+source-wordcount: '1358'
+ht-degree: 97%
 
 ---
 
@@ -16,11 +16,13 @@ ht-degree: 100%
 
 Cloud Manager を使用して、AEM as a Cloud Service のコンテンツをバックアップから復元することができます。
 
-## 概要 {#overview}
+
 
 Cloud Manager のセルフサービス復元プロセスでは、アドビシステムのバックアップからデータをコピーし、元の環境に復元します。復元は、失われたデータ、破損したデータまたは誤って削除されたデータを元の状態に戻すために実行します。
 
-復元プロセスが影響するのはコンテンツのみで、AEM のコードとバージョンは変更されません。個々の環境の復元操作はいつでも開始できます。（新しいパイプライン実行を開始することなく、以前にデプロイしたソースコードを簡単かつ迅速に復元する必要がある場合は、[以前にデプロイされたコードを復元](/help/operations/restore-previous-code-deployed.md)を使用できます。)
+復元プロセスが影響するのはコンテンツのみで、AEM のコードとバージョンは変更されません。個々の環境の復元操作はいつでも開始できます。
+
+新しいパイプライン実行を開始しなくても、以前にデプロイしたソースコードを簡単かつ迅速に復元する必要がある場合は、「[ デプロイした以前のコードを復元 ](/help/operations/restore-previous-code-deployed.md) を使用できます。
 
 Cloud Manager には、コンテンツを復元できる 2 種類のバックアップが用意されています。
 
@@ -145,7 +147,7 @@ Cloud Manager のセルフサービスの復元プロセスでは、コンテン
 
 通常のバックアップは、AEM Cloud Services 内で誤って削除された場合や技術的な障害が発生する場合のリスクをカバーしますが、領域の障害が原因で追加のリスクが発生する可能性があります。可用性に加えて、このような領域の停止における最大のリスクは、データの損失です。
 
-AEM as a Cloud Service は、すべての AEM 実稼動環境でこのリスクを軽減します。 つまり、すべての AEM コンテンツをリモート地域に継続的にコピーします。 このプロセスにより、コンテンツを 3 か月間回復できるようになります。 この機能は、オフサイトバックアップと呼ばれます。
+AEM as a Cloud Service は、すべての AEM 本番環境でこのリスクを軽減します。 つまり、すべての AEM コンテンツをリモート地域に継続的にコピーします。 このプロセスにより、コンテンツを 3 か月間回復できるようになります。 この機能は、オフサイトバックアップと呼ばれます。
 
 AEM サービス信頼性エンジニアリングは、データ領域の停止時に、オフサイトバックアップからステージング環境と実稼動環境の AEM Cloud Service 環境を復元します。
 
