@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '5880'
-ht-degree: 100%
+source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
+workflow-type: tm+mt
+source-wordcount: '6089'
+ht-degree: 97%
 
 ---
 
@@ -149,7 +149,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ターゲットを絞ったキーワードの検索結果で一部のアセットのランクを上げることで、この機能をうまく利用できます。以下の例（ビデオ）を参照してください。詳しくは、「[ での検索](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ja)」を参照してください。 [!DNL Experience Manager]
 
->[!VIDEO](https://video.tv.adobe.com/v/3410338/?quality=6&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *ビデオ：検索結果のランク付けの方法とランクへの影響について*
 
@@ -204,27 +204,27 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 | メタデータフィールド | ファセット値と使用法 |
 |---|---|
-| タイトル | title:John |
-| 作成者 | creator:John |
-| 場所 | location:NA |
+| タイトル | タイトル :John |
+| 作成者 | 作成者 :John |
+| 場所 | 場所 :NA |
 | 説明 | description:&quot;Sample Image&quot; |
 | 作成ツール | creatortool:&quot;Adobe Photoshop&quot; |
 | 著作権の所有者 | copyrightowner:&quot;Adobe Systems&quot; |
-| 投稿者 | contributor:John |
+| 投稿者 | 投稿者 :John |
 | 使用条件 | usageterms:&quot;CopyRights Reserved&quot; |
-| 作成日 | created:YYYY-MM-DDTHH |
-| 有効期限 | expires:YYYY-MM-DDTHH |
+| 作成日 | 作成日時 :YYYY-MM-DDTHH |
+| 有効期限 | 有効期限 :YYYY-MM-DDTHH |
 | オンタイム | ontime:YYYY-MM-DDTHH |
-| オフタイム | offtime:YYYY-MM-DDTHH |
+| オフタイム | オフタイム :YYYY-MM-DDTHH |
 | 時間の範囲（有効期限、オンタイム、オフタイム） | facet field : lowerbound..upperbound |
 | パス | /content/dam/&lt;folder name> |
 | PDF タイトル | pdftitle:&quot;Adobe Document&quot; |
 | 件名 | subject:&quot;Training&quot; |
 | タグ | tags:&quot;Location And Travel&quot; |
 | タイプ | type:&quot;image\png&quot; |
-| 画像の幅 | width:lowerbound..upperbound |
-| 画像の高さ | height:lowerbound..upperbound |
-| Person | person:John |
+| 画像の幅 | 幅 :lowerbound..upperbound |
+| 画像の高さ | 高さ :lowerbound..upperbound |
+| Person | 人物 :John |
 
 `path`、`limit`、`size`、`orderby` プロパティは、`OR` 演算子を使用して他のプロパティと組み合わせることはできません。
 
@@ -285,7 +285,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 | 名前 | 値 | 例 | 目的 |
 |---|---|---|---|
-| リソースサフィックス（B） | URL のリソースサフィックスとしてのフォルダーパス：[https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 特定のフォルダーが選択された状態でアセットセレクターを起動するには、例えば、フォルダー `/content/dam/we-retail/en/activities` を選択した場合、URL は次のような形式になります。`https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | アセットセレクターの起動時に特定のフォルダーを選択する必要がある場合、そのフォルダーをリソースサフィックスとして渡します。 |
+| リソースサフィックス（B） | URL のリソースサフィックスとしてのフォルダーパス：[https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 特定のフォルダーが選択された状態でアセットセレクターを起動するには、例えば、フォルダー `/content/dam/we-retail/en/activities` が選択されている場合、URL は次のような形式になります。`https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | アセットセレクターの起動時に特定のフォルダーを選択する必要がある場合、そのフォルダーをリソースサフィックスとして渡します。 |
 | `mode` | single、multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | 複数モードでは、アセットセレクターを使用して、いくつかのアセットを同時に選択できます。 |
 | `dialog` | true、false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | アセットセレクターを Granite ダイアログとして開くには、これらのパラメーターを使用します。このオプションは、Granite パスフィールドを使用してアセットセレクターを起動し、pickerSrc URL として設定する場合にのみ適用できます。 |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | このオプションを使用して、アセットセレクターのルートフォルダーを指定します。この場合、アセットセレクターを使用すると、ルートフォルダーの下の子アセット（直接／間接）のみを選択できます。 |
@@ -353,9 +353,9 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ![アセット検索でのアスタリスクワイルドカードの使用例](assets/search_with_asterisk_run.gif)
 
-*図：アセット検索でのアスタリスクワイルドカードの使用例*
+*図：アセット検索でのアスタリスクワイルドカードの使用例。*
 
-**疑問符ワイルドカードを使用した検索**：検索の範囲を広げるには、1 つ以上の「?」文字を使用して正確な数の文字に一致するようにします。例えば、次の例では、
+**疑問符ワイルドカードを使用して検索**：検索範囲を広げるには、文字数：正確な文字数に一致します。 例えば、次の例では、
 
 * `run???` クエリはどのアセットとも一致しません。
 
@@ -372,6 +372,33 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 ![ダッシュを使用して、除外されたキーワードを含まないアセットを検索する](assets/search_dash_exclude_keyword.gif)
 
 *図：ダッシュを使用して、除外されたキーワードを含まないアセットを検索する*
+
+## AI 検索 {#ai-search}
+
+AI 検索は、キーワードの完全一致に依存するのではなく、ユーザーのクエリの意味と意図を理解する高度な検索機能です。 人工知能（AI）と機械学習を使用して、より正確でコンテキストに対応した結果を提供します。
+
+正確な用語を検索する従来のキーワードベースの検索とは異なり、AI 検索は、単語、概念、ユーザー意図の関係を解釈します。 これにより、クエリの表現が異なる場合や、入力ミスが含まれる場合、別の言語である場合でも、ユーザーが探しているものを確実に見つけることができます。
+
+主なメリットには、次のようなものがあります。
+
+* **多言語サポート**：正確な翻訳を必要とせずに複数の言語をまたいで検索します。ユーザーは、クエリ言語に関係なく、関連するコンテンツを見つけることができます。
+
+* **スペルミスに対応**：入力ミスやスペルミスを解釈し、不完全な入力でも正確な結果が得られるようにします。
+
+* **同義語の理解**：関連する用語やフレーズの結果を提供するので、ユーザーは正しいキーワードを推測する必要がありません。
+
+* **コンテキスト対応検索**：完全一致単語だけでなく、クエリの背後にある意図を認識します。
+
+### AI 検索の例 {#examples-ai-search}
+
+**プロンプトの例**：*コーヒーを飲む女性*
+
+従来のキーワードベースの検索では、`Woman`、`drinking`、`Coffee` など、アセットメタデータの完全一致を検索し、メタデータにこれらの用語をすべて含むアセットを返します。
+
+ただし、AI 検索では、`Girl`、`Lady` と `Woman` の場合は `Cappuccino`、`Latte` の場合は `Coffee` など、類似の単語に一致します。
+
+同様に、このプロンプトをスペイン語で指定したり、`Woman` を `Wman` とスペルミスしたりしても、同じ結果が得られます。
+
 
 ## 検索機能に関連した設定タスクと管理タスク {#configadmin}
 
@@ -524,7 +551,7 @@ PSD ファイルや PDF ファイルなどのアセットをユーザーがア�
 
 | エラー、問題、症状 | 考えられる理由 | 問題の修正または理解 |
 |---|---|---|
-| メタデータが見つからないアセットを検索する場合に、誤った結果が返される | 必須メタデータがないアセットを検索すると、[!DNL Experience Manager] によって有効なメタデータを持つ一部のアセットが表示される場合があります。結果は、インデックス付きメタデータプロパティに基づきます。 | メタデータが更新された後、アセットメタデータの正しい状態を反映するために、再インデックス化が必要です。詳しくは、「[必須メタデータ](metadata-schemas.md#define-mandatory-metadata)」を参照してください。 |
+| メタデータが見つからないアセットを検索する場合に、誤った結果が返される | 必須メタデータがないアセットを検索すると、[!DNL Experience Manager] によって有効なメタデータを持つ一部のアセットが表示される場合があります。結果は、インデックス付きメタデータプロパティに基づきます。 | メタデータが更新された後、アセットメタデータの正しい状態を反映するために、インデックス再作成が必要です。詳しくは、「[必須メタデータ](metadata-schemas.md#define-mandatory-metadata)」を参照してください。 |
 | 検索結果が多すぎる | 広範な検索パラメーター。 | [検索範囲](#scope)を制限することを検討します。スマートタグを使用すると、予想以上に多くの検索結果が得られる場合があります。「[スマートタグによる検索動作](#withsmarttags)」を参照してください。 |
 | 検索結果が無関係か、一部関連している | スマートタグによって検索動作が変わります。 | [スマートタグによる検索の変化](#withsmarttags)を理解します。 |
 | アセットに対するオートコンプリートの提案がない | 新しくアップロードしたアセットのインデックスがまだ作成されていません。オムニサーチバーで検索キーワードを入力し始めても、メタデータはすぐにはサジェストとしては表示されません。 | [!DNL Experience Manager] では、タイムアウト期間（デフォルトは 1 時間）が経過してから、新しくアップロードまたは更新されたすべてのアセットのメタデータにインデックスを付けるバックグラウンドジョブを実行し、その後でメタデータを候補のリストに追加します。 |

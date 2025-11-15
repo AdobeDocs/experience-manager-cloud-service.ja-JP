@@ -4,10 +4,10 @@ description: 詳しくは、AEM Assets ビューでアセットを検索およ�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
+source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
 workflow-type: tm+mt
-source-wordcount: '2277'
-ht-degree: 98%
+source-wordcount: '1887'
+ht-degree: 91%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 98%
 
 ## 検索結果のフィルタリング {#refine-search-results}
 
-複数のフィルターを適用することで、検索結果を絞り込み、関連するアセットを見つけることができます。 管理者が設定するこれらのフィルターは、ファイル、フォルダー、コレクションに基づいています。 [&#x200B; 検索フィルターのカスタマイズ &#x200B;](custom-search-filters.md) を参照してください。
+複数のフィルターを適用することで、検索結果を絞り込み、関連するアセットを見つけることができます。 管理者が設定するこれらのフィルターは、ファイル、フォルダー、コレクションに基づいています。 [ 検索フィルターのカスタマイズ ](custom-search-filters.md) を参照してください。
 
 ![検索フィルター](assets/filters-panel.gif)
 
@@ -118,33 +118,29 @@ ht-degree: 98%
 
 1. 「**[!UICONTROL 確認]**」をクリックして、ユーザーインターフェイスからフィルターを削除します。
 
-## セマンティック検索 {#semantic-search}
+## AI 検索 {#ai-search}
 
-セマンティック検索は、キーワードの完全一致に依存するのではなく、ユーザーのクエリの背後にある意味と意図を理解する高度な検索機能です。人工知能（AI）、自然言語処理（NLP）、機械学習を使用して、より正確でコンテキストに対応した結果を提供します。
+AI 検索は、キーワードの完全一致に依存するのではなく、ユーザーのクエリの意味と意図を理解する高度な検索機能です。 人工知能（AI）と機械学習を使用して、より正確でコンテキストに対応した結果を提供します。
 
-正確な用語を検索する従来のキーワードベースの検索とは異なり、セマンティック検索は、単語、概念、ユーザーの意図の関係を解釈します。これにより、クエリの表現が異なる場合や、入力ミスが含まれる場合、別の言語である場合でも、ユーザーが探しているものを確実に見つけることができます。
+正確な用語を検索する従来のキーワードベースの検索とは異なり、AI 検索は、単語、概念、ユーザー意図の関係を解釈します。 これにより、クエリの表現が異なる場合や、入力ミスが含まれる場合、別の言語である場合でも、ユーザーが探しているものを確実に見つけることができます。
 
 主なメリットには、次のようなものがあります。
 
 * **多言語サポート**：正確な翻訳を必要とせずに複数の言語をまたいで検索します。ユーザーは、クエリ言語に関係なく、関連するコンテンツを見つけることができます。
 
-* **スペルミスの処理**：入力ミスやスペルエラーを自動的に修正または解釈し、不完全な入力でも正確な結果が得られるようにします。
+* **スペルミスに対応**：入力ミスやスペルミスを解釈し、不完全な入力でも正確な結果が得られるようにします。
 
 * **同義語の理解**：関連する用語やフレーズの結果を提供するので、ユーザーは正しいキーワードを推測する必要がありません。
 
-* **コンテキスト対応検索**：単語だけでなく、クエリの背後にある意図を認識します。
+* **コンテキスト対応検索**：完全一致単語だけでなく、クエリの背後にある意図を認識します。
 
->[!IMPORTANT]
->
-> セマンティック検索では、3 つ以上の単語を指定することで適切な結果が表示されます。
-
-### セマンティック検索の例 {#examples-semantic-search}
+### AI 検索の例 {#examples-ai-search}
 
 **プロンプトの例**：*コーヒーを飲む女性*
 
-従来のキーワードベースの検索では、女性、コーヒーなど、アセットメタデータの完全一致が検索され、これらのキーワードを含むアセットが返されます。
+従来のキーワードベースの検索では、`Woman`、`drinking`、`Coffee` など、アセットメタデータの完全一致を検索し、メタデータにこれらの用語をすべて含むアセットを返します。
 
-一方、セマンティック検索では、`Woman` の場合は `Girl`、`Lady`、`Coffee` の場合は `Cappuccino`、`Latte` など、類似の単語が検索されます。
+ただし、AI 検索では、`Girl`、`Lady` と `Woman` の場合は `Cappuccino`、`Latte` の場合は `Coffee` など、類似の単語に一致します。
 
 同様に、このプロンプトをスペイン語で指定したり、`Woman` を `Wman` とスペルミスしたりしても、同じ結果が得られます。
 
@@ -280,89 +276,94 @@ When userA is searching and userB add an asset that matches search results, will
 
    ![最初に検索するホームページのプレビュー](/help/assets/assets/search-first-preview.gif)
 
-## コンテキスト検索 {#contextual-search}
 
-また、テキストプロンプトを定義して、リポジトリで使用可能なアセットを検索することもできます。Experience Manager Assets は、これらのテキストプロンプトを検索フィルターに自動変換し、検索結果を表示します。フィルターペインを使用して自動フィルターを表示および変更すると、検索結果をさらに絞り込むことができます。
+<!--
 
-### コンテキスト検索へのアクセス {#access-contextual-search}
+## Contextual Search {#contextual-search}
 
-Experience Manager Assets でコンテキスト検索にアクセスするには、次の手順に従います。
+You can also search assets available in the repository by defining text prompts. Experience Manager Assets automatically transforms those text prompts to search filters and displays the search results. You can view and modify automatic filters using the Filters Pane to further narrow down the search results.
 
-1. 左側のペインで「**[!UICONTROL 検索]**」をクリックします。
+### Access Contextual Search {#access-contextual-search}
 
-   ![コンテキスト検索](assets/access-contextual-search.png)
+To access Contextual Search in Experience Manager Assets:
 
-1. 検索テキストボックスでテキストプロンプトを定義し、「**[!UICONTROL コンテキスト検索]**」をクリックします。
+1. Click **[!UICONTROL Search]** in the left pane.
 
-   ![コンテキスト検索のテキストプロンプト](/help/assets/assets/wknd-contextual-search.png)
+   ![Contextual Search](assets/access-contextual-search.png)
 
-   [!DNL Experience Manager Assets] に検索結果が表示されます。
+1. Define the text prompt in the Search text box and click **[!UICONTROL Contextual Search]**.
 
-### サポートされるフィルター {#supported-filters}
+   ![Contextual Search text prompt](/help/assets/assets/wknd-contextual-search.png)
 
-コンテキスト検索では、すぐに使用できる次のフィルターをサポートしています。これらのフィルターに基づいてテキストプロンプトを作成し、適切な検索結果を表示します。
+   [!DNL Experience Manager Assets] displays the search results.
 
-* 画像の高さ
+### Supported filters {#supported-filters}
 
-* 画像の幅
+Contextual Search supports the following filters out-of-the-box. Base your text prompts on these filters to view appropriate search results.
 
-* ファイルタイプ：画像、ドキュメント、ビデオまたはフォルダー。
+* Image height
 
-* MIME タイプ：JPG、PNG、TIFF、GIF、MP4、PDF、PPTX、DOCX または XLSX
+* Image width
 
-* 作成日
+* File type: image, document, video, or folder.
 
-* 変更日
+* MIME type: JPG, PNG, TIFF, GIF, MP4, PDF, PPTX, DOCX or XLSX
 
-* 有効期限
+* Created date
 
-* アセットステータス：承認済み、却下またはすべて
+* Modified date
 
-* 有効期限切れのアセット
+* Expiration date
 
-### テキストプロンプトの例 {#text-prompts-examples}
+* Asset status: Approved, Rejected, or all
 
-**例 1**
+* Expired assets
 
-**テキストプロンプト**：今月作成された画像。
+### Examples for the text prompts {#text-prompts-examples}
 
-[!DNL Experience Manager Assets] は次のフィルターを自動的に適用し、検索結果を表示します。
+**Example 1**
 
-![コンテキスト検索の例 1](assets/contextual-search-example1.png)
+**Text Prompt**: Images created this month.
 
-**例 2**
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
 
-**テキストプロンプト**：高さ 200 ピクセル、幅 100 ピクセル以上で、ビーチと澄んだ空の画像。
+![Contextual Search Example 1](assets/contextual-search-example1.png)
 
-[!DNL Experience Manager Assets] は、次のフィルターを自動的に適用し、検索結果を表示します。
+**Example 2**
 
-![コンテキスト検索の例 2](assets/contextual-search-example2.png)
+**Text prompt**: Images at least 200px tall and 100px wide with beach and clear sky.
 
-**例 3**
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
 
-**テキストプロンプト**：高さが 1500 および 2500 ピクセルで、過去 1 か月以内に作成された、期限内の承認された青空の画像が必要です。
+![Contextual Search Example 2](assets/contextual-search-example2.png)
 
-[!DNL Experience Manager Assets] は、次のフィルターを自動的に適用し、検索結果を表示します。
+**Example 3**
 
-![コンテキスト検索の例 3](assets/contextual-search-example3.png)
+**Text prompt**: I need images of blue sky that are 1500 and 2500 pixel height and created in the past month that is not expired and approved.
 
-次のビデオでは、コンテキスト検索ユーザーインターフェイスへのアクセスから、テキストプロンプトの定義、検索結果の表示までのエンドツーエンドのプロセスを説明します。
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
+
+![Contextual Search Example 3](assets/contextual-search-example3.png)
+
+The following video illustrates the end-to-end process from accessing the Contextual Search User Interface to defining text prompts, and viewing the search results.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428407)
 
-### コンテキスト検索を無効にする {#disable-contextual-search}
+### Disable Contextual Search {#disable-contextual-search}
 
-管理者には、組織内のユーザーのコンテキスト検索を無効にするオプションも用意しています。これを行うには、次の手順を実行します。
+Administrators also have the option to disable Contextual Search for users in your organization. To do so, execute the following steps:
 
-1. **[!UICONTROL 設定]**／**[!UICONTROL 一般設定]**&#x200B;に移動します。
+1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
 
-1. 「[!UICONTROL コンテキスト検索]」セクションで、**[!UICONTROL 組織のコンテキスト検索を有効にする]**&#x200B;切替スイッチをオフにして、組織内のすべてのユーザーに対してコンテキスト検索機能を無効にします。
+1. In the [!UICONTROL Contextual Search] section, turn off the **[!UICONTROL Enable Contextual Search for your organization]** toggle to disable the Contextual Search feature for all users in your organization.  
 
-### コンテキスト検索のフィードバック {#contextual-search-feedback}
+### Contextual Search feedback {#contextual-search-feedback}
 
-コンテキスト検索機能に関するフィードバックを提供する必要がある場合は、![コンテキスト検索アイコン](assets/do-not-localize/Smock_Help_18_N.svg)、フィードバックアイコンの順にクリックします。フィードバックの種類を選択し、件名と説明を指定して、「**[!UICONTROL 送信]**」をクリックします。
+If you need to provide feedback on the Contextual Search feature, click ![Contextual Search icon](assets/do-not-localize/Smock_Help_18_N.svg)  and click the Feedback icon. Select the feedback type, specify the subject and description, and click **[!UICONTROL Submit]**.
 
-![コンテキスト検索のフィードバック](assets/contextual-search-feedback.png)
+![Contextual Search feedback](assets/contextual-search-feedback.png)
+
+-->
 
 ## 次の手順 {#next-steps}
 
@@ -372,7 +373,7 @@ Experience Manager Assets でコンテキスト検索にアクセスするには
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」 ![ページを編集](assets/do-not-localize/edit-page.png) または「[!UICONTROL イシューを記録]」 ![GitHub イシューを作成](assets/do-not-localize/github-issue.png) を使用してドキュメントのフィードバックを提供する。
 
-* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&lang=ja#support)に問い合わせる
 
 
 
