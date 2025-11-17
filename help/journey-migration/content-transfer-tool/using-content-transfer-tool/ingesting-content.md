@@ -4,10 +4,10 @@ description: Cloud Acceleration Manager を使用して、移行セットから�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 54829a232b4b918a525b25f9bca475d7856faa46
+source-git-commit: 7c0703d746601742a28c3c98f35e69de70f25e05
 workflow-type: tm+mt
-source-wordcount: '3616'
-ht-degree: 99%
+source-wordcount: '3647'
+ht-degree: 98%
 
 ---
 
@@ -261,6 +261,10 @@ MongoDB に保存されるノードプロパティの値は、16 MB 未満にす
 * `Mongo network error` - 場合によっては、MongoDB への接続の確立に失敗し、取り込みプロセスが早期に終了し、失敗として報告されることがあります。取り込みを単純に再試行する必要があります。
 * `Mongo server selection error` - これは Mongo クライアントサイドでまれに起こるタイムアウトエラーで、根本原因はいくつか考えられます。その後の再試行で、ほとんどの場合は問題が修正されます。
 * `Mongo took too long to start` – ごくまれに、取り込みワークフローで使用されるローカルの MongoDB を開始できない場合があります。 その後の再試行で、ほとんどの場合は問題が修正されます。
+
+#### AZCopy の問題 {#azcopy-issues}
+
+* `AZCopy critical failure` – まれに、取り込みの事前コピー手順の実行に使用する AZCopy ツールが予期せず失敗することがあります。 この場合は、取り込みの再試行を試みる必要があります。
 
 ### 取り込みの取り消し {#ingestion-rescinded}
 
