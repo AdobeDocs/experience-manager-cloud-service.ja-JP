@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 4bebe8a3a283711a053320bfda4a8aac32096aa6
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 100%
+source-wordcount: '1026'
+ht-degree: 88%
 
 ---
 
@@ -25,7 +25,7 @@ Cloud Manager には、組織またはテナントが使用できる Adobe Exper
 
 ## 概要 {#overview}
 
-Cloud Manager ライセンスダッシュボードを使用すると、すべてのプログラム（使用中のプログラムや使用可能なプログラムを含む）をまたいで使用できる、ソリューションの資格に簡単にアクセスできます。また、Sites ソリューションのコンテンツリクエスト消費指標の月別トレンド表示にもアクセスできます。
+Cloud Manager ライセンスダッシュボードを使用すると、すべてのプログラムで使用できるソリューションの使用権限（使用容量や使用可能容量など）に簡単にアクセスできます。 また、Sites ソリューションのコンテンツリクエスト消費指標の月別トレンド表示にもアクセスできます。
 
 ## ライセンスダッシュボードへのアクセス {#using-dashboard}
 
@@ -68,6 +68,15 @@ Cloud Manager ライセンスダッシュボードを使用すると、すべて
 The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
 
 Cloud Manager のライセンス領域にある「**使用状況の詳細を表示**」ボタンを使用すると、現在のリソース使用状況の詳細な分類が表示されます。クリックすると、ライセンスに関連する重要な指標を示すレポートまたはダッシュボードが開きます。<!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." -->この機能により、契約の制限内に留まっていることを監視および確認しながら、より優れたリソース計画と最適化のインサイトを得ることができます。
+
+次の場合、「**使用状況の詳細を表示**」ボタンは *無効* （オフ）になります。
+
+* ソリューションは契約に含まれておらず、クレジットはありません。 このボタンは、クレジットが存在する場合は、すべてのクレジットが消費されても、使用可能です。
+* そのソリューション用に設定されたCloud Manager プログラムはありません。
+* 使用の詳細を管理する機能フラグが無効になっています。 ボタンを使用するには、組織で *有効* （オン）にする必要があります。
+* ソリューションの使用は明示的に無効になっています。 現在、この状況はEdge Delivery Servicesにのみ適用されます。
+
+
 
 ### Sites の使用状況の詳細 {#sites-usage-details}
 
