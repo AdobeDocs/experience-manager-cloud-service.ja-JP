@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Express]  を利用したオプションを使用し�
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 744c76f29a37610313835074f2f13fdd8f098465
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 100%
+source-wordcount: '1151'
+ht-degree: 96%
 
 ---
 
@@ -114,7 +114,7 @@ Express の使用権限を持つユーザーは、アセットビュー内の Ex
 
 * サポートされているファイルタイプ：JPEG または PNG。
 * サポートされるファイルの最大サイズ：40 MB。
-* サポートされている幅と高さの範囲：50～8000 ピクセル。
+* サポートされる幅と高さの範囲:65MP(たとえば、8K x 8Kまたは16K x 4K)。
 * ページをリロードすると、ソースフォルダーに最新の保存済みアセットが表示されます。
 
 ### Adobe Express を使用した新しいアセットの作成 {#create-new-embedded-editor}
@@ -129,7 +129,8 @@ Express の使用権限を持つユーザーは、アセットビュー内の Ex
 #### 制限事項 {#limitations}
 
 * 変更できるのは、`JPEG` および `PNG` 形式タイプの画像のみです。
-* アセットサイズは 40 MB 未満にする必要があります。
+* アセットサイズは、デスクトップ デバイス の場合は 80 MB、モバイルの場合は 40 MB 未満デバイスする必要があります。
+* サポートされる幅と高さの範囲は 50 から 8000 ピクセルです。
 * 画像は、`PDF`、`JPEG` または `PNG` 形式で保存できます。
 
 <!--
@@ -153,7 +154,7 @@ The brush samples the retouched area and makes the repaired pixels blend seamles
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
-For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/jp/photoshop/using/retouching-repairing-images.html). 
+For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
 -->
 <!-- 
 ### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
@@ -196,7 +197,7 @@ TBD: Insert a video of the available social media options.
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」 ![ページを編集](assets/do-not-localize/edit-page.png) または「[!UICONTROL イシューを記録]」 ![GitHub イシューを作成](assets/do-not-localize/github-issue.png) を使用してドキュメントのフィードバックを提供する。
 
-* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&lang=ja#support)に問い合わせる
 
 >[!MORELIKETHIS]
 >
