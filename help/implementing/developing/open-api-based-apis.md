@@ -4,7 +4,7 @@ description: OpenAPI ベースの API のAEM as a Cloud Service サポートに�
 feature: Developing
 role: Admin, Developer
 exl-id: 4aeafba9-8f9e-4ecb-9e37-8d048b0474cc
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 100%
@@ -59,8 +59,6 @@ ht-degree: 100%
    ```
    kind: "API"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      allowedClientIDs:
        author:
