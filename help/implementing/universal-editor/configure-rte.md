@@ -4,7 +4,7 @@ description: ユニバーサルエディターでリッチテキストエディ�
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 0557379b8d70205043ed87e104d9576ed40a13ce
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 1%
@@ -17,13 +17,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->このドキュメントは、ユニバーサルエディターの新しい RTE に適用されます。この RTE は早期導入者機能として利用できます。 この新機能のテストに興味がある場合は、[&#x200B; 詳しくはリリースノートを参照してください &#x200B;](/help/release-notes/universal-editor/current.md#new-rte)。
+>このドキュメントは、ユニバーサルエディターの新しい RTE に適用されます。この RTE は早期導入者機能として利用できます。 この新機能のテストに興味がある場合は、[ 詳しくはリリースノートを参照してください ](/help/release-notes/universal-editor/current.md#new-rte)。
 
 ## 概要 {#overview}
 
 ユニバーサルエディターには、作成者がテキストの編集時に書式設定の変更を適用できるリッチテキストエディター（RTE）がインプレースおよびプロパティパネルで用意されています。
 
-この RTE は、[&#x200B; コンポーネントフィルターを使用して設定できます。](/help/implementing/universal-editor/filtering.md) このドキュメントでは、使用可能な設定オプションと例について説明します。
+この RTE は、[ コンポーネントフィルターを使用して設定できます。](/help/implementing/universal-editor/filtering.md) このドキュメントでは、使用可能な設定オプションと例について説明します。
 
 ## 設定の構造 {#structure}
 
@@ -32,7 +32,7 @@ RTE 設定は、次の 2 つの部分で構成されます。
 * [`toolbar`](#toolbar): ツールバー設定は、UI で使用できる編集オプションとその編成方法を制御します。
 * [`actions`](#actions): アクション設定を使用すると、個々の編集アクションの動作と外観をカスタマイズできます。
 
-これらの設定は、プロパティ [&#x200B; を使用して、](/help/implementing/universal-editor/filtering.md) コンポーネントフィルター `rte` の一部として定義できます。
+これらの設定は、プロパティ [ を使用して、](/help/implementing/universal-editor/filtering.md) コンポーネントフィルター `rte` の一部として定義できます。
 
 ```json
 [
@@ -274,10 +274,7 @@ RTE 設定は、次の 2 つの部分で構成されます。
           "label": "Main Heading"
         }
       }
-    },
-    "components": [
-      "richtext"
-    ]
+    }
   }
 ]
 ```
