@@ -4,7 +4,7 @@ description: AEM as a Cloud Service でのログベンダーへのログ転送�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '2478'
 ht-degree: 95%
@@ -111,8 +111,6 @@ AEM および Apache／Dispatcher ログを、専用エグレス IP などの AE
    ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      splunk:
        default:
@@ -135,8 +133,6 @@ AEM および Apache／Dispatcher ログを、専用エグレス IP などの AE
 ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      splunk:
        default:
@@ -155,8 +151,6 @@ AEM および Apache／Dispatcher ログを、専用エグレス IP などの AE
 ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      splunk:
        default:
@@ -218,8 +212,6 @@ AEM ログ（Apach／Dispatcher を含む）の場合、[高度なネットワ�
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   splunk:
     default:
@@ -254,9 +246,7 @@ Amazon S3 へのログ転送では、AEM と Dispatcher のログがサポート
 
 ```yaml
 kind: "LogForwarding"
-version: "1.0"
-metadata:
-  envTypes: ["dev"]
+version: "1"
 data:
   awsS3:
     default:
@@ -294,8 +284,6 @@ IAM ポリシーでは、ユーザーに `s3:putObject` の使用を許可する
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   azureBlob:
     default:
@@ -364,8 +352,6 @@ AEM ログ（Apache／Dispatcher を含む）は、次の命名規則に従っ�
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   datadog:
     default:
@@ -392,8 +378,6 @@ data:
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   elasticsearch:
     default:
@@ -426,8 +410,6 @@ ctx._index = sourceType + "_" + envType + "_" + date;
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   https:
     default:
@@ -472,8 +454,6 @@ New Relic へのログ転送では、New Relic HTTPS API を取り込みに活�
 ```yaml
   kind: "LogForwarding"
   version: "1"
-  metadata:
-    envTypes: ["dev"]
   data:
     newRelic:
       default:
@@ -499,8 +479,6 @@ Dynatrace へのログ転送では、Dynatrace HTTPS API を取り込みに活�
 ```yaml
   kind: "LogForwarding"
   version: "1"
-  metadata:
-    envTypes: ["dev"]
   data:
     dynatrace:
       default:
@@ -517,8 +495,6 @@ Dynatrace へのログ転送では、Dynatrace HTTPS API を取り込みに活�
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   splunk:
     default:
@@ -552,8 +528,6 @@ URL の最後のセクション（先頭の `/` を除く）をコピーし、�
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   sumoLogic:
     default:
