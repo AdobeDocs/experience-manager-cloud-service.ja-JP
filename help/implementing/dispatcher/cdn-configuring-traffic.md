@@ -4,7 +4,7 @@ description: 設定ファイルでルールとフィルターを宣言し、Clou
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: a8c313c3b1324e4195c2aeb70a5a56e4ef66fcf3
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 92%
@@ -44,8 +44,6 @@ CDN でトラフィックを設定する前に、次のことを行う必要が�
    ```
    kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    ```
 
 1. [設定パイプライン](/help/operations/config-pipeline.md#folder-structure)で説明されているように、*config* または類似の名前の最上位フォルダーの下のどこかにファイルを配置します。
@@ -79,8 +77,6 @@ when 句は、ドメイン、パス、クエリ文字列、ヘッダー、Cookie
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev", "stage", "prod"]
 data:
   requestTransformations:
     removeMarketingParams: true
@@ -227,8 +223,6 @@ actions:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["prod", "dev"]
 data:
   requestTransformations:
     rules:
@@ -313,8 +307,6 @@ responseTransformations:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["prod", "dev"]
 data:
   responseTransformations:
     rules:
@@ -397,8 +389,6 @@ AEM CDN を利用して、アドビ以外のアプリケーション（おそら
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -449,15 +439,13 @@ data:
 
 ### カスタムドメインのAEM静的層へのプロキシ化 {#proxy-custom-domain-static}
 
-オリジンセレクターを使用すると、[&#x200B; フロントエンドパイプライン &#x200B;](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) を使用してデプロイされたAEM静的コンテンツにAEM パブリッシュトラフィックをルーティングできます。 使用例には、ページと同じドメイン（例：example.com/static）または明示的に異なるドメイン（例：static.example.com）での静的リソースの提供が含まれます。
+オリジンセレクターを使用すると、[ フロントエンドパイプライン ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) を使用してデプロイされたAEM静的コンテンツにAEM パブリッシュトラフィックをルーティングできます。 使用例には、ページと同じドメイン（例：example.com/static）または明示的に異なるドメイン（例：static.example.com）での静的リソースの提供が含まれます。
 
 これを実現できるオリジンセレクタールールの例を以下に示します。
 
 ```
 kind: CDN
 version: '1'
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -483,8 +471,6 @@ AEM パブリッシュから AEM Edge Delivery Service にトラフィックを�
 ```
 kind: CDN
 version: '1'
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -523,8 +509,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   redirects:
     rules:
