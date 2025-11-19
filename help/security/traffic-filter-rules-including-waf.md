@@ -4,8 +4,8 @@ description: Web アプリケーションファイアウォール（WAF）ルー
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+workflow-type: tm+mt
 source-wordcount: '4582'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 トラフィックフィルタールールのサブカテゴリには、拡張セキュリティライセンスまたは WAF-DDoS 保護ライセンスが必要です。これらの強力なルールは、WAF（web アプリケーションファイアウォール）トラフィックフィルタールール（または *WAF ルール*）と呼ばれ、この記事で後述する [WAF フラグ](#waf-flags-list)にアクセスできます。
 
-トラフィックフィルタールールは、Cloud Manager 設定パイプラインを通じて、開発環境、ステージ環境および実稼動環境のタイプにデプロイできます。設定ファイルは、コマンドラインツールを使用して迅速な開発環境（RDE）にデプロイできます。
+トラフィックフィルタールールは、Cloud Manager 設定パイプラインを通じて、開発環境、ステージ環境および本番環境のタイプにデプロイできます。設定ファイルは、コマンドラインツールを使用して高速開発環境（RDE）にデプロイできます。
 
 [チュートリアルに従って](#tutorial)、この機能に関する具体的な専門知識をすばやく構築します。
 
@@ -70,9 +70,9 @@ ht-degree: 100%
 1. 実稼動環境以外および実稼動環境の設定パイプラインの指定について詳しくは、[設定](#setup)の節を参照してください。
 1. *WAF トラフィックフィルタールール*&#x200B;のライセンスをお持ちのお客様は、Cloud Manager で有効にする必要があります。
 1. このチュートリアルを読んで、ライセンスを取得している場合は WAF ルールを含むトラフィックフィルタールールの使用方法を具体的に学びます。このチュートリアルでは、開発環境にルールのデプロイ、悪意のあるトラフィックのシミュレート、[CDN ログ](#cdn-logs)のダウンロード、[ダッシュボードツール](#dashboard-tooling)での分析を行う方法を説明します。
-1. 推奨されるスタータールールを `cdn.yaml` にコピーし、一部のルールをログモードにして、実稼動環境に設定をデプロイします。
+1. 推奨されるスタータールールを `cdn.yaml` にコピーし、一部のルールをログモードにして、本番環境に設定をデプロイします。
 1. トラフィックを収集した後、[ダッシュボードツール](#dashboard-tooling)を使用して結果を分析し、一致の有無を確認します。誤検知に注意し、必要な調整を行って、最終的にブロックモードですべてのスタータールールを有効にします。
-1. 必要に応じて、CDN ログの分析に基づいてカスタムルールを追加します。まず、開発環境でシミュレートされたトラフィックを使用してテストしてから、ログモード、次にブロックモードでステージ環境および実稼動環境にデプロイします。
+1. 必要に応じて、CDN ログの分析に基づいてカスタムルールを追加します。まず、開発環境でシミュレートされたトラフィックを使用してテストしてから、ログモード、次にブロックモードでステージ環境および本番環境にデプロイします。
 1. トラフィックを継続的に監視し、脅威の状況の進化に応じてルールを変更します。
 
 ## 設定 {#setup}
@@ -82,8 +82,6 @@ ht-degree: 100%
    ```
    kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      trafficFilters:
        rules:
@@ -120,8 +118,6 @@ WAF ルールも含む一連のトラフィックフィルタールールの例�
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -302,8 +298,6 @@ when:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
@@ -320,8 +314,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -342,8 +334,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -367,8 +357,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -393,8 +381,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -449,8 +435,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -475,8 +459,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -512,8 +494,6 @@ WAF のライセンスを取得している場合、アドビでは、多数の�
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -538,8 +518,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
    defaultTrafficAlerts: false
@@ -578,8 +556,6 @@ CDN ログは、最大 5 分遅れる場合があります。
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -679,8 +655,6 @@ CDN ログで使用されるフィールド名と、それらの簡単な説明�
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev", "stage", "prod"]
 data:
   trafficFilters:
     rules:
