@@ -4,10 +4,10 @@ description: AEM Assets と Adobe Express とのネイティブ統合を使用�
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 76f23be65e71970742c40068c475da7d04c41a9c
+source-git-commit: 3046da6d16b2494f6a3f18c60df7a4600afcd7ba
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 78%
+source-wordcount: '793'
+ht-degree: 77%
 
 ---
 
@@ -47,9 +47,9 @@ Adobe Express エディターで AEM Assets の使用を開始するには、次
 
 1. アセットを参照または検索して、キャンバスにドラッグ&amp;ドロップします。
 
-1. 置き換える画像を選択します。 「**[!UICONTROL 置換]**」をクリックして、他の様々なオプションの中から **[!UICONTROL 2&rbrace;AEM Assets&rbrace; を選択します。]**
+1. 置き換える画像を選択します。 「**[!UICONTROL 置換]**」をクリックして、他の様々なオプションの中から **[!UICONTROL 2}AEM Assets} を選択します。]**
 
-   ![AEMの置換 &#x200B;](assets/aem-replace.png)
+   ![AEMの置換 ](assets/aem-replace.png)
 
 1. **[!UICONTROL AEMのアップロード]** パネルが左側のナビゲーションパネルに開きます。 Adobe Expressには、アクセス権のあるリポジトリーのリストと、ルートレベルで使用可能なアセットおよびフォルダーのリストが表示されます。 ここからアセットを選択してキャンバスで置き換えをプレビューし、「**[!UICONTROL 置換]**」をクリックして確定します。
 
@@ -106,6 +106,9 @@ Express キャンバスに適切な変更を組み込んだ後、AEM Assets リ�
         <td>[!UICONTROL MP4]</td>
         <td> 3840 X 3840 ピクセル、最大 200 MB</td>
     </tr>
+    <tr>
+      <td colspan="2"> <i> アセットサイズは、デスクトップデバイスの場合は 80 MB 未満、モバイルデバイスの場合は 40 MB 未満にする必要があります。</i></td>
+   </tr>
     </tbody>
 </table>
 
