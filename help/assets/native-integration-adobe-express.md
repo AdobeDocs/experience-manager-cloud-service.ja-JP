@@ -47,9 +47,9 @@ Adobe Express エディターで AEM Assets の使用を開始するには、次
 
 1. アセットを参照または検索して、キャンバスにドラッグ&amp;ドロップします。
 
-1. 置き換える画像を選択します。 「**[!UICONTROL 置換]**」をクリックして、他の様々なオプションの中から **[!UICONTROL 2}AEM Assets} を選択します。]**
+1. 置き換える画像を選択します。 「**[!UICONTROL 置換]**」をクリックして、他の様々なオプションの中から **[!UICONTROL 2&rbrace;AEM Assets&rbrace; を選択します。]**
 
-   ![AEMの置換 ](assets/aem-replace.png)
+   ![AEMの置換 &#x200B;](assets/aem-replace.png)
 
 1. **[!UICONTROL AEMのアップロード]** パネルが左側のナビゲーションパネルに開きます。 Adobe Expressには、アクセス権のあるリポジトリーのリストと、ルートレベルで使用可能なアセットおよびフォルダーのリストが表示されます。 ここからアセットを選択してキャンバスで置き換えをプレビューし、「**[!UICONTROL 置換]**」をクリックして確定します。
 
