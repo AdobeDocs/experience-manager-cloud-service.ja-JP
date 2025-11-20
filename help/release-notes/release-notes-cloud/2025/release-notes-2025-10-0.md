@@ -1,20 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート。'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.10.0 リリースのリリースノート。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.10.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: 33655e7d58f19a5637ad120d8df537015f2f0aec
+source-git-commit: c5918c887be60c5198b762d860fe72afd31df352
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 69%
+source-wordcount: '1894'
+ht-degree: 59%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の 2025.10.0 リリースノート {#release-notes}
 
-以下のセクションでは、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンの機能リリースノートの概要について説明します。
+以下の節では、[!DNL Experience Manager] as a Cloud Service の 2025.10.0 バージョンの機能リリースノートの概要について説明します。
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ ht-degree: 69%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.11.0）のリリース日は、2025年11月20日（PT）です。 次回の機能リリース（2025.12.0）は 2025年12月11日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.10.0）のリリース日は、2025年10月30日（PT）です。次回の機能リリース（2025.11.0）は 2025年11月20日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -43,6 +41,14 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
+
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Experience Manager Sites の新機能 {#new-sites}
+
+* [ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)：コンテンツ作成者は、コンテンツフラグメントのローンチを使用して、構造化コンテンツの今後のバリエーションを作成およびスケジュールできるようになりました。 新しいコンテンツフラグメントコンソールを使用すると、今後のコンテンツの分岐としてコンテンツフラグメントのローンチを作成、編集、管理およびスケジュール設定でき、ソースブランチと同期できます。 新しい差分表示では、今後の公開に向けてローンチをコミットする前に、すべてのコンテンツの変更について明確な概要が示されます。
+
+* AEM コンテンツフラグメント用の [ コンテンツモデルエディター ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) は、AEMの他の React スペクトルベースのインターフェイスと連携するように最新化されました。 ユーザーインターフェイスの実装と拡張モデルが、コンテンツフラグメントエディターおよびユニバーサルエディターと一貫性を保つようになりました。新しいコンテンツモデル管理 UI から開いた場合、新しいモデルエディターがデフォルトになりました。タッチ UI でコンテンツモデルを開くと、タッチ UI エディターが開き、新しいエディターを試すことができます。
 
 <!--
 
@@ -63,6 +69,24 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 -->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### Experience Manager Forms の新機能 {#new-features-forms}
+
+**アダプティブフォームとフォームフラグメント用のユニバーサルエディター**
+
+ユニバーサルエディターは、アダプティブFormsと再利用可能なフォームフラグメントを作成するための統一されたオーサリングエクスペリエンスを提供するようになりました。 作成者は、直感的なWYSIWYG環境内で、強力な拡張機能と包括的な送信機能を活用してフォームを視覚的にデザインできます。 このエディターは、セキュリティを強化するために reCAPTCHA 検証を統合し、手動入力を減らすための事前入力サービスを提供し、すべてのデバイスにわたるレスポンシブデザインをサポートします。
+
+**使用可能な拡張機能：**
+
+* **ルールエディター**：ビジュアルルールエディターを使用すると、フォーム作成者は、コーディングせずにフォームフィールドに動的動作を追加し、イベント駆動型のルール、即時検証、エラー処理をサポートできます。
+* **フォームのプロパティ**：ユーザーが送信アクション、事前入力サービス、ありがとうメッセージ、その他のフォーム関連の動作をエディター内で直接設定するのに役立つウィザード。
+* **フォームデータSourceとバインド参照**：データソース拡張機能を使用すると、フォーム作成者は、データモデルに直接関連付けられたコンポーネントをアダプティブフォームに追加し、すべてのコンポーネントのツリー選択からバインド参照を選択できます。
+
+**サポートされる送信アクション：**
+
+ユニバーサルエディターは、カスタム送信アクション、Microsoft SharePointへの送信、Microsoft OneDrive への送信、Azure Blob Storage への送信、REST エンドポイントへの送信、AEM ワークフローの呼び出し、Power Automate フローの呼び出し、Marketo Engageへの送信、Adobe Experience Platform（AEP）、スプレッドシートへの送信、フォームデータモデル（FDM）を使用した送信、Workfront Fusion への送信、メール送信など、包括的な送信ワークフローをサポートします。
+
+詳しくは、[Forms用Edge Delivery Servicesのユニバーサルエディター」ドキュメント ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) を参照してください。 送信アクションの設定について詳しくは、「[ アダプティブフォーム送信アクション ](/help/edge/docs/forms/universal-editor/submit-action.md)」を参照してください。
 
 <!-- ### Pre-Release features in AEM Forms 
 
@@ -121,11 +145,37 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
-### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation の新機能 {#foundation-new}
+### リリース管理の新機能 {#new-features-release-management}
 
-#### 今後の Java API の非推奨（廃止予定） {#java-api-deprecation}
+**自動メンテナンスアップデートの一時停止**
 
-一部の非推奨（廃止予定）API は、8月31日（PT）の削除としてマークされたので、参照できなくなります。コードに非推奨の API の使用が検出された場合は、アクションセンターから通知が届きます。また、12 月 3 日以降、Cloud Managerのビルド中に通知が表示され、使用を中止することが重要になります。 詳しくは、[非推奨（廃止予定）に関する記事](/help/release-notes/deprecated-removed-features.md#aem-apis)を参照してください。便宜上、これらの API を次に示します。
+運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[ 新しいセルフサービス機能 ](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
+
+* 静かな時間：毎日設定された時間に自動メンテナンスをブロックします。勤務時間、夜間の実行や朝の切り替え時などに最適です。
+* 更新不要の期間：自動メンテナンスを 1 週間ブロックします。ローンチ、プロモーションまたは年次フリーズに使用します。
+
+>[!NOTE]
+>
+>9月25日（PT）に限定提供機能として提供を開始します。
+>プログラムでアクティブ化するには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信してください。
+
+### その他の宛先へのAEM ログ転送 {#log-forwarding}
+
+AEM ログを、Amazon S3、Sumo Logic、Dynatraceおよび（Adobeが提供するアカウントではなく）独自のNew Relic アカウントに転送できるようになりました。 なお、これらのログ先ではAEM ログ（Apache/Dispatcherを含む）がサポートされていますが、CDN ログはサポートされていません。
+
+すべての [ サポートされるログ転送宛先 ](/help/implementing/developing/introduction/log-forwarding.md) を参照してください。
+
+### Edge Delivery Servicesの設定パイプライン {#config-pipeline-eds}
+
+Edge Delivery Servicesで作成されたサイトで Config パイプラインがサポートされるようになり、この機能がAEM オーサーおよびAEM パブリッシュ配信のみに拡張されました。 設定パイプラインを使用して、トラフィックフィルタールールや接触チャネルセレクターなどの CDN 設定を管理できます。 詳しくは、[サポートされている設定](/help/operations/config-pipeline.md#configurations)を参照してください。
+
+Edge Delivery 設定パイプラインは、Cloud Manager パイプライン変数を通じて秘密鍵もサポートします。
+
+[Edge Delivery パイプラインを追加する](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)を参照してください。
+
+### 今後の Java API の非推奨（廃止予定） {#java-api-deprecation}
+
+一部の非推奨（廃止予定）API は、8月31日（PT）の削除としてマークされたので、参照できなくなります。コード内に非推奨の API の使用が検出された場合はアクションセンターから通知が届きます。11月13日（PT）以降は、使用を削除することの重要性を強調する通知が Cloud Manager ビルド中に表示されます。詳しくは、[非推奨（廃止予定）に関する記事](/help/release-notes/deprecated-removed-features.md#aem-apis)を参照してください。便宜上、これらの API を次に示します。
 
 +++ 展開して Java API の非推奨（廃止予定）について確認
 
@@ -157,42 +207,27 @@ OSGi properties:
 
 -->
 
-#### Java 11 ランタイムの非推奨（廃止予定） {#java11-runtime-deprecation}
+### Java 11 ランタイムの非推奨（廃止予定） {#java11-runtime-deprecation}
 
-Adobeは 2025 年 10 月 14 日に **ステージング** 環境と **実稼動** 環境を高性能の **Java 21 ランタイム** にアップグレードしました。 **1 月下旬** 以降、AEM Cloud Service SDKもクラウド環境も Java 11 ランタイムでは動作しません。
+Adobeは 2025 年 10 月 14 日に **ステージング** 環境と **実稼動** 環境を高性能の **Java 21 ランタイム** にアップグレードしました。 1 月下旬からは、AEM Cloud Service SDKもどのクラウド環境も Java 11 ランタイムで動作しなくなります。
 
 >[!NOTE]
 >
 > 最新のパフォーマンス最適化と言語強化を活用するには、Java 17 または Java 21 （推奨）を使用してビルドすることをお勧めします。 Java 8 および Java 11 を使用したビルドは、現時点ではサポートされていますが、今後のリリースで非推奨（廃止予定）になります。 廃止に先立ち、別途お知らせいたします。 *この記事* の [ ビルド時間要件 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) の節を参照してください。
 >
 
-#### AEM Java ログ設定ポリシーの適用 {#logconfig-policy}
+### AEM Java ログ設定ポリシーの適用 {#logconfig-policy}
 
 4 月のリリースノートに記載されているように、AEMの Java ログは、すべてのお客様の環境で信頼性の高い監視を確実に行うために、標準に従う必要があります。 ログ形式、出力ファイル、デフォルトログレベルの変更といったカスタムログ設定は、サポートされなくなりました。 ログはデフォルトファイルにダイレクトされ続け、AEM 製品コードのデフォルトログレベルは保持される必要があります。 詳しくは、[ログに関する記事](/help/implementing/developing/introduction/logging.md#configuration-loggers)を参照してください。
 
-**12 月 10 日** 以降、サポートされていないカスタム記録の上書きは無視されます。 Adobe の分析によると、ほとんどのお客様は影響を受けることはありません。現在の設定が影響を受ける可能性があるお客様にはご連絡済みです。
+**11 月 20 日** 以降、サポートされていないカスタム記録の上書きは無視されます。 Adobe の分析によると、ほとんどのお客様は影響を受けることはありません。現在の設定が影響を受ける可能性があるお客様にはご連絡済みです。
 
 カスタムログ動作に依存するダウンストリームプロセスを確認し、更新してください。 例：
 
 * ログ転送システムでカスタムログ形式が想定されている場合は、取り込みルールを調整する必要がある可能性があります。
 * 以前にログレベルを変更してログの冗長性を削減したことがある場合は、デフォルトレベルに戻すとログのボリュームが増える可能性があることに注意してください。
 
-### [!DNL Experience Manager] as a [!DNL Cloud Service] 基盤の早期導入者の機能 {#foundation-early-adopter}
-
-#### 自動メンテナンスアップデートの一時停止 {#pause-updates}
-
-運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[ 新しいセルフサービス機能 ](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
-
-* 静かな時間：毎日設定された時間に自動メンテナンスをブロックします。勤務時間、夜間の実行や朝の切り替え時などに最適です。
-* 更新不要の期間：自動メンテナンスを 1 週間ブロックします。ローンチ、プロモーションまたは年次フリーズに使用します。
-
->[!NOTE]
->
->9月25日（PT）に限定提供機能として提供を開始します。
->プログラムでアクティブ化するには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信してください。
->
-
-#### Edge コンピューティング（Beta プログラム） {#edge-computing}
+### Edge コンピューティング（Beta プログラム） {#edge-computing}
 
 Edge コンピューティングを使用すると、CDN レイヤーで JavaScript を実行し、データ処理をエンドユーザーに近づけることができます。 これにより待ち時間が短縮され、エッジでレスポンシブな動的エクスペリエンスが実現します。
 
@@ -206,14 +241,14 @@ Edge コンピューティングを使用すると、CDN レイヤーで JavaScr
 
 AEM パブリッシュ配信またはライブ実稼動サイトのEdge Delivery Services プロジェクトで利用できる機会の数は限られています。 参加に関心がある場合や、詳細を確認したい場合は、ユースケースの簡単な説明を添えて [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)までメールでご連絡ください。
 
-#### Edge Delivery Services の Edge 認証（Beta プログラム） {#edge-authentication}
+### Edge Delivery Services の Edge 認証（Beta プログラム） {#edge-authentication}
 
 Edge 認証を使用すると、Edge Delivery Services ページへのアクセスを、ID プロバイダー（IdP）で認証されたユーザーのみに制限できます。これを実現するには、OpenID Connect（OIDC）設定の YAML ファイルをデプロイします。
 
 ご興味がある場合は、ユースケースの簡単な説明とご質問を [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) までお問い合わせください。
 
 <!--
-#### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
+### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
 
 The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
 
@@ -221,7 +256,7 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 -->
 
-#### ライブトラフィックを受け入れる前にコードをテストするための Canary 実稼動デプロイメント（Beta プログラム） {#canary-beta}
+### ライブトラフィックを受け入れる前にコードをテストするための Canary 実稼動デプロイメント（Beta プログラム） {#canary-beta}
 
 エンドユーザーに公開する前に、内部専用テストトラフィックを使用して実稼動ビルドを検証します。実稼動環境に出荷し、Canary トラフィックのみをルーティング（特別なヘッダーを使用）し、動作を監視してから、顧客に影響を与えることなく、ライブトラフィックに昇格するか、ロールバックします。
 
@@ -230,7 +265,7 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 アクセスをリクエストしてフィードバックを共有するには、[aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) にメールを送信してください。
 
 
-#### AI 回答 – AEM Sitesに対する、よりスマートでコンテキスト対応の応答（Beta プログラム） {#ai-answers-beta}
+### AI 回答 – AEM Sitesに対する、よりスマートでコンテキスト対応の応答（Beta プログラム） {#ai-answers-beta}
 
 AI Answers は、訪問者がコンテンツを操作する新しい方法を導入します。 Retrieval-Augmented Generation （RAG）テクノロジーを活用し、AEMが管理するデータを使用して、デジタルエクスペリエンス内で直接、正確でブランドに一貫性のある回答を提供します。
 
@@ -238,19 +273,14 @@ AI AnswersBetaプログラムの立ち上げに備え、お客様の関心を登
 
 参加をリクエストしたり、更新情報を受け取ったりするには、[feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com) にお問い合わせください。
 
-#### AI を使用したAEM開発の高速化（Alpha プログラム）  {#ai-dev-alpha}
 
-AEM Java スタックチームは、Cursor、Cloud Code、Visual Studio、IntelliJ などのツールで AI を利用した開発を行い、機能の配信を高速化し、コード品質を向上させています。 Adobeがサポートする将来の AI 機能を形成するのに役立つ、実際のエクスペリエンスを収集しています。
-
-[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) に電子メールを送信して、チームの活動内容やAdobeからの情報提供内容を共有します。
-
-#### RDE のスナップショット（Alpha プログラム） {#rde-snapshot-program}
+### RDE のスナップショット（Alpha プログラム） {#rde-snapshot-program}
 
 Alpha では、高速開発環境（RDE）で、コードとコンテンツの現在の状態のスナップショットを取得し、後で復元できる機能がサポートされるようになりました。 これは、元に戻す必要がある場合のあるコードを同期する場合や、異なる機能の開発を切り替える場合に役立つことがあります。 また、テストの既知の開始点として、可変コンテンツのみを復元することもできます。
 
 この機能に関するフィードバックをお送りいただく場合は、[aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) までメールでお問い合わせください。
 
-#### アプリケーションパフォーマンスモニタリング（APM）の拡張（Alpha プログラム） {#apm-alpha}
+### アプリケーションパフォーマンスモニタリング（APM）の拡張（Alpha プログラム） {#apm-alpha}
 
 観測性のために、AEM Cloud Service は現在、アドビ提供の [New Relic One](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)と顧客管理の [Dynatrace](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) をサポートしています。追加の APM オプションのサポートを検討中ですので、ユースケースと共に、ご希望のベンダーまたはテクノロジーを記載したメールを [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) までお送りください。
 
