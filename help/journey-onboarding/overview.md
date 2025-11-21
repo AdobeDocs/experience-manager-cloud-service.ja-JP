@@ -21,7 +21,7 @@ AEM as a Cloud Service を選択していただき、ありがとうございま
 
 Adobe Experience Manager（AEM）は、コンテンツ配信アプローチとオーサリングアプローチの両方を柔軟に使用できるため、チームはニーズに合わせて最適なモデルを選択できます。
 
-[Edge Delivery Services](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/overview) を使用すると、迅速かつ反復的なオーサリングと高いコンテンツベロシティを実現できます。また、従来のパブリッシュ配信サービスを使用すると、堅牢なエンタープライズ公開モデルを実現できます。 どちらのアプローチを使用しても、組織は最適な方法で優れたデジタルエクスペリエンスを提供できます。 Edge Delivery Servicesの使用を開始するには、[Edge Delivery Servicesの概要 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/overview) を参照してください。最新のオーサリングオプションについて詳しくは、[ オーサリングガイド ](https://www.aem.live/docs/authoring-guide) を参照してください。
+[Edge Delivery Services](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/overview) を使用すると、迅速かつ反復的なオーサリングと高いコンテンツベロシティを実現できます。また、従来のパブリッシュ配信サービスを使用すると、堅牢なエンタープライズ公開モデルを実現できます。 どちらのアプローチを使用しても、組織は最適な方法で優れたデジタルエクスペリエンスを提供できます。 Edge Delivery Servicesの使用を開始するには、[Edge Delivery Servicesの概要 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/overview) を参照してください。最新のオーサリングオプションについて詳しくは、[&#x200B; オーサリングガイド &#x200B;](https://www.aem.live/docs/authoring-guide) を参照してください。
 
 オンボーディングとは、指定されたシステム管理者が AEM as a Cloud Service を組織用に設定するプロセスです。このプロセスには、クラウドリソースの初期プロビジョニングや、ユーザーを職務に基づいて役割に割り当てる作業が含まれます。これにより、各メンバーが AEM as a Cloud Service にログオンしてリソースにアクセスできるようになります。
 
