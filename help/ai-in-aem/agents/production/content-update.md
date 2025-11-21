@@ -3,10 +3,10 @@ title: Content Update Skill
 description: Experience Production Agent のコンテンツ更新スキルの概要と機能について説明します。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: 7f42357292fab3001a3905919dfcb78f4dfd30ba
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 2%
+source-wordcount: '862'
+ht-degree: 1%
 
 ---
 
@@ -35,17 +35,19 @@ AI アシスタントを介してAEM Business Agents にアクセスできます
 
 experience.adobe.comから AI アシスタントを開き、`Ask AI Assistant anything` フィールドを使用して自然言語でプロンプトを指定して、操作を開始します。
 
-![&#x200B; アクセス探索エージェント &#x200B;](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
+![ アクセス探索エージェント ](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
 
-<!--
-### Sample Prompts {#sample-prompts}
+### サンプルプロンプト {#sample-prompts}
 
-To initiate content updates you can give a wide range of natural language prompts. You also need to specify the public facing URL of the page you want to update:
+コンテンツの更新を開始するには、様々な自然言語のプロンプトを指定します。 また、更新するページの公開 URL を指定する必要があります。 例：
 
-* Change your headlines
+* 次のページを変更します。https://www.your-url.com/sale メインヒーローの見出しを「ブラックフライデーメガセール – 最大 70% オフ」に更新し、カウントダウンタイマーを「48 時間以内に終了」に変更し、「更新にサインアップ」を削除し、すべての「今すぐ購入」ボタンを「取引をつかむ」に変更します
 
-  * On your-URL change the headline from X to Y
--->
+* https://www.your-url.com/laptops/your-laptop-model バナーコピーを「今すぐ 300 USD 節約」に更新し、価格を 1,299 USD から 999 USD に更新し、融資オプションバナーを削除します
+
+* https://www.your-url.com/your-sneaker在庫ステータスを「低在庫」から「在庫に戻る – 数量限定」に更新、サイズセレクターを変更して使用可能なサイズを緑色でハイライト、「近日公開予定」バッジを削除
+
+* https://www.your-url.com/your-sneaker新しいカラーウェイを表示するように製品画像を更新します
 
 >[!NOTE]
 >
@@ -105,11 +107,11 @@ Jira でコンテンツ更新スキルを使用すると、編集を自動化す
 
 * 次の画像は、コンテンツ更新スキル用の `process` コマンドをトリガーにする Jira の例を示しています。
 
-  ![&#x200B; エクスペリエンス実稼働エージェントのコンテンツ更新スキルを使用した Jira の例 &#x200B;](assets/content-update-jira-example.png)
+  ![ エクスペリエンス実稼働エージェントのコンテンツ更新スキルを使用した Jira の例 ](assets/content-update-jira-example.png)
 
 ### アクティベーション {#activation}
 
-Jira を使用して実稼動エージェントをアクティブ化し、アクセスできるようにするには、Adobeにメールを送信する必要があります。 開始するには、以下にお問い合わせください。
+Jira で Experience Production Agent をアクティブ化してアクセスできるようにするには、Adobeにメールを送信する必要があります。 開始するには、以下にお問い合わせください。
 
 * `experience-production-agent@adobe.com`
 * または、アカウントチームにお問い合わせください
@@ -143,4 +145,4 @@ Jira を使用して実稼動エージェントをアクティブ化し、アク
 
 現在、コンテンツアップデーターには次の制限があります。
 
-* ファイルのアップロードは、[Jira](#jira) を操作する際に使用できますが、[AI アシスタント &#x200B;](#ai-assistant) を操作する際にはサポートされません。
+* ファイルのアップロードは、[Jira](#jira) を操作する際に使用できますが、[AI アシスタント ](#ai-assistant) を操作する際にはサポートされません。
