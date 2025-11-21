@@ -35,7 +35,7 @@ AI アシスタントを介してAEM Business Agents にアクセスできます
 
 experience.adobe.comから AI アシスタントを開き、`Ask AI Assistant anything` フィールドを使用して自然言語でプロンプトを指定して、操作を開始します。
 
-![ アクセス探索エージェント ](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
+![&#x200B; アクセス探索エージェント &#x200B;](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
 
 <!--
 ### Sample Prompts {#sample-prompts}
@@ -105,7 +105,7 @@ Jira でコンテンツ更新スキルを使用すると、編集を自動化す
 
 * 次の画像は、コンテンツ更新スキル用の `process` コマンドをトリガーにする Jira の例を示しています。
 
-  ![ エクスペリエンス実稼働エージェントのコンテンツ更新スキルを使用した Jira の例 ](assets/content-update-jira-example.png)
+  ![&#x200B; エクスペリエンス実稼働エージェントのコンテンツ更新スキルを使用した Jira の例 &#x200B;](assets/content-update-jira-example.png)
 
 ### アクティベーション {#activation}
 
@@ -143,4 +143,4 @@ Jira を使用して実稼動エージェントをアクティブ化し、アク
 
 現在、コンテンツアップデーターには次の制限があります。
 
-* ファイルのアップロードは、[Jira](#jira) を操作する際に使用できますが、[AI アシスタント ](#ai-assistant) を操作する際にはサポートされません。
+* ファイルのアップロードは、[Jira](#jira) を操作する際に使用できますが、[AI アシスタント &#x200B;](#ai-assistant) を操作する際にはサポートされません。

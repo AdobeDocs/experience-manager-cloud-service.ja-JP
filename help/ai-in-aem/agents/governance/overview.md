@@ -26,7 +26,7 @@ ht-degree: 0%
 >
 >AI によって生成された応答は、不正確であったり、誤解を招く可能性があります。 推奨される修正および回答を再確認してください。
 >
->[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドライン ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) も参照してください。
+>[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドライン &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) も参照してください。
 
 ## AEM Governance Agent のスキル {#skills-in-aem-governance-agent}
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ガバナンスエージェントでは、ブランドガイドラインに照らしてコンテンツを検証し、すべてのデジタルエクスペリエンスで一貫性を確保できます。 トーン、クレーム、ロゴの使用、タイポグラフィ、画像など、事前に取り込まれたブランドルールを使用します。 Experience Hubのチャット、エディター、バッチモードでリアルタイムに動作し、AI で生成されるコンテンツ、サイト移行、概要ベースのサイト作成に最適です。
 
-![ ブランドガバナンスの概要 ](/help/ai-in-aem/agents/governance/assets/brand-governance.png)
+![&#x200B; ブランドガバナンスの概要 &#x200B;](/help/ai-in-aem/agents/governance/assets/brand-governance.png)
 
 **プロンプトの例：**
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 Content Hubでは、適切なユーザーのみが適切なタイミングで適切なアセットにアクセスできるようにします。 きめ細かい属性ベースの制御と使用権限を適用することで、機密性の高いコンテンツを保護し、安全なコラボレーションを可能にします。 つまり、コンプライアンスリスクの軽減、ブランドの整合性の強化、迅速なワークフローにより、チームは、不正なアクセスや誤用を心配することなく、自信を持ってアセットを共有および再利用できます。 このセキュリティと柔軟性のバランスにより、組織全体の運用効率と信頼が向上します。
 
-![ 権限管理の概要 ](/help/ai-in-aem/agents/governance/assets/permission-management.png)
+![&#x200B; 権限管理の概要 &#x200B;](/help/ai-in-aem/agents/governance/assets/permission-management.png)
 
 **プロンプトの例：**
 
@@ -63,7 +63,7 @@ Content Hubでは、適切なユーザーのみが適切なタイミングで適
 
 このエージェントを使用すると、コンテンツエコシステム全体でAssetsのデジタル著作権を管理できます。 権限と使用権限を詳細なレベルで制御することで、定義されたコンプライアンスの範囲内でのみアセットにアクセスして使用できるようにします。 これにより、安心、知的財産の保護、規制リスクの軽減、ブランドインテグリティの維持が実現します。 権限適用を自動化することで、チームは安全かつ自信を持って共同作業を行え、セキュリティやコンプライアンスを妥協することなくコンテンツ配信を高速化できます。
 
-![DRM 管理の概要 ](/help/ai-in-aem/agents/governance/assets/drm-management.png)
+![DRM 管理の概要 &#x200B;](/help/ai-in-aem/agents/governance/assets/drm-management.png)
 
 **プロンプトの例：**
 
