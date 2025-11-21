@@ -3,7 +3,7 @@ title: AEM でのデジタルアセット管理の Assets as a Cloud Service の
 description: AEM でのデジタルアセット管理の Assets as a Cloud Service の概要
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '5078'
 ht-degree: 100%
 
@@ -270,11 +270,11 @@ AEM Assets には、適切なアセットをすばやく見つけるのに役立
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ja">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="メタデータ管理のベストプラクティス" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ja">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>メタデータ管理のベストプラクティス</strong>
       </a>
    </div>
@@ -912,4 +912,4 @@ DAM ライブラリ担当者、開発者およびスーパーユーザーは、�
 
 ## AEM の AI アシスタント
 
-[前提条件の条件を満たした](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)お客様の組織では、AEM の AI アシスタントをユーザーが使用できます。[AEM の AI アシスタント](/help/implementing/cloud-manager/ai-assistant-in-aem.md)を参照してください。
+[前提条件の基準を満たした](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)お客様の組織内のユーザーは、AEM の AI アシスタントを使用できます。[AEM の AI アシスタント](/help/implementing/cloud-manager/ai-assistant-in-aem.md)を参照してください。

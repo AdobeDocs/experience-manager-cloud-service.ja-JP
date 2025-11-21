@@ -17,7 +17,7 @@ AI は、Adobe Experience Manager as a Cloud Serviceの不可欠な構成要素�
 
 ## AI アシスタント {#ai-assistant}
 
-Adobe Experience Managerの [AI アシスタント &#x200B;](/help/implementing/cloud-manager/ai-assistant-in-aem.md) は、AEM関連のクエリに対する回答の検索を合理化するように設計された対話型インターフェイスを提供します。
+Adobe Experience Managerの [AI アシスタント ](/help/implementing/cloud-manager/ai-assistant-in-aem.md) は、AEM関連のクエリに対する回答の検索を合理化するように設計された対話型インターフェイスを提供します。
 
 ## AEMのジェネレーティブ AI {#generative-ai-in-aem}
 

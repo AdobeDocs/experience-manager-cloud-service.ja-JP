@@ -6,7 +6,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1201'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 <div class="version-selector">
   <p><strong>別のバージョンのドキュメントをお探しですか？</strong></p>
   <ul>
-    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html?lang=ja">AEM 6.5 Forms ドキュメント</a></li>
+    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html">AEM 6.5 Forms ドキュメント</a></li>
     <li><strong>AEM Forms as a Cloud Service</strong>（現在）</li>
   </ul>
 </div>
@@ -68,7 +68,7 @@ AEM Forms as a Cloud Service には、次のカテゴリに分類された包括
 
 | 機能 | 説明 |
 |---|---|
-| アダプティブフォーム | Web サイト、アプリ、その他のデジタルチャネルや印刷チャネル向けの、インタラクティブかつ動的で、モバイルデバイスでも使いやすく、データ駆動型のレスポンシブフォームを作成および管理します。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=ja">アダプティブフォームの作成 </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html?lang=ja">アダプティブフォームのスタイル設定</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=ja"> AEM Sites ページへのアダプティブフォームの追加</a></li></ul> |
+| アダプティブフォーム | Web サイト、アプリ、その他のデジタルチャネルや印刷チャネル向けの、インタラクティブかつ動的で、モバイルデバイスでも使いやすく、データ駆動型のレスポンシブフォームを作成および管理します。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=ja">アダプティブフォームの作成 </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html">アダプティブフォームのスタイル設定</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=ja"> AEM Sites ページへのアダプティブフォームの追加</a></li></ul> |
 | Forms 向け Edge Delivery Services | 優れたユーザーエクスペリエンスを備えた高性能フォームを作成および配信します。 <ul><li><a href="/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md">ユニバーサルエディターを使用する WYSIWYG オーサリング</a> - フォームを作成する強力なビジュアルインターフェイス</li><li><a href="/help/edge/docs/forms/create-forms.md">ドキュメントベースのオーサリング</a> - Microsoft Excel やGoogle Sheets などの使い慣れたツールを使用してフォームを作成</li><li>複雑なフォームロジックを作成する高度なルールエディター</li><li>最適化されたフォーム読み込みにより、ほぼ完璧な Google Lighthouse スコアを達成</li><li>最小限の開発時間でより迅速にフォームをデプロイ</li></ul> |
 | 自動フォーム変換サービス | 従来の PDF ベースのフォームを、オンラインで容易に管理および配布できるアダプティブフォームに変換します。 <ul><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=ja">フォームの自動変換サービスの設定</a></li><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ja">PDF forms をアダプティブフォームに変換</a></li></ul> |
 
@@ -78,7 +78,7 @@ AEM Forms as a Cloud Service には、次のカテゴリに分類された包括
 
 | 機能 | 説明 |
 |---|---|
-| 通信 API | RESTful API を使用して、パーソナライズされたデータドリブン型のコミュニケーションの、管理、配信をオンデマンドで、またはスケジュールどおりに自動化します。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja#document-generation">パーソナライズされたコミュニケーションの生成</a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja#document-manipulation">PDF ドキュメントの組み立てまたは分解</a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja&lang-ja#convert-to-and-validate-pdf%2Fa-compliant-documents">PDF/A 準拠ドキュメントの作成</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja#">DocAssurance API を使用したドキュメントを保護</a></li></ul> |
+| 通信 API | RESTful API を使用して、パーソナライズされたデータドリブン型のコミュニケーションの、管理、配信をオンデマンドで、またはスケジュールどおりに自動化します。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja#document-generation">パーソナライズされたコミュニケーションの生成</a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja#document-manipulation">PDF ドキュメントの組み立てまたは分解</a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang-ja#convert-to-and-validate-pdf%2Fa-compliant-documents">PDF/A 準拠ドキュメントの作成</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ja#">DocAssurance API を使用したドキュメントを保護</a></li></ul> |
 | レコードのドキュメント | アーカイブとコンプライアンスのために、送信済みフォームのレコードを作成および管理します。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja">長期保管用のフォームのレコードの作成</a></li><li>カスタム機能を実現するサーバーサイド拡張機能</li><li>改ざん防止アーカイブのためのレコードのドキュメント機能</li></ul> |
 
 ### ワークフローとプロセスの自動化 {#workflow}
@@ -103,7 +103,7 @@ AEM Forms as a Cloud Service には、次のカテゴリに分類された包括
 
 ## AEM の AI アシスタント
 
-[前提条件の条件を満たした](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)お客様の組織では、AEM の AI アシスタントをユーザーが使用できます。[AEM の AI アシスタント](/help/implementing/cloud-manager/ai-assistant-in-aem.md)を参照してください。
+[前提条件の基準を満たした](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)お客様の組織内のユーザーは、AEM の AI アシスタントを使用できます。[AEM の AI アシスタント](/help/implementing/cloud-manager/ai-assistant-in-aem.md)を参照してください。
 
 >[!MORELIKETHIS]
 >

@@ -19,7 +19,7 @@ ht-degree: 100%
 
 たとえば、辞書のように単語がアルファベット順に並んでいれば、無作為に散らばっている場合よりも見つけやすくなります。タグ付けは同様の目的で使用されます。ビジネス上の分類に従ってアセットが整理され、最も関連性の高いアセットが検索結果に表示されます。たとえば、自動車メーカーは車の画像にモデル名のタグを付けることで、プロモーションキャンペーンを企画する際に関連する画像だけを表示できます。たとえ「ランナー」や「ランニングシューズ」といったタグ付けであっても、ユーザーは入力ミスやスペルの違い、別の検索語を使うことについて心配する必要はありません。スマートタグがそれらすべてを認識してくれます。
 
-この機能は、バックグラウンドで [Adobe Sensei](https://business.adobe.com/jp/products/sensei/adobe-sensei.html) の人工知能フレームワークを使用し、ビジネス上の分類に関連付けられたテキストと共に、アップロードされたアセットにスマートタグをデフォルトで自動的に適用します。
+この機能は、バックグラウンドで [Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html) の人工知能フレームワークを使用し、ビジネス上の分類に関連付けられたテキストと共に、アップロードされたアセットにスマートタグをデフォルトで自動的に適用します。
 
 ## 前提条件と設定 {#smart-tags-prereqs-config}
 
@@ -87,7 +87,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM でタグ付けなしのアセット {#smart-tag-existing-assets}
 
-DAM 内の既存または古いアセットに対しては、スマートタグが自動的には付けられません。手動でアセットを[再処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ja#adjusting-load)して、スマートタグを生成する必要があります。プロセスが完了したら、フォルダー内の任意のアセットの[!UICONTROL プロパティ]ページに移動します。自動的に追加されたタグは、「[!UICONTROL 基本]」タブの[!UICONTROL スマートタグ]セクションに表示されます。適用されたこれらのスマートタグは、[信頼性スコア](#confidence-score)の降順で並べ替えられます。
+DAM 内の既存または古いアセットに対しては、スマートタグが自動的には付けられません。手動でアセットを[再処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load)して、スマートタグを生成する必要があります。プロセスが完了したら、フォルダー内の任意のアセットの[!UICONTROL プロパティ]ページに移動します。自動的に追加されたタグは、「[!UICONTROL 基本]」タブの[!UICONTROL スマートタグ]セクションに表示されます。適用されたこれらのスマートタグは、[信頼性スコア](#confidence-score)の降順で並べ替えられます。
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
