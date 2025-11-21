@@ -3,9 +3,9 @@ title: フォーム作成スキル
 description: Experience Production エージェントのフォーム作成スキルと、自然言語を使用してゼロからフォームを作成する方法について説明します。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
+source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 * **プレーンテキストプロンプトを使用した新しいフォームの作成**：要件をプレーン言語で送信することで、フォームを作成できます。 エージェントは、自然言語の説明と指定されたテンプレートに基づいて、適切なフォーム構造、フィールドタイプ、オンブランドのエクスペリエンスを自動的に生成します。 この機能により、ブランドとコンプライアンスの標準を維持しながら、フォームの作成を高速化できます。
 
-* **PDFまたは画像を読み込んでフォームに変換**：既存の画像やPDF ドキュメントを読み込んでフォームに変換できます。 エージェントは、ブランドとコンプライアンスの標準を維持しながら、アップロードされたコンテンツを分析して、フィールドタイプの検出、レイアウトの保持、レスポンシブデザインおよび検証ロジックによるフォームの拡張を行います。 サポートされるファイル形式には、PDF ドキュメント、画像（JPG、PNG）、手書きフォーム写真などがあります。
+* **PDF ドキュメントを読み込んでフォームに変換**：既存のPDF ドキュメントを読み込んでフォームに変換できます。 エージェントは、ブランドとコンプライアンスの標準を維持しながら、アップロードされたコンテンツを分析して、フィールドタイプの検出、レイアウトの保持、レスポンシブデザインおよび検証ロジックによるフォームの拡張を行います。
 
   上記の機能を使用すると、作成するフォームのタイプを選択し、コアコンポーネントベースのアダプティブフォームテンプレートまたはEdge Delivery Services ベースのアダプティブフォームテンプレートを指定して、フォームを保存する希望のパスを指定するように求められます。 Edge Delivery Servicesに基づいてフォームを作成する場合は、リポジトリの GitHub URL を指定することもできます。
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 * *https:///aem-author-url/path/to[pdf/file にあるPDF ファイルを読み込んで、クレジットカード申請フォームを作成し ] す*
 * *&#39;<https://github.com/wkndforms/wesecure>&#39;のボイラープレートを使用したフィードバックフォームの作成*
 
-## 次の手順 {#refine-with-forms-experience-builder}
+## フォームを調整 {#refine-with-forms-experience-builder}
 
 AI アシスタントを使用して初期フォーム構造を作成した後、Forms Experience Builder を使用して以下を行うことができます。
 
@@ -52,7 +52,7 @@ AI アシスタントを使用して初期フォーム構造を作成した後�
 
 * **送信を設定**：メール通知、ワークフローとの統合、外部システムへの接続の設定など、フォームデータが送信される場所を設定します。
 
-詳しくは、[Forms Experience Builder ドキュメント &#x200B;](/help/forms/experience-builder/product-overview.md) を参照してください。
+詳しくは、[Forms Experience Builder ドキュメント ](/help/forms/experience-builder/product-overview.md) を参照してください。
 
 <!-- 
 #### Import and convert {#import-and-convert}
