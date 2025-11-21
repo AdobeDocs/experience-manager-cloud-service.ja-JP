@@ -3,9 +3,9 @@ title: 検出エージェントの概要
 description: Discovery Agent を使用して、自然で対話型のプロンプトを通じて、関連性の高いAEM コンテンツをオンデマンドで配信し、クリックのない効率的な検出エクスペリエンスを実現する方法を説明します。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d4b5b0e606e9e680b0950538cce267d094a57d13
+source-git-commit: 25ca9a85b3d3e9917ae144cd906dae7736adb2f0
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1273'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Discovery Agent の主なメリットには、次のようなものがありま�
 >
 >AI によって生成された応答は、不正確であったり、誤解を招く可能性があります。 推奨される修正および回答を再確認してください。
 >
->[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドライン &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) も参照してください。
+>[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドライン ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) も参照してください。
 
 ## スキル {#skills-discovery-agent}
 
@@ -67,7 +67,7 @@ DAM ライブラリ担当者は、組織で設定されたメタデータ標準�
 
 AI アシスタントを介してAEM Business Agents にアクセスできます。 experience.adobe.comにログオンし、検索ボックスを使用して自然言語でプロンプトを指定することで、AI アシスタントの操作を開始できます。
 
-![&#x200B; アクセス探索エージェント &#x200B;](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
+![ アクセス探索エージェント ](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
 
 Discovery Agent にアクセスするための MCP エンドポイントについて詳しくは、Adobe サポートにお問い合わせください。
 
@@ -140,13 +140,13 @@ Discovery Agent を使用すると、自然言語プロンプトを使用して�
 
 ### Assets {#discovery-agent-search-results-assets}
 
-検出エージェントは、各クエリの上位 20 件の結果を関連性の高い順に並べ替えて返し、完全に一致するものが最初に表示されるようにします。 エージェントは、メタデータに基づくクエリとセマンティック検索を組み合わせて、可能性の高い一致のセットを絞り込み、LLM を使用してユーザーの意図に基づいてそれらをランク付けします。 このブレンドされたアプローチは、完全に直接のキーワード一致に依存することなく、正確でコンテキストに応じた結果を提供します。
+検出エージェントは、各クエリの上位の結果を関連性の高い順に並べ替えて返し、完全に一致するものが最初に表示されるようにします。 エージェントは、メタデータに基づくクエリとセマンティック検索を組み合わせて、可能性の高い一致のセットを絞り込み、LLM を使用してユーザーの意図に基づいてそれらをランク付けします。 このブレンドされたアプローチは、完全に直接のキーワード一致に依存することなく、正確でコンテキストに応じた結果を提供します。
 
 各結果には、アセット名と、アセットパス、作成者、作成日、タイトル、説明、形式、最終変更日、最終変更日、ファイルサイズ、寸法、[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md) および関連するタグなどの主要なアセットメタデータが含まれます。 アセットが承認済み状態の場合、結果には [Dynamic Media with OpenAPI URL](/help/assets/dynamic-media-open-apis-overview.md) も含まれます。
 
 アセットパスをクリックすると、AEM内のアセットの場所にシームレスに移動できます。
 
-![Discovery Agent を使用したアセットの検索 &#x200B;](/help/ai-in-aem/agents/discovery/assets/search-results-discovery-agent.png)
+![Discovery Agent を使用したアセットの検索 ](/help/ai-in-aem/agents/discovery/assets/search-results-discovery-agent.png)
 
 これらのアセットの詳細を使用すると、各アセットに移動してこれらの詳細を表示することなく、アセットが要件を満たしているかどうかを迅速に評価できます。
 
@@ -156,9 +156,9 @@ Discovery Agent を使用すると、自然言語プロンプトを使用して�
 
 ### コンテンツフラグメント {#discovery-agent-search-results-content-fragments}
 
-検出エージェントは、コンテンツフラグメントにフルテキスト検索機能を提供し、指定されたプロンプトに最も適した上位 20 件の結果を返します。 各結果には、コンテンツフラグメント名と、主要なメタデータフィールド（コンテンツフラグメントパス、作成者、作成日、バリエーション、最終変更日フィールド、最終変更日フィールドなど）が含まれます。
+検出エージェントは、コンテンツフラグメントにフルテキスト検索機能を提供し、指定されたプロンプトに最も一致する上位の結果を返します。 各結果には、コンテンツフラグメント名と、主要なメタデータフィールド（コンテンツフラグメントパス、作成者、作成日、バリエーション、最終変更日フィールド、最終変更日フィールドなど）が含まれます。
 
-![Discovery Agent を使用したコンテンツフラグメントの検索 &#x200B;](/help/ai-in-aem/agents/discovery/assets/search-content-fragments-discovery-agent.png)
+![Discovery Agent を使用したコンテンツフラグメントの検索 ](/help/ai-in-aem/agents/discovery/assets/search-content-fragments-discovery-agent.png)
 
 コンテンツフラグメントのパスをクリックすると、AEM内のコンテンツフラグメントの場所にシームレスに移動できます。
 
