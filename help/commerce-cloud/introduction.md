@@ -33,13 +33,13 @@ AEM は、顧客の状況と好みに基づいてサポートできます。次�
 
 #### &#x200B;1. Adobe Commerce as a Cloud Service との統合 {#acaacs}
 
-アドビでは、開始点として Edge Delivery と [Adobe Commerce ストアフロント](https://experienceleague.adobe.com/developer/commerce/storefront/)を使用することをお勧めします。ストアフロントには、Adobe Commerce サービスや API が事前に統合されたボイラープレートが付属しており、ストアフロントを迅速に作成するための様々な Commerce ドロップインコンポーネントが用意されています。
+アドビでは、開始点として Edge Delivery と [Adobe Commerce ストアフロント](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)を使用することをお勧めします。ストアフロントには、Adobe Commerce サービスや API が事前に統合されたボイラープレートが付属しており、ストアフロントを迅速に作成するための様々な Commerce ドロップインコンポーネントが用意されています。
 
 最適：Adobe Commerce as a Cloud Service を使用した一般的なストアフロントのエクスペリエンス
 
 #### &#x200B;2. Adobe Commerce Optimizer との統合（サードパーティソリューションの場合） {#aco}
 
-既存のコマースソリューションを統合し、カタログのパフォーマンスを向上させる場合、アドビでは、[Adobe Commerce Optimizer](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview) を最新の統合レイヤーとして使用することをお勧めします。Commerce Optimizer は、カタログおよびマーチャンダイジング用のパフォーマンスの高い SaaS サービスによりコマースソリューションを強化します。Adobe Commerce as a Cloud Service と同様に、[Adobe Commerce ストアフロント](https://experienceleague.adobe.com/developer/commerce/storefront/)を標準で使用できます。
+既存のコマースソリューションを統合し、カタログのパフォーマンスを向上させる場合、アドビでは、[Adobe Commerce Optimizer](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview) を最新の統合レイヤーとして使用することをお勧めします。Commerce Optimizer は、カタログおよびマーチャンダイジング用のパフォーマンスの高い SaaS サービスによりコマースソリューションを強化します。Adobe Commerce as a Cloud Service と同様に、[Adobe Commerce ストアフロント](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)を標準で使用できます。
 
 Salesforce Commerce などの商用コマースソリューションとの統合が可能です。アドビ担当者にお問い合わせください。
 
@@ -61,4 +61,4 @@ Salesforce Commerce などの商用コマースソリューションとの統合
 
 >[!NOTE]
 >
->新しい AEM／Commerce 機能を活用したい既存の顧客は、web サイトを Edge Delivery に移行する必要があります。一般的なパターンとしては、まずページのサブセットのみを Edge Delivery に移動し、Edge Delivery と CIF ページを並行して実行します。また、AEM CIF コンポーネントを新しい [Commerce ドロップインコンポーネント](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)に置き換えて、新しい Commerce 機能を活用することもできます。
+>新しい AEM／Commerce 機能を活用したい既存の顧客は、web サイトを Edge Delivery に移行する必要があります。一般的なパターンとしては、まずページのサブセットのみを Edge Delivery に移動し、Edge Delivery と CIF ページを並行して実行します。また、AEM CIF コンポーネントを新しい [Commerce ドロップインコンポーネント](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=ja)に置き換えて、新しい Commerce 機能を活用することもできます。
