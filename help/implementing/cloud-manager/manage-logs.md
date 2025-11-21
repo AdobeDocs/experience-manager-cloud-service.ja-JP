@@ -99,5 +99,5 @@ Cloud Manager API と Adobe I/O CLI について詳しくは、次の追加の�
 
 AEM as a Cloud Service のログファイルについて詳しくは、次のその他のリソースを参照してください。
 
-* [Cloud 5 AEM ログファイル](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [ログを使用した AEM as a Cloud Service のデバッグ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [Cloud 5 AEM ログファイル](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [ログを使用した AEM as a Cloud Service のデバッグ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
