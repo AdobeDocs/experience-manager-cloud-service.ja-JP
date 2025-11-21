@@ -65,5 +65,5 @@ AI アシスタントまたはExperience Hubを使用して初期のコミュニ
 
 * **マルチチャネル出力**：印刷チャネルと web チャネルの両方のバージョンを設定し、配信形式全体で最適なプレゼンテーションを確保します。
 
-詳しくは、[ インタラクティブ通信ドキュメント ](/help/forms/introduction-to-interactive-communication.md) を参照してください。
+詳しくは、[&#x200B; インタラクティブ通信ドキュメント &#x200B;](/help/forms/introduction-to-interactive-communication.md) を参照してください。
 
