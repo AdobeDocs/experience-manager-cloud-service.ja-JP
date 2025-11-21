@@ -1,40 +1,51 @@
 ---
 title: AEM as a Cloud Serviceの AI
 description: Adobe Experience Manager as a Cloud Service の AI について
-feature: Generative AI, AI Assistant, AI Tools
+feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 016d0f155278d6bde5dd09175ec179b10e6acb75
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 82%
+source-wordcount: '440'
+ht-degree: 50%
 
 ---
 
+
 # AEM as a Cloud Serviceの AI {#ai-in-aem-as-a-cloud-service}
 
-AI は、Adobe Experience Manager as a Cloud Serviceの不可欠な構成要素であり、ユーザーによる情報検索やエクスペリエンス生成をサポートするために使用されています。
+人工知能（AI）は、Adobe Experience Manager as a Cloud Serviceに不可欠な要素であり、ユーザーによる情報検索やエクスペリエンス生成をサポートします。
 
 ## AI アシスタント {#ai-assistant}
 
-Adobe Experience Managerの [AI アシスタント &#x200B;](/help/implementing/cloud-manager/ai-assistant-in-aem.md) は、AEM関連のクエリに対する回答の検索を合理化するように設計された対話型インターフェイスを提供します。
+Adobe Experience Managerの [AI アシスタント ](/help/implementing/cloud-manager/ai-assistant-in-aem.md) は、AEM関連のクエリに対する回答の検索を合理化するように設計された対話型インターフェイスを提供します。
+
+## AEMの Agentic AI {#agentic-ai-in-aem}
+
+AEMは、コンテンツの作成を迅速化し、変更を自動的に調整するために、次のような幅広い [ ビジネスエージェント ](/help/ai-in-aem/agents/overview.md) を提供します。
+
+* [ 製造販売業者 ](/help/ai-in-aem/agents/production/overview.md)
+* [コンテンツ最適化エージェント](/help/ai-in-aem/agents/content-optimization/using.md)
+* [探索エージェント](/help/ai-in-aem/agents/discovery/using.md)
+* [開発エージェント](/help/ai-in-aem/agents/development/overview.md)
+* [ガバナンスエージェント](/help/ai-in-aem/agents/governance/overview.md)
 
 ## AEMのジェネレーティブ AI {#generative-ai-in-aem}
 
 Adobe Experience Manager（AEM）as a Cloud Service の Adobe生成 AI を使用すると、編集インターフェイス内でコピーと画像生成の両方を行い、高パフォーマンスのエクスペリエンスを作成できます。生成 AI を使用すると、次のコンテンツを自律的に作成できます。
 
-* ブランド対応 – ブランドのトーンオブボイス、スタイルガイドのライン、その他の特定の要件を組み込んだコンテンツを作成します。
-* オーディエンス別にパーソナライズ – 詳細なコンテンツパフォーマンスインサイトを活用して、すべてのチャネルをまたいであらゆるペルソナ向けにコンテンツを調整できます。
-* 地域固有 – 翻訳の範囲を超え、地域の環境設定や行動パターンに基づいてコンテンツを適応させます。
-* 継続的な最適化 – 実験を行い、どのバリエーションのパフォーマンスが最も高いかを判断し、インサイトを今後の AI 生成コンテンツの改善に役立てます。
+* **ブランド対応** – 声のブランドトーン、スタイルガイドライン、その他の特定の要件を組み込んだコンテンツを作成します。
+* **オーディエンス別にパーソナライズ** – 詳細なコンテンツパフォーマンスインサイトを活用して、すべてのチャネルのペルソナに合わせてコンテンツをカスタマイズします。
+* **地域固有** – 翻訳だけでなく、地域の環境設定や行動パターンに基づいてコンテンツを適応させます。
+* **継続的に最適化** – 実験を実行して、どのバリエーションが最もパフォーマンスが高いのかを判断し、インサイトを使用して将来の AI 生成コンテンツを改善します。
 
 AEM 全体における生成 AI の使用用途は、以下のとおりです。
 
 * [バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)
 
-  「バリエーションを生成」では、生成 AI（人工知能）を使用して、入力に基づいてコンテンツのバリエーションを作成します。バリエーションを作成したら、そのコンテンツを Web サイトで使用することや、Edge Delivery Services の実験機能を使用してその成功を測定することもできます。
+  バリエーションを生成は、生成 AI を使用して、入力に基づいてコンテンツのバリエーションを作成します。 バリエーションを作成した後、Web サイトでコンテンツを使用できます。また、Edge Delivery Servicesの実験機能を使用して、コンテンツの成功を測定することもできます。
 
-   * 以前のバージョンの[バリエーションを生成](/help/generative-ai/generate-variations.md)
+   * [ 以前のバージョンのバリエーションを生成 ](/help/generative-ai/generate-variations.md) エディター以外では、引き続き使用できます。
 
      >[!NOTE]
      >

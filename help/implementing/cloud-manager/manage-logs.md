@@ -5,10 +5,10 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2c863e0cfad3211e811665a5169def7705e8b907
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 92%
+source-wordcount: '344'
+ht-degree: 89%
 
 ---
 
@@ -21,9 +21,7 @@ AEM as a Cloud Service での開発プロセスを支援するために、ログ
 
 ログは 7 日間保持されます。
 
-## ログのダウンロード {#download-logs}
-
-ログをダウンロードするには、次の手順を実行します。
+## ログをダウンロード {#download-logs}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
@@ -39,7 +37,7 @@ AEM as a Cloud Service での開発プロセスを支援するために、ログ
 
    ![ログをダウンロードダイアログ](assets/download-preview.png)
 
-   [&#x200B; 追加の公開地域 &#x200B;](/help/operations/additional-publish-regions.md) が環境で有効になっている場合は、次に示すように、各地域を選択し、そのログを個別にダウンロードできます。
+   [ 追加の公開地域 ](/help/operations/additional-publish-regions.md) が環境で有効になっている場合は、次に示すように、各地域を選択し、そのログを個別にダウンロードできます。
 
    ![その他の公開地域についてはログをダウンロード](assets/download-publish-region-logs.png)
 
@@ -49,7 +47,7 @@ AEM as a Cloud Service での開発プロセスを支援するために、ログ
 
 ![環境画面からのログ](assets/download-logs.png)
 
-## API を介したログ {#logs-through-api}
+## API を介したログの入手 {#logs-through-api}
 
 UI でログをダウンロードする以外に、API やコマンドラインインターフェイスを介してログを入手することもできます。
 
@@ -101,5 +99,5 @@ Cloud Manager API と Adobe I/O CLI について詳しくは、次の追加の�
 
 AEM as a Cloud Service のログファイルについて詳しくは、次のその他のリソースを参照してください。
 
-* [Cloud 5 AEM ログファイル](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [ログを使用した AEM as a Cloud Service のデバッグ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [Cloud 5 AEM ログファイル](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [ログを使用した AEM as a Cloud Service のデバッグ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
