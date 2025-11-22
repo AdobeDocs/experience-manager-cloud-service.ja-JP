@@ -70,4 +70,4 @@ AI アシスタントを使用して最初のコミュニケーション構造�
 * *ポリシー番号フィールドの中央への配置を更新*
 * *利用条件セクションの行間を 1.5 に変更する*
 
-インタラクティブ通信エディターの機能について詳しくは、[ インタラクティブ通信ドキュメント ](/help/forms/introduction-to-interactive-communication.md) を参照してください。
+インタラクティブ通信エディターの機能について詳しくは、[&#x200B; インタラクティブ通信ドキュメント &#x200B;](/help/forms/introduction-to-interactive-communication.md) を参照してください。
