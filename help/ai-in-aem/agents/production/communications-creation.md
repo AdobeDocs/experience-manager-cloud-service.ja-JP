@@ -3,15 +3,19 @@ title: コミュニケーション作成スキル
 description: Experience Production Agent のコミュニケーション作成スキルと、自然言語を使用してインタラクティブなコミュニケーションを作成する方法について説明します。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
+source-git-commit: dab727f81a8863ca82c7c531e65c365b29fd5c23
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
 
 # コミュニケーション作成スキル {#ic-creation-skill}
+
+>[!NOTE]
+>
+> コミュニケーション作成スキルは、現在アルファ版です。 参加をご希望の場合は、公式メールアドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) までリクエストを送信してください。
 
 インタラクティブ通信は、アカウント明細書、ポリシードキュメント、請求書、ウェルカムキット、特典通知など、ビジネス上の通信向けに設計された、パーソナライズされたデータ駆動型ドキュメントです。 ユーザーから入力を収集するフォームとは異なり、インタラクティブ通信は、受信者固有の動的なコンテンツを含む出力ドキュメントを生成します。
 
@@ -39,7 +43,9 @@ ht-degree: 0%
 * *https://[aem-author-url/path/to/image]file にある画像ファイルからの通信を作成します*
 * https://[aem-author-url/path/to/pdf]file にあるPDF ファイルを使用してレターを作成します。
 
+
 ## コミュニケーションを調整 {#refine-with-ic-editor}
+
 
 AI アシスタントを使用して最初のコミュニケーション構造を作成した後、インタラクティブ通信エディターを使用してドキュメントを調整および拡張できます。 インタラクティブ通信エディターでは、自然言語でプロンプトを表示し、次の操作を行うことができます。
 
@@ -64,5 +70,4 @@ AI アシスタントを使用して最初のコミュニケーション構造�
 * *ポリシー番号フィールドの中央への配置を更新*
 * *利用条件セクションの行間を 1.5 に変更する*
 
-インタラクティブ通信エディターの機能について詳しくは、[&#x200B; インタラクティブ通信ドキュメント &#x200B;](/help/forms/introduction-to-interactive-communication.md) を参照してください。
-
+インタラクティブ通信エディターの機能について詳しくは、[ インタラクティブ通信ドキュメント ](/help/forms/introduction-to-interactive-communication.md) を参照してください。
