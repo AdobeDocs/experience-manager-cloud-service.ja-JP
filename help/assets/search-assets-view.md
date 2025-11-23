@@ -4,10 +4,10 @@ description: 詳しくは、AEM Assets ビューでアセットを検索およ�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
+source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 91%
+source-wordcount: '1938'
+ht-degree: 89%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 91%
 
 ## 検索結果のフィルタリング {#refine-search-results}
 
-複数のフィルターを適用することで、検索結果を絞り込み、関連するアセットを見つけることができます。 管理者が設定するこれらのフィルターは、ファイル、フォルダー、コレクションに基づいています。 [&#x200B; 検索フィルターのカスタマイズ &#x200B;](custom-search-filters.md) を参照してください。
+複数のフィルターを適用することで、検索結果を絞り込み、関連するアセットを見つけることができます。 管理者が設定するこれらのフィルターは、ファイル、フォルダー、コレクションに基づいています。 [ 検索フィルターのカスタマイズ ](custom-search-filters.md) を参照してください。
 
 ![検索フィルター](assets/filters-panel.gif)
 
@@ -145,6 +145,19 @@ AI 検索は、キーワードの完全一致に依存するのではなく、�
 同様に、このプロンプトをスペイン語で指定したり、`Woman` を `Wman` とスペルミスしたりしても、同じ結果が得られます。
 
 ![Assets ビューでのセマンティック検索](assets/semantic-search.png)
+
+### Assets ビューでの AI 検索の有効化または無効化 {#enable-disable-ai-search}
+
+AI 検索を有効または無効にするには、次の手順を実行します。
+
+1. **[!UICONTROL 設定]**/**[!UICONTROL 一般設定]** に移動し、「**[!UICONTROL 検索]**」タブを選択します。
+
+1. 「**[!UICONTROL 検索]**」セクションで、「**[!UICONTROL AI 検索]**」を選択して AI 検索を有効にするか、「**[!UICONTROL キーワード]**」を選択して無効にします。
+
+   ![Assets ビューでのセマンティック検索](/help/assets/assets/enable-disable-ai-search.png)
+
+1. 「**[!UICONTROL 保存]**」をクリックします。
+
 
 ## [!DNL Adobe Firefly] を使用したアセット検索 {#search-firefly}
 
@@ -373,7 +386,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」 ![ページを編集](assets/do-not-localize/edit-page.png) または「[!UICONTROL イシューを記録]」 ![GitHub イシューを作成](assets/do-not-localize/github-issue.png) を使用してドキュメントのフィードバックを提供する。
 
-* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&lang=ja#support)に問い合わせる
 
 
 

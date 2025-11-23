@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
+source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
 workflow-type: tm+mt
-source-wordcount: '6089'
-ht-degree: 97%
+source-wordcount: '5969'
+ht-degree: 96%
 
 ---
 
@@ -53,9 +53,9 @@ AEM は次のユースケースをサポートしています。この記事で�
 ![Experience Manager Assets 検索結果インターフェイスについて](assets/aem-search-interface.png)
 *図：[!DNL Experience Manager Assets] 検索結果インターフェイスについて理解する。*
 
-**A：**&#x200B;検索をスマートコレクションとして保存。
-**B：**&#x200B;検索結果を絞り込むフィルターまたは述語。
-**C：**&#x200B;ファイル、フォルダー、またはその両方を表示。
+**A：**検索をスマートコレクションとして保存。
+**B：**検索結果を絞り込むフィルターまたは述語。
+**C：**ファイル、フォルダー、またはその両方を表示。
 **D.** 検索場所は DAM です。
 **E.** 保存済みの検索結果にアクセスします。
 **F.** 「フィルター」をクリックして、左側のパネルを開閉します。
@@ -147,9 +147,9 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 1. 「**[!UICONTROL 昇格を検索]**」ボックスで、画像検索時の強化の対象となるキーワードを指定し、「**[!UICONTROL 追加]**」をクリックします。同じ方法で複数のキーワードを指定できます。
 1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。指定したキーワードに対して昇格したアセットが、検索結果の上位に表示されます。
 
-ターゲットを絞ったキーワードの検索結果で一部のアセットのランクを上げることで、この機能をうまく利用できます。以下の例（ビデオ）を参照してください。詳しくは、「[&#x200B; での検索](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ja)」を参照してください。 [!DNL Experience Manager]
+ターゲットを絞ったキーワードの検索結果で一部のアセットのランクを上げることで、この機能をうまく利用できます。以下の例（ビデオ）を参照してください。詳しくは、「[ での検索](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ja)」を参照してください。 [!DNL Experience Manager]
 
->[!VIDEO](https://video.tv.adobe.com/v/3410338/?captions=jpn&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *ビデオ：検索結果のランク付けの方法とランクへの影響について*
 
@@ -261,7 +261,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### [!DNL Adobe Stock] 画像の検索 {#adobe-stock1}
 
-[!DNL Experience Manager] のユーザーインターフェイス内から Adobe Stock アセットを検索し、必要なアセットのライセンスを取得できます。オムニサーチフィールドに「`Location: Adobe Stock`」を追加します。また、**[!UICONTROL フィルター]**&#x200B;パネルを使用して、ライセンス取得済みまたはライセンス未取得のアセットをすべて検索したり、Adobe Stock ファイル番号を使用して特定のアセットを検索したりすることもできます。「[&#x200B; [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage) の  [!DNL Adobe Stock]  画像の管理」を参照してください。
+[!DNL Experience Manager] のユーザーインターフェイス内から Adobe Stock アセットを検索し、必要なアセットのライセンスを取得できます。オムニサーチフィールドに「`Location: Adobe Stock`」を追加します。また、**[!UICONTROL フィルター]**&#x200B;パネルを使用して、ライセンス取得済みまたはライセンス未取得のアセットをすべて検索したり、Adobe Stock ファイル番号を使用して特定のアセットを検索したりすることもできます。「[ [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage) の  [!DNL Adobe Stock]  画像の管理」を参照してください。
 
 ### [!DNL Dynamic Media] アセットの検索  {#search-dynamic-media-assets}
 
@@ -400,44 +400,23 @@ AI 検索は、キーワードの完全一致に依存するのではなく、�
 同様に、このプロンプトをスペイン語で指定したり、`Woman` を `Wman` とスペルミスしたりしても、同じ結果が得られます。
 
 
+### 管理者ビューで AI 検索を有効または無効にする {#enable-disable-ai-search}
+
+管理者ビューで AI 検索を有効または無効にするには、次の手順を実行します。
+
+1. **[!UICONTROL ツール]** //**[!UICONTROL Assets]** //**[!UICONTROL Assets設定]** //**[!UICONTROL Assets オムニサーチ設定]** に移動します。
+
+1. 「**[!UICONTROL 検索]**」セクションで、「**[!UICONTROL AI 検索]**」を選択して AI 検索を有効にするか、「**[!UICONTROL キーワード]**」を選択して無効にします。
+
+   ![AI 検索を有効/無効にする ](/help/assets/assets/enable-ai-search-admin-view.png)
+
+1. 「**[!UICONTROL 保存]**」をクリックします。
+
 ## 検索機能に関連した設定タスクと管理タスク {#configadmin}
 
 ### 検索インデックスの設定 {#searchindex}
 
 アセットの検出は、メタデータを含む DAM コンテンツのインデックス作成に依存します。迅速で正確なアセット検出は、最適化されたインデックス作成と適切な設定に依存します。詳しくは、[インデックス作成](/help/operations/indexing.md)を参照してください。
-
-### ビジュアル検索または類似性検索 {#configvisualsearch}
-
-ビジュアル検索では、スマートタグを使用します。スマートタグ機能を設定したら、次の手順に従います。
-
-1. [!DNL Experience Manager] CRXDE の `/oak:index/lucene` ノードで、次のプロパティと値を追加し、変更を保存します。
-
-   * 値が `10` の `Double` 型の `costPerEntry` プロパティ。
-
-   * 値が `2` の `Double` 型の `costPerExecution` プロパティ。
-
-   * 値が `true` の `Boolean` 型の `refresh` プロパティ。
-
-   この設定を使用すると、適切なインデックスから検索できます。
-
-1. Lucene インデックスを作成するには、CRXDE の `/oak:index/damAssetLucene/indexRules/dam:Asset/properties` で、`nt-unstructured` 型の名前が `imageFeatures` のノードを作成します。`imageFeatures` ノードで、
-
-   * 値が `jcr:content/metadata/imageFeatures/haystack0` の `String` 型の `name` プロパティを追加します。
-
-   * 値が `true` の `Boolean` 型の `nodeScopeIndex` プロパティを追加します。
-
-   * 値が `true` の `Boolean` 型の `propertyIndex` プロパティを追加します。
-
-   * 値が `true` の `Boolean` 型の `useInSimilarity` プロパティを追加します。
-
-   変更を保存します。
-
-1. `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` にアクセスして、値が `true` の `Boolean` 型の `similarityTags` プロパティを追加します。
-1. スマートタグを [!DNL Experience Manager] リポジトリーのアセットに適用します。詳しくは、 [スマートタグの設定方法](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=ja#configuring)を参照してください。
-1. CRXDE の `/oak-index/damAssetLucene` ノードで、`reindex` プロパティを `true` に設定します。変更を保存します。
-1. （オプション）検索フォームをカスタマイズしている場合は、 `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` ノードから `/conf/global/settings/dam/search/facets/assets/jcr:content/items` へコピーします。変更を保存します。
-
-関連情報については、 [Experience Manager のスマートタグについて](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=ja)および[スマートタグの管理方法](/help/assets/smart-tags.md)を参照してください。
 
 ### 必須メタデータ {#mandatorymetadata}
 
