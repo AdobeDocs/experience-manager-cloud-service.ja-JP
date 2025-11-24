@@ -67,7 +67,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 * ![&#x200B; メニューアイコンを表示 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) （サイドメニューの表示/非表示）を使用すると、個々のプログラムの特定の部分に移動できる様々なタブにアクセスできます。 または、コンテキストに応じて[ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md)と&#x200B;**[マイプログラム](#my-programs-console)**&#x200B;コンソールを切り替えることもできます。
 * ![&#x200B; ベルアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) （[&#x200B; 通知 &#x200B;](/help/implementing/cloud-manager/notifications.md)）を使用すると、通知やお知らせなどにアクセスできます。
 
-Experience Platformの上部ナビゲーションバーについて詳しくは、[Adobe Experience Platform UI ガイド &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar) を参照してください。
+Experience Platformの上部ナビゲーションバーについて詳しくは、[Adobe Experience Platform UI ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar) を参照してください。
 
 #### プログラムツールバー {#program-toolbar}
 
