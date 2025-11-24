@@ -3,9 +3,9 @@ title: Experience Production Agent の概要
 description: AEMの Experience Production Agent を使用して、コンテンツの作成を高速化し、変更を自動的に調整する方法を説明します。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8cd524891df550913a734a9355c1012dc11adf5b
+source-git-commit: c3757aff37a9896a7aaaa91a2d3a352a9f9e96d2
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '352'
 ht-degree: 3%
 
 ---
@@ -28,19 +28,19 @@ Experience Production Agent は、大量のタスクと手間を自動化しま�
 >
 >AI によって生成された応答は、不正確であったり、誤解を招く可能性があります。 推奨される修正および回答を再確認してください。
 >
->[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドライン &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) も参照してください。
+>[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドライン ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) も参照してください。
 
 ### コンテンツ更新 {#content-update}
 
-[&#x200B; コンテンツ更新 &#x200B;](/help/ai-in-aem/agents/production/content-update.md) は、コンテンツフラグメント、ページ、フォーム、アセットなど、CMS全体の既存のコンテンツを簡単に更新できます。 エージェントは、コンテンツ要素の更新、削除、置換、追加などのアクションを実行して、エクスペリエンスを正確かつ最新の状態に保つことができます。 入力は自然言語による説明にすることができます。Jira PDF やスクリーンショットで使用する場合は、入力も指定できます。
+[ コンテンツ更新 ](/help/ai-in-aem/agents/production/content-update.md) は、コンテンツフラグメント、ページ、フォーム、アセットなど、CMS全体の既存のコンテンツを簡単に更新できます。 エージェントは、コンテンツ要素の更新、削除、置換、追加などのアクションを実行して、エクスペリエンスを正確かつ最新の状態に保つことができます。 入力は自然言語による説明にすることができます。Jira PDF やスクリーンショットで使用する場合は、入力も指定できます。
 
 ### フォームの作成 {#form-creation}
 
-[&#x200B; フォーム作成 &#x200B;](/help/ai-in-aem/agents/production/form-creation.md) スキルを使用すると、開発チームや IT チームに依存することなく、自然言語プロンプトを通じてアダプティブフォームを作成できます。 この機能は、ブランドの一貫性を維持しながらフォームの開発を促進し、ビジネスユーザーが技術的な深い知識がなくてもフォームを作成できるようにします。
+[ フォーム作成 ](/help/ai-in-aem/agents/production/form-creation.md) スキルを使用すると、開発チームや IT チームに依存することなく、自然言語プロンプトを通じてアダプティブフォームを作成できます。 この機能は、ブランドの一貫性を維持しながらフォームの開発を促進し、ビジネスユーザーが技術的な深い知識がなくてもフォームを作成できるようにします。
 
 ### 通信の作成 {#communications-creation}
 
-[&#x200B; コミュニケーションの作成 &#x200B;](/help/ai-in-aem/agents/production/communications-creation.md) スキルにより、ビジネスユーザーは、パーソナライズされたデータ駆動型の通信を大規模に作成できます。 アカウント明細書や政策文書から請求書やウェルカムキットまで、エージェントは自然言語要件を専門的なコミュニケーションに変換します。
+[ コミュニケーションの作成 ](/help/ai-in-aem/agents/production/communications-creation.md) スキルにより、ビジネスユーザーは、パーソナライズされたデータ駆動型の通信を大規模に作成できます。 アカウント明細書や政策文書から請求書やウェルカムキットまで、エージェントは自然言語要件を専門的なコミュニケーションに変換します。
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Experience Production Agent は、大量のタスクと手間を自動化しま�
 
 ### サイト移行 {#site-migration}
 
-[&#x200B; サイト移行 &#x200B;](/help/ai-in-aem/agents/production/site-migration.md) は、AEM以外のサイトをAEM（エクスペリエンス配信サービス）環境にシームレスに移行し、パフォーマンスが高く、準拠し、エージェントに対応していることを確認します。 エージェントにより、セットアップと変換が合理化され、手作業や価値創出までの時間が削減されます。
+[ サイト移行 ](/help/ai-in-aem/agents/production/site-migration.md) は、AEM以外のサイトをAEM（エクスペリエンス配信サービス）環境にシームレスに移行し、パフォーマンスが高く、準拠し、エージェントに対応していることを確認します。 エージェントにより、セットアップと変換が合理化され、手作業や価値創出までの時間が削減されます。
 
 担当者は、他の担当者のスキルと連携できるはずです。次に例を示します。
 
@@ -62,28 +62,3 @@ Experience Production Agent をアクティブ化してアクセスできるよ�
 
 * `experience-production-agent@adobe.com`
 * または、アカウントチームにお問い合わせください
-
-プロセスを迅速に実行するには、次の情報を提供すると役立ちます。
-
-* AEM as a Cloud Service用
-   * 以下を指定する必要があります。
-      * 組織 ID
-      * `product_id`
-      * `profile_id`
-
-   * これらの値は、次の手順を使用して確認できます。
-      * 管理者が <https://adminconsole.adobe.com/> にアクセスする必要があります
-      * **Adobe Experience Manager as a Cloud Service** を選択
-      * 適切なAEM インスタンスを選択します
-      * 対象のコンテンツの読み取りおよび書き込み操作を許可するプロファイルを選択してください
-      * ブラウザー URL を取得します
-      * URL から `product_id` と `profile_id` を抽出します。
-例えば、<https://adminconsole.adobe.com/products/profiles/users> のように指定します。
-
-* Edge Delivery ドキュメントのオーサリング
-   * Adobe チームに次の情報を提供します。
-      * 関連するドメイン
-      * 関連する Github 情報：
-         * 組織
-         * リポジトリ
-         * ブランチ
