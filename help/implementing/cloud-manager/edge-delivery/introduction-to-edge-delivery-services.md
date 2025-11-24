@@ -4,7 +4,7 @@ description: Edge Delivery Services を使用して Cloud Manager プロジェ�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 93%
@@ -73,7 +73,7 @@ Edge Delivery Services は、プロジェクトの開始方法やサイトを作
 
 Cloud Manager の **Edge Delivery の TODO リスト**&#x200B;は、オンボーディング、Edge Delivery サイトの管理から[運用開始](/help/journey-onboarding/go-live-checklist.md)までガイドすることを目的としたオンボーディングタスクチェックリストです。
 
-![Cloud Manager の Edge Delivery サイトの TODO リスト。](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Cloud Manager の Edge Delivery サイトの TODO リスト](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | タスク | 説明 |
 | --- | --- | --- |
@@ -87,7 +87,7 @@ Cloud Manager の **Edge Delivery の TODO リスト**&#x200B;は、オンボー
 | 8 | プッシュ検証を設定 | [Edge Delivery サイト用のプッシュ検証の設定](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)を参照してください。 |
 | 9 | 運用開始 | [運用開始チェックリスト](https://www.aem.live/docs/go-live-checklist)を参照してください。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441562?captions=jpn&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## サポートチケットのログ {#eds-support-ticket}
 

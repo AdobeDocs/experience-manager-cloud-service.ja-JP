@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
-source-wordcount: '1547'
-ht-degree: 100%
+source-wordcount: '1544'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager のビルド環境と、コードを作成およびテストする
 
 >[!TIP]
 >
->このドキュメントでは、AEM as a Cloud Service プロジェクトを開発する Cloud Manager のビルド環境について説明します。コンテンツオーサリング用の AEM as a Cloud Service でサポートされているクライアントプラットフォームについて詳しくは、[サポートされているクライアントプラットフォーム](/help/overview/supported-platforms.md)ドキュメントを参照してください。
+>このドキュメントでは、AEM as a Cloud Service プロジェクトを開発する Cloud Manager のビルド環境について説明します。コンテンツオーサリング用にAEM as a Cloud Serviceでサポートされているクライアントプラットフォームについて詳しくは、[ サポートされているクライアントプラットフォーム ](/help/overview/supported-platforms.md) を参照してください。
 
 ## ビルド環境の詳細 {#build-environment-details}
 
