@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fb4f5a92ac0ef14d9e5bde2155deb702800e2e81
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 100%
+source-wordcount: '1263'
+ht-degree: 91%
 
 ---
 
@@ -154,11 +154,17 @@ SSL 証明書ファイルを Cloud Manager でインストールするには、S
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
-## インストールする SSL 証明書の数の制限 {#limitations}
+## 制限事項 {#limitations}
+
+### インストールされた SSL 証明書の数 {#number-installed-ssl-certs}
 
 Cloud Manager では、常に最大 70 個のインストールされた証明書をサポートします。これらの証明書は、プログラム全体の 1 つ以上の環境に関連付けることができ、期限切れの証明書も含むことができます。
 
 上限に達した場合は、証明書を確認し、期限切れの証明書の削除を検討します。または、1 つの証明書で複数のドメイン（最大 100 個の SAN）をカバーする可能性があるので、複数のドメインを同じ証明書にグループ化します。
+
+### Adobeで管理される DV 証明書のレート制限を暗号化しましょう
+
+Adobeが管理する DV 証明書は、Let’s Encrypt に依存します。 インストールされた証明書のCloud Manager制限に加えて、Let&#39;s Encrypt では独自のレート制限が適用されます。 キーの制限の 1 つは **識別子の正確なセットごとの新しい証明書** です。任意の 7 日間に、同じホスト名のセットに対して最大 5 つの証明書を発行できます。 この制限に達すると、レート制限ウィンドウがリセットされるまで、Cloud Managerには対応する Let’s Encrypt エラーが表示され、そのホスト名セットに対してこれ以上の証明書を作成できません。 最新の値とその他の関連する制限については、[ レート制限を暗号化しましょうドキュメント ](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers) を参照してください。
 
 ## 詳細情報 {#learn-more}
 
