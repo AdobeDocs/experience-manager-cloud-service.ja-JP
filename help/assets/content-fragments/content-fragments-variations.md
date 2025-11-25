@@ -5,10 +5,10 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
-workflow-type: ht
-source-wordcount: '2530'
-ht-degree: 100%
+source-git-commit: 8a8f63758cf216b502d5ee894ff5af7285777889
+workflow-type: tm+mt
+source-wordcount: '2571'
+ht-degree: 98%
 
 ---
 
@@ -444,6 +444,12 @@ ht-degree: 100%
 バリエーションでは、**プライマリ**&#x200B;コンテンツをコピーし、目的に応じて変更を加えることができます（必要な場合）。
 
 **バリエーションを作成するには：**
+
+>[!NOTE]
+>
+>バリエーションにより、オーサー環境と配信時に、コンテンツフラグメントに処理時間も追加されます。 バリエーションの数は管理可能な最小限に抑えることをお勧めします。
+>
+>ベストプラクティスは、コンテンツフラグメントあたり 10 個のバリエーションを超えないようにすることです。
 
 1. フラグメントを開き、サイドパネルが表示されていることを確認します。
 1. サイドパネルのアイコンバーから「**バリエーション**」を選択します。
