@@ -4,10 +4,10 @@ description: ローカル開発用または独自のインフラストラクチ�
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Developer
-source-git-commit: d938abce2b46786343b19113454da1738a824ed0
+source-git-commit: 0df573a3d869f2718983b4e661a86c769b4d3f1a
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 95%
+source-wordcount: '979'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->ローカルユニバーサルエディターサービスは、Edge Delivery Services で AEM オーサリングを使用するプロジェクトには必要なく、サポートされていません。
+>Edge Delivery ServicesでAEM オーサリングを使用するプロジェクトには、ローカルユニバーサルエディターサービスは必要ありません。
 
 ## 概要 {#overview}
 
@@ -161,6 +161,6 @@ Universal Editor Service listening on port 8000 as HTTPS Server
 1. ブラウザーを `https://localhost:8000/ping` で開きます。
 1. [自己署名証明書](#ue-https)に同意するようダイレクトされます。
 1. 自己署名証明書が信頼されると、ページはローカルのユニバーサルエディターサービスを使用して読み込まれます。
-1. ツールバーの [&#x200B; ローカル開発者ログイン &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) をクリックし、ローカルのAEM インスタンスに対して認証を行います。
+1. ツールバーの [ ローカル開発者ログイン ](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) をクリックし、ローカルのAEM インスタンスに対して認証を行います。
 
 ローカルのユニバーサルエディターサービスを使用して、ローカルのAEM テストインスタンス上のページを編集できるようになりました。
