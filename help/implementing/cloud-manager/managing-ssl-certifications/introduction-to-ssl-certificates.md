@@ -164,7 +164,7 @@ Cloud Manager では、常に最大 70 個のインストールされた証明�
 
 ### Adobeで管理される DV 証明書のレート制限を暗号化しましょう
 
-Adobeが管理する DV 証明書は、Let’s Encrypt に依存します。 インストールされた証明書のCloud Manager制限に加えて、Let&#39;s Encrypt では独自のレート制限が適用されます。 キーの制限の 1 つは **識別子の正確なセットごとの新しい証明書** です。任意の 7 日間に、同じホスト名のセットに対して最大 5 つの証明書を発行できます。 この制限に達すると、レート制限ウィンドウがリセットされるまで、Cloud Managerはエラーを表示し、そのホスト名セットに対してこれ以上の証明書を作成できません。 最新の値とその他の関連する制限については、[ レート制限を暗号化しましょうドキュメント ](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers) を参照してください。
+Adobeが管理する DV 証明書は、Let’s Encrypt に依存します。 インストールされた証明書のCloud Manager制限に加えて、Let&#39;s Encrypt では独自のレート制限が適用されます。 キーの制限の 1 つは **識別子の正確なセットごとの新しい証明書** です。任意の 7 日間に、同じホスト名のセットに対して最大 5 つの証明書を発行できます。 この制限に達すると、レート制限ウィンドウがリセットされるまで、Cloud Managerはエラーを表示し、そのホスト名セットに対してこれ以上の証明書を作成できません。 最新の値とその他の関連する制限については、[&#x200B; レート制限を暗号化しましょうドキュメント &#x200B;](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers) を参照してください。
 
 ## 詳細情報 {#learn-more}
 
