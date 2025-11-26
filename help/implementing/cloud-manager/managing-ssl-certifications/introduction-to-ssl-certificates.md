@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fb4f5a92ac0ef14d9e5bde2155deb702800e2e81
+source-git-commit: b94debebf36f379fc2cb2f193a244fe154c77537
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1260'
 ht-degree: 91%
 
 ---
@@ -164,7 +164,7 @@ Cloud Manager では、常に最大 70 個のインストールされた証明�
 
 ### Adobeで管理される DV 証明書のレート制限を暗号化しましょう
 
-Adobeが管理する DV 証明書は、Let’s Encrypt に依存します。 インストールされた証明書のCloud Manager制限に加えて、Let&#39;s Encrypt では独自のレート制限が適用されます。 キーの制限の 1 つは **識別子の正確なセットごとの新しい証明書** です。任意の 7 日間に、同じホスト名のセットに対して最大 5 つの証明書を発行できます。 この制限に達すると、レート制限ウィンドウがリセットされるまで、Cloud Managerには対応する Let’s Encrypt エラーが表示され、そのホスト名セットに対してこれ以上の証明書を作成できません。 最新の値とその他の関連する制限については、[&#x200B; レート制限を暗号化しましょうドキュメント &#x200B;](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers) を参照してください。
+Adobeが管理する DV 証明書は、Let’s Encrypt に依存します。 インストールされた証明書のCloud Manager制限に加えて、Let&#39;s Encrypt では独自のレート制限が適用されます。 キーの制限の 1 つは **識別子の正確なセットごとの新しい証明書** です。任意の 7 日間に、同じホスト名のセットに対して最大 5 つの証明書を発行できます。 この制限に達すると、レート制限ウィンドウがリセットされるまで、Cloud Managerはエラーを表示し、そのホスト名セットに対してこれ以上の証明書を作成できません。 最新の値とその他の関連する制限については、[ レート制限を暗号化しましょうドキュメント ](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers) を参照してください。
 
 ## 詳細情報 {#learn-more}
 
