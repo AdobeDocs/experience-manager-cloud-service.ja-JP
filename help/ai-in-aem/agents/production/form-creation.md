@@ -3,9 +3,9 @@ title: フォーム作成スキル
 description: Experience Production エージェントのフォーム作成スキルと、自然言語を使用してゼロからフォームを作成する方法について説明します。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
+source-git-commit: aa8369979c99535f0fd77e6a51af10cc17afd971
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,43 @@ AI アシスタントを使用して初期フォーム構造を作成した後�
 
 * **送信を設定**：メール通知、ワークフローとの統合、外部システムへの接続の設定など、フォームデータが送信される場所を設定します。
 
-詳しくは、[Forms Experience Builder ドキュメント &#x200B;](/help/forms/experience-builder/product-overview.md) を参照してください。
+詳しくは、[Forms Experience Builder ドキュメント ](/help/forms/experience-builder/product-overview.md) を参照してください。
+
+
+## アクティベーション {#activation}
+
+組織の Experience Production Agent を有効にするには、Adobeを通じてアクティベーションを開始する必要があります。 次の方法で通知して、プロセスを開始します。
+
+* 電子メール：`experience-production-agent@adobe.com`
+* または、指定されたAdobe アカウントチームにお問い合わせください。
+
+効率的なオンボーディングエクスペリエンスを実現するために、次の詳細を準備して提供します。
+
+**AEM as a Cloud Service** について、次の識別情報を共有します。
+
+* 組織 ID
+* `product_id`
+* `profile_id`
+
+AEM管理者は、これらを次の方法で見つけることができます。
+
+1. <https://adminconsole.adobe.com/> への移動
+1. **Adobe Experience Manager as a Cloud Service** を選択しています
+1. 環境内で適切なAEM インスタンスを選択する
+1. 関連するコンテンツの読み取り/書き込み権限を持つプロファイルの選択
+1. このページから完全なブラウザー URL をコピー
+1. URL からの `product_id` と `profile_id` の値の抽出\
+   （例：`https://adminconsole.adobe.com/products/profiles/users` などの URL には、これらのパラメーターが含まれます）。
+
+**Edge Delivery ドキュメントオーサリング** の場合は、Adobe チームに次を提供します。
+
+* Edge Delivery Services環境のドメイン
+* 対応する GitHub の詳細：
+   * 組織（Org）
+   * リポジトリ（Repo）
+   * ブランチ
+
+完全で正確な情報を提供することで、アクティベーションプロセスが迅速化され、Experience Production Agent のタイムリーなプロビジョニングが保証されます。
 
 <!-- 
 #### Import and convert {#import-and-convert}

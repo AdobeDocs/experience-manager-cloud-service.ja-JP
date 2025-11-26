@@ -3,9 +3,9 @@ title: コミュニケーション作成スキル
 description: Experience Production Agent のコミュニケーション作成スキルと、自然言語を使用してインタラクティブなコミュニケーションを作成する方法について説明します。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: dab727f81a8863ca82c7c531e65c365b29fd5c23
+source-git-commit: aa8369979c99535f0fd77e6a51af10cc17afd971
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -70,4 +70,40 @@ AI アシスタントを使用して最初のコミュニケーション構造�
 * *ポリシー番号フィールドの中央への配置を更新*
 * *利用条件セクションの行間を 1.5 に変更する*
 
-インタラクティブ通信エディターの機能について詳しくは、[&#x200B; インタラクティブ通信ドキュメント &#x200B;](/help/forms/introduction-to-interactive-communication.md) を参照してください。
+インタラクティブ通信エディターの機能について詳しくは、[ インタラクティブ通信ドキュメント ](/help/forms/introduction-to-interactive-communication.md) を参照してください。
+
+## アクティベーション {#activation}
+
+組織の Experience Production Agent を有効にするには、Adobeを通じてアクティベーションを開始する必要があります。 次の方法で通知して、プロセスを開始します。
+
+* 電子メール：`experience-production-agent@adobe.com`
+* または、指定されたAdobe アカウントチームにお問い合わせください。
+
+効率的なオンボーディングエクスペリエンスを実現するために、次の詳細を準備して提供します。
+
+**AEM as a Cloud Service** について、次の識別情報を共有します。
+
+* 組織 ID
+* `product_id`
+* `profile_id`
+
+AEM管理者は、これらを次の方法で見つけることができます。
+
+1. <https://adminconsole.adobe.com/> への移動
+1. **Adobe Experience Manager as a Cloud Service** を選択しています
+1. 環境内で適切なAEM インスタンスを選択する
+1. 関連するコンテンツの読み取り/書き込み権限を持つプロファイルの選択
+1. このページから完全なブラウザー URL をコピー
+1. URL からの `product_id` と `profile_id` の値の抽出\
+   （例：`https://adminconsole.adobe.com/products/profiles/users` などの URL には、これらのパラメーターが含まれます）。
+
+**Edge Delivery ドキュメントオーサリング** の場合は、Adobe チームに次を提供します。
+
+* Edge Delivery Services環境のドメイン
+* 対応する GitHub の詳細：
+   * 組織（Org）
+   * リポジトリ（Repo）
+   * ブランチ
+
+完全で正確な情報を提供することで、アクティベーションプロセスが迅速化され、Experience Production Agent のタイムリーなプロビジョニングが保証されます。
+
