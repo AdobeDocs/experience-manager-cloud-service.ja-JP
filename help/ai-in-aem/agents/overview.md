@@ -1,19 +1,19 @@
 ---
-title: ビジネスエージェントの概要
-description: コンテンツの作成を加速し、変更を自動的に調整するためにAEMで使用できるビジネスエージェントについて説明します。
+title: AEMのエージェントの概要
+description: コンテンツの作成を高速化し、変更を自動的に調整するためにAEMで使用できるエージェントについて説明します。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: e9aded21b788c94bdfdac699655946e991c9be94
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 
-# AEMのビジネスエージェントの概要 {#business-agents-overview}
+# AEMのエージェントの概要 {#overview-of-agents-in-aem}
 
-これらのビジネスエージェントは、コンテンツの作成を高速化し、変更を自動的に調整するために、Adobe Experience Manager（AEM）as a Cloud Serviceで使用できます。
+これらのエージェントは、コンテンツの作成を高速化し、変更を自動的に調整するために、Adobe Experience Manager（AEM）as a Cloud Serviceで使用できます。
 
 >[!IMPORTANT]
 >
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## コンテンツ最適化エージェント {#content-optimization-agent}
 
-[&#x200B; コンテンツ最適化エージェント &#x200B;](/help/ai-in-aem/agents/content-optimization/using.md) は、自然言語の命令を適用してチャネルに対応するバリエーションを作成することで、ユーザーがアセットを調整および適応する方法を変換します。 エージェントはユーザーの意図を解釈し、複雑な編集タスクを自動的に実行して、新しいレンディションの生成、視覚的なプロパティの調整、背景の変更、特定のデジタルチャネル用のアセットの準備などのタスクを実行します。
+[ コンテンツ最適化エージェント ](/help/ai-in-aem/agents/content-optimization/using.md) は、自然言語の命令を適用してチャネルに対応するバリエーションを作成することで、ユーザーがアセットを調整および適応する方法を変換します。 エージェントはユーザーの意図を解釈し、複雑な編集タスクを自動的に実行して、新しいレンディションの生成、視覚的なプロパティの調整、背景の変更、特定のデジタルチャネル用のアセットの準備などのタスクを実行します。
 
 ## 探索エージェント {#discovery-agent}
 
@@ -40,11 +40,11 @@ ht-degree: 0%
 
 ## 開発エージェント {#development-agent}
 
-[&#x200B; 開発エージェント &#x200B;](/help/ai-in-aem/agents/development/overview.md) は、コードの作成、デバッグ、デプロイメント、最適化を合理化することで、技術的な役割（開発者と管理者）を強化します。
+[ 開発エージェント ](/help/ai-in-aem/agents/development/overview.md) は、コードの作成、デバッグ、デプロイメント、最適化を合理化することで、技術的な役割（開発者と管理者）を強化します。
 
 ## ガバナンスエージェント {#governance-agent}
 
-[&#x200B; ガバナンスエージェント &#x200B;](/help/ai-in-aem/agents/governance/overview.md) は、AEM全体でブランドの整合性とコンプライアンスを保護します。 セキュリティ、規制、ブランドポリシーを適用することにより、エージェントは、すべてのインタラクションとアクティベーションが確立された標準に準拠していることを保証します。
+[ ガバナンスエージェント ](/help/ai-in-aem/agents/governance/overview.md) は、AEM全体でブランドの整合性とコンプライアンスを保護します。 セキュリティ、規制、ブランドポリシーを適用することにより、エージェントは、すべてのインタラクションとアクティベーションが確立された標準に準拠していることを保証します。
 
 ## 制限事項 {#limitations}
 

@@ -3,9 +3,9 @@ title: Content Update Skill
 description: Experience Production Agent のコンテンツ更新スキルの概要と機能について説明します。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8cd524891df550913a734a9355c1012dc11adf5b
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '861'
 ht-degree: 1%
 
 ---
@@ -31,11 +31,11 @@ Experience Production Agent のコンテンツ更新スキルは、コンテン�
 
 ## AI アシスタント {#ai-assistant}
 
-AI アシスタントを介してAEM Business Agents にアクセスできます。
+AI アシスタントを使用して、AEMのエージェントにアクセスできます。
 
 experience.adobe.comから AI アシスタントを開き、`Ask AI Assistant anything` フィールドを使用して自然言語でプロンプトを指定して、操作を開始します。
 
-![&#x200B; アクセス探索エージェント &#x200B;](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
+![ アクセス探索エージェント ](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
 
 ### サンプルプロンプト {#sample-prompts}
 
@@ -107,7 +107,7 @@ Jira でコンテンツ更新スキルを使用すると、編集を自動化す
 
 * 次の画像は、コンテンツ更新スキル用の `process` コマンドをトリガーにする Jira の例を示しています。
 
-  ![&#x200B; エクスペリエンス実稼働エージェントのコンテンツ更新スキルを使用した Jira の例 &#x200B;](assets/content-update-jira-example.png)
+  ![ エクスペリエンス実稼働エージェントのコンテンツ更新スキルを使用した Jira の例 ](assets/content-update-jira-example.png)
 
 ## アクティベーション {#activation}
 
@@ -145,4 +145,4 @@ Experience Production Agent をアクティブ化してアクセスできるよ�
 
 現在、コンテンツアップデーターには次の制限があります。
 
-* ファイルのアップロードは、[Jira](#jira) を操作する際に使用できますが、[AI アシスタント &#x200B;](#ai-assistant) を操作する際にはサポートされません。
+* ファイルのアップロードは、[Jira](#jira) を操作する際に使用できますが、[AI アシスタント ](#ai-assistant) を操作する際にはサポートされません。
