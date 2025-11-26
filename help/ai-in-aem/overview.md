@@ -4,7 +4,7 @@ description: Adobe Experience Manager as a Cloud Service の AI について
 feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
+source-git-commit: 34469549451106c28fc3f95c90a8759b356bdd16
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 50%
@@ -18,15 +18,15 @@ ht-degree: 50%
 
 ## AI アシスタント {#ai-assistant}
 
-Adobe Experience Managerの [AI アシスタント &#x200B;](/help/implementing/cloud-manager/ai-assistant-in-aem.md) は、AEM関連のクエリに対する回答の検索を合理化するように設計された対話型インターフェイスを提供します。
+Adobe Experience Managerの [AI アシスタント ](/help/implementing/cloud-manager/ai-assistant-in-aem.md) は、AEM関連のクエリに対する回答の検索を合理化するように設計された対話型インターフェイスを提供します。
 
 ## AEMの Agentic AI {#agentic-ai-in-aem}
 
-AEMには、コンテンツの作成を高速化し、変更を自動的に調整するための様々な [&#x200B; エージェント &#x200B;](/help/ai-in-aem/agents/overview.md) が用意されています。
+AEMには、コンテンツの作成を高速化し、変更を自動的に調整するための様々な [ エージェント ](/help/ai-in-aem/agents/overview.md) が用意されています。
 
-* [Experience Production エージェント &#x200B;](/help/ai-in-aem/agents/production/overview.md)
-* [コンテンツ最適化エージェント](/help/ai-in-aem/agents/content-optimization/using.md)
-* [探索エージェント](/help/ai-in-aem/agents/discovery/using.md)
+* [Experience Production エージェント ](/help/ai-in-aem/agents/production/overview.md)
+* [コンテンツ最適化エージェント](/help/ai-in-aem/agents/content-optimization/overview.md)
+* [探索エージェント](/help/ai-in-aem/agents/discovery/overview.md)
 * [開発エージェント](/help/ai-in-aem/agents/development/overview.md)
 * [ガバナンスエージェント](/help/ai-in-aem/agents/governance/overview.md)
 
@@ -45,7 +45,7 @@ AEM 全体における生成 AI の使用用途は、以下のとおりです。
 
   バリエーションを生成は、生成 AI を使用して、入力に基づいてコンテンツのバリエーションを作成します。 バリエーションを作成した後、Web サイトでコンテンツを使用できます。また、Edge Delivery Servicesの実験機能を使用して、コンテンツの成功を測定することもできます。
 
-   * [&#x200B; 以前のバージョンのバリエーションを生成 &#x200B;](/help/generative-ai/generate-variations.md) エディター以外では、引き続き使用できます。
+   * [ 以前のバージョンのバリエーションを生成 ](/help/generative-ai/generate-variations.md) エディター以外では、引き続き使用できます。
 
      >[!NOTE]
      >
