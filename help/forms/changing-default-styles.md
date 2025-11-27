@@ -57,4 +57,4 @@ HTML5 フォームは HTML5 機能の使用によりレンダリングされ、�
 
       &lt;link href=&quot;/path/to/stylesheet&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/>
 
-   1.  ファイルを保存します。
+   1. ファイルを保存します。
