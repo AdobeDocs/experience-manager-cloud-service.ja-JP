@@ -19,7 +19,7 @@ ht-degree: 96%
 <span class="preview">HTML5 Forms 機能は、早期アクセスプログラムの一部として提供されています。アクセス権をリクエストするには、公式の（勤務先の）メールアドレスから aem-forms-ea@adobe.com にメールを送信してください。
 </span>
 
-FormBridge は、フォームとのやり取りを可能にするHTML5 Forms Bridge API です。<!--For the FormBridge API reference, see [FormBridge API reference](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis).-->
+FormBridge は、フォームとのやり取りを可能にするHTML5 Forms Bridge API です。<!--For the FormBridge API reference, see [FormBridge API reference](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis).-->
 
 FormBridge API を使用して、HTML ページからフォームフィールドの値を取得または設定し、フォームを送信できます。例えば、API を使用してウィザードのようなエクスペリエンスを作成できます。
 

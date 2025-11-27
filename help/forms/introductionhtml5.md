@@ -20,7 +20,7 @@ ht-degree: 85%
 
 HTML5 forms は、Adobe Experience Manager ソフトウェアの新しい機能で、HTML5 形式の XFA フォームテンプレートをレンダリングできます。 この機能により、XFA ベースの PDF がサポートされていないモバイルデバイスおよびデスクトップブラウザー上のフォームのレンダリングが可能です。HTML5 フォームは、XFA フォームテンプレートの既存の機能をサポートしているだけでなく、モバイルデバイス用に手書き署名などの新しい機能もあります。
 
-HTML5 フォームは、標準の HTML5 構造に基づいてドキュメントを生成します。HTML5 フォームは、HTML5 をサポートする現時点のすべてのブラウザーで表示できます。ブラウザー用の追加のブラウザープラグインをインストールする必要はありません。<!--For more information about supported browsers, see [Supported client platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63).-->
+HTML5 フォームは、標準の HTML5 構造に基づいてドキュメントを生成します。HTML5 フォームは、HTML5 をサポートする現時点のすべてのブラウザーで表示できます。ブラウザー用の追加のブラウザープラグインをインストールする必要はありません。<!--For more information about supported browsers, see [Supported client platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63_jp).-->
 
 ![HTML5 フォームプレビュー](assets/mobile_form_on_an_ipad_date_14.png)
 
