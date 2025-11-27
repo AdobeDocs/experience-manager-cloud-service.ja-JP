@@ -52,7 +52,7 @@ AI アシスタントを使用して初期フォーム構造を作成した後�
 
 * **送信を設定**：メール通知、ワークフローとの統合、外部システムへの接続の設定など、フォームデータが送信される場所を設定します。
 
-詳しくは、[Forms Experience Builder ドキュメント ](/help/forms/experience-builder/product-overview.md) を参照してください。
+詳しくは、[Forms Experience Builder ドキュメント &#x200B;](/help/forms/experience-builder/product-overview.md) を参照してください。
 
 
 ## アクティベーション {#activation}
