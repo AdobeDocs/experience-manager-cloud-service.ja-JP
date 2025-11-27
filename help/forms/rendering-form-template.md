@@ -2,30 +2,29 @@
 title: HTML5 forms 用のフォームテンプレートのレンダリング
 description: HTML5 フォームのプロファイルは、プロファイルレンダーに関連付けられています。プロファイルレンダーは、Forms OSGi サービスを呼び出してフォームの HTML 表現を生成する役割を持つ JSP ページです。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 feature: HTML5 Forms,Mobile Forms
 exl-id: 022b9953-2d64-473f-87b7-aac1602f6a7e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '561'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # HTML5 forms 用のフォームテンプレートのレンダリング {#rendering-form-template-for-html-forms}
 
-<span class="preview"> HTML5 Forms機能は、早期アクセスプログラムの一部として提供されています。 アクセスをリクエストするには、公式（職場）メール ID からaem-forms-ea@adobe.comにメールを送信します。
+<span class="preview">HTML5 Forms 機能は、早期アクセスプログラムの一部として提供されています。アクセス権をリクエストするには、公式の（勤務先の）メールアドレスから aem-forms-ea@adobe.com にメールを送信してください。
 </span>
 
 ## レンダーエンドポイント {#render-endpoint}
 
 HTML5 forms には、フォームテンプレートのモバイルレンダリングを可能にするため、REST エンドポイントとして公開される&#x200B;**プロファイル**&#x200B;の概念があります。これらのプロファイルには関連する&#x200B;**プロファイルレンダラー**&#x200B;があります。それらは Forms OSGi サービスを呼び出すことでフォームの HTML 表現を生成する役割を持つ JSP ページです。プロファイルノードの JCR パスによって、レンダーエンドポイントの URL が決定されます。「default」プロファイルを指すフォームのデフォルトのレンダーエンドポイントは、次のようになります。
 
-https://&lt;*host*>:&lt;*port*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*path of the folder containg form xdp*>&amp;template=&lt;*name of the xdp*>
+https://<*host*>:<*port*>/content/xfaforms/profiles/default.html?contentRoot=<*path of the folder containg form xdp*>&template=<*name of the xdp*>
 
 例：`http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 

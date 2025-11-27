@@ -1,23 +1,21 @@
 ---
 title: XDP フォームの HTML5 プレビューの生成
 description: LiveCycle Designer の「HTML プレビュー」タブを使用すると、ブラウザーでのフォームの表示をプレビューできます。
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '807'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # XDP フォームの HTML5 プレビューの生成{#generate-html-preview-of-an-xdp-form}
 
-<span class="preview"> HTML5 Forms機能は、早期アクセスプログラムの一部として提供されています。 アクセスをリクエストするには、公式（職場）メール ID からaem-forms-ea@adobe.comにメールを送信します。
+<span class="preview">HTML5 Forms 機能は、早期アクセスプログラムの一部として提供されています。アクセス権をリクエストするには、公式の（勤務先の）メールアドレスから aem-forms-ea@adobe.com にメールを送信してください。
 </span>
 
 AEM Forms Designer でフォームをデザインする間、フォームの PDF レンディションをプレビューする他に、HTML5 レンディションをプレビューもできます。「**HTML プレビュー**」タブを使用すると、ブラウザーでのフォームの表示をプレビューできます。
@@ -57,7 +55,7 @@ Designer での XDP フォームの HTML プレビューの生成を有効にす
 
 ### 保護モードの無効化 {#disable-protected-mode}
 
-**保護モード**&#x200B;は、デフォルトで有効になっています。実稼動環境では有効のままにします。開発環境でこのモードを無効にすると、Desinger で HTML5 フォームをプレビューできます。このモードを無効にするには、以下の手順を実行します。
+**保護モード**&#x200B;は、デフォルトで有効になっています。本番環境では有効のままにします。開発環境でこのモードを無効にすると、Desinger で HTML5 フォームをプレビューできます。このモードを無効にするには、以下の手順を実行します。
 
 1. 管理者として AEM Web コンソールにログインします。
 
@@ -90,7 +88,7 @@ Designer での XDP フォームの HTML プレビューの生成を有効にす
    >
    >AEM Forms サーバーが起動および実行されていることを確認してください。HTML プレビューは、プレビューを&#x200B;*生成*&#x200B;するために CRX サーバーに接続します。
 
-   ![AEM Forms Designer のオプション &#x200B;](assets/server_options.png)
+   ![AEM Forms Designer のオプション ](assets/server_options.png)
 
    AEM Forms Designer のオプション
 
@@ -120,9 +118,9 @@ Designer では、サンプル XML データを使用してフォームをプレ
 
 1. **ファイル／フォームのプロパティ**&#x200B;を選択します。
 
-1. 「**プレビュー**」タブをクリックし、「データファイル」ボックスに、テストデータファイルへの完全なパスを入力します。参照ボタンを使用してファイルを指定することもできます。
+2. 「**プレビュー**」タブをクリックし、「データファイル」ボックスに、テストデータファイルへの完全なパスを入力します。参照ボタンを使用してファイルを指定することもできます。
 
-1. 「**OK**」をクリックします。次回に「**HTML プレビュー**」タブでフォームをプレビューするときには、それぞれのオブジェクトにサンプル XML ファイルからのデータ値が表示されます。
+3. 「**OK**」をクリックします。次回に「**HTML プレビュー**」タブでフォームをプレビューするときには、それぞれのオブジェクトにサンプル XML ファイルからのデータ値が表示されます。
 
 ## リポジトリにあるフォームのプレビュー {#html-preview-of-forms-in-forms-manager}
 

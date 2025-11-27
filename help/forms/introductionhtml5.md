@@ -1,28 +1,26 @@
 ---
 title: HTML5 フォームの概要
-description: HTML5 フォームは、HTML5 形式で XFA フォームテンプレートをレンダリングできる Adobe Experience Manager 6.0（AEM 6.0）ソフトウェアの新しい機能です。
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+description: HTML5 forms は、Adobe Experience Manager ソフトウェアの新しい機能で、HTML5 形式の XFA フォームテンプレートをレンダリングできます。
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 92%
+source-wordcount: '416'
+ht-degree: 85%
 
 ---
 
 # HTML5 フォームの概要{#introduction-to-html-forms}
 
-<span class="preview"> HTML5 Forms機能は、早期アクセスプログラムの一部として提供されています。 アクセスをリクエストするには、公式（職場）メール ID からaem-forms-ea@adobe.comにメールを送信します。
+<span class="preview">HTML5 Forms 機能は、早期アクセスプログラムの一部として提供されています。アクセス権をリクエストするには、公式の（勤務先の）メールアドレスから aem-forms-ea@adobe.com にメールを送信してください。
 </span>
 
-HTML5 フォームは、HTML5 形式で XFA フォームテンプレートをレンダリングできる Adobe Experience Manager 6.0（AEM 6.0）ソフトウェアの新しい機能です。この機能により、XFA ベースの PDF がサポートされていないモバイルデバイスおよびデスクトップブラウザー上のフォームのレンダリングが可能です。HTML5 フォームは、XFA フォームテンプレートの既存の機能をサポートしているだけでなく、モバイルデバイス用に手書き署名などの新しい機能もあります。
+HTML5 forms は、Adobe Experience Manager ソフトウェアの新しい機能で、HTML5 形式の XFA フォームテンプレートをレンダリングできます。 この機能により、XFA ベースの PDF がサポートされていないモバイルデバイスおよびデスクトップブラウザー上のフォームのレンダリングが可能です。HTML5 フォームは、XFA フォームテンプレートの既存の機能をサポートしているだけでなく、モバイルデバイス用に手書き署名などの新しい機能もあります。
 
-HTML5 フォームは、標準の HTML5 構造に基づいてドキュメントを生成します。HTML5 フォームは、HTML5 をサポートする現時点のすべてのブラウザーで表示できます。ブラウザーのための追加のブラウザープラグインをインストールする必要がありません。サポートされるブラウザーについて詳しくは、[サポートされるクライアントプラットフォーム](https://adobe.com/go/learn_aemforms_documentation_63_jp)を参照してください。
+HTML5 フォームは、標準の HTML5 構造に基づいてドキュメントを生成します。HTML5 フォームは、HTML5 をサポートする現時点のすべてのブラウザーで表示できます。ブラウザー用の追加のブラウザープラグインをインストールする必要はありません。<!--For more information about supported browsers, see [Supported client platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63).-->
 
 ![HTML5 フォームプレビュー](assets/mobile_form_on_an_ipad_date_14.png)
 

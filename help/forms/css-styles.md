@@ -3,23 +3,22 @@ title: HTML5 フォームのための CSS スタイルの作成
 description: HTML フォーム要素と関連付けられている CSS クラスを変更して、HTML5 フォームの外観を変更する方法について説明します。
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 feature: HTML5 Forms,Mobile Forms
 exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # HTML5 フォームのための CSS スタイルの作成 {#creating-css-styles-for-html-forms}
 
-<span class="preview"> HTML5 Forms機能は、早期アクセスプログラムの一部として提供されています。 アクセスをリクエストするには、公式（職場）メール ID からaem-forms-ea@adobe.comにメールを送信します。
+<span class="preview">HTML5 Forms 機能は、早期アクセスプログラムの一部として提供されています。アクセス権をリクエストするには、公式の（勤務先の）メールアドレスから aem-forms-ea@adobe.com にメールを送信してください。
 </span>
 
 XFA ベースのフォームテンプレートの HTML5 レンダリングは、様々な HTML 要素で構成されています。これらの要素は一定の順序で整列されます。すべての要素には、適切に定義された CSS クラスがあります。これらの CSS クラスを使用して、要素の外観を選択し変更することができます。
@@ -252,4 +251,4 @@ HTML フォームでの UI コンポーネントの外観の以外に、イン�
 
 `Styling Fields with Validation Errors`
 
-フィールドの検証に失敗すると、ウィジェットのスタイルが変更されます。このスタイルの変更はウィジェットコンポーネントに **widgetError &#x200B;**&#x200B;の CSS クラスを適用することにより実施されます。デフォルトのスタイル設定を変更するには、**widgetError** クラスをオーバーライドします。
+フィールドの検証に失敗すると、ウィジェットのスタイルが変更されます。このスタイルの変更はウィジェットコンポーネントに **widgetError **&#x200B;の CSS クラスを適用することにより実施されます。デフォルトのスタイル設定を変更するには、**widgetError** クラスをオーバーライドします。

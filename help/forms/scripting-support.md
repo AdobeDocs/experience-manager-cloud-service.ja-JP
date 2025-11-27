@@ -3,13 +3,12 @@ title: HTML5 フォームのスクリプティングのサポート
 description: JavaScript と FormCalc プロパティ、および HTML5 フォームでサポートされているその他のメソッド。
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 feature: HTML5 Forms,Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '3916'
 ht-degree: 100%

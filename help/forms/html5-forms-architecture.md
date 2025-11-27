@@ -3,25 +3,23 @@ title: HTML5 フォームのアーキテクチャ
 description: HTML5 フォーム機能は埋め込み AEM インスタンス内のパッケージとしてデプロイされ、RESTful Apache Sling アーキテクチャを使用して、HTTP/S 上の REST エンドポイントとして公開されます。
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 97%
+source-wordcount: '1991'
+ht-degree: 96%
 
 ---
 
 # HTML5 フォームのアーキテクチャ{#architecture-of-html-forms}
 
-<span class="preview"> HTML5 Forms機能は、早期アクセスプログラムの一部として提供されています。 アクセスをリクエストするには、公式（職場）メール ID からaem-forms-ea@adobe.comにメールを送信します。
+<span class="preview">HTML5 Forms 機能は、早期アクセスプログラムの一部として提供されています。アクセス権をリクエストするには、公式の（勤務先の）メールアドレスから aem-forms-ea@adobe.com にメールを送信してください。
 </span>
 
 ## アーキテクチャ {#architecture}
@@ -32,11 +30,11 @@ HTML5 フォーム機能は埋め込み AEM インスタンス内のパッケー
 
 ### Sling フレームワークの使用 {#using-sling-framework}
 
-[Apache Sling](https://sling.apache.org/) はリソース中心です。リクエスト URL を使用して、最初にリソースを解決します。各リソースには **sling:resourceType**（または **sling:resourceSuperType**）プロパティがあります。このプロパティ、リクエストメソッド、およびリクエスト URL のプロパティに基づいて、リクエストを処理する Sling スクリプトが選択されます。この Sling スクリプトは、JSP またはサーブレットにすることができます。HTML5 フォームの場合、**Profile** ノードは Sling リソースとして機能し、**プロファイルレンダラー**&#x200B;はモバイルフォームをレンダリングするために特定のプロファイルで要求を処理する Sling スクリプトとして機能します。**プロファイルレンダラー**&#x200B;は要求からパラメーターを読み取り、Forms OSGi サービスを呼び出す JSP です。
+[Apache Sling](https://sling.apache.org/) はリソース中心です。リクエスト URL を使用して、最初にリソースを解決します。各リソースには **sling:resourceType** （または **sling:resourceSuperType**）プロパティがあります。 このプロパティ、リクエストメソッド、およびリクエスト URL のプロパティに基づいて、リクエストを処理する Sling スクリプトが選択されます。この Sling スクリプトは、JSP またはサーブレットにすることができます。HTML5 フォームの場合、**Profile** ノードは Sling リソースとして機能し、**プロファイルレンダラー**&#x200B;はモバイルフォームをレンダリングするために特定のプロファイルで要求を処理する Sling スクリプトとして機能します。**プロファイルレンダラー**&#x200B;は要求からパラメーターを読み取り、Forms OSGi サービスを呼び出す JSP です。
 
 REST エンドポイントとサポートされているリクエストパラメーターについて詳しくは、[フォームテンプレートのレンダリング](/help/forms/rendering-form-template.md)を参照してください。
 
-ユーザーが iOS や Android™ のブラウザーなどのクライアントデバイスからリクエストを行う場合、Sling はまずリクエスト URL に基づいて Profile ノードを解決します。この Profile ノードから、**sling:resourceSuperType** と **sling:resourceType** を読み取り、このフォームレンダーリクエストを処理できるすべての利用可能なスクリプトを決定します。次に、Sling リクエストセレクターとリクエストメソッドを使用して、このリクエストの処理に最適なスクリプトを識別します。リクエストがプロファイルレンダラー JSP に到達すると、JSP は Forms OSGi サービスを呼び出します。
+ユーザーが iOS や Android™ のブラウザーなどのクライアントデバイスからリクエストを行う場合、Sling はまずリクエスト URL に基づいて Profile ノードを解決します。この Profile ノードから、**sling:resourceSuperType** と **sling:resourceType** を読み取り、このフォームレンダーリクエストを処理できるすべての利用可能なスクリプトを決定します。 次に、Sling リクエストセレクターとリクエストメソッドを使用して、このリクエストの処理に最適なスクリプトを識別します。リクエストがプロファイルレンダラー JSP に到達すると、JSP は Forms OSGi サービスを呼び出します。
 
 Sling スクリプトの解決について詳しくは、[AEM Sling チートシートt](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ja)または [Apache Sling Url の分解](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html)を参照してください。
 
@@ -177,7 +175,7 @@ Sling パッケージには、プロファイルとプロファイルレンダ�
 
 #### プロファイルレンダラー {#profile-renderers}
 
-プロファイルノードには、**xfaforms/profile** の値を持つ **sling:resourceSuperType** プロパティがあります。このプロパティは転送リクエストを、**/libs/xfaforms/profile** フォルダーにあるプロファイルノードの Sling スクリプトに内部的に送信します。これらのスクリプトは JSP ページであり、HTML フォームと必要な JS/CSS アーティファクトをまとめるコンテナです。このページには、次への参照が含まれます。
+プロファイルノードには、値が **xfaforms/profile:resourceSuperType** のプロパティ **sling** があります。 このプロパティは転送リクエストを、**/libs/xfaforms/profile** フォルダーにあるプロファイルノードの Sling スクリプトに内部的に送信します。これらのスクリプトは JSP ページであり、HTML フォームと必要な JS/CSS アーティファクトをまとめるコンテナです。このページには、次への参照が含まれます。
 
 * **xfaforms.I18N.&lt;locale>**：このライブラリには、ローカライズされたデータが含まれています。
 * **xfaforms.profile**：このライブラリには、XFA スクリプティングとレイアウトエンジンの実装が含まれています。
@@ -187,5 +185,5 @@ CQ クライアントライブラリについて詳しくは、「[CQ Clientlib 
 
 上記のとおり、プロファイルレンダラー JSP は Sling include をとおして Forms サービスをを呼び出します。また、この JSP は、管理設定または要求パラメーターに基づいて様々なデバッグオプションを設定します。
 
-HTML5 フォームを使用することで、開発者はプロファイルとプロファイルレンダラーを作成してフォームの外観をカスタマイズできるようになります。例えば、HTML5 フォームでは、開発者はフォームをパネル内または既存の HTML ポータルの &lt;div> セクションに統合できます。
+HTML5 フォームを使用することで、開発者はプロファイルとプロファイルレンダラーを作成してフォームの外観をカスタマイズできるようになります。例えば、HTML フォームでは、開発者はフォームをパネル内または既存の HTML ポータルの &lt;div> セクションに統合できます。
 カスタムプロファイルの作成について詳しくは、「[カスタムプロファイルの作成](/help/forms/custom-profile.md)」を参照してください。

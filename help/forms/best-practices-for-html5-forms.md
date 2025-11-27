@@ -2,24 +2,22 @@
 title: HTML5 フォームのベストプラクティス
 description: 最適なパフォーマンスが得られるように XFA ベースの HTML5 フォームを調整します。
 contentOwner: khsingh
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 content-type: reference
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 98%
+source-wordcount: '1352'
+ht-degree: 95%
 
 ---
 
 # HTML5 フォームのベストプラクティス{#best-practices-for-html-forms}
 
-<span class="preview"> HTML5 Forms機能は、早期アクセスプログラムの一部として提供されています。 アクセスをリクエストするには、公式（職場）メール ID からaem-forms-ea@adobe.comにメールを送信します。
+<span class="preview">HTML5 Forms 機能は、早期アクセスプログラムの一部として提供されています。アクセス権をリクエストするには、公式の（勤務先の）メールアドレスから aem-forms-ea@adobe.com にメールを送信してください。
 </span>
 
 ## 概要 {#overview}
@@ -47,13 +45,13 @@ HTML5 フォームには複数の外部リソース（画像、JavaScript、CSS 
 
 * [圧縮された画像](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)を使用します。フォームをレンダリングするのに必要なネットワークアクティビティとメモリ量が減少します。これにより、フォームの読み込み時間が大幅に短縮されます。
 * AEM Configuration Manager（Day CQ HTML Library Manager）の縮小オプションを使用して、JavaScript と CSS ファイルを圧縮します。詳しくは、[OSGi 設定](/help/implementing/deploying/configuring-osgi.md)を参照してください。
-* Web 圧縮を有効にします。フォームから送信されるリクエストと応答のサイズが減少します。詳しくは、[AEM Forms サーバーのパフォーマンス調整](https://helpx.adobe.com/jp/aem-forms/6-3/performance-tuning-aem-forms.html)を参照してください。
+* Web 圧縮を有効にします。これにより、フォームから生成されるリクエストと応答のサイズが小さくなります。<!-- For details, see [Performance tuning of AEM Forms Server](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html)-->
 
 ## 興味を維持する：必要なフィールドのみを表示する  {#keep-the-interest-alive-show-only-required-fields}
 
 1 つの HTML5 フォームが数百ページに達することもあります。多数のフィールドを含むフォームは、ブラウザーでの読み込みが遅くなります。XFA フォームに対して以下の最適化を行うことにより、多数のフィールドとページを含むフォームを最適化できます。
 
-* 大規模なフォームを複数のフォームに分割できるかどうか判定します。フォームセットを使用して小規模なフォームをグループ化し、1 つの単位として提示することもできます。フォームセットでは、必要なフォームのみが読み込まれます。さらにフォームセットでは、異なるフォーム内の共通するフィールドでデータバインディングが共有されるように設定することができます。データバインディングを使用すると、ユーザーが共通する情報を一度入力すれば、その後のフォームでは情報が自動的に入力されるので、パフォーマンスの大幅な向上につながります。フォームセットについて詳しくは、[AEM Forms におけるフォームセット](https://helpx.adobe.com/jp/aem-forms/6-3/formset-in-aem-forms.html)を参照してください。
+* 大規模なフォームを複数のフォームに分割できるかどうか判定します。フォームセットを使用して小規模なフォームをグループ化し、1 つの単位として提示することもできます。フォームセットでは、必要なフォームのみが読み込まれます。さらにフォームセットでは、異なるフォーム内の共通するフィールドでデータバインディングが共有されるように設定することができます。データ連結を使用すると、共通の情報を 1 回だけ入力できます。情報は後続のフォームに自動入力され、パフォーマンスが大幅に向上します。<!-- For more details about form sets, see [Form set in AEM forms](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).-->
 * セクションを分割し、各セクションを異なるページに移動することを検討します。HTML5 フォームでは、ページスクロールのリクエスト時に各ページが動的に読み込まれます。スクロールされたページ（現在表示されているページとそれ以前に表示されたページ）のみがメモリに格納され、残りのページはオンデマンドで読み込まれます。このため、セクションを分割して独立したページに移動することにより、フォームの読み込みにかかる時間が短縮されます。フォームの先頭ページをランディングページとして使用することもできます。これは、本の目次（TOC）に似ています。フォームのランディングページには、フォームの他のセクションへのリンクのみを含めます。これにより、フォームの先頭ページの読み込み時間が大幅に短縮され、ユーザーエクスペリエンスが向上します。
 * 条件付きのセクションをデフォルトで表示しないようにします。特定の条件が満たされたときのみ、これらのセクションを表示します。これは、DOM のサイズを最小限に抑えるのに役立ちます。タブナビゲーションを使用して、一度に 1 つのセクションのみを表示することもできます。
 
@@ -64,7 +62,7 @@ HTML5 フォームには、データ駆動型のフィールド（テーブル�
 * XFA スクリプティングを使用してページによるナビゲーションを実現し、データ駆動型のフィールド（テーブルやサブフォーム）を表示します。ページによるナビゲーションでは、1 つのページに特定のデータのみが表示されます。ブラウザーのペイント操作が一度に表示されるフィールドに限定されるので、フォームのナビゲーションが簡単になります。また、モバイルデバイスのユーザーはデータのサブセットにのみ関心を持っています。優れたユーザーエクスペリエンスを提供できるようになり、必要なデータを読み込むのにかかる時間も短縮されます。1 つの対策で 2 重の効果が得られます。また、ページナビゲーションはそのままでは使用できないことに注意してください。ページによるナビゲーションは、XFA スクリプティングを使用して作成できます。
 
 * 複数の読み取り専用列を 1 つの列にまとめることができるかどうかを判断します。これにより、フォームの表示に必要なメモリが減少します。また、ユーザーの入力を必要としない列を表示しないようにします。
-* 上述の推奨事項を実践しても十分に改善されない場合は、データ駆動型のフォームを[フォームセット](https://helpx.adobe.com/jp/aem-forms/6-3/formset-in-aem-forms.html)に分割できるかどうかを判断します。例えば、テーブルが 1000 行を超える場合は、100 行ずつ異なるフォームに移動します。フォームの読み込み時間とパフォーマンスを改善する効果があります。フォームセットは、すべてのフォームに対して 1 つの統合された送信 XML を生成する点にも注目してください。各フォームのデータを区別するには、異なるデータルートを使用します。詳しくは、[AEM Forms におけるフォームセット](https://helpx.adobe.com/jp/aem-forms/6-3/formset-in-aem-forms.html)を参照してください。
+* 上記の提案で多くの改善が得られない場合は、データ駆動型フォームをフォームセットに分割することを評価します。 例えば、テーブルが 1000 行を超える場合は、100 行ずつ異なるフォームに移動します。フォームの読み込み時間とパフォーマンスを改善する効果があります。フォームセットは、すべてのフォームに対して 1 つの統合された送信 XML を生成する点にも注目してください。各フォームのデータを区別するには、異なるデータルートを使用します。<!--For more information, see [Form set in AEM Forms](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).-->
 
 ## レコードのドキュメント（DOR）を 2 つ保持する {#power-of-two-for-document-of-record-dor}
 

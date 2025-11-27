@@ -2,23 +2,22 @@
 title: HTML5 forms の概要
 description: 開始にあたって、AEM Forms アドオンパッケージをデプロイし、既存の HTML5 フォームを AEM に読み込みます。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: f276d150-8936-4bfb-8475-7ca36815b233
 feature: HTML5 Forms,Mobile Forms
 exl-id: a3245f05-6ea3-4f90-8981-bfa89d2e7335
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 56%
+ht-degree: 67%
 
 ---
 
 # HTML5 forms の概要 {#getting-started-with-html-forms}
 
-<span class="preview"> HTML5 Forms機能は、早期アクセスプログラムの一部として提供されています。 アクセスをリクエストするには、公式（職場）メール ID からaem-forms-ea@adobe.comにメールを送信します。
+<span class="preview">HTML5 Forms 機能は、早期アクセスプログラムの一部として提供されています。アクセス権をリクエストするには、公式の（勤務先の）メールアドレスから aem-forms-ea@adobe.com にメールを送信してください。
 </span>
 
 HTML5 フォームはモバイル対応の機能を多数用意しています。HTML5 ブラウザーを使用するタブレットやスマートフォンデバイスに対して現在のソリューションとワークフローを拡張することに役立ちます。次にいくつかの機能を挙げます。

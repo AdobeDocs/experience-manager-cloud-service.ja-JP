@@ -2,28 +2,27 @@
 title: HTML5 フォームのカスタムプロファイルの作成
 description: HTML5 フォームプロファイルは Apache Sling のリソースノードです。それは HTML5 フォームレンダリングサービスのカスタマイズされたバージョンを表します。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: HTML5 Forms,Mobile Forms
 exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 96%
+source-wordcount: '680'
+ht-degree: 95%
 
 ---
 
 # HTML5 フォームのカスタムプロファイルの作成 {#creating-a-custom-profile-for-html-forms}
 
-<span class="preview"> HTML5 Forms機能は、早期アクセスプログラムの一部として提供されています。 アクセスをリクエストするには、公式（職場）メール ID からaem-forms-ea@adobe.comにメールを送信します。
+<span class="preview">HTML5 Forms 機能は、早期アクセスプログラムの一部として提供されています。アクセス権をリクエストするには、公式の（勤務先の）メールアドレスから aem-forms-ea@adobe.com にメールを送信してください。
 </span>
 
 プロファイルは [Apache Sling](https://sling.apache.org/) のリソースノードです。それは HTML5 フォームレンダリングサービスのカスタマイズされたバージョンを表します。HTML5 フォームレンダリングサービスを使用して、HTML5 フォームの外観、動作、インタラクションをカスタマイズできます。Profile ノードは JCR リポジトリーの `/content` フォルダーにあります。ノードは `/content` フォルダー直下か、`/content` フォルダーのサブフォルダーに入れることができます。
 
-Profile ノードには **xfaforms/profile** のデフォルト値を持つ **sling:resourceSuperType** プロパティがあります。このノードのレンダリングスクリプトは、/libs/xfaforms/profile にあります。
+profile ノードには **sling:resourceSuperType** プロパティがあり、デフォルト値は **xfaforms/profile** です。 このノードのレンダリングスクリプトは、/libs/xfaforms/profile にあります。
 
 Sling スクリプトは JSP スクリプトです。JSP スクリプトはリクエストされたフォームと必要な JS／CSS アーティファクトの HTML を組み立てるためのコンテナとして機能します。これらの Sling スクリプトは&#x200B;**プロファイルレンダラースクリプト**&#x200B;とも呼ばれます。プロファイルレンダラーは要求されたフォームをレンダリングするために Forms OSGi サービスを呼び出します。
 
@@ -67,7 +66,7 @@ footer.jsp モジュールは空です。これにより、ユーザーインタ
 
 1. default ノードをコピーし、*hrform* という名前で別のフォルダー（*/content/profiles*）にそのノードをペーストします。
 
-1. 新しいノード、*hrform* を選択し、*hrform/demo* の値を持つ文字列プロパティ *sling:resourceType* を追加します。
+1. 新しいノード *hrform* を選択し、値 *hrform/demo:resourceType* を持つ文字列プロパティ *sling* を追加します。
 
 1. ツールバーメニューで「すべて保存」をクリックして、変更を保存します。
 

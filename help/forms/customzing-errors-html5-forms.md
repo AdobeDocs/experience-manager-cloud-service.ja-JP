@@ -1,22 +1,21 @@
 ---
 title: HTML5 フォームのエラーメッセージのカスタマイズ
 description: HTML5 フォームのエラーメッセージの表示をカスタマイズする方法（メッセージの位置や表示方法の変更を含む）について説明します。
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 feature: HTML5 Forms,Mobile Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # HTML5 フォームのエラーメッセージのカスタマイズ {#customizing-error-messages-for-html-forms}
 
-<span class="preview"> HTML5 Forms機能は、早期アクセスプログラムの一部として提供されています。 アクセスをリクエストするには、公式（職場）メール ID からaem-forms-ea@adobe.comにメールを送信します。
+<span class="preview">HTML5 Forms 機能は、早期アクセスプログラムの一部として提供されています。アクセス権をリクエストするには、公式の（勤務先の）メールアドレスから aem-forms-ea@adobe.com にメールを送信してください。
 </span>
 
 出荷時の設定の状態の HTML5 フォームでは、エラーメッセージおよび警告の位置と表示方法（フォントおよび色）は固定されており、エラーは選択したフィールドのみに、1 つだけ表示されます。
@@ -85,7 +84,7 @@ ht-degree: 95%
 
 すべてのフィールドのエラーメッセージを同時に表示するには、添付されているパッケージを使用します。エラーメッセージを単独で表示するには、デフォルトのプロファイルを使用します。
 
-### エラーメッセージの表示方法のカスタマイズ  {#customizing-the-appearance-of-error-messages-nbsp}
+### エラーメッセージの表示方法のカスタマイズ {#customizing-the-appearance-of-error-messages-nbsp}
 
 1. etc\clientlibs\mf-custom-error-manager\CustomErrorManager\css フォルダーに移動します。
 
@@ -119,7 +118,7 @@ ht-degree: 95%
 1. CustomErrorManager-1.0-SNAPSHOT フォルダーに移動し、jcr_root および META-INF フォルダーのアーカイブを作成します。アーカイブの名前を CustomErrorManager-1.0-SNAPSHOT.zip に変更します。
 1. パッケージマネージャーを使用し、パッケージをアップロードしてインストールします。
 
-## 新しいプロファイルでフォームをレンダリングします。  {#render-the-form-with-the-new-profile-nbsp}
+## 新しいプロファイルでフォームをレンダリングします。 {#render-the-form-with-the-new-profile-nbsp}
 
 出荷時の設定では、HTML5 フォームはデフォルトのプロファイル `https://&lt;server&gt;/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;` を使用します。
 

@@ -2,26 +2,24 @@
 title: HTML5 フォーム用のフォームテンプレートのデザイン
 description: AEM Forms は、XFA フォームテンプレートを HTML5 形式にレンダリングできます。フォームデザイナーは Designer を使用してフォームテンプレートをデザインし、HTML5 レンダリングの機能を使用することができます。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 94%
+source-wordcount: '505'
+ht-degree: 97%
 
 ---
 
 # HTML5 フォーム用のフォームテンプレートのデザイン{#designing-form-templates-for-html-forms}
 
-<span class="preview"> HTML5 Forms機能は、早期アクセスプログラムの一部として提供されています。 アクセスをリクエストするには、公式（職場）メール ID からaem-forms-ea@adobe.comにメールを送信します。
+<span class="preview">HTML5 Forms 機能は、早期アクセスプログラムの一部として提供されています。アクセス権をリクエストするには、公式の（勤務先の）メールアドレスから aem-forms-ea@adobe.com にメールを送信してください。
 </span>
 
-AEM の HTML5 フォームコンポーネントは、XFA フォームテンプレートを HTML5 形式にレンダリングできます。フォームデザイナーは [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_jp) を使用してフォームテンプレートをデザインし、HTML5 レンダリングの機能を使用することができます。これらのフォームテンプレートはアセットと共に、AEM リポジトリやファイルシステムに配置するか、http で公開することができます。ただし、Forms Manager を使用してフォームを管理する場合には、テンプレートとアセットを AEM リポジトリに置く必要があります。
+AEM の HTML5 フォームコンポーネントは、XFA フォームテンプレートを HTML5 形式にレンダリングできます。フォームデザイナーは、Forms Designerを使用してフォームテンプレートをデザインし、HTML5 レンディション機能を使用することができます。 これらのフォームテンプレートはアセットと共に、AEM リポジトリやファイルシステムに配置するか、http で公開することができます。ただし、Forms Manager を使用してフォームを管理する場合には、テンプレートとアセットを AEM リポジトリに置く必要があります。
 
 HTML5 フォームの動作は、その大部分が PDF フォームの動作に一致していますが、両方の形式には他方の形式で適用されない機能がいくつかあります。たとえば、Adobe Reader でバーコードが PDF フォームに適用される方法が Mobile フォームとは異なったり、フォームにデジタル署名を行う方法も各形式で異なります。そのような違いについて詳しくは、[HTML5 フォームと PDF フォームの機能の違い](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)を参照してください。
 
@@ -35,7 +33,7 @@ HTML5 フォームの動作は、その大部分が PDF フォームの動作に
 
 #### HTML をプレビューする {#preview-html}
 
-フォームデザイナーのデザインモードに、HTML5 形式でフォームをプレビューするための「HTML のプレビュー」タブが追加されました。AEM Forms Designer でこの機能を有効化して設定する方法について詳しくは、[HTML のプレビュー](/help/forms/preview-xdp-forms-html.md)を参照してください。
+デザインモードに「プレビュー HTML」タブが追加され、フォームデザイナーがデザインプロセス中にフォームを HTML5 形式でプレビューできるようになりました。AEM Forms Designer でこの機能を有効化して設定する方法について詳しくは、[HTML のプレビュー](/help/forms/preview-xdp-forms-html.md)を参照してください。
 
 #### 手書き署名 {#scribble-signature}
 

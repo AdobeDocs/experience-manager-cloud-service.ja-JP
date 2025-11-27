@@ -3,23 +3,21 @@ title: HTML5 フォーム内でのログの有効化
 description: ロガーユーティリティはフォームのログを可能にし、フォーム関連の問題のデバッグに役立ちます。
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '655'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # HTML5 フォーム内でのログの有効化{#enable-logging-for-html-forms}
 
-<span class="preview"> HTML5 Forms機能は、早期アクセスプログラムの一部として提供されています。 アクセスをリクエストするには、公式（職場）メール ID からaem-forms-ea@adobe.comにメールを送信します。
+<span class="preview">HTML5 Forms 機能は、早期アクセスプログラムの一部として提供されています。アクセス権をリクエストするには、公式の（勤務先の）メールアドレスから aem-forms-ea@adobe.com にメールを送信してください。
 </span>
 
 ロガーユーティリティを設定することで、HTML5フォームでログの作成を開始することができます。ロガーユーティリティにはいくつかのレベルがあり、要件に応じてレベルを設定することができます。HTML5 フォームは、サーバーコンポーネントとクライアントコンポーネントから構成されています。両方のコンポーネントに対してログを設定できます。 
@@ -172,9 +170,9 @@ ht-degree: 96%
 >[!NOTE]
 >
 >a（xfa）、b（xfaView）、および c（xfaPerf）のそれぞれのログカテゴリに対するデフォルトログレベルは 2（エラー）です。そのため、ログ設定 2-b6 では、異なるカテゴリのログレベルは：
->&#x200B;>a（xfa）：2（デフォルトレベルのエラー）
->&#x200B;>b（xfaView）：6（ユーザー指定トレース）
->&#x200B;>a（xfaPerf）：2（デフォルトレベルのエラー）
+>a（xfa）：2（デフォルトレベルのエラー）
+>b（xfaView）：6（ユーザー指定トレース）
+>a（xfaPerf）：2（デフォルトレベルのエラー）
 
 ### Configuration Manager の使用によるログの有効化 {#enabling-logging-using-configuration-manager}
 

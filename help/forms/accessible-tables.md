@@ -2,15 +2,14 @@
 title: アクセス可能な複雑なテーブルを HTML5 フォームで作成する
 description: アクセス可能なテーブルを HTML5 フォームで作成する方法について説明します。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 feature: HTML5 Forms,Mobile Forms
 exl-id: 3b8e3323-9ac4-4f5c-8c52-e2186e9169ea
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
-workflow-type: ht
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 100%
 
