@@ -3,9 +3,9 @@ title: Content Update Skill
 description: Experience Production Agent のコンテンツ更新スキルの概要と機能について説明します。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
+source-git-commit: 437da39f61d7af2fe01a1617d3299fd60ee38ad5
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '858'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Experience Production Agent のコンテンツ更新スキルは、コンテンツ作成を自動化して、Adobe Experience Manager（AEM）as a Cloud ServiceおよびEdge Delivery Servicesの日常的なタスクを高速化します。
 
-コンテンツ更新スキルは、コンテンツフラグメント、ページ、フォーム、アセットなど、CMS全体の既存のコンテンツを更新します。 エージェントは、コンテンツ要素の更新、削除、置換、追加などのアクションを実行して、エクスペリエンスを正確かつ最新の状態に保つことができます。 入力は自然言語による説明にすることができます。Jira PDF やスクリーンショットで使用する場合は、入力も指定できます。
+コンテンツ更新スキルは、コンテンツフラグメント、ページ、フォーム、アセットなどの既存のコンテンツを更新します。 エージェントは、コンテンツ要素の更新、削除、置換、追加などのアクションを実行して、エクスペリエンスを正確かつ最新の状態に保つことができます。 入力は自然言語による説明にすることができます。Jira PDF やスクリーンショットで使用する場合は、入力も指定できます。
 
 ## 概要 {#overview}
 
@@ -35,7 +35,7 @@ AI アシスタントを使用して、AEMのエージェントにアクセス�
 
 experience.adobe.comから AI アシスタントを開き、`Ask AI Assistant anything` フィールドを使用して自然言語でプロンプトを指定して、操作を開始します。
 
-![&#x200B; アクセス探索エージェント &#x200B;](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
+![ アクセス探索エージェント ](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
 
 ### サンプルプロンプト {#sample-prompts}
 
@@ -107,7 +107,7 @@ Jira でコンテンツ更新スキルを使用すると、編集を自動化す
 
 * 次の画像は、コンテンツ更新スキル用の `process` コマンドをトリガーにする Jira の例を示しています。
 
-  ![&#x200B; エクスペリエンス実稼働エージェントのコンテンツ更新スキルを使用した Jira の例 &#x200B;](assets/content-update-jira-example.png)
+  ![ エクスペリエンス実稼働エージェントのコンテンツ更新スキルを使用した Jira の例 ](assets/content-update-jira-example.png)
 
 ## アクティベーション {#activation}
 
@@ -145,4 +145,4 @@ Experience Production Agent をアクティブ化してアクセスできるよ�
 
 現在、コンテンツアップデーターには次の制限があります。
 
-* ファイルのアップロードは、[Jira](#jira) を操作する際に使用できますが、[AI アシスタント &#x200B;](#ai-assistant) を操作する際にはサポートされません。
+* ファイルのアップロードは、[Jira](#jira) を操作する際に使用できますが、[AI アシスタント ](#ai-assistant) を操作する際にはサポートされません。
