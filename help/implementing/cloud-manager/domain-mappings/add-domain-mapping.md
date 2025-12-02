@@ -45,7 +45,7 @@ ht-degree: 51%
 
    * **Adobeの管理による CDN**
 
-     ![Adobeの管理による CDN ラジオボタンが選択されている状態でドメインを CDN にマッピング ダイアログボックス ](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-adobe-managed.png)
+     ![Adobeの管理による CDN ラジオボタンが選択されている状態でドメインを CDN にマッピング ダイアログボックス &#x200B;](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-adobe-managed.png)
 
       1. **接触チャネル** ドロップダウンリストで、次のいずれかを選択します。
 
@@ -62,7 +62,7 @@ ht-degree: 51%
 
    * **その他の CDN プロバイダー**
 
-     ![Adobeの管理による CDN ラジオボタンが選択されている状態でドメインを CDN にマッピング ダイアログボックス ](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-other-provider.png)
+     ![Adobeの管理による CDN ラジオボタンが選択されている状態でドメインを CDN にマッピング ダイアログボックス &#x200B;](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-other-provider.png)
 
      リストに表示された設定手順を使用して、CDN で必要な設定を適用し、マッピングを確認します。 [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)も参照してください。
 
@@ -86,7 +86,7 @@ curl -svo /dev/null https://www.example.com \
 ```
 
 * `www.example.com` を自分のドメインに置き換えます。
-* IP アドレス `151.101.3.10` は、AEM Cloud Service へのアクセスに使用できる IP の 1 つです。 [APEX レコード ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-apex-record) も参照してください。
+* IP アドレス `151.101.3.10` は、AEM Cloud Service へのアクセスに使用できる IP の 1 つです。 [APEX レコード &#x200B;](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-apex-record) も参照してください。
 
 `--resolve` フラグは、ドメインの証明書とルーティングが正しくインストールされた後にのみ、指定された IP への要求を強制し、成功を返します。
 
