@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター 2025.11.20 リリースノート
-description: ユニバーサルエディター 2025.11.20 リリースのリリースノートです。
+title: ユニバーサルエディター 2025.12.04 リリースノート
+description: ユニバーサルエディター 2025.12.04 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e36ff1c7c3f03124941c464cc340deef0cdd403b
+source-git-commit: e500b971e36fdb3d867e2d6b2a21eced66005182
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 73%
+source-wordcount: '166'
+ht-degree: 57%
 
 ---
 
 
-# ユニバーサルエディター 2025.11.20 リリースノート {#release-notes}
+# ユニバーサルエディター 2025.12.04 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2025 年 11 月 20 日リリースのリリースノートです。
+ユニバーサルエディターの 2025 年 12 月 4 日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -26,11 +26,9 @@ ht-degree: 73%
 
 ## 新機能 {#what-is-new}
 
-* トーストは、新しい UI に移行されました。
-
-## 早期導入機能 {#early-adopter}
-
-これらの今後の機能をテストしてフィードバックを共有することに関心がある方は、Adobe ID に関連付けられたメールアドレスからアドビカスタマーサクセスマネージャーにメールを送信してください。
+* 認証ヘッダーが無効になり、[ ローカル開発者ログイン ](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) が優先されました
+* 右クリックの構造化ツリーでコンテキストメニューが使用できる [ ようになりました。](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* ホットキーが [ 重複するコンポーネント ](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) に追加されました。
 
 ### 新規 RTE {#new-rte}
 
@@ -38,7 +36,6 @@ ht-degree: 73%
 
 ## その他の改善点 {#other-improvements}
 
-* RTE 値の処理が簡略化されました。
-* まれに発生するツールバーの競合状態が解決されました。
-* 未使用の機能の切り替えが削除されました。
-* 依存関係が更新されました。
+* RTE がキャンバスに正しく保存されない問題が解決されました。
+* コンテンツピッカーフォルダーツリーのクリッピングを修正しました。
+* `componentId` は、追加アクション中に提供されるようになりました。

@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: d938abce2b46786343b19113454da1738a824ed0
+source-git-commit: 6efb04369109fcae638b699e1daff09624224098
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 93%
+source-wordcount: '1853'
+ht-degree: 92%
 
 ---
 
@@ -78,13 +78,13 @@ Experience Platformの上部ナビゲーションバーは、常に画面の上�
 
 ![Experience Cloud ヘッダー](assets/experience-cloud-header.png)
 
-Experience Platformの上部ナビゲーションバーについて詳しくは、[Adobe Experience Platform UI ガイドを参照してください &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Experience Platformの上部ナビゲーションバーについて詳しくは、[Adobe Experience Platform UI ガイドを参照してください ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### アカウント {#user-properties}
 
 アカウントアイコンをタップまたはクリックすると、ユーザー設定を含むメニューが開きます。
 
-![&#x200B; 環境スイッチャー &#x200B;](assets/environment-switcher.png)
+![ 環境スイッチャー ](assets/environment-switcher.png)
 
 ユニバーサルエディターの場合、見出し **製品設定** の下に、ユニバーサルエディターの現在の実稼動バージョンと今後のプレビューバージョンを切り替えるオプションがあります。
 
@@ -137,17 +137,11 @@ Experience Platformの上部ナビゲーションバーについて詳しくは�
 >
 >取り消すには `Command-Z`、やり直すには `Shift-Command-Z` のホットキーを使用します。
 
-#### 認証ヘッダー {#authentication-settings}
-
-[ローカル開発目的でカスタム認証ヘッダーを設定](/help/implementing/universal-editor/developer-overview.md#auth-header)する必要がある場合は、認証ヘッダーアイコンを選択します。
-
-![認証ヘッダー設定ボタン](assets/authentication-header-settings.png)
-
 #### ローカル開発者ログイン {#local-developer-login}
 
-[&#x200B; ローカルで開発する場合 &#x200B;](/help/implementing/universal-editor/local-dev.md)、ローカルのAEM SDKを簡単に認証する必要がある場合は、「ローカル開発者ログイン」アイコンを選択します。
+[ ローカルで開発する場合 ](/help/implementing/universal-editor/local-dev.md)、ローカルのAEM SDKを簡単に認証する必要がある場合は、「ローカル開発者ログイン」アイコンを選択します。
 
-![&#x200B; ローカル開発者ログインボタン &#x200B;](assets/local-developer-login.png)
+![ ローカル開発者ログインボタン ](assets/local-developer-login.png)
 
 #### レスポンシブモード {#emulator}
 
@@ -265,6 +259,7 @@ Experience Platformの上部ナビゲーションバーについて詳しくは�
 
 * コンテンツツリー内の項目を選択する場合、エディターはそのコンテンツまでスクロールして選択します。
 * コンテンツツリー内の項目をダブルクリックする場合、エディターはそのコンテンツまでスクロールして選択し、関連するプロパティを[プロパティモード](#properties-mode)で開きます。
+* ツリー内の項目を右クリックすると、コンテキストメニューが開き、その項目に適したアクションが表示されます。
 
 ![コンテンツツリー](assets/content-tree.png)
 
@@ -307,6 +302,10 @@ Experience Platformの上部ナビゲーションバーについて詳しくは�
 ![複製アイコン](assets/duplicate.png)
 
 「複製」ボタンをタップまたはクリックすると、[選択したコンポーネントが複製されます](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)。
+
+>[!TIP]
+>
+>ホットキー `Command+d` を使用して、選択したコンポーネントをコンテナから削除します。
 
 ##### 削除 {#delete}
 
