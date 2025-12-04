@@ -4,10 +4,10 @@ description: 実稼動プログラムまたはサンドボックスプログラ�
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7c990e7e42477120c7ce0720bdb6dc7d03308f92
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 92%
+source-wordcount: '581'
+ht-degree: 88%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 92%
 
    * ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左側のサイドメニューを表示します。
 **サービス**&#x200B;見出しの下にある ![Web ページアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg)「**Edge Delivery サイト**」をクリックします。
-ページの右上隅付近にある ![&#x200B; リンクアイコンまたはEdge Delivery サイトを追加 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg) 追加 **&#x200B;**&#x200B;をクリックします。
+ページの右上隅付近にある ![ リンクアイコンまたはEdge Delivery サイトを追加 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg) 追加 **** をクリックします。
 
      ![「Edge Delivery サイト」ボタンからの Edge Delivery サイトの追加](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
 
@@ -58,6 +58,12 @@ ht-degree: 92%
    | **3** | 作成した変更のプルリクエストを Git リポジトリに作成し、`main` に結合してコードをコミットします。 |
 
 1. 「**確認**」をクリックします。
+
+   >[!NOTE]
+   >
+   >Edge Delivery Services サイトでヘリックス認証を使用している場合、検証チャレンジにはアクセスできません。 認証を一時的に無効にし、サイトの検証を完了してから、認証を再び有効にします。
+
+
 
 リポジトリを検証すると、Edge Delivery サイトテーブル内のそのステータスが更新されます。内側に白色のチェックマークが付いた緑色の円は、ステータスを示します。
 

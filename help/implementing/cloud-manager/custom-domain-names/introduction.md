@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 15da86656733074afccef85910cc8ea0109933e6
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 100%
+source-wordcount: '749'
+ht-degree: 93%
 
 ---
 
@@ -29,6 +29,10 @@ Adobe Experience Manager as a Cloud Service には、`*.adobeaemcloud.com` で�
 各 web サイトには、`184.33.123.64` のような、機械で読み取り可能な一意の数値アドレスが関連付けられています。ドメインネームシステム（DNS）を使用すると、数値アドレスを、`wknd.com` のような覚えやすいアドレスに変換することで、web サイトにカスタムのブランドドメインを付加できます。
 
 顧客が覚えやすく、ブランドを反映したサイトのドメイン名を付けることをお勧めします。
+
+>[!IMPORTANT]
+>
+> adobeaemcloud.comの下のデフォルトドメイン **使用しないでください** は、SEO 目的で重要なコンテンツを提供します。 adobeaemcloud.com ドメインとサブドメインは、クロールとインデックス作成を防ぐ [default robots.txt](https://cdn.adobeaemcloud.com/robots.txt) を提供するので、検索エンジンではインデックス作成できません。 代わりに、独自のカスタムドメインを使用して、カスタム robots.txt を提供します。
 
 ドメイン名は、ドメイン名登録機関、会社、またはドメイン名を管理および販売する組織から購入できます。ドメイン名登録者は、DNS サーバー上のドメイン名を管理します。
 

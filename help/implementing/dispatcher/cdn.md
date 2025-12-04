@@ -4,10 +4,10 @@ description: AEM の管理による CDN を使用する方法と、独自の CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7f00e68eac0b1e0090bdb57a8188af7bbe21ad1b
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 100%
+source-wordcount: '1768'
+ht-degree: 98%
 
 ---
 
@@ -157,6 +157,13 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 ```
 
 このプロセスにより、ホスト値、エッジ認証設定、x-forwarded-host ヘッダー値などの詳細を検証できます。また、エッジキーが設定されているかどうか、一致が存在する場合に使用されるキーも識別します。
+
+>[!NOTE]
+>
+>迅速な開発環境（RDE）を使用して、設定をデプロイおよびテストできます。
+>
+>* [ 迅速な開発環境 ](/help/implementing/developing/introduction/rapid-development-environments.md)
+>* [ 迅速な開発環境の使用方法 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### CDN ベンダー設定のサンプル {#sample-configurations}
 
