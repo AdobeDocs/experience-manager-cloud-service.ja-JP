@@ -4,10 +4,10 @@ description: 設定ファイルでルールを宣言し、Cloud Manager 設定�
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: 68a41d468650228b4ac35315690a76465ffe4c0b
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 100%
+source-wordcount: '2028'
+ht-degree: 95%
 
 ---
 
@@ -22,13 +22,38 @@ ht-degree: 100%
 
 上記のそれぞれについては、設定の構文を含めて、以下の該当する節で説明します。
 
-優れたセキュリティ対策である[キーのローテーション](#rotating-secrets)の方法に関する節があります。
+環境またはパイプライン（デプロイステップ）のシークレットは、`${{..}}` 構文で参照でき、リテラル値を使用できる場所、条件またはセッターで使用できます。
 
->[!NOTE]
-> 環境変数として定義された秘密鍵は、不変であると見なす必要があります。値を変更する代わりに、新しい名前で新しい秘密鍵を作成し、設定内でその秘密鍵を参照する必要があります。これを行わないと、秘密鍵の更新が信頼できなくなります。
+```
+kind: "CDN"
+version: "1"
+data:
+  originSelectors:
+    rules:
+      - name: select-origin-example
+        when: { reqHeader: "x-auth-header", equals: "${{AUTH_HEADER}}" }
+        action:
+          type: selectOrigin
+          originName: origin-name
+          headers:
+            Authorization: "${{AUTH_HEADER}}"
+    ...
+```
 
->[!WARNING]
->CDN 設定で参照される環境変数を削除しないでください。これを行うと、CDN 設定の更新に失敗する場合があります（例えば、ルール、カスタムドメインや証明書の更新）。
+秘密鍵を操作する際に留意するガイドラインを次に示します。
+
+* 環境シークレットは、[Cloud Manager シークレット タイプの環境変数 ](/help/operations/config-pipeline.md#secret-env-vars) としてデプロイする必要があります。 「適用されたサービス」フィールドで、「すべて」を選択します。
+* 秘密鍵の参照は、文字列内で補間されません（例： `"Token ${{AUTH_TOKEN}}"` は機能しません）
+* 参照されている環境シークレットは、設定内で引き続き参照されている場合は削除しないでください。
+
+  >[!WARNING]
+  >CDN 設定で参照される環境変数を削除しないでください。これを行うと、CDN 設定の更新に失敗する場合があります（例えば、ルール、カスタムドメインや証明書の更新）。
+
+* 秘密鍵は定期的に回転させる必要があります。 優れたセキュリティ対策である[キーのローテーション](#rotating-secrets)の方法に関する節があります。
+
+  >[!NOTE]
+  > 環境変数として定義された秘密鍵は、不変であると見なす必要があります。値を変更する代わりに、新しい名前で新しい秘密鍵を作成し、設定内でその秘密鍵を参照する必要があります。これを行わないと、秘密鍵の更新が信頼できなくなります。
+
 
 ## 顧客管理 CDN の HTTP ヘッダー値 {#CDN-HTTP-value}
 
