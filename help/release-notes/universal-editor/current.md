@@ -26,9 +26,9 @@ ht-degree: 57%
 
 ## 新機能 {#what-is-new}
 
-* 認証ヘッダーが無効になり、[ ローカル開発者ログイン ](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) が優先されました
-* 右クリックの構造化ツリーでコンテキストメニューが使用できる [ ようになりました。](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
-* ホットキーが [ 重複するコンポーネント ](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) に追加されました。
+* 認証ヘッダーが無効になり、[&#x200B; ローカル開発者ログイン &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) が優先されました
+* 右クリックの構造化ツリーでコンテキストメニューが使用できる [&#x200B; ようになりました。](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* ホットキーが [&#x200B; 重複するコンポーネント &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) に追加されました。
 
 ### 新規 RTE {#new-rte}
 
