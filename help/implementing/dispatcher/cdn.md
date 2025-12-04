@@ -162,8 +162,8 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 >
 >迅速な開発環境（RDE）を使用して、設定をデプロイおよびテストできます。
 >
->* [&#x200B; 迅速な開発環境 &#x200B;](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [&#x200B; 迅速な開発環境の使用方法 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [ 迅速な開発環境 ](/help/implementing/developing/introduction/rapid-development-environments.md)
+>* [ 迅速な開発環境の使用方法 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### CDN ベンダー設定のサンプル {#sample-configurations}
 
