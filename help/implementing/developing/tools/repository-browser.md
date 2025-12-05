@@ -76,7 +76,7 @@ AEM as a Cloud Service Developer Console にアクセスするには、[Develope
 
 パブリッシュ層の場合、デフォルトでは、リポジトリブラウザーには公開コンテンツのみが表示されます。したがって、`/conf` や `/home` などの特定のフォルダーは表示されません。
 
-これらの場所を表示するには、AEM管理者の公開製品プロファイルを使用してください。 詳しくは、[ チームおよび製品プロファイルのドキュメント ](/help/onboarding/aem-cs-team-product-profiles.md) を参照してください。
+これらの場所を表示するには、AEM管理者の公開製品プロファイルを使用してください。 詳しくは、[&#x200B; チームおよび製品プロファイルのドキュメント &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md) を参照してください。
 
 <!-- Drafting because of CQDOC-23204
 
