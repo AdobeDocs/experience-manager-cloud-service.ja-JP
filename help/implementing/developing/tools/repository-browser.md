@@ -6,10 +6,10 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 414608955bce3feebd1249a91e4f77161144e51e
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 100%
+source-wordcount: '710'
+ht-degree: 96%
 
 ---
 
@@ -76,38 +76,42 @@ AEM as a Cloud Service Developer Console にアクセスするには、[Develope
 
 パブリッシュ層の場合、デフォルトでは、リポジトリブラウザーには公開コンテンツのみが表示されます。したがって、`/conf` や `/home` などの特定のフォルダーは表示されません。
 
-これらの場所を表示するには、次の操作を実行します。
+これらの場所を表示するには、AEM管理者の公開製品プロファイルを使用してください。 詳しくは、[ チームおよび製品プロファイルのドキュメント ](/help/onboarding/aem-cs-team-product-profiles.md) を参照してください。
 
-1. 目的の環境の横にある 3 ドットアイコンをクリックし、「**アクセスを管理**」を選択します。
+<!-- Drafting because of CQDOC-23204
+
+1. Click the three dots next to the environment of your choice and select **Manage Access**
 
    ![repobrowser7](/help/implementing/developing/tools/assets/repobrowser7.png)
 
-1. パブリッシュインスタンスを見つけて、クリックします。
+1. Find your publish instance, then click it
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. パブリッシュ管理者用の製品プロファイルを作成します。以下の例では、**DEV - AEM Administrators Publish** という名前が付いています。
+1. Create a product profile for publish administrators. In the example below, it is called **DEV - AEM Administrators Publish**
 
    ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
-1. フルアクセス権でパブリッシュリポジトリーブラウザーをナビゲートできるユーザーに対応する適切なユーザーを新しい製品プロファイルに追加します。
+1. Add the appropriate users, corresponding to who should be able to navigate the publish repository browser with full access, to the new product profile
 
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
-1. 数分待ってから、**AEM オーサー**&#x200B;コンソールを開きます。
-1. 新しい製品プロファイルに対応するグループを管理者のグループのメンバーとして追加するには、**ツール／セキュリティ／オーサー環境でのグループ**&#x200B;をクリックし、**管理者**&#x200B;グループをクリックします。次に、以下に示すようにグループを追加します。
+1. Wait for a few minutes, then open the **AEM author** console
+1. Add the group corresponding to the new product profile as a member of the administrator's group by clicking **Tools - Security - Groups on author**, then clicking the **administrators** group. Then, add the group as shown below
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
-1. **administrators** グループと新しい **DEV - AEM Administrators Publish** グループをアクティブにして、パブリッシュインスタンスで使用できるようにします。
+1. Activate the **administrators** and the new **DEV - AEM Administrators Publish** group so that they become available on publish
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. よいセキュリティプラクティスとして、新しい **DEV - AEM Administrators Publish** グループを&#x200B;**オーサー**&#x200B;環境の管理者のグループから削除して、新しいグループがパブリッシュ環境から分離されるようにします。
+1. As a good security practice, remove the new **DEV - AEM Administrators Publish** group from the administrator's group on **author** so the new group is isolated to publish 
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
-1. パブリッシュインスタンスのリポジトリーブラウザーにアクセスすると、`/home` や `/conf` などを含むすべてのフォルダーが表示されます。
+1. Upon accessing repository browser for a publish instance, all folders are visible, including `/home` and `/conf`.
+
+-->
 
 ### JCR プロパティの表示 {#view-jcr-properties}
 
