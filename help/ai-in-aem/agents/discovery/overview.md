@@ -29,7 +29,7 @@ Discovery Agent の主なメリットには、次のようなものがありま�
 >
 >AI によって生成された応答は、不正確であったり、誤解を招く可能性があります。 推奨される修正および回答を再確認してください。
 >
->[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドライン ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) も参照してください。
+>[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドライン &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) も参照してください。
 
 ## スキル {#skills-discovery-agent}
 
@@ -67,7 +67,7 @@ DAM ライブラリ担当者は、組織で設定されたメタデータ標準�
 
 AI アシスタントを使用して、AEMのエージェントにアクセスできます。 experience.adobe.comにログオンし、検索ボックスを使用して自然言語でプロンプトを指定することで、AI アシスタントの操作を開始できます。
 
-![ アクセス探索エージェント ](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
+![&#x200B; アクセス探索エージェント &#x200B;](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
 
 Discovery Agent にアクセスするための MCP エンドポイントについて詳しくは、Adobe サポートにお問い合わせください。
 
@@ -146,7 +146,7 @@ Discovery Agent を使用すると、自然言語プロンプトを使用して�
 
 アセットパスをクリックすると、AEM内のアセットの場所にシームレスに移動できます。
 
-![Discovery Agent を使用したアセットの検索 ](/help/ai-in-aem/agents/discovery/assets/search-results-discovery-agent.png)
+![Discovery Agent を使用したアセットの検索 &#x200B;](/help/ai-in-aem/agents/discovery/assets/search-results-discovery-agent.png)
 
 これらのアセットの詳細を使用すると、各アセットに移動してこれらの詳細を表示することなく、アセットが要件を満たしているかどうかを迅速に評価できます。
 
@@ -158,7 +158,7 @@ Discovery Agent を使用すると、自然言語プロンプトを使用して�
 
 検出エージェントは、コンテンツフラグメントにフルテキスト検索機能を提供し、指定されたプロンプトに最も一致する上位の結果を返します。 各結果には、コンテンツフラグメント名と、主要なメタデータフィールド（コンテンツフラグメントパス、作成者、作成日、バリエーション、最終変更日フィールド、最終変更日フィールドなど）が含まれます。
 
-![Discovery Agent を使用したコンテンツフラグメントの検索 ](/help/ai-in-aem/agents/discovery/assets/search-content-fragments-discovery-agent.png)
+![Discovery Agent を使用したコンテンツフラグメントの検索 &#x200B;](/help/ai-in-aem/agents/discovery/assets/search-content-fragments-discovery-agent.png)
 
 コンテンツフラグメントのパスをクリックすると、AEM内のコンテンツフラグメントの場所にシームレスに移動できます。
 
