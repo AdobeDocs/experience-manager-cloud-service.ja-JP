@@ -1,9 +1,9 @@
 ---
 title: AI で生成されたメタデータを使用してコンテンツの検出を強化
 description: AI で生成されたメタデータを使用してコンテンツの検出を強化する方法を説明します
-source-git-commit: e5b4d7692c9c57ba3e9c76940f28d72ad14d9fc0
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '357'
 ht-degree: 94%
 
 ---
@@ -21,7 +21,6 @@ AI で生成されたメタデータを有効にするには：
 
 * AEM のリリースバージョン `20626` 以上が必要です。
 
-* GenAI Rider 契約に署名する必要があります。詳しくは、アドビ担当者にお問い合わせください。
 
 ## AI で生成されたメタデータの使用 {#using-ai-generated-smart-tags}
 

@@ -4,10 +4,10 @@ description: 詳しくは、AEM Assets ビューでアセットを検索およ�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '1938'
-ht-degree: 89%
+source-wordcount: '1621'
+ht-degree: 87%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 89%
 
 ## 検索結果のフィルタリング {#refine-search-results}
 
-複数のフィルターを適用することで、検索結果を絞り込み、関連するアセットを見つけることができます。 管理者が設定するこれらのフィルターは、ファイル、フォルダー、コレクションに基づいています。 [&#x200B; 検索フィルターのカスタマイズ &#x200B;](custom-search-filters.md) を参照してください。
+複数のフィルターを適用することで、検索結果を絞り込み、関連するアセットを見つけることができます。 管理者が設定するこれらのフィルターは、ファイル、フォルダー、コレクションに基づいています。 [ 検索フィルターのカスタマイズ ](custom-search-filters.md) を参照してください。
 
 ![検索フィルター](assets/filters-panel.gif)
 
@@ -50,73 +50,77 @@ ht-degree: 89%
 
 検索したアセットを、`Name`、`Relevance`、`Size`、`Modified` および `Created` の昇順または降順に並べ替えることができます。デフォルトでは、検索したアセットは `Relevance` に基づいて並べ替えられます。
 
-## カスタムフィルターの管理 {#custom-filters}
+<!--
+  
+## Manage custom filters {#custom-filters}
 
-**必要な権限：** `Can Edit`、`Owner` または管理者。
+**Permissions required:**  `Can Edit`, `Owner`, or Administrator.
 
-アセットビューでは、ユーザーインターフェイスにカスタムフィルターを追加することもできます。[標準フィルター](#refine-search-results)に加えて、カスタムフィルターを適用し、検索結果を絞り込むことができます。
+Assets view also enable you to add custom filters to the user interface. You can then apply those custom filters in addition to the [standard filters](#refine-search-results) to refine your search results.
 
-アセットビューが提供するカスタムフィルターは次のとおりです。
+Assets view provides the following custom filters:
 
 <table>
     <tbody>
      <tr>
-      <th><strong>カスタムフィルター名</strong></th>
-      <th><strong>説明</strong></th>
+      <th><strong>Custom filter name</strong></th>
+      <th><strong>Description</strong></th>
      </tr>
      <tr>
-      <td>タイトル</td>
-      <td>アセットタイトルを使用してアセットをフィルタリングします。大文字と小文字を区別する検索条件で指定するタイトルは、結果に表示されるアセットの正確なタイトルと一致する必要があります。</td>
+      <td>Title</td>
+      <td>Filter assets using the asset title. The title that you specify in the case-sensitive search criteria must match the exact title of the asset to display in the results.</td>
      </tr>
      <tr>
-      <td>名前</td>
-      <td>アセットファイル名を使用してアセットをフィルタリングします。大文字と小文字を区別する検索条件で指定する名前は、結果に表示されるアセットの正確なファイル名と一致する必要があります。</td>
+      <td>Name</td>
+      <td>Filter assets using the asset file name. The name that you specify in the case-sensitive search criteria must match the exact file name of the asset to display in the results.</td>
      </tr>
      <tr>
-      <td>アセットサイズ</td>
-      <td>アセットをフィルタリングするには、検索条件でアセットに表示するサイズ範囲をバイト単位で指定します。</td>
+      <td>Asset Size</td>
+      <td>Filter assets by defining a size range, in bytes, in the search criteria for an asset to display in the results.</td>
      </tr>
      <tr>
-      <td>予測されるタグ</td>
-      <td>アセットスマートタグを使用してアセットをフィルタリングします。大文字と小文字を区別する検索条件で指定するスマートタグ名は、結果に表示されるアセットの正確なスマートタグ名と一致する必要があります。検索条件に複数のスマートタグを指定することはできません。</td>
+      <td>Predicted Tags</td>
+      <td>Filter assets using the asset smart tag. The smart tag name that you specify in the case-sensitive search criteria must match the exact smart tag name of the asset to display in the results. You cannot specify multiple smart tags in search criteria.</td>
      </tr>    
     </tbody>
    </table>
 
-<!--
+   <!--
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria. For example, if you define <b>ma*</b> as the search criteria, Assets view displays assets with title, such as, market, marketing, man, manchester, and so on in the results.
 
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria.
 
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria. You can specify multiple smart tags separated by a comma in the search criteria.
 
-   -->
+   
 
-### カスタムフィルターの追加 {#add-custom-filters}
+### Add custom filters {#add-custom-filters}
 
-カスタムプロパティを追加する手順は次のとおりです。
+To add custom filters:
 
-1. 「**[!UICONTROL フィルター]**」をクリックします。
+1. Click **[!UICONTROL Filters]**. 
 
-1. 「**[!UICONTROL カスタムフィルター]**」セクションで、「**[!UICONTROL 編集]**」または「**[!UICONTROL フィルターを追加]**」をクリックします。
+1. In the **[!UICONTROL Custom Filters]** section, click **[!UICONTROL Edit]** or **[!UICONTROL Add Filters]**.
 
-   ![カスタムフィルターの追加](assets/add-custom-filters.png)
+   ![Add custom filters](assets/add-custom-filters.png)
 
-1. **[!UICONTROL カスタムフィルター管理]**&#x200B;ダイアログボックスで、既存のフィルターのリストに追加するフィルターを選択します。「**[!UICONTROL カスタムフィルター]**」を選択して、すべてのフィルターを選択します。
+1. On the **[!UICONTROL Custom filters management]** dialog box, select the filters that you need to add to the existing list of filters. Select **[!UICONTROL Custom Filters]** to select all filters.
 
-1. 「**[!UICONTROL 確認]**」をクリックして、ユーザーインターフェイスにフィルターを追加します。
+1. Click **[!UICONTROL Confirm]** to add the filters to the user interface.
 
-### カスタムフィルターの削除 {#remove-custom-filters}
+### Remove custom filters {#remove-custom-filters}
 
-カスタムフィルターを削除する手順は次のとおりです。
+To remove custom filters:
 
-1. 「**[!UICONTROL フィルター]**」をクリックします。
+1. Click **[!UICONTROL Filters]**. 
 
-1. 「**[!UICONTROL カスタムフィルター]**」セクションで、「**[!UICONTROL 編集]**」をクリックします。
+1. In the **[!UICONTROL Custom Filters]** section, click **[!UICONTROL Edit]**.
 
-1. **[!UICONTROL カスタムフィルター管理]**&#x200B;ダイアログボックスで、既存のフィルターのリストから削除するフィルターを選択解除します。
+1. On the **[!UICONTROL Custom filters management]** dialog box, deselect the filters that you need to remove from the existing list of filters.
 
-1. 「**[!UICONTROL 確認]**」をクリックして、ユーザーインターフェイスからフィルターを削除します。
+1. Click **[!UICONTROL Confirm]** to remove the filters from the user interface.
+
+-->
 
 ## AI 検索 {#ai-search}
 
@@ -193,13 +197,17 @@ AI 検索を有効または無効にするには、次の手順を実行しま�
 
 1. 「**新しいアセットとして保存**」をクリックして、アセットを保存します。
 
-### アセットのアップロード {#upload-assets-firefly}
+<!--
 
-生成したアセットをアセットリポジトリにアップロードするには、次の手順に従います。
+### Upload assets {#upload-assets-firefly}
 
-1. 「**[!UICONTROL アップロード]**」をクリックします。
-1. アセットをアップロードする必要があるアセットフォルダーを選択し、「**[!UICONTROL フォルダーを選択]**」をクリックします。
-   ![アセットをアップロード](assets/upload-asset-firefly.jpg)
+To upload the generated asset to the assets repository:
+
+1. Click **[!UICONTROL Upload]**.
+1. Select the asset folder to which you need to upload the asset and click **[!UICONTROL Select Folder]**.
+ ![Upload asset](assets/upload-asset-firefly.jpg)
+
+ -->
 
 ## 保存済みの検索 {#saved-search}
 
@@ -386,7 +394,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」 ![ページを編集](assets/do-not-localize/edit-page.png) または「[!UICONTROL イシューを記録]」 ![GitHub イシューを作成](assets/do-not-localize/github-issue.png) を使用してドキュメントのフィードバックを提供する。
 
-* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&lang=ja#support)に問い合わせる
 
 
 
