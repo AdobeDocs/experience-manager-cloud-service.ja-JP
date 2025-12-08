@@ -2,10 +2,10 @@
 title: コンテンツハブ向けアセットの承認
 description: Assets as a Cloud Service でアセットを承認して、コンテンツハブで使用できるようにする方法について説明します。
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
-source-wordcount: '1230'
-ht-degree: 100%
+source-git-commit: aec2bd06ad498e92ce1e69ac587ee7fcd5106268
+workflow-type: tm+mt
+source-wordcount: '1194'
+ht-degree: 98%
 
 ---
 
@@ -83,10 +83,6 @@ AEM Assets as a Cloud Service のアセットビューを使用してアセッ�
 
    使用できるオプションについて詳しくは、[承認済みアセットのデフォルトの承認ターゲットと公開先](#default-approval-target-options-publish-destinations)を参照してください。
 
-   >[!NOTE]
-   >
-   >承認ターゲットの設定は、使用できる機能が制限されています。サポートチケットを作成して、有効または無効にすることができます。OpenAPI を備えた Dynamic Media が有効になっている場合は、デフォルトで有効になります。
-
    ![承認ステータス](/help/assets/assets/approval-status-delivery.png)
 
 1. 他のアセットプロパティを指定し、「**[!UICONTROL 保存]**」をクリックします。
@@ -125,13 +121,13 @@ AEM Assets as a Cloud Service のアセットビューを使用してアセッ�
 1. 右側の「**[!UICONTROL フォームを作成]**」セクションから **[!UICONTROL 1 行のテキストフィールド]**&#x200B;をフォームの「メタデータ」セクションにドラッグ＆ドロップします。
 1. 新しく追加されたフィールドをクリックし、**[!UICONTROL 設定]**&#x200B;パネルで次の更新を行います。
    1. **[!UICONTROL フィールドラベル]**&#x200B;を「_承認済みアセット_」に変更します。
-   1. **[!UICONTROL マッピング先のプロパティ]**&#x200B;を _.jcr:content/metadata/dam:status_ に更新します。
+   1. **[!UICONTROL プロパティにマッピング]** を_に更新します。/jcr:content/metadata/dam :status_。
    1. デフォルト値を「_承認済み_」に変更します。
 
 1. 手順 6 と同様に、右側の「**[!UICONTROL フォームを作成]**」セクションから **[!UICONTROL 1 行のテキストフィールド]**&#x200B;をフォームの「メタデータ」セクションにドラッグします。
 1. 新しく追加されたフィールドをクリックし、**[!UICONTROL 設定]**&#x200B;パネルで次の更新を行います。
    1. **[!UICONTROL フィールドラベル]**&#x200B;を「_アクティベーションターゲット_」に変更します。
-   1. 「**[!UICONTROL プロパティにマッピング]**」を _./jcr:content/metadata/dam:activationTarget_ に更新します。
+   1. **[!UICONTROL プロパティにマッピング]** を_に更新します。/jcr:content/metadata/dam :activationTarget_。
    1. デフォルト値を「_contenthub_」に変更します。
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
