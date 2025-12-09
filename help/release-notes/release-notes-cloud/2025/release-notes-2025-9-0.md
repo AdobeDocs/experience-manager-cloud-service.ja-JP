@@ -38,7 +38,7 @@ ht-degree: 89%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440921?captions=jpn&quality=12)
 
 -->
 
