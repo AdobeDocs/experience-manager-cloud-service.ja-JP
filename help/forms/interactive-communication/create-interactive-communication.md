@@ -27,7 +27,7 @@ ht-degree: 11%
 
 何千人もの顧客に銀行取引明細書、保険証券または公共料金を送信する必要があると想像してください。 それぞれが同じレイアウトですが、パーソナライズされたデータを持っています。 インタラクティブ通信（IC）は、それを効率的に可能にします。
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/introduction.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/introduction.png)
 
 これらのドキュメントを手動で作成すると、時間がかかり、多くの場合、特にパーソナライゼーションとデータ統合が必要な場合に、不整合が発生します。 インタラクティブ通信エディターを使用すると、インタラクティブ通信を作成するプロセスを効率化できます。
 
@@ -48,11 +48,11 @@ ht-degree: 11%
 1. **Forms/Formsとドキュメント** に移動します。
 1. **作成/インタラクティブ通信** をクリックします。
 
-   ![IC Docu の検索 ](/help/forms/interactive-communication/assets/comm.png)
+   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/comm.png)
 
 1. 作成画面で、「**テンプレート**」フィールドは空白のままにします。
 
-   ![IC Docu の検索 ](/help/forms/interactive-communication/assets/create-ic-document.png)
+   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/create-ic-document.png)
 
 1. タイトル、名前、作成者などの他の詳細を入力します。
 1. 「**作成**」をクリックしてインタラクティブ通信エディターの UI に移動し、デザインを開始します。
@@ -86,12 +86,12 @@ ht-degree: 11%
 1. **PDF プレビューを使用してプレビューし** 配信の通信を最終処理します。
 1. IC エディタが開き、通信の設計を開始できます。
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/ic-ui.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/ic-ui.png)
 +++
 
 インタラクティブ通信の作成を開始すると、ワークフローを合理化し、インパクトのある、ユーザー固有のエクスペリエンスを提供できます。
 
 ## 次の手順
 
-[ インタラクティブ通信テンプレートの作成 ](/help/forms/interactive-communication/create-interactive-communication-template.md)
-[ インタラクティブ通信フラグメントの作成 ](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+[&#x200B; インタラクティブ通信テンプレートの作成 &#x200B;](/help/forms/interactive-communication/create-interactive-communication-template.md)
+[&#x200B; インタラクティブ通信フラグメントの作成 &#x200B;](/help/forms/interactive-communication/create-interactive-communication-fragment.md)

@@ -29,7 +29,7 @@ ht-degree: 13%
 
 各要素を構造化されたデータソースに連結しながら、テキスト、画像、グラフ、テーブル、バーコードなどのコンポーネントを統合できます。 この動的バインディングにより、通信がすべての受信者に合わせて自動的に調整されます。
 
-![IC 文書の検索 ](/help/forms/interactive-communication/assets/introduction.png)
+![IC 文書の検索 &#x200B;](/help/forms/interactive-communication/assets/introduction.png)
 
 ## 目的とユースケース
 
@@ -58,13 +58,13 @@ ht-degree: 13%
 
 ## オンボーディング
 
-インタラクティブ通信（IC）機能は、早期アクセス（EA）プログラムを通じて利用できます。 アクセスをリクエストするには、公式メール ID から環境 ID と組織 ID を含むメール [0}aem-forms-ea@adobe.com} を送信します。 ](mailto:aem-forms-ea@adobe.com)Adobeで登録を確認したら、[ サービスへのオンボード ](/help/forms/setup-forms-cloud-service.md) ドキュメントに従って、AEM Forms環境でインタラクティブ通信を有効にします。
+インタラクティブ通信（IC）機能は、早期アクセス（EA）プログラムを通じて利用できます。 アクセスをリクエストするには、公式メール ID から環境 ID と組織 ID を含むメール [0&rbrace;aem-forms-ea@adobe.com&rbrace; を送信します。 &#x200B;](mailto:aem-forms-ea@adobe.com)Adobeで登録を確認したら、[&#x200B; サービスへのオンボード &#x200B;](/help/forms/setup-forms-cloud-service.md) ドキュメントに従って、AEM Forms環境でインタラクティブ通信を有効にします。
 
 ## 次の手順
 
-[ インタラクティブ通信の作成 ](/help/forms/interactive-communication/create-interactive-communication.md)
-[ インタラクティブ通信テンプレートの作成 ](/help/forms/interactive-communication/create-interactive-communication-template.md)
-[ インタラクティブ通信フラグメントの作成 ](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+[&#x200B; インタラクティブ通信の作成 &#x200B;](/help/forms/interactive-communication/create-interactive-communication.md)
+[&#x200B; インタラクティブ通信テンプレートの作成 &#x200B;](/help/forms/interactive-communication/create-interactive-communication-template.md)
+[&#x200B; インタラクティブ通信フラグメントの作成 &#x200B;](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
 
 <!-- 
 ## Where to Find IC Documentation, Samples, and Tutorials

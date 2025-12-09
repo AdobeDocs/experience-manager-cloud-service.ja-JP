@@ -28,7 +28,7 @@ ht-degree: 8%
 
 作成者は、テーブルコンポーネントをキャンバスにドラッグ&amp;ドロップし、行と列の数を設定し、ヘッダーとフッターの行を含めたり、レイアウトの方向を設定したりするなどのオプションを選択できます。 テーブルは、複数の通信間で一貫性を保つためのデフォルトテンプレートとして定義できます。
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/table.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/table.png)
 
 ## &#x200B;2. プロパティ
 

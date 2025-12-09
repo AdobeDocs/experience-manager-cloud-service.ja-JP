@@ -26,7 +26,7 @@ ht-degree: 7%
 
 インタラクティブ通信（IC）エディターの数値フィールドコンポーネントを使用すると、作成者は、制御された形式でユーザーから数値入力を収集できます。 電話番号、PIN コード、ポリシー ID、または財務数値を取得する場合を問わず、このフィールドでは数値のみが受け入れられます。 このコンポーネントは、スタイル設定、書式設定、検証およびデータバインディングもサポートするので、構造化された通信に不可欠です。
 
-![IC 文書の検索 ](/help/forms/interactive-communication/assets/numericfield.png)
+![IC 文書の検索 &#x200B;](/help/forms/interactive-communication/assets/numericfield.png)
 
 ## &#x200B;2. プロパティ
 

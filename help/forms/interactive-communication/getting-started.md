@@ -33,7 +33,7 @@ Adobe Experience Manager（AEM）Formsの **インタラクティブ通信（IC�
 
 ### ブラウザーの検証
 
-サポートされているブラウザーとクライアントプラットフォームを知るには、リンクされている記事 [ サポートされているクライアントプラットフォーム ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/supported-platforms) に従います
+サポートされているブラウザーとクライアントプラットフォームを知るには、リンクされている記事 [&#x200B; サポートされているクライアントプラットフォーム &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/supported-platforms) に従います
 
 >[!NOTE]
 >
@@ -42,14 +42,14 @@ Adobe Experience Manager（AEM）Formsの **インタラクティブ通信（IC�
 
 ### ユーザーの役割と権限の設定
 
-IC Editor 機能へのアクセスは、[AEM内のユーザーの役割 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions) によって制御されます。 インタラクティブ通信の作成と管理において、重要な役割を以下に示します。
+IC Editor 機能へのアクセスは、[AEM内のユーザーの役割 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions) によって制御されます。 インタラクティブ通信の作成と管理において、重要な役割を以下に示します。
 
 | **役割** | **説明** | **主な権限** |
 | --------------------- | ---------------------------------------------------------- | -------------------------------------------- |
 | **フォーム作成者** | インタラクティブ通信を作成および編集します。 | IC を作成、編集、プレビューおよび公開します。 |
 | **テンプレート作成者** | インタラクティブ通信用の再利用可能なテンプレートをデザインします。 | テンプレートの作成とロック、レイアウトの定義 |
 | **管理者** | ユーザーのアクセス、権限、設定を管理します。 | 役割の割り当て、テンプレートの管理、IC の公開を行います。 |
-| **FDM 作成者** | [ データ統合用のフォームデータモデル（FDM）を作成および管理 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) ます。 | データソースとモデルを作成、編集および設定します。 |
+| **FDM 作成者** | [&#x200B; データ統合用のフォームデータモデル（FDM）を作成および管理 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) ます。 | データソースとモデルを作成、編集および設定します。 |
 
 >[!NOTE]
 >
@@ -68,11 +68,11 @@ IC Editor 機能へのアクセスは、[AEM内のユーザーの役割 ](https:
 
 **インタラクティブ通信エディター** のインターフェイスを使用すると、作成者はすべてのデザインツールと設定オプションに直感的にアクセスできます。
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/navigate-the-interface.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/navigate-the-interface.png)
 
 ### 1.上部ツールバー
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/tool-bar.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/tool-bar.png)
 
 **場所：** 最上部のセクション
 
@@ -84,7 +84,7 @@ IC Editor 機能へのアクセスは、[AEM内のユーザーの役割 ](https:
 
 ### &#x200B;2. タブバー（デザイン/マスタータブとファイルコントロール）
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/tab-bar.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/tab-bar.png)
 
 **場所：** 上部ヘッダーの下
 
@@ -100,7 +100,7 @@ IC Editor 機能へのアクセスは、[AEM内のユーザーの役割 ](https:
 
 ### 3.左パネル（ナビゲーションおよびコンポーネントツール）
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/left-panel.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/left-panel.png)
 
 **場所：** インターフェイスの左側
 
@@ -122,7 +122,7 @@ IC Editor 機能へのアクセスは、[AEM内のユーザーの役割 ](https:
 
 ### 4.中央Workspace（デザインキャンバス）
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/canvas.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/canvas.png)
 
 **位置：** インターフェイスの中心
 
@@ -142,7 +142,7 @@ IC Editor 機能へのアクセスは、[AEM内のユーザーの役割 ](https:
 
 ### 5.右側のパネル（プロパティパネル）
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/right-panel.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/right-panel.png)
 
 **場所：** 画面の右側
 

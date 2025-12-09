@@ -20,7 +20,7 @@ ht-degree: 3%
 
 **関連付け UI** は、インタラクティブ通信（IC）エディターの上に構築された、専用のシンプルなインターフェイスです。 現場の担当者やサービスエージェントなど、お客様と向き合うプロフェッショナルを対象として、パーソナライズされ、準拠した正確なコミュニケーションをライブインタラクション中にリアルタイムで生成するように設計されています。
 
-![IC 文書の検索 ](/help/forms/interactive-communication/assets/associate-ui-preview.png)
+![IC 文書の検索 &#x200B;](/help/forms/interactive-communication/assets/associate-ui-preview.png)
 
 ## UI インターフェイスを関連付ける
 

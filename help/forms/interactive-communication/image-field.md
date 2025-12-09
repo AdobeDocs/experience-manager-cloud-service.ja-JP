@@ -28,7 +28,7 @@ ht-degree: 10%
 
 このコンポーネントは、**JPEG** や **PNG** などの一般的な形式をサポートし、画像の表示、保存、スタイル設定を定義する柔軟な設定オプションを提供します。 作成者は画像フィールドに **名前またはラベルを割り当て** ことで、レイアウトの明確さと整理を強化することもできます。
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/imagefield.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/imagefield.png)
 
 ## &#x200B;2. プロパティ
 

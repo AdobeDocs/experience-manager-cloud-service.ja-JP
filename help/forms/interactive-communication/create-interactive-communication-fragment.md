@@ -27,7 +27,7 @@ ht-degree: 18%
 
 >[!NOTE]
 >
-> [ 作成者は「forms-users」グループのメンバーである必要があります ](/help/forms/setup-forms-cloud-service.md#configure-users)
+> [&#x200B; 作成者は「forms-users」グループのメンバーである必要があります &#x200B;](/help/forms/setup-forms-cloud-service.md#configure-users)
 
 ## インタラクティブ通信フラグメントの作成
 
@@ -37,22 +37,22 @@ ht-degree: 18%
 1. **Forms/Formsとドキュメント** に移動します。
 1. 「**作成**」ボタンをクリックし、「**インタラクティブ通信フラグメント**」を選択します。
 
-   ![IC Docu の検索 ](/help/forms/interactive-communication/assets/fragment.png)
+   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/fragment.png)
 
 1. インタラクティブ通信フラグメントを選択すると、画面が表示され、タイトル、名前、説明、データモデル（バックエンドデータの構造化表現）、タグなどの主要なフラグメントの詳細を定義できます。
 
-   詳しくは、[ データモデル設定ガイド ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) を参照してください。
+   詳しくは、[&#x200B; データモデル設定ガイド &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) を参照してください。
 
-   ![IC Docu の検索 ](/help/forms/interactive-communication/assets/createfrgmnt.png)
+   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/createfrgmnt.png)
 
 1. 必須フィールドをすべて入力したら、「作成」ボタンをクリックします。
 1. IC エディターが開き、フラグメントのデザインを開始できます。
 
-   ![IC Docu の検索 ](/help/forms/interactive-communication/assets/frgmntui.png)
+   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/frgmntui.png)
 
 インタラクティブなコミュニケーションフラグメントを作成することで、デザインの一貫性を確保し、時間を節約し、動的でパーソナライズされたコミュニケーションを構築するプロセスを合理化できます。
 
 ## 次の手順
 
-[ インタラクティブ通信の作成 ](/help/forms/interactive-communication/create-interactive-communication.md)
-[ インタラクティブ通信テンプレートの作成 ](/help/forms/interactive-communication/create-interactive-communication-template.md)
+[&#x200B; インタラクティブ通信の作成 &#x200B;](/help/forms/interactive-communication/create-interactive-communication.md)
+[&#x200B; インタラクティブ通信テンプレートの作成 &#x200B;](/help/forms/interactive-communication/create-interactive-communication-template.md)

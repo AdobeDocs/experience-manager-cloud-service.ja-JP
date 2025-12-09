@@ -26,7 +26,7 @@ ht-degree: 7%
 
 インタラクティブ通信（IC）エディターのテキストフィールド コンポーネントを使用すると、作成者は名前、アドレス、コメント、数値 ID などの情報を表示できます。 テキストフィールドに表示される値は、事前定義済み（静的）か、データバインディングを使用した動的な入力です。 単一行のエントリ、検証ルール、柔軟な書式設定をサポートしており、パーソナライズされたコミュニケーションで最も広く使用されている多用途の要素の 1 つです。
 
-![IC 文書の検索 ](/help/forms/interactive-communication/assets/textfield.png)
+![IC 文書の検索 &#x200B;](/help/forms/interactive-communication/assets/textfield.png)
 
 ## &#x200B;2. プロパティ
 

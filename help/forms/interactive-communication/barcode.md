@@ -28,7 +28,7 @@ ht-degree: 7%
 
 顧客請求書、配送ラベル、メンバーシップカードのいずれを作成する場合でも、バーコードコンポーネントを使用すると、機械で読み取り可能なデータをドキュメントに直接埋め込むことで、プロセスを簡略化できます。
 
-![IC Docu の検索 ](/help/forms/interactive-communication/assets/barcode.png)
+![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/barcode.png)
 
 ## &#x200B;2. プロパティ
 

@@ -34,7 +34,7 @@ ht-degree: 10%
 シンプルな表示設定から複雑な条件付きロジックに至るまで、ルールを使用すると、作成者はリアルタイムに適応するエクスペリエンスを提供し、操作性、精度、エンゲージメントを強化できます。
 
 
-![IC 文書の検索 ](/help/forms/interactive-communication/assets/rule-creation.png)
+![IC 文書の検索 &#x200B;](/help/forms/interactive-communication/assets/rule-creation.png)
 
 
 ## &#x200B;2. プロパティ
@@ -64,7 +64,7 @@ ht-degree: 10%
 - **条件付きトリガー:** フィールドの有効化/無効化、メッセージの表示、別のセクションへの分岐など、ユーザーの入力やデータ値に対応するアクションを定義します。
 
 
-![IC 文書の検索 ](/help/forms/interactive-communication/assets/rule-creation1.png)
+![IC 文書の検索 &#x200B;](/help/forms/interactive-communication/assets/rule-creation1.png)
 
 
 ## 3.使用の状況
