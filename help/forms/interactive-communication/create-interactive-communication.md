@@ -1,11 +1,11 @@
 ---
-title: インタラクティブ通信の作成
+title: インタラクティブなコミュニケーションの作成
 description: パーソナライズされたデータ駆動型のコミュニケーションを作成します。 ガイドとチュートリアルを使用して、主な機能、オンボーディング手順、実際のユースケースを確認します。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
+source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 11%
@@ -13,7 +13,7 @@ ht-degree: 11%
 ---
 
 
-# インタラクティブ通信の作成
+# インタラクティブなコミュニケーションの作成
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ ht-degree: 11%
 
 何千人もの顧客に銀行取引明細書、保険証券または公共料金を送信する必要があると想像してください。 それぞれが同じレイアウトですが、パーソナライズされたデータを持っています。 インタラクティブ通信（IC）は、それを効率的に可能にします。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/introimg.png)
+![IC Docu の検索 ](/help/forms/interactive-communication/assets/introduction.png)
 
 これらのドキュメントを手動で作成すると、時間がかかり、多くの場合、特にパーソナライゼーションとデータ統合が必要な場合に、不整合が発生します。 インタラクティブ通信エディターを使用すると、インタラクティブ通信を作成するプロセスを効率化できます。
 
@@ -35,7 +35,7 @@ ht-degree: 11%
 
 * [作成者が forms-users グループのメンバーであることを確認します](/help/forms/setup-forms-cloud-service.md#configure-users)
 
-## インタラクティブ通信の作成
+## インタラクティブなコミュニケーションの作成
 
 必要な再利用レベルとデータ統合レベルに応じて、様々なシナリオから選択してインタラクティブ通信を作成します。
 
@@ -48,11 +48,11 @@ ht-degree: 11%
 1. **Forms/Formsとドキュメント** に移動します。
 1. **作成/インタラクティブ通信** をクリックします。
 
-   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/comm.png)
+   ![IC Docu の検索 ](/help/forms/interactive-communication/assets/comm.png)
 
 1. 作成画面で、「**テンプレート**」フィールドは空白のままにします。
 
-   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/create-ic-document.png)
+   ![IC Docu の検索 ](/help/forms/interactive-communication/assets/create-ic-document.png)
 
 1. タイトル、名前、作成者などの他の詳細を入力します。
 1. 「**作成**」をクリックしてインタラクティブ通信エディターの UI に移動し、デザインを開始します。
@@ -86,12 +86,12 @@ ht-degree: 11%
 1. **PDF プレビューを使用してプレビューし** 配信の通信を最終処理します。
 1. IC エディタが開き、通信の設計を開始できます。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/ic-ui.png)
+![IC Docu の検索 ](/help/forms/interactive-communication/assets/ic-ui.png)
 +++
 
 インタラクティブ通信の作成を開始すると、ワークフローを合理化し、インパクトのある、ユーザー固有のエクスペリエンスを提供できます。
 
 ## 次の手順
 
-[&#x200B; インタラクティブ通信テンプレートの作成 &#x200B;](/help/forms/interactive-communication/create-interactive-communication-template.md)
-[&#x200B; インタラクティブ通信フラグメントの作成 &#x200B;](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+[ インタラクティブ通信テンプレートの作成 ](/help/forms/interactive-communication/create-interactive-communication-template.md)
+[ インタラクティブ通信フラグメントの作成 ](/help/forms/interactive-communication/create-interactive-communication-fragment.md)

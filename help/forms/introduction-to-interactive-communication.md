@@ -7,14 +7,15 @@ hide: true
 index: false
 hidefromtoc: true
 exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
-source-git-commit: aa8f6e129febaf246b70da43dd1d34b6caaf066d
+source-git-commit: 3a4119cfddda5d2d55f9a74848afe59eb0c1b709
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
 
 ---
 
-# インタラクティブ通信
+
+# インタラクティブなコミュニケーション
 
 インタラクティブ通信を使用すると、業務上の書簡、ドキュメント、取引明細書、給付金通知、マーケティング用メール、請求書、ウェルカムキットなど、データ駆動型のインタラクティブ通信の作成、集計、配信を一元的に管理できます。
 
@@ -22,10 +23,9 @@ ht-degree: 3%
 
 Windows マシンにのみインストールできるAEM Forms デスクトップDesignerとは異なり、**インタラクティブ通信エディターは、インストールの必要がない任意のモダンブラウザーで動作します**。 このクラウドベースのアプローチにより、インストールの手間が省け、クロスプラットフォームのアクセシビリティが提供され、インターネットにアクセスできる状態で、あらゆる場所からの共同作業が可能になります。
 
-![インタラクティブ通信エディター](/help/forms/assets/ic-editor.png)
+![インタラクティブなコミュニケーションエディター](/help/forms/assets/ic-editor.png)
 
 金融機関が口座明細書を作成する際から政府機関がメリット通知を合理化する際まで、インタラクティブ通信は、高品質で安全な、法的に準拠した通信を簡単かつ効率的に作成するための便利なツールです。
-
 
 ## コア機能
 
@@ -51,7 +51,7 @@ Windows マシンにのみインストールできるAEM Forms デスクトッ�
 
 インタラクティブ通信エディターは、Forms as a Cloud Service デプロイメントの早期アクセスプログラムで使用できます。 アクセスをリクエストするには、Forms as a Cloud Service デプロイメントの組織 ID とプログラムの詳細を、公式アドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールで送信します。
 
-アクセス権を付与されたら、[&#x200B; 最初の通信の作成 &#x200B;](https://video.tv.adobe.com/v/3444094/) を開始します。
+アクセス権を付与されたら、[ 最初の通信の作成 ](https://video.tv.adobe.com/v/3444094/) を開始します。
 
 <!-- 
 
