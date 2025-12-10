@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 83ab0fb97b233828fe43c1b53e649c918ce7b100
+source-git-commit: c5f4a3502153ff3c7e9fbce164a9c9b63196b547
 workflow-type: tm+mt
-source-wordcount: '1976'
-ht-degree: 77%
+source-wordcount: '1968'
+ht-degree: 76%
 
 ---
 
@@ -76,7 +76,7 @@ AEM as a Cloud Serviceは、サーバーサイドのコレクションルール�
 
 | リクエストタイプ | コンテンツリクエスト | 説明 |
 | --- | --- | --- |
-| HTTP コード 100-299 | 次のものが含まれます。 | 完全または部分的な HTML コンテンツまたは JSON コンテンツを返す成功したリクエストが含まれます。<br>HTTP コード 206：これらのリクエストでは、完全なコンテンツの一部のみが配信されます。例えば、ビデオや大きな画像などです。部分的なコンテンツリクエストは、ページコンテンツのレンダリングに使用する HTML 応答または JSON 応答の一部を配信する際に含まれます。 |
+| HTTP コード 100-299 | 次のものが含まれます。 | 完全または部分的な HTML コンテンツまたは JSON コンテンツを返す成功したリクエストが含まれます。<br>HTTP コード 206：これらのリクエストでは、完全なコンテンツの一部のみが配信されます。ページコンテンツのレンダリングに使用されるHTMLまたは JSON 応答の一部を配信する場合、一部のリクエストが含まれます。 |
 | 自動化用の HTTP ライブラリ | 次のものが含まれます。 | ページコンテンツを取得するツールまたはライブラリによって行われるリクエスト。例には、次のようなものがあります。<br>• Amazon CloudFront<br>• Apache Http Client<br>• 非同期 HTTP クライアント<br>• Axios<br>• アズレウス<br>• Curl<br>• GitHub ノードフェッチ<br>• Guzzle<br>• Go-http-client<br>• ヘッドレスクロム<br>• Java™ Client<br>• ジャージー<br>• Node Oembed<br>• okhttp<br>• Python リクエスト<br>• Reactor Netty<br>• Wget<br>• WinHTTP<br>•高速 HTTP<br>• GitHub ノードフェッチ<br>• Reactor Netty |
 | 監視ツールおよびヘルスチェックツール | 次のものが含まれます。 | ページのヘルスまたは可用性を監視するのに使用されるリクエスト。詳しくは、<br>[除外されたコンテンツリクエストのタイプ](#excluded-content-request)を参照してください。<br>例には、次のようなものがあります。<br>• `Amazon-Route53-Health-Check-Service`<br>• EyeMonIT_bot_version_0.1_[（https://eyemonit.com/）](https://eyemonit.com/)<br>• Investis-Site24x7<br>• Mozilla/5.0 以降（互換；UptimeRobot/2.0；[https://uptimerobot.com/](https://uptimerobot.com/)）<br>• ThousandEyes-Dragonfly-x1<br>• OmtrBot/1.0<br>• WebMon/2.0.0 |
 | `<link rel="prefetch">` リクエスト | 次のものが含まれます。 | お客様がコンテンツをプリロードまたはプリフェッチすると（例えば、`<link rel="prefetch">` を使用）、これらのサーバーサイドリクエストがカウントされます。このアプローチでは、プリフェッチされるページの数に応じて、トラフィックが増加する場合があります。 |
@@ -104,7 +104,7 @@ AEM as a Cloud Serviceは、サーバーサイドのコレクションルール�
 
 ## コンテンツリクエストの管理 {#managing-content-requests}
 
-上記の節 [Cloud Service コンテンツリクエストの相違 &#x200B;](#content-requests-variances) で説明したように、コンテンツリクエストは、様々な理由により、予期よりも多くなる可能性があります。一般的なスレッドは、CDN にヒットするトラフィックです。  AEMのお客様には、ライセンス予算に合わせてコンテンツリクエストをモニタリングし、管理することが有利です。  コンテンツリクエストの管理は、通常、実装技術と [&#x200B; トラフィックフィルタールール &#x200B;](/help/security/traffic-filter-rules-including-waf.md) を組み合わせたものです。
+上記の節 [Cloud Service コンテンツリクエストの相違 ](#content-requests-variances) で説明したように、コンテンツリクエストは、様々な理由により、予期よりも多くなる可能性があります。一般的なスレッドは、CDN にヒットするトラフィックです。  AEMのお客様には、ライセンス予算に合わせてコンテンツリクエストをモニタリングし、管理することが有利です。  コンテンツリクエストの管理は、通常、実装技術と [ トラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md) を組み合わせたものです。
 
 ### コンテンツリクエストを管理する実装手法 {#implementation-techniques-to-manage-crs}
 
@@ -117,7 +117,7 @@ AEM as a Cloud Serviceは、サーバーサイドのコレクションルール�
 
 ### コンテンツリクエストを管理するトラフィックフィルタールール {#traffic-filter-rules-to-manage-crs}
 
-* 一般的なボットパターンは、空のユーザーエージェントを使用することです。  空のユーザーエージェントが役に立つかどうかを確認するには、実装とトラフィックパターンをレビューする必要があります。  このトラフィックをブロックする場合は、推奨される [&#x200B; 構文 &#x200B;](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) を次に示します。
+* 一般的なボットパターンは、空のユーザーエージェントを使用することです。  空のユーザーエージェントが役に立つかどうかを確認するには、実装とトラフィックパターンをレビューする必要があります。  このトラフィックをブロックする場合は、推奨される [ 構文 ](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) を次に示します。
 
 ```
 trafficFilters:
@@ -130,4 +130,4 @@ trafficFilters:
       action: block
 ```
 
-* ある日ボットが非常に激しくサイトに当たり、次の日には消えてしまう場合もあります。  これにより、特定の IP アドレスまたはユーザーエージェントをブロックしようとする試みがフラストレーションを受ける可能性があります。  一般的なアプローチの 1 つは、[&#x200B; レート制限ルール &#x200B;](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules) を導入することです。  [&#x200B; 例 &#x200B;](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) を確認し、リクエストの急速な割合に対する許容値に一致するルールを作成します。  一般的なレート制限を許可する例外については、[&#x200B; 条件構造 &#x200B;](/help/security/traffic-filter-rules-including-waf.md#condition-structure) の構文を参照してください。
+* ある日ボットが非常に激しくサイトに当たり、次の日には消えてしまう場合もあります。  これにより、特定の IP アドレスまたはユーザーエージェントをブロックしようとする試みがフラストレーションを受ける可能性があります。  一般的なアプローチの 1 つは、[ レート制限ルール ](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules) を導入することです。  [ 例 ](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) を確認し、リクエストの急速な割合に対する許容値に一致するルールを作成します。  一般的なレート制限を許可する例外については、[ 条件構造 ](/help/security/traffic-filter-rules-including-waf.md#condition-structure) の構文を参照してください。
