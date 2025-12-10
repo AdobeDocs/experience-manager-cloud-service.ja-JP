@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 372d8969b1939e9a24d7910a1678a17c0dc9f9fd
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 100%
+source-wordcount: '1282'
+ht-degree: 92%
 
 ---
 
@@ -120,7 +120,7 @@ ht-degree: 100%
 * **終了**&#x200B;エラーが原因で解決できない問題がワークフローに発生した場合にワークフローを終了します。例は、環境条件（リポジトリー内の情報がワークフローインスタンスで無効になったなど）にワークフローが依存している可能性がある場合です。
 * **終了して再試行**&#x200B;は、元のペイロード、タイトルおよび説明を使用して新しいワークフローインスタンスが開始される点を除き、**終了**&#x200B;と同様です。
 
-エラーを調査し、その後ワークフローを再開または停止するには、次のステップに従います。
+エラーを調査し、その後ワークフローを再開または終了するには、次のステップに従います。
 
 1. ナビゲーションを使用して、**ツール**／**ワークフロー**&#x200B;を選択します。
 
@@ -145,39 +145,14 @@ ht-degree: 100%
 >このサービスはファクトリサービスなので、`sling:OsgiConfig` ノードの名前には次のような ID サフィックスが必要です。
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
-<table>
- <tbody>
-  <tr>
-   <th>プロパティ名（web コンソール）</th>
-   <th>OSGi のプロパティ名</th>
-   <th>説明</th>
-  </tr>
-  <tr>
-   <td>ジョブ名</td>
-   <td>scheduledpurge.name</td>
-   <td>スケジュール設定されたパージのわかりやすい名前。</td>
-  </tr>
-  <tr>
-   <td>ワークフローのステータス</td>
-   <td>scheduledpurge.workflowStatus</td>
-   <td><p>パージするワークフローインスタンスのステータス。次の値を指定できます。</p>
-    <ul>
-     <li>完了：完了したワークフローインスタンスがパージされます。</li>
-     <li>実行中：実行中のワークフローインスタンスがパージされます。</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>パージするモデル</td>
-   <td>scheduledpurge.modelIds</td>
-   <td><p>パージするワークフローモデルの ID。この ID はモデルノードのパスです（例：<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br />）。すべてのワークフローモデルのインスタンスをパージする場合は、値を指定しません。</p> <p>複数のモデルを指定するには、Web コンソールの + ボタンをクリックします。 </p> </td>
-  </tr>
-  <tr>
-   <td>ワークフロー経過日数</td>
-   <td>scheduledpurge.daysold</td>
-   <td>パージするワークフローインスタンスの有効期間（日数）。</td>
-  </tr>
- </tbody>
-</table>
+| プロパティ名（web コンソール） | OSGi のプロパティ名 | 説明 |
+|--- |--- |--- |
+| ジョブ名  | `scheduledpurge.name` | スケジュール設定されたパージのわかりやすい名前。 |
+| ワークフローのステータス | `scheduledpurge.workflowStatus` | パージするワークフローインスタンスのステータス。次の値が有効です。<br><br>- COMPLETED：完了したワークフローインスタンスはパージされます。<br> – 実行中：実行中のワークフローインスタンスはパージされます。 |
+| パージするモデル | `scheduledpurge.modelIds` | パージするワークフローモデルの ID。<br>ID は model ノードのパスで、例は次のようになります。<br> `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model` <br><br> すべてのワークフローモデルのインスタンスをパージする値を指定しません。<br> 複数のモデルを指定するには、web コンソールの「`+`」ボタンをクリックします。 |
+| ワークフロー経過日数 | `scheduledpurge.daysold` | パージするワークフローインスタンスの有効期間（日数）。 |
+| ワークフローペイロードパッケージ | `scheduledpurge.purgePackagePayload` | ペイロードパッケージをパージする必要があるかどうかを示します（`true` または `false`）。 |
+
 
 ## インボックスの最大サイズの設定 {#setting-the-maximum-size-of-the-inbox}
 
@@ -199,7 +174,7 @@ ht-degree: 100%
 
 ワークフローモデルのレベルでは、モデル（およびそのランタイムインスタンス）にメタデータの外部ストレージが含まれていることを示すフラグが用意されています。外部ストレージ用にマークされたモデルのワークフローインスタンスに対するワークフロー変数は JCR に保持されません。
 
-*userMetadataPersistenceEnabled* プロパティがワークフローモデルの *jcr:content* ノードに格納されます。このフラグは、ワークフローメタデータに *cq:userMetaDataCustomPersistenceEnabled* として保持されます。
+プロパティ *userMetadataPersistenceEnabled* は、ワークフローモデルの *jcr:content ノード* に格納されます。 このフラグは、ワークフローメタデータに *cq:userMetaDataCustomPersistenceEnabled* として保持されます。
 
 以下の図は、ワークフローにフラグを設定する方法を示しています。
 
