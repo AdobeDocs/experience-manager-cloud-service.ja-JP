@@ -4,10 +4,7 @@ description: AEM Formsでインタラクティブなコミュニケーション�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+source-git-commit: 19270498fa60f860b31400ad40705ecd2f821cf8
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 10%
@@ -31,7 +28,7 @@ ht-degree: 10%
 
 IC のデータバインディングは、値を単に接続するだけでなく、ビジュアルマッピング、事前入力、同期をサポートしており、バックエンドのシステムやデータモデルと連携しながら、作成者がより迅速に設計できます。
 
-![IC 文書の検索 &#x200B;](/help/forms/interactive-communication/assets/data-binding1.png)
+![IC 文書の検索 ](/help/forms/interactive-communication/assets/data-binding1.png)
 
 ## &#x200B;2. プロパティ
 
