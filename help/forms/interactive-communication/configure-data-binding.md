@@ -28,7 +28,7 @@ ht-degree: 10%
 
 IC のデータバインディングは、値を単に接続するだけでなく、ビジュアルマッピング、事前入力、同期をサポートしており、バックエンドのシステムやデータモデルと連携しながら、作成者がより迅速に設計できます。
 
-![IC 文書の検索 ](/help/forms/interactive-communication/assets/data-binding1.png)
+![IC 文書の検索 &#x200B;](/help/forms/interactive-communication/assets/data-binding1.png)
 
 ## &#x200B;2. プロパティ
 
