@@ -4,10 +4,10 @@ description: AEM as a Cloud Serviceのメンテナンスタスクと、その設
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: f6e8066ecdfdbd0c7e79c2557dc19eec81657047
+source-git-commit: 5de6ff7e6ac777c90b41bfeb9a56b909c83ed7d3
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 99%
+source-wordcount: '2054'
+ht-degree: 96%
 
 ---
 
@@ -28,6 +28,8 @@ ht-degree: 99%
 >[!CAUTION]
 >
 >アドビは、パフォーマンスの低下などの問題を軽減するために、顧客のメンテナンスタスク設定を上書きする権利を保留します。
+
+### メンテナンスタスク {#maintenance-tasks}
 
 次の表に、使用可能なメンテナンスタスクを示します。
 
@@ -91,6 +93,10 @@ ht-degree: 99%
   </tbody>
 </table>
 
+### メンテナンスウィンドウの設定 {#maintenance-window-configurations}
+
+次の表に、使用可能なメンテナンスウィンドウ設定を示します。
+
 <table style="table-layout:auto">
  <tbody>
   <tr>
@@ -138,15 +144,15 @@ ht-degree: 99%
     </tbody>
 </table>
 
-**ロケーション**:
+### ロケーション {#locations}
 
 * 日単位 - /apps/settings/granite/operations/maintenance/granite_daily
 * 週単位 - /apps/settings/granite/operations/maintenance/granite_weekly
 * 月単位 - /apps/settings/granite/operations/maintenance/granite_monthly
 
-**コードサンプル**：
+### コードサンプル {#code-samples}
 
-コードサンプル 1（日単位）
+**コードサンプル 1 （毎日）**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -161,7 +167,7 @@ ht-degree: 99%
  />
 ```
 
-コードサンプル 2（週単位）
+**コードサンプル 2 （毎週）**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -176,7 +182,7 @@ ht-degree: 99%
    windowStartTime="14:30"/>
 ```
 
-コードサンプル 3（月単位）
+**コードサンプル 3 （毎月）**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -221,54 +227,54 @@ ht-degree: 99%
 > 
 >同様に、設定ファイルに監査ログのパージノードをデプロイしたら、それを削除せずに宣言したままにする必要があります。
 
-**1** `mt.yaml` などの名前のファイルを作成します。
+1. `mt.yaml` などの名前のファイルを作成します。
 
-**2** [設定パイプラインの使用](/help/operations/config-pipeline.md#folder-structure)で説明されているように、`config` または類似の名前の最上位フォルダーの下のどこかにファイルを配置します。
+1. `config` 設定パイプラインの使用 [ の説明に従って、ファイルを ](/help/operations/config-pipeline.md#folder-structure) または類似の名前の最上位フォルダーの下のどこかに配置します。
 
-**3** - 設定ファイルで次のプロパティを宣言します。
+1. 設定ファイルのプロパティを宣言します。次にプロパティを示します。
 
-* データノードの上のいくつかのプロパティ -- 説明については、[設定パイプラインの使用](/help/operations/config-pipeline.md#common-syntax)を参照してください。`kind`プロパティの値は *MaintenanceTasks* に、バージョンは *1* に設定する必要があります。
+   * データノードの上のいくつかのプロパティ -- 説明については、[設定パイプラインの使用](/help/operations/config-pipeline.md#common-syntax)を参照してください。`kind`プロパティの値は *MaintenanceTasks* に、バージョンは *1* に設定する必要があります。
 
-* `versionPurge` と `auditLogPurge` オブジェクトの両方を含むデータオブジェクト。
+   * `versionPurge` と `auditLogPurge` オブジェクトの両方を含むデータオブジェクト。
 
-以下の `versionPurge` と `auditLogPurge` オブジェクトの定義と構文を参照してください。
+   以下の `versionPurge` と `auditLogPurge` オブジェクトの定義と構文を参照してください。
 
-次の例のように設定を構築する必要があります。
+   次の例のように設定を構築する必要があります。
 
-```
-kind: "MaintenanceTasks"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  versionPurge:
-    maximumVersions: 15
-    maximumAgeDays: 20
-    paths: ["/content"]
-    minimumVersions: 1
-    retainLabelledVersions: false
-  auditLogPurge:
-    rules:
-      - replication:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
-      - pages:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
-      - dam:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
-```
+   ```
+   kind: "MaintenanceTasks"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     versionPurge:
+       maximumVersions: 15
+       maximumAgeDays: 20
+       paths: ["/content"]
+       minimumVersions: 1
+       retainLabelledVersions: false
+     auditLogPurge:
+       rules:
+         - replication:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
+         - pages:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
+         - dam:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
+   ```
 
-設定を有効にするには、次の点に注意してください。
+   設定を有効にするには、次の点に注意してください。
 
-* すべてのプロパティを定義する必要があります。デフォルトは継承されません。
-* 以下のプロパティテーブルのタイプ（整数、文字列、ブール値など）を考慮する必要があります。
+   * すべてのプロパティを定義する必要があります。デフォルトは継承されません。
+   * 以下のプロパティテーブルのタイプ（整数、文字列、ブール値など）を考慮する必要があります。
 
-**4** - [設定パイプラインの記事](/help/operations/config-pipeline.md#managing-in-cloud-manager)の説明に従って、Cloud Manager で設定パイプラインを作成します。
+1. [config パイプラインの記事 ](/help/operations/config-pipeline.md#managing-in-cloud-manager) の説明に従って、Cloud Managerで config パイプラインを作成します。
 
 ### バージョンのパージ {#version-purge}
 
@@ -310,7 +316,6 @@ data:
 | maximumVersions | 5 | 0（制限なし） | はい | 整数 | n 番目に新しいバージョンより古いバージョンは、すべて削除されます。この値が 0 の場合、バージョンの数に基づいたパージは実行されません。 |
 | minimumVersions | 1 | 1 | はい | 整数 | 期間にかかわらず保持するバージョン数の最小数。1 つ以上のバージョンが常に保持されます。値は 1 以上にする必要があります。 |
 | retainLabeledVersioned | false | false | はい | ブール値 | 明示的にラベル付けされたバージョンをパージから除外するかどうかを決定します。リポジトリの最適化を向上させるには、この値を false に設定することをお勧めします。 |
-
 
 **プロパティのインタラクション**
 
@@ -369,7 +374,6 @@ minimumVersions = 1
 許可されるプロパティを以下に示します。
 
 *デフォルト*&#x200B;を示す列は、デフォルトが適用される今後のデフォルト値を示します。*未定*&#x200B;は、まだ決定されていない環境 ID を反映します。
-
 
 | プロパティ | TBD 以降の環境の今後のデフォルト | TBD 以前の環境の今後のデフォルト | 必須 | タイプ | 値 |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
