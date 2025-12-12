@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター 2025.12.04 リリースノート
-description: ユニバーサルエディター 2025.12.04 リリースのリリースノートです。
+title: ユニバーサルエディター 2025.12.12 リリースノート
+description: ユニバーサルエディター 2025.12.11 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e500b971e36fdb3d867e2d6b2a21eced66005182
+source-git-commit: 577bc81c35ad052a96b85ed4de13b21f06e385aa
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 57%
+source-wordcount: '323'
+ht-degree: 21%
 
 ---
 
 
-# ユニバーサルエディター 2025.12.04 リリースノート {#release-notes}
+# ユニバーサルエディター 2025.12.12 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2025 年 12 月 4 日リリースのリリースノートです。
+ユニバーサルエディターの 2025 年 12 月 12 日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -26,16 +26,27 @@ ht-degree: 57%
 
 ## 新機能 {#what-is-new}
 
-* 認証ヘッダーが無効になり、[&#x200B; ローカル開発者ログイン &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) が優先されました
-* 右クリックの構造化ツリーでコンテキストメニューが使用できる [&#x200B; ようになりました。](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
-* ホットキーが [&#x200B; 重複するコンポーネント &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) に追加されました。
+* [ リッチテキストエディター ](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) の既存のテーブルがサポートされるようになりました。
+* Tab キーが、[ リッチテキストエディター ](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) でリストのネストに対して有効になっています。
+* 開発者ログイン機能を [meta タグ `dev-login`.](/help/implementing/universal-editor/customizing.md#meta-tags) から無効にできるようになりました。
+* オーバーレイセクションを右クリックすると、[ コンテキストオプションメニュー ](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options) が表示されるようになりました。
+* [ 範囲インデント ](/help/implementing/universal-editor/configure-rte.md#indentation) が [ リッチテキストエディターでサポートされるようになりました。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 
-### 新規 RTE {#new-rte}
+## 早期導入機能 {#early-adopter}
 
-リンクダイアログにピッカーを備えた新規 ProseMirror RTE が右側のパネルで使用できるようになりました。[この RTE には、柔軟な設定オプションが用意されています。](/help/implementing/universal-editor/configure-rte.md)
+以下に示す今後の機能のテストおよびフィードバックの提供に興味がある場合は、Adobe IDに関連付けられたメールアドレスからAdobe カスタマーサクセスマネージャーにメールを送信してください。
+
+* シャローコピーがコンテンツフラグメントに実装されました。
 
 ## その他の改善点 {#other-improvements}
 
-* RTE がキャンバスに正しく保存されない問題が解決されました。
-* コンテンツピッカーフォルダーツリーのクリッピングを修正しました。
-* `componentId` は、追加アクション中に提供されるようになりました。
+* 複数のフィールドがコンテキスト内で変更された場合、プロパティパネルが同期されるようになりました。
+* AEM 6.5 インスタンスで、期待どおりにコンテンツフラグメントピッカーが開くようになりました。
+* エスケープキーが、リッチテキストエディターのダイアログを閉じるようになりました。
+* **コンポーネントを削除** アクションは、コンポーネントが選択されている場合にのみ使用できるようになりました。
+* 正しい（古い、または新しい）コンテンツフラグメントエディターが、使用されているインスタンスに基づいて開くようになりました（ホスト名がAEM as a Cloud Service パターンの場合は新しいエディターを使用し、それ以外の場合は従来のエディターを使用します）。
+* 重複アクションにフィルター検証が追加されます。
+* 長いタイトルがプロパティパネルで切り詰められるようになりました。
+* 値が 10 を超えるマルチサイトマネージャーのアレイが適切に処理されるようになりました。
+* 同じ名前で複数のコンポーネントを作成する際の競合エラーが適切に処理されるようになりました。
+* 値が 10 を超えるマルチサイトマネージャーの配列の処理が追加されました。

@@ -4,9 +4,9 @@ description: ユニバーサルエディターでリッチテキストエディ�
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: edcba16831a40bd03c1413b33794268b6466d822
+source-git-commit: 482c9604bf4dd5e576b560d350361cdc598930e3
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ユニバーサルエディターには、作成者がテキストの編集時に書式設定の変更を適用できるリッチテキストエディター（RTE）がインプレースおよびプロパティパネルで用意されています。
 
-この RTE は、[&#x200B; コンポーネントフィルターを使用して設定できます。](/help/implementing/universal-editor/filtering.md) このドキュメントでは、使用可能な設定オプションと例について説明します。
+この RTE は、[ コンポーネントフィルターを使用して設定できます。](/help/implementing/universal-editor/filtering.md) このドキュメントでは、使用可能な設定オプションと例について説明します。
 
 ## 設定の構造 {#structure}
 
@@ -28,7 +28,7 @@ RTE 設定は、次の 2 つの部分で構成されます。
 * [`toolbar`](#toolbar): ツールバー設定は、UI で使用できる編集オプションとその編成方法を制御します。
 * [`actions`](#actions): アクション設定を使用すると、個々の編集アクションの動作と外観をカスタマイズできます。
 
-これらの設定は、プロパティ [&#x200B; を使用して、](/help/implementing/universal-editor/filtering.md) コンポーネントフィルター `rte` の一部として定義できます。
+これらの設定は、プロパティ [ を使用して、](/help/implementing/universal-editor/filtering.md) コンポーネントフィルター `rte` の一部として定義できます。
 
 ```json
 [
@@ -176,6 +176,44 @@ RTE 設定は、次の 2 つの部分で構成されます。
 * `wrapInPicture`: `false` （デフォルト） – 単純な `<img>` 要素を生成します
 * `wrapInPicture`:`true` - レスポンシブデザイン用に画像を `<picture>` 要素に含める
 
+### インデントの設定 {#indentation}
+
+インデントには、インデント動作の範囲を制御する機能レベルの設定に加えて、ショートカットとラベル用の個々のアクション設定があります。
+
+```json
+{
+  "actions": {
+    // Feature-level configuration
+    "indentation": {
+      "scope": "all"  // Controls what content can be indented (default: "all")
+    },
+
+    // Individual action configurations
+    "indent": {
+      "shortcut": "Tab",           // Custom keyboard shortcut
+      "label": "Increase Indent"   // Custom button label
+    },
+    "outdent": {
+      "shortcut": "Shift-Tab",     // Custom keyboard shortcut
+      "label": "Decrease Indent"   // Custom button label
+    }
+  }
+}
+```
+
+#### インデント範囲オプション {#indentation-options}
+
+* `scope`: `all` （デフォルト） – インデント/インデント解除はすべてのコンテンツに適用されます。
+   * リスト：リスト項目をネスト/ネスト解除
+   * 段落と見出し：一般的なインデントレベルの増減
+* `scope`: `lists` - インデント/インデント解除はリスト項目にのみ適用されます：
+   * リスト：リスト項目をネスト/ネスト解除
+   * 段落と見出し：インデントなし（ボタンが無効になっている場合）
+
+>[!NOTE]
+>
+>Tab/Shift+Tab キーを使用したリストネストは、一般的なインデント設定とは無関係に機能します。
+
 ### その他のアクション {#other}
 
 その他のアクションはすべて、基本のカスタマイズをサポートしています。 以下の節を使用できます。
@@ -307,6 +345,35 @@ RTE 設定は、次の 2 つの部分で構成されます。
 * リスト項目ごとに複数の段落
 * 一貫したブロックレベルのスタイル設定
 
+### `wrapInPicture`{#wrapinpicture}
+
+画像の `wrapInPicture` オプションは、画像コンテンツ用に生成されるHTML構造を制御します。
+
+#### wrapInPicture: false （デフォルト） {#wrapinpicture-false}
+
+```html
+<img src="image.jpg" alt="Description" />
+```
+
+#### wrapInPicture: true {#wrapinpicture-true}
+
+```html
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+```
+
+必要に応じて、`wrapInPicture: true` を使用します。
+
+* `<source>` 要素によるレスポンシブ画像のサポート。
+* アートディレクション機能。
+* 高度な画像処理機能で将来のニーズにも対応。
+* 一貫した画像要素構造。
+
+>[!NOTE]
+>
+>`wrapInPicture: true` を有効にすると、様々なメディアクエリや形式に対応した追加の `<source>` 要素で画像を強化でき、レスポンシブデザインの柔軟性が高まります。
+
 ### リンクターゲットオプション {#link-target}
 
 リンクの `hideTarget` オプションは、生成されるリンクに `target` 属性を含めるかどうか、およびリンク作成用ダイアログにターゲット選択用のフィールドを含めるかどうかを制御します。
@@ -318,11 +385,60 @@ RTE 設定は、次の 2 つの部分で構成されます。
 <a href="https://example.com" target="_blank">External link</a>
 ```
 
-### `hideTarget: true` {#hideTarget-true}
+#### `hideTarget: true` {#hideTarget-true}
 
 ```html
 <a href="https://example.com">Link text</a>
 ```
+
+### 画像上のリンクの無効化 {#disableforimages}
+
+リンクの `disableForImages` オプションは、ユーザーが画像および画像要素にリンクを作成できるかどうかを制御します。 これは、インライン `<img>` 要素とブロックレベル `<picture>` 要素の両方に適用されます。
+
+#### `disableForImages: false`（デフォルト） {#disableforimages-false}
+
+ユーザーは画像を選択してリンクに含めることができます。
+
+```html
+<!-- Inline image with link -->
+<a href="https://example.com">
+  <img src="image.jpg" alt="Description" />
+</a>
+
+<!-- Block-level picture with link -->
+<a href="https://example.com">
+  <picture>
+    <img src="image.jpg" alt="Description" />
+  </picture>
+</a>
+```
+
+#### disableForImages: true {#disableforimages-true}
+
+画像または画像を選択すると、リンク ボタンが無効になります。 ユーザーは、テキストコンテンツにのみリンクを作成できます。
+
+```html
+<!-- Images remain standalone without links -->
+<img src="image.jpg" alt="Description" />
+
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+
+<!-- Links work normally on text -->
+<a href="https://example.com">Link text</a>
+```
+
+`disableForImages: true` を使用すると、次のことが可能です。
+
+* リンクされた画像を防いで、視覚的な一貫性を維持します。
+* 画像をナビゲーションから分離することでコンテンツ構造を簡素化します。
+* 画像のリンクを制限するコンテンツポリシーの適用
+* コンテンツのアクセシビリティの複雑さを軽減する。
+
+>[!NOTE]
+>
+>この設定は、画像上に新しいリンクを作成する機能にのみ影響します。 コンテンツ内の画像から既存のリンクが削除されるわけではありません。
 
 ### タグオプション {#tag}
 

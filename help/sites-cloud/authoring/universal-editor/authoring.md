@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
+source-git-commit: 87368be0b4c934bb4d4799833a90edfee72348e6
 workflow-type: tm+mt
-source-wordcount: '2534'
-ht-degree: 95%
+source-wordcount: '2625'
+ht-degree: 90%
 
 ---
 
@@ -75,11 +75,15 @@ ht-degree: 95%
 
 #### プロパティパネル {#properties-rail}
 
-[プロパティパネル](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)には、選択したテキストの項目が表示されます。エントリをタップすると、テキストを編集するための大きいキャンバスを表示するダイアログが開きます。
+[ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) に、選択したリッチテキストコンポーネントのエントリが表示されます。
+
+![ プロパティパネルのリッチテキストコンポーネント ](assets/rich-text-properties-panel.png)
+
+エントリをタップすると、リッチテキストを編集するための大きなキャンバスが表示されるダイアログが開きます。
 
 ![リッチテキスト編集ダイアログ](assets/rich-text-canvas.png)
 
-変更を破棄または保存するには、それぞれ「**キャンセル**」または「**完了**」をタップまたはクリックします。
+変更を破棄または保存するには、それぞれ **キャンセル** または **完了** をタップまたはクリックします。 Esc キーを押して変更を保存し、ダイアログを閉じることもできます。
 
 #### リッチテキスト書式設定オプション {#formatting-options}
 
@@ -92,10 +96,17 @@ ht-degree: 95%
 * 上付き文字
 * 下付き文字
 * 箇条書きリスト
-* 番号付きリスト
+   * Tab キーを使用してインデントを設定し、Shift + Tab キーを使用してインデントを解除します
+* 順序付きリスト
+   * Tab キーを使用してインデントを設定し、Shift + Tab キーを使用してインデントを解除します
 * リンク
+* リンク解除
+* 画像
+* すべての書式を削除
 
-RTE は、作成者のニーズに応じて、オプションを非表示にしたり、追加のオプションを表示したりするように設定できます。 詳しくは、ドキュメント [&#x200B; ユニバーサルエディターの RTE の設定 &#x200B;](/help/implementing/universal-editor/configure-rte.md) を参照してください。
+既存のテーブルは RTE を使用して編集できますが、新しいテーブルは作成できません。
+
+RTE は、作成者のニーズに応じて、オプションを非表示にしたり、追加のオプションを表示したりするように設定できます。 詳しくは、ドキュメント [ ユニバーサルエディターの RTE の設定 ](/help/implementing/universal-editor/configure-rte.md) を参照してください。
 
 ### メディアの編集 {#edit-media}
 
@@ -212,7 +223,7 @@ RTE は、作成者のニーズに応じて、オプションを非表示にし�
 
 ### コピー＆ぺースト {#copy-paste}
 
-コンテナ内にあるコンポーネントをコピー＆ペーストできます。[&#128279;](/help/implementing/universal-editor/field-types.md#container) これは、ターゲットコンテナに [&#x200B; フィルターが設定されていない &#x200B;](/help/implementing/universal-editor/filtering.md) またはコンポーネントを貼り付けることができるフィルターがある）場合にのみ可能です。
+コンテナ内にあるコンポーネントをコピー＆ペーストできます。[](/help/implementing/universal-editor/field-types.md#container) これは、ターゲットコンテナに [ フィルターが設定されていない ](/help/implementing/universal-editor/filtering.md) またはコンポーネントを貼り付けることができるフィルターがある）場合にのみ可能です。
 
 コピーと貼り付けは、同じブラウザータブ上で行うことも、ブラウザータブ間で行うこともできます（タブが既に開いている場合）。 項目をコピーしてから新しいブラウザータブを開いて貼り付けることはできません。
 
@@ -220,7 +231,7 @@ RTE は、作成者のニーズに応じて、オプションを非表示にし�
 ![ペーストアイコン](assets/paste.png)
 
 1. エディター内またはコンテンツツリーでコンポーネントを選択します。
-1. プロパティパネルに「**コピー**」アイコンが表示されます。[&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)タップまたはクリックします。
+1. プロパティパネルに「**コピー**」アイコンが表示されます。[](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)タップまたはクリックします。
 1. プロパティパネルに「**ペースト**」アイコンが表示されます。
 1. コピーしたコンポーネントをペーストした&#x200B;_後_&#x200B;のコンポーネントを選択します。
 1. 「ペースト」をタップまたはクリックします。
@@ -230,7 +241,11 @@ RTE は、作成者のニーズに応じて、オプションを非表示にし�
 >
 >コピーするには `Command-C`、ペーストするには `Command-V` のホットキーを使用します。
 
+## コンテキストオプション {#context-options}
 
+インプレース編集時には、エディターで右クリックするとコンテキストに関連したオプション（コンポーネントの複製、削除、コピーなど）が表示されます。
+
+![ コンテキストオプションメニュー ](assets/context-options-menu.png)
 
 ## コンテンツのプレビュー {#previewing-content}
 
