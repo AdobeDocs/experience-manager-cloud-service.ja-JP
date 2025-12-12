@@ -1,18 +1,18 @@
 ---
-title: コンテンツフラグメントの操作の概要
+title: コンテンツフラグメント操作の概念とベストプラクティスの概要
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを使用して、ヘッドレス配信やページオーサリングに最適な構造化コンテンツを作成および使用できる方法について説明します。
 feature: Content Fragments
 role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
 workflow-type: tm+mt
-source-wordcount: '2021'
-ht-degree: 99%
+source-wordcount: '2357'
+ht-degree: 85%
 
 ---
 
-# コンテンツフラグメントの操作の概要 {#overview-working-with-content-fragments}
+# コンテンツフラグメントの使用 – 概念とベストプラクティス {#working-with-content-fragments-concepts-and-best-practices}
 
 Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツを設計、作成、キュレーション、公開できます。複数の場所、複数のチャネル上で使用可能なコンテンツを用意でき、[ヘッドレス配信](/help/headless/what-is-headless.md)や[ページオーサリング](/help/sites-cloud/authoring/fragments/content-fragments.md)に理想的です。
 
@@ -104,7 +104,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 * [分析](/help/sites-cloud/administering/content-fragments/analysis.md)  エディターを使用したコンテンツフラグメントの構造
 * [GraphQL を使用してフラグメントにアクセスし、アプリケーションへのヘッドレス配信を実現します](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)。
 * [Adobe Journey Optimizer でのコンテンツフラグメントの統合と使用](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
-* [&#x200B; コンテンツフラグメントのローンチ &#x200B;](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) を作成および管理
+* [ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) を作成および管理
 * [または、フラグメントをページオーサリングに使用します。](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
@@ -247,7 +247,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 * **コンテンツモデル**
 
-   * [&#128279;](/help/sites-cloud/administering/content-fragments/setup.md)設定ブラウザーを使用して有効化されます。
+   * ](/help/sites-cloud/administering/content-fragments/setup.md)設定ブラウザーを使用して有効化[されます。
    * [コンテンツフラグメントコンソールを使用して作成](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)されます。
    * [フラグメントを作成](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments)するために必要です。
    * フラグメントの構造（タイトル、コンテンツ要素、タグ定義）を定義します。
@@ -325,3 +325,47 @@ WKND プロジェクトには、次のものが含まれます。
 * 次の URL で入手できるコンテンツフラグメント（およびその他のコンテンツ）：
 
    * `.../assets.html/content/dam/wknd/en`
+
+## ベストプラクティス {#best-practices}
+
+コンテンツフラグメントを使用して、複雑な構造を形成できます。 Adobeは、モデルとフラグメントの両方を定義および使用する際のベストプラクティスに関する推奨事項を提供します。
+
+### シンプルに {#keep-it-simple}
+
+AEMで構造化コンテンツをモデリングする場合は、システムの強力なパフォーマンスと効率化されたガバナンスを確保するために、コンテンツ構造をできるだけシンプルにします。
+
+### モデル数 {#number-of-models}
+
+必要な数のコンテンツモデルを作成しますが、それ以上は作成しません。
+
+モデルが多すぎると、ガバナンスが複雑になり、GraphQLのクエリの速度が低下する可能性があります。 通常、モデルの小さなセット（最大 10 分の 1）で十分です。 10 以上の高さに近づいた場合は、モデリング方法を再検討してください。
+
+### モデルとフラグメントのネスト（非常に重要） {#nesting-models-and-fragments}
+
+コンテンツフラグメント参照を使用してコンテンツフラグメントを深くネストしたり、過度にネストしたりしないでください。これにより、フラグメントは他のフラグメントを、場合によっては複数のレベルで参照できます。
+
+コンテンツフラグメント参照を頻繁に使用すると、システムのパフォーマンス、UI の応答性およびGraphQLのクエリの実行に大きな影響を与える可能性があります。 10 レベル以下にネストを維持することを目指します。
+
+### モデルあたりのデータ フィールドとタイプの数  {#number-of-data-fields-and-types-per-model}
+
+モデルに本当に必要なデータフィールドとタイプのみを含めます。
+
+モデルが過度に複雑になると、フラグメントが過度に複雑になり、オーサリングが困難になり、エディターのパフォーマンスが低下する可能性があります。
+
+### リッチテキストフィールド {#rich-text-fields}
+
+リッチテキストフィールド（**複数行テキスト** データタイプ）の使用を考慮する。
+
+モデルあたりのリッチテキストフィールドの数を制限します。 また、各フラグメントに保存されるテキストの量とHTMLの書式設定の量も指定します。 非常に大きなリッチテキストコンテンツは、システムのパフォーマンスに悪影響を及ぼす可能性があります。
+
+### バリエーション数 {#number-of-variations}
+
+必要な数のフラグメントバリエーションを作成しますが、それ以上は作成しません。
+
+バリエーションにより、オーサー環境と配信時に、コンテンツフラグメントに処理時間も追加されます。 バリエーションの数は管理可能な最小限に抑えることをお勧めします。
+
+ベストプラクティスは、コンテンツフラグメントあたり 10 個のバリエーションを超えないようにすることです。
+
+### 実稼動前のテスト {#test-before-production}
+
+確信がない場合は、実稼動環境にロールアウトする前に、意図したコンテンツ構造のプロトタイプを作成します。 概念実証を早期に実施し、技術的な受け入れとユーザーによる受け入れの両方で適切なテストを実施することで、後で本番環境の期限に遭遇した場合の問題を回避できます。

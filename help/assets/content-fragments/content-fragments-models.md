@@ -5,9 +5,9 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Developer
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '3588'
+source-wordcount: '3604'
 ht-degree: 97%
 
 ---
@@ -25,13 +25,17 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
 
 >[!NOTE]
 >
+>コンテンツフラグメントモデルとコンテンツフラグメントを使用する場合は、[ ベストプラクティス ](/help/assets/content-fragments/content-fragments.md) に注意してください。
+
+>[!NOTE]
+>
 >コンテンツフラグメントは Sites 機能ですが、**Assets** として保存されます。
 >
 >コンテンツフラグメントとコンテンツフラグメントモデルは、主に&#x200B;**[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;コンソールで管理されるようになりましたが、コンテンツフラグメントは **Assets** コンソールから、コンテンツフラグメントモデルは **Tools** コンソールから引き続き管理できます。この節では、**Assets** コンソールと **Tools** コンソールでの管理について説明します。
 
 >[!NOTE]
 >
->[&#x200B; 新規モデルエディター &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) でモデルを作成した場合は、常にモデルにそのエディターを使用する必要があります。
+>[ 新規モデルエディター ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) でモデルを作成した場合は、常にモデルにそのエディターを使用する必要があります。
 >
 >この（元の）モデルエディターでモデルを開くと、次のメッセージが表示されます。
 >
@@ -47,7 +51,7 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
    >
    >[コンテンツフラグメントモデルの使用が有効になっていない](/help/assets/content-fragments/content-fragments-configuration-browser.md)場合、「**作成**」オプションは使用できません。
 
-1. **モデルタイトル**&#x200B;を指定します。
+1. **モデルタイトル**を指定します。
 また、様々なプロパティを定義することもできます。例えば、「**タグ**」、「**説明**」を追加し、必要に応じて「**モデルを有効化**」を選択して[モデルを有効に](#enabling-disabling-a-content-fragment-model)します。
 
    >[!NOTE]
@@ -75,7 +79,7 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
 
    * 左：フィールドが既に定義されています
    * 右：フィールドの作成に使用できる&#x200B;**データタイプ**（およびフィールドの作成後に使用する&#x200B;**プロパティ**）
-   * トップ：[&#x200B; 新規エディター &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) を試すオプション
+   * トップ：[ 新規エディター ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) を試すオプション
 
    >[!NOTE]
    >
@@ -222,7 +226,7 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
 * **フィールドラベル**
 **フィールドラベル**&#x200B;を入力すると、**プロパティ名**&#x200B;を自動生成し、必要に応じて手動で更新できます。
 
-* **検証**&#x200B;基本検証は、
+* **検証**基本検証は、
 **必須**&#x200B;プロパティなどのメカニズムで使用できます。一部のデータ型には、追加の検証フィールドがあります。詳しくは、「[検証](#validation)」を参照してください。
 
 * データタイプが&#x200B;**複数行テキスト**&#x200B;の場合、「**デフォルトの種類**」を次のいずれかとして定義できます。

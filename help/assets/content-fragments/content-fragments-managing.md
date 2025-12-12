@@ -5,9 +5,9 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 8a3ee333a0bd5904c43c424967a7b9c752fd38c2
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1941'
 ht-degree: 99%
 
 ---
@@ -27,6 +27,9 @@ ht-degree: 99%
 * [構造ツリーの表示](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [JSON 表現のプレビュー](/help/assets/content-fragments/content-fragments-json-preview.md)
 
+>[!NOTE]
+>
+>コンテンツフラグメントモデルとコンテンツフラグメントを使用する場合は、[ ベストプラクティス ](/help/assets/content-fragments/content-fragments.md) に注意してください。
 
 >[!NOTE]
 >
@@ -136,7 +139,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->これらの多くは、[Assets](/help/assets/manage-digital-assets.md) や [AEM デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=ja)に対する標準的なアクションです。
+>これらの多くは、[Assets](/help/assets/manage-digital-assets.md) や [AEM デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html)に対する標準的なアクションです。
 
 ## フラグメントエディターを開く {#opening-the-fragment-editor}
 
