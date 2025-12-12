@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a254afed91dce2cd58df8762a6dbe39680fe9e5c
 workflow-type: tm+mt
-source-wordcount: '2489'
+source-wordcount: '2464'
 ht-degree: 98%
 
 ---
@@ -28,9 +28,11 @@ ht-degree: 98%
 | **高速開発** | 高速開発環境（RDE）を使用すると、開発者は変更を迅速にデプロイしてレビューできます。この機能により、ローカル開発環境で既に検証済みの機能のテストに必要な時間が短縮されます。RDE の使用方法について詳しくは、[高速開発環境ドキュメント](/help/implementing/developing/introduction/rapid-development-environments.md)を参照してください。 |
 | **特殊なテスト環境** | 専用のテスト環境は、ほぼ実稼動状態で機能を検証する専用のスペースを提供し、ストレステストや高度なデプロイメント前のチェックに最適です。 [専用のテスト環境の追加](/help/implementing/cloud-manager/specialized-test-environment.md)を参照してください。 |
 
+<!-- 
 >[!NOTE]
 >
->**特殊なテスト環境**&#x200B;機能は現在、Private Beta プログラムでのみ使用できます。Private Beta に新規登録するには、[特殊なテスト環境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)を参照してください。
+>The **Specialized Testing Environment** feature is currently available only through the private beta program. To sign up for the private beta, see [Specialized Testing Environment](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+-->
 
 各環境の機能は、その環境の[プログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)で有効になっているソリューションによって異なります。
 

@@ -3,28 +3,31 @@ title: 専用のテスト環境の追加
 description: Cloud Managerの専用テスト環境が、実稼動環境に近い条件下で機能を検証する専用のスペースを提供し、ストレステストや高度なデプロイメント前のチェックに最適な方法を説明します。
 feature: Cloud Manager, Developing
 role: Admin, Developer
-badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 837f1d0eb0bd0f8cf8c0e283db823255f4e53ae1
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 35%
+source-wordcount: '522'
+ht-degree: 33%
 
 ---
 
 # 専用のテスト環境の追加{#add-special-test-enviro}
 
+<!-- badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+-->
+
 >[!NOTE]
 >
->&#x200B;>この記事で説明している機能は、非公開のベータ版プログラムでのみ使用できます。 Private Beta に新規登録するには、[特殊なテスト環境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)を参照してください。
+>専用のテスト環境を購入できるようになりました。 Adobeの担当者に連絡して注文してください。
 
-専用テスト環境（DevXL）は、新しく作成できるタイプのCloud Manager環境です。 ユーザー受け入れテスト（UAT）やパフォーマンス検証などの高度なユースケースをサポートするように設計されています。 従来の開発環境、迅速な開発環境、ステージング環境とは異なり、DevXL 環境は実稼動デプロイメントパイプラインの外部で動作します。 したがって、厳密な分離を維持しながら、実稼動ワークフローへの干渉を防ぎながら、より高い柔軟性を提供します。
 
-DevXL は、一般的なステージング環境のサイズ、スケーラビリティ、設定をミラーリングするように構築されています。 このアプローチにより、DevXL で実行されるテストが、実稼動環境に似た条件でコードとコンテンツがどのように実行されるかに関する現実的なインサイトを得ることができます。 この環境では、実稼動環境またはステージング環境からのコンテンツの直接コピーもサポートしています。 また、デプロイメントワークフロー、アクセス制御、ネットワーク設定の点で、開発環境と同等の機能を維持します。
+専用テスト環境は、作成可能な新しいタイプのCloud Manager環境です。 ユーザー受け入れテスト（UAT）やパフォーマンス検証などの高度なユースケースをサポートするように設計されています。 従来の開発環境、迅速な開発環境、ステージング環境とは異なり、専用のテスト環境は実稼動デプロイメントパイプラインの外部で動作します。 したがって、厳密な分離を維持しながら、実稼動ワークフローへの干渉を防ぎながら、より高い柔軟性を提供します。
 
-## 主な機能と設定 {#key-features}
+特殊なテスト環境は、一般的なステージング環境のサイズ、スケーラビリティ、構成を反映するように構築されています。 このアプローチにより、専門のテスト環境で実行されるテストが、実稼動環境に似た条件でコードとコンテンツがどのように実行されるかに関する現実的なインサイトを得ることができます。 この環境では、実稼動環境またはステージング環境からのコンテンツの直接コピーもサポートしています。 また、デプロイメントワークフロー、アクセス制御、ネットワーク設定の点で、開発環境と同等の機能を維持します。
 
-| カテゴリ | DevXL の動作 |
+## 専用テスト環境の主な機能と設定 {#key-features}
+
+| カテゴリ | 動作 |
 | --- | --- |
 | 目的 | UAT とパフォーマンステスト。 |
 | パイプラインタイプ | 実稼動パイプラインではありません。 |
@@ -38,7 +41,7 @@ DevXL は、一般的なステージング環境のサイズ、スケーラビ�
 | `IP Allow List` | 開発環境と同じです。 |
 | ネットワーク | 開発環境（サービス、ドメイン名、SSL 証明書、高度なネットワーク）と同じです。 |
 
-[&#x200B; 環境の管理 &#x200B;](/help/implementing/cloud-manager/manage-environments.md) も参照してください。
+詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md)も参照してください。
 
 ## 専用のテスト環境の追加 {#add-specialized-testing-environment}
 
@@ -55,7 +58,7 @@ DevXL は、一般的なステージング環境のサイズ、スケーラビ�
    * **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールの **環境** カードで、「**環境を追加**」をクリックします。
 「**環境を追加**」オプションがグレー表示（無効）になっている場合は、権限が不足しているか、ライセンス済みリソースに依存している場合があります。
 
-   ![環境カード](assets/no-environments.png)
+     ![環境カード](assets/no-environments.png)
 
    * 左側のサイドパネルで、![データアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)「**環境**」をクリックし、環境ページの右上隅近くにある「**環境を追加**」をクリックします。
 
@@ -66,10 +69,16 @@ DevXL は、一般的なステージング環境のサイズ、スケーラビ�
    * **専用テスト環境** をクリックします。
    * 環境の&#x200B;**名前**&#x200B;を入力します。環境名は、環境の作成後に変更できません。
    * （任意）環境の **説明** を入力します。
-   * ドロップダウンリストから **プライマリ地域** を選択します。 作成されると、DevXL 環境のプライマリ地域（例：*米国（西部）*）はロックされ、変更できません。
+   * ドロップダウンリストから **プライマリ地域** を選択します。 作成されると、専用テスト環境のプライマリ地域（例：*英国（南部）* はロックされ、変更できなくなります。
 
-   ![「専用のテスト環境」ラジオボタンが選択された「環境を追加」ダイアログボックス](assets/specialized-test-environment.png)
+     ![「専用のテスト環境」ラジオボタンが選択された「環境を追加」ダイアログボックス](assets/specialized-test-environment.png)
 
 1. 「**保存**」をクリックします。
 
    これで、**概要**&#x200B;ページの&#x200B;**環境**&#x200B;カードに新しい環境が表示されるようになりました。新しい環境にパイプラインを設定できるようになりました。
+
+## その他のリソース {#additional-resources}
+
+* ビデオ：[AEM Cloud Managerの環境タイプについて ](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
+* [環境の管理](/help/implementing/cloud-manager/manage-environments.md)
+
