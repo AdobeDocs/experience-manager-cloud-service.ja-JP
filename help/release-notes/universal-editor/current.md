@@ -26,11 +26,11 @@ ht-degree: 21%
 
 ## 新機能 {#what-is-new}
 
-* [ リッチテキストエディター ](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) の既存のテーブルがサポートされるようになりました。
-* Tab キーが、[ リッチテキストエディター ](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) でリストのネストに対して有効になっています。
+* [&#x200B; リッチテキストエディター &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) の既存のテーブルがサポートされるようになりました。
+* Tab キーが、[&#x200B; リッチテキストエディター &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) でリストのネストに対して有効になっています。
 * 開発者ログイン機能を [meta タグ `dev-login`.](/help/implementing/universal-editor/customizing.md#meta-tags) から無効にできるようになりました。
-* オーバーレイセクションを右クリックすると、[ コンテキストオプションメニュー ](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options) が表示されるようになりました。
-* [ 範囲インデント ](/help/implementing/universal-editor/configure-rte.md#indentation) が [ リッチテキストエディターでサポートされるようになりました。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* オーバーレイセクションを右クリックすると、[&#x200B; コンテキストオプションメニュー &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options) が表示されるようになりました。
+* [&#x200B; 範囲インデント &#x200B;](/help/implementing/universal-editor/configure-rte.md#indentation) が [&#x200B; リッチテキストエディターでサポートされるようになりました。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 
 ## 早期導入機能 {#early-adopter}
 
