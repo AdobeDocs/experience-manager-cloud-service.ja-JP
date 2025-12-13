@@ -147,7 +147,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 アダプティブフォームが送信されると、更新されたレコードのレコードのドキュメントが作成されるようになりました。
 
-![更新済み ](assets/we-retail-new-invoice-sent-to-customer.png)
+![更新済み &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## レコードのドキュメントを使用する場合の主な注意点 {#key-considerations-when-working-with-document-of-record}
 

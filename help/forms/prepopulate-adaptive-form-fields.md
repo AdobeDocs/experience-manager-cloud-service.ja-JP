@@ -354,7 +354,7 @@ prefill-page component.zip
 
 事前入力サービスは OSGi サービスで、OSGi バンドルを使用してパッケージ化します。OSGi バンドルを作成し、アップロードし、[!DNL AEM Forms] バンドルにインストールします。バンドルの作成を開始する前に、以下を行います。
 
-- [ [!DNL AEM Forms]  Client SDK をダウンロードします](https://helpx.adobe.com/jp/aem-forms/kb/aem-forms-releases.html)
+- [&#x200B; [!DNL AEM Forms]  Client SDK をダウンロードします](https://helpx.adobe.com/jp/aem-forms/kb/aem-forms-releases.html)
 - ボイラープレートパッケージをダウンロードします
 
 - データ（事前入力データ）ファイルを crx-repository に配置します。ファイルは crx-repository の \contents フォルダー内の任意の場所に配置できます。

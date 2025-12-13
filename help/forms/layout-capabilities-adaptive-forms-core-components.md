@@ -77,11 +77,11 @@ ht-degree: 22%
 
 垂直タブレイアウトは、左側のレイアウトのタブとも呼ばれます。 垂直タブレイアウトでは、フォームの左側に沿ってパネルまたはセクションが整理されます。 パネルやセクションが縦に積み重ねられたフォームのレイアウトは一般的で、読みやすさやナビゲーションが容易になります。
 
-![ 垂直方向のレイアウト ](/help/forms/assets/vertical-tab.gif)
+![&#x200B; 垂直方向のレイアウト &#x200B;](/help/forms/assets/vertical-tab.gif)
 
 垂直タブレイアウト
 
-[ 垂直タブコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) を使用して、フォームに垂直タブレイアウトを追加できます。 垂直タブコンポーネントの様々なプロパティを設定する方法について詳しくは、[ 垂直タブコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) の記事を参照してください。
+[&#x200B; 垂直タブコンポーネント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) を使用して、フォームに垂直タブレイアウトを追加できます。 垂直タブコンポーネントの様々なプロパティを設定する方法について詳しくは、[&#x200B; 垂直タブコンポーネント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) の記事を参照してください。
 
 
 >[!TAB  水平タブレイアウト ]
@@ -89,11 +89,11 @@ ht-degree: 22%
 水平タブレイアウトは、上部レイアウトのタブとも呼ばれます。 水平タブレイアウトでは、パネルまたはセクションを並べて配置します。 このレイアウトでは、フォームまたはパネルの幅に対して直線的にフォームセクションが表示されます。
 
 
-![ 水平レイアウト ](/help/forms/assets/horizontal-layout.gif)
+![&#x200B; 水平レイアウト &#x200B;](/help/forms/assets/horizontal-layout.gif)
 
 水平タブレイアウト
 
-[ 水平タブコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) を使用して、フォームに水平タブレイアウトを追加できます。 水平タブコンポーネントの様々なプロパティを設定する方法について詳しくは、[ 水平タブコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) の記事を参照してください。
+[&#x200B; 水平タブコンポーネント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) を使用して、フォームに水平タブレイアウトを追加できます。 水平タブコンポーネントの様々なプロパティを設定する方法について詳しくは、[&#x200B; 水平タブコンポーネント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) の記事を参照してください。
 
 
 >[!TAB アコーディオンレイアウト]
@@ -108,7 +108,7 @@ ht-degree: 22%
 
 >[!ENDTABS]
 
-レイアウトを挿入してフォームコンポーネントを追加する方法については、「レイアウトを挿入してフォームコンポーネントを追加する方法 [ というタイトルの節を参照してください。](#how-to-insert-a-layout-and-add-form-components-to-it)
+レイアウトを挿入してフォームコンポーネントを追加する方法については、「レイアウトを挿入してフォームコンポーネントを追加する方法 [&#x200B; というタイトルの節を参照してください。](#how-to-insert-a-layout-and-add-form-components-to-it)
 
 ### 適切なアダプティブフォームレイアウトを選択する方法
 
@@ -127,9 +127,9 @@ ht-degree: 22%
 
 次の図は、フォームにレイアウトを挿入し、フォームコンポーネントを追加する手順を示しています。
 
-![ レイアウトおよびフォームコンポーネントを追加するためのワークフロー ](/help/forms/assets/workflow-to-add-component-to-a-layout.png)
+![&#x200B; レイアウトおよびフォームコンポーネントを追加するためのワークフロー &#x200B;](/help/forms/assets/workflow-to-add-component-to-a-layout.png)
 
-「アダプティブFormsのレイアウトタイプ **** の節に示されている [IT リクエストフォーム ](#adaptive-forms-layout-types) について考えてみます。 このフォームは、ネットワークまたはラップトップに関連する技術的な問題を抱えている従業員から情報を収集します。 次の 3 つのパネルがあります。
+「アダプティブFormsのレイアウトタイプ **&#x200B;**&#x200B;の節に示されている [IT リクエストフォーム &#x200B;](#adaptive-forms-layout-types) について考えてみます。 このフォームは、ネットワークまたはラップトップに関連する技術的な問題を抱えている従業員から情報を収集します。 次の 3 つのパネルがあります。
 
 * **従業員の詳細**：パネルには、従業員に関する情報が収集され、名前、メール ID、部門というラベルの付いた 3 つのテキストボックスが含まれています。
 
@@ -145,26 +145,26 @@ ht-degree: 22%
 1. 左上隅の「**[!UICONTROL Adobe Experience Manager]**」/「**[!UICONTROL Forms]**」/「**[!UICONTROL Formsとドキュメント]** を選択します。
 1. 既存のアダプティブフォームを編集モードで開きます（作成済みの場合）。
 
-   ![ アダプティブフォームを開く ](/help/forms/assets/insert-layout.png)
+   ![&#x200B; アダプティブフォームを開く &#x200B;](/help/forms/assets/insert-layout.png)
 
-   または、[ 新しいアダプティブフォームを作成する ](/help/forms/creating-adaptive-form-core-components.md) こともできます。
+   または、[&#x200B; 新しいアダプティブフォームを作成する &#x200B;](/help/forms/creating-adaptive-form-core-components.md) こともできます。
 
 1. レイアウトを追加できるフォームビルダー内のセクションを見つけます。
 
-   ![ フォームビルダー ](/help/forms/assets/form-editor.png)
+   ![&#x200B; フォームビルダー &#x200B;](/help/forms/assets/form-editor.png)
 1. **追加**&#x200B;アイコンをクリックします。アイコンはプラス記号（+）で、新しいコンポーネントを追加するオプションを示します。
 
-   ![ レイアウトの挿入 ](/help/forms/assets/insert-layout-add-icon.png)
+   ![&#x200B; レイアウトの挿入 &#x200B;](/help/forms/assets/insert-layout-add-icon.png)
 
    **追加**&#x200B;アイコンをクリックすると、**新規コンポーネントを挿入**&#x200B;ダイアログボックスが表示され、挿入する様々なコンポーネントが表示されます。
 
    >[!NOTE]
    >
-   > または、[ レイアウトコンポーネントをドラッグ&amp;ドロップ ](#extra-bytes) することもできます。
+   > または、[&#x200B; レイアウトコンポーネントをドラッグ&amp;ドロップ &#x200B;](#extra-bytes) することもできます。
 
 1. ダイアログボックスで使用可能なコンポーネントを参照し、リストから目的のレイアウトを選択します。 この場合、水平タブコンポーネントを選択して、水平タブレイアウトを挿入します。
 
-   ![ 水平タブの選択 ](/help/forms/assets/select-horizontal-tab.png)
+   ![&#x200B; 水平タブの選択 &#x200B;](/help/forms/assets/select-horizontal-tab.png)
 
    水平タブコンポーネントをフォームに追加すると、デフォルトでは、Item1 と Item2 という名前の 2 つの空のパネルで最初に構成されます。 これらのパネルには、手動でフォームコンポーネントを追加する必要があります。
 
@@ -173,7 +173,7 @@ ht-degree: 22%
 1. 水平タブコンポーネントのプロパティを開き、コンポーネントの名前を指定します。
 例えば、この場合、水平タブコンポーネントの名前を IT リクエストフォームとして追加します。
 
-   ![ 水平タブの名前を追加 ](/help/forms/assets/change-name-of-horizontal-tabs.png)
+   ![&#x200B; 水平タブの名前を追加 &#x200B;](/help/forms/assets/change-name-of-horizontal-tabs.png)
 
 1. 「**完了**」をクリックします。
 
@@ -187,39 +187,39 @@ ht-degree: 22%
 
 1. 水平タブコンポーネントのプロパティを開き、「**項目**」タブをクリックします。
 
-   ![ 水平タブの「項目」タブ ](/help/forms/assets/tabs-on-top-items-tab.png)
+   ![&#x200B; 水平タブの「項目」タブ &#x200B;](/help/forms/assets/tabs-on-top-items-tab.png)
 
 1. **追加** アイコンをクリックして、新しいパネルを追加します。
 
-   ![ 新しいパネルを追加 ](/help/forms/assets/tabs-on-top-add-panel.png)
+   ![&#x200B; 新しいパネルを追加 &#x200B;](/help/forms/assets/tabs-on-top-add-panel.png)
 
    **追加** アイコンをクリックすると、**新規コンポーネントを挿入** ダイアログボックスが表示されます。
 
 1. パネルコンポーネントを選択します。
 
-   ![ 新しいパネルを追加 ](/help/forms/assets/tabs-on-top-new-panel.png)
+   ![&#x200B; 新しいパネルを追加 &#x200B;](/help/forms/assets/tabs-on-top-new-panel.png)
 
    パネルコンポーネントを選択すると、新しいパネルが水平レイアウトに追加されます。
 
-   ![ 新しいパネルを追加 ](/help/forms/assets/tabs-on-top-add-new-panel.png)
+   ![&#x200B; 新しいパネルを追加 &#x200B;](/help/forms/assets/tabs-on-top-add-new-panel.png)
 
    新しいパネルの名前を指定します。指定しない場合、水平タブコンポーネントのプロパティを保存できません。
 
 1. 次の図に示すように、パネルの名前を指定します。
 
-   ![ パネル名 ](/help/forms/assets/tabs-on-tops-panel-name.png)
+   ![&#x200B; パネル名 &#x200B;](/help/forms/assets/tabs-on-tops-panel-name.png)
 
 1. 「**完了**」をクリックします。
 
    「**完了**」をクリックすると、3 つのパネルが並んで表示されます。 パネル名は、各パネルの見出しとして表示され、各パネルにフォームコンポーネントを追加できます。
 
-   ![ パネル名 ](/help/forms/assets/tabs-on-top-initial-view.png)
+   ![&#x200B; パネル名 &#x200B;](/help/forms/assets/tabs-on-top-initial-view.png)
 
    パネルコンポーネントのプロパティを設定できます。 例えば、IT リクエストフォームにパネルタイトルが含まれていない場合は、パネルコンポーネントのプロパティを設定する手順を以下に示します。
 
 1. 最初のパネルのプロパティを開きます。
 
-   ![ パネル 1 のプロパティ ](/help/forms/assets/tabs-on-tops-panel1-properties.png)
+   ![&#x200B; パネル 1 のプロパティ &#x200B;](/help/forms/assets/tabs-on-tops-panel1-properties.png)
 
 1. 「**基本**」タブから「**タイトルを非表示**」チェックボックスを選択します。
 
@@ -236,47 +236,47 @@ ht-degree: 22%
 * [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel) -->
 
 1. パネル内で、コンポーネントを追加できるセクションを見つけます。
-1. **追加**アイコンをクリックします。アイコンはプラス記号（+）で、新しいコンポーネントを追加するオプションを示します。
-   ![ レイアウトの挿入 ](/help/forms/assets/tabs-on-top-add-component.png)
+1. **追加**&#x200B;アイコンをクリックします。アイコンはプラス記号（+）で、新しいコンポーネントを追加するオプションを示します。
+   ![&#x200B; レイアウトの挿入 &#x200B;](/help/forms/assets/tabs-on-top-add-component.png)
 
    **追加**&#x200B;アイコンをクリックすると、**新規コンポーネントを挿入**&#x200B;ダイアログボックスが表示され、挿入する様々なコンポーネントが表示されます。
 
-   ![ 新規コンポーネントを挿入ダイアログボックス ](/help/forms/assets/insert-new-component.png)
+   ![&#x200B; 新規コンポーネントを挿入ダイアログボックス &#x200B;](/help/forms/assets/insert-new-component.png)
 
 1. 表示されるダイアログボックスで使用可能なコンポーネントを参照し、目的のコンポーネントを選択します。 この場合は、テキストボックスコンポーネントを選択します。
 1. 追加したコンポーネントのプロパティを開き、名前を指定します。 追加したテキストボックスコンポーネントのプロパティを編集し、その名前を指定します。
-   ![ レイアウトの挿入 ](/help/forms/assets/tabs-on-top-textbox-component.png)
+   ![&#x200B; レイアウトの挿入 &#x200B;](/help/forms/assets/tabs-on-top-textbox-component.png)
 1. 同様に、さらに 2 つのテキストボックスコンポーネントを追加し、それらのコンポーネントに名前を付けて、メール ID および部門として追加します。\
-   ![ 最初のパネル ](/help/forms/assets/tabs-on-tops-first-panel.png)
+   ![&#x200B; 最初のパネル &#x200B;](/help/forms/assets/tabs-on-tops-first-panel.png)
 
    最初のパネルのコンポーネントが追加されたので、次に 2 番目のパネルへのコンポーネントの追加に進むことができます。
 
 1. パネルを切り替えるには、ツールバーの **パネルを選択** をクリックします。
 
-   ![ スイッチパネル ](/help/forms/assets/tabs-on-top-select-panel.png)
+   ![&#x200B; スイッチパネル &#x200B;](/help/forms/assets/tabs-on-top-select-panel.png)
 
    **パネルを選択** をクリックすると、水平タブコンポーネントに追加されたパネルのリストが表示されます。
 
-   ![ スイッチパネル ](/help/forms/assets/tabs-on-tops-panel2.png)
+   ![&#x200B; スイッチパネル &#x200B;](/help/forms/assets/tabs-on-tops-panel2.png)
 
 1. パネルリストから「**2 パネル**」を選択すると、ビューが 1 番目のパネルから 2 番目のパネルに変更されます。
 
-   ![2 番目のパネル ](/help/forms/assets/tabs-on-top-panel2-component.png)
+   ![2 番目のパネル &#x200B;](/help/forms/assets/tabs-on-top-panel2-component.png)
 
 1. 次の図に示すように、手順 2 から手順 4 までの手順を繰り返して、パネル 2 に目的のコンポーネントを追加します。
 
-   ![2 番目のパネルコンポーネント ](/help/forms/assets/panel-2-components.png)
+   ![2 番目のパネルコンポーネント &#x200B;](/help/forms/assets/panel-2-components.png)
 
 1. 手順 6 と手順 7 で説明した手順に従って、**3 パネル** に切り替えます。
 
 1. パネル 3 に目的のコンポーネントを追加するには、手順 2 から手順 4 までの手順を繰り返します。
 
-   ![3 番目のパネルコンポーネント ](/help/forms/assets/panel-3-component.png)
+   ![3 番目のパネルコンポーネント &#x200B;](/help/forms/assets/panel-3-component.png)
 
 1. オーサリング環境の右上隅にある「**[!UICONTROL プレビュー]**」をクリックします。
-   ![ 水平レイアウト ](/help/forms/assets/horizontal-layout.gif)
+   ![&#x200B; 水平レイアウト &#x200B;](/help/forms/assets/horizontal-layout.gif)
 
-また、[ コンポーネントをドラッグ&amp;ドロップ ](#extra-bytes) して、フォームコンポーネントを各パネルに追加することもできます。
+また、[&#x200B; コンポーネントをドラッグ&amp;ドロップ &#x200B;](#extra-bytes) して、フォームコンポーネントを各パネルに追加することもできます。
 
 
 <!-- #### Drag and drop components into a layout's panel 
@@ -329,7 +329,7 @@ ht-degree: 22%
 
 
 
-「![ 削除アイコン ](/help/forms/assets/Smock_Delete_18_N.svg) アイコンを使用して、パネルからフォームコンポーネントを削除することもできます。
+「![&#x200B; 削除アイコン &#x200B;](/help/forms/assets/Smock_Delete_18_N.svg) アイコンを使用して、パネルからフォームコンポーネントを削除することもできます。
 
 ![コンポーネントの削除](/help/forms/assets/delete-component.png)
 
@@ -343,15 +343,15 @@ ht-degree: 22%
 
 1. レイアウトコンポーネントのツールバーにある置換アイコンをクリックすると、**[!UICONTROL コンポーネントを置換]** ダイアログボックスが表示されます。
 
-   ![ レイアウトの置換 ](/help/forms/assets/replace-layout.png)
+   ![&#x200B; レイアウトの置換 &#x200B;](/help/forms/assets/replace-layout.png)
 
 1. **[!UICONTROL コンポーネントを置換]** ダイアログボックスから目的のレイアウトを選択します。
 
-   ![ コンポーネントを置換ダイアログボックス ](/help/forms/assets/replace-component.png)
+   ![&#x200B; コンポーネントを置換ダイアログボックス &#x200B;](/help/forms/assets/replace-component.png)
 
    レイアウトを選択すると、それに応じてレイアウト内のコンポーネントの配置が変わります。 例えば、**[!UICONTROL コンポーネントを置換]** ダイアログボックスで垂直タブコンポーネントを選択すると、パネルの配置が左側のタブに変わります。
 
-   ![ 垂直方向のレイアウト ](/help/forms/assets/vertical-tab.gif)
+   ![&#x200B; 垂直方向のレイアウト &#x200B;](/help/forms/assets/vertical-tab.gif)
 
 ## 追加バイト
 
@@ -360,11 +360,11 @@ ht-degree: 22%
 1. コンポーネントを追加できるセクションを見つけます。
 1. オーサリング環境内の左側のパネルに移動し、「**コンポーネント**」をクリックします。
 
-   ![ コンポーネントパネル ](/help/forms/assets/add-new-component.png)
+   ![&#x200B; コンポーネントパネル &#x200B;](/help/forms/assets/add-new-component.png)
 
    「**コンポーネント**」オプションをクリックすると、使用可能なコンポーネントのリストが表示されます。
 
-   ![ コンポーネントパネル ](/help/forms/assets/add-new-component2.png)
+   ![&#x200B; コンポーネントパネル &#x200B;](/help/forms/assets/add-new-component2.png)
 
 1. 使用可能なコンポーネントを参照し、目的のコンポーネントを選択します。
 
