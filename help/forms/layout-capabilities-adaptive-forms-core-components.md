@@ -93,7 +93,7 @@ ht-degree: 22%
 
 水平タブレイアウト
 
-[&#x200B; 水平タブコンポーネント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) を使用して、フォームに水平タブレイアウトを追加できます。 水平タブコンポーネントの様々なプロパティを設定する方法について詳しくは、[&#x200B; 水平タブコンポーネント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) の記事を参照してください。
+[&#x200B; 水平タブコンポーネント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) を使用して、フォームに水平タブレイアウトを追加できます。 水平タブコンポーネントの様々なプロパティを設定する方法について詳しくは、[&#x200B; 水平タブコンポーネント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) の記事を参照してください。
 
 
 >[!TAB アコーディオンレイアウト]
