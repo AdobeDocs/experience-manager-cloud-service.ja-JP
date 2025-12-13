@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 97%
+source-wordcount: '1417'
+ht-degree: 90%
 
 ---
 
@@ -37,6 +37,22 @@ JSON スキーマの拡張機能であるフォームデータモデル（FDM）
 * [フォームデータモデルサービスの使用](#prefill)
 * [送信されたアダプティブフォームデータのデータソースへの書き戻し](#write-af)
 * [アダプティブフォームのルールを使用したサービスの呼び出し](#invoke-services)
+
+## 適用性とユースケース
+
+### 保険
+
+## AEM Formsは保険コアシステムと統合できますか？
+
+はい。AEM Formsは、REST API およびSOAP API を使用した統合をサポートしており、ポリシー管理システム、クレーム管理システム、CRM と連携できます。
+
+## AEM Formsでフォームデータを保険システムに書き戻すことはできますか？
+
+はい。AEM Formsでは、フォームの送信とワークフローの実行の一環として、バックエンドシステムへのデータの書き戻しをサポートしています。
+
+## お客様は、AEM Formsを使用して請求ドキュメントを安全にアップロードできますか？
+
+はい。AEM Formsでは、企業のセキュリティ要件に合わせたアクセス制御と安全なデータ処理を使用して、フォーム送信の一部として安全なドキュメントアップロードをサポートしています。
 
 ## アダプティブフォームとアダプティブフォームフラグメントの作成 {#create-af}
 
@@ -167,7 +183,7 @@ Edit Properties dialog for an interactive communication-->
 
 1. `https://server:host/system/console/configMgr` で Experience Manager web コンソールに移動します。
 1. 「**[!UICONTROL サービス呼び出し用のフォームデータモデルのアダプティブフォームレベルの許可リスト登録 - 設定ファクトリ]**」を見つけます。
-1. ![プラスアイコン &#x200B;](/help/forms/assets/Smock_Add_18_N.svg) をクリックして設定を追加します。
+1. ![プラスアイコン ](/help/forms/assets/Smock_Add_18_N.svg) をクリックして設定を追加します。
 1. **[!UICONTROL コンテンツパスパターン]**&#x200B;を追加して、アダプティブフォームの場所を指定します。デフォルトでは、値は `/content/forms/af/(.*)` で、すべてのアダプティブフォームが含まれています。特定のアダプティブフォームのパスを指定することもできます。
 1. **[!UICONTROL フォームデータモデルのパスパターン]**&#x200B;を追加して、フォームデータモデル（FDM）の場所を指定します。デフォルトでは、値は `/content/dams/formsanddocuments-fdm/(.*)` で、すべてのフォームデータモデル（FDM）が含まれています。また、特定のフォームデータモデル（FDM）のパスを指定することもできます。
 1. 設定を保存します。

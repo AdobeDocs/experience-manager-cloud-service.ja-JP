@@ -5,10 +5,10 @@ topic-tags: develop
 feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
-source-wordcount: '2007'
-ht-degree: 100%
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+workflow-type: tm+mt
+source-wordcount: '2044'
+ht-degree: 98%
 
 ---
 
@@ -26,6 +26,14 @@ ht-degree: 100%
 ## はじめに {#introduction}
 
 既存データを使用して、アダプティブフォームのフィールドを事前入力することができます。ユーザーがフォームを開くと、これらのフィールドの値は事前入力されています。アダプティブフォームにデータを事前入力するには、アダプティブフォームの事前入力データ構造に合った形式を使用して、事前入力 XML または JSON としてユーザーデータを作成します。
+
+## 適用性とユースケース
+
+### 保険
+
+## AEM Formsは保険申込書のデータを事前入力できますか？
+
+はい。AEM Formsは、バックエンドデータソースを使用したフォームフィールドの事前入力をサポートしており、保険会社は既存の顧客データやポリシーデータを再利用し、手動入力を減らすことができます。
 
 ## 事前入力データの構造 {#the-prefill-structure}
 
@@ -392,4 +400,4 @@ You can configure the [!DNL AEM Forms] server to perform the data merge action a
   * To disable, run the following cURL command:
     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/jp/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/jp/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->
+   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->

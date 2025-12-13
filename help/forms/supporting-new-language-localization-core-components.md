@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: cc2a226898f5dbe9073ba9b5a859218da664b1d7
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 97%
+source-wordcount: '2154'
+ht-degree: 98%
 
 ---
 
@@ -24,6 +24,14 @@ ht-degree: 97%
 AEM Forms が標準でサポートしているロケールは、英語（en）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ドイツ語（de）、日本語（ja）、ブラジルポルトガル語（pt-br）、中国語（zh-tn）、台湾中国語（zh-tw）、韓国語（ko-kr）です。その他のロケール（ヒンディー語（hi_IN）など）のサポートを追加することもできます。また、これらのロケールを追加すると、右横書き（RTL）言語（アラビア語、ペルシア語、ウルドゥー語など）でアダプティブフォームを表示することもできます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433132/adaptive-forms-rtl--arabic-hebrew-farsi)
+
+## 適用性とユースケース
+
+### 保険
+
+## AEM Formsは多言語保険のユースケースをサポートしていますか？
+
+はい。AEM Formsは、地域や言語を超えて事業を行う保険会社にとって重要な、多言語フォームのエクスペリエンスをサポートしています。
 
 ## AEM Forms では、アダプティブフォームのロケールをどのように判断しますか？
 
@@ -228,7 +236,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
       ![clientlib-it-custom-locale のペースト](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
-1. `languageinit.js` `aemLangUrl` パスを更新
+1. `languageinit.js` の `aemLangUrl` パスを更新します
 
    1. [AEMaaCS プロジェクトディレクトリ]内の次のディレクトリに移動します。
 
@@ -241,7 +249,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
       `const aemLangUrl = /etc.clientlibs/forms-core-components-it/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json;`
 
-   1. 上記の行で、`forms-core-components-it` をお使いの `<app-id>` （アプリケーションの実際の ID）に置き換えます。
+   1. 上記の行の `forms-core-components-it` を `<app-id>`（アプリケーションの実際の ID）に置き換えます。
 
       `const aemLangUrl = '/etc.clientlibs/<app-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json';`
 
@@ -249,7 +257,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 >[!NOTE]
 >  
-> `forms-core-components-it` をプロジェクト名または `<app-id>` で置き換えないと、日付選択コンポーネントは翻訳に失敗します。
+> `forms-core-components-it` をプロジェクト名または `<app-id>` に置き換えないと、日付選択コンポーネントは翻訳に失敗します。
 
 ### 次の手順に従って、新しいロケールのファイルを作成します。
 

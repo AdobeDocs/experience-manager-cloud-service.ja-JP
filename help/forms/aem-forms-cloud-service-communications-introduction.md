@@ -5,10 +5,10 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8803896bf728524833a0dde004ddaa2e8b6bb103
-workflow-type: ht
-source-wordcount: '2663'
-ht-degree: 100%
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+workflow-type: tm+mt
+source-wordcount: '2720'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 > **バージョンの可用性**
 >
-> * **AEM 6.5**：[AEM ドキュメントサービスの概要](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=ja)
+> * **AEM 6.5**：[AEM ドキュメントサービスの概要](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**：この記事
 
 ## はじめに
@@ -41,6 +41,18 @@ AEM Forms as a Cloud Service の通信 API は、ビジネスニーズに合わ�
 | PDF や印刷形式など、様々な形式のデータとテンプレートを結合して、パーソナライズされたドキュメントを生成します。 | PDF ドキュメントをプログラムで組み合わせ、並べ替え、検証して、新しいドキュメントパッケージを作成します。 | PDF ドキュメントからプロパティ、メタデータ、コンテンツを抽出し、さらに処理します。 | アーカイブのニーズに合わせた PDF/A コンプライアンス検証を含む、様々な形式間でドキュメントを変換します。 | 電子署名、証明書、暗号化を適用して、ドキュメントを安全に保護します。 |
 
 API から提供されるすべてのパラメーター、認証方法および各種サービスの詳細については、[API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)を参照してください。API リファレンスドキュメントは、.yaml 形式でも入手できます。.yaml ファイルをダウンロードし、Postman にアップロードして API の機能を確認できます。
+
+## 適用性とユースケース
+
+### 保険
+
+## AEM Formsで保険証券ドキュメントを生成できますか？
+
+はい。AEM Formsでは、フォームを通じて取得したテンプレートと構造化データを使用して、ポリシー関連ドキュメントを生成できます。
+
+## AEM Formsは大規模な保険業務を処理できますか？
+
+はい。Adobe Managed Servicesまたはプライベートクラウドのレコメンデーションアーキテクチャを使用してAEM Formsをデプロイすると、大量のフォーム送信と企業規模のワークロードがサポートされます。
 
 ## ドキュメントの生成
 
@@ -120,7 +132,7 @@ API から提供されるすべてのパラメーター、認証方法および�
 
 >[!NOTE]
 >
-> AEM Forms には、PDF ファイルとシームレスに統合できる様々な組み込みフォントが用意されています。サポートされているフォントのリストを表示するには、[こちらをクリック](/help/forms/supported-out-of-the-box-fonts.md)してください。
+> AEM Forms には、PDF ファイルとシームレスに統合できる様々なビルトインのフォントが用意されています。サポートされているフォントのリストを表示するには、[こちらをクリック](/help/forms/supported-out-of-the-box-fonts.md)してください。
 
 ## ドキュメント抽出
 

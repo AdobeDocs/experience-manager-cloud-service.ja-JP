@@ -9,10 +9,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2335'
-ht-degree: 100%
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+workflow-type: tm+mt
+source-wordcount: '2489'
+ht-degree: 93%
 
 ---
 
@@ -32,13 +32,37 @@ OSGi での Forms 中心のワークフローを使用すると、JEE スタッ�
 
 これらのワークフローを一度設定すると、それ以降は、手動でワークフローをトリガーして定義済みプロセスを実行することも、ユーザーによるフォーム<!-- or [correspondence management](cm-overview.md) letter-->の送信時にワークフローをプログラムで実行することもできます。<!-- With this enhanced AEM Workflow capabilities, [!DNL AEM Forms] offers two distinct, yet similar, capabilities. As part of your deployment strategy, you need to decide which one works for you. See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for [!DNL AEM Forms]]((aem-forms-architecture-deployment.md). -->
 
-OSGi 上の Forms 中心のワークフローは、[AEM インボックス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=ja#authoring)を拡張し、AEM ワークフローエディターに追加のコンポーネント（手順）を提供することで、[!DNL AEM Forms] 中心のワークフローをサポートします。<!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=ja#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
+OSGi 上の Forms 中心のワークフローは、[AEM インボックス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=ja#authoring)を拡張し、AEM ワークフローエディターに追加のコンポーネント（手順）を提供することで、[!DNL AEM Forms] 中心のワークフローをサポートします。<!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
 
 すべての [!DNL AEM Forms] ワークフロー手順で変数の使用が可能です。変数を使用すると、ワークフロー手順で、実行時に複数の手順にわたってメタデータを保持および渡すことができます。様々なタイプの変数を作成して、様々なタイプのデータを保存できます。変数コレクション（配列）を作成して、関連する同じタイプのデータのインスタンスを複数保存することもできます。一般に、変数または変数のコレクションを使用するのは、変数が保持する値に基づいて決定する必要がある場合、またはプロセスで後で必要になる情報を保存する場合です。これらの Forms 中心のワークフローコンポーネント（手順）で変数を使用する方法について詳しくは、 [OSGi での Forms 中心のワークフロー - 手順リファレンス](aem-forms-workflow-step-reference.md) を参照してください。変数の作成と管理については、[AEM ワークフローの変数](variable-in-aem-workflows.md)を参照してください。
 
 次の図は、OSGi 上の Forms 中心のワークフローを作成、実行、監視するためのエンドツーエンドの手順を示します。
 
 ![introduction-to-aem-forms-workflow](assets/introduction-to-aem-forms-workflow.jpg)
+
+## 適用性とユースケース
+
+### 保険
+
+## AEM Formsは保険承認ワークフローをサポートしていますか？
+
+はい。AEM Formsは、ワークフローベースのレビューと承認をサポートしており、保険業務の一環として調整者のレビュー、マネージャーの承認、再作業のループを実現します。
+
+## AEM Formsは保険向けの maker-checker プロセスをサポートしていますか。
+
+はい。AEM Forms ワークフローは、メーカーによるチェックのパターンに対応するように設定し、データ入力と承認のロール間で職務を分離できます。
+
+## AEM Formsは保険金請求または申請のステータスをトラッキングできますか？
+
+はい。AEM Formsのワークフローを使用すると、保険会社は、ビジネスプロセスの様々な段階でフォームの送信と処理のステータスをトラッキングできます。
+
+## AEM Formsは引き受けワークフローをサポートしていますか？
+
+はい、ワークフローと統合を使用して実行できます。 AEM Formsは、アプリケーションデータを引き受けシステムや決定システムに送ることができる、ワークフロー駆動型プロセスとバックエンドの統合をサポートしています。
+
+## AEM Formsは、保険業務に関する監査証跡をサポートしていますか。
+
+はい。AEM Formsは、ワークフロー履歴、アクセス制御、システムログを通じて監査性をサポートしており、保険会社が内部および外部の監査ニーズを満たすのに役立ちます。
 
 ## 事前準備 {#before-you-start}
 
@@ -197,7 +221,7 @@ Forms 中心のワークフローは、次のように起動またはトリガ�
 * [アダプティブフォームの送信](#af)
 * [監視フォルダーの使用](#watched)
 
-* [インタラクティブ通信またはレターの送信](#letter)
+* [インタラクティブなコミュニケーションまたはレターの送信](#letter)
 
 ### AEM インボックスからのアプリケーションの送信 {#inbox}
 

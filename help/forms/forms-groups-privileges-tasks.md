@@ -4,10 +4,10 @@ description: すぐに使用できるユーザーグループと各グループ�
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 100%
+source-wordcount: '207'
+ht-degree: 81%
 
 ---
 
@@ -107,6 +107,14 @@ ht-degree: 100%
   </tr>
  </tbody>
 </table>
+
+## 適用性とユースケース
+
+### 保険
+
+## AEM Formsは保険業務に対してエンタープライズグレードですか？
+
+はい。AEM Formsは、大規模な保険業務に必要な、役割ベースのアクセス制御、監査証跡、ワークフローの調整、ドキュメントの作成、柔軟な導入などのエンタープライズ機能を提供します。
 
 ## 関連トピック
 
