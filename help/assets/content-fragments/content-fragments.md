@@ -5,7 +5,7 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
+source-git-commit: 2815d75cd2ec7df47e53ab5c648e2de026702074
 workflow-type: tm+mt
 source-wordcount: '2610'
 ht-degree: 86%
@@ -187,7 +187,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
    * 個々のエンティティとして区切られたテキストのブロック（多くの場合は複数行）。
 
-   * [リッチテキスト](/help/assets/content-fragments/content-fragments-variations.md#rich-text)モードと[&#x200B; Markdown &#x200B;](/help/assets/content-fragments/content-fragments-variations.md#markdown)モードでは、段落をヘッダーとして書式設定することができます。その場合、ヘッダーとその後の段落が 1 つのユニットになります。
+   * [リッチテキスト](/help/assets/content-fragments/content-fragments-variations.md#rich-text)モードと[ Markdown ](/help/assets/content-fragments/content-fragments-variations.md#markdown)モードでは、段落をヘッダーとして書式設定することができます。その場合、ヘッダーとその後の段落が 1 つのユニットになります。
 
    * ページ作成中にコンテンツを制御できます。
 
@@ -274,7 +274,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 * **コンテンツモデル**
 
-   * [&#128279;](/help/assets/content-fragments/content-fragments-configuration-browser.md)設定ブラウザーを使用して有効化されます。
+   * ](/help/assets/content-fragments/content-fragments-configuration-browser.md)設定ブラウザーを使用して有効化[されます。
    * [ツールを使用して作成](/help/assets/content-fragments/content-fragments-models.md)されます。
    * [フラグメントを作成](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)するために必要です。
    * フラグメントの構造（タイトル、コンテンツ要素、タグ定義）を定義します。
@@ -344,7 +344,7 @@ AEMで構造化コンテンツをモデリングする場合は、システム�
 
 コンテンツフラグメント参照を頻繁に使用すると、システムのパフォーマンス、UI の応答性およびGraphQLのクエリの実行に大きな影響を与える可能性があります。 10 レベル以下にネストを維持することを目指します。
 
-### モデルあたりのデータ フィールドとタイプの数  {#number-of-data-fields-and-types-per-model}
+### モデルあたりのデータフィールドとタイプの数 {#number-of-data-fields-and-types-per-model}
 
 モデルに本当に必要なデータフィールドとタイプのみを含めます。
 
