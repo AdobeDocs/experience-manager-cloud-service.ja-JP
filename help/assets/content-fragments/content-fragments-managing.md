@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
 workflow-type: tm+mt
 source-wordcount: '1941'
 ht-degree: 99%
@@ -29,7 +29,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->コンテンツフラグメントモデルとコンテンツフラグメントを使用する場合は、[&#x200B; ベストプラクティス &#x200B;](/help/assets/content-fragments/content-fragments.md) に注意してください。
+>コンテンツフラグメントモデルとコンテンツフラグメントを使用する場合は、[ ベストプラクティス ](/help/assets/content-fragments/content-fragments.md#best-practices) に注意してください。
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ ht-degree: 99%
 
         URL の作成に使用される名前です。
 
-        必須。タイトルから自動的に派生しますが、変更が可能です。
+        必須。タイトルから自動的に派生しますが、更新が可能です。
 
 1. 「**作成**」を選択して操作を完了してから、編集するためにフラグメントを&#x200B;**開く**&#x200B;か、「**完了**」でコンソールに戻ります。
 
@@ -139,7 +139,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->これらの多くは、[Assets](/help/assets/manage-digital-assets.md) や [AEM デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=ja)に対する標準的なアクションです。
+>これらの多くは、[Assets](/help/assets/manage-digital-assets.md) や [AEM デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html)に対する標準的なアクションです。
 
 ## フラグメントエディターを開く {#opening-the-fragment-editor}
 
