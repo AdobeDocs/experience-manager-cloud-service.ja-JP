@@ -5,10 +5,10 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
+source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
 workflow-type: tm+mt
-source-wordcount: '2576'
-ht-degree: 87%
+source-wordcount: '2610'
+ht-degree: 86%
 
 ---
 
@@ -187,7 +187,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
    * 個々のエンティティとして区切られたテキストのブロック（多くの場合は複数行）。
 
-   * [リッチテキスト](/help/assets/content-fragments/content-fragments-variations.md#rich-text)モードと[&#x200B; Markdown &#x200B;](/help/assets/content-fragments/content-fragments-variations.md#markdown)モードでは、段落をヘッダーとして書式設定することができます。その場合、ヘッダーとその後の段落が 1 つのユニットになります。
+   * [リッチテキスト](/help/assets/content-fragments/content-fragments-variations.md#rich-text)モードと[ Markdown ](/help/assets/content-fragments/content-fragments-variations.md#markdown)モードでは、段落をヘッダーとして書式設定することができます。その場合、ヘッダーとその後の段落が 1 つのユニットになります。
 
    * ページ作成中にコンテンツを制御できます。
 
@@ -274,7 +274,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 * **コンテンツモデル**
 
-   * [&#128279;](/help/assets/content-fragments/content-fragments-configuration-browser.md)設定ブラウザーを使用して有効化されます。
+   * ](/help/assets/content-fragments/content-fragments-configuration-browser.md)設定ブラウザーを使用して有効化[されます。
    * [ツールを使用して作成](/help/assets/content-fragments/content-fragments-models.md)されます。
    * [フラグメントを作成](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)するために必要です。
    * フラグメントの構造（タイトル、コンテンツ要素、タグ定義）を定義します。
@@ -352,9 +352,15 @@ AEMで構造化コンテンツをモデリングする場合は、システム�
 
 ### リッチテキストフィールド {#rich-text-fields}
 
-リッチテキストフィールド（**複数行テキスト** データタイプ）の使用を考慮する。
+リッチテキストフィールド（**複数行テキスト** データタイプ）は、以下の点を考慮して使用してください。
 
-モデルあたりのリッチテキストフィールドの数を制限します。 また、各フラグメントに保存されるテキストの量とHTMLの書式設定の量も指定します。 非常に大きなリッチテキストコンテンツは、システムのパフォーマンスに悪影響を及ぼす可能性があります。
+* フィールド
+
+  モデルあたりのリッチテキストフィールドの数を制限します。 パフォーマンス上の理由から、1 つのモデルに 10 個を超えるリッチテキストフィールドを含めることはお勧めしません。 必要に応じて、[ネストされたコンテンツフラグメント](/help/assets/content-fragments/content-fragments-models.md#using-references-to-form-nested-content)を使用することをお勧めします。
+
+* コンテンツ
+
+  また、各フラグメントに保存されるテキストの量や、HTMLの書式設定の量を制限する必要があります。 非常に大きなリッチテキストコンテンツは、システムのパフォーマンスに悪影響を及ぼす可能性があります。
 
 ### バリエーション数 {#number-of-variations}
 

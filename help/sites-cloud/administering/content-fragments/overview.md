@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
+source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 85%
+source-wordcount: '2391'
+ht-degree: 84%
 
 ---
 
@@ -104,7 +104,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 * [分析](/help/sites-cloud/administering/content-fragments/analysis.md)  エディターを使用したコンテンツフラグメントの構造
 * [GraphQL を使用してフラグメントにアクセスし、アプリケーションへのヘッドレス配信を実現します](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)。
 * [Adobe Journey Optimizer でのコンテンツフラグメントの統合と使用](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
-* [&#x200B; コンテンツフラグメントのローンチ &#x200B;](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) を作成および管理
+* [ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) を作成および管理
 * [または、フラグメントをページオーサリングに使用します。](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
@@ -247,7 +247,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 * **コンテンツモデル**
 
-   * [&#128279;](/help/sites-cloud/administering/content-fragments/setup.md)設定ブラウザーを使用して有効化されます。
+   * ](/help/sites-cloud/administering/content-fragments/setup.md)設定ブラウザーを使用して有効化[されます。
    * [コンテンツフラグメントコンソールを使用して作成](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)されます。
    * [フラグメントを作成](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments)するために必要です。
    * フラグメントの構造（タイトル、コンテンツ要素、タグ定義）を定義します。
@@ -346,7 +346,7 @@ AEMで構造化コンテンツをモデリングする場合は、システム�
 
 コンテンツフラグメント参照を頻繁に使用すると、システムのパフォーマンス、UI の応答性およびGraphQLのクエリの実行に大きな影響を与える可能性があります。 10 レベル以下にネストを維持することを目指します。
 
-### モデルあたりのデータ フィールドとタイプの数  {#number-of-data-fields-and-types-per-model}
+### モデルあたりのデータフィールドとタイプの数 {#number-of-data-fields-and-types-per-model}
 
 モデルに本当に必要なデータフィールドとタイプのみを含めます。
 
@@ -354,9 +354,15 @@ AEMで構造化コンテンツをモデリングする場合は、システム�
 
 ### リッチテキストフィールド {#rich-text-fields}
 
-リッチテキストフィールド（**複数行テキスト** データタイプ）の使用を考慮する。
+リッチテキストフィールド（**複数行テキスト** データタイプ）は、以下の点を考慮して使用してください。
 
-モデルあたりのリッチテキストフィールドの数を制限します。 また、各フラグメントに保存されるテキストの量とHTMLの書式設定の量も指定します。 非常に大きなリッチテキストコンテンツは、システムのパフォーマンスに悪影響を及ぼす可能性があります。
+* フィールド
+
+  モデルあたりのリッチテキストフィールドの数を制限します。 パフォーマンス上の理由から、1 つのモデルに 10 個を超えるリッチテキストフィールドを含めることはお勧めしません。 必要に応じて、[ネストされたコンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#using-references-to-form-nested-content)を使用することをお勧めします。
+
+* コンテンツ
+
+  また、各フラグメントに保存されるテキストの量や、HTMLの書式設定の量を制限する必要があります。 非常に大きなリッチテキストコンテンツは、システムのパフォーマンスに悪影響を及ぼす可能性があります。
 
 ### バリエーション数 {#number-of-variations}
 
