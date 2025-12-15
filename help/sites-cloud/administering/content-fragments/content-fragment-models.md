@@ -20,7 +20,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 >[!NOTE]
 >
->コンテンツフラグメントモデルとコンテンツフラグメントを使用する場合は、[ ベストプラクティス ](/help/sites-cloud/administering/content-fragments/overview.md#best-practices) に注意してください。
+>コンテンツフラグメントモデルとコンテンツフラグメントを使用する場合は、[&#x200B; ベストプラクティス &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md#best-practices) に注意してください。
 
 >[!CAUTION]
 >
@@ -32,7 +32,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 >
 >この新しいエディターでモデルを作成する場合、そのモデルには常にこのエディターを使用する必要があります。
 >
->[ 元のモデルエディター ](/help/assets/content-fragments/content-fragments-models.md) でモデルを開くと、次のメッセージが表示されます。
+>[&#x200B; 元のモデルエディター &#x200B;](/help/assets/content-fragments/content-fragments-models.md) でモデルを開くと、次のメッセージが表示されます。
 >
 >* 「このモデルには、カスタム UI スキーマが設定されています。 この UI に表示されるフィールドの順序は、UI スキーマと一致しない場合があります。 UI スキーマに合わせてフィールドを表示するには、新しいコンテンツフラグメントエディターに切り替える必要があります。」
 
@@ -59,7 +59,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
    * 上位：
       * **ホーム** アイコン
-      * [ 元の ](/help/assets/content-fragments/content-fragments-models.md) エディターと新しいエディターを切り替えるオプション
+      * [&#x200B; 元の &#x200B;](/help/assets/content-fragments/content-fragments-models.md) エディターと新しいエディターを切り替えるオプション
       * **キャンセル**
       * **保存**
 
@@ -86,7 +86,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
    * フィールドボックスの左側にドットが表示されることで、フィールドの位置を変更することができます。
 
-     ![ フィールドを移動 ](assets/cf-cfmodels-move-field-icon.png)
+     ![&#x200B; フィールドを移動 &#x200B;](assets/cf-cfmodels-move-field-icon.png)
 
    * フィールドがモデルに追加され、選択されると、右側のパネルに特定のデータタイプに対して定義できる **プロパティ** が表示されます。 ここでは、特定のに必要なものを定義できます
 フィールド。
@@ -225,7 +225,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 * **フィールドラベル**
 **フィールドラベル**&#x200B;を入力すると、**プロパティ名**&#x200B;を自動生成し、必要に応じて手動で更新できます。
 
-* **検証**基本検証は、
+* **検証**&#x200B;基本検証は、
 **必須**&#x200B;プロパティなどのメカニズムで使用できます。一部のデータ型には、追加の検証フィールドがあります。詳しくは、「[検証](#validation)」を参照してください。
 
 * データタイプが&#x200B;**複数行テキスト**&#x200B;の場合、「**デフォルトの種類**」を次のいずれかとして定義できます。
