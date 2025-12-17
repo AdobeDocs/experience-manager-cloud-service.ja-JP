@@ -5,9 +5,9 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
+source-git-commit: 67f9ec20667639458d8a6b142df3fc76ff574f26
 workflow-type: tm+mt
-source-wordcount: '2235'
+source-wordcount: '2236'
 ht-degree: 98%
 
 ---
@@ -118,7 +118,7 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 
 >[!IMPORTANT]
 >
->デフォルトのメタデータフォームには、「**[!UICONTROL キャンペーン]**」タブもあります。このタブは、**[!UICONTROL キャンペーン名]**、**[!UICONTROL チャネル]** および **[!UICONTROL 地域]** 複数値の読み取り専用フィールドで構成されます。 は限定可用性機能です。 サポートチケットを作成して、有効にすることができます。
+>デフォルトのメタデータフォームには、「**[!UICONTROL キャンペーン]**」タブもあります。このタブは、**[!UICONTROL キャンペーン名]**、**[!UICONTROL チャネル]** および **[!UICONTROL 地域]** 複数値の読み取り専用フィールドで構成されます。 これは、限定可用性機能です。 サポートチケットを作成して、有効にすることができます。
 
 ### プロパティコンポーネント {#property-components}
 

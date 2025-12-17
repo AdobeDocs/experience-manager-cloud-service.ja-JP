@@ -4,10 +4,10 @@ description: ' [!DNL AEM Assets]  を  [!DNL Figma]  と統合して、 [!DNL Fi
 hide: false
 role: User
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: 3603a98dfee62db49f3201c8d75aa8eee4909cc1
-workflow-type: ht
-source-wordcount: '450'
-ht-degree: 100%
+source-git-commit: a9c1f5472092b3b9fa7a5e5570feb92f32e9ef6c
+workflow-type: tm+mt
+source-wordcount: '546'
+ht-degree: 72%
 
 ---
 
@@ -21,6 +21,12 @@ ht-degree: 100%
 * AEM のリリースバージョン `19149` 以上が必要です。
 
 * [!DNL AEM Assets] を [!DNL Figma] と統合するには、有効な [!DNL AEM Assets] および [!DNL Figma] ライセンスが必要です。
+
+## サポートされているファイル形式 {#supported-file-formats-integration-figma}
+
+
+* [!DNL AEM] アセットを Figma に読み込む場合、サポートされているファイル形式は画像アセット（JPEG、PNG）、ビデオファイル（MP4、MOV、WebM）、アニメーションファイル（GIF）、ベクターファイル（SVG）です。
+* [!DNL Figma] から [!DNL AEM Assets] にデザインを書き出す場合、サポートされる形式は **PNG**、**PDF**、**JPG**、**SVG** です。
 
 ## [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ]へのアクセス{#access-aem-assets-connector}
 
@@ -45,7 +51,9 @@ ht-degree: 100%
 1. アセットをキャンバスにドラッグ＆ドロップするか、アセットを選択して「**[!UICONTROL 選択]**」をクリックし、アセットをキャンバス上に配置します。
 
 1. フォルダーパス内の ![3 つのドット](/help/assets/assets/three-dots.svg) をクリックして、現在の階層内のすべての親フォルダーと子フォルダーを表示します。フォルダーを選択して、その場所に移動します。
-   ![3 つのドット](/help/assets/assets/assets-folder-structure.png)
+   ![3 つのドット](/help/assets/assets/figma-v2-plugin.png)
+
+1. [ 任意 ] 「**[!UICONTROL 更新を確認]**」をクリックします。 現在の Figma ドキュメントで使用されているアセットが、AEMに存在するアセットと比較されます。 すべての更新が別のウィンドウに表示されます。 「**[!UICONTROL 更新]**」をクリックして、更新したアセットをAEMから Figma ドキュメントに取り込みます。
 
 Figma の準備が整ったら、[アセットを AEM Assets リポジトリに書き出す](#export-figma-design-to-aem-assets-folder)ことができます。
 
@@ -56,12 +64,7 @@ Figma の準備が整ったら、[アセットを AEM Assets リポジトリに�
 1. [!DNL Figma] デザインを保存する宛先フォルダーに移動します。既にフォルダー内にいる場合は、フォルダーパスのその他のオプション（![3 つのドット](/help/assets/assets/three-dots.svg)）をクリックして、別の宛先フォルダーを選択します。
 1. オプション：キャンバス上のアセットをグループ化し、これらを 1 つのユニットとして選択してフォルダーにアップロードします。
 1. ![ファイルのアップロード](/help/assets/assets/upload-icon.svg) **[!UICONTROL アップロード]** をクリックして、**[!UICONTROL アセットをアップロード]**&#x200B;ダイアログボックスを表示します。
-1. ダイアログボックスで、ファイル名を指定し、ファイル形式を選択し、「**[!UICONTROL 選択した項目]**」または「**[!UICONTROL ページ]**」のいずれかを選択して、「**[!UICONTROL アップロード]**」をクリックし、選択したアセットまたはデザイン全体を宛先フォルダーにアップロードします。
+1. ダイアログボックスで、**[!UICONTROL 選択した項目]** または **[!UICONTROL ページ]** を選択し、ファイルまたはページ名を指定して、書き出し設定を定義し、**[!UICONTROL アップロード]** をクリックして、選択したアセットまたはデザイン全体を宛先フォルダーにアップロードします。
+
+   書き出し設定は、ファイル形式、スケール、画質で構成されます。 例えば、ファイル形式としてJPGを選択した場合は、画像のスケールと画質を定義することもできます。 同様に、ファイル形式に PNG を選択した場合は、画像のスケールを定義することもできます。
    ![Figma デザインをアップロード](/help/assets/assets/upload-figma-design.png)
-
-## 重要な注意点{#Limitations-of-using-aem-assets-into-figma}
-
-この統合には現在、次の制限があります。
-
-* [!DNL AEM] Assets を Figma に読み込む場合、サポートされる形式は **JPEG**、**PNG** です。
-* [!DNL Figma] から [!DNL AEM Assets] にデザインを書き出す場合、サポートされる形式は **PNG**、**PDF**、**JPG**、**SVG** です。
