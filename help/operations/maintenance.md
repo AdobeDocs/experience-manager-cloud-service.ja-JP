@@ -4,10 +4,10 @@ description: AEM as a Cloud Serviceのメンテナンスタスクと、その設
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 5de6ff7e6ac777c90b41bfeb9a56b909c83ed7d3
+source-git-commit: d5addc40eb48000c515b670ef5f7c7a7e8b79928
 workflow-type: tm+mt
-source-wordcount: '2054'
-ht-degree: 96%
+source-wordcount: '2057'
+ht-degree: 94%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 96%
     <td>アドホックタスクの削除</td>
     <td>顧客</td>
     <td>
-    <p>Git で行う必要があります。フォルダー <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code> または <code>granite_monthly</code> の下でプロパティを作成することで、<code>/libs</code> 内にある標準のメンテナンスウィンドウ設定ノードを上書きします。</p>
+    <p>Git で行う必要があります。フォルダー <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code> または <code>granite_monthly</code> の下でプロパティを作成することで、<code>/libs</code> 内にある標準のメンテナンスウィンドウ設定ノードを上書きします。</p>
     <p>詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。上記のノードの下に別のノードを追加して、メンテナンスタスクを有効にします。 属性 <code>sling:resourceType</code> を <code>granite/operations/components/maintenance/task</code> に設定し、属性 <code>granite.maintenance.name</code> を <code>TaskPurge</code> に設定して、<code>granite_TaskPurgeTask</code> という名前を付けます。OSGi プロパティを設定します。プロパティのリストについては <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> を参照してください。</p>
   </td>
   </tr>
@@ -78,7 +78,7 @@ ht-degree: 96%
     <td>ワークフローのパージ</td>
     <td>顧客</td>
     <td>
-    <p>Git で行う必要があります。フォルダー <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code> または <code>granite_monthly</code> の下でプロパティを作成することで、<code>/libs</code> の下にある標準のメンテナンスウィンドウ設定ノードを上書きします。詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。</p>
+    <p>Git で行う必要があります。フォルダー <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code> または <code>granite_monthly</code> の下でプロパティを作成することで、<code>/libs</code> の下にある標準のメンテナンスウィンドウ設定ノードを上書きします。詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。</p>
     <p>上記のノードの下に別のノードを追加し（<code>granite_WorkflowPurgeTask</code> という名前を付けて）、適切なプロパティを追加して、メンテナンスタスクを有効にします。OSGi プロパティの設定については、「<a href="/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances"> ワークフローインスタンスの定期的なパージ </a>」を参照してください。</p>
   </td>
   </tr>
@@ -86,7 +86,7 @@ ht-degree: 96%
     <td>プロジェクトのパージ</td>
     <td>顧客</td>
     <td>
-    <p>Git で行う必要があります。フォルダー <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code> または <code>granite_monthly</code> の下でプロパティを作成することで、<code>/libs</code> の下にある標準のメンテナンスウィンドウ設定ノードを上書きします。詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。</p>
+    <p>Git で行う必要があります。フォルダー <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code> または <code>granite_monthly</code> の下でプロパティを作成することで、<code>/libs</code> の下にある標準のメンテナンスウィンドウ設定ノードを上書きします。詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。</p>
     <p>上記のノードの下に別のノードを追加し（<code>granite_ProjectPurgeTask</code> という名前を付けて）、適切なプロパティを追加して、メンテナンスタスクを有効にします。<b>アドビプロジェクトのパージ設定</b>の <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">OSGi プロパティ</a>のリストを参照してください。</p>
   </td>
   </tr>
@@ -146,9 +146,9 @@ ht-degree: 96%
 
 ### ロケーション {#locations}
 
-* 日単位 - /apps/settings/granite/operations/maintenance/granite_daily
-* 週単位 - /apps/settings/granite/operations/maintenance/granite_weekly
-* 月単位 - /apps/settings/granite/operations/maintenance/granite_monthly
+* 日別 – /conf/global/settings/granite/operations/maintenance/granite_daily
+* 週単位 – /conf/global/settings/granite/operations/maintenance/granite_weekly
+* 月単位 – /conf/global/settings/granite/operations/maintenance/granite_monthly
 
 ### コードサンプル {#code-samples}
 
@@ -229,7 +229,7 @@ ht-degree: 96%
 
 1. `mt.yaml` などの名前のファイルを作成します。
 
-1. `config` 設定パイプラインの使用 [&#x200B; の説明に従って、ファイルを &#x200B;](/help/operations/config-pipeline.md#folder-structure) または類似の名前の最上位フォルダーの下のどこかに配置します。
+1. `config` 設定パイプラインの使用 [ の説明に従って、ファイルを ](/help/operations/config-pipeline.md#folder-structure) または類似の名前の最上位フォルダーの下のどこかに配置します。
 
 1. 設定ファイルのプロパティを宣言します。次にプロパティを示します。
 
@@ -274,7 +274,7 @@ ht-degree: 96%
    * すべてのプロパティを定義する必要があります。デフォルトは継承されません。
    * 以下のプロパティテーブルのタイプ（整数、文字列、ブール値など）を考慮する必要があります。
 
-1. [config パイプラインの記事 &#x200B;](/help/operations/config-pipeline.md#managing-in-cloud-manager) の説明に従って、Cloud Managerで config パイプラインを作成します。
+1. [config パイプラインの記事 ](/help/operations/config-pipeline.md#managing-in-cloud-manager) の説明に従って、Cloud Managerで config パイプラインを作成します。
 
 ### バージョンのパージ {#version-purge}
 
