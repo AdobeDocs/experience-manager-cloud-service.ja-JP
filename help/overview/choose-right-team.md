@@ -50,7 +50,7 @@ ht-degree: 100%
 
 ![実装の役割をレビュー](assets/team_involvement.png)
 
-**導入チームと一緒にこのリストを確認し**、条件を満たす人材がそれぞれの役割に割り当てられていることを確認します。Adobe Experience Cloud に詳しくないチームメンバーは、[Experience League](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/experience-manager) の学習リソースを利用して、[アドビデジタルラーニング](https://learning.adobe.com/certification.html)で認定を受けることができます。
+**導入チームと一緒にこのリストを確認し**、条件を満たす人材がそれぞれの役割に割り当てられていることを確認します。Adobe Experience Cloud に詳しくないチームメンバーは、[Experience League](https://experienceleague.adobe.com/ja?lang=ja#recommended/solutions/experience-manager) の学習リソースを利用して、[アドビデジタルラーニング](https://learning.adobe.com/certification.html)で認定を受けることができます。
 
 ## **Adobe Experience Manager Assets に必要な主な役割**
 
@@ -79,4 +79,4 @@ Adobe Experience Manager Assets の導入を成功させるために必要な人
 
 >[!TIP]
 >
-> [Experience League](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/experience-manager) の各種リソースを活用して Adobe Experience Cloud の詳細を理解したり、[アドビデジタルラーニング](https://learning.adobe.com/certification.html)で認定を取得したりできます。
+> [Experience League](https://experienceleague.adobe.com/ja?lang=ja#recommended/solutions/experience-manager) の各種リソースを活用して Adobe Experience Cloud の詳細を理解したり、[アドビデジタルラーニング](https://learning.adobe.com/certification.html)で認定を取得したりできます。
