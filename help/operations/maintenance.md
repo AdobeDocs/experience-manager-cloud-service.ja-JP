@@ -229,7 +229,7 @@ ht-degree: 94%
 
 1. `mt.yaml` などの名前のファイルを作成します。
 
-1. `config` 設定パイプラインの使用 [ の説明に従って、ファイルを ](/help/operations/config-pipeline.md#folder-structure) または類似の名前の最上位フォルダーの下のどこかに配置します。
+1. `config` 設定パイプラインの使用 [&#x200B; の説明に従って、ファイルを &#x200B;](/help/operations/config-pipeline.md#folder-structure) または類似の名前の最上位フォルダーの下のどこかに配置します。
 
 1. 設定ファイルのプロパティを宣言します。次にプロパティを示します。
 
@@ -274,7 +274,7 @@ ht-degree: 94%
    * すべてのプロパティを定義する必要があります。デフォルトは継承されません。
    * 以下のプロパティテーブルのタイプ（整数、文字列、ブール値など）を考慮する必要があります。
 
-1. [config パイプラインの記事 ](/help/operations/config-pipeline.md#managing-in-cloud-manager) の説明に従って、Cloud Managerで config パイプラインを作成します。
+1. [config パイプラインの記事 &#x200B;](/help/operations/config-pipeline.md#managing-in-cloud-manager) の説明に従って、Cloud Managerで config パイプラインを作成します。
 
 ### バージョンのパージ {#version-purge}
 
