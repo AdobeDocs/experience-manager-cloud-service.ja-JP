@@ -5,10 +5,10 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
-source-wordcount: '2201'
-ht-degree: 100%
+source-wordcount: '2235'
+ht-degree: 98%
 
 ---
 
@@ -115,6 +115,10 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 作成したフォームは、一致する MIME タイプのアセットをユーザーがアップロードすると自動的に適用されます。
 
 既存のフォームを再利用して新しいフォームを作成するには、メタデータフォームを選択し、ツールバーの「**[!UICONTROL コピー]**」をクリックし、名前を指定して、「**[!UICONTROL 確認]**」をクリックします。メタデータフォームを編集して変更することができます。変更したフォームは、変更後にアップロードされたアセットに対して使用されます。既存のアセットは変更されません。
+
+>[!IMPORTANT]
+>
+>デフォルトのメタデータフォームには、「**[!UICONTROL キャンペーン]**」タブもあります。このタブは、**[!UICONTROL キャンペーン名]**、**[!UICONTROL チャネル]** および **[!UICONTROL 地域]** 複数値の読み取り専用フィールドで構成されます。 は限定可用性機能です。 サポートチケットを作成して、有効にすることができます。
 
 ### プロパティコンポーネント {#property-components}
 

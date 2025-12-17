@@ -1,7 +1,7 @@
 ---
 title: AI で生成されたメタデータを使用してコンテンツの検出を強化
 description: AI で生成されたメタデータを使用してコンテンツの検出を強化する方法を説明します
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 94%
@@ -43,4 +43,4 @@ AI で生成されたメタデータを有効にするには：
 
 1. [オプション]：関連するタグが欠落していると思われる場合は、追加のタグを追加するか、独自のタグを作成できます。これを行うには、「**[!UICONTROL 生成されたキーワード]**」フィールドにタグを入力し、「**[!UICONTROL 保存]**」をクリックします。
 
-AI で生成されたメタデータを無効にする方法について詳しくは、[AI で生成されたメタデータを無効にする](/help/assets/smart-tags.md#disable-ai-generated-metadata)を参照してください。
+AI で生成されたメタデータを無効にする方法について詳しくは、[AI で生成されたメタデータを無効にする](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata)を参照してください。

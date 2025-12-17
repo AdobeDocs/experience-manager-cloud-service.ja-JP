@@ -3,10 +3,10 @@ title: 管理ビューでの AI 生成メタデータによるコンテンツ検
 description: 管理ビューで AI 生成メタデータを使用してコンテンツの検出を強化する方法を説明します
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 84%
+source-wordcount: '669'
+ht-degree: 76%
 
 ---
 
@@ -69,7 +69,9 @@ AI で生成されたタイトルを設定するには：
 
 ## AI で生成されたメタデータを無効にする {#disable-ai-generated-metadata}
 
-AI で生成されたメタデータを無効にするには：
+AI で生成されたメタデータをAEM as a Cloud Service環境に対して無効にするか、フォルダーレベルで無効にすることができます。
+
+AEM as a Cloud Service環境で AI 生成メタデータを無効にするには：
 
 1. **[!UICONTROL ツール/Assets/Assets設定/スマートタグ拡張機能の設定]** に移動します。
 
@@ -78,3 +80,15 @@ AI で生成されたメタデータを無効にするには：
 1. **[!UICONTROL 保存]** をクリックします。
 
 AI で生成されたメタデータは、AEM Assetsにアップロードする新しいアセットやフォルダーでは無効になります。 AI によって生成されたメタデータフィールドを持つ既存のアセットまたはフォルダーには、引き続きこれらのフィールドが表示されます。
+
+### フォルダーの AI 生成メタデータを無効にする {#disable-ai-generated-metadata-folder-level}
+
+AI で生成されたメタデータをフォルダーレベルで無効にするには：
+
+1. フォルダーを選択し、「**[!UICONTROL プロパティ]**」をクリックします。
+
+1. 「**[!UICONTROL アセット処理]**」タブを選択します。
+
+1. 「**[!UICONTROL 画像のスマートタグ機能の強化]**」セクションで、ドロップダウンメニューから **[!UICONTROL 無効]** を選択します。
+
+1. **[!UICONTROL 保存して閉じる]** をクリックして、選択したフォルダーの AI 生成メタデータを無効にします。
