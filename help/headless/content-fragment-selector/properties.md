@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service 用マイクロフロント�
 description: アプリケーションからコンテンツフラグメントを検索、発見、取得するマイクロフロントエンドコンテンツフラグメントセレクターを設定するプロパティ。
 role: Admin, User
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
-source-git-commit: a3d8961b6006903c42d983c82debb63ce8abe9ad
-workflow-type: ht
-source-wordcount: '894'
-ht-degree: 100%
+source-git-commit: 58995ae9c29d5a76b3f94de43f2bafecdaf7cf68
+workflow-type: tm+mt
+source-wordcount: '1073'
+ht-degree: 63%
 
 ---
 
@@ -20,22 +20,28 @@ ht-degree: 100%
 
 | Property | タイプ | 必須 | デフォルト | 説明 |
 |--- |--- |--- |--- |--- |
-| `imsToken` | 文字列 | いいえ | | 認証に使用される IMS トークンです。 |
-| `repoId` | 文字列 | いいえ | | 認証に使用されるリポジトリ ID です。 |
-| `orgId` | 文字列 | はい | | 認証に使用される組織 ID です。 |
-| `locale` | 文字列 | いいえ | | ロケールデータです。 |
-| `env` | 環境 | いいえ | | コンテンツフラグメントセレクターのデプロイメント環境です。 |
-| `filters` | FragmentFilter | いいえ | | コンテンツフラグメントのリストに適用するフィルターです。デフォルトでは、`/content/dam` の下にあるフラグメントが表示されます。デフォルト値：`{ folder: "/content/dam" }` |
-| `isOpen` | ブール値 | はい | `false` | セレクターを開くまたは閉じることをトリガーするフラグです。 |
-| `onDismiss` | () => void | はい | | **Dismiss** を選択した際に呼び出される関数です。 |
-| `onSubmit` | ({ contentFragments: `{id: string, path: string}[]`, domainNames: `string[]` }) => void | はい | | 1 つ以上のコンテンツフラグメントを選択した後に **Select** を使用した際に呼び出される関数です。<br><br>関数は、以下を受け取ります。<br><ul><li> `id` フィールドと `path` フィールドを含む、選択したコンテンツフラグメント</li><li>リポジトリのプログラム ID と環境 ID に関連するドメイン名（ステータスが `ready`、`tier` がパブリッシュ）</li></ul><br>ドメイン名がない場合は、パブリッシュインスタンスがフォールバックドメインとして使用されます。 |
-| `theme` | 「light」または「dark」 | いいえ | | コンテンツフラグメントセレクターのテーマです。デフォルトのテーマは、UnifiedShell 環境のテーマに設定されています。 |
-| `selectionType` | 「single」または「multiple」 | いいえ | `single` | FragmentSelector の選択を制限するために使用できる選択タイプです。 |
-| `dialogSize` | 「fullscreen」または「fullscreenTakeover」 | いいえ | `fullscreen` | ダイアログのサイズを制御するオプションのプロパティです。 |
-| `waitForImsToken` | ブール値 | いいえ | `false` | コンテンツフラグメントセレクターが SUSI フローのコンテキストでレンダリングされ、`imsToken` の準備が整うまで待機する必要があるかどうかを示します。 |
-| `imsAuthInfo` | ImsAuthInfo | いいえ | | ログインしたユーザーの IMS 認証情報を含むオブジェクトです。 |
-| `runningInUnifiedShell` | ブール値 | いいえ | | コンテンツフラグメントセレクターが UnifiedShell の下で実行されているか、スタンドアロンで実行されているかを示します。 |
-| `readonlyFilters` | ResourceReadonlyFiltersField | いいえ | | コンテンツのリストに適用できる読み取り専用フィルターです - 削除できません。 |
+| `ref` | FragmentSelectorRef | | | `ContentFragmentSelector` インスタンスへの参照。`reload` などの提供された機能にアクセスできます。 |
+| `imsToken` | 文字列 | 不要 | | 認証に使用される IMS トークン。 指定しない場合、IMS ログインフローが開始されます。 |
+| `repoId` | 文字列 | 不要 | | フラグメントセレクターに使用されるリポジトリー ID。 指定した場合、セレクターは指定されたリポジトリに自動的に接続し、リポジトリドロップダウンは非表示になります。 指定しない場合、ユーザーは、アクセス可能なリポジトリのリストからリポジトリを選択できます。 |
+| `defaultRepoId` | 文字列 | 不要 | | リポジトリセレクターが表示されたときにデフォルトで選択されるリポジトリ ID。 `repoId` が指定されていない場合にのみ使用されます。 `repoId` が設定されている場合、リポジトリセレクターは非表示になり、この値は無視されます。 |
+| `orgId` | 文字列 | 不要 | | 認証に使用する組織 ID。 指定しない場合、ユーザーは、アクセス権を持つ別の組織からリポジトリを選択できます。 ユーザーがどのリポジトリや組織にもアクセスできない場合、コンテンツは読み込まれません。 |
+| `locale` | 文字列 | 不要 | 「en-US」 | ロケール。 |
+| `env` | 文字列 | 不要 | | デプロイメント環境。 許可されている環境名については、`Env` のタイプを参照してください。 |
+| `filters` | FragmentFilter | いいえ | `{ folder: "/content/dam" }` | コンテンツフラグメントのリストに適用するフィルター。 デフォルトでは、`/content/dam` 下のフラグメントが表示されます。 |
+| `isOpen` | ブーリアン | 不要 | `false` | セレクターが開いているか閉じているかを制御するフラグ。 |
+| `noWrap` | ブーリアン | 不要 | `false` | フラグメントセレクターをラッピングダイアログなしでレンダリングするかどうかを決定します。 `true` に設定すると、フラグメントセレクターは親コンテナに直接埋め込まれます。 セレクターをカスタムレイアウトまたはワークフローに統合する場合に役立ちます。 |
+| `onSelectionChange` | （{ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }） => void | いいえ | | コンテンツフラグメントの選択が変更されるたびにトリガーされるコールバック関数。 現在選択されているフラグメント、ドメイン名、テナント情報、リポジトリ ID および配信リポジトリを提供します。 |
+| `onDismiss` | () => void | いいえ | | 解除アクションが実行される（セレクターを閉じるなど）ときにトリガーされるコールバック関数。 |
+| `onSubmit` | （{ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }） => void | いいえ | | ユーザーが選択を確認するとトリガーされるコールバック関数。 選択したコンテンツフラグメント、ドメイン名、テナント情報、リポジトリ ID および配信リポジトリを受信します。 |
+| `theme` | 「light」または「dark」 | いいえ | | フラグメントセレクターのテーマ。 デフォルトでは、unifiedShell 環境テーマに設定されています。 |
+| `selectionType` | 「single」または「multiple」 | いいえ | `single` | 選択タイプを使用して、フラグメントセレクターの選択対象を制限できます。 |
+| `dialogSize` | 「fullscreen」または「fullscreenTakeover」 | いいえ | `fullscreen` | ダイアログのサイズを制御するオプションの prop。 |
+| `runningInUnifiedShell` | ブーリアン | 不要 | | DestinationSelector が UnifiedShell またはスタンドアロンのどちらで実行されているか。 |
+| `readonlyFilters` | ResourceReadonlyFiltersField[] | いいえ | | コンテンツフラグメントのリストに適用される読み取り専用フィルター。 これらのフィルターは、ユーザーが削除することはできません。 |
+| `selectedFragments` | ContentFragmentIdentifier[] | いいえ | `[]` | セレクターを開いたときに事前に選択されるコンテンツフラグメントの初期選択。 |
+| `hipaaEnabled` | ブーリアン | 不要 | `false` | HIPAA 準拠が有効かどうかを示します。 |
+| `inventoryView` | 在庫ビュータイプ | いいえ | `table` | セレクターで使用される在庫の既定の表示タイプ。 |
+| `inventoryViewToggleEnabled` | ブーリアン | 不要 | `false` | ユーザーがテーブル表示とグリッド表示を切り替えることができる在庫表示切替スイッチが有効かどうかを示します。 |
 
 ## ImsAuthProps プロパティ {#imsauthprops-properties}
 
