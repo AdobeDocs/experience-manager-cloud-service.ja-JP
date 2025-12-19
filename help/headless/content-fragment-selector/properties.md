@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 用マイクロフロント�
 description: アプリケーションからコンテンツフラグメントを検索、発見、取得するマイクロフロントエンドコンテンツフラグメントセレクターを設定するプロパティ。
 role: Admin, User
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
-source-git-commit: 58995ae9c29d5a76b3f94de43f2bafecdaf7cf68
+source-git-commit: 74b9493fc3cdba4a1fc64d1137f5c50c6bebca0a
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1074'
 ht-degree: 63%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 63%
 | `repoId` | 文字列 | 不要 | | フラグメントセレクターに使用されるリポジトリー ID。 指定した場合、セレクターは指定されたリポジトリに自動的に接続し、リポジトリドロップダウンは非表示になります。 指定しない場合、ユーザーは、アクセス可能なリポジトリのリストからリポジトリを選択できます。 |
 | `defaultRepoId` | 文字列 | 不要 | | リポジトリセレクターが表示されたときにデフォルトで選択されるリポジトリ ID。 `repoId` が指定されていない場合にのみ使用されます。 `repoId` が設定されている場合、リポジトリセレクターは非表示になり、この値は無視されます。 |
 | `orgId` | 文字列 | 不要 | | 認証に使用する組織 ID。 指定しない場合、ユーザーは、アクセス権を持つ別の組織からリポジトリを選択できます。 ユーザーがどのリポジトリや組織にもアクセスできない場合、コンテンツは読み込まれません。 |
-| `locale` | 文字列 | 不要 | 「en-US」 | ロケール。 |
+| `locale` | 文字列 | 不要 | `en-US` | ロケール。 |
 | `env` | 文字列 | 不要 | | デプロイメント環境。 許可されている環境名については、`Env` のタイプを参照してください。 |
 | `filters` | FragmentFilter | いいえ | `{ folder: "/content/dam" }` | コンテンツフラグメントのリストに適用するフィルター。 デフォルトでは、`/content/dam` 下のフラグメントが表示されます。 |
 | `isOpen` | ブーリアン | 不要 | `false` | セレクターが開いているか閉じているかを制御するフラグ。 |
 | `noWrap` | ブーリアン | 不要 | `false` | フラグメントセレクターをラッピングダイアログなしでレンダリングするかどうかを決定します。 `true` に設定すると、フラグメントセレクターは親コンテナに直接埋め込まれます。 セレクターをカスタムレイアウトまたはワークフローに統合する場合に役立ちます。 |
 | `onSelectionChange` | （{ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }） => void | いいえ | | コンテンツフラグメントの選択が変更されるたびにトリガーされるコールバック関数。 現在選択されているフラグメント、ドメイン名、テナント情報、リポジトリ ID および配信リポジトリを提供します。 |
-| `onDismiss` | () => void | いいえ | | 解除アクションが実行される（セレクターを閉じるなど）ときにトリガーされるコールバック関数。 |
+| `onDismiss` | () => void | いいえ | | 解除アクションが実行されたときにトリガーされるコールバック関数（例：セレクターを閉じる）。 |
 | `onSubmit` | （{ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }） => void | いいえ | | ユーザーが選択を確認するとトリガーされるコールバック関数。 選択したコンテンツフラグメント、ドメイン名、テナント情報、リポジトリ ID および配信リポジトリを受信します。 |
 | `theme` | 「light」または「dark」 | いいえ | | フラグメントセレクターのテーマ。 デフォルトでは、unifiedShell 環境テーマに設定されています。 |
 | `selectionType` | 「single」または「multiple」 | いいえ | `single` | 選択タイプを使用して、フラグメントセレクターの選択対象を制限できます。 |
