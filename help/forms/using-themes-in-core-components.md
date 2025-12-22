@@ -5,10 +5,10 @@ keywords: フォームビルダーテーマ、アダプティブフォームの�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: c0e0a700e85563ff65c703d5d20e6d6c1ff0651c
 workflow-type: tm+mt
-source-wordcount: '2806'
-ht-degree: 99%
+source-wordcount: '2897'
+ht-degree: 95%
 
 ---
 
@@ -63,8 +63,8 @@ Forms as Cloud Service が提供する、コアコンポーネントベースの
 
 ### 前提条件 {#prerequisites-to-customize}
 
-* [Cloud Manager でのパイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)に慣れてください。また、パイプラインの設定方法に関する基本的な知識を持つことで、テーマのカスタマイズを効率的に管理およびデプロイできます。
-* [投稿者の役割を持つユーザーを設定する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=ja)方法を説明します。投稿者の役割を持つユーザーを設定する方法を理解すると、テーマのカスタマイズに必要な権限を付与できます。
+* [Cloud Manager でのパイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)に慣れてください。また、パイプラインの設定方法に関する基本的な知識を持つことで、テーマのカスタマイズを効率的に管理およびデプロイできます。
+* [投稿者の役割を持つユーザーを設定する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html)方法を説明します。投稿者の役割を持つユーザーを設定する方法を理解すると、テーマのカスタマイズに必要な権限を付与できます。
 * [Apache Maven](https://maven.apache.org/download.cgi) の最新リリースのインストール。Apache Maven は、主に Java™ プロジェクトで使用されるビルド自動化ツールです。最新のリリースをインストールすると、テーマのカスタマイズに必要な依存関係が確保されます。
 * プレーンテキストエディターをインストールします。例えば Microsoft® Visual Studio Code などです。Microsoft® Visual Studio Code などのプレーンテキストエディターを使用すると、テーマファイルの編集と変更を行う際に使いやすい環境を利用できます。
 
@@ -380,7 +380,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 1. Cloud Service 環境に応じて、「**[!UICONTROL 実稼動以外のパイプラインを追加]**」または「**[!UICONTROL 実稼動パイプラインを追加]**」を選択します。ここでは「**[!UICONTROL 実稼動パイプラインを追加]**」を選択します。
 1. **[!UICONTROL 設定]**&#x200B;手順に含まれる「**[!UICONTROL 実稼動パイプラインを追加]**」ダイアログで、パイプラインの名前を指定します。例えば、`customcanvastheme` という名前にします。
 1. 「**[!UICONTROL 続行]**」をクリックします。
-1. **[!UICONTROL ソースコード]**&#x200B;の手順で、
+1. **[!UICONTROL ソースコード]**の手順で、
 **[!UICONTROL ターゲットデプロイメント]**／**[!UICONTROL フロントエンドコード]**&#x200B;オプションを選択します。
 1. 最新の変更を含む&#x200B;**[!UICONTROL リポジトリ]**&#x200B;と **[!UICONTROL Git ブランチ]**&#x200B;の値を選択します。ここで選択したリポジトリ名は `custom-canvas-theme-repo` で、Git ブランチは `main` です。
 1. 変更がルートフォルダーにある場合は、`/` として「**[!UICONTROL コードの場所]**」を選択します。
@@ -388,6 +388,10 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    ![フロントエンドパイプラインを作成](/help/forms/assets/canvas-theme-frontendpipeline.gif)
 
    パイプラインの設定が完了したら、コールトゥアクションカードが更新されます。
+
+   >[!NOTE]
+   >
+   > Cloud Managerでフロントエンドパイプラインが失敗しないようにするには、[Node.js のバージョンを 20 に設定 ](#set-the-nodejs-vesrion-to-20) します。
 
 1. 作成したパイプラインを右クリックします。
 1. 「**[!UICONTROL 実行]**」をクリックします。
@@ -416,6 +420,21 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 アダプティブフォームのテーマは、アダプティブフォームの作成時にスタイルを定義する、アダプティブフォームテンプレートの一部として使用されます。
 
+## Node.js のバージョンを 20 に設定します
+
+パイプライン設定を使用して Node.js のバージョンを 20 に設定するには：
+
+1. **パイプライン** セクションに移動し、フロントエンドパイプラインを見つけます。
+2. パイプラインの右側で「。..」メニュー **⋯** をクリックし、ドロップダウンから「**変数を表示/編集**」を選択します。
+3. **変数設定** ダイアログで、次の各フィールドに入力します。
+   * **NAME** - NODE_VERSION
+   * **値** - 20
+   * **適用されたステップ** - ビルド
+   * **タイプ** – 変数
+4. 「**保存**」をクリックして、設定を適用します。
+
+![ パイプライン設定 ](/help/forms/assets/pipeline-config.png)
+
 ## ベストプラクティス {#best-practices}
 
 * **別のテーマに属するアセットの回避**
@@ -441,7 +460,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ja)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 -->
 
