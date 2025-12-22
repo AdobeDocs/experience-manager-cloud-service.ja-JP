@@ -380,7 +380,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 1. Cloud Service 環境に応じて、「**[!UICONTROL 実稼動以外のパイプラインを追加]**」または「**[!UICONTROL 実稼動パイプラインを追加]**」を選択します。ここでは「**[!UICONTROL 実稼動パイプラインを追加]**」を選択します。
 1. **[!UICONTROL 設定]**&#x200B;手順に含まれる「**[!UICONTROL 実稼動パイプラインを追加]**」ダイアログで、パイプラインの名前を指定します。例えば、`customcanvastheme` という名前にします。
 1. 「**[!UICONTROL 続行]**」をクリックします。
-1. **[!UICONTROL ソースコード]**の手順で、
+1. **[!UICONTROL ソースコード]**&#x200B;の手順で、
 **[!UICONTROL ターゲットデプロイメント]**／**[!UICONTROL フロントエンドコード]**&#x200B;オプションを選択します。
 1. 最新の変更を含む&#x200B;**[!UICONTROL リポジトリ]**&#x200B;と **[!UICONTROL Git ブランチ]**&#x200B;の値を選択します。ここで選択したリポジトリ名は `custom-canvas-theme-repo` で、Git ブランチは `main` です。
 1. 変更がルートフォルダーにある場合は、`/` として「**[!UICONTROL コードの場所]**」を選択します。
@@ -391,7 +391,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
    >[!NOTE]
    >
-   > Cloud Managerでフロントエンドパイプラインが失敗しないようにするには、[Node.js のバージョンを 20 に設定 ](#set-the-nodejs-vesrion-to-20) します。
+   > Cloud Managerでフロントエンドパイプラインが失敗しないようにするには、[Node.js のバージョンを 20 に設定 &#x200B;](#set-the-nodejs-vesrion-to-20) します。
 
 1. 作成したパイプラインを右クリックします。
 1. 「**[!UICONTROL 実行]**」をクリックします。
@@ -433,7 +433,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    * **タイプ** – 変数
 4. 「**保存**」をクリックして、設定を適用します。
 
-![ パイプライン設定 ](/help/forms/assets/pipeline-config.png)
+![&#x200B; パイプライン設定 &#x200B;](/help/forms/assets/pipeline-config.png)
 
 ## ベストプラクティス {#best-practices}
 
