@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 5e01d1674134db73fc0f5c0013e10170ad6747f7
+source-git-commit: c5cdcccdb3ac16c5088e46e3f64e8cfc4139e0e4
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1076'
 ht-degree: 19%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 19%
 * SITES-36570：チャンク化された「ライブコピーを作成」切替スイッチがアクティブ化されると、ライブコピーの作成に失敗します。
 * SITES-36158：例外が原因でジョブが失敗し、ロールアウトが失敗する。
 * SITES-35655：新しい CF エディターが、壊れた後にアクティブな継承を表示する。
-* SITES-31425：サイトのワークフローの開始に「エラー：{} フィールドは必須です」というローカライズされていないエラーメッセージが表示される。
+* SITES-31425: サイトの「ワークフローを開始」にローカライズされていないエラーメッセージ `Error: {} field is required` 表示される。
 * SITES-19802：ツールチップが、コアコンポーネントサイト/目次でローカライズされていない。
 * SITES-36543：チェックアウトされたコンテンツフラグメントを管理者が編集できる問題を修正しました。
 * SITES-36967：破損したコンテンツフラグメントのサムネールデータを生成しようとしたときに発生する NullPointerExceptions を修正しました。
