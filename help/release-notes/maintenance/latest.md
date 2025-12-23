@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 68444ac15513bad7c1eaee97c474e21d36992d49
+source-git-commit: 5e01d1674134db73fc0f5c0013e10170ad6747f7
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 42%
+source-wordcount: '1080'
+ht-degree: 19%
 
 ---
 
@@ -16,67 +16,98 @@ ht-degree: 42%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 23482 {#23482}
+## リリース 23862 {#23862}
 
-2025年12月3日（PT）に公開された、メンテナンスリリース 23482 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 23385 でした。
+2025年12月23日（PT）に公開された、メンテナンスリリース 23862 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 23482 でした。
 
-2025.12.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
+2026.1.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
 
+### 機能強化 {#enhancements-23862}
 
-### 機能強化 {#enhancements-23482}
+* CQ-4361812:rest api で、オプションのパラメーター folderPath がサポートされるようになりました。 説明：新しい翻訳プロジェクトが API によって作成され、オプションの `folderPath` パラメーターで指定されたパス内に配置されます。それ以外の場合は、デフォルトでルートプロジェクトのパス `/content/projects` になります。
+* FORMS-21960:forms-spa と同様に、インタラクティブ通信のローカルでのキャンバス編集がサポートされるようになりました。
+* FORMS-22001:AEM Forms as a Cloud Serviceで大量の `/etc.clientlibs/toggles.json` リクエストを減らすためのガイダンスが追加されました。
+* FORMS-22496：生の ResponseBody を呼び出しサービスで公開する。
+* FORMS-22495:SetProperty ルールにプレースホルダープロパティを追加。
+* FORMS-21925: UBS 脚注の書式設定：フォームの読み込み中に、フォーム内のすべての脚注を表示します。
+* FORMS-20536：マッピングを使用せずに、ルールエディターの eventPayload で complete response のオプションを公開する。
+* SITES-37199：注釈機能トリガー未検証の `authorizables.json` 呼び出しを使用したリポジトリのトラバーサルにより、パフォーマンスが低下する。
+* SITES-37118：製品コックピットでのCommerce Optimizerのサポート。
+* SITES-38029：変更イベントで MSM プッシュをトレースするためのログを追加します。
+* SITES-37050：他の公開済みリソースから参照されるコンテンツフラグメントを非公開にできる、「強制非公開」のサポート。
+* SITES-37142：コンテンツフラグメントのPATCHを使用してコンテンツフラグメントをチェックイン/チェックアウトできるようになりました。
+* SITES-37613:CF API 権限エンドポイントでは、ユーザーがコンテンツフラグメントをチェックインできる場合はチェックイン、ユーザーがコンテンツフラグメントをチェックアウトできる場合はチェックアウトが返されます。
+* SITES-37835：同じタイトルで、指定された名前がないコンテンツフラグメントを複数作成しようとすると、競合で失敗するのではなく、自動的に新しい名前が生成される。
+* SITES-36823：ユニバーサルエディターを使用したEdge Delivery: インデックスのリバースマッピングの必要性をなくしました。
+* SITES-34751：ユニバーサルエディターを使用したEdge Delivery：公開時（アーリーアクセス）に、サポートされていないファイルタイプとパスが制限を超えている場合に失敗します。
+* SITES-37888：ユニバーサルエディターを使用したEdge Delivery: リンクのテキストの同義語として代替サフィックスを使用します。
+* SITES-19850：ユニバーサルエディターを使用したEdge Delivery：スプレッドシートで複数のシートがサポートされるようになりました。
+* SITES-32490：ユニバーサルエディターを使用したEdge Delivery: data-aue-component とユーザー定義の data-aue-label のサポートを、ブロックとデフォルトコンテンツに追加しました。
+* SITES-37794：ユニバーサルエディターを使用したEdge Delivery：ページ作成ウィザードを簡素化します。
+* SITES-36963:Workspace サポートのために、オーディエンス/セグメントエンドポイントを Target API v3 に移行します。
 
-* ASSETS-49770：マルウェアのスキャン結果に関する強制隔離の通知を追加します。
-* ASSETS-54079：強制隔離フォルダーにカスタムメタデータフォームを適用する。
-* ASSETS-54083：スケジュールされた強制隔離クリーンアップメカニズムを作成します。
-* ASSETS-54278：アセットから `dam:avScanTime` プロパティを削除する。
-* ASSETS-57284：ファイルのアップロードを強制隔離フォルダーに制限（ドラッグ&amp;ドロップを無効にする）。
-* ASSETS-57428:Assets ビュー UI で強制隔離フォルダーを非表示にします。
-* ASSETS-57626：非同期アセットジョブの再試行動作を改善しました。
-* ASSETS-57879：アセットの非同期移動/コピージョブの結合オプションを追加します。
-* ASSETS-58099: config を追加して、環境全体で拡張スマートタグを無効にします。
-* ASSETS-58136：検索 OpenAPI にページネーションフィードバックを実装する。
-* ASSETS-59402:Folder Delete API の非同期ジョブエンドポイントを追加する：内部リージョンにパッケージを書き出します。
-* ASSETS-59966: マルウェア管理者グループの名前を Quarantine Administrators に変更します。
-* ASSETS-60166:iframe ベースの URL ではなく VideoViewer.js を使用してください。
-* GRANITE-61378：権限デバッグツール - ListPrincipals API。
-* GRANITE-63235:`cq:conf` のプロパティを使用してサイトを識別するクエリ。古いページ/バージョンの検出に対応。
-* SITES-30452:ASO を使用したコンテンツ API - タイトルと説明の提案、XWalk サポート、JSON パッチ操作、IMS サービスプリンシパルバインディング。
+### 修正された問題 {#fixed-issues-23862}
 
-### 修正された問題 {#fixed-issues-23482}
+* CQ-4361831:genai_dropdown_span が定義されていない問題を修正しました。
+* CQ-4360895：同時更新中にプロジェクト内の不正確な翻訳ジョブステータス数が修正されました。
+* CQ-4361599:2025.7 へのアップグレード後に、翻訳ジョブからコンテンツフラグメントがスキップされる問題を修正しました。
+* CQ-4360747：固定繰り返し可能な翻訳ジョブで、空のペイロードとトリガーが頻繁に作成される（ScheduleRepeatTranslationProject の NullPointerException）。
+* CQ-4359994：単一プロジェクトと多言語プロジェクトの destinationLanguage フィールドタイプの不整合が修正されました。
+* SITES-38153:uuid ベースの参照の cf 公開参照プロバイダーを修正。
+* SITES-37594：タグ機能によるモデルのパフォーマンスの向上。
+* SITES-37337:FragmentCreateProcessor：ログにエラーの詳細を追加します。
+* SITES-33666: コンテンツフラグメントエディターで「フラグメントの Json を印刷できません」というエラーメッセージがローカライズされていません。
+* SITES-33675: コンテンツフラグメントエディター/関連コンテンツで「undefined」文字列をハードコードしました。
+* SITES-30715: コンテンツフラグメントエディターで「一般」文字列がローカライズされていません。
+* SITES-28592：コンテンツフラグメントモデルエディター/「モデルがロックされています」ダイアログで、ローカライズされていない文字列が表示される。
+* SITES-977：文字列「タグ」および「コレクション」が、コンテンツフラグメントを編集ページでローカライズされていない。
+* SITES-29699：コンテンツフラグメントエディターで、許可されているアセットのローカライズされていないタイプ。
+* SITES-25240：ティーザーモーダル内のCall to action フィールドに、表示ラベルがない。
+* SITES-24869：テンプレートエディター/セパレーター/ポリシーでツールヒントが切り詰められる。
+* SITES-19313：テンプレートエディターでコンポーネントを削除されたテンプレートにドラッグ&amp;ドロップすると、エラーがローカライズされない。
+* SITES-18103：ページエディター/ワークフローでローカライズされていない文字列。
+* SITES-17501: テンプレートエディター/コンポーネントポリシーエディターでローカライズされていない文字列。
+* SITES-15091：文字列が、エクスペリエンスフラグメントのテキストコンポーネントプロパティでローカライズされない。
+* SITES-8113: 「Assets」文字列が、「ツール」メニューの「テンプレート」の「画像を選択」ダイアログでローカライズされない。
+* SITES-37587:NPE が RolloutManagerImpl に設定されていると、実稼動環境でライブコピーの作成が失敗する。
+* SITES-37335:cq タグに関連するコンソールでエラーを示すライブコピーページのプロパティ。
+* SITES-36972：編集可能なツールバーに「ロールアウト」ボタンが表示されない。
+* SITES-36570：チャンク化された「ライブコピーを作成」切替スイッチがアクティブ化されると、ライブコピーの作成に失敗します。
+* SITES-36158：例外が原因でジョブが失敗し、ロールアウトが失敗する。
+* SITES-35655：新しい CF エディターが、壊れた後にアクティブな継承を表示する。
+* SITES-31425：サイトのワークフローの開始に「エラー：{} フィールドは必須です」というローカライズされていないエラーメッセージが表示される。
+* SITES-19802：ツールチップが、コアコンポーネントサイト/目次でローカライズされていない。
+* SITES-36543：チェックアウトされたコンテンツフラグメントを管理者が編集できる問題を修正しました。
+* SITES-36967：破損したコンテンツフラグメントのサムネールデータを生成しようとしたときに発生する NullPointerExceptions を修正しました。
+* SITES-37791:`$` を含む文字列に対して FindAndReplace を呼び出すと失敗する問題を修正しました。
+* SITES-37018：許可されていないテンプレートパスを含んだページをコピーする際に、空のエラーポップアップが表示される。
+* SITES-36243：ユニバーサルエディターを使用したEdge Delivery:`sling:OrderedFolder` の公開中に 404 を修正しました。
+* SITES-37684：ユニバーサルエディターを使用したEdge Delivery：多くのサイトが存在する環境でのパフォーマンス低下を修正しました。
+* SITES-37840：ユニバーサルエディターを使用したEdge Delivery:Edge Deliveryのアクセストークンが古くなったことによる公開エラーを修正しました。
+* SITES-37933：ユニバーサルエディターを使用したEdge Delivery：ローンチで削除されたリソースの公開エラーを修正（非公開）します。
+* SITES-37870：ユニバーサルエディターを使用したEdge Delivery：複数フィールドのサポートを有効にしたカスタムページメタデータのレンダリングが壊れる問題を修正しました。
+* SITES-37349：ユニバーサルエディターを使用したEdge Delivery：単一のリストアイテムを持つリストとして、単一のエントリを持つ複数のフィールドをレンダリングします。
+* SITES-36148：ユニバーサルエディターを使用したEdge Delivery：複合マルチフィールド用の data-aue-label を修正しました。
 
-* ASSETS-57430：前処理をスキップするAssets ビューのアップロードを修正：パッケージ `repoapi.preprocessing` エクスポートし、RAPI を最新に更新します。
-* ASSETS-58190：コレクション UI で不必要に高い推測合計を減らす。
-* ASSETS-58866:OpenAPI 応答で返されるアセットのタイトル/説明/ID を修正。
-* ASSETS-58868：アセットでフィールドを並べ替える際のページネーションを修正しました。
-* ASSETS-58920：前処理をスキップして一括アセット読み込みを修正。
-* ASSETS-59168：スキャンの開始/終了時間に間違ったタイムゾーンが表示される問題を修正。
-* ASSETS-59702：アセットのステータスが「ステータスなし」に設定された場合のイベントの順序を修正しました。
-* ASSETS-59830：ポッドの終了中に停止した非同期ジョブを再キューに入れます。
-* ASSETS-49757：マルウェア検出のスキャンイベントに対する修正。
-* GRANITE-61019:AEM`gcMonitor` 再起動した後、最初の実行時に修正が通知されません。
-* GRANITE-62717：非 ASCII 文字 `JSafe` 使用したパスワード処理を修正しました。
-* SITES-34331：管理者以外のユーザー（`cqLiveSyncCancelled index`）のロールアウトオーバーレイの読み込みに関して 503 タイムアウトを修正しました。
-
-### 既知の問題 {#known-issues-23482}
+### 既知の問題 {#known-issues-23862}
 
 なし。
 
-### 廃止された機能と API {#deprecated-23482}
+### 廃止された機能と API {#deprecated-23862}
 
 AEM as a Cloud Service で廃止および削除された機能と API について詳しくは、[廃止および削除された機能と API](/help/release-notes/deprecated-removed-features.md) ドキュメントを参照してください。
 
-### セキュリティ修正 {#security-23482}
+### セキュリティ修正 {#security-23862}
 
-AEM as a Cloud Service では、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。 このメンテナンスリリースでは、特定された 4 つの脆弱性に対処し、堅牢なシステム保護に対する取り組みを強化しています。
+AEM as a Cloud Service では、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。 このメンテナンスリリースでは、特定された 23 個の脆弱性に対処し、堅牢なシステム保護に対する取り組みを強化しています。
 
-### 組み込みテクノロジー {#embedded-tech-23482}
+### 組み込みテクノロジー {#embedded-tech-23862}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
-| AEM Oak | 1.88.0 | [Oak 1.88.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.88/index.html) |
+| AEM Oak | 1.88.0 | [Oak 1.88.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.88.0/index.html) |
 | AEM SLING API | 2.27.6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28-1.4.0 | [HTML テンプレート言語仕様](https://github.com/adobe/htl-spec) |
 | Apache HTTP サーバー | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | AEM コアコンポーネント | 2.30.2 | [AEM WCM コアコンポーネント](https://github.com/adobe/aem-core-wcm-components) |
 | Node.js | 14（デフォルト） | [サポートされている Node.js バージョン](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
-

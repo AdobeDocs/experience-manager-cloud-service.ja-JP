@@ -5,14 +5,14 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: ed358f58ba0dd4d5a9b283291702f867774515e4
+source-git-commit: d2e36674f6052d73c418a428e11e3c29075ab24c
 workflow-type: tm+mt
 source-wordcount: '1857'
-ht-degree: 49%
+ht-degree: 50%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Serviceの最新のリリースノート {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
 
 以下のセクションでは、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンの機能リリースノートの概要について説明します。
 
@@ -40,11 +40,11 @@ ht-degree: 49%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?captions=jpn&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## AEM ベータプログラム {#aem-beta-programs}
+## AEM Beta プログラム {#aem-beta-programs}
 
 Adobe Experience Manager（AEM）ベータプログラムを使用すると、プレリリース機能やコードにアクセスし、フィードバックを提供し、AEMの将来を導くことができます。
 
@@ -60,22 +60,22 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様お
 
 ### AEMのエージェント（Beta プログラム） {#agents-in-aem-beta-program}
 
-実稼働、ガバナンス、最適化、検出、開発全体にわたる、強力な新しいAEMエージェンティック機能に早期にアクセスできます。 お客様からのフィードバックによって、Adobeのロードマップと最終的な機能が直接形作られます。 詳しくは、[AEMでのエージェントの概要 &#x200B;](/help/ai-in-aem/agents/overview.md) を参照してください。
+実稼働、ガバナンス、最適化、検出、開発全体にわたる、強力な新しいAEMエージェンティック機能に早期にアクセスできます。 お客様からのフィードバックによって、Adobeのロードマップと最終的な機能が直接形作られます。 詳しくは、[AEMでのエージェントの概要 ](/help/ai-in-aem/agents/overview.md) を参照してください。
 
 このプログラムは通常 4～6 週間続きますが、積極的に参加する能力に合わせて柔軟に調整できます。
 
-このプログラムへの参加をオプトインするには、[aemagentsteam@adobe.comに電子メールを送信し &#x200B;](mailto:aemagentsteam@adobe.com) 可能な限り次の詳細を含めてください。
+このプログラムへの参加をオプトインするには、[aemagentsteam@adobe.comに電子メールを送信し ](mailto:aemagentsteam@adobe.com) 可能な限り次の詳細を含めてください。
 
 * エージェントを積極的に使用するチームメンバーの名前とAdobe ID。
 * 自分または自分のチームが使用する特定のエージェントのリスト。 または、単に「すべてのエージェント」と言います。
 
 ### AEM財団（Beta プログラム） {#aem-foundation-beta-programs}
 
-[AEM Foundation ベータプログラム &#x200B;](#foundation-early-adopter) を参照してください。
+[AEM Foundation ベータプログラム ](#foundation-early-adopter) を参照してください。
 
 ### Cloud Manager（Beta プログラム） {#cloud-manager-beta-programs}
 
-[Cloud Manager ベータプログラム &#x200B;](/help/implementing/cloud-manager/release-notes/current.md) を参照してください。
+[Cloud Manager ベータプログラム ](/help/implementing/cloud-manager/release-notes/current.md) を参照してください。
 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -88,12 +88,11 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様お
 
 * PNG （scale）およびJPG（image scale and quality）ファイル形式の書き出し時の書き出し設定のサポート。
 
-  ![Figma プラグイン &#x200B;](/help/assets/assets/figma-v2-plugin.png)
+  ![Figma プラグイン ](/help/assets/assets/figma-v2-plugin.png)
 
 **アップロードされたアセットのマルウェア検出**
 
 AEM Assetsには、アップロードされたファイルの自動マルウェアスキャンが含まれるようになりました。これにより、リポジトリを脅威から保護するために、DAM に入る前に疑わしいアセットが確実に隔離されます。 管理者は、スキャン設定と強制隔離の保持ポリシーを設定して、セキュリティ制御を効率化できます。
-
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -197,7 +196,7 @@ Adobeは 2025 年 10 月 14 日に **ステージング** 環境と **実稼動*
 
 >[!NOTE]
 >
-> 最新のパフォーマンス最適化と言語強化を活用するには、Java 17 または Java 21 （推奨）を使用してビルドすることをお勧めします。 Java 8 および Java 11 を使用したビルドは、現時点ではサポートされていますが、今後のリリースで非推奨（廃止予定）になります。 廃止に先立ち、別途お知らせいたします。 *この記事* の [&#x200B; ビルド時間要件 &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) の節を参照してください。
+> 最新のパフォーマンス最適化と言語強化を活用するには、Java 17 または Java 21 （推奨）を使用してビルドすることをお勧めします。 Java 8 および Java 11 を使用したビルドは、現時点ではサポートされていますが、今後のリリースで非推奨（廃止予定）になります。 廃止に先立ち、別途お知らせいたします。 *この記事* の [ ビルド時間要件 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) の節を参照してください。
 >
 
 #### AEM Java ログ設定ポリシーの適用 {#logconfig-policy}
@@ -215,7 +214,7 @@ Adobeは 2025 年 10 月 14 日に **ステージング** 環境と **実稼動*
 
 #### 自動メンテナンスアップデートの一時停止 {#pause-updates}
 
-運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[&#x200B; 新しいセルフサービス機能 &#x200B;](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
+運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[ 新しいセルフサービス機能 ](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
 
 * 静かな時間：毎日設定された時間に自動メンテナンスをブロックします。勤務時間、夜間の実行や朝の切り替え時などに最適です。
 * 更新不要の期間：自動メンテナンスを 1 週間ブロックします。ローンチ、プロモーションまたは年次フリーズに使用します。
