@@ -4,7 +4,7 @@ description: AEM の管理による CDN を使用する方法と、独自の CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 29aded35239bb8c9a5cf71f9b9dd036c4c32f026
+source-git-commit: afe526e72ac2116cd2e7da73d73f62a15f011e70
 workflow-type: tm+mt
 source-wordcount: '1772'
 ht-degree: 97%
@@ -162,24 +162,24 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 >
 >迅速な開発環境（RDE）を使用して、設定をデプロイおよびテストできます。
 >
->* [&#x200B; 迅速な開発環境 &#x200B;](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [&#x200B; 迅速な開発環境の使用方法 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [ 迅速な開発環境 ](/help/implementing/developing/introduction/rapid-development-environments.md)
+>* [ 迅速な開発環境の使用方法 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### CDN ベンダー設定のサンプル {#sample-configurations}
 
 いくつかの主要な CDN ベンダーの設定例を以下に示します。
 
-**Akamai**
+#### **Akamai** {#byocdn-akamai}
 
 ![Akamai1](assets/akamai1.png "Akamai")
 ![Akamai2](assets/akamai2.png "Akamai")
 
-**Amazon CloudFront**
+#### **Amazon CloudFront** {#byocdn-cloudfront}
 
 ![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
 ![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
 
-**Cloudflare**
+#### **Cloudflare** {#byocdn-cloudflare}
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
