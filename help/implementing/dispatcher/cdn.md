@@ -4,10 +4,10 @@ description: AEM の管理による CDN を使用する方法と、独自の CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: afe526e72ac2116cd2e7da73d73f62a15f011e70
+source-git-commit: a36eae0f32b36224c53f756238ba2f5f90699e6c
 workflow-type: tm+mt
 source-wordcount: '1772'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -39,7 +39,7 @@ Cloud Manager のセルフサービス UI を通じて AEM のビルトインの
 * [SSL 証明書の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
 * [CDN の設定](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
 
-**トラフィックの制限**
+### トラフィックの制限 {#restricting-traffic}
 
 デフォルトでは、AEM の管理による CDN 設定の場合、実稼動環境と実稼動以外（開発およびステージング）の環境の両方で、すべてのパブリックトラフィックがパブリッシュサービスに到達できます。Cloud Manager ユーザーインターフェイスを使用して、特定の環境のパブリッシュサービスへのトラフィックを制限できます（IP アドレスの範囲でステージングを制限するなど）。
 
@@ -74,7 +74,7 @@ HTTP キャッシュ制御ヘッダーを使用した TTL の設定は、コン�
 
 ビジネス関係者がコンテンツのレビューを行うなどの簡単な認証ユースケースの場合は、ユーザー名とパスワードを必要とする基本認証ダイアログを表示して、コンテンツを保護します。[詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md)。
 
-## 顧客管理 CDN での AEM の管理による CDN への参照 {#point-to-point-CDN}
+## 顧客管理 CDN での AEM の管理による CDN への参照 {#point-to-point-cdn}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -106,7 +106,7 @@ HTTP キャッシュ制御ヘッダーを使用した TTL の設定は、コン�
 
 `X-AEM-Edge-Key` を設定後、リクエストが正しくルーティングされているかどうかを、次のようにテストできます。
 
-Linux® の場合：
+Linux の場合：
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
@@ -138,7 +138,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 BYOCDN 設定をデバッグするには、`edge=true` の値を持つ `x-aem-debug` ヘッダーを使用します。例：
 
-Linux® の場合：
+Linux の場合：
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
@@ -162,24 +162,24 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 >
 >迅速な開発環境（RDE）を使用して、設定をデプロイおよびテストできます。
 >
->* [&#x200B; 迅速な開発環境 &#x200B;](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [&#x200B; 迅速な開発環境の使用方法 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [ 迅速な開発環境 ](/help/implementing/developing/introduction/rapid-development-environments.md)
+>* [ 迅速な開発環境の使用方法 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### CDN ベンダー設定のサンプル {#sample-configurations}
 
 いくつかの主要な CDN ベンダーの設定例を以下に示します。
 
-#### **Akamai** {#byocdn-akamai}
+#### Akamai {#byocdn-akamai}
 
 ![Akamai1](assets/akamai1.png "Akamai")
 ![Akamai2](assets/akamai2.png "Akamai")
 
-#### **Amazon CloudFront** {#byocdn-cloudfront}
+#### Amazon CloudFront {#byocdn-cloudfront}
 
 ![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
 ![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
 
-#### **Cloudflare** {#byocdn-cloudflare}
+#### Cloudflare {#byocdn-cloudflare}
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
@@ -188,15 +188,15 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 
 提供されるサンプル設定は、必要な基本設定を示しています。ただし、顧客設定には、AEM as a Cloud Service がトラフィックに対応するのに必要なヘッダーを削除、編集、再配置する、その他の影響を及ぼすルールが含まれている場合があります。AEM as a Cloud Service を指すように顧客管理 CDN を設定する際に発生する、一般的なエラーを以下に示します。
 
-**パブリッシュサービスエンドポイントへのリダイレクト**
+#### パブリッシュサービスエンドポイントへのリダイレクト {#redirect-publish}
 
 リクエストが 403 forbidden 応答を受け取った場合、リクエストに必要なヘッダーの一部が欠落していることを意味します。よくある原因は、CDN が apex と `www` ドメインの両方のトラフィックを管理しているものの、`www` ドメインに適したヘッダーを追加していないことです。この問題は、AEM as a Cloud Service CDN ログを確認し、必要なリクエストヘッダーを確認することで、トリアージすることができます。
 
-**エラー 421 誤ったリダイレクト**
+#### エラー 421 リダイレクトの誤り {#error-421}
 
 `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` というメッセージを含む 421 エラーは、HTTP `Host` が証明書にリストされているどのホストとも一致しないことを示します。この問題は通常、`Host` または SNI の設定のいずれかが間違っていることを示します。`Host` と SNI の設定の両方が publish-p&lt;PROGRAM_ID>-e.adobeaemcloud.com ホストを指していることを確認します。
 
-**リダイレクトループが多すぎます**
+#### リダイレクト ループが多すぎます {#redirect-loop}
 
 ページで「リダイレクトが多すぎます」ループが発生すると、ページを強制的にページ自体に戻すリダイレクトに一致する一部のリクエストヘッダーが CDN に追加されます。例：
 
