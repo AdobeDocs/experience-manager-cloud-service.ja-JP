@@ -4,10 +4,10 @@ description: Web アプリケーションファイアウォール（WAF）ルー
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: d967706a000edc8c06193d1a8a39a1931fffbb99
 workflow-type: tm+mt
-source-wordcount: '4582'
-ht-degree: 100%
+source-wordcount: '4610'
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 これらのトラフィックフィルタールールの多くは、AEM as a Cloud Service Sites および Forms のすべてのお客様が利用できます。*標準トラフィックフィルタールール*&#x200B;と呼ばれるこれらのルールは、主に IP、ホスト名、パス、ユーザーエージェントなどのリクエストプロパティとリクエストヘッダーに対して動作します。標準トラフィックフィルタールールには、トラフィックスパイクを防ぐためのレート制限ルールが含まれます。
 
-トラフィックフィルタールールのサブカテゴリには、拡張セキュリティライセンスまたは WAF-DDoS 保護ライセンスが必要です。これらの強力なルールは、WAF（web アプリケーションファイアウォール）トラフィックフィルタールール（または *WAF ルール*）と呼ばれ、この記事で後述する [WAF フラグ](#waf-flags-list)にアクセスできます。
+トラフィックフィルタールールのサブカテゴリには、Extended Security （旧称WAF-DDoS Protection）または Extended Security for Healthcare （旧称 Enhanced Security）ライセンスが必要です。 これらの強力なルールは、WAF（web アプリケーションファイアウォール）トラフィックフィルタールール（または *WAF ルール*）と呼ばれ、この記事で後述する [WAF フラグ](#waf-flags-list)にアクセスできます。
 
 トラフィックフィルタールールは、Cloud Manager 設定パイプラインを通じて、開発環境、ステージ環境および本番環境のタイプにデプロイできます。設定ファイルは、コマンドラインツールを使用して高速開発環境（RDE）にデプロイできます。
 
@@ -111,7 +111,7 @@ ht-degree: 100%
 
 *トラフィックフィルタールール* を設定して、IP、ユーザーエージェント、リクエストヘッダー、ホスト名、地域、url などのパターンを照合できます。
 
-また、拡張セキュリティや WAF-DDoS 保護セキュリティの機能のライセンスが付与されているお客様は、1 つ以上の [WAF フラグ](#waf-flags-list)を参照する *WAF トラフィックフィルタールール*（略称：*WAF ルール*）と呼ばれる特別なカテゴリのトラフィックフィルタールールを設定することもできます。
+Extended Security （旧称WAF-DDoS Protection）または Extended Security for Healthcare （旧称 Enhanced Security）製品のライセンスを取得しているお客様は、1 つ以上の *WAF フラグ* を参照する *WAF トラフィックフィルタールール* （略して [WAF ルール ](#waf-flags-list)）と呼ばれる特別なカテゴリのトラフィックフィルタールールも設定できます。
 
 WAF ルールも含む一連のトラフィックフィルタールールの例を以下に示します。
 
@@ -430,7 +430,7 @@ data:
 
 **例 1**
 
-このルールは、最後の 10 秒間に平均 60 リクエスト/秒（CDN POP あたり）を超えると、クライアントを 5 ミリ秒間ブロックします。
+このルールは、過去 10 秒間に（CDN POP あたり）平均 60 回/秒を超えた場合、クライアントを 5 分間ブロックします。
 
 ```
 kind: "CDN"
@@ -641,7 +641,7 @@ CDN ログで使用されるフィールド名と、それらの簡単な説明�
 
 ## 推奨されるスタータールール {#recommended-starter-rules}
 
-アドビでは、以下のトラフィックフィルタールールから始めて、時間の経過と共に絞り込むことをお勧めします。*標準ルール*&#x200B;は、サイトまたはフォームのライセンスで使用できます。一方、*WAF ルール*&#x200B;には、拡張セキュリティまたは WAF-DDoS 保護のライセンスが必要です。
+アドビでは、以下のトラフィックフィルタールールから始めて、時間の経過と共に絞り込むことをお勧めします。*標準規則* は、Sites またはForms ライセンスで使用できます。*WAF規則* には、Extended Security （旧称WAF-DDoS Protection）または Extended Security for Healthcare （旧称 Enhanced Security）ライセンスが必要です。
 
 ### 推奨される標準ルール {#recommended-nonwaf-starter-rules}
 
