@@ -45,7 +45,7 @@ ht-degree: 12%
 
 ## インタラクティブ通信のコピー
 
-![IC 文書の検索 ](/help/forms/interactive-communication/assets/copy-in-ic.png)
+![IC 文書の検索 &#x200B;](/help/forms/interactive-communication/assets/copy-in-ic.png)
 
 インタラクティブ通信をコピーするには、次の手順に従います。
 
@@ -65,7 +65,7 @@ ht-degree: 12%
 
 ## コピーしたインタラクティブ通信を編集して再利用します
 
-![IC 文書の検索 ](/help/forms/interactive-communication/assets/paste-in-ic.png)
+![IC 文書の検索 &#x200B;](/help/forms/interactive-communication/assets/paste-in-ic.png)
 
 インタラクティブ通信を貼り付けた後：
 
