@@ -4,9 +4,9 @@ description: 顧客向けのエージェントが、準拠したパーソナラ�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 19270498fa60f860b31400ad40705ecd2f821cf8
+source-git-commit: 234b6dc747bbba21e9249d526bf894860572dfe5
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '600'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 **関連付け UI** は、インタラクティブ通信（IC）エディターの上に構築された、専用のシンプルなインターフェイスです。 現場の担当者やサービスエージェントなど、お客様と向き合うプロフェッショナルを対象として、パーソナライズされ、準拠した正確なコミュニケーションをライブインタラクション中にリアルタイムで生成するように設計されています。
 
-![IC 文書の検索 &#x200B;](/help/forms/interactive-communication/assets/associate-ui-preview.png)
+![IC 文書の検索 ](/help/forms/interactive-communication/assets/associate-ui-preview.png)
 
 ## UI インターフェイスを関連付ける
 
@@ -97,7 +97,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 関連付けでサポートされるコンポーネント：日付フィールド、数値フィールド、テキストフィールド。
+> 関連付けでサポートされるコンポーネント：日付フィールド、数値フィールド、テキストフィールド、DateTimeField、日付フィールド、チェックボックス、ラジオボタン、ドロップダウン。
 
 ### IC の作成
 
