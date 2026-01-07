@@ -4,7 +4,7 @@ Description: Learn how to configure an Azure SQL Database connection in AEM Form
 Keywords: Azure SQL integration with AEM Forms, Connecting Adaptive Forms to Azure SQL Database, JDBC connection for Azure SQL in AEM Forms, Storing Adaptive Form data in Azure SQL
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 40193d89f2a4ef864a564eb9932403531eaf1ff7
+source-git-commit: e29f70aa1a8164787c7d310a05c24d7e501803e5
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 16%
@@ -16,7 +16,7 @@ ht-degree: 16%
 Adobe Experience Manager（AEM）のアダプティブFormsは、外部データベースと統合してデータを保存または取得できます。
 この記事では、AEM as a Cloud Serviceで JDBC を使用してアダプティブフォームを Azure SQL データベースに接続する方法について概説します。
 
-> 
+>
 > 
 > このガイドは、高度なネットワーク機能が有効になっている、サンドボックス以外のAEM as a Cloud Service環境に適用されます。
 
@@ -38,9 +38,9 @@ Adobe Experience Manager（AEM）のアダプティブFormsは、外部データ
   >
   > `Azure Portal → SQL Server → Security → Networking → Connectivity` に移動して、**プロキシ接続** を有効にします。
 
-  ![Azure Db の作成 &#x200B;](/help/forms/assets/create-azure-db.png)
+  ![Azure Db の作成 ](/help/forms/assets/create-azure-db.png)
 
-* 作成した Azure データベースに対して、専用のエグレス IP を使用して設定された [&#x200B; 高度なネットワーク &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) を有効にします。
+* 作成した Azure データベースに対して、専用のエグレス IP を使用して設定された [ 高度なネットワーク ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) を有効にします。
 
   >[!NOTE]
   >
@@ -53,7 +53,7 @@ Adobe Experience Manager（AEM）のアダプティブFormsは、外部データ
    * **portDest**: `1433` （Azure SQL のデフォルトのポート）
 例：`portOrigin: 30433 → portDest: 1433`
 
-     > 
+     >
      > 
      > ポート転送の設定については、Adobe Cloud Manager サポートにお問い合わせください。
 
@@ -80,11 +80,11 @@ Adobe Experience Manager（AEM）のアダプティブFormsは、外部データ
 
 **手順 2：必要な JAR の追加**
 
-[SQL ドライバーの依存関係 &#x200B;](https://central.sonatype.com/artifact/com.microsoft.sqlserver/mssql-jdbc/12.8.0.jre11?smo=true) を、`all` パッケージを介してAEM プロジェクトに含めます。
+[SQL ドライバーの依存関係 ](https://central.sonatype.com/artifact/com.microsoft.sqlserver/mssql-jdbc/12.8.0.jre11?smo=true) を、`all` パッケージを介してAEM プロジェクトに含めます。
 
 >[!NOTE]
 >
-> プロジェクトに SQL 依存関係を含めるには、[SQL ドライバーの依存関係 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies) の節を参照してください。
+> プロジェクトに SQL 依存関係を含めるには、[SQL ドライバーの依存関係 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies) の節を参照してください。
 
 **手順 3:JDBC 設定の追加**
 
@@ -115,7 +115,7 @@ Adobe Experience Manager（AEM）のアダプティブFormsは、外部データ
        }
    ```
 
-   > 
+   >
    >
    > `jdbc.username` を実際の Azure ユーザー名に、`jdbc.password` を実際の安全なパスワードに置き換えます。
 
@@ -150,7 +150,7 @@ AEMと Azure のセットアップが完了し、コードの変更がデプロ�
 
 1. アダプティブフォームを編集モードで開きます。
 1. 前の手順で作成した FDM をデータモデルとして選択します。
-1. [&#x200B; データバインディングを使用して、フォームフィールドを Azure SQL データソースに接続し &#x200B;](/help/forms/work-with-form-data-model.md#add-data-model-objects-and-services) 送信アクションを設定します。
+1. [ データバインディングを使用して、フォームフィールドを Azure SQL データソースに接続し ](/help/forms/work-with-form-data-model.md#add-data-model-objects-and-services) 送信アクションを設定します。
 
 ## ベストプラクティス
 
