@@ -4,7 +4,7 @@ description: ユニバーサルエディターの動作およびプロジェク�
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 392fdb0a0c1982f9be59cb530e86f13aeea3316b
 workflow-type: tm+mt
 source-wordcount: '3179'
 ht-degree: 100%
@@ -118,7 +118,7 @@ X-Frame オプションの `sameorigin` は、フレーム内での AEM ペー�
 
    ![SameSite cookie の OSGi プロパティ](assets/dev-cross-origin-osgi.png)
 
-1. **login-token cookie の SameSite 属性**&#x200B;プロパティを `None` に変更します。
+1. **login-token cookie の SameSite 属性**&#x200B;プロパティを `Partitioned` に変更します。
 
 1. 変更内容を保存します。
 
