@@ -4,10 +4,10 @@ description: リモートアプリのコンテンツや UI の変更に対応す
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: ac361c31b116466cc9a718640c1de4e4ef396fba
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 100%
+source-wordcount: '530'
+ht-degree: 94%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ## コンテンツ更新イベント {#content-events}
 
-### aue:content-add {#content-add}
+### オーサリング&amp;amp；コロン；content-add {#content-add}
 
 `aue:content-add` イベントは、コンテナに新しいコンポーネントを追加した際にトリガーされます。
 
@@ -53,7 +53,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-details {#content-details}
+### オーサーマップ（&amp;A）；コロン；content-details {#content-details}
 
 `aue:content-details` イベントは、プロパティパネルにコンポーネントを読み込んだ際にトリガーされます。
 
@@ -70,7 +70,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-move {#content-move}
+### オーサリング（&amp;colon;content-move） {#content-move}
 
 `aue:content-move` イベントは、コンポーネントを移動した際にトリガーされます。
 
@@ -89,7 +89,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-patch {#content-patch}
+### オーサー&amp;amp；コロン；content-patch {#content-patch}
 
 `aue:content-patch` イベントは、プロパティパネルでコンポーネントのデータを更新した際にトリガーされます。
 
@@ -108,7 +108,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-remove {#content-remove}
+### オーサリング&amp;amp；コロン；コンテンツ削除 {#content-remove}
 
 `aue:content-remove` イベントは、コンポーネントをコンテナから削除した際にトリガーされます。
 
@@ -124,7 +124,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-update {#content-update}
+### オーサリング&amp;amp；コロン；content-update {#content-update}
 
 `aue:content-update` イベントは、コンポーネントのプロパティをコンテキスト内で更新した際にトリガーされます。
 
@@ -180,7 +180,7 @@ ht-degree: 100%
 
 ## UI イベント {#ui-events}
 
-### aue:ui-preview {#ui-preview}
+### オーサーマップ（&amp;colon;ui-preview） {#ui-preview}
 
 `aue:ui-preview` イベントは、ページの編集モードを&#x200B;**プレビュー**&#x200B;に変更した際にトリガーされます。
 
@@ -192,7 +192,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:ui-edit {#ui-edit}
+### オーサリング&amp;amp；コロン；ui-edit {#ui-edit}
 
 `aue:ui-edit` イベントは、ページの編集モードを&#x200B;**編集**&#x200B;に変更した際にトリガーされます。
 
@@ -204,7 +204,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:ui-viewport-change {#ui-viewport-change}
+### オーサー&amp;colon;ui-viewport-change {#ui-viewport-change}
 
 `aue:ui-viewport-change` イベントは、ビューポートのサイズを変更した際にトリガーされます。
 
@@ -219,7 +219,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:initialized {#initialized}
+### カスタム&amp;colon；初期化済み {#initialized}
 
 `aue:initialized` イベントは、ユニバーサルエディターに正常に読み込まれたことをリモートページに通知するためにトリガーされます。
 
@@ -257,4 +257,3 @@ ht-degree: 100%
 ## その他のリソース {#additional-resources}
 
 * [ユニバーサルエディターの呼び出し](/help/implementing/universal-editor/calls.md)
-
