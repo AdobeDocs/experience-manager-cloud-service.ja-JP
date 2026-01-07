@@ -38,7 +38,7 @@ ht-degree: 3%
 
 ビジュアルルールエディターでは、出力応答に基づいて、**サービスの呼び出し** 操作の成功ハンドラーと失敗ハンドラーのルールを作成できます。 次の画像は、アダプティブフォームのビジュアルルールエディターにある **サービスを呼び出す** を示しています。
 
-![ サービスハンドラーの呼び出し ](/help/forms/assets/invoke-service-rule-editor.png)
+![&#x200B; サービスハンドラーの呼び出し &#x200B;](/help/forms/assets/invoke-service-rule-editor.png)
 
 ### 成功ハンドラーと失敗ハンドラーの追加
 
@@ -46,15 +46,15 @@ ht-degree: 3%
 
 「**[!UICONTROL サクセスハンドラーを追加]**」をクリックすると、**[!UICONTROL サービスサクセスハンドラーを起動]** ルールエディターが表示されます。このルールエディターで、操作が成功したときに **サービスを起動** 出力応答を管理するルールまたはロジックを指定できます。 条件を定義しなくてもルールを指定できます。ただし、「**[!UICONTROL 条件を追加]**」オプションをクリックすると、成功ハンドラーの条件を追加できます。
 
-![ サービス成功ハンドラーを起動 ](/help/forms/assets/invoke-service-success-handler.png)
+![&#x200B; サービス成功ハンドラーを起動 &#x200B;](/help/forms/assets/invoke-service-success-handler.png)
 
 複数のルールを追加して、**サービスを呼び出し** 操作の応答の成功を処理できます。
 
-![ 複数のサクセスハンドラー ](/help/forms/assets/invoke-service-multiple-success-handlers.png){width=50%, height=50%}
+![&#x200B; 複数のサクセスハンドラー &#x200B;](/help/forms/assets/invoke-service-multiple-success-handlers.png){width=50%, height=50%}
 
 同様に、操作が成功しなかった場合に **サービスの呼び出し** 出力応答を処理するルールを追加できます。 次の画像は、**[!UICONTROL サービスエラーハンドラーを起動]** ルールエディターを示しています。
 
-![ サービス呼び出しエラーハンドラー ](/help/forms/assets/invoke-service-failue-handler.png)
+![&#x200B; サービス呼び出しエラーハンドラー &#x200B;](/help/forms/assets/invoke-service-failue-handler.png)
 
 また、複数のルールを追加して、「サービスの呼び出し **操作からの失敗した応答を処理す** こともできます。
 
@@ -64,8 +64,8 @@ ht-degree: 3%
 
 ルールエディターで **サービスを呼び出し** を使用する前に満たす必要がある前提条件を以下に示します。
 
-* データソースが設定されていることを確認します。 データソースの設定手順については、[ ここをクリック ](/help/forms/configure-data-sources.md) してください。
-* 設定済みのデータソースを使用して、フォームデータモデルを作成します。 フォームデータモデルの作成に関するガイダンスについては [ ここをクリック ](/help/forms/create-form-data-models.md) してください。
+* データソースが設定されていることを確認します。 データソースの設定手順については、[&#x200B; ここをクリック &#x200B;](/help/forms/configure-data-sources.md) してください。
+* 設定済みのデータソースを使用して、フォームデータモデルを作成します。 フォームデータモデルの作成に関するガイダンスについては [&#x200B; ここをクリック &#x200B;](/help/forms/create-form-data-models.md) してください。
 * お使いの環境でコアコンポーネントが有効になっていることを確認します。 お使いの AEM Cloud Service 環境でアダプティブフォームコアコンポーネントを有効にするには、最新版をインストールします。
 
 ## 様々なユースケースを通じたサービスの呼び出しの調査
@@ -76,15 +76,15 @@ ht-degree: 3%
 
 | **ユースケース** | **説明** |
 |----------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| **呼び出しサービスの出力を使用したドロップダウンオプションの入力** | 呼び出しサービス出力から取得したデータに基づいて、ドロップダウンオプションを動的に入力します。 実装を確認するには、[ ここをクリック ](#use-case-1-populate-dropdown-values-using-the-output-of-invoke-service) します。 |
-| **呼び出しサービスの出力を使用した繰り返し可能なパネルの設定** | サービスの呼び出し出力のデータを使用して繰り返し可能なパネルを設定し、動的パネルを許可します。 実装を確認するには、[ ここをクリック ](#use-case-2-set-repeatable-panel-using-output-of-invoke-service) します。 |
-| **呼び出しサービスの出力を使用したパネルの設定** | 呼び出しサービス出力の特定の値を使用して、パネルの内容または表示を設定します。 実装を確認するには、[ ここをクリック ](#use-case-3-set-panel-using-output-of-invoke-service) します。 |
-| **呼び出しサービスの出力パラメーターを使用して他のフィールドを検証する** | 呼び出しサービスの特定の出力パラメーターを使用して、フォームフィールドを検証します。 実装を確認するには、[ ここをクリック ](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields) します。 |
-| **呼び出しサービスの「移動先」アクションでのイベントペイロードの使用** | イベントペイロードを使用して、成功および失敗の応答を処理し、ナビゲーション中にデータを「移動先」アクションに渡します。 実装を確認するには、[ ここをクリック ](#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service) します。 |
+| **呼び出しサービスの出力を使用したドロップダウンオプションの入力** | 呼び出しサービス出力から取得したデータに基づいて、ドロップダウンオプションを動的に入力します。 実装を確認するには、[&#x200B; ここをクリック &#x200B;](#use-case-1-populate-dropdown-values-using-the-output-of-invoke-service) します。 |
+| **呼び出しサービスの出力を使用した繰り返し可能なパネルの設定** | サービスの呼び出し出力のデータを使用して繰り返し可能なパネルを設定し、動的パネルを許可します。 実装を確認するには、[&#x200B; ここをクリック &#x200B;](#use-case-2-set-repeatable-panel-using-output-of-invoke-service) します。 |
+| **呼び出しサービスの出力を使用したパネルの設定** | 呼び出しサービス出力の特定の値を使用して、パネルの内容または表示を設定します。 実装を確認するには、[&#x200B; ここをクリック &#x200B;](#use-case-3-set-panel-using-output-of-invoke-service) します。 |
+| **呼び出しサービスの出力パラメーターを使用して他のフィールドを検証する** | 呼び出しサービスの特定の出力パラメーターを使用して、フォームフィールドを検証します。 実装を確認するには、[&#x200B; ここをクリック &#x200B;](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields) します。 |
+| **呼び出しサービスの「移動先」アクションでのイベントペイロードの使用** | イベントペイロードを使用して、成功および失敗の応答を処理し、ナビゲーション中にデータを「移動先」アクションに渡します。 実装を確認するには、[&#x200B; ここをクリック &#x200B;](#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service) します。 |
 
 `Get Information` テキストボックスに入力された入力に基づいて値を取得する `Pet ID` フォームを作成します。 以下のスクリーンショットは、これらのユースケースで使用されるフォームを示しています。
 
-![ 情報フォームの取得 ](/help/forms/assets/get-information-form.png)
+![&#x200B; 情報フォームの取得 &#x200B;](/help/forms/assets/get-information-form.png)
 
 **フォームフィールド**
 
@@ -114,7 +114,7 @@ ht-degree: 3%
 
 **データソース**
 
-この例では、[Swagger Petstore](https://petstore.swagger.io/) API を使用してデータソースを設定します。 [ フォームデータモデル ](/help/forms/create-form-data-models.md) は [getPetById](https://petstore.swagger.io/#/pet/getPetById) サービス用に設定されており、入力した ID に基づいてペットの詳細を取得します。
+この例では、[Swagger Petstore](https://petstore.swagger.io/) API を使用してデータソースを設定します。 [&#x200B; フォームデータモデル &#x200B;](/help/forms/create-form-data-models.md) は [getPetById](https://petstore.swagger.io/#/pet/getPetById) サービス用に設定されており、入力した ID に基づいてペットの詳細を取得します。
 
 [Swagger Petstore](https://petstore.swagger.io/#/pet/addPet) API の [addPet](https://petstore.swagger.io/) サービスを使用して、次の JSON を投稿します。
 
@@ -160,11 +160,11 @@ ht-degree: 3%
 
 それには、「`Pet ID`」テキストボックスでルールを作成して、`getPetById` サービスを呼び出します。 ルールで、`enum` 成功ハンドラーの追加 `photo-url` の `photoUrls` ドロップダウンの **[!UICONTROL プロパティを]** に設定します。
 
-![ ドロップダウン値を設定 ](/help/forms/assets/set-dropdownoption.png)
+![&#x200B; ドロップダウン値を設定 &#x200B;](/help/forms/assets/set-dropdownoption.png)
 
 >[!NOTE]
 >
-> 成功ハンドラーと失敗ハンドラーの設定方法については、[ サクセスハンドラーと失敗ハンドラーの追加 ](#adding-success-handler-and-failure-handler) の節を参照してください。
+> 成功ハンドラーと失敗ハンドラーの設定方法については、[&#x200B; サクセスハンドラーと失敗ハンドラーの追加 &#x200B;](#adding-success-handler-and-failure-handler) の節を参照してください。
 
 #### 出力
 
@@ -185,17 +185,17 @@ ht-degree: 3%
 
 「`Pet ID`」テキストボックスに、`getPetById` サービスを呼び出すルールを作成します。 **[!UICONTROL サクセスハンドラーを追加]** で、別のサクセスハンドラー応答を追加します。 ルール内で `tags` パネルの値を `tags` に設定します。
 
-![ 繰り返し可能なパネル用のルールの作成 ](/help/forms/assets/create-rule-repeatable-panel.png)
+![&#x200B; 繰り返し可能なパネル用のルールの作成 &#x200B;](/help/forms/assets/create-rule-repeatable-panel.png)
 
 >[!NOTE]
 >
-> 成功ハンドラーと失敗ハンドラーの設定方法については、[ サクセスハンドラーと失敗ハンドラーの追加 ](#adding-success-handler-and-failure-handler) の節を参照してください。
+> 成功ハンドラーと失敗ハンドラーの設定方法については、[&#x200B; サクセスハンドラーと失敗ハンドラーの追加 &#x200B;](#adding-success-handler-and-failure-handler) の節を参照してください。
 
 #### 出力
 
 `101` テキストボックスに `Pet ID` と入力し、入力値に基づいて繰り返し可能なパネルを動的に入力します。
 
-![ 出力 ](/help/forms/assets/output2.png)
+![&#x200B; 出力 &#x200B;](/help/forms/assets/output2.png)
 
 ### ユースケース 3：呼び出しサービスの出力を使用したパネルの設定
 
@@ -212,15 +212,15 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 成功ハンドラーと失敗ハンドラーの設定方法については、[ サクセスハンドラーと失敗ハンドラーの追加 ](#adding-success-handler-and-failure-handler) の節を参照してください。
+> 成功ハンドラーと失敗ハンドラーの設定方法については、[&#x200B; サクセスハンドラーと失敗ハンドラーの追加 &#x200B;](#adding-success-handler-and-failure-handler) の節を参照してください。
 
-![ 繰り返し可能なパネル用のルールの作成 ](/help/forms/assets/set-panel-values.png)
+![&#x200B; 繰り返し可能なパネル用のルールの作成 &#x200B;](/help/forms/assets/set-panel-values.png)
 
 #### 出力
 
 `101` テキストボックスに `Pet ID` と入力し、入力値に基づいてパネルに動的に入力します。
 
-![ 出力 ](/help/forms/assets/output3.png)
+![&#x200B; 出力 &#x200B;](/help/forms/assets/output3.png)
 
 ### ユースケース 4：呼び出しサービスの出力パラメーターを使用して他のフィールドを検証
 
@@ -230,13 +230,13 @@ ht-degree: 3%
 
 「`Pet ID`」テキストボックスに、`getPetById` サービスを呼び出すルールを作成します。 **[!UICONTROL エラーハンドラーを追加]** で、エラーハンドラー応答を追加します。 間違った **を入力した場合は** 送信 `Pet ID` ボタンを非表示にします。
 
-![ エラーハンドラー ](/help/forms/assets/create-rule-failure-handler.png)
+![&#x200B; エラーハンドラー &#x200B;](/help/forms/assets/create-rule-failure-handler.png)
 
 #### 出力
 
 `102` テキストボックスに「`Pet ID`」と入力すると、「**送信**」ボタンが非表示になります。
 
-![ 出力 ](/help/forms/assets/output4.png)
+![&#x200B; 出力 &#x200B;](/help/forms/assets/output4.png)
 
 ### ユースケース 5：呼び出しサービスの「移動」アクションでのイベントペイロードの使用
 
@@ -257,11 +257,11 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 定義済みのフォームデータモデルを使用せずに、ルールエディターインターフェイスで API を直接統合する方法については、[ ここをクリック ](/help/forms/api-integration-in-rule-editor.md) を参照してください。
+> 定義済みのフォームデータモデルを使用せずに、ルールエディターインターフェイスで API を直接統合する方法については、[&#x200B; ここをクリック &#x200B;](/help/forms/api-integration-in-rule-editor.md) を参照してください。
 
 **[!UICONTROL サクセスハンドラーを追加]** で、**パラメーターを使用してユーザーを** お問い合わせ **ページにリダイレクトするように** 移動先 `Event Payload` アクションを設定します。 ここで、ユーザーは自分の連絡先の詳細を送信できます。
 
-![ イベントペイロード ](/help/edge/docs/forms/assets/navigate-to-eventpayload.png)
+![&#x200B; イベントペイロード &#x200B;](/help/edge/docs/forms/assets/navigate-to-eventpayload.png)
 
 オプションで、サービス呼び出しが失敗した場合にエラーメッセージを表示する失敗ハンドラーを設定します。
 
@@ -269,7 +269,7 @@ ht-degree: 3%
 
 「**送信**」ボタンがクリックされると、`redirect-api` API サービスが呼び出されます。 成功すると、ユーザーは **お問い合わせ** ページにリダイレクトされます。
 
-![ イベントペイロード出力 ](/help/forms/assets/output5.gif)
+![&#x200B; イベントペイロード出力 &#x200B;](/help/forms/assets/output5.gif)
 
 ## よくある質問
 
