@@ -40,7 +40,7 @@ Adobe Experience Manager（AEM）のアダプティブFormsは、外部データ
 
   ![Azure Db の作成 &#x200B;](/help/forms/assets/create-azure-db.png)
 
-* 作成した Azure データベースに対して、専用のエグレス IP を使用して設定された [&#x200B; 高度なネットワーク &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) を有効にします。
+* 作成した Azure データベースに対して、専用のエグレス IP を使用して設定された [&#x200B; 高度なネットワーク &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) を有効にします。
 
   >[!NOTE]
   >
@@ -84,7 +84,7 @@ Adobe Experience Manager（AEM）のアダプティブFormsは、外部データ
 
 >[!NOTE]
 >
-> プロジェクトに SQL 依存関係を含めるには、[SQL ドライバーの依存関係 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies) の節を参照してください。
+> プロジェクトに SQL 依存関係を含めるには、[SQL ドライバーの依存関係 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies) の節を参照してください。
 
 **手順 3:JDBC 設定の追加**
 
