@@ -70,7 +70,7 @@ ht-degree: 94%
 }
 ```
 
-### オーサリング（&amp;colon;content-move） {#content-move}
+### オーサリング（&colon;content-move） {#content-move}
 
 `aue:content-move` イベントは、コンポーネントを移動した際にトリガーされます。
 
@@ -180,7 +180,7 @@ ht-degree: 94%
 
 ## UI イベント {#ui-events}
 
-### オーサーマップ（&amp;colon;ui-preview） {#ui-preview}
+### オーサーマップ（&colon;ui-preview） {#ui-preview}
 
 `aue:ui-preview` イベントは、ページの編集モードを&#x200B;**プレビュー**&#x200B;に変更した際にトリガーされます。
 
@@ -204,7 +204,7 @@ ht-degree: 94%
 }
 ```
 
-### オーサー&amp;colon;ui-viewport-change {#ui-viewport-change}
+### オーサー&colon;ui-viewport-change {#ui-viewport-change}
 
 `aue:ui-viewport-change` イベントは、ビューポートのサイズを変更した際にトリガーされます。
 
