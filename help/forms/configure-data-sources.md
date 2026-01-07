@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: f913871da16b44d7a465e0fa00608835524ba7e3
 workflow-type: tm+mt
-source-wordcount: '2339'
-ht-degree: 99%
+source-wordcount: '2384'
+ht-degree: 94%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 99%
 
 [!DNL Experience Manager Forms] のデータ統合機能により、複数の異なるデータソースを設定して接続することができます。以下のタイプがサポートされています。これらのタイプは、すぐに使用することができます。
 
-* リレーショナルデータベース - MySQL、[!DNL Microsoft® SQL Server]、[!DNL IBM® DB2®]、postgreSQL および [!DNL Oracle RDBMS]
+* リレーショナルデータベース - MySQL、[!DNL Microsoft® SQL Server]、[!DNL IBM® DB2®]、postgreSQL、Azure SQL および [!DNL Oracle RDBMS]
 * RESTful Web サービス
 * SOAP ベースの web サービス
 * OData サービス（バージョン 4.0）
@@ -40,7 +40,7 @@ ht-degree: 99%
 
 [!DNL Experience Manager] web コンソール設定を使用してリレーショナルデータベースを設定する前に、次の操作が必須です。
 
-* ポートはデフォルトで無効になっているので、[Cloud Manager API から高度なネットワークを有効にします。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=ja)
+* ポートはデフォルトで無効になっているので、[Cloud Manager API から高度なネットワークを有効にします。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
 * [Maven に JDBC ドライバーの依存関係を追加](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=ja).
 
 
@@ -48,22 +48,93 @@ ht-degree: 99%
 
 [!DNL Experience Manager] web コンソールの設定を使用して、リレーショナルデータベースを設定することができます。次の手順を実行します。
 
-1. `https://server:host/system/console/configMgr` で [!DNL Experience Manager] web コンソールに移動します。
-1. **[!UICONTROL 「Day Commons JDBC 接続プール」]**&#x200B;設定を見つけます。その設定を選択して編集モードで開きます。
+**手順 1:AEM as a Cloud Service Git リポジトリのクローン**
 
-   ![JDBC コネクタープール](/help/forms/assets/jdbc_connector.png)
+1. コマンドラインを開き、AEM as a Cloud Service リポジトリを保存するディレクトリ（例：`/cloud-service-repository/`）を選択します。
 
-1. 設定ダイアログで、設定するデータベースの詳細を指定します。例えば、以下のような詳細を指定します。
+2. 次のコマンドを実行して、リポジトリのクローンを作成します。
 
-   * JDBC ドライバーの Java™ のクラス名
-   * JDBC 接続 URI
-   * JDBC ドライバーとの接続を確立するためのユーザー名とパスワード
-   * 「**[!UICONTROL 検証クエリ]**」フィールドの SQL SELECT クエリを指定して、プールからの接続を検証します。クエリは、少なくとも 1 つのレコードを返す必要があります。データベースに応じて、次のいずれかを指定します。
-      * SELECT 1（MySQL または MS SQL の場合）
-      * SELECT 1 from dual（Oracle の場合）
-   * データソースの名前
+   ```
+   git clone https://git.cloudmanager.adobe.com/<organization-name>/<app-id>/
+   ```
 
-   リレーショナルデータベースを構成するための文字列の例：
+   **この情報はどこにありますか？**
+
+   これらの詳細を見つける手順について詳しくは、Adobe Experience League の記事「[Git へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#accessing-git)」を参照してください。
+
+   コマンドが正常に完了すると、ローカルディレクトリに新しいフォルダーが作成されます。このフォルダーの名前は、アプリケーションに合わせて指定します。
+
+**手順 2：設定フォルダーに移動する**
+
+1. エディターでリポジトリフォルダーを開きます。
+
+1. `<application folder>` 内の次のディレクトリに移動します。このディレクトリには、JDBC プールの OSGi 設定を配置する必要があります。
+
+   ```bash
+   cd ui.config/src/jcr_root/apps/<application folder>/osgiconfig/config/
+   ```
+
+**手順 3:MySQL 接続設定ファイルを作成する**
+
+1. 次のファイルを作成します。
+
+   ```bash
+   com.day.commons.datasource.jdbcpool.JdbcPoolService~<application folder>-mysql.cfg.json
+   ```
+
+1. 次のコード行を追加します。
+
+```json
+{
+  "jdbc.driver.class": "com.mysql.cj.jdbc.Driver",
+  "jdbc.connection.uri": "jdbc:mysql://<hostname>:<port>/<database>?useSSL=false",
+  "jdbc.username": "<your-db-username>",
+  "jdbc.password": "<your-db-password>",
+  "datasource.name": "<application folder>-mysql",
+  "datasource.svc.prop.name": "<application folder>-mysql"
+}
+```
+
+> 
+>
+> `<application folder>`、`<hostname>`、`<database>`、`<your-db-username>`、`<your-db-password>` などのプレースホルダーを実際の値に置き換えます。
+
+**手順 4：変更をコミットしてプッシュする**
+
+ターミナルを開き、次のコマンドを実行します。
+
+```bash
+git add .
+git commit -m "<commit message>"
+git push 
+```
+
+**手順 5:Cloud Manager パイプラインを使用して変更をデプロイする**
+
+1. **AEM Cloud Manager** にログインします。
+1. プロジェクトに移動し、パイプラインを実行して変更をデプロイします。
+
+>[!NOTE]
+>
+> 詳しくは、[JDBC DataSourcePool を使用した SQL 接続](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=ja)を参照してください。
+
+<!--
+1. Go to [!DNL Experience Manager] web console at `https://server:host/system/console/configMgr`.
+2. Locate **[!UICONTROL Day Commons JDBC Connections Pools]** configuration. Select to open the configuration in edit mode.
+
+   ![JDBC Connector Pool](/help/forms/assets/jdbc_connector.png)
+
+3. In the configuration dialog, specify the details for the database you want to configure, such as:
+
+    * Java&trade; class name for the JDBC driver
+    * JDBC connection URI
+    * Username and password to establish connection with the JDBC driver
+    * Specify a SQL SELECT query in the **[!UICONTROL Validation Query]** field to validate connections from the pool. The query must return at least one row. Based on your database, specify one of the following:
+      * SELECT 1 (MySQL and MS&reg; SQL) 
+      * SELECT 1 from dual (Oracle)
+    * Name of the data source
+
+   Sample strings for configuring a relational database:
 
    ```text
       "datasource.name": "sqldatasourcename-mysql",
@@ -71,13 +142,11 @@ ht-degree: 99%
       "jdbc.connection.uri": "jdbc:mysql://$[env:AEM_PROXY_HOST;default=proxy.tunnel]:30001/sqldatasourcename"
    ```
 
-   >[!NOTE]
-   >
-   > 詳しくは、[JDBC DataSourcePool を使用した SQL 接続](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=ja)を参照してください。
 
-1. 「**[!UICONTROL 保存]**」をクリックして、設定を保存します。
+    
+4. Select **[!UICONTROL Save]** to save the configuration.
 
-これで、設定済みのリレーショナルデータベースをフォームデータモデル（FDM）と共に使用できます。
+Now, you can use the configured relational database with your Form Data Model (FDM). 
 
 <!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
@@ -138,8 +207,8 @@ RESTful web サービスは、[Swagger の仕様](https://swagger.io/specificati
 1. 「**[!UICONTROL 作成]**」を選択して、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL RESTful サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」を選択します。
 1. RESTful サービスの次の詳細を指定します。
 
-   * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL &#x200B; Swagger] 定義ファイルに対する [!DNL Swagger URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
-   * [!DNL &#x200B; Swagger] ソース入力に基づいて、次のフィールドに値が事前入力されます。
+   * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL  Swagger] 定義ファイルに対する [!DNL Swagger URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
+   * [!DNL  Swagger] ソース入力に基づいて、次のフィールドに値が事前入力されます。
 
       * スキーム：REST API で使用される転送プロトコル。ドロップダウンリストに表示されるスキームの種類の数は、[!DNL Swagger] ソースで定義されているスキームによって異なります。
       * ホスト：REST API を提供するホストのドメイン名または IP アドレス。このフィールドは必須です。
@@ -163,8 +232,8 @@ RESTful web サービスは、[Swagger の仕様](https://swagger.io/specificati
 1. 「**[!UICONTROL 作成]**」を選択して、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL RESTful サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」を選択します。
 1. RESTful サービスの次の詳細を指定します。
 
-   * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL &#x200B; Swagger] 定義ファイルに対する [!DNL Swagger 3.0 URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
-   * [!DNL &#x200B; Swagger] ソース入力に基づいて、ターゲットサーバとの接続情報が表示されます。
+   * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL  Swagger] 定義ファイルに対する [!DNL Swagger 3.0 URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
+   * [!DNL  Swagger] ソース入力に基づいて、ターゲットサーバとの接続情報が表示されます。
    * RESTful サービスにアクセスするための認証タイプ（なし、OAuth2.0（[認証コード](https://oauth.net/2/grant-types/authorization-code/)、[クライアント資格情報](https://oauth.net/2/grant-types/client-credentials/)）、基本認証、API キー認証、カスタム認証）を選択し、その選択内容に応じて認証の詳細を指定します。
 
    認証タイプとして **[!UICONTROL API キー]**&#x200B;を選択した場合は、API キーの値を指定します。API キーは、リクエストヘッダーまたはクエリパラメーターとして送信できます。「**[!UICONTROL 場所]**」ドロップダウンリストから次のオプションの 1 つを選択し、それに応じて「**[!UICONTROL パラメーター名]**」フィールドにヘッダーまたはクエリパラメーターの名前を指定します。
@@ -321,7 +390,7 @@ OData サービスは、そのサービスのルート URL によって識別さ
 <!--
 ## Configure Microsoft&reg; SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 

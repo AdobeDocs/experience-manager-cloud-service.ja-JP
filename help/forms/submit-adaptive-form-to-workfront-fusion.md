@@ -6,10 +6,10 @@ topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 100%
+source-wordcount: '1437'
+ht-degree: 90%
 
 ---
 
@@ -88,7 +88,7 @@ Web フックを追加するには、次の手順に従います。
 
 >[!NOTE]
 >
-> テクニカルアカウントが **forms-users** グループのメンバーであることを確認します。それ以外の場合、web フックの追加は失敗します。
+> テクニカルアカウントが **forms-users** グループのメンバーであることを確認します。メンバーでない場合、Webhook の追加に失敗します。 テクニカルアカウントをAEMの forms-users グループに追加するには、[ ここをクリック ](#add-technical-account-to-the-forms-users-group)。
 
 #### Web フックに接続を追加 {#add-connection}
 
@@ -197,6 +197,27 @@ Workfront Fusion のコアコンポーネントに基づくアダプティブフ
 1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
 >[!ENDTABS]
+
+## テクニカルアカウントを forms-users グループに追加する
+
+テクニカルアカウントをAEMの `forms-users` グループに追加するには、次の手順を実行します。
+
+1. **ツール**／**セキュリティ**／**ユーザー**&#x200B;に移動します。
+1. ユーザーのリストで、組織のテクニカルアカウントのメールを見つけます。 例えば、`Workfront-test` のようにユーザーを検索します。
+1. ユーザーをクリックすると、ユーザーの詳細が表示されます。
+1. ユーザーの詳細で、「**グループ**」タブを選択します。
+1. `forms-users` グループを選択 **[!UICONTROL ドロップダウンリストから「]**」を選択します。
+1. 「**保存して閉じる**」をクリックします。
+
+![ グループへのテクニカルアカウントの追加 ](/help/forms/assets/add-technical-account.png)
+
+また、ユーザーのグループメンバーシップを確認することもできます。
+
+1. **ツール**/**セキュリティ**/**グループ** に移動します。
+1. `forms-users` グループを検索します。
+1. グループを開き、「**メンバー**」タブに移動して、ユーザーがグループメンバーのリストに表示されることを確認します。
+
+![verify-group](/help/forms/assets/verify-group.png)
 
 ## ベストプラクティス {#best-practices}
 
