@@ -132,11 +132,11 @@ Content Hub では、環境設定に基づいてオプションを絞り込み�
 
 また、コレクションを開いて、アセットを個別にダウンロードすることもできます。ダウンロードする必要があるアセットを含むコレクションをクリックします。アセットを選択し、「**[!UICONTROL ダウンロード]**」をクリックします。
 
-詳しくは、[ [!DNL Content Hub]](download-assets-content-hub.md) からアセットをダウンロードする方法を参照してください。
+詳しくは、[&#x200B; [!DNL Content Hub]](download-assets-content-hub.md) からアセットをダウンロードする方法を参照してください。
 
 ## コレクション内での使用可能なアセットの共有 {#share-assets-available-within-collection}
 
-コレクション内で使用可能なアセットを共有することもできます。必ず [Content Hub で公開リンク共有を有効にする](configure-content-hub-ui-options.md#configure-collections-content-hub)ようにします。「**[!UICONTROL コレクション]**」タブに移動します。アセットカードの ![ 共有アイコン ](assets/share.svg) アイコンを選択します。 共有リンクがコピーされます。コピーしたリンクを受信者と共有できます。詳しくは、[ [!DNL Content Hub]](share-assets-content-hub.md) でのアセットの共有を参照してください。
+コレクション内で使用可能なアセットを共有することもできます。必ず [Content Hub で公開リンク共有を有効にする](configure-content-hub-ui-options.md#configure-collections-content-hub)ようにします。「**[!UICONTROL コレクション]**」タブに移動します。アセットカードの ![&#x200B; 共有アイコン &#x200B;](assets/share.svg) アイコンを選択します。 共有リンクがコピーされます。コピーしたリンクを受信者と共有できます。詳しくは、[&#x200B; [!DNL Content Hub]](share-assets-content-hub.md) でのアセットの共有を参照してください。
 
 Content Hub コレクションには、カスタマイズ可能な共有権限や共同作業機能など、効果的なアセット管理を行うための包括的なガバナンスツールが用意されています。読み取り専用アクセスから完全な管理制御に至るまで、これらの設定はアセット配布に対する微調整のガバナンスをサポートします。アセットを個別に、またはコレクションの一部として共有する場合、アクセス範囲は、ユーザーに割り当てられたコレクションの現在のアクセスレベルによって決定されます。また、プライベートコレクションを共有することはできません。
 
@@ -171,17 +171,17 @@ Content Hub管理者は、クイックアクセス用にContent Hub内のコレ�
 
 1. ピン留めまたはピン留めを解除するコレクションを参照します。
 
-1. **[!UICONTROL その他のアクション]**![ その他のアクションアイコン ](assets/do-not-localize/more-actions.png) をクリックし、**[!UICONTROL クイックアクセスにピン留め]** を選択します。 確認ボックスが表示されます。
+1. **[!UICONTROL その他のアクション]**![&#x200B; その他のアクションアイコン &#x200B;](assets/do-not-localize/more-actions.png) をクリックし、**[!UICONTROL クイックアクセスにピン留め]** を選択します。 確認ボックスが表示されます。
 
-   ![ ピン コレクション ](assets/pin-collection.png)
+   ![&#x200B; ピン コレクション &#x200B;](assets/pin-collection.png)
 
 1. 「**[!UICONTROL ピン留め]**」をクリックして確定します。 非公開コレクションをピン留めすると、警告メッセージが表示されます。
 
-   ![ ピン留めの収集を確認 ](assets/confirm-pin-collection.png)
+   ![&#x200B; ピン留めの収集を確認 &#x200B;](assets/confirm-pin-collection.png)
 
-   ピン留めされたコレクションは、クイックアクセスのために上部に表示されます。 または、コレクションのピン留めを解除するには、**[!UICONTROL その他のアクション]**![ その他のアクション アイコン ](assets/do-not-localize/more-actions.png) をクリックし、「**[!UICONTROL ピン留めを解除]** を選択します。
+   ピン留めされたコレクションは、クイックアクセスのために上部に表示されます。 または、コレクションのピン留めを解除するには、**[!UICONTROL その他のアクション]**![&#x200B; その他のアクション アイコン &#x200B;](assets/do-not-localize/more-actions.png) をクリックし、「**[!UICONTROL ピン留めを解除]** を選択します。
 
-   ![ ピン留めされたコレクションを表示 ](assets/pinned-collections.png)
+   ![&#x200B; ピン留めされたコレクションを表示 &#x200B;](assets/pinned-collections.png)
 
 ## コレクションをお気に入りとしてマーク {#favorite-collection}
 
@@ -189,15 +189,15 @@ Content Hubでコレクションをお気に入りに登録すると、コレク
 
 1. お気に入りとしてマークするコレクションを参照します。
 
-1. **[!UICONTROL その他のアクション]**![ その他のアクション ](assets/do-not-localize/more-actions.png) アイコンをクリックし、**[!UICONTROL お気に入りに追加]** を選択して、コレクションをお気に入りに登録します。
+1. **[!UICONTROL その他のアクション]**![&#x200B; その他のアクション &#x200B;](assets/do-not-localize/more-actions.png) アイコンをクリックし、**[!UICONTROL お気に入りに追加]** を選択して、コレクションをお気に入りに登録します。
 
-   ![ コレクションをお気に入りに登録 ](assets/mark-favorite-collection.png)
+   ![&#x200B; コレクションをお気に入りに登録 &#x200B;](assets/mark-favorite-collection.png)
 
-   お気に入りとしてマークされたコレクションが **[!UICONTROL お気に入り]** タブに表示されるようになりました。 または、「お気に入り **[!UICONTROL からコレクションを削除することもでき]** す。 これを行うには、**[!UICONTROL その他のアクション]**![ その他のアクション アイコン ](assets/do-not-localize/more-actions.png) をクリックし、**[!UICONTROL お気に入りから削除]** を選択します。
+   お気に入りとしてマークされたコレクションが **[!UICONTROL お気に入り]** タブに表示されるようになりました。 または、「お気に入り **[!UICONTROL からコレクションを削除することもでき]** す。 これを行うには、**[!UICONTROL その他のアクション]**![&#x200B; その他のアクション アイコン &#x200B;](assets/do-not-localize/more-actions.png) をクリックし、**[!UICONTROL お気に入りから削除]** を選択します。
 
-   ![ コレクションをお気に入りとして削除 ](assets/remove-favorite-collection.png)
+   ![&#x200B; コレクションをお気に入りとして削除 &#x200B;](assets/remove-favorite-collection.png)
 
 >[!NOTE]
 >
->[ コレクションをピン留めまたはピン留めを解除 ](#pin-unpin-collection) および [ コレクションをお気に入りとしてマーク ](#favorite-collection) は、使用制限のある機能です。 Adobe カスタマーサポートケースを [ 作成して送信 ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) して、デプロイメントで有効にすることができます。
+>[&#x200B; コレクションをピン留めまたはピン留めを解除 &#x200B;](#pin-unpin-collection) および [&#x200B; コレクションをお気に入りとしてマーク &#x200B;](#favorite-collection) は、使用制限のある機能です。 Adobe カスタマーサポートケースを [&#x200B; 作成して送信 &#x200B;](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) して、デプロイメントで有効にすることができます。
 
