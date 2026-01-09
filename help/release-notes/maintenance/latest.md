@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c5cdcccdb3ac16c5088e46e3f64e8cfc4139e0e4
+source-git-commit: b4df0abb43d69f629d2c643c408cb77af697b942
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1090'
 ht-degree: 19%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 19%
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
 ## リリース 23862 {#23862}
+
+>[!CAUTION]
+>
+> リリース 23862 が非公開になりました。 新しいメンテナンスリリースは、まもなく提供されます。
 
 2025年12月23日（PT）に公開された、メンテナンスリリース 23862 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 23482 でした。
 
