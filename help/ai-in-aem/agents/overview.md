@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->エージェントを使用するには、Beta プログラムに登録する必要があります。 AEM エージェントのBeta プログラムについて詳しくは、[&#x200B; こちら &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) を参照してください。
+>エージェントを使用するには、Beta プログラムに登録する必要があります。 AEM エージェントのBeta プログラムについて詳しくは、[&#x200B; こちら &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) を参照してください。
 
 ## Experience Production Agent {#experience-production-agent}
 
