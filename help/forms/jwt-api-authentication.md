@@ -23,7 +23,7 @@ AEM Formsの JWT サーバー間認証、特にAEMとのサーバーサイド統
 開始する前に、次の前提条件が満たされていることを確認してください。
 
 * 使用する環境に固有の [Adobe Cloud Manager](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) へのアクセス権があることを確認します。
-* [&#x200B; システム管理者または開発者の役割を割り当てて、Adobe Cloud Managerにアクセスします &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights)。
+* [&#x200B; システム管理者または開発者の役割を割り当てて、Adobe Cloud Managerにアクセスします &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/requirements/access-rights)。
 
 ## JWT 資格情報を使用してアクセストークンを生成する方法
 
