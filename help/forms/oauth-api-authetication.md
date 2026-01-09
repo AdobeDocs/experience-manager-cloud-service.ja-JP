@@ -6,207 +6,241 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fcc25eb44b485db69ec1c267f4cf8774c4279b24
+source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 3%
+source-wordcount: '811'
+ht-degree: 4%
 
 ---
 
 
-# OAuth サーバー間認証 – 推奨
+# OAuth サーバー間認証
 
-OAuth サーバー間認証を使用すると、ユーザーの操作を必要とせずに、AEM Forms Communications API への安全なトークンベースのアクセスが可能になります。 この方法は、プログラムによる認証が必要な自動システム、バックエンドサービス、統合に最適です。
+OAuth サーバー間認証を使用すると、ユーザーの操作を必要とせずに、AEM Forms Communications API への安全なトークンベースのアクセスが可能になります。 Adobe Developer Consoleでは、OAuth サーバー間認証がサポートされています。
 
 ## 前提条件
 
 開始する前に、次の前提条件が満たされていることを確認してください。
 
-* 使用する環境に固有の [0&rbrace;Adobe Developer Console&rbrace; にアクセスできることを確認します。](https://developer.adobe.com/console)
-* Adobe Admin Consoleでシステム管理者または開発者の役割を割り当てて、Adobe Developer Consoleへのアクセスを有効にします。
+* 使用する環境に固有の [Adobe Developer Consoleへのアクセス ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) があることを確認します。
+* [Adobe Admin Consoleでシステム管理者または開発者の役割を割り当て ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions)Adobe Developer Consoleへのアクセスを有効にします。
 
 ## OAuth サーバー間認証を使用してアクセストークンを生成する方法
 
-以下の手順に従って、Adobe Developer コンソールからアクセストークンを生成し、OAuth サーバー間認証を使用して最初の API 呼び出しを行う方法を示します。
+次の手順に従って、Adobe Developer コンソールからアクセストークンを生成し、OAuth サーバー間認証を使用して最初の API 呼び出しを行います。
 
+### Adobe Developer Console プロジェクトの設定
 
 1. [Adobe Developer Console](https://developer.adobe.com/console) に移動します
 2. Adobe IDでログイン
 
 3. 新しいプロジェクトを作成するか、既存のプロジェクトに移動します
 
-   **新しいプロジェクトを作成するには：**
+>[!BEGINTABS]
 
-   1. 「**クイックスタート**」セクションで、「**新規プロジェクトを作成**」をクリックします
-   2. デフォルト名で新しいプロジェクトが作成されます
+>[!TAB  新しいプロジェクトを作成するには ]
 
-      ![ADC プロジェクトの作成 &#x200B;](/help/forms/assets/adc-home.png)
+1. 「**クイックスタート**」セクションで、「**新規プロジェクトを作成**」をクリックします
+2. デフォルト名で新しいプロジェクトが作成されます
 
-   3. 右上隅の **プロジェクトを編集** をクリックします
+   ![ADC プロジェクトの作成 ](/help/forms/assets/adc-home.png)
 
-      ![&#x200B; プロジェクトを編集 &#x200B;](/help/forms/assets/adc-edit-project.png)
+3. 右上隅の **プロジェクトを編集** をクリックします
 
-   4. 意味のある名前を指定（例：「formsproject」）
-   5. 「**保存**」をクリックします。
+   ![ プロジェクトを編集 ](/help/forms/assets/adc-edit-project.png)
 
-      ![&#x200B; プロジェクト名を編集 &#x200B;](/help/forms/assets/adc-edit-projectname.png)
+4. 意味のある名前を指定（例：「formsproject」）
+5. 「**保存**」をクリックします。
 
+   ![ プロジェクト名を編集 ](/help/forms/assets/adc-edit-projectname.png)
 
-   **既存のプロジェクトに移動するには、次の手順に従います。**
+>[!TAB  既存のプロジェクトに移動するには ]
 
-   1. Adobe Developer Consoleで **すべてのプロジェクト** をクリックします
+1. Adobe Developer Consoleで **すべてのプロジェクト** をクリックします
 
-      ![&#x200B; プロジェクトの検索 &#x200B;](/help/forms/assets/search-adc-project.png)
+   ![ プロジェクトの検索 ](/help/forms/assets/search-adc-project.png)
 
-   2. プロジェクトを見つけて、クリックして開きます。
+2. プロジェクトを見つけて、クリックして開きます。
 
-      ![&#x200B; プロジェクトの検索 &#x200B;](/help/forms/assets/locate-adc-project.png)
+   ![ プロジェクトの検索 ](/help/forms/assets/locate-adc-project.png)
 
+>[!ENDTABS]
 
-      >[!NOTE]
-      >
-      > **プロジェクトに追加**/**API** をクリックして、API と認証方法を既存のプロジェクトに追加できます\
-      > ![&#x200B; 既存のプロジェクトへの API の追加 &#x200B;](/help/forms/assets/add-api-existing-project.png)
-      > API と認証方法を追加するには、既存のプロジェクトに対して、以下に説明するのと同じ手順を実行します。
+### Forms API の追加
 
-4. 要件に応じて、様々なAEM Forms通信 API を追加します。
+実行したい内容に基づいてForms API を追加します。
 
-   **A.ドキュメントサービス API の場合**
+* **AEM Forms Communications API**: ドキュメント（PDFおよび関連するフォーマット）を生成、変換、アセンブリ、または保護する必要がある場合に使用します。
+* **アダプティブFormsランタイム API** – 実行時にアダプティブFormsをレンダリング、送信または処理する必要がある場合に使用します。
 
-   1. 「**API を追加**」をクリックします。
+>[!BEGINTABS]
 
-      ![API を追加 &#x200B;](/help/forms/assets/adc-add-api.png)
+>[!TAB AEM Forms Communications API の場合 ]
 
-   2. **Forms Communication API** を選択
-      1. _API を追加_ ダイアログで、**Experience Cloudでフィルタリングします**
-      2. 「Forms Communication API **を選択し** す。
+1. 「**API を追加**」をクリックします。
 
-         ![Forms Communication API の追加 &#x200B;](/help/forms/assets/adc-add-forms-api.png)
+   ![API を追加 ](/help/forms/assets/adc-add-api.png)
 
+2. **Forms Communication API** を選択
+   1. _API を追加_ ダイアログで、**Experience Cloudでフィルタリングします**
+   2. 「Forms Communication API **を選択し** す。
 
-   3. **OAuth サーバー間** 認証方法を選択します
+      ![Forms Communication API の追加 ](/help/forms/assets/adc-add-forms-api.png)
 
-      ![&#x200B; 認証方法の選択 &#x200B;](/help/forms/assets/adc-add-authentication-method.png)
+   3. 「**次へ**」をクリックします。
+   4. **OAuth サーバー間** 認証方法を選択します
 
+      ![ 認証方法の選択 ](/help/forms/assets/adc-add-authentication-method.png)
 
-   **B.アダプティブ Forms ランタイム API**
+>[!TAB  アダプティブ Forms ランタイム API の場合 ]
 
-   1. **「API を追加」をクリック**
-プロジェクトで「**API を追加**」ボタンをクリックします
+1. **「API を追加」をクリック**
 
-      ![API を追加 &#x200B;](/help/forms/assets/adc-add-api.png)
+   ![API を追加 ](/help/forms/assets/adc-add-api.png)
 
-   2. **AEM Forms配信およびランタイム API を選択**
-      1. _API を追加_ ダイアログで、**Experience Cloudでフィルタリングします**
-      2. **AEM Forms配信およびランタイム API」を選択** ます。
-      3. 「**次へ**」をクリックします。
+2. **AEM Forms配信およびランタイム API を選択**
+   1. _API を追加_ ダイアログで、**Experience Cloudでフィルタリングします**
+   2. **AEM Forms配信およびランタイム API」を選択** ます。
+      ![Forms Communication API の追加 ](/help/forms/assets/adc-add-runtime-api.png)
 
-   3. **認証方法**
-**OAuth サーバー間** 認証方法を選択します。
+   3. 「**次へ**」をクリックします。
+   4. **OAuth サーバー間**認証方式を選択します。
+      ![ 認証方法の選択 ](/help/forms/assets/adc-add-authentication-method.png)
 
+>[!ENDTABS]
 
-      ![&#x200B; 認証方法の選択 &#x200B;](/help/forms/assets/adc-add-authentication-method.png)
+>[!NOTE]
+>
+> また、**プロジェクトに追加** / **API** をクリックして、既存のプロジェクトに API と認証方法を追加することもできます\
+> ![ 既存のプロジェクトへの API の追加 ](/help/forms/assets/add-api-existing-project.png)
 
-5. **製品プロファイルを追加**:
+### 製品プロファイルを追加
 
-   1. 必要なアクセスレベルに基づいて適切な **製品プロファイル** を選択します。
+製品プロファイルは、AEM リソースにアクセスするための資格情報に対する権限（または認証）を提供します。
 
-      | アクセスタイプ | 製品プロファイル |
-      |------------------|----------------------|
-      | 読み取り専用アクセス | `AEM Users - author - Program XXX - Environment XXX` |
-      | 読み取り/書き込みアクセス | `AEM Assets Collaborator Users - author - Program XXX - Environment XXX` |
-      | 完全な管理アクセス | `AEM Administrators - author - Program XXX - Environment XXX` |
+1. お使いのAEM インスタンス URL （**）に一致する** 製品プロファイル `https://Service Type -Environment Type-Program XXX-Environment XXX.adobeaemcloud.com` を選択します。
 
-   2. オーサーサービス URL （**）に一致する** 製品プロファイル `https://author-pXXXXX-eYYYYY.adobeaemcloud.com` を選択します。 例：select `https://author-pXXXXX-eYYYYY.adobeaemcloud.com`。
+   * **サービスタイプ** - AEM インスタンスに関連付けられたサービスまたは権限を指定します。
 
-   3. 「**設定済み API を保存**」をクリックします。API と製品プロファイルがプロジェクトに追加されます
+   * **環境タイプ** – 環境がオーサーサービス用かパブリッシュサービス用かを指定します
 
-      ![&#x200B; プロジェクト設定の選択 &#x200B;](/help/forms/assets/adc-add-product-profile.png)
+   * **プログラム XXX** - Cloud Manager プログラム ID を識別します。
 
-6. 資格情報の生成と保存
+   * **環境 XXX** - プログラム内の特定の環境 ID を識別します。
 
-   1. Adobe Developer Consoleでプロジェクトに移動します
-   2. **OAuth サーバー間** 資格情報をクリックします。
-   3. 「**資格情報の詳細** セクションを表示します
+   >
+   >
+   > 製品プロファイルは、特定のAEM インスタンス（プログラム +環境）に関連付けられています。 インスタンスの URL に一致するプロファイルを常に選択します。
 
-      ![資格情報の表示](/help/forms/assets/adc-view-credential.png)
+2. 「**設定済み API を保存**」をクリックします。API と製品プロファイルがプロジェクトに追加されます
 
-   4. レコード API 資格情報
+   ![ プロジェクト設定の選択 ](/help/forms/assets/adc-add-product-profile.png)
 
-      ```text
-      API Credentials:
-      ================
-      Client ID: <your_client_id>
-      Client Secret: <your_client_secret>
-      Technical Account ID: <tech_account_id>
-      Organization ID: <org_id>
-      Scopes: AdobeID,openid,read_organizations
-      ```
+### 資格情報の生成と保存
 
-7. アクセストークンの生成
+1. Adobe Developer Consoleでプロジェクトに移動します
+2. **OAuth サーバー間** 資格情報をクリックします
+3. 「**資格情報の詳細** セクションを表示します
 
-   **A.テスト用**
+   ![資格情報の表示](/help/forms/assets/adc-view-credential.png)
 
-   Adobe Developer Consoleで手動でアクセストークンを生成します。
+**レコード API 資格情報**
 
-   1. **プロジェクトへの移動**
-      1. Adobe Developer Consoleで、プロジェクトを開きます
-      2. **OAuth サーバー間** をクリックします。
+```text
+    API Credentials:
+    ================
+    Client ID: <your_client_id>
+    Client Secret: <your_client_secret>
+    Technical Account ID: <tech_account_id>
+    Organization ID: <org_id>
+    Scopes: AdobeID,openid,read_organizations
+```
 
-   2. **アクセストークンの生成**
-      1. プロジェクトの「API」セクションで **「アクセストークンを生成」** ボタンをクリックします
-      2. 生成されたアクセストークンのコピー
+### アクセストークンの生成
 
-      ![&#x200B; アクセストークンの生成 &#x200B;](/help/forms/assets/adc-access-token.png)
+アクセストークンを手動またはプログラムで生成します。
 
-      >[!NOTE]
-      >
-      > アクセストークンは **24 時間** のみ有効です
+>[!BEGINTABS]
 
-   **B.実稼動の場合**
+>[!TAB  テスト用 ]
 
-   Adobe IMSAPI を使用してプログラムでトークンを生成します。
+Adobe Developer Consoleで手動でアクセストークンを生成します。
 
-   **必要な資格情報：**
+1. **プロジェクトへの移動**
+   1. Adobe Developer Consoleで、プロジェクトを開きます
+   2. **OAuth サーバー間** をクリックします。
 
-   * クライアント ID
-   * クライアントの秘密鍵
-   * 範囲（通常：`openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`）
+2. **アクセストークンの生成**
+   1. プロジェクトの「API」セクションで **「アクセストークンを生成」** ボタンをクリックします
+   2. 生成されたアクセストークンのコピー
 
-   **トークン エンドポイント：**
+   ![ アクセストークンの生成 ](/help/forms/assets/adc-access-token.png)
 
-   ```
-   https://ims-na1.adobelogin.com/ims/token/v3
-   ```
+   >[!NOTE]
+   >
+   > アクセストークンは **24 時間** のみ有効です
 
-   **サンプルリクエスト （curl）:**
+>[!TAB  実稼動用 ]
 
-   ```bash
-   curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
-   -H 'Content-Type: application/x-www-form-urlencoded' \
-   -d 'grant_type=client_credentials' \
-   -d 'client_id=<YOUR_CLIENT_ID>' \
-   -d 'client_secret=<YOUR_CLIENT_SECRET>' \
-   -d 'scope=AdobeID,openid,read_organizations'
-   ```
+[Adobe IMS](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API を使用してプログラムでトークンを生成します：
 
-   **応答：**
+**必要な資格情報：**
 
-   ```json
-   {
-   "access_token": "eyJhbGciOiJSUz...",
-   "token_type": "bearer",
-   "expires_in": 86399
-   }
-   ```
+* クライアント ID
+* クライアントの秘密鍵
+* 範囲（通常：`openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`）
+
+**トークン エンドポイント：**
+
+```
+https://ims-na1.adobelogin.com/ims/token/v3
+```
+
+**サンプルリクエスト （curl）:**
+
+```bash
+curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
+-H 'Content-Type: application/x-www-form-urlencoded' \
+-d 'grant_type=client_credentials' \
+-d 'client_id=<YOUR_CLIENT_ID>' \
+-d 'client_secret=<YOUR_CLIENT_SECRET>' \
+-d 'scope=AdobeID,openid,read_organizations'
+```
+
+**応答：**
+
+```json
+    {
+    "access_token": "eyJhbGciOiJSUz...",
+    "token_type": "bearer",
+    "expires_in": 86399
+    }
+```
+
+>[!ENDTABS]
 
 生成されたアクセストークンを使用して、開発、ステージ、実稼動環境の API 呼び出しを行えるようになりました。
 
 >[!NOTE]
 >
-> アクセストークンを生成して API 呼び出しをおこなう OAuth サーバー間実装について詳しくは、[&#x200B; ここをクリック &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) を参照してください。
+> アクセストークンを生成して API 呼び出しをおこなう OAuth サーバー間実装について詳しくは、[ ここをクリック ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) を参照してください。
+
+## ベストプラクティス：開発、ステージングおよび実稼動用の認証情報の管理
+
+* 開発、ステージングおよび実稼動用に、常に別々の資格情報を使用します。
+
+* 正しいAEM環境 URL に各資格情報をマッピングします。
+
+* 秘密鍵は安全に保存し、ソース管理にコミットしないでください。
+
+* トークンは 24 時間のみ有効なので、アクセストークンの有効性を追跡します。
 
 ## 次の手順
+
+同期Forms通信 API 用に環境を設定する方法については、[AEM Forms as a Cloud Service通信同期処理 ](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md) を参照してください。
+
+
+## 関連記事
 
 同期（オンデマンド）および非同期（バッチ）Forms通信 API の環境を設定する方法について説明します。
 
