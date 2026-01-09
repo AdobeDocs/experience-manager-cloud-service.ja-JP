@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->エージェントを使用するには、Beta プログラムに登録する必要があります。 AEM エージェントのBeta プログラムについて詳しくは、[ こちら ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) を参照してください。
+>エージェントを使用するには、Beta プログラムに登録する必要があります。 AEM エージェントのBeta プログラムについて詳しくは、[&#x200B; こちら &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) を参照してください。
 
 ## Experience Production Agent {#experience-production-agent}
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## コンテンツ最適化エージェント {#content-optimization-agent}
 
-[ コンテンツ最適化エージェント ](/help/ai-in-aem/agents/content-optimization/overview.md) は、自然言語の命令を適用してチャネルに対応するバリエーションを作成することで、ユーザーがアセットを調整および適応する方法を変換します。 エージェントはユーザーの意図を解釈し、複雑な編集タスクを自動的に実行して、新しいレンディションの生成、視覚的なプロパティの調整、背景の変更、特定のデジタルチャネル用のアセットの準備などのタスクを実行します。
+[&#x200B; コンテンツ最適化エージェント &#x200B;](/help/ai-in-aem/agents/content-optimization/overview.md) は、自然言語の命令を適用してチャネルに対応するバリエーションを作成することで、ユーザーがアセットを調整および適応する方法を変換します。 エージェントはユーザーの意図を解釈し、複雑な編集タスクを自動的に実行して、新しいレンディションの生成、視覚的なプロパティの調整、背景の変更、特定のデジタルチャネル用のアセットの準備などのタスクを実行します。
 
 ## 探索エージェント {#discovery-agent}
 
@@ -40,11 +40,11 @@ ht-degree: 0%
 
 ## 開発エージェント {#development-agent}
 
-[ 開発エージェント ](/help/ai-in-aem/agents/development/overview.md) は、コードの作成、デバッグ、デプロイメント、最適化を合理化することで、技術的な役割（開発者と管理者）を強化します。
+[&#x200B; 開発エージェント &#x200B;](/help/ai-in-aem/agents/development/overview.md) は、コードの作成、デバッグ、デプロイメント、最適化を合理化することで、技術的な役割（開発者と管理者）を強化します。
 
 ## ガバナンスエージェント {#governance-agent}
 
-[ ガバナンスエージェント ](/help/ai-in-aem/agents/governance/overview.md) は、AEM全体でブランドの整合性とコンプライアンスを保護します。 セキュリティ、規制、ブランドポリシーを適用することにより、エージェントは、すべてのインタラクションとアクティベーションが確立された標準に準拠していることを保証します。
+[&#x200B; ガバナンスエージェント &#x200B;](/help/ai-in-aem/agents/governance/overview.md) は、AEM全体でブランドの整合性とコンプライアンスを保護します。 セキュリティ、規制、ブランドポリシーを適用することにより、エージェントは、すべてのインタラクションとアクティベーションが確立された標準に準拠していることを保証します。
 
 ## 制限事項 {#limitations}
 
