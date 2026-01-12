@@ -4,10 +4,10 @@ description: AEM コンテンツフラグメントモデルを使用すると、
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
+source-git-commit: 95624ebf1a77dac1f535e199b660096c8efdfa76
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 86%
+source-wordcount: '267'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ AEM コンテンツフラグメントモデルを使用すると、ヘッドレ�
 
 今後のコンテンツフラグメントに必要な構造を定義する[コンテンツフラグメントモデルを作成](create-content-model.md)できたので、フラグメントを作成するのが楽しみかと思います。
 
-ただし、まず、アセットを保存するアセットフォルダーを作成する必要があります。
+ただし、最初にアセットフォルダーを作成して、それらを保存する必要があります。
 
 アセットフォルダーは、コンテンツフラグメントと一緒に、画像やビデオなどの[従来のコンテンツアセットを整理する](/help/assets/manage-digital-assets.md)ために使用できます。
 
@@ -27,7 +27,7 @@ AEM コンテンツフラグメントモデルを使用すると、ヘッドレ�
 
 管理者は、コンテンツの作成時にフォルダーを作成してコンテンツを整理するだけで済みます。Assets コンソールを使用して新しいフォルダーを作成します。
 
-作成したら、[&#x200B; 設定 &#x200B;](/help/headless/setup/create-configuration.md) をフォルダーに適用する必要があります。 詳しくは [&#x200B; フォルダーへの設定の適用 &#x200B;](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder) を参照してください。
+作成したら、[ 設定 ](/help/headless/setup/create-configuration.md) をフォルダーに適用する必要があります。 詳しくは [ フォルダーへの設定の適用 ](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder) を参照してください。
 
 作成したフォルダー内に、追加のサブフォルダーを作成できます。サブフォルダーは、親フォルダーの&#x200B;**クラウド設定**&#x200B;を継承します。別の設定モデルを使用する場合は、この設定を上書きできます。
 
