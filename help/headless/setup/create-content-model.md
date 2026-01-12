@@ -41,4 +41,4 @@ ht-degree: 77%
 >コンテンツフラグメントモデルについて詳しくは、以下を参照してください。
 >
 >* [コンテンツフラグメントモデルの管理](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
->* [ コンテンツフラグメントモデルの定義 ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+>* [&#x200B; コンテンツフラグメントモデルの定義 &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
