@@ -5,10 +5,10 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: e2716b7f9612d5769c422a0fc2915a604ea40de5
 workflow-type: tm+mt
-source-wordcount: '2720'
-ht-degree: 97%
+source-wordcount: '2772'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 > **バージョンの可用性**
 >
-> * **AEM 6.5**：[AEM ドキュメントサービスの概要](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=ja)
+> * **AEM 6.5**：[AEM ドキュメントサービスの概要](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**：この記事
 
 ## はじめに
@@ -91,6 +91,10 @@ API から提供されるすべてのパラメーター、認証方法および�
 
 <span class="preview">ドキュメント生成 API を使用して生成された PDF を Azure Blob Storage 機能にアップロードすることは、[早期導入プログラム](/help/forms/early-access-ea-features.md)で行うことができます。早期導入プログラムに登録し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
 
+>
+>
+> ドキュメント生成 API には、バッチおよび同期出力生成エンドポイントが含まれます。これらの API は、エンドポイントに応じて、JWT または OAuth を使用したサーバー間認証をサポートします。 ドキュメント生成 API について詳しくは、[ ここをクリック ](/help/forms/aem-forms-communication-api-overview.md#document-generation-apis) してください。
+
 #### PostScript（PS）、Printer Command Language（PCL）、Zebra Printing Language（ZPL）ドキュメントの作成 {#create-PS-PCL-ZPL-documents}
 
 ドキュメント生成 API を使用して、XDP フォームデザインまたは PDF ドキュメントに基づく PostScript（PS）、Printer Command Language（PCL）および Zebra Printing Language（ZPL）のドキュメントを作成できます。これらの API は、フォームデザインとフォームデータを結合してドキュメントを生成します。ドキュメントをファイルに保存し、カスタムプロセスを開発してファイルをプリンターに送信することができます。
@@ -104,6 +108,10 @@ API から提供されるすべてのパラメーター、認証方法および�
 ## ドキュメント操作
 
 通信機能のドキュメント操作（ドキュメント変換）API は、PDF ドキュメントを組み合わせたり並べ替えたりするのに役立ちます。通常は、DDX を作成し、それをドキュメント操作 API に送信して、ドキュメントをアセンブリしたり並べ替えたりします。[DDX ドキュメント](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)には、ソースドキュメントを使用して 1 組の必要なドキュメントを生成する方法についての指示が記述されています。DDX リファレンスドキュメントには、サポートされているすべての操作に関する詳細情報が記述されています。
+
+>
+>
+> ドキュメント操作 API は、JWT を使用したサーバー間認証をサポートしています。 ドキュメント操作 API について詳しくは、[ ここをクリック ](/help/forms/aem-forms-communication-api-overview.md#document-manipulation-apis) してください。
 
 ### 主なドキュメント操作機能
 
@@ -144,7 +152,10 @@ API から提供されるすべてのパラメーター、認証方法および�
 * PDF ドキュメントで有効な使用権限を抽出すると、Adobe Acrobat Reader 拡張機能のために、PDF ドキュメントに対して有効または無効になっている使用権限を取得できます。
 * PDF ドキュメント内に存在するメタデータ情報を取得します。メタデータは、ドキュメントに関する情報（テキストやグラフィックなど、ドキュメントの内容と区別されるもの）です。Adobe Extensive Metadata Platform（XMP）は、ドキュメントのメタデータを処理するための標準です。XMP ユーティリティサービスを使用すると、PDF ドキュメントから XMP メタデータを取得し、XMP メタデータを PDF ドキュメントに書き出すことができます。
 
-API が提供するすべてのパラメーター、認証方法および各種サービスについて詳しくは、[API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)を参照してください。API リファレンスドキュメントは、.yaml 形式でも入手できます。.yaml ファイルをダウンロードし、Postman にアップロードして API の機能を確認できます。
+>
+>
+> ドキュメント抽出 API は、OAuth を使用したサーバー間認証をサポートしています。 ドキュメント抽出 API について詳しくは、[ ここをクリック ](/help/forms/aem-forms-communication-api-overview.md#document-extraction-apis) してください。
+>
 
 ## ドキュメントのコンバージョン
 
@@ -157,6 +168,10 @@ API が提供するすべてのパラメーター、認証方法および各種�
 <span class="preview">PDFを XDP にコンバージョン機能は、早期導入プログラムに基づいています。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
 
 PDF ドキュメントを XDP ファイルにコンバージョンします。PDF ドキュメントを XDP ファイルに正常にコンバージョンするには、PDF ドキュメントのディクショナリ内に XFA ストリームが含まれている必要があります。
+
+>
+>
+> ドキュメント変換 API は、OAuth を使用したサーバー間認証をサポートしています。 ドキュメント変換 API について詳しくは、[ ここをクリック ](/help/forms/aem-forms-communication-api-overview.md#document-conversion-apiss) してください。
 
 ## ドキュメント保証 {#doc-assurance}
 
@@ -174,6 +189,10 @@ Signature API を使用すると、組織は配布および受信する Adobe PD
 * PDF ドキュメントから指定した署名フィールドを削除します。
 
 <span class="preview">早期導入プログラムでは、PDF ドキュメントから指定した署名フィールドから署名を削除することや、指定した署名フィールドを削除することができます。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
+
+>
+>
+> Document Assurance API は、OAuth を使用したサーバー間認証をサポートしています。 Document Assurance API について詳しくは、[ ここをクリック ](/help/forms/aem-forms-communication-api-overview.md#document-assurance-apis) してください。
 
 ### 暗号化 API
 

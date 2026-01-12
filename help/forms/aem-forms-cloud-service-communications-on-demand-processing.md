@@ -3,18 +3,15 @@ title: Forms Communications Synchronous API はどのように設定しますか
 description: Adobe Experience Manager Forms as a Cloud Service用のインタラクティブ通信同期 API の開発環境のセットアップ
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 77da2f4ddcd9074a79883f18a33b6fe50e32b266
+source-git-commit: a0db7a0a2dc82c9857b34b79fe3b3b6f3e179372
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2417'
 ht-degree: 2%
 
 ---
 
 
-# AEM Forms Communications Synchronous API の OAuth サーバー間アクセスの設定
+# AEM Forms Communications API の OAuth サーバー間アクセスの設定
 
 このガイドでは、OAuth サーバー間認証を使用してAdobe Developer Consoleを通じてアクセスされるAEM Forms Communications Synchronous API を設定および呼び出す手順について説明します。
 
@@ -22,44 +19,49 @@ ht-degree: 2%
 
 AEM Forms Communications API の実行とテストを行うための環境を設定するには、以下が揃っていることを確認してください。
 
+### AEM as a Cloud Service環境の更新
+
+* [AEM リリース 2024.10.18459.20241031T210302Z 以降](#update-aem-instance)
+* 2024 年 11 月より前に環境が作成された場合、製品プロファイルを更新する
+
 ### アクセスと権限
 
 通信 API の設定を開始する前に、必要なアクセス権と権限があることを確認してください。
 
 **ユーザーおよび役割の権限**
 
-- Adobe Admin Consoleで割り当てられた開発者の役割
-- Adobe Developer Consoleでプロジェクトを作成する権限
+* Adobe Admin Consoleで割り当てられた開発者の役割
+* Adobe Developer Consoleでプロジェクトを作成する権限
 
 >[!NOTE]
 >
-> 役割の割り当ておよびユーザーへのアクセス権の付与について詳しくは、記事 [&#x200B; ユーザーと役割の追加 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/requirements/users-and-roles) を参照してください。
+> 役割の割り当ておよびユーザーへのアクセス権の付与について詳しくは、記事 [ ユーザーと役割の追加 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/requirements/users-and-roles) を参照してください。
 
 **Git リポジトリへのアクセス**
 
-- Cloud Manager Git リポジトリーへのアクセス
-- クローン作成と変更のプッシュのための Git 資格情報
+* Cloud Manager Git リポジトリーへのアクセス
+* クローン作成と変更のプッシュのための Git 資格情報
 
 >[!NOTE]
 >
-> Adobe Cloud ManagerとAdobe Cloud Managerの統合方法について詳しくは、[Git 統合に関するドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/git-integration.html) を参照してください。
+> Adobe Cloud ManagerとAdobe Cloud Managerの統合方法について詳しくは、[Git 統合に関するドキュメント ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/git-integration.html) を参照してください。
 
 ### Adobe Developer Console（ADC）を使用したアクセストークンの生成
 
-- OAuth サーバー間認証を使用して、Adobe Developer Consoleを通じてアクセストークンを生成します。
-- Adobe Developer Consoleからクライアント ID を取得
+* OAuth サーバー間認証を使用して、Adobe Developer Consoleを通じてアクセストークンを生成します。
+* Adobe Developer Consoleからクライアント ID を取得
 
 >[!NOTE]
 >
-> Adobe Developer Consoleを使用した OAuth サーバー間認証について詳しくは、[&#x200B; ここをクリック &#x200B;](/help/forms/oauth-api-authetication.md) を参照してください。
+> Adobe Developer Consoleを使用した OAuth サーバー間認証について詳しくは、[ ここをクリック ](/help/forms/oauth-api-authetication.md) を参照してください。
 
 ### 開発ツール
 
-- サンプルアプリケーションの実行用の **Node.js**
-- **Git** の最新バージョン
-- **ターミナル/コマンドライン** へのアクセス
-- 設定ファイル編集用の **テキストエディターまたは IDE** （VS Code、IntelliJ など）
-- **Postman** または API テスト用の同様のツール
+* サンプルアプリケーションの実行用の **Node.js**
+* **Git** の最新バージョン
+* **ターミナル/コマンドライン** へのアクセス
+* 設定ファイル編集用の **テキストエディターまたは IDE** （VS Code、IntelliJ など）
+* **Postman** または API テスト用の同様のツール
 
 >[!NOTE]
 >
@@ -84,7 +86,7 @@ AEM Cloud Service 環境の詳細にアクセスして、API 設定に必要な 
 
 リストからプログラムを選択します。 **プログラムの概要** ページにリダイレクトされます
 
-![&#x200B; プログラムの概要ページ &#x200B;](/help/forms/assets/program-overview.png)
+![ プログラムの概要ページ ](/help/forms/assets/program-overview.png)
 
 #### 1.3 AEM Cloud Service 環境へのアクセスと表示
 
@@ -98,7 +100,7 @@ AEM Cloud Service 環境の詳細の表示またはアクセスには、次の 2
 2. 左側のメニューで **「環境」** クリックします。  すべての環境のリストが表示されます
 3. 特定の環境名をクリックすると詳細を表示できます
 
-   ![&#x200B; すべての環境を表示 &#x200B;](/help/forms/assets/all-env.png)
+   ![ すべての環境を表示 ](/help/forms/assets/all-env.png)
 
 >[!TAB  オプション 2：環境セクションから ]
 
@@ -108,7 +110,7 @@ AEM Cloud Service 環境の詳細の表示またはアクセスには、次の 2
 4. 環境の横にある **省略記号メニュー（...）** をクリックします
 5. 「詳細 **表示」を選択し** す。
 
-   ![&#x200B; オプション 1 – 環境の詳細 &#x200B;](/help/forms/assets/option2-env-details.png)
+   ![ オプション 1 – 環境の詳細 ](/help/forms/assets/option2-env-details.png)
 
 >[!ENDTABS]
 
@@ -116,11 +118,11 @@ AEM Cloud Service 環境の詳細の表示またはアクセスには、次の 2
 
 **環境** の詳細ページで、AEMの URL インスタンスを確認します。
 
-![&#x200B; オプション 1 – 環境の詳細 &#x200B;](/help/forms/assets/option1-env.png)
+![ オプション 1 – 環境の詳細 ](/help/forms/assets/option1-env.png)
 
 >[!NOTE]
 >
-> AEM Cloud Service 環境およびAEM Forms エンドポイントにアクセスする方法については、[&#x200B; 環境の管理に関するドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=ja) を参照してください。
+> AEM Cloud Service 環境およびAEM Forms エンドポイントにアクセスする方法については、[ 環境の管理に関するドキュメント ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=ja) を参照してください。
 
 ### 手順 2:Git リポジトリの複製
 
@@ -132,7 +134,7 @@ Cloud Manager Git リポジトリーをクローンして、API 設定ファイ�
 2. リポジトリ名を見つけ、省略記号メニュー（...）をクリックします。
 3. リポジトリー URL をコピー
 
-   ![&#x200B; リポジトリ URL をコピー &#x200B;](/help/forms/assets/copy-repo-url.png)
+   ![ リポジトリ URL をコピー ](/help/forms/assets/copy-repo-url.png)
 
 >[!NOTE]
 >
@@ -157,9 +159,9 @@ Cloud Manager Git リポジトリーをクローンして、API 設定ファイ�
 https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanity-pXXX-ukYYYY/
 ```
 
-![Git リポジトリのクローン作成 &#x200B;](/help/forms/assets/repo-clone.png)
+![Git リポジトリのクローン作成 ](/help/forms/assets/repo-clone.png)
 
-Adobe Cloud ManagerとAdobe Cloud Managerの統合方法について詳しくは、[Git 統合に関するドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/git-integration.html) を参照してください。
+Adobe Cloud ManagerとAdobe Cloud Managerの統合方法について詳しくは、[Git 統合に関するドキュメント ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/git-integration.html) を参照してください。
 
 ### 手順 3:Adobe Developer Console プロジェクトのセットアップ
 
@@ -176,26 +178,26 @@ Adobe Cloud ManagerとAdobe Cloud Managerの統合方法について詳しくは
 1. 「**クイックスタート**」セクションで、「**新規プロジェクトを作成**」をクリックします
 2. デフォルト名で新しいプロジェクトが作成されます
 
-   ![ADC プロジェクトの作成 &#x200B;](/help/forms/assets/adc-home.png)
+   ![ADC プロジェクトの作成 ](/help/forms/assets/adc-home.png)
 
 3. 右上隅の **プロジェクトを編集** をクリックします
 
-   ![&#x200B; プロジェクトを編集 &#x200B;](/help/forms/assets/adc-edit-project.png)
+   ![ プロジェクトを編集 ](/help/forms/assets/adc-edit-project.png)
 
 4. 意味のある名前を指定（例：「formsproject」）
 5. 「**保存**」をクリックします。
 
-   ![&#x200B; プロジェクト名を編集 &#x200B;](/help/forms/assets/adc-edit-projectname.png)
+   ![ プロジェクト名を編集 ](/help/forms/assets/adc-edit-projectname.png)
 
 >[!TAB  既存のプロジェクトに移動するには ]
 
 1. Adobe Developer Consoleで **すべてのプロジェクト** をクリックします
 
-   ![&#x200B; プロジェクトの検索 &#x200B;](/help/forms/assets/search-adc-project.png)
+   ![ プロジェクトの検索 ](/help/forms/assets/search-adc-project.png)
 
 2. プロジェクトを見つけて、クリックして開きます。
 
-   ![&#x200B; プロジェクトの検索 &#x200B;](/help/forms/assets/locate-adc-project.png)
+   ![ プロジェクトの検索 ](/help/forms/assets/locate-adc-project.png)
 
 >[!ENDTABS]
 
@@ -203,17 +205,17 @@ Adobe Cloud ManagerとAdobe Cloud Managerの統合方法について詳しくは
 
 1. 「**API を追加**」をクリックします。
 
-   ![API を追加 &#x200B;](/help/forms/assets/adc-add-api.png)
+   ![API を追加 ](/help/forms/assets/adc-add-api.png)
 
 2. _API を追加_ ダイアログで、**Experience Cloudでフィルタリングします**
 3. 「Forms Communication API **を選択し** す。
 
-   ![Forms Communication API の追加 &#x200B;](/help/forms/assets/adc-add-forms-api.png)
+   ![Forms Communication API の追加 ](/help/forms/assets/adc-add-forms-api.png)
 
 4. 「**次へ**」をクリックします。
 5. **OAuth サーバー間** 認証方法を選択します
 
-   ![&#x200B; 認証方法の選択 &#x200B;](/help/forms/assets/adc-add-authentication-method.png)
+   ![ 認証方法の選択 ](/help/forms/assets/adc-add-authentication-method.png)
 6. 「**次へ**」をクリックします。
 
 #### 3.3 製品プロファイルの追加
@@ -222,7 +224,7 @@ Adobe Cloud ManagerとAdobe Cloud Managerの統合方法について詳しくは
 
 2. 「**設定済み API を保存**」をクリックします。API と製品プロファイルがプロジェクトに追加されます
 
-   ![&#x200B; プロジェクト設定の選択 &#x200B;](/help/forms/assets/adc-add-product-profile.png)
+   ![ プロジェクト設定の選択 ](/help/forms/assets/adc-add-product-profile.png)
 
 3. 「**資格情報の詳細** セクションを表示します
 
@@ -251,7 +253,7 @@ Adobe Developer Consoleで手動でアクセストークンを生成します。
 1. プロジェクトの「API」セクションで **「アクセストークンを生成」** ボタンをクリックします
 2. 生成されたアクセストークンのコピー
 
-   ![&#x200B; アクセストークンの生成 &#x200B;](/help/forms/assets/adc-access-token.png)
+   ![ アクセストークンの生成 ](/help/forms/assets/adc-access-token.png)
 
 >[!NOTE]
 >
@@ -263,9 +265,9 @@ Adobe Developer Consoleで手動でアクセストークンを生成します。
 
 **必要な資格情報：**
 
-- クライアント ID
-- クライアントの秘密鍵
-- 範囲（通常：`openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`）
+* クライアント ID
+* クライアントの秘密鍵
+* 範囲（通常：`openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`）
 
 **トークン エンドポイント：**
 
@@ -300,7 +302,7 @@ Adobe Developer Consoleで手動でアクセストークンを生成します。
 
 >[!NOTE]
 >
-> Adobe Developer Consoleを使用した OAuth サーバー間認証について詳しくは、「[OAuth サーバー間認証 &#x200B;](/help/forms/oauth-api-authetication.md)」の記事を参照してください。
+> Adobe Developer Consoleを使用した OAuth サーバー間認証について詳しくは、「[OAuth サーバー間認証 ](/help/forms/oauth-api-authetication.md)」の記事を参照してください。
 
 ### 手順 4：クライアント ID のAEM環境への登録
 
@@ -340,18 +342,18 @@ ADC プロジェクトのクライアント ID がAEM インスタンスと通�
 
 設定パラメーターを次に説明します。
 
-- **kind**：常に `"API"` に設定します（API 設定として識別します）
-- **version**:API バージョン（通常は `"1"` または `"1.0"`）
-- **envTypes**：この設定が適用される環境タイプの配列
-   - `["dev"]` – 開発環境のみ
-   - `["stage"]` - ステージング環境のみ
-   - `["prod"]` – 実稼動環境のみ
-- **allowedClientIDs**:AEM インスタンスへのアクセスが許可されたクライアント ID
-   - **オーサー**：オーサー層のクライアント ID
-   - **パブリッシュ**：パブリッシュ層のクライアント ID
-   - **preview**：プレビュー層のクライアント ID
+* **kind**：常に `"API"` に設定します（API 設定として識別します）
+* **version**:API バージョン（通常は `"1"` または `"1.0"`）
+* **envTypes**：この設定が適用される環境タイプの配列
+   * `["dev"]` – 開発環境のみ
+   * `["stage"]` - ステージング環境のみ
+   * `["prod"]` – 実稼動環境のみ
+* **allowedClientIDs**:AEM インスタンスへのアクセスが許可されたクライアント ID
+   * **オーサー**：オーサー層のクライアント ID
+   * **パブリッシュ**：パブリッシュ層のクライアント ID
+   * **preview**：プレビュー層のクライアント ID
 
-![&#x200B; 設定ファイルの追加 &#x200B;](/help/forms/assets/create-api-yaml-file.png)
+![ 設定ファイルの追加 ](/help/forms/assets/create-api-yaml-file.png)
 
 #### 4.2 コミットとプッシュの変更
 
@@ -364,7 +366,7 @@ ADC プロジェクトのクライアント ID がAEM インスタンスと通�
        git push origin <your-branch>
    ```
 
-   ![Git の変更のプッシュ &#x200B;](/help/forms/assets/push-yaml-changes-in-git.png)
+   ![Git の変更のプッシュ ](/help/forms/assets/push-yaml-changes-in-git.png)
 
 
 ### 手順 5：設定パイプラインの設定
@@ -379,13 +381,13 @@ ADC プロジェクトのクライアント ID がAEM インスタンスと通�
 1. プログラムの概要ページで **パイプライン** カードを見つけます
 2. 「追加 **ボタンをクリ** ク
 
-   ![&#x200B; パイプラインを追加 &#x200B;](/help/forms/assets/add-pipeline.png)
+   ![ パイプラインを追加 ](/help/forms/assets/add-pipeline.png)
 
 #### 5.2 パイプラインタイプの選択
 
-- **開発環境の場合**:**「実稼動以外のパイプラインを追加」** を選択します。 実稼動以外のパイプラインは、開発環境とステージング環境用です
+* **開発環境の場合**:**「実稼動以外のパイプラインを追加」** を選択します。 実稼動以外のパイプラインは、開発環境とステージング環境用です
 
-- **実稼動環境の場合**:**「実稼動パイプラインを追加」** を選択します。 実稼動パイプラインには追加の承認が必要です
+* **実稼動環境の場合**:**「実稼動パイプラインを追加」** を選択します。 実稼動パイプラインには追加の承認が必要です
 
 >[!NOTE]
 >
@@ -397,26 +399,26 @@ ADC プロジェクトのクライアント ID がAEM インスタンスと通�
 
 a. **パイプラインタイプ**
 
-- 「デプロイメントパイプライン **を選択**
+* 「デプロイメントパイプライン **を選択**
 
 b. **パイプライン名**
 
-- わかりやすい名前を指定（例：パイプラインに `api-config-pipieline` という名前を付ける）
+* わかりやすい名前を指定（例：パイプラインに `api-config-pipieline` という名前を付ける）
 
 c. **導入トリガー**
 
-- **手動**：手動でトリガーされた場合にのみデプロイします（初期設定で推奨）
-- **Git の変更時**：変更がブランチにプッシュされると自動デプロイされます
+* **手動**：手動でトリガーされた場合にのみデプロイします（初期設定で推奨）
+* **Git の変更時**：変更がブランチにプッシュされると自動デプロイされます
 
 d. **重要な指標のエラー動作**
 
-- **毎回確認する**：失敗時にアクションを要求する（デフォルト）
-- **直ちに失敗**：指標の失敗時にパイプラインを自動的に失敗します
-- **直ちに続行**：失敗しても続行します
+* **毎回確認する**：失敗時にアクションを要求する（デフォルト）
+* **直ちに失敗**：指標の失敗時にパイプラインを自動的に失敗します
+* **直ちに続行**：失敗しても続行します
 
 e. 「**続行」をクリックして** 「**Source コード**」タブに進みます
 
-![&#x200B; 設定パイプライン &#x200B;](/help/forms/assets/add-config-pipeline.png)
+![ 設定パイプライン ](/help/forms/assets/add-config-pipeline.png)
 
 **2. パイプラインを設定 – 「Sourceコード」タブ**
 
@@ -424,25 +426,25 @@ e. 「**続行」をクリックして** 「**Source コード**」タブに進�
 
 a. **デプロイメントタイプ**
 
-- 「ターゲットデプロイメント **を選択**
+* 「ターゲットデプロイメント **を選択**
 
 b. **デプロイメントオプション**
 
-- 「**Config」** を選択します（設定ファイルのみをデプロイします）。 これは、Cloud Managerに config デプロイメントであることを示しています。
+* 「**Config」** を選択します（設定ファイルのみをデプロイします）。 これは、Cloud Managerに config デプロイメントであることを示しています。
 
 c. **適格なデプロイメント環境を選択**
 
-- 設定をデプロイする環境を選択します。 この場合、これは `dev` 環境です。
+* 設定をデプロイする環境を選択します。 この場合、これは `dev` 環境です。
 
 d. **Source コードの詳細を定義**
 
-- **リポジトリ**:`api.yaml` ファイルを含むリポジトリを選択します。 例えば、`AEMFormsInternal-ReleaseSanity-pXXXXX-ukYYYYY` リポジトリを選択します。
-- **Git ブランチ**：ブランチを選択します。 例えば、この場合、コードは `main` ブランチにデプロイされます。
-- **コードの場所**：ディレクトリへのパス `config` 入力します。 `api.yaml` はルートのフォルダーにあ `config` ので、`/config` と入力します
+* **リポジトリ**:`api.yaml` ファイルを含むリポジトリを選択します。 例えば、`AEMFormsInternal-ReleaseSanity-pXXXXX-ukYYYYY` リポジトリを選択します。
+* **Git ブランチ**：ブランチを選択します。 例えば、この場合、コードは `main` ブランチにデプロイされます。
+* **コードの場所**：ディレクトリへのパス `config` 入力します。 `api.yaml` はルートのフォルダーにあ `config` ので、`/config` と入力します
 
 e. 「**保存」** をクリックして、パイプラインを作成します
 
-![&#x200B; 設定パイプライン &#x200B;](/help/forms/assets/confirm-pipeline-1.png)
+![ 設定パイプライン ](/help/forms/assets/confirm-pipeline-1.png)
 
 ### 手順 6：設定のデプロイ
 
@@ -458,15 +460,15 @@ e. 「**保存」** をクリックして、パイプラインを作成します
 1. パイプラインの横にある **「ビルド」** ボタン（または再生アイコン ▶）をクリックします
 2. プロンプトが表示されたらデプロイメントを確認し、パイプラインの実行を開始します
 
-![&#x200B; パイプラインを実行 &#x200B;](/help/forms/assets/run-config-pipeline.png)
+![ パイプラインを実行 ](/help/forms/assets/run-config-pipeline.png)
 
 #### 6.3 デプロイメントの成功の確認
 
-- パイプラインが完了するのを待ちます。
-   - 成功すると、ステータスが「成功」（緑色のチェックマーク ✓）に変わります。
-   - 失敗した場合は、ステータスが「失敗」（赤十字 ✗）に変わります。 **ログをダウンロード** をクリックして、エラーの詳細を表示します。
+* パイプラインが完了するのを待ちます。
+   * 成功すると、ステータスが「成功」（緑色のチェックマーク ✓）に変わります。
+   * 失敗した場合は、ステータスが「失敗」（赤十字 ✗）に変わります。 **ログをダウンロード** をクリックして、エラーの詳細を表示します。
 
-     ![&#x200B; パイプライン成功 &#x200B;](/help/forms/assets/pipeline-suceess.png)
+     ![ パイプライン成功 ](/help/forms/assets/pipeline-suceess.png)
 
 これで、Forms Communications API のテストを開始できます。 テストの目的で、Postman、curl、またはその他の REST クライアントを使用して、API を呼び出すことができます。
 
@@ -478,56 +480,56 @@ e. 「**保存」** をクリックして、パイプラインを作成します
 
 >[!TAB A.API テストへの Swagger UI の使用 ]
 
-Swagger UI には、コードを記述せずに API をテストするためのインタラクティブなインターフェイスが用意されています。**試す** 機能を使用して、Forms通信 API の [PDFを生成 &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) を呼び出してテストします。
+Swagger UI には、コードを記述せずに API をテストするためのインタラクティブなインターフェイスが用意されています。**試す** 機能を使用して、Forms通信 API の [PDFを生成 ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) を呼び出してテストします。
 
-1. [Forms Communication API Reference に移動し &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) ブラウザーで [Forms Communication API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document) ドキュメントを開きます。
-2. 「**ドキュメントの生成**」セクションを展開し、「[XDP またはPDF テンプレートから入力可能なPDF フォームを生成します（オプションでデータ結合も可能 &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm)」を選択します。
+1. [Forms Communication API Reference に移動し ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) ブラウザーで [Forms Communication API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document) ドキュメントを開きます。
+2. 「**ドキュメントの生成**」セクションを展開し、「[XDP またはPDF テンプレートから入力可能なPDF フォームを生成します（オプションでデータ結合も可能 ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm)」を選択します。
 3. 右側のウィンドウで、「試す **をクリックし** す。
 
-   ![API の Swagger テスト &#x200B;](/help/forms/assets/api-doc-generation.png)
+   ![API の Swagger テスト ](/help/forms/assets/api-doc-generation.png)
 4. 以下の値を入力します。
 
    | **セクション** | **パラメーター** | **値** |
    |--------------|---------------|------------|
    | バケット | AEM インスタンス | AEM インスタンス名（Adobe ドメイン名（`.adobeaemcloud.com`）を除いたもの。例えば、`pXXXXX-eYYYYY` をバケットとして使用します。 |
-   | セキュリティ | ベアラートークン | [Adobe Developer Console プロジェクトの OAuth サーバー間資格情報からのアクセストークン &#x200B;](/help/forms/oauth-api-authetication.md#how-to-generate-an-access-token-using-oauth-server-to-server-authentication) を使用します。 |
-   | 本文 | テンプレート | XDP をアップロードしてPDF フォームを生成します。 例えば、[&#x200B; この XDP](/help/forms/assets/ClosingForm.xdp) を使用してPDFを生成できます。 |
-   | 本文 | data | 事前入力されたPDF フォームを生成するためにテンプレートと結合されるデータを含む、オプションの XML ファイル。 例えば、[&#x200B; この XML](/help/forms/assets/ClosingForm.xml) を使用してPDFを生成できます。 |
+   | セキュリティ | ベアラートークン | [Adobe Developer Console プロジェクトの OAuth サーバー間資格情報からのアクセストークン ](/help/forms/oauth-api-authetication.md#how-to-generate-an-access-token-using-oauth-server-to-server-authentication) を使用します。 |
+   | 本文 | テンプレート | XDP をアップロードしてPDF フォームを生成します。 例えば、[ この XDP](/help/forms/assets/ClosingForm.xdp) を使用してPDFを生成できます。 |
+   | 本文 | data | 事前入力されたPDF フォームを生成するためにテンプレートと結合されるデータを含む、オプションの XML ファイル。 例えば、[ この XML](/help/forms/assets/ClosingForm.xml) を使用してPDFを生成できます。 |
    | パラメーター | X-Adobe-Accept-Experimental | 1 |
 
 5. 「**送信**」をクリックして、API を呼び出します
 
-   ![&#x200B; 送信 API](/help/forms/assets/api-send.png)
+   ![ 送信 API](/help/forms/assets/api-send.png)
 
 6. 「**応答** タブで応答を確認します。
-   - 応答コードが `200` の場合は、PDFが正常に作成されたことを意味します。
-   - 応答コードが `400` の場合は、リクエストパラメーターが無効か、形式が正しくないことを意味します。
-   - 応答コードが `500` の場合は、内部サーバーエラーがあることを意味します。
-   - 応答コードが `403` の場合は、認証エラーがあることを意味します。
+   * 応答コードが `200` の場合は、PDFが正常に作成されたことを意味します。
+   * 応答コードが `400` の場合は、リクエストパラメーターが無効か、形式が正しくないことを意味します。
+   * 応答コードが `500` の場合は、内部サーバーエラーがあることを意味します。
+   * 応答コードが `403` の場合は、認証エラーがあることを意味します。
 
    この場合、応答コードは `200` です。これは、PDFが正常に生成されたことを意味します。
 
-   ![&#x200B; レビューの回答 &#x200B;](/help/forms/assets/api-success.png)
+   ![ レビューの回答 ](/help/forms/assets/api-success.png)
 
-   これで、「[&#x200B; ダウンロード &#x200B;](/help/forms/assets/create-pdf.pdf) ボタンを使用して **作成したPDF** をダウンロードし、PDF ビューアで表示できます。
+   これで、「[ ダウンロード ](/help/forms/assets/create-pdf.pdf) ボタンを使用して **作成したPDF** をダウンロードし、PDF ビューアで表示できます。
 
-   ![PDFを表示 &#x200B;](/help/forms/assets/create-pdf.png)
+   ![PDFを表示 ](/help/forms/assets/create-pdf.png)
 
    >[!NOTE]
    >
    > テストの目的で、[Postman](https://www.postman.com/)、[curl](https://curl.se/) またはその他の REST クライアントを使用して、AEM API を呼び出すこともできます。
 
->[!TAB B.NodeJS アプリケーションを開発することにより、プログラムで行  ます。]
+>[!TAB B.NodeJS アプリケーションを開発することにより、プログラムで行 ] ます。
 
 **Document Services API を使用して、** XDP **テンプレートおよび** XML **データファイルから入力可能なPDF フォームを生成するための Node.js アプリケーションを開発** ます。
 
 **前提条件**
 
-- システムにインストールされている Node.js
-- アクティブなAEM as a Cloud Service インスタンス
-- Adobe Developer Consoleからの API 認証用のベアラートークン
-- サンプル XDP ファイル：[ClosingForm.xdp](/help/forms/assets/ClosingForm.xdp)
-- サンプル XML ファイル：[ClosingForm.xml](/help/forms/assets/ClosingForm.xml)
+* システムにインストールされている Node.js
+* アクティブなAEM as a Cloud Service インスタンス
+* Adobe Developer Consoleからの API 認証用のベアラートークン
+* サンプル XDP ファイル：[ClosingForm.xdp](/help/forms/assets/ClosingForm.xdp)
+* サンプル XML ファイル：[ClosingForm.xml](/help/forms/assets/ClosingForm.xml)
 
 Node.js アプリケーションを開発するには、以下の開発手順に従います。
 
@@ -544,7 +546,7 @@ cd demo-nodejs-generate-pdf
 npm init -y
 ```
 
-![&#x200B; 新しい node js プロジェクトの作成 &#x200B;](/help/forms/assets/api-1.png)
+![ 新しい node js プロジェクトの作成 ](/help/forms/assets/api-1.png)
 
 **手順 2：必要な依存関係をインストールする**
 
@@ -556,7 +558,7 @@ npm install dotenv
 npm install form-data
 ```
 
-![npm 依存関係のインストール &#x200B;](/help/forms/assets/api-2.png)
+![npm 依存関係のインストール ](/help/forms/assets/api-2.png)
 
 **手順 3:package.json を更新**
 
@@ -566,7 +568,7 @@ npm install form-data
    code .
    ```
 
-   ![&#x200B; エディターでプロジェクトを開く &#x200B;](/help/forms/assets/api-3.png)
+   ![ エディターでプロジェクトを開く ](/help/forms/assets/api-3.png)
 
    コードエディターでプロジェクトが開きます。
 
@@ -581,7 +583,7 @@ npm install form-data
    }
    ```
 
-   ![&#x200B; パッケージ ファイルの更新 &#x200B;](/help/forms/assets/api-4.png)
+   ![ パッケージ ファイルの更新 ](/help/forms/assets/api-4.png)
 
 **手順 4:.env ファイルの作成**
 
@@ -594,7 +596,7 @@ npm install form-data
    SCOPES=<ADC Project OAuth Server-to-Server credential Scopes>
    ```
 
-   ![&#x200B; 環境ファイルを作成 &#x200B;](/help/forms/assets/api-5.png)
+   ![ 環境ファイルを作成 ](/help/forms/assets/api-5.png)
 
    >[!NOTE]
    >
@@ -693,7 +695,7 @@ const generatePDF = async () => {
 generatePDF();
 ```
 
-![index.js を作成 &#x200B;](/help/forms/assets/api-6.png)
+![index.js を作成 ](/help/forms/assets/api-6.png)
 
 **手順 6：アプリケーションを実行する**
 
@@ -701,17 +703,17 @@ generatePDF();
 node src/index.js
 ```
 
-![&#x200B; アプリケーションの実行 &#x200B;](/help/forms/assets/api-7.png)
+![ アプリケーションの実行 ](/help/forms/assets/api-7.png)
 
 `demo-nodejs-generate-pdf` フォルダーにPDFが作成されます。 フォルダーに移動して、`generatedForm.pdf` という名前の生成されたファイルを見つけます。
 
-![&#x200B; 作成された pdf を表示 &#x200B;](/help/forms/assets/api-8.png)
+![ 作成された pdf を表示 ](/help/forms/assets/api-8.png)
 
-![PDFを表示 &#x200B;](/help/forms/assets/create-pdf.png)
+![PDFを表示 ](/help/forms/assets/create-pdf.png)
 
 >[!ENDTABS]
 
-[&#x200B; 生成されたPDF](/help/forms/assets/create-pdf.png) を開いて確認できます。
+[ 生成されたPDF](/help/forms/assets/create-pdf.png) を開いて確認できます。
 
 ## トラブルシューティング
 
@@ -721,62 +723,62 @@ node src/index.js
 
 **症状：**
 
-- API リクエストの戻り `403 Forbidden`
-- エラーメッセージ：*未認証のアクセス*
+* API リクエストの戻り `403 Forbidden`
+* エラーメッセージ：*未認証のアクセス*
 
 **考えられる原因：**
 
-- クライアント ID がAEM インスタンスの `api.yaml` 設定に登録されていません
+* クライアント ID がAEM インスタンスの `api.yaml` 設定に登録されていません
 
 #### 問題 2:401 Unauthorized エラー
 
 **症状：**
 
-- API リクエストの戻り `401 Unauthorized`
-- エラーメッセージ：*トークンが無効または期限切れです*
+* API リクエストの戻り `401 Unauthorized`
+* エラーメッセージ：*トークンが無効または期限切れです*
 
 **考えられる原因：**
 
-- アクセストークンが期限切れです（24 時間のみ有効）
-- クライアント ID とクライアント秘密鍵が正しくないか、一致しません
+* アクセストークンが期限切れです（24 時間のみ有効）
+* クライアント ID とクライアント秘密鍵が正しくないか、一致しません
 
 #### 問題 3:404 エラーが見つからない
 
 **症状：**
 
-- API リクエストの戻り `404 Not Found`
-- エラーメッセージ：*リソースが見つかりません* または *API エンドポイントが見つかりません*
+* API リクエストの戻り `404 Not Found`
+* エラーメッセージ：*リソースが見つかりません* または *API エンドポイントが見つかりません*
 
 **考えられる原因：**
 
-- バケットパラメーターが正しくありません（AEM インスタンスの識別子と一致しません）
+* バケットパラメーターが正しくありません（AEM インスタンスの識別子と一致しません）
 
 #### 問題 4：パイプラインのデプロイメントに失敗する
 
 **症状：**
 
-- 設定パイプラインの実行に失敗
-- デプロイメントログに、`api.yaml` に関連するエラーが表示される
+* 設定パイプラインの実行に失敗
+* デプロイメントログに、`api.yaml` に関連するエラーが表示される
 
 **考えられる原因：**
 
-- YAML 構文（インデント、引用符、または配列形式の問題）が無効です
-- `api.yaml` が間違ったディレクトリに配置されています
-- 設定のクライアント ID の形式が正しくないか、正しくありません
-- クライアントシークレットが無効です
+* YAML 構文（インデント、引用符、または配列形式の問題）が無効です
+* `api.yaml` が間違ったディレクトリに配置されています
+* 設定のクライアント ID の形式が正しくないか、正しくありません
+* クライアントシークレットが無効です
 
 #### 問題 5:Forms Communication API を実行できない
 
 **症状：**
 
-- API リクエストが、サポートされていない機能または使用できない機能を示すエラーを返します。
-- XDP と XML を使用したPDFの生成が機能しない。
-- パイプラインのデプロイメントは正常に完了しますが、ランタイム API 呼び出しは失敗します。
+* API リクエストが、サポートされていない機能または使用できない機能を示すエラーを返します。
+* XDP と XML を使用したPDFの生成が機能しない。
+* パイプラインのデプロイメントは正常に完了しますが、ランタイム API 呼び出しは失敗します。
 
 **考えられる原因：**
 
 AEM環境は、Forms通信 API が導入またはサポートされる前にリリースされたバージョンを実行しています。
-AEM環境を更新するには、[AEM インスタンスの更新 &#x200B;](#update-aem-instance) の節を参照してください。
+AEM環境を更新するには、[AEM インスタンスの更新 ](#update-aem-instance) の節を参照してください。
 
 ## AEM インスタンスの更新
 
@@ -785,8 +787,8 @@ AEM環境を更新するには、[AEM インスタンスの更新 &#x200B;](#upd
 1. 環境名の横にある「`ellipsis` （...）」アイコンを選択し、「**更新**」をクリックします
 2. **送信** ボタンをクリックし、提案されたフルスタックパイプラインを実行します。
 
-   ![&#x200B; 環境の更新 &#x200B;](/help/forms/assets/update-env.png)
+   ![ 環境の更新 ](/help/forms/assets/update-env.png)
 
 ## 関連記事
 
-- バッチ（非同期 API）用の環境を設定する方法については、[AEM Forms as a Cloud Serviceとのバッチ処理 &#x200B;](/help/forms/aem-forms-cloud-service-communications-batch-processing.md) を参照してください。
+* バッチ（非同期 API）用の環境を設定する方法については、[AEM Forms as a Cloud Serviceとのバッチ処理 ](/help/forms/aem-forms-cloud-service-communications-batch-processing.md) を参照してください。
