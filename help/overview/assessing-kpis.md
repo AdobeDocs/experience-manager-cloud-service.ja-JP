@@ -1,13 +1,13 @@
 ---
-title: KPI へのアクセス
-description: KPI にアクセスしてレポートプロセスを定義する方法
+title: KPI の評価
+description: KPI を評価し、レポートプロセスを定義する方法について説明します
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 2a3c93d1a2e214a584fca5ede9a9189143d04889
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Manager をローンチする前に、プロジェクトの関�
 
 同じ劇的な効果を実現するため、組織で Experience Manager の実装に関する明確な目標を持つ必要があります。そして、全員がその目標に集中できるように KPI を設ける必要があります。
 
-## KPI へのアクセス
+## KPI の評価
 
 KPI の評価では、次の点を確認します。
 
