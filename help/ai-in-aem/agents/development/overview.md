@@ -23,7 +23,7 @@ ht-degree: 1%
 >
 >AI によって生成された応答は、不正確であったり、誤解を招く可能性があります。 推奨される修正および回答を再確認してください。
 >
->[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドライン ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) も参照してください。
+>[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドライン &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) も参照してください。
 
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
@@ -37,40 +37,40 @@ Development Agent には、Cloud ManagerやExperience Hubなどのユーザー�
 
 1. 開始するには、[Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) をクリックしてホームページを開きます。
 
-   ![Adobe Experience Cloudのホームページ ](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
+   ![Adobe Experience Cloudのホームページ &#x200B;](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
 
 1. 左側のレールの「**サービス**」見出しの下の「**Cloud Manager**」をクリックします。
 
-   ![ 「コンテンツ作成者」プリセットを表示するドロップダウンリストが選択されている ](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
+   ![&#x200B; 「コンテンツ作成者」プリセットを表示するドロップダウンリストが選択されている &#x200B;](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
 
    >[!IMPORTANT]
    >
    >表示されるウィジェット、ツールおよびアーティファクトは、ユーザーのペルソナ、使用権限およびAEM デプロイメントタイプ（AEM as a Cloud ServiceまたはManaged Services 6.5/6.5 LTS）によって異なります。
 
-1. 左側のパネルの **プログラム** で、「概要アイコン **![概要 ](/help/implementing/cloud-manager/configuring-pipelines/assets/overview.svg) をクリック** ます。
+1. 左側のパネルの **プログラム** で、「概要アイコン **![概要 &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/overview.svg) をクリック** ます。
 
 1. **プログラムの概要** ページの **パイプライン** カードで、パイプラインをクリックします。
 
-   ![ 選択したパイプライン ](/help/ai-in-aem/agents/development/assets/dev-agent-pipeline-select.png)
+   ![&#x200B; 選択したパイプライン &#x200B;](/help/ai-in-aem/agents/development/assets/dev-agent-pipeline-select.png)
 
 1. **ビルドとコードスキャン** ページで、失敗したパイプラインを確認します。
 
-   ![ ビルドページとコードスキャンページに表示されるパイプラインエラー ](/help/ai-in-aem/agents/development/assets/dev-agent-pipeline-failure.png)
+   ![&#x200B; ビルドページとコードスキャンページに表示されるパイプラインエラー &#x200B;](/help/ai-in-aem/agents/development/assets/dev-agent-pipeline-failure.png)
 
 1. AEM ユーザーインターフェイス（Cloud Manager ページまたはAEM環境のオーサーインスタンス）の右上隅付近にある「**AI アシスタント**」アイコンをクリックします。
 
-   ![ ツールバーの AI アシスタントアイコン ](/help/implementing/cloud-manager/assets/ai-assistant-icon.png)
+   ![&#x200B; ツールバーの AI アシスタントアイコン &#x200B;](/help/implementing/cloud-manager/assets/ai-assistant-icon.png)
 
-   [AEMの AI アシスタント ](/help/implementing/cloud-manager/ai-assistant-in-aem.md) も参照してください。
+   [AEMの AI アシスタント &#x200B;](/help/implementing/cloud-manager/ai-assistant-in-aem.md) も参照してください。
 
-1. 下部の **AI アシスタント** パネルのテキストボックスに、質問またはプロンプトを入力し、`Enter` キーを押すか、![ 送信アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg) をクリックします。
+1. 下部の **AI アシスタント** パネルのテキストボックスに、質問またはプロンプトを入力し、`Enter` キーを押すか、![&#x200B; 送信アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg) をクリックします。
 
    例：
    *「eda-org-01-no-access」プログラムで、「no-access」パイプラインのエラーを分析してトラブルシューティングします。*
 
    プロンプトで次の応答が返されます。
 
-   ![AI アシスタントのプロンプトと結果の応答 ](/help/ai-in-aem/agents/development/assets/dev-agent-prompt-response.png)
+   ![AI アシスタントのプロンプトと結果の応答 &#x200B;](/help/ai-in-aem/agents/development/assets/dev-agent-prompt-response.png)
 
 
 ## 権限 {#permissions}
@@ -88,6 +88,6 @@ Development Agent には、Cloud ManagerやExperience Hubなどのユーザー�
 
 パイプラインのトラブルシューティングは、フルスタックパイプラインのビルドステップで機能します。 その他のパイプラインタイプおよび手順の場合は、ログをダウンロードして調べることで、エラーをデバッグできます。
 
-[ ログへのアクセスとダウンロード ](/help/implementing/cloud-manager/manage-logs.md) を参照してください。
+[&#x200B; ログへのアクセスとダウンロード &#x200B;](/help/implementing/cloud-manager/manage-logs.md) を参照してください。
 
 パイプラインのトラブルシューティングは、BYOGIT （Bring Your Own Git）を使用したプログラムではサポートされていません。
