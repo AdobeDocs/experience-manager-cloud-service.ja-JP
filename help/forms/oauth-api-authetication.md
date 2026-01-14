@@ -19,7 +19,7 @@ OAuth サーバー間認証を使用すると、ユーザーの操作を必要�
 
 開始する前に、次の前提条件が満たされていることを確認してください。
 
-* 使用する環境に固有の [Adobe Developer Consoleへのアクセス &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) があることを確認します。
+* 使用する環境に固有の [Adobe Developer Consoleへのアクセス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/requirements/access-rights) があることを確認します。
 * [Adobe Admin Consoleでシステム管理者または開発者の役割を割り当て &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions)Adobe Developer Consoleへのアクセスを有効にします。
 
 ## OAuth サーバー間認証を使用してアクセストークンを生成する方法
