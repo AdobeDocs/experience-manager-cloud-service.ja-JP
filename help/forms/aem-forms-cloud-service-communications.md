@@ -4,10 +4,10 @@ description: データを XDP および PDF テンプレートと自動的に結
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 feature: Adaptive Forms,APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 100%
+source-wordcount: '725'
+ht-degree: 91%
 
 ---
 
@@ -43,7 +43,7 @@ Formsas a Cloud Service - コミュニケーションは、スケジュールさ
 
 シングルテナント API 操作は、次の 2 種類の認証をサポートしています。
 
-* **基本認証**：基本認証は、HTTP プロトコルに組み込まれたシンプルな認証スキームです。クライアントは、Basic という単語に続いてスペースと、base64 でエンコードされた文字列 username:password を含む Authorization ヘッダーを含む HTTP リクエストを送信します。例えば、管理者／管理者として認証するために、クライアントは Basic [base64 エンコードされたユーザー名文字列]: [base64 でエンコードされたパスワード文字列]を送信します。
+* **基本認証**：基本認証は、HTTP プロトコルに組み込まれたシンプルな認証スキームです。クライアントは、Basic という単語に続いてスペースと、base64 でエンコードされた文字列 username:password を含む Authorization ヘッダーを含む HTTP リクエストを送信します。 例えば、管理者／管理者として認証するために、クライアントは Basic [base64 エンコードされたユーザー名文字列]: [base64 でエンコードされたパスワード文字列]を送信します。
 
 * **トークンベースの認証：**&#x200B;トークンベースの認証では、アクセストークン（Bearer 認証トークン）を使用して、Experience Manager as a Cloud Service にリクエストを送信します。AEM Forms as a Cloud Service は、アクセストークンを安全に取得する API を提供します。トークンを取得して使用し、要求を認証するには、次の手順を実行します。
 
@@ -55,8 +55,11 @@ Formsas a Cloud Service - コミュニケーションは、スケジュールさ
 
   >[!NOTE]
   >
-  >アドビでは、実稼動環境でトークンベースの認証を使用することをお勧めします。
+  >アドビでは、本番環境でトークンベースの認証を使用することをお勧めします。
 
+  >[!IMPORTANT]
+  >
+  > 詳しくは、[OAuth サーバー間認証 ](/help/forms/oauth-api-authetication.md) および [JWT サーバー間認証 ](/help/forms/jwt-api-authentication.md) を参照してください。
 <!-- 
 
 ### Authenticate a multi-tenant API
@@ -143,11 +146,12 @@ API から提供されるすべてのパラメーター、認証方法および�
 
 >[!NOTE]
 >
->コミュニケーション API にアクセスできるのは、forms-users グループのメンバーだけです。
+> AEM Forms Communication API を呼び出す詳細な手順については、[OAuth サーバー間認証を使用したAEM Forms Communications API の呼び出し ](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md) を参照してください。
 
 >[!MORELIKETHIS]
 >
->* [AEM Forms as a Cloud Service 通信の概要](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service の概要](/help/forms/aem-forms-cloud-service-communications-introduction.md)
 >* [アダプティブフォームおよび通信 API 用のAEM Forms as a Cloud Service アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [通信処理 - 同期 API](/help/forms/aem-forms-cloud-service-communications.md)
 >* [通信処理 - バッチ API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Forms Communications API - チュートリアル ](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

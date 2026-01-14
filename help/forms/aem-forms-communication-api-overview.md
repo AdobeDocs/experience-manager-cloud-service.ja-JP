@@ -3,7 +3,7 @@ title: AEM Forms Communications API – 概要
 description: 認証方法を含むAEM Forms Communications API の概要と完全な API リファレンス
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 9%
@@ -17,18 +17,18 @@ AEM Forms API は、ドキュメントワークフローの自動化に役立つ
 
 AEM Forms API は、次の 2 つの主要なコンソールを通じて構造化され、アクセスされます。
 
-* [Adobe Developer Console（ADC） &#x200B;](https://developer.adobe.com/developer-console/) - Adobe Developer Consoleは、Adobe API、イベント、ランタイム、App Builderへのゲートウェイです。
+* [Adobe Developer Console（ADC） ](https://developer.adobe.com/developer-console/) - Adobe Developer Consoleは、Adobe API、イベント、ランタイム、App Builderへのゲートウェイです。
 
 * [AEM Developer Console](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Consoleでは、運用タスクや統合タスクをサポートするために、環境レベルの詳細、設定、技術アカウント、サービス資格情報にアクセスできます。
 
-API が異なると、サポートする [&#x200B; 認証方法 &#x200B;](#authentication-methods) も異なります。
+API が異なると、サポートする [ 認証方法 ](#authentication-methods) も異なります。
 
 ## 認証方法
 
 Forms API によって、リリースタイムラインに基づいて使用される認証方法が異なります。
 
 * [OAuth サーバー間](/help/forms/oauth-api-authetication.md)
-* [JWT （JSON web トークン）サーバー間 &#x200B;](/help/forms/jwt-api-authentication.md)
+* [JWT （JSON web トークン）サーバー間 ](/help/forms/jwt-api-authentication.md)
 
 以前の API は、JWT ベースのサーバー間認証をサポートしていました。この認証は、AEM Developer Consoleを通じて設定および管理されます。 新しい API は、OAuth サーバー間認証を使用し、Adobe Developer Consoleを通じて設定されます。
 
@@ -41,7 +41,7 @@ Forms API によって、リリースタイムラインに基づいて使用さ�
 
 すべてのAEM Forms API は、次の 2 つの主な部分に分かれています。
 
-* [&#x200B; アダプティブフォーム配信およびランタイム API](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
+* [ アダプティブフォーム配信およびランタイム API](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
 
 * [AEM Forms通信 API](#aem-forms-communications-apis)
 
@@ -55,7 +55,7 @@ Forms API によって、リリースタイムラインに基づいて使用さ�
 
 通信 API は、ドキュメント中心の操作の主な焦点です。
 
-次の表に、すべての [AEM Forms Communications API と &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/) サポートされる認証方法および実行モデルを示します。
+次の表に、すべての [AEM Forms Communications API と ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/) サポートされる認証方法および実行モデルを示します。
 
 #### ドキュメント生成 API
 
@@ -185,4 +185,4 @@ Forms API によって、リリースタイムラインに基づいて使用さ�
 >* [アダプティブフォームおよび通信 API 用のAEM Forms as a Cloud Service アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [通信処理 - 同期 API](/help/forms/aem-forms-cloud-service-communications.md)
 >* [通信処理 - バッチ API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
->* [&#x200B; 通信処理 – オンデマンド API](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+>* [Forms Communications API - チュートリアル ](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

@@ -5,9 +5,9 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: e2716b7f9612d5769c422a0fc2915a604ea40de5
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '2772'
+source-wordcount: '2789'
 ht-degree: 94%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 94%
 
 > **バージョンの可用性**
 >
-> * **AEM 6.5**：[AEM ドキュメントサービスの概要](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=ja)
+> * **AEM 6.5**：[AEM ドキュメントサービスの概要](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**：この記事
 
 ## はじめに
@@ -93,7 +93,7 @@ API から提供されるすべてのパラメーター、認証方法および�
 
 >
 >
-> ドキュメント生成 API には、バッチおよび同期出力生成エンドポイントが含まれます。これらの API は、エンドポイントに応じて、JWT または OAuth を使用したサーバー間認証をサポートします。 ドキュメント生成 API について詳しくは、[&#x200B; ここをクリック &#x200B;](/help/forms/aem-forms-communication-api-overview.md#document-generation-apis) してください。
+> ドキュメント生成 API には、バッチおよび同期出力生成エンドポイントが含まれます。これらの API は、エンドポイントに応じて、JWT または OAuth を使用したサーバー間認証をサポートします。 ドキュメント生成 API について詳しくは、[ ここをクリック ](/help/forms/aem-forms-communication-api-overview.md#document-generation-apis) してください。
 
 #### PostScript（PS）、Printer Command Language（PCL）、Zebra Printing Language（ZPL）ドキュメントの作成 {#create-PS-PCL-ZPL-documents}
 
@@ -111,7 +111,7 @@ API から提供されるすべてのパラメーター、認証方法および�
 
 >
 >
-> ドキュメント操作 API は、JWT を使用したサーバー間認証をサポートしています。 ドキュメント操作 API について詳しくは、[&#x200B; ここをクリック &#x200B;](/help/forms/aem-forms-communication-api-overview.md#document-manipulation-apis) してください。
+> ドキュメント操作 API は、JWT を使用したサーバー間認証をサポートしています。 ドキュメント操作 API について詳しくは、[ ここをクリック ](/help/forms/aem-forms-communication-api-overview.md#document-manipulation-apis) してください。
 
 ### 主なドキュメント操作機能
 
@@ -154,7 +154,7 @@ API から提供されるすべてのパラメーター、認証方法および�
 
 >
 >
-> ドキュメント抽出 API は、OAuth を使用したサーバー間認証をサポートしています。 ドキュメント抽出 API について詳しくは、[&#x200B; ここをクリック &#x200B;](/help/forms/aem-forms-communication-api-overview.md#document-extraction-apis) してください。
+> ドキュメント抽出 API は、OAuth を使用したサーバー間認証をサポートしています。 ドキュメント抽出 API について詳しくは、[ ここをクリック ](/help/forms/aem-forms-communication-api-overview.md#document-extraction-apis) してください。
 >
 
 ## ドキュメントのコンバージョン
@@ -171,7 +171,7 @@ PDF ドキュメントを XDP ファイルにコンバージョンします。PD
 
 >
 >
-> ドキュメント変換 API は、OAuth を使用したサーバー間認証をサポートしています。 ドキュメント変換 API について詳しくは、[&#x200B; ここをクリック &#x200B;](/help/forms/aem-forms-communication-api-overview.md#document-conversion-apiss) してください。
+> ドキュメント変換 API は、OAuth を使用したサーバー間認証をサポートしています。 ドキュメント変換 API について詳しくは、[ ここをクリック ](/help/forms/aem-forms-communication-api-overview.md#document-conversion-apiss) してください。
 
 ## ドキュメント保証 {#doc-assurance}
 
@@ -192,7 +192,7 @@ Signature API を使用すると、組織は配布および受信する Adobe PD
 
 >
 >
-> Document Assurance API は、OAuth を使用したサーバー間認証をサポートしています。 Document Assurance API について詳しくは、[&#x200B; ここをクリック &#x200B;](/help/forms/aem-forms-communication-api-overview.md#document-assurance-apis) してください。
+> Document Assurance API は、OAuth を使用したサーバー間認証をサポートしています。 Document Assurance API について詳しくは、[ ここをクリック ](/help/forms/aem-forms-communication-api-overview.md#document-assurance-apis) してください。
 
 ### 暗号化 API
 
@@ -298,10 +298,12 @@ PDF Reader サービスを拡張する様々な使用権限の機能を次に示
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
-## その他のリソース {#see-also}
-
-* [通信処理 - 同期 API](/help/forms/aem-forms-cloud-service-communications.md)
-* [通信処理 - バッチ API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-* [AEM Forms as a Cloud Service アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
-* [API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-* [早期導入プログラム機能](/help/forms/early-access-ea-features.md)
+>[!MORELIKETHIS]
+>
+>* [AEM Forms as a Cloud Service の概要](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [アダプティブフォームおよび通信 API 用のAEM Forms as a Cloud Service アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [通信処理 - 同期 API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [通信処理 - バッチ API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Forms Communications API - チュートリアル ](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+>* [API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
+>* [ 早期導入プログラムの機能 ](/help/forms/early-access-ea-features.md)

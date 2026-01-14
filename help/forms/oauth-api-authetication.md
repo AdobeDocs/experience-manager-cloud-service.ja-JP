@@ -3,10 +3,10 @@ title: OAuth サーバー間認証の設定方法
 description: Adobe Experience Manager Forms as a Cloud Service用に OAuth サーバー間認証を設定する方法を説明します
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 4%
+source-wordcount: '833'
+ht-degree: 7%
 
 ---
 
@@ -19,8 +19,8 @@ OAuth サーバー間認証を使用すると、ユーザーの操作を必要�
 
 開始する前に、次の前提条件が満たされていることを確認してください。
 
-* 使用する環境に固有の [Adobe Developer Consoleへのアクセス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/requirements/access-rights) があることを確認します。
-* [Adobe Admin Consoleでシステム管理者または開発者の役割を割り当て &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions)Adobe Developer Consoleへのアクセスを有効にします。
+* 使用する環境に固有の [Adobe Developer Consoleへのアクセス ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) があることを確認します。
+* [Adobe Admin Consoleでシステム管理者または開発者の役割を割り当て ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions)Adobe Developer Consoleへのアクセスを有効にします。
 
 ## OAuth サーバー間認証を使用してアクセストークンを生成する方法
 
@@ -40,26 +40,26 @@ OAuth サーバー間認証を使用すると、ユーザーの操作を必要�
 1. 「**クイックスタート**」セクションで、「**新規プロジェクトを作成**」をクリックします
 2. デフォルト名で新しいプロジェクトが作成されます
 
-   ![ADC プロジェクトの作成 &#x200B;](/help/forms/assets/adc-home.png)
+   ![ADC プロジェクトの作成 ](/help/forms/assets/adc-home.png)
 
 3. 右上隅の **プロジェクトを編集** をクリックします
 
-   ![&#x200B; プロジェクトを編集 &#x200B;](/help/forms/assets/adc-edit-project.png)
+   ![ プロジェクトを編集 ](/help/forms/assets/adc-edit-project.png)
 
 4. 意味のある名前を指定（例：「formsproject」）
 5. 「**保存**」をクリックします。
 
-   ![&#x200B; プロジェクト名を編集 &#x200B;](/help/forms/assets/adc-edit-projectname.png)
+   ![ プロジェクト名を編集 ](/help/forms/assets/adc-edit-projectname.png)
 
 >[!TAB  既存のプロジェクトに移動するには ]
 
 1. Adobe Developer Consoleで **すべてのプロジェクト** をクリックします
 
-   ![&#x200B; プロジェクトの検索 &#x200B;](/help/forms/assets/search-adc-project.png)
+   ![ プロジェクトの検索 ](/help/forms/assets/search-adc-project.png)
 
 2. プロジェクトを見つけて、クリックして開きます。
 
-   ![&#x200B; プロジェクトの検索 &#x200B;](/help/forms/assets/locate-adc-project.png)
+   ![ プロジェクトの検索 ](/help/forms/assets/locate-adc-project.png)
 
 >[!ENDTABS]
 
@@ -76,38 +76,38 @@ OAuth サーバー間認証を使用すると、ユーザーの操作を必要�
 
 1. 「**API を追加**」をクリックします。
 
-   ![API を追加 &#x200B;](/help/forms/assets/adc-add-api.png)
+   ![API を追加 ](/help/forms/assets/adc-add-api.png)
 
 2. **Forms Communication API** を選択
    1. _API を追加_ ダイアログで、**Experience Cloudでフィルタリングします**
    2. 「Forms Communication API **を選択し** す。
 
-      ![Forms Communication API の追加 &#x200B;](/help/forms/assets/adc-add-forms-api.png)
+      ![Forms Communication API の追加 ](/help/forms/assets/adc-add-forms-api.png)
 
    3. 「**次へ**」をクリックします。
    4. **OAuth サーバー間** 認証方法を選択します
 
-      ![&#x200B; 認証方法の選択 &#x200B;](/help/forms/assets/adc-add-authentication-method.png)
+      ![ 認証方法の選択 ](/help/forms/assets/adc-add-authentication-method.png)
 
 >[!TAB  アダプティブ Forms ランタイム API の場合 ]
 
 1. **「API を追加」をクリック**
 
-   ![API を追加 &#x200B;](/help/forms/assets/adc-add-api.png)
+   ![API を追加 ](/help/forms/assets/adc-add-api.png)
 
 2. **AEM Forms配信およびランタイム API を選択**
    1. _API を追加_ ダイアログで、**Experience Cloudでフィルタリングします**
    2. **AEM Forms配信およびランタイム API」を選択** ます。
-      ![Forms Communication API の追加 &#x200B;](/help/forms/assets/adc-add-runtime-api.png)
+      ![Forms Communication API の追加 ](/help/forms/assets/adc-add-runtime-api.png)
 
    3. 「**次へ**」をクリックします。
-   4. **OAuth サーバー間**&#x200B;認証方式を選択します。
-      ![&#x200B; 認証方法の選択 &#x200B;](/help/forms/assets/adc-add-authentication-method.png)
+   4. **OAuth サーバー間**認証方式を選択します。
+      ![ 認証方法の選択 ](/help/forms/assets/adc-add-authentication-method.png)
 
 >[!ENDTABS]
 
 また、**プロジェクトに追加**/**API** をクリックして、既存のプロジェクトに API と認証方法を追加することもできます\
-![&#x200B; 既存のプロジェクトへの API の追加 &#x200B;](/help/forms/assets/add-api-existing-project.png)
+![ 既存のプロジェクトへの API の追加 ](/help/forms/assets/add-api-existing-project.png)
 
 ### 3.製品プロファイルの追加
 
@@ -129,7 +129,7 @@ OAuth サーバー間認証を使用すると、ユーザーの操作を必要�
 
 2. 「**設定済み API を保存**」をクリックします。API と製品プロファイルがプロジェクトに追加されます
 
-   ![&#x200B; プロジェクト設定の選択 &#x200B;](/help/forms/assets/adc-add-product-profile.png)
+   ![ プロジェクト設定の選択 ](/help/forms/assets/adc-add-product-profile.png)
 
 ### 4.認証情報の生成と保存
 
@@ -169,7 +169,7 @@ Adobe Developer Consoleで手動でアクセストークンを生成します。
    1. プロジェクトの「API」セクションで **「アクセストークンを生成」** ボタンをクリックします
    2. 生成されたアクセストークンのコピー
 
-   ![&#x200B; アクセストークンの生成 &#x200B;](/help/forms/assets/adc-access-token.png)
+   ![ アクセストークンの生成 ](/help/forms/assets/adc-access-token.png)
 
    >[!NOTE]
    >
@@ -228,7 +228,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
 
 ## 次の手順
 
-同期Forms通信 API 用に環境を設定する方法については、[AEM Forms as a Cloud Service通信同期処理 &#x200B;](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md) を参照してください。
+同期Forms通信 API 用に環境を設定する方法については、[AEM Forms as a Cloud Service通信同期処理 ](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md) を参照してください。
 
 
 ## 関連記事
@@ -288,4 +288,10 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-
+>[!MORELIKETHIS]
+>
+>* [AEM Forms as a Cloud Service の概要](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [アダプティブフォームおよび通信 API 用のAEM Forms as a Cloud Service アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [通信処理 - 同期 API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [通信処理 - バッチ API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Forms Communications API - チュートリアル ](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
