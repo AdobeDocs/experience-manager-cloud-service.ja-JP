@@ -59,7 +59,7 @@ Formsas a Cloud Service - コミュニケーションは、スケジュールさ
 
   >[!IMPORTANT]
   >
-  > 詳しくは、[OAuth サーバー間認証 ](/help/forms/oauth-api-authetication.md) および [JWT サーバー間認証 ](/help/forms/jwt-api-authentication.md) を参照してください。
+  > 詳しくは、[OAuth サーバー間認証 &#x200B;](/help/forms/oauth-api-authetication.md) および [JWT サーバー間認証 &#x200B;](/help/forms/jwt-api-authentication.md) を参照してください。
 <!-- 
 
 ### Authenticate a multi-tenant API
@@ -146,7 +146,7 @@ API から提供されるすべてのパラメーター、認証方法および�
 
 >[!NOTE]
 >
-> AEM Forms Communication API を呼び出す詳細な手順については、[OAuth サーバー間認証を使用したAEM Forms Communications API の呼び出し ](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md) を参照してください。
+> AEM Forms Communication API を呼び出す詳細な手順については、[OAuth サーバー間認証を使用したAEM Forms Communications API の呼び出し &#x200B;](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md) を参照してください。
 
 >[!MORELIKETHIS]
 >
@@ -154,4 +154,4 @@ API から提供されるすべてのパラメーター、認証方法および�
 >* [アダプティブフォームおよび通信 API 用のAEM Forms as a Cloud Service アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [通信処理 - 同期 API](/help/forms/aem-forms-cloud-service-communications.md)
 >* [通信処理 - バッチ API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
->* [Forms Communications API - チュートリアル ](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+>* [Forms Communications API - チュートリアル &#x200B;](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
