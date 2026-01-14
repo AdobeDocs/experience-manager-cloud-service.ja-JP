@@ -57,7 +57,7 @@ Experience Manager as a Cloud Service 2020.7.0 の一般的なリリースノー
 
 AEM Commerce が Cloud Service で利用できるようになりました。
 
-詳しくは [AEM Commerce as a Cloud Serviceの概要 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=ja) を参照してください。
+詳しくは [AEM Commerce as a Cloud Serviceの概要 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=ja) を参照してください。
 
 ## コアコンポーネント {#core-components}
 
@@ -69,7 +69,7 @@ AEM Commerce が Cloud Service で利用できるようになりました。
 
 * コアコンポーネントの Accelerated Mobile Pages（AMP）
 サポートが利用できるようになりました。Google のモバイル検索結果からサイトに入るときにページトランジションを瞬時に入れるので、より迅速な顧客体験を作成でき、ユーザーエンゲージメントと SEO が向上します。
-詳しくは、[ コアコンポーネントの AMP サポート ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ja) を参照してください。
+詳しくは、[&#x200B; コアコンポーネントの AMP サポート &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ja) を参照してください。
 
 * [アドビクライアントデータレイヤー](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ja)のバージョン 1.0.2 との互換性。
 
@@ -123,7 +123,7 @@ AEM Commerce が Cloud Service で利用できるようになりました。
 
 ### 新機能 {#what-is-new-foundations}
 
-* [ ログは Splunk アカウントに転送できます ](/help/implementing/developing/introduction/logging.md#splunk-logs) これにより、組織は Splunk への投資を使用できます。
+* [&#x200B; ログは Splunk アカウントに転送できます &#x200B;](/help/implementing/developing/introduction/logging.md#splunk-logs) これにより、組織は Splunk への投資を使用できます。
 
 * [静的な専用 egress IP アドレス](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address)は、Java コードでプログラムされたアウトバウンドトラフィックに割り当てることができます。これは、一部の統合で役立つ場合があります。
 
@@ -139,7 +139,7 @@ Cloud Readiness Analyzer リリース v1.0.2 の新機能と更新点につい�
 
 * 以前のバージョンの CRA を Adobe Experience Manager（AEM）6.1 で実行できませんでした。管理者グループのユーザーに対する明示的なサポートが追加されました。
 
-  詳しくは、[AEM 6.1 への CRA のインストール ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=ja#installing-on-aem61) を参照してください。
+  詳しくは、[AEM 6.1 への CRA のインストール &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=ja#installing-on-aem61) を参照してください。
 
 * 概要レポートに表示される有効期限のタイムスタンプが正しくありませんでした。
 

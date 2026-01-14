@@ -30,13 +30,13 @@ ht-degree: 67%
 
 ## リリースビデオ {#release-video}
 
-追加された機能の概要については、](https://video.tv.adobe.com/v/335580)2021 年 7 月リリースの概要ビデオ[をご覧ください。
+追加された機能の概要については、[&#128279;](https://video.tv.adobe.com/v/335580)2021 年 7 月リリースの概要ビデオをご覧ください。
 
 ## Experience Manager Foundation as a Cloud Service {#foundation}
 
 ### 新機能 {#what-is-new-foundation}
 
-* より柔軟なDispatcher設定：プロジェクトをより簡単に整理できます。 例えば、サイト構造を反映した複数の書き換えルールファイルを含めることができるようになりました。Dispatcher設定を活用できるよう [ 設定する方法など、この柔軟なモードについて ](/help/implementing/dispatcher/disp-overview.md#validation-debug) ご確認ください。
+* より柔軟なDispatcher設定：プロジェクトをより簡単に整理できます。 例えば、サイト構造を反映した複数の書き換えルールファイルを含めることができるようになりました。Dispatcher設定を活用できるよう [&#x200B; 設定する方法など、この柔軟なモードについて &#x200B;](/help/implementing/dispatcher/disp-overview.md#validation-debug) ご確認ください。
 * レプリケーションエージェントの「配布」タブにあるツリーレプリケーション UI は、非推奨（廃止予定）と見なされ、2021 年 9 月 30 日（PT）以降に削除されました。 代替レプリケーション戦略について[ご確認](/help/operations/replication.md#tree-activation)ください。
 * Sling 用 `org.apache.sling.datasource-1.0.4.jar` データソースサポート用バンドルは、機能が古く、顧客に使用されていないので、削除されました。
 
@@ -50,7 +50,7 @@ ht-degree: 67%
 
   ![PDF ビューアを使用した [!DNL Experience Manager] での PDF ファイルのプレビュー](/help/assets/assets/preview-pdf-file-viewer.png)
 
-* リンク共有のダウンロード機能は、非同期ダウンロードを使用してダウンロード速度を上げます。 詳しくは、[ リンク共有を使用して共有されたアセットのダウンロード ](/help/assets/download-assets-from-aem.md#link-share-download) を参照してください。
+* リンク共有のダウンロード機能は、非同期ダウンロードを使用してダウンロード速度を上げます。 詳しくは、[&#x200B; リンク共有を使用して共有されたアセットのダウンロード &#x200B;](/help/assets/download-assets-from-aem.md#link-share-download) を参照してください。
 
   ![ダウンロードインボックス](/help/assets/assets/download-inbox.png)
 
@@ -85,7 +85,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` は、[!DNL Experience Manag
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms}
 
-* 自動フォーム変換サービスを使用して、[ フランス語、ドイツ語、スペイン語のPDF formsをアダプティブフォームに変換 ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=ja#language-specific-meta-model) できるようになりました。
+* 自動フォーム変換サービスを使用して、[&#x200B; フランス語、ドイツ語、スペイン語のPDF formsをアダプティブフォームに変換 &#x200B;](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=ja#language-specific-meta-model) できるようになりました。
 * テンプレートエディターに、アダプティブフォームのコンポーネントに関連するエラーを表示するためのパネルを別途追加しました。 これにより、すべてのアダプティブフォームのエラーが 1 か所に集約されるので、解決に要する時間を短縮できます。
 
 ### [!DNL Forms]プレリリースチャネルで利用できる新機能 {#beta-features-forms}
@@ -99,7 +99,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` は、[!DNL Experience Manag
 
 * **Acroform べースのレコードのドキュメント**：XFA ベースのフォームテンプレート以外にも、[Adobe Acrobat Form PDF（Acroform PDF）](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja) を、レコードドキュメントのテンプレートとして使用することもできます。
 
-* **Microsoft® Azure データストアコネクタ**: [ フォームデータモデルをMicrosoft® Azure ストレージに接続 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html) できるようになりました。 アダプティブフォームデータを取得して、BLOB としてMicrosoft® Azure ストレージに保存できます。
+* **Microsoft® Azure データストアコネクタ**: [&#x200B; フォームデータモデルをMicrosoft® Azure ストレージに接続 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html) できるようになりました。 アダプティブフォームデータを取得して、BLOB としてMicrosoft® Azure ストレージに保存できます。
 
 ## CIF アドオン {#cloud-services-cif}
 
@@ -110,7 +110,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` は、[!DNL Experience Manag
    * オーサリングモードでのステージングされた製品データの視覚的インジケーターにより、今後の変更の可視性が向上
    * コンテンツページとコマースページ用の新しいサイトマップコンポーネント
 
-* 事前定義済みのレコメンデーションまたはオンザフライで作成されたレコメンデーションを使用した [AEM Storefront のAdobe AI を活用した ](https://business.adobe.com/ai/adobe-genai.html)Adobe Commerce AI 製品レコメンデーションのサポート
+* 事前定義済みのレコメンデーションまたはオンザフライで作成されたレコメンデーションを使用した [AEM Storefront のAdobe AI を活用した &#x200B;](https://business.adobe.com/ai/adobe-genai.html)Adobe Commerce AI 製品レコメンデーションのサポート
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
@@ -194,4 +194,4 @@ Cloud Acceleration Manager は、Cloud Service の計画から運用開始まで
 
 >[!NOTE]
 >
-> この [Cloud Acceleration Manager デモビデオ ](https://video.tv.adobe.com/v/335547) をご覧ください。
+> この [Cloud Acceleration Manager デモビデオ &#x200B;](https://video.tv.adobe.com/v/335547) をご覧ください。

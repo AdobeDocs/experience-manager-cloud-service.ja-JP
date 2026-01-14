@@ -18,7 +18,7 @@ ht-degree: 94%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
-[!DNL Adobe Experience Manager Forms] as a Cloud Service は、企業が複雑なデジタルフォームやコミュニケーションを作成、管理、公開、更新しながら、送信データをバックエンドプロセスやビジネスルールと統合しデータを外部データストアに保存するためのクラウドネイティブなソリューションです。[!DNL Adobe Experience Manager as a Cloud Service] を拡張するものです。スケーリング、デプロイメント、環境などのインフラストラクチャについて詳しくは、[ [!DNL Adobe Experience Manager as a Cloud Service] のアーキテクチャの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=ja)を参照してください。
+[!DNL Adobe Experience Manager Forms] as a Cloud Service は、企業が複雑なデジタルフォームやコミュニケーションを作成、管理、公開、更新しながら、送信データをバックエンドプロセスやビジネスルールと統合しデータを外部データストアに保存するためのクラウドネイティブなソリューションです。[!DNL Adobe Experience Manager as a Cloud Service] を拡張するものです。スケーリング、デプロイメント、環境などのインフラストラクチャについて詳しくは、[&#x200B; [!DNL Adobe Experience Manager as a Cloud Service] のアーキテクチャの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=ja)を参照してください。
 
 AEM Forms as a Cloud Service では、デジタル登録とカスタマーコミュニケーションの 2 つの主要なユースケースをサポートしています。次の図は、両方のユースケースでのアーキテクチャを示しています。
 

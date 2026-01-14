@@ -39,7 +39,7 @@ ht-degree: 77%
 
 ### の新機能[!DNL Sites] {#sites-features}
 
-* コンテンツ管理者やコンテンツ作成者が、ヘッドレスのユースケースでのコンテンツフラグメントの管理（公開、非公開、コピー、移動など）、検索/フィルタリング、作成を効率的に行うための新しい [ ユーザーインターフェイス ](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) を使用できるようになりました。
+* コンテンツ管理者やコンテンツ作成者が、ヘッドレスのユースケースでのコンテンツフラグメントの管理（公開、非公開、コピー、移動など）、検索/フィルタリング、作成を効率的に行うための新しい [&#x200B; ユーザーインターフェイス &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) を使用できるようになりました。
 
   ![コンテンツフラグメントコンソール](/help/release-notes/assets/cf-ui.png)
 
@@ -49,7 +49,7 @@ ht-degree: 77%
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-Experience Manager AssetsはAdobe AI 機能を使用し、[ 画像内のカラーを区別して、取り込み時に自動的にタグとして適用する ](/help/assets/color-tag-images.md) ようになりました。 これらのタグを使用すると、画像の色の構成に基づいて、検索エクスペリエンスを強化できます。 画像にタグ付けされるカラーの数を 1 ～ 40 の範囲で設定し、後でそれらのカラーに基づいて画像を検索できます。
+Experience Manager AssetsはAdobe AI 機能を使用し、[&#x200B; 画像内のカラーを区別して、取り込み時に自動的にタグとして適用する &#x200B;](/help/assets/color-tag-images.md) ようになりました。 これらのタグを使用すると、画像の色の構成に基づいて、検索エクスペリエンスを強化できます。 画像にタグ付けされるカラーの数を 1 ～ 40 の範囲で設定し、後でそれらのカラーに基づいて画像を検索できます。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

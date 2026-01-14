@@ -64,7 +64,7 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 
 * 混乱を避けるために、環境の詳細ページのパブリッシュ AEM とパブリッシュ Dispatcher のセグメント行が統合されました。
 
-  ![Dispatcher環境 ](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
+  ![Dispatcher環境 &#x200B;](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
 * `damAssetLucene` インデックスの構造を検証するための新しいコード品質ルールが追加されました。詳しくは、[カスタム DAM Asset Lucene Oak インデックス](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)を参照してください。
 

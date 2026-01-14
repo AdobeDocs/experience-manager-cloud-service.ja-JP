@@ -51,7 +51,7 @@ ht-degree: 64%
 
 ### [!DNL Assets] プレリリースチャネルで利用できる新機能 {#prerelease-features-assets}
 
-Experience Manager AssetsはAdobe AI 機能を使用し、[ 画像内のカラーを区別して、取り込み時に自動的にタグとして適用する ](/help/assets/color-tag-images.md) ようになりました。 これらのタグを使用すると、画像の色の構成に基づいて、検索エクスペリエンスを強化できます。 画像にタグ付けされるカラーの数を 1 ～ 40 の範囲で設定し、後でそれらのカラーに基づいて画像を検索できます。
+Experience Manager AssetsはAdobe AI 機能を使用し、[&#x200B; 画像内のカラーを区別して、取り込み時に自動的にタグとして適用する &#x200B;](/help/assets/color-tag-images.md) ようになりました。 これらのタグを使用すると、画像の色の構成に基づいて、検索エクスペリエンスを強化できます。 画像にタグ付けされるカラーの数を 1 ～ 40 の範囲で設定し、後でそれらのカラーに基づいて画像を検索できます。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
