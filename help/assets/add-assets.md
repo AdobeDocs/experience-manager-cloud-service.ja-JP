@@ -4,8 +4,8 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 967923c621774bcbda65bac9428eaaf18a99a9cc
-workflow-type: ht
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+workflow-type: tm+mt
 source-wordcount: '3177'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] へのデジタルアセットの追加 {#add-assets-to-experience-manager}
 
-[!DNL Adobe Experience Manager Assets] は、様々な種類のデジタルアセットを様々なソースから受け取ります。バイナリと作成されたレンディションを格納し、様々なワークフローや [!DNL Adobe Sensei] サービスを使用してアセット処理を実行し、様々な面にわたる多数のチャネルを通じて配布できます。
+[!DNL Adobe Experience Manager Assets] は、様々な種類のデジタルアセットを様々なソースから受け取ります。バイナリと作成されたレンディションを格納し、様々なワークフローや [!DNL Adobe AI] サービスを使用してアセット処理を実行し、様々な面にわたる多数のチャネルを通じて配布できます。
 
 [!DNL Adobe Experience Manager] は、アップロードされたデジタルファイルのバイナリコンテンツを、リッチメタデータ、スマートタグ、レンディションおよびその他のデジタルアセット管理（DAM）サービスで強化します。画像、ドキュメント、生の画像ファイルなど、様々な種類のファイルを、ローカルフォルダーまたはネットワークドライブから [!DNL Experience Manager Assets] にアップロードできます。
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 | [アップロード API](#upload-using-apis) | アップロード中の動的な決定。 | 開発者 |
 | [[!DNL Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja) | 容量の少ないアセットの取り込み（移行は除く）。 | 管理者、マーケター |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) | クリエイティブやマーケターが、サポートされる [!DNL Creative Cloud] デスクトップアプリ内でアセットを操作する場合に役立ちます。 | クリエイティブ、マーケター |
-| [アセット一括取得ツール](#asset-bulk-ingestor) | 大規模な移行や、不定期に行われる一括取得に推奨。サポートされるデータストアに対してのみ。 | 管理者、デベロッパー |
+| [アセット一括取得ツール](#asset-bulk-ingestor) | 大規模な移行や、不定期に行われる一括取り込みに推奨。サポートされるデータストアに対してのみ。 | 管理者、デベロッパー |
 
 ## アセットのアップロード {#upload-assets}
 
@@ -130,23 +130,23 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ## アセットの一括アップロード {#bulk-upload}
 
-一括アセット取得機能を使用すると、多数のアセットを効率的に処理できます。ただし、大規模な取得は、ファイルの大量ダンプやカジュアルな移行のためだけではありません。大規模な取得をビジネス目的に役立ち効率的な意味のあるプロジェクトにするためには、移行を計画し、アセット組織をキュレートしてください。すべての取得は異なるため、一般化するのではなく、リポジトリーの構成やビジネスニーズに応じた要素を計算に入れます。次に、一括取得の計画と実行に関する包括的な提案を示します。
+一括アセット取得機能を使用すると、多数のアセットを効率的に処理できます。ただし、大規模な取り込みは、ファイルの大量ダンプやカジュアルな移行のためだけではありません。大規模な取り込みをビジネス目的に役立ち効率的な意味のあるプロジェクトにするためには、移行を計画し、アセット組織をキュレートしてください。すべての取り込みは異なるため、一般化するのではなく、リポジトリの構成やビジネスニーズに応じた要素を計算に入れます。次に、一括取り込みの計画と実行に関する包括的な提案を示します。
 
-* アセットのキュレーション：DAM に必要でないアセットを削除します。未使用、未サポート、または重複するアセットの削除を検討してください。このようなハウスキーピングにより、転送されるデータや取得されるアセットの量が減り、取得時間が短縮されます。
+* アセットのキュレーション：DAM に必要でないアセットを削除します。未使用、未サポート、または重複するアセットの削除を検討してください。このようなハウスキーピングにより、転送されるデータや取り込むアセットの量が減り、取り込み時間が短縮されます。
 * アセットの整理：ファイルサイズ、ファイル形式、使用例、優先度など、論理的な順序でコンテンツを編成することを検討してください。一般に、サイズが大きく複雑なファイルは、より多くの処理が必要になります。サイズの大きいファイルは、ファイルサイズフィルターオプション（以下で説明）を使用して個別に取得することも検討できます。
-* 分割の調整：取得を複数の一括取得プロジェクトに分割することを検討してください。これにより、コンテンツを迅速に表示し、必要に応じて取得を更新できます。例えば、処理負荷の高いアセットをピーク以外の時間帯に取得したり、複数のチャンクに分けて徐々に取得したりすることができます。ただし、それほど処理を行う必要のない、小さくシンプルなアセットは一度に取得することができます。
+* 分割の調整：取り込みを複数の一括取り込みプロジェクトに分割することを検討してください。これにより、コンテンツを迅速に表示し、必要に応じて取り込みを更新できます。例えば、処理負荷の高いアセットをピーク以外の時間帯に取得したり、複数のチャンクに分けて徐々に取得したりすることができます。ただし、それほど処理を行う必要のない、小さくシンプルなアセットは一度に取得することができます。
 
 アップロードするファイル数を増やすには、次のいずれかの方法を使用します。[使用例とメソッド](#upload-methods-comparison)も参照してください。
 
 * [アセットアップロード API](developer-reference-material-apis.md#asset-upload)：必要に応じて、API を活用したカスタムアップロードスクリプトまたはツールを使用して、アセットの処理（メタデータの翻訳やファイル名の変更など）を追加します。
 * [[!DNL Experience Manager] デスクトップアプリ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja)：ローカルファイルシステムからアセットをアップロードするクリエイティブの専門家やマーケターに役立ちます。ローカルで使用可能なネストされたフォルダーをアップロードするために使用します。
-* [一括取得ツール](#asset-bulk-ingestor)：大量のアセットを取得する場合、不定期に取得するためや [!DNL Experience Manager] をデプロイ時に最初に取得するために使用します。
+* [一括取り込みツール](#asset-bulk-ingestor)：大量のアセットを取り込む場合、不定期に取り込むためや [!DNL Experience Manager] をデプロイ時に最初に取り込むために使用します。
 
 ### アセット一括読み込みツール {#asset-bulk-ingestor}
 
 このツールは、Azure または S3 データストアからのアセットの大規模な取り込みに使用する目的で管理者グループにのみ提供されます。設定と取り込みの手順を紹介するビデオを参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/341389/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 次の図は、データストアから Experience Manager にアセットを取り込む際の様々な段階を示しています。
 
@@ -315,7 +315,7 @@ Following are the file naming conventions that are applied while uploading asset
 
 1. 一括読み込み設定を作成します。
 1. 設定を選択し、ツールバーの「**[!UICONTROL スケジュール]**」を選択します。
-1. 1 回限りの取得を設定するか、1 時間ごと、1 日ごと、または 1 週間ごとのスケジュールを設定します。「**[!UICONTROL 送信]**」をクリックします。
+1. 1 回限りの取り込みを設定するか、1 時間ごと、1 日ごと、または 1 週間ごとのスケジュールを設定します。「**[!UICONTROL 送信]**」をクリックします。
 
    ![一括取得ジョブのスケジュール](assets/bulk-ingest-schedule1.png)
 
@@ -326,13 +326,13 @@ Following are the file naming conventions that are applied while uploading asset
 
 #### 一括読み込みツールの実行 {#run-bulk-import-tool}
 
-[一括読み込みツールを設定](#configure-bulk-ingestor-tool)し、オプションで[一括読み込みツールの設定を管理](#manage-bulk-import-configuration)した後、設定ジョブを実行してアセットの一括取得を開始できます。
+[一括読み込みツールを設定](#configure-bulk-ingestor-tool)し、オプションで[一括読み込みツールの設定を管理](#manage-bulk-import-configuration)した後、設定ジョブを実行してアセットの一括取り込みを開始できます。
 
 一括読み込みプロセスを開始するには、**[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL 一括読み込み]**&#x200B;に移動し、「[一括読み込み設定](#configure-bulk-ingestor-tool)」を選択して、「**[!UICONTROL 実行]**」をクリックします。もう一度「**[!UICONTROL 実行]**」をクリックして確認します。
 
 Experience Manager は、ジョブのステータスを「**処理中**」、およびジョブが正常に完了すると「**成功**」に更新します。読み込んだアセットを Experience Manager で表示するには、「**アセットを表示**」をクリックします。
 
-ジョブの進行中に、設定を選択し、「**停止**」をクリックして一括取得プロセスを停止することもできます。もう一度「**実行**」をクリックして、プロセスを再開します。「**ドライラン**」をクリックして、まだ読み込みが保留されているアセットの詳細を確認することもできます。
+ジョブの進行中に、設定を選択し、「**停止**」をクリックして一括取り込みプロセスを停止することもできます。もう一度「**実行**」をクリックして、プロセスを再開します。「**ドライラン**」をクリックして、まだ読み込みが保留されているアセットの詳細を確認することもできます。
 
 #### 実行後のジョブの管理 {#manage-jobs-after-execution}
 

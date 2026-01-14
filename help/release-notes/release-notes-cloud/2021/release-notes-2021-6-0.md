@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 リ�
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1432'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -64,7 +64,7 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 
 * 混乱を避けるために、環境の詳細ページのパブリッシュ AEM とパブリッシュ Dispatcher のセグメント行が統合されました。
 
-  ![Dispatcher環境 &#x200B;](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
+  ![Dispatcher環境 ](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
 * `damAssetLucene` インデックスの構造を検証するための新しいコード品質ルールが追加されました。詳しくは、[カスタム DAM Asset Lucene Oak インデックス](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)を参照してください。
 
@@ -102,7 +102,7 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 * ビュー設定が強化され、デフォルトのビューとデフォルトの並べ替えパラメーターを選択できるようになりました。
 * Linkshare のダウンロード機能は、非同期ダウンロードを使用してダウンロード速度を向上させます。
 * プロパティの述語に基づいて、フォルダーを検索およびフィルタリングできます。
-* [!DNL Experience Manager Assets] に [!DNL Adobe Document Cloud] を使用したPDFビューアが埋め込まれ、サポートされているドキュメントをプレビューできます。 この機能を使用すると、複雑な処理を行わずに、PDF ファイルやその他の複数ページファイルをプレビューできます。これにより、[!DNL Experience Manager] 6.5 との機能の等価性が向上します。
+* [!DNL Experience Manager Assets] に [!DNL Adobe Document Cloud] を使用したPDF ビューアが埋め込まれ、サポートされているドキュメントをプレビューできます。 この機能を使用すると、複雑な処理を行わずに、PDF ファイルやその他の複数ページファイルをプレビューできます。これにより、[!DNL Experience Manager] 6.5 との機能の等価性が向上します。
 
 ### [!DNL Assets] で修正されたバグ  {#bugs-fixed-assets}
 
@@ -126,7 +126,7 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 * ソース PDF フォーム内の論理セクションを自動的に検出し、対応するアダプティブフォームパネルに変換する際の速度と精度が向上しました。
 * PDF または XDP ファイルをフォルダー間で移動する移動アクションが追加されました。
 
-### [!DNL Forms] のベータ版機能 {#what-is-new-forms-prerelease}
+### [!DNL Forms] のベータ版機能  {#what-is-new-forms-prerelease}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**：通信 API を使用すると、XDP テンプレートと XML データを組み合わせて様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
    * テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成する。
@@ -170,21 +170,21 @@ AEM Screens as a Cloud Service のリリース日は 2021 年 6 月 24 日です
 * コンテンツフラグメントの新しい CIF 製品およびカテゴリ参照データタイプ（製品／カテゴリ選択ツール UI のサポートを含む）製品／カテゴリ選択ツール UI のサポート)
 * 新しいコマースコンテンツフラグメントコアコンポーネント
 * AEM バックエンドでフルテキストコマース検索をサポート
-* コマースコアコンポーネントは、Adobe Commerce Sensei Recs のデータ収集をサポートします。
+* Commerce コアコンポーネントは、Adobe Commerce AI Recs のデータ収集をサポートします
 * カテゴリページの SEO に対応する URL の改善
 * サイト／設定ごとのカスタム HTTP ヘッダーのサポート
 
-## コンテンツ転送ツール {#content-transfer-tool}
+## コンテンツトランスファーツール {#content-transfer-tool}
 
 ### リリース日 {#release-date-ctt-latest}
 
-コンテンツ転送ツール v1.5.4 のリリース日は 2021 年 6 月 28 日です。
+コンテンツトランスファーツール v1.5.4 のリリース日は 2021 年 6 月 28 日です。
 
 ### 新機能 {#what-is-new-ctt-latest}
 
 * CTT で使用するためのオプションの[コピー前](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja)手順のサポートが追加されました。コピー前手順を使用すると、ソース AEM インスタンスが Amazon S3 または Azure Blob Storage データストアを使用するように設定されている場合に、コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に高速化できます。
 
-* CTT に追加されたガードレールは、取得の停止を防ぎ、取得段階で重要なポイントに到達したデータが破損する可能性を防ぎます。
+* CTT に追加されたガードレールは、取り込みの停止を防ぎ、取り込み段階で重要なポイントに到達したデータが破損する可能性を防ぎます。
 
 * トラブルシューティングに役立つように抽出ログの記述を増やしました。
 

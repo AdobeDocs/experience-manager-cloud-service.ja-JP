@@ -4,7 +4,7 @@ description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 の�
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 feature: Release Information
 role: Admin
-source-git-commit: 9af552b17421e320b6139d6bd6ecaa42428de397
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 90%
@@ -25,13 +25,13 @@ ht-degree: 90%
 
 * **[コアコンポーネント 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)**：Adobe Experience Manager as a Cloud Service には、コアコンポーネントの最新リリースへの自動アップデート機能があります。リリース 2.12.0 には、最新の機能改善がコミュニティからの貢献として含まれています。例えば、[新しい POST フォームハンドラー](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html?lang=ja#post-data)、カスタムの CSS タグ、JavaScript タグ、メタデータタグを[コンテキスト対応の設定](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=ja#context-aware-loading)で組み込む機能、カスタムコンポーネントで Adobe データレイヤーとの統合を簡単に行うための [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html?lang=ja#enabling-custom-components) ユーティリティなどです。リリース 2.12.0 の[変更点の一覧](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0)を参照してください。
 
-* **[プロジェクトアーキタイプ 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)**：新規 Experience Manager プロジェクトを開始する際の推奨される基盤が改善されました。新しい [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ja)、[AMP でサイトを配信 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ja) するオプション、プロジェクトの CSS/JS を追加するための新しい [&#x200B; 拡張ポイント &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=ja#context-aware-loading) が含まれるようになりました。
+* **[プロジェクトアーキタイプ 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)**：新規 Experience Manager プロジェクトを開始する際の推奨される基盤が改善されました。新しい [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ja)、[AMP でサイトを配信 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ja) するオプション、プロジェクトの CSS/JS を追加するための新しい [ 拡張ポイント ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=ja#context-aware-loading) が含まれるようになりました。
 
 * **[ContextHub フォルダー](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**：ContextHub オファーターゲティング機能に使用するオーディエンスセグメントを容易に整理、検索、選択するためのオーディエンスフォルダーを作成できます。
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-* **[!DNL Adobe Sensei]を活用したビデオスマートタグ付け**：AI モデルを適用してオブジェクトおよびアクション固有のタグのビデオコンテンツを分析することで、DAM ユーザーはタグ付けに費やす時間を短縮し、公開された豊富な情報の利用に割く時間を増やすことができます。その結果、顧客に適したエクスペリエンスを提供できるようになります。[ビデオアセットのスマートタグ](/help/assets/smart-tags-for-videos.md)を参照してください。
+* **[!DNL Adobe AI]を活用したビデオスマートタグ付け**：AI モデルを適用してオブジェクトおよびアクション固有のタグのビデオコンテンツを分析することで、DAM ユーザーはタグ付けに費やす時間を短縮し、公開された豊富な情報の利用に割く時間を増やすことができます。その結果、顧客に適したエクスペリエンスを提供できるようになります。[ビデオアセットのスマートタグ](/help/assets/smart-tags-for-videos.md)を参照してください。
 
 * **Brand Portal の機能強化**：次の新機能などが [!DNL Brand Portal] で利用できます。詳しくは、[[!DNL Brand Portal] リリースノート](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html?lang=ja)を参照してください。
 
@@ -56,7 +56,7 @@ ht-degree: 90%
 
 ### [!DNL Forms] のベータ版機能  {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ja) を使用すると、テンプレートと XML データを組み合わせて、様々な形式のドキュメントを生成できます。このサービスを使用すると、同期および一括モードでドキュメントを生成できます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) を使用すると、テンプレートと XML データを組み合わせて、様々な形式のドキュメントを生成できます。このサービスを使用すると、同期および一括モードでドキュメントを生成できます。
 
 ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てにメールを送信します。
 
@@ -64,9 +64,9 @@ ht-degree: 90%
 
 ### 新機能 {#what-is-new-commerce}
 
-* 最新のCIF コアコンポーネントのバージョン v1.4.0 を含んだCIF Venia 参照サイト 2020.10.2 をリリースしました。詳しくは、[CIF Venia 参照サイト &#x200B;](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) を参照してください。
+* 最新のCIF コアコンポーネントのバージョン v1.4.0 を含んだCIF Venia 参照サイト 2020.10.2 をリリースしました。詳しくは、[CIF Venia 参照サイト ](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) を参照してください。
 
-* CIF コアコンポーネント v1.4.0 をリリースしました。詳しくは、[CIF コアコンポーネント &#x200B;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) を参照してください。
+* CIF コアコンポーネント v1.4.0 をリリースしました。詳しくは、[CIF コアコンポーネント ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) を参照してください。
 
 ### バグの修正 {#bug-fixes-commerce}
 
@@ -117,9 +117,9 @@ Experience Manager as a Cloud Service 2020.10.0 の Cloud Manager のリリー�
 
 * ワークフロータイトル、ワークフローモデル、ステータス、イニシエーター、ペイロードパス、開始日に基づいてワークフローインスタンスを検索できるようになりました。詳しくは、[ワークフローインスタンスの検索](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html?lang=ja)を参照してください。
 
-## コンテンツ転送ツール {#content-transfer-tool}
+## コンテンツトランスファーツール {#content-transfer-tool}
 
-[コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja)のリリース v1.1.12 の新機能と更新点について説明します。
+[コンテンツトランスファーツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja)のリリース v1.1.12 の新機能と更新点について説明します。
 
 ### 新機能 {#what-is-new-ctt}
 
@@ -127,4 +127,4 @@ Experience Manager as a Cloud Service 2020.10.0 の Cloud Manager のリリー�
 
 ### バグの修正 {#ctt-bug-fixes}
 
-* 移行セットに含まれているパスのファイル名が部分的に似ている場合、コンテンツ転送ツールがコンテンツファイルをスキップしていました。
+* 移行セットに含まれているパスのファイル名が部分的に似ている場合、コンテンツトランスファーツールがコンテンツファイルをスキップしていました。

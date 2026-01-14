@@ -9,10 +9,10 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '4049'
-ht-degree: 100%
+source-wordcount: '4048'
+ht-degree: 97%
 
 ---
 
@@ -111,7 +111,7 @@ SDK コンポーネント API について詳しくは、[ビューア SDK チ�
 アセットを効率的に整理するには、コンピューター上でファイルを整理する際と同様に、アセットをフォルダーに分類する必要があります。これらのフォルダー内での適切な命名、サブフォルダーの構造化、ファイル管理は、アセット処理を効率的に行う上で重要です。体系的な命名規則とメタデータ手法を実装すると、デジタルアセットリポジトリのユーティリティを最大限に活用できます。
 詳しくは、[フォルダー内のアセットの整理](/help/assets/organize-assets.md#organize-using-folders)を参照してください。
 * **タグを使用したアセットの整理：**
-アセットにタグを付けると、検索性、コレクションの作成、検索ランキングが向上します。Adobe Sensei の AI は、正確なタグ付けを行うために自己学習アルゴリズムを採用しており、迅速なアセット取得を可能にします。また、Adobe Sensei は、説明的な自動タグ付けを使用してアセット管理を簡素化し、カスタムタグを含む関連タグを認識してアセットに割り当てます。
+アセットにタグを付けると、検索性、コレクションの作成、検索ランキングが向上します。Adobe AI には、正確なタグ付けのための自己学習アルゴリズムが採用されており、アセットをすばやく取得できます。 また、Adobe AI は、カスタムタグを含む関連するタグを認識してアセットに割り当てるため、説明的な自動タグ付けでアセット管理をシンプル化できます。
 詳しくは、[タグを使用したアセットの整理](/help/assets/organize-assets.md#use-tags-to-organize-assets)を参照してください。
 * **アセットをコレクションとして整理：**
 Dynamic Media を Experience Manager Assets と併用すると、ユーザー間でアセットコレクションを効率的に作成、編集、共有できます。静的なリストや動的な検索ベースのコンパイルなど、様々なコレクションタイプを設定できます。これらのコレクションタイプは、カスタマイズ可能なアクセス権と編集権を使用して、様々な場所で共有できます。
@@ -150,9 +150,9 @@ Dynamic Media で画像プリセットを定期的に使用すると、画像の
 
 **ビジネスケース：***画像やビデオの主な POI が、デバイス間でフォーカスされたままであることを確認します。*
 
-スマート切り抜きは、アドビの AI および機械学習フレームワークである Adobe Sensei を使用して画像やビデオの切り抜きを自動化する Dynamic Media の機能です。画像やビデオ内の主なサブジェクトや POI をインテリジェントに検出し、フォーカスします。このインテリジェンスにより、デスクトップコンピューターやモバイルデバイスの様々な画面サイズ間で焦点位置が維持されます。
+スマート切り抜きは、Adobe AI、Adobeの AI および機械学習フレームワークを使用して、画像やビデオの切り抜きを自動化する Dynamic Media の機能です。 画像やビデオ内の主なサブジェクトや POI をインテリジェントに検出し、フォーカスします。このインテリジェンスにより、デスクトップコンピューターやモバイルデバイスの様々な画面サイズ間で焦点位置が維持されます。
 
-ベストプラクティスとしては、スマート切り抜きを使用して画像プロファイルを作成することをお勧めします。プロファイルでは、様々な画面サイズを定義し、Adobe Sensei に残りの処理を任せることで、画像やビデオが常に閲覧者のデバイスに合わせて最適化されるようにすることができます。
+ベストプラクティスとしては、スマート切り抜きを使用して画像プロファイルを作成することをお勧めします。プロファイルでは、様々な画面サイズを定義し、残りはAdobe AI に任せることで、画像やビデオを常にビューアのデバイスに最適化することができます。
 
 詳しくは、[AEM Assets Dynamic Media でのスマート切り抜きの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)（6 分 35 秒）と[ビデオに対する Dynamic Media スマート切り抜きの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video)（6 分 22 秒）をご覧ください。
 

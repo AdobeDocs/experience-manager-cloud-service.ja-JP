@@ -4,16 +4,16 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 リ�
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 81%
+source-wordcount: '632'
+ht-degree: 77%
 
 ---
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の 2022.6.0 リリースノート {#release-notes}
 
-次の節では、[!DNL Experience Manager]as a Cloud Serviceの 2022.6.0 バージョンの機能リリースノートの概要を説明します。
+以下の節では、as a Cloud Serviceの 2022.6.0 バージョンの機能リリースノートの概要 [!DNL Experience Manager] 説明します。
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ ht-degree: 81%
 
 ### の新機能[!DNL Sites] {#sites-features}
 
-* コンテンツ管理者やコンテンツ作成者が、ヘッドレスのユースケースでのコンテンツフラグメントの管理（公開、非公開、コピー、移動など）、検索/フィルタリング、作成を効率的に行うための新しい [&#x200B; ユーザーインターフェイス &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) を使用できるようになりました。
+* コンテンツ管理者やコンテンツ作成者が、ヘッドレスのユースケースでのコンテンツフラグメントの管理（公開、非公開、コピー、移動など）、検索/フィルタリング、作成を効率的に行うための新しい [ ユーザーインターフェイス ](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) を使用できるようになりました。
 
   ![コンテンツフラグメントコンソール](/help/release-notes/assets/cf-ui.png)
 
@@ -49,7 +49,7 @@ ht-degree: 81%
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-Experience Manager Assets は Adobe Sensei AI 機能を使用して、[画像内の色を区別し、取り込み時に自動的にタグとして適用するようになりました](/help/assets/color-tag-images.md)。 これらのタグを使用すると、画像の色の構成に基づいて、検索エクスペリエンスを強化できます。 画像にタグ付けされるカラーの数を 1 ～ 40 の範囲で設定し、後でそれらのカラーに基づいて画像を検索できます。
+Experience Manager AssetsはAdobe AI 機能を使用し、[ 画像内のカラーを区別して、取り込み時に自動的にタグとして適用する ](/help/assets/color-tag-images.md) ようになりました。 これらのタグを使用すると、画像の色の構成に基づいて、検索エクスペリエンスを強化できます。 画像にタグ付けされるカラーの数を 1 ～ 40 の範囲で設定し、後でそれらのカラーに基づいて画像を検索できます。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

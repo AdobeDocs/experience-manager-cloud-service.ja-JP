@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '3615'
-ht-degree: 100%
+source-wordcount: '3614'
+ht-degree: 99%
 
 ---
 
@@ -98,7 +98,7 @@ CDN システムでは、web コンテンツはインターネット上の web �
 
 ### スマートイメージング
 
-Dynamic Media はすでに優れた働きをしています。これには、CDNを利用したアセットの最適化や、各アセットのモバイルやデスクトップシステムでの迅速な読込みが含まれます。これを実現するために、Dynamic Media では、画像の品質を定義するために画像プリセットが使用されています。また、送信する画像のタイプや鮮明さなど、エクスペリエンスやページの様々な要素も定義されます。
+Dynamic Media は既に優れた働きをしています。これには、CDN を利用したアセットの最適化や、各アセットのモバイルやデスクトップシステムでの迅速な読込みが含まれます。これを実現するために、Dynamic Media では、画像の品質を定義するために画像プリセットが使用されています。また、送信する画像のタイプや鮮明さなど、エクスペリエンスやページの様々な要素も定義されます。
 
 さらに、Dynamic Media には、画像プリセット以外にさらに価値を付加するために、_スマートイメージング_&#x200B;も用意されています。
 
@@ -201,7 +201,7 @@ Dynamic Media の解決策は、1 つのプライマリビデオファイルを�
 
 | **問題** | **Dynamic Media の解決策** |
 |---|---|
-| 画像やビデオを手作業で制作、測定、カットして、重要な部分を強調したり、あらゆる画面サイズやデバイスで適切に表示できるようにするには、時間と労力がかかる。 | Dynamic Media の Adobe Sensei AI 機能の 1 つであるスマート切り抜きを使用して、どのような画像やビデオでも重要な部分を自動的に検出し、切り抜いて維持管理します。 |
+| 画像やビデオを手作業で制作、測定、カットして、重要な部分を強調したり、あらゆる画面サイズやデバイスで適切に表示できるようにするには、時間と労力がかかる。 | Adobe AI 機能の 1 つである Dynamic Media のスマート切り抜きを使用して、あらゆる画像やビデオの焦点位置を自動検出し、切り抜いて維持管理します。 |
 | 本来ならインパクトの大きいエクスペリエンスの作成に費やすことができる時間が浪費される。 | 画面のサイズに関係なく、目的の部分をキャプチャします。 |
 | エクスペリエンスやデバイスごとに「使い捨て」のアセットが作成される。 | 煩雑な手作業をなくし、あらゆるデバイスや画面で整って見える高画質かつ高速読み込み可能な画像やビデオを配信します。 |
 
@@ -285,7 +285,7 @@ _Dynamic Media Help topics_
 _Dynamic Media チュートリアル_
 
 * [Experience Manager Assets での Dynamic Media の使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=pt-BR)
-* [Adobe Experience Manager コンテンツライブラリ](https://experienceleague.adobe.com/ja?lang=ja#recommended/solutions/experience-manager)（_Dynamic Media_ で検索）
+* [Adobe Experience Manager コンテンツライブラリ](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/experience-manager)（_Dynamic Media_ で検索）
 
 _Dynamic Media ビューア_
 

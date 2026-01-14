@@ -3,8 +3,8 @@ title: コンテンツハブでアセットを検索する
 description: ' [!DNL Content Hub] でのアセットの検索方法について学ぶ'
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 46c127fd56949281da7211225d25a40c6a867bbb
-workflow-type: ht
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 100%
 
@@ -140,7 +140,7 @@ ht-degree: 100%
      </tr>
      <tr>
       <td> Colors </td>
-      <td> Helps you search assets using colors that are automatically identified in an asset using Adobe's Sensei AI capabilities.</td>
+      <td> Helps you search assets using colors that are automatically identified in an asset using Adobe's AI capabilities.</td>
       <td>NA</td>
      </tr>  
     </tbody>

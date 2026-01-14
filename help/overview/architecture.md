@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service のアーキテクチ�
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
-source-wordcount: '2711'
-ht-degree: 100%
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+workflow-type: tm+mt
+source-wordcount: '2710'
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >id="intro_aem_cloudservice_architecture"
 >title="AEM as a Cloud Service アーキテクチャの概要"
 >abstract="ここでは、AEM as a Cloud Service の新しいアーキテクチャを概観し、変更点を理解します。AEM は、画像の数が変化する動的アーキテクチャを実現したので、時間をかけてクラウドアーキテクチャを理解することが重要です。"
->additional-url="https://video.tv.adobe.com/v/346183?captions=jpn" text="アーキテクチャの概要"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="アーキテクチャの概要"
 
 Adobe Experience Manager（AEM）as a Cloud Service は、影響の大きいエクスペリエンスを作成および管理するための、構成可能な一連のサービスを提供します。
 
@@ -47,23 +47,23 @@ AEM Sites、AEM Assets、AEM Forms の各ソリューションを使用してプ
 
 AEM as a Cloud Service で使用できる[環境](/help/implementing/cloud-manager/manage-environments.md)には、次の 4 種類があります。
 
-* 実稼動環境：
+* 本番環境：
 
-   * 実稼動環境は、実務担当者向けのアプリケーションをホストし、ライブエクスペリエンスを実行します。
+   * 本番環境は、実務担当者向けのアプリケーションをホストし、ライブエクスペリエンスを実行します。
 
 * ステージ環境：
 
-   * ステージ環境は、通常、実稼動環境に 1:1 で結び付いています。
-   * ステージ環境は、主に、アプリケーションに対する変更が実稼動環境にプッシュされる前の自動テスト用に設計されています。
+   * ステージ環境は、通常、本番環境に 1:1 で結び付いています。
+   * ステージ環境は、主に、アプリケーションに対する変更が本番環境にプッシュされる前の自動テスト用に設計されています。
       * これは、メンテナンスアップデートの一環としてアドビによって開始される変更や、コードのデプロイメントによって開始される変更とは独立しています。
       * また、コードをデプロイする場合は、手動でテストを実行することもできます。
    * 通常、ステージ環境のコンテンツは、セルフサービスのコンテンツコピー機能を使用して、実稼動コンテンツと同期を維持します。
    * ステージ環境でパフォーマンスとセキュリティのテストを実施します。規模は実稼動と同じです。
 * 開発環境：
-   * 開発環境では、ステージ環境および実稼動環境と同じランタイム条件で開発者が AEM アプリケーションを実装およびテストできます。
+   * 開発環境では、ステージ環境および本番環境と同じランタイム条件で開発者が AEM アプリケーションを実装およびテストできます。
    * 変更は、デプロイメントパイプラインを通じて行われ、実稼動デプロイメントパイプラインと同じコード品質とセキュリティゲートを使用できます。
    * 開発環境は、ステージング環境や実稼動環境と同じ規模ではないので、パフォーマンスおよびセキュリティのテストの実行には使用しないでください。
-* 迅速な開発環境（RDE）：
+* 高速開発環境（RDE）：
    * RDE 環境を使用すると、通常の開発環境で見つかる正式なデプロイメントパイプラインを経ずに、新しいコードや既存のコードを RDE インスタンスにデプロイする際に、迅速な開発イテレーションを実行できます。
 
 ### Edge 配信サービス {#logical-architecture-edge-delivery-services}
@@ -126,7 +126,7 @@ web コンテンツを管理するための web ベースのインターフェ�
    * AEM オーサー層で使用されます。
    * JCR 準拠のコンテンツリポジトリ（Apache Oak テクノロジーによって実装されている）のクラウドベースのインスタンスです。
    * コンテンツの永続性は、主に BLOB ベースのクラウドストレージに基づいています。
-* CI／CD サービス：
+* CI/CD サービス：
    * AEM 環境へのデプロイパイプラインの管理に関する Cloud Manager 機能のサブセットを表します。
 * テストサービス：
    * 実行に使用される基礎となるインフラストラクチャを表します。
@@ -141,7 +141,7 @@ web コンテンツを管理するための web ベースのインターフェ�
 * 運用テレメトリサービス：
    * カスタマーエクスペリエンス（ページビュー数、コア web バイタル、コンバージョンイベントなど）から主要指標を収集し、関連するクエリ（過去 7 日間の特定のドメインの上位ページビュー数など）に対応します。
 * Assets Compute サービス：
-   * アップロードされた画像、ビデオ、ドキュメント（PDF、Adobe Photoshop ファイルなど）の処理を担当します。処理では、Adobe Sensei を使用して画像およびビデオのメタデータ（説明タグや主要な色調など）を抽出し、レンディション（様々なサイズや形式など）を生成し、Adobe Photoshop や Adobe Lightroom API などの API にアクセスできます。
+   * アップロードされた画像、ビデオ、ドキュメント（PDF、Adobe Photoshop ファイルなど）の処理を担当します。Adobe AI を使用すると、画像やビデオのメタデータ（説明タグ、原色など）を抽出し、Adobe Photoshop API やAdobe Lightroom API などの API にアクセスしてレンディション（様々なサイズや形式など）を生成できます。
 * Identity Management サービス（IMS）：
    * 特定の Adobe Experience Cloud アプリケーション（Cloud Manager や AEMオーサー層など）のユーザーとユーザーグループを管理および認証する一元的な場所です。
    * Adobe Admin Console を介してアクセスされます。
@@ -190,7 +190,7 @@ clientlibs について詳しくは、[AEM as a Cloud Service でのクライア
 
 ### デプロイメントパイプライン {#deployment-pipelines}
 
-開発者と管理者は、Cloud Manager を通じて提供される継続的統合／継続的配信（CI／CD）サービスを使用して、AEM as a Cloud Service アプリケーションを管理します。Cloud Manager は、監視、メンテナンス、トラブルシューティング（ログファイルへのアクセスなど）、ライセンスに関する情報もすべて公開します。
+開発者と管理者は、Cloud Manager を通じて提供される継続的統合／継続的配信（CI/CD）サービスを使用して、AEM as a Cloud Service アプリケーションを管理します。Cloud Manager は、監視、メンテナンス、トラブルシューティング（ログファイルへのアクセスなど）、ライセンスに関する情報もすべて公開します。
 
 ![AEM as a Cloud Service - デプロイメントアーキテクチャ](assets/architecture-aem-edge-deployment-pipelines.png "AEM as a Cloud Service - デプロイメントアーキテクチャ")
 
@@ -209,7 +209,7 @@ AEM as a Cloud Service のインスタンスに対する更新はすべて Cloud
 
 これらの自動テストはステージング環境で実行されます。そのため、ステージング環境のコンテンツを実稼動インスタンス上のコンテンツにできる限り近づけることが重要です。
 
-すべてのテストが正常に完了すると、新しいコードが実稼動環境にデプロイされます。
+すべてのテストが正常に完了すると、新しいコードが本番環境にデプロイされます。
 
 ### ローリングアップデート {#rolling-updates}
 

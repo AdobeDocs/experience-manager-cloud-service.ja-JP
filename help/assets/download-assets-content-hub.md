@@ -3,10 +3,10 @@ title: Content Hub からのアセットのダウンロード
 description: 1 つ以上のアセットとそのレンディションをContent Hub ポータルからダウンロードする方法について説明します。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: f1d036b2e114730c4cce8df8848359e854943153
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 69%
+ht-degree: 66%
 
 ---
 
@@ -23,13 +23,13 @@ ht-degree: 69%
 1 つ以上のアセットとそのレンディションをダウンロードするには、次の手順を実行します。
 
 * 1 つのアセットとそのレンディションをダウンロードするには：
-   1. アセットカードで使用可能な ![&#x200B; ダウンロード &#x200B;](/help/assets/assets/download-icon.svg) を選択して、アセットとその使用可能なレンディションをプレビューします。
+   1. アセットカードで使用可能な ![ ダウンロード ](/help/assets/assets/download-icon.svg) を選択して、アセットとその使用可能なレンディションをプレビューします。
    1. 使用可能なレンディションを選択し、ダイアログボックスの **[!UICONTROL ダウンロード]** オプションをクリックして、選択したレンディションを ZIP ファイルとしてダウンロードします。 ダイアログボックスに（ライセンス済みアセットの）アセットライセンスが表示された場合は、ライセンス条件に同意し、「**[!UICONTROL ダウンロード]**」をクリックします。
-      ![&#x200B; アセットのダウンロード &#x200B;](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
-または、アセットのサムネールをクリックして ![&#x200B; ダウンロード &#x200B;](/help/assets/assets/download-icon.svg) をクリックし、ダイアログボックスで使用可能なレンディションを選択して表示してからダウンロードすることもできます。
+      ![ アセットのダウンロード ](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+または、アセットのサムネールをクリックして ![ ダウンロード ](/help/assets/assets/download-icon.svg) をクリックし、ダイアログボックスで使用可能なレンディションを選択して表示してからダウンロードすることもできます。
 
 * 複数のアセットとそのレンディションをダウンロードするには：
-   1. アセットを選択し、![&#x200B; ダウンロード &#x200B;](/help/assets/assets/download-icon.svg)**[!UICONTROL ダウンロード]** をクリックして、**[!UICONTROL アセットをダウンロード]** ダイアログボックスで選択したアセットのリストを確認します。 アセットの横にある![選択解除](/help/assets/assets/Close.svg)をクリックして、リストから選択を解除します。
+   1. アセットを選択し、![ ダウンロード ](/help/assets/assets/download-icon.svg)**[!UICONTROL ダウンロード]** をクリックして、**[!UICONTROL アセットをダウンロード]** ダイアログボックスで選択したアセットのリストを確認します。 アセットの横にある![選択解除](/help/assets/assets/Close.svg)をクリックして、リストから選択を解除します。
    1. 1 つ以上のレンディションを選択し、ZIP ファイルとしてダウンロードします。 **[!UICONTROL スマート切り抜き]**&#x200B;および&#x200B;**[!UICONTROL 静的レンディション]**&#x200B;を選択すると、選択した各アセットの使用可能なすべての静的およびスマート切り抜きレンディションがダウンロードされます。
    1. オプション：「**[!UICONTROL アセットごとに個別のフォルダーを作成]**」の選択を解除して、選択したアセットとそのレンディションを zip ファイルのフォルダー内のフラット階層としてダウンロードします。 デフォルトでは、[!DNL Content Hub] は選択したアセットとそのレンディションを zip ファイル内の別々のフォルダーにダウンロードします。
 
@@ -137,7 +137,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 アセットレンディションは、アセットの元のファイルを様々に表現したものです。これらのレンディションには、サムネール、web またはモバイル用に最適化されたバージョン、透かし入りまたは DRM で保護されたファイル、さらにはスマート切り抜きなどの動的要素を含めることができます。 元のファイルタイプと一致する必要はなく、代わりに、様々なユースケースでアセットを表すために機能します。
 
-詳しくは、[&#x200B; [!DNL Experience Manager Assets]](/help/assets/renditions.md) でのレンディションの表示と管理を参照してください。
+詳しくは、[ [!DNL Experience Manager Assets]](/help/assets/renditions.md) でのレンディションの表示と管理を参照してください。
 
 [!DNL Experience Manager Assets] では、次のレンディションのタイプをサポートしています。
 
@@ -145,7 +145,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 * [動的レンディション](/help/assets/renditions.md#dynamic-renditions)：動的レンディションは、様々なデバイスの解像度に合わせた画像のサイズ変更や、様々な縦横比に合わせた切り抜きなど、様々なアクションを実行するために、リアルタイムでカスタマイズされたアセットバージョンです。これらのレンディションにより、より広範な要件に合わせて、パーソナライズおよび最適化されたエクスペリエンスを提供できます。アセットの動的レンディションは、[!DNL Adobe Experience Manager Assets] オーサー環境で作成されます。動的レンディションを有効にするために必要な手順について詳しくは、[動的レンディションの有効化](#enable-dynamic-media-renditions)を参照してください。
 
-* [スマート切り抜き](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：スマート切り抜きは、切り抜きプロセス中にアセットの重要な部分にのみ焦点を当てます。Dynamic Media のスマート切り抜きでは、Adobe Sensei を使用した人工知能を活用して目標地点を追跡し、アセットがすべての画面サイズで最適に表示されるようにします。[!DNL Adobe Experience Manager] のスマート切り抜きでは、タイトルと共にアセットレンディションの幅と高さが表示されます。詳しくは、[AEM Assets Dynamic Media でのスマート切り抜きの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)を参照してください。
+* [スマート切り抜き](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：スマート切り抜きは、切り抜きプロセス中にアセットの重要な部分にのみ焦点を当てます。Dynamic Media のスマート切り抜きは、Adobe AI を活用した人工知能を活用して目標地点を追跡し、あらゆる画面サイズでアセットが最適に表示されるようにします。 [!DNL Adobe Experience Manager] のスマート切り抜きでは、タイトルと共にアセットレンディションの幅と高さが表示されます。詳しくは、[AEM Assets Dynamic Media でのスマート切り抜きの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)を参照してください。
 
   スマート切り抜きレンディションは、[OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) にアクセスできる場合にのみ表示され、ダウンロードできます。スマート切り抜きレンディションは、画像アセットに対してのみ使用できます。
 

@@ -1,13 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 のリリースノート
-description: 「[!DNL Adobe Experience Manager] as a Cloud Service 2020.6.0 のリリースノート」
+description: as a Cloud Service 2020.6.0 のリリースノートを [!DNL Adobe Experience Manager] きます。
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 95%
+source-wordcount: '1938'
+ht-degree: 94%
 
 ---
 
@@ -106,14 +106,14 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 ## の新機能 [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-**拡張スマートタグに関するガイド付きユーザーエクスペリエンス（Adobe Sensei 搭載）**
+**Adobe AI を活用した拡張スマートタグのガイド付きユーザーエクスペリエンス**
 
 拡張スマートタグを使用すると、組織はスマートタグモデルに対して、汎用のスマートタグに加えて、顧客固有のビジネスタグに基づいて画像を認識するようにトレーニングすることができます。
 
 このリリースでは、一連の顧客固有のタグに対するスマートタグのトレーニングを設定し、アセットを使用してトレーニングする新しいガイド付きのユーザーエクスペリエンスが提供されます。これは、今後認識され、タグ付けされることになります。エクスペリエンスは、より直感的になりました。
 拡張スマートタグをトレーニングして、スマートタグの直感的なトレーニングを実施します。「[アセットにスマートタグを追加する方法](/help/assets/smart-tags.md)」を参照してください。
 
-**3D コンテンツの取得、プレビュー、配信のサポート**
+**3D コンテンツの取り込み、プレビュー、配信のサポート**
 
 3D ファイルを AEM Assets 内に保存して使用できるようになりました。OBJ、STL、GLTF、GLB ファイルなど、様々なコア 3D ファイルのアップロードや、プレビュー、使用が可能です。[!DNL Dynamic Media] が加わったことで、非依存型の URL やビューアを使用して、3D エクスペリエンスを設定および配信できます。これには、[!DNL Dynamic Media] 3D エクスペリエンスビューア、サイト 3D ビューアコンポーネント、および [!DNL Dynamic Media] 経由で 3D ファイルを配信する機能（AR/VR）が含まれます。詳しくは、[Dynamic Media での 3D アセット操作](/help/assets/dynamic-media/assets-3d.md)を参照してください。
 
@@ -143,7 +143,7 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 * Assets ユーザーインターフェイスで、表示設定にキーボードからアクセスできない。（CQ-4289038）
 
-* 黄色の評価アイコンの輝度の比率が 3:1 未満で、視覚や色の知覚を持たないユーザーの役に立たない。星評価はアセットのタブまたはカード表示に表示されます
+* 黄色の評価アイコンの輝度比が 3:1 未満です。 視覚や色の知覚を持たないユーザーの役に立たない。星評価はアセットのタブまたはカード表示に表示されます
 
 * 一部のユーザインターフェイス要素の色とコントラストが更新され、視覚が限られたユーザや、色の知覚を持たないユーザが、これらのユーザインターフェイス要素を区別できるようになりました。例えば、アセットの[!UICONTROL プロパティ]の「[!UICONTROL 詳細]」タブの「[!UICONTROL 評価]」セクションと、カード表示の星評価アイコンの色は、コントラストに合わせて変更されます。（CQ-4295106）
 
@@ -183,7 +183,7 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 ### バグ修正 {#assets-bug-fixes}
 
-上記の新機能に加えて、現在のリリースでは、[!DNL Assets] に対するお客様のご意見に基づき、次のバグ修正が行われています。
+上記の新機能に加えて、現在のリリースでは、[!DNL Assets] に対するお客様のフィードバックに基づき、次のバグ修正が行われています。
 
 * MP3 音楽ファイルの場合、DAM プレビューのサムネールに表示される再生ボタンが機能しない。（CQ-4294731）
 * カード表示にカーソルを重ねると、カードで利用できるクイックアクションに（自動的に）フォーカスした結果、画面がスクロールする。（GRANITE-26895）

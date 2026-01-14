@@ -1,6 +1,6 @@
 ---
 title: 製品のレコメンデーション
-description: Adobe Commerce には、Adobe Sensei を利用したレコメンデーションエンジンが備わっています。これらの製品レコメンデーションを Adobe Experience Manager（AEM）ストアフロントに動的に挿入する方法について説明します。
+description: Adobe Commerceは、Adobe AI を活用したレコメンデーションエンジンを備えています。 これらの製品レコメンデーションを Adobe Experience Manager（AEM）ストアフロントに動的に挿入する方法について説明します。
 sub-product: Commerce
 version: Experience Manager as a Cloud Service
 doc-type: feature-video
@@ -12,16 +12,16 @@ thumbnail: 340130.jpg
 exl-id: ee6f3423-175d-4a13-a587-63c285b6075f
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '54'
-ht-degree: 100%
+ht-degree: 62%
 
 ---
 
 
 # 製品のレコメンデーション
 
-Adobe Commerce には、Adobe Sensei を利用したレコメンデーションエンジンが備わっています。これらの製品レコメンデーションを Adobe Experience Manager（AEM）ストアフロントに動的に挿入する方法について説明します。
+Adobe Commerceは、Adobe AI を活用したレコメンデーションエンジンを備えています。 これらの製品レコメンデーションを Adobe Experience Manager（AEM）ストアフロントに動的に挿入する方法について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/342993/?learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/340130/?learn=on)

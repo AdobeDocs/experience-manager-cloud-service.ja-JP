@@ -1,13 +1,13 @@
 ---
-title: ' [!DNL Adobe Sensei] スマートサービスを使用したアセットの自動タグ付け'
+title: ' [!DNL Adobe AI] スマートサービスを使用したアセットの自動タグ付け'
 description: コンテキストタグと説明的なビジネスタグを適用する人工知能サービスを使用したアセットのタグ付け。
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 03cbcf098e0640705aa2a69a8fa605ab1e8cbb06
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '2082'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 たとえば、辞書のように単語がアルファベット順に並んでいれば、無作為に散らばっている場合よりも見つけやすくなります。タグ付けは同様の目的で使用されます。ビジネス上の分類に従ってアセットが整理され、最も関連性の高いアセットが検索結果に表示されます。たとえば、自動車メーカーは車の画像にモデル名のタグを付けることで、プロモーションキャンペーンを企画する際に関連する画像だけを表示できます。たとえ「ランナー」や「ランニングシューズ」といったタグ付けであっても、ユーザーは入力ミスやスペルの違い、別の検索語を使うことについて心配する必要はありません。スマートタグがそれらすべてを認識してくれます。
 
-この機能は、バックグラウンドで [Adobe Sensei](https://business.adobe.com/jp/products/sensei/adobe-sensei.html) の人工知能フレームワークを使用し、ビジネス上の分類に関連付けられたテキストと共に、アップロードされたアセットにスマートタグをデフォルトで自動的に適用します。
+そのバックグラウンドで、[Adobe AI の人工知能フレームワークが使用され ](https://business.adobe.com/ai/adobe-genai.html) デフォルトで、ビジネス上の分類に沿ったテキストと共に、アップロードされたアセットにスマートタグが自動的に適用されます。
 
 ## 前提条件と設定 {#smart-tags-prereqs-config}
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 ## スマートタグワークフロー {#smart-tags-workflow}
 
-[!DNL Adobe Sensei] を活用したスマートタグ付けでは、人工知能モデルを使用してコンテンツを分析し、アセットにタグを追加します。その結果、DAM ユーザーが顧客に豊富なエクスペリエンスを提供するまでの時間を短縮できます。スマートタグは、アセットプロパティ内で[信頼性スコア](#confidence-score)の降順で表示されます。
+[!DNL Adobe AI] を活用したスマートタグ付けでは、人工知能モデルを使用してコンテンツを分析し、アセットにタグを追加します。その結果、DAM ユーザーが顧客に豊富なエクスペリエンスを提供するまでの時間を短縮できます。スマートタグは、アセットプロパティ内で[信頼性スコア](#confidence-score)の降順で表示されます。
 
 * **画像ベースアセット**
 画像の場合、スマートタグは視覚的な観点に基づいて生成されます。多くの形式の画像が、スマートコンテンツサービスを使用してタグ付けされます。スマートタグは、JPG および PNG 形式のレンディションを生成する、[サポートされるファイル形式](#supported-file-formats)に適用されます。
@@ -35,7 +35,7 @@ ht-degree: 100%
   <!-- ![Image Smart Tag](assets/image-smart-tag.png)-->
 
 * **ビデオベースのアセット**
-ビデオベースのアセットの場合、[!DNL Adobe Experience Manager] で [!DNL Cloud Service] としてタグ付けがデフォルトで有効になっています。同様に、画像およびテキストベースのタグでは、新しいビデオをアップロードする場合や既存のビデオを再処理する場合にも、ビデオは自動タグ付けされます。 [!DNL Adobe Sensei] はビデオに対して 2 種類のタグを生成します。1 つ目のタグはビデオ内のオブジェクト、シーン、属性に対応しており、もう 1 つのタグは「飲む」「走る」「ジョギングする」といったアクションに関連しています。また、[ビデオのスマートタグ付けをオプトアウトする](#opt-out-video-smart-tagging)方法も確認してください。
+ビデオベースのアセットの場合、[!DNL Adobe Experience Manager] で [!DNL Cloud Service] としてタグ付けがデフォルトで有効になっています。同様に、画像およびテキストベースのタグでは、新しいビデオをアップロードする場合や既存のビデオを再処理する場合にも、ビデオは自動タグ付けされます。 [!DNL Adobe AI] はビデオに対して 2 種類のタグを生成します。1 つ目のタグはビデオ内のオブジェクト、シーン、属性に対応しており、もう 1 つのタグは「飲む」「走る」「ジョギングする」といったアクションに関連しています。また、[ビデオのスマートタグ付けをオプトアウトする](#opt-out-video-smart-tagging)方法も確認してください。
 
 * **テキストベースのアセット**
 サポートされているアセットの場合、[!DNL Experience Manager] は既にテキストを抽出しており、インデックス化してアセットの検索に使用しています。ただし、テキスト内のキーワードに基づくスマートタグには、構造化された、より優先度の高い専用の検索ファセットが用意されています。後者は、検索インデックスと比較して、アセット検出の向上に役立ちます。テキストベースのアセットの場合、スマートタグの有効性は、アセット内のテキストの量に依存するのではなく、アセットのテキスト内に存在する関連キーワードまたは関連エンティティに依存します。
@@ -73,7 +73,7 @@ ht-degree: 100%
 
 ## 標準搭載のスマートタグ付け用のアセットの準備
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] に[アセットをアップロード](add-assets.md#upload-assets)すると、アップロードされたアセットが処理されます。処理が完了したら、アセット[!UICONTROL プロパティ]ページの「[!UICONTROL 基本]」タブを参照してください。スマートタグは、[!UICONTROL スマートタグ]の下のアセットに自動的に追加されます。アセットマイクロサービスは、[!DNL Adobe Sensei] を使用してこれらのスマートタグを作成します。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] に[アセットをアップロード](add-assets.md#upload-assets)すると、アップロードされたアセットが処理されます。処理が完了したら、アセット[!UICONTROL プロパティ]ページの「[!UICONTROL 基本]」タブを参照してください。スマートタグは、[!UICONTROL スマートタグ]の下のアセットに自動的に追加されます。アセットマイクロサービスは、[!DNL Adobe AI] を使用してこれらのスマートタグを作成します。
 
 ![スマートタグはビデオに追加され、アセットプロパティの「基本」タブに表示されます](assets/smart-tags-added-to-videos.png)
 
@@ -87,7 +87,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM でタグ付けなしのアセット {#smart-tag-existing-assets}
 
-DAM 内の既存または古いアセットに対しては、スマートタグが自動的には付けられません。手動でアセットを[再処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ja#adjusting-load)して、スマートタグを生成する必要があります。プロセスが完了したら、フォルダー内の任意のアセットの[!UICONTROL プロパティ]ページに移動します。自動的に追加されたタグは、「[!UICONTROL 基本]」タブの[!UICONTROL スマートタグ]セクションに表示されます。適用されたこれらのスマートタグは、[信頼性スコア](#confidence-score)の降順で並べ替えられます。
+DAM 内の既存または古いアセットに対しては、スマートタグが自動的には付けられません。手動でアセットを[再処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load)して、スマートタグを生成する必要があります。プロセスが完了したら、フォルダー内の任意のアセットの[!UICONTROL プロパティ]ページに移動します。自動的に追加されたタグは、「[!UICONTROL 基本]」タブの[!UICONTROL スマートタグ]セクションに表示されます。適用されたこれらのスマートタグは、[信頼性スコア](#confidence-score)の降順で並べ替えられます。
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -112,7 +112,7 @@ The default threshold for action and object tags in [!DNL Adobe Experience Manag
 
 To add the confidence score OSGI configuration to the project deployed to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] through [!DNL Cloud Manager]:
 
-In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, or previously `ui.apps`) the `config.author` OSGi configuration, include a config file named `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` with the following contents:
+In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, or previously `ui.apps`) the `config.author` OSGi configuration, include a config file named `com.adobe.cq.assetcompute.impl.aisdk.AISdkImpl.cfg.json` with the following contents:
 
 ```json
 {
@@ -223,7 +223,7 @@ Following are the benefits of using Smart Tags in your AEM Assets:
    * 視覚的でない、抽象的な側面。製品のリリースの年や季節、画像によって誘発されるムードや感情、ビデオの主観的な意味などがその例です。
    * シャツの襟の有無や、製品に埋め込まれた小さな製品ロゴなど、製品の視覚的な細かい違い。
 
-* ファイルサイズが 300 MB 未満のビデオのみ自動的にタグ付けされます。[!DNL Adobe Sensei] サービスは、サイズが大きいビデオファイルをスキップします。
+* ファイルサイズが 300 MB 未満のビデオのみ自動的にタグ付けされます。[!DNL Adobe AI] サービスは、サイズが大きいビデオファイルをスキップします。
 * スマートタグ（通常または拡張）付きのファイルを検索するには、[!DNL Assets] 検索（全文検索）を使用します。スマートタグには個別の検索用述語はありません。
 * 一般的なタグと比較して、ビジネス分類を使用してタグ付けされたアセットは、タグベースの検索で識別および取得が容易になります。
 
@@ -231,7 +231,7 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 
 +++**スマートタグを使用してアセットの検索エクスペリエンスを向上させるにはどうすればよいですか？**
 
-アセットをアップロードすると、[!DNL Adobe]Sensei が自動的にタグ付けを行います。自動プロセスはバックエンドで非常に高速に実行されるので、アップロードが完了してから数秒後には、アセットにタグが追加されているのが確認できます。
+ア [!DNL Adobe] ットをアップロードすると、AI がアセットに自動的にタグ付けします。 自動プロセスはバックエンドで非常に高速に実行されるので、アップロードが完了してから数秒後には、アセットにタグが追加されているのが確認できます。
 
 +++
 

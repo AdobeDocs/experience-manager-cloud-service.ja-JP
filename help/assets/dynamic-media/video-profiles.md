@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '3694'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -94,7 +94,7 @@ Dynamic Media には、事前定義済みのアダプティブビデオエンコ
 
 ## ビデオプロファイルでのスマート切り抜きの使用について {#about-smart-crop-video}
 
-ビデオのスマート切り抜きは、ビデオプロファイルで使用できるオプションの機能です。これは、Adobe Sensei を活用したツールで、サイズに関係なく、アップロードしたアダプティブビデオやプログレッシブビデオの重要な部分を自動的に検出して切り抜くことができます。
+ビデオのスマート切り抜きは、ビデオプロファイルで使用できるオプションの機能です。これは、Adobe AI を利用したツールで、サイズに関係なく、アップロードしたアダプティブビデオやプログレッシブビデオの重要な部分を自動的に検出して切り抜くことができます。
 
 スマート切り抜きでサポートされているビデオ形式には、MP4、MKV、MOV、AVI、FLV、WMV などがあります。
 
@@ -104,7 +104,7 @@ Dynamic Media には、事前定義済みのアダプティブビデオエンコ
 * 30 フレーム/秒（fps）。
 * ファイルサイズは 300 MB。
 
-Adobe Sensei で対応できるフレーム数は 9,000 に制限されています。つまり、30 FPS で 5 分間です。ビデオの FPS が高いと、サポートされるビデオの最大再生時間が短くなります。例えば、60 fps のビデオが、Adobe Sensei とスマート切り抜きでサポートされるには、2 分半の長さにする必要があります。
+Adobe AI のフレーム数は 9,000 に制限されています。 つまり、30 FPS で 5 分間です。ビデオの FPS が高いと、サポートされるビデオの最大再生時間が短くなります。例えば、60 fps のビデオが、Adobe AI とスマート切り抜きでサポートされるには、2 分半の長さにする必要があります。
 
 ![ビデオのスマート切り抜き](assets/smart-crop-video.png)
 
