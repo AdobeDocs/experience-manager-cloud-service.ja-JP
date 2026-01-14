@@ -24,4 +24,4 @@ ht-degree: 62%
 
 Adobe Commerceは、Adobe AI を活用したレコメンデーションエンジンを備えています。 これらの製品レコメンデーションを Adobe Experience Manager（AEM）ストアフロントに動的に挿入する方法について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/340130/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342993/?captions=jpn&learn=on)

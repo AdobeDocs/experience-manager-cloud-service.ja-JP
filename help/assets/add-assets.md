@@ -146,7 +146,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 このツールは、Azure または S3 データストアからのアセットの大規模な取り込みに使用する目的で管理者グループにのみ提供されます。設定と取り込みの手順を紹介するビデオを参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341389/?captions=jpn&quality=12&learn=on)
 
 次の図は、データストアから Experience Manager にアセットを取り込む際の様々な段階を示しています。
 
