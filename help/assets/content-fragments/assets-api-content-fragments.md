@@ -4,10 +4,10 @@ description: AEM ヘッドレス配信機能の重要な部分である、Assets
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
-workflow-type: ht
-source-wordcount: '1857'
-ht-degree: 100%
+source-git-commit: f55299d7054a9e1f8e1356cb975dfeee162ec202
+workflow-type: tm+mt
+source-wordcount: '1856'
+ht-degree: 98%
 
 ---
 
@@ -53,7 +53,7 @@ Adobe Experience Manager（AEM）のヘッドレス配信機能の重要な部�
 
 例えば、[単一ページアプリケーション（SPA）](/help/implementing/developing/hybrid/introduction.md)では、フレームワークベースかカスタムかを問わず、HTTP API 経由で提供されるコンテンツ（多くの場合 JSON 形式）が必要です。
 
-While [AEMコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja) この目的で必要な読み取り操作と、JSON 出力をカスタマイズできる API には、実装にAEM WCM(Web Content Management) のノウハウが必要です。 これは、専用のAEMテンプレートに基づくページでホストする必要があるからです。 すべての SPA 開発組織が、こうした知識にアクセスできるわけではありません。
+[AEM コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)は、この目的のために必要な読み取り操作を実行できるカスタマイズ可能な API を提供しており、その JSON 出力もカスタマイズ可能ですが、実装には AEM WCM（web コンテンツ管理）の知識が必要です。これは、専用のAEMテンプレートに基づくページでホストする必要があるからです。 すべての SPA 開発組織が、こうした知識にアクセスできるわけではありません。
 
 これが可能なのは、Assets REST API が使用できる場合です。この場合は、アセット（画像やコンテンツフラグメントなど）に直接アクセスでき、その際に、ページにアセットを埋め込んでからコンテンツをシリアル化 JSON 形式で配信する必要はありません
 
@@ -87,6 +87,7 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 例えば、`/content/dam/wknd/en/adventures/cycling-tuscany` にアクセスするには、`/api/assets/wknd/en/adventures/cycling-tuscany.json` をリクエストします。
 
 >[!NOTE]
+>
 >アクセス経由：
 >
 >* `/api/assets` は `.model` セレクターを使用する&#x200B;**必要はありません**。
@@ -171,7 +172,7 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 >詳しくは、次を参照してください。
 >
 >* [CORS／AEM の説明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ja)
->* [ビデオ - AEM を使用した CORS 向けの開発)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=ja)
+>* [ ビデオ - AEMによる CORS 向けの開発（04:06） ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=ja)
 >
 
 特定の認証要件がある環境では、OAuth を推奨します。
@@ -329,7 +330,7 @@ Assets REST API は、フォルダーのプロパティへのアクセスを公�
   以下に、このエラーステータスが返される場合の一般的なシナリオと、生成されるエラーメッセージ（等幅）を示します。
 
    * 親フォルダーが存在しない（`POST` でコンテンツフラグメントを作成する場合）
-   * コンテンツフラグメントモデルが指定されていない（cq:model が見つからない）、読み取れない（パスが無効か権限の問題が原因）、または有効なフラグメントモデルがありません。
+   * コンテンツフラグメントモデルが指定されていません（cq:model がありません）。読み取れません（パスが無効か、権限に問題があります）。または、有効なフラグメントモデルがありません。
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
