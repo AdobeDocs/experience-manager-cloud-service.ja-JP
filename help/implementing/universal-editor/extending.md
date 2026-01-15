@@ -4,7 +4,7 @@ description: コンテンツ作成者のニーズに合わせてユニバーサ�
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: d938abce2b46786343b19113454da1738a824ed0
+source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 100%
@@ -60,4 +60,4 @@ UI 拡張機能に加えて、ユニバーサルエディターには、カス�
 
 * **[ブロック](https://www.aem.live/developer/block-collection)**：シンプルな JSON 形式で、プロジェクトではコンテンツ作成に使用できるブロックと UE 機能を調整できます。
 * **[カスタムユーザーインターフェイス](#extending-ui)**：拡張機能では、サイドパネルまたはモーダルダイアログに必要な UI を表示できます。
-* **[イベント](/help/implementing/universal-editor/events.md)**：拡張機能では、ページ上での作成者のアクションと選択に関するイベントを受信し、適切に応答します。
+* **[イベント](/help/implementing/universal-editor/events-universal-editor.md)**：拡張機能では、ページ上での作成者のアクションと選択に関するイベントを受信し、適切に応答します。

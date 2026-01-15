@@ -4,7 +4,7 @@ description: ユニバーサルエディターの主なユースケース、そ�
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 100%
@@ -79,7 +79,7 @@ AEM に既に精通している場合は、Sites コンソールを使用して�
 
 * [属性とタイプ](/help/implementing/universal-editor/attributes-types.md) - アプリまたはページをユニバーサルエディターで編集できるようにするには、アプリの実装を適切に行う必要があります。これには、エディターがアプリのコンテンツを編集できるように、適切なメタデータを含めることが含まれます。
 * [モデル定義、フィールドおよびコンポーネントタイプ](/help/implementing/universal-editor/field-types.md) - メタデータが存在してコンポーネントの編集が可能になったら、エディターのプロパティパネルで操作できるフィールドとコンポーネントタイプを定義します。
-* [ユニバーサルエディターイベント](/help/implementing/universal-editor/events.md) - ユニバーサルエディターがコンテンツまたは UI インタラクションで出力するイベントを使用して、アプリの編集エクスペリエンスを強化し、アプリをさらにカスタマイズできます。
+* [ユニバーサルエディターイベント](/help/implementing/universal-editor/events-universal-editor.md) - ユニバーサルエディターがコンテンツまたは UI インタラクションで出力するイベントを使用して、アプリの編集エクスペリエンスを強化し、アプリをさらにカスタマイズできます。
 
 また、ユニバーサルエディターは、プロジェクトのニーズに適応させることもできます。
 

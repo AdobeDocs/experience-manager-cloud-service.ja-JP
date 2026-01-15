@@ -4,7 +4,7 @@ description: デバッグ時に役立つユニバーサルエディターによ�
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 100%
@@ -27,7 +27,7 @@ ht-degree: 100%
 * 呼び出しの&#x200B;**ペイロード**&#x200B;には、更新する内容と更新方法の識別など、エディターによって更新される内容の詳細が含まれます。
 * **応答**&#x200B;には、エディターサービスによって更新された内容の正確な詳細が含まれます。これは、エディターでコンテンツを簡単に更新できるようにするためです。`move` 呼び出しなどの特定の場合には、ページ全体を更新する必要があります。
 
-呼び出しが正常に完了すると、リクエストと応答のペイロードを含むイベントがトリガーされます。これは、独自のアプリ用にカスタマイズできます。詳しくは、[ユニバーサルエディターイベント](/help/implementing/universal-editor/events.md)ドキュメントを参照してください。
+呼び出しが正常に完了すると、リクエストと応答のペイロードを含むイベントがトリガーされます。これは、独自のアプリ用にカスタマイズできます。詳しくは、[ユニバーサルエディターイベント](/help/implementing/universal-editor/events-universal-editor.md)ドキュメントを参照してください。
 
 ユニバーサルエディターがアプリに対して行う呼び出しのタイプのリストと、サンプルのペイロードおよび応答を次に示します。
 
@@ -384,5 +384,5 @@ ht-degree: 100%
 
 ## その他のリソース {#additional-resources}
 
-* [ユニバーサルエディターイベント](/help/implementing/universal-editor/events.md)
+* [ユニバーサルエディターイベント](/help/implementing/universal-editor/events-universal-editor.md)
 
