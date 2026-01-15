@@ -17,7 +17,7 @@ ht-degree: 1%
 
 現在、エージェントはパイプラインステータスを取得でき、修正を提案することで、失敗するビルドステップのトラブルシューティングに役立ちます。これにより、AEM as a Cloud Serviceのデプロイメントを開発環境、ステージング環境および実稼動環境にデバッグする際の時間を節約できます。 ビルドログと関連コードを調べて、手動で適用できる修正をお勧めします。
 
->[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478008?captions=jpn&quality=12&learn=on)
 
 >[!IMPORTANT]
 >
