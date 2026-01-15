@@ -172,7 +172,7 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 >詳しくは、次を参照してください。
 >
 >* [CORS／AEM の説明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ja)
->* [ ビデオ - AEMによる CORS 向けの開発（04:06） ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=ja)
+>* [&#x200B; ビデオ - AEMによる CORS 向けの開発（04:06） &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=ja)
 >
 
 特定の認証要件がある環境では、OAuth を推奨します。
