@@ -4,10 +4,10 @@ description: ユニバーサルエディターがプロパティパネルで編�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 98%
+source-wordcount: '1604'
+ht-degree: 97%
 
 ---
 
@@ -94,7 +94,7 @@ ht-degree: 98%
 | `name` | `string` | データが保存されるプロパティ[またはパス](#nesting) | はい |
 | `label` | `FieldLabel` | フィールドのラベル | はい |
 | `description` | `FieldDescription` | フィールドの説明 | いいえ |
-| `value` | `FieldValue` | これはデフォルト値で、プレースホルダーとして機能します。 この値によってコンテンツが更新されることはありません。 これは UI での単なる表現です。 | いいえ |
+| `value` | `FieldValue` | これはデフォルト値で、プレースホルダーとして機能します。 値を設定しない場合、ユニバーサルエディターは、モデル定義で `value` のように定義されたものは何でも保持します。 これにより、表示される内容が、バックエンドに保持される内容と一致するようになります。 | いいえ |
 | `valueType` | `ValueType` | 標準の検証は次が可能です。`string`、`string[]`、`number`、`date`、`boolean` | いいえ |
 | `required` | `boolean` | 必須フィールドです | いいえ |
 | `readOnly` | `boolean` | フィールド読み取り専用です | いいえ |

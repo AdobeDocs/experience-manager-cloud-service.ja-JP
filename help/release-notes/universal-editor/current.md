@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター 2025.12.12 リリースノート
-description: ユニバーサルエディター 2025.12.11 リリースのリリースノートです。
+title: ユニバーサルエディター 2026.01.15 リリースノート
+description: ユニバーサルエディター 2026.01.15 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
+source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 21%
+source-wordcount: '204'
+ht-degree: 34%
 
 ---
 
 
-# ユニバーサルエディター 2025.12.12 リリースノート {#release-notes}
+# ユニバーサルエディター 2026.01.15 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2025 年 12 月 12 日リリースのリリースノートです。
+ユニバーサルエディターの 2026 年 1 月 15 日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -26,11 +26,10 @@ ht-degree: 21%
 
 ## 新機能 {#what-is-new}
 
-* [&#x200B; リッチテキストエディター &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) の既存のテーブルがサポートされるようになりました。
-* Tab キーが、[&#x200B; リッチテキストエディター &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) でリストのネストに対して有効になっています。
-* 開発者ログイン機能を [meta タグ `aem-dev-login`.](/help/implementing/universal-editor/customizing.md#meta-tags) から無効にできるようになりました。
-* オーバーレイセクションを右クリックすると、[&#x200B; コンテキストオプションメニュー &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options) が表示されるようになりました。
-* [&#x200B; 範囲インデント &#x200B;](/help/implementing/universal-editor/configure-rte.md#indentation) が [&#x200B; リッチテキストエディターでサポートされるようになりました。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* [ モデルフィールドのデフォルト値が追加されました ](/help/implementing/universal-editor/field-types.md) 設定と保持のサポート
+   * 値を設定しない場合、ユニバーサルエディターは、モデル定義で `value` のように定義されたものは何でも保持します。
+   * これにより、表示される内容が、バックエンドに保持される内容と一致するようになります。
+   * これは重大な変更です。
 
 ## 早期導入機能 {#early-adopter}
 
@@ -40,13 +39,6 @@ ht-degree: 21%
 
 ## その他の改善点 {#other-improvements}
 
-* 複数のフィールドがコンテキスト内で変更された場合、プロパティパネルが同期されるようになりました。
-* AEM 6.5 インスタンスで、期待どおりにコンテンツフラグメントピッカーが開くようになりました。
-* エスケープキーが、リッチテキストエディターのダイアログを閉じるようになりました。
-* **コンポーネントを削除** アクションは、コンポーネントが選択されている場合にのみ使用できるようになりました。
-* 正しい（古い、または新しい）コンテンツフラグメントエディターが、使用されているインスタンスに基づいて開くようになりました（ホスト名がAEM as a Cloud Service パターンの場合は新しいエディターを使用し、それ以外の場合は従来のエディターを使用します）。
-* 重複アクションにフィルター検証が追加されます。
-* 長いタイトルがプロパティパネルで切り詰められるようになりました。
-* 値が 10 を超えるマルチサイトマネージャーのアレイが適切に処理されるようになりました。
-* 同じ名前で複数のコンポーネントを作成する際の競合エラーが適切に処理されるようになりました。
-* 値が 10 を超えるマルチサイトマネージャーの配列の処理が追加されました。
+* コンテンツの切り替え時にデータクリーンアップが正しく実行されるようになりました。
+* 拡張機能の更新での複数の操作がサポートされるようになりました。
+* 開発者ログインの「閉じる」ボタンが期待どおりに動作するようになりました。
