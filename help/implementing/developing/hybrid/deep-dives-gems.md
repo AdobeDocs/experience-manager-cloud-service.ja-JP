@@ -15,7 +15,7 @@ ht-degree: 72%
 
 # SPA の詳細 {#spa-deep-dives}
 
-[ Adobe Experience Manager Gems](https://helpx.adobe.com/jp/experience-manager/kt/eseminars/gems/aem-index.html) は、アドビのエキスパートによる技術的な詳細の解説シリーズです。Adobe エンジニアがホストされるこのシリーズは、AEMの機能をより深く理解するための優れたガイドとして役立ちます。
+[&#x200B; Adobe Experience Manager Gems](https://helpx.adobe.com/jp/experience-manager/kt/eseminars/gems/aem-index.html) は、アドビのエキスパートによる技術的な詳細の解説シリーズです。Adobe エンジニアがホストされるこのシリーズは、AEMの機能をより深く理解するための優れたガイドとして役立ちます。
 
 {{ue-over-spa}}
 
