@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: b4df0abb43d69f629d2c643c408cb77af697b942
+source-git-commit: be61c21e111e1655921325a35da6fa88545fb39f
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1095'
 ht-degree: 19%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 19%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 23862 {#23862}
+## リリース 23963 {#23963}
 
->[!CAUTION]
->
-> リリース 23862 が非公開になりました。 新しいメンテナンスリリースは、まもなく提供されます。
-
-2025年12月23日（PT）に公開された、メンテナンスリリース 23862 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 23482 でした。
+2026年1月19日（PT）に公開された、メンテナンスリリース 23963 の継続的な改善点を以下にまとめます。 前回のメンテナンスリリースは、リリース 23482 でした。
 
 2026.1.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
 
-### 機能強化 {#enhancements-23862}
+>[!NOTE]
+>
+>リリース 23862 が非公開になりました。
+
+### 機能強化 {#enhancements-23963}
 
 * CQ-4361812:rest api で、オプションのパラメーター folderPath がサポートされるようになりました。 説明：新しい翻訳プロジェクトが API によって作成され、オプションの `folderPath` パラメーターで指定されたパス内に配置されます。それ以外の場合は、デフォルトでルートプロジェクトのパス `/content/projects` になります。
 * FORMS-21960:forms-spa と同様に、インタラクティブ通信のローカルでのキャンバス編集がサポートされるようになりました。
@@ -50,13 +50,14 @@ ht-degree: 19%
 * SITES-37794：ユニバーサルエディターを使用したEdge Delivery：ページ作成ウィザードを簡素化します。
 * SITES-36963:Workspace サポートのために、オーディエンス/セグメントエンドポイントを Target API v3 に移行します。
 
-### 修正された問題 {#fixed-issues-23862}
+### 修正された問題 {#fixed-issues-23963}
 
 * CQ-4361831:genai_dropdown_span が定義されていない問題を修正しました。
 * CQ-4360895：同時更新中にプロジェクト内の不正確な翻訳ジョブステータス数が修正されました。
 * CQ-4361599:2025.7 へのアップグレード後に、翻訳ジョブからコンテンツフラグメントがスキップされる問題を修正しました。
 * CQ-4360747：固定繰り返し可能な翻訳ジョブで、空のペイロードとトリガーが頻繁に作成される（ScheduleRepeatTranslationProject の NullPointerException）。
 * CQ-4359994：単一プロジェクトと多言語プロジェクトの destinationLanguage フィールドタイプの不整合が修正されました。
+* FORMS-23557:Rhino の更新が原因で `*.js`Use API で正しくインスタンス化できない。
 * SITES-38153:uuid ベースの参照の cf 公開参照プロバイダーを修正。
 * SITES-37594：タグ機能によるモデルのパフォーマンスの向上。
 * SITES-37337:FragmentCreateProcessor：ログにエラーの詳細を追加します。
@@ -93,19 +94,19 @@ ht-degree: 19%
 * SITES-37349：ユニバーサルエディターを使用したEdge Delivery：単一のリストアイテムを持つリストとして、単一のエントリを持つ複数のフィールドをレンダリングします。
 * SITES-36148：ユニバーサルエディターを使用したEdge Delivery：複合マルチフィールド用の data-aue-label を修正しました。
 
-### 既知の問題 {#known-issues-23862}
+### 既知の問題 {#known-issues-23963}
 
 なし。
 
-### 廃止された機能と API {#deprecated-23862}
+### 廃止された機能と API {#deprecated-23963}
 
 AEM as a Cloud Service で廃止および削除された機能と API について詳しくは、[廃止および削除された機能と API](/help/release-notes/deprecated-removed-features.md) ドキュメントを参照してください。
 
-### セキュリティ修正 {#security-23862}
+### セキュリティ修正 {#security-23963}
 
 AEM as a Cloud Service では、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。 このメンテナンスリリースでは、特定された 23 個の脆弱性に対処し、堅牢なシステム保護に対する取り組みを強化しています。
 
-### 組み込みテクノロジー {#embedded-tech-23862}
+### 組み込みテクノロジー {#embedded-tech-23963}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
