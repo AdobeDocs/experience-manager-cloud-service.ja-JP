@@ -36,7 +36,7 @@ Adobe Experience Manager（AEM）as a Cloud Service 内のコンテンツフラ�
 
 >[!TIP]
 >
->コンテンツフラグメントは [Edge Delivery Servicesに公開 ](https://www.aem.live/developer/content-fragment-overlay) できます。
+>コンテンツフラグメントは [Edge Delivery Servicesに公開 &#x200B;](https://www.aem.live/developer/content-fragment-overlay) できます。
 
 ## 設定ブラウザーでコンテンツフラグメント機能を有効にする {#enable-content-fragment-functionality-configuration-browser}
 
@@ -63,7 +63,7 @@ Adobe Experience Manager（AEM）as a Cloud Service 内のコンテンツフラ�
 1. 「**作成**」を使用してダイアログを開き、次の操作を行います。
 
    1. 「**タイトル**」を指定します。
-   1. 作成時に、**名前**はリポジトリ内のノード名になります。
+   1. 作成時に、**名前**&#x200B;はリポジトリ内のノード名になります。
 名前を入力できます。フィールドを空白のままにすると、タイトルに基づいて自動的に名前が生成された後、[AEM 命名規則](/help/implementing/developing/introduction/naming-conventions.md)に従って調整されます。必要に応じて結果を調整できます。
    1. 使用できるようにするには、以下を選択します。
       * **コンテンツフラグメントモデル**

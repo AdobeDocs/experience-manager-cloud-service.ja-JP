@@ -64,8 +64,8 @@ ht-degree: 98%
    * ツリーの特定のブランチを選択できます
    * これは、ネストされたフォルダーを表示するようにサイズ変更できます
    * コンテンツフラグメントと同様に、次のことができます。
-      * [ コンテンツフラグメントモデル ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) または [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) を表示します。パネルへのリンクを圧縮または展開することもできます
-      * [ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) を作成および管理
+      * [&#x200B; コンテンツフラグメントモデル &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) または [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) を表示します。パネルへのリンクを圧縮または展開することもできます
+      * [&#x200B; コンテンツフラグメントのローンチ &#x200B;](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) を作成および管理
 * 右側のメインパネル
    * 選択したツリーのブランチにあるすべてのコンテンツフラグメントのリストを表示します。
       * 選択したフォルダーのコンテンツフラグメントと、すべての子フォルダーが表示されます:
@@ -388,7 +388,7 @@ FolderC
 
 * **[パブリッシュサービス](/help/headless/deployment/architecture.md)** - フル、パブリックアクセス用
 
-* **[プレビューサービス](/help/headless/deployment/architecture.md)** – 完全に使用可能になる前にコンテンツを [ プレビュー ](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) します
+* **[プレビューサービス](/help/headless/deployment/architecture.md)** – 完全に使用可能になる前にコンテンツを [&#x200B; プレビュー &#x200B;](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) します
 
   >[!CAUTION]
   >
@@ -406,7 +406,7 @@ FolderC
 
 >[!TIP]
 >
->コンテンツフラグメントは [Edge Delivery Servicesに公開 ](https://www.aem.live/developer/content-fragment-overlay) できます。
+>コンテンツフラグメントは [Edge Delivery Servicesに公開 &#x200B;](https://www.aem.live/developer/content-fragment-overlay) できます。
 
 ### 公開 {#publishing}
 
