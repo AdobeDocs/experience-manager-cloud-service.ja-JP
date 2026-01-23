@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
+source-git-commit: b3e1d3a3770531728d696be125f074881f179573
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2401'
 ht-degree: 84%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 84%
 # コンテンツフラグメントの使用 – 概念とベストプラクティス {#working-with-content-fragments-concepts-and-best-practices}
 
 Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツを設計、作成、キュレーション、公開できます。複数の場所、複数のチャネル上で使用可能なコンテンツを用意でき、[ヘッドレス配信](/help/headless/what-is-headless.md)や[ページオーサリング](/help/sites-cloud/authoring/fragments/content-fragments.md)に理想的です。
+
+>[!TIP]
+>
+>コンテンツフラグメントは [Edge Delivery Servicesに公開 ](https://www.aem.live/developer/content-fragment-overlay) できます。
 
 >[!IMPORTANT]
 >
@@ -48,10 +52,10 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
       * ページオーサリングで使用する単純なコンテンツを用意するのに使用できます。
       * また、アプリケーションへのヘッドレス配信にも使用できます。
    * 複合
-      * テキスト、数値、ブーリアン、日時などの様々なデータ型のフィールドを多数組み合わせたもの。
+      * テキスト、数値、ブーリアン、日時などの様々なデータタイプのフィールドを多数組み合わせたもの。
       * ページオーサリング用のより構造化コンテンツを用意するためや、アプリケーションにヘッドレス配信するために使用できます。
    * 入れ子
-      * 使用可能な参照データ型を使用して、コンテンツをネストできます。
+      * 使用可能な参照データタイプを使用して、コンテンツをネストできます。
       * アプリケーションへのヘッドレス配信に使用される傾向があります。
 
 コンテンツフラグメントは、AEM コアコンポーネントの Sling モデル（JSON）書き出し機能を使用して、JSON 形式で配信することもできます。この形式の配信では次のことが可能です。
@@ -104,7 +108,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 * [分析](/help/sites-cloud/administering/content-fragments/analysis.md)  エディターを使用したコンテンツフラグメントの構造
 * [GraphQL を使用してフラグメントにアクセスし、アプリケーションへのヘッドレス配信を実現します](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)。
 * [Adobe Journey Optimizer でのコンテンツフラグメントの統合と使用](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
-* [&#x200B; コンテンツフラグメントのローンチ &#x200B;](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) を作成および管理
+* [ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) を作成および管理
 * [または、フラグメントをページオーサリングに使用します。](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
@@ -247,7 +251,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 * **コンテンツモデル**
 
-   * [&#128279;](/help/sites-cloud/administering/content-fragments/setup.md)設定ブラウザーを使用して有効化されます。
+   * ](/help/sites-cloud/administering/content-fragments/setup.md)設定ブラウザーを使用して有効化[されます。
    * [コンテンツフラグメントコンソールを使用して作成](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)されます。
    * [フラグメントを作成](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments)するために必要です。
    * フラグメントの構造（タイトル、コンテンツ要素、タグ定義）を定義します。
