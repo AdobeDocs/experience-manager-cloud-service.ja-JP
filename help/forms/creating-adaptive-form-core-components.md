@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '2445'
-ht-degree: 89%
+source-wordcount: '2352'
+ht-degree: 88%
 
 ---
 
@@ -31,28 +31,12 @@ AEM Formsのフォームビルダーを使用すると、魅力的でレスポ�
 
 ![アダプティブフォームの作成ウィザード](/help/release-notes/assets/wizard.png)
 
-## 適用性とユースケース
-
-### 保険
-
-## AEM Formsは、顧客向けのプロセスと内部保険プロセスの両方で使用できますか？
-
-はい。AEM Formsは、顧客向けのデジタルフォームに加えて、レビュー、承認、支援を受けたデータキャプチャなど、社内、スタッフ、またはエージェント主導のプロセスをサポートします。
-
-## 保険金請求の送信にAEM Formsを使用できますか？
-
-はい。AEM Formsでは、構造化データの取得やサポートドキュメントの取得など、保険契約者が保険金請求をデジタル送信できる複数ステップのアダプティブフォームをサポートしています。
-
-## AEM Formsはモバイル保険金請求をサポートしていますか？
-
-はい。AEM Formsは、レスポンシブでモバイルに適したフォームをサポートしており、お客様やエージェントがモバイルデバイスから保険情報を送信できます。
 
 ## 前提条件
 
 アダプティブフォームを作成するには、以下が必要です。
 
 
-* **お使いの環境でのアダプティブフォームコアコンポーネントの有効化**：アダプティブフォームコアコンポーネントは、プログラムを作成した時点でお使いの環境で有効になります。お使いの AEM Cloud Service 環境でアダプティブフォームコアコンポーネントを有効にするには、最新版をインストールします。使用する環境でコアコンポーネントを有効にすると、**アダプティブフォーム（コアコンポーネント）**&#x200B;のテンプレートとテーマが環境に追加されます。 AEM SDK バージョンが 2023.02.0 より前の場合は、2023.02.0 リリースより前にアダプティブフォームのコアコンポーネントがプレリリースの一部であったので、[お使いの環境で `prerelease` フラグが有効になっていることを確認してください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)。
 
 * **アダプティブフォームテンプレート**：テンプレートは基本構造を提供し、アダプティブフォームのアピアランス（レイアウトとスタイル）を定義します。 これには、特定のプロパティやコンテンツ構造を有するフォーマット済みのコンポーネントが含まれます。 また、テーマと送信アクションを定義するオプションも提供されます。 テーマは、ルックアンドフィールと送信アクションを定義し、アダプティブフォームの送信時に実行するアクションを定義します。 例えば、収集したデータをデータソースに送信する場合などです。 クラウドサービスでは、空白という名前の OOTB テンプレートが提供されます。
 
@@ -72,7 +56,7 @@ AEM Formsのフォームビルダーを使用すると、魅力的でレスポ�
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ja) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## アダプティブフォームの作成  {#create-an-adaptive-form-core-components}
@@ -225,3 +209,18 @@ AEM Formsのフォームビルダーを使用すると、魅力的でレスポ�
 
 
 
+## 適用性とユースケース
+
+### 保険
+
+## AEM Formsは、顧客向けのプロセスと内部保険プロセスの両方で使用できますか？
+
+はい。AEM Formsは、顧客向けのデジタルフォームに加えて、レビュー、承認、支援を受けたデータキャプチャなど、社内、スタッフ、またはエージェント主導のプロセスをサポートします。
+
+## 保険金請求の送信にAEM Formsを使用できますか？
+
+はい。AEM Formsでは、構造化データの取得やサポートドキュメントの取得など、保険契約者が保険金請求をデジタル送信できる複数ステップのアダプティブフォームをサポートしています。
+
+## AEM Formsはモバイル保険金請求をサポートしていますか？
+
+はい。AEM Formsは、レスポンシブでモバイルに適したフォームをサポートしており、お客様やエージェントがモバイルデバイスから保険情報を送信できます。

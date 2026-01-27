@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 Keywords: form builder, build adaptive form template, adaptive form template core components, form template builder, build form template.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 97%
+source-wordcount: '1904'
+ht-degree: 95%
 
 ---
 
@@ -28,11 +28,7 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## 前提条件
 
-**お使いの環境でのアダプティブフォームコアコンポーネントの有効化**：プログラムを作成すると、アダプティブフォームコアコンポーネントはお使いの環境で既に有効になります。AEM Cloud Service 環境でアダプティブフォームコアコンポーネントを有効にするには、最新版をインストールします。
-
->[!NOTE]
->
-> アーキタイプ 45 に基づくForms as a Cloud Service 環境のデプロイ時に、**アダプティブフォーム（コアコンポーネント）**&#x200B;テンプレートとコアコンポーネントベースのテーマが環境に追加されます。
+アーキタイプ 45 に基づいてForms as a Cloud Service環境をデプロイすると、コアコンポーネントベースのテーマが環境に追加されます。
 
 ## テンプレートの操作 {#working-with-templates}
 
@@ -145,7 +141,7 @@ Header and footer are added in the Initial Content layer.
 
 作成したテンプレートは、ドラフトとして追加されます。テンプレートを有効にして、アダプティブフォームの作成に使用できるようにします。テンプレートを有効にするには、以下の手順を実行します。
 
-1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL ツール]**／**[!UICONTROL テンプレート]**&#x200B;に移動して、テンプレートの作成先のフォルダーを開きます。
+1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL ツール]**／**[!UICONTROL テンプレート]**に移動して、テンプレートの作成先のフォルダーを開きます。
 作成したテンプレートは、ドラフトとしてマークされます。
 1. テンプレートを選択して、ツールバーで「**[!UICONTROL 有効]**」を選択します。
 アダプティブフォームの作成時に、テンプレートの選択を求められる際にこのテンプレートがリストに表示されるようになります。
@@ -156,7 +152,7 @@ Header and footer are added in the Initial Content layer.
 
 >[!NOTE]
 >
-> * [!UICONTROL &#x200B; レコードのドキュメント &#x200B;] テンプレートは、アダプティブフォームビルダーまたはアダプティブフォームテンプレートビルダーから直接設定することもできます。 詳しくは、[アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)を参照してください。
+> * [!UICONTROL  レコードのドキュメント ] テンプレートは、アダプティブフォームビルダーまたはアダプティブフォームテンプレートビルダーから直接設定することもできます。 詳しくは、[アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)を参照してください。
 
 ## フォームデータモデルスキーマのテンプレートへの関連付け {#associating-form-data-model-schema-in-template}
 

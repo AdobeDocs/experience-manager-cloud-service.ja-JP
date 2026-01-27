@@ -4,9 +4,9 @@ description: AEM Sites ページにフォームリンクを追加する方法に
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: a55d0776-8827-46cc-9625-5d6f5f6bda3b
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
-workflow-type: ht
-source-wordcount: '536'
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+workflow-type: tm+mt
+source-wordcount: '481'
 ht-degree: 100%
 
 ---
@@ -17,11 +17,6 @@ ht-degree: 100%
 
 ![リンクアイコン](/help/forms/assets/link-forms.png)
 
-## 前提条件
-
-フォームポータルコンポーネントの様々な機能を探索する前に、お使いの環境でコアコンポーネントが有効になっていることを確認します。お使いの AEM Cloud Service 環境でアダプティブフォームコアコンポーネントを有効にするには、最新版をインストールします。
-
-最新のコアコンポーネントを環境にデプロイすると、フォームポータルコンポーネントにオーサリング環境でアクセスできます。
 
 ## Sites ページへのリンクコンポーネントの追加
 

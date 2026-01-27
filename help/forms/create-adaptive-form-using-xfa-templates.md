@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 19%
+source-wordcount: '683'
+ht-degree: 20%
 
 ---
 
@@ -31,9 +31,7 @@ XFA フォームテンプレートまたは XDP ファイルに基づいてフ�
 
 ## 前提条件
 
-XFA フォームテンプレートまたは XDP ファイルを使用してコアコンポーネントに基づくアダプティブフォームを作成するには、以下が必要です。
 
-* お使いの AEM Cloud Service 環境でアダプティブForms コアコンポーネントを有効にするには、最新のツールをインストールします。
 * 次の事柄に関する知識を身につけておくことをお勧めします。
    * アダプティブフォームの作成
    * XFA（XML Forms Architecture）
@@ -45,11 +43,11 @@ XFA または XDP フォームテンプレートを使用してアダプティ�
 1. [!DNL Experience Manager Forms] オーサーインスタンスにログインします。
 1. Experience Manager のログインページに資格情報を入力します。 ログイン後、左上隅の **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
 
-   ![Formsとドキュメント &#x200B;](/help/forms/assets/create-fdm.png)
+   ![Formsとドキュメント ](/help/forms/assets/create-fdm.png)
 
 1. **[!UICONTROL 作成]**/**[!UICONTROL アダプティブForms]** を選択します。
 
-   ![&#x200B; アダプティブフォームの作成 &#x200B;](/help/forms/assets/create-af.png)
+   ![ アダプティブフォームの作成 ](/help/forms/assets/create-af.png)
 
    フォーム作成ウィザードが開きます。
 1. 「**Source**」タブで、コアコンポーネントに基づくテンプレートを選択します。
@@ -58,15 +56,15 @@ XFA または XDP フォームテンプレートを使用してアダプティ�
 
    テンプレートを選択すると、テンプレートで指定されたテーマと送信アクションが自動的に選択され、「**[!UICONTROL 作成]**」ボタンが有効になります。
 
-   ![&#x200B; テーマを選択 &#x200B;](/help/forms/assets/select-form-theme.png)
+   ![ テーマを選択 ](/help/forms/assets/select-form-theme.png)
 
 1. 「**[!UICONTROL 作成]**」を選択します。アダプティブフォームを保存するためのタイトル、名前および場所を指定するためのダイアログが表示されます。
 1. タイトル、名前、場所を指定します。
 1. 「**[!UICONTROL 作成]**」を選択します。
-   ![&#x200B; 名前とタイトルの入力 &#x200B;](/help/forms/assets/create-form.png)
+   ![ 名前とタイトルの入力 ](/help/forms/assets/create-form.png)
 
    アダプティブフォームが作成され、アダプティブフォームエディターで開きます。 エディターに、テンプレートで使用可能なコンテンツが表示されます。
-1. ![&#x200B; ページ情報 &#x200B;](/help/forms/assets/Smock_Properties_18_N.svg)/**[!UICONTROL プロパティを開く]** を選択します。
+1. ![ ページ情報 ](/help/forms/assets/Smock_Properties_18_N.svg)/**[!UICONTROL プロパティを開く]** を選択します。
 
    ![プロパティを開く](/help/forms/assets/form-properties.png)
 
@@ -74,11 +72,11 @@ XFA または XDP フォームテンプレートを使用してアダプティ�
 1. 「**[!UICONTROL フォームモデル]**」タブに移動し、「**フォームテンプレート**」を選択します。
 1. ドロップダウンリストから.xdp ファイルを選択します。
 
-   ![XDP ファイルを選択 &#x200B;](/help/forms/assets/select-xdp-file.png)
+   ![XDP ファイルを選択 ](/help/forms/assets/select-xdp-file.png)
 
    警告ダイアログボックスが画面に表示されます。 **OK** をクリックして、先に進みます。
 
-   ![&#x200B; 警告ダイアログ &#x200B;](/help/forms/assets/fdm-warning.png)
+   ![ 警告ダイアログ ](/help/forms/assets/fdm-warning.png)
 
 1. 「**[!UICONTROL 保存して閉じる]**」を選択して、プロパティを保存します。
 
@@ -91,5 +89,5 @@ XFA または XDP フォームテンプレートを使用してアダプティ�
 
 >[!NOTE]
 >
-> 追加されたフィールドのパネルツールバーを使用して、XDP フォームフィールドのスクリプトを無効にすることができます。 [&#x200B; ビジュアルルールエディター &#x200B;](/help/forms/rule-editor-core-components.md) を使用して、追加されたフィールドにロジックを作成します。
+> 追加されたフィールドのパネルツールバーを使用して、XDP フォームフィールドのスクリプトを無効にすることができます。 [ ビジュアルルールエディター ](/help/forms/rule-editor-core-components.md) を使用して、追加されたフィールドにロジックを作成します。
 

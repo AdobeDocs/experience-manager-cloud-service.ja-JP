@@ -4,10 +4,10 @@ description: AEM Sites ページ上でフォームを一覧表示する方法を
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 37e3ddd9-b20d-4156-b52e-64e36c455184
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 35%
+source-wordcount: '620'
+ht-degree: 32%
 
 ---
 
@@ -19,45 +19,13 @@ Forms ポータルの **検索とリスター** コンポーネントを使用�
 
 ![検索とリスターアイコン](assets/search-and-lister-component.png)
 
-## 前提条件
-
-フォームポータルコンポーネントの様々な機能を探索する前に、お使いの環境でコアコンポーネントが有効になっていることを確認します。お使いの AEM Cloud Service 環境でアダプティブForms コアコンポーネントを有効にするには、最新のツールをインストールします。
-
-<!--
-## Enable Forms Portal components for your existing environment
-
-To enable out-of-the-box Forms Portal components on existing AEM Forms as a Cloud Service, perform the following steps:
-
-1. **Clone Cloud Manager Git repository on your local development instance:**  Your Cloud Manager Git repository contains a default AEM project. It is based on [AEM Archetype](https://github.com/adobe/aem-project-archetype/). Clone your Cloud Manager Git Repository using Self-Service Git Account Management from Cloud Manager UI to bring the project on your local development environment. For details on accessing the repository, see [Accessing Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html?lang=ja).  
-
-1. **Create [!DNL Experience Manager Forms] as a [Cloud Service] project:** Create [!DNL Experience Manager Forms] as a [Cloud Service] project based on [AEM Archetype 50](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-50) or later. The archetype help developers easily start developing for [!DNL AEM Forms] as a Cloud Service. It also includes some sample themes and templates to help you started quickly.
-
-    To create [!DNL Experience Manager Forms] as a Cloud Service project, open the command prompt and run the below command. To include [!DNL Forms] specific configurations, themes, and templates, set `includeForms=y`.  
-
-    ```shell
-    mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=30 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeForms="y"
-    ```
-
-    Also, change `appTitle`, `appId`, and `groupId`, in the above command to reflect your environment.
-
-    After the project is ready, update the `<core.forms.components.version>x.y.z</core.forms.components.version>` property in the top-level `pom.xml` of the Archetype project to reflect the latest version of [core-forms-components](https://github.com/adobe/aem-core-forms-components) in your `AEM Archetype` project. 
- 
-1. **Deploy the project to your local development environment:** You can use the following command to deploy to your local development environment
-
-    `mvn -PautoInstallPackage clean install`
-
-    For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#building-and-installing)
-
-1. [Deploy the archetype to your [!DNL AEM Forms] as a Cloud Service environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=ja#embeddeds). -->
-
-最新のコアコンポーネントを環境にデプロイすると、フォームポータルコンポーネントにオーサリング環境でアクセスできます。
 
 ## Sites ページでのフォームの一覧表示
 
 **検索とリスター** ポータルコンポーネントを Sites ページに追加するには、次の手順を実行します。
 
 1. AEM Sites ページを&#x200B;**編集**&#x200B;モードで開きます。
-1. **[!UICONTROL ページ情報]**／**[!UICONTROL テンプレートを編集]**&#x200B;に移動します。
+1. **[!UICONTROL ページ情報]**／**[!UICONTROL テンプレートを編集]**に移動します。
    ![テンプレートポリシーの編集](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. **[!UICONTROL ポリシー]** をクリックし、**[!UICONTROL AEM アーキタイププロジェクト名]** - Formsとコミュニケーションポータル **[の下にある ] 検索とリスター** チェックボックスを選択します。
@@ -78,7 +46,7 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
 1. ダイアログボックスで使用可能なコンポーネントを参照し、リストから目的のコンポーネントを選択します。例えば、**Search &amp; Lister** コンポーネントをリストから選択して、**Search &amp; Lister** Formsポータルコンポーネントを追加します。
 
-   ![Search &amp; Lister コンポーネント &#x200B;](/help/forms/assets/add-search-lister.png)
+   ![Search &amp; Lister コンポーネント ](/help/forms/assets/add-search-lister.png)
 
 次に、**検索とリスター** コンポーネントのプロパティを設定します。
 
@@ -97,7 +65,7 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
 ### 「アセット」タブ
 
-![&#x200B; 「アセット」タブ &#x200B;](/help/forms/assets/search-and-lister-asset-tab.png)
+![ 「アセット」タブ ](/help/forms/assets/search-and-lister-asset-tab.png)
 
 1. 「**[!UICONTROL アセットフォルダー]**」タブで、フォームを取得してページに一覧表示する場所を指定します。
 1. **[!UICONTROL 別の場所を追加]** を使用すると、複数のフォルダーの場所を設定できます。
@@ -139,7 +107,7 @@ Perform the following steps to configure Unified Storage Connector for AEM Workf
 
 ## Enable Forms Portal Components {#enable-forms-portal-components}
 
-To use any core component (including the out-of-the-box portal components) in an Adobe Experience Manager (AEM) site, you must create a proxy component and enable it for your site. For creating a proxy component and enabling portal components, see [Using Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=ja#create-proxy-components). 
+To use any core component (including the out-of-the-box portal components) in an Adobe Experience Manager (AEM) site, you must create a proxy component and enable it for your site. For creating a proxy component and enabling portal components, see [Using Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=en#create-proxy-components). 
 
 Once a portal component is enabled, you can use it in the author instance of your sites page.
 
@@ -223,7 +191,7 @@ You can configure the auto-save feature for an adaptive form as follows:
 
 ## 次の手順
 
-次の記事では、[&#x200B; フォームをドラフトとして保存し、ドラフトと送信Forms ポータルコンポーネントを使用してサイトページに一覧表示する方法 &#x200B;](/help/forms/save-core-component-based-form-as-draft.md) について説明します。
+次の記事では、[ フォームをドラフトとして保存し、ドラフトと送信Forms ポータルコンポーネントを使用してサイトページに一覧表示する方法 ](/help/forms/save-core-component-based-form-as-draft.md) について説明します。
 
 ## 関連記事
 
