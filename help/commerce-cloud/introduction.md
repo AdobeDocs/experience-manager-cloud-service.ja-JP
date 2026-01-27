@@ -29,7 +29,7 @@ AEM は、顧客の状況と好みに基づいてサポートできます。次�
 
 ### Edge Delivery Services の使用（推奨） {#edge}
 
-企業が web 上で最も速く、AI 対応のストアフロントを求めており、開発者が最先端の開発者エクスペリエンスを求めている場合は、Edge Delivery Services を使用します。[](../edge/overview.md)Edge Delivery Services は、今日および今後のすべての要件を満たします。バックエンドとソリューションに応じて、次の様々なオプションがあります。
+企業が web 上で最も速く、AI 対応のストアフロントを求めており、開発者が最先端の開発者エクスペリエンスを求めている場合は、Edge Delivery Services を使用します。[&#128279;](../edge/overview.md)Edge Delivery Services は、今日および今後のすべての要件を満たします。バックエンドとソリューションに応じて、次の様々なオプションがあります。
 
 #### &#x200B;1. Adobe Commerce as a Cloud Service との統合 {#acaacs}
 
