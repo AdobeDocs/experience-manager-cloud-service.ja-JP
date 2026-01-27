@@ -5,17 +5,17 @@ exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 93%
+source-wordcount: '305'
+ht-degree: 87%
 
 ---
 
 
 # [!DNL Live Search] CIF コンポーネント {#live-search-cif-component}
 
-Adobe Commerce の Live Search では、追加費用なしで、高速で関連性の高い直感的な検索エクスペリエンスを実現します。Adobe AI を活用したライブサーチでは、人工知能と機械学習アルゴリズムを使用して、集計した訪問者データの深層分析を行います。 このデータを Adobe Commerce カタログと組み合わせると、関連性の高いパーソナライズされたショッピングエクスペリエンスが実現します。
+Adobe Commerce の Live Search では、追加費用なしで、高速で関連性の高い直感的な検索エクスペリエンスを実現します。Adobe AI を活用したライブサーチでは、人工知能と機械学習アルゴリズムを使用して、集計した訪問者データの深層分析を行います。 このデータをAdobe Commerce カタログと組み合わせると、関連性が高く、パーソナライズされたショッピングエクスペリエンスが実現します。
 
 このトピックでは、AEM CIF コンポーネントを使用して[!DNL Live Search]製品リストページ（PLP）ウィジェットを AEM サイトに実装する方法について説明します。
 

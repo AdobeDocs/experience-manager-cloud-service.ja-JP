@@ -5,10 +5,10 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 84%
+ht-degree: 86%
 
 ---
 
@@ -25,13 +25,13 @@ ht-degree: 84%
 
 デフォルトでは、CIF 設定でキャッシュ消去機能は無効になっています。有効にするには、対応するプロジェクトに以下を追加する必要があります。
 
-* サーブレットの `/bin/cif/invalidate-cache` を有効にします。これにより、以下に示すように、プロジェクトに `com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json` 設定を追加して、対応するリクエストで clear-cache API をトリガーできます [&#x200B; こちら &#x200B;](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json)。
+* サーブレットの `/bin/cif/invalidate-cache` を有効にします。これにより、以下に示すように、プロジェクトに `com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json` 設定を追加して、対応するリクエストで clear-cache API をトリガーできます [ こちら ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json)。
 
   >[!NOTE]
   >
   > 設定は、オーサーインスタンスに対してのみ有効にする必要があります。
 
-* 次に示すように、リスナーを有効にして、プロジェクトに `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` 設定を追加することにより、AEM（公開およびオーサー）の各インスタンスからキャッシュをクリアします [&#128279;](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json)。
+* 次に示すように、リスナーを有効にして、プロジェクトに `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` 設定を追加することにより、AEM（公開およびオーサー）の各インスタンスからキャッシュをクリアします [](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json)。
    * 設定は、オーサーインスタンスとパブリッシュインスタンスの両方で有効にする必要があります。
    * Dispatcher のキャッシュを有効にする（オプション）：上記の設定で `enableDispatcherCacheInvalidation` プロパティを true に設定することで、Dispatcher のキャッシュの消去設定を有効にできます。これにより、Dispatcher からキャッシュを消去する機能が提供されます。
 
@@ -47,7 +47,7 @@ ht-degree: 84%
 
 すべてが正しく設定されていることを確認するには、以下を行います。
 
-* 対応するサーブレットをオーサーインスタンスのAEMにトリガーします（例：[http://localhost:4502/bin/cif/invalidate-cache](http://localhost:4502/bin/cif/invalidate-cache)。200 HTTP 応答が返されます。
+* 対応するサーブレットをオーサーインスタンスの AEM にトリガーします（例：[http://localhost:4502/bin/cif/invalidate-cache](http://localhost:4502/bin/cif/invalidate-cache)。200 HTTP 応答が返されます。
 * ノードがオーサーインスタンスの次のパス `/var/cif/cacheinvalidation` に作成されていることを確認します。ノード名は、パターン「`cmd_{{timestamp}}`」に従います。
 * 各パブリッシュインスタンスで同じノードが作成されていることを確認します。
 
@@ -135,8 +135,8 @@ curl --location 'https://author-p10603-e145552-cmstg.adobeaemcloud.com/bin/cif/i
 
 例えば、既存の属性をキャッシュの消去に使用しない場合は、独自の属性を柔軟に作成し、対応する機能を定義できます。
 
-* AEMの内部メモリ（graphql レスポンス）からキャッシュをクリアするだけの場合は、[&#x200B; このリファレンス &#x200B;](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomInvalidation.java) に従う必要があります。
-* 内部メモリと Dispatcher キャッシュからキャッシュをクリアする必要がある場合は、[&#x200B; このリファレンス &#x200B;](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomDispatcherInvalidation.java) に従ってください。
+* AEMの内部メモリ（graphql レスポンス）からキャッシュをクリアするだけの場合は、[ このリファレンス ](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomInvalidation.java) に従う必要があります。
+* 内部メモリと Dispatcher キャッシュからキャッシュをクリアする必要がある場合は、[ このリファレンス ](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomDispatcherInvalidation.java) に従ってください。
 
   >[!NOTE]
   >

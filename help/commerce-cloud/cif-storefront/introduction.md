@@ -5,7 +5,7 @@ thumbnail: introducing-aem-commerce.jpg
 feature: Commerce Integration Framework
 role: Admin
 exl-id: 3f18f976-ff8a-4726-b4c5-db4e19ae7cee
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 61%
@@ -45,7 +45,7 @@ AEM の強力な CIF ツールを使用すると、コンテンツ作成者は�
 
 ### 価値創出までの時間（TTV） {#ttv}
 
-CIFは、[AEM コアコンポーネント &#x200B;](https://www.aemcomponents.dev/)、[AEM Venia 参照ストアフロント &#x200B;](https://github.com/adobe/aem-cif-guides-venia)、[AEM プロジェクトアーキタイプ &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)、PWA （プログレッシブ web アプリ）の統合パターン（ヘッドレスコンテンツおよびコマース）などで、プロジェクトの開発を促進します。
+CIFは、[AEM コアコンポーネント ](https://www.aemcomponents.dev/)、[AEM Venia 参照ストアフロント ](https://github.com/adobe/aem-cif-guides-venia)、[AEM プロジェクトアーキタイプ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)、PWA （プログレッシブ web アプリ）の統合パターン（ヘッドレスコンテンツおよびコマース）などで、プロジェクトの開発を促進します。
 
 CIFは、常に最新のアドオンを使用した継続的なイノベーションを目的として構築されており、新機能や改善された機能にアクセスできます。
 
@@ -62,7 +62,7 @@ CIFは、ベストプラクティスに基づく標準化された統合パタ�
    * ステージング済みデータにアクセスできない
    * リアルタイムの製品データおよびエクスペリエンスが必要
 * デジタル成熟度が高まると、エクスペリエンス管理が必要になります
-* &#x200B;
+* 
    * CIF には、追加の IT 作業を行わずに増分的に組み込むことができる製品エクスペリエンス管理機能が付属しています。
 * オムニチャネルへの準備完了
    * CIFは、パターン、アクセラレーター、コアコンポーネントで様々なタッチポイントテクノロジー（サーバーサイド、ハイブリッド、クライアントサイド）をサポートしています。

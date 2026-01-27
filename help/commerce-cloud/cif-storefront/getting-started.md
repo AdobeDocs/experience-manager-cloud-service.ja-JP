@@ -9,7 +9,7 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 89%
@@ -25,7 +25,7 @@ AEM Commerce as a Cloud Service の使用を開始するには、Experience Mana
 >
 >**Edge Delivery Servicesを検討しましたか？**
 >
->Edge Delivery Servicesは、ストアフロントを作成するための、Adobeが推奨するソリューションです。 詳しくは、ドキュメント [&#x200B; 概要 &#x200B;](/help/commerce-cloud/introduction.md) を参照してください。
+>Edge Delivery Servicesは、ストアフロントを作成するための、Adobeが推奨するソリューションです。 詳しくは、ドキュメント [ 概要 ](/help/commerce-cloud/introduction.md) を参照してください。
 
 ## オンボーディング {#onboarding}
 
@@ -36,7 +36,7 @@ AEM Commerce as a Cloud Service のオンボーディングは、次の 2 つの
 
 最初のオンボーディング手順はアドビが行います。価格とプロビジョニングの詳細については、セールス担当者にお問い合わせください。
 
-CIF アドオンのプロビジョニングが完了すると、既存の Cloud Manager プログラムに適用されます。Cloud Manager プログラムがない場合は、作成する必要があります。詳しくは、[&#x200B; プログラムの設定 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=ja) を参照してください。
+CIF アドオンのプロビジョニングが完了すると、既存の Cloud Manager プログラムに適用されます。Cloud Manager プログラムがない場合は、作成する必要があります。詳しくは、[ プログラムの設定 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=ja) を参照してください。
 
 2 つ目の手順は、各 AEM as a Cloud Service 環境のセルフサービスです。CIF アドオンの初期プロビジョニングの後で、いくつかの追加の設定を行う必要があります。
 
@@ -57,11 +57,11 @@ Adobe Commerce Enterprise／Cloud の場合のみ、CIF アドオンはオプシ
 
 ### Cloud Manager ユーザーインターフェイスを使用（デフォルト） {#cm-ui}
 
->[!VIDEO](https://video.tv.adobe.com/v/343272?captions=jpn&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 この設定は、環境の詳細ページのダイアログボックスを使用して行うことができます。コマース対応プログラムでこのページを表示すると、エンドポイントが設定されていない場合は、ボタンが表示されます。
 
-![CM 環境情報](/help/commerce-cloud/cif-storefront/assets/commerce-cmui.png)
+![CM 環境情報 ](/help/commerce-cloud/cif-storefront/assets/commerce-cmui.png)
 
 このボタンをクリックすると、次のダイアログボックスが開きます。
 
@@ -69,7 +69,7 @@ Adobe Commerce Enterprise／Cloud の場合のみ、CIF アドオンはオプシ
 
 エンドポイント（オプションで、ステージング済みカタログのサポートの認証ヘッダー）が設定されると、エンドポイントが詳細ページに表示されます。編集アイコンをクリックすると同じダイアログボックスが開き、必要に応じてエンドポイントを編集できます。
 
-![CM 環境情報](/help/commerce-cloud/cif-storefront/assets/commerce-cmui-done.png)
+![CM 環境情報 ](/help/commerce-cloud/cif-storefront/assets/commerce-cmui-done.png)
 
 ### Adobe I/O CLI を使用  {#adobe-cli}
 
@@ -77,7 +77,7 @@ Adobe I/O CLI を使用して AEM をコマースソリューションに接続�
 
 1. Cloud Manager プラグインとAdobe I/O CLI を取得します。
 
-   * [Adobe CLI プラグインで &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ja)2&rbrace;Cloud Manager CLI&rbrace; をダウンロード、設定、使用する方法については [&#128279;](https://github.com/adobe/aio-cli)Adobe I/O Cloud Managerのドキュメント [&#x200B; を参照してください。](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+   * [Adobe CLI プラグインで ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ja)2}Cloud Manager CLI} をダウンロード、設定、使用する方法については [](https://github.com/adobe/aio-cli)Adobe I/O Cloud Managerのドキュメント [ を参照してください。](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
 1. Adobe I/O CLI をAEM as a Cloud Service プログラムで認証します。
 

@@ -4,10 +4,10 @@ description: コンテキストを離れることなく製品データやコン�
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
