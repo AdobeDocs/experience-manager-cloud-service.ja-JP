@@ -24,15 +24,15 @@ ht-degree: 31%
 
 ## アダプティブ Forms コアコンポーネントの可用性
 
-すべての **AEM Forms as a Cloud Service** 環境には、コアコンポーネントを使用したアダプティブFormsの作成に対するネイティブサポートが含まれています。 フォーム作成の詳しい手順については、「[ アダプティブフォームの作成 ](/help/forms/create-an-adaptive-form.md) を参照してください。
+すべての **AEM Forms as a Cloud Service** 環境には、コアコンポーネントを使用したアダプティブFormsの作成に対するネイティブサポートが含まれています。 フォーム作成の詳しい手順については、「[&#x200B; アダプティブフォームの作成 &#x200B;](/help/forms/create-an-adaptive-form.md) を参照してください。
 
 ### AEM 6.5 用のアダプティブ Forms コアコンポーネントの有効化
 
 **AEM 6.5 Forms** および **AEM 6.5 LTS Forms** 環境の場合、アダプティブForms コアコンポーネントはデフォルトでは有効になっていません。 アダプティブForms機能を環境に追加するには、AEM アーキタイプを使用する必要があります。
 
 関連するガイドに従います。
-- AEM 6.5 Formsの場合：[AEM 6.5 Formsでアダプティブ Forms コアコンポーネントを有効にします ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=ja)。
-- AEM 6.5 LTS Formsの場合：[AEM 6.5 LTS FormsでアダプティブFormsコアコンポーネントを有効にします ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)。
+- AEM 6.5 Formsの場合：[AEM 6.5 Formsでアダプティブ Forms コアコンポーネントを有効にします &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=ja)。
+- AEM 6.5 LTS Formsの場合：[AEM 6.5 LTS FormsでアダプティブFormsコアコンポーネントを有効にします &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)。
 
 **注意：** 古いAEM 6.5 環境でアダプティブ Forms コアコンポーネントを有効にする手順が不明な場合や、環境固有の前提条件がある場合は、有効にする前にこれらの要件を明確にしてください。
 

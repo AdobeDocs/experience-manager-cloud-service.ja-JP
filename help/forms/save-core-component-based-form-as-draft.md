@@ -22,7 +22,7 @@ ht-degree: 14%
 
 ## 前提条件
 
-* [ ドラフトと送信Forms ポータルコンポーネント用の Azure ストレージコネクタと統合ストレージコネクタの設定 ](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
+* [&#x200B; ドラフトと送信Forms ポータルコンポーネント用の Azure ストレージコネクタと統合ストレージコネクタの設定 &#x200B;](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
 
 ### ドラフトと送信Forms ポータルコンポーネント用の Azure ストレージコネクタと統合ストレージコネクタの設定
 
@@ -30,11 +30,11 @@ ht-degree: 14%
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Azure ストレージ]**&#x200B;に移動します。
 
-   ![Azure ストレージカードの選択 ](/help/forms/assets/save-form-as-draft-azure-card.png)
+   ![Azure ストレージカードの選択 &#x200B;](/help/forms/assets/save-form-as-draft-azure-card.png)
 
 1. 設定フォルダーを選択して設定を作成し、「**[!UICONTROL 作成]**」を選択します。
 
-   ![Azure ストレージ設定フォルダーを選択 ](/help/forms/assets/save-form-as-draft-select-config-folder.png)
+   ![Azure ストレージ設定フォルダーを選択 &#x200B;](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
 1. 「**[!UICONTROL タイトル]**」フィールドで設定のタイトルを指定します。
 1. 「[!DNL Azure]Azure ストレージアカウント **[!UICONTROL 」フィールドと「]** Azure アクセスキー **[!UICONTROL 」フィールドで]** ストレージアカウントの名前を指定します。
@@ -53,12 +53,12 @@ ht-degree: 14%
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL Forms]**／**[!UICONTROL 統合ストレージコネクタ]**&#x200B;に移動します。
 
-   ![ 統合コネクタストレージ ](/help/forms/assets/save-form-as-draft-unified-connector.png)
+   ![&#x200B; 統合コネクタストレージ &#x200B;](/help/forms/assets/save-form-as-draft-unified-connector.png)
 
 1. 「**[!UICONTROL フォームポータル]**」セクションで、「**[!UICONTROL ストレージ]**」ドロップダウンリストから「**[!UICONTROL Azure]**」を選択します。
 1. Azure ストレージ設定の設定パスを「**[!UICONTROL ストレージ設定パス]**」フィールドで指定します。
 
-   ![ 統合コネクタストレージ設定 ](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
+   ![&#x200B; 統合コネクタストレージ設定 &#x200B;](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
@@ -73,7 +73,7 @@ ht-degree: 14%
 標準のForms ポータルコンポーネントを使用して、Sites ページ上のドラフトおよび送信を一覧表示できます。 次の手順を実行して、**ドラフトと送信** ポータルコンポーネントを追加します。
 
 1. AEM Sites ページを&#x200B;**編集**&#x200B;モードで開きます。
-1. **[!UICONTROL ページ情報]**／**[!UICONTROL テンプレートを編集]**に移動します。
+1. **[!UICONTROL ページ情報]**／**[!UICONTROL テンプレートを編集]**&#x200B;に移動します。
    ![テンプレートポリシーの編集](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. **[!UICONTROL ポリシー]** をクリックし、**[!UICONTROL AEM アーキタイププロジェクト名]** - Formsとコミュニケーションポータル **[の下にある ] ドラフトと送信** チェックボックスを選択します。
@@ -93,7 +93,7 @@ ht-degree: 14%
 
 1. ダイアログボックスで使用可能なコンポーネントを参照し、リストから目的のコンポーネントを選択します。例えば、リストから **ドラフトと送信** コンポーネントを選択して、**ドラフトと送信** Formsポータルコンポーネントを追加します。
 
-   ![ ドラフトと送信コンポーネントの追加 ](/help/forms/assets/save-form-as-draft-add-dns.png)
+   ![&#x200B; ドラフトと送信コンポーネントの追加 &#x200B;](/help/forms/assets/save-form-as-draft-add-dns.png)
 
 次に、要件に従って、**ドラフトと送信** コンポーネントのプロパティを設定します。
 
@@ -102,14 +102,14 @@ ht-degree: 14%
 以下のように **ドラフトと送信** のプロパティを設定できます。
 
 1. **ドラフトと送信** コンポーネントを選択します。
-1. ![ 設定アイコン ](assets/configure_icon.png) をクリックすると、ダイアログボックスが表示されます。
+1. ![&#x200B; 設定アイコン &#x200B;](assets/configure_icon.png) をクリックすると、ダイアログボックスが表示されます。
 1. **[!UICONTROL ドラフトと送信]** ダイアログで、以下を指定します。
 
    * **タイトル** Sites ページ内のコンポーネントを識別するために、デフォルトではコンポーネントの上にタイトルが表示されます。
    * **タイプを選択**：フォームを下書きまたは送信済みのフォームとして表示します。 **ドラフトForms** を選択した場合は、ドラフトとして保存されたフォームが表示されます。 または、「**送信済みForms**」を選択すると、ログインユーザーによって送信されたフォームが表示されます。
    * **レイアウト**：下書きのフォームまたは送信済みのフォームをカード形式またはリスト形式で表示します。
 
-   ![ ドラフトおよび送信コンポーネントのプロパティ ](/help/forms/assets/save-form-as-draft-dns-properties.png)
+   ![&#x200B; ドラフトおよび送信コンポーネントのプロパティ &#x200B;](/help/forms/assets/save-form-as-draft-dns-properties.png)
 
 ## ドラフトとして保存するフォームの設定
 
@@ -122,7 +122,7 @@ ht-degree: 14%
 
 >[!NOTE]
 >
-> [ フォームを保存 ](https://github.com/adobe/aem-core-forms-components) ルールを使用してフォームをドラフトとして保存するには **** コアコンポーネントのバージョンが 3.0.24 以降に設定されていることを確認します。
+> [&#x200B; フォームを保存 &#x200B;](https://github.com/adobe/aem-core-forms-components) ルールを使用してフォームをドラフトとして保存するには **&#x200B;**&#x200B;コアコンポーネントのバージョンが 3.0.24 以降に設定されていることを確認します。
 
 フォームをドラフトとして保存するには、ボタンなどのフォームコンポーネントに **フォームを保存** ルールを作成します。 ボタンをクリックすると、ルールがトリガーされ、フォームがドラフトとして保存されます。 ボタンコンポーネントに **フォームを保存** ルールを作成するには、次の手順を実行します。
 
@@ -132,7 +132,7 @@ ht-degree: 14%
 1. 「**[!UICONTROL 条件]**」セクションで「**クリック済み** を選択し、「**[!UICONTROL 次に]**」セクションで「**フォームを保存**」オプションを選択します。
 1. 「**[!UICONTROL 完了]**」を選択し、ルールを保存します。
 
-   ![ ボタンのルールを作成 ](/help/forms/assets/save-form-as-drfat-create-rule.png)
+   ![&#x200B; ボタンのルールを作成 &#x200B;](/help/forms/assets/save-form-as-drfat-create-rule.png)
 
 アダプティブフォームをプレビューして入力し、「**フォームを保存**」ボタンをクリックすると、フォームはドラフトとして保存されます。
 
@@ -140,15 +140,15 @@ ht-degree: 14%
 
 >[!NOTE]
 >
-> 自動保存機能を使用してフォームをドラフトとして保存するには、[ コアコンポーネントのバージョンが 3.0.52 以降 ](https://github.com/adobe/aem-core-forms-components) に設定されていることを確認します。
+> 自動保存機能を使用してフォームをドラフトとして保存するには、[&#x200B; コアコンポーネントのバージョンが 3.0.52 以降 &#x200B;](https://github.com/adobe/aem-core-forms-components) に設定されていることを確認します。
 
-アダプティブフォームを、時間ベースのイベントに基づいて自動的に保存するように設定して、指定された期間の後にフォームが保存されるようにすることもできます。 [ ご利用の環境のForms ポータルコンポーネントを有効にする ](/help/forms/list-forms-on-sites-page.md#enable-forms-portal-components-for-your-existing-environment) と、Forms コンテナのプロパティに **自動保存** タブが表示されます。 アダプティブフォームの自動保存機能を設定できます。
+アダプティブフォームを、時間ベースのイベントに基づいて自動的に保存するように設定して、指定された期間の後にフォームが保存されるようにすることもできます。 [&#x200B; ご利用の環境のForms ポータルコンポーネントを有効にする &#x200B;](/help/forms/list-forms-on-sites-page.md#enable-forms-portal-components-for-your-existing-environment) と、Forms コンテナのプロパティに **自動保存** タブが表示されます。 アダプティブフォームの自動保存機能を設定できます。
 
 1. オーサーインスタンスで、アダプティブフォームを編集モードで開きます。
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
-1. 「ガイドコンテナのプロパティ ![ ガイドプロパティ ](/help/forms/assets/configure-icon.svg)」アイコンをクリックし、「**[!UICONTROL ドラフト]**」タブを開きます。
+1. 「ガイドコンテナのプロパティ ![&#x200B; ガイドプロパティ &#x200B;](/help/forms/assets/configure-icon.svg)」アイコンをクリックし、「**[!UICONTROL ドラフト]**」タブを開きます。
 
-   ![ 自動保存 ](/help/forms/assets/auto-save.png)
+   ![&#x200B; 自動保存 &#x200B;](/help/forms/assets/auto-save.png)
 
 1. 「**[!UICONTROL ドラフトを自動的に保存]**」チェックボックスをオンにして、フォームをドラフトとして自動保存できるようにします。
 1. **[!UICONTROL 環境設定を保存]** を **一定の間隔でドラフトを保存** として設定し、特定の時間間隔の後にフォーム <!--based on the occurrence of an event or--> ージを自動保存します。
@@ -157,12 +157,12 @@ ht-degree: 14%
 
 ## ドラフト&amp;送信コンポーネントを使用して、Sites ページでドラフト/送信済みフォームを表示する
 
-保存されたドラフトまたは送信されたフォームを表示するには、**ドラフトと送信**Forms ポータルコンポーネントを使用します。
-**[!UICONTROL ドラフトと送信コンポーネントの設定ダイアログ]** で **タイプを選択** が [ ドラフトForms](#configure-properties-of-the-drafts--submissions-component) として選択されている場合、ドラフトとして保存されたフォームは Sites ページに表示されます。 ドラフトを開くには、省略記号（...）をクリックしてフォームを完成させます。
+保存されたドラフトまたは送信されたフォームを表示するには、**ドラフトと送信**&#x200B;Forms ポータルコンポーネントを使用します。
+**[!UICONTROL ドラフトと送信コンポーネントの設定ダイアログ]** で **タイプを選択** が [&#x200B; ドラフトForms](#configure-properties-of-the-drafts--submissions-component) として選択されている場合、ドラフトとして保存されたフォームは Sites ページに表示されます。 ドラフトを開くには、省略記号（...）をクリックしてフォームを完成させます。
 
 ![下書きアイコン](assets/drafts-component.png)
 
-**[!UICONTROL ドラフト&amp;送信コンポーネントの設定ダイアログ]** で **タイプを選択** が [ 送信済みForms](#configure-properties-of-the-drafts--submissions-component) として選択されている場合、送信済みフォームが表示されます。 送信されたフォームは表示できますが、編集することはできません。
+**[!UICONTROL ドラフト&amp;送信コンポーネントの設定ダイアログ]** で **タイプを選択** が [&#x200B; 送信済みForms](#configure-properties-of-the-drafts--submissions-component) として選択されている場合、送信済みフォームが表示されます。 送信されたフォームは表示できますが、編集することはできません。
 
 ![送信アイコン](assets/submission-listing.png)
 
@@ -174,7 +174,7 @@ ht-degree: 14%
 
 ## 次の手順
 
-次の記事では、[Formsポータルのリンクコンポーネントを使用してサイトページ上のフォームに参照を追加する方法 ](/help/forms/add-form-link-to-aem-sites-page.md) について説明します。
+次の記事では、[Formsポータルのリンクコンポーネントを使用してサイトページ上のフォームに参照を追加する方法 &#x200B;](/help/forms/add-form-link-to-aem-sites-page.md) について説明します。
 
 ## 関連記事
 

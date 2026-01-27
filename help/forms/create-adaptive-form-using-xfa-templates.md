@@ -43,11 +43,11 @@ XFA または XDP フォームテンプレートを使用してアダプティ�
 1. [!DNL Experience Manager Forms] オーサーインスタンスにログインします。
 1. Experience Manager のログインページに資格情報を入力します。 ログイン後、左上隅の **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
 
-   ![Formsとドキュメント ](/help/forms/assets/create-fdm.png)
+   ![Formsとドキュメント &#x200B;](/help/forms/assets/create-fdm.png)
 
 1. **[!UICONTROL 作成]**/**[!UICONTROL アダプティブForms]** を選択します。
 
-   ![ アダプティブフォームの作成 ](/help/forms/assets/create-af.png)
+   ![&#x200B; アダプティブフォームの作成 &#x200B;](/help/forms/assets/create-af.png)
 
    フォーム作成ウィザードが開きます。
 1. 「**Source**」タブで、コアコンポーネントに基づくテンプレートを選択します。
@@ -56,15 +56,15 @@ XFA または XDP フォームテンプレートを使用してアダプティ�
 
    テンプレートを選択すると、テンプレートで指定されたテーマと送信アクションが自動的に選択され、「**[!UICONTROL 作成]**」ボタンが有効になります。
 
-   ![ テーマを選択 ](/help/forms/assets/select-form-theme.png)
+   ![&#x200B; テーマを選択 &#x200B;](/help/forms/assets/select-form-theme.png)
 
 1. 「**[!UICONTROL 作成]**」を選択します。アダプティブフォームを保存するためのタイトル、名前および場所を指定するためのダイアログが表示されます。
 1. タイトル、名前、場所を指定します。
 1. 「**[!UICONTROL 作成]**」を選択します。
-   ![ 名前とタイトルの入力 ](/help/forms/assets/create-form.png)
+   ![&#x200B; 名前とタイトルの入力 &#x200B;](/help/forms/assets/create-form.png)
 
    アダプティブフォームが作成され、アダプティブフォームエディターで開きます。 エディターに、テンプレートで使用可能なコンテンツが表示されます。
-1. ![ ページ情報 ](/help/forms/assets/Smock_Properties_18_N.svg)/**[!UICONTROL プロパティを開く]** を選択します。
+1. ![&#x200B; ページ情報 &#x200B;](/help/forms/assets/Smock_Properties_18_N.svg)/**[!UICONTROL プロパティを開く]** を選択します。
 
    ![プロパティを開く](/help/forms/assets/form-properties.png)
 
@@ -72,11 +72,11 @@ XFA または XDP フォームテンプレートを使用してアダプティ�
 1. 「**[!UICONTROL フォームモデル]**」タブに移動し、「**フォームテンプレート**」を選択します。
 1. ドロップダウンリストから.xdp ファイルを選択します。
 
-   ![XDP ファイルを選択 ](/help/forms/assets/select-xdp-file.png)
+   ![XDP ファイルを選択 &#x200B;](/help/forms/assets/select-xdp-file.png)
 
    警告ダイアログボックスが画面に表示されます。 **OK** をクリックして、先に進みます。
 
-   ![ 警告ダイアログ ](/help/forms/assets/fdm-warning.png)
+   ![&#x200B; 警告ダイアログ &#x200B;](/help/forms/assets/fdm-warning.png)
 
 1. 「**[!UICONTROL 保存して閉じる]**」を選択して、プロパティを保存します。
 
@@ -89,5 +89,5 @@ XFA または XDP フォームテンプレートを使用してアダプティ�
 
 >[!NOTE]
 >
-> 追加されたフィールドのパネルツールバーを使用して、XDP フォームフィールドのスクリプトを無効にすることができます。 [ ビジュアルルールエディター ](/help/forms/rule-editor-core-components.md) を使用して、追加されたフィールドにロジックを作成します。
+> 追加されたフィールドのパネルツールバーを使用して、XDP フォームフィールドのスクリプトを無効にすることができます。 [&#x200B; ビジュアルルールエディター &#x200B;](/help/forms/rule-editor-core-components.md) を使用して、追加されたフィールドにロジックを作成します。
 
