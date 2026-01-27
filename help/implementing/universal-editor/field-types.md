@@ -4,10 +4,10 @@ description: ユニバーサルエディターがプロパティパネルで編�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
+source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
 workflow-type: tm+mt
-source-wordcount: '1604'
-ht-degree: 97%
+source-wordcount: '1617'
+ht-degree: 96%
 
 ---
 
@@ -103,6 +103,10 @@ ht-degree: 97%
 | `multi` | `boolean` | このフィールドはマルチフィールドですか？<br/>プロパティパネルのマルチフィールドでは、コンテナーのネストは許可されていない点に注意してください。 | いいえ |
 | `validation` | `ValidationType` | フィールドの検証ルール | いいえ |
 | `raw` | `unknown` | コンポーネントで使用できる生データ | いいえ |
+
+>[!NOTE]
+>
+>`_` プラグインまたは [`aem` プラグインを使用する場合、フィールド名にアンダースコア（`xwalk`）は使用できません。](/help/implementing/universal-editor/component-definition.md#plugins)
 
 ### 名前フィールドとネスト {#nesting}
 

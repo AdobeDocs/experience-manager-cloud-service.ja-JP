@@ -4,10 +4,10 @@ description: コンポーネント定義とユニバーサルエディター間�
 feature: Developing
 role: Admin, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 100%
+source-wordcount: '614'
+ht-degree: 97%
 
 ---
 
@@ -94,9 +94,9 @@ ht-degree: 100%
 
 `plugins` は、コンポーネントの永続化を担当するプラグインを定義します。一般的なプラグインを次に示します。
 
-* [AEM as a Cloud Service](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service) の 。`aem`
-* [AEM 6.5](https://experienceleague.adobe.com/ja/docs/experience-manager-65) および [AEM 6.5 LTS](https://experienceleague.adobe.com/ja/docs/experience-manager-65-lts) の `aem65`
+* `aem`AEM as a Cloud Service、[ ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service)AEM 6.5.,[ および ](https://experienceleague.adobe.com/ja/docs/experience-manager-65)AEM 6.5 LTS[ の ](https://experienceleague.adobe.com/ja/docs/experience-manager-65-lts)
 * [Edge Delivery Services 向け AEM Sites を使用したオーサリング](https://www.aem.live/developer/ue-tutorial)の `xwalk`。
+* `da` ドキュメントのオーサリング [ の ](https://docs.da.live/developers/reference/universal-editor)
 
 ## `page` または `cf` {#page-cf}
 
