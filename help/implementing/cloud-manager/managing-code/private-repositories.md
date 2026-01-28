@@ -4,10 +4,10 @@ description: 独自のプライベート GitHub リポジトリを操作する C
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 892339482c009edf9f73560f2a4b66f4317843fe
 workflow-type: tm+mt
 source-wordcount: '1000'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 >* GitHub Enterprise Server（GitHub の自己ホスト型バージョン）リポジトリ。
 >* GitLab（GitLab の `gitlab.com` バージョンと自己ホスト型バージョンの両方）リポジトリ。
 >* Bitbucket（`bitbucket.org` と Bitbucket Server の両方および自己ホスト型バージョンの Bitbucket）リポジトリ。
->* Azure DevOps（[dev.azure.com](http://dev.azure.com) と Azure DevOps の自己ホスト型バージョン）リポジトリ。
+>* Azure DevOps（[dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min) と Azure DevOps の自己ホスト型バージョン）リポジトリ。
 >
 >詳しくは、[Cloud Manager での外部リポジトリの追加 - Private Beta](/help/implementing/cloud-manager/managing-code/external-repositories.md) を参照してください。
 
