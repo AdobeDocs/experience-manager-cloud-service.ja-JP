@@ -42,7 +42,7 @@ Adobe Experience Manager（AEM）Formsは、データキャプチャエクスペ
 - **スタイル設定方法**:BEM （ブロック要素修飾子） CSS 規則
 - **コンテンツ保存場所**：構造化コンテンツノードを含む JCR リポジトリ
 - **レンダリング**：オプションのクライアントサイドヘッドレスレンダリングを使用した、AEMでのサーバーサイドレンダリング
-- **Source**: オープンソース（.GitHub[ で入手可能 ](https://github.com/adobe/aem-core-forms-components)
+- **Source**: オープンソース（.GitHub[&#x200B; で入手可能 &#x200B;](https://github.com/adobe/aem-core-forms-components)
 
 ### レンダリングモデル
 
@@ -415,4 +415,4 @@ EDS Formsは、次の 2 つのオーサリング・アプローチをサポー�
 - [ユニバーサルエディターの概要](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
 - [ドキュメントベースのオーサリングのチュートリアル](/help/edge/docs/forms/tutorial.md)
 - [移行ユーティリティツール](/help/forms/migration-utility-tool-for-af-core-components.md)
-- [GitHub のAEM Forms コアコンポーネント ](https://github.com/adobe/aem-core-forms-components)
+- [GitHub のAEM Forms コアコンポーネント &#x200B;](https://github.com/adobe/aem-core-forms-components)
