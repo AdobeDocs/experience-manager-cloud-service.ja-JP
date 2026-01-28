@@ -14,7 +14,7 @@ ht-degree: 84%
 
 # マークダウン {#markdown}
 
-[ オーサリング ](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) 中に、コンテンツフラグメントで [ 複数行テキストフィールド ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) が **Markdown** の **デフォルトタイプ** で定義されている場合があります。 コンテンツフラグメントエディターは、ページオーサリングとヘッドレス配信の両方に&#x200B;*マークダウン*&#x200B;構文を使用して、ユーザーがコンテンツを簡単に作成できるようにします。
+[&#x200B; オーサリング &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) 中に、コンテンツフラグメントで [&#x200B; 複数行テキストフィールド &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) が **Markdown** の **デフォルトタイプ** で定義されている場合があります。 コンテンツフラグメントエディターは、ページオーサリングとヘッドレス配信の両方に&#x200B;*マークダウン*&#x200B;構文を使用して、ユーザーがコンテンツを簡単に作成できるようにします。
 
 ![エディター内のマークダウン複数行テキストフィールド](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
@@ -166,7 +166,7 @@ ht-degree: 84%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-コードの範囲を示すには、バッククォート（`）で囲みます。事前に書式設定されたコードブロックとは異なり、コード範囲は通常の段落内のコードを示します。
+コードの範囲を示すには、バッククォート（&grave;）で囲みます。事前に書式設定されたコードブロックとは異なり、コード範囲は通常の段落内のコードを示します。
 
 例：
 
