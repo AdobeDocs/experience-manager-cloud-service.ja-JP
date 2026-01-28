@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 278242e0be1da5c64abfa5d9ac174013688ff422
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 100%
+source-wordcount: '559'
+ht-degree: 84%
 
 ---
 
 # マークダウン {#markdown}
 
-コンテントフラグメントを[オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown)している場合、**マークダウン**&#x200B;の&#x200B;**ディフォルトタイプ**&#x200B;で定義されている[複数のラインテキストフィールド](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)がある可能性があります。コンテンツフラグメントエディターは、ページオーサリングとヘッドレス配信の両方に&#x200B;*マークダウン*&#x200B;構文を使用して、ユーザーがコンテンツを簡単に作成できるようにします。
+[ オーサリング ](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) 中に、コンテンツフラグメントで [ 複数行テキストフィールド ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) が **Markdown** の **デフォルトタイプ** で定義されている場合があります。 コンテンツフラグメントエディターは、ページオーサリングとヘッドレス配信の両方に&#x200B;*マークダウン*&#x200B;構文を使用して、ユーザーがコンテンツを簡単に作成できるようにします。
 
 ![エディター内のマークダウン複数行テキストフィールド](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 ## 見出し表記 {#heading-notation}
 
-ハッシュタグ（#）を前に付けてヘッダーを作成します。H1 にはハッシュタグを 1 つ（#）、H2 にはハッシュタグを 2 つ（##）使用します。最大で 6 個のハッシュタグを使用できます。次に例を示します。
+ハッシュタグ（#）を前に付けてヘッダーを作成します。1 つのハッシュ タグ （#）は H1、2 つのハッシュ タグ （##）は H2 などを示します。 最大で 6 個のハッシュタグを使用できます。例：
 
     `## This is an H2`
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 
     `###### This is a H6`
 
-オプションで、テキストに等号で下線を付けて H1、マイナス符号で下線を付けて H2 を作成することもできます。次に例を示します。
+オプションで、テキストに等号で下線を付けて H1、マイナス符号で下線を付けて H2 を作成することもできます。例：
 
     `This is an H1`
 
@@ -66,7 +66,7 @@ ht-degree: 100%
 
     `This is [an example](https://example.com/ "Title") inline link.`
 
-    `This is [an example of an email link](emailto:myaddress@mydomain.info)`
+    `This is [an example (non-standard) of an email link](emailto:myaddress@mydomain.info)`
 
     `[This link](https://example.net/) has no title attribute.`
 
@@ -106,7 +106,7 @@ ht-degree: 100%
 
 ## ブロック引用 {#block-quotes}
 
-テキストを引用するときは、テキストの先頭に > 記号を付けます。次に例を示します。
+テキストを引用するときは、テキストの先頭に > 記号を付けます。例：
 
     `>This is block quotes`
 
@@ -114,7 +114,7 @@ ht-degree: 100%
 
     `>asdfahsdlfasdfj`
 
-ブロック引用はネストできます。次に例を示します。
+ブロック引用はネストできます。例：
 
     `> This is the first level of quoting.`
 
@@ -130,7 +130,7 @@ ht-degree: 100%
 
 順序付きと順序なし両方のリストを作成できます。
 
-順序なしリストを作成するには、* 記号をリストの項目の前に付けます。次に例を示します。
+順序なしリストを作成するには、* 記号をリストの項目の前に付けます。例：
 
     `* item in list`
 
@@ -138,7 +138,7 @@ ht-degree: 100%
 
     `* item in list`
 
-順序付きリストを作成するには、数字の後にピリオドを付けて、リストの項目の前に付けます。次に例を示します。
+順序付きリストを作成するには、数字の後にピリオドを付けて、リストの項目の前に付けます。例：
 
     `1. First item in list.`
 
@@ -150,7 +150,7 @@ ht-degree: 100%
 
 斜体または太字のスタイルをテキストに追加できます。
 
-次のように斜体を追加できます。
+斜体は次のように追加できます。
 
     `*single asterisks*`
 
@@ -166,15 +166,15 @@ ht-degree: 100%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-コードの範囲を示すには、バッククォート（&grave;）で囲みます。事前に書式設定されたコードブロックとは異なり、コード範囲は通常の段落内のコードを示します。
+コードの範囲を示すには、バッククォート（`）で囲みます。事前に書式設定されたコードブロックとは異なり、コード範囲は通常の段落内のコードを示します。
 
-次に例を示します。
+例：
 
     ``Use the `printf()` function.``
 
 ## コードブロック {#code-blocks}
 
-コードブロックは通常はソースコードを示すために使用されます。コードブロックを作成するには、1 個のタブまたは少なくとも 4 個分のスペースを使用してコードをインデントします。次に例を示します。
+コードブロックは通常はソースコードを示すために使用されます。コードブロックを作成するには、1 個のタブまたは少なくとも 4 個分のスペースを使用してコードをインデントします。例：
 
     `This is a normal paragraph.`
 
@@ -182,7 +182,7 @@ ht-degree: 100%
 
 ## バックスラッシュエスケープ {#backslash-escapes}
 
-書式設定構文で特殊な意味を持つリテラル文字を表示するには、バックスラッシュエスケープを使用します。例えば、ある単語を（HTML の &lt;em> タグではなく）リテラルアスタリスクで囲みたい場合は、次のようにアスタリスクの前にバックスラッシュを使用します。
+バックスラッシュエスケープを使用すると、書式設定構文に特別な意味を持つリテラル文字を生成できます。 例えば、単語を（HTML &lt;em> タグの代わりに）リテラルのアスタリスクで囲む場合は、次のように、アスタリスクの前にバックスラッシュを使用できます。
 
     `\\*literal asterisks\\*`
 
