@@ -1,20 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Serviceの最新のリリースノート'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート。'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.12.0 リリースのリリースノート。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.12.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: e4bab603da7022d868ce729309945649aa44d0fb
+source-git-commit: 9e81e0f3ed4b3e4ac02655cf4203191c61007b1d
 workflow-type: tm+mt
-source-wordcount: '2195'
-ht-degree: 38%
+source-wordcount: '1951'
+ht-degree: 48%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の 2025.12.0 リリースノート {#release-notes}
 
-以下のセクションでは、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンの機能リリースノートの概要について説明します。
+以下の節では、[!DNL Experience Manager] as a Cloud Service の 2025.12.0 バージョンの機能リリースノートの概要について説明します。
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ ht-degree: 38%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2026.1.0）のリリース日は、2026年1月29日（PT）です。次回の機能リリース（2026.2.0）は、2026年2月26日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2025.12.0）の公開日は 2025年12月11日（PT）です。次回の機能リリース（2026.1.0）は 2026年1月29日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -69,8 +67,6 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様お
 * エージェントを積極的に使用するチームメンバーの名前とAdobe ID。
 * 自分または自分のチームが使用する特定のエージェントのリスト。 または、単に「すべてのエージェント」と言います。
 
-参加者として選択されたお客様には、Adobeから直接通知が届きます。 参加には、顧客のライセンスや限定的なプログラム処理能力など、実施要件に関する考慮事項が必要です。 最初にすべてのリクエストに対応できるわけではありませんが、今後のベータ版では、追加のお客様の対応が検討される可能性があります。
-
 ### AEM財団（Beta プログラム） {#aem-foundation-beta-programs}
 
 [AEM Foundation ベータプログラム ](#foundation-early-adopter) を参照してください。
@@ -79,34 +75,26 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様お
 
 [Cloud Manager ベータプログラム ](/help/implementing/cloud-manager/release-notes/current.md) を参照してください。
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### Content MCP サーバー {#content-MCP}
-
-チャットアプリケーション（例：ChatGPT）および最新の IDE （例：Cursor）は、Model Context Protocol （MCP）を使用して、MCP サーバーによって公開された大規模言語モデル（LLM）がツールを呼び出せるようにします。 低レベルの API 仕様に対応するコードを記述する代わりに、必要なものを自然言語で記述し、その意図を適切な API 呼び出しに変換させることができます。 また、場合によっては、プロンプトは、ユーザーインターフェイスをナビゲートするよりも便利です。
-
-例えば、ChatGPT に次のプロンプトを表示できます。*AEMで/en/coffee.htmlを編集します。コンテンツ内の Frescopa Coffee というテキストを、20 歳のユーザーが希望する値に変更します。*
-
-AEMには、**Pages**、{ コンテンツフラグメント **、** Assets **を操作するためのツールを備えた、** 読み取り専用 **と** 読み取り/書き込み **の 2 つのコンテンツ MCP サーバーが用意されてい** す。 これらのサーバは、**ChatGPT**、**Claude**、**Cursor**、および **Microsoft Copilot Studio** の MCP クライアントから使用できます。
-
-詳しくは、[AEM Cloud Service での MCP の使用 ](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) を参照してください。 ご質問やご意見については、[aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com) までお問い合わせください。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**AI 検索**
+**AEM Assetsと統合するための Figma プラグインの新しいバージョンが利用可能です**
 
-AI 検索は、ユーザークエリの背後にある意味と意図を理解することで、従来のキーワード照合を超えたインテリジェントなコンテキスト認識検索エクスペリエンスを導入します。 AI と機械学習を活用することで、クエリの言葉遣いが異なる場合、スペルミスが含まれている場合、同義語を使用する場合、異なる言語で送信された場合でも、より正確な結果が得られ、ユーザーが関連性の高いコンテンツを少ない労力でより迅速に見つけることができます。
+* AEM リポジトリから Figma ドキュメントにアセットを読み込む際の、ビデオファイル（MP4、MOV、WebM）、アニメーションファイル（GIF）、ベクターファイル（SVG）のサポート。
 
-詳しくは、[Assets ビューの AI 検索 ](/help/assets/search-assets-view.md#ai-search) および [ 管理者ビュー ](/help/assets/search-assets.md#ai-search) を参照してください。
+* AEM リポジトリ内のアセットと比較して、Figma ドキュメントで使用されているアセットに更新があるかどうかの確認、および更新がある場合のアセットの最新バージョンの取得のサポート。
 
-**デスクトップアプリケーション 3.0.1 リリース**
+* PNG （scale）およびJPG（image scale and quality）ファイル形式の書き出し時の書き出し設定のサポート。
 
-[ デスクトップアプリ 3.0.1 （2025 年 12 月 20 日（PT）） ](https://experienceleague.adobe.com/ja/docs/experience-manager-desktop-app/using/release-notes) 主要なワークフロー全体で信頼性、パフォーマンス、安定性を向上させます。 このリリースでは、AEM オーサーとの同期の問題を修正することで一貫したフォルダー名が保証され、アクティブな転送中のアプリの中断のない使用が可能になり、非同期処理による UI の応答性が向上し、ページネーションを使用した大きなファイル転送が最適化され、大きなフォルダーのアップロードおよびダウンロード中のオーサーサーバーの再起動やクラッシュなどの安定性の問題が解決されます。
+  ![Figma プラグイン ](/help/assets/assets/figma-v2-plugin.png)
 
-**Adobe Asset Link CEP 2026.01.0 リリース**
+**アップロードされたアセットのマルウェア検出**
 
-[Adobe Asset Link CEP 2026.01.0](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)InDesignに、同じAEM フォルダーから他の欠落しているアセットを自動的に再リンクする新しい「欠落しているリンクを再リンク」オプションが導入されました。 この機能は、ファイル名に基づいてアセットを照合し、壊れたリンクを復元する際の手動での作業を大幅に削減します。
+AEM Assetsには、アップロードされたファイルの自動マルウェアスキャンが含まれるようになりました。これにより、リポジトリを脅威から保護するために、DAM に入る前に疑わしいアセットが確実に隔離されます。 管理者は、スキャン設定と強制隔離の保持ポリシーを設定して、セキュリティ制御を効率化できます。
 
+**AI が生成したメタデータ – 実施要件の更新**
+
+AEM Assetsで AI によって生成されたメタデータを有効にするために、GenAI Rider に署名する必要がなくなりました。 この機能は、GenAI Rider に署名したお客様と、まだ検証されていないお客様の両方が利用できるようになりました。 GenAI の使用を明示的にオプトアウトした顧客は、引き続き機能を無効にできます。 環境レベルで機能イネーブルメントを管理するには、[AI 生成メタデータの無効化 ](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata) を参照してください。 この変更は、リリースバージョン 23482 以降のお客様に対して行われます。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -167,18 +155,11 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
-### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation に関する重要な注意事項 {#foundation-notices}
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation の新機能 {#foundation-new}
 
-#### Java API の非推奨化 {#java-api-deprecation}
+#### 今後の Java API の非推奨（廃止予定） {#java-api-deprecation}
 
-2026 年 2 月 26 日（PT）の削除をターゲットにした非推奨の API は、コードでは使用されなくなります。 デプロイメントブロックを防ぐには、2026 年 3 月 26 日（PT）より前に、API の使用を削除します。 重要な日付：
-
-* **2026 年 1 月 26 日以降**：これらの API の使用を削除するためのリマインダーとして、アクションセンターの通知メールが **環境ごとに毎週** 送信されます。
-* **2026 年 2 月 26 日（PT）**：これらの API を使用したコードを含むCloud Manager パイプラインは、**コード品質** ステップ中に **一時停止** されます。 デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナーは、問題をオーバーライドしてパイプラインを続行できます。
-* **2026 年 3 月 26 日**：これらの API を使用するコードを含んだCloud Manager パイプラインは、新しいコードの **コード品質** ステップ、**デプロイメントのブロック** 中に使用が削除されるまで **失敗** します。
-* **2026 年 4 月 30 日**：これらの API をまだ使用している環境は、**Adobe リリースの重要なアップデートを受け取れなくなる** 可能性があります。
-
-詳しくは、[非推奨（廃止予定）に関する記事](/help/release-notes/deprecated-removed-features.md#aem-apis)を参照してください。便宜上、これらの API を次に示します。
+一部の非推奨（廃止予定）API は、8月31日（PT）の削除としてマークされたので、参照できなくなります。コードに非推奨の API の使用が検出された場合は、アクションセンターから通知が届きます。1.29 日以降は、Cloud Manager ビルド中に通知が表示され、使用を削除することが重要になります。 詳しくは、[非推奨（廃止予定）に関する記事](/help/release-notes/deprecated-removed-features.md#aem-apis)を参照してください。便宜上、これらの API を次に示します。
 
 +++ 展開して Java API の非推奨（廃止予定）について確認
 
@@ -212,7 +193,7 @@ OSGi properties:
 
 #### Java 11 ランタイムの非推奨（廃止予定） {#java11-runtime-deprecation}
 
-Adobeは 2025 年 10 月 14 日に **ステージング** 環境と **実稼動** 環境を高性能の **Java 21 ランタイム** にアップグレードしました。 **2 月 9 日（PT）** から（2 月 11 日（PT）まで段階的にロールアウト）、AEM Cloud Service SDKもクラウド環境も Java 11 ランタイムでは動作しません。
+Adobeは 2025 年 10 月 14 日に **ステージング** 環境と **実稼動** 環境を高性能の **Java 21 ランタイム** にアップグレードしました。 **2 月 9 日** 以降、AEM Cloud Service SDKおよびすべてのクラウド環境は、Java 11 ランタイムでは動作しません。
 
 >[!NOTE]
 >
@@ -221,9 +202,9 @@ Adobeは 2025 年 10 月 14 日に **ステージング** 環境と **実稼動*
 
 #### AEM Java ログ設定ポリシーの適用 {#logconfig-policy}
 
-すべてのお客様の環境で信頼性の高い監視を行うには、AEMの Java ログが標準形式に従う必要があります。 ログ形式、出力ファイル、デフォルトログレベルの変更といったカスタムログ設定は、サポートされなくなりました。 ログはデフォルトファイルにダイレクトされ続け、AEM 製品コードのデフォルトログレベルは保持される必要があります。 詳しくは、[ログに関する記事](/help/implementing/developing/introduction/logging.md#configuration-loggers)を参照してください。
+4 月のリリースノートに記載されているように、AEMの Java ログは、すべてのお客様の環境で信頼性の高い監視を確実に行うために、標準に従う必要があります。 ログ形式、出力ファイル、デフォルトログレベルの変更といったカスタムログ設定は、サポートされなくなりました。 ログはデフォルトファイルにダイレクトされ続け、AEM 製品コードのデフォルトログレベルは保持される必要があります。 詳しくは、[ログに関する記事](/help/implementing/developing/introduction/logging.md#configuration-loggers)を参照してください。
 
-サポートされていないカスタムログの上書き *無視されるようになりました*。 ほとんどのお客様には影響はありませんでした。また、Adobeからは、現在の設定が影響を受ける可能性があるお客様に連絡しています。
+**1 月 29 日** 以降、サポートされていないカスタムログの上書きは無視されます。 Adobe の分析によると、ほとんどのお客様は影響を受けることはありません。現在の設定が影響を受ける可能性があるお客様にはご連絡済みです。
 
 カスタムログ動作に依存するダウンストリームプロセスを確認し、更新してください。 例：
 
@@ -245,9 +226,9 @@ Adobeは 2025 年 10 月 14 日に **ステージング** 環境と **実稼動*
 >プログラムでアクティブ化するには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信してください。
 >
 
-#### AEM Edge関数（Beta プログラム） {#edge-functions}
+#### Edge コンピューティング（Beta プログラム）
 
-AEM Edge関数（以前のリリースノートでは *Edge Computing* と呼ばれていました）を使用すると、CDN レイヤーでJavaScriptを実行し、データ処理をエンドユーザーに近づけることができます。 これにより待ち時間が短縮され、エッジでレスポンシブな動的エクスペリエンスが実現します。
+Edge コンピューティングを使用すると、CDN レイヤーで JavaScript を実行し、データ処理をエンドユーザーに近づけることができます。 これにより待ち時間が短縮され、エッジでレスポンシブな動的エクスペリエンスが実現します。
 
 一般的なユースケースを次に示します。
 
@@ -273,6 +254,7 @@ Edge 認証を使用すると、Edge Delivery Services ページへのアクセ�
 
 アクセスをリクエストしてフィードバックを共有するには、[aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) にメールを送信してください。
 
+
 #### AI 回答 – AEM Sitesに対する、よりスマートでコンテキスト対応の応答（Beta プログラム） {#ai-answers-beta}
 
 AI Answers は、訪問者がコンテンツを操作する新しい方法を導入します。 Retrieval-Augmented Generation （RAG）テクノロジーを活用し、AEMが管理するデータを使用して、デジタルエクスペリエンス内で直接、正確でブランドに一貫性のある回答を提供します。
@@ -287,14 +269,11 @@ AI AnswersBetaプログラムの立ち上げに備え、お客様の関心を登
 
 この機能の使用やフィードバックの提供に関心がある場合は、[aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) にメールを送信してください。
 
-#### AEM Java およびDispatcher開発用 IDE の AI ツール（Beta プログラム） {#ai-dev-beta}
+#### AI を使用したAEM開発の高速化（Alpha プログラム） {#ai-dev-alpha}
 
-Java スタックチームは、Cursor、Cloud Code、Visual Studio、IntelliJ などのツールで AI を利用した開発を使用して、機能の配信を高速化し、コード品質を向上させています。 ベータ版に参加して、次のことを行います。
+AEM Java スタックチームは、Cursor、Cloud Code、Visual Studio、IntelliJ などのツールで AI を利用した開発を行い、機能の配信を高速化し、コード品質を向上させています。 Adobeがサポートする将来の AI 機能を形成するのに役立つ、実際のエクスペリエンスを収集しています。
 
-* Adobeでサポートされる将来の AI 機能の形成に役立つ、実際のエクスペリエンスを共有する
-* AI エージェントでAEM コードおよび Dispatcher 設定の生成とデバッグに使用できる IDE ツールを試す
-
-詳しくは、[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) にメールを送信してください。
+[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) に電子メールを送信して、チームの活動内容やAdobeからの情報提供内容を共有します。
 
 #### アプリケーションパフォーマンスモニタリング（APM）の拡張（Alpha プログラム） {#apm-alpha}
 
