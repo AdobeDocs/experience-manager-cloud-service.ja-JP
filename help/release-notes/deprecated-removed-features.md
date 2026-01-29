@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 2923a79a69ae537eaad591035e4fce9f3c593b23
 workflow-type: tm+mt
-source-wordcount: '3194'
-ht-degree: 100%
+source-wordcount: '3434'
+ht-degree: 92%
 
 ---
 
@@ -28,6 +28,16 @@ ht-degree: 100%
 >[!WARNING]
 >
 >場合によっては、新しい Cloud Manager ビルドをデプロイする前や AEM as a Cloud Service の最新バージョンにアップグレードする前に、機能の削除が必要になることがあります。
+
+>[!IMPORTANT]
+>  一部の [ 非推奨の API](#aem-apis) については、**2026 年 2 月 26 日** に削除する予定です。 これらの主な日付と影響を確認してください。
+>
+> * **2026 年 1 月 26 日以降**：これらの API の使用を削除するためのリマインダーとして、アクションセンターの通知メールが **環境ごとに毎週** 送信されます。
+> * **2026 年 2 月 26 日（PT）**：これらの API を使用したコードを含むCloud Manager パイプラインは、**コード品質** ステップ中に **一時停止** されます。 デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナーは、問題をオーバーライドしてパイプラインを続行できます。
+> * **2026 年 3 月 26 日**：これらの API を使用するコードを含んだCloud Manager パイプラインは、新しいコードの **コード品質** ステップ、**デプロイメントのブロック** 中に使用が削除されるまで **失敗** します。
+> * **2026 年 4 月 30 日**：これらの API をまだ使用している環境は、**Adobe リリースの重要なアップデートを受け取れなくなる** 可能性があります。
+>
+> デプロイメントブロックを防ぐには、2026 年 3 月 26 日（PT）より前に、API の使用を削除します。
 
 ## 非推奨の機能 {#deprecated-features}
 
@@ -74,6 +84,17 @@ ht-degree: 100%
 
 以下の表の API（クリックして展開して確認）は、非推奨と発表されましたが、まだ削除されていません。  削除予定日までにこれらの API の使用を中止する必要があります。そうしないと、パフォーマンス、可用性、セキュリティに関連する問題が発生する可能性があります。 一部の API では、以下の API 削除ガイダンスの節が参照されています。
 
+>[!IMPORTANT]
+> 複数の API が **2026 年 2 月 26 日** に削除される予定です。 これらの主な日付と影響を確認してください。
+>
+> * **2026 年 1 月 26 日以降**：これらの API の使用を削除するためのリマインダーとして、アクションセンターの通知メールが **環境ごとに毎週** 送信されます。
+> * **2026 年 2 月 26 日（PT）**：これらの API を使用したコードを含むCloud Manager パイプラインは、**コード品質** ステップ中に **一時停止** されます。 デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナーは、問題をオーバーライドしてパイプラインを続行できます。
+> * **2026 年 3 月 26 日**：これらの API を使用するコードを含んだCloud Manager パイプラインは、新しいコードの **コード品質** ステップ、**デプロイメントのブロック** 中に使用が削除されるまで **失敗** します。
+> * **2026 年 4 月 30 日**：これらの API をまだ使用している環境は、**Adobe リリースの重要なアップデートを受け取れなくなる** 可能性があります。
+>
+> デプロイメントブロックを防ぐには、2026 年 3 月 26 日（PT）より前に、API の使用を削除します。
+
+
 <details>
   <summary>展開して、非推奨（廃止予定）の API のリストを確認します。</summary>
 <table style="table-layout:auto">
@@ -88,100 +109,100 @@ ht-degree: 100%
     <td>org.apache.sling.commons.auth<br>org.apache.sling.commons.auth.spi</td>
     <td>代替として、Sling の Auth Core／Auth Core SPI インターフェイスを使用します。 <a href="#org.apache.sling.commons.auth">以下の削除に関するメモを参照してください。</a></td>
     <td>2015</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
 <td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>
     <td>Eclipse Jetty パッケージと Felix Http Jetty パッケージはサポートされなくなりました。 <a href="#org.eclipse.jetty">以下の削除に関するメモを参照してください。</a></td>
     <td>2021/5/27</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
  <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
     <td>この API の使用は、AEM as a Cloud Service ではサポートされていません。 <a href="#com.mongodb">以下の削除に関するメモを参照してください。</a></td>
     <td>2021/5/27</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
    <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
     <td>Apache Abdera が 2017年以降廃止されたプロジェクトなので、この API は廃止されました。 <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">以下の削除に関するメモを参照してください。</a></td>
     <td>2021/7/29</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
     <td>Apache Abdera が 2017年以降廃止されたプロジェクトなので、この API は廃止されました。 <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">以下の削除に関するメモを参照してください。</a></td>
     <td>2019/4/8</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
     <td>Apache Felix Http ホワイトボードはサポートされなくなりました。 コードを OSGi Http ホワイトボードに移行します。 <a href="#org.apache.felix.http.whiteboard">以下の削除に関するメモを参照してください。</a></td>
     <td>2022年1月27日（PT）</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
     <td>この API は非推奨（廃止予定）です。 JDK が提供する XML API にコードを移行してください。</td>
     <td>2022年1月27日（PT）</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
     <td>AEM as a Cloud Service は、この内部ログバック API をサポートしていません。 <a href="#ch.qos.logback">以下の削除に関するメモを参照してください。</a></td>
     <td>2022年1月27日（PT）</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
     <td>AEM as a Cloud Service は、この内部 log4j API をサポートしていません。 <a href="#org.slf4j">以下の削除に関するメモを参照してください。</a></td>
     <td>2022年1月27日（PT）</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
     <td>Apache Log4j 1 は 2015年に提供が終了し、サポートは終了しました。 <a href="#org.apache.log4j">以下の削除に関するメモを参照してください。</a></td>
     <td>2022年1月27日（PT）</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
     <td>Google Guava コアライブラリは Cloud Service で廃止されました。 <a href="#com.google.common">以下の削除に関するメモを参照してください。</a></td>
     <td>2023/5/15</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.slf4j.event</td>
     <td>AEM as a Cloud Service は、この内部 slf4j API をサポートしていません。 <a href="#org.slf4j">以下の削除に関するメモを参照してください。</a></td>
     <td>2022/4/11</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr> 
     <tr>
     <td>com.drew.*</td>
     <td>画像やビデオからのメタデータの抽出には、Cloud Service の Asset Compute、Apache POI または Apache Tika を使用する必要があります。</td>
     <td>2024年9月17日（PT）</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
     <td>この API は内部でのみ使用されます。</td>
     <td>2024/9/23</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.memory</td>
     <td>この API は内部でのみ使用されます。</td>
     <td>2024/9/23</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
 <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
     <td>Felix web コンソールはクラウド環境ではサポートされていません。 <a href="#org.apache.felix.webconsole">以下の削除に関するメモを参照してください。</a></td>
     <td>2021/4/30</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
 <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>この API の使用は、AEM as a Cloud Service ではサポートされていません。</td>
     <td>2022/10/31</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>  
   <tr>
     <td>org.apache.sling.runmode</td>
