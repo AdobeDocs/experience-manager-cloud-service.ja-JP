@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
+source-git-commit: 519319f137065c1ccc8778e42c7de8f23fb5c104
 workflow-type: tm+mt
-source-wordcount: '2657'
-ht-degree: 86%
+source-wordcount: '2710'
+ht-degree: 81%
 
 ---
 
@@ -25,27 +25,35 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->このドキュメントは、ユニバーサルエディターへのアクセスと操作の方法を、ユーザーが既に理解していることを前提としています。そうでない場合は、[&#x200B; ユニバーサルエディターへのアクセスとナビゲート &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md) を参照してください。
+>このドキュメントは、ユニバーサルエディターへのアクセスと操作の方法を、ユーザーが既に理解していることを前提としています。そうでない場合は、[ ユニバーサルエディターへのアクセスとナビゲート ](/help/sites-cloud/authoring/universal-editor/navigation.md) を参照してください。
 
 >[!TIP]
 >
->ユニバーサルエディターの詳細については、「[&#x200B; ユニバーサルエディターの概要 &#x200B;](/help/implementing/universal-editor/introduction.md) を参照してください。
+>ユニバーサルエディターの詳細については、「[ ユニバーサルエディターの概要 ](/help/implementing/universal-editor/introduction.md) を参照してください。
 
 ## コンテンツの編集 {#editing-content}
 
-コンテンツの編集はシンプルで直感的です。エディターでコンテンツにマウスカーソルを重ねると、編集可能なコンテンツが薄い青色のアウトラインでハイライト表示されます。
+コンテンツの編集はシンプルで直感的です。エディターでコンテンツにマウスを移動すると、編集可能なコンテンツが薄い明るい青のアウトラインとバッジでハイライト表示されます。
 
-![編集可能コンテンツが青いボックスでハイライト表示される](assets/editable-content.png)
+![ 編集可能コンテンツが明るい青のボックスでハイライト表示される ](assets/editable-content.png)
+
+ハイライト表示されたコンテンツをタップまたはクリックすると、薄く明るい青のアウトラインが濃い青のアウトラインに変化し、バッジも表示されます。
+
+![ 選択したコンテンツが濃い青のボックスでハイライト表示される ](assets/selected-content.png)
 
 >[!TIP]
 >
 >デフォルトでは、コンテンツをタップまたはクリックすると、そのコンテンツが編集用に選択されます。リンクをたどってコンテンツを移動する場合は、[プレビューモード](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)に切り替えます。
 
-選択したコンテンツに応じて、異なるインプレース編集オプションが設定されている場合や、[プロパティパネル](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)にコンテンツの追加情報やオプションが表示される場合があります。
+選択するコンテンツによって、[ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) のコンテンツの様々なインプレース編集オプションや、追加情報およびオプションが表示される場合があります。
 
-編集可能なコンテンツにはすべて、コンテンツのタイプを示すバッジが付きます。 内容に応じて、このバッジをクリックすると、アクションをすばやく編集できます。
+### コンテキストメニュー {#context-menu}
 
-![&#x200B; 編集可能なバッジのオプション &#x200B;](assets/editable-badge.png)
+編集可能なコンテンツにはすべて、コンテンツのタイプを示すバッジが付きます。
+
+このバッジをクリックすると、編集アクション付きのコンテキストメニューにすばやくアクセスできます。 選択されていない編集可能な項目を右クリックすると、その項目が自動的に選択され、右クリック メニューも開きます。
+
+![ 編集可能なバッジのオプション ](assets/editable-badge.png)
 
 ### プレーンテキストの編集 {#edit-plain-text}
 
@@ -53,9 +61,9 @@ ht-degree: 86%
 
 ![コンテンツを編集](assets/editing-content.png)
 
-薄い青色のアウトラインは、選択を示す濃い青色のアウトラインに変わり、カーソルが表示されます。変更を行ったら、Enter キーまたは Return キーを押すか、テキストボックスの外側を選択して、変更を保存します。
+薄くて明るい青色のアウトラインは、選択を示す濃い青色のアウトラインに変わり、カーソルが表示されます。 変更を行ったら、Enter キーまたは Return キーを押すか、テキストボックスの外側を選択して、変更を保存します。
 
-テキストコンポーネントを選択すると、その詳細が [&#x200B; プロパティ パネルに表示されます。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)また、パネル内のテキストを編集することもできます。
+テキストコンポーネントを選択すると、その詳細が [ プロパティ パネルに表示されます。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)また、パネル内のテキストを編集することもできます。
 
 ![プロパティパネルでのテキストの編集](assets/ue-editing-text-component-rail.png)
 
@@ -69,9 +77,9 @@ ht-degree: 86%
 
 利便性のために、テキストの書式設定オプションと詳細は、2 か所で利用できます。
 
-#### コンテキストメニュー {#context-menu}
+#### リッチテキストのコンテキストメニュー {#rich-text-context-menu}
 
-コンテキストメニューは、リッチテキストブロック上で開き、コンテキスト内の基本的な書式設定オプションを提供します。スペースの都合上、一部のオプションが省略記号ボタンの後ろに隠れている場合があります。
+リッチテキストブロックの上にコンテキストメニューが開き、コンテキストの基本的な書式設定オプションが表示されます。 スペースの都合上、一部のオプションが省略記号ボタンの後ろに隠れている場合があります。
 
 ![リッチテキストコンテキストメニュー](assets/rich-text-context-menu.png)
 
@@ -79,9 +87,9 @@ ht-degree: 86%
 
 #### プロパティパネル {#properties-rail}
 
-[&#x200B; プロパティパネル &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) に、選択したリッチテキストコンポーネントのエントリが表示されます。
+[ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) に、選択したリッチテキストコンポーネントのエントリが表示されます。
 
-![&#x200B; プロパティパネルのリッチテキストコンポーネント &#x200B;](assets/rich-text-properties-panel.png)
+![ プロパティパネルのリッチテキストコンポーネント ](assets/rich-text-properties-panel.png)
 
 エントリをタップすると、リッチテキストを編集するための大きなキャンバスが表示されるダイアログが開きます。
 
@@ -110,7 +118,7 @@ ht-degree: 86%
 
 既存のテーブルは RTE を使用して編集できますが、新しいテーブルは作成できません。
 
-RTE は、作成者のニーズに応じて、オプションを非表示にしたり、追加のオプションを表示したりするように設定できます。 詳しくは、ドキュメント [&#x200B; ユニバーサルエディターの RTE の設定 &#x200B;](/help/implementing/universal-editor/configure-rte.md) を参照してください。
+RTE は、作成者のニーズに応じて、オプションを非表示にしたり、追加のオプションを表示したりするように設定できます。 詳しくは、ドキュメント [ ユニバーサルエディターの RTE の設定 ](/help/implementing/universal-editor/configure-rte.md) を参照してください。
 
 ### メディアの編集 {#edit-media}
 
@@ -127,7 +135,7 @@ RTE は、作成者のニーズに応じて、オプションを非表示にし�
 
 ### コンテンツフラグメントの編集 {#edit-content-fragment}
 
-[&#x200B; コンテンツフラグメント &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md) を選択すると、その詳細を [&#x200B; プロパティパネル &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) で編集できます。
+[ コンテンツフラグメント ](/help/sites-cloud/administering/content-fragments/overview.md) を選択すると、その詳細を [ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) で編集できます。
 
 ![コンテンツフラグメントの編集](assets/ue-edit-cf.png)
 
@@ -227,7 +235,7 @@ RTE は、作成者のニーズに応じて、オプションを非表示にし�
 
 ### コピー＆ぺースト {#copy-paste}
 
-コンテナ内にあるコンポーネントをコピー＆ペーストできます。[&#128279;](/help/implementing/universal-editor/field-types.md#container) これは、ターゲットコンテナに [&#x200B; フィルターが設定されていない &#x200B;](/help/implementing/universal-editor/filtering.md) またはコンポーネントを貼り付けることができるフィルターがある）場合にのみ可能です。
+コンテナ内にあるコンポーネントをコピー＆ペーストできます。[](/help/implementing/universal-editor/field-types.md#container) これは、ターゲットコンテナに [ フィルターが設定されていない ](/help/implementing/universal-editor/filtering.md) またはコンポーネントを貼り付けることができるフィルターがある）場合にのみ可能です。
 
 コピーと貼り付けは、同じブラウザータブ上で行うことも、ブラウザータブ間で行うこともできます（タブが既に開いている場合）。 項目をコピーしてから新しいブラウザータブを開いて貼り付けることはできません。
 
@@ -235,7 +243,7 @@ RTE は、作成者のニーズに応じて、オプションを非表示にし�
 ![ペーストアイコン](assets/paste.png)
 
 1. エディター内またはコンテンツツリーでコンポーネントを選択します。
-1. プロパティパネルに「**コピー**」アイコンが表示されます。[&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)タップまたはクリックします。
+1. プロパティパネルに「**コピー**」アイコンが表示されます。[](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)タップまたはクリックします。
 1. プロパティパネルに「**ペースト**」アイコンが表示されます。
 1. コピーしたコンポーネントをペーストした&#x200B;_後_&#x200B;のコンポーネントを選択します。
 1. 「ペースト」をタップまたはクリックします。
@@ -249,7 +257,7 @@ RTE は、作成者のニーズに応じて、オプションを非表示にし�
 
 インプレース編集時には、エディターで右クリックするとコンテキストに関連したオプション（コンポーネントの複製、削除、コピーなど）が表示されます。
 
-![&#x200B; コンテキストオプションメニュー &#x200B;](assets/context-options-menu.png)
+![ コンテキストオプションメニュー ](assets/context-options-menu.png)
 
 ## コンテンツのプレビュー {#previewing-content}
 
@@ -265,7 +273,7 @@ RTE は、作成者のニーズに応じて、オプションを非表示にし�
 
 **AEM マルチサイト管理（MSM）拡張機能**&#x200B;がプログラムに対して有効な場合は、ユニバーサルエディター内で個々のコンポーネントの継承ステータスを表示および変更する[追加のツールバーオプション](#inheritance-extension)があります。
 
-ユニバーサルエディターを使用した継承の仕組みについて詳しくは、[&#x200B; ユニバーサルエディターでのコンテンツの継承 &#x200B;](/help/sites-cloud/authoring/universal-editor/inheritance.md) を参照してください。
+ユニバーサルエディターを使用した継承の仕組みについて詳しくは、[ ユニバーサルエディターでのコンテンツの継承 ](/help/sites-cloud/authoring/universal-editor/inheritance.md) を参照してください。
 
 ## オプションのツールバー機能 {#toolbar-options}
 

@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター 2026.01.22 リリースノート
-description: ユニバーサルエディター 2026.01.22 リリースのリリースノートです。
+title: ユニバーサルエディター 2026.01.29 リリースノート
+description: ユニバーサルエディターの 2026.01.29 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 83653ef9938e02b58d3c82ebd6395773f293f1a4
+source-git-commit: bdbe72b0afc19d0c28c56a7e5b2595c39711ca9c
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 29%
+source-wordcount: '198'
+ht-degree: 35%
 
 ---
 
 
-# ユニバーサルエディター 2026.01.22 リリースノート {#release-notes}
+# ユニバーサルエディター 2026.01.29 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2026 年 1 月 22 日リリースのリリースノートです。
+ユニバーサルエディターの 2026 年 1 月 29 日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -26,11 +26,12 @@ ht-degree: 29%
 
 ## 新機能 {#what-is-new}
 
-* ラベル（短いテキストプレビューとして）が [&#x200B; コンテンツツリー &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) のテキストブロックに追加されました。
-* TextArea がプレーンテキストフィールドでサポートされるようになりました。
-* 設定エンドポイントが UI 機能に使用されるようになりました。
-* コンテンツフラグメントの TextArea がサポートされるようになりました。
-* トースト API を拡張機能に公開しました。
+* コンポーネントの削除メソッドが `editorActions` に公開されました。
+* コピーコンポーネントメソッドが `editorActions` に公開されました。
+* 移動コンポーネントメソッドが `editorActions` に公開されました。
+* コンポーネントの追加メソッドが `editorActions` に公開されました。
+* 定義は [extensibility.](/help/implementing/universal-editor/extending.md) に公開されました。
+* ドキュメントオーサリング API のバージョン 2.0 がリリースされました。
 
 ## 早期導入機能 {#early-adopter}
 
@@ -40,12 +41,6 @@ ht-degree: 29%
 
 ## その他の改善点 {#other-improvements}
 
-* ロケーションバーを介して移動する際のキャンバスレイアウトの問題を修正しました。
-* 主要な空白は RTE でサニタイズされました。
-* Enter キーを押すと、インライン編集が復元されました。
-* ドラッグ ラベルが元に戻され、コンテンツ全体が表示されませんでした。
-* ブラウザーのアクセシビリティの問題が解決されました。
-* `selectEditables([])` を使用して、拡張機能を介してすべてのコンポーネントを選択解除できるようになりました。
-* これで、メタデータテーブルが適切な場所に作成されました。
-* コピーしたコンテンツフラグメントリソースが `/data/undefined` を指していた問題を修正しました。
-
+* `content` 拡張機能の名前は、API スキーマに従うように `details` に変更されました。
+* コンテキストメニューの動作が改善されました。
+* 編集可能な項目のバッジをクリックすると、コンテキストメニューが正しく開くバグを修正しました。
