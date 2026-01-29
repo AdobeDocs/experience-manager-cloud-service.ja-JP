@@ -4,18 +4,16 @@ description: リッチテキストエディター（RTE）を使用して、ア�
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a7265b4f8df34efc09076c03d1433f9aae542e76
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 100%
+source-wordcount: '450'
+ht-degree: 90%
 
 ---
 
 # 脚注コンポーネント {#footnotecomponent}
 
->[!NOTE]
->
-> [新しいアダプティブフォームを作成する](/help/forms/creating-adaptive-form-core-components.md)、または [AEM Sites ページにアダプティブフォームを追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)際には、最新の拡張可能なデータキャプチャである[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する従来の方法について説明します。
+[新しいアダプティブフォームを作成する](/help/forms/creating-adaptive-form-core-components.md)、または [AEM Sites ページにアダプティブフォームを追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)際には、最新の拡張可能なデータキャプチャである[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する従来の方法について説明します。
 
 **[!UICONTROL 脚注]**&#x200B;は、ページの最後に表示される追加の情報またはメモです。[!UICONTROL 脚注]は、テキスト内で数字を上付き文字として示すメモで構成されます。
 
@@ -53,14 +51,15 @@ ht-degree: 100%
 
 1. コンポーネントブラウザーから、**[!UICONTROL 脚注のプレースホルダー]**&#x200B;コンポーネントをアダプティブフォームにドラッグ＆ドロップします。
 
-   >[!NOTE]
-   >
-   >* 公開インスタンスでは、**[!UICONTROL 脚注のプレースホルダー]**&#x200B;コンポーネントがアダプティブフォーム上に配置されている位置に脚注が表示されます。
-   >* パネル間を移動すると、表示されている脚注のみが、移動したパネル内に存在する&#x200B;**[!UICONTROL 脚注のプレースホルダー]**&#x200B;に表示されます。
-
 1. 各プロパティを保存します。
 
 実行時に、数値が上付き文字としてテキストに表示され、[!UICONTROL 脚注のプレースホルダー]がアダプティブフォームに配置されている位置で&#x200B;**[!UICONTROL 脚注]**&#x200B;コンポーネントに対応する説明が表示されます。脚注の説明に直接移動するには、[!UICONTROL 脚注]で対応する数値をクリックします。
+
+## アダプティブFormsでの脚注プレースホルダーの動作
+
+* 公開インスタンスでは、**[!UICONTROL 脚注のプレースホルダー]**&#x200B;コンポーネントがアダプティブフォーム上に配置されている位置に脚注が表示されます。
+* 脚注は改行をサポートしており、フォーム作成者は **[!UICONTROL 脚注のプレースホルダー]** コンポーネント内の複数の行にまたがるコンテンツの書式を設定できます。
+* 脚注は、関連するパネルの表示とは関係なく、常に **[!UICONTROL 脚注のプレースホルダー]** に表示されたままになります。
 
 
 ## 関連トピック {#see-also}

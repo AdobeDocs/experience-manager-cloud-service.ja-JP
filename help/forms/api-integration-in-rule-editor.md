@@ -4,12 +4,12 @@ description: フォームデータモデルを使用せずに、コアコンポ�
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
-keywords: api をルールエディターに統合し、サービスを起動する機能を強化
+keywords: ルールエディターでの API の統合, サービス拡張機能の呼び出し
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 0dba0003d8b13631e91147fa08c3b986c11b61d3
+source-git-commit: 478b9c21e5b96dc31f5926a49864ea867e1ae86c
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 3%
+source-wordcount: '1034'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> ビジュアルルールエディターは、コアコンポーネントに基づくアダプティブFormsおよび [&#x200B; ユニバーサルエディターで作成されたEdge Delivery Services Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) の API 統合をサポートしています。
+> ビジュアルルールエディターは、コアコンポーネントに基づくアダプティブFormsおよび [ ユニバーサルエディターで作成されたEdge Delivery Services Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) の API 統合をサポートしています。
 
 アダプティブFormsのビジュアルルールエディターでは、フォームデータモデルを作成せずに API を直接統合できます。 API エンドポイントに接続するには、API の URL （JSON 形式）を入力するか、cURL コマンドを使用して設定を読み込みます。 統合すると、**サービスを呼び出し** アクションを使用して API を呼び出すことができます。
 
@@ -36,11 +36,11 @@ ht-degree: 3%
 | **複雑性** | セットアップ作業が多い（マッピングと設定が必要） | シンプルで軽量 |
 | **最適な対象** | 複数のフォームを使用した大規模法人またはユースケース | 小さなフォーム、プロトタイプまたは 1 回限りの API 呼び出し |
 
-## API 統合設定
+## API 統合の設定
 
 以下のスクリーンショットは、API 統合設定ウィンドウを示しています。
 
-![API 統合設定 &#x200B;](/help/forms/assets/api-integration-configuration.png)
+![API 統合設定 ](/help/forms/assets/api-integration-configuration.png)
 
 ### 主要な設定オプション
 
@@ -99,11 +99,11 @@ ht-degree: 3%
 
 ルールエディターで「**API 統合を作成**」ボタンをクリックすると、フォームデータモデルを作成せずに API を統合できます。
 
-![API 統合の作成 &#x200B;](/help/forms/assets/create-api-integration.png)
+![API 統合の作成 ](/help/forms/assets/create-api-integration.png)
 
 **getcountryname** という名前の API サービスは、ルールエディターの **API 統合設定** の下で設定されます。
 
-![API REST エンドポイントの設定 &#x200B;](/help/forms/assets/api-restendpoint.png)
+![API REST エンドポイントの設定 ](/help/forms/assets/api-restendpoint.png)
 
 * **API エンドポイント URL** → `https://secure.geonames.org/countryInfoJSON?username=aemforms`
 * **HTTP メソッド** → GET
@@ -119,9 +119,13 @@ ht-degree: 3%
 
 ![invoke-service-api-integration](/help/forms/assets/invoke-service-api-integration.png)
 
-![API 統合出力 &#x200B;](/help/forms/assets/api-integration-output.png)
+![API 統合出力 ](/help/forms/assets/api-integration-output.png)
 
 同様に、**パスポート発行国** と **宛先国** は同じ API 呼び出しを使用し、3 つのフィールドすべてで一貫性のある最新のデータを確保します。
+
+>
+>
+> [API を呼び出し、カスタム関数を使用して、JSON 配列からプロパティ値を取得する ](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array) ことができます。 この方法を使用すると、値を抽出し、それらをフォームフィールドに直接バインドできます。
 
 ## API 障害の再試行メカニズムの実装
 
@@ -195,10 +199,6 @@ function retryHandler(requestFn) {
 ```
 
 上記のコードでは、**retryHandler** 関数は、失敗した場合に自動再試行で API リクエストを管理します。 リクエスト関数（requestFn）を受け取り、リクエストを最大 2 回試み、再試行ごとにメタデータを追加します。
-
->[!NOTE]
->
-> カスタム関数の追加方法の手順について詳しくは、[&#x200B; コアコンポーネントに基づくアダプティブFormsのカスタム関数の概要 &#x200B;](/help/forms/create-and-use-custom-functions.md) を参照してください。
 
 ## よくある質問
 

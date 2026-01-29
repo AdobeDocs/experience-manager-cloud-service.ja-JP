@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: vre のサービス拡張機能、呼び出しサービスを使用したドロップダウンオプションの入力、呼び出しサービスの出力を使用した繰り返し可能なパネルの設定、呼び出しサービスの出力を使用したパネルの設定、呼び出しサービスの出力パラメーターを使用した他のフィールドの検証。
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 07f1b64753387d9ee47b26d65955e41cd961f1a5
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '2150'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 ビジュアルルールエディターでは、出力応答に基づいて、**サービスの呼び出し** 操作の成功ハンドラーと失敗ハンドラーのルールを作成できます。 次の画像は、アダプティブフォームのビジュアルルールエディターにある **サービスを呼び出す** を示しています。
 
-![&#x200B; サービスハンドラーの呼び出し &#x200B;](/help/forms/assets/invoke-service-rule-editor.png)
+![ サービスハンドラーの呼び出し ](/help/forms/assets/invoke-service-rule-editor.png)
 
 ### 成功ハンドラーと失敗ハンドラーの追加
 
@@ -46,15 +46,15 @@ ht-degree: 2%
 
 「**[!UICONTROL サクセスハンドラーを追加]**」をクリックすると、**[!UICONTROL サービスサクセスハンドラーを起動]** ルールエディターが表示されます。このルールエディターで、操作が成功したときに **サービスを起動** 出力応答を管理するルールまたはロジックを指定できます。 条件を定義しなくてもルールを指定できます。ただし、「**[!UICONTROL 条件を追加]**」オプションをクリックすると、成功ハンドラーの条件を追加できます。
 
-![&#x200B; サービス成功ハンドラーを起動 &#x200B;](/help/forms/assets/invoke-service-success-handler.png)
+![ サービス成功ハンドラーを起動 ](/help/forms/assets/invoke-service-success-handler.png)
 
 複数のルールを追加して、**サービスを呼び出し** 操作の応答の成功を処理できます。
 
-![&#x200B; 複数のサクセスハンドラー &#x200B;](/help/forms/assets/invoke-service-multiple-success-handlers.png){width=50%, height=50%}
+![ 複数のサクセスハンドラー ](/help/forms/assets/invoke-service-multiple-success-handlers.png){width=50%, height=50%}
 
 同様に、操作が成功しなかった場合に **サービスの呼び出し** 出力応答を処理するルールを追加できます。 次の画像は、**[!UICONTROL サービスエラーハンドラーを起動]** ルールエディターを示しています。
 
-![&#x200B; サービス呼び出しエラーハンドラー &#x200B;](/help/forms/assets/invoke-service-failue-handler.png)
+![ サービス呼び出しエラーハンドラー ](/help/forms/assets/invoke-service-failue-handler.png)
 
 また、複数のルールを追加して、「サービスの呼び出し **操作からの失敗した応答を処理す** こともできます。
 
@@ -64,8 +64,8 @@ ht-degree: 2%
 
 ルールエディターで **サービスを呼び出し** を使用する前に満たす必要がある前提条件を以下に示します。
 
-* データソースが設定されていることを確認します。 データソースの設定手順については、[&#x200B; ここをクリック &#x200B;](/help/forms/configure-data-sources.md) してください。
-* 設定済みのデータソースを使用して、フォームデータモデルを作成します。 フォームデータモデルの作成に関するガイダンスについては [&#x200B; ここをクリック &#x200B;](/help/forms/create-form-data-models.md) してください。
+* データソースが設定されていることを確認します。 データソースの設定手順については、[ ここをクリック ](/help/forms/configure-data-sources.md) してください。
+* 設定済みのデータソースを使用して、フォームデータモデルを作成します。 フォームデータモデルの作成に関するガイダンスについては [ ここをクリック ](/help/forms/create-form-data-models.md) してください。
 
 ## 様々なユースケースを通じたサービスの呼び出しの調査
 
@@ -75,15 +75,15 @@ ht-degree: 2%
 
 | **ユースケース** | **説明** |
 |----------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| **呼び出しサービスの出力を使用したドロップダウンオプションの入力** | 呼び出しサービス出力から取得したデータに基づいて、ドロップダウンオプションを動的に入力します。 実装を確認するには、[&#x200B; ここをクリック &#x200B;](#use-case-1-populate-dropdown-values-using-the-output-of-invoke-service) します。 |
-| **呼び出しサービスの出力を使用した繰り返し可能なパネルの設定** | サービスの呼び出し出力のデータを使用して繰り返し可能なパネルを設定し、動的パネルを許可します。 実装を確認するには、[&#x200B; ここをクリック &#x200B;](#use-case-2-set-repeatable-panel-using-output-of-invoke-service) します。 |
-| **呼び出しサービスの出力を使用したパネルの設定** | 呼び出しサービス出力の特定の値を使用して、パネルの内容または表示を設定します。 実装を確認するには、[&#x200B; ここをクリック &#x200B;](#use-case-3-set-panel-using-output-of-invoke-service) します。 |
-| **呼び出しサービスの出力パラメーターを使用して他のフィールドを検証する** | 呼び出しサービスの特定の出力パラメーターを使用して、フォームフィールドを検証します。 実装を確認するには、[&#x200B; ここをクリック &#x200B;](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields) します。 |
-| **呼び出しサービスの「移動先」アクションでのイベントペイロードの使用** | イベントペイロードを使用して、成功および失敗の応答を処理し、ナビゲーション中にデータを「移動先」アクションに渡します。 実装を確認するには、[&#x200B; ここをクリック &#x200B;](#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service) します。 |
+| **呼び出しサービスの出力を使用したドロップダウンオプションの入力** | 呼び出しサービス出力から取得したデータに基づいて、ドロップダウンオプションを動的に入力します。 実装を確認するには、[ ここをクリック ](#use-case-1-populate-dropdown-values-using-the-output-of-invoke-service) します。 |
+| **呼び出しサービスの出力を使用した繰り返し可能なパネルの設定** | サービスの呼び出し出力のデータを使用して繰り返し可能なパネルを設定し、動的パネルを許可します。 実装を確認するには、[ ここをクリック ](#use-case-2-set-repeatable-panel-using-output-of-invoke-service) します。 |
+| **呼び出しサービスの出力を使用したパネルの設定** | 呼び出しサービス出力の特定の値を使用して、パネルの内容または表示を設定します。 実装を確認するには、[ ここをクリック ](#use-case-3-set-panel-using-output-of-invoke-service) します。 |
+| **呼び出しサービスの出力パラメーターを使用して他のフィールドを検証する** | 呼び出しサービスの特定の出力パラメーターを使用して、フォームフィールドを検証します。 実装を確認するには、[ ここをクリック ](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields) します。 |
+| **呼び出しサービスの「移動先」アクションでのイベントペイロードの使用** | イベントペイロードを使用して、成功および失敗の応答を処理し、ナビゲーション中にデータを「移動先」アクションに渡します。 実装を確認するには、[ ここをクリック ](#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service) します。 |
 
 `Get Information` テキストボックスに入力された入力に基づいて値を取得する `Pet ID` フォームを作成します。 以下のスクリーンショットは、これらのユースケースで使用されるフォームを示しています。
 
-![&#x200B; 情報フォームの取得 &#x200B;](/help/forms/assets/get-information-form.png)
+![ 情報フォームの取得 ](/help/forms/assets/get-information-form.png)
 
 **フォームフィールド**
 
@@ -113,7 +113,7 @@ ht-degree: 2%
 
 **データソース**
 
-この例では、[Swagger Petstore](https://petstore.swagger.io/) API を使用してデータソースを設定します。 [&#x200B; フォームデータモデル &#x200B;](/help/forms/create-form-data-models.md) は [getPetById](https://petstore.swagger.io/#/pet/getPetById) サービス用に設定されており、入力した ID に基づいてペットの詳細を取得します。
+この例では、[Swagger Petstore](https://petstore.swagger.io/) API を使用してデータソースを設定します。 [ フォームデータモデル ](/help/forms/create-form-data-models.md) は [getPetById](https://petstore.swagger.io/#/pet/getPetById) サービス用に設定されており、入力した ID に基づいてペットの詳細を取得します。
 
 [Swagger Petstore](https://petstore.swagger.io/#/pet/addPet) API の [addPet](https://petstore.swagger.io/) サービスを使用して、次の JSON を投稿します。
 
@@ -159,17 +159,21 @@ ht-degree: 2%
 
 それには、「`Pet ID`」テキストボックスでルールを作成して、`getPetById` サービスを呼び出します。 ルールで、`enum` 成功ハンドラーの追加 `photo-url` の `photoUrls` ドロップダウンの **[!UICONTROL プロパティを]** に設定します。
 
-![&#x200B; ドロップダウン値を設定 &#x200B;](/help/forms/assets/set-dropdownoption.png)
+![ ドロップダウン値を設定 ](/help/forms/assets/set-dropdownoption.png)
 
 >[!NOTE]
 >
-> 成功ハンドラーと失敗ハンドラーの設定方法については、[&#x200B; サクセスハンドラーと失敗ハンドラーの追加 &#x200B;](#adding-success-handler-and-failure-handler) の節を参照してください。
+> 成功ハンドラーと失敗ハンドラーの設定方法については、[ サクセスハンドラーと失敗ハンドラーの追加 ](#adding-success-handler-and-failure-handler) の節を参照してください。
 
 #### 出力
 
 `101` テキストボックスに `Pet ID` と入力し、入力した値に基づいてドロップダウンオプションを動的に入力します。
 
 ![結果](/help/forms/assets/output1.png)
+
+> 
+>
+> また、ドロップダウンオプションは、サービスの呼び出し、JSON 応答の解析、カスタム関数の適用によって、動的に入力することもできます。 詳しくは、[ この節 ](#retrieve-property-values-from-a-json-array) を参照してください。
 
 ### ユースケース 2：呼び出しサービスの出力を使用して繰り返し可能なパネルを設定する
 
@@ -184,17 +188,17 @@ ht-degree: 2%
 
 「`Pet ID`」テキストボックスに、`getPetById` サービスを呼び出すルールを作成します。 **[!UICONTROL サクセスハンドラーを追加]** で、別のサクセスハンドラー応答を追加します。 ルール内で `tags` パネルの値を `tags` に設定します。
 
-![&#x200B; 繰り返し可能なパネル用のルールの作成 &#x200B;](/help/forms/assets/create-rule-repeatable-panel.png)
+![ 繰り返し可能なパネル用のルールの作成 ](/help/forms/assets/create-rule-repeatable-panel.png)
 
 >[!NOTE]
 >
-> 成功ハンドラーと失敗ハンドラーの設定方法については、[&#x200B; サクセスハンドラーと失敗ハンドラーの追加 &#x200B;](#adding-success-handler-and-failure-handler) の節を参照してください。
+> 成功ハンドラーと失敗ハンドラーの設定方法については、[ サクセスハンドラーと失敗ハンドラーの追加 ](#adding-success-handler-and-failure-handler) の節を参照してください。
 
 #### 出力
 
 `101` テキストボックスに `Pet ID` と入力し、入力値に基づいて繰り返し可能なパネルを動的に入力します。
 
-![&#x200B; 出力 &#x200B;](/help/forms/assets/output2.png)
+![ 出力 ](/help/forms/assets/output2.png)
 
 ### ユースケース 3：呼び出しサービスの出力を使用したパネルの設定
 
@@ -211,15 +215,15 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> 成功ハンドラーと失敗ハンドラーの設定方法については、[&#x200B; サクセスハンドラーと失敗ハンドラーの追加 &#x200B;](#adding-success-handler-and-failure-handler) の節を参照してください。
+> 成功ハンドラーと失敗ハンドラーの設定方法については、[ サクセスハンドラーと失敗ハンドラーの追加 ](#adding-success-handler-and-failure-handler) の節を参照してください。
 
-![&#x200B; 繰り返し可能なパネル用のルールの作成 &#x200B;](/help/forms/assets/set-panel-values.png)
+![ 繰り返し可能なパネル用のルールの作成 ](/help/forms/assets/set-panel-values.png)
 
 #### 出力
 
 `101` テキストボックスに `Pet ID` と入力し、入力値に基づいてパネルに動的に入力します。
 
-![&#x200B; 出力 &#x200B;](/help/forms/assets/output3.png)
+![ 出力 ](/help/forms/assets/output3.png)
 
 ### ユースケース 4：呼び出しサービスの出力パラメーターを使用して他のフィールドを検証
 
@@ -229,13 +233,13 @@ ht-degree: 2%
 
 「`Pet ID`」テキストボックスに、`getPetById` サービスを呼び出すルールを作成します。 **[!UICONTROL エラーハンドラーを追加]** で、エラーハンドラー応答を追加します。 間違った **を入力した場合は** 送信 `Pet ID` ボタンを非表示にします。
 
-![&#x200B; エラーハンドラー &#x200B;](/help/forms/assets/create-rule-failure-handler.png)
+![ エラーハンドラー ](/help/forms/assets/create-rule-failure-handler.png)
 
 #### 出力
 
 `102` テキストボックスに「`Pet ID`」と入力すると、「**送信**」ボタンが非表示になります。
 
-![&#x200B; 出力 &#x200B;](/help/forms/assets/output4.png)
+![ 出力 ](/help/forms/assets/output4.png)
 
 ### ユースケース 5：呼び出しサービスの「移動」アクションでのイベントペイロードの使用
 
@@ -256,11 +260,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> 定義済みのフォームデータモデルを使用せずに、ルールエディターインターフェイスで API を直接統合する方法については、[&#x200B; ここをクリック &#x200B;](/help/forms/api-integration-in-rule-editor.md) を参照してください。
+> 定義済みのフォームデータモデルを使用せずに、ルールエディターインターフェイスで API を直接統合する方法については、[ ここをクリック ](/help/forms/api-integration-in-rule-editor.md) を参照してください。
 
 **[!UICONTROL サクセスハンドラーを追加]** で、**パラメーターを使用してユーザーを** お問い合わせ **ページにリダイレクトするように** 移動先 `Event Payload` アクションを設定します。 ここで、ユーザーは自分の連絡先の詳細を送信できます。
 
-![&#x200B; イベントペイロード &#x200B;](/help/edge/docs/forms/assets/navigate-to-eventpayload.png)
+![ イベントペイロード ](/help/edge/docs/forms/assets/navigate-to-eventpayload.png)
 
 オプションで、サービス呼び出しが失敗した場合にエラーメッセージを表示する失敗ハンドラーを設定します。
 
@@ -268,7 +272,124 @@ ht-degree: 2%
 
 「**送信**」ボタンがクリックされると、`redirect-api` API サービスが呼び出されます。 成功すると、ユーザーは **お問い合わせ** ページにリダイレクトされます。
 
-![&#x200B; イベントペイロード出力 &#x200B;](/help/forms/assets/output5.gif)
+![ イベントペイロード出力 ](/help/forms/assets/output5.gif)
+
+## JSON 配列からプロパティ値を取得
+
+アダプティブ Formsは、サービスの呼び出し、JSON 応答の処理、フォームフィールドの動的な入力をサポートしています。 この節では、JSON 配列からプロパティ値を抽出し、フォームフィールドにバインドする方法について説明します。
+
+### JSON 応答のサンプル
+
+次の例は、米国の販売地域と販売担当者のリストを表しています。
+
+
+```json
+[
+  {
+    "region": "East",
+    "salesPerson": "Emily Carter"
+  },
+  {
+    "region": "South",
+    "salesPerson": "Michael Brown"
+  },
+  {
+    "region": "Midwest",
+    "salesPerson": "Sophia Martinez"
+  },
+  {
+    "region": "Southwest",
+    "salesPerson": "David Johnson"
+  },
+  {
+    "region": "West",
+    "salesPerson": "Linda Walker"
+  }
+]
+```
+
+### プロパティ値を抽出するカスタム関数
+
+<span class="preview"> これは早期導入者機能です。 ご興味のある方は、メールアドレスから mailto:aem-forms-ea@adobe.comまでメールを送信し、機能へのアクセス権をリクエストしてください </a>. </span>
+
+次のカスタム関数を使用して、JSON 配列からプロパティ値を抽出します。
+
+```js
+/**
+ * Returns an array of values for a specific property from an array of objects.
+ *
+ * @name getPropertyValues
+ * @param {Object[]} jsonArray An array of objects
+ * @param {string} propertyName The property whose values should be extracted
+ * @returns {Array} An array containing the values of the specified property
+ *
+ */
+
+function getPropertyValues(jsonArray, propertyName)
+{
+    return jsonArray.map((obj) => obj[propertyName]);
+
+}
+```
+
+カスタム関数には次を使用できます。
+
+* **jsonArray**: サービスから返された JSON 配列
+* **propertyName**：値を抽出するプロパティ
+
+カスタム関数は、値の単純な配列を返します。
+
+>[!NOTE]
+>
+> カスタム関数の追加方法の手順について詳しくは、[ コアコンポーネントに基づくアダプティブFormsのカスタム関数の概要 ](/help/forms/create-and-use-custom-functions.md) を参照してください。
+
+
+### ルールエディターでの関数の使用
+
+JSON 配列から特定の値を取得するには：
+
+```
+event.payload.invokeServiceResponse.rawPayloadBody
+```
+
+次の例は、この応答を使用した `Sales Department` フォームの入力方法を示しています。
+
+例えば、`Sales Department` と `Select Region` のドロップダウンを含む `Select Sales Representative` フォームを作成します。
+
+**手順 1：フォーム初期化時にサービスを呼び出す**
+
+```
+WHEN
+    Form is initialized
+THEN
+    Invoke Service → salesdeptinfo
+```
+
+>[!NOTE]
+>
+> ビジュアルルールエディターでフォームデータモデルを作成せずに API を統合する方法については、[ ここをクリック ](/help/forms/api-integration-in-rule-editor.md) してください。
+
+**手順 2：地域ドロップダウンへの入力**
+
+サービス呼び出しのサクセスハンドラーを追加し、次のアクションを設定します。
+
+```
+Set enum → Region dropdown
+getPropertyValues(
+    event.payload.invokeServiceResponse.rawPayloadBody,
+    "region"
+)
+```
+
+このルールは JSON 配列を読み取り、`region` プロパティ値を抽出し、その値を `Select Region` ドロップダウンに割り当てます。
+
+同様に、サクセスハンドラーの `Select Sales Representative` ドロップダウンのアクションを設定します。
+
+![JSON 配列のイベントペイロード ](/help/forms/assets/event-payload.png)
+
+フォームが読み込まれると、JSON データが返され、カスタム関数がプロパティ値を抽出し、ドロップダウンが自動的に入力されます。
+
+![ イベントペイロードフォーム ](/help/forms/assets/event-payload-form.png)
 
 ## よくある質問
 
