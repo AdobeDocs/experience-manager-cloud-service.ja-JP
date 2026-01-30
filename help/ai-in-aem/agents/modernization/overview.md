@@ -23,9 +23,9 @@ AI を利用して Experience Modernization Agent が web サイトをEdge Deliv
 
 Experience Modernization Agent は、Web サイトの移行と継続的な進化を迅速かつスムーズに行うことで、Edge Delivery Services（AEM オーサリングを含む）の価値を最大限に引き出します。
 
-[ サイト作成と移行スキル ](#creation-migration) を組み合わせて、最初の web サイトのオンボーディングに使用し、[ ブロック開発機能 ](#block-development) を継続的なエクスペリエンス開発（スタイルの更新、テンプレートの絞り込み、ランディングページの作成）に使用します。 さらに、直接使用できるホストされた AI 支援開発環境として [Experience Modernization Console](#console) を提供します。 ユーザーはこのコンソールを介してエージェントを直接操作できますが、開発者はどの船を完全に制御できるかについては、引き続き説明します。
+[&#x200B; サイト作成と移行スキル &#x200B;](#creation-migration) を組み合わせて、最初の web サイトのオンボーディングに使用し、[&#x200B; ブロック開発機能 &#x200B;](#block-development) を継続的なエクスペリエンス開発（スタイルの更新、テンプレートの絞り込み、ランディングページの作成）に使用します。 さらに、直接使用できるホストされた AI 支援開発環境として [Experience Modernization Console](#console) を提供します。 ユーザーはこのコンソールを介してエージェントを直接操作できますが、開発者はどの船を完全に制御できるかについては、引き続き説明します。
 
-さらに、複雑な移行を確実に成功させるために、Adobeでは [Agentic Outcome Engineer （AOE）配信モデル ](#delivery-model) を提供しています。 このオプションは、アクセラレータとして、または特定のプロジェクトの課題を取り除くのに役立つ戦術的なサービスとして使用できます。
+さらに、複雑な移行を確実に成功させるために、Adobeでは [Agentic Outcome Engineer （AOE）配信モデル &#x200B;](#delivery-model) を提供しています。 このオプションは、アクセラレータとして、または特定のプロジェクトの課題を取り除くのに役立つ戦術的なサービスとして使用できます。
 
 ## メリット {#benefits}
 
@@ -52,7 +52,7 @@ Experience Modernization Agent は、新しいEdge Delivery Services サイト�
 Experience Modernization Agent は、様々な開発タスクに対応する一般的なEdge Delivery Services開発機能を利用して、最初のサイトの作成や移行に留まらず、継続的な価値を提供します。
 
 * 作成者にとって使いやすいコンテンツモデルを、コンテンツ駆動開発（CDD）手法に従う
-* [ ブロックコレクション ](https://www.aem.live/developer/block-collection) および [ ブロックパーティ ](https://www.aem.live/developer/block-party/) を活用して、参照実装とベストプラクティスを見つけます
+* [&#x200B; ブロックコレクション &#x200B;](https://www.aem.live/developer/block-collection) および [&#x200B; ブロックパーティ &#x200B;](https://www.aem.live/developer/block-party/) を活用して、参照実装とベストプラクティスを見つけます
 * デプロイメント前に変更を検証するためのテストワークフローとデバッグワークフローをサポート
 
 詳細な機能には、ブロック開発、コンテンツモデリング、参照ブロック検出、テスト、デバッグが含まれます。
