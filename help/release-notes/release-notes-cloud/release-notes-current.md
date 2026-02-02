@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
+source-git-commit: 6dfc3fe7e939794a7881a5c24c51ccc43f9af348
 workflow-type: tm+mt
-source-wordcount: '2145'
+source-wordcount: '2126'
 ht-degree: 37%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 37%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?captions=jpn&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -60,11 +60,11 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様お
 
 ### AEMのエージェント（Beta プログラム） {#agents-in-aem-beta-program}
 
-実稼働、ガバナンス、最適化、検出、開発全体にわたる、強力な新しいAEMエージェンティック機能に早期にアクセスできます。 お客様からのフィードバックによって、Adobeのロードマップと最終的な機能が直接形作られます。 詳しくは、[AEMでのエージェントの概要 &#x200B;](/help/ai-in-aem/agents/overview.md) を参照してください。
+実稼働、ガバナンス、最適化、検出、開発全体にわたる、強力な新しいAEMエージェンティック機能に早期にアクセスできます。 お客様からのフィードバックによって、Adobeのロードマップと最終的な機能が直接形作られます。 詳しくは、[AEMでのエージェントの概要 ](/help/ai-in-aem/agents/overview.md) を参照してください。
 
 このプログラムは通常 4～6 週間続きますが、積極的に参加する能力に合わせて柔軟に調整できます。
 
-このプログラムへの参加をオプトインするには、[aemagentsteam@adobe.comに電子メールを送信し &#x200B;](mailto:aemagentsteam@adobe.com) 可能な限り次の詳細を含めてください。
+このプログラムへの参加をオプトインするには、[aemagentsteam@adobe.comに電子メールを送信し ](mailto:aemagentsteam@adobe.com) 可能な限り次の詳細を含めてください。
 
 * エージェントを積極的に使用するチームメンバーの名前とAdobe ID。
 * 自分または自分のチームが使用する特定のエージェントのリスト。 または、単に「すべてのエージェント」と言います。
@@ -73,11 +73,11 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様お
 
 ### AEM財団（Beta プログラム） {#aem-foundation-beta-programs}
 
-[AEM Foundation ベータプログラム &#x200B;](#foundation-early-adopter) を参照してください。
+[AEM Foundation ベータプログラム ](#foundation-early-adopter) を参照してください。
 
 ### Cloud Manager（Beta プログラム） {#cloud-manager-beta-programs}
 
-[Cloud Manager ベータプログラム &#x200B;](/help/implementing/cloud-manager/release-notes/current.md) を参照してください。
+[Cloud Manager ベータプログラム ](/help/implementing/cloud-manager/release-notes/current.md) を参照してください。
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -94,7 +94,7 @@ AEMには、次の 2 つのサーバーがあります。
 
 これらの MCP サーバーには、**Pages**、**Content Fragments**、および **Assets** を操作するためのツールが含まれており、**ChatGPT**、**Claude**、**Cursor**、**Microsoft Copilot Studio** の MCP クライアントから使用できます。
 
-詳しくは、[AEM Cloud Service での MCP の使用 &#x200B;](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) を参照してください。 ご質問やご意見については、[aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com) までお問い合わせください。
+詳しくは、[AEM Cloud Service での MCP の使用 ](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) を参照してください。 ご質問やご意見については、[aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com) までお問い合わせください。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -102,11 +102,11 @@ AEMには、次の 2 つのサーバーがあります。
 
 AI 検索は、ユーザークエリの背後にある意味と意図を理解することで、従来のキーワードマッチングを超えた、インテリジェントなコンテキスト認識型検索エクスペリエンスを提供します。 AI と機械学習を活用することで、クエリの言葉遣いが異なる場合、スペルミスが含まれている場合、同義語を使用する場合、異なる言語で送信された場合でも、より正確な結果が得られ、ユーザーが関連性の高いコンテンツを少ない労力でより迅速に見つけることができます。
 
-詳しくは、「[Assets ビュー &#x200B;](/help/assets/search-assets-view.md#ai-search)」および「&lbrace; 管理者ビュー [&#x200B; のAI 検索](/help/assets/search-assets.md#ai-search) を参照してください。
+詳しくは、「[Assets ビュー ](/help/assets/search-assets-view.md#ai-search)」および「{ 管理者ビュー [ のAI 検索](/help/assets/search-assets.md#ai-search) を参照してください。
 
 **デスクトップアプリケーション 3.0.1 リリース**
 
-[&#x200B; デスクトップアプリ 3.0.1 （2025 年 12 月 20 日（PT）） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-desktop-app/using/release-notes) 主要なワークフロー全体で信頼性、パフォーマンス、安定性を向上させます。 このリリースでは、AEM オーサーとの同期の問題を修正することで一貫したフォルダー名が保証され、アクティブな転送中のアプリの中断のない使用が可能になり、非同期処理による UI の応答性が向上し、ページネーションを使用した大きなファイル転送が最適化され、大きなフォルダーのアップロードおよびダウンロード中のオーサーサーバーの再起動やクラッシュなどの安定性の問題が解決されます。
+[ デスクトップアプリ 3.0.1 （2025 年 12 月 20 日（PT）） ](https://experienceleague.adobe.com/ja/docs/experience-manager-desktop-app/using/release-notes) 主要なワークフロー全体で信頼性、パフォーマンス、安定性を向上させます。 このリリースでは、AEM オーサーとの同期の問題を修正することで一貫したフォルダー名が保証され、アクティブな転送中のアプリの中断のない使用が可能になり、非同期処理による UI の応答性が向上し、ページネーションを使用した大きなファイル転送が最適化され、大きなフォルダーのアップロードおよびダウンロード中のオーサーサーバーの再起動やクラッシュなどの安定性の問題が解決されます。
 
 **Adobe Asset Link CEP 2026.01.0 リリース**
 
@@ -115,16 +115,20 @@ AI 検索は、ユーザークエリの背後にある意味と意図を理解�
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [&#x200B; アダプティブForms（基盤コンポーネント）の脚注プレースホルダーの機能強化 &#x200B;](/help/forms/footnotes-richtextsupport.md)
-   * 脚注のレンダリング機能がさらに強化され、改行による複数行の書式設定がサポートされるようになり、脚注の内容をより明確で表現力豊かに表現できるようになりました。
-   * 脚注は、関連するパネルの表示に関係なく、脚注プレースホルダー内で永続的に表示されるようになり、重要な情報に一貫してアクセスできるようになりました。
+**アダプティブForms（基盤コンポーネント）の脚注プレースホルダーの機能強化**
 
+* [ 改行による複数行サポート ](/help/forms/footnotes-richtextsupport.md) が追加され、脚注コンテンツをより明確かつ表現力豊かに表示できるようになりました。
+* 脚注は、関連するパネルの表示に関係なく、脚注プレースホルダー内で永続的に表示されるようになり、重要な情報に一貫してアクセスできるようになりました。
 
 ### AEM Forms の新しい早期アクセス機能 {#forms-new-early-access-features}
 
-* [JSON 配列から値を取得 &#x200B;](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)：拡張されたデータ統合機能により、カスタム関数を通じて API を呼び出し、JSON 配列から効率的に値を抽出し、アダプティブフォームフィールドに直接バインドできるようになりました。 この機能強化により、データ消費が合理化され、手動でのマッピングが最小限に抑えられ、より動的なデータ駆動型のフォームエクスペリエンスがサポートされます。
+**JSON 配列から値を取得**
 
-* **パブリッシュインスタンスで関連付け UI を呼び出す**：パブリッシュインスタンスで関連付け UI を直接呼び出すための拡張サポートが利用できるようになりました。 この機能は、必要な設定、ペイロード構造および呼び出しフローを定義し、統合を簡素化し、環境全体でのデプロイメントを高速化します。
+API 呼び出しを介して受信した [JSON 配列から値を抽出 ](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array) し、アダプティブフォームフィールドに直接バインドするカスタム関数機能を拡張しました。 最小限の手動でのデータマッピングで、ビジネスロジックとルールを開発できるようになりました。
+
+**パブリッシュインスタンスで関連付け UI を実行する**
+
+パブリッシュインスタンスで [UI を関連付け ](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md) を直接実行できるようになりました。 これにより、エージェントは関連付け UI にアクセスして、顧客に合わせてコミュニケーションを簡単にパーソナライズできます。
 
 <!--
 **Forms Optimization opportunities**
@@ -194,7 +198,7 @@ Adobeは 2025 年 10 月 14 日に **ステージング** 環境と **実稼動*
 
 >[!NOTE]
 >
-> 最新のパフォーマンス最適化と言語強化を活用するには、Java 17 または Java 21 （推奨）を使用してビルドすることをお勧めします。 Java 8 および Java 11 を使用したビルドは、現時点ではサポートされていますが、今後のリリースで非推奨（廃止予定）になります。 廃止に先立ち、別途お知らせいたします。 *この記事* の [&#x200B; ビルド時間要件 &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) の節を参照してください。
+> 最新のパフォーマンス最適化と言語強化を活用するには、Java 17 または Java 21 （推奨）を使用してビルドすることをお勧めします。 Java 8 および Java 11 を使用したビルドは、現時点ではサポートされていますが、今後のリリースで非推奨（廃止予定）になります。 廃止に先立ち、別途お知らせいたします。 *この記事* の [ ビルド時間要件 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) の節を参照してください。
 >
 
 #### AEM Java ログ設定ポリシーの適用 {#logconfig-policy}
@@ -212,7 +216,7 @@ Adobeは 2025 年 10 月 14 日に **ステージング** 環境と **実稼動*
 
 #### 自動メンテナンスアップデートの一時停止 {#pause-updates}
 
-運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[&#x200B; 新しいセルフサービス機能 &#x200B;](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
+運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[ 新しいセルフサービス機能 ](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
 
 * 静かな時間：毎日設定された時間に自動メンテナンスをブロックします。勤務時間、夜間の実行や朝の切り替え時などに最適です。
 * 更新不要の期間：自動メンテナンスを 1 週間ブロックします。ローンチ、プロモーションまたは年次フリーズに使用します。
