@@ -4,9 +4,9 @@ description: 主なメリット、ユーザータイプ、権限など、Assets 
 feature: Asset Management
 role: User, Admin
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1104'
+source-git-commit: 504464ed1277c1d9629ae1f96892ebaa5ef701c8
+workflow-type: tm+mt
+source-wordcount: '1100'
 ht-degree: 100%
 
 ---
@@ -36,8 +36,6 @@ Assets as a Cloud Service Prime には、次のような様々な主要機能を
   >[!NOTE]
   >
   >Assets Prime では、回転、切り抜き（手動のみ - スマート切り抜きなし）、反転、高さ、幅、画質、形式、アダプティブビデオストリーミングといった基本的な画像の修飾子にアクセスできる OpenAPI 機能を備えた Dynamic Media も使用できます。詳しくは、アドビのアカウントチームにお問い合わせください。
-
-1. [新しいプログラムを作成します](/help/journey-onboarding/create-program.md)。
 
 ただし、DAM のニーズが拡大し、UI 拡張機能、API 駆動型自動化、カスタムコードのデプロイメントなどのより多くの機能が必要になる場合は、[Assets Ultimate](/help/assets/assets-ultimate-overview.md) へのアップグレードを考慮する必要があります。
 
@@ -70,7 +68,7 @@ Cloud Manager を使用して新しいプログラムを作成する際に、Ass
 
 >[!NOTE]
 >
->Assets Prime では、実稼動環境のみを作成できます。実稼動環境が正常に作成されると、環境を追加するオプションは使用できなくなります。
+>Assets Prime では、本番環境のみを作成できます。本番環境が正常に作成されると、環境を追加するオプションは使用できなくなります。
 
 これで、Assets Prime が Experience Manager Assets as a Cloud Service で有効になります。
 
@@ -116,7 +114,7 @@ Assets as a Cloud Service 用のコンテンツハブを有効にしている場
 
 ## AEM Assets 共同作業者ユーザーのオンボード {#onboard-collaborator-users}
 
-AEM Assets 共同作業者ユーザーは、他のアドビ製品やアドビ以外のアプリケーションで組織が使用できる Assets の統合を通じて Experience Manager のアセットを操作することや、組み込みの Adobe Express および Firefly を使用してプロフェッショナルがデザインしたテンプレート、ブランドキット、Adobe Stock アセットなどを活用したアセットを作成および編集することや、AEM Assets コンテンツハブポータルを使用して組織の承認済みアセットにアクセスして活用できます。
+AEM Assets 共同作業者ユーザーは、他のアドビ製品やアドビ以外のアプリケーションで組織が使用できる Assets の統合を通じて Experience Manager のアセットを操作することや、ビルトインの Adobe Express および Firefly を使用してプロフェッショナルがデザインしたテンプレート、ブランドキット、Adobe Stock アセットなどを活用したアセットを作成および編集することや、AEM Assets コンテンツハブポータルを使用して組織の承認済みアセットにアクセスして活用できます。
 
 共同作業者ユーザーをオンボードするには：
 
@@ -138,7 +136,7 @@ AEM Assets 共同作業者ユーザーは、他のアドビ製品やアドビ以
 
 ## AEM Assets パワーユーザーのオンボード {#onboard-power-users}
 
-AEM Assets パワーユーザーは、アセット、権限、メタデータ、デジタルアセットに関する全体的なガバナンスと自動化の管理を含むすべての AEM Assets 機能にアクセスすることや、他のアドビアプリケーションやアドビ以外のアプリケーションで組織が使用できる Assets の統合を通じて Experience Manager のアセットを操作することや、組み込みの Adobe Express および Firefly を使用してプロフェッショナルがデザインしたテンプレート、ブランドキット、Adobe Stock アセットなどを活用したアセットを作成および編集することや、AEM Assets コンテンツハブポータルを使用して組織の承認済みアセットにアクセスして活用できます。
+AEM Assets パワーユーザーは、アセット、権限、メタデータ、デジタルアセットに関する全体的なガバナンスと自動化の管理を含むすべての AEM Assets 機能にアクセスすることや、他のアドビアプリケーションやアドビ以外のアプリケーションで組織が使用できる Assets の統合を通じて Experience Manager のアセットを操作することや、ビルトインの Adobe Express および Firefly を使用してプロフェッショナルがデザインしたテンプレート、ブランドキット、Adobe Stock アセットなどを活用したアセットを作成および編集することや、AEM Assets コンテンツハブポータルを使用して組織の承認済みアセットにアクセスして活用できます。
 
 パワーユーザーをオンボードするには：
 
