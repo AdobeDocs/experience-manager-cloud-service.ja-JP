@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 663ef9835988f354e8d4802478a11c37815d1cd2
+source-git-commit: e038df21f055244313276c87887b61bbce7ead26
 workflow-type: tm+mt
-source-wordcount: '6958'
+source-wordcount: '6965'
 ht-degree: 95%
 
 ---
@@ -102,6 +102,8 @@ ht-degree: 95%
          + [リリースノート（2020.2.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + AEMaaCS メンテナンスリリースノート {#maintenance}
       + [最新のメンテナンスリリースノート](/help/release-notes/maintenance/latest.md)
+      + 2026 {#2026}
+         + [メンテナンスリリースノート（2026.1.0）](/help/release-notes/maintenance/2026/2026-1-0.md)
       + 2025 {#2025}
          + [メンテナンスリリースノート（2025.12.0）](/help/release-notes/maintenance/2025/2025-12-0.md)
          + [メンテナンスリリースノート（2025.11.0）](/help/release-notes/maintenance/2025/2025-11-0.md)
@@ -561,11 +563,11 @@ ht-degree: 95%
    + [コンテキスト実験](/help/sites-cloud/administering/contextual-experimentation.md)
 + Assets {#assets}
    + [概要と新機能](/help/assets/overview.md)
-   + [&#x200B; [!DNL Assets] as a [!DNL Cloud Service] の主な変更点](/help/assets/assets-cloud-changes.md)
+   + [ [!DNL Assets] as a [!DNL Cloud Service] の主な変更点](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] アーキテクチャ](/help/assets/architecture.md)
    + [サポートされているファイル形式](/help/assets/file-format-support.md)
    + [アセットマイクロサービスの概要](/help/assets/asset-microservices-overview.md)
-   + [&#x200B; [!DNL Assets] でのアクセシビリティ](/help/assets/accessibility.md)
+   + [ [!DNL Assets] でのアクセシビリティ](/help/assets/accessibility.md)
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
    + [Assets as a Cloud Service Ultimate の有効化](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
@@ -600,10 +602,10 @@ ht-degree: 95%
       + [AI で生成されたメタデータによるコンテンツ検出の強化](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md)
       + [ビデオのスマートタグ](/help/assets/smart-tags-for-videos.md)
       + [アセットの整理方法](/help/assets/organize-assets.md)
-      + [&#x200B; [!DNL Adobe Stock] アセットを使用する](/help/assets/aem-assets-adobe-stock.md)
+      + [ [!DNL Adobe Stock] アセットを使用する](/help/assets/aem-assets-adobe-stock.md)
       + [コレクションを管理](/help/assets/manage-collections.md)
       + [メタデータの概要](/help/assets/manage-metadata.md)
-      + [&#x200B; [!DNL Adobe Creative Cloud] との統合](/help/assets/aem-cc-integration-best-practices.md)
+      + [ [!DNL Adobe Creative Cloud] との統合](/help/assets/aem-cc-integration-best-practices.md)
       + [メタデータの追加と編集](/help/assets/meta-edit.md)
       + [フォルダーのアセットとコレクションのレビュー](/help/assets/bulk-approval.md)
       + [アセットインサイトの使用と設定](/help/assets/assets-insights.md)
@@ -616,7 +618,7 @@ ht-degree: 95%
       + [プライベートフォルダーの作成と共有](/help/assets/private-folder.md)
       + [アセットのデジタル著作権管理](/help/assets/drm.md)
       + [アセットへの透かしの適用](/help/assets/watermark-assets.md)
-      + [&#x200B; [!DNL Creative Cloud] API を使用してアセットを処理する](/help/assets/cc-api-integration.md)
+      + [ [!DNL Creative Cloud] API を使用してアセットを処理する](/help/assets/cc-api-integration.md)
       + [画像のカラータグ](/help/assets/color-tag-images.md)
       + [PDF ドキュメントの管理](/help/assets/manage-pdf-documents.md)
    + [!DNL Assets] の設定、管理、拡張 {#admin}
@@ -638,8 +640,8 @@ ht-degree: 95%
       + [アセットメタデータの読み込みと書き出し](/help/assets/metadata-import-export.md)
       + [アセットのアップロード制限の設定](/help/assets/configure-asset-upload-restrictions.md)
    + アセットの共有と配布 {#brand-portal}
-      + [&#x200B; [!DNL Assets]  での [!DNL Brand Portal]の設定](/help/assets/configure-aem-assets-with-brand-portal.md)
-      + [&#x200B; [!DNL Brand Portal] へのアセットの公開](/help/assets/publish-to-brand-portal.md)
+      + [ [!DNL Assets]  での [!DNL Brand Portal]の設定](/help/assets/configure-aem-assets-with-brand-portal.md)
+      + [ [!DNL Brand Portal] へのアセットの公開](/help/assets/publish-to-brand-portal.md)
       + [アセットを [!DNL Brand Portal] から  [!DNL Assets] に公開する](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja)
    + コンテンツフラグメント {#content-fragments}
       + [コンテンツフラグメントの使用方法](/help/assets/content-fragments/content-fragments.md)
@@ -779,11 +781,11 @@ ht-degree: 95%
    + Figma との統合 {#integration-figma}
       + [Figma とのネイティブ統合](/help/assets/integrate-aem-assets-with-figma.md)
    + Adobe Workfront との統合 {#integrations}
-      + [&#x200B; [!DNL Adobe Workfront] との統合](/help/assets/workfront-integrations.md)
+      + [ [!DNL Adobe Workfront] との統合](/help/assets/workfront-integrations.md)
       + [アセットメタデータマッピングの設定](/help/assets/configure-asset-metadata-mapping.md)
-      + [&#x200B; [!DNL Workfront] 用の  [!DNL enhanced connector]  のインストール](/help/assets/workfront-connector-install.md)
+      + [ [!DNL Workfront] 用の  [!DNL enhanced connector]  のインストール](/help/assets/workfront-connector-install.md)
       + [既存のインストールの外部依存関係の削除](/help/assets/remove-external-dependencies.md)
-      + [&#x200B; [!DNL Workfront] 用の  [!DNL enhanced connector]  の設定](/help/assets/workfront-connector-configure.md)
+      + [ [!DNL Workfront] 用の  [!DNL enhanced connector]  の設定](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
    + Adobe Express との統合 {#integration-adobe-express}
       + [Adobe Express とのネイティブ統合](/help/assets/native-integration-adobe-express.md)
@@ -807,7 +809,7 @@ ht-degree: 95%
       + [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
       + [AEM Forms as a Cloud Service およびローカル開発環境で、アダプティブフォームのコアコンポーネントを有効にする](/help/forms/enable-adaptive-forms-core-components.md)
       + [統合ストレージコネクタの設定](/help/forms/configure-unified-storage-connector.md)
-      + [as a Cloud Service の移行元 [!DNL AEM 6.5 Forms] または以前のバージョン [!DNL AEM Forms] &#x200B;](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [as a Cloud Service の移行元 [!DNL AEM 6.5 Forms] または以前のバージョン [!DNL AEM Forms] ](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
       + [アダプティブフォーム、PDF フォームおよびその他のアセットの読み込み、書き出し、整理](/help/forms/import-export-forms-templates.md)
       + [Adobe Experience Software Development Kit（AEM SDK）の機能切替スイッチを有効にする](/help/forms/enable-feature-toggle.md)
@@ -827,10 +829,10 @@ ht-degree: 95%
       + フォームデータモデル {#use-form-data-model}
          + [AEM Forms をデータベースまたはデータソースに接続](/help/forms/data-integration.md)
          + [データソースの設定](/help/forms/configure-data-sources.md)
-         + [&#x200B; [!DNL Microsoft Dynamics]  OData の設定](/help/forms/ms-dynamics-odata-configuration.md)
+         + [ [!DNL Microsoft Dynamics]  OData の設定](/help/forms/ms-dynamics-odata-configuration.md)
          + [OAuth 2.0 クライアント資格情報フローを使用して、アダプティブフォームを Salesforce アプリケーションに接続](/help/forms/aem-forms-salesforce-integration.md)
-         + [&#x200B; [!DNL Azure]  ストレージの設定](/help/forms/configure-azure-storage.md)
-         + [&#x200B; [!DNL Microsoft Dynamics 365]  クラウドサービスの設定](/help/forms/configure-msdynamics.md)
+         + [ [!DNL Azure]  ストレージの設定](/help/forms/configure-azure-storage.md)
+         + [ [!DNL Microsoft Dynamics 365]  クラウドサービスの設定](/help/forms/configure-msdynamics.md)
          + [アダプティブフォームの Azure SQL データベースへの接続](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Salesforce クラウドサービスの設定](/help/forms/configure-salesforce.md)
          + [フォームデータモデルの作成](/help/forms/create-form-data-models.md)
@@ -1227,7 +1229,7 @@ ht-degree: 95%
          + カスケードドロップダウン {#cascading-drop-down-list}
             + [はじめに](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
             + [API 統合を作成](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
-            + [&#x200B; フォームを作成 &#x200B;](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
+            + [ フォームを作成 ](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
       + ドキュメントベースのオーサリング {#getting-started-edge-delivery-services-forms}
          + [最初のフォームの作成：Google Sheetsと Excel を使用したクイックスタートガイド](/help/edge/docs/forms/tutorial.md)
          + [Google Sheets または Excel を使用したフォームの作成方法：ステップバイステップガイド](/help/edge/docs/forms/create-forms.md)
@@ -1270,7 +1272,7 @@ ht-degree: 95%
       + オーサリング{#authoring}
          + [オーサリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=ja)
          + [マークダウンエディター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=ja)
-      + [&#x200B; フラグメントのプレビュー &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=ja)
+      + [ フラグメントのプレビュー ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=ja)
    + コンテンツフラグメントセレクター {#content-fragment-selector}
       + [マイクロフロントエンドコンテンツフラグメントセレクター - 概要](/help/headless/content-fragment-selector/overview.md)
@@ -1492,7 +1494,7 @@ ht-degree: 95%
          + [はじめに](/help/implementing/universal-editor/getting-started.md)
          + [デベロッパー向け概要](/help/implementing/universal-editor/developer-overview.md)
          + [ローカル AEM 開発](/help/implementing/universal-editor/local-dev.md)
-         + [SecurBank サンプルアプリ &#x200B;](/help/implementing/universal-editor/securbank.md)
+         + [SecurBank サンプルアプリ ](/help/implementing/universal-editor/securbank.md)
       + [ヘッドレスエクスペリエンス管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=ja)
       + ハイブリッドおよび SPA 開発 {#hybrid}
          + [AEM でのハイブリッドと SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
