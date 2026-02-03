@@ -41,7 +41,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 関連付け UI の場合、[SAML 2.0 認証 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) の記事で説明されている標準セットアップの後に、追加の SAML 設定が必要です。 詳しくは、[ 関連 UI 用の追加の SAML 設定 ](#additional-saml-configurations-for-associate-ui) の節を参照してください。
+> 関連付け UI の場合、[SAML 2.0 認証 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) の記事で説明されている標準セットアップの後に、追加の SAML 設定が必要です。 詳しくは、[&#x200B; 関連 UI 用の追加の SAML 設定 &#x200B;](#additional-saml-configurations-for-associate-ui) の節を参照してください。
 
 ### 関連付け UI 用の追加の SAML 設定
 
