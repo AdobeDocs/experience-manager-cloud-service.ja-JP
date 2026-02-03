@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.12.0 リリー
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.12.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: 9e81e0f3ed4b3e4ac02655cf4203191c61007b1d
+source-git-commit: 552d967edb81a8c586dc0a6a8a9bc9902342014c
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 48%
+source-wordcount: '1832'
+ht-degree: 51%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 48%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440921?captions=jpn&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -58,22 +58,22 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様お
 
 ### AEMのエージェント（Beta プログラム） {#agents-in-aem-beta-program}
 
-実稼働、ガバナンス、最適化、検出、開発全体にわたる、強力な新しいAEMエージェンティック機能に早期にアクセスできます。 お客様からのフィードバックによって、Adobeのロードマップと最終的な機能が直接形作られます。 詳しくは、[AEMでのエージェントの概要 &#x200B;](/help/ai-in-aem/agents/overview.md) を参照してください。
+実稼働、ガバナンス、最適化、検出、開発全体にわたる、強力な新しいAEMエージェンティック機能に早期にアクセスできます。 お客様からのフィードバックによって、Adobeのロードマップと最終的な機能が直接形作られます。 詳しくは、[AEMでのエージェントの概要 ](/help/ai-in-aem/agents/overview.md) を参照してください。
 
 このプログラムは通常 4～6 週間続きますが、積極的に参加する能力に合わせて柔軟に調整できます。
 
-このプログラムへの参加をオプトインするには、[aemagentsteam@adobe.comに電子メールを送信し &#x200B;](mailto:aemagentsteam@adobe.com) 可能な限り次の詳細を含めてください。
+このプログラムへの参加をオプトインするには、[aemagentsteam@adobe.comに電子メールを送信し ](mailto:aemagentsteam@adobe.com) 可能な限り次の詳細を含めてください。
 
 * エージェントを積極的に使用するチームメンバーの名前とAdobe ID。
 * 自分または自分のチームが使用する特定のエージェントのリスト。 または、単に「すべてのエージェント」と言います。
 
 ### AEM財団（Beta プログラム） {#aem-foundation-beta-programs}
 
-[AEM Foundation ベータプログラム &#x200B;](#foundation-early-adopter) を参照してください。
+[AEM Foundation ベータプログラム ](#foundation-early-adopter) を参照してください。
 
 ### Cloud Manager（Beta プログラム） {#cloud-manager-beta-programs}
 
-[Cloud Manager ベータプログラム &#x200B;](/help/implementing/cloud-manager/release-notes/current.md) を参照してください。
+[Cloud Manager ベータプログラム ](/help/implementing/cloud-manager/release-notes/current.md) を参照してください。
 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -86,7 +86,7 @@ Adobeが開発中の機能に早期にアクセスすることで、お客様お
 
 * PNG （scale）およびJPG（image scale and quality）ファイル形式の書き出し時の書き出し設定のサポート。
 
-  ![Figma プラグイン &#x200B;](/help/assets/assets/figma-v2-plugin.png)
+  ![Figma プラグイン ](/help/assets/assets/figma-v2-plugin.png)
 
 **アップロードされたアセットのマルウェア検出**
 
@@ -94,7 +94,7 @@ AEM Assetsには、アップロードされたファイルの自動マルウェ�
 
 **AI が生成したメタデータ – 実施要件の更新**
 
-AEM Assetsで AI によって生成されたメタデータを有効にするために、GenAI Rider に署名する必要がなくなりました。 この機能は、GenAI Rider に署名したお客様と、まだ検証されていないお客様の両方が利用できるようになりました。 GenAI の使用を明示的にオプトアウトした顧客は、引き続き機能を無効にできます。 環境レベルで機能イネーブルメントを管理するには、[AI 生成メタデータの無効化 &#x200B;](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata) を参照してください。 この変更は、リリースバージョン 23482 以降のお客様に対して行われます。
+AEM Assetsで AI によって生成されたメタデータを有効にするために、GenAI Rider に署名する必要がなくなりました。 この機能は、GenAI Rider に署名したお客様と、まだ検証されていないお客様の両方が利用できるようになりました。 GenAI の使用を明示的にオプトアウトした顧客は、引き続き機能を無効にできます。 環境レベルで機能イネーブルメントを管理するには、[AI 生成メタデータの無効化 ](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata) を参照してください。 この変更は、リリースバージョン 23482 以降のお客様に対して行われます。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -197,7 +197,7 @@ Adobeは 2025 年 10 月 14 日に **ステージング** 環境と **実稼動*
 
 >[!NOTE]
 >
-> 最新のパフォーマンス最適化と言語強化を活用するには、Java 17 または Java 21 （推奨）を使用してビルドすることをお勧めします。 Java 8 および Java 11 を使用したビルドは、現時点ではサポートされていますが、今後のリリースで非推奨（廃止予定）になります。 廃止に先立ち、別途お知らせいたします。 *この記事* の [&#x200B; ビルド時間要件 &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) の節を参照してください。
+> 最新のパフォーマンス最適化と言語強化を活用するには、Java 17 または Java 21 （推奨）を使用してビルドすることをお勧めします。 Java 8 および Java 11 を使用したビルドは、現時点ではサポートされていますが、今後のリリースで非推奨（廃止予定）になります。 廃止に先立ち、別途お知らせいたします。 *この記事* の [ ビルド時間要件 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) の節を参照してください。
 >
 
 #### AEM Java ログ設定ポリシーの適用 {#logconfig-policy}
@@ -215,7 +215,7 @@ Adobeは 2025 年 10 月 14 日に **ステージング** 環境と **実稼動*
 
 #### 自動メンテナンスアップデートの一時停止 {#pause-updates}
 
-運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[&#x200B; 新しいセルフサービス機能 &#x200B;](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
+運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[ 新しいセルフサービス機能 ](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
 
 * 静かな時間：毎日設定された時間に自動メンテナンスをブロックします。勤務時間、夜間の実行や朝の切り替え時などに最適です。
 * 更新不要の期間：自動メンテナンスを 1 週間ブロックします。ローンチ、プロモーションまたは年次フリーズに使用します。
@@ -254,14 +254,6 @@ Edge 認証を使用すると、Edge Delivery Services ページへのアクセ�
 
 アクセスをリクエストしてフィードバックを共有するには、[aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) にメールを送信してください。
 
-
-#### AI 回答 – AEM Sitesに対する、よりスマートでコンテキスト対応の応答（Beta プログラム） {#ai-answers-beta}
-
-AI Answers は、訪問者がコンテンツを操作する新しい方法を導入します。 Retrieval-Augmented Generation （RAG）テクノロジーを活用し、AEMが管理するデータを使用して、デジタルエクスペリエンス内で直接、正確でブランドに一貫性のある回答を提供します。
-
-AI AnswersBetaプログラムの立ち上げに備え、お客様の関心を登録する招待を開始しています。 ベータ版の容量は非常に限られているので、早期サインアップは優先的に考慮されます。 ベータ版に参加すると、AEM Cloud Service 環境で AI の回答を調べ、パフォーマンスと精度を検証し、利用可能になる前に将来のエクスペリエンスを形成するのに役立ちます。
-
-参加をリクエストしたり、更新情報を受け取ったりするには、[feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com) にお問い合わせください。
 
 #### RDE のスナップショット（Betaプログラム） {#rde-snapshot-program}
 
