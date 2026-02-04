@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a842a5f0bd5561563a86f6f0b6e8abf8cfd679ec
+source-git-commit: f01a98604e045c48ab7167122aee3b2468db6d52
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '988'
 ht-degree: 24%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 24%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 24222 {#24222}
+## リリース 24288 {#24288}
 
-2026年2月3日に公開された、メンテナンスリリース 24222 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 23963 でした。
+2026年2月4日に公開された、メンテナンスリリース 24288 の継続的な改善点を以下にまとめます。前回のメンテナンスリリースは、リリース 23963 でした。
 
 2026.2.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
 
-### 機能強化 {#enhancements-24222}
+>[!NOTE]
+>
+>リリース 24222 が非公開になりました。
+
+### 機能強化 {#enhancements-24288}
 
 * CNTBF-604：新しい contentbackflow バンドルリリースを作成します。
 * CQ-4361592：プロジェクトの作成と更新で TypeHint のサポートを追加。
@@ -58,7 +62,7 @@ ht-degree: 24%
 * SKYOPS-125574:Quickstart で netcentric AC Tool バンドルを更新します。
 * SKYOPS-126150: スレッドダンプ生成スクリプトの top コマンドを改善しました。
 
-### 修正された問題 {#fixed-issues-24222}
+### 修正された問題 {#fixed-issues-24288}
 
 * FORMS-23687：デフォルト値なしで contains ルールが使用された場合の SSV 検証エラーを修正。
 * GRANITE-48472:「ユーザー設定を編集」タブでパスワードを変更する際に、「エラーをローカライズ」が発生する。
@@ -75,10 +79,11 @@ ht-degree: 24%
 * GRANITE-63293：最初のオーサリング後に、必須のアスタリスクが失われる必須のパスフィールドを修正。
 * GRANITE-63360：複数のパスが選択されている場合に表示される誤った情報を修正します。
 * SITES-36242:GraphQLで正規表現を実行するように絞り込んで、Dispatcher のフィルターバイパスを修正します。
+* SITES-40122：コンテンツ配布 ImsService とのEdge Delivery統合の修正。
 * SKYOPS-84379:RDE による適切な機能切り替えピックアップには、最新の FACT ツールを使用してください。
 * SKYOPS-121216：更新を Jackson 2.20.0 ライブラリに戻す。
 
-#### AEM ガイド {#guides-24222}
+#### AEM ガイド {#guides-24288}
 
 * GUIDES-38198：コンテキストメニューの「MathMLを編集」オプションを使用してインライン MathMLの式を更新する場合、更新された値は、ページが更新されるまで反映されません。
 * GUIDES-38276:Assets UI のバージョン履歴パネルからバージョンラベルを削除できない。
@@ -88,11 +93,11 @@ ht-degree: 24%
 
 このリリースの新機能および機能強化と修正された問題について詳しくは、[Experience Manager Guides リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)を参照してください。
 
-### 既知の問題 {#known-issues-24222}
+### 既知の問題 {#known-issues-24288}
 
 なし。
 
-### 廃止された機能と API {#deprecated-24222}
+### 廃止された機能と API {#deprecated-24288}
 
 * AEMSRE-2896：カスタマイズされた logmanager 設定処理を修正しました。
 * GRANITE-62802：非推奨（廃止予定）の `commons-lang` 依存関係を `granite.auth.saml` から削除します。
@@ -109,11 +114,11 @@ ht-degree: 24%
 
 AEM as a Cloud Service で廃止および削除された機能と API について詳しくは、[廃止および削除された機能と API](/help/release-notes/deprecated-removed-features.md) ドキュメントを参照してください。
 
-### セキュリティ修正 {#security-24222}
+### セキュリティ修正 {#security-24288}
 
 AEM as a Cloud Service では、プラットフォームのセキュリティとパフォーマンスの最適化に取り組んでいます。 このメンテナンスリリースでは、特定された 10 つの脆弱性に対処し、堅牢なシステム保護に対する取り組みを強化しています。
 
-### 組み込みテクノロジー {#embedded-tech-24222}
+### 組み込みテクノロジー {#embedded-tech-24288}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
