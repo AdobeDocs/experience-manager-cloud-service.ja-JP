@@ -269,11 +269,11 @@ AEM Assets には、適切なアセットをすばやく見つけるのに役立
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ja">
    <img alt="メタデータ管理のベストプラクティス" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ja">
       <strong>メタデータ管理のベストプラクティス</strong>
       </a>
    </div>
@@ -697,11 +697,11 @@ Discovery Agent の主なメリットには、次のようなものがありま�
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
    <img alt="検出エージェントの概要" src="./assets/discovery-agent-overview.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
       <strong> 検出エージェントの概要 </strong>
       </a>
    </div>
@@ -711,11 +711,11 @@ Discovery Agent の主なメリットには、次のようなものがありま�
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
    <img alt="コンテンツの最適化の概要" src="./assets/content-optimization-agent.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
       <strong> コンテンツ最適化エージェントの概要 </strong>
       </a>
    </div>
@@ -725,11 +725,11 @@ Discovery Agent の主なメリットには、次のようなものがありま�
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
    <img alt="ガバナンスエージェントの概要" src="./assets/governance-agent-overview.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
       <strong> ガバナンス・エージェントの概要 </strong>
       </a>
    </div>
