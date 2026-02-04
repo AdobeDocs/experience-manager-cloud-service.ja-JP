@@ -14,7 +14,7 @@ ht-degree: 100%
 
 選択したアセットへのリンクを作成して、他のユーザーと簡単に共有できるようにします。認証済みの [!DNL Content Hub] ユーザーとして、[!DNL Content Hub] 環境で使用可能な 1 つ以上のアセットを選択し、リンクを生成して、そのリンクを他のプライベートまたはパブリックのユーザーに送信します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3474920/?captions=jpn&learn=on&enablevpops=on){transcript=true}
 
 ## 前提条件 {#prerequisites}
 

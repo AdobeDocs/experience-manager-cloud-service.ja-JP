@@ -35,7 +35,7 @@ Experience Manager Assets を使用すると、管理者はコンテンツハブ
 
 * アセット、コレクション、インサイトに加えて、コンテンツハブに含める必要があるカスタムリンク。
 
->[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472947/?captions=jpn&learn=on&enablevpops){transcript=true}
 
 ## 前提条件 {#prerequisites-configuration-ui}
 

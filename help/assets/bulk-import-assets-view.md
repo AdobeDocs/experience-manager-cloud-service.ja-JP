@@ -27,7 +27,7 @@ AEM Assets ビューの一括読み込みを使用すると、管理者はデー
 * Dropbox
 * OneDrive
 
->[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3451955/?captions=jpn&learn=on){transcript=true}
 
 ## 前提条件 {#prerequisites}
 

@@ -28,7 +28,7 @@ ht-degree: 99%
 
 * 重複の数を減らす – アセットの整合性を向上させます。同じアセットが異なるグループと共有される場合は、フォルダーベースの権限で重複が必要になります。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475415/?captions=jpn&learn=on&enablevpops){transcript=true}
 
 ## 属性ベースのアクセス制御を有効にする方法 {#enable-attribute-based-access-control}
 

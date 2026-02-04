@@ -20,7 +20,7 @@ Experience Manager Assets as a Cloud Service で承認済みとしてマーク�
 
 Experience Manager Assets 用のコンテンツハブを有効にする方法について詳しくは、次のビデオを参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472936/?captions=jpn&learn=on){transcript=true}
 
 コンテンツハブでの権限のバリエーションには、次が含まれます。
 
