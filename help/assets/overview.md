@@ -2,10 +2,10 @@
 title: AEM でのデジタルアセット管理の Assets as a Cloud Service の概要
 description: AEM でのデジタルアセット管理の Assets as a Cloud Service の概要
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d49bfaf7ca028b2386342d33fd68e566b8a2be1f
+source-git-commit: 5606d66dfa9c7d11063eea495088e1263a2cc5fb
 workflow-type: tm+mt
-source-wordcount: '5626'
-ht-degree: 88%
+source-wordcount: '5642'
+ht-degree: 87%
 
 ---
 
@@ -24,7 +24,7 @@ AEM Assets Ultimate および AEM Assets Prime の製品について詳しくは
 
 >[!BEGINTABS]
 
->[!TAB アセットの取り込み]
+>[!TAB 取り込み]
 
 ## アセットの取り込み {#asset-ingestion}
 
@@ -239,7 +239,7 @@ Adobe Experience Manager では、web ブラウザーユーザーインターフ
 </td>
 </table>
 
->[!TAB アセット検出]
+>[!TAB  検出 ]
 
 ## アセット検出 {#asset-discovery}
 
@@ -269,11 +269,11 @@ AEM Assets には、適切なアセットをすばやく見つけるのに役立
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ja">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="メタデータ管理のベストプラクティス" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ja">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>メタデータ管理のベストプラクティス</strong>
       </a>
    </div>
@@ -346,7 +346,7 @@ AEM Assets には、適切なアセットをすばやく見つけるのに役立
 </td>
 </table>
 
->[!TAB アセットのガバナンス]
+>[!TAB  ガバナンス ]
 
 ## アセットの管理とガバナンス {#asset-management-governance}
 
@@ -518,7 +518,7 @@ AEM Assets は、様々な アドビアプリケーションおよびアドビ�
 
 * **Adobe Workfront との統合**：[!DNL Adobe Workfront] は作業管理アプリケーションで、作業のライフサイクル全体を一元的に管理するのに役立ちます。[!DNL Workfront] と [!DNL Adobe Experience Manager Assets] の統合により、組織は、作業とデジタルアセット管理を本質的に関連付けることで、コンテンツベロシティを向上させ市場投入までの時間を短縮することができます。Workfront での作業を管理するコンテキスト内で、ユーザーは必要なドキュメントと画像にアクセスできます。
 
-  アドビでは、[&#x200B; [!DNL Workfront]  と  [!DNL Adobe Experience Manager Assets]  をネイティブに統合](https://experienceleague.adobe.com/ja/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations)することを提案しています。
+  アドビでは、[ [!DNL Workfront]  と  [!DNL Adobe Experience Manager Assets]  をネイティブに統合](https://experienceleague.adobe.com/ja/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations)することを提案しています。
 
 * **Figma との統合**：AEM Assets は Figma とネイティブに統合されているので、デザイナーは AEM Assets に保存されているアセットに Figma ユーザーインターフェイスから直接アクセスできます。AEM Assets で管理されているコンテンツを Figma キャンバスに配置し、新しいコンテンツや編集したコンテンツを AEM Assets リポジトリに保存できます。Figma コミュニティページで利用可能な AEM Assets コネクタにアクセスするには、[こちら](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)をクリックします。
 
@@ -579,7 +579,7 @@ AEM Assets は、様々な アドビアプリケーションおよびアドビ�
 
 * **[!DNL Edge Delivery Services]** 用の [!DNL AEM Assets] と [!DNL Universal Editor] ベースのオーサリングフローの統合：[!DNL AEM Assets] と統合するように [!DNL Universal Editor] を設定します。この統合により、[!DNL Dynamic Media with OpenAPI capabilities] を使用してアセットを配信できます。
 
-   * [!DNL Universal Editor] にカスタムアセットピッカー機能を追加する方法について詳しくは、[&#x200B; [!DNL Edge Delivery]  サイトの設定](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)を参照してください。カスタムアセットピッカーを使用すると、[!DNL Universal Editor] コンテンツにアセットを直接挿入できます。
+   * [!DNL Universal Editor] にカスタムアセットピッカー機能を追加する方法について詳しくは、[ [!DNL Edge Delivery]  サイトの設定](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)を参照してください。カスタムアセットピッカーを使用すると、[!DNL Universal Editor] コンテンツにアセットを直接挿入できます。
    * [!DNL Universal Editor] でオーサリング中に [!DNL AEM Assets] にアクセスしてアセットを挿入する方法について詳しくは、[拡張機能の概要](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)を参照してください。
 
 <table>
@@ -668,10 +668,10 @@ Discovery Agent の主なメリットには、次のようなものがありま�
 
 **サンプルプロンプト：**
 
-* `Create a 2000px JPEG rendition.`
-* `Sharpen the image.`
-* `Change background color to #ff8932.`
-* `Create a rendition for an Instagram story.`
+* 2000px のJPEG レンディションを作成します。
+* 画像をシャープにします。
+* 背景色を#ff8932 に変更します。
+* Instagram ストーリーのレンディションを作成します。
 
 **制限：** 一部の最適化は、PNG アセットではサポートされていません。
 
@@ -697,11 +697,11 @@ Discovery Agent の主なメリットには、次のようなものがありま�
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
-   <img alt="検出エージェントの概要" src="./assets/discovery-agent-overview.jpeg" />
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <img alt="検出エージェントの概要" src="./assets/discovery-agent.jpg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
       <strong> 検出エージェントの概要 </strong>
       </a>
    </div>
@@ -711,11 +711,11 @@ Discovery Agent の主なメリットには、次のようなものがありま�
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
    <img alt="コンテンツの最適化の概要" src="./assets/content-optimization-agent.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
       <strong> コンテンツ最適化エージェントの概要 </strong>
       </a>
    </div>
@@ -725,11 +725,11 @@ Discovery Agent の主なメリットには、次のようなものがありま�
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
    <img alt="ガバナンスエージェントの概要" src="./assets/governance-agent-overview.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
       <strong> ガバナンス・エージェントの概要 </strong>
       </a>
    </div>
@@ -743,7 +743,7 @@ Discovery Agent の主なメリットには、次のようなものがありま�
 
 エージェントには、AEM Cloud Service の **AI アシスタント** からアクセスできます。 [experience.adobe.com](https://experience.adobe.com/) にログインし、自然言語プロンプトを使用して AI アシスタントとやり取りします。
 
->[!TAB アセットのアクティブ化]
+>[!TAB アクティベーション]
 
 ## アセットのアクティブ化 {#asset-activation}
 
