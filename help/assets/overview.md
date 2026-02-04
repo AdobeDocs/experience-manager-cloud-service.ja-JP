@@ -2,10 +2,10 @@
 title: AEM でのデジタルアセット管理の Assets as a Cloud Service の概要
 description: AEM でのデジタルアセット管理の Assets as a Cloud Service の概要
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: d49bfaf7ca028b2386342d33fd68e566b8a2be1f
 workflow-type: tm+mt
-source-wordcount: '5075'
-ht-degree: 97%
+source-wordcount: '5626'
+ht-degree: 88%
 
 ---
 
@@ -86,9 +86,9 @@ Adobe Experience Manager では、web ブラウザーユーザーインターフ
 
 >[!TAB AI を活用した機能]
 
-**スマートタグ**：スマートタグでは、Adobe AI の人工知能フレームワークを使用して、タグ構造とビジネス上の分類に基づいて画像認識アルゴリズムのトレーニングをおこないます。 その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。デフォルトでは、AEM は、アップロードされたアセットにスマートタグを自動的に適用します。
+**スマートタグ**：スマートタグでは、Adobe AIの人工知能フレームワークを使用して、タグ構造とビジネス上の分類に基づいて画像認識アルゴリズムのトレーニングを行います。 その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。デフォルトでは、AEM は、アップロードされたアセットにスマートタグを自動的に適用します。
 
-**インテリジェントカラーベースのタグ付けと検索**:AEM Assetsは、Adobe AI 機能を使用して、画像内の色を識別し、取り込み時にこれらの特性をタグとして自動的に適用します。 これらのタグを使用すると、画像のカラー構成に基づいて検索エクスペリエンスを強化できます。
+**インテリジェントカラーベースのタグ付けと検索**:AEM AssetsはAdobe AI機能を使用して、画像内の色を識別し、取り込み時にこれらの特性をタグとして自動適用します。 これらのタグを使用すると、画像のカラー構成に基づいて検索エクスペリエンスを強化できます。
 
 **AI 生成のメタデータ**：AEM Assets では AI を使用して、タイトル、説明、キーワードなどのメタデータが自動生成されます。これらの AI で生成されたフィールドは、メタデータの精度を高め、アセットの検索、分類および推奨を容易にします。このアプローチでは、手動でのタグ付けが不要なために効率が向上するだけでなく、大量のデジタルコンテンツ間の一貫性とスケーラビリティも確保できます。
 
@@ -108,7 +108,6 @@ Adobe Experience Manager では、web ブラウザーユーザーインターフ
       <em>アップロードしたアセットにスマートタグを自動的に適用する方法の詳細情報。</em>
    </p>
 </td>
-
 
 <td>
    <a href="/help/assets/color-tag-images.md">
@@ -193,7 +192,7 @@ Adobe Experience Manager では、web ブラウザーユーザーインターフ
 
 **スマートイメージング**：スマートイメージングは、顧客のブラウザー機能に応じて画像の形式とファイルサイズを自動的に最適化することで、画像アセット配信のパフォーマンスをさらに向上させます。既存の画像プリセットと連携し、配信時にインテリジェンスを使用します。このインテリジェンスにより、ブラウザーとネットワーク接続速度に応じて、画像ファイルのサイズがさらに縮小されます。
 
-**スマート切り抜き**:Adobe AI 機能で、あらゆる画像やビデオの焦点位置を自動的に検出し、切り抜いて維持管理します。 画面サイズに関係なく、意図した目標地点をキャプチャして、面倒な手動タスクを排除し、あらゆるデバイスや画面で美しく表示される、高画質で読み込みが速い画像とビデオを配信します。
+**スマート切り抜き**：任意の画像やビデオで焦点位置を自動的に検出し、切り抜いて維持管理するAdobe AI機能。 画面サイズに関係なく、意図した目標地点をキャプチャして、面倒な手動タスクを排除し、あらゆるデバイスや画面で美しく表示される、高画質で読み込みが速い画像とビデオを配信します。
 
 **AI 生成のビデオキャプション**：Adobe Dynamic Media の AI 生成のビデオキャプションは、人工知能を使用して、ビデオコンテンツのキャプションを自動的に生成します。この機能は、正確なキャプションを提供することで、アクセシビリティを向上させ、ユーザーエクスペリエンスを強化するように設計されています。キャプションは、元のオーディオ、追加のオーディオトラック、またはビデオプロパティページの `Captions and Audio` タブで提供される追加のキャプションから生成されます。60 を超える言語がサポートされているので、ビデオを公開する前にキャプションを確認およびプレビューできます。
 <table>
@@ -270,11 +269,11 @@ AEM Assets には、適切なアセットをすばやく見つけるのに役立
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ja">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="メタデータ管理のベストプラクティス" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ja">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>メタデータ管理のベストプラクティス</strong>
       </a>
    </div>
@@ -297,7 +296,7 @@ AEM Assets には、適切なアセットをすばやく見つけるのに役立
 </td>
 </table>
 
-**スマートタグ**：スマートタグでは、Adobe AI の人工知能フレームワークを使用して、タグ構造とビジネス上の分類に基づいて画像認識アルゴリズムのトレーニングをおこないます。 その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。デフォルトでは、AEM は、アップロードされたアセットにスマートタグを自動的に適用します。
+**スマートタグ**：スマートタグでは、Adobe AIの人工知能フレームワークを使用して、タグ構造とビジネス上の分類に基づいて画像認識アルゴリズムのトレーニングを行います。 その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。デフォルトでは、AEM は、アップロードされたアセットにスマートタグを自動的に適用します。
 
 **アセットを検索**：適切なメタデータを用意すると、AEM Assets で様々な演算子、ワイルドカード、高度なクエリ、カスタムフィルターを使用して検索できます。
 
@@ -375,7 +374,6 @@ AEM Assets には、適切なアセットをすばやく見つけるのに役立
       <em>基本的なアセット管理タスクと高度なアセット管理タスクを実行する方法の詳細情報。</em>
    </p>
 </td>
-
 
 <td>
    <a href="/help/assets/my-workspace-assets-view.md">
@@ -520,7 +518,7 @@ AEM Assets は、様々な アドビアプリケーションおよびアドビ�
 
 * **Adobe Workfront との統合**：[!DNL Adobe Workfront] は作業管理アプリケーションで、作業のライフサイクル全体を一元的に管理するのに役立ちます。[!DNL Workfront] と [!DNL Adobe Experience Manager Assets] の統合により、組織は、作業とデジタルアセット管理を本質的に関連付けることで、コンテンツベロシティを向上させ市場投入までの時間を短縮することができます。Workfront での作業を管理するコンテキスト内で、ユーザーは必要なドキュメントと画像にアクセスできます。
 
-  アドビでは、[&#x200B; [!DNL Workfront]  と  [!DNL Adobe Experience Manager Assets]  をネイティブに統合](https://experienceleague.adobe.com/ja/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations)することを提案しています。
+  アドビでは、[ [!DNL Workfront]  と  [!DNL Adobe Experience Manager Assets]  をネイティブに統合](https://experienceleague.adobe.com/ja/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations)することを提案しています。
 
 * **Figma との統合**：AEM Assets は Figma とネイティブに統合されているので、デザイナーは AEM Assets に保存されているアセットに Figma ユーザーインターフェイスから直接アクセスできます。AEM Assets で管理されているコンテンツを Figma キャンバスに配置し、新しいコンテンツや編集したコンテンツを AEM Assets リポジトリに保存できます。Figma コミュニティページで利用可能な AEM Assets コネクタにアクセスするには、[こちら](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)をクリックします。
 
@@ -581,7 +579,7 @@ AEM Assets は、様々な アドビアプリケーションおよびアドビ�
 
 * **[!DNL Edge Delivery Services]** 用の [!DNL AEM Assets] と [!DNL Universal Editor] ベースのオーサリングフローの統合：[!DNL AEM Assets] と統合するように [!DNL Universal Editor] を設定します。この統合により、[!DNL Dynamic Media with OpenAPI capabilities] を使用してアセットを配信できます。
 
-   * [!DNL Universal Editor] にカスタムアセットピッカー機能を追加する方法について詳しくは、[&#x200B; [!DNL Edge Delivery]  サイトの設定](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)を参照してください。カスタムアセットピッカーを使用すると、[!DNL Universal Editor] コンテンツにアセットを直接挿入できます。
+   * [!DNL Universal Editor] にカスタムアセットピッカー機能を追加する方法について詳しくは、[ [!DNL Edge Delivery]  サイトの設定](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)を参照してください。カスタムアセットピッカーを使用すると、[!DNL Universal Editor] コンテンツにアセットを直接挿入できます。
    * [!DNL Universal Editor] でオーサリング中に [!DNL AEM Assets] にアクセスしてアセットを挿入する方法について詳しくは、[拡張機能の概要](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)を参照してください。
 
 <table>
@@ -627,6 +625,123 @@ AEM Assets は、様々な アドビアプリケーションおよびアドビ�
 </table>
 
 +++
+
+>[!TAB AI エージェント ]
+
+## AI エージェント {#ai-agents}
+
+AEM as a Cloud Serviceは、コンテンツの管理、最適化、ガバナンスを強化するインテリジェントな **エージェント** を提供します。 これらのエージェントを使用すると、ユーザーはコンテンツをすばやく検出し、キャンペーンを最適化し、デジタルアセット全体でコンプライアンスを確保できます。
+
+**探索エージェント**
+
+Discovery Agent は、自然で対話型のプロンプトを通じて、クリックのない効率的な検出エクスペリエンスを実現し、AEMのコンテンツをオンデマンドで提供します。 **Assets、コンテンツフラグメント、アダプティブForms** をまたいでインテリジェントに検索し、画像、ビデオ、PDF、記事、フォームテンプレートなどの関連性の高いコンテンツを配信します。 自然言語を使用すると、複雑なクエリを作成したり、AEM Assets インターフェイスでフィルターを適用したりせずに検索できます。 指定したプロンプトに応じて、エージェントは、キュレーションされた結果を、アセットのメタデータおよび配信 URL と共に返します。これらの URL は、すぐに他のアプリケーションに埋め込むことができます。
+
+Discovery Agent の主なメリットには、次のようなものがあります。
+
+* **統合されたコンテンツ検出：** 画像、ビデオ、AEM ドキュメント、記事、フォームなど、あらゆる種類のPDF コンテンツに、1 つの対話型インターフェイスからアクセスします。
+* **キャンペーン計画の迅速化：** E メール、Web、ソーシャルチャネルをまたいで、マーケティングキャンペーン用のビジュアルとフォームをすばやく収集します。
+* **生産性の向上：** 自動化されたインテントベースの検索により、リポジトリの参照やメタデータのフィルタリングに費やす時間を短縮します。
+* **一貫したコンテンツ利用：** 承認済みのアセットやフラグメントの再利用を確保し、チャネル間でブランドの一貫性を維持します。
+
+**スキル：** 自然言語コンテンツ検出、タグベースのアセット検出、フォルダーベースのコンテンツ検出、フォーマットおよび向きベースのアセット検出\
+**ペルソナ：** Campaign マネージャー、チャネルマーケター、DAM ライブラリアン、エージェンシーおよびパートナー\
+**アクセス：AEMの AI アシスタントを使用して**
+
+**一般的なユースケース/サンプルプロンプト：**
+
+* フォルダー WKND に「office」というタグ付けされた画像を表示します。
+* WKND 飲料用に公開されているすべてのコンテンツフラグメントを一覧表示します。
+* 求人に応募するためのフォームを見つけます。
+* 横向きで人物とアセットを表示します。
+
+**コンテンツ最適化エージェント**
+
+**コンテンツ最適化エージェント** は、自然言語プロンプトを使用してアセットを調整するのに役立ちます。 新しいレンディションの生成、ビジュアルの調整、背景の変更およびチャンネルに対応したバリエーションの自動作成が可能です。 Discovery Agent および **Dynamic Media と OpenAPI** で連携して、シームレスな最適化を実現します。
+
+**主なメリット：**
+
+* **アセット変換が簡単：** 画像のサイズ変更、シャープニング、色変更またはミラー化。
+* **チャネルに最適化された出力：** Instagram、web バナー、その他のマーケティングチャネルのレンディションを生成します。
+* **大規模なCreativeの機能強化：** 大量のワークフローで背景の変更やオーバーレイを適用します。
+
+**アクセス：** AEMの AI アシスタントを使用。
+
+**サンプルプロンプト：**
+
+* `Create a 2000px JPEG rendition.`
+* `Sharpen the image.`
+* `Change background color to #ff8932.`
+* `Create a rendition for an Instagram story.`
+
+**制限：** 一部の最適化は、PNG アセットではサポートされていません。
+
+**ガバナンス機関**
+
+ガバナンスエージェントは、AEM コンテンツ全体でコンプライアンス、ブランドの一貫性、ポリシーの適用を確保するのに役立ちます。 メタデータ、アクセシビリティまたは企業ガイドラインを満たさないコンテンツを識別します。
+
+ガバナンスエージェントの主なメリットには、次のようなものがあります。
+
+* **コンプライアンス監視：** コンテンツのポリシー違反を検出します。
+* **メタデータの適用：** ガバナンスに必要なメタデータがアセットに確実に含まれるようにします。
+* **ブランドの一貫性：** 企業標準を満たしていないコンテンツにフラグを付けます。
+
+**スキル：** ポリシーコンプライアンスチェック、メタデータ検証、アクセシビリティ監査、違反の自動アラート\
+**ペルソナ：** DAM 管理者、コンプライアンス担当者、ブランドマネージャー\
+**アクセス：AEM AI アシスタントを使用して**
+
+**一般的なユースケース/サンプルプロンプト：**
+
+* WKND フォルダー内のすべてのアセットのメタデータを検証します。
+* ブランドガイドラインが欠落しているアセットの特定
+* アクセシビリティコンプライアンスのために、公開済みコンテンツを監査します。
+
+<table>
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <img alt="検出エージェントの概要" src="./assets/discovery-agent-overview.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <strong> 検出エージェントの概要 </strong>
+      </a>
+   </div>
+   <p>
+      <em>Discovery Agent とその対話型コンテンツ検出機能の概要 </em>
+   </p>
+</td>
+
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <img alt="コンテンツの最適化の概要" src="./assets/content-optimization-agent.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <strong> コンテンツ最適化エージェントの概要 </strong>
+      </a>
+   </div>
+   <p>
+      <em> コンテンツ最適化エージェントとサポートされる最適化ワークフローの概要 </em>
+   </p>
+</td>
+
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <img alt="ガバナンスエージェントの概要" src="./assets/governance-agent-overview.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <strong> ガバナンス・エージェントの概要 </strong>
+      </a>
+   </div>
+   <p>
+      <em> コンプライアンスおよびポリシー適用ガバナンスエージェントの概要 </em>
+   </p>
+</td>
+</table>
+
+### **AEMのエージェントにアクセスする方法**
+
+エージェントには、AEM Cloud Service の **AI アシスタント** からアクセスできます。 [experience.adobe.com](https://experience.adobe.com/) にログインし、自然言語プロンプトを使用して AI アシスタントとやり取りします。
 
 >[!TAB アセットのアクティブ化]
 
@@ -704,7 +819,7 @@ Dynamic Media には次の主な機能があります。
 
 * **アダプティブビデオセット**：アダプティブビデオセットは、同じビデオを様々なビットレートおよび形式でエンコードしたバージョンをグループ化したものです。まずオリジナルのプライマリビデオをシステムにアップロードします。Dynamic Media は、そのビデオを複数のビデオに自動的にサイジングつまりトランスコードします。次に、使用するビデオ画面、画質および形式を配信時にインテリジェントに決定し、携帯電話、タブレット、デスクトップコンピュータなどにビデオを配信します。
 
-* **スマート切り抜き**:Adobe AI 機能で、あらゆる画像やビデオの焦点位置を自動検出し、切り抜いて維持管理します。 画面サイズに関係なく、意図した目標地点をキャプチャして、面倒な手動タスクを排除し、あらゆるデバイスや画面で美しく表示される、高画質で読み込みが速い画像とビデオを配信します。
+* **スマート切り抜き**：任意の画像やビデオの焦点位置を自動的に検出し、切り抜いて維持管理するAdobe AI機能。 画面サイズに関係なく、意図した目標地点をキャプチャして、面倒な手動タスクを排除し、あらゆるデバイスや画面で美しく表示される、高画質で読み込みが速い画像とビデオを配信します。
 
 * **Dynamic Media テンプレート**：WYSIWYG テンプレートエディターである Dynamic Media テンプレートを使用して、リアルタイムでカスタマイズ可能なバナーやチラシ用テンプレートを作成します。Dynamic Media テンプレートを公開し、ダウンストリームアプリケーションで使用します。Dynamic Media テンプレートには、画像レイヤーとテキストレイヤーが含まれます。テンプレートの画像とテキストレイヤーにパラメーターを追加し、Dynamic Media URL を使用してレイヤーの位置とサイズを変更し、コンテンツをリアルタイムで更新します。
 
