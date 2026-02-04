@@ -35,13 +35,13 @@ ht-degree: 3%
 
 - インタラクティブ通信を作成および公開
 - ポップアップサポートを有効にしたブラウザー
-- 関連付け [ ユーザーは、forms-associates グループの一部である必要があります ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- 任意の [AEMでサポートされている認証メカニズム ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) を使用して設定された認証（SAML 2.0、OAuth、カスタム認証ハンドラーなど）
+- 関連付け [&#x200B; ユーザーは、forms-associates グループの一部である必要があります &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- 任意の [AEMでサポートされている認証メカニズム &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) を使用して設定された認証（SAML 2.0、OAuth、カスタム認証ハンドラーなど）
 
 >[!NOTE]
 >
->- この記事では、[Microsoft Entra ID （Azure AD）を ID プロバイダーとして使用する SAML 2.0 を使用した認証設定について説明します ](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings)
->- 関連付け UI の場合、[SAML 2.0 認証 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) の記事で説明されている標準セットアップの後に、追加の SAML 設定が必要です。 詳しくは、[ 関連 UI 用の追加の SAML 設定 ](#additional-saml-configurations-for-associate-ui) の節を参照してください。
+>- この記事では、[Microsoft Entra ID （Azure AD）を ID プロバイダーとして使用する SAML 2.0 を使用した認証設定について説明します &#x200B;](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings)
+>- 関連付け UI の場合、[SAML 2.0 認証 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) の記事で説明されている標準セットアップの後に、追加の SAML 設定が必要です。 詳しくは、[&#x200B; 関連 UI 用の追加の SAML 設定 &#x200B;](#additional-saml-configurations-for-associate-ui) の節を参照してください。
 
 ### 関連付け UI 用の追加の SAML 設定
 
