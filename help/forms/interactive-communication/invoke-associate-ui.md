@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 6b90e8f2d26d6bfd22fbd94af0d6c68466c69bbb
+source-git-commit: 2f3badafddfdfe1dd21eb74be7189102aa0474bc
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '831'
 ht-degree: 3%
 
 ---
@@ -33,15 +33,14 @@ ht-degree: 3%
 
 関連付け UI をアプリケーションに統合する前に、次のことを確認してください。
 
-- AEM Forms Cloud Service パブリッシュインスタンス
-- AEMで作成および公開されたインタラクティブ通信
+- インタラクティブ通信を作成および公開
 - ポップアップサポートを有効にしたブラウザー
-- ユーザーの関連付けは、**forms-associates** グループに含まれている必要があります
+- 関連付け [ ユーザーは、forms-associates グループの一部である必要があります ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
 - 設定済みの認証 – [SAML 2.0](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
 
 >[!NOTE]
 >
-> 関連付け UI の場合、[SAML 2.0 認証 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) の記事で説明されている標準セットアップの後に、追加の SAML 設定が必要です。 詳しくは、[&#x200B; 関連 UI 用の追加の SAML 設定 &#x200B;](#additional-saml-configurations-for-associate-ui) の節を参照してください。
+> 関連付け UI の場合、[SAML 2.0 認証 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) の記事で説明されている標準セットアップの後に、追加の SAML 設定が必要です。 詳しくは、[ 関連 UI 用の追加の SAML 設定 ](#additional-saml-configurations-for-associate-ui) の節を参照してください。
 
 ### 関連付け UI 用の追加の SAML 設定
 
@@ -144,10 +143,10 @@ const data = {
 | コンポーネント | 必須 | 説明 |
 |-----------|----------|-------------|
 | `id` | はい | ロードするインタラクティブ通信（IC）の識別子 |
-| `prefill` | いいえ | データの事前入力用のサービス設定が含まれます。 |
-| `prefill.serviceName` | いいえ | データの事前入力のために呼び出すフォームデータモデルサービスの名前 |
-| `prefill.serviceParams` | いいえ | 事前入力サービスに渡されるキーと値のペア |
-| `options` | いいえ | PDF レンダリングでサポートされるその他のプロパティ - locale、includeAttachments、embedFonts、makeAccessible |
+| `prefill` | オプション | データの事前入力用のサービス設定が含まれます。 |
+| `prefill.serviceName` | オプション | データの事前入力のために呼び出すフォームデータモデルサービスの名前 |
+| `prefill.serviceParams` | オプション | 事前入力サービスに渡されるキーと値のペア |
+| `options` | オプション | PDF レンダリングでサポートされるその他のプロパティ - locale、includeAttachments、embedFonts、makeAccessible |
 
 ### 手順 3：統合関数の実装
 
@@ -409,7 +408,7 @@ launchAssociateUI('12345', 'FdmTestData',
 {
   "id": "12345",
   "prefill": {
-    "serviceName": "FdmTestData",
+    "serviceName": "IC_FDM",
     "serviceParams": {
       "customerId": "101",
       "accountNumber": "ACC-98765"
@@ -425,11 +424,12 @@ launchAssociateUI('12345', 'FdmTestData',
 
 ```json
 {
-  "id": "12345ß",
+  "id": "12345",
   "prefill": {
-    "serviceName": "FdmTestData",
-    "serviceParams": { 
-      "policyNumber": "POL-123" 
+    "serviceName": "IC_FDM",
+    "serviceParams": {
+      "customerId": "101",
+      "accountNumber": "ACC-98765"
     }
   },
   "options": { 
@@ -481,16 +481,16 @@ launchAssociateUI('12345', 'FdmTestData',
 - 実稼動環境の場合：アプリケーションの正確なオリジン URL を指定します
 - パブリッシュインスタンスの CORS 設定でアプリケーションドメインが許可されていることを確認します
 
-## ベストプラクティス
+<!--## Best Practices
 
-関連付け UI 統合を実装する際は、次のベストプラクティスに従います。
+When implementing the Associate UI integration, follow these best practices:
 
-1. **検証**：送信前に、常に IC ID と JSON ペイロードを検証します
-2. **エラー処理**：エラーの発生に対する適切な `window.open()` ラー処理を実装します
-3. **ユーザーエクスペリエンス**：関連付け UI の初期化中に読み込みインジケーターを表示する
-4. **メモリ管理**：メモリリークを防ぐために、初期化後にイベントリスナーを削除します
-5. **テスト**：ポップアップブロッカーを有効にして統合をテストし、正常な処理を確保します
-6. **ユーザー権限**：ユーザーが forms-associates グループへの適切なアクセス権を持っていることを確認します
+1. **Validation**: Always validate the IC ID and JSON payload before sending
+2. **Error Handling**: Implement proper error handling for `window.open()` failures
+3. **User Experience**: Display a loading indicator while the Associate UI initializes
+4. **Memory Management**: Remove event listeners after initialization to prevent memory leaks
+5. **Testing**: Test the integration with popup blockers enabled to ensure graceful handling
+6. **User Permissions**: Verify users have appropriate access to the forms-associates group-->
 
 ## 関連トピック
 
