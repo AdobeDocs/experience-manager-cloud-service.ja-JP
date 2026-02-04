@@ -110,7 +110,7 @@ AEM Assets ライセンスに基づいて、次のContent Hub クレジットを
 
 1. 有効にする環境をクリックします。 **[!UICONTROL Content Hub]** セクションには `Content Hub is available for activation` が表示されます。
 
-   ![ 下位環境に対してContent Hubを有効にする ](assets/enable-content-hub-lower-environments.png)
+   ![&#x200B; 下位環境に対してContent Hubを有効にする &#x200B;](assets/enable-content-hub-lower-environments.png)
 
 1. **[!UICONTROL クリックしてアクティブ化]** をクリックします。 もう一度 **[!UICONTROL アクティブ化]** をクリックして確認します。
 
@@ -263,10 +263,10 @@ Experience Manager Assets ユーザーを設定するには：
 
 1. [Cloud Manager を使用して Experience Manager Assets のコンテンツハブを有効にします](#enable-content-hub)。
 
-1. [Content Hub Limited ユーザーのオンボーディング ](#onboard-content-hub-users)。 これらのユーザーは、ポータルで使用可能なアセットにアクセスできますが、新しいアセットを追加したり、既存のアセットを変更したりすることはできません。
+1. [Content Hub Limited ユーザーのオンボーディング &#x200B;](#onboard-content-hub-users)。 これらのユーザーは、ポータルで使用可能なアセットにアクセスできますが、新しいアセットを追加したり、既存のアセットを変更したりすることはできません。
 
-1. ユーザーがContent Hub ポータルにアセットを追加する必要がある場合は、アセットを `AEM Users` 製品プロファイルに追加します。 詳しくは、[ アセットを追加する権限を持つContent Hub ユーザーのオンボーディング ](#onboard-content-hub-users-add-assets) を参照してください。
+1. ユーザーがContent Hub ポータルにアセットを追加する必要がある場合は、アセットを `AEM Users` 製品プロファイルに追加します。 詳しくは、[&#x200B; アセットを追加する権限を持つContent Hub ユーザーのオンボーディング &#x200B;](#onboard-content-hub-users-add-assets) を参照してください。
 
-1. ユーザーがContent Hub設定ユーザーインターフェイスにアクセスする必要がある場合は、`AEM Administrators` 製品プロファイルに追加します。 詳しくは、[Content Hub管理者のオンボーディング ](#onboard-content-hub-administrator) を参照してください。
+1. ユーザーがContent Hub設定ユーザーインターフェイスにアクセスする必要がある場合は、`AEM Administrators` 製品プロファイルに追加します。 詳しくは、[Content Hub管理者のオンボーディング &#x200B;](#onboard-content-hub-administrator) を参照してください。
 
 ユーザーを関連する製品プロファイルに追加しても適切な権限が得られない場合は、Adobe担当者にお問い合わせください。
