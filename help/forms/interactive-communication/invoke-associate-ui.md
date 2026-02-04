@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 2f3badafddfdfe1dd21eb74be7189102aa0474bc
+source-git-commit: bfee883205f81012fea75cbd7dc5fddd7169fdbb
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '905'
 ht-degree: 3%
 
 ---
@@ -35,12 +35,13 @@ ht-degree: 3%
 
 - インタラクティブ通信を作成および公開
 - ポップアップサポートを有効にしたブラウザー
-- 関連付け [&#x200B; ユーザーは、forms-associates グループの一部である必要があります &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- 設定済みの認証 – [SAML 2.0](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
+- 関連付け [ ユーザーは、forms-associates グループの一部である必要があります ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- 任意の [AEMでサポートされている認証メカニズム ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) を使用して設定された認証（SAML 2.0、OAuth、カスタム認証ハンドラーなど）
 
 >[!NOTE]
 >
-> 関連付け UI の場合、[SAML 2.0 認証 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) の記事で説明されている標準セットアップの後に、追加の SAML 設定が必要です。 詳しくは、[&#x200B; 関連 UI 用の追加の SAML 設定 &#x200B;](#additional-saml-configurations-for-associate-ui) の節を参照してください。
+>- この記事では、[Microsoft Entra ID （Azure AD）を ID プロバイダーとして使用する SAML 2.0 を使用した認証設定について説明します ](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings)
+>- 関連付け UI の場合、[SAML 2.0 認証 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) の記事で説明されている標準セットアップの後に、追加の SAML 設定が必要です。 詳しくは、[ 関連 UI 用の追加の SAML 設定 ](#additional-saml-configurations-for-associate-ui) の節を参照してください。
 
 ### 関連付け UI 用の追加の SAML 設定
 
@@ -54,7 +55,7 @@ ht-degree: 3%
   {
     "path": ["/libs/fd/associate"],
     "serviceProviderEntityId": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com",
-    "assertionConsumerServiceURL": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/saml_login",
+    "assertionConsumerServiceURL": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/saml_login"
     "idpUrl": "https://login.microsoftonline.com/{azure-tenant-id}/saml2",
     "idpCertAlias": "{your-certificate-alias}",
     "idpIdentifier": "https://sts.windows.net/{azure-tenant-id}/",
@@ -122,6 +123,8 @@ const AEM_URL = 'https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/
 ```
 
 `{program-id}` および `{env-id}` を実際の環境値に置き換えます。
+
+セキュリティ上の理由から、インタラクティブ通信 ID、事前入力サービス、サービスパラメーターなどのパラメーターは、URL を通じて渡されません。 代わりに、これらのパラメーターは、ブラウザーの postMessage API を介して関連付け UI と通信するJavaScript関数を使用して、安全に渡されます。
 
 ### 手順 2：データペイロードの準備
 
@@ -204,13 +207,13 @@ function launchAssociateUI(icId, prefillService, prefillParams, options) {
 launchAssociateUI('12345', '', {}, {});
 
 // With prefill service
-launchAssociateUI('12345', 'FdmTestData', 
+launchAssociateUI('12345', 'IC_FDM', 
   { customerId: '101'}, {});
 
 // With all parameters
-launchAssociateUI('12345', 'FdmTestData', 
-  { policyNumber: 'POL-123' }, 
-  { locale: 'en', acrobatVersion: 'Acrobat_11' });
+launchAssociateUI('12345', 'IC_FDM', 
+  { customerId: "101" }, 
+  { locale: 'en', includeAttachments: "true" });
 ```
 
 ## サンプルのHTML ページを使用した統合のテスト
