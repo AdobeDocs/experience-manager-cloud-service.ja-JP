@@ -518,7 +518,7 @@ AEM Assets は、様々な アドビアプリケーションおよびアドビ�
 
 * **Adobe Workfront との統合**：[!DNL Adobe Workfront] は作業管理アプリケーションで、作業のライフサイクル全体を一元的に管理するのに役立ちます。[!DNL Workfront] と [!DNL Adobe Experience Manager Assets] の統合により、組織は、作業とデジタルアセット管理を本質的に関連付けることで、コンテンツベロシティを向上させ市場投入までの時間を短縮することができます。Workfront での作業を管理するコンテキスト内で、ユーザーは必要なドキュメントと画像にアクセスできます。
 
-  アドビでは、[ [!DNL Workfront]  と  [!DNL Adobe Experience Manager Assets]  をネイティブに統合](https://experienceleague.adobe.com/ja/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations)することを提案しています。
+  アドビでは、[&#x200B; [!DNL Workfront]  と  [!DNL Adobe Experience Manager Assets]  をネイティブに統合](https://experienceleague.adobe.com/ja/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations)することを提案しています。
 
 * **Figma との統合**：AEM Assets は Figma とネイティブに統合されているので、デザイナーは AEM Assets に保存されているアセットに Figma ユーザーインターフェイスから直接アクセスできます。AEM Assets で管理されているコンテンツを Figma キャンバスに配置し、新しいコンテンツや編集したコンテンツを AEM Assets リポジトリに保存できます。Figma コミュニティページで利用可能な AEM Assets コネクタにアクセスするには、[こちら](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)をクリックします。
 
@@ -579,7 +579,7 @@ AEM Assets は、様々な アドビアプリケーションおよびアドビ�
 
 * **[!DNL Edge Delivery Services]** 用の [!DNL AEM Assets] と [!DNL Universal Editor] ベースのオーサリングフローの統合：[!DNL AEM Assets] と統合するように [!DNL Universal Editor] を設定します。この統合により、[!DNL Dynamic Media with OpenAPI capabilities] を使用してアセットを配信できます。
 
-   * [!DNL Universal Editor] にカスタムアセットピッカー機能を追加する方法について詳しくは、[ [!DNL Edge Delivery]  サイトの設定](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)を参照してください。カスタムアセットピッカーを使用すると、[!DNL Universal Editor] コンテンツにアセットを直接挿入できます。
+   * [!DNL Universal Editor] にカスタムアセットピッカー機能を追加する方法について詳しくは、[&#x200B; [!DNL Edge Delivery]  サイトの設定](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)を参照してください。カスタムアセットピッカーを使用すると、[!DNL Universal Editor] コンテンツにアセットを直接挿入できます。
    * [!DNL Universal Editor] でオーサリング中に [!DNL AEM Assets] にアクセスしてアセットを挿入する方法について詳しくは、[拡張機能の概要](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)を参照してください。
 
 <table>
