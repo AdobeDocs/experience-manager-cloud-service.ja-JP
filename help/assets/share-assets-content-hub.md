@@ -3,8 +3,8 @@ title: ' [!DNL the Content Hub] でのアセットの共有'
 description: ' [!DNL the Content Hub] でのアセットの共有'
 role: User
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: a6d995eddd714c356eadc6c1b668887bdfd011cd
-workflow-type: ht
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 100%
 
@@ -13,6 +13,8 @@ ht-degree: 100%
 # コンテンツハブでのアセットの共有 {#search-assets-as-a-link}
 
 選択したアセットへのリンクを作成して、他のユーザーと簡単に共有できるようにします。認証済みの [!DNL Content Hub] ユーザーとして、[!DNL Content Hub] 環境で使用可能な 1 つ以上のアセットを選択し、リンクを生成して、そのリンクを他のプライベートまたはパブリックのユーザーに送信します。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
 
 ## 前提条件 {#prerequisites}
 

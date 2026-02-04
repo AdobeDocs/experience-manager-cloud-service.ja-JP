@@ -4,9 +4,9 @@ description: 新しい Assets UI（Assets ビュー）を使用してアセッ�
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1881'
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+workflow-type: tm+mt
+source-wordcount: '1874'
 ht-degree: 100%
 
 ---
@@ -26,6 +26,8 @@ AEM Assets ビューの一括読み込みを使用すると、管理者はデー
 * Google Cloud
 * Dropbox
 * OneDrive
+
+>[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
 
 ## 前提条件 {#prerequisites}
 
@@ -107,7 +109,7 @@ OneDrive アカウントから AEM Assets にアセットを読み込む前に�
 1. 左側のウィンドウで「**[!UICONTROL API 権限]**」、「**[!UICONTROL 権限を追加]**」の順にクリックします。
 1. **[!UICONTROL Microsoft Graph]**／**[!UICONTROL 委任された権限]**&#x200B;をクリックします。「**[!UICONTROL 権限を選択]**」セクションに、使用可能な権限が表示されます。
 1. 「`OpenId permissions` の `offline_access` 権限」および「`Files` の `Files.ReadWrite.All` 権限」を選択します。
-1. 「**[!UICONTROL 権限を追加]**」をクリックして変更を保存します。
+1. 「**[!UICONTROL 権限を追加]**」をクリックして更新内容を保存します。
 
 ## 一括読み込み設定の作成 {#create-bulk-import-configuration}
 
@@ -172,7 +174,7 @@ OneDrive アカウントから AEM Assets にアセットを読み込む前に�
 ## 既存の一括読み込み設定を表示 {#view-import-configuration}
 
 既存の一括読み込みを表示するには、左側のパネルで「**[!UICONTROL 一括読み込み]**」オプションを選択します。一括読み込みページが表示され、**[!UICONTROL 実行された読み込み]**&#x200B;のリストが表示されます。<br>
-また、ドロップダウンオプションから**[!UICONTROL 保存された読み込み]**&#x200B;および&#x200B;**[!UICONTROL スケジュールされた読み込み]**&#x200B;を表示することもできます。
+また、ドロップダウンオプションから**[!UICONTROL 保存された読み込み]**&#x200B;および&#x200B;**[!UICONTROL 定期インポート]**&#x200B;を表示することもできます。
 
 ![一括読み込み設定を保存](assets/bulk-import-options.png)
 
@@ -186,9 +188,9 @@ OneDrive アカウントから AEM Assets にアセットを読み込む前に�
 
 1 回限りの一括読み込みまたは繰り返しの一括読み込みをスケジュール設定するには、次の手順に従います。
 
-1. 「**[!UICONTROL 実行された読み込み]**」タブまたは「**[!UICONTROL 保存された読み込み]**」タブで使用可能な設定名に対応する ![その他アイコン](assets/do-not-localize/more-icon.svg) をクリックし、「**[!UICONTROL スケジュール]**」をクリックします。また、「**[!UICONTROL スケジュールされた読み込み]**」タブに移動し、「**[!UICONTROL スケジュール]**」をクリックして、既存のスケジュールされた読み込みを再スケジュールすることもできます。
+1. 「**[!UICONTROL 実行された読み込み]**」タブまたは「**[!UICONTROL 保存された読み込み]**」タブで使用可能な設定名に対応する ![その他アイコン](assets/do-not-localize/more-icon.svg) をクリックし、「**[!UICONTROL スケジュール]**」をクリックします。また、「**[!UICONTROL 定期インポート]**」タブに移動し、「**[!UICONTROL スケジュール]**」をクリックして、既存の定期インポートを再スケジュールすることもできます。
 
-1. 1 回限りの取得を設定するか、1 時間ごと、1 日ごと、または 1 週間ごとのスケジュールを設定します。「**[!UICONTROL 送信]**」をクリックします。
+1. 1 回限りの取り込みを設定するか、1 時間ごと、1 日ごと、または 1 週間ごとのスケジュールを設定します。「**[!UICONTROL 送信]**」をクリックします。
 
    ![一括読み込み設定のスケジュール](assets/bulk-import-schedule.png)
 
@@ -220,12 +222,8 @@ OneDrive アカウントから AEM Assets にアセットを読み込む前に�
 
 ## 一括読み込み設定を削除 {#delete-bulk-import-configuration}
 
-「**[!UICONTROL 実行された読み込み]**」タブ、「**[!UICONTROL スケジュールされた読み込み]**」タブまたは「**[!UICONTROL 保存された読み込み]**」タブに存在し、設定名に対応する ![その他アイコン](assets/do-not-localize/more-icon.svg) をクリックし、「**[!UICONTROL 削除]**」をクリックして一括読み込み設定を削除します。
+「**[!UICONTROL 実行された読み込み]**」タブ、「**[!UICONTROL 定期インポート]**」タブまたは「**[!UICONTROL 保存された読み込み]**」タブに存在し、設定名に対応する ![その他アイコン](assets/do-not-localize/more-icon.svg) をクリックし、「**[!UICONTROL 削除]**」をクリックして一括読み込み設定を削除します。
 
 ## 一括読み込みの実行後のアセットへの移動 {#view-assets-after-bulk-import}
 
 一括読み込みジョブの実行後にアセットが読み込まれる Assets のターゲット場所を表示するには、設定名に対応する ![その他アイコン](assets/do-not-localize/more-icon.svg) をクリックして、「**[!UICONTROL アセットを表示]**」をクリックします。
-
-## ビデオ：アセットビューを使用したアセットの一括読み込み
-
->[!VIDEO](https://video.tv.adobe.com/v/3428012)

@@ -2,8 +2,8 @@
 title: コンテンツハブユーザーインターフェイスの設定
 description: コンテンツハブユーザーインターフェイスの設定
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 06373e14ff9199d97c03332d95a0d2b024b3220f
-workflow-type: ht
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+workflow-type: tm+mt
 source-wordcount: '2265'
 ht-degree: 100%
 
@@ -34,6 +34,8 @@ Experience Manager Assets を使用すると、管理者はコンテンツハブ
 * 組織に表示する必要があるブランディングコンテンツ。
 
 * アセット、コレクション、インサイトに加えて、コンテンツハブに含める必要があるカスタムリンク。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## 前提条件 {#prerequisites-configuration-ui}
 
