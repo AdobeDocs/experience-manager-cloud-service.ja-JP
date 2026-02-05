@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 7ee534546cc8b9afd865b41f223caf9fd86ea45a
+source-git-commit: 90b1730522494cda0e777ecc0171703c2b2eff5b
 workflow-type: tm+mt
-source-wordcount: '3548'
-ht-degree: 89%
+source-wordcount: '3697'
+ht-degree: 85%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 89%
 >場合によっては、新しい Cloud Manager ビルドをデプロイする前や AEM as a Cloud Service の最新バージョンにアップグレードする前に、機能の削除が必要になることがあります。
 
 >[!IMPORTANT]
->  一部の [&#x200B; 非推奨の API](#aem-apis) については、**2026 年 2 月 26 日** に削除する予定です。 これらの主な日付と影響を確認してください。
+>  一部の [ 非推奨の API](#aem-apis) については、**2026 年 2 月 26 日** に削除する予定です。 これらの主な日付と影響を確認してください。
 >
 > * **2026 年 1 月 26 日以降**：これらの API の使用を削除するためのリマインダーとして、アクションセンターの通知メールが **環境ごとに毎週** 送信されます。
 > * **2026 年 2 月 26 日（PT）**：これらの API を使用したコードを含むCloud Manager パイプラインは、**コード品質** ステップ中に **一時停止** されます。 デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナーは、問題をオーバーライドしてパイプラインを続行できます。
@@ -174,7 +174,7 @@ ht-degree: 89%
     <td>AEM as a Cloud Service は、この内部 slf4j API をサポートしていません。 <a href="#org.slf4j">以下の削除に関するメモを参照してください。</a></td>
     <td>2022/4/11</td>
     <td>2/26/2026</td>
-  </tr> 
+  </tr>
     <tr>
     <td>com.drew.*</td>
     <td>画像やビデオからのメタデータの抽出には、Cloud Service の Asset Compute、Apache POI または Apache Tika を使用する必要があります。</td>
@@ -203,7 +203,7 @@ ht-degree: 89%
     <td>この API の使用は、AEM as a Cloud Service ではサポートされていません。</td>
     <td>2022/10/31</td>
     <td>2/26/2026</td>
-  </tr>  
+  </tr>
   <tr>
     <td>org.apache.sling.runmode</td>
     <td></td>
@@ -342,11 +342,19 @@ ht-degree: 89%
 
 この節では、上記の表に示した様々な API の API 削除ガイダンスを反映しています。
 
-コードで使用している非推奨の Java API を特定するには、[AEM as a Cloud Service SDK Build Analyzer Maven プラグイン &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) を Maven プロジェクトに組み込み、ローカルで実行します。 このレポートには、検出されたすべての非推奨（廃止予定）の API の使用状況と、各 API を参照している OSGi バンドルが示されます。
+コードで使用している非推奨の Java API を特定するには、[AEM as a Cloud Service SDK Build Analyzer Maven プラグイン ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) を Maven プロジェクトに組み込み、ローカルで実行します。 このレポートには、検出されたすべての非推奨（廃止予定）の API の使用状況と、各 API を参照している OSGi バンドルが示されます。
 
 すべての非推奨 API は時間の経過と共に修正される必要がありますが、非推奨 API の表にリストされている API を 2026 年 2 月 26 日（またはそれ以前）に削除する目標を設定して優先順位を付けてください。 AEM アナライザーレポートでは、これらの API は、2025 年 8 月 31 日（PT）に削除対象として表示される場合があります。
 
 コードを更新した後、コード品質ステップの結果を確認して、非推奨の API の使用状況がCloud Managerに残っていないことを確認します。
+
+### 一般的なガイドライン
+
+現在非推奨の API が必要なサードパーティライブラリを使用している場合は、そのサードパーティライブラリの新しいバージョンに更新してみてください。
+
+ACS AEM Commons を使用している場合は、少なくともバージョン 6.11.0 を使用してください（最新バージョンをお勧めします）。また、コンテンツパッケージの分類子 [ を指定して、](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)Cloud Serviceのバージョンを含める `cloud` ことを確認してください。
+
+非推奨 API のインポートが `optional` とマークされている場合でも、これを削除する必要があります。 ただし、このようなオプションの使用方法では、デプロイメントはブロックされません。 ただし、オプションの読み込みが満たされなくなると、デプロイメントに影響が及ぶ可能性があります。
 
 ### `org.apache.sling.commons.auth*` の削除 {#org.apache.sling.commons.auth}
 
@@ -447,6 +455,7 @@ Cloud Service ではログバックはサポートされていないため、そ
 
 * ACS AEM Commons を最新バージョン（6.11.0 以降）にアップデート
 * `org.slf4j.event` と `org.slf4j.spi` を使用してコードを削除します
+* Apache Kafka Client を使用していて、Apache ServiceMix （`org.apache.servicemix.bundles.kafka-clients`）から OSGi ラッパーバンドルを含める場合は、[AEM Apache Kafka Client Wrapper](https://repo.maven.apache.org/maven2/com/adobe/aem/osgi/com.adobe.aem.osgi.kafka-clients/4.0.0_1.0/) に置き換えます。 これは Apache ServiceMix のバージョンと同じで、削除した 2 つのパッケージの使用のみが含まれます。
 
 ### `org.apache.log4j` の使用 {#org.apache.log4j}
 
