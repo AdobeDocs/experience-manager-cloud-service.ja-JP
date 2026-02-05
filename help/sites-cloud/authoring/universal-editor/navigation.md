@@ -78,15 +78,15 @@ Experience Platformの上部ナビゲーションバーは、常に画面の上�
 
 ![Experience Cloud ヘッダー](assets/experience-cloud-header.png)
 
-Experience Platformの上部ナビゲーションバーについて詳しくは、[Adobe Experience Platform UI ガイドを参照してください ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Experience Platformの上部ナビゲーションバーについて詳しくは、[Adobe Experience Platform UI ガイドを参照してください &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### アカウント {#user-properties}
 
 アカウントアイコンをタップまたはクリックすると、ユーザー設定を含むメニューが開きます。
 
-![ 環境スイッチャー ](assets/environment-switcher.png)
+![&#x200B; 環境スイッチャー &#x200B;](assets/environment-switcher.png)
 
-ユニバーサルエディターの場合、見出し **製品設定** の下の **プレビュー環境に切り替え** オプションを使用して、ユニバーサルエディターの現在の実稼動バージョンと今後の [ プレビューバージョン ](/help/release-notes/universal-editor/preview.md) を切り替えます。
+ユニバーサルエディターの場合、見出し **製品設定** の下の **プレビュー環境に切り替え** オプションを使用して、ユニバーサルエディターの現在の実稼動バージョンと今後の [&#x200B; プレビューバージョン &#x200B;](/help/release-notes/universal-editor/preview.md) を切り替えます。
 
 ### ユニバーサルエディターのツールバー {#universal-editor-toolbar}
 
@@ -139,9 +139,9 @@ Experience Platformの上部ナビゲーションバーについて詳しくは�
 
 #### ローカル開発者ログイン {#local-developer-login}
 
-[ ローカルで開発する場合 ](/help/implementing/universal-editor/local-dev.md)、ローカルのAEM SDKを簡単に認証する必要がある場合は、「ローカル開発者ログイン」アイコンを選択します。
+[&#x200B; ローカルで開発する場合 &#x200B;](/help/implementing/universal-editor/local-dev.md)、ローカルのAEM SDKを簡単に認証する必要がある場合は、「ローカル開発者ログイン」アイコンを選択します。
 
-![ ローカル開発者ログインボタン ](assets/local-developer-login.png)
+![&#x200B; ローカル開発者ログインボタン &#x200B;](assets/local-developer-login.png)
 
 #### レスポンシブモード {#emulator}
 
@@ -225,7 +225,7 @@ Experience Platformの上部ナビゲーションバーについて詳しくは�
 
 ![エディター](assets/editor.png)
 
-デフォルトでは、エディターが開き、インプレースでも [ プロパティパネルを使用しても ](/help/sites-cloud/authoring/universal-editor/authoring.md) コンテンツを作成 [ できます ](#properties-rail)。
+デフォルトでは、エディターが開き、インプレースでも [&#x200B; プロパティパネルを使用しても &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md) コンテンツを作成 [&#x200B; できます &#x200B;](#properties-rail)。
 
 エディターが[プレビューモード](#preview-mode)の場合、コンテンツに移動し、リンクをたどることはできますが、コンテンツは編集できません。
 

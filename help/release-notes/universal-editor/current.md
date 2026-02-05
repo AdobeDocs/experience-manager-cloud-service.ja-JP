@@ -26,8 +26,8 @@ ht-degree: 45%
 
 ## 新機能 {#what-is-new}
 
-* 移動アクションが [ コンテキストメニュー ](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) 内で使用できるようになりました。
-* RTE で [ テキストとして貼り付け ](/help/implementing/universal-editor/configure-rte.md#paste-as-text) がサポートされるようになりました。
+* 移動アクションが [&#x200B; コンテキストメニュー &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) 内で使用できるようになりました。
+* RTE で [&#x200B; テキストとして貼り付け &#x200B;](/help/implementing/universal-editor/configure-rte.md#paste-as-text) がサポートされるようになりました。
 
 ## 早期導入機能 {#early-adopter}
 

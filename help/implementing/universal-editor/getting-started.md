@@ -136,7 +136,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 1. エディターの開き方を定義します。
 
    * 「**`aemdomain`**」オプションをオンにして、`https://author-pXX-eYYY.adobeaemcloud.com...` などのAEM ドメインでエディターを開きます。オフにすると、`https://experience.adobe.com...` で開きます。
-   * **`editorreleasepreview`** オプションをオンにすると、ユニバーサルエディターが [ プレビュー環境で自動的に開きます ](/help/release-notes/universal-editor/preview.md) オフにすると、現在のリリース環境で開きます。
+   * **`editorreleasepreview`** オプションをオンにすると、ユニバーサルエディターが [&#x200B; プレビュー環境で自動的に開きます &#x200B;](/help/release-notes/universal-editor/preview.md) オフにすると、現在のリリース環境で開きます。
 
 1. 「**保存**」をクリックします。
 
