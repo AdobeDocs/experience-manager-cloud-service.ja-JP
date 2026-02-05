@@ -4,10 +4,10 @@ description: ユニバーサルエディターへのアクセス権を取得す�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: f73316b16b0fb90e225b954ba614008d734b8918
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 100%
+source-wordcount: '1018'
+ht-degree: 86%
 
 ---
 
@@ -118,20 +118,25 @@ data-aue-resource="urn:<referenceName>:<resource>"
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
 
-## ユニバーサルエディターを開くコンテンツパスまたは `sling:resourceType` の定義 （オプション） {#content-paths}
+## ユニバーサルエディターを開くコンテンツパスまたは `sling:resourceType`s とその方法を定義します。 （オプション） {#content-paths}
 
-[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)を使用する既存の AEM プロジェクトがある場合、コンテンツ作成者がページを編集する際に、ページはページエディターで自動的に開かれます。コンテンツパスまたは `sling:resourceType` に基づいて AEM が開くエディターを定義できるので、選択したコンテンツに必要なエディターに関係なく、作成者にとってシームレスなエクスペリエンスを実現できます。
+[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)を使用する既存の AEM プロジェクトがある場合、コンテンツ作成者がページを編集する際に、ページはページエディターで自動的に開かれます。コンテンツパスまたは `sling:resourceType` に基づいてAEMを開くエディターと開き方を定義できるので、選択したコンテンツに必要なエディターに関係なく、作成者のエクスペリエンスはシームレスになります。
 
 1. Configuration Manager を開きます。
 
    `http://<host>:<port>/system/console/configMgr`
 
-1. リストで&#x200B;**ユニバーサルエディター URL サービス**&#x200B;を見つけて、「**設定値を編集**」をクリックします。
+1. リストで **`Universal Editor URL Service`** を見つけて、「**設定値を編集**」をクリックします。
 
 1. ユニバーサルエディターを開くコンテンツパスまたは `sling:resourceType` を定義します。
 
-   * 「**ユニバーサルエディターを開くマッピング**」フィールドに、ユニバーサルエディターを開くパスを指定します。
-   * 「**ユニバーサルエディターで開く Sling:resourceTypes**」フィールドに、ユニバーサルエディターによって直接開かれるリソースのリストを指定します。
+   * 「**`mappings`**」フィールドに、ユニバーサルエディターを開くパスを指定します。
+   * 「**`resourcetypes`**」フィールドに、ユニバーサルエディターで直接開くリソースのリストを入力します。
+
+1. エディターの開き方を定義します。
+
+   * 「**`aemdomain`**」オプションをオンにして、`https://author-pXX-eYYY.adobeaemcloud.com...` などのAEM ドメインでエディターを開きます。オフにすると、`https://experience.adobe.com...` で開きます。
+   * **`editorreleasepreview`** オプションをオンにすると、ユニバーサルエディターが [ プレビュー環境で自動的に開きます ](/help/release-notes/universal-editor/preview.md) オフにすると、現在のリリース環境で開きます。
 
 1. 「**保存**」をクリックします。
 

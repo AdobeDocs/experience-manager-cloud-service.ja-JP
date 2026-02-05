@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター 2026.01.29 リリースノート
-description: ユニバーサルエディターの 2026.01.29 リリースのリリースノートです。
+title: ユニバーサルエディター 2026.02.05 リリースノート
+description: ユニバーサルエディターの 2026.02.05 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: bdbe72b0afc19d0c28c56a7e5b2595c39711ca9c
+source-git-commit: d832d202eaf7f74293e2d15cc470b0226e883e13
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 35%
+source-wordcount: '157'
+ht-degree: 45%
 
 ---
 
 
-# ユニバーサルエディター 2026.01.29 リリースノート {#release-notes}
+# ユニバーサルエディター 2026.02.05 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2026 年 1 月 29 日リリースのリリースノートです。
+ユニバーサルエディターの 2026 年 2 月 5 日（PT）リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -26,12 +26,8 @@ ht-degree: 35%
 
 ## 新機能 {#what-is-new}
 
-* コンポーネントの削除メソッドが `editorActions` に公開されました。
-* コピーコンポーネントメソッドが `editorActions` に公開されました。
-* 移動コンポーネントメソッドが `editorActions` に公開されました。
-* コンポーネントの追加メソッドが `editorActions` に公開されました。
-* 定義は [extensibility.](/help/implementing/universal-editor/extending.md) に公開されました。
-* ドキュメントオーサリング API のバージョン 2.0 がリリースされました。
+* 移動アクションが [ コンテキストメニュー ](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) 内で使用できるようになりました。
+* RTE で [ テキストとして貼り付け ](/help/implementing/universal-editor/configure-rte.md#paste-as-text) がサポートされるようになりました。
 
 ## 早期導入機能 {#early-adopter}
 
@@ -41,6 +37,4 @@ ht-degree: 35%
 
 ## その他の改善点 {#other-improvements}
 
-* `content` 拡張機能の名前は、API スキーマに従うように `details` に変更されました。
-* コンテキストメニューの動作が改善されました。
-* 編集可能な項目のバッジをクリックすると、コンテキストメニューが正しく開くバグを修正しました。
+* [`xwalk` プラグインを使用する場合、AEM 6.5 ではプレビューへの公開が有効でした。](/help/implementing/universal-editor/component-definition.md#plugins)

@@ -4,9 +4,9 @@ description: ユニバーサルエディターでリッチテキストエディ�
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: af63b3ff705954fe2145303ea0dc80720ad9e552
+source-git-commit: e1773cbc2293cd8afe29c3624b29d1e011ea7e10
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '806'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ユニバーサルエディターには、作成者がテキストの編集時に書式設定の変更を適用できるリッチテキストエディター（RTE）がインプレースおよびプロパティパネルで用意されています。
 
-この RTE は、[&#x200B; コンポーネントフィルターを使用して設定できます。](/help/implementing/universal-editor/filtering.md) このドキュメントでは、使用可能な設定オプションと例について説明します。
+この RTE は、[ コンポーネントフィルターを使用して設定できます。](/help/implementing/universal-editor/filtering.md) このドキュメントでは、使用可能な設定オプションと例について説明します。
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ RTE 設定は、次の 2 つの部分で構成されます。
 * [`toolbar`](#toolbar): ツールバー設定は、UI で使用できる編集オプションとその編成方法を制御します。
 * [`actions`](#actions): アクション設定を使用すると、個々の編集アクションの動作と外観をカスタマイズできます。
 
-これらの設定は、プロパティ [&#x200B; を使用して、](/help/implementing/universal-editor/filtering.md) コンポーネントフィルター `rte` の一部として定義できます。
+これらの設定は、プロパティ [ を使用して、](/help/implementing/universal-editor/filtering.md) コンポーネントフィルター `rte` の一部として定義できます。
 
 ```json
 [
@@ -220,6 +220,28 @@ RTE 設定は、次の 2 つの部分で構成されます。
 >[!NOTE]
 >
 >Tab/Shift+Tab キーを使用したリストネストは、一般的なインデント設定とは無関係に機能します。
+
+### テキストとして貼り付け {#paste-as-text}
+
+`paste_text` エディターアクションを使用すると、プレーンテキストとして貼り付けという標準的なワークフローが可能になります。
+
+* **デフォルトショートカット：** Mod-Shift-v （macOSの場合は Cmd+Shift+V、Windows/Linux の場合は Ctrl+Shift+V）
+* **動作：** テキスト/プレーンから貼り付け（ソースの書式設定は無視されます）
+   * リストでは、改行によって新しいリスト項目が作成されます。
+
+```json
+{
+  "toolbar": {
+    "editor": ["removeformat", "paste_text"]
+  },
+  "actions": {
+    "paste_text": {
+      "shortcut": "Mod-Shift-v",
+      "label": "Paste as Text"
+    }
+  }
+}
+```
 
 ### その他のアクション {#other}
 

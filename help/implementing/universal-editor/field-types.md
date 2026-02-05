@@ -4,10 +4,10 @@ description: ユニバーサルエディターがプロパティパネルで編�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
+source-git-commit: 7e01f5832d4ea56495b35c32689882b33d49d520
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 96%
+source-wordcount: '1637'
+ht-degree: 95%
 
 ---
 
@@ -138,6 +138,7 @@ ht-degree: 96%
 | [選択](#select) | `select` |
 | [タブ](#tab) | `tab` |
 | [テキスト](#text) | `text` |
+| [テキスト領域](#textarea) | `textarea` |
 
 #### AEM タグ {#aem-tag}
 
@@ -906,5 +907,33 @@ AEM コンテンツコンポーネントタイプでは、AEM コンテンツピ
 >[!TAB スクリーンショット]
 
 ![テキストコンポーネントタイプのスクリーンショット](assets/component-types/simpletext.png)
+
+>[!ENDTABS]
+
+#### テキスト領域 {#textarea}
+
+テキスト領域では、複数行のテキスト入力が可能です。
+
+>[!BEGINTABS]
+
+>[!TAB サンプル]
+
+```json
+{
+  "id": "longertext",
+  "fields": [
+    {
+      "component": "textarea",
+      "name": "textarea",
+      "label": "Text Area",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB スクリーンショット]
+
+![textarea コンポーネントタイプのスクリーンショット ](assets/component-types/textarea.png)
 
 >[!ENDTABS]
