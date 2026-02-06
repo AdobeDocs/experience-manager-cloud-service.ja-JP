@@ -1,33 +1,24 @@
 ---
-title: パブリッシュインスタンスでの関連付け UI の呼び出し
-description: パブリッシュインスタンスでAEM Forms関連付け UI を統合して呼び出し、顧客対応のプロフェッショナルがパーソナライズされたインタラクティブ通信をリアルタイムで生成できるようにする方法について説明します。
+title: 実行時のインタラクティブ通信用に関連付け UI を統合
+description: AEM Forms Associate UI をアプリケーションに統合して、顧客に対応するプロフェッショナルが、パブリッシュインスタンスでパーソナライズされたインタラクティブコミュニケーションをリアルタイムで生成できるようにする方法を説明します。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: bfee883205f81012fea75cbd7dc5fddd7169fdbb
+source-git-commit: b76f6dfe2462cec187d549234e9050f8ca9a8cdf
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 3%
+source-wordcount: '1078'
+ht-degree: 2%
 
 ---
 
 
-# 関連付け UI を使用してパーソナライズされたコミュニケーションの生成
+# アプリケーションへの関連付け UI の統合
 
 <span> インタラクティブ通信機能は、早期導入プログラムで利用できます。 勤務先のアドレスから `aem-forms-ea@adobe.com` にメールを送信して、アクセスをリクエストします。</span>
 
-関連付け UI はパブリッシュインスタンスで直接呼び出すことができ、フィールド担当者やサービスエージェントなどの顧客向けのプロフェッショナルが、顧客インタラクション中にパーソナライズされたコミュニケーションをリアルタイムで生成できます。
-
-次の表に、関連付け UI を使用して、パーソナライズされたメッセージを顧客に送信できる、実際の様々なシナリオを示します。
-
-| 業種 | ユースケース |
-|----------|----------|
-| **金融サービス** | 顧客ミーティング中に、リアルタイムの融資確認レター、勘定明細書、およびリスク プロファイル概要を生成します |
-| **保険** | サービスカウンターで即時保険証明カードと請求処理概要を作成 |
-| **ヘルスケア** | 計算されたコピーの金額とスケジュールを使用して患者治療計画の要約を作成します |
-| **政府** | その場で警察の検証報告書、市民サービスの領収書、ケースの更新要約を生成します |
+この記事では、関連付け UI をアプリケーションと統合して、フィールド担当者やサービスエージェントなどの顧客向けプロフェッショナルが、パーソナライズされたインタラクティブ通信をパブリッシュインスタンス上でリアルタイムに生成できるようにする方法について説明します。
 
 ## 前提条件
 
@@ -35,19 +26,21 @@ ht-degree: 3%
 
 - インタラクティブ通信を作成および公開
 - ポップアップサポートを有効にしたブラウザー
-- 関連付け [&#x200B; ユーザーは、forms-associates グループの一部である必要があります &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- 任意の [AEMでサポートされている認証メカニズム &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/authentication) を使用して設定された認証（SAML 2.0、OAuth、カスタム認証ハンドラーなど）
+- 関連付け [ ユーザーは、forms-associates グループの一部である必要があります ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- 任意の [AEMでサポートされている認証メカニズム ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) を使用して設定された認証（SAML 2.0、OAuth、カスタム認証ハンドラーなど）
 
 >[!NOTE]
 >
->- この記事では、[Microsoft Entra ID （Azure AD）を ID プロバイダーとして使用する SAML 2.0 を使用した認証設定について説明します &#x200B;](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings)
->- 関連付け UI の場合、[SAML 2.0 認証 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) の記事で説明されている標準セットアップの後に、追加の SAML 設定が必要です。 詳しくは、[&#x200B; 関連 UI 用の追加の SAML 設定 &#x200B;](#additional-saml-configurations-for-associate-ui) の節を参照してください。
+>- この記事では、[Microsoft Entra ID （Azure AD）を ID プロバイダーとして使用する SAML 2.0 を使用した認証設定について説明します ](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings)
+>- 関連付け UI の場合、[SAML 2.0 認証 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) の記事で説明されている標準セットアップの後に、追加の SAML 設定が必要です。 詳しくは、[ 関連 UI 用の追加の SAML 設定 ](#additional-saml-configurations-for-associate-ui) の節を参照してください。
 
 ### 関連付け UI 用の追加の SAML 設定
 
 関連付け UI に SAML 2.0 認証を設定する場合は、次の特定の設定を OSGi 設定ファイルに適用する必要があります。
 
 #### SAML 認証ハンドラー
+
+SAML 認証ハンドラーは、異なるリソースツリーに対して複数の SAML 設定を可能にする OSGi ファクトリ設定です。 これにより、マルチサイト AEMのデプロイメントが可能になり、関連付け UI リソースを既存の SAML 設定に追加できます。
 
 `com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg.json` にファイル `ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish` を作成します。
 
@@ -85,6 +78,8 @@ ht-degree: 3%
 
 #### Sling Authenticator
 
+Sling Authenticator は公開時に UI リソースの関連付けにアクセスするための認証を実施します。
+
 `org.apache.sling.engine.impl.auth.SlingAuthenticator~saml.cfg.json` のファイル `ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish` を更新します。
 
 ```json
@@ -95,6 +90,8 @@ ht-degree: 3%
 ```
 
 #### Dispatcher フィルター
+
+次のルールを追加して、インタラクティブ通信 API と UI の関連付けがパブリッシュインスタンスで正しく機能するようにします。
 
 まだ存在しない場合は、次のルールを `dispatcher/src/conf.dispatcher.d/filters/filters.any` ファイルに追加します。
 
@@ -112,23 +109,248 @@ ht-degree: 3%
 
 ## パブリッシュインスタンスでの関連付け UI の呼び出し
 
-アプリケーションから関連付け UI を呼び出すには、パブリッシュインスタンスの URL を設定し、データペイロードを準備して、統合関数を使用して、新しいブラウザーウィンドウで関連付け UI を起動します。
+この節では、独自のアプリケーションから関連付け UI を起動する手順について説明します。 すぐに使い始めるには、次の手順に従います。すぐに使用できるHTMLのサンプルページから始めて、お使いの環境に合わせて設定します。
 
-### 手順 1：パブリッシュインスタンス URL の設定
+### 手順 1：サンプルHTMLページから開始
 
-関連付け UI には、AEM Forms Cloud Service パブリッシュインスタンス上の特定のエンドポイントを介してアクセスします。
+関連付け UI 統合の仕組みをすばやくテストして理解するには、次のサンプル HTML ページを使用します。 このコードをHTML ファイルにコピーして、ブラウザーで開きます。
+
+このサンプルのフォームインターフェイスでは、インタラクティブ通信の詳細を入力し、1 回のクリックで関連付け UI を起動できます。
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Associate UI Integration</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .form-group {
+      margin: 20px 0;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    textarea {
+      height: 80px;
+      font-family: monospace;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .btn-primary {
+      background: #007bff;
+      color: white;
+      border: none;
+    }
+    .btn-primary:hover {
+      background: #0056b3;
+    }
+    .error {
+      color: red;
+      font-size: 12px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Launch Associate UI</h1>
+
+  <form id="form">
+    <div class="form-group">
+      <label>IC ID *</label>
+      <input type="text" id="icId" placeholder="Enter Interactive Communication ID" required>
+    </div>
+
+    <div class="form-group">
+      <label>Prefill Service</label>
+      <input type="text" id="serviceName" placeholder="e.g., CustomerDataService">
+    </div>
+
+    <div class="form-group">
+      <label>Service Parameters (JSON)</label>
+      <textarea id="serviceParams" placeholder='{"customerId": "12345"}'>{}</textarea>
+      <span id="paramsError" class="error">Invalid JSON format</span>
+    </div>
+
+    <div class="form-group">
+      <label>Options (JSON)</label>
+      <textarea id="options" placeholder='{"mode": "edit", "locale": "en_US"}'>{}</textarea>
+      <span id="optionsError" class="error">Invalid JSON format</span>
+    </div>
+
+    <button type="button" onclick="reset()">Reset</button>
+    <button type="button" class="btn-primary" onclick="launch()">Launch Associate UI</button>
+  </form>
+
+  <script>
+    // Replace with your AEM Publish instance URL
+    const AEM_URL = 'https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/ui.html';
+
+    function validateJSON(str, errorId) {
+      const err = document.getElementById(errorId);
+      try {
+        const obj = JSON.parse(str || '{}');
+        err.style.display = 'none';
+        return obj;
+      } catch (e) {
+        err.style.display = 'block';
+        return null;
+      }
+    }
+
+    function launch() {
+      const icId = document.getElementById('icId').value.trim();
+      if (!icId) {
+        alert('IC ID is required');
+        return;
+      }
+
+      const params = validateJSON(document.getElementById('serviceParams').value, 'paramsError');
+      const opts = validateJSON(document.getElementById('options').value, 'optionsError');
+
+      if (!params || !opts) {
+        alert('Please fix JSON errors before launching');
+        return;
+      }
+
+      const data = {
+        id: icId,
+        prefill: {
+          serviceName: document.getElementById('serviceName').value.trim(),
+          serviceParams: params
+        },
+        options: opts
+      };
+
+      const win = window.open(AEM_URL, '_blank');
+      if (!win) {
+        alert('Pop-up blocked. Please enable pop-ups for this site.');
+        return;
+      }
+
+      const handler = (e) => {
+        if (e.data && e.data.type === 'READY' && e.data.source === 'APP') {
+          win.postMessage({ type: 'INIT', source: 'PORTAL', data }, '*');
+          window.removeEventListener('message', handler);
+        }
+      };
+
+      window.addEventListener('message', handler);
+
+      // Fallback timeout in case READY message is missed
+      setTimeout(() => {
+        if (win && !win.closed) {
+          win.postMessage({ type: 'INIT', source: 'PORTAL', data }, '*');
+          window.removeEventListener('message', handler);
+        }
+      }, 1000);
+    }
+
+    function reset() {
+      document.getElementById('form').reset();
+      document.getElementById('serviceParams').value = '{}';
+      document.getElementById('options').value = '{}';
+      document.getElementById('paramsError').style.display = 'none';
+      document.getElementById('optionsError').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
+```
+
+### 手順 2：パブリッシュインスタンス URL の設定
+
+関連付け UI を起動する前に、サンプルがAEM Forms Cloud Service パブリッシュインスタンスを指している必要があります。
+
+上記のHTMLの例で、`<script>` セクション内の次の行を探します。
 
 ```javascript
 const AEM_URL = 'https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/ui.html';
 ```
 
-`{program-id}` および `{env-id}` を実際の環境値に置き換えます。
+プレースホルダーの値を実際の環境の詳細に置き換えます。
+- `{program-id}`:AEM Cloud Service プログラム ID
+- `{env-id}`：環境 ID
 
-セキュリティ上の理由から、インタラクティブ通信 ID、事前入力サービス、サービスパラメーターなどのパラメーターは、URL を通じて渡されません。 代わりに、これらのパラメーターは、ブラウザーの postMessage API を介して関連付け UI と通信するJavaScript関数を使用して、安全に渡されます。
+例えば、プログラム ID が `12345` で環境 ID が `67890` の場合、URL は次のようになります。
 
-### 手順 2：データペイロードの準備
+```javascript
+const AEM_URL = 'https://publish-p12345`-e67890.adobeaemcloud.com/libs/fd/associate/ui.html';
+```
 
-次の形式を使用してデータペイロードを構築します。
+>[!NOTE]
+>
+> セキュリティ上の理由から、インタラクティブ通信 ID、事前入力サービス、サービスパラメーターなどのパラメーターは、URL を通じて渡されません。 代わりに、JavaScript `postMessage` API を使用してこれらのパラメーターが安全に渡されます。
+
+### 手順 3:JavaScript統合機能について
+
+サンプルのHTMLは、次のJavaScript関数を使用して、関連付け UI を起動します。 この関数は、IC ID を検証し、データペイロードを作成し、新しいブラウザーウィンドウで関連付け UI を開き、ブラウザーの `postMessage` API を使用してデータを送信します。
+
+```javascript
+function launchAssociateUI(icId, prefillService, prefillParams, options) {
+  if (!icId) {
+    console.error('IC ID required');
+    return;
+  }
+
+  const data = {
+    id: icId,
+    prefill: {
+      serviceName: prefillService || '',
+      serviceParams: prefillParams || {}
+    },
+    options: options || {}
+  };
+
+  const AEM_URL = 'https://your-aem.adobeaemcloud.com/libs/fd/associate/ui.html';
+  const win = window.open(AEM_URL, '_blank');
+
+  if (!win) {
+    alert('Please enable pop-ups for this site');
+    return;
+  }
+
+  const readyHandler = (event) => {
+    if (event.data && event.data.type === 'READY' && event.data.source === 'APP') {
+      win.postMessage({ type: 'INIT', source: 'PORTAL', data: data }, '*');
+      window.removeEventListener('message', readyHandler);
+    }
+  };
+
+  window.addEventListener('message', readyHandler);
+
+  // Fallback timeout in case READY message is missed
+  setTimeout(() => {
+    if (win && !win.closed) {
+      win.postMessage({ type: 'INIT', source: 'PORTAL', data: data }, '*');
+      window.removeEventListener('message', readyHandler);
+    }
+  }, 1000);
+}
+```
+
+この関数は 4 つのパラメーター（IC ID （必須）、事前入力サービス名、事前入力サービスパラメーター、追加オプション）を受け取ります。 これらのパラメーターは、以下に説明するように、データペイロードに構造化されます。
+
+### 手順 4：データペイロード構造の理解
+
+**ペイロード形式：**
 
 ```javascript
 const data = {
@@ -146,249 +368,14 @@ const data = {
 | コンポーネント | 必須 | 説明 |
 |-----------|----------|-------------|
 | `id` | はい | ロードするインタラクティブ通信（IC）の識別子 |
-| `prefill` | オプション | データの事前入力用のサービス設定が含まれます。 |
+| `prefill` | オプション | データの事前入力用のサービス設定を含みます |
 | `prefill.serviceName` | オプション | データの事前入力のために呼び出すフォームデータモデルサービスの名前 |
 | `prefill.serviceParams` | オプション | 事前入力サービスに渡されるキーと値のペア |
-| `options` | オプション | PDF レンダリングでサポートされるその他のプロパティ - locale、includeAttachments、embedFonts、makeAccessible |
+| `options` | オプション | PDFのレンダリングでサポートされる追加のプロパティ（locale、includeAttachments、embedFonts、makeAccessible）です。 |
 
-### 手順 3：統合関数の実装
+#### データペイロードの例
 
-関連付け UI を起動し、メッセージ通信を処理するJavaScript関数を作成します。
-
-```javascript
-function launchAssociateUI(icId, prefillService, prefillParams, options) {
-  if (!icId) {
-    console.error('IC ID required');
-    return;
-  }
-   
-  const data = {
-    id: icId,
-    prefill: {
-      serviceName: prefillService || '',
-      serviceParams: prefillParams || {}
-    },
-    options: options || {}
-  };
-   
-  const AEM_URL = 'https://your-aem.adobeaemcloud.com/libs/fd/associate/ui.html';
-  const win = window.open(AEM_URL, '_blank');
-   
-  if (!win) {
-    alert('Please enable pop-ups for this site');
-    return;
-  }
-   
-  const readyHandler = (event) => {
-    if (event.data && event.data.type === 'READY' && event.data.source === 'APP') {
-      win.postMessage({ type: 'INIT', source: 'PORTAL', data: data }, '*');
-      window.removeEventListener('message', readyHandler);
-    }
-  };
-   
-  window.addEventListener('message', readyHandler);
-   
-  // Fallback timeout in case READY message is missed
-  setTimeout(() => {
-    if (win && !win.closed) {
-      win.postMessage({ type: 'INIT', source: 'PORTAL', data: data }, '*');
-      window.removeEventListener('message', readyHandler);
-    }
-  }, 1000);
-}
-```
-
-### 手順 4：関数を呼び出す
-
-適切なパラメーターを指定して関数を呼び出します。
-
-```javascript
-// Basic invocation with IC ID only
-launchAssociateUI('12345', '', {}, {});
-
-// With prefill service
-launchAssociateUI('12345', 'IC_FDM', 
-  { customerId: '101'}, {});
-
-// With all parameters
-launchAssociateUI('12345', 'IC_FDM', 
-  { customerId: "101" }, 
-  { locale: 'en', includeAttachments: "true" });
-```
-
-## サンプルのHTML ページを使用した統合のテスト
-
-関連付け UI がフロントエンドにどのように表示されるかを確認し、統合をテストするために、簡単なHTMLの例を次に示します。 このサンプルページでは、パブリッシュインスタンス上で IC ID の入力、事前入力サービスパラメーターの設定、PDF オプションの設定、関連付け UI の起動を行うことができます。
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Associate UI Integration</title>
-  <style>
-    body { 
-      font-family: sans-serif; 
-      max-width: 600px; 
-      margin: 50px auto; 
-      padding: 20px; 
-    }
-    .form-group { 
-      margin: 20px 0; 
-    }
-    label { 
-      display: block; 
-      margin-bottom: 5px; 
-      font-weight: bold; 
-    }
-    input, textarea { 
-      width: 100%; 
-      padding: 8px; 
-      border: 1px solid #ccc; 
-      border-radius: 4px; 
-      box-sizing: border-box;
-    }
-    textarea { 
-      height: 80px; 
-      font-family: monospace; 
-    }
-    button { 
-      padding: 10px 20px; 
-      margin: 5px; 
-      cursor: pointer; 
-      border-radius: 4px;
-    }
-    .btn-primary { 
-      background: #007bff; 
-      color: white; 
-      border: none; 
-    }
-    .btn-primary:hover {
-      background: #0056b3;
-    }
-    .error { 
-      color: red; 
-      font-size: 12px; 
-      display: none; 
-    }
-  </style>
-</head>
-<body>
-  <h1>Launch Associate UI</h1>
-  
-  <form id="form">
-    <div class="form-group">
-      <label>IC ID *</label>
-      <input type="text" id="icId" placeholder="Enter Interactive Communication ID" required>
-    </div>
-    
-    <div class="form-group">
-      <label>Prefill Service</label>
-      <input type="text" id="serviceName" placeholder="e.g., CustomerDataService">
-    </div>
-    
-    <div class="form-group">
-      <label>Service Parameters (JSON)</label>
-      <textarea id="serviceParams" placeholder='{"customerId": "12345"}'>{}</textarea>
-      <span id="paramsError" class="error">Invalid JSON format</span>
-    </div>
-    
-    <div class="form-group">
-      <label>Options (JSON)</label>
-      <textarea id="options" placeholder='{"mode": "edit", "locale": "en_US"}'>{}</textarea>
-      <span id="optionsError" class="error">Invalid JSON format</span>
-    </div>
-    
-    <button type="button" onclick="reset()">Reset</button>
-    <button type="button" class="btn-primary" onclick="launch()">Launch Associate UI</button>
-  </form>
-
-  <script>
-    // Replace with your AEM Publish instance URL
-    const AEM_URL = 'https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/ui.html';
-    
-    function validateJSON(str, errorId) {
-      const err = document.getElementById(errorId);
-      try {
-        const obj = JSON.parse(str || '{}');
-        err.style.display = 'none';
-        return obj;
-      } catch (e) {
-        err.style.display = 'block';
-        return null;
-      }
-    }
-    
-    function launch() {
-      const icId = document.getElementById('icId').value.trim();
-      if (!icId) { 
-        alert('IC ID is required'); 
-        return; 
-      }
-      
-      const params = validateJSON(document.getElementById('serviceParams').value, 'paramsError');
-      const opts = validateJSON(document.getElementById('options').value, 'optionsError');
-      
-      if (!params || !opts) { 
-        alert('Please fix JSON errors before launching'); 
-        return; 
-      }
-      
-      const data = {
-        id: icId,
-        prefill: {
-          serviceName: document.getElementById('serviceName').value.trim(),
-          serviceParams: params
-        },
-        options: opts
-      };
-      
-      const win = window.open(AEM_URL, '_blank');
-      if (!win) { 
-        alert('Pop-up blocked. Please enable pop-ups for this site.'); 
-        return; 
-      }
-      
-      const handler = (e) => {
-        if (e.data && e.data.type === 'READY' && e.data.source === 'APP') {
-          win.postMessage({ type: 'INIT', source: 'PORTAL', data }, '*');
-          window.removeEventListener('message', handler);
-        }
-      };
-      
-      window.addEventListener('message', handler);
-      
-      // Fallback timeout in case READY message is missed
-      setTimeout(() => {
-        if (win && !win.closed) {
-          win.postMessage({ type: 'INIT', source: 'PORTAL', data }, '*');
-          window.removeEventListener('message', handler);
-        }
-      }, 1000);
-    }
-    
-    function reset() {
-      document.getElementById('form').reset();
-      document.getElementById('serviceParams').value = '{}';
-      document.getElementById('options').value = '{}';
-      document.getElementById('paramsError').style.display = 'none';
-      document.getElementById('optionsError').style.display = 'none';
-    }
-  </script>
-</body>
-</html>
-```
-
-### サンプルの仕組み
-
-1. **IC ID フィールド**：インタラクティブ通信の識別子を入力します（必須）
-2. **事前入力サービス**：データを事前入力するためのフォームデータモデルサービス名を指定します
-3. **サービスパラメーター**：事前入力サービスに渡すパラメーターを含む JSON オブジェクトを入力します
-4. **Options**:PDFの設定オプション（locale、includeAttachments、embedFonts、makeAccessible など）を入力します
-5. **「起動」ボタン**：関連付け UI を新しいウィンドウで開き、初期化データを送信します
-
-## データペイロードの例
-
-### 最小ペイロード（IC のみ）
+**最小ペイロード（IC ID のみ）**
 
 事前入力データが不要な場合に使用します。
 
@@ -403,7 +390,7 @@ launchAssociateUI('12345', 'IC_FDM',
 }
 ```
 
-### 事前入力データあり
+**事前入力データを使用**
 
 これを使用して、IC に顧客データを動的に入力します。
 
@@ -421,7 +408,7 @@ launchAssociateUI('12345', 'IC_FDM',
 }
 ```
 
-### オプションを設定
+**PDF レンダリングオプション**
 
 追加のレンダリングオプションを指定する場合に使用します。
 
@@ -436,14 +423,36 @@ launchAssociateUI('12345', 'IC_FDM',
     }
   },
   "options": { 
-      locale: "en_US",
-      includeAttachments: "true",
-      webOptimized: "false",
-      embedFonts: "false",
-      makeAccessible: "false"
+      "locale": "en_US",
+      "includeAttachments": "true",
+      "webOptimized": "false",
+      "embedFonts": "false",
+      "makeAccessible": "false"
   }
 }
 ```
+
+### 手順 5:IC ID を入力し、関連付け UI を起動する
+
+これで、サンプルのHTMLページを使用して関連付け UI を起動する準備が整いました。
+
+1. **IC ID を入力**:「**IC ID**」フィールドに、公開済みインタラクティブ通信の識別子を入力します。 これは唯一の必須フィールドです。
+
+2. **事前入力サービスの設定** （オプション）:IC に動的データを事前入力する場合は、「**事前入力サービス**」フィールドにフォームデータモデルのサービス名を入力します。 例えば、サンプルデータには `FdmTestData` を、テストデータには `IC-FDM` を使用します。
+
+3. **サービスパラメーターの追加** （オプション）:**サービスパラメーター（JSON）** フィールドに、事前入力サービスで必要なパラメーターを含む JSON オブジェクトを入力します。 例：
+
+   ```json
+   {"customerId": "101", "accountNumber": "ACC-98765"}
+   ```
+
+4. **PDF オプションを設定** （オプション）:**オプション（JSON）** フィールドで、ロケール、添付ファイル、アクセシビリティの設定などのレンダリングオプションを設定します。
+
+5. **関連付けられた UI をクリック**:「**関連付けられた UI を起動**」ボタンをクリックします。 関連付け UI が表示された新しいブラウザーウィンドウが開き、インタラクティブ通信と共にプリロードされます。
+
+>[!NOTE]
+>
+> ウィンドウが開かない場合は、ブラウザーでこのサイトのポップアップが許可されていることを確認してください。
 
 ## トラブルシューティング
 
