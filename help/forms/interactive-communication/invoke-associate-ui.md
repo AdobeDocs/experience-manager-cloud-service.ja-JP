@@ -26,8 +26,8 @@ ht-degree: 2%
 
 - インタラクティブ通信を作成および公開
 - ポップアップサポートを有効にしたブラウザー
-- 関連付け [&#x200B; ユーザーは、forms-associates グループの一部である必要があります &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- 任意の [AEMでサポートされている認証メカニズム &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) を使用して設定された認証（SAML 2.0、OAuth、カスタム認証ハンドラーなど）
+- 関連付け [&#x200B; ユーザーは、forms-associates グループの一部である必要があります &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- 任意の [AEMでサポートされている認証メカニズム &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/authentication) を使用して設定された認証（SAML 2.0、OAuth、カスタム認証ハンドラーなど）
 
 >[!NOTE]
 >
