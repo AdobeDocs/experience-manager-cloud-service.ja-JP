@@ -3,17 +3,17 @@ title: コンテンツ最適化エージェント
 description: コンテンツ最適化エージェントを使用して、自然言語の手順を適用しチャネル対応のバリエーションを作成することで、ユーザーがアセットを調整および適応する方法を変換する方法を説明します。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
+exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
+source-git-commit: 36cc0cd44a77554c58cec13d6478271d5ee4165c
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
 
-
 # コンテンツ最適化エージェント {#content-optimization-agent}
 
-コンテンツ最適化エージェントは、自然言語命令を適用してチャネルに対応するバリエーションを作成することで、ユーザーがアセットを調整および適応する方法を変換します。 新しいレンディションの生成、ビジュアルプロパティの調整、背景の変更、特定のデジタルチャネル向けのアセットの準備など、エージェントはユーザーの意図を解釈し、複雑な編集タスクを自動的に実行します。 Discovery Agent とシームレスに連携し、検出したアセットを取得して、コアとなる [Dynamic Media と OpenAPI 機能 &#x200B;](/help/assets/dynamic-media-open-apis-overview.md) を使用して最適化されたバリエーションを作成します。これらの機能は、ブランド、チャネル、キャンペーンの要件を満たすので、手動での設計は必要ありません。
+コンテンツ最適化エージェントは、自然言語命令を適用してチャネルに対応するバリエーションを作成することで、ユーザーがアセットを調整および適応する方法を変換します。 新しいレンディションの生成、ビジュアルプロパティの調整、背景の変更、特定のデジタルチャネル向けのアセットの準備など、エージェントはユーザーの意図を解釈し、複雑な編集タスクを自動的に実行します。 Discovery Agent とシームレスに連携し、検出したアセットを取得して、コアとなる [Dynamic Media と OpenAPI 機能 ](/help/assets/dynamic-media-open-apis-overview.md) を使用して最適化されたバリエーションを作成します。これらの機能は、ブランド、チャネル、キャンペーンの要件を満たすので、手動での設計は必要ありません。
 
 コンテンツ最適化の主なメリットには、次のようなものがあります。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 >
 >AI によって生成された応答は、不正確であったり、誤解を招く可能性があります。 推奨される修正および回答を再確認してください。
 >
->[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドライン &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) も参照してください。
+>[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドライン ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) も参照してください。
 
 ## 前提条件 {#prerequisites-content-optimization-agent}
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 * AEM as a Cloud Service環境で OpenAPI を有効にした Dynamic Media。
 
-* AEM as a Cloud Service環境内の [&#x200B; 承認済み &#x200B;](/help/assets/manage-organize-assets-view.md#manage-asset-status) のアセット。
+* AEM as a Cloud Service環境内の [ 承認済み ](/help/assets/manage-organize-assets-view.md#manage-asset-status) のアセット。
 
 
 ## スキル {#skills-content-optimization-agent}
@@ -72,11 +72,11 @@ ht-degree: 0%
 
 AI アシスタントを使用して、AEMのエージェントにアクセスできます。 experience.adobe.comにログオンし、`Ask AI Assistant anything` フィールドを使用して自然言語でプロンプトを指定することで、AI アシスタントの操作を開始できます。
 
-![&#x200B; アクセス探索エージェント &#x200B;](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
+![ アクセス探索エージェント ](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
 
 ## 一般的なユースケースとサンプルプロンプト {#use-cases-prompts}
 
-[&#x200B; 検出エージェント &#x200B;](/help/ai-in-aem/agents/discovery/overview.md) を使用して適切なアセットを検索することで、コンテンツ最適化のプロンプトを使用します。 関連する画像が表示されると、ユーザーは、検索結果から直接、1 つまたは複数のアセットに対して、最適化された、またはチャネル固有のバリアントを生成できます。 このワークフローにより、高品質の入力と一貫したより優れた最適化結果が保証されます。 [&#x200B; 使用可能な最適化の完全なリストを参照してください &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/)。
+[ 検出エージェント ](/help/ai-in-aem/agents/discovery/overview.md) を使用して適切なアセットを検索することで、コンテンツ最適化のプロンプトを使用します。 関連する画像が表示されると、ユーザーは、検索結果から直接、1 つまたは複数のアセットに対して、最適化された、またはチャネル固有のバリアントを生成できます。 このワークフローにより、高品質の入力と一貫したより優れた最適化結果が保証されます。 [ 使用可能な最適化の完全なリストを参照してください ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/)。
 
 * **高解像度レンディションの作成**
 
@@ -87,7 +87,7 @@ AI アシスタントを使用して、AEMのエージェントにアクセス�
 
   `2000px` 品質の `JPEG` レンディション `80%` 作成します。
 
-  [&#x200B; 検出エージェント &#x200B;](/help/ai-in-aem/agents/discovery/overview.md) を使用して適切なアセットを検索し、検索結果が複数ある場合は次のプロンプトを使用します。
+  [ 検出エージェント ](/help/ai-in-aem/agents/discovery/overview.md) を使用して適切なアセットを検索し、検索結果が複数ある場合は次のプロンプトを使用します。
 
   3 番目の検索結果として、`2000px` 品質の `JPEG` しいレンディションを作成 `80%` ます。
 
@@ -151,14 +151,12 @@ AI アシスタントを使用して、AEMのエージェントにアクセス�
 
 * **ビデオ**：応答には、Dynamic Media の URL を開くオプションや、最適化されたビデオをダウンロードするオプションが用意されています。
 
-![&#x200B; コンテンツの最適化結果 &#x200B;](/help/ai-in-aem/agents/content-optimization/assets/download-content-optimization.png)
+![ コンテンツの最適化結果 ](/help/ai-in-aem/agents/content-optimization/assets/download-content-optimization.png)
 
 これらの結果により、最適化された出力を簡単に確認し、ダウンストリームチャネルやワークフローですぐに使用できます。
 
 
 ## 制限事項 {#limitations-content-optimization}
-
-* コンテンツ最適化エージェントは現在、PNG アセットをサポートしていません。
 
 * 背景色の設定はサポートされていません。
 
