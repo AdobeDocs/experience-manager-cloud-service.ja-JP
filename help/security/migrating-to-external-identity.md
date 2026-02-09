@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 概要 {#overview}
 
-AEM as a Cloud Serviceで [ データ同期 ](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md#data-synchronization) が有効になっている場合、ユーザーとグループの作成を管理する際に、動的グループメンバーシップで外部 ID に自動的に移行するように SAML 認証ハンドラーを設定できます。 プロジェクトでカスタムコードを使用してユーザーまたはグループを作成する場合は、ローカルユーザーやグループではなく、外部のユーザーやグループを作成するように更新する必要があります。
+AEM as a Cloud Serviceで [&#x200B; データ同期 &#x200B;](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md#data-synchronization) が有効になっている場合、ユーザーとグループの作成を管理する際に、動的グループメンバーシップで外部 ID に自動的に移行するように SAML 認証ハンドラーを設定できます。 プロジェクトでカスタムコードを使用してユーザーまたはグループを作成する場合は、ローカルユーザーやグループではなく、外部のユーザーやグループを作成するように更新する必要があります。
 
 ### 外部ユーザーとグループが必要な理由 {#why-external-required}
 
@@ -68,7 +68,7 @@ groupId;idpName
 
 ### 動的グループメンバーシップ {#dynamic-group-membership}
 
-動的グループメンバーシップは、リポジトリに保存されたユーザーからグループへの直接の関係の代わりに、ユーザーノードの `rep:externalPrincipalNames` プロパティを使用します。 ユーザーが外部グループの ID と一致する外部プリンシパル名を持つ場合、そのユーザーは自動的にそのグループのメンバーになります。 詳しくは、[Apache Oakのドキュメント ](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html) を参照してください。
+動的グループメンバーシップは、リポジトリに保存されたユーザーからグループへの直接の関係の代わりに、ユーザーノードの `rep:externalPrincipalNames` プロパティを使用します。 ユーザーが外部グループの ID と一致する外部プリンシパル名を持つ場合、そのユーザーは自動的にそのグループのメンバーになります。 詳しくは、[Apache Oakのドキュメント &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html) を参照してください。
 
 **メリット：**
 
@@ -363,7 +363,7 @@ session.save();
 
 >[!IMPORTANT]
 >
->すべての移行手順は、`group-provisioner` プロパティと `rep:externalId` プロパティの保護をバイパスする権限が付与された適切に設定されたサービスユーザー（`rep:externalPrincipalNames` など）を使用して実行する必要があります。 詳しくは、[ サービスユーザー設定 ](#service-user-configuration) を参照してください。
+>すべての移行手順は、`group-provisioner` プロパティと `rep:externalId` プロパティの保護をバイパスする権限が付与された適切に設定されたサービスユーザー（`rep:externalPrincipalNames` など）を使用して実行する必要があります。 詳しくは、[&#x200B; サービスユーザー設定 &#x200B;](#service-user-configuration) を参照してください。
 
 ### 手順 1：外部グループ構造を作成する {#step-1-create-external-group-structure}
 
@@ -576,9 +576,9 @@ curl -X POST "http://localhost:4503/bin/migration/step3?groupPath=/home/groups/c
 
 ### 移行前のチェックリスト {#pre-migration-checklist}
 
-* [ ]**サービスユーザーの設定**：適切な権限を持つサービスユーザー（`group-provisioner` など）を作成し設定します。
+* [ ]&#x200B;**サービスユーザーの設定**：適切な権限を持つサービスユーザー（`group-provisioner` など）を作成し設定します。
 * [ ] **ExternalPrincipal 設定の確認**: `rep:externalId` および `rep:externalPrincipalNames` の保護をバイパスするようにサービスユーザーが設定されていることを確認します
-* [ ]**サービスユーザー権限のテスト**：サービスユーザーが開発で外部 ID プロパティを設定できることを確認します
+* [ ]&#x200B;**サービスユーザー権限のテスト**：サービスユーザーが開発で外部 ID プロパティを設定できることを確認します
 * [ ] ユーザーまたはグループを作成するすべてのカスタムコードを特定する
 * [ ] カスタムコードを確認および更新して、外部 ID モデルを使用する
 * [ ] 開発環境での更新済みコードのテスト
@@ -658,7 +658,7 @@ curl -X POST "http://localhost:4503/bin/migration/step3?groupPath=/home/groups/c
 1. **ExternalPrincipal 設定の検証**:`org.apache.jackrabbit.oak.spi.security.authentication.external.impl.principal.ExternalPrincipalConfiguration` が正しく設定されていることを確認します
 1. **サービスユーザー権限の確認**：サービスユーザーには、`rep:write` および `rep:userManagement` に対する `/home/users` 権限と `/home/groups` 権限が必要です
 
-設定手順について詳しくは、[ サービスユーザー設定 ](#service-user-configuration) を参照してください。
+設定手順について詳しくは、[&#x200B; サービスユーザー設定 &#x200B;](#service-user-configuration) を参照してください。
 
 **問題：`OakConstraint0072: Property 'rep:externalPrincipalNames' requires 'rep:externalId' to be present`**
 
@@ -730,7 +730,7 @@ user.setProperty("rep:lastDynamicSync", valueFactory.createValue(future));
 
 1. [Experience Manager](https://experience.adobe.com/) 次に **Cloud Manager** に移動します
 1. プログラムを選択し、テクニカルアカウントを作成する環境をクリックします
-1. 環境の省略記号メニューで **0}Developer Console} をクリックします**
+1. 環境の省略記号メニューで **0&rbrace;Developer Console&rbrace; をクリックします**
 1. AEM Developer Consoleで、「**統合** タブに移動します。
 1. 「**新しいテクニカルアカウントを作成**」をクリックします。
 1. 統合の名前を指定します（例：「移行サービスアカウント」）
@@ -740,7 +740,7 @@ user.setProperty("rep:lastDynamicSync", valueFactory.createValue(future));
    * **クライアントの秘密鍵**
    * **テクニカルアカウント ID** （これは、サーブレットにアクセスするユーザー ID です – 形式：`XXXXXXXXXXXXXXXXXXXXXXXX@techacct.adobe.com`）
 
-詳しい手順については、[ サーバーサイド API 用アクセストークンの生成ドキュメント ](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) を参照してください。
+詳しい手順については、[&#x200B; サーバーサイド API 用アクセストークンの生成ドキュメント &#x200B;](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) を参照してください。
 
 呼び出し元が認証されているかどうかを確認するためのサンプルコード：
 
@@ -788,5 +788,5 @@ user.setProperty("rep:lastDynamicSync", valueFactory.createValue(future));
 
 * [パブリッシュ層のユーザーとグループの同期](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 * [SAML 2.0 認証ハンドラー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=ja)
-* [ 外部 ID プロバイダー ](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html)
-* [ 動的グループメンバーシップ ](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html)
+* [&#x200B; 外部 ID プロバイダー &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html)
+* [&#x200B; 動的グループメンバーシップ &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html)
