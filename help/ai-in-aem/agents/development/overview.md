@@ -31,7 +31,7 @@ ht-degree: 1%
 
 このエージェントにアクセスするには、ベータ版プログラムへの登録方法の手順について [&#x200B; リリースノート &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) を参照し、必ず開発エージェントに関心を示してください。 また、開発エージェント固有のフィードバックを [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) にメールで送信することもできます。
 
-[&#x200B; チュートリアルに従って &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) 開発エージェントを使用してパイプラインのエラーのトラブルシューティングを行う方法を学びます。
+[&#x200B; チュートリアルに従って &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) 開発エージェントを使用してパイプラインのエラーのトラブルシューティングを行う方法を学びます。
 
 ## Cloud Managerから開発エージェントにアクセスする {#how-to-access-the-agent}
 
