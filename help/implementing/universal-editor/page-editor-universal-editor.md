@@ -77,7 +77,7 @@ ht-degree: 98%
 | 複数フィールドのプロパティ | [!BADGE 使用可能]{type=Positive} |  | [!BADGE 使用可能]{type=Positive} |  |
 | [リモート DAM](/help/assets/dynamic-media-open-apis-overview.md) | [!BADGE 使用可能]{type=Positive} |  | [!BADGE 使用可能]{type=Positive} |  |
 | [ページバージョン管理](/help/sites-cloud/authoring/sites-console/page-versions.md) | [!BADGE 使用可能]{type=Positive} |  | [!BADGE 使用可能]{type=Positive} |  |
-| [ 差分表示 ](/help/sites-cloud/authoring/sites-console/page-diff.md) | [!BADGE 使用可能]{type=Positive} |  | [!BADGE 部分的に使用可]{type=Caution} | Edge Delivery Servicesのユースケースで使用できますが、ヘッドレスでは使用できません |
+| [&#x200B; 差分表示 &#x200B;](/help/sites-cloud/authoring/sites-console/page-diff.md) | [!BADGE 使用可能]{type=Positive} |  | [!BADGE 部分的に使用可]{type=Caution} | Edge Delivery Servicesのユースケースで使用できますが、ヘッドレスでは使用できません |
 | [TimeWarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) | [!BADGE 使用可能]{type=Positive} |  | [!BADGE 使用不可]{type=Negative} | サイトコンソールで引き続き使用できる、予定のバージョン |
 | 管理画面で表示 | [!BADGE 使用可能]{type=Positive} |  | [!BADGE 使用可能]{type=Positive} | ページに拡張機能として使用できます |
 | ページステータスを表示 | [!BADGE 使用可能]{type=Positive} |  | [!BADGE 使用不可]{type=Negative} | Sites コンソールで使用可能 |
