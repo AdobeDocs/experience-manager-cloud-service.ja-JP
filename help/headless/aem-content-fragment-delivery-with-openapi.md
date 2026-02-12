@@ -1,13 +1,13 @@
 ---
 title: OpenAPI を備えた AEM コンテンツフラグメント配信
-description: OpenAPI を活用した AEM コンテンツフラグメント配信についての詳細情報
+description: OpenAPI を使用したAEM コンテンツフラグメント配信について説明します
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: de161d6707dcb8cedf032ee1f286d79e733be94d
-workflow-type: ht
+source-git-commit: 73bfeb19eebe104a772d1c420fe6471fea3e1225
+workflow-type: tm+mt
 source-wordcount: '607'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
