@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター 2026.02.05 リリースノート
-description: ユニバーサルエディターの 2026.02.05 リリースのリリースノートです。
+title: ユニバーサルエディター 2026.02.13 リリースノート
+description: ユニバーサルエディターの 2026.02.13 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: d832d202eaf7f74293e2d15cc470b0226e883e13
+source-git-commit: 33239a1725477d3325dc3245bcc99c438eb350c1
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 45%
+source-wordcount: '182'
+ht-degree: 39%
 
 ---
 
 
-# ユニバーサルエディター 2026.02.05 リリースノート {#release-notes}
+# ユニバーサルエディター 2026.02.13 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2026 年 2 月 5 日（PT）リリースのリリースノートです。
+ユニバーサルエディターの 2026 年 2 月 13 日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -26,8 +26,8 @@ ht-degree: 45%
 
 ## 新機能 {#what-is-new}
 
-* 移動アクションが [&#x200B; コンテキストメニュー &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) 内で使用できるようになりました。
-* RTE で [&#x200B; テキストとして貼り付け &#x200B;](/help/implementing/universal-editor/configure-rte.md#paste-as-text) がサポートされるようになりました。
+* Dynamic Media リンクがサポートされるようになりました。
+* [ ドキュメントオーサリング ](https://docs.da.live/developers/reference/universal-editor) を使用してブロックを作成するためのスキーマとデータタイプが利用できるようになりました。
 
 ## 早期導入機能 {#early-adopter}
 
@@ -37,4 +37,6 @@ ht-degree: 45%
 
 ## その他の改善点 {#other-improvements}
 
-* [`xwalk` プラグインを使用する場合、AEM 6.5 ではプレビューへの公開が有効でした。](/help/implementing/universal-editor/component-definition.md#plugins)
+* ビデオの URL が正しくない問題が修正されました。
+* 同じ名前で複数のコンポーネントを作成しても、409 が返されなくなりました。
+* ヘッドレスキャンバスは、コンテナ内のフィールドに対するその後の更新を保持するようになりました。
