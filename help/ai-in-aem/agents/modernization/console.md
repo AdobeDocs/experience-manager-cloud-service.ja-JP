@@ -3,7 +3,8 @@ title: Experience Modernization コンソール
 description: Experience Modernization Console のインターフェイスと機能のリファレンスガイド
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: c2f258bfcfff8392af2863d874d4a4235f042193
+exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
+source-git-commit: 76c0f41acb5c2e4e0f0a292f8205b0b9de5cda81
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 0%
@@ -25,7 +26,7 @@ Experience Modernization Console は、Edge Delivery Services用に AI を利用
 
 >[!TIP]
 >
->コンソールをすぐに使い始める場合は、ドキュメント [Experience Modernization Agent 使用の手引き &#x200B;](/help/ai-in-aem/agents/modernization/getting-started.md) を参照してください。
+>コンソールをすぐに使い始める場合は、ドキュメント [Experience Modernization Agent 使用の手引き ](/help/ai-in-aem/agents/modernization/getting-started.md) を参照してください。
 
 ## 機能 {#capabilities}
 
@@ -34,7 +35,7 @@ Experience Modernization Console は、Edge Delivery Services用に AI を利用
 * エージェントとそのスキルを使用したインタラクティブチャットパネル
 * 変更内容をすぐに視覚的にフィードバックできるライブAEMプレビュー
 * コンテンツファイルブラウザーと Markdown ビューア
-* [&#x200B; ドキュメントオーサリング &#x200B;](https://da.live) を使用したコンテンツ同期
+* [ ドキュメントオーサリング ](https://da.live) を使用したコンテンツ同期
 * 行われた変更を確認するためのコードブラウザーと差分ビューア
 * 変更からプルリクエストを作成できる GitHub 統合
 
@@ -42,9 +43,9 @@ Experience Modernization Console は、Edge Delivery Services用に AI を利用
 
 ## ナビゲーション {#navigation}
 
-[`aemcoder.adobe.io` でコンソールにログインすると &#x200B;](https://aemcoder.adobe.io) コンソールのホーム画面に到達します。
+[`aemcoder.adobe.io` でコンソールにログインすると ](https://aemcoder.adobe.io) コンソールのホーム画面に到達します。
 
-![&#x200B; コンソールのホーム画面 &#x200B;](assets/console-home.png)
+![ コンソールのホーム画面 ](assets/console-home.png)
 
 ### メニューバー {#menu-bar}
 
@@ -66,7 +67,7 @@ Experience Modernization Console は、Edge Delivery Services用に AI を利用
 
 **ホーム** ビューは、コンソールを使用するための開始点になります。
 
-* 上部には、コンソールのリクエストを行うための [&#x200B; プロンプトパネル &#x200B;](#prompt-panel) があります。
+* 上部には、コンソールのリクエストを行うための [ プロンプトパネル ](#prompt-panel) があります。
 * プロンプトパネルの下には、プロジェクトを開始するために使用するプロンプトが推奨されています。
 
 ### プロンプトパネル {#prompt-panel}
@@ -88,7 +89,7 @@ Experience Modernization Console は、Edge Delivery Services用に AI を利用
 * コンテンツファイルの概要のファイルブラウザー（このパネルを山形アイコンで表示するように切り替えます）
 * ファイルブラウザーで選択されたコンテンツを視覚化するプレビューパネル
 
-![&#x200B; コンテンツ表示 &#x200B;](assets/content-imported.png)
+![ コンテンツ表示 ](assets/content-imported.png)
 
 プレビューパネルには、次の 3 つのモードがあります。
 
@@ -114,7 +115,7 @@ Experience Modernization Console は、Edge Delivery Services用に AI を利用
 * ファイルブラウザー：コードファイルまたは変更内容の概要
 * ファイル一覧で選択したコードファイルまたは差分を表示するためのプレビューパネル
 
-![&#x200B; コードビュー &#x200B;](assets/code-view.png)
+![ コードビュー ](assets/code-view.png)
 
 プレビューパネルには、次の 2 つの異なるモードがあります。
 
@@ -136,13 +137,13 @@ Experience Modernization Console は、Edge Delivery Services用に AI を利用
 
 変更をプッシュする場合は、まずステージングされた変更をプッシュに含める必要があります。 プッシュする場合は、新しい PR を作成するか、現在のブランチに直接プッシュするかを選択できます
 
-![&#x200B; プッシュの変更 &#x200B;](assets/push-changes.png)
+![ プッシュの変更 ](assets/push-changes.png)
 
 ## 設定ビュー {#settings-view}
 
 設定ビューでは、コンソールの基本設定を管理できます。
 
-![&#x200B; 設定ビュー &#x200B;](assets/settings-view.png)
+![ 設定ビュー ](assets/settings-view.png)
 
 * **資格情報** を使用すると、Figma の個人用アクセストークンを指定でき、コンソールからプロジェクトのデザインブロックにアクセスできるようになります。
 * **ワークスペースをリセット** すると、コンソールが開始状態に戻り、プッシュまたはアップロード解除された変更がすべて失われます。
