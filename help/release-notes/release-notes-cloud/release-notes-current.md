@@ -38,7 +38,7 @@ ht-degree: 40%
 
 2026.1.0 リリースで追加された機能の概要については、2026年1月のリリースに関する概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479790/?captions=jpn&quality=12)
 
 
 ## AEM Beta プログラム {#aem-beta-programs}
