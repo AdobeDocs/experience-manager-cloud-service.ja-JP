@@ -5,10 +5,10 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 8819dc84887f79e047b4beffd18e03dee3ee45a3
 workflow-type: tm+mt
-source-wordcount: '2236'
-ht-degree: 98%
+source-wordcount: '2268'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 98%
 
 ## スマートタグ {#smart-tags}
 
-[!DNL Experience Manager Assets] では、[Adobe AI](https://business.adobe.com/ai/adobe-genai.html) が提供する人工知能を使用して、アップロードされたすべてのアセットに適切なタグを自動適用します。 スマートタグと呼ばれるこれらのタグは、関連性の高いアセットをすばやく見つけるうえで役に立つので、プロジェクトのコンテンツベロシティ（コンテンツ創出の速度）が向上します。スマートタグは、画像に含まれないメタデータの例です。
+[!DNL Experience Manager Assets] では、[Adobe AI](https://business.adobe.com/ai/adobe-genai.html) の人工知能機能を使用して、アップロードされたすべてのアセットに適切なタグを自動適用します。 スマートタグと呼ばれるこれらのタグは、関連性の高いアセットをすばやく見つけるうえで役に立つので、プロジェクトのコンテンツベロシティ（コンテンツ創出の速度）が向上します。スマートタグは、画像に含まれないメタデータの例です。
 
 スマートタグは、ほぼリアルタイムで適用され、画像の内容に基づいて生成されます。アセットをアップロードすると、ユーザーインターフェイスでアセットのサムネールに[!UICONTROL 処理中]としばらく表示されます。処理が完了したら、スマートタグと[メタデータを表示](#view-metadata)できます。
 
@@ -100,7 +100,9 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 
    ![左サイドバーのメタデータフォームオプション](assets/metadata-form-new.png)
 
-   *図：コンポーネントを追加するオプションとフォームをプレビューするオプションを備えたメタデータフォーム作成インターフェイス*
+   [ メタデータフォームのユーザーインターフェイス ](cascading-metadata-assets-view.md#build-metadata-forms) について
+
+   <!--*Figure: Metadata form creation interface with options to add components and option to preview the form.*-->
 
 1. コンポーネントごとに、右側のパネルの&#x200B;**[!UICONTROL 設定]**&#x200B;で名前を指定し、サポートされているプロパティとのマッピングを指定します。
 1. オプションで、コンポーネントに対して、「**[!UICONTROL 必須]**」を選択してメタデータフィールドを必須にしたり、「**[!UICONTROL 読み取り専用]**」を選択してアセットの[!UICONTROL 詳細]ページでフィールドを編集できないようにしたりします。
@@ -140,6 +142,9 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 | タグ | 分類管理に保存されている値からタグを追加します（xcm:tags にマッピング）。 |
 | キーワード | フリーフォームキーワードを追加します（dc:subject にマッピング）。 |
 | スマートタグ | メタデータタグを自動的に追加して、検索機能を強化します。 |
+| パブリッシュ | アセットの公開ステータスを追加します。 |
+| リンク | Web ページ、画像、外部参照など、オンラインリソースを指す web アドレスが格納されます。 |
+| レーティング | アセットの品質を示すカテゴリ値を追加します。 |
 
 ### フォルダーにメタデータフォームの割り当て {#assign-metadata-form-folder}
 

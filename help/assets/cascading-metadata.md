@@ -1,12 +1,11 @@
 ---
 title: カスケードメタデータ
 description: この記事では、アセットのカスケードメタデータを定義する方法について説明します。
-contentOwner: AG
 feature: Metadata
 role: Admin, User
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: 8d1744ca10ecce8637d9f9ff37eba05d2ca09ca4
+workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 100%
 
