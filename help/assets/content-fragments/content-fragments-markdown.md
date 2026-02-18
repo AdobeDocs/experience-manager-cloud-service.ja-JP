@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: 6173fc8a42525dcde435289da8ef8a533ea96de6
+source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
 workflow-type: tm+mt
 source-wordcount: '595'
-ht-degree: 98%
+ht-degree: 89%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 98%
 
 ## 見出し表記 {#heading-notation}
 
-ハッシュタグ（#）を前に付けてヘッダーを作成します。H1 にはハッシュタグを 1 つ（#）、H2 にはハッシュタグを 2 つ（##）使用します。最大で 6 個のハッシュタグを使用できます。例：
+ヘッダーを作成するには、ヘッダーの前にハッシュ記号（#）を配置します。 H1 には 1 つのハッシュシンボル （#）、H2 には 2 つのハッシュシンボル （##）などが使用されます。 最大 6 つのハッシュシンボルを使用できます。 例：
 
     `## This is an H2`
 
@@ -116,17 +116,13 @@ ht-degree: 98%
 
     `>This is block quotes`
 
-    `>asdhfjlkasdhlf`
-
-    `>asdfahsdlfasdfj`
-
 ブロック引用はネストできます。例：
 
     `> This is the first level of quoting.`
 
     `>`
 
-        `>> This is nested blockquote.`
+        `>> This is a nested blockquote.`
 
     `>`
 
@@ -136,7 +132,7 @@ ht-degree: 98%
 
 順序付きと順序なし両方のリストを作成できます。
 
-順序なしリストを作成するには、* 記号をリストの項目の前に付けます。例：
+順序なしリストを作成するには、&amp;ast;（アスタリスク）記号をリストの項目の前に付けます。 例：
 
     `* item in list`
 

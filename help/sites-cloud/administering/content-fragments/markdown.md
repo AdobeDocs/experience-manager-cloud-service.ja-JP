@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: 278242e0be1da5c64abfa5d9ac174013688ff422
+source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 84%
+ht-degree: 77%
 
 ---
 
 # マークダウン {#markdown}
 
-[&#x200B; オーサリング &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) 中に、コンテンツフラグメントで [&#x200B; 複数行テキストフィールド &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) が **Markdown** の **デフォルトタイプ** で定義されている場合があります。 コンテンツフラグメントエディターは、ページオーサリングとヘッドレス配信の両方に&#x200B;*マークダウン*&#x200B;構文を使用して、ユーザーがコンテンツを簡単に作成できるようにします。
+[ オーサリング ](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) 中に、コンテンツフラグメントで [ 複数行テキストフィールド ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) が **Markdown** の **デフォルトタイプ** で定義されている場合があります。 コンテンツフラグメントエディターは、ページオーサリングとヘッドレス配信の両方に&#x200B;*マークダウン*&#x200B;構文を使用して、ユーザーがコンテンツを簡単に作成できるようにします。
 
 ![エディター内のマークダウン複数行テキストフィールド](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
@@ -32,7 +32,7 @@ ht-degree: 84%
 
 ## 見出し表記 {#heading-notation}
 
-ハッシュタグ（#）を前に付けてヘッダーを作成します。1 つのハッシュ タグ （#）は H1、2 つのハッシュ タグ （##）は H2 などを示します。 最大で 6 個のハッシュタグを使用できます。例：
+ヘッダーを作成するには、ヘッダーの前にハッシュ記号（#）を配置します。 1 つのハッシュ記号（#）は H1、2 つのハッシュ記号（##）は H2 などを示します。 最大 6 つのハッシュシンボルを使用できます。 例：
 
     `## This is an H2`
 
@@ -110,17 +110,13 @@ ht-degree: 84%
 
     `>This is block quotes`
 
-    `>asdhfjlkasdhlf`
-
-    `>asdfahsdlfasdfj`
-
 ブロック引用はネストできます。例：
 
     `> This is the first level of quoting.`
 
     `>`
 
-        `>> This is nested blockquote.`
+        `>> This is a nested blockquote.`
 
     `>`
 
@@ -130,7 +126,7 @@ ht-degree: 84%
 
 順序付きと順序なし両方のリストを作成できます。
 
-順序なしリストを作成するには、* 記号をリストの項目の前に付けます。例：
+順序なしリストを作成するには、&amp;ast;（アスタリスク）記号をリストの項目の前に付けます。 例：
 
     `* item in list`
 
@@ -166,7 +162,7 @@ ht-degree: 84%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-コードの範囲を示すには、バッククォート（&grave;）で囲みます。事前に書式設定されたコードブロックとは異なり、コード範囲は通常の段落内のコードを示します。
+コードの範囲を示すには、バッククォート（`）で囲みます。事前に書式設定されたコードブロックとは異なり、コード範囲は通常の段落内のコードを示します。
 
 例：
 
