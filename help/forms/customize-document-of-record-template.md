@@ -85,7 +85,7 @@ ht-degree: 4%
 1. アップロードされたカスタマイズ済み XDP テンプレートを参照して選択します。
 1. 保存するチェックマークを選択します。
 
-   ![ レコードのドキュメントのプロパティ – カスタムに設定されたテンプレート（コアコンポーネント） ](/help/forms/assets/submission-pdf-dor-custom-template.png)
+   ![&#x200B; レコードのドキュメントのプロパティ – カスタムに設定されたテンプレート（コアコンポーネント） &#x200B;](/help/forms/assets/submission-pdf-dor-custom-template.png)
 
 >[!TAB 基盤コンポーネント]
 
@@ -98,7 +98,7 @@ ht-degree: 4%
 1. アップロードされたカスタマイズ済み XDP テンプレートを参照して選択します。
 1. 「**[!UICONTROL 完了]**」を選択して保存します。
 
-   ![ レコードのドキュメントのプロパティ – カスタムに設定されたテンプレート（基盤コンポーネント） ](/help/forms/assets/dor-custom-template-foundation-components.png)
+   ![&#x200B; レコードのドキュメントのプロパティ – カスタムに設定されたテンプレート（基盤コンポーネント） &#x200B;](/help/forms/assets/dor-custom-template-foundation-components.png)
 
 >[!ENDTABS]
 
@@ -118,7 +118,7 @@ ht-degree: 4%
 |---|---|
 | カスタマイズされたテンプレートはアップロードされません。 | XDP ファイルが有効であり、破損していないことを確認します。 AEM Formsにファイルをアップロードするために必要な権限があることを確認します。 |
 | カスタマイズは、生成されたレコードのドキュメントには表示されません。 | フォームプロパティの「レコードのドキュメントテンプレートの設定 **[!UICONTROL セクションで、カスタマイズした正しいテンプレートを選択し]** いることを確認します。 |
-| 生成されたPDFのレイアウトまたはフォーマットに関する問題。 | Adobe Forms Designerのカスタマイズが [ 基本テンプレート規則 ](/help/forms/generate-document-of-record-core-components.md#base-template-conventions) に従っていることを確認します。 すべての要素がテンプレート構造内で適切に配置されていることを確認します。 |
+| 生成されたPDFのレイアウトまたはフォーマットに関する問題。 | Adobe Forms Designerのカスタマイズが [&#x200B; 基本テンプレート規則 &#x200B;](/help/forms/generate-document-of-record-core-components.md#base-template-conventions) に従っていることを確認します。 すべての要素がテンプレート構造内で適切に配置されていることを確認します。 |
 
 ## 関連トピック {#see-also}
 
