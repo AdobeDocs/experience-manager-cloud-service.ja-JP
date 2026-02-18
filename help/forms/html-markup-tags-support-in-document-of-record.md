@@ -1,24 +1,24 @@
 ---
-title: レコードのドキュメントでサポートされるHTML マークアップタグ
-description: レコードのドキュメントの生成で、レンダリングの動作やアクセシビリティに関する考慮事項など、HTMLのマークアップタグのリファレンスガイドがサポートされるようになりました
+title: 送信PDF（旧称レコードのドキュメント）でサポートされるHTML マークアップタグ
+description: レンダリングの動作やアクセシビリティに関する考慮事項など、送信PDF（以前のレコードのドキュメント）の生成時にサポートされているHTML マークアップタグのリファレンスガイドです。
 feature: Adaptive Forms
 role: Developer, User
 exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
-source-git-commit: 1794ed6cac612ee4600c2f8e1ced18c6130b64a2
+source-git-commit: 0b112a5a1830fac9d0170771e052bbb2ef3cadbf
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 9%
+source-wordcount: '454'
+ht-degree: 7%
 
 ---
 
 
-# レコードのドキュメントでサポートされるHTML マークアップタグ
+# 送信PDF（旧称レコードのドキュメント）でサポートされるHTML マークアップタグ
 
 ## このリファレンスで説明する内容
 
-AEM Formsは、レコードのドキュメント（DoR） PDF を生成する際、リッチテキストフィールドでHTMLのマークアップタグをサポートするようになりました。 このガイドでは、アダプティブHTMLで安全に使用できるForms マークアップタグと、生成されたドキュメントでのレンダリング方法について説明します。
+AEM Formsは、送信PDF（旧称レコードのドキュメント）PDFを生成する際に、リッチテキストフィールドでHTMLのマークアップタグをサポートするようになりました。 このガイドでは、アダプティブ HTMLで安全に使用できるForms マークアップタグと、生成された送信PDFでレンダリングする方法について説明します。
 
-フォームにリッチテキストコンテンツ（太字の書式設定、リスト、リンクなど）を追加する場合は、サポートされるタグとその制限事項を理解することが重要です。 このリファレンスは、レコードのドキュメントでコンテンツを正しく表示し、アクセス可能な状態を維持するために適切なタグを選択するのに役立ちます。
+フォームにリッチテキストコンテンツ（太字の書式設定、リスト、リンクなど）を追加する場合は、サポートされるタグとその制限事項を理解することが重要です。 このリファレンスは、コンテンツが正しく表示され、送信PDFでアクセス可能な状態を維持するために適切なタグを選択するのに役立ちます。
 
 ## 開始する前に
 
@@ -27,18 +27,18 @@ AEM Formsは、レコードのドキュメント（DoR） PDF を生成する際
 次の点に精通している必要があります。
 
 - 基本的なHTML マークアップ構文
-- [レコードのドキュメントの基本事項](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [送信PDF（旧称レコードのドキュメント）の基礎](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 - アクセシビリティの原則と WCAG ガイドライン
 - PDFのアクセシビリティ要件
 - HTMLのマークアップを受け入れるアダプティブフォームコンポーネント
 
 ### 考慮事項
 
-レコードのドキュメント（DoR）は、タグ付けされたPDFにすることができ、支援テクノロジーに対するアクセシビリティと適切な構造を確保するのに役立ちます。 タグ付きPDF出力を有効にするには、[XCI プロパティ `config/present/pdf/tagged` を `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file) に設定します。 PDFを生成したら、アクセシビリティタグが正しく適用されていることを確認することが重要です。 [Adobe Acrobatを使用してアクセシビリティタグを確認し &#x200B;](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) ドキュメントがアクセシビリティ標準を満たしていることを確認できます。
+送信PDF（以前のレコードのドキュメント）は、タグ付けされたPDFにすることができます。これにより、支援テクノロジーへのアクセシビリティと適切な構造を確保できます。 タグ付きPDF出力を有効にするには、[XCI プロパティ `config/present/pdf/tagged` を `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file) に設定します。 PDFを生成したら、アクセシビリティタグが正しく適用されていることを確認することが重要です。 [Adobe Acrobatを使用してアクセシビリティタグを確認し ](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) ドキュメントがアクセシビリティ標準を満たしていることを確認できます。
 
 ### 新機能
 
-レコードのドキュメントでのリッチテキストのサポートは、最近の機能強化です。 以前は、リッチテキストコンテンツは、生成されたドキュメントではプレーンテキストとして表示されていました。 この新しい機能により、フォーマットされたコンテンツをPDF出力で正しくレンダリングできます。
+送信PDFでのリッチテキストのサポートは、最近の機能強化です。 以前は、リッチテキストコンテンツは、生成されたドキュメントではプレーンテキストとして表示されていました。 この新しい機能により、フォーマットされたコンテンツをPDF出力で正しくレンダリングできます。
 
 ## HTML タグのサポートリファレンス
 
@@ -46,7 +46,7 @@ AEM Formsは、レコードのドキュメント（DoR） PDF を生成する際
 
 適切なアクセシビリティノードの作成により、次のタグが完全にサポートされます。
 
-| HTML Tag | 説明 | レコードのドキュメントのサポート | アクセシビリティ | 例 |
+| HTML Tag | 説明 | 送信PDF サポート | アクセシビリティ | 例 |
 |----------|-------------|-------------|---------------|---------|
 | `<p>` | 段落 | はい | 完全にサポート - `<P>` ノードを修正 | `<p>This is a paragraph.</p>` |
 | `<br/>` | 改行 | はい | 完全にサポート – ノード内 `<P>` | `<p>Line 1<br/>Line 2</p>` |
@@ -135,7 +135,7 @@ Expected:     <LBody>First item
 ## 関連するコンテンツ
 
 
-- [アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-- [コアコンポーネントのレコードのドキュメントを生成](/help/forms/generate-document-of-record-core-components.md)
-- [レコードのドキュメントのテンプレートのカスタマイズ](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
+- [アダプティブForms用の送信PDF（以前のレコードのドキュメント）を生成する](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [コアコンポーネント用の送信PDFを生成](/help/forms/generate-document-of-record-core-components.md)
+- [送信PDFテンプレートのカスタマイズ](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
 
