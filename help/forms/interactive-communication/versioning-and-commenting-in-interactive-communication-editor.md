@@ -7,23 +7,19 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 7f366823e1baeda8eacd8c92fe23300d10ec828a
+exl-id: ca9917c0-d8bb-4381-afab-7ab888d992e8
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 8%
+source-wordcount: '557'
+ht-degree: 1%
 
 ---
-
 
 # インタラクティブ通信エディターでのバージョン管理とコメント
 
 >[!NOTE]
 >
 > インタラクティブ通信機能は、早期導入プログラムで利用できます。 勤務先のアドレスから `aem-forms-ea@adobe.com` にメールを送信して、アクセスをリクエストします。
-
->[!IMPORTANT]
->
-> **ドキュメントは変更される場合があります**：このプロンプトライブラリは現在製品に対してテスト中であり、更新および改訂される可能性があります。早期導入プログラム中に Forms Experience Builder が進化し続けると、プロンプト、例、ベストプラクティスが変わる可能性があります。
 
 インタラクティブ通信（IC）を使用すると、組織は、パーソナライズされた顧客コミュニケーション用に動的でデータ駆動型のドキュメントを作成できます。 コラボレーション、ガバナンス、制御された公開ワークフローを強化するために、インタラクティブ通信エディターには、バージョン管理、レビュー、コメントの機能が用意されています。
 

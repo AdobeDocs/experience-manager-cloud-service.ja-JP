@@ -7,23 +7,19 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: fe99fc4ddc1e2b3bdd1b2a5b583f2b4cb681dee9
+exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 12%
+source-wordcount: '384'
+ht-degree: 3%
 
 ---
-
 
 # インタラクティブ通信エディターでのコピー&amp;ペースト
 
 >[!NOTE]
 >
 > インタラクティブ通信機能は、早期導入プログラムで利用できます。 勤務先のアドレスから `aem-forms-ea@adobe.com` にメールを送信して、アクセスをリクエストします。
-
->[!IMPORTANT]
->
-> **ドキュメントは変更される場合があります**：このプロンプトライブラリは現在製品に対してテスト中であり、更新および改訂される可能性があります。早期導入プログラム中に Forms Experience Builder が進化し続けると、プロンプト、例、ベストプラクティスが変わる可能性があります。
 
 インタラクティブ通信（IC）エディターのコピーと貼り付け機能を使用すると、作成者は既存のインタラクティブ通信を複製して、別のフォルダーまたは場所で再利用できます。 この機能により、元のバージョンを変更せずに IC の複数のバリエーションを有効にすることで、チームが効率的に作業できるようになります。
 
@@ -45,7 +41,7 @@ ht-degree: 12%
 
 ## インタラクティブ通信のコピー
 
-![IC 文書の検索 &#x200B;](/help/forms/interactive-communication/assets/copy-in-ic.png)
+![IC 文書の検索 ](/help/forms/interactive-communication/assets/copy-in-ic.png)
 
 インタラクティブ通信をコピーするには、次の手順に従います。
 
@@ -65,7 +61,7 @@ ht-degree: 12%
 
 ## コピーしたインタラクティブ通信を編集して再利用します
 
-![IC 文書の検索 &#x200B;](/help/forms/interactive-communication/assets/paste-in-ic.png)
+![IC 文書の検索 ](/help/forms/interactive-communication/assets/paste-in-ic.png)
 
 インタラクティブ通信を貼り付けた後：
 
@@ -88,4 +84,3 @@ ht-degree: 12%
 - コピー後にデータバインディングと出力チャネルを確認して、正確性を確認します。
 
 インタラクティブ通信のコピーと貼り付け機能を使用すると、作成者が既存の IC を複製して個別に変更できるので、再利用とカスタマイズが簡単になります。 元のインタラクティブ通信を変更するリスクを冒すことなく、より迅速な開発、より安全な実験、一貫したコミュニケーション配信を可能にします。
-

@@ -4,13 +4,13 @@ description: AEM Formsのインタラクティブ通信エディターの日付/
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 7ac93d8c-5454-4789-a7cd-438571a9ff28
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 8%
+source-wordcount: '676'
+ht-degree: 2%
 
 ---
-
 
 # インタラクティブ通信エディターの日付/時間フィールドコンポーネント
 
@@ -18,17 +18,13 @@ ht-degree: 8%
 >
 > インタラクティブ通信機能は、早期導入プログラムで利用できます。 勤務先のアドレスから `aem-forms-ea@adobe.com` にメールを送信して、アクセスをリクエストします。
 
->[!IMPORTANT]
->
-> **ドキュメントは変更される場合があります**：このプロンプトライブラリは現在製品に対してテスト中であり、更新および改訂される可能性があります。早期導入プログラム中に Forms Experience Builder が進化し続けると、プロンプト、例、ベストプラクティスが変わる可能性があります。
-
 ## &#x200B;1. はじめに
 
 インタラクティブ通信（IC）エディターの **日付/時刻フィールド** コンポーネントを使用すると、作成者はフィールドを挿入し、ユーザーが日付や時刻の値を選択または入力できるようになります。 このコンポーネントは、一般的に、生年月日、予定スケジュール、予約スロット、ドキュメントの問題/有効期限などの情報をキャプチャするために使用されます。
 
 このフィールドは、様々な書式設定オプション（DD/MM/YYYY、24 時間、12 時間の形式など）、検証の制約、コミュニケーションデザインに合わせた外観のカスタマイズをサポートしています。 手動入力エラーを減らし、データ収集の一貫性を向上させることで、ユーザーエクスペリエンスを向上させます。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/datetime.png)
+![IC Docu の検索 ](/help/forms/interactive-communication/assets/datetime.png)
 
 ## &#x200B;2. プロパティ
 
@@ -141,4 +137,3 @@ ht-degree: 8%
 - フィールドを有効なスキーマパスにバインドして、データの取得と処理が適切に行われるようにします。
 
 インタラクティブ通信エディターの日付/時刻フィールド コンポーネントは、時間ベースの入力を効率化する強力で使いやすいコンポーネントです。 スタイル設定、データ処理、レイアウトコントロールの適切な設定により、ユーザーとバックエンドシステムの両方に対して、クリーンで信頼性の高い直感的なフォームエクスペリエンスを提供します。
-
