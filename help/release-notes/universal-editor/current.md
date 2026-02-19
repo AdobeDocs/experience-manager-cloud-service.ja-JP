@@ -27,11 +27,11 @@ ht-degree: 28%
 ## 新機能 {#what-is-new}
 
 * RTE が改善されました。
-   * [ コンテキスト RTE でのツールバー項目の非表示 ](/help/implementing/universal-editor/configure-rte.md#common-action-options) がサポートされるようになりました。
-   * [ テーブル内のテキストを段落で折り返す ](/help/implementing/universal-editor/configure-rte.md#table-actions) がサポートされるようになりました。
-   * [ サポートされていないHTML タグ ](/help/implementing/universal-editor/configure-rte.md#unsupported-html) タグが RTE で保持できるようになりました。
+   * [&#x200B; コンテキスト RTE でのツールバー項目の非表示 &#x200B;](/help/implementing/universal-editor/configure-rte.md#common-action-options) がサポートされるようになりました。
+   * [&#x200B; テーブル内のテキストを段落で折り返す &#x200B;](/help/implementing/universal-editor/configure-rte.md#table-actions) がサポートされるようになりました。
+   * [&#x200B; サポートされていないHTML タグ &#x200B;](/help/implementing/universal-editor/configure-rte.md#unsupported-html) タグが RTE で保持できるようになりました。
    * RTE ロジックが別のファイルから提供されるようになりました。
-   * [ テーブルを作成し ](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)RTE を使用して編集できるようになりました。
+   * [&#x200B; テーブルを作成し &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)RTE を使用して編集できるようになりました。
 * ラベルを設定しない場合は、コンポーネント定義のコンポーネントタイトルが使用されるようになります。
 * 拡張機能から `setEditorMode` を使用できるようになりました。
 
