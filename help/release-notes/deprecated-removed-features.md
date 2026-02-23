@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 998615f7ba20fb77e05f8aa9a58bc1b61500cc3e
+source-git-commit: f2e707b9689eb99b4b91eae705d7daa8449a9d44
 workflow-type: tm+mt
 source-wordcount: '3842'
 ht-degree: 80%
@@ -31,14 +31,14 @@ ht-degree: 80%
 
 >[!IMPORTANT]
 >
->一部の [&#x200B; 非推奨の API](#aem-apis) については、**2026 年 2 月 26 日** に削除する予定です。 これらの主な日付と影響を確認してください。
+>一部の [ 非推奨の API](#aem-apis) については、**2026 年 2 月 26 日** に削除する予定です。 これらの主な日付と影響を確認してください。
 >
 >* **2026 年 1 月 26 日以降**：これらの API の使用を削除するためのリマインダーとして、アクションセンターの通知メールが **環境ごとに毎週** 送信されます。
 >* **2026 年 2 月 26 日（PT）**：これらの API を使用したコードを含むCloud Manager パイプラインは、**コード品質** ステップ中に **一時停止** されます。 デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナーは、問題をオーバーライドしてパイプラインを続行できます。
->* **2026 年 3 月 26 日**：これらの API を使用するコードを含んだCloud Manager パイプラインは、新しいコードの **コード品質** ステップ、**デプロイメントのブロック** 中に使用が削除されるまで **失敗** します。
+>* **2026 年 3 月 30 日**：これらの API を使用するコードを含んだCloud Manager パイプラインは、新しいコードの **コード品質** ステップ、**デプロイメントのブロック** 中に使用が削除されるまで **失敗** します。
 >* **2026 年 4 月 30 日**：これらの API をまだ使用している環境は、**Adobe リリースの重要なアップデートを受け取れなくなる** 可能性があります。
 >
->デプロイメントブロックを防ぐには、2026 年 3 月 26 日（PT）より前に、API の使用を削除します。
+>デプロイメントブロックを防ぐには、2026 年 3 月 30 日（PT）より前に、API の使用を削除します。
 
 ## 非推奨の機能 {#deprecated-features}
 
@@ -90,10 +90,10 @@ ht-degree: 80%
 >
 > * **2026 年 1 月 26 日以降**：これらの API の使用を削除するためのリマインダーとして、アクションセンターの通知メールが **環境ごとに毎週** 送信されます。
 > * **2026 年 2 月 26 日（PT）**：これらの API を使用したコードを含むCloud Manager パイプラインは、**コード品質** ステップ中に **一時停止** されます。 デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナーは、問題をオーバーライドしてパイプラインを続行できます。
-> * **2026 年 3 月 26 日**：これらの API を使用するコードを含んだCloud Manager パイプラインは、新しいコードの **コード品質** ステップ、**デプロイメントのブロック** 中に使用が削除されるまで **失敗** します。
-> * **2026 年 4 月 30 日**：これらの API をまだ使用している環境は、**Adobe リリースの重要なアップデートを受け取れなくなる** 可能性があります。
+> * **2026 年 3 月 30 日**：これらの API を使用するコードを含んだCloud Manager パイプラインは、新しいコードの **コード品質** ステップ、**デプロイメントのブロック** 中に使用が削除されるまで **失敗** します。
+> * **2026 年 5 月 4 日**：これらの API をまだ使用している環境は、**Adobe リリースの重要なアップデートを受け取れなくなる** 可能性があります。
 >
-> デプロイメントブロックを防ぐには、2026 年 3 月 26 日（PT）より前に、API の使用を削除します。
+> デプロイメントブロックを防ぐには、2026 年 3 月 30 日（PT）より前に、API の使用を削除します。
 
 
 <details>
@@ -343,7 +343,7 @@ ht-degree: 80%
 
 この節では、上記の表に示した様々な API の API 削除ガイダンスを反映しています。
 
-コードで使用している非推奨の Java API を特定するには、[AEM as a Cloud Service SDK Build Analyzer Maven プラグイン &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) を Maven プロジェクトに組み込み、ローカルで実行します。 このレポートには、検出されたすべての非推奨（廃止予定）の API の使用状況と、各 API を参照している OSGi バンドルが示されます。 Maven プラグインの使用方法については、[&#x200B; このチュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) を参照してください。
+コードで使用している非推奨の Java API を特定するには、[AEM as a Cloud Service SDK Build Analyzer Maven プラグイン ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) を Maven プロジェクトに組み込み、ローカルで実行します。 このレポートには、検出されたすべての非推奨（廃止予定）の API の使用状況と、各 API を参照している OSGi バンドルが示されます。 Maven プラグインの使用方法については、[ このチュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) を参照してください。
 
 すべての非推奨 API は時間の経過と共に修正される必要がありますが、非推奨 API の表にリストされている API を 2026 年 2 月 26 日（またはそれ以前）に削除する目標を設定して優先順位を付けてください。 AEM アナライザーレポートでは、これらの API は、2025 年 8 月 31 日（PT）に削除対象として表示される場合があります。
 
@@ -353,7 +353,7 @@ ht-degree: 80%
 
 現在非推奨の API が必要なサードパーティライブラリを使用している場合は、そのサードパーティライブラリの新しいバージョンに更新してみてください。
 
-ACS AEM Commons を使用している場合は、少なくともバージョン 6.11.0 を使用してください（最新バージョンをお勧めします）。また、コンテンツパッケージの分類子 [&#x200B; を指定して、](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)Cloud Serviceのバージョンを含める `cloud` ことを確認してください。
+ACS AEM Commons を使用している場合は、少なくともバージョン 6.11.0 を使用してください（最新バージョンをお勧めします）。また、コンテンツパッケージの分類子 [ を指定して、](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)Cloud Serviceのバージョンを含める `cloud` ことを確認してください。
 
 非推奨 API のインポートが `optional` とマークされている場合でも、これを削除する必要があります。 ただし、このようなオプションの使用方法では、デプロイメントはブロックされません。 ただし、オプションの読み込みが満たされなくなると、デプロイメントに影響が及ぶ可能性があります。
 
