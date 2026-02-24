@@ -12,7 +12,7 @@ ht-degree: 99%
 
 # Adobe Target との統合{#integrating-with-adobe-target}
 
-Adobe Marketing Cloud の一部である [Adobe Target](https://business.adobe.com/products/target/adobe-target.html?lang=ja) を使用すると、あらゆるチャネルにわたってターゲティングと測定を行い、コンテンツの適切さを向上できます。Adobe Target はマーケター向けのツールで、オンラインテストを設計および実行し、その場で（行動に基づいた）オーディエンスセグメントを作成し、コンテンツとオンラインエクスペリエンスのターゲット設定を自動化するために使用されます。AEM as a Cloud Service では Adobe Target Standard に使用されているターゲティングワークフローが採用されています。Target を使用すると、AEM as a Cloud Service のターゲティングの編集環境を把握できます。
+Adobe Marketing Cloud の一部である [Adobe Target](https://business.adobe.com/jp/products/target/adobe-target.html?lang=ja) を使用すると、あらゆるチャネルにわたってターゲティングと測定を行い、コンテンツの適切さを向上できます。Adobe Target はマーケター向けのツールで、オンラインテストを設計および実行し、その場で（行動に基づいた）オーディエンスセグメントを作成し、コンテンツとオンラインエクスペリエンスのターゲット設定を自動化するために使用されます。AEM as a Cloud Service では Adobe Target Standard に使用されているターゲティングワークフローが採用されています。Target を使用すると、AEM as a Cloud Service のターゲティングの編集環境を把握できます。
 
 AEM Sites を Adobe Target と統合すると、ページ内のコンテンツを次のようにパーソナライズできます。
 
@@ -43,7 +43,7 @@ Target に統合するには、次のタスクを実行します。
 
 >[!CAUTION]
 >
->AEM as a Cloud Service では、AEM から Adobe Target にオファーとアクティビティを同期するレプリケーションエージェントは、デフォルトで無効になっています。レプリケーションエージェントを再度有効にする必要がある場合は、[アドビサポート](https://experienceleague.adobe.com/?support-solution=General&lang=ja#support)チームにお問い合わせください。
+>AEM as a Cloud Service では、AEM から Adobe Target にオファーとアクティビティを同期するレプリケーションエージェントは、デフォルトで無効になっています。レプリケーションエージェントを再度有効にする必要がある場合は、[アドビサポート](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja#support)チームにお問い合わせください。
 
 >[!NOTE]
 >
